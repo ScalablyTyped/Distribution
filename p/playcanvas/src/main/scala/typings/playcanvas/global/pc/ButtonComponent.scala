@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,6 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.ButtonComponent")
 @js.native
 class ButtonComponent protected ()
-  extends typings.playcanvas.pc.ButtonComponent {
+  extends StObject
+     with typings.playcanvas.pc.ButtonComponent {
   def this(system: typings.playcanvas.pc.ButtonComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

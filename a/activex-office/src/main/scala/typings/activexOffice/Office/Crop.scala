@@ -2,34 +2,32 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crop extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.Crop_typekey")
-  var OfficeDotCrop_typekey: Crop = js.native
+  var OfficeDotCrop_typekey: Crop
   
-  var PictureHeight: Double = js.native
+  var PictureHeight: Double
   
-  var PictureOffsetX: Double = js.native
+  var PictureOffsetX: Double
   
-  var PictureOffsetY: Double = js.native
+  var PictureOffsetY: Double
   
-  var PictureWidth: Double = js.native
+  var PictureWidth: Double
   
-  var ShapeHeight: Double = js.native
+  var ShapeHeight: Double
   
-  var ShapeLeft: Double = js.native
+  var ShapeLeft: Double
   
-  var ShapeTop: Double = js.native
+  var ShapeTop: Double
   
-  var ShapeWidth: Double = js.native
+  var ShapeWidth: Double
 }
 object Crop {
   

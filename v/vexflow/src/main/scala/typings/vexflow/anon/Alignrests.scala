@@ -2,15 +2,13 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alignrests extends StObject {
   
-  var align_rests: Boolean = js.native
+  var align_rests: Boolean
   
-  var auto_beam: Boolean = js.native
+  var auto_beam: Boolean
 }
 object Alignrests {
   

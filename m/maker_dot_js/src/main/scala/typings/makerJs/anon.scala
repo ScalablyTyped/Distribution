@@ -5,17 +5,15 @@ import typings.makerJs.MakerJs.IPath
 import typings.makerJs.MakerJs.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: IPoint = js.native
+    var offset: IPoint
     
-    var path: IPath | IModel = js.native
+    var path: IPath | IModel
   }
   object Offset {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ScaleConversion extends StObject {
     
-    var scaleConversion: Double = js.native
+    var scaleConversion: Double
     
-    var svgUnitType: String = js.native
+    var svgUnitType: String
   }
   object ScaleConversion {
     

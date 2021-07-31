@@ -3,132 +3,82 @@ package typings.pulumiPulumi
 import typings.pulumiPulumi.resourceMod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
   
-  @JSImport("@pulumi/pulumi/log", "debug")
+  @JSImport("@pulumi/pulumi/log", JSImport.Namespace)
   @js.native
-  def debug(msg: String): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(
-    msg: String,
-    resource: js.UndefOr[scala.Nothing],
-    streamId: js.UndefOr[scala.Nothing],
-    ephemeral: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: Resource): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: Resource, streamId: js.UndefOr[scala.Nothing], ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "debug")
-  @js.native
-  def debug(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(
-    msg: String,
-    resource: js.UndefOr[scala.Nothing],
-    streamId: js.UndefOr[scala.Nothing],
-    ephemeral: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: Resource): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: Resource, streamId: js.UndefOr[scala.Nothing], ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "error")
-  @js.native
-  def error(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def debug(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def debug(msg: String, resource: Resource, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@pulumi/pulumi/log", "hasErrors")
-  @js.native
-  def hasErrors(): Boolean = js.native
+  @scala.inline
+  def error(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def error(msg: String, resource: Resource, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(
-    msg: String,
-    resource: js.UndefOr[scala.Nothing],
-    streamId: js.UndefOr[scala.Nothing],
-    ephemeral: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: Resource): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: Resource, streamId: js.UndefOr[scala.Nothing], ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "info")
-  @js.native
-  def info(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def hasErrors(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasErrors")().asInstanceOf[Boolean]
   
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(
-    msg: String,
-    resource: js.UndefOr[scala.Nothing],
-    streamId: js.UndefOr[scala.Nothing],
-    ephemeral: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: js.UndefOr[scala.Nothing], streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: Resource): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: Resource, streamId: js.UndefOr[scala.Nothing], ephemeral: Boolean): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = js.native
-  @JSImport("@pulumi/pulumi/log", "warn")
-  @js.native
-  def warn(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def info(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def info(msg: String, resource: Resource, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def warn(msg: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Unit, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Unit, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Unit, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Resource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Resource, streamId: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Resource, streamId: Double, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def warn(msg: String, resource: Resource, streamId: Unit, ephemeral: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], streamId.asInstanceOf[js.Any], ephemeral.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

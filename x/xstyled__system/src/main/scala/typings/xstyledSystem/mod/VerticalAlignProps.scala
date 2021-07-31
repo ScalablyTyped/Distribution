@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerticalAlignProps[TLength] extends StObject {
   
   val verticalAlign: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object VerticalAlignProps {
   
@@ -23,12 +21,12 @@ object VerticalAlignProps {
   }
   
   @scala.inline
-  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[_], TLength] (val x: Self with VerticalAlignProps[TLength]) extends AnyVal {
+  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[?], TLength] (val x: Self & VerticalAlignProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setVerticalAlign(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object VerticalAlignProps {
     def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def setVerticalAlignVarargs(value: js.Any*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+    def setVerticalAlignVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.VerticalAlign<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
   }
 }

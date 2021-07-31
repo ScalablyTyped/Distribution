@@ -2,36 +2,34 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteMultipartUploadInput extends StObject {
   
   /**
     * The AccountId value is the AWS account ID of the account that owns the vault. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon S3 Glacier uses the AWS account ID associated with the credentials used to sign the request. If you use an account ID, do not include any hyphens ('-') in the ID.
     */
-  var accountId: String = js.native
+  var accountId: String
   
   /**
     * The total size, in bytes, of the entire archive. This value should be the sum of all the sizes of the individual parts that you uploaded.
     */
-  var archiveSize: js.UndefOr[String] = js.native
+  var archiveSize: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA256 tree hash of the entire archive. It is the tree hash of SHA256 tree hash of the individual parts. If the value you specify in the request does not match the SHA256 tree hash of the final assembled archive as computed by Amazon S3 Glacier (Glacier), Glacier returns an error and the request fails.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The upload ID of the multipart upload.
     */
-  var uploadId: String = js.native
+  var uploadId: String
   
   /**
     * The name of the vault.
     */
-  var vaultName: String = js.native
+  var vaultName: String
 }
 object CompleteMultipartUploadInput {
   

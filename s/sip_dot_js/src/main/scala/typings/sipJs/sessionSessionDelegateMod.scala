@@ -10,12 +10,10 @@ import typings.sipJs.prackMod.IncomingPrackRequest
 import typings.sipJs.referMod.IncomingReferRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionSessionDelegateMod {
   
-  @js.native
   trait SessionDelegate extends StObject {
     
     /**
@@ -33,62 +31,62 @@ object sessionSessionDelegateMod {
       * so that we can avoid some race conditions (see comments in code for more details).
       * Having the handler return a Promise provides said indication.
       */
-    var onAck: js.UndefOr[js.Function1[/* request */ IncomingAckRequest, js.Promise[Unit] | Unit]] = js.native
+    var onAck: js.UndefOr[js.Function1[/* request */ IncomingAckRequest, js.Promise[Unit] | Unit]] = js.undefined
     
     /**
       * Timeout waiting for ACK request.
       * If no handler is provided the Session will terminated with a BYE.
       * https://tools.ietf.org/html/rfc3261#section-13.3.1.4
       */
-    var onAckTimeout: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAckTimeout: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Receive BYE request.
       * https://tools.ietf.org/html/rfc3261#section-15.1.2
       * @param request - Incoming BYE request.
       */
-    var onBye: js.UndefOr[js.Function1[/* request */ IncomingByeRequest, Unit]] = js.native
+    var onBye: js.UndefOr[js.Function1[/* request */ IncomingByeRequest, Unit]] = js.undefined
     
     /**
       * Receive INFO request.
       * @param request - Incoming INFO request.
       */
-    var onInfo: js.UndefOr[js.Function1[/* request */ IncomingInfoRequest, Unit]] = js.native
+    var onInfo: js.UndefOr[js.Function1[/* request */ IncomingInfoRequest, Unit]] = js.undefined
     
     /**
       * Receive re-INVITE request.
       * https://tools.ietf.org/html/rfc3261#section-14.2
       * @param request - Incoming INVITE request.
       */
-    var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.native
+    var onInvite: js.UndefOr[js.Function1[/* request */ IncomingInviteRequest, Unit]] = js.undefined
     
     /**
       * Receive MESSAGE request.
       * https://tools.ietf.org/html/rfc3428#section-7
       * @param request - Incoming MESSAGE request.
       */
-    var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* request */ IncomingMessageRequest, Unit]] = js.undefined
     
     /**
       * Receive NOTIFY request.
       * https://tools.ietf.org/html/rfc6665#section-4.1.3
       * @param request - Incoming NOTIFY request.
       */
-    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* request */ IncomingNotifyRequest, Unit]] = js.undefined
     
     /**
       * Receive PRACK request.
       * https://tools.ietf.org/html/rfc3262#section-3
       * @param request - Incoming PRACK request.
       */
-    var onPrack: js.UndefOr[js.Function1[/* request */ IncomingPrackRequest, Unit]] = js.native
+    var onPrack: js.UndefOr[js.Function1[/* request */ IncomingPrackRequest, Unit]] = js.undefined
     
     /**
       * Receive REFER request.
       * https://tools.ietf.org/html/rfc3515#section-2.4.2
       * @param request - Incoming REFER request.
       */
-    var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.native
+    var onRefer: js.UndefOr[js.Function1[/* request */ IncomingReferRequest, Unit]] = js.undefined
   }
   object SessionDelegate {
     

@@ -2,95 +2,93 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of a tab control's Tab or a page control's TabPage object.
   */
-@js.native
 trait ASPxClientTab extends StObject {
   
   /**
     * Returns the URL pointing to the image displayed within the active tab.
     */
-  def GetActiveImageUrl(): String = js.native
+  def GetActiveImageUrl(): String
   
   /**
     * Returns a value specifying whether a tab is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Returns the URL pointing to the image displayed within the tab.
     */
-  def GetImageUrl(): String = js.native
+  def GetImageUrl(): String
   
   /**
     * Gets an URL which defines the navigation location for the tab.
     */
-  def GetNavigateUrl(): String = js.native
+  def GetNavigateUrl(): String
   
   /**
     * Returns text displayed within the tab.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Returns a value specifying whether a tab is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Specifies the URL which points to the image displayed within the active tab.
     * @param value A string value that is the URL to the image displayed within the active tab.
     */
-  def SetActiveImageUrl(value: String): Unit = js.native
+  def SetActiveImageUrl(value: String): Unit
   
   /**
     * Specifies whether the tab is enabled.
     * @param value true to enable the tab; otherwise, false.
     */
-  def SetEnabled(value: Boolean): Unit = js.native
+  def SetEnabled(value: Boolean): Unit
   
   /**
     * Specifies the URL which points to the image displayed within the tab.
     * @param value A string value that is the URL to the image displayed within the tab.
     */
-  def SetImageUrl(value: String): Unit = js.native
+  def SetImageUrl(value: String): Unit
   
   /**
     * Specifies a URL which defines the navigation location for the tab.
     * @param value A string value which is a URL to where the client web browser will navigate when the tab is clicked.
     */
-  def SetNavigateUrl(value: String): Unit = js.native
+  def SetNavigateUrl(value: String): Unit
   
   /**
     * Specifies the text displayed within the tab.
     * @param value A string value that is the text displayed within the tab.
     */
-  def SetText(value: String): Unit = js.native
+  def SetText(value: String): Unit
   
   /**
     * Specifies whether the tab is visible.
     * @param value true is the tab is visible; otherwise, false.
     */
-  def SetVisible(value: Boolean): Unit = js.native
+  def SetVisible(value: Boolean): Unit
   
   /**
     * Gets the index of the current tab (tabbed page) within the control's collection of tabs (tabbed pages).
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name that uniquely identifies the current tab.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the tab control to which the current tab belongs.
     */
-  var tabControl: ASPxClientTabControlBase = js.native
+  var tabControl: ASPxClientTabControlBase
 }
 object ASPxClientTab {
   

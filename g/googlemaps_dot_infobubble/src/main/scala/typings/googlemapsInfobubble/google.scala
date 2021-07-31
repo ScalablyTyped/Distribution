@@ -6,7 +6,6 @@ import typings.googlemaps.google.maps.Marker
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object google {
@@ -42,30 +41,29 @@ object google {
     */
     object infobubble {
       
-      @js.native
       trait InfoBubble extends StObject {
         
         /**
           * Closes the infobubble
           */
-        def close(): Unit = js.native
+        def close(): Unit
         
         /**
           * Returns the position of the InfoBubble
           */
-        def getPosition(): LatLng = js.native
+        def getPosition(): LatLng
         
         /**
           * Checks if the infobubble is currently open
           */
-        def isOpen(): Boolean = js.native
+        def isOpen(): Boolean
         
         /**
           * Opens the infobubble
           * @map The google map object
           * @marker The marker used for anchoring the infobubble to
           */
-        def open(map: Map[Element], marker: Marker): Unit = js.native
+        def open(map: Map[Element], marker: Marker): Unit
       }
       object InfoBubble {
         
@@ -97,47 +95,46 @@ object google {
         }
       }
       
-      @js.native
       trait InfoBubbleOptions extends StObject {
         
         /**
           * Percentage from the bottom left corner of the infobubble
           */
-        var arrowPosition: js.UndefOr[Double] = js.native
+        var arrowPosition: js.UndefOr[Double] = js.undefined
         
-        var arrowSize: js.UndefOr[Double] = js.native
+        var arrowSize: js.UndefOr[Double] = js.undefined
         
         /**
           * 0: Middle, 1: Left, 2: Right
           */
-        var arrowStyle: js.UndefOr[Double] = js.native
+        var arrowStyle: js.UndefOr[Double] = js.undefined
         
-        var backgroundColor: js.UndefOr[String] = js.native
+        var backgroundColor: js.UndefOr[String] = js.undefined
         
-        var borderColor: js.UndefOr[String] = js.native
+        var borderColor: js.UndefOr[String] = js.undefined
         
-        var borderRadius: js.UndefOr[Double] = js.native
+        var borderRadius: js.UndefOr[Double] = js.undefined
         
-        var borderWidth: js.UndefOr[Double] = js.native
+        var borderWidth: js.UndefOr[Double] = js.undefined
         
-        var disableAnimation: js.UndefOr[Boolean] = js.native
+        var disableAnimation: js.UndefOr[Boolean] = js.undefined
         
-        var disableAutoPan: js.UndefOr[Boolean] = js.native
+        var disableAutoPan: js.UndefOr[Boolean] = js.undefined
         
-        var maxHeight: js.UndefOr[Double] = js.native
+        var maxHeight: js.UndefOr[Double] = js.undefined
         
-        var maxWidth: js.UndefOr[Double] = js.native
+        var maxWidth: js.UndefOr[Double] = js.undefined
         
-        var minHeight: js.UndefOr[Double] = js.native
+        var minHeight: js.UndefOr[Double] = js.undefined
         
-        var minWidth: js.UndefOr[Double] = js.native
+        var minWidth: js.UndefOr[Double] = js.undefined
         
-        var padding: js.UndefOr[Double] = js.native
+        var padding: js.UndefOr[Double] = js.undefined
         
         /**
           * 0: None, 1: Right, 2: Under
           */
-        var shadowStyle: js.UndefOr[Double] = js.native
+        var shadowStyle: js.UndefOr[Double] = js.undefined
       }
       object InfoBubbleOptions {
         

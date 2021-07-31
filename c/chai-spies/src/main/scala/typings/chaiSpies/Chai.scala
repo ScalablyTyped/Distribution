@@ -27,12 +27,10 @@ import typings.chaiSpies.ChaiSpies.SpyFunc9
 import typings.chaiSpies.ChaiSpies.SpyFunc9Proxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Chai {
   
-  @js.native
   trait Assertion extends StObject {
     
     /**
@@ -44,7 +42,7 @@ object Chai {
       * ```
       * Note that ```been``` can be used as a chainable method.
       */
-    def been(): Assertion = js.native
+    def been(): Assertion
     /**
       *  * ####.been
       * * Assert that something has been spied on. Negation passes through.
@@ -55,7 +53,7 @@ object Chai {
       * Note that ```been``` can be used as a chainable method.
       */
     @JSName("been")
-    var been_Original: Been = js.native
+    var been_Original: Been
     
     /**
       * ####.called
@@ -66,7 +64,7 @@ object Chai {
       * ```
       * Note that ```called``` can be used as a chainable method.
       */
-    def called(): Assertion = js.native
+    def called(): Assertion
     /**
       * ####.called
       * Assert that a spy has been called. Negation passes through.
@@ -77,7 +75,7 @@ object Chai {
       * Note that ```called``` can be used as a chainable method.
       */
     @JSName("called")
-    var called_Original: Called = js.native
+    var called_Original: Called
     
     /**
       *  * ####.nth (function)
@@ -88,7 +86,7 @@ object Chai {
       * ```
       * Note that ```nth``` can be used as a chainable method.
       */
-    def nth(index: Double): Assertion = js.native
+    def nth(index: Double): Assertion
     
     /**
       * ####.spy
@@ -98,10 +96,33 @@ object Chai {
       * spy.should.be.spy;
       * ```
       */
-    var spy: Assertion = js.native
+    var spy: Assertion
+  }
+  object Assertion {
+    
+    @scala.inline
+    def apply(been: Been, called: Called, nth: Double => Assertion, spy: Assertion): Assertion = {
+      val __obj = js.Dynamic.literal(been = been.asInstanceOf[js.Any], called = called.asInstanceOf[js.Any], nth = js.Any.fromFunction1(nth), spy = spy.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Assertion]
+    }
+    
+    @scala.inline
+    implicit class AssertionMutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBeen(value: Been): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCalled(value: Called): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNth(value: Double => Assertion): Self = StObject.set(x, "nth", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSpy(value: Assertion): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait ChaiStatic extends StObject {
     
     /**
@@ -116,37 +137,51 @@ object Chai {
       * @param fn function to spy on. @default ```function () {}```
       * @returns function to actually call
       */
-    def spy(): SpyFunc0Proxy[Unit] = js.native
-    def spy[R](fn: SpyFunc0[R]): SpyFunc0Proxy[R] = js.native
-    def spy[R](name: String, fn: SpyFunc0[R]): SpyFunc0Proxy[R] = js.native
-    def spy[A1, R](fn: SpyFunc1[A1, R]): SpyFunc1Proxy[A1, R] = js.native
-    def spy[A1, R](name: String, fn: SpyFunc1[A1, R]): SpyFunc1Proxy[A1, R] = js.native
-    def spy[A1, A2, R](fn: SpyFunc2[A1, A2, R]): SpyFunc2Proxy[A1, A2, R] = js.native
-    def spy[A1, A2, R](name: String, fn: SpyFunc2[A1, A2, R]): SpyFunc2Proxy[A1, A2, R] = js.native
-    def spy[A1, A2, A3, R](fn: SpyFunc3[A1, A2, A3, R]): SpyFunc3Proxy[A1, A2, A3, R] = js.native
-    def spy[A1, A2, A3, R](name: String, fn: SpyFunc3[A1, A2, A3, R]): SpyFunc3Proxy[A1, A2, A3, R] = js.native
-    def spy[A1, A2, A3, A4, R](fn: SpyFunc4[A1, A2, A3, A4, R]): SpyFunc4Proxy[A1, A2, A3, A4, R] = js.native
-    def spy[A1, A2, A3, A4, R](name: String, fn: SpyFunc4[A1, A2, A3, A4, R]): SpyFunc4Proxy[A1, A2, A3, A4, R] = js.native
-    def spy[A1, A2, A3, A4, A5, R](fn: SpyFunc5[A1, A2, A3, A4, A5, R]): SpyFunc5Proxy[A1, A2, A3, A4, A5, R] = js.native
-    def spy[A1, A2, A3, A4, A5, R](name: String, fn: SpyFunc5[A1, A2, A3, A4, A5, R]): SpyFunc5Proxy[A1, A2, A3, A4, A5, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, R](fn: SpyFunc6[A1, A2, A3, A4, A5, A6, R]): SpyFunc6Proxy[A1, A2, A3, A4, A5, A6, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, R](name: String, fn: SpyFunc6[A1, A2, A3, A4, A5, A6, R]): SpyFunc6Proxy[A1, A2, A3, A4, A5, A6, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, R](fn: SpyFunc7[A1, A2, A3, A4, A5, A6, A7, R]): SpyFunc7Proxy[A1, A2, A3, A4, A5, A6, A7, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, R](name: String, fn: SpyFunc7[A1, A2, A3, A4, A5, A6, A7, R]): SpyFunc7Proxy[A1, A2, A3, A4, A5, A6, A7, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, R](fn: SpyFunc8[A1, A2, A3, A4, A5, A6, A7, A8, R]): SpyFunc8Proxy[A1, A2, A3, A4, A5, A6, A7, A8, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, R](name: String, fn: SpyFunc8[A1, A2, A3, A4, A5, A6, A7, A8, R]): SpyFunc8Proxy[A1, A2, A3, A4, A5, A6, A7, A8, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R](fn: SpyFunc9[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]): SpyFunc9Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R](name: String, fn: SpyFunc9[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]): SpyFunc9Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R] = js.native
-    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](name: String, fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R] = js.native
+    def spy(): SpyFunc0Proxy[Unit]
+    def spy[R](fn: SpyFunc0[R]): SpyFunc0Proxy[R]
+    def spy[R](name: String, fn: SpyFunc0[R]): SpyFunc0Proxy[R]
+    def spy[A1, R](fn: SpyFunc1[A1, R]): SpyFunc1Proxy[A1, R]
+    def spy[A1, R](name: String, fn: SpyFunc1[A1, R]): SpyFunc1Proxy[A1, R]
+    def spy[A1, A2, R](fn: SpyFunc2[A1, A2, R]): SpyFunc2Proxy[A1, A2, R]
+    def spy[A1, A2, R](name: String, fn: SpyFunc2[A1, A2, R]): SpyFunc2Proxy[A1, A2, R]
+    def spy[A1, A2, A3, R](fn: SpyFunc3[A1, A2, A3, R]): SpyFunc3Proxy[A1, A2, A3, R]
+    def spy[A1, A2, A3, R](name: String, fn: SpyFunc3[A1, A2, A3, R]): SpyFunc3Proxy[A1, A2, A3, R]
+    def spy[A1, A2, A3, A4, R](fn: SpyFunc4[A1, A2, A3, A4, R]): SpyFunc4Proxy[A1, A2, A3, A4, R]
+    def spy[A1, A2, A3, A4, R](name: String, fn: SpyFunc4[A1, A2, A3, A4, R]): SpyFunc4Proxy[A1, A2, A3, A4, R]
+    def spy[A1, A2, A3, A4, A5, R](fn: SpyFunc5[A1, A2, A3, A4, A5, R]): SpyFunc5Proxy[A1, A2, A3, A4, A5, R]
+    def spy[A1, A2, A3, A4, A5, R](name: String, fn: SpyFunc5[A1, A2, A3, A4, A5, R]): SpyFunc5Proxy[A1, A2, A3, A4, A5, R]
+    def spy[A1, A2, A3, A4, A5, A6, R](fn: SpyFunc6[A1, A2, A3, A4, A5, A6, R]): SpyFunc6Proxy[A1, A2, A3, A4, A5, A6, R]
+    def spy[A1, A2, A3, A4, A5, A6, R](name: String, fn: SpyFunc6[A1, A2, A3, A4, A5, A6, R]): SpyFunc6Proxy[A1, A2, A3, A4, A5, A6, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, R](fn: SpyFunc7[A1, A2, A3, A4, A5, A6, A7, R]): SpyFunc7Proxy[A1, A2, A3, A4, A5, A6, A7, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, R](name: String, fn: SpyFunc7[A1, A2, A3, A4, A5, A6, A7, R]): SpyFunc7Proxy[A1, A2, A3, A4, A5, A6, A7, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, R](fn: SpyFunc8[A1, A2, A3, A4, A5, A6, A7, A8, R]): SpyFunc8Proxy[A1, A2, A3, A4, A5, A6, A7, A8, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, R](name: String, fn: SpyFunc8[A1, A2, A3, A4, A5, A6, A7, A8, R]): SpyFunc8Proxy[A1, A2, A3, A4, A5, A6, A7, A8, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R](fn: SpyFunc9[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]): SpyFunc9Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R](name: String, fn: SpyFunc9[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]): SpyFunc9Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]
+    def spy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R](name: String, fn: SpyFunc10[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]): SpyFunc10Proxy[A1, A2, A3, A4, A5, A6, A7, A8, A9, A10, R]
     @JSName("spy")
-    var spy_Original: Spy = js.native
+    var spy_Original: Spy
+  }
+  object ChaiStatic {
+    
+    @scala.inline
+    def apply(spy: Spy): ChaiStatic = {
+      val __obj = js.Dynamic.literal(spy = spy.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChaiStatic]
+    }
+    
+    @scala.inline
+    implicit class ChaiStaticMutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSpy(value: Spy): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait LanguageChains extends StObject {
     
-    var on: Assertion = js.native
+    var on: Assertion
   }
   object LanguageChains {
     

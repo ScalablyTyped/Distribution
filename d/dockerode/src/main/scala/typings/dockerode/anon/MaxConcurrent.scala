@@ -2,15 +2,13 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxConcurrent extends StObject {
   
-  var MaxConcurrent: js.UndefOr[Double] = js.native
+  var MaxConcurrent: js.UndefOr[Double] = js.undefined
   
-  var TotalCompletions: js.UndefOr[Double] = js.native
+  var TotalCompletions: js.UndefOr[Double] = js.undefined
 }
 object MaxConcurrent {
   

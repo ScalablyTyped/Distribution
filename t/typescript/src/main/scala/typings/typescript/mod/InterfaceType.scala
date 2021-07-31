@@ -2,19 +2,19 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InterfaceType extends ObjectType {
+trait InterfaceType
+  extends StObject
+     with ObjectType {
   
-  var localTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.native
+  var localTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
   
-  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.native
+  var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
   
-  var thisType: js.UndefOr[TypeParameter] = js.native
+  var thisType: js.UndefOr[TypeParameter] = js.undefined
   
-  var typeParameters: js.UndefOr[js.Array[TypeParameter]] = js.native
+  var typeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
 }
 object InterfaceType {
   

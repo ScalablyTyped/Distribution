@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassedSizeSliderStyleProperties extends Object {
+trait ClassedSizeSliderStyleProperties
+  extends StObject
+     with Object {
   
   /**
     * The background color of the slider's track.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
-  var trackBackgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var trackBackgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The color of the slider's track.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#style)
     */
-  var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var trackFillColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
 object ClassedSizeSliderStyleProperties {
   

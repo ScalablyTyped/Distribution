@@ -2,37 +2,35 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  def columns(callback: CbCallback): Unit = js.native
+  def columns(callback: CbCallback): Unit
   
-  def count(query: Query, callback: CbCallback): Unit = js.native
+  def count(query: Query, callback: CbCallback): Unit
   
-  def create(newDevice: js.Object, callback: CbCallback): Unit = js.native
+  def create(newDevice: js.Object, callback: CbCallback): Unit
   
-  def delete(query: Query, callback: CbCallback): Unit = js.native
+  def delete(query: Query, callback: CbCallback): Unit
   
-  def deleteDeviceByName(name: String, callback: CbCallback): Unit = js.native
+  def deleteDeviceByName(name: String, callback: CbCallback): Unit
   
-  def fetch(query: Query, callback: CbCallback): Unit = js.native
+  def fetch(query: Query, callback: CbCallback): Unit
   
-  def getDeviceByName(name: String, callback: CbCallback): Unit = js.native
+  def getDeviceByName(name: String, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(query: Query, `object`: js.Object, trigger: Boolean, callback: CbCallback): Unit = js.native
+  def update(query: Query, `object`: js.Object, trigger: Boolean, callback: CbCallback): Unit
   
-  def updateDeviceByName(name: String, `object`: js.Object, trigger: Boolean, callback: CbCallback): Unit = js.native
+  def updateDeviceByName(name: String, `object`: js.Object, trigger: Boolean, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Device {
   

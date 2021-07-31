@@ -6,7 +6,6 @@ import typings.reactTransitionGroup.reactTransitionGroupStrings.`in-out`
 import typings.reactTransitionGroup.reactTransitionGroupStrings.`out-in`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchTransitionMod {
@@ -48,15 +47,19 @@ object switchTransitionMod {
   object modes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[modes with String] = js.native
+    def apply(value: String): js.UndefOr[modes & String] = js.native
     
     @js.native
-    sealed trait in extends modes
-    /* "in-out" */ val in: typings.reactTransitionGroup.switchTransitionMod.modes.in with String = js.native
+    sealed trait in
+      extends StObject
+         with modes
+    /* "in-out" */ val in: typings.reactTransitionGroup.switchTransitionMod.modes.in & String = js.native
     
     @js.native
-    sealed trait out extends modes
-    /* "out-in" */ val out: typings.reactTransitionGroup.switchTransitionMod.modes.out with String = js.native
+    sealed trait out
+      extends StObject
+         with modes
+    /* "out-in" */ val out: typings.reactTransitionGroup.switchTransitionMod.modes.out & String = js.native
   }
   
   /**
@@ -86,20 +89,19 @@ object switchTransitionMod {
     */
   type SwitchTransition = Component[SwitchTransitionProps, js.Object, js.Any]
   
-  @js.native
   trait SwitchTransitionProps extends StObject {
     
     /**
       * Any `Transition` or `CSSTransition` component
       */
-    var children: ReactElement = js.native
+    var children: ReactElement
     
     /**
       * Transition modes.
       * `out-in`: Current element transitions out first, then when complete, the new element transitions in.
       * `in-out`: New element transitions in first, then when complete, the current element transitions out.
       */
-    var mode: js.UndefOr[`out-in` | `in-out`] = js.native
+    var mode: js.UndefOr[`out-in` | `in-out`] = js.undefined
   }
   object SwitchTransitionProps {
     

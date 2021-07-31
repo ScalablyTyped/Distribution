@@ -4,25 +4,23 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskGroupRevision extends StObject {
   
-  var changeType: AuditAction = js.native
+  var changeType: AuditAction
   
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
-  var changedDate: Date = js.native
+  var changedDate: Date
   
-  var comment: String = js.native
+  var comment: String
   
-  var fileId: Double = js.native
+  var fileId: Double
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var taskGroupId: String = js.native
+  var taskGroupId: String
 }
 object TaskGroupRevision {
   

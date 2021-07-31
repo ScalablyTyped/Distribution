@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Wallet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object WalletSummaryViewPosition extends StObject {
   
   /** The first summary line. */
   @js.native
-  sealed trait field1 extends WalletSummaryViewPosition
+  sealed trait field1
+    extends StObject
+       with WalletSummaryViewPosition
   
   /** The second summary line. */
   @js.native
-  sealed trait field2 extends WalletSummaryViewPosition
+  sealed trait field2
+    extends StObject
+       with WalletSummaryViewPosition
   
   /** The item is hidden in the summary view. */
   @js.native
-  sealed trait hidden extends WalletSummaryViewPosition
+  sealed trait hidden
+    extends StObject
+       with WalletSummaryViewPosition
 }

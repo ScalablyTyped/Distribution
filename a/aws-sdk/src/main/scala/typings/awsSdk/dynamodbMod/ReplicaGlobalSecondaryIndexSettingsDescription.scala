@@ -2,41 +2,39 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaGlobalSecondaryIndexSettingsDescription extends StObject {
   
   /**
     * The name of the global secondary index. The name must be unique among all other indexes on this table.
     */
-  var IndexName: typings.awsSdk.dynamodbMod.IndexName = js.native
+  var IndexName: typings.awsSdk.dynamodbMod.IndexName
   
   /**
     *  The current status of the global secondary index:    CREATING - The global secondary index is being created.    UPDATING - The global secondary index is being updated.    DELETING - The global secondary index is being deleted.    ACTIVE - The global secondary index is ready for use.  
     */
-  var IndexStatus: js.UndefOr[typings.awsSdk.dynamodbMod.IndexStatus] = js.native
+  var IndexStatus: js.UndefOr[typings.awsSdk.dynamodbMod.IndexStatus] = js.undefined
   
   /**
     * Auto scaling settings for a global secondary index replica's read capacity units.
     */
-  var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+  var ProvisionedReadCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
   
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var ProvisionedReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * Auto scaling settings for a global secondary index replica's write capacity units.
     */
-  var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.native
+  var ProvisionedWriteCapacityAutoScalingSettings: js.UndefOr[AutoScalingSettingsDescription] = js.undefined
   
   /**
     * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var ProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 object ReplicaGlobalSecondaryIndexSettingsDescription {
   

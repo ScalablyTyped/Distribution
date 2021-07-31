@@ -2,10 +2,13 @@ package typings.node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncHooksMod {
+  
+  @JSImport("async_hooks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * When having multiple instances of `AsyncLocalStorage`, they are independent
@@ -106,7 +109,7 @@ object asyncHooksMod {
       * Binds the given function to execute to this `AsyncResource`'s scope.
       * @param fn The function to bind to the current `AsyncResource`.
       */
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func): Func with typings.node.anon.AsyncResource = js.native
+    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = js.native
     
     /**
       * Call AsyncHooks destroy callbacks.
@@ -125,11 +128,7 @@ object asyncHooksMod {
       * @param args Optional arguments to pass to the function.
       */
     def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result], thisArg: This, args: js.Any*): Result = js.native
-    def runInAsyncScope[This, Result](
-      fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result],
-      thisArg: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): Result = js.native
+    def runInAsyncScope[This, Result](fn: js.ThisFunction1[/* this */ This, /* repeated */ js.Any, Result], thisArg: Unit, args: js.Any*): Result = js.native
     
     /**
       * @return the trigger ID for this AsyncResource instance.
@@ -138,18 +137,20 @@ object asyncHooksMod {
   }
   object AsyncResource {
     
+    @JSImport("async_hooks", "AsyncResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Binds the given function to the current execution context.
       * @param fn The function to bind to the current execution context.
       * @param type An optional name to associate with the underlying `AsyncResource`.
       */
     /* static member */
-    @JSImport("async_hooks", "AsyncResource.bind")
-    @js.native
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func): Func with typings.node.anon.AsyncResource = js.native
-    @JSImport("async_hooks", "AsyncResource.bind")
-    @js.native
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func, `type`: java.lang.String): Func with typings.node.anon.AsyncResource = js.native
+    @scala.inline
+    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    @scala.inline
+    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func, `type`: java.lang.String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
   }
   
   /**
@@ -157,16 +158,14 @@ object asyncHooksMod {
     * @param options the callbacks to register
     * @return an AsyncHooks instance used for disabling and enabling hooks
     */
-  @JSImport("async_hooks", "createHook")
-  @js.native
-  def createHook(options: HookCallbacks): AsyncHook = js.native
+  @scala.inline
+  def createHook(options: HookCallbacks): AsyncHook = ^.asInstanceOf[js.Dynamic].applyDynamic("createHook")(options.asInstanceOf[js.Any]).asInstanceOf[AsyncHook]
   
   /**
     * Returns the asyncId of the current execution context.
     */
-  @JSImport("async_hooks", "executionAsyncId")
-  @js.native
-  def executionAsyncId(): Double = js.native
+  @scala.inline
+  def executionAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncId")().asInstanceOf[Double]
   
   /**
     * The resource representing the current execution.
@@ -180,29 +179,26 @@ object asyncHooksMod {
     * return an empty object as there is no handle or request object to use,
     * but having an object representing the top-level can be helpful.
     */
-  @JSImport("async_hooks", "executionAsyncResource")
-  @js.native
-  def executionAsyncResource(): js.Object = js.native
+  @scala.inline
+  def executionAsyncResource(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("executionAsyncResource")().asInstanceOf[js.Object]
   
   /**
     * Returns the ID of the resource responsible for calling the callback that is currently being executed.
     */
-  @JSImport("async_hooks", "triggerAsyncId")
-  @js.native
-  def triggerAsyncId(): Double = js.native
+  @scala.inline
+  def triggerAsyncId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerAsyncId")().asInstanceOf[Double]
   
-  @js.native
   trait AsyncHook extends StObject {
     
     /**
       * Disable the callbacks for a given AsyncHook instance from the global pool of AsyncHook callbacks to be executed. Once a hook has been disabled it will not be called again until enabled.
       */
-    def disable(): this.type = js.native
+    def disable(): this.type
     
     /**
       * Enable the callbacks for a given AsyncHook instance. If no callbacks are provided enabling is a noop.
       */
-    def enable(): this.type = js.native
+    def enable(): this.type
   }
   object AsyncHook {
     
@@ -223,7 +219,6 @@ object asyncHooksMod {
     }
   }
   
-  @js.native
   trait AsyncResourceOptions extends StObject {
     
     /**
@@ -233,13 +228,13 @@ object asyncHooksMod {
       * sensitive API's `emitDestroy` is called with it.
       * Default: `false`
       */
-    var requireManualDestroy: js.UndefOr[Boolean] = js.native
+    var requireManualDestroy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of the execution context that created this async event.
       * Default: `executionAsyncId()`
       */
-    var triggerAsyncId: js.UndefOr[Double] = js.native
+    var triggerAsyncId: js.UndefOr[Double] = js.undefined
   }
   object AsyncResourceOptions {
     
@@ -266,27 +261,26 @@ object asyncHooksMod {
     }
   }
   
-  @js.native
   trait HookCallbacks extends StObject {
     
     /**
       * Called immediately after the callback specified in before is completed.
       * @param asyncId the unique identifier assigned to the resource which has executed the callback.
       */
-    var after: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.native
+    var after: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.undefined
     
     /**
       * When an asynchronous operation is initiated or completes a callback is called to notify the user.
       * The before callback is called just before said callback is executed.
       * @param asyncId the unique identifier assigned to the resource about to execute the callback.
       */
-    var before: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.native
+    var before: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.undefined
     
     /**
       * Called after the resource corresponding to asyncId is destroyed
       * @param asyncId a unique ID for the async resource
       */
-    var destroy: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.undefined
     
     /**
       * Called when a class is constructed that has the possibility to emit an asynchronous event.
@@ -303,14 +297,14 @@ object asyncHooksMod {
           /* resource */ js.Object, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when a promise has resolve() called. This may not be in the same execution id
       * as the promise itself.
       * @param asyncId the unique id for the promise that was resolve()d.
       */
-    var promiseResolve: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.native
+    var promiseResolve: js.UndefOr[js.Function1[/* asyncId */ Double, Unit]] = js.undefined
   }
   object HookCallbacks {
     

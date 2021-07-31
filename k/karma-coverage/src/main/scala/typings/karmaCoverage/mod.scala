@@ -5,19 +5,17 @@ import typings.istanbul.mod.Store
 import typings.karmaCoverage.anon.KarmaCoverageReporterrepo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * {@link https://github.com/karma-runner/karma-coverage/blob/v1.1.2/docs/configuration.md }
       */
-    var coverageReporter: js.UndefOr[KarmaCoverageReporterrepo] = js.native
+    var coverageReporter: js.UndefOr[KarmaCoverageReporterrepo] = js.undefined
   }
   object ConfigOptions {
     
@@ -38,53 +36,53 @@ object mod {
     }
   }
   
-  @js.native
   trait KarmaCoverageReporter
-    extends /* moreSettings */ StringDictionary[js.Any] {
+    extends StObject
+       with /* moreSettings */ StringDictionary[js.Any] {
     
     /** This will be used to configure minimum threshold enforcement for coverage results */
-    var check: js.UndefOr[js.Any] = js.native
+    var check: js.UndefOr[js.Any] = js.undefined
     
     /** This will be used to output coverage reports. When you set a relative path, the directory is resolved against the basePath. */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /** If you use one of these reporters, `cobertura`, `lcovonly`, `teamcity`, `text` or `text-summary`, you may set the file option to specify the output file */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * You can opt to include all sources files, as indicated by the coverage preprocessor,
       * in your code coverage data, even if there are no tests covering them
       */
-    var includeAllSources: js.UndefOr[Boolean] = js.native
+    var includeAllSources: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Karma-coverage can infers the instrumenter regarding of the file extension.
       * It is possible to override this behavior and point out an instrumenter
       * for the files matching a specific pattern.
       */
-    var instrumenter: js.UndefOr[js.Any] = js.native
+    var instrumenter: js.UndefOr[js.Any] = js.undefined
     
     /** You can use multiple reporters, by providing array of options */
-    var reporters: js.UndefOr[js.Array[Reporter]] = js.native
+    var reporters: js.UndefOr[js.Array[Reporter]] = js.undefined
     
     /** You can opt to specify a source store allowing for external coverage collectors access to the instrumented code. */
-    var sourceStore: js.UndefOr[Store] = js.native
+    var sourceStore: js.UndefOr[Store] = js.undefined
     
     /** This will be used in complement of the coverageReporter.dir option to generate the full output directory path */
-    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.native
+    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.undefined
     
     /** Specify a reporter type */
-    var `type`: js.UndefOr[ReporterType] = js.native
+    var `type`: js.UndefOr[ReporterType] = js.undefined
     
     /**
       * If set to true, then CoffeeScript files instrumented with Ibrik will use
       * the .js extension for the transpiled source (without this option,
       * the JavaScript files will keep the original .coffee extension)
       */
-    var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.native
+    var useJSExtensionForCoffeeScript: js.UndefOr[Boolean] = js.undefined
     
     /** This will be used to set the coverage threshold colors */
-    var watermarks: js.UndefOr[js.Any] = js.native
+    var watermarks: js.UndefOr[js.Any] = js.undefined
   }
   object KarmaCoverageReporter {
     
@@ -171,16 +169,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Reporter extends StObject {
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.native
+    var subdir: js.UndefOr[String | (js.Function1[/* browser */ String, String])] = js.undefined
     
-    var `type`: ReporterType = js.native
+    var `type`: ReporterType
   }
   object Reporter {
     

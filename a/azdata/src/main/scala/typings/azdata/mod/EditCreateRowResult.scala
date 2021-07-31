@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditCreateRowResult extends StObject {
   
-  var defaultValues: js.Array[String] = js.native
+  var defaultValues: js.Array[String]
   
-  var newRowId: Double = js.native
+  var newRowId: Double
 }
 object EditCreateRowResult {
   

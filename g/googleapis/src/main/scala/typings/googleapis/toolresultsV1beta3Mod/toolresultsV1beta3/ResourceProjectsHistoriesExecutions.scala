@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions")
@@ -39,7 +38,7 @@ class ResourceProjectsHistoriesExecutions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaExecution] = js.native
   def create(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsCreate): GaxiosPromise[SchemaExecution] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsCreate,
@@ -76,7 +75,7 @@ class ResourceProjectsHistoriesExecutions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaExecution] = js.native
   def get(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsGet): GaxiosPromise[SchemaExecution] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsGet,
@@ -116,7 +115,7 @@ class ResourceProjectsHistoriesExecutions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListExecutionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListExecutionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsList): GaxiosPromise[SchemaListExecutionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsList,
@@ -157,7 +156,7 @@ class ResourceProjectsHistoriesExecutions protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaExecution] = js.native
   def patch(callback: BodyResponseCallback[SchemaExecution]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExecution] = js.native
   def patch(params: ParamsResourceProjectsHistoriesExecutionsPatch): GaxiosPromise[SchemaExecution] = js.native
   def patch(
     params: ParamsResourceProjectsHistoriesExecutionsPatch,

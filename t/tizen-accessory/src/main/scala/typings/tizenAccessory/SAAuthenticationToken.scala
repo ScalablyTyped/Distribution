@@ -2,15 +2,13 @@ package typings.tizenAccessory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAAuthenticationToken extends StObject {
   
-  val authenticationType: String = js.native
+  val authenticationType: String
   
-  val key: String = js.native
+  val key: String
 }
 object SAAuthenticationToken {
   

@@ -4,37 +4,64 @@ import typings.semanticUiReactEventStack.typesMod.EventListeners
 import typings.semanticUiReactEventStack.typesMod.TargetElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventTargetMod {
   
   @JSImport("@semantic-ui-react/event-stack/lib/types/lib/EventTarget", JSImport.Default)
   @js.native
-  class default protected () extends EventTarget {
+  class default protected ()
+    extends StObject
+       with EventTarget {
     def this(target: TargetElement) = this()
-  }
-  
-  @js.native
-  trait EventTarget extends StObject {
     
-    def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
+    /* CompleteClass */
+    override def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
+    /* CompleteClass */
     var addTargetHandler: js.Any = js.native
     
+    /* CompleteClass */
     var createEmitter: js.Any = js.native
     
-    val handlers: js.Any = js.native
+    /* CompleteClass */
+    override val handlers: js.Any = js.native
     
-    def hasHandlers(): Boolean = js.native
+    /* CompleteClass */
+    override def hasHandlers(): Boolean = js.native
     
-    val pools: js.Any = js.native
+    /* CompleteClass */
+    override val pools: js.Any = js.native
     
-    def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
+    /* CompleteClass */
+    override def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit = js.native
     
+    /* CompleteClass */
     var removeTargetHandler: js.Any = js.native
     
-    val target: js.Any = js.native
+    /* CompleteClass */
+    override val target: js.Any = js.native
+  }
+  
+  trait EventTarget extends StObject {
+    
+    def addHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
+    
+    var addTargetHandler: js.Any
+    
+    var createEmitter: js.Any
+    
+    val handlers: js.Any
+    
+    def hasHandlers(): Boolean
+    
+    val pools: js.Any
+    
+    def removeHandlers(poolName: String, eventType: String, eventHandlers: EventListeners): Unit
+    
+    var removeTargetHandler: js.Any
+    
+    val target: js.Any
   }
   object EventTarget {
     

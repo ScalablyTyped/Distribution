@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,20 +12,19 @@ object mod extends Shortcut {
   @js.native
   val ^ : Useref = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var additionalStreams: js.UndefOr[js.Array[ReadWriteStream]] = js.native
+    var additionalStreams: js.UndefOr[js.Array[ReadWriteStream]] = js.undefined
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var noAssets: js.UndefOr[Boolean] = js.native
+    var noAssets: js.UndefOr[Boolean] = js.undefined
     
-    var noconcat: js.UndefOr[Boolean] = js.native
+    var noconcat: js.UndefOr[Boolean] = js.undefined
     
-    var searchPath: js.UndefOr[String | js.Array[String]] = js.native
+    var searchPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var transformPath: js.UndefOr[js.Function1[/* filePath */ String, Unit]] = js.native
+    var transformPath: js.UndefOr[js.Function1[/* filePath */ String, Unit]] = js.undefined
   }
   object Options {
     

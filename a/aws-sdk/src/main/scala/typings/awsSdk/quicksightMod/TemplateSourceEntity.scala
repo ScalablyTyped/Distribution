@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSourceEntity extends StObject {
   
   /**
     * The source analysis, if it is based on an analysis.
     */
-  var SourceAnalysis: js.UndefOr[TemplateSourceAnalysis] = js.native
+  var SourceAnalysis: js.UndefOr[TemplateSourceAnalysis] = js.undefined
   
   /**
     * The source template, if it is based on an template.
     */
-  var SourceTemplate: js.UndefOr[TemplateSourceTemplate] = js.native
+  var SourceTemplate: js.UndefOr[TemplateSourceTemplate] = js.undefined
 }
 object TemplateSourceEntity {
   

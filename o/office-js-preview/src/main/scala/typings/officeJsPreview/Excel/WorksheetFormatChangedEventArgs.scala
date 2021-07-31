@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import typings.officeJsPreview.officeJsPreviewStrings.WorksheetFormatChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait WorksheetFormatChangedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  def getRange(ctx: RequestContext): Range = js.native
+  def getRange(ctx: RequestContext): Range
   
   /**
     *
@@ -39,7 +37,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  def getRangeOrNullObject(ctx: RequestContext): Range = js.native
+  def getRangeOrNullObject(ctx: RequestContext): Range
   
   /**
     *
@@ -47,7 +45,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -55,7 +53,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: WorksheetFormatChanged = js.native
+  var `type`: WorksheetFormatChanged
   
   /**
     *
@@ -63,7 +61,7 @@ trait WorksheetFormatChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetFormatChangedEventArgs {
   
@@ -73,11 +71,10 @@ object WorksheetFormatChangedEventArgs {
     getRange: RequestContext => Range,
     getRangeOrNullObject: RequestContext => Range,
     source: EventSource | Local | Remote,
-    `type`: WorksheetFormatChanged,
     worksheetId: String
   ): WorksheetFormatChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetFormatChanged")
     __obj.asInstanceOf[WorksheetFormatChangedEventArgs]
   }
   

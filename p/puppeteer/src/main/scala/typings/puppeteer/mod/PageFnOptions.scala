@@ -4,13 +4,13 @@ import typings.puppeteer.puppeteerStrings.mutation
 import typings.puppeteer.puppeteerStrings.raf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PageFnOptions extends Timeoutable {
+trait PageFnOptions
+  extends StObject
+     with Timeoutable {
   
-  var polling: js.UndefOr[raf | mutation | Double] = js.native
+  var polling: js.UndefOr[raf | mutation | Double] = js.undefined
 }
 object PageFnOptions {
   

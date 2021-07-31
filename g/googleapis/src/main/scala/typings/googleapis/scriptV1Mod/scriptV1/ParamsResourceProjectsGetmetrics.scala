@@ -6,32 +6,32 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsGetmetrics extends StandardParameters {
+trait ParamsResourceProjectsGetmetrics
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional field indicating a specific deployment to retrieve metrics from.
     */
   @JSName("metricsFilter.deploymentId")
-  var metricsFilterDotdeploymentId: js.UndefOr[String] = js.native
+  var metricsFilterDotdeploymentId: js.UndefOr[String] = js.undefined
   
   /**
     * Required field indicating what granularity of metrics are returned.
     */
-  var metricsGranularity: js.UndefOr[String] = js.native
+  var metricsGranularity: js.UndefOr[String] = js.undefined
   
   /**
     * Required field indicating the script to get metrics for.
     */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsGetmetrics {
   

@@ -7,7 +7,6 @@ import typings.luminoPolling.pollMod.Poll.IOptions
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -102,33 +101,32 @@ object mod {
     ) = this()
   }
   
-  @js.native
   trait IPoll[T, U, V /* <: String */] extends StObject {
     
     /**
       * A signal emitted when the poll is disposed.
       */
-    val disposed: ISignal[this.type, Unit] = js.native
+    val disposed: ISignal[this.type, Unit]
     
     /**
       * The polling frequency data.
       */
-    val frequency: Frequency = js.native
+    val frequency: Frequency
     
     /**
       * Whether the poll is disposed.
       */
-    val isDisposed: Boolean = js.native
+    val isDisposed: Boolean
     
     /**
       * The name of the poll.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The poll state, which is the content of the currently-scheduled poll tick.
       */
-    val state: State[T, U, V] = js.native
+    val state: State[T, U, V]
     
     /**
       * A promise that resolves when the currently-scheduled tick completes.
@@ -138,12 +136,12 @@ object mod {
       * `state.timestamp`. It can resolve earlier if the user starts or refreshes the
       * poll, etc.
       */
-    val tick: js.Promise[IPoll[T, U, V]] = js.native
+    val tick: js.Promise[IPoll[T, U, V]]
     
     /**
       * A signal emitted when the poll state changes, i.e., a new tick is scheduled.
       */
-    val ticked: ISignal[IPoll[T, U, V], State[T, U, V]] = js.native
+    val ticked: ISignal[IPoll[T, U, V], State[T, U, V]]
   }
   object IPoll {
     
@@ -175,7 +173,6 @@ object mod {
       * (sleeping the `max`), and the rest of the time the sleep will be a random
       * number below `max`, decorrelating our trigger time from other pollers.
       */
-    @js.native
     trait Frequency extends StObject {
       
       /**
@@ -185,17 +182,17 @@ object mod {
         * #### Notes
         * If `true`, the default backoff growth rate is `3`.
         */
-      val backoff: Boolean | Double = js.native
+      val backoff: Boolean | Double
       
       /**
         * The basic polling interval in milliseconds (integer).
         */
-      val interval: Double = js.native
+      val interval: Double
       
       /**
         * The maximum milliseconds (integer) between poll requests.
         */
-      val max: Double = js.native
+      val max: Double
     }
     object Frequency {
       
@@ -220,7 +217,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IPollMutableBuilder[Self <: IPoll[_, _, _], T, U, V /* <: String */] (val x: Self with (IPoll[T, U, V])) extends AnyVal {
+    implicit class IPollMutableBuilder[Self <: IPoll[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IPoll[T, U, V])) extends AnyVal {
       
       @scala.inline
       def setDisposed(value: ISignal[IPoll[T, U, V], Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
@@ -272,13 +269,12 @@ object mod {
       *
       * @typeparam V - The type to extend the phases supported by a poll.
       */
-    @js.native
     trait State[T, U, V /* <: String */] extends StObject {
       
       /**
         * The number of milliseconds until the current tick resolves.
         */
-      val interval: Double = js.native
+      val interval: Double
       
       /**
         * The payload of the last poll resolution or rejection.
@@ -287,28 +283,28 @@ object mod {
         * The payload is `null` unless the `phase` is `'reconnected`, `'resolved'`,
         * or `'rejected'`. Its type is `T` for resolutions and `U` for rejections.
         */
-      val payload: T | U | Null = js.native
+      val payload: T | U | Null
       
       /**
         * The current poll phase.
         */
-      val phase: Phase[V] = js.native
+      val phase: Phase[V]
       
       /**
         * The timestamp for when this tick was scheduled.
         */
-      val timestamp: Double = js.native
+      val timestamp: Double
     }
     object State {
       
       @scala.inline
       def apply[T, U, V /* <: String */](interval: Double, phase: Phase[V], timestamp: Double): State[T, U, V] = {
-        val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], payload = null)
         __obj.asInstanceOf[State[T, U, V]]
       }
       
       @scala.inline
-      implicit class StateMutableBuilder[Self <: State[_, _, _], T, U, V /* <: String */] (val x: Self with (State[T, U, V])) extends AnyVal {
+      implicit class StateMutableBuilder[Self <: State[?, ?, ?], T, U, V /* <: String */] (val x: Self & (State[T, U, V])) extends AnyVal {
         
         @scala.inline
         def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
@@ -330,23 +326,24 @@ object mod {
     trait _Phase[T /* <: String */] extends StObject
   }
   
-  @js.native
-  trait IRateLimiter[T, U] extends IDisposable {
+  trait IRateLimiter[T, U]
+    extends StObject
+       with IDisposable {
     
     /**
       * Invoke the rate limited function.
       */
-    def invoke(): js.Promise[T] = js.native
+    def invoke(): js.Promise[T]
     
     /**
       * The rate limit in milliseconds.
       */
-    val limit: Double = js.native
+    val limit: Double
     
     /**
       * Stop the function if it is mid-flight.
       */
-    def stop(): js.Promise[Unit] = js.native
+    def stop(): js.Promise[Unit]
   }
   object IRateLimiter {
     
@@ -363,7 +360,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IRateLimiterMutableBuilder[Self <: IRateLimiter[_, _], T, U] (val x: Self with (IRateLimiter[T, U])) extends AnyVal {
+    implicit class IRateLimiterMutableBuilder[Self <: IRateLimiter[?, ?], T, U] (val x: Self & (IRateLimiter[T, U])) extends AnyVal {
       
       @scala.inline
       def setInvoke(value: () => js.Promise[T]): Self = StObject.set(x, "invoke", js.Any.fromFunction0(value))

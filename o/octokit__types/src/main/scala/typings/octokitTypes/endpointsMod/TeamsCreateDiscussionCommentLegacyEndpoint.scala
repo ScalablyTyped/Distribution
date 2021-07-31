@@ -2,20 +2,18 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCreateDiscussionCommentLegacyEndpoint extends StObject {
   
   /**
     * The discussion comment's body text.
     */
-  var body: String = js.native
+  var body: String
   
-  var discussion_number: Double = js.native
+  var discussion_number: Double
   
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object TeamsCreateDiscussionCommentLegacyEndpoint {
   

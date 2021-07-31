@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceOutput extends StObject {
   
   /**
     * An opaque string that indicates the position at which to stop returning the list of tags.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource for which you want to list tags.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.storagegatewayMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.storagegatewayMod.ResourceARN] = js.undefined
   
   /**
     * An array that contains the tags for the specified resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.undefined
 }
 object ListTagsForResourceOutput {
   

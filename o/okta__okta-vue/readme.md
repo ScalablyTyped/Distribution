@@ -10,9 +10,9 @@ Vue support for Okta
 | ------------------ | :-------------: |
 | Full name          | @okta/okta-vue |
 | Keywords           | oauth2 |
-| # releases         | 11 |
+| # releases         | 9 |
 | # dependents       | 0 |
-| # downloads        | 308045 |
+| # downloads        | 552254 |
 | # stars            | 0 |
 
 ## Links

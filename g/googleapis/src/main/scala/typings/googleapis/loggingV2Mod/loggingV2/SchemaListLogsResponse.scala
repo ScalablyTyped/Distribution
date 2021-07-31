@@ -2,13 +2,11 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListLogs.
   */
-@js.native
 trait SchemaListLogsResponse extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaListLogsResponse extends StObject {
     * or
     * &quot;organizations/123/cloudresourcemanager.googleapis.com%2Factivity&quot;.
     */
-  var logNames: js.UndefOr[js.Array[String]] = js.native
+  var logNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If there might be more results than those appearing in this response,
     * then nextPageToken is included. To get the next set of results, call this
     * method again using the value of nextPageToken as pageToken.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLogsResponse {
   

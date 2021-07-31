@@ -8,7 +8,6 @@ import typings.react.mod.KeyboardEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyboardMod {
@@ -17,34 +16,33 @@ object keyboardMod {
   @js.native
   val Keyboard: FC[KeyboardProps] = js.native
   
-  @js.native
   trait KeyboardProps extends StObject {
     
-    var onBackspace: js.UndefOr[KeyboardType] = js.native
+    var onBackspace: js.UndefOr[KeyboardType] = js.undefined
     
-    var onComma: js.UndefOr[KeyboardType] = js.native
+    var onComma: js.UndefOr[KeyboardType] = js.undefined
     
-    var onDown: js.UndefOr[KeyboardType] = js.native
+    var onDown: js.UndefOr[KeyboardType] = js.undefined
     
-    var onEnter: js.UndefOr[KeyboardType] = js.native
+    var onEnter: js.UndefOr[KeyboardType] = js.undefined
     
-    var onEsc: js.UndefOr[KeyboardType] = js.native
+    var onEsc: js.UndefOr[KeyboardType] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardType] = js.native
+    var onKeyDown: js.UndefOr[KeyboardType] = js.undefined
     
-    var onLeft: js.UndefOr[KeyboardType] = js.native
+    var onLeft: js.UndefOr[KeyboardType] = js.undefined
     
-    var onRight: js.UndefOr[KeyboardType] = js.native
+    var onRight: js.UndefOr[KeyboardType] = js.undefined
     
-    var onShift: js.UndefOr[KeyboardType] = js.native
+    var onShift: js.UndefOr[KeyboardType] = js.undefined
     
-    var onSpace: js.UndefOr[KeyboardType] = js.native
+    var onSpace: js.UndefOr[KeyboardType] = js.undefined
     
-    var onTab: js.UndefOr[KeyboardType] = js.native
+    var onTab: js.UndefOr[KeyboardType] = js.undefined
     
-    var onUp: js.UndefOr[KeyboardType] = js.native
+    var onUp: js.UndefOr[KeyboardType] = js.undefined
     
-    var target: js.UndefOr[component | document] = js.native
+    var target: js.UndefOr[component | document] = js.undefined
   }
   object KeyboardProps {
     

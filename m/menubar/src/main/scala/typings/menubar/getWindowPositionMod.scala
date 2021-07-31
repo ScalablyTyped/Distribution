@@ -3,18 +3,19 @@ package typings.menubar
 import typings.electron.mod.Tray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getWindowPositionMod {
   
-  @JSImport("menubar/lib/util/getWindowPosition", "getWindowPosition")
+  @JSImport("menubar/lib/util/getWindowPosition", JSImport.Namespace)
   @js.native
-  def getWindowPosition(tray: Tray): WindowPosition = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("menubar/lib/util/getWindowPosition", "taskbarLocation")
-  @js.native
-  def taskbarLocation(tray: Tray): TaskbarLocation_ = js.native
+  @scala.inline
+  def getWindowPosition(tray: Tray): WindowPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowPosition")(tray.asInstanceOf[js.Any]).asInstanceOf[WindowPosition]
+  
+  @scala.inline
+  def taskbarLocation(tray: Tray): TaskbarLocation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("taskbarLocation")(tray.asInstanceOf[js.Any]).asInstanceOf[TaskbarLocation_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.menubar.menubarStrings.top

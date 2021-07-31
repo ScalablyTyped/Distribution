@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If {@link getSessionStats} is called successfully, this interface provides the statistics.
   */
-@js.native
 trait SessionStats extends StObject {
   
   /** Call duration in seconds, represented by an aggregate value. */
-  val Duration: js.UndefOr[String] = js.native
+  val Duration: js.UndefOr[String] = js.undefined
   
   /** Total received bitrate of the stream, in Kbps, represented by an instantaneous value. */
-  val RecvBitrate: js.UndefOr[String] = js.native
+  val RecvBitrate: js.UndefOr[String] = js.undefined
   
   /** Total number of bytes received, represented by an aggregate value. */
-  val RecvBytes: js.UndefOr[String] = js.native
+  val RecvBytes: js.UndefOr[String] = js.undefined
   
   /** Total sent bitrate of the stream, in Kbps, represented by an instantaneous value. */
-  val SendBitrate: js.UndefOr[String] = js.native
+  val SendBitrate: js.UndefOr[String] = js.undefined
   
   /** Total number of bytes sent, represented by an aggregate value. */
-  val SendBytes: js.UndefOr[String] = js.native
+  val SendBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Number of users in the channel.
@@ -36,7 +34,7 @@ trait SessionStats extends StObject {
     *  - If the local user is an audience: The number of hosts in the channel + 1.
     *  - If the user is a host: The number of hosts in the channel.
     */
-  val UserCount: js.UndefOr[String] = js.native
+  val UserCount: js.UndefOr[String] = js.undefined
 }
 object SessionStats {
   

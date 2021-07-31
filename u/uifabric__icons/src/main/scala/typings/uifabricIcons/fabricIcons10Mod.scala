@@ -3,21 +3,20 @@ package typings.uifabricIcons
 import typings.uifabricStyling.iconsMod.IIconOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabricIcons10Mod {
   
-  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
+  @JSImport("@uifabric/icons/lib/fabric-icons-10", JSImport.Namespace)
   @js.native
-  def initializeIcons(): Unit = js.native
-  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
-  @js.native
-  def initializeIcons(baseUrl: js.UndefOr[scala.Nothing], options: IIconOptions): Unit = js.native
-  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
-  @js.native
-  def initializeIcons(baseUrl: String): Unit = js.native
-  @JSImport("@uifabric/icons/lib/fabric-icons-10", "initializeIcons")
-  @js.native
-  def initializeIcons(baseUrl: String, options: IIconOptions): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def initializeIcons(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")().asInstanceOf[Unit]
+  @scala.inline
+  def initializeIcons(baseUrl: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def initializeIcons(baseUrl: String, options: IIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def initializeIcons(baseUrl: Unit, options: IIconOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeIcons")(baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

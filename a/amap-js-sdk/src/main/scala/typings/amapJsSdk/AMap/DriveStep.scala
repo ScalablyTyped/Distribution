@@ -2,41 +2,39 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveStep extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var assist_action: String = js.native
+  var assist_action: String
   
-  var cities: js.UndefOr[js.Array[ViaCity]] = js.native
+  var cities: js.UndefOr[js.Array[ViaCity]] = js.undefined
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var end_location: LngLat = js.native
+  var end_location: LngLat
   
-  var instruction: String = js.native
+  var instruction: String
   
-  var orientation: String = js.native
+  var orientation: String
   
-  var path: js.Array[LngLat] = js.native
+  var path: js.Array[LngLat]
   
-  var road: String = js.native
+  var road: String
   
-  var start_location: LngLat = js.native
+  var start_location: LngLat
   
-  var time: Double = js.native
+  var time: Double
   
-  var tmcs: js.UndefOr[js.Array[TMC]] = js.native
+  var tmcs: js.UndefOr[js.Array[TMC]] = js.undefined
   
-  var toll_road: String = js.native
+  var toll_road: String
   
-  var tolls: Double = js.native
+  var tolls: Double
   
-  var tolls_distance: Double = js.native
+  var tolls_distance: Double
 }
 object DriveStep {
   

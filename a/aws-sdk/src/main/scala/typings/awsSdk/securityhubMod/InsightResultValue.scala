@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightResultValue extends StObject {
   
   /**
     * The number of findings returned for each GroupByAttributeValue.
     */
-  var Count: Integer = js.native
+  var Count: Integer
   
   /**
     * The value of the attribute that the findings are grouped by for the insight whose results are returned by the GetInsightResults operation.
     */
-  var GroupByAttributeValue: NonEmptyString = js.native
+  var GroupByAttributeValue: NonEmptyString
 }
 object InsightResultValue {
   

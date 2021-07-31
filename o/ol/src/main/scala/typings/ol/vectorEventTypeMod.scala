@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vectorEventTypeMod {
@@ -12,15 +11,15 @@ object vectorEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[VectorEventType with String] = js.native
+    def apply(value: String): js.UndefOr[VectorEventType & String] = js.native
     
-    /* "addfeature" */ val ADDFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.ADDFEATURE with String = js.native
+    /* "addfeature" */ val ADDFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.ADDFEATURE & String = js.native
     
-    /* "changefeature" */ val CHANGEFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.CHANGEFEATURE with String = js.native
+    /* "changefeature" */ val CHANGEFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.CHANGEFEATURE & String = js.native
     
-    /* "clear" */ val CLEAR: typings.ol.vectorEventTypeMod.VectorEventType.CLEAR with String = js.native
+    /* "clear" */ val CLEAR: typings.ol.vectorEventTypeMod.VectorEventType.CLEAR & String = js.native
     
-    /* "removefeature" */ val REMOVEFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.REMOVEFEATURE with String = js.native
+    /* "removefeature" */ val REMOVEFEATURE: typings.ol.vectorEventTypeMod.VectorEventType.REMOVEFEATURE & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object vectorEventTypeMod {
   object VectorEventType extends StObject {
     
     @js.native
-    sealed trait ADDFEATURE extends VectorEventType
+    sealed trait ADDFEATURE
+      extends StObject
+         with VectorEventType
     
     @js.native
-    sealed trait CHANGEFEATURE extends VectorEventType
+    sealed trait CHANGEFEATURE
+      extends StObject
+         with VectorEventType
     
     @js.native
-    sealed trait CLEAR extends VectorEventType
+    sealed trait CLEAR
+      extends StObject
+         with VectorEventType
     
     @js.native
-    sealed trait REMOVEFEATURE extends VectorEventType
+    sealed trait REMOVEFEATURE
+      extends StObject
+         with VectorEventType
   }
 }

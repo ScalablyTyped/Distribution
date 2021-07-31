@@ -2,33 +2,31 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayData extends StObject {
   
   /**
     * The name of the service mesh that the virtual gateway resides in.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
-  var metadata: ResourceMetadata = js.native
+  var metadata: ResourceMetadata
   
   /**
     * The specifications of the virtual gateway.
     */
-  var spec: VirtualGatewaySpec = js.native
+  var spec: VirtualGatewaySpec
   
   /**
     * The current status of the virtual gateway.
     */
-  var status: VirtualGatewayStatus = js.native
+  var status: VirtualGatewayStatus
   
   /**
     * The name of the virtual gateway.
     */
-  var virtualGatewayName: ResourceName = js.native
+  var virtualGatewayName: ResourceName
 }
 object VirtualGatewayData {
   

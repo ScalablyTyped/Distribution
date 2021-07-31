@@ -7,21 +7,19 @@ import typings.wxServerSdk.wxServerSdkStrings.wx_unknown
 import typings.wxServerSdk.wxServerSdkStrings.其他
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APPID extends StObject {
   
-  var APPID: String = js.native
+  var APPID: String
   
-  var ENV: String = js.native
+  var ENV: String
   
-  var OPENID: String = js.native
+  var OPENID: String
   
-  var SOURCE: wx_devtools | wx_client | wx_http | wx_unknown | 其他 = js.native
+  var SOURCE: wx_devtools | wx_client | wx_http | wx_unknown | 其他
   
-  var UNIONID: String = js.native
+  var UNIONID: String
 }
 object APPID {
   

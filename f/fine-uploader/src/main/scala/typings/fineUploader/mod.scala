@@ -14,7 +14,6 @@ import typings.fineUploader.coreMod.TextOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -72,36 +71,37 @@ object mod {
   
   type ShowPromptFunction = js.Function2[/* message */ String, /* defaultValue */ String, PromiseOptions | Unit]
   
-  @js.native
-  trait UIDeleteFileOptions extends DeleteFileOptions {
+  trait UIDeleteFileOptions
+    extends StObject
+       with DeleteFileOptions {
     
     /**
       * The message displayed in the confirm delete dialog
       *
       * @default `'Are you sure you want to delete {filename}?'`
       */
-    var confirmMessage: js.UndefOr[String] = js.native
+    var confirmMessage: js.UndefOr[String] = js.undefined
     
     /**
       * The status message to appear next to a file that has failed to delete
       *
       * @default `'Delete failed'`
       */
-    var deletingFailedText: js.UndefOr[String] = js.native
+    var deletingFailedText: js.UndefOr[String] = js.undefined
     
     /**
       * The status message to appear next to a file that is pending deletion
       *
       * @default `'Deleting...'`
       */
-    var deletingStatusText: js.UndefOr[String] = js.native
+    var deletingStatusText: js.UndefOr[String] = js.undefined
     
     /**
       * If this value is set to `true`, the user will be required to confirm the file delete request via a confirmation dialog
       *
       * @default `false`
       */
-    var forceConfirm: js.UndefOr[Boolean] = js.native
+    var forceConfirm: js.UndefOr[Boolean] = js.undefined
   }
   object UIDeleteFileOptions {
     
@@ -140,7 +140,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UIDisplayOptions extends StObject {
     
     /**
@@ -148,14 +147,14 @@ object mod {
       *
       * @default `false`
       */
-    var fileSizeOnSubmit: js.UndefOr[Boolean] = js.native
+    var fileSizeOnSubmit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When `true` batches of files are added to the top of the UI's file list. The default is to append file(s) to the bottom of the list
       *
       * @default `false`
       */
-    var prependFiles: js.UndefOr[Boolean] = js.native
+    var prependFiles: js.UndefOr[Boolean] = js.undefined
   }
   object UIDisplayOptions {
     
@@ -182,7 +181,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UIDragAndDropOptions extends StObject {
     
     /**
@@ -190,14 +188,14 @@ object mod {
       *
       * @default `[]`
       */
-    var extraDropzones: js.UndefOr[js.Array[_]] = js.native
+    var extraDropzones: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Include the path of dropped files (starting with the top-level dropped directory). This value will be sent along with the request as a qqpath parameter
       *
       * @default `false`
       */
-    var reportDirectoryPaths: js.UndefOr[Boolean] = js.native
+    var reportDirectoryPaths: js.UndefOr[Boolean] = js.undefined
   }
   object UIDragAndDropOptions {
     
@@ -211,7 +209,7 @@ object mod {
     implicit class UIDragAndDropOptionsMutableBuilder[Self <: UIDragAndDropOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtraDropzones(value: js.Array[_]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
+      def setExtraDropzones(value: js.Array[js.Any]): Self = StObject.set(x, "extraDropzones", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExtraDropzonesUndefined: Self = StObject.set(x, "extraDropzones", js.undefined)
@@ -227,7 +225,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UIFailedUploadTextDisplay extends StObject {
     
     /**
@@ -235,7 +232,7 @@ object mod {
       *
       * @default `true`
       */
-    var enableTooltip: js.UndefOr[Boolean] = js.native
+    var enableTooltip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the message to display next to each failed file.
@@ -244,14 +241,14 @@ object mod {
       *
       * @default `'default'`
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
     /**
       * The property from the server response that contains the error text to display next to a failed item. Ignored unless `mode` is `'custom'`
       *
       * @default `'error'`
       */
-    var responseProperty: js.UndefOr[String] = js.native
+    var responseProperty: js.UndefOr[String] = js.undefined
   }
   object UIFailedUploadTextDisplay {
     
@@ -284,22 +281,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIMessages extends Messages {
+  trait UIMessages
+    extends StObject
+       with Messages {
     
     /**
       * Text sent to `showMessage` when `multiple` is `false` and more than one file is dropped at once
       *
       * @default `'You may only drop one file.'`
       */
-    var tooManyFilesError: js.UndefOr[String] = js.native
+    var tooManyFilesError: js.UndefOr[String] = js.undefined
     
     /**
       * Text displayed to users who have ancient browsers
       *
       * @default `'Unrecoverable error - the browser does not permit uploading of any kind.'`
       */
-    var unsupportedBrowser: js.UndefOr[String] = js.native
+    var unsupportedBrowser: js.UndefOr[String] = js.undefined
   }
   object UIMessages {
     
@@ -326,66 +324,67 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIOptions extends CoreOptions {
+  trait UIOptions
+    extends StObject
+       with CoreOptions {
     
     /**
       * UIDeleteFileOptions
       */
     @JSName("deleteFile")
-    var deleteFile_UIOptions: js.UndefOr[UIDeleteFileOptions] = js.native
+    var deleteFile_UIOptions: js.UndefOr[UIDeleteFileOptions] = js.undefined
     
     /**
       * display options
       */
-    var display: js.UndefOr[UIDisplayOptions] = js.native
+    var display: js.UndefOr[UIDisplayOptions] = js.undefined
     
     /**
       * dragAndDrop options
       */
-    var dragAndDrop: js.UndefOr[UIDragAndDropOptions] = js.native
+    var dragAndDrop: js.UndefOr[UIDragAndDropOptions] = js.undefined
     
     /**
       * Container element for the default drop zone
       *
       * @default `null`
       */
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * failedUploadTextDisplay options
       */
-    var failedUploadTextDisplay: js.UndefOr[UIFailedUploadTextDisplay] = js.native
+    var failedUploadTextDisplay: js.UndefOr[UIFailedUploadTextDisplay] = js.undefined
     
     /**
       * Container element for the item list
       *
       * @default `null`
       */
-    var listElement: js.UndefOr[HTMLElement] = js.native
+    var listElement: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * messages
       */
     @JSName("messages")
-    var messages_UIOptions: js.UndefOr[UIMessages] = js.native
+    var messages_UIOptions: js.UndefOr[UIMessages] = js.undefined
     
     /**
       * paste UI options
       */
     @JSName("paste")
-    var paste_UIOptions: js.UndefOr[UIPasteOptions] = js.native
+    var paste_UIOptions: js.UndefOr[UIPasteOptions] = js.undefined
     
     /**
       * retry options
       */
-    var retry: js.UndefOr[UIRetryOptions] = js.native
+    var retry: js.UndefOr[UIRetryOptions] = js.undefined
     
     /**
       * UI scaling options
       */
     @JSName("scaling")
-    var scaling_UIOptions: js.UndefOr[UIScalingOptions] = js.native
+    var scaling_UIOptions: js.UndefOr[UIScalingOptions] = js.undefined
     
     /**
       * Provide a function here to prompt the user to confirm deletion of a file.
@@ -394,7 +393,7 @@ object mod {
       *
       * @default `function(message) { window.confirm(message); }`
       */
-    var showConfirm: js.UndefOr[ShowConfirmFunction] = js.native
+    var showConfirm: js.UndefOr[ShowConfirmFunction] = js.undefined
     
     /**
       * Provide a function here to display a message to the user when the uploader receives an error or the user attempts to leave the page.
@@ -403,7 +402,7 @@ object mod {
       *
       * @default `function(message) { window.alert(message); }`
       */
-    var showMessage: js.UndefOr[ShowMessageFunction] = js.native
+    var showMessage: js.UndefOr[ShowMessageFunction] = js.undefined
     
     /**
       * Provide a function here to prompt the user for a filename when pasting file(s).
@@ -412,7 +411,7 @@ object mod {
       *
       * @default `function(message, defaultValue) { window.prompt(message, defaultValue); }`
       */
-    var showPrompt: js.UndefOr[ShowPromptFunction] = js.native
+    var showPrompt: js.UndefOr[ShowPromptFunction] = js.undefined
     
     /**
       * This points to the container element that contains the template to use for one or more Fine Uploader UI instances.
@@ -421,18 +420,18 @@ object mod {
       *
       * @default `'qq-template'`
       */
-    var template: js.UndefOr[String | HTMLElement] = js.native
+    var template: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * UI text options
       */
     @JSName("text")
-    var text_UIOptions: js.UndefOr[UITextOptions] = js.native
+    var text_UIOptions: js.UndefOr[UITextOptions] = js.undefined
     
     /**
       * thumbnail options
       */
-    var thumbnails: js.UndefOr[UIThumbnailsOptions] = js.native
+    var thumbnails: js.UndefOr[UIThumbnailsOptions] = js.undefined
   }
   object UIOptions {
     
@@ -543,22 +542,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIPasteOptions extends PasteOptions {
+  trait UIPasteOptions
+    extends StObject
+       with PasteOptions {
     
     /**
       * Text that will appear in the `showPrompt` dialog.
       *
       * @default `Please name this image`
       */
-    var namePromptMessage: js.UndefOr[String] = js.native
+    var namePromptMessage: js.UndefOr[String] = js.undefined
     
     /**
       * Enable or disable the usage of `showPrompt` by Fine Uploader to prompt the user for a filename for a pasted file
       *
       * @default `false`
       */
-    var promptForName: js.UndefOr[Boolean] = js.native
+    var promptForName: js.UndefOr[Boolean] = js.undefined
   }
   object UIPasteOptions {
     
@@ -585,8 +585,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIRetryOptions extends RetryOptions {
+  trait UIRetryOptions
+    extends StObject
+       with RetryOptions {
     
     /**
       * The text of the note that will optionally appear next to the item during automatic retry attempts.
@@ -595,14 +596,14 @@ object mod {
       *
       * @default `'Retrying {retryNum}/{maxAuto} ...'`
       */
-    var autoRetryNote: js.UndefOr[String] = js.native
+    var autoRetryNote: js.UndefOr[String] = js.undefined
     
     /**
       * Enable or disable a status message appearing next to the item during auto retry attempts
       *
       * @default `true`
       */
-    var showAutoRetryNote: js.UndefOr[Boolean] = js.native
+    var showAutoRetryNote: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable the showing of a button/link next to the failed item after all retry attempts have been exhausted.
@@ -611,7 +612,7 @@ object mod {
       *
       * @default `false`
       */
-    var showButton: js.UndefOr[Boolean] = js.native
+    var showButton: js.UndefOr[Boolean] = js.undefined
   }
   object UIRetryOptions {
     
@@ -644,15 +645,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait UIScalingOptions extends ScalingOptions {
+  trait UIScalingOptions
+    extends StObject
+       with ScalingOptions {
     
     /**
       * Set this to true if you do not want any scaled images to be displayed in the file list
       *
       * @default `false`
       */
-    var hideScaled: js.UndefOr[Boolean] = js.native
+    var hideScaled: js.UndefOr[Boolean] = js.undefined
   }
   object UIScalingOptions {
     
@@ -673,36 +675,37 @@ object mod {
     }
   }
   
-  @js.native
-  trait UITextOptions extends TextOptions {
+  trait UITextOptions
+    extends StObject
+       with TextOptions {
     
     /**
       * Text that appears next to a failed item
       *
       * @default `'Upload failed'`
       */
-    var failUpload: js.UndefOr[String] = js.native
+    var failUpload: js.UndefOr[String] = js.undefined
     
     /**
       * Appears next to a currently uploading item
       *
       * @default `'{percent}% of {total_size}'`
       */
-    var formatProgress: js.UndefOr[String] = js.native
+    var formatProgress: js.UndefOr[String] = js.undefined
     
     /**
       * Appears next to a paused item
       *
       * @default `'paused'`
       */
-    var paused: js.UndefOr[String] = js.native
+    var paused: js.UndefOr[String] = js.undefined
     
     /**
       * Appears next to item once the last bytes have been sent (differs on the user-agent)
       *
       * @default `'Processing...'`
       */
-    var waitingForResponse: js.UndefOr[String] = js.native
+    var waitingForResponse: js.UndefOr[String] = js.undefined
   }
   object UITextOptions {
     
@@ -741,7 +744,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UIThumbnailsOptions extends StObject {
     
     /**
@@ -754,7 +756,7 @@ object mod {
       *
       * @default `undefined`
       */
-    var customResizer: js.UndefOr[CustomResizerCallBack] = js.native
+    var customResizer: js.UndefOr[CustomResizerCallBack] = js.undefined
     
     /**
       * Maximum number of previews to render per Fine Uploader instance.
@@ -763,12 +765,12 @@ object mod {
       *
       * @default `0`
       */
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
     /**
       *
       */
-    var placeholders: js.UndefOr[UIThumbnailsPlaceholderOptions] = js.native
+    var placeholders: js.UndefOr[UIThumbnailsPlaceholderOptions] = js.undefined
     
     /**
       * The amount of time, in milliseconds, to pause between each preview generation process.
@@ -777,7 +779,7 @@ object mod {
       *
       * @default `750`
       */
-    var timeBetweenThumbs: js.UndefOr[Double] = js.native
+    var timeBetweenThumbs: js.UndefOr[Double] = js.undefined
   }
   object UIThumbnailsOptions {
     
@@ -816,7 +818,6 @@ object mod {
     }
   }
   
-  @js.native
   trait UIThumbnailsPlaceholderOptions extends StObject {
     
     /**
@@ -824,7 +825,7 @@ object mod {
       *
       * @default `null`
       */
-    var notAvailablePath: js.UndefOr[String] = js.native
+    var notAvailablePath: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to true if you want the 'waiting' placeholder image to remain in place until the server response has been parsed.
@@ -834,14 +835,14 @@ object mod {
       *
       * @default `false`
       */
-    var waitUntilResponse: js.UndefOr[Boolean] = js.native
+    var waitUntilResponse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Absolute URL or relative path to the image to display during preview generation (modern browsers) or until the server response has been parsed (older browsers)
       *
       * @default `null`
       */
-    var waitingPath: js.UndefOr[String] = js.native
+    var waitingPath: js.UndefOr[String] = js.undefined
   }
   object UIThumbnailsPlaceholderOptions {
     

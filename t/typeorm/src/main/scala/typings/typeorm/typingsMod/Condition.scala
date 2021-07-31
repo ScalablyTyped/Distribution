@@ -5,12 +5,11 @@ import typings.std.RegExp
 import typings.typeorm.anon.CaseSensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition[T, P /* <: /* keyof T */ String */]
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   @JSName("$and")
   var $and: js.UndefOr[
@@ -19,87 +18,87 @@ trait Condition[T, P /* <: /* keyof T */ String */]
         /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
       ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$bitsAllClear")
-  var $bitsAllClear: js.UndefOr[js.Object] = js.native
+  var $bitsAllClear: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$bitsAllSet")
-  var $bitsAllSet: js.UndefOr[js.Object] = js.native
+  var $bitsAllSet: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$bitsAnyClear")
-  var $bitsAnyClear: js.UndefOr[js.Object] = js.native
+  var $bitsAnyClear: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$bitsAnySet")
-  var $bitsAnySet: js.UndefOr[js.Object] = js.native
+  var $bitsAnySet: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$elemMatch")
-  var $elemMatch: js.UndefOr[js.Object] = js.native
+  var $elemMatch: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$eq")
   var $eq: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$expr")
-  var $expr: js.UndefOr[js.Any] = js.native
+  var $expr: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$geoIntersects")
-  var $geoIntersects: js.UndefOr[js.Object] = js.native
+  var $geoIntersects: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$geoWithin")
-  var $geoWithin: js.UndefOr[js.Object] = js.native
+  var $geoWithin: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$gt")
   var $gt: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$gte")
   var $gte: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$in")
   var $in: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$jsonSchema")
-  var $jsonSchema: js.UndefOr[js.Any] = js.native
+  var $jsonSchema: js.UndefOr[js.Any] = js.undefined
   
   @JSName("$lt")
   var $lt: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$lte")
   var $lte: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$mod")
-  var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.native
+  var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   
   @JSName("$ne")
   var $ne: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$near")
-  var $near: js.UndefOr[js.Object] = js.native
+  var $near: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$nearSphere")
-  var $nearSphere: js.UndefOr[js.Object] = js.native
+  var $nearSphere: js.UndefOr[js.Object] = js.undefined
   
   @JSName("$nin")
   var $nin: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$not")
   var $not: js.UndefOr[
@@ -108,10 +107,10 @@ trait Condition[T, P /* <: /* keyof T */ String */]
         /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
       ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)
     ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$options")
-  var $options: js.UndefOr[String] = js.native
+  var $options: js.UndefOr[String] = js.undefined
   
   @JSName("$or")
   var $or: js.UndefOr[
@@ -120,19 +119,19 @@ trait Condition[T, P /* <: /* keyof T */ String */]
         /* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any
       ]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[P] */ js.Any)
     ]
-  ] = js.native
+  ] = js.undefined
   
   @JSName("$regex")
-  var $regex: js.UndefOr[RegExp] = js.native
+  var $regex: js.UndefOr[RegExp] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[scala.Double] = js.native
+  var $size: js.UndefOr[scala.Double] = js.undefined
   
   @JSName("$text")
-  var $text: js.UndefOr[CaseSensitive] = js.native
+  var $text: js.UndefOr[CaseSensitive] = js.undefined
   
   @JSName("$where")
-  var $where: js.UndefOr[js.Object] = js.native
+  var $where: js.UndefOr[js.Object] = js.undefined
 }
 object Condition {
   
@@ -143,7 +142,7 @@ object Condition {
   }
   
   @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition[_, _], T, P /* <: /* keyof T */ String */] (val x: Self with (Condition[T, P])) extends AnyVal {
+  implicit class ConditionMutableBuilder[Self <: Condition[?, ?], T, P /* <: /* keyof T */ String */] (val x: Self & (Condition[T, P])) extends AnyVal {
     
     @scala.inline
     def set$and(

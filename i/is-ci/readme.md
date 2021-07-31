@@ -10,9 +10,9 @@ Detect if the current environment is a CI server
 | ------------------ | :-------------: |
 | Full name          | is-ci |
 | Keywords           | ci, continuous, integration, test, detect |
-| # releases         | 3 |
-| # dependents       | 407 |
-| # downloads        | 587692196 |
+| # releases         | 0 |
+| # dependents       | 466 |
+| # downloads        | 703911159 |
 | # stars            | 1 |
 
 ## Links

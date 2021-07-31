@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectModerationLabelsResponse extends StObject {
   
   /**
     * Shows the results of the human in the loop evaluation.
     */
-  var HumanLoopActivationOutput: js.UndefOr[typings.awsSdk.rekognitionMod.HumanLoopActivationOutput] = js.native
+  var HumanLoopActivationOutput: js.UndefOr[typings.awsSdk.rekognitionMod.HumanLoopActivationOutput] = js.undefined
   
   /**
     * Array of detected Moderation labels and the time, in milliseconds from the start of the video, they were detected.
     */
-  var ModerationLabels: js.UndefOr[typings.awsSdk.rekognitionMod.ModerationLabels] = js.native
+  var ModerationLabels: js.UndefOr[typings.awsSdk.rekognitionMod.ModerationLabels] = js.undefined
   
   /**
     * Version number of the moderation detection model that was used to detect unsafe content.
     */
-  var ModerationModelVersion: js.UndefOr[String] = js.native
+  var ModerationModelVersion: js.UndefOr[String] = js.undefined
 }
 object DetectModerationLabelsResponse {
   

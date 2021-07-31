@@ -2,31 +2,29 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberConfiguration extends StObject {
   
   /**
     * An optional description of the member.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * Configuration properties of the blockchain framework relevant to the member.
     */
-  var FrameworkConfiguration: MemberFrameworkConfiguration = js.native
+  var FrameworkConfiguration: MemberFrameworkConfiguration
   
   /**
     * Configuration properties for logging events associated with a member of a Managed Blockchain network.
     */
-  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.native
+  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.undefined
   
   /**
     * The name of the member.
     */
-  var Name: NetworkMemberNameString = js.native
+  var Name: NetworkMemberNameString
 }
 object MemberConfiguration {
   

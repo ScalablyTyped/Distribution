@@ -2,29 +2,25 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait AssemblyBlock
-  extends AssemblyItem
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyItem {
   
-  var operations: js.Array[AssemblyItem] = js.native
+  var operations: js.Array[AssemblyItem]
   
   @JSName("type")
-  var type_AssemblyBlock: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock = js.native
+  var type_AssemblyBlock: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock
 }
 object AssemblyBlock {
   
   @scala.inline
-  def apply(
-    operations: js.Array[AssemblyItem],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock
-  ): AssemblyBlock = {
+  def apply(operations: js.Array[AssemblyItem]): AssemblyBlock = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyBlock")
     __obj.asInstanceOf[AssemblyBlock]
   }
   

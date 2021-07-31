@@ -6,34 +6,43 @@ import typings.wordpressBlocks.anon.Children
 import typings.wordpressBlocks.anon.ChildrenPhrasingContentSchema
 import typings.wordpressBlocks.anon.HTML
 import typings.wordpressBlocks.anon.Mode
+import typings.wordpressBlocks.anon.`0`
 import typings.wordpressBlocks.mod.BlockInstance
 import typings.wordpressBlocks.wordpressBlocksStrings.AUTO
 import typings.wordpressBlocks.wordpressBlocksStrings.BLOCKS
 import typings.wordpressBlocks.wordpressBlocksStrings.INLINE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rawHandlingMod {
   
-  @JSImport("@wordpress/blocks/api/raw-handling", "getPhrasingContentSchema")
+  @JSImport("@wordpress/blocks/api/raw-handling", JSImport.Namespace)
   @js.native
-  def getPhrasingContentSchema(): PhrasingContentSchema = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getPhrasingContentSchema(): PhrasingContentSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhrasingContentSchema")().asInstanceOf[PhrasingContentSchema]
   
   object pasteHandler {
     
+    @scala.inline
+    def apply(options: Options & `0`): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+    @scala.inline
+    def apply(options: Options & Mode): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(options: Options): js.Array[BlockInstance[StringDictionary[js.Any]]] | String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]] | String]
+    
     @JSImport("@wordpress/blocks/api/raw-handling", "pasteHandler")
     @js.native
-    def apply(options: Options with Mode): String = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
     trait BaseOptions extends StObject {
       
       /**
         * Whether or not the user can use unfiltered HTML.
         */
-      var canUserUseUnfilteredHTML: js.UndefOr[Boolean] = js.native
+      var canUserUseUnfilteredHTML: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Handle content as blocks or inline content.
@@ -41,14 +50,14 @@ object rawHandlingMod {
         *  - `INLINE`: Always handle as inline content, and return string.
         *  - `BLOCKS`: Always handle as blocks, and return array of blocks.
         */
-      var mode: js.UndefOr[AUTO | INLINE | BLOCKS] = js.native
+      var mode: js.UndefOr[AUTO | INLINE | BLOCKS] = js.undefined
       
       /**
         * The tag into which content will be inserted.
         */
       var tagName: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-          ] = js.native
+          ] = js.undefined
     }
     object BaseOptions {
       
@@ -81,15 +90,15 @@ object rawHandlingMod {
       }
     }
     
-    @js.native
     trait HTMLOptions
-      extends BaseOptions
+      extends StObject
+         with BaseOptions
          with Options {
       
       /**
         * The HTML to convert.
         */
-      var HTML: String = js.native
+      var HTML: String
     }
     object HTMLOptions {
       
@@ -127,15 +136,15 @@ object rawHandlingMod {
       }
     }
     
-    @js.native
     trait PlainTextOptions
-      extends BaseOptions
+      extends StObject
+         with BaseOptions
          with Options {
       
       /**
         * Plain text version.
         */
-      var plainText: String = js.native
+      var plainText: String
     }
     object PlainTextOptions {
       
@@ -154,38 +163,36 @@ object rawHandlingMod {
     }
   }
   
-  @JSImport("@wordpress/blocks/api/raw-handling", "rawHandler")
-  @js.native
-  def rawHandler(options: HTML): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  @scala.inline
+  def rawHandler(options: HTML): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("rawHandler")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
   
   /* Inlined {readonly [ k in '#text' | 'a' | 'abbr' | 'br' | 'code' | 'del' | 'em' | 'ins' | 's' | 'strong' | 'sub' | 'sup' ]: k extends '#text' | 'br'? {} : k extends 'a'? { readonly attributes :std.ReadonlyArray<keyof std.HTMLAnchorElement>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : k extends 'abbr'? { readonly attributes :std.ReadonlyArray<keyof std.HTMLElement>,  readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema} : { readonly children :@wordpress/blocks.@wordpress/blocks/api/raw-handling.PhrasingContentSchema}} */
-  @js.native
   trait PhrasingContentSchema extends StObject {
     
     @JSName("#text")
-    val Numbersigntext: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val Numbersigntext: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val a: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val a: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val abbr: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val abbr: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val br: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val br: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val code: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val code: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val del: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val del: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val em: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val em: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val ins: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val ins: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val s: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val s: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val strong: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val strong: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val sub: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val sub: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
     
-    val sup: ChildrenPhrasingContentSchema | Children | Attributes | js.Object = js.native
+    val sup: ChildrenPhrasingContentSchema | Children | Attributes | js.Object
   }
   object PhrasingContentSchema {
     

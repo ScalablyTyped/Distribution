@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcIpv4CidrBlockAssociationMod {
@@ -38,6 +37,10 @@ object vpcIpv4CidrBlockAssociationMod {
   /* static members */
   object VpcIpv4CidrBlockAssociation {
     
+    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcIpv4CidrBlockAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object vpcIpv4CidrBlockAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcIpv4CidrBlockAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): VpcIpv4CidrBlockAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcIpv4CidrBlockAssociationState, opts: CustomResourceOptions): VpcIpv4CidrBlockAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcIpv4CidrBlockAssociation]
     
     /**
       * Returns true if the given object is an instance of VpcIpv4CidrBlockAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation */ Boolean]
   }
   
-  @js.native
   trait VpcIpv4CidrBlockAssociationArgs extends StObject {
     
     /**
       * The additional IPv4 CIDR block to associate with the VPC.
       */
-    val cidrBlock: Input[String] = js.native
+    val cidrBlock: Input[String]
     
     /**
       * The ID of the VPC to make the association with.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object VpcIpv4CidrBlockAssociationArgs {
     
@@ -101,18 +98,17 @@ object vpcIpv4CidrBlockAssociationMod {
     }
   }
   
-  @js.native
   trait VpcIpv4CidrBlockAssociationState extends StObject {
     
     /**
       * The additional IPv4 CIDR block to associate with the VPC.
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC to make the association with.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcIpv4CidrBlockAssociationState {
     

@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Job compensation details.
   */
-@js.native
 trait SchemaCompensationInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaCompensationInfo extends StObject {
     * or pay for the job. As an alternative, compensation_amount_min and
     * compensation_amount_max may be used to define a range of compensation.
     */
-  var amount: js.UndefOr[SchemaMoney] = js.native
+  var amount: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * Output only.  Annualized base compensation range. Computed as base
@@ -24,7 +22,7 @@ trait SchemaCompensationInfo extends StObject {
     * CompensationEntry.expected_units_per_year.  See CompensationEntry for
     * explanation on compensation annualization.
     */
-  var annualizedBaseCompensationRange: js.UndefOr[SchemaCompensationRange] = js.native
+  var annualizedBaseCompensationRange: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Output only.  Annualized total compensation range. Computed as all
@@ -32,33 +30,33 @@ trait SchemaCompensationInfo extends StObject {
     * CompensationEntry.expected_units_per_year.  See CompensationEntry for
     * explanation on compensation annualization.
     */
-  var annualizedTotalCompensationRange: js.UndefOr[SchemaCompensationRange] = js.native
+  var annualizedTotalCompensationRange: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Optional.  Job compensation information.  At most one entry can be of
     * type CompensationInfo.CompensationType.BASE, which is referred as ** base
     * compensation entry ** for the job.
     */
-  var entries: js.UndefOr[js.Array[SchemaCompensationEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaCompensationEntry]] = js.undefined
   
   /**
     * Deprecated. Use entries instead.  Optional.  An upper bound on a range
     * for compensation or pay for the job. The currency type is specified in
     * compensation_amount.
     */
-  var max: js.UndefOr[SchemaMoney] = js.native
+  var max: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * Deprecated. Use entries instead.  Optional.  A lower bound on a range for
     * compensation or pay for the job. The currency type is specified in
     * compensation_amount.
     */
-  var min: js.UndefOr[SchemaMoney] = js.native
+  var min: js.UndefOr[SchemaMoney] = js.undefined
   
   /**
     * Deprecated. Use entries instead.  Optional.  Type of job compensation.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCompensationInfo {
   

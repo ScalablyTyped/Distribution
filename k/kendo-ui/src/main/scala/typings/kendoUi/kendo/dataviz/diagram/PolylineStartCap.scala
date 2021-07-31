@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolylineStartCap extends StObject {
   
-  var fill: js.UndefOr[String | PolylineStartCapFill] = js.native
+  var fill: js.UndefOr[String | PolylineStartCapFill] = js.undefined
   
-  var stroke: js.UndefOr[String | PolylineStartCapStroke] = js.native
+  var stroke: js.UndefOr[String | PolylineStartCapStroke] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PolylineStartCap {
   

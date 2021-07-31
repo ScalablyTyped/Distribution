@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Accounts$Reports$Saved")
@@ -35,7 +34,7 @@ class ResourceAccountsReportsSaved protected () extends StObject {
     */
   def generate(): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(callback: BodyResponseCallback[SchemaAdsenseReportsGenerateResponse]): Unit = js.native
-  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
+  def generate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(params: ParamsResourceAccountsReportsSavedGenerate): GaxiosPromise[SchemaAdsenseReportsGenerateResponse] = js.native
   def generate(
     params: ParamsResourceAccountsReportsSavedGenerate,
@@ -69,7 +68,7 @@ class ResourceAccountsReportsSaved protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSavedReports] = js.native
   def list(callback: BodyResponseCallback[SchemaSavedReports]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSavedReports] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSavedReports] = js.native
   def list(params: ParamsResourceAccountsReportsSavedList): GaxiosPromise[SchemaSavedReports] = js.native
   def list(params: ParamsResourceAccountsReportsSavedList, callback: BodyResponseCallback[SchemaSavedReports]): Unit = js.native
   def list(

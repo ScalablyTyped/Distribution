@@ -2,11 +2,11 @@ package typings.winrt.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Buffer extends IBuffer
+trait Buffer
+  extends StObject
+     with IBuffer
 object Buffer {
   
   @scala.inline

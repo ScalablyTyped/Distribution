@@ -2,21 +2,19 @@ package typings.paypalRestSdk.mod.invoice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailRequest extends StObject {
   
-  var cc_emails: js.UndefOr[js.Array[String]] = js.native
+  var cc_emails: js.UndefOr[js.Array[String]] = js.undefined
   
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
-  var send_to_merchant: js.UndefOr[Boolean] = js.native
+  var send_to_merchant: js.UndefOr[Boolean] = js.undefined
   
-  var send_to_payer: js.UndefOr[Boolean] = js.native
+  var send_to_payer: js.UndefOr[Boolean] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
 }
 object EmailRequest {
   

@@ -3,11 +3,12 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollResponderMixin extends SubscribableMixin {
+trait ScrollResponderMixin
+  extends StObject
+     with SubscribableMixin {
   
   /**
     * `componentWillMount` is the closest thing to a  standard "constructor" for
@@ -233,13 +234,9 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *        down to make it meet the keyboard's top. Default is false.
     */
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any): Unit = js.native
-  def scrollResponderScrollNativeHandleToKeyboard(
-    nodeHandle: js.Any,
-    additionalOffset: js.UndefOr[scala.Nothing],
-    preventNegativeScrollOffset: Boolean
-  ): Unit = js.native
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double): Unit = js.native
   def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Double, preventNegativeScrollOffset: Boolean): Unit = js.native
+  def scrollResponderScrollNativeHandleToKeyboard(nodeHandle: js.Any, additionalOffset: Unit, preventNegativeScrollOffset: Boolean): Unit = js.native
   
   /**
     * A helper function to scroll to a specific point  in the scrollview.
@@ -253,17 +250,17 @@ trait ScrollResponderMixin extends SubscribableMixin {
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollResponderScrollTo(): Unit = js.native
-  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
-  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-  def scrollResponderScrollTo(x: js.UndefOr[scala.Nothing], y: Double, animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: Double): Unit = js.native
-  def scrollResponderScrollTo(x: Double, y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: Double, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: Double, y: Unit, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Double): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: Unit, y: Unit, animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated): Unit = js.native
-  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double): Unit = js.native
   def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Double, animated: Boolean): Unit = js.native
+  def scrollResponderScrollTo(x: typings.reactNative.anon.Animated, y: Unit, animated: Boolean): Unit = js.native
   
   def scrollResponderTextInputFocusError(e: ScrollResponderEvent): Unit = js.native
   

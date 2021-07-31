@@ -4,14 +4,15 @@ import typings.nedbLogger.anon.Filename
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nedb-logger", JSImport.Namespace)
   @js.native
-  class ^ () extends NeDBLoggerDataStore {
+  class ^ ()
+    extends StObject
+       with NeDBLoggerDataStore {
     def this(path: String) = this()
     def this(path: Filename) = this()
   }

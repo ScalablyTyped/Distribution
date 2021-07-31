@@ -3,15 +3,61 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataTableMod {
   
   @JSImport("carbon-components/components/data-table/data-table", JSImport.Default)
   @js.native
-  class default protected () extends DataTable {
+  class default protected ()
+    extends StObject
+       with DataTable {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _actionBarCancel(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _actionBarToggle(toggleOn: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _changeState(detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _expandableHoverToggle(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleDocumentClick(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _keydownHandler(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _rowExpandToggle(hasElementForceExpand: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _rowExpandToggleAll(hasElement: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _selectAllToggle(hasElement: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _selectToggle(detail: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _sortToggle(detail: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _toggleState(element: js.Any, evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def activateSearch(container: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def deactivateSearch(container: js.Any, evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def refreshRows(): Unit = js.native
   }
   object default {
     
@@ -76,38 +122,37 @@ object dataTableMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait DataTable extends StObject {
+  - Dropped any */ trait DataTable extends StObject {
     
-    def _actionBarCancel(): Unit = js.native
+    def _actionBarCancel(): Unit
     
-    def _actionBarToggle(toggleOn: js.Any): Unit = js.native
+    def _actionBarToggle(toggleOn: js.Any): Unit
     
-    def _changeState(detail: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(detail: js.Any, callback: js.Any): Unit
     
-    def _expandableHoverToggle(evt: js.Any): Unit = js.native
+    def _expandableHoverToggle(evt: js.Any): Unit
     
-    def _handleDocumentClick(evt: js.Any): Unit = js.native
+    def _handleDocumentClick(evt: js.Any): Unit
     
-    def _keydownHandler(evt: js.Any): Unit = js.native
+    def _keydownHandler(evt: js.Any): Unit
     
-    def _rowExpandToggle(hasElementForceExpand: js.Any): Unit = js.native
+    def _rowExpandToggle(hasElementForceExpand: js.Any): Unit
     
-    def _rowExpandToggleAll(hasElement: js.Any): Unit = js.native
+    def _rowExpandToggleAll(hasElement: js.Any): Unit
     
-    def _selectAllToggle(hasElement: js.Any): Unit = js.native
+    def _selectAllToggle(hasElement: js.Any): Unit
     
-    def _selectToggle(detail: js.Any): Unit = js.native
+    def _selectToggle(detail: js.Any): Unit
     
-    def _sortToggle(detail: js.Any): Unit = js.native
+    def _sortToggle(detail: js.Any): Unit
     
-    def _toggleState(element: js.Any, evt: js.Any): Unit = js.native
+    def _toggleState(element: js.Any, evt: js.Any): Unit
     
-    def activateSearch(container: js.Any): Unit = js.native
+    def activateSearch(container: js.Any): Unit
     
-    def deactivateSearch(container: js.Any, evt: js.Any): Unit = js.native
+    def deactivateSearch(container: js.Any, evt: js.Any): Unit
     
-    def refreshRows(): Unit = js.native
+    def refreshRows(): Unit
   }
   object DataTable {
     

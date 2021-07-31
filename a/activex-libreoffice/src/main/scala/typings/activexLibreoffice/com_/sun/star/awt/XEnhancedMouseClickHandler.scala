@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to receive enhanced events from the mouse.
   * @since OOo 2.0
   */
-@js.native
-trait XEnhancedMouseClickHandler extends XEventListener {
+trait XEnhancedMouseClickHandler
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a mouse button has been pressed on a window. */
-  def mousePressed(e: EnhancedMouseEvent): Boolean = js.native
+  def mousePressed(e: EnhancedMouseEvent): Boolean
   
   /** is invoked when a mouse button has been released on a window. */
-  def mouseReleased(e: EnhancedMouseEvent): Boolean = js.native
+  def mouseReleased(e: EnhancedMouseEvent): Boolean
 }
 object XEnhancedMouseClickHandler {
   

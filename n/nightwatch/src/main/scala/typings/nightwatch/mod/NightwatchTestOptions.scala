@@ -2,15 +2,15 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NightwatchTestOptions extends NightwatchTestSettingGeneric {
+trait NightwatchTestOptions
+  extends StObject
+     with NightwatchTestSettingGeneric {
   
-  var screenshots: Boolean = js.native
+  var screenshots: Boolean
   
-  var screenshotsPath: String = js.native
+  var screenshotsPath: String
 }
 object NightwatchTestOptions {
   

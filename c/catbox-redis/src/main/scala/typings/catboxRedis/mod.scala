@@ -6,7 +6,6 @@ import typings.catboxRedis.anon.Host
 import typings.ioredis.mod.Redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,56 +18,57 @@ object mod {
   
   type CatboxRedis[T] = Client[T]
   
-  @js.native
-  trait CatboxRedisOptions extends ClientOptions {
+  trait CatboxRedisOptions
+    extends StObject
+       with ClientOptions {
     
     /**
       * Raw client.
       */
-    var client: js.UndefOr[Redis] = js.native
+    var client: js.UndefOr[Redis] = js.undefined
     
     /**
       * the Redis database.
       */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
     /**
       * the Redis server hostname.
       * Defaults to '127.0.0.1'.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * the Redis authentication password when required.
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * the Redis server port or unix domain socket path.
       * Defaults to 6379.
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * the name of the sentinel master.
       * (Only needed when sentinels is specified)
       */
-    var sentinelName: js.UndefOr[String] = js.native
+    var sentinelName: js.UndefOr[String] = js.undefined
     
     /**
       * an array of redis sentinel addresses to connect to.
       */
-    var sentinels: js.UndefOr[js.Array[Host]] = js.native
+    var sentinels: js.UndefOr[js.Array[Host]] = js.undefined
     
     /**
       * the unix socket string to connect to (if socket is provided, host and port are ignored)
       */
-    var socket: js.UndefOr[String] = js.native
+    var socket: js.UndefOr[String] = js.undefined
     
     /**
       * the Redis server URL (if url is provided, host, port, and socket are ignored)
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object CatboxRedisOptions {
     

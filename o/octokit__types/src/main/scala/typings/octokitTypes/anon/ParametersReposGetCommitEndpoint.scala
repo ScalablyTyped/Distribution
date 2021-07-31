@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetCommitResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetCommitEndpoint extends StObject {
   
-  var parameters: ReposGetCommitEndpoint = js.native
+  var parameters: ReposGetCommitEndpoint
   
-  var request: ReposGetCommitRequestOptions = js.native
+  var request: ReposGetCommitRequestOptions
   
-  var response: OctokitResponse[ReposGetCommitResponseData] = js.native
+  var response: OctokitResponse[ReposGetCommitResponseData]
 }
 object ParametersReposGetCommitEndpoint {
   

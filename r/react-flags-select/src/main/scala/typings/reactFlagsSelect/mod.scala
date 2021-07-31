@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,36 +12,35 @@ object mod {
   @js.native
   class default () extends ReactFlagsSelect
   
-  @js.native
   trait Props extends StObject {
     
-    var alignOptions: js.UndefOr[String] = js.native
+    var alignOptions: js.UndefOr[String] = js.undefined
     
-    var blackList: js.UndefOr[Boolean] = js.native
+    var blackList: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var countries: js.UndefOr[js.Array[String]] = js.native
+    var countries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var customLabels: js.UndefOr[StringDictionary[String]] = js.native
+    var customLabels: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var defaultCountry: js.UndefOr[String] = js.native
+    var defaultCountry: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* countryCode */ String, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* countryCode */ String, Unit]] = js.undefined
     
-    var optionsSize: js.UndefOr[Double] = js.native
+    var optionsSize: js.UndefOr[Double] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var searchable: js.UndefOr[Boolean] = js.native
+    var searchable: js.UndefOr[Boolean] = js.undefined
     
-    var selectedSize: js.UndefOr[Double] = js.native
+    var selectedSize: js.UndefOr[Double] = js.undefined
     
-    var showOptionLabel: js.UndefOr[Boolean] = js.native
+    var showOptionLabel: js.UndefOr[Boolean] = js.undefined
     
-    var showSelectedLabel: js.UndefOr[Boolean] = js.native
+    var showSelectedLabel: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     

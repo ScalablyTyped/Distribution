@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDocumentPermissionResponse extends StObject {
   
   /**
     * The account IDs that have permission to use this document. The ID can be either an AWS account or All.
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.native
+  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
   
   /**
     * A list of AWS accounts where the current document is shared and the version shared with each account.
     */
-  var AccountSharingInfoList: js.UndefOr[typings.awsSdk.ssmMod.AccountSharingInfoList] = js.native
+  var AccountSharingInfoList: js.UndefOr[typings.awsSdk.ssmMod.AccountSharingInfoList] = js.undefined
 }
 object DescribeDocumentPermissionResponse {
   

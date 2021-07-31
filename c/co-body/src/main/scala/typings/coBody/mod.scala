@@ -6,7 +6,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.qs.mod.IParseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,26 +16,25 @@ object mod extends Shortcut {
   
   type Context = IncomingMessage | Req
   
-  @js.native
   trait Options extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var formTypes: js.UndefOr[js.Array[String]] = js.native
+    var formTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var jsonTypes: js.UndefOr[js.Array[String]] = js.native
+    var jsonTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var limit: js.UndefOr[Double | String] = js.native
+    var limit: js.UndefOr[Double | String] = js.undefined
     
-    var queryString: js.UndefOr[IParseOptions] = js.native
+    var queryString: js.UndefOr[IParseOptions] = js.undefined
     
-    var returnRawBody: js.UndefOr[Boolean] = js.native
+    var returnRawBody: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var textTypes: js.UndefOr[js.Array[String]] = js.native
+    var textTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -117,17 +115,17 @@ object mod extends Shortcut {
   @js.native
   trait Parse extends StObject {
     
-    def apply(context: Context): js.Promise[_] = js.native
-    def apply(context: Context, options: Options): js.Promise[_] = js.native
+    def apply(context: Context): js.Promise[js.Any] = js.native
+    def apply(context: Context, options: Options): js.Promise[js.Any] = js.native
     
-    def form(context: Context): js.Promise[_] = js.native
-    def form(context: Context, options: Options): js.Promise[_] = js.native
+    def form(context: Context): js.Promise[js.Any] = js.native
+    def form(context: Context, options: Options): js.Promise[js.Any] = js.native
     
-    def json(context: Context): js.Promise[_] = js.native
-    def json(context: Context, options: Options): js.Promise[_] = js.native
+    def json(context: Context): js.Promise[js.Any] = js.native
+    def json(context: Context, options: Options): js.Promise[js.Any] = js.native
     
-    def text(context: Context): js.Promise[_] = js.native
-    def text(context: Context, options: Options): js.Promise[_] = js.native
+    def text(context: Context): js.Promise[js.Any] = js.native
+    def text(context: Context, options: Options): js.Promise[js.Any] = js.native
   }
   
   type _To = Parse

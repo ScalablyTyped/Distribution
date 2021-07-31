@@ -4,10 +4,13 @@ import typings.reactRedux.mod.ProviderProps
 import typings.redux.mod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-intl-redux", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-intl-redux", "IntlProvider")
   @js.native
@@ -16,7 +19,7 @@ object mod {
   
   @JSImport("react-intl-redux", "Provider")
   @js.native
-  class Provider[A /* <: Action[_] */] protected ()
+  class Provider[A /* <: Action[js.Any] */] protected ()
     extends typings.reactRedux.mod.Provider[A] {
     def this(props: ProviderProps[A]) = this()
     /**
@@ -26,22 +29,19 @@ object mod {
     def this(props: ProviderProps[A], context: js.Any) = this()
   }
   
-  @JSImport("react-intl-redux", "intlReducer")
-  @js.native
-  def intlReducer(state: js.UndefOr[scala.Nothing], action: IntlAction): IntlState = js.native
-  @JSImport("react-intl-redux", "intlReducer")
-  @js.native
-  def intlReducer(state: IntlState, action: IntlAction): IntlState = js.native
+  @scala.inline
+  def intlReducer(state: Unit, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
+  @scala.inline
+  def intlReducer(state: IntlState, action: IntlAction): IntlState = (^.asInstanceOf[js.Dynamic].applyDynamic("intlReducer")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[IntlState]
   
-  @JSImport("react-intl-redux", "updateIntl")
-  @js.native
-  def updateIntl(opts: IntlState): IntlAction = js.native
+  @scala.inline
+  def updateIntl(opts: IntlState): IntlAction = ^.asInstanceOf[js.Dynamic].applyDynamic("updateIntl")(opts.asInstanceOf[js.Any]).asInstanceOf[IntlAction]
   
-  @js.native
   trait IntlAction
-    extends Action[js.Any] {
+    extends StObject
+       with Action[js.Any] {
     
-    var payload: js.UndefOr[IntlState] = js.native
+    var payload: js.UndefOr[IntlState] = js.undefined
   }
   object IntlAction {
     
@@ -63,14 +63,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IntlState extends StObject {
     
-    var formats: js.UndefOr[js.Any] = js.native
+    var formats: js.UndefOr[js.Any] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var messages: js.Any = js.native
+    var messages: js.Any
   }
   object IntlState {
     

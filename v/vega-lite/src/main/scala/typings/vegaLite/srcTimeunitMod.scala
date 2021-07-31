@@ -4,10 +4,13 @@ import typings.vegaLite.anon.End
 import typings.vegaLite.vegaLiteNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcTimeunitMod {
+  
+  @JSImport("vega-lite/build/src/timeunit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object LOCAL_MULTI_TIMEUNIT_INDEX {
     
@@ -349,54 +352,41 @@ object srcTimeunitMod {
   @js.native
   val VEGALITE_TIMEFORMAT: TimeFormatConfig = js.native
   
-  @JSImport("vega-lite/build/src/timeunit", "containsTimeUnit")
-  @js.native
-  def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = js.native
+  @scala.inline
+  def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsTimeUnit")(fullTimeUnit.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/timeunit", "fieldExpr")
-  @js.native
-  def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = js.native
-  @JSImport("vega-lite/build/src/timeunit", "fieldExpr")
-  @js.native
-  def fieldExpr(fullTimeUnit: TimeUnit, field: String, hasEnd: End): String = js.native
+  @scala.inline
+  def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def fieldExpr(fullTimeUnit: TimeUnit, field: String, hasEnd: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], hasEnd.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/timeunit", "formatExpression")
-  @js.native
-  def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = js.native
+  @scala.inline
+  def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExpression")(timeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/timeunit", "getLocalTimeUnit")
-  @js.native
-  def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = js.native
+  @scala.inline
+  def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[LocalTimeUnit]
   
-  @JSImport("vega-lite/build/src/timeunit", "getTimeUnitParts")
-  @js.native
-  def getTimeUnitParts(timeUnit: TimeUnit): js.Array[typings.vegaTypings.transformMod.TimeUnit] = js.native
+  @scala.inline
+  def getTimeUnitParts(timeUnit: TimeUnit): js.Array[typings.vegaTypings.transformMod.TimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.vegaTypings.transformMod.TimeUnit]]
   
-  @JSImport("vega-lite/build/src/timeunit", "isLocalSingleTimeUnit")
-  @js.native
-  def isLocalSingleTimeUnit(timeUnit: String): /* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean = js.native
+  @scala.inline
+  def isLocalSingleTimeUnit(timeUnit: String): /* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLocalSingleTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.LocalSingleTimeUnit */ Boolean]
   
-  @JSImport("vega-lite/build/src/timeunit", "isUTCTimeUnit")
-  @js.native
-  def isUTCTimeUnit(t: String): /* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean = js.native
+  @scala.inline
+  def isUTCTimeUnit(t: String): /* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUTCTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/timeunit.UtcTimeUnit */ Boolean]
   
-  @JSImport("vega-lite/build/src/timeunit", "normalizeTimeUnit")
-  @js.native
-  def normalizeTimeUnit(timeUnit: TimeUnit): TimeUnitParams = js.native
-  @JSImport("vega-lite/build/src/timeunit", "normalizeTimeUnit")
-  @js.native
-  def normalizeTimeUnit(timeUnit: TimeUnitParams): TimeUnitParams = js.native
+  @scala.inline
+  def normalizeTimeUnit(timeUnit: TimeUnit): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
+  @scala.inline
+  def normalizeTimeUnit(timeUnit: TimeUnitParams): TimeUnitParams = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeTimeUnit")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[TimeUnitParams]
   
-  @JSImport("vega-lite/build/src/timeunit", "timeUnitSpecifierExpression")
-  @js.native
-  def timeUnitSpecifierExpression(timeUnit: TimeUnit): String = js.native
+  @scala.inline
+  def timeUnitSpecifierExpression(timeUnit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitSpecifierExpression")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/timeunit", "timeUnitToString")
-  @js.native
-  def timeUnitToString(tu: TimeUnit): String = js.native
-  @JSImport("vega-lite/build/src/timeunit", "timeUnitToString")
-  @js.native
-  def timeUnitToString(tu: TimeUnitParams): String = js.native
+  @scala.inline
+  def timeUnitToString(tu: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def timeUnitToString(tu: TimeUnitParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("timeUnitToString")(tu.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* keyof vega-lite.anon.Dayhours */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.yearquarter
@@ -430,8 +420,9 @@ object srcTimeunitMod {
     - typings.vegaLite.vegaLiteStrings.secondsmilliseconds
   */
   trait LocalMultiTimeUnit
-    extends MultiTimeUnit
+    extends StObject
        with LocalTimeUnit
+       with MultiTimeUnit
   
   /* keyof vega-lite.anon.Date */ /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.year
@@ -447,8 +438,9 @@ object srcTimeunitMod {
     - typings.vegaLite.vegaLiteStrings.milliseconds
   */
   trait LocalSingleTimeUnit
-    extends SingleTimeUnit
+    extends StObject
        with LocalTimeUnit
+       with SingleTimeUnit
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.srcTimeunitMod.LocalSingleTimeUnit
@@ -460,43 +452,46 @@ object srcTimeunitMod {
     - typings.vegaLite.srcTimeunitMod.LocalMultiTimeUnit
     - typings.vegaLite.srcTimeunitMod.UtcMultiTimeUnit
   */
-  trait MultiTimeUnit extends TimeUnit
+  trait MultiTimeUnit
+    extends StObject
+       with TimeUnit
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.srcTimeunitMod.LocalSingleTimeUnit
     - typings.vegaLite.srcTimeunitMod.UtcSingleTimeUnit
   */
-  trait SingleTimeUnit extends TimeUnit
+  trait SingleTimeUnit
+    extends StObject
+       with TimeUnit
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/timeunit.TimeUnitFormat, string>> */
-  @js.native
   trait TimeFormatConfig extends StObject {
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var hours: js.UndefOr[String] = js.native
+    var hours: js.UndefOr[String] = js.undefined
     
-    var `hours-minutes`: js.UndefOr[String] = js.native
+    var `hours-minutes`: js.UndefOr[String] = js.undefined
     
-    var milliseconds: js.UndefOr[String] = js.native
+    var milliseconds: js.UndefOr[String] = js.undefined
     
-    var minutes: js.UndefOr[String] = js.native
+    var minutes: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var quarter: js.UndefOr[String] = js.native
+    var quarter: js.UndefOr[String] = js.undefined
     
-    var seconds: js.UndefOr[String] = js.native
+    var seconds: js.UndefOr[String] = js.undefined
     
-    var week: js.UndefOr[String] = js.native
+    var week: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
     
-    var `year-month`: js.UndefOr[String] = js.native
+    var `year-month`: js.UndefOr[String] = js.undefined
     
-    var `year-month-date`: js.UndefOr[String] = js.native
+    var `year-month-date`: js.UndefOr[String] = js.undefined
   }
   object TimeFormatConfig {
     
@@ -653,29 +648,28 @@ object srcTimeunitMod {
     def `year-month-date`: typings.vegaLite.vegaLiteStrings.`year-month-date` = "year-month-date".asInstanceOf[typings.vegaLite.vegaLiteStrings.`year-month-date`]
   }
   
-  @js.native
   trait TimeUnitParams extends StObject {
     
     /**
       * If no `unit` is specified, maxbins is used to infer time units.
       */
-    var maxbins: js.UndefOr[Double] = js.native
+    var maxbins: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of steps between bins, in terms of the least
       * significant unit provided.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines how date-time values should be binned.
       */
-    var unit: js.UndefOr[TimeUnit] = js.native
+    var unit: js.UndefOr[TimeUnit] = js.undefined
     
     /**
       * True to use UTC timezone. Equivalent to using a `utc` prefixed `TimeUnit`.
       */
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object TimeUnitParams {
     
@@ -746,7 +740,8 @@ object srcTimeunitMod {
     - typings.vegaLite.vegaLiteStrings.utcsecondsmilliseconds
   */
   trait UtcMultiTimeUnit
-    extends MultiTimeUnit
+    extends StObject
+       with MultiTimeUnit
        with UtcTimeUnit
   
   /* keyof vega-lite.anon.Utcdate */ /* Rewritten from type alias, can be one of: 
@@ -763,7 +758,8 @@ object srcTimeunitMod {
     - typings.vegaLite.vegaLiteStrings.utcmilliseconds
   */
   trait UtcSingleTimeUnit
-    extends SingleTimeUnit
+    extends StObject
+       with SingleTimeUnit
        with UtcTimeUnit
   
   /* Rewritten from type alias, can be one of: 

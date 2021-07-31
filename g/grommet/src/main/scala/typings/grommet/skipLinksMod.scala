@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skipLinksMod {
@@ -14,12 +13,11 @@ object skipLinksMod {
   @js.native
   val SkipLinks: FC[SkipLinksProps] = js.native
   
-  @js.native
   trait SkipLinksProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var messages: js.UndefOr[SkipTo] = js.native
+    var messages: js.UndefOr[SkipTo] = js.undefined
   }
   object SkipLinksProps {
     

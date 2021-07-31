@@ -3,17 +3,15 @@ package typings.jssip.mod
 import typings.jssip.mod.RTCSession.DTMF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionNewDtmfEvent extends StObject {
   
-  var dtmf: DTMF = js.native
+  var dtmf: DTMF
   
-  var originator: String = js.native
+  var originator: String
   
-  var request: IncomingRequest | OutgoingRequest = js.native
+  var request: IncomingRequest | OutgoingRequest
 }
 object SessionNewDtmfEvent {
   

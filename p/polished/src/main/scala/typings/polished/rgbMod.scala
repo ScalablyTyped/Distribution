@@ -3,33 +3,28 @@ package typings.polished
 import typings.polished.colorMod.RgbColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rgbMod {
   
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
+  @JSImport("polished/lib/color/rgb", JSImport.Namespace)
   @js.native
-  def default(value: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: Double, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: Double, green: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: Double, green: Double, blue: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: RgbColor): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: RgbColor, green: js.UndefOr[scala.Nothing], blue: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: RgbColor, green: Double): String = js.native
-  @JSImport("polished/lib/color/rgb", JSImport.Default)
-  @js.native
-  def default(value: RgbColor, green: Double, blue: Double): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(value: Double, green: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Double, green: Double, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: Double, green: Unit, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: RgbColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(value: RgbColor, green: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: RgbColor, green: Double, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(value: RgbColor, green: Unit, blue: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any])).asInstanceOf[String]
 }

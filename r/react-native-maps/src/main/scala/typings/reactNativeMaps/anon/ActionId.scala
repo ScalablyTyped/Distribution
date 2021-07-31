@@ -3,21 +3,19 @@ package typings.reactNativeMaps.anon
 import typings.reactNativeMaps.reactNativeMapsStrings.`marker-deselect`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionId extends StObject {
   
-  var action: `marker-deselect` = js.native
+  var action: `marker-deselect`
   
-  var id: String = js.native
+  var id: String
 }
 object ActionId {
   
   @scala.inline
-  def apply(action: `marker-deselect`, id: String): ActionId = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+  def apply(id: String): ActionId = {
+    val __obj = js.Dynamic.literal(action = "marker-deselect", id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionId]
   }
   

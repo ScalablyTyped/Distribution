@@ -2,7 +2,6 @@ package typings.elasticlunr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "SortedSet")
@@ -36,8 +35,11 @@ class SortedSet[T] () extends StObject {
 }
 object SortedSet {
   
-  /* static member */
-  @JSImport("elasticlunr", "SortedSet.load")
+  @JSImport("elasticlunr", "SortedSet")
   @js.native
-  def load[T](serialisedData: js.Array[T]): SortedSet[T] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def load[T](serialisedData: js.Array[T]): SortedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[SortedSet[T]]
 }

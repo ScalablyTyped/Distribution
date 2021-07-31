@@ -2,21 +2,19 @@ package typings.awsSdk.servicequotasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAWSDefaultServiceQuotasResponse extends StObject {
   
   /**
     * (Optional) Use this parameter in a request if you receive a NextToken response in a previous request that indicates that there's more output available. In a subsequent call, set it to the value of the previous call's NextToken response to indicate where the output should continue from.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.servicequotasMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.servicequotasMod.NextToken] = js.undefined
   
   /**
     * A list of the quotas in the account with the AWS default values. 
     */
-  var Quotas: js.UndefOr[ServiceQuotaListDefinition] = js.native
+  var Quotas: js.UndefOr[ServiceQuotaListDefinition] = js.undefined
 }
 object ListAWSDefaultServiceQuotasResponse {
   

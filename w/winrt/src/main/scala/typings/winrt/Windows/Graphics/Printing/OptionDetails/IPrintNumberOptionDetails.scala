@@ -2,15 +2,15 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPrintNumberOptionDetails extends IPrintOptionDetails {
+trait IPrintNumberOptionDetails
+  extends StObject
+     with IPrintOptionDetails {
   
-  var maxValue: Double = js.native
+  var maxValue: Double
   
-  var minValue: Double = js.native
+  var minValue: Double
 }
 object IPrintNumberOptionDetails {
   

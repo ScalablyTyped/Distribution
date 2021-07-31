@@ -10,13 +10,13 @@ The perfect library for lists. Supports search, sort, filters and flexibility. B
 | ------------------ | :-------------: |
 | Full name          | list.js |
 | Keywords           | list, search, sort, table, dom, html, ui |
-| # releases         | 0 |
+| # releases         | 6 |
 | # dependents       | 13 |
-| # downloads        | 606115 |
+| # downloads        | 838479 |
 | # stars            | 3 |
 
 ## Links
-- [Homepage](http://listjs.com)
+- [Homepage](https://listjs.com)
 - [Bugs](https://github.com/javve/list.js/issues)
 - [Repository](https://github.com/javve/list.js)
 - [Npm](https://www.npmjs.com/package/list.js)

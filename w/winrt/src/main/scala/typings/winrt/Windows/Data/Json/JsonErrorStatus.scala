@@ -2,7 +2,6 @@ package typings.winrt.Windows.Data.Json
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait JsonErrorStatus extends StObject
 object JsonErrorStatus extends StObject {
   
   @js.native
-  sealed trait implementationLimit extends JsonErrorStatus
+  sealed trait implementationLimit
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait invalidJsonNumber extends JsonErrorStatus
+  sealed trait invalidJsonNumber
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait invalidJsonString extends JsonErrorStatus
+  sealed trait invalidJsonString
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait jsonValueNotFound extends JsonErrorStatus
+  sealed trait jsonValueNotFound
+    extends StObject
+       with JsonErrorStatus
   
   @js.native
-  sealed trait unknown extends JsonErrorStatus
+  sealed trait unknown
+    extends StObject
+       with JsonErrorStatus
 }

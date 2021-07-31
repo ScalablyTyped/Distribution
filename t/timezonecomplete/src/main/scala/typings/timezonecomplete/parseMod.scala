@@ -5,116 +5,93 @@ import typings.timezonecomplete.localeMod.PartialLocale
 import typings.timezonecomplete.timezoneMod.TimeZone
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
+  @JSImport("timezonecomplete/dist/lib/parse", JSImport.Namespace)
   @js.native
-  def parse(dateTimeString: String, formatString: String): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: js.UndefOr[scala.Nothing],
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: Boolean
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: js.UndefOr[scala.Nothing],
-    allowTrailing: Boolean,
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(
-    dateTimeString: String,
-    formatString: String,
-    overrideZone: Null,
-    allowTrailing: js.UndefOr[scala.Nothing],
-    locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(dateTimeString: String, formatString: String, overrideZone: Null, allowTrailing: Boolean): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: Null, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: Null,
     allowTrailing: Boolean,
     locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(dateTimeString: String, formatString: String, overrideZone: TimeZone): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
-    overrideZone: TimeZone,
-    allowTrailing: js.UndefOr[scala.Nothing],
+    overrideZone: Null,
+    allowTrailing: Unit,
     locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
-  def parse(dateTimeString: String, formatString: String, overrideZone: TimeZone, allowTrailing: Boolean): AwareTimeStruct = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parse")
-  @js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: Unit, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
+    dateTimeString: String,
+    formatString: String,
+    overrideZone: Unit,
+    allowTrailing: Boolean,
+    locale: PartialLocale
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
+    dateTimeString: String,
+    formatString: String,
+    overrideZone: Unit,
+    allowTrailing: Unit,
+    locale: PartialLocale
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: TimeZone): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(dateTimeString: String, formatString: String, overrideZone: TimeZone, allowTrailing: Boolean): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
   def parse(
     dateTimeString: String,
     formatString: String,
     overrideZone: TimeZone,
     allowTrailing: Boolean,
     locale: PartialLocale
-  ): AwareTimeStruct = js.native
-  
-  @JSImport("timezonecomplete/dist/lib/parse", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String): Boolean = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parseable")
-  @js.native
-  def parseable(
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
+  @scala.inline
+  def parse(
     dateTimeString: String,
     formatString: String,
-    allowTrailing: js.UndefOr[scala.Nothing],
+    overrideZone: TimeZone,
+    allowTrailing: Unit,
     locale: PartialLocale
-  ): Boolean = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean): Boolean = js.native
-  @JSImport("timezonecomplete/dist/lib/parse", "parseable")
-  @js.native
-  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean, locale: PartialLocale): Boolean = js.native
+  ): AwareTimeStruct = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], overrideZone.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[AwareTimeStruct]
   
-  @js.native
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Boolean, locale: PartialLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def parseable(dateTimeString: String, formatString: String, allowTrailing: Unit, locale: PartialLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parseable")(dateTimeString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], allowTrailing.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait AwareTimeStruct extends StObject {
     
     /**
       * The time struct
       */
-    var time: TimeStruct = js.native
+    var time: TimeStruct
     
     /**
       * The time zone (can be undefined)
       */
-    var zone: js.UndefOr[TimeZone] = js.native
+    var zone: js.UndefOr[TimeZone] = js.undefined
   }
   object AwareTimeStruct {
     

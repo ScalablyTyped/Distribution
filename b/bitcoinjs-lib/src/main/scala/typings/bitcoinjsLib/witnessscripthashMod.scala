@@ -3,7 +3,6 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object witnessscripthashMod {
@@ -12,12 +11,11 @@ object witnessscripthashMod {
     
     object check {
       
-      @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "input.check")
-      @js.native
-      def apply(chunks: js.Array[Buffer]): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "input.check")
-      @js.native
-      def apply(chunks: js.Array[Buffer], allowIncomplete: Boolean): Boolean = js.native
+      @scala.inline
+      def apply(chunks: js.Array[Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(chunks.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(chunks: js.Array[Buffer], allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(chunks.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
       @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "input.check")
       @js.native
       val ^ : js.Any = js.native
@@ -34,12 +32,11 @@ object witnessscripthashMod {
     
     object check {
       
-      @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "output.check")
-      @js.native
-      def apply(script: js.Array[Double | Buffer]): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "output.check")
-      @js.native
-      def apply(script: Buffer): Boolean = js.native
+      @scala.inline
+      def apply(script: js.Array[Double | Buffer]): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      
       @JSImport("bitcoinjs-lib/types/templates/witnessscripthash", "output.check")
       @js.native
       val ^ : js.Any = js.native

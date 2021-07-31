@@ -3,15 +3,13 @@ package typings.node.anon
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncodingBufferEncoding extends StObject {
   
-  var encoding: BufferEncoding = js.native
+  var encoding: BufferEncoding
   
-  var flag: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.undefined
 }
 object EncodingBufferEncoding {
   

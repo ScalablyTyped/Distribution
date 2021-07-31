@@ -3,27 +3,25 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRef extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
-  var isLockedBy: IdentityRef = js.native
+  var isLockedBy: IdentityRef
   
-  var name: String = js.native
+  var name: String
   
-  var objectId: String = js.native
+  var objectId: String
   
-  var peeledObjectId: String = js.native
+  var peeledObjectId: String
   
-  var statuses: js.Array[GitStatus] = js.native
+  var statuses: js.Array[GitStatus]
   
-  var url: String = js.native
+  var url: String
 }
 object GitRef {
   

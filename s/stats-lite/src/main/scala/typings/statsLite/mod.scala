@@ -2,44 +2,38 @@ package typings.statsLite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("stats-lite", "histogram")
+  @JSImport("stats-lite", JSImport.Namespace)
   @js.native
-  def histogram(ns: js.Array[Double], percentile: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("stats-lite", "mean")
-  @js.native
-  def mean(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def histogram(ns: js.Array[Double], percentile: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("histogram")(ns.asInstanceOf[js.Any], percentile.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "median")
-  @js.native
-  def median(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def mean(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "mode")
-  @js.native
-  def mode(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def median(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("median")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "percentile")
-  @js.native
-  def percentile(ns: js.Array[Double], percentile: Double): Double = js.native
+  @scala.inline
+  def mode(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("mode")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "sampleStdev")
-  @js.native
-  def sampleStdev(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def percentile(ns: js.Array[Double], percentile: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("percentile")(ns.asInstanceOf[js.Any], percentile.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "stdev")
-  @js.native
-  def stdev(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def sampleStdev(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sampleStdev")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "sum")
-  @js.native
-  def sum(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def stdev(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stdev")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("stats-lite", "variance")
-  @js.native
-  def variance(ns: js.Array[Double]): Double = js.native
+  @scala.inline
+  def sum(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def variance(ns: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("variance")(ns.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

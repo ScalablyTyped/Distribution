@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRolePermissionsBoundaryRequest extends StObject {
   
   /**
     * The name (friendly name, not ARN) of the IAM role from which you want to remove the permissions boundary.
     */
-  var RoleName: roleNameType = js.native
+  var RoleName: roleNameType
 }
 object DeleteRolePermissionsBoundaryRequest {
   

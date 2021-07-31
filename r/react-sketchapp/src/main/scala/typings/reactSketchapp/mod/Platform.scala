@@ -4,7 +4,6 @@ import typings.reactSketchapp.reactSketchappNumbers.`1`
 import typings.reactSketchapp.reactSketchappStrings.sketch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Platform {
@@ -25,7 +24,6 @@ object Platform {
   @scala.inline
   def Version_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Version")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-sketchapp", "Platform.select")
-  @js.native
-  def select(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def select(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

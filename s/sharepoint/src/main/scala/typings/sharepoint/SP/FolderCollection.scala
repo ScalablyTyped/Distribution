@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FolderCollection extends ClientObjectCollection[Folder] {
+trait FolderCollection
+  extends StObject
+     with ClientObjectCollection[Folder] {
   
   def add(url: String): Folder = js.native
   

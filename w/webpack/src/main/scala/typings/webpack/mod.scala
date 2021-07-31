@@ -2,18 +2,16 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait ProfilingPluginOptions extends StObject {
     
     /**
     	 * Path to the output file e.g. `profiling/events.json`. Defaults to `events.json`.
     	 */
-    var outputPath: js.UndefOr[String] = js.native
+    var outputPath: js.UndefOr[String] = js.undefined
   }
   object ProfilingPluginOptions {
     

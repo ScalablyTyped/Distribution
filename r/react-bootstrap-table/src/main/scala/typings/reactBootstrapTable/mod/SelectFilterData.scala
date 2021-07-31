@@ -2,22 +2,22 @@ package typings.reactBootstrapTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectFilterData extends FilterValue {
+trait SelectFilterData
+  extends StObject
+     with FilterValue {
   
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter
   
-  var value: String = js.native
+  var value: String
 }
 object SelectFilterData {
   
   @scala.inline
-  def apply(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.SelectFilter, value: String): SelectFilterData = {
+  def apply(value: String): SelectFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SelectFilter")
     __obj.asInstanceOf[SelectFilterData]
   }
   

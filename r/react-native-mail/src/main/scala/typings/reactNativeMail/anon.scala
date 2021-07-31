@@ -2,27 +2,25 @@ package typings.reactNativeMail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attachment extends StObject {
     
-    var attachment: js.UndefOr[Name] = js.native
+    var attachment: js.UndefOr[Name] = js.undefined
     
-    var bccRecipients: js.UndefOr[js.Array[String]] = js.native
+    var bccRecipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var body: String = js.native
+    var body: String
     
-    var ccRecipients: js.UndefOr[js.Array[String]] = js.native
+    var ccRecipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isHTML: Boolean = js.native
+    var isHTML: Boolean
     
-    var recipients: js.UndefOr[js.Array[String]] = js.native
+    var recipients: js.UndefOr[js.Array[String]] = js.undefined
     
-    var subject: String = js.native
+    var subject: String
   }
   object Attachment {
     
@@ -79,23 +77,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
       * Optional: Custom filename for attachment
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The absolute path of the file from which to read data.
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Mime Type: jpg, png, doc, ppt, html, pdf, csv
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Name {
     

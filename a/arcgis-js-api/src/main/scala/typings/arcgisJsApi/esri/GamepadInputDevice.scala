@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.Gamepad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GamepadInputDevice extends Accessor {
+trait GamepadInputDevice
+  extends StObject
+     with Accessor {
   
   /**
     * The native Gamepad object exposed by the browser.

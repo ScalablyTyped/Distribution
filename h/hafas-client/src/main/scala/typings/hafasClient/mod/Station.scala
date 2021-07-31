@@ -3,7 +3,6 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.station
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,44 +11,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Whereas a stop usually specifies a location, a station often is a broader area
   * that may span across multiple levels or buildings.
   */
-@js.native
 trait Station extends StObject {
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var entrances: js.UndefOr[js.Array[Location]] = js.native
+  var entrances: js.UndefOr[js.Array[Location]] = js.undefined
   
-  var facilities: js.UndefOr[Facilities] = js.native
+  var facilities: js.UndefOr[Facilities] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isMeta: js.UndefOr[Boolean] = js.native
+  var isMeta: js.UndefOr[Boolean] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var products: js.UndefOr[Products] = js.native
+  var products: js.UndefOr[Products] = js.undefined
   
   /** region ids */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reisezentrumOpeningHours: js.UndefOr[ReisezentrumOpeningHours] = js.native
+  var reisezentrumOpeningHours: js.UndefOr[ReisezentrumOpeningHours] = js.undefined
   
-  var station: js.UndefOr[Station] = js.native
+  var station: js.UndefOr[Station] = js.undefined
   
-  var stops: js.UndefOr[js.Array[Station | Stop | Location]] = js.native
+  var stops: js.UndefOr[js.Array[Station | Stop | Location]] = js.undefined
   
-  var transitAuthority: js.UndefOr[String] = js.native
+  var transitAuthority: js.UndefOr[String] = js.undefined
   
-  var `type`: station = js.native
+  var `type`: station
 }
 object Station {
   
   @scala.inline
-  def apply(`type`: station): Station = {
+  def apply(): Station = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("station")
     __obj.asInstanceOf[Station]
   }
   

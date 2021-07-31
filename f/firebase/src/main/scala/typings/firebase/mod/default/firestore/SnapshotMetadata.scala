@@ -2,10 +2,8 @@ package typings.firebase.mod.default.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotMetadata extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SnapshotMetadata extends StObject {
     * you will receive another snapshot with `fromCache` set to false once
     * the client has received up-to-date data from the backend.
     */
-  val fromCache: Boolean = js.native
+  val fromCache: Boolean
   
   /**
     * True if the snapshot contains the result of local writes (e.g. set() or
@@ -25,7 +23,7 @@ trait SnapshotMetadata extends StObject {
     * snapshot with `hasPendingWrites` equal to false once the writes have been
     * committed to the backend.
     */
-  val hasPendingWrites: Boolean = js.native
+  val hasPendingWrites: Boolean
   
   /**
     * Returns true if this `SnapshotMetadata` is equal to the provided one.
@@ -33,7 +31,7 @@ trait SnapshotMetadata extends StObject {
     * @param other The `SnapshotMetadata` to compare against.
     * @return true if this `SnapshotMetadata` is equal to the provided one.
     */
-  def isEqual(other: typings.firebase.mod.firebase.firestore.SnapshotMetadata): Boolean = js.native
+  def isEqual(other: typings.firebase.mod.firebase.firestore.SnapshotMetadata): Boolean
 }
 object SnapshotMetadata {
   

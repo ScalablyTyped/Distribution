@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBlogger.gapi.client.blogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlogPerUserInfo extends StObject {
   
   /** ID of the Blog resource. */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /** True if the user has Admin level access to the blog. */
-  var hasAdminAccess: js.UndefOr[Boolean] = js.native
+  var hasAdminAccess: js.UndefOr[Boolean] = js.undefined
   
   /** The kind of this entity. Always blogger#blogPerUserInfo. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The Photo Album Key for the user when adding photos to the blog. */
-  var photosAlbumKey: js.UndefOr[String] = js.native
+  var photosAlbumKey: js.UndefOr[String] = js.undefined
   
   /** Access permissions that the user has for the blog (ADMIN, AUTHOR, or READER). */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /** ID of the User. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object BlogPerUserInfo {
   

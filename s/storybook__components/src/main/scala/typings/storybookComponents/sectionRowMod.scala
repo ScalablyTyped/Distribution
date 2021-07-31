@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sectionRowMod {
@@ -26,16 +25,15 @@ object sectionRowMod {
     def subsection: typings.storybookComponents.storybookComponentsStrings.subsection = "subsection".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.subsection]
   }
   
-  @js.native
   trait SectionRowProps extends StObject {
     
-    var colSpan: Double = js.native
+    var colSpan: Double
     
-    var initialExpanded: js.UndefOr[Boolean] = js.native
+    var initialExpanded: js.UndefOr[Boolean] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var level: Level = js.native
+    var level: Level
   }
   object SectionRowProps {
     

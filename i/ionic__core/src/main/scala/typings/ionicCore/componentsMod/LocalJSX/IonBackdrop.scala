@@ -3,31 +3,29 @@ package typings.ionicCore.componentsMod.LocalJSX
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonBackdrop extends StObject {
   
   /**
     * Emitted when the backdrop is tapped.
     */
-  var onIonBackdropTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonBackdropTap: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * If `true`, the backdrop will stop propagation on tap.
     */
-  var stopPropagation: js.UndefOr[Boolean] = js.native
+  var stopPropagation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the backdrop will can be clicked and will emit the `ionBackdropTap` event.
     */
-  var tappable: js.UndefOr[Boolean] = js.native
+  var tappable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the backdrop will be visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IonBackdrop {
   

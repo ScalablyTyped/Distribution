@@ -2,31 +2,29 @@ package typings.jsonEditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorObjectOptions extends StObject {
   
   /**
     * If set to true, the editor will start collapsed
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, the collapse button will be hidden
     */
-  var disable_collapse: js.UndefOr[Boolean] = js.native
+  var disable_collapse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, the Edit JSON button will be hidden
     */
-  var disable_edit_json: js.UndefOr[Boolean] = js.native
+  var disable_edit_json: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, the Edit Properties button will be hidden
     */
-  var disable_properties: js.UndefOr[Boolean] = js.native
+  var disable_properties: js.UndefOr[Boolean] = js.undefined
 }
 object JSONEditorObjectOptions {
   

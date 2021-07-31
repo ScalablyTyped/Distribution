@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the identity pool to assign the tags to.
     */
-  var ResourceArn: ARNString = js.native
+  var ResourceArn: ARNString
   
   /**
     * The tags to assign to the identity pool.
     */
-  var Tags: IdentityPoolTagsType = js.native
+  var Tags: IdentityPoolTagsType
 }
 object TagResourceInput {
   

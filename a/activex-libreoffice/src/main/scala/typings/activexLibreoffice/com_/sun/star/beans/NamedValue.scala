@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a pair assembled from a name and a value. */
-@js.native
 trait NamedValue extends StObject {
   
   /** specifies the name part of the pair */
-  var Name: String = js.native
+  var Name: String
   
   /** specifies the value part of the pair. */
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object NamedValue {
   

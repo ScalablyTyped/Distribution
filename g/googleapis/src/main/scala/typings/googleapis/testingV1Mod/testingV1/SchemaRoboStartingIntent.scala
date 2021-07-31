@@ -2,23 +2,21 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message for specifying the start activities to crawl.
   */
-@js.native
 trait SchemaRoboStartingIntent extends StObject {
   
-  var launcherActivity: js.UndefOr[SchemaLauncherActivityIntent] = js.native
+  var launcherActivity: js.UndefOr[SchemaLauncherActivityIntent] = js.undefined
   
-  var startActivity: js.UndefOr[SchemaStartActivityIntent] = js.native
+  var startActivity: js.UndefOr[SchemaStartActivityIntent] = js.undefined
   
   /**
     * Timeout in seconds for each intent.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaRoboStartingIntent {
   

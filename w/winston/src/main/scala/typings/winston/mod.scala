@@ -19,8 +19,6 @@ import typings.logform.mod.TransformFunction
 import typings.logform.mod.TransformableInfo
 import typings.logform.mod.UncolorizeOptions
 import typings.node.NodeJS.ReadableStream
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Transform
 import typings.std.Date
 import typings.std.Error
@@ -43,7 +41,6 @@ import typings.winston.winstonStrings.desc
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,7 +51,8 @@ object mod {
   
   @js.native
   trait Container
-    extends Instantiable0[Container]
+    extends StObject
+       with Instantiable0[Container]
        with Instantiable1[/* options */ LoggerOptions, Container] {
     
     def add(id: String): Logger = js.native
@@ -79,7 +77,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("winston", "Container")
   @js.native
-  class ContainerCls () extends Container {
+  class ContainerCls ()
+    extends StObject
+       with Container {
     def this(options: LoggerOptions) = this()
   }
   
@@ -87,7 +87,9 @@ object mod {
   def Container_=(x: Container): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Container")(x.asInstanceOf[js.Any])
   
   @js.native
-  trait ExceptionHandler extends Instantiable1[/* logger */ Logger, ExceptionHandler] {
+  trait ExceptionHandler
+    extends StObject
+       with Instantiable1[/* logger */ Logger, ExceptionHandler] {
     
     var catcher: js.Function | Boolean = js.native
     
@@ -102,7 +104,7 @@ object mod {
     
     def handle(transports: typings.winstonTransport.mod.^ *): Unit = js.native
     
-    var handlers: Map[_, _] = js.native
+    var handlers: Map[js.Any, js.Any] = js.native
     
     var logger: Logger = js.native
     
@@ -130,11 +132,17 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("winston", "ExceptionHandler")
   @js.native
-  class ExceptionHandlerCls protected () extends ExceptionHandler {
+  class ExceptionHandlerCls protected ()
+    extends StObject
+       with ExceptionHandler {
     def this(logger: Logger) = this()
   }
   
   object Logform {
+    
+    @JSImport("winston", "Logform")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("winston", "Logform.Colorizer")
     @js.native
@@ -152,112 +160,87 @@ object mod {
     
     object format {
       
+      @scala.inline
+      def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+      
       @JSImport("winston", "Logform.format")
       @js.native
-      def apply(transform: TransformFunction): FormatWrap = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("winston", "Logform.format.align")
-      @js.native
-      def align(): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def align(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.cli")
-      @js.native
-      def cli(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.cli")
-      @js.native
-      def cli(opts: CliOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def cli(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def cli(opts: CliOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.colorize")
-      @js.native
-      def colorize(): typings.logform.mod.Colorizer = js.native
-      @JSImport("winston", "Logform.format.colorize")
-      @js.native
-      def colorize(opts: ColorizeOptions): typings.logform.mod.Colorizer = js.native
+      @scala.inline
+      def colorize(): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[typings.logform.mod.Colorizer]
+      @scala.inline
+      def colorize(opts: ColorizeOptions): typings.logform.mod.Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Colorizer]
       
-      @JSImport("winston", "Logform.format.combine")
-      @js.native
-      def combine(formats: typings.logform.mod.Format_ *): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def combine(formats: typings.logform.mod.Format_ *): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.errors")
-      @js.native
-      def errors(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.errors")
-      @js.native
-      def errors(opts: js.Object): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def errors(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def errors(opts: js.Object): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.json")
-      @js.native
-      def json(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.json")
-      @js.native
-      def json(opts: JsonOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def json(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def json(opts: JsonOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.label")
-      @js.native
-      def label(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.label")
-      @js.native
-      def label(opts: LabelOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def label(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def label(opts: LabelOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.logstash")
-      @js.native
-      def logstash(): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def logstash(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.metadata")
-      @js.native
-      def metadata(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.metadata")
-      @js.native
-      def metadata(opts: MetadataOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def metadata(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def metadata(opts: MetadataOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.ms")
-      @js.native
-      def ms(): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def ms(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.padLevels")
-      @js.native
-      def padLevels(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.padLevels")
-      @js.native
-      def padLevels(opts: PadLevelsOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def padLevels(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def padLevels(opts: PadLevelsOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.prettyPrint")
-      @js.native
-      def prettyPrint(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.prettyPrint")
-      @js.native
-      def prettyPrint(opts: PrettyPrintOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def prettyPrint(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def prettyPrint(opts: PrettyPrintOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.printf")
-      @js.native
-      def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.simple")
-      @js.native
-      def simple(): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def simple(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.splat")
-      @js.native
-      def splat(): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def splat(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.timestamp")
-      @js.native
-      def timestamp(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.timestamp")
-      @js.native
-      def timestamp(opts: TimestampOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def timestamp(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def timestamp(opts: TimestampOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
       
-      @JSImport("winston", "Logform.format.uncolorize")
-      @js.native
-      def uncolorize(): typings.logform.mod.Format_ = js.native
-      @JSImport("winston", "Logform.format.uncolorize")
-      @js.native
-      def uncolorize(opts: UncolorizeOptions): typings.logform.mod.Format_ = js.native
+      @scala.inline
+      def uncolorize(): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[typings.logform.mod.Format_]
+      @scala.inline
+      def uncolorize(opts: UncolorizeOptions): typings.logform.mod.Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[typings.logform.mod.Format_]
     }
     
-    @JSImport("winston", "Logform.levels")
-    @js.native
-    def levels(config: js.Object): js.Object = js.native
+    @scala.inline
+    def levels(config: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("levels")(config.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   @JSImport("winston", "add")
@@ -317,7 +300,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston", "exceptions")
   @js.native
-  class exceptions protected () extends ExceptionHandler {
+  class exceptions protected ()
+    extends StObject
+       with ExceptionHandler {
     def this(logger: Logger) = this()
   }
   object exceptions extends Shortcut {
@@ -347,107 +332,83 @@ object mod {
   
   object format {
     
+    @scala.inline
+    def apply(transform: TransformFunction): FormatWrap = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[FormatWrap]
+    
     @JSImport("winston", "format")
     @js.native
-    def apply(transform: TransformFunction): FormatWrap = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("winston", "format.align")
-    @js.native
-    def align(): Format_ = js.native
+    @scala.inline
+    def align(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("align")().asInstanceOf[Format_]
     
-    @JSImport("winston", "format.cli")
-    @js.native
-    def cli(): Format_ = js.native
-    @JSImport("winston", "format.cli")
-    @js.native
-    def cli(opts: CliOptions): Format_ = js.native
+    @scala.inline
+    def cli(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")().asInstanceOf[Format_]
+    @scala.inline
+    def cli(opts: CliOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cli")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.colorize")
-    @js.native
-    def colorize(): Colorizer = js.native
-    @JSImport("winston", "format.colorize")
-    @js.native
-    def colorize(opts: ColorizeOptions): Colorizer = js.native
+    @scala.inline
+    def colorize(): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")().asInstanceOf[Colorizer]
+    @scala.inline
+    def colorize(opts: ColorizeOptions): Colorizer = ^.asInstanceOf[js.Dynamic].applyDynamic("colorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Colorizer]
     
-    @JSImport("winston", "format.combine")
-    @js.native
-    def combine(formats: Format_ *): Format_ = js.native
+    @scala.inline
+    def combine(formats: Format_ *): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(formats.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.errors")
-    @js.native
-    def errors(): Format_ = js.native
-    @JSImport("winston", "format.errors")
-    @js.native
-    def errors(opts: js.Object): Format_ = js.native
+    @scala.inline
+    def errors(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")().asInstanceOf[Format_]
+    @scala.inline
+    def errors(opts: js.Object): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("errors")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.json")
-    @js.native
-    def json(): Format_ = js.native
-    @JSImport("winston", "format.json")
-    @js.native
-    def json(opts: JsonOptions): Format_ = js.native
+    @scala.inline
+    def json(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[Format_]
+    @scala.inline
+    def json(opts: JsonOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.label")
-    @js.native
-    def label(): Format_ = js.native
-    @JSImport("winston", "format.label")
-    @js.native
-    def label(opts: LabelOptions): Format_ = js.native
+    @scala.inline
+    def label(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Format_]
+    @scala.inline
+    def label(opts: LabelOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.logstash")
-    @js.native
-    def logstash(): Format_ = js.native
+    @scala.inline
+    def logstash(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logstash")().asInstanceOf[Format_]
     
-    @JSImport("winston", "format.metadata")
-    @js.native
-    def metadata(): Format_ = js.native
-    @JSImport("winston", "format.metadata")
-    @js.native
-    def metadata(opts: MetadataOptions): Format_ = js.native
+    @scala.inline
+    def metadata(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")().asInstanceOf[Format_]
+    @scala.inline
+    def metadata(opts: MetadataOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.ms")
-    @js.native
-    def ms(): Format_ = js.native
+    @scala.inline
+    def ms(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ms")().asInstanceOf[Format_]
     
-    @JSImport("winston", "format.padLevels")
-    @js.native
-    def padLevels(): Format_ = js.native
-    @JSImport("winston", "format.padLevels")
-    @js.native
-    def padLevels(opts: PadLevelsOptions): Format_ = js.native
+    @scala.inline
+    def padLevels(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")().asInstanceOf[Format_]
+    @scala.inline
+    def padLevels(opts: PadLevelsOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("padLevels")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.prettyPrint")
-    @js.native
-    def prettyPrint(): Format_ = js.native
-    @JSImport("winston", "format.prettyPrint")
-    @js.native
-    def prettyPrint(opts: PrettyPrintOptions): Format_ = js.native
+    @scala.inline
+    def prettyPrint(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")().asInstanceOf[Format_]
+    @scala.inline
+    def prettyPrint(opts: PrettyPrintOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.printf")
-    @js.native
-    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = js.native
+    @scala.inline
+    def printf(templateFunction: js.Function1[/* info */ TransformableInfo, String]): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("printf")(templateFunction.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.simple")
-    @js.native
-    def simple(): Format_ = js.native
+    @scala.inline
+    def simple(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")().asInstanceOf[Format_]
     
-    @JSImport("winston", "format.splat")
-    @js.native
-    def splat(): Format_ = js.native
+    @scala.inline
+    def splat(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("splat")().asInstanceOf[Format_]
     
-    @JSImport("winston", "format.timestamp")
-    @js.native
-    def timestamp(): Format_ = js.native
-    @JSImport("winston", "format.timestamp")
-    @js.native
-    def timestamp(opts: TimestampOptions): Format_ = js.native
+    @scala.inline
+    def timestamp(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Format_]
+    @scala.inline
+    def timestamp(opts: TimestampOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
     
-    @JSImport("winston", "format.uncolorize")
-    @js.native
-    def uncolorize(): Format_ = js.native
-    @JSImport("winston", "format.uncolorize")
-    @js.native
-    def uncolorize(opts: UncolorizeOptions): Format_ = js.native
+    @scala.inline
+    def uncolorize(): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")().asInstanceOf[Format_]
+    @scala.inline
+    def uncolorize(opts: UncolorizeOptions): Format_ = ^.asInstanceOf[js.Dynamic].applyDynamic("uncolorize")(opts.asInstanceOf[js.Any]).asInstanceOf[Format_]
   }
   
   @JSImport("winston", "http")
@@ -478,7 +439,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("winston", "loggers")
   @js.native
-  class loggers () extends Container {
+  class loggers ()
+    extends StObject
+       with Container {
     def this(options: LoggerOptions) = this()
   }
   @JSImport("winston", "loggers")
@@ -616,13 +579,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait LogEntry
-    extends /* optionName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* optionName */ StringDictionary[js.Any] {
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
   }
   object LogEntry {
     
@@ -653,11 +616,19 @@ object mod {
     def apply(level: String, message: js.Any): Logger = js.native
   }
   
-  @js.native
-  trait Logger
-    extends Transform
-       with Instantiable0[Logger]
-       with Instantiable1[/* options */ LoggerOptions, Logger] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
+  trait Logger extends Transform {
     
     def add(transport: typings.winstonTransport.mod.^): Logger = js.native
     
@@ -803,11 +774,6 @@ object mod {
     @JSName("notice")
     var notice_Original: LeveledLogMethod = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
     def profile(id: String): Logger = js.native
     def profile(id: String, meta: LogEntry): Logger = js.native
     def profile(id: Double): Logger = js.native
@@ -824,10 +790,7 @@ object mod {
     var prompt_Original: LeveledLogMethod = js.native
     
     def query(): js.Any = js.native
-    def query(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]
-    ): js.Any = js.native
+    def query(options: Unit, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
     def query(options: QueryOptions): js.Any = js.native
     def query(options: QueryOptions, callback: js.Function2[/* err */ Error, /* results */ js.Any, Unit]): js.Any = js.native
     
@@ -875,26 +838,25 @@ object mod {
     var warning_Original: LeveledLogMethod = js.native
   }
   
-  @js.native
   trait LoggerOptions extends StObject {
     
-    var defaultMeta: js.UndefOr[js.Any] = js.native
+    var defaultMeta: js.UndefOr[js.Any] = js.undefined
     
-    var exceptionHandlers: js.UndefOr[js.Any] = js.native
+    var exceptionHandlers: js.UndefOr[js.Any] = js.undefined
     
-    var exitOnError: js.UndefOr[js.Function | Boolean] = js.native
+    var exitOnError: js.UndefOr[js.Function | Boolean] = js.undefined
     
-    var format: js.UndefOr[Format_] = js.native
+    var format: js.UndefOr[Format_] = js.undefined
     
-    var handleExceptions: js.UndefOr[Boolean] = js.native
+    var handleExceptions: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var levels: js.UndefOr[AbstractConfigSetLevels] = js.native
+    var levels: js.UndefOr[AbstractConfigSetLevels] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var transports: js.UndefOr[js.Array[typings.winstonTransport.mod.^] | typings.winstonTransport.mod.^] = js.native
+    var transports: js.UndefOr[js.Array[typings.winstonTransport.mod.^] | typings.winstonTransport.mod.^] = js.undefined
   }
   object LoggerOptions {
     
@@ -977,22 +939,21 @@ object mod {
     var start: Number = js.native
   }
   
-  @js.native
   trait QueryOptions extends StObject {
     
-    var fields: js.Any = js.native
+    var fields: js.Any
     
-    var from: js.UndefOr[Date] = js.native
+    var from: js.UndefOr[Date] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[asc | desc] = js.native
+    var order: js.UndefOr[asc | desc] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var until: js.UndefOr[Date] = js.native
+    var until: js.UndefOr[Date] = js.undefined
   }
   object QueryOptions {
     

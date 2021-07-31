@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.valdr.anon.Invalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valdr {
@@ -51,11 +50,11 @@ object valdr {
   
   type ValdrConstraintTypeName = StringDictionary[ValdrConstraintFieldName]
   
-  @js.native
   trait ValdrConstraintValidator
-    extends /* argumentName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* argumentName */ StringDictionary[js.Any] {
     
-    var message: String = js.native
+    var message: String
   }
   object ValdrConstraintValidator {
     
@@ -111,14 +110,13 @@ object valdr {
     def setConstraintUrl(url: String): Unit = js.native
   }
   
-  @js.native
   trait ValdrValidationResult extends StObject {
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var validationResults: js.Array[ValdrViolation] = js.native
+    var validationResults: js.Array[ValdrViolation]
     
-    var violations: js.Array[ValdrViolation] = js.native
+    var violations: js.Array[ValdrViolation]
   }
   object ValdrValidationResult {
     
@@ -166,18 +164,19 @@ object valdr {
     def validate(value: js.Any, validationArguments: StringDictionary[js.Any]): Boolean = js.native
   }
   
-  @js.native
-  trait ValdrViolation extends ValdrConstraintValidator {
+  trait ValdrViolation
+    extends StObject
+       with ValdrConstraintValidator {
     
-    var field: String = js.native
+    var field: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var validator: String = js.native
+    var validator: String
     
-    var value: String = js.native
+    var value: String
   }
   object ValdrViolation {
     

@@ -2,29 +2,27 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to sign in with email.
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest extends StObject {
   
   /**
     * The email address of the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Token for linking flow.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * The confirmation code.
     */
-  var oobCode: js.UndefOr[String] = js.native
+  var oobCode: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartyEmailLinkSigninRequest {
   

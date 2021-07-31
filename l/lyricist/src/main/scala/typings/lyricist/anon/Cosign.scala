@@ -2,17 +2,15 @@ package typings.lyricist.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cosign extends StObject {
   
-  var cosign: Boolean = js.native
+  var cosign: Boolean
   
-  var pyong: Boolean = js.native
+  var pyong: Boolean
   
-  var vote: js.UndefOr[js.Any] = js.native
+  var vote: js.UndefOr[js.Any] = js.undefined
 }
 object Cosign {
   

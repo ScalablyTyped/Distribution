@@ -3,14 +3,12 @@ package typings.googleapis.appengineV1Mod.appengineV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Version resource is a specific set of source code and configuration files
   * that are deployed into a service.
   */
-@js.native
 trait SchemaVersion extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaVersion extends StObject {
     * (https://cloud.google.com/appengine/docs/python/endpoints/).Only returned
     * in GET requests if view=FULL is set.
     */
-  var apiConfig: js.UndefOr[SchemaApiConfigHandler] = js.native
+  var apiConfig: js.UndefOr[SchemaApiConfigHandler] = js.undefined
   
   /**
     * Automatic scaling is based on request rate, response latencies, and other
     * application metrics.
     */
-  var automaticScaling: js.UndefOr[SchemaAutomaticScaling] = js.native
+  var automaticScaling: js.UndefOr[SchemaAutomaticScaling] = js.undefined
   
   /**
     * A service with basic scaling will create an instance when the application
@@ -32,23 +30,23 @@ trait SchemaVersion extends StObject {
     * idle. Basic scaling is ideal for work that is intermittent or driven by
     * user activity.
     */
-  var basicScaling: js.UndefOr[SchemaBasicScaling] = js.native
+  var basicScaling: js.UndefOr[SchemaBasicScaling] = js.undefined
   
   /**
     * Metadata settings that are supplied to this version to enable beta
     * runtime features.
     */
-  var betaSettings: js.UndefOr[StringDictionary[String]] = js.native
+  var betaSettings: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Time that this version was created.@OutputOnly
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Email address of the user who created this version.@OutputOnly
     */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /**
     * Duration that static files should be cached by web proxies and browsers.
@@ -57,48 +55,48 @@ trait SchemaVersion extends StObject {
     * does not specify its own expiration time.Only returned in GET requests if
     * view=FULL is set.
     */
-  var defaultExpiration: js.UndefOr[String] = js.native
+  var defaultExpiration: js.UndefOr[String] = js.undefined
   
   /**
     * Code and application artifacts that make up this version.Only returned in
     * GET requests if view=FULL is set.
     */
-  var deployment: js.UndefOr[SchemaDeployment] = js.native
+  var deployment: js.UndefOr[SchemaDeployment] = js.undefined
   
   /**
     * Total size in bytes of all the files that are included in this version
     * and currently hosted on the App Engine disk.@OutputOnly
     */
-  var diskUsageBytes: js.UndefOr[String] = js.native
+  var diskUsageBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud Endpoints configuration.If endpoints_api_service is set, the Cloud
     * Endpoints Extensible Service Proxy will be provided to serve the API
     * implemented by the app.
     */
-  var endpointsApiService: js.UndefOr[SchemaEndpointsApiService] = js.native
+  var endpointsApiService: js.UndefOr[SchemaEndpointsApiService] = js.undefined
   
   /**
     * The entrypoint for the application.
     */
-  var entrypoint: js.UndefOr[SchemaEntrypoint] = js.native
+  var entrypoint: js.UndefOr[SchemaEntrypoint] = js.undefined
   
   /**
     * App Engine execution environment for this version.Defaults to standard.
     */
-  var env: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.undefined
   
   /**
     * Environment variables available to the application.Only returned in GET
     * requests if view=FULL is set.
     */
-  var envVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var envVariables: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Custom static error pages. Limited to 10KB per page.Only returned in GET
     * requests if view=FULL is set.
     */
-  var errorHandlers: js.UndefOr[js.Array[SchemaErrorHandler]] = js.native
+  var errorHandlers: js.UndefOr[js.Array[SchemaErrorHandler]] = js.undefined
   
   /**
     * An ordered list of URL-matching patterns that should be applied to
@@ -106,14 +104,14 @@ trait SchemaVersion extends StObject {
     * request handlers are not attempted.Only returned in GET requests if
     * view=FULL is set.
     */
-  var handlers: js.UndefOr[js.Array[SchemaUrlMap]] = js.native
+  var handlers: js.UndefOr[js.Array[SchemaUrlMap]] = js.undefined
   
   /**
     * Configures health checking for instances. Unhealthy instances are stopped
     * and replaced with new instances. Only applicable in the App Engine
     * flexible environment.Only returned in GET requests if view=FULL is set.
     */
-  var healthCheck: js.UndefOr[SchemaHealthCheck] = js.native
+  var healthCheck: js.UndefOr[SchemaHealthCheck] = js.undefined
   
   /**
     * Relative name of the version within the service. Example: v1. Version
@@ -121,13 +119,13 @@ trait SchemaVersion extends StObject {
     * names: &quot;default&quot;, &quot;latest&quot;, and any name with the
     * prefix &quot;ah-&quot;.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Before an application can receive email or XMPP messages, the application
     * must be configured to enable the service.
     */
-  var inboundServices: js.UndefOr[js.Array[String]] = js.native
+  var inboundServices: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Instance class that is used to run this version. Valid values are:
@@ -135,115 +133,115 @@ trait SchemaVersion extends StObject {
     * B2, B4, B8, B4_1GDefaults to F1 for AutomaticScaling and B1 for
     * ManualScaling or BasicScaling.
     */
-  var instanceClass: js.UndefOr[String] = js.native
+  var instanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration for third-party Python runtime libraries that are required
     * by the application.Only returned in GET requests if view=FULL is set.
     */
-  var libraries: js.UndefOr[js.Array[SchemaLibrary]] = js.native
+  var libraries: js.UndefOr[js.Array[SchemaLibrary]] = js.undefined
   
   /**
     * Configures liveness health checking for instances. Unhealthy instances
     * are stopped and replaced with new instancesOnly returned in GET requests
     * if view=FULL is set.
     */
-  var livenessCheck: js.UndefOr[SchemaLivenessCheck] = js.native
+  var livenessCheck: js.UndefOr[SchemaLivenessCheck] = js.undefined
   
   /**
     * A service with manual scaling runs continuously, allowing you to perform
     * complex initialization and rely on the state of its memory over time.
     */
-  var manualScaling: js.UndefOr[SchemaManualScaling] = js.native
+  var manualScaling: js.UndefOr[SchemaManualScaling] = js.undefined
   
   /**
     * Full path to the Version resource in the API. Example:
     * apps/myapp/services/default/versions/v1.@OutputOnly
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Extra network settings. Only applicable in the App Engine flexible
     * environment.
     */
-  var network: js.UndefOr[SchemaNetwork] = js.native
+  var network: js.UndefOr[SchemaNetwork] = js.undefined
   
   /**
     * Files that match this pattern will not be built into this version. Only
     * applicable for Go runtimes.Only returned in GET requests if view=FULL is
     * set.
     */
-  var nobuildFilesRegex: js.UndefOr[String] = js.native
+  var nobuildFilesRegex: js.UndefOr[String] = js.undefined
   
   /**
     * Configures readiness health checking for instances. Unhealthy instances
     * are not put into the backend traffic rotation.Only returned in GET
     * requests if view=FULL is set.
     */
-  var readinessCheck: js.UndefOr[SchemaReadinessCheck] = js.native
+  var readinessCheck: js.UndefOr[SchemaReadinessCheck] = js.undefined
   
   /**
     * Machine resources for this version. Only applicable in the App Engine
     * flexible environment.
     */
-  var resources: js.UndefOr[SchemaResources] = js.native
+  var resources: js.UndefOr[SchemaResources] = js.undefined
   
   /**
     * Desired runtime. Example: python27.
     */
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the API in the given runtime environment. Please see the
     * app.yaml reference for valid values at
     * https://cloud.google.com/appengine/docs/standard/&lt;language&gt;/config/appref
     */
-  var runtimeApiVersion: js.UndefOr[String] = js.native
+  var runtimeApiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The channel of the runtime to use. Only available for some runtimes.
     * Defaults to the default channel.
     */
-  var runtimeChannel: js.UndefOr[String] = js.native
+  var runtimeChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The path or name of the app&#39;s main executable.
     */
-  var runtimeMainExecutablePath: js.UndefOr[String] = js.native
+  var runtimeMainExecutablePath: js.UndefOr[String] = js.undefined
   
   /**
     * Current serving status of this version. Only the versions with a SERVING
     * status create instances and can be billed.SERVING_STATUS_UNSPECIFIED is
     * an invalid value. Defaults to SERVING.
     */
-  var servingStatus: js.UndefOr[String] = js.native
+  var servingStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Whether multiple requests can be dispatched to this version at once.
     */
-  var threadsafe: js.UndefOr[Boolean] = js.native
+  var threadsafe: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Serving URL for this version. Example:
     * &quot;https://myversion-dot-myservice-dot-myapp.appspot.com&quot;@OutputOnly
     */
-  var versionUrl: js.UndefOr[String] = js.native
+  var versionUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to deploy this version in a container on a virtual machine.
     */
-  var vm: js.UndefOr[Boolean] = js.native
+  var vm: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables VPC connectivity for standard apps.
     */
-  var vpcAccessConnector: js.UndefOr[SchemaVpcAccessConnector] = js.native
+  var vpcAccessConnector: js.UndefOr[SchemaVpcAccessConnector] = js.undefined
   
   /**
     * The Google Compute Engine zones that are supported by this version in the
     * App Engine flexible environment. Deprecated.
     */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaVersion {
   

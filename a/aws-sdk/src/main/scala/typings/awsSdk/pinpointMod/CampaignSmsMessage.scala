@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignSmsMessage extends StObject {
   
   /**
     * The body of the SMS message.
     */
-  var Body: js.UndefOr[string] = js.native
+  var Body: js.UndefOr[string] = js.undefined
   
   /**
     * The SMS message type. Valid values are TRANSACTIONAL (for messages that are critical or time-sensitive, such as a one-time passwords) and PROMOTIONAL (for messsages that aren't critical or time-sensitive, such as marketing messages).
     */
-  var MessageType: js.UndefOr[typings.awsSdk.pinpointMod.MessageType] = js.native
+  var MessageType: js.UndefOr[typings.awsSdk.pinpointMod.MessageType] = js.undefined
   
   /**
     * The sender ID to display on recipients' devices when they receive the SMS message.
     */
-  var SenderId: js.UndefOr[string] = js.native
+  var SenderId: js.UndefOr[string] = js.undefined
 }
 object CampaignSmsMessage {
   

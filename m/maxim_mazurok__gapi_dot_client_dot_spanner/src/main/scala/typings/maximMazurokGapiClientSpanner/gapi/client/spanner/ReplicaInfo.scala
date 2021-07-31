@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicaInfo extends StObject {
   
   /**
     * If true, this location is designated as the default leader location where leader replicas are placed. See the [region types
     * documentation](https://cloud.google.com/spanner/docs/instances#region_types) for more details.
     */
-  var defaultLeaderLocation: js.UndefOr[Boolean] = js.native
+  var defaultLeaderLocation: js.UndefOr[Boolean] = js.undefined
   
   /** The location of the serving resources, e.g. "us-central1". */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The type of replica. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ReplicaInfo {
   

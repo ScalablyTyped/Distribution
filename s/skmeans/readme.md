@@ -11,8 +11,8 @@ Super fast simple k-means and k-means++ clustering for unidimiensional and multi
 | Full name          | skmeans |
 | Keywords           | math, k-means, k-means++, kmeans++, kmeans, simple, cluster, fast, unidimiensional, multidimensional |
 | # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 3045023 |
+| # dependents       | 4 |
+| # downloads        | 3963410 |
 | # stars            | 1 |
 
 ## Links

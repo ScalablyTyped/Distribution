@@ -3,17 +3,17 @@ package typings.reactNativeGoby.mod
 import typings.reactNativeGoby.mod.Goby.CheckFrequency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GobyOptions extends SyncOptions {
+trait GobyOptions
+  extends StObject
+     with SyncOptions {
   
   /**
     * Specifies when you would like to synchronize updates with the Goby server.
     * Defaults to goby.CheckFrequency.ON_APP_START.
     */
-  var checkFrequency: CheckFrequency = js.native
+  var checkFrequency: CheckFrequency
 }
 object GobyOptions {
   

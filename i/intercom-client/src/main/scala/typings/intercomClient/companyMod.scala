@@ -7,52 +7,50 @@ import typings.intercomClient.intercomClientStrings.company
 import typings.intercomClient.intercomClientStrings.companyDotlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object companyMod {
   
-  @js.native
   trait Company extends StObject {
     
-    val app_id: js.UndefOr[String] = js.native
+    val app_id: js.UndefOr[String] = js.undefined
     
-    var company_id: js.UndefOr[String] = js.native
+    var company_id: js.UndefOr[String] = js.undefined
     
-    val created_at: Double = js.native
+    val created_at: Double
     
-    var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
-    var industry: js.UndefOr[String] = js.native
+    var industry: js.UndefOr[String] = js.undefined
     
-    var monthly_spend: js.UndefOr[Double] = js.native
+    var monthly_spend: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var plan: js.UndefOr[String | Name] = js.native
+    var plan: js.UndefOr[String | Name] = js.undefined
     
-    var remote_created_at: js.UndefOr[Double] = js.native
+    var remote_created_at: js.UndefOr[Double] = js.undefined
     
-    var session_count: js.UndefOr[Double] = js.native
+    var session_count: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    val `type`: company = js.native
+    val `type`: company
     
-    val updated_at: Double = js.native
+    val updated_at: Double
     
-    var user_count: js.UndefOr[Double] = js.native
+    var user_count: js.UndefOr[Double] = js.undefined
     
-    var website: js.UndefOr[String] = js.native
+    var website: js.UndefOr[String] = js.undefined
   }
   object Company {
     
     @scala.inline
-    def apply(created_at: Double, id: String, `type`: company, updated_at: Double): Company = {
+    def apply(created_at: Double, id: String, updated_at: Double): Company = {
       val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("company")
       __obj.asInstanceOf[Company]
     }
     
@@ -165,28 +163,22 @@ object companyMod {
     }
   }
   
-  @js.native
   trait List extends StObject {
     
-    var companies: js.Array[Company with CompanyIdentifier] = js.native
+    var companies: js.Array[Company & CompanyIdentifier]
     
-    var pages: Next = js.native
+    var pages: Next
     
-    var total_count: Double = js.native
+    var total_count: Double
     
-    var `type`: companyDotlist = js.native
+    var `type`: companyDotlist
   }
   object List {
     
     @scala.inline
-    def apply(
-      companies: js.Array[Company with CompanyIdentifier],
-      pages: Next,
-      total_count: Double,
-      `type`: companyDotlist
-    ): List = {
+    def apply(companies: js.Array[Company & CompanyIdentifier], pages: Next, total_count: Double): List = {
       val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("company.list")
       __obj.asInstanceOf[List]
     }
     
@@ -194,10 +186,10 @@ object companyMod {
     implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCompanies(value: js.Array[Company with CompanyIdentifier]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+      def setCompanies(value: js.Array[Company & CompanyIdentifier]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCompaniesVarargs(value: (Company with CompanyIdentifier)*): Self = StObject.set(x, "companies", js.Array(value :_*))
+      def setCompaniesVarargs(value: (Company & CompanyIdentifier)*): Self = StObject.set(x, "companies", js.Array(value :_*))
       
       @scala.inline
       def setPages(value: Next): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])

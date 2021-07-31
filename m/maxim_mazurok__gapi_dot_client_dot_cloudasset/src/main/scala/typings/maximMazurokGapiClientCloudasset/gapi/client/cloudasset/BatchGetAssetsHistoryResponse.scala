@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetAssetsHistoryResponse extends StObject {
   
   /** A list of assets with valid time windows. */
-  var assets: js.UndefOr[js.Array[TemporalAsset]] = js.native
+  var assets: js.UndefOr[js.Array[TemporalAsset]] = js.undefined
 }
 object BatchGetAssetsHistoryResponse {
   

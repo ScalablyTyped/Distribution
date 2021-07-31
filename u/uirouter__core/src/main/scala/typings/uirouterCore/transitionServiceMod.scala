@@ -23,7 +23,6 @@ import typings.uirouterCore.transitionTransitionMod.Transition
 import typings.uirouterCore.viewViewMod.ViewService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionServiceMod {
@@ -35,7 +34,8 @@ object transitionServiceMod {
   @JSImport("@uirouter/core/lib/transition/transitionService", "TransitionService")
   @js.native
   class TransitionService protected ()
-    extends IHookRegistry
+    extends StObject
+       with IHookRegistry
        with Disposable {
     /** @internal */
     def this(_router: UIRouter) = this()
@@ -60,72 +60,6 @@ object transitionServiceMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler,
-      synchronous: Boolean
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      synchronous: Boolean
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler,
-      synchronous: Boolean
-    ): Unit = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
       reverseSort: Boolean
     ): Unit = js.native
     def _defineEvent(
@@ -134,8 +68,8 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
       synchronous: Boolean
     ): Unit = js.native
     def _defineEvent(
@@ -144,7 +78,7 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
     ): Unit = js.native
     def _defineEvent(
@@ -153,7 +87,7 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
     ): Unit = js.native
@@ -172,7 +106,7 @@ object transitionServiceMod {
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: Unit,
       synchronous: Boolean
     ): Unit = js.native
     def _defineEvent(
@@ -190,6 +124,72 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: Unit,
+      synchronous: Boolean
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler
+    ): Unit = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       synchronous: Boolean
@@ -301,72 +301,6 @@ object transitionServiceMod {
       hookPhase: TransitionHookPhase,
       hookOrder: Double,
       criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      rejectIfSuperseded: Boolean
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: GetErrorHandler,
-      rejectIfSuperseded: Boolean
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
-      rejectIfSuperseded: Boolean
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
-      reverseSort: js.UndefOr[scala.Nothing],
-      getResultHandler: GetResultHandler,
-      getErrorHandler: GetErrorHandler,
-      rejectIfSuperseded: Boolean
-    ): js.Any = js.native
-    def _defineEvent(
-      name: String,
-      hookPhase: TransitionHookPhase,
-      hookOrder: Double,
-      criteriaMatchPath: PathType,
       reverseSort: Boolean
     ): js.Any = js.native
     def _defineEvent(
@@ -375,8 +309,8 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
     ): js.Any = js.native
     def _defineEvent(
@@ -385,7 +319,7 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler
     ): js.Any = js.native
     def _defineEvent(
@@ -394,7 +328,7 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
-      getResultHandler: js.UndefOr[scala.Nothing],
+      getResultHandler: Unit,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean
     ): js.Any = js.native
@@ -413,7 +347,7 @@ object transitionServiceMod {
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
       getResultHandler: GetResultHandler,
-      getErrorHandler: js.UndefOr[scala.Nothing],
+      getErrorHandler: Unit,
       rejectIfSuperseded: Boolean
     ): js.Any = js.native
     def _defineEvent(
@@ -431,6 +365,72 @@ object transitionServiceMod {
       hookOrder: Double,
       criteriaMatchPath: PathType,
       reverseSort: Boolean,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: Unit,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: Unit,
+      getErrorHandler: GetErrorHandler,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: Unit,
+      rejectIfSuperseded: Boolean
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
+      getResultHandler: GetResultHandler,
+      getErrorHandler: GetErrorHandler
+    ): js.Any = js.native
+    def _defineEvent(
+      name: String,
+      hookPhase: TransitionHookPhase,
+      hookOrder: Double,
+      criteriaMatchPath: PathType,
+      reverseSort: Unit,
       getResultHandler: GetResultHandler,
       getErrorHandler: GetErrorHandler,
       rejectIfSuperseded: Boolean

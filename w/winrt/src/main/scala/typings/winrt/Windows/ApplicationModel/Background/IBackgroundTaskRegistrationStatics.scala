@@ -3,13 +3,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTaskRegistrationStatics extends StObject {
   
-  var allTasks: IMapView[String, IBackgroundTaskRegistration] = js.native
+  var allTasks: IMapView[String, IBackgroundTaskRegistration]
 }
 object IBackgroundTaskRegistrationStatics {
   

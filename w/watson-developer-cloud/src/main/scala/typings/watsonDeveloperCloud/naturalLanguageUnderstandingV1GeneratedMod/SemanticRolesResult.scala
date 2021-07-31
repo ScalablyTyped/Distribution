@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The object containing the actions and the objects the actions act upon. */
-@js.native
 trait SemanticRolesResult extends StObject {
   
   /** The extracted action from the sentence. */
-  var action: js.UndefOr[SemanticRolesResultAction] = js.native
+  var action: js.UndefOr[SemanticRolesResultAction] = js.undefined
   
   /** The extracted object from the sentence. */
-  var `object`: js.UndefOr[SemanticRolesResultObject] = js.native
+  var `object`: js.UndefOr[SemanticRolesResultObject] = js.undefined
   
   /** Sentence from the source that contains the subject, action, and object. */
-  var sentence: js.UndefOr[String] = js.native
+  var sentence: js.UndefOr[String] = js.undefined
   
   /** The extracted subject from the sentence. */
-  var subject: js.UndefOr[SemanticRolesResultSubject] = js.native
+  var subject: js.UndefOr[SemanticRolesResultSubject] = js.undefined
 }
 object SemanticRolesResult {
   

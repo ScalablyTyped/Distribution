@@ -3,50 +3,48 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /** [Beta] Clustering specification for the table. Must be specified with partitioning, data in the table will be first partitioned and subsequently clustered. */
-  var clustering: js.UndefOr[Clustering] = js.native
+  var clustering: js.UndefOr[Clustering] = js.undefined
   
   /** [Output-only] The time when this table was created, in milliseconds since the epoch. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** [Optional] A user-friendly description of this table. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Custom encryption configuration (e.g., Cloud KMS keys). */
-  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.native
+  var encryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
   
   /**
     * [Output-only] A hash of the table metadata. Used to ensure there were no concurrent modifications to the resource when attempting an update. Not guaranteed to change when the table
     * contents or the fields numRows, numBytes, numLongTermBytes or lastModifiedTime change.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage
     * reclaimed. The defaultTableExpirationMs property of the encapsulating dataset can be used to set a default expirationTime on newly created tables.
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Describes the data format, location, and other properties of a table stored outside of BigQuery. By defining these properties, the data source can then be queried as if
     * it were a standard BigQuery table.
     */
-  var externalDataConfiguration: js.UndefOr[ExternalDataConfiguration] = js.native
+  var externalDataConfiguration: js.UndefOr[ExternalDataConfiguration] = js.undefined
   
   /** [Optional] A descriptive name for this table. */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /** [Output-only] An opaque ID uniquely identifying the table. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The type of the resource. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this table. You can use these to organize and group your tables. Label keys and values can be no longer than 63 characters, can only contain lowercase
@@ -56,69 +54,69 @@ trait Table extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[js.Any]
+  ] = js.undefined
   
   /** [Output-only] The time when this table was last modified, in milliseconds since the epoch. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The geographic location where the table resides. This value is inherited from the dataset. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** [Optional] Materialized view definition. */
-  var materializedView: js.UndefOr[MaterializedViewDefinition] = js.native
+  var materializedView: js.UndefOr[MaterializedViewDefinition] = js.undefined
   
   /** [Output-only, Beta] Present iff this table represents a ML model. Describes the training information for the model, and it is required to run 'PREDICT' queries. */
-  var model: js.UndefOr[ModelDefinition] = js.native
+  var model: js.UndefOr[ModelDefinition] = js.undefined
   
   /** [Output-only] The size of this table in bytes, excluding any data in the streaming buffer. */
-  var numBytes: js.UndefOr[String] = js.native
+  var numBytes: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The number of bytes in the table that are considered "long-term storage". */
-  var numLongTermBytes: js.UndefOr[String] = js.native
+  var numLongTermBytes: js.UndefOr[String] = js.undefined
   
   /** [Output-only] [TrustedTester] The physical size of this table in bytes, excluding any data in the streaming buffer. This includes compression and storage used for time travel. */
-  var numPhysicalBytes: js.UndefOr[String] = js.native
+  var numPhysicalBytes: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The number of rows of data in this table, excluding any data in the streaming buffer. */
-  var numRows: js.UndefOr[String] = js.native
+  var numRows: js.UndefOr[String] = js.undefined
   
   /** [TrustedTester] Range partitioning specification for this table. Only one of timePartitioning and rangePartitioning should be specified. */
-  var rangePartitioning: js.UndefOr[RangePartitioning] = js.native
+  var rangePartitioning: js.UndefOr[RangePartitioning] = js.undefined
   
   /** [Optional] If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. */
-  var requirePartitionFilter: js.UndefOr[Boolean] = js.native
+  var requirePartitionFilter: js.UndefOr[Boolean] = js.undefined
   
   /** [Optional] Describes the schema of this table. */
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
   /** [Output-only] A URL that can be used to access this resource again. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Snapshot definition. */
-  var snapshotDefinition: js.UndefOr[SnapshotDefinition] = js.native
+  var snapshotDefinition: js.UndefOr[SnapshotDefinition] = js.undefined
   
   /**
     * [Output-only] Contains information regarding this table's streaming buffer, if one is present. This field will be absent if the table is not being streamed to or if there is no data
     * in the streaming buffer.
     */
-  var streamingBuffer: js.UndefOr[Streamingbuffer] = js.native
+  var streamingBuffer: js.UndefOr[Streamingbuffer] = js.undefined
   
   /** [Required] Reference describing the ID of this table. */
-  var tableReference: js.UndefOr[TableReference] = js.native
+  var tableReference: js.UndefOr[TableReference] = js.undefined
   
   /** Time-based partitioning specification for this table. Only one of timePartitioning and rangePartitioning should be specified. */
-  var timePartitioning: js.UndefOr[TimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
   /**
     * [Output-only] Describes the table type. The following values are supported: TABLE: A normal BigQuery table. VIEW: A virtual table defined by a SQL query. SNAPSHOT: An immutable,
     * read-only table that is a copy of another table. [TrustedTester] MATERIALIZED_VIEW: SQL query whose result is persisted. EXTERNAL: A table that references data stored in an external
     * storage system, such as Google Cloud Storage. The default value is TABLE.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** [Optional] The view definition. */
-  var view: js.UndefOr[ViewDefinition] = js.native
+  var view: js.UndefOr[ViewDefinition] = js.undefined
 }
 object Table {
   
@@ -195,7 +193,7 @@ object Table {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.Table & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

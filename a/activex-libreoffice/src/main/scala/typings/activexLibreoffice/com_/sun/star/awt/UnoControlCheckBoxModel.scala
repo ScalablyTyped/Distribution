@@ -16,12 +16,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the standard model of an {@link UnoControlCheckBox} . */
-@js.native
-trait UnoControlCheckBoxModel extends UnoControlModel {
+trait UnoControlCheckBoxModel
+  extends StObject
+     with UnoControlModel {
   
   /**
     * specifies the horizontal alignment of the text in the control.
@@ -29,22 +29,22 @@ trait UnoControlCheckBoxModel extends UnoControlModel {
     * `; 0: left; 1: center; 2: right; `
     * @since OOo 2.0
     */
-  var Align: Double = js.native
+  var Align: Double
   
   /** specifies the background color (RGB) of the control. */
-  var BackgroundColor: Double = js.native
+  var BackgroundColor: Double
   
   /** determines whether the control is enabled or disabled. */
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   /** specifies the font attributes of the text in the control. */
-  var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor = js.native
+  var FontDescriptor: typings.activexLibreoffice.com_.sun.star.awt.FontDescriptor
   
   /** specifies the {@link com.sun.star.text.FontEmphasis} value of the text in the control. */
-  var FontEmphasisMark: Double = js.native
+  var FontEmphasisMark: Double
   
   /** specifies the {@link com.sun.star.text.FontRelief} value of the text in the control. */
-  var FontRelief: Double = js.native
+  var FontRelief: Double
   
   /**
     * specifies a graphic to be displayed besides the label of the control
@@ -54,63 +54,63 @@ trait UnoControlCheckBoxModel extends UnoControlModel {
     * ImageURL} will be reset to an empty string.
     * @since OOo 2.1
     */
-  var Graphic: XGraphic = js.native
+  var Graphic: XGraphic
   
   /** specifies the help text of the control. */
-  var HelpText: String = js.native
+  var HelpText: String
   
   /** specifies the help URL of the control. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * specifies the position of the image, if any, relative to the text, if any
     *
     * Valid values of this property are specified with {@link ImagePosition} .
     */
-  var ImagePosition: Double = js.native
+  var ImagePosition: Double
   
   /**
     * specifies an URL to an image to display besides the label of the control
     * @see Graphic
     */
-  var ImageURL: String = js.native
+  var ImageURL: String
   
   /** specifies the label of the control. */
-  var Label: String = js.native
+  var Label: String
   
   /**
     * specifies that the text may be displayed on more than one line.
     * @since OOo 2.0
     */
-  var MultiLine: Boolean = js.native
+  var MultiLine: Boolean
   
   /** specifies that the control will be printed with the document. */
-  var Printable: Boolean = js.native
+  var Printable: Boolean
   
   /**
     * specifies the state of the control.
     *
     * `; 0: not checked; 1: checked; 2: don't know; `
     */
-  var State: Double = js.native
+  var State: Double
   
   /** specifies that the control can be reached with the TAB key. */
-  var Tabstop: Boolean = js.native
+  var Tabstop: Boolean
   
   /** specifies the text color (RGB) of the control. */
-  var TextColor: Color = js.native
+  var TextColor: Color
   
   /** specifies the text line color (RGB) of the control. */
-  var TextLineColor: Color = js.native
+  var TextLineColor: Color
   
   /** specifies that the control may have the state "don't know". */
-  var TriState: Boolean = js.native
+  var TriState: Boolean
   
   /**
     * specifies the vertical alignment of the text in the control.
     * @since OOo 2.0
     */
-  var VerticalAlign: VerticalAlignment = js.native
+  var VerticalAlign: VerticalAlignment
   
   /**
     * specifies a visual effect to apply to the check box control
@@ -119,7 +119,7 @@ trait UnoControlCheckBoxModel extends UnoControlModel {
     * @see com.sun.star.awt.VisualEffect
     * @since OOo 2.0
     */
-  var VisualEffect: Double = js.native
+  var VisualEffect: Double
   
   /**
     * denotes the writing mode used in the control, as specified in the {@link com.sun.star.text.WritingMode2} constants group.
@@ -127,7 +127,14 @@ trait UnoControlCheckBoxModel extends UnoControlModel {
     * Only {@link com.sun.star.text.WritingMode2.LR_TB} and {@link com.sun.star.text.WritingMode2.RL_TB} are supported at the moment.
     * @since OOo 3.1
     */
-  var WritingMode: Double = js.native
+  var WritingMode: Double
+  
+  /**
+    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+    * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+    */
+  /* InferMemberOverrides */
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object UnoControlCheckBoxModel {
   
@@ -176,7 +183,7 @@ object UnoControlCheckBoxModel {
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     getServiceName: () => String,
     queryInterface: `type` => js.Any,
     read: XObjectInputStream => Unit,
@@ -186,7 +193,7 @@ object UnoControlCheckBoxModel {
     removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
     write: XObjectOutputStream => Unit
   ): UnoControlCheckBoxModel = {
     val __obj = js.Dynamic.literal(Align = Align.asInstanceOf[js.Any], BackgroundColor = BackgroundColor.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], FontDescriptor = FontDescriptor.asInstanceOf[js.Any], FontEmphasisMark = FontEmphasisMark.asInstanceOf[js.Any], FontRelief = FontRelief.asInstanceOf[js.Any], Graphic = Graphic.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], HelpText = HelpText.asInstanceOf[js.Any], HelpURL = HelpURL.asInstanceOf[js.Any], ImagePosition = ImagePosition.asInstanceOf[js.Any], ImageURL = ImageURL.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any], MultiLine = MultiLine.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], Printable = Printable.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], State = State.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tabstop = Tabstop.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], TextColor = TextColor.asInstanceOf[js.Any], TextLineColor = TextLineColor.asInstanceOf[js.Any], TriState = TriState.asInstanceOf[js.Any], VerticalAlign = VerticalAlign.asInstanceOf[js.Any], VisualEffect = VisualEffect.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], WritingMode = WritingMode.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -213,6 +220,9 @@ object UnoControlCheckBoxModel {
     
     @scala.inline
     def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGraphic(value: XGraphic): Self = StObject.set(x, "Graphic", value.asInstanceOf[js.Any])

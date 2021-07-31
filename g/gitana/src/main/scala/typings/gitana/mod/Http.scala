@@ -2,7 +2,6 @@ package typings.gitana.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitana", "Http")
@@ -16,48 +15,43 @@ class Http protected () extends StObject {
 }
 object Http {
   
-  /* static member */
-  @JSImport("gitana", "Http.Request")
+  @JSImport("gitana", "Http")
   @js.native
-  def Request(): js.Any = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("gitana", "Http.URLDecode")
-  @js.native
-  def URLDecode(string: js.Any): js.Any = js.native
+  @scala.inline
+  def Request(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Request")().asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.URLEncode")
-  @js.native
-  def URLEncode(string: js.Any): js.Any = js.native
+  @scala.inline
+  def URLDecode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("URLDecode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.extend")
-  @js.native
-  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def URLEncode(string: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("URLEncode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.forEach")
-  @js.native
-  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = js.native
+  @scala.inline
+  def extend(_instance: js.Any, _static: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(_instance.asInstanceOf[js.Any], _static.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.implement")
-  @js.native
-  def implement(args: js.Any*): js.Any = js.native
+  @scala.inline
+  def forEach(`object`: js.Any, block: js.Any, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(`object`.asInstanceOf[js.Any], block.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("gitana", "Http.toQueryString")
-  @js.native
-  def toQueryString(params: js.Any): js.Any = js.native
+  @scala.inline
+  def implement(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("implement")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.toString")
-  @js.native
-  def toString_(): js.Any = js.native
+  @scala.inline
+  def toQueryString(params: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toQueryString")(params.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("gitana", "Http.valueOf")
-  @js.native
-  def valueOf_(`type`: js.Any): js.Any = js.native
+  @scala.inline
+  def toString_(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[js.Any]
+  
+  /* static member */
+  @scala.inline
+  def valueOf_(`type`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

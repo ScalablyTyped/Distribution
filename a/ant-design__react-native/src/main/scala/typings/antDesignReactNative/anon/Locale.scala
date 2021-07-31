@@ -3,13 +3,11 @@ package typings.antDesignReactNative.anon
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locale extends StObject {
   
-  var locale: Requireable[js.Object] = js.native
+  var locale: Requireable[js.Object]
 }
 object Locale {
   

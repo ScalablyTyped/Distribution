@@ -2,23 +2,21 @@ package typings.webpackBlocksUglify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: js.Any = js.native
+    var code: js.Any
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var extractedComments: js.Any = js.native
+    var extractedComments: js.Any
     
-    var map: js.Any = js.native
+    var map: js.Any
     
-    var warnings: js.Any = js.native
+    var warnings: js.Any
   }
   object Code {
     

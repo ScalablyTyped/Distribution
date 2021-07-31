@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVaultNotificationsOutput extends StObject {
   
   /**
     * Returns the notification configuration set on the vault.
     */
-  var vaultNotificationConfig: js.UndefOr[VaultNotificationConfig] = js.native
+  var vaultNotificationConfig: js.UndefOr[VaultNotificationConfig] = js.undefined
 }
 object GetVaultNotificationsOutput {
   

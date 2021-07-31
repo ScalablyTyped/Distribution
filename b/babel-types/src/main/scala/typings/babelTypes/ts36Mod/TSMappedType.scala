@@ -2,24 +2,23 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSMappedType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSType | Null = js.native
+  var typeAnnotation: TSType | Null
   
-  var typeParameter: TypeParameter_ = js.native
+  var typeParameter: TypeParameter_
   
   @JSName("type")
-  var type_TSMappedType: typings.babelTypes.babelTypesStrings.TSMappedType = js.native
+  var type_TSMappedType: typings.babelTypes.babelTypesStrings.TSMappedType
 }
 object TSMappedType {
   

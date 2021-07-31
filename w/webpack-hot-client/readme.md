@@ -10,9 +10,9 @@ A client for enabling, and interacting with, webpack Hot Module Replacement
 | ------------------ | :-------------: |
 | Full name          | webpack-hot-client |
 | Keywords           | webpack |
-| # releases         | 3 |
-| # dependents       | 60 |
-| # downloads        | 2653136 |
+| # releases         | 2 |
+| # dependents       | 59 |
+| # downloads        | 2452792 |
 | # stars            | 0 |
 
 ## Links

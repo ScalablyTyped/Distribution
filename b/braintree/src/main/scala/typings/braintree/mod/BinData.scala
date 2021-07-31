@@ -2,29 +2,27 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinData extends StObject {
   
-  var commercial: js.UndefOr[Commercial] = js.native
+  var commercial: js.UndefOr[Commercial] = js.undefined
   
-  var countryOfIssuance: js.UndefOr[String] = js.native
+  var countryOfIssuance: js.UndefOr[String] = js.undefined
   
-  var debit: js.UndefOr[Debit] = js.native
+  var debit: js.UndefOr[Debit] = js.undefined
   
-  var durbinRegulated: js.UndefOr[DurbinRegulated] = js.native
+  var durbinRegulated: js.UndefOr[DurbinRegulated] = js.undefined
   
-  var healthcare: js.UndefOr[HealthCare] = js.native
+  var healthcare: js.UndefOr[HealthCare] = js.undefined
   
-  var issuingBank: js.UndefOr[String] = js.native
+  var issuingBank: js.UndefOr[String] = js.undefined
   
-  var payroll: js.UndefOr[Payroll] = js.native
+  var payroll: js.UndefOr[Payroll] = js.undefined
   
-  var prepaid: js.UndefOr[Prepaid] = js.native
+  var prepaid: js.UndefOr[Prepaid] = js.undefined
   
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object BinData {
   

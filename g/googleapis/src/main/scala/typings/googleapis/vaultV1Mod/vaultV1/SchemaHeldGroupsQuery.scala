@@ -2,31 +2,29 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Query options for group holds.
   */
-@js.native
 trait SchemaHeldGroupsQuery extends StObject {
   
   /**
     * The end time range for the search query. These timestamps are in GMT and
     * rounded down to the start of the given date.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The start time range for the search query. These timestamps are in GMT
     * and rounded down to the start of the given date.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The search terms for the hold.
     */
-  var terms: js.UndefOr[String] = js.native
+  var terms: js.UndefOr[String] = js.undefined
 }
 object SchemaHeldGroupsQuery {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCertificateAuthorityRequest extends StObject {
   
   /**
     * Name and bit size of the private key algorithm, the name of the signing algorithm, and X.500 certificate subject information.
     */
-  var CertificateAuthorityConfiguration: typings.awsSdk.acmpcaMod.CertificateAuthorityConfiguration = js.native
+  var CertificateAuthorityConfiguration: typings.awsSdk.acmpcaMod.CertificateAuthorityConfiguration
   
   /**
     * The type of the certificate authority.
     */
-  var CertificateAuthorityType: typings.awsSdk.acmpcaMod.CertificateAuthorityType = js.native
+  var CertificateAuthorityType: typings.awsSdk.acmpcaMod.CertificateAuthorityType
   
   /**
     * Alphanumeric string that can be used to distinguish between calls to CreateCertificateAuthority. For a given token, ACM Private CA creates exactly one CA. If you issue a subsequent call using the same token, ACM Private CA returns the ARN of the existing CA and takes no further action. If you change the idempotency token across multiple calls, ACM Private CA creates a unique CA for each unique token.
     */
-  var IdempotencyToken: js.UndefOr[typings.awsSdk.acmpcaMod.IdempotencyToken] = js.native
+  var IdempotencyToken: js.UndefOr[typings.awsSdk.acmpcaMod.IdempotencyToken] = js.undefined
   
   /**
     * Contains a Boolean value that you can use to enable a certification revocation list (CRL) for the CA, the name of the S3 bucket to which ACM Private CA will write the CRL, and an optional CNAME alias that you can use to hide the name of your bucket in the CRL Distribution Points extension of your CA certificate. For more information, see the CrlConfiguration structure. 
     */
-  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.native
+  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.undefined
   
   /**
     * Key-value pairs that will be attached to the new private CA. You can associate up to 50 tags with a private CA. For information using tags with IAM to manage permissions, see Controlling Access Using IAM Tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCertificateAuthorityRequest {
   

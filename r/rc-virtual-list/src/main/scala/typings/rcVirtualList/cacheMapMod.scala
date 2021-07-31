@@ -4,23 +4,33 @@ import typings.react.mod.ReactText
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMapMod {
   
   @JSImport("rc-virtual-list/es/utils/CacheMap", JSImport.Default)
   @js.native
-  class default () extends CacheMap
-  
-  @js.native
-  trait CacheMap extends StObject {
+  class default ()
+    extends StObject
+       with CacheMap {
     
-    def get(key: ReactText): Double = js.native
+    /* CompleteClass */
+    override def get(key: ReactText): Double = js.native
     
+    /* CompleteClass */
     var maps: Record[String, Double] = js.native
     
-    def set(key: ReactText, value: Double): Unit = js.native
+    /* CompleteClass */
+    override def set(key: ReactText, value: Double): Unit = js.native
+  }
+  
+  trait CacheMap extends StObject {
+    
+    def get(key: ReactText): Double
+    
+    var maps: Record[String, Double]
+    
+    def set(key: ReactText, value: Double): Unit
   }
   object CacheMap {
     

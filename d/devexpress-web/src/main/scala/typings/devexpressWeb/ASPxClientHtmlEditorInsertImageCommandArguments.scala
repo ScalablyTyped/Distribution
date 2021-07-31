@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTIMAGE_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertImageCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorInsertImageCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Determines the position of the target image.
     */
-  var align: String = js.native
+  var align: String
   
   /**
     * Creates an alternate text for the target image.
     */
-  var alt: String = js.native
+  var alt: String
   
   /**
     * Specifies the source of the target image.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * Contains the style settings specifying the appearance of the target image.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   
   /**
     * Determines if the target image is wrapped with text.
     */
-  var useFloat: Boolean = js.native
+  var useFloat: Boolean
 }
 object ASPxClientHtmlEditorInsertImageCommandArguments {
   

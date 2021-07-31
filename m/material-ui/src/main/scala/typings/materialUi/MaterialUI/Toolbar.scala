@@ -9,7 +9,6 @@ import typings.react.mod.Key
 import typings.react.mod.LegacyRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Toolbar {
@@ -18,18 +17,17 @@ object Toolbar {
   
   type ToolbarGroup = Component[ToolbarGroupProps, js.Object, js.Any]
   
-  @js.native
   trait ToolbarGroupProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var firstChild: js.UndefOr[Boolean] = js.native
+    var firstChild: js.UndefOr[Boolean] = js.undefined
     
-    var float: js.UndefOr[left | right] = js.native
+    var float: js.UndefOr[left | right] = js.undefined
     
-    var lastChild: js.UndefOr[Boolean] = js.native
+    var lastChild: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ToolbarGroupProps {
     
@@ -74,14 +72,13 @@ object Toolbar {
     }
   }
   
-  @js.native
   trait ToolbarProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var noGutter: js.UndefOr[Boolean] = js.native
+    var noGutter: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ToolbarProps {
     
@@ -116,12 +113,11 @@ object Toolbar {
   
   type ToolbarSeparator = Component[ToolbarSeparatorProps, js.Object, js.Any]
   
-  @js.native
   trait ToolbarSeparatorProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ToolbarSeparatorProps {
     
@@ -153,15 +149,15 @@ object Toolbar {
     extends Component[ToolbarTitleProps, js.Object, js.Any]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ @js.native
-  trait ToolbarTitleProps
-    extends HTMLAttributes[js.Object] {
+  - typings.react.mod.Props because var conflicts: children. Inlined ref, key */ trait ToolbarTitleProps
+    extends StObject
+       with HTMLAttributes[js.Object] {
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var ref: js.UndefOr[LegacyRef[ToolbarTitle]] = js.native
+    var ref: js.UndefOr[LegacyRef[ToolbarTitle]] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ToolbarTitleProps {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBidMetricsResponse extends StObject {
   
   /** List of rows, each containing a set of bid metrics. */
-  var bidMetricsRows: js.UndefOr[js.Array[BidMetricsRow]] = js.native
+  var bidMetricsRows: js.UndefOr[js.Array[BidMetricsRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the ListBidMetricsRequest.pageToken field in the subsequent call to the bidMetrics.list method to retrieve the next
     * page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListBidMetricsResponse {
   

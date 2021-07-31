@@ -2,41 +2,39 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceNowServiceCatalogConfiguration extends StObject {
   
   /**
     * Indicates whether Amazon Kendra should crawl attachments to the service catalog items. 
     */
-  var CrawlAttachments: js.UndefOr[Boolean] = js.native
+  var CrawlAttachments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the ServiceNow field that is mapped to the index document contents field in the Amazon Kendra index.
     */
-  var DocumentDataFieldName: DataSourceFieldName = js.native
+  var DocumentDataFieldName: DataSourceFieldName
   
   /**
     * The name of the ServiceNow field that is mapped to the index document title field.
     */
-  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
+  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
     * Determines the types of file attachments that are excluded from the index.
     */
-  var ExcludeAttachmentFilePatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
+  var ExcludeAttachmentFilePatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
   
   /**
     * Mapping between ServiceNow fields and Amazon Kendra index fields. You must create the index field before you map the field.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
     * Determines the types of file attachments that are included in the index. 
     */
-  var IncludeAttachmentFilePatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.native
+  var IncludeAttachmentFilePatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
 }
 object ServiceNowServiceCatalogConfiguration {
   

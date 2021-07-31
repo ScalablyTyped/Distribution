@@ -2,13 +2,11 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketEncryptionOutput extends StObject {
   
-  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryptionConfiguration] = js.native
+  var ServerSideEncryptionConfiguration: js.UndefOr[typings.awsSdk.s3Mod.ServerSideEncryptionConfiguration] = js.undefined
 }
 object GetBucketEncryptionOutput {
   

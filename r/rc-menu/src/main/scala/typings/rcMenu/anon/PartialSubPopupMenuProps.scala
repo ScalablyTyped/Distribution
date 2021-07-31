@@ -20,88 +20,86 @@ import typings.react.mod.ReactInstance
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rc-menu.rc-menu/es/SubPopupMenu.SubPopupMenuProps> */
-@js.native
 trait PartialSubPopupMenuProps extends StObject {
   
-  var activeKey: js.UndefOr[String] = js.native
+  var activeKey: js.UndefOr[String] = js.undefined
   
-  var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.native
+  var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var defaultActiveFirst: js.UndefOr[Boolean] = js.native
+  var defaultActiveFirst: js.UndefOr[Boolean] = js.undefined
   
-  var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.native
+  var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.native
+  var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var direction: js.UndefOr[ltr | rtl] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   
-  var eventKey: js.UndefOr[typings.react.mod.Key] = js.native
+  var eventKey: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  var expandIcon: js.UndefOr[RenderIconType] = js.native
+  var expandIcon: js.UndefOr[RenderIconType] = js.undefined
   
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var forceSubMenuRender: js.UndefOr[Boolean] = js.native
+  var forceSubMenuRender: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inlineIndent: js.UndefOr[Double] = js.native
+  var inlineIndent: js.UndefOr[Double] = js.undefined
   
-  var itemIcon: js.UndefOr[RenderIconType] = js.native
+  var itemIcon: js.UndefOr[RenderIconType] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var manualRef: js.UndefOr[LegacyFunctionRef] = js.native
+  var manualRef: js.UndefOr[LegacyFunctionRef] = js.undefined
   
-  var mode: js.UndefOr[MenuMode] = js.native
+  var mode: js.UndefOr[MenuMode] = js.undefined
   
-  var motion: js.UndefOr[CSSMotionProps] = js.native
+  var motion: js.UndefOr[CSSMotionProps] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var onClick: js.UndefOr[MenuClickEventHandler] = js.native
+  var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
   
-  var onDeselect: js.UndefOr[SelectEventHandler] = js.native
+  var onDeselect: js.UndefOr[SelectEventHandler] = js.undefined
   
-  var onDestroy: js.UndefOr[DestroyEventHandler] = js.native
+  var onDestroy: js.UndefOr[DestroyEventHandler] = js.undefined
   
-  var onOpenChange: js.UndefOr[OpenEventHandler] = js.native
+  var onOpenChange: js.UndefOr[OpenEventHandler] = js.undefined
   
-  var onSelect: js.UndefOr[SelectEventHandler] = js.native
+  var onSelect: js.UndefOr[SelectEventHandler] = js.undefined
   
-  var openKeys: js.UndefOr[js.Array[String]] = js.native
+  var openKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var overflowedIndicator: js.UndefOr[ReactNode] = js.native
+  var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
   
-  var parentMenu: js.UndefOr[ReactInstance] = js.native
+  var parentMenu: js.UndefOr[ReactInstance] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var selectedKeys: js.UndefOr[js.Array[String]] = js.native
+  var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var store: js.UndefOr[MiniStore] = js.native
+  var store: js.UndefOr[MiniStore] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var subMenuCloseDelay: js.UndefOr[Double] = js.native
+  var subMenuCloseDelay: js.UndefOr[Double] = js.undefined
   
-  var subMenuOpenDelay: js.UndefOr[Double] = js.native
+  var subMenuOpenDelay: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var triggerSubMenuAction: js.UndefOr[TriggerSubMenuAction] = js.native
+  var triggerSubMenuAction: js.UndefOr[TriggerSubMenuAction] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSubPopupMenuProps {
   

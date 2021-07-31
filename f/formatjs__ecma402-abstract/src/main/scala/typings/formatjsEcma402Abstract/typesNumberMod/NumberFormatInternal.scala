@@ -4,44 +4,44 @@ import typings.formatjsEcma402Abstract.anon.FnCallValue
 import typings.std.Intl.PluralRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberFormatInternal extends NumberFormatDigitInternalSlots {
+trait NumberFormatInternal
+  extends StObject
+     with NumberFormatDigitInternalSlots {
   
-  var boundFormat: js.UndefOr[FnCallValue] = js.native
+  var boundFormat: js.UndefOr[FnCallValue] = js.undefined
   
-  var compactDisplay: NumberFormatOptionsCompactDisplay = js.native
+  var compactDisplay: NumberFormatOptionsCompactDisplay
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var currencyDisplay: NumberFormatOptionsCurrencyDisplay = js.native
+  var currencyDisplay: NumberFormatOptionsCurrencyDisplay
   
-  var currencySign: NumberFormatOptionsCurrencySign = js.native
+  var currencySign: NumberFormatOptionsCurrencySign
   
-  var dataLocale: String = js.native
+  var dataLocale: String
   
-  var dataLocaleData: NumberFormatLocaleInternalData = js.native
+  var dataLocaleData: NumberFormatLocaleInternalData
   
-  var locale: String = js.native
+  var locale: String
   
   @JSName("notation")
-  var notation_NumberFormatInternal: NumberFormatOptionsNotation = js.native
+  var notation_NumberFormatInternal: NumberFormatOptionsNotation
   
-  var numberingSystem: String = js.native
+  var numberingSystem: String
   
-  var pl: PluralRules = js.native
+  var pl: PluralRules
   
-  var signDisplay: NumberFormatOptionsSignDisplay = js.native
+  var signDisplay: NumberFormatOptionsSignDisplay
   
-  var style: NumberFormatOptionsStyle = js.native
+  var style: NumberFormatOptionsStyle
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var unitDisplay: NumberFormatOptionsUnitDisplay = js.native
+  var unitDisplay: NumberFormatOptionsUnitDisplay
   
-  var useGrouping: Boolean = js.native
+  var useGrouping: Boolean
 }
 object NumberFormatInternal {
   

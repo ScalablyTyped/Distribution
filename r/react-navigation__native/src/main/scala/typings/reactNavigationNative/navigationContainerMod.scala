@@ -5,7 +5,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.reactNavigationNative.anon.NavigationContainerPropst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationContainerMod extends Shortcut {

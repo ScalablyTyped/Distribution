@@ -8,7 +8,6 @@ import typings.std.HTMLElement
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
@@ -33,18 +32,17 @@ object pluginsMod {
   @js.native
   class SwapPlugin () extends StObject
   
-  @js.native
   trait AutoScrollOptions extends StObject {
     
     /**
       * apply autoscroll to all parent elements, allowing for easier movement.
       */
-    var bubbleScroll: js.UndefOr[Boolean] = js.native
+    var bubbleScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  Enable the plugin. Can be `HTMLElement`.
       */
-    var scroll: js.UndefOr[Boolean | HTMLElement] = js.native
+    var scroll: js.UndefOr[Boolean | HTMLElement] = js.undefined
     
     /**
       * if you have custom scrollbar scrollFn may be used for autoscrolling.
@@ -59,17 +57,17 @@ object pluginsMod {
           /* hoverTargetEl */ HTMLElement, 
           continue | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * `px`, how near the mouse must be to an edge to start scrolling.
       */
-    var scrollSensitivity: js.UndefOr[Double] = js.native
+    var scrollSensitivity: js.UndefOr[Double] = js.undefined
     
     /**
       * `px`, speed of the scrolling.`
       */
-    var scrollSpeed: js.UndefOr[Double] = js.native
+    var scrollSpeed: js.UndefOr[Double] = js.undefined
   }
   object AutoScrollOptions {
     
@@ -124,35 +122,34 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait MultiDragOptions extends StObject {
     
     /**
       * Enable the plugin
       */
-    var multiDrag: js.UndefOr[Boolean] = js.native
+    var multiDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Key that must be down for items to be selected
       */
     // todo: create a type
     // todo: check source code for type
-    var multiDragKey: js.UndefOr[Null] = js.native
+    var multiDragKey: js.UndefOr[Null] = js.undefined
     
     /**
       * Called when an item is deselected
       */
-    var onDeselect: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onDeselect: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Called when an item is selected
       */
-    var onSelect: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Class name for selected item
       */
-    var selectedClass: js.UndefOr[String] = js.native
+    var selectedClass: js.UndefOr[String] = js.undefined
   }
   object MultiDragOptions {
     
@@ -191,27 +188,26 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait OnSpillOptions extends StObject {
     
     /**
       * Called when either `revertOnSpill` or `RemoveOnSpill` plugins are enabled.
       */
-    var onSpill: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.native
+    var onSpill: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.undefined
     
     /**
       * This plugin, when enabled,
       * will cause the dragged item to be removed from the DOM if it is *spilled*
       * (ie. it is dropped outside of a valid Sortable drop target)
       */
-    var removeOnSpill: js.UndefOr[Boolean] = js.native
+    var removeOnSpill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This plugin, when enabled,
       * will cause the dragged item to be reverted to it's original position if it is *spilled*
       * (ie. it is dropped outside of a valid Sortable drop target)
       */
-    var revertOnSpill: js.UndefOr[Boolean] = js.native
+    var revertOnSpill: js.UndefOr[Boolean] = js.undefined
   }
   object OnSpillOptions {
     
@@ -244,18 +240,17 @@ object pluginsMod {
     }
   }
   
-  @js.native
   trait SwapOptions extends StObject {
     
     /**
       * Enable swap mode
       */
-    var swap: js.UndefOr[Boolean] = js.native
+    var swap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name for swap item (if swap mode is enabled)
       */
-    var swapClass: js.UndefOr[String] = js.native
+    var swapClass: js.UndefOr[String] = js.undefined
   }
   object SwapOptions {
     

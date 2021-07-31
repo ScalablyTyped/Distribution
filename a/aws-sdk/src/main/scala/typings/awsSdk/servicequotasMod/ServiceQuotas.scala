@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait ServiceQuotas extends Service {
   ): Request[AssociateServiceQuotaTemplateResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_ServiceQuotas: ConfigBase with ClientConfiguration = js.native
+  var config_ServiceQuotas: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Removes a service quota increase request from the Service Quotas template. 

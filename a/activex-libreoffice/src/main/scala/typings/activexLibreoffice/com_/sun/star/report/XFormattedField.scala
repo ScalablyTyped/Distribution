@@ -19,7 +19,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,18 +26,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.report.XReportControlModel
   * @see com.sun.star.util.XNumberFormatsSupplier
   */
-@js.native
-trait XFormattedField extends XReportControlModel {
+trait XFormattedField
+  extends StObject
+     with XReportControlModel {
   
   /**
     * specifies the format to be used when formatting the field input and output.
     *
     * This value is meaningful relative to the FormatsSupplier attribute only.
     */
-  var FormatKey: Double = js.native
+  var FormatKey: Double
   
   /** supplies the formats the field should work with. */
-  var FormatsSupplier: XNumberFormatsSupplier = js.native
+  var FormatsSupplier: XNumberFormatsSupplier
 }
 object XFormattedField {
   

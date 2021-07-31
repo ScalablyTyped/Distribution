@@ -2,124 +2,124 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * How the medication is/was taken or should be taken
   */
-@js.native
-trait Dosage extends Element {
+trait Dosage
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'asNeededBoolean'.
     */
-  var _asNeededBoolean: js.UndefOr[Element] = js.native
+  var _asNeededBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'patientInstruction'.
     */
-  var _patientInstruction: js.UndefOr[Element] = js.native
+  var _patientInstruction: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Supplemental instruction - e.g. "with meals"
     */
-  var additionalInstruction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var additionalInstruction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Take "as needed" (for x)
     */
-  var asNeededBoolean: js.UndefOr[Boolean] = js.native
+  var asNeededBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Take "as needed" (for x)
     */
-  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Amount of medication per dose
     */
-  var doseQuantity: js.UndefOr[Quantity] = js.native
+  var doseQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Amount of medication per dose
     */
-  var doseRange: js.UndefOr[Range] = js.native
+  var doseRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Upper limit on medication per administration
     */
-  var maxDosePerAdministration: js.UndefOr[Quantity] = js.native
+  var maxDosePerAdministration: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Upper limit on medication per lifetime of the patient
     */
-  var maxDosePerLifetime: js.UndefOr[Quantity] = js.native
+  var maxDosePerLifetime: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Upper limit on medication per unit of time
     */
-  var maxDosePerPeriod: js.UndefOr[Ratio] = js.native
+  var maxDosePerPeriod: js.UndefOr[Ratio] = js.undefined
   
   /**
     * Technique for administering medication
     */
-  var method: js.UndefOr[CodeableConcept] = js.native
+  var method: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Patient or consumer oriented instructions
     */
-  var patientInstruction: js.UndefOr[String] = js.native
+  var patientInstruction: js.UndefOr[String] = js.undefined
   
   /**
     * Amount of medication per unit of time
     */
-  var rateQuantity: js.UndefOr[Quantity] = js.native
+  var rateQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Amount of medication per unit of time
     */
-  var rateRange: js.UndefOr[Range] = js.native
+  var rateRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Amount of medication per unit of time
     */
-  var rateRatio: js.UndefOr[Ratio] = js.native
+  var rateRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
     * How drug should enter body
     */
-  var route: js.UndefOr[CodeableConcept] = js.native
+  var route: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The order of the dosage instructions
     */
-  var sequence: js.UndefOr[integer] = js.native
+  var sequence: js.UndefOr[integer] = js.undefined
   
   /**
     * Body site to administer to
     */
-  var site: js.UndefOr[CodeableConcept] = js.native
+  var site: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Free text dosage instructions e.g. SIG
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * When medication should be administered
     */
-  var timing: js.UndefOr[Timing] = js.native
+  var timing: js.UndefOr[Timing] = js.undefined
 }
 object Dosage {
   

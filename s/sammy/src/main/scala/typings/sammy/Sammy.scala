@@ -12,13 +12,14 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sammy {
   
   @js.native
-  trait Application extends Object {
+  trait Application
+    extends StObject
+       with Object {
     
     def apply(appFn: js.Function): js.Any = js.native
     
@@ -76,7 +77,7 @@ object Sammy {
     
     def lookupRoute(verb: String, path: String): js.Any = js.native
     
-    def mapRoutes(route_array: js.Array[_]): Application = js.native
+    def mapRoutes(route_array: js.Array[js.Any]): Application = js.native
     
     def notFound(verb: String, path: String): js.Any = js.native
     
@@ -104,13 +105,13 @@ object Sammy {
     def run(start_url: String): Application = js.native
     
     def runRoute(verb: String): js.Any = js.native
-    def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
-    def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.Any): js.Any = js.native
-    def runRoute(verb: String, path: js.UndefOr[scala.Nothing], params: js.Any, target: js.Any): js.Any = js.native
     def runRoute(verb: String, path: String): js.Any = js.native
-    def runRoute(verb: String, path: String, params: js.UndefOr[scala.Nothing], target: js.Any): js.Any = js.native
     def runRoute(verb: String, path: String, params: js.Any): js.Any = js.native
     def runRoute(verb: String, path: String, params: js.Any, target: js.Any): js.Any = js.native
+    def runRoute(verb: String, path: String, params: Unit, target: js.Any): js.Any = js.native
+    def runRoute(verb: String, path: Unit, params: js.Any): js.Any = js.native
+    def runRoute(verb: String, path: Unit, params: js.Any, target: js.Any): js.Any = js.native
+    def runRoute(verb: String, path: Unit, params: Unit, target: js.Any): js.Any = js.native
     
     def send(params: js.Any*): js.Any = js.native
     
@@ -132,7 +133,8 @@ object Sammy {
   
   @js.native
   trait DataLocationProxy
-    extends Instantiable1[/* app */ js.Any, DataLocationProxy]
+    extends StObject
+       with Instantiable1[/* app */ js.Any, DataLocationProxy]
        with Instantiable2[/* app */ js.Any, /* run_interval_every */ js.Any, DataLocationProxy]
        with Instantiable3[
           /* app */ js.Any, 
@@ -154,7 +156,8 @@ object Sammy {
   
   @js.native
   trait EventContext
-    extends Object
+    extends StObject
+       with Object
        with Instantiable5[
           /* app */ js.Any, 
           /* verb */ js.Any, 
@@ -178,9 +181,9 @@ object Sammy {
     def json(str: js.Any): js.Any = js.native
     
     def load(location: js.Any): js.Any = js.native
-    def load(location: js.Any, options: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
     def load(location: js.Any, options: js.Any): js.Any = js.native
     def load(location: js.Any, options: js.Any, callback: js.Function): js.Any = js.native
+    def load(location: js.Any, options: Unit, callback: js.Function): js.Any = js.native
     
     def loadPartials(): js.Any = js.native
     def loadPartials(partials: js.Any): js.Any = js.native
@@ -193,41 +196,31 @@ object Sammy {
     var params: js.Any = js.native
     
     def partial(location: String): RenderContext = js.native
-    def partial(
-      location: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      partials: js.Any
-    ): RenderContext = js.native
-    def partial(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
-    def partial(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function, partials: js.Any): RenderContext = js.native
     def partial(location: String, data: js.Any): RenderContext = js.native
-    def partial(location: String, data: js.Any, callback: js.UndefOr[scala.Nothing], partials: js.Any): RenderContext = js.native
     def partial(location: String, data: js.Any, callback: js.Function): RenderContext = js.native
     def partial(location: String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
+    def partial(location: String, data: js.Any, callback: Unit, partials: js.Any): RenderContext = js.native
+    def partial(location: String, data: Unit, callback: js.Function): RenderContext = js.native
+    def partial(location: String, data: Unit, callback: js.Function, partials: js.Any): RenderContext = js.native
+    def partial(location: String, data: Unit, callback: Unit, partials: js.Any): RenderContext = js.native
     
     var partials: js.Any = js.native
     
     def redirect(params: js.Any*): Unit = js.native
     
     def render(location: String): RenderContext = js.native
-    def render(
-      location: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      partials: js.Any
-    ): RenderContext = js.native
-    def render(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
-    def render(location: String, data: js.UndefOr[scala.Nothing], callback: js.Function, partials: js.Any): RenderContext = js.native
     def render(location: String, data: js.Any): RenderContext = js.native
-    def render(location: String, data: js.Any, callback: js.UndefOr[scala.Nothing], partials: js.Any): RenderContext = js.native
     def render(location: String, data: js.Any, callback: js.Function): RenderContext = js.native
     def render(location: String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
+    def render(location: String, data: js.Any, callback: Unit, partials: js.Any): RenderContext = js.native
+    def render(location: String, data: Unit, callback: js.Function): RenderContext = js.native
+    def render(location: String, data: Unit, callback: js.Function, partials: js.Any): RenderContext = js.native
+    def render(location: String, data: Unit, callback: Unit, partials: js.Any): RenderContext = js.native
     
     def renderEach(location: js.Any): RenderContext = js.native
-    def renderEach(location: js.Any, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
     def renderEach(location: js.Any, data: js.Array[Data]): RenderContext = js.native
     def renderEach(location: js.Any, data: js.Array[Data], callback: js.Function): RenderContext = js.native
+    def renderEach(location: js.Any, data: Unit, callback: js.Function): RenderContext = js.native
     
     def send(params: js.Any*): RenderContext = js.native
     
@@ -239,10 +232,9 @@ object Sammy {
     def trigger(name: String, data: js.Any): EventContext = js.native
   }
   
-  @js.native
   trait Form extends StObject {
     
-    def formFor(name: String, `object`: js.Any, content_callback: js.Function): FormBuilder = js.native
+    def formFor(name: String, `object`: js.Any, content_callback: js.Function): FormBuilder
   }
   object Form {
     
@@ -262,7 +254,8 @@ object Sammy {
   
   @js.native
   trait FormBuilder
-    extends Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
+    extends StObject
+       with Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
     
     def checkbox(keypath: String, value: js.Any, attributes: js.Any*): String = js.native
     
@@ -289,7 +282,8 @@ object Sammy {
   
   @js.native
   trait GoogleAnalytics
-    extends Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
+    extends StObject
+       with Instantiable2[/* name */ js.Any, /* object */ js.Any, js.Any] {
     
     def noTrack(): js.Any = js.native
     
@@ -331,23 +325,24 @@ object Sammy {
   
   @js.native
   trait RenderContext
-    extends Object
+    extends StObject
+       with Object
        with Instantiable1[/* event_context */ js.Any, js.Any] {
     
     def appendTo(selector: String): RenderContext = js.native
     
-    def collect(array: js.Array[_], callback: js.Function): RenderContext = js.native
-    def collect(array: js.Array[_], callback: js.Function, now: Boolean): RenderContext = js.native
+    def collect(array: js.Array[js.Any], callback: js.Function): RenderContext = js.native
+    def collect(array: js.Array[js.Any], callback: js.Function, now: Boolean): RenderContext = js.native
     
     def interpolate(data: js.Any): RenderContext = js.native
-    def interpolate(data: js.Any, engine: js.UndefOr[scala.Nothing], retain: Boolean): RenderContext = js.native
     def interpolate(data: js.Any, engine: js.Any): RenderContext = js.native
     def interpolate(data: js.Any, engine: js.Any, retain: Boolean): RenderContext = js.native
+    def interpolate(data: js.Any, engine: Unit, retain: Boolean): RenderContext = js.native
     
     def load(location: String): RenderContext = js.native
-    def load(location: String, options: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
     def load(location: String, options: js.Any): RenderContext = js.native
     def load(location: String, options: js.Any, callback: js.Function): RenderContext = js.native
+    def load(location: String, options: Unit, callback: js.Function): RenderContext = js.native
     
     def loadPartials(): RenderContext = js.native
     def loadPartials(partials: js.Any): RenderContext = js.native
@@ -367,18 +362,13 @@ object Sammy {
     def render(location: String, data: js.Any, callback: js.Function, partials: js.Any): RenderContext = js.native
     
     def renderEach(location: String): RenderContext = js.native
-    def renderEach(
-      location: String,
-      name: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): RenderContext = js.native
-    def renderEach(location: String, name: js.UndefOr[scala.Nothing], data: js.Any): RenderContext = js.native
-    def renderEach(location: String, name: js.UndefOr[scala.Nothing], data: js.Any, callback: js.Function): RenderContext = js.native
     def renderEach(location: String, name: String): RenderContext = js.native
-    def renderEach(location: String, name: String, data: js.UndefOr[scala.Nothing], callback: js.Function): RenderContext = js.native
     def renderEach(location: String, name: String, data: js.Any): RenderContext = js.native
     def renderEach(location: String, name: String, data: js.Any, callback: js.Function): RenderContext = js.native
+    def renderEach(location: String, name: String, data: Unit, callback: js.Function): RenderContext = js.native
+    def renderEach(location: String, name: Unit, data: js.Any): RenderContext = js.native
+    def renderEach(location: String, name: Unit, data: js.Any, callback: js.Function): RenderContext = js.native
+    def renderEach(location: String, name: Unit, data: Unit, callback: js.Function): RenderContext = js.native
     
     def replace(selector: String): RenderContext = js.native
     
@@ -403,7 +393,8 @@ object Sammy {
   
   @js.native
   trait Store
-    extends Instantiable0[js.Any]
+    extends StObject
+       with Instantiable0[js.Any]
        with Instantiable1[/* options */ js.Any, js.Any] {
     
     def Cookie(name: js.Any, element: js.Any, options: js.Any): js.Any = js.native
@@ -446,24 +437,23 @@ object Sammy {
     var stores: js.Any = js.native
   }
   
-  @js.native
   trait StoreOptions extends StObject {
     
-    var cookie: js.UndefOr[js.Any] = js.native
+    var cookie: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var element: js.UndefOr[String] = js.native
+    var element: js.UndefOr[String] = js.undefined
     
-    var local: js.UndefOr[js.Any] = js.native
+    var local: js.UndefOr[js.Any] = js.undefined
     
-    var memory: js.UndefOr[js.Any] = js.native
+    var memory: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[js.Any] = js.native
+    var session: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object StoreOptions {
     

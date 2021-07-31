@@ -2,17 +2,15 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec extends StObject {
   
   /**
     * This is the question asked by confirmation sub-dialog. For example \"Are
     * you sure about that?\"
     */
-  var requestConfirmationText: js.UndefOr[String] = js.native
+  var requestConfirmationText: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2ConfirmationValueSpecConfirmationDialogSpec {
   

@@ -5,17 +5,15 @@ import typings.reapop.typesMod.Notification
 import typings.reapop.typesMod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themesTypesMod {
   
-  @js.native
   trait NotificationButtonState extends StObject {
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isHovered: Boolean = js.native
+    var isHovered: Boolean
   }
   object NotificationButtonState {
     
@@ -36,32 +34,31 @@ object themesTypesMod {
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    def container(position: Position, singleContainer: Boolean): CSSProperties = js.native
+    def container(position: Position, singleContainer: Boolean): CSSProperties
     
-    def notification(notification: Notification): CSSProperties = js.native
+    def notification(notification: Notification): CSSProperties
     
-    def notificationButton(notification: Notification, position: Double, state: NotificationButtonState): CSSProperties = js.native
+    def notificationButton(notification: Notification, position: Double, state: NotificationButtonState): CSSProperties
     
-    def notificationButtonText(notification: Notification, position: Double, state: NotificationButtonState): CSSProperties = js.native
+    def notificationButtonText(notification: Notification, position: Double, state: NotificationButtonState): CSSProperties
     
-    def notificationButtons(notification: Notification): CSSProperties = js.native
+    def notificationButtons(notification: Notification): CSSProperties
     
-    def notificationDismissIcon(notification: Notification): CSSProperties = js.native
+    def notificationDismissIcon(notification: Notification): CSSProperties
     
-    def notificationIcon(notification: Notification): CSSProperties = js.native
+    def notificationIcon(notification: Notification): CSSProperties
     
-    def notificationImage(notification: Notification): CSSProperties = js.native
+    def notificationImage(notification: Notification): CSSProperties
     
-    def notificationImageContainer(notification: Notification): CSSProperties = js.native
+    def notificationImageContainer(notification: Notification): CSSProperties
     
-    def notificationMessage(notification: Notification): CSSProperties = js.native
+    def notificationMessage(notification: Notification): CSSProperties
     
-    def notificationMeta(notification: Notification): CSSProperties = js.native
+    def notificationMeta(notification: Notification): CSSProperties
     
-    def notificationTitle(notification: Notification): CSSProperties = js.native
+    def notificationTitle(notification: Notification): CSSProperties
   }
   object Theme {
     

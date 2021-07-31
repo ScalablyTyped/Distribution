@@ -8,30 +8,30 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of content indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait ContentIndex extends BaseIndex {
+trait ContentIndex
+  extends StObject
+     with BaseIndex {
   
   /** contains `TRUE` if the document index marks are included in this index. */
-  var CreateFromMarks: Boolean = js.native
+  var CreateFromMarks: Boolean
   
   /** determines if the document index is created from outlines. */
-  var CreateFromOutline: Boolean = js.native
+  var CreateFromOutline: Boolean
   
   /** determines the depth of outline levels that are included into the content index. */
-  var Level: Double = js.native
+  var Level: Double
   
   /**
     * contains the interface to access the paragraph style names that are included in this index.
     * @see DocumentIndexParagraphStyles
     */
-  var LevelParagraphStyles: XIndexReplace = js.native
+  var LevelParagraphStyles: XIndexReplace
 }
 object ContentIndex {
   

@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the properties of a Video.
   */
-@js.native
 trait SchemaUpdateVideoPropertiesRequest extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaUpdateVideoPropertiesRequest extends StObject {
     * to its default value, include its field name in the field mask but leave
     * the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the video the updates are applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The video properties to update.
     */
-  var videoProperties: js.UndefOr[SchemaVideoProperties] = js.native
+  var videoProperties: js.UndefOr[SchemaVideoProperties] = js.undefined
 }
 object SchemaUpdateVideoPropertiesRequest {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1beta1", "storage_v1beta1.Resource$Objects")
@@ -31,7 +30,7 @@ class ResourceObjects protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceObjectsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -58,7 +57,7 @@ class ResourceObjects protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaObject] = js.native
   def get(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def get(params: ParamsResourceObjectsGet): GaxiosPromise[SchemaObject] = js.native
   def get(params: ParamsResourceObjectsGet, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def get(
@@ -93,7 +92,7 @@ class ResourceObjects protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaObject] = js.native
   def insert(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def insert(params: ParamsResourceObjectsInsert): GaxiosPromise[SchemaObject] = js.native
   def insert(params: ParamsResourceObjectsInsert, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def insert(
@@ -127,7 +126,7 @@ class ResourceObjects protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaObjects] = js.native
   def list(callback: BodyResponseCallback[SchemaObjects]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObjects] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObjects] = js.native
   def list(params: ParamsResourceObjectsList): GaxiosPromise[SchemaObjects] = js.native
   def list(params: ParamsResourceObjectsList, callback: BodyResponseCallback[SchemaObjects]): Unit = js.native
   def list(
@@ -160,7 +159,7 @@ class ResourceObjects protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaObject] = js.native
   def patch(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def patch(params: ParamsResourceObjectsPatch): GaxiosPromise[SchemaObject] = js.native
   def patch(params: ParamsResourceObjectsPatch, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def patch(
@@ -192,7 +191,7 @@ class ResourceObjects protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaObject] = js.native
   def update(callback: BodyResponseCallback[SchemaObject]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaObject] = js.native
   def update(params: ParamsResourceObjectsUpdate): GaxiosPromise[SchemaObject] = js.native
   def update(params: ParamsResourceObjectsUpdate, callback: BodyResponseCallback[SchemaObject]): Unit = js.native
   def update(

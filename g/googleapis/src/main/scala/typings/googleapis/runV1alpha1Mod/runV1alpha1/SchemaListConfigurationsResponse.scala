@@ -2,39 +2,37 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ListConfigurationsResponse is a list of Configuration resources.
   */
-@js.native
 trait SchemaListConfigurationsResponse extends StObject {
   
   /**
     * The API version for this call such as &quot;v1alpha1&quot;.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * List of Configurations.
     */
-  var items: js.UndefOr[js.Array[SchemaConfiguration]] = js.native
+  var items: js.UndefOr[js.Array[SchemaConfiguration]] = js.undefined
   
   /**
     * The kind of this resource, in this case &quot;ConfigurationList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata associated with this Configuration list.
     */
-  var metadata: js.UndefOr[SchemaListMeta] = js.native
+  var metadata: js.UndefOr[SchemaListMeta] = js.undefined
   
   /**
     * Locations that could not be reached.
     */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaListConfigurationsResponse {
   

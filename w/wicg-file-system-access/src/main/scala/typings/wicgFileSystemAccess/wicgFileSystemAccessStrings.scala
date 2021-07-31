@@ -4,18 +4,21 @@ import typings.wicgFileSystemAccess.mod.global.FileSystemHandleKind
 import typings.wicgFileSystemAccess.mod.global.FileSystemPermissionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wicgFileSystemAccessStrings {
   
   @js.native
-  sealed trait directory extends FileSystemHandleKind
+  sealed trait directory
+    extends StObject
+       with FileSystemHandleKind
   @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
-  sealed trait file extends FileSystemHandleKind
+  sealed trait file
+    extends StObject
+       with FileSystemHandleKind
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
@@ -30,12 +33,16 @@ object wicgFileSystemAccessStrings {
   def `open-file`: `open-file` = "open-file".asInstanceOf[`open-file`]
   
   @js.native
-  sealed trait read extends FileSystemPermissionMode
+  sealed trait read
+    extends StObject
+       with FileSystemPermissionMode
   @scala.inline
   def read: read = "read".asInstanceOf[read]
   
   @js.native
-  sealed trait readwrite extends FileSystemPermissionMode
+  sealed trait readwrite
+    extends StObject
+       with FileSystemPermissionMode
   @scala.inline
   def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   

@@ -2,7 +2,6 @@ package typings.kdbxweb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Int64")
@@ -17,7 +16,10 @@ class Int64 protected () extends StObject {
 /* static members */
 object Int64 {
   
-  @JSImport("kdbxweb", "Int64.from")
+  @JSImport("kdbxweb", "Int64")
   @js.native
-  def from(value: Double): Int64 = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def from(value: Double): Int64 = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[Int64]
 }

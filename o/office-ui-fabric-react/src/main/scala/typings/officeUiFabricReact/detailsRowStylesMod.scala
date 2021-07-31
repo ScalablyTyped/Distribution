@@ -5,10 +5,13 @@ import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyleProps
 import typings.officeUiFabricReact.detailsRowTypesMod.IDetailsRowStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsRowStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.styles", "DEFAULT_CELL_STYLE_PROPS")
   @js.native
@@ -119,7 +122,6 @@ object detailsRowStylesMod {
     def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.styles", "getDetailsRowStyles")
-  @js.native
-  def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = js.native
+  @scala.inline
+  def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
 }

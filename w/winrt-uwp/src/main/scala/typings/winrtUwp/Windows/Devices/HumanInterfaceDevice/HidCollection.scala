@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Devices.HumanInterfaceDevice
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves the collection information for a group of related controls. */
-@js.native
 trait HidCollection extends StObject {
   
   /** Retrieves the identifier for a collection of HID controls. */
-  var id: Double = js.native
+  var id: Double
   
   /** Retrieves the collection type. */
-  var `type`: HidCollectionType = js.native
+  var `type`: HidCollectionType
   
   /** Retrieves the usage identifier for the given control collection. */
-  var usageId: Double = js.native
+  var usageId: Double
   
   /** Retrieves the usage page for the given control collection. */
-  var usagePage: Double = js.native
+  var usagePage: Double
 }
 object HidCollection {
   

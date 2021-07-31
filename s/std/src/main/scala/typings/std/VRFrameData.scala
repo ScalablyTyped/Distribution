@@ -2,24 +2,22 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebVR API interface represents all the information needed to render a single frame of a VR scene; constructed by VRDisplay.getFrameData(). */
-@js.native
 trait VRFrameData extends StObject {
   
-  val leftProjectionMatrix: Float32Array = js.native
+  val leftProjectionMatrix: Float32Array
   
-  val leftViewMatrix: Float32Array = js.native
+  val leftViewMatrix: Float32Array
   
-  val pose: VRPose = js.native
+  val pose: VRPose
   
-  val rightProjectionMatrix: Float32Array = js.native
+  val rightProjectionMatrix: Float32Array
   
-  val rightViewMatrix: Float32Array = js.native
+  val rightViewMatrix: Float32Array
   
-  val timestamp: Double = js.native
+  val timestamp: Double
 }
 object VRFrameData {
   

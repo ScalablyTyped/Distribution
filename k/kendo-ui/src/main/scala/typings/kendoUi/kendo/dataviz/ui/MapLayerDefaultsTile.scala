@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerDefaultsTile extends StObject {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.native
+  var subdomains: js.UndefOr[js.Any] = js.undefined
   
-  var urlTemplate: js.UndefOr[String] = js.native
+  var urlTemplate: js.UndefOr[String] = js.undefined
 }
 object MapLayerDefaultsTile {
   

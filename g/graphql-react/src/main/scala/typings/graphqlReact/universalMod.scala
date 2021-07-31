@@ -7,10 +7,13 @@ import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object universalMod {
+  
+  @JSImport("graphql-react/universal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("graphql-react/universal", "GraphQL")
   @js.native
@@ -23,22 +26,18 @@ object universalMod {
   @js.native
   val GraphQLContext: Context[typings.graphqlReact.mod.GraphQL] = js.native
   
-  @JSImport("graphql-react/universal", "reportCacheErrors")
-  @js.native
-  def reportCacheErrors(event: js.Any): Unit = js.native
+  @scala.inline
+  def reportCacheErrors(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reportCacheErrors")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("graphql-react/universal", "ssr")
-  @js.native
-  def ssr(grapphql: typings.graphqlReact.mod.GraphQL, node: ReactNode): Unit = js.native
-  @JSImport("graphql-react/universal", "ssr")
-  @js.native
+  @scala.inline
+  def ssr(grapphql: typings.graphqlReact.mod.GraphQL, node: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def ssr(
     grapphql: typings.graphqlReact.mod.GraphQL,
     node: ReactNode,
     render: js.Function1[/* element */ ReactNode, String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ssr")(grapphql.asInstanceOf[js.Any], node.asInstanceOf[js.Any], render.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("graphql-react/universal", "useGraphQL")
-  @js.native
-  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = js.native
+  @scala.inline
+  def useGraphQL[T, V](options: LoadOnMount[V]): GraphQLOperationStatus[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGraphQL")(options.asInstanceOf[js.Any]).asInstanceOf[GraphQLOperationStatus[T]]
 }

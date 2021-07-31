@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRange extends StObject {
   
   /** The maximum value. */
-  var max: Double = js.native
+  var max: Double
   
   /** The minimum value. */
-  var min: Double = js.native
+  var min: Double
 }
 object IRange {
   

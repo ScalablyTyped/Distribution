@@ -6,19 +6,17 @@ import typings.antDesignIconsSvg.antDesignIconsSvgStrings.outlined_
 import typings.antDesignIconsSvg.antDesignIconsSvgStrings.twotone_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait AbstractNode extends StObject {
     
-    var attrs: StringDictionary[String] = js.native
+    var attrs: StringDictionary[String]
     
-    var children: js.UndefOr[js.Array[AbstractNode]] = js.native
+    var children: js.UndefOr[js.Array[AbstractNode]] = js.undefined
     
-    var tag: String = js.native
+    var tag: String
   }
   object AbstractNode {
     
@@ -48,14 +46,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IconDefinition extends StObject {
     
-    var icon: (js.Function2[/* primaryColor */ String, /* secondaryColor */ String, AbstractNode]) | AbstractNode = js.native
+    var icon: (js.Function2[/* primaryColor */ String, /* secondaryColor */ String, AbstractNode]) | AbstractNode
     
-    var name: String = js.native
+    var name: String
     
-    var theme: ThemeType = js.native
+    var theme: ThemeType
   }
   object IconDefinition {
     

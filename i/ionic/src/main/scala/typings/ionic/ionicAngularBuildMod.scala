@@ -1,13 +1,16 @@
 package typings.ionic
 
+import typings.ionic.definitionsMod.IConfig
+import typings.ionic.definitionsMod.ILogger
+import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.IonicAngularBuildOptions
 import typings.ionic.ionicAngularMod.IonicAngularProject
 import typings.ionic.libBuildMod.BuildCLI
 import typings.ionic.libBuildMod.BuildRunner
 import typings.ionic.libBuildMod.BuildRunnerDeps
+import typings.ionicCliFrameworkPrompts.mod.PromptModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicAngularBuildMod {
@@ -39,10 +42,26 @@ object ionicAngularBuildMod {
     val e_IonicAngularBuildRunner: IonicAngularBuildRunnerDeps = js.native
   }
   
-  @js.native
-  trait IonicAngularBuildRunnerDeps extends BuildRunnerDeps {
+  trait IonicAngularBuildRunnerDeps
+    extends StObject
+       with BuildRunnerDeps {
     
     @JSName("project")
-    val project_IonicAngularBuildRunnerDeps: IonicAngularProject = js.native
+    val project_IonicAngularBuildRunnerDeps: IonicAngularProject
+  }
+  object IonicAngularBuildRunnerDeps {
+    
+    @scala.inline
+    def apply(config: IConfig, log: ILogger, project: IonicAngularProject, prompt: PromptModule, shell: IShell): IonicAngularBuildRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IonicAngularBuildRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class IonicAngularBuildRunnerDepsMutableBuilder[Self <: IonicAngularBuildRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    }
   }
 }

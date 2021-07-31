@@ -2,19 +2,17 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionRange extends StObject {
   
-  var dimension: Dimension = js.native
+  var dimension: Dimension
   
-  var endIndex: Double = js.native
+  var endIndex: Double
   
-  var sheetId: Double = js.native
+  var sheetId: Double
   
-  var startIndex: Double = js.native
+  var startIndex: Double
 }
 object DimensionRange {
   

@@ -3,17 +3,15 @@ package typings.jssip.mod
 import typings.jssip.mod.RTCSession.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionNewInfoEvent extends StObject {
   
-  var info: Info = js.native
+  var info: Info
   
-  var originator: String = js.native
+  var originator: String
   
-  var request: IncomingRequest | OutgoingRequest = js.native
+  var request: IncomingRequest | OutgoingRequest
 }
 object SessionNewInfoEvent {
   

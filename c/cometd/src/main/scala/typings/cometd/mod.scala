@@ -14,7 +14,6 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -245,55 +244,25 @@ object mod {
       * @param callback a function to be invoked when the publish is acknowledged by the server
       */
     def publishBinary(channel: String, data: ArrayBuffer, last: Boolean): Unit = js.native
-    def publishBinary(
-      channel: String,
-      data: ArrayBuffer,
-      last: Boolean,
-      meta: js.UndefOr[scala.Nothing],
-      callback: Listener
-    ): Unit = js.native
     def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: js.Object): Unit = js.native
     def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: ArrayBuffer, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     def publishBinary(channel: String, data: DataView, last: Boolean): Unit = js.native
-    def publishBinary(
-      channel: String,
-      data: DataView,
-      last: Boolean,
-      meta: js.UndefOr[scala.Nothing],
-      callback: Listener
-    ): Unit = js.native
     def publishBinary(channel: String, data: DataView, last: Boolean, meta: js.Object): Unit = js.native
     def publishBinary(channel: String, data: DataView, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: DataView, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     def publishBinary(channel: String, data: Uint16Array, last: Boolean): Unit = js.native
-    def publishBinary(
-      channel: String,
-      data: Uint16Array,
-      last: Boolean,
-      meta: js.UndefOr[scala.Nothing],
-      callback: Listener
-    ): Unit = js.native
     def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: js.Object): Unit = js.native
     def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: Uint16Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     def publishBinary(channel: String, data: Uint32Array, last: Boolean): Unit = js.native
-    def publishBinary(
-      channel: String,
-      data: Uint32Array,
-      last: Boolean,
-      meta: js.UndefOr[scala.Nothing],
-      callback: Listener
-    ): Unit = js.native
     def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: js.Object): Unit = js.native
     def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: Uint32Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     def publishBinary(channel: String, data: Uint8Array, last: Boolean): Unit = js.native
-    def publishBinary(
-      channel: String,
-      data: Uint8Array,
-      last: Boolean,
-      meta: js.UndefOr[scala.Nothing],
-      callback: Listener
-    ): Unit = js.native
     def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object): Unit = js.native
     def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: js.Object, callback: Listener): Unit = js.native
+    def publishBinary(channel: String, data: Uint8Array, last: Boolean, meta: Unit, callback: Listener): Unit = js.native
     
     /**
       * Registers an extension whose callbacks are called for every incoming message (that comes from
@@ -314,7 +283,7 @@ object mod {
       * @param extension the extension to register
       * @return true if the extension was registered, false otherwise
       */
-    def registerExtension(name: String, extension: Extension): Boolean = js.native
+    def registerExtension(name: String, `extension`: Extension): Boolean = js.native
     
     /**
       * Registers the given transport under the given transport type.
@@ -479,32 +448,33 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
-  trait BaseMessage extends Message {
+  trait BaseMessage
+    extends StObject
+       with Message {
     
-    var advice: js.UndefOr[Hosts] = js.native
+    var advice: js.UndefOr[Hosts] = js.undefined
     
-    var channel: String = js.native
+    var channel: String
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var connectionType: js.UndefOr[ConnectionType] = js.native
+    var connectionType: js.UndefOr[ConnectionType] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[js.Any] = js.native
+    var ext: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var minimumVersion: js.UndefOr[String] = js.native
+    var minimumVersion: js.UndefOr[String] = js.undefined
     
-    var successful: Boolean = js.native
+    var successful: Boolean
     
-    var timestamp: js.UndefOr[String] = js.native
+    var timestamp: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object BaseMessage {
     
@@ -587,82 +557,81 @@ object mod {
   
   type Callback = js.Function1[/* data */ js.Any, Unit]
   
-  @js.native
   trait Configuration extends StObject {
     
     /**
       * Determines whether or not the Bayeux message type (handshake, connect, disconnect) is
       * appended to the URL of the Bayeux server (see above).
       */
-    var appendMessageTypeToURL: js.UndefOr[Boolean] = js.native
+    var appendMessageTypeToURL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether multiple publishes that get queued are sent as a batch on the first
       * occasion, without requiring explicit batching.
       */
-    var autoBatch: js.UndefOr[Boolean] = js.native
+    var autoBatch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of milliseconds that the backoff time increments every time a connection with the
       * Bayeux server fails. CometD attempts to reconnect after the backoff time elapses.
       */
-    var backoffIncrement: js.UndefOr[Double] = js.native
+    var backoffIncrement: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of milliseconds to wait for a WebSocket connection to be opened. It does
       * not apply to HTTP connections. A timeout value of 0 means to wait forever.
       */
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The log level. Possible values are: "warn", "info", "debug". Output to `window.console` if
       * available.
       */
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of milliseconds of the backoff time after which the backoff time is not
       * incremented further.
       */
-    var maxBackoff: js.UndefOr[Double] = js.native
+    var maxBackoff: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of connections used to connect to the Bayeux server. Change this value
       * only if you know exactly the client’s connection limit and what "request queued behind long
       * poll" means.
       */
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of milliseconds to wait before considering a request to the Bayeux server
       * failed.
       */
-    var maxNetworkDelay: js.UndefOr[Double] = js.native
+    var maxNetworkDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The max length of the URI for a request made with the callback-polling transport. Microsoft
       * Internet Explorer 7 and 8 are known to limit the URI length, so single large messages sent by
       * CometD may fail to remain within the max URI length when encoded in JSON.
       */
-    var maxURILength: js.UndefOr[Double] = js.native
+    var maxURILength: js.UndefOr[Double] = js.undefined
     
     /**
       * An object containing the request headers to be sent for every Bayeux request (for example,
       * `{"My-Custom-Header": "MyValue"}`).
       */
-    var requestHeaders: js.UndefOr[js.Object] = js.native
+    var requestHeaders: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Only applies to the websocket transport. Determines whether to stick using the websocket
       * transport when a websocket transport failure has been detected after the websocket transport
       * was able to successfully connect to the server.
       */
-    var stickyReconnect: js.UndefOr[Boolean] = js.native
+    var stickyReconnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The URL of the Bayeux server this client will connect to.
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * Uses the scheduler service available in Web Workers via Worker.setTimeout(fn, delay) rather
@@ -672,7 +641,7 @@ object mod {
       * server. The Worker scheduler is not throttled and guarantees that scheduler events happen
       * on time.
       */
-    var useWorkerScheduler: js.UndefOr[Boolean] = js.native
+    var useWorkerScheduler: js.UndefOr[Boolean] = js.undefined
   }
   object Configuration {
     
@@ -784,16 +753,15 @@ object mod {
     def `long-polling`: typings.cometd.cometdStrings.`long-polling` = "long-polling".asInstanceOf[typings.cometd.cometdStrings.`long-polling`]
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var incoming: js.UndefOr[Listener] = js.native
+    var incoming: js.UndefOr[Listener] = js.undefined
     
-    var outgoing: js.UndefOr[Listener] = js.native
+    var outgoing: js.UndefOr[Listener] = js.undefined
     
-    var registered: js.UndefOr[js.Function2[/* name */ String, /* cometd */ CometD, Unit]] = js.native
+    var registered: js.UndefOr[js.Function2[/* name */ String, /* cometd */ CometD, Unit]] = js.undefined
     
-    var unregistered: js.UndefOr[js.Function0[Unit]] = js.native
+    var unregistered: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Extension {
     
@@ -838,7 +806,9 @@ object mod {
     - typings.cometd.mod.SuccessfulHandshakeMessage
     - typings.cometd.mod.UnsuccessfulHandshakeMessage
   */
-  trait HandshakeMessage extends Message
+  trait HandshakeMessage
+    extends StObject
+       with Message
   object HandshakeMessage {
     
     @scala.inline
@@ -846,17 +816,16 @@ object mod {
       channel: String,
       clientId: String,
       reestablish: Boolean,
-      successful: `true`,
       supportedConnectionTypes: js.Array[ConnectionType],
       version: String
     ): typings.cometd.mod.SuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = true, supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cometd.mod.SuccessfulHandshakeMessage]
     }
     
     @scala.inline
-    def UnsuccessfulHandshakeMessage(channel: String, error: String, successful: `false`): typings.cometd.mod.UnsuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any])
+    def UnsuccessfulHandshakeMessage(channel: String, error: String, reestablish: Unit): typings.cometd.mod.UnsuccessfulHandshakeMessage = {
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = false)
       __obj.asInstanceOf[typings.cometd.mod.UnsuccessfulHandshakeMessage]
     }
   }
@@ -888,17 +857,16 @@ object mod {
       channel: String,
       clientId: String,
       reestablish: Boolean,
-      successful: `true`,
       supportedConnectionTypes: js.Array[ConnectionType],
       version: String
     ): typings.cometd.mod.SuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = true, supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.cometd.mod.SuccessfulHandshakeMessage]
     }
     
     @scala.inline
-    def UnsuccessfulHandshakeMessage(channel: String, error: String, successful: `false`): typings.cometd.mod.UnsuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any])
+    def UnsuccessfulHandshakeMessage(channel: String, error: String, reestablish: Unit): typings.cometd.mod.UnsuccessfulHandshakeMessage = {
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = false)
       __obj.asInstanceOf[typings.cometd.mod.UnsuccessfulHandshakeMessage]
     }
   }
@@ -950,10 +918,11 @@ object mod {
   type SubscribeListener = js.Function1[/* message */ SubscribeMessage, Unit]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.cometd.mod.Message because Already inherited */ @js.native
-  trait SubscribeMessage extends BaseMessage {
+  - typings.cometd.mod.Message because Already inherited */ trait SubscribeMessage
+    extends StObject
+       with BaseMessage {
     
-    var subscription: String = js.native
+    var subscription: String
   }
   object SubscribeMessage {
     
@@ -971,41 +940,70 @@ object mod {
     }
   }
   
-  @js.native
   trait SubscriptionHandle extends StObject {
     
-    def callback(data: js.Any): Unit = js.native
+    def callback(data: js.Any): Unit
     @JSName("callback")
-    var callback_Original: Callback = js.native
+    var callback_Original: Callback
     
-    var channel: String = js.native
+    var channel: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var listener: Boolean = js.native
+    var listener: Boolean
     
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
+  }
+  object SubscriptionHandle {
+    
+    @scala.inline
+    def apply(callback: /* data */ js.Any => Unit, channel: String, id: Double, listener: Boolean): SubscriptionHandle = {
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), channel = channel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], listener = listener.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SubscriptionHandle]
+    }
+    
+    @scala.inline
+    implicit class SubscriptionHandleMutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCallback(value: /* data */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setListener(value: Boolean): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    }
   }
   
-  @js.native
   trait SuccessfulHandshakeMessage
-    extends BaseMessage
+    extends StObject
+       with BaseMessage
        with HandshakeMessage {
     
-    var authSuccessful: js.UndefOr[`true`] = js.native
+    var authSuccessful: js.UndefOr[`true`] = js.undefined
     
     @JSName("clientId")
-    var clientId_SuccessfulHandshakeMessage: String = js.native
+    var clientId_SuccessfulHandshakeMessage: String
     
-    var reestablish: Boolean = js.native
+    var reestablish: Boolean
     
     @JSName("successful")
-    var successful_SuccessfulHandshakeMessage: `true` = js.native
+    var successful_SuccessfulHandshakeMessage: `true`
     
-    var supportedConnectionTypes: js.Array[ConnectionType] = js.native
+    var supportedConnectionTypes: js.Array[ConnectionType]
     
     @JSName("version")
-    var version_SuccessfulHandshakeMessage: String = js.native
+    var version_SuccessfulHandshakeMessage: String
   }
   object SuccessfulHandshakeMessage {
     
@@ -1014,11 +1012,10 @@ object mod {
       channel: String,
       clientId: String,
       reestablish: Boolean,
-      successful: `true`,
       supportedConnectionTypes: js.Array[ConnectionType],
       version: String
     ): SuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = true, supportedConnectionTypes = supportedConnectionTypes.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessfulHandshakeMessage]
     }
     
@@ -1051,26 +1048,26 @@ object mod {
     }
   }
   
-  @js.native
   trait UnsuccessfulHandshakeMessage
-    extends BaseMessage
+    extends StObject
+       with BaseMessage
        with HandshakeMessage {
     
     @JSName("error")
-    var error_UnsuccessfulHandshakeMessage: String = js.native
+    var error_UnsuccessfulHandshakeMessage: String
     
-    var reestablish: js.UndefOr[scala.Nothing] = js.native
+    var reestablish: Unit
     
     @JSName("successful")
-    var successful_UnsuccessfulHandshakeMessage: `false` = js.native
+    var successful_UnsuccessfulHandshakeMessage: `false`
     
-    var supportedConnectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.native
+    var supportedConnectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.undefined
   }
   object UnsuccessfulHandshakeMessage {
     
     @scala.inline
-    def apply(channel: String, error: String, successful: `false`): UnsuccessfulHandshakeMessage = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any])
+    def apply(channel: String, error: String, reestablish: Unit): UnsuccessfulHandshakeMessage = {
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], reestablish = reestablish.asInstanceOf[js.Any], successful = false)
       __obj.asInstanceOf[UnsuccessfulHandshakeMessage]
     }
     
@@ -1079,6 +1076,9 @@ object mod {
       
       @scala.inline
       def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReestablish(value: Unit): Self = StObject.set(x, "reestablish", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuccessful(value: `false`): Self = StObject.set(x, "successful", value.asInstanceOf[js.Any])

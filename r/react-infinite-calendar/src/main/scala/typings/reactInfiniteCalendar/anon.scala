@@ -12,27 +12,25 @@ import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.landscape
 import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccentColor extends StObject {
     
-    var accentColor: js.UndefOr[String] = js.native
+    var accentColor: js.UndefOr[String] = js.undefined
     
-    var floatingNav: js.UndefOr[Background] = js.native
+    var floatingNav: js.UndefOr[Background] = js.undefined
     
-    var headerColor: js.UndefOr[String] = js.native
+    var headerColor: js.UndefOr[String] = js.undefined
     
-    var selectionColor: js.UndefOr[String] = js.native
+    var selectionColor: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[Active] = js.native
+    var textColor: js.UndefOr[Active] = js.undefined
     
-    var todayColor: js.UndefOr[String] = js.native
+    var todayColor: js.UndefOr[String] = js.undefined
     
-    var weekdayColor: js.UndefOr[String] = js.native
+    var weekdayColor: js.UndefOr[String] = js.undefined
   }
   object AccentColor {
     
@@ -89,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Active extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var active: js.UndefOr[String] = js.native
+    var active: js.UndefOr[String] = js.undefined
   }
   object Active {
     
@@ -121,14 +118,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Background extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var chevron: js.UndefOr[String] = js.native
+    var chevron: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object Background {
     
@@ -161,20 +157,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Blank extends StObject {
     
-    var blank: js.UndefOr[String] = js.native
+    var blank: js.UndefOr[String] = js.undefined
     
-    var headerFormat: js.UndefOr[String] = js.native
+    var headerFormat: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[DistanceInWords] = js.native
+    var locale: js.UndefOr[DistanceInWords] = js.undefined
     
-    var todayLabel: js.UndefOr[Long] = js.native
+    var todayLabel: js.UndefOr[Long] = js.undefined
     
-    var weekStartsOn: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var weekStartsOn: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
-    var weekdays: js.UndefOr[js.Array[String]] = js.native
+    var weekdays: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Blank {
     
@@ -228,12 +223,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DistanceInWords extends StObject {
     
-    def distanceInWords(token: js.Any, count: js.Any, options: js.Any): js.Any = js.native
+    def distanceInWords(token: js.Any, count: js.Any, options: js.Any): js.Any
     
-    def format(): js.Any = js.native
+    def format(): js.Any
   }
   object DistanceInWords {
     
@@ -254,12 +248,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: DateType = js.native
+    var end: DateType
     
-    var start: DateType = js.native
+    var start: DateType
   }
   object End {
     
@@ -280,28 +273,27 @@ object anon {
     }
   }
   
-  @js.native
   trait HideYearsOnSelect extends StObject {
     
-    var hideYearsOnSelect: js.UndefOr[Boolean] = js.native
+    var hideYearsOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var layout: js.UndefOr[portrait | landscape] = js.native
+    var layout: js.UndefOr[portrait | landscape] = js.undefined
     
-    var overscanMonthCount: js.UndefOr[Double] = js.native
+    var overscanMonthCount: js.UndefOr[Double] = js.undefined
     
-    var shouldHeaderAnimate: js.UndefOr[Boolean] = js.native
+    var shouldHeaderAnimate: js.UndefOr[Boolean] = js.undefined
     
-    var showHeader: js.UndefOr[Boolean] = js.native
+    var showHeader: js.UndefOr[Boolean] = js.undefined
     
-    var showMonthsForYears: js.UndefOr[Boolean] = js.native
+    var showMonthsForYears: js.UndefOr[Boolean] = js.undefined
     
-    var showOverlay: js.UndefOr[Boolean] = js.native
+    var showOverlay: js.UndefOr[Boolean] = js.undefined
     
-    var showTodayHelper: js.UndefOr[Boolean] = js.native
+    var showTodayHelper: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekdays: js.UndefOr[Boolean] = js.native
+    var showWeekdays: js.UndefOr[Boolean] = js.undefined
     
-    var todayHelperRowOffset: js.UndefOr[Double] = js.native
+    var todayHelperRowOffset: js.UndefOr[Double] = js.undefined
   }
   object HideYearsOnSelect {
     
@@ -376,10 +368,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Long extends StObject {
     
-    var long: String = js.native
+    var long: String
   }
   object Long {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1FaceDetectionConfig extends StObject {
   
   /** Whether to enable face attributes detection, such as glasses, dark_glasses, mouth_open etc. Ignored if 'include_bounding_boxes' is set to false. */
-  var includeAttributes: js.UndefOr[Boolean] = js.native
+  var includeAttributes: js.UndefOr[Boolean] = js.undefined
   
   /** Whether bounding boxes are included in the face annotation output. */
-  var includeBoundingBoxes: js.UndefOr[Boolean] = js.native
+  var includeBoundingBoxes: js.UndefOr[Boolean] = js.undefined
   
   /** Model to use for face detection. Supported values: "builtin/stable" (the default if unset) and "builtin/latest". */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1FaceDetectionConfig {
   

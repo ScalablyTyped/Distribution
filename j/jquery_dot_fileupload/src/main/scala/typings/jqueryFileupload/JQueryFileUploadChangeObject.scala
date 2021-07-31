@@ -3,21 +3,19 @@ package typings.jqueryFileupload
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryFileUploadChangeObject extends StObject {
   
-  var fileInput: js.UndefOr[JQuery] = js.native
+  var fileInput: js.UndefOr[JQuery] = js.undefined
   
-  var fileInputClone: js.UndefOr[JQuery] = js.native
+  var fileInputClone: js.UndefOr[JQuery] = js.undefined
   
-  var files: js.Array[File] = js.native
+  var files: js.Array[File]
   
-  var form: js.UndefOr[JQuery] = js.native
+  var form: js.UndefOr[JQuery] = js.undefined
   
-  var originalFiles: js.Array[File] = js.native
+  var originalFiles: js.Array[File]
 }
 object JQueryFileUploadChangeObject {
   

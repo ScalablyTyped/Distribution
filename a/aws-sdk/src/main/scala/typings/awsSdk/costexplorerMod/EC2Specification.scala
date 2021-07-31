@@ -2,16 +2,14 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2Specification extends StObject {
   
   /**
     * Whether you want a recommendation for standard or convertible reservations.
     */
-  var OfferingClass: js.UndefOr[typings.awsSdk.costexplorerMod.OfferingClass] = js.native
+  var OfferingClass: js.UndefOr[typings.awsSdk.costexplorerMod.OfferingClass] = js.undefined
 }
 object EC2Specification {
   

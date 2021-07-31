@@ -14,41 +14,39 @@ import typings.reactNavigation.reactNavigationStrings.none
 import typings.reactNavigation.reactNavigationStrings.order
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-navigation.react-navigation.CreateNavigatorConfig<{}, react-navigation.react-navigation.NavigationSwitchRouterConfig, {}, react-navigation.react-navigation.NavigationSwitchProp<react-navigation.react-navigation.NavigationRoute<react-navigation.react-navigation.NavigationParams>, react-navigation.react-navigation.NavigationParams>> */
-@js.native
 trait CreateNavigatorConfigNavi extends StObject {
   
-  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.native
+  var backBehavior: js.UndefOr[none | initialRoute | history | order] = js.undefined
   
   var defaultNavigationOptions: js.UndefOr[
     NavigationScreenConfig[
       js.Object, 
       NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var initialRouteName: js.UndefOr[String] = js.native
+  var initialRouteName: js.UndefOr[String] = js.undefined
   
-  var initialRouteParams: js.UndefOr[NavigationParams] = js.native
+  var initialRouteParams: js.UndefOr[NavigationParams] = js.undefined
   
   var navigationOptions: js.UndefOr[
     NavigationScreenConfig[
-      StringDictionary[_], 
+      StringDictionary[js.Any], 
       NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var order: js.UndefOr[js.Array[String]] = js.native
+  var order: js.UndefOr[js.Array[String]] = js.undefined
   
-  var paths: js.UndefOr[NavigationPathsConfig] = js.native
+  var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
   
   // defaults to 'none'
-  var resetOnBlur: js.UndefOr[Boolean] = js.native
+  var resetOnBlur: js.UndefOr[Boolean] = js.undefined
 }
 object CreateNavigatorConfigNavi {
   
@@ -72,13 +70,13 @@ object CreateNavigatorConfigNavi {
       value: NavigationScreenConfig[
           js.Object, 
           NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], _]) with NavigationOptionsOptions[js.Object] => js.Object
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationSwitchProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[js.Object] => js.Object
     ): Self = StObject.set(x, "defaultNavigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -99,15 +97,15 @@ object CreateNavigatorConfigNavi {
     @scala.inline
     def setNavigationOptions(
       value: NavigationScreenConfig[
-          StringDictionary[_], 
+          StringDictionary[js.Any], 
           NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], _]) with NavigationOptionsOptions[StringDictionary[_]] => StringDictionary[_]
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[StringDictionary[js.Any]] => StringDictionary[js.Any]
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline

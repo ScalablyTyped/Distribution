@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterParameterGroupResult extends StObject {
   
-  var ClusterParameterGroup: js.UndefOr[typings.awsSdk.redshiftMod.ClusterParameterGroup] = js.native
+  var ClusterParameterGroup: js.UndefOr[typings.awsSdk.redshiftMod.ClusterParameterGroup] = js.undefined
 }
 object CreateClusterParameterGroupResult {
   

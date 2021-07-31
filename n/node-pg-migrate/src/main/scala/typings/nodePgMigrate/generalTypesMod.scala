@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.TopLevel
 import typings.nodePgMigrate.anon.ZzIGNOREME
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generalTypesMod {
   
-  @js.native
   trait CascadeOption extends StObject {
     
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
   }
   object CascadeOption {
     
@@ -33,12 +31,22 @@ object generalTypesMod {
     }
   }
   
-  type DropOptions = IfExistsOption with CascadeOption
+  trait DropOptions
+    extends StObject
+       with IfExistsOption
+       with CascadeOption
+  object DropOptions {
+    
+    @scala.inline
+    def apply(): DropOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DropOptions]
+    }
+  }
   
-  @js.native
   trait IfExistsOption extends StObject {
     
-    var ifExists: js.UndefOr[Boolean] = js.native
+    var ifExists: js.UndefOr[Boolean] = js.undefined
   }
   object IfExistsOption {
     
@@ -59,10 +67,9 @@ object generalTypesMod {
     }
   }
   
-  @js.native
   trait IfNotExistsOption extends StObject {
     
-    var ifNotExists: js.UndefOr[Boolean] = js.native
+    var ifNotExists: js.UndefOr[Boolean] = js.undefined
   }
   object IfNotExistsOption {
     
@@ -83,34 +90,71 @@ object generalTypesMod {
     }
   }
   
-  type LiteralUnion[T /* <: String */] = T | (String with ZzIGNOREME)
+  type LiteralUnion[T /* <: String */] = T | (String & ZzIGNOREME)
   
   type Name = String | typings.nodePgMigrate.anon.Name
   
   type Nullable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: T[P] | null}
-    */ typings.nodePgMigrate.nodePgMigrateStrings.Nullable with TopLevel[T]
+    */ typings.nodePgMigrate.nodePgMigrateStrings.Nullable & TopLevel[T]
   
   /* Inlined node-pg-migrate.node-pg-migrate/dist/operations/generalTypes.PublicPart<node-pg-migrate.node-pg-migrate/dist/operations/PgLiteral.default> */
-  @js.native
-  trait PgLiteralValue extends _Value {
+  trait PgLiteralValue
+    extends StObject
+       with _Value {
     
     @JSName("constructor")
-    var constructor_Original: js.Function1[/* value */ String, js.Any] = js.native
+    var constructor_Original: js.Function1[/* value */ String, js.Any]
     
-    var create: js.UndefOr[js.Any] = js.native
+    var create: js.UndefOr[js.Any] = js.undefined
     
-    var literal: /* true */ Boolean = js.native
+    var literal: /* true */ Boolean
     
     @JSName("toString")
-    var toString_Original: js.Function0[String] = js.native
+    var toString_Original: js.Function0[String]
     
-    var value: String = js.native
+    var value: String
+  }
+  object PgLiteralValue {
+    
+    @scala.inline
+    def apply(
+      constructor: /* value */ String => js.Any,
+      literal: /* true */ Boolean,
+      toString_ : () => String,
+      value: String
+    ): PgLiteralValue = {
+      val __obj = js.Dynamic.literal(constructor = js.Any.fromFunction1(constructor), literal = literal.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
+      __obj.asInstanceOf[PgLiteralValue]
+    }
+    
+    @scala.inline
+    implicit class PgLiteralValueMutableBuilder[Self <: PgLiteralValue] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConstructor(value: /* value */ String => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCreate(value: js.Any): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      
+      @scala.inline
+      def setLiteral(value: /* true */ Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
   }
   
   type PublicPart[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
-    */ typings.nodePgMigrate.nodePgMigrateStrings.PublicPart with TopLevel[T]
+    */ typings.nodePgMigrate.nodePgMigrateStrings.PublicPart & TopLevel[T]
   
   type Type = String | typings.nodePgMigrate.anon.Type
   

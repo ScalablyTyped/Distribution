@@ -2,19 +2,17 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagVote extends StObject {
   
-  var author: String = js.native
+  var author: String
   
-  var downs: Double = js.native
+  var downs: Double
   
-  var name: String = js.native
+  var name: String
   
-  var ups: Double = js.native
+  var ups: Double
 }
 object TagVote {
   

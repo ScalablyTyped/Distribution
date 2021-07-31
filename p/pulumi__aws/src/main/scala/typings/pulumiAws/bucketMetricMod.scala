@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketMetricMod {
@@ -44,6 +43,10 @@ object bucketMetricMod {
   /* static members */
   object BucketMetric {
     
+    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BucketMetric resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,45 +56,39 @@ object bucketMetricMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BucketMetric = js.native
-    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BucketMetric = js.native
-    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketMetricState): BucketMetric = js.native
-    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): BucketMetric = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketMetricState): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BucketMetricState, opts: CustomResourceOptions): BucketMetric = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BucketMetric]
     
     /**
       * Returns true if the given object is an instance of BucketMetric.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/bucketMetric.BucketMetric */ Boolean]
   }
   
-  @js.native
   trait BucketMetricArgs extends StObject {
     
     /**
       * The name of the bucket to put metric configuration.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]] = js.undefined
     
     /**
       * Unique identifier of the metrics configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object BucketMetricArgs {
     
@@ -121,23 +118,22 @@ object bucketMetricMod {
     }
   }
   
-  @js.native
   trait BucketMetricState extends StObject {
     
     /**
       * The name of the bucket to put metric configuration.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.BucketMetricFilter]] = js.undefined
     
     /**
       * Unique identifier of the metrics configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object BucketMetricState {
     

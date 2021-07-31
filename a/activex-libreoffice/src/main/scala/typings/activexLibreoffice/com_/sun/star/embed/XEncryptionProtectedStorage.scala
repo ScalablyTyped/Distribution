@@ -6,21 +6,21 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface allows to set a password for an object.
   * @since OOo 3.4
   */
-@js.native
-trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
+trait XEncryptionProtectedStorage
+  extends StObject
+     with XEncryptionProtectedSource2 {
   
   /** allows to get the encryption algorithms of the object. */
-  var EncryptionAlgorithms: SafeArray[NamedValue] = js.native
+  var EncryptionAlgorithms: SafeArray[NamedValue]
   
   /** allows to get the encryption algorithms of the object. */
-  def getEncryptionAlgorithms(): SafeArray[NamedValue] = js.native
+  def getEncryptionAlgorithms(): SafeArray[NamedValue]
   
   /**
     * allows to set the encryption algorithms for the object.
@@ -42,7 +42,7 @@ trait XEncryptionProtectedStorage extends XEncryptionProtectedSource2 {
     * decrypted, the algorithm might be already known by the object; if a different one is set an exception should be thrown to indicate the error; it
     * should take values from {@link com.sun.star.xml} :crypto::DigestID.
     */
-  def setEncryptionAlgorithms(aAlgorithms: SeqEquiv[NamedValue]): Unit = js.native
+  def setEncryptionAlgorithms(aAlgorithms: SeqEquiv[NamedValue]): Unit
 }
 object XEncryptionProtectedStorage {
   

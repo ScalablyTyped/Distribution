@@ -2,17 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descriptor extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var phone: String = js.native
+  var phone: String
   
-  var url: String = js.native
+  var url: String
 }
 object Descriptor {
   

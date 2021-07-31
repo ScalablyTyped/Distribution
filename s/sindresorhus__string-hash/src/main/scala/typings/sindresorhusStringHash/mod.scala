@@ -3,7 +3,6 @@ package typings.sindresorhusStringHash
 import typings.sindresorhusFnv1a.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,9 +17,12 @@ object mod {
   	//=> 2868248295
   	```
   	*/
-  @JSImport("@sindresorhus/string-hash", "<apply>")
+  @scala.inline
+  def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @JSImport("@sindresorhus/string-hash", JSImport.Namespace)
   @js.native
-  def apply(string: String): Double = js.native
+  val ^ : js.Any = js.native
   
   /**
   	[FNV-1a](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function) non-cryptographic hash function.
@@ -33,10 +35,8 @@ object mod {
   	//=> 13487074350300261116944693128525960095n
   	```
   	*/
-  @JSImport("@sindresorhus/string-hash", "bigInt")
-  @js.native
-  def bigInt(string: String): js.BigInt = js.native
-  @JSImport("@sindresorhus/string-hash", "bigInt")
-  @js.native
-  def bigInt(string: String, options: Options): js.BigInt = js.native
+  @scala.inline
+  def bigInt(string: String): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+  @scala.inline
+  def bigInt(string: String, options: Options): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
 }

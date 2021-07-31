@@ -2,14 +2,15 @@ package typings.relateurl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("relateurl", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RelateUrl {
+  class ^ protected ()
+    extends StObject
+       with RelateUrl {
     def this(from: String) = this()
     def this(from: String, options: Options) = this()
   }
@@ -46,14 +47,11 @@ object mod {
   def SHORTEST_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTEST")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("relateurl", "relate")
-  @js.native
-  def relate(from: String, to: String): String = js.native
-  @JSImport("relateurl", "relate")
-  @js.native
-  def relate(from: String, to: String, options: Options): String = js.native
+  @scala.inline
+  def relate(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def relate(from: String, to: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relate")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -62,7 +60,7 @@ object mod {
       *
       * Extend the list with any ports you need. Any URLs containing these default ports will have them removed. Example: http://example.com:80/ will become http://example.com/.
       */
-    var defaultPorts: js.UndefOr[js.Object] = js.native
+    var defaultPorts: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Type: Array
@@ -70,7 +68,7 @@ object mod {
       *
       * Extend the list with any resources you need. Works with options.removeDirectoryIndexes.
       */
-    var directoryIndexes: js.UndefOr[js.Array[String]] = js.native
+    var directoryIndexes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Type: Boolean
@@ -78,7 +76,7 @@ object mod {
       *
       * This will, for example, consider any domains containing http://www.example.com/ to be related to any that contain http://example.com/.
       */
-    var ignore_www: js.UndefOr[Boolean] = js.native
+    var ignore_www: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: constant or String
@@ -91,7 +89,7 @@ object mod {
       * RelateUrl.ROOT_RELATIVE will produce something like /child-of-root/etc/.
       * RelateUrl.SHORTEST will choose whichever is shortest between root- and path-relative.
       */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /**
       * Type: Array
@@ -99,7 +97,7 @@ object mod {
       *
       * Extend the list with any additional schemes. Example: javascript:something will not be modified.
       */
-    var rejectedSchemes: js.UndefOr[js.Array[String]] = js.native
+    var rejectedSchemes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Type: Boolean
@@ -107,7 +105,7 @@ object mod {
       *
       * Remove user authentication information from the output URL.
       */
-    var removeAuth: js.UndefOr[Boolean] = js.native
+    var removeAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: Boolean
@@ -115,7 +113,7 @@ object mod {
       *
       * Remove any resources that match any found in options.directoryIndexes.
       */
-    var removeDirectoryIndexes: js.UndefOr[Boolean] = js.native
+    var removeDirectoryIndexes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: Boolean
@@ -123,7 +121,7 @@ object mod {
       *
       * Remove empty query variables. Example: http://domain.com/?var1&var2=&var3=asdf will become http://domain.com/?var3=adsf. This does not apply to unrelated URLs (with other protocols, auths, hosts and/or ports).
       */
-    var removeEmptyQueries: js.UndefOr[Boolean] = js.native
+    var removeEmptyQueries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: Boolean
@@ -131,7 +129,7 @@ object mod {
       *
       * Remove trailing slashes from root paths. Example: http://domain.com/?var will become http://domain.com?var while http://domain.com/dir/?var will not be modified.
       */
-    var removeRootTrailingSlash: js.UndefOr[Boolean] = js.native
+    var removeRootTrailingSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: Boolean
@@ -139,7 +137,7 @@ object mod {
       *
       * Output URLs relative to the scheme. Example: http://example.com/ will become //example.com/.
       */
-    var schemeRelative: js.UndefOr[Boolean] = js.native
+    var schemeRelative: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type: String
@@ -147,7 +145,7 @@ object mod {
       *
       * An options-based version of the from argument. If both are specified, from takes priority.
       */
-    var site: js.UndefOr[String] = js.native
+    var site: js.UndefOr[String] = js.undefined
     
     /**
       * Type: Boolean
@@ -155,7 +153,7 @@ object mod {
       *
       * Passed to Node's url.parse.
       */
-    var slashesDenoteHost: js.UndefOr[Boolean] = js.native
+    var slashesDenoteHost: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

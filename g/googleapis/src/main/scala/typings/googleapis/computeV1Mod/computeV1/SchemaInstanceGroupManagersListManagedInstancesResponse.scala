@@ -2,16 +2,14 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagersListManagedInstancesResponse extends StObject {
   
   /**
     * [Output Only] The list of instances in the managed instance group.
     */
-  var managedInstances: js.UndefOr[js.Array[SchemaManagedInstance]] = js.native
+  var managedInstances: js.UndefOr[js.Array[SchemaManagedInstance]] = js.undefined
 }
 object SchemaInstanceGroupManagersListManagedInstancesResponse {
   

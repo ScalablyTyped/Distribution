@@ -2,90 +2,90 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tracks balance, charges, for patient or cost center
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Account extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Account
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Time window that transactions may be posted to this account
     */
-  var active: js.UndefOr[Period] = js.native
+  var active: js.UndefOr[Period] = js.undefined
   
   /**
     * How much is in account?
     */
-  var balance: js.UndefOr[Money] = js.native
+  var balance: js.UndefOr[Money] = js.undefined
   
   /**
     * The party(s) that are responsible for covering the payment of this account, and what order should they be applied to the account
     */
-  var coverage: js.UndefOr[js.Array[AccountCoverage]] = js.native
+  var coverage: js.UndefOr[js.Array[AccountCoverage]] = js.undefined
   
   /**
     * Explanation of purpose/use
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Responsible for the account
     */
-  var guarantor: js.UndefOr[js.Array[AccountGuarantor]] = js.native
+  var guarantor: js.UndefOr[js.Array[AccountGuarantor]] = js.undefined
   
   /**
     * Account number
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Human-readable label
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Who is responsible?
     */
-  var owner: js.UndefOr[Reference] = js.native
+  var owner: js.UndefOr[Reference] = js.undefined
   
   /**
     * Transaction window
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * active | inactive | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * What is account tied to?
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
   
   /**
     * E.g. patient, expense, depreciation
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object Account {
   

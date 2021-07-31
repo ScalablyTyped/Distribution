@@ -2,24 +2,22 @@ package typings.victory.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  style :{  data :react.react.CSSProperties | undefined,   labels :react.react.CSSProperties | undefined} | undefined,   candleColors :{  positive :string | undefined,   negative :string | undefined} | undefined} & victory.victory.ThemeBaseProps */
-@js.native
 trait styledataCSSPropertiesundCandleColors extends StObject {
   
-  var candleColors: js.UndefOr[Negative] = js.native
+  var candleColors: js.UndefOr[Negative] = js.undefined
   
-  var colorScale: js.Array[String] = js.native
+  var colorScale: js.Array[String]
   
-  var height: Double = js.native
+  var height: Double
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Data] = js.native
+  var style: js.UndefOr[Data] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object styledataCSSPropertiesundCandleColors {
   

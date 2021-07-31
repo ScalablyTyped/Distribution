@@ -2,7 +2,6 @@ package typings.opentelemetryContextBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -45,6 +44,10 @@ object contextMod {
   /* static members */
   object Context {
     
+    @JSImport("@opentelemetry/context-base/build/src/context", "Context")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** The root context is used as the default parent context when there is no active context */
     @JSImport("@opentelemetry/context-base/build/src/context", "Context.ROOT_CONTEXT")
     @js.native
@@ -61,8 +64,7 @@ object contextMod {
     val TODO: Context = js.native
     
     /** Get a key to uniquely identify a context value */
-    @JSImport("@opentelemetry/context-base/build/src/context", "Context.createKey")
-    @js.native
-    def createKey(description: String): js.Symbol = js.native
+    @scala.inline
+    def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
   }
 }

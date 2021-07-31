@@ -3,7 +3,6 @@ package typings.antdMobileRn
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageRollNativeMod {
@@ -16,15 +15,14 @@ object imageRollNativeMod {
   trait ImageRoll
     extends Component[ImageRollProps, js.Any, js.Any] {
     
-    def onSelected(images: js.Array[_], _underscore: js.Any): Unit = js.native
+    def onSelected(images: js.Array[js.Any], _underscore: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ImageRollProps extends StObject {
     
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
-    def onSelected(imgObj: js.Object): Unit = js.native
+    def onSelected(imgObj: js.Object): Unit
   }
   object ImageRollProps {
     

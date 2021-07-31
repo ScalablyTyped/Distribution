@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoCheck extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DoCheck extends StObject {
     * custom change checking for collections.
     *
     */
-  def ngDoCheck(): Unit = js.native
+  def ngDoCheck(): Unit
 }
 object DoCheck {
   

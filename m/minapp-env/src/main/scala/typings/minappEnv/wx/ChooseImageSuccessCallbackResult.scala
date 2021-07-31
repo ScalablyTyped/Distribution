@@ -3,19 +3,17 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseImageSuccessCallbackResult extends StObject {
   
   /** 图片的本地临时文件路径列表 */
-  var tempFilePaths: Array[String] = js.native
+  var tempFilePaths: Array[String]
   
   /** 图片的本地临时文件列表
     *
     * 最低基础库： `1.2.0` */
-  var tempFiles: Array[ImageFile] = js.native
+  var tempFiles: Array[ImageFile]
 }
 object ChooseImageSuccessCallbackResult {
   

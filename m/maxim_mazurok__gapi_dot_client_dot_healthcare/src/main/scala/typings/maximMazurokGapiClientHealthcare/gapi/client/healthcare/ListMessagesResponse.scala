@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMessagesResponse extends StObject {
   
   /** The returned Messages. Won't be more Messages than the value of page_size in the request. See view for populated fields. */
-  var hl7V2Messages: js.UndefOr[js.Array[Message]] = js.native
+  var hl7V2Messages: js.UndefOr[js.Array[Message]] = js.undefined
   
   /** Token to retrieve the next page of results or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListMessagesResponse {
   

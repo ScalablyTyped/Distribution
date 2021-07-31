@@ -10,7 +10,6 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,22 +53,21 @@ object mod {
   
   type GetCallback = js.Function2[/* err */ Error, /* socket */ Socket, Unit]
   
-  @js.native
   trait JsftpOpts extends StObject {
     
     var createSocket: js.UndefOr[
         js.Function2[/* hasPortHost */ Host, /* firstAction */ js.Function0[js.Object], Socket]
-      ] = js.native
+      ] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var useList: js.UndefOr[Boolean] = js.native
+    var useList: js.UndefOr[Boolean] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object JsftpOpts {
     

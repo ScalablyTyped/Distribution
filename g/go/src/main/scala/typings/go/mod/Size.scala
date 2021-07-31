@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -70,21 +69,23 @@ class Size () extends StObject {
 }
 object Size {
   
+  @JSImport("go", "Size")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * This static function can be used to read in a Size from a string that was produced by Size.stringify.
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Size.parse")
-  @js.native
-  def parse(str: String): Size = js.native
+  @scala.inline
+  def parse(str: String): Size = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Size]
   
   /**
     * This static function can be used to write out a Size as a string that can be read by Size.parse.
     * @param {Size} val
     */
   /* static member */
-  @JSImport("go", "Size.stringify")
-  @js.native
-  def stringify(`val`: Size): String = js.native
+  @scala.inline
+  def stringify(`val`: Size): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

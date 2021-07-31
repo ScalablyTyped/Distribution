@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMLModelsOutput extends StObject {
   
   /**
     * The ID of the next page in the paginated results that indicates at least one more page follows.
     */
-  var NextToken: js.UndefOr[StringType] = js.native
+  var NextToken: js.UndefOr[StringType] = js.undefined
   
   /**
     * A list of MLModel that meet the search criteria.
     */
-  var Results: js.UndefOr[MLModels] = js.native
+  var Results: js.UndefOr[MLModels] = js.undefined
 }
 object DescribeMLModelsOutput {
   

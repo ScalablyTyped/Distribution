@@ -2,24 +2,22 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The desired order for a specific property.
   */
-@js.native
 trait SchemaPropertyOrder extends StObject {
   
   /**
     * The direction to order by. Defaults to `ASCENDING`.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * The property to order by.
     */
-  var property: js.UndefOr[SchemaPropertyReference] = js.native
+  var property: js.UndefOr[SchemaPropertyReference] = js.undefined
 }
 object SchemaPropertyOrder {
   

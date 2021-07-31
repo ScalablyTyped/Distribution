@@ -2,19 +2,18 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 数据缓存
-@js.native
 trait SetStorageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 需要存储的内容 */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /** 本地缓存中的指定的 key */
-  var key: String = js.native
+  var key: String
 }
 object SetStorageOptions {
   

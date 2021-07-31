@@ -2,7 +2,6 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interpolationConfigMod {
@@ -23,11 +22,13 @@ object interpolationConfigMod {
   /* static members */
   object InterpolationConfig {
     
-    @JSImport("@angular/compiler/src/ml_parser/interpolation_config", "InterpolationConfig.fromArray")
+    @JSImport("@angular/compiler/src/ml_parser/interpolation_config", "InterpolationConfig")
     @js.native
-    def fromArray(): InterpolationConfig = js.native
-    @JSImport("@angular/compiler/src/ml_parser/interpolation_config", "InterpolationConfig.fromArray")
-    @js.native
-    def fromArray(markers: js.Tuple2[String, String]): InterpolationConfig = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromArray(): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")().asInstanceOf[InterpolationConfig]
+    @scala.inline
+    def fromArray(markers: js.Tuple2[String, String]): InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(markers.asInstanceOf[js.Any]).asInstanceOf[InterpolationConfig]
   }
 }

@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * to be created for the target disk. Also specifies how many and how long
   * these scheduled snapshots should be retained.
   */
-@js.native
 trait SchemaResourcePolicySnapshotSchedulePolicy extends StObject {
   
   /**
     * Retention policy applied to snapshots created by this resource policy.
     */
-  var retentionPolicy: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.native
+  var retentionPolicy: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy] = js.undefined
   
   /**
     * A Vm Maintenance Policy specifies what kind of infrastructure maintenance
     * we are allowed to perform on this VM and when. Schedule that is applied
     * to disks covered by this policy.
     */
-  var schedule: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySchedule] = js.native
+  var schedule: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySchedule] = js.undefined
   
   /**
     * Properties with which snapshots are created such as labels, encryption
     * keys.
     */
-  var snapshotProperties: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties] = js.native
+  var snapshotProperties: js.UndefOr[SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties] = js.undefined
 }
 object SchemaResourcePolicySnapshotSchedulePolicy {
   

@@ -4,15 +4,15 @@ import typings.std.PermissionDescriptor
 import typings.std.PermissionName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileSystemPermissionDescriptor extends PermissionDescriptor {
+trait FileSystemPermissionDescriptor
+  extends StObject
+     with PermissionDescriptor {
   
-  var handle: FileSystemHandle = js.native
+  var handle: FileSystemHandle
   
-  var mode: js.UndefOr[FileSystemPermissionMode] = js.native
+  var mode: js.UndefOr[FileSystemPermissionMode] = js.undefined
 }
 object FileSystemPermissionDescriptor {
   

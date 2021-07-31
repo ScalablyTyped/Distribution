@@ -18,38 +18,38 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("node-fetch", JSImport.Default)
-    @js.native
-    def apply(url: RequestInfo): js.Promise[Response] = js.native
-    @JSImport("node-fetch", JSImport.Default)
-    @js.native
-    def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
+    @scala.inline
+    def apply(url: RequestInfo): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+    @scala.inline
+    def apply(url: RequestInfo, init: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
     
-    @JSImport("node-fetch", "default.isRedirect")
+    @JSImport("node-fetch", JSImport.Default)
     @js.native
-    def isRedirect(code: Double): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("node-fetch", "Blob")
   @js.native
   class Blob () extends StObject {
     def this(blobParts: js.Array[BlobPart]) = this()
-    def this(blobParts: js.UndefOr[scala.Nothing], options: BlobOptions) = this()
     def this(blobParts: js.Array[BlobPart], options: BlobOptions) = this()
+    def this(blobParts: Unit, options: BlobOptions) = this()
     
     val size: Double = js.native
     
     def slice(): Blob = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): Blob = js.native
     def slice(start: Double): Blob = js.native
     def slice(start: Double, end: Double): Blob = js.native
+    def slice(start: Unit, end: Double): Blob = js.native
     
     val `type`: String = js.native
   }
@@ -58,8 +58,8 @@ object mod {
   @js.native
   class Body () extends StObject {
     def this(body: js.Any) = this()
-    def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
     def this(body: js.Any, opts: Size) = this()
+    def this(body: Unit, opts: Size) = this()
     
     def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
     
@@ -71,7 +71,7 @@ object mod {
     
     def buffer(): js.Promise[Buffer] = js.native
     
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any] = js.native
     
     var size: Double = js.native
     
@@ -84,7 +84,9 @@ object mod {
   
   @JSImport("node-fetch", "FetchError")
   @js.native
-  class FetchError protected () extends Error {
+  class FetchError protected ()
+    extends StObject
+       with Error {
     def this(message: String, `type`: String) = this()
     def this(message: String, `type`: String, systemError: SystemError) = this()
     
@@ -92,6 +94,11 @@ object mod {
     
     var errno: js.UndefOr[String] = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     var name_FetchError: typings.nodeFetch.nodeFetchStrings.FetchError = js.native
     
@@ -101,7 +108,8 @@ object mod {
   @JSImport("node-fetch", "Headers")
   @js.native
   class Headers ()
-    extends Iterable[js.Tuple2[String, String]] {
+    extends StObject
+       with Iterable[js.Tuple2[String, String]] {
     def this(init: HeadersInit) = this()
     
     def append(name: String, value: String): Unit = js.native
@@ -166,7 +174,8 @@ object mod {
   @js.native
   class Response () extends Body {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
     
     var headers: Headers = js.native
     
@@ -185,21 +194,22 @@ object mod {
   /* static members */
   object Response {
     
-    @JSImport("node-fetch", "Response.error")
+    @JSImport("node-fetch", "Response")
     @js.native
-    def error(): Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("node-fetch", "Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): Response = js.native
+    @scala.inline
+    def error(): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Response]
+    
+    @scala.inline
+    def redirect(url: String, status: Double): Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[Response]
   }
   
-  @js.native
   trait BlobOptions extends StObject {
     
-    var endings: js.UndefOr[transparent | native] = js.native
+    var endings: js.UndefOr[transparent | native] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BlobOptions {
     
@@ -427,34 +437,33 @@ object mod {
   */
   type RequestInfo = _RequestInfo | String
   
-  @js.native
   trait RequestInit extends StObject {
     
     // node-fetch extensions
-    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.native
+    var agent: js.UndefOr[Agent | (js.Function1[/* parsedUrl */ URL_, Agent])] = js.undefined
     
     // whatwg/fetch standard options
-    var body: js.UndefOr[BodyInit] = js.native
+    var body: js.UndefOr[BodyInit] = js.undefined
     
     // =null http.Agent instance, allows custom proxy, certificate etc.
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
     // =true support gzip/deflate content encoding. false to disable
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[HeadersInit] = js.native
+    var headers: js.UndefOr[HeadersInit] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var redirect: js.UndefOr[RequestRedirect] = js.native
+    var redirect: js.UndefOr[RequestRedirect] = js.undefined
     
-    var signal: js.UndefOr[AbortSignal | Null] = js.native
+    var signal: js.UndefOr[AbortSignal | Null] = js.undefined
     
     // =20 maximum redirect count. 0 to not follow redirect
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     // =0 maximum response body size in bytes. 0 to disable
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RequestInit {
     
@@ -574,20 +583,19 @@ object mod {
     def manual: typings.nodeFetch.nodeFetchStrings.manual = "manual".asInstanceOf[typings.nodeFetch.nodeFetchStrings.manual]
   }
   
-  @js.native
   trait ResponseInit extends StObject {
     
-    var headers: js.UndefOr[HeadersInit] = js.native
+    var headers: js.UndefOr[HeadersInit] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ResponseInit {
     
@@ -671,10 +679,11 @@ object mod {
     def opaqueredirect: typings.nodeFetch.nodeFetchStrings.opaqueredirect = "opaqueredirect".asInstanceOf[typings.nodeFetch.nodeFetchStrings.opaqueredirect]
   }
   
-  @js.native
-  trait SystemError extends Error {
+  trait SystemError
+    extends StObject
+       with Error {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
   }
   object SystemError {
     
@@ -695,10 +704,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait URLLike extends _RequestInfo {
+  trait URLLike
+    extends StObject
+       with _RequestInfo {
     
-    var href: String = js.native
+    var href: String
   }
   object URLLike {
     

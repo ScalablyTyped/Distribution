@@ -6,7 +6,6 @@ import typings.react.mod.Props
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,22 +29,23 @@ object mod {
   
   type RedBox = Component[RedBoxProps, js.Object, js.Any]
   
-  @js.native
-  trait RedBoxProps extends Props[RedBoxError] {
+  trait RedBoxProps
+    extends StObject
+       with Props[RedBoxError] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var editorScheme: js.UndefOr[String] = js.native
+    var editorScheme: js.UndefOr[String] = js.undefined
     
-    var error: Error = js.native
+    var error: Error
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var useColumns: js.UndefOr[Boolean] = js.native
+    var useColumns: js.UndefOr[Boolean] = js.undefined
     
-    var useLines: js.UndefOr[Boolean] = js.native
+    var useLines: js.UndefOr[Boolean] = js.undefined
   }
   object RedBoxProps {
     

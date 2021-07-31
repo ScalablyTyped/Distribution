@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.GetApiKeyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.GetApiKeyResponse>> */
-@js.native
 trait ReadonlyPromiseGetApiKeyR extends StObject {
   
-  def `catch`[TResult](): js.Promise[GetApiKeyResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[GetApiKeyResponse | TResult]
   
-  def `finally`(): js.Promise[GetApiKeyResponse] = js.native
+  def `finally`(): js.Promise[GetApiKeyResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseGetApiKeyR {
   

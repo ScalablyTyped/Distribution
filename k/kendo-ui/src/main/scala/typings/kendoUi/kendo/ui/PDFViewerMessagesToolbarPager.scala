@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFViewerMessagesToolbarPager extends StObject {
   
-  var first: js.UndefOr[String] = js.native
+  var first: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var of: js.UndefOr[String] = js.native
+  var of: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
-  var pages: js.UndefOr[String] = js.native
+  var pages: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
 }
 object PDFViewerMessagesToolbarPager {
   

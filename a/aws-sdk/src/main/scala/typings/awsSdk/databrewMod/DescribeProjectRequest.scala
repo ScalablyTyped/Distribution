@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProjectRequest extends StObject {
   
   /**
     * The name of the project to be described.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
 }
 object DescribeProjectRequest {
   

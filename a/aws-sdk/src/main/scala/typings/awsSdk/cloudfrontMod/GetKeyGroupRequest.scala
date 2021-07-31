@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetKeyGroupRequest extends StObject {
   
   /**
     * The identifier of the key group that you are getting. To get the identifier, use ListKeyGroups.
     */
-  var Id: String = js.native
+  var Id: String
 }
 object GetKeyGroupRequest {
   

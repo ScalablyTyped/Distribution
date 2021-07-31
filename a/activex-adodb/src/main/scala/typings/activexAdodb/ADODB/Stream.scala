@@ -2,7 +2,6 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,150 +37,19 @@ trait Stream extends StObject {
     * @param Password [Password='']
     */
   def Open(): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
-  def Open(Source: js.UndefOr[scala.Nothing], Mode: js.UndefOr[scala.Nothing], Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: String,
-    Password: String
-  ): Unit = js.native
-  def Open(Source: js.UndefOr[scala.Nothing], Mode: ConnectModeEnum): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
-  def Open(Source: js.UndefOr[scala.Nothing], Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: StreamOpenOptionsEnum,
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: js.UndefOr[scala.Nothing],
-    Mode: ConnectModeEnum,
-    Options: StreamOpenOptionsEnum,
-    UserName: String,
-    Password: String
-  ): Unit = js.native
   def Open(Source: String): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
-  def Open(Source: String, Mode: js.UndefOr[scala.Nothing], Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(Source: String, Mode: js.UndefOr[scala.Nothing], Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: String,
-    Password: String
-  ): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: Unit, UserName: Unit, Password: String): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: StreamOpenOptionsEnum): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String, Password: String): Unit = js.native
+  def Open(Source: String, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: Unit, Password: String): Unit = js.native
   def Open(Source: String, Mode: ConnectModeEnum): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(Source: String, Mode: ConnectModeEnum, Options: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
+  def Open(Source: String, Mode: ConnectModeEnum, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: String, Mode: ConnectModeEnum, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: String, Mode: ConnectModeEnum, Options: Unit, UserName: Unit, Password: String): Unit = js.native
   def Open(Source: String, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: String,
-    Mode: ConnectModeEnum,
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
   def Open(Source: String, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
   def Open(
     Source: String,
@@ -190,73 +58,66 @@ trait Stream extends StObject {
     UserName: String,
     Password: String
   ): Unit = js.native
+  def Open(
+    Source: String,
+    Mode: ConnectModeEnum,
+    Options: StreamOpenOptionsEnum,
+    UserName: Unit,
+    Password: String
+  ): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: Unit, UserName: Unit, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: StreamOpenOptionsEnum): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: Unit, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum, Options: Unit, UserName: Unit, Password: String): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum): Unit = js.native
+  def Open(Source: Unit, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
+  def Open(
+    Source: Unit,
+    Mode: ConnectModeEnum,
+    Options: StreamOpenOptionsEnum,
+    UserName: String,
+    Password: String
+  ): Unit = js.native
+  def Open(
+    Source: Unit,
+    Mode: ConnectModeEnum,
+    Options: StreamOpenOptionsEnum,
+    UserName: Unit,
+    Password: String
+  ): Unit = js.native
   def Open(Source: Record): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String
-  ): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
-  def Open(Source: Record, Mode: js.UndefOr[scala.Nothing], Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(Source: Record, Mode: js.UndefOr[scala.Nothing], Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: js.UndefOr[scala.Nothing],
-    Options: StreamOpenOptionsEnum,
-    UserName: String,
-    Password: String
-  ): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: Unit, UserName: Unit, Password: String): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: StreamOpenOptionsEnum): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Record, Mode: Unit, Options: StreamOpenOptionsEnum, UserName: Unit, Password: String): Unit = js.native
   def Open(Source: Record, Mode: ConnectModeEnum): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
-  def Open(Source: Record, Mode: ConnectModeEnum, Options: js.UndefOr[scala.Nothing], UserName: String): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: ConnectModeEnum,
-    Options: js.UndefOr[scala.Nothing],
-    UserName: String,
-    Password: String
-  ): Unit = js.native
+  def Open(Source: Record, Mode: ConnectModeEnum, Options: Unit, UserName: String): Unit = js.native
+  def Open(Source: Record, Mode: ConnectModeEnum, Options: Unit, UserName: String, Password: String): Unit = js.native
+  def Open(Source: Record, Mode: ConnectModeEnum, Options: Unit, UserName: Unit, Password: String): Unit = js.native
   def Open(Source: Record, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum): Unit = js.native
-  def Open(
-    Source: Record,
-    Mode: ConnectModeEnum,
-    Options: StreamOpenOptionsEnum,
-    UserName: js.UndefOr[scala.Nothing],
-    Password: String
-  ): Unit = js.native
   def Open(Source: Record, Mode: ConnectModeEnum, Options: StreamOpenOptionsEnum, UserName: String): Unit = js.native
   def Open(
     Source: Record,
     Mode: ConnectModeEnum,
     Options: StreamOpenOptionsEnum,
     UserName: String,
+    Password: String
+  ): Unit = js.native
+  def Open(
+    Source: Record,
+    Mode: ConnectModeEnum,
+    Options: StreamOpenOptionsEnum,
+    UserName: Unit,
     Password: String
   ): Unit = js.native
   

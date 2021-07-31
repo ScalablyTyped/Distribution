@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductApprovalEvent extends StObject {
   
   /** Whether the product was approved or unapproved. This field will always be present. */
-  var approved: js.UndefOr[String] = js.native
+  var approved: js.UndefOr[String] = js.undefined
   
   /** The id of the product (e.g. "app:com.google.android.gm") for which the approval status has changed. This field will always be present. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object ProductApprovalEvent {
   

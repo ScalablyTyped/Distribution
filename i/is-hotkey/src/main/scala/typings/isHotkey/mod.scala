@@ -3,120 +3,93 @@ package typings.isHotkey
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-hotkey", JSImport.Default)
+  @JSImport("is-hotkey", JSImport.Namespace)
   @js.native
-  def default(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: String, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: String, options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: String, options: HotKeyOptions, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: js.Array[String], event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: js.Array[String], options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", JSImport.Default)
-  @js.native
-  def default(hotkey: js.Array[String], options: HotKeyOptions, event: KeyboardEvent): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("is-hotkey", "compareHotkey")
-  @js.native
-  def compareHotkey(`object`: HotKey, event: KeyboardEvent): Boolean = js.native
+  @scala.inline
+  def default(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def default(hotkey: String, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(hotkey: String, options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def default(hotkey: String, options: HotKeyOptions, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def default(hotkey: js.Array[String], event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(hotkey: js.Array[String], options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def default(hotkey: js.Array[String], options: HotKeyOptions, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("is-hotkey", "isCodeHotkey")
-  @js.native
-  def isCodeHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isCodeHotkey")
-  @js.native
-  def isCodeHotkey(hotkey: String, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", "isCodeHotkey")
-  @js.native
-  def isCodeHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isCodeHotkey")
-  @js.native
-  def isCodeHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = js.native
+  @scala.inline
+  def compareHotkey(`object`: HotKey, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareHotkey")(`object`.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: String, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: String, options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: String, options: HotKeyOptions, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: js.Array[String], options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isHotkey")
-  @js.native
-  def isHotkey(hotkey: js.Array[String], options: HotKeyOptions, event: KeyboardEvent): Boolean = js.native
+  @scala.inline
+  def isCodeHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isCodeHotkey(hotkey: String, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCodeHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isCodeHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isCodeHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCodeHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("is-hotkey", "isKeyHotkey")
-  @js.native
-  def isKeyHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isKeyHotkey")
-  @js.native
-  def isKeyHotkey(hotkey: String, event: KeyboardEvent): Boolean = js.native
-  @JSImport("is-hotkey", "isKeyHotkey")
-  @js.native
-  def isKeyHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = js.native
-  @JSImport("is-hotkey", "isKeyHotkey")
-  @js.native
-  def isKeyHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = js.native
+  @scala.inline
+  def isHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isHotkey(hotkey: String, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isHotkey(hotkey: String, options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isHotkey(hotkey: String, options: HotKeyOptions, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isHotkey(hotkey: js.Array[String], options: HotKeyOptions): js.Function1[/* event */ KeyboardEvent, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isHotkey(hotkey: js.Array[String], options: HotKeyOptions, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHotkey")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("is-hotkey", "parseHotkey")
-  @js.native
-  def parseHotkey(hotkey: String): HotKey = js.native
-  @JSImport("is-hotkey", "parseHotkey")
-  @js.native
-  def parseHotkey(hotkey: String, options: HotKeyOptions): HotKey = js.native
+  @scala.inline
+  def isKeyHotkey(hotkey: String): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isKeyHotkey(hotkey: String, event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isKeyHotkey(hotkey: js.Array[String]): js.Function1[/* event */ KeyboardEvent, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ KeyboardEvent, Boolean]]
+  @scala.inline
+  def isKeyHotkey(hotkey: js.Array[String], event: KeyboardEvent): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKeyHotkey")(hotkey.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("is-hotkey", "toKeyCode")
-  @js.native
-  def toKeyCode(name: String): Double = js.native
+  @scala.inline
+  def parseHotkey(hotkey: String): HotKey = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHotkey")(hotkey.asInstanceOf[js.Any]).asInstanceOf[HotKey]
+  @scala.inline
+  def parseHotkey(hotkey: String, options: HotKeyOptions): HotKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHotkey")(hotkey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HotKey]
   
-  @JSImport("is-hotkey", "toKeyName")
-  @js.native
-  def toKeyName(name: String): String = js.native
+  @scala.inline
+  def toKeyCode(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toKeyCode")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def toKeyName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKeyName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait HotKey extends StObject {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
     
-    var which: js.UndefOr[Double] = js.native
+    var which: js.UndefOr[Double] = js.undefined
   }
   object HotKey {
     
@@ -155,10 +128,9 @@ object mod {
     }
   }
   
-  @js.native
   trait HotKeyOptions extends StObject {
     
-    var byKey: Boolean = js.native
+    var byKey: Boolean
   }
   object HotKeyOptions {
     

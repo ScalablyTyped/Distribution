@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileModeEnumValues extends EmbindEnum {
+trait TileModeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Clamp: TileMode = js.native
+  var Clamp: TileMode
   
-  var Decal: TileMode = js.native
+  var Decal: TileMode
   
-  var Mirror: TileMode = js.native
+  var Mirror: TileMode
   
-  var Repeat: TileMode = js.native
+  var Repeat: TileMode
 }
 object TileModeEnumValues {
   

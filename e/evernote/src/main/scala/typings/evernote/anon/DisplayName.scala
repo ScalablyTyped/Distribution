@@ -5,19 +5,17 @@ import typings.evernote.mod.Types.UserID
 import typings.evernote.mod.Types.UserIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayName extends StObject {
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var privilege: js.UndefOr[ShareRelationshipPrivilegeLevel] = js.native
+  var privilege: js.UndefOr[ShareRelationshipPrivilegeLevel] = js.undefined
   
-  var recipientUserIdentity: js.UndefOr[UserIdentity] = js.native
+  var recipientUserIdentity: js.UndefOr[UserIdentity] = js.undefined
   
-  var sharerUserId: js.UndefOr[UserID] = js.native
+  var sharerUserId: js.UndefOr[UserID] = js.undefined
 }
 object DisplayName {
   

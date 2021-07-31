@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Configuration extends StObject {
   
   /**
     * ARN of the S3 bucket that contains the data.
     */
-  var BucketARN: typings.awsSdk.kinesisanalyticsMod.BucketARN = js.native
+  var BucketARN: typings.awsSdk.kinesisanalyticsMod.BucketARN
   
   /**
     * The name of the object that contains the data.
     */
-  var FileKey: typings.awsSdk.kinesisanalyticsMod.FileKey = js.native
+  var FileKey: typings.awsSdk.kinesisanalyticsMod.FileKey
   
   /**
     * IAM ARN of the role used to access the data.
     */
-  var RoleARN: typings.awsSdk.kinesisanalyticsMod.RoleARN = js.native
+  var RoleARN: typings.awsSdk.kinesisanalyticsMod.RoleARN
 }
 object S3Configuration {
   

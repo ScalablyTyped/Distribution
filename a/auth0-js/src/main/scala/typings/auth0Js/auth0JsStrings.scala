@@ -4,13 +4,14 @@ import typings.auth0Js.mod.LibErrorCodes
 import typings.auth0Js.mod._SpecErrorCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object auth0JsStrings {
   
   @js.native
-  sealed trait account_selection_required extends _SpecErrorCodes
+  sealed trait account_selection_required
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def account_selection_required: account_selection_required = "account_selection_required".asInstanceOf[account_selection_required]
   
@@ -50,17 +51,23 @@ object auth0JsStrings {
   def interaction_required: interaction_required = "interaction_required".asInstanceOf[interaction_required]
   
   @js.native
-  sealed trait invalid_request_object extends _SpecErrorCodes
+  sealed trait invalid_request_object
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def invalid_request_object: invalid_request_object = "invalid_request_object".asInstanceOf[invalid_request_object]
   
   @js.native
-  sealed trait invalid_request_uri extends _SpecErrorCodes
+  sealed trait invalid_request_uri
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def invalid_request_uri: invalid_request_uri = "invalid_request_uri".asInstanceOf[invalid_request_uri]
   
   @js.native
-  sealed trait invalid_token extends LibErrorCodes
+  sealed trait invalid_token
+    extends StObject
+       with LibErrorCodes
   @scala.inline
   def invalid_token: invalid_token = "invalid_token".asInstanceOf[invalid_token]
   
@@ -85,22 +92,30 @@ object auth0JsStrings {
   def recaptcha_v2: recaptcha_v2 = "recaptcha_v2".asInstanceOf[recaptcha_v2]
   
   @js.native
-  sealed trait registration_not_supported extends _SpecErrorCodes
+  sealed trait registration_not_supported
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def registration_not_supported: registration_not_supported = "registration_not_supported".asInstanceOf[registration_not_supported]
   
   @js.native
-  sealed trait request_error extends LibErrorCodes
+  sealed trait request_error
+    extends StObject
+       with LibErrorCodes
   @scala.inline
   def request_error: request_error = "request_error".asInstanceOf[request_error]
   
   @js.native
-  sealed trait request_not_supported extends _SpecErrorCodes
+  sealed trait request_not_supported
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def request_not_supported: request_not_supported = "request_not_supported".asInstanceOf[request_not_supported]
   
   @js.native
-  sealed trait request_uri_not_supported extends _SpecErrorCodes
+  sealed trait request_uri_not_supported
+    extends StObject
+       with _SpecErrorCodes
   @scala.inline
   def request_uri_not_supported: request_uri_not_supported = "request_uri_not_supported".asInstanceOf[request_uri_not_supported]
   
@@ -120,7 +135,9 @@ object auth0JsStrings {
   def sms: sms = "sms".asInstanceOf[sms]
   
   @js.native
-  sealed trait timeout extends LibErrorCodes
+  sealed trait timeout
+    extends StObject
+       with LibErrorCodes
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   

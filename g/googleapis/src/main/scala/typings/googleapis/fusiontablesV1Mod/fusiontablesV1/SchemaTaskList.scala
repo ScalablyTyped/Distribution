@@ -2,35 +2,33 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a list of tasks for a table.
   */
-@js.native
 trait SchemaTaskList extends StObject {
   
   /**
     * List of all requested tasks.
     */
-  var items: js.UndefOr[js.Array[SchemaTask]] = js.native
+  var items: js.UndefOr[js.Array[SchemaTask]] = js.undefined
   
   /**
     * Type of the resource. This is always &quot;fusiontables#taskList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access the next page of this result. No token is displayed
     * if there are no more pages left.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of tasks for the table.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaTaskList {
   

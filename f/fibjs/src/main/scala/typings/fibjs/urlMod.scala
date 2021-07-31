@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,20 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object urlMod {
   
-  @JSImport("url", "format")
+  @JSImport("url", JSImport.Namespace)
   @js.native
-  def format(args: js.Object): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("url", "parse")
-  @js.native
-  def parse(url: String): ClassUrlObject = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): ClassUrlObject = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(url: String, parseQueryString: Boolean): ClassUrlObject = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = js.native
+  @scala.inline
+  def format(args: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def parse(url: String): ClassUrlObject = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[ClassUrlObject]
+  @scala.inline
+  def parse(url: String, parseQueryString: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
+  @scala.inline
+  def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
+  @scala.inline
+  def parse(url: String, parseQueryString: Unit, slashesDenoteHost: Boolean): ClassUrlObject = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[ClassUrlObject]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResponse extends StObject {
   
   /**
     *  The column data types of the returned result set. 
     */
-  var ColumnInfo: ColumnInfoList = js.native
+  var ColumnInfo: ColumnInfoList
   
   /**
     *  A pagination token that can be used again on a Query call to get the next set of results. 
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     *  A unique ID for the given query. 
     */
-  var QueryId: typings.awsSdk.timestreamqueryMod.QueryId = js.native
+  var QueryId: typings.awsSdk.timestreamqueryMod.QueryId
   
   /**
     *  The result set rows returned by the query. 
     */
-  var Rows: RowList = js.native
+  var Rows: RowList
 }
 object QueryResponse {
   

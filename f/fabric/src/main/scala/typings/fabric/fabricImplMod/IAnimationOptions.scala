@@ -2,41 +2,39 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnimationOptions extends StObject {
   
   /**
     *  Value to modify the property by, default: end - start
     */
-  var by: js.UndefOr[Double] = js.native
+  var by: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 500 (ms). Can be used to change duration of an animation.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Easing function. Default: fabric.util.ease.easeInSine
     */
-  var easing: js.UndefOr[js.Function] = js.native
+  var easing: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Allows to specify starting value of animatable property (if we don't want current value to be used).
     */
-  var from: js.UndefOr[String | Double] = js.native
+  var from: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Callback; invoked on every value change
     */
-  var onChange: js.UndefOr[js.Function] = js.native
+  var onChange: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Callback; invoked when value change is completed
     */
-  var onComplete: js.UndefOr[js.Function] = js.native
+  var onComplete: js.UndefOr[js.Function] = js.undefined
 }
 object IAnimationOptions {
   

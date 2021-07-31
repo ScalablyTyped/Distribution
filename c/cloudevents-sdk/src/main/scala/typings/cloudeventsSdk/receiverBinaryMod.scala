@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.cloudeventsSdk.cloudeventMod.CE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiverBinaryMod {
@@ -22,8 +21,37 @@ object receiverBinaryMod {
     *
     * @param {string} version the Cloud Event specification version to use. Default "1.0"
     */
-  class ^ () extends BinaryHTTPReceiver {
+  class ^ ()
+    extends StObject
+       with BinaryHTTPReceiver {
     def this(version: String) = this()
+    
+    /**
+      * Checks an incoming HTTP request to determine if it conforms to the
+      * Cloud Event specification for this receiver.
+      *
+      * @param {Object} payload the HTTP request body
+      * @param {Object} headers  the HTTP request headers
+      * @returns {boolean} true if the the provided payload and headers conform to the spec
+      * @throws {ValidationError} if the event does not conform to the spec
+      */
+    /* CompleteClass */
+    override def check(payload: js.Object, headers: js.Object): Boolean = js.native
+    
+    /**
+      * Parses an incoming HTTP request, converting it to a {CloudEvent}
+      * instance if it conforms to the Cloud Event specification for this receiver.
+      *
+      * @param {Object} payload the HTTP request body
+      * @param {Object} headers the HTTP request headers
+      * @returns {CloudEvent} an instance of CloudEvent representing the incoming request
+      * @throws {ValidationError} of the event does not conform to the spec
+      */
+    /* CompleteClass */
+    override def parse(payload: js.Object, headers: js.Object): CloudEvent = js.native
+    
+    /* CompleteClass */
+    var receiver: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^ = js.native
   }
   
   /** @typedef {import("../../cloudevent")} CloudEvent */
@@ -32,7 +60,6 @@ object receiverBinaryMod {
     * if you know that all incoming events will be using binary transport. If
     * events can come as either binary or structured, use {HTTPReceiver}.
     */
-  @js.native
   trait BinaryHTTPReceiver extends StObject {
     
     /**
@@ -44,7 +71,7 @@ object receiverBinaryMod {
       * @returns {boolean} true if the the provided payload and headers conform to the spec
       * @throws {ValidationError} if the event does not conform to the spec
       */
-    def check(payload: js.Object, headers: js.Object): Boolean = js.native
+    def check(payload: js.Object, headers: js.Object): Boolean
     
     /**
       * Parses an incoming HTTP request, converting it to a {CloudEvent}
@@ -55,9 +82,9 @@ object receiverBinaryMod {
       * @returns {CloudEvent} an instance of CloudEvent representing the incoming request
       * @throws {ValidationError} of the event does not conform to the spec
       */
-    def parse(payload: js.Object, headers: js.Object): CloudEvent = js.native
+    def parse(payload: js.Object, headers: js.Object): CloudEvent
     
-    var receiver: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^ = js.native
+    var receiver: typings.cloudeventsSdk.receiverBinary1Mod.^ | typings.cloudeventsSdk.receiverBinary03Mod.^
   }
   object BinaryHTTPReceiver {
     
@@ -85,10 +112,9 @@ object receiverBinaryMod {
     }
   }
   
-  @js.native
   trait CloudEvent extends StObject {
     
-    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent] = js.native
+    var CloudEvent: Instantiable1[/* event */ CE, typings.cloudeventsSdk.cloudeventMod.CloudEvent]
   }
   object CloudEvent {
     

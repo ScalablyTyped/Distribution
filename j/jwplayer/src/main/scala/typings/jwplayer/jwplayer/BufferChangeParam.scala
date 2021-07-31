@@ -2,19 +2,17 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferChangeParam extends StObject {
   
-  var bufferPercent: Double = js.native
+  var bufferPercent: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
   
-  var position: Double = js.native
+  var position: Double
 }
 object BufferChangeParam {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSuite extends StObject {
   
   /** Collection of test cases associated with the `TestSuite`. */
-  var testCases: js.UndefOr[js.Array[TestCase]] = js.native
+  var testCases: js.UndefOr[js.Array[TestCase]] = js.undefined
 }
 object TestSuite {
   

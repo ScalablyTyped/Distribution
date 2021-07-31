@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the generic interface for supporting the creation and removal of elements with unique identifiers.
   * @see XContainer
   */
-@js.native
-trait XIdentifierContainer extends XIdentifierReplace {
+trait XIdentifierContainer
+  extends StObject
+     with XIdentifierReplace {
   
   /**
     * inserts an element and creates a new unique identifier for it.
@@ -21,7 +21,7 @@ trait XIdentifierContainer extends XIdentifierReplace {
     * @throws com::sun::star::lang::IllegalArgumentException if the argument is not vailid for this container.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def insert(aElement: js.Any): Double = js.native
+  def insert(aElement: js.Any): Double
   
   /**
     * removes the element with the specified identifier.
@@ -29,7 +29,7 @@ trait XIdentifierContainer extends XIdentifierReplace {
     * @throws com::sun::star::lang::NoSuchElementException If the identifier does not exist.
     * @throws com::sun::star::lang::WrappedTargetException If the implementation has internal reasons for exceptions, then wrap these in a {@link com.sun.star.
     */
-  def removeByIdentifier(Identifier: Double): Unit = js.native
+  def removeByIdentifier(Identifier: Double): Unit
 }
 object XIdentifierContainer {
   

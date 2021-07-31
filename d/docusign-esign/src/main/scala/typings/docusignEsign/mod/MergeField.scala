@@ -2,73 +2,71 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeField extends StObject {
   
   /**
     * When **true**, the sender can modify the value of the `mergeField` tab during the sending process.
     */
-  var allowSenderToEdit: js.UndefOr[String] = js.native
+  var allowSenderToEdit: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `allowSenderToEdit` property.
     */
-  var allowSenderToEditMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var allowSenderToEditMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * If you are using merge fields, this property specifies the type of the merge field. The only supported value is `salesforce`.
     */
-  var configurationType: js.UndefOr[String] = js.native
+  var configurationType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `configurationType` property.
     */
-  var configurationTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var configurationTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Sets the object associated with the custom tab. Currently this is the Salesforce object.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var pathExtended: js.UndefOr[js.Array[PathExtendedElement]] = js.native
+  var pathExtended: js.UndefOr[js.Array[PathExtendedElement]] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var pathExtendedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var pathExtendedMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Metadata that indicates whether the `path` property is editable.
     *
     */
-  var pathMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var pathMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Specifies the row number in a Salesforce table that the merge field value corresponds to.
     */
-  var row: js.UndefOr[String] = js.native
+  var row: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `row` property is editable.
     *
     */
-  var rowMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var rowMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * When **true**, data entered into the merge field during Signing will update the mapped Salesforce field.
     */
-  var writeBack: js.UndefOr[String] = js.native
+  var writeBack: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates if the sender can edit the `writeBack` property.
     */
-  var writeBackMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var writeBackMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object MergeField {
   

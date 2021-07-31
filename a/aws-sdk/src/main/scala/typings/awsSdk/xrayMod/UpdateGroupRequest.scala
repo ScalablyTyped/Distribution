@@ -2,31 +2,29 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGroupRequest extends StObject {
   
   /**
     * The updated filter expression defining criteria by which to group traces.
     */
-  var FilterExpression: js.UndefOr[typings.awsSdk.xrayMod.FilterExpression] = js.native
+  var FilterExpression: js.UndefOr[typings.awsSdk.xrayMod.FilterExpression] = js.undefined
   
   /**
     * The ARN that was generated upon creation.
     */
-  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.native
+  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.undefined
   
   /**
     * The case-sensitive name of the group.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.undefined
   
   /**
     * The structure containing configurations related to insights.   The InsightsEnabled boolean can be set to true to enable insights for the group or false to disable insights for the group.   The NotifcationsEnabled boolean can be set to true to enable insights notifications for the group. Notifications can only be enabled on a group with InsightsEnabled set to true.  
     */
-  var InsightsConfiguration: js.UndefOr[typings.awsSdk.xrayMod.InsightsConfiguration] = js.native
+  var InsightsConfiguration: js.UndefOr[typings.awsSdk.xrayMod.InsightsConfiguration] = js.undefined
 }
 object UpdateGroupRequest {
   

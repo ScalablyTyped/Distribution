@@ -2,20 +2,18 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientIdentityPhoneNumber extends StObject {
   
   /**
     * The three-letter code for the user's country.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
 }
 object RecipientIdentityPhoneNumber {
   

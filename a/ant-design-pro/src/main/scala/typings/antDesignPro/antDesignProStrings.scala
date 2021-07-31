@@ -3,13 +3,14 @@ package typings.antDesignPro
 import typings.antDesignPro.avatarItemMod._SizeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignProStrings {
   
   @js.native
-  sealed trait default extends _SizeType
+  sealed trait default
+    extends StObject
+       with _SizeType
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -69,7 +70,9 @@ object antDesignProStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait large extends _SizeType
+  sealed trait large
+    extends StObject
+       with _SizeType
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
@@ -84,7 +87,9 @@ object antDesignProStrings {
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait small extends _SizeType
+  sealed trait small
+    extends StObject
+       with _SizeType
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   

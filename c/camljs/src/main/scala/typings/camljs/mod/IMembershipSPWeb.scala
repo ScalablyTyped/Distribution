@@ -2,21 +2,19 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DEPRECATED!! Please use UserField(...).IsInSPWeb* methods instead. This interface will be removed in the next release */
-@js.native
 trait IMembershipSPWeb extends StObject {
   
   /** DEPRECATED. Please use UserField(...).IsInSPWebAllUsers() instead */
-  def AllUsers(): IExpression = js.native
+  def AllUsers(): IExpression
   
   /** DEPRECATED. Please use UserField(...).IsInSPWebGroups() instead */
-  def Groups(): IExpression = js.native
+  def Groups(): IExpression
   
   /** DEPRECATED. Please use UserField(...).IsInSPWebUsers() instead */
-  def Users(): IExpression = js.native
+  def Users(): IExpression
 }
 object IMembershipSPWeb {
   

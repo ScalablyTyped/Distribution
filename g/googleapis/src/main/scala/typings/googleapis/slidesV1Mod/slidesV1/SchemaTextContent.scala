@@ -3,26 +3,24 @@ package typings.googleapis.slidesV1Mod.slidesV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The general text content. The text must reside in a compatible shape (e.g.
   * text box or rectangle) or a table cell in a page.
   */
-@js.native
 trait SchemaTextContent extends StObject {
   
   /**
     * The bulleted lists contained in this text, keyed by list ID.
     */
-  var lists: js.UndefOr[StringDictionary[SchemaList]] = js.native
+  var lists: js.UndefOr[StringDictionary[SchemaList]] = js.undefined
   
   /**
     * The text contents broken down into its component parts, including styling
     * information. This property is read-only.
     */
-  var textElements: js.UndefOr[js.Array[SchemaTextElement]] = js.native
+  var textElements: js.UndefOr[js.Array[SchemaTextElement]] = js.undefined
 }
 object SchemaTextContent {
   

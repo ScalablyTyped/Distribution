@@ -8,10 +8,13 @@ import typings.rcMotion.rcMotionStrings.removed
 import typings.react.mod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffMod {
+  
+  @JSImport("rc-motion/es/util/diff", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-motion/es/util/diff", "STATUS_ADD")
   @js.native
@@ -29,29 +32,22 @@ object diffMod {
   @js.native
   val STATUS_REMOVED: removed = js.native
   
-  @JSImport("rc-motion/es/util/diff", "diffKeys")
-  @js.native
-  def diffKeys(): js.Array[KeyObject] = js.native
-  @JSImport("rc-motion/es/util/diff", "diffKeys")
-  @js.native
-  def diffKeys(prevKeys: js.UndefOr[scala.Nothing], currentKeys: js.Array[KeyObject]): js.Array[KeyObject] = js.native
-  @JSImport("rc-motion/es/util/diff", "diffKeys")
-  @js.native
-  def diffKeys(prevKeys: js.Array[KeyObject]): js.Array[KeyObject] = js.native
-  @JSImport("rc-motion/es/util/diff", "diffKeys")
-  @js.native
-  def diffKeys(prevKeys: js.Array[KeyObject], currentKeys: js.Array[KeyObject]): js.Array[KeyObject] = js.native
+  @scala.inline
+  def diffKeys(): js.Array[KeyObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")().asInstanceOf[js.Array[KeyObject]]
+  @scala.inline
+  def diffKeys(prevKeys: js.Array[KeyObject]): js.Array[KeyObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")(prevKeys.asInstanceOf[js.Any]).asInstanceOf[js.Array[KeyObject]]
+  @scala.inline
+  def diffKeys(prevKeys: js.Array[KeyObject], currentKeys: js.Array[KeyObject]): js.Array[KeyObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")(prevKeys.asInstanceOf[js.Any], currentKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[KeyObject]]
+  @scala.inline
+  def diffKeys(prevKeys: Unit, currentKeys: js.Array[KeyObject]): js.Array[KeyObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("diffKeys")(prevKeys.asInstanceOf[js.Any], currentKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[KeyObject]]
   
-  @JSImport("rc-motion/es/util/diff", "parseKeys")
-  @js.native
-  def parseKeys(): js.Array[Status] = js.native
-  @JSImport("rc-motion/es/util/diff", "parseKeys")
-  @js.native
-  def parseKeys(keys: js.Array[_]): js.Array[Status] = js.native
+  @scala.inline
+  def parseKeys(): js.Array[Status] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeys")().asInstanceOf[js.Array[Status]]
+  @scala.inline
+  def parseKeys(keys: js.Array[js.Any]): js.Array[Status] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeys")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Array[Status]]
   
-  @JSImport("rc-motion/es/util/diff", "wrapKeyToObject")
-  @js.native
-  def wrapKeyToObject(key: Key): Status = js.native
+  @scala.inline
+  def wrapKeyToObject(key: Key): Status = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapKeyToObject")(key.asInstanceOf[js.Any]).asInstanceOf[Status]
   
   /* Rewritten from type alias, can be one of: 
     - typings.rcMotion.rcMotionStrings.add
@@ -75,12 +71,11 @@ object diffMod {
     def removed: typings.rcMotion.rcMotionStrings.removed = "removed".asInstanceOf[typings.rcMotion.rcMotionStrings.removed]
   }
   
-  @js.native
   trait KeyObject extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var status: js.UndefOr[DiffStatus] = js.native
+    var status: js.UndefOr[DiffStatus] = js.undefined
   }
   object KeyObject {
     

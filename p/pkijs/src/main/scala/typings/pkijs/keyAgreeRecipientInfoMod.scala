@@ -3,60 +3,84 @@ package typings.pkijs
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyAgreeRecipientInfoMod {
   
   @JSImport("pkijs/src/KeyAgreeRecipientInfo", JSImport.Default)
   @js.native
-  class default () extends KeyAgreeRecipientInfo {
+  class default ()
+    extends StObject
+       with KeyAgreeRecipientInfo {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    
+    /* CompleteClass */
+    var originator: typings.pkijs.originatorIdentifierOrKeyMod.default = js.native
+    
+    /* CompleteClass */
+    var recipientCertificate: typings.pkijs.certificateMod.default = js.native
+    
+    /* CompleteClass */
+    var recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var version: Double = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/KeyAgreeRecipientInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/KeyAgreeRecipientInfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/KeyAgreeRecipientInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/KeyAgreeRecipientInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/KeyAgreeRecipientInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait KeyAgreeRecipientInfo extends StObject {
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default
     
-    var originator: typings.pkijs.originatorIdentifierOrKeyMod.default = js.native
+    var originator: typings.pkijs.originatorIdentifierOrKeyMod.default
     
-    var recipientCertificate: typings.pkijs.certificateMod.default = js.native
+    var recipientCertificate: typings.pkijs.certificateMod.default
     
-    var recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default = js.native
+    var recipientEncryptedKeys: typings.pkijs.recipientEncryptedKeysMod.default
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var ukm: js.UndefOr[OctetString] = js.native
+    var ukm: js.UndefOr[OctetString] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object KeyAgreeRecipientInfo {
     

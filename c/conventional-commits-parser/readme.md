@@ -10,9 +10,9 @@ Parse raw conventional commits
 | ------------------ | :-------------: |
 | Full name          | conventional-commits-parser |
 | Keywords           | conventional-commits-parser, changelog, conventional, parser, parsing, logs |
-| # releases         | 9 |
-| # dependents       | 83 |
-| # downloads        | 76534774 |
+| # releases         | 8 |
+| # dependents       | 104 |
+| # downloads        | 93205996 |
 | # stars            | 1 |
 
 ## Links

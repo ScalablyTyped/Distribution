@@ -4,13 +4,16 @@ import typings.std.DocumentFragment
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "TemplateCache")
 @js.native
-class TemplateCache () extends DomMixin {
+class TemplateCache ()
+  extends StObject
+     with DomMixin {
   
+  /* CompleteClass */
+  var appendChildren: js.Any = js.native
   /**
     * Takes the DOM node el and appends the rendered children to the end of
     * the element's contents.
@@ -20,6 +23,8 @@ class TemplateCache () extends DomMixin {
   @JSName("appendChildren")
   def appendChildren_MTemplateCache(el: js.Any, children: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var beforeEl: js.Any = js.native
   /**
     * Add sibling to the DOM immediately before the DOM node el. The
     * sibling will be at the same level as el.
@@ -39,6 +44,8 @@ class TemplateCache () extends DomMixin {
   def compileTemplate(rawTemplate: js.Any): js.Any = js.native
   def compileTemplate(rawTemplate: js.Any, options: js.Any): js.Any = js.native
   
+  /* CompleteClass */
+  var createBuffer: js.Any = js.native
   /**
     * Returns a new HTML DOM node instance. The resulting node can be
     * passed into the other DOM functions.
@@ -46,6 +53,8 @@ class TemplateCache () extends DomMixin {
   @JSName("createBuffer")
   def createBuffer_MTemplateCache(): DocumentFragment = js.native
   
+  /* CompleteClass */
+  var detachContents: js.Any = js.native
   /**
     * Remove the inner contents of el from the DOM while leaving el itself
     * in the DOM.
@@ -54,6 +63,8 @@ class TemplateCache () extends DomMixin {
   @JSName("detachContents")
   def detachContents_MTemplateCache(el: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var detachEl: js.Any = js.native
   /**
     * Detach el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
@@ -61,6 +72,8 @@ class TemplateCache () extends DomMixin {
   @JSName("detachEl")
   def detachEl_MTemplateCache(el: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var findEls: js.Any = js.native
   /**
     * Lookup the selector string within the DOM node for context. The
     * optional context argument will come in as a DOM Node reference to run
@@ -87,6 +100,8 @@ class TemplateCache () extends DomMixin {
   def loadTemplate(templateId: String): js.Any = js.native
   def loadTemplate(templateId: String, options: js.Any): js.Any = js.native
   
+  /* CompleteClass */
+  var removeEl: js.Any = js.native
   /**
     * Remove el from the DOM.
     * @param el is a jQuery argument: https://api.jquery.com/jQuery/
@@ -94,12 +109,16 @@ class TemplateCache () extends DomMixin {
   @JSName("removeEl")
   def removeEl_MTemplateCache(el: js.Any): Unit = js.native
   
+  /* CompleteClass */
+  var replaceEl: js.Any = js.native
   /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
   @JSName("replaceEl")
   def replaceEl_MTemplateCache(newEl: HTMLElement, oldEL: HTMLElement): Unit = js.native
   
+  /* CompleteClass */
+  var setInnerContent: js.Any = js.native
   /**
     * Replace the contents of el with the HTML string of html. Unlike other
     * DOM functions, this takes a literal string for its second argument.
@@ -112,15 +131,18 @@ class TemplateCache () extends DomMixin {
 /* static members */
 object TemplateCache {
   
+  @JSImport("backbone.marionette", "TemplateCache")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * You can clear one or more, or all items from the cache using the clear
     * method. Clearing a template from the cache will force it to re-load
     * from the DOM the next time it is retrieved.
     * @param  the templateId used for loading / caching of the templates to clear. If none specified, all templates will be cleared from the cache.
     */
-  @JSImport("backbone.marionette", "TemplateCache.clear")
-  @js.native
-  def clear(templateId: String*): Unit = js.native
+  @scala.inline
+  def clear(templateId: String*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(templateId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * To use the TemplateCache, call the get method on TemplateCache
@@ -128,10 +150,8 @@ object TemplateCache {
     * created and stored but you do not have to manually create these
     * instances yourself. get will return a compiled template function.
     */
-  @JSImport("backbone.marionette", "TemplateCache.get")
-  @js.native
-  def get(templateId: String): js.Any = js.native
-  @JSImport("backbone.marionette", "TemplateCache.get")
-  @js.native
-  def get(templateId: String, options: js.Any): js.Any = js.native
+  @scala.inline
+  def get(templateId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def get(templateId: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(templateId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

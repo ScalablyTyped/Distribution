@@ -2,43 +2,43 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents field schema in Grid mode and on list forms.
   Consider casting objects of this type to more specific field types, e.g. FieldSchemaInForm_Lookup */
-@js.native
-trait FieldSchemaInForm extends FieldSchema {
+trait FieldSchemaInForm
+  extends StObject
+     with FieldSchema {
   
   /** Description for this field. */
-  var Description: String = js.native
+  var Description: String
   
   /** Direction of the reading order for the field. */
-  var Direction: String = js.native
+  var Direction: String
   
   /** Indicates whether the field is hidden */
-  var Hidden: Boolean = js.native
+  var Hidden: Boolean
   
   /** Specifies Input Method Editor (IME) mode bias to use for the field.
     The IME enables conversion of keystrokes between languages when one writing system has more characters than can be encoded for the given keyboard. */
-  var IMEMode: js.Any = js.native
+  var IMEMode: js.Any
   
   /** Guid of the field */
-  var Id: String = js.native
+  var Id: String
   
   /** Specifies if the field is read only */
-  var ReadOnlyField: Boolean = js.native
+  var ReadOnlyField: Boolean
   
   /** Specifies wherever field requires values */
-  var Required: Boolean = js.native
+  var Required: Boolean
   
-  var RestrictedMode: Boolean = js.native
+  var RestrictedMode: Boolean
   
   /** Title of the field */
-  var Title: String = js.native
+  var Title: String
   
   /** If SPFarm.Local.UseMinWidthForHtmlPicker is true, UseMinWidth will be set to true. Undefined in other cases. */
-  var UseMinWidth: Boolean = js.native
+  var UseMinWidth: Boolean
 }
 object FieldSchemaInForm {
   

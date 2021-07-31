@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentVisibility extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait DocumentVisibility extends StObject {
     * The values `1`, `2`, `3`, and so on are typically used to identify the first few documents in an envelope. Tab definitions include a `documentId` property
     * that specifies the document on which to place the tab.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId` must be unique,
     * but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the document is editable:
@@ -34,12 +32,12 @@ trait DocumentVisibility extends StObject {
     * - `editable`
     * - `read_only`
     */
-  var rights: js.UndefOr[String] = js.native
+  var rights: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the document is visible to the recipient.
     */
-  var visible: js.UndefOr[String] = js.native
+  var visible: js.UndefOr[String] = js.undefined
 }
 object DocumentVisibility {
   

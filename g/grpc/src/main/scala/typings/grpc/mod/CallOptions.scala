@@ -3,41 +3,40 @@ package typings.grpc.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallOptions
-  extends /* field */ StringDictionary[js.Any] {
+  extends StObject
+     with /* field */ StringDictionary[js.Any] {
   
   /**
     * The credentials that should be used to make this particular call.
     */
-  var credentials: js.UndefOr[CallCredentials] = js.native
+  var credentials: js.UndefOr[CallCredentials] = js.undefined
   
   /**
     * The deadline for the entire call to complete.
     */
-  var deadline: js.UndefOr[Deadline] = js.native
+  var deadline: js.UndefOr[Deadline] = js.undefined
   
   /**
     * Server hostname to set on the call. Only meaningful if different from
     * the server address used to construct the client.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Parent call. Used in servers when making a call as part of the process
     * of handling a call. Used to propagate some information automatically,
     * as specified by propagate_flags.
     */
-  var parent: js.UndefOr[Call] = js.native
+  var parent: js.UndefOr[Call] = js.undefined
   
   /**
     * Indicates which properties of a parent call should propagate to this
     * call. Bitwise combination of flags in `grpc.propagate`.
     */
-  var propagate_flags: js.UndefOr[Double] = js.native
+  var propagate_flags: js.UndefOr[Double] = js.undefined
 }
 object CallOptions {
   

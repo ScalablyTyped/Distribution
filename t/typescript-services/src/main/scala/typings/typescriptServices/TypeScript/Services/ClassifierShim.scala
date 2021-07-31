@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassifierShim extends ShimBase {
+trait ClassifierShim
+  extends StObject
+     with ShimBase {
   
-  var classifier: Classifier = js.native
+  var classifier: Classifier
   
-  def getClassificationsForLine(text: String, lexState: EndOfLineState): String = js.native
+  def getClassificationsForLine(text: String, lexState: EndOfLineState): String
   
-  var host: IClassifierHost = js.native
+  var host: IClassifierHost
 }
 object ClassifierShim {
   

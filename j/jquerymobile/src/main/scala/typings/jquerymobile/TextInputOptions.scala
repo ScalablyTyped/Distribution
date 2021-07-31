@@ -2,25 +2,23 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextInputOptions extends StObject {
   
-  var clearBtn: js.UndefOr[Boolean] = js.native
+  var clearBtn: js.UndefOr[Boolean] = js.undefined
   
-  var clearBtnText: js.UndefOr[String] = js.native
+  var clearBtnText: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var mini: js.UndefOr[Boolean] = js.native
+  var mini: js.UndefOr[Boolean] = js.undefined
   
-  var preventFocusZoom: js.UndefOr[Boolean] = js.native
+  var preventFocusZoom: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object TextInputOptions {
   

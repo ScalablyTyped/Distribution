@@ -2,25 +2,23 @@ package typings.logg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait loggingLevels extends StObject {
   
-  var FINE: Double = js.native
+  var FINE: Double
   
-  var FINER: Double = js.native
+  var FINER: Double
   
-  var FINEST: Double = js.native
+  var FINEST: Double
   
-  var INFO: Double = js.native
+  var INFO: Double
   
-  var SEVERE: Double = js.native
+  var SEVERE: Double
   
-  var WARN: Double = js.native
+  var WARN: Double
   
-  def toString(level: Double): String = js.native
+  def toString(level: Double): String
 }
 object loggingLevels {
   

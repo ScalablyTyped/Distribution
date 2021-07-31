@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties of each column in a table.
   */
-@js.native
 trait SchemaTableColumnProperties extends StObject {
   
   /**
     * Width of a column.
     */
-  var columnWidth: js.UndefOr[SchemaDimension] = js.native
+  var columnWidth: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTableColumnProperties {
   

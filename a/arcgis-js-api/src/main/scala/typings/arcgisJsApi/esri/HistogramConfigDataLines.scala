@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramConfigDataLines extends Object {
+trait HistogramConfigDataLines
+  extends StObject
+     with Object {
   
   /**
     * The label associated with the line.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var label: js.UndefOr[String | Double] = js.native
+  var label: js.UndefOr[String | Double] = js.undefined
   
   /**
     * The value on the data axis of the histogram where a line will be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object HistogramConfigDataLines {
   

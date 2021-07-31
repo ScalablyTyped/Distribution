@@ -13,7 +13,6 @@ import typings.node.streamMod.Writable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -126,21 +125,17 @@ trait ChildProcess extends EventEmitter {
   
   def send(message: Serializable): Boolean = js.native
   def send(message: Serializable, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
+  def send(message: Serializable, sendHandle: Unit, callback: js.Function1[/* error */ Error | Null, Unit]): Boolean = js.native
   def send(
     message: Serializable,
-    sendHandle: js.UndefOr[scala.Nothing],
+    sendHandle: Unit,
+    options: Unit,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
+  def send(message: Serializable, sendHandle: Unit, options: MessageOptions): Boolean = js.native
   def send(
     message: Serializable,
-    sendHandle: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* error */ Error | Null, Unit]
-  ): Boolean = js.native
-  def send(message: Serializable, sendHandle: js.UndefOr[scala.Nothing], options: MessageOptions): Boolean = js.native
-  def send(
-    message: Serializable,
-    sendHandle: js.UndefOr[scala.Nothing],
+    sendHandle: Unit,
     options: MessageOptions,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
@@ -153,7 +148,7 @@ trait ChildProcess extends EventEmitter {
   def send(
     message: Serializable,
     sendHandle: SendHandle,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* error */ Error | Null, Unit]
   ): Boolean = js.native
   def send(message: Serializable, sendHandle: SendHandle, options: MessageOptions): Boolean = js.native

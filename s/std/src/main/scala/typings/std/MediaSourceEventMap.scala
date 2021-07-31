@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaSourceEventMap extends StObject {
   
-  var sourceclose: Event = js.native
+  var sourceclose: Event
   
-  var sourceended: Event = js.native
+  var sourceended: Event
   
-  var sourceopen: Event = js.native
+  var sourceopen: Event
 }
 object MediaSourceEventMap {
   

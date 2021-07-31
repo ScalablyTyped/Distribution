@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitForkSyncRequestParameters extends StObject {
   
   /**
     * Fully-qualified identifier for the source repository.
     */
-  var source: GlobalGitRepositoryKey = js.native
+  var source: GlobalGitRepositoryKey
   
   /**
     * If supplied, the set of ref mappings to use when performing a "sync" or create. If missing, all refs will be synchronized.
     */
-  var sourceToTargetRefs: js.Array[SourceToTargetRef] = js.native
+  var sourceToTargetRefs: js.Array[SourceToTargetRef]
 }
 object GitForkSyncRequestParameters {
   

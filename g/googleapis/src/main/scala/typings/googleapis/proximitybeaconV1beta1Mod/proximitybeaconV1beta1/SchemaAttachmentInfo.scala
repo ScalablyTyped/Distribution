@@ -2,7 +2,6 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `beaconinfo.getforobserved` method, used when your users encounter your
   * beacons.
   */
-@js.native
 trait SchemaAttachmentInfo extends StObject {
   
   /**
     * An opaque data container for client-provided data.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The distance away from the beacon at which this attachment should be
@@ -30,7 +28,7 @@ trait SchemaAttachmentInfo extends StObject {
     * Optional. When not set or zero, the attachment should be delivered at the
     * beacon&#39;s outer limit of detection.
     */
-  var maxDistanceMeters: js.UndefOr[Double] = js.native
+  var maxDistanceMeters: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies what kind of attachment this is. Tells a client how to
@@ -38,7 +36,7 @@ trait SchemaAttachmentInfo extends StObject {
     * &lt;var&gt;namespace/type&lt;/var&gt;, for example
     * &lt;code&gt;scrupulous-wombat-12345/welcome-message&lt;/code&gt;
     */
-  var namespacedType: js.UndefOr[String] = js.native
+  var namespacedType: js.UndefOr[String] = js.undefined
 }
 object SchemaAttachmentInfo {
   

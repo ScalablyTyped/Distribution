@@ -2,29 +2,27 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialPortIds extends StObject {
   
-  var DEFAULT: SERIAL_PORT_ID = js.native
+  var DEFAULT: SERIAL_PORT_ID
   
-  var HW_SERIAL0: SERIAL_PORT_ID = js.native
+  var HW_SERIAL0: SERIAL_PORT_ID
   
-  var HW_SERIAL1: SERIAL_PORT_ID = js.native
+  var HW_SERIAL1: SERIAL_PORT_ID
   
-  var HW_SERIAL2: SERIAL_PORT_ID = js.native
+  var HW_SERIAL2: SERIAL_PORT_ID
   
-  var HW_SERIAL3: SERIAL_PORT_ID = js.native
+  var HW_SERIAL3: SERIAL_PORT_ID
   
-  var SW_SERIAL0: SERIAL_PORT_ID = js.native
+  var SW_SERIAL0: SERIAL_PORT_ID
   
-  var SW_SERIAL1: SERIAL_PORT_ID = js.native
+  var SW_SERIAL1: SERIAL_PORT_ID
   
-  var SW_SERIAL2: SERIAL_PORT_ID = js.native
+  var SW_SERIAL2: SERIAL_PORT_ID
   
-  var SW_SERIAL3: SERIAL_PORT_ID = js.native
+  var SW_SERIAL3: SERIAL_PORT_ID
 }
 object SerialPortIds {
   

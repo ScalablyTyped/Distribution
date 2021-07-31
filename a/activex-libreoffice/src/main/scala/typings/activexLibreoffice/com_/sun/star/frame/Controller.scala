@@ -16,7 +16,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * full featured components need a {@link XModel} interface too. ;  (see service {@link com.sun.star.document.OfficeDocument} for further information)
   * @see com.sun.star.document.OfficeDocument
   */
-@js.native
 trait Controller
-  extends XController
+  extends StObject
+     with XController
      with XDispatchProvider
      with XContextMenuInterception
      with XUserInputInterception

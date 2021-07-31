@@ -11,8 +11,8 @@ A React utility belt for function components and higher-order components
 | Full name          | recompose |
 | Keywords           | react, higher-order, components, microcomponentization, toolkit, utilities, composition |
 | # releases         | 1 |
-| # dependents       | 1468 |
-| # downloads        | 79148465 |
+| # dependents       | 1488 |
+| # downloads        | 76320465 |
 | # stars            | 18 |
 
 ## Links

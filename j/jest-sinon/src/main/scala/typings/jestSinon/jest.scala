@@ -4,7 +4,6 @@ import typings.sinon.mod.SinonMatch
 import typings.sinon.mod.SinonSpy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jest {
@@ -27,20 +26,20 @@ object jest {
     def toBeAlwaysCalledWithExactly(args: js.Any*): R = js.native
     
     def toBeAlwaysCalledWithMatch(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[_ | SinonMatch]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[js.Any | SinonMatch]
     ): R = js.native
     
     def toBeAlwaysCalledWithNew(): R = js.native
     
     def toBeCalled(): R = js.native
     
-    def toBeCalledAfter(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toBeCalledAfter(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toBeCalledBefore(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toBeCalledBefore(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toBeCalledImmediatelyAfter(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toBeCalledImmediatelyAfter(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toBeCalledImmediatelyBefore(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toBeCalledImmediatelyBefore(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
     def toBeCalledOn(`object`: js.Object): R = js.native
     
@@ -61,7 +60,7 @@ object jest {
     def toBeCalledWithExactly(args: js.Any*): R = js.native
     
     def toBeCalledWithMatch(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[_ | SinonMatch]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[js.Any | SinonMatch]
     ): R = js.native
     
     def toBeCalledWithNew(): R = js.native
@@ -81,20 +80,20 @@ object jest {
     def toHaveBeenAlwaysCalledWithExactly(args: js.Any*): R = js.native
     
     def toHaveBeenAlwaysCalledWithMatch(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[_ | SinonMatch]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[js.Any | SinonMatch]
     ): R = js.native
     
     def toHaveBeenAlwaysCalledWithNew(): R = js.native
     
     def toHaveBeenCalled(): R = js.native
     
-    def toHaveBeenCalledAfter(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toHaveBeenCalledAfter(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toHaveBeenCalledBefore(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toHaveBeenCalledBefore(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toHaveBeenCalledImmediatelyAfter(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toHaveBeenCalledImmediatelyAfter(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
-    def toHaveBeenCalledImmediatelyBefore(spy: SinonSpy[js.Array[_], _]): R = js.native
+    def toHaveBeenCalledImmediatelyBefore(spy: SinonSpy[js.Array[js.Any], js.Any]): R = js.native
     
     def toHaveBeenCalledOn(`object`: js.Object): R = js.native
     
@@ -115,7 +114,7 @@ object jest {
     def toHaveBeenCalledWithExactly(args: js.Any*): R = js.native
     
     def toHaveBeenCalledWithMatch(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[_ | SinonMatch]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Array<sinon.SinonMatch> | Array<any> is not an array type */ args: js.Array[js.Any | SinonMatch]
     ): R = js.native
     
     def toHaveBeenCalledWithNew(): R = js.native

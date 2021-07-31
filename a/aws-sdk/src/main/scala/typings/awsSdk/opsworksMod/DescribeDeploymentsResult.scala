@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeploymentsResult extends StObject {
   
   /**
     * An array of Deployment objects that describe the deployments.
     */
-  var Deployments: js.UndefOr[typings.awsSdk.opsworksMod.Deployments] = js.native
+  var Deployments: js.UndefOr[typings.awsSdk.opsworksMod.Deployments] = js.undefined
 }
 object DescribeDeploymentsResult {
   

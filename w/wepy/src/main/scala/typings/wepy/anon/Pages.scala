@@ -3,15 +3,13 @@ package typings.wepy.anon
 import typings.wepy.pageMod.PageConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pages extends StObject {
   
-  var pages: js.Array[String] = js.native
+  var pages: js.Array[String]
   
-  var window: PageConfig = js.native
+  var window: PageConfig
 }
 object Pages {
   

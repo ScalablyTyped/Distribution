@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CachePolicy extends StObject {
   
   /**
     * The cache policy configuration.
     */
-  var CachePolicyConfig: typings.awsSdk.cloudfrontMod.CachePolicyConfig = js.native
+  var CachePolicyConfig: typings.awsSdk.cloudfrontMod.CachePolicyConfig
   
   /**
     * The unique identifier for the cache policy.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The date and time when the cache policy was last modified.
     */
-  var LastModifiedTime: timestamp = js.native
+  var LastModifiedTime: timestamp
 }
 object CachePolicy {
   

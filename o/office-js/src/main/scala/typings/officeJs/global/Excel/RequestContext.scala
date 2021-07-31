@@ -3,7 +3,6 @@ package typings.officeJs.global.Excel
 import typings.officeJs.Excel.Session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Excel.RequestContext")
 @js.native
 class RequestContext ()
-  extends typings.officeJs.Excel.RequestContext {
+  extends StObject
+     with typings.officeJs.Excel.RequestContext {
   def this(url: String) = this()
   def this(url: Session) = this()
 }

@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentPortal extends StObject {
   
   /** The HTTP method to use for the payment portal. */
-  var Method: String = js.native
+  var Method: String
   
   /** The payment portal URL. */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
 }
 object PaymentPortal {
   

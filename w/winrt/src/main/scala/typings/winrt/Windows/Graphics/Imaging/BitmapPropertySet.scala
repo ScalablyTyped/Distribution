@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Collections.IMap
 import typings.winrt.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BitmapPropertySet extends IMap[String, BitmapTypedValue]
+trait BitmapPropertySet
+  extends StObject
+     with IMap[String, BitmapTypedValue]
 object BitmapPropertySet {
   
   @scala.inline

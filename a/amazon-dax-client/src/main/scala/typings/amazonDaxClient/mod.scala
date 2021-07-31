@@ -5,43 +5,40 @@ import typings.std.Date
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("amazon-dax-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AmazonDaxClient {
+  class ^ protected ()
+    extends StObject
+       with AmazonDaxClient {
     def this(options: AmazonDaxClientOptions) = this()
   }
   
   @js.native
   trait AmazonDaxClient extends StObject {
     
-    def createCluster(): Request[js.Object, _] = js.native
-    def createCluster(
-      params: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]
-    ): Request[js.Object, _] = js.native
-    def createCluster(params: js.Object): Request[js.Object, _] = js.native
-    def createCluster(params: js.Object, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Request[js.Object, _] = js.native
+    def createCluster(): Request[js.Object, js.Any] = js.native
+    def createCluster(params: js.Object): Request[js.Object, js.Any] = js.native
+    def createCluster(params: js.Object, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Request[js.Object, js.Any] = js.native
+    def createCluster(params: Unit, callback: js.Function2[/* err */ js.Any, /* data */ js.Object, Unit]): Request[js.Object, js.Any] = js.native
   }
   
-  @js.native
   trait AmazonDaxClientHttpOptions extends StObject {
     
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var xhrAsync: js.UndefOr[Boolean] = js.native
+    var xhrAsync: js.UndefOr[Boolean] = js.undefined
     
-    var xhrWithCredentials: js.UndefOr[Boolean] = js.native
+    var xhrWithCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object AmazonDaxClientHttpOptions {
     
@@ -92,28 +89,27 @@ object mod {
     }
   }
   
-  @js.native
   trait AmazonDaxClientOptions extends StObject {
     
-    var accessKeyId: js.UndefOr[String] = js.native
+    var accessKeyId: js.UndefOr[String] = js.undefined
     
-    var apiVersion: js.UndefOr[String | Date] = js.native
+    var apiVersion: js.UndefOr[String | Date] = js.undefined
     
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
-    var endpoints: js.UndefOr[js.Array[String]] = js.native
+    var endpoints: js.UndefOr[js.Array[String]] = js.undefined
     
-    var httpOptions: js.UndefOr[AmazonDaxClientHttpOptions] = js.native
+    var httpOptions: js.UndefOr[AmazonDaxClientHttpOptions] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[Map[String, _]] = js.native
+    var params: js.UndefOr[Map[String, js.Any]] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var secretAccessKey: js.UndefOr[String] = js.native
+    var secretAccessKey: js.UndefOr[String] = js.undefined
   }
   object AmazonDaxClientOptions {
     
@@ -172,7 +168,7 @@ object mod {
       def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
       @scala.inline
-      def setParams(value: Map[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Map[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends StObject {
     *
     * @return The custom document.
     */
-  def openCustomDocument(uri: Uri, openContext: CustomDocumentOpenContext, token: CancellationToken): Thenable[T] | T = js.native
+  def openCustomDocument(uri: Uri, openContext: CustomDocumentOpenContext, token: CancellationToken): Thenable[T] | T
   
   /**
     * Resolve a custom editor for a given resource.
@@ -44,7 +42,7 @@ trait CustomReadonlyEditorProvider[T /* <: CustomDocument */] extends StObject {
     *
     * @return Optional thenable indicating that the custom editor has been resolved.
     */
-  def resolveCustomEditor(document: T, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit = js.native
+  def resolveCustomEditor(document: T, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit
 }
 object CustomReadonlyEditorProvider {
   
@@ -58,7 +56,7 @@ object CustomReadonlyEditorProvider {
   }
   
   @scala.inline
-  implicit class CustomReadonlyEditorProviderMutableBuilder[Self <: CustomReadonlyEditorProvider[_], T /* <: CustomDocument */] (val x: Self with CustomReadonlyEditorProvider[T]) extends AnyVal {
+  implicit class CustomReadonlyEditorProviderMutableBuilder[Self <: CustomReadonlyEditorProvider[?], T /* <: CustomDocument */] (val x: Self & CustomReadonlyEditorProvider[T]) extends AnyVal {
     
     @scala.inline
     def setOpenCustomDocument(value: (Uri, CustomDocumentOpenContext, CancellationToken) => Thenable[T] | T): Self = StObject.set(x, "openCustomDocument", js.Any.fromFunction3(value))

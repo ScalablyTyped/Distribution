@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Archivedownloadurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListWorkflowRunArtifactsResponseData extends StObject {
   
-  var artifacts: js.Array[Archivedownloadurl] = js.native
+  var artifacts: js.Array[Archivedownloadurl]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object ActionsListWorkflowRunArtifactsResponseData {
   

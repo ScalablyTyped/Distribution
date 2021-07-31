@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessControlEffectRequest extends StObject {
   
   /**
     * The access protocol action. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
     */
-  var Action: AccessControlRuleAction = js.native
+  var Action: AccessControlRuleAction
   
   /**
     * The IPv4 address.
     */
-  var IpAddress: typings.awsSdk.workmailMod.IpAddress = js.native
+  var IpAddress: typings.awsSdk.workmailMod.IpAddress
   
   /**
     * The identifier for the organization.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The user ID.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object GetAccessControlEffectRequest {
   

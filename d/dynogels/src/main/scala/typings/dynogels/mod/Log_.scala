@@ -2,15 +2,13 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log_ extends StObject {
   
-  def info(args: js.Any*): Unit = js.native
+  def info(args: js.Any*): Unit
   
-  def warn(args: js.Any*): Unit = js.native
+  def warn(args: js.Any*): Unit
 }
 object Log_ {
   

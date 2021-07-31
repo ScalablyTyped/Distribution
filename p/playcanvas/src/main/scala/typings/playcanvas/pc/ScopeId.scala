@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property name - The variable name.
   * @param name - The variable name.
   */
-@js.native
 trait ScopeId extends StObject {
   
   /**
     * Get variable value.
     * @returns The value.
     */
-  def getValue(): js.Any = js.native
+  def getValue(): js.Any
   
   /**
     * The variable name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Set variable value.
     * @param value - The value.
     */
-  def setValue(value: js.Any): Unit = js.native
+  def setValue(value: js.Any): Unit
 }
 object ScopeId {
   

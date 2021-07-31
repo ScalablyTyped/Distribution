@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.urlTemplate.mod.UrlTemplate.TemplateParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,10 +14,9 @@ object mod extends Shortcut {
   
   object UrlTemplate {
     
-    @js.native
     trait Template extends StObject {
       
-      def expand(parameters: js.Any): String = js.native
+      def expand(parameters: js.Any): String
     }
     object Template {
       
@@ -36,10 +34,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait TemplateParser extends StObject {
       
-      def parse(template: String): Template = js.native
+      def parse(template: String): Template
     }
     object TemplateParser {
       

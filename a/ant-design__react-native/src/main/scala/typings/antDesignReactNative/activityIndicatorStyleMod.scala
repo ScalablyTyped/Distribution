@@ -5,29 +5,30 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityIndicatorStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/activity-indicator/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/activity-indicator/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): ActivityIndicatorStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): ActivityIndicatorStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ActivityIndicatorStyle]
+  
   trait ActivityIndicatorStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var innerContainer: ViewStyle = js.native
+    var innerContainer: ViewStyle
     
-    var spinner: ViewStyle = js.native
+    var spinner: ViewStyle
     
-    var tip: TextStyle = js.native
+    var tip: TextStyle
     
-    var toast: TextStyle = js.native
+    var toast: TextStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object ActivityIndicatorStyle {
     

@@ -8,7 +8,6 @@ import typings.yazl.anon.PartialOptions
 import typings.yazl.anon.PartialReadStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,19 +31,18 @@ object mod {
     def dateToDosDateTime(jsDate: Date): DosDateTime = js.native
     
     def end(): Unit = js.native
-    def end(options: js.UndefOr[scala.Nothing], finalSizeCallback: js.Function0[Unit]): Unit = js.native
+    def end(options: Unit, finalSizeCallback: js.Function0[Unit]): Unit = js.native
     def end(options: EndOptions): Unit = js.native
     def end(options: EndOptions, finalSizeCallback: js.Function0[Unit]): Unit = js.native
     
     var outputStream: ReadableStream = js.native
   }
   
-  @js.native
   trait DirectoryOptions extends StObject {
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
   }
   object DirectoryOptions {
     
@@ -65,12 +63,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DosDateTime extends StObject {
     
-    var date: Double = js.native
+    var date: Double
     
-    var time: Double = js.native
+    var time: Double
   }
   object DosDateTime {
     
@@ -91,10 +88,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EndOptions extends StObject {
     
-    var forceZip64Format: Boolean = js.native
+    var forceZip64Format: Boolean
   }
   object EndOptions {
     
@@ -112,16 +108,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var compress: Boolean = js.native
+    var compress: Boolean
     
-    var forceZip64Format: Boolean = js.native
+    var forceZip64Format: Boolean
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
   }
   object Options {
     
@@ -148,10 +143,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReadStreamOptions extends Options {
+  trait ReadStreamOptions
+    extends StObject
+       with Options {
     
-    var size: Double = js.native
+    var size: Double
   }
   object ReadStreamOptions {
     

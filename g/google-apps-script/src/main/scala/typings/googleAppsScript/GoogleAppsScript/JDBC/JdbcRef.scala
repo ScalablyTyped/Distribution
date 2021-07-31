@@ -2,20 +2,18 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC Ref. For documentation of this class, see java.sql.Ref.
   */
-@js.native
 trait JdbcRef extends StObject {
   
-  def getBaseTypeName(): String = js.native
+  def getBaseTypeName(): String
   
-  def getObject(): js.Any = js.native
+  def getObject(): js.Any
   
-  def setObject(`object`: js.Any): Unit = js.native
+  def setObject(`object`: js.Any): Unit
 }
 object JdbcRef {
   

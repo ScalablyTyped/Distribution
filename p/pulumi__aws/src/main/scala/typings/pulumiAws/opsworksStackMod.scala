@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opsworksStackMod {
@@ -151,6 +150,10 @@ object opsworksStackMod {
   /* static members */
   object Stack {
     
+    @JSImport("@pulumi/aws/opsworks/stack", "Stack")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Stack resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -160,55 +163,49 @@ object opsworksStackMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Stack = js.native
-    @JSImport("@pulumi/aws/opsworks/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Stack = js.native
-    @JSImport("@pulumi/aws/opsworks/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackState): Stack = js.native
-    @JSImport("@pulumi/aws/opsworks/stack", "Stack.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackState): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Stack]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StackState, opts: CustomResourceOptions): Stack = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Stack]
     
     /**
       * Returns true if the given object is an instance of Stack.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/stack", "Stack.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/stack.Stack */ Boolean]
   }
   
-  @js.native
   trait StackArgs extends StObject {
     
     /**
       * If set to `"LATEST"`, OpsWorks will automatically install the latest version.
       */
-    val agentVersion: js.UndefOr[Input[String]] = js.native
+    val agentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If `manageBerkshelf` is enabled, the version of Berkshelf to use.
       */
-    val berkshelfVersion: js.UndefOr[Input[String]] = js.native
+    val berkshelfVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Color to paint next to the stack's resources in the OpsWorks console.
       */
-    val color: js.UndefOr[Input[String]] = js.native
+    val color: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the configuration manager to use. Defaults to "Chef".
       */
-    val configurationManagerName: js.UndefOr[Input[String]] = js.native
+    val configurationManagerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version of the configuration manager to use. Defaults to "11.4".
       */
-    val configurationManagerVersion: js.UndefOr[Input[String]] = js.native
+    val configurationManagerVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When `useCustomCookbooks` is set, provide this sub-object as
@@ -216,93 +213,93 @@ object opsworksStackMod {
       */
     val customCookbooksSources: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom JSON attributes to apply to the entire stack.
       */
-    val customJson: js.UndefOr[Input[String]] = js.native
+    val customJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the availability zone where instances will be created
       * by default. This is required unless you set `vpcId`.
       */
-    val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.native
+    val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM Instance Profile that created instances
       * will have by default.
       */
-    val defaultInstanceProfileArn: Input[String] = js.native
+    val defaultInstanceProfileArn: Input[String]
     
     /**
       * Name of OS that will be installed on instances by default.
       */
-    val defaultOs: js.UndefOr[Input[String]] = js.native
+    val defaultOs: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the type of root device instances will have by default.
       */
-    val defaultRootDeviceType: js.UndefOr[Input[String]] = js.native
+    val defaultRootDeviceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SSH keypair that instances will have by default.
       */
-    val defaultSshKeyName: js.UndefOr[Input[String]] = js.native
+    val defaultSshKeyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Id of the subnet in which instances will be created by default. Mandatory
       * if `vpcId` is set, and forbidden if it isn't.
       */
-    val defaultSubnetId: js.UndefOr[Input[String]] = js.native
+    val defaultSubnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Keyword representing the naming scheme that will be used for instance hostnames
       * within this stack.
       */
-    val hostnameTheme: js.UndefOr[Input[String]] = js.native
+    val hostnameTheme: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean value controlling whether Opsworks will run Berkshelf for this stack.
       */
-    val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.native
+    val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the stack.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the region where the stack will exist.
       */
-    val region: Input[String] = js.native
+    val region: Input[String]
     
     /**
       * The ARN of an IAM role that the OpsWorks service will act as.
       */
-    val serviceRoleArn: Input[String] = js.native
+    val serviceRoleArn: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean value controlling whether the custom cookbook settings are
       * enabled.
       */
-    val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.native
+    val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean value controlling whether the standard OpsWorks
       * security groups apply to created instances.
       */
-    val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.native
+    val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The id of the VPC that this stack belongs to.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object StackArgs {
     
@@ -443,35 +440,34 @@ object opsworksStackMod {
     }
   }
   
-  @js.native
   trait StackState extends StObject {
     
     /**
       * If set to `"LATEST"`, OpsWorks will automatically install the latest version.
       */
-    val agentVersion: js.UndefOr[Input[String]] = js.native
+    val agentVersion: js.UndefOr[Input[String]] = js.undefined
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If `manageBerkshelf` is enabled, the version of Berkshelf to use.
       */
-    val berkshelfVersion: js.UndefOr[Input[String]] = js.native
+    val berkshelfVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Color to paint next to the stack's resources in the OpsWorks console.
       */
-    val color: js.UndefOr[Input[String]] = js.native
+    val color: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the configuration manager to use. Defaults to "Chef".
       */
-    val configurationManagerName: js.UndefOr[Input[String]] = js.native
+    val configurationManagerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Version of the configuration manager to use. Defaults to "11.4".
       */
-    val configurationManagerVersion: js.UndefOr[Input[String]] = js.native
+    val configurationManagerVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When `useCustomCookbooks` is set, provide this sub-object as
@@ -479,95 +475,95 @@ object opsworksStackMod {
       */
     val customCookbooksSources: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.StackCustomCookbooksSource]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom JSON attributes to apply to the entire stack.
       */
-    val customJson: js.UndefOr[Input[String]] = js.native
+    val customJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the availability zone where instances will be created
       * by default. This is required unless you set `vpcId`.
       */
-    val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.native
+    val defaultAvailabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM Instance Profile that created instances
       * will have by default.
       */
-    val defaultInstanceProfileArn: js.UndefOr[Input[String]] = js.native
+    val defaultInstanceProfileArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of OS that will be installed on instances by default.
       */
-    val defaultOs: js.UndefOr[Input[String]] = js.native
+    val defaultOs: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the type of root device instances will have by default.
       */
-    val defaultRootDeviceType: js.UndefOr[Input[String]] = js.native
+    val defaultRootDeviceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the SSH keypair that instances will have by default.
       */
-    val defaultSshKeyName: js.UndefOr[Input[String]] = js.native
+    val defaultSshKeyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Id of the subnet in which instances will be created by default. Mandatory
       * if `vpcId` is set, and forbidden if it isn't.
       */
-    val defaultSubnetId: js.UndefOr[Input[String]] = js.native
+    val defaultSubnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Keyword representing the naming scheme that will be used for instance hostnames
       * within this stack.
       */
-    val hostnameTheme: js.UndefOr[Input[String]] = js.native
+    val hostnameTheme: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean value controlling whether Opsworks will run Berkshelf for this stack.
       */
-    val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.native
+    val manageBerkshelf: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the stack.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the region where the stack will exist.
       */
-    val region: js.UndefOr[Input[String]] = js.native
+    val region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of an IAM role that the OpsWorks service will act as.
       */
-    val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
-    val stackEndpoint: js.UndefOr[Input[String]] = js.native
+    val stackEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Boolean value controlling whether the custom cookbook settings are
       * enabled.
       */
-    val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.native
+    val useCustomCookbooks: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Boolean value controlling whether the standard OpsWorks
       * security groups apply to created instances.
       */
-    val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.native
+    val useOpsworksSecurityGroups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The id of the VPC that this stack belongs to.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object StackState {
     

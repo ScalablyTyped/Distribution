@@ -2,23 +2,21 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplexAspect extends StObject {
   
-  var complexObject: ComplexObject = js.native
+  var complexObject: ComplexObject
   
-  def getEntityAspect(): EntityAspect = js.native
+  def getEntityAspect(): EntityAspect
   
-  def getPropertyPath(propName: String): String = js.native
+  def getPropertyPath(propName: String): String
   
-  var originalValues: js.Object = js.native
+  var originalValues: js.Object
   
-  var parent: js.Object = js.native
+  var parent: js.Object
   
-  var parentProperty: DataProperty = js.native
+  var parentProperty: DataProperty
 }
 object ComplexAspect {
   

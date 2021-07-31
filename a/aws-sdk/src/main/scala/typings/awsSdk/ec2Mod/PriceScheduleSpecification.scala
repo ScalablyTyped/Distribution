@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PriceScheduleSpecification extends StObject {
   
   /**
     * The currency for transacting the Reserved Instance resale. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The fixed price for the term.
     */
-  var Price: js.UndefOr[Double] = js.native
+  var Price: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of months remaining in the reservation. For example, 2 is the second to the last month before the capacity reservation expires.
     */
-  var Term: js.UndefOr[Long] = js.native
+  var Term: js.UndefOr[Long] = js.undefined
 }
 object PriceScheduleSpecification {
   

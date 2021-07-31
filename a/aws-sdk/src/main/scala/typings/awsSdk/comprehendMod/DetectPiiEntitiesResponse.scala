@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectPiiEntitiesResponse extends StObject {
   
   /**
     * A collection of PII entities identified in the input text. For each entity, the response provides the entity type, where the entity text begins and ends, and the level of confidence that Amazon Comprehend has in the detection.
     */
-  var Entities: js.UndefOr[ListOfPiiEntities] = js.native
+  var Entities: js.UndefOr[ListOfPiiEntities] = js.undefined
 }
 object DetectPiiEntitiesResponse {
   

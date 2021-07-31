@@ -6,22 +6,21 @@ import typings.cadesplugin.CADESCommon.Unpacked
 import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.OID> */
-@js.native
 trait OIDAsync
-  extends _Unpacked[js.Any] {
+  extends StObject
+     with _Unpacked[js.Any] {
   
   val FriendlyName: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val Name: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID] = js.native
+  js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID]
   
   val Value: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
 }
 object OIDAsync {
   
@@ -51,7 +50,7 @@ object OIDAsync {
     def setFriendlyNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "FriendlyName", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -64,7 +63,7 @@ object OIDAsync {
     def setNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -77,7 +76,7 @@ object OIDAsync {
     def setValueFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
   }
 }

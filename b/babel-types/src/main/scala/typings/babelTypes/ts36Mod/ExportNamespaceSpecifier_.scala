@@ -3,31 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ExportNamespaceSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportNamespaceSpecifier_
-  extends Node
+  extends StObject
+     with Node
      with ModuleSpecifier {
   
-  var exported: Identifier_ = js.native
+  var exported: Identifier_
   
   @JSName("type")
-  var type_ExportNamespaceSpecifier_ : ExportNamespaceSpecifier = js.native
+  var type_ExportNamespaceSpecifier_ : ExportNamespaceSpecifier
 }
 object ExportNamespaceSpecifier_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    exported: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ExportNamespaceSpecifier
-  ): ExportNamespaceSpecifier_ = {
+  def apply(end: Double, exported: Identifier_, loc: SourceLocation, start: Double): ExportNamespaceSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportNamespaceSpecifier")
     __obj.asInstanceOf[ExportNamespaceSpecifier_]
   }
   

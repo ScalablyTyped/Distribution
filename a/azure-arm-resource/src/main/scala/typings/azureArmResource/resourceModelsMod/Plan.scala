@@ -2,36 +2,34 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plan extends StObject {
   
   /**
     * The plan ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The offer ID.
     */
-  var product: js.UndefOr[String] = js.native
+  var product: js.UndefOr[String] = js.undefined
   
   /**
     * The promotion code.
     */
-  var promotionCode: js.UndefOr[String] = js.native
+  var promotionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The publisher ID.
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * The plan's version.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Plan {
   

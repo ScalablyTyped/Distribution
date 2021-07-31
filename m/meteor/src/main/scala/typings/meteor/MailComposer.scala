@@ -2,19 +2,17 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailComposer extends StObject {
   
-  def addHeader(name: String, value: String): Unit = js.native
+  def addHeader(name: String, value: String): Unit
   
-  def pipe(stream: js.Any): Unit = js.native
+  def pipe(stream: js.Any): Unit
   
-  def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
+  def setMessageOption(from: String, to: String, body: String, html: String): Unit
   
-  def streamMessage(): Unit = js.native
+  def streamMessage(): Unit
 }
 object MailComposer {
   

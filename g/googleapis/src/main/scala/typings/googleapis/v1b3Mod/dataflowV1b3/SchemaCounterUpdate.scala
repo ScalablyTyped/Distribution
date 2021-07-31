@@ -2,92 +2,90 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An update to a Counter sent from a worker.
   */
-@js.native
 trait SchemaCounterUpdate extends StObject {
   
   /**
     * Boolean value for And, Or.
     */
-  var boolean: js.UndefOr[Boolean] = js.native
+  var boolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if this counter is reported as the total cumulative aggregate value
     * accumulated since the worker started working on this WorkItem. By default
     * this is false, indicating that this counter is reported as a delta.
     */
-  var cumulative: js.UndefOr[Boolean] = js.native
+  var cumulative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Distribution data
     */
-  var distribution: js.UndefOr[SchemaDistributionUpdate] = js.native
+  var distribution: js.UndefOr[SchemaDistributionUpdate] = js.undefined
   
   /**
     * Floating point value for Sum, Max, Min.
     */
-  var floatingPoint: js.UndefOr[Double] = js.native
+  var floatingPoint: js.UndefOr[Double] = js.undefined
   
   /**
     * List of floating point numbers, for Set.
     */
-  var floatingPointList: js.UndefOr[SchemaFloatingPointList] = js.native
+  var floatingPointList: js.UndefOr[SchemaFloatingPointList] = js.undefined
   
   /**
     * Floating point mean aggregation value for Mean.
     */
-  var floatingPointMean: js.UndefOr[SchemaFloatingPointMean] = js.native
+  var floatingPointMean: js.UndefOr[SchemaFloatingPointMean] = js.undefined
   
   /**
     * Integer value for Sum, Max, Min.
     */
-  var integer: js.UndefOr[SchemaSplitInt64] = js.native
+  var integer: js.UndefOr[SchemaSplitInt64] = js.undefined
   
   /**
     * Gauge data
     */
-  var integerGauge: js.UndefOr[SchemaIntegerGauge] = js.native
+  var integerGauge: js.UndefOr[SchemaIntegerGauge] = js.undefined
   
   /**
     * List of integers, for Set.
     */
-  var integerList: js.UndefOr[SchemaIntegerList] = js.native
+  var integerList: js.UndefOr[SchemaIntegerList] = js.undefined
   
   /**
     * Integer mean aggregation value for Mean.
     */
-  var integerMean: js.UndefOr[SchemaIntegerMean] = js.native
+  var integerMean: js.UndefOr[SchemaIntegerMean] = js.undefined
   
   /**
     * Value for internally-defined counters used by the Dataflow service.
     */
-  var internal: js.UndefOr[js.Any] = js.native
+  var internal: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Counter name and aggregation type.
     */
-  var nameAndKind: js.UndefOr[SchemaNameAndKind] = js.native
+  var nameAndKind: js.UndefOr[SchemaNameAndKind] = js.undefined
   
   /**
     * The service-generated short identifier for this counter. The short_id
     * -&gt; (name, metadata) mapping is constant for the lifetime of a job.
     */
-  var shortId: js.UndefOr[String] = js.native
+  var shortId: js.UndefOr[String] = js.undefined
   
   /**
     * List of strings, for Set.
     */
-  var stringList: js.UndefOr[SchemaStringList] = js.native
+  var stringList: js.UndefOr[SchemaStringList] = js.undefined
   
   /**
     * Counter structured name and metadata.
     */
-  var structuredNameAndMetadata: js.UndefOr[SchemaCounterStructuredNameAndMetadata] = js.native
+  var structuredNameAndMetadata: js.UndefOr[SchemaCounterStructuredNameAndMetadata] = js.undefined
 }
 object SchemaCounterUpdate {
   

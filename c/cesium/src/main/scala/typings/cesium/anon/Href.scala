@@ -2,23 +2,21 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var hreflang: String = js.native
+  var hreflang: String
   
-  var length: String = js.native
+  var length: String
   
-  var rel: String = js.native
+  var rel: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Href {
   

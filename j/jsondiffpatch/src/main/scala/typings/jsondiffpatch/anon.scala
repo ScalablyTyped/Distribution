@@ -6,19 +6,17 @@ import typings.jsondiffpatch.mod.Pipe
 import typings.jsondiffpatch.mod.ReverseContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DetectMove extends StObject {
     
     // default true, detect items moved inside the array (otherwise they will be registered as remove+add)
-    var detectMove: Boolean = js.native
+    var detectMove: Boolean
     
     // default false, the value of items moved is not included in deltas
-    var includeValueOnMove: Boolean = js.native
+    var includeValueOnMove: Boolean
   }
   object DetectMove {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Diff extends StObject {
     
-    var diff: Pipe[DiffContext] = js.native
+    var diff: Pipe[DiffContext]
     
-    var patch: Pipe[PatchContext] = js.native
+    var patch: Pipe[PatchContext]
     
-    var reverse: Pipe[ReverseContext] = js.native
+    var reverse: Pipe[ReverseContext]
   }
   object Diff {
     
@@ -70,11 +67,10 @@ object anon {
     }
   }
   
-  @js.native
   trait MinLength extends StObject {
     
     // default 60, minimum string length (left and right sides) to use text diff algorythm: google-diff-match-patch
-    var minLength: Double = js.native
+    var minLength: Double
   }
   object MinLength {
     

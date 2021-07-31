@@ -2,60 +2,58 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleActions extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val AssignToCategory: AssignToCategoryRuleAction = js.native
+  val AssignToCategory: AssignToCategoryRuleAction
   
-  val CC: SendRuleAction = js.native
+  val CC: SendRuleAction
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ClearCategories: RuleAction = js.native
+  val ClearCategories: RuleAction
   
-  val CopyToFolder: MoveOrCopyRuleAction = js.native
+  val CopyToFolder: MoveOrCopyRuleAction
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Delete: RuleAction = js.native
+  val Delete: RuleAction
   
-  val DeletePermanently: RuleAction = js.native
+  val DeletePermanently: RuleAction
   
-  val DesktopAlert: RuleAction = js.native
+  val DesktopAlert: RuleAction
   
-  val Forward: SendRuleAction = js.native
+  val Forward: SendRuleAction
   
-  val ForwardAsAttachment: SendRuleAction = js.native
+  val ForwardAsAttachment: SendRuleAction
   
-  def Item(Index: Double): RuleAction = js.native
+  def Item(Index: Double): RuleAction
   
-  val MarkAsTask: MarkAsTaskRuleAction = js.native
+  val MarkAsTask: MarkAsTaskRuleAction
   
-  val MoveToFolder: MoveOrCopyRuleAction = js.native
+  val MoveToFolder: MoveOrCopyRuleAction
   
-  val NewItemAlert: NewItemAlertRuleAction = js.native
+  val NewItemAlert: NewItemAlertRuleAction
   
-  val NotifyDelivery: RuleAction = js.native
+  val NotifyDelivery: RuleAction
   
-  val NotifyRead: RuleAction = js.native
+  val NotifyRead: RuleAction
   
   @JSName("Outlook.RuleActions_typekey")
-  var OutlookDotRuleActions_typekey: RuleActions = js.native
+  var OutlookDotRuleActions_typekey: RuleActions
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PlaySound: PlaySoundRuleAction = js.native
+  val PlaySound: PlaySoundRuleAction
   
-  val Redirect: SendRuleAction = js.native
+  val Redirect: SendRuleAction
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Stop: RuleAction = js.native
+  val Stop: RuleAction
 }
 object RuleActions {
   

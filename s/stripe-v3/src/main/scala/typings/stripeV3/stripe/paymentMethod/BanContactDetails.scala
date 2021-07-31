@@ -6,23 +6,21 @@ import typings.stripeV3.stripeV3Strings.fr
 import typings.stripeV3.stripeV3Strings.nl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BanContactDetails extends StObject {
   
-  var bank_code: String = js.native
+  var bank_code: String
   
-  var bank_name: String = js.native
+  var bank_name: String
   
-  var bic: String = js.native
+  var bic: String
   
-  var iban_last4: String = js.native
+  var iban_last4: String
   
-  var preferred_language: en | de | fr | nl = js.native
+  var preferred_language: en | de | fr | nl
   
-  var verified_name: String = js.native
+  var verified_name: String
 }
 object BanContactDetails {
   

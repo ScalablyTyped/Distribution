@@ -2,7 +2,6 @@ package typings.inRange
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,23 +21,25 @@ object mod {
   //=> false
   ```
   */
+  @scala.inline
+  def apply(number: Double, range: Range): Boolean = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("in-range", JSImport.Namespace)
   @js.native
-  def apply(number: Double, range: Range): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Range extends StObject {
     
     /**
     		End of the range.
     		*/
-    val end: Double = js.native
+    val end: Double
     
     /**
     		Start of the range.
     		@default 0
     		*/
-    val start: js.UndefOr[Double] = js.native
+    val start: js.UndefOr[Double] = js.undefined
   }
   object Range {
     

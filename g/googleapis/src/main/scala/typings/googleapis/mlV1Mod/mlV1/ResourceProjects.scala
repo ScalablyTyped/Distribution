@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/ml/v1", "ml_v1.Resource$Projects")
@@ -34,7 +33,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getConfig(): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(callback: BodyResponseCallback[SchemaGoogleCloudMlV1GetConfigResponse]): Unit = js.native
-  def getConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
+  def getConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(params: ParamsResourceProjectsGetconfig): GaxiosPromise[SchemaGoogleCloudMlV1GetConfigResponse] = js.native
   def getConfig(
     params: ParamsResourceProjectsGetconfig,
@@ -78,7 +77,7 @@ class ResourceProjects protected () extends StObject {
     */
   def predict(): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(callback: BodyResponseCallback[SchemaGoogleApiHttpBody]): Unit = js.native
-  def predict(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
+  def predict(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(params: ParamsResourceProjectsPredict): GaxiosPromise[SchemaGoogleApiHttpBody] = js.native
   def predict(params: ParamsResourceProjectsPredict, callback: BodyResponseCallback[SchemaGoogleApiHttpBody]): Unit = js.native
   def predict(

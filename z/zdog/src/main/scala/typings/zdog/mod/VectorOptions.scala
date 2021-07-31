@@ -2,17 +2,17 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VectorOptions extends PathCommand {
+trait VectorOptions
+  extends StObject
+     with PathCommand {
   
-  val x: js.UndefOr[Double] = js.native
+  val x: js.UndefOr[Double] = js.undefined
   
-  val y: js.UndefOr[Double] = js.native
+  val y: js.UndefOr[Double] = js.undefined
   
-  val z: js.UndefOr[Double] = js.native
+  val z: js.UndefOr[Double] = js.undefined
 }
 object VectorOptions {
   

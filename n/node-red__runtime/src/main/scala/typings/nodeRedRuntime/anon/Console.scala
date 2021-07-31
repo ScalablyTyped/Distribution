@@ -2,16 +2,14 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Console extends StObject {
   
   /**
     * Only console logging is currently supported
     */
-  var console: js.UndefOr[Audit] = js.native
+  var console: js.UndefOr[Audit] = js.undefined
 }
 object Console {
   

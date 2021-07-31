@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275Render3ComponentFactory")
@@ -12,13 +11,13 @@ class ɵRender3ComponentFactory[T] protected () extends ComponentFactory[T] {
     * @param componentDef The component definition.
     * @param ngModule The NgModuleRef to which the factory is bound.
     */
-  def this(componentDef: ɵComponentDef[_]) = this()
-  def this(componentDef: ɵComponentDef[_], ngModule: NgModuleRef[_]) = this()
+  def this(componentDef: ɵComponentDef[js.Any]) = this()
+  def this(componentDef: ɵComponentDef[js.Any], ngModule: NgModuleRef[js.Any]) = this()
   
   var componentDef: js.Any = js.native
   
   @JSName("componentType")
-  var componentType_FɵRender3ComponentFactory: typings.angularCore.mod.Type[_] = js.native
+  var componentType_FɵRender3ComponentFactory: Type[js.Any] = js.native
   
   var isBoundToModule: Boolean = js.native
   

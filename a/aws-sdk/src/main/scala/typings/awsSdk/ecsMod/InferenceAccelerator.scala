@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InferenceAccelerator extends StObject {
   
   /**
     * The Elastic Inference accelerator device name. The deviceName must also be referenced in a container definition as a ResourceRequirement.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * The Elastic Inference accelerator type to use.
     */
-  var deviceType: String = js.native
+  var deviceType: String
 }
 object InferenceAccelerator {
   

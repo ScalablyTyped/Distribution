@@ -1,7 +1,8 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.action_required
+import typings.octokitTypes.octokitTypesStrings.antiope
 import typings.octokitTypes.octokitTypesStrings.cancelled
 import typings.octokitTypes.octokitTypesStrings.completed
 import typings.octokitTypes.octokitTypesStrings.failure
@@ -13,71 +14,68 @@ import typings.octokitTypes.octokitTypesStrings.success
 import typings.octokitTypes.octokitTypesStrings.timed_out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   check_run_id :number,   name :string | undefined,   details_url :string | undefined,   external_id :string | undefined,   started_at :string | undefined,   status :'queued' | 'in_progress' | 'completed' | undefined,   conclusion :'success' | 'failure' | 'neutral' | 'cancelled' | 'skipped' | 'timed_out' | 'action_required' | undefined,   completed_at :string | undefined,   output :@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksUpdateParamsOutput | undefined,   actions :std.Array<@octokit/types.@octokit/types/dist-types/generated/Endpoints.ChecksUpdateParamsActions> | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksUpdateEndpoint extends StObject {
+trait ChecksUpdateEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
   /**
     * Possible further actions the integrator can perform, which a user may trigger. Each action includes a `label`, `identifier` and `description`. A maximum of three actions are accepted. See the [`actions` object](https://developer.github.com/v3/checks/runs/#actions-object) description. To learn more about check runs and requested actions, see "[Check runs and requested actions](https://developer.github.com/v3/checks/runs/#check-runs-and-requested-actions)."
     */
-  var actions: js.UndefOr[js.Array[ChecksUpdateParamsActions]] = js.native
+  var actions: js.UndefOr[js.Array[ChecksUpdateParamsActions]] = js.undefined
   
-  var check_run_id: Double = js.native
+  var check_run_id: Double
   
   /**
     * The time the check completed. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var completed_at: js.UndefOr[String] = js.native
+  var completed_at: js.UndefOr[String] = js.undefined
   
   /**
     * **Required if you provide `completed_at` or a `status` of `completed`**. The final conclusion of the check. Can be one of `success`, `failure`, `neutral`, `cancelled`, `skipped`, `timed_out`, or `action_required`.
     * **Note:** Providing `conclusion` will automatically set the `status` parameter to `completed`. Only GitHub can change a check run conclusion to `stale`.
     */
-  var conclusion: js.UndefOr[success | failure | neutral | cancelled | skipped | timed_out | action_required] = js.native
+  var conclusion: js.UndefOr[success | failure | neutral | cancelled | skipped | timed_out | action_required] = js.undefined
   
   /**
     * The URL of the integrator's site that has the full details of the check.
     */
-  var details_url: js.UndefOr[String] = js.native
+  var details_url: js.UndefOr[String] = js.undefined
   
   /**
     * A reference for the run on the integrator's system.
     */
-  var external_id: js.UndefOr[String] = js.native
-  
-  var mediaType: `2` = js.native
+  var external_id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the check. For example, "code-coverage".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Check runs can accept a variety of data in the `output` object, including a `title` and `summary` and can optionally provide descriptive details about the run. See the [`output` object](https://developer.github.com/v3/checks/runs/#output-object-1) description.
     */
-  var output: js.UndefOr[ChecksUpdateParamsOutput] = js.native
+  var output: js.UndefOr[ChecksUpdateParamsOutput] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var started_at: js.UndefOr[String] = js.native
+  var started_at: js.UndefOr[String] = js.undefined
   
   /**
     * The current status. Can be one of `queued`, `in_progress`, or `completed`.
     */
-  var status: js.UndefOr[queued | in_progress | completed] = js.native
+  var status: js.UndefOr[queued | in_progress | completed] = js.undefined
 }
 object ChecksUpdateEndpoint {
   
   @scala.inline
-  def apply(check_run_id: Double, mediaType: `2`, owner: String, repo: String): ChecksUpdateEndpoint = {
+  def apply(check_run_id: Double, mediaType: `0`[antiope], owner: String, repo: String): ChecksUpdateEndpoint = {
     val __obj = js.Dynamic.literal(check_run_id = check_run_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksUpdateEndpoint]
   }
@@ -120,9 +118,6 @@ object ChecksUpdateEndpoint {
     
     @scala.inline
     def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

@@ -7,19 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a conditional format */
-@js.native
 trait ConditionalFormat
-  extends XConditionalFormat
-     with XPropertySet {
+  extends StObject
+     with XPropertySet
+     with XConditionalFormat {
   
-  var ID: Double = js.native
+  var ID: Double
   
   /** represents the range for the conditional format All ranges have to be in the same sheet. */
-  var Range: XSheetCellRanges = js.native
+  var Range: XSheetCellRanges
 }
 object ConditionalFormat {
   

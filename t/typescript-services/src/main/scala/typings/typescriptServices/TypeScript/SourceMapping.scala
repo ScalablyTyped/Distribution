@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMapping extends StObject {
   
-  var childMappings: js.Array[SourceMapping] = js.native
+  var childMappings: js.Array[SourceMapping]
   
-  var end: SourceMapPosition = js.native
+  var end: SourceMapPosition
   
-  var nameIndex: Double = js.native
+  var nameIndex: Double
   
-  var start: SourceMapPosition = js.native
+  var start: SourceMapPosition
 }
 object SourceMapping {
   

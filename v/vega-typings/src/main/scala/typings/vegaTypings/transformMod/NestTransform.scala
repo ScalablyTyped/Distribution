@@ -4,24 +4,24 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.nest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NestTransform extends _Transforms {
+trait NestTransform
+  extends StObject
+     with _Transforms {
   
-  var generate: js.UndefOr[Boolean | SignalRef] = js.native
+  var generate: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var keys: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var keys: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var `type`: nest = js.native
+  var `type`: nest
 }
 object NestTransform {
   
   @scala.inline
-  def apply(`type`: nest): NestTransform = {
+  def apply(): NestTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nest")
     __obj.asInstanceOf[NestTransform]
   }
   

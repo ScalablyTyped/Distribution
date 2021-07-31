@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsensehost/v4.1", "adsensehost_v4_1.Resource$Urlchannels")
@@ -31,7 +30,7 @@ class ResourceUrlchannels protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(params: ParamsResourceUrlchannelsDelete): GaxiosPromise[SchemaUrlChannel] = js.native
   def delete(params: ParamsResourceUrlchannelsDelete, callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceUrlchannels protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(params: ParamsResourceUrlchannelsInsert): GaxiosPromise[SchemaUrlChannel] = js.native
   def insert(params: ParamsResourceUrlchannelsInsert, callback: BodyResponseCallback[SchemaUrlChannel]): Unit = js.native
   def insert(
@@ -92,7 +91,7 @@ class ResourceUrlchannels protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlChannels] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceUrlchannelsList): GaxiosPromise[SchemaUrlChannels] = js.native
   def list(params: ParamsResourceUrlchannelsList, callback: BodyResponseCallback[SchemaUrlChannels]): Unit = js.native
   def list(

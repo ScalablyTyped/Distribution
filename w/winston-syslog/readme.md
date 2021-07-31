@@ -11,8 +11,8 @@ A syslog transport for winston
 | Full name          | winston-syslog |
 | Keywords           | logging, sysadmin, tools, winston, syslog |
 | # releases         | 9 |
-| # dependents       | 36 |
-| # downloads        | 1208104 |
+| # dependents       | 39 |
+| # downloads        | 1600165 |
 | # stars            | 3 |
 
 ## Links

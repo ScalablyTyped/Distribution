@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Creatives$Dealassociations")
@@ -30,7 +29,7 @@ class ResourceAccountsCreativesDealassociations protected () extends StObject {
     */
   def add(): GaxiosPromise[SchemaEmpty] = js.native
   def add(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def add(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def add(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def add(params: ParamsResourceAccountsCreativesDealassociationsAdd): GaxiosPromise[SchemaEmpty] = js.native
   def add(
     params: ParamsResourceAccountsCreativesDealassociationsAdd,
@@ -68,7 +67,7 @@ class ResourceAccountsCreativesDealassociations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDealAssociationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(params: ParamsResourceAccountsCreativesDealassociationsList): GaxiosPromise[SchemaListDealAssociationsResponse] = js.native
   def list(
     params: ParamsResourceAccountsCreativesDealassociationsList,
@@ -102,7 +101,7 @@ class ResourceAccountsCreativesDealassociations protected () extends StObject {
     */
   def remove(): GaxiosPromise[SchemaEmpty] = js.native
   def remove(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def remove(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def remove(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def remove(params: ParamsResourceAccountsCreativesDealassociationsRemove): GaxiosPromise[SchemaEmpty] = js.native
   def remove(
     params: ParamsResourceAccountsCreativesDealassociationsRemove,

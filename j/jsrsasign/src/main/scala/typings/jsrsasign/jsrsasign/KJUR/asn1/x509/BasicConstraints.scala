@@ -2,17 +2,17 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BasicConstraints ASN.1 structure class
   * @param params associative array of parameters (ex. {'cA': true, 'critical': true})
   */
-@js.native
-trait BasicConstraints extends Extension {
+trait BasicConstraints
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
 }
 object BasicConstraints {
   

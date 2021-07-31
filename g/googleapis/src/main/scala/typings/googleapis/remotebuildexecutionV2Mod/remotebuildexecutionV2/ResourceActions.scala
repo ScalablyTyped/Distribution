@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v2", "remotebuildexecution_v2.Resource$Actions")
@@ -72,7 +71,7 @@ class ResourceActions protected () extends StObject {
     */
   def execute(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def execute(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def execute(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(params: ParamsResourceActionsExecute): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def execute(
     params: ParamsResourceActionsExecute,

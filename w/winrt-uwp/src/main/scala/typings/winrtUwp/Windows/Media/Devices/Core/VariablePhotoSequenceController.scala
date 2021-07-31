@@ -5,40 +5,38 @@ import typings.winrtUwp.Windows.Media.MediaProperties.IMediaEncodingProperties
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for a variable photo sequence. */
-@js.native
 trait VariablePhotoSequenceController extends StObject {
   
   /** Gets the list of FrameController objects that determine the settings for each frame in a variable photo sequence. */
-  var desiredFrameControllers: IVector[FrameController] = js.native
+  var desiredFrameControllers: IVector[FrameController]
   
   /** Gets a FrameControlCapabilities object that provides information about the variable photo sequence capabilities of the capture device. */
-  var frameCapabilities: FrameControlCapabilities = js.native
+  var frameCapabilities: FrameControlCapabilities
   
   /**
     * Gets the current frame rate at which pictures can be taken in a variable photo sequence.
     * @return The current frame rate at which pictures can be taken in a variable photo sequence.
     */
-  def getCurrentFrameRate(): MediaRatio = js.native
+  def getCurrentFrameRate(): MediaRatio
   
   /**
     * Gets the highest frame rate supported when video and a variable photo sequence are being captured concurrently.
     * @param captureProperties The media encoding properties.
     * @return The highest supported concurrent frame rate.
     */
-  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio = js.native
+  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio
   
   /** Gets the maximum number of photos that can be taken per second in a variable photo sequence. */
-  var maxPhotosPerSecond: Double = js.native
+  var maxPhotosPerSecond: Double
   
   /** Gets or sets the number of photos that are taken per second in a variable photo sequence. */
-  var photosPerSecondLimit: Double = js.native
+  var photosPerSecondLimit: Double
   
   /** Gets a value that indicates whether variable photo sequences are supported by the capture device. */
-  var supported: Boolean = js.native
+  var supported: Boolean
 }
 object VariablePhotoSequenceController {
   

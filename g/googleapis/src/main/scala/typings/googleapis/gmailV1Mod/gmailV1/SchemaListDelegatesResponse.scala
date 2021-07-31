@@ -2,19 +2,17 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the ListDelegates method.
   */
-@js.native
 trait SchemaListDelegatesResponse extends StObject {
   
   /**
     * List of the user&#39;s delegates (with any verification status).
     */
-  var delegates: js.UndefOr[js.Array[SchemaDelegate]] = js.native
+  var delegates: js.UndefOr[js.Array[SchemaDelegate]] = js.undefined
 }
 object SchemaListDelegatesResponse {
   

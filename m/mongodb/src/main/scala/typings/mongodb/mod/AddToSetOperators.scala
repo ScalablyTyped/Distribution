@@ -2,14 +2,12 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddToSetOperators[Type] extends StObject {
   
   @JSName("$each")
-  var $each: Type = js.native
+  var $each: Type
 }
 object AddToSetOperators {
   
@@ -20,7 +18,7 @@ object AddToSetOperators {
   }
   
   @scala.inline
-  implicit class AddToSetOperatorsMutableBuilder[Self <: AddToSetOperators[_], Type] (val x: Self with AddToSetOperators[Type]) extends AnyVal {
+  implicit class AddToSetOperatorsMutableBuilder[Self <: AddToSetOperators[?], Type] (val x: Self & AddToSetOperators[Type]) extends AnyVal {
     
     @scala.inline
     def set$each(value: Type): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])

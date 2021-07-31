@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DealTerms extends StObject {
   
   /** Visibility of the URL in bid requests. (default: BRANDED) */
-  var brandingType: js.UndefOr[String] = js.native
+  var brandingType: js.UndefOr[String] = js.undefined
   
   /** Publisher provided description for the terms. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Non-binding estimate of the estimated gross spend for this deal. Can be set by buyer or seller. */
-  var estimatedGrossSpend: js.UndefOr[Price] = js.native
+  var estimatedGrossSpend: js.UndefOr[Price] = js.undefined
   
   /** Non-binding estimate of the impressions served per day. Can be set by buyer or seller. */
-  var estimatedImpressionsPerDay: js.UndefOr[String] = js.native
+  var estimatedImpressionsPerDay: js.UndefOr[String] = js.undefined
   
   /** The terms for guaranteed fixed price deals. */
-  var guaranteedFixedPriceTerms: js.UndefOr[GuaranteedFixedPriceTerms] = js.native
+  var guaranteedFixedPriceTerms: js.UndefOr[GuaranteedFixedPriceTerms] = js.undefined
   
   /** The terms for non-guaranteed auction deals. */
-  var nonGuaranteedAuctionTerms: js.UndefOr[NonGuaranteedAuctionTerms] = js.native
+  var nonGuaranteedAuctionTerms: js.UndefOr[NonGuaranteedAuctionTerms] = js.undefined
   
   /** The terms for non-guaranteed fixed price deals. */
-  var nonGuaranteedFixedPriceTerms: js.UndefOr[NonGuaranteedFixedPriceTerms] = js.native
+  var nonGuaranteedFixedPriceTerms: js.UndefOr[NonGuaranteedFixedPriceTerms] = js.undefined
   
   /**
     * The time zone name. For deals with Cost Per Day billing, defines the time zone used to mark the boundaries of a day. It should be an IANA TZ name, such as "America/Los_Angeles". For
     * more information, see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
     */
-  var sellerTimeZone: js.UndefOr[String] = js.native
+  var sellerTimeZone: js.UndefOr[String] = js.undefined
 }
 object DealTerms {
   

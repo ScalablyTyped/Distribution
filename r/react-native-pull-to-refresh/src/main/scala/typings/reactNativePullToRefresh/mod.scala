@@ -3,7 +3,6 @@ package typings.reactNativePullToRefresh
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,25 +14,24 @@ object mod {
   
   type PTRView = Component[PTRViewProps, js.Any, js.Any]
   
-  @js.native
   trait PTRViewProps extends StObject {
     
     // default 80
     // android only
-    var colors: js.UndefOr[String] = js.native
+    var colors: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     // iOS only
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var onRefresh: js.UndefOr[js.Function0[_]] = js.native
+    var onRefresh: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     // default #000
-    var progressBackgroundColor: js.UndefOr[String] = js.native
+    var progressBackgroundColor: js.UndefOr[String] = js.undefined
     
     // default O
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object PTRViewProps {
     
@@ -65,7 +63,7 @@ object mod {
       def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
       @scala.inline
-      def setOnRefresh(value: () => _): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
+      def setOnRefresh(value: () => js.Any): Self = StObject.set(x, "onRefresh", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnRefreshUndefined: Self = StObject.set(x, "onRefresh", js.undefined)

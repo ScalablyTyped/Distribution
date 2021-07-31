@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LegendLayer extends Accessor {
+trait LegendLayer
+  extends StObject
+     with Accessor {
   
   /**
     * The id of the operational layer to include in the printout's legend.

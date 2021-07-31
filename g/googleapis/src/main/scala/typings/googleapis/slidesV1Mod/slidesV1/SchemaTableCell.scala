@@ -2,39 +2,37 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Properties and contents of each table cell.
   */
-@js.native
 trait SchemaTableCell extends StObject {
   
   /**
     * Column span of the cell.
     */
-  var columnSpan: js.UndefOr[Double] = js.native
+  var columnSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the cell within the table.
     */
-  var location: js.UndefOr[SchemaTableCellLocation] = js.native
+  var location: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * Row span of the cell.
     */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * The properties of the table cell.
     */
-  var tableCellProperties: js.UndefOr[SchemaTableCellProperties] = js.native
+  var tableCellProperties: js.UndefOr[SchemaTableCellProperties] = js.undefined
   
   /**
     * The text content of the cell.
     */
-  var text: js.UndefOr[SchemaTextContent] = js.native
+  var text: js.UndefOr[SchemaTextContent] = js.undefined
 }
 object SchemaTableCell {
   

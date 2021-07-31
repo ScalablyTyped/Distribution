@@ -5,55 +5,53 @@ import typings.uifabricStyling.uifabricStylingStrings.absolute
 import typings.uifabricStyling.uifabricStylingStrings.relative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igetfocusstylesMod {
   
-  @js.native
   trait IGetFocusStylesOptions extends StObject {
     
     /**
       * Color of the border.
       * @defaultvalue theme.palette.white
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /**
       * Style for high contrast mode.
       */
-    var highContrastStyle: js.UndefOr[IRawStyle] = js.native
+    var highContrastStyle: js.UndefOr[IRawStyle] = js.undefined
     
     /**
       * The number of pixels to inset the border.
       * @defaultvalue 0
       */
-    var inset: js.UndefOr[Double] = js.native
+    var inset: js.UndefOr[Double] = js.undefined
     
     /**
       * If the styles should apply on `:focus` pseudo element.
       * @defaultvalue true
       */
-    var isFocusedOnly: js.UndefOr[Boolean] = js.native
+    var isFocusedOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color of the outline.
       * @defaultvalue theme.palette.neutralSecondary
       */
-    var outlineColor: js.UndefOr[String] = js.native
+    var outlineColor: js.UndefOr[String] = js.undefined
     
     /**
       * The positioning applied to the container.
       * Must be 'relative' or 'absolute' so that the focus border can live around it.
       * @defaultvalue 'relative'
       */
-    var position: js.UndefOr[relative | absolute] = js.native
+    var position: js.UndefOr[relative | absolute] = js.undefined
     
     /**
       * The width of the border in pixels.
       * @defaultvalue 1
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IGetFocusStylesOptions {
     

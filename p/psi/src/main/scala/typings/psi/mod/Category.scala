@@ -2,23 +2,21 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  var auditRefs: js.Array[AuditRef] = js.native
+  var auditRefs: js.Array[AuditRef]
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var manualDescription: String = js.native
+  var manualDescription: String
   
-  var score: js.Object = js.native
+  var score: js.Object
   
-  var title: String = js.native
+  var title: String
 }
 object Category {
   

@@ -2,27 +2,27 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMarker extends IDisposable {
+trait IMarker
+  extends StObject
+     with IDisposable {
   
   /**
     * A unique identifier for this marker.
     */
-  val id: Double = js.native
+  val id: Double
   
   /**
     * Whether this marker is disposed.
     */
-  val isDisposed: Boolean = js.native
+  val isDisposed: Boolean
   
   /**
     * The actual line index in the buffer at this point in time. This is set to
     * -1 if the marker has been disposed.
     */
-  val line: Double = js.native
+  val line: Double
 }
 object IMarker {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetGroupsResponse extends StObject {
   
   /**
     * The list of your dataset groups.
     */
-  var datasetGroups: js.UndefOr[DatasetGroups] = js.native
+  var datasetGroups: js.UndefOr[DatasetGroups] = js.undefined
   
   /**
     * A token for getting the next set of dataset groups (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDatasetGroupsResponse {
   

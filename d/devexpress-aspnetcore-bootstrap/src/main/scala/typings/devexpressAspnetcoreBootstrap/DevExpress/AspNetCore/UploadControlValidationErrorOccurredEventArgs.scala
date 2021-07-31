@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadControlValidationErrorOccurredEventArgs extends EventArgs {
+trait UploadControlValidationErrorOccurredEventArgs
+  extends StObject
+     with EventArgs {
   
-  var errorText: String = js.native
+  var errorText: String
   
-  val invalidFiles: js.Array[BootstrapUploadControlInvalidFileInfo] = js.native
+  val invalidFiles: js.Array[BootstrapUploadControlInvalidFileInfo]
   
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
   
-  val validationSettings: BootstrapUploadControlValidationSettings = js.native
+  val validationSettings: BootstrapUploadControlValidationSettings
 }
 object UploadControlValidationErrorOccurredEventArgs {
   

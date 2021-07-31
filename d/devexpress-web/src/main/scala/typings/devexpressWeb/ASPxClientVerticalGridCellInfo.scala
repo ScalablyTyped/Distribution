@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information on a cell that is being edited.
   */
-@js.native
 trait ASPxClientVerticalGridCellInfo extends StObject {
   
   /**
     * Gets the visible index of the record that contains the cell currently being processed.
     */
-  var recordVisibleIndex: Double = js.native
+  var recordVisibleIndex: Double
   
   /**
     * Gets the row that contains the cell currently being processed.
     */
-  var row: ASPxClientVerticalGridRow = js.native
+  var row: ASPxClientVerticalGridRow
 }
 object ASPxClientVerticalGridCellInfo {
   

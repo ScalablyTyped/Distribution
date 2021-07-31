@@ -2,72 +2,70 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenAnimationOptions extends StObject {
   
   /**
     * Animate the element over opacity
     */
-  var alpha: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var alpha: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Enable or disable the animation
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animate the element over rotation
     */
-  var rotation: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var rotation: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over rotationX
     */
-  var rotationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var rotationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over rotationY
     */
-  var rotationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var rotationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over scaleX
     */
-  var scaleX: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var scaleX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over scaleY
     */
-  var scaleY: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var scaleY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over translateX
     */
-  var translationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var translationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over translateY
     */
-  var translationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var translationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Wait for the root view to render before start animation
     */
-  var waitForRender: js.UndefOr[Boolean] = js.native
+  var waitForRender: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animate the element over x value
     */
-  var x: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var x: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   
   /**
     * Animate the element over y value
     */
-  var y: js.UndefOr[OptionsAnimationPropertyConfig] = js.native
+  var y: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
 }
 object ScreenAnimationOptions {
   

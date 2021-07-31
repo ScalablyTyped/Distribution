@@ -2,15 +2,13 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSitesOutput extends StObject {
   
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
-  var Sites: js.UndefOr[siteListDefinition] = js.native
+  var Sites: js.UndefOr[siteListDefinition] = js.undefined
 }
 object ListSitesOutput {
   

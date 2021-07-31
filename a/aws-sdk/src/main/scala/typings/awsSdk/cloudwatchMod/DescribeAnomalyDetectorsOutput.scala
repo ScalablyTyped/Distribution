@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAnomalyDetectorsOutput extends StObject {
   
   /**
     * The list of anomaly detection models returned by the operation.
     */
-  var AnomalyDetectors: js.UndefOr[typings.awsSdk.cloudwatchMod.AnomalyDetectors] = js.native
+  var AnomalyDetectors: js.UndefOr[typings.awsSdk.cloudwatchMod.AnomalyDetectors] = js.undefined
   
   /**
     * A token that you can use in a subsequent operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
 }
 object DescribeAnomalyDetectorsOutput {
   

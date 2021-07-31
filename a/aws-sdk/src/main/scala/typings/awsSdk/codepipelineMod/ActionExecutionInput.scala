@@ -2,43 +2,41 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionExecutionInput extends StObject {
   
-  var actionTypeId: js.UndefOr[ActionTypeId] = js.native
+  var actionTypeId: js.UndefOr[ActionTypeId] = js.undefined
   
   /**
     * Configuration data for an action execution.
     */
-  var configuration: js.UndefOr[ActionConfigurationMap] = js.native
+  var configuration: js.UndefOr[ActionConfigurationMap] = js.undefined
   
   /**
     * Details of input artifacts of the action that correspond to the action execution.
     */
-  var inputArtifacts: js.UndefOr[ArtifactDetailList] = js.native
+  var inputArtifacts: js.UndefOr[ArtifactDetailList] = js.undefined
   
   /**
     * The variable namespace associated with the action. All variables produced as output by this action fall under this namespace.
     */
-  var namespace: js.UndefOr[ActionNamespace] = js.native
+  var namespace: js.UndefOr[ActionNamespace] = js.undefined
   
   /**
     * The AWS Region for the action, such as us-east-1.
     */
-  var region: js.UndefOr[AWSRegionName] = js.native
+  var region: js.UndefOr[AWSRegionName] = js.undefined
   
   /**
     * Configuration data for an action execution with all variable references replaced with their real values for the execution.
     */
-  var resolvedConfiguration: js.UndefOr[ResolvedActionConfigurationMap] = js.native
+  var resolvedConfiguration: js.UndefOr[ResolvedActionConfigurationMap] = js.undefined
   
   /**
     * The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline. 
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object ActionExecutionInput {
   

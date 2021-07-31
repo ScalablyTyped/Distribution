@@ -10,7 +10,6 @@ import typings.reactNativeSortableGrid.anon.DeleteModeOn
 import typings.reactNativeSortableGrid.anon.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,10 +33,9 @@ object mod {
   @scala.inline
   def default_=(x: SortableGridStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ItemOrder extends StObject {
     
-    var itemOrder: js.Array[OrderedItem] = js.native
+    var itemOrder: js.Array[OrderedItem]
   }
   object ItemOrder {
     
@@ -58,20 +56,19 @@ object mod {
     }
   }
   
-  @js.native
   trait OrderedItem extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var order: Double = js.native
+    var order: Double
     
-    var ref: SortableGridItem | Null = js.native
+    var ref: SortableGridItem | Null
   }
   object OrderedItem {
     
     @scala.inline
     def apply(key: String, order: Double): OrderedItem = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], ref = null)
       __obj.asInstanceOf[OrderedItem]
     }
     
@@ -96,16 +93,15 @@ object mod {
   
   type SortableGridItem = ReactElement
   
-  @js.native
   trait SortableGridItemProps extends StObject {
     
     /**
       * Flag to mark a child node as being inactive. If set, no touch events
       * will be fired when users interact with the node.
       */
-    var inactive: js.UndefOr[Boolean] = js.native
+    var inactive: js.UndefOr[Boolean] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
     /**
       * Function that is executed when the block is double tapped within a
@@ -113,13 +109,13 @@ object mod {
       * delay the execution of onTap. Omitting this will cause all taps to be
       * handled as single taps, regardless of their frequency.
       */
-    var onDoubleTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDoubleTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Function that is executed when the block is tapped once, but not pressed
       *  for long enough to activate the drag.
       */
-    var onTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SortableGridItemProps {
     
@@ -155,25 +151,24 @@ object mod {
     }
   }
   
-  @js.native
   trait SortableGridProps extends StObject {
     
     /**
       * How long should it take for the block that is being dragged to seek its
       * place after it's released (milliseconds)
       */
-    var activeBlockCenteringDuration: js.UndefOr[Double] = js.native
+    var activeBlockCenteringDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * How long should the transition of a passive block take when the active
       * block takes its place (milliseconds)
       */
-    var blockTransitionDuration: js.UndefOr[Double] = js.native
+    var blockTransitionDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Items to be rendered in the SortableGrid
       */
-    var children: js.UndefOr[js.Array[SortableGridItem]] = js.native
+    var children: js.UndefOr[js.Array[SortableGridItem]] = js.undefined
     
     /**
       * How long will the execution wait for the second tap before deciding it
@@ -181,59 +176,59 @@ object mod {
       * onDoubleTap-property is given to the item being tapped - In which case
       * single-tap callback will be executed instantly
       */
-    var doubleTapTreshold: js.UndefOr[Double] = js.native
+    var doubleTapTreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * How long must the user hold the press on the block until it becomes
       * active and can be dragged (milliseconds)
       */
-    var dragActivationThreshold: js.UndefOr[Double] = js.native
+    var dragActivationThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom animation to override the default wiggle. Must be an object
       * containing a key transform, which is an array of transformations.
       */
-    var dragStartAnimation: js.UndefOr[Transform] = js.native
+    var dragStartAnimation: js.UndefOr[Transform] = js.undefined
     
     /**
       * When used together with itemsPerRow, sets the size of a block to
       * something other than the default square
       */
-    var itemHeight: js.UndefOr[Double] = js.native
+    var itemHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, itemsPerRow will be calculated to fit items of this size
       */
-    var itemWidth: js.UndefOr[Double] = js.native
+    var itemWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * How many items should be placed on one row
       */
-    var itemsPerRow: js.UndefOr[Double] = js.native
+    var itemsPerRow: js.UndefOr[Double] = js.undefined
     
     /**
       * Function that is executed item is deleted. Will return the properties
       * of the deleted item.
       */
-    var onDeleteItem: js.UndefOr[js.Function1[/* deletedItem */ OrderedItem, Unit]] = js.native
+    var onDeleteItem: js.UndefOr[js.Function1[/* deletedItem */ OrderedItem, Unit]] = js.undefined
     
     /**
       * Function that is executed after the drag is released. Will return the
       * new item order.
       */
-    var onDragRelease: js.UndefOr[js.Function1[/* itemOrder */ ItemOrder, Unit]] = js.native
+    var onDragRelease: js.UndefOr[js.Function1[/* itemOrder */ ItemOrder, Unit]] = js.undefined
     
     /**
       * Function that is called when the dragging starts. This can be used to
       * lock other touch responders from listening to the touch such as
       * ScrollViews and Swipers.
       */
-    var onDragStart: js.UndefOr[js.Function1[/* item */ OrderedItem, Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* item */ OrderedItem, Unit]] = js.undefined
     
     /**
       * Custom styles to override or complement the sortableGrid native style.
       */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object SortableGridProps {
     
@@ -333,7 +328,9 @@ object mod {
   }
   
   @js.native
-  trait SortableGridStatic extends ClassicComponentClass[SortableGridProps] {
+  trait SortableGridStatic
+    extends StObject
+       with ClassicComponentClass[SortableGridProps] {
     
     /**
       * Calling this will toggle item deletion mode on/off.

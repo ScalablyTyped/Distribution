@@ -2,36 +2,34 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableProvisionedThroughput extends StObject {
   
   /**
     * Indicates when the provisioned throughput was last decreased. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastDecreaseDateTime: js.UndefOr[NonEmptyString] = js.native
+  var LastDecreaseDateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the provisioned throughput was last increased. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastIncreaseDateTime: js.UndefOr[NonEmptyString] = js.native
+  var LastIncreaseDateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The number of times during the current UTC calendar day that the provisioned throughput was decreased.
     */
-  var NumberOfDecreasesToday: js.UndefOr[Integer] = js.native
+  var NumberOfDecreasesToday: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var ReadCapacityUnits: js.UndefOr[Integer] = js.native
+  var ReadCapacityUnits: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var WriteCapacityUnits: js.UndefOr[Integer] = js.native
+  var WriteCapacityUnits: js.UndefOr[Integer] = js.undefined
 }
 object AwsDynamoDbTableProvisionedThroughput {
   

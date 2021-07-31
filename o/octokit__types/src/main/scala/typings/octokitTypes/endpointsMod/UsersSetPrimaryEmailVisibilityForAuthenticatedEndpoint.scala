@@ -2,21 +2,19 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint extends StObject {
   
   /**
     * Specify the _primary_ email address that needs a visibility change.
     */
-  var email: String = js.native
+  var email: String
   
   /**
     * Use `public` to enable an authenticated user to view the specified email address, or use `private` so this primary email address cannot be seen publicly.
     */
-  var visibility: String = js.native
+  var visibility: String
 }
 object UsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint {
   

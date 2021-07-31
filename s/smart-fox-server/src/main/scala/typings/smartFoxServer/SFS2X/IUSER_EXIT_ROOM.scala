@@ -4,15 +4,13 @@ import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUSER_EXIT_ROOM extends StObject {
   
-  var room: SFSRoom = js.native
+  var room: SFSRoom
   
-  var user: SFSUser = js.native
+  var user: SFSUser
 }
 object IUSER_EXIT_ROOM {
   

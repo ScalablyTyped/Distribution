@@ -2,10 +2,8 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetQueueOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait DataSetQueueOptions extends StObject {
     * max: number - When the queue exceeds the given maximum number of entries, the queue is flushed automatically. Default value is Infinity.
     * Default value is Infinity.
     */
-  var queue: js.UndefOr[js.Any | Boolean] = js.native
+  var queue: js.UndefOr[js.Any | Boolean] = js.undefined
 }
 object DataSetQueueOptions {
   

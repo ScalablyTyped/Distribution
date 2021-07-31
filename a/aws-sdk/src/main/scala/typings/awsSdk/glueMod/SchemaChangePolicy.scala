@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaChangePolicy extends StObject {
   
   /**
     * The deletion behavior when the crawler finds a deleted object.
     */
-  var DeleteBehavior: js.UndefOr[typings.awsSdk.glueMod.DeleteBehavior] = js.native
+  var DeleteBehavior: js.UndefOr[typings.awsSdk.glueMod.DeleteBehavior] = js.undefined
   
   /**
     * The update behavior when the crawler finds a changed schema.
     */
-  var UpdateBehavior: js.UndefOr[typings.awsSdk.glueMod.UpdateBehavior] = js.native
+  var UpdateBehavior: js.UndefOr[typings.awsSdk.glueMod.UpdateBehavior] = js.undefined
 }
 object SchemaChangePolicy {
   

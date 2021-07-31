@@ -4,7 +4,6 @@ import typings.awsSdk.credentialsMod.Credentials
 import typings.awsSdk.errorMod.AWSError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialProviderChainMod {

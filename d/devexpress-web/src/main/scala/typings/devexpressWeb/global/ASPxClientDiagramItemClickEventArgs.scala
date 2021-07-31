@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientDiagramItemClickEventArgs")
 @js.native
 class ASPxClientDiagramItemClickEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientDiagramItemClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientDiagramItemClickEventArgs {
   /**
     * Initializes a new instance of the ASPxClientDiagramItemClickEventArgs class with specified settings.
     * @param item An item object related to the event.
     */
   def this(item: typings.devexpressWeb.DiagramItem) = this()
+  
+  /**
+    * Gets an object that provides information about an item (shape or connector) related to the event.
+    */
+  /* CompleteClass */
+  var item: typings.devexpressWeb.DiagramItem = js.native
 }

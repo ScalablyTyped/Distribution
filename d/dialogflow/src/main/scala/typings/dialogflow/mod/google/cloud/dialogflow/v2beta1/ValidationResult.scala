@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ValidationResult. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ValidationResult.
   * @param [properties] Properties to set
   */
-class ValidationResult () extends IValidationResult {
+class ValidationResult ()
+  extends StObject
+     with IValidationResult {
   def this(properties: IValidationResult) = this()
   
   /**
@@ -32,18 +33,20 @@ class ValidationResult () extends IValidationResult {
 }
 object ValidationResult {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ValidationResult instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ValidationResult instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.create")
-  @js.native
-  def create(): ValidationResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.create")
-  @js.native
-  def create(properties: IValidationResult): ValidationResult = js.native
+  @scala.inline
+  def create(): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ValidationResult]
+  @scala.inline
+  def create(properties: IValidationResult): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
   
   /**
     * Decodes a ValidationResult message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object ValidationResult {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decode")
-  @js.native
-  def decode(reader: Reader): ValidationResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ValidationResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decode")
-  @js.native
-  def decode(reader: Uint8Array): ValidationResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ValidationResult = js.native
+  @scala.inline
+  def decode(reader: Reader): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
+  @scala.inline
+  def decode(reader: Uint8Array): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ValidationResult = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValidationResult]
   
   /**
     * Decodes a ValidationResult message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object ValidationResult {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ValidationResult = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ValidationResult = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
   
   /**
     * Encodes the specified ValidationResult message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ValidationResult.verify|verify} messages.
@@ -89,12 +86,10 @@ object ValidationResult {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.encode")
-  @js.native
-  def encode(message: IValidationResult): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.encode")
-  @js.native
-  def encode(message: IValidationResult, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IValidationResult): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IValidationResult, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ValidationResult message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ValidationResult.verify|verify} messages.
@@ -103,12 +98,10 @@ object ValidationResult {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValidationResult): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValidationResult, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IValidationResult): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IValidationResult, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ValidationResult message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object ValidationResult {
     * @returns ValidationResult
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ValidationResult = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
   
   /**
     * Creates a plain object from a ValidationResult message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object ValidationResult {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.toObject")
-  @js.native
-  def toObject(message: ValidationResult): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.toObject")
-  @js.native
-  def toObject(message: ValidationResult, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ValidationResult): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ValidationResult, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ValidationResult message.
@@ -140,7 +130,6 @@ object ValidationResult {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationResult.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

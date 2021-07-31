@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,26 +14,42 @@ sealed trait AggregationType extends StObject
 object AggregationType extends StObject {
   
   @js.native
-  sealed trait AUTO extends AggregationType
+  sealed trait AUTO
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait AVG extends AggregationType
+  sealed trait AVG
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait COUNT extends AggregationType
+  sealed trait COUNT
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait COUNT_DISTINCT extends AggregationType
+  sealed trait COUNT_DISTINCT
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait MAX extends AggregationType
+  sealed trait MAX
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait MIN extends AggregationType
+  sealed trait MIN
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait NO_AGGREGATION extends AggregationType
+  sealed trait NO_AGGREGATION
+    extends StObject
+       with AggregationType
   
   @js.native
-  sealed trait SUM extends AggregationType
+  sealed trait SUM
+    extends StObject
+       with AggregationType
 }

@@ -7,60 +7,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchViewModelUpdateUpdateOptions extends Object {
+trait SketchViewModelUpdateUpdateOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates if the `rotation` operation will be enabled when updating graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var enableRotation: js.UndefOr[Boolean] = js.native
+  var enableRotation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the `scale` operation will be enabled when updating graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var enableScaling: js.UndefOr[Boolean] = js.native
+  var enableScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if z-values can be modified when updating the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var enableZ: js.UndefOr[Boolean] = js.native
+  var enableZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether more than one selection can be made at once.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.native
+  var multipleSelectionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the uniform scale operation will be enabled when updating graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var preserveAspectRatio: js.UndefOr[Boolean] = js.native
+  var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var toggleToolOnClick: js.UndefOr[Boolean] = js.native
+  var toggleToolOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the update tool.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     */
-  var tool: js.UndefOr[transform | reshape | move] = js.native
+  var tool: js.UndefOr[transform | reshape | move] = js.undefined
 }
 object SketchViewModelUpdateUpdateOptions {
   

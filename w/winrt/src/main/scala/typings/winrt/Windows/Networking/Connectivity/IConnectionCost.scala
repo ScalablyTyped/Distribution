@@ -2,19 +2,17 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnectionCost extends StObject {
   
-  var approachingDataLimit: Boolean = js.native
+  var approachingDataLimit: Boolean
   
-  var networkCostType: NetworkCostType = js.native
+  var networkCostType: NetworkCostType
   
-  var overDataLimit: Boolean = js.native
+  var overDataLimit: Boolean
   
-  var roaming: Boolean = js.native
+  var roaming: Boolean
 }
 object IConnectionCost {
   

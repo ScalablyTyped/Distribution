@@ -4,13 +4,13 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrintCompleteEventResults extends Object {
+trait PrintCompleteEventResults
+  extends StObject
+     with Object {
   
-  var link: Collection[FileLink] = js.native
+  var link: Collection[FileLink]
 }
 object PrintCompleteEventResults {
   

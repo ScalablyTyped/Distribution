@@ -5,7 +5,6 @@ import typings.antdMobile.anon.TypeofIndexedList
 import typings.antdMobile.listViewMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "ListView")

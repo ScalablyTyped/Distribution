@@ -2,26 +2,24 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupColumnOptions extends StObject {
   
-  def aggregation(values: js.Array[_]): js.Any = js.native
+  def aggregation(values: js.Array[js.Any]): js.Any
   
-  var column: Double = js.native
+  var column: Double
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GroupColumnOptions {
   
   @scala.inline
-  def apply(aggregation: js.Array[_] => js.Any, column: Double, `type`: String): GroupColumnOptions = {
+  def apply(aggregation: js.Array[js.Any] => js.Any, column: Double, `type`: String): GroupColumnOptions = {
     val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColumnOptions]
@@ -31,7 +29,7 @@ object GroupColumnOptions {
   implicit class GroupColumnOptionsMutableBuilder[Self <: GroupColumnOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAggregation(value: js.Array[_] => js.Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
+    def setAggregation(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
     
     @scala.inline
     def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

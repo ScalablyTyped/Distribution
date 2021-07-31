@@ -2,18 +2,16 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixLevelStorageMetrics extends StObject {
   
   /**
     * A container for whether prefix-level storage metrics are enabled.
     */
-  var IsEnabled: js.UndefOr[typings.awsSdk.s3controlMod.IsEnabled] = js.native
+  var IsEnabled: js.UndefOr[typings.awsSdk.s3controlMod.IsEnabled] = js.undefined
   
-  var SelectionCriteria: js.UndefOr[typings.awsSdk.s3controlMod.SelectionCriteria] = js.native
+  var SelectionCriteria: js.UndefOr[typings.awsSdk.s3controlMod.SelectionCriteria] = js.undefined
 }
 object PrefixLevelStorageMetrics {
   

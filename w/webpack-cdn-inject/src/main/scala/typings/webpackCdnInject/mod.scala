@@ -3,29 +3,29 @@ package typings.webpackCdnInject
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-cdn-inject", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Defines urls to be added to document body (tag type is defined by url's file extension).
       */
-    var body: js.UndefOr[js.Array[String]] = js.native
+    var body: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Defines urls to be added to document head (tag type is defined by url's file extension).
       */
-    var head: js.UndefOr[js.Array[String]] = js.native
+    var head: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

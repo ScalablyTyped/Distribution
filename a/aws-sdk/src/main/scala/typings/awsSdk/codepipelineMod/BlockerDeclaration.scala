@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockerDeclaration extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var name: BlockerName = js.native
+  var name: BlockerName
   
   /**
     * Reserved for future use.
     */
-  var `type`: BlockerType = js.native
+  var `type`: BlockerType
 }
 object BlockerDeclaration {
   

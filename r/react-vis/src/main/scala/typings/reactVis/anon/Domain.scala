@@ -3,17 +3,15 @@ package typings.reactVis.anon
 import typings.reactVis.mod.RVTickFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var domain: js.Array[Double] = js.native
+  var domain: js.Array[Double]
   
-  var name: String = js.native
+  var name: String
   
-  var tickFormat: js.UndefOr[RVTickFormat] = js.native
+  var tickFormat: js.UndefOr[RVTickFormat] = js.undefined
 }
 object Domain {
   

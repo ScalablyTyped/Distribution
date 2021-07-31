@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,34 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All Shape methods and properties that change a shape or any of its subordinate parts must be placed between
   * shape.beginEdit() and shape.endEdit() calls to function correctly.
   */
-@js.native
-trait FlashShape extends FlashOval {
+trait FlashShape
+  extends StObject
+     with FlashOval {
   
-  def beginEdit(): Unit = js.native
+  def beginEdit(): Unit
   
-  var contours: js.Array[FlashContour] = js.native
+  var contours: js.Array[FlashContour]
   
-  def deleteEdge(index: Double): Unit = js.native
+  def deleteEdge(index: Double): Unit
   
-  var edges: js.Array[FlashEdge] = js.native
+  var edges: js.Array[FlashEdge]
   
-  def endEdit(): Unit = js.native
+  def endEdit(): Unit
   
-  def getCubicSegmentPoints(cubicSegmentIndex: Double): js.Array[FlashPoint] = js.native
+  def getCubicSegmentPoints(cubicSegmentIndex: Double): js.Array[FlashPoint]
   
-  var isDrawingObject: Boolean = js.native
+  var isDrawingObject: Boolean
   
-  var isGroup: Boolean = js.native
+  var isGroup: Boolean
   
-  var isOvalObject: Boolean = js.native
+  var isOvalObject: Boolean
   
-  var isRectangleObject: Boolean = js.native
+  var isRectangleObject: Boolean
   
-  var members: js.Array[FlashShape] = js.native
+  var members: js.Array[FlashShape]
   
-  var numCubicSegments: Double = js.native
+  var numCubicSegments: Double
   
-  var vertices: js.Array[FlashVertex] = js.native
+  var vertices: js.Array[FlashVertex]
 }
 object FlashShape {
   

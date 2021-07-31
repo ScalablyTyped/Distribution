@@ -4,27 +4,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a change that was applied to the data. */
-@js.native
-trait ChartDataChangeEvent extends EventObject {
+trait ChartDataChangeEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the column number in which the changes end. */
-  var EndColumn: Double = js.native
+  var EndColumn: Double
   
   /** specifies the row number in which the changes end. */
-  var EndRow: Double = js.native
+  var EndRow: Double
   
   /** specifies the column number in which the changes begin. */
-  var StartColumn: Double = js.native
+  var StartColumn: Double
   
   /** specifies the row number in which the changes begin. */
-  var StartRow: Double = js.native
+  var StartRow: Double
   
   /** specifies the type of change to the data. */
-  var Type: ChartDataChangeType = js.native
+  var Type: ChartDataChangeType
 }
 object ChartDataChangeEvent {
   

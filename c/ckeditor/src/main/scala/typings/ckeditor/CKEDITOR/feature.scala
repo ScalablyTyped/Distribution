@@ -4,23 +4,21 @@ import typings.ckeditor.CKEDITOR.filter.allowedContentRule
 import typings.ckeditor.CKEDITOR.filter.allowedContentRules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait feature extends StObject {
   
-  var allowedContent: js.UndefOr[allowedContentRules] = js.native
+  var allowedContent: js.UndefOr[allowedContentRules] = js.undefined
   
-  var contentForms: js.UndefOr[js.Any] = js.native
+  var contentForms: js.UndefOr[js.Any] = js.undefined
   
-  var contentTransformations: js.UndefOr[js.Any] = js.native
+  var contentTransformations: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var requiredContent: js.UndefOr[String | style] = js.native
+  var requiredContent: js.UndefOr[String | style] = js.undefined
   
-  var toFeature: js.UndefOr[js.Function0[this.type]] = js.native
+  var toFeature: js.UndefOr[js.Function0[this.type]] = js.undefined
 }
 object feature {
   

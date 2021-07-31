@@ -2,41 +2,39 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterDeclaration extends StObject {
   
   /**
     * The default value of the parameter.
     */
-  var DefaultValue: js.UndefOr[ParameterValue] = js.native
+  var DefaultValue: js.UndefOr[ParameterValue] = js.undefined
   
   /**
     * The description that is associate with the parameter.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * Flag that indicates whether the parameter value is shown as plain text in logs and in the AWS Management Console.
     */
-  var NoEcho: js.UndefOr[typings.awsSdk.cloudformationMod.NoEcho] = js.native
+  var NoEcho: js.UndefOr[typings.awsSdk.cloudformationMod.NoEcho] = js.undefined
   
   /**
     * The criteria that AWS CloudFormation uses to validate parameter values.
     */
-  var ParameterConstraints: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterConstraints] = js.native
+  var ParameterConstraints: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterConstraints] = js.undefined
   
   /**
     * The name that is associated with the parameter.
     */
-  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.native
+  var ParameterKey: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterKey] = js.undefined
   
   /**
     * The type of parameter.
     */
-  var ParameterType: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterType] = js.native
+  var ParameterType: js.UndefOr[typings.awsSdk.cloudformationMod.ParameterType] = js.undefined
 }
 object ParameterDeclaration {
   

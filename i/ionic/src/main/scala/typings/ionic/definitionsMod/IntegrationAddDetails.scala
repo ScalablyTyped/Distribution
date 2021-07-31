@@ -2,19 +2,17 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegrationAddDetails extends StObject {
   
-  var enableArgs: js.UndefOr[js.Array[String]] = js.native
+  var enableArgs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var env: IonicEnvironment = js.native
+  var env: IonicEnvironment
   
-  var quiet: js.UndefOr[Boolean] = js.native
+  var quiet: js.UndefOr[Boolean] = js.undefined
   
-  var root: String = js.native
+  var root: String
 }
 object IntegrationAddDetails {
   

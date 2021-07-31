@@ -4,11 +4,11 @@ import typings.stripe.mod.IDataOptionsWithMetadata
 import typings.stripe.mod.cards.ICardSourceCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInvoicePayOptions extends IDataOptionsWithMetadata {
+trait IInvoicePayOptions
+  extends StObject
+     with IDataOptionsWithMetadata {
   
   /**
     * In cases where the source used to pay the invoice has insufficient
@@ -22,19 +22,19 @@ trait IInvoicePayOptions extends IDataOptionsWithMetadata {
     * than the amount due by a small amount, you might want to forgive
     * the difference.
     */
-  var forgive: js.UndefOr[Boolean] = js.native
+  var forgive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean representing whether an invoice is paid outside of Stripe.
     * This will result in no charge being made.
     */
-  var paid_out_of_band: js.UndefOr[Boolean] = js.native
+  var paid_out_of_band: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A payment source to be charged. The source must be the ID of a source
     * belonging to the customer associated with the invoice being paid.
     */
-  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.native
+  var source: js.UndefOr[String | ICardSourceCreationOptions] = js.undefined
 }
 object IInvoicePayOptions {
   

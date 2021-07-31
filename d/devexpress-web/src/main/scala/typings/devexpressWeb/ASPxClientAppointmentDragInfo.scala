@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stores information about an appointment drag operation.
   */
-@js.native
 trait ASPxClientAppointmentDragInfo extends StObject {
   
   /**
     * Gets the dragged appointment's identifier.
     */
-  var appointmentId: String = js.native
+  var appointmentId: String
   
   /**
     * Gets the appointment's interval after the drag operation.
     */
-  var newInterval: ASPxClientTimeInterval = js.native
+  var newInterval: ASPxClientTimeInterval
   
   /**
     * Gets resources associated with the appointment after the drag operation.
     */
-  var newResources: js.Array[String] = js.native
+  var newResources: js.Array[String]
   
   /**
     * Gets the appointment's interval before the drag operation.
     */
-  var oldInterval: ASPxClientTimeInterval = js.native
+  var oldInterval: ASPxClientTimeInterval
   
   /**
     * Gets resources that were associated with the appointment before the drag operation.
     */
-  var oldResources: js.Array[String] = js.native
+  var oldResources: js.Array[String]
 }
 object ASPxClientAppointmentDragInfo {
   

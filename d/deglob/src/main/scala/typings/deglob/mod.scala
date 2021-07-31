@@ -3,34 +3,34 @@ package typings.deglob
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(patterns: js.Array[String], cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(patterns: js.Array[String], opts: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("deglob", JSImport.Namespace)
   @js.native
-  def apply(patterns: js.Array[String], cb: Callback): Unit = js.native
-  @JSImport("deglob", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String], opts: Options, cb: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* err */ Error | Null, /* files */ js.Array[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var configKey: js.UndefOr[String] = js.native
+    var configKey: js.UndefOr[String] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var gitIgnoreFile: js.UndefOr[String] = js.native
+    var gitIgnoreFile: js.UndefOr[String] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var useGitIgnore: js.UndefOr[Boolean] = js.native
+    var useGitIgnore: js.UndefOr[Boolean] = js.undefined
     
-    var usePackageJson: js.UndefOr[Boolean] = js.native
+    var usePackageJson: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

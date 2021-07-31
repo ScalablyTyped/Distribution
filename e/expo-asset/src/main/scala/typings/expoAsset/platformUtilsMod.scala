@@ -3,10 +3,13 @@ package typings.expoAsset
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformUtilsMod {
+  
+  @JSImport("expo-asset/build/PlatformUtils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo-asset/build/PlatformUtils", "IS_BARE_ENV_WITHOUT_UPDATES")
   @js.native
@@ -24,17 +27,14 @@ object platformUtilsMod {
   @js.native
   val IS_MANAGED_ENV: Boolean = js.native
   
-  @JSImport("expo-asset/build/PlatformUtils", "downloadAsync")
-  @js.native
-  def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = js.native
+  @scala.inline
+  def downloadAsync(uri: js.Any, hash: js.Any, `type`: js.Any, name: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadAsync")(uri.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("expo-asset/build/PlatformUtils", "getLocalAssets")
-  @js.native
-  def getLocalAssets(): js.Any = js.native
+  @scala.inline
+  def getLocalAssets(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalAssets")().asInstanceOf[js.Any]
   
-  @JSImport("expo-asset/build/PlatformUtils", "getManifest")
-  @js.native
-  def getManifest(): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def getManifest(): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[StringDictionary[js.Any]]
   
   @JSImport("expo-asset/build/PlatformUtils", "manifestBaseUrl")
   @js.native

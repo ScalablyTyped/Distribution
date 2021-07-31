@@ -11,8 +11,8 @@ Recursive object extending
 | Full name          | deep-extend |
 | Keywords           | deep-extend, extend, deep, recursive, xtend, clone, merge, json |
 | # releases         | 0 |
-| # dependents       | 970 |
-| # downloads        | 482881369 |
+| # dependents       | 999 |
+| # downloads        | 535384470 |
 | # stars            | 17 |
 
 ## Links

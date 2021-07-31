@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemotePortDetails extends StObject {
   
   /**
     * The port number of the remote connection.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * The port name of the remote connection.
     */
-  var PortName: js.UndefOr[String] = js.native
+  var PortName: js.UndefOr[String] = js.undefined
 }
 object RemotePortDetails {
   

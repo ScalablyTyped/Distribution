@@ -2,24 +2,22 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Unique identifier of the self-hosted runner group.
     */
-  var runner_group_id: Double = js.native
+  var runner_group_id: Double
   
   /**
     * List of repository IDs that can access the runner group.
     */
-  var selected_repository_ids: js.Array[Double] = js.native
+  var selected_repository_ids: js.Array[Double]
 }
 object ActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint {
   

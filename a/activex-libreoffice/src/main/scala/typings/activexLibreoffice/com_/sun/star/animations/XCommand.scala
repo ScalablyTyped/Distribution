@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Execution of the {@link XCommand} animation node causes the slide show component to call back the application to perform the command. */
-@js.native
-trait XCommand extends XAnimationNode {
+trait XCommand
+  extends StObject
+     with XAnimationNode {
   
   /** This identifies the application specific command. See documentation of used application for commands. */
-  var Command: Double = js.native
+  var Command: Double
   
   /**
     * The application specific parameter for this command. See documentation of used application for supported parameters for different commands and target
     * combinations.
     */
-  var Parameter: js.Any = js.native
+  var Parameter: js.Any
   
   /** The application specific target. See documentation of used application for supported targets. */
-  var Target: js.Any = js.native
+  var Target: js.Any
 }
 object XCommand {
   

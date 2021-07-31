@@ -2,81 +2,79 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * The unique ID for an address.
     */
-  var AddressId: js.UndefOr[typings.awsSdk.snowballMod.AddressId] = js.native
+  var AddressId: js.UndefOr[typings.awsSdk.snowballMod.AddressId] = js.undefined
   
   /**
     * The city in an address that a Snow device is to be delivered to.
     */
-  var City: js.UndefOr[String] = js.native
+  var City: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the company to receive a Snow device at an address.
     */
-  var Company: js.UndefOr[String] = js.native
+  var Company: js.UndefOr[String] = js.undefined
   
   /**
     * The country in an address that a Snow device is to be delivered to.
     */
-  var Country: js.UndefOr[String] = js.native
+  var Country: js.UndefOr[String] = js.undefined
   
   /**
     * If the address you are creating is a primary address, then set this option to true. This field is not supported in most regions.
     */
-  var IsRestricted: js.UndefOr[Boolean] = js.native
+  var IsRestricted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This field is no longer used and the value is ignored.
     */
-  var Landmark: js.UndefOr[String] = js.native
+  var Landmark: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a person to receive a Snow device at an address.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number associated with an address that a Snow device is to be delivered to.
     */
-  var PhoneNumber: js.UndefOr[String] = js.native
+  var PhoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code in an address that a Snow device is to be delivered to.
     */
-  var PostalCode: js.UndefOr[String] = js.native
+  var PostalCode: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer used and the value is ignored.
     */
-  var PrefectureOrDistrict: js.UndefOr[String] = js.native
+  var PrefectureOrDistrict: js.UndefOr[String] = js.undefined
   
   /**
     * The state or province in an address that a Snow device is to be delivered to.
     */
-  var StateOrProvince: js.UndefOr[String] = js.native
+  var StateOrProvince: js.UndefOr[String] = js.undefined
   
   /**
     * The first line in a street address that a Snow device is to be delivered to.
     */
-  var Street1: js.UndefOr[String] = js.native
+  var Street1: js.UndefOr[String] = js.undefined
   
   /**
     * The second line in a street address that a Snow device is to be delivered to.
     */
-  var Street2: js.UndefOr[String] = js.native
+  var Street2: js.UndefOr[String] = js.undefined
   
   /**
     * The third line in a street address that a Snow device is to be delivered to.
     */
-  var Street3: js.UndefOr[String] = js.native
+  var Street3: js.UndefOr[String] = js.undefined
 }
 object Address {
   

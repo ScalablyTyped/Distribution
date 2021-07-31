@@ -2,35 +2,33 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionHandlingScope extends StObject {
   
-  def get_errorMessage(): String = js.native
+  def get_errorMessage(): String
   
-  def get_hasException(): Boolean = js.native
+  def get_hasException(): Boolean
   
-  def get_processed(): Boolean = js.native
+  def get_processed(): Boolean
   
-  def get_serverErrorCode(): Double = js.native
+  def get_serverErrorCode(): Double
   
-  def get_serverErrorDetails(): js.Any = js.native
+  def get_serverErrorDetails(): js.Any
   
-  def get_serverErrorTypeName(): String = js.native
+  def get_serverErrorTypeName(): String
   
-  def get_serverErrorValue(): String = js.native
+  def get_serverErrorValue(): String
   
-  def get_serverStackTrace(): String = js.native
+  def get_serverStackTrace(): String
   
-  def startCatch(): js.Any = js.native
+  def startCatch(): js.Any
   
-  def startFinally(): js.Any = js.native
+  def startFinally(): js.Any
   
-  def startScope(): js.Any = js.native
+  def startScope(): js.Any
   
-  def startTry(): js.Any = js.native
+  def startTry(): js.Any
 }
 object ExceptionHandlingScope {
   

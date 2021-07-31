@@ -2,39 +2,37 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3x3 rotation matrix. */
-@js.native
 trait SensorRotationMatrix extends StObject {
   
   /** Gets the value at row 1, column 1 of the given rotation matrix. */
-  var m11: Double = js.native
+  var m11: Double
   
   /** Gets the value at row 1, column 2 of the given rotation matrix. */
-  var m12: Double = js.native
+  var m12: Double
   
   /** Gets the value at row 1, column 3 of the given rotation matrix. */
-  var m13: Double = js.native
+  var m13: Double
   
   /** Gets the value at row 2, column 1 of the given rotation matrix. */
-  var m21: Double = js.native
+  var m21: Double
   
   /** Gets the value at row 2, column 2 of the given rotation matrix. */
-  var m22: Double = js.native
+  var m22: Double
   
   /** Gets the value at row 2, column 3 of the given rotation matrix. */
-  var m23: Double = js.native
+  var m23: Double
   
   /** Gets the value at row 3, column 1 of the given rotation matrix. */
-  var m31: Double = js.native
+  var m31: Double
   
   /** Gets the value at row 3, column 2 of the given rotation matrix. */
-  var m32: Double = js.native
+  var m32: Double
   
   /** Gets the value at row 3, column 3 of the given rotation matrix. */
-  var m33: Double = js.native
+  var m33: Double
 }
 object SensorRotationMatrix {
   

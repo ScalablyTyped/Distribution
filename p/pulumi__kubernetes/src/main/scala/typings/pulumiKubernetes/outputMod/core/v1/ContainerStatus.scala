@@ -2,59 +2,57 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerStatus contains details for the current status of this container.
   */
-@js.native
 trait ContainerStatus extends StObject {
   
   /**
     * Container's ID in the format 'docker://<container_id>'.
     */
-  var containerID: String = js.native
+  var containerID: String
   
   /**
     * The image the container is running. More info: https://kubernetes.io/docs/concepts/containers/images
     */
-  var image: String = js.native
+  var image: String
   
   /**
     * ImageID of the container's image.
     */
-  var imageID: String = js.native
+  var imageID: String
   
   /**
     * Details about the container's last termination condition.
     */
-  var lastState: ContainerState = js.native
+  var lastState: ContainerState
   
   /**
     * This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Specifies whether the container has passed its readiness probe.
     */
-  var ready: Boolean = js.native
+  var ready: Boolean
   
   /**
     * The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC.
     */
-  var restartCount: Double = js.native
+  var restartCount: Double
   
   /**
     * Specifies whether the container has passed its startup probe. Initialized as false, becomes true after startupProbe is considered successful. Resets to false when the container is restarted, or if kubelet loses state temporarily. Is always true when no startupProbe is defined.
     */
-  var started: Boolean = js.native
+  var started: Boolean
   
   /**
     * Details about the container's current condition.
     */
-  var state: ContainerState = js.native
+  var state: ContainerState
 }
 object ContainerStatus {
   

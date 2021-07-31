@@ -2,17 +2,15 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NONE extends StObject {
   
-  var LEFT: String = js.native
+  var LEFT: String
   
-  var NONE: String = js.native
+  var NONE: String
   
-  var RIGHT: String = js.native
+  var RIGHT: String
 }
 object NONE {
   

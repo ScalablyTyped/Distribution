@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabContainerMod {
@@ -18,14 +17,15 @@ object tabContainerMod {
   trait TabContainer
     extends Component[TabContainerProps, js.Object, js.Any]
   
-  @js.native
-  trait TabContainerProps extends HTMLAttributes[TabContainer] {
+  trait TabContainerProps
+    extends StObject
+       with HTMLAttributes[TabContainer] {
     
-    var activeKey: js.UndefOr[js.Any] = js.native
+    var activeKey: js.UndefOr[js.Any] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[js.Any] = js.native
+    var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
     
-    var generateChildId: js.UndefOr[js.Function2[/* eventKey */ js.Any, /* type */ js.Any, String]] = js.native
+    var generateChildId: js.UndefOr[js.Function2[/* eventKey */ js.Any, /* type */ js.Any, String]] = js.undefined
   }
   object TabContainerProps {
     

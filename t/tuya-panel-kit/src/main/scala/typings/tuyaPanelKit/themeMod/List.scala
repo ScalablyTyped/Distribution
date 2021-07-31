@@ -2,36 +2,34 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.ListTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.ListTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.ListTheme> */
-@js.native
 trait List extends StObject {
   
-  var boardBg: js.UndefOr[String] = js.native
+  var boardBg: js.UndefOr[String] = js.undefined
   
-  var cellBg: js.UndefOr[String] = js.native
+  var cellBg: js.UndefOr[String] = js.undefined
   
-  var cellLine: js.UndefOr[String] = js.native
+  var cellLine: js.UndefOr[String] = js.undefined
   
-  var cellRadius: js.UndefOr[Double] = js.native
+  var cellRadius: js.UndefOr[Double] = js.undefined
   
-  var dark: ListTheme = js.native
+  var dark: ListTheme
   
-  var descFontColor: js.UndefOr[String] = js.native
+  var descFontColor: js.UndefOr[String] = js.undefined
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
-  var light: ListTheme = js.native
+  var light: ListTheme
   
-  var margin: js.UndefOr[js.Array[Double]] = js.native
+  var margin: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var padding: js.UndefOr[js.Array[Double]] = js.native
+  var padding: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var subFontColor: js.UndefOr[String] = js.native
+  var subFontColor: js.UndefOr[String] = js.undefined
 }
 object List {
   

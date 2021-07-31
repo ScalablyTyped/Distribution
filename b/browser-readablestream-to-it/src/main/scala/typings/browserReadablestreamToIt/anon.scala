@@ -2,15 +2,13 @@ package typings.browserReadablestreamToIt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PreventCancel extends StObject {
     
-    var preventCancel: js.UndefOr[Boolean] = js.native
+    var preventCancel: js.UndefOr[Boolean] = js.undefined
   }
   object PreventCancel {
     

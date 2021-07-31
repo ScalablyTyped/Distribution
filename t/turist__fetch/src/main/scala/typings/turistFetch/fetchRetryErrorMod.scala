@@ -4,25 +4,42 @@ import typings.nodeFetch.mod.Response
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchRetryErrorMod {
   
   @JSImport("@turist/fetch/dist/fetch-retry-error", JSImport.Default)
   @js.native
-  class default protected () extends FetchRetryError {
+  class default protected ()
+    extends StObject
+       with FetchRetryError {
     def this(res: Response) = this()
-  }
-  
-  @js.native
-  trait FetchRetryError extends Error {
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
     var res: Response = js.native
     
+    /* CompleteClass */
     var statusCode: Double = js.native
     
+    /* CompleteClass */
     var url: String = js.native
+  }
+  
+  trait FetchRetryError
+    extends StObject
+       with Error {
+    
+    var res: Response
+    
+    var statusCode: Double
+    
+    var url: String
   }
   object FetchRetryError {
     

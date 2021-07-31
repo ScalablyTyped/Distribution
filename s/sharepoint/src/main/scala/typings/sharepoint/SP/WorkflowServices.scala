@@ -3,7 +3,6 @@ package typings.sharepoint.SP
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WorkflowServices {
@@ -15,36 +14,56 @@ object WorkflowServices {
   object WorkflowStatus extends StObject {
     
     @js.native
-    sealed trait canceled extends WorkflowStatus
+    sealed trait canceled
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait canceling extends WorkflowStatus
+    sealed trait canceling
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait completed extends WorkflowStatus
+    sealed trait completed
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait invalid extends WorkflowStatus
+    sealed trait invalid
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait notSpecified extends WorkflowStatus
+    sealed trait notSpecified
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait notStarted extends WorkflowStatus
+    sealed trait notStarted
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait started extends WorkflowStatus
+    sealed trait started
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait suspended extends WorkflowStatus
+    sealed trait suspended
+      extends StObject
+         with WorkflowStatus
     
     @js.native
-    sealed trait terminated extends WorkflowStatus
+    sealed trait terminated
+      extends StObject
+         with WorkflowStatus
   }
   
   // TODO: comments, types
   @js.native
-  trait InteropService extends ClientObject {
+  trait InteropService
+    extends StObject
+       with ClientObject {
     
     def cancelWorkflow(instanceId: Guid): Unit = js.native
     
@@ -63,7 +82,9 @@ object WorkflowServices {
   
   /** Represents a workflow definition and associated properties. */
   @js.native
-  trait WorkflowDefinition extends ClientObject {
+  trait WorkflowDefinition
+    extends StObject
+       with ClientObject {
     
     /** Url of the association form */
     def get_associationUrl(): String = js.native
@@ -151,7 +172,9 @@ object WorkflowServices {
   
   /** Represents a collection of WorkflowDefinition objects */
   @js.native
-  trait WorkflowDefinitionCollection extends ClientObjectCollection[WorkflowDefinition] {
+  trait WorkflowDefinitionCollection
+    extends StObject
+       with ClientObjectCollection[WorkflowDefinition] {
     
     /** returns SP.WorkflowDefinition class */
     def get_childItemType(): js.Any = js.native
@@ -163,7 +186,9 @@ object WorkflowServices {
   
   /** Manages workflow definitions and workflow activity authoring. */
   @js.native
-  trait WorkflowDeploymentService extends ClientObject {
+  trait WorkflowDeploymentService
+    extends StObject
+       with ClientObject {
     
     /** Deletes the URL of a workflow definition's collateral file.
       @param workflowDefinitionId The guid identifier of the workflow definition.  */
@@ -181,7 +206,7 @@ object WorkflowServices {
     
     /** Returns an XML representation of a collection of XAML class signatures for workflow definitions.
       @param lastChanges Date time value representing the latest changes; class signatures older than this time are excluded from the result set.  */
-    def getActivitySignatures(lastChanged: String): ClientResult[_] = js.native
+    def getActivitySignatures(lastChanged: String): ClientResult[js.Any] = js.native
     
     /** Retrieves the URL of the collateral file of the workflow definition.
       @param workflowDefinitionId The guid identifier of the workflow definition.
@@ -227,7 +252,9 @@ object WorkflowServices {
   
   /** Represents an instance of a workflow association that performs on a list item the process that is defined in a workflow template */
   @js.native
-  trait WorkflowInstance extends ClientObject {
+  trait WorkflowInstance
+    extends StObject
+       with ClientObject {
     
     /** Contains the error string or exception information if the workflow faults. */
     def get_faultInfo(): String = js.native
@@ -259,7 +286,9 @@ object WorkflowServices {
   
   /** Represents a collection of WorkflowInstance objects */
   @js.native
-  trait WorkflowInstanceCollection extends ClientObjectCollection[WorkflowInstance] {
+  trait WorkflowInstanceCollection
+    extends StObject
+       with ClientObjectCollection[WorkflowInstance] {
     
     /** returns SP.WorkflowInstance class */
     def get_childItemType(): js.Any = js.native
@@ -271,7 +300,9 @@ object WorkflowServices {
   
   /** Reads the SharePoint workflow instances from the external workflow host and manages the instance execution. */
   @js.native
-  trait WorkflowInstanceService extends ClientObject {
+  trait WorkflowInstanceService
+    extends StObject
+       with ClientObject {
     
     /** Sends a cancel message to the specified workflow instance and permits the instance to execute a cancellation scope. */
     def cancelWorkflow(instance: WorkflowInstance): Unit = js.native
@@ -330,7 +361,9 @@ object WorkflowServices {
   
   /** Describes the workflow host configuration states and provides service objects that interact with the workflow */
   @js.native
-  trait WorkflowServicesManager extends ClientObject {
+  trait WorkflowServicesManager
+    extends StObject
+       with ClientObject {
     
     def getWorkflowDeploymentService(): WorkflowDeploymentService = js.native
     
@@ -352,7 +385,9 @@ object WorkflowServices {
   
   /** Base class representing subscriptions for the external workflow host. */
   @js.native
-  trait WorkflowSubscription extends ClientObject {
+  trait WorkflowSubscription
+    extends StObject
+       with ClientObject {
     
     /** Gets the unique ID of the workflow definition to activate. */
     def get_definitionId(): Guid = js.native
@@ -415,7 +450,9 @@ object WorkflowServices {
   
   /** Represents a collection of WorkflowSubscription objects */
   @js.native
-  trait WorkflowSubscriptionCollection extends ClientObjectCollection[WorkflowSubscription] {
+  trait WorkflowSubscriptionCollection
+    extends StObject
+       with ClientObjectCollection[WorkflowSubscription] {
     
     /** returns SP.WorkflowInstance class */
     def get_childItemType(): js.Any = js.native
@@ -426,7 +463,9 @@ object WorkflowServices {
   }
   
   @js.native
-  trait WorkflowSubscriptionService extends ClientObject {
+  trait WorkflowSubscriptionService
+    extends StObject
+       with ClientObject {
     
     def deleteSubscription(subscriptionId: Guid): WorkflowSubscription = js.native
     

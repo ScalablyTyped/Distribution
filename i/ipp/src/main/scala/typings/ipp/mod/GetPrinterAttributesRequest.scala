@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Printeruri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPrinterAttributesRequest extends StObject {
   
-  var `operation-attributes-tag`: Printeruri = js.native
+  var `operation-attributes-tag`: Printeruri
 }
 object GetPrinterAttributesRequest {
   

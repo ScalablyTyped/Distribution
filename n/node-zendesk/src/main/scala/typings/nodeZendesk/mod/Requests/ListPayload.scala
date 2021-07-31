@@ -3,19 +3,19 @@ package typings.nodeZendesk.mod.Requests
 import typings.nodeZendesk.mod.PaginablePayload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListPayload extends PaginablePayload {
+trait ListPayload
+  extends StObject
+     with PaginablePayload {
   
-  val requests: js.Array[ResponseModel] = js.native
+  val requests: js.Array[ResponseModel]
 }
 object ListPayload {
   
   @scala.inline
   def apply(count: Double, requests: js.Array[ResponseModel]): ListPayload = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[ListPayload]
   }
   

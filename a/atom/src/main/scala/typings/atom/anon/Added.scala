@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Added extends StObject {
   
-  var added: Double = js.native
+  var added: Double
   
-  var deleted: Double = js.native
+  var deleted: Double
 }
 object Added {
   

@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "GameObjects.DisplayList")
 @js.native
 class DisplayList protected ()
-  extends typings.phaser.Phaser.GameObjects.DisplayList {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.DisplayList {
   /**
     * 
     * @param scene The Scene that this Display List belongs to.

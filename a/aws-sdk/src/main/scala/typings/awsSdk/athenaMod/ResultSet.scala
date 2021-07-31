@@ -2,21 +2,19 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultSet extends StObject {
   
   /**
     * The metadata that describes the column structure and data types of a table of query results.
     */
-  var ResultSetMetadata: js.UndefOr[typings.awsSdk.athenaMod.ResultSetMetadata] = js.native
+  var ResultSetMetadata: js.UndefOr[typings.awsSdk.athenaMod.ResultSetMetadata] = js.undefined
   
   /**
     * The rows in the table.
     */
-  var Rows: js.UndefOr[RowList] = js.native
+  var Rows: js.UndefOr[RowList] = js.undefined
 }
 object ResultSet {
   

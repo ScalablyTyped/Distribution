@@ -3,13 +3,13 @@ package typings.victory.anon
 import typings.victory.mod._CategoryPropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XArray extends _CategoryPropType {
+trait XArray
+  extends StObject
+     with _CategoryPropType {
   
-  var x: js.Array[String] = js.native
+  var x: js.Array[String]
 }
 object XArray {
   

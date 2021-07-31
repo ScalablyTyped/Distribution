@@ -10,9 +10,9 @@ Transforms the string with only the first character in lower case
 | ------------------ | :-------------: |
 | Full name          | lower-case-first |
 | Keywords           | lower, case, first, start, character |
-| # releases         | 3 |
-| # dependents       | 12 |
-| # downloads        | 54722968 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 57008038 |
 | # stars            | 0 |
 
 ## Links

@@ -7,40 +7,38 @@ import typings.watsonDeveloperCloud.compareComplyV1Mod.CreateBatchConstants.Func
 import typings.watsonDeveloperCloud.compareComplyV1Mod.CreateBatchConstants.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createBatch` operation. */
-@js.native
 trait CreateBatchParams extends StObject {
   
   /** The Compare and Comply method to run across the submitted input documents. */
-  var _function: Function | String = js.native
+  var _function: Function | String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The geographical location of the Cloud Object Storage input bucket as listed on the **Endpoint** tab of your Cloud Object Storage instance; for example, `us-geo`, `eu-geo`, or `ap-geo`. */
-  var input_bucket_location: String = js.native
+  var input_bucket_location: String
   
   /** The name of the Cloud Object Storage input bucket. */
-  var input_bucket_name: String = js.native
+  var input_bucket_name: String
   
   /** A JSON file containing the input Cloud Object Storage credentials. At a minimum, the credentials must enable `READ` permissions on the bucket defined by the `input_bucket_name` parameter. */
-  var input_credentials_file: ReadableStream | FileObject | Buffer = js.native
+  var input_credentials_file: ReadableStream | FileObject | Buffer
   
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
-  var model: js.UndefOr[Model | String] = js.native
+  var model: js.UndefOr[Model | String] = js.undefined
   
   /** The geographical location of the Cloud Object Storage output bucket as listed on the **Endpoint** tab of your Cloud Object Storage instance; for example, `us-geo`, `eu-geo`, or `ap-geo`. */
-  var output_bucket_location: String = js.native
+  var output_bucket_location: String
   
   /** The name of the Cloud Object Storage output bucket. */
-  var output_bucket_name: String = js.native
+  var output_bucket_name: String
   
   /** A JSON file that lists the Cloud Object Storage output credentials. At a minimum, the credentials must enable `READ` and `WRITE` permissions on the bucket defined by the `output_bucket_name` parameter. */
-  var output_credentials_file: ReadableStream | FileObject | Buffer = js.native
+  var output_credentials_file: ReadableStream | FileObject | Buffer
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object CreateBatchParams {
   

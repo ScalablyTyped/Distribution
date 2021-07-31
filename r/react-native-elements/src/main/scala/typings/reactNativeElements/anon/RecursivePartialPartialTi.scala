@@ -10,48 +10,46 @@ import typings.reactNativeElements.mod.IconObject
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.TileProps>> */
-@js.native
 trait RecursivePartialPartialTi extends StObject {
   
-  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var activeOpacity: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var caption: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var caption: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var captionStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var captionStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var contentContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var contentContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var featured: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var featured: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var icon: js.UndefOr[RecursivePartial[js.UndefOr[IconObject]]] = js.native
+  var icon: js.UndefOr[RecursivePartial[js.UndefOr[IconObject]]] = js.undefined
   
-  var iconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var iconContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var imageContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var imageContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.native
+  var imageProps: js.UndefOr[RecursivePartial[js.UndefOr[PartialImageProps]]] = js.undefined
   
-  var imageSrc: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource | String | Double]]] = js.native
+  var imageSrc: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource | String | Double]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var overlayContainerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
 }
 object RecursivePartialPartialTi {
   

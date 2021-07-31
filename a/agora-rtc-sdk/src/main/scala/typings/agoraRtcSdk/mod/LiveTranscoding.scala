@@ -13,7 +13,6 @@ import typings.agoraRtcSdk.agoraRtcSdkNumbers.`66`
 import typings.agoraRtcSdk.agoraRtcSdkNumbers.`77`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,7 +37,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * };
   * ```
   */
-@js.native
 trait LiveTranscoding extends StObject {
   
   /**
@@ -46,7 +44,7 @@ trait LiveTranscoding extends StObject {
     *
     * A positive integer. The default value is 48, and the highest value is 128.
     */
-  var audioBitrate: js.UndefOr[Double] = js.native
+  var audioBitrate: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of audio channels for the CDN live stream.
@@ -59,7 +57,7 @@ trait LiveTranscoding extends StObject {
     * - 4: Four audio channels
     * - 5: Five audio channels
     */
-  var audioChannels: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.native
+  var audioChannels: js.UndefOr[`1` | `2` | `3` | `4` | `5`] = js.undefined
   
   /**
     * The audio sampling rate:
@@ -68,14 +66,14 @@ trait LiveTranscoding extends StObject {
     * - 44100: (Default) 44.1 kHz
     * - 48000: 48 kHz
     */
-  var audioSampleRate: js.UndefOr[`32000` | `44100` | `48000`] = js.native
+  var audioSampleRate: js.UndefOr[`32000` | `44100` | `48000`] = js.undefined
   
   /**
     * The background color in RGB hex.
     *
     * Value only. Do not include a preceding #. The default value is 0x000000. The value range is [0x000000, 0xffffff].
     */
-  var backgroundColor: js.UndefOr[Double] = js.native
+  var backgroundColor: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of the video in pixels.
@@ -85,7 +83,7 @@ trait LiveTranscoding extends StObject {
     * - When pushing video streams to the CDN, ensure that `height` is at least 64; otherwise, the Agora server adjusts the value to 64.
     * - When pushing audio streams to the CDN, set `width` and `height` as 0.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Watermark images for the CDN live stream.
@@ -95,7 +93,7 @@ trait LiveTranscoding extends StObject {
     *
     * See [[TranscodingWatermark]] for details.
     */
-  var images: js.Array[TranscodingWatermark] = js.native
+  var images: js.Array[TranscodingWatermark]
   
   /**
     * **DEPRECATED**
@@ -104,17 +102,17 @@ trait LiveTranscoding extends StObject {
     * - true: Low latency with unassured quality.
     * - false: (Default）High latency with assured quality.
     */
-  var lowLatency: js.UndefOr[Boolean] = js.native
+  var lowLatency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Manages the user layout configuration in the CDN live streaming.
     *
     * Agora supports a maximum of 17 transcoding users in a CDN streaming channel. See [[TranscodingUser]] for details.
     */
-  var transcodingUsers: js.Array[TranscodingUser] = js.native
+  var transcodingUsers: js.Array[TranscodingUser]
   
   /** The number of users; default value is 0. The maximum is 17. */
-  var userCount: js.UndefOr[Double] = js.native
+  var userCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The bitrate (Kbps) of the output video stream.
@@ -123,7 +121,7 @@ trait LiveTranscoding extends StObject {
     *
     * Set the bitrate according to the {@link AgoraRTC.VideoEncoderConfiguration.bitrate Video Profile Table}. If you set a bitrate beyond the proper range, the SDK automatically adapts it to a value within the range.
     */
-  var videoBitrate: js.UndefOr[Double] = js.native
+  var videoBitrate: js.UndefOr[Double] = js.undefined
   
   /**
     * The video codec profile type.
@@ -134,17 +132,17 @@ trait LiveTranscoding extends StObject {
     * - 77: Main video codec profile. Generally used for mainstream electronics, such as MP4 players, portable video players, PSP, and iPads.
     * - 100: (Default) High video codec profile. Generally used for high-resolution broadcasts or television.
     */
-  var videoCodecProfile: js.UndefOr[`66` | `77` | `100`] = js.native
+  var videoCodecProfile: js.UndefOr[`66` | `77` | `100`] = js.undefined
   
   /**
     * The video frame rate (fps) of the CDN live stream.
     *
     * A positive integer. The default value is 15 fps. The value range is [1, 30]. The Agora server adjusts any value over 30 to 30.
     */
-  var videoFramerate: js.UndefOr[Double] = js.native
+  var videoFramerate: js.UndefOr[Double] = js.undefined
   
   /** The video GOP in frames. The default value is 30 frames. The value range is [1,10000]. */
-  var videoGop: js.UndefOr[Double] = js.native
+  var videoGop: js.UndefOr[Double] = js.undefined
   
   /**
     * The width of the video in pixels.
@@ -154,7 +152,7 @@ trait LiveTranscoding extends StObject {
     * - When pushing video streams to the CDN, ensure that `width` is at least 64; otherwise, the Agora server adjusts the value to 64.
     * - When pushing audio streams to the CDN, set `width` and `height` as 0.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object LiveTranscoding {
   

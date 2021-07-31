@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Win32LobAppMsiInformation extends StObject {
   
   // The MSI package type. Possible values are: perMachine, perUser, dualPurpose.
-  var packageType: js.UndefOr[Win32LobAppMsiPackageType] = js.native
+  var packageType: js.UndefOr[Win32LobAppMsiPackageType] = js.undefined
   
   // The MSI product code.
-  var productCode: js.UndefOr[NullableOption[String]] = js.native
+  var productCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The MSI product name.
-  var productName: js.UndefOr[NullableOption[String]] = js.native
+  var productName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The MSI product version.
-  var productVersion: js.UndefOr[NullableOption[String]] = js.native
+  var productVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The MSI publisher.
-  var publisher: js.UndefOr[NullableOption[String]] = js.native
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether the MSI app requires the machine to reboot to complete installation.
-  var requiresReboot: js.UndefOr[Boolean] = js.native
+  var requiresReboot: js.UndefOr[Boolean] = js.undefined
   
   // The MSI upgrade code.
-  var upgradeCode: js.UndefOr[NullableOption[String]] = js.native
+  var upgradeCode: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Win32LobAppMsiInformation {
   

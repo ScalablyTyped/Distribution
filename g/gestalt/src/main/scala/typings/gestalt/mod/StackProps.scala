@@ -15,41 +15,39 @@ import typings.gestalt.gestaltStrings.stretch
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackProps extends StObject {
   
-  var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.native
+  var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.undefined
   
-  var alignItems: js.UndefOr[start | end | center | baseline | stretch] = js.native
+  var alignItems: js.UndefOr[start | end | center | baseline | stretch] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.native
+  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var fit: js.UndefOr[Boolean] = js.native
+  var fit: js.UndefOr[Boolean] = js.undefined
   
-  var flex: js.UndefOr[grow | shrink | none] = js.native
+  var flex: js.UndefOr[grow | shrink | none] = js.undefined
   
-  var gap: js.UndefOr[UnsignedUpTo12] = js.native
+  var gap: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var justifyContent: js.UndefOr[start | end | center | between | around | evenly] = js.native
+  var justifyContent: js.UndefOr[start | end | center | between | around | evenly] = js.undefined
   
-  var maxHeight: js.UndefOr[Double | String] = js.native
+  var maxHeight: js.UndefOr[Double | String] = js.undefined
   
-  var maxWidth: js.UndefOr[Double | String] = js.native
+  var maxWidth: js.UndefOr[Double | String] = js.undefined
   
-  var minHeight: js.UndefOr[Double | String] = js.native
+  var minHeight: js.UndefOr[Double | String] = js.undefined
   
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object StackProps {
   

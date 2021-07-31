@@ -3,7 +3,6 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
@@ -15,9 +14,9 @@ object transactionMod {
     var __toBuffer: js.Any = js.native
     
     def addInput(hash: Buffer, index: Double): Double = js.native
-    def addInput(hash: Buffer, index: Double, sequence: js.UndefOr[scala.Nothing], scriptSig: Buffer): Double = js.native
     def addInput(hash: Buffer, index: Double, sequence: Double): Double = js.native
     def addInput(hash: Buffer, index: Double, sequence: Double, scriptSig: Buffer): Double = js.native
+    def addInput(hash: Buffer, index: Double, sequence: Unit, scriptSig: Buffer): Double = js.native
     
     def addOutput(scriptPubKey: Buffer, value: Double): Double = js.native
     
@@ -56,7 +55,7 @@ object transactionMod {
     def setWitness(index: Double, witness: js.Array[Buffer]): Unit = js.native
     
     def toBuffer(): Buffer = js.native
-    def toBuffer(buffer: js.UndefOr[scala.Nothing], initialOffset: Double): Buffer = js.native
+    def toBuffer(buffer: Unit, initialOffset: Double): Buffer = js.native
     def toBuffer(buffer: Buffer): Buffer = js.native
     def toBuffer(buffer: Buffer, initialOffset: Double): Buffer = js.native
     
@@ -70,6 +69,10 @@ object transactionMod {
   }
   /* static members */
   object Transaction {
+    
+    @JSImport("bitcoinjs-lib/types/transaction", "Transaction")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bitcoinjs-lib/types/transaction", "Transaction.ADVANCED_TRANSACTION_FLAG")
     @js.native
@@ -99,34 +102,29 @@ object transactionMod {
     @js.native
     val SIGHASH_SINGLE: /* 3 */ Double = js.native
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): Transaction = js.native
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): Transaction = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+    @scala.inline
+    def fromBuffer(buffer: Buffer, _NO_STRICT: Boolean): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], _NO_STRICT.asInstanceOf[js.Any])).asInstanceOf[Transaction]
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.fromHex")
-    @js.native
-    def fromHex(hex: String): Transaction = js.native
+    @scala.inline
+    def fromHex(hex: String): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[Transaction]
     
-    @JSImport("bitcoinjs-lib/types/transaction", "Transaction.isCoinbaseHash")
-    @js.native
-    def isCoinbaseHash(buffer: Buffer): Boolean = js.native
+    @scala.inline
+    def isCoinbaseHash(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoinbaseHash")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait Input extends StObject {
     
-    var hash: Buffer = js.native
+    var hash: Buffer
     
-    var index: Double = js.native
+    var index: Double
     
-    var script: Buffer = js.native
+    var script: Buffer
     
-    var sequence: Double = js.native
+    var sequence: Double
     
-    var witness: js.Array[Buffer] = js.native
+    var witness: js.Array[Buffer]
   }
   object Input {
     
@@ -159,12 +157,11 @@ object transactionMod {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
-    var script: Buffer = js.native
+    var script: Buffer
     
-    var value: Double = js.native
+    var value: Double
   }
   object Output {
     

@@ -41,12 +41,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.wms
 import typings.arcgisJsApi.arcgisJsApiStrings.wmts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Layer
-  extends Accessor
+  extends StObject
+     with Accessor
      with Loadable
      with Evented
      with IntersectItem
@@ -65,7 +65,7 @@ trait Layer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fetchAttributionData)
     */
-  def fetchAttributionData(): js.Promise[_] = js.native
+  def fetchAttributionData(): js.Promise[js.Any] = js.native
   
   /**
     * The full extent of the layer.

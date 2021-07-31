@@ -3,19 +3,17 @@ package typings.chui.anon
 import typings.chui.ChocolateChipElementArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loop extends StObject {
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var pagination: js.UndefOr[Boolean] = js.native
+  var pagination: js.UndefOr[Boolean] = js.undefined
   
-  var panels: ChocolateChipElementArray = js.native
+  var panels: ChocolateChipElementArray
   
-  var target: js.Any = js.native
+  var target: js.Any
 }
 object Loop {
   

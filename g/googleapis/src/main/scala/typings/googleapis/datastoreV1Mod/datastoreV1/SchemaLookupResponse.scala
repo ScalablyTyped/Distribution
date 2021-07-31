@@ -2,13 +2,11 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Datastore.Lookup.
   */
-@js.native
 trait SchemaLookupResponse extends StObject {
   
   /**
@@ -16,21 +14,21 @@ trait SchemaLookupResponse extends StObject {
     * order of results in this field is undefined and has no relation to the
     * order of the keys in the input.
     */
-  var deferred: js.UndefOr[js.Array[SchemaKey]] = js.native
+  var deferred: js.UndefOr[js.Array[SchemaKey]] = js.undefined
   
   /**
     * Entities found as `ResultType.FULL` entities. The order of results in
     * this field is undefined and has no relation to the order of the keys in
     * the input.
     */
-  var found: js.UndefOr[js.Array[SchemaEntityResult]] = js.native
+  var found: js.UndefOr[js.Array[SchemaEntityResult]] = js.undefined
   
   /**
     * Entities not found as `ResultType.KEY_ONLY` entities. The order of
     * results in this field is undefined and has no relation to the order of
     * the keys in the input.
     */
-  var missing: js.UndefOr[js.Array[SchemaEntityResult]] = js.native
+  var missing: js.UndefOr[js.Array[SchemaEntityResult]] = js.undefined
 }
 object SchemaLookupResponse {
   

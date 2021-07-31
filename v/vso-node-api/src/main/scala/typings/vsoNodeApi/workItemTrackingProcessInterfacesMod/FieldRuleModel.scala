@@ -2,23 +2,21 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldRuleModel extends StObject {
   
-  var actions: js.Array[RuleActionModel] = js.native
+  var actions: js.Array[RuleActionModel]
   
-  var conditions: js.Array[RuleConditionModel] = js.native
+  var conditions: js.Array[RuleConditionModel]
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var id: String = js.native
+  var id: String
   
-  var isDisabled: Boolean = js.native
+  var isDisabled: Boolean
   
-  var isSystem: Boolean = js.native
+  var isSystem: Boolean
 }
 object FieldRuleModel {
   

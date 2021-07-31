@@ -2,25 +2,23 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target scaling by CPU usage.
   */
-@js.native
 trait SchemaCpuUtilization extends StObject {
   
   /**
     * Period of time over which CPU utilization is calculated.
     */
-  var aggregationWindowLength: js.UndefOr[String] = js.native
+  var aggregationWindowLength: js.UndefOr[String] = js.undefined
   
   /**
     * Target CPU utilization ratio to maintain when scaling. Must be between 0
     * and 1.
     */
-  var targetUtilization: js.UndefOr[Double] = js.native
+  var targetUtilization: js.UndefOr[Double] = js.undefined
 }
 object SchemaCpuUtilization {
   

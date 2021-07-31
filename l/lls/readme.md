@@ -12,7 +12,7 @@ show file info easily
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 118 |
+| # downloads        | 87 |
 | # stars            | 0 |
 
 ## Links

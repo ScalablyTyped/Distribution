@@ -11,27 +11,25 @@ import typings.astTypes.kindsMod.FunctionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Kind extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.native
+  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.undefined
   
-  var key: ExpressionKind = js.native
+  var key: ExpressionKind
   
-  var kind: constructor | method | get | set = js.native
+  var kind: constructor | method | get | set
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var value: FunctionKind = js.native
+  var value: FunctionKind
 }
 object Kind {
   

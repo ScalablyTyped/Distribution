@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachPrincipalPolicyRequest extends StObject {
   
   /**
     * The policy name.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
   
   /**
     * The principal, which can be a certificate ARN (as returned from the CreateCertificate operation) or an Amazon Cognito ID.
     */
-  var principal: Principal = js.native
+  var principal: Principal
 }
 object AttachPrincipalPolicyRequest {
   

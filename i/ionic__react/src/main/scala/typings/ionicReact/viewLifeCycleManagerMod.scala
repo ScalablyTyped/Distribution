@@ -4,7 +4,6 @@ import typings.ionicReact.anon.ComponentCanBeDestroyed
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewLifeCycleManagerMod {
@@ -26,12 +25,11 @@ object viewLifeCycleManagerMod {
     var ionLifeCycleContext: ComponentCanBeDestroyed = js.native
   }
   
-  @js.native
   trait ViewTransitionManagerProps extends StObject {
     
-    var mount: Boolean = js.native
+    var mount: Boolean
     
-    def removeView(): Unit = js.native
+    def removeView(): Unit
   }
   object ViewTransitionManagerProps {
     
@@ -52,10 +50,9 @@ object viewLifeCycleManagerMod {
     }
   }
   
-  @js.native
   trait ViewTransitionManagerState extends StObject {
     
-    var show: Boolean = js.native
+    var show: Boolean
   }
   object ViewTransitionManagerState {
     

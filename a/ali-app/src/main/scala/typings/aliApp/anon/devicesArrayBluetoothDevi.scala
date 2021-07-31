@@ -4,17 +4,15 @@ import typings.aliApp.aliAppStrings.ok
 import typings.aliApp.my.BluetoothDevice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  devices :std.Array<ali-app.my.BluetoothDevice>} & ali-app.my.ErrMsgResponse */
-@js.native
 trait devicesArrayBluetoothDevi extends StObject {
   
-  var devices: js.Array[BluetoothDevice] = js.native
+  var devices: js.Array[BluetoothDevice]
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
 }
 object devicesArrayBluetoothDevi {
   

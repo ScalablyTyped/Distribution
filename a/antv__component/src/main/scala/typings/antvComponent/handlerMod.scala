@@ -4,7 +4,6 @@ import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handlerMod {
@@ -23,18 +22,19 @@ object handlerMod {
     var draw: js.Any = js.native
   }
   
-  @js.native
-  trait HandlerCfg extends GroupComponentCfg {
+  trait HandlerCfg
+    extends StObject
+       with GroupComponentCfg {
     
-    val height: Double = js.native
+    val height: Double
     
-    val style: js.UndefOr[IStyle] = js.native
+    val style: js.UndefOr[IStyle] = js.undefined
     
-    val width: Double = js.native
+    val width: Double
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object HandlerCfg {
     
@@ -67,20 +67,19 @@ object handlerMod {
     }
   }
   
-  @js.native
   trait IStyle extends StObject {
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var highLightFill: js.UndefOr[String] = js.native
+    var highLightFill: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
   }
   object IStyle {
     

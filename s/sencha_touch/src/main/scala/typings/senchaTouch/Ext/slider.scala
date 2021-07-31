@@ -2,144 +2,144 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slider {
   
-  @js.native
-  trait ISlider extends IContainer {
+  trait ISlider
+    extends StObject
+       with IContainer {
     
     /** [Config Option] (Boolean) */
-    var allowThumbsOverlapping: js.UndefOr[Boolean] = js.native
+    var allowThumbsOverlapping: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var animationDuration: js.UndefOr[Boolean] = js.native
+    var animationDuration: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the increment configuration
       * @param increment Number
       * @returns Number
       */
-    var applyIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Double]] = js.native
+    var applyIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Double]] = js.undefined
     
     /** [Method] Returns the value of allowThumbsOverlapping
       * @returns Boolean
       */
-    var getAllowThumbsOverlapping: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAllowThumbsOverlapping: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of animation
       * @returns Boolean/Object
       */
-    var getAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of increment
       * @returns Number
       */
-    var getIncrement: js.UndefOr[js.Function0[Double]] = js.native
+    var getIncrement: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of maxValue
       * @returns Number
       */
-    var getMaxValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of minValue
       * @returns Number
       */
-    var getMinValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getMinValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of readOnly
       * @returns Boolean
       */
-    var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getReadOnly: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the Thumb instance bound to this Slider
       * @param index Number The index of Thumb to return.
       * @returns Ext.slider.Thumb The thumb instance
       */
-    var getThumb: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], IThumb]] = js.native
+    var getThumb: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], IThumb]] = js.undefined
     
     /** [Method] Returns the value of thumbConfig
       * @returns Object
       */
-    var getThumbConfig: js.UndefOr[js.Function0[_]] = js.native
+    var getThumbConfig: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the Thumb instances bound to this Slider
       * @returns Ext.slider.Thumb[] The thumb instances
       */
-    var getThumbs: js.UndefOr[js.Function0[Array]] = js.native
+    var getThumbs: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of value
       * @returns Number/Number[]
       */
-    var getValue: js.UndefOr[js.Function0[_]] = js.native
+    var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Convenience method
       * @returns Object
       */
-    var getValues: js.UndefOr[js.Function0[_]] = js.native
+    var getValues: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var increment: js.UndefOr[Double] = js.native
+    var increment: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of allowThumbsOverlapping
       * @param allowThumbsOverlapping Boolean The new value.
       */
-    var setAllowThumbsOverlapping: js.UndefOr[js.Function1[/* allowThumbsOverlapping */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAllowThumbsOverlapping: js.UndefOr[js.Function1[/* allowThumbsOverlapping */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of animation
       * @param animation Boolean/Object The new value.
       */
-    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of increment
       * @param increment Number The new value.
       */
-    var setIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Unit]] = js.native
+    var setIncrement: js.UndefOr[js.Function1[/* increment */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxValue
       * @param maxValue Number The new value.
       */
-    var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.native
+    var setMaxValue: js.UndefOr[js.Function1[/* maxValue */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of minValue
       * @param minValue Number The new value.
       */
-    var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.native
+    var setMinValue: js.UndefOr[js.Function1[/* minValue */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of readOnly
       * @param readOnly Boolean The new value.
       */
-    var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.native
+    var setReadOnly: js.UndefOr[js.Function1[/* readOnly */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of thumbConfig
       * @param thumbConfig Object The new value.
       */
-    var setThumbConfig: js.UndefOr[js.Function1[/* thumbConfig */ js.UndefOr[js.Any], Unit]] = js.native
+    var setThumbConfig: js.UndefOr[js.Function1[/* thumbConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of value
       * @param value Number/Number[] The new value.
       */
-    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Convenience method
       * @param value Object
       */
-    var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var setValues: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var thumbConfig: js.UndefOr[js.Any] = js.native
+    var thumbConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Updates the sliders thumbs with their new value s
       * @param newValue Object
@@ -147,13 +147,13 @@ object slider {
       */
     var updateValue: js.UndefOr[
         js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Number/Number[]) */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/Number[]) */
-    var values: js.UndefOr[js.Any] = js.native
+    var values: js.UndefOr[js.Any] = js.undefined
   }
   object ISlider {
     
@@ -197,7 +197,7 @@ object slider {
       def setGetAllowThumbsOverlappingUndefined: Self = StObject.set(x, "getAllowThumbsOverlapping", js.undefined)
       
       @scala.inline
-      def setGetAnimation(value: () => _): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
+      def setGetAnimation(value: () => js.Any): Self = StObject.set(x, "getAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
@@ -230,7 +230,7 @@ object slider {
       def setGetThumb(value: /* index */ js.UndefOr[Double] => IThumb): Self = StObject.set(x, "getThumb", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetThumbConfig(value: () => _): Self = StObject.set(x, "getThumbConfig", js.Any.fromFunction0(value))
+      def setGetThumbConfig(value: () => js.Any): Self = StObject.set(x, "getThumbConfig", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetThumbConfigUndefined: Self = StObject.set(x, "getThumbConfig", js.undefined)
@@ -245,13 +245,13 @@ object slider {
       def setGetThumbsUndefined: Self = StObject.set(x, "getThumbs", js.undefined)
       
       @scala.inline
-      def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
       
       @scala.inline
-      def setGetValues(value: () => _): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      def setGetValues(value: () => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)
@@ -360,16 +360,17 @@ object slider {
     }
   }
   
-  @js.native
-  trait IThumb extends IComponent {
+  trait IThumb
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Object) */
-    var draggable: js.UndefOr[js.Any] = js.native
+    var draggable: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of draggable
       * @returns Object
       */
-    var getDraggable: js.UndefOr[js.Function0[_]] = js.native
+    var getDraggable: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object IThumb {
     
@@ -389,47 +390,48 @@ object slider {
       def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
       @scala.inline
-      def setGetDraggable(value: () => _): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
+      def setGetDraggable(value: () => js.Any): Self = StObject.set(x, "getDraggable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDraggableUndefined: Self = StObject.set(x, "getDraggable", js.undefined)
     }
   }
   
-  @js.native
-  trait IToggle extends ISlider {
+  trait IToggle
+    extends StObject
+       with ISlider {
     
     /** [Method] Sets the increment configuration
       * @returns Number
       */
     @JSName("applyIncrement")
-    var applyIncrement_IToggle: js.UndefOr[js.Function0[Double]] = js.native
+    var applyIncrement_IToggle: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of maxValueCls
       * @returns String
       */
-    var getMaxValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getMaxValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of minValueCls
       * @returns String
       */
-    var getMinValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getMinValueCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (String) */
-    var maxValueCls: js.UndefOr[java.lang.String] = js.native
+    var maxValueCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var minValueCls: js.UndefOr[java.lang.String] = js.native
+    var minValueCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value of maxValueCls
       * @param maxValueCls String The new value.
       */
-    var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setMaxValueCls: js.UndefOr[js.Function1[/* maxValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of minValueCls
       * @param minValueCls String The new value.
       */
-    var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setMinValueCls: js.UndefOr[js.Function1[/* minValueCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of value
       * @param newValue Object
@@ -438,7 +440,7 @@ object slider {
     @JSName("setValue")
     var setValue_IToggle: js.UndefOr[
         js.Function2[/* newValue */ js.UndefOr[js.Any], /* oldValue */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IToggle {
     

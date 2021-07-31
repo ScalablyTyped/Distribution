@@ -2,47 +2,45 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Announcement created by a teacher for students of the course
   */
-@js.native
 trait SchemaAnnouncement extends StObject {
   
   /**
     * Absolute link to this announcement in the Classroom web UI. This is only
     * populated if `state` is `PUBLISHED`.  Read-only.
     */
-  var alternateLink: js.UndefOr[String] = js.native
+  var alternateLink: js.UndefOr[String] = js.undefined
   
   /**
     * Assignee mode of the announcement. If unspecified, the default value is
     * `ALL_STUDENTS`.
     */
-  var assigneeMode: js.UndefOr[String] = js.native
+  var assigneeMode: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the course.  Read-only.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp when this announcement was created.  Read-only.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the user that created the announcement.  Read-only.
     */
-  var creatorUserId: js.UndefOr[String] = js.native
+  var creatorUserId: js.UndefOr[String] = js.undefined
   
   /**
     * Classroom-assigned identifier of this announcement, unique per course.
     * Read-only.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifiers of students with access to the announcement. This field is
@@ -50,35 +48,35 @@ trait SchemaAnnouncement extends StObject {
     * `assigneeMode` is `INDIVIDUAL_STUDENTS`, then only students specified in
     * this field will be able to see the announcement.
     */
-  var individualStudentsOptions: js.UndefOr[SchemaIndividualStudentsOptions] = js.native
+  var individualStudentsOptions: js.UndefOr[SchemaIndividualStudentsOptions] = js.undefined
   
   /**
     * Additional materials.  Announcements must have no more than 20 material
     * items.
     */
-  var materials: js.UndefOr[js.Array[SchemaMaterial]] = js.native
+  var materials: js.UndefOr[js.Array[SchemaMaterial]] = js.undefined
   
   /**
     * Optional timestamp when this announcement is scheduled to be published.
     */
-  var scheduledTime: js.UndefOr[String] = js.native
+  var scheduledTime: js.UndefOr[String] = js.undefined
   
   /**
     * Status of this announcement. If unspecified, the default state is
     * `DRAFT`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Description of this announcement. The text must be a valid UTF-8 string
     * containing no more than 30,000 characters.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp of the most recent change to this announcement.  Read-only.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaAnnouncement {
   

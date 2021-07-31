@@ -12,7 +12,7 @@ Fossil SCM delta compression
 | Keywords           | delta, compression, encoding |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 43794 |
+| # downloads        | 52114 |
 | # stars            | 0 |
 
 ## Links

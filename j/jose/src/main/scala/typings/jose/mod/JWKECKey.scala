@@ -3,30 +3,29 @@ package typings.jose.mod
 import typings.jose.joseStrings.EC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JWKECKey
-  extends KeyParameters
+  extends StObject
+     with KeyParameters
      with JSONWebKey
      with _ProduceKeyInput {
   
-  var crv: ECCurve = js.native
+  var crv: ECCurve
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var kty: EC = js.native
+  var kty: EC
   
-  var x: String = js.native
+  var x: String
   
-  var y: String = js.native
+  var y: String
 }
 object JWKECKey {
   
   @scala.inline
-  def apply(crv: ECCurve, kty: EC, x: String, y: String): JWKECKey = {
-    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = kty.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  def apply(crv: ECCurve, x: String, y: String): JWKECKey = {
+    val __obj = js.Dynamic.literal(crv = crv.asInstanceOf[js.Any], kty = "EC", x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWKECKey]
   }
   

@@ -4,20 +4,20 @@ import typings.firebaseInstallations.appConfigMod.AppConfig
 import typings.firebaseInstallations.onIdChangeMod.IdChangeCallbackFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fidChangedMod {
   
-  @JSImport("@firebase/installations/dist/src/helpers/fid-changed", "addCallback")
+  @JSImport("@firebase/installations/dist/src/helpers/fid-changed", JSImport.Namespace)
   @js.native
-  def addCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/installations/dist/src/helpers/fid-changed", "fidChanged")
-  @js.native
-  def fidChanged(appConfig: AppConfig, fid: String): Unit = js.native
+  @scala.inline
+  def addCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/installations/dist/src/helpers/fid-changed", "removeCallback")
-  @js.native
-  def removeCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = js.native
+  @scala.inline
+  def fidChanged(appConfig: AppConfig, fid: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fidChanged")(appConfig.asInstanceOf[js.Any], fid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def removeCallback(appConfig: AppConfig, callback: IdChangeCallbackFn): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeCallback")(appConfig.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

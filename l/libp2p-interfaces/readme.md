@@ -10,9 +10,9 @@ Interfaces for JS Libp2p
 | ------------------ | :-------------: |
 | Full name          | libp2p-interfaces |
 | Keywords           | libp2p, interface |
-| # releases         | 25 |
-| # dependents       | 7 |
-| # downloads        | 118790 |
+| # releases         | 33 |
+| # dependents       | 14 |
+| # downloads        | 490941 |
 | # stars            | 0 |
 
 ## Links

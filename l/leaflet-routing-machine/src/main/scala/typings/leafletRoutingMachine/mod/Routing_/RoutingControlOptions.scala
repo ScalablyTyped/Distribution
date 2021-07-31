@@ -6,44 +6,44 @@ import typings.leafletRoutingMachine.leafletRoutingMachineStrings.smart
 import typings.leafletRoutingMachine.leafletRoutingMachineStrings.snap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoutingControlOptions extends ItineraryOptions {
+trait RoutingControlOptions
+  extends StObject
+     with ItineraryOptions {
   
-  var addWaypoints: js.UndefOr[Boolean] = js.native
+  var addWaypoints: js.UndefOr[Boolean] = js.undefined
   
-  var altLineOptions: js.UndefOr[LineOptions] = js.native
+  var altLineOptions: js.UndefOr[LineOptions] = js.undefined
   
-  var autoRoute: js.UndefOr[Boolean] = js.native
+  var autoRoute: js.UndefOr[Boolean] = js.undefined
   
-  var defaultErrorHandler: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+  var defaultErrorHandler: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
   
   // IGeocorder is from other library;
-  var fitSelectedRoutes: js.UndefOr[smart | Boolean] = js.native
+  var fitSelectedRoutes: js.UndefOr[smart | Boolean] = js.undefined
   
-  var geocoder: js.UndefOr[js.Any] = js.native
+  var geocoder: js.UndefOr[js.Any] = js.undefined
   
-  var lineOptions: js.UndefOr[LineOptions] = js.native
+  var lineOptions: js.UndefOr[LineOptions] = js.undefined
   
-  var plan: js.UndefOr[Plan_] = js.native
+  var plan: js.UndefOr[Plan_] = js.undefined
   
-  var routeDragInterval: js.UndefOr[Double] = js.native
+  var routeDragInterval: js.UndefOr[Double] = js.undefined
   
-  var routeLine: js.UndefOr[js.Function2[/* route */ IRoute, /* options */ LineOptions, Line_]] = js.native
+  var routeLine: js.UndefOr[js.Function2[/* route */ IRoute, /* options */ LineOptions, Line_]] = js.undefined
   
-  var routeWhileDragging: js.UndefOr[Boolean] = js.native
+  var routeWhileDragging: js.UndefOr[Boolean] = js.undefined
   
-  var router: js.UndefOr[IRouter] = js.native
+  var router: js.UndefOr[IRouter] = js.undefined
   
-  var showAlternatives: js.UndefOr[Boolean] = js.native
+  var showAlternatives: js.UndefOr[Boolean] = js.undefined
   
-  var useZoomParameter: js.UndefOr[Boolean] = js.native
+  var useZoomParameter: js.UndefOr[Boolean] = js.undefined
   
-  var waypointMode: js.UndefOr[connect | snap] = js.native
+  var waypointMode: js.UndefOr[connect | snap] = js.undefined
   
-  var waypoints: js.UndefOr[js.Array[LatLng_ | Waypoint_]] = js.native
+  var waypoints: js.UndefOr[js.Array[LatLng_ | Waypoint_]] = js.undefined
 }
 object RoutingControlOptions {
   

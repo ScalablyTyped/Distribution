@@ -2,7 +2,6 @@ package typings.tableau.global.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("tableau.Workbook")
 @js.native
 class Workbook ()
-  extends typings.tableau.tableau.Workbook
+  extends StObject
+     with typings.tableau.tableau.Workbook

@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooksVolumesRecommendedRateResponse extends StObject {
   
-  var consistency_token: js.UndefOr[String] = js.native
+  var consistency_token: js.UndefOr[String] = js.undefined
 }
 object BooksVolumesRecommendedRateResponse {
   

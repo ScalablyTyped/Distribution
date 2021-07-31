@@ -1,9 +1,9 @@
 package typings.storybookUi.anon
 
+import typings.downshift.mod.GetItemPropsOptions
 import typings.storybookUi.sidebarTypesMod.DownshiftItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,9 +12,9 @@ trait GetItemProps extends StObject {
   def closeMenu(): Unit = js.native
   def closeMenu(cb: js.Function0[Unit]): Unit = js.native
   
-  var getItemProps: /* import warning: importer.ImportType#apply Failed type conversion: downshift.downshift.ControllerStateAndHelpers<@storybook/ui.@storybook/ui/dist/components/sidebar/types.DownshiftItem>['getItemProps'] */ js.Any = js.native
+  var getItemProps: js.Function1[/* options */ GetItemPropsOptions[DownshiftItem], js.Any] = js.native
   
-  var getMenuProps: /* import warning: importer.ImportType#apply Failed type conversion: downshift.downshift.ControllerStateAndHelpers<@storybook/ui.@storybook/ui/dist/components/sidebar/types.DownshiftItem>['getMenuProps'] */ js.Any = js.native
+  var getMenuProps: FnCall = js.native
   
   var highlightedIndex: Double | Null = js.native
   

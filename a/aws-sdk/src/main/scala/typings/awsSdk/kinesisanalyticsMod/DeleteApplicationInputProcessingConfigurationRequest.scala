@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationInputProcessingConfigurationRequest extends StObject {
   
   /**
     * The Kinesis Analytics application name.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
   
   /**
     * The version ID of the Kinesis Analytics application.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
   
   /**
     * The ID of the input configuration from which to delete the input processing configuration. You can get a list of the input IDs for an application by using the DescribeApplication operation.
     */
-  var InputId: Id = js.native
+  var InputId: Id
 }
 object DeleteApplicationInputProcessingConfigurationRequest {
   

@@ -14,102 +14,102 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeSliderProperties extends WidgetProperties {
+trait TimeSliderProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The temporal extent of the entire slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#fullTimeExtent)
     */
-  var fullTimeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var fullTimeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * A function used to specify custom formatting and styling of the min, max, and extent labels of the TimeSlider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#labelFormatFunction)
     */
-  var labelFormatFunction: js.UndefOr[DateLabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[DateLabelFormatter] = js.undefined
   
   /**
     * Determines the layout used by the TimeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#layout)
     */
-  var layout: js.UndefOr[auto | compact | wide] = js.native
+  var layout: js.UndefOr[auto | compact | wide] = js.undefined
   
   /**
     * When `true`, the time slider will play its animation in a loop.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#loop)
     */
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time slider mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#mode)
     */
-  var mode: js.UndefOr[instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`] = js.native
+  var mode: js.UndefOr[instant | `time-window` | `cumulative-from-start` | `cumulative-from-end`] = js.undefined
   
   /**
     * The time (in milliseconds) between animation steps.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#playRate)
     */
-  var playRate: js.UndefOr[Double] = js.native
+  var playRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines specific locations on the time slider where thumbs will snap to when manipulated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#stops)
     */
-  var stops: js.UndefOr[StopsByDates | StopsByCount | StopsByInterval] = js.native
+  var stops: js.UndefOr[StopsByDates | StopsByCount | StopsByInterval] = js.undefined
   
   /**
     * When set, overrides the default TimeSlider ticks labelling system.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#tickConfigs)
     */
-  var tickConfigs: js.UndefOr[js.Array[TickConfig]] = js.native
+  var tickConfigs: js.UndefOr[js.Array[TickConfig]] = js.undefined
   
   /**
     * Shows/hides time in the display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#timeVisible)
     */
-  var timeVisible: js.UndefOr[Boolean] = js.native
+  var timeVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user defined time extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#values)
     */
-  var values: js.UndefOr[js.Array[DateProperties]] = js.native
+  var values: js.UndefOr[js.Array[DateProperties]] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TimeSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[TimeSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[TimeSliderViewModelProperties] = js.undefined
 }
 object TimeSliderProperties {
   

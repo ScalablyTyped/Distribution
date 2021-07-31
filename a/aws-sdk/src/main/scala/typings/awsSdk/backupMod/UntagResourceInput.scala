@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * An ARN that uniquely identifies a resource. The format of the ARN depends on the type of the tagged resource.
     */
-  var ResourceArn: ARN = js.native
+  var ResourceArn: ARN
   
   /**
     * A list of keys to identify which key-value tags to remove from a resource.
     */
-  var TagKeyList: typings.awsSdk.backupMod.TagKeyList = js.native
+  var TagKeyList: typings.awsSdk.backupMod.TagKeyList
 }
 object UntagResourceInput {
   

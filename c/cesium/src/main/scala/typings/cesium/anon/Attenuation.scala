@@ -2,29 +2,27 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attenuation extends StObject {
   
-  var attenuation: js.UndefOr[Boolean] = js.native
+  var attenuation: js.UndefOr[Boolean] = js.undefined
   
-  var backFaceCulling: js.UndefOr[Boolean] = js.native
+  var backFaceCulling: js.UndefOr[Boolean] = js.undefined
   
-  var baseResolution: js.UndefOr[Double] = js.native
+  var baseResolution: js.UndefOr[Double] = js.undefined
   
-  var eyeDomeLighting: js.UndefOr[Boolean] = js.native
+  var eyeDomeLighting: js.UndefOr[Boolean] = js.undefined
   
-  var eyeDomeLightingRadius: js.UndefOr[Double] = js.native
+  var eyeDomeLightingRadius: js.UndefOr[Double] = js.undefined
   
-  var eyeDomeLightingStrength: js.UndefOr[Double] = js.native
+  var eyeDomeLightingStrength: js.UndefOr[Double] = js.undefined
   
-  var geometricErrorScale: js.UndefOr[Double] = js.native
+  var geometricErrorScale: js.UndefOr[Double] = js.undefined
   
-  var maximumAttenuation: js.UndefOr[Double] = js.native
+  var maximumAttenuation: js.UndefOr[Double] = js.undefined
   
-  var normalShading: js.UndefOr[Boolean] = js.native
+  var normalShading: js.UndefOr[Boolean] = js.undefined
 }
 object Attenuation {
   

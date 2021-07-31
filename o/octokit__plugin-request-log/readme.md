@@ -10,9 +10,9 @@ Log all requests and request errors
 | ------------------ | :-------------: |
 | Full name          | @octokit/plugin-request-log |
 | Keywords           | github, api, sdk, toolkit |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 46061308 |
+| # releases         | 4 |
+| # dependents       | 5 |
+| # downloads        | 85121065 |
 | # stars            | 0 |
 
 ## Links

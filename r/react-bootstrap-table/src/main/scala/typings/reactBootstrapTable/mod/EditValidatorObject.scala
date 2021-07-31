@@ -3,21 +3,19 @@ package typings.reactBootstrapTable.mod
 import typings.reactBootstrapTable.anon.Msg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditValidatorObject extends StObject {
   
   /**
     * Boolean flag indicating whether the cell value is valid.
     */
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
   /**
     * Notification object providing details on the validation result.
     */
-  var notification: Msg = js.native
+  var notification: Msg
 }
 object EditValidatorObject {
   

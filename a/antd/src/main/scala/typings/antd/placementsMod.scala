@@ -6,31 +6,29 @@ import typings.antd.antdNumbers.`1`
 import typings.rcTrigger.interfaceMod.BuildInPlacements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placementsMod {
   
-  @JSImport("antd/lib/tooltip/placements", JSImport.Default)
+  @JSImport("antd/lib/tooltip/placements", JSImport.Namespace)
   @js.native
-  def default(config: PlacementsConfig): BuildInPlacements = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/tooltip/placements", "getOverflowOptions")
-  @js.native
-  def getOverflowOptions(): AdjustXAdjustY = js.native
-  @JSImport("antd/lib/tooltip/placements", "getOverflowOptions")
-  @js.native
-  def getOverflowOptions(autoAdjustOverflow: Boolean): AdjustXAdjustY = js.native
-  @JSImport("antd/lib/tooltip/placements", "getOverflowOptions")
-  @js.native
-  def getOverflowOptions(autoAdjustOverflow: AdjustOverflow): AdjustXAdjustY = js.native
+  @scala.inline
+  def default(config: PlacementsConfig): BuildInPlacements = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[BuildInPlacements]
   
-  @js.native
+  @scala.inline
+  def getOverflowOptions(): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")().asInstanceOf[AdjustXAdjustY]
+  @scala.inline
+  def getOverflowOptions(autoAdjustOverflow: Boolean): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustXAdjustY]
+  @scala.inline
+  def getOverflowOptions(autoAdjustOverflow: AdjustOverflow): AdjustXAdjustY = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowOptions")(autoAdjustOverflow.asInstanceOf[js.Any]).asInstanceOf[AdjustXAdjustY]
+  
   trait AdjustOverflow extends StObject {
     
-    var adjustX: js.UndefOr[`0` | `1`] = js.native
+    var adjustX: js.UndefOr[`0` | `1`] = js.undefined
     
-    var adjustY: js.UndefOr[`0` | `1`] = js.native
+    var adjustY: js.UndefOr[`0` | `1`] = js.undefined
   }
   object AdjustOverflow {
     
@@ -57,18 +55,17 @@ object placementsMod {
     }
   }
   
-  @js.native
   trait PlacementsConfig extends StObject {
     
-    var arrowPointAtCenter: js.UndefOr[Boolean] = js.native
+    var arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined
     
-    var arrowWidth: js.UndefOr[Double] = js.native
+    var arrowWidth: js.UndefOr[Double] = js.undefined
     
-    var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.native
+    var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.undefined
     
-    var horizontalArrowShift: js.UndefOr[Double] = js.native
+    var horizontalArrowShift: js.UndefOr[Double] = js.undefined
     
-    var verticalArrowShift: js.UndefOr[Double] = js.native
+    var verticalArrowShift: js.UndefOr[Double] = js.undefined
   }
   object PlacementsConfig {
     

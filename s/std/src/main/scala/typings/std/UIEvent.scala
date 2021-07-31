@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Simple user interface events. */
 @js.native
-trait UIEvent extends Event {
+trait UIEvent
+  extends StObject
+     with Event {
   
   val detail: Double = js.native
   

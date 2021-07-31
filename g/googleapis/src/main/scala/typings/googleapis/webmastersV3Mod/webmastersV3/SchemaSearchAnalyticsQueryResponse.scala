@@ -2,7 +2,6 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * aggregated for all data grouped by that key either by page or property, as
   * specified by the aggregation type parameter.
   */
-@js.native
 trait SchemaSearchAnalyticsQueryResponse extends StObject {
   
   /**
     * How the results were aggregated.
     */
-  var responseAggregationType: js.UndefOr[String] = js.native
+  var responseAggregationType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of rows grouped by the key values in the order given in the query.
     */
-  var rows: js.UndefOr[js.Array[SchemaApiDataRow]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaApiDataRow]] = js.undefined
 }
 object SchemaSearchAnalyticsQueryResponse {
   

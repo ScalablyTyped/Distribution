@@ -6,17 +6,15 @@ import typings.yandexMaps.yandexMapsStrings.none
 import typings.yandexMaps.yandexMapsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IManagerControlOptions extends StObject {
   
-  var float: js.UndefOr[none | left | right] = js.native
+  var float: js.UndefOr[none | left | right] = js.undefined
   
-  var floatIndex: js.UndefOr[Double] = js.native
+  var floatIndex: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
 }
 object IManagerControlOptions {
   

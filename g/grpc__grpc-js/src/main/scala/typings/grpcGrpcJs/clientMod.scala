@@ -22,7 +22,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -165,24 +164,23 @@ object clientMod {
     CallProperties[js.Any, js.Any]
   ]
   
-  @js.native
   trait CallOptions extends StObject {
     
-    var credentials: js.UndefOr[CallCredentials] = js.native
+    var credentials: js.UndefOr[CallCredentials] = js.undefined
     
-    var deadline: js.UndefOr[Deadline] = js.native
+    var deadline: js.UndefOr[Deadline] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var interceptor_providers: js.UndefOr[js.Array[InterceptorProvider]] = js.native
+    var interceptor_providers: js.UndefOr[js.Array[InterceptorProvider]] = js.undefined
     
-    var interceptors: js.UndefOr[js.Array[Interceptor]] = js.native
+    var interceptors: js.UndefOr[js.Array[Interceptor]] = js.undefined
     
     var parent: js.UndefOr[
-        (ServerUnaryCall[_, _]) | (ServerReadableStream[_, _]) | (ServerWritableStream[_, _]) | (ServerDuplexStream[_, _])
-      ] = js.native
+        (ServerUnaryCall[js.Any, js.Any]) | (ServerReadableStream[js.Any, js.Any]) | (ServerWritableStream[js.Any, js.Any]) | (ServerDuplexStream[js.Any, js.Any])
+      ] = js.undefined
     
-    var propagate_flags: js.UndefOr[Double] = js.native
+    var propagate_flags: js.UndefOr[Double] = js.undefined
   }
   object CallOptions {
     
@@ -233,7 +231,7 @@ object clientMod {
       
       @scala.inline
       def setParent(
-        value: (ServerUnaryCall[_, _]) | (ServerReadableStream[_, _]) | (ServerWritableStream[_, _]) | (ServerDuplexStream[_, _])
+        value: (ServerUnaryCall[js.Any, js.Any]) | (ServerReadableStream[js.Any, js.Any]) | (ServerWritableStream[js.Any, js.Any]) | (ServerDuplexStream[js.Any, js.Any])
       ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -247,22 +245,21 @@ object clientMod {
     }
   }
   
-  @js.native
   trait CallProperties[RequestType, ResponseType] extends StObject {
     
-    var argument: js.UndefOr[RequestType] = js.native
+    var argument: js.UndefOr[RequestType] = js.undefined
     
-    var call: SurfaceCall = js.native
+    var call: SurfaceCall
     
-    var callOptions: CallOptions = js.native
+    var callOptions: CallOptions
     
-    var callback: js.UndefOr[UnaryCallback[ResponseType]] = js.native
+    var callback: js.UndefOr[UnaryCallback[ResponseType]] = js.undefined
     
-    var channel: Channel = js.native
+    var channel: Channel
     
-    var metadata: Metadata = js.native
+    var metadata: Metadata
     
-    var methodDefinition: ClientMethodDefinition[RequestType, ResponseType] = js.native
+    var methodDefinition: ClientMethodDefinition[RequestType, ResponseType]
   }
   object CallProperties {
     
@@ -279,7 +276,7 @@ object clientMod {
     }
     
     @scala.inline
-    implicit class CallPropertiesMutableBuilder[Self <: CallProperties[_, _], RequestType, ResponseType] (val x: Self with (CallProperties[RequestType, ResponseType])) extends AnyVal {
+    implicit class CallPropertiesMutableBuilder[Self <: CallProperties[?, ?], RequestType, ResponseType] (val x: Self & (CallProperties[RequestType, ResponseType])) extends AnyVal {
       
       @scala.inline
       def setArgument(value: RequestType): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
@@ -311,10 +308,9 @@ object clientMod {
   }
   
   /* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/channel-options.ChannelOptions> & {  channelOverride :@grpc/grpc-js.@grpc/grpc-js/build/src/channel.Channel | undefined,   channelFactoryOverride :(address : string, credentials : @grpc/grpc-js.@grpc/grpc-js/build/src/channel-credentials.ChannelCredentials, options : @grpc/grpc-js.@grpc/grpc-js/build/src/client.ClientOptions): @grpc/grpc-js.@grpc/grpc-js/build/src/channel.Channel | undefined,   interceptors :std.Array<@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.Interceptor> | undefined,   interceptor_providers :std.Array<@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.InterceptorProvider> | undefined,   callInvocationTransformer :@grpc/grpc-js.@grpc/grpc-js/build/src/client.CallInvocationTransformer | undefined} */
-  @js.native
   trait ClientOptions extends StObject {
     
-    var callInvocationTransformer: js.UndefOr[CallInvocationTransformer] = js.native
+    var callInvocationTransformer: js.UndefOr[CallInvocationTransformer] = js.undefined
     
     var channelFactoryOverride: js.UndefOr[
         js.Function3[
@@ -323,61 +319,61 @@ object clientMod {
           /* options */ this.type, 
           Channel
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var channelOverride: js.UndefOr[Channel] = js.native
+    var channelOverride: js.UndefOr[Channel] = js.undefined
     
     @JSName("grpc.default_authority")
-    var grpcDotdefault_authority: js.UndefOr[String] = js.native
+    var grpcDotdefault_authority: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.enable_http_proxy")
-    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.native
+    var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.http_connect_creds")
-    var grpcDothttp_connect_creds: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_creds: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.http_connect_target")
-    var grpcDothttp_connect_target: js.UndefOr[String] = js.native
+    var grpcDothttp_connect_target: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.initial_reconnect_backoff_ms")
-    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotinitial_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_time_ms")
-    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_time_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.keepalive_timeout_ms")
-    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.native
+    var grpcDotkeepalive_timeout_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_concurrent_streams")
-    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.native
+    var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_receive_message_length")
-    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_reconnect_backoff_ms")
-    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.native
+    var grpcDotmax_reconnect_backoff_ms: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.max_send_message_length")
-    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.native
+    var grpcDotmax_send_message_length: js.UndefOr[Double] = js.undefined
     
     @JSName("grpc.primary_user_agent")
-    var grpcDotprimary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotprimary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.secondary_user_agent")
-    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.native
+    var grpcDotsecondary_user_agent: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.service_config")
-    var grpcDotservice_config: js.UndefOr[String] = js.native
+    var grpcDotservice_config: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.ssl_target_name_override")
-    var grpcDotssl_target_name_override: js.UndefOr[String] = js.native
+    var grpcDotssl_target_name_override: js.UndefOr[String] = js.undefined
     
     @JSName("grpc.use_local_subchannel_pool")
-    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.native
+    var grpcDotuse_local_subchannel_pool: js.UndefOr[Double] = js.undefined
     
-    var interceptor_providers: js.UndefOr[js.Array[InterceptorProvider]] = js.native
+    var interceptor_providers: js.UndefOr[js.Array[InterceptorProvider]] = js.undefined
     
-    var interceptors: js.UndefOr[js.Array[Interceptor]] = js.native
+    var interceptors: js.UndefOr[js.Array[Interceptor]] = js.undefined
   }
   object ClientOptions {
     

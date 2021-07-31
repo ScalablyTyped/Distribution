@@ -2,19 +2,17 @@ package typings.diffMatchPatch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Chars1 extends StObject {
     
-    var chars1: String = js.native
+    var chars1: String
     
-    var chars2: String = js.native
+    var chars2: String
     
-    var lineArray: js.Array[String] = js.native
+    var lineArray: js.Array[String]
   }
   object Chars1 {
     

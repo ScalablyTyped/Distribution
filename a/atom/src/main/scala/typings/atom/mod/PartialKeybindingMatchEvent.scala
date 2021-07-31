@@ -3,20 +3,18 @@ package typings.atom.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialKeybindingMatchEvent extends StObject {
   
   /** DOM element that was the target of the most recent keyboard event. */
-  var keyboardEventTarget: Element = js.native
+  var keyboardEventTarget: Element
   
   /** The string of keystrokes that matched the binding. */
-  var keystrokes: String = js.native
+  var keystrokes: String
   
   /** The KeyBindings that the keystrokes partially matched. */
-  var partiallyMatchedBindings: js.Array[KeyBinding] = js.native
+  var partiallyMatchedBindings: js.Array[KeyBinding]
 }
 object PartialKeybindingMatchEvent {
   

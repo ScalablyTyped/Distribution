@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConfig extends StObject {
   
   /**
     * The VPC security group IDs, in the form sg-xxxxxxxx. Specify the security groups for the VPC that is specified in the Subnets field.
     */
-  var SecurityGroupIds: VpcSecurityGroupIds = js.native
+  var SecurityGroupIds: VpcSecurityGroupIds
   
   /**
     * The ID of the subnets in the VPC to which you want to connect your training job or model. For information about the availability of specific instance types, see Supported Instance Types and Availability Zones.
     */
-  var Subnets: typings.awsSdk.sagemakerMod.Subnets = js.native
+  var Subnets: typings.awsSdk.sagemakerMod.Subnets
 }
 object VpcConfig {
   

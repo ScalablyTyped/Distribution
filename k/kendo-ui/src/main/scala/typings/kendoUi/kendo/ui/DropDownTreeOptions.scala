@@ -3,93 +3,91 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.HierarchicalDataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownTreeOptions extends StObject {
   
-  var animation: js.UndefOr[Boolean | DropDownTreeAnimation] = js.native
+  var animation: js.UndefOr[Boolean | DropDownTreeAnimation] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ DropDownTreeChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DropDownTreeChangeEvent, Unit]] = js.undefined
   
-  var checkAll: js.UndefOr[Boolean] = js.native
+  var checkAll: js.UndefOr[Boolean] = js.undefined
   
-  var checkAllTemplate: js.UndefOr[String | js.Function] = js.native
+  var checkAllTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var checkboxes: js.UndefOr[Boolean | DropDownTreeCheckboxes] = js.native
+  var checkboxes: js.UndefOr[Boolean | DropDownTreeCheckboxes] = js.undefined
   
-  var clearButton: js.UndefOr[Boolean] = js.native
+  var clearButton: js.UndefOr[Boolean] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ DropDownTreeCloseEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ DropDownTreeCloseEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ DropDownTreeDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ DropDownTreeDataBoundEvent, Unit]] = js.undefined
   
-  var dataImageUrlField: js.UndefOr[String] = js.native
+  var dataImageUrlField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
   
-  var dataSpriteCssClassField: js.UndefOr[String] = js.native
+  var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
   
-  var dataTextField: js.UndefOr[String | js.Any] = js.native
+  var dataTextField: js.UndefOr[String | js.Any] = js.undefined
   
-  var dataUrlField: js.UndefOr[String] = js.native
+  var dataUrlField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String | js.Any] = js.native
+  var dataValueField: js.UndefOr[String | js.Any] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
-  var enforceMinLength: js.UndefOr[Boolean] = js.native
+  var enforceMinLength: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var filtering: js.UndefOr[js.Function1[/* e */ DropDownTreeFilteringEvent, Unit]] = js.native
+  var filtering: js.UndefOr[js.Function1[/* e */ DropDownTreeFilteringEvent, Unit]] = js.undefined
   
-  var footerTemplate: js.UndefOr[String | js.Function] = js.native
+  var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var ignoreCase: js.UndefOr[Boolean] = js.native
+  var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
-  var loadOnDemand: js.UndefOr[Boolean] = js.native
+  var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[DropDownTreeMessages] = js.native
+  var messages: js.UndefOr[DropDownTreeMessages] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.native
+  var noDataTemplate: js.UndefOr[String | js.Function | Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ DropDownTreeOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ DropDownTreeOpenEvent, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popup: js.UndefOr[DropDownTreePopup] = js.native
+  var popup: js.UndefOr[DropDownTreePopup] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ DropDownTreeSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ DropDownTreeSelectEvent, Unit]] = js.undefined
   
-  var tagMode: js.UndefOr[String] = js.native
+  var tagMode: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | js.Any] = js.native
+  var value: js.UndefOr[String | js.Any] = js.undefined
   
-  var valuePrimitive: js.UndefOr[Boolean] = js.native
+  var valuePrimitive: js.UndefOr[Boolean] = js.undefined
   
-  var valueTemplate: js.UndefOr[String | js.Function] = js.native
+  var valueTemplate: js.UndefOr[String | js.Function] = js.undefined
 }
 object DropDownTreeOptions {
   

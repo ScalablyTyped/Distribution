@@ -2,37 +2,35 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket extends StObject {
   
   /**
     * Total number of equivalence classes in this bucket.
     */
-  var bucketSize: js.UndefOr[String] = js.native
+  var bucketSize: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of distinct equivalence classes in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.native
+  var bucketValueCount: js.UndefOr[String] = js.undefined
   
   /**
     * Sample of equivalence classes in this bucket. The total number of classes
     * returned per bucket is capped at 20.
     */
-  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]] = js.native
+  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2KAnonymityEquivalenceClass]] = js.undefined
   
   /**
     * Lower bound on the size of the equivalence classes in this bucket.
     */
-  var equivalenceClassSizeLowerBound: js.UndefOr[String] = js.native
+  var equivalenceClassSizeLowerBound: js.UndefOr[String] = js.undefined
   
   /**
     * Upper bound on the size of the equivalence classes in this bucket.
     */
-  var equivalenceClassSizeUpperBound: js.UndefOr[String] = js.native
+  var equivalenceClassSizeUpperBound: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KAnonymityHistogramBucket {
   

@@ -2,15 +2,13 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Motion extends StObject {
   
-  def animateIn(element: js.Object, animation: js.Any, cb: js.Function): Unit = js.native
+  def animateIn(element: js.Object, animation: js.Any, cb: js.Function): Unit
   
-  def animateOut(element: js.Object, animation: js.Any, cb: js.Function): Unit = js.native
+  def animateOut(element: js.Object, animation: js.Any, cb: js.Function): Unit
 }
 object Motion {
   

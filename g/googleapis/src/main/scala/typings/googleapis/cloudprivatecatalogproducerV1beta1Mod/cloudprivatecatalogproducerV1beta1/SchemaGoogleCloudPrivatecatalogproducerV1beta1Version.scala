@@ -3,31 +3,29 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The producer representation of a version, which is a child resource under a
   * `Product` with asset data.
   */
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Version extends StObject {
   
   /**
     * Output only. The asset which has been validated and is ready to be
     * provisioned. See Version.original_asset for the schema.
     */
-  var asset: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var asset: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. The time when the version was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The user-supplied description of the version. Maximum of 256 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The resource name of the version, in the format
@@ -36,7 +34,7 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Version extends StObject {
     * changed after the version is created. The final segment of the name must
     * between 1 and 63 characters in length.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The user-supplied asset payload. The maximum size of the payload is 2MB.
@@ -51,12 +49,12 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1Version extends StObject {
     * true     minItems: 2     items:       type: object       properties:
     * name:           type: string         content:           type: string ```
     */
-  var originalAsset: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var originalAsset: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. The time when the version was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1Version {
   

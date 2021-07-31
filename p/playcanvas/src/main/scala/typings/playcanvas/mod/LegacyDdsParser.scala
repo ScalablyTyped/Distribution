@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.TextureParser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("playcanvas", "LegacyDdsParser")
 @js.native
-class LegacyDdsParser () extends TextureParser
+class LegacyDdsParser ()
+  extends StObject
+     with TextureParser

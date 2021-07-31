@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,18 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.container.ContainerEvent
   * @see ElementChange
   */
-@js.native
-trait ChangesEvent extends EventObject {
+trait ChangesEvent
+  extends StObject
+     with EventObject {
   
   /**
     * contains the accessor to the common root of the changed elements.
     *
     * Type and value of the accessor depend on the service.
     */
-  var Base: js.Any = js.native
+  var Base: js.Any
   
   /** contains the changes which occurred. */
-  var Changes: ChangesSet = js.native
+  var Changes: ChangesSet
 }
 object ChangesEvent {
   

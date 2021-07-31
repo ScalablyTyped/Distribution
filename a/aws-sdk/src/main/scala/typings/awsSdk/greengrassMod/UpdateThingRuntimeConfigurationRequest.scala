@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThingRuntimeConfigurationRequest extends StObject {
   
   /**
     * Configuration for telemetry service.
     */
-  var TelemetryConfiguration: js.UndefOr[TelemetryConfigurationUpdate] = js.native
+  var TelemetryConfiguration: js.UndefOr[TelemetryConfigurationUpdate] = js.undefined
   
   /**
     * The thing name.
     */
-  var ThingName: string = js.native
+  var ThingName: string
 }
 object UpdateThingRuntimeConfigurationRequest {
   

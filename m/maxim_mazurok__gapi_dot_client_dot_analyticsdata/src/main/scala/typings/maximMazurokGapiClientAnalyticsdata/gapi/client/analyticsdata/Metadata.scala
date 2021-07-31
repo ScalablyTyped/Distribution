@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /** The dimension descriptions. */
-  var dimensions: js.UndefOr[js.Array[DimensionMetadata]] = js.native
+  var dimensions: js.UndefOr[js.Array[DimensionMetadata]] = js.undefined
   
   /** The metric descriptions. */
-  var metrics: js.UndefOr[js.Array[MetricMetadata]] = js.native
+  var metrics: js.UndefOr[js.Array[MetricMetadata]] = js.undefined
   
   /** Resource name of this metadata. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

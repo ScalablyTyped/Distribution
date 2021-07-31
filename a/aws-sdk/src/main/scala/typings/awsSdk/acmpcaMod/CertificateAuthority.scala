@@ -2,76 +2,74 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateAuthority extends StObject {
   
   /**
     * Amazon Resource Name (ARN) for your private certificate authority (CA). The format is  12345678-1234-1234-1234-123456789012 .
     */
-  var Arn: js.UndefOr[typings.awsSdk.acmpcaMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.acmpcaMod.Arn] = js.undefined
   
   /**
     * Your private CA configuration.
     */
-  var CertificateAuthorityConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateAuthorityConfiguration] = js.native
+  var CertificateAuthorityConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateAuthorityConfiguration] = js.undefined
   
   /**
     * Date and time at which your private CA was created.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.native
+  var CreatedAt: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Reason the request to create your private CA failed.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.acmpcaMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.acmpcaMod.FailureReason] = js.undefined
   
   /**
     * Date and time at which your private CA was last updated.
     */
-  var LastStateChangeAt: js.UndefOr[TStamp] = js.native
+  var LastStateChangeAt: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Date and time after which your private CA certificate is not valid.
     */
-  var NotAfter: js.UndefOr[TStamp] = js.native
+  var NotAfter: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Date and time before which your private CA certificate is not valid.
     */
-  var NotBefore: js.UndefOr[TStamp] = js.native
+  var NotBefore: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The AWS account ID that owns the certificate authority.
     */
-  var OwnerAccount: js.UndefOr[AccountId] = js.native
+  var OwnerAccount: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The period during which a deleted CA can be restored. For more information, see the PermanentDeletionTimeInDays parameter of the DeleteCertificateAuthorityRequest action. 
     */
-  var RestorableUntil: js.UndefOr[TStamp] = js.native
+  var RestorableUntil: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Information about the certificate revocation list (CRL) created and maintained by your private CA. 
     */
-  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.native
+  var RevocationConfiguration: js.UndefOr[typings.awsSdk.acmpcaMod.RevocationConfiguration] = js.undefined
   
   /**
     * Serial number of your private CA.
     */
-  var Serial: js.UndefOr[String] = js.native
+  var Serial: js.UndefOr[String] = js.undefined
   
   /**
     * Status of your private CA.
     */
-  var Status: js.UndefOr[CertificateAuthorityStatus] = js.native
+  var Status: js.UndefOr[CertificateAuthorityStatus] = js.undefined
   
   /**
     * Type of your private CA.
     */
-  var Type: js.UndefOr[CertificateAuthorityType] = js.native
+  var Type: js.UndefOr[CertificateAuthorityType] = js.undefined
 }
 object CertificateAuthority {
   

@@ -3,7 +3,6 @@ package typings.reactFlexr
 import typings.reactFlexr.ReactFlexr.ErgonomicType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFlexrStrings {
@@ -19,12 +18,16 @@ object reactFlexrStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait desk extends ErgonomicType
+  sealed trait desk
+    extends StObject
+       with ErgonomicType
   @scala.inline
   def desk: desk = "desk".asInstanceOf[desk]
   
   @js.native
-  sealed trait lap extends ErgonomicType
+  sealed trait lap
+    extends StObject
+       with ErgonomicType
   @scala.inline
   def lap: lap = "lap".asInstanceOf[lap]
   
@@ -34,12 +37,16 @@ object reactFlexrStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait palm extends ErgonomicType
+  sealed trait palm
+    extends StObject
+       with ErgonomicType
   @scala.inline
   def palm: palm = "palm".asInstanceOf[palm]
   
   @js.native
-  sealed trait portable extends ErgonomicType
+  sealed trait portable
+    extends StObject
+       with ErgonomicType
   @scala.inline
   def portable: portable = "portable".asInstanceOf[portable]
   

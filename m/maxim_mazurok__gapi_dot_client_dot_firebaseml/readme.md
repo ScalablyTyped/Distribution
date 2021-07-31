@@ -10,9 +10,9 @@ TypeScript typings for Firebase ML API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.firebaseml |
 | Keywords           | - |
-| # releases         | 6 |
+| # releases         | 49 |
 | # dependents       | 1 |
-| # downloads        | 129 |
+| # downloads        | 3294 |
 | # stars            | 0 |
 
 ## Links

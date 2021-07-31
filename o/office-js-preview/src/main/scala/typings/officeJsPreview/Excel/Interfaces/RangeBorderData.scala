@@ -25,11 +25,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Thick
 import typings.officeJsPreview.officeJsPreviewStrings.Thin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeBorder.toJSON()`. */
-@js.native
 trait RangeBorderData extends StObject {
   
   /**
@@ -38,7 +36,7 @@ trait RangeBorderData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait RangeBorderData extends StObject {
     */
   var sideIndex: js.UndefOr[
     BorderIndex | EdgeTop | EdgeBottom | EdgeLeft | EdgeRight | InsideVertical | InsideHorizontal | DiagonalDown | DiagonalUp
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait RangeBorderData extends StObject {
     */
   var style: js.UndefOr[
     BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait RangeBorderData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[scala.Double] = js.native
+  var tintAndShade: js.UndefOr[scala.Double] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait RangeBorderData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.native
+  var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined
 }
 object RangeBorderData {
   

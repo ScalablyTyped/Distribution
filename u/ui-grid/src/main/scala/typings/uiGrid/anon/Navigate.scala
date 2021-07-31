@@ -6,10 +6,8 @@ import typings.uiGrid.mod.cellNav.viewportKeyDownHandler
 import typings.uiGrid.mod.cellNav.viewportKeyPressHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigate[TEntity] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait Navigate[TEntity] extends StObject {
     * @param {ng.IScope} scope The grid scope
     * @param {navigateHandler} handler Callback
     */
-  def navigate(scope: IScope, handler: navigateHandler[TEntity]): Unit = js.native
+  def navigate(scope: IScope, handler: navigateHandler[TEntity]): Unit
   
   /**
     * viewPortKeyDown is raised when the viewPort receives a keyDown event.
@@ -26,7 +24,7 @@ trait Navigate[TEntity] extends StObject {
     * @param {ng.IScope} scope The grid scope
     * @param {viewportKeyDownHandler} handler Callback
     */
-  def viewPortKeyDown(scope: IScope, handler: viewportKeyDownHandler[TEntity]): Unit = js.native
+  def viewPortKeyDown(scope: IScope, handler: viewportKeyDownHandler[TEntity]): Unit
   
   /**
     * viewPortKeyPress is raised when the viewPort receives a keyPress event.
@@ -35,7 +33,7 @@ trait Navigate[TEntity] extends StObject {
     * @param {ng.IScope} scope The grid scope
     * @param {viewportKeyPressHandler} handler Callback
     */
-  def viewPortKeyPress(scope: IScope, handler: viewportKeyPressHandler[TEntity]): Unit = js.native
+  def viewPortKeyPress(scope: IScope, handler: viewportKeyPressHandler[TEntity]): Unit
 }
 object Navigate {
   
@@ -50,7 +48,7 @@ object Navigate {
   }
   
   @scala.inline
-  implicit class NavigateMutableBuilder[Self <: Navigate[_], TEntity] (val x: Self with Navigate[TEntity]) extends AnyVal {
+  implicit class NavigateMutableBuilder[Self <: Navigate[?], TEntity] (val x: Self & Navigate[TEntity]) extends AnyVal {
     
     @scala.inline
     def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction2(value))

@@ -2,35 +2,33 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collection extends StObject {
   
-  var body_html: String = js.native
+  var body_html: String
   
-  var handle: String = js.native
+  var handle: String
   
-  var id: String = js.native
+  var id: String
   
-  var image: Image = js.native
+  var image: Image
   
-  var metafields: js.Array[_] = js.native
+  var metafields: js.Array[js.Any]
   
-  var published: Boolean = js.native
+  var published: Boolean
   
-  var published_at: String = js.native
+  var published_at: String
   
-  var published_scope: String = js.native
+  var published_scope: String
   
-  var sort_order: String = js.native
+  var sort_order: String
   
-  var template_suffix: String = js.native
+  var template_suffix: String
   
-  var title: String = js.native
+  var title: String
   
-  var updated_at: String = js.native
+  var updated_at: String
 }
 object Collection {
   
@@ -40,7 +38,7 @@ object Collection {
     handle: String,
     id: String,
     image: Image,
-    metafields: js.Array[_],
+    metafields: js.Array[js.Any],
     published: Boolean,
     published_at: String,
     published_scope: String,
@@ -69,7 +67,7 @@ object Collection {
     def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMetafields(value: js.Array[_]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
+    def setMetafields(value: js.Array[js.Any]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetafieldsVarargs(value: js.Any*): Self = StObject.set(x, "metafields", js.Array(value :_*))

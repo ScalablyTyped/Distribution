@@ -2,19 +2,17 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadConfig extends StObject {
   
-  var checkPolicy: js.UndefOr[Boolean] = js.native
+  var checkPolicy: js.UndefOr[Boolean] = js.undefined
   
-  var policy: js.UndefOr[LoadPolicyConfig] = js.native
+  var policy: js.UndefOr[LoadPolicyConfig] = js.undefined
   
-  var process: js.UndefOr[LoadProcessConfig] = js.native
+  var process: js.UndefOr[LoadProcessConfig] = js.undefined
   
-  var shouldCrash: js.UndefOr[Boolean] = js.native
+  var shouldCrash: js.UndefOr[Boolean] = js.undefined
 }
 object LoadConfig {
   

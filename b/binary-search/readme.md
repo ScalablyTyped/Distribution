@@ -10,9 +10,9 @@ tiny binary search function with comparators
 | ------------------ | :-------------: |
 | Full name          | binary-search |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 88 |
-| # downloads        | 5454914 |
+| # releases         | 2 |
+| # dependents       | 92 |
+| # downloads        | 6519894 |
 | # stars            | 7 |
 
 ## Links

@@ -3,31 +3,29 @@ package typings.chartist.mod
 import typings.chartist.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartAxis extends StObject {
   
-  var axisLength: Double = js.native
+  var axisLength: Double
   
-  var chartRect: IChartRect = js.native
+  var chartRect: IChartRect
   
-  var counterUnits: IChartUnits = js.native
+  var counterUnits: IChartUnits
   
-  var divisor: Double = js.native
+  var divisor: Double
   
-  var gridOffset: Double = js.native
+  var gridOffset: Double
   
-  var options: js.Any = js.native
+  var options: js.Any
   
-  var range: Max = js.native
+  var range: Max
   
-  var stepLength: Double = js.native
+  var stepLength: Double
   
-  var ticks: js.Array[Double] = js.native
+  var ticks: js.Array[Double]
   
-  var units: IChartUnits = js.native
+  var units: IChartUnits
 }
 object IChartAxis {
   

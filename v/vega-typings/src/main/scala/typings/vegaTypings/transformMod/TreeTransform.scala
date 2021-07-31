@@ -7,34 +7,34 @@ import typings.vegaTypings.utilMod.Vector4
 import typings.vegaTypings.vegaTypingsStrings.tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeTransform extends _Transforms {
+trait TreeTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector4[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector4[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var method: js.UndefOr[TreeMethod | SignalRef] = js.native
+  var method: js.UndefOr[TreeMethod | SignalRef] = js.undefined
   
-  var nodeSize: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var nodeSize: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var separation: js.UndefOr[Boolean | SignalRef] = js.native
+  var separation: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: tree = js.native
+  var `type`: tree
 }
 object TreeTransform {
   
   @scala.inline
-  def apply(`type`: tree): TreeTransform = {
+  def apply(): TreeTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tree")
     __obj.asInstanceOf[TreeTransform]
   }
   

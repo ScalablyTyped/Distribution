@@ -12,7 +12,7 @@ truncate html text and keep tag safe
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 680568 |
+| # downloads        | 905144 |
 | # stars            | 2 |
 
 ## Links

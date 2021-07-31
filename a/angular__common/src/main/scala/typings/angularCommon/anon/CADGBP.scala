@@ -2,27 +2,25 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CADGBP extends StObject {
   
-  var AUD: js.Array[js.UndefOr[String]] = js.native
+  var AUD: js.Array[js.UndefOr[String]]
   
-  var BRL: js.Array[js.UndefOr[String]] = js.native
+  var BRL: js.Array[js.UndefOr[String]]
   
-  var CAD: js.Array[js.UndefOr[String]] = js.native
+  var CAD: js.Array[js.UndefOr[String]]
   
-  var GBP: js.Array[js.UndefOr[String]] = js.native
+  var GBP: js.Array[js.UndefOr[String]]
   
-  var MXN: js.Array[js.UndefOr[String]] = js.native
+  var MXN: js.Array[js.UndefOr[String]]
   
-  var NZD: js.Array[js.UndefOr[String]] = js.native
+  var NZD: js.Array[js.UndefOr[String]]
   
-  var TWD: js.Array[js.UndefOr[String]] = js.native
+  var TWD: js.Array[js.UndefOr[String]]
   
-  var XCD: js.Array[js.UndefOr[String]] = js.native
+  var XCD: js.Array[js.UndefOr[String]]
 }
 object CADGBP {
   

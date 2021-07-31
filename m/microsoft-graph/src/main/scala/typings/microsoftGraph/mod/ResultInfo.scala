@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultInfo extends StObject {
   
   // The result code.
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
   // The message.
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The result sub-code.
-  var subcode: js.UndefOr[Double] = js.native
+  var subcode: js.UndefOr[Double] = js.undefined
 }
 object ResultInfo {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceToTargetRef extends StObject {
   
   /**
     * The source ref to copy. For example, refs/heads/master.
     */
-  var sourceRef: String = js.native
+  var sourceRef: String
   
   /**
     * The target ref to update. For example, refs/heads/master.
     */
-  var targetRef: String = js.native
+  var targetRef: String
 }
 object SourceToTargetRef {
   

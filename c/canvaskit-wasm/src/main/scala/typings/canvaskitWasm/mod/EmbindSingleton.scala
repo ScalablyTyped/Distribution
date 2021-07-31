@@ -2,15 +2,13 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbindSingleton extends StObject {
   
   // Technically Embind includes the other methods too, but they should not be called for a
   // singleton.
-  def isAliasOf(other: js.Any): Boolean = js.native
+  def isAliasOf(other: js.Any): Boolean
 }
 object EmbindSingleton {
   

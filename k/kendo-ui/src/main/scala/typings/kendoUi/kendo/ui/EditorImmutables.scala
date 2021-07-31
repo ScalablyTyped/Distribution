@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorImmutables extends StObject {
   
-  var deserialization: js.UndefOr[js.Function] = js.native
+  var deserialization: js.UndefOr[js.Function] = js.undefined
   
-  var serialization: js.UndefOr[String | js.Function] = js.native
+  var serialization: js.UndefOr[String | js.Function] = js.undefined
 }
 object EditorImmutables {
   

@@ -2,27 +2,25 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lastreadat extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var last_read_at: String = js.native
+  var last_read_at: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var repository: Archiveurl = js.native
+  var repository: Archiveurl
   
-  var subject: Latestcommenturl = js.native
+  var subject: Latestcommenturl
   
-  var unread: Boolean = js.native
+  var unread: Boolean
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object Lastreadat {
   

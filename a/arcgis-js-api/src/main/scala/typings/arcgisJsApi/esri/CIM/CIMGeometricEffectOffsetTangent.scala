@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectOffsetTangent
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
@@ -15,22 +14,22 @@ trait CIMGeometricEffectOffsetTangent
     */
   var method: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectOffsetTangentMethod * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The distance the geometry is moved tangent.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectOffsetTangent: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent = js.native
+  var type_CIMGeometricEffectOffsetTangent: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent
 }
 object CIMGeometricEffectOffsetTangent {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectOffsetTangent): CIMGeometricEffectOffsetTangent = {
+  def apply(): CIMGeometricEffectOffsetTangent = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectOffsetTangent")
     __obj.asInstanceOf[CIMGeometricEffectOffsetTangent]
   }
   

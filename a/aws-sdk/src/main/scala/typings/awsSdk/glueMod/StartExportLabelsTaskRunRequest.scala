@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartExportLabelsTaskRunRequest extends StObject {
   
   /**
     * The Amazon S3 path where you export the labels.
     */
-  var OutputS3Path: UriString = js.native
+  var OutputS3Path: UriString
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object StartExportLabelsTaskRunRequest {
   

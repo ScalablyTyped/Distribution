@@ -2,38 +2,36 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSendMessageBatchResultEntryMod {
   
-  @js.native
   trait SendMessageBatchResultEntry extends StObject {
     
     /**
       * <p>An identifier for the message in this batch.</p>
       */
-    var Id: String = js.native
+    var Id: String
     
     /**
       * <p>An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see <a href="https://www.ietf.org/rfc/rfc1321.txt">RFC1321</a>.</p>
       */
-    var MD5OfMessageAttributes: js.UndefOr[String] = js.native
+    var MD5OfMessageAttributes: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An MD5 digest of the non-URL-encoded message attribute string. You can use this attribute to verify that Amazon SQS received the message correctly. Amazon SQS URL-decodes the message before creating the MD5 digest. For information about MD5, see <a href="https://www.ietf.org/rfc/rfc1321.txt">RFC1321</a>.</p>
       */
-    var MD5OfMessageBody: String = js.native
+    var MD5OfMessageBody: String
     
     /**
       * <p>An identifier for the message.</p>
       */
-    var MessageId: String = js.native
+    var MessageId: String
     
     /**
       * <p>This parameter applies only to FIFO (first-in-first-out) queues.</p> <p>The large, non-consecutive number that Amazon SQS assigns to each message.</p> <p>The length of <code>SequenceNumber</code> is 128 bits. As <code>SequenceNumber</code> continues to increase for a particular <code>MessageGroupId</code>.</p>
       */
-    var SequenceNumber: js.UndefOr[String] = js.native
+    var SequenceNumber: js.UndefOr[String] = js.undefined
   }
   object SendMessageBatchResultEntry {
     

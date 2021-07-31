@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
   /** [TrustedTester] [Required] The end of range partitioning, exclusive. */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /** [TrustedTester] [Required] The width of each interval. */
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
   
   /** [TrustedTester] [Required] The start of range partitioning, inclusive. */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object End {
   

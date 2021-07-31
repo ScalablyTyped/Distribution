@@ -5,7 +5,6 @@ import typings.gulp.mod.TaskCallback
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,14 +26,13 @@ object mod extends Shortcut {
     var webdriver_update: TaskCallback = js.native
   }
   
-  @js.native
   trait IOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var configFile: js.UndefOr[String] = js.native
+    var configFile: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     

@@ -3,7 +3,6 @@ package typings.boxen
 import typings.boxen.mod.BorderStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxenStrings {
@@ -29,7 +28,9 @@ object boxenStrings {
   def blueBright: blueBright = "blueBright".asInstanceOf[blueBright]
   
   @js.native
-  sealed trait bold extends BorderStyle
+  sealed trait bold
+    extends StObject
+       with BorderStyle
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
@@ -39,7 +40,9 @@ object boxenStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait classic extends BorderStyle
+  sealed trait classic
+    extends StObject
+       with BorderStyle
   @scala.inline
   def classic: classic = "classic".asInstanceOf[classic]
   
@@ -54,12 +57,16 @@ object boxenStrings {
   def cyanBright: cyanBright = "cyanBright".asInstanceOf[cyanBright]
   
   @js.native
-  sealed trait double extends BorderStyle
+  sealed trait double
+    extends StObject
+       with BorderStyle
   @scala.inline
   def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait doubleSingle extends BorderStyle
+  sealed trait doubleSingle
+    extends StObject
+       with BorderStyle
   @scala.inline
   def doubleSingle: doubleSingle = "doubleSingle".asInstanceOf[doubleSingle]
   
@@ -114,17 +121,23 @@ object boxenStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait round extends BorderStyle
+  sealed trait round
+    extends StObject
+       with BorderStyle
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait single extends BorderStyle
+  sealed trait single
+    extends StObject
+       with BorderStyle
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait singleDouble extends BorderStyle
+  sealed trait singleDouble
+    extends StObject
+       with BorderStyle
   @scala.inline
   def singleDouble: singleDouble = "singleDouble".asInstanceOf[singleDouble]
   

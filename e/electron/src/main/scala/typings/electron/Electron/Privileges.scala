@@ -2,46 +2,44 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Privileges extends StObject {
   
   /**
     * Default false.
     */
-  var allowServiceWorkers: js.UndefOr[Boolean] = js.native
+  var allowServiceWorkers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var bypassCSP: js.UndefOr[Boolean] = js.native
+  var bypassCSP: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var corsEnabled: js.UndefOr[Boolean] = js.native
+  var corsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var standard: js.UndefOr[Boolean] = js.native
+  var standard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var stream: js.UndefOr[Boolean] = js.native
+  var stream: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default false.
     */
-  var supportFetchAPI: js.UndefOr[Boolean] = js.native
+  var supportFetchAPI: js.UndefOr[Boolean] = js.undefined
 }
 object Privileges {
   

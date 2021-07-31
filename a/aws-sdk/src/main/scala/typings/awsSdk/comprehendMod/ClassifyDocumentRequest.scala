@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifyDocumentRequest extends StObject {
   
   /**
     * The Amazon Resource Number (ARN) of the endpoint.
     */
-  var EndpointArn: DocumentClassifierEndpointArn = js.native
+  var EndpointArn: DocumentClassifierEndpointArn
   
   /**
     * The document text to be analyzed.
     */
-  var Text: CustomerInputString = js.native
+  var Text: CustomerInputString
 }
 object ClassifyDocumentRequest {
   

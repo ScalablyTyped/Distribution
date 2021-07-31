@@ -5,16 +5,16 @@ import typings.reactNative.reactNativeStrings.center
 import typings.reactNative.reactNativeStrings.fill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabBarIOSProps extends ViewProps {
+trait TabBarIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Background color of the tab bar
     */
-  var barTintColor: js.UndefOr[ColorValue] = js.native
+  var barTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Specifies tab bar item positioning. Available values are:
@@ -25,27 +25,27 @@ trait TabBarIOSProps extends ViewProps {
     * this value defaults to `fill`, in a horizontally regular one (e.g. iPad)
     * it defaults to center.
     */
-  var itemPositioning: js.UndefOr[fill | center | auto] = js.native
+  var itemPositioning: js.UndefOr[fill | center | auto] = js.undefined
   
   /**
     * Color of the currently selected tab icon
     */
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * A Boolean value that indicates whether the tab bar is translucent
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Color of unselected tab icons. Available since iOS 10.
     */
-  var unselectedItemTintColor: js.UndefOr[ColorValue] = js.native
+  var unselectedItemTintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Color of text on unselected tabs
     */
-  var unselectedTintColor: js.UndefOr[ColorValue] = js.native
+  var unselectedTintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object TabBarIOSProps {
   

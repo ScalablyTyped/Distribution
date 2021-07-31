@@ -2,20 +2,18 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A summary of how many vulnz occurrences there are per severity type. counts
   * by groups, or if we should have different summary messages like this.
   */
-@js.native
 trait SchemaGetVulnzOccurrencesSummaryResponse extends StObject {
   
   /**
     * A map of how many occurrences were found for each severity.
     */
-  var counts: js.UndefOr[js.Array[SchemaSeverityCount]] = js.native
+  var counts: js.UndefOr[js.Array[SchemaSeverityCount]] = js.undefined
 }
 object SchemaGetVulnzOccurrencesSummaryResponse {
   

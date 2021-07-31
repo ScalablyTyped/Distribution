@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about the Continuous Relevancy Training for this environment. */
-@js.native
 trait SearchStatus extends StObject {
   
   /** The date stamp of the most recent completed training for this environment. */
-  var last_trained: js.UndefOr[String] = js.native
+  var last_trained: js.UndefOr[String] = js.undefined
   
   /** Current scope of the training. Always returned as `environment`. */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /** The current status of Continuous Relevancy Training for this environment. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Long description of the current Continuous Relevancy Training status. */
-  var status_description: js.UndefOr[String] = js.native
+  var status_description: js.UndefOr[String] = js.undefined
 }
 object SearchStatus {
   

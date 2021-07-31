@@ -5,41 +5,41 @@ import typings.extjs.Ext.grid.header.IContainer
 import typings.extjs.Ext.util.IMixedCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object property {
   
-  @js.native
-  trait IGrid extends IPanel {
+  trait IGrid
+    extends StObject
+       with IPanel {
     
     /** [Config Option] (Object) */
-    var customEditors: js.UndefOr[js.Any] = js.native
+    var customEditors: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var customRenderers: js.UndefOr[js.Any] = js.native
+    var customRenderers: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Gets the source data object containing the property data
       * @returns Object The data object.
       */
-    var getSource: js.UndefOr[js.Function0[_]] = js.native
+    var getSource: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var inferTypes: js.UndefOr[Boolean] = js.native
+    var inferTypes: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var nameColumnWidth: js.UndefOr[js.Any] = js.native
+    var nameColumnWidth: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var nameField: js.UndefOr[String] = js.native
+    var nameField: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object) */
-    var propertyNames: js.UndefOr[js.Any] = js.native
+    var propertyNames: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Removes a property from the grid
       * @param prop String The name of the property to remove.
       */
-    var removeProperty: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Unit]] = js.native
+    var removeProperty: js.UndefOr[js.Function1[/* prop */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of a property
       * @param prop String The name of the property to set.
@@ -53,7 +53,7 @@ object property {
           /* create */ js.UndefOr[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the source data object containing the property data
       * @param source Object The data object.
@@ -61,16 +61,16 @@ object property {
       */
     var setSource: js.UndefOr[
         js.Function2[/* source */ js.UndefOr[js.Any], /* sourceConfig */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var source: js.UndefOr[js.Any] = js.native
+    var source: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var sourceConfig: js.UndefOr[js.Any] = js.native
+    var sourceConfig: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object IGrid {
     
@@ -96,7 +96,7 @@ object property {
       def setCustomRenderersUndefined: Self = StObject.set(x, "customRenderers", js.undefined)
       
       @scala.inline
-      def setGetSource(value: () => _): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+      def setGetSource(value: () => js.Any): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSourceUndefined: Self = StObject.set(x, "getSource", js.undefined)
@@ -167,12 +167,13 @@ object property {
   
   type IHeaderContainer = IContainer
   
-  @js.native
-  trait IProperty extends IModel {
+  trait IProperty
+    extends StObject
+       with IModel {
     
     /** [Property] (Ext.util.MixedCollection) */
     @JSName("fields")
-    var fields_IProperty: js.UndefOr[IMixedCollection] = js.native
+    var fields_IProperty: js.UndefOr[IMixedCollection] = js.undefined
   }
   object IProperty {
     
@@ -193,9 +194,9 @@ object property {
     }
   }
   
-  @js.native
   trait IStore
-    extends typings.extjs.Ext.data.IStore
+    extends StObject
+       with typings.extjs.Ext.data.IStore
   object IStore {
     
     @scala.inline

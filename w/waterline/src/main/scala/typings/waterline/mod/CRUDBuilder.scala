@@ -16,7 +16,6 @@ import typings.std.ReturnType
 import typings.waterline.waterlineStrings.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined waterline.waterline.WaterlinePromise<T> & {fetch (): waterline.waterline.CRUDBuilder<T>} */
@@ -2306,20 +2305,17 @@ trait CRUDBuilder[T] extends StObject {
     * Like `.then()`, but any unhandled rejection that ends up here will be thrown as an error.
     */
   def done[U](): Unit = js.native
-  def done[U](
-    onFulfilled: js.UndefOr[scala.Nothing],
-    onRejected: js.Function1[/* error */ js.Any, Resolvable[U]]
-  ): Unit = js.native
   def done[U](onFulfilled: js.Function1[/* value */ T, Resolvable[U]]): Unit = js.native
   def done[U](
     onFulfilled: js.Function1[/* value */ T, Resolvable[U]],
     onRejected: js.Function1[/* error */ js.Any, Resolvable[U]]
   ): Unit = js.native
+  def done[U](onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, Resolvable[U]]): Unit = js.native
   
   /**
     * Same as calling ``Bluebird.each(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def each[Q](iterator: IterateFunction[Q, _]): Bluebird[T] = js.native
+  def each[Q](iterator: IterateFunction[Q, js.Any]): Bluebird[T] = js.native
   
   /**
     * Like `.catch` but instead of catching all types of exceptions,
@@ -2327,7 +2323,7 @@ trait CRUDBuilder[T] extends StObject {
     */
   def error[U](onReject: js.Function1[/* reason */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
   
-  def exec(cb: js.Function2[/* err */ Error, /* result */ T, _]): Unit = js.native
+  def exec(cb: js.Function2[/* err */ Error, /* result */ T, js.Any]): Unit = js.native
   
   def fetch(): CRUDBuilder[T] = js.native
   
@@ -2344,7 +2340,7 @@ trait CRUDBuilder[T] extends StObject {
     *
     * Alias `.lastly();` for compatibility with earlier ECMAScript version.
     */
-  def `finally`(handler: js.Function0[Resolvable[_]]): Bluebird[T] = js.native
+  def `finally`(handler: js.Function0[Resolvable[js.Any]]): Bluebird[T] = js.native
   
   /**
     * This is a convenience method for doing:
@@ -2384,9 +2380,9 @@ trait CRUDBuilder[T] extends StObject {
     */
   def isResolved(): Boolean = js.native
   
-  def lastly(handler: js.Function0[Resolvable[_]]): Bluebird[T] = js.native
+  def lastly(handler: js.Function0[Resolvable[js.Any]]): Bluebird[T] = js.native
   @JSName("lastly")
-  var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[_]], Bluebird[T]] = js.native
+  var lastly_Original: js.Function1[/* handler */ js.Function0[Resolvable[js.Any]], Bluebird[T]] = js.native
   
   /**
     * Same as calling `Bluebird.map(thisPromise, mapper)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
@@ -2497,197 +2493,197 @@ trait CRUDBuilder[T] extends StObject {
   /**
     * Like `.finally()`, but not called for rejections.
     */
-  def tap(onFulFill: js.Function1[/* value */ T, Resolvable[_]]): Bluebird[T] = js.native
+  def tap(onFulFill: js.Function1[/* value */ T, Resolvable[js.Any]]): Bluebird[T] = js.native
   
   /**
     * Like `.catch()` but rethrows the error
     */
-  def tapCatch(onReject: js.Function1[/* error */ js.UndefOr[js.Any], Resolvable[_]]): Bluebird[T] = js.native
+  def tapCatch(onReject: js.Function1[/* error */ js.UndefOr[js.Any], Resolvable[js.Any]]): Bluebird[T] = js.native
   def tapCatch[E1](
     // tslint:disable-next-line:unified-signatures
   filter1: CatchFilter[E1],
-    onReject: js.Function1[/* error */ E1, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
-  def tapCatch[E1](filter1: Constructor[E1], onReject: js.Function1[/* error */ E1, Resolvable[_]]): Bluebird[T] = js.native
+  def tapCatch[E1](filter1: Constructor[E1], onReject: js.Function1[/* error */ E1, Resolvable[js.Any]]): Bluebird[T] = js.native
   def tapCatch[E1, E2](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
-    onReject: js.Function1[/* error */ E1 | E2, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
-    onReject: js.Function1[/* error */ E1 | E2, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
-    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: CatchFilter[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: CatchFilter[E2],
     filter3: Constructor[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4](
     filter1: Constructor[E1],
     filter2: Constructor[E2],
     filter3: Constructor[E3],
     filter4: Constructor[E4],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2695,7 +2691,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2703,7 +2699,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2711,7 +2707,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2719,7 +2715,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2727,7 +2723,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2735,7 +2731,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2743,7 +2739,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2751,7 +2747,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2759,7 +2755,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2767,7 +2763,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2775,7 +2771,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2783,7 +2779,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2791,7 +2787,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2799,7 +2795,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2807,7 +2803,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: CatchFilter[E1],
@@ -2815,7 +2811,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2823,7 +2819,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2831,7 +2827,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2839,7 +2835,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2847,7 +2843,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2855,7 +2851,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2863,7 +2859,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2871,7 +2867,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2879,7 +2875,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2887,7 +2883,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2895,7 +2891,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2903,7 +2899,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2911,7 +2907,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: CatchFilter[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2919,7 +2915,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2927,7 +2923,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: CatchFilter[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2935,7 +2931,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: CatchFilter[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   def tapCatch[E1, E2, E3, E4, E5](
     filter1: Constructor[E1],
@@ -2943,7 +2939,7 @@ trait CRUDBuilder[T] extends StObject {
     filter3: Constructor[E3],
     filter4: Constructor[E4],
     filter5: Constructor[E5],
-    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[_]]
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, Resolvable[js.Any]]
   ): Bluebird[T] = js.native
   
   /**
@@ -2953,12 +2949,12 @@ trait CRUDBuilder[T] extends StObject {
     */
   // Based on PromiseLike.then, but returns a Bluebird instance.
   def `then`[U](): Bluebird[U] = js.native
-  def `then`[U](onFulfill: js.UndefOr[scala.Nothing], onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
   def `then`[U](onFulfill: js.Function1[/* value */ T, Resolvable[U]]): Bluebird[U] = js.native
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, Resolvable[U]],
     onReject: js.Function1[/* error */ js.Any, Resolvable[U]]
   ): Bluebird[U] = js.native
+  def `then`[U](onFulfill: Unit, onReject: js.Function1[/* error */ js.Any, Resolvable[U]]): Bluebird[U] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
   
   def thenReturn(): Bluebird[Unit] = js.native
@@ -2970,17 +2966,14 @@ trait CRUDBuilder[T] extends StObject {
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](): Bluebird[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]
-  ): Bluebird[TResult1 | TResult2] = js.native
-  @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, Resolvable[TResult1]]): Bluebird[TResult1 | TResult2] = js.native
   @JSName("then")
   def then_TResult1TResult2[TResult1, TResult2](
     onfulfilled: js.Function1[/* value */ T, Resolvable[TResult1]],
     onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]
   ): Bluebird[TResult1 | TResult2] = js.native
+  @JSName("then")
+  def then_TResult1TResult2[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, Resolvable[TResult2]]): Bluebird[TResult1 | TResult2] = js.native
   /**
     * Attaches callbacks for the resolution and/or rejection of the Promise.
     * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2990,11 +2983,6 @@ trait CRUDBuilder[T] extends StObject {
   @JSName("then")
   def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
-  @JSName("then")
   def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
   def then_TResult1TResult2_Thenable[TResult1, TResult2](
@@ -3003,6 +2991,8 @@ trait CRUDBuilder[T] extends StObject {
   ): js.Thenable[TResult1 | TResult2] = js.native
   @JSName("then")
   def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
+  @JSName("then")
+  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
   
   /**
     * Convenience method for:

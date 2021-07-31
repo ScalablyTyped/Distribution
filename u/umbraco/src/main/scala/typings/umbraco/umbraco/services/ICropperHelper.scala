@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.services.cropperHelper
   * @description A helper object used for dealing with image cropper data
   */
-@js.native
 trait ICropperHelper extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ICropperHelper extends StObject {
     * Returns a collection of plugins available to the tinyMCE editor
     *
     */
-  def configuration(mediaTypeAlias: String): js.Any = js.native
+  def configuration(mediaTypeAlias: String): js.Any
 }
 object ICropperHelper {
   

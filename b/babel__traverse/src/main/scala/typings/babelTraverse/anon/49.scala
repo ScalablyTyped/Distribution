@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.SymbolTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `49` extends StObject {
   
-  var `type`: SymbolTypeAnnotation = js.native
+  var `type`: SymbolTypeAnnotation
 }
 object `49` {
   
   @scala.inline
-  def apply(`type`: SymbolTypeAnnotation): `49` = {
+  def apply(): `49` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SymbolTypeAnnotation")
     __obj.asInstanceOf[`49`]
   }
   

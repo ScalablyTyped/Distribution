@@ -4,43 +4,43 @@ import typings.reactBootstrapTable.anon.ComparatorDate
 import typings.reactBootstrapTable.anon.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateFilter extends _Filter {
+trait DateFilter
+  extends StObject
+     with _Filter {
   
   /**
     * Date filter comparators
     */
-  var dateComparators: js.UndefOr[js.Array[FilterComparator]] = js.native
+  var dateComparators: js.UndefOr[js.Array[FilterComparator]] = js.undefined
   
   /**
     * Default value for the filter.
     */
-  var defaultValue: js.UndefOr[Date] = js.native
+  var defaultValue: js.UndefOr[Date] = js.undefined
   
   /**
     * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * CSS Style to use for the select filter.
     */
-  var style: js.UndefOr[ComparatorDate] = js.native
+  var style: js.UndefOr[ComparatorDate] = js.undefined
   
   /**
     * Filter type must be 'DateFilter'
     */
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter
 }
 object DateFilter {
   
   @scala.inline
-  def apply(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.DateFilter): DateFilter = {
+  def apply(): DateFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DateFilter")
     __obj.asInstanceOf[DateFilter]
   }
   

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wmtsrequestencodingMod {
@@ -12,11 +11,11 @@ object wmtsrequestencodingMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WMTSRequestEncoding with String] = js.native
+    def apply(value: String): js.UndefOr[WMTSRequestEncoding & String] = js.native
     
-    /* "KVP" */ val KVP: typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding.KVP with String = js.native
+    /* "KVP" */ val KVP: typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding.KVP & String = js.native
     
-    /* "REST" */ val REST: typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding.REST with String = js.native
+    /* "REST" */ val REST: typings.ol.wmtsrequestencodingMod.WMTSRequestEncoding.REST & String = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object wmtsrequestencodingMod {
   object WMTSRequestEncoding extends StObject {
     
     @js.native
-    sealed trait KVP extends WMTSRequestEncoding
+    sealed trait KVP
+      extends StObject
+         with WMTSRequestEncoding
     
     @js.native
-    sealed trait REST extends WMTSRequestEncoding
+    sealed trait REST
+      extends StObject
+         with WMTSRequestEncoding
   }
 }

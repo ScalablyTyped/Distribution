@@ -6,7 +6,6 @@ import typings.firebaseStorage.srcTaskMod.UploadTask
 import typings.firebaseStorage.taskenumsMod.TaskState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcTasksnapshotMod {

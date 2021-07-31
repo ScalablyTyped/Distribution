@@ -8,29 +8,41 @@ import typings.std.Error
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contentSecurityPolicyMod {
   
+  @JSImport("helmet/dist/middlewares/content-security-policy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("helmet/dist/middlewares/content-security-policy", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
         Unit
-      ] = js.native
-    @JSImport("helmet/dist/middlewares/content-security-policy", JSImport.Default)
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse, 
+        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        Unit
+      ]]
+    @scala.inline
     def apply(options: ReadonlyContentSecurityPo): js.Function3[
         /* req */ IncomingMessage, 
         /* res */ ServerResponse, 
         /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
         Unit
-      ] = js.native
+      ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse, 
+        /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
+        Unit
+      ]]
+    
     @JSImport("helmet/dist/middlewares/content-security-policy", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -42,9 +54,8 @@ object contentSecurityPolicyMod {
     def getDefaultDirectives_=(x: js.Function0[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultDirectives")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("helmet/dist/middlewares/content-security-policy", "getDefaultDirectives")
-  @js.native
-  def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = js.native
+  @scala.inline
+  def getDefaultDirectives(): StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultDirectives")().asInstanceOf[StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]]
   
   type ContentSecurityPolicyDirectiveValue = String | ContentSecurityPolicyDirectiveValueFunction
   
@@ -52,12 +63,11 @@ object contentSecurityPolicyMod {
   
   type ContentSecurityPolicyDirectives = StringDictionary[Iterable[ContentSecurityPolicyDirectiveValue]]
   
-  @js.native
   trait ContentSecurityPolicyOptions extends StObject {
     
-    var directives: js.UndefOr[ContentSecurityPolicyDirectives] = js.native
+    var directives: js.UndefOr[ContentSecurityPolicyDirectives] = js.undefined
     
-    var reportOnly: js.UndefOr[Boolean] = js.native
+    var reportOnly: js.UndefOr[Boolean] = js.undefined
   }
   object ContentSecurityPolicyOptions {
     

@@ -4,11 +4,12 @@ import typings.jquery.JQueryStatic
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RenderManager extends Object {
+trait RenderManager
+  extends StObject
+     with Object {
   
   /**
     * Adds a class to the class collection if the name is not empty or null.The class collection is
@@ -128,9 +129,9 @@ trait RenderManager extends Object {
     * @param bPreserveNodesWithId whether to preserve nodes with an id as well
     */
   def preserveContent(oRootNode: Element): Unit = js.native
-  def preserveContent(oRootNode: Element, bPreserveRoot: js.UndefOr[scala.Nothing], bPreserveNodesWithId: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean): Unit = js.native
   def preserveContent(oRootNode: Element, bPreserveRoot: Boolean, bPreserveNodesWithId: Boolean): Unit = js.native
+  def preserveContent(oRootNode: Element, bPreserveRoot: Unit, bPreserveNodesWithId: Boolean): Unit = js.native
   
   /**
     * Renders the given control to the provided DOMNode.If the control is already rendered in the provided

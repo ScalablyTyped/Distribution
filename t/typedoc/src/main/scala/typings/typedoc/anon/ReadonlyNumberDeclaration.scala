@@ -4,28 +4,26 @@ import typings.typedoc.optionsDeclarationMod.ParameterScope
 import typings.typedoc.optionsDeclarationMod.ParameterType.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<typedoc.typedoc/dist/lib/utils/options/declaration.NumberDeclarationOption> */
-@js.native
 trait ReadonlyNumberDeclaration extends StObject {
   
-  val defaultValue: js.UndefOr[Double] = js.native
+  val defaultValue: js.UndefOr[Double] = js.undefined
   
-  val help: String = js.native
+  val help: String
   
-  val maxValue: js.UndefOr[Double] = js.native
+  val maxValue: js.UndefOr[Double] = js.undefined
   
-  val minValue: js.UndefOr[Double] = js.native
+  val minValue: js.UndefOr[Double] = js.undefined
   
-  val name: String = js.native
+  val name: String
   
-  val scope: js.UndefOr[ParameterScope] = js.native
+  val scope: js.UndefOr[ParameterScope] = js.undefined
   
-  val short: js.UndefOr[String] = js.native
+  val short: js.UndefOr[String] = js.undefined
   
-  val `type`: Number = js.native
+  val `type`: Number
 }
 object ReadonlyNumberDeclaration {
   

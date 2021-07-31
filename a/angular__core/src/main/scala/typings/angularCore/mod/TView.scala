@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Stored on the `ComponentDef.tView`.
   */
-@js.native
 trait TView extends StObject {
   
   /**
@@ -22,13 +20,13 @@ trait TView extends StObject {
     *
     * -1 means that it has not been initialized.
     */
-  var bindingStartIndex: Double = js.native
+  var bindingStartIndex: Double
   
   /**
     * This is a blueprint used to generate LView instances for this TView. Copying this
     * blueprint is faster than creating a new LView from scratch.
     */
-  var blueprint: ɵangularPackagesCoreCoreBv = js.native
+  var blueprint: ɵangularPackagesCoreCoreBv
   
   /**
     * When a view is destroyed, listeners need to be released and outputs need to be
@@ -56,7 +54,7 @@ trait TView extends StObject {
     * 2nd index is: index of function context in LView.cleanupInstances[]
     *               `tView.cleanup[i+0].call(lView[CLEANUP][tView.cleanup[i+1]])`
     */
-  var cleanup: js.Array[_] | Null = js.native
+  var cleanup: js.Array[js.Any] | Null
   
   /**
     * A list of element indices for child components that will need to be
@@ -64,13 +62,13 @@ trait TView extends StObject {
     * already been adjusted for the HEADER_OFFSET.
     *
     */
-  var components: js.Array[Double] | Null = js.native
+  var components: js.Array[Double] | Null
   
   /**
     * Array of constants for the view. Includes attribute arrays, local definition arrays etc.
     * Used for directive matching, attribute bindings, local definitions and more.
     */
-  var consts: TConstants | Null = js.native
+  var consts: TConstants | Null
   
   /**
     * Array of ngAfterContentChecked hooks that should be executed for this view in update
@@ -79,7 +77,7 @@ trait TView extends StObject {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var contentCheckHooks: HookData | Null = js.native
+  var contentCheckHooks: HookData | Null
   
   /**
     * Array of ngAfterContentInit and ngAfterContentChecked hooks that should be executed
@@ -88,7 +86,7 @@ trait TView extends StObject {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var contentHooks: HookData | Null = js.native
+  var contentHooks: HookData | Null
   
   /**
     * An array of indices pointing to directives with content queries alongside with the
@@ -99,15 +97,15 @@ trait TView extends StObject {
     * We are storing those indexes so we can refresh content queries as part of a view refresh
     * process.
     */
-  var contentQueries: js.Array[Double] | Null = js.native
+  var contentQueries: js.Array[Double] | Null
   
   /** Static data equivalent of LView.data[]. Contains TNodes, PipeDefInternal or TI18n. */
-  var data: TData = js.native
+  var data: TData
   
   /**
     * A `TNode` representing the declaration location of this `TView` (not part of this TView).
     */
-  var declTNode: TNode | Null = js.native
+  var declTNode: TNode | Null
   
   /**
     * Array of ngOnDestroy hooks that should be executed when this view is destroyed.
@@ -115,7 +113,7 @@ trait TView extends StObject {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var destroyHooks: DestroyHookData | Null = js.native
+  var destroyHooks: DestroyHookData | Null
   
   /**
     * Full registry of directives and components that may be found in this view.
@@ -123,7 +121,7 @@ trait TView extends StObject {
     * It's necessary to keep a copy of the full def list on the TView so it's possible
     * to render template functions without a host component.
     */
-  var directiveRegistry: DirectiveDefList | Null = js.native
+  var directiveRegistry: DirectiveDefList | Null
   
   /**
     * The index where the "expando" section of `LView` begins. The expando
@@ -135,15 +133,15 @@ trait TView extends StObject {
     * We store this start index so we know where to start checking host bindings
     * in `setHostBindings`.
     */
-  var expandoStartIndex: Double = js.native
+  var expandoStartIndex: Double
   
   /**
     * A reference to the first child node located in the view.
     */
-  var firstChild: TNode | Null = js.native
+  var firstChild: TNode | Null
   
   /** Whether or not this template has been processed in creation mode. */
-  var firstCreatePass: Boolean = js.native
+  var firstCreatePass: Boolean
   
   /**
     *  Whether or not this template has been processed in update mode (e.g. change detected)
@@ -156,20 +154,20 @@ trait TView extends StObject {
     * individual styling instructions keep track of if they have already been added to the linked
     * list to prevent double adding.
     */
-  var firstUpdatePass: Boolean = js.native
+  var firstUpdatePass: Boolean
   
   /**
     * Stores the OpCodes to be replayed during change-detection to process the `HostBindings`
     *
     * See `HostBindingOpCodes` for encoding details.
     */
-  var hostBindingOpCodes: HostBindingOpCodes | Null = js.native
+  var hostBindingOpCodes: HostBindingOpCodes | Null
   
   /**
     * Indicates that there was an error before we managed to complete the first create pass of the
     * view. This means that the view is likely corrupted and we should try to recover it.
     */
-  var incompleteFirstPass: Boolean = js.native
+  var incompleteFirstPass: Boolean
   
   /**
     * Full registry of pipes that may be found in this view.
@@ -180,14 +178,14 @@ trait TView extends StObject {
     * It's necessary to keep a copy of the full def list on the TView so it's possible
     * to render template functions without a host component.
     */
-  var pipeRegistry: PipeDefList | Null = js.native
+  var pipeRegistry: PipeDefList | Null
   
   /**
     * Array of ngOnChanges and ngDoCheck hooks that should be executed for this view in update mode.
     *
     * This array has the same structure as the `preOrderHooks` one.
     */
-  var preOrderCheckHooks: HookData | Null = js.native
+  var preOrderCheckHooks: HookData | Null
   
   /**
     * Array of ngOnInit, ngOnChanges and ngDoCheck hooks that should be executed for this view in
@@ -200,17 +198,17 @@ trait TView extends StObject {
     * function. This is done so that at runtime the system can efficiently iterate over all of the
     * functions to invoke without having to make any decisions/lookups.
     */
-  var preOrderHooks: HookData | Null = js.native
+  var preOrderHooks: HookData | Null
   
   /**
     * A collection of queries tracked in a given view.
     */
-  var queries: TQueries | Null = js.native
+  var queries: TQueries | Null
   
   /**
     * Set of schemas that declare elements to be allowed inside the view.
     */
-  var schemas: js.Array[SchemaMetadata] | Null = js.native
+  var schemas: js.Array[SchemaMetadata] | Null
   
   /**
     * Whether or not there are any static content queries tracked on this view.
@@ -218,7 +216,7 @@ trait TView extends StObject {
     * We store this so we know whether or not we should do a content query
     * refresh after creation mode to collect static query results.
     */
-  var staticContentQueries: Boolean = js.native
+  var staticContentQueries: Boolean
   
   /**
     * Whether or not there are any static view queries tracked on this view.
@@ -226,18 +224,18 @@ trait TView extends StObject {
     * We store this so we know whether or not we should do a view query
     * refresh after creation mode to collect static query results.
     */
-  var staticViewQueries: Boolean = js.native
+  var staticViewQueries: Boolean
   
   /**
     * The template function used to refresh the view of dynamically created views
     * and components. Will be null for inline views.
     */
-  var template: ComponentTemplate[js.Object] | Null = js.native
+  var template: ComponentTemplate[js.Object] | Null
   
   /**
     * Type of `TView` (`Root`|`Component`|`Embedded`).
     */
-  var `type`: TViewType = js.native
+  var `type`: TViewType
   
   /**
     * Array of ngAfterViewChecked hooks that should be executed for this view in
@@ -246,7 +244,7 @@ trait TView extends StObject {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var viewCheckHooks: HookData | Null = js.native
+  var viewCheckHooks: HookData | Null
   
   /**
     * Array of ngAfterViewInit and ngAfterViewChecked hooks that should be executed for
@@ -255,12 +253,12 @@ trait TView extends StObject {
     * Even indices: Directive index
     * Odd indices: Hook function
     */
-  var viewHooks: HookData | Null = js.native
+  var viewHooks: HookData | Null
   
   /**
     * A function containing query-related instructions.
     */
-  var viewQuery: ViewQueriesFunction[js.Object] | Null = js.native
+  var viewQuery: ViewQueriesFunction[js.Object] | Null
 }
 object TView {
   
@@ -277,7 +275,7 @@ object TView {
     staticViewQueries: Boolean,
     `type`: TViewType
   ): TView = {
-    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], incompleteFirstPass = incompleteFirstPass.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], incompleteFirstPass = incompleteFirstPass.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any], cleanup = null, components = null, consts = null, contentCheckHooks = null, contentHooks = null, contentQueries = null, declTNode = null, destroyHooks = null, directiveRegistry = null, firstChild = null, hostBindingOpCodes = null, pipeRegistry = null, preOrderCheckHooks = null, preOrderHooks = null, queries = null, schemas = null, template = null, viewCheckHooks = null, viewHooks = null, viewQuery = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TView]
   }
@@ -292,7 +290,7 @@ object TView {
     def setBlueprint(value: ɵangularPackagesCoreCoreBv): Self = StObject.set(x, "blueprint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCleanup(value: js.Array[_]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+    def setCleanup(value: js.Array[js.Any]): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCleanupNull: Self = StObject.set(x, "cleanup", null)
@@ -350,7 +348,7 @@ object TView {
     
     @scala.inline
     def setDataVarargs(
-      value: (TNode | ɵPipeDef[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any] | Double | TStylingRange | TStylingKey | typings.angularCore.mod.Type[js.Any] | InjectionToken[js.Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String)*
+      value: (TNode | ɵPipeDef[js.Any] | ɵDirectiveDef[js.Any] | ɵComponentDef[js.Any] | Double | TStylingRange | TStylingKey | Type[js.Any] | InjectionToken[js.Any] | TI18n | I18nUpdateOpCodes | TIcu | Null | String)*
     ): Self = StObject.set(x, "data", js.Array(value :_*))
     
     @scala.inline

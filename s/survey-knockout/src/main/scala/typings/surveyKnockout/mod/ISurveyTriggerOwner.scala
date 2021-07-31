@@ -2,21 +2,19 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISurveyTriggerOwner extends StObject {
   
-  def copyTriggerValue(name: String, fromName: String): js.Any = js.native
+  def copyTriggerValue(name: String, fromName: String): js.Any
   
-  def focusQuestion(name: String): Boolean = js.native
+  def focusQuestion(name: String): Boolean
   
-  def getObjects(pages: js.Array[String], questions: js.Array[String]): js.Array[_] = js.native
+  def getObjects(pages: js.Array[String], questions: js.Array[String]): js.Array[js.Any]
   
-  def setCompleted(): js.Any = js.native
+  def setCompleted(): js.Any
   
-  def setTriggerValue(name: String, value: js.Any, isVariable: Boolean): js.Any = js.native
+  def setTriggerValue(name: String, value: js.Any, isVariable: Boolean): js.Any
 }
 object ISurveyTriggerOwner {
   
@@ -24,7 +22,7 @@ object ISurveyTriggerOwner {
   def apply(
     copyTriggerValue: (String, String) => js.Any,
     focusQuestion: String => Boolean,
-    getObjects: (js.Array[String], js.Array[String]) => js.Array[_],
+    getObjects: (js.Array[String], js.Array[String]) => js.Array[js.Any],
     setCompleted: () => js.Any,
     setTriggerValue: (String, js.Any, Boolean) => js.Any
   ): ISurveyTriggerOwner = {
@@ -42,7 +40,7 @@ object ISurveyTriggerOwner {
     def setFocusQuestion(value: String => Boolean): Self = StObject.set(x, "focusQuestion", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[_]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
+    def setGetObjects(value: (js.Array[String], js.Array[String]) => js.Array[js.Any]): Self = StObject.set(x, "getObjects", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetCompleted(value: () => js.Any): Self = StObject.set(x, "setCompleted", js.Any.fromFunction0(value))

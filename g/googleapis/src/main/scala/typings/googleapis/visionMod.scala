@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visionMod {
+  
+  @JSImport("googleapis/build/src/apis/vision", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -116,9 +119,12 @@ object visionMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/vision", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/vision", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -162,22 +168,19 @@ object visionMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision(options: Options): Vision = js.native
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision_v1(version: v1): Vision = js.native
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = js.native
-  @JSImport("googleapis/build/src/apis/vision", "vision")
-  @js.native
-  def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = js.native
+  @scala.inline
+  def vision(options: Options): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[Vision]
+  @scala.inline
+  def vision(options: typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Options): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
+  @scala.inline
+  def vision(options: typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Options): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
+  
+  @scala.inline
+  def vision_v1(version: v1): Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[Vision]
+  
+  @scala.inline
+  def vision_v1p1beta1(version: v1p1beta1): typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1.Vision]
+  
+  @scala.inline
+  def vision_v1p2beta1(version: v1p2beta1): typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision = ^.asInstanceOf[js.Dynamic].applyDynamic("vision")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1.Vision]
 }

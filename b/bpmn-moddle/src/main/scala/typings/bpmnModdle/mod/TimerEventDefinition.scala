@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimerEventDefinition extends BaseElement {
+trait TimerEventDefinition
+  extends StObject
+     with BaseElement {
   
-  var timeCycle: Expression = js.native
+  var timeCycle: Expression
   
-  var timeDate: Expression = js.native
+  var timeDate: Expression
   
-  var timeDuration: Expression = js.native
+  var timeDuration: Expression
 }
 object TimerEventDefinition {
   

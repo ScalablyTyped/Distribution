@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingConfig extends StObject {
   
   /** Required. Agones fleet autoscaler spec. Example spec: https://agones.dev/site/docs/reference/fleetautoscaler/ */
-  var fleetAutoscalerSpec: js.UndefOr[String] = js.native
+  var fleetAutoscalerSpec: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the Scaling Config */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The schedules to which this Scaling Config applies. */
-  var schedules: js.UndefOr[js.Array[Schedule]] = js.native
+  var schedules: js.UndefOr[js.Array[Schedule]] = js.undefined
   
   /**
     * Labels used to identify the game server clusters to which this Agones scaling config applies. A game server cluster is subject to this Agones scaling config if its labels match any
     * of the selector entries.
     */
-  var selectors: js.UndefOr[js.Array[LabelSelector]] = js.native
+  var selectors: js.UndefOr[js.Array[LabelSelector]] = js.undefined
 }
 object ScalingConfig {
   

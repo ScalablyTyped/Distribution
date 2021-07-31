@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,23 +20,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .addRow(["May", 30, 4])
   *         .build();
   */
-@js.native
 trait DataTableBuilder extends StObject {
   
-  def addColumn(`type`: ColumnType, label: String): DataTableBuilder = js.native
+  def addColumn(`type`: ColumnType, label: String): DataTableBuilder
   
-  def addRow(values: js.Array[_]): DataTableBuilder = js.native
+  def addRow(values: js.Array[js.Any]): DataTableBuilder
   
-  def build(): DataTable = js.native
+  def build(): DataTable
   
-  def setValue(row: Integer, column: Integer, value: js.Any): DataTableBuilder = js.native
+  def setValue(row: Integer, column: Integer, value: js.Any): DataTableBuilder
 }
 object DataTableBuilder {
   
   @scala.inline
   def apply(
     addColumn: (ColumnType, String) => DataTableBuilder,
-    addRow: js.Array[_] => DataTableBuilder,
+    addRow: js.Array[js.Any] => DataTableBuilder,
     build: () => DataTable,
     setValue: (Integer, Integer, js.Any) => DataTableBuilder
   ): DataTableBuilder = {
@@ -52,7 +50,7 @@ object DataTableBuilder {
     def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setAddRow(value: js.Array[_] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    def setAddRow(value: js.Array[js.Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBuild(value: () => DataTable): Self = StObject.set(x, "build", js.Any.fromFunction0(value))

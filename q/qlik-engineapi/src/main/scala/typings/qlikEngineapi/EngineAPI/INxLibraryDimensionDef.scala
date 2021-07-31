@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxLibraryDimensionDef
   */
-@js.native
 trait INxLibraryDimensionDef extends StObject {
   
   /**
     * Array of dimension names.
     */
-  var qFieldDefs: js.Array[String] = js.native
+  var qFieldDefs: js.Array[String]
   
   /**
     * Array of dimension labels.
     */
-  var qFieldLabels: js.Array[String] = js.native
+  var qFieldLabels: js.Array[String]
   
   /**
     * Information about the grouping.
     */
-  var qGrouping: NxGrpType = js.native
+  var qGrouping: NxGrpType
   
   /**
     * no docu
     */
-  var qLabelExpression: String = js.native
+  var qLabelExpression: String
 }
 object INxLibraryDimensionDef {
   

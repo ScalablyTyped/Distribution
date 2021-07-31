@@ -3,46 +3,44 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the PlayReady-ND download engine used to stream protected media content from a transmitter. */
-@js.native
 trait INDDownloadEngine extends StObject {
   
   /** Gets the maximum threshold of the sample buffer. */
-  var bufferFullMaxThresholdInSamples: Double = js.native
+  var bufferFullMaxThresholdInSamples: Double
   
   /** Gets the minimum number of samples a sample buffer can hold before a download engine resumes downloading. */
-  var bufferFullMinThresholdInSamples: Double = js.native
+  var bufferFullMinThresholdInSamples: Double
   
   /** Gets whether the download engine supports seeking. */
-  var canSeek: Boolean = js.native
+  var canSeek: Boolean
   
   /** Notifies the download engine to stop downloading and disconnect from the remote server. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Gets the download engine notifier that will provide notification of download stream events from the transmitter. */
-  var notifier: NDDownloadEngineNotifier = js.native
+  var notifier: NDDownloadEngineNotifier
   
   /**
     * Notifies the download engine to open the content specified by a URL.
     * @param uri The URI from which the download engine gets content.
     * @param sessionIDBytes The session identifier used to identify the session. The session identifier must be 16 bytes.
     */
-  def open(uri: Uri, sessionIDBytes: js.Array[Double]): Unit = js.native
+  def open(uri: Uri, sessionIDBytes: js.Array[Double]): Unit
   
   /** Notifies the download engine to pause downloading. */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** Notifies the download engine to resume a paused download. */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /**
     * Notifies the download engine to go to a specified time position in the media stream.
     * @param startPosition The position within the media stream to which to seek.
     */
-  def seek(startPosition: Double): Unit = js.native
+  def seek(startPosition: Double): Unit
 }
 object INDDownloadEngine {
   

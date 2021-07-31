@@ -2,26 +2,24 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** base class for ASN.1 DER structured class */
-@js.native
 trait DERAbstractStructured extends StObject {
   
   /**
     * append an ASN1Object to internal array
     * @param asn1Object object to add
     */
-  def appendASN1Object(asn1Object: ASN1Object): Unit = js.native
+  def appendASN1Object(asn1Object: ASN1Object): Unit
   
-  var asn1Array: js.Array[ASN1Object] = js.native
+  var asn1Array: js.Array[ASN1Object]
   
   /**
     * set value by array of ASN1Object
     * @param asn1ObjectArray array of ASN1Object to set
     */
-  def setByASN1ObjectArray(asn1ObjectArray: js.Array[ASN1Object]): String = js.native
+  def setByASN1ObjectArray(asn1ObjectArray: js.Array[ASN1Object]): String
 }
 object DERAbstractStructured {
   

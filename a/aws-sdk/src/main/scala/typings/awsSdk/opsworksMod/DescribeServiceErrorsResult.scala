@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeServiceErrorsResult extends StObject {
   
   /**
     * An array of ServiceError objects that describe the specified service errors.
     */
-  var ServiceErrors: js.UndefOr[typings.awsSdk.opsworksMod.ServiceErrors] = js.native
+  var ServiceErrors: js.UndefOr[typings.awsSdk.opsworksMod.ServiceErrors] = js.undefined
 }
 object DescribeServiceErrorsResult {
   

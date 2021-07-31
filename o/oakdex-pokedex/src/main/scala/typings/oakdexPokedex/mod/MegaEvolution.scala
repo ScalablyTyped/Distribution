@@ -2,29 +2,27 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MegaEvolution extends StObject {
   
-  var ability: String = js.native
+  var ability: String
   
-  var base_stats: StatObject = js.native
+  var base_stats: StatObject
   
-  var height_eu: String = js.native
+  var height_eu: String
   
-  var height_us: String = js.native
+  var height_us: String
   
-  var image_suffix: js.UndefOr[String] = js.native
+  var image_suffix: js.UndefOr[String] = js.undefined
   
-  var mega_stone: String = js.native
+  var mega_stone: String
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
   
-  var weight_eu: String = js.native
+  var weight_eu: String
   
-  var weight_us: String = js.native
+  var weight_us: String
 }
 object MegaEvolution {
   

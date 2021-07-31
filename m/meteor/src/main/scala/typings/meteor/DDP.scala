@@ -3,30 +3,28 @@ package typings.meteor
 import typings.meteor.Meteor.SubscriptionHandle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DDP {
   
-  @js.native
   trait DDPStatic extends StObject {
     
     @JSName("apply")
-    def apply(method: String, parameters: js.Any*): js.Any = js.native
+    def apply(method: String, parameters: js.Any*): js.Any
     
-    def call(method: String, parameters: js.Any*): js.Any = js.native
+    def call(method: String, parameters: js.Any*): js.Any
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def methods(IMeteorMethodsDictionary: js.Any): js.Any = js.native
+    def methods(IMeteorMethodsDictionary: js.Any): js.Any
     
-    def onReconnect(): Unit = js.native
+    def onReconnect(): Unit
     
-    def reconnect(): Unit = js.native
+    def reconnect(): Unit
     
-    def status(): DDPStatus = js.native
+    def status(): DDPStatus
     
-    def subscribe(name: String, rest: js.Any*): SubscriptionHandle = js.native
+    def subscribe(name: String, rest: js.Any*): SubscriptionHandle
   }
   object DDPStatic {
     
@@ -74,18 +72,17 @@ object DDP {
     }
   }
   
-  @js.native
   trait DDPStatus extends StObject {
     
-    var connected: Boolean = js.native
+    var connected: Boolean
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var retryCount: Double = js.native
+    var retryCount: Double
     
-    var retryTime: js.UndefOr[Double] = js.native
+    var retryTime: js.UndefOr[Double] = js.undefined
     
-    var status: Status = js.native
+    var status: Status
   }
   object DDPStatus {
     

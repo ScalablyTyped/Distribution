@@ -2,17 +2,17 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReadThumbnailOptions extends ThumbnailUrlOptions {
+trait ReadThumbnailOptions
+  extends StObject
+     with ThumbnailUrlOptions {
   
-  var arrayBuffer: js.UndefOr[Boolean] = js.native
+  var arrayBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var blob: js.UndefOr[Boolean] = js.native
+  var blob: js.UndefOr[Boolean] = js.undefined
   
-  var buffer: js.UndefOr[Boolean] = js.native
+  var buffer: js.UndefOr[Boolean] = js.undefined
 }
 object ReadThumbnailOptions {
   

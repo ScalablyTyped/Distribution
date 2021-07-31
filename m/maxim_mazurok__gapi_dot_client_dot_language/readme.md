@@ -10,9 +10,9 @@ TypeScript typings for Cloud Natural Language API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.language |
 | Keywords           | - |
-| # releases         | 10 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 1419 |
+| # downloads        | 1657 |
 | # stars            | 0 |
 
 ## Links

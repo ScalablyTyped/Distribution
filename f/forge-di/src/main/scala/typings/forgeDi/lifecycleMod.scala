@@ -4,15 +4,13 @@ import typings.forgeDi.argumentsMod.Arguments
 import typings.forgeDi.resolverMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lifecycleMod {
   
-  @js.native
   trait Lifecycle extends StObject {
     
-    def resolve(resolver: default, context: typings.forgeDi.contextMod.default, args: Arguments): js.Any = js.native
+    def resolve(resolver: default, context: typings.forgeDi.contextMod.default, args: Arguments): js.Any
   }
   object Lifecycle {
     

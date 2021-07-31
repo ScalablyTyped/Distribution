@@ -2,16 +2,14 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceResult extends StObject {
   
   /**
     * The list of tags associated with the resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Tags] = js.undefined
 }
 object TagResourceResult {
   

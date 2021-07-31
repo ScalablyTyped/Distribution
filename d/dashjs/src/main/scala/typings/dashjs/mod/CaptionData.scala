@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.dashjs.anon.Align
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionData extends StObject {
   
-  var cueID: js.UndefOr[String] = js.native
+  var cueID: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var embeddedImages: js.UndefOr[StringDictionary[String]] = js.native
+  var embeddedImages: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var end: Double = js.native
+  var end: Double
   
-  var images: js.UndefOr[js.Array[String]] = js.native
+  var images: js.UndefOr[js.Array[String]] = js.undefined
   
-  var isd: js.UndefOr[js.Object] = js.native
+  var isd: js.UndefOr[js.Object] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
   
-  var styles: js.UndefOr[Align] = js.native
+  var styles: js.UndefOr[Align] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CaptionData {
   

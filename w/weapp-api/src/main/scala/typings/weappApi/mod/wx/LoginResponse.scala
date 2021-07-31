@@ -2,22 +2,20 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  开放接口
 //  登录
-@js.native
 trait LoginResponse extends StObject {
   
   /** 用户允许登录后，回调内容会带上 code（有效期五分钟），
     * 开发者需要将 code 发送到开发者服务器后台，
     * 使用code 换取 session_key api，
     * 将 code 换成 openid 和 session_key */
-  var code: String = js.native
+  var code: String
   
   /** 调用结果 */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object LoginResponse {
   

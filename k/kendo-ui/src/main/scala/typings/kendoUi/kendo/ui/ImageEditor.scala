@@ -5,15 +5,16 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImageEditor extends Widget {
+trait ImageEditor
+  extends StObject
+     with Widget {
   
   def drawCanvas(image: js.Any): Unit = js.native
   
-  def drawImage(imageUrl: String): JQueryPromise[_] = js.native
+  def drawImage(imageUrl: String): JQueryPromise[js.Any] = js.native
   
   def executeCommand(command: String): Unit = js.native
   def executeCommand(command: String, args: js.Any): Unit = js.native

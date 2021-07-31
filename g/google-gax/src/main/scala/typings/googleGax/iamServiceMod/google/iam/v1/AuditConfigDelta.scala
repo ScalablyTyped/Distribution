@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an AuditConfigDelta. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new AuditConfigDelta.
   * @param [properties] Properties to set
   */
-class AuditConfigDelta () extends IAuditConfigDelta {
+class AuditConfigDelta ()
+  extends StObject
+     with IAuditConfigDelta {
   def this(properties: IAuditConfigDelta) = this()
   
   /** AuditConfigDelta action. */
@@ -45,6 +46,10 @@ class AuditConfigDelta () extends IAuditConfigDelta {
 }
 object AuditConfigDelta {
   
+  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Action extends StObject
   /** Action enum. */
@@ -53,19 +58,25 @@ object AuditConfigDelta {
   object Action extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Action with Double] = js.native
+    def apply(value: Double): js.UndefOr[Action & Double] = js.native
     
     @js.native
-    sealed trait ACTION_UNSPECIFIED extends Action
-    /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ACTION_UNSPECIFIED with Double = js.native
+    sealed trait ACTION_UNSPECIFIED
+      extends StObject
+         with Action
+    /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ACTION_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait ADD extends Action
-    /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ADD with Double = js.native
+    sealed trait ADD
+      extends StObject
+         with Action
+    /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ADD & Double = js.native
     
     @js.native
-    sealed trait REMOVE extends Action
-    /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.REMOVE with Double = js.native
+    sealed trait REMOVE
+      extends StObject
+         with Action
+    /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.REMOVE & Double = js.native
   }
   
   /**
@@ -74,12 +85,10 @@ object AuditConfigDelta {
     * @returns AuditConfigDelta instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.create")
-  @js.native
-  def create(): AuditConfigDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.create")
-  @js.native
-  def create(properties: IAuditConfigDelta): AuditConfigDelta = js.native
+  @scala.inline
+  def create(): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AuditConfigDelta]
+  @scala.inline
+  def create(properties: IAuditConfigDelta): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
   
   /**
     * Decodes an AuditConfigDelta message from the specified reader or buffer.
@@ -90,18 +99,14 @@ object AuditConfigDelta {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decode")
-  @js.native
-  def decode(reader: Reader): AuditConfigDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): AuditConfigDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decode")
-  @js.native
-  def decode(reader: Uint8Array): AuditConfigDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): AuditConfigDelta = js.native
+  @scala.inline
+  def decode(reader: Reader): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
+  @scala.inline
+  def decode(reader: Reader, length: Double): AuditConfigDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditConfigDelta]
+  @scala.inline
+  def decode(reader: Uint8Array): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): AuditConfigDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AuditConfigDelta]
   
   /**
     * Decodes an AuditConfigDelta message from the specified reader or buffer, length delimited.
@@ -111,12 +116,10 @@ object AuditConfigDelta {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): AuditConfigDelta = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): AuditConfigDelta = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
   
   /**
     * Encodes the specified AuditConfigDelta message. Does not implicitly {@link google.iam.v1.AuditConfigDelta.verify|verify} messages.
@@ -125,12 +128,10 @@ object AuditConfigDelta {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.encode")
-  @js.native
-  def encode(message: IAuditConfigDelta): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.encode")
-  @js.native
-  def encode(message: IAuditConfigDelta, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IAuditConfigDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IAuditConfigDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified AuditConfigDelta message, length delimited. Does not implicitly {@link google.iam.v1.AuditConfigDelta.verify|verify} messages.
@@ -139,12 +140,10 @@ object AuditConfigDelta {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAuditConfigDelta): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAuditConfigDelta, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IAuditConfigDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IAuditConfigDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an AuditConfigDelta message from a plain object. Also converts values to their respective internal types.
@@ -152,9 +151,8 @@ object AuditConfigDelta {
     * @returns AuditConfigDelta
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): AuditConfigDelta = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AuditConfigDelta]
   
   /**
     * Creates a plain object from an AuditConfigDelta message. Also converts values to other types if specified.
@@ -163,12 +161,10 @@ object AuditConfigDelta {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.toObject")
-  @js.native
-  def toObject(message: AuditConfigDelta): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.toObject")
-  @js.native
-  def toObject(message: AuditConfigDelta, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: AuditConfigDelta): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: AuditConfigDelta, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an AuditConfigDelta message.
@@ -176,7 +172,6 @@ object AuditConfigDelta {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.AuditConfigDelta.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

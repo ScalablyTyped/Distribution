@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.formInputInterfacesMod.InputValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingDetails extends StObject {
   
-  var mappings: StringDictionary[InputValue] = js.native
+  var mappings: StringDictionary[InputValue]
 }
 object MappingDetails {
   

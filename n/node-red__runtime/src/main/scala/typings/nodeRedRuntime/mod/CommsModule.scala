@@ -4,10 +4,8 @@ import typings.nodeRedRuntime.anon.Client
 import typings.nodeRedRuntime.anon.Topic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommsModule extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait CommsModule extends StObject {
     * @param opts
     * @param opts.client - the client connection
     */
-  def addConnection(opts: Client): js.Promise[Unit] = js.native
+  def addConnection(opts: Client): js.Promise[Unit]
   
   /**
     * Unregisters a comms connection
     * @param opts
     * @param opts.client - the client connection
     */
-  def removeConnection(opts: Client): js.Promise[Unit] = js.native
+  def removeConnection(opts: Client): js.Promise[Unit]
   
   /**
     * Subscribes a comms connection to a given topic. Currently, all clients get
@@ -32,7 +30,7 @@ trait CommsModule extends StObject {
     * @param opts.client - the client connection
     * @param opts.topic - the topic to subscribe to
     */
-  def subscribe(opts: Topic): js.Promise[Unit] = js.native
+  def subscribe(opts: Topic): js.Promise[Unit]
   
   /**
     * Unsubscribes a comms connection from a given topic
@@ -40,7 +38,7 @@ trait CommsModule extends StObject {
     * @param opts.client - the client connection
     * @param opts.topic - the topic to unsubscribe from
     */
-  def unsubscribe(opts: Topic): js.Promise[Unit] = js.native
+  def unsubscribe(opts: Topic): js.Promise[Unit]
 }
 object CommsModule {
   

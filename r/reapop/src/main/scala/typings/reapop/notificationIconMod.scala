@@ -5,21 +5,22 @@ import typings.reapop.themesTypesMod.Theme
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationIconMod {
   
-  @JSImport("reapop/dist/components/NotificationIcon", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationIcon", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  
   trait Props extends StObject {
     
-    var notification: Notification = js.native
+    var notification: Notification
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object Props {
     

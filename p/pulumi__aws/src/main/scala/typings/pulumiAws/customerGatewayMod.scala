@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customerGatewayMod {
@@ -55,6 +54,10 @@ object customerGatewayMod {
   /* static members */
   object CustomerGateway {
     
+    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CustomerGateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,51 +67,45 @@ object customerGatewayMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CustomerGateway = js.native
-    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CustomerGateway = js.native
-    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = js.native
-    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CustomerGatewayState): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CustomerGatewayState, opts: CustomResourceOptions): CustomerGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CustomerGateway]
     
     /**
       * Returns true if the given object is an instance of CustomerGateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/customerGateway.CustomerGateway */ Boolean]
   }
   
-  @js.native
   trait CustomerGatewayArgs extends StObject {
     
     /**
       * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
       */
-    val bgpAsn: Input[String] = js.native
+    val bgpAsn: Input[String]
     
     /**
       * The IP address of the gateway's Internet-routable external interface.
       */
-    val ipAddress: Input[String] = js.native
+    val ipAddress: Input[String]
     
     /**
       * Tags to apply to the gateway.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of customer gateway. The only type AWS
       * supports at this time is "ipsec.1".
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object CustomerGatewayArgs {
     
@@ -139,34 +136,33 @@ object customerGatewayMod {
     }
   }
   
-  @js.native
   trait CustomerGatewayState extends StObject {
     
     /**
       * The ARN of the customer gateway.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The gateway's Border Gateway Protocol (BGP) Autonomous System Number (ASN).
       */
-    val bgpAsn: js.UndefOr[Input[String]] = js.native
+    val bgpAsn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP address of the gateway's Internet-routable external interface.
       */
-    val ipAddress: js.UndefOr[Input[String]] = js.native
+    val ipAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Tags to apply to the gateway.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of customer gateway. The only type AWS
       * supports at this time is "ipsec.1".
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object CustomerGatewayState {
     

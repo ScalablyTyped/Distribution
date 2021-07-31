@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Locator extends Task {
+trait Locator
+  extends StObject
+     with Task {
   
   /**
     * Sends a request to the ArcGIS REST geocode resource to find candidates for a single address specified in the address parameter.

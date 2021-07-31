@@ -10,9 +10,9 @@ Check and get file hashes
 | ------------------ | :-------------: |
 | Full name          | sha |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 61 |
-| # downloads        | 19057592 |
+| # releases         | 0 |
+| # dependents       | 62 |
+| # downloads        | 23488546 |
 | # stars            | 2 |
 
 ## Links

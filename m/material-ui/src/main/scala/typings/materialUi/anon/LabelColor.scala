@@ -2,31 +2,29 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelColor extends StObject {
   
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
-  var labelDisabledColor: js.UndefOr[String] = js.native
+  var labelDisabledColor: js.UndefOr[String] = js.undefined
   
-  var thumbDisabledColor: js.UndefOr[String] = js.native
+  var thumbDisabledColor: js.UndefOr[String] = js.undefined
   
-  var thumbOffColor: js.UndefOr[String] = js.native
+  var thumbOffColor: js.UndefOr[String] = js.undefined
   
-  var thumbOnColor: js.UndefOr[String] = js.native
+  var thumbOnColor: js.UndefOr[String] = js.undefined
   
-  var thumbRequiredColor: js.UndefOr[String] = js.native
+  var thumbRequiredColor: js.UndefOr[String] = js.undefined
   
-  var trackDisabledColor: js.UndefOr[String] = js.native
+  var trackDisabledColor: js.UndefOr[String] = js.undefined
   
-  var trackOffColor: js.UndefOr[String] = js.native
+  var trackOffColor: js.UndefOr[String] = js.undefined
   
-  var trackOnColor: js.UndefOr[String] = js.native
+  var trackOnColor: js.UndefOr[String] = js.undefined
   
-  var trackRequiredColor: js.UndefOr[String] = js.native
+  var trackRequiredColor: js.UndefOr[String] = js.undefined
 }
 object LabelColor {
   

@@ -3,23 +3,21 @@ package typings.dwt.anon
 import typings.dwt.dwtNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Visibility extends StObject {
   
   // Example: 'viewMenu'
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var onButtonClick: js.UndefOr[String] = js.native
+  var onButtonClick: js.UndefOr[String] = js.undefined
   
   // Example: 'icon-undo'
-  var sequence: js.UndefOr[`7`] = js.native
+  var sequence: js.UndefOr[`7`] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object Visibility {
   

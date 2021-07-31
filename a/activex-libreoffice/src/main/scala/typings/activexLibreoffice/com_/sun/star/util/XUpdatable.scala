@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is supported by objects with data that can be updated from a data source. */
-@js.native
-trait XUpdatable extends XInterface {
+trait XUpdatable
+  extends StObject
+     with XInterface {
   
   /** refreshes the data of the object from the connected data source. */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object XUpdatable {
   

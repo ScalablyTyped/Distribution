@@ -2,14 +2,12 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.ParallaxOptions> */
-@js.native
 trait PartialParallaxOptions extends StObject {
   
-  var responsiveThreshold: js.UndefOr[Double] = js.native
+  var responsiveThreshold: js.UndefOr[Double] = js.undefined
 }
 object PartialParallaxOptions {
   

@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactVirtualized.anon.ChildrenValidator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esScrollSyncMod {
@@ -36,20 +35,19 @@ object esScrollSyncMod {
     def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait OnScrollParams extends StObject {
     
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
-    var clientWidth: Double = js.native
+    var clientWidth: Double
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
     
-    var scrollWidth: Double = js.native
+    var scrollWidth: Double
   }
   object OnScrollParams {
     
@@ -89,22 +87,21 @@ object esScrollSyncMod {
     }
   }
   
-  @js.native
   trait ScrollSyncChildProps extends StObject {
     
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
-    var clientWidth: Double = js.native
+    var clientWidth: Double
     
-    def onScroll(params: OnScrollParams): Unit = js.native
+    def onScroll(params: OnScrollParams): Unit
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
     
-    var scrollWidth: Double = js.native
+    var scrollWidth: Double
   }
   object ScrollSyncChildProps {
     
@@ -148,9 +145,9 @@ object esScrollSyncMod {
     }
   }
   
-  @js.native
   trait ScrollSyncProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -164,7 +161,7 @@ object esScrollSyncMod {
       * This function should implement the following signature:
       * ({ onScroll, scrollLeft, scrollTop }) => PropTypes.element
       */
-    def children(props: ScrollSyncChildProps): ReactNode = js.native
+    def children(props: ScrollSyncChildProps): ReactNode
   }
   object ScrollSyncProps {
     
@@ -182,20 +179,19 @@ object esScrollSyncMod {
     }
   }
   
-  @js.native
   trait ScrollSyncState extends StObject {
     
-    var clientHeight: Double = js.native
+    var clientHeight: Double
     
-    var clientWidth: Double = js.native
+    var clientWidth: Double
     
-    var scrollHeight: Double = js.native
+    var scrollHeight: Double
     
-    var scrollLeft: Double = js.native
+    var scrollLeft: Double
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
     
-    var scrollWidth: Double = js.native
+    var scrollWidth: Double
   }
   object ScrollSyncState {
     

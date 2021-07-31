@@ -2,7 +2,6 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,6 +23,9 @@ trait JSEvalable[A] extends StObject {
     * @param fn Function to be evaluated in browser context
     * @param args Arguments to pass to `fn`
     */
-  def evaluateHandle(pageFunction: String, args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
-  def evaluateHandle(pageFunction: js.Function2[/* arg1 */ A, /* repeated */ js.Any, _], args: SerializableOrJSHandle*): js.Promise[JSHandle[_]] = js.native
+  def evaluateHandle(pageFunction: String, args: SerializableOrJSHandle*): js.Promise[JSHandle[js.Any]] = js.native
+  def evaluateHandle(
+    pageFunction: js.Function2[/* arg1 */ A, /* repeated */ js.Any, js.Any],
+    args: SerializableOrJSHandle*
+  ): js.Promise[JSHandle[js.Any]] = js.native
 }

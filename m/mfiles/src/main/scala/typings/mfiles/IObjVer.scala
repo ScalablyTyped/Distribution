@@ -2,33 +2,31 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjVer extends StObject {
   
-  def Clone(): IObjVer = js.native
+  def Clone(): IObjVer
   
-  def CloneFrom(ObjVer: IObjVer): Unit = js.native
+  def CloneFrom(ObjVer: IObjVer): Unit
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var ObjID: IObjID = js.native
+  var ObjID: IObjID
   
-  def Serialize(): js.Array[Double] = js.native
+  def Serialize(): js.Array[Double]
   
-  def SetIDs(ObjType: Double, ID: Double, Version: Double): Unit = js.native
+  def SetIDs(ObjType: Double, ID: Double, Version: Double): Unit
   
-  def SetObjIDAndVersion(ObjID: IObjID, Version: Double): Unit = js.native
+  def SetObjIDAndVersion(ObjID: IObjID, Version: Double): Unit
   
-  def ToJSON(): String = js.native
+  def ToJSON(): String
   
-  var Type: Double = js.native
+  var Type: Double
   
-  def Unserialize(Bytes: js.Array[Double]): Unit = js.native
+  def Unserialize(Bytes: js.Array[Double]): Unit
   
-  var Version: Double = js.native
+  var Version: Double
 }
 object IObjVer {
   

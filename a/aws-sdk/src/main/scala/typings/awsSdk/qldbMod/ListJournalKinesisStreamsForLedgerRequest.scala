@@ -2,26 +2,24 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJournalKinesisStreamsForLedgerRequest extends StObject {
   
   /**
     * The name of the ledger.
     */
-  var LedgerName: typings.awsSdk.qldbMod.LedgerName = js.native
+  var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
     * The maximum number of results to return in a single ListJournalKinesisStreamsForLedger request. (The actual number of results returned might be fewer.)
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.qldbMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.qldbMod.MaxResults] = js.undefined
   
   /**
     * A pagination token, indicating that you want to retrieve the next page of results. If you received a value for NextToken in the response from a previous ListJournalKinesisStreamsForLedger call, you should use that value as input here.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.qldbMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.qldbMod.NextToken] = js.undefined
 }
 object ListJournalKinesisStreamsForLedgerRequest {
   

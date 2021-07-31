@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveSnapshotHeadRequest extends StObject {
   
   /**
     * Required. The automatic resolution policy. All conflicts are resolved in chronological order, starting from the/ least recent. If the comparison metric is equal for the tentative
     * head and the conflict, the head wins.
     */
-  var resolutionPolicy: js.UndefOr[String] = js.native
+  var resolutionPolicy: js.UndefOr[String] = js.undefined
 }
 object ResolveSnapshotHeadRequest {
   

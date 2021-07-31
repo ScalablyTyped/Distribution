@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an error that occurred with a MediaSource . */
-@js.native
 trait MediaSourceError extends StObject {
   
   /** Gets the extended error code for the MediaSourceError . */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
 }
 object MediaSourceError {
   

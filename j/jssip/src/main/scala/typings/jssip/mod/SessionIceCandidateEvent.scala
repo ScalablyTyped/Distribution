@@ -3,15 +3,13 @@ package typings.jssip.mod
 import typings.std.RTCIceCandidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionIceCandidateEvent extends StObject {
   
-  var candidate: RTCIceCandidate = js.native
+  var candidate: RTCIceCandidate
   
-  def ready(): Unit = js.native
+  def ready(): Unit
 }
 object SessionIceCandidateEvent {
   

@@ -2,37 +2,35 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapCardViewBatchEditApi extends StObject {
   
-  def addNewCard(): Unit = js.native
+  def addNewCard(): Unit
   
-  def deleteCard(visibleIndex: Double): Unit = js.native
+  def deleteCard(visibleIndex: Double): Unit
   
-  def deleteCardByKey(key: js.Any): Unit = js.native
+  def deleteCardByKey(key: js.Any): Unit
   
-  def getCardVisibleIndices(includeDeleted: Boolean): js.Array[Double] = js.native
+  def getCardVisibleIndices(includeDeleted: Boolean): js.Array[Double]
   
-  def getDeletedCardIndices(): js.Array[Double] = js.native
+  def getDeletedCardIndices(): js.Array[Double]
   
-  def getInsertedCardIndices(): js.Array[Double] = js.native
+  def getInsertedCardIndices(): js.Array[Double]
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  def isDeletedCard(visibleIndex: Double): Boolean = js.native
+  def isDeletedCard(visibleIndex: Double): Boolean
   
-  def isNewCard(visibleIndex: Double): Boolean = js.native
+  def isNewCard(visibleIndex: Double): Boolean
   
-  def recoverCard(visibleIndex: Double): Unit = js.native
+  def recoverCard(visibleIndex: Double): Unit
   
-  def recoverCardByKey(key: js.Any): Unit = js.native
+  def recoverCardByKey(key: js.Any): Unit
   
-  def validateCard(visibleIndex: Double): Boolean = js.native
+  def validateCard(visibleIndex: Double): Boolean
   
-  def validateCards(validateOnlyModified: Boolean): Boolean = js.native
+  def validateCards(validateOnlyModified: Boolean): Boolean
 }
 object BootstrapCardViewBatchEditApi {
   

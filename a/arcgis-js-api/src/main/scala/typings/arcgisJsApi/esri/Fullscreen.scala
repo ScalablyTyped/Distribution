@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Fullscreen extends Widget_ {
+trait Fullscreen
+  extends StObject
+     with Widget_ {
   
   /**
     * The [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) to present in fullscreen mode.

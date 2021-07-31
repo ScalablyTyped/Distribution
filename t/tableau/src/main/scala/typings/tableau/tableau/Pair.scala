@@ -3,20 +3,18 @@ package typings.tableau.tableau
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pair extends StObject {
   
   /** The field name to which the value is applied. */
-  var fieldName: String = js.native
+  var fieldName: String
   
   /** The value formatted according to the locale and the formatting applied to the field. */
-  var formattedValue: String = js.native
+  var formattedValue: String
   
   /** Contains the raw native value for the field as a JavaScript type, which is one of String, Number, Boolean, or Date. */
-  var value: String | Double | Boolean | Date = js.native
+  var value: String | Double | Boolean | Date
 }
 object Pair {
   

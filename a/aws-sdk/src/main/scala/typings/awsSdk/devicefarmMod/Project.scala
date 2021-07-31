@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Project extends StObject {
   
   /**
     * The project's ARN.
     */
-  var arn: js.UndefOr[AmazonResourceName] = js.native
+  var arn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * When the project was created.
     */
-  var created: js.UndefOr[DateTime] = js.native
+  var created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The default number of minutes (at the project level) a test run executes before it times out. The default value is 150 minutes.
     */
-  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.native
+  var defaultJobTimeoutMinutes: js.UndefOr[JobTimeoutMinutes] = js.undefined
   
   /**
     * The project's name.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object Project {
   

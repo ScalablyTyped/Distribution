@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.DOMStorage.RemoveDOMStorageItemRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `71` extends StObject {
   
-  var paramsType: js.Array[RemoveDOMStorageItemRequest] = js.native
+  var paramsType: js.Array[RemoveDOMStorageItemRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `71` {
   

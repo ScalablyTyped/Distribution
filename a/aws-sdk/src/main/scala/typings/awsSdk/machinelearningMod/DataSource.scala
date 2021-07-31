@@ -2,83 +2,81 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /**
     *  The parameter is true if statistics need to be generated from the observation data. 
     */
-  var ComputeStatistics: js.UndefOr[typings.awsSdk.machinelearningMod.ComputeStatistics] = js.native
+  var ComputeStatistics: js.UndefOr[typings.awsSdk.machinelearningMod.ComputeStatistics] = js.undefined
   
-  var ComputeTime: js.UndefOr[LongType] = js.native
+  var ComputeTime: js.UndefOr[LongType] = js.undefined
   
   /**
     * The time that the DataSource was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.native
+  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The AWS user account from which the DataSource was created. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
     */
-  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.native
+  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.undefined
   
   /**
     * The location and name of the data in Amazon Simple Storage Service (Amazon S3) that is used by a DataSource.
     */
-  var DataLocationS3: js.UndefOr[S3Url] = js.native
+  var DataLocationS3: js.UndefOr[S3Url] = js.undefined
   
   /**
     * A JSON string that represents the splitting and rearrangement requirement used when this DataSource was created.
     */
-  var DataRearrangement: js.UndefOr[typings.awsSdk.machinelearningMod.DataRearrangement] = js.native
+  var DataRearrangement: js.UndefOr[typings.awsSdk.machinelearningMod.DataRearrangement] = js.undefined
   
   /**
     * The total number of observations contained in the data files that the DataSource references.
     */
-  var DataSizeInBytes: js.UndefOr[LongType] = js.native
+  var DataSizeInBytes: js.UndefOr[LongType] = js.undefined
   
   /**
     * The ID that is assigned to the DataSource during creation.
     */
-  var DataSourceId: js.UndefOr[EntityId] = js.native
+  var DataSourceId: js.UndefOr[EntityId] = js.undefined
   
-  var FinishedAt: js.UndefOr[EpochTime] = js.native
+  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The time of the most recent edit to the BatchPrediction. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.native
+  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * A description of the most recent details about creating the DataSource.
     */
-  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.undefined
   
   /**
     * A user-supplied name or description of the DataSource.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The number of data files referenced by the DataSource.
     */
-  var NumberOfFiles: js.UndefOr[LongType] = js.native
+  var NumberOfFiles: js.UndefOr[LongType] = js.undefined
   
-  var RDSMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RDSMetadata] = js.native
+  var RDSMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RDSMetadata] = js.undefined
   
-  var RedshiftMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftMetadata] = js.native
+  var RedshiftMetadata: js.UndefOr[typings.awsSdk.machinelearningMod.RedshiftMetadata] = js.undefined
   
-  var RoleARN: js.UndefOr[typings.awsSdk.machinelearningMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.machinelearningMod.RoleARN] = js.undefined
   
-  var StartedAt: js.UndefOr[EpochTime] = js.native
+  var StartedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The current status of the DataSource. This element can have one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to create a DataSource. INPROGRESS - The creation process is underway. FAILED - The request to create a DataSource did not run to completion. It is not usable. COMPLETED - The creation process completed successfully. DELETED - The DataSource is marked as deleted. It is not usable. 
     */
-  var Status: js.UndefOr[EntityStatus] = js.native
+  var Status: js.UndefOr[EntityStatus] = js.undefined
 }
 object DataSource {
   

@@ -3,36 +3,34 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Sweep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2TOIInput extends StObject {
   
   /**
     * Proxy A
     **/
-  var proxyA: b2DistanceProxy = js.native
+  var proxyA: b2DistanceProxy
   
   /**
     * Proxy B
     **/
-  var proxyB: b2DistanceProxy = js.native
+  var proxyB: b2DistanceProxy
   
   /**
     * Sweep A
     **/
-  var sweepA: b2Sweep = js.native
+  var sweepA: b2Sweep
   
   /**
     * Sweep B
     **/
-  var sweepB: b2Sweep = js.native
+  var sweepB: b2Sweep
   
   /**
     * Tolerance
     **/
-  var tolerance: Double = js.native
+  var tolerance: Double
 }
 object b2TOIInput {
   

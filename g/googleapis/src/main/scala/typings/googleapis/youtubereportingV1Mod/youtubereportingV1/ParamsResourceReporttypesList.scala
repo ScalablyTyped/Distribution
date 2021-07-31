@@ -6,35 +6,35 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceReporttypesList extends StandardParameters {
+trait ParamsResourceReporttypesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If set to true, also system-managed report types will be returned;
     * otherwise only the report types that can be used to create new reporting
     * jobs will be returned.
     */
-  var includeSystemManaged: js.UndefOr[Boolean] = js.native
+  var includeSystemManaged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The content owner's external ID on which behalf the user is acting on. If
     * not set, the user is acting for himself (his own channel).
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size. Server may return fewer report types than requested.
     * If unspecified, server will pick an appropriate default.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying a page of results the server should return.
@@ -42,7 +42,7 @@ trait ParamsResourceReporttypesList extends StandardParameters {
     * returned in response to the previous call to the `ListReportTypes`
     * method.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceReporttypesList {
   

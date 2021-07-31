@@ -2,15 +2,13 @@ package typings.convertLayout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait layout extends StObject {
   
-  def fromEn(s: String): String = js.native
+  def fromEn(s: String): String
   
-  def toEn(s: String): String = js.native
+  def toEn(s: String): String
 }
 object layout {
   

@@ -2,43 +2,42 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectCut
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The distance from the beginning of a line that the display of the stroke starts. The beginning of the line is determined by the direction in which the line was digitized.
     */
-  var beginCut: js.UndefOr[Double] = js.native
+  var beginCut: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance from the end of a line that the display of the stroke ends. The end of the line is determined by the direction in which the line was digitized.
     */
-  var endCut: js.UndefOr[Double] = js.native
+  var endCut: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether the effect should be applied in the opposite manner. This displays the stroke symbol only at the ends of the line and leaves the rest of the line unsymbolized.
     */
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The distance around the middle of a line that the display of the stroke is interrupted.
     */
-  var middleCut: js.UndefOr[Double] = js.native
+  var middleCut: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectCut: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut = js.native
+  var type_CIMGeometricEffectCut: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut
 }
 object CIMGeometricEffectCut {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut): CIMGeometricEffectCut = {
+  def apply(): CIMGeometricEffectCut = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectCut")
     __obj.asInstanceOf[CIMGeometricEffectCut]
   }
   

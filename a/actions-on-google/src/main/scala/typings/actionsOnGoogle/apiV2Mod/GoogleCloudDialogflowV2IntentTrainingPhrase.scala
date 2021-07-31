@@ -2,19 +2,17 @@ package typings.actionsOnGoogle.apiV2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentTrainingPhrase extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parts: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentTrainingPhrasePart]] = js.native
+  var parts: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentTrainingPhrasePart]] = js.undefined
   
-  var timesAddedCount: js.UndefOr[Double] = js.native
+  var timesAddedCount: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[GoogleCloudDialogflowV2IntentTrainingPhraseType] = js.native
+  var `type`: js.UndefOr[GoogleCloudDialogflowV2IntentTrainingPhraseType] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentTrainingPhrase {
   

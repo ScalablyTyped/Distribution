@@ -11,30 +11,28 @@ import typings.atlassianConnectJs.atlassianConnectJsStrings.PUT
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<atlassian-connect-js.AP.RequestOptions> */
-@js.native
 trait PartialRequestOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[String | js.Object] = js.native
+  var data: js.UndefOr[String | js.Object] = js.undefined
   
   var error: js.UndefOr[
     js.Function3[/* xhr */ XMLHttpRequest, /* statusText */ String, /* errorThrown */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var experimental: js.UndefOr[Boolean] = js.native
+  var experimental: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[Accept] = js.native
+  var headers: js.UndefOr[Accept] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* response */ String, Unit]] = js.undefined
   
-  var `type`: js.UndefOr[GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH] = js.native
+  var `type`: js.UndefOr[GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH] = js.undefined
 }
 object PartialRequestOptions {
   

@@ -4,14 +4,19 @@ import typings.ethersprojectBytes.mod.Bytes
 import typings.ethersprojectBytes.mod.Hexable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bignumberMod {
   
+  @JSImport("@ethersproject/bignumber/lib/bignumber", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber")
   @js.native
-  class BigNumber protected () extends Hexable {
+  class BigNumber protected ()
+    extends StObject
+       with Hexable {
     def this(constructorGuard: js.Any, hex: String) = this()
     
     val _hex: String = js.native
@@ -25,8 +30,6 @@ object bignumberMod {
     def and(other: BigNumberish): BigNumber = js.native
     
     def div(other: BigNumberish): BigNumber = js.native
-    
-    def eq(other: BigNumberish): Boolean = js.native
     
     def fromTwos(value: Double): BigNumber = js.native
     
@@ -58,6 +61,9 @@ object bignumberMod {
     
     def sub(other: BigNumberish): BigNumber = js.native
     
+    /* CompleteClass */
+    override def toHexString(): String = js.native
+    
     def toJSON(): js.Any = js.native
     def toJSON(key: String): js.Any = js.native
     
@@ -70,26 +76,25 @@ object bignumberMod {
   /* static members */
   object BigNumber {
     
-    @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber.from")
+    @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber")
     @js.native
-    def from(value: js.Any): BigNumber = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/bignumber/lib/bignumber", "BigNumber.isBigNumber")
-    @js.native
-    def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = js.native
+    @scala.inline
+    def from(value: js.Any): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+    
+    @scala.inline
+    def isBigNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumber */ Boolean]
   }
   
-  @JSImport("@ethersproject/bignumber/lib/bignumber", "_base16To36")
-  @js.native
-  def base16To36(value: String): String = js.native
+  @scala.inline
+  def base16To36(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_base16To36")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bignumber/lib/bignumber", "_base36To16")
-  @js.native
-  def base36To16(value: String): String = js.native
+  @scala.inline
+  def base36To16(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_base36To16")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bignumber/lib/bignumber", "isBigNumberish")
-  @js.native
-  def isBigNumberish(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = js.native
+  @scala.inline
+  def isBigNumberish(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigNumberish")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/bignumber.BigNumberish */ Boolean]
   
   type BigNumberish = BigNumber | Bytes | String | Double
 }

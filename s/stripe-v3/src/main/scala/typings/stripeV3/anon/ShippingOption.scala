@@ -3,15 +3,13 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.paymentRequest.UpdateDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingOption extends StObject {
   
-  var shippingOption: typings.stripeV3.stripe.paymentRequest.ShippingOption = js.native
+  var shippingOption: typings.stripeV3.stripe.paymentRequest.ShippingOption
   
-  def updateWith(options: UpdateDetails): Unit = js.native
+  def updateWith(options: UpdateDetails): Unit
 }
 object ShippingOption {
   

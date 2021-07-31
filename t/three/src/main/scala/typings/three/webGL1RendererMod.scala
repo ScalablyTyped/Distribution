@@ -5,7 +5,6 @@ import typings.three.webGLRendererMod.WebGLRenderer
 import typings.three.webGLRendererMod.WebGLRendererParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGL1RendererMod {

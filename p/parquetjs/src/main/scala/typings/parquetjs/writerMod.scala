@@ -11,7 +11,6 @@ import typings.parquetjs.rowInterfaceMod.RowInterface
 import typings.parquetjs.schemaMod.ParquetSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writerMod {
@@ -69,15 +68,16 @@ object writerMod {
   /* static members */
   object ParquetEnvelopeWriter {
     
-    @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter.openStream")
+    @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter")
     @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetEnvelopeWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter.openStream")
-    @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetEnvelopeWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetEnvelopeWriter.openStream")
-    @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetEnvelopeWriter] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetEnvelopeWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetEnvelopeWriter]]
   }
   
   @JSImport("parquetjs/lib/writer", "ParquetTransformer")
@@ -89,9 +89,9 @@ object writerMod {
     
     def _flush(callback: js.Function0[Unit]): Unit = js.native
     
-    def _transform(row: RowInterface, encoding: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def _transform(row: RowInterface, encoding: String, callback: js.Function0[Unit]): Unit = js.native
     def _transform(row: RowInterface, encoding: Null, callback: js.Function0[Unit]): Unit = js.native
+    def _transform(row: RowInterface, encoding: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     var writer: ParquetWriter = js.native
   }
@@ -137,49 +137,46 @@ object writerMod {
   /* static members */
   object ParquetWriter {
     
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openFile")
+    @JSImport("parquetjs/lib/writer", "ParquetWriter")
     @js.native
-    def openFile(schema: ParquetSchema, path: PathLike): js.Promise[ParquetWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openFile")
-    @js.native
-    def openFile(schema: ParquetSchema, path: PathLike, opts: String): js.Promise[ParquetWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openFile")
-    @js.native
-    def openFile(schema: ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openStream")
-    @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openStream")
-    @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetWriter] = js.native
-    @JSImport("parquetjs/lib/writer", "ParquetWriter.openStream")
-    @js.native
-    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = js.native
+    @scala.inline
+    def openFile(schema: ParquetSchema, path: PathLike): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    @scala.inline
+    def openFile(schema: ParquetSchema, path: PathLike, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    @scala.inline
+    def openFile(schema: ParquetSchema, path: PathLike, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openFile")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: String): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
+    @scala.inline
+    def openStream(schema: ParquetSchema, outputStream: WriteStream, opts: ParquetWriterOpts): js.Promise[ParquetWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("openStream")(schema.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParquetWriter]]
   }
   
-  @js.native
   trait ParquetWriterOpts extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var bitWidth: js.UndefOr[Double] = js.native
+    var bitWidth: js.UndefOr[Double] = js.undefined
     
-    var disableEnvelope: js.UndefOr[Boolean] = js.native
+    var disableEnvelope: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var rowGroupSize: js.UndefOr[Double] = js.native
+    var rowGroupSize: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var useDataPageV2: js.UndefOr[Boolean] = js.native
+    var useDataPageV2: js.UndefOr[Boolean] = js.undefined
   }
   object ParquetWriterOpts {
     

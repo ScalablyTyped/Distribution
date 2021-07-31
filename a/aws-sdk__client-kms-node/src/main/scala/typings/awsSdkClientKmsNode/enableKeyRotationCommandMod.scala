@@ -7,16 +7,18 @@ import typings.awsSdkClientKmsNode.typesEnableKeyRotationInputMod.EnableKeyRotat
 import typings.awsSdkClientKmsNode.typesEnableKeyRotationOutputMod.EnableKeyRotationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enableKeyRotationCommandMod {
   
   @JSImport("@aws-sdk/client-kms-node/commands/EnableKeyRotationCommand", "EnableKeyRotationCommand")
   @js.native
-  class EnableKeyRotationCommand protected () extends Command[
+  class EnableKeyRotationCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           EnableKeyRotationInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object enableKeyRotationCommandMod {
         ] {
     def this(input: EnableKeyRotationInput) = this()
     
+    /* CompleteClass */
+    override val input: EnableKeyRotationInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: KMSResolvedConfiguration
+    ): Handler[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: KMSResolvedConfiguration,
+      options: js.Any
     ): Handler[EnableKeyRotationInput, EnableKeyRotationOutput] = js.native
   }
 }

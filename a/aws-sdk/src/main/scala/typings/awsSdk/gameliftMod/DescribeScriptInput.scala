@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScriptInput extends StObject {
   
   /**
     * A unique identifier for a Realtime script to retrieve properties for. You can use either the script ID or ARN value.
     */
-  var ScriptId: ScriptIdOrArn = js.native
+  var ScriptId: ScriptIdOrArn
 }
 object DescribeScriptInput {
   

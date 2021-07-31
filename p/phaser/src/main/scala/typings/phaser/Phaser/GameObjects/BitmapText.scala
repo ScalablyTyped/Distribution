@@ -16,7 +16,6 @@ import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapTextSize
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait BitmapText
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth
@@ -147,9 +147,9 @@ trait BitmapText
     * @param align The alignment of the text in a multi-line BitmapText object. If not specified the current alignment will be used. Default 0.
     */
   def setFont(font: String): this.type = js.native
-  def setFont(font: String, size: js.UndefOr[scala.Nothing], align: integer): this.type = js.native
   def setFont(font: String, size: Double): this.type = js.native
   def setFont(font: String, size: Double, align: integer): this.type = js.native
+  def setFont(font: String, size: Unit, align: integer): this.type = js.native
   
   /**
     * Set the font size of this Bitmap Text.

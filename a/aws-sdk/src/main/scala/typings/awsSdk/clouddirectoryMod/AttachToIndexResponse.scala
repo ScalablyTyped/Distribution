@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachToIndexResponse extends StObject {
   
   /**
     * The ObjectIdentifier of the object that was attached to the index.
     */
-  var AttachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.native
+  var AttachedObjectIdentifier: js.UndefOr[ObjectIdentifier] = js.undefined
 }
 object AttachToIndexResponse {
   

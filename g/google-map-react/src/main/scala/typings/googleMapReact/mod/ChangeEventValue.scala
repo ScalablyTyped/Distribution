@@ -2,21 +2,19 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEventValue extends StObject {
   
-  var bounds: Bounds = js.native
+  var bounds: Bounds
   
-  var center: Coords = js.native
+  var center: Coords
   
-  var marginBounds: Bounds = js.native
+  var marginBounds: Bounds
   
-  var size: Size = js.native
+  var size: Size
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object ChangeEventValue {
   

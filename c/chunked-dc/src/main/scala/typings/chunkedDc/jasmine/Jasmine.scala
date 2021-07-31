@@ -2,17 +2,15 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jasmine extends StObject {
   
-  var Spec: typings.chunkedDc.jasmine.Spec = js.native
+  var Spec: typings.chunkedDc.jasmine.Spec
   
-  var clock: Clock = js.native
+  var clock: Clock
   
-  var util: Util = js.native
+  var util: Util
 }
 object Jasmine {
   

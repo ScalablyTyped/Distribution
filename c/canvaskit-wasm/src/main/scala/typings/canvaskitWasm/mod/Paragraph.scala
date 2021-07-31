@@ -2,35 +2,35 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Paragraph extends EmbindObject[Paragraph] {
+trait Paragraph
+  extends StObject
+     with EmbindObject[Paragraph] {
   
-  def didExceedMaxLines(): Boolean = js.native
+  def didExceedMaxLines(): Boolean
   
-  def getAlphabeticBaseline(): Double = js.native
+  def getAlphabeticBaseline(): Double
   
   /**
     * Returns the index of the glyph that corresponds to the provided coordinate,
     * with the top left corner as the origin, and +y direction as down.
     */
-  def getGlyphPositionAtCoordinate(dx: Double, dy: Double): PositionWithAffinity = js.native
+  def getGlyphPositionAtCoordinate(dx: Double, dy: Double): PositionWithAffinity
   
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   
-  def getIdeographicBaseline(): Double = js.native
+  def getIdeographicBaseline(): Double
   
-  def getLongestLine(): Double = js.native
+  def getLongestLine(): Double
   
-  def getMaxIntrinsicWidth(): Double = js.native
+  def getMaxIntrinsicWidth(): Double
   
-  def getMaxWidth(): Double = js.native
+  def getMaxWidth(): Double
   
-  def getMinIntrinsicWidth(): Double = js.native
+  def getMinIntrinsicWidth(): Double
   
-  def getRectsForPlaceholders(): FlattenedRectangleArray = js.native
+  def getRectsForPlaceholders(): FlattenedRectangleArray
   
   /**
     * Returns bounding boxes that enclose all text in the range of glpyh indexes [start, end).
@@ -39,19 +39,19 @@ trait Paragraph extends EmbindObject[Paragraph] {
     * @param hStyle
     * @param wStyle
     */
-  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): FlattenedRectangleArray = js.native
+  def getRectsForRange(start: Double, end: Double, hStyle: RectHeightStyle, wStyle: RectWidthStyle): FlattenedRectangleArray
   
   /**
     * Finds the first and last glyphs that define a word containing the glyph at index offset.
     * @param offset
     */
-  def getWordBoundary(offset: Double): URange = js.native
+  def getWordBoundary(offset: Double): URange
   
   /**
     * Lays out the text in the paragraph so it is wrapped to the given width.
     * @param width
     */
-  def layout(width: Double): Unit = js.native
+  def layout(width: Double): Unit
 }
 object Paragraph {
   

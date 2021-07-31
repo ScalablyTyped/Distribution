@@ -2,23 +2,21 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayMode extends StObject {
   
-  var displayMode: js.UndefOr[String] = js.native
+  var displayMode: js.UndefOr[String] = js.undefined
   
   // Example: '#0000ff',
-  var goToThumbnail: js.UndefOr[Boolean] = js.native
+  var goToThumbnail: js.UndefOr[Boolean] = js.undefined
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   // Example: 'icon-tags',
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object DisplayMode {
   

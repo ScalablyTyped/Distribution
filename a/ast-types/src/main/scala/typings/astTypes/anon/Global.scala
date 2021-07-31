@@ -9,23 +9,21 @@ import typings.astTypes.kindsMod.TSModuleDeclarationKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Global extends StObject {
   
-  var body: js.UndefOr[TSModuleBlockKind | TSModuleDeclarationKind | Null] = js.native
+  var body: js.UndefOr[TSModuleBlockKind | TSModuleDeclarationKind | Null] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declare: js.UndefOr[Boolean] = js.native
+  var declare: js.UndefOr[Boolean] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var id: StringLiteralKind | IdentifierKind | TSQualifiedNameKind = js.native
+  var id: StringLiteralKind | IdentifierKind | TSQualifiedNameKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object Global {
   

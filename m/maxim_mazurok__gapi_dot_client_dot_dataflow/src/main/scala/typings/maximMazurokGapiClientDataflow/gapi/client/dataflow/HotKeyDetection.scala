@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HotKeyDetection extends StObject {
   
   /** The age of the hot key measured from when it was first detected. */
-  var hotKeyAge: js.UndefOr[String] = js.native
+  var hotKeyAge: js.UndefOr[String] = js.undefined
   
   /** System-defined name of the step containing this hot key. Unique across the workflow. */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /** User-provided name of the step that contains this hot key. */
-  var userStepName: js.UndefOr[String] = js.native
+  var userStepName: js.UndefOr[String] = js.undefined
 }
 object HotKeyDetection {
   

@@ -2,19 +2,17 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var isRefined: Boolean = js.native
+  var isRefined: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var value: String = js.native
+  var value: String
 }
 object Count {
   

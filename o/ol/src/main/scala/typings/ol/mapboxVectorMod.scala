@@ -8,7 +8,6 @@ import typings.ol.vectorTileRenderTypeMod.VectorTileRenderType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapboxVectorMod {
@@ -29,15 +28,16 @@ object mapboxVectorMod {
   object SourceType extends StObject {
     
     @js.native
-    sealed trait VECTOR extends SourceType
+    sealed trait VECTOR
+      extends StObject
+         with SourceType
   }
   
-  @js.native
   trait LayerObject extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var source: String = js.native
+    var source: String
   }
   object LayerObject {
     
@@ -78,52 +78,51 @@ object mapboxVectorMod {
     /* protected */ def onStyleLoad(style: StyleObject): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var declutter: js.UndefOr[Boolean] = js.native
+    var declutter: js.UndefOr[Boolean] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var layers: js.UndefOr[js.Array[String]] = js.native
+    var layers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Double] = js.native
+    var preload: js.UndefOr[Double] = js.undefined
     
-    var renderBuffer: js.UndefOr[Double] = js.native
+    var renderBuffer: js.UndefOr[Double] = js.undefined
     
-    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.native
+    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.undefined
     
-    var renderOrder: js.UndefOr[OrderFunction] = js.native
+    var renderOrder: js.UndefOr[OrderFunction] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var styleUrl: String = js.native
+    var styleUrl: String
     
-    var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+    var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
-    var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+    var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
     
-    var useInterimTilesOnError: js.UndefOr[Boolean] = js.native
+    var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -267,12 +266,11 @@ object mapboxVectorMod {
     }
   }
   
-  @js.native
   trait SourceObject extends StObject {
     
-    var `type`: SourceType = js.native
+    var `type`: SourceType
     
-    var url: String = js.native
+    var url: String
   }
   object SourceObject {
     
@@ -294,16 +292,15 @@ object mapboxVectorMod {
     }
   }
   
-  @js.native
   trait StyleObject extends StObject {
     
-    var glyphs: String = js.native
+    var glyphs: String
     
-    var layers: js.Array[LayerObject] = js.native
+    var layers: js.Array[LayerObject]
     
-    var sources: StringDictionary[SourceObject] = js.native
+    var sources: StringDictionary[SourceObject]
     
-    var sprite: String = js.native
+    var sprite: String
   }
   object StyleObject {
     

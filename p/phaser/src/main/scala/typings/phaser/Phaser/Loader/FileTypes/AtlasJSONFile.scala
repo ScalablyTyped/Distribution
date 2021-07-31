@@ -6,7 +6,6 @@ import typings.phaser.Phaser.Loader.MultiFile
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,13 +17,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?source=photonstorm
   */
-@js.native
-trait AtlasJSONFile extends MultiFile {
+trait AtlasJSONFile
+  extends StObject
+     with MultiFile {
   
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
 }
 object AtlasJSONFile {
   

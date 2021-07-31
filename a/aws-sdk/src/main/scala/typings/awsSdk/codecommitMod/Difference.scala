@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Difference extends StObject {
   
   /**
     * Information about an afterBlob data type object, including the ID, the file mode permission code, and the path.
     */
-  var afterBlob: js.UndefOr[BlobMetadata] = js.native
+  var afterBlob: js.UndefOr[BlobMetadata] = js.undefined
   
   /**
     * Information about a beforeBlob data type object, including the ID, the file mode permission code, and the path.
     */
-  var beforeBlob: js.UndefOr[BlobMetadata] = js.native
+  var beforeBlob: js.UndefOr[BlobMetadata] = js.undefined
   
   /**
     * Whether the change type of the difference is an addition (A), deletion (D), or modification (M).
     */
-  var changeType: js.UndefOr[ChangeTypeEnum] = js.native
+  var changeType: js.UndefOr[ChangeTypeEnum] = js.undefined
 }
 object Difference {
   

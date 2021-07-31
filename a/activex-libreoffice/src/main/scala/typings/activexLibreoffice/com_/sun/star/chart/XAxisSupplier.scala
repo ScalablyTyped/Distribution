@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Easier access to the different axes within a chart.
   * @since OOo 3.4
   */
-@js.native
-trait XAxisSupplier extends XInterface {
+trait XAxisSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * @param nDimensionIndex Parameter nDimensionIndex says whether it is a x, y or z-axis (0 for x).
     * @returns the primary axis of the specified dimension. The returned object supports service {@link ChartAxis} .
     */
-  def getAxis(nDimensionIndex: Double): XAxis = js.native
+  def getAxis(nDimensionIndex: Double): XAxis
   
   /**
     * @param nDimensionIndex Parameter nDimensionIndex says whether it is a x, y or z-axis (0 for x).
     * @returns the secondary axis of the specified dimension. The returned object supports service {@link ChartAxis} .
     */
-  def getSecondaryAxis(nDimensionIndex: Double): XAxis = js.native
+  def getSecondaryAxis(nDimensionIndex: Double): XAxis
 }
 object XAxisSupplier {
   

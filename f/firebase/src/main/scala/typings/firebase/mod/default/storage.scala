@@ -4,7 +4,6 @@ import typings.firebase.mod.firebase.app.App
 import typings.firebase.mod.firebase.storage.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,12 +38,14 @@ object storage {
     * @param app The app to create a storage service for.
     *     If not passed, uses the default app.
     */
+  @scala.inline
+  def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
+  @scala.inline
+  def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  
   @JSImport("firebase", "default.storage")
   @js.native
-  def apply(): Storage = js.native
-  @JSImport("firebase", "default.storage")
-  @js.native
-  def apply(app: App): Storage = js.native
+  val ^ : js.Any = js.native
   
   object StringFormat {
     

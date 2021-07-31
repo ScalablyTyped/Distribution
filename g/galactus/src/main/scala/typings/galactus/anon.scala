@@ -5,15 +5,13 @@ import typings.floraColossus.walkerMod.Module
 import typings.galactus.destroyerOfModulesMod.ShouldKeepModuleTest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RelativePaths extends StObject {
     
-    var relativePaths: Boolean = js.native
+    var relativePaths: Boolean
   }
   object RelativePaths {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait RootDirectory extends StObject {
     
-    var rootDirectory: js.UndefOr[String] = js.native
+    var rootDirectory: js.UndefOr[String] = js.undefined
     
-    var shouldKeepModuleTest: js.UndefOr[ShouldKeepModuleTest] = js.native
+    var shouldKeepModuleTest: js.UndefOr[ShouldKeepModuleTest] = js.undefined
     
-    var walker: js.UndefOr[Walker] = js.native
+    var walker: js.UndefOr[Walker] = js.undefined
   }
   object RootDirectory {
     

@@ -2,15 +2,13 @@ package typings.rcTooltip
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait KeepParent extends StObject {
     
-    var keepParent: js.UndefOr[Boolean] = js.native
+    var keepParent: js.UndefOr[Boolean] = js.undefined
   }
   object KeepParent {
     

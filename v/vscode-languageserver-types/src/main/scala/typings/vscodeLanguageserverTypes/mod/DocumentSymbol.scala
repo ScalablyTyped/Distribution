@@ -2,50 +2,48 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSymbol extends StObject {
   
   /**
     * Children of this symbol, e.g. properties of a class.
     */
-  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.native
+  var children: js.UndefOr[js.Array[DocumentSymbol]] = js.undefined
   
   /**
     * Indicates if this symbol is deprecated.
     */
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * More detail for this symbol, e.g the signature of a function.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of this symbol.
     */
-  var kind: SymbolKind = js.native
+  var kind: SymbolKind
   
   /**
     * The name of this symbol. Will be displayed in the user interface and therefore must not be
     * an empty string or a string only consisting of white spaces.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The range enclosing this symbol not including leading/trailing whitespace but everything else
     * like comments. This information is typically used to determine if the the clients cursor is
     * inside the symbol to reveal in the symbol in the UI.
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The range that should be selected and revealed when this symbol is being picked, e.g the name of a function.
     * Must be contained by the the `range`.
     */
-  var selectionRange: Range = js.native
+  var selectionRange: Range
 }
 object DocumentSymbol {
   
@@ -55,25 +53,10 @@ object DocumentSymbol {
     __obj.asInstanceOf[DocumentSymbol]
   }
   
-  @JSImport("vscode-languageserver-types", "DocumentSymbol.create")
+  @JSImport("vscode-languageserver-types", "DocumentSymbol")
   @js.native
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range
-  ): DocumentSymbol = js.native
-  @JSImport("vscode-languageserver-types", "DocumentSymbol.create")
-  @js.native
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: SymbolKind,
-    range: Range,
-    selectionRange: Range,
-    children: js.Array[DocumentSymbol]
-  ): DocumentSymbol = js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new symbol information literal.
     *
@@ -84,11 +67,9 @@ object DocumentSymbol {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
-  @JSImport("vscode-languageserver-types", "DocumentSymbol.create")
-  @js.native
-  def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = js.native
-  @JSImport("vscode-languageserver-types", "DocumentSymbol.create")
-  @js.native
+  @scala.inline
+  def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
+  @scala.inline
   def create(
     name: String,
     detail: String,
@@ -96,14 +77,24 @@ object DocumentSymbol {
     range: Range,
     selectionRange: Range,
     children: js.Array[DocumentSymbol]
-  ): DocumentSymbol = js.native
+  ): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
+  @scala.inline
+  def create(name: String, detail: Unit, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
+  @scala.inline
+  def create(
+    name: String,
+    detail: Unit,
+    kind: SymbolKind,
+    range: Range,
+    selectionRange: Range,
+    children: js.Array[DocumentSymbol]
+  ): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
   
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
-  @JSImport("vscode-languageserver-types", "DocumentSymbol.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
   
   @scala.inline
   implicit class DocumentSymbolMutableBuilder[Self <: DocumentSymbol] (val x: Self) extends AnyVal {

@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,56 +12,92 @@ sealed trait PersonalSiteInstantiationState extends StObject
 object PersonalSiteInstantiationState extends StObject {
   
   @js.native
-  sealed trait created extends PersonalSiteInstantiationState
+  sealed trait created
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait deleted extends PersonalSiteInstantiationState
+  sealed trait deleted
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait enqueued extends PersonalSiteInstantiationState
+  sealed trait enqueued
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorGeneralFailure extends PersonalSiteInstantiationState
+  sealed trait errorGeneralFailure
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorLanguageNotInstalled extends PersonalSiteInstantiationState
+  sealed trait errorLanguageNotInstalled
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorManagedPathDoesNotExist extends PersonalSiteInstantiationState
+  sealed trait errorManagedPathDoesNotExist
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorPartialCreate extends PersonalSiteInstantiationState
+  sealed trait errorPartialCreate
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorPersonalSiteAlreadyExists extends PersonalSiteInstantiationState
+  sealed trait errorPersonalSiteAlreadyExists
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorRootSiteNotPresent extends PersonalSiteInstantiationState
+  sealed trait errorRootSiteNotPresent
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait errorSelfServiceSiteCreateCallFailed extends PersonalSiteInstantiationState
+  sealed trait errorSelfServiceSiteCreateCallFailed
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsEmptyHostUrl extends PersonalSiteInstantiationState
+  sealed trait permissionsEmptyHostUrl
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsGeneralFailure extends PersonalSiteInstantiationState
+  sealed trait permissionsGeneralFailure
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsHostFailedToInitializePersonalSiteContext extends PersonalSiteInstantiationState
+  sealed trait permissionsHostFailedToInitializePersonalSiteContext
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsNoMySitesInPeopleLight extends PersonalSiteInstantiationState
+  sealed trait permissionsNoMySitesInPeopleLight
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsSelfServiceSiteCreationDisabled extends PersonalSiteInstantiationState
+  sealed trait permissionsSelfServiceSiteCreationDisabled
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsUPANotGranted extends PersonalSiteInstantiationState
+  sealed trait permissionsUPANotGranted
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait permissionsUserNotLicensed extends PersonalSiteInstantiationState
+  sealed trait permissionsUserNotLicensed
+    extends StObject
+       with PersonalSiteInstantiationState
   
   @js.native
-  sealed trait uninitialized extends PersonalSiteInstantiationState
+  sealed trait uninitialized
+    extends StObject
+       with PersonalSiteInstantiationState
 }

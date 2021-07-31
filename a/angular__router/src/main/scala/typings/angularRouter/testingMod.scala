@@ -14,10 +14,13 @@ import typings.angularRouter.mod.UrlHandlingStrategy
 import typings.angularRouter.mod.UrlSerializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingMod {
+  
+  @JSImport("@angular/router/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/router/testing", "RouterTestingModule")
   @js.native
@@ -26,12 +29,14 @@ object testingMod {
   /* static members */
   object RouterTestingModule {
     
-    @JSImport("@angular/router/testing", "RouterTestingModule.withRoutes")
+    @JSImport("@angular/router/testing", "RouterTestingModule")
     @js.native
-    def withRoutes(routes: Routes): ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule] = js.native
-    @JSImport("@angular/router/testing", "RouterTestingModule.withRoutes")
-    @js.native
-    def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def withRoutes(routes: Routes): ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule]]
+    @scala.inline
+    def withRoutes(routes: Routes, config: ExtraOptions): ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("withRoutes")(routes.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[typings.angularRouter.testingTestingMod.RouterTestingModule]]
   }
   
   @JSImport("@angular/router/testing", "SpyNgModuleFactoryLoader")
@@ -41,8 +46,7 @@ object testingMod {
     def this(compiler: Compiler) = this()
   }
   
-  @JSImport("@angular/router/testing", "setupTestingRouter")
-  @js.native
+  @scala.inline
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
@@ -51,9 +55,8 @@ object testingMod {
     compiler: Compiler,
     injector: Injector,
     routes: js.Array[js.Array[Route]]
-  ): Router = js.native
-  @JSImport("@angular/router/testing", "setupTestingRouter")
-  @js.native
+  ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
@@ -62,11 +65,10 @@ object testingMod {
     compiler: Compiler,
     injector: Injector,
     routes: js.Array[js.Array[Route]],
-    opts: js.UndefOr[scala.Nothing],
+    opts: Unit,
     urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
-  @JSImport("@angular/router/testing", "setupTestingRouter")
-  @js.native
+  ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
@@ -76,9 +78,8 @@ object testingMod {
     injector: Injector,
     routes: js.Array[js.Array[Route]],
     opts: ExtraOptions
-  ): Router = js.native
-  @JSImport("@angular/router/testing", "setupTestingRouter")
-  @js.native
+  ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
@@ -89,9 +90,8 @@ object testingMod {
     routes: js.Array[js.Array[Route]],
     opts: ExtraOptions,
     urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
-  @JSImport("@angular/router/testing", "setupTestingRouter")
-  @js.native
+  ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[Router]
+  @scala.inline
   def setupTestingRouter(
     urlSerializer: UrlSerializer,
     contexts: ChildrenOutletContexts,
@@ -101,5 +101,5 @@ object testingMod {
     injector: Injector,
     routes: js.Array[js.Array[Route]],
     urlHandlingStrategy: UrlHandlingStrategy
-  ): Router = js.native
+  ): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestingRouter")(urlSerializer.asInstanceOf[js.Any], contexts.asInstanceOf[js.Any], location.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], compiler.asInstanceOf[js.Any], injector.asInstanceOf[js.Any], routes.asInstanceOf[js.Any], urlHandlingStrategy.asInstanceOf[js.Any])).asInstanceOf[Router]
 }

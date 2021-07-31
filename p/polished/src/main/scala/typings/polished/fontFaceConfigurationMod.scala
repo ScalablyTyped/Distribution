@@ -2,39 +2,37 @@ package typings.polished
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontFaceConfigurationMod {
   
-  @js.native
   trait FontFaceConfiguration extends StObject {
     
-    var fileFormats: js.UndefOr[js.Array[String]] = js.native
+    var fileFormats: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fontDisplay: js.UndefOr[String] = js.native
+    var fontDisplay: js.UndefOr[String] = js.undefined
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontFeatureSettings: js.UndefOr[String] = js.native
+    var fontFeatureSettings: js.UndefOr[String] = js.undefined
     
-    var fontFilePath: js.UndefOr[String] = js.native
+    var fontFilePath: js.UndefOr[String] = js.undefined
     
-    var fontStretch: js.UndefOr[String] = js.native
+    var fontStretch: js.UndefOr[String] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontVariant: js.UndefOr[String] = js.native
+    var fontVariant: js.UndefOr[String] = js.undefined
     
-    var fontVariationSettings: js.UndefOr[String] = js.native
+    var fontVariationSettings: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
-    var formatHint: js.UndefOr[Boolean] = js.native
+    var formatHint: js.UndefOr[Boolean] = js.undefined
     
-    var localFonts: js.UndefOr[js.Array[String]] = js.native
+    var localFonts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var unicodeRange: js.UndefOr[String] = js.native
+    var unicodeRange: js.UndefOr[String] = js.undefined
   }
   object FontFaceConfiguration {
     

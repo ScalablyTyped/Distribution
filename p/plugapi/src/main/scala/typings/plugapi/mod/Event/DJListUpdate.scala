@@ -3,15 +3,13 @@ package typings.plugapi.mod.Event
 import typings.plugapi.mod.User.DJ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DJListUpdate extends StObject {
   
-  var djs: js.Array[DJ] = js.native
+  var djs: js.Array[DJ]
   
-  var remove: String = js.native
+  var remove: String
 }
 object DJListUpdate {
   

@@ -5,16 +5,14 @@ import typings.leaflet.mod.PathOptions
 import typings.leafletPm.mod.PM.Edit.Line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait LayerGroup extends StObject {
     
-    var pm: typings.leafletPm.mod.PM.Edit.LayerGroup = js.native
+    var pm: typings.leafletPm.mod.PM.Edit.LayerGroup
   }
   object LayerGroup {
     
@@ -32,10 +30,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Map extends StObject {
     
-    var pm: typings.leafletPm.mod.PM.Map = js.native
+    var pm: typings.leafletPm.mod.PM.Map
   }
   object Map {
     
@@ -53,10 +50,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Marker extends StObject {
     
-    var pm: typings.leafletPm.mod.PM.Edit.Marker = js.native
+    var pm: typings.leafletPm.mod.PM.Edit.Marker
   }
   object Marker {
     
@@ -76,10 +72,9 @@ object mod {
   
   object PM {
     
-    @js.native
     trait Draw extends StObject {
       
-      def getShapes(): js.Array[String] = js.native
+      def getShapes(): js.Array[String]
     }
     object Draw {
       
@@ -97,14 +92,13 @@ object mod {
       }
     }
     
-    @js.native
     trait DrawOptions extends StObject {
       
-      var hintlineStyle: js.UndefOr[PathOptions] = js.native
+      var hintlineStyle: js.UndefOr[PathOptions] = js.undefined
       
-      var pathOptions: js.UndefOr[PathOptions] = js.native
+      var pathOptions: js.UndefOr[PathOptions] = js.undefined
       
-      var templineStyle: js.UndefOr[PathOptions] = js.native
+      var templineStyle: js.UndefOr[PathOptions] = js.undefined
     }
     object DrawOptions {
       
@@ -189,14 +183,13 @@ object mod {
       }
     }
     
-    @js.native
     trait EditOptions extends StObject {
       
-      var draggable: js.UndefOr[Boolean] = js.native
+      var draggable: js.UndefOr[Boolean] = js.undefined
       
-      var snapDistance: js.UndefOr[Double] = js.native
+      var snapDistance: js.UndefOr[Double] = js.undefined
       
-      var snappable: js.UndefOr[Boolean] = js.native
+      var snappable: js.UndefOr[Boolean] = js.undefined
     }
     object EditOptions {
       
@@ -252,21 +245,20 @@ object mod {
       def toggleRemoval(enabled: Boolean): Unit = js.native
     }
     
-    @js.native
     trait ToolbarOptions extends StObject {
       
-      var deleteLayer: js.UndefOr[Boolean] = js.native
+      var deleteLayer: js.UndefOr[Boolean] = js.undefined
       
       // topleft | topright | bottomleft | bottomright
-      var drawMarker: js.UndefOr[Boolean] = js.native
+      var drawMarker: js.UndefOr[Boolean] = js.undefined
       
-      var drawPolygon: js.UndefOr[Boolean] = js.native
+      var drawPolygon: js.UndefOr[Boolean] = js.undefined
       
-      var drawPolyline: js.UndefOr[Boolean] = js.native
+      var drawPolyline: js.UndefOr[Boolean] = js.undefined
       
-      var editPolygon: js.UndefOr[Boolean] = js.native
+      var editPolygon: js.UndefOr[Boolean] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
     }
     object ToolbarOptions {
       
@@ -318,10 +310,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Polygon extends StObject {
     
-    var pm: Line = js.native
+    var pm: Line
   }
   object Polygon {
     
@@ -339,10 +330,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Polyline extends StObject {
     
-    var pm: Line = js.native
+    var pm: Line
   }
   object Polyline {
     

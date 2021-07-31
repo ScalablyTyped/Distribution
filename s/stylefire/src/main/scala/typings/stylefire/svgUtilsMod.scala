@@ -5,22 +5,21 @@ import typings.std.SVGPathElement
 import typings.stylefire.svgTypesMod.Dimensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgUtilsMod {
   
-  @JSImport("stylefire/lib/svg/utils", "getDimensions")
+  @JSImport("stylefire/lib/svg/utils", JSImport.Namespace)
   @js.native
-  def getDimensions(element: SVGElement): Dimensions = js.native
-  @JSImport("stylefire/lib/svg/utils", "getDimensions")
-  @js.native
-  def getDimensions(element: SVGPathElement): Dimensions = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("stylefire/lib/svg/utils", "getSVGElementDimensions")
-  @js.native
-  def getSVGElementDimensions(element: SVGElement): Dimensions = js.native
-  @JSImport("stylefire/lib/svg/utils", "getSVGElementDimensions")
-  @js.native
-  def getSVGElementDimensions(element: SVGPathElement): Dimensions = js.native
+  @scala.inline
+  def getDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  @scala.inline
+  def getDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  
+  @scala.inline
+  def getSVGElementDimensions(element: SVGElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
+  @scala.inline
+  def getSVGElementDimensions(element: SVGPathElement): Dimensions = ^.asInstanceOf[js.Dynamic].applyDynamic("getSVGElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Dimensions]
 }

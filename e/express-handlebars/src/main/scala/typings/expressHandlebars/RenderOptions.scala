@@ -2,19 +2,17 @@ package typings.expressHandlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
-  var helpers: js.UndefOr[js.Any] = js.native
+  var helpers: js.UndefOr[js.Any] = js.undefined
   
-  var partials: js.UndefOr[js.Any] = js.native
+  var partials: js.UndefOr[js.Any] = js.undefined
 }
 object RenderOptions {
   

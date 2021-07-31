@@ -2,13 +2,13 @@ package typings.esquery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubjectSelectorAtom extends Atom {
+trait SubjectSelectorAtom
+  extends StObject
+     with Atom {
   
-  var subject: js.UndefOr[Boolean] = js.native
+  var subject: js.UndefOr[Boolean] = js.undefined
 }
 object SubjectSelectorAtom {
   

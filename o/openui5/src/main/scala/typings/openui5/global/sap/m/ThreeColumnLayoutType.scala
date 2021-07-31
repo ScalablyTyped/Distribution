@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ThreeColumnLayoutType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ThreeColumnLayoutType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ThreeColumnLayoutType & Double] = js.native
   
-  /* 0 */ val EndColumnEmphasized: typings.openui5.sap.m.ThreeColumnLayoutType.EndColumnEmphasized with Double = js.native
+  /* 0 */ val EndColumnEmphasized: typings.openui5.sap.m.ThreeColumnLayoutType.EndColumnEmphasized & Double = js.native
   
-  /* 1 */ val MidColumnEmphasized: typings.openui5.sap.m.ThreeColumnLayoutType.MidColumnEmphasized with Double = js.native
+  /* 1 */ val MidColumnEmphasized: typings.openui5.sap.m.ThreeColumnLayoutType.MidColumnEmphasized & Double = js.native
 }

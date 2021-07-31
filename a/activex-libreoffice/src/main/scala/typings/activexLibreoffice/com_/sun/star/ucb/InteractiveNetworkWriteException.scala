@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A network error specifying a write failure. */
-@js.native
-trait InteractiveNetworkWriteException extends ClassifiedInteractionRequest {
+trait InteractiveNetworkWriteException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** Any diagnostic message about the failure (which will typically be an English phrase or sentence). */
-  var Diagnostic: String = js.native
+  var Diagnostic: String
 }
 object InteractiveNetworkWriteException {
   

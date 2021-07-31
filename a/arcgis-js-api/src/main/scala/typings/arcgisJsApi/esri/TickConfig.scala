@@ -13,46 +13,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TickConfig extends Object {
+trait TickConfig
+  extends StObject
+     with Object {
   
   /**
     * Callback for formatting tick labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
   
   /**
     * Indicates whether to render labels for the ticks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var labelsVisible: js.UndefOr[Boolean] = js.native
+  var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The mode or method of positioning ticks along the slider track.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var mode: count | percent | position = js.native
+  var mode: count | percent | position
   
   /**
     * Callback that fires for each tick.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var tickCreatedFunction: js.UndefOr[TickCreatedFunction] = js.native
+  var tickCreatedFunction: js.UndefOr[TickCreatedFunction] = js.undefined
   
   /**
     * Indicates where ticks will be rendered below the track.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#TickConfig)
     */
-  var values: Double | js.Array[Double] = js.native
+  var values: Double | js.Array[Double]
 }
 object TickConfig {
   

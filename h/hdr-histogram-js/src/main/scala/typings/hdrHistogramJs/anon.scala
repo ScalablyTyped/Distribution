@@ -3,15 +3,13 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.HistogramConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HistogramConstr extends StObject {
     
-    var histogramConstr: HistogramConstructor = js.native
+    var histogramConstr: HistogramConstructor
   }
   object HistogramConstr {
     

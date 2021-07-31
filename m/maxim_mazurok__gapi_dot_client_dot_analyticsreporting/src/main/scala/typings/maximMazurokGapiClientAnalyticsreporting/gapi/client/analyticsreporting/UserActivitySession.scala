@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserActivitySession extends StObject {
   
   /** Represents a detailed view into each of the activity in this session. */
-  var activities: js.UndefOr[js.Array[Activity]] = js.native
+  var activities: js.UndefOr[js.Array[Activity]] = js.undefined
   
   /**
     * The data source of a hit. By default, hits sent from analytics.js are reported as "web" and hits sent from the mobile SDKs are reported as "app". These values can be overridden in
     * the Measurement Protocol.
     */
-  var dataSource: js.UndefOr[String] = js.native
+  var dataSource: js.UndefOr[String] = js.undefined
   
   /** The type of device used: "mobile", "tablet" etc. */
-  var deviceCategory: js.UndefOr[String] = js.native
+  var deviceCategory: js.UndefOr[String] = js.undefined
   
   /** Platform on which the activity happened: "android", "ios" etc. */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /** Date of this session in ISO-8601 format. */
-  var sessionDate: js.UndefOr[String] = js.native
+  var sessionDate: js.UndefOr[String] = js.undefined
   
   /** Unique ID of the session. */
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
 }
 object UserActivitySession {
   

@@ -6,7 +6,6 @@ import typings.siesta.Siesta.Test.IFunction
 import typings.siesta.Siesta.Test.IMore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ITest
-  extends IBDD
+  extends StObject
+     with IBDD
      with IDate
      with IFunction
      with IMore {
@@ -22,31 +22,13 @@ trait ITest
   def beginAsync(time: Double, errback: js.Function): js.Any = js.native
   
   def compareObjects(obj1: js.Any, obj2: js.Any): Boolean = js.native
-  def compareObjects(
-    obj1: js.Any,
-    obj2: js.Any,
-    strict: js.UndefOr[scala.Nothing],
-    onlyPrimitives: js.UndefOr[scala.Nothing],
-    asObjects: Boolean
-  ): Boolean = js.native
-  def compareObjects(obj1: js.Any, obj2: js.Any, strict: js.UndefOr[scala.Nothing], onlyPrimitives: Boolean): Boolean = js.native
-  def compareObjects(
-    obj1: js.Any,
-    obj2: js.Any,
-    strict: js.UndefOr[scala.Nothing],
-    onlyPrimitives: Boolean,
-    asObjects: Boolean
-  ): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean): Boolean = js.native
-  def compareObjects(
-    obj1: js.Any,
-    obj2: js.Any,
-    strict: Boolean,
-    onlyPrimitives: js.UndefOr[scala.Nothing],
-    asObjects: Boolean
-  ): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean, onlyPrimitives: Boolean): Boolean = js.native
   def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean, onlyPrimitives: Boolean, asObjects: Boolean): Boolean = js.native
+  def compareObjects(obj1: js.Any, obj2: js.Any, strict: Boolean, onlyPrimitives: Unit, asObjects: Boolean): Boolean = js.native
+  def compareObjects(obj1: js.Any, obj2: js.Any, strict: Unit, onlyPrimitives: Boolean): Boolean = js.native
+  def compareObjects(obj1: js.Any, obj2: js.Any, strict: Unit, onlyPrimitives: Boolean, asObjects: Boolean): Boolean = js.native
+  def compareObjects(obj1: js.Any, obj2: js.Any, strict: Unit, onlyPrimitives: Unit, asObjects: Boolean): Boolean = js.native
   
   def diag(desc: String): Unit = js.native
   

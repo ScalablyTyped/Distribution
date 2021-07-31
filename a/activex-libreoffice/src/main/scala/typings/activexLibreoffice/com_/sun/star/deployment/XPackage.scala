@@ -14,53 +14,52 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects of this interface reflect a bound package and are issued by a {@link PackageRegistryBackend} .
   * @since OOo 2.0
   */
-@js.native
 trait XPackage
-  extends XComponent
+  extends StObject
+     with XComponent
      with XModifyBroadcaster {
   
   /**
     * returns a description string to describe the package.
     * @returns description
     */
-  val Description: String = js.native
+  val Description: String
   
   /**
     * returns the display name of the package, e.g. for graphical user interfaces (GUI).
     * @returns display name of the package
     */
-  val DisplayName: String = js.native
+  val DisplayName: String
   
   /**
     * returns the unique extension identifier.
     * @returns the extension identifier (a `"org.openoffice.legacy."` one if the extension does not explicitly specify one), or an empty `Optional` if this pack
     */
-  val Identifier: Optional[String] = js.native
+  val Identifier: Optional[String]
   
   /**
     * returns a string containing the license text.
     * @returns license
     */
-  val LicenseText: String = js.native
+  val LicenseText: String
   
   /**
     * returns the file name of the package.
     * @returns file name of the package
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * returns the {@link XPackageTypeInfo} , e.g. media-type etc.
     * @returns media type of package
     */
-  val PackageType: XPackageTypeInfo = js.native
+  val PackageType: XPackageTypeInfo
   
   /**
     * returns the publisher info for the package, the strings might be empty, if there is no publisher
@@ -68,7 +67,7 @@ trait XPackage
     * {@link com.sun.star.beans.StringPair.First} represents the publisher name and {@link com.sun.star.beans.StringPair.Second} represents the URL to the
     * publisher.
     */
-  val PublisherInfo: StringPair = js.native
+  val PublisherInfo: StringPair
   
   /**
     * return a URL to a directory which contains the registration data.
@@ -78,16 +77,16 @@ trait XPackage
     * registered, for example after calling {@link XPackage.revokePackage()} , then com::sun::star::beans::Optional::IsPresent is `TRUE` and the
     * com::sun::star::beans::Optional::Value may be an empty string.
     */
-  val RegistrationDataURL: Optional[String] = js.native
+  val RegistrationDataURL: Optional[String]
   
   /** returns the name of the repository where this object comes from. */
-  val RepositoryName: String = js.native
+  val RepositoryName: String
   
   /**
     * returns the location of the package.
     * @returns location of package
     */
-  val URL: String = js.native
+  val URL: String
   
   /**
     * returns a sequence of update information URLs.
@@ -96,7 +95,7 @@ trait XPackage
     * information available at the first URL.
     * @returns update information URLs
     */
-  val UpdateInformationURLs: SafeArray[String] = js.native
+  val UpdateInformationURLs: SafeArray[String]
   
   /**
     * returns the textual version representation of the package.
@@ -105,7 +104,7 @@ trait XPackage
     * "4" | "5" | "6" | "7" | "8" | "9")+
     * @returns the textual version representation
     */
-  val Version: String = js.native
+  val Version: String
   
   /**
     * checks if the dependencies for this package are still satisfied
@@ -115,7 +114,7 @@ trait XPackage
     * @returns `TRUE` - all dependencies are satisfied `FALSE` - at least one dependency failed.
     * @since OOo 3.2
     */
-  def checkDependencies(xCmdEnv: XCommandEnvironment): Boolean = js.native
+  def checkDependencies(xCmdEnv: XCommandEnvironment): Boolean
   
   /**
     * checks if the package can be installed.
@@ -128,13 +127,13 @@ trait XPackage
     * @param alreadyInstalled indicates that an extension with the same identifier is already installed.
     * @returns `NULL` - all prerequisites are met. Otherwise, a value from {@link Prerequisites} indicating what prerequisites are missing.
     */
-  def checkPrerequisites(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment, alreadyInstalled: Boolean): Double = js.native
+  def checkPrerequisites(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment, alreadyInstalled: Boolean): Double
   
   /**
     * creates a command channel to be used to asynchronously abort a command.
     * @returns abort channel
     */
-  def createAbortChannel(): XAbortChannel = js.native
+  def createAbortChannel(): XAbortChannel
   
   /**
     * exports package to given destination URL.
@@ -143,7 +142,7 @@ trait XPackage
     * @param nameClashAction one of {@link com.sun.star.ucb.NameClash}
     * @param xCmdEnv command environment for error and progress handling
     */
-  def exportTo(destFolderURL: String, newTitle: String, nameClashAction: Double, xCmdEnv: XCommandEnvironment): Unit = js.native
+  def exportTo(destFolderURL: String, newTitle: String, nameClashAction: Double, xCmdEnv: XCommandEnvironment): Unit
   
   /**
     * Gets packages of the bundle.
@@ -153,50 +152,50 @@ trait XPackage
     * @param xCmdEnv command environment for error and progress handling
     * @returns set of packages enclosed in this package
     */
-  def getBundle(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): SafeArray[XPackage] = js.native
+  def getBundle(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): SafeArray[XPackage]
   
   /**
     * returns a description string to describe the package.
     * @returns description
     */
-  def getDescription(): String = js.native
+  def getDescription(): String
   
   /**
     * returns the display name of the package, e.g. for graphical user interfaces (GUI).
     * @returns display name of the package
     */
-  def getDisplayName(): String = js.native
+  def getDisplayName(): String
   
   /**
     * returns an icon for a package.
     * @param highContrast return high contrast icon
     * @returns the icon which should be used to represent the table in the database application window, or `NULL` if the default icon should be used.
     */
-  def getIcon(highContrast: Boolean): XGraphic = js.native
+  def getIcon(highContrast: Boolean): XGraphic
   
   /**
     * returns the unique extension identifier.
     * @returns the extension identifier (a `"org.openoffice.legacy."` one if the extension does not explicitly specify one), or an empty `Optional` if this pack
     */
-  def getIdentifier(): Optional[String] = js.native
+  def getIdentifier(): Optional[String]
   
   /**
     * returns a string containing the license text.
     * @returns license
     */
-  def getLicenseText(): String = js.native
+  def getLicenseText(): String
   
   /**
     * returns the file name of the package.
     * @returns file name of the package
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * returns the {@link XPackageTypeInfo} , e.g. media-type etc.
     * @returns media type of package
     */
-  def getPackageType(): XPackageTypeInfo = js.native
+  def getPackageType(): XPackageTypeInfo
   
   /**
     * returns the publisher info for the package, the strings might be empty, if there is no publisher
@@ -204,7 +203,7 @@ trait XPackage
     * {@link com.sun.star.beans.StringPair.First} represents the publisher name and {@link com.sun.star.beans.StringPair.Second} represents the URL to the
     * publisher.
     */
-  def getPublisherInfo(): StringPair = js.native
+  def getPublisherInfo(): StringPair
   
   /**
     * return a URL to a directory which contains the registration data.
@@ -214,16 +213,16 @@ trait XPackage
     * registered, for example after calling {@link XPackage.revokePackage()} , then com::sun::star::beans::Optional::IsPresent is `TRUE` and the
     * com::sun::star::beans::Optional::Value may be an empty string.
     */
-  def getRegistrationDataURL(): Optional[String] = js.native
+  def getRegistrationDataURL(): Optional[String]
   
   /** returns the name of the repository where this object comes from. */
-  def getRepositoryName(): String = js.native
+  def getRepositoryName(): String
   
   /**
     * returns the location of the package.
     * @returns location of package
     */
-  def getURL(): String = js.native
+  def getURL(): String
   
   /**
     * returns a sequence of update information URLs.
@@ -232,7 +231,7 @@ trait XPackage
     * information available at the first URL.
     * @returns update information URLs
     */
-  def getUpdateInformationURLs(): SafeArray[String] = js.native
+  def getUpdateInformationURLs(): SafeArray[String]
   
   /**
     * returns the textual version representation of the package.
@@ -241,13 +240,13 @@ trait XPackage
     * "4" | "5" | "6" | "7" | "8" | "9")+
     * @returns the textual version representation
     */
-  def getVersion(): String = js.native
+  def getVersion(): String
   
   /**
     * reflects whether this package is a bundle of one or more packages, e.g. a zip (legacy) package file or a document hosting script packages.
     * @returns `TRUE` if this package is a package bundle, `FALSE` otherwise
     */
-  def isBundle(): Boolean = js.native
+  def isBundle(): Boolean
   
   /**
     * determines whether the package is currently registered, i.e. whether it is active.
@@ -255,13 +254,13 @@ trait XPackage
     * @param xCmdEnv command environment for error and progress handling
     * @returns status whether the package is registered ( `TRUE` , `FALSE` ) or the status is ambiguous. Additionally, a registration status may not apply, e.g.
     */
-  def isRegistered(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Optional[Ambiguous[Boolean]] = js.native
+  def isRegistered(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Optional[Ambiguous[Boolean]]
   
   /**
     * indicates if this object represents a removed extension or extension item. This is the case when it was created by providing `TRUE` for the `removed`
     * parameter in the function {@link XPackageRegistry.bindPackage()} .
     */
-  def isRemoved(): Boolean = js.native
+  def isRemoved(): Boolean
   
   /**
     * registers this {@link XPackage} .
@@ -271,7 +270,7 @@ trait XPackage
     * @param xAbortChannel abort channel to asynchronously abort the registration process, or `NULL`
     * @param xCmdEnv command environment for error and progress handling
     */
-  def registerPackage(startup: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit = js.native
+  def registerPackage(startup: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit
   
   /**
     * revokes this {@link XPackage} .
@@ -281,7 +280,7 @@ trait XPackage
     * @param xAbortChannel abort channel to asynchronously abort the registration process, or `NULL`
     * @param xCmdEnv command environment for error and progress handling
     */
-  def revokePackage(startup: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit = js.native
+  def revokePackage(startup: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit
 }
 object XPackage {
   

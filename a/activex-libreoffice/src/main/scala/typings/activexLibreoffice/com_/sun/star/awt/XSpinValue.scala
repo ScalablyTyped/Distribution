@@ -4,67 +4,67 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and settings of a control which is associated with a spinnable value. */
-@js.native
-trait XSpinValue extends XInterface {
+trait XSpinValue
+  extends StObject
+     with XInterface {
   
   /** returns the currently set maximum value of the control */
-  var Maximum: Double = js.native
+  var Maximum: Double
   
   /** returns the currently set minimum value of the control */
-  var Minimum: Double = js.native
+  var Minimum: Double
   
   /** returns the current orientation of the control */
-  var Orientation: Double = js.native
+  var Orientation: Double
   
   /** returns the value by which the current value of the control should be incremented or decremented upon spinning. */
-  var SpinIncrement: Double = js.native
+  var SpinIncrement: Double
   
   /** returns the current value of the control. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** registers an adjustment event listener. */
-  def addAdjustmentListener(listener: XAdjustmentListener): Unit = js.native
+  def addAdjustmentListener(listener: XAdjustmentListener): Unit
   
   /** returns the currently set maximum value of the control */
-  def getMaximum(): Double = js.native
+  def getMaximum(): Double
   
   /** returns the currently set minimum value of the control */
-  def getMinimum(): Double = js.native
+  def getMinimum(): Double
   
   /** returns the current orientation of the control */
-  def getOrientation(): Double = js.native
+  def getOrientation(): Double
   
   /** returns the value by which the current value of the control should be incremented or decremented upon spinning. */
-  def getSpinIncrement(): Double = js.native
+  def getSpinIncrement(): Double
   
   /** returns the current value of the control. */
-  def getValue(): Double = js.native
+  def getValue(): Double
   
   /** unregisters an adjustment event listener. */
-  def removeAdjustmentListener(listener: XAdjustmentListener): Unit = js.native
+  def removeAdjustmentListener(listener: XAdjustmentListener): Unit
   
   /** sets the maximum value which can be set on the control */
-  def setMaximum(maxValue: Double): Unit = js.native
+  def setMaximum(maxValue: Double): Unit
   
   /** sets the minimum value which can be set on the control */
-  def setMinimum(minValue: Double): Unit = js.native
+  def setMinimum(minValue: Double): Unit
   
   /**
     * controls the orientation of the control
     * @param orientation one of the {@link ScrollBarOrientation} values specifying the orientation
     * @throws com::sun::star::lang::NoSupportException in case the given orientation is not supported
     */
-  def setOrientation(orientation: Double): Unit = js.native
+  def setOrientation(orientation: Double): Unit
   
   /** sets the value by which the current value of the control should be incremented or decremented upon spinning. */
-  def setSpinIncrement(spinIncrement: Double): Unit = js.native
+  def setSpinIncrement(spinIncrement: Double): Unit
   
   /** sets the current value of the control */
-  def setValue(value: Double): Unit = js.native
+  def setValue(value: Double): Unit
   
   /**
     * sets the value and value range of the control
@@ -72,7 +72,7 @@ trait XSpinValue extends XInterface {
     * @see setMinimum
     * @see setMaximum
     */
-  def setValues(minValue: Double, maxValue: Double, currentValue: Double): Unit = js.native
+  def setValues(minValue: Double, maxValue: Double, currentValue: Double): Unit
 }
 object XSpinValue {
   

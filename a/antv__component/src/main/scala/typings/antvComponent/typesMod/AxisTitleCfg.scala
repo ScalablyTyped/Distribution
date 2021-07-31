@@ -3,40 +3,38 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisTitleCfg extends StObject {
   
   /**
     * 是否自动旋转
     * @type {boolean}
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 标题距离坐标轴的距离
     * @type {number}
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * 标题距离坐标轴文本的距离
     */
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
   /**
     * 标题文本配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
   
   /**
     * 设置文本
     * @type {string}
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object AxisTitleCfg {
   

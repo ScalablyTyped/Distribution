@@ -3,17 +3,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UDPSocketOnMessageCallbackResult extends StObject {
   
   /** 收到的消息 */
-  var message: ArrayBuffer = js.native
+  var message: ArrayBuffer
   
   /** 消息来源的结构化信息 */
-  var remoteInfo: RemoteInfo = js.native
+  var remoteInfo: RemoteInfo
 }
 object UDPSocketOnMessageCallbackResult {
   

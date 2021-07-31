@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for running remote builds. All Remote Build Execution API calls are scoped
   * to an instance.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends StObject {
   
   /**
     * The location is a GCP region. Currently only `us-central1` is supported.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Whether stack driver logging is enabled for the instance.
     */
-  var loggingEnabled: js.UndefOr[Boolean] = js.native
+  var loggingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. Instance resource name formatted as:
@@ -31,12 +29,12 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance extends StObj
     * populated when creating an instance since it is provided in the
     * `instance_id` field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. State of the instance.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance {
   

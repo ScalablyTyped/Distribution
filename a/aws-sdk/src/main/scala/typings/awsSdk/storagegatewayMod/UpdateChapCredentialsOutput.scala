@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChapCredentialsOutput extends StObject {
   
   /**
     * The iSCSI initiator that connects to the target. This is the same initiator name specified in the request.
     */
-  var InitiatorName: js.UndefOr[IqnName] = js.native
+  var InitiatorName: js.UndefOr[IqnName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the target. This is the same target specified in the request.
     */
-  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.native
+  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.undefined
 }
 object UpdateChapCredentialsOutput {
   

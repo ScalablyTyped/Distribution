@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISVGPathSegLinetoAbs extends StObject {
   
   @JSName("MSHTML.ISVGPathSegLinetoAbs_typekey")
-  var MSHTMLDotISVGPathSegLinetoAbs_typekey: ISVGPathSegLinetoAbs = js.native
+  var MSHTMLDotISVGPathSegLinetoAbs_typekey: ISVGPathSegLinetoAbs
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ISVGPathSegLinetoAbs {
   

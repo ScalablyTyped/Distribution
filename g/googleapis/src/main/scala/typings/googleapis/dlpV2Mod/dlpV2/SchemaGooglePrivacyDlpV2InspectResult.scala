@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All the findings for a single scanned item.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectResult extends StObject {
   
   /**
     * List of findings for an item.
     */
-  var findings: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Finding]] = js.native
+  var findings: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Finding]] = js.undefined
   
   /**
     * If true, then this item might have more findings than were returned, and
@@ -24,7 +22,7 @@ trait SchemaGooglePrivacyDlpV2InspectResult extends StObject {
     * a single API call. For best results, divide the input into smaller
     * batches.
     */
-  var findingsTruncated: js.UndefOr[Boolean] = js.native
+  var findingsTruncated: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectResult {
   

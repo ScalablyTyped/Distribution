@@ -2,91 +2,89 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceDirectory extends StObject {
   
   /**
     * The directory alias.
     */
-  var Alias: js.UndefOr[typings.awsSdk.workspacesMod.Alias] = js.native
+  var Alias: js.UndefOr[typings.awsSdk.workspacesMod.Alias] = js.undefined
   
   /**
     * The user name for the service account.
     */
-  var CustomerUserName: js.UndefOr[UserName] = js.native
+  var CustomerUserName: js.UndefOr[UserName] = js.undefined
   
   /**
     * The directory identifier.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryId] = js.undefined
   
   /**
     * The name of the directory.
     */
-  var DirectoryName: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryName] = js.native
+  var DirectoryName: js.UndefOr[typings.awsSdk.workspacesMod.DirectoryName] = js.undefined
   
   /**
     * The directory type.
     */
-  var DirectoryType: js.UndefOr[WorkspaceDirectoryType] = js.native
+  var DirectoryType: js.UndefOr[WorkspaceDirectoryType] = js.undefined
   
   /**
     * The IP addresses of the DNS servers for the directory.
     */
-  var DnsIpAddresses: js.UndefOr[typings.awsSdk.workspacesMod.DnsIpAddresses] = js.native
+  var DnsIpAddresses: js.UndefOr[typings.awsSdk.workspacesMod.DnsIpAddresses] = js.undefined
   
   /**
     * The identifier of the IAM role. This is the role that allows Amazon WorkSpaces to make calls to other services, such as Amazon EC2, on your behalf.
     */
-  var IamRoleId: js.UndefOr[ARN] = js.native
+  var IamRoleId: js.UndefOr[ARN] = js.undefined
   
   /**
     * The registration code for the directory. This is the code that users enter in their Amazon WorkSpaces client application to connect to the directory.
     */
-  var RegistrationCode: js.UndefOr[typings.awsSdk.workspacesMod.RegistrationCode] = js.native
+  var RegistrationCode: js.UndefOr[typings.awsSdk.workspacesMod.RegistrationCode] = js.undefined
   
   /**
     * The default self-service permissions for WorkSpaces in the directory.
     */
-  var SelfservicePermissions: js.UndefOr[typings.awsSdk.workspacesMod.SelfservicePermissions] = js.native
+  var SelfservicePermissions: js.UndefOr[typings.awsSdk.workspacesMod.SelfservicePermissions] = js.undefined
   
   /**
     * The state of the directory's registration with Amazon WorkSpaces. After a directory is deregistered, the DEREGISTERED state is returned very briefly before the directory metadata is cleaned up, so this state is rarely returned. To confirm that a directory is deregistered, check for the directory ID by using  DescribeWorkspaceDirectories. If the directory ID isn't returned, then the directory has been successfully deregistered.
     */
-  var State: js.UndefOr[WorkspaceDirectoryState] = js.native
+  var State: js.UndefOr[WorkspaceDirectoryState] = js.undefined
   
   /**
     * The identifiers of the subnets used with the directory.
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.workspacesMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.workspacesMod.SubnetIds] = js.undefined
   
   /**
     * Specifies whether the directory is dedicated or shared. To use Bring Your Own License (BYOL), this value must be set to DEDICATED. For more information, see Bring Your Own Windows Desktop Images.
     */
-  var Tenancy: js.UndefOr[typings.awsSdk.workspacesMod.Tenancy] = js.native
+  var Tenancy: js.UndefOr[typings.awsSdk.workspacesMod.Tenancy] = js.undefined
   
   /**
     * The devices and operating systems that users can use to access WorkSpaces.
     */
-  var WorkspaceAccessProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceAccessProperties] = js.native
+  var WorkspaceAccessProperties: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceAccessProperties] = js.undefined
   
   /**
     * The default creation properties for all WorkSpaces in the directory.
     */
-  var WorkspaceCreationProperties: js.UndefOr[DefaultWorkspaceCreationProperties] = js.native
+  var WorkspaceCreationProperties: js.UndefOr[DefaultWorkspaceCreationProperties] = js.undefined
   
   /**
     * The identifier of the security group that is assigned to new WorkSpaces.
     */
-  var WorkspaceSecurityGroupId: js.UndefOr[SecurityGroupId] = js.native
+  var WorkspaceSecurityGroupId: js.UndefOr[SecurityGroupId] = js.undefined
   
   /**
     * The identifiers of the IP access control groups associated with the directory.
     */
-  var ipGroupIds: js.UndefOr[IpGroupIdList] = js.native
+  var ipGroupIds: js.UndefOr[IpGroupIdList] = js.undefined
 }
 object WorkspaceDirectory {
   

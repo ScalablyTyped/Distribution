@@ -6,23 +6,23 @@ import typings.jestTypes.circusMod.TestEntry
 import typings.jestTypes.jestTypesStrings.test_fn_failure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorName extends AsyncEvent {
+trait ErrorName
+  extends StObject
+     with AsyncEvent {
   
-  var error: Exception = js.native
+  var error: Exception
   
-  var name: test_fn_failure = js.native
+  var name: test_fn_failure
   
-  var test: TestEntry = js.native
+  var test: TestEntry
 }
 object ErrorName {
   
   @scala.inline
-  def apply(error: Exception, name: test_fn_failure, test: TestEntry): ErrorName = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
+  def apply(error: Exception, test: TestEntry): ErrorName = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], name = "test_fn_failure", test = test.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorName]
   }
   

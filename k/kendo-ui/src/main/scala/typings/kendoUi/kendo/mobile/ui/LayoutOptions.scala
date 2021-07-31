@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutOptions extends StObject {
   
-  var hide: js.UndefOr[js.Function1[/* e */ LayoutHideEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ LayoutHideEvent, Unit]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ LayoutInitEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ LayoutInitEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ LayoutShowEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ LayoutShowEvent, Unit]] = js.undefined
 }
 object LayoutOptions {
   

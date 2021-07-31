@@ -2,35 +2,34 @@ package typings.kineticjs.Kinetic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextConfig
-  extends DrawOptionsConfig
+  extends StObject
+     with DrawOptionsConfig
      with ObjectOptionsConfig {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var textFill: js.UndefOr[js.Any] = js.native
+  var textFill: js.UndefOr[js.Any] = js.undefined
   
-  var textStroke: js.UndefOr[js.Any] = js.native
+  var textStroke: js.UndefOr[js.Any] = js.undefined
   
-  var textStrokeWidth: js.UndefOr[Double] = js.native
+  var textStrokeWidth: js.UndefOr[Double] = js.undefined
 }
 object TextConfig {
   

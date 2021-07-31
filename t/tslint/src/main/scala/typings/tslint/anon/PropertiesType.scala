@@ -2,15 +2,13 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesType extends StObject {
   
-  var properties: Tags = js.native
+  var properties: Tags
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object PropertiesType {
   

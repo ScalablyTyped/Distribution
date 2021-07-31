@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Messages supported by this system
   */
-@js.native
-trait CapabilityStatementMessagingSupportedMessage extends BackboneElement {
+trait CapabilityStatementMessagingSupportedMessage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Message supported by this system
     */
-  var definition: Reference = js.native
+  var definition: Reference
   
   /**
     * sender | receiver
     */
-  var mode: code = js.native
+  var mode: code
 }
 object CapabilityStatementMessagingSupportedMessage {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociationStatus extends StObject {
   
   /**
     * The state of the target network association.
     */
-  var Code: js.UndefOr[AssociationStatusCode] = js.native
+  var Code: js.UndefOr[AssociationStatusCode] = js.undefined
   
   /**
     * A message about the status of the target network association, if applicable.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object AssociationStatus {
   

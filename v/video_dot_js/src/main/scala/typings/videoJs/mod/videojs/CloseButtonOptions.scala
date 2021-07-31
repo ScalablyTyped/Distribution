@@ -2,13 +2,13 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CloseButtonOptions extends ComponentOptions {
+trait CloseButtonOptions
+  extends StObject
+     with ComponentOptions {
   
-  var controlText: js.UndefOr[String] = js.native
+  var controlText: js.UndefOr[String] = js.undefined
 }
 object CloseButtonOptions {
   

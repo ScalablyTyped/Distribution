@@ -2,46 +2,44 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectDescription extends StObject {
   
   /**
     * The ARN of the project.
     */
-  var arn: js.UndefOr[ProjectArn] = js.native
+  var arn: js.UndefOr[ProjectArn] = js.undefined
   
   /**
     * The date when the project was originally created, in UNIX epoch time format.
     */
-  var createdDate: Time = js.native
+  var createdDate: Time
   
   /**
     * The description of the project.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * An object describing the project's placement specifications.
     */
-  var placementTemplate: js.UndefOr[PlacementTemplate] = js.native
+  var placementTemplate: js.UndefOr[PlacementTemplate] = js.undefined
   
   /**
     * The name of the project for which to obtain information from.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
   
   /**
     * The tags (metadata key/value pairs) associated with the project.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The date when the project was last updated, in UNIX epoch time format. If the project was not updated, then createdDate and updatedDate are the same.
     */
-  var updatedDate: Time = js.native
+  var updatedDate: Time
 }
 object ProjectDescription {
   

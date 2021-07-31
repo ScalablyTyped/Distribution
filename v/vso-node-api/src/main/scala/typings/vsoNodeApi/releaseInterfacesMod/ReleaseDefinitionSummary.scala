@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseDefinitionSummary extends StObject {
   
-  var environments: js.Array[ReleaseDefinitionEnvironmentSummary] = js.native
+  var environments: js.Array[ReleaseDefinitionEnvironmentSummary]
   
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
-  var releases: js.Array[Release] = js.native
+  var releases: js.Array[Release]
 }
 object ReleaseDefinitionSummary {
   

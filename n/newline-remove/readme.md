@@ -12,7 +12,7 @@ Strip all newlines from the given string.
 | Keywords           | line ending, newline, remove, strip |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 241049 |
+| # downloads        | 198036 |
 | # stars            | 2 |
 
 ## Links

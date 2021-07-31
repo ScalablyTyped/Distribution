@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterPatchBaselineForPatchGroupResult extends StObject {
   
   /**
     * The ID of the patch baseline the patch group was deregistered from.
     */
-  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.native
+  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.undefined
   
   /**
     * The name of the patch group deregistered from the patch baseline.
     */
-  var PatchGroup: js.UndefOr[typings.awsSdk.ssmMod.PatchGroup] = js.native
+  var PatchGroup: js.UndefOr[typings.awsSdk.ssmMod.PatchGroup] = js.undefined
 }
 object DeregisterPatchBaselineForPatchGroupResult {
   

@@ -10,7 +10,6 @@ import typings.std.DataView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,14 +19,16 @@ object mod {
   /**
     * Constructs a new ByteBuffer.
     */
-  class ^ () extends ByteBuffer {
+  class ^ ()
+    extends StObject
+       with ByteBuffer {
     def this(capacity: Double) = this()
-    def this(capacity: js.UndefOr[scala.Nothing], littleEndian: Boolean) = this()
     def this(capacity: Double, littleEndian: Boolean) = this()
-    def this(capacity: js.UndefOr[scala.Nothing], littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean) = this()
-    def this(capacity: js.UndefOr[scala.Nothing], littleEndian: Boolean, noAssert: Boolean) = this()
-    def this(capacity: Double, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean) = this()
+    def this(capacity: Unit, littleEndian: Boolean) = this()
     def this(capacity: Double, littleEndian: Boolean, noAssert: Boolean) = this()
+    def this(capacity: Double, littleEndian: Unit, noAssert: Boolean) = this()
+    def this(capacity: Unit, littleEndian: Boolean, noAssert: Boolean) = this()
+    def this(capacity: Unit, littleEndian: Unit, noAssert: Boolean) = this()
   }
   @JSImport("bytebuffer", JSImport.Namespace)
   @js.native
@@ -137,265 +138,216 @@ object mod {
     * Allocates a new ByteBuffer backed by a buffer of the specified capacity.
     */
   /* static member */
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: js.UndefOr[scala.Nothing], littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: js.UndefOr[scala.Nothing], littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: js.UndefOr[scala.Nothing], littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: Double): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: Double, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: Double, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "allocate")
-  @js.native
-  def allocate(capacity: Double, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def allocate(): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Double): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Double, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Double, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Double, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Unit, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Unit, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def allocate(capacity: Unit, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(capacity.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a base64 encoded string to binary like window.atob does.
     */
   /* static member */
-  @JSImport("bytebuffer", "atob")
-  @js.native
-  def atob(b64: String): String = js.native
+  @scala.inline
+  def atob(b64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(b64.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Encodes a binary string to base64 like window.btoa does.
     */
   /* static member */
-  @JSImport("bytebuffer", "btoa")
-  @js.native
-  def btoa(str: String): String = js.native
+  @scala.inline
+  def btoa(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Calculates the number of UTF8 bytes of a string. This is an alias of ByteBuffer#calculateUTF8Bytes.
     */
   /* static member */
-  @JSImport("bytebuffer", "calculateString")
-  @js.native
-  def calculateString(str: String): Double = js.native
+  @scala.inline
+  def calculateString(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateString")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the number of UTF8 bytes of a string.
     */
   /* static member */
-  @JSImport("bytebuffer", "calculateUTF8Bytes")
-  @js.native
-  def calculateUTF8Bytes(str: String): Double = js.native
+  @scala.inline
+  def calculateUTF8Bytes(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Bytes")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the number of UTF8 characters of a string.JavaScript itself uses UTF- 16, so that a string's length property does not reflect its actual UTF8 size if it contains code points larger than 0xFFFF.
     */
   /* static member */
-  @JSImport("bytebuffer", "calculateUTF8Chars")
-  @js.native
-  def calculateUTF8Chars(str: String): Double = js.native
+  @scala.inline
+  def calculateUTF8Chars(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateUTF8Chars")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the actual number of bytes required to store a 32bit base 128 variable-length integer.
     */
   /* static member */
-  @JSImport("bytebuffer", "calculateVarint32")
-  @js.native
-  def calculateVarint32(value: Double): Double = js.native
+  @scala.inline
+  def calculateVarint32(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint32")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Calculates the actual number of bytes required to store a 64bit base 128 variable-length integer.
     */
   /* static member */
-  @JSImport("bytebuffer", "calculateVarint64")
-  @js.native
-  def calculateVarint64(value: Double): Double = js.native
-  @JSImport("bytebuffer", "calculateVarint64")
-  @js.native
-  def calculateVarint64(value: Long): Double = js.native
+  @scala.inline
+  def calculateVarint64(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def calculateVarint64(value: Long): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateVarint64")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Concatenates multiple ByteBuffers into one.
     */
   /* static member */
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
-    encoding: js.UndefOr[scala.Nothing],
-    litteEndian: js.UndefOr[scala.Nothing],
-    noAssert: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
-    encoding: js.UndefOr[scala.Nothing],
-    litteEndian: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
-    encoding: js.UndefOr[scala.Nothing],
-    litteEndian: Boolean,
-    noAssert: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(
-    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
-    encoding: String,
-    litteEndian: js.UndefOr[scala.Nothing],
-    noAssert: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
+  @scala.inline
+  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String]): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: String): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
   def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: String,
     litteEndian: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
   def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: String,
     litteEndian: Boolean,
     noAssert: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
-  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
   def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
-    encoding: Boolean,
-    litteEndian: js.UndefOr[scala.Nothing],
+    encoding: String,
+    litteEndian: Unit,
     noAssert: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String], encoding: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
   def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Boolean,
     litteEndian: Boolean
-  ): ByteBuffer = js.native
-  @JSImport("bytebuffer", "concat")
-  @js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
   def concat(
     buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
     encoding: Boolean,
     litteEndian: Boolean,
     noAssert: Boolean
-  ): ByteBuffer = js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(
+    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    encoding: Boolean,
+    litteEndian: Unit,
+    noAssert: Boolean
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(
+    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    encoding: Unit,
+    litteEndian: Boolean
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(
+    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    encoding: Unit,
+    litteEndian: Boolean,
+    noAssert: Boolean
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def concat(
+    buffers: js.Array[ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String],
+    encoding: Unit,
+    litteEndian: Unit,
+    noAssert: Boolean
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(buffers.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], litteEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a base64 encoded string to a ByteBuffer.
     */
   /* static member */
-  @JSImport("bytebuffer", "fromBase64")
-  @js.native
-  def fromBase64(str: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBase64")
-  @js.native
-  def fromBase64(str: String, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBase64")
-  @js.native
-  def fromBase64(str: String, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBase64")
-  @js.native
-  def fromBase64(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def fromBase64(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBase64(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBase64(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBase64(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a binary encoded string, that is using only characters 0x00-0xFF as bytes, to a ByteBuffer.
     */
   /* static member */
-  @JSImport("bytebuffer", "fromBinary")
-  @js.native
-  def fromBinary(str: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBinary")
-  @js.native
-  def fromBinary(str: String, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBinary")
-  @js.native
-  def fromBinary(str: String, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromBinary")
-  @js.native
-  def fromBinary(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def fromBinary(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBinary(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBinary(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromBinary(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a hex encoded string with marked offsets to a ByteBuffer.
     */
   /* static member */
-  @JSImport("bytebuffer", "fromDebug")
-  @js.native
-  def fromDebug(str: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromDebug")
-  @js.native
-  def fromDebug(str: String, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromDebug")
-  @js.native
-  def fromDebug(str: String, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromDebug")
-  @js.native
-  def fromDebug(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def fromDebug(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromDebug(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromDebug(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromDebug(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDebug")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a hex encoded string to a ByteBuffer.
     */
   /* static member */
-  @JSImport("bytebuffer", "fromHex")
-  @js.native
-  def fromHex(str: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromHex")
-  @js.native
-  def fromHex(str: String, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromHex")
-  @js.native
-  def fromHex(str: String, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromHex")
-  @js.native
-  def fromHex(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def fromHex(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromHex(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromHex(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromHex(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes an UTF8 encoded string to a ByteBuffer.
     */
   /* static member */
-  @JSImport("bytebuffer", "fromUTF8")
-  @js.native
-  def fromUTF8(str: String): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromUTF8")
-  @js.native
-  def fromUTF8(str: String, littleEndian: js.UndefOr[scala.Nothing], noAssert: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromUTF8")
-  @js.native
-  def fromUTF8(str: String, littleEndian: Boolean): ByteBuffer = js.native
-  @JSImport("bytebuffer", "fromUTF8")
-  @js.native
-  def fromUTF8(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = js.native
+  @scala.inline
+  def fromUTF8(str: String): ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any]).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromUTF8(str: String, littleEndian: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromUTF8(str: String, littleEndian: Boolean, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
+  @scala.inline
+  def fromUTF8(str: String, littleEndian: Unit, noAssert: Boolean): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUTF8")(str.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Gets the backing buffer type.
     */
   /* static member */
-  @JSImport("bytebuffer", "isByteBuffer")
-  @js.native
-  def isByteBuffer(bb: js.Any): Boolean = js.native
+  @scala.inline
+  def isByteBuffer(bb: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isByteBuffer")(bb.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Wraps a buffer or a string. Sets the allocated ByteBuffer's ByteBuffer#offset to 0 and its ByteBuffer#limit to the length of the wrapped data.
@@ -405,52 +357,45 @@ object mod {
     * @param noAssert Whether to skip assertions of offsets and values. Defaults to ByteBuffer.DEFAULT_NOASSERT.
     */
   /* static member */
-  @JSImport("bytebuffer", "wrap")
-  @js.native
+  @scala.inline
   def wrap(
     buffer: ByteBuffer | Buffer | ArrayBuffer | Uint8Array | String,
     enc: js.UndefOr[String | Boolean],
     littleEndian: js.UndefOr[Boolean],
     noAssert: js.UndefOr[Boolean]
-  ): ByteBuffer = js.native
+  ): ByteBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(buffer.asInstanceOf[js.Any], enc.asInstanceOf[js.Any], littleEndian.asInstanceOf[js.Any], noAssert.asInstanceOf[js.Any])).asInstanceOf[ByteBuffer]
   
   /**
     * Decodes a zigzag encoded signed 32bit integer.
     */
   /* static member */
-  @JSImport("bytebuffer", "zigZagDecode32")
-  @js.native
-  def zigZagDecode32(n: Double): Double = js.native
+  @scala.inline
+  def zigZagDecode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Decodes a zigzag encoded signed 64bit integer.
     */
   /* static member */
-  @JSImport("bytebuffer", "zigZagDecode64")
-  @js.native
-  def zigZagDecode64(n: Double): Long = js.native
-  @JSImport("bytebuffer", "zigZagDecode64")
-  @js.native
-  def zigZagDecode64(n: Long): Long = js.native
+  @scala.inline
+  def zigZagDecode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  @scala.inline
+  def zigZagDecode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagDecode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Zigzag encodes a signed 32bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  @JSImport("bytebuffer", "zigZagEncode32")
-  @js.native
-  def zigZagEncode32(n: Double): Double = js.native
+  @scala.inline
+  def zigZagEncode32(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode32")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Zigzag encodes a signed 64bit integer so that it can be effectively used with varint encoding.
     */
   /* static member */
-  @JSImport("bytebuffer", "zigZagEncode64")
-  @js.native
-  def zigZagEncode64(n: Double): Long = js.native
-  @JSImport("bytebuffer", "zigZagEncode64")
-  @js.native
-  def zigZagEncode64(n: Long): Long = js.native
+  @scala.inline
+  def zigZagEncode64(n: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
+  @scala.inline
+  def zigZagEncode64(n: Long): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("zigZagEncode64")(n.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   @js.native
   trait ByteBuffer extends StObject {
@@ -468,38 +413,38 @@ object mod {
     def LE(bigEndian: Boolean): this.type = js.native
     
     def append(source: String): this.type = js.native
-    def append(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def append(source: String, encoding: String): this.type = js.native
     def append(source: String, encoding: String, offset: Double): this.type = js.native
     def append(source: String, encoding: Double): this.type = js.native
     def append(source: String, encoding: Double, offset: Double): this.type = js.native
+    def append(source: String, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Appends some data to this ByteBuffer. This will overwrite any contents behind the specified offset up to the appended data's length.
       */
     def append(source: ByteBuffer): this.type = js.native
-    def append(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def append(source: ByteBuffer, encoding: String): this.type = js.native
     def append(source: ByteBuffer, encoding: String, offset: Double): this.type = js.native
     def append(source: ByteBuffer, encoding: Double): this.type = js.native
     def append(source: ByteBuffer, encoding: Double, offset: Double): this.type = js.native
+    def append(source: ByteBuffer, encoding: Unit, offset: Double): this.type = js.native
     def append(source: Buffer): this.type = js.native
-    def append(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def append(source: Buffer, encoding: String): this.type = js.native
     def append(source: Buffer, encoding: String, offset: Double): this.type = js.native
     def append(source: Buffer, encoding: Double): this.type = js.native
     def append(source: Buffer, encoding: Double, offset: Double): this.type = js.native
+    def append(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
     def append(source: ArrayBuffer): this.type = js.native
-    def append(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def append(source: ArrayBuffer, encoding: String): this.type = js.native
     def append(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
     def append(source: ArrayBuffer, encoding: Double): this.type = js.native
     def append(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def append(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
     def append(source: Uint8Array): this.type = js.native
-    def append(source: Uint8Array, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def append(source: Uint8Array, encoding: String): this.type = js.native
     def append(source: Uint8Array, encoding: String, offset: Double): this.type = js.native
     def append(source: Uint8Array, encoding: Double): this.type = js.native
     def append(source: Uint8Array, encoding: Double, offset: Double): this.type = js.native
+    def append(source: Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Appends this ByteBuffer's contents to another ByteBuffer. This will overwrite any contents behind the specified offset up to the length of this ByteBuffer's data.
@@ -534,44 +479,29 @@ object mod {
       * Compacts this ByteBuffer to be backed by a ByteBuffer#buffer of its contents' length. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will set offset = 0 and limit = capacity and adapt ByteBuffer#markedOffset to the same relative position if set.
       */
     def compact(): this.type = js.native
-    def compact(begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def compact(begin: Double): this.type = js.native
     def compact(begin: Double, end: Double): this.type = js.native
+    def compact(begin: Unit, end: Double): this.type = js.native
     
     /**
       * Creates a copy of this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
       */
     def copy(): ByteBuffer = js.native
-    def copy(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
     def copy(begin: Double): ByteBuffer = js.native
     def copy(begin: Double, end: Double): ByteBuffer = js.native
+    def copy(begin: Unit, end: Double): ByteBuffer = js.native
     
     /**
       * Copies this ByteBuffer's contents to another ByteBuffer. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
       */
     def copyTo(target: ByteBuffer): this.type = js.native
-    def copyTo(
-      target: ByteBuffer,
-      targetOffset: js.UndefOr[scala.Nothing],
-      sourceOffset: js.UndefOr[scala.Nothing],
-      sourceLimit: Double
-    ): this.type = js.native
-    def copyTo(target: ByteBuffer, targetOffset: js.UndefOr[scala.Nothing], sourceOffset: Double): this.type = js.native
-    def copyTo(
-      target: ByteBuffer,
-      targetOffset: js.UndefOr[scala.Nothing],
-      sourceOffset: Double,
-      sourceLimit: Double
-    ): this.type = js.native
     def copyTo(target: ByteBuffer, targetOffset: Double): this.type = js.native
-    def copyTo(
-      target: ByteBuffer,
-      targetOffset: Double,
-      sourceOffset: js.UndefOr[scala.Nothing],
-      sourceLimit: Double
-    ): this.type = js.native
     def copyTo(target: ByteBuffer, targetOffset: Double, sourceOffset: Double): this.type = js.native
     def copyTo(target: ByteBuffer, targetOffset: Double, sourceOffset: Double, sourceLimit: Double): this.type = js.native
+    def copyTo(target: ByteBuffer, targetOffset: Double, sourceOffset: Unit, sourceLimit: Double): this.type = js.native
+    def copyTo(target: ByteBuffer, targetOffset: Unit, sourceOffset: Double): this.type = js.native
+    def copyTo(target: ByteBuffer, targetOffset: Unit, sourceOffset: Double, sourceLimit: Double): this.type = js.native
+    def copyTo(target: ByteBuffer, targetOffset: Unit, sourceOffset: Unit, sourceLimit: Double): this.type = js.native
     
     /**
       * Makes sure that this ByteBuffer is backed by a ByteBuffer#buffer of at least the specified capacity. If the current capacity is exceeded, it will be doubled. If double the current capacity is less than the required capacity, the required capacity will be used instead.
@@ -579,16 +509,16 @@ object mod {
     def ensureCapacity(capacity: Double): this.type = js.native
     
     def fill(value: String): this.type = js.native
-    def fill(value: String, begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def fill(value: String, begin: Double): this.type = js.native
     def fill(value: String, begin: Double, end: Double): this.type = js.native
+    def fill(value: String, begin: Unit, end: Double): this.type = js.native
     /**
       * Overwrites this ByteBuffer's contents with the specified value. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit.
       */
     def fill(value: Double): this.type = js.native
-    def fill(value: Double, begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def fill(value: Double, begin: Double): this.type = js.native
     def fill(value: Double, begin: Double, end: Double): this.type = js.native
+    def fill(value: Double, begin: Unit, end: Double): this.type = js.native
     
     /**
       * Makes this ByteBuffer ready for a new sequence of write or relative read operations. Sets limit = offset and offset = 0. Make sure always to flip a ByteBuffer when all relative read or write operations are complete.
@@ -632,32 +562,32 @@ object mod {
     def order(littleEndian: Boolean): this.type = js.native
     
     def prepend(source: String): this.type = js.native
-    def prepend(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def prepend(source: String, encoding: String): this.type = js.native
     def prepend(source: String, encoding: String, offset: Double): this.type = js.native
     def prepend(source: String, encoding: Double): this.type = js.native
     def prepend(source: String, encoding: Double, offset: Double): this.type = js.native
+    def prepend(source: String, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Prepends some data to this ByteBuffer. This will overwrite any contents before the specified offset up to the prepended data's length. If there is not enough space available before the specified offset, the backing buffer will be resized and its contents moved accordingly.
       */
     def prepend(source: ByteBuffer): this.type = js.native
-    def prepend(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def prepend(source: ByteBuffer, encoding: String): this.type = js.native
     def prepend(source: ByteBuffer, encoding: String, offset: Double): this.type = js.native
     def prepend(source: ByteBuffer, encoding: Double): this.type = js.native
     def prepend(source: ByteBuffer, encoding: Double, offset: Double): this.type = js.native
+    def prepend(source: ByteBuffer, encoding: Unit, offset: Double): this.type = js.native
     def prepend(source: Buffer): this.type = js.native
-    def prepend(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def prepend(source: Buffer, encoding: String): this.type = js.native
     def prepend(source: Buffer, encoding: String, offset: Double): this.type = js.native
     def prepend(source: Buffer, encoding: Double): this.type = js.native
     def prepend(source: Buffer, encoding: Double, offset: Double): this.type = js.native
+    def prepend(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
     def prepend(source: ArrayBuffer): this.type = js.native
-    def prepend(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def prepend(source: ArrayBuffer, encoding: String): this.type = js.native
     def prepend(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
     def prepend(source: ArrayBuffer, encoding: Double): this.type = js.native
     def prepend(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def prepend(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Prepends this ByteBuffer to another ByteBuffer. This will overwrite any contents before the specified offset up to the prepended data's length. If there is not enough space available before the specified offset, the backing buffer will be resized and its contents moved accordingly.
@@ -848,9 +778,9 @@ object mod {
       * Reverses this ByteBuffer's contents
       */
     def reverse(): this.type = js.native
-    def reverse(begin: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
     def reverse(begin: Double): this.type = js.native
     def reverse(begin: Double, end: Double): this.type = js.native
+    def reverse(begin: Unit, end: Double): this.type = js.native
     
     /**
       * Skips the next length bytes. This will just advance
@@ -861,9 +791,9 @@ object mod {
       * Slices this ByteBuffer by creating a cloned instance with offset = begin and limit = end.
       */
     def slice(): ByteBuffer = js.native
-    def slice(begin: js.UndefOr[scala.Nothing], end: Double): ByteBuffer = js.native
     def slice(begin: Double): ByteBuffer = js.native
     def slice(begin: Double, end: Double): ByteBuffer = js.native
+    def slice(begin: Unit, end: Double): ByteBuffer = js.native
     
     /**
       * Returns a raw buffer compacted to contain this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will transparently ByteBuffer#flip this ByteBuffer if offset > limit but the actual offsets remain untouched. This is an alias of ByteBuffer#toBuffer.
@@ -875,17 +805,17 @@ object mod {
       * Encodes this ByteBuffer's contents to a base64 encoded string.
       */
     def toBase64(): String = js.native
-    def toBase64(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
     def toBase64(begin: Double): String = js.native
     def toBase64(begin: Double, end: Double): String = js.native
+    def toBase64(begin: Unit, end: Double): String = js.native
     
     /**
       * Encodes this ByteBuffer to a binary encoded string, that is using only characters 0x00-0xFF as bytes.
       */
     def toBinary(): String = js.native
-    def toBinary(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
     def toBinary(begin: Double): String = js.native
     def toBinary(begin: Double, end: Double): String = js.native
+    def toBinary(begin: Unit, end: Double): String = js.native
     
     /**
       * Returns a copy of the backing buffer that contains this ByteBuffer's contents. Contents are the bytes between ByteBuffer#offset and ByteBuffer#limit. Will transparently ByteBuffer#flip this ByteBuffer if offset > limit but the actual offsets remain untouched.
@@ -910,9 +840,9 @@ object mod {
       * Encodes this ByteBuffer's contents to a hex encoded string.
       */
     def toHex(): String = js.native
-    def toHex(begin: js.UndefOr[scala.Nothing], end: Double): String = js.native
     def toHex(begin: Double): String = js.native
     def toHex(begin: Double, end: Double): String = js.native
+    def toHex(begin: Unit, end: Double): String = js.native
     
     def toString(encoding: String): String = js.native
     
@@ -933,38 +863,38 @@ object mod {
     def writeByte(value: Double, offset: Double): this.type = js.native
     
     def writeBytes(source: String): this.type = js.native
-    def writeBytes(source: String, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def writeBytes(source: String, encoding: String): this.type = js.native
     def writeBytes(source: String, encoding: String, offset: Double): this.type = js.native
     def writeBytes(source: String, encoding: Double): this.type = js.native
     def writeBytes(source: String, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: String, encoding: Unit, offset: Double): this.type = js.native
     /**
       * Writes an array of bytes. This is an alias for append
       */
     def writeBytes(source: ByteBuffer): this.type = js.native
-    def writeBytes(source: ByteBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def writeBytes(source: ByteBuffer, encoding: String): this.type = js.native
     def writeBytes(source: ByteBuffer, encoding: String, offset: Double): this.type = js.native
     def writeBytes(source: ByteBuffer, encoding: Double): this.type = js.native
     def writeBytes(source: ByteBuffer, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: ByteBuffer, encoding: Unit, offset: Double): this.type = js.native
     def writeBytes(source: Buffer): this.type = js.native
-    def writeBytes(source: Buffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def writeBytes(source: Buffer, encoding: String): this.type = js.native
     def writeBytes(source: Buffer, encoding: String, offset: Double): this.type = js.native
     def writeBytes(source: Buffer, encoding: Double): this.type = js.native
     def writeBytes(source: Buffer, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: Buffer, encoding: Unit, offset: Double): this.type = js.native
     def writeBytes(source: ArrayBuffer): this.type = js.native
-    def writeBytes(source: ArrayBuffer, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def writeBytes(source: ArrayBuffer, encoding: String): this.type = js.native
     def writeBytes(source: ArrayBuffer, encoding: String, offset: Double): this.type = js.native
     def writeBytes(source: ArrayBuffer, encoding: Double): this.type = js.native
     def writeBytes(source: ArrayBuffer, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: ArrayBuffer, encoding: Unit, offset: Double): this.type = js.native
     def writeBytes(source: Uint8Array): this.type = js.native
-    def writeBytes(source: Uint8Array, encoding: js.UndefOr[scala.Nothing], offset: Double): this.type = js.native
     def writeBytes(source: Uint8Array, encoding: String): this.type = js.native
     def writeBytes(source: Uint8Array, encoding: String, offset: Double): this.type = js.native
     def writeBytes(source: Uint8Array, encoding: Double): this.type = js.native
     def writeBytes(source: Uint8Array, encoding: Double, offset: Double): this.type = js.native
+    def writeBytes(source: Uint8Array, encoding: Unit, offset: Double): this.type = js.native
     
     /**
       * Writes a NULL-terminated UTF8 encoded string. For this to work the specified string must not contain any NULL characters itself.

@@ -2,24 +2,27 @@ package typings.wonderFrp
 
 import typings.wonderFrp.baseStreamMod.BaseStream
 import typings.wonderFrp.schedulerMod.Scheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/FromArrayStream", JSImport.Namespace)
-@js.native
-object fromArrayStreamMod extends js.Object {
+object fromArrayStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/FromArrayStream", "FromArrayStream")
   @js.native
   class FromArrayStream protected () extends BaseStream {
-    def this(array: js.Array[_], scheduler: Scheduler) = this()
+    def this(array: js.Array[js.Any], scheduler: Scheduler) = this()
+    
     var _array: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object FromArrayStream extends js.Object {
-    def create(array: js.Array[_], scheduler: Scheduler): FromArrayStream = js.native
+  object FromArrayStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/FromArrayStream", "FromArrayStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(array: js.Array[js.Any], scheduler: Scheduler): FromArrayStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(array.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromArrayStream]
   }
-  
 }
-

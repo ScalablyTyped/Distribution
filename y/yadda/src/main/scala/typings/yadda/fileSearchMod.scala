@@ -3,24 +3,30 @@ package typings.yadda
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileSearchMod {
   
   @JSImport("yadda/lib/FileSearch", JSImport.Namespace)
   @js.native
-  class ^ protected () extends FileSearch {
+  class ^ protected ()
+    extends StObject
+       with FileSearch {
     def this(directories: String) = this()
     def this(directories: String, patterns: RegExp) = this()
+    
+    /* CompleteClass */
+    override def each(fn: js.Function1[/* file */ String, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def list(): js.Array[String] = js.native
   }
   
-  @js.native
   trait FileSearch extends StObject {
     
-    def each(fn: js.Function1[/* file */ String, Unit]): Unit = js.native
+    def each(fn: js.Function1[/* file */ String, Unit]): Unit
     
-    def list(): js.Array[String] = js.native
+    def list(): js.Array[String]
   }
   object FileSearch {
     

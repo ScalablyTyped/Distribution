@@ -14,101 +14,101 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.popular
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncSearchSubmit[T] extends Generic {
+trait AsyncSearchSubmit[T]
+  extends StObject
+     with Generic {
   
-  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var allow_partial_search_results: js.UndefOr[Boolean] = js.native
+  var allow_partial_search_results: js.UndefOr[Boolean] = js.undefined
   
-  var analyze_wildcard: js.UndefOr[Boolean] = js.native
+  var analyze_wildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var batched_reduce_size: js.UndefOr[Double] = js.native
+  var batched_reduce_size: js.UndefOr[Double] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var default_operator: js.UndefOr[AND | OR] = js.native
+  var default_operator: js.UndefOr[AND | OR] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var docvalue_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var docvalue_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var ignore_throttled: js.UndefOr[Boolean] = js.native
+  var ignore_throttled: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var keep_alive: js.UndefOr[String] = js.native
+  var keep_alive: js.UndefOr[String] = js.undefined
   
-  var keep_on_completion: js.UndefOr[Boolean] = js.native
+  var keep_on_completion: js.UndefOr[Boolean] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var max_concurrent_shard_requests: js.UndefOr[Double] = js.native
+  var max_concurrent_shard_requests: js.UndefOr[Double] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var request_cache: js.UndefOr[Boolean] = js.native
+  var request_cache: js.UndefOr[Boolean] = js.undefined
   
-  var routing: js.UndefOr[String | js.Array[String]] = js.native
+  var routing: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
   
-  var seq_no_primary_term: js.UndefOr[Boolean] = js.native
+  var seq_no_primary_term: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[String | js.Array[String]] = js.native
+  var sort: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var stats: js.UndefOr[String | js.Array[String]] = js.native
+  var stats: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var stored_fields: js.UndefOr[String | js.Array[String]] = js.native
+  var stored_fields: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var suggest_field: js.UndefOr[String] = js.native
+  var suggest_field: js.UndefOr[String] = js.undefined
   
-  var suggest_mode: js.UndefOr[missing | popular | always] = js.native
+  var suggest_mode: js.UndefOr[missing | popular | always] = js.undefined
   
-  var suggest_size: js.UndefOr[Double] = js.native
+  var suggest_size: js.UndefOr[Double] = js.undefined
   
-  var suggest_text: js.UndefOr[String] = js.native
+  var suggest_text: js.UndefOr[String] = js.undefined
   
-  var terminate_after: js.UndefOr[Double] = js.native
+  var terminate_after: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var track_scores: js.UndefOr[Boolean] = js.native
+  var track_scores: js.UndefOr[Boolean] = js.undefined
   
-  var track_total_hits: js.UndefOr[Boolean] = js.native
+  var track_total_hits: js.UndefOr[Boolean] = js.undefined
   
-  var typed_keys: js.UndefOr[Boolean] = js.native
+  var typed_keys: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[Boolean] = js.undefined
   
-  var wait_for_completion_timeout: js.UndefOr[String] = js.native
+  var wait_for_completion_timeout: js.UndefOr[String] = js.undefined
 }
 object AsyncSearchSubmit {
   
@@ -119,7 +119,7 @@ object AsyncSearchSubmit {
   }
   
   @scala.inline
-  implicit class AsyncSearchSubmitMutableBuilder[Self <: AsyncSearchSubmit[_], T] (val x: Self with AsyncSearchSubmit[T]) extends AnyVal {
+  implicit class AsyncSearchSubmitMutableBuilder[Self <: AsyncSearchSubmit[?], T] (val x: Self & AsyncSearchSubmit[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

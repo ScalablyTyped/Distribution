@@ -301,23 +301,18 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: `object`): StoppablePromise[js.UndefOr[HTMLObjectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: `object`, options: Options): StoppablePromise[js.UndefOr[HTMLObjectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: `var`): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: `var`, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
+  @scala.inline
+  def apply(selector: `object`): StoppablePromise[js.UndefOr[HTMLObjectElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLObjectElement]]]
+  @scala.inline
+  def apply(selector: `object`, options: Options): StoppablePromise[js.UndefOr[HTMLObjectElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLObjectElement]]]
+  @scala.inline
+  def apply(selector: `var`): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: `var`, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
   /**
   Detect when an element is ready in the DOM.
   @param selector - [CSS selector.](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors)
@@ -332,1053 +327,714 @@ object mod {
   })();
   ```
   */
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: a): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: abbr): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: abbr, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: address): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: address, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: a, options: Options): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: applet): StoppablePromise[js.UndefOr[HTMLAppletElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: applet, options: Options): StoppablePromise[js.UndefOr[HTMLAppletElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: area): StoppablePromise[js.UndefOr[HTMLAreaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: area, options: Options): StoppablePromise[js.UndefOr[HTMLAreaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: article): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: article, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: aside): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: aside, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: audio): StoppablePromise[js.UndefOr[HTMLAudioElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: audio, options: Options): StoppablePromise[js.UndefOr[HTMLAudioElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: b): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: base): StoppablePromise[js.UndefOr[HTMLBaseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: basefont): StoppablePromise[js.UndefOr[HTMLBaseFontElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: basefont, options: Options): StoppablePromise[js.UndefOr[HTMLBaseFontElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: base, options: Options): StoppablePromise[js.UndefOr[HTMLBaseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: bdi): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: bdi, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: bdo): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: bdo, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: blockquote): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: blockquote, options: Options): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: body): StoppablePromise[js.UndefOr[HTMLBodyElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: body, options: Options): StoppablePromise[js.UndefOr[HTMLBodyElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: b, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: br): StoppablePromise[js.UndefOr[HTMLBRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: br, options: Options): StoppablePromise[js.UndefOr[HTMLBRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: button): StoppablePromise[js.UndefOr[HTMLButtonElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: button, options: Options): StoppablePromise[js.UndefOr[HTMLButtonElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: canvas): StoppablePromise[js.UndefOr[HTMLCanvasElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: canvas, options: Options): StoppablePromise[js.UndefOr[HTMLCanvasElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: caption): StoppablePromise[js.UndefOr[HTMLTableCaptionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: caption, options: Options): StoppablePromise[js.UndefOr[HTMLTableCaptionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: circle): StoppablePromise[js.UndefOr[SVGCircleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: circle, options: Options): StoppablePromise[js.UndefOr[SVGCircleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: cite): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: cite, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: clipPath): StoppablePromise[js.UndefOr[SVGClipPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: clipPath, options: Options): StoppablePromise[js.UndefOr[SVGClipPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: code): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: code, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: col): StoppablePromise[js.UndefOr[HTMLTableColElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: colgroup): StoppablePromise[js.UndefOr[HTMLTableColElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: colgroup, options: Options): StoppablePromise[js.UndefOr[HTMLTableColElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: col, options: Options): StoppablePromise[js.UndefOr[HTMLTableColElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: data): StoppablePromise[js.UndefOr[HTMLDataElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: datalist): StoppablePromise[js.UndefOr[HTMLDataListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: datalist, options: Options): StoppablePromise[js.UndefOr[HTMLDataListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: data, options: Options): StoppablePromise[js.UndefOr[HTMLDataElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dd): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dd, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: defs): StoppablePromise[js.UndefOr[SVGDefsElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: defs, options: Options): StoppablePromise[js.UndefOr[SVGDefsElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: del): StoppablePromise[js.UndefOr[HTMLModElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: del, options: Options): StoppablePromise[js.UndefOr[HTMLModElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: desc): StoppablePromise[js.UndefOr[SVGDescElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: desc, options: Options): StoppablePromise[js.UndefOr[SVGDescElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: details): StoppablePromise[js.UndefOr[HTMLDetailsElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: details, options: Options): StoppablePromise[js.UndefOr[HTMLDetailsElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dfn): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dfn, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dialog): StoppablePromise[js.UndefOr[HTMLDialogElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dialog, options: Options): StoppablePromise[js.UndefOr[HTMLDialogElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dir): StoppablePromise[js.UndefOr[HTMLDirectoryElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dir, options: Options): StoppablePromise[js.UndefOr[HTMLDirectoryElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: div): StoppablePromise[js.UndefOr[HTMLDivElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: div, options: Options): StoppablePromise[js.UndefOr[HTMLDivElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dl): StoppablePromise[js.UndefOr[HTMLDListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dl, options: Options): StoppablePromise[js.UndefOr[HTMLDListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dt): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: dt, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ellipse): StoppablePromise[js.UndefOr[SVGEllipseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ellipse, options: Options): StoppablePromise[js.UndefOr[SVGEllipseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: em): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: embed): StoppablePromise[js.UndefOr[HTMLEmbedElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: embed, options: Options): StoppablePromise[js.UndefOr[HTMLEmbedElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: em, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feBlend): StoppablePromise[js.UndefOr[SVGFEBlendElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feBlend, options: Options): StoppablePromise[js.UndefOr[SVGFEBlendElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feColorMatrix): StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feColorMatrix, options: Options): StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feComponentTransfer): StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feComponentTransfer, options: Options): StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feComposite): StoppablePromise[js.UndefOr[SVGFECompositeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feComposite, options: Options): StoppablePromise[js.UndefOr[SVGFECompositeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feConvolveMatrix): StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feConvolveMatrix, options: Options): StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDiffuseLighting): StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDiffuseLighting, options: Options): StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDisplacementMap): StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDisplacementMap, options: Options): StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDistantLight): StoppablePromise[js.UndefOr[SVGFEDistantLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feDistantLight, options: Options): StoppablePromise[js.UndefOr[SVGFEDistantLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFlood): StoppablePromise[js.UndefOr[SVGFEFloodElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFlood, options: Options): StoppablePromise[js.UndefOr[SVGFEFloodElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncA): StoppablePromise[js.UndefOr[SVGFEFuncAElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncA, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncAElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncB): StoppablePromise[js.UndefOr[SVGFEFuncBElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncB, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncBElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncG): StoppablePromise[js.UndefOr[SVGFEFuncGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncG, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncR): StoppablePromise[js.UndefOr[SVGFEFuncRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feFuncR, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feGaussianBlur): StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feGaussianBlur, options: Options): StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feImage): StoppablePromise[js.UndefOr[SVGFEImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feImage, options: Options): StoppablePromise[js.UndefOr[SVGFEImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMerge): StoppablePromise[js.UndefOr[SVGFEMergeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMergeNode): StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMergeNode, options: Options): StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMerge, options: Options): StoppablePromise[js.UndefOr[SVGFEMergeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMorphology): StoppablePromise[js.UndefOr[SVGFEMorphologyElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feMorphology, options: Options): StoppablePromise[js.UndefOr[SVGFEMorphologyElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feOffset): StoppablePromise[js.UndefOr[SVGFEOffsetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feOffset, options: Options): StoppablePromise[js.UndefOr[SVGFEOffsetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: fePointLight): StoppablePromise[js.UndefOr[SVGFEPointLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: fePointLight, options: Options): StoppablePromise[js.UndefOr[SVGFEPointLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feSpecularLighting): StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feSpecularLighting, options: Options): StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feSpotLight): StoppablePromise[js.UndefOr[SVGFESpotLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feSpotLight, options: Options): StoppablePromise[js.UndefOr[SVGFESpotLightElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feTile): StoppablePromise[js.UndefOr[SVGFETileElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feTile, options: Options): StoppablePromise[js.UndefOr[SVGFETileElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feTurbulence): StoppablePromise[js.UndefOr[SVGFETurbulenceElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: feTurbulence, options: Options): StoppablePromise[js.UndefOr[SVGFETurbulenceElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: fieldset): StoppablePromise[js.UndefOr[HTMLFieldSetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: fieldset, options: Options): StoppablePromise[js.UndefOr[HTMLFieldSetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: figcaption): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: figcaption, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: figure): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: figure, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: filter): StoppablePromise[js.UndefOr[SVGFilterElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: filter, options: Options): StoppablePromise[js.UndefOr[SVGFilterElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: font): StoppablePromise[js.UndefOr[HTMLFontElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: font, options: Options): StoppablePromise[js.UndefOr[HTMLFontElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: footer): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: footer, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: foreignObject): StoppablePromise[js.UndefOr[SVGForeignObjectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: foreignObject, options: Options): StoppablePromise[js.UndefOr[SVGForeignObjectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: form): StoppablePromise[js.UndefOr[HTMLFormElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: form, options: Options): StoppablePromise[js.UndefOr[HTMLFormElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: frame): StoppablePromise[js.UndefOr[HTMLFrameElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: frame, options: Options): StoppablePromise[js.UndefOr[HTMLFrameElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: frameset): StoppablePromise[js.UndefOr[HTMLFrameSetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: frameset, options: Options): StoppablePromise[js.UndefOr[HTMLFrameSetElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: g): StoppablePromise[js.UndefOr[SVGGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: g, options: Options): StoppablePromise[js.UndefOr[SVGGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h1): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h1, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h2): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h2, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h3): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h3, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h4): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h4, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h5): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h5, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h6): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: h6, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: head): StoppablePromise[js.UndefOr[HTMLHeadElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: header): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: header, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: head, options: Options): StoppablePromise[js.UndefOr[HTMLHeadElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: hgroup): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: hgroup, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: hr): StoppablePromise[js.UndefOr[HTMLHRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: hr, options: Options): StoppablePromise[js.UndefOr[HTMLHRElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: html): StoppablePromise[js.UndefOr[HTMLHtmlElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: html, options: Options): StoppablePromise[js.UndefOr[HTMLHtmlElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: i): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: iframe): StoppablePromise[js.UndefOr[HTMLIFrameElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: iframe, options: Options): StoppablePromise[js.UndefOr[HTMLIFrameElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: image): StoppablePromise[js.UndefOr[SVGImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: image, options: Options): StoppablePromise[js.UndefOr[SVGImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: img): StoppablePromise[js.UndefOr[HTMLImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: img, options: Options): StoppablePromise[js.UndefOr[HTMLImageElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: input): StoppablePromise[js.UndefOr[HTMLInputElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: input, options: Options): StoppablePromise[js.UndefOr[HTMLInputElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ins): StoppablePromise[js.UndefOr[HTMLModElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ins, options: Options): StoppablePromise[js.UndefOr[HTMLModElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: i, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: kbd): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: kbd, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: label): StoppablePromise[js.UndefOr[HTMLLabelElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: label, options: Options): StoppablePromise[js.UndefOr[HTMLLabelElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: legend): StoppablePromise[js.UndefOr[HTMLLegendElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: legend, options: Options): StoppablePromise[js.UndefOr[HTMLLegendElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: li): StoppablePromise[js.UndefOr[HTMLLIElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: line): StoppablePromise[js.UndefOr[SVGLineElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: linearGradient): StoppablePromise[js.UndefOr[SVGLinearGradientElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: linearGradient, options: Options): StoppablePromise[js.UndefOr[SVGLinearGradientElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: line, options: Options): StoppablePromise[js.UndefOr[SVGLineElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: link): StoppablePromise[js.UndefOr[HTMLLinkElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: link, options: Options): StoppablePromise[js.UndefOr[HTMLLinkElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: li, options: Options): StoppablePromise[js.UndefOr[HTMLLIElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: main): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: main, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: map): StoppablePromise[js.UndefOr[HTMLMapElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: map, options: Options): StoppablePromise[js.UndefOr[HTMLMapElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: mark): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: marker): StoppablePromise[js.UndefOr[SVGMarkerElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: marker, options: Options): StoppablePromise[js.UndefOr[SVGMarkerElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: mark, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: marquee): StoppablePromise[js.UndefOr[HTMLMarqueeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: marquee, options: Options): StoppablePromise[js.UndefOr[HTMLMarqueeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: mask): StoppablePromise[js.UndefOr[SVGMaskElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: mask, options: Options): StoppablePromise[js.UndefOr[SVGMaskElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: menu): StoppablePromise[js.UndefOr[HTMLMenuElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: menu, options: Options): StoppablePromise[js.UndefOr[HTMLMenuElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: meta): StoppablePromise[js.UndefOr[HTMLMetaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: metadata): StoppablePromise[js.UndefOr[SVGMetadataElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: metadata, options: Options): StoppablePromise[js.UndefOr[SVGMetadataElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: meta, options: Options): StoppablePromise[js.UndefOr[HTMLMetaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: meter): StoppablePromise[js.UndefOr[HTMLMeterElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: meter, options: Options): StoppablePromise[js.UndefOr[HTMLMeterElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: nav): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: nav, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: noscript): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: noscript, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ol): StoppablePromise[js.UndefOr[HTMLOListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ol, options: Options): StoppablePromise[js.UndefOr[HTMLOListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: optgroup): StoppablePromise[js.UndefOr[HTMLOptGroupElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: optgroup, options: Options): StoppablePromise[js.UndefOr[HTMLOptGroupElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: option): StoppablePromise[js.UndefOr[HTMLOptionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: option, options: Options): StoppablePromise[js.UndefOr[HTMLOptionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: output): StoppablePromise[js.UndefOr[HTMLOutputElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: output, options: Options): StoppablePromise[js.UndefOr[HTMLOutputElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: p): StoppablePromise[js.UndefOr[HTMLParagraphElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: param): StoppablePromise[js.UndefOr[HTMLParamElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: param, options: Options): StoppablePromise[js.UndefOr[HTMLParamElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: path): StoppablePromise[js.UndefOr[SVGPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: path, options: Options): StoppablePromise[js.UndefOr[SVGPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: pattern): StoppablePromise[js.UndefOr[SVGPatternElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: pattern, options: Options): StoppablePromise[js.UndefOr[SVGPatternElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: picture): StoppablePromise[js.UndefOr[HTMLPictureElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: picture, options: Options): StoppablePromise[js.UndefOr[HTMLPictureElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: polygon): StoppablePromise[js.UndefOr[SVGPolygonElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: polygon, options: Options): StoppablePromise[js.UndefOr[SVGPolygonElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: polyline): StoppablePromise[js.UndefOr[SVGPolylineElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: polyline, options: Options): StoppablePromise[js.UndefOr[SVGPolylineElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: p, options: Options): StoppablePromise[js.UndefOr[HTMLParagraphElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: pre): StoppablePromise[js.UndefOr[HTMLPreElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: pre, options: Options): StoppablePromise[js.UndefOr[HTMLPreElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: progress): StoppablePromise[js.UndefOr[HTMLProgressElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: progress, options: Options): StoppablePromise[js.UndefOr[HTMLProgressElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: q): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: q, options: Options): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: radialGradient): StoppablePromise[js.UndefOr[SVGRadialGradientElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: radialGradient, options: Options): StoppablePromise[js.UndefOr[SVGRadialGradientElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rect): StoppablePromise[js.UndefOr[SVGRectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rect, options: Options): StoppablePromise[js.UndefOr[SVGRectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rp): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rp, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rt): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: rt, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ruby): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ruby, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: s): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: samp): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: samp, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: script): StoppablePromise[js.UndefOr[HTMLScriptElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: script, options: Options): StoppablePromise[js.UndefOr[HTMLScriptElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: section): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: section, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: select): StoppablePromise[js.UndefOr[HTMLSelectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: select, options: Options): StoppablePromise[js.UndefOr[HTMLSelectElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: slot): StoppablePromise[js.UndefOr[HTMLSlotElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: slot, options: Options): StoppablePromise[js.UndefOr[HTMLSlotElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: small): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: small, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: s, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: source): StoppablePromise[js.UndefOr[HTMLSourceElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: source, options: Options): StoppablePromise[js.UndefOr[HTMLSourceElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: span): StoppablePromise[js.UndefOr[HTMLSpanElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: span, options: Options): StoppablePromise[js.UndefOr[HTMLSpanElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: stop): StoppablePromise[js.UndefOr[SVGStopElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: stop, options: Options): StoppablePromise[js.UndefOr[SVGStopElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: strong): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: strong, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: style): StoppablePromise[js.UndefOr[HTMLStyleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: style, options: Options): StoppablePromise[js.UndefOr[HTMLStyleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: sub): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: sub, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: summary): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: summary, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: sup): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: sup, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: svg): StoppablePromise[js.UndefOr[SVGSVGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: svg, options: Options): StoppablePromise[js.UndefOr[SVGSVGElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: switch): StoppablePromise[js.UndefOr[SVGSwitchElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: switch, options: Options): StoppablePromise[js.UndefOr[SVGSwitchElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: symbol): StoppablePromise[js.UndefOr[SVGSymbolElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: symbol, options: Options): StoppablePromise[js.UndefOr[SVGSymbolElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: table): StoppablePromise[js.UndefOr[HTMLTableElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: table, options: Options): StoppablePromise[js.UndefOr[HTMLTableElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tbody): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tbody, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: td): StoppablePromise[js.UndefOr[HTMLTableDataCellElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: td, options: Options): StoppablePromise[js.UndefOr[HTMLTableDataCellElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: template): StoppablePromise[js.UndefOr[HTMLTemplateElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: template, options: Options): StoppablePromise[js.UndefOr[HTMLTemplateElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: text): StoppablePromise[js.UndefOr[SVGTextElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: textPath): StoppablePromise[js.UndefOr[SVGTextPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: textPath, options: Options): StoppablePromise[js.UndefOr[SVGTextPathElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: textarea): StoppablePromise[js.UndefOr[HTMLTextAreaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: textarea, options: Options): StoppablePromise[js.UndefOr[HTMLTextAreaElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: text, options: Options): StoppablePromise[js.UndefOr[SVGTextElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tfoot): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tfoot, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: th): StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: thead): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: thead, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: th, options: Options): StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: time): StoppablePromise[js.UndefOr[HTMLTimeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: time, options: Options): StoppablePromise[js.UndefOr[HTMLTimeElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: title): StoppablePromise[js.UndefOr[HTMLTitleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: title, options: Options): StoppablePromise[js.UndefOr[HTMLTitleElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tr): StoppablePromise[js.UndefOr[HTMLTableRowElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: track): StoppablePromise[js.UndefOr[HTMLTrackElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: track, options: Options): StoppablePromise[js.UndefOr[HTMLTrackElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tr, options: Options): StoppablePromise[js.UndefOr[HTMLTableRowElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tspan): StoppablePromise[js.UndefOr[SVGTSpanElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: tspan, options: Options): StoppablePromise[js.UndefOr[SVGTSpanElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: u): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ul): StoppablePromise[js.UndefOr[HTMLUListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: ul, options: Options): StoppablePromise[js.UndefOr[HTMLUListElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: u, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: use): StoppablePromise[js.UndefOr[SVGUseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: use, options: Options): StoppablePromise[js.UndefOr[SVGUseElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: video): StoppablePromise[js.UndefOr[HTMLVideoElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: video, options: Options): StoppablePromise[js.UndefOr[HTMLVideoElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: view): StoppablePromise[js.UndefOr[SVGViewElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: view, options: Options): StoppablePromise[js.UndefOr[SVGViewElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: wbr): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply(selector: wbr, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply[ElementName /* <: Element */](selector: String): StoppablePromise[js.UndefOr[ElementName]] = js.native
-  @JSImport("element-ready", JSImport.Namespace)
-  @js.native
-  def apply[ElementName /* <: Element */](selector: String, options: Options): StoppablePromise[js.UndefOr[ElementName]] = js.native
+  @scala.inline
+  def apply(selector: a): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAnchorElement]]]
+  @scala.inline
+  def apply(selector: abbr): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: abbr, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: address): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: address, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: a, options: Options): StoppablePromise[js.UndefOr[HTMLAnchorElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAnchorElement]]]
+  @scala.inline
+  def apply(selector: applet): StoppablePromise[js.UndefOr[HTMLAppletElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAppletElement]]]
+  @scala.inline
+  def apply(selector: applet, options: Options): StoppablePromise[js.UndefOr[HTMLAppletElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAppletElement]]]
+  @scala.inline
+  def apply(selector: area): StoppablePromise[js.UndefOr[HTMLAreaElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAreaElement]]]
+  @scala.inline
+  def apply(selector: area, options: Options): StoppablePromise[js.UndefOr[HTMLAreaElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAreaElement]]]
+  @scala.inline
+  def apply(selector: article): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: article, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: aside): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: aside, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: audio): StoppablePromise[js.UndefOr[HTMLAudioElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAudioElement]]]
+  @scala.inline
+  def apply(selector: audio, options: Options): StoppablePromise[js.UndefOr[HTMLAudioElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLAudioElement]]]
+  @scala.inline
+  def apply(selector: b): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: base): StoppablePromise[js.UndefOr[HTMLBaseElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBaseElement]]]
+  @scala.inline
+  def apply(selector: basefont): StoppablePromise[js.UndefOr[HTMLBaseFontElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBaseFontElement]]]
+  @scala.inline
+  def apply(selector: basefont, options: Options): StoppablePromise[js.UndefOr[HTMLBaseFontElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBaseFontElement]]]
+  @scala.inline
+  def apply(selector: base, options: Options): StoppablePromise[js.UndefOr[HTMLBaseElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBaseElement]]]
+  @scala.inline
+  def apply(selector: bdi): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: bdi, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: bdo): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: bdo, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: blockquote): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLQuoteElement]]]
+  @scala.inline
+  def apply(selector: blockquote, options: Options): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLQuoteElement]]]
+  @scala.inline
+  def apply(selector: body): StoppablePromise[js.UndefOr[HTMLBodyElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBodyElement]]]
+  @scala.inline
+  def apply(selector: body, options: Options): StoppablePromise[js.UndefOr[HTMLBodyElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBodyElement]]]
+  @scala.inline
+  def apply(selector: b, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: br): StoppablePromise[js.UndefOr[HTMLBRElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBRElement]]]
+  @scala.inline
+  def apply(selector: br, options: Options): StoppablePromise[js.UndefOr[HTMLBRElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLBRElement]]]
+  @scala.inline
+  def apply(selector: button): StoppablePromise[js.UndefOr[HTMLButtonElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLButtonElement]]]
+  @scala.inline
+  def apply(selector: button, options: Options): StoppablePromise[js.UndefOr[HTMLButtonElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLButtonElement]]]
+  @scala.inline
+  def apply(selector: canvas): StoppablePromise[js.UndefOr[HTMLCanvasElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLCanvasElement]]]
+  @scala.inline
+  def apply(selector: canvas, options: Options): StoppablePromise[js.UndefOr[HTMLCanvasElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLCanvasElement]]]
+  @scala.inline
+  def apply(selector: caption): StoppablePromise[js.UndefOr[HTMLTableCaptionElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableCaptionElement]]]
+  @scala.inline
+  def apply(selector: caption, options: Options): StoppablePromise[js.UndefOr[HTMLTableCaptionElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableCaptionElement]]]
+  @scala.inline
+  def apply(selector: circle): StoppablePromise[js.UndefOr[SVGCircleElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGCircleElement]]]
+  @scala.inline
+  def apply(selector: circle, options: Options): StoppablePromise[js.UndefOr[SVGCircleElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGCircleElement]]]
+  @scala.inline
+  def apply(selector: cite): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: cite, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: clipPath): StoppablePromise[js.UndefOr[SVGClipPathElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGClipPathElement]]]
+  @scala.inline
+  def apply(selector: clipPath, options: Options): StoppablePromise[js.UndefOr[SVGClipPathElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGClipPathElement]]]
+  @scala.inline
+  def apply(selector: code): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: code, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: col): StoppablePromise[js.UndefOr[HTMLTableColElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableColElement]]]
+  @scala.inline
+  def apply(selector: colgroup): StoppablePromise[js.UndefOr[HTMLTableColElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableColElement]]]
+  @scala.inline
+  def apply(selector: colgroup, options: Options): StoppablePromise[js.UndefOr[HTMLTableColElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableColElement]]]
+  @scala.inline
+  def apply(selector: col, options: Options): StoppablePromise[js.UndefOr[HTMLTableColElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableColElement]]]
+  @scala.inline
+  def apply(selector: data): StoppablePromise[js.UndefOr[HTMLDataElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDataElement]]]
+  @scala.inline
+  def apply(selector: datalist): StoppablePromise[js.UndefOr[HTMLDataListElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDataListElement]]]
+  @scala.inline
+  def apply(selector: datalist, options: Options): StoppablePromise[js.UndefOr[HTMLDataListElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDataListElement]]]
+  @scala.inline
+  def apply(selector: data, options: Options): StoppablePromise[js.UndefOr[HTMLDataElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDataElement]]]
+  @scala.inline
+  def apply(selector: dd): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: dd, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: defs): StoppablePromise[js.UndefOr[SVGDefsElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGDefsElement]]]
+  @scala.inline
+  def apply(selector: defs, options: Options): StoppablePromise[js.UndefOr[SVGDefsElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGDefsElement]]]
+  @scala.inline
+  def apply(selector: del): StoppablePromise[js.UndefOr[HTMLModElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLModElement]]]
+  @scala.inline
+  def apply(selector: del, options: Options): StoppablePromise[js.UndefOr[HTMLModElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLModElement]]]
+  @scala.inline
+  def apply(selector: desc): StoppablePromise[js.UndefOr[SVGDescElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGDescElement]]]
+  @scala.inline
+  def apply(selector: desc, options: Options): StoppablePromise[js.UndefOr[SVGDescElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGDescElement]]]
+  @scala.inline
+  def apply(selector: details): StoppablePromise[js.UndefOr[HTMLDetailsElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDetailsElement]]]
+  @scala.inline
+  def apply(selector: details, options: Options): StoppablePromise[js.UndefOr[HTMLDetailsElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDetailsElement]]]
+  @scala.inline
+  def apply(selector: dfn): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: dfn, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: dialog): StoppablePromise[js.UndefOr[HTMLDialogElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDialogElement]]]
+  @scala.inline
+  def apply(selector: dialog, options: Options): StoppablePromise[js.UndefOr[HTMLDialogElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDialogElement]]]
+  @scala.inline
+  def apply(selector: dir): StoppablePromise[js.UndefOr[HTMLDirectoryElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDirectoryElement]]]
+  @scala.inline
+  def apply(selector: dir, options: Options): StoppablePromise[js.UndefOr[HTMLDirectoryElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDirectoryElement]]]
+  @scala.inline
+  def apply(selector: div): StoppablePromise[js.UndefOr[HTMLDivElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDivElement]]]
+  @scala.inline
+  def apply(selector: div, options: Options): StoppablePromise[js.UndefOr[HTMLDivElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDivElement]]]
+  @scala.inline
+  def apply(selector: dl): StoppablePromise[js.UndefOr[HTMLDListElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDListElement]]]
+  @scala.inline
+  def apply(selector: dl, options: Options): StoppablePromise[js.UndefOr[HTMLDListElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLDListElement]]]
+  @scala.inline
+  def apply(selector: dt): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: dt, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: ellipse): StoppablePromise[js.UndefOr[SVGEllipseElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGEllipseElement]]]
+  @scala.inline
+  def apply(selector: ellipse, options: Options): StoppablePromise[js.UndefOr[SVGEllipseElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGEllipseElement]]]
+  @scala.inline
+  def apply(selector: em): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: embed): StoppablePromise[js.UndefOr[HTMLEmbedElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLEmbedElement]]]
+  @scala.inline
+  def apply(selector: embed, options: Options): StoppablePromise[js.UndefOr[HTMLEmbedElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLEmbedElement]]]
+  @scala.inline
+  def apply(selector: em, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: feBlend): StoppablePromise[js.UndefOr[SVGFEBlendElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEBlendElement]]]
+  @scala.inline
+  def apply(selector: feBlend, options: Options): StoppablePromise[js.UndefOr[SVGFEBlendElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEBlendElement]]]
+  @scala.inline
+  def apply(selector: feColorMatrix): StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]]]
+  @scala.inline
+  def apply(selector: feColorMatrix, options: Options): StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEColorMatrixElement]]]
+  @scala.inline
+  def apply(selector: feComponentTransfer): StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]]]
+  @scala.inline
+  def apply(selector: feComponentTransfer, options: Options): StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEComponentTransferElement]]]
+  @scala.inline
+  def apply(selector: feComposite): StoppablePromise[js.UndefOr[SVGFECompositeElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFECompositeElement]]]
+  @scala.inline
+  def apply(selector: feComposite, options: Options): StoppablePromise[js.UndefOr[SVGFECompositeElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFECompositeElement]]]
+  @scala.inline
+  def apply(selector: feConvolveMatrix): StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]]]
+  @scala.inline
+  def apply(selector: feConvolveMatrix, options: Options): StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEConvolveMatrixElement]]]
+  @scala.inline
+  def apply(selector: feDiffuseLighting): StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]]]
+  @scala.inline
+  def apply(selector: feDiffuseLighting, options: Options): StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDiffuseLightingElement]]]
+  @scala.inline
+  def apply(selector: feDisplacementMap): StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]]]
+  @scala.inline
+  def apply(selector: feDisplacementMap, options: Options): StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDisplacementMapElement]]]
+  @scala.inline
+  def apply(selector: feDistantLight): StoppablePromise[js.UndefOr[SVGFEDistantLightElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDistantLightElement]]]
+  @scala.inline
+  def apply(selector: feDistantLight, options: Options): StoppablePromise[js.UndefOr[SVGFEDistantLightElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEDistantLightElement]]]
+  @scala.inline
+  def apply(selector: feFlood): StoppablePromise[js.UndefOr[SVGFEFloodElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFloodElement]]]
+  @scala.inline
+  def apply(selector: feFlood, options: Options): StoppablePromise[js.UndefOr[SVGFEFloodElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFloodElement]]]
+  @scala.inline
+  def apply(selector: feFuncA): StoppablePromise[js.UndefOr[SVGFEFuncAElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncAElement]]]
+  @scala.inline
+  def apply(selector: feFuncA, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncAElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncAElement]]]
+  @scala.inline
+  def apply(selector: feFuncB): StoppablePromise[js.UndefOr[SVGFEFuncBElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncBElement]]]
+  @scala.inline
+  def apply(selector: feFuncB, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncBElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncBElement]]]
+  @scala.inline
+  def apply(selector: feFuncG): StoppablePromise[js.UndefOr[SVGFEFuncGElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncGElement]]]
+  @scala.inline
+  def apply(selector: feFuncG, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncGElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncGElement]]]
+  @scala.inline
+  def apply(selector: feFuncR): StoppablePromise[js.UndefOr[SVGFEFuncRElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncRElement]]]
+  @scala.inline
+  def apply(selector: feFuncR, options: Options): StoppablePromise[js.UndefOr[SVGFEFuncRElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEFuncRElement]]]
+  @scala.inline
+  def apply(selector: feGaussianBlur): StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]]]
+  @scala.inline
+  def apply(selector: feGaussianBlur, options: Options): StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEGaussianBlurElement]]]
+  @scala.inline
+  def apply(selector: feImage): StoppablePromise[js.UndefOr[SVGFEImageElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEImageElement]]]
+  @scala.inline
+  def apply(selector: feImage, options: Options): StoppablePromise[js.UndefOr[SVGFEImageElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEImageElement]]]
+  @scala.inline
+  def apply(selector: feMerge): StoppablePromise[js.UndefOr[SVGFEMergeElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMergeElement]]]
+  @scala.inline
+  def apply(selector: feMergeNode): StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]]]
+  @scala.inline
+  def apply(selector: feMergeNode, options: Options): StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMergeNodeElement]]]
+  @scala.inline
+  def apply(selector: feMerge, options: Options): StoppablePromise[js.UndefOr[SVGFEMergeElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMergeElement]]]
+  @scala.inline
+  def apply(selector: feMorphology): StoppablePromise[js.UndefOr[SVGFEMorphologyElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMorphologyElement]]]
+  @scala.inline
+  def apply(selector: feMorphology, options: Options): StoppablePromise[js.UndefOr[SVGFEMorphologyElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEMorphologyElement]]]
+  @scala.inline
+  def apply(selector: feOffset): StoppablePromise[js.UndefOr[SVGFEOffsetElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEOffsetElement]]]
+  @scala.inline
+  def apply(selector: feOffset, options: Options): StoppablePromise[js.UndefOr[SVGFEOffsetElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEOffsetElement]]]
+  @scala.inline
+  def apply(selector: fePointLight): StoppablePromise[js.UndefOr[SVGFEPointLightElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEPointLightElement]]]
+  @scala.inline
+  def apply(selector: fePointLight, options: Options): StoppablePromise[js.UndefOr[SVGFEPointLightElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFEPointLightElement]]]
+  @scala.inline
+  def apply(selector: feSpecularLighting): StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]]]
+  @scala.inline
+  def apply(selector: feSpecularLighting, options: Options): StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFESpecularLightingElement]]]
+  @scala.inline
+  def apply(selector: feSpotLight): StoppablePromise[js.UndefOr[SVGFESpotLightElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFESpotLightElement]]]
+  @scala.inline
+  def apply(selector: feSpotLight, options: Options): StoppablePromise[js.UndefOr[SVGFESpotLightElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFESpotLightElement]]]
+  @scala.inline
+  def apply(selector: feTile): StoppablePromise[js.UndefOr[SVGFETileElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFETileElement]]]
+  @scala.inline
+  def apply(selector: feTile, options: Options): StoppablePromise[js.UndefOr[SVGFETileElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFETileElement]]]
+  @scala.inline
+  def apply(selector: feTurbulence): StoppablePromise[js.UndefOr[SVGFETurbulenceElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFETurbulenceElement]]]
+  @scala.inline
+  def apply(selector: feTurbulence, options: Options): StoppablePromise[js.UndefOr[SVGFETurbulenceElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFETurbulenceElement]]]
+  @scala.inline
+  def apply(selector: fieldset): StoppablePromise[js.UndefOr[HTMLFieldSetElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFieldSetElement]]]
+  @scala.inline
+  def apply(selector: fieldset, options: Options): StoppablePromise[js.UndefOr[HTMLFieldSetElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFieldSetElement]]]
+  @scala.inline
+  def apply(selector: figcaption): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: figcaption, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: figure): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: figure, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: filter): StoppablePromise[js.UndefOr[SVGFilterElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGFilterElement]]]
+  @scala.inline
+  def apply(selector: filter, options: Options): StoppablePromise[js.UndefOr[SVGFilterElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGFilterElement]]]
+  @scala.inline
+  def apply(selector: font): StoppablePromise[js.UndefOr[HTMLFontElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFontElement]]]
+  @scala.inline
+  def apply(selector: font, options: Options): StoppablePromise[js.UndefOr[HTMLFontElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFontElement]]]
+  @scala.inline
+  def apply(selector: footer): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: footer, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: foreignObject): StoppablePromise[js.UndefOr[SVGForeignObjectElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGForeignObjectElement]]]
+  @scala.inline
+  def apply(selector: foreignObject, options: Options): StoppablePromise[js.UndefOr[SVGForeignObjectElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGForeignObjectElement]]]
+  @scala.inline
+  def apply(selector: form): StoppablePromise[js.UndefOr[HTMLFormElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFormElement]]]
+  @scala.inline
+  def apply(selector: form, options: Options): StoppablePromise[js.UndefOr[HTMLFormElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFormElement]]]
+  @scala.inline
+  def apply(selector: frame): StoppablePromise[js.UndefOr[HTMLFrameElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFrameElement]]]
+  @scala.inline
+  def apply(selector: frame, options: Options): StoppablePromise[js.UndefOr[HTMLFrameElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFrameElement]]]
+  @scala.inline
+  def apply(selector: frameset): StoppablePromise[js.UndefOr[HTMLFrameSetElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFrameSetElement]]]
+  @scala.inline
+  def apply(selector: frameset, options: Options): StoppablePromise[js.UndefOr[HTMLFrameSetElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLFrameSetElement]]]
+  @scala.inline
+  def apply(selector: g): StoppablePromise[js.UndefOr[SVGGElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGGElement]]]
+  @scala.inline
+  def apply(selector: g, options: Options): StoppablePromise[js.UndefOr[SVGGElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGGElement]]]
+  @scala.inline
+  def apply(selector: h1): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h1, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h2): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h2, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h3): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h3, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h4): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h4, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h5): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h5, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h6): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: h6, options: Options): StoppablePromise[js.UndefOr[HTMLHeadingElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadingElement]]]
+  @scala.inline
+  def apply(selector: head): StoppablePromise[js.UndefOr[HTMLHeadElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadElement]]]
+  @scala.inline
+  def apply(selector: header): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: header, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: head, options: Options): StoppablePromise[js.UndefOr[HTMLHeadElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHeadElement]]]
+  @scala.inline
+  def apply(selector: hgroup): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: hgroup, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: hr): StoppablePromise[js.UndefOr[HTMLHRElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHRElement]]]
+  @scala.inline
+  def apply(selector: hr, options: Options): StoppablePromise[js.UndefOr[HTMLHRElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHRElement]]]
+  @scala.inline
+  def apply(selector: html): StoppablePromise[js.UndefOr[HTMLHtmlElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHtmlElement]]]
+  @scala.inline
+  def apply(selector: html, options: Options): StoppablePromise[js.UndefOr[HTMLHtmlElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLHtmlElement]]]
+  @scala.inline
+  def apply(selector: i): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: iframe): StoppablePromise[js.UndefOr[HTMLIFrameElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLIFrameElement]]]
+  @scala.inline
+  def apply(selector: iframe, options: Options): StoppablePromise[js.UndefOr[HTMLIFrameElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLIFrameElement]]]
+  @scala.inline
+  def apply(selector: image): StoppablePromise[js.UndefOr[SVGImageElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGImageElement]]]
+  @scala.inline
+  def apply(selector: image, options: Options): StoppablePromise[js.UndefOr[SVGImageElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGImageElement]]]
+  @scala.inline
+  def apply(selector: img): StoppablePromise[js.UndefOr[HTMLImageElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLImageElement]]]
+  @scala.inline
+  def apply(selector: img, options: Options): StoppablePromise[js.UndefOr[HTMLImageElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLImageElement]]]
+  @scala.inline
+  def apply(selector: input): StoppablePromise[js.UndefOr[HTMLInputElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLInputElement]]]
+  @scala.inline
+  def apply(selector: input, options: Options): StoppablePromise[js.UndefOr[HTMLInputElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLInputElement]]]
+  @scala.inline
+  def apply(selector: ins): StoppablePromise[js.UndefOr[HTMLModElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLModElement]]]
+  @scala.inline
+  def apply(selector: ins, options: Options): StoppablePromise[js.UndefOr[HTMLModElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLModElement]]]
+  @scala.inline
+  def apply(selector: i, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: kbd): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: kbd, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: label): StoppablePromise[js.UndefOr[HTMLLabelElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLabelElement]]]
+  @scala.inline
+  def apply(selector: label, options: Options): StoppablePromise[js.UndefOr[HTMLLabelElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLabelElement]]]
+  @scala.inline
+  def apply(selector: legend): StoppablePromise[js.UndefOr[HTMLLegendElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLegendElement]]]
+  @scala.inline
+  def apply(selector: legend, options: Options): StoppablePromise[js.UndefOr[HTMLLegendElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLegendElement]]]
+  @scala.inline
+  def apply(selector: li): StoppablePromise[js.UndefOr[HTMLLIElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLIElement]]]
+  @scala.inline
+  def apply(selector: line): StoppablePromise[js.UndefOr[SVGLineElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGLineElement]]]
+  @scala.inline
+  def apply(selector: linearGradient): StoppablePromise[js.UndefOr[SVGLinearGradientElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGLinearGradientElement]]]
+  @scala.inline
+  def apply(selector: linearGradient, options: Options): StoppablePromise[js.UndefOr[SVGLinearGradientElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGLinearGradientElement]]]
+  @scala.inline
+  def apply(selector: line, options: Options): StoppablePromise[js.UndefOr[SVGLineElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGLineElement]]]
+  @scala.inline
+  def apply(selector: link): StoppablePromise[js.UndefOr[HTMLLinkElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLinkElement]]]
+  @scala.inline
+  def apply(selector: link, options: Options): StoppablePromise[js.UndefOr[HTMLLinkElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLinkElement]]]
+  @scala.inline
+  def apply(selector: li, options: Options): StoppablePromise[js.UndefOr[HTMLLIElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLLIElement]]]
+  @scala.inline
+  def apply(selector: main): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: main, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: map): StoppablePromise[js.UndefOr[HTMLMapElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMapElement]]]
+  @scala.inline
+  def apply(selector: map, options: Options): StoppablePromise[js.UndefOr[HTMLMapElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMapElement]]]
+  @scala.inline
+  def apply(selector: mark): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: marker): StoppablePromise[js.UndefOr[SVGMarkerElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGMarkerElement]]]
+  @scala.inline
+  def apply(selector: marker, options: Options): StoppablePromise[js.UndefOr[SVGMarkerElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGMarkerElement]]]
+  @scala.inline
+  def apply(selector: mark, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: marquee): StoppablePromise[js.UndefOr[HTMLMarqueeElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMarqueeElement]]]
+  @scala.inline
+  def apply(selector: marquee, options: Options): StoppablePromise[js.UndefOr[HTMLMarqueeElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMarqueeElement]]]
+  @scala.inline
+  def apply(selector: mask): StoppablePromise[js.UndefOr[SVGMaskElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGMaskElement]]]
+  @scala.inline
+  def apply(selector: mask, options: Options): StoppablePromise[js.UndefOr[SVGMaskElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGMaskElement]]]
+  @scala.inline
+  def apply(selector: menu): StoppablePromise[js.UndefOr[HTMLMenuElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMenuElement]]]
+  @scala.inline
+  def apply(selector: menu, options: Options): StoppablePromise[js.UndefOr[HTMLMenuElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMenuElement]]]
+  @scala.inline
+  def apply(selector: meta): StoppablePromise[js.UndefOr[HTMLMetaElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMetaElement]]]
+  @scala.inline
+  def apply(selector: metadata): StoppablePromise[js.UndefOr[SVGMetadataElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGMetadataElement]]]
+  @scala.inline
+  def apply(selector: metadata, options: Options): StoppablePromise[js.UndefOr[SVGMetadataElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGMetadataElement]]]
+  @scala.inline
+  def apply(selector: meta, options: Options): StoppablePromise[js.UndefOr[HTMLMetaElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMetaElement]]]
+  @scala.inline
+  def apply(selector: meter): StoppablePromise[js.UndefOr[HTMLMeterElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMeterElement]]]
+  @scala.inline
+  def apply(selector: meter, options: Options): StoppablePromise[js.UndefOr[HTMLMeterElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLMeterElement]]]
+  @scala.inline
+  def apply(selector: nav): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: nav, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: noscript): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: noscript, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: ol): StoppablePromise[js.UndefOr[HTMLOListElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOListElement]]]
+  @scala.inline
+  def apply(selector: ol, options: Options): StoppablePromise[js.UndefOr[HTMLOListElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOListElement]]]
+  @scala.inline
+  def apply(selector: optgroup): StoppablePromise[js.UndefOr[HTMLOptGroupElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOptGroupElement]]]
+  @scala.inline
+  def apply(selector: optgroup, options: Options): StoppablePromise[js.UndefOr[HTMLOptGroupElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOptGroupElement]]]
+  @scala.inline
+  def apply(selector: option): StoppablePromise[js.UndefOr[HTMLOptionElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOptionElement]]]
+  @scala.inline
+  def apply(selector: option, options: Options): StoppablePromise[js.UndefOr[HTMLOptionElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOptionElement]]]
+  @scala.inline
+  def apply(selector: output): StoppablePromise[js.UndefOr[HTMLOutputElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOutputElement]]]
+  @scala.inline
+  def apply(selector: output, options: Options): StoppablePromise[js.UndefOr[HTMLOutputElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLOutputElement]]]
+  @scala.inline
+  def apply(selector: p): StoppablePromise[js.UndefOr[HTMLParagraphElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLParagraphElement]]]
+  @scala.inline
+  def apply(selector: param): StoppablePromise[js.UndefOr[HTMLParamElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLParamElement]]]
+  @scala.inline
+  def apply(selector: param, options: Options): StoppablePromise[js.UndefOr[HTMLParamElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLParamElement]]]
+  @scala.inline
+  def apply(selector: path): StoppablePromise[js.UndefOr[SVGPathElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGPathElement]]]
+  @scala.inline
+  def apply(selector: path, options: Options): StoppablePromise[js.UndefOr[SVGPathElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGPathElement]]]
+  @scala.inline
+  def apply(selector: pattern): StoppablePromise[js.UndefOr[SVGPatternElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGPatternElement]]]
+  @scala.inline
+  def apply(selector: pattern, options: Options): StoppablePromise[js.UndefOr[SVGPatternElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGPatternElement]]]
+  @scala.inline
+  def apply(selector: picture): StoppablePromise[js.UndefOr[HTMLPictureElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLPictureElement]]]
+  @scala.inline
+  def apply(selector: picture, options: Options): StoppablePromise[js.UndefOr[HTMLPictureElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLPictureElement]]]
+  @scala.inline
+  def apply(selector: polygon): StoppablePromise[js.UndefOr[SVGPolygonElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGPolygonElement]]]
+  @scala.inline
+  def apply(selector: polygon, options: Options): StoppablePromise[js.UndefOr[SVGPolygonElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGPolygonElement]]]
+  @scala.inline
+  def apply(selector: polyline): StoppablePromise[js.UndefOr[SVGPolylineElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGPolylineElement]]]
+  @scala.inline
+  def apply(selector: polyline, options: Options): StoppablePromise[js.UndefOr[SVGPolylineElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGPolylineElement]]]
+  @scala.inline
+  def apply(selector: p, options: Options): StoppablePromise[js.UndefOr[HTMLParagraphElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLParagraphElement]]]
+  @scala.inline
+  def apply(selector: pre): StoppablePromise[js.UndefOr[HTMLPreElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLPreElement]]]
+  @scala.inline
+  def apply(selector: pre, options: Options): StoppablePromise[js.UndefOr[HTMLPreElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLPreElement]]]
+  @scala.inline
+  def apply(selector: progress): StoppablePromise[js.UndefOr[HTMLProgressElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLProgressElement]]]
+  @scala.inline
+  def apply(selector: progress, options: Options): StoppablePromise[js.UndefOr[HTMLProgressElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLProgressElement]]]
+  @scala.inline
+  def apply(selector: q): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLQuoteElement]]]
+  @scala.inline
+  def apply(selector: q, options: Options): StoppablePromise[js.UndefOr[HTMLQuoteElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLQuoteElement]]]
+  @scala.inline
+  def apply(selector: radialGradient): StoppablePromise[js.UndefOr[SVGRadialGradientElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGRadialGradientElement]]]
+  @scala.inline
+  def apply(selector: radialGradient, options: Options): StoppablePromise[js.UndefOr[SVGRadialGradientElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGRadialGradientElement]]]
+  @scala.inline
+  def apply(selector: rect): StoppablePromise[js.UndefOr[SVGRectElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGRectElement]]]
+  @scala.inline
+  def apply(selector: rect, options: Options): StoppablePromise[js.UndefOr[SVGRectElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGRectElement]]]
+  @scala.inline
+  def apply(selector: rp): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: rp, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: rt): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: rt, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: ruby): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: ruby, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: s): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: samp): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: samp, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: script): StoppablePromise[js.UndefOr[HTMLScriptElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLScriptElement]]]
+  @scala.inline
+  def apply(selector: script, options: Options): StoppablePromise[js.UndefOr[HTMLScriptElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLScriptElement]]]
+  @scala.inline
+  def apply(selector: section): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: section, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: select): StoppablePromise[js.UndefOr[HTMLSelectElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSelectElement]]]
+  @scala.inline
+  def apply(selector: select, options: Options): StoppablePromise[js.UndefOr[HTMLSelectElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSelectElement]]]
+  @scala.inline
+  def apply(selector: slot): StoppablePromise[js.UndefOr[HTMLSlotElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSlotElement]]]
+  @scala.inline
+  def apply(selector: slot, options: Options): StoppablePromise[js.UndefOr[HTMLSlotElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSlotElement]]]
+  @scala.inline
+  def apply(selector: small): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: small, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: s, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: source): StoppablePromise[js.UndefOr[HTMLSourceElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSourceElement]]]
+  @scala.inline
+  def apply(selector: source, options: Options): StoppablePromise[js.UndefOr[HTMLSourceElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSourceElement]]]
+  @scala.inline
+  def apply(selector: span): StoppablePromise[js.UndefOr[HTMLSpanElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSpanElement]]]
+  @scala.inline
+  def apply(selector: span, options: Options): StoppablePromise[js.UndefOr[HTMLSpanElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLSpanElement]]]
+  @scala.inline
+  def apply(selector: stop): StoppablePromise[js.UndefOr[SVGStopElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGStopElement]]]
+  @scala.inline
+  def apply(selector: stop, options: Options): StoppablePromise[js.UndefOr[SVGStopElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGStopElement]]]
+  @scala.inline
+  def apply(selector: strong): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: strong, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: style): StoppablePromise[js.UndefOr[HTMLStyleElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLStyleElement]]]
+  @scala.inline
+  def apply(selector: style, options: Options): StoppablePromise[js.UndefOr[HTMLStyleElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLStyleElement]]]
+  @scala.inline
+  def apply(selector: sub): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: sub, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: summary): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: summary, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: sup): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: sup, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: svg): StoppablePromise[js.UndefOr[SVGSVGElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGSVGElement]]]
+  @scala.inline
+  def apply(selector: svg, options: Options): StoppablePromise[js.UndefOr[SVGSVGElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGSVGElement]]]
+  @scala.inline
+  def apply(selector: switch): StoppablePromise[js.UndefOr[SVGSwitchElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGSwitchElement]]]
+  @scala.inline
+  def apply(selector: switch, options: Options): StoppablePromise[js.UndefOr[SVGSwitchElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGSwitchElement]]]
+  @scala.inline
+  def apply(selector: symbol): StoppablePromise[js.UndefOr[SVGSymbolElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGSymbolElement]]]
+  @scala.inline
+  def apply(selector: symbol, options: Options): StoppablePromise[js.UndefOr[SVGSymbolElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGSymbolElement]]]
+  @scala.inline
+  def apply(selector: table): StoppablePromise[js.UndefOr[HTMLTableElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableElement]]]
+  @scala.inline
+  def apply(selector: table, options: Options): StoppablePromise[js.UndefOr[HTMLTableElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableElement]]]
+  @scala.inline
+  def apply(selector: tbody): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: tbody, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: td): StoppablePromise[js.UndefOr[HTMLTableDataCellElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableDataCellElement]]]
+  @scala.inline
+  def apply(selector: td, options: Options): StoppablePromise[js.UndefOr[HTMLTableDataCellElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableDataCellElement]]]
+  @scala.inline
+  def apply(selector: template): StoppablePromise[js.UndefOr[HTMLTemplateElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTemplateElement]]]
+  @scala.inline
+  def apply(selector: template, options: Options): StoppablePromise[js.UndefOr[HTMLTemplateElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTemplateElement]]]
+  @scala.inline
+  def apply(selector: text): StoppablePromise[js.UndefOr[SVGTextElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGTextElement]]]
+  @scala.inline
+  def apply(selector: textPath): StoppablePromise[js.UndefOr[SVGTextPathElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGTextPathElement]]]
+  @scala.inline
+  def apply(selector: textPath, options: Options): StoppablePromise[js.UndefOr[SVGTextPathElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGTextPathElement]]]
+  @scala.inline
+  def apply(selector: textarea): StoppablePromise[js.UndefOr[HTMLTextAreaElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTextAreaElement]]]
+  @scala.inline
+  def apply(selector: textarea, options: Options): StoppablePromise[js.UndefOr[HTMLTextAreaElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTextAreaElement]]]
+  @scala.inline
+  def apply(selector: text, options: Options): StoppablePromise[js.UndefOr[SVGTextElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGTextElement]]]
+  @scala.inline
+  def apply(selector: tfoot): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: tfoot, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: th): StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]]]
+  @scala.inline
+  def apply(selector: thead): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: thead, options: Options): StoppablePromise[js.UndefOr[HTMLTableSectionElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableSectionElement]]]
+  @scala.inline
+  def apply(selector: th, options: Options): StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableHeaderCellElement]]]
+  @scala.inline
+  def apply(selector: time): StoppablePromise[js.UndefOr[HTMLTimeElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTimeElement]]]
+  @scala.inline
+  def apply(selector: time, options: Options): StoppablePromise[js.UndefOr[HTMLTimeElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTimeElement]]]
+  @scala.inline
+  def apply(selector: title): StoppablePromise[js.UndefOr[HTMLTitleElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTitleElement]]]
+  @scala.inline
+  def apply(selector: title, options: Options): StoppablePromise[js.UndefOr[HTMLTitleElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTitleElement]]]
+  @scala.inline
+  def apply(selector: tr): StoppablePromise[js.UndefOr[HTMLTableRowElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableRowElement]]]
+  @scala.inline
+  def apply(selector: track): StoppablePromise[js.UndefOr[HTMLTrackElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTrackElement]]]
+  @scala.inline
+  def apply(selector: track, options: Options): StoppablePromise[js.UndefOr[HTMLTrackElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTrackElement]]]
+  @scala.inline
+  def apply(selector: tr, options: Options): StoppablePromise[js.UndefOr[HTMLTableRowElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLTableRowElement]]]
+  @scala.inline
+  def apply(selector: tspan): StoppablePromise[js.UndefOr[SVGTSpanElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGTSpanElement]]]
+  @scala.inline
+  def apply(selector: tspan, options: Options): StoppablePromise[js.UndefOr[SVGTSpanElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGTSpanElement]]]
+  @scala.inline
+  def apply(selector: u): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: ul): StoppablePromise[js.UndefOr[HTMLUListElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLUListElement]]]
+  @scala.inline
+  def apply(selector: ul, options: Options): StoppablePromise[js.UndefOr[HTMLUListElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLUListElement]]]
+  @scala.inline
+  def apply(selector: u, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: use): StoppablePromise[js.UndefOr[SVGUseElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGUseElement]]]
+  @scala.inline
+  def apply(selector: use, options: Options): StoppablePromise[js.UndefOr[SVGUseElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGUseElement]]]
+  @scala.inline
+  def apply(selector: video): StoppablePromise[js.UndefOr[HTMLVideoElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLVideoElement]]]
+  @scala.inline
+  def apply(selector: video, options: Options): StoppablePromise[js.UndefOr[HTMLVideoElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLVideoElement]]]
+  @scala.inline
+  def apply(selector: view): StoppablePromise[js.UndefOr[SVGViewElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[SVGViewElement]]]
+  @scala.inline
+  def apply(selector: view, options: Options): StoppablePromise[js.UndefOr[SVGViewElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[SVGViewElement]]]
+  @scala.inline
+  def apply(selector: wbr): StoppablePromise[js.UndefOr[HTMLElement]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply(selector: wbr, options: Options): StoppablePromise[js.UndefOr[HTMLElement]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[HTMLElement]]]
+  @scala.inline
+  def apply[ElementName /* <: Element */](selector: String): StoppablePromise[js.UndefOr[ElementName]] = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
+  @scala.inline
+  def apply[ElementName /* <: Element */](selector: String, options: Options): StoppablePromise[js.UndefOr[ElementName]] = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StoppablePromise[js.UndefOr[ElementName]]]
   
+  @JSImport("element-ready", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Automatically stop checking for the element to be ready after the DOM ready event. The promise is then resolved to `undefined`.
     		@default true
     		*/
-    val stopOnDomReady: js.UndefOr[Boolean] = js.native
+    val stopOnDomReady: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The element that's expected to contain a match.
     		@default document
     		*/
-    val target: js.UndefOr[Element | Document] = js.native
+    val target: js.UndefOr[Element | Document] = js.undefined
     
     /**
     		Milliseconds to wait before stopping the search and resolving the promise to `undefined`.
     		@default Infinity
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -1411,52 +1067,14 @@ object mod {
     }
   }
   
-  /* Inlined std.Promise<T> & {stop (): void} */
   @js.native
-  trait StoppablePromise[T] extends StObject {
-    
-    /**
-      * Attaches a callback for only the rejection of the Promise.
-      * @param onrejected The callback to execute when the Promise is rejected.
-      * @returns A Promise for the completion of the callback.
-      */
-    def `catch`[TResult](): js.Promise[T | TResult] = js.native
-    def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[T | TResult] = js.native
-    
-    /**
-      * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
-      * resolved value cannot be modified from the callback.
-      * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
-      * @returns A Promise for the completion of the callback.
-      */
-    def `finally`(): js.Promise[T] = js.native
-    def `finally`(onfinally: js.Function0[Unit]): js.Promise[T] = js.native
+  trait StoppablePromise[T]
+    extends js.Promise[T] {
     
     /**
     		Stop checking for the element to be ready. The stop is synchronous and the original promise is then resolved to `undefined`.
     		Calling it after the promise has settled or multiple times does nothing.
     		*/
     def stop(): Unit = js.native
-    
-    /**
-      * Attaches callbacks for the resolution and/or rejection of the Promise.
-      * @param onfulfilled The callback to execute when the Promise is resolved.
-      * @param onrejected The callback to execute when the Promise is rejected.
-      * @returns A Promise for the completion of which ever callback is executed.
-      */
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    val toStringTag: String = js.native
   }
 }

@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Time window specified for weekly operations.
   */
-@js.native
 trait SchemaResourcePolicyWeeklyCycle extends StObject {
   
   /**
     * Up to 7 intervals/windows, one for each day of the week.
     */
-  var dayOfWeeks: js.UndefOr[js.Array[SchemaResourcePolicyWeeklyCycleDayOfWeek]] = js.native
+  var dayOfWeeks: js.UndefOr[js.Array[SchemaResourcePolicyWeeklyCycleDayOfWeek]] = js.undefined
 }
 object SchemaResourcePolicyWeeklyCycle {
   

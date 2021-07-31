@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RunAsGroupStrategyOptions defines the strategy type and any options used to create the strategy. Deprecated: use RunAsGroupStrategyOptions from policy API Group instead.
   */
-@js.native
 trait RunAsGroupStrategyOptions extends StObject {
   
   /**
     * ranges are the allowed ranges of gids that may be used. If you would like to force a single gid then supply a single range with the same start and end. Required for MustRunAs.
     */
-  var ranges: js.Array[IDRange] = js.native
+  var ranges: js.Array[IDRange]
   
   /**
     * rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
     */
-  var rule: String = js.native
+  var rule: String
 }
 object RunAsGroupStrategyOptions {
   

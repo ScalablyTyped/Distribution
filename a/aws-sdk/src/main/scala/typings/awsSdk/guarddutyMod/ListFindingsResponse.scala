@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsResponse extends StObject {
   
   /**
     * The IDs of the findings that you're listing.
     */
-  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds = js.native
+  var FindingIds: typings.awsSdk.guarddutyMod.FindingIds
   
   /**
     * The pagination parameter to be used on the next list operation to retrieve more items.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListFindingsResponse {
   

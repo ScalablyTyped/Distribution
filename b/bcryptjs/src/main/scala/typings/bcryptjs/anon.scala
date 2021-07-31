@@ -2,16 +2,14 @@ package typings.bcryptjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.ArrayLike<number>> */
-  @js.native
   trait ReadonlyArrayLikenumber extends StObject {
     
-    val length: Double = js.native
+    val length: Double
   }
   object ReadonlyArrayLikenumber {
     

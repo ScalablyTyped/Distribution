@@ -4,15 +4,13 @@ import typings.firebaseFunctions.anon.Call
 import typings.firebaseFunctionsTypes.mod.FirebaseFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait FirebaseApp extends StObject {
     
-    var functions: js.UndefOr[js.Function1[/* regionOrCustomDomain */ js.UndefOr[String], FirebaseFunctions]] = js.native
+    var functions: js.UndefOr[js.Function1[/* regionOrCustomDomain */ js.UndefOr[String], FirebaseFunctions]] = js.undefined
   }
   object FirebaseApp {
     
@@ -33,10 +31,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FirebaseNamespace extends StObject {
     
-    var functions: js.UndefOr[Call] = js.native
+    var functions: js.UndefOr[Call] = js.undefined
   }
   object FirebaseNamespace {
     

@@ -2,7 +2,6 @@ package typings.ngCommand
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,20 +15,39 @@ object global {
     @JSGlobal("ngCommand.Command")
     @js.native
     class Command protected ()
-      extends typings.ngCommand.ngCommand.Command {
+      extends StObject
+         with typings.ngCommand.ngCommand.Command {
       def this(
         $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
         execute: js.Function0[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ _
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
               ]
       ) = this()
       def this(
         $scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any,
         execute: js.Function0[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ _
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IPromise<any> */ js.Any
               ],
         canExecute: js.Function0[Boolean]
       ) = this()
+      
+      /**
+        * Determines whether the command can execute or not.
+        */
+      /* CompleteClass */
+      var canExecute: Boolean = js.native
+      
+      /**
+        * Executes the command function.
+        */
+      /* CompleteClass */
+      override def execute(): js.Any = js.native
+      
+      /**
+        * Determines whether the command is currently executing.
+        */
+      /* CompleteClass */
+      var isExecuting: Boolean = js.native
     }
     object Command {
       

@@ -4,7 +4,6 @@ import typings.long.mod.Long
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Writer")
@@ -173,20 +172,22 @@ class Writer () extends StObject {
 /* static members */
 object Writer {
   
+  @JSImport("@apollo/protobufjs", "Writer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
-  @JSImport("@apollo/protobufjs", "Writer.alloc")
-  @js.native
-  def alloc(size: Double): Uint8Array = js.native
+  @scala.inline
+  def alloc(size: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
   /**
     * Creates a new writer.
     * @returns A {@link BufferWriter} when Buffers are supported, otherwise a {@link Writer}
     */
-  @JSImport("@apollo/protobufjs", "Writer.create")
-  @js.native
-  def create(): BufferWriter | Writer = js.native
+  @scala.inline
+  def create(): BufferWriter | Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BufferWriter | Writer]
 }

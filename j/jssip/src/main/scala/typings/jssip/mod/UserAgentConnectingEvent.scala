@@ -2,15 +2,13 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentConnectingEvent extends StObject {
   
-  var attempts: Double = js.native
+  var attempts: Double
   
-  var socket: Socket = js.native
+  var socket: Socket
 }
 object UserAgentConnectingEvent {
   

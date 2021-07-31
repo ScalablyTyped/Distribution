@@ -3,19 +3,17 @@ package typings.mapsjs.anon
 import typings.mapsjs.mod.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distance extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var pt: point = js.native
+  var pt: point
   
-  var ptIdx: Double = js.native
+  var ptIdx: Double
   
-  var setIdx: Double = js.native
+  var setIdx: Double
 }
 object Distance {
   

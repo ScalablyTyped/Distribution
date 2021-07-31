@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deprecatedStaticMod {
@@ -44,16 +43,15 @@ object deprecatedStaticMod {
     def propTypes_=(x: ChildrenRequireable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait State extends StObject {
     
-    var lastIndex: Double | Null = js.native
+    var lastIndex: Double | Null
   }
   object State {
     
     @scala.inline
     def apply(): State = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(lastIndex = null)
       __obj.asInstanceOf[State]
     }
     

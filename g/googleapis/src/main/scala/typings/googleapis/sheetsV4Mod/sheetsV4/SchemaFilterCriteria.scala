@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Criteria for showing/hiding rows in a filter or filter view.
   */
-@js.native
 trait SchemaFilterCriteria extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaFilterCriteria extends StObject {
     * override hiddenValues -- if a value is listed there,  it will still be
     * hidden.)
     */
-  var condition: js.UndefOr[SchemaBooleanCondition] = js.native
+  var condition: js.UndefOr[SchemaBooleanCondition] = js.undefined
   
   /**
     * Values that should be hidden.
     */
-  var hiddenValues: js.UndefOr[js.Array[String]] = js.native
+  var hiddenValues: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFilterCriteria {
   

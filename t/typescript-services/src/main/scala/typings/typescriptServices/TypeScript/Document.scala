@@ -2,98 +2,96 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  var _amdDependencies: js.Any = js.native
+  var _amdDependencies: js.Any
   
-  var _astDeclMap: js.Any = js.native
+  var _astDeclMap: js.Any
   
-  var _bloomFilter: js.Any = js.native
+  var _bloomFilter: js.Any
   
-  var _compiler: js.Any = js.native
+  var _compiler: js.Any
   
-  var _declASTMap: js.Any = js.native
+  var _declASTMap: js.Any
   
-  var _diagnostics: js.Any = js.native
+  var _diagnostics: js.Any
   
-  var _externalModuleIndicatorSpan: js.Any = js.native
+  var _externalModuleIndicatorSpan: js.Any
   
-  def _getASTForDecl(decl: PullDecl): AST = js.native
+  def _getASTForDecl(decl: PullDecl): AST
   
-  def _getDeclForAST(ast: AST): PullDecl = js.native
+  def _getDeclForAST(ast: AST): PullDecl
   
-  var _lineMap: js.Any = js.native
+  var _lineMap: js.Any
   
-  var _scriptSnapshot: js.Any = js.native
+  var _scriptSnapshot: js.Any
   
-  var _semanticInfoChain: js.Any = js.native
+  var _semanticInfoChain: js.Any
   
-  def _setASTForDecl(decl: PullDecl, ast: AST): Unit = js.native
+  def _setASTForDecl(decl: PullDecl, ast: AST): Unit
   
-  def _setDeclForAST(ast: AST, decl: PullDecl): Unit = js.native
+  def _setDeclForAST(ast: AST, decl: PullDecl): Unit
   
-  var _sourceUnit: js.Any = js.native
+  var _sourceUnit: js.Any
   
-  var _syntaxTree: js.Any = js.native
+  var _syntaxTree: js.Any
   
-  var _topLevelDecl: js.Any = js.native
+  var _topLevelDecl: js.Any
   
-  def amdDependencies(): js.Array[String] = js.native
+  def amdDependencies(): js.Array[String]
   
-  def bloomFilter(): BloomFilter = js.native
+  def bloomFilter(): BloomFilter
   
-  var byteOrderMark: ByteOrderMark = js.native
+  var byteOrderMark: ByteOrderMark
   
-  /* private */ def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any = js.native
+  /* private */ def cacheSyntaxTreeInfo(syntaxTree: js.Any): js.Any
   
-  def diagnostics(): js.Array[Diagnostic] = js.native
+  def diagnostics(): js.Array[Diagnostic]
   
-  def emitToOwnOutputFile(): Boolean = js.native
+  def emitToOwnOutputFile(): Boolean
   
-  def externalModuleIndicatorSpan(): TextSpan = js.native
+  def externalModuleIndicatorSpan(): TextSpan
   
-  var fileName: String = js.native
+  var fileName: String
   
-  /* private */ def getAmdDependency(comment: js.Any): js.Any = js.native
+  /* private */ def getAmdDependency(comment: js.Any): js.Any
   
-  def getEnclosingDecl(ast: AST): PullDecl = js.native
+  def getEnclosingDecl(ast: AST): PullDecl
   
-  /* private */ def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any = js.native
+  /* private */ def getImplicitImportSpan(sourceUnitLeadingTrivia: js.Any): js.Any
   
-  /* private */ def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any = js.native
+  /* private */ def getImplicitImportSpanWorker(trivia: js.Any, position: js.Any): js.Any
   
-  /* private */ def getTopLevelImportOrExportSpan(node: js.Any): js.Any = js.native
+  /* private */ def getTopLevelImportOrExportSpan(node: js.Any): js.Any
   
-  def invalidate(): Unit = js.native
+  def invalidate(): Unit
   
-  def isDeclareFile(): Boolean = js.native
+  def isDeclareFile(): Boolean
   
-  def isExternalModule(): Boolean = js.native
+  def isExternalModule(): Boolean
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  def lineMap(): LineMap = js.native
+  def lineMap(): LineMap
   
-  var referencedFiles: js.Array[String] = js.native
+  var referencedFiles: js.Array[String]
   
-  def sourceUnit(): SourceUnit = js.native
+  def sourceUnit(): SourceUnit
   
-  def syntaxTree(): SyntaxTree = js.native
+  def syntaxTree(): SyntaxTree
   
-  def topLevelDecl(): PullDecl = js.native
+  def topLevelDecl(): PullDecl
   
   def update(
     scriptSnapshot: IScriptSnapshot,
     version: Double,
     isOpen: Boolean,
     textChangeRange: TextChangeRange
-  ): Document = js.native
+  ): Document
   
-  var version: Double = js.native
+  var version: Double
 }
 object Document {
   

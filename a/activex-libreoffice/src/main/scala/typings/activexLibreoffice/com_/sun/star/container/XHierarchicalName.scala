@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.container.XHierarchicalNameAccess
   * @see com.sun.star.container.XNamed
   */
-@js.native
-trait XHierarchicalName extends XInterface {
+trait XHierarchicalName
+  extends StObject
+     with XInterface {
   
   /** @returns the fully qualified hierarchical name of the object. */
-  val HierarchicalName: String = js.native
+  val HierarchicalName: String
   
   /**
     * builds the hierarchical name of an object, given a relative name
@@ -26,10 +26,10 @@ trait XHierarchicalName extends XInterface {
     * Can be used to find the name of a descendant object in the hierarchy without actually accessing it.
     * @see XHierarchicalNameAccess.hasByHierarchicalName
     */
-  def composeHierarchicalName(aRelativeName: String): String = js.native
+  def composeHierarchicalName(aRelativeName: String): String
   
   /** @returns the fully qualified hierarchical name of the object. */
-  def getHierarchicalName(): String = js.native
+  def getHierarchicalName(): String
 }
 object XHierarchicalName {
   

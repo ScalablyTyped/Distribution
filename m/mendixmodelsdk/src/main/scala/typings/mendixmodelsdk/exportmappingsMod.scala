@@ -17,7 +17,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportmappingsMod {
@@ -87,9 +86,8 @@ object exportmappingsMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping.createIn")
-      @js.native
-      def createIn(container: IFolderBase): ExportMapping = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): ExportMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportMapping]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportMapping.structureTypeName")
@@ -133,9 +131,8 @@ object exportmappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.create")
-      @js.native
-      def create(model: IModel): ExportObjectMappingElement = js.native
+      @scala.inline
+      def create(model: IModel): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
       
       /**
         * Creates and returns a new ExportObjectMappingElement instance in the SDK and on the server.
@@ -143,9 +140,8 @@ object exportmappingsMod {
         * of the parent mappings.MappingDocument element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.createInMappingDocumentUnderRootMappingElements")
-      @js.native
-      def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): ExportObjectMappingElement = js.native
+      @scala.inline
+      def createInMappingDocumentUnderRootMappingElements(container: MappingDocument): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMappingDocumentUnderRootMappingElements")(container.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
       
       /**
         * Creates and returns a new ExportObjectMappingElement instance in the SDK and on the server.
@@ -153,9 +149,8 @@ object exportmappingsMod {
         * of the parent mappings.ObjectMappingElement element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.createInObjectMappingElementUnderChildren")
-      @js.native
-      def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ExportObjectMappingElement = js.native
+      @scala.inline
+      def createInObjectMappingElementUnderChildren(container: ObjectMappingElement): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInObjectMappingElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportObjectMappingElement.structureTypeName")
@@ -199,9 +194,8 @@ object exportmappingsMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement.create")
-      @js.native
-      def create(model: IModel): ExportValueMappingElement = js.native
+      @scala.inline
+      def create(model: IModel): ExportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExportValueMappingElement]
       
       /**
         * Creates and returns a new ExportValueMappingElement instance in the SDK and on the server.
@@ -209,9 +203,8 @@ object exportmappingsMod {
         * of the parent mappings.ObjectMappingElement element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement.createIn")
-      @js.native
-      def createIn(container: ObjectMappingElement): ExportValueMappingElement = js.native
+      @scala.inline
+      def createIn(container: ObjectMappingElement): ExportValueMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportValueMappingElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/exportmappings", "exportmappings.ExportValueMappingElement.structureTypeName")
@@ -235,6 +228,8 @@ object exportmappingsMod {
       * See: {@link https://docs.mendix.com/refguide/export-mappings relevant section in reference guide}
       */
     @js.native
-    trait IExportMapping extends IMappingDocument
+    trait IExportMapping
+      extends StObject
+         with IMappingDocument
   }
 }

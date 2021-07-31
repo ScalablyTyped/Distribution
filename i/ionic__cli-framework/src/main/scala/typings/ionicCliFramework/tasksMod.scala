@@ -11,7 +11,6 @@ import typings.node.NodeJS.Timer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tasksMod {
@@ -133,10 +132,9 @@ object tasksMod {
     val tasks: js.Array[Task] = js.native
   }
   
-  @js.native
   trait TaskChainOptions extends StObject {
     
-    val taskOptions: js.UndefOr[PartialTaskOptions] = js.native
+    val taskOptions: js.UndefOr[PartialTaskOptions] = js.undefined
   }
   object TaskChainOptions {
     
@@ -157,12 +155,11 @@ object tasksMod {
     }
   }
   
-  @js.native
   trait TaskOptions extends StObject {
     
-    val msg: js.UndefOr[String] = js.native
+    val msg: js.UndefOr[String] = js.undefined
     
-    val tickInterval: js.UndefOr[Double] = js.native
+    val tickInterval: js.UndefOr[Double] = js.undefined
   }
   object TaskOptions {
     

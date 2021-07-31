@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,6 +44,14 @@ class TypeParameter protected ()
   @JSName("name")
   val name_FTypeParameter: String = js.native
   
+  /**
+    * Returns the qualified name of this element, or
+    * null if this element is not a part of the model,
+    * or if it or one of its namespace containers does not have a
+    * valid name.
+    */
+  /* CompleteClass */
+  override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MTypeParameter: String | Null = js.native
 }
@@ -60,9 +67,8 @@ object TypeParameter {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.TypeParameter.create")
-  @js.native
-  def create(model: IModel): TypeParameter = js.native
+  @scala.inline
+  def create(model: IModel): TypeParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TypeParameter]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.TypeParameter.structureTypeName")

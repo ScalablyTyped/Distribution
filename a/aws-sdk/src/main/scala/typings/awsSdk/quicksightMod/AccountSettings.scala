@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSettings extends StObject {
   
   /**
     * The "account name" you provided for the QuickSight subscription in your AWS account. You create this name when you sign up for QuickSight. It is unique in all of AWS and it appears only in the console when users sign in.
     */
-  var AccountName: js.UndefOr[String] = js.native
+  var AccountName: js.UndefOr[String] = js.undefined
   
   /**
     * The default QuickSight namespace for your AWS account. 
     */
-  var DefaultNamespace: js.UndefOr[Namespace] = js.native
+  var DefaultNamespace: js.UndefOr[Namespace] = js.undefined
   
   /**
     * The edition of QuickSight that you're currently subscribed to: Enterprise edition or Standard edition.
     */
-  var Edition: js.UndefOr[typings.awsSdk.quicksightMod.Edition] = js.native
+  var Edition: js.UndefOr[typings.awsSdk.quicksightMod.Edition] = js.undefined
   
   /**
     * The main notification email for your QuickSight subscription.
     */
-  var NotificationEmail: js.UndefOr[String] = js.native
+  var NotificationEmail: js.UndefOr[String] = js.undefined
 }
 object AccountSettings {
   

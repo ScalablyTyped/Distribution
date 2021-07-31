@@ -4,33 +4,33 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and formatting of a pattern field. */
-@js.native
-trait XPatternField extends XInterface {
+trait XPatternField
+  extends StObject
+     with XInterface {
   
   /** returns the currently set string value of the pattern field. */
-  var String: java.lang.String = js.native
+  var String: java.lang.String
   
   /** returns the currently set pattern mask. */
-  def getMasks(EditMask: js.Array[String], LiteralMask: js.Array[String]): Unit = js.native
+  def getMasks(EditMask: js.Array[String], LiteralMask: js.Array[String]): Unit
   
   /** returns the currently set string value of the pattern field. */
-  def getString(): String = js.native
+  def getString(): String
   
   /** returns whether the format is currently checked during user input. */
-  def isStrictFormat(): Boolean = js.native
+  def isStrictFormat(): Boolean
   
   /** sets the pattern mask. */
-  def setMasks(EditMask: String, LiteralMask: String): Unit = js.native
+  def setMasks(EditMask: String, LiteralMask: String): Unit
   
   /** determines if the format is checked during user input. */
-  def setStrictFormat(bStrict: Boolean): Unit = js.native
+  def setStrictFormat(bStrict: Boolean): Unit
   
   /** sets the string value of the pattern field. */
-  def setString(Str: String): Unit = js.native
+  def setString(Str: String): Unit
 }
 object XPatternField {
   

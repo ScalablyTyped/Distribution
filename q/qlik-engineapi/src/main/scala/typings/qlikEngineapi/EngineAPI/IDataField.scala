@@ -2,32 +2,30 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DataField...
   */
-@js.native
 trait IDataField extends StObject {
   
   /**
     * Is set to true if the field is a primary key.
     */
-  var qIsKey: Boolean = js.native
+  var qIsKey: Boolean
   
   /**
     * Name of the field.
     *
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Is shown for fixed records.
     * qOriginalFieldName and qName are identical if no field names are used in the file.
     * qOriginalFieldName differs from qName if embedded file names are used in the file.
     */
-  var qOriginalFieldName: String = js.native
+  var qOriginalFieldName: String
 }
 object IDataField {
   

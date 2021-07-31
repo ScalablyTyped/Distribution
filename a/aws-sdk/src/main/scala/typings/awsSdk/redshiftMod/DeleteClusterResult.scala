@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterResult extends StObject {
   
-  var Cluster: js.UndefOr[typings.awsSdk.redshiftMod.Cluster] = js.native
+  var Cluster: js.UndefOr[typings.awsSdk.redshiftMod.Cluster] = js.undefined
 }
 object DeleteClusterResult {
   

@@ -2,29 +2,27 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableExpandButton extends StObject {
   
-  def areAllRowsExpanded(): Boolean = js.native
+  def areAllRowsExpanded(): Boolean
   
-  var buttonClass: String = js.native
+  var buttonClass: String
   
-  var dataIndex: js.UndefOr[Double] = js.native
+  var dataIndex: js.UndefOr[Double] = js.undefined
   
-  var expandableRowsHeader: Boolean = js.native
+  var expandableRowsHeader: Boolean
   
-  var expandedRows: js.UndefOr[js.Any] = js.native
+  var expandedRows: js.UndefOr[js.Any] = js.undefined
   
-  var iconClass: String = js.native
+  var iconClass: String
   
-  var iconIndeterminateClass: String = js.native
+  var iconIndeterminateClass: String
   
-  var isHeaderCell: Boolean = js.native
+  var isHeaderCell: Boolean
   
-  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
 }
 object MUIDataTableExpandButton {
   
@@ -75,7 +73,7 @@ object MUIDataTableExpandButton {
     def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnExpand(value: /* args */ js.Any => _): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    def setOnExpand(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)

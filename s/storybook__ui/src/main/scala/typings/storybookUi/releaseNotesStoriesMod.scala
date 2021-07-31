@@ -5,10 +5,13 @@ import typings.react.mod.global.JSX.Element
 import typings.storybookUi.releaseNotesMod.ReleaseNotesProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object releaseNotesStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/settings/release_notes.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -29,11 +32,9 @@ object releaseNotesStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/settings/release_notes.stories", "DidHitMaxWaitTime")
-  @js.native
-  def DidHitMaxWaitTime(): Element = js.native
+  @scala.inline
+  def DidHitMaxWaitTime(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DidHitMaxWaitTime")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/settings/release_notes.stories", "Loading")
-  @js.native
-  def Loading(): Element = js.native
+  @scala.inline
+  def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
 }

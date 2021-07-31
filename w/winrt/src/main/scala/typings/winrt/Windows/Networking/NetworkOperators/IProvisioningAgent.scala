@@ -3,15 +3,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProvisioningAgent extends StObject {
   
-  def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile = js.native
+  def getProvisionedProfile(mediaType: ProfileMediaType, profileName: String): ProvisionedProfile
   
-  def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IAsyncOperation[ProvisionFromXmlDocumentResults] = js.native
+  def provisionFromXmlDocumentAsync(provisioningXmlDocument: String): IAsyncOperation[ProvisionFromXmlDocumentResults]
 }
 object IProvisioningAgent {
   

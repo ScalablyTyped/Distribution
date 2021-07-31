@@ -7,28 +7,26 @@ import typings.yandexMaps.yandexMapsStrings.none
 import typings.yandexMaps.yandexMapsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined yandex-maps.yandex-maps.control.IBaseButtonParametersOptions & {  noPlacemark :boolean | undefined} */
-@js.native
 trait IBaseButtonParametersOptiFloat extends StObject {
   
-  var adjustMapMargin: js.UndefOr[Boolean] = js.native
+  var adjustMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[none | left | right] = js.native
+  var float: js.UndefOr[none | left | right] = js.undefined
   
-  var floatIndex: js.UndefOr[Double] = js.native
+  var floatIndex: js.UndefOr[Double] = js.undefined
   
-  var layout: js.UndefOr[IClassConstructor[ISelectableControlLayout] | String] = js.native
+  var layout: js.UndefOr[IClassConstructor[ISelectableControlLayout] | String] = js.undefined
   
-  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var maxWidth: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
   
-  var noPlacemark: js.UndefOr[Boolean] = js.native
+  var noPlacemark: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[Bottom] = js.native
+  var position: js.UndefOr[Bottom] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IBaseButtonParametersOptiFloat {
   

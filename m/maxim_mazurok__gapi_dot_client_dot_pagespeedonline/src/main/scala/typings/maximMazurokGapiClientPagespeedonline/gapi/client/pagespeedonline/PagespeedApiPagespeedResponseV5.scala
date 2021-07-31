@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagespeedApiPagespeedResponseV5 extends StObject {
   
   /** The UTC timestamp of this analysis. */
-  var analysisUTCTimestamp: js.UndefOr[String] = js.native
+  var analysisUTCTimestamp: js.UndefOr[String] = js.undefined
   
   /** The captcha verify result */
-  var captchaResult: js.UndefOr[String] = js.native
+  var captchaResult: js.UndefOr[String] = js.undefined
   
   /** Canonicalized and final URL for the document, after following page redirects (if any). */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Kind of result. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Lighthouse response for the audit url as an object. */
-  var lighthouseResult: js.UndefOr[LighthouseResultV5] = js.native
+  var lighthouseResult: js.UndefOr[LighthouseResultV5] = js.undefined
   
   /** Metrics of end users' page loading experience. */
-  var loadingExperience: js.UndefOr[PagespeedApiLoadingExperienceV5] = js.native
+  var loadingExperience: js.UndefOr[PagespeedApiLoadingExperienceV5] = js.undefined
   
   /** Metrics of the aggregated page loading experience of the origin */
-  var originLoadingExperience: js.UndefOr[PagespeedApiLoadingExperienceV5] = js.native
+  var originLoadingExperience: js.UndefOr[PagespeedApiLoadingExperienceV5] = js.undefined
   
   /** The version of PageSpeed used to generate these results. */
-  var version: js.UndefOr[PagespeedVersion] = js.native
+  var version: js.UndefOr[PagespeedVersion] = js.undefined
 }
 object PagespeedApiPagespeedResponseV5 {
   

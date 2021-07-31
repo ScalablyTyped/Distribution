@@ -10,9 +10,9 @@ it's a column filter addon for react-bootstrap-table2
 | ------------------ | :-------------: |
 | Full name          | react-bootstrap-table2-filter |
 | Keywords           | react, bootstrap, table, grid, react-bootstrap-table-addons, react-component |
-| # releases         | 21 |
-| # dependents       | 11 |
-| # downloads        | 690217 |
+| # releases         | 14 |
+| # dependents       | 15 |
+| # downloads        | 892576 |
 | # stars            | 0 |
 
 ## Links

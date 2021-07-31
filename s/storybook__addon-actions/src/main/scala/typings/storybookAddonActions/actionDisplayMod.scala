@@ -4,21 +4,19 @@ import typings.storybookAddonActions.actionOptionsMod.ActionOptions
 import typings.storybookAddonActions.anon.Args
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionDisplayMod {
   
-  @js.native
   trait ActionDisplay extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var data: Args = js.native
+    var data: Args
     
-    var id: String = js.native
+    var id: String
     
-    var options: ActionOptions = js.native
+    var options: ActionOptions
   }
   object ActionDisplay {
     

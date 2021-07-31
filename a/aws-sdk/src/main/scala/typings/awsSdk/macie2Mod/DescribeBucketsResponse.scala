@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBucketsResponse extends StObject {
   
   /**
     * An array of objects, one for each bucket that meets the filter criteria specified in the request.
     */
-  var buckets: js.UndefOr[listOfBucketMetadata] = js.native
+  var buckets: js.UndefOr[listOfBucketMetadata] = js.undefined
   
   /**
     * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null if there are no additional pages.
     */
-  var nextToken: js.UndefOr[string] = js.native
+  var nextToken: js.UndefOr[string] = js.undefined
 }
 object DescribeBucketsResponse {
   

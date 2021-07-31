@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTopicAttributesInput extends StObject {
   
   /**
     * The ARN of the topic whose properties you want to get.
     */
-  var TopicArn: topicARN = js.native
+  var TopicArn: topicARN
 }
 object GetTopicAttributesInput {
   

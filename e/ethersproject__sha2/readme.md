@@ -10,9 +10,9 @@ The SHA2 family hash functions and HMAC functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/sha2 |
 | Keywords           | Ethereum, ethers |
-| # releases         | 27 |
-| # dependents       | 12 |
-| # downloads        | 578076 |
+| # releases         | 30 |
+| # dependents       | 15 |
+| # downloads        | 1218181 |
 | # stars            | 0 |
 
 ## Links

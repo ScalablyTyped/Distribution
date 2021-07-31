@@ -2,22 +2,20 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsPagination> */
-@js.native
 trait PartialMUIDataTableTextLaDisplayRows extends StObject {
   
-  var displayRows: js.UndefOr[String] = js.native
+  var displayRows: js.UndefOr[String] = js.undefined
   
-  var jumpToPage: js.UndefOr[String] = js.native
+  var jumpToPage: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
-  var rowsPerPage: js.UndefOr[String] = js.native
+  var rowsPerPage: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLaDisplayRows {
   

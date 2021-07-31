@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GRPCHealthCheck extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait GRPCHealthCheck extends StObject {
     * - Non-empty service_name means the health of that gRPC service, as defined by the owner of the service.
     * The grpc_service_name can only be ASCII.
     */
-  var grpcServiceName: js.UndefOr[String] = js.native
+  var grpcServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The port number for the health check request. Must be specified if port_name and port_specification are not set or if port_specification is USE_FIXED_PORT. Valid values are 1
     * through 65535.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence. The port_name should conform to RFC1035. */
-  var portName: js.UndefOr[String] = js.native
+  var portName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how port is selected for health checking, can be one of following values:
@@ -35,7 +33,7 @@ trait GRPCHealthCheck extends StObject {
     *
     * If not specified, gRPC health check follows behavior specified in port and portName fields.
     */
-  var portSpecification: js.UndefOr[String] = js.native
+  var portSpecification: js.UndefOr[String] = js.undefined
 }
 object GRPCHealthCheck {
   

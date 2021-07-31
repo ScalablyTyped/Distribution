@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackgroundColorsResponse extends StObject {
   
   /**
@@ -15,18 +13,18 @@ trait GetBackgroundColorsResponse extends StObject {
     * of the color stops. For anything more complicated, this will be an empty array. Images will
     * be ignored (as if the image had failed to load).
     */
-  var backgroundColors: js.UndefOr[js.Array[String]] = js.native
+  var backgroundColors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The computed font size for this node, as a CSS computed value string (e.g. '12px').
     */
-  var computedFontSize: js.UndefOr[String] = js.native
+  var computedFontSize: js.UndefOr[String] = js.undefined
   
   /**
     * The computed font weight for this node, as a CSS computed value string (e.g. 'normal' or
     * '100').
     */
-  var computedFontWeight: js.UndefOr[String] = js.native
+  var computedFontWeight: js.UndefOr[String] = js.undefined
 }
 object GetBackgroundColorsResponse {
   

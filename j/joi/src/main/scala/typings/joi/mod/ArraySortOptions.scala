@@ -4,18 +4,16 @@ import typings.joi.joiStrings.ascending
 import typings.joi.joiStrings.descending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArraySortOptions extends StObject {
   
-  var by: js.UndefOr[String | Reference] = js.native
+  var by: js.UndefOr[String | Reference] = js.undefined
   
   /**
     * @default 'ascending'
     */
-  var order: js.UndefOr[ascending | descending] = js.native
+  var order: js.UndefOr[ascending | descending] = js.undefined
 }
 object ArraySortOptions {
   

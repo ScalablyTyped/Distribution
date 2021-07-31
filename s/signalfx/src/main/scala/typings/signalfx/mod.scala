@@ -3,10 +3,13 @@ package typings.signalfx
 import typings.signalfx.anon.CONTROL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("signalfx", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object CONSTANTS {
     
@@ -39,26 +42,24 @@ object mod {
     def send(report: SignalReport): Unit = js.native
   }
   
-  @JSImport("signalfx", "SignalFlow")
-  @js.native
-  def SignalFlow(apiToken: js.Any, options: js.Any): js.Any = js.native
+  @scala.inline
+  def SignalFlow(apiToken: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("SignalFlow")(apiToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait IngestOptions extends StObject {
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var dimensions: js.UndefOr[js.Object] = js.native
+    var dimensions: js.UndefOr[js.Object] = js.undefined
     
-    var enableAmazonUniqueId: js.UndefOr[Boolean] = js.native
+    var enableAmazonUniqueId: js.UndefOr[Boolean] = js.undefined
     
-    var ingestEndpoint: js.UndefOr[String] = js.native
+    var ingestEndpoint: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var userAgents: js.UndefOr[js.Array[String]] = js.native
+    var userAgents: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IngestOptions {
     
@@ -118,10 +119,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SignalClient extends StObject {
     
-    def send(report: SignalReport): Unit = js.native
+    def send(report: SignalReport): Unit
   }
   object SignalClient {
     
@@ -139,14 +139,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SignalMetric extends StObject {
     
-    var metric: String = js.native
+    var metric: String
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object SignalMetric {
     
@@ -173,14 +172,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SignalReport extends StObject {
     
-    var counters: js.UndefOr[js.Array[SignalMetric]] = js.native
+    var counters: js.UndefOr[js.Array[SignalMetric]] = js.undefined
     
-    var cumulative_counters: js.UndefOr[js.Array[SignalMetric]] = js.native
+    var cumulative_counters: js.UndefOr[js.Array[SignalMetric]] = js.undefined
     
-    var gauges: js.UndefOr[js.Array[SignalMetric]] = js.native
+    var gauges: js.UndefOr[js.Array[SignalMetric]] = js.undefined
   }
   object SignalReport {
     

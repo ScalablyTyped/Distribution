@@ -3,39 +3,37 @@ package typings.ariClient.anon
 import typings.ariClient.mod.Containers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppArgs extends StObject {
   
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
-  var appArgs: js.UndefOr[String] = js.native
+  var appArgs: js.UndefOr[String] = js.undefined
   
-  var callerId: js.UndefOr[String] = js.native
+  var callerId: js.UndefOr[String] = js.undefined
   
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
-  var formats: js.UndefOr[String] = js.native
+  var formats: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var originator: js.UndefOr[String] = js.native
+  var originator: js.UndefOr[String] = js.undefined
   
-  var otherChannelId: js.UndefOr[String] = js.native
+  var otherChannelId: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var variables: js.UndefOr[Containers] = js.native
+  var variables: js.UndefOr[Containers] = js.undefined
 }
 object AppArgs {
   

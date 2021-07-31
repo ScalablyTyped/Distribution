@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listWorkspaces` operation. */
@@ -16,14 +15,18 @@ object ListWorkspacesConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait NAME extends Sort
-    /* "name" */ val NAME: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.NAME with String = js.native
+    sealed trait NAME
+      extends StObject
+         with Sort
+    /* "name" */ val NAME: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.NAME & String = js.native
     
     @js.native
-    sealed trait UPDATED extends Sort
-    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.UPDATED with String = js.native
+    sealed trait UPDATED
+      extends StObject
+         with Sort
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.UPDATED & String = js.native
   }
 }

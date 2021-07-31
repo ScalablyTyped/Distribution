@@ -3,13 +3,13 @@ package typings.googleCloudStorage.fileMod
 import typings.googleCloudCommon.serviceObjectMod.GetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetFileOptions extends GetConfig {
+trait GetFileOptions
+  extends StObject
+     with GetConfig {
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object GetFileOptions {
   

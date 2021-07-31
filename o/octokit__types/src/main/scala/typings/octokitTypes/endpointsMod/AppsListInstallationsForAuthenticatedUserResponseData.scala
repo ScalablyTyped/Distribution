@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsListInstallationsForAuthenticatedUserResponseData extends StObject {
   
-  var installations: js.Array[Account] = js.native
+  var installations: js.Array[Account]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object AppsListInstallationsForAuthenticatedUserResponseData {
   

@@ -4,21 +4,21 @@ import typings.cassandraDriver.anon.Enabled
 import typings.cassandraDriver.typesMod.types.Uuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DseClientOptions extends ClientOptions {
+trait DseClientOptions
+  extends StObject
+     with ClientOptions {
   
-  var applicationName: js.UndefOr[String] = js.native
+  var applicationName: js.UndefOr[String] = js.undefined
   
-  var applicationVersion: js.UndefOr[String] = js.native
+  var applicationVersion: js.UndefOr[String] = js.undefined
   
-  var graphOptions: js.UndefOr[GraphOptions] = js.native
+  var graphOptions: js.UndefOr[GraphOptions] = js.undefined
   
-  var id: js.UndefOr[Uuid] = js.native
+  var id: js.UndefOr[Uuid] = js.undefined
   
-  var monitorReporting: js.UndefOr[Enabled] = js.native
+  var monitorReporting: js.UndefOr[Enabled] = js.undefined
 }
 object DseClientOptions {
   

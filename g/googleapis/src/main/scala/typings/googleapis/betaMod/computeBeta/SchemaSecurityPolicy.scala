@@ -3,7 +3,6 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * associated with one or more &#39;targets&#39;. (== resource_for
   * v1.securityPolicies ==) (== resource_for beta.securityPolicies ==)
   */
-@js.native
 trait SchemaSecurityPolicy extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a fingerprint for this resource, which is essentially a hash of
@@ -34,19 +32,19 @@ trait SchemaSecurityPolicy extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make get() request to the security policy.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Type of the resource. Always compute#securityPolicyfor
     * security policies
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this security policy, which
@@ -56,14 +54,14 @@ trait SchemaSecurityPolicy extends StObject {
     * up-to-date fingerprint hash in order to update or change labels.  To see
     * the latest fingerprint, make get() request to the security policy.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this security policy resource. These can be later
     * modified by the setLabels method. Each label key/value must comply with
     * RFC1035. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -74,7 +72,7 @@ trait SchemaSecurityPolicy extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of rules that belong to this policy. There must always be a
@@ -82,12 +80,12 @@ trait SchemaSecurityPolicy extends StObject {
     * no rules are provided when creating a security policy, a default rule
     * with action &quot;allow&quot; will be added.
     */
-  var rules: js.UndefOr[js.Array[SchemaSecurityPolicyRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaSecurityPolicyRule]] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaSecurityPolicy {
   

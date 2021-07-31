@@ -2,36 +2,34 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComparedFace extends StObject {
   
   /**
     * Bounding box of the face.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * Level of confidence that what the bounding box contains is a face.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * An array of facial landmarks.
     */
-  var Landmarks: js.UndefOr[typings.awsSdk.rekognitionMod.Landmarks] = js.native
+  var Landmarks: js.UndefOr[typings.awsSdk.rekognitionMod.Landmarks] = js.undefined
   
   /**
     * Indicates the pose of the face as determined by its pitch, roll, and yaw.
     */
-  var Pose: js.UndefOr[typings.awsSdk.rekognitionMod.Pose] = js.native
+  var Pose: js.UndefOr[typings.awsSdk.rekognitionMod.Pose] = js.undefined
   
   /**
     * Identifies face image brightness and sharpness. 
     */
-  var Quality: js.UndefOr[ImageQuality] = js.native
+  var Quality: js.UndefOr[ImageQuality] = js.undefined
 }
 object ComparedFace {
   

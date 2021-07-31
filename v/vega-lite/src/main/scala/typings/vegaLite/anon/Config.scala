@@ -11,31 +11,29 @@ import typings.vegaLite.vegaLiteStrings.parent
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef] = js.native
+  var config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]
   
-  var expr: js.UndefOr[datum | parent | datumDotdatum] = js.native
+  var expr: js.UndefOr[datum | parent | datumDotdatum] = js.undefined
   
-  var fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) = js.native
+  var fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
   
-  var format: String | Dict[_] = js.native
+  var format: String | Dict[js.Any]
   
-  var formatType: String = js.native
+  var formatType: String
   
-  var normalizeStack: js.UndefOr[Boolean] = js.native
+  var normalizeStack: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   
   @scala.inline
   def apply(
     config: typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef],
-    fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
-    format: String | Dict[_],
+    fieldOrDatumDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+    format: String | Dict[js.Any],
     formatType: String
   ): Config = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], fieldOrDatumDef = fieldOrDatumDef.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any])
@@ -56,11 +54,11 @@ object Config {
     
     @scala.inline
     def setFieldOrDatumDef(
-      value: (typings.vegaLite.channeldefMod.FieldDef[String, _]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+      value: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormat(value: String | Dict[_]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])

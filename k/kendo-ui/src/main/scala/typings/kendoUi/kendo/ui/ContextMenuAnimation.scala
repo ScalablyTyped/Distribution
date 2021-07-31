@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuAnimation extends StObject {
   
-  var close: js.UndefOr[ContextMenuAnimationClose] = js.native
+  var close: js.UndefOr[ContextMenuAnimationClose] = js.undefined
   
-  var open: js.UndefOr[ContextMenuAnimationOpen] = js.native
+  var open: js.UndefOr[ContextMenuAnimationOpen] = js.undefined
 }
 object ContextMenuAnimation {
   

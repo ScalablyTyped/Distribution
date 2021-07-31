@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcClassicLink extends StObject {
   
   /**
     * Indicates whether the VPC is enabled for ClassicLink.
     */
-  var ClassicLinkEnabled: js.UndefOr[Boolean] = js.native
+  var ClassicLinkEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Any tags assigned to the VPC.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object VpcClassicLink {
   

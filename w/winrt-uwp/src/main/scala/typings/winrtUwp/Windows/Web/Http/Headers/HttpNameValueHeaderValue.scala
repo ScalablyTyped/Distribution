@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents name and value information used in a number of HTTP headers. */
-@js.native
 trait HttpNameValueHeaderValue extends StObject {
   
   /** Gets the name used in the HttpNameValueHeaderValue object. */
-  var name: String = js.native
+  var name: String
   
   /** Gets or sets the value associated with a name used in the HttpNameValueHeaderValue object. */
-  var value: String = js.native
+  var value: String
 }
 object HttpNameValueHeaderValue {
   

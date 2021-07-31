@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPortalsResponse extends StObject {
   
   /**
     * The token for the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list that summarizes each portal.
     */
-  var portalSummaries: js.UndefOr[PortalSummaries] = js.native
+  var portalSummaries: js.UndefOr[PortalSummaries] = js.undefined
 }
 object ListPortalsResponse {
   

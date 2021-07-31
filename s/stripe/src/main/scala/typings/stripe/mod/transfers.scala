@@ -12,111 +12,111 @@ import typings.stripe.stripeStrings.stripe_account
 import typings.stripe.stripeStrings.transfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transfers {
   
-  @js.native
-  trait ITransfer extends IResourceObject {
+  trait ITransfer
+    extends StObject
+       with IResourceObject {
     
     /**
       * Amount (in cents) to be transferred to your bank account
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Amount in cents reversed (can be less than the amount attribute on the transfer if a partial reversal was issued).
       */
-    var amount_reversed: Double = js.native
+    var amount_reversed: Double
     
-    var application_fee: String = js.native
+    var application_fee: String
     
     /**
       * Balance transaction that describes the impact of this transfer on your account balance. [Expandable]
       */
-    var balance_transaction: String | IBalanceTransaction = js.native
+    var balance_transaction: String | IBalanceTransaction
     
     /**
       * Time that this record of the transfer was first created.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Three-letter ISO currency code representing the currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * Date the transfer is scheduled to arrive in the bank. This factors in delays like weekends or bank holidays.
       */
-    var date: Double = js.native
+    var date: Double
     
     /**
       * Internal-only description of the transfer
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * ID of the bank account, card, or Stripe account the transfer was sent to. [Expandable]
       */
-    var destination: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccount = js.native
+    var destination: String | typings.stripe.mod.bankAccounts.IBankAccount | ICardHash | IAccount
     
     /**
       * If the destination is a Stripe account, this will be the ID of the
       * payment that the destination account received for the transfer. [Expandable]
       */
-    var destination_payment: String = js.native
+    var destination_payment: String
     
     /**
       * Error code explaining reason for transfer failure if available. See Types of transfer failures for a
       * list of failure codes: https://stripe.com/docs/api#transfer_failures
       */
-    var failure_code: String = js.native
+    var failure_code: String
     
     /**
       * Message to user further explaining reason for transfer failure if available.
       */
-    var failure_message: String = js.native
+    var failure_message: String
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * Value is "transfer"
       */
     @JSName("object")
-    var object_ITransfer: transfer = js.native
+    var object_ITransfer: transfer
     
     /**
       * A list of reversals that have been applied to the transfer.
       */
-    var reversals: ITransferReversals = js.native
+    var reversals: ITransferReversals
     
     /**
       * Whether or not the transfer has been fully reversed. If the transfer is only partially reversed, this attribute
       * will still be false.
       */
-    var reversed: Boolean = js.native
+    var reversed: Boolean
     
     /**
       * ID of the charge (or other transaction) that was used to fund the
       * transfer. If null, the transfer was funded from the available
       * balance. [Expandable]
       */
-    var source_transaction: String | ICharge = js.native
+    var source_transaction: String | ICharge
     
     /**
       * The source balance this transfer came from.
       * One of card, bank_account, bitcoin_receiver, or alipay_account
       */
-    var source_type: SourceTypes = js.native
+    var source_type: SourceTypes
     
     /**
       * Extra information about a transfer to be displayed on the user's bank statement.
       */
-    var statement_descriptor: String = js.native
+    var statement_descriptor: String
     
     /**
       * Current status of the transfer (paid, pending, in_transit, canceled or failed).
@@ -125,17 +125,17 @@ object transfers {
       * through. If it does not go through successfully, its status will change to
       * failed or canceled.
       */
-    var status: Statuses = js.native
+    var status: Statuses
     
     /**
       * A string that identifies this transaction as part of a group.
       */
-    var transfer_group: String | Null = js.native
+    var transfer_group: String | Null
     
     /**
       *  Can be card, bank_account, or stripe_account.
       */
-    var `type`: card | bank_account | stripe_account = js.native
+    var `type`: card | bank_account | stripe_account
   }
   object ITransfer {
     
@@ -156,7 +156,6 @@ object transfers {
       id: String,
       livemode: Boolean,
       metadata: IMetadata,
-      `object`: transfer,
       reversals: ITransferReversals,
       reversed: Boolean,
       source_transaction: String | ICharge,
@@ -165,8 +164,8 @@ object transfers {
       status: Statuses,
       `type`: card | bank_account | stripe_account
     ): ITransfer = {
-      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_reversed = amount_reversed.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment.asInstanceOf[js.Any], failure_code = failure_code.asInstanceOf[js.Any], failure_message = failure_message.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reversals = reversals.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_reversed = amount_reversed.asInstanceOf[js.Any], application_fee = application_fee.asInstanceOf[js.Any], balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], destination = destination.asInstanceOf[js.Any], destination_payment = destination_payment.asInstanceOf[js.Any], failure_code = failure_code.asInstanceOf[js.Any], failure_message = failure_message.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], reversals = reversals.asInstanceOf[js.Any], reversed = reversed.asInstanceOf[js.Any], source_transaction = source_transaction.asInstanceOf[js.Any], source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transfer_group = null)
+      __obj.updateDynamic("object")("transfer")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITransfer]
     }
@@ -248,25 +247,26 @@ object transfers {
     }
   }
   
-  @js.native
-  trait ITransferCreationOptions extends IDataOptionsWithMetadata {
+  trait ITransferCreationOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * A positive integer in cents/pence representing how much to transfer.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * 3-letter ISO code for currency.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An arbitrary string attached to the object. Often useful for
       * displaying to users. This can be unset by updating the value
       * to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * The id of a bank account or a card to send the transfer to, or the
@@ -277,7 +277,7 @@ object transfers {
       * Stripe account; see the details about when such transfers are
       * permitted.
       */
-    var destination: String = js.native
+    var destination: String
     
     /**
       * You can use this parameter to transfer funds from a charge (or
@@ -286,19 +286,19 @@ object transfers {
       * funds will not become available until the original charge
       * becomes available. See the Connect documentation for details.
       */
-    var source_transaction: js.UndefOr[String] = js.native
+    var source_transaction: js.UndefOr[String] = js.undefined
     
     /**
       * The source balance to use for this transfer. One of bank_account
       * or card. For most users, this will default to card.
       */
-    var source_type: js.UndefOr[SourceTypes] = js.native
+    var source_type: js.UndefOr[SourceTypes] = js.undefined
     
     /**
       * A string that identifies this transaction as part of a group.
       * See the Connect documentation for details.
       */
-    var transfer_group: js.UndefOr[String] = js.native
+    var transfer_group: js.UndefOr[String] = js.undefined
   }
   object ITransferCreationOptions {
     
@@ -346,21 +346,22 @@ object transfers {
     }
   }
   
-  @js.native
-  trait ITransferListOptions extends IListOptionsCreated {
+  trait ITransferListOptions
+    extends StObject
+       with IListOptionsCreated {
     
-    var date: js.UndefOr[IDateFilter] = js.native
+    var date: js.UndefOr[IDateFilter] = js.undefined
     
     /**
       * Only return transfers for the destination specified by this
       * account ID.
       */
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
     /**
       * Only return transfers with the specified transfer group.
       */
-    var transfer_group: js.UndefOr[String | Null] = js.native
+    var transfer_group: js.UndefOr[String | Null] = js.undefined
   }
   object ITransferListOptions {
     
@@ -401,15 +402,16 @@ object transfers {
     extends TransferReversals
        with IList[IReversal]
   
-  @js.native
-  trait ITransferUpdateOptions extends IDataOptionsWithMetadata {
+  trait ITransferUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * An arbitrary string which you can attach to a transfer object. It is
       * displayed when in the web interface alongside the transfer. This
       * can be unset by updating the value to null and then saving.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
   }
   object ITransferUpdateOptions {
     

@@ -2,26 +2,24 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for UI elements with labels.
   */
-@js.native
 trait UiLabelElement extends StObject {
   
   /**
     * Gets the label.
     * @returns The label.
     */
-  def getLabel(): String = js.native
+  def getLabel(): String
   
   /**
     * Sets the label.
     * @param label The label.
     */
-  def setLabel(label: String): Unit = js.native
+  def setLabel(label: String): Unit
 }
 object UiLabelElement {
   

@@ -2,32 +2,30 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for iSDK to execute strong match flow for post-install
   * attribution.
   */
-@js.native
 trait SchemaGetIosPostInstallAttributionResponse extends StObject {
   
   /**
     * The minimum version for app, specified by dev through ?imv= parameter.
     * Return to iSDK to allow app to evaluate if current version meets this.
     */
-  var appMinimumVersion: js.UndefOr[String] = js.native
+  var appMinimumVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The confidence of the returned attribution.
     */
-  var attributionConfidence: js.UndefOr[String] = js.native
+  var attributionConfidence: js.UndefOr[String] = js.undefined
   
   /**
     * The deep-link attributed post-install via one of several techniques
     * (fingerprint, copy unique).
     */
-  var deepLink: js.UndefOr[String] = js.native
+  var deepLink: js.UndefOr[String] = js.undefined
   
   /**
     * User-agent specific custom-scheme URIs for iSDK to open. This will be set
@@ -37,7 +35,7 @@ trait SchemaGetIosPostInstallAttributionResponse extends StObject {
     * firefox://open-url?url=http://www.example.com ie:
     * opera-http://example.com
     */
-  var externalBrowserDestinationLink: js.UndefOr[String] = js.native
+  var externalBrowserDestinationLink: js.UndefOr[String] = js.undefined
   
   /**
     * The link to navigate to update the app if min version is not met. This is
@@ -45,37 +43,37 @@ trait SchemaGetIosPostInstallAttributionResponse extends StObject {
     * by developer) or 2) AppStore URL (from ?isi= parameter, if specified), or
     * 3) the payload link (from required link= parameter).
     */
-  var fallbackLink: js.UndefOr[String] = js.native
+  var fallbackLink: js.UndefOr[String] = js.undefined
   
   /**
     * Invitation ID attributed post-install via one of several techniques
     * (fingerprint, copy unique).
     */
-  var invitationId: js.UndefOr[String] = js.native
+  var invitationId: js.UndefOr[String] = js.undefined
   
   /**
     * Instruction for iSDK to attemmpt to perform strong match. For instance,
     * if browser does not support/allow cookie or outside of support browsers,
     * this will be false.
     */
-  var isStrongMatchExecutable: js.UndefOr[Boolean] = js.native
+  var isStrongMatchExecutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes why match failed, ie: &quot;discarded due to low
     * confidence&quot;. This message will be publicly visible.
     */
-  var matchMessage: js.UndefOr[String] = js.native
+  var matchMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Which IP version the request was made from.
     */
-  var requestIpVersion: js.UndefOr[String] = js.native
+  var requestIpVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Entire FDL (short or long) attributed post-install via one of several
     * techniques (fingerprint, copy unique).
     */
-  var requestedLink: js.UndefOr[String] = js.native
+  var requestedLink: js.UndefOr[String] = js.undefined
   
   /**
     * The entire FDL, expanded from a short link. It is the same as the
@@ -84,22 +82,22 @@ trait SchemaGetIosPostInstallAttributionResponse extends StObject {
     * when requested_link lack them, server determine the best fallback_link
     * when requested_link specifies &gt;1 fallback links).
     */
-  var resolvedLink: js.UndefOr[String] = js.native
+  var resolvedLink: js.UndefOr[String] = js.undefined
   
   /**
     * Scion campaign value to be propagated by iSDK to Scion at post-install.
     */
-  var utmCampaign: js.UndefOr[String] = js.native
+  var utmCampaign: js.UndefOr[String] = js.undefined
   
   /**
     * Scion medium value to be propagated by iSDK to Scion at post-install.
     */
-  var utmMedium: js.UndefOr[String] = js.native
+  var utmMedium: js.UndefOr[String] = js.undefined
   
   /**
     * Scion source value to be propagated by iSDK to Scion at post-install.
     */
-  var utmSource: js.UndefOr[String] = js.native
+  var utmSource: js.UndefOr[String] = js.undefined
 }
 object SchemaGetIosPostInstallAttributionResponse {
   

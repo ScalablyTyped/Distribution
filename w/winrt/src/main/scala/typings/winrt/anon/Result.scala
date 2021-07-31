@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Data.Json.JsonValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var result: JsonValue = js.native
+  var result: JsonValue
   
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object Result {
   

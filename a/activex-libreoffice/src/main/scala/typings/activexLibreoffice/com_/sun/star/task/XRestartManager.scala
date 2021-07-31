@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to try to restart the office.
   * @since OOo 3.3
   */
-@js.native
-trait XRestartManager extends XInterface {
+trait XRestartManager
+  extends StObject
+     with XInterface {
   
   /**
     * allows to get info whether the restart has been requested and provide the initialization status.
@@ -23,14 +23,14 @@ trait XRestartManager extends XInterface {
     * @returns `TRUE` if the office restart has been requested, `FALSE` otherwise
     * @throws com::sun::star::uno::Exception to notify the caller about possible failures
     */
-  def isRestartRequested(bInitialized: Boolean): Boolean = js.native
+  def isRestartRequested(bInitialized: Boolean): Boolean
   
   /**
     * let the office restart asynchronously
     * @param xInteractionHandler the {@link com.sun.star.task.InteractionHandler} service implementation, that is used in case a problem is detected during re
     * @throws com::sun::star::uno::Exception to notify the caller about possible failures
     */
-  def requestRestart(xInteractionHandler: XInteractionHandler): Unit = js.native
+  def requestRestart(xInteractionHandler: XInteractionHandler): Unit
 }
 object XRestartManager {
   

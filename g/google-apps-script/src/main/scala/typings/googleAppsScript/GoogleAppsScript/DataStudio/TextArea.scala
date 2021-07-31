@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,20 +20,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setAllowOverride(true)
   *       .setPlaceholder("Search for an artist for all songs.");
   */
-@js.native
 trait TextArea extends StObject {
   
-  def setAllowOverride(allowOverride: Boolean): TextArea = js.native
+  def setAllowOverride(allowOverride: Boolean): TextArea
   
-  def setHelpText(helpText: String): TextArea = js.native
+  def setHelpText(helpText: String): TextArea
   
-  def setId(id: String): TextArea = js.native
+  def setId(id: String): TextArea
   
-  def setIsDynamic(isDynamic: Boolean): TextArea = js.native
+  def setIsDynamic(isDynamic: Boolean): TextArea
   
-  def setName(name: String): TextArea = js.native
+  def setName(name: String): TextArea
   
-  def setPlaceholder(placeholder: String): TextArea = js.native
+  def setPlaceholder(placeholder: String): TextArea
 }
 object TextArea {
   

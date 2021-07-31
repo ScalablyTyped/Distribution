@@ -7,10 +7,13 @@ import typings.soupbintcp.anon.Address
 import typings.soupbintcp.anon.Host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("soupbintcp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("soupbintcp", "Client")
   @js.native
@@ -52,56 +55,76 @@ object mod {
   object PacketType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PacketType with Double] = js.native
+    def apply(value: Double): js.UndefOr[PacketType & Double] = js.native
     
     // U
     @js.native
-    sealed trait CLIENT_HEARTBEAT extends PacketType
-    /* 0x52 */ val CLIENT_HEARTBEAT: typings.soupbintcp.mod.PacketType.CLIENT_HEARTBEAT with Double = js.native
+    sealed trait CLIENT_HEARTBEAT
+      extends StObject
+         with PacketType
+    /* 0x52 */ val CLIENT_HEARTBEAT: typings.soupbintcp.mod.PacketType.CLIENT_HEARTBEAT & Double = js.native
     
     @js.native
-    sealed trait DEBUG extends PacketType
-    /* 0x2b */ val DEBUG: typings.soupbintcp.mod.PacketType.DEBUG with Double = js.native
+    sealed trait DEBUG
+      extends StObject
+         with PacketType
+    /* 0x2b */ val DEBUG: typings.soupbintcp.mod.PacketType.DEBUG & Double = js.native
     
     // H
     @js.native
-    sealed trait END_OF_SESSION extends PacketType
-    /* 0x5a */ val END_OF_SESSION: typings.soupbintcp.mod.PacketType.END_OF_SESSION with Double = js.native
+    sealed trait END_OF_SESSION
+      extends StObject
+         with PacketType
+    /* 0x5a */ val END_OF_SESSION: typings.soupbintcp.mod.PacketType.END_OF_SESSION & Double = js.native
     
     // +
     @js.native
-    sealed trait LOGIN_ACCEPTED extends PacketType
-    /* 0x41 */ val LOGIN_ACCEPTED: typings.soupbintcp.mod.PacketType.LOGIN_ACCEPTED with Double = js.native
+    sealed trait LOGIN_ACCEPTED
+      extends StObject
+         with PacketType
+    /* 0x41 */ val LOGIN_ACCEPTED: typings.soupbintcp.mod.PacketType.LOGIN_ACCEPTED & Double = js.native
     
     // A
     @js.native
-    sealed trait LOGIN_REJECTED extends PacketType
-    /* 0x4a */ val LOGIN_REJECTED: typings.soupbintcp.mod.PacketType.LOGIN_REJECTED with Double = js.native
+    sealed trait LOGIN_REJECTED
+      extends StObject
+         with PacketType
+    /* 0x4a */ val LOGIN_REJECTED: typings.soupbintcp.mod.PacketType.LOGIN_REJECTED & Double = js.native
     
     // Z
     @js.native
-    sealed trait LOGIN_REQUEST extends PacketType
-    /* 0x4c */ val LOGIN_REQUEST: typings.soupbintcp.mod.PacketType.LOGIN_REQUEST with Double = js.native
+    sealed trait LOGIN_REQUEST
+      extends StObject
+         with PacketType
+    /* 0x4c */ val LOGIN_REQUEST: typings.soupbintcp.mod.PacketType.LOGIN_REQUEST & Double = js.native
     
     // R
     @js.native
-    sealed trait LOGOUT_REQUEST extends PacketType
-    /* 0x4f */ val LOGOUT_REQUEST: typings.soupbintcp.mod.PacketType.LOGOUT_REQUEST with Double = js.native
+    sealed trait LOGOUT_REQUEST
+      extends StObject
+         with PacketType
+    /* 0x4f */ val LOGOUT_REQUEST: typings.soupbintcp.mod.PacketType.LOGOUT_REQUEST & Double = js.native
     
     // J
     @js.native
-    sealed trait SEQUENCED_DATA extends PacketType
-    /* 0x53 */ val SEQUENCED_DATA: typings.soupbintcp.mod.PacketType.SEQUENCED_DATA with Double = js.native
+    sealed trait SEQUENCED_DATA
+      extends StObject
+         with PacketType
+    /* 0x53 */ val SEQUENCED_DATA: typings.soupbintcp.mod.PacketType.SEQUENCED_DATA & Double = js.native
     
     // S
     @js.native
-    sealed trait SERVER_HEARTBEAT extends PacketType
-    /* 0x48 */ val SERVER_HEARTBEAT: typings.soupbintcp.mod.PacketType.SERVER_HEARTBEAT with Double = js.native
+    sealed trait SERVER_HEARTBEAT
+      extends StObject
+         with PacketType
+    /* 0x48 */ val SERVER_HEARTBEAT: typings.soupbintcp.mod.PacketType.SERVER_HEARTBEAT & Double = js.native
     
     // L
     @js.native
-    sealed trait UNSEQUENCED_DATA extends PacketType
-    /* 0x55 */ val UNSEQUENCED_DATA: typings.soupbintcp.mod.PacketType.UNSEQUENCED_DATA with Double = js.native
+    sealed trait UNSEQUENCED_DATA
+      extends StObject
+         with PacketType
+    /* 0x55 */ val UNSEQUENCED_DATA: typings.soupbintcp.mod.PacketType.UNSEQUENCED_DATA & Double = js.native
   }
   
   @JSImport("soupbintcp", "Parser")
@@ -143,40 +166,33 @@ object mod {
     def send(payload: js.Any, callback: js.Function1[/* data */ js.UndefOr[js.Any], Unit]): Unit = js.native
   }
   
-  @JSImport("soupbintcp", "formatLoginAccepted")
-  @js.native
-  def formatLoginAccepted(payload: LoginAcceptedPayload): Buffer = js.native
+  @scala.inline
+  def formatLoginAccepted(payload: LoginAcceptedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("soupbintcp", "formatLoginRejected")
-  @js.native
-  def formatLoginRejected(payload: LoginRejectedPayload): Buffer = js.native
+  @scala.inline
+  def formatLoginRejected(payload: LoginRejectedPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("soupbintcp", "formatLoginRequest")
-  @js.native
-  def formatLoginRequest(payload: LoginRequestPayload): Buffer = js.native
+  @scala.inline
+  def formatLoginRequest(payload: LoginRequestPayload): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("soupbintcp", "parseLoginAccepted")
-  @js.native
-  def parseLoginAccepted(payload: Buffer): LoginAcceptedPayload = js.native
+  @scala.inline
+  def parseLoginAccepted(payload: Buffer): LoginAcceptedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginAccepted")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginAcceptedPayload]
   
-  @JSImport("soupbintcp", "parseLoginRejected")
-  @js.native
-  def parseLoginRejected(payload: Buffer): LoginRejectedPayload = js.native
+  @scala.inline
+  def parseLoginRejected(payload: Buffer): LoginRejectedPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRejected")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRejectedPayload]
   
-  @JSImport("soupbintcp", "parseLoginRequest")
-  @js.native
-  def parseLoginRequest(payload: Buffer): LoginRequestPayload = js.native
+  @scala.inline
+  def parseLoginRequest(payload: Buffer): LoginRequestPayload = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLoginRequest")(payload.asInstanceOf[js.Any]).asInstanceOf[LoginRequestPayload]
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var heartbeatPacketType: PacketType = js.native
+    var heartbeatPacketType: PacketType
     
-    var keepAliveMillis: js.UndefOr[Double] = js.native
+    var keepAliveMillis: js.UndefOr[Double] = js.undefined
     
-    var rxTimeoutMillis: js.UndefOr[Double] = js.native
+    var rxTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var txIntervalMillis: js.UndefOr[Double] = js.native
+    var txIntervalMillis: js.UndefOr[Double] = js.undefined
   }
   object ConnectionOptions {
     
@@ -212,12 +228,11 @@ object mod {
     }
   }
   
-  @js.native
   trait LoginAcceptedPayload extends StObject {
     
-    var sequenceNumber: Double = js.native
+    var sequenceNumber: Double
     
-    var username: String = js.native
+    var username: String
   }
   object LoginAcceptedPayload {
     
@@ -238,10 +253,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LoginRejectedPayload extends StObject {
     
-    var rejectReasonCode: String = js.native
+    var rejectReasonCode: String
   }
   object LoginRejectedPayload {
     
@@ -259,16 +273,15 @@ object mod {
     }
   }
   
-  @js.native
   trait LoginRequestPayload extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var requestedSequenceNumber: Double = js.native
+    var requestedSequenceNumber: Double
     
-    var requestedSession: String = js.native
+    var requestedSession: String
     
-    var username: String = js.native
+    var username: String
   }
   object LoginRequestPayload {
     

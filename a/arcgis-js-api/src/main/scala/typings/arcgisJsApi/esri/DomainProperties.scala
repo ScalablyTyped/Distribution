@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.inherited
 import typings.arcgisJsApi.arcgisJsApiStrings.range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainProperties extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait DomainProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The domain type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#type)
     */
-  var `type`: js.UndefOr[range | `coded-value` | inherited] = js.native
+  var `type`: js.UndefOr[range | `coded-value` | inherited] = js.undefined
 }
 object DomainProperties {
   

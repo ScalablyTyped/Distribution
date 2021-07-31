@@ -4,7 +4,6 @@ import typings.pReflect.pReflectBooleans.`false`
 import typings.pReflect.pReflectBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,9 +52,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-reflect", JSImport.Namespace)
-  @js.native
-  def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = js.native
+  @scala.inline
+  def apply[ValueType](promise: js.Thenable[ValueType]): js.Promise[PromiseResult[ValueType]] = ^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseResult[ValueType]]]
   
   @JSImport("p-reflect", JSImport.Namespace)
   @js.native
@@ -72,25 +70,26 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pReflect */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait PromiseFulfilledResult[ValueType] extends PromiseResult[ValueType] {
+  trait PromiseFulfilledResult[ValueType]
+    extends StObject
+       with PromiseResult[ValueType] {
     
-    var isFulfilled: `true` = js.native
+    var isFulfilled: `true`
     
-    var isRejected: `false` = js.native
+    var isRejected: `false`
     
-    var value: ValueType = js.native
+    var value: ValueType
   }
   object PromiseFulfilledResult {
     
     @scala.inline
-    def apply[ValueType](isFulfilled: `true`, isRejected: `false`, value: ValueType): PromiseFulfilledResult[ValueType] = {
-      val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[ValueType](value: ValueType): PromiseFulfilledResult[ValueType] = {
+      val __obj = js.Dynamic.literal(isFulfilled = true, isRejected = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseFulfilledResult[ValueType]]
     }
     
     @scala.inline
-    implicit class PromiseFulfilledResultMutableBuilder[Self <: PromiseFulfilledResult[_], ValueType] (val x: Self with PromiseFulfilledResult[ValueType]) extends AnyVal {
+    implicit class PromiseFulfilledResultMutableBuilder[Self <: PromiseFulfilledResult[?], ValueType] (val x: Self & PromiseFulfilledResult[ValueType]) extends AnyVal {
       
       @scala.inline
       def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
@@ -103,21 +102,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PromiseRejectedResult
-    extends PromiseResult[js.Any] {
+    extends StObject
+       with PromiseResult[js.Any] {
     
-    var isFulfilled: `false` = js.native
+    var isFulfilled: `false`
     
-    var isRejected: `true` = js.native
+    var isRejected: `true`
     
-    var reason: js.Any = js.native
+    var reason: js.Any
   }
   object PromiseRejectedResult {
     
     @scala.inline
-    def apply(isFulfilled: `false`, isRejected: `true`, reason: js.Any): PromiseRejectedResult = {
-      val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    def apply(reason: js.Any): PromiseRejectedResult = {
+      val __obj = js.Dynamic.literal(isFulfilled = false, isRejected = true, reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseRejectedResult]
     }
     
@@ -143,14 +142,14 @@ object mod {
   object PromiseResult {
     
     @scala.inline
-    def PromiseFulfilledResult[ValueType](isFulfilled: `true`, isRejected: `false`, value: ValueType): typings.pReflect.mod.PromiseFulfilledResult[ValueType] = {
-      val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def PromiseFulfilledResult[ValueType](value: ValueType): typings.pReflect.mod.PromiseFulfilledResult[ValueType] = {
+      val __obj = js.Dynamic.literal(isFulfilled = true, isRejected = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pReflect.mod.PromiseFulfilledResult[ValueType]]
     }
     
     @scala.inline
-    def PromiseRejectedResult(isFulfilled: `false`, isRejected: `true`, reason: js.Any): typings.pReflect.mod.PromiseRejectedResult = {
-      val __obj = js.Dynamic.literal(isFulfilled = isFulfilled.asInstanceOf[js.Any], isRejected = isRejected.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    def PromiseRejectedResult(reason: js.Any): typings.pReflect.mod.PromiseRejectedResult = {
+      val __obj = js.Dynamic.literal(isFulfilled = false, isRejected = true, reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.pReflect.mod.PromiseRejectedResult]
     }
   }

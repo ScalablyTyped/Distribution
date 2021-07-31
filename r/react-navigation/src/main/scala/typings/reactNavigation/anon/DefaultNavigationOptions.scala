@@ -8,21 +8,19 @@ import typings.reactNavigation.mod.NavigationScreenConfigProps
 import typings.reactNavigation.mod.NavigationScreenProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultNavigationOptions[Options, NavigationScreenPropType] extends StObject {
   
-  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, _]] = js.native
+  var defaultNavigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]] = js.undefined
   
   var navigationOptions: js.UndefOr[
     NavigationScreenConfig[
-      StringDictionary[_], 
+      StringDictionary[js.Any], 
       NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object DefaultNavigationOptions {
   
@@ -33,14 +31,14 @@ object DefaultNavigationOptions {
   }
   
   @scala.inline
-  implicit class DefaultNavigationOptionsMutableBuilder[Self <: DefaultNavigationOptions[_, _], Options, NavigationScreenPropType] (val x: Self with (DefaultNavigationOptions[Options, NavigationScreenPropType])) extends AnyVal {
+  implicit class DefaultNavigationOptionsMutableBuilder[Self <: DefaultNavigationOptions[?, ?], Options, NavigationScreenPropType] (val x: Self & (DefaultNavigationOptions[Options, NavigationScreenPropType])) extends AnyVal {
     
     @scala.inline
-    def setDefaultNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, _]): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
+    def setDefaultNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, js.Any]): Self = StObject.set(x, "defaultNavigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, _]) with NavigationOptionsOptions[Options] => Options
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, js.Any]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "defaultNavigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -49,15 +47,15 @@ object DefaultNavigationOptions {
     @scala.inline
     def setNavigationOptions(
       value: NavigationScreenConfig[
-          StringDictionary[_], 
+          StringDictionary[js.Any], 
           NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], _]) with NavigationOptionsOptions[StringDictionary[_]] => StringDictionary[_]
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams], js.Any]) & NavigationOptionsOptions[StringDictionary[js.Any]] => StringDictionary[js.Any]
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline

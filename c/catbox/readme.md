@@ -10,9 +10,9 @@ Multi-strategy object caching service
 | ------------------ | :-------------: |
 | Full name          | catbox |
 | Keywords           | cache, generic, adapter |
-| # releases         | 6 |
-| # dependents       | 29 |
-| # downloads        | 8846665 |
+| # releases         | 2 |
+| # dependents       | 30 |
+| # downloads        | 8122204 |
 | # stars            | 9 |
 
 ## Links

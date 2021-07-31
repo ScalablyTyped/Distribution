@@ -14,27 +14,27 @@ import typings.jss.mod.Rule
 import typings.jss.mod.StyleSheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait Instantiable extends Instantiable0[Renderer]
+  trait Instantiable
+    extends StObject
+       with Instantiable0[Renderer]
   
   /* Inlined std.Partial<jss.jss.JssOptions> */
-  @js.native
   trait PartialJssOptions extends StObject {
     
-    var Renderer: js.UndefOr[Instantiable | Null] = js.native
+    var Renderer: js.UndefOr[Instantiable | Null] = js.undefined
     
-    var createGenerateId: js.UndefOr[CreateGenerateId_] = js.native
+    var createGenerateId: js.UndefOr[CreateGenerateId_] = js.undefined
     
-    var id: js.UndefOr[CreateGenerateIdOptions] = js.native
+    var id: js.UndefOr[CreateGenerateIdOptions] = js.undefined
     
-    var insertionPoint: js.UndefOr[InsertionPoint] = js.native
+    var insertionPoint: js.UndefOr[InsertionPoint] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   }
   object PartialJssOptions {
     
@@ -86,24 +86,23 @@ object anon {
   }
   
   /* Inlined std.Partial<jss.jss.RuleOptions> */
-  @js.native
   trait PartialRuleOptions extends StObject {
     
-    var Renderer: js.UndefOr[typings.jss.mod.Renderer] = js.native
+    var Renderer: js.UndefOr[typings.jss.mod.Renderer] = js.undefined
     
-    var classes: js.UndefOr[Classes[String]] = js.native
+    var classes: js.UndefOr[Classes[String]] = js.undefined
     
-    var generateId: js.UndefOr[GenerateId] = js.native
+    var generateId: js.UndefOr[GenerateId] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var jss: js.UndefOr[Jss] = js.native
+    var jss: js.UndefOr[Jss] = js.undefined
     
-    var parent: js.UndefOr[ContainerRule | (StyleSheet[String | Double | js.Symbol])] = js.native
+    var parent: js.UndefOr[ContainerRule | (StyleSheet[String | Double | js.Symbol])] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.native
+    var sheet: js.UndefOr[StyleSheet[String | Double | js.Symbol]] = js.undefined
   }
   object PartialRuleOptions {
     

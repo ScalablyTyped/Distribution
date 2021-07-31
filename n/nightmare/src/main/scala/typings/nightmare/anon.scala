@@ -2,15 +2,13 @@ package typings.nightmare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Downloads extends StObject {
     
-    var downloads: js.UndefOr[String] = js.native
+    var downloads: js.UndefOr[String] = js.undefined
   }
   object Downloads {
     
@@ -31,16 +29,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -67,14 +64,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
     /**
       * Opens the devtools with specified dock state, can be right, bottom, undocked, detach.
       * https://github.com/electron/electron/blob/master/docs/api/web-contents.md#contentsopendevtoolsoptions
       */
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
   }
   object Mode {
     

@@ -3,37 +3,35 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc job for running Presto (https://prestosql.io/) queries
   */
-@js.native
 trait SchemaPrestoJob extends StObject {
   
   /**
     * Optional. Presto client tags to attach to this query
     */
-  var clientTags: js.UndefOr[js.Array[String]] = js.native
+  var clientTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Whether to continue executing queries if a query fails. The
     * default value is false. Setting to true can be useful when executing
     * independent parallel queries.
     */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The runtime log config for job execution.
     */
-  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[SchemaLoggingConfig] = js.undefined
   
   /**
     * Optional. The format in which query output will be displayed. See the
     * Presto documentation for supported output formats
     */
-  var outputFormat: js.UndefOr[String] = js.native
+  var outputFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A mapping of property names to values. Used to set Presto
@@ -41,17 +39,17 @@ trait SchemaPrestoJob extends StObject {
     * (https://prestodb.io/docs/current/sql/set-session.html) Equivalent to
     * using the --session flag in the Presto CLI
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HCFS URI of the script that contains SQL queries.
     */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * A list of queries.
     */
-  var queryList: js.UndefOr[SchemaQueryList] = js.native
+  var queryList: js.UndefOr[SchemaQueryList] = js.undefined
 }
 object SchemaPrestoJob {
   

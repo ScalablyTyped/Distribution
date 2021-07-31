@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PixelRatioStatic extends StObject {
   
   /*
@@ -25,7 +23,7 @@ trait PixelRatioStatic extends StObject {
     PixelRatio.get() === 3.5
     Nexus 6
     */
-  def get(): Double = js.native
+  def get(): Double
   
   /*
     Returns the scaling factor for font sizes. This is the ratio that is
@@ -36,13 +34,13 @@ trait PixelRatioStatic extends StObject {
     preference set in Settings > Display > Font size,
     on iOS it will always return the default pixel ratio.
     */
-  def getFontScale(): Double = js.native
+  def getFontScale(): Double
   
   /**
     * Converts a layout size (dp) to pixel size (px).
     * Guaranteed to return an integer number.
     */
-  def getPixelSizeForLayoutSize(layoutSize: Double): Double = js.native
+  def getPixelSizeForLayoutSize(layoutSize: Double): Double
   
   /**
     * Rounds a layout size (dp) to the nearest layout size that
@@ -51,12 +49,12 @@ trait PixelRatioStatic extends StObject {
     * PixelRatio.roundToNearestPixel(8.4) = 8.33,
     * which corresponds to exactly (8.33 * 3) = 25 pixels.
     */
-  def roundToNearestPixel(layoutSize: Double): Double = js.native
+  def roundToNearestPixel(layoutSize: Double): Double
   
   /**
     * No-op for iOS, but used on the web. Should not be documented. [sic]
     */
-  def startDetecting(): Unit = js.native
+  def startDetecting(): Unit
 }
 object PixelRatioStatic {
   

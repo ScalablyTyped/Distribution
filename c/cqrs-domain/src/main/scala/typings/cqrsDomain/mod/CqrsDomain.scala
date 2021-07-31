@@ -3,7 +3,6 @@ package typings.cqrsDomain.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -56,7 +55,7 @@ trait CqrsDomain extends StObject {
     cmd: js.Any,
     cb: js.Function4[
       /* err */ Error, 
-      /* events */ js.Array[_], 
+      /* events */ js.Array[js.Any], 
       /* aggregateData */ js.Any, 
       /* metaInfos */ HandleMetaInfos, 
       Unit
@@ -91,12 +90,12 @@ trait CqrsDomain extends StObject {
   def onDispatched(
     cmd: js.Any,
     err: Error,
-    eventsToDispatch: js.Array[_],
+    eventsToDispatch: js.Array[js.Any],
     aggregateData: js.Any,
     meta: js.Any,
     callback: js.Function4[
       /* err */ Error, 
-      /* evts */ js.Array[_], 
+      /* evts */ js.Array[js.Any], 
       /* aggregateData */ js.Any, 
       /* meta */ js.Any, 
       Unit

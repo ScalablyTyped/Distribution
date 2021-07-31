@@ -2,13 +2,11 @@ package typings.seleniumWebdriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncBoolean extends StObject {
   
-  var async: Boolean = js.native
+  var async: Boolean
 }
 object AsyncBoolean {
   

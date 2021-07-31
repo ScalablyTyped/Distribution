@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortingConfiguration extends StObject {
   
   /**
     * The name of the document attribute used to sort the response. You can use any field that has the Sortable flag set to true. You can also sort by any of the following built-in attributes:   _category   _created_at   _last_updated_at   _version   _view_count  
     */
-  var DocumentAttributeKey: typings.awsSdk.kendraMod.DocumentAttributeKey = js.native
+  var DocumentAttributeKey: typings.awsSdk.kendraMod.DocumentAttributeKey
   
   /**
     * The order that the results should be returned in. In case of ties, the relevance assigned to the result by Amazon Kendra is used as the tie-breaker.
     */
-  var SortOrder: typings.awsSdk.kendraMod.SortOrder = js.native
+  var SortOrder: typings.awsSdk.kendraMod.SortOrder
 }
 object SortingConfiguration {
   

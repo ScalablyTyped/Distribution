@@ -3,54 +3,52 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `GetBinding()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse extends StObject {
   
   /**
     * Credentials to use the binding.
     */
-  var credentials: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var credentials: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * String containing the Deployment Manager deployment name that was created
     * for this binding,
     */
-  var deploymentName: js.UndefOr[String] = js.native
+  var deploymentName: js.UndefOr[String] = js.undefined
   
   /**
     * Used to communicate description of the response. Usually for non-standard
     * error codes.
     * https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the binding, e.g.
     * projects/project_id/brokers/broker_id/service_instances/instance_id/bindings/binding_id.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to which the platform may proxy requests for the address sent with
     * bind_resource.route
     */
-  var route_service_url: js.UndefOr[String] = js.native
+  var route_service_url: js.UndefOr[String] = js.undefined
   
   /**
     * From where to read system logs.
     */
-  var syslog_drain_url: js.UndefOr[String] = js.native
+  var syslog_drain_url: js.UndefOr[String] = js.undefined
   
   /**
     * An array of configurations for mounting volumes.
     */
-  var volume_mounts: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var volume_mounts: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse {
   
@@ -100,7 +98,7 @@ object SchemaGoogleCloudServicebrokerV1beta1GetBindingResponse {
     def setSyslog_drain_urlUndefined: Self = StObject.set(x, "syslog_drain_url", js.undefined)
     
     @scala.inline
-    def setVolume_mounts(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "volume_mounts", value.asInstanceOf[js.Any])
+    def setVolume_mounts(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "volume_mounts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVolume_mountsUndefined: Self = StObject.set(x, "volume_mounts", js.undefined)

@@ -6,10 +6,13 @@ import typings.simplecrawler.queueMod.QueueItem
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
+  
+  @JSImport("simplecrawler/cache", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("simplecrawler/cache", JSImport.Default)
   @js.native
@@ -36,10 +39,8 @@ object cacheMod {
     def setCacheData(queueObject: QueueItem, data: js.Any, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @JSImport("simplecrawler/cache", "FilesystemBackend")
-  @js.native
-  def FilesystemBackend(): FSBackend = js.native
-  @JSImport("simplecrawler/cache", "FilesystemBackend")
-  @js.native
-  def FilesystemBackend(loadParameter: String): FSBackend = js.native
+  @scala.inline
+  def FilesystemBackend(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")().asInstanceOf[FSBackend]
+  @scala.inline
+  def FilesystemBackend(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("FilesystemBackend")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
 }

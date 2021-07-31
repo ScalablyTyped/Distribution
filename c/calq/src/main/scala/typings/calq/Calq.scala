@@ -5,7 +5,6 @@ import typings.calq.Calq.Action
 import typings.calq.Calq.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,14 +37,13 @@ object Calq {
     def trackSale(action: String, params: StringDictionary[js.Any], currency: String, amount: Double): Unit = js.native
   }
   
-  @js.native
   trait User extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def identify(userId: String): Unit = js.native
+    def identify(userId: String): Unit
     
-    def profile(params: StringDictionary[js.Any]): Unit = js.native
+    def profile(params: StringDictionary[js.Any]): Unit
   }
   object User {
     

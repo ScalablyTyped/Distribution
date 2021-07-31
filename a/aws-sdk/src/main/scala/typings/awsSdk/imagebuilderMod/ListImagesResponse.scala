@@ -2,26 +2,24 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImagesResponse extends StObject {
   
   /**
     * The list of image semantic versions. 
     */
-  var imageVersionList: js.UndefOr[ImageVersionList] = js.native
+  var imageVersionList: js.UndefOr[ImageVersionList] = js.undefined
   
   /**
     * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The request ID that uniquely identifies this request. 
     */
-  var requestId: js.UndefOr[NonEmptyString] = js.native
+  var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object ListImagesResponse {
   

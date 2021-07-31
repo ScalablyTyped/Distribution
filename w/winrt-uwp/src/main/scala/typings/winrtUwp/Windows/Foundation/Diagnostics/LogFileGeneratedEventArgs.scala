@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 import typings.winrtUwp.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the LogFileGenerated event. */
-@js.native
 trait LogFileGeneratedEventArgs extends StObject {
   
   /** Gets the log file. */
-  var file: StorageFile = js.native
+  var file: StorageFile
 }
 object LogFileGeneratedEventArgs {
   

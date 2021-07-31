@@ -2,16 +2,14 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropIndexOptions extends StObject {
   
   /**
     * If true, attempting to drop on a bucket without the specified index won't cause an error to be thrown.
     */
-  var ignoreIfNotExists: js.UndefOr[Boolean] = js.native
+  var ignoreIfNotExists: js.UndefOr[Boolean] = js.undefined
 }
 object DropIndexOptions {
   

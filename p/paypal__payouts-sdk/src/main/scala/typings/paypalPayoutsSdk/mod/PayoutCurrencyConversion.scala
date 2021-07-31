@@ -2,17 +2,15 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayoutCurrencyConversion extends StObject {
   
-  var exchange_rate: js.UndefOr[String] = js.native
+  var exchange_rate: js.UndefOr[String] = js.undefined
   
-  var from_amount: js.UndefOr[Currency] = js.native
+  var from_amount: js.UndefOr[Currency] = js.undefined
   
-  var to_amount: js.UndefOr[Currency] = js.native
+  var to_amount: js.UndefOr[Currency] = js.undefined
 }
 object PayoutCurrencyConversion {
   

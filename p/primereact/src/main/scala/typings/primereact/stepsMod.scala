@@ -5,7 +5,6 @@ import typings.primereact.menuItemMod.MenuItem
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
@@ -22,22 +21,21 @@ object stepsMod {
     def this(props: StepsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait StepsProps extends StObject {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.Array[MenuItem] = js.native
+    var model: js.Array[MenuItem]
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ IndexItem, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ IndexItem, Unit]] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object StepsProps {
     

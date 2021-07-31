@@ -3,15 +3,13 @@ package typings.screeps.anon
 import typings.screeps.ExitConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exit extends StObject {
   
-  var exit: ExitConstant = js.native
+  var exit: ExitConstant
   
-  var room: String = js.native
+  var room: String
 }
 object Exit {
   

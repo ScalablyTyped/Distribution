@@ -16,7 +16,6 @@ import typings.std.ReadonlyArray
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,14 +24,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : createRouter = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[js.Any] = js.undefined
     
-    var pre: js.UndefOr[Handler] = js.native
+    var pre: js.UndefOr[Handler] = js.undefined
     
-    var validate: js.UndefOr[ContinueOnError] = js.native
+    var validate: js.UndefOr[ContinueOnError] = js.undefined
   }
   object Config {
     
@@ -72,15 +70,19 @@ object mod extends Shortcut {
   
   type Handler = FullHandler | NestedHandler
   
-  type Method = js.Function3[
-    /* path */ String | RegExp, 
-    /* handlerOrConfig */ Handler | Config, 
-    /* repeated */ Handler, 
-    Router
-  ]
+  @js.native
+  trait Method extends StObject {
+    
+    def apply(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def apply(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+    def apply(path: RegExp, handlerOrConfig: Config, handlers: Handler*): Router = js.native
+    def apply(path: RegExp, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
+  }
   
   @js.native
-  trait NestedHandler extends ReadonlyArray[Handler]
+  trait NestedHandler
+    extends StObject
+       with ReadonlyArray[Handler]
   
   /* Rewritten from type alias, can be one of: 
     - typings.koaJoiRouter.anon.Body
@@ -91,13 +93,13 @@ object mod extends Shortcut {
     
     @scala.inline
     def Body(): typings.koaJoiRouter.anon.Body = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(body = null)
       __obj.asInstanceOf[typings.koaJoiRouter.anon.Body]
     }
     
     @scala.inline
     def Headers(): typings.koaJoiRouter.anon.Headers = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(headers = null)
       __obj.asInstanceOf[typings.koaJoiRouter.anon.Headers]
     }
   }
@@ -135,12 +137,12 @@ object mod extends Shortcut {
     @JSName("options")
     var options_Original: Method = js.native
     
-    def param(param: String, middleware: IParamMiddleware[_, js.Object]): typings.koaRouter.mod.Router[_, js.Object] = js.native
+    def param(param: String, middleware: IParamMiddleware[js.Any, js.Object]): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
     @JSName("param")
     var param_Original: js.Function2[
         /* param */ String, 
-        /* middleware */ IParamMiddleware[_, js.Object], 
-        typings.koaRouter.mod.Router[_, js.Object]
+        /* middleware */ IParamMiddleware[js.Any, js.Object], 
+        typings.koaRouter.mod.Router[js.Any, js.Object]
       ] = js.native
     
     def patch(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
@@ -157,9 +159,9 @@ object mod extends Shortcut {
     @JSName("post")
     var post_Original: Method = js.native
     
-    def prefix(prefix: String): typings.koaRouter.mod.Router[_, js.Object] = js.native
+    def prefix(prefix: String): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
     @JSName("prefix")
-    var prefix_Original: js.Function1[/* prefix */ String, typings.koaRouter.mod.Router[_, js.Object]] = js.native
+    var prefix_Original: js.Function1[/* prefix */ String, typings.koaRouter.mod.Router[js.Any, js.Object]] = js.native
     
     def put(path: String, handlerOrConfig: Config, handlers: Handler*): Router = js.native
     def put(path: String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native
@@ -171,26 +173,27 @@ object mod extends Shortcut {
     def route(spec: js.Array[Spec]): Router = js.native
     def route(spec: Spec): Router = js.native
     
-    var router: typings.koaRouter.mod.^[_, js.Object] = js.native
+    var router: typings.koaRouter.mod.^[js.Any, js.Object] = js.native
     
     var routes: js.Array[Spec] = js.native
     
-    def use(middleware: (IMiddleware[_, js.Object])*): typings.koaRouter.mod.Router[_, js.Object] = js.native
-    def use(path: String, middleware: (IMiddleware[_, js.Object])*): typings.koaRouter.mod.Router[_, js.Object] = js.native
-    def use(path: js.Array[String], middleware: (IMiddleware[_, js.Object])*): typings.koaRouter.mod.Router[_, js.Object] = js.native
-    def use(path: RegExp, middleware: (IMiddleware[_, js.Object])*): typings.koaRouter.mod.Router[_, js.Object] = js.native
+    def use(middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def use(path: String, middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def use(path: js.Array[String], middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
+    def use(path: RegExp, middleware: (IMiddleware[js.Any, js.Object])*): typings.koaRouter.mod.Router[js.Any, js.Object] = js.native
     @JSName("use")
     var use_Original: FnCall = js.native
   }
   
-  @js.native
-  trait Spec extends Config {
+  trait Spec
+    extends StObject
+       with Config {
     
-    var handler: Handler = js.native
+    var handler: Handler
     
-    var method: String | js.Array[String] = js.native
+    var method: String | js.Array[String]
     
-    var path: String | RegExp = js.native
+    var path: String | RegExp
   }
   object Spec {
     
@@ -236,12 +239,11 @@ object mod extends Shortcut {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var body: js.UndefOr[js.Any] = js.native
+      var body: js.UndefOr[js.Any] = js.undefined
       
-      var params: StringDictionary[String] = js.native
+      var params: StringDictionary[String]
     }
     object Request {
       

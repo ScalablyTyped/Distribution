@@ -3,23 +3,21 @@ package typings.reactBootstrapTableNext.anon
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.TEXT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comparator extends StObject {
   
-  var comparator: js.Any = js.native
+  var comparator: js.Any
   
-  var filterType: TEXT = js.native
+  var filterType: TEXT
   
-  var filterVal: js.Any = js.native
+  var filterVal: js.Any
 }
 object Comparator {
   
   @scala.inline
-  def apply(comparator: js.Any, filterType: TEXT, filterVal: js.Any): Comparator = {
-    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any], filterVal = filterVal.asInstanceOf[js.Any])
+  def apply(comparator: js.Any, filterVal: js.Any): Comparator = {
+    val __obj = js.Dynamic.literal(comparator = comparator.asInstanceOf[js.Any], filterType = "TEXT", filterVal = filterVal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comparator]
   }
   

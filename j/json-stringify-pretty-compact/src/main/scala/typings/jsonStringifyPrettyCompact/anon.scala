@@ -2,21 +2,19 @@ package typings.jsonStringifyPrettyCompact
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Indent extends StObject {
     
-    var indent: js.UndefOr[Double | String] = js.native
+    var indent: js.UndefOr[Double | String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     var replacer: js.UndefOr[
-        (js.Function2[/* key */ String, /* value */ js.Any, _]) | (js.Array[Double | String]) | Null
-      ] = js.native
+        (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String]) | Null
+      ] = js.undefined
   }
   object Indent {
     
@@ -42,10 +40,10 @@ object anon {
       def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
       @scala.inline
-      def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, _]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
+      def setReplacer(value: (js.Function2[/* key */ String, /* value */ js.Any, js.Any]) | (js.Array[Double | String])): Self = StObject.set(x, "replacer", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacerFunction2(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerNull: Self = StObject.set(x, "replacer", null)

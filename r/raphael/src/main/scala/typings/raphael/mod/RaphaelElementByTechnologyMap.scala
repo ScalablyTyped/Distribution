@@ -3,15 +3,13 @@ package typings.raphael.mod
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelElementByTechnologyMap[TSvg /* <: SVGElement */, TVml /* <: VMLElement */] extends StObject {
   
-  var SVG: TSvg = js.native
+  var SVG: TSvg
   
-  var VML: TVml = js.native
+  var VML: TVml
 }
 object RaphaelElementByTechnologyMap {
   
@@ -22,7 +20,7 @@ object RaphaelElementByTechnologyMap {
   }
   
   @scala.inline
-  implicit class RaphaelElementByTechnologyMapMutableBuilder[Self <: RaphaelElementByTechnologyMap[_, _], TSvg /* <: SVGElement */, TVml /* <: VMLElement */] (val x: Self with (RaphaelElementByTechnologyMap[TSvg, TVml])) extends AnyVal {
+  implicit class RaphaelElementByTechnologyMapMutableBuilder[Self <: RaphaelElementByTechnologyMap[?, ?], TSvg /* <: SVGElement */, TVml /* <: VMLElement */] (val x: Self & (RaphaelElementByTechnologyMap[TSvg, TVml])) extends AnyVal {
     
     @scala.inline
     def setSVG(value: TSvg): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])

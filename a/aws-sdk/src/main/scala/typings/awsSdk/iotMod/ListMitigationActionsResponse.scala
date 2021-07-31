@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMitigationActionsResponse extends StObject {
   
   /**
     * A set of actions that matched the specified filter criteria.
     */
-  var actionIdentifiers: js.UndefOr[MitigationActionIdentifierList] = js.native
+  var actionIdentifiers: js.UndefOr[MitigationActionIdentifierList] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListMitigationActionsResponse {
   

@@ -2,13 +2,11 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents dependency parse tree information for a token.
   */
-@js.native
 trait SchemaDependencyEdge extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaDependencyEdge extends StObject {
     * If this token is a root token, then the `head_token_index` is its own
     * index.
     */
-  var headTokenIndex: js.UndefOr[Double] = js.native
+  var headTokenIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The parse label for the token.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object SchemaDependencyEdge {
   

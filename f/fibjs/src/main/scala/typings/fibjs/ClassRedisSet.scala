@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 用以操作 Redis 的 Set 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var set = rdb.getSet("test");,```
   */
 @js.native
-trait ClassRedisSet extends ClassObject {
+trait ClassRedisSet
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -30,7 +31,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     * 
     */
-  def add(members: js.Array[_]): Double = js.native
+  def add(members: js.Array[js.Any]): Double = js.native
   
   /**
     * 
@@ -58,7 +59,7 @@ trait ClassRedisSet extends ClassObject {
     * 
     * 
     */
-  def members(): js.Array[_] = js.native
+  def members(): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -104,5 +105,5 @@ trait ClassRedisSet extends ClassObject {
     * 
     * 
     */
-  def remove(members: js.Array[_]): Double = js.native
+  def remove(members: js.Array[js.Any]): Double = js.native
 }

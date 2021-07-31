@@ -7,40 +7,36 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: String): Unit = js.native
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: String, options: Options): Unit = js.native
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: Element): Unit = js.native
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: Element, options: Options): Unit = js.native
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: HTMLElement): Unit = js.native
-  @JSImport("scroll-to-element", JSImport.Namespace)
-  @js.native
-  def apply(selector: HTMLElement, options: Options): Unit = js.native
+  @scala.inline
+  def apply(selector: String): Unit = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(selector: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(selector: Element): Unit = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(selector: Element, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(selector: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(selector: HTMLElement, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("scroll-to-element", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var align: js.UndefOr[top | middle | bottom] = js.native
+    var align: js.UndefOr[top | middle | bottom] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var ease: js.UndefOr[String] = js.native
+    var ease: js.UndefOr[String] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Options {
     

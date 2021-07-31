@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the SlicerItemCollection object, for use in `slicerItemCollection.set({ ... })`. */
-@js.native
 trait SlicerItemCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[SlicerItemData]] = js.native
+  var items: js.UndefOr[js.Array[SlicerItemData]] = js.undefined
 }
 object SlicerItemCollectionUpdateData {
   

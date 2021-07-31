@@ -5,19 +5,19 @@ import typings.sparqljs.sparqljsStrings.copy
 import typings.sparqljs.sparqljsStrings.move
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CopyMoveAddOperation extends ManagementOperation {
+trait CopyMoveAddOperation
+  extends StObject
+     with ManagementOperation {
   
-  var destination: GraphOrDefault = js.native
+  var destination: GraphOrDefault
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var source: GraphOrDefault = js.native
+  var source: GraphOrDefault
   
-  var `type`: copy | move | add = js.native
+  var `type`: copy | move | add
 }
 object CopyMoveAddOperation {
   

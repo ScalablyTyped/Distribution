@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListPageable extends StObject {
   
-  var alwaysVisible: js.UndefOr[Boolean] = js.native
+  var alwaysVisible: js.UndefOr[Boolean] = js.undefined
   
-  var buttonCount: js.UndefOr[Double] = js.native
+  var buttonCount: js.UndefOr[Double] = js.undefined
   
-  var info: js.UndefOr[Boolean] = js.native
+  var info: js.UndefOr[Boolean] = js.undefined
   
-  var input: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[TreeListPageableMessages] = js.native
+  var messages: js.UndefOr[TreeListPageableMessages] = js.undefined
   
-  var numeric: js.UndefOr[Boolean] = js.native
+  var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.native
+  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var previousNext: js.UndefOr[Boolean] = js.native
+  var previousNext: js.UndefOr[Boolean] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
 }
 object TreeListPageable {
   

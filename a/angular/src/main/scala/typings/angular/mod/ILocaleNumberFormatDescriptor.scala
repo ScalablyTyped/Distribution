@@ -2,19 +2,17 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILocaleNumberFormatDescriptor extends StObject {
   
-  var CURRENCY_SYM: String = js.native
+  var CURRENCY_SYM: String
   
-  var DECIMAL_SEP: String = js.native
+  var DECIMAL_SEP: String
   
-  var GROUP_SEP: String = js.native
+  var GROUP_SEP: String
   
-  var PATTERNS: js.Array[ILocaleNumberPatternDescriptor] = js.native
+  var PATTERNS: js.Array[ILocaleNumberPatternDescriptor]
 }
 object ILocaleNumberFormatDescriptor {
   

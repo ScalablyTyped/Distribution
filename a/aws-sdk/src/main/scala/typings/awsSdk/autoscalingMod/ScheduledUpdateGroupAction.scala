@@ -2,61 +2,59 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledUpdateGroupAction extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The desired capacity is the initial capacity of the Auto Scaling group after the scheduled action runs and the capacity it attempts to maintain.
     */
-  var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.native
+  var DesiredCapacity: js.UndefOr[AutoScalingGroupDesiredCapacity] = js.undefined
   
   /**
     * The date and time in UTC for the recurring schedule to end. For example, "2019-06-01T00:00:00Z". 
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The maximum size of the Auto Scaling group.
     */
-  var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.native
+  var MaxSize: js.UndefOr[AutoScalingGroupMaxSize] = js.undefined
   
   /**
     * The minimum size of the Auto Scaling group.
     */
-  var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.native
+  var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
   
   /**
     * The recurring schedule for the action, in Unix cron syntax format. When StartTime and EndTime are specified with Recurrence, they form the boundaries of when the recurring action starts and stops.
     */
-  var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.native
+  var Recurrence: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the scheduled action.
     */
-  var ScheduledActionARN: js.UndefOr[ResourceName] = js.native
+  var ScheduledActionARN: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The name of the scheduled action.
     */
-  var ScheduledActionName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var ScheduledActionName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The date and time in UTC for this action to start. For example, "2019-06-01T00:00:00Z". 
     */
-  var StartTime: js.UndefOr[TimestampType] = js.native
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * This parameter is no longer used.
     */
-  var Time: js.UndefOr[TimestampType] = js.native
+  var Time: js.UndefOr[TimestampType] = js.undefined
 }
 object ScheduledUpdateGroupAction {
   

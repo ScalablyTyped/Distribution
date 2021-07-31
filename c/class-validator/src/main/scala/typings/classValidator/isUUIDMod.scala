@@ -4,34 +4,31 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isUUIDMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsUUID", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsUUID", "IS_UUID")
   @js.native
   val IS_UUID: /* "isUuid" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsUUID", "IsUUID")
-  @js.native
-  def IsUUID_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsUUID", "IsUUID")
-  @js.native
-  def IsUUID_(version: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsUUID", "IsUUID")
-  @js.native
-  def IsUUID_(version: UUIDVersion): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsUUID", "IsUUID")
-  @js.native
-  def IsUUID_(version: UUIDVersion, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsUUID_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: UUIDVersion): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsUUID_(version: UUIDVersion, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsUUID", "isUUID")
-  @js.native
-  def isUUID(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsUUID", "isUUID")
-  @js.native
-  def isUUID(value: js.Any, version: UUIDVersion): Boolean = js.native
+  @scala.inline
+  def isUUID(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isUUID(value: js.Any, version: UUIDVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUUID")(value.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.classValidator.classValidatorNumbers.`3`

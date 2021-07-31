@@ -6,39 +6,37 @@ import typings.arangodb.anon.Deletion
 import typings.arangodb.anon.FileSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionFigures extends StObject {
   
-  var alive: Count = js.native
+  var alive: Count
   
-  var attributes: Count = js.native
+  var attributes: Count
   
-  var compactionStatus: BytesRead = js.native
+  var compactionStatus: BytesRead
   
-  var compactors: FileSize = js.native
+  var compactors: FileSize
   
-  var datafiles: FileSize = js.native
+  var datafiles: FileSize
   
-  var dead: Deletion = js.native
+  var dead: Deletion
   
-  var documentReferences: Double = js.native
+  var documentReferences: Double
   
-  var indexes: Count = js.native
+  var indexes: Count
   
-  var journals: FileSize = js.native
+  var journals: FileSize
   
-  var lastTick: Double = js.native
+  var lastTick: Double
   
-  var shapefiles: FileSize = js.native
+  var shapefiles: FileSize
   
-  var shapes: Count = js.native
+  var shapes: Count
   
-  var uncollectedLogfileEntries: Double = js.native
+  var uncollectedLogfileEntries: Double
   
-  var waitingFor: String = js.native
+  var waitingFor: String
 }
 object CollectionFigures {
   

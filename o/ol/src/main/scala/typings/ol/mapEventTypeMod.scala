@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapEventTypeMod {
@@ -12,13 +11,13 @@ object mapEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MapEventType with String] = js.native
+    def apply(value: String): js.UndefOr[MapEventType & String] = js.native
     
-    /* "moveend" */ val MOVEEND: typings.ol.mapEventTypeMod.MapEventType.MOVEEND with String = js.native
+    /* "moveend" */ val MOVEEND: typings.ol.mapEventTypeMod.MapEventType.MOVEEND & String = js.native
     
-    /* "movestart" */ val MOVESTART: typings.ol.mapEventTypeMod.MapEventType.MOVESTART with String = js.native
+    /* "movestart" */ val MOVESTART: typings.ol.mapEventTypeMod.MapEventType.MOVESTART & String = js.native
     
-    /* "postrender" */ val POSTRENDER: typings.ol.mapEventTypeMod.MapEventType.POSTRENDER with String = js.native
+    /* "postrender" */ val POSTRENDER: typings.ol.mapEventTypeMod.MapEventType.POSTRENDER & String = js.native
   }
   
   @js.native
@@ -28,12 +27,18 @@ object mapEventTypeMod {
   object MapEventType extends StObject {
     
     @js.native
-    sealed trait MOVEEND extends MapEventType
+    sealed trait MOVEEND
+      extends StObject
+         with MapEventType
     
     @js.native
-    sealed trait MOVESTART extends MapEventType
+    sealed trait MOVESTART
+      extends StObject
+         with MapEventType
     
     @js.native
-    sealed trait POSTRENDER extends MapEventType
+    sealed trait POSTRENDER
+      extends StObject
+         with MapEventType
   }
 }

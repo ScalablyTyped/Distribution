@@ -10,9 +10,9 @@ easy to use progress-bar for command-line/terminal applications
 | ------------------ | :-------------: |
 | Full name          | cli-progress |
 | Keywords           | cli, tty, terminal, progress, progressbar, multibar, bar, status, statusbar, utility, widget |
-| # releases         | 15 |
-| # dependents       | 630 |
-| # downloads        | 22410677 |
+| # releases         | 13 |
+| # dependents       | 773 |
+| # downloads        | 33860534 |
 | # stars            | 6 |
 
 ## Links

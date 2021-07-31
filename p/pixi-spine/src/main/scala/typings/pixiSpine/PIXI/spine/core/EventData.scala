@@ -2,25 +2,23 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventData extends StObject {
   
-  var audioPath: String = js.native
+  var audioPath: String
   
-  var balance: Double = js.native
+  var balance: Double
   
-  var floatValue: Double = js.native
+  var floatValue: Double
   
-  var intValue: Double = js.native
+  var intValue: Double
   
-  var name: String = js.native
+  var name: String
   
-  var stringValue: String = js.native
+  var stringValue: String
   
-  var volume: Double = js.native
+  var volume: Double
 }
 object EventData {
   

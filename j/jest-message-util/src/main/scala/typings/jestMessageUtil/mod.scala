@@ -10,163 +10,136 @@ import typings.jestTypes.configMod.Path
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-message-util", "formatExecError")
+  @JSImport("jest-message-util", JSImport.Namespace)
   @js.native
-  def formatExecError(error: js.UndefOr[scala.Nothing], config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: js.UndefOr[scala.Nothing],
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: js.UndefOr[scala.Nothing],
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: js.UndefOr[scala.Nothing],
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: js.UndefOr[scala.Nothing],
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String,
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(error: String, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: String,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: js.UndefOr[scala.Nothing],
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(error: String, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: String,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String,
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(error: SerializableError, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: SerializableError,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: js.UndefOr[scala.Nothing],
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: SerializableError,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: SerializableError,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String,
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(error: Error, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: Error,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: js.UndefOr[scala.Nothing],
-    reuseMessage: Boolean
-  ): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(error: Error, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = js.native
-  @JSImport("jest-message-util", "formatExecError")
-  @js.native
-  def formatExecError(
-    error: Error,
-    config: PickProjectConfigrootDirt,
-    options: StackTraceOptions,
-    testPath: String,
-    reuseMessage: Boolean
-  ): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-message-util", "formatResultsErrors")
-  @js.native
+  @scala.inline
+  def formatExecError(error: String, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: String, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: String,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: String,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: Unit, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: Unit, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: Unit,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: Unit,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: SerializableError, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: SerializableError,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: String
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: SerializableError,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: SerializableError,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: Error, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(error: Error, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: Error,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatExecError(
+    error: Error,
+    config: PickProjectConfigrootDirt,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
   def formatResultsErrors(
     testResults: js.Array[AssertionResult],
     config: PickProjectConfigrootDirt,
     options: StackTraceOptions
-  ): String | Null = js.native
-  @JSImport("jest-message-util", "formatResultsErrors")
-  @js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResultsErrors")(testResults.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
   def formatResultsErrors(
     testResults: js.Array[AssertionResult],
     config: PickProjectConfigrootDirt,
     options: StackTraceOptions,
     testPath: String
-  ): String | Null = js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResultsErrors")(testResults.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("jest-message-util", "formatStackTrace")
-  @js.native
-  def formatStackTrace(stack: String, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = js.native
-  @JSImport("jest-message-util", "formatStackTrace")
-  @js.native
-  def formatStackTrace(stack: String, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = js.native
+  @scala.inline
+  def formatStackTrace(stack: String, config: PickProjectConfigrootDirt, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStackTrace")(stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatStackTrace(stack: String, config: PickProjectConfigrootDirt, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatStackTrace")(stack.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jest-message-util", "getStackTraceLines")
-  @js.native
-  def getStackTraceLines(stack: String): js.Array[String] = js.native
-  @JSImport("jest-message-util", "getStackTraceLines")
-  @js.native
-  def getStackTraceLines(stack: String, options: StackTraceOptions): js.Array[String] = js.native
+  @scala.inline
+  def getStackTraceLines(stack: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackTraceLines")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getStackTraceLines(stack: String, options: StackTraceOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStackTraceLines")(stack.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("jest-message-util", "getTopFrame")
-  @js.native
-  def getTopFrame(lines: js.Array[String]): Frame | Null = js.native
+  @scala.inline
+  def getTopFrame(lines: js.Array[String]): Frame | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopFrame")(lines.asInstanceOf[js.Any]).asInstanceOf[Frame | Null]
   
-  @JSImport("jest-message-util", "separateMessageFromStack")
-  @js.native
-  def separateMessageFromStack(content: String): Message = js.native
+  @scala.inline
+  def separateMessageFromStack(content: String): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("separateMessageFromStack")(content.asInstanceOf[js.Any]).asInstanceOf[Message]
   
   /* Inlined std.Pick<@jest/types.@jest/types.Config.ProjectConfig, 'rootDir' | 'testMatch'> */
-  @js.native
   trait StackTraceConfig extends StObject {
     
-    var rootDir: Path = js.native
+    var rootDir: Path
     
-    var testMatch: js.Array[Glob] = js.native
+    var testMatch: js.Array[Glob]
   }
   object StackTraceConfig {
     
@@ -190,10 +163,9 @@ object mod {
     }
   }
   
-  @js.native
   trait StackTraceOptions extends StObject {
     
-    var noStackTrace: Boolean = js.native
+    var noStackTrace: Boolean
   }
   object StackTraceOptions {
     

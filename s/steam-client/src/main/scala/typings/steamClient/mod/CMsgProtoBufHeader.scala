@@ -2,53 +2,51 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMsgProtoBufHeader extends StObject {
   
-  var admin_spoofing_user: js.UndefOr[Boolean] = js.native
+  var admin_spoofing_user: js.UndefOr[Boolean] = js.undefined
   
-  var auth_account_flags: js.UndefOr[Double] = js.native
+  var auth_account_flags: js.UndefOr[Double] = js.undefined
   
-  var client_sessionid: js.UndefOr[Double] = js.native
+  var client_sessionid: js.UndefOr[Double] = js.undefined
   
-  var eresult: js.UndefOr[Double] = js.native
+  var eresult: js.UndefOr[Double] = js.undefined
   
-  var error_message: js.UndefOr[String] = js.native
+  var error_message: js.UndefOr[String] = js.undefined
   
-  var forward_to_sysid: js.UndefOr[js.Array[Double]] = js.native
+  var forward_to_sysid: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var ip: js.UndefOr[Double] = js.native
+  var ip: js.UndefOr[Double] = js.undefined
   
-  var is_from_external_source: js.UndefOr[Boolean] = js.native
+  var is_from_external_source: js.UndefOr[Boolean] = js.undefined
   
-  var jobid_source: js.UndefOr[String] = js.native
+  var jobid_source: js.UndefOr[String] = js.undefined
   
-  var jobid_target: js.UndefOr[String] = js.native
+  var jobid_target: js.UndefOr[String] = js.undefined
   
-  var messageid: js.UndefOr[String] = js.native
+  var messageid: js.UndefOr[String] = js.undefined
   
-  var publisher_group_id: js.UndefOr[Double] = js.native
+  var publisher_group_id: js.UndefOr[Double] = js.undefined
   
-  var routing_appid: js.UndefOr[Double] = js.native
+  var routing_appid: js.UndefOr[Double] = js.undefined
   
-  var seq_num: js.UndefOr[Double] = js.native
+  var seq_num: js.UndefOr[Double] = js.undefined
   
-  var steamid: js.UndefOr[String] = js.native
+  var steamid: js.UndefOr[String] = js.undefined
   
-  var sysid: js.UndefOr[Double] = js.native
+  var sysid: js.UndefOr[Double] = js.undefined
   
-  var target_job_name: js.UndefOr[String] = js.native
+  var target_job_name: js.UndefOr[String] = js.undefined
   
-  var token_source: js.UndefOr[Double] = js.native
+  var token_source: js.UndefOr[Double] = js.undefined
   
-  var trace_tag: js.UndefOr[String] = js.native
+  var trace_tag: js.UndefOr[String] = js.undefined
   
-  var transport_error: js.UndefOr[Double] = js.native
+  var transport_error: js.UndefOr[Double] = js.undefined
   
-  var webapi_key_id: js.UndefOr[Double] = js.native
+  var webapi_key_id: js.UndefOr[Double] = js.undefined
 }
 object CMsgProtoBufHeader {
   

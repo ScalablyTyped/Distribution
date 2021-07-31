@@ -3,16 +3,14 @@ package typings.fabric.fabricImplMod
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtilArc extends StObject {
   
   /**
     * Draws arc
     */
-  def drawArc(ctx: CanvasRenderingContext2D, fx: Double, fy: Double, coords: js.Array[Double]): Unit = js.native
+  def drawArc(ctx: CanvasRenderingContext2D, fx: Double, fy: Double, coords: js.Array[Double]): Unit
   
   /**
     * Calculate bounding box of a elliptic-arc
@@ -34,7 +32,7 @@ trait IUtilArc extends StObject {
     sweep: Double,
     tx: Double,
     ty: Double
-  ): js.Array[Point] = js.native
+  ): js.Array[Point]
   
   /**
     * Calculate bounding box of a beziercurve
@@ -43,7 +41,7 @@ trait IUtilArc extends StObject {
     * @param x2 secondo control point
     * @param x3 end of beizer
     */
-  def getBoundsOfCurve(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): js.Array[Point] = js.native
+  def getBoundsOfCurve(x0: Double, y0: Double, x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): js.Array[Point]
 }
 object IUtilArc {
   

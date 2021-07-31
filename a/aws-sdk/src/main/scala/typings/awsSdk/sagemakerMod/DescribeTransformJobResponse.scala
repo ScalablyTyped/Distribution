@@ -2,105 +2,103 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTransformJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AutoML transform job.
     */
-  var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.native
+  var AutoMLJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.AutoMLJobArn] = js.undefined
   
   /**
     * Specifies the number of records to include in a mini-batch for an HTTP inference request. A record  is a single unit of input data that inference can be made on. For example, a single line in a CSV file is a record.  To enable the batch strategy, you must set SplitType to Line, RecordIO, or TFRecord.
     */
-  var BatchStrategy: js.UndefOr[typings.awsSdk.sagemakerMod.BatchStrategy] = js.native
+  var BatchStrategy: js.UndefOr[typings.awsSdk.sagemakerMod.BatchStrategy] = js.undefined
   
   /**
     * A timestamp that shows when the transform Job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
-  var DataProcessing: js.UndefOr[typings.awsSdk.sagemakerMod.DataProcessing] = js.native
+  var DataProcessing: js.UndefOr[typings.awsSdk.sagemakerMod.DataProcessing] = js.undefined
   
   /**
     * The environment variables to set in the Docker container. We support up to 16 key and values entries in the map.
     */
-  var Environment: js.UndefOr[TransformEnvironmentMap] = js.native
+  var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
   
-  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.native
+  var ExperimentConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ExperimentConfig] = js.undefined
   
   /**
     * If the transform job failed, FailureReason describes why it failed. A transform job creates a log file, which includes error messages, and stores it as an Amazon S3 object. For more information, see Log Amazon SageMaker Events with Amazon CloudWatch.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon SageMaker Ground Truth labeling job that created the transform or training job.
     */
-  var LabelingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobArn] = js.native
+  var LabelingJobArn: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobArn] = js.undefined
   
   /**
     * The maximum number of parallel requests on each instance node that can be launched in a transform job. The default value is 1.
     */
-  var MaxConcurrentTransforms: js.UndefOr[typings.awsSdk.sagemakerMod.MaxConcurrentTransforms] = js.native
+  var MaxConcurrentTransforms: js.UndefOr[typings.awsSdk.sagemakerMod.MaxConcurrentTransforms] = js.undefined
   
   /**
     * The maximum payload size, in MB, used in the transform job.
     */
-  var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.native
+  var MaxPayloadInMB: js.UndefOr[typings.awsSdk.sagemakerMod.MaxPayloadInMB] = js.undefined
   
   /**
     * The timeout and maximum number of retries for processing a transform job invocation.
     */
-  var ModelClientConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelClientConfig] = js.native
+  var ModelClientConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ModelClientConfig] = js.undefined
   
   /**
     * The name of the model used in the transform job.
     */
-  var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
+  var ModelName: typings.awsSdk.sagemakerMod.ModelName
   
   /**
     * Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of TransformStartTime.
     */
-  var TransformEndTime: js.UndefOr[Timestamp] = js.native
+  var TransformEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Describes the dataset to be transformed and the Amazon S3 location where it is stored.
     */
-  var TransformInput: typings.awsSdk.sagemakerMod.TransformInput = js.native
+  var TransformInput: typings.awsSdk.sagemakerMod.TransformInput
   
   /**
     * The Amazon Resource Name (ARN) of the transform job.
     */
-  var TransformJobArn: typings.awsSdk.sagemakerMod.TransformJobArn = js.native
+  var TransformJobArn: typings.awsSdk.sagemakerMod.TransformJobArn
   
   /**
     * The name of the transform job.
     */
-  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName = js.native
+  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
   
   /**
     * The status of the transform job. If the transform job failed, the reason is returned in the FailureReason field.
     */
-  var TransformJobStatus: typings.awsSdk.sagemakerMod.TransformJobStatus = js.native
+  var TransformJobStatus: typings.awsSdk.sagemakerMod.TransformJobStatus
   
   /**
     * Identifies the Amazon S3 location where you want Amazon SageMaker to save the results from the transform job.
     */
-  var TransformOutput: js.UndefOr[typings.awsSdk.sagemakerMod.TransformOutput] = js.native
+  var TransformOutput: js.UndefOr[typings.awsSdk.sagemakerMod.TransformOutput] = js.undefined
   
   /**
     * Describes the resources, including ML instance types and ML instance count, to use for the transform job.
     */
-  var TransformResources: typings.awsSdk.sagemakerMod.TransformResources = js.native
+  var TransformResources: typings.awsSdk.sagemakerMod.TransformResources
   
   /**
     * Indicates when the transform job starts on ML instances. You are billed for the time interval between this time and the value of TransformEndTime.
     */
-  var TransformStartTime: js.UndefOr[Timestamp] = js.native
+  var TransformStartTime: js.UndefOr[Timestamp] = js.undefined
 }
 object DescribeTransformJobResponse {
   

@@ -3,21 +3,19 @@ package typings.reactNativeChartsWrapper.mod
 import typings.reactNativeChartsWrapper.anon.Angle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineRadarConfig extends StObject {
   
-  var drawFilled: js.UndefOr[Boolean] = js.native
+  var drawFilled: js.UndefOr[Boolean] = js.undefined
   
-  var fillAlpha: js.UndefOr[Double] = js.native
+  var fillAlpha: js.UndefOr[Double] = js.undefined
   
-  var fillColor: js.UndefOr[Color] = js.native
+  var fillColor: js.UndefOr[Color] = js.undefined
   
-  var fillGradient: js.UndefOr[Angle] = js.native
+  var fillGradient: js.UndefOr[Angle] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
 }
 object LineRadarConfig {
   

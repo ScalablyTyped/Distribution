@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,9 +41,9 @@ trait Application extends StObject {
     *  to true. Should it destroy the base texture of the child sprite
     */
   def destroy(): Unit = js.native
-  def destroy(removeView: js.UndefOr[scala.Nothing], stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   def destroy(removeView: Boolean): Unit = js.native
   def destroy(removeView: Boolean, stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
+  def destroy(removeView: Unit, stageOptions: typings.pixiJs.anon.BaseTexture): Unit = js.native
   
   /**
     * Loader instance to help with asset loading.
@@ -143,12 +142,11 @@ object Application {
     *  Passes in `options` as the only argument, which are Application constructor options.
     * @property {function} destroy - Called when destroying Application, scoped to Application instance
     */
-  @js.native
   trait Plugin extends StObject {
     
-    def destroy(params: js.Any*): js.Any = js.native
+    def destroy(params: js.Any*): js.Any
     
-    def init(params: js.Any*): js.Any = js.native
+    def init(params: js.Any*): js.Any
   }
   object Plugin {
     

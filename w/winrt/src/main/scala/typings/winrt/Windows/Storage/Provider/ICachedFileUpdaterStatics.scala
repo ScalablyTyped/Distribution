@@ -3,10 +3,8 @@ package typings.winrt.Windows.Storage.Provider
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICachedFileUpdaterStatics extends StObject {
   
   def setUpdateInformation(
@@ -15,7 +13,7 @@ trait ICachedFileUpdaterStatics extends StObject {
     readMode: ReadActivationMode,
     writeMode: WriteActivationMode,
     options: CachedFileOptions
-  ): Unit = js.native
+  ): Unit
 }
 object ICachedFileUpdaterStatics {
   

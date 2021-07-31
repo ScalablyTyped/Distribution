@@ -2,20 +2,18 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait HeaderFooterLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerFooter: js.UndefOr[Boolean] = js.native
+  var centerFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var centerHeader: js.UndefOr[Boolean] = js.native
+  var centerHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftFooter: js.UndefOr[Boolean] = js.native
+  var leftFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var leftHeader: js.UndefOr[Boolean] = js.native
+  var leftHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightFooter: js.UndefOr[Boolean] = js.native
+  var rightFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -69,7 +67,7 @@ trait HeaderFooterLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var rightHeader: js.UndefOr[Boolean] = js.native
+  var rightHeader: js.UndefOr[Boolean] = js.undefined
 }
 object HeaderFooterLoadOptions {
   

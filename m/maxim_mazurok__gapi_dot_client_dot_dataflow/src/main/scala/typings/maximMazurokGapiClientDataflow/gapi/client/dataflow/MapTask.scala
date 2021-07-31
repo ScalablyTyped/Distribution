@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTask extends StObject {
   
   /** Counter prefix that can be used to prefix counters. Not currently used in Dataflow. */
-  var counterPrefix: js.UndefOr[String] = js.native
+  var counterPrefix: js.UndefOr[String] = js.undefined
   
   /** The instructions in the MapTask. */
-  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.native
+  var instructions: js.UndefOr[js.Array[ParallelInstruction]] = js.undefined
   
   /** System-defined name of the stage containing this MapTask. Unique across the workflow. */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /** System-defined name of this MapTask. Unique across the workflow. */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
 }
 object MapTask {
   

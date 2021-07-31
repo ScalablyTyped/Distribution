@@ -3,22 +3,22 @@ package typings.std
 import typings.std.stdStrings.midi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MidiPermissionDescriptor extends PermissionDescriptor {
+trait MidiPermissionDescriptor
+  extends StObject
+     with PermissionDescriptor {
   
   @JSName("name")
-  var name_MidiPermissionDescriptor: midi = js.native
+  var name_MidiPermissionDescriptor: midi
   
-  var sysex: js.UndefOr[scala.Boolean] = js.native
+  var sysex: js.UndefOr[scala.Boolean] = js.undefined
 }
 object MidiPermissionDescriptor {
   
   @scala.inline
-  def apply(name: midi): MidiPermissionDescriptor = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): MidiPermissionDescriptor = {
+    val __obj = js.Dynamic.literal(name = "midi")
     __obj.asInstanceOf[MidiPermissionDescriptor]
   }
   

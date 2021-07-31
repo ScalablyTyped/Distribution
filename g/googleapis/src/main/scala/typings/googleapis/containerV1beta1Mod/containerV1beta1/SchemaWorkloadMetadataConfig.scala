@@ -2,21 +2,19 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * WorkloadMetadataConfig defines the metadata configuration to expose to
   * workloads on the node pool.
   */
-@js.native
 trait SchemaWorkloadMetadataConfig extends StObject {
   
   /**
     * NodeMetadata is the configuration for how to expose the node metadata to
     * the workload running on the node.
     */
-  var nodeMetadata: js.UndefOr[String] = js.native
+  var nodeMetadata: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkloadMetadataConfig {
   

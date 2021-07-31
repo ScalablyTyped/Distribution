@@ -12,7 +12,7 @@ Seed your MongoDB database easily
 | Keywords           | MongoDB, Mongoose, seeder |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 9847 |
+| # downloads        | 8559 |
 | # stars            | 0 |
 
 ## Links

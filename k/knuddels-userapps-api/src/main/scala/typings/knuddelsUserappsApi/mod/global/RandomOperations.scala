@@ -2,7 +2,6 @@ package typings.knuddelsUserappsApi.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,55 +12,52 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class RandomOperations () extends StObject
 object RandomOperations {
   
+  @JSGlobal("RandomOperations")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_flipTrue
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.flipTrue")
-  @js.native
-  def flipTrue(truePropability: Double): Boolean = js.native
+  @scala.inline
+  def flipTrue(truePropability: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("flipTrue")(truePropability.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_getRandomObject
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.getRandomObject")
-  @js.native
-  def getRandomObject[T](objects: js.Array[T]): T = js.native
+  @scala.inline
+  def getRandomObject[T](objects: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomObject")(objects.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_getRandomString
   		 * @since AppServer 92699
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.getRandomString")
-  @js.native
-  def getRandomString(length: Double): java.lang.String = js.native
-  @JSGlobal("RandomOperations.getRandomString")
-  @js.native
-  def getRandomString(length: Double, allowedCharacters: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def getRandomString(length: Double): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")(length.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
+  @scala.inline
+  def getRandomString(length: Double, allowedCharacters: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")(length.asInstanceOf[js.Any], allowedCharacters.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_nextInt
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.nextInt")
-  @js.native
-  def nextInt(minValue: Double, maxValue: Double): Double = js.native
+  @scala.inline
+  def nextInt(minValue: Double, maxValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("nextInt")(minValue.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_nextInts
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.nextInts")
-  @js.native
-  def nextInts(minValue: Double, maxValue: Double, count: Double, onlyDifferentNumbers: Boolean): js.Array[Double] = js.native
+  @scala.inline
+  def nextInts(minValue: Double, maxValue: Double, count: Double, onlyDifferentNumbers: Boolean): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("nextInts")(minValue.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any], count.asInstanceOf[js.Any], onlyDifferentNumbers.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_shuffleObjects
   		 */
   /* static member */
-  @JSGlobal("RandomOperations.shuffleObjects")
-  @js.native
-  def shuffleObjects[T](objects: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def shuffleObjects[T](objects: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleObjects")(objects.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

@@ -2,41 +2,39 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckedPath extends StObject {
   
-  var checkedPath: String = js.native
+  var checkedPath: String
   
-  var control: String = js.native
+  var control: String
   
-  var disabledLabel: String = js.native
+  var disabledLabel: String
   
-  var indeterminatePath: String = js.native
+  var indeterminatePath: String
   
-  var item: String = js.native
+  var item: String
   
-  var itemChecked: String = js.native
+  var itemChecked: String
   
-  var itemDecorator: String = js.native
+  var itemDecorator: String
   
-  var itemDisabled: String = js.native
+  var itemDisabled: String
   
-  var itemIndeterminate: String = js.native
+  var itemIndeterminate: String
   
-  var label: String = js.native
+  var label: String
   
-  var materialDecorator: String = js.native
+  var materialDecorator: String
   
-  var root: String = js.native
+  var root: String
   
-  var slider: String = js.native
+  var slider: String
   
-  var switch: String = js.native
+  var switch: String
   
-  var uncheckedPath: String = js.native
+  var uncheckedPath: String
 }
 object CheckedPath {
   

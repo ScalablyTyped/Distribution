@@ -9,9 +9,9 @@ SDK for working with yandex money API
 | ------------------ | :-------------: |
 | Full name          | yandex-money-sdk |
 | Keywords           | yandex, money, sdk |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1546 |
+| # downloads        | 1988 |
 | # stars            | 3 |
 
 ## Links

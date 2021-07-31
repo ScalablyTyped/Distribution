@@ -13,10 +13,8 @@ import typings.stripe.stripeStrings.wednesday
 import typings.stripe.stripeStrings.weekly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delaydays extends StObject {
   
   /**
@@ -24,25 +22,25 @@ trait Delaydays extends StObject {
     * May also be the string “minimum” for the lowest available value (based on
     * country). Default is “minimum”. Does not apply when interval is “manual”.
     */
-  var delay_days: js.UndefOr[Double | String] = js.native
+  var delay_days: js.UndefOr[Double | String] = js.undefined
   
   /**
     * How frequently funds will be paid out. One of "manual" (for only triggered
     * via API call), "daily", "weekly", or "monthly". Default is "daily".
     */
-  var interval: js.UndefOr[manual | daily | weekly | monthly] = js.native
+  var interval: js.UndefOr[manual | daily | weekly | monthly] = js.undefined
   
   /**
     * The day of the month funds will be paid out. Required and available only if
     * interval is "monthly".
     */
-  var monthly_anchor: js.UndefOr[Double] = js.native
+  var monthly_anchor: js.UndefOr[Double] = js.undefined
   
   /**
     * The day of the week funds will be paid out, of the style ‘monday’,
     * ‘tuesday’, etc. Required and available only if interval is weekly.
     */
-  var weekly_anchor: js.UndefOr[monday | tuesday | wednesday | thursday | friday | saturday | sunday] = js.native
+  var weekly_anchor: js.UndefOr[monday | tuesday | wednesday | thursday | friday | saturday | sunday] = js.undefined
 }
 object Delaydays {
   

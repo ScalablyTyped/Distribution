@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IProtocolActivatedEventArgs extends IActivatedEventArgs {
+trait IProtocolActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object IProtocolActivatedEventArgs {
   

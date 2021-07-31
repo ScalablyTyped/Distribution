@@ -5,10 +5,8 @@ import typings.activexStdole.activexStdoleStrings.PropertyName
 import typings.activexStdole.stdole.StdFont
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObject extends StObject {
   
   def on(
@@ -16,7 +14,7 @@ trait ActiveXObject extends StObject {
     event: FontChanged,
     argNames: js.Array[PropertyName],
     handler: js.ThisFunction1[/* this */ StdFont, /* parameter */ typings.activexStdole.anon.PropertyName, Unit]
-  ): Unit = js.native
+  ): Unit
 }
 object ActiveXObject {
   

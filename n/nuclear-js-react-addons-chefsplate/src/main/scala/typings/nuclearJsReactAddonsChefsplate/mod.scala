@@ -8,10 +8,13 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("nuclear-js-react-addons-chefsplate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Container component allowing a reactor to be exposed via context.
@@ -33,9 +36,8 @@ object mod {
     *
     * @template TInjectedPropNames Names of props injected by `mapStateToProps`.
     */
-  @JSImport("nuclear-js-react-addons-chefsplate", "connect")
-  @js.native
-  def connect[TInjectedPropNames /* <: String | Double | js.Symbol */](mapStateToProps: MapStateToProps[TInjectedPropNames]): ComponentConnector[TInjectedPropNames] = js.native
+  @scala.inline
+  def connect[TInjectedPropNames /* <: String | Double | js.Symbol */](mapStateToProps: MapStateToProps[TInjectedPropNames]): ComponentConnector[TInjectedPropNames] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[ComponentConnector[TInjectedPropNames]]
   
   /**
     * Provides dataBindings + reactor as props to wrapped component.
@@ -118,7 +120,7 @@ object mod {
     /* props */ js.UndefOr[js.Any], 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ propName in TInjectedPropNames ]: any}
-    */ typings.nuclearJsReactAddonsChefsplate.nuclearJsReactAddonsChefsplateStrings.MapStateToProps with TopLevel[js.Any]
+    */ typings.nuclearJsReactAddonsChefsplate.nuclearJsReactAddonsChefsplateStrings.MapStateToProps & TopLevel[js.Any]
   ]
   
   /**

@@ -3,7 +3,6 @@ package typings.baseui
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonMod {
@@ -20,16 +19,15 @@ object skeletonMod {
     def this(props: SkeletonPropsT, context: js.Any) = this()
   }
   
-  @js.native
   trait SkeletonOverrides extends StObject {
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Row: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SkeletonOverrides {
     
@@ -60,18 +58,17 @@ object skeletonMod {
     }
   }
   
-  @js.native
   trait SkeletonPropsT extends StObject {
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[SkeletonOverrides] = js.native
+    var overrides: js.UndefOr[SkeletonOverrides] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SkeletonPropsT {
     

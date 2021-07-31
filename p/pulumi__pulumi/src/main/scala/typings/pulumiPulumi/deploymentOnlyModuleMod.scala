@@ -3,10 +3,13 @@ package typings.pulumiPulumi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentOnlyModuleMod {
+  
+  @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", "Config")
   @js.native
@@ -15,19 +18,16 @@ object deploymentOnlyModuleMod {
     def this(name: String) = this()
   }
   
-  @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", "allConfig")
-  @js.native
-  def allConfig(): StringDictionary[String] = js.native
+  @scala.inline
+  def allConfig(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConfig")().asInstanceOf[StringDictionary[String]]
   
   @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", "deploymentOnlyModule")
   @js.native
   val deploymentOnlyModule: /* true */ Boolean = js.native
   
-  @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", "getConfig")
-  @js.native
-  def getConfig(k: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getConfig(k: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(k.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@pulumi/pulumi/tests/runtime/deploymentOnlyModule", "setConfig")
-  @js.native
-  def setConfig(k: String, v: String): Unit = js.native
+  @scala.inline
+  def setConfig(k: String, v: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(k.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

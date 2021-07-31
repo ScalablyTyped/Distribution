@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.node.cryptoMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  
   @JSImport("sha.js", JSImport.Namespace)
   @js.native
-  def apply(algorithm: String): Hash = js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sha.js", "sha")
@@ -92,5 +94,7 @@ object mod {
   }
   
   @js.native
-  trait HashStatic extends Instantiable0[Hash]
+  trait HashStatic
+    extends StObject
+       with Instantiable0[Hash]
 }

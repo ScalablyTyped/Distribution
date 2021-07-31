@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsHttpConnectionOptionHeaderValue extends StObject {
   
-  /** An array of HttpConnectionOptionHeaderValue items that start at startIndex in the HttpConnectionOptionHeaderValueCollection . */ var items: HttpConnectionOptionHeaderValue = js.native
+  /** An array of HttpConnectionOptionHeaderValue items that start at startIndex in the HttpConnectionOptionHeaderValueCollection . */ var items: HttpConnectionOptionHeaderValue
   
-  /** The number of HttpConnectionOptionHeaderValue items retrieved. */ var returnValue: Double = js.native
+  /** The number of HttpConnectionOptionHeaderValue items retrieved. */ var returnValue: Double
 }
 object ItemsHttpConnectionOptionHeaderValue {
   

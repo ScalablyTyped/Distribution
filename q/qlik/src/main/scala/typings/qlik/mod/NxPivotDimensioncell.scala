@@ -9,33 +9,31 @@ import typings.qlik.qlikStrings.U
 import typings.qlik.qlikStrings.V
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxPivotDimensioncell extends StObject {
   
-  var qAttrDims: js.Array[NxAttributeDimValues] = js.native
+  var qAttrDims: js.Array[NxAttributeDimValues]
   
-  var qAttrExps: js.Array[NxAttributeExpressionValues] = js.native
+  var qAttrExps: js.Array[NxAttributeExpressionValues]
   
-  var qCanCollapse: Boolean = js.native
+  var qCanCollapse: Boolean
   
-  var qCanExpand: Boolean = js.native
+  var qCanExpand: Boolean
   
-  var qDown: Double = js.native
+  var qDown: Double
   
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
-  var qSubNodes: js.Array[NxPivotDimensioncell] = js.native
+  var qSubNodes: js.Array[NxPivotDimensioncell]
   
-  var qText: String = js.native
+  var qText: String
   
-  var qType: V | E | N | T | P | R | U = js.native
+  var qType: V | E | N | T | P | R | U
   
-  var qUp: Double = js.native
+  var qUp: Double
   
-  var qValue: Double = js.native
+  var qValue: Double
 }
 object NxPivotDimensioncell {
   

@@ -2,16 +2,14 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOptionDefinitionReference extends StObject {
   
   /**
     * The ID of the referenced build option.
     */
-  var id: String = js.native
+  var id: String
 }
 object BuildOptionDefinitionReference {
   

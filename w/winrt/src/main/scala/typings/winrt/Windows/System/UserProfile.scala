@@ -9,7 +9,6 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UserProfile {
@@ -21,13 +20,19 @@ object UserProfile {
   object AccountPictureKind extends StObject {
     
     @js.native
-    sealed trait largeImage extends AccountPictureKind
+    sealed trait largeImage
+      extends StObject
+         with AccountPictureKind
     
     @js.native
-    sealed trait smallImage extends AccountPictureKind
+    sealed trait smallImage
+      extends StObject
+         with AccountPictureKind
     
     @js.native
-    sealed trait video extends AccountPictureKind
+    sealed trait video
+      extends StObject
+         with AccountPictureKind
   }
   
   @js.native
@@ -37,41 +42,51 @@ object UserProfile {
   object SetAccountPictureResult extends StObject {
     
     @js.native
-    sealed trait changeDisabled extends SetAccountPictureResult
+    sealed trait changeDisabled
+      extends StObject
+         with SetAccountPictureResult
     
     @js.native
-    sealed trait failure extends SetAccountPictureResult
+    sealed trait failure
+      extends StObject
+         with SetAccountPictureResult
     
     @js.native
-    sealed trait fileSizeError extends SetAccountPictureResult
+    sealed trait fileSizeError
+      extends StObject
+         with SetAccountPictureResult
     
     @js.native
-    sealed trait largeOrDynamicError extends SetAccountPictureResult
+    sealed trait largeOrDynamicError
+      extends StObject
+         with SetAccountPictureResult
     
     @js.native
-    sealed trait success extends SetAccountPictureResult
+    sealed trait success
+      extends StObject
+         with SetAccountPictureResult
     
     @js.native
-    sealed trait videoFrameSizeError extends SetAccountPictureResult
+    sealed trait videoFrameSizeError
+      extends StObject
+         with SetAccountPictureResult
   }
   
-  @js.native
   trait GlobalizationPreferences extends StObject
   
-  @js.native
   trait IGlobalizationPreferencesStatics extends StObject {
     
-    var calendars: IVectorView[String] = js.native
+    var calendars: IVectorView[String]
     
-    var clocks: IVectorView[String] = js.native
+    var clocks: IVectorView[String]
     
-    var currencies: IVectorView[String] = js.native
+    var currencies: IVectorView[String]
     
-    var homeGeographicRegion: String = js.native
+    var homeGeographicRegion: String
     
-    var languages: IVectorView[String] = js.native
+    var languages: IVectorView[String]
     
-    var weekStartsOn: DayOfWeek = js.native
+    var weekStartsOn: DayOfWeek
   }
   object IGlobalizationPreferencesStatics {
     
@@ -111,16 +126,15 @@ object UserProfile {
     }
   }
   
-  @js.native
   trait ILockScreenStatics extends StObject {
     
-    def getImageStream(): IRandomAccessStream = js.native
+    def getImageStream(): IRandomAccessStream
     
-    var originalImageFile: Uri = js.native
+    var originalImageFile: Uri
     
-    def setImageFileAsync(value: IStorageFile): IAsyncAction = js.native
+    def setImageFileAsync(value: IStorageFile): IAsyncAction
     
-    def setImageStreamAsync(value: IRandomAccessStream): IAsyncAction = js.native
+    def setImageStreamAsync(value: IRandomAccessStream): IAsyncAction
   }
   object ILockScreenStatics {
     
@@ -152,36 +166,35 @@ object UserProfile {
     }
   }
   
-  @js.native
   trait IUserInformationStatics extends StObject {
     
-    var accountPictureChangeEnabled: Boolean = js.native
+    var accountPictureChangeEnabled: Boolean
     
-    def getAccountPicture(kind: AccountPictureKind): IStorageFile = js.native
+    def getAccountPicture(kind: AccountPictureKind): IStorageFile
     
-    def getDisplayNameAsync(): IAsyncOperation[String] = js.native
+    def getDisplayNameAsync(): IAsyncOperation[String]
     
-    def getDomainNameAsync(): IAsyncOperation[String] = js.native
+    def getDomainNameAsync(): IAsyncOperation[String]
     
-    def getFirstNameAsync(): IAsyncOperation[String] = js.native
+    def getFirstNameAsync(): IAsyncOperation[String]
     
-    def getLastNameAsync(): IAsyncOperation[String] = js.native
+    def getLastNameAsync(): IAsyncOperation[String]
     
-    def getPrincipalNameAsync(): IAsyncOperation[String] = js.native
+    def getPrincipalNameAsync(): IAsyncOperation[String]
     
-    def getSessionInitiationProtocolUriAsync(): IAsyncOperation[Uri] = js.native
+    def getSessionInitiationProtocolUriAsync(): IAsyncOperation[Uri]
     
-    var nameAccessAllowed: Boolean = js.native
+    var nameAccessAllowed: Boolean
     
-    var onaccountpicturechanged: js.Any = js.native
+    var onaccountpicturechanged: js.Any
     
-    def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult] = js.native
+    def setAccountPictureAsync(image: IStorageFile): IAsyncOperation[SetAccountPictureResult]
     
-    def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = js.native
+    def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult]
     
-    def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IAsyncOperation[SetAccountPictureResult] = js.native
+    def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IAsyncOperation[SetAccountPictureResult]
     
-    def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult] = js.native
+    def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IAsyncOperation[SetAccountPictureResult]
   }
   object IUserInformationStatics {
     
@@ -255,9 +268,7 @@ object UserProfile {
     }
   }
   
-  @js.native
   trait LockScreen extends StObject
   
-  @js.native
   trait UserInformation extends StObject
 }

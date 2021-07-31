@@ -3,42 +3,36 @@ package typings.iitc
 import typings.jquery.JQuery.jqXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redeemingMod {
   
   object global {
     
-    @JSGlobal("formatPasscodeLong")
-    @js.native
-    def formatPasscodeLong(data: ResultData): Unit = js.native
+    @scala.inline
+    def formatPasscodeLong(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeLong")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("formatPasscodeShort")
-    @js.native
-    def formatPasscodeShort(data: ResultData): Unit = js.native
+    @scala.inline
+    def formatPasscodeShort(data: ResultData): Unit = js.Dynamic.global.applyDynamic("formatPasscodeShort")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("handleRedeemResponse")
-    @js.native
-    def handleRedeemResponse(data: ResultData, textStatus: js.Any, jqXHR: jqXHR[_]): Unit = js.native
+    @scala.inline
+    def handleRedeemResponse(data: ResultData, textStatus: js.Any, jqXHR: jqXHR[js.Any]): Unit = (js.Dynamic.global.applyDynamic("handleRedeemResponse")(data.asInstanceOf[js.Any], textStatus.asInstanceOf[js.Any], jqXHR.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("setupRedeem")
-    @js.native
-    def setupRedeem(): Unit = js.native
+    @scala.inline
+    def setupRedeem(): Unit = js.Dynamic.global.applyDynamic("setupRedeem")().asInstanceOf[Unit]
     
     /** These are HTTP status codes returned by the redemption API. */
     object REDEEM_STATUSES
     
-    @js.native
     trait ResultData extends StObject {
       
-      var ap: String = js.native
+      var ap: String
       
-      var inventory: js.Any = js.native
+      var inventory: js.Any
       
-      var other: js.Array[String] = js.native
+      var other: js.Array[String]
       
-      var xm: String = js.native
+      var xm: String
     }
     object ResultData {
       

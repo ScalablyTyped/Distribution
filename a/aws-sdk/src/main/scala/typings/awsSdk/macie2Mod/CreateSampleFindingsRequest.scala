@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSampleFindingsRequest extends StObject {
   
   /**
     * An array that lists one or more types of findings to include in the set of sample findings. Currently, the only supported value is Policy:IAMUser/S3BucketEncryptionDisabled. 
     */
-  var findingTypes: js.UndefOr[listOfFindingType] = js.native
+  var findingTypes: js.UndefOr[listOfFindingType] = js.undefined
 }
 object CreateSampleFindingsRequest {
   

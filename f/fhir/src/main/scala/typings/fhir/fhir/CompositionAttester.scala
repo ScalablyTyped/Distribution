@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attests to accuracy of composition
   */
-@js.native
-trait CompositionAttester extends BackboneElement {
+trait CompositionAttester
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[js.Array[Element]] = js.native
+  var _mode: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'time'.
     */
-  var _time: js.UndefOr[Element] = js.native
+  var _time: js.UndefOr[Element] = js.undefined
   
   /**
     * personal | professional | legal | official
     */
-  var mode: js.Array[code] = js.native
+  var mode: js.Array[code]
   
   /**
     * Who attested the composition
     */
-  var party: js.UndefOr[Reference] = js.native
+  var party: js.UndefOr[Reference] = js.undefined
   
   /**
     * When the composition was attested
     */
-  var time: js.UndefOr[dateTime] = js.native
+  var time: js.UndefOr[dateTime] = js.undefined
 }
 object CompositionAttester {
   

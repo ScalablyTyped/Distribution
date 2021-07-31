@@ -3,7 +3,6 @@ package typings.heremaps.H
 import typings.heremaps.H.geo.Polygon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** geo *****/
@@ -20,37 +19,50 @@ object geo {
     
     /** Ground level */
     @js.native
-    sealed trait GL extends AltitudeContext
+    sealed trait GL
+      extends StObject
+         with AltitudeContext
     
     /** Obstruction level */
     @js.native
-    sealed trait OL extends AltitudeContext
+    sealed trait OL
+      extends StObject
+         with AltitudeContext
     
     /** Sea bed level */
     @js.native
-    sealed trait SB extends AltitudeContext
+    sealed trait SB
+      extends StObject
+         with AltitudeContext
     
     /** Mean sea level */
     @js.native
-    sealed trait SL extends AltitudeContext
+    sealed trait SL
+      extends StObject
+         with AltitudeContext
     
     /** WGS84 ellipsoid */
     @js.native
-    sealed trait WE extends AltitudeContext
+    sealed trait WE
+      extends StObject
+         with AltitudeContext
     
     /** WGS84 geoid */
     @js.native
-    sealed trait WG extends AltitudeContext
+    sealed trait WG
+      extends StObject
+         with AltitudeContext
     
     /** Ground level */
     @js.native
-    sealed trait undefined extends AltitudeContext
+    sealed trait undefined
+      extends StObject
+         with AltitudeContext
   }
   
   /**
     * The base class for all geometry types.
     */
-  @js.native
   trait AbstractGeometry extends StObject {
     
     /**
@@ -59,13 +71,13 @@ object geo {
       * @param other {any} - The geometry to check against
       * @return {boolean} - true if the two geometries are equal, otherwise false
       */
-    def equals(other: js.Any): Boolean = js.native
+    def equals(other: js.Any): Boolean
     
     /**
       * Returns the bounding rectangle of the geometry.
       * @return {H.geo.Rect} - the bounding rectangle of the geometry or null if the bounding rectangle can't be computed (e.g. for a geometry without coordinates)
       */
-    def getBoundingBox(): Rect = js.native
+    def getBoundingBox(): Rect
   }
   object AbstractGeometry {
     
@@ -99,16 +111,15 @@ object geo {
     * @property alt {H.geo.Altitude=} - The altitude coordinate.
     * @property ctx {H.geo.AltitudeContext=} - The altitude context.
     */
-  @js.native
   trait IPoint extends StObject {
     
-    var alt: js.UndefOr[Altitude] = js.native
+    var alt: js.UndefOr[Altitude] = js.undefined
     
-    var ctx: js.UndefOr[AltitudeContext] = js.native
+    var ctx: js.UndefOr[AltitudeContext] = js.undefined
     
-    var lat: Latitude = js.native
+    var lat: Latitude
     
-    var lng: Longitude = js.native
+    var lng: Longitude
   }
   object IPoint {
     
@@ -163,7 +174,9 @@ object geo {
   type Latitude = Double
   
   @js.native
-  trait LineString extends AbstractGeometry {
+  trait LineString
+    extends StObject
+       with AbstractGeometry {
     
     /**
       * A utility method to iterate over the points of a line string.
@@ -176,16 +189,16 @@ object geo {
     ): Unit = js.native
     def eachLatLngAlt(
       eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
-      opt_start: js.UndefOr[scala.Nothing],
-      opt_end: Double
-    ): Unit = js.native
-    def eachLatLngAlt(
-      eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
       opt_start: Double
     ): Unit = js.native
     def eachLatLngAlt(
       eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
       opt_start: Double,
+      opt_end: Double
+    ): Unit = js.native
+    def eachLatLngAlt(
+      eachFn: js.Function4[/* lat */ Latitude, /* lng */ Longitude, /* alt */ Altitude, /* index */ Double, Unit],
+      opt_start: Unit,
       opt_end: Double
     ): Unit = js.native
     
@@ -281,9 +294,9 @@ object geo {
       * @throws {H.lang.InvalidArgumentError} - in case of invalid opt_latLngAlts argument
       */
     def spliceLatLngAlts(index: Double): js.Array[Double] = js.native
-    def spliceLatLngAlts(index: Double, opt_nRemove: js.UndefOr[scala.Nothing], opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
     def spliceLatLngAlts(index: Double, opt_nRemove: Double): js.Array[Double] = js.native
     def spliceLatLngAlts(index: Double, opt_nRemove: Double, opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
+    def spliceLatLngAlts(index: Double, opt_nRemove: Unit, opt_latLngAlts: js.Array[Double]): js.Array[Double] = js.native
   }
   
   /**
@@ -292,7 +305,9 @@ object geo {
   type Longitude = Double
   
   @js.native
-  trait MultiGeometry[T] extends AbstractGeometry {
+  trait MultiGeometry[T]
+    extends StObject
+       with AbstractGeometry {
     
     /**
       * Returns the bounding rectangle of the geometry.
@@ -336,13 +351,15 @@ object geo {
       * @return {T[]} - the removed geometries.
       */
     def splice(index: Double): js.Array[T] = js.native
-    def splice(index: Double, opt_deleteCount: js.UndefOr[scala.Nothing], opt_items: js.Array[T]): js.Array[T] = js.native
     def splice(index: Double, opt_deleteCount: Double): js.Array[T] = js.native
     def splice(index: Double, opt_deleteCount: Double, opt_items: js.Array[T]): js.Array[T] = js.native
+    def splice(index: Double, opt_deleteCount: Unit, opt_items: js.Array[T]): js.Array[T] = js.native
   }
   
   @js.native
-  trait MultiLineString extends MultiGeometry[LineString]
+  trait MultiLineString
+    extends StObject
+       with MultiGeometry[LineString]
   
   type MultiPoint = MultiGeometry[Point]
   
@@ -438,7 +455,8 @@ object geo {
     */
   @js.native
   trait Point
-    extends AbstractGeometry
+    extends StObject
+       with AbstractGeometry
        with IPoint {
     
     @JSName("alt")
@@ -477,7 +495,9 @@ object geo {
     * @link https://developer.here.com/documentation/maps/api_reference/H.geo.Polygon.html
     */
   @js.native
-  trait Polygon extends AbstractGeometry {
+  trait Polygon
+    extends StObject
+       with AbstractGeometry {
     
     def getExterior(): LineString = js.native
     
@@ -519,13 +539,6 @@ object geo {
       */
     def setPoleCovering(direction: Direction): Polygon = js.native
     
-    def spliceInteriors(
-      opt_index: js.UndefOr[scala.Nothing],
-      opt_deleteCount: js.UndefOr[scala.Nothing],
-      var_args: LineString*
-    ): js.Array[LineString] = js.native
-    def spliceInteriors(opt_index: js.UndefOr[scala.Nothing], opt_deleteCount: Double, var_args: LineString*): js.Array[LineString] = js.native
-    def spliceInteriors(opt_index: Double, opt_deleteCount: js.UndefOr[scala.Nothing], var_args: LineString*): js.Array[LineString] = js.native
     /**
       * Applies a splice-operation on the list of interior rings of the polygon.
       * @param opt_index - The index at which to start changing the list, defaults to 0.
@@ -533,18 +546,20 @@ object geo {
       * @param var_args - repeatable, The interior rings to insert.
       */
     def spliceInteriors(opt_index: Double, opt_deleteCount: Double, var_args: LineString*): js.Array[LineString] = js.native
+    def spliceInteriors(opt_index: Double, opt_deleteCount: Unit, var_args: LineString*): js.Array[LineString] = js.native
+    def spliceInteriors(opt_index: Unit, opt_deleteCount: Double, var_args: LineString*): js.Array[LineString] = js.native
+    def spliceInteriors(opt_index: Unit, opt_deleteCount: Unit, var_args: LineString*): js.Array[LineString] = js.native
   }
   object Polygon {
     
     /**
       * {@link https://developer.here.com/documentation/maps/api_reference/H.geo.Polygon.html#.Direction}
       */
-    @js.native
     trait Direction extends StObject {
       
-      var NORTH: Double = js.native
+      var NORTH: Double
       
-      var SOUTH: Double = js.native
+      var SOUTH: Double
     }
     object Direction {
       
@@ -570,7 +585,9 @@ object geo {
     * This class represents a rectangular geographic area. The area is defined by four geographical coordinates two (left, right) longitudes and two (top, bottom) latitudes.
     */
   @js.native
-  trait Rect extends AbstractGeometry {
+  trait Rect
+    extends StObject
+       with AbstractGeometry {
     
     /**
       * This method checks if the latitude and longitude supplied by the caller lie within the area of this rectangular area.
@@ -691,9 +708,9 @@ object geo {
       * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
       */
     def mergeLatLng(lat: Latitude, lng: Longitude): Rect = js.native
-    def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
     def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: Boolean): Rect = js.native
     def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
+    def mergeLatLng(lat: Latitude, lng: Longitude, opt_skipValidation: Unit, opt_out: Rect): Rect = js.native
     
     /**
       * This method returns the smallest bounding box that covers this rectangular area and the point supplied by the caller.
@@ -703,9 +720,9 @@ object geo {
       * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
       */
     def mergePoint(geoPoint: IPoint): Rect = js.native
-    def mergePoint(geoPoint: IPoint, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
     def mergePoint(geoPoint: IPoint, opt_skipValidation: Boolean): Rect = js.native
     def mergePoint(geoPoint: IPoint, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
+    def mergePoint(geoPoint: IPoint, opt_skipValidation: Unit, opt_out: Rect): Rect = js.native
     
     /**
       * This method returns the smallest bounding box that covers this rectangular area and the rectangular area supplied by the caller.
@@ -715,9 +732,9 @@ object geo {
       * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
       */
     def mergeRect(geoRect: Rect): Rect = js.native
-    def mergeRect(geoRect: Rect, opt_skipValidation: js.UndefOr[scala.Nothing], opt_out: Rect): Rect = js.native
     def mergeRect(geoRect: Rect, opt_skipValidation: Boolean): Rect = js.native
     def mergeRect(geoRect: Rect, opt_skipValidation: Boolean, opt_out: Rect): Rect = js.native
+    def mergeRect(geoRect: Rect, opt_skipValidation: Unit, opt_out: Rect): Rect = js.native
     
     /**
       * This method returns the smallest bounding box that covers this rectangular area and the rectangular area supplied by the caller.
@@ -730,14 +747,6 @@ object geo {
       * @returns {H.geo.Rect} - either the rectangular area passed as out parameter or a new rectangular area
       */
     def mergeTopLeftBottomRight(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude): Rect = js.native
-    def mergeTopLeftBottomRight(
-      top: Latitude,
-      left: Longitude,
-      bottom: Latitude,
-      right: Longitude,
-      opt_skipValidation: js.UndefOr[scala.Nothing],
-      opt_out: Rect
-    ): Rect = js.native
     def mergeTopLeftBottomRight(top: Latitude, left: Longitude, bottom: Latitude, right: Longitude, opt_skipValidation: Boolean): Rect = js.native
     def mergeTopLeftBottomRight(
       top: Latitude,
@@ -745,6 +754,14 @@ object geo {
       bottom: Latitude,
       right: Longitude,
       opt_skipValidation: Boolean,
+      opt_out: Rect
+    ): Rect = js.native
+    def mergeTopLeftBottomRight(
+      top: Latitude,
+      left: Longitude,
+      bottom: Latitude,
+      right: Longitude,
+      opt_skipValidation: Unit,
       opt_out: Rect
     ): Rect = js.native
     

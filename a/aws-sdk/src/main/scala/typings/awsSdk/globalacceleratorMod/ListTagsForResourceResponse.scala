@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * Root level tag for the Tags parameters.
     */
-  var Tags: js.UndefOr[typings.awsSdk.globalacceleratorMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.globalacceleratorMod.Tags] = js.undefined
 }
 object ListTagsForResourceResponse {
   

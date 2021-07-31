@@ -5,7 +5,6 @@ import typings.burns.anon.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,9 +23,9 @@ object mod extends Shortcut {
     def configure(config: Config): this.type = js.native
     
     def dispatch(eventName: String): this.type = js.native
-    def dispatch(eventName: String, eventData: js.UndefOr[scala.Nothing], exclude: Exclude): this.type = js.native
-    def dispatch(eventName: String, eventData: Record[String, _]): this.type = js.native
-    def dispatch(eventName: String, eventData: Record[String, _], exclude: Exclude): this.type = js.native
+    def dispatch(eventName: String, eventData: Unit, exclude: Exclude): this.type = js.native
+    def dispatch(eventName: String, eventData: Record[String, js.Any]): this.type = js.native
+    def dispatch(eventName: String, eventData: Record[String, js.Any], exclude: Exclude): this.type = js.native
     
     def registerEvents(newEvents: Record[String, EventHandler]): this.type = js.native
   }
@@ -34,14 +33,13 @@ object mod extends Shortcut {
   /**
     * Burns configuration settings
     */
-  @js.native
   trait Config extends StObject {
     
-    var broadcaster: js.UndefOr[String | Null] = js.native
+    var broadcaster: js.UndefOr[String | Null] = js.undefined
     
-    var defaultHandler: js.UndefOr[HandlerFn] = js.native
+    var defaultHandler: js.UndefOr[HandlerFn] = js.undefined
     
-    var pusher: js.UndefOr[Record[String, _]] = js.native
+    var pusher: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object Config {
     
@@ -70,7 +68,7 @@ object mod extends Shortcut {
       def setDefaultHandlerUndefined: Self = StObject.set(x, "defaultHandler", js.undefined)
       
       @scala.inline
-      def setPusher(value: Record[String, _]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+      def setPusher(value: Record[String, js.Any]): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPusherUndefined: Self = StObject.set(x, "pusher", js.undefined)

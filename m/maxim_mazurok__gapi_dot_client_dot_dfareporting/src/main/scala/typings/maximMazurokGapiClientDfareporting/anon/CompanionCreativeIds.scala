@@ -2,100 +2,98 @@ package typings.maximMazurokGapiClientDfareporting.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompanionCreativeIds extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Select only active creatives. Leave blank to select active and inactive creatives. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Select only creatives with this advertiser ID. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** Select only archived creatives. Leave blank to select archived and unarchived creatives. */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Select only creatives with this campaign ID. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** Select only in-stream video creatives with these companion IDs. */
-  var companionCreativeIds: js.UndefOr[String | js.Array[String]] = js.native
+  var companionCreativeIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Select only creatives with these creative field IDs. */
-  var creativeFieldIds: js.UndefOr[String | js.Array[String]] = js.native
+  var creativeFieldIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Select only creatives with these IDs. */
-  var ids: js.UndefOr[String | js.Array[String]] = js.native
+  var ids: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Maximum number of results to return. */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Value of the nextPageToken from the previous result page. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** User profile ID associated with this request. */
-  var profileId: String = js.native
+  var profileId: String
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Select only creatives with these rendering IDs. */
-  var renderingIds: js.UndefOr[String | js.Array[String]] = js.native
+  var renderingIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed. For example, "creative*2015" will return objects with names like "creative June 2015", "creative April
     * 2015", or simply "creative 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a search string of "creative"
     * will match objects with name "my creative", "creative 2015", or simply "creative".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /** Select only creatives with these size IDs. */
-  var sizeIds: js.UndefOr[String | js.Array[String]] = js.native
+  var sizeIds: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Field by which to sort the list. */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /** Order of sorted results. */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /** Select only creatives corresponding to this Studio creative ID. */
-  var studioCreativeId: js.UndefOr[String] = js.native
+  var studioCreativeId: js.UndefOr[String] = js.undefined
   
   /** Select only creatives with these creative types. */
-  var types: js.UndefOr[String | js.Array[String]] = js.native
+  var types: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
 }
 object CompanionCreativeIds {
   

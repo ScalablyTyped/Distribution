@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * at the end of iTunes store URL. First party mobile applications is either
   * included or excluded.
   */
-@js.native
 trait SchemaFirstPartyMobileApplicationTargeting extends StObject {
   
   /**
     * A list of application IDs to be excluded.
     */
-  var excludedAppIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedAppIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of application IDs to be included.
     */
-  var targetedAppIds: js.UndefOr[js.Array[String]] = js.native
+  var targetedAppIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFirstPartyMobileApplicationTargeting {
   

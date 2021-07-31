@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSigningProfilesResponse extends StObject {
   
   /**
     * Value for specifying the next set of paginated results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * A list of profiles that are available in the AWS account. This includes profiles with the status of CANCELED if the includeCanceled parameter is set to true.
     */
-  var profiles: js.UndefOr[SigningProfiles] = js.native
+  var profiles: js.UndefOr[SigningProfiles] = js.undefined
 }
 object ListSigningProfilesResponse {
   

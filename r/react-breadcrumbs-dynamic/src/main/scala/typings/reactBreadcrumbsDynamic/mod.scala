@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -45,10 +44,9 @@ object mod {
     def this(props: BreadcrumbsProviderProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BreadcrumbsItemProps extends StObject {
     
-    var to: String = js.native
+    var to: String
   }
   object BreadcrumbsItemProps {
     
@@ -66,24 +64,23 @@ object mod {
     }
   }
   
-  @js.native
   trait BreadcrumbsProps extends StObject {
     
-    var container: js.UndefOr[String | Element | js.Object] = js.native
+    var container: js.UndefOr[String | Element | js.Object] = js.undefined
     
-    var containerProps: js.UndefOr[js.Object] = js.native
+    var containerProps: js.UndefOr[js.Object] = js.undefined
     
-    var duplicateProps: js.UndefOr[js.Object] = js.native
+    var duplicateProps: js.UndefOr[js.Object] = js.undefined
     
-    var finalItem: js.UndefOr[String | Element | js.Object] = js.native
+    var finalItem: js.UndefOr[String | Element | js.Object] = js.undefined
     
-    var finalProps: js.UndefOr[js.Object] = js.native
+    var finalProps: js.UndefOr[js.Object] = js.undefined
     
-    var item: js.UndefOr[String | Element | js.Object] = js.native
+    var item: js.UndefOr[String | Element | js.Object] = js.undefined
     
-    var renameProps: js.UndefOr[js.Object] = js.native
+    var renameProps: js.UndefOr[js.Object] = js.undefined
     
-    var separator: js.UndefOr[String | Element | js.Object] = js.native
+    var separator: js.UndefOr[String | Element | js.Object] = js.undefined
   }
   object BreadcrumbsProps {
     
@@ -146,10 +143,9 @@ object mod {
     }
   }
   
-  @js.native
   trait BreadcrumbsProviderProps extends StObject {
     
-    var shouldBreadcrumbsUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var shouldBreadcrumbsUpdate: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object BreadcrumbsProviderProps {
     
@@ -163,7 +159,7 @@ object mod {
     implicit class BreadcrumbsProviderPropsMutableBuilder[Self <: BreadcrumbsProviderProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setShouldBreadcrumbsUpdate(value: /* repeated */ js.Any => _): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
+      def setShouldBreadcrumbsUpdate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setShouldBreadcrumbsUpdateUndefined: Self = StObject.set(x, "shouldBreadcrumbsUpdate", js.undefined)

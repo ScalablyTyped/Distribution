@@ -28,7 +28,6 @@ import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import typings.uifabricUtilities.keyCodesMod.KeyCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonTypesMod {
@@ -40,35 +39,49 @@ object buttonTypesMod {
   object ButtonType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ButtonType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ButtonType & Double] = js.native
     
     @js.native
-    sealed trait default extends ButtonType
-    /* 6 */ val default: typings.officeUiFabricReact.buttonTypesMod.ButtonType.default with Double = js.native
+    sealed trait default
+      extends StObject
+         with ButtonType
+    /* 6 */ val default: typings.officeUiFabricReact.buttonTypesMod.ButtonType.default & Double = js.native
     
     @js.native
-    sealed trait command extends ButtonType
-    /* 4 */ val command: typings.officeUiFabricReact.buttonTypesMod.ButtonType.command with Double = js.native
+    sealed trait command
+      extends StObject
+         with ButtonType
+    /* 4 */ val command: typings.officeUiFabricReact.buttonTypesMod.ButtonType.command & Double = js.native
     
     @js.native
-    sealed trait compound extends ButtonType
-    /* 3 */ val compound: typings.officeUiFabricReact.buttonTypesMod.ButtonType.compound with Double = js.native
+    sealed trait compound
+      extends StObject
+         with ButtonType
+    /* 3 */ val compound: typings.officeUiFabricReact.buttonTypesMod.ButtonType.compound & Double = js.native
     
     @js.native
-    sealed trait hero extends ButtonType
-    /* 2 */ val hero: typings.officeUiFabricReact.buttonTypesMod.ButtonType.hero with Double = js.native
+    sealed trait hero
+      extends StObject
+         with ButtonType
+    /* 2 */ val hero: typings.officeUiFabricReact.buttonTypesMod.ButtonType.hero & Double = js.native
     
     @js.native
-    sealed trait icon extends ButtonType
-    /* 5 */ val icon: typings.officeUiFabricReact.buttonTypesMod.ButtonType.icon with Double = js.native
+    sealed trait icon
+      extends StObject
+         with ButtonType
+    /* 5 */ val icon: typings.officeUiFabricReact.buttonTypesMod.ButtonType.icon & Double = js.native
     
     @js.native
-    sealed trait normal extends ButtonType
-    /* 0 */ val normal: typings.officeUiFabricReact.buttonTypesMod.ButtonType.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with ButtonType
+    /* 0 */ val normal: typings.officeUiFabricReact.buttonTypesMod.ButtonType.normal & Double = js.native
     
     @js.native
-    sealed trait primary extends ButtonType
-    /* 1 */ val primary: typings.officeUiFabricReact.buttonTypesMod.ButtonType.primary with Double = js.native
+    sealed trait primary
+      extends StObject
+         with ButtonType
+    /* 1 */ val primary: typings.officeUiFabricReact.buttonTypesMod.ButtonType.primary & Double = js.native
   }
   
   @js.native
@@ -78,17 +91,21 @@ object buttonTypesMod {
   object ElementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ElementType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ElementType & Double] = js.native
     
     /** <a> element. */
     @js.native
-    sealed trait anchor extends ElementType
-    /* 1 */ val anchor: typings.officeUiFabricReact.buttonTypesMod.ElementType.anchor with Double = js.native
+    sealed trait anchor
+      extends StObject
+         with ElementType
+    /* 1 */ val anchor: typings.officeUiFabricReact.buttonTypesMod.ElementType.anchor & Double = js.native
     
     /** <button> element. */
     @js.native
-    sealed trait button extends ElementType
-    /* 0 */ val button: typings.officeUiFabricReact.buttonTypesMod.ElementType.button with Double = js.native
+    sealed trait button
+      extends StObject
+         with ElementType
+    /* 0 */ val button: typings.officeUiFabricReact.buttonTypesMod.ElementType.button & Double = js.native
   }
   
   @js.native
@@ -115,74 +132,75 @@ object buttonTypesMod {
       * defaults to `true`.
       */
     def openMenu(): Unit = js.native
-    def openMenu(shouldFocusOnContainer: js.UndefOr[scala.Nothing], shouldFocusOnMount: Boolean): Unit = js.native
     def openMenu(shouldFocusOnContainer: Boolean): Unit = js.native
     def openMenu(shouldFocusOnContainer: Boolean, shouldFocusOnMount: Boolean): Unit = js.native
+    def openMenu(shouldFocusOnContainer: Unit, shouldFocusOnMount: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait IButtonProps extends AllHTMLAttributes[
+  trait IButtonProps
+    extends StObject
+       with AllHTMLAttributes[
           HTMLAnchorElement | HTMLButtonElement | HTMLDivElement | BaseButton | Button | HTMLSpanElement
         ] {
     
     /**
       * Whether the button can have focus in disabled mode
       */
-    var allowDisabledFocus: js.UndefOr[Boolean] = js.native
+    var allowDisabledFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Detailed description of the button for the benefit of screen readers.
       *
       * Besides the compound button, other button types will need more information provided to screen reader.
       */
-    var ariaDescription: js.UndefOr[String] = js.native
+    var ariaDescription: js.UndefOr[String] = js.undefined
     
     /**
       * If provided and is true it adds an 'aria-hidden' attribute instructing screen readers to ignore the element.
       */
-    var ariaHidden: js.UndefOr[Boolean] = js.native
+    var ariaHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The aria label of the button for the benefit of screen readers.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Deprecated at v1.2.3, to be removed at \>= v2.0.0. Use specific button component instead.
       * @defaultvalue ButtonType.default
       * @deprecated Use specific button component instead.
       */
-    var buttonType: js.UndefOr[ButtonType] = js.native
+    var buttonType: js.UndefOr[ButtonType] = js.undefined
     
     /**
       * Optional callback to access the IButton interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IButton]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IButton]] = js.undefined
     
     /**
       * Any custom data the developer wishes to associate with the menu item.
       */
     @JSName("data")
-    var data_IButtonProps: js.UndefOr[js.Any] = js.native
+    var data_IButtonProps: js.UndefOr[js.Any] = js.undefined
     
     /**
       * yet unknown docs
       */
-    var defaultRender: js.UndefOr[js.Any] = js.native
+    var defaultRender: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Style for the description text if applicable (for compound buttons.)
       * Deprecated, use `secondaryText` instead.
       * @deprecated Use `secondaryText` instead.
       */
-    var description: js.UndefOr[IStyle] = js.native
+    var description: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Optional callback to access the root DOM element.
       * @deprecated Temporary solution which will be replaced with ref in the V8 release.
       */
-    var elementRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var elementRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
     /**
       * Method to provide the classnames to style a button.
@@ -205,7 +223,7 @@ object buttonTypesMod {
           /* allowDisabledFocus */ Boolean, 
           IButtonClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Method to provide the classnames to style a button.
@@ -221,46 +239,46 @@ object buttonTypesMod {
           /* allowDisabledFocus */ Boolean, 
           ISplitButtonClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The props for the icon shown in the button.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Optional keytip for this button
       */
-    var keytipProps: js.UndefOr[IKeytipProps] = js.native
+    var keytipProps: js.UndefOr[IKeytipProps] = js.undefined
     
     /**
       * Render a custom menu in place of the normal one.
       */
-    var menuAs: js.UndefOr[IComponentAs[IContextualMenuProps]] = js.native
+    var menuAs: js.UndefOr[IComponentAs[IContextualMenuProps]] = js.undefined
     
     /**
       * The props for the icon shown when providing a menu dropdown.
       */
-    var menuIconProps: js.UndefOr[IIconProps] = js.native
+    var menuIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Props for button menu. Providing this will default to showing the menu icon. See menuIconProps for overriding
       * how the default icon looks. Providing this in addition of onClick and setting the split property to true will
       * render a SplitButton.
       */
-    var menuProps: js.UndefOr[IContextualMenuProps] = js.native
+    var menuProps: js.UndefOr[IContextualMenuProps] = js.undefined
     
     /**
       * Provides a custom KeyCode that can be used to open the button menu.
       * The default KeyCode is the down arrow.
       * A value of null can be provided to disable the key codes for opening the button menu.
       */
-    var menuTriggerKeyCode: js.UndefOr[KeyCodes | Null] = js.native
+    var menuTriggerKeyCode: js.UndefOr[KeyCodes | Null] = js.undefined
     
     /**
       * Callback that runs after Button's contextual menu was closed (removed from the DOM)
       */
-    var onAfterMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAfterMenuDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional callback when menu is clicked.
@@ -271,43 +289,43 @@ object buttonTypesMod {
           /* button */ js.UndefOr[this.type], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom render function for the aria description element.
       */
-    var onRenderAriaDescription: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderAriaDescription: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Custom render function for rendering the button children.
       */
-    var onRenderChildren: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderChildren: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Custom render function for the desciption text.
       */
-    var onRenderDescription: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderDescription: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Custom render function for the icon
       */
-    var onRenderIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Deprecated at v6.3.2, to be removed at \>= v7.0.0. Use `menuAs` instead.
       * @deprecated Use `menuAs` instead.
       */
-    var onRenderMenu: js.UndefOr[IRenderFunction[IContextualMenuProps]] = js.native
+    var onRenderMenu: js.UndefOr[IRenderFunction[IContextualMenuProps]] = js.undefined
     
     /**
       * Custom render function for button menu icon
       */
-    var onRenderMenuIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderMenuIcon: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Custom render function for the label text.
       */
-    var onRenderText: js.UndefOr[IRenderFunction[IButtonProps]] = js.native
+    var onRenderText: js.UndefOr[IRenderFunction[IButtonProps]] = js.undefined
     
     /**
       * Menu will not be created or destroyed when opened or closed, instead it
@@ -316,24 +334,24 @@ object buttonTypesMod {
       * when perf is important.
       * Note: This may increase the amount of time it takes for the button itself to mount.
       */
-    var persistMenu: js.UndefOr[Boolean] = js.native
+    var persistMenu: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes the visual presentation of the button to be emphasized (if defined)
       * @defaultvalue false
       */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional props to be applied only to the primary action button of SplitButton and not to the
       * overall SplitButton container
       */
-    var primaryActionButtonProps: js.UndefOr[IButtonProps] = js.native
+    var primaryActionButtonProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * If set to true and if this is a splitButton (split == true) then the primary action of a split button is disabled.
       */
-    var primaryDisabled: js.UndefOr[Boolean] = js.native
+    var primaryDisabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the persisted menu is rendered hidden when the button
@@ -351,7 +369,7 @@ object buttonTypesMod {
       * Please do not start using this. If you are already using this,
       * please make sure that you are doing so only in non-Edge browsers
       */
-    var renderPersistedMenuHiddenOnMount: js.UndefOr[Boolean] = js.native
+    var renderPersistedMenuHiddenOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Deprecated at v0.56.2, to be removed at \>= v1.0.0. Just pass in button props instead.
@@ -360,65 +378,65 @@ object buttonTypesMod {
       */
     var rootProps: js.UndefOr[
         ButtonHTMLAttributes[HTMLButtonElement] | AnchorHTMLAttributes[HTMLAnchorElement]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Description of the action this button takes.
       * Only used for compound buttons
       */
-    var secondaryText: js.UndefOr[String] = js.native
+    var secondaryText: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, and if menuProps and onClick are provided, the button will render as a SplitButton.
       * @defaultvalue false
       */
-    var split: js.UndefOr[Boolean] = js.native
+    var split: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accessible label for the dropdown chevron button if this button is split.
       */
-    var splitButtonAriaLabel: js.UndefOr[String] = js.native
+    var splitButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Experimental prop that get passed into the menuButton that's rendered as part of
       * split button. Anything passed in will likely need to have accompanying
       * style changes.
       */
-    var splitButtonMenuProps: js.UndefOr[IButtonProps] = js.native
+    var splitButtonMenuProps: js.UndefOr[IButtonProps] = js.undefined
     
     /**
       * Custom styling for individual elements within the button DOM.
       */
-    var styles: js.UndefOr[IButtonStyles] = js.native
+    var styles: js.UndefOr[IButtonStyles] = js.undefined
     
     /**
       * Text to render button label. If text is supplied, it will override any string in button children.
       * Other children components will be passed through after the text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether button is a toggle button with distinct on and off states. This should be true for buttons that permanently
       * change state when a press event finishes, such as a volume mute button.
       */
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any custom data the developer wishes to associate with the menu item.
       * Deprecated, use `checked` if setting state.
       * @deprecated unused, use `checked` if setting state.
       */
-    var toggled: js.UndefOr[Boolean] = js.native
+    var toggled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Unique id to identify the item. Typically a duplicate of key value.
       */
-    var uniqueId: js.UndefOr[String | Double] = js.native
+    var uniqueId: js.UndefOr[String | Double] = js.undefined
   }
   object IButtonProps {
     
@@ -726,280 +744,279 @@ object buttonTypesMod {
     }
   }
   
-  @js.native
   trait IButtonStyles extends StObject {
     
     /**
       * Style for the description text if applicable (for compound buttons.)
       */
-    var description: js.UndefOr[IStyle] = js.native
+    var description: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the description text when the button is checked.
       */
-    var descriptionChecked: js.UndefOr[IStyle] = js.native
+    var descriptionChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the description text when the button is disabled.
       */
-    var descriptionDisabled: js.UndefOr[IStyle] = js.native
+    var descriptionDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the description text when the button is hovered.
       */
-    var descriptionHovered: js.UndefOr[IStyle] = js.native
+    var descriptionHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the description text when the button is pressed.
       */
-    var descriptionPressed: js.UndefOr[IStyle] = js.native
+    var descriptionPressed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the flexbox container within the root element.
       */
-    var flexContainer: js.UndefOr[IStyle] = js.native
+    var flexContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the icon on the near side of the label.
       */
-    var icon: js.UndefOr[IStyle] = js.native
+    var icon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the icon when the button is checked.
       */
-    var iconChecked: js.UndefOr[IStyle] = js.native
+    var iconChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the icon when the button is disabled.
       */
-    var iconDisabled: js.UndefOr[IStyle] = js.native
+    var iconDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the icon on the near side of the label when expanded.
       */
-    var iconExpanded: js.UndefOr[IStyle] = js.native
+    var iconExpanded: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the icon on the near side of the label when expanded and hovered.
       */
-    var iconExpandedHovered: js.UndefOr[IStyle] = js.native
+    var iconExpandedHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the icon on the near side of the label on hover.
       */
-    var iconHovered: js.UndefOr[IStyle] = js.native
+    var iconHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the icon on the near side of the label when pressed.
       */
-    var iconPressed: js.UndefOr[IStyle] = js.native
+    var iconPressed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the text content of the button.
       */
-    var label: js.UndefOr[IStyle] = js.native
+    var label: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the text content when the button is checked.
       */
-    var labelChecked: js.UndefOr[IStyle] = js.native
+    var labelChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the text content when the button is disabled.
       */
-    var labelDisabled: js.UndefOr[IStyle] = js.native
+    var labelDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the text content when the button is hovered.
       */
-    var labelHovered: js.UndefOr[IStyle] = js.native
+    var labelHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the menu chevron.
       */
-    var menuIcon: js.UndefOr[IStyle] = js.native
+    var menuIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the menu chevron when the button is checked.
       */
-    var menuIconChecked: js.UndefOr[IStyle] = js.native
+    var menuIconChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the menu chevron when the button is disabled.
       */
-    var menuIconDisabled: js.UndefOr[IStyle] = js.native
+    var menuIconDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the menu chevron when expanded.
       */
-    var menuIconExpanded: js.UndefOr[IStyle] = js.native
+    var menuIconExpanded: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the menu chevron when expanded and hovered.
       */
-    var menuIconExpandedHovered: js.UndefOr[IStyle] = js.native
+    var menuIconExpandedHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the menu chevron on hover.
       */
-    var menuIconHovered: js.UndefOr[IStyle] = js.native
+    var menuIconHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the menu chevron when pressed.
       */
-    var menuIconPressed: js.UndefOr[IStyle] = js.native
+    var menuIconPressed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the root element in the default enabled, non-toggled state.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the root element in a checked state, layered on top of the root style.
       */
-    var rootChecked: js.UndefOr[IStyle] = js.native
+    var rootChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on hover in a checked, disabled state
       */
-    var rootCheckedDisabled: js.UndefOr[IStyle] = js.native
+    var rootCheckedDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on hover in a checked, enabled state
       */
-    var rootCheckedHovered: js.UndefOr[IStyle] = js.native
+    var rootCheckedHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on pressed in a checked, enabled state
       */
-    var rootCheckedPressed: js.UndefOr[IStyle] = js.native
+    var rootCheckedPressed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the root element in a disabled state, layered on top of the root style.
       */
-    var rootDisabled: js.UndefOr[IStyle] = js.native
+    var rootDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on when menu is expanded in the default, enabled, non-toggled state.
       */
-    var rootExpanded: js.UndefOr[IStyle] = js.native
+    var rootExpanded: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on hover in a expanded state on hover
       */
-    var rootExpandedHovered: js.UndefOr[IStyle] = js.native
+    var rootExpandedHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on focus in the default, enabled, non-toggled state.
       */
-    var rootFocused: js.UndefOr[IStyle] = js.native
+    var rootFocused: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the root element when it has a menu button, layered on top of the root style.
       */
-    var rootHasMenu: js.UndefOr[IStyle] = js.native
+    var rootHasMenu: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on hover in the default, enabled, non-toggled state.
       */
-    var rootHovered: js.UndefOr[IStyle] = js.native
+    var rootHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override applied to the root on pressed in the default, enabled, non-toggled state.
       */
-    var rootPressed: js.UndefOr[IStyle] = js.native
+    var rootPressed: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the screen reader text.
       */
-    var screenReaderText: js.UndefOr[IStyle] = js.native
+    var screenReaderText: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the description text if applicable (for compound buttons.)
       */
-    var secondaryText: js.UndefOr[IStyle] = js.native
+    var secondaryText: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the container div around a SplitButton element
       */
-    var splitButtonContainer: js.UndefOr[IStyle] = js.native
+    var splitButtonContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for container div around a SplitButton element when the button is checked.
       */
-    var splitButtonContainerChecked: js.UndefOr[IStyle] = js.native
+    var splitButtonContainerChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for container div around a SplitButton element when the button is checked and hovered.
       */
-    var splitButtonContainerCheckedHovered: js.UndefOr[IStyle] = js.native
+    var splitButtonContainerCheckedHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the container div around a SplitButton element in a disabled state
       */
-    var splitButtonContainerDisabled: js.UndefOr[IStyle] = js.native
+    var splitButtonContainerDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for container div around a SplitButton element when the button is focused.
       */
-    var splitButtonContainerFocused: js.UndefOr[IStyle] = js.native
+    var splitButtonContainerFocused: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for container div around a SplitButton element when the button is hovered.
       */
-    var splitButtonContainerHovered: js.UndefOr[IStyle] = js.native
+    var splitButtonContainerHovered: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the divider element that appears between the button and menu button
       * for a split button.
       */
-    var splitButtonDivider: js.UndefOr[IStyle] = js.native
+    var splitButtonDivider: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the divider element that appears between the button and menu button
       * for a split button in a disabled state.
       */
-    var splitButtonDividerDisabled: js.UndefOr[IStyle] = js.native
+    var splitButtonDividerDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton FlexContainer.
       */
-    var splitButtonFlexContainer: js.UndefOr[IStyle] = js.native
+    var splitButtonFlexContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu button
       */
-    var splitButtonMenuButton: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuButton: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu button element in a checked state
       */
-    var splitButtonMenuButtonChecked: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuButtonChecked: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu button element in a disabled state.
       */
-    var splitButtonMenuButtonDisabled: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuButtonDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu button element in an expanded state
       */
-    var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu icon element
       */
-    var splitButtonMenuIcon: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style override for the SplitButton menu icon element in a disabled state
       */
-    var splitButtonMenuIconDisabled: js.UndefOr[IStyle] = js.native
+    var splitButtonMenuIconDisabled: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the text container within the flexbox container element (and contains the text and description).
       */
-    var textContainer: js.UndefOr[IStyle] = js.native
+    var textContainer: js.UndefOr[IStyle] = js.undefined
   }
   object IButtonStyles {
     

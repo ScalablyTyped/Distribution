@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVolumeRequest extends StObject {
   
   /**
     * The new mount point.
     */
-  var MountPoint: js.UndefOr[String] = js.native
+  var MountPoint: js.UndefOr[String] = js.undefined
   
   /**
     * The new name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The volume ID.
     */
-  var VolumeId: String = js.native
+  var VolumeId: String
 }
 object UpdateVolumeRequest {
   

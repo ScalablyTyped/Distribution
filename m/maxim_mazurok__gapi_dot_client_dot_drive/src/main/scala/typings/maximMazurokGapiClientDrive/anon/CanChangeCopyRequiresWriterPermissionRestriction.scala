@@ -2,68 +2,66 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanChangeCopyRequiresWriterPermissionRestriction extends StObject {
   
   /** Whether the current user can add children to folders in this Team Drive. */
-  var canAddChildren: js.UndefOr[Boolean] = js.native
+  var canAddChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the copyRequiresWriterPermission restriction of this Team Drive. */
-  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the domainUsersOnly restriction of this Team Drive. */
-  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the background of this Team Drive. */
-  var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.native
+  var canChangeTeamDriveBackground: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the teamMembersOnly restriction of this Team Drive. */
-  var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeTeamMembersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can comment on files in this Team Drive. */
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can copy files in this Team Drive. */
-  var canCopy: js.UndefOr[Boolean] = js.native
+  var canCopy: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete children from folders in this Team Drive. */
-  var canDeleteChildren: js.UndefOr[Boolean] = js.native
+  var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete this Team Drive. Attempting to delete the Team Drive may still fail if there are untrashed items inside the Team Drive. */
-  var canDeleteTeamDrive: js.UndefOr[Boolean] = js.native
+  var canDeleteTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can download files in this Team Drive. */
-  var canDownload: js.UndefOr[Boolean] = js.native
+  var canDownload: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can edit files in this Team Drive */
-  var canEdit: js.UndefOr[Boolean] = js.native
+  var canEdit: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can list the children of folders in this Team Drive. */
-  var canListChildren: js.UndefOr[Boolean] = js.native
+  var canListChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can add members to this Team Drive or remove them or change their role. */
-  var canManageMembers: js.UndefOr[Boolean] = js.native
+  var canManageMembers: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can read the revisions resource of files in this Team Drive. */
-  var canReadRevisions: js.UndefOr[Boolean] = js.native
+  var canReadRevisions: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated - use canDeleteChildren or canTrashChildren instead. */
-  var canRemoveChildren: js.UndefOr[Boolean] = js.native
+  var canRemoveChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can rename files or folders in this Team Drive. */
-  var canRename: js.UndefOr[Boolean] = js.native
+  var canRename: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can rename this Team Drive. */
-  var canRenameTeamDrive: js.UndefOr[Boolean] = js.native
+  var canRenameTeamDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can share files or folders in this Team Drive. */
-  var canShare: js.UndefOr[Boolean] = js.native
+  var canShare: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can trash children from folders in this Team Drive. */
-  var canTrashChildren: js.UndefOr[Boolean] = js.native
+  var canTrashChildren: js.UndefOr[Boolean] = js.undefined
 }
 object CanChangeCopyRequiresWriterPermissionRestriction {
   

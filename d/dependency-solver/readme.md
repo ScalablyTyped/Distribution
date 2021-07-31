@@ -12,7 +12,7 @@ A tiny dependency solver using topological sorting
 | Keywords           | dependency, denepdency-solver, dependency-parser, topological, topological-sort, kahn |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 24167 |
+| # downloads        | 18886 |
 | # stars            | 0 |
 
 ## Links

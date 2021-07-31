@@ -3,29 +3,27 @@ package typings.web3Core.mod
 import typings.web3Core.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventLog extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var blockHash: String = js.native
+  var blockHash: String
   
-  var blockNumber: Double = js.native
+  var blockNumber: Double
   
-  var event: String = js.native
+  var event: String
   
-  var logIndex: Double = js.native
+  var logIndex: Double
   
-  var raw: js.UndefOr[Data] = js.native
+  var raw: js.UndefOr[Data] = js.undefined
   
-  var returnValues: js.Any = js.native
+  var returnValues: js.Any
   
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var transactionIndex: Double = js.native
+  var transactionIndex: Double
 }
 object EventLog {
   

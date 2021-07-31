@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsGetArtifactResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsGetArtifactEndpoint extends StObject {
   
-  var parameters: ActionsGetArtifactEndpoint = js.native
+  var parameters: ActionsGetArtifactEndpoint
   
-  var request: ActionsGetArtifactRequestOptions = js.native
+  var request: ActionsGetArtifactRequestOptions
   
-  var response: OctokitResponse[ActionsGetArtifactResponseData] = js.native
+  var response: OctokitResponse[ActionsGetArtifactResponseData]
 }
 object ParametersActionsGetArtifactEndpoint {
   

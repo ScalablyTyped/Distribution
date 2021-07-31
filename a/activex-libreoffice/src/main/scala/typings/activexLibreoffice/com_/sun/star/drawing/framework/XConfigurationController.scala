@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -91,9 +90,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The {@link ResourceId} and ResourceObject members are set to {@link XResourceId} and object reference of the deactivated resource.
   */
-@js.native
 trait XConfigurationController
-  extends XConfigurationControllerRequestQueue
+  extends StObject
+     with XConfigurationControllerRequestQueue
      with XConfigurationControllerBroadcaster
      with XResourceFactoryManager {
   
@@ -102,35 +101,35 @@ trait XConfigurationController
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  val CurrentConfiguration: XConfiguration = js.native
+  val CurrentConfiguration: XConfiguration
   
   /**
     * Return a copy of the requested configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  val RequestedConfiguration: XConfiguration = js.native
+  val RequestedConfiguration: XConfiguration
   
   /**
     * Return a copy of the current configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  def getCurrentConfiguration(): XConfiguration = js.native
+  def getCurrentConfiguration(): XConfiguration
   
   /**
     * Return a copy of the requested configuration.
     *
     * Modifications to the returned configuration have no effect on the drawing framework.
     */
-  def getRequestedConfiguration(): XConfiguration = js.native
+  def getRequestedConfiguration(): XConfiguration
   
   /**
     * Return the active resource specified by the given resource id.
     * @param xResourceId A valid resource id. This should, but does not have to be, the resource id of an active resource.
     * @returns When the given resource id specifies an active resource then that resource is returned. Otherwise an empty reference is returned.
     */
-  def getResource(xResourceId: XResourceId): XResource = js.native
+  def getResource(xResourceId: XResourceId): XResource
   
   /**
     * Lock the processing of configuration change requests.
@@ -141,7 +140,7 @@ trait XConfigurationController
     * Recursive {@link lock()} calls are recognized: the configuration controller is locked while {@link lock()} was called more often than {@link unlock()}
     * .
     */
-  def lock(): Unit = js.native
+  def lock(): Unit
   
   /**
     * Request the activation of a resource.
@@ -150,7 +149,7 @@ trait XConfigurationController
     * @param xResourceId The resource whose activation is requested.
     * @param eMode  When eMode is REPLACE then, before adding the resource activation to the request queue, similar resources linked to the same anchor are re
     */
-  def requestResourceActivation(xResourceId: XResourceId, eMode: ResourceActivationMode): Unit = js.native
+  def requestResourceActivation(xResourceId: XResourceId, eMode: ResourceActivationMode): Unit
   
   /**
     * Request the deactivation of a resource.
@@ -160,7 +159,7 @@ trait XConfigurationController
     * Requesting the deactivation of a resource that is not active is not an error.
     * @param xResourceId The resource whose deactivation is requested.
     */
-  def requestResourceDeactivation(xResourceId: XResourceId): Unit = js.native
+  def requestResourceDeactivation(xResourceId: XResourceId): Unit
   
   /**
     * Replace the requested configuration with the given configuration and schedule an update of the current configuration.
@@ -175,7 +174,7 @@ trait XConfigurationController
     * configuration can be different from the given configuration.
     * @param xConfiguration This typically is a configuration that was obtained with an earlier {@link getRequestedConfiguration()} call.
     */
-  def restoreConfiguration(xConfiguration: XConfiguration): Unit = js.native
+  def restoreConfiguration(xConfiguration: XConfiguration): Unit
   
   /**
     * Unlock the processing of configuration change requests.
@@ -183,7 +182,7 @@ trait XConfigurationController
     * When {@link unlock()} is called as many times as {@link lock()} and the queue of configuration change requests is not empty the configuration
     * controller continues the processing of the change requests. An update of the current configuration will eventually being made.
     */
-  def unlock(): Unit = js.native
+  def unlock(): Unit
   
   /**
     * Explicitly request an update of the current configuration.
@@ -191,7 +190,7 @@ trait XConfigurationController
     * Call it when a resource is activated or deactivated without the control and knowledge of the drawing framework. Calling this method (from outside the
     * drawing framework) should hardly every be necessary.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object XConfigurationController {
   

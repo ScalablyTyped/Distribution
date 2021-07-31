@@ -2,20 +2,20 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a Timeline control.
   * @see {@link Control}
   */
-@js.native
-trait TimelineWall extends Control {
+trait TimelineWall
+  extends StObject
+     with Control {
   
   /**
     * Refreshes the data displayed in a timelinewall and timer control.
     */
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object TimelineWall {
   

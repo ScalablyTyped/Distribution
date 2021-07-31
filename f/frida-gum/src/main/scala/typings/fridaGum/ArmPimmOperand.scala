@@ -3,24 +3,23 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.pimm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArmPimmOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
   
-  var `type`: pimm = js.native
+  var `type`: pimm
   
-  var value: Double = js.native
+  var value: Double
 }
 object ArmPimmOperand {
   
   @scala.inline
-  def apply(subtracted: Boolean, `type`: pimm, value: Double): ArmPimmOperand = {
+  def apply(subtracted: Boolean, value: Double): ArmPimmOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pimm")
     __obj.asInstanceOf[ArmPimmOperand]
   }
   

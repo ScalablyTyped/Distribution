@@ -3,14 +3,12 @@ package typings.validateNpmPackageName
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("validate-npm-package-name", JSImport.Namespace)
-  @js.native
-  def apply(name: String): Result = js.native
+  @scala.inline
+  def apply(name: String): Result = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("validate-npm-package-name", JSImport.Namespace)
   @js.native
@@ -22,16 +20,15 @@ object mod {
   @scala.inline
   def scopedPackagePattern_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scopedPackagePattern")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Result extends StObject {
     
-    var errors: js.UndefOr[js.Array[String]] = js.native
+    var errors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var validForNewPackages: Boolean = js.native
+    var validForNewPackages: Boolean
     
-    var validForOldPackages: Boolean = js.native
+    var validForOldPackages: Boolean
     
-    var warnings: js.UndefOr[js.Array[String]] = js.native
+    var warnings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Result {
     

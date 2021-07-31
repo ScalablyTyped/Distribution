@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object speficying the Entities enrichment and related parameters. */
-@js.native
 trait NluEnrichmentEntities extends StObject {
   
   /** When `true`, emotion detection of entities will be performed on the specified field. */
-  var emotion: js.UndefOr[Boolean] = js.native
+  var emotion: js.UndefOr[Boolean] = js.undefined
   
   /** The maximum number of entities to extract for each instance of the specified field. */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /** When `true`, the types of mentions for each idetifieid entity is recorded. The default is `false`. */
-  var mention_types: js.UndefOr[Boolean] = js.native
+  var mention_types: js.UndefOr[Boolean] = js.undefined
   
   /** When `true`, the number of mentions of each identified entity is recorded. The default is `false`. */
-  var mentions: js.UndefOr[Boolean] = js.native
+  var mentions: js.UndefOr[Boolean] = js.undefined
   
   /** The enrichement model to use with entity extraction. May be a custom model provided by Watson Knowledge Studio, the public model for use with Knowledge Graph `en-news`, or the default public model `alchemy`. */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /** When `true`, a list of sentence locations for each instance of each identified entity is recorded. The default is `false`. */
-  var sentence_locations: js.UndefOr[Boolean] = js.native
+  var sentence_locations: js.UndefOr[Boolean] = js.undefined
   
   /** When `true`, sentiment analysis of entities will be performed on the specified field. */
-  var sentiment: js.UndefOr[Boolean] = js.native
+  var sentiment: js.UndefOr[Boolean] = js.undefined
 }
 object NluEnrichmentEntities {
   

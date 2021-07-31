@@ -2,56 +2,54 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendBulkEmailRequest extends StObject {
   
   /**
     * The list of bulk email entry objects.
     */
-  var BulkEmailEntries: BulkEmailEntryList = js.native
+  var BulkEmailEntries: BulkEmailEntryList
   
   /**
     * The name of the configuration set that you want to use when sending the email.
     */
-  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.native
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
   /**
     * An object that contains the body of the message. You can specify a template message.
     */
-  var DefaultContent: BulkEmailContent = js.native
+  var DefaultContent: BulkEmailContent
   
   /**
     * A list of tags, in the form of name/value pairs, to apply to an email that you send using the SendEmail operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events.
     */
-  var DefaultEmailTags: js.UndefOr[MessageTagList] = js.native
+  var DefaultEmailTags: js.UndefOr[MessageTagList] = js.undefined
   
   /**
     * The address that you want bounce and complaint notifications to be sent to.
     */
-  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to use the email address specified in the FeedbackForwardingEmailAddress parameter. For example, if the owner of example.com (which has ARN arn:aws:ses:us-east-1:123456789012:identity/example.com) attaches a policy to it that authorizes you to use feedback@example.com, then you would specify the FeedbackForwardingEmailAddressIdentityArn to be arn:aws:ses:us-east-1:123456789012:identity/example.com, and the FeedbackForwardingEmailAddress to be feedback@example.com. For more information about sending authorization, see the Amazon SES Developer Guide.
     */
-  var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.native
+  var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The email address that you want to use as the "From" address for the email. The address that you specify has to be verified.
     */
-  var FromEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to use the email address specified in the FromEmailAddress parameter. For example, if the owner of example.com (which has ARN arn:aws:ses:us-east-1:123456789012:identity/example.com) attaches a policy to it that authorizes you to use sender@example.com, then you would specify the FromEmailAddressIdentityArn to be arn:aws:ses:us-east-1:123456789012:identity/example.com, and the FromEmailAddress to be sender@example.com. For more information about sending authorization, see the Amazon SES Developer Guide.
     */
-  var FromEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.native
+  var FromEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The "Reply-to" email addresses for the message. When the recipient replies to the message, each Reply-to address receives the reply.
     */
-  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.native
+  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.undefined
 }
 object SendBulkEmailRequest {
   

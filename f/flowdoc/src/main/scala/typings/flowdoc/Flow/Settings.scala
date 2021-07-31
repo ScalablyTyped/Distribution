@@ -2,13 +2,11 @@ package typings.flowdoc.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object Settings {
   

@@ -6,24 +6,22 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<license-checker-webpack-plugin.license-checker-webpack-plugin.Dependency> */
-  @js.native
   trait PartialDependency extends StObject {
     
-    var licenseName: js.UndefOr[String] = js.native
+    var licenseName: js.UndefOr[String] = js.undefined
     
-    var licenseText: js.UndefOr[String] = js.native
+    var licenseText: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var repository: js.UndefOr[String] = js.native
+    var repository: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PartialDependency {
     
@@ -69,22 +67,21 @@ object anon {
   }
   
   /* Inlined std.Partial<license-checker-webpack-plugin.license-checker-webpack-plugin.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var allow: js.UndefOr[String] = js.native
+    var allow: js.UndefOr[String] = js.undefined
     
-    var emitError: js.UndefOr[Boolean] = js.native
+    var emitError: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[RegExp] = js.native
+    var filter: js.UndefOr[RegExp] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var outputFilename: js.UndefOr[String] = js.native
+    var outputFilename: js.UndefOr[String] = js.undefined
     
-    var outputWriter: js.UndefOr[String | OutputWriter] = js.native
+    var outputWriter: js.UndefOr[String | OutputWriter] = js.undefined
     
-    var `override`: js.UndefOr[Record[String, PartialDependency]] = js.native
+    var `override`: js.UndefOr[Record[String, PartialDependency]] = js.undefined
   }
   object PartialOptions {
     

@@ -5,17 +5,29 @@ import typings.awsSdkRegionProvider.fromSharedConfigFilesMod.SharedConfigInit
 import typings.awsSdkTypes.utilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultProviderMod {
   
-  @JSImport("@aws-sdk/region-provider/build/defaultProvider", "defaultProvider")
+  @JSImport("@aws-sdk/region-provider/build/defaultProvider", JSImport.Namespace)
   @js.native
-  def defaultProvider(): Provider[String] = js.native
-  @JSImport("@aws-sdk/region-provider/build/defaultProvider", "defaultProvider")
-  @js.native
-  def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = js.native
+  val ^ : js.Any = js.native
   
-  type RegionProviderConfiguration = EnvConfiguration with SharedConfigInit
+  @scala.inline
+  def defaultProvider(): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[Provider[String]]
+  @scala.inline
+  def defaultProvider(configuration: RegionProviderConfiguration): Provider[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(configuration.asInstanceOf[js.Any]).asInstanceOf[Provider[String]]
+  
+  trait RegionProviderConfiguration
+    extends StObject
+       with EnvConfiguration
+       with SharedConfigInit
+  object RegionProviderConfiguration {
+    
+    @scala.inline
+    def apply(): RegionProviderConfiguration = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RegionProviderConfiguration]
+    }
+  }
 }

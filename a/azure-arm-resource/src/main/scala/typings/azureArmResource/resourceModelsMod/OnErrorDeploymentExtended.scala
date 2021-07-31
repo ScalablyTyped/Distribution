@@ -2,27 +2,25 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnErrorDeploymentExtended extends StObject {
   
   /**
     * The deployment to be used on error case.
     */
-  var deploymentName: js.UndefOr[String] = js.native
+  var deploymentName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the provisioning for the on error deployment.
     */
-  val provisioningState: js.UndefOr[String] = js.native
+  val provisioningState: js.UndefOr[String] = js.undefined
   
   /**
     * The deployment on error behavior type. Possible values are LastSuccessful and
     * SpecificDeployment. Possible values include: 'LastSuccessful', 'SpecificDeployment'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object OnErrorDeploymentExtended {
   

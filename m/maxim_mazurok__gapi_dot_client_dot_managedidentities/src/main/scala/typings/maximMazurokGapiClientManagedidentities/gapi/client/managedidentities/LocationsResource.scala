@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientManagedidentities.anon.Alt
 import typings.maximMazurokGapiClientManagedidentities.anon.PageSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

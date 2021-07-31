@@ -6,7 +6,6 @@ import typings.wordpressCustomizeBrowser.controlMod.Control
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sectionMod {
@@ -29,18 +28,19 @@ object sectionMod {
     
     var id: String = js.native
     
-    def initialize(id: js.UndefOr[scala.Nothing], options: SectionParams): Unit = js.native
     def initialize(id: String, options: SectionParams): Unit = js.native
+    def initialize(id: Unit, options: SectionParams): Unit = js.native
     
     var panel: Value[String] = js.native
   }
   
-  @js.native
-  trait SectionParams extends ContainerParams {
+  trait SectionParams
+    extends StObject
+       with ContainerParams {
     
-    var customizeAction: js.UndefOr[String] = js.native
+    var customizeAction: js.UndefOr[String] = js.undefined
     
-    var panel: js.UndefOr[String | Null] = js.native
+    var panel: js.UndefOr[String | Null] = js.undefined
   }
   object SectionParams {
     

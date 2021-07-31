@@ -16,13 +16,19 @@ import typings.got.mod.GotOptions
 import typings.got.mod.GotPromise
 import typings.got.mod.GotStreamFn
 import typings.got.mod.GotUrl
+import typings.got.mod.HTTPError
 import typings.got.mod.Hooks
+import typings.got.mod.MaxRedirectsError
+import typings.got.mod.ParseError
+import typings.got.mod.ReadError
+import typings.got.mod.RequestError
 import typings.got.mod.RequestFunction
 import typings.got.mod.RetryOptions
+import typings.got.mod.TimeoutError
 import typings.got.mod.TimeoutOptions
+import typings.got.mod.UnsupportedProtocolError
 import typings.node.Buffer
 import typings.node.httpMod.Agent
-import typings.node.httpMod.ClientRequestArgs
 import typings.node.httpMod.OutgoingHttpHeaders
 import typings.node.netMod.Socket
 import typings.node.streamMod.Duplex
@@ -36,44 +42,95 @@ import typings.std.Record
 import typings.toughCookie.mod.CookieJar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CancelError extends StObject {
     
-    var CancelError: Instantiable0[typings.got.mod.CancelError] = js.native
+    var CancelError: Instantiable0[typings.got.mod.CancelError]
     
-    var HTTPError: Instantiable0[typings.got.mod.HTTPError] = js.native
+    var HTTPError: Instantiable0[typings.got.mod.HTTPError]
     
-    var MaxRedirectsError: Instantiable0[typings.got.mod.MaxRedirectsError] = js.native
+    var MaxRedirectsError: Instantiable0[typings.got.mod.MaxRedirectsError]
     
-    var ParseError: Instantiable0[typings.got.mod.ParseError] = js.native
+    var ParseError: Instantiable0[typings.got.mod.ParseError]
     
-    var ReadError: Instantiable0[typings.got.mod.ReadError] = js.native
+    var ReadError: Instantiable0[typings.got.mod.ReadError]
     
-    var RequestError: Instantiable0[typings.got.mod.RequestError] = js.native
+    var RequestError: Instantiable0[typings.got.mod.RequestError]
     
-    var TimeoutError: Instantiable0[typings.got.mod.TimeoutError] = js.native
+    var TimeoutError: Instantiable0[typings.got.mod.TimeoutError]
     
-    var UnsupportedProtocolError: Instantiable0[typings.got.mod.UnsupportedProtocolError] = js.native
+    var UnsupportedProtocolError: Instantiable0[typings.got.mod.UnsupportedProtocolError]
     
-    def extend(options: GotBodyOptions[Null]): GotInstanceGotBodyFnnull = js.native
-    def extend(options: GotFormOptions[String]): GotInstanceGotFormFnstrin = js.native
-    def extend(options: GotJSONOptions): GotInstanceGotJSONFn = js.native
+    def extend(options: GotBodyOptions[Null]): GotInstanceGotBodyFnnull
+    def extend(options: GotFormOptions[String]): GotInstanceGotFormFnstrin
+    def extend(options: GotJSONOptions): GotInstanceGotJSONFn
     @JSName("extend")
-    def extend_GotInstanceGotBodyFnstrin(options: GotBodyOptions[String]): GotInstanceGotBodyFnstrin = js.native
+    def extend_GotInstanceGotBodyFnstrin(options: GotBodyOptions[String]): GotInstanceGotBodyFnstrin
     @JSName("extend")
-    def extend_GotInstanceGotFormFnnull(options: GotFormOptions[Null]): GotInstanceGotFormFnnull = js.native
+    def extend_GotInstanceGotFormFnnull(options: GotFormOptions[Null]): GotInstanceGotFormFnnull
     @JSName("extend")
-    var extend_Original: GotExtend = js.native
+    var extend_Original: GotExtend
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead
+  }
+  object CancelError {
+    
+    @scala.inline
+    def apply(
+      CancelError: Instantiable0[typings.got.mod.CancelError],
+      HTTPError: Instantiable0[HTTPError],
+      MaxRedirectsError: Instantiable0[MaxRedirectsError],
+      ParseError: Instantiable0[ParseError],
+      ReadError: Instantiable0[ReadError],
+      RequestError: Instantiable0[RequestError],
+      TimeoutError: Instantiable0[TimeoutError],
+      UnsupportedProtocolError: Instantiable0[UnsupportedProtocolError],
+      extend: GotExtend,
+      stream: GotStreamFn & Recordgetpostputpatchhead
+    ): CancelError = {
+      val __obj = js.Dynamic.literal(CancelError = CancelError.asInstanceOf[js.Any], HTTPError = HTTPError.asInstanceOf[js.Any], MaxRedirectsError = MaxRedirectsError.asInstanceOf[js.Any], ParseError = ParseError.asInstanceOf[js.Any], ReadError = ReadError.asInstanceOf[js.Any], RequestError = RequestError.asInstanceOf[js.Any], TimeoutError = TimeoutError.asInstanceOf[js.Any], UnsupportedProtocolError = UnsupportedProtocolError.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CancelError]
+    }
+    
+    @scala.inline
+    implicit class CancelErrorMutableBuilder[Self <: CancelError] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCancelError(value: Instantiable0[typings.got.mod.CancelError]): Self = StObject.set(x, "CancelError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExtend(value: GotExtend): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHTTPError(value: Instantiable0[HTTPError]): Self = StObject.set(x, "HTTPError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxRedirectsError(value: Instantiable0[MaxRedirectsError]): Self = StObject.set(x, "MaxRedirectsError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParseError(value: Instantiable0[ParseError]): Self = StObject.set(x, "ParseError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReadError(value: Instantiable0[ReadError]): Self = StObject.set(x, "ReadError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRequestError(value: Instantiable0[RequestError]): Self = StObject.set(x, "RequestError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStream(value: GotStreamFn & Recordgetpostputpatchhead): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTimeoutError(value: Instantiable0[TimeoutError]): Self = StObject.set(x, "TimeoutError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUnsupportedProtocolError(value: Instantiable0[UnsupportedProtocolError]): Self = StObject.set(x, "UnsupportedProtocolError", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Inlined got.got.GotInstance<got.got.GotBodyFn<null>> */
@@ -139,10 +196,10 @@ object anon {
     @JSName("put")
     var put_Original: GotBodyFn[Null] = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   /* Inlined got.got.GotInstance<got.got.GotBodyFn<string>> */
@@ -208,10 +265,10 @@ object anon {
     @JSName("put")
     var put_Original: GotBodyFn[String] = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   /* Inlined got.got.GotInstance<got.got.GotFormFn<null>> */
@@ -277,10 +334,10 @@ object anon {
     @JSName("put")
     var put_Original: GotFormFn[Null] = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   /* Inlined got.got.GotInstance<got.got.GotFormFn<string>> */
@@ -346,18 +403,18 @@ object anon {
     @JSName("put")
     var put_Original: GotFormFn[String] = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   /* Inlined got.got.GotInstance<got.got.GotJSONFn> */
   @js.native
   trait GotInstanceGotJSONFn extends StObject {
     
-    def apply(url: GotUrl): GotPromise[_] = js.native
-    def apply(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def apply(url: GotUrl): GotPromise[js.Any] = js.native
+    def apply(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     
     var CancelError: Instantiable0[typings.got.mod.CancelError] = js.native
     
@@ -375,8 +432,8 @@ object anon {
     
     var UnsupportedProtocolError: Instantiable0[typings.got.mod.UnsupportedProtocolError] = js.native
     
-    def delete(url: GotUrl): GotPromise[_] = js.native
-    def delete(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def delete(url: GotUrl): GotPromise[js.Any] = js.native
+    def delete(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("delete")
     var delete_Original: GotJSONFn = js.native
     
@@ -390,158 +447,157 @@ object anon {
     @JSName("extend")
     var extend_Original: GotExtend = js.native
     
-    def get(url: GotUrl): GotPromise[_] = js.native
-    def get(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def get(url: GotUrl): GotPromise[js.Any] = js.native
+    def get(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("get")
     var get_Original: GotJSONFn = js.native
     
-    def head(url: GotUrl): GotPromise[_] = js.native
-    def head(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def head(url: GotUrl): GotPromise[js.Any] = js.native
+    def head(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("head")
     var head_Original: GotJSONFn = js.native
     
-    def patch(url: GotUrl): GotPromise[_] = js.native
-    def patch(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def patch(url: GotUrl): GotPromise[js.Any] = js.native
+    def patch(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("patch")
     var patch_Original: GotJSONFn = js.native
     
-    def post(url: GotUrl): GotPromise[_] = js.native
-    def post(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def post(url: GotUrl): GotPromise[js.Any] = js.native
+    def post(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("post")
     var post_Original: GotJSONFn = js.native
     
-    def put(url: GotUrl): GotPromise[_] = js.native
-    def put(url: GotUrl, options: PartialGotJSONOptions): GotPromise[_] = js.native
+    def put(url: GotUrl): GotPromise[js.Any] = js.native
+    def put(url: GotUrl, options: PartialGotJSONOptions): GotPromise[js.Any] = js.native
     @JSName("put")
     var put_Original: GotJSONFn = js.native
     
-    def stream(url: GotUrl): GotEmitter with Duplex = js.native
-    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def stream(url: GotUrl): GotEmitter & Duplex = js.native
+    def stream(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex = js.native
     @JSName("stream")
-    var stream_Original: GotStreamFn with Recordgetpostputpatchhead = js.native
+    var stream_Original: GotStreamFn & Recordgetpostputpatchhead = js.native
   }
   
   /* Inlined std.Partial<got.got.GotFormOptions<null>> */
-  @js.native
   trait PartialGotFormOptionsnull extends StObject {
     
-    var _defaultAgent: js.UndefOr[Agent] = js.native
+    var _defaultAgent: js.UndefOr[Agent] = js.undefined
     
-    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.native
+    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.undefined
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[Record[String, _]] = js.native
+    var body: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var cache: js.UndefOr[Cache] = js.native
+    var cache: js.UndefOr[Cache] = js.undefined
     
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
-    var cookieJar: js.UndefOr[CookieJar] = js.native
+    var cookieJar: js.UndefOr[CookieJar] = js.undefined
     
     var createConnection: js.UndefOr[
         js.Function2[
-          /* options */ ClientRequestArgs, 
+          /* options */ this.type, 
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var decompress: js.UndefOr[Boolean] = js.native
+    var decompress: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | String] = js.native
+    var defaultPort: js.UndefOr[Double | String] = js.undefined
     
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[Null] = js.native
+    var encoding: js.UndefOr[Null] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[`true`] = js.native
+    var form: js.UndefOr[`true`] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var hooks: js.UndefOr[Hooks[GotFormOptions[Null], Record[String, _]]] = js.native
+    var hooks: js.UndefOr[Hooks[GotFormOptions[Null], Record[String, js.Any]]] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
-    var port: js.UndefOr[Double | String | Null] = js.native
+    var port: js.UndefOr[Double | String | Null] = js.undefined
     
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[(Record[String, _]) | URLSearchParams | String] = js.native
+    var query: js.UndefOr[(Record[String, js.Any]) | URLSearchParams | String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[RequestFunction] = js.native
+    var request: js.UndefOr[RequestFunction] = js.undefined
     
-    var retry: js.UndefOr[Double | RetryOptions] = js.native
+    var retry: js.UndefOr[Double | RetryOptions] = js.undefined
     
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var throwHttpErrors: js.UndefOr[Boolean] = js.native
+    var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
     
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
     
-    var timeout: js.UndefOr[Double | TimeoutOptions] = js.native
+    var timeout: js.UndefOr[Double | TimeoutOptions] = js.undefined
     
-    var useElectronNet: js.UndefOr[Boolean] = js.native
+    var useElectronNet: js.UndefOr[Boolean] = js.undefined
   }
   object PartialGotFormOptionsnull {
     
@@ -576,7 +632,7 @@ object anon {
       def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       @scala.inline
-      def setBody(value: Record[String, _]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -625,7 +681,7 @@ object anon {
       
       @scala.inline
       def setCreateConnection(
-        value: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (PartialGotFormOptionsnull, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -695,7 +751,7 @@ object anon {
       def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
       
       @scala.inline
-      def setHooks(value: Hooks[GotFormOptions[Null], Record[String, _]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      def setHooks(value: Hooks[GotFormOptions[Null], Record[String, js.Any]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
@@ -818,7 +874,7 @@ object anon {
       def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       @scala.inline
-      def setQuery(value: (Record[String, _]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -922,126 +978,125 @@ object anon {
   }
   
   /* Inlined std.Partial<got.got.GotFormOptions<string>> */
-  @js.native
   trait PartialGotFormOptionsstri extends StObject {
     
-    var _defaultAgent: js.UndefOr[Agent] = js.native
+    var _defaultAgent: js.UndefOr[Agent] = js.undefined
     
-    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.native
+    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.undefined
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[Record[String, _]] = js.native
+    var body: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var cache: js.UndefOr[Cache] = js.native
+    var cache: js.UndefOr[Cache] = js.undefined
     
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
-    var cookieJar: js.UndefOr[CookieJar] = js.native
+    var cookieJar: js.UndefOr[CookieJar] = js.undefined
     
     var createConnection: js.UndefOr[
         js.Function2[
-          /* options */ ClientRequestArgs, 
+          /* options */ this.type, 
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var decompress: js.UndefOr[Boolean] = js.native
+    var decompress: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | String] = js.native
+    var defaultPort: js.UndefOr[Double | String] = js.undefined
     
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[`true`] = js.native
+    var form: js.UndefOr[`true`] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var hooks: js.UndefOr[Hooks[GotFormOptions[String], Record[String, _]]] = js.native
+    var hooks: js.UndefOr[Hooks[GotFormOptions[String], Record[String, js.Any]]] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
-    var port: js.UndefOr[Double | String | Null] = js.native
+    var port: js.UndefOr[Double | String | Null] = js.undefined
     
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[(Record[String, _]) | URLSearchParams | String] = js.native
+    var query: js.UndefOr[(Record[String, js.Any]) | URLSearchParams | String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[RequestFunction] = js.native
+    var request: js.UndefOr[RequestFunction] = js.undefined
     
-    var retry: js.UndefOr[Double | RetryOptions] = js.native
+    var retry: js.UndefOr[Double | RetryOptions] = js.undefined
     
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var throwHttpErrors: js.UndefOr[Boolean] = js.native
+    var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
     
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
     
-    var timeout: js.UndefOr[Double | TimeoutOptions] = js.native
+    var timeout: js.UndefOr[Double | TimeoutOptions] = js.undefined
     
-    var useElectronNet: js.UndefOr[Boolean] = js.native
+    var useElectronNet: js.UndefOr[Boolean] = js.undefined
   }
   object PartialGotFormOptionsstri {
     
@@ -1076,7 +1131,7 @@ object anon {
       def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
       @scala.inline
-      def setBody(value: Record[String, _]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -1125,7 +1180,7 @@ object anon {
       
       @scala.inline
       def setCreateConnection(
-        value: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (PartialGotFormOptionsstri, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -1201,7 +1256,7 @@ object anon {
       def setHonorCipherOrderUndefined: Self = StObject.set(x, "honorCipherOrder", js.undefined)
       
       @scala.inline
-      def setHooks(value: Hooks[GotFormOptions[String], Record[String, _]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      def setHooks(value: Hooks[GotFormOptions[String], Record[String, js.Any]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
@@ -1324,7 +1379,7 @@ object anon {
       def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       @scala.inline
-      def setQuery(value: (Record[String, _]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -1428,126 +1483,125 @@ object anon {
   }
   
   /* Inlined std.Partial<got.got.GotJSONOptions> */
-  @js.native
   trait PartialGotJSONOptions extends StObject {
     
-    var _defaultAgent: js.UndefOr[Agent] = js.native
+    var _defaultAgent: js.UndefOr[Agent] = js.undefined
     
-    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.native
+    var agent: js.UndefOr[Agent | Boolean | AgentOptions] = js.undefined
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[js.Object] = js.native
+    var body: js.UndefOr[js.Object] = js.undefined
     
-    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var cache: js.UndefOr[Cache] = js.native
+    var cache: js.UndefOr[Cache] = js.undefined
     
-    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var clientCertEngine: js.UndefOr[String] = js.native
+    var clientCertEngine: js.UndefOr[String] = js.undefined
     
-    var cookieJar: js.UndefOr[CookieJar] = js.native
+    var cookieJar: js.UndefOr[CookieJar] = js.undefined
     
     var createConnection: js.UndefOr[
         js.Function2[
-          /* options */ ClientRequestArgs, 
+          /* options */ this.type, 
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+    var crl: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
-    var decompress: js.UndefOr[Boolean] = js.native
+    var decompress: js.UndefOr[Boolean] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | String] = js.native
+    var defaultPort: js.UndefOr[Double | String] = js.undefined
     
-    var dhparam: js.UndefOr[String | Buffer] = js.native
+    var dhparam: js.UndefOr[String | Buffer] = js.undefined
     
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[Boolean] = js.native
+    var form: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var hooks: js.UndefOr[Hooks[GotJSONOptions, js.Object]] = js.native
+    var hooks: js.UndefOr[Hooks[GotJSONOptions, js.Object]] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var json: js.UndefOr[`true`] = js.native
+    var json: js.UndefOr[`true`] = js.undefined
     
-    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.native
+    var key: js.UndefOr[String | Buffer | (js.Array[Buffer | KeyObject])] = js.undefined
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var maxVersion: js.UndefOr[SecureVersion] = js.native
+    var maxVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var minVersion: js.UndefOr[SecureVersion] = js.native
+    var minVersion: js.UndefOr[SecureVersion] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | PxfObject])] = js.undefined
     
-    var port: js.UndefOr[Double | String | Null] = js.native
+    var port: js.UndefOr[Double | String | Null] = js.undefined
     
-    var privateKeyEngine: js.UndefOr[String] = js.native
+    var privateKeyEngine: js.UndefOr[String] = js.undefined
     
-    var privateKeyIdentifier: js.UndefOr[String] = js.native
+    var privateKeyIdentifier: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[(Record[String, _]) | URLSearchParams | String] = js.native
+    var query: js.UndefOr[(Record[String, js.Any]) | URLSearchParams | String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[RequestFunction] = js.native
+    var request: js.UndefOr[RequestFunction] = js.undefined
     
-    var retry: js.UndefOr[Double | RetryOptions] = js.native
+    var retry: js.UndefOr[Double | RetryOptions] = js.undefined
     
-    var secureOptions: js.UndefOr[Double] = js.native
+    var secureOptions: js.UndefOr[Double] = js.undefined
     
-    var secureProtocol: js.UndefOr[String] = js.native
+    var secureProtocol: js.UndefOr[String] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var sessionIdContext: js.UndefOr[String] = js.native
+    var sessionIdContext: js.UndefOr[String] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var sigalgs: js.UndefOr[String] = js.native
+    var sigalgs: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var throwHttpErrors: js.UndefOr[Boolean] = js.native
+    var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
     
-    var ticketKeys: js.UndefOr[Buffer] = js.native
+    var ticketKeys: js.UndefOr[Buffer] = js.undefined
     
-    var timeout: js.UndefOr[Double | TimeoutOptions] = js.native
+    var timeout: js.UndefOr[Double | TimeoutOptions] = js.undefined
     
-    var useElectronNet: js.UndefOr[Boolean] = js.native
+    var useElectronNet: js.UndefOr[Boolean] = js.undefined
   }
   object PartialGotJSONOptions {
     
@@ -1631,7 +1685,7 @@ object anon {
       
       @scala.inline
       def setCreateConnection(
-        value: (/* options */ ClientRequestArgs, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        value: (PartialGotJSONOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
       ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -1833,7 +1887,7 @@ object anon {
       def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
       @scala.inline
-      def setQuery(value: (Record[String, _]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -1937,37 +1991,85 @@ object anon {
   }
   
   /* Inlined std.Record<'get' | 'post' | 'put' | 'patch' | 'head' | 'delete', got.got.GotStreamFn> */
-  @js.native
   trait Recordgetpostputpatchhead extends StObject {
     
-    def delete(url: GotUrl): GotEmitter with Duplex = js.native
-    def delete(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def delete(url: GotUrl): GotEmitter & Duplex
+    def delete(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("delete")
-    var delete_Original: GotStreamFn = js.native
+    var delete_Original: GotStreamFn
     
-    def get(url: GotUrl): GotEmitter with Duplex = js.native
-    def get(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def get(url: GotUrl): GotEmitter & Duplex
+    def get(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("get")
-    var get_Original: GotStreamFn = js.native
+    var get_Original: GotStreamFn
     
-    def head(url: GotUrl): GotEmitter with Duplex = js.native
-    def head(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def head(url: GotUrl): GotEmitter & Duplex
+    def head(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("head")
-    var head_Original: GotStreamFn = js.native
+    var head_Original: GotStreamFn
     
-    def patch(url: GotUrl): GotEmitter with Duplex = js.native
-    def patch(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def patch(url: GotUrl): GotEmitter & Duplex
+    def patch(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("patch")
-    var patch_Original: GotStreamFn = js.native
+    var patch_Original: GotStreamFn
     
-    def post(url: GotUrl): GotEmitter with Duplex = js.native
-    def post(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def post(url: GotUrl): GotEmitter & Duplex
+    def post(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("post")
-    var post_Original: GotStreamFn = js.native
+    var post_Original: GotStreamFn
     
-    def put(url: GotUrl): GotEmitter with Duplex = js.native
-    def put(url: GotUrl, options: GotOptions[String | Null]): GotEmitter with Duplex = js.native
+    def put(url: GotUrl): GotEmitter & Duplex
+    def put(url: GotUrl, options: GotOptions[String | Null]): GotEmitter & Duplex
     @JSName("put")
-    var put_Original: GotStreamFn = js.native
+    var put_Original: GotStreamFn
+  }
+  object Recordgetpostputpatchhead {
+    
+    @scala.inline
+    def apply(
+      delete: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex,
+      get: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex,
+      head: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex,
+      patch: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex,
+      post: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex,
+      put: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+    ): Recordgetpostputpatchhead = {
+      val __obj = js.Dynamic.literal(delete = js.Any.fromFunction2(delete), get = js.Any.fromFunction2(get), head = js.Any.fromFunction2(head), patch = js.Any.fromFunction2(patch), post = js.Any.fromFunction2(post), put = js.Any.fromFunction2(put))
+      __obj.asInstanceOf[Recordgetpostputpatchhead]
+    }
+    
+    @scala.inline
+    implicit class RecordgetpostputpatchheadMutableBuilder[Self <: Recordgetpostputpatchhead] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDelete(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGet(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setHead(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "head", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPatch(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPost(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "post", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setPut(
+        value: (/* url */ GotUrl, /* options */ js.UndefOr[GotOptions[String | Null]]) => GotEmitter & Duplex
+      ): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+    }
   }
 }

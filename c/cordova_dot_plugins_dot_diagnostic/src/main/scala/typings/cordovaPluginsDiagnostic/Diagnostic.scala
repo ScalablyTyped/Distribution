@@ -13,7 +13,6 @@ import typings.cordovaPluginsDiagnostic.anon.POWEREDOFF
 import typings.cordovaPluginsDiagnostic.anon.POWEREDON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -456,43 +455,9 @@ trait Diagnostic extends StObject {
     * @param externalStorageOrParams
     */
   def isCameraAvailable(): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    externalStorageOrParams: js.Object
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    externalStorageOrParams: Boolean
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ String, Unit]
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ String, Unit],
-    externalStorageOrParams: js.Object
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* error */ String, Unit],
-    externalStorageOrParams: Boolean
-  ): Unit = js.native
   def isCameraAvailable(successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object]): Unit = js.native
   def isCameraAvailable(
     successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
-    errorCallback: js.UndefOr[scala.Nothing],
-    externalStorageOrParams: js.Object
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
-    errorCallback: js.UndefOr[scala.Nothing],
-    externalStorageOrParams: Boolean
-  ): Unit = js.native
-  def isCameraAvailable(
-    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
     errorCallback: js.Function1[/* error */ String, Unit]
   ): Unit = js.native
   def isCameraAvailable(
@@ -505,6 +470,29 @@ trait Diagnostic extends StObject {
     errorCallback: js.Function1[/* error */ String, Unit],
     externalStorageOrParams: Boolean
   ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
+    errorCallback: Unit,
+    externalStorageOrParams: js.Object
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: js.Function1[/* available */ Boolean, Unit | js.Object],
+    errorCallback: Unit,
+    externalStorageOrParams: Boolean
+  ): Unit = js.native
+  def isCameraAvailable(successCallbackOrParams: Unit, errorCallback: js.Function1[/* error */ String, Unit]): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: Unit,
+    errorCallback: js.Function1[/* error */ String, Unit],
+    externalStorageOrParams: js.Object
+  ): Unit = js.native
+  def isCameraAvailable(
+    successCallbackOrParams: Unit,
+    errorCallback: js.Function1[/* error */ String, Unit],
+    externalStorageOrParams: Boolean
+  ): Unit = js.native
+  def isCameraAvailable(successCallbackOrParams: Unit, errorCallback: Unit, externalStorageOrParams: js.Object): Unit = js.native
+  def isCameraAvailable(successCallbackOrParams: Unit, errorCallback: Unit, externalStorageOrParams: Boolean): Unit = js.native
   
   /**
     * ANDROID and iOS ONLY

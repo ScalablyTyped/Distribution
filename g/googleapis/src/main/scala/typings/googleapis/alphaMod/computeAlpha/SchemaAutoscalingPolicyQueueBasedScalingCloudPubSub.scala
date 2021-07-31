@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration parameters for scaling based on Cloud Pub/Sub subscription
   * queue.
   */
-@js.native
 trait SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub extends StObject {
     * pull configuration. The subscription must belong to the same project as
     * the Autoscaler.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /**
     * Cloud Pub/Sub topic used for scaling. Provide the partial URL or partial
     * URL (starting with projects/) or just the topic name. The topic must
     * belong to the same project as the Autoscaler resource.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub {
   

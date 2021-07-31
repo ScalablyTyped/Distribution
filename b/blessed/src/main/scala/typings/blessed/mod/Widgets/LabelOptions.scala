@@ -3,15 +3,13 @@ package typings.blessed.mod.Widgets
 import typings.blessed.mod.Widgets.Types.TAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelOptions extends StObject {
   
-  var side: TAlign = js.native
+  var side: TAlign
   
-  var text: String = js.native
+  var text: String
 }
 object LabelOptions {
   

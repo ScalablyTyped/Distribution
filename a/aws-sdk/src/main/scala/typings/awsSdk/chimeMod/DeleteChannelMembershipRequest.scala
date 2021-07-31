@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteChannelMembershipRequest extends StObject {
   
   /**
     * The ARN of the channel from which you want to remove the user.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The ARN of the member that you're removing from the channel.
     */
-  var MemberArn: ChimeArn = js.native
+  var MemberArn: ChimeArn
 }
 object DeleteChannelMembershipRequest {
   

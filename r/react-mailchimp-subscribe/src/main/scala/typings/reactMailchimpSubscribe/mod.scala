@@ -8,7 +8,6 @@ import typings.reactMailchimpSubscribe.reactMailchimpSubscribeStrings.success
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,13 @@ object mod {
   class default[FormFields] ()
     extends Component[Props[FormFields], js.Object, js.Any]
   
-  @js.native
-  trait ClassicFormFields extends NameFormFields {
+  trait ClassicFormFields
+    extends StObject
+       with NameFormFields {
     
-    var `BIRTHDAY[day]`: Double = js.native
+    var `BIRTHDAY[day]`: Double
     
-    var `BIRTHDAY[month]`: Double = js.native
+    var `BIRTHDAY[month]`: Double
   }
   object ClassicFormFields {
     
@@ -48,10 +48,9 @@ object mod {
   
   type DefaultFormFields = EmailFormFields
   
-  @js.native
   trait EmailFormFields extends StObject {
     
-    var EMAIL: String = js.native
+    var EMAIL: String
   }
   object EmailFormFields {
     
@@ -69,18 +68,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait ErrorResponseArgs extends ResponseArgs {
+  trait ErrorResponseArgs
+    extends StObject
+       with ResponseArgs {
     
-    var message: String | Error = js.native
+    var message: String | Error
     
-    var status: error = js.native
+    var status: error
   }
   object ErrorResponseArgs {
     
     @scala.inline
-    def apply(message: String | Error, status: error): ErrorResponseArgs = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(message: String | Error): ErrorResponseArgs = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[ErrorResponseArgs]
     }
     
@@ -95,16 +95,17 @@ object mod {
     }
   }
   
-  type FormHooks[FormFields] = SubscribeArg[FormFields] with (ErrorResponseArgs | SuccessResponseArgs | PendingArgs)
+  type FormHooks[FormFields] = SubscribeArg[FormFields] & (ErrorResponseArgs | SuccessResponseArgs | PendingArgs)
   
   type MailchimpSubscribe[FormFields] = Component[Props[FormFields], js.Object, js.Any]
   
-  @js.native
-  trait NameFormFields extends EmailFormFields {
+  trait NameFormFields
+    extends StObject
+       with EmailFormFields {
     
-    var FNAME: String = js.native
+    var FNAME: String
     
-    var LNAME: String = js.native
+    var LNAME: String
   }
   object NameFormFields {
     
@@ -125,18 +126,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PendingArgs extends StObject {
     
-    var message: Null = js.native
+    var message: Null
     
-    var status: sending | Null = js.native
+    var status: sending | Null
   }
   object PendingArgs {
     
     @scala.inline
     def apply(message: Null): PendingArgs = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[PendingArgs]
     }
     
@@ -154,12 +154,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Props[FormFields] extends StObject {
     
-    var render: js.UndefOr[js.Function1[/* hooks */ FormHooks[FormFields], ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* hooks */ FormHooks[FormFields], ReactNode]] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Props {
     
@@ -170,7 +169,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], FormFields] (val x: Self with Props[FormFields]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], FormFields] (val x: Self & Props[FormFields]) extends AnyVal {
       
       @scala.inline
       def setRender(value: /* hooks */ FormHooks[FormFields] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
@@ -191,22 +190,21 @@ object mod {
   object ResponseArgs {
     
     @scala.inline
-    def ErrorResponseArgs(message: String | Error, status: error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def ErrorResponseArgs(message: String | Error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[typings.reactMailchimpSubscribe.mod.ErrorResponseArgs]
     }
     
     @scala.inline
-    def SuccessResponseArgs(message: String, status: success): typings.reactMailchimpSubscribe.mod.SuccessResponseArgs = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def SuccessResponseArgs(message: String): typings.reactMailchimpSubscribe.mod.SuccessResponseArgs = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[typings.reactMailchimpSubscribe.mod.SuccessResponseArgs]
     }
   }
   
-  @js.native
   trait SubscribeArg[FormFields] extends StObject {
     
-    def subscribe(data: FormFields): Unit = js.native
+    def subscribe(data: FormFields): Unit
   }
   object SubscribeArg {
     
@@ -217,25 +215,26 @@ object mod {
     }
     
     @scala.inline
-    implicit class SubscribeArgMutableBuilder[Self <: SubscribeArg[_], FormFields] (val x: Self with SubscribeArg[FormFields]) extends AnyVal {
+    implicit class SubscribeArgMutableBuilder[Self <: SubscribeArg[?], FormFields] (val x: Self & SubscribeArg[FormFields]) extends AnyVal {
       
       @scala.inline
       def setSubscribe(value: FormFields => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
-  trait SuccessResponseArgs extends ResponseArgs {
+  trait SuccessResponseArgs
+    extends StObject
+       with ResponseArgs {
     
-    var message: String = js.native
+    var message: String
     
-    var status: success = js.native
+    var status: success
   }
   object SuccessResponseArgs {
     
     @scala.inline
-    def apply(message: String, status: success): SuccessResponseArgs = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(message: String): SuccessResponseArgs = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[SuccessResponseArgs]
     }
     

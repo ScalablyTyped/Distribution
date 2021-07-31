@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobAppFileSystemRule extends Win32LobAppRule {
+trait Win32LobAppFileSystemRule
+  extends StObject
+     with Win32LobAppRule {
   
   // A value indicating whether to expand environment variables in the 32-bit context on 64-bit systems.
-  var check32BitOn64System: js.UndefOr[Boolean] = js.native
+  var check32BitOn64System: js.UndefOr[Boolean] = js.undefined
   
   // The file or folder comparison value.
-  var comparisonValue: js.UndefOr[NullableOption[String]] = js.native
+  var comparisonValue: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The file or folder name to look up.
-  var fileOrFolderName: js.UndefOr[NullableOption[String]] = js.native
+  var fileOrFolderName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The file system operation type. Possible values are: notConfigured, exists, modifiedDate, createdDate, version,
     * sizeInMB.
     */
-  var operationType: js.UndefOr[Win32LobAppFileSystemOperationType] = js.native
+  var operationType: js.UndefOr[Win32LobAppFileSystemOperationType] = js.undefined
   
   /**
     * The operator for file or folder detection. Possible values are: notConfigured, equal, notEqual, greaterThan,
     * greaterThanOrEqual, lessThan, lessThanOrEqual.
     */
-  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.native
+  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.undefined
   
   // The file or folder path to look up.
-  var path: js.UndefOr[NullableOption[String]] = js.native
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Win32LobAppFileSystemRule {
   

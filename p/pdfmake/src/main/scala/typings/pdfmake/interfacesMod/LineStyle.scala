@@ -3,13 +3,11 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineStyle extends StObject {
   
-  var dash: js.UndefOr[Length] = js.native
+  var dash: js.UndefOr[Length] = js.undefined
 }
 object LineStyle {
   

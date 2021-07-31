@@ -4,21 +4,20 @@ import typings.csvParse.es5Mod.Options
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncMod {
   
+  @scala.inline
+  def apply(input: String): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(input: Buffer, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("csv-parse/lib/es5/sync", JSImport.Namespace)
   @js.native
-  def apply(input: String): js.Any = js.native
-  @JSImport("csv-parse/lib/es5/sync", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Any = js.native
-  @JSImport("csv-parse/lib/es5/sync", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): js.Any = js.native
-  @JSImport("csv-parse/lib/es5/sync", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, options: Options): js.Any = js.native
+  val ^ : js.Any = js.native
 }

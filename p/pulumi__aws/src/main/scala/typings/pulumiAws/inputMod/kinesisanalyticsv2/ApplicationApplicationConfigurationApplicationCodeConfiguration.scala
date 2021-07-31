@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationApplicationCodeConfiguration extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait ApplicationApplicationConfigurationApplicationCodeConfiguration extends St
     */
   var codeContent: js.UndefOr[
     Input[ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies whether the code content is in text or zip format. Valid values: `PLAINTEXT`, `ZIPFILE`.
     */
-  var codeContentType: Input[String] = js.native
+  var codeContentType: Input[String]
 }
 object ApplicationApplicationConfigurationApplicationCodeConfiguration {
   

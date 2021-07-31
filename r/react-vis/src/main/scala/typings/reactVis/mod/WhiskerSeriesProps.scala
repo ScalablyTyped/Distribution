@@ -2,13 +2,13 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WhiskerSeriesProps extends AbstractSeriesProps[WhiskerSeriesPoint] {
+trait WhiskerSeriesProps
+  extends StObject
+     with AbstractSeriesProps[WhiskerSeriesPoint] {
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object WhiskerSeriesProps {
   

@@ -12,7 +12,7 @@ AngularJS directive which takes JSON representing a form and renders to HTML
 | Keywords           | angular, forms, angular-formly, formly, angularjs, angular forms, json forms, form library |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 337882 |
+| # downloads        | 321907 |
 | # stars            | 6 |
 
 ## Links

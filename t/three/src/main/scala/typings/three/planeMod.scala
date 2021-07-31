@@ -9,7 +9,6 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planeMod {
@@ -18,7 +17,7 @@ object planeMod {
   @js.native
   class Plane () extends StObject {
     def this(normal: Vector3) = this()
-    def this(normal: js.UndefOr[scala.Nothing], constant: Double) = this()
+    def this(normal: Unit, constant: Double) = this()
     def this(normal: Vector3, constant: Double) = this()
     
     def applyMatrix4(matrix: Matrix4): Plane = js.native

@@ -3,15 +3,13 @@ package typings.googleAuthLibrary.oauth2clientMod
 import typings.gaxios.commonMod.GaxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IapPublicKeysResponse extends StObject {
   
-  var pubkeys: PublicKeys = js.native
+  var pubkeys: PublicKeys
   
-  var res: js.UndefOr[GaxiosResponse[Unit] | Null] = js.native
+  var res: js.UndefOr[GaxiosResponse[Unit] | Null] = js.undefined
 }
 object IapPublicKeysResponse {
   

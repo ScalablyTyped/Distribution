@@ -3,20 +3,19 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.InterfaceExtends
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterfaceExtends_
-  extends Node
+  extends StObject
+     with Node
      with Flow {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterInstantiation_ = js.native
+  var typeParameters: TypeParameterInstantiation_
   
   @JSName("type")
-  var type_InterfaceExtends_ : InterfaceExtends = js.native
+  var type_InterfaceExtends_ : InterfaceExtends
 }
 object InterfaceExtends_ {
   
@@ -26,11 +25,10 @@ object InterfaceExtends_ {
     id: Identifier_,
     loc: SourceLocation,
     start: Double,
-    `type`: InterfaceExtends,
     typeParameters: TypeParameterInstantiation_
   ): InterfaceExtends_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InterfaceExtends")
     __obj.asInstanceOf[InterfaceExtends_]
   }
   

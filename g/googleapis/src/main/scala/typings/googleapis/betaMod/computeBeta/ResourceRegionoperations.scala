@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Regionoperations")
@@ -88,7 +87,7 @@ class ResourceRegionoperations protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRegionoperationsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceRegionoperationsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -178,7 +177,7 @@ class ResourceRegionoperations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOperation] = js.native
   def get(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceRegionoperationsGet): GaxiosPromise[SchemaOperation] = js.native
   def get(params: ParamsResourceRegionoperationsGet, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def get(
@@ -282,7 +281,7 @@ class ResourceRegionoperations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaOperationList] = js.native
   def list(callback: BodyResponseCallback[SchemaOperationList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperationList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperationList] = js.native
   def list(params: ParamsResourceRegionoperationsList): GaxiosPromise[SchemaOperationList] = js.native
   def list(params: ParamsResourceRegionoperationsList, callback: BodyResponseCallback[SchemaOperationList]): Unit = js.native
   def list(

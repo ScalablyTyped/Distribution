@@ -2,15 +2,13 @@ package typings.venn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Setid extends StObject {
     
-    var setid: String = js.native
+    var setid: String
   }
   object Setid {
     

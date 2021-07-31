@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a new conditional format rule at the given index. All subsequent
   * rules&#39; indexes are incremented.
   */
-@js.native
 trait SchemaAddConditionalFormatRuleRequest extends StObject {
   
   /**
     * The zero-based index where the rule should be inserted.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The rule to add.
     */
-  var rule: js.UndefOr[SchemaConditionalFormatRule] = js.native
+  var rule: js.UndefOr[SchemaConditionalFormatRule] = js.undefined
 }
 object SchemaAddConditionalFormatRuleRequest {
   

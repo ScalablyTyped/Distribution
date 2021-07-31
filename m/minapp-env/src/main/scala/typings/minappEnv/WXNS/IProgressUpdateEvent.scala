@@ -2,17 +2,15 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProgressUpdateEvent extends StObject {
   
-  var progress: Double = js.native
+  var progress: Double
   
-  var totalBytesExpectedToWrite: Double = js.native
+  var totalBytesExpectedToWrite: Double
   
-  var totalBytesWritten: Double = js.native
+  var totalBytesWritten: Double
 }
 object IProgressUpdateEvent {
   

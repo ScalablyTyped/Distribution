@@ -10,9 +10,9 @@ Contract abstraction meta-class for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/contracts |
 | Keywords           | Ethereum, ethers |
-| # releases         | 45 |
-| # dependents       | 36 |
-| # downloads        | 587822 |
+| # releases         | 50 |
+| # dependents       | 56 |
+| # downloads        | 1352522 |
 | # stars            | 0 |
 
 ## Links

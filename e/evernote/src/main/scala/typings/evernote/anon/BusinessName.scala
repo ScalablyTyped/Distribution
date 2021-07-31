@@ -4,21 +4,19 @@ import typings.evernote.mod.Types.BusinessUserRole
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessName extends StObject {
   
-  var businessId: js.UndefOr[Double] = js.native
+  var businessId: js.UndefOr[Double] = js.undefined
   
-  var businessName: js.UndefOr[String] = js.native
+  var businessName: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[BusinessUserRole] = js.native
+  var role: js.UndefOr[BusinessUserRole] = js.undefined
   
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
 }
 object BusinessName {
   

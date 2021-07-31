@@ -4,33 +4,31 @@ import typings.node.streamMod.Stream
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Options {
   
-  @js.native
   trait Analyze extends StObject {
     
     // Detects if faces are present.If present, generate coordinates, gender and age.
-    var Adult: js.UndefOr[Boolean] = js.native
+    var Adult: js.UndefOr[Boolean] = js.undefined
     
     // Detects if image is pornographic in nature(nudity or sex act).Sexually suggestive content is also detected.
-    var Categories: js.UndefOr[Boolean] = js.native
+    var Categories: js.UndefOr[Boolean] = js.undefined
     
     // Detects if image is clipart or a line drawing.
-    var Color: js.UndefOr[Boolean] = js.native
+    var Color: js.UndefOr[Boolean] = js.undefined
     
     // Determines the accent color, dominant color, if image is black& white.
-    var Faces: js.UndefOr[Boolean] = js.native
+    var Faces: js.UndefOr[Boolean] = js.undefined
     
     // Path to image to be analyzed
-    var ImageType: js.UndefOr[Boolean] = js.native
+    var ImageType: js.UndefOr[Boolean] = js.undefined
     
     // Url to image to be analyzed
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Analyze {
     
@@ -87,28 +85,27 @@ object Options {
     }
   }
   
-  @js.native
   trait Detect extends StObject {
     
     // Analyze face landmarks?
-    var analyzesAge: js.UndefOr[Boolean] = js.native
+    var analyzesAge: js.UndefOr[Boolean] = js.undefined
     
     // Stream of an image to be used
-    var analyzesFaceLandmarks: js.UndefOr[Boolean] = js.native
+    var analyzesFaceLandmarks: js.UndefOr[Boolean] = js.undefined
     
     // Analyze age?
-    var analyzesGender: js.UndefOr[Boolean] = js.native
+    var analyzesGender: js.UndefOr[Boolean] = js.undefined
     
     // Analyze gender?
-    var analyzesHeadPose: js.UndefOr[Boolean] = js.native
+    var analyzesHeadPose: js.UndefOr[Boolean] = js.undefined
     
     // URL to image to be used
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     // Path to image to be used
-    var stream: js.UndefOr[Stream] = js.native
+    var stream: js.UndefOr[Stream] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Detect {
     
@@ -165,12 +162,11 @@ object Options {
     }
   }
   
-  @js.native
   trait Identify extends StObject {
     
-    var maxNumOfCandidatesReturned: Double = js.native
+    var maxNumOfCandidatesReturned: Double
     
-    var personGroupId: String = js.native
+    var personGroupId: String
   }
   object Identify {
     
@@ -191,19 +187,18 @@ object Options {
     }
   }
   
-  @js.native
   trait Ocr extends StObject {
     
     //BCP - 47 language code of the text to be detected in the image.Default value is "unk", then the service will auto detect the language of the text in the image.
-    var detectOrientation: js.UndefOr[Boolean] = js.native
+    var detectOrientation: js.UndefOr[Boolean] = js.undefined
     
     // Path to image to be analyzed
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     // URL to image to be analyzed
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Ocr {
     
@@ -242,25 +237,24 @@ object Options {
     }
   }
   
-  @js.native
   trait Thumbnail extends StObject {
     
     // Width of the thumb in pixels
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     // Url to image to be thumbnailed
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     // Should SmartCropping be enabled?
-    var pipe: js.UndefOr[Writable] = js.native
+    var pipe: js.UndefOr[Writable] = js.undefined
     
     // Height of the thumb in pixels
-    var smartCropping: js.UndefOr[Boolean] = js.native
+    var smartCropping: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     // Path to image to be thumbnailed
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Thumbnail {
     

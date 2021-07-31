@@ -2,10 +2,8 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchGlobals extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait NightwatchGlobals extends StObject {
     * it's being used in waitFor commands and expect assertions
     * @default true
     */
-  var abortOnAssertionFailure: js.UndefOr[Boolean] = js.native
+  var abortOnAssertionFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * controls the timeout time for async hooks. Expects the done() callback to be invoked within this time
     * or an error is thrown
     * @default 10000
     */
-  var asyncHookTimeout: js.UndefOr[Double] = js.native
+  var asyncHookTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * this will cause waitFor commands on elements to throw an error if multiple
     * elements are found using the given locate strategy and selector
     * @default true
     */
-  var throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.native
+  var throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * this will overwrite the default polling interval (currently 500ms) for waitFor commands
     * and expect assertions that use retry
     * @default 300
     */
-  var waitForConditionPollInterval: js.UndefOr[Double] = js.native
+  var waitForConditionPollInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * default timeout value in milliseconds for waitFor commands and implicit waitFor value for
     * expect assertions
     * @default 5000
     */
-  var waitForConditionTimeout: js.UndefOr[Double] = js.native
+  var waitForConditionTimeout: js.UndefOr[Double] = js.undefined
 }
 object NightwatchGlobals {
   

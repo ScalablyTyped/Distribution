@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatMessageReaction extends StObject {
   
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
-  var reactionType: js.UndefOr[String] = js.native
+  var reactionType: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[IdentitySet] = js.native
+  var user: js.UndefOr[IdentitySet] = js.undefined
 }
 object ChatMessageReaction {
   

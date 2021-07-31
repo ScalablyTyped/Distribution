@@ -2,15 +2,13 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationAction extends StObject {
   
-  var animates: js.Array[Animate] = js.native
+  var animates: js.Array[Animate]
   
-  var option: AnimationActionOption = js.native
+  var option: AnimationActionOption
 }
 object AnimationAction {
   

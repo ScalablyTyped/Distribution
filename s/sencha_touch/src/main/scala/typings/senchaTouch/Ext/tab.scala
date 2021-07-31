@@ -2,26 +2,26 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tab {
   
-  @js.native
-  trait IBar extends IToolbar {
+  trait IBar
+    extends StObject
+       with IToolbar {
     
     /** [Config Option] (Number/String/Ext.Component) */
-    var activeTab: js.UndefOr[js.Any] = js.native
+    var activeTab: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of activeTab
       * @returns Number/String/Ext.Component
       */
-    var getActiveTab: js.UndefOr[js.Function0[_]] = js.native
+    var getActiveTab: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of activeTab
       * @param activeTab Number/String/Ext.Component The new value.
       */
-    var setActiveTab: js.UndefOr[js.Function1[/* activeTab */ js.UndefOr[js.Any], Unit]] = js.native
+    var setActiveTab: js.UndefOr[js.Function1[/* activeTab */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IBar {
     
@@ -41,7 +41,7 @@ object tab {
       def setActiveTabUndefined: Self = StObject.set(x, "activeTab", js.undefined)
       
       @scala.inline
-      def setGetActiveTab(value: () => _): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
+      def setGetActiveTab(value: () => js.Any): Self = StObject.set(x, "getActiveTab", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActiveTabUndefined: Self = StObject.set(x, "getActiveTab", js.undefined)
@@ -54,8 +54,9 @@ object tab {
     }
   }
   
-  @js.native
-  trait IPanel extends IContainer {
+  trait IPanel
+    extends StObject
+       with IContainer {
     
     /** [Method] Updates this container with the new active item
       * @param tabBar Object
@@ -64,53 +65,53 @@ object tab {
       */
     var doTabChange: js.UndefOr[
         js.Function2[/* tabBar */ js.UndefOr[js.Any], /* newTab */ js.UndefOr[js.Any], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of cls
       * @returns String
       */
     @JSName("getCls")
-    var getCls_IPanel: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getCls_IPanel: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of layout
       * @returns Object
       */
-    var getLayout: js.UndefOr[js.Function0[_]] = js.native
+    var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of tabBar
       * @returns Object
       */
-    var getTabBar: js.UndefOr[js.Function0[_]] = js.native
+    var getTabBar: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of tabBarPosition
       * @returns String
       */
-    var getTabBarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getTabBarPosition: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Sets the value of cls
       * @param cls String The new value.
       */
     @JSName("setCls")
-    var setCls_IPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setCls_IPanel: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of tabBar
       * @param tabBar Object The new value.
       */
-    var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTabBar: js.UndefOr[js.Function1[/* tabBar */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of tabBarPosition
       * @param tabBarPosition String The new value.
       */
-    var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setTabBarPosition: js.UndefOr[js.Function1[/* tabBarPosition */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var tabBar: js.UndefOr[js.Any] = js.native
+    var tabBar: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var tabBarDock: js.UndefOr[Boolean] = js.native
+    var tabBarDock: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var tabBarPosition: js.UndefOr[java.lang.String] = js.native
+    var tabBarPosition: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Updates the Ui for this component and the tabBar
       * @param newUi Object
@@ -118,7 +119,7 @@ object tab {
       */
     var updateUi: js.UndefOr[
         js.Function2[/* newUi */ js.UndefOr[js.Any], /* oldUi */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IPanel {
     
@@ -144,13 +145,13 @@ object tab {
       def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
       
       @scala.inline
-      def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+      def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
       
       @scala.inline
-      def setGetTabBar(value: () => _): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
+      def setGetTabBar(value: () => js.Any): Self = StObject.set(x, "getTabBar", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTabBarPosition(value: () => java.lang.String): Self = StObject.set(x, "getTabBarPosition", js.Any.fromFunction0(value))
@@ -205,47 +206,48 @@ object tab {
     }
   }
   
-  @js.native
-  trait ITab extends IButton {
+  trait ITab
+    extends StObject
+       with IButton {
     
     /** [Config Option] (Boolean) */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var activeCls: js.UndefOr[java.lang.String] = js.native
+    var activeCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns the value of active
       * @returns Boolean
       */
-    var getActive: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of activeCls
       * @returns String
       */
-    var getActiveCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getActiveCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of title
       * @returns String
       */
-    var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getTitle: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Sets the value of active
       * @param active Boolean The new value.
       */
-    var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.native
+    var setActive: js.UndefOr[js.Function1[/* active */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of activeCls
       * @param activeCls String The new value.
       */
-    var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setActiveCls: js.UndefOr[js.Function1[/* activeCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of title
       * @param title String The new value.
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var title: js.UndefOr[java.lang.String] = js.native
+    var title: js.UndefOr[java.lang.String] = js.undefined
   }
   object ITab {
     

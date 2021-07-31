@@ -9,7 +9,6 @@ import typings.tail.tailStrings.error
 import typings.tail.tailStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,16 +20,17 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("tail", "Tail")
   @js.native
-  class TailCls protected () extends Tail {
+  class TailCls protected ()
+    extends StObject
+       with Tail {
     /** Creates a new Tail object that starts watching the specified file immediately. */
     def this(filename: String) = this()
     def this(filename: String, options: TailOptions) = this()
   }
   
-  @js.native
   trait Static extends StObject {
     
-    var Tail: TailConstructor = js.native
+    var Tail: TailConstructor
   }
   object Static {
     
@@ -67,28 +67,28 @@ object mod extends Shortcut {
   
   @js.native
   trait TailConstructor
-    extends /** Creates a new Tail object that starts watching the specified file immediately. */
+    extends StObject
+       with /** Creates a new Tail object that starts watching the specified file immediately. */
   Instantiable1[/* filename */ String, Tail]
        with Instantiable2[/* filename */ String, /* options */ TailOptions, Tail]
   
-  @js.native
   trait TailOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var flushAtEOF: js.UndefOr[Boolean] = js.native
+    var flushAtEOF: js.UndefOr[Boolean] = js.undefined
     
-    var follow: js.UndefOr[Boolean] = js.native
+    var follow: js.UndefOr[Boolean] = js.undefined
     
-    var fromBeginning: js.UndefOr[Boolean] = js.native
+    var fromBeginning: js.UndefOr[Boolean] = js.undefined
     
-    var fsWatchOptions: js.UndefOr[Record[String, _]] = js.native
+    var fsWatchOptions: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var logger: js.UndefOr[js.Any] = js.native
+    var logger: js.UndefOr[js.Any] = js.undefined
     
-    var separator: js.UndefOr[String | RegExp | Null] = js.native
+    var separator: js.UndefOr[String | RegExp | Null] = js.undefined
     
-    var useWatchFile: js.UndefOr[Boolean] = js.native
+    var useWatchFile: js.UndefOr[Boolean] = js.undefined
   }
   object TailOptions {
     
@@ -126,7 +126,7 @@ object mod extends Shortcut {
       def setFromBeginningUndefined: Self = StObject.set(x, "fromBeginning", js.undefined)
       
       @scala.inline
-      def setFsWatchOptions(value: Record[String, _]): Self = StObject.set(x, "fsWatchOptions", value.asInstanceOf[js.Any])
+      def setFsWatchOptions(value: Record[String, js.Any]): Self = StObject.set(x, "fsWatchOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFsWatchOptionsUndefined: Self = StObject.set(x, "fsWatchOptions", js.undefined)

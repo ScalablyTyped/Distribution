@@ -2,17 +2,15 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVoidedPurchasesListResponse extends StObject {
   
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
   
-  var voidedPurchases: js.UndefOr[js.Array[SchemaVoidedPurchase]] = js.native
+  var voidedPurchases: js.UndefOr[js.Array[SchemaVoidedPurchase]] = js.undefined
 }
 object SchemaVoidedPurchasesListResponse {
   

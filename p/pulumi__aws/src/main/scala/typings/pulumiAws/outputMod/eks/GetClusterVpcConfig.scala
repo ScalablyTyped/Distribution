@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClusterVpcConfig extends StObject {
   
   /**
     * The cluster security group that was created by Amazon EKS for the cluster.
     */
-  var clusterSecurityGroupId: String = js.native
+  var clusterSecurityGroupId: String
   
   /**
     * Indicates whether or not the Amazon EKS private API server endpoint is enabled.
     */
-  var endpointPrivateAccess: Boolean = js.native
+  var endpointPrivateAccess: Boolean
   
   /**
     * Indicates whether or not the Amazon EKS public API server endpoint is enabled.
     */
-  var endpointPublicAccess: Boolean = js.native
+  var endpointPublicAccess: Boolean
   
   /**
     * List of CIDR blocks. Indicates which CIDR blocks can access the Amazon EKS public API server endpoint.
     */
-  var publicAccessCidrs: js.Array[String] = js.native
+  var publicAccessCidrs: js.Array[String]
   
   /**
     * List of security group IDs
     */
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
   /**
     * List of subnet IDs
     */
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
   /**
     * The VPC associated with your cluster.
     */
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object GetClusterVpcConfig {
   

@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeViewDragstartEvent extends TreeViewEvent {
+trait TreeViewDragstartEvent
+  extends StObject
+     with TreeViewEvent {
   
-  var sourceNode: js.UndefOr[Element] = js.native
+  var sourceNode: js.UndefOr[Element] = js.undefined
 }
 object TreeViewDragstartEvent {
   

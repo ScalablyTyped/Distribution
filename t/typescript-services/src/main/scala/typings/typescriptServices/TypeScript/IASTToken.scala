@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IASTToken extends AST {
+trait IASTToken
+  extends StObject
+     with AST {
   
-  def text(): String = js.native
+  def text(): String
   
-  def valueText(): String = js.native
+  def valueText(): String
 }
 object IASTToken {
   

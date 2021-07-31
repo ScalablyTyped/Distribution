@@ -2,7 +2,6 @@ package typings.postmark.mod.Models
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.LinkClickLocation")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LinkClickLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkClickLocation with String] = js.native
+  def apply(value: String): js.UndefOr[typings.postmark.messageSupportingTypesMod.LinkClickLocation & String] = js.native
   
-  /* "HTML" */ val HTML: typings.postmark.messageSupportingTypesMod.LinkClickLocation.HTML with String = js.native
+  /* "HTML" */ val HTML: typings.postmark.messageSupportingTypesMod.LinkClickLocation.HTML & String = js.native
   
-  /* "Text" */ val Text: typings.postmark.messageSupportingTypesMod.LinkClickLocation.Text with String = js.native
+  /* "Text" */ val Text: typings.postmark.messageSupportingTypesMod.LinkClickLocation.Text & String = js.native
 }

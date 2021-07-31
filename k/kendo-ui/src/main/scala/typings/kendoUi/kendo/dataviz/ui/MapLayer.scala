@@ -4,59 +4,57 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.kendoUi.kendo.dataviz.map.Extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayer extends StObject {
   
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var extent: js.UndefOr[js.Any | Extent] = js.native
+  var extent: js.UndefOr[js.Any | Extent] = js.undefined
   
-  var imagerySet: js.UndefOr[String] = js.native
+  var imagerySet: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var locationField: js.UndefOr[String] = js.native
+  var locationField: js.UndefOr[String] = js.undefined
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[MapLayerStyle] = js.native
+  var style: js.UndefOr[MapLayerStyle] = js.undefined
   
-  var subdomains: js.UndefOr[js.Any] = js.native
+  var subdomains: js.UndefOr[js.Any] = js.undefined
   
-  var symbol: js.UndefOr[String | js.Function] = js.native
+  var symbol: js.UndefOr[String | js.Function] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var titleField: js.UndefOr[String] = js.native
+  var titleField: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[MapLayerTooltip] = js.native
+  var tooltip: js.UndefOr[MapLayerTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var urlTemplate: js.UndefOr[String] = js.native
+  var urlTemplate: js.UndefOr[String] = js.undefined
   
-  var valueField: js.UndefOr[String] = js.native
+  var valueField: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MapLayer {
   

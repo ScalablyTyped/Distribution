@@ -4,14 +4,27 @@ import typings.markitup.MarkItUp.Options
 import typings.markitup.MarkItUp.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def markItUp(): JQuery = js.native
-  def markItUp(settings: Options): JQuery = js.native
+  def markItUp(): JQuery
+  def markItUp(settings: Options): JQuery
   @JSName("markItUp")
-  var markItUp_Original: Static = js.native
+  var markItUp_Original: Static
+}
+object JQueryStatic {
+  
+  @scala.inline
+  def apply(markItUp: Static): JQueryStatic = {
+    val __obj = js.Dynamic.literal(markItUp = markItUp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryStatic]
+  }
+  
+  @scala.inline
+  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setMarkItUp(value: Static): Self = StObject.set(x, "markItUp", value.asInstanceOf[js.Any])
+  }
 }

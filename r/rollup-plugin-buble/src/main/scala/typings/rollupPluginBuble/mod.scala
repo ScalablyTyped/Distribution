@@ -5,25 +5,27 @@ import typings.rollup.mod.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-buble", JSImport.Namespace)
-  @js.native
-  def apply(): Plugin = js.native
-  @JSImport("rollup-plugin-buble", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Plugin = js.native
+  @scala.inline
+  def apply(): Plugin = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Plugin]
+  @scala.inline
+  def apply(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
+  @JSImport("rollup-plugin-buble", JSImport.Namespace)
   @js.native
-  trait Options extends TransformOptions {
+  val ^ : js.Any = js.native
+  
+  trait Options
+    extends StObject
+       with TransformOptions {
     
-    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
     
     // Every files will be parsed by default, but you can specify which files to include or exclude
-    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
   }
   object Options {
     

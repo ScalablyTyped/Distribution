@@ -2,31 +2,29 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContributionPropertyDescription extends StObject {
   
   /**
     * Description of the property
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Name of the property
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * True if this property is required
     */
-  var required: Boolean = js.native
+  var required: Boolean
   
   /**
     * The type of value used for this property
     */
-  var `type`: ContributionPropertyType = js.native
+  var `type`: ContributionPropertyType
 }
 object ContributionPropertyDescription {
   

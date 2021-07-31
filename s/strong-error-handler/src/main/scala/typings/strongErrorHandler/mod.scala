@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.strongErrorHandler.mod.StrongErrorHandler.options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,29 +14,30 @@ object mod {
     * Create a new strong error middleware funciton using the given options.
     * @param options
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("strong-error-handler", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("strong-error-handler", JSImport.Namespace)
-  @js.native
-  def apply(options: options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   object StrongErrorHandler {
     
-    @js.native
     trait options extends StObject {
       
       /***
         * HTTP responses include all error properties, including sensitive data such as file paths,
         * URLs and stack traces, defaults to false.
         */
-      var debug: js.UndefOr[Boolean] = js.native
+      var debug: js.UndefOr[Boolean] = js.undefined
       
       /***
         * Specify the default response content type to use when the client does not provide any Accepts header.
         * Defaults to 'json'.
         */
-      var defaultType: js.UndefOr[String] = js.native
+      var defaultType: js.UndefOr[String] = js.undefined
       
       /***
         *If true, all errors are printed via console.error, including an array of fields (custom error properties)
@@ -45,7 +45,7 @@ object mod {
         *If false, sends only the error back in the response.
         * Defaults to true
         */
-      var log: js.UndefOr[Boolean] = js.native
+      var log: js.UndefOr[Boolean] = js.undefined
       
       /***
         * Negotiate the response content type via Accepts request header.
@@ -53,12 +53,12 @@ object mod {
         * Disabling content type negotiation is useful if you want to see JSON-formatted
         * error responses in browsers, because browsers usually prefer HTML and XML over other content types.
         */
-      var negotiateContentType: js.UndefOr[Boolean] = js.native
+      var negotiateContentType: js.UndefOr[Boolean] = js.undefined
       
       /***
         * Specifies property names on errors that are allowed to be passed through in 4xx and 5xx responses.
         */
-      var safeFields: js.UndefOr[js.Array[String]] = js.native
+      var safeFields: js.UndefOr[js.Array[String]] = js.undefined
     }
     object options {
       

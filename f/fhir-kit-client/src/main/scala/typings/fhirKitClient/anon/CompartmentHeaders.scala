@@ -2,21 +2,19 @@ package typings.fhirKitClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompartmentHeaders extends StObject {
   
-  var compartment: typings.fhirKitClient.mod.Compartment = js.native
+  var compartment: typings.fhirKitClient.mod.Compartment
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.mod.ResourceType = js.native
+  var resourceType: typings.fhirKitClient.mod.ResourceType
   
-  var searchParams: js.UndefOr[typings.fhirKitClient.mod.SearchParams] = js.native
+  var searchParams: js.UndefOr[typings.fhirKitClient.mod.SearchParams] = js.undefined
 }
 object CompartmentHeaders {
   

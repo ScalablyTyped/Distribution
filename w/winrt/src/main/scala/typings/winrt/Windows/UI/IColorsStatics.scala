@@ -2,293 +2,291 @@ package typings.winrt.Windows.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColorsStatics extends StObject {
   
-  var aliceBlue: Color = js.native
+  var aliceBlue: Color
   
-  var antiqueWhite: Color = js.native
+  var antiqueWhite: Color
   
-  var aqua: Color = js.native
+  var aqua: Color
   
-  var aquamarine: Color = js.native
+  var aquamarine: Color
   
-  var azure: Color = js.native
+  var azure: Color
   
-  var beige: Color = js.native
+  var beige: Color
   
-  var bisque: Color = js.native
+  var bisque: Color
   
-  var black: Color = js.native
+  var black: Color
   
-  var blanchedAlmond: Color = js.native
+  var blanchedAlmond: Color
   
-  var blue: Color = js.native
+  var blue: Color
   
-  var blueViolet: Color = js.native
+  var blueViolet: Color
   
-  var brown: Color = js.native
+  var brown: Color
   
-  var burlyWood: Color = js.native
+  var burlyWood: Color
   
-  var cadetBlue: Color = js.native
+  var cadetBlue: Color
   
-  var chartreuse: Color = js.native
+  var chartreuse: Color
   
-  var chocolate: Color = js.native
+  var chocolate: Color
   
-  var coral: Color = js.native
+  var coral: Color
   
-  var cornflowerBlue: Color = js.native
+  var cornflowerBlue: Color
   
-  var cornsilk: Color = js.native
+  var cornsilk: Color
   
-  var crimson: Color = js.native
+  var crimson: Color
   
-  var cyan: Color = js.native
+  var cyan: Color
   
-  var darkBlue: Color = js.native
+  var darkBlue: Color
   
-  var darkCyan: Color = js.native
+  var darkCyan: Color
   
-  var darkGoldenrod: Color = js.native
+  var darkGoldenrod: Color
   
-  var darkGray: Color = js.native
+  var darkGray: Color
   
-  var darkGreen: Color = js.native
+  var darkGreen: Color
   
-  var darkKhaki: Color = js.native
+  var darkKhaki: Color
   
-  var darkMagenta: Color = js.native
+  var darkMagenta: Color
   
-  var darkOliveGreen: Color = js.native
+  var darkOliveGreen: Color
   
-  var darkOrange: Color = js.native
+  var darkOrange: Color
   
-  var darkOrchid: Color = js.native
+  var darkOrchid: Color
   
-  var darkRed: Color = js.native
+  var darkRed: Color
   
-  var darkSalmon: Color = js.native
+  var darkSalmon: Color
   
-  var darkSeaGreen: Color = js.native
+  var darkSeaGreen: Color
   
-  var darkSlateBlue: Color = js.native
+  var darkSlateBlue: Color
   
-  var darkSlateGray: Color = js.native
+  var darkSlateGray: Color
   
-  var darkTurquoise: Color = js.native
+  var darkTurquoise: Color
   
-  var darkViolet: Color = js.native
+  var darkViolet: Color
   
-  var deepPink: Color = js.native
+  var deepPink: Color
   
-  var deepSkyBlue: Color = js.native
+  var deepSkyBlue: Color
   
-  var dimGray: Color = js.native
+  var dimGray: Color
   
-  var dodgerBlue: Color = js.native
+  var dodgerBlue: Color
   
-  var firebrick: Color = js.native
+  var firebrick: Color
   
-  var floralWhite: Color = js.native
+  var floralWhite: Color
   
-  var forestGreen: Color = js.native
+  var forestGreen: Color
   
-  var fuchsia: Color = js.native
+  var fuchsia: Color
   
-  var gainsboro: Color = js.native
+  var gainsboro: Color
   
-  var ghostWhite: Color = js.native
+  var ghostWhite: Color
   
-  var gold: Color = js.native
+  var gold: Color
   
-  var goldenrod: Color = js.native
+  var goldenrod: Color
   
-  var gray: Color = js.native
+  var gray: Color
   
-  var green: Color = js.native
+  var green: Color
   
-  var greenYellow: Color = js.native
+  var greenYellow: Color
   
-  var honeydew: Color = js.native
+  var honeydew: Color
   
-  var hotPink: Color = js.native
+  var hotPink: Color
   
-  var indianRed: Color = js.native
+  var indianRed: Color
   
-  var indigo: Color = js.native
+  var indigo: Color
   
-  var ivory: Color = js.native
+  var ivory: Color
   
-  var khaki: Color = js.native
+  var khaki: Color
   
-  var lavender: Color = js.native
+  var lavender: Color
   
-  var lavenderBlush: Color = js.native
+  var lavenderBlush: Color
   
-  var lawnGreen: Color = js.native
+  var lawnGreen: Color
   
-  var lemonChiffon: Color = js.native
+  var lemonChiffon: Color
   
-  var lightBlue: Color = js.native
+  var lightBlue: Color
   
-  var lightCoral: Color = js.native
+  var lightCoral: Color
   
-  var lightCyan: Color = js.native
+  var lightCyan: Color
   
-  var lightGoldenrodYellow: Color = js.native
+  var lightGoldenrodYellow: Color
   
-  var lightGray: Color = js.native
+  var lightGray: Color
   
-  var lightGreen: Color = js.native
+  var lightGreen: Color
   
-  var lightPink: Color = js.native
+  var lightPink: Color
   
-  var lightSalmon: Color = js.native
+  var lightSalmon: Color
   
-  var lightSeaGreen: Color = js.native
+  var lightSeaGreen: Color
   
-  var lightSkyBlue: Color = js.native
+  var lightSkyBlue: Color
   
-  var lightSlateGray: Color = js.native
+  var lightSlateGray: Color
   
-  var lightSteelBlue: Color = js.native
+  var lightSteelBlue: Color
   
-  var lightYellow: Color = js.native
+  var lightYellow: Color
   
-  var lime: Color = js.native
+  var lime: Color
   
-  var limeGreen: Color = js.native
+  var limeGreen: Color
   
-  var linen: Color = js.native
+  var linen: Color
   
-  var magenta: Color = js.native
+  var magenta: Color
   
-  var maroon: Color = js.native
+  var maroon: Color
   
-  var mediumAquamarine: Color = js.native
+  var mediumAquamarine: Color
   
-  var mediumBlue: Color = js.native
+  var mediumBlue: Color
   
-  var mediumOrchid: Color = js.native
+  var mediumOrchid: Color
   
-  var mediumPurple: Color = js.native
+  var mediumPurple: Color
   
-  var mediumSeaGreen: Color = js.native
+  var mediumSeaGreen: Color
   
-  var mediumSlateBlue: Color = js.native
+  var mediumSlateBlue: Color
   
-  var mediumSpringGreen: Color = js.native
+  var mediumSpringGreen: Color
   
-  var mediumTurquoise: Color = js.native
+  var mediumTurquoise: Color
   
-  var mediumVioletRed: Color = js.native
+  var mediumVioletRed: Color
   
-  var midnightBlue: Color = js.native
+  var midnightBlue: Color
   
-  var mintCream: Color = js.native
+  var mintCream: Color
   
-  var mistyRose: Color = js.native
+  var mistyRose: Color
   
-  var moccasin: Color = js.native
+  var moccasin: Color
   
-  var navajoWhite: Color = js.native
+  var navajoWhite: Color
   
-  var navy: Color = js.native
+  var navy: Color
   
-  var oldLace: Color = js.native
+  var oldLace: Color
   
-  var olive: Color = js.native
+  var olive: Color
   
-  var oliveDrab: Color = js.native
+  var oliveDrab: Color
   
-  var orange: Color = js.native
+  var orange: Color
   
-  var orangeRed: Color = js.native
+  var orangeRed: Color
   
-  var orchid: Color = js.native
+  var orchid: Color
   
-  var paleGoldenrod: Color = js.native
+  var paleGoldenrod: Color
   
-  var paleGreen: Color = js.native
+  var paleGreen: Color
   
-  var paleTurquoise: Color = js.native
+  var paleTurquoise: Color
   
-  var paleVioletRed: Color = js.native
+  var paleVioletRed: Color
   
-  var papayaWhip: Color = js.native
+  var papayaWhip: Color
   
-  var peachPuff: Color = js.native
+  var peachPuff: Color
   
-  var peru: Color = js.native
+  var peru: Color
   
-  var pink: Color = js.native
+  var pink: Color
   
-  var plum: Color = js.native
+  var plum: Color
   
-  var powderBlue: Color = js.native
+  var powderBlue: Color
   
-  var purple: Color = js.native
+  var purple: Color
   
-  var red: Color = js.native
+  var red: Color
   
-  var rosyBrown: Color = js.native
+  var rosyBrown: Color
   
-  var royalBlue: Color = js.native
+  var royalBlue: Color
   
-  var saddleBrown: Color = js.native
+  var saddleBrown: Color
   
-  var salmon: Color = js.native
+  var salmon: Color
   
-  var sandyBrown: Color = js.native
+  var sandyBrown: Color
   
-  var seaGreen: Color = js.native
+  var seaGreen: Color
   
-  var seaShell: Color = js.native
+  var seaShell: Color
   
-  var sienna: Color = js.native
+  var sienna: Color
   
-  var silver: Color = js.native
+  var silver: Color
   
-  var skyBlue: Color = js.native
+  var skyBlue: Color
   
-  var slateBlue: Color = js.native
+  var slateBlue: Color
   
-  var slateGray: Color = js.native
+  var slateGray: Color
   
-  var snow: Color = js.native
+  var snow: Color
   
-  var springGreen: Color = js.native
+  var springGreen: Color
   
-  var steelBlue: Color = js.native
+  var steelBlue: Color
   
-  var tan: Color = js.native
+  var tan: Color
   
-  var teal: Color = js.native
+  var teal: Color
   
-  var thistle: Color = js.native
+  var thistle: Color
   
-  var tomato: Color = js.native
+  var tomato: Color
   
-  var transparent: Color = js.native
+  var transparent: Color
   
-  var turquoise: Color = js.native
+  var turquoise: Color
   
-  var violet: Color = js.native
+  var violet: Color
   
-  var wheat: Color = js.native
+  var wheat: Color
   
-  var white: Color = js.native
+  var white: Color
   
-  var whiteSmoke: Color = js.native
+  var whiteSmoke: Color
   
-  var yellow: Color = js.native
+  var yellow: Color
   
-  var yellowGreen: Color = js.native
+  var yellowGreen: Color
 }
 object IColorsStatics {
   

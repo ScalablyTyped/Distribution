@@ -3,20 +3,18 @@ package typings.aliApp.anon
 import typings.aliApp.my.TimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.CreateAnimationOptions> */
-@js.native
 trait PartialCreateAnimationOpt extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var timeFunction: js.UndefOr[TimingFunction] = js.native
+  var timeFunction: js.UndefOr[TimingFunction] = js.undefined
   
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
 }
 object PartialCreateAnimationOpt {
   

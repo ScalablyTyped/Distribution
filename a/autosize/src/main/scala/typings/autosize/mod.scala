@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,63 +13,58 @@ object mod {
   /**
     * Attach autosize to JQuery collection
     */
-  @JSImport("autosize", JSImport.Namespace)
-  @js.native
-  def apply(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  @scala.inline
+  def apply(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].apply(collection.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
   /**
     * Attach autosize to NodeList
     */
-  @JSImport("autosize", JSImport.Namespace)
-  @js.native
-  def apply(elements: NodeList): NodeList = js.native
+  @scala.inline
+  def apply(elements: NodeList): NodeList = ^.asInstanceOf[js.Dynamic].apply(elements.asInstanceOf[js.Any]).asInstanceOf[NodeList]
   /**
     * Attach autosize to Element
     */
+  @scala.inline
+  def apply(element: Element): Element = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("autosize", JSImport.Namespace)
   @js.native
-  def apply(element: Element): Element = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
-  @JSImport("autosize", "destroy")
-  @js.native
-  def destroy(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  @scala.inline
+  def destroy(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(collection.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
   /**
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
-  @JSImport("autosize", "destroy")
-  @js.native
-  def destroy(elements: NodeList): NodeList = js.native
+  @scala.inline
+  def destroy(elements: NodeList): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(elements.asInstanceOf[js.Any]).asInstanceOf[NodeList]
   /**
     * Removes Autosize and reverts any changes it made to the textarea element.
     */
-  @JSImport("autosize", "destroy")
-  @js.native
-  def destroy(element: Element): Element = js.native
+  @scala.inline
+  def destroy(element: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * Triggers the height adjustment for an assigned textarea element.
     * Autosize will automatically adjust the textarea height on keyboard and window resize events.
     * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
     */
-  @JSImport("autosize", "update")
-  @js.native
-  def update(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = js.native
+  @scala.inline
+  def update(collection: JQuery[HTMLElement]): JQuery[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(collection.asInstanceOf[js.Any]).asInstanceOf[JQuery[HTMLElement]]
   /**
     * Triggers the height adjustment for an assigned textarea element.
     * Autosize will automatically adjust the textarea height on keyboard and window resize events.
     * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
     */
-  @JSImport("autosize", "update")
-  @js.native
-  def update(elements: NodeList): NodeList = js.native
+  @scala.inline
+  def update(elements: NodeList): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elements.asInstanceOf[js.Any]).asInstanceOf[NodeList]
   /**
     * Triggers the height adjustment for an assigned textarea element.
     * Autosize will automatically adjust the textarea height on keyboard and window resize events.
     * There is no efficient way for Autosize to monitor for when another script has changed the textarea value or for changes in layout that impact the textarea element.
     */
-  @JSImport("autosize", "update")
-  @js.native
-  def update(element: Element): Element = js.native
+  @scala.inline
+  def update(element: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

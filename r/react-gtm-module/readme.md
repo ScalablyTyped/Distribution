@@ -10,9 +10,9 @@ React Google Tag Manager Module
 | ------------------ | :-------------: |
 | Full name          | react-gtm-module |
 | Keywords           | react, reactjs, react-component, google tag manager, tag manager, gtm |
-| # releases         | 8 |
-| # dependents       | 21 |
-| # downloads        | 3842279 |
+| # releases         | 10 |
+| # dependents       | 28 |
+| # downloads        | 5945137 |
 | # stars            | 1 |
 
 ## Links

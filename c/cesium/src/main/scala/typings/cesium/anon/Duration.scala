@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.HeadingPitchRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var maximumHeight: js.UndefOr[Double] = js.native
+  var maximumHeight: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[HeadingPitchRange] = js.native
+  var offset: js.UndefOr[HeadingPitchRange] = js.undefined
 }
 object Duration {
   

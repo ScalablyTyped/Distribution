@@ -22,55 +22,53 @@ import typings.awsSdkClientS3Browser.typesTaggingMod.UnmarshalledTagging
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesS3LocationMod {
   
-  @js.native
   trait S3Location extends StObject {
     
     /**
       * <p>A list of grants that control access to the staged results.</p>
       */
-    var AccessControlList: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.native
+    var AccessControlList: js.UndefOr[js.Array[Grant] | Iterable[Grant]] = js.undefined
     
     /**
       * <p>The name of the bucket where the restore results will be placed.</p>
       */
-    var BucketName: String = js.native
+    var BucketName: String
     
     /**
       * <p>The canned ACL to apply to the restore results.</p>
       */
     var CannedACL: js.UndefOr[
         `private` | `public-read` | `public-read-write` | `authenticated-read` | `aws-exec-read` | `bucket-owner-read` | `bucket-owner-full-control` | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Describes the server-side encryption that will be applied to the restore results.</p>
       */
-    var Encryption: js.UndefOr[typings.awsSdkClientS3Browser.typesEncryptionMod.Encryption] = js.native
+    var Encryption: js.UndefOr[typings.awsSdkClientS3Browser.typesEncryptionMod.Encryption] = js.undefined
     
     /**
       * <p>The prefix that is prepended to the restore results for this request.</p>
       */
-    var Prefix: String = js.native
+    var Prefix: String
     
     /**
       * <p>The class of storage used to store the restore results.</p>
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | ONEZONE_IA | String] = js.undefined
     
     /**
       * <p>The tag-set that is applied to the restore results.</p>
       */
-    var Tagging: js.UndefOr[typings.awsSdkClientS3Browser.typesTaggingMod.Tagging] = js.native
+    var Tagging: js.UndefOr[typings.awsSdkClientS3Browser.typesTaggingMod.Tagging] = js.undefined
     
     /**
       * <p>A list of metadata to store with the restore results in S3.</p>
       */
-    var UserMetadata: js.UndefOr[js.Array[MetadataEntry] | Iterable[MetadataEntry]] = js.native
+    var UserMetadata: js.UndefOr[js.Array[MetadataEntry] | Iterable[MetadataEntry]] = js.undefined
   }
   object S3Location {
     
@@ -135,32 +133,33 @@ object typesS3LocationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledS3Location extends S3Location {
+  trait UnmarshalledS3Location
+    extends StObject
+       with S3Location {
     
     /**
       * <p>A list of grants that control access to the staged results.</p>
       */
     @JSName("AccessControlList")
-    var AccessControlList_UnmarshalledS3Location: js.UndefOr[js.Array[UnmarshalledGrant]] = js.native
+    var AccessControlList_UnmarshalledS3Location: js.UndefOr[js.Array[UnmarshalledGrant]] = js.undefined
     
     /**
       * <p>Describes the server-side encryption that will be applied to the restore results.</p>
       */
     @JSName("Encryption")
-    var Encryption_UnmarshalledS3Location: js.UndefOr[UnmarshalledEncryption] = js.native
+    var Encryption_UnmarshalledS3Location: js.UndefOr[UnmarshalledEncryption] = js.undefined
     
     /**
       * <p>The tag-set that is applied to the restore results.</p>
       */
     @JSName("Tagging")
-    var Tagging_UnmarshalledS3Location: js.UndefOr[UnmarshalledTagging] = js.native
+    var Tagging_UnmarshalledS3Location: js.UndefOr[UnmarshalledTagging] = js.undefined
     
     /**
       * <p>A list of metadata to store with the restore results in S3.</p>
       */
     @JSName("UserMetadata")
-    var UserMetadata_UnmarshalledS3Location: js.UndefOr[js.Array[UnmarshalledMetadataEntry]] = js.native
+    var UserMetadata_UnmarshalledS3Location: js.UndefOr[js.Array[UnmarshalledMetadataEntry]] = js.undefined
   }
   object UnmarshalledS3Location {
     

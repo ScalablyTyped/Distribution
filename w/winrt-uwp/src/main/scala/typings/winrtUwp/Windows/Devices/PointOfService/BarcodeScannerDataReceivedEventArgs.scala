@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the barcode data from the DataReceived event. */
-@js.native
 trait BarcodeScannerDataReceivedEventArgs extends StObject {
   
   /** Gets the data from the DataReceived event. */
-  var report: BarcodeScannerReport = js.native
+  var report: BarcodeScannerReport
 }
 object BarcodeScannerDataReceivedEventArgs {
   

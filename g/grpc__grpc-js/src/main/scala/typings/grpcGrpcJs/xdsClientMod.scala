@@ -9,7 +9,6 @@ import typings.grpcGrpcJs.grpcGrpcJsStrings.typeDotgoogleapisDotcomSlashenvoyDot
 import typings.grpcGrpcJs.serviceConfigMod.ServiceConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xdsClientMod {
@@ -45,14 +44,14 @@ object xdsClientMod {
     def addClusterWatcher(
       clusterName: String,
       watcher: Watcher[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cluster__Output */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cluster__Output */ js.Any
         ]
     ): Unit = js.native
     
     def addEndpointWatcher(
       edsServiceName: String,
       watcher: Watcher[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClusterLoadAssignment__Output */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClusterLoadAssignment__Output */ js.Any
         ]
     ): Unit = js.native
     
@@ -95,14 +94,14 @@ object xdsClientMod {
     def removeClusterWatcher(
       clusterName: String,
       watcher: Watcher[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cluster__Output */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Cluster__Output */ js.Any
         ]
     ): Unit = js.native
     
     def removeEndpointWatcher(
       edsServiceName: String,
       watcher: Watcher[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClusterLoadAssignment__Output */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClusterLoadAssignment__Output */ js.Any
         ]
     ): Unit = js.native
     
@@ -127,14 +126,13 @@ object xdsClientMod {
   
   type RdsTypeUrl = typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration
   
-  @js.native
   trait Watcher[UpdateType] extends StObject {
     
-    def onResourceDoesNotExist(): Unit = js.native
+    def onResourceDoesNotExist(): Unit
     
-    def onTransientError(error: StatusObject): Unit = js.native
+    def onTransientError(error: StatusObject): Unit
     
-    def onValidUpdate(update: UpdateType): Unit = js.native
+    def onValidUpdate(update: UpdateType): Unit
   }
   object Watcher {
     
@@ -149,7 +147,7 @@ object xdsClientMod {
     }
     
     @scala.inline
-    implicit class WatcherMutableBuilder[Self <: Watcher[_], UpdateType] (val x: Self with Watcher[UpdateType]) extends AnyVal {
+    implicit class WatcherMutableBuilder[Self <: Watcher[?], UpdateType] (val x: Self & Watcher[UpdateType]) extends AnyVal {
       
       @scala.inline
       def setOnResourceDoesNotExist(value: () => Unit): Self = StObject.set(x, "onResourceDoesNotExist", js.Any.fromFunction0(value))
@@ -162,10 +160,9 @@ object xdsClientMod {
     }
   }
   
-  @js.native
   trait XdsClusterDropStats extends StObject {
     
-    def addCallDropped(category: String): Unit = js.native
+    def addCallDropped(category: String): Unit
   }
   object XdsClusterDropStats {
     
@@ -183,12 +180,11 @@ object xdsClientMod {
     }
   }
   
-  @js.native
   trait XdsClusterLocalityStats extends StObject {
     
-    def addCallFinished(fail: Boolean): Unit = js.native
+    def addCallFinished(fail: Boolean): Unit
     
-    def addCallStarted(): Unit = js.native
+    def addCallStarted(): Unit
   }
   object XdsClusterLocalityStats {
     

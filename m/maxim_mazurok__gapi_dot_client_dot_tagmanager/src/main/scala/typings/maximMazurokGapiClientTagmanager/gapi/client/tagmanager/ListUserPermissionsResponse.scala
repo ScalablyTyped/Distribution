@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserPermissionsResponse extends StObject {
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** All GTM UserPermissions of a GTM Account. */
-  var userPermission: js.UndefOr[js.Array[UserPermission]] = js.native
+  var userPermission: js.UndefOr[js.Array[UserPermission]] = js.undefined
 }
 object ListUserPermissionsResponse {
   

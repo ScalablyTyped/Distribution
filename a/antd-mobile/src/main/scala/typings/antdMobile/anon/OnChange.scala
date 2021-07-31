@@ -2,25 +2,23 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChange extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onValueChange(): Unit = js.native
+  def onValueChange(): Unit
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var selectedIndex: Double = js.native
+  var selectedIndex: Double
   
-  var tintColor: String = js.native
+  var tintColor: String
   
-  var values: js.Array[scala.Nothing] = js.native
+  var values: js.Array[scala.Nothing]
 }
 object OnChange {
   

@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFileInformationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileInformation extends StObject {
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  var EmailMessage: IEmailMessageInformation = js.native
+  var EmailMessage: IEmailMessageInformation
   
-  def ExtractFromFile(PathToFile: String): Unit = js.native
+  def ExtractFromFile(PathToFile: String): Unit
   
-  var FileType: MFFileInformationType = js.native
+  var FileType: MFFileInformationType
 }
 object IFileInformation {
   

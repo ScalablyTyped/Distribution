@@ -3,26 +3,25 @@ package typings.std
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputedKeyframe
-  extends /* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
+  extends StObject
+     with /* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
   
-  var composite: CompositeOperationOrAuto = js.native
+  var composite: CompositeOperationOrAuto
   
-  var computedOffset: Double = js.native
+  var computedOffset: Double
   
-  var easing: java.lang.String = js.native
+  var easing: java.lang.String
   
-  var offset: Double | Null = js.native
+  var offset: Double | Null
 }
 object ComputedKeyframe {
   
   @scala.inline
   def apply(composite: CompositeOperationOrAuto, computedOffset: Double, easing: java.lang.String): ComputedKeyframe = {
-    val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], computedOffset = computedOffset.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(composite = composite.asInstanceOf[js.Any], computedOffset = computedOffset.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], offset = null)
     __obj.asInstanceOf[ComputedKeyframe]
   }
   

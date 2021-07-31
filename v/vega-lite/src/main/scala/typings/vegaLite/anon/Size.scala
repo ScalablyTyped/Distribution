@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaLite.specBaseMod.LayoutSizeMixins
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
-  var encoding: typings.vegaLite.encodingMod.Encoding[String] = js.native
+  var encoding: typings.vegaLite.encodingMod.Encoding[String]
   
-  var size: LayoutSizeMixins = js.native
+  var size: LayoutSizeMixins
 }
 object Size {
   

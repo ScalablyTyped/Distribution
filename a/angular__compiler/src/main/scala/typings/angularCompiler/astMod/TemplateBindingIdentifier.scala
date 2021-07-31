@@ -2,15 +2,13 @@ package typings.angularCompiler.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateBindingIdentifier extends StObject {
   
-  var source: String = js.native
+  var source: String
   
-  var span: AbsoluteSourceSpan = js.native
+  var span: AbsoluteSourceSpan
 }
 object TemplateBindingIdentifier {
   

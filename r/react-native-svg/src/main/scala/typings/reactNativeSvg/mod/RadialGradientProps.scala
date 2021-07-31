@@ -2,31 +2,29 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGradientProps extends StObject {
   
-  var cx: js.UndefOr[NumberProp] = js.native
+  var cx: js.UndefOr[NumberProp] = js.undefined
   
-  var cy: js.UndefOr[NumberProp] = js.native
+  var cy: js.UndefOr[NumberProp] = js.undefined
   
-  var fx: js.UndefOr[NumberProp] = js.native
+  var fx: js.UndefOr[NumberProp] = js.undefined
   
-  var fy: js.UndefOr[NumberProp] = js.native
+  var fy: js.UndefOr[NumberProp] = js.undefined
   
-  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.native
+  var gradientTransform: js.UndefOr[ColumnMajorTransformMatrix | String] = js.undefined
   
-  var gradientUnits: js.UndefOr[Units] = js.native
+  var gradientUnits: js.UndefOr[Units] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var r: js.UndefOr[NumberProp] = js.native
+  var r: js.UndefOr[NumberProp] = js.undefined
   
-  var rx: js.UndefOr[NumberProp] = js.native
+  var rx: js.UndefOr[NumberProp] = js.undefined
   
-  var ry: js.UndefOr[NumberProp] = js.native
+  var ry: js.UndefOr[NumberProp] = js.undefined
 }
 object RadialGradientProps {
   

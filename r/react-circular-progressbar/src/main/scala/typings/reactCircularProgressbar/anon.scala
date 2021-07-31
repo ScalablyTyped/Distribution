@@ -2,23 +2,21 @@ package typings.reactCircularProgressbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Background extends StObject {
     
-    var background: String = js.native
+    var background: String
     
-    var path: String = js.native
+    var path: String
     
-    var root: String = js.native
+    var root: String
     
-    var text: String = js.native
+    var text: String
     
-    var trail: String = js.native
+    var trail: String
   }
   object Background {
     
@@ -48,26 +46,25 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundColor extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var pathColor: js.UndefOr[String] = js.native
+    var pathColor: js.UndefOr[String] = js.undefined
     
-    var pathTransition: js.UndefOr[String] = js.native
+    var pathTransition: js.UndefOr[String] = js.undefined
     
-    var pathTransitionDuration: js.UndefOr[Double] = js.native
+    var pathTransitionDuration: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var strokeLinecap: js.UndefOr[js.Any] = js.native
+    var strokeLinecap: js.UndefOr[js.Any] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var textSize: js.UndefOr[String | Double] = js.native
+    var textSize: js.UndefOr[String | Double] = js.undefined
     
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
   }
   object BackgroundColor {
     
@@ -136,20 +133,19 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var counterClockwise: Boolean = js.native
+    var counterClockwise: Boolean
     
-    var dashRatio: Double = js.native
+    var dashRatio: Double
     
-    var pathRadius: Double = js.native
+    var pathRadius: Double
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ClassName {
     

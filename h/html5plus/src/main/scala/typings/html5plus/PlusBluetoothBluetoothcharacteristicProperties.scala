@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
   */
-@js.native
 trait PlusBluetoothBluetoothcharacteristicProperties extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait PlusBluetoothBluetoothcharacteristicProperties extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var indicate: js.UndefOr[Boolean] = js.native
+  var indicate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 特征值是否支持notify操作
@@ -26,21 +24,21 @@ trait PlusBluetoothBluetoothcharacteristicProperties extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   @JSName("notify")
-  var notify_FPlusBluetoothBluetoothcharacteristicProperties: js.UndefOr[Boolean] = js.native
+  var notify_FPlusBluetoothBluetoothcharacteristicProperties: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 特征值是否支持read操作
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 特征值是否支持write操作
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var write: js.UndefOr[Boolean] = js.native
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object PlusBluetoothBluetoothcharacteristicProperties {
   

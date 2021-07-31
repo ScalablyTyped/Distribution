@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudbilling.gapi.client.cloudbilling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSkusResponse extends StObject {
   
   /**
     * A token to retrieve the next page of results. To retrieve the next page, call `ListSkus` again with the `page_token` field set to this value. This field is empty if there are no
     * more results to retrieve.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of public SKUs of the given service. */
-  var skus: js.UndefOr[js.Array[Sku]] = js.native
+  var skus: js.UndefOr[js.Array[Sku]] = js.undefined
 }
 object ListSkusResponse {
   

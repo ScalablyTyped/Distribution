@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation extends StObject {
   
   /** Minimal encryption is required. */
   @js.native
-  sealed trait anyAlgorithm extends EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
+  sealed trait anyAlgorithm
+    extends StObject
+       with EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
   
   /** No negotiation is allowed. */
   @js.native
-  sealed trait none extends EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
+  sealed trait none
+    extends StObject
+       with EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
   
   /** Strong encryption is required. */
   @js.native
-  sealed trait strongAlgorithm extends EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
+  sealed trait strongAlgorithm
+    extends StObject
+       with EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation
 }

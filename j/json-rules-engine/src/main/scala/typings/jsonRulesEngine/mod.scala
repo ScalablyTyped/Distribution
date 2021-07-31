@@ -6,17 +6,18 @@ import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json-rules-engine", JSImport.Default)
+  @JSImport("json-rules-engine", JSImport.Namespace)
   @js.native
-  def default(rules: js.Array[RuleProperties]): Engine = js.native
-  @JSImport("json-rules-engine", JSImport.Default)
-  @js.native
-  def default(rules: js.Array[RuleProperties], options: EngineOptions): Engine = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(rules: js.Array[RuleProperties]): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any]).asInstanceOf[Engine]
+  @scala.inline
+  def default(rules: js.Array[RuleProperties], options: EngineOptions): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rules.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
   
   @JSImport("json-rules-engine", "Almanac")
   @js.native
@@ -25,17 +26,17 @@ object mod {
     def addRuntimeFact(factId: String, value: js.Any): Unit = js.native
     
     def factValue[T](factId: String): js.Promise[T] = js.native
-    def factValue[T](factId: String, params: js.UndefOr[scala.Nothing], path: String): js.Promise[T] = js.native
-    def factValue[T](factId: String, params: Record[String, _]): js.Promise[T] = js.native
-    def factValue[T](factId: String, params: Record[String, _], path: String): js.Promise[T] = js.native
+    def factValue[T](factId: String, params: Unit, path: String): js.Promise[T] = js.native
+    def factValue[T](factId: String, params: Record[String, js.Any]): js.Promise[T] = js.native
+    def factValue[T](factId: String, params: Record[String, js.Any], path: String): js.Promise[T] = js.native
   }
   
   @JSImport("json-rules-engine", "Engine")
   @js.native
   class Engine () extends StObject {
     def this(rules: js.Array[RuleProperties]) = this()
-    def this(rules: js.UndefOr[scala.Nothing], options: EngineOptions) = this()
     def this(rules: js.Array[RuleProperties], options: EngineOptions) = this()
+    def this(rules: Unit, options: EngineOptions) = this()
     
     def addFact[T](fact: Fact[T]): this.type = js.native
     def addFact[T](id: String, valueCallback: T): this.type = js.native
@@ -43,8 +44,8 @@ object mod {
     def addFact[T](id: String, valueCallback: DynamicFactCallback[T]): this.type = js.native
     def addFact[T](id: String, valueCallback: DynamicFactCallback[T], options: FactOptions): this.type = js.native
     
-    def addOperator(operator: Operator[_, _]): Map[String, Operator[_, _]] = js.native
-    def addOperator[A, B](operatorName: String, callback: OperatorEvaluator[A, B]): Map[String, Operator[_, _]] = js.native
+    def addOperator(operator: Operator[js.Any, js.Any]): Map[String, Operator[js.Any, js.Any]] = js.native
+    def addOperator[A, B](operatorName: String, callback: OperatorEvaluator[A, B]): Map[String, Operator[js.Any, js.Any]] = js.native
     
     def addRule(rule: RuleProperties): this.type = js.native
     
@@ -57,15 +58,15 @@ object mod {
     def on_success(eventName: success, handler: EventHandler): this.type = js.native
     
     def removeFact(factOrId: String): Boolean = js.native
-    def removeFact(factOrId: Fact[_]): Boolean = js.native
+    def removeFact(factOrId: Fact[js.Any]): Boolean = js.native
     
     def removeOperator(operator: String): Boolean = js.native
-    def removeOperator(operator: Operator[_, _]): Boolean = js.native
+    def removeOperator(operator: Operator[js.Any, js.Any]): Boolean = js.native
     
     def removeRule(rule: Rule): Boolean = js.native
     
     def run(): js.Promise[EngineResult] = js.native
-    def run(facts: Record[String, _]): js.Promise[EngineResult] = js.native
+    def run(facts: Record[String, js.Any]): js.Promise[EngineResult] = js.native
     
     def stop(): this.type = js.native
   }
@@ -104,9 +105,17 @@ object mod {
   
   @JSImport("json-rules-engine", "Rule")
   @js.native
-  class Rule protected () extends RuleProperties {
+  class Rule protected ()
+    extends StObject
+       with RuleProperties {
     def this(ruleProps: String) = this()
     def this(ruleProps: RuleProperties) = this()
+    
+    /* CompleteClass */
+    var conditions: TopLevelCondition = js.native
+    
+    /* CompleteClass */
+    var event: Event = js.native
     
     @JSName("name")
     var name_Rule: String = js.native
@@ -124,10 +133,11 @@ object mod {
     def toJSON[T /* <: Boolean */](stringify: T): RuleSerializable | String = js.native
   }
   
-  @js.native
-  trait AllConditions extends TopLevelCondition {
+  trait AllConditions
+    extends StObject
+       with TopLevelCondition {
     
-    var all: js.Array[NestedCondition] = js.native
+    var all: js.Array[NestedCondition]
   }
   object AllConditions {
     
@@ -148,10 +158,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait AnyConditions extends TopLevelCondition {
+  trait AnyConditions
+    extends StObject
+       with TopLevelCondition {
     
-    var any: js.Array[NestedCondition] = js.native
+    var any: js.Array[NestedCondition]
   }
   object AnyConditions {
     
@@ -172,20 +183,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConditionProperties extends NestedCondition {
+  trait ConditionProperties
+    extends StObject
+       with NestedCondition {
     
-    var fact: String = js.native
+    var fact: String
     
-    var operator: String = js.native
+    var operator: String
     
-    var params: js.UndefOr[Record[String, _]] = js.native
+    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var value: typings.jsonRulesEngine.anon.Fact | js.Any = js.native
+    var value: typings.jsonRulesEngine.anon.Fact | js.Any
   }
   object ConditionProperties {
     
@@ -205,7 +217,7 @@ object mod {
       def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -229,10 +241,9 @@ object mod {
   
   type DynamicFactCallback[T] = js.Function2[/* params */ Record[String, js.Any], /* almanac */ Almanac, T]
   
-  @js.native
   trait EngineOptions extends StObject {
     
-    var allowUndefinedFacts: Boolean = js.native
+    var allowUndefinedFacts: Boolean
   }
   object EngineOptions {
     
@@ -250,12 +261,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EngineResult extends StObject {
     
-    var almanac: Almanac = js.native
+    var almanac: Almanac
     
-    var events: js.Array[Event] = js.native
+    var events: js.Array[Event]
   }
   object EngineResult {
     
@@ -279,12 +289,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var params: js.UndefOr[Record[String, _]] = js.native
+    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     
@@ -299,7 +308,7 @@ object mod {
     implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -311,12 +320,11 @@ object mod {
   
   type EventHandler = js.Function3[/* event */ Event, /* almanac */ Almanac, /* ruleResult */ RuleResult, Unit]
   
-  @js.native
   trait FactOptions extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object FactOptions {
     
@@ -371,20 +379,19 @@ object mod {
   
   type OperatorEvaluator[A, B] = js.Function2[/* factValue */ A, /* compareToValue */ B, Boolean]
   
-  @js.native
   trait RuleProperties extends StObject {
     
-    var conditions: TopLevelCondition = js.native
+    var conditions: TopLevelCondition
     
-    var event: Event = js.native
+    var event: Event
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onFailure: js.UndefOr[EventHandler] = js.native
+    var onFailure: js.UndefOr[EventHandler] = js.undefined
     
-    var onSuccess: js.UndefOr[EventHandler] = js.native
+    var onSuccess: js.UndefOr[EventHandler] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object RuleProperties {
     
@@ -429,18 +436,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RuleResult extends StObject {
     
-    var conditions: TopLevelCondition = js.native
+    var conditions: TopLevelCondition
     
-    var event: js.UndefOr[Event] = js.native
+    var event: js.UndefOr[Event] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object RuleResult {
     
@@ -477,16 +483,15 @@ object mod {
   }
   
   /* Inlined std.Pick<std.Required<json-rules-engine.json-rules-engine.RuleProperties>, 'conditions' | 'event' | 'name' | 'priority'> */
-  @js.native
   trait RuleSerializable extends StObject {
     
-    var conditions: TopLevelCondition = js.native
+    var conditions: TopLevelCondition
     
-    var event: Event = js.native
+    var event: Event
     
-    var name: String = js.native
+    var name: String
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object RuleSerializable {
     
@@ -517,7 +522,9 @@ object mod {
     - typings.jsonRulesEngine.mod.AllConditions
     - typings.jsonRulesEngine.mod.AnyConditions
   */
-  trait TopLevelCondition extends NestedCondition
+  trait TopLevelCondition
+    extends StObject
+       with NestedCondition
   object TopLevelCondition {
     
     @scala.inline

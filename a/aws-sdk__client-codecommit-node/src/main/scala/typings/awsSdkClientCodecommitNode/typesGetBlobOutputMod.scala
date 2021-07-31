@@ -5,24 +5,24 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBlobOutputMod {
   
-  @js.native
-  trait GetBlobOutput extends OutputTypesUnion {
+  trait GetBlobOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The content of the blob, usually a file.</p>
       */
-    var content: Uint8Array = js.native
+    var content: Uint8Array
   }
   object GetBlobOutput {
     

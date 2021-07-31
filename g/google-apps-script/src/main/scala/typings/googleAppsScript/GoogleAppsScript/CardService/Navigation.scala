@@ -2,26 +2,24 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A helper object that controls card navigation. See the card navigation guide for more details.
   */
-@js.native
 trait Navigation extends StObject {
   
-  def popCard(): Navigation = js.native
+  def popCard(): Navigation
   
-  def popToNamedCard(cardName: String): Navigation = js.native
+  def popToNamedCard(cardName: String): Navigation
   
-  def popToRoot(): Navigation = js.native
+  def popToRoot(): Navigation
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def pushCard(card: Card): Navigation = js.native
+  def pushCard(card: Card): Navigation
   
-  def updateCard(card: Card): Navigation = js.native
+  def updateCard(card: Card): Navigation
 }
 object Navigation {
   

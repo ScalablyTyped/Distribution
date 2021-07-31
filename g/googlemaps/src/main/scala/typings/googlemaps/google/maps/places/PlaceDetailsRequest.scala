@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceDetailsRequest extends StObject {
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
-  var placeId: String = js.native
+  var placeId: String
   
-  var sessionToken: js.UndefOr[AutocompleteSessionToken] = js.native
+  var sessionToken: js.UndefOr[AutocompleteSessionToken] = js.undefined
 }
 object PlaceDetailsRequest {
   

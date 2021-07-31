@@ -2,30 +2,28 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotaryJurisdiction extends StObject {
   
-  var commissionExpiration: js.UndefOr[String] = js.native
+  var commissionExpiration: js.UndefOr[String] = js.undefined
   
-  var commissionId: js.UndefOr[String] = js.native
+  var commissionId: js.UndefOr[String] = js.undefined
   
-  var county: js.UndefOr[String] = js.native
+  var county: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
-  var jurisdiction: js.UndefOr[Jurisdiction] = js.native
+  var jurisdiction: js.UndefOr[Jurisdiction] = js.undefined
   
-  var registeredName: js.UndefOr[String] = js.native
+  var registeredName: js.UndefOr[String] = js.undefined
   
-  var sealType: js.UndefOr[String] = js.native
+  var sealType: js.UndefOr[String] = js.undefined
 }
 object NotaryJurisdiction {
   

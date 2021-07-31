@@ -8,18 +8,17 @@ import typings.next.nextNumbers.`307`
 import typings.next.nextNumbers.`308`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination
-  extends typings.next.mod.Redirect {
+  extends StObject
+     with typings.next.mod.Redirect {
   
-  var basePath: js.UndefOr[`false`] = js.native
+  var basePath: js.UndefOr[`false`] = js.undefined
   
-  var destination: String = js.native
+  var destination: String
   
-  var statusCode: `301` | `302` | `303` | `307` | `308` = js.native
+  var statusCode: `301` | `302` | `303` | `307` | `308`
 }
 object Destination {
   

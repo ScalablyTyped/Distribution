@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deleted.  Users can also add test results manually by using the test_result
   * field.
   */
-@js.native
 trait SchemaTestExecutionStep extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaTestExecutionStep extends StObject {
     * trace content can be recorded here to assist debugging.  - In response:
     * present if set by create or update - In create/update request: optional
     */
-  var testIssues: js.UndefOr[js.Array[SchemaTestIssue]] = js.native
+  var testIssues: js.UndefOr[js.Array[SchemaTestIssue]] = js.undefined
   
   /**
     * List of test suite overview contents. This could be parsed from xUnit XML
@@ -31,20 +29,20 @@ trait SchemaTestExecutionStep extends StObject {
     * always set - In create request: optional - In update request: never (use
     * publishXunitXmlFiles custom method instead)
     */
-  var testSuiteOverviews: js.UndefOr[js.Array[SchemaTestSuiteOverview]] = js.native
+  var testSuiteOverviews: js.UndefOr[js.Array[SchemaTestSuiteOverview]] = js.undefined
   
   /**
     * The timing break down of the test execution.  - In response: present if
     * set by create or update - In create/update request: optional
     */
-  var testTiming: js.UndefOr[SchemaTestTiming] = js.native
+  var testTiming: js.UndefOr[SchemaTestTiming] = js.undefined
   
   /**
     * Represents the execution of the test runner.  The exit code of this tool
     * will be used to determine if the test passed.  - In response: always set
     * - In create/update request: optional
     */
-  var toolExecution: js.UndefOr[SchemaToolExecution] = js.native
+  var toolExecution: js.UndefOr[SchemaToolExecution] = js.undefined
 }
 object SchemaTestExecutionStep {
   

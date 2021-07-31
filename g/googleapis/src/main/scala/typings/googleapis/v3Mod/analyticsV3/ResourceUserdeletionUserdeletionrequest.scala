@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Userdeletion$Userdeletionrequest")
@@ -30,7 +29,7 @@ class ResourceUserdeletionUserdeletionrequest protected () extends StObject {
     */
   def upsert(): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(callback: BodyResponseCallback[SchemaUserDeletionRequest]): Unit = js.native
-  def upsert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserDeletionRequest] = js.native
+  def upsert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(params: ParamsResourceUserdeletionUserdeletionrequestUpsert): GaxiosPromise[SchemaUserDeletionRequest] = js.native
   def upsert(
     params: ParamsResourceUserdeletionUserdeletionrequestUpsert,

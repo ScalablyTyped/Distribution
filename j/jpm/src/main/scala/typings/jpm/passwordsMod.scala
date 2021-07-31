@@ -4,7 +4,6 @@ import typings.jpm.anon.CredentialonCompleteanyun
 import typings.jpm.anon.FormSubmitURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,34 +11,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object passwordsMod {
   
-  @JSImport("sdk/passwords", "remove")
+  @JSImport("sdk/passwords", JSImport.Namespace)
   @js.native
-  def remove(options: CredentialonCompleteanyun): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sdk/passwords", "search")
-  @js.native
-  def search(options: FormSubmitURL): Unit = js.native
+  @scala.inline
+  def remove(options: CredentialonCompleteanyun): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("sdk/passwords", "store")
-  @js.native
-  def store(options: CredentialonCompleteanyun): Unit = js.native
+  @scala.inline
+  def search(options: FormSubmitURL): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def store(options: CredentialonCompleteanyun): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("store")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Credential extends StObject {
     
-    var formSubmitURL: js.UndefOr[String] = js.native
+    var formSubmitURL: js.UndefOr[String] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var passwordField: js.UndefOr[String] = js.native
+    var passwordField: js.UndefOr[String] = js.undefined
     
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var username: String = js.native
+    var username: String
     
-    var usernameField: js.UndefOr[String] = js.native
+    var usernameField: js.UndefOr[String] = js.undefined
   }
   object Credential {
     

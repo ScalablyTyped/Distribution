@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,7 +44,7 @@ trait PlusAndroid extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def getAttribute(): js.Any = js.native
-  def getAttribute(obj: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
+  def getAttribute(obj: Unit, name: String): js.Any = js.native
   def getAttribute(obj: PlusAndroidInstanceObject): js.Any = js.native
   def getAttribute(obj: PlusAndroidInstanceObject, name: String): js.Any = js.native
   
@@ -55,9 +54,9 @@ trait PlusAndroid extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def implements(): PlusAndroidInstanceObject = js.native
-  def implements(name: js.UndefOr[scala.Nothing], obj: js.Any): PlusAndroidInstanceObject = js.native
   def implements(name: String): PlusAndroidInstanceObject = js.native
   def implements(name: String, obj: js.Any): PlusAndroidInstanceObject = js.native
+  def implements(name: Unit, obj: js.Any): PlusAndroidInstanceObject = js.native
   
   /**
     * 导入Java类对象
@@ -75,13 +74,13 @@ trait PlusAndroid extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def invoke(): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: String): js.Any = js.native
-  def invoke(obj: js.UndefOr[scala.Nothing], name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: Unit, name: String): js.Any = js.native
+  def invoke(obj: Unit, name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: Unit, name: Unit, args: js.Any): js.Any = js.native
   def invoke(obj: PlusAndroidInstanceObject): js.Any = js.native
-  def invoke(obj: PlusAndroidInstanceObject, name: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def invoke(obj: PlusAndroidInstanceObject, name: String): js.Any = js.native
   def invoke(obj: PlusAndroidInstanceObject, name: String, args: js.Any): js.Any = js.native
+  def invoke(obj: PlusAndroidInstanceObject, name: Unit, args: js.Any): js.Any = js.native
   
   /**
     * 创建实例对象
@@ -89,9 +88,9 @@ trait PlusAndroid extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def newObject(): PlusAndroidInstanceObject = js.native
-  def newObject(classname: js.UndefOr[scala.Nothing], args: js.Any): PlusAndroidInstanceObject = js.native
   def newObject(classname: String): PlusAndroidInstanceObject = js.native
   def newObject(classname: String, args: js.Any): PlusAndroidInstanceObject = js.native
+  def newObject(classname: Unit, args: js.Any): PlusAndroidInstanceObject = js.native
   
   /**
     * 获取应用主Activity实例对象
@@ -107,11 +106,11 @@ trait PlusAndroid extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/android.html](http://www.html5plus.org/doc/zh_cn/android.html)
     */
   def setAttribute(): Unit = js.native
-  def setAttribute(obj: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  def setAttribute(obj: js.UndefOr[scala.Nothing], name: String): Unit = js.native
-  def setAttribute(obj: js.UndefOr[scala.Nothing], name: String, value: js.Any): Unit = js.native
+  def setAttribute(obj: Unit, name: String): Unit = js.native
+  def setAttribute(obj: Unit, name: String, value: js.Any): Unit = js.native
+  def setAttribute(obj: Unit, name: Unit, value: js.Any): Unit = js.native
   def setAttribute(obj: PlusAndroidInstanceObject): Unit = js.native
-  def setAttribute(obj: PlusAndroidInstanceObject, name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def setAttribute(obj: PlusAndroidInstanceObject, name: String): Unit = js.native
   def setAttribute(obj: PlusAndroidInstanceObject, name: String, value: js.Any): Unit = js.native
+  def setAttribute(obj: PlusAndroidInstanceObject, name: Unit, value: js.Any): Unit = js.native
 }

@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DebuggerStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebuggerStatement_
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
   @JSName("type")
-  var type_DebuggerStatement_ : DebuggerStatement = js.native
+  var type_DebuggerStatement_ : DebuggerStatement
 }
 object DebuggerStatement_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: DebuggerStatement): DebuggerStatement_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double): DebuggerStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DebuggerStatement")
     __obj.asInstanceOf[DebuggerStatement_]
   }
   

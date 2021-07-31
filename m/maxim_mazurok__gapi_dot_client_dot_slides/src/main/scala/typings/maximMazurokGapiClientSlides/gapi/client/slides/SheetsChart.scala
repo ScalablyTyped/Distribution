@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetsChart extends StObject {
   
   /** The ID of the specific chart in the Google Sheets spreadsheet that is embedded. */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of an image of the embedded chart, with a default lifetime of 30 minutes. This URL is tagged with the account of the requester. Anyone with the URL effectively accesses the
     * image as the original requester. Access to the image may be lost if the presentation's sharing settings change.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /** The properties of the Sheets chart. */
-  var sheetsChartProperties: js.UndefOr[SheetsChartProperties] = js.native
+  var sheetsChartProperties: js.UndefOr[SheetsChartProperties] = js.undefined
   
   /** The ID of the Google Sheets spreadsheet that contains the source chart. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SheetsChart {
   

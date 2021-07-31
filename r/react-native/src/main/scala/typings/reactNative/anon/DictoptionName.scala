@@ -3,15 +3,14 @@ package typings.reactNative.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictoptionName
-  extends //anything else
+  extends StObject
+     with //anything else
 /* key */ StringDictionary[js.Any] {
   
-  var headers: StringDictionary[String] = js.native
+  var headers: StringDictionary[String]
 }
 object DictoptionName {
   

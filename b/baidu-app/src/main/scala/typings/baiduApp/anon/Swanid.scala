@@ -2,13 +2,11 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Swanid extends StObject {
   
-  var swanid: String = js.native
+  var swanid: String
 }
 object Swanid {
   

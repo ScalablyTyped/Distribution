@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object thumbnailMod {
@@ -19,12 +18,13 @@ object thumbnailMod {
   trait Thumbnail
     extends Component[ThumbnailProps, js.Object, js.Any]
   
-  @js.native
-  trait ThumbnailProps extends HTMLProps[Thumbnail] {
+  trait ThumbnailProps
+    extends StObject
+       with HTMLProps[Thumbnail] {
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
   }
   object ThumbnailProps {
     

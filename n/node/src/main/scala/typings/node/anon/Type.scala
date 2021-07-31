@@ -4,13 +4,11 @@ import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.pkcs8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: pkcs1 | pkcs8 = js.native
+  var `type`: pkcs1 | pkcs8
 }
 object Type {
   

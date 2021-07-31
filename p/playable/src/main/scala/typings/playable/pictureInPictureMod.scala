@@ -4,15 +4,37 @@ import typings.playable.anon.Engine
 import typings.playable.pictureInPictureTypesMod.IPictureInPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pictureInPictureMod {
   
   @JSImport("playable/dist/src/modules/picture-in-picture/picture-in-picture", JSImport.Default)
   @js.native
-  class default protected () extends PictureInPicture {
+  class default protected ()
+    extends StObject
+       with PictureInPicture {
     def this(hasEventEmitterEngine: Engine) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disablePictureInPicture(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enablePictureInPicture(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enterPictureInPicture(): Unit = js.native
+    
+    /* CompleteClass */
+    override def exitPictureInPicture(): Unit = js.native
+    
+    /* CompleteClass */
+    var isEnabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var isInPictureInPicture: Boolean = js.native
   }
   object default {
     
@@ -36,7 +58,9 @@ object pictureInPictureMod {
   }
   
   @js.native
-  trait PictureInPicture extends IPictureInPicture {
+  trait PictureInPicture
+    extends StObject
+       with IPictureInPicture {
     
     var _eventEmitter: js.Any = js.native
     

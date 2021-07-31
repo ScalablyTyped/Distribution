@@ -6,111 +6,95 @@ import typings.deepDiff.deepDiffStrings.E
 import typings.deepDiff.deepDiffStrings.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("deep-diff", "applyChange")
+  @JSImport("deep-diff", JSImport.Namespace)
   @js.native
-  def applyChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, _]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("deep-diff", "applyDiff")
-  @js.native
-  def applyDiff[LHS, RHS](target: LHS, source: RHS): Unit = js.native
-  @JSImport("deep-diff", "applyDiff")
-  @js.native
-  def applyDiff[LHS, RHS](target: LHS, source: RHS, filter: Filter[LHS, RHS]): Unit = js.native
+  @scala.inline
+  def applyChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("deep-diff", "diff")
-  @js.native
-  def diff[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "diff")
-  @js.native
-  def diff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: js.UndefOr[PreFilter[LHS, RHS]], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "diff")
-  @js.native
-  def diff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "diff")
-  @js.native
-  def diff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = js.native
-  @JSImport("deep-diff", "diff")
-  @js.native
-  def diff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = js.native
+  @scala.inline
+  def applyDiff[LHS, RHS](target: LHS, source: RHS): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiff")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def applyDiff[LHS, RHS](target: LHS, source: RHS, filter: Filter[LHS, RHS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiff")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
-  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS): js.Array[Diff_[LHS, RHS]] = js.native
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
-  def observableDiff[LHS, RHS](
-    lhs: LHS,
-    rhs: RHS,
-    observer: js.UndefOr[scala.Nothing],
-    prefilter: js.UndefOr[PreFilter[LHS, RHS]],
-    orderIndependent: Boolean
-  ): js.Array[Diff_[LHS, RHS]] = js.native
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
-  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: js.UndefOr[scala.Nothing], prefilter: PreFilter[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = js.native
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
-  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = js.native
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
+  @scala.inline
+  def diff[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def diff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: Unit, acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def diff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def diff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  
+  @scala.inline
+  def diff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
+  @scala.inline
+  def diff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
+  
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Unit, prefilter: Unit, orderIndependent: Boolean): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], orderIndependent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Unit, prefilter: PreFilter[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Unit, prefilter: PreFilter[LHS, RHS], orderIndependent: Boolean): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], orderIndependent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS], prefilter: Unit, orderIndependent: Boolean): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], orderIndependent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
+  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS], prefilter: PreFilter[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
+  @scala.inline
   def observableDiff[LHS, RHS](
     lhs: LHS,
     rhs: RHS,
     observer: Observer[LHS, RHS],
-    prefilter: js.UndefOr[PreFilter[LHS, RHS]],
+    prefilter: PreFilter[LHS, RHS],
     orderIndependent: Boolean
-  ): js.Array[Diff_[LHS, RHS]] = js.native
-  @JSImport("deep-diff", "observableDiff")
-  @js.native
-  def observableDiff[LHS, RHS](lhs: LHS, rhs: RHS, observer: Observer[LHS, RHS], prefilter: PreFilter[LHS, RHS]): js.Array[Diff_[LHS, RHS]] = js.native
+  ): js.Array[Diff_[LHS, RHS]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observableDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], observer.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], orderIndependent.asInstanceOf[js.Any])).asInstanceOf[js.Array[Diff_[LHS, RHS]]]
   
-  @JSImport("deep-diff", "orderIndepHash")
-  @js.native
-  def orderIndepHash(`object`: js.Any): Double = js.native
+  @scala.inline
+  def orderIndepHash(`object`: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("orderIndepHash")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("deep-diff", "orderIndependentDeepDiff")
-  @js.native
+  @scala.inline
   def orderIndependentDeepDiff[LHS, RHS](
     lhs: LHS,
     rhs: RHS,
     changes: js.Array[Diff_[LHS, RHS]],
     prefilter: PreFilter[LHS, RHS],
-    path: js.Array[_],
+    path: js.Array[js.Any],
     key: js.Any,
-    stack: js.Array[_]
-  ): Unit = js.native
+    stack: js.Array[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDeepDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], changes.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], path.asInstanceOf[js.Any], key.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("deep-diff", "orderIndependentDiff")
-  @js.native
-  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "orderIndependentDiff")
-  @js.native
-  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: js.UndefOr[PreFilter[LHS, RHS]], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "orderIndependentDiff")
-  @js.native
-  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): Accumulator[LHS, RHS] = js.native
-  @JSImport("deep-diff", "orderIndependentDiff")
-  @js.native
-  def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = js.native
-  @JSImport("deep-diff", "orderIndependentDiff")
-  @js.native
-  def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = js.native
+  @scala.inline
+  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: Unit, acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  @scala.inline
+  def orderIndependentDiff[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
   
-  @JSImport("deep-diff", "revertChange")
-  @js.native
-  def revertChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, _]): Unit = js.native
+  @scala.inline
+  def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
+  @scala.inline
+  def orderIndependentDiff_LHSRHS_Union[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderIndependentDiff")(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
   
-  @js.native
+  @scala.inline
+  def revertChange[LHS](target: LHS, source: js.Any, change: Diff_[LHS, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("revertChange")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], change.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Accumulator[LHS, RHS] extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    def push(diff: Diff_[LHS, RHS]): Unit = js.native
+    def push(diff: Diff_[LHS, RHS]): Unit
   }
   object Accumulator {
     
@@ -121,7 +105,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AccumulatorMutableBuilder[Self <: Accumulator[_, _], LHS, RHS] (val x: Self with (Accumulator[LHS, RHS])) extends AnyVal {
+    implicit class AccumulatorMutableBuilder[Self <: Accumulator[?, ?], LHS, RHS] (val x: Self & (Accumulator[LHS, RHS])) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -131,27 +115,28 @@ object mod {
     }
   }
   
-  @js.native
-  trait DiffArray[LHS, RHS] extends Diff_[LHS, RHS] {
+  trait DiffArray[LHS, RHS]
+    extends StObject
+       with Diff_[LHS, RHS] {
     
-    var index: Double = js.native
+    var index: Double
     
-    var item: Diff_[LHS, RHS] = js.native
+    var item: Diff_[LHS, RHS]
     
-    var kind: A = js.native
+    var kind: A
     
-    var path: js.UndefOr[js.Array[_]] = js.native
+    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DiffArray {
     
     @scala.inline
-    def apply[LHS, RHS](index: Double, item: Diff_[LHS, RHS], kind: A): DiffArray[LHS, RHS] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    def apply[LHS, RHS](index: Double, item: Diff_[LHS, RHS]): DiffArray[LHS, RHS] = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], kind = "A")
       __obj.asInstanceOf[DiffArray[LHS, RHS]]
     }
     
     @scala.inline
-    implicit class DiffArrayMutableBuilder[Self <: DiffArray[_, _], LHS, RHS] (val x: Self with (DiffArray[LHS, RHS])) extends AnyVal {
+    implicit class DiffArrayMutableBuilder[Self <: DiffArray[?, ?], LHS, RHS] (val x: Self & (DiffArray[LHS, RHS])) extends AnyVal {
       
       @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -163,7 +148,7 @@ object mod {
       def setKind(value: A): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: js.Array[_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -173,26 +158,26 @@ object mod {
     }
   }
   
-  @js.native
   trait DiffDeleted[LHS]
-    extends Diff_[LHS, js.Any] {
+    extends StObject
+       with Diff_[LHS, js.Any] {
     
-    var kind: D = js.native
+    var kind: D
     
-    var lhs: LHS = js.native
+    var lhs: LHS
     
-    var path: js.UndefOr[js.Array[_]] = js.native
+    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DiffDeleted {
     
     @scala.inline
-    def apply[LHS](kind: D, lhs: LHS): DiffDeleted[LHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any])
+    def apply[LHS](lhs: LHS): DiffDeleted[LHS] = {
+      val __obj = js.Dynamic.literal(kind = "D", lhs = lhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffDeleted[LHS]]
     }
     
     @scala.inline
-    implicit class DiffDeletedMutableBuilder[Self <: DiffDeleted[_], LHS] (val x: Self with DiffDeleted[LHS]) extends AnyVal {
+    implicit class DiffDeletedMutableBuilder[Self <: DiffDeleted[?], LHS] (val x: Self & DiffDeleted[LHS]) extends AnyVal {
       
       @scala.inline
       def setKind(value: D): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -201,7 +186,7 @@ object mod {
       def setLhs(value: LHS): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: js.Array[_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -211,27 +196,28 @@ object mod {
     }
   }
   
-  @js.native
-  trait DiffEdit[LHS, RHS] extends Diff_[LHS, RHS] {
+  trait DiffEdit[LHS, RHS]
+    extends StObject
+       with Diff_[LHS, RHS] {
     
-    var kind: E = js.native
+    var kind: E
     
-    var lhs: LHS = js.native
+    var lhs: LHS
     
-    var path: js.UndefOr[js.Array[_]] = js.native
+    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var rhs: RHS = js.native
+    var rhs: RHS
   }
   object DiffEdit {
     
     @scala.inline
-    def apply[LHS, RHS](kind: E, lhs: LHS, rhs: RHS): DiffEdit[LHS, RHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    def apply[LHS, RHS](lhs: LHS, rhs: RHS): DiffEdit[LHS, RHS] = {
+      val __obj = js.Dynamic.literal(kind = "E", lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffEdit[LHS, RHS]]
     }
     
     @scala.inline
-    implicit class DiffEditMutableBuilder[Self <: DiffEdit[_, _], LHS, RHS] (val x: Self with (DiffEdit[LHS, RHS])) extends AnyVal {
+    implicit class DiffEditMutableBuilder[Self <: DiffEdit[?, ?], LHS, RHS] (val x: Self & (DiffEdit[LHS, RHS])) extends AnyVal {
       
       @scala.inline
       def setKind(value: E): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
@@ -240,7 +226,7 @@ object mod {
       def setLhs(value: LHS): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: js.Array[_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -253,32 +239,32 @@ object mod {
     }
   }
   
-  @js.native
   trait DiffNew[RHS]
-    extends Diff_[js.Any, RHS] {
+    extends StObject
+       with Diff_[js.Any, RHS] {
     
-    var kind: N = js.native
+    var kind: N
     
-    var path: js.UndefOr[js.Array[_]] = js.native
+    var path: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var rhs: RHS = js.native
+    var rhs: RHS
   }
   object DiffNew {
     
     @scala.inline
-    def apply[RHS](kind: N, rhs: RHS): DiffNew[RHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    def apply[RHS](rhs: RHS): DiffNew[RHS] = {
+      val __obj = js.Dynamic.literal(kind = "N", rhs = rhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiffNew[RHS]]
     }
     
     @scala.inline
-    implicit class DiffNewMutableBuilder[Self <: DiffNew[_], RHS] (val x: Self with DiffNew[RHS]) extends AnyVal {
+    implicit class DiffNewMutableBuilder[Self <: DiffNew[?], RHS] (val x: Self & DiffNew[RHS]) extends AnyVal {
       
       @scala.inline
       def setKind(value: N): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPath(value: js.Array[_]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      def setPath(value: js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -301,26 +287,26 @@ object mod {
   object Diff_ {
     
     @scala.inline
-    def DiffArray[LHS, RHS](index: Double, item: Diff_[LHS, RHS], kind: A): typings.deepDiff.mod.DiffArray[LHS, RHS] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+    def DiffArray[LHS, RHS](index: Double, item: Diff_[LHS, RHS]): typings.deepDiff.mod.DiffArray[LHS, RHS] = {
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], kind = "A")
       __obj.asInstanceOf[typings.deepDiff.mod.DiffArray[LHS, RHS]]
     }
     
     @scala.inline
-    def DiffDeleted[LHS](kind: D, lhs: LHS): typings.deepDiff.mod.DiffDeleted[LHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any])
+    def DiffDeleted[LHS](lhs: LHS): typings.deepDiff.mod.DiffDeleted[LHS] = {
+      val __obj = js.Dynamic.literal(kind = "D", lhs = lhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.deepDiff.mod.DiffDeleted[LHS]]
     }
     
     @scala.inline
-    def DiffEdit[LHS, RHS](kind: E, lhs: LHS, rhs: RHS): typings.deepDiff.mod.DiffEdit[LHS, RHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    def DiffEdit[LHS, RHS](lhs: LHS, rhs: RHS): typings.deepDiff.mod.DiffEdit[LHS, RHS] = {
+      val __obj = js.Dynamic.literal(kind = "E", lhs = lhs.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.deepDiff.mod.DiffEdit[LHS, RHS]]
     }
     
     @scala.inline
-    def DiffNew[RHS](kind: N, rhs: RHS): typings.deepDiff.mod.DiffNew[RHS] = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], rhs = rhs.asInstanceOf[js.Any])
+    def DiffNew[RHS](rhs: RHS): typings.deepDiff.mod.DiffNew[RHS] = {
+      val __obj = js.Dynamic.literal(kind = "N", rhs = rhs.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.deepDiff.mod.DiffNew[RHS]]
     }
   }
@@ -333,7 +319,6 @@ object mod {
   
   type PreFilterFunction = js.Function2[/* path */ js.Array[js.Any], /* key */ js.Any, Boolean]
   
-  @js.native
   trait PreFilterObject[LHS, RHS] extends StObject {
     
     var normalize: js.UndefOr[
@@ -344,9 +329,9 @@ object mod {
           /* rhs */ RHS, 
           js.UndefOr[js.Tuple2[LHS, RHS]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var prefilter: js.UndefOr[js.Function2[/* path */ js.Array[_], /* key */ js.Any, Boolean]] = js.native
+    var prefilter: js.UndefOr[js.Function2[/* path */ js.Array[js.Any], /* key */ js.Any, Boolean]] = js.undefined
   }
   object PreFilterObject {
     
@@ -357,7 +342,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PreFilterObjectMutableBuilder[Self <: PreFilterObject[_, _], LHS, RHS] (val x: Self with (PreFilterObject[LHS, RHS])) extends AnyVal {
+    implicit class PreFilterObjectMutableBuilder[Self <: PreFilterObject[?, ?], LHS, RHS] (val x: Self & (PreFilterObject[LHS, RHS])) extends AnyVal {
       
       @scala.inline
       def setNormalize(
@@ -368,7 +353,7 @@ object mod {
       def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
       @scala.inline
-      def setPrefilter(value: (/* path */ js.Array[_], /* key */ js.Any) => Boolean): Self = StObject.set(x, "prefilter", js.Any.fromFunction2(value))
+      def setPrefilter(value: (/* path */ js.Array[js.Any], /* key */ js.Any) => Boolean): Self = StObject.set(x, "prefilter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPrefilterUndefined: Self = StObject.set(x, "prefilter", js.undefined)

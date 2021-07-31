@@ -7,7 +7,6 @@ import typings.graygelf.mod.GelfMessage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -16,16 +15,15 @@ object anon {
   trait A extends StObject {
     
     def a(short_message: String): GelfMessage = js.native
-    def a(short_message: String, full_message: js.UndefOr[scala.Nothing], customFields: GelfMessage): GelfMessage = js.native
     def a(short_message: String, full_message: String): GelfMessage = js.native
     def a(short_message: String, full_message: String, customFields: GelfMessage): GelfMessage = js.native
+    def a(short_message: String, full_message: Unit, customFields: GelfMessage): GelfMessage = js.native
     def a(short_message: Error): GelfMessage = js.native
-    def a(short_message: Error, full_message: js.UndefOr[scala.Nothing], customFields: GelfMessage): GelfMessage = js.native
     def a(short_message: Error, full_message: String): GelfMessage = js.native
     def a(short_message: Error, full_message: String, customFields: GelfMessage): GelfMessage = js.native
+    def a(short_message: Error, full_message: Unit, customFields: GelfMessage): GelfMessage = js.native
   }
   
-  @js.native
   trait AlwaysCompress extends StObject {
     
     /**
@@ -33,42 +31,42 @@ object anon {
       *
       * @default false
       */
-    var alwaysCompress: js.UndefOr[Boolean] = js.native
+    var alwaysCompress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * size of chunked messages in bytes
       *
       * @default 1240
       */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * compression 'gzip' or 'deflate'
       *
       * @default "deflate"
       */
-    var compressType: js.UndefOr[gzip | deflate] = js.native
+    var compressType: js.UndefOr[gzip | deflate] = js.undefined
     
     /**
       * graylog host
       *
       * @default "localhost"
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * don't send messages to GrayLog2
       *
       * @default false
       */
-    var mock: js.UndefOr[Boolean] = js.native
+    var mock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * graylog port
       *
       * @default 12201
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object AlwaysCompress {
     
@@ -119,9 +117,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /**
+    extends StObject
+       with /**
     * any other
     */
   /* key */ StringDictionary[js.UndefOr[String]] {
@@ -129,7 +127,7 @@ object anon {
     /**
       * Suggested property - facility can be the app name.
       */
-    var facility: js.UndefOr[String] = js.native
+    var facility: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -150,9 +148,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Facility
-    extends /**
+    extends StObject
+       with /**
     * any other
     */
   /* key */ StringDictionary[js.UndefOr[String]] {
@@ -160,7 +158,7 @@ object anon {
     /**
       * Suggested property - facility can be the app name.
       */
-    var facility: js.UndefOr[String] = js.native
+    var facility: js.UndefOr[String] = js.undefined
   }
   object Facility {
     

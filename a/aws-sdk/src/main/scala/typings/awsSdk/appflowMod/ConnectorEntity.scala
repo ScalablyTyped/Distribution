@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorEntity extends StObject {
   
   /**
     *  Specifies whether the connector entity is a parent or a category and has more entities nested underneath it. If another call is made with entitiesPath = "the_current_entity_name_with_hasNestedEntities_true", then it returns the nested entities underneath it. This provides a way to retrieve all supported entities in a recursive fashion. 
     */
-  var hasNestedEntities: js.UndefOr[Boolean] = js.native
+  var hasNestedEntities: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  The label applied to the connector entity. 
     */
-  var label: js.UndefOr[Label] = js.native
+  var label: js.UndefOr[Label] = js.undefined
   
   /**
     *  The name of the connector entity. 
     */
-  var name: Name = js.native
+  var name: Name
 }
 object ConnectorEntity {
   

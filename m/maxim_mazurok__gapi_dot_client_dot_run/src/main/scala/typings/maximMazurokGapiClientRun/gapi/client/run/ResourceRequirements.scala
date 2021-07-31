@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceRequirements extends StObject {
   
   /**
@@ -17,8 +15,8 @@ trait ResourceRequirements extends StObject {
   var limits: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: Only memory and CPU are supported. Note: The only supported values for CPU are '1' and '2'. Cloud Run for Anthos: supported Requests describes
@@ -29,8 +27,8 @@ trait ResourceRequirements extends StObject {
   var requests: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements & TopLevel[js.Any]
+  ] = js.undefined
 }
 object ResourceRequirements {
   
@@ -47,7 +45,7 @@ object ResourceRequirements {
     def setLimits(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements & TopLevel[js.Any]
     ): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -57,7 +55,7 @@ object ResourceRequirements {
     def setRequests(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ResourceRequirements & TopLevel[js.Any]
     ): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
     @scala.inline

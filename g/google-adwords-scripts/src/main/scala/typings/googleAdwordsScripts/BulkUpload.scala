@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkUpload[T] extends StObject {
   
-  def forCampaignManagement(): T = js.native
+  def forCampaignManagement(): T
   
-  def forOfflineConversions(): T = js.native
+  def forOfflineConversions(): T
   
-  def preview(): Unit = js.native
+  def preview(): Unit
   
-  def setFileName(fileName: String): T = js.native
+  def setFileName(fileName: String): T
 }
 object BulkUpload {
   
@@ -30,7 +28,7 @@ object BulkUpload {
   }
   
   @scala.inline
-  implicit class BulkUploadMutableBuilder[Self <: BulkUpload[_], T] (val x: Self with BulkUpload[T]) extends AnyVal {
+  implicit class BulkUploadMutableBuilder[Self <: BulkUpload[?], T] (val x: Self & BulkUpload[T]) extends AnyVal {
     
     @scala.inline
     def setForCampaignManagement(value: () => T): Self = StObject.set(x, "forCampaignManagement", js.Any.fromFunction0(value))

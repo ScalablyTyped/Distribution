@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeValue extends StObject {
   
   /**
     * For number values, expressed as double.
     */
-  var N: js.UndefOr[DoubleObject] = js.native
+  var N: js.UndefOr[DoubleObject] = js.undefined
   
   /**
     * For single string values. Maximum string length is 100 characters.
     */
-  var S: js.UndefOr[NonZeroAndMaxString] = js.native
+  var S: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * For a map of up to 10 data type:value pairs. Maximum length for each string value is 100 characters. 
     */
-  var SDM: js.UndefOr[StringDoubleMap] = js.native
+  var SDM: js.UndefOr[StringDoubleMap] = js.undefined
   
   /**
     * For a list of up to 10 strings. Maximum length for each string is 100 characters. Duplicate values are not recognized; all occurrences of the repeated value after the first of a repeated value are ignored.
     */
-  var SL: js.UndefOr[StringList] = js.native
+  var SL: js.UndefOr[StringList] = js.undefined
 }
 object AttributeValue {
   

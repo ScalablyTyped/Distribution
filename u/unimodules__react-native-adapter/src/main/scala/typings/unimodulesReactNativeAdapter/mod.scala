@@ -11,10 +11,13 @@ import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.
 import typings.unimodulesReactNativeAdapter.unimodulesReactNativeAdapterStrings.windows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@unimodules/react-native-adapter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@unimodules/react-native-adapter", "CodedError")
   @js.native
@@ -83,7 +86,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@unimodules/react-native-adapter", "RCTDeviceEventEmitter")
   @js.native
-  class RCTDeviceEventEmitter () extends DeviceEventEmitterStatic
+  class RCTDeviceEventEmitter ()
+    extends StObject
+       with DeviceEventEmitterStatic
   @JSImport("@unimodules/react-native-adapter", "RCTDeviceEventEmitter")
   @js.native
   val RCTDeviceEventEmitter: DeviceEventEmitterStatic = js.native
@@ -99,7 +104,6 @@ object mod {
     def this(moduleName: String, propertyName: String) = this()
   }
   
-  @JSImport("@unimodules/react-native-adapter", "requireNativeViewManager")
-  @js.native
-  def requireNativeViewManager[P](viewName: String): ComponentType[P] = js.native
+  @scala.inline
+  def requireNativeViewManager[P](viewName: String): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("requireNativeViewManager")(viewName.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
 }

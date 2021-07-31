@@ -8,30 +8,27 @@ import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExcep
 import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.UpdateDefaultBranchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidBranchNameExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidBranchNameExceptionDetails> * / any */ @js.native
-  trait InvalidBranchNameException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidBranchNameExceptionDetails> * / any */ trait InvalidBranchNameException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with DeleteBranchExceptionsUnion
        with DeleteFileExceptionsUnion
        with GetBranchExceptionsUnion
        with PutFileExceptionsUnion
        with UpdateDefaultBranchExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException
   }
   object InvalidBranchNameException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBranchNameException
-    ): InvalidBranchNameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidBranchNameException = {
+      val __obj = js.Dynamic.literal(name = "InvalidBranchNameException")
       __obj.asInstanceOf[InvalidBranchNameException]
     }
     
@@ -45,6 +42,5 @@ object typesInvalidBranchNameExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidBranchNameExceptionDetails extends StObject
 }

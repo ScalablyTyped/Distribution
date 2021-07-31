@@ -2,23 +2,21 @@ package typings.webpackbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait File extends StObject {
     
-    val file: Null | String = js.native
+    val file: Null | String
     
-    val loaders: js.Array[String] = js.native
+    val loaders: js.Array[String]
   }
   object File {
     
     @scala.inline
     def apply(loaders: js.Array[String]): File = {
-      val __obj = js.Dynamic.literal(loaders = loaders.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(loaders = loaders.asInstanceOf[js.Any], file = null)
       __obj.asInstanceOf[File]
     }
     

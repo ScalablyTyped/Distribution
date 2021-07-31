@@ -4,7 +4,6 @@ import typings.firebaseDatabase.indexMod.Index
 import typings.firebaseDatabase.nodeMod.NamedNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueIndexMod {

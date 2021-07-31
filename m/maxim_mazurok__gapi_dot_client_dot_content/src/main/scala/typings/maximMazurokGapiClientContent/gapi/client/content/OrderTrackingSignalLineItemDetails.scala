@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderTrackingSignalLineItemDetails extends StObject {
   
   /** The Global Trade Item Number. */
-  var gtin: js.UndefOr[String] = js.native
+  var gtin: js.UndefOr[String] = js.undefined
   
   /** Required. The ID for this line item. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** The manufacturer part number. */
-  var mpn: js.UndefOr[String] = js.native
+  var mpn: js.UndefOr[String] = js.undefined
   
   /** Required. The Content API REST ID of the product, in the form channel:contentLanguage:targetCountry:offerId. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** Required. The quantity of the line item in the order. */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
 }
 object OrderTrackingSignalLineItemDetails {
   

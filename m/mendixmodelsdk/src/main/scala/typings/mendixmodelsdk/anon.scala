@@ -23,43 +23,43 @@ import typings.mendixmodelsdk.transportInterfacesMod.SuccessAppState
 import typings.mendixmodelsdk.utilsMod.utils.IMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait AppType extends IEnvironmentStatus {
+  trait AppType
+    extends StObject
+       with IEnvironmentStatus {
     
-    var appType: js.UndefOr[Licensed | Unlicensed | Sandbox] = js.native
+    var appType: js.UndefOr[Licensed | Unlicensed | Sandbox] = js.undefined
     
-    var buildErrors: js.UndefOr[js.Array[IBuildError]] = js.native
+    var buildErrors: js.UndefOr[js.Array[IBuildError]] = js.undefined
     
-    var buildstatus: String | Null = js.native
+    var buildstatus: String | Null
     
-    var consistencyErrors: js.UndefOr[js.Array[IProblem]] = js.native
+    var consistencyErrors: js.UndefOr[js.Array[IProblem]] = js.undefined
     
-    var disk: Double = js.native
+    var disk: Double
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var environmentId: String = js.native
+    var environmentId: String
     
-    var instances: Double = js.native
+    var instances: Double
     
-    var memory: Double = js.native
+    var memory: Double
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var profile: String = js.native
+    var profile: String
     
-    var state: SuccessAppState = js.native
+    var state: SuccessAppState
     
-    var `type`: success_ = js.native
+    var `type`: success_
     
-    var url: String = js.native
+    var url: String
   }
   object AppType {
     
@@ -73,11 +73,10 @@ object anon {
       name: String,
       profile: String,
       state: SuccessAppState,
-      `type`: success_,
       url: String
     ): AppType = {
-      val __obj = js.Dynamic.literal(disk = disk.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], environmentId = environmentId.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(disk = disk.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], environmentId = environmentId.asInstanceOf[js.Any], instances = instances.asInstanceOf[js.Any], memory = memory.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], buildstatus = null)
+      __obj.updateDynamic("type")("success")
       __obj.asInstanceOf[AppType]
     }
     
@@ -152,23 +151,24 @@ object anon {
     }
   }
   
-  @js.native
-  trait Cause extends IEnvironmentStatus {
+  trait Cause
+    extends StObject
+       with IEnvironmentStatus {
     
-    var cause: js.UndefOr[String] = js.native
+    var cause: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var state: CannotFixAppState = js.native
+    var state: CannotFixAppState
     
-    var `type`: fail = js.native
+    var `type`: fail
   }
   object Cause {
     
     @scala.inline
-    def apply(state: CannotFixAppState, `type`: fail): Cause = {
+    def apply(state: CannotFixAppState): Cause = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fail")
       __obj.asInstanceOf[Cause]
     }
     
@@ -195,12 +195,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Copy extends StObject {
     
-    var copy: Element[IAbstractModel] = js.native
+    var copy: Element[IAbstractModel]
     
-    var idMap: IMap[Structure[IAbstractModel, IContainer | Null]] = js.native
+    var idMap: IMap[Structure[IAbstractModel, IContainer | Null]]
   }
   object Copy {
     
@@ -221,21 +220,20 @@ object anon {
     }
   }
   
-  @js.native
   trait EventId extends StObject {
     
-    var eventId: Double = js.native
+    var eventId: Double
     
-    var message: String = js.native
+    var message: String
     
-    var problems: js.Array[_] = js.native
+    var problems: js.Array[js.Any]
     
-    var status: BuildResultStatus = js.native
+    var status: BuildResultStatus
   }
   object EventId {
     
     @scala.inline
-    def apply(eventId: Double, message: String, problems: js.Array[_], status: BuildResultStatus): EventId = {
+    def apply(eventId: Double, message: String, problems: js.Array[js.Any], status: BuildResultStatus): EventId = {
       val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], problems = problems.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventId]
     }
@@ -250,7 +248,7 @@ object anon {
       def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProblems(value: js.Array[_]): Self = StObject.set(x, "problems", value.asInstanceOf[js.Any])
+      def setProblems(value: js.Array[js.Any]): Self = StObject.set(x, "problems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProblemsVarargs(value: js.Any*): Self = StObject.set(x, "problems", js.Array(value :_*))
@@ -268,17 +266,18 @@ object anon {
   }
   
   @js.native
-  trait Instantiable[CT /* <: AbstractModel with IT */, IT /* <: IAbstractModel */] extends Instantiable3[
+  trait Instantiable[CT /* <: AbstractModel & IT */, IT /* <: IAbstractModel */]
+    extends StObject
+       with Instantiable3[
           /* _client */ IModelServerClient, 
           /* _errorHandler */ IErrorCallback, 
           /* _connectionConfig */ ISdkConfig, 
           CT
         ]
   
-  @js.native
   trait ToRawChangeValue[P] extends StObject {
     
-    def toRawChangeValue(value: P): js.Any = js.native
+    def toRawChangeValue(value: P): js.Any
   }
   object ToRawChangeValue {
     
@@ -289,7 +288,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ToRawChangeValueMutableBuilder[Self <: ToRawChangeValue[_], P] (val x: Self with ToRawChangeValue[P]) extends AnyVal {
+    implicit class ToRawChangeValueMutableBuilder[Self <: ToRawChangeValue[?], P] (val x: Self & ToRawChangeValue[P]) extends AnyVal {
       
       @scala.inline
       def setToRawChangeValue(value: P => js.Any): Self = StObject.set(x, "toRawChangeValue", js.Any.fromFunction1(value))

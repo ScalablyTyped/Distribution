@@ -6,7 +6,6 @@ import typings.typeorm.typeormStrings.delete
 import typings.typeorm.typeormStrings.insert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subjectTopoligicalSorterMod {
@@ -61,6 +60,6 @@ object subjectTopoligicalSorterMod {
       *
       * Algorithm is kindly taken from https://github.com/marcelklehr/toposort repository.
       */
-    /* protected */ def toposort(edges: js.Array[js.Array[_]]): js.Array[_] = js.native
+    /* protected */ def toposort(edges: js.Array[js.Array[js.Any]]): js.Array[js.Any] = js.native
   }
 }

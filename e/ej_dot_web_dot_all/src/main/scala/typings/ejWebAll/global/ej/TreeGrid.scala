@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.TreeGrid")
 @js.native
 class TreeGrid protected ()
-  extends typings.ejWebAll.ej.TreeGrid {
+  extends StObject
+     with typings.ejWebAll.ej.TreeGrid {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,13 +27,13 @@ object TreeGrid {
   object BatchEditMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BatchEditMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BatchEditMode & Double] = js.native
     
-    /* 0 */ val Cell: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Cell with Double = js.native
+    /* 0 */ val Cell: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Cell & Double = js.native
     
-    /* 2 */ val Dialog: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Dialog with Double = js.native
+    /* 2 */ val Dialog: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Dialog & Double = js.native
     
-    /* 1 */ val Row: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Row with Double = js.native
+    /* 1 */ val Row: typings.ejWebAll.ej.TreeGrid.BatchEditMode.Row & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.BeginEditAction")
@@ -41,11 +41,11 @@ object TreeGrid {
   object BeginEditAction extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BeginEditAction with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.BeginEditAction & Double] = js.native
     
-    /* 1 */ val Click: typings.ejWebAll.ej.TreeGrid.BeginEditAction.Click with Double = js.native
+    /* 1 */ val Click: typings.ejWebAll.ej.TreeGrid.BeginEditAction.Click & Double = js.native
     
-    /* 0 */ val DblClick: typings.ejWebAll.ej.TreeGrid.BeginEditAction.DblClick with Double = js.native
+    /* 0 */ val DblClick: typings.ejWebAll.ej.TreeGrid.BeginEditAction.DblClick & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.ClipMode")
@@ -53,11 +53,11 @@ object TreeGrid {
   object ClipMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ClipMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ClipMode & Double] = js.native
     
-    /* 1 */ val Clip: typings.ejWebAll.ej.TreeGrid.ClipMode.Clip with Double = js.native
+    /* 1 */ val Clip: typings.ejWebAll.ej.TreeGrid.ClipMode.Clip & Double = js.native
     
-    /* 0 */ val Ellipsis: typings.ejWebAll.ej.TreeGrid.ClipMode.Ellipsis with Double = js.native
+    /* 0 */ val Ellipsis: typings.ejWebAll.ej.TreeGrid.ClipMode.Ellipsis & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.ColumnResizeMode")
@@ -65,13 +65,13 @@ object TreeGrid {
   object ColumnResizeMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ColumnResizeMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ColumnResizeMode & Double] = js.native
     
-    /* 0 */ val FixedColumns: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.FixedColumns with Double = js.native
+    /* 0 */ val FixedColumns: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.FixedColumns & Double = js.native
     
-    /* 1 */ val NextColumn: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.NextColumn with Double = js.native
+    /* 1 */ val NextColumn: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.NextColumn & Double = js.native
     
-    /* 2 */ val Normal: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.Normal with Double = js.native
+    /* 2 */ val Normal: typings.ejWebAll.ej.TreeGrid.ColumnResizeMode.Normal & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.ContextMenuItems")
@@ -79,13 +79,13 @@ object TreeGrid {
   object ContextMenuItems extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ContextMenuItems with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ContextMenuItems & Double] = js.native
     
-    /* 0 */ val Add: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Add with Double = js.native
+    /* 0 */ val Add: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Add & Double = js.native
     
-    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Delete with Double = js.native
+    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Delete & Double = js.native
     
-    /* 1 */ val Edit: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Edit with Double = js.native
+    /* 1 */ val Edit: typings.ejWebAll.ej.TreeGrid.ContextMenuItems.Edit & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.EditMode")
@@ -93,15 +93,15 @@ object TreeGrid {
   object EditMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditMode & Double] = js.native
     
-    /* 3 */ val BatchEditing: typings.ejWebAll.ej.TreeGrid.EditMode.BatchEditing with Double = js.native
+    /* 3 */ val BatchEditing: typings.ejWebAll.ej.TreeGrid.EditMode.BatchEditing & Double = js.native
     
-    /* 0 */ val CellEditing: typings.ejWebAll.ej.TreeGrid.EditMode.CellEditing with Double = js.native
+    /* 0 */ val CellEditing: typings.ejWebAll.ej.TreeGrid.EditMode.CellEditing & Double = js.native
     
-    /* 2 */ val DialogEditing: typings.ejWebAll.ej.TreeGrid.EditMode.DialogEditing with Double = js.native
+    /* 2 */ val DialogEditing: typings.ejWebAll.ej.TreeGrid.EditMode.DialogEditing & Double = js.native
     
-    /* 1 */ val RowEditing: typings.ejWebAll.ej.TreeGrid.EditMode.RowEditing with Double = js.native
+    /* 1 */ val RowEditing: typings.ejWebAll.ej.TreeGrid.EditMode.RowEditing & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.EditingType")
@@ -109,21 +109,21 @@ object TreeGrid {
   object EditingType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditingType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.EditingType & Double] = js.native
     
-    /* 1 */ val Boolean: typings.ejWebAll.ej.TreeGrid.EditingType.Boolean with Double = js.native
+    /* 1 */ val Boolean: typings.ejWebAll.ej.TreeGrid.EditingType.Boolean & Double = js.native
     
-    /* 4 */ val DatePicker: typings.ejWebAll.ej.TreeGrid.EditingType.DatePicker with Double = js.native
+    /* 4 */ val DatePicker: typings.ejWebAll.ej.TreeGrid.EditingType.DatePicker & Double = js.native
     
-    /* 5 */ val DateTimePicker: typings.ejWebAll.ej.TreeGrid.EditingType.DateTimePicker with Double = js.native
+    /* 5 */ val DateTimePicker: typings.ejWebAll.ej.TreeGrid.EditingType.DateTimePicker & Double = js.native
     
-    /* 3 */ val Dropdown: typings.ejWebAll.ej.TreeGrid.EditingType.Dropdown with Double = js.native
+    /* 3 */ val Dropdown: typings.ejWebAll.ej.TreeGrid.EditingType.Dropdown & Double = js.native
     
-    /* 6 */ val Maskedit: typings.ejWebAll.ej.TreeGrid.EditingType.Maskedit with Double = js.native
+    /* 6 */ val Maskedit: typings.ejWebAll.ej.TreeGrid.EditingType.Maskedit & Double = js.native
     
-    /* 2 */ val Numeric: typings.ejWebAll.ej.TreeGrid.EditingType.Numeric with Double = js.native
+    /* 2 */ val Numeric: typings.ejWebAll.ej.TreeGrid.EditingType.Numeric & Double = js.native
     
-    /* 0 */ val String: typings.ejWebAll.ej.TreeGrid.EditingType.String with Double = js.native
+    /* 0 */ val String: typings.ejWebAll.ej.TreeGrid.EditingType.String & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.FilterHierarchyMode")
@@ -131,15 +131,15 @@ object TreeGrid {
   object FilterHierarchyMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode & Double] = js.native
     
-    /* 2 */ val Both: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Both with Double = js.native
+    /* 2 */ val Both: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Both & Double = js.native
     
-    /* 1 */ val Child: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Child with Double = js.native
+    /* 1 */ val Child: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Child & Double = js.native
     
-    /* 3 */ val None: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.None with Double = js.native
+    /* 3 */ val None: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.None & Double = js.native
     
-    /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Parent with Double = js.native
+    /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.FilterHierarchyMode.Parent & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.FilterType")
@@ -147,11 +147,11 @@ object TreeGrid {
   object FilterType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.FilterType & Double] = js.native
     
-    /* 1 */ val Excel: typings.ejWebAll.ej.TreeGrid.FilterType.Excel with Double = js.native
+    /* 1 */ val Excel: typings.ejWebAll.ej.TreeGrid.FilterType.Excel & Double = js.native
     
-    /* 0 */ val Menu: typings.ejWebAll.ej.TreeGrid.FilterType.Menu with Double = js.native
+    /* 0 */ val Menu: typings.ejWebAll.ej.TreeGrid.FilterType.Menu & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.HeaderTextOverflow")
@@ -159,11 +159,11 @@ object TreeGrid {
   object HeaderTextOverflow extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow & Double] = js.native
     
-    /* 0 */ val None: typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow.None with Double = js.native
+    /* 0 */ val None: typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow.None & Double = js.native
     
-    /* 1 */ val Wrap: typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow.Wrap with Double = js.native
+    /* 1 */ val Wrap: typings.ejWebAll.ej.TreeGrid.HeaderTextOverflow.Wrap & Double = js.native
   }
   
   /* static member */
@@ -178,11 +178,11 @@ object TreeGrid {
   object PageSizeMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PageSizeMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PageSizeMode & Double] = js.native
     
-    /* 0 */ val All: typings.ejWebAll.ej.TreeGrid.PageSizeMode.All with Double = js.native
+    /* 0 */ val All: typings.ejWebAll.ej.TreeGrid.PageSizeMode.All & Double = js.native
     
-    /* 1 */ val Root: typings.ejWebAll.ej.TreeGrid.PageSizeMode.Root with Double = js.native
+    /* 1 */ val Root: typings.ejWebAll.ej.TreeGrid.PageSizeMode.Root & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.PrintMode")
@@ -190,11 +190,11 @@ object TreeGrid {
   object PrintMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PrintMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.PrintMode & Double] = js.native
     
-    /* 0 */ val AllPages: typings.ejWebAll.ej.TreeGrid.PrintMode.AllPages with Double = js.native
+    /* 0 */ val AllPages: typings.ejWebAll.ej.TreeGrid.PrintMode.AllPages & Double = js.native
     
-    /* 1 */ val CurrentPage: typings.ejWebAll.ej.TreeGrid.PrintMode.CurrentPage with Double = js.native
+    /* 1 */ val CurrentPage: typings.ejWebAll.ej.TreeGrid.PrintMode.CurrentPage & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.RowPosition")
@@ -202,17 +202,17 @@ object TreeGrid {
   object RowPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.RowPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.RowPosition & Double] = js.native
     
-    /* 2 */ val Above: typings.ejWebAll.ej.TreeGrid.RowPosition.Above with Double = js.native
+    /* 2 */ val Above: typings.ejWebAll.ej.TreeGrid.RowPosition.Above & Double = js.native
     
-    /* 3 */ val Below: typings.ejWebAll.ej.TreeGrid.RowPosition.Below with Double = js.native
+    /* 3 */ val Below: typings.ejWebAll.ej.TreeGrid.RowPosition.Below & Double = js.native
     
-    /* 1 */ val Bottom: typings.ejWebAll.ej.TreeGrid.RowPosition.Bottom with Double = js.native
+    /* 1 */ val Bottom: typings.ejWebAll.ej.TreeGrid.RowPosition.Bottom & Double = js.native
     
-    /* 4 */ val Child: typings.ejWebAll.ej.TreeGrid.RowPosition.Child with Double = js.native
+    /* 4 */ val Child: typings.ejWebAll.ej.TreeGrid.RowPosition.Child & Double = js.native
     
-    /* 0 */ val Top: typings.ejWebAll.ej.TreeGrid.RowPosition.Top with Double = js.native
+    /* 0 */ val Top: typings.ejWebAll.ej.TreeGrid.RowPosition.Top & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.SearchHierarchyMode")
@@ -220,15 +220,15 @@ object TreeGrid {
   object SearchHierarchyMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode & Double] = js.native
     
-    /* 2 */ val Both: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Both with Double = js.native
+    /* 2 */ val Both: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Both & Double = js.native
     
-    /* 1 */ val Child: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Child with Double = js.native
+    /* 1 */ val Child: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Child & Double = js.native
     
-    /* 3 */ val None: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.None with Double = js.native
+    /* 3 */ val None: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.None & Double = js.native
     
-    /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Parent with Double = js.native
+    /* 0 */ val Parent: typings.ejWebAll.ej.TreeGrid.SearchHierarchyMode.Parent & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.SelectionMode")
@@ -236,11 +236,11 @@ object TreeGrid {
   object SelectionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionMode & Double] = js.native
     
-    /* 1 */ val Cell: typings.ejWebAll.ej.TreeGrid.SelectionMode.Cell with Double = js.native
+    /* 1 */ val Cell: typings.ejWebAll.ej.TreeGrid.SelectionMode.Cell & Double = js.native
     
-    /* 0 */ val Row: typings.ejWebAll.ej.TreeGrid.SelectionMode.Row with Double = js.native
+    /* 0 */ val Row: typings.ejWebAll.ej.TreeGrid.SelectionMode.Row & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.SelectionType")
@@ -248,13 +248,13 @@ object TreeGrid {
   object SelectionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SelectionType & Double] = js.native
     
-    /* 2 */ val Checkbox: typings.ejWebAll.ej.TreeGrid.SelectionType.Checkbox with Double = js.native
+    /* 2 */ val Checkbox: typings.ejWebAll.ej.TreeGrid.SelectionType.Checkbox & Double = js.native
     
-    /* 1 */ val Multiple: typings.ejWebAll.ej.TreeGrid.SelectionType.Multiple with Double = js.native
+    /* 1 */ val Multiple: typings.ejWebAll.ej.TreeGrid.SelectionType.Multiple & Double = js.native
     
-    /* 0 */ val Single: typings.ejWebAll.ej.TreeGrid.SelectionType.Single with Double = js.native
+    /* 0 */ val Single: typings.ejWebAll.ej.TreeGrid.SelectionType.Single & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.SummaryType")
@@ -262,27 +262,27 @@ object TreeGrid {
   object SummaryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SummaryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.SummaryType & Double] = js.native
     
-    /* 1 */ val Average: typings.ejWebAll.ej.TreeGrid.SummaryType.Average with Double = js.native
+    /* 1 */ val Average: typings.ejWebAll.ej.TreeGrid.SummaryType.Average & Double = js.native
     
-    /* 4 */ val Count: typings.ejWebAll.ej.TreeGrid.SummaryType.Count with Double = js.native
+    /* 4 */ val Count: typings.ejWebAll.ej.TreeGrid.SummaryType.Count & Double = js.native
     
-    /* 9 */ val Custom: typings.ejWebAll.ej.TreeGrid.SummaryType.Custom with Double = js.native
+    /* 9 */ val Custom: typings.ejWebAll.ej.TreeGrid.SummaryType.Custom & Double = js.native
     
-    /* 8 */ val FalseCount: typings.ejWebAll.ej.TreeGrid.SummaryType.FalseCount with Double = js.native
+    /* 8 */ val FalseCount: typings.ejWebAll.ej.TreeGrid.SummaryType.FalseCount & Double = js.native
     
-    /* 2 */ val Maximum: typings.ejWebAll.ej.TreeGrid.SummaryType.Maximum with Double = js.native
+    /* 2 */ val Maximum: typings.ejWebAll.ej.TreeGrid.SummaryType.Maximum & Double = js.native
     
-    /* 6 */ val MaximumDate: typings.ejWebAll.ej.TreeGrid.SummaryType.MaximumDate with Double = js.native
+    /* 6 */ val MaximumDate: typings.ejWebAll.ej.TreeGrid.SummaryType.MaximumDate & Double = js.native
     
-    /* 3 */ val Minimum: typings.ejWebAll.ej.TreeGrid.SummaryType.Minimum with Double = js.native
+    /* 3 */ val Minimum: typings.ejWebAll.ej.TreeGrid.SummaryType.Minimum & Double = js.native
     
-    /* 5 */ val MinimumDate: typings.ejWebAll.ej.TreeGrid.SummaryType.MinimumDate with Double = js.native
+    /* 5 */ val MinimumDate: typings.ejWebAll.ej.TreeGrid.SummaryType.MinimumDate & Double = js.native
     
-    /* 0 */ val Sum: typings.ejWebAll.ej.TreeGrid.SummaryType.Sum with Double = js.native
+    /* 0 */ val Sum: typings.ejWebAll.ej.TreeGrid.SummaryType.Sum & Double = js.native
     
-    /* 7 */ val TrueCount: typings.ejWebAll.ej.TreeGrid.SummaryType.TrueCount with Double = js.native
+    /* 7 */ val TrueCount: typings.ejWebAll.ej.TreeGrid.SummaryType.TrueCount & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.ToolbarItems")
@@ -290,29 +290,29 @@ object TreeGrid {
   object ToolbarItems extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ToolbarItems with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.ToolbarItems & Double] = js.native
     
-    /* 0 */ val Add: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Add with Double = js.native
+    /* 0 */ val Add: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Add & Double = js.native
     
-    /* 4 */ val Cancel: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Cancel with Double = js.native
+    /* 4 */ val Cancel: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Cancel & Double = js.native
     
-    /* 6 */ val CollapseAll: typings.ejWebAll.ej.TreeGrid.ToolbarItems.CollapseAll with Double = js.native
+    /* 6 */ val CollapseAll: typings.ejWebAll.ej.TreeGrid.ToolbarItems.CollapseAll & Double = js.native
     
-    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Delete with Double = js.native
+    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Delete & Double = js.native
     
-    /* 1 */ val Edit: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Edit with Double = js.native
+    /* 1 */ val Edit: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Edit & Double = js.native
     
-    /* 8 */ val ExcelExport: typings.ejWebAll.ej.TreeGrid.ToolbarItems.ExcelExport with Double = js.native
+    /* 8 */ val ExcelExport: typings.ejWebAll.ej.TreeGrid.ToolbarItems.ExcelExport & Double = js.native
     
-    /* 5 */ val ExpandAll: typings.ejWebAll.ej.TreeGrid.ToolbarItems.ExpandAll with Double = js.native
+    /* 5 */ val ExpandAll: typings.ejWebAll.ej.TreeGrid.ToolbarItems.ExpandAll & Double = js.native
     
-    /* 7 */ val PdfExport: typings.ejWebAll.ej.TreeGrid.ToolbarItems.PdfExport with Double = js.native
+    /* 7 */ val PdfExport: typings.ejWebAll.ej.TreeGrid.ToolbarItems.PdfExport & Double = js.native
     
-    /* 9 */ val Print: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Print with Double = js.native
+    /* 9 */ val Print: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Print & Double = js.native
     
-    /* 10 */ val Search: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Search with Double = js.native
+    /* 10 */ val Search: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Search & Double = js.native
     
-    /* 3 */ val Update: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Update with Double = js.native
+    /* 3 */ val Update: typings.ejWebAll.ej.TreeGrid.ToolbarItems.Update & Double = js.native
   }
   
   @JSGlobal("ej.TreeGrid.UnboundType")
@@ -320,15 +320,15 @@ object TreeGrid {
   object UnboundType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.UnboundType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.TreeGrid.UnboundType & Double] = js.native
     
-    /* 3 */ val Cancel: typings.ejWebAll.ej.TreeGrid.UnboundType.Cancel with Double = js.native
+    /* 3 */ val Cancel: typings.ejWebAll.ej.TreeGrid.UnboundType.Cancel & Double = js.native
     
-    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.UnboundType.Delete with Double = js.native
+    /* 2 */ val Delete: typings.ejWebAll.ej.TreeGrid.UnboundType.Delete & Double = js.native
     
-    /* 0 */ val Edit: typings.ejWebAll.ej.TreeGrid.UnboundType.Edit with Double = js.native
+    /* 0 */ val Edit: typings.ejWebAll.ej.TreeGrid.UnboundType.Edit & Double = js.native
     
-    /* 1 */ val Save: typings.ejWebAll.ej.TreeGrid.UnboundType.Save with Double = js.native
+    /* 1 */ val Save: typings.ejWebAll.ej.TreeGrid.UnboundType.Save & Double = js.native
   }
   
   /* static member */

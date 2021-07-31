@@ -4,10 +4,8 @@ import typings.jqueryTipsy.JQueryTipsy.Options
 import typings.jqueryTipsy.JQueryTipsy.Tipsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
   /**
@@ -16,11 +14,26 @@ trait JQuery extends StObject {
   /**
     * initialize tipsy plugin
     */
-  def tipsy(): JQuery = js.native
-  def tipsy(options: Options): JQuery = js.native
+  def tipsy(): JQuery
+  def tipsy(options: Options): JQuery
   /**
     * initialize tipsy plugin
     */
   @JSName("tipsy")
-  var tipsy_Original: Tipsy = js.native
+  var tipsy_Original: Tipsy
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(tipsy: Tipsy): JQuery = {
+    val __obj = js.Dynamic.literal(tipsy = tipsy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTipsy(value: Tipsy): Self = StObject.set(x, "tipsy", value.asInstanceOf[js.Any])
+  }
 }

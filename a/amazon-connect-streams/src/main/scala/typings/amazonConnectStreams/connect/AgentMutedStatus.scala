@@ -2,14 +2,12 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentMutedStatus extends StObject {
   
   /** A value indicating whether the agent local media is muted. */
-  val muted: Boolean = js.native
+  val muted: Boolean
 }
 object AgentMutedStatus {
   

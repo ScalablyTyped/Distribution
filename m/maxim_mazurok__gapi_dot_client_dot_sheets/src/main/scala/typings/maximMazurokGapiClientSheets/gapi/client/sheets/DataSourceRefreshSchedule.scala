@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceRefreshSchedule extends StObject {
   
   /** Daily refresh schedule. */
-  var dailySchedule: js.UndefOr[DataSourceRefreshDailySchedule] = js.native
+  var dailySchedule: js.UndefOr[DataSourceRefreshDailySchedule] = js.undefined
   
   /** True if the refresh schedule is enabled, or false otherwise. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** Monthly refresh schedule. */
-  var monthlySchedule: js.UndefOr[DataSourceRefreshMonthlySchedule] = js.native
+  var monthlySchedule: js.UndefOr[DataSourceRefreshMonthlySchedule] = js.undefined
   
   /** Output only. The time interval of the next run. */
-  var nextRun: js.UndefOr[Interval] = js.native
+  var nextRun: js.UndefOr[Interval] = js.undefined
   
   /** The scope of the refresh. Must be ALL_DATA_SOURCES. */
-  var refreshScope: js.UndefOr[String] = js.native
+  var refreshScope: js.UndefOr[String] = js.undefined
   
   /** Weekly refresh schedule. */
-  var weeklySchedule: js.UndefOr[DataSourceRefreshWeeklySchedule] = js.native
+  var weeklySchedule: js.UndefOr[DataSourceRefreshWeeklySchedule] = js.undefined
 }
 object DataSourceRefreshSchedule {
   

@@ -2,20 +2,18 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@js.native
 trait SjclExceptions extends StObject {
   
-  var bug: SjclExceptionFactory = js.native
+  var bug: SjclExceptionFactory
   
-  var corrupt: SjclExceptionFactory = js.native
+  var corrupt: SjclExceptionFactory
   
-  var invalid: SjclExceptionFactory = js.native
+  var invalid: SjclExceptionFactory
   
-  var notReady: SjclExceptionFactory = js.native
+  var notReady: SjclExceptionFactory
 }
 object SjclExceptions {
   

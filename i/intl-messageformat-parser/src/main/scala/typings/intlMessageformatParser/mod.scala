@@ -2,7 +2,6 @@ package typings.intlMessageformatParser
 
 import typings.intlMessageformatParser.srcParserMod.Expectation
 import typings.intlMessageformatParser.srcParserMod.IFileRange
-import typings.intlMessageformatParser.srcParserMod.IParseOptions
 import typings.intlMessageformatParser.srcParserMod.ParseFunction
 import typings.intlMessageformatParser.srcTypesMod.DateTimeSkeleton
 import typings.intlMessageformatParser.srcTypesMod.LiteralElement
@@ -13,10 +12,13 @@ import typings.intlMessageformatParser.srcTypesMod.Options
 import typings.intlMessageformatParser.srcTypesMod.Skeleton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("intl-messageformat-parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("intl-messageformat-parser", "SyntaxError")
   @js.native
@@ -28,12 +30,14 @@ object mod {
   /* static members */
   object SyntaxError {
     
-    @JSImport("intl-messageformat-parser", "SyntaxError.buildMessage")
+    @JSImport("intl-messageformat-parser", "SyntaxError")
     @js.native
-    def buildMessage(expected: js.Array[Expectation]): String = js.native
-    @JSImport("intl-messageformat-parser", "SyntaxError.buildMessage")
-    @js.native
-    def buildMessage(expected: js.Array[Expectation], found: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildMessage(expected: js.Array[Expectation]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def buildMessage(expected: js.Array[Expectation], found: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any], found.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("intl-messageformat-parser", "TYPE")
@@ -41,101 +45,132 @@ object mod {
   object TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.intlMessageformatParser.srcTypesMod.TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.intlMessageformatParser.srcTypesMod.TYPE & Double] = js.native
     
-    /* 1 */ val argument: typings.intlMessageformatParser.srcTypesMod.TYPE.argument with Double = js.native
+    /* 1 */ val argument: typings.intlMessageformatParser.srcTypesMod.TYPE.argument & Double = js.native
     
-    /* 3 */ val date: typings.intlMessageformatParser.srcTypesMod.TYPE.date with Double = js.native
+    /* 3 */ val date: typings.intlMessageformatParser.srcTypesMod.TYPE.date & Double = js.native
     
-    /* 0 */ val literal: typings.intlMessageformatParser.srcTypesMod.TYPE.literal with Double = js.native
+    /* 0 */ val literal: typings.intlMessageformatParser.srcTypesMod.TYPE.literal & Double = js.native
     
-    /* 2 */ val number: typings.intlMessageformatParser.srcTypesMod.TYPE.number with Double = js.native
+    /* 2 */ val number: typings.intlMessageformatParser.srcTypesMod.TYPE.number & Double = js.native
     
-    /* 6 */ val plural: typings.intlMessageformatParser.srcTypesMod.TYPE.plural with Double = js.native
+    /* 6 */ val plural: typings.intlMessageformatParser.srcTypesMod.TYPE.plural & Double = js.native
     
-    /* 7 */ val pound: typings.intlMessageformatParser.srcTypesMod.TYPE.pound with Double = js.native
+    /* 7 */ val pound: typings.intlMessageformatParser.srcTypesMod.TYPE.pound & Double = js.native
     
-    /* 5 */ val select: typings.intlMessageformatParser.srcTypesMod.TYPE.select with Double = js.native
+    /* 5 */ val select: typings.intlMessageformatParser.srcTypesMod.TYPE.select & Double = js.native
     
-    /* 8 */ val tag: typings.intlMessageformatParser.srcTypesMod.TYPE.tag with Double = js.native
+    /* 8 */ val tag: typings.intlMessageformatParser.srcTypesMod.TYPE.tag & Double = js.native
     
-    /* 4 */ val time: typings.intlMessageformatParser.srcTypesMod.TYPE.time with Double = js.native
+    /* 4 */ val time: typings.intlMessageformatParser.srcTypesMod.TYPE.time & Double = js.native
   }
   
-  @JSImport("intl-messageformat-parser", "createLiteralElement")
-  @js.native
-  def createLiteralElement(value: String): LiteralElement = js.native
+  @scala.inline
+  def createLiteralElement(value: String): LiteralElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createLiteralElement")(value.asInstanceOf[js.Any]).asInstanceOf[LiteralElement]
   
-  @JSImport("intl-messageformat-parser", "createNumberElement")
-  @js.native
-  def createNumberElement(value: String): NumberElement = js.native
-  @JSImport("intl-messageformat-parser", "createNumberElement")
-  @js.native
-  def createNumberElement(value: String, style: String): NumberElement = js.native
+  @scala.inline
+  def createNumberElement(value: String): NumberElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNumberElement")(value.asInstanceOf[js.Any]).asInstanceOf[NumberElement]
+  @scala.inline
+  def createNumberElement(value: String, style: String): NumberElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createNumberElement")(value.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[NumberElement]
   
-  @JSImport("intl-messageformat-parser", "isArgumentElement")
-  @js.native
-  def isArgumentElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.ArgumentElement */ Boolean = js.native
+  @scala.inline
+  def isArgumentElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.ArgumentElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArgumentElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.ArgumentElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isDateElement")
-  @js.native
-  def isDateElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateElement */ Boolean = js.native
+  @scala.inline
+  def isDateElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isDateTimeSkeleton")
-  @js.native
-  def isDateTimeSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = js.native
-  @JSImport("intl-messageformat-parser", "isDateTimeSkeleton")
-  @js.native
-  def isDateTimeSkeleton(el: js.UndefOr[DateTimeSkeleton | Null | String]): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = js.native
-  @JSImport("intl-messageformat-parser", "isDateTimeSkeleton")
-  @js.native
-  def isDateTimeSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = js.native
+  @scala.inline
+  def isDateTimeSkeleton(): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTimeSkeleton")().asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean]
+  @scala.inline
+  def isDateTimeSkeleton(el: js.UndefOr[DateTimeSkeleton | Null | String]): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTimeSkeleton")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean]
+  @scala.inline
+  def isDateTimeSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateTimeSkeleton")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.DateTimeSkeleton */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isLiteralElement")
-  @js.native
-  def isLiteralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.LiteralElement */ Boolean = js.native
+  @scala.inline
+  def isLiteralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.LiteralElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.LiteralElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isNumberElement")
-  @js.native
-  def isNumberElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberElement */ Boolean = js.native
+  @scala.inline
+  def isNumberElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumberElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isNumberSkeleton")
-  @js.native
-  def isNumberSkeleton(el: js.UndefOr[String | NumberSkeleton | Null]): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean = js.native
-  @JSImport("intl-messageformat-parser", "isNumberSkeleton")
-  @js.native
-  def isNumberSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean = js.native
+  @scala.inline
+  def isNumberSkeleton(el: js.UndefOr[String | NumberSkeleton | Null]): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumberSkeleton")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean]
+  @scala.inline
+  def isNumberSkeleton(el: Skeleton): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumberSkeleton")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.NumberSkeleton */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isPluralElement")
-  @js.native
-  def isPluralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.PluralElement */ Boolean = js.native
+  @scala.inline
+  def isPluralElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.PluralElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPluralElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.PluralElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isPoundElement")
-  @js.native
-  def isPoundElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.PoundElement */ Boolean = js.native
+  @scala.inline
+  def isPoundElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.PoundElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoundElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.PoundElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isSelectElement")
-  @js.native
-  def isSelectElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.SelectElement */ Boolean = js.native
+  @scala.inline
+  def isSelectElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.SelectElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.SelectElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isTagElement")
-  @js.native
-  def isTagElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.TagElement */ Boolean = js.native
+  @scala.inline
+  def isTagElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.TagElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTagElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.TagElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "isTimeElement")
-  @js.native
-  def isTimeElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.TimeElement */ Boolean = js.native
+  @scala.inline
+  def isTimeElement(el: MessageFormatElement): /* is intl-messageformat-parser.intl-messageformat-parser/src/types.TimeElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is intl-messageformat-parser.intl-messageformat-parser/src/types.TimeElement */ Boolean]
   
-  @JSImport("intl-messageformat-parser", "parse")
-  @js.native
-  def parse(input: String): js.Array[MessageFormatElement] = js.native
-  @JSImport("intl-messageformat-parser", "parse")
-  @js.native
-  def parse(input: String, opts: ParseOptions): js.Array[MessageFormatElement] = js.native
+  @scala.inline
+  def parse(input: String): js.Array[MessageFormatElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[MessageFormatElement]]
+  @scala.inline
+  def parse(input: String, opts: ParseOptions): js.Array[MessageFormatElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[MessageFormatElement]]
   
   @JSImport("intl-messageformat-parser", "pegParse")
   @js.native
   val pegParse: ParseFunction = js.native
   
-  type ParseOptions = Options with IParseOptions
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.intlMessageformatParser.srcParserMod.IParseOptions because Inheritance from two classes. Inlined filename, startRule, tracer */ trait ParseOptions
+    extends StObject
+       with Options {
+    
+    var filename: js.UndefOr[String] = js.undefined
+    
+    var startRule: js.UndefOr[String] = js.undefined
+    
+    var tracer: js.UndefOr[js.Any] = js.undefined
+  }
+  object ParseOptions {
+    
+    @scala.inline
+    def apply(): ParseOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ParseOptions]
+    }
+    
+    @scala.inline
+    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      @scala.inline
+      def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
+      
+      @scala.inline
+      def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
+    }
+  }
 }

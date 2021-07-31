@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertTarget extends StObject {
   
   /**
     * The ARN of the notification target to which alerts are sent.
     */
-  var alertTargetArn: AlertTargetArn = js.native
+  var alertTargetArn: AlertTargetArn
   
   /**
     * The ARN of the role that grants permission to send alerts to the notification target.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
 }
 object AlertTarget {
   

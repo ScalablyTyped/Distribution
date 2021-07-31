@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the template.
     */
-  var TemplateArn: js.UndefOr[AmazonResourceName] = js.native
+  var TemplateArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * An object that defines the values to use for message variables in the template. This object is a set of key-value pairs. Each key defines a message variable in the template. The corresponding value defines the value to use for that variable.
     */
-  var TemplateData: js.UndefOr[EmailTemplateData] = js.native
+  var TemplateData: js.UndefOr[EmailTemplateData] = js.undefined
   
   /**
     * The name of the template. You will refer to this name when you send email using the SendTemplatedEmail or SendBulkTemplatedEmail operations. 
     */
-  var TemplateName: js.UndefOr[EmailTemplateName] = js.native
+  var TemplateName: js.UndefOr[EmailTemplateName] = js.undefined
 }
 object Template {
   

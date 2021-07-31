@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdsListResponse extends StObject {
   
   /** Ad collection. */
-  var ads: js.UndefOr[js.Array[Ad]] = js.native
+  var ads: js.UndefOr[js.Array[Ad]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#adsListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Pagination token to be used for the next list operation. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object AdsListResponse {
   

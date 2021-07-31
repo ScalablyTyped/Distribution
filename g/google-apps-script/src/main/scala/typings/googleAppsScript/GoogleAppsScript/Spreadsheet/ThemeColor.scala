@@ -3,18 +3,16 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A representation for a theme color.
   */
-@js.native
 trait ThemeColor extends StObject {
   
-  def getColorType(): ColorType = js.native
+  def getColorType(): ColorType
   
-  def getThemeColorType(): ThemeColorType = js.native
+  def getThemeColorType(): ThemeColorType
 }
 object ThemeColor {
   

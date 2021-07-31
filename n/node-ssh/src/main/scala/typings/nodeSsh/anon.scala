@@ -7,32 +7,30 @@ import typings.nodeSsh.nodeSshStrings.stdout
 import typings.ssh2.mod.ExecOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined node-ssh.node-ssh.ExecOptions & {  stream :'both'} */
-  @js.native
   trait ExecOptionsstreamboth extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+    var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
     
-    var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+    var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
     
-    var options: js.UndefOr[ExecOptions] = js.native
+    var options: js.UndefOr[ExecOptions] = js.undefined
     
-    var stdin: js.UndefOr[String] = js.native
+    var stdin: js.UndefOr[String] = js.undefined
     
-    var stream: both = js.native
+    var stream: both
   }
   object ExecOptionsstreamboth {
     
     @scala.inline
-    def apply(stream: both): ExecOptionsstreamboth = {
-      val __obj = js.Dynamic.literal(stream = stream.asInstanceOf[js.Any])
+    def apply(): ExecOptionsstreamboth = {
+      val __obj = js.Dynamic.literal(stream = "both")
       __obj.asInstanceOf[ExecOptionsstreamboth]
     }
     
@@ -75,20 +73,19 @@ object anon {
   }
   
   /* Inlined node-ssh.node-ssh.ExecOptions & {  stream :'stdout' | 'stderr' | undefined} */
-  @js.native
   trait ExecOptionsstreamstdoutst extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+    var onStderr: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
     
-    var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.native
+    var onStdout: js.UndefOr[js.Function1[/* chunk */ Buffer, Unit]] = js.undefined
     
-    var options: js.UndefOr[ExecOptions] = js.native
+    var options: js.UndefOr[ExecOptions] = js.undefined
     
-    var stdin: js.UndefOr[String] = js.native
+    var stdin: js.UndefOr[String] = js.undefined
     
-    var stream: js.UndefOr[stdout | stderr] = js.native
+    var stream: js.UndefOr[stdout | stderr] = js.undefined
   }
   object ExecOptionsstreamstdoutst {
     
@@ -139,12 +136,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Local extends StObject {
     
-    var local: String = js.native
+    var local: String
     
-    var remote: String = js.native
+    var remote: String
   }
   object Local {
     

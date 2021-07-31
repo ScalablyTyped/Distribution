@@ -2,13 +2,13 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatHealthParams extends CatCommonParams {
+trait CatHealthParams
+  extends StObject
+     with CatCommonParams {
   
-  var ts: js.UndefOr[Boolean] = js.native
+  var ts: js.UndefOr[Boolean] = js.undefined
 }
 object CatHealthParams {
   

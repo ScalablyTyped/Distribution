@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartUserImportJobRequest extends StObject {
   
   /**
     * The job ID for the user import job.
     */
-  var JobId: UserImportJobIdType = js.native
+  var JobId: UserImportJobIdType
   
   /**
     * The user pool ID for the user pool that the users are being imported into.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object StartUserImportJobRequest {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAccesscontextmanager.gapi.client.accesscon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServicePerimeterConfig extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait ServicePerimeterConfig extends StObject {
     * `ServicePerimeter`. Referencing a nonexistent `AccessLevel` is a syntax error. If no `AccessLevel` names are listed, resources within the perimeter can only be accessed via Google
     * Cloud calls with request origins within the perimeter. Example: `"accessPolicies/MY_POLICY/accessLevels/MY_LEVEL"`. For Service Perimeter Bridge, must be empty.
     */
-  var accessLevels: js.UndefOr[js.Array[String]] = js.native
+  var accessLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of Google Cloud resources that are inside of the service perimeter. Currently only projects are allowed. Format: `projects/{project_number}` */
-  var resources: js.UndefOr[js.Array[String]] = js.native
+  var resources: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Google Cloud services that are subject to the Service Perimeter restrictions. For example, if `storage.googleapis.com` is specified, access to the storage buckets inside the
     * perimeter must meet the perimeter's access restrictions.
     */
-  var restrictedServices: js.UndefOr[js.Array[String]] = js.native
+  var restrictedServices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Configuration for APIs allowed within Perimeter. */
-  var vpcAccessibleServices: js.UndefOr[VpcAccessibleServices] = js.native
+  var vpcAccessibleServices: js.UndefOr[VpcAccessibleServices] = js.undefined
 }
 object ServicePerimeterConfig {
   

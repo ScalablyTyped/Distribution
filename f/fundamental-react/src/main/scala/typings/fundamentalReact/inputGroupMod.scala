@@ -11,7 +11,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupMod {
@@ -30,12 +29,11 @@ object inputGroupMod {
     /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/InputGroup/InputGroup.InputGroupAddonProps> & {  displayName :'InputGroup.Addon'} */
     object Addon {
       
-      @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon")
-      @js.native
-      def apply(props: PropsWithChildren[InputGroupAddonProps]): ReactElement | Null = js.native
-      @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon")
-      @js.native
-      def apply(props: PropsWithChildren[InputGroupAddonProps], context: js.Any): ReactElement | Null = js.native
+      @scala.inline
+      def apply(props: PropsWithChildren[InputGroupAddonProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+      @scala.inline
+      def apply(props: PropsWithChildren[InputGroupAddonProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+      
       @JSImport("fundamental-react/lib/InputGroup/InputGroup", "default.Addon")
       @js.native
       val ^ : js.Any = js.native
@@ -89,14 +87,13 @@ object inputGroupMod {
     def before: typings.fundamentalReact.fundamentalReactStrings.before = "before".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.before]
   }
   
-  @js.native
   trait InputGroupAddonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var isButton: js.UndefOr[Boolean] = js.native
+    var isButton: js.UndefOr[Boolean] = js.undefined
   }
   object InputGroupAddonProps {
     
@@ -129,21 +126,21 @@ object inputGroupMod {
     }
   }
   
-  @js.native
   trait InputGroupProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var props: js.UndefOr[js.Any] = js.native
+    var props: js.UndefOr[js.Any] = js.undefined
     
-    var validationState: js.UndefOr[State] = js.native
+    var validationState: js.UndefOr[State] = js.undefined
   }
   object InputGroupProps {
     

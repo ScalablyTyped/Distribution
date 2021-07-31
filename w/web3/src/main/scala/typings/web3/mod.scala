@@ -16,16 +16,53 @@ import typings.web3Shh.mod.Shh
 import typings.web3Utils.mod.Utils
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("web3", JSImport.Default)
   @js.native
-  class default () extends Web3 {
+  class default ()
+    extends StObject
+       with Web3 {
     def this(provider: typings.web3Core.mod.provider) = this()
     def this(provider: typings.web3Core.mod.provider, net: Socket) = this()
+    
+    /* CompleteClass */
+    var BatchRequest: Instantiable0[typings.web3Core.mod.BatchRequest] = js.native
+    
+    /* CompleteClass */
+    var bzz: Bzz = js.native
+    
+    /* CompleteClass */
+    override val currentProvider: typings.web3Core.mod.provider = js.native
+    
+    /* CompleteClass */
+    var defaultAccount: String | Null = js.native
+    
+    /* CompleteClass */
+    var defaultBlock: String | Double = js.native
+    
+    /* CompleteClass */
+    var eth: Eth = js.native
+    
+    /* CompleteClass */
+    override def extend(`extension`: Extension): js.Any = js.native
+    
+    /* CompleteClass */
+    override val givenProvider: js.Any = js.native
+    
+    /* CompleteClass */
+    override def setProvider(provider: typings.web3Core.mod.provider): Boolean = js.native
+    
+    /* CompleteClass */
+    var shh: Shh = js.native
+    
+    /* CompleteClass */
+    var utils: Utils = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
   }
   /* static members */
   object default {
@@ -57,18 +94,17 @@ object mod {
     val version: String = js.native
   }
   
-  @js.native
   trait Modules extends StObject {
     
-    var Bzz: Instantiable1[/* provider */ provider, typings.web3Bzz.mod.Bzz] = js.native
+    var Bzz: Instantiable1[/* provider */ provider, typings.web3Bzz.mod.Bzz]
     
-    var Eth: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3Eth.mod.Eth] = js.native
+    var Eth: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3Eth.mod.Eth]
     
-    var Net: Instantiable2[/* provider */ provider, /* net */ Socket, Network] = js.native
+    var Net: Instantiable2[/* provider */ provider, /* net */ Socket, Network]
     
-    var Personal: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3EthPersonal.mod.Personal] = js.native
+    var Personal: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3EthPersonal.mod.Personal]
     
-    var Shh: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3Shh.mod.Shh] = js.native
+    var Shh: Instantiable2[/* provider */ provider, /* net */ Socket, typings.web3Shh.mod.Shh]
   }
   object Modules {
     
@@ -104,32 +140,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Web3 extends StObject {
     
-    var BatchRequest: Instantiable0[typings.web3Core.mod.BatchRequest] = js.native
+    var BatchRequest: Instantiable0[typings.web3Core.mod.BatchRequest]
     
-    var bzz: Bzz = js.native
+    var bzz: Bzz
     
-    val currentProvider: provider = js.native
+    val currentProvider: provider
     
-    var defaultAccount: String | Null = js.native
+    var defaultAccount: String | Null
     
-    var defaultBlock: String | Double = js.native
+    var defaultBlock: String | Double
     
-    var eth: Eth = js.native
+    var eth: Eth
     
-    def extend(extension: Extension): js.Any = js.native
+    def extend(`extension`: Extension): js.Any
     
-    val givenProvider: js.Any = js.native
+    val givenProvider: js.Any
     
-    def setProvider(provider: provider): Boolean = js.native
+    def setProvider(provider: provider): Boolean
     
-    var shh: Shh = js.native
+    var shh: Shh
     
-    var utils: Utils = js.native
+    var utils: Utils
     
-    var version: String = js.native
+    var version: String
   }
   object Web3 {
     
@@ -146,7 +181,7 @@ object mod {
       utils: Utils,
       version: String
     ): Web3 = {
-      val __obj = js.Dynamic.literal(BatchRequest = BatchRequest.asInstanceOf[js.Any], bzz = bzz.asInstanceOf[js.Any], defaultBlock = defaultBlock.asInstanceOf[js.Any], eth = eth.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), givenProvider = givenProvider.asInstanceOf[js.Any], setProvider = js.Any.fromFunction1(setProvider), shh = shh.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BatchRequest = BatchRequest.asInstanceOf[js.Any], bzz = bzz.asInstanceOf[js.Any], defaultBlock = defaultBlock.asInstanceOf[js.Any], eth = eth.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), givenProvider = givenProvider.asInstanceOf[js.Any], setProvider = js.Any.fromFunction1(setProvider), shh = shh.asInstanceOf[js.Any], utils = utils.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], currentProvider = null, defaultAccount = null)
       __obj.asInstanceOf[Web3]
     }
     

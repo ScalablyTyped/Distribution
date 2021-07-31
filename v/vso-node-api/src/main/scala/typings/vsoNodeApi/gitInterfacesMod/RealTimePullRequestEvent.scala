@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealTimePullRequestEvent extends StObject {
   
   /**
     * The id of this event. Can be used to track send/receive state between client and server.
     */
-  var eventId: String = js.native
+  var eventId: String
   
   /**
     * The id of the pull request this event was generated for.
     */
-  var pullRequestId: Double = js.native
+  var pullRequestId: Double
 }
 object RealTimePullRequestEvent {
   

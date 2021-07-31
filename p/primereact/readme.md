@@ -4,15 +4,15 @@
 Typings are for version 5.0.1
 
 ## Library description:
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![npm version](https://badge.fury.io/js/primereact.svg)](https://badge.fury.io/js/primereact) [![Discord Chat](https://img.shields.io/discord/5579
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | primereact |
 | Keywords           | - |
-| # releases         | 36 |
-| # dependents       | 23 |
-| # downloads        | 771618 |
+| # releases         | 30 |
+| # dependents       | 24 |
+| # downloads        | 869037 |
 | # stars            | 1 |
 
 ## Links

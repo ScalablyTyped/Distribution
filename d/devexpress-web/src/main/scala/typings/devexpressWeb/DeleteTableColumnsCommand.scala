@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to delete the selected table columns.
   */
-@js.native
-trait DeleteTableColumnsCommand extends CommandWithSimpleStateBase {
+trait DeleteTableColumnsCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DeleteTableColumnsCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DeleteTableColumnsCommand {
   

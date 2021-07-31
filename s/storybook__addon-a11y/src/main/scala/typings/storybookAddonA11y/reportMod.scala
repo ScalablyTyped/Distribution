@@ -5,7 +5,6 @@ import typings.react.mod.FunctionComponent
 import typings.storybookAddonA11y.a11YPanelMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportMod {
@@ -14,14 +13,13 @@ object reportMod {
   @js.native
   val Report: FunctionComponent[ReportProps] = js.native
   
-  @js.native
   trait ReportProps extends StObject {
     
-    var empty: String = js.native
+    var empty: String
     
-    var items: js.Array[Result] = js.native
+    var items: js.Array[Result]
     
-    var `type`: RuleType = js.native
+    var `type`: RuleType
   }
   object ReportProps {
     

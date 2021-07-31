@@ -6,7 +6,6 @@ import typings.reactFns.anon.Latitude
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geoPositionGeoPositionMod {
@@ -36,16 +35,15 @@ object geoPositionGeoPositionMod {
     var state_GeoPosition: IsLoading = js.native
   }
   
-  @js.native
   trait GeoPositionProps extends StObject {
     
-    var coords: js.UndefOr[Latitude] = js.native
+    var coords: js.UndefOr[Latitude] = js.undefined
     
     var error: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
   }
   object GeoPositionProps {
     

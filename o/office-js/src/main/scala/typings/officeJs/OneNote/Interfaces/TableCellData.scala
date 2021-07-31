@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "tableCell.toJSON()". */
-@js.native
 trait TableCellData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var cellIndex: js.UndefOr[Double] = js.native
+  var cellIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.native
+  var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableCellData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
 }
 object TableCellData {
   

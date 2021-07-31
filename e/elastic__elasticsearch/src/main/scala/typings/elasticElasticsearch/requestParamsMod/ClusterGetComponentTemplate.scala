@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterGetComponentTemplate extends Generic {
+trait ClusterGetComponentTemplate
+  extends StObject
+     with Generic {
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String | js.Array[String]] = js.native
+  var name: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object ClusterGetComponentTemplate {
   

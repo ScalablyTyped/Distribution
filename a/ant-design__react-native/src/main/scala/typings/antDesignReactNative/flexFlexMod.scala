@@ -7,7 +7,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexFlexMod {
@@ -39,18 +38,19 @@ object flexFlexMod {
   trait Flex
     extends Component[FlexProps, js.Any, js.Any]
   
-  @js.native
-  trait FlexProps extends FlexPropsType {
+  trait FlexProps
+    extends StObject
+       with FlexPropsType {
     
-    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object FlexProps {
     

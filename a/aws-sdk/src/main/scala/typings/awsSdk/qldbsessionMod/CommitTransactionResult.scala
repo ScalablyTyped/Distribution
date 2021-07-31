@@ -2,21 +2,19 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitTransactionResult extends StObject {
   
   /**
     * The commit digest of the committed transaction.
     */
-  var CommitDigest: js.UndefOr[typings.awsSdk.qldbsessionMod.CommitDigest] = js.native
+  var CommitDigest: js.UndefOr[typings.awsSdk.qldbsessionMod.CommitDigest] = js.undefined
   
   /**
     * The transaction ID of the committed transaction.
     */
-  var TransactionId: js.UndefOr[typings.awsSdk.qldbsessionMod.TransactionId] = js.native
+  var TransactionId: js.UndefOr[typings.awsSdk.qldbsessionMod.TransactionId] = js.undefined
 }
 object CommitTransactionResult {
   

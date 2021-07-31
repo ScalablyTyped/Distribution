@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeSnapshotAccessMessage extends StObject {
   
   /**
     * The identifier of the AWS customer account that can no longer restore the specified snapshot.
     */
-  var AccountWithRestoreAccess: String = js.native
+  var AccountWithRestoreAccess: String
   
   /**
     * The identifier of the cluster the snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
     */
-  var SnapshotClusterIdentifier: js.UndefOr[String] = js.native
+  var SnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the snapshot that the account can no longer access.
     */
-  var SnapshotIdentifier: String = js.native
+  var SnapshotIdentifier: String
 }
 object RevokeSnapshotAccessMessage {
   

@@ -2,23 +2,21 @@ package typings.devtoolsProtocol.mod.Protocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Schema {
   
-  @js.native
   trait Domain extends StObject {
     
     /**
       * Domain name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Domain version.
       */
-    var version: String = js.native
+    var version: String
   }
   object Domain {
     
@@ -39,13 +37,12 @@ object Schema {
     }
   }
   
-  @js.native
   trait GetDomainsResponse extends StObject {
     
     /**
       * List of supported domains.
       */
-    var domains: js.Array[Domain] = js.native
+    var domains: js.Array[Domain]
   }
   object GetDomainsResponse {
     

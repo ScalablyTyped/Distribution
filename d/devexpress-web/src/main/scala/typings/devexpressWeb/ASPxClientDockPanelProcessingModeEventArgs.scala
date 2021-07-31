@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDockPanel.AfterFloat event.
   */
-@js.native
-trait ASPxClientDockPanelProcessingModeEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientDockPanelProcessingModeEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the zone currently being processed.
     */
-  var zone: ASPxClientDockZone = js.native
+  var zone: ASPxClientDockZone
 }
 object ASPxClientDockPanelProcessingModeEventArgs {
   

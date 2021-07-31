@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputLocation extends StObject {
   
   /**
     * Describes an S3 location that will receive the results of the restore request.
     */
-  var S3: js.UndefOr[S3Location] = js.native
+  var S3: js.UndefOr[S3Location] = js.undefined
 }
 object OutputLocation {
   

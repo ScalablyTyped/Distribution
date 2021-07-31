@@ -2,19 +2,19 @@ package typings.reactUid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uidMod {
   
-  @JSImport("react-uid/dist/es5/uid", "generateUID")
+  @JSImport("react-uid/dist/es5/uid", JSImport.Namespace)
   @js.native
-  def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-uid/dist/es5/uid", "uid")
-  @js.native
-  def uid(item: js.Any): String = js.native
-  @JSImport("react-uid/dist/es5/uid", "uid")
-  @js.native
-  def uid(item: js.Any, index: Double): String = js.native
+  @scala.inline
+  def generateUID(): js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateUID")().asInstanceOf[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]]
+  
+  @scala.inline
+  def uid(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def uid(item: js.Any, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("uid")(item.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxDataAreaPage...
   */
-@js.native
 trait INxDataAreaPage extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait INxDataAreaPage extends StObject {
     * The difference between qTop and qHeight gives the lowest possible value of the second measure
     * (the measure on the y-axis).
     */
-  var qHeight: Double = js.native
+  var qHeight: Double
   
   /**
     * Position from the left.
     * Corresponds to the lowest possible value of the first measure
     * (the measure on the x-axis).
     */
-  var qLeft: Double = js.native
+  var qLeft: Double
   
   /**
     * Position from the top.
     * Corresponds to the highest possible value of the second measure
     * (the measure on the y-axis).
     */
-  var qTop: Double = js.native
+  var qTop: Double
   
   /**
     * Width of the page.
     * Corresponds to the highest possible value of the first measure
     * (the measure on the x-axis).
     */
-  var qWidth: Double = js.native
+  var qWidth: Double
 }
 object INxDataAreaPage {
   

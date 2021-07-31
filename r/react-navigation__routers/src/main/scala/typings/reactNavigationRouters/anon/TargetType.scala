@@ -4,26 +4,26 @@ import typings.reactNavigationRouters.reactNavigationRoutersStrings.PUSH
 import typings.reactNavigationRouters.stackRouterMod.StackActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetType extends StackActionType {
+trait TargetType
+  extends StObject
+     with StackActionType {
   
-  var payload: Name = js.native
+  var payload: Name
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: PUSH = js.native
+  var `type`: PUSH
 }
 object TargetType {
   
   @scala.inline
-  def apply(payload: Name, `type`: PUSH): TargetType = {
+  def apply(payload: Name): TargetType = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PUSH")
     __obj.asInstanceOf[TargetType]
   }
   

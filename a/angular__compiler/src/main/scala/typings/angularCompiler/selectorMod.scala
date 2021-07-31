@@ -2,7 +2,6 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorMod {
@@ -50,9 +49,12 @@ object selectorMod {
   /* static members */
   object CssSelector {
     
-    @JSImport("@angular/compiler/src/selector", "CssSelector.parse")
+    @JSImport("@angular/compiler/src/selector", "CssSelector")
     @js.native
-    def parse(selector: String): js.Array[CssSelector] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def parse(selector: String): js.Array[CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[CssSelector]]
   }
   
   @JSImport("@angular/compiler/src/selector", "SelectorContext")
@@ -127,8 +129,11 @@ object selectorMod {
   /* static members */
   object SelectorMatcher {
     
-    @JSImport("@angular/compiler/src/selector", "SelectorMatcher.createNotMatcher")
+    @JSImport("@angular/compiler/src/selector", "SelectorMatcher")
     @js.native
-    def createNotMatcher(notSelectors: js.Array[CssSelector]): SelectorMatcher[Null] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createNotMatcher(notSelectors: js.Array[CssSelector]): SelectorMatcher[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNotMatcher")(notSelectors.asInstanceOf[js.Any]).asInstanceOf[SelectorMatcher[Null]]
   }
 }

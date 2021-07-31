@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadNetworkResourceOptions extends StObject {
   
-  var disableCache: Boolean = js.native
+  var disableCache: Boolean
   
-  var includeCredentials: Boolean = js.native
+  var includeCredentials: Boolean
 }
 object LoadNetworkResourceOptions {
   

@@ -2,10 +2,8 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideDBFunctionBuilder extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myAddingFunction = functionBuilder.field('priority');
     * myAddingFunction = functionBuilder.build();
     */
-  def add(): GlideDBFunctionBuilder = js.native
+  def add(): GlideDBFunctionBuilder
   
   /**
     * Builds the database function defined by the GlideDBFunctionBuilder object.
@@ -33,7 +31,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myAddingFunction = functionBuilder.build();
     * gs.print(myAddingFunction);
     */
-  def build(): String = js.native
+  def build(): String
   
   /**
     * Concatenates the values of two or more fields.
@@ -47,7 +45,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myConcatFunction = functionBuilder.field('caller_id.name');
     * myConcatFunction = functionBuilder.build();
     */
-  def concat(): GlideDBFunctionBuilder = js.native
+  def concat(): GlideDBFunctionBuilder
   
   /**
     * Defines a constant value to use in the function. If used with the `dayofweek()` method, the
@@ -65,13 +63,13 @@ trait GlideDBFunctionBuilder extends StObject {
     * given date. If a value other than 1 or 2 is provided, the `dayofweek()` method uses Sunday as
     * the first day of the week.
     */
-  def constant(constant: String): GlideDBFunctionBuilder = js.native
+  def constant(constant: String): GlideDBFunctionBuilder
   
   /**
     * Determines the duration using a given start date/time and end date/time.
     * Use the `field(String field)` method to define start and end date/time fields.
     */
-  def datediff(): GlideDBFunctionBuilder = js.native
+  def datediff(): GlideDBFunctionBuilder
   
   /**
     * Returns an integer representing the day of the week for a given date.
@@ -115,7 +113,7 @@ trait GlideDBFunctionBuilder extends StObject {
     *   gs.log(gr.getValue(dayOfWeekFunction));
     *
     */
-  def dayofweek(): GlideDBFunctionBuilder = js.native
+  def dayofweek(): GlideDBFunctionBuilder
   
   /**
     * Divides the value of one integer field by another.
@@ -129,7 +127,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myDivideFunction = functionBuilder.field('priority');
     * myDivideFunction = functionBuilder.build();
     */
-  def divide(): GlideDBFunctionBuilder = js.native
+  def divide(): GlideDBFunctionBuilder
   
   /**
     * Defines a field on which a SQL operation is performed.
@@ -143,7 +141,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myAddingFunction = functionBuilder.field('priority');
     * myAddingFunction = functionBuilder.build();
     */
-  def field(field: String): GlideDBFunctionBuilder = js.native
+  def field(field: String): GlideDBFunctionBuilder
   
   /**
     * Determines the number of code units in a field.
@@ -157,7 +155,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myLengthFunction = functionBuilder.build();
     *
     */
-  def length(): GlideDBFunctionBuilder = js.native
+  def length(): GlideDBFunctionBuilder
   
   /**
     * Multiplies the values of two integer fields.
@@ -171,7 +169,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * myMultiplyFunction = functionBuilder.field('priority');
     * myMultiplyFunction = functionBuilder.build();
     */
-  def multiply(): GlideDBFunctionBuilder = js.native
+  def multiply(): GlideDBFunctionBuilder
   
   /**
     * Subtracts the value of one integer field from another.
@@ -185,7 +183,7 @@ trait GlideDBFunctionBuilder extends StObject {
     * mySubtractFunction = functionBuilder.field('priority');
     * mySubtractFunction = functionBuilder.build();
     */
-  def subtract(): GlideDBFunctionBuilder = js.native
+  def subtract(): GlideDBFunctionBuilder
 }
 object GlideDBFunctionBuilder {
   

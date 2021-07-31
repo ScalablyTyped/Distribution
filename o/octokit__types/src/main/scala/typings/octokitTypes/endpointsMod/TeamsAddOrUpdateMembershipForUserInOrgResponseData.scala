@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsAddOrUpdateMembershipForUserInOrgResponseData extends StObject {
   
-  var role: String = js.native
+  var role: String
   
-  var state: String = js.native
+  var state: String
   
-  var url: String = js.native
+  var url: String
 }
 object TeamsAddOrUpdateMembershipForUserInOrgResponseData {
   

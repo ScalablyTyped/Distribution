@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserSettings extends StObject {
   
   /**
     * The execution role for the user.
     */
-  var ExecutionRole: js.UndefOr[RoleArn] = js.native
+  var ExecutionRole: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The Jupyter server's app settings.
     */
-  var JupyterServerAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.JupyterServerAppSettings] = js.native
+  var JupyterServerAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.JupyterServerAppSettings] = js.undefined
   
   /**
     * The kernel gateway app settings.
     */
-  var KernelGatewayAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayAppSettings] = js.native
+  var KernelGatewayAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayAppSettings] = js.undefined
   
   /**
     * The security groups for the Amazon Virtual Private Cloud (VPC) that Studio uses for communication. Optional when the CreateDomain.AppNetworkAccessType parameter is set to PublicInternetOnly. Required when the CreateDomain.AppNetworkAccessType parameter is set to VpcOnly.
     */
-  var SecurityGroups: js.UndefOr[SecurityGroupIds] = js.native
+  var SecurityGroups: js.UndefOr[SecurityGroupIds] = js.undefined
   
   /**
     * The sharing settings.
     */
-  var SharingSettings: js.UndefOr[typings.awsSdk.sagemakerMod.SharingSettings] = js.native
+  var SharingSettings: js.UndefOr[typings.awsSdk.sagemakerMod.SharingSettings] = js.undefined
   
   /**
     * The TensorBoard app settings.
     */
-  var TensorBoardAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.TensorBoardAppSettings] = js.native
+  var TensorBoardAppSettings: js.UndefOr[typings.awsSdk.sagemakerMod.TensorBoardAppSettings] = js.undefined
 }
 object UserSettings {
   

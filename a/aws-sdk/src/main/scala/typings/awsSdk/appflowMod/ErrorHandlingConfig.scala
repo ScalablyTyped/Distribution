@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorHandlingConfig extends StObject {
   
   /**
     *  Specifies the name of the Amazon S3 bucket. 
     */
-  var bucketName: js.UndefOr[BucketName] = js.native
+  var bucketName: js.UndefOr[BucketName] = js.undefined
   
   /**
     *  Specifies the Amazon S3 bucket prefix. 
     */
-  var bucketPrefix: js.UndefOr[BucketPrefix] = js.native
+  var bucketPrefix: js.UndefOr[BucketPrefix] = js.undefined
   
   /**
     *  Specifies if the flow should fail after the first instance of a failure when attempting to place data in the destination. 
     */
-  var failOnFirstDestinationError: js.UndefOr[Boolean] = js.native
+  var failOnFirstDestinationError: js.UndefOr[Boolean] = js.undefined
 }
 object ErrorHandlingConfig {
   

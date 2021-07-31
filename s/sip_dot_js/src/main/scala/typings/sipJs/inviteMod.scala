@@ -11,13 +11,14 @@ import typings.sipJs.prackMod.OutgoingPrackRequest
 import typings.sipJs.sessionSessionMod.Session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inviteMod {
   
   @js.native
-  trait AckableIncomingResponseWithSession extends IncomingResponse {
+  trait AckableIncomingResponseWithSession
+    extends StObject
+       with IncomingResponse {
     
     /**
       * Send an ACK to acknowledge this response.
@@ -31,32 +32,37 @@ object inviteMod {
   }
   
   @js.native
-  trait IncomingInviteRequest extends IncomingRequest
+  trait IncomingInviteRequest
+    extends StObject
+       with IncomingRequest
   
   @js.native
-  trait OutgoingInviteRequest extends OutgoingRequest {
+  trait OutgoingInviteRequest
+    extends StObject
+       with OutgoingRequest {
     
     /** Delegate providing custom handling of this outgoing INVITE request. */
     @JSName("delegate")
     var delegate_OutgoingInviteRequest: js.UndefOr[OutgoingInviteRequestDelegate] = js.native
   }
   
-  @js.native
-  trait OutgoingInviteRequestDelegate extends OutgoingRequestDelegate {
+  trait OutgoingInviteRequestDelegate
+    extends StObject
+       with OutgoingRequestDelegate {
     
     /**
       * Received a 2xx positive final response to this request.
       * @param response - Incoming response (including a confirmed Session).
       */
     @JSName("onAccept")
-    var onAccept_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ AckableIncomingResponseWithSession, Unit]] = js.native
+    var onAccept_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ AckableIncomingResponseWithSession, Unit]] = js.undefined
     
     /**
       * Received a 1xx provisional response to this request. Excluding 100 responses.
       * @param response - Incoming response (including an early Session).
       */
     @JSName("onProgress")
-    var onProgress_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ PrackableIncomingResponseWithSession, Unit]] = js.native
+    var onProgress_OutgoingInviteRequestDelegate: js.UndefOr[js.Function1[/* response */ PrackableIncomingResponseWithSession, Unit]] = js.undefined
   }
   object OutgoingInviteRequestDelegate {
     
@@ -83,14 +89,15 @@ object inviteMod {
     }
   }
   
-  @js.native
-  trait OutgoingResponseWithSession extends OutgoingResponse {
+  trait OutgoingResponseWithSession
+    extends StObject
+       with OutgoingResponse {
     
     /**
       * Session associated with incoming request acceptance, or
       * Session associated with incoming request progress (if an out of dialog request, an early dialog).
       */
-    val session: Session = js.native
+    val session: Session
   }
   object OutgoingResponseWithSession {
     
@@ -109,7 +116,9 @@ object inviteMod {
   }
   
   @js.native
-  trait PrackableIncomingResponseWithSession extends IncomingResponse {
+  trait PrackableIncomingResponseWithSession
+    extends StObject
+       with IncomingResponse {
     
     /**
       * Send an PRACK to acknowledge this response.

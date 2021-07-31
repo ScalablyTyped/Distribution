@@ -5,38 +5,31 @@ import typings.zchatBrowser.mod.ChatEvent.ChatEventData
 import typings.zchatBrowser.zchatBrowserStrings.chatDotfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined zchat-browser.zchat-browser.ChatEvent.BaseChatEventData & {  type :'chat.file',   attachment :zchat-browser.zchat-browser.Attachment,   deleted :boolean} */
-@js.native
-trait BaseChatEventDatatypechatAttachment extends ChatEventData {
+trait BaseChatEventDatatypechatAttachment
+  extends StObject
+     with ChatEventData {
   
-  var attachment: Attachment = js.native
+  var attachment: Attachment
   
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var nick: String = js.native
+  var nick: String
   
-  var time_stamp: Double = js.native
+  var time_stamp: Double
   
-  var `type`: chatDotfile = js.native
+  var `type`: chatDotfile
 }
 object BaseChatEventDatatypechatAttachment {
   
   @scala.inline
-  def apply(
-    attachment: Attachment,
-    deleted: Boolean,
-    display_name: String,
-    nick: String,
-    time_stamp: Double,
-    `type`: chatDotfile
-  ): BaseChatEventDatatypechatAttachment = {
+  def apply(attachment: Attachment, deleted: Boolean, display_name: String, nick: String, time_stamp: Double): BaseChatEventDatatypechatAttachment = {
     val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("chat.file")
     __obj.asInstanceOf[BaseChatEventDatatypechatAttachment]
   }
   

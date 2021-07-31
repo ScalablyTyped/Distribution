@@ -3,13 +3,13 @@ package typings.nodePgMigrate.distTypesMod
 import typings.node.tlsMod.TlsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientConfig extends ConnectionConfig {
+trait ClientConfig
+  extends StObject
+     with ConnectionConfig {
   
-  var ssl: js.UndefOr[Boolean | TlsOptions] = js.native
+  var ssl: js.UndefOr[Boolean | TlsOptions] = js.undefined
 }
 object ClientConfig {
   

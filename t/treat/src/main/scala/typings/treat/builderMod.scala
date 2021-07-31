@@ -9,61 +9,56 @@ import typings.treat.typesMod.ThemeRef
 import typings.treat.typesMod.ThemedStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderMod {
   
-  @JSImport("treat/lib/types/builder", "createTheme")
+  @JSImport("treat/lib/types/builder", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createTheme(
     tokens: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
-  ): ThemeRef = js.native
-  @JSImport("treat/lib/types/builder", "createTheme")
-  @js.native
+  ): ThemeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[ThemeRef]
+  @scala.inline
   def createTheme(
     tokens: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any,
     localDebugName: String
-  ): ThemeRef = js.native
+  ): ThemeRef = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[ThemeRef]
   
-  @JSImport("treat/lib/types/builder", "globalStyle")
-  @js.native
+  @scala.inline
   def globalStyle(
     selector: String,
     style: ThemedStyle[
       GlobalStyle, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("globalStyle")(selector.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("treat/lib/types/builder", "style")
-  @js.native
+  @scala.inline
   def style(
     style: ThemedStyle[
       Style, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
     ]
-  ): ClassRef = js.native
-  @JSImport("treat/lib/types/builder", "style")
-  @js.native
+  ): ClassRef = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(style.asInstanceOf[js.Any]).asInstanceOf[ClassRef]
+  @scala.inline
   def style(
     style: ThemedStyle[
       Style, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any
     ],
     localDebugName: String
-  ): ClassRef = js.native
+  ): ClassRef = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(style.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[ClassRef]
   
-  @JSImport("treat/lib/types/builder", "styleMap")
-  @js.native
-  def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName]): StylesMap[StyleName] = js.native
-  @JSImport("treat/lib/types/builder", "styleMap")
-  @js.native
-  def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName], localDebugName: String): StylesMap[StyleName] = js.native
+  @scala.inline
+  def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName]): StylesMap[StyleName] = ^.asInstanceOf[js.Dynamic].applyDynamic("styleMap")(stylesheet.asInstanceOf[js.Any]).asInstanceOf[StylesMap[StyleName]]
+  @scala.inline
+  def styleMap[StyleName /* <: String | Double */](stylesheet: StyleMapParam[StyleName], localDebugName: String): StylesMap[StyleName] = (^.asInstanceOf[js.Dynamic].applyDynamic("styleMap")(stylesheet.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[StylesMap[StyleName]]
   
-  @JSImport("treat/lib/types/builder", "styleTree")
-  @js.native
-  def styleTree[ReturnType](makeStyleTree: MakeStyleTree[ReturnType]): ReturnType = js.native
+  @scala.inline
+  def styleTree[ReturnType](makeStyleTree: MakeStyleTree[ReturnType]): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("styleTree")(makeStyleTree.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
   
   type MakeStyleTree[ReturnType] = js.Function2[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ /* theme */ js.Any, 

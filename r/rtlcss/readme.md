@@ -10,14 +10,14 @@ Framework for transforming cascading style sheets (CSS) from left-to-right (LTR)
 | ------------------ | :-------------: |
 | Full name          | rtlcss |
 | Keywords           | rtl, css, ltr, rtlcss, framework, style, mirror, flip, convert, transform |
-| # releases         | 4 |
-| # dependents       | 51 |
-| # downloads        | 5414890 |
+| # releases         | 8 |
+| # dependents       | 55 |
+| # downloads        | 7016521 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](http://rtlcss.com/)
-- [Bugs](https://github.com/MohammadYounes/rtlcss/issues?state=open)
+- [Homepage](https://rtlcss.com/)
+- [Bugs](https://github.com/MohammadYounes/rtlcss/issues)
 - [Repository](https://github.com/MohammadYounes/rtlcss)
 - [Npm](https://www.npmjs.com/package/rtlcss)
     

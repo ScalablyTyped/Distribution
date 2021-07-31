@@ -2,7 +2,6 @@ package typings.cytoscape.mod.Css
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can use the special core selector string to set these properties.
   * http://js.cytoscape.org/#style/core
   */
-@js.native
 trait Core extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait Core extends StObject {
   /**
     * The colour of the indicator shown when the background is grabbed by the user.
     */
-  var `active-bg-color`: PropertyValueCore[Colour] = js.native
+  var `active-bg-color`: PropertyValueCore[Colour]
   
   /**
     * The opacity of the active background indicator.
     */
-  var `active-bg-opacity`: PropertyValueCore[Double] = js.native
+  var `active-bg-opacity`: PropertyValueCore[Double]
   
   /**
     * The size of the active background indicator.
     */
-  var `active-bg-size`: PropertyValueCore[Double] = js.native
+  var `active-bg-size`: PropertyValueCore[Double]
   
   /**
     * Texture during viewport gestures:
@@ -38,22 +36,22 @@ trait Core extends StObject {
   /**
     * The colour of the area outside the viewport texture when initOptions.textureOnViewport === true.
     */
-  var `outside-texture-bg-color`: PropertyValueCore[Colour] = js.native
+  var `outside-texture-bg-color`: PropertyValueCore[Colour]
   
   /**
     * The opacity of the area outside the viewport texture.
     */
-  var `outside-texture-bg-opacity`: PropertyValueCore[Double] = js.native
+  var `outside-texture-bg-opacity`: PropertyValueCore[Double]
   
   /**
     * The colour of the border on the selection box.
     */
-  var `selection-box-border-color`: PropertyValueCore[Colour] = js.native
+  var `selection-box-border-color`: PropertyValueCore[Colour]
   
   /**
     * The size of the border on the selection box.
     */
-  var `selection-box-border-width`: PropertyValueCore[Double] = js.native
+  var `selection-box-border-width`: PropertyValueCore[Double]
   
   /**
     * Selection box:
@@ -61,12 +59,12 @@ trait Core extends StObject {
   /**
     * The background colour of the selection box used for drag selection.
     */
-  var `selection-box-color`: PropertyValueCore[Colour] = js.native
+  var `selection-box-color`: PropertyValueCore[Colour]
   
   /**
     * The opacity of the selection box.
     */
-  var `selection-box-opacity`: PropertyValueCore[Double] = js.native
+  var `selection-box-opacity`: PropertyValueCore[Double]
 }
 object Core {
   

@@ -3,18 +3,16 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access the text rotation settings for a cell.
   */
-@js.native
 trait TextRotation extends StObject {
   
-  def getDegrees(): Integer = js.native
+  def getDegrees(): Integer
   
-  def isVertical(): Boolean = js.native
+  def isVertical(): Boolean
 }
 object TextRotation {
   

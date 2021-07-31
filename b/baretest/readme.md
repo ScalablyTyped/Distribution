@@ -12,7 +12,7 @@ Extremely fast and simple JavaScript test runner
 | Keywords           | jest, mocha, tap, tape, tdd, bdd, node, test, test-runner, test-framework, testing-tool |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 27211 |
+| # downloads        | 60825 |
 | # stars            | 0 |
 
 ## Links

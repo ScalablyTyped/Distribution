@@ -4,13 +4,13 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Widget")
 @js.native
 class Widget protected ()
-  extends typings.kendoUi.kendo.ui.Widget {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Widget {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(selector: String) = this()
@@ -25,9 +25,8 @@ object Widget {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Widget.extend")
-  @js.native
-  def extend(prototype: js.Object): typings.kendoUi.kendo.ui.Widget = js.native
+  @scala.inline
+  def extend(prototype: js.Object): typings.kendoUi.kendo.ui.Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Widget]
   
   /* static member */
   @JSGlobal("kendo.ui.Widget.fn")

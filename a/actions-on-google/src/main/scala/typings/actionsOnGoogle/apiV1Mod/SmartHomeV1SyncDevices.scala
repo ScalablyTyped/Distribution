@@ -3,31 +3,29 @@ package typings.actionsOnGoogle.apiV1Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1SyncDevices extends StObject {
   
-  var attributes: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var attributes: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var customData: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var customData: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var deviceInfo: js.UndefOr[SmartHomeV1SyncDeviceInfo] = js.native
+  var deviceInfo: js.UndefOr[SmartHomeV1SyncDeviceInfo] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var name: SmartHomeV1SyncName = js.native
+  var name: SmartHomeV1SyncName
   
-  var otherDeviceIds: js.UndefOr[js.Array[SmartHomeV1SyncOtherDeviceIds]] = js.native
+  var otherDeviceIds: js.UndefOr[js.Array[SmartHomeV1SyncOtherDeviceIds]] = js.undefined
   
-  var roomHint: js.UndefOr[String] = js.native
+  var roomHint: js.UndefOr[String] = js.undefined
   
-  var traits: js.Array[String] = js.native
+  var traits: js.Array[String]
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var willReportState: Boolean = js.native
+  var willReportState: Boolean
 }
 object SmartHomeV1SyncDevices {
   
@@ -48,13 +46,13 @@ object SmartHomeV1SyncDevices {
   implicit class SmartHomeV1SyncDevicesMutableBuilder[Self <: SmartHomeV1SyncDevices] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAttributes(value: ApiClientObjectMap[_]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    def setAttributes(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
     @scala.inline
-    def setCustomData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    def setCustomData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)

@@ -4,10 +4,8 @@ import typings.vegaLite.exprMod.ExprRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionValueDefMixins[V /* <: Value[ExprRef | SignalRef] */] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ConditionValueDefMixins[V /* <: Value[ExprRef | SignalRef] */] extends StO
     * __Note:__ A field definition's `condition` property can only contain [conditional value definitions](https://vega.github.io/vega-lite/docs/condition.html#value)
     * since Vega-Lite only allows at most one encoded field per encoding channel.
     */
-  var condition: js.UndefOr[Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]] = js.native
+  var condition: js.UndefOr[Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]] = js.undefined
 }
 object ConditionValueDefMixins {
   
@@ -27,7 +25,7 @@ object ConditionValueDefMixins {
   }
   
   @scala.inline
-  implicit class ConditionValueDefMixinsMutableBuilder[Self <: ConditionValueDefMixins[_], V /* <: Value[ExprRef | SignalRef] */] (val x: Self with ConditionValueDefMixins[V]) extends AnyVal {
+  implicit class ConditionValueDefMixinsMutableBuilder[Self <: ConditionValueDefMixins[?], V /* <: Value[ExprRef | SignalRef] */] (val x: Self & ConditionValueDefMixins[V]) extends AnyVal {
     
     @scala.inline
     def setCondition(value: Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])

@@ -15,14 +15,15 @@ import typings.std.KeyboardEvent
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewerCoreMod {
   
   @JSImport("diva.js/viewer-core", JSImport.Default)
   @js.native
-  class default protected () extends ViewerCore {
+  class default protected ()
+    extends StObject
+       with ViewerCore {
     def this(element: HTMLElement, options: Options, publicInstance: Diva) = this()
   }
   
@@ -76,7 +77,7 @@ object viewerCoreMod {
     
     def getSettings(): Settings = js.native
     
-    def getViewport(): Region with Dimensions = js.native
+    def getViewport(): Region & Dimensions = js.native
     
     def getXOffset(pageIndex: Double): Double = js.native
     def getXOffset(pageIndex: Double, anchor: String): Double = js.native

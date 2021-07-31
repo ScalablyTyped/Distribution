@@ -2,13 +2,11 @@ package typings.winrt.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICredentialFactory extends StObject {
   
-  def createPasswordCredential(resource: String, userName: String, password: String): PasswordCredential = js.native
+  def createPasswordCredential(resource: String, userName: String, password: String): PasswordCredential
 }
 object ICredentialFactory {
   

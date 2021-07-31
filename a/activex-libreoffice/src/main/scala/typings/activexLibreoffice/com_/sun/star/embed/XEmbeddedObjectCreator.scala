@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XEmbeddedObjectCreator
-  extends XEmbedObjectCreator
+  extends StObject
+     with XEmbedObjectCreator
      with XEmbedObjectFactory
      with XLinkCreator
      with XLinkFactory

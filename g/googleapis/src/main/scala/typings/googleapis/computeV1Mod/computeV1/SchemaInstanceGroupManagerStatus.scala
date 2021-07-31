@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerStatus extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaInstanceGroupManagerStatus extends StObject {
     * for instances in the managed instance group; and the managed instance
     * group itself is not being modified.
     */
-  var isStable: js.UndefOr[Boolean] = js.native
+  var isStable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInstanceGroupManagerStatus {
   

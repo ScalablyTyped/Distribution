@@ -2,25 +2,25 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.documentdb.mod.UniqueId because Already inherited
-- typings.documentdb.mod.AbstractMeta because var conflicts: id. Inlined _self, _ts, _rid, _etag, _attachments */ @js.native
-trait CollectionMeta extends Collection {
+- typings.documentdb.mod.AbstractMeta because var conflicts: id. Inlined _self, _ts, _rid, _etag, _attachments */ trait CollectionMeta
+  extends StObject
+     with Collection {
   
-  var _attachments: js.UndefOr[String] = js.native
+  var _attachments: js.UndefOr[String] = js.undefined
   
-  var _etag: js.UndefOr[String] = js.native
+  var _etag: js.UndefOr[String] = js.undefined
   
-  var _rid: js.UndefOr[String] = js.native
+  var _rid: js.UndefOr[String] = js.undefined
   
   /** The self link. */
-  var _self: String = js.native
+  var _self: String
   
   /** The time the object was created. */
-  var _ts: Double = js.native
+  var _ts: Double
 }
 object CollectionMeta {
   

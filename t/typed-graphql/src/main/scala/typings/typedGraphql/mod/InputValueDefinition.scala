@@ -2,21 +2,21 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputValueDefinition extends Node {
+trait InputValueDefinition
+  extends StObject
+     with Node {
   
-  var defaultValue: js.UndefOr[Value] = js.native
+  var defaultValue: js.UndefOr[Value] = js.undefined
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var name: Name = js.native
+  var name: Name
   
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object InputValueDefinition {
   

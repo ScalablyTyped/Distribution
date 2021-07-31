@@ -5,80 +5,65 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object UIUtility {
   
-  @JSGlobal("SP.UI.UIUtility.calculateOffsetLeft")
+  @JSGlobal("SP.UI.UIUtility")
   @js.native
-  def calculateOffsetLeft(elem: HTMLElement): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("SP.UI.UIUtility.calculateOffsetTop")
-  @js.native
-  def calculateOffsetTop(elem: HTMLElement): Double = js.native
+  @scala.inline
+  def calculateOffsetLeft(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateOffsetLeft")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("SP.UI.UIUtility.cancelEvent")
-  @js.native
-  def cancelEvent(evt: Event): Unit = js.native
+  @scala.inline
+  def calculateOffsetTop(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateOffsetTop")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("SP.UI.UIUtility.clearChildNodes")
-  @js.native
-  def clearChildNodes(elem: HTMLElement): Unit = js.native
+  @scala.inline
+  def cancelEvent(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.createHtmlInputCheck")
-  @js.native
-  def createHtmlInputCheck(isChecked: Boolean): HTMLInputElement = js.native
+  @scala.inline
+  def clearChildNodes(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearChildNodes")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.createHtmlInputText")
-  @js.native
-  def createHtmlInputText(text: String): HTMLInputElement = js.native
+  @scala.inline
+  def createHtmlInputCheck(isChecked: Boolean): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlInputCheck")(isChecked.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
-  @JSGlobal("SP.UI.UIUtility.focusValidOnThisNode")
-  @js.native
-  def focusValidOnThisNode(elem: HTMLElement): Boolean = js.native
+  @scala.inline
+  def createHtmlInputText(text: String): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtmlInputText")(text.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
-  @JSGlobal("SP.UI.UIUtility.generateRandomElementId")
-  @js.native
-  def generateRandomElementId(): String = js.native
+  @scala.inline
+  def focusValidOnThisNode(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusValidOnThisNode")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("SP.UI.UIUtility.getInnerText")
-  @js.native
-  def getInnerText(elem: HTMLElement): String = js.native
+  @scala.inline
+  def generateRandomElementId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomElementId")().asInstanceOf[String]
   
-  @JSGlobal("SP.UI.UIUtility.hideElement")
-  @js.native
-  def hideElement(elem: HTMLElement): Unit = js.native
+  @scala.inline
+  def getInnerText(elem: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getInnerText")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("SP.UI.UIUtility.insertAfter")
-  @js.native
-  def insertAfter(elem: HTMLElement, targetElement: HTMLElement): Unit = js.native
+  @scala.inline
+  def hideElement(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.insertBefore")
-  @js.native
-  def insertBefore(elem: HTMLElement, targetElement: HTMLElement): Unit = js.native
+  @scala.inline
+  def insertAfter(elem: HTMLElement, targetElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAfter")(elem.asInstanceOf[js.Any], targetElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.isNodeOfType")
-  @js.native
-  def isNodeOfType(elem: HTMLElement, tagNames: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def insertBefore(elem: HTMLElement, targetElement: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertBefore")(elem.asInstanceOf[js.Any], targetElement.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.isSvgNode")
-  @js.native
-  def isSvgNode(elem: HTMLElement): Boolean = js.native
+  @scala.inline
+  def isNodeOfType(elem: HTMLElement, tagNames: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeOfType")(elem.asInstanceOf[js.Any], tagNames.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("SP.UI.UIUtility.isTextNode")
-  @js.native
-  def isTextNode(elem: HTMLElement): Boolean = js.native
+  @scala.inline
+  def isSvgNode(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSvgNode")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("SP.UI.UIUtility.removeNode")
-  @js.native
-  def removeNode(elem: HTMLElement): Unit = js.native
+  @scala.inline
+  def isTextNode(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextNode")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSGlobal("SP.UI.UIUtility.setInnerText")
-  @js.native
-  def setInnerText(elem: HTMLElement, value: String): Unit = js.native
+  @scala.inline
+  def removeNode(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("SP.UI.UIUtility.showElement")
-  @js.native
-  def showElement(elem: HTMLElement): Unit = js.native
+  @scala.inline
+  def setInnerText(elem: HTMLElement, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInnerText")(elem.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def showElement(elem: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutAssetPropertyError extends StObject {
   
   /**
     * The error code.
     */
-  var errorCode: BatchPutAssetPropertyValueErrorCode = js.native
+  var errorCode: BatchPutAssetPropertyValueErrorCode
   
   /**
     * The associated error message.
     */
-  var errorMessage: ErrorMessage = js.native
+  var errorMessage: ErrorMessage
   
   /**
     * A list of timestamps for each error, if any.
     */
-  var timestamps: Timestamps = js.native
+  var timestamps: Timestamps
 }
 object BatchPutAssetPropertyError {
   

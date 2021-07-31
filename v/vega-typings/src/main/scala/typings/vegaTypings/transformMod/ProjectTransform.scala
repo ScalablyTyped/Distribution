@@ -4,24 +4,24 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.project
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProjectTransform extends _Transforms {
+trait ProjectTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var fields: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var fields: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var `type`: project = js.native
+  var `type`: project
 }
 object ProjectTransform {
   
   @scala.inline
-  def apply(`type`: project): ProjectTransform = {
+  def apply(): ProjectTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("project")
     __obj.asInstanceOf[ProjectTransform]
   }
   

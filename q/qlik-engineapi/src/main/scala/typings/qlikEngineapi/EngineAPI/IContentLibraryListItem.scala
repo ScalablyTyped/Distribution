@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContentLibraryListItem...
   */
-@js.native
 trait IContentLibraryListItem extends StObject {
   
   /**
     * Is set to true if the library is specific to the app (not a global content library).
     */
-  var qAppSpecific: Boolean = js.native
+  var qAppSpecific: Boolean
   
   /**
     * Information about publishing and permissions.
     */
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
   
   /**
     * Name of the library.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object IContentLibraryListItem {
   

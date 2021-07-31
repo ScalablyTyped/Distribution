@@ -2,19 +2,17 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the ListSendAs method.
   */
-@js.native
 trait SchemaListSendAsResponse extends StObject {
   
   /**
     * List of send-as aliases.
     */
-  var sendAs: js.UndefOr[js.Array[SchemaSendAs]] = js.native
+  var sendAs: js.UndefOr[js.Array[SchemaSendAs]] = js.undefined
 }
 object SchemaListSendAsResponse {
   

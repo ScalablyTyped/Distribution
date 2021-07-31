@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePartitionRequest extends StObject {
   
   /**
     * The ID of the catalog in which the partition is to be updated. Currently, this should be the AWS account ID.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the metadata database in which the partition is to be updated.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of up to 100 BatchUpdatePartitionRequestEntry objects to update.
     */
-  var Entries: BatchUpdatePartitionRequestEntryList = js.native
+  var Entries: BatchUpdatePartitionRequestEntryList
   
   /**
     * The name of the metadata table in which the partition is to be updated.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object BatchUpdatePartitionRequest {
   

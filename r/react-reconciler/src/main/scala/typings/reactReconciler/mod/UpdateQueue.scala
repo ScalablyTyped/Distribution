@@ -2,40 +2,38 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateQueue[State] extends StObject {
   
-  var baseState: State = js.native
+  var baseState: State
   
-  var firstCapturedEffect: Update[State] | Null = js.native
+  var firstCapturedEffect: Update[State] | Null
   
-  var firstCapturedUpdate: Update[State] | Null = js.native
+  var firstCapturedUpdate: Update[State] | Null
   
-  var firstEffect: Update[State] | Null = js.native
+  var firstEffect: Update[State] | Null
   
-  var firstUpdate: Update[State] | Null = js.native
+  var firstUpdate: Update[State] | Null
   
-  var lastCapturedEffect: Update[State] | Null = js.native
+  var lastCapturedEffect: Update[State] | Null
   
-  var lastCapturedUpdate: Update[State] | Null = js.native
+  var lastCapturedUpdate: Update[State] | Null
   
-  var lastEffect: Update[State] | Null = js.native
+  var lastEffect: Update[State] | Null
   
-  var lastUpdate: Update[State] | Null = js.native
+  var lastUpdate: Update[State] | Null
 }
 object UpdateQueue {
   
   @scala.inline
   def apply[State](baseState: State): UpdateQueue[State] = {
-    val __obj = js.Dynamic.literal(baseState = baseState.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(baseState = baseState.asInstanceOf[js.Any], firstCapturedEffect = null, firstCapturedUpdate = null, firstEffect = null, firstUpdate = null, lastCapturedEffect = null, lastCapturedUpdate = null, lastEffect = null, lastUpdate = null)
     __obj.asInstanceOf[UpdateQueue[State]]
   }
   
   @scala.inline
-  implicit class UpdateQueueMutableBuilder[Self <: UpdateQueue[_], State] (val x: Self with UpdateQueue[State]) extends AnyVal {
+  implicit class UpdateQueueMutableBuilder[Self <: UpdateQueue[?], State] (val x: Self & UpdateQueue[State]) extends AnyVal {
     
     @scala.inline
     def setBaseState(value: State): Self = StObject.set(x, "baseState", value.asInstanceOf[js.Any])

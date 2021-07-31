@@ -2,69 +2,67 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptEncoding extends StObject {
   
-  var `Accept-Encoding`: String = js.native
+  var `Accept-Encoding`: String
   
-  var `Accept-Language`: String = js.native
+  var `Accept-Language`: String
   
-  var Authorization: String = js.native
+  var Authorization: String
   
-  var Connection: String = js.native
+  var Connection: String
   
-  var Host: String = js.native
+  var Host: String
   
-  var `User-Agent`: String = js.native
+  var `User-Agent`: String
   
-  var `X-Ads-Opt-Out`: String = js.native
+  var `X-Ads-Opt-Out`: String
   
-  var `X-Bloks-Is-Layout-RTL`: String = js.native
+  var `X-Bloks-Is-Layout-RTL`: String
   
-  var `X-Bloks-Version-Id`: String = js.native
+  var `X-Bloks-Version-Id`: String
   
-  var `X-CM-Bandwidth-KBPS`: String = js.native
+  var `X-CM-Bandwidth-KBPS`: String
   
-  var `X-CM-Latency`: String = js.native
+  var `X-CM-Latency`: String
   
-  var `X-FB-HTTP-Engine`: String = js.native
+  var `X-FB-HTTP-Engine`: String
   
-  var `X-IG-Android-ID`: String = js.native
+  var `X-IG-Android-ID`: String
   
-  var `X-IG-App-ID`: String = js.native
+  var `X-IG-App-ID`: String
   
-  var `X-IG-App-Locale`: String = js.native
+  var `X-IG-App-Locale`: String
   
-  var `X-IG-Bandwidth-Speed-KBPS`: String = js.native
+  var `X-IG-Bandwidth-Speed-KBPS`: String
   
-  var `X-IG-Bandwidth-TotalBytes-B`: String = js.native
+  var `X-IG-Bandwidth-TotalBytes-B`: String
   
-  var `X-IG-Bandwidth-TotalTime-MS`: String = js.native
+  var `X-IG-Bandwidth-TotalTime-MS`: String
   
-  var `X-IG-Capabilities`: String = js.native
+  var `X-IG-Capabilities`: String
   
-  var `X-IG-Connection-Speed`: String = js.native
+  var `X-IG-Connection-Speed`: String
   
-  var `X-IG-Connection-Type`: String = js.native
+  var `X-IG-Connection-Type`: String
   
-  var `X-IG-Device-ID`: String = js.native
+  var `X-IG-Device-ID`: String
   
-  var `X-IG-Device-Locale`: String = js.native
+  var `X-IG-Device-Locale`: String
   
-  var `X-IG-EU-DC-ENABLED`: String = js.native
+  var `X-IG-EU-DC-ENABLED`: String
   
-  var `X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`: String = js.native
+  var `X-IG-Extended-CDN-Thumbnail-Cache-Busting-Value`: String
   
-  var `X-IG-WWW-Claim`: String = js.native
+  var `X-IG-WWW-Claim`: String
   
-  var `X-MID`: String = js.native
+  var `X-MID`: String
   
-  var `X-Pigeon-Rawclienttime`: String = js.native
+  var `X-Pigeon-Rawclienttime`: String
   
-  var `X-Pigeon-Session-Id`: String = js.native
+  var `X-Pigeon-Session-Id`: String
 }
 object AcceptEncoding {
   

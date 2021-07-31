@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupPutJob[T] extends Generic {
+trait RollupPutJob[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var id: String = js.native
+  var id: String
 }
 object RollupPutJob {
   
@@ -21,7 +21,7 @@ object RollupPutJob {
   }
   
   @scala.inline
-  implicit class RollupPutJobMutableBuilder[Self <: RollupPutJob[_], T] (val x: Self with RollupPutJob[T]) extends AnyVal {
+  implicit class RollupPutJobMutableBuilder[Self <: RollupPutJob[?], T] (val x: Self & RollupPutJob[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

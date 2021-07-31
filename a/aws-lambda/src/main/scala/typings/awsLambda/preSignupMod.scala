@@ -10,17 +10,17 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preSignupMod {
   
-  @js.native
-  trait BasePreSignUpTriggerEvent[T /* <: String */] extends BaseTriggerEvent[T] {
+  trait BasePreSignUpTriggerEvent[T /* <: String */]
+    extends StObject
+       with BaseTriggerEvent[T] {
     
-    var request: ValidationData = js.native
+    var request: ValidationData
     
-    var response: AutoConfirmUser = js.native
+    var response: AutoConfirmUser
   }
   object BasePreSignUpTriggerEvent {
     
@@ -40,7 +40,7 @@ object preSignupMod {
     }
     
     @scala.inline
-    implicit class BasePreSignUpTriggerEventMutableBuilder[Self <: BasePreSignUpTriggerEvent[_], T /* <: String */] (val x: Self with BasePreSignUpTriggerEvent[T]) extends AnyVal {
+    implicit class BasePreSignUpTriggerEventMutableBuilder[Self <: BasePreSignUpTriggerEvent[?], T /* <: String */] (val x: Self & BasePreSignUpTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setRequest(value: ValidationData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

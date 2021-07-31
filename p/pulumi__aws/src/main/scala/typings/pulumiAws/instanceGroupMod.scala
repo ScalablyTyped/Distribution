@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceGroupMod {
@@ -78,6 +77,10 @@ object instanceGroupMod {
   /* static members */
   object InstanceGroup {
     
+    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InstanceGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,75 +90,69 @@ object instanceGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): InstanceGroup = js.native
-    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InstanceGroup = js.native
-    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceGroupState): InstanceGroup = js.native
-    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceGroupState, opts: CustomResourceOptions): InstanceGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): InstanceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InstanceGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InstanceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceGroupState): InstanceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InstanceGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceGroupState, opts: CustomResourceOptions): InstanceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceGroup]
     
     /**
       * Returns true if the given object is an instance of InstanceGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/instanceGroup.InstanceGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/instanceGroup.InstanceGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/instanceGroup.InstanceGroup */ Boolean]
   }
   
-  @js.native
   trait InstanceGroupArgs extends StObject {
     
     /**
       * The autoscaling policy document. This is a JSON formatted string. See [EMR Auto Scaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
       */
-    val autoscalingPolicy: js.UndefOr[Input[String]] = js.native
+    val autoscalingPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If set, the bid price for each EC2 instance in the instance group, expressed in USD. By setting this attribute, the instance group is being declared as a Spot Instance, and will implicitly create a Spot request. Leave this blank to use On-Demand Instances.
       */
-    val bidPrice: js.UndefOr[Input[String]] = js.native
+    val bidPrice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
       */
-    val clusterId: Input[String] = js.native
+    val clusterId: Input[String]
     
     /**
       * A JSON string for supplying list of configurations specific to the EMR instance group. Note that this can only be changed when using EMR release 5.21 or later.
       */
-    val configurationsJson: js.UndefOr[Input[String]] = js.native
+    val configurationsJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
       */
-    val ebsConfigs: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceGroupEbsConfig]]]] = js.native
+    val ebsConfigs: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceGroupEbsConfig]]]] = js.undefined
     
     /**
       * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * target number of instances for the instance group. defaults to 0.
       */
-    val instanceCount: js.UndefOr[Input[Double]] = js.native
+    val instanceCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The EC2 instance type for all instances in the instance group. Changing this forces a new resource to be created.
       */
-    val instanceType: Input[String] = js.native
+    val instanceType: Input[String]
     
     /**
       * Human friendly name given to the instance group. Changing this forces a new resource to be created.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceGroupArgs {
     
@@ -221,57 +218,56 @@ object instanceGroupMod {
     }
   }
   
-  @js.native
   trait InstanceGroupState extends StObject {
     
     /**
       * The autoscaling policy document. This is a JSON formatted string. See [EMR Auto Scaling](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html)
       */
-    val autoscalingPolicy: js.UndefOr[Input[String]] = js.native
+    val autoscalingPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If set, the bid price for each EC2 instance in the instance group, expressed in USD. By setting this attribute, the instance group is being declared as a Spot Instance, and will implicitly create a Spot request. Leave this blank to use On-Demand Instances.
       */
-    val bidPrice: js.UndefOr[Input[String]] = js.native
+    val bidPrice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
       */
-    val clusterId: js.UndefOr[Input[String]] = js.native
+    val clusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON string for supplying list of configurations specific to the EMR instance group. Note that this can only be changed when using EMR release 5.21 or later.
       */
-    val configurationsJson: js.UndefOr[Input[String]] = js.native
+    val configurationsJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more `ebsConfig` blocks as defined below. Changing this forces a new resource to be created.
       */
-    val ebsConfigs: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceGroupEbsConfig]]]] = js.native
+    val ebsConfigs: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.InstanceGroupEbsConfig]]]] = js.undefined
     
     /**
       * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
       */
-    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.native
+    val ebsOptimized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * target number of instances for the instance group. defaults to 0.
       */
-    val instanceCount: js.UndefOr[Input[Double]] = js.native
+    val instanceCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The EC2 instance type for all instances in the instance group. Changing this forces a new resource to be created.
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Human friendly name given to the instance group. Changing this forces a new resource to be created.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
-    val runningInstanceCount: js.UndefOr[Input[Double]] = js.native
+    val runningInstanceCount: js.UndefOr[Input[Double]] = js.undefined
     
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceGroupState {
     

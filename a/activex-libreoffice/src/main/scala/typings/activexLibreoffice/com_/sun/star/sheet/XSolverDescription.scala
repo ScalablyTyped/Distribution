@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to user-visible strings for a solver. */
-@js.native
-trait XSolverDescription extends XInterface {
+trait XSolverDescription
+  extends StObject
+     with XInterface {
   
   /** A user-visible name of the component. */
-  var ComponentDescription: String = js.native
+  var ComponentDescription: String
   
   /** After calling solve, a message describing the status (explaining why no solution was found). */
-  var StatusDescription: String = js.native
+  var StatusDescription: String
   
   /** returns a short description for a property in the component's {@link com.sun.star.beans.XPropertySet} interface. */
-  def getPropertyDescription(aPropertyName: String): String = js.native
+  def getPropertyDescription(aPropertyName: String): String
 }
 object XSolverDescription {
   

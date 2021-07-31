@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageDiskContainer extends StObject {
   
   /**
     * The description of the disk image.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The block device mapping for the disk.
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the disk image being imported. Valid values: OVA | VHD | VHDX |VMDK 
     */
-  var Format: js.UndefOr[String] = js.native
+  var Format: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the EBS snapshot to be used for importing the snapshot.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.ec2Mod.SnapshotId] = js.undefined
   
   /**
     * The URL to the Amazon S3-based disk image being imported. The URL can either be a https URL (https://..) or an Amazon S3 URL (s3://..)
     */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
   
   /**
     * The S3 bucket for the disk image.
     */
-  var UserBucket: js.UndefOr[typings.awsSdk.ec2Mod.UserBucket] = js.native
+  var UserBucket: js.UndefOr[typings.awsSdk.ec2Mod.UserBucket] = js.undefined
 }
 object ImageDiskContainer {
   

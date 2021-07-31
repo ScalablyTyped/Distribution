@@ -2,27 +2,25 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animatable extends StObject {
   
-  var animationBegin: js.UndefOr[Double] = js.native
+  var animationBegin: js.UndefOr[Double] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var animationEasing: js.UndefOr[AnimationEasingType] = js.native
+  var animationEasing: js.UndefOr[AnimationEasingType] = js.undefined
   
-  var animationId: js.UndefOr[Double] = js.native
+  var animationId: js.UndefOr[Double] = js.undefined
   
-  var isAnimationActive: js.UndefOr[Boolean] = js.native
+  var isAnimationActive: js.UndefOr[Boolean] = js.undefined
   
-  var isUpdateAnimationActive: js.UndefOr[Boolean] = js.native
+  var isUpdateAnimationActive: js.UndefOr[Boolean] = js.undefined
   
-  var onAnimationEnd: js.UndefOr[RechartsFunction] = js.native
+  var onAnimationEnd: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onAnimationStart: js.UndefOr[RechartsFunction] = js.native
+  var onAnimationStart: js.UndefOr[RechartsFunction] = js.undefined
 }
 object Animatable {
   
@@ -72,13 +70,13 @@ object Animatable {
     def setIsUpdateAnimationActiveUndefined: Self = StObject.set(x, "isUpdateAnimationActive", js.undefined)
     
     @scala.inline
-    def setOnAnimationEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAnimationEnd", js.Any.fromFunction1(value))
+    def setOnAnimationEnd(value: RechartsFunction): Self = StObject.set(x, "onAnimationEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationEndUndefined: Self = StObject.set(x, "onAnimationEnd", js.undefined)
     
     @scala.inline
-    def setOnAnimationStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onAnimationStart", js.Any.fromFunction1(value))
+    def setOnAnimationStart(value: RechartsFunction): Self = StObject.set(x, "onAnimationStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)

@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingButtonsOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ExportingButtonsOptions extends StObject {
     * In styled mode, export button styles can be applied with the
     * `.highcharts-contextbutton` class.
     */
-  var contextButton: js.UndefOr[ExportingButtonsOptionsObject] = js.native
+  var contextButton: js.UndefOr[ExportingButtonsOptionsObject] = js.undefined
 }
 object ExportingButtonsOptions {
   

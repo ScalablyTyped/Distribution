@@ -1,0 +1,21 @@
+package typings.wixUiCore
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object componentsSignatureInputDataHooksMod {
+  
+  object DataHooks {
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/dataHooks", "DataHooks")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input/dataHooks", "DataHooks.a11yInput")
+    @js.native
+    def a11yInput: String = js.native
+    @scala.inline
+    def a11yInput_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a11yInput")(x.asInstanceOf[js.Any])
+  }
+}

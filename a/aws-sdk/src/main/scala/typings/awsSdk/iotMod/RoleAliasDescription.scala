@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoleAliasDescription extends StObject {
   
   /**
     * The UNIX timestamp of when the role alias was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The number of seconds for which the credential is valid.
     */
-  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.native
+  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined
   
   /**
     * The UNIX timestamp of when the role alias was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The role alias owner.
     */
-  var owner: js.UndefOr[AwsAccountId] = js.native
+  var owner: js.UndefOr[AwsAccountId] = js.undefined
   
   /**
     * The role alias.
     */
-  var roleAlias: js.UndefOr[RoleAlias] = js.native
+  var roleAlias: js.UndefOr[RoleAlias] = js.undefined
   
   /**
     * The ARN of the role alias.
     */
-  var roleAliasArn: js.UndefOr[RoleAliasArn] = js.native
+  var roleAliasArn: js.UndefOr[RoleAliasArn] = js.undefined
   
   /**
     * The role ARN.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
 }
 object RoleAliasDescription {
   

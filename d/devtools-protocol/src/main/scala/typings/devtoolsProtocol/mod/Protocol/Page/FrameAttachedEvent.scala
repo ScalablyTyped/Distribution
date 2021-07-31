@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameAttachedEvent extends StObject {
   
   /**
     * Id of the frame that has been attached.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * Parent frame identifier.
     */
-  var parentFrameId: FrameId = js.native
+  var parentFrameId: FrameId
   
   /**
     * JavaScript stack trace of when frame was attached, only set if frame initiated from script.
     */
-  var stack: js.UndefOr[StackTrace] = js.native
+  var stack: js.UndefOr[StackTrace] = js.undefined
 }
 object FrameAttachedEvent {
   

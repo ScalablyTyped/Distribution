@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Extension of {@link XLibraryContainer} to provide functionality to store a library to a location represented by a URL. */
-@js.native
-trait XLibraryContainerExport extends XInterface {
+trait XLibraryContainerExport
+  extends StObject
+     with XInterface {
   
   /**
     * Exports a library specified by Name to the location specified by the passed URL string.
@@ -19,7 +19,7 @@ trait XLibraryContainerExport extends XInterface {
     * com.sun.star.uno.Exception} . If this parameter is null this applies to all exceptions thrown by ucb.
     * @see com.sun.star.task.InteractionHandler If a library with the this name doesn't exist a {@link com.sun.star.container.NoSuchElementException} is thrown.
     */
-  def exportLibrary(Name: String, URL: String, Handler: XInteractionHandler): Unit = js.native
+  def exportLibrary(Name: String, URL: String, Handler: XInteractionHandler): Unit
 }
 object XLibraryContainerExport {
   

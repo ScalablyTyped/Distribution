@@ -7,7 +7,6 @@ import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import typings.stormReactDiagrams.pointModelMod.PointModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkLayerWidgetMod {
@@ -18,12 +17,13 @@ object linkLayerWidgetMod {
     def this(props: LinkLayerProps) = this()
   }
   
-  @js.native
-  trait LinkLayerProps extends BaseWidgetProps {
+  trait LinkLayerProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    def pointAdded(point: PointModel, event: MouseEvent): js.Any = js.native
+    def pointAdded(point: PointModel, event: MouseEvent): js.Any
   }
   object LinkLayerProps {
     
@@ -44,6 +44,5 @@ object linkLayerWidgetMod {
     }
   }
   
-  @js.native
   trait LinkLayerState extends StObject
 }

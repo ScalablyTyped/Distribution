@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDatasetContentRequest extends StObject {
   
   /**
     * The name of the dataset whose content is deleted.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
   
   /**
     * The version of the dataset whose content is deleted. You can also use the strings "$LATEST" or "$LATEST_SUCCEEDED" to delete the latest or latest successfully completed data set. If not specified, "$LATEST_SUCCEEDED" is the default.
     */
-  var versionId: js.UndefOr[DatasetContentVersion] = js.native
+  var versionId: js.UndefOr[DatasetContentVersion] = js.undefined
 }
 object DeleteDatasetContentRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFilter extends StObject {
   
   /**
     * The on-premises instance tag filter key.
     */
-  var Key: js.UndefOr[typings.awsSdk.codedeployMod.Key] = js.native
+  var Key: js.UndefOr[typings.awsSdk.codedeployMod.Key] = js.undefined
   
   /**
     * The on-premises instance tag filter type:   KEY_ONLY: Key only.   VALUE_ONLY: Value only.   KEY_AND_VALUE: Key and value.  
     */
-  var Type: js.UndefOr[TagFilterType] = js.native
+  var Type: js.UndefOr[TagFilterType] = js.undefined
   
   /**
     * The on-premises instance tag filter value.
     */
-  var Value: js.UndefOr[typings.awsSdk.codedeployMod.Value] = js.native
+  var Value: js.UndefOr[typings.awsSdk.codedeployMod.Value] = js.undefined
 }
 object TagFilter {
   

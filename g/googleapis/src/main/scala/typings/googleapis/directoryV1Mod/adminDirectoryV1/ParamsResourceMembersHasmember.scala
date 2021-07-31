@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMembersHasmember extends StandardParameters {
+trait ParamsResourceMembersHasmember
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifies the group in the API request. The value can be the group's
     * email address, group alias, or the unique group ID.
     */
-  var groupKey: js.UndefOr[String] = js.native
+  var groupKey: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the user member in the API request. The value can be the
     * user's primary email address, alias, or unique ID.
     */
-  var memberKey: js.UndefOr[String] = js.native
+  var memberKey: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMembersHasmember {
   

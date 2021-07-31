@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolylineProperties extends GeometryProperties {
+trait PolylineProperties
+  extends StObject
+     with GeometryProperties {
   
   /**
     * An array of paths, or line segments, that make up the polyline.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html#paths)
     */
-  var paths: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.native
+  var paths: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.undefined
 }
 object PolylineProperties {
   

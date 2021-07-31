@@ -2,57 +2,55 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseCarouselMediaItem extends StObject {
   
-  var ad_action: js.UndefOr[String] = js.native
+  var ad_action: js.UndefOr[String] = js.undefined
   
-  var ad_link_type: js.UndefOr[Double] = js.native
+  var ad_link_type: js.UndefOr[Double] = js.undefined
   
-  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.native
+  var ad_metadata: js.UndefOr[js.Array[TimelineFeedResponseAdMetadataItem]] = js.undefined
   
-  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.native
+  var android_links: js.UndefOr[js.Array[TimelineFeedResponseAndroidLinksItem]] = js.undefined
   
-  var carousel_parent_id: String = js.native
+  var carousel_parent_id: String
   
-  var dominant_color: js.UndefOr[String] = js.native
+  var dominant_color: js.UndefOr[String] = js.undefined
   
-  var force_overlay: js.UndefOr[Boolean] = js.native
+  var force_overlay: js.UndefOr[Boolean] = js.undefined
   
-  var headline: js.UndefOr[TimelineFeedResponseHeadline] = js.native
+  var headline: js.UndefOr[TimelineFeedResponseHeadline] = js.undefined
   
-  var hide_nux_text: js.UndefOr[Boolean] = js.native
+  var hide_nux_text: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: TimelineFeedResponseImageVersions2 = js.native
+  var image_versions2: TimelineFeedResponseImageVersions2
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var link_hint_text: js.UndefOr[String] = js.native
+  var link_hint_text: js.UndefOr[String] = js.undefined
   
-  var link_text: js.UndefOr[String] = js.native
+  var link_text: js.UndefOr[String] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var overlay_subtitle: js.UndefOr[String] = js.native
+  var overlay_subtitle: js.UndefOr[String] = js.undefined
   
-  var overlay_text: js.UndefOr[String] = js.native
+  var overlay_text: js.UndefOr[String] = js.undefined
   
-  var overlay_title: js.UndefOr[String] = js.native
+  var overlay_title: js.UndefOr[String] = js.undefined
   
-  var pk: String = js.native
+  var pk: String
   
-  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[TimelineFeedResponseUsertags] = js.undefined
   
-  var video_subtitles_uri: js.UndefOr[Null] = js.native
+  var video_subtitles_uri: js.UndefOr[Null] = js.undefined
 }
 object TimelineFeedResponseCarouselMediaItem {
   

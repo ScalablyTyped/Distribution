@@ -10,34 +10,33 @@ import typings.vegaTypings.scopeMod.Scope
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specMod {
   
-  @js.native
   trait Spec
-    extends Scope
+    extends StObject
+       with Scope
        with Encodable[EncodeEntry] {
     
     @JSName("$schema")
-    var $schema: js.UndefOr[String] = js.native
+    var $schema: js.UndefOr[String] = js.undefined
     
-    var autosize: js.UndefOr[AutoSize | SignalRef] = js.native
+    var autosize: js.UndefOr[AutoSize | SignalRef] = js.undefined
     
-    var background: js.UndefOr[Color | SignalRef] = js.native
+    var background: js.UndefOr[Color | SignalRef] = js.undefined
     
-    var config: js.UndefOr[Config] = js.native
+    var config: js.UndefOr[Config] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double | SignalRef] = js.native
+    var height: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var padding: js.UndefOr[Padding | SignalRef] = js.native
+    var padding: js.UndefOr[Padding | SignalRef] = js.undefined
     
-    var style: js.UndefOr[String | js.Array[String]] = js.native
+    var style: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var width: js.UndefOr[Double | SignalRef] = js.native
+    var width: js.UndefOr[Double | SignalRef] = js.undefined
   }
   object Spec {
     

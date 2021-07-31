@@ -3,53 +3,51 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a data transfer run.
   */
-@js.native
 trait SchemaTransferRun extends StObject {
   
   /**
     * Output only. Data source id.
     */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The BigQuery target dataset id.
     */
-  var destinationDatasetId: js.UndefOr[String] = js.native
+  var destinationDatasetId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time when transfer run ended. Parameter ignored by server
     * for input requests.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the transfer run.
     */
-  var errorStatus: js.UndefOr[SchemaStatus] = js.native
+  var errorStatus: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * The resource name of the transfer run. Transfer run names have the form
     * `projects/{project_id}/locations/{location}/transferConfigs/{config_id}/runs/{run_id}`.
     * The name is ignored when creating a transfer run.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Data transfer specific parameters.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * For batch transfer runs, specifies the date and time that data should be
     * ingested.
     */
-  var runTime: js.UndefOr[String] = js.native
+  var runTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Describes the schedule of this transfer run if it was
@@ -58,33 +56,33 @@ trait SchemaTransferRun extends StObject {
     * the schedule depending on the current load, so `schedule_time`
     * doesn&#39;t always match this.
     */
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum time after which a transfer run can be started.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Time when transfer run was started. Parameter ignored by
     * server for input requests.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Data transfer run state. Ignored for input requests.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Last time the data transfer run state was updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Unique ID of the user on whose behalf transfer is done.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaTransferRun {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentMod {
@@ -49,6 +48,10 @@ object deploymentMod {
   /* static members */
   object Deployment {
     
+    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Deployment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,45 +61,39 @@ object deploymentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Deployment = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Deployment = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentState): Deployment = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentState): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentState, opts: CustomResourceOptions): Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Deployment]
     
     /**
       * Returns true if the given object is an instance of Deployment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/deployment", "Deployment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/deployment.Deployment */ Boolean]
   }
   
-  @js.native
   trait DeploymentArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The description for the deployment resource. Must be less than or equal to 1024 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of arbitrary keys and values that, when changed, will trigger a redeployment.
       */
-    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DeploymentArgs {
     
@@ -126,28 +123,27 @@ object deploymentMod {
     }
   }
   
-  @js.native
   trait DeploymentState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the deployment was automatically released.
       */
-    val autoDeployed: js.UndefOr[Input[Boolean]] = js.native
+    val autoDeployed: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The description for the deployment resource. Must be less than or equal to 1024 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of arbitrary keys and values that, when changed, will trigger a redeployment.
       */
-    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val triggers: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DeploymentState {
     

@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listWords` operation. */
@@ -16,15 +15,19 @@ object ListWordsConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait ALPHABETICAL extends Sort
-    /* "alphabetical" */ val ALPHABETICAL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.Sort.ALPHABETICAL with String = js.native
+    sealed trait ALPHABETICAL
+      extends StObject
+         with Sort
+    /* "alphabetical" */ val ALPHABETICAL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.Sort.ALPHABETICAL & String = js.native
     
     @js.native
-    sealed trait COUNT extends Sort
-    /* "count" */ val COUNT: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.Sort.COUNT with String = js.native
+    sealed trait COUNT
+      extends StObject
+         with Sort
+    /* "count" */ val COUNT: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.Sort.COUNT & String = js.native
   }
   
   @js.native
@@ -35,22 +38,30 @@ object ListWordsConstants {
   object WordType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WordType with String] = js.native
+    def apply(value: String): js.UndefOr[WordType & String] = js.native
     
     @js.native
-    sealed trait ALL extends WordType
-    /* "all" */ val ALL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.ALL with String = js.native
+    sealed trait ALL
+      extends StObject
+         with WordType
+    /* "all" */ val ALL: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.ALL & String = js.native
     
     @js.native
-    sealed trait CORPORA extends WordType
-    /* "corpora" */ val CORPORA: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.CORPORA with String = js.native
+    sealed trait CORPORA
+      extends StObject
+         with WordType
+    /* "corpora" */ val CORPORA: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.CORPORA & String = js.native
     
     @js.native
-    sealed trait GRAMMARS extends WordType
-    /* "grammars" */ val GRAMMARS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.GRAMMARS with String = js.native
+    sealed trait GRAMMARS
+      extends StObject
+         with WordType
+    /* "grammars" */ val GRAMMARS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.GRAMMARS & String = js.native
     
     @js.native
-    sealed trait USER extends WordType
-    /* "user" */ val USER: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.USER with String = js.native
+    sealed trait USER
+      extends StObject
+         with WordType
+    /* "user" */ val USER: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.ListWordsConstants.WordType.USER & String = js.native
   }
 }

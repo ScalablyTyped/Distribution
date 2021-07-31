@@ -6,21 +6,19 @@ import typings.postmark.webhookMod.SpamWebhookTrigger
 import typings.postmark.webhookMod.WebhookTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bounce extends StObject {
   
-  var Bounce: BounceWebhookTrigger = js.native
+  var Bounce: BounceWebhookTrigger
   
-  var Click: WebhookTrigger = js.native
+  var Click: WebhookTrigger
   
-  var Delivery: WebhookTrigger = js.native
+  var Delivery: WebhookTrigger
   
-  var Open: OpenWebhookTrigger = js.native
+  var Open: OpenWebhookTrigger
   
-  var SpamComplaint: SpamWebhookTrigger = js.native
+  var SpamComplaint: SpamWebhookTrigger
 }
 object Bounce {
   

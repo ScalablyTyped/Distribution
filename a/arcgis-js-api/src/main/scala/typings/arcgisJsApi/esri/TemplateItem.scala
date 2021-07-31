@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateItem extends Accessor {
+trait TemplateItem
+  extends StObject
+     with Accessor {
   
   /**
     * The description that is displayed for the template item.
@@ -21,7 +22,7 @@ trait TemplateItem extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html#fetchThumbnail)
     */
-  def fetchThumbnail(): js.Promise[_] = js.native
+  def fetchThumbnail(): js.Promise[js.Any] = js.native
   
   /**
     * The label that is displayed for the template item.

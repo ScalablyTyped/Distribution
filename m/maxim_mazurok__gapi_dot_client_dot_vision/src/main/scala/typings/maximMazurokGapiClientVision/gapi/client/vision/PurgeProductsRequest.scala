@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurgeProductsRequest extends StObject {
   
   /** If delete_orphan_products is true, all Products that are not in any ProductSet will be deleted. */
-  var deleteOrphanProducts: js.UndefOr[Boolean] = js.native
+  var deleteOrphanProducts: js.UndefOr[Boolean] = js.undefined
   
   /** The default value is false. Override this value to true to actually perform the purge. */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /** Specify which ProductSet contains the Products to be deleted. */
-  var productSetPurgeConfig: js.UndefOr[ProductSetPurgeConfig] = js.native
+  var productSetPurgeConfig: js.UndefOr[ProductSetPurgeConfig] = js.undefined
 }
 object PurgeProductsRequest {
   

@@ -2,19 +2,17 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonicContext extends StObject {
   
-  val binPath: String = js.native
+  val binPath: String
   
-  val execPath: String = js.native
+  val execPath: String
   
-  val libPath: String = js.native
+  val libPath: String
   
-  val version: String = js.native
+  val version: String
 }
 object IonicContext {
   

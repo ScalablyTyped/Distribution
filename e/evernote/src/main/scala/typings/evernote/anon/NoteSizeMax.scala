@@ -2,21 +2,19 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoteSizeMax extends StObject {
   
-  var noteResourceCountMax: js.UndefOr[Double] = js.native
+  var noteResourceCountMax: js.UndefOr[Double] = js.undefined
   
-  var noteSizeMax: js.UndefOr[Double] = js.native
+  var noteSizeMax: js.UndefOr[Double] = js.undefined
   
-  var resourceSizeMax: js.UndefOr[Double] = js.native
+  var resourceSizeMax: js.UndefOr[Double] = js.undefined
   
-  var uploadLimit: js.UndefOr[Double] = js.native
+  var uploadLimit: js.UndefOr[Double] = js.undefined
   
-  var uploaded: js.UndefOr[Double] = js.native
+  var uploaded: js.UndefOr[Double] = js.undefined
 }
 object NoteSizeMax {
   

@@ -2,11 +2,9 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `listItem.toJSON()`. */
-@js.native
 trait ListItemData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ListItemData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ListItemData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var listString: js.UndefOr[String] = js.native
+  var listString: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ListItemData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var siblingIndex: js.UndefOr[Double] = js.native
+  var siblingIndex: js.UndefOr[Double] = js.undefined
 }
 object ListItemData {
   

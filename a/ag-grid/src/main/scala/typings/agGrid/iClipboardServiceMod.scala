@@ -3,7 +3,6 @@ package typings.agGrid
 import typings.agGrid.columnMod.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iClipboardServiceMod {
@@ -17,9 +16,9 @@ object iClipboardServiceMod {
     def copySelectedRangeToClipboard(includeHeader: Boolean): Unit = js.native
     
     def copySelectedRowsToClipboard(): Unit = js.native
-    def copySelectedRowsToClipboard(includeHeader: js.UndefOr[scala.Nothing], columnKeys: js.Array[String | Column]): Unit = js.native
     def copySelectedRowsToClipboard(includeHeader: Boolean): Unit = js.native
     def copySelectedRowsToClipboard(includeHeader: Boolean, columnKeys: js.Array[String | Column]): Unit = js.native
+    def copySelectedRowsToClipboard(includeHeader: Unit, columnKeys: js.Array[String | Column]): Unit = js.native
     
     def copyToClipboard(): Unit = js.native
     def copyToClipboard(includeHeader: Boolean): Unit = js.native

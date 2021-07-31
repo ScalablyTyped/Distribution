@@ -4,25 +4,25 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("unstated-next", "createContainer")
+  @JSImport("unstated-next", JSImport.Namespace)
   @js.native
-  def createContainer[Value, State](useHook: js.Function1[/* initialState */ js.UndefOr[State], Value]): Container[Value, State] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("unstated-next", "useContainer")
-  @js.native
-  def useContainer[Value, State](container: Container[Value, State]): Value = js.native
+  @scala.inline
+  def createContainer[Value, State](useHook: js.Function1[/* initialState */ js.UndefOr[State], Value]): Container[Value, State] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContainer")(useHook.asInstanceOf[js.Any]).asInstanceOf[Container[Value, State]]
   
-  @js.native
+  @scala.inline
+  def useContainer[Value, State](container: Container[Value, State]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("useContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Value]
+  
   trait Container[Value, State] extends StObject {
     
-    var Provider: ComponentType[ContainerProviderProps[State]] = js.native
+    var Provider: ComponentType[ContainerProviderProps[State]]
     
-    def useContainer(): Value = js.native
+    def useContainer(): Value
   }
   object Container {
     
@@ -33,7 +33,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container[_, _], Value, State] (val x: Self with (Container[Value, State])) extends AnyVal {
+    implicit class ContainerMutableBuilder[Self <: Container[?, ?], Value, State] (val x: Self & (Container[Value, State])) extends AnyVal {
       
       @scala.inline
       def setProvider(value: ComponentType[ContainerProviderProps[State]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
@@ -43,12 +43,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ContainerProviderProps[State] extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var initialState: js.UndefOr[State] = js.native
+    var initialState: js.UndefOr[State] = js.undefined
   }
   object ContainerProviderProps {
     
@@ -59,7 +58,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ContainerProviderPropsMutableBuilder[Self <: ContainerProviderProps[_], State] (val x: Self with ContainerProviderProps[State]) extends AnyVal {
+    implicit class ContainerProviderPropsMutableBuilder[Self <: ContainerProviderProps[?], State] (val x: Self & ContainerProviderProps[State]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

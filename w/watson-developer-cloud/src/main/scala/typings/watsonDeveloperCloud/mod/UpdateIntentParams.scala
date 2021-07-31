@@ -2,31 +2,29 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateIntent` operation. */
-@js.native
 trait UpdateIntentParams extends StObject {
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The intent name. */
-  var intent: String = js.native
+  var intent: String
   
   /** The description of the intent. This string cannot contain carriage return, newline, or tab characters, and it must be no longer than 128 characters. */
-  var new_description: js.UndefOr[String] = js.native
+  var new_description: js.UndefOr[String] = js.undefined
   
   /** An array of user input examples for the intent. */
-  var new_examples: js.UndefOr[js.Array[Example]] = js.native
+  var new_examples: js.UndefOr[js.Array[Example]] = js.undefined
   
   /** The name of the intent. This string must conform to the following restrictions: - It can contain only Unicode alphanumeric, underscore, hyphen, and dot characters. - It cannot begin with the reserved prefix `sys-`. - It must be no longer than 128 characters. */
-  var new_intent: js.UndefOr[String] = js.native
+  var new_intent: js.UndefOr[String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object UpdateIntentParams {
   

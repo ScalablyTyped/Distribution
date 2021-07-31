@@ -3,17 +3,15 @@ package typings.ipp.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullRequest extends StObject {
   
-  var data: js.UndefOr[Buffer] = js.native
+  var data: js.UndefOr[Buffer] = js.undefined
   
-  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.native
+  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.undefined
   
-  var `operation-attributes-tag`: js.UndefOr[OperationAttributes] = js.native
+  var `operation-attributes-tag`: js.UndefOr[OperationAttributes] = js.undefined
 }
 object FullRequest {
   

@@ -2,13 +2,11 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutableRefObject[T] extends StObject {
   
-  var current: T = js.native
+  var current: T
 }
 object MutableRefObject {
   
@@ -19,7 +17,7 @@ object MutableRefObject {
   }
   
   @scala.inline
-  implicit class MutableRefObjectMutableBuilder[Self <: MutableRefObject[_], T] (val x: Self with MutableRefObject[T]) extends AnyVal {
+  implicit class MutableRefObjectMutableBuilder[Self <: MutableRefObject[?], T] (val x: Self & MutableRefObject[T]) extends AnyVal {
     
     @scala.inline
     def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])

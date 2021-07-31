@@ -2,15 +2,13 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderEndpointOptions extends StObject {
   
-  var stopOnEndOfStream: js.UndefOr[Boolean] = js.native
+  var stopOnEndOfStream: js.UndefOr[Boolean] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
 }
 object RecorderEndpointOptions {
   

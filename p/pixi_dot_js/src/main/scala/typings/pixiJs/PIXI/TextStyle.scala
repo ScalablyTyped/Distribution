@@ -4,7 +4,6 @@ import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait TextStyle extends StObject {
   
   /**
@@ -25,56 +23,56 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var align: String = js.native
+  var align: String
   
   /**
     * Indicates if lines can be wrapped within words, it needs wordWrap to be set to true
     *
     * @member {boolean}
     */
-  var breakWords: Boolean = js.native
+  var breakWords: Boolean
   
   /**
     * Set a drop shadow for the text
     *
     * @member {boolean}
     */
-  var dropShadow: Boolean = js.native
+  var dropShadow: Boolean
   
   /**
     * Set alpha for the drop shadow
     *
     * @member {number}
     */
-  var dropShadowAlpha: Double = js.native
+  var dropShadowAlpha: Double
   
   /**
     * Set a angle of the drop shadow
     *
     * @member {number}
     */
-  var dropShadowAngle: Double = js.native
+  var dropShadowAngle: Double
   
   /**
     * Set a shadow blur radius
     *
     * @member {number}
     */
-  var dropShadowBlur: Double = js.native
+  var dropShadowBlur: Double
   
   /**
     * A fill style to be used on the dropshadow e.g 'red', '#00FF00'
     *
     * @member {string|number}
     */
-  var dropShadowColor: String | Double = js.native
+  var dropShadowColor: String | Double
   
   /**
     * Set a distance of the drop shadow
     *
     * @member {number}
     */
-  var dropShadowDistance: Double = js.native
+  var dropShadowDistance: Double
   
   /**
     * A canvas fillstyle that will be used on the text e.g 'red', '#00FF00'.
@@ -83,7 +81,7 @@ trait TextStyle extends StObject {
     *
     * @member {string|string[]|number|number[]|CanvasGradient|CanvasPattern}
     */
-  var fill: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern = js.native
+  var fill: String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern
   
   /**
     * If fill is an array of colours to create a gradient, this array can set the stop points
@@ -91,7 +89,7 @@ trait TextStyle extends StObject {
     *
     * @member {number[]}
     */
-  var fillGradientStops: js.Array[Double] = js.native
+  var fillGradientStops: js.Array[Double]
   
   /**
     * If fill is an array of colours to create a gradient, this can change the type/direction of the gradient.
@@ -99,14 +97,14 @@ trait TextStyle extends StObject {
     *
     * @member {number}
     */
-  var fillGradientType: Double = js.native
+  var fillGradientType: Double
   
   /**
     * The font family
     *
     * @member {string|string[]}
     */
-  var fontFamily: String | js.Array[String] = js.native
+  var fontFamily: String | js.Array[String]
   
   /**
     * The font size
@@ -114,7 +112,7 @@ trait TextStyle extends StObject {
     *
     * @member {number|string}
     */
-  var fontSize: Double | String = js.native
+  var fontSize: Double | String
   
   /**
     * The font style
@@ -122,7 +120,7 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var fontStyle: String = js.native
+  var fontStyle: String
   
   /**
     * The font variant
@@ -130,7 +128,7 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var fontVariant: String = js.native
+  var fontVariant: String
   
   /**
     * The font weight
@@ -138,28 +136,28 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var fontWeight: String = js.native
+  var fontWeight: String
   
   /**
     * The space between lines
     *
     * @member {number}
     */
-  var leading: Double = js.native
+  var leading: Double
   
   /**
     * The amount of spacing between letters, default is 0
     *
     * @member {number}
     */
-  var letterSpacing: Double = js.native
+  var letterSpacing: Double
   
   /**
     * The line height, a number that represents the vertical space that a letter uses
     *
     * @member {number}
     */
-  var lineHeight: Double = js.native
+  var lineHeight: Double
   
   /**
     * The lineJoin property sets the type of corner created, it can resolve spiked text issues.
@@ -167,7 +165,7 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var lineJoin: String = js.native
+  var lineJoin: String
   
   /**
     * The miter limit to use when using the 'miter' lineJoin mode
@@ -175,7 +173,7 @@ trait TextStyle extends StObject {
     *
     * @member {number}
     */
-  var miterLimit: Double = js.native
+  var miterLimit: Double
   
   /**
     * Occasionally some fonts are cropped. Adding some padding will prevent this from happening
@@ -183,12 +181,12 @@ trait TextStyle extends StObject {
     *
     * @member {number}
     */
-  var padding: Double = js.native
+  var padding: Double
   
   /**
     * Resets all properties to the defaults specified in TextStyle.prototype._default
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * A canvas fillstyle that will be used on the text stroke
@@ -196,7 +194,7 @@ trait TextStyle extends StObject {
     *
     * @member {string|number}
     */
-  var stroke: String | Double = js.native
+  var stroke: String | Double
   
   /**
     * A number that represents the thickness of the stroke.
@@ -204,28 +202,28 @@ trait TextStyle extends StObject {
     *
     * @member {number}
     */
-  var strokeThickness: Double = js.native
+  var strokeThickness: Double
   
   /**
     * The baseline of the text that is rendered.
     *
     * @member {string}
     */
-  var textBaseline: String = js.native
+  var textBaseline: String
   
   /**
     * Generates a font style string to use for `TextMetrics.measureFont()`.
     *
     * @return {string} Font style string, for passing to `TextMetrics.measureFont()`
     */
-  def toFontString(): String = js.native
+  def toFontString(): String
   
   /**
     * Trim transparent borders
     *
     * @member {boolean}
     */
-  var trim: Boolean = js.native
+  var trim: Boolean
   
   /**
     * How newlines and spaces should be handled.
@@ -239,21 +237,21 @@ trait TextStyle extends StObject {
     *
     * @member {string}
     */
-  var whiteSpace: String = js.native
+  var whiteSpace: String
   
   /**
     * Indicates if word wrap should be used
     *
     * @member {boolean}
     */
-  var wordWrap: Boolean = js.native
+  var wordWrap: Boolean
   
   /**
     * The width at which text will wrap, it needs wordWrap to be set to true
     *
     * @member {number}
     */
-  var wordWrapWidth: Double = js.native
+  var wordWrapWidth: Double
 }
 object TextStyle {
   

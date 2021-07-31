@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LobbyBypassSettings extends StObject {
   
   // Specifies whether or not to always let dial-in callers bypass the lobby. Optional.
-  var isDialInBypassEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDialInBypassEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values
     * are listed in the following table. Optional.
     */
-  var scope: js.UndefOr[NullableOption[LobbyBypassScope]] = js.native
+  var scope: js.UndefOr[NullableOption[LobbyBypassScope]] = js.undefined
 }
 object LobbyBypassSettings {
   

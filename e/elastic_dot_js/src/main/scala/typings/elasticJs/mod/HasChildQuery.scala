@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "HasChildQuery")
 @js.native
-class HasChildQuery protected () extends Query {
+class HasChildQuery protected ()
+  extends StObject
+     with Query {
   /*
     Returns results that have child documents matching the query.
     */

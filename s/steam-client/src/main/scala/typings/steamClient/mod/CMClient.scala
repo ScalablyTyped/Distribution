@@ -7,7 +7,6 @@ import typings.steamClient.steamClientBooleans.`false`
 import typings.steamClient.steamClientStrings.message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("steam-client", "CMClient")
@@ -24,11 +23,11 @@ class CMClient () extends EventEmitter {
     * @param localPort The local port you want to use for the outgoing connection
     */
   def bind(): Unit = js.native
-  def bind(localAddress: js.UndefOr[scala.Nothing], localPort: String): Unit = js.native
-  def bind(localAddress: js.UndefOr[scala.Nothing], localPort: Double): Unit = js.native
   def bind(localAddress: String): Unit = js.native
   def bind(localAddress: String, localPort: String): Unit = js.native
   def bind(localAddress: String, localPort: Double): Unit = js.native
+  def bind(localAddress: Unit, localPort: String): Unit = js.native
+  def bind(localAddress: Unit, localPort: Double): Unit = js.native
   
   /**
     * Connects to Steam.It will keep trying to reconnect (provided autoRetry is not false) until encryption handshake is complete (see 'connected'), unless you cancel it with disconnect.
@@ -39,7 +38,7 @@ class CMClient () extends EventEmitter {
     * @param autoRetry true if you want to automatically retry connection until successful, or false if you want an error event if connection fails. Default true
     */
   def connect(): Unit = js.native
-  def connect(server: js.UndefOr[scala.Nothing], autoRetry: Boolean): Unit = js.native
+  def connect(server: Unit, autoRetry: Boolean): Unit = js.native
   def connect(server: Server): Unit = js.native
   def connect(server: Server, autoRetry: Boolean): Unit = js.native
   

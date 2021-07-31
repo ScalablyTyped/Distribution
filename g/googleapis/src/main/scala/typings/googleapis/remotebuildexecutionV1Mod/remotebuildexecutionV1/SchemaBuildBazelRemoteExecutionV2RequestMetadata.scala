@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `build.bazel.remote.execution.v2.requestmetadata-bin` * contents: the
   * base64 encoded binary `RequestMetadata` message.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2RequestMetadata extends StObject {
   
   /**
@@ -21,25 +19,25 @@ trait SchemaBuildBazelRemoteExecutionV2RequestMetadata extends StObject {
     * example, multiple requests to the CAS, Action Cache, and Execution API
     * are used in order to compile foo.cc.
     */
-  var actionId: js.UndefOr[String] = js.native
+  var actionId: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier to tie multiple tool invocations together. For example,
     * runs of foo_test, bar_test and baz_test on a post-submit of a given
     * patch.
     */
-  var correlatedInvocationsId: js.UndefOr[String] = js.native
+  var correlatedInvocationsId: js.UndefOr[String] = js.undefined
   
   /**
     * The details for the tool invoking the requests.
     */
-  var toolDetails: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ToolDetails] = js.native
+  var toolDetails: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ToolDetails] = js.undefined
   
   /**
     * An identifier that ties multiple actions together to a final result. For
     * example, multiple actions are required to build and run foo_test.
     */
-  var toolInvocationId: js.UndefOr[String] = js.native
+  var toolInvocationId: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2RequestMetadata {
   

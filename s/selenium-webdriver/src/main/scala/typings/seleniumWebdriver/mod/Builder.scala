@@ -4,7 +4,6 @@ import typings.seleniumWebdriver.chromeMod.ServiceBuilder
 import typings.seleniumWebdriver.loggingMod.Preferences
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Builder")
@@ -58,9 +57,9 @@ class Builder () extends StObject {
     * @return {!Builder} A self reference.
     */
   def forBrowser(name: String): Builder = js.native
-  def forBrowser(name: String, opt_version: js.UndefOr[scala.Nothing], opt_platform: String): Builder = js.native
   def forBrowser(name: String, opt_version: String): Builder = js.native
   def forBrowser(name: String, opt_version: String, opt_platform: String): Builder = js.native
+  def forBrowser(name: String, opt_version: Unit, opt_platform: String): Builder = js.native
   
   /**
     * Returns the base set of capabilities this instance is currently configured

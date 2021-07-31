@@ -13,58 +13,56 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/popover/popover.IPopoverProps> */
-@js.native
 trait PartialIPopoverProps extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+  var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
   
-  var boundary: js.UndefOr[Boundary] = js.native
+  var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+  var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
   
-  var captureDismiss: js.UndefOr[Boolean] = js.native
+  var captureDismiss: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[String | Element] = js.native
+  var content: js.UndefOr[String | Element] = js.undefined
   
-  var defaultIsOpen: js.UndefOr[Boolean] = js.native
+  var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var enforceFocus: js.UndefOr[Boolean] = js.native
+  var enforceFocus: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var hasBackdrop: js.UndefOr[Boolean] = js.native
+  var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var hoverCloseDelay: js.UndefOr[Double] = js.native
+  var hoverCloseDelay: js.UndefOr[Double] = js.undefined
   
-  var hoverOpenDelay: js.UndefOr[Double] = js.native
+  var hoverOpenDelay: js.UndefOr[Double] = js.undefined
   
-  var inheritDarkTheme: js.UndefOr[Boolean] = js.native
+  var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
   
-  var interactionKind: js.UndefOr[PopoverInteractionKind] = js.native
+  var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
   
-  var minimal: js.UndefOr[Boolean] = js.native
+  var minimal: js.UndefOr[Boolean] = js.undefined
   
-  var modifiers: js.UndefOr[Modifiers] = js.native
+  var modifiers: js.UndefOr[Modifiers] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
   
-  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
   var onInteraction: js.UndefOr[
     js.Function2[
@@ -72,41 +70,41 @@ trait PartialIPopoverProps extends StObject {
       /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+  var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   
-  var openOnTargetFocus: js.UndefOr[Boolean] = js.native
+  var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
   
-  var popoverClassName: js.UndefOr[String] = js.native
+  var popoverClassName: js.UndefOr[String] = js.undefined
   
-  var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.native
+  var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
   
-  var portalClassName: js.UndefOr[String] = js.native
+  var portalClassName: js.UndefOr[String] = js.undefined
   
-  var portalContainer: js.UndefOr[HTMLElement] = js.native
+  var portalContainer: js.UndefOr[HTMLElement] = js.undefined
   
-  var position: js.UndefOr[PopoverPosition] = js.native
+  var position: js.UndefOr[PopoverPosition] = js.undefined
   
-  var target: js.UndefOr[String | Element] = js.native
+  var target: js.UndefOr[String | Element] = js.undefined
   
-  var targetClassName: js.UndefOr[String] = js.native
+  var targetClassName: js.UndefOr[String] = js.undefined
   
-  var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+  var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   
   var targetTagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
-  var usePortal: js.UndefOr[Boolean] = js.native
+  var usePortal: js.UndefOr[Boolean] = js.undefined
   
   var wrapperTagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object PartialIPopoverProps {
   

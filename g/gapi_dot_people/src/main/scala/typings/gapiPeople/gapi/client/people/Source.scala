@@ -2,19 +2,17 @@ package typings.gapiPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var etag: String = js.native
+  var etag: String
   
-  var id: String = js.native
+  var id: String
   
-  var resourceName: String = js.native
+  var resourceName: String
   
-  var `type`: SourceType = js.native
+  var `type`: SourceType
 }
 object Source {
   

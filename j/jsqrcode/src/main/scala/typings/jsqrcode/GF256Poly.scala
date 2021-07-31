@@ -2,35 +2,33 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GF256Poly extends StObject {
   
-  val Coefficients: js.Array[Double] = js.native
+  val Coefficients: js.Array[Double]
   
-  val Degree: Double = js.native
+  val Degree: Double
   
-  val Zero: Boolean = js.native
+  val Zero: Boolean
   
-  def addOrSubtract(other: GF256Poly): GF256Poly = js.native
+  def addOrSubtract(other: GF256Poly): GF256Poly
   
-  var coefficients: js.Array[Double] = js.native
+  var coefficients: js.Array[Double]
   
-  def divide(other: GF256Poly): js.Tuple2[GF256Poly, GF256Poly] = js.native
+  def divide(other: GF256Poly): js.Tuple2[GF256Poly, GF256Poly]
   
-  def evaluateAt(a: Double): Double = js.native
+  def evaluateAt(a: Double): Double
   
-  var field: GF256 = js.native
+  var field: GF256
   
-  def getCoefficient(degree: Double): Double = js.native
+  def getCoefficient(degree: Double): Double
   
-  def multiply1(other: GF256Poly): GF256Poly = js.native
+  def multiply1(other: GF256Poly): GF256Poly
   
-  def multiply2(scalar: Double): GF256Poly = js.native
+  def multiply2(scalar: Double): GF256Poly
   
-  def multiplyByMonomial(degree: Double, coefficient: Double): GF256Poly = js.native
+  def multiplyByMonomial(degree: Double, coefficient: Double): GF256Poly
 }
 object GF256Poly {
   

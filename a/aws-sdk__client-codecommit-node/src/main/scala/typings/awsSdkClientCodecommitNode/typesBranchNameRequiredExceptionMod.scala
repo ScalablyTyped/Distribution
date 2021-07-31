@@ -8,30 +8,27 @@ import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExcep
 import typings.awsSdkClientCodecommitNode.updateDefaultBranchExceptionsUnionMod.UpdateDefaultBranchExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBranchNameRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BranchNameRequiredExceptionDetails> * / any */ @js.native
-  trait BranchNameRequiredException
-    extends CreateBranchExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BranchNameRequiredExceptionDetails> * / any */ trait BranchNameRequiredException
+    extends StObject
+       with CreateBranchExceptionsUnion
        with DeleteBranchExceptionsUnion
        with DeleteFileExceptionsUnion
        with GetBranchExceptionsUnion
        with PutFileExceptionsUnion
        with UpdateDefaultBranchExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameRequiredException
   }
   object BranchNameRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BranchNameRequiredException
-    ): BranchNameRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BranchNameRequiredException = {
+      val __obj = js.Dynamic.literal(name = "BranchNameRequiredException")
       __obj.asInstanceOf[BranchNameRequiredException]
     }
     
@@ -45,6 +42,5 @@ object typesBranchNameRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait BranchNameRequiredExceptionDetails extends StObject
 }

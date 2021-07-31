@@ -8,7 +8,6 @@ import typings.ol.styleStyleMod.Style
 import typings.ol.styleStyleMod.StyleLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionExtentMod {
@@ -58,20 +57,19 @@ object interactionExtentMod {
     var extent: typings.ol.extentMod.Extent = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var boxStyle: js.UndefOr[StyleLike] = js.native
+    var boxStyle: js.UndefOr[StyleLike] = js.undefined
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var extent: js.UndefOr[typings.ol.extentMod.Extent] = js.native
+    var extent: js.UndefOr[typings.ol.extentMod.Extent] = js.undefined
     
-    var pixelTolerance: js.UndefOr[Double] = js.native
+    var pixelTolerance: js.UndefOr[Double] = js.undefined
     
-    var pointerStyle: js.UndefOr[StyleLike] = js.native
+    var pointerStyle: js.UndefOr[StyleLike] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

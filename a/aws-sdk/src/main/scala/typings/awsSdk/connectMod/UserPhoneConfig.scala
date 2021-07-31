@@ -2,31 +2,29 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPhoneConfig extends StObject {
   
   /**
     * The After Call Work (ACW) timeout setting, in seconds.
     */
-  var AfterContactWorkTimeLimit: js.UndefOr[typings.awsSdk.connectMod.AfterContactWorkTimeLimit] = js.native
+  var AfterContactWorkTimeLimit: js.UndefOr[typings.awsSdk.connectMod.AfterContactWorkTimeLimit] = js.undefined
   
   /**
     * The Auto accept setting.
     */
-  var AutoAccept: js.UndefOr[typings.awsSdk.connectMod.AutoAccept] = js.native
+  var AutoAccept: js.UndefOr[typings.awsSdk.connectMod.AutoAccept] = js.undefined
   
   /**
     * The phone number for the user's desk phone.
     */
-  var DeskPhoneNumber: js.UndefOr[PhoneNumber] = js.native
+  var DeskPhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
   
   /**
     * The phone type.
     */
-  var PhoneType: typings.awsSdk.connectMod.PhoneType = js.native
+  var PhoneType: typings.awsSdk.connectMod.PhoneType
 }
 object UserPhoneConfig {
   

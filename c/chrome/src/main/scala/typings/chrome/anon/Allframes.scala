@@ -2,30 +2,28 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allframes extends StObject {
   
-  var all_frames: js.UndefOr[Boolean] = js.native
+  var all_frames: js.UndefOr[Boolean] = js.undefined
   
-  var css: js.UndefOr[js.Array[String]] = js.native
+  var css: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exclude_globs: js.UndefOr[js.Array[String]] = js.native
+  var exclude_globs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exclude_matches: js.UndefOr[js.Array[String]] = js.native
+  var exclude_matches: js.UndefOr[js.Array[String]] = js.undefined
   
-  var include_globs: js.UndefOr[js.Array[String]] = js.native
+  var include_globs: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("js")
-  var js_ : js.UndefOr[js.Array[String]] = js.native
+  var js_ : js.UndefOr[js.Array[String]] = js.undefined
   
-  var match_about_blank: js.UndefOr[Boolean] = js.native
+  var match_about_blank: js.UndefOr[Boolean] = js.undefined
   
-  var matches: js.UndefOr[js.Array[String]] = js.native
+  var matches: js.UndefOr[js.Array[String]] = js.undefined
   
-  var run_at: js.UndefOr[String] = js.native
+  var run_at: js.UndefOr[String] = js.undefined
 }
 object Allframes {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource tag.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * An array of tag keys to delete
     */
-  var TagKeys: listOfString = js.native
+  var TagKeys: listOfString
 }
 object DeleteTagsRequest {
   

@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.GistsListStarredResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGistsListStarredEndpoint extends StObject {
   
-  var parameters: GistsListStarredEndpoint = js.native
+  var parameters: GistsListStarredEndpoint
   
-  var response: OctokitResponse[GistsListStarredResponseData] = js.native
+  var response: OctokitResponse[GistsListStarredResponseData]
 }
 object ParametersGistsListStarredEndpoint {
   

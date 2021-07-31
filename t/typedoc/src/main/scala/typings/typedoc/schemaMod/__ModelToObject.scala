@@ -6,7 +6,6 @@ import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait __ModelToObject[T] extends StObject

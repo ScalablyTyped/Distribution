@@ -6,42 +6,42 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a library and provides access to its modules
   * @deprecated Deprecated
   */
-@js.native
-trait XStarBasicAccess extends XInterface {
+trait XStarBasicAccess
+  extends StObject
+     with XInterface {
   
   /** returns the library container giving access to the libraries stored in a document or basic library file. */
-  val LibraryContainer: XNameContainer = js.native
+  val LibraryContainer: XNameContainer
   
   /**
     * Adds an old style basic dialog (SI controls) to an existing (e.g., created by createLibrary) library. By using this method together with createLibrary
     * the caller does not have to implement {@link XStarBasicLibraryInfo} and {@link XStarBasicDialogInfo}
     * @throws NoSuchElementException if the library doesn't exist.
     */
-  def addDialog(LibraryName: String, DialogName: String, Data: SeqEquiv[Double]): Unit = js.native
+  def addDialog(LibraryName: String, DialogName: String, Data: SeqEquiv[Double]): Unit
   
   /**
     * Adds a module to an existing (e.g., created by createLibrary) library. By using this method together with createLibrary the caller does not have to
     * implement {@link XStarBasicLibraryInfo} and XModuleInfo.
     * @throws NoSuchElementException if the library doesn't exist.
     */
-  def addModule(LibraryName: String, ModuleName: String, Language: String, Source: String): Unit = js.native
+  def addModule(LibraryName: String, ModuleName: String, Language: String, Source: String): Unit
   
   /**
     * Creates an empty library. This method can be called alternatively to accessing directly the NameContainer returned by getLibraryContainer. By using
     * this method together with addModule and addStarBasicDialog the caller does not have to implement {@link XStarBasicLibraryInfo} , XModuleInfo, and
     * {@link XStarBasicDialogInfo}
     */
-  def createLibrary(LibName: String, Password: String, ExternalSourceURL: String, LinkTargetURL: String): Unit = js.native
+  def createLibrary(LibName: String, Password: String, ExternalSourceURL: String, LinkTargetURL: String): Unit
   
   /** returns the library container giving access to the libraries stored in a document or basic library file. */
-  def getLibraryContainer(): XNameContainer = js.native
+  def getLibraryContainer(): XNameContainer
 }
 object XStarBasicAccess {
   

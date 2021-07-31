@@ -3,21 +3,19 @@ package typings.pixiJs.anon
 import typings.pixiJs.PIXI.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alpha extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var pluginName: js.UndefOr[String] = js.native
+  var pluginName: js.UndefOr[String] = js.undefined
   
-  var program: js.UndefOr[Program] = js.native
+  var program: js.UndefOr[Program] = js.undefined
   
-  var tint: js.UndefOr[Double] = js.native
+  var tint: js.UndefOr[Double] = js.undefined
   
-  var uniforms: js.UndefOr[js.Any] = js.native
+  var uniforms: js.UndefOr[js.Any] = js.undefined
 }
 object Alpha {
   

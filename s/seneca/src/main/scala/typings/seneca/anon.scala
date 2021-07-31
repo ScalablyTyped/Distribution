@@ -4,19 +4,17 @@ import typings.seneca.mod.LogLevel
 import typings.seneca.mod.UnknownType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Act extends StObject {
     
-    var act: js.UndefOr[Boolean] = js.native
+    var act: js.UndefOr[Boolean] = js.undefined
     
-    var stack: js.UndefOr[Boolean] = js.native
+    var stack: js.UndefOr[Boolean] = js.undefined
     
-    var unknown: js.UndefOr[String] = js.native
+    var unknown: js.UndefOr[String] = js.undefined
   }
   object Act {
     
@@ -49,26 +47,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Actcaller extends StObject {
     
     // Trace action caller and place in args.caller$.
-    var act_caller: js.UndefOr[Boolean] = js.native
+    var act_caller: js.UndefOr[Boolean] = js.undefined
     
     // Record and log callpoints (calling code locations).
-    var callpoint: js.UndefOr[Boolean] = js.native
+    var callpoint: js.UndefOr[Boolean] = js.undefined
     
     // Throw (some) errors from seneca.act.
-    var fragile: js.UndefOr[Boolean] = js.native
+    var fragile: js.UndefOr[Boolean] = js.undefined
     
     // Print debug info to console
-    var print: js.UndefOr[Options] = js.native
+    var print: js.UndefOr[Options] = js.undefined
     
     // Shorten all identifiers to 2 characters.
-    var short_logs: js.UndefOr[Boolean] = js.native
+    var short_logs: js.UndefOr[Boolean] = js.undefined
     
     // Fatal errors ... aren't fatal. Not for production!
-    var undead: js.UndefOr[Boolean] = js.native
+    var undead: js.UndefOr[Boolean] = js.undefined
   }
   object Actcaller {
     
@@ -119,12 +116,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Active extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Active {
     
@@ -151,17 +147,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Actrouter extends StObject {
     
-    var actrouter: js.UndefOr[UnknownType] = js.native
+    var actrouter: js.UndefOr[UnknownType] = js.undefined
     
-    var clientrouter: js.UndefOr[UnknownType] = js.native
+    var clientrouter: js.UndefOr[UnknownType] = js.undefined
     
     // Close instance on these signals, if true.
-    var close_signals: js.UndefOr[SIGBREAK] = js.native
+    var close_signals: js.UndefOr[SIGBREAK] = js.undefined
     
-    var subrouter: js.UndefOr[UnknownType] = js.native
+    var subrouter: js.UndefOr[UnknownType] = js.undefined
   }
   object Actrouter {
     
@@ -200,17 +195,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Add extends StObject {
     
     // Adding a pattern overrides existing pattern only if matches exactly.
-    var add: js.UndefOr[Boolean] = js.native
+    var add: js.UndefOr[Boolean] = js.undefined
     
     // Delegate fixedargs override action args.
-    var fixedargs: js.UndefOr[Boolean] = js.native
+    var fixedargs: js.UndefOr[Boolean] = js.undefined
     
     // Action result must be a plain object.
-    var result: js.UndefOr[Boolean] = js.native
+    var result: js.UndefOr[Boolean] = js.undefined
   }
   object Add {
     
@@ -243,16 +237,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Basic extends StObject {
     
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
-    var `mem-store`: js.UndefOr[Boolean] = js.native
+    var `mem-store`: js.UndefOr[Boolean] = js.undefined
     
-    var transport: js.UndefOr[Boolean] = js.native
+    var transport: js.UndefOr[Boolean] = js.undefined
     
-    var web: js.UndefOr[Boolean] = js.native
+    var web: js.UndefOr[Boolean] = js.undefined
   }
   object Basic {
     
@@ -291,12 +284,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Host {
     
@@ -323,14 +315,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var running: js.UndefOr[Boolean] = js.native
+    var running: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Interval {
     
@@ -363,12 +354,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var short: js.UndefOr[Boolean] = js.native
+    var short: js.UndefOr[Boolean] = js.undefined
   }
   object Level {
     
@@ -395,12 +385,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Local extends StObject {
     
-    var local: js.UndefOr[Boolean] = js.native
+    var local: js.UndefOr[Boolean] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object Local {
     
@@ -427,11 +416,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     // Print options. Best used via --seneca.print.options.
-    var options: js.UndefOr[Boolean] = js.native
+    var options: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -452,13 +440,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Running extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     // By default, does not run.
-    var running: js.UndefOr[Boolean] = js.native
+    var running: js.UndefOr[Boolean] = js.undefined
   }
   object Running {
     
@@ -485,16 +472,15 @@ object anon {
     }
   }
   
-  @js.native
   trait SIGBREAK extends StObject {
     
-    var SIGBREAK: js.UndefOr[Boolean] = js.native
+    var SIGBREAK: js.UndefOr[Boolean] = js.undefined
     
-    var SIGHUP: js.UndefOr[Boolean] = js.native
+    var SIGHUP: js.UndefOr[Boolean] = js.undefined
     
-    var SIGINT: js.UndefOr[Boolean] = js.native
+    var SIGINT: js.UndefOr[Boolean] = js.undefined
     
-    var SIGTERM: js.UndefOr[Boolean] = js.native
+    var SIGTERM: js.UndefOr[Boolean] = js.undefined
   }
   object SIGBREAK {
     

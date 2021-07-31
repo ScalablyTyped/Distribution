@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait QueryOptions extends StObject {
     * https://cloud.google.com/spanner/docs/query-optimizer/manage-query-optimizer for more information on managing the query optimizer. The `optimizer_version` statement hint has
     * precedence over this setting.
     */
-  var optimizerVersion: js.UndefOr[String] = js.native
+  var optimizerVersion: js.UndefOr[String] = js.undefined
 }
 object QueryOptions {
   

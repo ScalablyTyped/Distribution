@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceFleetModifyConfig extends StObject {
   
   /**
     * A unique identifier for the instance fleet.
     */
-  var InstanceFleetId: typings.awsSdk.emrMod.InstanceFleetId = js.native
+  var InstanceFleetId: typings.awsSdk.emrMod.InstanceFleetId
   
   /**
     * The target capacity of On-Demand units for the instance fleet. For more information see InstanceFleetConfig$TargetOnDemandCapacity.
     */
-  var TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.native
+  var TargetOnDemandCapacity: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * The target capacity of Spot units for the instance fleet. For more information, see InstanceFleetConfig$TargetSpotCapacity.
     */
-  var TargetSpotCapacity: js.UndefOr[WholeNumber] = js.native
+  var TargetSpotCapacity: js.UndefOr[WholeNumber] = js.undefined
 }
 object InstanceFleetModifyConfig {
   

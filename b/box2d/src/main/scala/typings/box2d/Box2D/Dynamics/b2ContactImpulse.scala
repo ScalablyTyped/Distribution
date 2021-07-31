@@ -3,21 +3,19 @@ package typings.box2d.Box2D.Dynamics
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2ContactImpulse extends StObject {
   
   /**
     * Normal impulses.
     **/
-  var normalImpulses: b2Vec2 = js.native
+  var normalImpulses: b2Vec2
   
   /**
     * Tangent impulses.
     **/
-  var tangentImpulses: b2Vec2 = js.native
+  var tangentImpulses: b2Vec2
 }
 object b2ContactImpulse {
   

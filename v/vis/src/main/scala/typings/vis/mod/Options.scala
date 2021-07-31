@@ -2,42 +2,40 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
-  var clickToUse: js.UndefOr[Boolean] = js.native
+  var clickToUse: js.UndefOr[Boolean] = js.undefined
   
-  var configure: js.UndefOr[NetworkConfigure] = js.native
+  var configure: js.UndefOr[NetworkConfigure] = js.undefined
   
-  var edges: js.UndefOr[EdgeOptions] = js.native
+  var edges: js.UndefOr[EdgeOptions] = js.undefined
   
-  var groups: js.UndefOr[js.Any] = js.native
+  var groups: js.UndefOr[js.Any] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   // http://visjs.org/docs/network/layout.html
-  var interaction: js.UndefOr[js.Any] = js.native
+  var interaction: js.UndefOr[js.Any] = js.undefined
   
-  var layout: js.UndefOr[js.Any] = js.native
+  var layout: js.UndefOr[js.Any] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var locales: js.UndefOr[Locales] = js.native
+  var locales: js.UndefOr[Locales] = js.undefined
   
   // visjs.org/docs/network/interaction.html?keywords=edges
-  var manipulation: js.UndefOr[js.Any] = js.native
+  var manipulation: js.UndefOr[js.Any] = js.undefined
   
-  var nodes: js.UndefOr[NodeOptions] = js.native
+  var nodes: js.UndefOr[NodeOptions] = js.undefined
   
   // http://visjs.org/docs/network/manipulation.html#
-  var physics: js.UndefOr[js.Any] = js.native
+  var physics: js.UndefOr[js.Any] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object Options {
   

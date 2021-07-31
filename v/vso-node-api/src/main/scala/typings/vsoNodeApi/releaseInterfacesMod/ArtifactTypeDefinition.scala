@@ -3,19 +3,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactTypeDefinition extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var inputDescriptors: js.Array[InputDescriptor] = js.native
+  var inputDescriptors: js.Array[InputDescriptor]
   
-  var name: String = js.native
+  var name: String
   
-  var uniqueSourceIdentifier: String = js.native
+  var uniqueSourceIdentifier: String
 }
 object ArtifactTypeDefinition {
   

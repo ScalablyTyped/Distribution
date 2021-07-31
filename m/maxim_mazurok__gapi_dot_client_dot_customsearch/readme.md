@@ -10,9 +10,9 @@ TypeScript typings for Custom Search API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.customsearch |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 50 |
 | # dependents       | 1 |
-| # downloads        | 157 |
+| # downloads        | 3246 |
 | # stars            | 0 |
 
 ## Links

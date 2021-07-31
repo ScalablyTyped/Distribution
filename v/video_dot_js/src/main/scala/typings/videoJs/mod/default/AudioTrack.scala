@@ -4,7 +4,6 @@ import typings.videoJs.mod.videojs.AudioTrackOptions
 import typings.videoJs.mod.videojs.Track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,7 +39,9 @@ object AudioTrack {
     *        If this track is the one that is currently playing. If this track is part of
     *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
     */
-  class ^ () extends Track {
+  class ^ ()
+    extends StObject
+       with Track {
     def this(options: AudioTrackOptions) = this()
   }
 }

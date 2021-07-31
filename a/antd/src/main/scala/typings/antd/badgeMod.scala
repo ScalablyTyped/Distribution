@@ -12,7 +12,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod extends Shortcut {
@@ -21,39 +20,38 @@ object badgeMod extends Shortcut {
   @js.native
   val default: CompoundedComponent = js.native
   
-  @js.native
   trait BadgeProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.native
+    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
     
     /** Number to show in badge */
-    var count: js.UndefOr[ReactNode] = js.native
+    var count: js.UndefOr[ReactNode] = js.undefined
     
     /** whether to show red dot without number */
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.native
+    var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
     
     /** Max count to show */
-    var overflowCount: js.UndefOr[Double] = js.native
+    var overflowCount: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var scrollNumberPrefixCls: js.UndefOr[String] = js.native
+    var scrollNumberPrefixCls: js.UndefOr[String] = js.undefined
     
-    var showZero: js.UndefOr[Boolean] = js.native
+    var showZero: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.native
+    var size: js.UndefOr[typings.antd.antdStrings.default | small] = js.undefined
     
-    var status: js.UndefOr[PresetStatusColorType] = js.native
+    var status: js.UndefOr[PresetStatusColorType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var text: js.UndefOr[ReactNode] = js.native
+    var text: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object BadgeProps {
     
@@ -153,7 +151,9 @@ object badgeMod extends Shortcut {
   }
   
   @js.native
-  trait CompoundedComponent extends FunctionComponent[BadgeProps] {
+  trait CompoundedComponent
+    extends StObject
+       with FunctionComponent[BadgeProps] {
     
     var Ribbon: FC[RibbonProps] = js.native
   }

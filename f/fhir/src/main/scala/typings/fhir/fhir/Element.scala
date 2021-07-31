@@ -2,39 +2,37 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base for all elements
   */
-@js.native
 trait Element extends StObject {
   
   /**
     * Contains extended information for property 'fhir_comments'.
     */
-  var _fhir_comments: js.UndefOr[js.Array[Element]] = js.native
+  var _fhir_comments: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'id'.
     */
-  var _id: js.UndefOr[Element] = js.native
+  var _id: js.UndefOr[Element] = js.undefined
   
   /**
     * Additional Content defined by implementations
     */
-  var extension: js.UndefOr[js.Array[Extension]] = js.native
+  var `extension`: js.UndefOr[js.Array[Extension]] = js.undefined
   
   /**
     * Content that would be comments in an XML.
     */
-  var fhir_comments: js.UndefOr[js.Array[String]] = js.native
+  var fhir_comments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * xml:id (or equivalent in JSON)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object Element {
   

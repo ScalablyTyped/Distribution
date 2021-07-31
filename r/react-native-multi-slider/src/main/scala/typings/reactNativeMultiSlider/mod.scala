@@ -8,7 +8,6 @@ import typings.reactNativeMultiSlider.reactNativeMultiSliderStrings.horizontal
 import typings.reactNativeMultiSlider.reactNativeMultiSliderStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,16 +17,15 @@ object mod {
   class default ()
     extends Component[MultiSliderProps, js.Object, js.Any]
   
-  @js.native
   trait MarkerProps extends StObject {
     
-    var markerStyle: js.UndefOr[ViewStyle] = js.native
+    var markerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var pressed: js.UndefOr[Double] = js.native
+    var pressed: js.UndefOr[Double] = js.undefined
     
-    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.native
+    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MarkerProps {
     
@@ -68,7 +66,6 @@ object mod {
   
   type MultiSlider = Component[MultiSliderProps, js.Object, js.Any]
   
-  @js.native
   trait MultiSliderProps extends StObject {
     
     /**
@@ -76,9 +73,9 @@ object mod {
       *
       * Default { height: 30 }
       */
-    var containerStyle: js.UndefOr[ViewStyle] = js.native
+    var containerStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.native
+    var customMarker: js.UndefOr[ComponentType[MarkerProps]] = js.undefined
     
     /**
       * Customise the marker's style
@@ -92,75 +89,75 @@ object mod {
       *     borderColor: 'grey',
       * }
       */
-    var markerStyle: js.UndefOr[ViewStyle] = js.native
+    var markerStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Slider max value corresponding to far right
       *
       * Default 10
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Slider min value corresponding to far left
       *
       * Default 0
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Function called after every change in value, with current values passed in as an array.
       */
-    var onValuesChange: js.UndefOr[js.Function1[/* change */ js.Array[Double], Unit]] = js.native
+    var onValuesChange: js.UndefOr[js.Function1[/* change */ js.Array[Double], Unit]] = js.undefined
     
     /**
       * Function called on end of press with final values passed in as an array
       */
-    var onValuesChangeFinish: js.UndefOr[js.Function1[/* change */ js.Array[Double], Unit]] = js.native
+    var onValuesChangeFinish: js.UndefOr[js.Function1[/* change */ js.Array[Double], Unit]] = js.undefined
     
     /**
       * Function to be called at beginning of press
       */
-    var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onValuesChangeStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Array of values corresponding to the slider's position (left to right on slider index 0 to end respectively).
       * Values of any type can be inserted and the slider will simply give them back in the callbacks
       */
-    var optionsArray: js.UndefOr[js.Array[Double]] = js.native
+    var optionsArray: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Style to be given to marker when pressed
       *
       * Default { backgroundColor:'#D3D3D3' }
       */
-    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.native
+    var pressedMarkerStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Style for the track up to a single marker or between double markers
       *
       * Default { backgroundColor: 'blue' }
       */
-    var selectedStyle: js.UndefOr[ViewStyle] = js.native
+    var selectedStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Width of track
       *
       * Default 280
       */
-    var sliderLength: js.UndefOr[Double] = js.native
+    var sliderLength: js.UndefOr[Double] = js.undefined
     
     /**
       * TODO
       */
-    var sliderOrientation: js.UndefOr[horizontal | vertical] = js.native
+    var sliderOrientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * The step size between values. Make sure min max range is divisible by this to get expected results
       *
       * Default 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Area to be touched, should enclose the whole marker.
@@ -168,21 +165,21 @@ object mod {
       * Slip displacement If finger leaves the marker measures distance before responder cuts out and changes are no
       * longer registered, if not given marker will be active until pressed released.
       */
-    var touchDimensions: js.UndefOr[BorderRadius] = js.native
+    var touchDimensions: js.UndefOr[BorderRadius] = js.undefined
     
     /**
       * Customise the track
       *
       * Default { borderRadius: 7, height: 3.5 }
       */
-    var trackStyle: js.UndefOr[ViewStyle] = js.native
+    var trackStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * Style for remaining track
       *
       * Default { backgroundColor: 'grey' }
       */
-    var unselectedStyle: js.UndefOr[ViewStyle] = js.native
+    var unselectedStyle: js.UndefOr[ViewStyle] = js.undefined
     
     /**
       * An array containing one or two values (determines one or two markers respectively) that are the initial marker values.
@@ -190,7 +187,7 @@ object mod {
       *
       * Default [0]
       */
-    var values: js.UndefOr[js.Array[Double]] = js.native
+    var values: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object MultiSliderProps {
     

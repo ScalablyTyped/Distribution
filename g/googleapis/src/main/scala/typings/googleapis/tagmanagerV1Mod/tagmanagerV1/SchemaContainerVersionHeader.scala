@@ -2,64 +2,62 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Container Version Header.
   */
-@js.native
 trait SchemaContainerVersionHeader extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * The Container Version ID uniquely identifies the GTM Container Version.
     */
-  var containerVersionId: js.UndefOr[String] = js.native
+  var containerVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * A value of true indicates this container version has been deleted.
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Container version display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Number of macros in the container version.
     */
-  var numMacros: js.UndefOr[String] = js.native
+  var numMacros: js.UndefOr[String] = js.undefined
   
   /**
     * Number of rules in the container version.
     */
-  var numRules: js.UndefOr[String] = js.native
+  var numRules: js.UndefOr[String] = js.undefined
   
   /**
     * Number of tags in the container version.
     */
-  var numTags: js.UndefOr[String] = js.native
+  var numTags: js.UndefOr[String] = js.undefined
   
   /**
     * Number of triggers in the container version.
     */
-  var numTriggers: js.UndefOr[String] = js.native
+  var numTriggers: js.UndefOr[String] = js.undefined
   
   /**
     * Number of variables in the container version.
     */
-  var numVariables: js.UndefOr[String] = js.native
+  var numVariables: js.UndefOr[String] = js.undefined
 }
 object SchemaContainerVersionHeader {
   

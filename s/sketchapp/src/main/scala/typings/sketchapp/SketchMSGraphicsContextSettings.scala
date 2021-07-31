@@ -3,27 +3,21 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.graphicsContextSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSGraphicsContextSettings extends StObject {
   
-  var _class: graphicsContextSettings = js.native
+  var _class: graphicsContextSettings
   
-  var blendMode: SketchMSGraphicsContextSettingsBlendMode = js.native
+  var blendMode: SketchMSGraphicsContextSettingsBlendMode
   
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object SketchMSGraphicsContextSettings {
   
   @scala.inline
-  def apply(
-    _class: graphicsContextSettings,
-    blendMode: SketchMSGraphicsContextSettingsBlendMode,
-    opacity: Double
-  ): SketchMSGraphicsContextSettings = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
+  def apply(blendMode: SketchMSGraphicsContextSettingsBlendMode, opacity: Double): SketchMSGraphicsContextSettings = {
+    val __obj = js.Dynamic.literal(_class = "graphicsContextSettings", blendMode = blendMode.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSGraphicsContextSettings]
   }
   

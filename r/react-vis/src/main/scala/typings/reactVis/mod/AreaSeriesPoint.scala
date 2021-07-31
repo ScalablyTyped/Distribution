@@ -2,17 +2,17 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaSeriesPoint extends AbstractSeriesPoint {
+trait AreaSeriesPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var y0: js.UndefOr[Double] = js.native
+  var y0: js.UndefOr[Double] = js.undefined
 }
 object AreaSeriesPoint {
   

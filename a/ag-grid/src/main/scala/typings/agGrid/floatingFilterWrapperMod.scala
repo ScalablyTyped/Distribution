@@ -12,7 +12,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatingFilterWrapperMod {
@@ -46,6 +45,9 @@ object floatingFilterWrapperMod {
     /* private */ def onColumnHover(): js.Any = js.native
     
     /* private */ def onColumnWidthChanged(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def onParentModelChanged(parentModel: M): Unit = js.native
     
     /* private */ def setupWidth(): js.Any = js.native
   }
@@ -82,10 +84,9 @@ object floatingFilterWrapperMod {
     var suppressFilterButton: Boolean = js.native
   }
   
-  @js.native
   trait IFloatingFilterWrapper[M] extends StObject {
     
-    def onParentModelChanged(parentModel: M): Unit = js.native
+    def onParentModelChanged(parentModel: M): Unit
   }
   object IFloatingFilterWrapper {
     
@@ -96,16 +97,16 @@ object floatingFilterWrapperMod {
     }
     
     @scala.inline
-    implicit class IFloatingFilterWrapperMutableBuilder[Self <: IFloatingFilterWrapper[_], M] (val x: Self with IFloatingFilterWrapper[M]) extends AnyVal {
+    implicit class IFloatingFilterWrapperMutableBuilder[Self <: IFloatingFilterWrapper[?], M] (val x: Self & IFloatingFilterWrapper[M]) extends AnyVal {
       
       @scala.inline
       def setOnParentModelChanged(value: M => Unit): Self = StObject.set(x, "onParentModelChanged", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait IFloatingFilterWrapperComp[M, F /* <: FloatingFilterChange */, PC /* <: IFloatingFilterParams[M, F] */, P /* <: IFloatingFilterWrapperParams[M, F, PC] */]
-    extends IFloatingFilterWrapper[M]
+    extends StObject
+       with IFloatingFilterWrapper[M]
        with IComponent[P]
   object IFloatingFilterWrapperComp {
     
@@ -116,14 +117,13 @@ object floatingFilterWrapperMod {
     }
   }
   
-  @js.native
   trait IFloatingFilterWrapperParams[M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */] extends StObject {
     
-    var column: Column = js.native
+    var column: Column
     
-    var floatingFilterComp: Promise[IFloatingFilterComp[M, F, P]] = js.native
+    var floatingFilterComp: Promise[IFloatingFilterComp[M, F, P]]
     
-    var suppressFilterButton: Boolean = js.native
+    var suppressFilterButton: Boolean
   }
   object IFloatingFilterWrapperParams {
     
@@ -138,7 +138,7 @@ object floatingFilterWrapperMod {
     }
     
     @scala.inline
-    implicit class IFloatingFilterWrapperParamsMutableBuilder[Self <: IFloatingFilterWrapperParams[_, _, _], M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */] (val x: Self with (IFloatingFilterWrapperParams[M, F, P])) extends AnyVal {
+    implicit class IFloatingFilterWrapperParamsMutableBuilder[Self <: IFloatingFilterWrapperParams[?, ?, ?], M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */] (val x: Self & (IFloatingFilterWrapperParams[M, F, P])) extends AnyVal {
       
       @scala.inline
       def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

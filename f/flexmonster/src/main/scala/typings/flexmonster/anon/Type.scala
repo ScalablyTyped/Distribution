@@ -2,17 +2,15 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var prepareDataFunction: js.UndefOr[js.Function1[/* rawData */ js.Any, _]] = js.native
+  var prepareDataFunction: js.UndefOr[js.Function1[/* rawData */ js.Any, js.Any]] = js.undefined
   
-  var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.native
+  var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Type {
   
@@ -26,7 +24,7 @@ object Type {
   implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setPrepareDataFunction(value: /* rawData */ js.Any => _): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
+    def setPrepareDataFunction(value: /* rawData */ js.Any => js.Any): Self = StObject.set(x, "prepareDataFunction", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPrepareDataFunctionUndefined: Self = StObject.set(x, "prepareDataFunction", js.undefined)

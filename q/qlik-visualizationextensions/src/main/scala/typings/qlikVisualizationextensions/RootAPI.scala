@@ -7,43 +7,41 @@ import typings.qlikVisualizationextensions.TableAPI.IQTable
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RootAPI {
   
-  @js.native
   trait IAppConfig extends StObject {
     
     /**
       * Optional Qlik host.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. Unique identity for the session. If omitted, the session will be shared.
       */
-    var identity: js.UndefOr[String] = js.native
+    var identity: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. Use SSL.
       */
-    var isSecure: js.UndefOr[Boolean] = js.native
+    var isSecure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional. Open app without loading data. Introduced in version 1.1.
       */
-    var openWithoutData: js.UndefOr[Boolean] = js.native
+    var openWithoutData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Port number.
       */
-    var port: String | Double = js.native
+    var port: String | Double
     
     /**
       * Optional. Qlik virtual proxy. "/" if no proxy.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object IAppConfig {
     
@@ -91,33 +89,32 @@ object RootAPI {
     }
   }
   
-  @js.native
   trait IGlobalConfig extends StObject {
     
     /**
       * Qlik Sense host
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * Unique identity for the session. If omitted, the session will be shared.
       */
-    var identity: String = js.native
+    var identity: String
     
     /**
       * Use SSL
       */
-    var isSecure: Boolean = js.native
+    var isSecure: Boolean
     
     /**
       * Port number
       */
-    var port: String = js.native
+    var port: String
     
     /**
       * Qlik Sense virtual proxy. / if no virtual proxy
       */
-    var prefix: String = js.native
+    var prefix: String
   }
   object IGlobalConfig {
     
@@ -170,10 +167,10 @@ object RootAPI {
       * @param [body] - Optional. Body of the post.
       * @return - A promise of a Qlik engine reply.
       */
-    def callRepository(path: String): IPromise[_] = js.native
-    def callRepository(path: String, method: js.UndefOr[scala.Nothing], body: String): IPromise[_] = js.native
-    def callRepository(path: String, method: String): IPromise[_] = js.native
-    def callRepository(path: String, method: String, body: String): IPromise[_] = js.native
+    def callRepository(path: String): IPromise[js.Any] = js.native
+    def callRepository(path: String, method: String): IPromise[js.Any] = js.native
+    def callRepository(path: String, method: String, body: String): IPromise[js.Any] = js.native
+    def callRepository(path: String, method: Unit, body: String): IPromise[js.Any] = js.native
     
     /**
       * Gets a reference to the current app. Use the currApp method in an extension to get a reference to the app currently displayed.
@@ -205,8 +202,8 @@ object RootAPI {
       * @param [callback] - Optional. Callback method.
       * @return - A promise of a Qlik engine reply.
       */
-    def getExtensionList(): IPromise[_] = js.native
-    def getExtensionList(callback: js.Any): IPromise[_] = js.native
+    def getExtensionList(): IPromise[js.Any] = js.native
+    def getExtensionList(callback: js.Any): IPromise[js.Any] = js.native
     
     /**
       * Opens a WebSocekt connection to the Qlik engine for global methods.
@@ -319,38 +316,37 @@ object RootAPI {
     def table(ext: js.Any, path: String): IQTable = js.native
   }
   
-  @js.native
   trait ISessionAppConfig extends StObject {
     
     /**
       * Optional Qlik host.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Optional. Unique identity for the session. If omitted, the session will be shared.
       */
-    var identity: String = js.native
+    var identity: String
     
     /**
       * Optional. Use SSL.
       */
-    var isSecure: Boolean = js.native
+    var isSecure: Boolean
     
     /**
       * Optional. Open app without loading data.
       */
-    var openWithoutData: Boolean = js.native
+    var openWithoutData: Boolean
     
     /**
       * Port number.
       */
-    var port: String | Double = js.native
+    var port: String | Double
     
     /**
       * Optional. Qlik virtual proxy. "/" if no proxy.
       */
-    var prefix: String = js.native
+    var prefix: String
   }
   object ISessionAppConfig {
     

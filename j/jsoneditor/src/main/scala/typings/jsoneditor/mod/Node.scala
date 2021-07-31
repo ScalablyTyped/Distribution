@@ -5,49 +5,49 @@ import typings.ajv.mod.ErrorObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Node extends BaseNode {
+trait Node
+  extends StObject
+     with BaseNode {
   
-  var append: js.UndefOr[BaseNode] = js.native
+  var append: js.UndefOr[BaseNode] = js.undefined
   
-  var childs: js.UndefOr[js.Array[Node]] = js.native
+  var childs: js.UndefOr[js.Array[Node]] = js.undefined
   
-  var enum: js.UndefOr[Null | js.Array[String]] = js.native
+  var `enum`: js.UndefOr[Null | js.Array[String]] = js.undefined
   
-  var error: js.UndefOr[ErrorObject] = js.native
+  var error: js.UndefOr[ErrorObject] = js.undefined
   
-  var errorChild: js.UndefOr[Node] = js.native
+  var errorChild: js.UndefOr[Node] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
-  var field: String = js.native
+  var field: String
   
-  var fieldEditable: Boolean = js.native
+  var fieldEditable: Boolean
   
-  var fieldInnerText: js.UndefOr[String] = js.native
+  var fieldInnerText: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var previousField: String = js.native
+  var previousField: String
   
-  var previousValue: NodeValue = js.native
+  var previousValue: NodeValue
   
-  var schema: js.UndefOr[js.Object] = js.native
+  var schema: js.UndefOr[js.Object] = js.undefined
   
-  var showMore: js.UndefOr[BaseNode] = js.native
+  var showMore: js.UndefOr[BaseNode] = js.undefined
   
-  var `type`: NodeType = js.native
+  var `type`: NodeType
   
-  var value: NodeValue = js.native
+  var value: NodeValue
   
-  var valueFieldHTML: js.UndefOr[String] = js.native
+  var valueFieldHTML: js.UndefOr[String] = js.undefined
   
-  var valueInnerText: js.UndefOr[String] = js.native
+  var valueInnerText: js.UndefOr[String] = js.undefined
   
-  var visibleChilds: Double = js.native
+  var visibleChilds: Double
 }
 object Node {
   
@@ -61,7 +61,7 @@ object Node {
     `type`: NodeType,
     visibleChilds: Double
   ): Node = {
-    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldEditable = fieldEditable.asInstanceOf[js.Any], previousField = previousField.asInstanceOf[js.Any], visibleChilds = visibleChilds.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldEditable = fieldEditable.asInstanceOf[js.Any], previousField = previousField.asInstanceOf[js.Any], visibleChilds = visibleChilds.asInstanceOf[js.Any], parent = null, previousValue = null, value = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }

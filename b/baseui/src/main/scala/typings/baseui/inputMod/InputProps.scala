@@ -4,18 +4,18 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InputProps extends BaseInputProps[HTMLInputElement] {
+trait InputProps
+  extends StObject
+     with BaseInputProps[HTMLInputElement] {
   
-  var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+  var endEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
   
   @JSName("overrides")
-  var overrides_InputProps: js.UndefOr[InputOverrides] = js.native
+  var overrides_InputProps: js.UndefOr[InputOverrides] = js.undefined
   
-  var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.native
+  var startEnhancer: js.UndefOr[(js.Function1[/* args */ SharedProps, ReactNode]) | ReactNode] = js.undefined
 }
 object InputProps {
   

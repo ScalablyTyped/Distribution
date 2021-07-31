@@ -12,7 +12,7 @@ Scrabbleify words (mix letters within words and output the result)
 | Keywords           | scrabble, mixletters, randomize |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 74 |
+| # downloads        | 297 |
 | # stars            | 0 |
 
 ## Links

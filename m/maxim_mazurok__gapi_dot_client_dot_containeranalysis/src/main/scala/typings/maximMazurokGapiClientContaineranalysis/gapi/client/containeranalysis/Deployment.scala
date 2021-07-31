@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /** Address of the runtime element hosting this deployment. */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /** Configuration used to create this deployment. */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
   /** Required. Beginning of the lifetime of this deployment. */
-  var deployTime: js.UndefOr[String] = js.native
+  var deployTime: js.UndefOr[String] = js.undefined
   
   /** Platform hosting this deployment. */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /** Output only. Resource URI for the artifact being deployed taken from the deployable field with the same name. */
-  var resourceUri: js.UndefOr[js.Array[String]] = js.native
+  var resourceUri: js.UndefOr[js.Array[String]] = js.undefined
   
   /** End of the lifetime of this deployment. */
-  var undeployTime: js.UndefOr[String] = js.native
+  var undeployTime: js.UndefOr[String] = js.undefined
   
   /** Identity of the user that triggered this deployment. */
-  var userEmail: js.UndefOr[String] = js.native
+  var userEmail: js.UndefOr[String] = js.undefined
 }
 object Deployment {
   

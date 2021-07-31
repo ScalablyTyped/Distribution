@@ -2,41 +2,39 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Envelope extends StObject {
   
-  val Address: Range = js.native
+  val Address: Range
   
-  var AddressFromLeft: Double = js.native
+  var AddressFromLeft: Double
   
-  var AddressFromTop: Double = js.native
+  var AddressFromTop: Double
   
-  val AddressStyle: Style = js.native
+  val AddressStyle: Style
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DefaultFaceUp: Boolean = js.native
+  var DefaultFaceUp: Boolean
   
-  var DefaultHeight: Double = js.native
+  var DefaultHeight: Double
   
-  var DefaultOmitReturnAddress: Boolean = js.native
+  var DefaultOmitReturnAddress: Boolean
   
-  var DefaultOrientation: WdEnvelopeOrientation = js.native
+  var DefaultOrientation: WdEnvelopeOrientation
   
-  var DefaultPrintBarCode: Boolean = js.native
+  var DefaultPrintBarCode: Boolean
   
-  var DefaultPrintFIMA: Boolean = js.native
+  var DefaultPrintFIMA: Boolean
   
-  var DefaultSize: String = js.native
+  var DefaultSize: String
   
-  var DefaultWidth: Double = js.native
+  var DefaultWidth: Double
   
-  var FeedSource: WdPaperTray = js.native
+  var FeedSource: WdPaperTray
   
   def Insert(
     ExtractAddress: js.UndefOr[js.Any],
@@ -67,7 +65,7 @@ trait Envelope extends StObject {
     SenderNamefromTop: js.UndefOr[js.Any],
     SenderPostalfromLeft: js.UndefOr[js.Any],
     SenderPostalfromTop: js.UndefOr[js.Any]
-  ): Unit = js.native
+  ): Unit
   
   def Insert2000(
     ExtractAddress: js.UndefOr[js.Any],
@@ -88,11 +86,11 @@ trait Envelope extends StObject {
     ReturnAddressFromTop: js.UndefOr[js.Any],
     DefaultFaceUp: js.UndefOr[js.Any],
     DefaultOrientation: js.UndefOr[js.Any]
-  ): Unit = js.native
+  ): Unit
   
-  def Options(): Unit = js.native
+  def Options(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   def PrintOut(
     ExtractAddress: js.UndefOr[js.Any],
@@ -123,7 +121,7 @@ trait Envelope extends StObject {
     SenderNamefromTop: js.UndefOr[js.Any],
     SenderPostalfromLeft: js.UndefOr[js.Any],
     SenderPostalfromTop: js.UndefOr[js.Any]
-  ): Unit = js.native
+  ): Unit
   
   def PrintOut2000(
     ExtractAddress: js.UndefOr[js.Any],
@@ -144,38 +142,38 @@ trait Envelope extends StObject {
     ReturnAddressFromTop: js.UndefOr[js.Any],
     DefaultFaceUp: js.UndefOr[js.Any],
     DefaultOrientation: js.UndefOr[js.Any]
-  ): Unit = js.native
+  ): Unit
   
-  var RecipientNamefromLeft: Double = js.native
+  var RecipientNamefromLeft: Double
   
-  var RecipientNamefromTop: Double = js.native
+  var RecipientNamefromTop: Double
   
-  var RecipientPostalfromLeft: Double = js.native
+  var RecipientPostalfromLeft: Double
   
-  var RecipientPostalfromTop: Double = js.native
+  var RecipientPostalfromTop: Double
   
-  val ReturnAddress: Range = js.native
+  val ReturnAddress: Range
   
-  var ReturnAddressFromLeft: Double = js.native
+  var ReturnAddressFromLeft: Double
   
-  var ReturnAddressFromTop: Double = js.native
+  var ReturnAddressFromTop: Double
   
-  val ReturnAddressStyle: Style = js.native
+  val ReturnAddressStyle: Style
   
-  var SenderNamefromLeft: Double = js.native
+  var SenderNamefromLeft: Double
   
-  var SenderNamefromTop: Double = js.native
+  var SenderNamefromTop: Double
   
-  var SenderPostalfromLeft: Double = js.native
+  var SenderPostalfromLeft: Double
   
-  var SenderPostalfromTop: Double = js.native
+  var SenderPostalfromTop: Double
   
-  def UpdateDocument(): Unit = js.native
+  def UpdateDocument(): Unit
   
-  var Vertical: Boolean = js.native
+  var Vertical: Boolean
   
   @JSName("Word.Envelope_typekey")
-  var WordDotEnvelope_typekey: Envelope = js.native
+  var WordDotEnvelope_typekey: Envelope
 }
 object Envelope {
   

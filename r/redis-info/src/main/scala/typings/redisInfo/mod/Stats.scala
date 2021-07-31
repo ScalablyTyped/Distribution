@@ -2,63 +2,61 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
-  var active_defrag_hits: String = js.native
+  var active_defrag_hits: String
   
-  var active_defrag_key_hits: String = js.native
+  var active_defrag_key_hits: String
   
-  var active_defrag_key_misses: String = js.native
+  var active_defrag_key_misses: String
   
-  var active_defrag_misses: String = js.native
+  var active_defrag_misses: String
   
-  var evicted_keys: String = js.native
+  var evicted_keys: String
   
-  var expired_keys: String = js.native
+  var expired_keys: String
   
-  var expired_stale_perc: String = js.native
+  var expired_stale_perc: String
   
-  var expired_time_cap_reached_count: String = js.native
+  var expired_time_cap_reached_count: String
   
-  var instantaneous_input_kbps: String = js.native
+  var instantaneous_input_kbps: String
   
-  var instantaneous_ops_per_sec: String = js.native
+  var instantaneous_ops_per_sec: String
   
-  var instantaneous_output_kbps: String = js.native
+  var instantaneous_output_kbps: String
   
-  var keyspace_hits: String = js.native
+  var keyspace_hits: String
   
-  var keyspace_misses: String = js.native
+  var keyspace_misses: String
   
-  var latest_fork_usec: String = js.native
+  var latest_fork_usec: String
   
-  var migrate_cached_sockets: String = js.native
+  var migrate_cached_sockets: String
   
-  var pubsub_channels: String = js.native
+  var pubsub_channels: String
   
-  var pubsub_patterns: String = js.native
+  var pubsub_patterns: String
   
-  var rejected_connections: String = js.native
+  var rejected_connections: String
   
-  var slave_expires_tracked_keys: String = js.native
+  var slave_expires_tracked_keys: String
   
-  var sync_full: String = js.native
+  var sync_full: String
   
-  var sync_partial_err: String = js.native
+  var sync_partial_err: String
   
-  var sync_partial_ok: String = js.native
+  var sync_partial_ok: String
   
-  var total_commands_processed: String = js.native
+  var total_commands_processed: String
   
-  var total_connections_received: String = js.native
+  var total_connections_received: String
   
-  var total_net_input_bytes: String = js.native
+  var total_net_input_bytes: String
   
-  var total_net_output_bytes: String = js.native
+  var total_net_output_bytes: String
 }
 object Stats {
   

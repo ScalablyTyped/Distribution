@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GetSessionEntityTypeRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetSessionEntityTypeRequest.
   * @param [properties] Properties to set
   */
-class GetSessionEntityTypeRequest () extends IGetSessionEntityTypeRequest {
+class GetSessionEntityTypeRequest ()
+  extends StObject
+     with IGetSessionEntityTypeRequest {
   def this(properties: IGetSessionEntityTypeRequest) = this()
   
   /** GetSessionEntityTypeRequest name. */
@@ -32,18 +33,20 @@ class GetSessionEntityTypeRequest () extends IGetSessionEntityTypeRequest {
 }
 object GetSessionEntityTypeRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GetSessionEntityTypeRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GetSessionEntityTypeRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.create")
-  @js.native
-  def create(): GetSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.create")
-  @js.native
-  def create(properties: IGetSessionEntityTypeRequest): GetSessionEntityTypeRequest = js.native
+  @scala.inline
+  def create(): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetSessionEntityTypeRequest]
+  @scala.inline
+  def create(properties: IGetSessionEntityTypeRequest): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Decodes a GetSessionEntityTypeRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GetSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Reader): GetSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GetSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GetSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GetSessionEntityTypeRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GetSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GetSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Decodes a GetSessionEntityTypeRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GetSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GetSessionEntityTypeRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GetSessionEntityTypeRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Encodes the specified GetSessionEntityTypeRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object GetSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.encode")
-  @js.native
-  def encode(message: IGetSessionEntityTypeRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.encode")
-  @js.native
-  def encode(message: IGetSessionEntityTypeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGetSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGetSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetSessionEntityTypeRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object GetSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetSessionEntityTypeRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetSessionEntityTypeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGetSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGetSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetSessionEntityTypeRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GetSessionEntityTypeRequest {
     * @returns GetSessionEntityTypeRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GetSessionEntityTypeRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GetSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetSessionEntityTypeRequest]
   
   /**
     * Creates a plain object from a GetSessionEntityTypeRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GetSessionEntityTypeRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.toObject")
-  @js.native
-  def toObject(message: GetSessionEntityTypeRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.toObject")
-  @js.native
-  def toObject(message: GetSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GetSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GetSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetSessionEntityTypeRequest message.
@@ -140,7 +130,6 @@ object GetSessionEntityTypeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.GetSessionEntityTypeRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

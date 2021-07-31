@@ -9,10 +9,13 @@ import typings.node.osMod.NetworkInterfaceInfo
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publisherMod {
+  
+  @JSImport("@ionic/discover/dist/publisher", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/discover/dist/publisher", "Publisher")
   @js.native
@@ -40,6 +43,10 @@ object publisherMod {
     
     var namespace: String = js.native
     
+    /* CompleteClass */
+    @JSName("on")
+    override def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    
     val path: /* "/" */ String = js.native
     
     var port: Double = js.native
@@ -55,23 +62,19 @@ object publisherMod {
     var timer: js.UndefOr[Timer] = js.native
   }
   
-  @JSImport("@ionic/discover/dist/publisher", "computeBroadcastAddress")
-  @js.native
-  def computeBroadcastAddress(address: String, netmask: String): String = js.native
+  @scala.inline
+  def computeBroadcastAddress(address: String, netmask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBroadcastAddress")(address.asInstanceOf[js.Any], netmask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/discover/dist/publisher", "newSilentPublisher")
-  @js.native
-  def newSilentPublisher(namespace: String, name: String, port: Double): Publisher = js.native
+  @scala.inline
+  def newSilentPublisher(namespace: String, name: String, port: Double): Publisher = (^.asInstanceOf[js.Dynamic].applyDynamic("newSilentPublisher")(namespace.asInstanceOf[js.Any], name.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Publisher]
   
-  @JSImport("@ionic/discover/dist/publisher", "prepareInterfaces")
-  @js.native
-  def prepareInterfaces(interfaces: StringDictionary[js.Array[NetworkInterfaceInfo]]): js.Array[Interface] = js.native
+  @scala.inline
+  def prepareInterfaces(interfaces: StringDictionary[js.Array[NetworkInterfaceInfo]]): js.Array[Interface] = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareInterfaces")(interfaces.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interface]]
   
-  @js.native
   trait IPublisherEventEmitter extends StObject {
     
     @JSName("on")
-    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function1[/* err */ Error, Unit]): this.type
   }
   object IPublisherEventEmitter {
     
@@ -89,12 +92,11 @@ object publisherMod {
     }
   }
   
-  @js.native
   trait Interface extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var broadcast: String = js.native
+    var broadcast: String
   }
   object Interface {
     
@@ -115,26 +117,25 @@ object publisherMod {
     }
   }
   
-  @js.native
   trait PublisherMessage extends StObject {
     
-    var commPort: js.UndefOr[Double] = js.native
+    var commPort: js.UndefOr[Double] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var id: String = js.native
+    var id: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var name: String = js.native
+    var name: String
     
-    var nspace: String = js.native
+    var nspace: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var t: Double = js.native
+    var t: Double
   }
   object PublisherMessage {
     

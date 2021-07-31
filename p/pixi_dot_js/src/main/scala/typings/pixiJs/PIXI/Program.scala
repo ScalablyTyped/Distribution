@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,9 +22,9 @@ trait Program extends StObject {
     * @param {string} [fragmentSrc] - The source of the fragment shader.
     */
   /* protected */ def extractData(): Unit = js.native
-  /* protected */ def extractData(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String): Unit = js.native
   /* protected */ def extractData(vertexSrc: String, fragmentSrc: String): Unit = js.native
+  /* protected */ def extractData(vertexSrc: Unit, fragmentSrc: String): Unit = js.native
   
   /**
     * The fragment shader.

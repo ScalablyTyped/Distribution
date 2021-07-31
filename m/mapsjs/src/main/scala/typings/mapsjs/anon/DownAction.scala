@@ -3,23 +3,21 @@ package typings.mapsjs.anon
 import typings.mapsjs.mod.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownAction extends StObject {
   
-  var downAction: js.UndefOr[js.Function1[/* downPoint */ point, _]] = js.native
+  var downAction: js.UndefOr[js.Function1[/* downPoint */ point, js.Any]] = js.undefined
   
-  var dragEnabled: Boolean = js.native
+  var dragEnabled: Boolean
   
-  var moveAction: js.UndefOr[js.Function1[/* movePoint */ point, Unit]] = js.native
+  var moveAction: js.UndefOr[js.Function1[/* movePoint */ point, Unit]] = js.undefined
   
-  var upAction: js.UndefOr[js.Function1[/* upPoint */ point, Unit]] = js.native
+  var upAction: js.UndefOr[js.Function1[/* upPoint */ point, Unit]] = js.undefined
   
-  var useElementInsteadOfNewGestureOverlay: Boolean = js.native
+  var useElementInsteadOfNewGestureOverlay: Boolean
   
-  var wheelAction: js.UndefOr[js.Function1[/* delta */ Double, Unit]] = js.native
+  var wheelAction: js.UndefOr[js.Function1[/* delta */ Double, Unit]] = js.undefined
 }
 object DownAction {
   
@@ -33,7 +31,7 @@ object DownAction {
   implicit class DownActionMutableBuilder[Self <: DownAction] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDownAction(value: /* downPoint */ point => _): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
+    def setDownAction(value: /* downPoint */ point => js.Any): Self = StObject.set(x, "downAction", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDownActionUndefined: Self = StObject.set(x, "downAction", js.undefined)

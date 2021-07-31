@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts a page break followed by a newline at the specified location.
   */
-@js.native
 trait SchemaInsertPageBreakRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaInsertPageBreakRequest extends StObject {
     * cannot be inserted inside a footnote, header or footer. Since page breaks
     * can only be inserted inside the body, the segment ID field must be empty.
     */
-  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts the page break at a specific index in the document.  The page
@@ -27,7 +25,7 @@ trait SchemaInsertPageBreakRequest extends StObject {
     * breaks can only be inserted inside the body, the segment ID field must be
     * empty.
     */
-  var location: js.UndefOr[SchemaLocation] = js.native
+  var location: js.UndefOr[SchemaLocation] = js.undefined
 }
 object SchemaInsertPageBreakRequest {
   

@@ -3,12 +3,11 @@ package typings.slonik.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerializableValueObject
-  extends /* x */ StringDictionary[SerializableValueType]
+  extends StObject
+     with /* x */ StringDictionary[SerializableValueType]
      with _SerializableValueType
 object SerializableValueObject {
   

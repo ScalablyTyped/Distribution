@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interface element.
   * @since OOo 2.0
   */
-@js.native
-trait XUIElementFactory extends XInterface {
+trait XUIElementFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new instances of a specific user interface element.
@@ -29,7 +29,7 @@ trait XUIElementFactory extends XInterface {
     * @see ConfigurableUIElement
     * @see UIElement
     */
-  def createUIElement(ResourceURL: String, Args: SeqEquiv[PropertyValue]): XUIElement = js.native
+  def createUIElement(ResourceURL: String, Args: SeqEquiv[PropertyValue]): XUIElement
 }
 object XUIElementFactory {
   

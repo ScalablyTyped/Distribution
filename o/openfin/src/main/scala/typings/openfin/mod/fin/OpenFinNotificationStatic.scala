@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinNotificationStatic
-  extends /**
+  extends StObject
+     with /**
   * ctor
   */
 Instantiable1[/* options */ NotificationOptions, OpenFinNotification]
@@ -21,7 +21,7 @@ Instantiable1[/* options */ NotificationOptions, OpenFinNotification]
     ]
      with Instantiable3[
       /* options */ NotificationOptions, 
-      js.UndefOr[/* callback */ js.Function0[Unit]], 
+      (/* callback */ js.Function0[Unit]) | (/* callback */ Unit), 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinNotification
     ] {

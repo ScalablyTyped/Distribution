@@ -3,25 +3,24 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.ThemeAttrAndroid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeAttributeBackgroundPropType
-  extends BaseBackgroundPropType
+  extends StObject
+     with BaseBackgroundPropType
      with BackgroundPropType {
   
-  var attribute: String = js.native
+  var attribute: String
   
   @JSName("type")
-  var type_ThemeAttributeBackgroundPropType: ThemeAttrAndroid = js.native
+  var type_ThemeAttributeBackgroundPropType: ThemeAttrAndroid
 }
 object ThemeAttributeBackgroundPropType {
   
   @scala.inline
-  def apply(attribute: String, `type`: ThemeAttrAndroid): ThemeAttributeBackgroundPropType = {
+  def apply(attribute: String): ThemeAttributeBackgroundPropType = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ThemeAttrAndroid")
     __obj.asInstanceOf[ThemeAttributeBackgroundPropType]
   }
   

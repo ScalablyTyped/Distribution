@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaOptions extends RequestOptions {
+trait MediaOptions
+  extends StObject
+     with RequestOptions {
   
   /** HTTP ContentType header value. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** HTTP Slug header value. */
-  var slug: js.UndefOr[String] = js.native
+  var slug: js.UndefOr[String] = js.undefined
 }
 object MediaOptions {
   

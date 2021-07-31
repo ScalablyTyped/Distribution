@@ -3,26 +3,24 @@ package typings.reactBootstrapTable.anon
 import typings.reactBootstrapTable.mod.EditValidatorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Msg extends StObject {
   
   /**
     * A text message explaining the validation result.
     */
-  var msg: String = js.native
+  var msg: String
   
   /**
     * A text title explaining the validation result.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * One of 'success' or 'error'
     */
-  var `type`: EditValidatorType = js.native
+  var `type`: EditValidatorType
 }
 object Msg {
   

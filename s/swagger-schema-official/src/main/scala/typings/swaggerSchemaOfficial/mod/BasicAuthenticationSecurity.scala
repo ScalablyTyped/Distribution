@@ -3,23 +3,22 @@ package typings.swaggerSchemaOfficial.mod
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicAuthenticationSecurity
-  extends BaseSecurity
+  extends StObject
+     with BaseSecurity
      with Security {
   
   @JSName("type")
-  var type_BasicAuthenticationSecurity: basic = js.native
+  var type_BasicAuthenticationSecurity: basic
 }
 object BasicAuthenticationSecurity {
   
   @scala.inline
-  def apply(`type`: basic): BasicAuthenticationSecurity = {
+  def apply(): BasicAuthenticationSecurity = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[BasicAuthenticationSecurity]
   }
   

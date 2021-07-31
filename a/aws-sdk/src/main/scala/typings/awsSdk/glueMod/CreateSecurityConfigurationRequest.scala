@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSecurityConfigurationRequest extends StObject {
   
   /**
     * The encryption configuration for the new security configuration.
     */
-  var EncryptionConfiguration: typings.awsSdk.glueMod.EncryptionConfiguration = js.native
+  var EncryptionConfiguration: typings.awsSdk.glueMod.EncryptionConfiguration
   
   /**
     * The name for the new security configuration.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object CreateSecurityConfigurationRequest {
   

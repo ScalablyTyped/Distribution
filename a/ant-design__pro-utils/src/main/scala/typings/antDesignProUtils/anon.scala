@@ -13,15 +13,13 @@ import typings.react.mod.ReactText
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Constructor extends StObject {
     
-    var constructor: js.Any = js.native
+    var constructor: js.Any
   }
   object Constructor {
     
@@ -39,31 +37,30 @@ object anon {
     }
   }
   
-  @js.native
   trait DataIndex[T, U] extends StObject {
     
     /**
       * @name 与实体映射的key
       * @description 支持一个数字，[a,b] 会转化为 obj.a.b
       */
-    var dataIndex: js.UndefOr[String | Double | (js.Array[String | Double])] = js.native
+    var dataIndex: js.UndefOr[String | Double | (js.Array[String | Double])] = js.undefined
     
-    var fieldProps: js.UndefOr[js.Any] = js.native
+    var fieldProps: js.UndefOr[js.Any] = js.undefined
     
     /**
       * @name 隐藏在 descriptions
       */
-    var hideInDescriptions: js.UndefOr[Boolean] = js.native
+    var hideInDescriptions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 确定这个列的唯一值
       */
-    var key: js.UndefOr[ReactText] = js.native
+    var key: js.UndefOr[ReactText] = js.undefined
     
     /**
       * @name 从服务器请求的参数，改变了会触发 reload
       */
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     var render: js.UndefOr[
         js.Function5[
@@ -74,7 +71,7 @@ object anon {
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<T, U, Extra> */ /* schema */ js.Object, 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @name 自定义编辑模式
@@ -84,18 +81,24 @@ object anon {
         js.Function3[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<T, U, Extra> */ /* item */ js.Object, 
           /* config */ DefaultRender, 
-          /* form */ FormInstance[_], 
+          /* form */ FormInstance[js.Any], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @name 自定义 render
       * @description 必须要返回 string
       */
     var renderText: js.UndefOr[
-        js.Function4[/* text */ js.Any, /* record */ T, /* index */ Double, /* action */ ProCoreActionType, _]
-      ] = js.native
+        js.Function4[
+          /* text */ js.Any, 
+          /* record */ T, 
+          /* index */ Double, 
+          /* action */ ProCoreActionType, 
+          js.Any
+        ]
+      ] = js.undefined
     
     /**
       * @name 从服务器请求枚举
@@ -103,14 +106,14 @@ object anon {
     var request: js.UndefOr[
         ProFieldRequestData[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<unknown, string, unknown> */ js.Object, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @deprecated 你可以使用 tooltip，这个更改是为了与 antd 统一
       */
-    var tip: js.UndefOr[String] = js.native
+    var tip: js.UndefOr[String] = js.undefined
     
     /**
       * @name 标题
@@ -123,22 +126,22 @@ object anon {
           /* dom */ ReactNode, 
           ReactNode
         ]) | ReactNode
-      ] = js.native
+      ] = js.undefined
     
     /**
       *@name 展示一个 icon，hover 是展示一些提示信息
       */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
     /**
       * @name 映射值的类型
       */
-    var valueEnum: js.UndefOr[ProSchemaValueEnumObj | ProSchemaValueEnumMap] = js.native
+    var valueEnum: js.UndefOr[ProSchemaValueEnumObj | ProSchemaValueEnumMap] = js.undefined
     
     /**
       * 选择如何渲染相应的模式
       */
-    var valueType: js.UndefOr[(js.Function2[/* entity */ T, /* type */ ProSchemaComponentTypes, U]) | U] = js.native
+    var valueType: js.UndefOr[(js.Function2[/* entity */ T, /* type */ ProSchemaComponentTypes, U]) | U] = js.undefined
   }
   object DataIndex {
     
@@ -149,7 +152,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataIndexMutableBuilder[Self <: DataIndex[_, _], T, U] (val x: Self with (DataIndex[T, U])) extends AnyVal {
+    implicit class DataIndexMutableBuilder[Self <: DataIndex[?, ?], T, U] (val x: Self & (DataIndex[T, U])) extends AnyVal {
       
       @scala.inline
       def setDataIndex(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
@@ -191,7 +194,7 @@ object anon {
       
       @scala.inline
       def setRenderFormItem(
-        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<T, U, Extra> */ /* item */ js.Object, /* config */ DefaultRender, /* form */ FormInstance[_]) => ReactNode
+        value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<T, U, Extra> */ /* item */ js.Object, /* config */ DefaultRender, /* form */ FormInstance[js.Any]) => ReactNode
       ): Self = StObject.set(x, "renderFormItem", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -199,7 +202,7 @@ object anon {
       
       @scala.inline
       def setRenderText(
-        value: (/* text */ js.Any, /* record */ T, /* index */ Double, /* action */ ProCoreActionType) => _
+        value: (/* text */ js.Any, /* record */ T, /* index */ Double, /* action */ ProCoreActionType) => js.Any
       ): Self = StObject.set(x, "renderText", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -210,7 +213,7 @@ object anon {
       
       @scala.inline
       def setRequest(
-        value: (_, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<unknown, string, unknown> */ js.Object) => js.Promise[js.Array[Dictkey]]
+        value: (js.Any, /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<unknown, string, unknown> */ js.Object) => js.Promise[js.Array[Dictkey]]
       ): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -263,20 +266,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultRender extends StObject {
     
     def defaultRender(
       newItem: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @ant-design/pro-utils.@ant-design/pro-utils/lib/typing.ProSchema<T, U, Extra> */ js.Object
-    ): Element | Null = js.native
+    ): Element | Null
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var `type`: ProSchemaComponentTypes = js.native
+    var `type`: ProSchemaComponentTypes
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object DefaultRender {
     
@@ -322,13 +324,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var value: ReactText = js.native
+    var value: ReactText
   }
   object Dictkey {
     
@@ -352,14 +354,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var pageName: String = js.native
+    var pageName: String
     
-    var title: String = js.native
+    var title: String
   }
   object Id {
     
@@ -383,14 +384,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    var tooltip: js.UndefOr[String | TooltipProps] = js.native
+    var tooltip: js.UndefOr[String | TooltipProps] = js.undefined
   }
   object Label {
     

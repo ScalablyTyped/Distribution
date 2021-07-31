@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSystemTemplateRequest extends StObject {
   
   /**
     * The version of the user's namespace. Defaults to the latest version of the user's namespace. If no value is specified, the latest version is used by default.
     */
-  var compatibleNamespaceVersion: js.UndefOr[Version] = js.native
+  var compatibleNamespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The DefinitionDocument that contains the updated system definition.
     */
-  var definition: DefinitionDocument = js.native
+  var definition: DefinitionDocument
   
   /**
     * The ID of the system to be updated. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:system:SYSTEMNAME 
     */
-  var id: Urn = js.native
+  var id: Urn
 }
 object UpdateSystemTemplateRequest {
   

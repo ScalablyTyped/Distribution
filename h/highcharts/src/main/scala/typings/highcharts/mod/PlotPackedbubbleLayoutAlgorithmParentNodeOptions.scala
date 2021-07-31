@@ -5,30 +5,28 @@ import typings.highcharts.highchartsStrings.circle
 import typings.highcharts.highchartsStrings.random
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
   
   /**
     * (Highcharts) Friction applied on forces to prevent nodes rushing to fast
     * to the desired positions.
     */
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Gravitational const used in the barycenter force of the
     * algorithm.
     */
-  var gravitationalConstant: js.UndefOr[Double] = js.native
+  var gravitationalConstant: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) When `initialPositions` are set to 'circle',
     * `initialPositionRadius` is a distance from the center of circle, in which
     * nodes are created.
     */
-  var initialPositionRadius: js.UndefOr[Double] = js.native
+  var initialPositionRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Initial layout algorithm for positioning nodes. Can be one
@@ -36,7 +34,7 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
     * should be set on each node (`this.nodes`) as `node.plotX` and
     * `node.plotY`
     */
-  var initialPositions: js.UndefOr[circle | random | js.Function] = js.native
+  var initialPositions: js.UndefOr[circle | random | js.Function] = js.undefined
   
   /**
     * (Highcharts) Integration type. Available options are `'euler'` and
@@ -51,7 +49,7 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
     *
     * In Highcharts v7.0.x only `'euler'` integration was supported.
     */
-  var integration: js.UndefOr[OptionsIntegrationValue] = js.native
+  var integration: js.UndefOr[OptionsIntegrationValue] = js.undefined
   
   /**
     * (Highcharts) Ideal length (px) of the link between two nodes. When not
@@ -61,13 +59,13 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
     * Note: Because of the algorithm specification, length of each link might
     * be not exactly as specified.
     */
-  var linkLength: js.UndefOr[Double] = js.native
+  var linkLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Styling options for parentNodes markers. Similar to
     * line.marker options.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Max number of iterations before algorithm will stop. In
@@ -75,7 +73,7 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
     * number of nodes, it is recommended to increase this value as finding
     * perfect graph positions can require more time.
     */
-  var maxIterations: js.UndefOr[Double] = js.native
+  var maxIterations: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Verlet integration only. Max speed that node can get in one
@@ -84,14 +82,14 @@ trait PlotPackedbubbleLayoutAlgorithmParentNodeOptions extends StObject {
     * applied on all nodes, max speed is applied only for nodes that move very
     * fast, for example small or disconnected ones.
     */
-  var maxSpeed: js.UndefOr[Double] = js.native
+  var maxSpeed: js.UndefOr[Double] = js.undefined
   
-  var seriesInteraction: js.UndefOr[Boolean] = js.native
+  var seriesInteraction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
     */
-  var `type`: js.UndefOr[`reingold-fruchterman`] = js.native
+  var `type`: js.UndefOr[`reingold-fruchterman`] = js.undefined
 }
 object PlotPackedbubbleLayoutAlgorithmParentNodeOptions {
   

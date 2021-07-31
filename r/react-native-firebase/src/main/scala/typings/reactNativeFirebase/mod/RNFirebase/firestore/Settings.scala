@@ -2,21 +2,19 @@ package typings.reactNativeFirebase.mod.RNFirebase.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var cacheSizeBytes: js.UndefOr[Double] = js.native
+  var cacheSizeBytes: js.UndefOr[Double] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var persistence: js.UndefOr[Boolean] = js.native
+  var persistence: js.UndefOr[Boolean] = js.undefined
   
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
-  var timestampsInSnapshots: js.UndefOr[Boolean] = js.native
+  var timestampsInSnapshots: js.UndefOr[Boolean] = js.undefined
 }
 object Settings {
   

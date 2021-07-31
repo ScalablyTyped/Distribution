@@ -5,17 +5,15 @@ import typings.mfiles.MFiles.MFTriggerWeekDay
 import typings.mfiles.MFiles.MFTriggerWeekOfMonth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMonthlyDOWTrigger extends StObject {
   
-  var DaysOfTheWeek: MFTriggerWeekDay = js.native
+  var DaysOfTheWeek: MFTriggerWeekDay
   
-  var Months: MFTriggerMonth = js.native
+  var Months: MFTriggerMonth
   
-  var WhichWeek: MFTriggerWeekOfMonth = js.native
+  var WhichWeek: MFTriggerWeekOfMonth
 }
 object IMonthlyDOWTrigger {
   

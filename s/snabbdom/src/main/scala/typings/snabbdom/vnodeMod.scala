@@ -15,369 +15,142 @@ import typings.std.Node
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vnodeMod {
   
-  @JSImport("snabbdom/build/package/vnode", "vnode")
+  @JSImport("snabbdom/build/package/vnode", JSImport.Namespace)
   @js.native
-  def vnode(): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: String
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String]
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: String
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: js.UndefOr[scala.Nothing], data: js.Any): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: js.UndefOr[scala.Nothing], data: js.Any, children: js.UndefOr[scala.Nothing], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: js.UndefOr[scala.Nothing], data: js.Any, children: js.Array[VNode_ | String]): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: js.UndefOr[scala.Nothing], data: js.Any, children: js.Array[VNode_ | String], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.UndefOr[scala.Nothing], children: js.UndefOr[scala.Nothing], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.UndefOr[scala.Nothing],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.UndefOr[scala.Nothing], children: js.Array[VNode_ | String]): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.UndefOr[scala.Nothing], children: js.Array[VNode_ | String], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.UndefOr[scala.Nothing],
-    children: js.Array[VNode_ | String],
-    text: String,
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.Any,
-    children: js.UndefOr[scala.Nothing],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.UndefOr[scala.Nothing], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.UndefOr[scala.Nothing], text: String, elm: Element): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.UndefOr[scala.Nothing], text: String, elm: Text): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String]): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Element
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(
-    sel: String,
-    data: js.Any,
-    children: js.Array[VNode_ | String],
-    text: js.UndefOr[scala.Nothing],
-    elm: Text
-  ): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = js.native
-  @JSImport("snabbdom/build/package/vnode", "vnode")
-  @js.native
-  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def vnode(): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("vnode")().asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String): VNode_ = ^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String]): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: js.Array[VNode_ | String], text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: Unit, text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: Unit, text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: Unit, text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: Unit, text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: js.Any, children: Unit, text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String]): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String], text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String], text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: js.Array[VNode_ | String], text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: Unit, text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: Unit, text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: Unit, text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: Unit, text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: String, data: Unit, children: Unit, text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String]): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String], text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String], text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: js.Array[VNode_ | String], text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: Unit, text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: Unit, text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: Unit, text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: Unit, text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: js.Any, children: Unit, text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String]): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String], text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String], text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String], text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String], text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: js.Array[VNode_ | String], text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: Unit, text: String): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: Unit, text: String, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: Unit, text: String, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: Unit, text: Unit, elm: Element): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
+  @scala.inline
+  def vnode(sel: Unit, data: Unit, children: Unit, text: Unit, elm: Text): VNode_ = (^.asInstanceOf[js.Dynamic].applyDynamic("vnode")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any], text.asInstanceOf[js.Any], elm.asInstanceOf[js.Any])).asInstanceOf[VNode_]
   
   type Key = String | Double
   
-  @js.native
   trait VNodeData
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var attachData: js.UndefOr[AttachData] = js.native
+    var attachData: js.UndefOr[AttachData] = js.undefined
     
-    var attrs: js.UndefOr[Attrs] = js.native
+    var attrs: js.UndefOr[Attrs] = js.undefined
     
-    var `class`: js.UndefOr[Classes] = js.native
+    var `class`: js.UndefOr[Classes] = js.undefined
     
-    var dataset: js.UndefOr[Dataset] = js.native
+    var dataset: js.UndefOr[Dataset] = js.undefined
     
-    var fn: js.UndefOr[js.Function0[VNode_]] = js.native
+    var fn: js.UndefOr[js.Function0[VNode_]] = js.undefined
     
-    var hero: js.UndefOr[Hero] = js.native
+    var hero: js.UndefOr[Hero] = js.undefined
     
-    var hook: js.UndefOr[Hooks] = js.native
+    var hook: js.UndefOr[Hooks] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var ns: js.UndefOr[String] = js.native
+    var ns: js.UndefOr[String] = js.undefined
     
-    var on: js.UndefOr[On] = js.native
+    var on: js.UndefOr[On] = js.undefined
     
-    var props: js.UndefOr[Props] = js.native
+    var props: js.UndefOr[Props] = js.undefined
     
-    var style: js.UndefOr[VNodeStyle] = js.native
+    var style: js.UndefOr[VNodeStyle] = js.undefined
   }
   object VNodeData {
     
@@ -391,7 +164,7 @@ object vnodeMod {
     implicit class VNodeDataMutableBuilder[Self <: VNodeData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -473,20 +246,19 @@ object vnodeMod {
     }
   }
   
-  @js.native
   trait VNode_ extends StObject {
     
-    var children: js.UndefOr[js.Array[VNode_ | String]] = js.native
+    var children: js.UndefOr[js.Array[VNode_ | String]] = js.undefined
     
-    var data: js.UndefOr[VNodeData] = js.native
+    var data: js.UndefOr[VNodeData] = js.undefined
     
-    var elm: js.UndefOr[Node] = js.native
+    var elm: js.UndefOr[Node] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var sel: js.UndefOr[String] = js.native
+    var sel: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object VNode_ {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentResourceDescriptionsMessage extends StObject {
   
   /**
     *  A list of EnvironmentResourceDescription. 
     */
-  var EnvironmentResources: js.UndefOr[EnvironmentResourceDescription] = js.native
+  var EnvironmentResources: js.UndefOr[EnvironmentResourceDescription] = js.undefined
 }
 object EnvironmentResourceDescriptionsMessage {
   

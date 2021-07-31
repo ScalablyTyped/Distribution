@@ -4,21 +4,21 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomItem[T] extends StObject {
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var customItem: js.UndefOr[String | js.Any | typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]] = js.native
+  var customItem: js.UndefOr[
+    String | js.Any | typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]
+  ] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object CustomItem {
   
@@ -29,7 +29,7 @@ object CustomItem {
   }
   
   @scala.inline
-  implicit class CustomItemMutableBuilder[Self <: CustomItem[_], T] (val x: Self with CustomItem[T]) extends AnyVal {
+  implicit class CustomItemMutableBuilder[Self <: CustomItem[?], T] (val x: Self & CustomItem[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
@@ -38,7 +38,7 @@ object CustomItem {
     def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
     @scala.inline
-    def setCustomItem(value: String | js.Any | typings.devextreme.mod.global.Promise[_] | JQueryPromise[_]): Self = StObject.set(x, "customItem", value.asInstanceOf[js.Any])
+    def setCustomItem(value: String | js.Any | typings.devextreme.mod.global.Promise[js.Any] | JQueryPromise[js.Any]): Self = StObject.set(x, "customItem", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomItemUndefined: Self = StObject.set(x, "customItem", js.undefined)

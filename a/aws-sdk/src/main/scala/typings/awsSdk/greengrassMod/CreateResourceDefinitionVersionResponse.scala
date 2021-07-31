@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceDefinitionVersionResponse extends StObject {
   
   /**
     * The ARN of the version.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the version was created.
     */
-  var CreationTimestamp: js.UndefOr[string] = js.native
+  var CreationTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the parent definition that the version is associated with.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the version.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
 }
 object CreateResourceDefinitionVersionResponse {
   

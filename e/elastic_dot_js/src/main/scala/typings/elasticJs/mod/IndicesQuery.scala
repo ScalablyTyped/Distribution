@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "IndicesQuery")
 @js.native
-class IndicesQuery protected () extends Query {
+class IndicesQuery protected ()
+  extends StObject
+     with Query {
   /*
     A configurable query that is dependent on the index name.
     */

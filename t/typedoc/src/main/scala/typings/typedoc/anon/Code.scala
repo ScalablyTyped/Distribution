@@ -2,21 +2,19 @@ package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var code: Boolean = js.native
+  var code: Boolean
   
-  var pre: Boolean = js.native
+  var pre: Boolean
   
-  var script: Boolean = js.native
+  var script: Boolean
   
-  var style: Boolean = js.native
+  var style: Boolean
   
-  var textarea: Boolean = js.native
+  var textarea: Boolean
 }
 object Code {
   

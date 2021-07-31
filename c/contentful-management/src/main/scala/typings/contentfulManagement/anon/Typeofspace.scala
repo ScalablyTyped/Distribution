@@ -7,15 +7,13 @@ import typings.contentfulManagement.spaceMod.Space
 import typings.contentfulManagement.spaceMod.SpaceProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofspace extends StObject {
   
-  def wrapSpace(http: AxiosInstance, data: SpaceProps): Space = js.native
+  def wrapSpace(http: AxiosInstance, data: SpaceProps): Space
   
-  def wrapSpaceCollection(http: AxiosInstance, data: CollectionProp[SpaceProps]): Collection[Space, SpaceProps] = js.native
+  def wrapSpaceCollection(http: AxiosInstance, data: CollectionProp[SpaceProps]): Collection[Space, SpaceProps]
 }
 object Typeofspace {
   

@@ -11,18 +11,19 @@ import typings.amapJsApi.amapJsApiStrings.touchstart
 import typings.amapJsApi.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LabelsLayer extends Layer {
+trait LabelsLayer
+  extends StObject
+     with Layer {
   
-  def add(labelMarker: js.Array[LabelMarker[_]]): Unit = js.native
+  def add(labelMarker: js.Array[LabelMarker[js.Any]]): Unit = js.native
   /**
     * 图层中添加LabelMarker
     * @param labelMarker 标注对象
     */
-  def add(labelMarker: LabelMarker[_]): Unit = js.native
+  def add(labelMarker: LabelMarker[js.Any]): Unit = js.native
   
   /**
     * 清空图层
@@ -33,16 +34,15 @@ trait LabelsLayer extends Layer {
     * 图层中移除LabelMarker
     * @param labelMarker 标注对象
     */
-  def remove(labelMarker: LabelMarker[_]): Unit = js.native
+  def remove(labelMarker: LabelMarker[js.Any]): Unit = js.native
 }
 object LabelsLayer {
   
-  @js.native
   trait EventData extends StObject {
     
-    var data: Id = js.native
+    var data: Id
     
-    var opts: typings.amapJsApi.anon.Icon = js.native
+    var opts: typings.amapJsApi.anon.Icon
   }
   object EventData {
     
@@ -63,24 +63,23 @@ object LabelsLayer {
     }
   }
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var click: Event_[typings.amapJsApi.amapJsApiStrings.click, LabelsLayerEvent[I]] = js.native
+    var click: Event_[typings.amapJsApi.amapJsApiStrings.click, LabelsLayerEvent[I]]
     
-    var mousedown: Event_[typings.amapJsApi.amapJsApiStrings.mousedown, LabelsLayerEvent[I]] = js.native
+    var mousedown: Event_[typings.amapJsApi.amapJsApiStrings.mousedown, LabelsLayerEvent[I]]
     
-    var mousemove: Event_[typings.amapJsApi.amapJsApiStrings.mousemove, LabelsLayerEvent[I]] = js.native
+    var mousemove: Event_[typings.amapJsApi.amapJsApiStrings.mousemove, LabelsLayerEvent[I]]
     
-    var mouseout: Event_[typings.amapJsApi.amapJsApiStrings.mouseout, LabelsLayerEvent[I]] = js.native
+    var mouseout: Event_[typings.amapJsApi.amapJsApiStrings.mouseout, LabelsLayerEvent[I]]
     
-    var mouseover: Event_[typings.amapJsApi.amapJsApiStrings.mouseover, LabelsLayerEvent[I]] = js.native
+    var mouseover: Event_[typings.amapJsApi.amapJsApiStrings.mouseover, LabelsLayerEvent[I]]
     
-    var mouseup: Event_[typings.amapJsApi.amapJsApiStrings.mouseup, LabelsLayerEvent[I]] = js.native
+    var mouseup: Event_[typings.amapJsApi.amapJsApiStrings.mouseup, LabelsLayerEvent[I]]
     
-    var touchend: Event_[typings.amapJsApi.amapJsApiStrings.touchend, LabelsLayerEvent[I]] = js.native
+    var touchend: Event_[typings.amapJsApi.amapJsApiStrings.touchend, LabelsLayerEvent[I]]
     
-    var touchstart: Event_[typings.amapJsApi.amapJsApiStrings.touchstart, LabelsLayerEvent[I]] = js.native
+    var touchstart: Event_[typings.amapJsApi.amapJsApiStrings.touchstart, LabelsLayerEvent[I]]
   }
   object EventMap {
     
@@ -100,7 +99,7 @@ object LabelsLayer {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setClick(value: Event_[click, LabelsLayerEvent[I]]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
@@ -128,16 +127,15 @@ object LabelsLayer {
     }
   }
   
-  @js.native
   trait LabelsLayerEvent[I] extends StObject {
     
-    var data: EventData = js.native
+    var data: EventData
     
-    var lnglat: LngLat = js.native
+    var lnglat: LngLat
     
-    var pixel: Pixel = js.native
+    var pixel: Pixel
     
-    var target: I = js.native
+    var target: I
   }
   object LabelsLayerEvent {
     
@@ -148,7 +146,7 @@ object LabelsLayer {
     }
     
     @scala.inline
-    implicit class LabelsLayerEventMutableBuilder[Self <: LabelsLayerEvent[_], I] (val x: Self with LabelsLayerEvent[I]) extends AnyVal {
+    implicit class LabelsLayerEventMutableBuilder[Self <: LabelsLayerEvent[?], I] (val x: Self & LabelsLayerEvent[I]) extends AnyVal {
       
       @scala.inline
       def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -164,26 +162,26 @@ object LabelsLayer {
     }
   }
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Layer.Options {
+    extends StObject
+       with typings.amapJsApi.AMap.Layer.Options {
     
     /**
       * 图层的透明度
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 图层是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 图层的层级
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     

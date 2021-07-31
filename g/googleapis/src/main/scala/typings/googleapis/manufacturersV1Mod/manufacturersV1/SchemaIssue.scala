@@ -2,13 +2,11 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Product issue.
   */
-@js.native
 trait SchemaIssue extends StObject {
   
   /**
@@ -16,43 +14,43 @@ trait SchemaIssue extends StObject {
     * about attributes, see
     * https://support.google.com/manufacturers/answer/6124116.
     */
-  var attribute: js.UndefOr[String] = js.native
+  var attribute: js.UndefOr[String] = js.undefined
   
   /**
     * Longer description of the issue focused on how to resolve it.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The destination this issue applies to.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * What needs to happen to resolve the issue.
     */
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
   
   /**
     * The severity of the issue.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when this issue appeared.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Short title describing the nature of the issue.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The server-generated type of the issue, for example,
     * “INCORRECT_TEXT_FORMATTING”, “IMAGE_NOT_SERVEABLE”, etc.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaIssue {
   

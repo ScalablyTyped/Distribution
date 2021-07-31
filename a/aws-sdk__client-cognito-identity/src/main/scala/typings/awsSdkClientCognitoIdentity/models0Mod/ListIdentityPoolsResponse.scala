@@ -2,21 +2,19 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityPoolsResponse extends StObject {
   
   /**
     * <p>The identity pools returned by the ListIdentityPools action.</p>
     */
-  var IdentityPools: js.UndefOr[js.Array[IdentityPoolShortDescription]] = js.native
+  var IdentityPools: js.UndefOr[js.Array[IdentityPoolShortDescription]] = js.undefined
   
   /**
     * <p>A pagination token.</p>
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListIdentityPoolsResponse {
   
@@ -26,9 +24,12 @@ object ListIdentityPoolsResponse {
     __obj.asInstanceOf[ListIdentityPoolsResponse]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentityPoolsResponse.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ListIdentityPoolsResponse")
   @js.native
-  def filterSensitiveLog(obj: ListIdentityPoolsResponse): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ListIdentityPoolsResponse): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ListIdentityPoolsResponseMutableBuilder[Self <: ListIdentityPoolsResponse] (val x: Self) extends AnyVal {

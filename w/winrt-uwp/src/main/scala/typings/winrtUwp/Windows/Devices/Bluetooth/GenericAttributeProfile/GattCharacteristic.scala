@@ -10,14 +10,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.valuechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Characteristic of a GATT service. */
 @js.native
 trait GattCharacteristic extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
   
@@ -41,7 +40,7 @@ trait GattCharacteristic extends StObject {
   def getDescriptors(descriptorUuid: String): IVectorView[GattDescriptor] = js.native
   
   /** An App can register an event handler in order to receive events when notification or indications are received from a device, after setting the Client Characteristic Configuration Descriptor. */
-  def onvaluechanged(ev: GattValueChangedEventArgs with WinRTEvent[GattCharacteristic]): Unit = js.native
+  def onvaluechanged(ev: GattValueChangedEventArgs & WinRTEvent[GattCharacteristic]): Unit = js.native
   /** An App can register an event handler in order to receive events when notification or indications are received from a device, after setting the Client Characteristic Configuration Descriptor. */
   @JSName("onvaluechanged")
   var onvaluechanged_Original: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs] = js.native
@@ -70,7 +69,7 @@ trait GattCharacteristic extends StObject {
     */
   def readValueAsync(cacheMode: BluetoothCacheMode): IPromiseWithIAsyncOperation[GattReadResult] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_valuechanged(`type`: valuechanged, listener: TypedEventHandler[GattCharacteristic, GattValueChangedEventArgs]): Unit = js.native
   

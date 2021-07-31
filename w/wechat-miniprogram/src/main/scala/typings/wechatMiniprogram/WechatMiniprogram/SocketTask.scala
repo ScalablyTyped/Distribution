@@ -2,45 +2,43 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocketTask extends StObject {
   
   /** [SocketTask.close(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.close.html)
     *
     * 关闭 WebSocket 连接 */
-  def close(option: SocketTaskCloseOption): Unit = js.native
+  def close(option: SocketTaskCloseOption): Unit
   
   /** [SocketTask.onClose(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.onClose.html)
     *
     * 监听 WebSocket 连接关闭事件 */
   def onClose(/** WebSocket 连接关闭事件的回调函数 */
-  callback: SocketTaskOnCloseCallback): Unit = js.native
+  callback: SocketTaskOnCloseCallback): Unit
   
   /** [SocketTask.onError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.onError.html)
     *
     * 监听 WebSocket 错误事件 */
   def onError(/** WebSocket 错误事件的回调函数 */
-  callback: UDPSocketOnErrorCallback): Unit = js.native
+  callback: UDPSocketOnErrorCallback): Unit
   
   /** [SocketTask.onMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.onMessage.html)
     *
     * 监听 WebSocket 接受到服务器的消息事件 */
   def onMessage(/** WebSocket 接受到服务器的消息事件的回调函数 */
-  callback: SocketTaskOnMessageCallback): Unit = js.native
+  callback: SocketTaskOnMessageCallback): Unit
   
   /** [SocketTask.onOpen(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.onOpen.html)
     *
     * 监听 WebSocket 连接打开事件 */
   def onOpen(/** WebSocket 连接打开事件的回调函数 */
-  callback: OnOpenCallback): Unit = js.native
+  callback: OnOpenCallback): Unit
   
   /** [SocketTask.send(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/network/websocket/SocketTask.send.html)
     *
     * 通过 WebSocket 连接发送数据 */
-  def send(option: SocketTaskSendOption): Unit = js.native
+  def send(option: SocketTaskSendOption): Unit
 }
 object SocketTask {
   

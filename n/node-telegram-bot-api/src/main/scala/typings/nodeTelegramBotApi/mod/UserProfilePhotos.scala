@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserProfilePhotos extends StObject {
   
-  var photos: js.Array[js.Array[PhotoSize]] = js.native
+  var photos: js.Array[js.Array[PhotoSize]]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object UserProfilePhotos {
   

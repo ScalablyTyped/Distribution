@@ -6,43 +6,44 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/card/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/card/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): CardStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): CardStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CardStyle]
+  
   trait CardStyle extends StObject {
     
-    var body: ViewStyle = js.native
+    var body: ViewStyle
     
-    var card: ViewStyle = js.native
+    var card: ViewStyle
     
-    var footerContent: TextStyle = js.native
+    var footerContent: TextStyle
     
-    var footerExtra: TextStyle = js.native
+    var footerExtra: TextStyle
     
-    var footerWrap: ViewStyle = js.native
+    var footerWrap: ViewStyle
     
-    var full: ViewStyle = js.native
+    var full: ViewStyle
     
-    var headerContent: TextStyle = js.native
+    var headerContent: TextStyle
     
-    var headerContentWrap: ViewStyle = js.native
+    var headerContentWrap: ViewStyle
     
-    var headerExtra: TextStyle = js.native
+    var headerExtra: TextStyle
     
-    var headerExtraWrap: ViewStyle = js.native
+    var headerExtraWrap: ViewStyle
     
-    var headerImage: ImageStyle = js.native
+    var headerImage: ImageStyle
     
-    var headerTitle: ViewStyle = js.native
+    var headerTitle: ViewStyle
     
-    var headerWrap: ViewStyle = js.native
+    var headerWrap: ViewStyle
   }
   object CardStyle {
     

@@ -3,20 +3,20 @@ package typings.uifabricMergeStyles
 import typings.uifabricMergeStyles.istyleoptionsMod.IStyleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleOptionsStateMod {
   
-  @JSImport("@uifabric/merge-styles/lib/StyleOptionsState", "getRTL")
+  @JSImport("@uifabric/merge-styles/lib/StyleOptionsState", JSImport.Namespace)
   @js.native
-  def getRTL(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/merge-styles/lib/StyleOptionsState", "getStyleOptions")
-  @js.native
-  def getStyleOptions(): IStyleOptions = js.native
+  @scala.inline
+  def getRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")().asInstanceOf[Boolean]
   
-  @JSImport("@uifabric/merge-styles/lib/StyleOptionsState", "setRTL")
-  @js.native
-  def setRTL(isRTL: Boolean): Unit = js.native
+  @scala.inline
+  def getStyleOptions(): IStyleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleOptions")().asInstanceOf[IStyleOptions]
+  
+  @scala.inline
+  def setRTL(isRTL: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

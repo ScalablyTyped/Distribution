@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchPaneResultSuggestionChosenEventArgs extends StObject {
   
-  var tag: String = js.native
+  var tag: String
 }
 object ISearchPaneResultSuggestionChosenEventArgs {
   

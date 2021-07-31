@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextWriter extends StObject {
   
-  def Close(): Unit = js.native
+  def Close(): Unit
   
-  def Write(s: java.lang.String): Unit = js.native
+  def Write(s: java.lang.String): Unit
   
-  def WriteLine(s: java.lang.String): Unit = js.native
+  def WriteLine(s: java.lang.String): Unit
 }
 object ITextWriter {
   

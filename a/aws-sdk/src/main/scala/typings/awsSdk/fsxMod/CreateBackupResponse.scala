@@ -2,16 +2,14 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBackupResponse extends StObject {
   
   /**
     * A description of the backup.
     */
-  var Backup: js.UndefOr[typings.awsSdk.fsxMod.Backup] = js.native
+  var Backup: js.UndefOr[typings.awsSdk.fsxMod.Backup] = js.undefined
 }
 object CreateBackupResponse {
   

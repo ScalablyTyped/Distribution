@@ -26,10 +26,8 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.VERIMATRIX
 import typings.tizenTvWebapis.tizenTvWebapisStrings.WIDEVINE_CDM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AVPlayPlaybackCallback extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait AVPlayPlaybackCallback extends StObject {
     * @throw WebAPIException NotSupportedError, UnknownError
     * @since 2.3
     */
-  var onbufferingcomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onbufferingcomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback method for asynchronous buffering progress notifications.
@@ -45,14 +43,14 @@ trait AVPlayPlaybackCallback extends StObject {
     * @throw WebAPIException NotSupportedError, UnknownError
     * @since 2.3
     */
-  var onbufferingprogress: js.UndefOr[js.Function1[/* percent */ Double, Unit]] = js.native
+  var onbufferingprogress: js.UndefOr[js.Function1[/* percent */ Double, Unit]] = js.undefined
   
   /**
     * Callback method for asynchronous buffering started notifications.
     * @throw WebAPIException NotSupportedError, UnknownError
     * @since 2.3
     */
-  var onbufferingstart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onbufferingstart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback method for the current playback time.
@@ -60,7 +58,7 @@ trait AVPlayPlaybackCallback extends StObject {
     * @throw WebAPIException NotSupportedError, UnknownError
     * @since 2.3
     */
-  var oncurrentplaytime: js.UndefOr[js.Function1[/* currentTime */ Double, Unit]] = js.native
+  var oncurrentplaytime: js.UndefOr[js.Function1[/* currentTime */ Double, Unit]] = js.undefined
   
   /**
     * Callback method for DRM information notifications.
@@ -75,7 +73,7 @@ trait AVPlayPlaybackCallback extends StObject {
       /* data */ js.Object, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback method for AVPlay error notifications.
@@ -88,7 +86,7 @@ trait AVPlayPlaybackCallback extends StObject {
       /* eventid */ AVPlayError | PLAYER_ERROR_NONE | PLAYER_ERROR_INVALID_PARAMETER | PLAYER_ERROR_NO_SUCH_FILE | PLAYER_ERROR_INVALID_OPERATION | PLAYER_ERROR_SEEK_FAILED | PLAYER_ERROR_INVALID_STATE | PLAYER_ERROR_NOT_SUPPORTED_FILE | PLAYER_ERROR_NOT_SUPPORTED_FORMAT | PLAYER_ERROR_INVALID_URI | PLAYER_ERROR_CONNECTION_FAILED | PLAYER_ERROR_GENEREIC, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback method for asynchronous event notifications.
@@ -103,14 +101,14 @@ trait AVPlayPlaybackCallback extends StObject {
       /* data */ String, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback method for asynchronous playback finished notifications.
     * @throw WebAPIException NotSupportedError, UnknownError
     * @since 2.3
     */
-  var onstreamcompleted: js.UndefOr[js.Function0[Unit]] = js.native
+  var onstreamcompleted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback method for asynchronous subtitle change notifications.
@@ -129,7 +127,7 @@ trait AVPlayPlaybackCallback extends StObject {
       /* attributes */ AVPlaySubtitleAttribute, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object AVPlayPlaybackCallback {
   

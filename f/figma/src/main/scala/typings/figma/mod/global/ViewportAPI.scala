@@ -2,19 +2,17 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportAPI extends StObject {
   
-  val bounds: Rect = js.native
+  val bounds: Rect
   
-  var center: Vector = js.native
+  var center: Vector
   
-  def scrollAndZoomIntoView(nodes: js.Array[BaseNode]): Unit = js.native
+  def scrollAndZoomIntoView(nodes: js.Array[BaseNode]): Unit
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object ViewportAPI {
   

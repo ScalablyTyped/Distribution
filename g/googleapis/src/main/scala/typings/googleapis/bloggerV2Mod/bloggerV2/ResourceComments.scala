@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v2", "blogger_v2.Resource$Comments")
@@ -32,7 +31,7 @@ class ResourceComments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaComment] = js.native
   def get(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet): GaxiosPromise[SchemaComment] = js.native
   def get(params: ParamsResourceCommentsGet, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def get(
@@ -66,7 +65,7 @@ class ResourceComments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCommentList] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentList] = js.native
   def list(params: ParamsResourceCommentsList): GaxiosPromise[SchemaCommentList] = js.native
   def list(params: ParamsResourceCommentsList, callback: BodyResponseCallback[SchemaCommentList]): Unit = js.native
   def list(

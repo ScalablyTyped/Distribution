@@ -3,19 +3,17 @@ package typings.cannon.CANNON
 import typings.cannon.anon.Keys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TupleDictionary extends StObject {
   
-  var data: Keys = js.native
+  var data: Keys
   
-  def get(i: Double, j: Double): Double = js.native
+  def get(i: Double, j: Double): Double
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def set(i: Double, j: Double, value: Double): Unit = js.native
+  def set(i: Double, j: Double, value: Double): Unit
 }
 object TupleDictionary {
   

@@ -2,25 +2,25 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TputsOptions extends IOptions {
+trait TputsOptions
+  extends StObject
+     with IOptions {
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var extended: js.UndefOr[Boolean] = js.native
+  var extended: js.UndefOr[Boolean] = js.undefined
   
-  var termcap: js.UndefOr[String] = js.native
+  var termcap: js.UndefOr[String] = js.undefined
   
-  var termcapFile: js.UndefOr[String] = js.native
+  var termcapFile: js.UndefOr[String] = js.undefined
   
-  var terminal: js.UndefOr[String] = js.native
+  var terminal: js.UndefOr[String] = js.undefined
   
-  var terminfoFile: js.UndefOr[String] = js.native
+  var terminfoFile: js.UndefOr[String] = js.undefined
   
-  var terminfoPrefix: js.UndefOr[String] = js.native
+  var terminfoPrefix: js.UndefOr[String] = js.undefined
 }
 object TputsOptions {
   

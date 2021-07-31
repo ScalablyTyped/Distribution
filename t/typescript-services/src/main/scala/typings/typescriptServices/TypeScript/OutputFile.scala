@@ -2,21 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputFile extends StObject {
   
-  var fileType: OutputFileType = js.native
+  var fileType: OutputFileType
   
-  var name: String = js.native
+  var name: String
   
-  var sourceMapEntries: js.Array[SourceMapEntry] = js.native
+  var sourceMapEntries: js.Array[SourceMapEntry]
   
-  var text: String = js.native
+  var text: String
   
-  var writeByteOrderMark: Boolean = js.native
+  var writeByteOrderMark: Boolean
 }
 object OutputFile {
   

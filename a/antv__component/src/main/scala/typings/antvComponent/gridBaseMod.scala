@@ -4,7 +4,6 @@ import typings.antvComponent.typesMod.GroupComponentCfg
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridBaseMod {
@@ -21,7 +20,7 @@ object gridBaseMod {
     
     var drawGrid: js.Any = js.native
     
-    /* protected */ def getAlternatePath(prePoints: js.Array[Point], points: js.Array[Point]): js.Array[_] = js.native
+    /* protected */ def getAlternatePath(prePoints: js.Array[Point], points: js.Array[Point]): js.Array[js.Any] = js.native
     
     /**
       * 获取栅格线的路径
@@ -29,8 +28,8 @@ object gridBaseMod {
       * @param  {boolean} reversed 顺序是否相反
       * @return {any[]}            路径
       */
-    /* protected */ def getGridPath(points: js.Array[Point]): js.Array[_] = js.native
-    /* protected */ def getGridPath(points: js.Array[Point], reversed: Boolean): js.Array[_] = js.native
+    /* protected */ def getGridPath(points: js.Array[Point]): js.Array[js.Any] = js.native
+    /* protected */ def getGridPath(points: js.Array[Point], reversed: Boolean): js.Array[js.Any] = js.native
     
     /**
       * 获取栅格线的类型

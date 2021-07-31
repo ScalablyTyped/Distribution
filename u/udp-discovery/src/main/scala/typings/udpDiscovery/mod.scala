@@ -3,7 +3,6 @@ package typings.udpDiscovery
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,9 +24,9 @@ object mod {
       * @param available Optional parameter to set availability of the service. If not specified, the default is 'true', meaning available.
       */
     def announce(name: String, userData: js.Any): Unit = js.native
-    def announce(name: String, userData: js.Any, interval: js.UndefOr[scala.Nothing], available: Boolean): Unit = js.native
     def announce(name: String, userData: js.Any, interval: Double): Unit = js.native
     def announce(name: String, userData: js.Any, interval: Double, available: Boolean): Unit = js.native
+    def announce(name: String, userData: js.Any, interval: Unit, available: Boolean): Unit = js.native
     
     /**
       * Returns the service object, which can be modified. For example, if you need to alter the userData, you can. You cannot, however, alter the name (it's a constant property).
@@ -68,28 +67,27 @@ object mod {
       * @param available Optional parameter to set availability of the service. If not specified, the default is 'true', meaning available.
       */
     def update(name: String, userData: js.Any): Unit = js.native
-    def update(name: String, userData: js.Any, interval: js.UndefOr[scala.Nothing], available: Boolean): Unit = js.native
     def update(name: String, userData: js.Any, interval: Double): Unit = js.native
     def update(name: String, userData: js.Any, interval: Double, available: Boolean): Unit = js.native
+    def update(name: String, userData: js.Any, interval: Unit, available: Boolean): Unit = js.native
   }
   
-  @js.native
   trait DiscoveryConstructorOptions extends StObject {
     
     /**
       * The address to bind to. Default: listens to all interfaces.
       */
-    var bindAddr: js.UndefOr[String] = js.native
+    var bindAddr: js.UndefOr[String] = js.undefined
     
     /**
       * Either 'udp4' or 'udp6'. Default: 'udp4'.
       */
-    var dgramType: js.UndefOr[String] = js.native
+    var dgramType: js.UndefOr[String] = js.undefined
     
     /**
       * The port to listen upon for service announcements. Default: 44201.
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object DiscoveryConstructorOptions {
     
@@ -122,7 +120,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DiscoveryEvents extends StObject {
     
     /**
@@ -131,7 +128,7 @@ object mod {
       * @param eventName The name of the event.
       * @param data The payload for the event.
       */
-    var MessageBus: js.UndefOr[js.Function2[/* eventName */ String, /* data */ js.Any, Unit]] = js.native
+    var MessageBus: js.UndefOr[js.Function2[/* eventName */ String, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * This event can happen when:
@@ -141,7 +138,7 @@ object mod {
       * @param data user-defined object describing the service.
       * @param reason why this event was sent: 'new', 'availabilityChange', 'timedOut'.
       */
-    def available(name: String, data: js.Any, reason: ReasonType): Unit = js.native
+    def available(name: String, data: js.Any, reason: ReasonType): Unit
     
     /**
       * This event can happen when:
@@ -152,7 +149,7 @@ object mod {
       * @param data user-defined object describing the service.
       * @param reason why this event was sent: 'new', 'availabilityChange', 'timedOut'.
       */
-    def unavailable(name: String, data: js.Any, reason: ReasonType): Unit = js.native
+    def unavailable(name: String, data: js.Any, reason: ReasonType): Unit
   }
   object DiscoveryEvents {
     

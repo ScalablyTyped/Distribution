@@ -3,11 +3,9 @@ package typings.reactInstantsearchDom.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DOM
-@js.native
 trait CommonWidgetProps extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait CommonWidgetProps extends StObject {
     *
     * https://community.algolia.com/react-instantsearch/guide/i18n.html
     */
-  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]] = js.native
+  var translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]] = js.undefined
 }
 object CommonWidgetProps {
   
@@ -30,7 +28,7 @@ object CommonWidgetProps {
   implicit class CommonWidgetPropsMutableBuilder[Self <: CommonWidgetProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)

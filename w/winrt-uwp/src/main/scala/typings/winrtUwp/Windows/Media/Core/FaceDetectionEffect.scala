@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.facedetected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an effect that attempts to detect faces in a video stream. */
 @js.native
 trait FaceDetectionEffect extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_facedetected(`type`: facedetected, listener: TypedEventHandler[FaceDetectionEffect, FaceDetectedEventArgs]): Unit = js.native
   
@@ -25,12 +24,12 @@ trait FaceDetectionEffect extends StObject {
   var enabled: Boolean = js.native
   
   /** Occurs when a face is detected. */
-  def onfacedetected(ev: FaceDetectedEventArgs with WinRTEvent[FaceDetectionEffect]): Unit = js.native
+  def onfacedetected(ev: FaceDetectedEventArgs & WinRTEvent[FaceDetectionEffect]): Unit = js.native
   /** Occurs when a face is detected. */
   @JSName("onfacedetected")
   var onfacedetected_Original: TypedEventHandler[FaceDetectionEffect, FaceDetectedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_facedetected(`type`: facedetected, listener: TypedEventHandler[FaceDetectionEffect, FaceDetectedEventArgs]): Unit = js.native
   

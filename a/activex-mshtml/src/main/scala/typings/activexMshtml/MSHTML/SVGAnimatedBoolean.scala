@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedBoolean extends StObject {
   
   @JSName("MSHTML.SVGAnimatedBoolean_typekey")
-  var MSHTMLDotSVGAnimatedBoolean_typekey: SVGAnimatedBoolean = js.native
+  var MSHTMLDotSVGAnimatedBoolean_typekey: SVGAnimatedBoolean
   
-  var animVal: Boolean = js.native
+  var animVal: Boolean
   
-  var baseVal: Boolean = js.native
+  var baseVal: Boolean
 }
 object SVGAnimatedBoolean {
   

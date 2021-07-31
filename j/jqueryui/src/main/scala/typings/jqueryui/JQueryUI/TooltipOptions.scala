@@ -4,35 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tooltip //////////////////////////////////////////////////
-@js.native
-trait TooltipOptions extends TooltipEvents {
+trait TooltipOptions
+  extends StObject
+     with TooltipEvents {
   
-  var classes: js.UndefOr[StringDictionary[String]] = js.native
+  var classes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
   // () or string
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var hide: js.UndefOr[js.Any] = js.native
+  var hide: js.UndefOr[js.Any] = js.undefined
   
   // boolean, number, string or object
-  var items: js.UndefOr[String | JQuery] = js.native
+  var items: js.UndefOr[String | JQuery] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   // TODO
-  var show: js.UndefOr[js.Any] = js.native
+  var show: js.UndefOr[js.Any] = js.undefined
   
   // boolean, number, string or object
-  var tooltipClass: js.UndefOr[String] = js.native
+  var tooltipClass: js.UndefOr[String] = js.undefined
   
   // deprecated in jQuery UI 1.12
-  var track: js.UndefOr[Boolean] = js.native
+  var track: js.UndefOr[Boolean] = js.undefined
 }
 object TooltipOptions {
   

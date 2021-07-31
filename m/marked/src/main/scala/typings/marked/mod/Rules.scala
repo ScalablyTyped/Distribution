@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Rules extends /* ruleName */ StringDictionary[RegExp | Rules]
+trait Rules
+  extends StObject
+     with /* ruleName */ StringDictionary[RegExp | Rules]
 object Rules {
   
   @scala.inline

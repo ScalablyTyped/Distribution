@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsInstancesPatch extends StandardParameters {
+trait ParamsResourceProjectsInstancesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. A unique identifier for the instance, which cannot be changed
@@ -23,12 +23,12 @@ trait ParamsResourceProjectsInstancesPatch extends StandardParameters {
     * `projects/<project>/instances/a-z*[a-z0-9]`. The final segment of the
     * name must be between 6 and 30 characters in length.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaUpdateInstanceRequest] = js.native
+  var requestBody: js.UndefOr[SchemaUpdateInstanceRequest] = js.undefined
 }
 object ParamsResourceProjectsInstancesPatch {
   

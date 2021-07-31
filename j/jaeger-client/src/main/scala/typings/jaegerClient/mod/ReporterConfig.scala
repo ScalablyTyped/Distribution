@@ -2,25 +2,23 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReporterConfig extends StObject {
   
-  var agentHost: js.UndefOr[String] = js.native
+  var agentHost: js.UndefOr[String] = js.undefined
   
-  var agentPort: js.UndefOr[Double] = js.native
+  var agentPort: js.UndefOr[Double] = js.undefined
   
-  var collectorEndpoint: js.UndefOr[String] = js.native
+  var collectorEndpoint: js.UndefOr[String] = js.undefined
   
-  var flushIntervalMs: js.UndefOr[Double] = js.native
+  var flushIntervalMs: js.UndefOr[Double] = js.undefined
   
-  var logSpans: js.UndefOr[Boolean] = js.native
+  var logSpans: js.UndefOr[Boolean] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object ReporterConfig {
   

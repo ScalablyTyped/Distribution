@@ -10,9 +10,9 @@ A set of components and utils to deal with React refs.
 | ------------------ | :-------------: |
 | Full name          | @fluentui/react-component-ref |
 | Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 6 |
-| # downloads        | 416907 |
+| # releases         | 43 |
+| # dependents       | 7 |
+| # downloads        | 984182 |
 | # stars            | 0 |
 
 ## Links

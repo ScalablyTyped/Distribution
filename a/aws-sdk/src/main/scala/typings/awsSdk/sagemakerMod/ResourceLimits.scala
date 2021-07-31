@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceLimits extends StObject {
   
   /**
     * The maximum number of training jobs that a hyperparameter tuning job can launch.
     */
-  var MaxNumberOfTrainingJobs: typings.awsSdk.sagemakerMod.MaxNumberOfTrainingJobs = js.native
+  var MaxNumberOfTrainingJobs: typings.awsSdk.sagemakerMod.MaxNumberOfTrainingJobs
   
   /**
     * The maximum number of concurrent training jobs that a hyperparameter tuning job can launch.
     */
-  var MaxParallelTrainingJobs: typings.awsSdk.sagemakerMod.MaxParallelTrainingJobs = js.native
+  var MaxParallelTrainingJobs: typings.awsSdk.sagemakerMod.MaxParallelTrainingJobs
 }
 object ResourceLimits {
   

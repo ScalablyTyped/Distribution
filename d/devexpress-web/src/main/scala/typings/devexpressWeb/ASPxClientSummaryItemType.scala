@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists values that specify the summary item's aggregate function types.
   */
-@js.native
 trait ASPxClientSummaryItemType extends StObject {
   
   /**
     * The column's average value.
     */
-  var Average: Double = js.native
+  var Average: Double
   
   /**
     * The record count.
     */
-  var Count: Double = js.native
+  var Count: Double
   
   /**
     * The maximum value in the column.
     */
-  var Max: Double = js.native
+  var Max: Double
   
   /**
     * The minimum value in the column.
     */
-  var Min: Double = js.native
+  var Min: Double
   
   /**
     * The sum of all values in a column.
     */
-  var Sum: Double = js.native
+  var Sum: Double
 }
 object ASPxClientSummaryItemType {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * retrieval of its synonyms.
   * @see com.sun.star.linguistic2.XThesaurus
   */
-@js.native
-trait XMeaning extends XInterface {
+trait XMeaning
+  extends StObject
+     with XInterface {
   
   /** @returns the meaning represented by this object. */
-  val Meaning: String = js.native
+  val Meaning: String
   
   /** @returns the meaning represented by this object. */
-  def getMeaning(): String = js.native
+  def getMeaning(): String
   
   /** @returns a sequence of strings where each entry is a synonym of the current objects meaning. */
-  def querySynonyms(): SafeArray[String] = js.native
+  def querySynonyms(): SafeArray[String]
 }
 object XMeaning {
   

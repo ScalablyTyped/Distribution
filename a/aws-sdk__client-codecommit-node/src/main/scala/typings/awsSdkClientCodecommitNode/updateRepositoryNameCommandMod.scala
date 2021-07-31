@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameInputMod.Upda
 import typings.awsSdkClientCodecommitNode.typesUpdateRepositoryNameOutputMod.UpdateRepositoryNameOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateRepositoryNameCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/UpdateRepositoryNameCommand", "UpdateRepositoryNameCommand")
   @js.native
-  class UpdateRepositoryNameCommand protected () extends Command[
+  class UpdateRepositoryNameCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           UpdateRepositoryNameInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object updateRepositoryNameCommandMod {
         ] {
     def this(input: UpdateRepositoryNameInput) = this()
     
+    /* CompleteClass */
+    override val input: UpdateRepositoryNameInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[UpdateRepositoryNameInput, UpdateRepositoryNameOutput] = js.native
   }
 }

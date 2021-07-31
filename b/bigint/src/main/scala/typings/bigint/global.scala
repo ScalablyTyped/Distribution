@@ -3,292 +3,226 @@ package typings.bigint
 import typings.bigint.BigInt.IRandom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object BigInt {
     
-    @JSGlobal("BigInt.GCD")
+    @JSGlobal("BigInt")
     @js.native
-    def GCD(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("BigInt.GCD_")
-    @js.native
-    def GCD_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def GCD(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("GCD")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.add")
-    @js.native
-    def add(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def GCD_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCD_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.addInt")
-    @js.native
-    def addInt(x: typings.bigint.BigInt.BigInt, n: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def add(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.addInt_")
-    @js.native
-    def addInt_(x: typings.bigint.BigInt.BigInt, n: Double): Unit = js.native
+    @scala.inline
+    def addInt(x: typings.bigint.BigInt.BigInt, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("addInt")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.addShift_")
-    @js.native
-    def addShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, ys: Double): Unit = js.native
+    @scala.inline
+    def addInt_(x: typings.bigint.BigInt.BigInt, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addInt_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.add_")
-    @js.native
-    def add_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def addShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, ys: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addShift_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ys.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.bigInt2str")
-    @js.native
-    def bigInt2str(x: typings.bigint.BigInt.BigInt, base: String): String = js.native
-    @JSGlobal("BigInt.bigInt2str")
-    @js.native
-    def bigInt2str(x: typings.bigint.BigInt.BigInt, base: Double): String = js.native
+    @scala.inline
+    def add_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.bitSize")
-    @js.native
-    def bitSize(x: typings.bigint.BigInt.BigInt): Double = js.native
+    @scala.inline
+    def bigInt2str(x: typings.bigint.BigInt.BigInt, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt2str")(x.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def bigInt2str(x: typings.bigint.BigInt.BigInt, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt2str")(x.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSGlobal("BigInt.carry_")
-    @js.native
-    def carry(x: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def bitSize(x: typings.bigint.BigInt.BigInt): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("bitSize")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("BigInt.copy_")
-    @js.native
-    def copy(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def carry(x: typings.bigint.BigInt.BigInt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("carry_")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.copyInt_")
-    @js.native
-    def copyInt(x: typings.bigint.BigInt.BigInt, n: Double): Unit = js.native
+    @scala.inline
+    def copy(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copy_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.divInt_")
-    @js.native
-    def divInt(x: typings.bigint.BigInt.BigInt, n: Double): Double = js.native
+    @scala.inline
+    def copyInt(x: typings.bigint.BigInt.BigInt, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyInt_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.divide_")
-    @js.native
+    @scala.inline
+    def divInt(x: typings.bigint.BigInt.BigInt, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("divInt_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
     def divide(
       x: typings.bigint.BigInt.BigInt,
       y: typings.bigint.BigInt.BigInt,
       q: typings.bigint.BigInt.BigInt,
       r: typings.bigint.BigInt.BigInt
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("divide_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], q.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.dup")
-    @js.native
-    def dup(x: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def dup(x: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("dup")(x.asInstanceOf[js.Any]).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.eGCD_")
-    @js.native
+    @scala.inline
     def eGCD(
       x: typings.bigint.BigInt.BigInt,
       y: typings.bigint.BigInt.BigInt,
       d: typings.bigint.BigInt.BigInt,
       a: typings.bigint.BigInt.BigInt,
       b: typings.bigint.BigInt.BigInt
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eGCD_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], d.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.equalsInt")
-    @js.native
-    def equalsInt(x: typings.bigint.BigInt.BigInt, y: Double): Boolean = js.native
+    @scala.inline
+    def equalsInt(x: typings.bigint.BigInt.BigInt, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsInt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.equals")
-    @js.native
-    def equals_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def equals_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.expand")
-    @js.native
-    def expand(value: typings.bigint.BigInt.BigInt, n: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def expand(value: typings.bigint.BigInt.BigInt, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(value.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.findPrimes")
-    @js.native
-    def findPrimes(n: Double): js.Array[Double] = js.native
+    @scala.inline
+    def findPrimes(n: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("findPrimes")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    @JSGlobal("BigInt.greater")
-    @js.native
-    def greater(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def greater(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.greaterShift")
-    @js.native
-    def greaterShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, shift: Double): Boolean = js.native
+    @scala.inline
+    def greaterShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, shift: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterShift")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], shift.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.halve_")
-    @js.native
-    def halve(x: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def halve(x: typings.bigint.BigInt.BigInt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("halve_")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.int2bigInt")
-    @js.native
-    def int2bigInt(t: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.int2bigInt")
-    @js.native
-    def int2bigInt(t: Double, n: js.UndefOr[scala.Nothing], m: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.int2bigInt")
-    @js.native
-    def int2bigInt(t: Double, n: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.int2bigInt")
-    @js.native
-    def int2bigInt(t: Double, n: Double, m: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def int2bigInt(t: Double): typings.bigint.BigInt.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("int2bigInt")(t.asInstanceOf[js.Any]).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def int2bigInt(t: Double, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("int2bigInt")(t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def int2bigInt(t: Double, n: Double, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("int2bigInt")(t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def int2bigInt(t: Double, n: Unit, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("int2bigInt")(t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.inverseMod")
-    @js.native
-    def inverseMod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def inverseMod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("inverseMod")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.inverseModInt")
-    @js.native
-    def inverseModInt(x: Double, n: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def inverseModInt(x: Double, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("inverseModInt")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.inverseMod_")
-    @js.native
-    def inverseMod_(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def inverseMod_(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inverseMod_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.isZero")
-    @js.native
-    def isZero(x: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def isZero(x: typings.bigint.BigInt.BigInt): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isZero")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.leftShift_")
-    @js.native
-    def leftShift(x: typings.bigint.BigInt.BigInt, n: Double): Unit = js.native
+    @scala.inline
+    def leftShift(x: typings.bigint.BigInt.BigInt, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("leftShift_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.linComb_")
-    @js.native
-    def linComb(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, a: Double, b: Double): Unit = js.native
+    @scala.inline
+    def linComb(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, a: Double, b: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linComb_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.linCombShift_")
-    @js.native
-    def linCombShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, b: Double, ys: Double): Unit = js.native
+    @scala.inline
+    def linCombShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, b: Double, ys: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linCombShift_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], b.asInstanceOf[js.Any], ys.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.millerRabin")
-    @js.native
-    def millerRabin(x: typings.bigint.BigInt.BigInt, b: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def millerRabin(x: typings.bigint.BigInt.BigInt, b: typings.bigint.BigInt.BigInt): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("millerRabin")(x.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.millerRabinInt")
-    @js.native
-    def millerRabinInt(x: Double, b: Double): Boolean = js.native
+    @scala.inline
+    def millerRabinInt(x: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("millerRabinInt")(x.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.mod")
-    @js.native
-    def mod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def mod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.modInt")
-    @js.native
-    def modInt(x: typings.bigint.BigInt.BigInt, n: Double): Double = js.native
+    @scala.inline
+    def modInt(x: typings.bigint.BigInt.BigInt, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("modInt")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("BigInt.mod_")
-    @js.native
-    def mod_(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def mod_(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mod_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.mont_")
-    @js.native
+    @scala.inline
     def mont(
       x: typings.bigint.BigInt.BigInt,
       y: typings.bigint.BigInt.BigInt,
       n: typings.bigint.BigInt.BigInt,
       np: Double
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mont_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], n.asInstanceOf[js.Any], np.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.mult")
-    @js.native
-    def mult(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def mult(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("mult")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.multInt_")
-    @js.native
-    def multInt(x: typings.bigint.BigInt.BigInt, n: Double): Unit = js.native
+    @scala.inline
+    def multInt(x: typings.bigint.BigInt.BigInt, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("multInt_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.multMod")
-    @js.native
-    def multMod(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def multMod(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("multMod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.multMod_")
-    @js.native
-    def multMod_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def multMod_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("multMod_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.mult_")
-    @js.native
-    def mult_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def mult_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mult_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.negative")
-    @js.native
-    def negative(x: typings.bigint.BigInt.BigInt): Boolean = js.native
+    @scala.inline
+    def negative(x: typings.bigint.BigInt.BigInt): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("negative")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSGlobal("BigInt.powMod")
-    @js.native
-    def powMod(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def powMod(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("powMod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.powMod_")
-    @js.native
-    def powMod_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def powMod_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("powMod_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.randBigInt")
-    @js.native
-    def randBigInt(n: Double, s: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def randBigInt(n: Double, s: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("randBigInt")(n.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.randBigInt_")
-    @js.native
-    def randBigInt_(b: typings.bigint.BigInt.BigInt, n: Double, s: Double): Unit = js.native
+    @scala.inline
+    def randBigInt_(b: typings.bigint.BigInt.BigInt, n: Double, s: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randBigInt_")(b.asInstanceOf[js.Any], n.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.randProbPrime")
-    @js.native
-    def randProbPrime(k: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def randProbPrime(k: Double): typings.bigint.BigInt.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("randProbPrime")(k.asInstanceOf[js.Any]).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.randTruePrime")
-    @js.native
-    def randTruePrime(k: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def randTruePrime(k: Double): typings.bigint.BigInt.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("randTruePrime")(k.asInstanceOf[js.Any]).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.randTruePrime_")
-    @js.native
-    def randTruePrime_(ans: typings.bigint.BigInt.BigInt, k: Double): Unit = js.native
+    @scala.inline
+    def randTruePrime_(ans: typings.bigint.BigInt.BigInt, k: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randTruePrime_")(ans.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.rightShift_")
-    @js.native
-    def rightShift(x: typings.bigint.BigInt.BigInt, n: Double): Unit = js.native
+    @scala.inline
+    def rightShift(x: typings.bigint.BigInt.BigInt, n: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightShift_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.setRandom")
-    @js.native
-    def setRandom(random: IRandom): Unit = js.native
+    @scala.inline
+    def setRandom(random: IRandom): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRandom")(random.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.squareMod_")
-    @js.native
-    def squareMod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def squareMod(x: typings.bigint.BigInt.BigInt, n: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("squareMod_")(x.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: String): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: String, n: js.UndefOr[scala.Nothing], m: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: String, n: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: String, n: Double, m: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: Double, n: js.UndefOr[scala.Nothing], m: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: Double, n: Double): typings.bigint.BigInt.BigInt = js.native
-    @JSGlobal("BigInt.str2bigInt")
-    @js.native
-    def str2bigInt(s: String, b: Double, n: Double, m: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def str2bigInt(s: String, b: String): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: String, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: String, n: Double, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: String, n: Unit, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: Double, n: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: Double, n: Double, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
+    @scala.inline
+    def str2bigInt(s: String, b: Double, n: Unit, m: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("str2bigInt")(s.asInstanceOf[js.Any], b.asInstanceOf[js.Any], n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.sub")
-    @js.native
-    def sub(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def sub(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
     
-    @JSGlobal("BigInt.subShift_")
-    @js.native
-    def subShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, ys: Double): Unit = js.native
+    @scala.inline
+    def subShift(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt, ys: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subShift_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ys.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.sub_")
-    @js.native
-    def sub_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = js.native
+    @scala.inline
+    def sub_(x: typings.bigint.BigInt.BigInt, y: typings.bigint.BigInt.BigInt): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sub_")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("BigInt.trim")
-    @js.native
-    def trim(x: typings.bigint.BigInt.BigInt, k: Double): typings.bigint.BigInt.BigInt = js.native
+    @scala.inline
+    def trim(x: typings.bigint.BigInt.BigInt, k: Double): typings.bigint.BigInt.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[typings.bigint.BigInt.BigInt]
   }
 }

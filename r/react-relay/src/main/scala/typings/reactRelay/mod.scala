@@ -40,10 +40,13 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-relay", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-relay", "Environment")
   @js.native
@@ -60,59 +63,53 @@ object mod {
   @JSImport("react-relay", "QueryRenderer")
   @js.native
   class QueryRenderer[TOperation /* <: OperationType */] ()
-    extends Component[CacheConfig with QueryRendererProps[TOperation], js.Object, js.Any]
+    extends Component[CacheConfig & QueryRendererProps[TOperation], js.Object, js.Any]
   
   @JSImport("react-relay", "ReactRelayContext")
   @js.native
   val ReactRelayContext: Context[RelayContext | Null] = js.native
   
-  @JSImport("react-relay", "applyOptimisticMutation")
-  @js.native
-  def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = js.native
+  @scala.inline
+  def applyOptimisticMutation(environment: typings.relayRuntime.relayStoreTypesMod.Environment, config: OptimisticMutationConfig): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("applyOptimisticMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("react-relay", "commitLocalUpdate")
-  @js.native
-  def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = js.native
+  @scala.inline
+  def commitLocalUpdate(environment: typings.relayRuntime.relayStoreTypesMod.Environment, updater: StoreUpdater): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitLocalUpdate")(environment.asInstanceOf[js.Any], updater.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-relay", "commitMutation")
-  @js.native
+  @scala.inline
   def commitMutation[TOperation /* <: MutationParameters */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @JSImport("react-relay", "createFragmentContainer")
-  @js.native
-  def createFragmentContainer[Props](Component: ComponentType[Props with Relay], fragmentSpec: Record[String, GraphQLTaggedNode]): Container[Props] = js.native
+  @scala.inline
+  def createFragmentContainer[Props](Component: ComponentType[Props & Relay], fragmentSpec: Record[String, GraphQLTaggedNode]): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFragmentContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
   
-  @JSImport("react-relay", "createPaginationContainer")
-  @js.native
+  @scala.inline
   def createPaginationContainer[Props](
-    Component: ComponentType[Props with RelayRelayPaginationProp],
+    Component: ComponentType[Props & RelayRelayPaginationProp],
     fragmentSpec: Record[String, GraphQLTaggedNode],
     connectionConfig: ConnectionConfig[Props]
-  ): Container[Props] = js.native
+  ): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPaginationContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], connectionConfig.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
   
-  @JSImport("react-relay", "createRefetchContainer")
-  @js.native
+  @scala.inline
   def createRefetchContainer[Props](
-    Component: ComponentType[Props with RelayRelayRefetchProp],
+    Component: ComponentType[Props & RelayRelayRefetchProp],
     fragmentSpec: Record[String, GraphQLTaggedNode],
     refetchQuery: GraphQLTaggedNode
-  ): Container[Props] = js.native
+  ): Container[Props] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRefetchContainer")(Component.asInstanceOf[js.Any], fragmentSpec.asInstanceOf[js.Any], refetchQuery.asInstanceOf[js.Any])).asInstanceOf[Container[Props]]
   
-  @JSImport("react-relay", "fetchQuery")
-  @js.native
+  @scala.inline
   def fetchQuery_variables[T /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
     variables: /* import warning: importer.ImportType#apply Failed type conversion: T['variables'] */ js.Any
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = js.native
-  @JSImport("react-relay", "fetchQuery")
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
+  @scala.inline
   def fetchQuery_variables[T /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     taggedNode: GraphQLTaggedNode,
@@ -120,42 +117,39 @@ object mod {
     cacheConfig: typings.relayRuntime.relayRuntimeTypesMod.CacheConfig
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchQuery")(environment.asInstanceOf[js.Any], taggedNode.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], cacheConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['response'] */ js.Any
+  ]]
   
-  @JSImport("react-relay", "graphql")
-  @js.native
-  def graphql(strings: js.Any): GraphQLTaggedNode = js.native
+  @scala.inline
+  def graphql(strings: js.Any): GraphQLTaggedNode = ^.asInstanceOf[js.Dynamic].applyDynamic("graphql")(strings.asInstanceOf[js.Any]).asInstanceOf[GraphQLTaggedNode]
   
-  @JSImport("react-relay", "readInlineData")
-  @js.native
-  def readInlineData[T /* <: RefType[_] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = js.native
-  @JSImport("react-relay", "readInlineData")
-  @js.native
-  def readInlineData[T /* <: RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = js.native
-  @JSImport("react-relay", "readInlineData")
-  @js.native
-  def readInlineData_T_RefTypeWildcard_T[T /* <: RefType[_] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = js.native
+  @scala.inline
+  def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode): js.UndefOr[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T | Null]]
+  @scala.inline
+  def readInlineData[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): js.UndefOr[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T | Null]]
   
-  @JSImport("react-relay", "requestSubscription")
-  @js.native
+  @scala.inline
+  def readInlineData_T_RefTypeAny_T[T /* <: RefType[js.Any] */](fragment: GraphQLTaggedNode, ref: FragmentRef[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("readInlineData")(fragment.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
   def requestSubscription[TSubscription /* <: OperationType */](
     environment: typings.relayRuntime.relayStoreTypesMod.Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @js.native
   trait ConnectionConfig[Props] extends StObject {
     
-    var direction: js.UndefOr[backward | forward] = js.native
+    var direction: js.UndefOr[backward | forward] = js.undefined
     
-    var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ Props, js.UndefOr[ConnectionData | Null]]] = js.native
+    var getConnectionFromProps: js.UndefOr[js.Function1[/* props */ Props, js.UndefOr[ConnectionData | Null]]] = js.undefined
     
-    var getFragmentVariables: js.UndefOr[js.Function2[/* prevVars */ Variables, /* totalCount */ Double, Variables]] = js.native
+    var getFragmentVariables: js.UndefOr[js.Function2[/* prevVars */ Variables, /* totalCount */ Double, Variables]] = js.undefined
     
-    def getVariables(props: Props, paginationInfo: Count, fragmentVariables: Variables): Variables = js.native
+    def getVariables(props: Props, paginationInfo: Count, fragmentVariables: Variables): Variables
     
-    var query: GraphQLTaggedNode = js.native
+    var query: GraphQLTaggedNode
   }
   object ConnectionConfig {
     
@@ -166,7 +160,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig[_], Props] (val x: Self with ConnectionConfig[Props]) extends AnyVal {
+    implicit class ConnectionConfigMutableBuilder[Self <: ConnectionConfig[?], Props] (val x: Self & ConnectionConfig[Props]) extends AnyVal {
       
       @scala.inline
       def setDirection(value: backward | forward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
@@ -197,12 +191,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ConnectionData extends StObject {
     
-    var edges: js.UndefOr[js.Array[_] | Null] = js.native
+    var edges: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
     
-    var pageInfo: js.UndefOr[PartialPageInfo | Null] = js.native
+    var pageInfo: js.UndefOr[PartialPageInfo | Null] = js.undefined
   }
   object ConnectionData {
     
@@ -216,7 +209,7 @@ object mod {
     implicit class ConnectionDataMutableBuilder[Self <: ConnectionData] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEdges(value: js.Array[_]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      def setEdges(value: js.Array[js.Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEdgesNull: Self = StObject.set(x, "edges", null)
@@ -238,7 +231,7 @@ object mod {
     }
   }
   
-  type Container[Props] = ComponentType[ContainerProps[Props] with ComponentRef]
+  type Container[Props] = ComponentType[ContainerProps[Props] & ComponentRef]
   
   type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[/* keyof Props */ String, relay]]]
   
@@ -260,20 +253,19 @@ object mod {
   
   type MappedFragmentProps[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: react-relay.react-relay.FragmentOrRegularProp<T[K]>}
-    */ typings.reactRelay.reactRelayStrings.MappedFragmentProps with TopLevel[T]
+    */ typings.reactRelay.reactRelayStrings.MappedFragmentProps & TopLevel[T]
   
   type ObserverOrCallback = Observer[Unit] | (js.Function1[/* error */ js.UndefOr[Error | Null], Unit])
   
-  @js.native
   trait QueryRendererProps[TOperation /* <: OperationType */] extends StObject {
     
-    var environment: typings.relayRuntime.relayStoreTypesMod.Environment = js.native
+    var environment: typings.relayRuntime.relayStoreTypesMod.Environment
     
-    var query: js.UndefOr[GraphQLTaggedNode | Null] = js.native
+    var query: js.UndefOr[GraphQLTaggedNode | Null] = js.undefined
     
-    def render(renderProps: typings.reactRelay.anon.Error[TOperation]): ReactNode = js.native
+    def render(renderProps: typings.reactRelay.anon.Error[TOperation]): ReactNode
     
-    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any = js.native
+    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
   }
   object QueryRendererProps {
     
@@ -288,7 +280,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class QueryRendererPropsMutableBuilder[Self <: QueryRendererProps[_], TOperation /* <: OperationType */] (val x: Self with QueryRendererProps[TOperation]) extends AnyVal {
+    implicit class QueryRendererPropsMutableBuilder[Self <: QueryRendererProps[?], TOperation /* <: OperationType */] (val x: Self & QueryRendererProps[TOperation]) extends AnyVal {
       
       @scala.inline
       def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
@@ -317,14 +309,13 @@ object mod {
   
   type ReactRelayLocalQueryRenderer[TOperation /* <: OperationType */] = Component[QueryRendererProps[TOperation], js.Object, js.Any]
   
-  type ReactRelayQueryRenderer[TOperation /* <: OperationType */] = Component[CacheConfig with QueryRendererProps[TOperation], js.Object, js.Any]
+  type ReactRelayQueryRenderer[TOperation /* <: OperationType */] = Component[CacheConfig & QueryRendererProps[TOperation], js.Object, js.Any]
   
-  @js.native
   trait RefetchOptions extends StObject {
     
-    var fetchPolicy: js.UndefOr[`store-or-network` | `network-only`] = js.native
+    var fetchPolicy: js.UndefOr[`store-or-network` | `network-only`] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object RefetchOptions {
     
@@ -361,37 +352,34 @@ object mod {
     def isLoading(): Boolean = js.native
     
     def loadMore(pageSize: Double): js.UndefOr[Disposable | Null] = js.native
-    def loadMore(pageSize: Double, observerOrCallback: js.UndefOr[ObserverOrCallback], options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
     def loadMore(pageSize: Double, observerOrCallback: Null, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
+    def loadMore(pageSize: Double, observerOrCallback: Unit, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
     def loadMore(pageSize: Double, observerOrCallback: ObserverOrCallback): js.UndefOr[Disposable | Null] = js.native
+    def loadMore(pageSize: Double, observerOrCallback: ObserverOrCallback, options: RefetchOptions): js.UndefOr[Disposable | Null] = js.native
     
-    var refetch: js.UndefOr[scala.Nothing] = js.native
+    var refetch: Unit = js.native
     
     def refetchConnection(totalCount: Double): js.UndefOr[Disposable | Null] = js.native
-    def refetchConnection(
-      totalCount: Double,
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
-      refetchVariables: Variables
-    ): js.UndefOr[Disposable | Null] = js.native
     def refetchConnection(totalCount: Double, observerOrCallback: Null, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
+    def refetchConnection(totalCount: Double, observerOrCallback: Unit, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
     def refetchConnection(totalCount: Double, observerOrCallback: ObserverOrCallback): js.UndefOr[Disposable | Null] = js.native
+    def refetchConnection(totalCount: Double, observerOrCallback: ObserverOrCallback, refetchVariables: Variables): js.UndefOr[Disposable | Null] = js.native
   }
   
-  @js.native
   trait RelayProp extends StObject {
     
-    var environment: typings.relayRuntime.mod.Environment = js.native
+    var environment: typings.relayRuntime.mod.Environment
     
     // ensures no RelayRefetchProp is used with a fragment container
-    var hasMore: js.UndefOr[scala.Nothing] = js.native
+    var hasMore: Unit
     
-    var refetch: js.UndefOr[scala.Nothing] = js.native
+    var refetch: Unit
   }
   object RelayProp {
     
     @scala.inline
-    def apply(environment: typings.relayRuntime.mod.Environment): RelayProp = {
-      val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any])
+    def apply(environment: typings.relayRuntime.mod.Environment, hasMore: Unit, refetch: Unit): RelayProp = {
+      val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], hasMore = hasMore.asInstanceOf[js.Any], refetch = refetch.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelayProp]
     }
     
@@ -400,6 +388,12 @@ object mod {
       
       @scala.inline
       def setEnvironment(value: typings.relayRuntime.mod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHasMore(value: Unit): Self = StObject.set(x, "hasMore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRefetch(value: Unit): Self = StObject.set(x, "refetch", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,34 +402,11 @@ object mod {
     
     var environment: typings.relayRuntime.mod.Environment = js.native
     
-    var hasMore: js.UndefOr[scala.Nothing] = js.native
+    var hasMore: Unit = js.native
     
     def refetch(refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables]): Disposable = js.native
     def refetch(
       refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: ObserverOrCallback
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Null,
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
       renderVariables: Null,
       observerOrCallback: Null,
       options: RefetchOptions
@@ -443,7 +414,42 @@ object mod {
     def refetch(
       refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
       renderVariables: Null,
+      observerOrCallback: Unit,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Null,
       observerOrCallback: ObserverOrCallback
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Null,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Unit,
+      observerOrCallback: Null,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Unit,
+      observerOrCallback: Unit,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Unit,
+      observerOrCallback: ObserverOrCallback
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Unit,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
     ): Disposable = js.native
     def refetch(
       refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
@@ -452,64 +458,84 @@ object mod {
     def refetch(
       refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
       renderVariables: Variables,
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
-      renderVariables: Variables,
       observerOrCallback: Null,
       options: RefetchOptions
     ): Disposable = js.native
     def refetch(
       refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
       renderVariables: Variables,
+      observerOrCallback: Unit,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Variables,
       observerOrCallback: ObserverOrCallback
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: js.Function1[/* fragmentVariables */ Variables, Variables],
+      renderVariables: Variables,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
     ): Disposable = js.native
     def refetch(refetchVariables: Variables): Disposable = js.native
     def refetch(
       refetchVariables: Variables,
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: Null,
-      options: RefetchOptions
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
-      renderVariables: js.UndefOr[scala.Nothing],
-      observerOrCallback: ObserverOrCallback
-    ): Disposable = js.native
-    def refetch(
-      refetchVariables: Variables,
       renderVariables: Null,
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
+      observerOrCallback: Null,
       options: RefetchOptions
     ): Disposable = js.native
     def refetch(
       refetchVariables: Variables,
       renderVariables: Null,
-      observerOrCallback: Null,
+      observerOrCallback: Unit,
       options: RefetchOptions
     ): Disposable = js.native
     def refetch(refetchVariables: Variables, renderVariables: Null, observerOrCallback: ObserverOrCallback): Disposable = js.native
+    def refetch(
+      refetchVariables: Variables,
+      renderVariables: Null,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: Variables,
+      renderVariables: Unit,
+      observerOrCallback: Null,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(
+      refetchVariables: Variables,
+      renderVariables: Unit,
+      observerOrCallback: Unit,
+      options: RefetchOptions
+    ): Disposable = js.native
+    def refetch(refetchVariables: Variables, renderVariables: Unit, observerOrCallback: ObserverOrCallback): Disposable = js.native
+    def refetch(
+      refetchVariables: Variables,
+      renderVariables: Unit,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
+    ): Disposable = js.native
     def refetch(refetchVariables: Variables, renderVariables: Variables): Disposable = js.native
     def refetch(
       refetchVariables: Variables,
       renderVariables: Variables,
-      observerOrCallback: js.UndefOr[ObserverOrCallback],
+      observerOrCallback: Null,
       options: RefetchOptions
     ): Disposable = js.native
     def refetch(
       refetchVariables: Variables,
       renderVariables: Variables,
-      observerOrCallback: Null,
+      observerOrCallback: Unit,
       options: RefetchOptions
     ): Disposable = js.native
     def refetch(refetchVariables: Variables, renderVariables: Variables, observerOrCallback: ObserverOrCallback): Disposable = js.native
+    def refetch(
+      refetchVariables: Variables,
+      renderVariables: Variables,
+      observerOrCallback: ObserverOrCallback,
+      options: RefetchOptions
+    ): Disposable = js.native
   }
 }

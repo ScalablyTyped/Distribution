@@ -7,27 +7,26 @@ import typings.awsSdkClientKmsBrowser.generateDataKeyWithoutPlaintextExceptionsU
 import typings.awsSdkClientKmsBrowser.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKeyUnavailableExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KeyUnavailableExceptionDetails> * / any */ @js.native
-  trait KeyUnavailableException
-    extends DecryptExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KeyUnavailableExceptionDetails> * / any */ trait KeyUnavailableException
+    extends StObject
+       with DecryptExceptionsUnion
        with EncryptExceptionsUnion
        with GenerateDataKeyExceptionsUnion
        with GenerateDataKeyWithoutPlaintextExceptionsUnion
        with ReEncryptExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KeyUnavailableException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KeyUnavailableException
   }
   object KeyUnavailableException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.KeyUnavailableException): KeyUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KeyUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "KeyUnavailableException")
       __obj.asInstanceOf[KeyUnavailableException]
     }
     
@@ -39,13 +38,12 @@ object typesKeyUnavailableExceptionMod {
     }
   }
   
-  @js.native
   trait KeyUnavailableExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KeyUnavailableExceptionDetails {
     

@@ -12,28 +12,26 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<react-calendar-timeline.react-calendar-timeline.ItemRendererGetItemPropsReturnType, 'key' | 'ref'>> */
-@js.native
 trait GetItemsProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var onContextMenu: js.UndefOr[ReactEventHandler[Element]] = js.native
+  var onContextMenu: js.UndefOr[ReactEventHandler[Element]] = js.undefined
   
-  var onDoubleClick: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onDoubleClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[Element]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[Element]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[Element]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[Element]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[Element]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[Element]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object GetItemsProps {
   

@@ -7,27 +7,25 @@ import typings.react.mod.ReactNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimezonePickerProps extends StObject {
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var mapLabels: js.UndefOr[js.Function1[/* args */ Option, ReactNode]] = js.native
+  var mapLabels: js.UndefOr[js.Function1[/* args */ Option, ReactNode]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* value */ Id, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* value */ Id, js.Any]] = js.undefined
   
-  var overrides: js.UndefOr[Select] = js.native
+  var overrides: js.UndefOr[Select] = js.undefined
   
-  var positive: js.UndefOr[Boolean] = js.native
+  var positive: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TimezonePickerProps {
   
@@ -65,7 +63,7 @@ object TimezonePickerProps {
     def setMapLabelsUndefined: Self = StObject.set(x, "mapLabels", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* value */ Id => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* value */ Id => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

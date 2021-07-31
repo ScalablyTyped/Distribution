@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.playbackEngineTypesMod.IPlaybackEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EngineIPlaybackEngine extends StObject {
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
 }
 object EngineIPlaybackEngine {
   

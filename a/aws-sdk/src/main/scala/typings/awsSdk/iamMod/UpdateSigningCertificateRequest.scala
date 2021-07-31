@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSigningCertificateRequest extends StObject {
   
   /**
     * The ID of the signing certificate you want to update. This parameter allows (through its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
     */
-  var CertificateId: certificateIdType = js.native
+  var CertificateId: certificateIdType
   
   /**
     *  The status you want to assign to the certificate. Active means that the certificate can be used for API calls to AWS Inactive means that the certificate cannot be used.
     */
-  var Status: statusType = js.native
+  var Status: statusType
   
   /**
     * The name of the IAM user the signing certificate belongs to. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
-  var UserName: js.UndefOr[existingUserNameType] = js.native
+  var UserName: js.UndefOr[existingUserNameType] = js.undefined
 }
 object UpdateSigningCertificateRequest {
   

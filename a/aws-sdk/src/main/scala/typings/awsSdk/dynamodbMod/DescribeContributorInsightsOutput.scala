@@ -2,41 +2,39 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContributorInsightsOutput extends StObject {
   
   /**
     * List of names of the associated Alpine rules.
     */
-  var ContributorInsightsRuleList: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsRuleList] = js.native
+  var ContributorInsightsRuleList: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsRuleList] = js.undefined
   
   /**
     * Current Status contributor insights.
     */
-  var ContributorInsightsStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsStatus] = js.native
+  var ContributorInsightsStatus: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsStatus] = js.undefined
   
   /**
     * Returns information about the last failure that encountered. The most common exceptions for a FAILED status are:   LimitExceededException - Per-account Amazon CloudWatch Contributor Insights rule limit reached. Please disable Contributor Insights for other tables/indexes OR disable Contributor Insights rules before retrying.   AccessDeniedException - Amazon CloudWatch Contributor Insights rules cannot be modified due to insufficient permissions.   AccessDeniedException - Failed to create service-linked role for Contributor Insights due to insufficient permissions.   InternalServerError - Failed to create Amazon CloudWatch Contributor Insights rules. Please retry request.  
     */
-  var FailureException: js.UndefOr[typings.awsSdk.dynamodbMod.FailureException] = js.native
+  var FailureException: js.UndefOr[typings.awsSdk.dynamodbMod.FailureException] = js.undefined
   
   /**
     * The name of the global secondary index being described.
     */
-  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.native
+  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.undefined
   
   /**
     * Timestamp of the last time the status was changed.
     */
-  var LastUpdateDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.LastUpdateDateTime] = js.native
+  var LastUpdateDateTime: js.UndefOr[typings.awsSdk.dynamodbMod.LastUpdateDateTime] = js.undefined
   
   /**
     * The name of the table being described.
     */
-  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.native
+  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.undefined
 }
 object DescribeContributorInsightsOutput {
   

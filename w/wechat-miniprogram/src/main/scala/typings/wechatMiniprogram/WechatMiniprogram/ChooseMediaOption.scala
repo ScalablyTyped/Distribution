@@ -8,10 +8,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.image
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseMediaOption extends StObject {
   
   /** 仅在 sourceType 为 camera 时生效，使用前置或后置摄像头
@@ -19,39 +17,39 @@ trait ChooseMediaOption extends StObject {
     * 可选值：
     * - 'back': 使用后置摄像头;
     * - 'front': 使用前置摄像头; */
-  var camera: js.UndefOr[back | front] = js.native
+  var camera: js.UndefOr[back | front] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ChooseMediaCompleteCallback] = js.native
+  var complete: js.UndefOr[ChooseMediaCompleteCallback] = js.undefined
   
   /** 最多可以选择的文件个数 */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ChooseMediaFailCallback] = js.native
+  var fail: js.UndefOr[ChooseMediaFailCallback] = js.undefined
   
   /** 拍摄视频最长拍摄时间，单位秒。时间范围为 3s 至 30s 之间 */
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
   /** 文件类型
     *
     * 可选值：
     * - 'image': 只能拍摄图片或从相册选择图片;
     * - 'video': 只能拍摄视频或从相册选择视频; */
-  var mediaType: js.UndefOr[js.Array[image | video]] = js.native
+  var mediaType: js.UndefOr[js.Array[image | video]] = js.undefined
   
   /** 仅对 mediaType 为 image 时有效，是否压缩所选文件 */
-  var sizeType: js.UndefOr[js.Array[String]] = js.native
+  var sizeType: js.UndefOr[js.Array[String]] = js.undefined
   
   /** 图片和视频选择的来源
     *
     * 可选值：
     * - 'album': 从相册选择;
     * - 'camera': 使用相机拍摄; */
-  var sourceType: js.UndefOr[js.Array[album | camera]] = js.native
+  var sourceType: js.UndefOr[js.Array[album | camera]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ChooseMediaSuccessCallback] = js.native
+  var success: js.UndefOr[ChooseMediaSuccessCallback] = js.undefined
 }
 object ChooseMediaOption {
   

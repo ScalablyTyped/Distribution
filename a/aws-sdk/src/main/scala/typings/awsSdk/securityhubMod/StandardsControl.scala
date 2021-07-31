@@ -2,61 +2,59 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardsControl extends StObject {
   
   /**
     * The identifier of the security standard control.
     */
-  var ControlId: js.UndefOr[NonEmptyString] = js.native
+  var ControlId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The current status of the security standard control. Indicates whether the control is enabled or disabled. Security Hub does not check against disabled controls.
     */
-  var ControlStatus: js.UndefOr[typings.awsSdk.securityhubMod.ControlStatus] = js.native
+  var ControlStatus: js.UndefOr[typings.awsSdk.securityhubMod.ControlStatus] = js.undefined
   
   /**
     * The date and time that the status of the security standard control was most recently updated.
     */
-  var ControlStatusUpdatedAt: js.UndefOr[Timestamp] = js.native
+  var ControlStatusUpdatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The longer description of the security standard control. Provides information about what the control is checking for.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The reason provided for the most recent change in status for the control.
     */
-  var DisabledReason: js.UndefOr[NonEmptyString] = js.native
+  var DisabledReason: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of requirements that are related to this control.
     */
-  var RelatedRequirements: js.UndefOr[RelatedRequirementsList] = js.native
+  var RelatedRequirements: js.UndefOr[RelatedRequirementsList] = js.undefined
   
   /**
     * A link to remediation information for the control in the Security Hub user documentation.
     */
-  var RemediationUrl: js.UndefOr[NonEmptyString] = js.native
+  var RemediationUrl: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The severity of findings generated from this security standard control. The finding severity is based on an assessment of how easy it would be to compromise AWS resources if the issue is detected.
     */
-  var SeverityRating: js.UndefOr[typings.awsSdk.securityhubMod.SeverityRating] = js.native
+  var SeverityRating: js.UndefOr[typings.awsSdk.securityhubMod.SeverityRating] = js.undefined
   
   /**
     * The ARN of the security standard control.
     */
-  var StandardsControlArn: js.UndefOr[NonEmptyString] = js.native
+  var StandardsControlArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The title of the security standard control.
     */
-  var Title: js.UndefOr[NonEmptyString] = js.native
+  var Title: js.UndefOr[NonEmptyString] = js.undefined
 }
 object StandardsControl {
   

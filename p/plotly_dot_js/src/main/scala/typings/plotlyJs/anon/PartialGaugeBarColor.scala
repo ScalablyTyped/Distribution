@@ -4,18 +4,16 @@ import typings.plotlyJs.mod.GaugeLine
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.GaugeBar> */
-@js.native
 trait PartialGaugeBarColor extends StObject {
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var line: js.UndefOr[Partial[GaugeLine]] = js.native
+  var line: js.UndefOr[Partial[GaugeLine]] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
 }
 object PartialGaugeBarColor {
   

@@ -94,17 +94,17 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultipleTokenIndenter extends IndentationTrackingWalker {
+trait MultipleTokenIndenter
+  extends StObject
+     with IndentationTrackingWalker {
   
-  var _edits: js.Any = js.native
+  var _edits: js.Any
   
-  def edits(): js.Array[TextEditInfo] = js.native
+  def edits(): js.Array[TextEditInfo]
   
-  def recordEdit(position: Double, length: Double, replaceWith: String): Unit = js.native
+  def recordEdit(position: Double, length: Double, replaceWith: String): Unit
   
   /* private */ def recordIndentationEditsForMultiLineComment(
     trivia: js.Any,
@@ -112,20 +112,20 @@ trait MultipleTokenIndenter extends IndentationTrackingWalker {
     indentationString: js.Any,
     leadingWhiteSpace: js.Any,
     firstLineAlreadyIndented: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
   /* private */ def recordIndentationEditsForSegment(
     segment: js.Any,
     fullStart: js.Any,
     indentationColumns: js.Any,
     whiteSpaceColumnsInFirstSegment: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
-  /* private */ def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+  /* private */ def recordIndentationEditsForSingleLineOrSkippedText(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any
   
-  /* private */ def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any = js.native
+  /* private */ def recordIndentationEditsForToken(token: js.Any, indentationString: js.Any, commentIndentationString: js.Any): js.Any
   
-  /* private */ def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any = js.native
+  /* private */ def recordIndentationEditsForWhitespace(trivia: js.Any, fullStart: js.Any, indentationString: js.Any): js.Any
 }
 object MultipleTokenIndenter {
   

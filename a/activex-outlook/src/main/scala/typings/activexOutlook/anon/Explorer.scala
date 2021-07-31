@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explorer extends StObject {
   
-  val Explorer: typings.activexOutlook.Outlook.Explorer = js.native
+  val Explorer: typings.activexOutlook.Outlook.Explorer
 }
 object Explorer {
   

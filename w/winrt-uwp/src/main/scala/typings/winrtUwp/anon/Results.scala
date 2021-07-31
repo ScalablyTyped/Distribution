@@ -4,15 +4,13 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.Numerics.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Results extends StObject {
   
-  /** A set of coordinates, relative to the coordinate system of the camera device and with correlated depth values. */ var results: Vector3 = js.native
+  /** A set of coordinates, relative to the coordinate system of the camera device and with correlated depth values. */ var results: Vector3
   
-  /** This method returns asynchronously. */ var returnValue: IPromiseWithIAsyncAction = js.native
+  /** This method returns asynchronously. */ var returnValue: IPromiseWithIAsyncAction
 }
 object Results {
   

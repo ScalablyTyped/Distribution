@@ -4,23 +4,22 @@ import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[Tooltip] {
   
-  var label: ReactNode = js.native
+  var label: ReactNode
   
-  var large: js.UndefOr[Boolean] = js.native
+  var large: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TooltipProps {
   

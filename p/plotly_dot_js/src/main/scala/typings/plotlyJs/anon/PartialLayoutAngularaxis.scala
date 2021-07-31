@@ -30,184 +30,182 @@ import typings.plotlyJs.plotlyJsStrings.y
 import typings.plotlyJs.plotlyJsStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Layout> */
-@js.native
 trait PartialLayoutAngularaxis extends StObject {
   
-  var angularaxis: js.UndefOr[js.Object] = js.native
+  var angularaxis: js.UndefOr[js.Object] = js.undefined
   
-  var annotations: js.UndefOr[js.Array[PartialAnnotationsArrowcolor]] = js.native
+  var annotations: js.UndefOr[js.Array[PartialAnnotationsArrowcolor]] = js.undefined
   
-  var autosize: js.UndefOr[Boolean] = js.native
+  var autosize: js.UndefOr[Boolean] = js.undefined
   
-  var bargap: js.UndefOr[Double] = js.native
+  var bargap: js.UndefOr[Double] = js.undefined
   
-  var bargroupgap: js.UndefOr[Double] = js.native
+  var bargroupgap: js.UndefOr[Double] = js.undefined
   
-  var barmode: js.UndefOr[stack | group | overlay | relative] = js.native
+  var barmode: js.UndefOr[stack | group | overlay | relative] = js.undefined
   
-  var barnorm: js.UndefOr[_empty | fraction | percent] = js.native
+  var barnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
-  var calendar: js.UndefOr[Calendar] = js.native
+  var calendar: js.UndefOr[Calendar] = js.undefined
   
-  var colorway: js.UndefOr[js.Array[String]] = js.native
+  var colorway: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dragmode: js.UndefOr[zoom | pan | select | lasso | orbit | turntable | `false`] = js.native
+  var dragmode: js.UndefOr[zoom | pan | select | lasso | orbit | turntable | `false`] = js.undefined
   
-  var font: js.UndefOr[PartialFont] = js.native
+  var font: js.UndefOr[PartialFont] = js.undefined
   
-  var geo: js.UndefOr[js.Object] = js.native
+  var geo: js.UndefOr[js.Object] = js.undefined
   
-  var grid: js.UndefOr[PartialrowsnumberroworderColumns] = js.native
+  var grid: js.UndefOr[PartialrowsnumberroworderColumns] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hiddenlabels: js.UndefOr[js.Array[String]] = js.native
+  var hiddenlabels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var hidesources: js.UndefOr[Boolean] = js.native
+  var hidesources: js.UndefOr[Boolean] = js.undefined
   
-  var hoverdistance: js.UndefOr[Double] = js.native
+  var hoverdistance: js.UndefOr[Double] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.native
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   
-  var hovermode: js.UndefOr[closest | x | y | (`x unified`) | (`y unified`) | `false`] = js.native
+  var hovermode: js.UndefOr[closest | x | y | (`x unified`) | (`y unified`) | `false`] = js.undefined
   
-  var images: js.UndefOr[js.Array[PartialImage]] = js.native
+  var images: js.UndefOr[js.Array[PartialImage]] = js.undefined
   
-  var legend: js.UndefOr[PartialLegendBgcolor] = js.native
+  var legend: js.UndefOr[PartialLegendBgcolor] = js.undefined
   
-  var mapbox: js.UndefOr[PartialMapboxBearing] = js.native
+  var mapbox: js.UndefOr[PartialMapboxBearing] = js.undefined
   
-  var margin: js.UndefOr[PartialMargin] = js.native
+  var margin: js.UndefOr[PartialMargin] = js.undefined
   
-  var orientation: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[Double] = js.undefined
   
-  var paper_bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var paper_bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var plot_bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var plot_bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var polar: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar2: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar2: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar3: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar3: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar4: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar4: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar5: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar5: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar6: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar6: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar7: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar7: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar8: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar8: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var polar9: js.UndefOr[PartialPolarLayoutBgcolor] = js.native
+  var polar9: js.UndefOr[PartialPolarLayoutBgcolor] = js.undefined
   
-  var radialaxis: js.UndefOr[PartialAxisCalendar] = js.native
+  var radialaxis: js.UndefOr[PartialAxisCalendar] = js.undefined
   
-  var scene: js.UndefOr[PartialSceneAspectmode] = js.native
+  var scene: js.UndefOr[PartialSceneAspectmode] = js.undefined
   
-  var selectdirection: js.UndefOr[h | v | d | any] = js.native
+  var selectdirection: js.UndefOr[h | v | d | any] = js.undefined
   
-  var separators: js.UndefOr[String] = js.native
+  var separators: js.UndefOr[String] = js.undefined
   
-  var shapes: js.UndefOr[js.Array[PartialShapeFillcolor]] = js.native
+  var shapes: js.UndefOr[js.Array[PartialShapeFillcolor]] = js.undefined
   
-  var showlegend: js.UndefOr[Boolean] = js.native
+  var showlegend: js.UndefOr[Boolean] = js.undefined
   
-  var sliders: js.UndefOr[js.Array[PartialSliderActivebgcolor]] = js.native
+  var sliders: js.UndefOr[js.Array[PartialSliderActivebgcolor]] = js.undefined
   
-  var subplot: js.UndefOr[String] = js.native
+  var subplot: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[Template] = js.native
+  var template: js.UndefOr[Template] = js.undefined
   
-  var ternary: js.UndefOr[js.Object] = js.native
+  var ternary: js.UndefOr[js.Object] = js.undefined
   
-  var title: js.UndefOr[String | PartialtextstringfontPartFont] = js.native
+  var title: js.UndefOr[String | PartialtextstringfontPartFont] = js.undefined
   
-  var titlefont: js.UndefOr[PartialFont] = js.native
+  var titlefont: js.UndefOr[PartialFont] = js.undefined
   
-  var transition: js.UndefOr[Transition] = js.native
+  var transition: js.UndefOr[Transition] = js.undefined
   
-  var updatemenus: js.UndefOr[js.Object] = js.native
+  var updatemenus: js.UndefOr[js.Object] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xaxis: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var xaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var xaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
   @JSName("xaxis.autorange")
-  var xaxisDotautorange: js.UndefOr[Boolean] = js.native
+  var xaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   
   @JSName("xaxis.range")
-  var xaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.native
+  var xaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.undefined
   
   @JSName("xaxis.range[0]")
-  var `xaxisDotrange[0]`: js.UndefOr[Datum] = js.native
+  var `xaxisDotrange[0]`: js.UndefOr[Datum] = js.undefined
   
   @JSName("xaxis.range[1]")
-  var `xaxisDotrange[1]`: js.UndefOr[Datum] = js.native
+  var `xaxisDotrange[1]`: js.UndefOr[Datum] = js.undefined
   
   @JSName("xaxis.title")
-  var xaxisDottitle: js.UndefOr[String] = js.native
+  var xaxisDottitle: js.UndefOr[String] = js.undefined
   
   @JSName("xaxis.type")
-  var xaxisDottype: js.UndefOr[AxisType] = js.native
+  var xaxisDottype: js.UndefOr[AxisType] = js.undefined
   
-  var yaxis: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis2: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis3: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis4: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis5: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis6: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis7: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis8: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
-  var yaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.native
+  var yaxis9: js.UndefOr[PartialLayoutAxisAngle] = js.undefined
   
   @JSName("yaxis.autorange")
-  var yaxisDotautorange: js.UndefOr[Boolean] = js.native
+  var yaxisDotautorange: js.UndefOr[Boolean] = js.undefined
   
   @JSName("yaxis.range")
-  var yaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.native
+  var yaxisDotrange: js.UndefOr[js.Tuple2[Datum, Datum]] = js.undefined
   
   @JSName("yaxis.range[0]")
-  var `yaxisDotrange[0]`: js.UndefOr[Datum] = js.native
+  var `yaxisDotrange[0]`: js.UndefOr[Datum] = js.undefined
   
   @JSName("yaxis.range[1]")
-  var `yaxisDotrange[1]`: js.UndefOr[Datum] = js.native
+  var `yaxisDotrange[1]`: js.UndefOr[Datum] = js.undefined
   
   @JSName("yaxis.title")
-  var yaxisDottitle: js.UndefOr[String] = js.native
+  var yaxisDottitle: js.UndefOr[String] = js.undefined
   
   @JSName("yaxis.type")
-  var yaxisDottype: js.UndefOr[AxisType] = js.native
+  var yaxisDottype: js.UndefOr[AxisType] = js.undefined
 }
 object PartialLayoutAngularaxis {
   

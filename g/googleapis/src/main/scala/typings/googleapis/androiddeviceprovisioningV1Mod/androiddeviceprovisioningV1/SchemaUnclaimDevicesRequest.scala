@@ -2,19 +2,17 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to unclaim devices asynchronously in batch.
   */
-@js.native
 trait SchemaUnclaimDevicesRequest extends StObject {
   
   /**
     * Required. The list of devices to unclaim.
     */
-  var unclaims: js.UndefOr[js.Array[SchemaPartnerUnclaim]] = js.native
+  var unclaims: js.UndefOr[js.Array[SchemaPartnerUnclaim]] = js.undefined
 }
 object SchemaUnclaimDevicesRequest {
   

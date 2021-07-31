@@ -3,7 +3,6 @@ package typings.hapiJoi.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -115,7 +114,7 @@ trait SchemaInternals extends StObject {
     * Terms of current schema.
     */
   @JSName("$_terms")
-  var $_terms: Record[String, _] = js.native
+  var $_terms: Record[String, js.Any] = js.native
   
   /**
     * Runs internal validations against given value.

@@ -3,68 +3,66 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildTrigger extends StObject {
   
   /** Contents of the build template. */
-  var build: js.UndefOr[Build] = js.native
+  var build: js.UndefOr[Build] = js.undefined
   
   /** Output only. Time when the trigger was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Human-readable description of this trigger. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** If true, the trigger will never automatically execute a build. */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** Path, from the source root, to a file whose contents is used for the template. */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /** GitHubEventsConfig describes the configuration of a trigger that creates a build whenever a GitHub event is received. Mutually exclusive with `trigger_template`. */
-  var github: js.UndefOr[GitHubEventsConfig] = js.native
+  var github: js.UndefOr[GitHubEventsConfig] = js.undefined
   
   /** Output only. Unique identifier of the trigger. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * ignored_files and included_files are file glob matches using https://golang.org/pkg/path/filepath/#Match extended with support for "**". If ignored_files and changed files are both
     * empty, then they are not used to determine whether or not to trigger a build. If ignored_files is not empty, then we ignore any files that match any of the ignored_file globs. If
     * the change has no files that are outside of the ignored_files globs, then we do not trigger a build.
     */
-  var ignoredFiles: js.UndefOr[js.Array[String]] = js.native
+  var ignoredFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If any of the files altered in the commit pass the ignored_files filter and included_files is empty, then as far as this filter is concerned, we should trigger the build. If any of
     * the files altered in the commit pass the ignored_files filter and included_files is not empty, then we make sure that at least one of those files matches a included_files glob. If
     * not, then we do not trigger a build.
     */
-  var includedFiles: js.UndefOr[js.Array[String]] = js.native
+  var includedFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User-assigned name of the trigger. Must be unique within the project. Trigger names must meet the following requirements: + They must contain only alphanumeric characters and
     * dashes. + They can be 1-64 characters long. + They must begin and end with an alphanumeric character.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Substitutions for Build resource. The keys must match the following regular expression: `^_[A-Z0-9_]+$`. */
   var substitutions: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Tags for annotation of a `BuildTrigger` */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Template describing the types of source changes to trigger a build. Branch and tag names in trigger templates are interpreted as regular expressions. Any branch or tag change that
     * matches that regular expression will trigger a build. Mutually exclusive with `github`.
     */
-  var triggerTemplate: js.UndefOr[RepoSource] = js.native
+  var triggerTemplate: js.UndefOr[RepoSource] = js.undefined
 }
 object BuildTrigger {
   
@@ -147,7 +145,7 @@ object BuildTrigger {
     def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger & TopLevel[js.Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
     @scala.inline

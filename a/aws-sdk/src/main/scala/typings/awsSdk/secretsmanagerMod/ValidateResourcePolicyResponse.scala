@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateResourcePolicyResponse extends StObject {
   
   /**
     * Returns a message stating that your Reource Policy passed validation. 
     */
-  var PolicyValidationPassed: js.UndefOr[BooleanType] = js.native
+  var PolicyValidationPassed: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * Returns an error message if your policy doesn't pass validatation.
     */
-  var ValidationErrors: js.UndefOr[ValidationErrorsType] = js.native
+  var ValidationErrors: js.UndefOr[ValidationErrorsType] = js.undefined
 }
 object ValidateResourcePolicyResponse {
   

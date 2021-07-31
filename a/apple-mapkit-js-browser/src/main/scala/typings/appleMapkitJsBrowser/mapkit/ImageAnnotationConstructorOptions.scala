@@ -3,19 +3,19 @@ package typings.appleMapkitJsBrowser.mapkit
 import typings.appleMapkitJsBrowser.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object containing options for initializing an image annotation.
   */
-@js.native
-trait ImageAnnotationConstructorOptions extends AnnotationConstructorOptions {
+trait ImageAnnotationConstructorOptions
+  extends StObject
+     with AnnotationConstructorOptions {
   
   /**
     * An object containing URLs for the image assets in multiple resolutions.
     */
-  var url: `1` = js.native
+  var url: `1`
 }
 object ImageAnnotationConstructorOptions {
   

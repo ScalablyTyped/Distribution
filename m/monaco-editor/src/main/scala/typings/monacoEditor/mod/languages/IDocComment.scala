@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDocComment extends StObject {
   
   /**
     * The string that appears on the last line and closes the doc comment (e.g. ' * /').
     */
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
   /**
     * The string that starts a doc comment (e.g. '/ **')
     */
-  var open: String = js.native
+  var open: String
 }
 object IDocComment {
   

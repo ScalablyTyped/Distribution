@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSearchApplicationsResponse extends StObject {
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var searchApplications: js.UndefOr[js.Array[SearchApplication]] = js.native
+  var searchApplications: js.UndefOr[js.Array[SearchApplication]] = js.undefined
 }
 object ListSearchApplicationsResponse {
   

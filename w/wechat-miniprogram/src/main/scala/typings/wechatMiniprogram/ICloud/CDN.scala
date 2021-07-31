@@ -3,15 +3,13 @@ package typings.wechatMiniprogram.ICloud
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // === end ===
 // === API: CDN ===
-@js.native
 trait CDN extends StObject {
   
-  var target: String | ArrayBuffer | ICDNFilePathSpec = js.native
+  var target: String | ArrayBuffer | ICDNFilePathSpec
 }
 object CDN {
   

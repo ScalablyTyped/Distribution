@@ -5,21 +5,19 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.UI.Popups.Placement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies options for user interface elements such as the application picker that can be invoked by this API. */
-@js.native
 trait LauncherUIOptions extends StObject {
   
   /** Gets or sets the point on the screen where the user opened a file or URI. */
-  var invocationPoint: Point = js.native
+  var invocationPoint: Point
   
   /** Gets or sets the preferred placement of the Open With and Warning dialog boxes when starting a default app. */
-  var preferredPlacement: Placement = js.native
+  var preferredPlacement: Placement
   
   /** Gets or sets the selection rectangle on the screen where the user opened a file or URI. */
-  var selectionRect: Rect = js.native
+  var selectionRect: Rect
 }
 object LauncherUIOptions {
   

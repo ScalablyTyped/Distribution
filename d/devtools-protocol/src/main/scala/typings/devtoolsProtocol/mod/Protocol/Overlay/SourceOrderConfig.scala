@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceOrderConfig extends StObject {
   
   /**
     * the color to outline the child elements in.
     */
-  var childOutlineColor: RGBA = js.native
+  var childOutlineColor: RGBA
   
   /**
     * the color to outline the givent element in.
     */
-  var parentOutlineColor: RGBA = js.native
+  var parentOutlineColor: RGBA
 }
 object SourceOrderConfig {
   

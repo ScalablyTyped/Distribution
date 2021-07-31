@@ -2,21 +2,19 @@ package typings.winjs.WinJS.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Properties
 //#region Interfaces
-@js.native
 trait ILogOptions extends StObject {
   
-  var action: js.UndefOr[js.Function3[/* message */ String, /* tags */ String, /* type */ String, Unit]] = js.native
+  var action: js.UndefOr[js.Function3[/* message */ String, /* tags */ String, /* type */ String, Unit]] = js.undefined
   
-  var excludeTags: js.UndefOr[String] = js.native
+  var excludeTags: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[String] = js.native
+  var tags: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ILogOptions {
   

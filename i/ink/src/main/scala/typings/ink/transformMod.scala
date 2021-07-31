@@ -5,7 +5,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformMod extends Shortcut {
@@ -20,15 +19,14 @@ object transformMod extends Shortcut {
   @js.native
   val default: FC[Props] = js.native
   
-  @js.native
   trait Props extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Function which transforms children output. It accepts children and must return transformed children too.
       */
-    def transform(children: String): String = js.native
+    def transform(children: String): String
   }
   object Props {
     

@@ -2,12 +2,13 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "LngLat")
 @js.native
-class LngLat protected () extends _LngLatLike {
+class LngLat protected ()
+  extends StObject
+     with _LngLatLike {
   def this(lng: Double, lat: Double) = this()
   
   /** Returns the approximate distance between a pair of coordinates in meters
@@ -29,7 +30,10 @@ class LngLat protected () extends _LngLatLike {
 /* static members */
 object LngLat {
   
-  @JSImport("mapbox-gl", "LngLat.convert")
+  @JSImport("mapbox-gl", "LngLat")
   @js.native
-  def convert(input: LngLatLike): LngLat = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convert(input: LngLatLike): LngLat = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLat]
 }

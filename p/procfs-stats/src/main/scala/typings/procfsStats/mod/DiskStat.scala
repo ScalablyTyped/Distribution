@@ -2,39 +2,37 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskStat extends StObject {
   
-  var device: String = js.native
+  var device: String
   
-  var device_number: String = js.native
+  var device_number: String
   
-  var device_number_minor: String = js.native
+  var device_number_minor: String
   
-  var ios_pending: String = js.native
+  var ios_pending: String
   
-  var ms_io: String = js.native
+  var ms_io: String
   
-  var ms_reading: String = js.native
+  var ms_reading: String
   
-  var ms_weighted_io: String = js.native
+  var ms_weighted_io: String
   
-  var ms_writing: String = js.native
+  var ms_writing: String
   
-  var reads_completed: String = js.native
+  var reads_completed: String
   
-  var reads_merged: String = js.native
+  var reads_merged: String
   
-  var sectors_read: String = js.native
+  var sectors_read: String
   
-  var sectors_written: String = js.native
+  var sectors_written: String
   
-  var writes_completed: String = js.native
+  var writes_completed: String
   
-  var writes_merged: String = js.native
+  var writes_merged: String
 }
 object DiskStat {
   

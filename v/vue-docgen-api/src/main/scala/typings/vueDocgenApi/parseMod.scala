@@ -9,86 +9,84 @@ import typings.vueDocgenApi.vueDocgenApiStrings.ts
 import typings.vueInbrowserCompilerUtils.typesMod.Descriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("vue-docgen-api/dist/parse", "parseFile")
+  @JSImport("vue-docgen-api/dist/parse", JSImport.Namespace)
   @js.native
-  def parseFile(opt: ParseOptions): js.Promise[js.Array[default]] = js.native
-  @JSImport("vue-docgen-api/dist/parse", "parseFile")
-  @js.native
-  def parseFile(opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/parse", "parseSource")
-  @js.native
-  def parseSource(source: String, opt: ParseOptions): js.Promise[js.Array[default]] = js.native
-  @JSImport("vue-docgen-api/dist/parse", "parseSource")
-  @js.native
-  def parseSource(source: String, opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = js.native
+  @scala.inline
+  def parseFile(opt: ParseOptions): js.Promise[js.Array[default]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[default]]]
+  @scala.inline
+  def parseFile(opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
   
-  @js.native
+  @scala.inline
+  def parseSource(source: String, opt: ParseOptions): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  @scala.inline
+  def parseSource(source: String, opt: ParseOptions, documentation: default): js.Promise[js.Array[default]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSource")(source.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[default]]]
+  
   trait DocGenOptions extends StObject {
     
     /**
       * Handlers that will be added at the end of the script analysis
       */
-    var addScriptHandlers: js.UndefOr[js.Array[Handler]] = js.native
+    var addScriptHandlers: js.UndefOr[js.Array[Handler]] = js.undefined
     
     /**
       * Handlers that will be added at the end of the template analysis
       */
-    var addTemplateHandlers: js.UndefOr[js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]] = js.native
+    var addTemplateHandlers: js.UndefOr[js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]] = js.undefined
     
     /**
       * What alias should be replaced in requires and imports
       */
-    var alias: js.UndefOr[StringDictionary[String]] = js.native
+    var alias: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Does parsed components use jsx?
       * @default true - if you do not disable it, babel will fail with `(<any>window).$`
       */
-    var jsx: js.UndefOr[Boolean] = js.native
+    var jsx: js.UndefOr[Boolean] = js.undefined
     
     /**
       * What directories should be searched when resolving modules
       */
-    var modules: js.UndefOr[js.Array[String]] = js.native
+    var modules: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Which exported variables should be looked at
       * @default undefined - means treat all exports
       */
-    var nameFilter: js.UndefOr[js.Array[String]] = js.native
+    var nameFilter: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * all pug options passed to the pug compiler if you use it
       */
-    var pugOptions: js.UndefOr[Options] = js.native
+    var pugOptions: js.UndefOr[Options] = js.undefined
     
     /**
       * Handlers that will replace the main script analysis
       */
-    var scriptHandlers: js.UndefOr[js.Array[Handler]] = js.native
+    var scriptHandlers: js.UndefOr[js.Array[Handler]] = js.undefined
     
     /**
       * Handlers that will replace the extend and mixins analyzer
       * They will be run before the main component analysis to avoid bleeding onto the main
       */
-    var scriptPreHandlers: js.UndefOr[js.Array[Handler]] = js.native
+    var scriptPreHandlers: js.UndefOr[js.Array[Handler]] = js.undefined
     
     /**
       * Handlers that will replace the template analysis
       */
-    var templateHandlers: js.UndefOr[js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]] = js.native
+    var templateHandlers: js.UndefOr[js.Array[typings.vueDocgenApi.parseTemplateMod.Handler]] = js.undefined
     
     /**
       * Should extended components be parsed?
       * @default `fullFilePath=>!/[\\/]node_modules[\\/]/.test(fullFilePath)`
       */
-    var validExtends: js.UndefOr[js.Function1[/* fullFilePath */ String, Boolean]] = js.native
+    var validExtends: js.UndefOr[js.Function1[/* fullFilePath */ String, Boolean]] = js.undefined
   }
   object DocGenOptions {
     
@@ -190,21 +188,21 @@ object parseMod {
     }
   }
   
-  @js.native
   trait ParseOptions
-    extends DocGenOptions
+    extends StObject
+       with DocGenOptions
        with Descriptor {
     
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * In what language is the component written
       * @default undefined - let the system decide
       */
-    var lang: js.UndefOr[ts | js_] = js.native
+    var lang: js.UndefOr[ts | js_] = js.undefined
     
     @JSName("validExtends")
-    def validExtends_MParseOptions(fullFilePath: String): Boolean = js.native
+    def validExtends_MParseOptions(fullFilePath: String): Boolean
   }
   object ParseOptions {
     

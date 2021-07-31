@@ -3,23 +3,21 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxButtonOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buttons extends StObject {
   
-  var buttons: js.UndefOr[js.Array[dxButtonOptions]] = js.native
+  var buttons: js.UndefOr[js.Array[dxButtonOptions]] = js.undefined
   
-  var dragEnabled: js.UndefOr[Boolean] = js.native
+  var dragEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var messageHtml: js.UndefOr[String] = js.native
+  var messageHtml: js.UndefOr[String] = js.undefined
   
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Buttons {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datapoint extends StObject {
   
   /**
     * The average of the metric values that correspond to the data point.
     */
-  var Average: js.UndefOr[DatapointValue] = js.native
+  var Average: js.UndefOr[DatapointValue] = js.undefined
   
   /**
     * The percentile statistic for the data point.
     */
-  var ExtendedStatistics: js.UndefOr[DatapointValueMap] = js.native
+  var ExtendedStatistics: js.UndefOr[DatapointValueMap] = js.undefined
   
   /**
     * The maximum metric value for the data point.
     */
-  var Maximum: js.UndefOr[DatapointValue] = js.native
+  var Maximum: js.UndefOr[DatapointValue] = js.undefined
   
   /**
     * The minimum metric value for the data point.
     */
-  var Minimum: js.UndefOr[DatapointValue] = js.native
+  var Minimum: js.UndefOr[DatapointValue] = js.undefined
   
   /**
     * The number of metric values that contributed to the aggregate value of this data point.
     */
-  var SampleCount: js.UndefOr[DatapointValue] = js.native
+  var SampleCount: js.UndefOr[DatapointValue] = js.undefined
   
   /**
     * The sum of the metric values for the data point.
     */
-  var Sum: js.UndefOr[DatapointValue] = js.native
+  var Sum: js.UndefOr[DatapointValue] = js.undefined
   
   /**
     * The time stamp used for the data point.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.undefined
   
   /**
     * The standard unit for the data point.
     */
-  var Unit: js.UndefOr[StandardUnit] = js.native
+  var Unit: js.UndefOr[StandardUnit] = js.undefined
 }
 object Datapoint {
   

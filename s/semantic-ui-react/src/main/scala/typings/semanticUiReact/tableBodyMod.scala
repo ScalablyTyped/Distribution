@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableBodyMod extends Shortcut {
@@ -15,17 +14,16 @@ object tableBodyMod extends Shortcut {
   @js.native
   val default: StatelessComponent[TableBodyProps] = js.native
   
-  @js.native
   trait StrictTableBodyProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object StrictTableBodyProps {
     
@@ -58,9 +56,9 @@ object tableBodyMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TableBodyProps
-    extends StrictTableBodyProps
+    extends StObject
+       with StrictTableBodyProps
        with /* key */ StringDictionary[js.Any]
   object TableBodyProps {
     

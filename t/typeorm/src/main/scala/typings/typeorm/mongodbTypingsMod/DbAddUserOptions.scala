@@ -2,36 +2,34 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbAddUserOptions extends StObject {
   
   /**
     * Custom data associated with the user (only Mongodb 2.6 or higher).
     */
-  var customData: js.UndefOr[js.Object] = js.native
+  var customData: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Roles associated with the created user (only Mongodb 2.6 or higher).
     */
-  var roles: js.UndefOr[js.Array[js.Object]] = js.native
+  var roles: js.UndefOr[js.Array[js.Object]] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[String | scala.Double] = js.native
+  var w: js.UndefOr[String | scala.Double] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object DbAddUserOptions {
   

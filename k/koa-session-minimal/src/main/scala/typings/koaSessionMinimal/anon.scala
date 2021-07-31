@@ -4,28 +4,26 @@ import typings.cookies.mod.IOptions
 import typings.koa.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cookie extends StObject {
     
     /**
       * cookie options
       */
-    var cookie: js.UndefOr[IOptions | (js.Function1[/* ctx */ js.UndefOr[Context], IOptions])] = js.native
+    var cookie: js.UndefOr[IOptions | (js.Function1[/* ctx */ js.UndefOr[Context], IOptions])] = js.undefined
     
     /**
       * session cookie name and store key prefix. Default is 'koa:sess'
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * session store
       */
-    var store: js.UndefOr[js.Any] = js.native
+    var store: js.UndefOr[js.Any] = js.undefined
   }
   object Cookie {
     
@@ -61,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RegenerateId extends StObject {
     
-    def regenerateId(): Unit = js.native
+    def regenerateId(): Unit
   }
   object RegenerateId {
     

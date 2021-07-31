@@ -3,18 +3,17 @@ package typings.d3Indirections
 import typings.d3Indirections.anon.ResourceUid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An indirection that can have a resource.
   */
-@js.native
 trait ManualIndirection
-  extends IndirectionBase
+  extends StObject
+     with IndirectionBase
      with Indirection {
   
-  var manualIndirection: ResourceUid = js.native
+  var manualIndirection: ResourceUid
 }
 object ManualIndirection {
   

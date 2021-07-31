@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,32 +14,52 @@ sealed trait FilterOn extends StObject
 object FilterOn extends StObject {
   
   @js.native
-  sealed trait bottomItems extends FilterOn
+  sealed trait bottomItems
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait bottomPercent extends FilterOn
+  sealed trait bottomPercent
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait cellColor extends FilterOn
+  sealed trait cellColor
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait custom extends FilterOn
+  sealed trait custom
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait dynamic extends FilterOn
+  sealed trait dynamic
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait fontColor extends FilterOn
+  sealed trait fontColor
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait icon extends FilterOn
+  sealed trait icon
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait topItems extends FilterOn
+  sealed trait topItems
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait topPercent extends FilterOn
+  sealed trait topPercent
+    extends StObject
+       with FilterOn
   
   @js.native
-  sealed trait values extends FilterOn
+  sealed trait values
+    extends StObject
+       with FilterOn
 }

@@ -2,21 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapGridViewColumn extends StObject {
   
-  val fieldName: String = js.native
+  val fieldName: String
   
-  val index: Double = js.native
+  val index: Double
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  val name: String = js.native
+  val name: String
   
-  val visible: Boolean = js.native
+  val visible: Boolean
 }
 object BootstrapGridViewColumn {
   

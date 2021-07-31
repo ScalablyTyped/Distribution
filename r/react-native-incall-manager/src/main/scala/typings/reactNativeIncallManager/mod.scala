@@ -3,7 +3,6 @@ package typings.reactNativeIncallManager
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,7 @@ object mod extends Shortcut {
     
     def getAudioUri(audioType: String, fileType: String): js.Any = js.native
     
-    def getIsWiredHeadsetPluggedIn(): js.Promise[_] = js.native
+    def getIsWiredHeadsetPluggedIn(): js.Promise[js.Any] = js.native
     
     def pokeScreen(): Unit = js.native
     def pokeScreen(_timeout: Double): Unit = js.native
@@ -33,9 +32,9 @@ object mod extends Shortcut {
     def requestRecordPermission(): js.Promise[String] = js.native
     
     def setFlashOn(): Double = js.native
-    def setFlashOn(enable: js.UndefOr[scala.Nothing], brightness: Double): Double = js.native
     def setFlashOn(enable: Boolean): Double = js.native
     def setFlashOn(enable: Boolean, brightness: Double): Double = js.native
+    def setFlashOn(enable: Unit, brightness: Double): Double = js.native
     
     def setForceSpeakerphoneOn(): Unit = js.native
     def setForceSpeakerphoneOn(_flag: Boolean): Unit = js.native
@@ -56,60 +55,21 @@ object mod extends Shortcut {
     def startRingback(ringback: String): Unit = js.native
     
     def startRingtone(): Unit = js.native
-    def startRingtone(
-      ringtone: js.UndefOr[scala.Nothing],
-      vibrate_pattern: js.UndefOr[scala.Nothing],
-      ios_category: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(
-      ringtone: js.UndefOr[scala.Nothing],
-      vibrate_pattern: js.UndefOr[scala.Nothing],
-      ios_category: String
-    ): Unit = js.native
-    def startRingtone(
-      ringtone: js.UndefOr[scala.Nothing],
-      vibrate_pattern: js.UndefOr[scala.Nothing],
-      ios_category: String,
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(ringtone: js.UndefOr[scala.Nothing], vibrate_pattern: js.Array[_]): Unit = js.native
-    def startRingtone(
-      ringtone: js.UndefOr[scala.Nothing],
-      vibrate_pattern: js.Array[_],
-      ios_category: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(ringtone: js.UndefOr[scala.Nothing], vibrate_pattern: js.Array[_], ios_category: String): Unit = js.native
-    def startRingtone(
-      ringtone: js.UndefOr[scala.Nothing],
-      vibrate_pattern: js.Array[_],
-      ios_category: String,
-      seconds: Double
-    ): Unit = js.native
     def startRingtone(ringtone: String): Unit = js.native
-    def startRingtone(
-      ringtone: String,
-      vibrate_pattern: js.UndefOr[scala.Nothing],
-      ios_category: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.UndefOr[scala.Nothing], ios_category: String): Unit = js.native
-    def startRingtone(
-      ringtone: String,
-      vibrate_pattern: js.UndefOr[scala.Nothing],
-      ios_category: String,
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[_]): Unit = js.native
-    def startRingtone(
-      ringtone: String,
-      vibrate_pattern: js.Array[_],
-      ios_category: js.UndefOr[scala.Nothing],
-      seconds: Double
-    ): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[_], ios_category: String): Unit = js.native
-    def startRingtone(ringtone: String, vibrate_pattern: js.Array[_], ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any]): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: String): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: js.Array[js.Any], ios_category: Unit, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: String): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: String, vibrate_pattern: Unit, ios_category: Unit, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any]): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: String): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: js.Array[js.Any], ios_category: Unit, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: String): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: String, seconds: Double): Unit = js.native
+    def startRingtone(ringtone: Unit, vibrate_pattern: Unit, ios_category: Unit, seconds: Double): Unit = js.native
     
     def stop(): Unit = js.native
     def stop(setup: StopSetup): Unit = js.native
@@ -123,14 +83,13 @@ object mod extends Shortcut {
     def turnScreenOn(): Unit = js.native
   }
   
-  @js.native
   trait StartSetup extends StObject {
     
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var ringback: js.UndefOr[String] = js.native
+    var ringback: js.UndefOr[String] = js.undefined
   }
   object StartSetup {
     
@@ -163,10 +122,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait StopSetup extends StObject {
     
-    var busytone: js.UndefOr[String] = js.native
+    var busytone: js.UndefOr[String] = js.undefined
   }
   object StopSetup {
     

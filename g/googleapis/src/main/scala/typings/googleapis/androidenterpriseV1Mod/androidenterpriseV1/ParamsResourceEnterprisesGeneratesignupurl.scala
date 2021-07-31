@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEnterprisesGeneratesignupurl extends StandardParameters {
+trait ParamsResourceEnterprisesGeneratesignupurl
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The callback URL to which the Admin will be redirected after successfully
@@ -26,7 +26,7 @@ trait ParamsResourceEnterprisesGeneratesignupurl extends StandardParameters {
     * a new URL formatted, i.e. there may be some minor formatting changes and,
     * more importantly, the URL must be well-formed so that it can be parsed.
     */
-  var callbackUrl: js.UndefOr[String] = js.native
+  var callbackUrl: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEnterprisesGeneratesignupurl {
   

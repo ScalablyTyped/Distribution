@@ -2,41 +2,39 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVirtualInterfaceTestHistoryRequest extends StObject {
   
   /**
     * The BGP peers that were placed in the DOWN state during the virtual interface failover test.
     */
-  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.native
+  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
     */
-  var maxResults: js.UndefOr[MaxResultSetSize] = js.native
+  var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The status of the virtual interface failover test.
     */
-  var status: js.UndefOr[FailureTestHistoryStatus] = js.native
+  var status: js.UndefOr[FailureTestHistoryStatus] = js.undefined
   
   /**
     * The ID of the virtual interface failover test.
     */
-  var testId: js.UndefOr[TestId] = js.native
+  var testId: js.UndefOr[TestId] = js.undefined
   
   /**
     * The ID of the virtual interface that was tested.
     */
-  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.native
+  var virtualInterfaceId: js.UndefOr[VirtualInterfaceId] = js.undefined
 }
 object ListVirtualInterfaceTestHistoryRequest {
   

@@ -11,8 +11,8 @@ Masked <input/> React component
 | Full name          | react-maskedinput |
 | Keywords           | react, masked, input, react-component |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 1034643 |
+| # dependents       | 46 |
+| # downloads        | 925298 |
 | # stars            | 3 |
 
 ## Links

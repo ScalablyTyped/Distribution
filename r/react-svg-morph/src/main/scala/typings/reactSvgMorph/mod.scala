@@ -7,7 +7,6 @@ import typings.react.mod.ReactElement
 import typings.reactSvgMorph.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,24 +59,23 @@ object mod {
   @js.native
   val MorphTransitionResize: ComponentClass[MorphTransitionProps, ComponentState] = js.native
   
-  @js.native
   trait MorphReplaceProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* props */ js.Any, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* props */ js.Any, Double]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var rotation: js.UndefOr[String] = js.native
+    var rotation: js.UndefOr[String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MorphReplaceProps {
     
@@ -137,20 +135,19 @@ object mod {
     }
   }
   
-  @js.native
   trait MorphTransitionProps extends StObject {
     
-    var children: From = js.native
+    var children: From
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var propgress: js.UndefOr[Double] = js.native
+    var propgress: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[String] = js.native
+    var rotation: js.UndefOr[String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MorphTransitionProps {
     

@@ -3,17 +3,15 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshSpecEgressFilter extends StObject {
   
   /**
     * The egress filter type. By default, the type is `DROP_ALL`.
     * Valid values are `ALLOW_ALL` and `DROP_ALL`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object MeshSpecEgressFilter {
   

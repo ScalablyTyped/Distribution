@@ -2,15 +2,13 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fail extends StObject {
   
-  var fail: js.UndefOr[js.Function1[/* res */ Error, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ Error, Unit]] = js.undefined
   
-  var result: HitKeywords = js.native
+  var result: HitKeywords
 }
 object Fail {
   

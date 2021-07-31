@@ -3,47 +3,66 @@ package typings.pkijs
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionMod {
   
   @JSImport("pkijs/src/Extension", JSImport.Default)
   @js.native
-  class default () extends Extension {
+  class default ()
+    extends StObject
+       with Extension {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    var critical: Boolean = js.native
+    
+    /* CompleteClass */
+    var extnID: String = js.native
+    
+    /* CompleteClass */
+    var extnValue: OctetString = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/Extension", "default.defaultValues")
+    @JSImport("pkijs/src/Extension", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/Extension", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/Extension", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var critical: Boolean = js.native
+    var critical: Boolean
     
-    var extnID: String = js.native
+    var extnID: String
     
-    var extnValue: OctetString = js.native
+    var extnValue: OctetString
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var parsedValue: js.UndefOr[js.Any] = js.native
+    var parsedValue: js.UndefOr[js.Any] = js.undefined
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object Extension {
     

@@ -3,34 +3,28 @@ package typings.estree.mod
 import typings.estree.estreeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnaryExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: UnaryOperator = js.native
+  var operator: UnaryOperator
   
-  var prefix: `true` = js.native
+  var prefix: `true`
   
   @JSName("type")
-  var type_UnaryExpression: typings.estree.estreeStrings.UnaryExpression = js.native
+  var type_UnaryExpression: typings.estree.estreeStrings.UnaryExpression
 }
 object UnaryExpression {
   
   @scala.inline
-  def apply(
-    argument: Expression,
-    operator: UnaryOperator,
-    prefix: `true`,
-    `type`: typings.estree.estreeStrings.UnaryExpression
-  ): UnaryExpression = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: Expression, operator: UnaryOperator): UnaryExpression = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = true)
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression]
   }
   

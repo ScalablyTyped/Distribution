@@ -2,11 +2,11 @@ package typings.winrt.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivatedDeferral extends IActivatedDeferral
+trait ActivatedDeferral
+  extends StObject
+     with IActivatedDeferral
 object ActivatedDeferral {
   
   @scala.inline

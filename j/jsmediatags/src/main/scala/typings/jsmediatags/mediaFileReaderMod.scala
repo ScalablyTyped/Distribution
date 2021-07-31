@@ -5,22 +5,26 @@ import typings.jsmediatags.typesMod.CharsetType
 import typings.jsmediatags.typesMod.LoadCallbackType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaFileReaderMod {
   
   @JSImport("jsmediatags/build2/MediaFileReader", JSImport.Default)
   @js.native
-  class default () extends MediaFileReader {
+  class default ()
+    extends StObject
+       with MediaFileReader {
     def this(path: js.Any) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/MediaFileReader", "default.canReadFile")
+    @JSImport("jsmediatags/build2/MediaFileReader", JSImport.Default)
     @js.native
-    def canReadFile(file: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

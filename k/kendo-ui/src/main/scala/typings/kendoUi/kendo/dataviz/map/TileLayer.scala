@@ -3,14 +3,14 @@ package typings.kendoUi.kendo.dataviz.map
 import typings.kendoUi.kendo.dataviz.ui.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TileLayer extends Layer_ {
+trait TileLayer
+  extends StObject
+     with Layer_ {
   
   @JSName("options")
-  var options_TileLayer: TileLayerOptions = js.native
+  var options_TileLayer: TileLayerOptions
 }
 object TileLayer {
   

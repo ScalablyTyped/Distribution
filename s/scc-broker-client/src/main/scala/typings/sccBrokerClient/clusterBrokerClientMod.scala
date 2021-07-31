@@ -22,7 +22,6 @@ import typings.sccBrokerClient.sccBrokerClientStrings.updateBrokers
 import typings.sccBrokerClient.sccBrokerClientStrings.updateWorkers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusterBrokerClientMod {
@@ -103,12 +102,11 @@ object clusterBrokerClientMod {
     def unsubscribe(channelName: String): Unit = js.native
   }
   
-  @js.native
   trait MessageData extends StObject {
     
-    var channelName: String = js.native
+    var channelName: String
     
-    var packet: js.Any = js.native
+    var packet: js.Any
   }
   object MessageData {
     
@@ -129,10 +127,9 @@ object clusterBrokerClientMod {
     }
   }
   
-  @js.native
   trait UpdateBrokersData extends StObject {
     
-    var brokerURIs: js.Array[String] = js.native
+    var brokerURIs: js.Array[String]
   }
   object UpdateBrokersData {
     
@@ -153,12 +150,11 @@ object clusterBrokerClientMod {
     }
   }
   
-  @js.native
   trait UpdateWorkersData extends StObject {
     
-    var sourceWorkerURI: String = js.native
+    var sourceWorkerURI: String
     
-    var workerURIs: String = js.native
+    var workerURIs: String
   }
   object UpdateWorkersData {
     

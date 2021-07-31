@@ -21,48 +21,46 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalHeaderMod extends Shortcut {
   
   @JSImport("@ant-design/pro-layout/lib/GlobalHeader", JSImport.Default)
   @js.native
-  val default: FC[GlobalHeaderProps with PrivateSiderMenuProps] = js.native
+  val default: FC[GlobalHeaderProps & PrivateSiderMenuProps] = js.native
   
   /* Inlined parent std.Partial<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.PureSettings> */
-  @js.native
   trait GlobalHeaderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.native
+    var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
     
-    var colorWeak: js.UndefOr[Boolean] = js.native
+    var colorWeak: js.UndefOr[Boolean] = js.undefined
     
-    var contentWidth: js.UndefOr[ContentWidth] = js.native
+    var contentWidth: js.UndefOr[ContentWidth] = js.undefined
     
-    var fixSiderbar: js.UndefOr[Boolean] = js.native
+    var fixSiderbar: js.UndefOr[Boolean] = js.undefined
     
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
-    var headerTheme: js.UndefOr[MenuTheme] = js.native
+    var headerTheme: js.UndefOr[MenuTheme] = js.undefined
     
-    var iconfontUrl: js.UndefOr[String] = js.native
+    var iconfontUrl: js.UndefOr[String] = js.undefined
     
-    var isMobile: js.UndefOr[Boolean] = js.native
+    var isMobile: js.UndefOr[Boolean] = js.undefined
     
-    var layout: js.UndefOr[side | top | mix] = js.native
+    var layout: js.UndefOr[side | top | mix] = js.undefined
     
-    var logo: js.UndefOr[ReactNode] = js.native
+    var logo: js.UndefOr[ReactNode] = js.undefined
     
-    var menu: js.UndefOr[DefaultOpenAll] = js.native
+    var menu: js.UndefOr[DefaultOpenAll] = js.undefined
     
-    var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.native
+    var menuData: js.UndefOr[js.Array[MenuDataItem]] = js.undefined
     
     var menuHeaderRender: js.UndefOr[
         WithFalse[
@@ -73,29 +71,29 @@ object globalHeaderMod extends Shortcut {
             ReactNode
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var menuRender: js.UndefOr[
         WithFalse[js.Function2[/* props */ HeaderViewProps, /* defaultDom */ ReactNode, ReactNode]]
-      ] = js.native
+      ] = js.undefined
     
-    var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+    var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
     
-    var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.native
+    var onCollapse: js.UndefOr[js.Function1[/* collapsed */ Boolean, Unit]] = js.undefined
     
-    var onMenuHeaderClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onMenuHeaderClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var primaryColor: js.UndefOr[String] = js.native
+    var primaryColor: js.UndefOr[String] = js.undefined
     
-    var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]] = js.native
+    var rightContentRender: js.UndefOr[WithFalse[js.Function1[/* props */ HeaderViewProps, ReactNode]]] = js.undefined
     
-    var splitMenus: js.UndefOr[Boolean] = js.native
+    var splitMenus: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String | `false`] = js.native
+    var title: js.UndefOr[String | `false`] = js.undefined
   }
   object GlobalHeaderProps {
     
@@ -292,8 +290,8 @@ object globalHeaderMod extends Shortcut {
     }
   }
   
-  type _To = FC[GlobalHeaderProps with PrivateSiderMenuProps]
+  type _To = FC[GlobalHeaderProps & PrivateSiderMenuProps]
   
   /* This means you don't have to write `default`, but can instead just say `globalHeaderMod.foo` */
-  override def _to: FC[GlobalHeaderProps with PrivateSiderMenuProps] = default
+  override def _to: FC[GlobalHeaderProps & PrivateSiderMenuProps] = default
 }

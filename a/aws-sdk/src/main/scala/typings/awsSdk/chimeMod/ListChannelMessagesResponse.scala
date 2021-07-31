@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelMessagesResponse extends StObject {
   
   /**
     * The ARN of the channel containing the requested messages.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The information about and content of each requested message.
     */
-  var ChannelMessages: js.UndefOr[ChannelMessageSummaryList] = js.native
+  var ChannelMessages: js.UndefOr[ChannelMessageSummaryList] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested messages are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListChannelMessagesResponse {
   

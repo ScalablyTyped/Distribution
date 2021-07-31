@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAuthorizerRequest extends StObject {
   
   /**
     * The ARN of the authorizer's Lambda function.
     */
-  var authorizerFunctionArn: js.UndefOr[AuthorizerFunctionArn] = js.native
+  var authorizerFunctionArn: js.UndefOr[AuthorizerFunctionArn] = js.undefined
   
   /**
     * The authorizer name.
     */
-  var authorizerName: AuthorizerName = js.native
+  var authorizerName: AuthorizerName
   
   /**
     * The status of the update authorizer request.
     */
-  var status: js.UndefOr[AuthorizerStatus] = js.native
+  var status: js.UndefOr[AuthorizerStatus] = js.undefined
   
   /**
     * The key used to extract the token from the HTTP headers. 
     */
-  var tokenKeyName: js.UndefOr[TokenKeyName] = js.native
+  var tokenKeyName: js.UndefOr[TokenKeyName] = js.undefined
   
   /**
     * The public keys used to verify the token signature.
     */
-  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.native
+  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.undefined
 }
 object UpdateAuthorizerRequest {
   

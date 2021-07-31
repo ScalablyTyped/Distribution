@@ -8,38 +8,34 @@ import typings.d3Zoom.mod.ZoomBehavior
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-graphviz", "graphviz")
+  @JSImport("d3-graphviz", JSImport.Namespace)
   @js.native
-  def graphviz(selector: String): Graphviz_[BaseType, _, BaseType, _] = js.native
-  @JSImport("d3-graphviz", "graphviz")
-  @js.native
-  def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, _, BaseType, _] = js.native
-  @JSImport("d3-graphviz", "graphviz")
-  @js.native
-  def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, _, BaseType, _] = js.native
-  @JSImport("d3-graphviz", "graphviz")
-  @js.native
-  def graphviz(selector: BaseType): Graphviz_[BaseType, _, BaseType, _] = js.native
-  @JSImport("d3-graphviz", "graphviz")
-  @js.native
-  def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, _, BaseType, _] = js.native
-  @JSImport("d3-graphviz", "graphviz")
-  @js.native
-  def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, _, BaseType, _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def graphviz(selector: String): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  @scala.inline
+  def graphviz(selector: String, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  @scala.inline
+  def graphviz(selector: String, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  @scala.inline
+  def graphviz(selector: BaseType): Graphviz_[BaseType, js.Any, BaseType, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any]).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  @scala.inline
+  def graphviz(selector: BaseType, options: Boolean): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  @scala.inline
+  def graphviz(selector: BaseType, options: GraphvizOptions): Graphviz_[BaseType, js.Any, BaseType, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("graphviz")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graphviz_[BaseType, js.Any, BaseType, js.Any]]
+  
   trait DotAttributes extends StObject {
     
-    var URL: js.UndefOr[js.Any] = js.native
+    var URL: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
   }
   object DotAttributes {
     
@@ -72,10 +68,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EdgeOptions extends StObject {
     
-    var shortening: Double = js.native
+    var shortening: Double
   }
   object EdgeOptions {
     
@@ -127,42 +122,41 @@ object mod {
     def twopi: typings.d3Graphviz.d3GraphvizStrings.twopi = "twopi".asInstanceOf[typings.d3Graphviz.d3GraphvizStrings.twopi]
   }
   
-  @js.native
   trait GraphvizOptions extends StObject {
     
-    var convertEqualSidedPolygons: js.UndefOr[Boolean] = js.native
+    var convertEqualSidedPolygons: js.UndefOr[Boolean] = js.undefined
     
-    var engine: js.UndefOr[Engine] = js.native
+    var engine: js.UndefOr[Engine] = js.undefined
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
     
-    var fit: js.UndefOr[Boolean] = js.native
+    var fit: js.UndefOr[Boolean] = js.undefined
     
-    var growEnteringEdges: js.UndefOr[Boolean] = js.native
+    var growEnteringEdges: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var keyMode: js.UndefOr[KeyMode] = js.native
+    var keyMode: js.UndefOr[KeyMode] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var totalMemory: js.UndefOr[Double] = js.native
+    var totalMemory: js.UndefOr[Double] = js.undefined
     
-    var tweenPaths: js.UndefOr[Boolean] = js.native
+    var tweenPaths: js.UndefOr[Boolean] = js.undefined
     
-    var tweenPrecision: js.UndefOr[Double | String] = js.native
+    var tweenPrecision: js.UndefOr[Double | String] = js.undefined
     
-    var tweenShapes: js.UndefOr[Boolean] = js.native
+    var tweenShapes: js.UndefOr[Boolean] = js.undefined
     
-    var useWorker: js.UndefOr[Boolean] = js.native
+    var useWorker: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[Boolean] = js.native
+    var zoom: js.UndefOr[Boolean] = js.undefined
     
-    var zoomScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zoomScaleExtent: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var zoomTranslateExtent: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.native
+    var zoomTranslateExtent: js.UndefOr[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]] = js.undefined
   }
   object GraphvizOptions {
     
@@ -347,14 +341,7 @@ object mod {
       * @param options object containing the options used when drawing the edge
       */
     def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
-    def drawEdge(
-      x1: Double,
-      y1: Double,
-      x2: Double,
-      y2: Double,
-      attributes: js.UndefOr[scala.Nothing],
-      options: EdgeOptions
-    ): this.type = js.native
+    def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: Unit, options: EdgeOptions): this.type = js.native
     def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes): this.type = js.native
     def drawEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes, options: EdgeOptions): this.type = js.native
     
@@ -369,7 +356,7 @@ object mod {
       * @param options object containing the options used when drawing the node, currently unused
       */
     def drawNode(x: Double, y: Double, nodeId: String): this.type = js.native
-    def drawNode(x: Double, y: Double, nodeId: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
+    def drawNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: js.Any): this.type = js.native
     def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
     def drawNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
     
@@ -609,14 +596,7 @@ object mod {
       * @param options object containing the options used when drawing the edge
       */
     def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double): this.type = js.native
-    def updateDrawnEdge(
-      x1: Double,
-      y1: Double,
-      x2: Double,
-      y2: Double,
-      attributes: js.UndefOr[scala.Nothing],
-      options: EdgeOptions
-    ): this.type = js.native
+    def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: Unit, options: EdgeOptions): this.type = js.native
     def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes): this.type = js.native
     def updateDrawnEdge(x1: Double, y1: Double, x2: Double, y2: Double, attributes: DotAttributes, options: EdgeOptions): this.type = js.native
     
@@ -631,7 +611,7 @@ object mod {
       * @param options object containing the options used when drawing the node, currently unused
       */
     def updateDrawnNode(x: Double, y: Double, nodeId: String): this.type = js.native
-    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): this.type = js.native
+    def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: Unit, options: js.Any): this.type = js.native
     def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes): this.type = js.native
     def updateDrawnNode(x: Double, y: Double, nodeId: String, attributes: DotAttributes, options: js.Any): this.type = js.native
     

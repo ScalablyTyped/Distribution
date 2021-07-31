@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourcePoliciesResponse extends StObject {
   
   /**
     * A list of the individual resource policies and the account-level resource policy.
     */
-  var GetResourcePoliciesResponseList: js.UndefOr[typings.awsSdk.glueMod.GetResourcePoliciesResponseList] = js.native
+  var GetResourcePoliciesResponseList: js.UndefOr[typings.awsSdk.glueMod.GetResourcePoliciesResponseList] = js.undefined
   
   /**
     * A continuation token, if the returned list does not contain the last resource policy available.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetResourcePoliciesResponse {
   

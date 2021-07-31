@@ -11,8 +11,8 @@ recursively Object.freeze() objects and functions, works in strict mode
 | Full name          | deep-freeze-strict |
 | Keywords           | freeze, deep, object, recursive, strict-mode |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 4189234 |
+| # dependents       | 40 |
+| # downloads        | 4262351 |
 | # stars            | 10 |
 
 ## Links

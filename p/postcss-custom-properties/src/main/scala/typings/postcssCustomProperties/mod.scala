@@ -2,11 +2,12 @@ package typings.postcssCustomProperties
 
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.postcss.mod.LazyResult
 import typings.postcss.mod.Plugin_
-import typings.postcssCustomProperties.anon.Process
+import typings.postcss.mod.Result
+import typings.postcssCustomProperties.anon.ToString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +16,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : CustomPropertiesPlugin = js.native
   
-  @js.native
   trait CustomPropertiesObject extends StObject {
     
-    var `custom-properties`: js.UndefOr[StringDictionary[String]] = js.native
+    var `custom-properties`: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var customProperties: js.UndefOr[StringDictionary[String]] = js.native
+    var customProperties: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object CustomPropertiesObject {
     
@@ -47,7 +47,18 @@ object mod extends Shortcut {
     }
   }
   
-  type CustomPropertiesPlugin = Plugin_[Options] with Process
+  @js.native
+  trait CustomPropertiesPlugin extends Plugin_[Options] {
+    
+    def process(css: String, opts: js.Any): LazyResult = js.native
+    def process(css: String, opts: js.Any, pluginOptions: Options): LazyResult = js.native
+    def process(css: Result, opts: js.Any): LazyResult = js.native
+    def process(css: Result, opts: js.Any, pluginOptions: Options): LazyResult = js.native
+    def process(css: ToString): LazyResult = js.native
+    def process(css: ToString, opts: js.Any): LazyResult = js.native
+    def process(css: ToString, opts: js.Any, pluginOptions: Options): LazyResult = js.native
+    def process(css: ToString, opts: Unit, pluginOptions: Options): LazyResult = js.native
+  }
   
   /**
     * Sources where Custom Properties can be imported from or export to,
@@ -61,7 +72,6 @@ object mod extends Shortcut {
     */
   type ImportSources = String | js.Function0[CustomPropertiesObject] | CustomPropertiesObject | js.Promise[CustomPropertiesObject]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -71,7 +81,7 @@ object mod extends Shortcut {
       * JavaScript files, JSON files, and objects will need to namespace Custom Properties using the customProperties or custom-properties key.
       * @see {@link https://github.com/postcss/postcss-custom-properties#exportto}
       */
-    var exportTo: js.UndefOr[ExportSources | js.Array[ExportSources]] = js.native
+    var exportTo: js.UndefOr[ExportSources | js.Array[ExportSources]] = js.undefined
     
     /**
       * The importFrom option specifies sources where Custom Properties can be imported from,
@@ -80,7 +90,7 @@ object mod extends Shortcut {
       * JavaScript files, JSON files, functions, and objects will need to namespace Custom Properties using the customProperties or custom-properties key.
       * @see {@link https://github.com/postcss/postcss-custom-properties#importfrom}
       */
-    var importFrom: js.UndefOr[ImportSources | js.Array[ImportSources]] = js.native
+    var importFrom: js.UndefOr[ImportSources | js.Array[ImportSources]] = js.undefined
     
     /**
       * The preserve option determines whether Custom Properties
@@ -88,7 +98,7 @@ object mod extends Shortcut {
       * By default, both of these are preserved
       * @see {@link https://github.com/postcss/postcss-custom-properties#preserve}
       */
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

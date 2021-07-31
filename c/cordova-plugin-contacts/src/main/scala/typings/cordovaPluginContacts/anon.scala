@@ -29,101 +29,71 @@ import typings.cordovaPluginContacts.cordovaPluginContactsStrings.title
 import typings.cordovaPluginContacts.cordovaPluginContactsStrings.urls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Addresses extends StObject {
     
-    var addresses: typings.cordovaPluginContacts.cordovaPluginContactsStrings.addresses = js.native
+    var addresses: typings.cordovaPluginContacts.cordovaPluginContactsStrings.addresses
     
-    var birthday: typings.cordovaPluginContacts.cordovaPluginContactsStrings.birthday = js.native
+    var birthday: typings.cordovaPluginContacts.cordovaPluginContactsStrings.birthday
     
-    var categories: typings.cordovaPluginContacts.cordovaPluginContactsStrings.categories = js.native
+    var categories: typings.cordovaPluginContacts.cordovaPluginContactsStrings.categories
     
-    var country: typings.cordovaPluginContacts.cordovaPluginContactsStrings.country = js.native
+    var country: typings.cordovaPluginContacts.cordovaPluginContactsStrings.country
     
-    var department: typings.cordovaPluginContacts.cordovaPluginContactsStrings.department = js.native
+    var department: typings.cordovaPluginContacts.cordovaPluginContactsStrings.department
     
-    var displayName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.displayName = js.native
+    var displayName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.displayName
     
-    var emails: typings.cordovaPluginContacts.cordovaPluginContactsStrings.emails = js.native
+    var emails: typings.cordovaPluginContacts.cordovaPluginContactsStrings.emails
     
-    var familyName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.familyName = js.native
+    var familyName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.familyName
     
-    var formatted: typings.cordovaPluginContacts.cordovaPluginContactsStrings.formatted = js.native
+    var formatted: typings.cordovaPluginContacts.cordovaPluginContactsStrings.formatted
     
-    var givenName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.givenName = js.native
+    var givenName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.givenName
     
-    var honorificPrefix: typings.cordovaPluginContacts.cordovaPluginContactsStrings.honorificPrefix = js.native
+    var honorificPrefix: typings.cordovaPluginContacts.cordovaPluginContactsStrings.honorificPrefix
     
-    var honorificSuffix: typings.cordovaPluginContacts.cordovaPluginContactsStrings.honorificSuffix = js.native
+    var honorificSuffix: typings.cordovaPluginContacts.cordovaPluginContactsStrings.honorificSuffix
     
-    var id: typings.cordovaPluginContacts.cordovaPluginContactsStrings.id = js.native
+    var id: typings.cordovaPluginContacts.cordovaPluginContactsStrings.id
     
-    var ims: typings.cordovaPluginContacts.cordovaPluginContactsStrings.ims = js.native
+    var ims: typings.cordovaPluginContacts.cordovaPluginContactsStrings.ims
     
-    var locality: typings.cordovaPluginContacts.cordovaPluginContactsStrings.locality = js.native
+    var locality: typings.cordovaPluginContacts.cordovaPluginContactsStrings.locality
     
-    var middleName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.middleName = js.native
+    var middleName: typings.cordovaPluginContacts.cordovaPluginContactsStrings.middleName
     
-    var name: typings.cordovaPluginContacts.cordovaPluginContactsStrings.name = js.native
+    var name: typings.cordovaPluginContacts.cordovaPluginContactsStrings.name
     
-    var nickname: typings.cordovaPluginContacts.cordovaPluginContactsStrings.nickname = js.native
+    var nickname: typings.cordovaPluginContacts.cordovaPluginContactsStrings.nickname
     
-    var note: typings.cordovaPluginContacts.cordovaPluginContactsStrings.note = js.native
+    var note: typings.cordovaPluginContacts.cordovaPluginContactsStrings.note
     
-    var organizations: typings.cordovaPluginContacts.cordovaPluginContactsStrings.organizations = js.native
+    var organizations: typings.cordovaPluginContacts.cordovaPluginContactsStrings.organizations
     
-    var phoneNumbers: typings.cordovaPluginContacts.cordovaPluginContactsStrings.phoneNumbers = js.native
+    var phoneNumbers: typings.cordovaPluginContacts.cordovaPluginContactsStrings.phoneNumbers
     
-    var photos: typings.cordovaPluginContacts.cordovaPluginContactsStrings.photos = js.native
+    var photos: typings.cordovaPluginContacts.cordovaPluginContactsStrings.photos
     
-    var postalCode: typings.cordovaPluginContacts.cordovaPluginContactsStrings.postalCode = js.native
+    var postalCode: typings.cordovaPluginContacts.cordovaPluginContactsStrings.postalCode
     
-    var region: typings.cordovaPluginContacts.cordovaPluginContactsStrings.region = js.native
+    var region: typings.cordovaPluginContacts.cordovaPluginContactsStrings.region
     
-    var streetAddress: typings.cordovaPluginContacts.cordovaPluginContactsStrings.streetAddress = js.native
+    var streetAddress: typings.cordovaPluginContacts.cordovaPluginContactsStrings.streetAddress
     
-    var title: typings.cordovaPluginContacts.cordovaPluginContactsStrings.title = js.native
+    var title: typings.cordovaPluginContacts.cordovaPluginContactsStrings.title
     
-    var urls: typings.cordovaPluginContacts.cordovaPluginContactsStrings.urls = js.native
+    var urls: typings.cordovaPluginContacts.cordovaPluginContactsStrings.urls
   }
   object Addresses {
     
     @scala.inline
-    def apply(
-      addresses: addresses,
-      birthday: birthday,
-      categories: categories,
-      country: country,
-      department: department,
-      displayName: displayName,
-      emails: emails,
-      familyName: familyName,
-      formatted: formatted,
-      givenName: givenName,
-      honorificPrefix: honorificPrefix,
-      honorificSuffix: honorificSuffix,
-      id: id,
-      ims: ims,
-      locality: locality,
-      middleName: middleName,
-      name: name,
-      nickname: nickname,
-      note: note,
-      organizations: organizations,
-      phoneNumbers: phoneNumbers,
-      photos: photos,
-      postalCode: postalCode,
-      region: region,
-      streetAddress: streetAddress,
-      title: title,
-      urls: urls
-    ): Addresses = {
-      val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], birthday = birthday.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], department = department.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], emails = emails.asInstanceOf[js.Any], familyName = familyName.asInstanceOf[js.Any], formatted = formatted.asInstanceOf[js.Any], givenName = givenName.asInstanceOf[js.Any], honorificPrefix = honorificPrefix.asInstanceOf[js.Any], honorificSuffix = honorificSuffix.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ims = ims.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], middleName = middleName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nickname = nickname.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], organizations = organizations.asInstanceOf[js.Any], phoneNumbers = phoneNumbers.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], streetAddress = streetAddress.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any])
+    def apply(): Addresses = {
+      val __obj = js.Dynamic.literal(addresses = "addresses", birthday = "birthday", categories = "categories", country = "country", department = "department", displayName = "displayName", emails = "emails", familyName = "familyName", formatted = "formatted", givenName = "givenName", honorificPrefix = "honorificPrefix", honorificSuffix = "honorificSuffix", id = "id", ims = "ims", locality = "locality", middleName = "middleName", name = "name", nickname = "nickname", note = "note", organizations = "organizations", phoneNumbers = "phoneNumbers", photos = "photos", postalCode = "postalCode", region = "region", streetAddress = "streetAddress", title = "title", urls = "urls")
       __obj.asInstanceOf[Addresses]
     }
     

@@ -3,33 +3,31 @@ package typings.bootstrapTreeview
 import typings.bootstrapTreeview.anon.Checked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapTreeViewNodeData extends StObject {
   
-  var backColor: js.UndefOr[String] = js.native
+  var backColor: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var nodeId: js.UndefOr[Double] = js.native
+  var nodeId: js.UndefOr[Double] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.native
+  var nodes: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var selectedIcon: js.UndefOr[String] = js.native
+  var selectedIcon: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[Checked] = js.native
+  var state: js.UndefOr[Checked] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object BootstrapTreeViewNodeData {
   

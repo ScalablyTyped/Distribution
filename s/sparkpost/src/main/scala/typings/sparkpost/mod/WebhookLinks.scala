@@ -3,13 +3,11 @@ package typings.sparkpost.mod
 import typings.sparkpost.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebhookLinks extends StObject {
   
-  var links: js.Array[Href] = js.native
+  var links: js.Array[Href]
 }
 object WebhookLinks {
   

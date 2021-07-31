@@ -12,7 +12,7 @@ Paystack API wrapper
 | Keywords           | payment, API, naira, paystack |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 23639 |
+| # downloads        | 61539 |
 | # stars            | 0 |
 
 ## Links

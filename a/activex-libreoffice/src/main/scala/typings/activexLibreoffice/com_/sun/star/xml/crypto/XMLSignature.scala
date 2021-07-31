@@ -5,13 +5,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Service of {@link XMLSignature} */
-@js.native
 trait XMLSignature
-  extends XXMLSignature
+  extends StObject
+     with XXMLSignature
      with XInitialization
 object XMLSignature {
   
@@ -19,7 +18,7 @@ object XMLSignature {
   def apply(
     acquire: () => Unit,
     generate: (XXMLSignatureTemplate, XSecurityEnvironment) => XXMLSignatureTemplate,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     validate: (XXMLSignatureTemplate, XXMLSecurityContext) => XXMLSignatureTemplate

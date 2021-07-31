@@ -3,28 +3,26 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dlm {
   
-  @js.native
   trait LifecyclePolicyPolicyDetails extends StObject {
     
     /**
       * A list of resource types that should be targeted by the lifecycle policy. `VOLUME` is currently the only allowed value.
       */
-    var resourceTypes: js.Array[String] = js.native
+    var resourceTypes: js.Array[String]
     
     /**
       * See the `schedule` configuration block.
       */
-    var schedules: js.Array[LifecyclePolicyPolicyDetailsSchedule] = js.native
+    var schedules: js.Array[LifecyclePolicyPolicyDetailsSchedule]
     
     /**
       * A map of tag keys and their values. Any resources that match the `resourceTypes` and are tagged with _any_ of these tags will be targeted.
       */
-    var targetTags: StringDictionary[String] = js.native
+    var targetTags: StringDictionary[String]
   }
   object LifecyclePolicyPolicyDetails {
     
@@ -58,33 +56,32 @@ object dlm {
     }
   }
   
-  @js.native
   trait LifecyclePolicyPolicyDetailsSchedule extends StObject {
     
     /**
       * Copy all user-defined tags on a source volume to snapshots of the volume created by this policy.
       */
-    var copyTags: Boolean = js.native
+    var copyTags: Boolean
     
     /**
       * See the `createRule` block. Max of 1 per schedule.
       */
-    var createRule: LifecyclePolicyPolicyDetailsScheduleCreateRule = js.native
+    var createRule: LifecyclePolicyPolicyDetailsScheduleCreateRule
     
     /**
       * A name for the schedule.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * See the `retainRule` block. Max of 1 per schedule.
       */
-    var retainRule: LifecyclePolicyPolicyDetailsScheduleRetainRule = js.native
+    var retainRule: LifecyclePolicyPolicyDetailsScheduleRetainRule
     
     /**
       * A map of tag keys and their values. DLM lifecycle policies will already tag the snapshot with the tags on the volume. This configuration adds extra tags on top of these.
       */
-    var tagsToAdd: js.UndefOr[StringDictionary[String]] = js.native
+    var tagsToAdd: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object LifecyclePolicyPolicyDetailsSchedule {
     
@@ -122,23 +119,22 @@ object dlm {
     }
   }
   
-  @js.native
   trait LifecyclePolicyPolicyDetailsScheduleCreateRule extends StObject {
     
     /**
       * How often this lifecycle policy should be evaluated. `1`, `2`,`3`,`4`,`6`,`8`,`12` or `24` are valid values.
       */
-    var interval: Double = js.native
+    var interval: Double
     
     /**
       * The unit for how often the lifecycle policy should be evaluated. `HOURS` is currently the only allowed value and also the default value.
       */
-    var intervalUnit: js.UndefOr[String] = js.native
+    var intervalUnit: js.UndefOr[String] = js.undefined
     
     /**
       * A list of times in 24 hour clock format that sets when the lifecycle policy should be evaluated. Max of 1.
       */
-    var times: String = js.native
+    var times: String
   }
   object LifecyclePolicyPolicyDetailsScheduleCreateRule {
     
@@ -165,13 +161,12 @@ object dlm {
     }
   }
   
-  @js.native
   trait LifecyclePolicyPolicyDetailsScheduleRetainRule extends StObject {
     
     /**
       * How many snapshots to keep. Must be an integer between 1 and 1000.
       */
-    var count: Double = js.native
+    var count: Double
   }
   object LifecyclePolicyPolicyDetailsScheduleRetainRule {
     

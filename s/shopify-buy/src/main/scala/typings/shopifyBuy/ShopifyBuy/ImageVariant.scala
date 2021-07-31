@@ -2,22 +2,22 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageVariant extends Image {
+trait ImageVariant
+  extends StObject
+     with Image {
   
-  var dimensions: String = js.native
+  var dimensions: String
   
   /**
     * Returns src URL for new image size/variant
     * @param image The image you would like a different size for.
     * @param options Image Max width and height configuration.
     */
-  def imageForSize(image: Image, options: ImageOptions): String = js.native
+  def imageForSize(image: Image, options: ImageOptions): String
   
-  var name: String = js.native
+  var name: String
 }
 object ImageVariant {
   

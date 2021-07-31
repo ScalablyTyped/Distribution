@@ -2,25 +2,23 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source offset and types for a parameter or return value.
   * @experimental
   */
-@js.native
 trait TypeProfileEntry extends StObject {
   
   /**
     * Source offset of the parameter or end of function for return values.
     */
-  var offset: Double = js.native
+  var offset: Double
   
   /**
     * The types for this parameter or return value.
     */
-  var types: js.Array[TypeObject] = js.native
+  var types: js.Array[TypeObject]
 }
 object TypeProfileEntry {
   

@@ -2,13 +2,11 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Student work for an assignment.
   */
-@js.native
 trait SchemaAssignmentSubmission extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaAssignmentSubmission extends StObject {
     * access it. Identifier and alternate_link fields are always available, but
     * others (e.g. title) may not be.
     */
-  var attachments: js.UndefOr[js.Array[SchemaAttachment]] = js.native
+  var attachments: js.UndefOr[js.Array[SchemaAttachment]] = js.undefined
 }
 object SchemaAssignmentSubmission {
   

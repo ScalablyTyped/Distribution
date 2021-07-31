@@ -2,19 +2,17 @@ package typings.keystonejsFileAdapters
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Filename extends StObject {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var stream: js.Any = js.native
+    var stream: js.Any
   }
   object Filename {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FilenameId extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var id: String = js.native
+    var id: String
   }
   object FilenameId {
     
@@ -67,10 +64,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FilenameString extends StObject {
     
-    var filename: String = js.native
+    var filename: String
   }
   object FilenameString {
     
@@ -88,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var originalFilename: String = js.native
+    var originalFilename: String
   }
   object Id {
     

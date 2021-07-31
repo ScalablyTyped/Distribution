@@ -2,7 +2,6 @@ package typings.envPaths
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,12 +20,10 @@ object mod {
   	//=> '/home/sindresorhus/.config/MyApp-nodejs'
   	```
   	*/
-  @JSImport("env-paths", JSImport.Namespace)
-  @js.native
-  def apply(name: String): Paths = js.native
-  @JSImport("env-paths", JSImport.Namespace)
-  @js.native
-  def apply(name: String, options: Options): Paths = js.native
+  @scala.inline
+  def apply(name: String): Paths = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Paths]
+  @scala.inline
+  def apply(name: String, options: Options): Paths = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Paths]
   
   @JSImport("env-paths", JSImport.Namespace)
   @js.native
@@ -41,7 +38,6 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -49,7 +45,7 @@ object mod {
     		Suffix appended to the project name to avoid name conflicts with native apps. Pass an empty string to disable it.
     		@default 'nodejs'
     		*/
-    val suffix: js.UndefOr[String] = js.native
+    val suffix: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -70,33 +66,32 @@ object mod {
     }
   }
   
-  @js.native
   trait Paths extends StObject {
     
     /**
     		Directory for non-essential data files.
     		*/
-    val cache: String = js.native
+    val cache: String
     
     /**
     		Directory for data files.
     		*/
-    val config: String = js.native
+    val config: String
     
     /**
     		Directory for data files.
     		*/
-    val data: String = js.native
+    val data: String
     
     /**
     		Directory for log files.
     		*/
-    val log: String = js.native
+    val log: String
     
     /**
     		Directory for temporary files.
     		*/
-    val temp: String = js.native
+    val temp: String
   }
   object Paths {
     

@@ -7,7 +7,6 @@ import typings.sweetalert.anon.Value
 import typings.sweetalert.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMod {
@@ -22,36 +21,30 @@ object stateMod {
   @scala.inline
   def default_=(x: SwalState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @JSImport("sweetalert/typings/modules/state", "resetState")
-  @js.native
-  def resetState(): Unit = js.native
+  @scala.inline
+  def resetState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetState")().asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/state", "setActionOptionsFor")
-  @js.native
-  def setActionOptionsFor(buttonKey: String): Unit = js.native
-  @JSImport("sweetalert/typings/modules/state", "setActionOptionsFor")
-  @js.native
-  def setActionOptionsFor(buttonKey: String, hasCloseModal: `0`): Unit = js.native
+  @scala.inline
+  def setActionOptionsFor(buttonKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionOptionsFor")(buttonKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setActionOptionsFor(buttonKey: String, hasCloseModal: `0`): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setActionOptionsFor")(buttonKey.asInstanceOf[js.Any], hasCloseModal.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/state", "setActionValue")
-  @js.native
-  def setActionValue(opts: String): Unit = js.native
-  @JSImport("sweetalert/typings/modules/state", "setActionValue")
-  @js.native
-  def setActionValue(opts: ActionOptions): Unit = js.native
+  @scala.inline
+  def setActionValue(opts: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setActionValue(opts: ActionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setActionValue")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ActionOptions = StringDictionary[Value]
   
-  @js.native
   trait SwalState extends StObject {
     
-    var actions: StringDictionary[CloseModal] = js.native
+    var actions: StringDictionary[CloseModal]
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
-    var promise: Reject = js.native
+    var promise: Reject
     
-    var timer: Double = js.native
+    var timer: Double
   }
   object SwalState {
     

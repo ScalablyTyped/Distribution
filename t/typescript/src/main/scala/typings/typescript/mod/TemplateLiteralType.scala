@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TemplateLiteralType extends Type {
+trait TemplateLiteralType
+  extends StObject
+     with Type {
   
-  var texts: js.Array[java.lang.String] = js.native
+  var texts: js.Array[java.lang.String]
   
-  var types: js.Array[Type] = js.native
+  var types: js.Array[Type]
 }
 object TemplateLiteralType {
   

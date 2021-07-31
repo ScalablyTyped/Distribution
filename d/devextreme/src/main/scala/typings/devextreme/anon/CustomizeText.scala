@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomizeText[T] extends StObject {
   
-  var customizeText: js.UndefOr[js.Function1[/* e */ FilterValue[T], String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* e */ FilterValue[T], String]] = js.undefined
   
-  var filterEnabled: js.UndefOr[Boolean] = js.native
+  var filterEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var texts: js.UndefOr[ClearFilter] = js.native
+  var texts: js.UndefOr[ClearFilter] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object CustomizeText {
   
@@ -25,7 +23,7 @@ object CustomizeText {
   }
   
   @scala.inline
-  implicit class CustomizeTextMutableBuilder[Self <: CustomizeText[_], T] (val x: Self with CustomizeText[T]) extends AnyVal {
+  implicit class CustomizeTextMutableBuilder[Self <: CustomizeText[?], T] (val x: Self & CustomizeText[T]) extends AnyVal {
     
     @scala.inline
     def setCustomizeText(value: /* e */ FilterValue[T] => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))

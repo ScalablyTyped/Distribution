@@ -2,23 +2,21 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** Estimated accuracy of this location, in meters. */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
   /** Altitude if available, in meters above the WGS 84 reference ellipsoid. */
-  var altitude: Double = js.native
+  var altitude: Double
   
   /** Bearing, in degrees. */
-  var bearing: Double = js.native
+  var bearing: Double
   
   /** ID of location as stored in DB (or null) */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * True if location was recorded by mock provider. (ANDROID ONLY)
@@ -26,16 +24,16 @@ trait Location extends StObject {
     * Note: this property is not enabled by default!
     * You can enable it "postTemplate" configure option.
     */
-  var isFromMockProvider: js.UndefOr[Boolean] = js.native
+  var isFromMockProvider: js.UndefOr[Boolean] = js.undefined
   
   /** Latitude, in degrees. */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** Configured location provider. */
-  var locationProvider: Double = js.native
+  var locationProvider: Double
   
   /** Longitude, in degrees. */
-  var longitude: Double = js.native
+  var longitude: Double
   
   /**
     * True if device has mock locations enabled. (ANDROID ONLY)
@@ -43,7 +41,7 @@ trait Location extends StObject {
     * Note: this property is not enabled by default!
     * You can enable it "postTemplate" configure option.
     */
-  var mockLocationsEnabled: js.UndefOr[Boolean] = js.native
+  var mockLocationsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Native provider reponsible for location.
@@ -51,7 +49,7 @@ trait Location extends StObject {
     * Possible values:
     * "gps", "network", "passive" or "fused"
     */
-  var provider: NativeProvider = js.native
+  var provider: NativeProvider
   
   /**
     * Speed if it is available, in meters/second over ground.
@@ -59,10 +57,10 @@ trait Location extends StObject {
     * Note: Not all providers are capable of providing speed.
     * Typically network providers are not able to do so.
     */
-  var speed: Double = js.native
+  var speed: Double
   
   /** UTC time of this fix, in milliseconds since January 1, 1970. */
-  var time: Double = js.native
+  var time: Double
 }
 object Location {
   

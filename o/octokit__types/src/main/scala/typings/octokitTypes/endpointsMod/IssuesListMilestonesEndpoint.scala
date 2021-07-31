@@ -9,40 +9,38 @@ import typings.octokitTypes.octokitTypesStrings.due_on
 import typings.octokitTypes.octokitTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesListMilestonesEndpoint extends StObject {
   
   /**
     * The direction of the sort. Either `asc` or `desc`.
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * What to sort results by. Either `due_on` or `completeness`.
     */
-  var sort: js.UndefOr[due_on | completeness] = js.native
+  var sort: js.UndefOr[due_on | completeness] = js.undefined
   
   /**
     * The state of the milestone. Either `open`, `closed`, or `all`.
     */
-  var state: js.UndefOr[open | closed | all] = js.native
+  var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object IssuesListMilestonesEndpoint {
   

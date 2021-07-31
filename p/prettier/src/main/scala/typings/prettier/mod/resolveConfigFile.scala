@@ -2,22 +2,21 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveConfigFile {
   
-  @JSImport("prettier", "resolveConfigFile")
-  @js.native
-  def apply(): js.Promise[Null | String] = js.native
-  @JSImport("prettier", "resolveConfigFile")
-  @js.native
-  def apply(filePath: String): js.Promise[Null | String] = js.native
+  @scala.inline
+  def apply(): js.Promise[Null | String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Null | String]]
+  @scala.inline
+  def apply(filePath: String): js.Promise[Null | String] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null | String]]
   
-  @JSImport("prettier", "resolveConfigFile.sync")
+  @JSImport("prettier", "resolveConfigFile")
   @js.native
-  def sync(): Null | String = js.native
-  @JSImport("prettier", "resolveConfigFile.sync")
-  @js.native
-  def sync(filePath: String): Null | String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[Null | String]
+  @scala.inline
+  def sync(filePath: String): Null | String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Null | String]
 }

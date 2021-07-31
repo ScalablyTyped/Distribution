@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramConnectionDefaults extends StObject {
   
-  var content: js.UndefOr[DiagramConnectionDefaultsContent] = js.native
+  var content: js.UndefOr[DiagramConnectionDefaultsContent] = js.undefined
   
-  var editable: js.UndefOr[Boolean | DiagramConnectionDefaultsEditable] = js.native
+  var editable: js.UndefOr[Boolean | DiagramConnectionDefaultsEditable] = js.undefined
   
-  var endCap: js.UndefOr[String | DiagramConnectionDefaultsEndCap] = js.native
+  var endCap: js.UndefOr[String | DiagramConnectionDefaultsEndCap] = js.undefined
   
-  var fromConnector: js.UndefOr[String] = js.native
+  var fromConnector: js.UndefOr[String] = js.undefined
   
-  var hover: js.UndefOr[DiagramConnectionDefaultsHover] = js.native
+  var hover: js.UndefOr[DiagramConnectionDefaultsHover] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var selection: js.UndefOr[DiagramConnectionDefaultsSelection] = js.native
+  var selection: js.UndefOr[DiagramConnectionDefaultsSelection] = js.undefined
   
-  var startCap: js.UndefOr[String | DiagramConnectionDefaultsStartCap] = js.native
+  var startCap: js.UndefOr[String | DiagramConnectionDefaultsStartCap] = js.undefined
   
-  var stroke: js.UndefOr[DiagramConnectionDefaultsStroke] = js.native
+  var stroke: js.UndefOr[DiagramConnectionDefaultsStroke] = js.undefined
   
-  var toConnector: js.UndefOr[String] = js.native
+  var toConnector: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DiagramConnectionDefaults {
   

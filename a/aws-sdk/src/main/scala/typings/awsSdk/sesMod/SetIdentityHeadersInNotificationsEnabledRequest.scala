@@ -2,26 +2,24 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIdentityHeadersInNotificationsEnabledRequest extends StObject {
   
   /**
     * Sets whether Amazon SES includes the original email headers in Amazon SNS notifications of the specified notification type. A value of true specifies that Amazon SES will include headers in notifications, and a value of false specifies that Amazon SES will not include headers in notifications. This value can only be set when NotificationType is already set to use a particular Amazon SNS topic.
     */
-  var Enabled: typings.awsSdk.sesMod.Enabled = js.native
+  var Enabled: typings.awsSdk.sesMod.Enabled
   
   /**
     * The identity for which to enable or disable headers in notifications. Examples: user@example.com, example.com.
     */
-  var Identity: typings.awsSdk.sesMod.Identity = js.native
+  var Identity: typings.awsSdk.sesMod.Identity
   
   /**
     * The notification type for which to enable or disable headers in notifications. 
     */
-  var NotificationType: typings.awsSdk.sesMod.NotificationType = js.native
+  var NotificationType: typings.awsSdk.sesMod.NotificationType
 }
 object SetIdentityHeadersInNotificationsEnabledRequest {
   

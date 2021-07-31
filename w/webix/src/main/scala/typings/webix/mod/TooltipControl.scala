@@ -2,10 +2,10 @@ package typings.webix.mod
 
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -31,4 +31,9 @@ trait TooltipControl extends StObject {
   
   def removeTooltip(target: String): Unit = js.native
   def removeTooltip(target: HTMLElement): Unit = js.native
+}
+object TooltipControl {
+  
+  @scala.inline
+  def apply: TooltipControl = ^.asInstanceOf[js.Dynamic].selectDynamic("TooltipControl").asInstanceOf[TooltipControl]
 }

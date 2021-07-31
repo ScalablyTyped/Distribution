@@ -3,27 +3,25 @@ package typings.cryptojs.CryptoJS
 import typings.cryptojs.CryptoJS.lib.WordArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enc {
   
-  @js.native
   trait EncStatic extends StObject {
     
-    var Base64: ICoder = js.native
+    var Base64: ICoder
     
-    var Hex: ICoder = js.native
+    var Hex: ICoder
     
-    var Latin1: ICoder = js.native
+    var Latin1: ICoder
     
-    var Utf16: ICoder = js.native
+    var Utf16: ICoder
     
-    var Utf16BE: ICoder = js.native
+    var Utf16BE: ICoder
     
-    var Utf16LE: ICoder = js.native
+    var Utf16LE: ICoder
     
-    var Utf8: ICoder = js.native
+    var Utf8: ICoder
   }
   object EncStatic {
     
@@ -67,9 +65,9 @@ object enc {
     }
   }
   
-  @js.native
   trait ICoder
-    extends IEncoder
+    extends StObject
+       with IEncoder
        with IDecoder
   object ICoder {
     
@@ -80,10 +78,9 @@ object enc {
     }
   }
   
-  @js.native
   trait IDecoder extends StObject {
     
-    def parse(s: String): WordArray = js.native
+    def parse(s: String): WordArray
   }
   object IDecoder {
     
@@ -101,10 +98,9 @@ object enc {
     }
   }
   
-  @js.native
   trait IEncoder extends StObject {
     
-    def stringify(wordArray: WordArray): String = js.native
+    def stringify(wordArray: WordArray): String
   }
   object IEncoder {
     

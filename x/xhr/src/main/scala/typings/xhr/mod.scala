@@ -18,7 +18,6 @@ import typings.xhr.xhrStrings.json
 import typings.xhr.xhrStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,34 +26,33 @@ object mod extends Shortcut {
   @js.native
   val default: XhrStatic = js.native
   
-  @js.native
   trait XhrBaseConfig extends StObject {
     
-    var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ XMLHttpRequest, Unit]] = js.native
+    var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ XMLHttpRequest, Unit]] = js.undefined
     
-    var body: js.UndefOr[String | js.Any] = js.native
+    var body: js.UndefOr[String | js.Any] = js.undefined
     
-    var headers: js.UndefOr[XhrHeaders] = js.native
+    var headers: js.UndefOr[XhrHeaders] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.native
+    var method: js.UndefOr[DELETE | GET | HEAD | OPTIONS | POST | PUT] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.native
+    var responseType: js.UndefOr[_empty | arraybuffer | blob | document | json | text] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var useXDR: js.UndefOr[Boolean] = js.native
+    var useXDR: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
     
-    var xhr: js.UndefOr[XMLHttpRequest] = js.native
+    var xhr: js.UndefOr[XMLHttpRequest] = js.undefined
   }
   object XhrBaseConfig {
     
@@ -160,20 +158,19 @@ object mod extends Shortcut {
     def apply(url: String, options: XhrBaseConfig, callback: XhrCallback): js.Any = js.native
   }
   
-  @js.native
   trait XhrResponse extends StObject {
     
-    var body: js.Object | String = js.native
+    var body: js.Object | String
     
-    var headers: XhrHeaders = js.native
+    var headers: XhrHeaders
     
-    var method: String = js.native
+    var method: String
     
-    var rawRequest: XMLHttpRequest = js.native
+    var rawRequest: XMLHttpRequest
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var url: String = js.native
+    var url: String
   }
   object XhrResponse {
     
@@ -214,7 +211,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait XhrStatic extends XhrInstance {
+  trait XhrStatic
+    extends StObject
+       with XhrInstance {
     
     def del(options: XhrUriConfig, callback: XhrCallback): js.Any = js.native
     def del(options: XhrUrlConfig, callback: XhrCallback): js.Any = js.native
@@ -259,10 +258,11 @@ object mod extends Shortcut {
     var put_Original: XhrInstance = js.native
   }
   
-  @js.native
-  trait XhrUriConfig extends XhrBaseConfig {
+  trait XhrUriConfig
+    extends StObject
+       with XhrBaseConfig {
     
-    var uri: String = js.native
+    var uri: String
   }
   object XhrUriConfig {
     
@@ -280,10 +280,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait XhrUrlConfig extends XhrBaseConfig {
+  trait XhrUrlConfig
+    extends StObject
+       with XhrBaseConfig {
     
-    var url: String = js.native
+    var url: String
   }
   object XhrUrlConfig {
     

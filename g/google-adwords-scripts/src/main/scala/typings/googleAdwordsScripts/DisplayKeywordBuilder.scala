@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DisplayKeywordBuilder[DisplayKeyword] extends DisplayBuilder[DisplayKeywordBuilder[DisplayKeyword]] {
+trait DisplayKeywordBuilder[DisplayKeyword]
+  extends StObject
+     with DisplayBuilder[DisplayKeywordBuilder[DisplayKeyword]] {
   
-  def withText(text: String): DisplayKeywordBuilder[DisplayKeyword] = js.native
+  def withText(text: String): DisplayKeywordBuilder[DisplayKeyword]
 }
 object DisplayKeywordBuilder {
   
@@ -25,7 +25,7 @@ object DisplayKeywordBuilder {
   }
   
   @scala.inline
-  implicit class DisplayKeywordBuilderMutableBuilder[Self <: DisplayKeywordBuilder[_], DisplayKeyword] (val x: Self with DisplayKeywordBuilder[DisplayKeyword]) extends AnyVal {
+  implicit class DisplayKeywordBuilderMutableBuilder[Self <: DisplayKeywordBuilder[?], DisplayKeyword] (val x: Self & DisplayKeywordBuilder[DisplayKeyword]) extends AnyVal {
     
     @scala.inline
     def setWithText(value: String => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "withText", js.Any.fromFunction1(value))

@@ -3,15 +3,13 @@ package typings.ngCordova.ngCordova
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAppVersionService extends StObject {
   
-  def getVersionCode(): IPromise[String] = js.native
+  def getVersionCode(): IPromise[String]
   
-  def getVersionNumber(): IPromise[String] = js.native
+  def getVersionNumber(): IPromise[String]
 }
 object IAppVersionService {
   

@@ -9,21 +9,20 @@ import typings.victory.victoryStrings.parent
 import typings.victory.victoryStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryBarProps
-  extends VictoryMultiLabeableProps
+  extends StObject
      with VictoryCommonProps
-     with VictoryDatableProps {
+     with VictoryDatableProps
+     with VictoryMultiLabeableProps {
   
   /**
     * The alignment prop specifies how bars should be aligned relative to their data points.
     * This prop may be given as “start”, “middle” or “end”. When this prop is not specified,
     * bars will have “middle” alignment relative to their data points.
     */
-  var alignment: js.UndefOr[start | middle | end] = js.native
+  var alignment: js.UndefOr[start | middle | end] = js.undefined
   
   /**
     * The barRatio prop specifies an approximate ratio between bar widths and spaces between bars.
@@ -31,7 +30,7 @@ trait VictoryBarProps
     * be used to calculate a default width for each bar given the total number of bars in the data series
     * and the overall width of the chart.
     */
-  var barRatio: js.UndefOr[Double] = js.native
+  var barRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The barWidth prop is used to specify the width of each bar. This prop may be given as
@@ -40,20 +39,20 @@ trait VictoryBarProps
     * is not given, a default value will be calculated based on the overall dimensions of
     * the chart, and the number of bars.
     */
-  var barWidth: js.UndefOr[NumberOrCallback] = js.native
+  var barWidth: js.UndefOr[NumberOrCallback] = js.undefined
   
   /**
     * The cornerRadius prop specifies a radius to apply to each bar.
     * If this prop is given as a single number, the radius will only be applied to the top of each bar.
     * When this prop is given as a function, it will be evaluated with the arguments datum, and active.
     */
-  var cornerRadius: js.UndefOr[NumberOrCallback | Bottom] = js.native
+  var cornerRadius: js.UndefOr[NumberOrCallback | Bottom] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -95,7 +94,7 @@ trait VictoryBarProps
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.native
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]] = js.undefined
   
   /**
     * The style prop specifies styles for your VictoryBar. Any valid inline style properties
@@ -106,7 +105,7 @@ trait VictoryBarProps
     * VictoryLabel, or any custom labelComponent.
     * @example {data: {fill: "red", width: 8}, labels: {fontSize: 12}}
     */
-  var style: js.UndefOr[VictoryStyleInterface] = js.native
+  var style: js.UndefOr[VictoryStyleInterface] = js.undefined
 }
 object VictoryBarProps {
   

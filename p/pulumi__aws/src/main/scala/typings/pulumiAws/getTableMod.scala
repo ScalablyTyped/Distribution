@@ -11,29 +11,29 @@ import typings.pulumiAws.outputMod.dynamodb.GetTableTtl
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTableMod {
   
-  @JSImport("@pulumi/aws/dynamodb/getTable", "getTable")
+  @JSImport("@pulumi/aws/dynamodb/getTable", JSImport.Namespace)
   @js.native
-  def getTable(args: GetTableArgs): js.Promise[GetTableResult] = js.native
-  @JSImport("@pulumi/aws/dynamodb/getTable", "getTable")
-  @js.native
-  def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTable(args: GetTableArgs): js.Promise[GetTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTableResult]]
+  @scala.inline
+  def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTableResult]]
+  
   trait GetTableArgs extends StObject {
     
     /**
       * The name of the DynamoDB table.
       */
-    val name: String = js.native
+    val name: String
     
-    val serverSideEncryption: js.UndefOr[GetTableServerSideEncryption] = js.native
+    val serverSideEncryption: js.UndefOr[GetTableServerSideEncryption] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetTableArgs {
     
@@ -63,51 +63,50 @@ object getTableMod {
     }
   }
   
-  @js.native
   trait GetTableResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val attributes: js.Array[GetTableAttribute] = js.native
+    val attributes: js.Array[GetTableAttribute]
     
-    val billingMode: String = js.native
+    val billingMode: String
     
-    val globalSecondaryIndexes: js.Array[GetTableGlobalSecondaryIndex] = js.native
+    val globalSecondaryIndexes: js.Array[GetTableGlobalSecondaryIndex]
     
-    val hashKey: String = js.native
+    val hashKey: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val localSecondaryIndexes: js.Array[GetTableLocalSecondaryIndex] = js.native
+    val localSecondaryIndexes: js.Array[GetTableLocalSecondaryIndex]
     
-    val name: String = js.native
+    val name: String
     
-    val pointInTimeRecovery: GetTablePointInTimeRecovery = js.native
+    val pointInTimeRecovery: GetTablePointInTimeRecovery
     
-    val rangeKey: String = js.native
+    val rangeKey: String
     
-    val readCapacity: Double = js.native
+    val readCapacity: Double
     
-    val replicas: js.Array[GetTableReplica] = js.native
+    val replicas: js.Array[GetTableReplica]
     
-    val serverSideEncryption: typings.pulumiAws.outputMod.dynamodb.GetTableServerSideEncryption = js.native
+    val serverSideEncryption: typings.pulumiAws.outputMod.dynamodb.GetTableServerSideEncryption
     
-    val streamArn: String = js.native
+    val streamArn: String
     
-    val streamEnabled: Boolean = js.native
+    val streamEnabled: Boolean
     
-    val streamLabel: String = js.native
+    val streamLabel: String
     
-    val streamViewType: String = js.native
+    val streamViewType: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val ttl: GetTableTtl = js.native
+    val ttl: GetTableTtl
     
-    val writeCapacity: Double = js.native
+    val writeCapacity: Double
   }
   object GetTableResult {
     

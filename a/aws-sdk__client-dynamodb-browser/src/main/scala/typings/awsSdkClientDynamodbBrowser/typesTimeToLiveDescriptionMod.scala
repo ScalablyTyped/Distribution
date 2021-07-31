@@ -6,23 +6,21 @@ import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.EN
 import typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ENABLING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTimeToLiveDescriptionMod {
   
-  @js.native
   trait TimeToLiveDescription extends StObject {
     
     /**
       * <p> The name of the Time to Live attribute for items in the table.</p>
       */
-    var AttributeName: js.UndefOr[String] = js.native
+    var AttributeName: js.UndefOr[String] = js.undefined
     
     /**
       * <p> The Time to Live status for the table.</p>
       */
-    var TimeToLiveStatus: js.UndefOr[ENABLING | DISABLING | ENABLED | DISABLED | String] = js.native
+    var TimeToLiveStatus: js.UndefOr[ENABLING | DISABLING | ENABLED | DISABLED | String] = js.undefined
   }
   object TimeToLiveDescription {
     

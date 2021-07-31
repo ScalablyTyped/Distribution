@@ -4,7 +4,6 @@ import typings.rotJs.anon.PartialOptionsRoomDugPercentage
 import typings.rotJs.featuresMod.Room
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniformMod {
@@ -15,16 +14,15 @@ object uniformMod {
     def this(width: Double, height: Double, options: PartialOptionsRoomDugPercentage) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var roomDugPercentage: Double = js.native
+    var roomDugPercentage: Double
     
-    var roomHeight: js.Tuple2[Double, Double] = js.native
+    var roomHeight: js.Tuple2[Double, Double]
     
-    var roomWidth: js.Tuple2[Double, Double] = js.native
+    var roomWidth: js.Tuple2[Double, Double]
     
-    var timeLimit: Double = js.native
+    var timeLimit: Double
   }
   object Options {
     

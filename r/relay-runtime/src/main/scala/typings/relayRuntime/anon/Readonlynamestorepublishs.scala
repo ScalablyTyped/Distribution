@@ -5,24 +5,24 @@ import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import typings.relayRuntime.relayStoreTypesMod.RecordSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'store.publish',   source :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.RecordSource,   optimistic :boolean}> */
-@js.native
-trait Readonlynamestorepublishs extends LogEvent {
+trait Readonlynamestorepublishs
+  extends StObject
+     with LogEvent {
   
-  val name: storeDotpublish = js.native
+  val name: storeDotpublish
   
-  val optimistic: Boolean = js.native
+  val optimistic: Boolean
   
-  val source: RecordSource = js.native
+  val source: RecordSource
 }
 object Readonlynamestorepublishs {
   
   @scala.inline
-  def apply(name: storeDotpublish, optimistic: Boolean, source: RecordSource): Readonlynamestorepublishs = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optimistic = optimistic.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  def apply(optimistic: Boolean, source: RecordSource): Readonlynamestorepublishs = {
+    val __obj = js.Dynamic.literal(name = "store.publish", optimistic = optimistic.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamestorepublishs]
   }
   

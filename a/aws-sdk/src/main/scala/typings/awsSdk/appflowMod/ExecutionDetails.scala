@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionDetails extends StObject {
   
   /**
     *  Describes the details of the most recent flow run. 
     */
-  var mostRecentExecutionMessage: js.UndefOr[MostRecentExecutionMessage] = js.native
+  var mostRecentExecutionMessage: js.UndefOr[MostRecentExecutionMessage] = js.undefined
   
   /**
     *  Specifies the status of the most recent flow run. 
     */
-  var mostRecentExecutionStatus: js.UndefOr[ExecutionStatus] = js.native
+  var mostRecentExecutionStatus: js.UndefOr[ExecutionStatus] = js.undefined
   
   /**
     *  Specifies the time of the most recent flow run. 
     */
-  var mostRecentExecutionTime: js.UndefOr[Date] = js.native
+  var mostRecentExecutionTime: js.UndefOr[Date] = js.undefined
 }
 object ExecutionDetails {
   

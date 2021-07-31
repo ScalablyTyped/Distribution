@@ -3,19 +3,17 @@ package typings.reactDataGrid
 import typings.reactDataGrid.AdazzleReactDataGrid.SelectionParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Callback extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var icon: String = js.native
+    var icon: String
     
-    var text: String = js.native
+    var text: String
   }
   object Callback {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Caption extends StObject {
     
-    var caption: String = js.native
+    var caption: String
     
-    var id: Double = js.native
+    var id: Double
   }
   object Caption {
     
@@ -65,22 +62,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ js.Any = js.native
+    var Data: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Data */ js.Any
     
-    var DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ js.Any = js.native
+    var DraggableHeader: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DraggableHeader */ js.Any
     
-    var Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ js.Any = js.native
+    var Editors: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Editors */ js.Any
     
-    var Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ js.Any = js.native
+    var Filters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Filters */ js.Any
     
-    var Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ js.Any = js.native
+    var Formatters: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Formatters */ js.Any
     
-    var Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any = js.native
+    var Menu: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Menu */ js.Any
     
-    var Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any = js.native
+    var Toolbar: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Toolbar */ js.Any
   }
   object Data {
     
@@ -126,18 +122,17 @@ object anon {
     }
   }
   
-  @js.native
   trait EnableShiftSelect[T] extends StObject {
     
-    var enableShiftSelect: js.UndefOr[Boolean] = js.native
+    var enableShiftSelect: js.UndefOr[Boolean] = js.undefined
     
-    var onRowsDeselected: js.UndefOr[js.Function1[/* rows */ js.Array[SelectionParams[T]], Unit]] = js.native
+    var onRowsDeselected: js.UndefOr[js.Function1[/* rows */ js.Array[SelectionParams[T]], Unit]] = js.undefined
     
-    var onRowsSelected: js.UndefOr[js.Function1[/* rows */ js.Array[SelectionParams[T]], Unit]] = js.native
+    var onRowsSelected: js.UndefOr[js.Function1[/* rows */ js.Array[SelectionParams[T]], Unit]] = js.undefined
     
-    var selectBy: js.UndefOr[Indexes] = js.native
+    var selectBy: js.UndefOr[Indexes] = js.undefined
     
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
   }
   object EnableShiftSelect {
     
@@ -148,7 +143,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EnableShiftSelectMutableBuilder[Self <: EnableShiftSelect[_], T] (val x: Self with EnableShiftSelect[T]) extends AnyVal {
+    implicit class EnableShiftSelectMutableBuilder[Self <: EnableShiftSelect[?], T] (val x: Self & EnableShiftSelect[T]) extends AnyVal {
       
       @scala.inline
       def setEnableShiftSelect(value: Boolean): Self = StObject.set(x, "enableShiftSelect", value.asInstanceOf[js.Any])
@@ -182,12 +177,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var title: String = js.native
+    var title: String
   }
   object Id {
     
@@ -208,12 +202,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Idx extends StObject {
     
-    var idx: Double = js.native
+    var idx: Double
     
-    var rowIdx: Double = js.native
+    var rowIdx: Double
   }
   object Idx {
     
@@ -234,14 +227,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Indexes extends StObject {
     
-    var indexes: js.UndefOr[js.Array[Double]] = js.native
+    var indexes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var isSelectedKey: js.UndefOr[String] = js.native
+    var isSelectedKey: js.UndefOr[String] = js.undefined
     
-    var keys: js.UndefOr[RowKey] = js.native
+    var keys: js.UndefOr[RowKey] = js.undefined
   }
   object Indexes {
     
@@ -277,14 +269,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var idx: Double = js.native
+    var idx: Double
     
-    var name: String = js.native
+    var name: String
     
-    var rowIdx: Double = js.native
+    var rowIdx: Double
   }
   object Name {
     
@@ -308,17 +299,16 @@ object anon {
     }
   }
   
-  @js.native
   trait RowKey extends StObject {
     
-    var rowKey: String = js.native
+    var rowKey: String
     
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any]
   }
   object RowKey {
     
     @scala.inline
-    def apply(rowKey: String, values: js.Array[_]): RowKey = {
+    def apply(rowKey: String, values: js.Array[js.Any]): RowKey = {
       val __obj = js.Dynamic.literal(rowKey = rowKey.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowKey]
     }
@@ -330,23 +320,22 @@ object anon {
       def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
     
-    var value: String = js.native
+    var value: String
   }
   object Text {
     
@@ -373,10 +362,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Width extends StObject {
     
-    var width: String = js.native
+    var width: String
   }
   object Width {
     

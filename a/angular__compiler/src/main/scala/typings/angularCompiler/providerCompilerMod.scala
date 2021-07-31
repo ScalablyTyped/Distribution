@@ -11,29 +11,28 @@ import typings.angularCompiler.srcUtilMod.OutputContext
 import typings.angularCompiler.templateAstMod.ProviderAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerCompilerMod {
   
-  @JSImport("@angular/compiler/src/view_compiler/provider_compiler", "componentFactoryResolverProviderDef")
+  @JSImport("@angular/compiler/src/view_compiler/provider_compiler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def componentFactoryResolverProviderDef(
     reflector: CompileReflector,
     ctx: OutputContext,
     flags: NodeFlags,
     entryComponents: js.Array[CompileEntryComponentMetadata]
-  ): DepsExpr = js.native
+  ): DepsExpr = (^.asInstanceOf[js.Dynamic].applyDynamic("componentFactoryResolverProviderDef")(reflector.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], entryComponents.asInstanceOf[js.Any])).asInstanceOf[DepsExpr]
   
-  @JSImport("@angular/compiler/src/view_compiler/provider_compiler", "depDef")
-  @js.native
-  def depDef(ctx: OutputContext, dep: CompileDiDependencyMetadata): Expression = js.native
+  @scala.inline
+  def depDef(ctx: OutputContext, dep: CompileDiDependencyMetadata): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("depDef")(ctx.asInstanceOf[js.Any], dep.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
-  @JSImport("@angular/compiler/src/view_compiler/provider_compiler", "lifecycleHookToNodeFlag")
-  @js.native
-  def lifecycleHookToNodeFlag(lifecycleHook: LifecycleHooks): NodeFlags = js.native
+  @scala.inline
+  def lifecycleHookToNodeFlag(lifecycleHook: LifecycleHooks): NodeFlags = ^.asInstanceOf[js.Dynamic].applyDynamic("lifecycleHookToNodeFlag")(lifecycleHook.asInstanceOf[js.Any]).asInstanceOf[NodeFlags]
   
-  @JSImport("@angular/compiler/src/view_compiler/provider_compiler", "providerDef")
-  @js.native
-  def providerDef(ctx: OutputContext, providerAst: ProviderAst): DepsExpr = js.native
+  @scala.inline
+  def providerDef(ctx: OutputContext, providerAst: ProviderAst): DepsExpr = (^.asInstanceOf[js.Dynamic].applyDynamic("providerDef")(ctx.asInstanceOf[js.Any], providerAst.asInstanceOf[js.Any])).asInstanceOf[DepsExpr]
 }

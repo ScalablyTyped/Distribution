@@ -2,26 +2,26 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareTimelineConfig extends WxBaseMenuRequestConfig {
+trait ShareTimelineConfig
+  extends StObject
+     with WxBaseMenuRequestConfig {
   
   /**
     * 分享图标
     */
-  var imgUrl: js.UndefOr[String] = js.native
+  var imgUrl: js.UndefOr[String] = js.undefined
   
   /**
     * 分享链接，该链接域名或路径必须与当前页面对应的公众号 JS 安全域名一致
     */
-  var link: String = js.native
+  var link: String
   
   /**
     * 分享标题
     */
-  var title: String = js.native
+  var title: String
 }
 object ShareTimelineConfig {
   

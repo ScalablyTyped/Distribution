@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageEditorOptions extends StObject {
   
-  var error: js.UndefOr[js.Function1[/* e */ ImageEditorErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ ImageEditorErrorEvent, Unit]] = js.undefined
   
-  var execute: js.UndefOr[js.Function1[/* e */ ImageEditorExecuteEvent, Unit]] = js.native
+  var execute: js.UndefOr[js.Function1[/* e */ ImageEditorExecuteEvent, Unit]] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var imageLoaded: js.UndefOr[js.Function1[/* e */ ImageEditorImageLoadedEvent, Unit]] = js.native
+  var imageLoaded: js.UndefOr[js.Function1[/* e */ ImageEditorImageLoadedEvent, Unit]] = js.undefined
   
-  var imageRendered: js.UndefOr[js.Function1[/* e */ ImageEditorImageRenderedEvent, Unit]] = js.native
+  var imageRendered: js.UndefOr[js.Function1[/* e */ ImageEditorImageRenderedEvent, Unit]] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[ImageEditorMessages] = js.native
+  var messages: js.UndefOr[ImageEditorMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var saveAs: js.UndefOr[ImageEditorSaveAs] = js.native
+  var saveAs: js.UndefOr[ImageEditorSaveAs] = js.undefined
   
-  var toolbar: js.UndefOr[Boolean | ImageEditorToolbar] = js.native
+  var toolbar: js.UndefOr[Boolean | ImageEditorToolbar] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ImageEditorOptions {
   

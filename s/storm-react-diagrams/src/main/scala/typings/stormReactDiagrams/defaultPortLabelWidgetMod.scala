@@ -5,7 +5,6 @@ import typings.stormReactDiagrams.baseWidgetMod.BaseWidgetProps
 import typings.stormReactDiagrams.defaultPortModelMod.DefaultPortModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultPortLabelWidgetMod {
@@ -16,10 +15,11 @@ object defaultPortLabelWidgetMod {
     def this(props: js.Any) = this()
   }
   
-  @js.native
-  trait DefaultPortLabelProps extends BaseWidgetProps {
+  trait DefaultPortLabelProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var model: DefaultPortModel = js.native
+    var model: DefaultPortModel
   }
   object DefaultPortLabelProps {
     
@@ -37,6 +37,5 @@ object defaultPortLabelWidgetMod {
     }
   }
   
-  @js.native
   trait DefaultPortLabelState extends StObject
 }

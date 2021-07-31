@@ -5,21 +5,21 @@ import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskFailed
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TriggerNameTaskFailed extends WebhookTriggerType {
+trait TriggerNameTaskFailed
+  extends StObject
+     with WebhookTriggerType {
   
-  var triggerId: `4` = js.native
+  var triggerId: `4`
   
-  var triggerName: TaskFailed = js.native
+  var triggerName: TaskFailed
 }
 object TriggerNameTaskFailed {
   
   @scala.inline
-  def apply(triggerId: `4`, triggerName: TaskFailed): TriggerNameTaskFailed = {
-    val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+  def apply(triggerName: TaskFailed): TriggerNameTaskFailed = {
+    val __obj = js.Dynamic.literal(triggerId = 4, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameTaskFailed]
   }
   

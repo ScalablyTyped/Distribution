@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeedListItem extends ListItemBase {
+trait FeedListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>iconPress</code> event of this

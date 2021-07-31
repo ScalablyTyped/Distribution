@@ -1,25 +1,24 @@
 package typings.spotifyWebApiJs.SpotifyApi
 
-import typings.spotifyWebApiJs.spotifyWebApiJsStrings.artist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Full Artist Object
   * [artist object (full)](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
-trait ArtistObjectFull extends ArtistObjectSimplified {
+trait ArtistObjectFull
+  extends StObject
+     with ArtistObjectSimplified {
   
-  var followers: FollowersObject = js.native
+  var followers: FollowersObject
   
-  var genres: js.Array[String] = js.native
+  var genres: js.Array[String]
   
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
-  var popularity: Double = js.native
+  var popularity: Double
 }
 object ArtistObjectFull {
   
@@ -33,11 +32,10 @@ object ArtistObjectFull {
     images: js.Array[ImageObject],
     name: String,
     popularity: Double,
-    `type`: artist,
     uri: String
   ): ArtistObjectFull = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], followers = followers.asInstanceOf[js.Any], genres = genres.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("artist")
     __obj.asInstanceOf[ArtistObjectFull]
   }
   

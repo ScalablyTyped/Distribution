@@ -12,7 +12,7 @@ a simple chai plugin for better array assertions
 | Keywords           | chai, chai-plugin, testing, assert, expect, Array |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 1197960 |
+| # downloads        | 1513975 |
 | # stars            | 1 |
 
 ## Links

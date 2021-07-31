@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchConfigurationNamesType extends StObject {
   
   /**
     * The launch configuration names. If you omit this parameter, all launch configurations are described.
     */
-  var LaunchConfigurationNames: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchConfigurationNames] = js.native
+  var LaunchConfigurationNames: js.UndefOr[typings.awsSdk.autoscalingMod.LaunchConfigurationNames] = js.undefined
   
   /**
     * The maximum number of items to return with this call. The default value is 50 and the maximum value is 100.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.autoscalingMod.MaxRecords] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
 }
 object LaunchConfigurationNamesType {
   

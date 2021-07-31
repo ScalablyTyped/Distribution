@@ -2,29 +2,27 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies metdata updates to one device.
   */
-@js.native
 trait SchemaUpdateMetadataArguments extends StObject {
   
   /**
     * Device ID of the device.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * Device identifier.
     */
-  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
   /**
     * Required. The metadata to update.
     */
-  var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.native
+  var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.undefined
 }
 object SchemaUpdateMetadataArguments {
   

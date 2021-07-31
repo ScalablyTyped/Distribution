@@ -2,46 +2,44 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsKmsKeyDetails extends StObject {
   
   /**
     * The twelve-digit account ID of the AWS account that owns the CMK.
     */
-  var AWSAccountId: js.UndefOr[NonEmptyString] = js.native
+  var AWSAccountId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the CMK was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
   /**
     * A description of the key.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The globally unique identifier for the CMK.
     */
-  var KeyId: js.UndefOr[NonEmptyString] = js.native
+  var KeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The manager of the CMK. CMKs in your AWS account are either customer managed or AWS managed.
     */
-  var KeyManager: js.UndefOr[NonEmptyString] = js.native
+  var KeyManager: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The state of the CMK.
     */
-  var KeyState: js.UndefOr[NonEmptyString] = js.native
+  var KeyState: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source of the CMK's key material. When this value is AWS_KMS, AWS KMS created the key material. When this value is EXTERNAL, the key material was imported from your existing key management infrastructure or the CMK lacks key material. When this value is AWS_CLOUDHSM, the key material was created in the AWS CloudHSM cluster associated with a custom key store.
     */
-  var Origin: js.UndefOr[NonEmptyString] = js.native
+  var Origin: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsKmsKeyDetails {
   

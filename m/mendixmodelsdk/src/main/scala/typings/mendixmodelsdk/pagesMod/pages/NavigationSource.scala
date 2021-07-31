@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NavigationSource")
@@ -53,9 +52,8 @@ object NavigationSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NavigationSource.create")
-  @js.native
-  def create(model: IModel): NavigationSource = js.native
+  @scala.inline
+  def create(model: IModel): NavigationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NavigationSource]
   
   /**
     * Creates and returns a new NavigationSource instance in the SDK and on the server.
@@ -63,9 +61,8 @@ object NavigationSource {
     * of the parent MenuWidget element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NavigationSource.createIn")
-  @js.native
-  def createIn(container: MenuWidget): NavigationSource = js.native
+  @scala.inline
+  def createIn(container: MenuWidget): NavigationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NavigationSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.NavigationSource.structureTypeName")

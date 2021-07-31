@@ -2,27 +2,25 @@ package typings.azure.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALERT extends StObject {
   
-  var ALERT: String = js.native
+  var ALERT: String
   
-  var CRITICAL: String = js.native
+  var CRITICAL: String
   
-  var DEBUG: String = js.native
+  var DEBUG: String
   
-  var EMERGENCY: String = js.native
+  var EMERGENCY: String
   
-  var ERROR: String = js.native
+  var ERROR: String
   
-  var INFO: String = js.native
+  var INFO: String
   
-  var NOTICE: String = js.native
+  var NOTICE: String
   
-  var WARNING: String = js.native
+  var WARNING: String
 }
 object ALERT {
   

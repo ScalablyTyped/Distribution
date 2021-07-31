@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides info about a subject alternative name. */
-@js.native
 trait SubjectAlternativeNameInfo extends StObject {
   
   /** Gets the distinguished name. */
-  var distinguishedName: IVectorView[String] = js.native
+  var distinguishedName: IVectorView[String]
   
   /** Gets the DNS name. */
-  var dnsName: IVectorView[String] = js.native
+  var dnsName: IVectorView[String]
   
   /** Gets the email name. */
-  var emailName: IVectorView[String] = js.native
+  var emailName: IVectorView[String]
   
   /** Gets the IP address. */
-  var ipAddress: IVectorView[String] = js.native
+  var ipAddress: IVectorView[String]
   
   /** Gets the principal name. */
-  var principalName: IVectorView[String] = js.native
+  var principalName: IVectorView[String]
   
   /** Gets the URL. */
-  var url: IVectorView[String] = js.native
+  var url: IVectorView[String]
 }
 object SubjectAlternativeNameInfo {
   

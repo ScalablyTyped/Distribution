@@ -12,7 +12,7 @@ Karma plugin for snapshot testing.
 | Keywords           | karma-plugin, karma-adapter, snapshot |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 232746 |
+| # downloads        | 318880 |
 | # stars            | 0 |
 
 ## Links

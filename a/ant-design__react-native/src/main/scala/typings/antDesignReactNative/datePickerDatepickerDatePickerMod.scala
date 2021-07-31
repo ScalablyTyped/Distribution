@@ -10,7 +10,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerDatepickerDatePickerMod {
@@ -51,9 +50,8 @@ object datePickerDatepickerDatePickerMod {
       @scala.inline
       def mode_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
       
-      @JSImport("@ant-design/react-native/lib/date-picker/datepicker/DatePicker", "default.defaultProps.onDateChange")
-      @js.native
-      def onDateChange(): Unit = js.native
+      @scala.inline
+      def onDateChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onDateChange")().asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/date-picker/datepicker/DatePicker", "default.defaultProps.pickerPrefixCls")
       @js.native

@@ -12,28 +12,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.reshape
 import typings.arcgisJsApi.arcgisJsApiStrings.transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchViewModelRedoEvent extends StObject {
   
-  var graphics: js.Array[Graphic] = js.native
+  var graphics: js.Array[Graphic]
   
-  var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape = js.native
+  var tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
   
-  var `type`: redo = js.native
+  var `type`: redo
 }
 object SketchViewModelRedoEvent {
   
   @scala.inline
   def apply(
     graphics: js.Array[Graphic],
-    tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape,
-    `type`: redo
+    tool: point | multipoint | polyline | polygon | rectangle | circle | move | transform | reshape
   ): SketchViewModelRedoEvent = {
     val __obj = js.Dynamic.literal(graphics = graphics.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("redo")
     __obj.asInstanceOf[SketchViewModelRedoEvent]
   }
   

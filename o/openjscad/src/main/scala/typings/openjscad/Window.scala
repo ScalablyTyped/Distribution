@@ -4,20 +4,18 @@ import typings.std.URL
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var Worker: typings.std.Worker = js.native
+  var Worker: typings.std.Worker
   
-  var requestFileSystem: js.Any = js.native
+  var requestFileSystem: js.Any
   
-  var webkitRequestFileSystem: js.Any = js.native
+  var webkitRequestFileSystem: js.Any
   
   //    URL: URL;
-  var webkitURL: URL = js.native
+  var webkitURL: URL
 }
 object Window {
   

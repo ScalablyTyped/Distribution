@@ -3,21 +3,19 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.TransitionSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Close extends StObject {
   
   /**
     * Transition configuration when removing a screen.
     */
-  var close: TransitionSpec = js.native
+  var close: TransitionSpec
   
   /**
     * Transition configuration when adding a screen.
     */
-  var open: TransitionSpec = js.native
+  var open: TransitionSpec
 }
 object Close {
   

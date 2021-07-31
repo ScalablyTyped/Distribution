@@ -2,35 +2,33 @@ package typings.tweenjsTweenJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Back extends StObject {
     
-    var Back: In = js.native
+    var Back: In
     
-    var Bounce: In = js.native
+    var Bounce: In
     
-    var Circular: In = js.native
+    var Circular: In
     
-    var Cubic: In = js.native
+    var Cubic: In
     
-    var Elastic: In = js.native
+    var Elastic: In
     
-    var Exponential: In = js.native
+    var Exponential: In
     
-    var Linear: None = js.native
+    var Linear: None
     
-    var Quadratic: In = js.native
+    var Quadratic: In
     
-    var Quartic: In = js.native
+    var Quartic: In
     
-    var Quintic: In = js.native
+    var Quintic: In
     
-    var Sinusoidal: In = js.native
+    var Sinusoidal: In
   }
   object Back {
     
@@ -90,16 +88,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bernstein extends StObject {
     
-    def Bernstein(n: Double, i: Double): Double = js.native
+    def Bernstein(n: Double, i: Double): Double
     
-    def CatmullRom(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
+    def CatmullRom(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double
     
-    def Factorial(n: Double): Double = js.native
+    def Factorial(n: Double): Double
     
-    def Linear(p0: Double, p1: Double, t: Double): Double = js.native
+    def Linear(p0: Double, p1: Double, t: Double): Double
   }
   object Bernstein {
     
@@ -131,16 +128,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bezier extends StObject {
     
-    def Bezier(v: js.Array[Double], k: Double): Double = js.native
+    def Bezier(v: js.Array[Double], k: Double): Double
     
-    def CatmullRom(v: js.Array[Double], k: Double): Double = js.native
+    def CatmullRom(v: js.Array[Double], k: Double): Double
     
-    def Linear(v: js.Array[Double], k: Double): Double = js.native
+    def Linear(v: js.Array[Double], k: Double): Double
     
-    var Utils: Bernstein = js.native
+    var Utils: Bernstein
   }
   object Bezier {
     
@@ -172,14 +168,13 @@ object anon {
     }
   }
   
-  @js.native
   trait In extends StObject {
     
-    def In(amount: Double): Double = js.native
+    def In(amount: Double): Double
     
-    def InOut(amount: Double): Double = js.native
+    def InOut(amount: Double): Double
     
-    def Out(amount: Double): Double = js.native
+    def Out(amount: Double): Double
   }
   object In {
     
@@ -203,10 +198,9 @@ object anon {
     }
   }
   
-  @js.native
   trait None extends StObject {
     
-    def None(amount: Double): Double = js.native
+    def None(amount: Double): Double
   }
   object None {
     
@@ -224,14 +218,13 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofSequence extends StObject {
     
     /* static member */
-    var _nextId: js.Any = js.native
+    var _nextId: js.Any
     
     /* static member */
-    def nextId(): Double = js.native
+    def nextId(): Double
   }
   object TypeofSequence {
     

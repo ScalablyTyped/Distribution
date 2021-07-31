@@ -13,7 +13,6 @@ import typings.stripe.mod.refunds.IRefundCreationOptions
 import typings.stripe.mod.refunds.IRefundListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.ChargeRefunds")
@@ -41,19 +40,19 @@ class ChargeRefunds protected () extends StripeResource {
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[
       /* data */ IRefundCreationOptions, 
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[
       /* options */ HeaderOptions, 
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function1[/* response */ js.UndefOr[IResponseFn[IRefund]], js.Promise[IRefund]]
   ]) = js.native
   
@@ -69,19 +68,19 @@ class ChargeRefunds protected () extends StripeResource {
       /* response */ js.UndefOr[IResponseFn[IList[IRefund]]], 
       IListPromise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[
       /* data */ IRefundListOptions, 
       /* response */ js.UndefOr[IResponseFn[IList[IRefund]]], 
       IListPromise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[
       /* options */ HeaderOptions, 
       /* response */ js.UndefOr[IResponseFn[IList[IRefund]]], 
       IListPromise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function1[/* response */ js.UndefOr[IResponseFn[IList[IRefund]]], IListPromise[IRefund]]
   ]) = js.native
   
@@ -96,21 +95,21 @@ class ChargeRefunds protected () extends StripeResource {
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function3[
       /* id */ String, 
       /* data */ IDataOptions, 
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function3[
       /* id */ String, 
       /* options */ HeaderOptions, 
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function2[
       /* id */ String, 
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
@@ -132,7 +131,7 @@ class ChargeRefunds protected () extends StripeResource {
       /* response */ js.UndefOr[IResponseFn[IRefund]], 
       js.Promise[IRefund]
     ]
-  ]) with (js.UndefOr[
+  ]) & (js.UndefOr[
     js.Function3[
       /* id */ String, 
       /* data */ IDataOptionsWithMetadata, 

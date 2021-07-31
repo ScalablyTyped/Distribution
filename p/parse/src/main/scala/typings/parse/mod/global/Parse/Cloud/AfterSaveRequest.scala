@@ -4,13 +4,13 @@ import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AfterSaveRequest extends TriggerRequest {
+trait AfterSaveRequest
+  extends StObject
+     with TriggerRequest {
   
-  var context: js.Object = js.native
+  var context: js.Object
 }
 object AfterSaveRequest {
   

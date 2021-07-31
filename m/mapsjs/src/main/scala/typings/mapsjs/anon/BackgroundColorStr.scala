@@ -2,35 +2,33 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorStr extends StObject {
   
-  var backgroundColorStr: js.UndefOr[String] = js.native
+  var backgroundColorStr: js.UndefOr[String] = js.undefined
   
-  var bleedRatio: js.UndefOr[Double] = js.native
+  var bleedRatio: js.UndefOr[Double] = js.undefined
   
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
-  var layerFill: js.UndefOr[js.Object] = js.native
+  var layerFill: js.UndefOr[js.Object] = js.undefined
   
-  var layerOutline: js.UndefOr[js.Object] = js.native
+  var layerOutline: js.UndefOr[js.Object] = js.undefined
   
-  var layerVisibility: js.UndefOr[js.Object] = js.native
+  var layerVisibility: js.UndefOr[js.Object] = js.undefined
   
-  var layerWhere: js.UndefOr[js.Object] = js.native
+  var layerWhere: js.UndefOr[js.Object] = js.undefined
   
-  var mapCacheName: js.UndefOr[String] = js.native
+  var mapCacheName: js.UndefOr[String] = js.undefined
   
-  var mapCacheOption: js.UndefOr[String] = js.native
+  var mapCacheOption: js.UndefOr[String] = js.undefined
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
-  var useQuadKeyForMapCacheName: js.UndefOr[Boolean] = js.native
+  var useQuadKeyForMapCacheName: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object BackgroundColorStr {
   

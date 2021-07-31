@@ -3,23 +3,21 @@ package typings.antdMobileRn.anon
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveTextColor extends StObject {
   
-  var activeTextColor: String = js.native
+  var activeTextColor: String
   
-  var inactiveTextColor: String = js.native
+  var inactiveTextColor: String
   
-  var tab: ViewStyle = js.native
+  var tab: ViewStyle
   
-  var tabs: ViewStyle = js.native
+  var tabs: ViewStyle
   
-  var textStyle: ViewStyle = js.native
+  var textStyle: ViewStyle
   
-  var underline: ViewStyle = js.native
+  var underline: ViewStyle
 }
 object ActiveTextColor {
   

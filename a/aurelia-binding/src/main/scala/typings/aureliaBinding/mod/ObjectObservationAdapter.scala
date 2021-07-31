@@ -3,13 +3,11 @@ package typings.aureliaBinding.mod
 import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectObservationAdapter extends StObject {
   
-  def getObserver(`object`: js.Any, propertyName: String, descriptor: PropertyDescriptor): js.UndefOr[InternalPropertyObserver | Null] = js.native
+  def getObserver(`object`: js.Any, propertyName: String, descriptor: PropertyDescriptor): js.UndefOr[InternalPropertyObserver | Null]
 }
 object ObjectObservationAdapter {
   

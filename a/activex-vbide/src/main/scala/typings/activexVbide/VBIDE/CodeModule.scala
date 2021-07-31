@@ -2,7 +2,6 @@ package typings.activexVbide.VBIDE
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -36,35 +35,6 @@ trait CodeModule extends StObject {
     StartColumn: Double,
     EndLine: Double,
     EndColumn: Double,
-    WholeWord: js.UndefOr[scala.Nothing],
-    MatchCase: js.UndefOr[scala.Nothing],
-    PatternSearch: Boolean
-  ): Boolean = js.native
-  def Find(
-    Target: String,
-    StartLine: Double,
-    StartColumn: Double,
-    EndLine: Double,
-    EndColumn: Double,
-    WholeWord: js.UndefOr[scala.Nothing],
-    MatchCase: Boolean
-  ): Boolean = js.native
-  def Find(
-    Target: String,
-    StartLine: Double,
-    StartColumn: Double,
-    EndLine: Double,
-    EndColumn: Double,
-    WholeWord: js.UndefOr[scala.Nothing],
-    MatchCase: Boolean,
-    PatternSearch: Boolean
-  ): Boolean = js.native
-  def Find(
-    Target: String,
-    StartLine: Double,
-    StartColumn: Double,
-    EndLine: Double,
-    EndColumn: Double,
     WholeWord: Boolean
   ): Boolean = js.native
   def Find(
@@ -74,16 +44,6 @@ trait CodeModule extends StObject {
     EndLine: Double,
     EndColumn: Double,
     WholeWord: Boolean,
-    MatchCase: js.UndefOr[scala.Nothing],
-    PatternSearch: Boolean
-  ): Boolean = js.native
-  def Find(
-    Target: String,
-    StartLine: Double,
-    StartColumn: Double,
-    EndLine: Double,
-    EndColumn: Double,
-    WholeWord: Boolean,
     MatchCase: Boolean
   ): Boolean = js.native
   def Find(
@@ -94,6 +54,45 @@ trait CodeModule extends StObject {
     EndColumn: Double,
     WholeWord: Boolean,
     MatchCase: Boolean,
+    PatternSearch: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: Boolean,
+    MatchCase: Unit,
+    PatternSearch: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: Unit,
+    MatchCase: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: Unit,
+    MatchCase: Boolean,
+    PatternSearch: Boolean
+  ): Boolean = js.native
+  def Find(
+    Target: String,
+    StartLine: Double,
+    StartColumn: Double,
+    EndLine: Double,
+    EndColumn: Double,
+    WholeWord: Unit,
+    MatchCase: Unit,
     PatternSearch: Boolean
   ): Boolean = js.native
   

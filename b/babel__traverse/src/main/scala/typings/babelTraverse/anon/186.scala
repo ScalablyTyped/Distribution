@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.EnumDefaultedMember
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `186` extends StObject {
   
-  var `type`: EnumDefaultedMember = js.native
+  var `type`: EnumDefaultedMember
 }
 object `186` {
   
   @scala.inline
-  def apply(`type`: EnumDefaultedMember): `186` = {
+  def apply(): `186` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumDefaultedMember")
     __obj.asInstanceOf[`186`]
   }
   

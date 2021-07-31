@@ -6,7 +6,6 @@ import typings.baconjs.typesMod.EventSink
 import typings.baconjs.typesMod.Subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertydispatcherMod {

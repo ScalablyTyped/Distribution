@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.knuddelsUserappsApi.mod.KnuddelsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 	 * @see https://developer.knuddels.de/docs/classes/App.html
 	 */
-@js.native
 trait App extends StObject {
   
   /**
@@ -20,27 +18,27 @@ trait App extends StObject {
     StringDictionary[
       js.Function3[/* user */ User, /* params */ java.lang.String, /* command */ java.lang.String, Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayJoinChannel
   		 */
-  var mayJoinChannel: js.UndefOr[js.Function1[/* user */ User, ChannelJoinPermission]] = js.native
+  var mayJoinChannel: js.UndefOr[js.Function1[/* user */ User, ChannelJoinPermission]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicActionMessage
   		 */
-  var mayShowPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Boolean]] = js.native
+  var mayShowPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Boolean]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayShowPublicMessage
   		 */
-  var mayShowPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Boolean]] = js.native
+  var mayShowPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Boolean]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_mayUserDice
   		 */
-  var mayUserDice: js.UndefOr[js.Function2[/* user */ User, /* diceConfig */ DiceConfiguration, Boolean]] = js.native
+  var mayUserDice: js.UndefOr[js.Function2[/* user */ User, /* diceConfig */ DiceConfiguration, Boolean]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountChangedKnuddelAmount
@@ -53,7 +51,7 @@ trait App extends StObject {
       /* newKnuddelAmount */ KnuddelAmount, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAccountReceivedKnuddel
@@ -67,7 +65,7 @@ trait App extends StObject {
       /* knuddelAccount */ KnuddelAccount, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppEventReceived
@@ -79,23 +77,23 @@ trait App extends StObject {
       /* data */ KnuddelsEvent, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onAppStart
   		 */
-  var onAppStart: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAppStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onBeforeKnuddelReceived
   		 */
-  var onBeforeKnuddelReceived: js.UndefOr[js.Function1[/* knuddelTransfer */ KnuddelTransfer, Unit]] = js.native
+  var onBeforeKnuddelReceived: js.UndefOr[js.Function1[/* knuddelTransfer */ KnuddelTransfer, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onDeveloperCommand
   		 * @since AppServer 108662, ChatServer 108662
   		 */
-  var onDeveloperCommand: js.UndefOr[js.Function2[/* user */ User, /* params */ java.lang.String, Unit]] = js.native
+  var onDeveloperCommand: js.UndefOr[js.Function2[/* user */ User, /* params */ java.lang.String, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onEventReceived
@@ -108,7 +106,7 @@ trait App extends StObject {
       /* appContentSession */ AppContentSession, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onKnuddelReceived
@@ -121,57 +119,57 @@ trait App extends StObject {
       /* transferReason */ java.lang.String, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrepareShutdown
   		 */
-  var onPrepareShutdown: js.UndefOr[js.Function1[/* secondsTillShutdown */ Double, Unit]] = js.native
+  var onPrepareShutdown: js.UndefOr[js.Function1[/* secondsTillShutdown */ Double, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPrivateMessage
   		 */
-  var onPrivateMessage: js.UndefOr[js.Function1[/* privateMessage */ PrivateMessage, Unit]] = js.native
+  var onPrivateMessage: js.UndefOr[js.Function1[/* privateMessage */ PrivateMessage, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicActionMessage
   		 */
-  var onPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Unit]] = js.native
+  var onPublicActionMessage: js.UndefOr[js.Function1[/* publicActionMessage */ PublicActionMessage, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicEventMessage
   		 */
-  var onPublicEventMessage: js.UndefOr[js.Function1[/* publicEventMessage */ PublicEventMessage, Unit]] = js.native
+  var onPublicEventMessage: js.UndefOr[js.Function1[/* publicEventMessage */ PublicEventMessage, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onPublicMessage
   		 */
-  var onPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Unit]] = js.native
+  var onPublicMessage: js.UndefOr[js.Function1[/* publicMessage */ PublicMessage, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onShutdown
   		 */
-  var onShutdown: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShutdown: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDeleted
   		 */
-  var onUserDeleted: js.UndefOr[js.Function2[/* userId */ Double, /* userPersistence */ UserPersistence, Unit]] = js.native
+  var onUserDeleted: js.UndefOr[js.Function2[/* userId */ Double, /* userPersistence */ UserPersistence, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserDiced
   		 */
-  var onUserDiced: js.UndefOr[js.Function1[/* diceEvent */ DiceEvent, Unit]] = js.native
+  var onUserDiced: js.UndefOr[js.Function1[/* diceEvent */ DiceEvent, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserJoined
   		 */
-  var onUserJoined: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.native
+  var onUserJoined: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.undefined
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#method_onUserLeft
   		 */
-  var onUserLeft: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.native
+  var onUserLeft: js.UndefOr[js.Function1[/* user */ User, Unit]] = js.undefined
 }
 object App {
   

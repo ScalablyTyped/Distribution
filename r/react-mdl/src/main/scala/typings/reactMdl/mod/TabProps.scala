@@ -3,21 +3,20 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with CustomRenderedComponent {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var cssPrefix: js.UndefOr[String] = js.native
+  var cssPrefix: js.UndefOr[String] = js.undefined
   
-  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, _]] = js.native
+  var onTabClick: js.UndefOr[js.Function1[/* tabId */ Double, js.Any]] = js.undefined
   
-  var tabId: js.UndefOr[Double] = js.native
+  var tabId: js.UndefOr[Double] = js.undefined
 }
 object TabProps {
   
@@ -43,7 +42,7 @@ object TabProps {
     def setCssPrefixUndefined: Self = StObject.set(x, "cssPrefix", js.undefined)
     
     @scala.inline
-    def setOnTabClick(value: /* tabId */ Double => _): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
+    def setOnTabClick(value: /* tabId */ Double => js.Any): Self = StObject.set(x, "onTabClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnTabClickUndefined: Self = StObject.set(x, "onTabClick", js.undefined)

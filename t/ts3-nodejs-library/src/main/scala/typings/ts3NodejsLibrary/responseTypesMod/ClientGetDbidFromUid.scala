@@ -3,15 +3,15 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientGetDbidFromUid extends ResponseEntry {
+trait ClientGetDbidFromUid
+  extends StObject
+     with ResponseEntry {
   
-  var cldbid: String = js.native
+  var cldbid: String
   
-  var cluid: String = js.native
+  var cluid: String
 }
 object ClientGetDbidFromUid {
   

@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ControlCoordinates class.
   */
-@js.native
 trait ASPxClientControlCoordinates extends StObject {
   
   /**
     * Gets the point's pane.
     */
-  var pane: ASPxClientXYDiagramPane = js.native
+  var pane: ASPxClientXYDiagramPane
   
   /**
     * Gets the point's visibility state.
     */
-  var visibility: String = js.native
+  var visibility: String
   
   /**
     * Gets the point's X-coordinate, in pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Gets the point's Y-coordinate, in pixels.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object ASPxClientControlCoordinates {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrustsRequest extends StObject {
   
   /**
     * The Directory ID of the AWS directory that is a part of the requested trust relationship.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The maximum number of objects to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.directoryserviceMod.Limit] = js.undefined
   
   /**
     * The DescribeTrustsResult.NextToken value from a previous call to DescribeTrusts. Pass null if this is the first call.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * A list of identifiers of the trust relationships for which to obtain the information. If this member is null, all trust relationships that belong to the current account are returned. An empty list results in an InvalidParameterException being thrown.
     */
-  var TrustIds: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustIds] = js.native
+  var TrustIds: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustIds] = js.undefined
 }
 object DescribeTrustsRequest {
   

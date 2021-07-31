@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningGroups extends StObject {
   
   /**
     * The UTC DateTime when the workspace user authorization was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user who created the signing group.
     */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The email address for the signing group. You can use a group email address to email all of the group members at the same time.
     */
-  var groupEmail: js.UndefOr[String] = js.native
+  var groupEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the group. The search_text provided in the call automatically performs a wild card search on group_name.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * The group type. Possible values include:
@@ -45,28 +43,28 @@ trait SigningGroups extends StObject {
     *
     * <!-- More? To do -->
     */
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the signing group was last modified.
     */
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
   /**
     * The user id (GUID) of the user who last modified this user record.
     */
-  var modifiedBy: js.UndefOr[String] = js.native
+  var modifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true** and the feature is enabled in the sender's account, the signing recipient is required to draw signatures and initials at each
     * signature/initial tab ( instead of adopting a signature/initial style or only drawing a signature/initial once).
     */
-  var signingGroupId: js.UndefOr[String] = js.native
+  var signingGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * User management information.
     */
-  var users: js.UndefOr[js.Array[SigningGroupUser]] = js.native
+  var users: js.UndefOr[js.Array[SigningGroupUser]] = js.undefined
 }
 object SigningGroups {
   

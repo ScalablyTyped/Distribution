@@ -2,47 +2,45 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentJobScheduleInfo extends StObject {
   
-  var activeEndDate: String = js.native
+  var activeEndDate: String
   
-  var activeEndTimeOfDay: String = js.native
+  var activeEndTimeOfDay: String
   
-  var activeStartDate: String = js.native
+  var activeStartDate: String
   
-  var activeStartTimeOfDay: String = js.native
+  var activeStartTimeOfDay: String
   
-  var dateCreated: String = js.native
+  var dateCreated: String
   
-  var description: String = js.native
+  var description: String
   
-  var frequencyInterval: Double = js.native
+  var frequencyInterval: Double
   
-  var frequencyRecurrenceFactor: Double = js.native
+  var frequencyRecurrenceFactor: Double
   
-  var frequencyRelativeIntervals: FrequencyRelativeIntervals = js.native
+  var frequencyRelativeIntervals: FrequencyRelativeIntervals
   
-  var frequencySubDayInterval: Double = js.native
+  var frequencySubDayInterval: Double
   
-  var frequencySubDayTypes: FrequencySubDayTypes = js.native
+  var frequencySubDayTypes: FrequencySubDayTypes
   
-  var frequencyTypes: FrequencyTypes = js.native
+  var frequencyTypes: FrequencyTypes
   
-  var id: Double = js.native
+  var id: Double
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var jobCount: Double = js.native
+  var jobCount: Double
   
-  var jobName: String = js.native
+  var jobName: String
   
-  var name: String = js.native
+  var name: String
   
-  var scheduleUid: String = js.native
+  var scheduleUid: String
 }
 object AgentJobScheduleInfo {
   

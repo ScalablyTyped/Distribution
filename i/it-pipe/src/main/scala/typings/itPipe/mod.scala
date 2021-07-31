@@ -2,66 +2,59 @@ package typings.itPipe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("it-pipe", JSImport.Default)
+  @JSImport("it-pipe", JSImport.Namespace)
   @js.native
-  def default(first: js.Any, rest: js.Any*): js.Any = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
-  def default[A, B](first: A, second: js.Function1[/* source */ A, B]): B = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
-  def default[A, B](first: js.Function0[A], second: js.Function1[/* source */ A, B]): B = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
-  def default[A, B, C](first: A, second: js.Function1[/* source */ A, B], third: js.Function1[/* source */ B, C]): C = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(first: js.Any, rest: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default[A, B](first: A, second: js.Function1[/* source */ A, B]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[B]
+  @scala.inline
+  def default[A, B](first: js.Function0[A], second: js.Function1[/* source */ A, B]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[B]
+  @scala.inline
+  def default[A, B, C](first: A, second: js.Function1[/* source */ A, B], third: js.Function1[/* source */ B, C]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[C]
+  @scala.inline
   def default[A, B, C](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C]
-  ): C = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[C]
+  @scala.inline
   def default[A, B, C, D](
     first: A,
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D]
-  ): D = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): D = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
   def default[A, B, C, D](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D]
-  ): D = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): D = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
   def default[A, B, C, D, E](
     first: A,
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E]
-  ): E = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): E = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any])).asInstanceOf[E]
+  @scala.inline
   def default[A, B, C, D, E](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E]
-  ): E = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): E = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any])).asInstanceOf[E]
+  @scala.inline
   def default[A, B, C, D, E, F](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -69,9 +62,8 @@ object mod {
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F]
-  ): F = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): F = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any])).asInstanceOf[F]
+  @scala.inline
   def default[A, B, C, D, E, F](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -79,9 +71,8 @@ object mod {
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F]
-  ): F = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): F = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any])).asInstanceOf[F]
+  @scala.inline
   def default[A, B, C, D, E, F, G](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -90,9 +81,8 @@ object mod {
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G]
-  ): G = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def default[A, B, C, D, E, F, G](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -101,9 +91,8 @@ object mod {
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G]
-  ): G = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -113,9 +102,8 @@ object mod {
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H]
-  ): H = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): H = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any])).asInstanceOf[H]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -125,9 +113,8 @@ object mod {
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H]
-  ): H = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): H = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any])).asInstanceOf[H]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H, I](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -138,9 +125,8 @@ object mod {
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I]
-  ): I = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H, I](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -151,9 +137,8 @@ object mod {
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I]
-  ): I = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H, I, J](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -165,9 +150,8 @@ object mod {
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I],
     tenth: js.Function1[/* source */ I, J]
-  ): I = js.native
-  @JSImport("it-pipe", JSImport.Default)
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any], tenth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def default[A, B, C, D, E, F, G, H, I, J](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -179,63 +163,53 @@ object mod {
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I],
     tenth: js.Function1[/* source */ I, J]
-  ): I = js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any], tenth.asInstanceOf[js.Any])).asInstanceOf[I]
   
-  @JSImport("it-pipe", "pipe")
-  @js.native
-  def pipe(first: js.Any, rest: js.Any*): js.Any = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
-  def pipe[A, B](first: A, second: js.Function1[/* source */ A, B]): B = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
-  def pipe[A, B](first: js.Function0[A], second: js.Function1[/* source */ A, B]): B = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
-  def pipe[A, B, C](first: A, second: js.Function1[/* source */ A, B], third: js.Function1[/* source */ B, C]): C = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  @scala.inline
+  def pipe(first: js.Any, rest: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], rest.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def pipe[A, B](first: A, second: js.Function1[/* source */ A, B]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[B]
+  @scala.inline
+  def pipe[A, B](first: js.Function0[A], second: js.Function1[/* source */ A, B]): B = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[B]
+  @scala.inline
+  def pipe[A, B, C](first: A, second: js.Function1[/* source */ A, B], third: js.Function1[/* source */ B, C]): C = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[C]
+  @scala.inline
   def pipe[A, B, C](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C]
-  ): C = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[C]
+  @scala.inline
   def pipe[A, B, C, D](
     first: A,
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D]
-  ): D = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): D = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
   def pipe[A, B, C, D](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D]
-  ): D = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): D = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
   def pipe[A, B, C, D, E](
     first: A,
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E]
-  ): E = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): E = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any])).asInstanceOf[E]
+  @scala.inline
   def pipe[A, B, C, D, E](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
     third: js.Function1[/* source */ B, C],
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E]
-  ): E = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): E = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any])).asInstanceOf[E]
+  @scala.inline
   def pipe[A, B, C, D, E, F](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -243,9 +217,8 @@ object mod {
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F]
-  ): F = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): F = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any])).asInstanceOf[F]
+  @scala.inline
   def pipe[A, B, C, D, E, F](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -253,9 +226,8 @@ object mod {
     fourth: js.Function1[/* source */ C, D],
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F]
-  ): F = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): F = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], fourth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any])).asInstanceOf[F]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -264,9 +236,8 @@ object mod {
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G]
-  ): G = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -275,9 +246,8 @@ object mod {
     fifth: js.Function1[/* source */ D, E],
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G]
-  ): G = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): G = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any])).asInstanceOf[G]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -287,9 +257,8 @@ object mod {
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H]
-  ): H = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): H = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any])).asInstanceOf[H]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -299,9 +268,8 @@ object mod {
     sixth: js.Function1[/* source */ E, F],
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H]
-  ): H = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): H = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any])).asInstanceOf[H]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H, I](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -312,9 +280,8 @@ object mod {
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I]
-  ): I = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H, I](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -325,9 +292,8 @@ object mod {
     seventh: js.Function1[/* source */ F, G],
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I]
-  ): I = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H, I, J](
     first: A,
     second: js.Function1[/* source */ A, B],
@@ -339,9 +305,8 @@ object mod {
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I],
     tenth: js.Function1[/* source */ I, J]
-  ): I = js.native
-  @JSImport("it-pipe", "pipe")
-  @js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any], tenth.asInstanceOf[js.Any])).asInstanceOf[I]
+  @scala.inline
   def pipe[A, B, C, D, E, F, G, H, I, J](
     first: js.Function0[A],
     second: js.Function1[/* source */ A, B],
@@ -353,5 +318,5 @@ object mod {
     eighth: js.Function1[/* source */ G, H],
     ninth: js.Function1[/* source */ H, I],
     tenth: js.Function1[/* source */ I, J]
-  ): I = js.native
+  ): I = (^.asInstanceOf[js.Dynamic].applyDynamic("pipe")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any], forth.asInstanceOf[js.Any], fifth.asInstanceOf[js.Any], sixth.asInstanceOf[js.Any], seventh.asInstanceOf[js.Any], eighth.asInstanceOf[js.Any], ninth.asInstanceOf[js.Any], tenth.asInstanceOf[js.Any])).asInstanceOf[I]
 }

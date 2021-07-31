@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Print extends Widget_ {
+trait Print
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -20,24 +21,23 @@ trait Print extends Widget_ {
 }
 object Print {
   
-  @js.native
   trait BeforeStartEventArgs extends StObject {
     
     /** Set this option as true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the printed element
       */
-    var content: js.UndefOr[js.Any] = js.native
+    var content: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Print model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of an event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeStartEventArgs {
     
@@ -76,67 +76,66 @@ object Print {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Append the custom HTML after the selected content.
       * @Default {null}
       */
-    var append: js.UndefOr[String] = js.native
+    var append: js.UndefOr[String] = js.undefined
     
     /** Event triggers before the document page or an element in it gets printed.
       */
-    var beforeStart: js.UndefOr[js.Function1[/* e */ BeforeStartEventArgs, Unit]] = js.native
+    var beforeStart: js.UndefOr[js.Function1[/* e */ BeforeStartEventArgs, Unit]] = js.undefined
     
     /** Prepend a docType to the document frame.
       * @Default {&lt;!doctype html&gt;}
       */
-    var docType: js.UndefOr[String] = js.native
+    var docType: js.UndefOr[String] = js.undefined
     
     /** A selector that specifies a particular element to be excluded from printing.
       * @Default {null}
       */
-    var excludeSelector: js.UndefOr[String] = js.native
+    var excludeSelector: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the URL of an external stylesheet can be included to customize and print that page.
       * @Default {null}
       */
-    var externalStyles: js.UndefOr[String] = js.native
+    var externalStyles: js.UndefOr[String] = js.undefined
     
     /** Specifies whether the global styles can be applied to the element to be printed.
       * @Default {true}
       */
-    var globalStyles: js.UndefOr[Boolean] = js.native
+    var globalStyles: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height of the print window.
       * @Default {454}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Prepends the custom HTML before the selected content.
       * @Default {null}
       */
-    var prepend: js.UndefOr[String] = js.native
+    var prepend: js.UndefOr[String] = js.undefined
     
     /** Allows printing the content in a new window.
       * @Default {false}
       */
-    var printInNewWindow: js.UndefOr[Boolean] = js.native
+    var printInNewWindow: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the period of time to wait before printing the content.
       * @Default {1000}
       */
-    var timeOutPeriod: js.UndefOr[Double] = js.native
+    var timeOutPeriod: js.UndefOr[Double] = js.undefined
     
     /** Sets the title of the print document.
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the print window.
       * @Default {1024}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     

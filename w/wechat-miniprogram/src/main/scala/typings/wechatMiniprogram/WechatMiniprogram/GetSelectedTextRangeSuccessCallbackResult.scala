@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSelectedTextRangeSuccessCallbackResult extends StObject {
   
   /** 输入框光标结束位置 */
-  var end: Double = js.native
+  var end: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 输入框光标起始位置 */
-  var start: Double = js.native
+  var start: Double
 }
 object GetSelectedTextRangeSuccessCallbackResult {
   

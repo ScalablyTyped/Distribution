@@ -2,15 +2,13 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISessionChannel extends StObject {
   
-  def onSession(session: Session): js.Any = js.native
+  def onSession(session: Session): js.Any
   
-  def sendSession(session: Session): Unit = js.native
+  def sendSession(session: Session): Unit
 }
 object ISessionChannel {
   

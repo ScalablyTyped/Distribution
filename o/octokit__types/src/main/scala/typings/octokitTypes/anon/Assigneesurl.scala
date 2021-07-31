@@ -2,103 +2,101 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assigneesurl extends StObject {
   
-  var archive_url: String = js.native
+  var archive_url: String
   
-  var assignees_url: String = js.native
+  var assignees_url: String
   
-  var blobs_url: String = js.native
+  var blobs_url: String
   
-  var branches_url: String = js.native
+  var branches_url: String
   
-  var collaborators_url: String = js.native
+  var collaborators_url: String
   
-  var comments_url: String = js.native
+  var comments_url: String
   
-  var commits_url: String = js.native
+  var commits_url: String
   
-  var compare_url: String = js.native
+  var compare_url: String
   
-  var contents_url: String = js.native
+  var contents_url: String
   
-  var contributors_url: String = js.native
+  var contributors_url: String
   
-  var deployments_url: String = js.native
+  var deployments_url: String
   
-  var description: String = js.native
+  var description: String
   
-  var downloads_url: String = js.native
+  var downloads_url: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var fork: Boolean = js.native
+  var fork: Boolean
   
-  var forks_url: String = js.native
+  var forks_url: String
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var git_commits_url: String = js.native
+  var git_commits_url: String
   
-  var git_refs_url: String = js.native
+  var git_refs_url: String
   
-  var git_tags_url: String = js.native
+  var git_tags_url: String
   
-  var hooks_url: String = js.native
+  var hooks_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var issue_comment_url: String = js.native
+  var issue_comment_url: String
   
-  var issue_events_url: String = js.native
+  var issue_events_url: String
   
-  var issues_url: String = js.native
+  var issues_url: String
   
-  var keys_url: String = js.native
+  var keys_url: String
   
-  var labels_url: String = js.native
+  var labels_url: String
   
-  var languages_url: String = js.native
+  var languages_url: String
   
-  var merges_url: String = js.native
+  var merges_url: String
   
-  var milestones_url: String = js.native
+  var milestones_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var notifications_url: String = js.native
+  var notifications_url: String
   
-  var owner: Avatarurl = js.native
+  var owner: Avatarurl
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var pulls_url: String = js.native
+  var pulls_url: String
   
-  var releases_url: String = js.native
+  var releases_url: String
   
-  var stargazers_url: String = js.native
+  var stargazers_url: String
   
-  var statuses_url: String = js.native
+  var statuses_url: String
   
-  var subscribers_url: String = js.native
+  var subscribers_url: String
   
-  var subscription_url: String = js.native
+  var subscription_url: String
   
-  var tags_url: String = js.native
+  var tags_url: String
   
-  var teams_url: String = js.native
+  var teams_url: String
   
-  var trees_url: String = js.native
+  var trees_url: String
   
-  var url: String = js.native
+  var url: String
 }
 object Assigneesurl {
   

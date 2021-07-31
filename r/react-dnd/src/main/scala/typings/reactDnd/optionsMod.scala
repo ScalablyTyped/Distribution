@@ -2,15 +2,13 @@ package typings.reactDnd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait DndOptions[Props] extends StObject {
     
-    var arePropsEqual: js.UndefOr[js.Function2[/* first */ Props, /* second */ Props, Boolean]] = js.native
+    var arePropsEqual: js.UndefOr[js.Function2[/* first */ Props, /* second */ Props, Boolean]] = js.undefined
   }
   object DndOptions {
     
@@ -21,7 +19,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class DndOptionsMutableBuilder[Self <: DndOptions[_], Props] (val x: Self with DndOptions[Props]) extends AnyVal {
+    implicit class DndOptionsMutableBuilder[Self <: DndOptions[?], Props] (val x: Self & DndOptions[Props]) extends AnyVal {
       
       @scala.inline
       def setArePropsEqual(value: (/* first */ Props, /* second */ Props) => Boolean): Self = StObject.set(x, "arePropsEqual", js.Any.fromFunction2(value))
@@ -31,7 +29,6 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait DragPreviewOptions extends StObject {
     
     /**
@@ -39,14 +36,14 @@ object optionsMod {
       * into the horizontal offset of the drag preview when their sizes don't match. 0 means “dock the preview to the left”, 0.5 means
       * “interpolate linearly” and 1 means “dock the preview to the right”.
       */
-    var anchorX: js.UndefOr[Double] = js.native
+    var anchorX: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional. A number between 0 and 1. By default, 0.5. Specifies how the offset relative to the drag source node is translated into
       * the vertical offset of the drag preview when their sizes don't match. 0 means “dock the preview to the top, 0.5 means “interpolate
       * linearly” and 1 means “dock the preview to the bottom.
       */
-    var anchorY: js.UndefOr[Double] = js.native
+    var anchorY: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional. A boolean. By default, false. If true, the component will learn that it is being dragged immediately as the drag
@@ -56,19 +53,19 @@ object optionsMod {
       * such as if you want to make the custom drag layers work in IE and you need to hide the original element without resorting to
       * an empty drag preview which IE doesn't support.
       */
-    var captureDraggingState: js.UndefOr[Boolean] = js.native
+    var captureDraggingState: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional. A number or null if not needed. By default, null. Specifies the vertical offset between the cursor and the drag preview
       * element. If offsetX has a value, anchorX won't be used.
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /**
       *  Optional. A number or null if not needed. By default, null. Specifies the vertical offset between the cursor and the drag
       *  preview element. If offsetY has a value, anchorY won't be used.
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
   }
   object DragPreviewOptions {
     
@@ -113,7 +110,6 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait DragSourceOptions extends StObject {
     
     /**
@@ -121,7 +117,7 @@ object optionsMod {
       * shows a special “copying” cursor, while 'move' corresponds to the “move” cursor. You might want to use
       * this option to provide a hint to the user about whether an action is destructive.
       */
-    var dropEffect: js.UndefOr[String] = js.native
+    var dropEffect: js.UndefOr[String] = js.undefined
   }
   object DragSourceOptions {
     

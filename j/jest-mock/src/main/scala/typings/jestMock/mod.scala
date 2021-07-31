@@ -11,7 +11,6 @@ import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jest-mock", "ModuleMocker")
   @js.native
-  class ModuleMockerCls protected () extends ModuleMockerClass {
+  class ModuleMockerCls protected ()
+    extends StObject
+       with ModuleMockerClass {
     /**
       * @see README.md
       * @param global Global object of the test environment, used to create
@@ -32,12 +33,12 @@ object mod extends Shortcut {
     def this(global: Global) = this()
   }
   
-  type FunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with String
+  type FunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) & String
   
   type Global = typings.node.NodeJS.Global
   
   @js.native
-  trait Mock[T, Y /* <: js.Array[_] */]
+  trait Mock[T, Y /* <: js.Array[js.Any] */]
     extends js.Function
        with MockInstance[T, Y]
        with Instantiable1[/* args */ Y, T] {
@@ -47,35 +48,34 @@ object mod extends Shortcut {
     ): T = js.native
   }
   
-  @js.native
-  trait MockFunctionMetadata[T, Y /* <: js.Array[_] */, Type] extends StObject {
+  trait MockFunctionMetadata[T, Y /* <: js.Array[js.Any] */, Type] extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var members: js.UndefOr[Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]]] = js.native
+    var members: js.UndefOr[Record[String, MockFunctionMetadata[T, Y, MockFunctionMetadataType]]] = js.undefined
     
-    var mockImpl: js.UndefOr[js.Function1[/* args */ Y, T]] = js.native
+    var mockImpl: js.UndefOr[js.Function1[/* args */ Y, T]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Double] = js.native
+    var ref: js.UndefOr[Double] = js.undefined
     
-    var refID: js.UndefOr[Double] = js.native
+    var refID: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object MockFunctionMetadata {
     
     @scala.inline
-    def apply[T, Y /* <: js.Array[_] */, Type](): MockFunctionMetadata[T, Y, Type] = {
+    def apply[T, Y /* <: js.Array[js.Any] */, Type](): MockFunctionMetadata[T, Y, Type] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockFunctionMetadata[T, Y, Type]]
     }
     
     @scala.inline
-    implicit class MockFunctionMetadataMutableBuilder[Self <: MockFunctionMetadata[_, _, _], T, Y /* <: js.Array[_] */, Type] (val x: Self with (MockFunctionMetadata[T, Y, Type])) extends AnyVal {
+    implicit class MockFunctionMetadataMutableBuilder[Self <: MockFunctionMetadata[?, ?, ?], T, Y /* <: js.Array[js.Any] */, Type] (val x: Self & (MockFunctionMetadata[T, Y, Type])) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -168,19 +168,18 @@ object mod extends Shortcut {
   /**
     * Represents the result of a single call to a mock function.
     */
-  @js.native
   trait MockFunctionResult extends StObject {
     
     /**
       * Indicates how the call completed.
       */
-    var `type`: MockFunctionResultType = js.native
+    var `type`: MockFunctionResultType
     
     /**
       * The value that was either thrown or returned by the function.
       * Undefined when type === 'incomplete'.
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object MockFunctionResult {
     
@@ -228,24 +227,23 @@ object mod extends Shortcut {
     def `throw`: typings.jestMock.jestMockStrings.`throw` = "throw".asInstanceOf[typings.jestMock.jestMockStrings.`throw`]
   }
   
-  @js.native
-  trait MockFunctionState[T, Y /* <: js.Array[_] */] extends StObject {
+  trait MockFunctionState[T, Y /* <: js.Array[js.Any] */] extends StObject {
     
-    var calls: js.Array[Y] = js.native
+    var calls: js.Array[Y]
     
-    var instances: js.Array[T] = js.native
+    var instances: js.Array[T]
     
-    var invocationCallOrder: js.Array[Double] = js.native
+    var invocationCallOrder: js.Array[Double]
     
     /**
       * List of results of calls to the mock function.
       */
-    var results: js.Array[MockFunctionResult] = js.native
+    var results: js.Array[MockFunctionResult]
   }
   object MockFunctionState {
     
     @scala.inline
-    def apply[T, Y /* <: js.Array[_] */](
+    def apply[T, Y /* <: js.Array[js.Any] */](
       calls: js.Array[Y],
       instances: js.Array[T],
       invocationCallOrder: js.Array[Double],
@@ -256,7 +254,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class MockFunctionStateMutableBuilder[Self <: MockFunctionState[_, _], T, Y /* <: js.Array[_] */] (val x: Self with (MockFunctionState[T, Y])) extends AnyVal {
+    implicit class MockFunctionStateMutableBuilder[Self <: MockFunctionState[?, ?], T, Y /* <: js.Array[js.Any] */] (val x: Self & (MockFunctionState[T, Y])) extends AnyVal {
       
       @scala.inline
       def setCalls(value: js.Array[Y]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
@@ -285,7 +283,7 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait MockInstance[T, Y /* <: js.Array[_] */] extends StObject {
+  trait MockInstance[T, Y /* <: js.Array[js.Any] */] extends StObject {
     
     var _isMockFunction: `true` = js.native
     
@@ -365,22 +363,22 @@ object mod extends Shortcut {
     
     def clearAllMocks(): Unit = js.native
     
-    def fn[T, Y /* <: js.Array[_] */](): Mock[T, Y] = js.native
-    def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
+    def fn[T, Y /* <: js.Array[js.Any] */](): Mock[T, Y] = js.native
+    def fn[T, Y /* <: js.Array[js.Any] */](implementation: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
     
     /**
       * @see README.md
       * @param _metadata Metadata for the mock in the schema returned by the
       * getMetadata method of this module.
       */
-    def generateFromMetadata[T, Y /* <: js.Array[_] */](_metadata: MockFunctionMetadata[T, Y, MockFunctionMetadataType]): Mock[T, Y] = js.native
+    def generateFromMetadata[T, Y /* <: js.Array[js.Any] */](_metadata: MockFunctionMetadata[T, Y, MockFunctionMetadataType]): Mock[T, Y] = js.native
     
     /**
       * @see README.md
       * @param component The component for which to retrieve metadata.
       */
-    def getMetadata[T, Y /* <: js.Array[_] */](component: T): (MockFunctionMetadata[T, Y, MockFunctionMetadataType]) | Null = js.native
-    def getMetadata[T, Y /* <: js.Array[_] */](component: T, _refs: Map[T, Double]): (MockFunctionMetadata[T, Y, MockFunctionMetadataType]) | Null = js.native
+    def getMetadata[T, Y /* <: js.Array[js.Any] */](component: T): (MockFunctionMetadata[T, Y, MockFunctionMetadataType]) | Null = js.native
+    def getMetadata[T, Y /* <: js.Array[js.Any] */](component: T, _refs: Map[T, Double]): (MockFunctionMetadata[T, Y, MockFunctionMetadataType]) | Null = js.native
     
     def isMockFunction[T](fn: js.Any): /* is jest-mock.jest-mock.Mock<T, std.Array<unknown>> */ Boolean = js.native
     
@@ -410,9 +408,9 @@ object mod extends Shortcut {
       ] = js.native
   }
   
-  type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) with String
+  type NonFunctionPropertyNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? never : K}[keyof T] */ js.Any) & String
   
-  type SpyInstance[T, Y /* <: js.Array[_] */] = MockInstance[T, Y]
+  type SpyInstance[T, Y /* <: js.Array[js.Any] */] = MockInstance[T, Y]
   
   type _To = ModuleMockerClass
   

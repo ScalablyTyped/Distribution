@@ -2,21 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesShrinkParams extends GenericParams {
+trait IndicesShrinkParams
+  extends StObject
+     with GenericParams {
   
-  var index: String = js.native
+  var index: String
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var target: String = js.native
+  var target: String
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String | Double] = js.native
+  var waitForActiveShards: js.UndefOr[String | Double] = js.undefined
 }
 object IndicesShrinkParams {
   

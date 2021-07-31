@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.disabled
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BasemapToggleViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented {
   
   /**

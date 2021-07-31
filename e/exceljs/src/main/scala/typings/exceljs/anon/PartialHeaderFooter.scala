@@ -2,28 +2,26 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.HeaderFooter> */
-@js.native
 trait PartialHeaderFooter extends StObject {
   
-  var differentFirst: js.UndefOr[Boolean] = js.native
+  var differentFirst: js.UndefOr[Boolean] = js.undefined
   
-  var differentOddEven: js.UndefOr[Boolean] = js.native
+  var differentOddEven: js.UndefOr[Boolean] = js.undefined
   
-  var evenFooter: js.UndefOr[String] = js.native
+  var evenFooter: js.UndefOr[String] = js.undefined
   
-  var evenHeader: js.UndefOr[String] = js.native
+  var evenHeader: js.UndefOr[String] = js.undefined
   
-  var firstFooter: js.UndefOr[String] = js.native
+  var firstFooter: js.UndefOr[String] = js.undefined
   
-  var firstHeader: js.UndefOr[String] = js.native
+  var firstHeader: js.UndefOr[String] = js.undefined
   
-  var oddFooter: js.UndefOr[String] = js.native
+  var oddFooter: js.UndefOr[String] = js.undefined
   
-  var oddHeader: js.UndefOr[String] = js.native
+  var oddHeader: js.UndefOr[String] = js.undefined
 }
 object PartialHeaderFooter {
   

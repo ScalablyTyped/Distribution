@@ -3,19 +3,17 @@ package typings.reactNativeChartsWrapper.anon
 import typings.reactNativeChartsWrapper.mod.EasingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationX extends StObject {
   
-  var durationX: js.UndefOr[Double] = js.native
+  var durationX: js.UndefOr[Double] = js.undefined
   
-  var durationY: js.UndefOr[Double] = js.native
+  var durationY: js.UndefOr[Double] = js.undefined
   
-  var easingX: js.UndefOr[EasingType] = js.native
+  var easingX: js.UndefOr[EasingType] = js.undefined
   
-  var easingY: js.UndefOr[EasingType] = js.native
+  var easingY: js.UndefOr[EasingType] = js.undefined
 }
 object DurationX {
   

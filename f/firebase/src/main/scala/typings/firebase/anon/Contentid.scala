@@ -5,20 +5,19 @@ import typings.firebase.mod.firebase.analytics.Item
 import typings.firebase.mod.firebase.analytics.Promotion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contentid
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var content_id: js.UndefOr[String] = js.native
+  var content_id: js.UndefOr[String] = js.undefined
   
-  var content_type: js.UndefOr[String] = js.native
+  var content_type: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[Item]] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+  var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
 }
 object Contentid {
   

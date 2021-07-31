@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfig extends StObject {
   
   /**
     * The type of encryption.
     */
-  var EncryptionType: typings.awsSdk.connectMod.EncryptionType = js.native
+  var EncryptionType: typings.awsSdk.connectMod.EncryptionType
   
   /**
     * The identifier of the encryption key.
     */
-  var KeyId: typings.awsSdk.connectMod.KeyId = js.native
+  var KeyId: typings.awsSdk.connectMod.KeyId
 }
 object EncryptionConfig {
   

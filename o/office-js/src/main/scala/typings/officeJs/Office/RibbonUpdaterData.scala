@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **Requirement set**: Ribbon 1.1
   */
-@js.native
 trait RibbonUpdaterData extends StObject {
   
   /**
     * Collection of tabs whose state is set with the call of `requestUpdate`.
   		 */
-  var tabs: js.Array[Tab] = js.native
+  var tabs: js.Array[Tab]
 }
 object RibbonUpdaterData {
   

@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subdocument extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val HasFile: Boolean = js.native
+  val HasFile: Boolean
   
-  val Level: Double = js.native
+  val Level: Double
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  def Open(): Document = js.native
+  def Open(): Document
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Path: String = js.native
+  val Path: String
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  def Split(Range: typings.activexWord.Word.Range): Unit = js.native
+  def Split(Range: typings.activexWord.Word.Range): Unit
   
   @JSName("Word.Subdocument_typekey")
-  var WordDotSubdocument_typekey: Subdocument = js.native
+  var WordDotSubdocument_typekey: Subdocument
 }
 object Subdocument {
   

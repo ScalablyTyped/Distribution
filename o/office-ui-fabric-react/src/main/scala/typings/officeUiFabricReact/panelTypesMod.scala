@@ -21,7 +21,6 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelTypesMod {
@@ -33,7 +32,7 @@ object panelTypesMod {
   object PanelType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PanelType with Double] = js.native
+    def apply(value: Double): js.UndefOr[PanelType & Double] = js.native
     
     /**
       * Renders the Panel in `custom` size using `customWidth`, anchored to the far side (right in LTR mode).
@@ -42,8 +41,10 @@ object panelTypesMod {
       * taking up 100% of the viewport width
       */
     @js.native
-    sealed trait custom extends PanelType
-    /* 7 */ val custom: typings.officeUiFabricReact.panelTypesMod.PanelType.custom with Double = js.native
+    sealed trait custom
+      extends StObject
+         with PanelType
+    /* 7 */ val custom: typings.officeUiFabricReact.panelTypesMod.PanelType.custom & Double = js.native
     
     /**
       * Renders the Panel in `custom` size using `customWidth`, anchored to the near side (left in LTR mode).
@@ -52,8 +53,10 @@ object panelTypesMod {
       * taking up 100% of the viewport width
       */
     @js.native
-    sealed trait customNear extends PanelType
-    /* 8 */ val customNear: typings.officeUiFabricReact.panelTypesMod.PanelType.customNear with Double = js.native
+    sealed trait customNear
+      extends StObject
+         with PanelType
+    /* 8 */ val customNear: typings.officeUiFabricReact.panelTypesMod.PanelType.customNear & Double = js.native
     
     /**
       * Renders the Panel in `extra large` size, anchored to the far side (right in LTR mode).
@@ -65,8 +68,10 @@ object panelTypesMod {
       * - XXXLarge (1920-up): 176px fixed left margin, fluid width, 40px left/right padding
       */
     @js.native
-    sealed trait extraLarge extends PanelType
-    /* 6 */ val extraLarge: typings.officeUiFabricReact.panelTypesMod.PanelType.extraLarge with Double = js.native
+    sealed trait extraLarge
+      extends StObject
+         with PanelType
+    /* 6 */ val extraLarge: typings.officeUiFabricReact.panelTypesMod.PanelType.extraLarge & Double = js.native
     
     /**
       * Renders the Panel in `large` size, anchored to the far side (right in LTR mode).
@@ -77,8 +82,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): 428px fixed left margin, fluid width, 40px left/right padding
       */
     @js.native
-    sealed trait large extends PanelType
-    /* 4 */ val large: typings.officeUiFabricReact.panelTypesMod.PanelType.large with Double = js.native
+    sealed trait large
+      extends StObject
+         with PanelType
+    /* 4 */ val large: typings.officeUiFabricReact.panelTypesMod.PanelType.large & Double = js.native
     
     /**
       * Renders the Panel in `large` size, anchored to the far side (right in LTR mode), with a fixed width at
@@ -90,8 +97,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): 940px width, 40px left/right padding
       */
     @js.native
-    sealed trait largeFixed extends PanelType
-    /* 5 */ val largeFixed: typings.officeUiFabricReact.panelTypesMod.PanelType.largeFixed with Double = js.native
+    sealed trait largeFixed
+      extends StObject
+         with PanelType
+    /* 5 */ val largeFixed: typings.officeUiFabricReact.panelTypesMod.PanelType.largeFixed & Double = js.native
     
     /**
       * Renders the Panel in `medium` size, anchored to the far side (right in LTR mode).
@@ -102,8 +111,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): 644px width, 40px left/right padding
       */
     @js.native
-    sealed trait medium extends PanelType
-    /* 3 */ val medium: typings.officeUiFabricReact.panelTypesMod.PanelType.medium with Double = js.native
+    sealed trait medium
+      extends StObject
+         with PanelType
+    /* 3 */ val medium: typings.officeUiFabricReact.panelTypesMod.PanelType.medium & Double = js.native
     
     /**
       * Renders the Panel in fixed-width `small` size, anchored to the far side (right in LTR mode).
@@ -114,8 +125,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): 340px width, 40px left/right padding
       */
     @js.native
-    sealed trait smallFixedFar extends PanelType
-    /* 1 */ val smallFixedFar: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedFar with Double = js.native
+    sealed trait smallFixedFar
+      extends StObject
+         with PanelType
+    /* 1 */ val smallFixedFar: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedFar & Double = js.native
     
     /**
       * Renders the Panel in fixed-width `small` size, anchored to the near side (left in LTR mode).
@@ -126,8 +139,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): 272px width, 40px left/right padding
       */
     @js.native
-    sealed trait smallFixedNear extends PanelType
-    /* 2 */ val smallFixedNear: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedNear with Double = js.native
+    sealed trait smallFixedNear
+      extends StObject
+         with PanelType
+    /* 2 */ val smallFixedNear: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFixedNear & Double = js.native
     
     /**
       * Renders the Panel with a `fluid` (full screen) width.
@@ -139,8 +154,10 @@ object panelTypesMod {
       * - XXLarge (1366-up): full screen width, 40px left/right padding
       */
     @js.native
-    sealed trait smallFluid extends PanelType
-    /* 0 */ val smallFluid: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFluid with Double = js.native
+    sealed trait smallFluid
+      extends StObject
+         with PanelType
+    /* 0 */ val smallFluid: typings.officeUiFabricReact.panelTypesMod.PanelType.smallFluid & Double = js.native
   }
   
   @js.native
@@ -169,63 +186,64 @@ object panelTypesMod {
       * panel's title, because the panel popup uses this ID as its aria-labelledby.
       */
     def apply(): Element | Null = js.native
-    def apply(props: js.UndefOr[scala.Nothing], defaultRender: js.UndefOr[scala.Nothing], headerTextId: String): Element | Null = js.native
-    def apply(props: js.UndefOr[scala.Nothing], defaultRender: IPanelHeaderRenderer): Element | Null = js.native
-    def apply(props: js.UndefOr[scala.Nothing], defaultRender: IPanelHeaderRenderer, headerTextId: String): Element | Null = js.native
+    def apply(props: Unit, defaultRender: Unit, headerTextId: String): Element | Null = js.native
+    def apply(props: Unit, defaultRender: IPanelHeaderRenderer): Element | Null = js.native
+    def apply(props: Unit, defaultRender: IPanelHeaderRenderer, headerTextId: String): Element | Null = js.native
     def apply(props: IPanelProps): Element | Null = js.native
-    def apply(props: IPanelProps, defaultRender: js.UndefOr[scala.Nothing], headerTextId: String): Element | Null = js.native
+    def apply(props: IPanelProps, defaultRender: Unit, headerTextId: String): Element | Null = js.native
     def apply(props: IPanelProps, defaultRender: IPanelHeaderRenderer): Element | Null = js.native
     def apply(props: IPanelProps, defaultRender: IPanelHeaderRenderer, headerTextId: String): Element | Null = js.native
   }
   
-  @js.native
-  trait IPanelProps extends HTMLAttributes[PanelBase] {
+  trait IPanelProps
+    extends StObject
+       with HTMLAttributes[PanelBase] {
     
     /**
       * Allow body scroll on content and overlay on touch devices. Changing after mounting has no effect.
       * @defaultvalue false
       */
-    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.native
+    var allowTouchBodyScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Aria label on close button
       */
-    var closeButtonAriaLabel: js.UndefOr[String] = js.native
+    var closeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Deprecated property. Serves no function.
       * @deprecated Serves no function.
       */
-    var componentId: js.UndefOr[String] = js.native
+    var componentId: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IPanel interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IPanel]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IPanel]] = js.undefined
     
     /**
       * Custom panel width, used only when `type` is set to `PanelType.custom`.
       */
-    var customWidth: js.UndefOr[String] = js.native
+    var customWidth: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the HTMLElement to focus on when exiting the FocusTrapZone.
       * @defaultvalue The element.target that triggered the Panel.
       */
-    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.native
+    var elementToFocusOnDismiss: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Indicates the selector for first focusable item.
       * Deprecated, use `focusTrapZoneProps`.
       * @deprecated Use `focusTrapZoneProps`.
       */
-    var firstFocusableSelector: js.UndefOr[String] = js.native
+    var firstFocusableSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Optional props to pass to the FocusTrapZone component to manage focus in the panel.
       */
-    var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.native
+    var focusTrapZoneProps: js.UndefOr[IFocusTrapZoneProps] = js.undefined
     
     /**
       * Indicates whether Panel should force focus inside the focus trap zone.
@@ -233,29 +251,29 @@ object panelTypesMod {
       * Deprecated, use `focusTrapZoneProps`.
       * @deprecated Use `focusTrapZoneProps`.
       */
-    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.native
+    var forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Has the close button visible.
       * @defaultvalue true
       */
-    var hasCloseButton: js.UndefOr[Boolean] = js.native
+    var hasCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional parameter to provider the class name for header text
       */
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Header text for the Panel.
       * @defaultvalue ""
       */
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
     
     /**
       * The props for header text container.
       */
-    var headerTextProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var headerTextProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       * Indicates if this Panel will ignore keeping track of HTMLElement that activated the Zone.
@@ -263,32 +281,32 @@ object panelTypesMod {
       * @defaultvalue false
       * @deprecated Use `focusTrapZoneProps`.
       */
-    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.native
+    var ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the panel uses a modal overlay or not
       * @defaultvalue true
       */
-    var isBlocking: js.UndefOr[Boolean] = js.native
+    var isBlocking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if content should stretch to fill available space putting footer at the bottom of the page
       * @defaultvalue false
       */
-    var isFooterAtBottom: js.UndefOr[Boolean] = js.native
+    var isFooterAtBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the panel is hidden on dismiss, instead of destroyed in the DOM.
       * Protects the contents from being destroyed when the panel is dismissed.
       * @defaultvalue false
       */
-    var isHiddenOnDismiss: js.UndefOr[Boolean] = js.native
+    var isHiddenOnDismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the panel can be light dismissed.
       * @defaultvalue false
       */
-    var isLightDismiss: js.UndefOr[Boolean] = js.native
+    var isLightDismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the panel is displayed.
@@ -297,100 +315,100 @@ object panelTypesMod {
       * If undefined, will allow the panel to control its own visility through open/dismiss methods.
       * @defaultvalue undefined
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional props to pass to the Layer component hosting the panel.
       */
-    var layerProps: js.UndefOr[ILayerProps] = js.native
+    var layerProps: js.UndefOr[ILayerProps] = js.undefined
     
     /**
       * A callback function for when the panel is closed, before the animation completes.
       * If the panel should NOT be dismissed based on some keyboard event, then simply call ev.preventDefault() on it
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]] = js.undefined
     
     /**
       * A callback function which is called **after** the Panel is dismissed and the animation is complete.
       * (If you need to update the Panel's `isOpen` prop in response to a dismiss event, use `onDismiss` instead.)
       */
-    var onDismissed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismissed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional custom function to handle clicks outside the panel in lightdismiss mode
       */
-    var onLightDismissClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLightDismissClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A callback function for when the Panel is opened, before the animation completes.
       */
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A callback function for when the Panel is opened, after the animation completes.
       */
-    var onOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional custom function to handle clicks outside this component
       */
-    var onOuterClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOuterClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional custom renderer for body region. Replaces any children passed into the component.
       */
-    var onRenderBody: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
+    var onRenderBody: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
     
     /**
       * Optional custom renderer for footer region. Replaces sticky footer.
       */
-    var onRenderFooter: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
+    var onRenderFooter: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
     
     /**
       * Custom renderer for content in the sticky footer
       */
-    var onRenderFooterContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
+    var onRenderFooterContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
     
     /**
       * Optional custom renderer for header region. Replaces current title
       */
-    var onRenderHeader: js.UndefOr[IPanelHeaderRenderer] = js.native
+    var onRenderHeader: js.UndefOr[IPanelHeaderRenderer] = js.undefined
     
     /**
       * Optional custom renderer navigation region. Replaces the region that contains the close button.
       */
-    var onRenderNavigation: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
+    var onRenderNavigation: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
     
     /**
       * Optional custom renderer for content in the navigation region. Replaces current close button.
       */
-    var onRenderNavigationContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.native
+    var onRenderNavigationContent: js.UndefOr[IRenderFunction[IPanelProps]] = js.undefined
     
     /**
       * Optional props to pass to the Overlay component that the panel uses.
       */
-    var overlayProps: js.UndefOr[IOverlayProps] = js.native
+    var overlayProps: js.UndefOr[IOverlayProps] = js.undefined
     
     /**
       * Optional props to pass the Popup component that the panel uses.
       */
-    var popupProps: js.UndefOr[IPopupProps] = js.native
+    var popupProps: js.UndefOr[IPopupProps] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IPanelStyleProps, IPanelStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Type of the panel.
       * @defaultvalue PanelType.smallFixedFar
       */
-    var `type`: js.UndefOr[PanelType] = js.native
+    var `type`: js.UndefOr[PanelType] = js.undefined
   }
   object IPanelProps {
     
@@ -643,74 +661,73 @@ object panelTypesMod {
     }
   }
   
-  @js.native
   trait IPanelStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Classname for FocusTrapZone element
       */
-    var focusTrapZoneClassName: js.UndefOr[String] = js.native
+    var focusTrapZoneClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Panel has close button
       */
-    var hasCloseButton: js.UndefOr[Boolean] = js.native
+    var hasCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines where the header is rendered based on whether the user
       * has passed in a custom onRenderNavigation or onRenderNavigationContent render callback
       */
-    var hasCustomNavigation: js.UndefOr[Boolean] = js.native
+    var hasCustomNavigation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional parameter to provider the class name for header text
       */
-    var headerClassName: js.UndefOr[String] = js.native
+    var headerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Is animation currently running
       */
-    var isAnimating: js.UndefOr[Boolean] = js.native
+    var isAnimating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines if content should stretch to fill available space putting footer at the bottom of the page
       */
-    var isFooterAtBottom: js.UndefOr[Boolean] = js.native
+    var isFooterAtBottom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Based on state value setting footer to sticky or not
       */
-    var isFooterSticky: js.UndefOr[Boolean] = js.native
+    var isFooterSticky: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is panel hidden on dismiss
       */
-    var isHiddenOnDismiss: js.UndefOr[Boolean] = js.native
+    var isHiddenOnDismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is panel on right side
       */
-    var isOnRightSide: js.UndefOr[Boolean] = js.native
+    var isOnRightSide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Is Panel open
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /**
       * Type of the panel.
       */
-    var `type`: js.UndefOr[PanelType] = js.native
+    var `type`: js.UndefOr[PanelType] = js.undefined
   }
   object IPanelStyleProps {
     
@@ -800,84 +817,83 @@ object panelTypesMod {
     }
   }
   
-  @js.native
   trait IPanelStyles extends StObject {
     
     /**
       * Style for the close button IconButton element.
       * @deprecated Use `subComponentStyles.closeButton` instead.
       */
-    var closeButton: js.UndefOr[IStyle] = js.native
+    var closeButton: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the navigation container element.
       */
-    var commands: IStyle = js.native
+    var commands: IStyle
     
     /**
       * Style for the body div element.
       */
-    var content: IStyle = js.native
+    var content: IStyle
     
     /**
       * Style for the Body and Footer container element.
       */
-    var contentInner: IStyle = js.native
+    var contentInner: IStyle
     
     /**
       * Style for the footer div element.
       */
-    var footer: IStyle = js.native
+    var footer: IStyle
     
     /**
       * Style for the inner footer div element.
       */
-    var footerInner: IStyle = js.native
+    var footerInner: IStyle
     
     /**
       * Style for the header container div element.
       */
-    var header: IStyle = js.native
+    var header: IStyle
     
     /**
       * Style for the header text div element.
       */
-    var headerText: IStyle = js.native
+    var headerText: IStyle
     
     /**
       * Style for the hidden element.
       */
-    var hiddenPanel: IStyle = js.native
+    var hiddenPanel: IStyle
     
     /**
       * Style for the main section element.
       */
-    var main: IStyle = js.native
+    var main: IStyle
     
     /**
       * Style for the close button container element.
       */
-    var navigation: IStyle = js.native
+    var navigation: IStyle
     
     /**
       * Style for the overlay element.
       */
-    var overlay: IStyle = js.native
+    var overlay: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Style for the scrollable content area container element.
       */
-    var scrollableContent: IStyle = js.native
+    var scrollableContent: IStyle
     
     /**
       * Styling for subcomponents.
       */
-    var subComponentStyles: IPanelSubComponentStyles = js.native
+    var subComponentStyles: IPanelSubComponentStyles
   }
   object IPanelStyles {
     
@@ -1021,13 +1037,12 @@ object panelTypesMod {
     }
   }
   
-  @js.native
   trait IPanelSubComponentStyles extends StObject {
     
     /**
       * Styling for close button child component.
       */
-    var closeButton: PartialIButtonStyles = js.native
+    var closeButton: PartialIButtonStyles
   }
   object IPanelSubComponentStyles {
     

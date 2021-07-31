@@ -3,24 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the settings of a cell shadow. */
-@js.native
 trait ShadowFormat extends StObject {
   
   /** contains the color value of the shadow. */
-  var Color: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  var Color: typings.activexLibreoffice.com_.sun.star.util.Color
   
   /** is `TRUE` , if shadow is transparent. */
-  var IsTransparent: Boolean = js.native
+  var IsTransparent: Boolean
   
   /** contains the location of the shadow. */
-  var Location: ShadowLocation = js.native
+  var Location: ShadowLocation
   
   /** contains the size of the shadow. */
-  var ShadowWidth: Double = js.native
+  var ShadowWidth: Double
 }
 object ShadowFormat {
   

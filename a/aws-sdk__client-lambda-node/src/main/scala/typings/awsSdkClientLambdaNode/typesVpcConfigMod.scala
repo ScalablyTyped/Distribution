@@ -3,25 +3,25 @@ package typings.awsSdkClientLambdaNode
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesVpcConfigMod {
   
-  @js.native
-  trait UnmarshalledVpcConfig extends VpcConfig {
+  trait UnmarshalledVpcConfig
+    extends StObject
+       with VpcConfig {
     
     /**
       * <p>A list of VPC security groups IDs.</p>
       */
     @JSName("SecurityGroupIds")
-    var SecurityGroupIds_UnmarshalledVpcConfig: js.UndefOr[js.Array[String]] = js.native
+    var SecurityGroupIds_UnmarshalledVpcConfig: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>A list of VPC subnet IDs.</p>
       */
     @JSName("SubnetIds")
-    var SubnetIds_UnmarshalledVpcConfig: js.UndefOr[js.Array[String]] = js.native
+    var SubnetIds_UnmarshalledVpcConfig: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledVpcConfig {
     
@@ -54,18 +54,17 @@ object typesVpcConfigMod {
     }
   }
   
-  @js.native
   trait VpcConfig extends StObject {
     
     /**
       * <p>A list of VPC security groups IDs.</p>
       */
-    var SecurityGroupIds: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var SecurityGroupIds: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>A list of VPC subnet IDs.</p>
       */
-    var SubnetIds: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var SubnetIds: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object VpcConfig {
     

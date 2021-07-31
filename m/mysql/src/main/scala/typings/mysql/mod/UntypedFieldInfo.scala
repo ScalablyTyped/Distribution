@@ -2,37 +2,35 @@ package typings.mysql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntypedFieldInfo extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
-  var catalog: String = js.native
+  var catalog: String
   
-  var charsetNr: Double = js.native
+  var charsetNr: Double
   
-  var db: String = js.native
+  var db: String
   
-  var decimals: Double = js.native
+  var decimals: Double
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var name: String = js.native
+  var name: String
   
-  var orgName: String = js.native
+  var orgName: String
   
-  var orgTable: String = js.native
+  var orgTable: String
   
-  var protocol41: Boolean = js.native
+  var protocol41: Boolean
   
-  var table: String = js.native
+  var table: String
   
-  var zeroFill: Boolean = js.native
+  var zeroFill: Boolean
 }
 object UntypedFieldInfo {
   

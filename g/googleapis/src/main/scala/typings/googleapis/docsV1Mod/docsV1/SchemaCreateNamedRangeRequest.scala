@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a NamedRange referencing the given range.
   */
-@js.native
 trait SchemaCreateNamedRangeRequest extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaCreateNamedRangeRequest extends StObject {
     * be at least 1 character and no more than 256 characters, measured in
     * UTF-16 code units.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The range to apply the name to.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaCreateNamedRangeRequest {
   

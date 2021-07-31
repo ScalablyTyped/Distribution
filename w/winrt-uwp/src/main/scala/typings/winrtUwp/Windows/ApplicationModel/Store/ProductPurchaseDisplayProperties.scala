@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the product name that is displayed to the user at time of purchase. */
-@js.native
 trait ProductPurchaseDisplayProperties extends StObject {
   
   /** Windows Phone only. This is an internal product description. */
-  var description: String = js.native
+  var description: String
   
   /** Windows Phone only. Gets or sets the location of an image used to represent the product at time of purchase. */
-  var image: Uri = js.native
+  var image: Uri
   
   /** Gets or sets the product name that is displayed to the user at time of purchase. */
-  var name: String = js.native
+  var name: String
 }
 object ProductPurchaseDisplayProperties {
   

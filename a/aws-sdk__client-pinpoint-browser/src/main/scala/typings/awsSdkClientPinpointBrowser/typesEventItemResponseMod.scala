@@ -2,25 +2,23 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventItemResponseMod {
   
-  @js.native
   trait EventItemResponse extends StObject {
     
     /**
       * A custom message that is associated with the processing of an event.
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * The status returned in the response as a result of processing the event.
       *
       * Possible values: 400 (for invalid events) and 202 (for events that were accepted).
       */
-    var StatusCode: js.UndefOr[Double] = js.native
+    var StatusCode: js.UndefOr[Double] = js.undefined
   }
   object EventItemResponse {
     

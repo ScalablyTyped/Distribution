@@ -3,24 +3,24 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.vegaTypingsStrings.extent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtentTransform extends _Transforms {
+trait ExtentTransform
+  extends StObject
+     with _Transforms {
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var signal: js.UndefOr[String] = js.native
+  var signal: js.UndefOr[String] = js.undefined
   
-  var `type`: extent = js.native
+  var `type`: extent
 }
 object ExtentTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: extent): ExtentTransform = {
+  def apply(field: FieldRef): ExtentTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("extent")
     __obj.asInstanceOf[ExtentTransform]
   }
   

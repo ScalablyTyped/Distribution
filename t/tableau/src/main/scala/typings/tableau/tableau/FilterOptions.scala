@@ -2,12 +2,10 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Filtering
-@js.native
 trait FilterOptions extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FilterOptions extends StObject {
     * The default is include, which means that you use the fields as part of a filter.
     * Exclude mode means that you include everything else except the specified fields.
     */
-  var isExcludeMode: Boolean = js.native
+  var isExcludeMode: Boolean
 }
 object FilterOptions {
   

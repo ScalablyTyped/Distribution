@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility extends StObject {
   
   /** Whether an instance is eligible or ineligible. */
-  var eligible: js.UndefOr[Boolean] = js.native
+  var eligible: js.UndefOr[Boolean] = js.undefined
   
   /** User-defined reason for the current value of instance eligibility. Usually, this can be directly mapped to the internal state. An empty reason is allowed. */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1SloEligibility {
   

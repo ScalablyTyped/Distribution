@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * For that to happen, a "ScriptEventDescriptor" must be registered at and attached to an object by an {@link XEventAttacherManager} .
   */
-@js.native
-trait ScriptEvent extends AllEventObject {
+trait ScriptEvent
+  extends StObject
+     with AllEventObject {
   
   /**
     * script code as string.
     *
     * The code has to correspond with the language defined by ScriptType.
     */
-  var ScriptCode: String = js.native
+  var ScriptCode: String
   
   /** type of the script language as string; for example, "Basic" or "StarScript". */
-  var ScriptType: String = js.native
+  var ScriptType: String
 }
 object ScriptEvent {
   
   @scala.inline
   def apply(
-    Arguments: SafeArray[_],
+    Arguments: SafeArray[js.Any],
     Helper: js.Any,
     ListenerType: `type`,
     MethodName: String,

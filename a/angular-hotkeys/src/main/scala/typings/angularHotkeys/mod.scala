@@ -7,7 +7,6 @@ import typings.angularHotkeys.angularHotkeysStrings.TEXTAREA
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,6 @@ object mod {
     
     object hotkeys {
       
-      @js.native
       trait Hotkey extends StObject {
         
         /**
@@ -31,33 +29,33 @@ object mod {
           * Usage of this parameter is discouraged as the underlying library will pick the most suitable option automatically.
           * This should only be necessary in advanced situations.
           */
-        var action: js.UndefOr[String] = js.native
+        var action: js.UndefOr[String] = js.undefined
         
         /**
           * An array of tag names to allow this combo in ('INPUT', 'SELECT', and/or 'TEXTAREA')
           */
-        var allowIn: js.UndefOr[js.Array[INPUT | SELECT | TEXTAREA]] = js.native
+        var allowIn: js.UndefOr[js.Array[INPUT | SELECT | TEXTAREA]] = js.undefined
         
         /**
           * The function to execute when the key(s) are pressed. Passes along two arguments, event and hotkey
           */
-        def callback(event: Event, hotkey: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey): Unit = js.native
+        def callback(event: Event, hotkey: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey): Unit
         
         /**
           * They keyboard combo (shortcut) you want to bind to.
           */
-        var combo: String | js.Array[String] = js.native
+        var combo: String | js.Array[String]
         
         /**
           * The description for what the combo does and is only used for the Cheat Sheet.
           * If it is not supplied, it will not show up, and in effect, allows you to have unlisted hotkeys.
           */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /**
           * Whether the hotkey persists navigation events
           */
-        var persistent: js.UndefOr[Boolean] = js.native
+        var persistent: js.UndefOr[Boolean] = js.undefined
       }
       object Hotkey {
         

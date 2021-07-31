@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Purchase extends StObject {
   
   /**
     * The currency in which the UpfrontPrice and HourlyPrice amounts are specified. At this time, the only supported currency is USD.
     */
-  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.native
+  var CurrencyCode: js.UndefOr[CurrencyCodeValues] = js.undefined
   
   /**
     * The duration of the reservation's term in seconds.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IDs of the Dedicated Hosts associated with the reservation.
     */
-  var HostIdSet: js.UndefOr[ResponseHostIdSet] = js.native
+  var HostIdSet: js.UndefOr[ResponseHostIdSet] = js.undefined
   
   /**
     * The ID of the reservation.
     */
-  var HostReservationId: js.UndefOr[String] = js.native
+  var HostReservationId: js.UndefOr[String] = js.undefined
   
   /**
     * The hourly price of the reservation per hour.
     */
-  var HourlyPrice: js.UndefOr[String] = js.native
+  var HourlyPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The instance family on the Dedicated Host that the reservation can be associated with.
     */
-  var InstanceFamily: js.UndefOr[String] = js.native
+  var InstanceFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The payment option for the reservation.
     */
-  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.native
+  var PaymentOption: js.UndefOr[typings.awsSdk.ec2Mod.PaymentOption] = js.undefined
   
   /**
     * The upfront price of the reservation.
     */
-  var UpfrontPrice: js.UndefOr[String] = js.native
+  var UpfrontPrice: js.UndefOr[String] = js.undefined
 }
 object Purchase {
   

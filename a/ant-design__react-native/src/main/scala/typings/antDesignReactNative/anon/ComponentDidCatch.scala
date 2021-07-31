@@ -7,7 +7,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,7 +58,7 @@ trait ComponentDidCatch extends StObject {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ Readonlydefault, /* prevState */ js.Any, _]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ Readonlydefault, /* prevState */ js.Any, js.Any]] = js.native
   
   def getValue(): js.Any = js.native
   

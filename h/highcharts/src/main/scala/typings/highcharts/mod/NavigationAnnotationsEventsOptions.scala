@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationAnnotationsEventsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event callback when annotation
     * is added to the chart.
     */
-  var add: js.UndefOr[EventCallbackFunction[Annotation]] = js.native
+  var add: js.UndefOr[EventCallbackFunction[Annotation]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event callback when annotation
     * is updated (e.g. drag and droppped or resized by control points).
     */
-  var afterUpdate: js.UndefOr[EventCallbackFunction[Annotation]] = js.native
+  var afterUpdate: js.UndefOr[EventCallbackFunction[Annotation]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Event callback when annotation
     * is removed from the chart.
     */
-  var remove: js.UndefOr[EventCallbackFunction[Annotation]] = js.native
+  var remove: js.UndefOr[EventCallbackFunction[Annotation]] = js.undefined
 }
 object NavigationAnnotationsEventsOptions {
   

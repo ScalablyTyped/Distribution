@@ -5,21 +5,21 @@ import typings.marked.markedStrings.text
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tag extends Token {
+trait Tag
+  extends StObject
+     with Token {
   
-  var inLink: Boolean = js.native
+  var inLink: Boolean
   
-  var inRawBlock: Boolean = js.native
+  var inRawBlock: Boolean
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: text | html = js.native
+  var `type`: text | html
 }
 object Tag {
   

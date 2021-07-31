@@ -2,31 +2,29 @@ package typings.apolloProtobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFieldDescriptorProto extends StObject {
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var extendee: js.UndefOr[String] = js.native
+  var extendee: js.UndefOr[String] = js.undefined
   
-  var jsonName: js.UndefOr[js.Any] = js.native
+  var jsonName: js.UndefOr[js.Any] = js.undefined
   
-  var label: js.UndefOr[IFieldDescriptorProtoLabel] = js.native
+  var label: js.UndefOr[IFieldDescriptorProtoLabel] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
-  var oneofIndex: js.UndefOr[Double] = js.native
+  var oneofIndex: js.UndefOr[Double] = js.undefined
   
-  var options: js.UndefOr[IFieldOptions] = js.native
+  var options: js.UndefOr[IFieldOptions] = js.undefined
   
-  var `type`: js.UndefOr[IFieldDescriptorProtoType] = js.native
+  var `type`: js.UndefOr[IFieldDescriptorProtoType] = js.undefined
   
-  var typeName: js.UndefOr[String] = js.native
+  var typeName: js.UndefOr[String] = js.undefined
 }
 object IFieldDescriptorProto {
   

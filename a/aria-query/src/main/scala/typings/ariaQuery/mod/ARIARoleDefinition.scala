@@ -2,39 +2,37 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARIARoleDefinition extends StObject {
   
   /* Abstract roles may not be used in HTML. */
-  var `abstract`: Boolean = js.native
+  var `abstract`: Boolean
   
   /* The concepts in related domains that inform behavior mappings. */
-  var baseConcepts: js.Array[ARIARoleRelation] = js.native
+  var baseConcepts: js.Array[ARIARoleRelation]
   
   /* Child presentational roles strip child nodes of roles and flatten the
     * content to text. */
-  var childrenPresentational: Boolean = js.native
+  var childrenPresentational: Boolean
   
   /* aria-* properties and states disallowed on this role. */
-  var prohibitedProps: ARIAPropertyMap = js.native
+  var prohibitedProps: ARIAPropertyMap
   
   /* aria-* properties and states allowed on this role. */
-  var props: ARIAPropertyMap = js.native
+  var props: ARIAPropertyMap
   
   /* The concepts in related domains that inform behavior mappings. */
-  var relatedConcepts: js.Array[ARIARoleRelation] = js.native
+  var relatedConcepts: js.Array[ARIARoleRelation]
   
   /* aria-* properties and states required on this role. */
-  var requiredProps: ARIAPropertyMap = js.native
+  var requiredProps: ARIAPropertyMap
   
   /* An array or super class "stacks." Each stack contains a LIFO list of
     * strings correspond to a super class in the inheritance chain of this
     * role. Roles may have more than one inheritance chain, which is why
     * this property is an array of arrays and not a single array. */
-  var superClass: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]] = js.native
+  var superClass: js.Array[js.Array[ARIAAbstractRole | ARIARole | ARIADPubRole]]
 }
 object ARIARoleDefinition {
   

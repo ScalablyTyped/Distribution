@@ -2,17 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameHighScore extends StObject {
   
-  var position: Double = js.native
+  var position: Double
   
-  var score: Double = js.native
+  var score: Double
   
-  var user: User = js.native
+  var user: User
 }
 object GameHighScore {
   

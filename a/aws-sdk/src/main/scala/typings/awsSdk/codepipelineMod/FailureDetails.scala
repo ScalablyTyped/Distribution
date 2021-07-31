@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureDetails extends StObject {
   
   /**
     * The external ID of the run of the action that failed.
     */
-  var externalExecutionId: js.UndefOr[ExecutionId] = js.native
+  var externalExecutionId: js.UndefOr[ExecutionId] = js.undefined
   
   /**
     * The message about the failure.
     */
-  var message: Message = js.native
+  var message: Message
   
   /**
     * The type of the failure.
     */
-  var `type`: FailureType = js.native
+  var `type`: FailureType
 }
 object FailureDetails {
   

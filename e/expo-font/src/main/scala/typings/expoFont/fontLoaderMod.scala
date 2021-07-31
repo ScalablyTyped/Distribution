@@ -5,27 +5,25 @@ import typings.expoFont.fontTypesMod.FontResource
 import typings.expoFont.fontTypesMod.FontSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontLoaderMod {
   
-  @JSImport("expo-font/build/FontLoader", "fontFamilyNeedsScoping")
+  @JSImport("expo-font/build/FontLoader", JSImport.Namespace)
   @js.native
-  def fontFamilyNeedsScoping(name: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo-font/build/FontLoader", "getAssetForSource")
-  @js.native
-  def getAssetForSource(source: FontSource): Asset | FontResource = js.native
+  @scala.inline
+  def fontFamilyNeedsScoping(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamilyNeedsScoping")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("expo-font/build/FontLoader", "getNativeFontName")
-  @js.native
-  def getNativeFontName(name: String): String = js.native
+  @scala.inline
+  def getAssetForSource(source: FontSource): Asset | FontResource = ^.asInstanceOf[js.Dynamic].applyDynamic("getAssetForSource")(source.asInstanceOf[js.Any]).asInstanceOf[Asset | FontResource]
   
-  @JSImport("expo-font/build/FontLoader", "loadSingleFontAsync")
-  @js.native
-  def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = js.native
-  @JSImport("expo-font/build/FontLoader", "loadSingleFontAsync")
-  @js.native
-  def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = js.native
+  @scala.inline
+  def getNativeFontName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFontName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

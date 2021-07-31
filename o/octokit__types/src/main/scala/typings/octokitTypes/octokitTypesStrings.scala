@@ -3,7 +3,6 @@ package typings.octokitTypes
 import typings.octokitTypes.requestMethodMod.RequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octokitTypesStrings {
@@ -54,7 +53,9 @@ object octokitTypesStrings {
   def COMMENT: COMMENT = "COMMENT".asInstanceOf[COMMENT]
   
   @js.native
-  sealed trait DELETE extends RequestMethod
+  sealed trait DELETE
+    extends StObject
+       with RequestMethod
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
@@ -619,7 +620,9 @@ object octokitTypesStrings {
   def `DELETE SlashuserSlashstarredSlashColonownerSlashColonrepo`: `DELETE SlashuserSlashstarredSlashColonownerSlashColonrepo` = ("DELETE /user/starred/:owner/:repo").asInstanceOf[`DELETE SlashuserSlashstarredSlashColonownerSlashColonrepo`]
   
   @js.native
-  sealed trait GET extends RequestMethod
+  sealed trait GET
+    extends StObject
+       with RequestMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
@@ -2384,7 +2387,9 @@ object octokitTypesStrings {
   def `GET SlashusersSlashColonusernameSlashsubscriptions`: `GET SlashusersSlashColonusernameSlashsubscriptions` = ("GET /users/:username/subscriptions").asInstanceOf[`GET SlashusersSlashColonusernameSlashsubscriptions`]
   
   @js.native
-  sealed trait HEAD extends RequestMethod
+  sealed trait HEAD
+    extends StObject
+       with RequestMethod
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
@@ -2394,7 +2399,9 @@ object octokitTypesStrings {
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
-  sealed trait PATCH extends RequestMethod
+  sealed trait PATCH
+    extends StObject
+       with RequestMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
@@ -2639,7 +2646,9 @@ object octokitTypesStrings {
   def `PATCH SlashuserSlashrepository_invitationsSlashColoninvitation_id`: `PATCH SlashuserSlashrepository_invitationsSlashColoninvitation_id` = ("PATCH /user/repository_invitations/:invitation_id").asInstanceOf[`PATCH SlashuserSlashrepository_invitationsSlashColoninvitation_id`]
   
   @js.native
-  sealed trait POST extends RequestMethod
+  sealed trait POST
+    extends StObject
+       with RequestMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
@@ -3139,7 +3148,9 @@ object octokitTypesStrings {
   def `POST SlashuserSlashrepos`: `POST SlashuserSlashrepos` = ("POST /user/repos").asInstanceOf[`POST SlashuserSlashrepos`]
   
   @js.native
-  sealed trait PUT extends RequestMethod
+  sealed trait PUT
+    extends StObject
+       with RequestMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   

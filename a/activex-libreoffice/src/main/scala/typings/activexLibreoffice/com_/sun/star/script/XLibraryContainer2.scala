@@ -6,37 +6,37 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Extension of {@link XLibraryContainer} to provide additional information about the libraries contained in a library container */
-@js.native
-trait XLibraryContainer2 extends XLibraryContainer {
+trait XLibraryContainer2
+  extends StObject
+     with XLibraryContainer {
   
   /**
     * returns the location of the library link target. Should return the same URL that was passed to createLibraryLink in the StorageURL parameter.
     *
     * If the accessed library item exists but isn't a link, a IllegalArgumentException is thrown
     */
-  def getLibraryLinkURL(Name: String): String = js.native
+  def getLibraryLinkURL(Name: String): String
   
   /** returns true if the accessed library item is a link, e.g., created by createLibraryLink, otherwise false. */
-  def isLibraryLink(Name: String): Boolean = js.native
+  def isLibraryLink(Name: String): Boolean
   
   /**
     * returns true if the accessed library item (library or library link) is read only. A library can be read only because it was set to read only using the
     * methods provided by this interface or because of other reasons depending on the implementation (e.g., file system write protection)
     */
-  def isLibraryReadOnly(Name: String): Boolean = js.native
+  def isLibraryReadOnly(Name: String): Boolean
   
   /**
     * renames the library item with the specified name. If the accessed library item is a link only the link is renamed, not the target library. If a
     * library with the new name exists already a {@link com.sun.star.container.ElementExistException} is thrown.
     */
-  def renameLibrary(Name: String, NewName: String): Unit = js.native
+  def renameLibrary(Name: String, NewName: String): Unit
   
   /** Sets the accessed library item (library or library link) to read only according to the flag bReadOnly (true means read only) */
-  def setLibraryReadOnly(Name: String, bReadOnly: Boolean): Unit = js.native
+  def setLibraryReadOnly(Name: String, bReadOnly: Boolean): Unit
 }
 object XLibraryContainer2 {
   

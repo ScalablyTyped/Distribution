@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceAccountSubject holds detailed information for service-account-kind subject.
   */
-@js.native
 trait ServiceAccountSubject extends StObject {
   
   /**
     * `name` is the name of matching ServiceAccount objects, or "*" to match regardless of name. Required.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * `namespace` is the namespace of matching ServiceAccount objects. Required.
     */
-  var namespace: Input[String] = js.native
+  var namespace: Input[String]
 }
 object ServiceAccountSubject {
   

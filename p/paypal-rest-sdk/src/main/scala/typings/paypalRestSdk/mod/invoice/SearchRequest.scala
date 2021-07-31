@@ -3,51 +3,49 @@ package typings.paypalRestSdk.mod.invoice
 import typings.paypalRestSdk.mod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRequest extends StObject {
   
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var end_creation_date: js.UndefOr[String] = js.native
+  var end_creation_date: js.UndefOr[String] = js.undefined
   
-  var end_due_date: js.UndefOr[String] = js.native
+  var end_due_date: js.UndefOr[String] = js.undefined
   
-  var end_invoice_date: js.UndefOr[String] = js.native
+  var end_invoice_date: js.UndefOr[String] = js.undefined
   
-  var end_payment_date: js.UndefOr[String] = js.native
+  var end_payment_date: js.UndefOr[String] = js.undefined
   
-  var lower_total_amount: js.UndefOr[Currency] = js.native
+  var lower_total_amount: js.UndefOr[Currency] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var page_size: js.UndefOr[Double] = js.native
+  var page_size: js.UndefOr[Double] = js.undefined
   
-  var recipient_business_name: js.UndefOr[String] = js.native
+  var recipient_business_name: js.UndefOr[String] = js.undefined
   
-  var recipient_first_name: js.UndefOr[String] = js.native
+  var recipient_first_name: js.UndefOr[String] = js.undefined
   
-  var recipient_last_name: js.UndefOr[String] = js.native
+  var recipient_last_name: js.UndefOr[String] = js.undefined
   
-  var start_creation_date: js.UndefOr[String] = js.native
+  var start_creation_date: js.UndefOr[String] = js.undefined
   
-  var start_due_date: js.UndefOr[String] = js.native
+  var start_due_date: js.UndefOr[String] = js.undefined
   
-  var start_invoice_date: js.UndefOr[String] = js.native
+  var start_invoice_date: js.UndefOr[String] = js.undefined
   
-  var start_payment_date: js.UndefOr[String] = js.native
+  var start_payment_date: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var total_count_required: js.UndefOr[Boolean] = js.native
+  var total_count_required: js.UndefOr[Boolean] = js.undefined
   
-  var upper_total_amount: js.UndefOr[Currency] = js.native
+  var upper_total_amount: js.UndefOr[Currency] = js.undefined
 }
 object SearchRequest {
   

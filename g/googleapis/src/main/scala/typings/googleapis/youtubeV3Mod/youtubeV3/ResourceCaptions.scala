@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Captions")
@@ -32,7 +31,7 @@ class ResourceCaptions protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCaptionsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCaptionsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceCaptions protected () extends StObject {
     */
   def download(): GaxiosPromise[Unit] = js.native
   def download(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def download(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def download(params: ParamsResourceCaptionsDownload): GaxiosPromise[Unit] = js.native
   def download(params: ParamsResourceCaptionsDownload, callback: BodyResponseCallback[Unit]): Unit = js.native
   def download(
@@ -100,7 +99,7 @@ class ResourceCaptions protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCaption] = js.native
   def insert(callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
   def insert(params: ParamsResourceCaptionsInsert): GaxiosPromise[SchemaCaption] = js.native
   def insert(params: ParamsResourceCaptionsInsert, callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def insert(
@@ -136,7 +135,7 @@ class ResourceCaptions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCaptionListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCaptionListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCaptionListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaptionListResponse] = js.native
   def list(params: ParamsResourceCaptionsList): GaxiosPromise[SchemaCaptionListResponse] = js.native
   def list(params: ParamsResourceCaptionsList, callback: BodyResponseCallback[SchemaCaptionListResponse]): Unit = js.native
   def list(
@@ -174,7 +173,7 @@ class ResourceCaptions protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCaption] = js.native
   def update(callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCaption] = js.native
   def update(params: ParamsResourceCaptionsUpdate): GaxiosPromise[SchemaCaption] = js.native
   def update(params: ParamsResourceCaptionsUpdate, callback: BodyResponseCallback[SchemaCaption]): Unit = js.native
   def update(

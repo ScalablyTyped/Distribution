@@ -2,35 +2,33 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to find devices by customers.
   */
-@js.native
 trait SchemaFindDevicesByOwnerRequest extends StObject {
   
   /**
     * Required. The list of customer IDs to search for.
     */
-  var customerId: js.UndefOr[js.Array[String]] = js.native
+  var customerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The maximum number of devices to show in a page of results.
     * Must be between 1 and 100 inclusive.
     */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /**
     * A token specifying which result page to return.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The section type of the device&#39;s provisioning record.
     */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object SchemaFindDevicesByOwnerRequest {
   

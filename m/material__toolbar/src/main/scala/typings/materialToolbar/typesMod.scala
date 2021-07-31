@@ -3,21 +3,21 @@ package typings.materialToolbar
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   @js.native
-  trait MDCToolbarEvent extends Event {
+  trait MDCToolbarEvent
+    extends StObject
+       with Event {
     
     val detail: MDCToolbarEventDetail = js.native
   }
   
-  @js.native
   trait MDCToolbarEventDetail extends StObject {
     
-    var flexibleExpansionRatio: Double = js.native
+    var flexibleExpansionRatio: Double
   }
   object MDCToolbarEventDetail {
     

@@ -3,15 +3,13 @@ package typings.postmark
 import typings.postmark.webhookMod.Webhook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhooksMod {
   
-  @js.native
   trait Webhooks extends StObject {
     
-    var Webhooks: js.Array[Webhook] = js.native
+    var Webhooks: js.Array[Webhook]
   }
   object Webhooks {
     

@@ -3,24 +3,23 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.swan.BaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 用于检测和识别图片中的品牌 LOGO 信息
   */
-@js.native
 trait logoClassifyOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 图像资源地址
-  var custom_lib: js.UndefOr[Boolean] = js.native
+  var custom_lib: js.UndefOr[Boolean] = js.undefined
   
-  var image: String = js.native
+  var image: String
   
   // 是否只检索用户子库，true则只检索用户子库，false(默认)为检索底库+用户子库。
   @JSName("success")
-  var success_logoClassifyOptions: js.UndefOr[js.Function1[/* res */ logoClassifyResponse, Unit]] = js.native
+  var success_logoClassifyOptions: js.UndefOr[js.Function1[/* res */ logoClassifyResponse, Unit]] = js.undefined
 }
 object logoClassifyOptions {
   

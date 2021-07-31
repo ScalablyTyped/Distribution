@@ -12,7 +12,7 @@ Extract code excerpts
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 8056233 |
+| # downloads        | 9124170 |
 | # stars            | 0 |
 
 ## Links

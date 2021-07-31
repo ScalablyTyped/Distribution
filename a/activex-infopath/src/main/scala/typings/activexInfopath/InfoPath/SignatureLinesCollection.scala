@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureLinesCollection extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
   @JSName("InfoPath.SignatureLinesCollection_typekey")
-  var InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection = js.native
+  var InfoPathDotSignatureLinesCollection_typekey: SignatureLinesCollection
   
-  def Item(varIndex: js.Any): SignatureLineObject = js.native
+  def Item(varIndex: js.Any): SignatureLineObject
 }
 object SignatureLinesCollection {
   

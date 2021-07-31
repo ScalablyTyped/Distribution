@@ -2,15 +2,15 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait pluploadChunkResponse extends pluploadResponse {
+trait pluploadChunkResponse
+  extends StObject
+     with pluploadResponse {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var total: Double = js.native
+  var total: Double
 }
 object pluploadChunkResponse {
   

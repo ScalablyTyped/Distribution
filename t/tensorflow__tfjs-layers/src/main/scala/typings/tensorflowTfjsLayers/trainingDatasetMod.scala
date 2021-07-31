@@ -15,28 +15,27 @@ import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeight
 import typings.tensorflowTfjsLayers.trainingUtilsMod.ClassWeightMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trainingDatasetMod {
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_dataset", "evaluateDataset")
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_dataset", JSImport.Namespace)
   @js.native
-  def evaluateDataset[T](model: js.Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_dataset", "evaluateDataset")
-  @js.native
-  def evaluateDataset[T](model: js.Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/training_dataset", "fitDataset")
-  @js.native
-  def fitDataset[T](model: js.Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = js.native
+  @scala.inline
+  def evaluateDataset[T](model: js.Any, dataset: Dataset[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
+  @scala.inline
+  def evaluateDataset[T](model: js.Any, dataset: LazyIterator[T], args: ModelEvaluateDatasetArgs): js.Promise[Scalar | js.Array[Scalar]] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluateDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Scalar | js.Array[Scalar]]]
   
-  @js.native
+  @scala.inline
+  def fitDataset[T](model: js.Any, dataset: Dataset[T], args: ModelFitDatasetArgs[T]): js.Promise[History] = (^.asInstanceOf[js.Dynamic].applyDynamic("fitDataset")(model.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[History]]
+  
   trait FitDatasetElement extends StObject {
     
-    var xs: TensorOrArrayOrMap = js.native
+    var xs: TensorOrArrayOrMap
     
-    var ys: TensorOrArrayOrMap = js.native
+    var ys: TensorOrArrayOrMap
   }
   object FitDatasetElement {
     
@@ -63,19 +62,18 @@ object trainingDatasetMod {
     }
   }
   
-  @js.native
   trait ModelEvaluateDatasetArgs extends StObject {
     
     /**
       * Number of batches to draw from the dataset object before ending the
       * evaluation.
       */
-    var batches: js.UndefOr[Double] = js.native
+    var batches: js.UndefOr[Double] = js.undefined
     
     /**
       * Verbosity mode.
       */
-    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.native
+    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.undefined
   }
   object ModelEvaluateDatasetArgs {
     
@@ -102,7 +100,6 @@ object trainingDatasetMod {
     }
   }
   
-  @js.native
   trait ModelFitDatasetArgs[T] extends StObject {
     
     /**
@@ -113,7 +110,7 @@ object trainingDatasetMod {
       * If it is not provided, use `done` return value in `iterator.next()` as
       * signal to finish an epoch.
       */
-    var batchesPerEpoch: js.UndefOr[Double] = js.native
+    var batchesPerEpoch: js.UndefOr[Double] = js.undefined
     
     /**
       * List of callbacks to be called during training.
@@ -129,7 +126,7 @@ object trainingDatasetMod {
       *      as in `onBatchEnd()`. Note that `onYield` can skip batches or
       *      epochs. See also docs for `yieldEvery` below.
       */
-    var callbacks: js.UndefOr[(js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs] = js.native
+    var callbacks: js.UndefOr[(js.Array[BaseCallback | CustomCallbackArgs]) | CustomCallbackArgs] = js.undefined
     
     /**
       * Optional object mapping class indices (integers) to
@@ -142,12 +139,12 @@ object trainingDatasetMod {
       * or a object that maps model output names (e.g., `model.outputNames[0]`)
       * to weight objects.
       */
-    var classWeight: js.UndefOr[ClassWeight | js.Array[ClassWeight] | ClassWeightMap] = js.native
+    var classWeight: js.UndefOr[ClassWeight | js.Array[ClassWeight] | ClassWeightMap] = js.undefined
     
     /**
       * Integer number of times to iterate over the training dataset.
       */
-    var epochs: Double = js.native
+    var epochs: Double
     
     /**
       * Epoch at which to start training (useful for resuming a previous training
@@ -155,7 +152,7 @@ object trainingDatasetMod {
       * The model is not trained for a number of iterations given by `epochs`,
       * but merely until the epoch of index `epochs` is reached.
       */
-    var initialEpoch: js.UndefOr[Double] = js.native
+    var initialEpoch: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional batch size for validation.
@@ -165,7 +162,7 @@ object trainingDatasetMod {
       *
       * If not specified, its value defaults to 32.
       */
-    var validationBatchSize: js.UndefOr[Double] = js.native
+    var validationBatchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * (Optional) Only relevant if `validationData` is specified and is a dataset
@@ -176,7 +173,7 @@ object trainingDatasetMod {
       * specified, `evaluateDataset` will use `iterator.next().done` as signal to
       * stop validation.
       */
-    var validationBatches: js.UndefOr[Double] = js.native
+    var validationBatches: js.UndefOr[Double] = js.undefined
     
     /**
       * Data on which to evaluate the loss and any model
@@ -204,7 +201,7 @@ object trainingDatasetMod {
       */
     var validationData: js.UndefOr[
         (js.Tuple2[TensorOrArrayOrMap, TensorOrArrayOrMap]) | (js.Tuple3[TensorOrArrayOrMap, TensorOrArrayOrMap, TensorOrArrayOrMap]) | Dataset[T]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Verbosity level.
@@ -217,7 +214,7 @@ object trainingDatasetMod {
       *     In the browser: no action. This is the default.
       * 2 - Not implemented yet.
       */
-    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.native
+    var verbose: js.UndefOr[ModelLoggingVerbosity] = js.undefined
     
     /**
       * Configures the frequency of yielding the main thread to other tasks.
@@ -236,7 +233,7 @@ object trainingDatasetMod {
       *   - `'never'`: never yield. (But yielding can still happen through `await
       *      nextFrame()` calls in custom callbacks.)
       */
-    var yieldEvery: js.UndefOr[YieldEveryOptions] = js.native
+    var yieldEvery: js.UndefOr[YieldEveryOptions] = js.undefined
   }
   object ModelFitDatasetArgs {
     
@@ -247,7 +244,7 @@ object trainingDatasetMod {
     }
     
     @scala.inline
-    implicit class ModelFitDatasetArgsMutableBuilder[Self <: ModelFitDatasetArgs[_], T] (val x: Self with ModelFitDatasetArgs[T]) extends AnyVal {
+    implicit class ModelFitDatasetArgsMutableBuilder[Self <: ModelFitDatasetArgs[?], T] (val x: Self & ModelFitDatasetArgs[T]) extends AnyVal {
       
       @scala.inline
       def setBatchesPerEpoch(value: Double): Self = StObject.set(x, "batchesPerEpoch", value.asInstanceOf[js.Any])

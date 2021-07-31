@@ -8,25 +8,23 @@ import typings.expo.expoStrings.selected
 import typings.std.NotificationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsTypesMod {
   
-  @js.native
   trait ActionType extends StObject {
     
-    var actionId: String = js.native
+    var actionId: String
     
-    var buttonTitle: String = js.native
+    var buttonTitle: String
     
-    var doNotOpenInForeground: js.UndefOr[Boolean] = js.native
+    var doNotOpenInForeground: js.UndefOr[Boolean] = js.undefined
     
-    var isAuthenticationRequired: js.UndefOr[Boolean] = js.native
+    var isAuthenticationRequired: js.UndefOr[Boolean] = js.undefined
     
-    var isDestructive: js.UndefOr[Boolean] = js.native
+    var isDestructive: js.UndefOr[Boolean] = js.undefined
     
-    var textInput: js.UndefOr[Placeholder] = js.native
+    var textInput: js.UndefOr[Placeholder] = js.undefined
   }
   object ActionType {
     
@@ -71,20 +69,19 @@ object notificationsTypesMod {
     }
   }
   
-  @js.native
   trait Channel extends StObject {
     
-    var badge: js.UndefOr[Boolean] = js.native
+    var badge: js.UndefOr[Boolean] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var priority: js.UndefOr[String] = js.native
+    var priority: js.UndefOr[String] = js.undefined
     
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
     
-    var vibrate: js.UndefOr[Boolean | js.Array[Double]] = js.native
+    var vibrate: js.UndefOr[Boolean | js.Array[Double]] = js.undefined
   }
   object Channel {
     
@@ -135,22 +132,21 @@ object notificationsTypesMod {
     }
   }
   
-  @js.native
   trait LocalNotification extends StObject {
     
-    var android: js.UndefOr[ChannelId] = js.native
+    var android: js.UndefOr[ChannelId] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var categoryId: js.UndefOr[String] = js.native
+    var categoryId: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var ios: js.UndefOr[DisplayInForeground] = js.native
+    var ios: js.UndefOr[DisplayInForeground] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var web: js.UndefOr[NotificationOptions] = js.native
+    var web: js.UndefOr[NotificationOptions] = js.undefined
   }
   object LocalNotification {
     
@@ -206,16 +202,15 @@ object notificationsTypesMod {
   
   type LocalNotificationId = String | Double
   
-  @js.native
   trait Notification extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var isMultiple: Boolean = js.native
+    var isMultiple: Boolean
     
-    var origin: selected | received = js.native
+    var origin: selected | received
     
-    var remote: Boolean = js.native
+    var remote: Boolean
   }
   object Notification {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseType extends StObject {
   
   /** The database engine. */
-  var engine: js.UndefOr[String] = js.native
+  var engine: js.UndefOr[String] = js.undefined
   
   /** The database provider. */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
 }
 object DatabaseType {
   

@@ -2,19 +2,17 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetStatusChecksProtectionResponseData extends StObject {
   
-  var contexts: js.Array[String] = js.native
+  var contexts: js.Array[String]
   
-  var contexts_url: String = js.native
+  var contexts_url: String
   
-  var strict: Boolean = js.native
+  var strict: Boolean
   
-  var url: String = js.native
+  var url: String
 }
 object ReposGetStatusChecksProtectionResponseData {
   

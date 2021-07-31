@@ -6,92 +6,92 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDataGaGet extends StandardParameters {
+trait ParamsResourceDataGaGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A comma-separated list of Analytics dimensions. E.g.,
     * 'ga:browser,ga:city'.
     */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /**
     * End date for fetching Analytics data. Request can should specify an end
     * date formatted as YYYY-MM-DD, or as a relative date (e.g., today,
     * yesterday, or 7daysAgo). The default value is yesterday.
     */
-  var `end-date`: js.UndefOr[String] = js.native
+  var `end-date`: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of dimension or metric filters to be applied to
     * Analytics data.
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Unique table ID for retrieving Analytics data. Table ID is of the form
     * ga:XXXX, where XXXX is the Analytics view (profile) ID.
     */
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
   /**
     * The response will include empty rows if this parameter is set to true,
     * the default is true
     */
-  var `include-empty-rows`: js.UndefOr[Boolean] = js.native
+  var `include-empty-rows`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of entries to include in this feed.
     */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma-separated list of Analytics metrics. E.g.,
     * 'ga:sessions,ga:pageviews'. At least one metric must be specified.
     */
-  var metrics: js.UndefOr[String] = js.native
+  var metrics: js.UndefOr[String] = js.undefined
   
   /**
     * The selected format for the response. Default format is JSON.
     */
-  var output: js.UndefOr[String] = js.native
+  var output: js.UndefOr[String] = js.undefined
   
   /**
     * The desired sampling level.
     */
-  var samplingLevel: js.UndefOr[String] = js.native
+  var samplingLevel: js.UndefOr[String] = js.undefined
   
   /**
     * An Analytics segment to be applied to data.
     */
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of dimensions or metrics that determine the sort
     * order for Analytics data.
     */
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
   /**
     * Start date for fetching Analytics data. Requests can specify a start date
     * formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday,
     * or 7daysAgo). The default value is 7daysAgo.
     */
-  var `start-date`: js.UndefOr[String] = js.native
+  var `start-date`: js.UndefOr[String] = js.undefined
   
   /**
     * An index of the first entity to retrieve. Use this parameter as a
     * pagination mechanism along with the max-results parameter.
     */
-  var `start-index`: js.UndefOr[Double] = js.native
+  var `start-index`: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceDataGaGet {
   

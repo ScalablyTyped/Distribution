@@ -2,25 +2,23 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseRootObject extends StObject {
   
-  var auto_load_more_enabled: Boolean = js.native
+  var auto_load_more_enabled: Boolean
   
-  var max_id: String = js.native
+  var max_id: String
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var rank_token: String = js.native
+  var rank_token: String
   
-  var sectional_items: js.Array[TopicalExploreFeedResponseSectionalItemsItem] = js.native
+  var sectional_items: js.Array[TopicalExploreFeedResponseSectionalItemsItem]
   
-  var status: String = js.native
+  var status: String
 }
 object TopicalExploreFeedResponseRootObject {
   

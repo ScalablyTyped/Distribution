@@ -12,7 +12,7 @@ USB HID device access library
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 208 |
-| # downloads        | 787484 |
+| # downloads        | 862732 |
 | # stars            | 18 |
 
 ## Links

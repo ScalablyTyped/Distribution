@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for a MessageAvailableChanged event. */
-@js.native
 trait RcsEndUserMessageAvailableEventArgs extends StObject {
   
   /** Gets a Boolean value indicating if a new message is available. */
-  var isMessageAvailable: Boolean = js.native
+  var isMessageAvailable: Boolean
   
   /** Gets the actual message to display, or empty if IsMessageAvailable is FALSE. */
-  var message: RcsEndUserMessage = js.native
+  var message: RcsEndUserMessage
 }
 object RcsEndUserMessageAvailableEventArgs {
   

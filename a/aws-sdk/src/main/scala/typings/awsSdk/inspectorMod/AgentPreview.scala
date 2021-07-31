@@ -2,51 +2,49 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentPreview extends StObject {
   
   /**
     * The health status of the Amazon Inspector Agent.
     */
-  var agentHealth: js.UndefOr[AgentHealth] = js.native
+  var agentHealth: js.UndefOr[AgentHealth] = js.undefined
   
   /**
     * The ID of the EC2 instance where the agent is installed.
     */
-  var agentId: AgentId = js.native
+  var agentId: AgentId
   
   /**
     * The version of the Amazon Inspector Agent.
     */
-  var agentVersion: js.UndefOr[AgentVersion] = js.native
+  var agentVersion: js.UndefOr[AgentVersion] = js.undefined
   
   /**
     * The Auto Scaling group for the EC2 instance where the agent is installed.
     */
-  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.native
+  var autoScalingGroup: js.UndefOr[AutoScalingGroup] = js.undefined
   
   /**
     * The hostname of the EC2 instance on which the Amazon Inspector Agent is installed.
     */
-  var hostname: js.UndefOr[Hostname] = js.native
+  var hostname: js.UndefOr[Hostname] = js.undefined
   
   /**
     * The IP address of the EC2 instance on which the Amazon Inspector Agent is installed.
     */
-  var ipv4Address: js.UndefOr[Ipv4Address] = js.native
+  var ipv4Address: js.UndefOr[Ipv4Address] = js.undefined
   
   /**
     * The kernel version of the operating system running on the EC2 instance on which the Amazon Inspector Agent is installed.
     */
-  var kernelVersion: js.UndefOr[KernelVersion] = js.native
+  var kernelVersion: js.UndefOr[KernelVersion] = js.undefined
   
   /**
     * The operating system running on the EC2 instance on which the Amazon Inspector Agent is installed.
     */
-  var operatingSystem: js.UndefOr[OperatingSystem] = js.native
+  var operatingSystem: js.UndefOr[OperatingSystem] = js.undefined
 }
 object AgentPreview {
   

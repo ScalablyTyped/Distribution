@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeExporterInfo extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait NodeExporterInfo extends StObject {
     Indicates whether you want to enable or disable the Node Exporter.
     
     */
-  var EnabledInBroker: boolean = js.native
+  var EnabledInBroker: boolean
 }
 object NodeExporterInfo {
   

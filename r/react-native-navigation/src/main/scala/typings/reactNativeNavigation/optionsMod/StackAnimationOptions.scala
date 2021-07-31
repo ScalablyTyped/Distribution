@@ -2,47 +2,45 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackAnimationOptions extends StObject {
   
   /**
     * Configure animations for the bottom tabs
     */
-  var bottomTabs: js.UndefOr[ViewAnimationOptions] = js.native
+  var bottomTabs: js.UndefOr[ViewAnimationOptions] = js.undefined
   
   /**
     * Configure animations for the content (Screen)
     */
-  var content: js.UndefOr[ViewAnimationOptions] = js.native
+  var content: js.UndefOr[ViewAnimationOptions] = js.undefined
   
   /**
     * Animations to be applied on views in the appearing or disappearing screens
     */
-  var elementTransitions: js.UndefOr[js.Array[ElementTransition]] = js.native
+  var elementTransitions: js.UndefOr[js.Array[ElementTransition]] = js.undefined
   
   /**
     * Enable or disable the animation
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animations to be applied on elements which are shared between the appearing and disappearing screens
     */
-  var sharedElementTransitions: js.UndefOr[js.Array[SharedElementTransition]] = js.native
+  var sharedElementTransitions: js.UndefOr[js.Array[SharedElementTransition]] = js.undefined
   
   /**
     * Configure animations for the top bar
     */
-  var topBar: js.UndefOr[ViewAnimationOptions] = js.native
+  var topBar: js.UndefOr[ViewAnimationOptions] = js.undefined
   
   /**
     * Wait for the View to render before start animation
     */
-  var waitForRender: js.UndefOr[Boolean] = js.native
+  var waitForRender: js.UndefOr[Boolean] = js.undefined
 }
 object StackAnimationOptions {
   

@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupWindowEventArgs extends EventArgs {
+trait PopupWindowEventArgs
+  extends StObject
+     with EventArgs {
   
-  val window: BootstrapPopupWindow = js.native
+  val window: BootstrapPopupWindow
 }
 object PopupWindowEventArgs {
   

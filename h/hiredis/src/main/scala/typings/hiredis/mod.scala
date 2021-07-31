@@ -4,10 +4,13 @@ import typings.node.Buffer
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("hiredis", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hiredis", "Reader")
   @js.native
@@ -20,14 +23,12 @@ object mod {
     def get(): String | Buffer = js.native
   }
   
-  @JSImport("hiredis", "createConnection")
-  @js.native
-  def createConnection(port: Double, host: String): Socket = js.native
+  @scala.inline
+  def createConnection(port: Double, host: String): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Socket]
   
-  @js.native
   trait Config extends StObject {
     
-    var return_buffers: Boolean = js.native
+    var return_buffers: Boolean
   }
   object Config {
     

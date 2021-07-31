@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to attach script events given by a sequence of {@link ScriptEventDescriptor} structures to a given interface. */
-@js.native
-trait XEventAttacher extends XInterface {
+trait XEventAttacher
+  extends StObject
+     with XInterface {
   
   /**
     * registers the given "AllListener" object as a listener at the given interface by creating a suitable listener adapter and calling the "addListener"
@@ -22,7 +22,7 @@ trait XEventAttacher extends XInterface {
     aHelper: js.Any,
     aListenerType: String,
     aAddListenerParam: String
-  ): XEventListener = js.native
+  ): XEventListener
   
   /**
     * registers an object as a listener at the given interface by creating a suitable listener adapter and calling the method which corresponds to the
@@ -37,7 +37,7 @@ trait XEventAttacher extends XInterface {
     aListenerType: String,
     aAddListenerParam: String,
     aEventMethod: String
-  ): XEventListener = js.native
+  ): XEventListener
   
   /**
     * removes a listener object as a listener from the given interface.
@@ -49,7 +49,7 @@ trait XEventAttacher extends XInterface {
     aListenerType: String,
     aRemoveListenerParam: String,
     xToRemoveListener: XEventListener
-  ): Unit = js.native
+  ): Unit
 }
 object XEventAttacher {
   

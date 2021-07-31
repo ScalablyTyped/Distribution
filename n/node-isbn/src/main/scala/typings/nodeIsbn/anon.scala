@@ -6,27 +6,25 @@ import typings.nodeIsbn.nodeIsbnStrings.openlibrary
 import typings.nodeIsbn.nodeIsbnStrings.worldcat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GOOGLE extends StObject {
     
-    var GOOGLE: google = js.native
+    var GOOGLE: google
     
-    var ISBNDB: isbndb = js.native
+    var ISBNDB: isbndb
     
-    var OPENLIBRARY: openlibrary = js.native
+    var OPENLIBRARY: openlibrary
     
-    var WORLDCAT: worldcat = js.native
+    var WORLDCAT: worldcat
   }
   object GOOGLE {
     
     @scala.inline
-    def apply(GOOGLE: google, ISBNDB: isbndb, OPENLIBRARY: openlibrary, WORLDCAT: worldcat): GOOGLE = {
-      val __obj = js.Dynamic.literal(GOOGLE = GOOGLE.asInstanceOf[js.Any], ISBNDB = ISBNDB.asInstanceOf[js.Any], OPENLIBRARY = OPENLIBRARY.asInstanceOf[js.Any], WORLDCAT = WORLDCAT.asInstanceOf[js.Any])
+    def apply(): GOOGLE = {
+      val __obj = js.Dynamic.literal(GOOGLE = "google", ISBNDB = "isbndb", OPENLIBRARY = "openlibrary", WORLDCAT = "worldcat")
       __obj.asInstanceOf[GOOGLE]
     }
     
@@ -47,12 +45,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SmallThumbnail extends StObject {
     
-    var smallThumbnail: String = js.native
+    var smallThumbnail: String
     
-    var thumbnail: String = js.native
+    var thumbnail: String
   }
   object SmallThumbnail {
     

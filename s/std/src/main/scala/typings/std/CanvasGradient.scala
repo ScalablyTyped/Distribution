@@ -2,11 +2,9 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An opaque object describing a gradient. It is returned by the methods CanvasRenderingContext2D.createLinearGradient() or CanvasRenderingContext2D.createRadialGradient(). */
-@js.native
 trait CanvasGradient extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait CanvasGradient extends StObject {
     * 
     * Throws an "IndexSizeError" DOMException if the offset is out of range. Throws a "SyntaxError" DOMException if the color cannot be parsed.
     */
-  def addColorStop(offset: Double, color: java.lang.String): Unit = js.native
+  def addColorStop(offset: Double, color: java.lang.String): Unit
 }
 object CanvasGradient {
   

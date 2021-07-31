@@ -3,7 +3,6 @@ package typings.easyXHeaders
 import typings.easyXHeaders.anon.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osMod {
@@ -18,51 +17,39 @@ object osMod {
   @scala.inline
   def EOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EOL")(x.asInstanceOf[js.Any])
   
-  @JSImport("os", "arch")
-  @js.native
-  def arch(): String = js.native
+  @scala.inline
+  def arch(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arch")().asInstanceOf[String]
   
-  @JSImport("os", "cpus")
-  @js.native
-  def cpus(): js.Array[Model] = js.native
+  @scala.inline
+  def cpus(): js.Array[Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[Model]]
   
-  @JSImport("os", "freemem")
-  @js.native
-  def freemem(): Double = js.native
+  @scala.inline
+  def freemem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("freemem")().asInstanceOf[Double]
   
-  @JSImport("os", "hostname")
-  @js.native
-  def hostname(): String = js.native
+  @scala.inline
+  def hostname(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hostname")().asInstanceOf[String]
   
-  @JSImport("os", "loadavg")
-  @js.native
-  def loadavg(): js.Array[Double] = js.native
+  @scala.inline
+  def loadavg(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[Double]]
   
-  @JSImport("os", "networkInterfaces")
-  @js.native
-  def networkInterfaces(): js.Any = js.native
+  @scala.inline
+  def networkInterfaces(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("networkInterfaces")().asInstanceOf[js.Any]
   
-  @JSImport("os", "platform")
-  @js.native
-  def platform(): String = js.native
+  @scala.inline
+  def platform(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")().asInstanceOf[String]
   
-  @JSImport("os", "release")
-  @js.native
-  def release(): String = js.native
+  @scala.inline
+  def release(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("release")().asInstanceOf[String]
   
-  @JSImport("os", "tmpdir")
-  @js.native
-  def tmpdir(): String = js.native
+  @scala.inline
+  def tmpdir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[String]
   
-  @JSImport("os", "totalmem")
-  @js.native
-  def totalmem(): Double = js.native
+  @scala.inline
+  def totalmem(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("totalmem")().asInstanceOf[Double]
   
-  @JSImport("os", "uptime")
-  @js.native
-  def uptime(): Double = js.native
+  @scala.inline
+  def `type`(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")().asInstanceOf[String]
   
-  @JSImport("os", "type")
-  @js.native
-  def `type`(): String = js.native
+  @scala.inline
+  def uptime(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uptime")().asInstanceOf[Double]
 }

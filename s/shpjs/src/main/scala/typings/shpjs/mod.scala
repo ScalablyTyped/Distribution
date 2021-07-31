@@ -9,7 +9,6 @@ import typings.node.Buffer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,20 +17,18 @@ object mod extends Shortcut {
   @js.native
   val ^ : ShpJS = js.native
   
-  @js.native
-  trait FeatureCollectionWithFilename extends FeatureCollection[Geometry, GeoJsonProperties] {
+  trait FeatureCollectionWithFilename
+    extends StObject
+       with FeatureCollection[Geometry, GeoJsonProperties] {
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
   }
   object FeatureCollectionWithFilename {
     
     @scala.inline
-    def apply(
-      features: js.Array[Feature[Geometry, GeoJsonProperties]],
-      `type`: typings.geojson.geojsonStrings.FeatureCollection
-    ): FeatureCollectionWithFilename = {
+    def apply(features: js.Array[Feature[Geometry, GeoJsonProperties]]): FeatureCollectionWithFilename = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("FeatureCollection")
       __obj.asInstanceOf[FeatureCollectionWithFilename]
     }
     

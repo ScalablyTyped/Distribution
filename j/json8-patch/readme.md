@@ -10,9 +10,9 @@ JSON Patch toolkit for JavaScript
 | ------------------ | :-------------: |
 | Full name          | json8-patch |
 | Keywords           | JSON, patch, diff |
-| # releases         | 3 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 27871 |
+| # downloads        | 27082 |
 | # stars            | 2 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.googleMaps
 import typings.googleMaps.anon.Typeofmaps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,46 +65,36 @@ object mod {
   @scala.inline
   def WINDOW_CALLBACK_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW_CALLBACK_NAME")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-maps", "createLoader")
-  @js.native
-  def createLoader(): Unit = js.native
+  @scala.inline
+  def createLoader(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoader")().asInstanceOf[Unit]
   
-  @JSImport("google-maps", "createUrl")
-  @js.native
-  def createUrl(): String = js.native
+  @scala.inline
+  def createUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUrl")().asInstanceOf[String]
   
-  @JSImport("google-maps", "isLoaded")
-  @js.native
-  def isLoaded(): Boolean = js.native
+  @scala.inline
+  def isLoaded(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoaded")().asInstanceOf[Boolean]
   
-  @JSImport("google-maps", "load")
-  @js.native
-  def load(): Unit = js.native
-  @JSImport("google-maps", "load")
-  @js.native
-  def load(callBack: CallBack): Unit = js.native
+  @scala.inline
+  def load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[Unit]
+  @scala.inline
+  def load(callBack: CallBack): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(callBack.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("google-maps", "makeMock")
-  @js.native
-  def makeMock(): Unit = js.native
+  @scala.inline
+  def makeMock(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMock")().asInstanceOf[Unit]
   
-  @JSImport("google-maps", "onLoad")
-  @js.native
-  def onLoad(): Unit = js.native
-  @JSImport("google-maps", "onLoad")
-  @js.native
-  def onLoad(callBack: CallBack): Unit = js.native
+  @scala.inline
+  def onLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")().asInstanceOf[Unit]
+  @scala.inline
+  def onLoad(callBack: CallBack): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")(callBack.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("google-maps", "release")
-  @js.native
-  def release(callBack: js.Function): Unit = js.native
+  @scala.inline
+  def release(callBack: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("release")(callBack.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type CallBack = js.Function1[/* google */ google, Unit]
   
-  @js.native
   trait google extends StObject {
     
-    var maps: Typeofmaps = js.native
+    var maps: Typeofmaps
   }
   object google {
     

@@ -12,7 +12,7 @@ Attaches .absoluteUrl() function to req
 | Keywords           | absolute, url |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 6003 |
+| # downloads        | 19213 |
 | # stars            | 0 |
 
 ## Links

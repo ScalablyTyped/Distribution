@@ -2,15 +2,13 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeekParam extends StObject {
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var position: Double = js.native
+  var position: Double
 }
 object SeekParam {
   

@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-fullscreen spec api in a vendor agnostic wrapper
+Vendor agnostic access to the fullscreen spec api
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | fscreen |
 | Keywords           | fullscreen, browser |
-| # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 2031972 |
+| # releases         | 1 |
+| # dependents       | 36 |
+| # downloads        | 3023544 |
 | # stars            | 1 |
 
 ## Links

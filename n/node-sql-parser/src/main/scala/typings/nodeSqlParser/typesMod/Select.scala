@@ -5,40 +5,41 @@ import typings.nodeSqlParser.nodeSqlParserStrings.DISTINCT
 import typings.nodeSqlParser.nodeSqlParserStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Select extends AST {
+trait Select
+  extends StObject
+     with AST {
   
-  var columns: (js.Array[_ | Column]) | Asterisk = js.native
+  var columns: (js.Array[js.Any | Column]) | Asterisk
   
-  var distinct: DISTINCT | Null = js.native
+  var distinct: DISTINCT | Null
   
-  var from: (js.Array[From | Dual]) | Null = js.native
+  var from: (js.Array[From | Dual]) | Null
   
-  var groupby: js.Array[ColumnRef] | Null = js.native
+  var groupby: js.Array[ColumnRef] | Null
   
-  var having: js.Array[_] | Null = js.native
+  var having: js.Array[js.Any] | Null
   
-  var limit: Limit | Null = js.native
+  var limit: Limit | Null
   
-  var options: js.Array[_] | Null = js.native
+  var options: js.Array[js.Any] | Null
   
-  var orderby: js.Array[OrderBy] | Null = js.native
+  var orderby: js.Array[OrderBy] | Null
   
-  var `type`: select = js.native
+  var `type`: select
   
-  var where: js.Any = js.native
+  var where: js.Any
   
-  var `with`: With | Null = js.native
+  var `with`: With | Null
 }
 object Select {
   
   @scala.inline
-  def apply(columns: (js.Array[_ | Column]) | Asterisk, `type`: select, where: js.Any): Select = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(columns: (js.Array[js.Any | Column]) | Asterisk, where: js.Any): Select = {
+    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any], distinct = null, from = null, groupby = null, having = null, limit = null, options = null, orderby = null)
+    __obj.updateDynamic("type")("select")
+    __obj.updateDynamic("with")(null)
     __obj.asInstanceOf[Select]
   }
   
@@ -46,7 +47,7 @@ object Select {
   implicit class SelectMutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setColumns(value: (js.Array[_ | Column]) | Asterisk): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    def setColumns(value: (js.Array[js.Any | Column]) | Asterisk): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsVarargs(value: (js.Any | Column)*): Self = StObject.set(x, "columns", js.Array(value :_*))
@@ -76,7 +77,7 @@ object Select {
     def setGroupbyVarargs(value: ColumnRef*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
     @scala.inline
-    def setHaving(value: js.Array[_]): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
+    def setHaving(value: js.Array[js.Any]): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHavingNull: Self = StObject.set(x, "having", null)
@@ -91,7 +92,7 @@ object Select {
     def setLimitNull: Self = StObject.set(x, "limit", null)
     
     @scala.inline
-    def setOptions(value: js.Array[_]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsNull: Self = StObject.set(x, "options", null)

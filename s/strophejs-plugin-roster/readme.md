@@ -12,7 +12,7 @@ A strophe.js plugin for Roster Versioning (XEP-0237).
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 23366 |
+| # downloads        | 22183 |
 | # stars            | 0 |
 
 ## Links

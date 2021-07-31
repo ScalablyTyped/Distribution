@@ -2,47 +2,45 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** base class for ASN.1 DER encoder object */
-@js.native
 trait ASN1Object extends StObject {
   
   /**
     * get hexadecimal string of ASN.1 TLV bytes
     * @return hexadecimal string of ASN.1 TLV
     */
-  def getEncodedHex(): String = js.native
+  def getEncodedHex(): String
   
-  def getFreshValueHex(): String = js.native
+  def getFreshValueHex(): String
   
   /**
     * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
     * @return hexadecimal string of ASN.1 TLV length(L)
     */
-  def getLengthHexFromValue(): String = js.native
+  def getLengthHexFromValue(): String
   
   /**
     * get hexadecimal string of ASN.1 TLV value(V) bytes
     * @return hexadecimal string of ASN.1 TLV value(V) bytes
     */
-  def getValueHex(): String = js.native
+  def getValueHex(): String
   
   /** hexadecimal string of ASN.1 TLV length(L) */
-  var hL: String = js.native
+  var hL: String
   
   /** hexadecimal string of ASN.1 TLV tag(T) */
-  var hT: String = js.native
+  var hT: String
   
   /** hexadecimal string of ASN.1 TLV */
-  var hTLV: String = js.native
+  var hTLV: String
   
   /** hexadecimal string of ASN.1 TLV value(V) */
-  var hV: String = js.native
+  var hV: String
   
   /** flag whether internal data was changed */
-  var isModified: String = js.native
+  var isModified: String
 }
 object ASN1Object {
   

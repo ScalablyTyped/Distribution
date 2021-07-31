@@ -2,17 +2,15 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivateText extends StObject {
   
-  var activateText: String = js.native
+  var activateText: String
   
-  var deactivateText: String = js.native
+  var deactivateText: String
   
-  var finishText: String = js.native
+  var finishText: String
 }
 object ActivateText {
   

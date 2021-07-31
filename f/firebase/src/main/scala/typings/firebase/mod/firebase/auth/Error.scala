@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -66,18 +65,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     disables them.</dd>
   * </dl>
   */
-@js.native
 trait Error extends StObject {
   
   /**
     * Unique error code.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Complete error message.
     */
-  var message: String = js.native
+  var message: String
 }
 object Error {
   

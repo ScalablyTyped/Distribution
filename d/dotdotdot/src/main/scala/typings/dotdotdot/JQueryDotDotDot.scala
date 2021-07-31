@@ -3,18 +3,16 @@ package typings.dotdotdot
 import typings.dotdotdot.dotdotdotStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryDotDotDot {
   
-  @js.native
   trait IDotDotDotOptions extends StObject {
     
     /** jQuery-selector for the element to keep and put after the ellipsis.
       * Default: null
       */
-    var after: js.UndefOr[String | JQuery] = js.native
+    var after: js.UndefOr[String | JQuery] = js.undefined
     
     //
     /** Callback function that is fired after the ellipsis is added,
@@ -26,39 +24,39 @@ object JQueryDotDotDot {
       *                 length: number; // seems to be always 1
       *                 [index] // this contains the text: orgContent[0].data
       */
-    var callback: js.UndefOr[js.Function2[/* isTruncated */ Boolean, /* orgContent */ js.Any, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* isTruncated */ Boolean, /* orgContent */ js.Any, Unit]] = js.undefined
     
     /**    The text to add as ellipsis.
       * Default: '... '
       */
-    var ellipsis: js.UndefOr[String] = js.native
+    var ellipsis: js.UndefOr[String] = js.undefined
     
     /** Wrap-option fallback to 'letter' for long words
       * Default: true
       */
-    var fallbackToLetter: js.UndefOr[Boolean] = js.native
+    var fallbackToLetter: js.UndefOr[Boolean] = js.undefined
     
     /** Optionally set a max-height, if null, the height will be measured.
       * Default: null
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var lastCharacter: js.UndefOr[IDotDotDotOptionsLastCharacter] = js.native
+    var lastCharacter: js.UndefOr[IDotDotDotOptionsLastCharacter] = js.undefined
     
     /** Deviation for the height-option.
       * Default: 0
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
     
     /** Whether to update the ellipsis: true/'window'
       * Default: false
       */
-    var watch: js.UndefOr[Boolean | window] = js.native
+    var watch: js.UndefOr[Boolean | window] = js.undefined
     
     /** How to cut off the text/html: 'word'/'letter'/'children'
       * Default: 'word'
       */
-    var wrap: js.UndefOr[String] = js.native
+    var wrap: js.UndefOr[String] = js.undefined
   }
   object IDotDotDotOptions {
     
@@ -127,19 +125,18 @@ object JQueryDotDotDot {
     }
   }
   
-  @js.native
   trait IDotDotDotOptionsLastCharacter extends StObject {
     
     /** Don't add an ellipsis if this array contains
       * the last character of the truncated text.
       * Default:  []
       */
-    var noEllipsis: js.UndefOr[js.Array[String]] = js.native
+    var noEllipsis: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Remove these characters from the end of the truncated text.
       * Default: [' ', ',', ';', '.', '!', '?']
       */
-    var remove: js.UndefOr[js.Array[String]] = js.native
+    var remove: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IDotDotDotOptionsLastCharacter {
     

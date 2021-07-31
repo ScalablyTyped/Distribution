@@ -3,18 +3,21 @@ package typings.novncCore
 import typings.novncCore.mod.NvConnectionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object novncCoreStrings {
   
   @js.native
-  sealed trait connected extends NvConnectionState
+  sealed trait connected
+    extends StObject
+       with NvConnectionState
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait connecting extends NvConnectionState
+  sealed trait connecting
+    extends StObject
+       with NvConnectionState
   @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   
@@ -24,12 +27,16 @@ object novncCoreStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait disconnected extends NvConnectionState
+  sealed trait disconnected
+    extends StObject
+       with NvConnectionState
   @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait disconnecting extends NvConnectionState
+  sealed trait disconnecting
+    extends StObject
+       with NvConnectionState
   @scala.inline
   def disconnecting: disconnecting = "disconnecting".asInstanceOf[disconnecting]
   

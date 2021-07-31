@@ -6,12 +6,12 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.Windows.UI.Input.PointerPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait IInkManager
-  extends IInkStrokeContainer
+  extends StObject
+     with IInkStrokeContainer
      with IInkRecognizerContainer {
   
   var mode: InkManipulationMode = js.native

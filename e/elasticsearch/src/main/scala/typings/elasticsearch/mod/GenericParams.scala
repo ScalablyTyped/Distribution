@@ -2,23 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericParams extends StObject {
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var filterPath: js.UndefOr[String | js.Array[String]] = js.native
+  var filterPath: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var ignore: js.UndefOr[Double | js.Array[Double]] = js.native
+  var ignore: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var requestTimeout: js.UndefOr[Double] = js.native
+  var requestTimeout: js.UndefOr[Double] = js.undefined
 }
 object GenericParams {
   

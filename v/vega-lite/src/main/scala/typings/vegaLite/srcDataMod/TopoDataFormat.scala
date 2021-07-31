@@ -3,12 +3,11 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteStrings.topojson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopoDataFormat
-  extends DataFormatBase
+  extends StObject
+     with DataFormatBase
      with DataFormat {
   
   /**
@@ -16,7 +15,7 @@ trait TopoDataFormat
     * For example, in a map of the world, there may be an object set named `"countries"`.
     * Using the feature property, we can extract this set and generate a GeoJSON feature object for each country.
     */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the TopoJSON object set to convert to mesh.
@@ -24,10 +23,10 @@ trait TopoDataFormat
     *  Unlike the `feature` option, the corresponding geo data is returned as a single, unified mesh instance, not as individual GeoJSON features.
     * Extracting a mesh is useful for more efficiently drawing borders or other geographic elements that you do not need to associate with specific regions such as individual countries, states or counties.
     */
-  var mesh: js.UndefOr[String] = js.native
+  var mesh: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_TopoDataFormat: js.UndefOr[topojson] = js.native
+  var type_TopoDataFormat: js.UndefOr[topojson] = js.undefined
 }
 object TopoDataFormat {
   

@@ -4,61 +4,59 @@ import typings.maximMazurokGapiClientBooks.anon.AllowedCharacterCount
 import typings.maximMazurokGapiClientBooks.anon.CfiRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotation extends StObject {
   
   /** Anchor text after excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty. */
-  var afterSelectedText: js.UndefOr[String] = js.native
+  var afterSelectedText: js.UndefOr[String] = js.undefined
   
   /** Anchor text before excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty. */
-  var beforeSelectedText: js.UndefOr[String] = js.native
+  var beforeSelectedText: js.UndefOr[String] = js.undefined
   
   /** Selection ranges sent from the client. */
-  var clientVersionRanges: js.UndefOr[CfiRange] = js.native
+  var clientVersionRanges: js.UndefOr[CfiRange] = js.undefined
   
   /** Timestamp for the created time of this annotation. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Selection ranges for the most recent content version. */
-  var currentVersionRanges: js.UndefOr[CfiRange] = js.native
+  var currentVersionRanges: js.UndefOr[CfiRange] = js.undefined
   
   /** User-created data for this annotation. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /** Indicates that this annotation is deleted. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** The highlight style for this annotation. */
-  var highlightStyle: js.UndefOr[String] = js.native
+  var highlightStyle: js.UndefOr[String] = js.undefined
   
   /** Id of this annotation, in the form of a GUID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The layer this annotation is for. */
-  var layerId: js.UndefOr[String] = js.native
+  var layerId: js.UndefOr[String] = js.undefined
   
-  var layerSummary: js.UndefOr[AllowedCharacterCount] = js.native
+  var layerSummary: js.UndefOr[AllowedCharacterCount] = js.undefined
   
   /** Pages that this annotation spans. */
-  var pageIds: js.UndefOr[js.Array[String]] = js.native
+  var pageIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Excerpt from the volume. */
-  var selectedText: js.UndefOr[String] = js.native
+  var selectedText: js.UndefOr[String] = js.undefined
   
   /** URL to this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Timestamp for the last time this annotation was modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The volume that this annotation belongs to. */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object Annotation {
   

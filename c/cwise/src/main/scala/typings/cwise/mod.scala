@@ -4,38 +4,42 @@ import typings.cwiseCompiler.mod.ArgType
 import typings.ndarray.mod.ndarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(a: String): Return = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Return]
+  @scala.inline
+  def apply(a: UserArgs): Return = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Return]
+  
   @JSImport("cwise", JSImport.Namespace)
   @js.native
-  def apply(a: String): Return = js.native
-  @JSImport("cwise", JSImport.Namespace)
-  @js.native
-  def apply(a: UserArgs): Return = js.native
+  val ^ : js.Any = js.native
   
   type Arg = ndarray[Double] | (js.Function2[/* row */ Double, /* col */ Double, Double]) | js.Array[Double] | js.Any
   
-  type Return = js.Function2[/* a */ ndarray[Double], /* repeated */ Arg, Unit]
-  
   @js.native
+  trait Return extends StObject {
+    
+    def apply(a: ndarray[Double], b: Arg*): Unit = js.native
+  }
+  
   trait UserArgs extends StObject {
     
-    var args: js.Array[ArgType] = js.native
+    var args: js.Array[ArgType]
     
-    var blockSize: js.UndefOr[Double] = js.native
+    var blockSize: js.UndefOr[Double] = js.undefined
     
-    def body(a: Double, args: js.Any*): Unit = js.native
+    def body(a: Double, args: js.Any*): Unit
     
-    var funcName: js.UndefOr[String] = js.native
+    var funcName: js.UndefOr[String] = js.undefined
     
-    var post: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.native
+    var post: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var pre: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.native
+    var pre: js.UndefOr[js.Function2[/* a */ Double, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var printCode: js.UndefOr[Boolean] = js.native
+    var printCode: js.UndefOr[Boolean] = js.undefined
   }
   object UserArgs {
     

@@ -11,28 +11,26 @@ import typings.electron.electronStrings.showHiddenFiles
 import typings.electron.electronStrings.treatPackageAsDirectory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenDialogOptions extends StObject {
   
   /**
     * Custom label for the confirmation button, when left empty the default label will
     * be used.
     */
-  var buttonLabel: js.UndefOr[String] = js.native
+  var buttonLabel: js.UndefOr[String] = js.undefined
   
-  var defaultPath: js.UndefOr[String] = js.native
+  var defaultPath: js.UndefOr[String] = js.undefined
   
-  var filters: js.UndefOr[js.Array[FileFilter]] = js.native
+  var filters: js.UndefOr[js.Array[FileFilter]] = js.undefined
   
   /**
     * Message to display above input boxes.
     *
     * @platform darwin
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Contains which features the dialog should use. The following values are
@@ -42,16 +40,16 @@ trait OpenDialogOptions extends StObject {
     js.Array[
       openFile | openDirectory | multiSelections | showHiddenFiles | createDirectory | promptToCreate | noResolveAliases | treatPackageAsDirectory | dontAddToRecent
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Create security scoped bookmarks when packaged for the Mac App Store.
     *
     * @platform darwin,mas
     */
-  var securityScopedBookmarks: js.UndefOr[Boolean] = js.native
+  var securityScopedBookmarks: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object OpenDialogOptions {
   

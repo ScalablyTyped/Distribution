@@ -7,7 +7,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.NoKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NoSymbolHereAssertion")
@@ -26,40 +25,40 @@ class NoSymbolHereAssertion protected ()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword]
-  ) = this()
-  def this(
-    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
     hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: js.UndefOr[scala.Nothing],
+    symbols: Unit,
+    hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword]
+  ) = this()
+  def this(
+    openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
+    noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
+    symbols: js.Array[PrimarySymbol],
+    hereKeyword: Unit,
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
+    symbols: js.Array[PrimarySymbol],
     hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword],
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.Array[PrimarySymbol],
-    hereKeyword: js.UndefOr[scala.Nothing],
+    symbols: Unit,
+    hereKeyword: Unit,
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     noKeyword: typings.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.Array[PrimarySymbol],
+    symbols: Unit,
     hereKeyword: typings.grammarkdown.nodesMod.Token[HereKeyword],
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()

@@ -9,21 +9,19 @@ import typings.qlik.qlikStrings.U
 import typings.qlik.qlikStrings.V
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxPivotValuePoint extends StObject {
   
-  var qAttrExps: NxAttributeExpressionValues = js.native
+  var qAttrExps: NxAttributeExpressionValues
   
-  var qLabel: js.UndefOr[String] = js.native
+  var qLabel: js.UndefOr[String] = js.undefined
   
-  var qNum: Double = js.native
+  var qNum: Double
   
-  var qText: String = js.native
+  var qText: String
   
-  var qType: V | E | N | T | P | R | U = js.native
+  var qType: V | E | N | T | P | R | U
 }
 object NxPivotValuePoint {
   

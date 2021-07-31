@@ -2,19 +2,17 @@ package typings.mapsjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.Array[js.Object] = js.native
+  var data: js.Array[js.Object]
   
-  var dataFormat: js.UndefOr[String] = js.native
+  var dataFormat: js.UndefOr[String] = js.undefined
   
-  var maxAvailableZoomLevel: js.UndefOr[Double] = js.native
+  var maxAvailableZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var timeoutMs: js.UndefOr[Double] = js.native
+  var timeoutMs: js.UndefOr[Double] = js.undefined
 }
 object Data {
   

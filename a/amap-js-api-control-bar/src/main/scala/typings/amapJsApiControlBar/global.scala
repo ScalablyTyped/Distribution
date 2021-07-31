@@ -3,7 +3,6 @@ package typings.amapJsApiControlBar
 import typings.amapJsApiControlBar.AMap.ControlBar.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
       * @param options 选项
       */
     class ControlBar ()
-      extends typings.amapJsApiControlBar.AMap.ControlBar {
+      extends StObject
+         with typings.amapJsApiControlBar.AMap.ControlBar {
       def this(options: Options) = this()
     }
   }

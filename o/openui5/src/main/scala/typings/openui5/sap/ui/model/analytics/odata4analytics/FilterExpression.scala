@@ -4,10 +4,8 @@ import typings.openui5.anon.TypeofFilterOperator
 import typings.openui5.sap.ui.model.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterExpression extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait FilterExpression extends StObject {
     * @param oValue2 (optional) as second value to be used for this condition
     * @returns This object for method chaining
     */
-  def addCondition(sPropertyName: String, sOperator: TypeofFilterOperator, oValue: js.Any, oValue2: js.Any): FilterExpression = js.native
+  def addCondition(sPropertyName: String, sOperator: TypeofFilterOperator, oValue: js.Any, oValue2: js.Any): FilterExpression
   
   /**
     * Add a set condition to the filter expression.A set condition tests if the value of a property is
@@ -30,7 +28,7 @@ trait FilterExpression extends StObject {
     * @param aValues values defining the set
     * @returns This object for method chaining
     */
-  def addSetCondition(sPropertyName: String, aValues: js.Array[_]): FilterExpression = js.native
+  def addSetCondition(sPropertyName: String, aValues: js.Array[js.Any]): FilterExpression
   
   /**
     * Add an array of UI5 filter conditions to the filter expression.The UI5 filter condition is combined
@@ -39,7 +37,7 @@ trait FilterExpression extends StObject {
     * @param aUI5Filter Array of UI5 filter objects
     * @returns This object for method chaining
     */
-  def addUI5FilterConditions(aUI5Filter: js.Array[Filter]): FilterExpression = js.native
+  def addUI5FilterConditions(aUI5Filter: js.Array[Filter]): FilterExpression
   
   /**
     * Check if request is compliant with basic filter constraints expressed in metadata:(a) all properties
@@ -48,30 +46,30 @@ trait FilterExpression extends StObject {
     * @returns The value true. In case the expression violates some of the rules, an exception with some
     * explanatory         message is thrown
     */
-  def checkValidity(): Boolean = js.native
+  def checkValidity(): Boolean
   
   /**
     * Clear expression from any conditions that may have been set previously
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Get description for this entity type
     * @returns The object representing the entity type
     */
-  def getEntityType(): EntityType = js.native
+  def getEntityType(): EntityType
   
   /**
     * Get an array of SAPUI5 Filter objects corresponding to this expression.
     * @returns List of filter objects representing this expression
     */
-  def getExpressionAsUI5FilterArray(): js.Array[Filter] = js.native
+  def getExpressionAsUI5FilterArray(): js.Array[Filter]
   
   /**
     * Get the value for the OData system query option $filter corresponding to this expression.
     * @returns The $filter value for the filter expression
     */
-  def getURIFilterOptionValue(): String = js.native
+  def getURIFilterOptionValue(): String
   
   /**
     * Remove all conditions for some property from the filter expression.All previously set conditions for
@@ -79,14 +77,14 @@ trait FilterExpression extends StObject {
     * @param sPropertyName The name of the property bound in the condition
     * @returns This object for method chaining
     */
-  def removeConditions(sPropertyName: String): FilterExpression = js.native
+  def removeConditions(sPropertyName: String): FilterExpression
 }
 object FilterExpression {
   
   @scala.inline
   def apply(
     addCondition: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression,
-    addSetCondition: (String, js.Array[_]) => FilterExpression,
+    addSetCondition: (String, js.Array[js.Any]) => FilterExpression,
     addUI5FilterConditions: js.Array[Filter] => FilterExpression,
     checkValidity: () => Boolean,
     clear: () => Unit,
@@ -106,7 +104,7 @@ object FilterExpression {
     def setAddCondition(value: (String, TypeofFilterOperator, js.Any, js.Any) => FilterExpression): Self = StObject.set(x, "addCondition", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setAddSetCondition(value: (String, js.Array[_]) => FilterExpression): Self = StObject.set(x, "addSetCondition", js.Any.fromFunction2(value))
+    def setAddSetCondition(value: (String, js.Array[js.Any]) => FilterExpression): Self = StObject.set(x, "addSetCondition", js.Any.fromFunction2(value))
     
     @scala.inline
     def setAddUI5FilterConditions(value: js.Array[Filter] => FilterExpression): Self = StObject.set(x, "addUI5FilterConditions", js.Any.fromFunction1(value))

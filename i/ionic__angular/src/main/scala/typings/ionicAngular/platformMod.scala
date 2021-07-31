@@ -7,7 +7,6 @@ import typings.rxjs.mod.Subject
 import typings.rxjs.mod.Subscription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformMod {
@@ -204,7 +203,7 @@ object platformMod {
     
     def subscribeWithPriority(
       priority: Double,
-      callback: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]
+      callback: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]
     ): Subscription = js.native
   }
 }

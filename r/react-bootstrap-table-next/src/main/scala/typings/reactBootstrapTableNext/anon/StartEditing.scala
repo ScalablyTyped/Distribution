@@ -2,13 +2,11 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartEditing extends StObject {
   
-  def startEditing(rowIndex: Double, columnIndex: Double): Unit = js.native
+  def startEditing(rowIndex: Double, columnIndex: Double): Unit
 }
 object StartEditing {
   

@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemsHttpContentCodingWithQualityHeaderValue extends StObject {
   
-  /** An array of HttpContentCodingWithQualityHeaderValue items that start at startIndex in the HttpContentCodingWithQualityHeaderValueCollection . */ var items: HttpContentCodingWithQualityHeaderValue = js.native
+  /** An array of HttpContentCodingWithQualityHeaderValue items that start at startIndex in the HttpContentCodingWithQualityHeaderValueCollection . */ var items: HttpContentCodingWithQualityHeaderValue
   
-  /** The number of HttpContentCodingWithQualityHeaderValue items retrieved. */ var returnValue: Double = js.native
+  /** The number of HttpContentCodingWithQualityHeaderValue items retrieved. */ var returnValue: Double
 }
 object ItemsHttpContentCodingWithQualityHeaderValue {
   

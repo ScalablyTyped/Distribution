@@ -10,9 +10,9 @@ Amazon DAX Client for JavaScript
 | ------------------ | :-------------: |
 | Full name          | amazon-dax-client |
 | Keywords           | aws, dax, dynamodb, cache, amazon |
-| # releases         | 7 |
-| # dependents       | 11 |
-| # downloads        | 265539 |
+| # releases         | 6 |
+| # dependents       | 12 |
+| # downloads        | 303768 |
 | # stars            | 0 |
 
 ## Links

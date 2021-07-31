@@ -10,7 +10,6 @@ import typings.googleAppsScript.googleAppsScriptStrings.normal
 import typings.googleAppsScript.googleAppsScriptStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

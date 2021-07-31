@@ -2,38 +2,36 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutObjectLockConfigurationRequest extends StObject {
   
   /**
     * The bucket whose Object Lock configuration you want to create or replace.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The MD5 hash for the request body. For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.
     */
-  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.native
+  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The Object Lock configuration that you want to apply to the specified bucket.
     */
-  var ObjectLockConfiguration: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockConfiguration] = js.native
+  var ObjectLockConfiguration: js.UndefOr[typings.awsSdk.s3Mod.ObjectLockConfiguration] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
   
   /**
     * A token to allow Object Lock to be enabled for an existing bucket.
     */
-  var Token: js.UndefOr[ObjectLockToken] = js.native
+  var Token: js.UndefOr[ObjectLockToken] = js.undefined
 }
 object PutObjectLockConfigurationRequest {
   

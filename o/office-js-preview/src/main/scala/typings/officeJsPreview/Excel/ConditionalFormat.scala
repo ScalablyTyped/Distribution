@@ -15,7 +15,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.PresetCriteria
 import typings.officeJsPreview.officeJsPreviewStrings.TopBottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,7 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalFormat extends ClientObject {
+trait ConditionalFormat
+  extends StObject
+     with ClientObject {
   
   /**
     *

@@ -3,20 +3,19 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.ASYNC_EVENTS_NESTABLE_INSTANT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncEventInstant
-  extends AsyncEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with AsyncEvent {
   
-  var id: Double = js.native
+  var id: Double
   
   @JSName("ph")
-  var ph_AsyncEventInstant: ASYNC_EVENTS_NESTABLE_INSTANT = js.native
+  var ph_AsyncEventInstant: ASYNC_EVENTS_NESTABLE_INSTANT
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object AsyncEventInstant {
   

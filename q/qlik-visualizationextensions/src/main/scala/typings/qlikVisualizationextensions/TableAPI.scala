@@ -3,28 +3,28 @@ package typings.qlikVisualizationextensions
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableAPI {
   
-  @js.native
-  trait IQDimensionCell extends IQMeasureCell {
+  trait IQDimensionCell
+    extends StObject
+       with IQMeasureCell {
     
     /**
       * Cell value index.
       */
-    var qElemNumber: Double = js.native
+    var qElemNumber: Double
     
     /**
       * Cell state.
       */
-    var qState: String = js.native
+    var qState: String
     
     /**
       * Selects the value in this cell.
       */
-    def select(): Unit = js.native
+    def select(): Unit
   }
   object IQDimensionCell {
     
@@ -142,35 +142,34 @@ object TableAPI {
       * @param [inclMax] - Optional. Set to true to include maximum value.
       * @return - A promise.
       */
-    def selectRange(min: Double, max: Double): IPromise[_] = js.native
-    def selectRange(min: Double, max: Double, inclMin: js.UndefOr[scala.Nothing], inclMax: Boolean): IPromise[_] = js.native
-    def selectRange(min: Double, max: Double, inclMin: Boolean): IPromise[_] = js.native
-    def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): IPromise[_] = js.native
+    def selectRange(min: Double, max: Double): IPromise[js.Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Boolean): IPromise[js.Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): IPromise[js.Any] = js.native
+    def selectRange(min: Double, max: Double, inclMin: Unit, inclMax: Boolean): IPromise[js.Any] = js.native
   }
   
-  @js.native
   trait IQMeasureCell extends StObject {
     
     /**
       * Gets the value of this cell as a percentage of the total.
       * Might be more than 100% if this is an average.
       */
-    def getPercent(): Double = js.native
+    def getPercent(): Double
     
     /**
       * Gets the value of this cell as a percentage of the maximum.
       */
-    def getPercentOfMax(): Double = js.native
+    def getPercentOfMax(): Double
     
     /**
       * Optional. Cell numeric value, if cell is numeric.
       */
-    var qNum: js.UndefOr[Double] = js.native
+    var qNum: js.UndefOr[Double] = js.undefined
     
     /**
       * Cell value formatted as set up in properties.
       */
-    var qText: String = js.native
+    var qText: String
   }
   object IQMeasureCell {
     
@@ -200,28 +199,27 @@ object TableAPI {
     }
   }
   
-  @js.native
   trait IQRow extends StObject {
     
     /**
       * All cells, in the order they are defined in the properties.
       */
-    var cells: js.Array[_] = js.native
+    var cells: js.Array[js.Any]
     
     /**
       * Dimension cells.
       */
-    var dimensions: js.Array[IQDimensionCell] = js.native
+    var dimensions: js.Array[IQDimensionCell]
     
     /**
       * Measure cells.
       */
-    var measures: js.Array[IQMeasureCell] = js.native
+    var measures: js.Array[IQMeasureCell]
   }
   object IQRow {
     
     @scala.inline
-    def apply(cells: js.Array[_], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
+    def apply(cells: js.Array[js.Any], dimensions: js.Array[IQDimensionCell], measures: js.Array[IQMeasureCell]): IQRow = {
       val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], measures = measures.asInstanceOf[js.Any])
       __obj.asInstanceOf[IQRow]
     }
@@ -230,7 +228,7 @@ object TableAPI {
     implicit class IQRowMutableBuilder[Self <: IQRow] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCells(value: js.Array[_]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCellsVarargs(value: js.Any*): Self = StObject.set(x, "cells", js.Array(value :_*))
@@ -274,9 +272,9 @@ object TableAPI {
       * @param [callback] - Optional. Callback function returning the link to the exported file.
       */
     def exportData(): Unit = js.native
-    def exportData(options: js.UndefOr[scala.Nothing], callback: js.Any): Unit = js.native
     def exportData(options: js.Any): Unit = js.native
     def exportData(options: js.Any, callback: js.Any): Unit = js.native
+    def exportData(options: Unit, callback: js.Any): Unit = js.native
     
     /**
       * Gets the column number for a given field name.

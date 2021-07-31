@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobExecutionsForThingRequest extends StObject {
   
   /**
     * The maximum number of results to be returned per request.
     */
-  var maxResults: js.UndefOr[LaserMaxResults] = js.native
+  var maxResults: js.UndefOr[LaserMaxResults] = js.undefined
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An optional filter that lets you search for jobs that have the specified status.
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.native
+  var status: js.UndefOr[JobExecutionStatus] = js.undefined
   
   /**
     * The thing name.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object ListJobExecutionsForThingRequest {
   

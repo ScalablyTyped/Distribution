@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousBackupsDescription extends StObject {
   
   /**
     *  ContinuousBackupsStatus can be one of the following states: ENABLED, DISABLED
     */
-  var ContinuousBackupsStatus: typings.awsSdk.dynamodbMod.ContinuousBackupsStatus = js.native
+  var ContinuousBackupsStatus: typings.awsSdk.dynamodbMod.ContinuousBackupsStatus
   
   /**
     * The description of the point in time recovery settings applied to the table.
     */
-  var PointInTimeRecoveryDescription: js.UndefOr[typings.awsSdk.dynamodbMod.PointInTimeRecoveryDescription] = js.native
+  var PointInTimeRecoveryDescription: js.UndefOr[typings.awsSdk.dynamodbMod.PointInTimeRecoveryDescription] = js.undefined
 }
 object ContinuousBackupsDescription {
   

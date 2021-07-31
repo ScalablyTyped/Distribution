@@ -7,23 +7,21 @@ import typings.gestalt.gestaltStrings.up
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipProps extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var idealDirection: js.UndefOr[up | right | down | left] = js.native
+  var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var link: js.UndefOr[ReactNode] = js.native
+  var link: js.UndefOr[ReactNode] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var zIndex: js.UndefOr[Indexable] = js.native
+  var zIndex: js.UndefOr[Indexable] = js.undefined
 }
 object TooltipProps {
   

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JustifyItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait JustifyItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends S
     */
   var justifyItems: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object JustifyItemsProps {
   
@@ -30,12 +28,12 @@ object JustifyItemsProps {
   }
   
   @scala.inline
-  implicit class JustifyItemsPropsMutableBuilder[Self <: JustifyItemsProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with JustifyItemsProps[ThemeType]) extends AnyVal {
+  implicit class JustifyItemsPropsMutableBuilder[Self <: JustifyItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & JustifyItemsProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setJustifyItems(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object JustifyItemsProps {
     def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
     @scala.inline
-    def setJustifyItemsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
+    def setJustifyItemsVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any) | Null)*
+    ): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
   }
 }

@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * name, and allows the server to include content inline.  `OutputFile` is
   * binary-compatible with `FileNode`.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile extends StObject {
   
   /**
@@ -22,24 +20,24 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile extends StObject {
     * NOT assume that it will get raw content with any request, and always be
     * prepared to retrieve it via `digest`.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * The digest of the file&#39;s content.
     */
-  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.native
+  var digest: js.UndefOr[SchemaGoogleDevtoolsRemoteexecutionV1testDigest] = js.undefined
   
   /**
     * True if file is executable, false otherwise.
     */
-  var isExecutable: js.UndefOr[Boolean] = js.native
+  var isExecutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The full path of the file relative to the input root, including the
     * filename. The path separator is a forward slash `/`. Since this is a
     * relative path, it MUST NOT begin with a leading forward slash.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile {
   

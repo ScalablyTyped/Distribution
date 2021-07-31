@@ -2,23 +2,21 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartCondition extends StObject {
   
   /**
     * The custom description of the condition.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
-  var EventStartCondition: js.UndefOr[typings.awsSdk.pinpointMod.EventStartCondition] = js.native
+  var EventStartCondition: js.UndefOr[typings.awsSdk.pinpointMod.EventStartCondition] = js.undefined
   
   /**
     * The segment that's associated with the first activity in the journey. This segment determines which users are participants in the journey.
     */
-  var SegmentStartCondition: js.UndefOr[SegmentCondition] = js.native
+  var SegmentStartCondition: js.UndefOr[SegmentCondition] = js.undefined
 }
 object StartCondition {
   

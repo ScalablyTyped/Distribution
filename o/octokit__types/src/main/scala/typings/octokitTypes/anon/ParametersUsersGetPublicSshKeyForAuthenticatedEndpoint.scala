@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.UsersGetPublicSshKeyForAuthenticatedRes
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersGetPublicSshKeyForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersGetPublicSshKeyForAuthenticatedEndpoint = js.native
+  var parameters: UsersGetPublicSshKeyForAuthenticatedEndpoint
   
-  var request: UsersGetPublicSshKeyForAuthenticatedRequestOptions = js.native
+  var request: UsersGetPublicSshKeyForAuthenticatedRequestOptions
   
-  var response: OctokitResponse[UsersGetPublicSshKeyForAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersGetPublicSshKeyForAuthenticatedResponseData]
 }
 object ParametersUsersGetPublicSshKeyForAuthenticatedEndpoint {
   

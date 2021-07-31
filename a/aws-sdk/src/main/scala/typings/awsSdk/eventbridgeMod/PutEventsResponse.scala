@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutEventsResponse extends StObject {
   
   /**
     * The successfully and unsuccessfully ingested events results. If the ingestion was successful, the entry has the event ID in it. Otherwise, you can use the error code and error message to identify the problem with the entry.
     */
-  var Entries: js.UndefOr[PutEventsResultEntryList] = js.native
+  var Entries: js.UndefOr[PutEventsResultEntryList] = js.undefined
   
   /**
     * The number of failed entries.
     */
-  var FailedEntryCount: js.UndefOr[Integer] = js.native
+  var FailedEntryCount: js.UndefOr[Integer] = js.undefined
 }
 object PutEventsResponse {
   

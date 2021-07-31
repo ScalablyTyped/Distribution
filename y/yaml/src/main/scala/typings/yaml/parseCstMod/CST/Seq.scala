@@ -3,18 +3,17 @@ package typings.yaml.parseCstMod.CST
 import typings.yaml.utilMod.Type.SEQ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Seq
-  extends Node
+  extends StObject
+     with Node
      with ContentNode {
   
-  var items: js.Array[BlankLine | Comment | SeqItem] = js.native
+  var items: js.Array[BlankLine | Comment | SeqItem]
   
   @JSName("type")
-  var type_Seq: SEQ = js.native
+  var type_Seq: SEQ
 }
 object Seq {
   
@@ -28,7 +27,7 @@ object Seq {
     `type`: SEQ,
     valueRangeContainsNewline: Boolean
   ): Seq = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], anchor = null, comment = null, context = null, error = null, range = null, rawValue = null, tag = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Seq]
   }

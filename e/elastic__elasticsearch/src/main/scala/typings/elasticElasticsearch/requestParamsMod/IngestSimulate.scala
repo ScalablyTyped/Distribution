@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IngestSimulate[T] extends Generic {
+trait IngestSimulate[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object IngestSimulate {
   
@@ -23,7 +23,7 @@ object IngestSimulate {
   }
   
   @scala.inline
-  implicit class IngestSimulateMutableBuilder[Self <: IngestSimulate[_], T] (val x: Self with IngestSimulate[T]) extends AnyVal {
+  implicit class IngestSimulateMutableBuilder[Self <: IngestSimulate[?], T] (val x: Self & IngestSimulate[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

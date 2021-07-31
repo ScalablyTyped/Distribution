@@ -2,88 +2,50 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined slonik.slonik.CommonQueryMethodsType & {transaction <T>(handler : slonik.slonik.TransactionFunctionType<T>): std.Promise<T>} */
-@js.native
-trait DatabaseTransactionConnectionType extends StObject {
+trait DatabaseTransactionConnectionType
+  extends StObject
+     with CommonQueryMethodsType {
   
-  def any[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[js.Array[T]] = js.native
+  def transaction[T](handler: TransactionFunctionType[T]): js.Promise[T]
+}
+object DatabaseTransactionConnectionType {
   
-  def anyFirst[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
-  @JSName("anyFirst")
-  var anyFirst_Original: QueryAnyFirstFunctionType = js.native
+  @scala.inline
+  def apply(
+    any: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
+    anyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
+      ]
+    ],
+    exists: /* args */ QueryMethodParams[js.Any] => js.Promise[Boolean],
+    many: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
+    manyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
+      js.Array[
+        /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
+      ]
+    ],
+    maybeOne: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any | Null],
+    maybeOneFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
+      (/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any) | Null
+    ],
+    one: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Any],
+    oneFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
+      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
+    ],
+    query: /* args */ QueryMethodParams[js.Any] => js.Promise[QueryResultType[js.Any]],
+    transaction: TransactionFunctionType[js.Any] => js.Promise[js.Any]
+  ): DatabaseTransactionConnectionType = {
+    val __obj = js.Dynamic.literal(any = js.Any.fromFunction1(any), anyFirst = js.Any.fromFunction1(anyFirst), exists = js.Any.fromFunction1(exists), many = js.Any.fromFunction1(many), manyFirst = js.Any.fromFunction1(manyFirst), maybeOne = js.Any.fromFunction1(maybeOne), maybeOneFirst = js.Any.fromFunction1(maybeOneFirst), one = js.Any.fromFunction1(one), oneFirst = js.Any.fromFunction1(oneFirst), query = js.Any.fromFunction1(query), transaction = js.Any.fromFunction1(transaction))
+    __obj.asInstanceOf[DatabaseTransactionConnectionType]
+  }
   
-  @JSName("any")
-  var any_Original: QueryAnyFunctionType = js.native
-  
-  def exists(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<any> is not an array type */ args: QueryMethodParams[_]
-  ): js.Promise[Boolean] = js.native
-  @JSName("exists")
-  var exists_Original: QueryExistsFunctionType = js.native
-  
-  def many[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[js.Array[T]] = js.native
-  
-  def manyFirst[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-    ]
-  ] = js.native
-  @JSName("manyFirst")
-  var manyFirst_Original: QueryManyFirstFunctionType = js.native
-  
-  @JSName("many")
-  var many_Original: QueryManyFunctionType = js.native
-  
-  def maybeOne[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[T | Null] = js.native
-  
-  def maybeOneFirst[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[
-    (/* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any) | Null
-  ] = js.native
-  @JSName("maybeOneFirst")
-  var maybeOneFirst_Original: QueryMaybeOneFirstFunctionType = js.native
-  
-  @JSName("maybeOne")
-  var maybeOne_Original: QueryMaybeOneFunctionType = js.native
-  
-  def one[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[T] = js.native
-  
-  def oneFirst[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[
-    /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
-  ] = js.native
-  @JSName("oneFirst")
-  var oneFirst_Original: QueryOneFirstFunctionType = js.native
-  
-  @JSName("one")
-  var one_Original: QueryOneFunctionType = js.native
-  
-  def query[T](
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type QueryMethodParams<T> is not an array type */ args: QueryMethodParams[T]
-  ): js.Promise[QueryResultType[T]] = js.native
-  @JSName("query")
-  var query_Original: QueryFunctionType = js.native
-  
-  def transaction[T](handler: TransactionFunctionType[T]): js.Promise[T] = js.native
+  @scala.inline
+  implicit class DatabaseTransactionConnectionTypeMutableBuilder[Self <: DatabaseTransactionConnectionType] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+  }
 }

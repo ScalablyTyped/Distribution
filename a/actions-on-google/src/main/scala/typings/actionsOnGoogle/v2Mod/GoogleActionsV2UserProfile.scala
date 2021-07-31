@@ -2,30 +2,28 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UserProfile extends StObject {
   
   /**
     * The user's full name as specified in their Google account.
     * Requires the NAME permission.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The user's last name as specified in their Google account.
     * Note that this field could be empty.
     * Requires the NAME permission.
     */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /**
     * The user's first name as specified in their Google account.
     * Requires the NAME permission.
     */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UserProfile {
   

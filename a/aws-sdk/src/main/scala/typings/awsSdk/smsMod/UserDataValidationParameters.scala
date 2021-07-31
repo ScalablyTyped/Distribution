@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDataValidationParameters extends StObject {
   
   /**
     * The type of validation script.
     */
-  var scriptType: js.UndefOr[ScriptType] = js.native
+  var scriptType: js.UndefOr[ScriptType] = js.undefined
   
   /**
     * The location of the validation script.
     */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object UserDataValidationParameters {
   

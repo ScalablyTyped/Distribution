@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DedicatedIp extends StObject {
   
   /**
     * An IPv4 address.
     */
-  var Ip: typings.awsSdk.sesv2Mod.Ip = js.native
+  var Ip: typings.awsSdk.sesv2Mod.Ip
   
   /**
     * The name of the dedicated IP pool that the IP address is associated with.
     */
-  var PoolName: js.UndefOr[typings.awsSdk.sesv2Mod.PoolName] = js.native
+  var PoolName: js.UndefOr[typings.awsSdk.sesv2Mod.PoolName] = js.undefined
   
   /**
     * Indicates how complete the dedicated IP warm-up process is. When this value equals 1, the address has completed the warm-up process and is ready for use.
     */
-  var WarmupPercentage: Percentage100Wrapper = js.native
+  var WarmupPercentage: Percentage100Wrapper
   
   /**
     * The warm-up status of a dedicated IP address. The status can have one of the following values:    IN_PROGRESS – The IP address isn't ready to use because the dedicated IP warm-up process is ongoing.    DONE – The dedicated IP warm-up process is complete, and the IP address is ready to use.  
     */
-  var WarmupStatus: typings.awsSdk.sesv2Mod.WarmupStatus = js.native
+  var WarmupStatus: typings.awsSdk.sesv2Mod.WarmupStatus
 }
 object DedicatedIp {
   

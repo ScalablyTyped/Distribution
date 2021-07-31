@@ -6,32 +6,30 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // SSL configuration;
 // For property types and documentation see:
 // http://nodejs.org/api/tls.html#tls_tls_connect_options_callback
-@js.native
 trait ISSLConfig extends StObject {
   
-  var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.native
+  var NPNProtocols: js.UndefOr[(js.Array[Buffer | String | Uint8Array]) | Buffer | Uint8Array] = js.undefined
   
-  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var ca: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.native
+  var cert: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
   
-  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.native
+  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
   
-  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.native
+  var key: js.UndefOr[String | Buffer | (js.Array[Buffer | js.Object])] = js.undefined
   
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
-  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.native
+  var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.undefined
   
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
-  var secureOptions: js.UndefOr[Double] = js.native
+  var secureOptions: js.UndefOr[Double] = js.undefined
 }
 object ISSLConfig {
   

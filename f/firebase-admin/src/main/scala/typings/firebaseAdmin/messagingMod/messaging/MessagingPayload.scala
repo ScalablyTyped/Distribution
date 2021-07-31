@@ -2,21 +2,19 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingPayload extends StObject {
   
   /**
     * The data message payload.
     */
-  var data: js.UndefOr[DataMessagePayload] = js.native
+  var data: js.UndefOr[DataMessagePayload] = js.undefined
   
   /**
     * The notification message payload.
     */
-  var notification: js.UndefOr[NotificationMessagePayload] = js.native
+  var notification: js.UndefOr[NotificationMessagePayload] = js.undefined
 }
 object MessagingPayload {
   

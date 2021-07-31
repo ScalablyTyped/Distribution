@@ -2,17 +2,15 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseASTNode extends StObject {
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var range: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var range: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var `type`: ASTNodeTypeString = js.native
+  var `type`: ASTNodeTypeString
 }
 object BaseASTNode {
   

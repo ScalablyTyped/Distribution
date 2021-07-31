@@ -2,17 +2,15 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Required extends StObject {
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var shortcut: js.UndefOr[String] = js.native
+  var shortcut: js.UndefOr[String] = js.undefined
   
-  var usage: js.UndefOr[String] = js.native
+  var usage: js.UndefOr[String] = js.undefined
 }
 object Required {
   

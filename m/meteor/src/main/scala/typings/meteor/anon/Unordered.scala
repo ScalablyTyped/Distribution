@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Unordered extends StObject {
   
-  var unordered: js.UndefOr[Boolean] = js.native
+  var unordered: js.UndefOr[Boolean] = js.undefined
   
-  var weak: js.UndefOr[Boolean] = js.native
+  var weak: js.UndefOr[Boolean] = js.undefined
 }
 object Unordered {
   

@@ -4,7 +4,6 @@ import typings.recordrtc.mod.MediaStreamKind
 import typings.recordrtc.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recordrtcStrings {
@@ -40,12 +39,16 @@ object recordrtcStrings {
   def audioSlashwebmSemicoloncodecsEqualssignpcm: audioSlashwebmSemicoloncodecsEqualssignpcm = "audio/webm;codecs=pcm".asInstanceOf[audioSlashwebmSemicoloncodecsEqualssignpcm]
   
   @js.native
-  sealed trait audioinput extends MediaStreamKind
+  sealed trait audioinput
+    extends StObject
+       with MediaStreamKind
   @scala.inline
   def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
   
   @js.native
-  sealed trait audiooutput extends MediaStreamKind
+  sealed trait audiooutput
+    extends StObject
+       with MediaStreamKind
   @scala.inline
   def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
   
@@ -55,7 +58,9 @@ object recordrtcStrings {
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait destroyed extends State
+  sealed trait destroyed
+    extends StObject
+       with State
   @scala.inline
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
@@ -65,22 +70,30 @@ object recordrtcStrings {
   def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait inactive extends State
+  sealed trait inactive
+    extends StObject
+       with State
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
-  sealed trait paused extends State
+  sealed trait paused
+    extends StObject
+       with State
   @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait recording extends State
+  sealed trait recording
+    extends StObject
+       with State
   @scala.inline
   def recording: recording = "recording".asInstanceOf[recording]
   
   @js.native
-  sealed trait stopped extends State
+  sealed trait stopped
+    extends StObject
+       with State
   @scala.inline
   def stopped: stopped = "stopped".asInstanceOf[stopped]
   
@@ -125,7 +138,9 @@ object recordrtcStrings {
   def `videoSlashx-matroskaSemicoloncodecsEqualssignavc1`: `videoSlashx-matroskaSemicoloncodecsEqualssignavc1` = "video/x-matroska;codecs=avc1".asInstanceOf[`videoSlashx-matroskaSemicoloncodecsEqualssignavc1`]
   
   @js.native
-  sealed trait videoinput extends MediaStreamKind
+  sealed trait videoinput
+    extends StObject
+       with MediaStreamKind
   @scala.inline
   def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
 }

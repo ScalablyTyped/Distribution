@@ -1,19 +1,23 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "ArrayUtils")
 @js.native
 class ArrayUtils ()
   extends typings.wonderJs.arrayUtilsMod.ArrayUtils
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "ArrayUtils")
-@js.native
-object ArrayUtils extends js.Object {
-  def contain(arr: js.Array[_], item: js.Any): Boolean = js.native
-  def hasRepeatItems(arr: js.Array[_]): Boolean = js.native
+object ArrayUtils {
+  
+  @JSImport("wonder.js/dist/es2015", "ArrayUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def contain(arr: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(arr.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasRepeatItems(arr: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRepeatItems")(arr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

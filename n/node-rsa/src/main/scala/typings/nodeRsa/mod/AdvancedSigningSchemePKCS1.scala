@@ -3,21 +3,21 @@ package typings.nodeRsa.mod
 import typings.nodeRsa.nodeRsaStrings.pkcs1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdvancedSigningSchemePKCS1 extends AdvancedSigningScheme {
+trait AdvancedSigningSchemePKCS1
+  extends StObject
+     with AdvancedSigningScheme {
   
-  var hash: HashingAlgorithm = js.native
+  var hash: HashingAlgorithm
   
-  var scheme: pkcs1 = js.native
+  var scheme: pkcs1
 }
 object AdvancedSigningSchemePKCS1 {
   
   @scala.inline
-  def apply(hash: HashingAlgorithm, scheme: pkcs1): AdvancedSigningSchemePKCS1 = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
+  def apply(hash: HashingAlgorithm): AdvancedSigningSchemePKCS1 = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = "pkcs1")
     __obj.asInstanceOf[AdvancedSigningSchemePKCS1]
   }
   

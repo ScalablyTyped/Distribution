@@ -5,27 +5,44 @@ import typings.logkitty.typesMod.IFilter
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iosFilterMod {
   
   @JSImport("logkitty/build/ios/IosFilter", JSImport.Default)
   @js.native
-  class default () extends IosFilter {
+  class default ()
+    extends StObject
+       with IosFilter {
     def this(minPriority: Double) = this()
-  }
-  
-  @js.native
-  trait IosFilter extends IFilter {
     
+    /* CompleteClass */
     var filter: js.Any = js.native
     
-    val minPriority: js.Any = js.native
+    /* CompleteClass */
+    override val minPriority: js.Any = js.native
     
-    def setFilterByMatch(regexes: js.Array[RegExp]): Unit = js.native
+    /* CompleteClass */
+    override def setFilterByMatch(regexes: js.Array[RegExp]): Unit = js.native
     
-    def setFilterByTag(tags: js.Array[String]): Unit = js.native
+    /* CompleteClass */
+    override def setFilterByTag(tags: js.Array[String]): Unit = js.native
+    
+    /* CompleteClass */
+    override def shouldInclude(entry: Entry): Boolean = js.native
+  }
+  
+  trait IosFilter
+    extends StObject
+       with IFilter {
+    
+    var filter: js.Any
+    
+    val minPriority: js.Any
+    
+    def setFilterByMatch(regexes: js.Array[RegExp]): Unit
+    
+    def setFilterByTag(tags: js.Array[String]): Unit
   }
   object IosFilter {
     

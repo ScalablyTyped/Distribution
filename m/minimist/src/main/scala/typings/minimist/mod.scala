@@ -3,64 +3,62 @@ package typings.minimist
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("minimist", JSImport.Namespace)
-  @js.native
-  def apply(): ParsedArgs = js.native
-  @JSImport("minimist", JSImport.Namespace)
-  @js.native
-  def apply(args: js.UndefOr[scala.Nothing], opts: Opts): ParsedArgs = js.native
-  @JSImport("minimist", JSImport.Namespace)
-  @js.native
-  def apply(args: js.Array[String]): ParsedArgs = js.native
-  @JSImport("minimist", JSImport.Namespace)
-  @js.native
-  def apply(args: js.Array[String], opts: Opts): ParsedArgs = js.native
+  @scala.inline
+  def apply(): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ParsedArgs]
+  @scala.inline
+  def apply(args: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
+  @scala.inline
+  def apply(args: js.Array[String], opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
+  @scala.inline
+  def apply(args: Unit, opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
   
+  @JSImport("minimist", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Opts extends StObject {
     
     /**
       * An object mapping string argument names to default values
       */
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * When true, populate argv._ with everything before the -- and argv['--'] with everything after the --.
       * Note that with -- set, parsing for arguments still stops after the `--`.
       */
-    var `--`: js.UndefOr[Boolean] = js.native
+    var `--`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object mapping string names to strings or arrays of string argument names to use as aliases
       */
-    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
     /**
       * A boolean, string or array of strings to always treat as booleans. If true will treat
       * all double hyphenated arguments without equals signs as boolean (e.g. affects `--foo`, not `-f` or `--foo=bar`)
       */
-    var boolean: js.UndefOr[Boolean | String | js.Array[String]] = js.native
+    var boolean: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
     
     /**
       * When true, populate argv._ with everything after the first non-option
       */
-    var stopEarly: js.UndefOr[Boolean] = js.native
+    var stopEarly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string or array of strings argument names to always treat as strings
       */
-    var string: js.UndefOr[String | js.Array[String]] = js.native
+    var string: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * A function which is invoked with a command line parameter not defined in the opts
       * configuration object. If the function returns false, the unknown option is not added to argv
       */
-    var unknown: js.UndefOr[js.Function1[/* arg */ String, Boolean]] = js.native
+    var unknown: js.UndefOr[js.Function1[/* arg */ String, Boolean]] = js.undefined
   }
   object Opts {
     
@@ -123,20 +121,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedArgs
-    extends /* arg */ StringDictionary[js.Any] {
+    extends StObject
+       with /* arg */ StringDictionary[js.Any] {
     
     /**
       * If opts['--'] is true, populated with everything after the --
       */
-    var `--`: js.UndefOr[js.Array[String]] = js.native
+    var `--`: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Contains all the arguments that didn't have an option associated with them
       */
     @JSName("_")
-    var _underscore: js.Array[String] = js.native
+    var _underscore: js.Array[String]
   }
   object ParsedArgs {
     

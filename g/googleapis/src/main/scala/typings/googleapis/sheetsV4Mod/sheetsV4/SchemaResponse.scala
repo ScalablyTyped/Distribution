@@ -2,99 +2,97 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single response from an update.
   */
-@js.native
 trait SchemaResponse extends StObject {
   
   /**
     * A reply from adding a banded range.
     */
-  var addBanding: js.UndefOr[SchemaAddBandingResponse] = js.native
+  var addBanding: js.UndefOr[SchemaAddBandingResponse] = js.undefined
   
   /**
     * A reply from adding a chart.
     */
-  var addChart: js.UndefOr[SchemaAddChartResponse] = js.native
+  var addChart: js.UndefOr[SchemaAddChartResponse] = js.undefined
   
   /**
     * A reply from adding a dimension group.
     */
-  var addDimensionGroup: js.UndefOr[SchemaAddDimensionGroupResponse] = js.native
+  var addDimensionGroup: js.UndefOr[SchemaAddDimensionGroupResponse] = js.undefined
   
   /**
     * A reply from adding a filter view.
     */
-  var addFilterView: js.UndefOr[SchemaAddFilterViewResponse] = js.native
+  var addFilterView: js.UndefOr[SchemaAddFilterViewResponse] = js.undefined
   
   /**
     * A reply from adding a named range.
     */
-  var addNamedRange: js.UndefOr[SchemaAddNamedRangeResponse] = js.native
+  var addNamedRange: js.UndefOr[SchemaAddNamedRangeResponse] = js.undefined
   
   /**
     * A reply from adding a protected range.
     */
-  var addProtectedRange: js.UndefOr[SchemaAddProtectedRangeResponse] = js.native
+  var addProtectedRange: js.UndefOr[SchemaAddProtectedRangeResponse] = js.undefined
   
   /**
     * A reply from adding a sheet.
     */
-  var addSheet: js.UndefOr[SchemaAddSheetResponse] = js.native
+  var addSheet: js.UndefOr[SchemaAddSheetResponse] = js.undefined
   
   /**
     * A reply from creating a developer metadata entry.
     */
-  var createDeveloperMetadata: js.UndefOr[SchemaCreateDeveloperMetadataResponse] = js.native
+  var createDeveloperMetadata: js.UndefOr[SchemaCreateDeveloperMetadataResponse] = js.undefined
   
   /**
     * A reply from deleting a conditional format rule.
     */
-  var deleteConditionalFormatRule: js.UndefOr[SchemaDeleteConditionalFormatRuleResponse] = js.native
+  var deleteConditionalFormatRule: js.UndefOr[SchemaDeleteConditionalFormatRuleResponse] = js.undefined
   
   /**
     * A reply from deleting a developer metadata entry.
     */
-  var deleteDeveloperMetadata: js.UndefOr[SchemaDeleteDeveloperMetadataResponse] = js.native
+  var deleteDeveloperMetadata: js.UndefOr[SchemaDeleteDeveloperMetadataResponse] = js.undefined
   
   /**
     * A reply from deleting a dimension group.
     */
-  var deleteDimensionGroup: js.UndefOr[SchemaDeleteDimensionGroupResponse] = js.native
+  var deleteDimensionGroup: js.UndefOr[SchemaDeleteDimensionGroupResponse] = js.undefined
   
   /**
     * A reply from duplicating a filter view.
     */
-  var duplicateFilterView: js.UndefOr[SchemaDuplicateFilterViewResponse] = js.native
+  var duplicateFilterView: js.UndefOr[SchemaDuplicateFilterViewResponse] = js.undefined
   
   /**
     * A reply from duplicating a sheet.
     */
-  var duplicateSheet: js.UndefOr[SchemaDuplicateSheetResponse] = js.native
+  var duplicateSheet: js.UndefOr[SchemaDuplicateSheetResponse] = js.undefined
   
   /**
     * A reply from doing a find/replace.
     */
-  var findReplace: js.UndefOr[SchemaFindReplaceResponse] = js.native
+  var findReplace: js.UndefOr[SchemaFindReplaceResponse] = js.undefined
   
   /**
     * A reply from updating a conditional format rule.
     */
-  var updateConditionalFormatRule: js.UndefOr[SchemaUpdateConditionalFormatRuleResponse] = js.native
+  var updateConditionalFormatRule: js.UndefOr[SchemaUpdateConditionalFormatRuleResponse] = js.undefined
   
   /**
     * A reply from updating a developer metadata entry.
     */
-  var updateDeveloperMetadata: js.UndefOr[SchemaUpdateDeveloperMetadataResponse] = js.native
+  var updateDeveloperMetadata: js.UndefOr[SchemaUpdateDeveloperMetadataResponse] = js.undefined
   
   /**
     * A reply from updating an embedded object&#39;s position.
     */
-  var updateEmbeddedObjectPosition: js.UndefOr[SchemaUpdateEmbeddedObjectPositionResponse] = js.native
+  var updateEmbeddedObjectPosition: js.UndefOr[SchemaUpdateEmbeddedObjectPositionResponse] = js.undefined
 }
 object SchemaResponse {
   

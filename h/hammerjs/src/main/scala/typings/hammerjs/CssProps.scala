@@ -2,23 +2,21 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssProps extends StObject {
   
-  var contentZooming: String = js.native
+  var contentZooming: String
   
-  var tapHighlightColor: String = js.native
+  var tapHighlightColor: String
   
-  var touchCallout: String = js.native
+  var touchCallout: String
   
-  var touchSelect: String = js.native
+  var touchSelect: String
   
-  var userDrag: String = js.native
+  var userDrag: String
   
-  var userSelect: String = js.native
+  var userSelect: String
 }
 object CssProps {
   

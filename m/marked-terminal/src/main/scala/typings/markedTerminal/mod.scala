@@ -4,7 +4,6 @@ import typings.chalk.mod.Chalk
 import typings.marked.mod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,63 +16,62 @@ object mod {
   
   type TerminalRenderer = Renderer
   
-  @js.native
   trait TerminalRendererOptions extends StObject {
     
-    var blockquote: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var blockquote: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var code: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var code: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var codespan: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var codespan: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var del: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var del: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var em: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var em: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // Whether or not to show emojis
-    var emoji: js.UndefOr[Boolean] = js.native
+    var emoji: js.UndefOr[Boolean] = js.undefined
     
-    var firstHeading: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var firstHeading: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var heading: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var heading: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var hr: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var hr: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var href: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var href: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var html: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var html: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var link: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var link: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // Formats the bulletpoints and numbers for lists
-    var list: js.UndefOr[js.Function2[/* body */ String, /* ordered */ js.UndefOr[Boolean], String]] = js.native
+    var list: js.UndefOr[js.Function2[/* body */ String, /* ordered */ js.UndefOr[Boolean], String]] = js.undefined
     
-    var listitem: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var listitem: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
-    var paragraph: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var paragraph: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // only applicable when reflow is true
-    var reflowText: js.UndefOr[Boolean] = js.native
+    var reflowText: js.UndefOr[Boolean] = js.undefined
     
     // Should it prefix headers?
-    var showSectionPrefix: js.UndefOr[Boolean] = js.native
+    var showSectionPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var strong: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var strong: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // The size of tabs in number of spaces or as tab characters
-    var tab: js.UndefOr[Double] = js.native
+    var tab: js.UndefOr[Double] = js.undefined
     
-    var table: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.native
+    var table: js.UndefOr[Chalk | (js.Function1[/* s */ String, String])] = js.undefined
     
     // Options passed to cli-table
-    var tableOptions: js.UndefOr[js.Any] = js.native
+    var tableOptions: js.UndefOr[js.Any] = js.undefined
     
     // Whether or not to undo marked escaping
     // of enitities (" -> &quot; etc)
-    var unescape: js.UndefOr[Boolean] = js.native
+    var unescape: js.UndefOr[Boolean] = js.undefined
     
     // Reflow and print-out width
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TerminalRendererOptions {
     

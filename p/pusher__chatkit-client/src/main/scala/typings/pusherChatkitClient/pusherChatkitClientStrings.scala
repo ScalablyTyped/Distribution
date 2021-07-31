@@ -3,7 +3,6 @@ package typings.pusherChatkitClient
 import typings.pusherChatkitClient.userMod.PusherUserPresence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pusherChatkitClientStrings {
@@ -24,7 +23,9 @@ object pusherChatkitClientStrings {
   def newer: newer = "newer".asInstanceOf[newer]
   
   @js.native
-  sealed trait offline extends PusherUserPresence
+  sealed trait offline
+    extends StObject
+       with PusherUserPresence
   @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
   
@@ -34,12 +35,16 @@ object pusherChatkitClientStrings {
   def older: older = "older".asInstanceOf[older]
   
   @js.native
-  sealed trait online extends PusherUserPresence
+  sealed trait online
+    extends StObject
+       with PusherUserPresence
   @scala.inline
   def online: online = "online".asInstanceOf[online]
   
   @js.native
-  sealed trait unknown extends PusherUserPresence
+  sealed trait unknown
+    extends StObject
+       with PusherUserPresence
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   

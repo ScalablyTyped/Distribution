@@ -18,7 +18,6 @@ import typings.semanticUiReact.itemHeaderMod.ItemHeaderProps
 import typings.semanticUiReact.itemMetaMod.ItemMetaProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemContentMod extends Shortcut {
@@ -35,9 +34,9 @@ object itemContentMod extends Shortcut {
   @js.native
   val default: ComponentClass[ItemContentProps, ComponentState] = js.native
   
-  @js.native
   trait ItemContentProps
-    extends StrictItemContentProps
+    extends StObject
+       with StrictItemContentProps
        with /* key */ StringDictionary[js.Any]
   object ItemContentProps {
     
@@ -48,35 +47,34 @@ object itemContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictItemContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for ItemDescription component. */
-    var description: js.UndefOr[SemanticShorthandItem[ItemDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[ItemDescriptionProps]] = js.undefined
     
     /** Shorthand for ItemExtra component. */
-    var extra: js.UndefOr[SemanticShorthandItem[ItemExtraProps]] = js.native
+    var extra: js.UndefOr[SemanticShorthandItem[ItemExtraProps]] = js.undefined
     
     /** Shorthand for ItemHeader component. */
-    var header: js.UndefOr[SemanticShorthandItem[ItemHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[ItemHeaderProps]] = js.undefined
     
     /** Shorthand for ItemMeta component. */
-    var meta: js.UndefOr[SemanticShorthandItem[ItemMetaProps]] = js.native
+    var meta: js.UndefOr[SemanticShorthandItem[ItemMetaProps]] = js.undefined
     
     /** Content can specify its vertical alignment. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictItemContentProps {
     

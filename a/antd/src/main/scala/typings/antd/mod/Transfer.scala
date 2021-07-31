@@ -12,7 +12,6 @@ import typings.antd.transferMod.default
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Transfer")
@@ -31,7 +30,7 @@ object Transfer {
   @js.native
   class List[RecordType /* <: KeyWiseTransferItem */] protected ()
     extends typings.antd.transferListMod.default[RecordType] {
-    def this(props: TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ _]) = this()
+    def this(props: TransferListProps[/* import warning: RewrittenClass.unapply cls was tparam RecordType */ js.Any]) = this()
   }
   /* static member */
   /* was `typeof List` */
@@ -96,9 +95,8 @@ object Transfer {
     @scala.inline
     def dataSource_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dataSource")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd", "Transfer.defaultProps.listStyle")
-    @js.native
-    def listStyle(): Unit = js.native
+    @scala.inline
+    def listStyle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("listStyle")().asInstanceOf[Unit]
     
     @JSImport("antd", "Transfer.defaultProps.showSearch")
     @js.native
@@ -108,7 +106,6 @@ object Transfer {
   }
   
   /* static member */
-  @JSImport("antd", "Transfer.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = js.native
+  @scala.inline
+  def getDerivedStateFromProps[T](hasSelectedKeysTargetKeysPaginationChildren: TransferProps[T]): SourceSelectedKeys | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasSelectedKeysTargetKeysPaginationChildren.asInstanceOf[js.Any]).asInstanceOf[SourceSelectedKeys | Null]
 }

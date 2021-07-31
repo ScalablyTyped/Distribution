@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptInPhoneNumberInput extends StObject {
   
   /**
     * The phone number to opt in.
     */
-  var phoneNumber: PhoneNumber = js.native
+  var phoneNumber: PhoneNumber
 }
 object OptInPhoneNumberInput {
   

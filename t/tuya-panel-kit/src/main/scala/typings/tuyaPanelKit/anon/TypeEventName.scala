@@ -2,18 +2,16 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeEventName[EventName /* <: String */] extends StObject {
   
-  val target: js.UndefOr[String] = js.native
+  val target: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the event (e.g. `focus`, `blur`)
     */
-  val `type`: EventName = js.native
+  val `type`: EventName
 }
 object TypeEventName {
   
@@ -25,7 +23,7 @@ object TypeEventName {
   }
   
   @scala.inline
-  implicit class TypeEventNameMutableBuilder[Self <: TypeEventName[_], EventName /* <: String */] (val x: Self with TypeEventName[EventName]) extends AnyVal {
+  implicit class TypeEventNameMutableBuilder[Self <: TypeEventName[?], EventName /* <: String */] (val x: Self & TypeEventName[EventName]) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

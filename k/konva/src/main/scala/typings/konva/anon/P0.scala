@@ -3,23 +3,21 @@ package typings.konva.anon
 import typings.konva.typesMod.Vector2d
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait P0 extends StObject {
   
-  var p0: Vector2d = js.native
+  var p0: Vector2d
   
-  var p1: Vector2d = js.native
+  var p1: Vector2d
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var text: String = js.native
+  var text: String
   
-  var transposeX: Double = js.native
+  var transposeX: Double
   
-  var transposeY: Double = js.native
+  var transposeY: Double
 }
 object P0 {
   

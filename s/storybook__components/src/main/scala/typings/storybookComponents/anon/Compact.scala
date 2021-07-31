@@ -2,15 +2,13 @@ package typings.storybookComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compact extends StObject {
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var inAddonPanel: js.UndefOr[Boolean] = js.native
+  var inAddonPanel: js.UndefOr[Boolean] = js.undefined
 }
 object Compact {
   

@@ -2,23 +2,21 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationUris extends StObject {
   
-  var `destination-attributes`: js.UndefOr[js.Array[js.Object]] = js.native
+  var `destination-attributes`: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var `destination-uri`: js.UndefOr[String] = js.native
+  var `destination-uri`: js.UndefOr[String] = js.undefined
   
-  var `feed-orientation`: js.UndefOr[FeedOrientation] = js.native
+  var `feed-orientation`: js.UndefOr[FeedOrientation] = js.undefined
   
-  var `post-dial-string`: js.UndefOr[String] = js.native
+  var `post-dial-string`: js.UndefOr[String] = js.undefined
   
-  var `pre-dial-string`: js.UndefOr[String] = js.native
+  var `pre-dial-string`: js.UndefOr[String] = js.undefined
   
-  var `t33-subaddress`: js.UndefOr[Double] = js.native
+  var `t33-subaddress`: js.UndefOr[Double] = js.undefined
 }
 object DestinationUris {
   

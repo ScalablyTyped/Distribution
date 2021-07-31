@@ -4,15 +4,15 @@
 Typings are for version 0.3
 
 ## Library description:
-The Design Graph Framework
+Build consistent, themeable React UIs based on design system constraints
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | theme-ui |
 | Keywords           | theme-ui, emotion, mdx, css, styles, css-in-js |
-| # releases         | 95 |
-| # dependents       | 568 |
-| # downloads        | 6971075 |
+| # releases         | 111 |
+| # dependents       | 596 |
+| # downloads        | 8715301 |
 | # stars            | 0 |
 
 ## Links

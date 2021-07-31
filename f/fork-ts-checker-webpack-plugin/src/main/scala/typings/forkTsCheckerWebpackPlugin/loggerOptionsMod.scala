@@ -4,19 +4,17 @@ import typings.forkTsCheckerWebpackPlugin.loggerFactoryMod.LoggerType
 import typings.forkTsCheckerWebpackPlugin.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerOptionsMod {
   
-  @js.native
   trait LoggerOptions extends StObject {
     
-    var devServer: js.UndefOr[Boolean] = js.native
+    var devServer: js.UndefOr[Boolean] = js.undefined
     
-    var infrastructure: js.UndefOr[LoggerType | Logger] = js.native
+    var infrastructure: js.UndefOr[LoggerType | Logger] = js.undefined
     
-    var issues: js.UndefOr[LoggerType | Logger] = js.native
+    var issues: js.UndefOr[LoggerType | Logger] = js.undefined
   }
   object LoggerOptions {
     

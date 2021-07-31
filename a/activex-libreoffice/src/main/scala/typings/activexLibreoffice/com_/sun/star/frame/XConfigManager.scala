@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyChangeListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XConfigManager extends XInterface {
+trait XConfigManager
+  extends StObject
+     with XInterface {
   
   /**
     * add a listener to notify changes on well known variables inside the real implementation
@@ -22,13 +22,13 @@ trait XConfigManager extends XInterface {
     * @param Listener listener which will be informed
     * @see XConfigManager.removePropertyChangeListener()
     */
-  def addPropertyChangeListener(KeyName: String, Listener: XPropertyChangeListener): Unit = js.native
+  def addPropertyChangeListener(KeyName: String, Listener: XPropertyChangeListener): Unit
   
   /**
     * was designed for additional functionality for interface {@link com.sun.star.registry.XSimpleRegistry} and make no sense without that
     * @deprecated Deprecated
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * remove a registered listener
@@ -37,7 +37,7 @@ trait XConfigManager extends XInterface {
     * @param Listener listener which will be deregistered
     * @see XConfigManager.addPropertyChangeListener()
     */
-  def removePropertyChangeListener(KeyName: String, Listener: XPropertyChangeListener): Unit = js.native
+  def removePropertyChangeListener(KeyName: String, Listener: XPropertyChangeListener): Unit
   
   /**
     * substitute variables (place holder) inside given parameter **Text**
@@ -46,7 +46,7 @@ trait XConfigManager extends XInterface {
     * @param Text original value including variables
     * @returns changed copy of **Text** without any variables
     */
-  def substituteVariables(Text: String): String = js.native
+  def substituteVariables(Text: String): String
 }
 object XConfigManager {
   

@@ -11,8 +11,8 @@ Framework-agnostic CSS-in-JS with support for server-side rendering, browser pre
 | Full name          | aphrodite |
 | Keywords           | css, react, inline-styles |
 | # releases         | 4 |
-| # dependents       | 226 |
-| # downloads        | 9540420 |
+| # dependents       | 237 |
+| # downloads        | 10062317 |
 | # stars            | 17 |
 
 ## Links

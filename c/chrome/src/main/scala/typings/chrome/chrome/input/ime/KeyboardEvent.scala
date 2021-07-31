@@ -2,77 +2,75 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardEvent extends StObject {
   
   /**
     * Optional.
     * Whether or not the ALT key is pressed.
     */
-  var altKey: js.UndefOr[Boolean] = js.native
+  var altKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * Whether or not the ALTGR key is pressed.
     * @since Chrome 79.
     */
-  var altgrKey: js.UndefOr[Boolean] = js.native
+  var altgrKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * Whether or not the CAPS_LOCK is enabled.
     * @since Chrome 29.
     */
-  var capsLock: js.UndefOr[Boolean] = js.native
+  var capsLock: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * Value of the physical key being pressed. The value is not affected by current keyboard layout or modifier state.
     * @since Chrome 26.
     */
-  var code: String = js.native
+  var code: String
   
   /**
     * Optional.
     * Whether or not the CTRL key is pressed.
     */
-  var ctrlKey: js.UndefOr[Boolean] = js.native
+  var ctrlKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.
     * The extension ID of the sender of this keyevent.
     * @since Chrome 34.
     */
-  var extensionId: js.UndefOr[String] = js.native
+  var extensionId: js.UndefOr[String] = js.undefined
   
   /** Value of the key being pressed */
-  var key: String = js.native
+  var key: String
   
   /**
     * Optional.
     * The deprecated HTML keyCode, which is system- and implementation-dependent numerical code signifying the unmodified identifier associated with the key pressed.
     * @since Chrome 37.
     */
-  var keyCode: js.UndefOr[Double] = js.native
+  var keyCode: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
     * The ID of the request.
     * @deprecated since Chrome 79.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.
     * Whether or not the SHIFT key is pressed.
     */
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
   
   /** One of keyup or keydown. */
-  var `type`: String = js.native
+  var `type`: String
 }
 object KeyboardEvent {
   

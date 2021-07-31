@@ -2,36 +2,34 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The matching products.
   */
-@js.native
 trait SchemaProductsListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#productsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * General pagination information.
     */
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
     * Information about a product (e.g. an app) in the Google Play store, for
     * display to an enterprise admin.
     */
-  var product: js.UndefOr[js.Array[SchemaProduct]] = js.native
+  var product: js.UndefOr[js.Array[SchemaProduct]] = js.undefined
   
   /**
     * Pagination information for token pagination.
     */
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
 }
 object SchemaProductsListResponse {
   

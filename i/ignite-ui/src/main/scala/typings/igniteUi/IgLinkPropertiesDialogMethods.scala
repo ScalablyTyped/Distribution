@@ -2,15 +2,13 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLinkPropertiesDialogMethods extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def show(item: js.Object): Unit = js.native
+  def show(item: js.Object): Unit
 }
 object IgLinkPropertiesDialogMethods {
   

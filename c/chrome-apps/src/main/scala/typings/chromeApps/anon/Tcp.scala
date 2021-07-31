@@ -5,20 +5,18 @@ import typings.chromeApps.chrome.runtime.SocketTcpServerPermission
 import typings.chromeApps.chrome.runtime.SocketUdpPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tcp extends StObject {
   
   /** The tcp manifest property declares which sockets.tcp operations an app can issue. */
-  var tcp: js.UndefOr[SocketTcpPermission] = js.native
+  var tcp: js.UndefOr[SocketTcpPermission] = js.undefined
   
   /** The tcpServer manifest property declares which sockets.tcpServer operations an app can issue. */
-  var tcpServer: js.UndefOr[SocketTcpServerPermission] = js.native
+  var tcpServer: js.UndefOr[SocketTcpServerPermission] = js.undefined
   
   /** The udp manifest property declares which sockets.udp operations an app can issue. */
-  var udp: js.UndefOr[SocketUdpPermission] = js.native
+  var udp: js.UndefOr[SocketUdpPermission] = js.undefined
 }
 object Tcp {
   

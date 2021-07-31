@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/badge/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/badge/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): BadgeStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): BadgeStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[BadgeStyle]
+  
   trait BadgeStyle extends StObject {
     
-    var dot: ViewStyle = js.native
+    var dot: ViewStyle
     
-    var dotSizelarge: ViewStyle = js.native
+    var dotSizelarge: ViewStyle
     
-    var text: TextStyle = js.native
+    var text: TextStyle
     
-    var textCorner: ViewStyle = js.native
+    var textCorner: ViewStyle
     
-    var textCornerWrap: ViewStyle = js.native
+    var textCornerWrap: ViewStyle
     
-    var textCornerlarge: ViewStyle = js.native
+    var textCornerlarge: ViewStyle
     
-    var textDom: ViewStyle = js.native
+    var textDom: ViewStyle
     
-    var wrap: ViewStyle = js.native
+    var wrap: ViewStyle
   }
   object BadgeStyle {
     

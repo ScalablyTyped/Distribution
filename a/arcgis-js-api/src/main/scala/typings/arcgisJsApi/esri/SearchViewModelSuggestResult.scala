@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchViewModelSuggestResult extends Object {
+trait SearchViewModelSuggestResult
+  extends StObject
+     with Object {
   
   /**
     * The key related to the suggest result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResult)
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The index of the currently selected result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResult)
     */
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
   
   /**
     * The string name of the suggested location to geocode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResult)
     */
-  var text: String = js.native
+  var text: String
 }
 object SearchViewModelSuggestResult {
   

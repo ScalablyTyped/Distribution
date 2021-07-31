@@ -4,7 +4,6 @@ import typings.cryptojs.CryptoJS.lib.CipherParams
 import typings.cryptojs.CryptoJS.lib.WordArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kdf {
@@ -17,10 +16,9 @@ object kdf {
     def execute(password: String, keySize: Double, ivSize: Double, salt: WordArray): CipherParams = js.native
   }
   
-  @js.native
   trait KdfStatic extends StObject {
     
-    var OpenSSL: IKdfImpl = js.native
+    var OpenSSL: IKdfImpl
   }
   object KdfStatic {
     

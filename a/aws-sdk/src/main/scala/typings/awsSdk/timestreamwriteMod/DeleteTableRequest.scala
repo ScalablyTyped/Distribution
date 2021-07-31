@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTableRequest extends StObject {
   
   /**
     * The name of the database where the Timestream database is to be deleted.
     */
-  var DatabaseName: ResourceName = js.native
+  var DatabaseName: ResourceName
   
   /**
     * The name of the Timestream table to be deleted.
     */
-  var TableName: ResourceName = js.native
+  var TableName: ResourceName
 }
 object DeleteTableRequest {
   

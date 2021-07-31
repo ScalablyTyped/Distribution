@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DowngradePlanUpdateResponse extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait DowngradePlanUpdateResponse extends StObject {
     * - `credit_card`
     * -
     */
-  var accountPaymentMethod: js.UndefOr[String] = js.native
+  var accountPaymentMethod: js.UndefOr[String] = js.undefined
   
-  var downgradeEffectiveDate: js.UndefOr[String] = js.native
+  var downgradeEffectiveDate: js.UndefOr[String] = js.undefined
   
-  var downgradePaymentCycle: js.UndefOr[String] = js.native
+  var downgradePaymentCycle: js.UndefOr[String] = js.undefined
   
-  var downgradePlanId: js.UndefOr[String] = js.native
+  var downgradePlanId: js.UndefOr[String] = js.undefined
   
-  var downgradePlanName: js.UndefOr[String] = js.native
+  var downgradePlanName: js.UndefOr[String] = js.undefined
   
-  var downgradeRequestStatus: js.UndefOr[String] = js.native
+  var downgradeRequestStatus: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object DowngradePlanUpdateResponse {
   

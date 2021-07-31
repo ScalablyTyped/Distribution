@@ -6,7 +6,6 @@ import typings.chrome.chrome.scriptBadge.ScriptBadgeClickedEvent
 import typings.chrome.chrome.scriptBadge.SetPopupDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -18,13 +17,11 @@ object scriptBadge {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.scriptBadge.getAttention")
-  @js.native
-  def getAttention(details: AttentionDetails): Unit = js.native
+  @scala.inline
+  def getAttention(details: AttentionDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttention")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.scriptBadge.getPopup")
-  @js.native
-  def getPopup(details: GetPopupDetails, callback: js.Function): Unit = js.native
+  @scala.inline
+  def getPopup(details: GetPopupDetails, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPopup")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.scriptBadge.onClicked")
   @js.native
@@ -32,7 +29,6 @@ object scriptBadge {
   @scala.inline
   def onClicked_=(x: ScriptBadgeClickedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onClicked")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.scriptBadge.setPopup")
-  @js.native
-  def setPopup(details: SetPopupDetails): Unit = js.native
+  @scala.inline
+  def setPopup(details: SetPopupDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPopup")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

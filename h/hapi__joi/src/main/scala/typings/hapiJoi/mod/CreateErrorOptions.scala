@@ -2,15 +2,13 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateErrorOptions extends StObject {
   
-  var flags: js.UndefOr[Boolean] = js.native
+  var flags: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[LanguageMessages] = js.native
+  var messages: js.UndefOr[LanguageMessages] = js.undefined
 }
 object CreateErrorOptions {
   

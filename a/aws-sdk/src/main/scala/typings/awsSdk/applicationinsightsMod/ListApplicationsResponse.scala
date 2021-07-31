@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationsResponse extends StObject {
   
   /**
     * The list of applications.
     */
-  var ApplicationInfoList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationInfoList] = js.native
+  var ApplicationInfoList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationInfoList] = js.undefined
   
   /**
     * The token used to retrieve the next page of results. This value is null when there are no more results to return. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListApplicationsResponse {
   

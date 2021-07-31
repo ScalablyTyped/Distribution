@@ -6,59 +6,57 @@ import typings.stripeV3.stripeV3Strings.recommended
 import typings.stripeV3.stripeV3Strings.required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Card extends StObject {
   
-  var address_city: js.UndefOr[String] = js.native
+  var address_city: js.UndefOr[String] = js.undefined
   
-  var address_country: js.UndefOr[String] = js.native
+  var address_country: js.UndefOr[String] = js.undefined
   
-  var address_line1: js.UndefOr[String] = js.native
+  var address_line1: js.UndefOr[String] = js.undefined
   
-  var address_line1_check: js.UndefOr[checkType] = js.native
+  var address_line1_check: js.UndefOr[checkType] = js.undefined
   
-  var address_line2: js.UndefOr[String] = js.native
+  var address_line2: js.UndefOr[String] = js.undefined
   
-  var address_state: js.UndefOr[String] = js.native
+  var address_state: js.UndefOr[String] = js.undefined
   
-  var address_zip: js.UndefOr[String] = js.native
+  var address_zip: js.UndefOr[String] = js.undefined
   
-  var address_zip_check: js.UndefOr[checkType] = js.native
+  var address_zip_check: js.UndefOr[checkType] = js.undefined
   
-  var brand: brandType = js.native
+  var brand: brandType
   
-  var country: String = js.native
+  var country: String
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var cvc_check: js.UndefOr[checkType] = js.native
+  var cvc_check: js.UndefOr[checkType] = js.undefined
   
-  var dynamic_last4: String = js.native
+  var dynamic_last4: String
   
-  var exp_month: Double = js.native
+  var exp_month: Double
   
-  var exp_year: Double = js.native
+  var exp_year: Double
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var funding: fundingType = js.native
+  var funding: fundingType
   
-  var id: String = js.native
+  var id: String
   
-  var last4: String = js.native
+  var last4: String
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `object`: String = js.native
+  var `object`: String
   
-  var three_d_secure: js.UndefOr[required | recommended | optional | not_supported] = js.native
+  var three_d_secure: js.UndefOr[required | recommended | optional | not_supported] = js.undefined
   
-  var tokenization_method: js.UndefOr[tokenizationType] = js.native
+  var tokenization_method: js.UndefOr[tokenizationType] = js.undefined
 }
 object Card {
   

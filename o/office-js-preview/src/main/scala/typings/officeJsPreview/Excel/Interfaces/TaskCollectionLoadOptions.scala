@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait TaskCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var assignees: js.UndefOr[Boolean] = js.native
+  var assignees: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var comment: js.UndefOr[CommentLoadOptions] = js.native
+  var comment: js.UndefOr[CommentLoadOptions] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dueDate: js.UndefOr[Boolean] = js.native
+  var dueDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var percentComplete: js.UndefOr[Boolean] = js.native
+  var percentComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var priority: js.UndefOr[Boolean] = js.native
+  var priority: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDate: js.UndefOr[Boolean] = js.native
+  var startDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait TaskCollectionLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
 }
 object TaskCollectionLoadOptions {
   

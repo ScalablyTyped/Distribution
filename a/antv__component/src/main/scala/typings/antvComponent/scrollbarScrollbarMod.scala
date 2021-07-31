@@ -9,7 +9,6 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollbarScrollbarMod {
@@ -41,7 +40,7 @@ object scrollbarScrollbarMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     var isMobile: js.Any = js.native
     
@@ -52,13 +51,13 @@ object scrollbarScrollbarMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -68,7 +67,7 @@ object scrollbarScrollbarMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     var onMouseMove: js.Any = js.native
     
@@ -93,28 +92,29 @@ object scrollbarScrollbarMod {
     var validateRange: js.Any = js.native
   }
   
-  @js.native
-  trait ScrollbarCfg extends GroupComponentCfg {
+  trait ScrollbarCfg
+    extends StObject
+       with GroupComponentCfg {
     
-    var isHorizontal: js.UndefOr[Boolean] = js.native
+    var isHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var maxLimit: js.UndefOr[Double] = js.native
+    var maxLimit: js.UndefOr[Double] = js.undefined
     
-    var minLimit: js.UndefOr[Double] = js.native
+    var minLimit: js.UndefOr[Double] = js.undefined
     
-    var minThumbLen: js.UndefOr[Double] = js.native
+    var minThumbLen: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[ScrollbarTheme] = js.native
+    var theme: js.UndefOr[ScrollbarTheme] = js.undefined
     
-    var thumbLen: Double = js.native
+    var thumbLen: Double
     
-    var thumbOffset: js.UndefOr[Double] = js.native
+    var thumbOffset: js.UndefOr[Double] = js.undefined
     
-    var trackLen: Double = js.native
+    var trackLen: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ScrollbarCfg {
     
@@ -177,16 +177,15 @@ object scrollbarScrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollbarStyle extends StObject {
     
-    var lineCap: String = js.native
+    var lineCap: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var thumbColor: String = js.native
+    var thumbColor: String
     
-    var trackColor: String = js.native
+    var trackColor: String
   }
   object ScrollbarStyle {
     
@@ -213,12 +212,11 @@ object scrollbarScrollbarMod {
     }
   }
   
-  @js.native
   trait ScrollbarTheme extends StObject {
     
-    var default: js.UndefOr[PartialReadonlyScrollbarS] = js.native
+    var default: js.UndefOr[PartialReadonlyScrollbarS] = js.undefined
     
-    var hover: js.UndefOr[PartialReadonlyScrollbarS] = js.native
+    var hover: js.UndefOr[PartialReadonlyScrollbarS] = js.undefined
   }
   object ScrollbarTheme {
     

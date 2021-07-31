@@ -25,7 +25,6 @@ import typings.std.MouseEvent
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePickerMod {
@@ -102,7 +101,7 @@ object basePickerMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MBasePicker(): Unit = js.native
     
-    var currentPromise: js.UndefOr[js.Thenable[_]] = js.native
+    var currentPromise: js.UndefOr[js.Thenable[js.Any]] = js.native
     
     def dismissSuggestions(): Unit = js.native
     def dismissSuggestions(ev: js.Any): Unit = js.native
@@ -163,7 +162,7 @@ object basePickerMod {
     /* protected */ def removeItem(item: IPickerItemProps[T]): Unit = js.native
     /* protected */ def removeItem(item: IPickerItemProps[T], focusNextItem: Boolean): Unit = js.native
     
-    /* protected */ def removeItems(itemsToRemove: js.Array[_]): Unit = js.native
+    /* protected */ def removeItems(itemsToRemove: js.Array[js.Any]): Unit = js.native
     
     /* protected */ def renderItems(): js.Array[Element] = js.native
     
@@ -182,7 +181,7 @@ object basePickerMod {
     
     var suggestionStore: SuggestionsController[T] = js.native
     
-    /* protected */ def updateSuggestions(suggestions: js.Array[_]): Unit = js.native
+    /* protected */ def updateSuggestions(suggestions: js.Array[js.Any]): Unit = js.native
     
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): Unit = js.native
     /* protected */ def updateSuggestionsList(suggestions: js.Array[T], updatedValue: String): Unit = js.native
@@ -194,9 +193,12 @@ object basePickerMod {
   /* static members */
   object BasePicker {
     
-    @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePicker.getDerivedStateFromProps")
+    @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePicker")
     @js.native
-    def getDerivedStateFromProps(newProps: IBasePickerProps[_]): Items | Null = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(newProps: IBasePickerProps[js.Any]): Items | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(newProps.asInstanceOf[js.Any]).asInstanceOf[Items | Null]
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/BasePicker", "BasePickerListBelow")
@@ -205,28 +207,27 @@ object basePickerMod {
     def this(basePickerProps: P) = this()
   }
   
-  @js.native
   trait IBasePickerState extends StObject {
     
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
-    var isMostRecentlyUsedVisible: js.UndefOr[Boolean] = js.native
+    var isMostRecentlyUsedVisible: js.UndefOr[Boolean] = js.undefined
     
-    var isResultsFooterVisible: js.UndefOr[Boolean] = js.native
+    var isResultsFooterVisible: js.UndefOr[Boolean] = js.undefined
     
-    var isSearching: js.UndefOr[Boolean] = js.native
+    var isSearching: js.UndefOr[Boolean] = js.undefined
     
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
-    var moreSuggestionsAvailable: js.UndefOr[Boolean] = js.native
+    var moreSuggestionsAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var selectedIndices: js.UndefOr[js.Array[Double]] = js.native
+    var selectedIndices: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var suggestedDisplayValue: js.UndefOr[String] = js.native
+    var suggestedDisplayValue: js.UndefOr[String] = js.undefined
     
-    var suggestionsLoading: js.UndefOr[Boolean] = js.native
+    var suggestionsLoading: js.UndefOr[Boolean] = js.undefined
     
-    var suggestionsVisible: js.UndefOr[Boolean] = js.native
+    var suggestionsVisible: js.UndefOr[Boolean] = js.undefined
   }
   object IBasePickerState {
     
@@ -304,23 +305,22 @@ object basePickerMod {
     }
   }
   
-  @js.native
   trait IPickerAriaIds extends StObject {
     
     /**
       * Aria id for selected items container component
       */
-    var selectedItems: String = js.native
+    var selectedItems: String
     
     /**
       * Aria id for selected suggestion alert component
       */
-    var selectedSuggestionAlert: String = js.native
+    var selectedSuggestionAlert: String
     
     /**
       * Aria id for suggestions list component
       */
-    var suggestionList: String = js.native
+    var suggestionList: String
   }
   object IPickerAriaIds {
     

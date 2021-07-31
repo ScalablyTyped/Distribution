@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * To control the access rights of users, there is the possibility to implement objects like users and groups.
   */
-@js.native
 trait DatabaseDefinition
-  extends XTablesSupplier
+  extends StObject
+     with XTablesSupplier
      with XViewsSupplier
      with XUsersSupplier
      with XGroupsSupplier

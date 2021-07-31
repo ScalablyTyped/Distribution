@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,9 @@ object OverlayType extends StObject {
     *
     */
   @js.native
-  sealed trait html extends OverlayType
+  sealed trait html
+    extends StObject
+       with OverlayType
   
   /**
     *
@@ -31,7 +32,9 @@ object OverlayType extends StObject {
     *
     */
   @js.native
-  sealed trait image extends OverlayType
+  sealed trait image
+    extends StObject
+       with OverlayType
   
   /**
     *
@@ -39,5 +42,7 @@ object OverlayType extends StObject {
     *
     */
   @js.native
-  sealed trait text extends OverlayType
+  sealed trait text
+    extends StObject
+       with OverlayType
 }

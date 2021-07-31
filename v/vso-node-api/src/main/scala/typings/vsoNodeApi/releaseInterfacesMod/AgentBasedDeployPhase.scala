@@ -2,13 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentBasedDeployPhase extends DeployPhase {
+trait AgentBasedDeployPhase
+  extends StObject
+     with DeployPhase {
   
-  var deploymentInput: AgentDeploymentInput = js.native
+  var deploymentInput: AgentDeploymentInput
 }
 object AgentBasedDeployPhase {
   

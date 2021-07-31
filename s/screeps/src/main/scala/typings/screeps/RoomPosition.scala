@@ -25,7 +25,6 @@ import typings.screeps.screepsStrings.tombstone
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,11 +72,13 @@ trait RoomPosition extends StObject {
     * @returns The name of the flag if created, or one of the following error codes: ERR_NAME_EXISTS, ERR_INVALID_ARGS
     */
   def createFlag(): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(name: js.UndefOr[scala.Nothing], color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(name: js.UndefOr[scala.Nothing], color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(name: String): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
-  def createFlag(name: String, color: js.UndefOr[ColorConstant], secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: String, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   def createFlag(name: String, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: String, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: Unit, color: Unit, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: Unit, color: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
+  def createFlag(name: Unit, color: ColorConstant, secondaryColor: ColorConstant): ERR_NAME_EXISTS | ERR_INVALID_ARGS | String = js.native
   
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
@@ -86,7 +87,7 @@ trait RoomPosition extends StObject {
     * @returns One of the supplied objects
     */
   def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T]): T | Null = js.native
-  def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts with Filter[T]): T | Null = js.native
+  def findClosestByPath[T /* <: HasRoomPosition | RoomPosition */](objects: js.Array[T], opts: FindPathOpts & Filter[T]): T | Null = js.native
   /**
     * Find the object with the shortest path from the given position. Uses A* search algorithm and Dijkstra's algorithm.
     * @param type Any of the FIND_* constants.
@@ -94,7 +95,7 @@ trait RoomPosition extends StObject {
     * @returns An instance of a RoomObject.
     */
   def findClosestByPath[K /* <: FindConstant */](`type`: K): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
-  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts with Partial[FilterOptions[K]] with Algorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
+  def findClosestByPath[K /* <: FindConstant */](`type`: K, opts: FindPathOpts & Partial[FilterOptions[K]] & Algorithm): (/* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[K] */ js.Any) | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_HOSTILE_STRUCTURES, opts: FindPathOptsPartialFilter): T | Null = js.native
   def findClosestByPath[T /* <: Structure[StructureConstant] */](`type`: FIND_MY_STRUCTURES): T | Null = js.native
@@ -257,7 +258,7 @@ trait RoomPosition extends StObject {
   @JSName("lookFor")
   def lookFor_energy(`type`: energy): js.Array[Resource[RESOURCE_ENERGY]] = js.native
   @JSName("lookFor")
-  def lookFor_exit(`type`: exit): js.Array[_] = js.native
+  def lookFor_exit(`type`: exit): js.Array[js.Any] = js.native
   @JSName("lookFor")
   def lookFor_flag(`type`: flag): js.Array[Flag] = js.native
   @JSName("lookFor")

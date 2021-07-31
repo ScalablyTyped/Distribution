@@ -6,40 +6,38 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooManyRequestsException
-  extends SmithyException
+  extends StObject
+     with SmithyException
      with MetadataBearer {
   
   @JSName("$fault")
-  var $fault_TooManyRequestsException: client = js.native
+  var $fault_TooManyRequestsException: client
   
   /**
     * <p>Message returned by a TooManyRequestsException</p>
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_TooManyRequestsException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.TooManyRequestsException = js.native
+  var name_TooManyRequestsException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.TooManyRequestsException
 }
 object TooManyRequestsException {
   
   @scala.inline
-  def apply(
-    $fault: client,
-    $metadata: ResponseMetadata,
-    name: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.TooManyRequestsException
-  ): TooManyRequestsException = {
-    val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], $metadata = $metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply($metadata: ResponseMetadata): TooManyRequestsException = {
+    val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "TooManyRequestsException")
     __obj.asInstanceOf[TooManyRequestsException]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "TooManyRequestsException.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "TooManyRequestsException")
   @js.native
-  def filterSensitiveLog(obj: TooManyRequestsException): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: TooManyRequestsException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class TooManyRequestsExceptionMutableBuilder[Self <: TooManyRequestsException] (val x: Self) extends AnyVal {

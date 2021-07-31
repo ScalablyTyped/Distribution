@@ -2,11 +2,12 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IOverlay extends ICustomizable {
+trait IOverlay
+  extends StObject
+     with ICustomizable {
   
   def getData(): js.Object = js.native
   

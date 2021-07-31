@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnenoteEntityBaseModel extends Entity {
+trait OnenoteEntityBaseModel
+  extends StObject
+     with Entity {
   
   // The endpoint where you can get details about the page. Read-only.
-  var self: js.UndefOr[NullableOption[String]] = js.native
+  var self: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnenoteEntityBaseModel {
   

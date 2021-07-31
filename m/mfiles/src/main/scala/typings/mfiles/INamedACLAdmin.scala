@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INamedACLAdmin extends StObject {
   
-  var AccessControlListForNamedACL: IAccessControlList = js.native
+  var AccessControlListForNamedACL: IAccessControlList
   
-  def Clone(): INamedACLAdmin = js.native
+  def Clone(): INamedACLAdmin
   
-  var NamedACL: INamedACL = js.native
+  var NamedACL: INamedACL
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
 }
 object INamedACLAdmin {
   

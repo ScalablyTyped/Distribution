@@ -2,10 +2,8 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePaymentMethodOptions extends StObject {
   
   /**
@@ -13,9 +11,9 @@ trait CreatePaymentMethodOptions extends StObject {
     * that may be used or required by particular types of
     * payment methods.
     */
-  var billing_details: js.UndefOr[BillingDetails] = js.native
+  var billing_details: js.UndefOr[BillingDetails] = js.undefined
   
-  var metadata: js.UndefOr[Metadata] = js.native
+  var metadata: js.UndefOr[Metadata] = js.undefined
 }
 object CreatePaymentMethodOptions {
   

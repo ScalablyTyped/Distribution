@@ -2,20 +2,18 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignEventObject extends StObject {
   
   @JSName("InfoPath.SignEventObject_typekey")
-  var InfoPathDotSignEventObject_typekey: SignEventObject = js.native
+  var InfoPathDotSignEventObject_typekey: SignEventObject
   
-  var ReturnStatus: Boolean = js.native
+  var ReturnStatus: Boolean
   
-  val SignedDataBlock: SignedDataBlockObject = js.native
+  val SignedDataBlock: SignedDataBlockObject
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object SignEventObject {
   

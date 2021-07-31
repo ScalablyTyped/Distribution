@@ -2,39 +2,37 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used by ListView's currentItem API
   **/
-@js.native
 trait IListViewItem extends StObject {
   
   /**
     * Gets or sets whether the ListView item is focused.
     **/
-  var hasFocus: js.UndefOr[Boolean] = js.native
+  var hasFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets index of the ListView item.
     **/
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets key of the ListView item.
     **/
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the ListView item is focused and is showing its focus visual.
     **/
-  var showFocus: js.UndefOr[Boolean] = js.native
+  var showFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the type, if any.
     **/
-  var `type`: js.UndefOr[ObjectType] = js.native
+  var `type`: js.UndefOr[ObjectType] = js.undefined
 }
 object IListViewItem {
   

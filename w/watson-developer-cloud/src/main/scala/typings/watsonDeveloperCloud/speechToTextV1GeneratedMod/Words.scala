@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Words. */
-@js.native
 trait Words extends StObject {
   
   /** An array of `Word` objects that provides information about each word in the custom model's words resource. The array is empty if the custom model has no words. */
-  var words: js.Array[Word] = js.native
+  var words: js.Array[Word]
 }
 object Words {
   

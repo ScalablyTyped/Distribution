@@ -35,99 +35,86 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valuerefMod {
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "datumDefToExpr")
+  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", JSImport.Namespace)
   @js.native
-  def datumDefToExpr(datumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidPredicate")
-  @js.native
-  def fieldInvalidPredicate(field: FieldDef[String, _]): String = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidPredicate")
-  @js.native
-  def fieldInvalidPredicate(field: FieldDef[String, _], invalid: Boolean): String = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidPredicate")
-  @js.native
-  def fieldInvalidPredicate(field: FieldName): String = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidPredicate")
-  @js.native
-  def fieldInvalidPredicate(field: FieldName, invalid: Boolean): String = js.native
+  @scala.inline
+  def datumDefToExpr(datumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("datumDefToExpr")(datumDef.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidTestValueRef")
-  @js.native
-  def fieldInvalidTestValueRef(fieldDef: FieldDef[String, _], channel: PolarPositionChannel): FieldTest | TestValue = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "fieldInvalidTestValueRef")
-  @js.native
-  def fieldInvalidTestValueRef(fieldDef: FieldDef[String, _], channel: PositionChannel): FieldTest | TestValue = js.native
+  @scala.inline
+  def fieldInvalidPredicate(field: FieldDef[String, js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidPredicate")(field.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fieldInvalidPredicate(field: FieldDef[String, js.Any], invalid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidPredicate")(field.asInstanceOf[js.Any], invalid.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def fieldInvalidPredicate(field: FieldName): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidPredicate")(field.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fieldInvalidPredicate(field: FieldName, invalid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidPredicate")(field.asInstanceOf[js.Any], invalid.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "interpolatedSignalRef")
-  @js.native
-  def interpolatedSignalRef(hasScaleNameFieldOrDatumDefFieldOrDatumDef2OffsetStartSuffixBand: FieldOrDatumDef2): VgValueRef = js.native
+  @scala.inline
+  def fieldInvalidTestValueRef(fieldDef: FieldDef[String, js.Any], channel: PolarPositionChannel): FieldTest | TestValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidTestValueRef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[FieldTest | TestValue]
+  @scala.inline
+  def fieldInvalidTestValueRef(fieldDef: FieldDef[String, js.Any], channel: PositionChannel): FieldTest | TestValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldInvalidTestValueRef")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[FieldTest | TestValue]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "midPoint")
-  @js.native
+  @scala.inline
+  def interpolatedSignalRef(hasScaleNameFieldOrDatumDefFieldOrDatumDef2OffsetStartSuffixBand: FieldOrDatumDef2): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolatedSignalRef")(hasScaleNameFieldOrDatumDefFieldOrDatumDef2OffsetStartSuffixBand.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
+  
+  @scala.inline
   def midPoint(
     hasChannelChannelDefChannel2DefMarkDefConfigScaleNameScaleStackOffsetDefaultRefBand: MidPointParams
-  ): VgValueRef = js.native
+  ): VgValueRef = ^.asInstanceOf[js.Dynamic].applyDynamic("midPoint")(hasChannelChannelDefChannel2DefMarkDefConfigScaleNameScaleStackOffsetDefaultRefBand.asInstanceOf[js.Any]).asInstanceOf[VgValueRef]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "midPointRefWithPositionInvalidTest")
-  @js.native
-  def midPointRefWithPositionInvalidTest(params: MidPointParamschannelPosi): VgValueRef | js.Array[VgValueRef] = js.native
+  @scala.inline
+  def midPointRefWithPositionInvalidTest(params: MidPointParamschannelPosi): VgValueRef | js.Array[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("midPointRefWithPositionInvalidTest")(params.asInstanceOf[js.Any]).asInstanceOf[VgValueRef | js.Array[VgValueRef]]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "valueRefForFieldOrDatumDef")
-  @js.native
+  @scala.inline
   def valueRefForFieldOrDatumDef(
     fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     scaleName: String,
     opt: FieldRefOption,
     encode: BandOffset
-  ): VgValueRef = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "valueRefForFieldOrDatumDef")
-  @js.native
-  def valueRefForFieldOrDatumDef(fieldDef: FieldDefBase[String, Bin], scaleName: String, opt: FieldRefOption, encode: BandOffset): VgValueRef = js.native
+  ): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("valueRefForFieldOrDatumDef")(fieldDef.asInstanceOf[js.Any], scaleName.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], encode.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
+  @scala.inline
+  def valueRefForFieldOrDatumDef(fieldDef: FieldDefBase[String, Bin], scaleName: String, opt: FieldRefOption, encode: BandOffset): VgValueRef = (^.asInstanceOf[js.Dynamic].applyDynamic("valueRefForFieldOrDatumDef")(fieldDef.asInstanceOf[js.Any], scaleName.asInstanceOf[js.Any], opt.asInstanceOf[js.Any], encode.asInstanceOf[js.Any])).asInstanceOf[VgValueRef]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "widthHeightValueOrSignalRef")
-  @js.native
-  def widthHeightValueOrSignalRef(channel: Channel, value: Value[ExprRef | SignalRef]): SignalRef | ValueValue | FieldGroup = js.native
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "widthHeightValueOrSignalRef")
-  @js.native
-  def widthHeightValueOrSignalRef(channel: Channel, value: SignalRef): SignalRef | ValueValue | FieldGroup = js.native
+  @scala.inline
+  def widthHeightValueOrSignalRef(channel: Channel, value: Value[ExprRef | SignalRef]): SignalRef | ValueValue | FieldGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("widthHeightValueOrSignalRef")(channel.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SignalRef | ValueValue | FieldGroup]
+  @scala.inline
+  def widthHeightValueOrSignalRef(channel: Channel, value: SignalRef): SignalRef | ValueValue | FieldGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("widthHeightValueOrSignalRef")(channel.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[SignalRef | ValueValue | FieldGroup]
   
-  @JSImport("vega-lite/build/src/compile/mark/encode/valueref", "wrapPositionInvalidTest")
-  @js.native
-  def wrapPositionInvalidTest(hasFieldDefChannelMarkDefRefConfig: MarkDef): VgValueRef | js.Array[VgValueRef] = js.native
+  @scala.inline
+  def wrapPositionInvalidTest(hasFieldDefChannelMarkDefRefConfig: MarkDef): VgValueRef | js.Array[VgValueRef] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapPositionInvalidTest")(hasFieldDefChannelMarkDefRefConfig.asInstanceOf[js.Any]).asInstanceOf[VgValueRef | js.Array[VgValueRef]]
   
-  @js.native
   trait MidPointParams extends StObject {
     
     /**
       * Allow overriding band instead of reading to field def since band is applied to size (width/height) instead of the position for x/y-position with band scales.
       */
-    var band: js.UndefOr[Double] = js.native
+    var band: js.UndefOr[Double] = js.undefined
     
-    var channel: Channel = js.native
+    var channel: Channel
     
-    var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.native
+    var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
     
-    var channelDef: ChannelDef[String] = js.native
+    var channelDef: ChannelDef[String]
     
-    var config: Config[SignalRef] = js.native
+    var config: Config[SignalRef]
     
-    var defaultRef: VgValueRef | js.Function0[VgValueRef] = js.native
+    var defaultRef: VgValueRef | js.Function0[VgValueRef]
     
-    var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef] = js.native
+    var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]
     
-    var offset: js.UndefOr[Double | SignalRef] = js.native
+    var offset: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var scale: ScaleComponent = js.native
+    var scale: ScaleComponent
     
-    var scaleName: String = js.native
+    var scaleName: String
     
-    var stack: js.UndefOr[StackProperties] = js.native
+    var stack: js.UndefOr[StackProperties] = js.undefined
   }
   object MidPointParams {
     

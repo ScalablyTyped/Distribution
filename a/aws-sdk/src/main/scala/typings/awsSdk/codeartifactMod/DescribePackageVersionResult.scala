@@ -2,16 +2,14 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePackageVersionResult extends StObject {
   
   /**
     *  A  PackageVersionDescription  object that contains information about the requested package version. 
     */
-  var packageVersion: PackageVersionDescription = js.native
+  var packageVersion: PackageVersionDescription
 }
 object DescribePackageVersionResult {
   

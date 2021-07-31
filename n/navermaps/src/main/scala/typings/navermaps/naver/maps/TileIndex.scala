@@ -2,15 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileIndex extends StObject {
   
-  var xIndex: Double = js.native
+  var xIndex: Double
   
-  var yIndex: Double = js.native
+  var yIndex: Double
 }
 object TileIndex {
   

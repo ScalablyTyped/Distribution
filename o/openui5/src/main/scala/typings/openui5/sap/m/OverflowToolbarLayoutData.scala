@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OverflowToolbarLayoutData extends ToolbarLayoutData {
+trait OverflowToolbarLayoutData
+  extends StObject
+     with ToolbarLayoutData {
   
   /**
     * Gets current value of property <code>closeOverflowOnInteraction</code>.Defines whether the overflow

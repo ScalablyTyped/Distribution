@@ -4,23 +4,23 @@ import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CloudTasksConfig extends GoogleAuthOptions {
+trait CloudTasksConfig
+  extends StObject
+     with GoogleAuthOptions {
   
-  var autoRetry: js.UndefOr[Boolean] = js.native
+  var autoRetry: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var libName: js.UndefOr[String] = js.native
+  var libName: js.UndefOr[String] = js.undefined
   
-  var libVersion: js.UndefOr[String] = js.native
+  var libVersion: js.UndefOr[String] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var promise: js.UndefOr[PromiseConstructor] = js.native
+  var promise: js.UndefOr[PromiseConstructor] = js.undefined
 }
 object CloudTasksConfig {
   

@@ -4,31 +4,25 @@ import typings.luaparse.luaparseStrings.Colon
 import typings.luaparse.luaparseStrings.Dot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.MemberExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.MemberExpression]
+     with Expression {
   
-  var base: Expression = js.native
+  var base: Expression
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var indexer: Dot | Colon = js.native
+  var indexer: Dot | Colon
 }
 object MemberExpression {
   
   @scala.inline
-  def apply(
-    base: Expression,
-    identifier: Identifier,
-    indexer: Dot | Colon,
-    `type`: typings.luaparse.luaparseStrings.MemberExpression
-  ): MemberExpression = {
+  def apply(base: Expression, identifier: Identifier, indexer: Dot | Colon): MemberExpression = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], indexer = indexer.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression]
   }
   

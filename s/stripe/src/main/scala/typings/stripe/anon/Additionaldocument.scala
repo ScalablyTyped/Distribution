@@ -3,39 +3,37 @@ package typings.stripe.anon
 import typings.stripe.mod.accounts.IPersonDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Additionaldocument extends StObject {
   
   /**
     * A document showing address, either a passport, local ID card, or utility bill from a well-known utility company.
     */
-  var additional_document: IPersonDocument = js.native
+  var additional_document: IPersonDocument
   
   /**
     * A user-displayable string describing the verification state for the person.
     * For example, this may say “Provided identity information could not be verified”.
     */
-  var details: String = js.native
+  var details: String
   
   /**
     * One of document_address_mismatch, document_dob_mismatch, document_duplicate_type, document_id_number_mismatch,
     * document_name_mismatch, failed_keyed_identity, or failed_other.
     * A machine-readable code specifying the verification state for the person.
     */
-  var details_code: String = js.native
+  var details_code: String
   
   /**
     * An identifying document, either a passport or local ID card.
     */
-  var document: IPersonDocument = js.native
+  var document: IPersonDocument
   
   /**
     * The state of verification for the person. Possible values are unverified, pending, or verified.
     */
-  var status: String = js.native
+  var status: String
 }
 object Additionaldocument {
   

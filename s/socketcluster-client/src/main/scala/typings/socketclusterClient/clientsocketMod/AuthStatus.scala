@@ -3,15 +3,13 @@ package typings.socketclusterClient.clientsocketMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthStatus extends StObject {
   
-  var authError: Error = js.native
+  var authError: Error
   
-  var isAuthenticated: AuthStates = js.native
+  var isAuthenticated: AuthStates
 }
 object AuthStatus {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedWorkspaceChangeRequest extends StObject {
   
   /**
     * The error code that is returned if the WorkSpace cannot be rebooted.
     */
-  var ErrorCode: js.UndefOr[ErrorType] = js.native
+  var ErrorCode: js.UndefOr[ErrorType] = js.undefined
   
   /**
     * The text of the error message that is returned if the WorkSpace cannot be rebooted.
     */
-  var ErrorMessage: js.UndefOr[Description] = js.native
+  var ErrorMessage: js.UndefOr[Description] = js.undefined
   
   /**
     * The identifier of the WorkSpace.
     */
-  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.native
+  var WorkspaceId: js.UndefOr[typings.awsSdk.workspacesMod.WorkspaceId] = js.undefined
 }
 object FailedWorkspaceChangeRequest {
   

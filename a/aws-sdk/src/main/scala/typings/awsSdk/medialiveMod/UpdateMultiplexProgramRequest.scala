@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMultiplexProgramRequest extends StObject {
   
   /**
     * The ID of the multiplex of the program to update.
     */
-  var MultiplexId: string = js.native
+  var MultiplexId: string
   
   /**
     * The new settings for a multiplex program.
     */
-  var MultiplexProgramSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexProgramSettings] = js.native
+  var MultiplexProgramSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexProgramSettings] = js.undefined
   
   /**
     * The name of the program to update.
     */
-  var ProgramName: string = js.native
+  var ProgramName: string
 }
 object UpdateMultiplexProgramRequest {
   

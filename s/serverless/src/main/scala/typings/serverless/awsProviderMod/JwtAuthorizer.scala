@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JwtAuthorizer extends StObject {
   
-  var audience: js.Array[String] = js.native
+  var audience: js.Array[String]
   
-  var identitySource: String = js.native
+  var identitySource: String
   
-  var issuerUrl: String = js.native
+  var issuerUrl: String
 }
 object JwtAuthorizer {
   

@@ -2,14 +2,12 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activity extends StObject {
   
   /** Percentage indicating the likelihood user is performing this activity. */
-  var confidence: Double = js.native
+  var confidence: Double
   
   /**
     * Type of the activity.
@@ -17,7 +15,7 @@ trait Activity extends StObject {
     * Possible values:
     * IN_VEHICLE, ON_BICYCLE, ON_FOOT, RUNNING, STILL, TILTING, UNKNOWN, WALKING
     */
-  var `type`: ActivityType = js.native
+  var `type`: ActivityType
 }
 object Activity {
   

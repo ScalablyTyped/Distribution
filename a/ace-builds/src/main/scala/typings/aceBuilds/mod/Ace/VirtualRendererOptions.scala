@@ -2,55 +2,53 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRendererOptions extends StObject {
   
-  var animatedScroll: Boolean = js.native
+  var animatedScroll: Boolean
   
-  var displayIndentGuides: Boolean = js.native
+  var displayIndentGuides: Boolean
   
-  var fadeFoldWidgets: Boolean = js.native
+  var fadeFoldWidgets: Boolean
   
-  var fixedWidthGutter: Boolean = js.native
+  var fixedWidthGutter: Boolean
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var hScrollBarAlwaysVisible: Boolean = js.native
+  var hScrollBarAlwaysVisible: Boolean
   
-  var hasCssTransforms: Boolean = js.native
+  var hasCssTransforms: Boolean
   
-  var highlightGutterLine: Boolean = js.native
+  var highlightGutterLine: Boolean
   
-  var maxLines: Double = js.native
+  var maxLines: Double
   
-  var maxPixelHeight: Double = js.native
+  var maxPixelHeight: Double
   
-  var minLines: Double = js.native
+  var minLines: Double
   
-  var printMargin: Boolean | Double = js.native
+  var printMargin: Boolean | Double
   
-  var printMarginColumn: Double = js.native
+  var printMarginColumn: Double
   
-  var scrollPastEnd: Boolean = js.native
+  var scrollPastEnd: Boolean
   
-  var showFoldWidgets: Boolean = js.native
+  var showFoldWidgets: Boolean
   
-  var showGutter: Boolean = js.native
+  var showGutter: Boolean
   
-  var showInvisibles: Boolean = js.native
+  var showInvisibles: Boolean
   
-  var showLineNumbers: Boolean = js.native
+  var showLineNumbers: Boolean
   
-  var showPrintMargin: Boolean = js.native
+  var showPrintMargin: Boolean
   
-  var theme: String = js.native
+  var theme: String
   
-  var vScrollBarAlwaysVisible: Boolean = js.native
+  var vScrollBarAlwaysVisible: Boolean
 }
 object VirtualRendererOptions {
   

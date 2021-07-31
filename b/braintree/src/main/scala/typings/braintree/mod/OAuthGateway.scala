@@ -2,19 +2,17 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuthGateway extends StObject {
   
-  def connectUrl(urlRequest: OAuthConnectUrlRequest): String = js.native
+  def connectUrl(urlRequest: OAuthConnectUrlRequest): String
   
-  def createTokenFromCode(request: OAuthCreateTokenFromCodeRequest): js.Promise[ValidatedResponse[OAuthToken]] = js.native
+  def createTokenFromCode(request: OAuthCreateTokenFromCodeRequest): js.Promise[ValidatedResponse[OAuthToken]]
   
-  def createTokenFromRefreshToken(request: OAuthCreateTokenFromRefreshTokenRequest): js.Promise[ValidatedResponse[OAuthToken]] = js.native
+  def createTokenFromRefreshToken(request: OAuthCreateTokenFromRefreshTokenRequest): js.Promise[ValidatedResponse[OAuthToken]]
   
-  def revokeAccessToken(accessToken: String): js.Promise[ValidatedResponse[Unit]] = js.native
+  def revokeAccessToken(accessToken: String): js.Promise[ValidatedResponse[Unit]]
 }
 object OAuthGateway {
   

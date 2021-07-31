@@ -12,7 +12,7 @@ Flux architecture tools for React
 | Keywords           | react, flux |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 89458 |
+| # downloads        | 56821 |
 | # stars            | 3 |
 
 ## Links

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAlertsResponse extends StObject {
   
   /** The list of alerts. */
-  var alerts: js.UndefOr[js.Array[Alert]] = js.native
+  var alerts: js.UndefOr[js.Array[Alert]] = js.undefined
   
   /**
     * The token for the next page. If not empty, indicates that there may be more alerts that match the listing request; this value can be used in a subsequent ListAlertsRequest to get
     * alerts continuing from last result of the current list call.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAlertsResponse {
   

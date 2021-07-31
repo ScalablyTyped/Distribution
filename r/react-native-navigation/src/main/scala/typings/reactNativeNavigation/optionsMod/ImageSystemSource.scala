@@ -3,15 +3,13 @@ package typings.reactNativeNavigation.optionsMod
 import typings.reactNative.mod.ImageRequireSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageSystemSource extends StObject {
   
-  var fallback: js.UndefOr[ImageRequireSource | String] = js.native
+  var fallback: js.UndefOr[ImageRequireSource | String] = js.undefined
   
-  var system: String = js.native
+  var system: String
 }
 object ImageSystemSource {
   

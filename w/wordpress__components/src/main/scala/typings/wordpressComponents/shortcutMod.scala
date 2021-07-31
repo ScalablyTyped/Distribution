@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.shortcutMod.Shortcut.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutMod {
@@ -24,12 +23,11 @@ object shortcutMod {
   
   object Shortcut {
     
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var shortcut: js.UndefOr[ShortcutType] = js.native
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
     }
     object Props {
       
@@ -56,18 +54,17 @@ object shortcutMod {
       }
     }
     
-    @js.native
     trait ShortcutObj extends StObject {
       
       /**
         * Optional `aria-label` for the `<span>` element.
         */
-      var ariaLabel: js.UndefOr[String] = js.native
+      var ariaLabel: js.UndefOr[String] = js.undefined
       
       /**
         * The visible text.
         */
-      var display: String = js.native
+      var display: String
     }
     object ShortcutObj {
       

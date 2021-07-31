@@ -6,19 +6,17 @@ import typings.numeric.mod.Tensor
 import typings.numeric.mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var A: Matrix = js.native
+    var A: Matrix
     
-    var I: Matrix = js.native
+    var I: Matrix
     
-    var P: Vector = js.native
+    var P: Vector
   }
   object A {
     
@@ -51,12 +49,11 @@ object anon {
     }
   }
   
-  @js.native
   trait B extends StObject {
     
-    var B: Matrix = js.native
+    var B: Matrix
     
-    var Q: Matrix = js.native
+    var Q: Matrix
   }
   object B {
     
@@ -83,12 +80,11 @@ object anon {
     }
   }
   
-  @js.native
   trait E extends StObject {
     
-    var E: Tensor = js.native
+    var E: Tensor
     
-    var lambda: Tensor = js.native
+    var lambda: Tensor
   }
   object E {
     
@@ -109,20 +105,19 @@ object anon {
     }
   }
   
-  @js.native
   trait F extends StObject {
     
-    var f: Scalar = js.native
+    var f: Scalar
     
-    var gradient: Vector = js.native
+    var gradient: Vector
     
-    var invHessian: Matrix = js.native
+    var invHessian: Matrix
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var message: String = js.native
+    var message: String
     
-    var solution: Vector = js.native
+    var solution: Vector
   }
   object F {
     
@@ -171,12 +166,11 @@ object anon {
     }
   }
   
-  @js.native
   trait H extends StObject {
     
-    var H: Matrix = js.native
+    var H: Matrix
     
-    var Q: Matrix = js.native
+    var Q: Matrix
   }
   object H {
     
@@ -203,10 +197,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Hinv extends StObject {
     
-    var Hinv: Matrix = js.native
+    var Hinv: Matrix
   }
   object Hinv {
     
@@ -227,20 +220,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Iact extends StObject {
     
-    var iact: Vector = js.native
+    var iact: Vector
     
-    var iterations: Vector = js.native
+    var iterations: Vector
     
-    var message: String = js.native
+    var message: String
     
-    var solution: Vector = js.native
+    var solution: Vector
     
-    var unconstrained_solution: Vector = js.native
+    var unconstrained_solution: Vector
     
-    var value: Vector = js.native
+    var value: Vector
   }
   object Iact {
     
@@ -295,14 +287,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Iterations extends StObject {
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var message: String = js.native
+    var message: String
     
-    var solution: Scalar | Vector = js.native
+    var solution: Scalar | Vector
   }
   object Iterations {
     
@@ -329,12 +320,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LU extends StObject {
     
-    var LU: Matrix = js.native
+    var LU: Matrix
     
-    var P: Vector = js.native
+    var P: Vector
   }
   object LU {
     
@@ -372,14 +362,13 @@ object anon {
     def seedrandom(seed: Double, useEntropy: Boolean): String = js.native
   }
   
-  @js.native
   trait S extends StObject {
     
-    var S: Vector = js.native
+    var S: Vector
     
-    var U: Matrix = js.native
+    var U: Matrix
     
-    var V: Matrix = js.native
+    var V: Matrix
   }
   object S {
     

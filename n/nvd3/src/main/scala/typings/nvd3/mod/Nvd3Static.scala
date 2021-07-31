@@ -2,7 +2,6 @@ package typings.nvd3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,7 +18,7 @@ trait Nvd3Static extends StObject {
   var dev: Boolean = js.native
   
   //returns last argument
-  def log(arg: js.Array[_]): js.Any = js.native
+  def log(arg: js.Array[js.Any]): js.Any = js.native
   def log(topic: String): String = js.native
   def log(topic: String, value: String): String = js.native
   

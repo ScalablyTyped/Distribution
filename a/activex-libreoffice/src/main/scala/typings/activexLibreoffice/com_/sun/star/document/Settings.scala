@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.i18n.XForbiddenCharacters
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,79 +20,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.drawing.DocumentSettings
   * @see com.sun.star.presentation.DocumentSettings
   */
-@js.native
-trait Settings extends XPropertySet {
+trait Settings
+  extends StObject
+     with XPropertySet {
   
   /** layout engine should add value of a Font's "external leading" attribute to the line spacing. */
-  var AddExternalLeading: Boolean = js.native
+  var AddExternalLeading: Boolean
   
   /** specifies if the user-specific settings saved within a document should be loaded with the document. */
-  var ApplyUserData: Boolean = js.native
+  var ApplyUserData: Boolean
   
-  var AutoCalculate: Boolean = js.native
+  var AutoCalculate: Boolean
   
-  var BitmapTableURL: String = js.native
+  var BitmapTableURL: String
   
   /**
     * specifies the compression (character spacing) type used for Asian characters.
     * @see com.sun.star.text.CharacterCompressionType
     */
-  var CharacterCompressionType: Double = js.native
+  var CharacterCompressionType: Double
   
   /** contains the URL that points to a color table (file extension .soc) that will be used for showing a palette in dialogs using colors. */
-  var ColorTableURL: String = js.native
+  var ColorTableURL: String
   
   /** a string value, specifying the name of the object displayed currently (or the SQL statement used). */
-  var CurrentDatabaseCommand: String = js.native
+  var CurrentDatabaseCommand: String
   
   /**
     * determines the interpretation of the property DataTableName.
     * @see com.sun.star.sdb.CommandType
     */
-  var CurrentDatabaseCommandType: Double = js.native
+  var CurrentDatabaseCommandType: Double
   
   /**
     * The name of the globally registered {@link com.sun.star.sdb.DataSource} from which the current data is taken.
     *
     * The data source can e.g. be used for feeding a form letter.
     */
-  var CurrentDatabaseDataSource: String = js.native
+  var CurrentDatabaseDataSource: String
   
-  var DashTableURL: String = js.native
+  var DashTableURL: String
   
-  var DefaultTabStop: Double = js.native
+  var DefaultTabStop: Double
   
   /**
     * Whether to embed fonts used by the document (see e.g. handling of OOXML embedRegular etc.)
     * @since LibreOffice 4.0
     */
-  var EmbedFonts: Boolean = js.native
+  var EmbedFonts: Boolean
   
   /**
     * Whether to embed also system fonts used by the document. Does not have any effect if EmbedFonts is false.
     * @since LibreOffice 4.0
     */
-  var EmbedSystemFonts: Boolean = js.native
+  var EmbedSystemFonts: Boolean
   
   /** specifies if fields in text documents are updated automatically. */
-  var FieldAutoUpdate: Boolean = js.native
+  var FieldAutoUpdate: Boolean
   
   /**
     * gives access to the set of forbidden characters.
     * @returns the {@link com.sun.star.i18n.XForbiddenCharacters} interface to allow retrieval and modification of the forbidden characters set.
     */
-  var ForbiddenCharacters: XForbiddenCharacters = js.native
+  var ForbiddenCharacters: XForbiddenCharacters
   
-  var GradientTableURL: String = js.native
+  var GradientTableURL: String
   
-  var HatchTableURL: String = js.native
+  var HatchTableURL: String
   
   /**
     * specifies if kerning is applied to Asian punctuation.
     *
     * Applies only if kerning is enabled.
     */
-  var IsKernAsianPunctuation: Boolean = js.native
+  var IsKernAsianPunctuation: Boolean
   
   /**
     * determines if the document will be printed as a booklet (brochure), i.e., two document pages are put together on one physical page, such that you can
@@ -101,42 +101,42 @@ trait Settings extends XPropertySet {
     *
     * Note, that you have to print in duplex mode, if both, {@link IsPrintBookletFront} and {@link IsPrintBookletBack} are set to `TRUE` .
     */
-  var IsPrintBooklet: Boolean = js.native
+  var IsPrintBooklet: Boolean
   
   /**
     * is only effective, if {@link IsPrintBooklet} is `TRUE` . If this property is also `TRUE` , only the backs of the pages of your booklet are printed.
     *
     * This is especially useful, if your printer does not supply duplex printing.
     */
-  var IsPrintBookletBack: Boolean = js.native
+  var IsPrintBookletBack: Boolean
   
   /**
     * is only effective, if {@link IsPrintBooklet} is `TRUE` . If this property is also `TRUE` , only the fronts of the pages of your booklet are printed.
     *
     * This is especially useful, if your printer does not supply duplex printing.
     */
-  var IsPrintBookletFront: Boolean = js.native
+  var IsPrintBookletFront: Boolean
   
-  var LineEndTableURL: String = js.native
+  var LineEndTableURL: String
   
   /**
     * specifies the update mode for links when loading text documents.
     *
     * For supported values see the constants group {@link LinkUpdateModes} .
     */
-  var LinkUpdateMode: Double = js.native
+  var LinkUpdateMode: Double
   
-  var PrintQuality: Double = js.native
+  var PrintQuality: Double
   
   /**
     * forbid use of printer metrics for layout
     *
     * For supported values see the constants group {@link PrinterIndependentLayout} .
     */
-  var PrinterIndependentLayout: Double = js.native
+  var PrinterIndependentLayout: Double
   
   /** printer used by the document. */
-  var PrinterName: String = js.native
+  var PrinterName: String
   
   /**
     * platform and driver dependent printer setup data.
@@ -144,17 +144,17 @@ trait Settings extends XPropertySet {
     * This property serves to capture the current printer setup settings, such as paper tray, printer options, etc. The data can typically be interpreted
     * only by the system that generated it. The PrinterSetup property may be used to save and restore the user's printer settings.
     */
-  var PrinterSetup: SafeArray[Double] = js.native
+  var PrinterSetup: SafeArray[Double]
   
   /** specifies if a new version is created if a document has been modified and you want to close it. */
-  var SaveVersionOnClose: Boolean = js.native
+  var SaveVersionOnClose: Boolean
   
   /**
     * specifies if the document should be updated when the template it was created from changes.
     *
     * Applies only for documents that were created from a template.
     */
-  var UpdateFromTemplate: Boolean = js.native
+  var UpdateFromTemplate: Boolean
 }
 object Settings {
   

@@ -10,14 +10,13 @@ import typings.winrtUwp.winrtUwpStrings.messagechanged
 import typings.winrtUwp.winrtUwpStrings.storechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the methods and properties to read, manage and send messages. An application gets access to the message store using the static ChatMessageManager class . */
 @js.native
 trait ChatMessageStore extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_messagechanged(`type`: messagechanged, listener: TypedEventHandler[ChatMessageStore, ChatMessageChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -150,18 +149,18 @@ trait ChatMessageStore extends StObject {
   def markMessageReadAsync(localChatMessageId: String): IPromiseWithIAsyncAction = js.native
   
   /** An event that occurs when a message in the message store is changed. */
-  def onmessagechanged(ev: ChatMessageChangedEventArgs with WinRTEvent[ChatMessageStore]): Unit = js.native
+  def onmessagechanged(ev: ChatMessageChangedEventArgs & WinRTEvent[ChatMessageStore]): Unit = js.native
   /** An event that occurs when a message in the message store is changed. */
   @JSName("onmessagechanged")
   var onmessagechanged_Original: TypedEventHandler[ChatMessageStore, ChatMessageChangedEventArgs] = js.native
   
   /** Occurs when something in the ChatMessageStore has changed. */
-  def onstorechanged(ev: ChatMessageStoreChangedEventArgs with WinRTEvent[ChatMessageStore]): Unit = js.native
+  def onstorechanged(ev: ChatMessageStoreChangedEventArgs & WinRTEvent[ChatMessageStore]): Unit = js.native
   /** Occurs when something in the ChatMessageStore has changed. */
   @JSName("onstorechanged")
   var onstorechanged_Original: TypedEventHandler[ChatMessageStore, ChatMessageStoreChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_messagechanged(`type`: messagechanged, listener: TypedEventHandler[ChatMessageStore, ChatMessageChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupsSetNamedPortsRequest extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaInstanceGroupsSetNamedPortsRequest extends StObject {
     * from another concurrent request. A request with an incorrect fingerprint
     * will fail with error 412 conditionNotMet.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The list of named ports to set for this instance group.
     */
-  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.undefined
 }
 object SchemaInstanceGroupsSetNamedPortsRequest {
   

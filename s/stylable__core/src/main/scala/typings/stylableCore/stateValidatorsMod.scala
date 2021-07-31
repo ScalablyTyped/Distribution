@@ -4,7 +4,6 @@ import typings.std.Record
 import typings.stylableCore.typesMod.StateArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateValidatorsMod {
@@ -13,10 +12,9 @@ object stateValidatorsMod {
   @js.native
   val systemValidators: Record[String, StateParamType] = js.native
   
-  @js.native
   trait StateParamType extends StObject {
     
-    var subValidators: js.UndefOr[Record[String, SubValidator]] = js.native
+    var subValidators: js.UndefOr[Record[String, SubValidator]] = js.undefined
     
     def validate(
       value: js.Any,
@@ -24,7 +22,7 @@ object stateValidatorsMod {
       resolveParam: js.Any,
       validateDefinition: Boolean,
       validateValue: Boolean
-    ): StateResult = js.native
+    ): StateResult
   }
   object StateParamType {
     
@@ -48,18 +46,17 @@ object stateValidatorsMod {
     }
   }
   
-  @js.native
   trait StateResult extends StObject {
     
-    var errors: js.Array[String] | Null = js.native
+    var errors: js.Array[String] | Null
     
-    var res: String = js.native
+    var res: String
   }
   object StateResult {
     
     @scala.inline
     def apply(res: String): StateResult = {
-      val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any], errors = null)
       __obj.asInstanceOf[StateResult]
     }
     
@@ -80,5 +77,9 @@ object stateValidatorsMod {
     }
   }
   
-  type SubValidator = js.Function2[/* value */ String, /* repeated */ String, StateResult]
+  @js.native
+  trait SubValidator extends StObject {
+    
+    def apply(value: String, rest: String*): StateResult = js.native
+  }
 }

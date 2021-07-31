@@ -4,30 +4,28 @@ import typings.minappEnv.minappEnvStrings.md5_
 import typings.minappEnv.minappEnvStrings.sha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxGetFileInfoOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[WxGetFileInfoCompleteCallback] = js.native
+  var complete: js.UndefOr[WxGetFileInfoCompleteCallback] = js.undefined
   
   /** 计算文件摘要的算法
     *
     * 可选值：
     * - 'md5': md5 算法;
     * - 'sha1': sha1 算法; */
-  var digestAlgorithm: js.UndefOr[md5_ | sha1] = js.native
+  var digestAlgorithm: js.UndefOr[md5_ | sha1] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[WxGetFileInfoFailCallback] = js.native
+  var fail: js.UndefOr[WxGetFileInfoFailCallback] = js.undefined
   
   /** 本地文件路径 */
-  var filePath: String = js.native
+  var filePath: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[WxGetFileInfoSuccessCallback] = js.native
+  var success: js.UndefOr[WxGetFileInfoSuccessCallback] = js.undefined
 }
 object WxGetFileInfoOption {
   

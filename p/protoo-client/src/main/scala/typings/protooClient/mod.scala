@@ -1,7 +1,6 @@
 package typings.protooClient
 
 import typings.protooClient.anon.ClientConfig
-import typings.protooClient.protooClientBooleans.`false`
 import typings.protooClient.protooClientBooleans.`true`
 import typings.protooClient.protooClientStrings.close
 import typings.protooClient.protooClientStrings.disconnected
@@ -12,7 +11,6 @@ import typings.protooClient.protooClientStrings.request
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,19 +28,19 @@ object mod {
     
     var data: js.Any = js.native
     
-    def notify(method: String): js.Promise[_] = js.native
-    def notify(method: String, data: js.Any): js.Promise[_] = js.native
+    def notify(method: String): js.Promise[js.Any] = js.native
+    def notify(method: String, data: js.Any): js.Promise[js.Any] = js.native
     
     @JSName("on")
-    def on_close(evt: close, handler: js.Function0[_]): Unit = js.native
+    def on_close(evt: close, handler: js.Function0[js.Any]): Unit = js.native
     @JSName("on")
-    def on_disconnected(evt: disconnected, handler: js.Function0[_]): Unit = js.native
+    def on_disconnected(evt: disconnected, handler: js.Function0[js.Any]): Unit = js.native
     @JSName("on")
-    def on_failed(evt: failed, handler: js.Function1[/* currentAttempt */ Double, _]): Unit = js.native
+    def on_failed(evt: failed, handler: js.Function1[/* currentAttempt */ Double, js.Any]): Unit = js.native
     @JSName("on")
-    def on_notification(evt: notification, handler: js.Function1[/* notif */ ProtooNotification, _]): Unit = js.native
+    def on_notification(evt: notification, handler: js.Function1[/* notif */ ProtooNotification, js.Any]): Unit = js.native
     @JSName("on")
-    def on_open(evt: open, handler: js.Function0[_]): Unit = js.native
+    def on_open(evt: open, handler: js.Function0[js.Any]): Unit = js.native
     @JSName("on")
     def on_request(
       evt: request,
@@ -50,12 +48,12 @@ object mod {
           /* request */ ProtooRequest, 
           /* accept */ js.Function1[/* data */ js.UndefOr[ProtooResponse], Unit], 
           /* reject */ js.Function2[/* error */ js.UndefOr[Error | Double], /* errorReason */ js.UndefOr[String], Unit], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
-    def request(method: String): js.Promise[_] = js.native
-    def request(method: String, data: js.Any): js.Promise[_] = js.native
+    def request(method: String): js.Promise[js.Any] = js.native
+    def request(method: String, data: js.Any): js.Promise[js.Any] = js.native
   }
   
   @JSImport("protoo-client", "WebSocketTransport")
@@ -71,20 +69,19 @@ object mod {
     def send(message: js.Any): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait ProtooNotification extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var notification: `true` = js.native
+    var notification: `true`
   }
   object ProtooNotification {
     
     @scala.inline
-    def apply(method: String, notification: `true`): ProtooNotification = {
-      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any])
+    def apply(method: String): ProtooNotification = {
+      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], notification = true)
       __obj.asInstanceOf[ProtooNotification]
     }
     
@@ -105,22 +102,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ProtooRequest extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var method: String = js.native
+    var method: String
     
-    var request: `true` = js.native
+    var request: `true`
   }
   object ProtooRequest {
     
     @scala.inline
-    def apply(id: Double, method: String, request: `true`): ProtooRequest = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+    def apply(id: Double, method: String): ProtooRequest = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = true)
       __obj.asInstanceOf[ProtooRequest]
     }
     
@@ -152,14 +148,14 @@ object mod {
   object ProtooResponse {
     
     @scala.inline
-    def Data(data: js.Any, id: Double, ok: `true`, response: `true`): typings.protooClient.anon.Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    def Data(data: js.Any, id: Double): typings.protooClient.anon.Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = true, response = true)
       __obj.asInstanceOf[typings.protooClient.anon.Data]
     }
     
     @scala.inline
-    def ErrorCode(errorCode: Double, errorReason: String, id: Double, ok: `false`, response: `true`): typings.protooClient.anon.ErrorCode = {
-      val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorReason = errorReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
+    def ErrorCode(errorCode: Double, errorReason: String, id: Double): typings.protooClient.anon.ErrorCode = {
+      val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorReason = errorReason.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ok = false, response = true)
       __obj.asInstanceOf[typings.protooClient.anon.ErrorCode]
     }
   }

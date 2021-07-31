@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentDeleting event.
   */
-@js.native
-trait ASPxClientAppointmentDeletingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientAppointmentDeletingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets client IDs of the appointments to be removed.
     */
-  var appointmentIds: js.Array[String] = js.native
+  var appointmentIds: js.Array[String]
 }
 object ASPxClientAppointmentDeletingEventArgs {
   

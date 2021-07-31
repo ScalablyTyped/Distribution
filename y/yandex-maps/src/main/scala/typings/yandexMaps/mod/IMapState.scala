@@ -8,25 +8,23 @@ import typings.yandexMaps.yandexMapsStrings.yandexNumbersignmap
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignsatellite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapState extends StObject {
   
-  var behaviors: js.UndefOr[js.Array[String]] = js.native
+  var behaviors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var bounds: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
-  var center: js.UndefOr[js.Array[Double]] = js.native
+  var center: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var controls: js.UndefOr[js.Array[String | ZoomControl | RulerControl | TypeSelector]] = js.native
+  var controls: js.UndefOr[js.Array[String | ZoomControl | RulerControl | TypeSelector]] = js.undefined
   
-  var margin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.native
+  var margin: js.UndefOr[js.Array[js.Array[Double] | Double]] = js.undefined
   
-  var `type`: js.UndefOr[yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid] = js.native
+  var `type`: js.UndefOr[yandexNumbersignmap | yandexNumbersignsatellite | yandexNumbersignhybrid] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object IMapState {
   

@@ -2,21 +2,19 @@ package typings.baiduApp.swan.ai
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait imageAuditdata extends StObject {
   
-  var msg: Double = js.native
+  var msg: Double
   
-  var probability: Double = js.native
+  var probability: Double
   
-  var stars: js.Array[imageAuditdata] = js.native
+  var stars: js.Array[imageAuditdata]
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var words: Double = js.native
+  var words: Double
 }
 object imageAuditdata {
   

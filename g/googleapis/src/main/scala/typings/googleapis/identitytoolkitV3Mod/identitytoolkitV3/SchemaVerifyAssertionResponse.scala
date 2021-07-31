@@ -2,188 +2,186 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of verifying the IDP assertion.
   */
-@js.native
 trait SchemaVerifyAssertionResponse extends StObject {
   
   /**
     * The action code.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * URL for OTA app installation.
     */
-  var appInstallationUrl: js.UndefOr[String] = js.native
+  var appInstallationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The custom scheme used by mobile app.
     */
-  var appScheme: js.UndefOr[String] = js.native
+  var appScheme: js.UndefOr[String] = js.undefined
   
   /**
     * The opaque value used by the client to maintain context info between the
     * authentication request and the IDP callback.
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * The birth date of the IdP account.
     */
-  var dateOfBirth: js.UndefOr[String] = js.native
+  var dateOfBirth: js.UndefOr[String] = js.undefined
   
   /**
     * The display name of the user.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email returned by the IdP. NOTE: The federated login user may not own
     * the email.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * It&#39;s true if the email is recycled.
     */
-  var emailRecycled: js.UndefOr[Boolean] = js.native
+  var emailRecycled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value is true if the IDP is also the email provider. It means the
     * user owns the email.
     */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client error code.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be expiration time of
     * STS id token in seconds.
     */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID identifies the IdP account.
     */
-  var federatedId: js.UndefOr[String] = js.native
+  var federatedId: js.UndefOr[String] = js.undefined
   
   /**
     * The first name of the user.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * The full name of the user.
     */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID token.
     */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /**
     * It&#39;s the identifier param in the createAuthUri request if the
     * identifier is an email. It can be used to check whether the user input
     * email is different from the asserted email.
     */
-  var inputEmail: js.UndefOr[String] = js.native
+  var inputEmail: js.UndefOr[String] = js.undefined
   
   /**
     * True if it&#39;s a new user sign-in, false if it&#39;s a returning user.
     */
-  var isNewUser: js.UndefOr[Boolean] = js.native
+  var isNewUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#VerifyAssertionResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The language preference of the user.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The last name of the user.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
   /**
     * The RP local ID if it&#39;s already been mapped to the IdP account
     * identified by the federated ID.
     */
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the assertion is from a non-trusted IDP and need account linking
     * confirmation.
     */
-  var needConfirmation: js.UndefOr[Boolean] = js.native
+  var needConfirmation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether need client to supply email to complete the federated login flow.
     */
-  var needEmail: js.UndefOr[Boolean] = js.native
+  var needEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The nick name of the user.
     */
-  var nickName: js.UndefOr[String] = js.native
+  var nickName: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth2 access token.
     */
-  var oauthAccessToken: js.UndefOr[String] = js.native
+  var oauthAccessToken: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth2 authorization code.
     */
-  var oauthAuthorizationCode: js.UndefOr[String] = js.native
+  var oauthAuthorizationCode: js.UndefOr[String] = js.undefined
   
   /**
     * The lifetime in seconds of the OAuth2 access token.
     */
-  var oauthExpireIn: js.UndefOr[Double] = js.native
+  var oauthExpireIn: js.UndefOr[Double] = js.undefined
   
   /**
     * The OIDC id token.
     */
-  var oauthIdToken: js.UndefOr[String] = js.native
+  var oauthIdToken: js.UndefOr[String] = js.undefined
   
   /**
     * The user approved request token for the OpenID OAuth extension.
     */
-  var oauthRequestToken: js.UndefOr[String] = js.native
+  var oauthRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * The scope for the OpenID OAuth extension.
     */
-  var oauthScope: js.UndefOr[String] = js.native
+  var oauthScope: js.UndefOr[String] = js.undefined
   
   /**
     * The OAuth1 access token secret.
     */
-  var oauthTokenSecret: js.UndefOr[String] = js.native
+  var oauthTokenSecret: js.UndefOr[String] = js.undefined
   
   /**
     * The original email stored in the mapping storage. It&#39;s returned when
     * the federated ID is associated to a different email.
     */
-  var originalEmail: js.UndefOr[String] = js.native
+  var originalEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the public accessible profiel picture.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The IdP ID. For white listed IdPs it&#39;s a short domain name e.g.
@@ -193,33 +191,33 @@ trait SchemaVerifyAssertionResponse extends StObject {
     * &quot;identifier&quot; param is federated ID in the createAuthUri
     * request. The domain part of the federated ID is returned.
     */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
   
   /**
     * Raw IDP-returned user info.
     */
-  var rawUserInfo: js.UndefOr[String] = js.native
+  var rawUserInfo: js.UndefOr[String] = js.undefined
   
   /**
     * If idToken is STS id token, then this field will be refresh token.
     */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
   /**
     * The screen_name of a Twitter user or the login name at Github.
     */
-  var screenName: js.UndefOr[String] = js.native
+  var screenName: js.UndefOr[String] = js.undefined
   
   /**
     * The timezone of the user.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /**
     * When action is &#39;map&#39;, contains the idps which can be used for
     * confirmation.
     */
-  var verifiedProvider: js.UndefOr[js.Array[String]] = js.native
+  var verifiedProvider: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaVerifyAssertionResponse {
   

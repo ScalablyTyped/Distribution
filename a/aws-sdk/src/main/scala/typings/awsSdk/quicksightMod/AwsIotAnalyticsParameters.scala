@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIotAnalyticsParameters extends StObject {
   
   /**
     * Dataset name.
     */
-  var DataSetName: typings.awsSdk.quicksightMod.DataSetName = js.native
+  var DataSetName: typings.awsSdk.quicksightMod.DataSetName
 }
 object AwsIotAnalyticsParameters {
   

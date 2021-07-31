@@ -3,22 +3,20 @@ package typings.hapi.anon
 import typings.hapi.hapiBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extend extends StObject {
   
   @JSName("apply")
-  var apply: `true` = js.native
+  var apply: `true`
   
-  var extend: `true` = js.native
+  var extend: `true`
 }
 object Extend {
   
   @scala.inline
-  def apply(apply: `true`, extend: `true`): Extend = {
-    val __obj = js.Dynamic.literal(apply = apply.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any])
+  def apply(): Extend = {
+    val __obj = js.Dynamic.literal(apply = true, extend = true)
     __obj.asInstanceOf[Extend]
   }
   

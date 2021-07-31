@@ -4,7 +4,6 @@ import typings.createXpub.createXpubNumbers.`0x043587CF`
 import typings.createXpub.createXpubNumbers.`0x0488B21E`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,9 +17,12 @@ object mod {
     *
     * @returns A Base58 encoded extended public key.
     */
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("create-xpub", JSImport.Namespace)
   @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Mainnet (xpub) version bytes.
@@ -36,34 +38,33 @@ object mod {
   @js.native
   val testnet: `0x043587CF` = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The chain code.
       */
-    var chainCode: String = js.native
+    var chainCode: String
     
     /**
       * The child number.
       */
-    var childNumber: Double = js.native
+    var childNumber: Double
     
     /**
       * The depth of the derived key.
       */
-    var depth: Double = js.native
+    var depth: Double
     
     /**
       * Network version bytes.
       * @default 0x0488B21E
       */
-    var networkVersion: js.UndefOr[Double] = js.native
+    var networkVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * The public key in compressed or uncompressed form.
       */
-    var publicKey: String = js.native
+    var publicKey: String
   }
   object Options {
     

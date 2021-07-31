@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditRowStartingEventUIParam extends StObject {
   
   /**
     * Gets a reference to GridUpdating.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Checks if the edit mode is for adding a new row.
     */
-  var rowAdding: js.UndefOr[Boolean] = js.native
+  var rowAdding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the row's PK value.
     */
-  var rowID: js.UndefOr[js.Any] = js.native
+  var rowID: js.UndefOr[js.Any] = js.undefined
 }
 object EditRowStartingEventUIParam {
   

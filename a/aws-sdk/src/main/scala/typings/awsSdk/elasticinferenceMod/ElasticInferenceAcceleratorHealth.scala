@@ -2,16 +2,14 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticInferenceAcceleratorHealth extends StObject {
   
   /**
     *  The health status of the Elastic Inference Accelerator. 
     */
-  var status: js.UndefOr[AcceleratorHealthStatus] = js.native
+  var status: js.UndefOr[AcceleratorHealthStatus] = js.undefined
 }
 object ElasticInferenceAcceleratorHealth {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessDayConfig extends StObject {
   
   /** Regular business days. May not be empty. */
-  var businessDays: js.UndefOr[js.Array[String]] = js.native
+  var businessDays: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BusinessDayConfig {
   

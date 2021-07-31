@@ -13,53 +13,51 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @react-navigation/core.@react-navigation/core.NavigationContainerProps & {  theme :@react-navigation/native.@react-navigation/native/lib/typescript/src/types.Theme | undefined,   linking :@react-navigation/native.@react-navigation/native/lib/typescript/src/types.LinkingOptions | undefined,   fallback :react.react.ReactNode | undefined,   documentTitle :@react-navigation/native.@react-navigation/native/lib/typescript/src/types.DocumentTitleOptions | undefined,   onReady :(): void | undefined} & react.react.RefAttributes<@react-navigation/core.@react-navigation/core.NavigationContainerRef> */
-@js.native
 trait NavigationContainerPropst extends StObject {
   
   /**
     * Children elements to render.
     */
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var documentTitle: js.UndefOr[DocumentTitleOptions] = js.native
+  var documentTitle: js.UndefOr[DocumentTitleOptions] = js.undefined
   
-  var fallback: js.UndefOr[ReactNode] = js.native
+  var fallback: js.UndefOr[ReactNode] = js.undefined
   
   /**
     * Whether this navigation container should be independent of parent containers.
     * If this is not set to `true`, this container cannot be nested inside another container.
     * Setting it to `true` disconnects any children navigators from parent container.
     */
-  var independent: js.UndefOr[Boolean] = js.native
+  var independent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Initial navigation state for the child navigators.
     */
-  var initialState: js.UndefOr[InitialState] = js.native
+  var initialState: js.UndefOr[InitialState] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
-  var linking: js.UndefOr[LinkingOptions] = js.native
+  var linking: js.UndefOr[LinkingOptions] = js.undefined
   
-  var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback which is called with the latest navigation state when it changes.
     */
-  var onStateChange: js.UndefOr[js.Function1[/* state */ js.UndefOr[NavigationState[ParamListBase]], Unit]] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* state */ js.UndefOr[NavigationState[ParamListBase]], Unit]] = js.undefined
   
   /**
     * Callback which is called when an action is not handled.
     */
-  var onUnhandledAction: js.UndefOr[js.Function1[/* action */ NavigationAction, Unit]] = js.native
+  var onUnhandledAction: js.UndefOr[js.Function1[/* action */ NavigationAction, Unit]] = js.undefined
   
-  var ref: js.UndefOr[Ref[NavigationContainerRef]] = js.native
+  var ref: js.UndefOr[Ref[NavigationContainerRef]] = js.undefined
   
-  var theme: js.UndefOr[Theme] = js.native
+  var theme: js.UndefOr[Theme] = js.undefined
 }
 object NavigationContainerPropst {
   

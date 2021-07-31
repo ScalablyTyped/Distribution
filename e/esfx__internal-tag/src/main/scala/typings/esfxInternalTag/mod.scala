@@ -2,21 +2,21 @@ package typings.esfxInternalTag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@esfx/internal-tag", "Tag")
+  @JSImport("@esfx/internal-tag", JSImport.Namespace)
   @js.native
-  def Tag(): js.Function1[/* target */ js.Function, Unit] = js.native
-  @JSImport("@esfx/internal-tag", "Tag")
-  @js.native
-  def Tag(tag: String): js.Function1[/* target */ js.Function, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@esfx/internal-tag", "defineTag")
-  @js.native
-  def defineTag[T /* <: js.Object */](target: T, tag: String): T with Tagged = js.native
+  @scala.inline
+  def Tag(): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")().asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  @scala.inline
+  def Tag(tag: String): js.Function1[/* target */ js.Function, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Tag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Function, Unit]]
+  
+  @scala.inline
+  def defineTag[T /* <: js.Object */](target: T, tag: String): T & Tagged = (^.asInstanceOf[js.Dynamic].applyDynamic("defineTag")(target.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[T & Tagged]
   
   @js.native
   trait Tagged extends StObject {

@@ -2,17 +2,15 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Purge extends StObject {
   
-  var assert: Boolean = js.native
+  var assert: Boolean
   
-  var options: Durable = js.native
+  var options: Durable
   
-  var purge: Boolean = js.native
+  var purge: Boolean
 }
 object Purge {
   

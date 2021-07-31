@@ -10,9 +10,9 @@ Pull To Refresh
 | ------------------ | :-------------: |
 | Full name          | pulltorefreshjs |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 2 |
-| # downloads        | 222123 |
+| # releases         | 5 |
+| # dependents       | 4 |
+| # downloads        | 306970 |
 | # stars            | 0 |
 
 ## Links

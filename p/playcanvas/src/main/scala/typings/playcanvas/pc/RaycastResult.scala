@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,23 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param point - The point at which the ray hit the entity in world space.
   * @param normal - The normal vector of the surface where the ray hit in world space.
   */
-@js.native
 trait RaycastResult extends StObject {
   
   /**
     * The entity that was hit.
     */
-  var entity: Entity = js.native
+  var entity: Entity
   
   /**
     * The normal vector of the surface where the ray hit in world space.
     */
-  var normal: Vec3 = js.native
+  var normal: Vec3
   
   /**
     * The point at which the ray hit the entity in world space.
     */
-  var point: Vec3 = js.native
+  var point: Vec3
 }
 object RaycastResult {
   

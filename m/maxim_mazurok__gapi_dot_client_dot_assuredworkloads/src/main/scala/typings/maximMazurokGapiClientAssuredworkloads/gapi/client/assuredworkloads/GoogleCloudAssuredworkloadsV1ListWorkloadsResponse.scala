@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworklo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssuredworkloadsV1ListWorkloadsResponse extends StObject {
   
   /** The next page token. Return empty if reached the last page. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of Workloads under a given parent. */
-  var workloads: js.UndefOr[js.Array[GoogleCloudAssuredworkloadsV1Workload]] = js.native
+  var workloads: js.UndefOr[js.Array[GoogleCloudAssuredworkloadsV1Workload]] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1ListWorkloadsResponse {
   

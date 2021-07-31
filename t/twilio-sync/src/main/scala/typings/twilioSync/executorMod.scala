@@ -2,25 +2,23 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object executorMod {
   
-  @js.native
   trait Job extends StObject {
     
-    var arg: js.Any = js.native
+    var arg: js.Any
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    def handle(arg: js.Any): js.Any = js.native
+    def handle(arg: js.Any): js.Any
     
-    def reject(arg: js.Any): js.Any = js.native
+    def reject(arg: js.Any): js.Any
     
-    def resolve(arg: js.Any): js.Any = js.native
+    def resolve(arg: js.Any): js.Any
     
-    var task: Task = js.native
+    var task: Task
   }
   object Job {
     
@@ -60,10 +58,9 @@ object executorMod {
     }
   }
   
-  @js.native
   trait JobExecutor extends StObject {
     
-    def add(task: Task, context: js.Any, arg: js.Any, errorHandler: js.Any): js.Any = js.native
+    def add(task: Task, context: js.Any, arg: js.Any, errorHandler: js.Any): js.Any
   }
   object JobExecutor {
     
@@ -81,6 +78,5 @@ object executorMod {
     }
   }
   
-  @js.native
   trait Task extends StObject
 }

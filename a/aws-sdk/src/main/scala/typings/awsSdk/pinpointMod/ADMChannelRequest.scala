@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADMChannelRequest extends StObject {
   
   /**
     * The Client ID that you received from Amazon to send messages by using ADM.
     */
-  var ClientId: string = js.native
+  var ClientId: string
   
   /**
     * The Client Secret that you received from Amazon to send messages by using ADM.
     */
-  var ClientSecret: string = js.native
+  var ClientSecret: string
   
   /**
     * Specifies whether to enable the ADM channel for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
 }
 object ADMChannelRequest {
   

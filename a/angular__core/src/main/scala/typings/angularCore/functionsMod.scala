@@ -5,19 +5,19 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.ParenthesizedExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionsMod {
   
-  @JSImport("@angular/core/schematics/utils/typescript/functions", "isFunctionLikeDeclaration")
+  @JSImport("@angular/core/schematics/utils/typescript/functions", JSImport.Namespace)
   @js.native
-  def isFunctionLikeDeclaration(node: Node): /* is typescript.typescript.FunctionLikeDeclaration */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/utils/typescript/functions", "unwrapExpression")
-  @js.native
-  def unwrapExpression(node: Expression): Expression = js.native
-  @JSImport("@angular/core/schematics/utils/typescript/functions", "unwrapExpression")
-  @js.native
-  def unwrapExpression(node: ParenthesizedExpression): Expression = js.native
+  @scala.inline
+  def isFunctionLikeDeclaration(node: Node): /* is typescript.typescript.FunctionLikeDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionLikeDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionLikeDeclaration */ Boolean]
+  
+  @scala.inline
+  def unwrapExpression(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  @scala.inline
+  def unwrapExpression(node: ParenthesizedExpression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpression")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 }

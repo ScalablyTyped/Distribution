@@ -4,19 +4,17 @@ import typings.react.mod.Component
 import typings.reactPhoneNumberInput.mod.FlagsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Country extends StObject {
     
-    var country: String = js.native
+    var country: String
     
-    var flags: FlagsMap = js.native
+    var flags: FlagsMap
     
-    var flagsPath: String = js.native
+    var flagsPath: String
   }
   object Country {
     
@@ -40,19 +38,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Icon extends StObject {
     
-    var icon: Component[js.Object, js.Object, _] = js.native
+    var icon: Component[js.Object, js.Object, js.Any]
     
-    var label: String = js.native
+    var label: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Icon {
     
     @scala.inline
-    def apply(icon: Component[js.Object, js.Object, _], label: String): Icon = {
+    def apply(icon: Component[js.Object, js.Object, js.Any], label: String): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
     }
@@ -61,7 +58,7 @@ object anon {
     implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIcon(value: Component[js.Object, js.Object, _]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      def setIcon(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])

@@ -2,15 +2,15 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SessionsMiddleware extends DelegateMiddleware {
+trait SessionsMiddleware
+  extends StObject
+     with DelegateMiddleware {
   
-  var storage: SessionStorage = js.native
+  var storage: SessionStorage
   
-  var transport: js.Array[SessionTransport] = js.native
+  var transport: js.Array[SessionTransport]
 }
 object SessionsMiddleware {
   

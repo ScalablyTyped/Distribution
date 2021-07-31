@@ -2,56 +2,54 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeSecurityGroupEgressRequest extends StObject {
   
   /**
     * Not supported. Use a set of IP permissions to specify the CIDR.
     */
-  var CidrIp: js.UndefOr[String] = js.native
+  var CidrIp: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Not supported. Use a set of IP permissions to specify the port.
     */
-  var FromPort: js.UndefOr[Integer] = js.native
+  var FromPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the security group.
     */
-  var GroupId: SecurityGroupId = js.native
+  var GroupId: SecurityGroupId
   
   /**
     * The sets of IP permissions. You can't specify a destination security group and a CIDR IP address range in the same set of permissions.
     */
-  var IpPermissions: js.UndefOr[IpPermissionList] = js.native
+  var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   
   /**
     * Not supported. Use a set of IP permissions to specify the protocol name or number.
     */
-  var IpProtocol: js.UndefOr[String] = js.native
+  var IpProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * Not supported. Use a set of IP permissions to specify a destination security group.
     */
-  var SourceSecurityGroupName: js.UndefOr[String] = js.native
+  var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Not supported. Use a set of IP permissions to specify a destination security group.
     */
-  var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * Not supported. Use a set of IP permissions to specify the port.
     */
-  var ToPort: js.UndefOr[Integer] = js.native
+  var ToPort: js.UndefOr[Integer] = js.undefined
 }
 object RevokeSecurityGroupEgressRequest {
   

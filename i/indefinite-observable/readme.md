@@ -10,9 +10,9 @@ Typings are for version 2.0.1
 | ------------------ | :-------------: |
 | Full name          | indefinite-observable |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 12156661 |
+| # releases         | 0 |
+| # dependents       | 6 |
+| # downloads        | 18280463 |
 | # stars            | 0 |
 
 ## Links

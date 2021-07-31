@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is the base interface of all collection interfaces. */
-@js.native
-trait XElementAccess extends XInterface {
+trait XElementAccess
+  extends StObject
+     with XInterface {
   
   /** @returns the type of the elements. `void` means that it is a multi-type container and you cannot determine the exact types with this interface. */
-  val ElementType: `type` = js.native
+  val ElementType: `type`
   
   /** @returns the type of the elements. `void` means that it is a multi-type container and you cannot determine the exact types with this interface. */
-  def getElementType(): `type` = js.native
+  def getElementType(): `type`
   
   /** @returns `TRUE` if the object contain elements, otherwise `FALSE` . */
-  def hasElements(): Boolean = js.native
+  def hasElements(): Boolean
 }
 object XElementAccess {
   

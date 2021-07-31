@@ -2,17 +2,15 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsDecimalOptions extends StObject {
   
-  var decimal_digits: js.UndefOr[String] = js.native
+  var decimal_digits: js.UndefOr[String] = js.undefined
   
-  var force_decimal: js.UndefOr[Boolean] = js.native
+  var force_decimal: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[AlphanumericLocale] = js.native
+  var locale: js.UndefOr[AlphanumericLocale] = js.undefined
 }
 object IsDecimalOptions {
   

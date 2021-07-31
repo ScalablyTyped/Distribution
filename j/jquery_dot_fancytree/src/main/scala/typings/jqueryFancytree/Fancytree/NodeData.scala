@@ -2,67 +2,65 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Data object passed to FancytreeNode() constructor. Note: typically these attributes are accessed by meber methods, e.g. `node.isExpanded()` and `node.setSelected(false)`.  */
-@js.native
 trait NodeData extends StObject {
   
   /** (initialization only, but will not be stored with the node). */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** optional array of child nodes */
-  var children: js.UndefOr[js.Array[NodeData]] = js.native
+  var children: js.UndefOr[js.Array[NodeData]] = js.undefined
   
   /** all properties from will be copied to `node.data` */
-  var data: js.UndefOr[js.Object] = js.native
+  var data: js.UndefOr[js.Object] = js.undefined
   
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
   /** class names added to the node markup (separate with space) */
-  var extraClasses: js.UndefOr[String] = js.native
+  var extraClasses: js.UndefOr[String] = js.undefined
   
   /** (initialization only, but will not be stored with the node). */
-  var focus: js.UndefOr[Boolean] = js.native
+  var focus: js.UndefOr[Boolean] = js.undefined
   
-  var folder: js.UndefOr[Boolean] = js.native
+  var folder: js.UndefOr[Boolean] = js.undefined
   
-  var hideCheckbox: js.UndefOr[Boolean] = js.native
+  var hideCheckbox: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Boolean | String] = js.native
+  var icon: js.UndefOr[Boolean | String] = js.undefined
   
   /** Will be added as title attribute of the node's icon span,thus enabling a tooltip. */
-  var iconTooltip: js.UndefOr[String] = js.native
+  var iconTooltip: js.UndefOr[String] = js.undefined
   
   /** unique key for this node (auto-generated if omitted) */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
   
   /** (reserved) */
-  var refKey: js.UndefOr[String] = js.native
+  var refKey: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /** If set, make this node a status node. Values: 'error', 'loading', 'nodata', 'paging'. */
-  var statusNodeType: js.UndefOr[String] = js.native
+  var statusNodeType: js.UndefOr[String] = js.undefined
   
   /** node text (may contain HTML tags) */
-  var title: String = js.native
+  var title: String
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
   /** Made available as node.type. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var unselectable: js.UndefOr[Boolean] = js.native
+  var unselectable: js.UndefOr[Boolean] = js.undefined
   
   /** Ignore this node when calculating the partsel status of parent nodes in selectMode 3 propagation. */
-  var unselectableIgnore: js.UndefOr[Boolean] = js.native
+  var unselectableIgnore: js.UndefOr[Boolean] = js.undefined
   
   /** Use this as constant selected value(overriding selectMode 3 propagation). */
-  var unselectableStatus: js.UndefOr[Boolean] = js.native
+  var unselectableStatus: js.UndefOr[Boolean] = js.undefined
 }
 object NodeData {
   

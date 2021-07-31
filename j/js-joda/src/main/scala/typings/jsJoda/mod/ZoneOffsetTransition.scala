@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneOffsetTransition")
@@ -39,8 +38,11 @@ class ZoneOffsetTransition protected () extends StObject {
 }
 object ZoneOffsetTransition {
   
-  /* static member */
-  @JSImport("js-joda", "ZoneOffsetTransition.of")
+  @JSImport("js-joda", "ZoneOffsetTransition")
   @js.native
-  def of(transition: LocalDateTime, offsetBefore: ZoneOffset, offsetAfter: ZoneOffset): ZoneOffsetTransition = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def of(transition: LocalDateTime, offsetBefore: ZoneOffset, offsetAfter: ZoneOffset): ZoneOffsetTransition = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(transition.asInstanceOf[js.Any], offsetBefore.asInstanceOf[js.Any], offsetAfter.asInstanceOf[js.Any])).asInstanceOf[ZoneOffsetTransition]
 }

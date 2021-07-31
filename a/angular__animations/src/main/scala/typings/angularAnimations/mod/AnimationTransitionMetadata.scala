@@ -3,16 +3,16 @@ package typings.angularAnimations.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationTransitionMetadata extends AnimationMetadata {
+trait AnimationTransitionMetadata
+  extends StObject
+     with AnimationMetadata {
   
   /**
     * One or more animation objects to which this transition applies.
     */
-  var animation: AnimationMetadata | js.Array[AnimationMetadata] = js.native
+  var animation: AnimationMetadata | js.Array[AnimationMetadata]
   
   /**
     * An expression that describes a state change.
@@ -23,14 +23,14 @@ trait AnimationTransitionMetadata extends AnimationMetadata {
     /* element */ js.UndefOr[js.Any], 
     /* params */ js.UndefOr[StringDictionary[js.Any]], 
     Boolean
-  ]) = js.native
+  ])
   
   /**
     * An options object containing a delay and
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation. Default delay is 0.
     */
-  var options: AnimationOptions | Null = js.native
+  var options: AnimationOptions | Null
 }
 object AnimationTransitionMetadata {
   
@@ -46,7 +46,7 @@ object AnimationTransitionMetadata {
     ]),
     `type`: AnimationMetadataType
   ): AnimationTransitionMetadata = {
-    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], expr = expr.asInstanceOf[js.Any], options = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationTransitionMetadata]
   }

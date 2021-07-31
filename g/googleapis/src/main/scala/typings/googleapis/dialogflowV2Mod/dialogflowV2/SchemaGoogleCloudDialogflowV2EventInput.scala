@@ -3,7 +3,6 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by the agent in the response: `&quot;Hello #welcome_event.name! What can I
   * do for you today?&quot;`.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2EventInput extends StObject {
   
   /**
@@ -23,17 +21,17 @@ trait SchemaGoogleCloudDialogflowV2EventInput extends StObject {
     * for a list of the currently supported language codes. Note that queries
     * in the same session do not necessarily need to specify the same language.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The unique identifier of the event.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of parameters associated with the event.
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2EventInput {
   

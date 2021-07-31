@@ -21,7 +21,6 @@ import typings.officeUiFabricReact.tooltipTypesMod.ITooltipProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libTooltipMod {
@@ -195,13 +194,13 @@ object libTooltipMod {
   object TooltipDelay extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay & Double] = js.native
     
-    /* 2 */ val long: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.long with Double = js.native
+    /* 2 */ val long: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.long & Double = js.native
     
-    /* 1 */ val medium: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.medium with Double = js.native
+    /* 1 */ val medium: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.medium & Double = js.native
     
-    /* 0 */ val zero: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.zero with Double = js.native
+    /* 0 */ val zero: typings.officeUiFabricReact.tooltipTypesMod.TooltipDelay.zero & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Tooltip", "TooltipHost")
@@ -239,10 +238,10 @@ object libTooltipMod {
   object TooltipOverflowMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode & Double] = js.native
     
-    /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent with Double = js.native
+    /* 0 */ val Parent: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Parent & Double = js.native
     
-    /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self with Double = js.native
+    /* 1 */ val Self: typings.officeUiFabricReact.tooltipHostTypesMod.TooltipOverflowMode.Self & Double = js.native
   }
 }

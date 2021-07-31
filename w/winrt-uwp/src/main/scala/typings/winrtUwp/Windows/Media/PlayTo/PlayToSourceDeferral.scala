@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a deferred operation when you're supplying a source media element for Play To. */
-@js.native
 trait PlayToSourceDeferral extends StObject {
   
   /** Ends the deferral. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object PlayToSourceDeferral {
   

@@ -2,18 +2,16 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reference to a path id within a model.
   */
-@js.native
 trait IRefPathIdInModel extends StObject {
   
-  var modelContext: IModel = js.native
+  var modelContext: IModel
   
-  var pathId: String = js.native
+  var pathId: String
 }
 object IRefPathIdInModel {
   

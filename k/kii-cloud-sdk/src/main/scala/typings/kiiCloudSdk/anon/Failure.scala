@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiACL
 import typings.kiiCloudSdk.KiiCloud.KiiACLEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Failure extends StObject {
   
-  def failure(theACL: KiiACL, anErrorString: String): js.Any = js.native
+  def failure(theACL: KiiACL, anErrorString: String): js.Any
   
-  def success(theACL: KiiACL, theEntries: js.Array[KiiACLEntry]): js.Any = js.native
+  def success(theACL: KiiACL, theEntries: js.Array[KiiACLEntry]): js.Any
 }
 object Failure {
   

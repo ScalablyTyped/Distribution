@@ -9,40 +9,38 @@ import typings.intercomClient.userMod.Segment
 import typings.intercomClient.userMod.SocialProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Visitor.Visitor> */
-@js.native
 trait PartialVisitor extends StObject {
   
-  var avatar: js.UndefOr[Avatar] = js.native
+  var avatar: js.UndefOr[Avatar] = js.undefined
   
-  var created_at: js.UndefOr[Double] = js.native
+  var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var last_request_at: js.UndefOr[Double | Null] = js.native
+  var last_request_at: js.UndefOr[Double | Null] = js.undefined
   
-  var location_data: js.UndefOr[LocationData | js.Object] = js.native
+  var location_data: js.UndefOr[LocationData | js.Object] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var segments: js.UndefOr[js.Array[Segment]] = js.native
+  var segments: js.UndefOr[js.Array[Segment]] = js.undefined
   
-  var social_profiles: js.UndefOr[js.Array[SocialProfile]] = js.native
+  var social_profiles: js.UndefOr[js.Array[SocialProfile]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   
-  var `type`: js.UndefOr[visitor] = js.native
+  var `type`: js.UndefOr[visitor] = js.undefined
   
-  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+  var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
   
-  var updated_at: js.UndefOr[Double] = js.native
+  var updated_at: js.UndefOr[Double] = js.undefined
   
-  var user_id: js.UndefOr[String | Null] = js.native
+  var user_id: js.UndefOr[String | Null] = js.undefined
 }
 object PartialVisitor {
   

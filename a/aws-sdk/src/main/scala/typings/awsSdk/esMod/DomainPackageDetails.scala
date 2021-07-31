@@ -2,53 +2,51 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainPackageDetails extends StObject {
   
   /**
     * Name of the domain you've associated a package with.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.esMod.DomainName] = js.undefined
   
   /**
     * State of the association. Values are ASSOCIATING/ASSOCIATION_FAILED/ACTIVE/DISSOCIATING/DISSOCIATION_FAILED.
     */
-  var DomainPackageStatus: js.UndefOr[typings.awsSdk.esMod.DomainPackageStatus] = js.native
+  var DomainPackageStatus: js.UndefOr[typings.awsSdk.esMod.DomainPackageStatus] = js.undefined
   
   /**
     * Additional information if the package is in an error state. Null otherwise.
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.esMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.esMod.ErrorDetails] = js.undefined
   
   /**
     * Timestamp of the most-recent update to the association status.
     */
-  var LastUpdated: js.UndefOr[typings.awsSdk.esMod.LastUpdated] = js.native
+  var LastUpdated: js.UndefOr[typings.awsSdk.esMod.LastUpdated] = js.undefined
   
   /**
     * Internal ID of the package.
     */
-  var PackageID: js.UndefOr[typings.awsSdk.esMod.PackageID] = js.native
+  var PackageID: js.UndefOr[typings.awsSdk.esMod.PackageID] = js.undefined
   
   /**
     * User specified name of the package.
     */
-  var PackageName: js.UndefOr[typings.awsSdk.esMod.PackageName] = js.native
+  var PackageName: js.UndefOr[typings.awsSdk.esMod.PackageName] = js.undefined
   
   /**
     * Currently supports only TXT-DICTIONARY.
     */
-  var PackageType: js.UndefOr[typings.awsSdk.esMod.PackageType] = js.native
+  var PackageType: js.UndefOr[typings.awsSdk.esMod.PackageType] = js.undefined
   
-  var PackageVersion: js.UndefOr[typings.awsSdk.esMod.PackageVersion] = js.native
+  var PackageVersion: js.UndefOr[typings.awsSdk.esMod.PackageVersion] = js.undefined
   
   /**
     * The relative path on Amazon ES nodes, which can be used as synonym_path when the package is synonym file.
     */
-  var ReferencePath: js.UndefOr[typings.awsSdk.esMod.ReferencePath] = js.native
+  var ReferencePath: js.UndefOr[typings.awsSdk.esMod.ReferencePath] = js.undefined
 }
 object DomainPackageDetails {
   

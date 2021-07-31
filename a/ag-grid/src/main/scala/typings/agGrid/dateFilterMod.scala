@@ -14,7 +14,6 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFilterMod {
@@ -75,9 +74,12 @@ object dateFilterMod {
   /* static members */
   object DateFilter {
     
-    @JSImport("ag-grid/dist/lib/filter/dateFilter", "DateFilter.removeTimezone")
+    @JSImport("ag-grid/dist/lib/filter/dateFilter", "DateFilter")
     @js.native
-    def removeTimezone(from: Date): Date = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def removeTimezone(from: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTimezone")(from.asInstanceOf[js.Any]).asInstanceOf[Date]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -90,20 +92,29 @@ object dateFilterMod {
     
     var eDateInput: js.Any = js.native
     
+    /** Returns the current date represented by this editor */
+    /* CompleteClass */
+    override def getDate(): Date = js.native
+    
     @JSName("init")
     def init_MDefaultDateComponent(params: IDateParams): Unit = js.native
     
     var listener: js.Any = js.native
+    
+    /** Sets the date represented by this component */
+    /* CompleteClass */
+    override def setDate(date: Date): Unit = js.native
   }
   
   type IDateComparatorFunc = js.Function2[/* filterLocalDateAtMidnight */ Date, /* cellValue */ js.Any, Double]
   
-  @js.native
-  trait IDateFilterParams extends IComparableFilterParams {
+  trait IDateFilterParams
+    extends StObject
+       with IComparableFilterParams {
     
-    var browserDatePicker: js.UndefOr[Boolean] = js.native
+    var browserDatePicker: js.UndefOr[Boolean] = js.undefined
     
-    var comparator: js.UndefOr[IDateComparatorFunc] = js.native
+    var comparator: js.UndefOr[IDateComparatorFunc] = js.undefined
   }
   object IDateFilterParams {
     
@@ -141,14 +152,15 @@ object dateFilterMod {
     }
   }
   
-  @js.native
-  trait SerializedDateFilter extends SerializedFilter {
+  trait SerializedDateFilter
+    extends StObject
+       with SerializedFilter {
     
-    var dateFrom: String = js.native
+    var dateFrom: String
     
-    var dateTo: String = js.native
+    var dateTo: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SerializedDateFilter {
     

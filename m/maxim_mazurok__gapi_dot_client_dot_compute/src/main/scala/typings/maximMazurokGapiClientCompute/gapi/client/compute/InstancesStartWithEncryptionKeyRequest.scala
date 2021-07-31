@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesStartWithEncryptionKeyRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait InstancesStartWithEncryptionKeyRequest extends StObject {
     *
     * If the disk is not protected with a customer-supplied encryption key it should not be specified.
     */
-  var disks: js.UndefOr[js.Array[CustomerEncryptionKeyProtectedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[CustomerEncryptionKeyProtectedDisk]] = js.undefined
 }
 object InstancesStartWithEncryptionKeyRequest {
   

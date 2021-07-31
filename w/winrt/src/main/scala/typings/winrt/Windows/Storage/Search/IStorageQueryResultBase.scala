@@ -4,25 +4,23 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStorageQueryResultBase extends StObject {
   
-  def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit = js.native
+  def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit
   
-  def findStartIndexAsync(value: js.Any): IAsyncOperation[Double] = js.native
+  def findStartIndexAsync(value: js.Any): IAsyncOperation[Double]
   
-  var folder: StorageFolder = js.native
+  var folder: StorageFolder
   
-  def getCurrentQueryOptions(): QueryOptions = js.native
+  def getCurrentQueryOptions(): QueryOptions
   
-  def getItemCountAsync(): IAsyncOperation[Double] = js.native
+  def getItemCountAsync(): IAsyncOperation[Double]
   
-  var oncontentschanged: js.Any = js.native
+  var oncontentschanged: js.Any
   
-  var onoptionschanged: js.Any = js.native
+  var onoptionschanged: js.Any
 }
 object IStorageQueryResultBase {
   

@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBeaconServiceChangeCallbackResult extends StObject {
   
   /** 服务目前是否可用 */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /** 目前是否处于搜索状态 */
-  var discovering: Boolean = js.native
+  var discovering: Boolean
 }
 object OnBeaconServiceChangeCallbackResult {
   

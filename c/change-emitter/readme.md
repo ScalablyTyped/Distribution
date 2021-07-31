@@ -11,8 +11,8 @@ Listen for changes. Like an event emitter that only emits a single event type. R
 | Full name          | change-emitter |
 | Keywords           | change, event, emitter |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 60603922 |
+| # dependents       | 19 |
+| # downloads        | 59259766 |
 | # stars            | 1 |
 
 ## Links

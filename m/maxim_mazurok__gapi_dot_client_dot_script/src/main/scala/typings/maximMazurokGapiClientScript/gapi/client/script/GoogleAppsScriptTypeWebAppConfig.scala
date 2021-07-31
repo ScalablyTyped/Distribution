@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsScriptTypeWebAppConfig extends StObject {
   
   /** Who has permission to run the web app. */
-  var access: js.UndefOr[String] = js.native
+  var access: js.UndefOr[String] = js.undefined
   
   /** Who to execute the web app as. */
-  var executeAs: js.UndefOr[String] = js.native
+  var executeAs: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsScriptTypeWebAppConfig {
   

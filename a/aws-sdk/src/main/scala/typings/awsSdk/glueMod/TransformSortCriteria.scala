@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformSortCriteria extends StObject {
   
   /**
     * The column to be used in the sorting criteria that are associated with the machine learning transform.
     */
-  var Column: TransformSortColumnType = js.native
+  var Column: TransformSortColumnType
   
   /**
     * The sort direction to be used in the sorting criteria that are associated with the machine learning transform.
     */
-  var SortDirection: SortDirectionType = js.native
+  var SortDirection: SortDirectionType
 }
 object TransformSortCriteria {
   

@@ -2,14 +2,14 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConeOptions extends EllipseOptions {
+trait ConeOptions
+  extends StObject
+     with EllipseOptions {
   
   /** @default 1 */
-  val length: js.UndefOr[Double] = js.native
+  val length: js.UndefOr[Double] = js.undefined
 }
 object ConeOptions {
   

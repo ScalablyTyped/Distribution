@@ -2,35 +2,33 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMMatrix2DInit extends StObject {
   
-  var a: js.UndefOr[Double] = js.native
+  var a: js.UndefOr[Double] = js.undefined
   
-  var b: js.UndefOr[Double] = js.native
+  var b: js.UndefOr[Double] = js.undefined
   
-  var c: js.UndefOr[Double] = js.native
+  var c: js.UndefOr[Double] = js.undefined
   
-  var d: js.UndefOr[Double] = js.native
+  var d: js.UndefOr[Double] = js.undefined
   
-  var e: js.UndefOr[Double] = js.native
+  var e: js.UndefOr[Double] = js.undefined
   
-  var f: js.UndefOr[Double] = js.native
+  var f: js.UndefOr[Double] = js.undefined
   
-  var m11: js.UndefOr[Double] = js.native
+  var m11: js.UndefOr[Double] = js.undefined
   
-  var m12: js.UndefOr[Double] = js.native
+  var m12: js.UndefOr[Double] = js.undefined
   
-  var m21: js.UndefOr[Double] = js.native
+  var m21: js.UndefOr[Double] = js.undefined
   
-  var m22: js.UndefOr[Double] = js.native
+  var m22: js.UndefOr[Double] = js.undefined
   
-  var m41: js.UndefOr[Double] = js.native
+  var m41: js.UndefOr[Double] = js.undefined
   
-  var m42: js.UndefOr[Double] = js.native
+  var m42: js.UndefOr[Double] = js.undefined
 }
 object DOMMatrix2DInit {
   

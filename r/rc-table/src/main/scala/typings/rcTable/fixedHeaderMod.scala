@@ -15,33 +15,33 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fixedHeaderMod extends Shortcut {
   
   @JSImport("rc-table/lib/Header/FixedHeader", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[FixedHeaderProps[_] with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[FixedHeaderProps[js.Any] & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait FixedHeaderProps[RecordType] extends HeaderProps[RecordType] {
+  trait FixedHeaderProps[RecordType]
+    extends StObject
+       with HeaderProps[RecordType] {
     
-    var colWidths: js.Array[Double] = js.native
+    var colWidths: js.Array[Double]
     
-    var columCount: Double = js.native
+    var columCount: Double
     
-    var direction: ltr | rtl = js.native
+    var direction: ltr | rtl
     
-    var fixHeader: Boolean = js.native
+    var fixHeader: Boolean
     
-    var noData: Boolean = js.native
+    var noData: Boolean
     
-    var offsetHeader: Double = js.native
+    var offsetHeader: Double
     
-    def onScroll(info: CurrentTarget): Unit = js.native
+    def onScroll(info: CurrentTarget): Unit
     
-    var stickyClassName: js.UndefOr[String] = js.native
+    var stickyClassName: js.UndefOr[String] = js.undefined
   }
   object FixedHeaderProps {
     
@@ -64,7 +64,7 @@ object fixedHeaderMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class FixedHeaderPropsMutableBuilder[Self <: FixedHeaderProps[_], RecordType] (val x: Self with FixedHeaderProps[RecordType]) extends AnyVal {
+    implicit class FixedHeaderPropsMutableBuilder[Self <: FixedHeaderProps[?], RecordType] (val x: Self & FixedHeaderProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setColWidths(value: js.Array[Double]): Self = StObject.set(x, "colWidths", value.asInstanceOf[js.Any])
@@ -98,8 +98,8 @@ object fixedHeaderMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[FixedHeaderProps[_] with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[FixedHeaderProps[js.Any] & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `fixedHeaderMod.foo` */
-  override def _to: ForwardRefExoticComponent[FixedHeaderProps[_] with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[FixedHeaderProps[js.Any] & RefAttributes[HTMLDivElement]] = default
 }

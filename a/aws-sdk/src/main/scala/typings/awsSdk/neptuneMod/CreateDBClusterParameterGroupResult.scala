@@ -2,13 +2,11 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBClusterParameterGroupResult extends StObject {
   
-  var DBClusterParameterGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterParameterGroup] = js.native
+  var DBClusterParameterGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBClusterParameterGroup] = js.undefined
 }
 object CreateDBClusterParameterGroupResult {
   

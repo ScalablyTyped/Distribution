@@ -11,7 +11,6 @@ import typings.rmcTabs.anon.TypeofDefaultTabBar
 import typings.rmcTabs.modelsMod.Models.TabData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsNativeMod {
@@ -24,8 +23,8 @@ object tabsNativeMod {
     
     var AnimatedScrollView: ScrollView = js.native
     
-    def goToTab(index: Double, force: js.UndefOr[scala.Nothing], animated: Boolean): Boolean = js.native
     def goToTab(index: Double, force: Boolean, animated: Boolean): Boolean = js.native
+    def goToTab(index: Double, force: Unit, animated: Boolean): Boolean = js.native
     
     def handleLayout(
       e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.LayoutChangeEvent */ js.Any
@@ -76,19 +75,19 @@ object tabsNativeMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType
-    extends typings.rmcTabs.propsTypeMod.PropsType {
+    extends StObject
+       with typings.rmcTabs.propsTypeMod.PropsType {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
     var style: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RN.ViewStyle */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var styles: js.UndefOr[TabBar] = js.native
+    var styles: js.UndefOr[TabBar] = js.undefined
   }
   object PropsType {
     

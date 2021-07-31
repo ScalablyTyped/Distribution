@@ -2,16 +2,16 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemDelete extends WorkItemDeleteReference {
+trait WorkItemDelete
+  extends StObject
+     with WorkItemDeleteReference {
   
   /**
     * The work item object that was deleted.
     */
-  var resource: WorkItem = js.native
+  var resource: WorkItem
 }
 object WorkItemDelete {
   

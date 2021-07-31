@@ -2,28 +2,26 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyDBParameterGroupMessage extends StObject {
   
   /**
     *  The identifier or ARN for the source DB parameter group. For information about creating an ARN, see  Constructing an ARN for Amazon RDS in the Amazon RDS User Guide.  Constraints:   Must specify a valid DB parameter group.   Must specify a valid DB parameter group identifier, for example my-db-param-group, or a valid ARN.  
     */
-  var SourceDBParameterGroupIdentifier: String = js.native
+  var SourceDBParameterGroupIdentifier: String
   
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * A description for the copied DB parameter group.
     */
-  var TargetDBParameterGroupDescription: String = js.native
+  var TargetDBParameterGroupDescription: String
   
   /**
     * The identifier for the copied DB parameter group. Constraints:   Can't be null, empty, or blank   Must contain from 1 to 255 letters, numbers, or hyphens   First character must be a letter   Can't end with a hyphen or contain two consecutive hyphens   Example: my-db-parameter-group 
     */
-  var TargetDBParameterGroupIdentifier: String = js.native
+  var TargetDBParameterGroupIdentifier: String
 }
 object CopyDBParameterGroupMessage {
   

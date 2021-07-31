@@ -10,9 +10,9 @@ HTTP Client Utilities
 | ------------------ | :-------------: |
 | Full name          | wreck |
 | Keywords           | utilities, http, client |
-| # releases         | 6 |
-| # dependents       | 235 |
-| # downloads        | 16184482 |
+| # releases         | 2 |
+| # dependents       | 229 |
+| # downloads        | 14672056 |
 | # stars            | 34 |
 
 ## Links

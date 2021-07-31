@@ -2,43 +2,41 @@ package typings.fastifyMultipart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FieldNameSize extends StObject {
     
     /**
       * Max field name size in bytes
       */
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Max field value size in bytes
       */
-    var fieldSize: js.UndefOr[Double] = js.native
+    var fieldSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Max number of non-file fields
       */
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
     /**
       * For multipart forms, the max file size
       */
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Max number of file fields
       */
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
     /**
       * Max number of header key=>value pairs
       */
-    var headerPairs: js.UndefOr[Double] = js.native
+    var headerPairs: js.UndefOr[Double] = js.undefined
   }
   object FieldNameSize {
     

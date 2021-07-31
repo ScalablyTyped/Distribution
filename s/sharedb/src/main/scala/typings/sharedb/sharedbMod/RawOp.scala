@@ -2,23 +2,21 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawOp extends StObject {
   
-  var c: String = js.native
+  var c: String
   
-  var d: String = js.native
+  var d: String
   
-  var m: js.Any = js.native
+  var m: js.Any
   
-  var seq: Double = js.native
+  var seq: Double
   
-  var src: String = js.native
+  var src: String
   
-  var v: Double = js.native
+  var v: Double
 }
 object RawOp {
   

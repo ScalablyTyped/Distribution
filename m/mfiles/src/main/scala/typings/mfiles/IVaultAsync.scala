@@ -2,73 +2,71 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultAsync extends StObject {
   
-  val ClassGroupOperations: IVaultClassGroupOperationsAsync = js.native
+  val ClassGroupOperations: IVaultClassGroupOperationsAsync
   
-  val ClassOperations: IVaultClassOperationsAsync = js.native
+  val ClassOperations: IVaultClassOperationsAsync
   
-  val ClientOperations: IVaultClientOperationsAsync = js.native
+  val ClientOperations: IVaultClientOperationsAsync
   
-  val CustomApplicationManagementOperations: IVaultCustomApplicationManagementOperationsAsync = js.native
+  val CustomApplicationManagementOperations: IVaultCustomApplicationManagementOperationsAsync
   
-  val DataSetOperations: IVaultDataSetOperationsAsync = js.native
+  val DataSetOperations: IVaultDataSetOperationsAsync
   
-  val ElectronicSignatureOperations: IVaultElectronicSignatureOperationsAsync = js.native
+  val ElectronicSignatureOperations: IVaultElectronicSignatureOperationsAsync
   
-  val EventLogOperations: IVaultEventLogOperationsAsync = js.native
+  val EventLogOperations: IVaultEventLogOperationsAsync
   
-  val ExtensionMethodOperations: IVaultExtensionMethodOperationsAsync = js.native
+  val ExtensionMethodOperations: IVaultExtensionMethodOperationsAsync
   
-  val ExternalObjectOperations: IVaultExternalObjectOperationsAsync = js.native
+  val ExternalObjectOperations: IVaultExternalObjectOperationsAsync
   
-  val LoginAccountOperations: IVaultLoginAccountOperationsAsync = js.native
+  val LoginAccountOperations: IVaultLoginAccountOperationsAsync
   
-  val ManagementOperations: IVaultManagementOperationsAsync = js.native
+  val ManagementOperations: IVaultManagementOperationsAsync
   
-  val NamedACLOperations: IVaultNamedACLOperationsAsync = js.native
+  val NamedACLOperations: IVaultNamedACLOperationsAsync
   
-  val NamedValueStorageOperations: IVaultNamedValueStorageOperationsAsync = js.native
+  val NamedValueStorageOperations: IVaultNamedValueStorageOperationsAsync
   
-  val NotificationOperations: IVaultNotificationOperationsAsync = js.native
+  val NotificationOperations: IVaultNotificationOperationsAsync
   
-  val ObjectFileOperations: IVaultObjectFileOperationsAsync = js.native
+  val ObjectFileOperations: IVaultObjectFileOperationsAsync
   
-  val ObjectOperations: IVaultObjectOperationsAsync = js.native
+  val ObjectOperations: IVaultObjectOperationsAsync
   
-  val ObjectPropertyOperations: IVaultObjectPropertyOperationsAsync = js.native
+  val ObjectPropertyOperations: IVaultObjectPropertyOperationsAsync
   
-  val ObjectSearchOperations: IVaultObjectSearchOperationsAsync = js.native
+  val ObjectSearchOperations: IVaultObjectSearchOperationsAsync
   
-  val ObjectTypeOperations: IVaultObjectTypeOperationsAsync = js.native
+  val ObjectTypeOperations: IVaultObjectTypeOperationsAsync
   
-  val PropertyDefOperations: IVaultPropertyDefOperationsAsync = js.native
+  val PropertyDefOperations: IVaultPropertyDefOperationsAsync
   
-  val ScheduledJobManagementOperations: IVaultScheduledJobManagementOperationsAsync = js.native
+  val ScheduledJobManagementOperations: IVaultScheduledJobManagementOperationsAsync
   
-  val ServerDataPushOperations: IVaultServerDataPushOperationsAsync = js.native
+  val ServerDataPushOperations: IVaultServerDataPushOperationsAsync
   
-  val SharedLinkOperations: IVaultSharedLinkOperationsAsync = js.native
+  val SharedLinkOperations: IVaultSharedLinkOperationsAsync
   
-  val TraditionalFolderOperations: IVaultTraditionalFolderOperationsAsync = js.native
+  val TraditionalFolderOperations: IVaultTraditionalFolderOperationsAsync
   
-  val UserGroupOperations: IVaultUserGroupOperationsAsync = js.native
+  val UserGroupOperations: IVaultUserGroupOperationsAsync
   
-  val UserOperations: IVaultUserOperationsAsync = js.native
+  val UserOperations: IVaultUserOperationsAsync
   
-  val UserSettingOperations: IVaultUserSettingOperationsAsync = js.native
+  val UserSettingOperations: IVaultUserSettingOperationsAsync
   
-  val ValueListItemOperations: IVaultValueListItemOperationsAsync = js.native
+  val ValueListItemOperations: IVaultValueListItemOperationsAsync
   
-  val ValueListOperations: IVaultValueListOperationsAsync = js.native
+  val ValueListOperations: IVaultValueListOperationsAsync
   
-  val ViewOperations: IVaultViewOperationsAsync = js.native
+  val ViewOperations: IVaultViewOperationsAsync
   
-  val WorkflowOperations: IVaultWorkflowOperationsAsync = js.native
+  val WorkflowOperations: IVaultWorkflowOperationsAsync
 }
 object IVaultAsync {
   

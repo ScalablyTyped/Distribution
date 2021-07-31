@@ -5,16 +5,15 @@ import typings.knockout.knockoutStrings.notifyAtFixedRate
 import typings.knockout.knockoutStrings.notifyWhenChangesStop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RateLimitOptions
-  extends /* option */ StringDictionary[js.Any] {
+  extends StObject
+     with /* option */ StringDictionary[js.Any] {
   
-  var method: js.UndefOr[notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod] = js.native
+  var method: js.UndefOr[notifyAtFixedRate | notifyWhenChangesStop | RateLimitMethod] = js.undefined
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object RateLimitOptions {
   

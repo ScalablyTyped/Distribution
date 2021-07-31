@@ -1,25 +1,9 @@
 package typings.typeorm
 
-import typings.typeorm.typeormStrings.`aurora-data-api-pg`
-import typings.typeorm.typeormStrings.`aurora-data-api`
-import typings.typeorm.typeormStrings.`better-sqlite3`
-import typings.typeorm.typeormStrings.`react-native`
-import typings.typeorm.typeormStrings.cockroachdb
-import typings.typeorm.typeormStrings.cordova
-import typings.typeorm.typeormStrings.expo
 import typings.typeorm.typeormStrings.mariadb
-import typings.typeorm.typeormStrings.mongodb
-import typings.typeorm.typeormStrings.mssql
 import typings.typeorm.typeormStrings.mysql
-import typings.typeorm.typeormStrings.nativescript
-import typings.typeorm.typeormStrings.oracle
-import typings.typeorm.typeormStrings.postgres
-import typings.typeorm.typeormStrings.sap
-import typings.typeorm.typeormStrings.sqlite
-import typings.typeorm.typeormStrings.sqljs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionConnectionOptionsMod {
@@ -46,63 +30,51 @@ object connectionConnectionOptionsMod {
   object ConnectionOptions {
     
     @scala.inline
-    def AuroraDataApiConnectionOptions(
-      database: String,
-      region: String,
-      resourceArn: String,
-      secretArn: String,
-      `type`: `aurora-data-api`
-    ): typings.typeorm.auroraDataApiAuroraDataApiConnectionOptionsMod.AuroraDataApiConnectionOptions = {
+    def AuroraDataApiConnectionOptions(database: String, region: String, resourceArn: String, secretArn: String): typings.typeorm.auroraDataApiAuroraDataApiConnectionOptionsMod.AuroraDataApiConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("aurora-data-api")
       __obj.asInstanceOf[typings.typeorm.auroraDataApiAuroraDataApiConnectionOptionsMod.AuroraDataApiConnectionOptions]
     }
     
     @scala.inline
-    def AuroraDataApiPostgresConnectionOptions(
-      database: String,
-      region: String,
-      resourceArn: String,
-      secretArn: String,
-      `type`: `aurora-data-api-pg`
-    ): typings.typeorm.auroraDataApiPgAuroraDataApiPostgresConnectionOptionsMod.AuroraDataApiPostgresConnectionOptions = {
+    def AuroraDataApiPostgresConnectionOptions(database: String, region: String, resourceArn: String, secretArn: String): typings.typeorm.auroraDataApiPgAuroraDataApiPostgresConnectionOptionsMod.AuroraDataApiPostgresConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("aurora-data-api-pg")
       __obj.asInstanceOf[typings.typeorm.auroraDataApiPgAuroraDataApiPostgresConnectionOptionsMod.AuroraDataApiPostgresConnectionOptions]
     }
     
     @scala.inline
-    def BetterSqlite3ConnectionOptions(database: String, `type`: `better-sqlite3`): typings.typeorm.betterSqlite3BetterSqlite3ConnectionOptionsMod.BetterSqlite3ConnectionOptions = {
+    def BetterSqlite3ConnectionOptions(database: String): typings.typeorm.betterSqlite3BetterSqlite3ConnectionOptionsMod.BetterSqlite3ConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("better-sqlite3")
       __obj.asInstanceOf[typings.typeorm.betterSqlite3BetterSqlite3ConnectionOptionsMod.BetterSqlite3ConnectionOptions]
     }
     
     @scala.inline
-    def CockroachConnectionOptions(`type`: cockroachdb): typings.typeorm.cockroachdbCockroachConnectionOptionsMod.CockroachConnectionOptions = {
+    def CockroachConnectionOptions(): typings.typeorm.cockroachdbCockroachConnectionOptionsMod.CockroachConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("cockroachdb")
       __obj.asInstanceOf[typings.typeorm.cockroachdbCockroachConnectionOptionsMod.CockroachConnectionOptions]
     }
     
     @scala.inline
-    def CordovaConnectionOptions(database: String, location: String, `type`: cordova): typings.typeorm.cordovaCordovaConnectionOptionsMod.CordovaConnectionOptions = {
+    def CordovaConnectionOptions(database: String, location: String): typings.typeorm.cordovaCordovaConnectionOptionsMod.CordovaConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("cordova")
       __obj.asInstanceOf[typings.typeorm.cordovaCordovaConnectionOptionsMod.CordovaConnectionOptions]
     }
     
     @scala.inline
-    def ExpoConnectionOptions(database: String, driver: js.Any, `type`: expo): typings.typeorm.expoExpoConnectionOptionsMod.ExpoConnectionOptions = {
+    def ExpoConnectionOptions(database: String, driver: js.Any): typings.typeorm.expoExpoConnectionOptionsMod.ExpoConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("expo")
       __obj.asInstanceOf[typings.typeorm.expoExpoConnectionOptionsMod.ExpoConnectionOptions]
     }
     
     @scala.inline
-    def MongoConnectionOptions(`type`: mongodb): typings.typeorm.mongodbMongoConnectionOptionsMod.MongoConnectionOptions = {
+    def MongoConnectionOptions(): typings.typeorm.mongodbMongoConnectionOptionsMod.MongoConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mongodb")
       __obj.asInstanceOf[typings.typeorm.mongodbMongoConnectionOptionsMod.MongoConnectionOptions]
     }
     
@@ -114,58 +86,58 @@ object connectionConnectionOptionsMod {
     }
     
     @scala.inline
-    def NativescriptConnectionOptions(database: String, driver: js.Any, `type`: nativescript): typings.typeorm.nativescriptNativescriptConnectionOptionsMod.NativescriptConnectionOptions = {
+    def NativescriptConnectionOptions(database: String, driver: js.Any): typings.typeorm.nativescriptNativescriptConnectionOptionsMod.NativescriptConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], driver = driver.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("nativescript")
       __obj.asInstanceOf[typings.typeorm.nativescriptNativescriptConnectionOptionsMod.NativescriptConnectionOptions]
     }
     
     @scala.inline
-    def OracleConnectionOptions(`type`: oracle): typings.typeorm.oracleOracleConnectionOptionsMod.OracleConnectionOptions = {
+    def OracleConnectionOptions(): typings.typeorm.oracleOracleConnectionOptionsMod.OracleConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("oracle")
       __obj.asInstanceOf[typings.typeorm.oracleOracleConnectionOptionsMod.OracleConnectionOptions]
     }
     
     @scala.inline
-    def PostgresConnectionOptions(`type`: postgres): typings.typeorm.postgresPostgresConnectionOptionsMod.PostgresConnectionOptions = {
+    def PostgresConnectionOptions(): typings.typeorm.postgresPostgresConnectionOptionsMod.PostgresConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("postgres")
       __obj.asInstanceOf[typings.typeorm.postgresPostgresConnectionOptionsMod.PostgresConnectionOptions]
     }
     
     @scala.inline
-    def ReactNativeConnectionOptions(database: String, location: String, `type`: `react-native`): typings.typeorm.reactNativeReactNativeConnectionOptionsMod.ReactNativeConnectionOptions = {
+    def ReactNativeConnectionOptions(database: String, location: String): typings.typeorm.reactNativeReactNativeConnectionOptionsMod.ReactNativeConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("react-native")
       __obj.asInstanceOf[typings.typeorm.reactNativeReactNativeConnectionOptionsMod.ReactNativeConnectionOptions]
     }
     
     @scala.inline
-    def SapConnectionOptions(`type`: sap): typings.typeorm.sapSapConnectionOptionsMod.SapConnectionOptions = {
+    def SapConnectionOptions(): typings.typeorm.sapSapConnectionOptionsMod.SapConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sap")
       __obj.asInstanceOf[typings.typeorm.sapSapConnectionOptionsMod.SapConnectionOptions]
     }
     
     @scala.inline
-    def SqlServerConnectionOptions(`type`: mssql): typings.typeorm.sqlserverSqlServerConnectionOptionsMod.SqlServerConnectionOptions = {
+    def SqlServerConnectionOptions(): typings.typeorm.sqlserverSqlServerConnectionOptionsMod.SqlServerConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mssql")
       __obj.asInstanceOf[typings.typeorm.sqlserverSqlServerConnectionOptionsMod.SqlServerConnectionOptions]
     }
     
     @scala.inline
-    def SqliteConnectionOptions(database: String, `type`: sqlite): typings.typeorm.sqliteSqliteConnectionOptionsMod.SqliteConnectionOptions = {
+    def SqliteConnectionOptions(database: String): typings.typeorm.sqliteSqliteConnectionOptionsMod.SqliteConnectionOptions = {
       val __obj = js.Dynamic.literal(database = database.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sqlite")
       __obj.asInstanceOf[typings.typeorm.sqliteSqliteConnectionOptionsMod.SqliteConnectionOptions]
     }
     
     @scala.inline
-    def SqljsConnectionOptions(`type`: sqljs): typings.typeorm.sqljsSqljsConnectionOptionsMod.SqljsConnectionOptions = {
+    def SqljsConnectionOptions(): typings.typeorm.sqljsSqljsConnectionOptionsMod.SqljsConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sqljs")
       __obj.asInstanceOf[typings.typeorm.sqljsSqljsConnectionOptionsMod.SqljsConnectionOptions]
     }
   }

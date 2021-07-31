@@ -2,10 +2,8 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectByRegExParams extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait RedirectByRegExParams extends StObject {
     * instead of the RE2 syntax (\1, \2, ...) in order to be closer
     * to JavaScript Regular Expressions.
     */
-  var from: String = js.native
+  var from: String
   
   /** Destination pattern. @see from */
-  var to: String = js.native
+  var to: String
 }
 object RedirectByRegExParams {
   

@@ -6,7 +6,6 @@ import typings.agChannel.agChannelStrings.unsubscribed
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -168,7 +167,7 @@ object mod {
     
     def getChannelState(channelName: String): ChannelState = js.native
     
-    def invokePublish(channelName: String, data: js.Any): js.Promise[_] = js.native
+    def invokePublish(channelName: String, data: js.Any): js.Promise[js.Any] = js.native
     
     def isSubscribed(channelName: String): Boolean = js.native
     def isSubscribed(channelName: String, includePending: Boolean): Boolean = js.native
@@ -179,7 +178,7 @@ object mod {
     
     def killChannelOutputConsumer(consumerId: Double): Unit = js.native
     
-    def subscribe(channelName: String): AGChannel[_] = js.native
+    def subscribe(channelName: String): AGChannel[js.Any] = js.native
     
     def transmitPublish(channelName: String, data: js.Any): js.Promise[Unit] = js.native
     

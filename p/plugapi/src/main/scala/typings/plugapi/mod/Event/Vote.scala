@@ -2,15 +2,13 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vote extends StObject {
   
-  var i: Double = js.native
+  var i: Double
   
-  var v: Double = js.native
+  var v: Double
 }
 object Vote {
   

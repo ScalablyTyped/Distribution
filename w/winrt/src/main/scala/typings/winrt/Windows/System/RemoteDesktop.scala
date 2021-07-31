@@ -2,15 +2,13 @@ package typings.winrt.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RemoteDesktop {
   
-  @js.native
   trait IInteractiveSessionStatics extends StObject {
     
-    var isRemote: Boolean = js.native
+    var isRemote: Boolean
   }
   object IInteractiveSessionStatics {
     
@@ -28,6 +26,5 @@ object RemoteDesktop {
     }
   }
   
-  @js.native
   trait InteractiveSession extends StObject
 }

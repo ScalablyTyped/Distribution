@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the RecurrenceTypeEdit.
   */
-@js.native
-trait ASPxClientRecurrenceTypeEdit extends ASPxClientCheckListBase {
+trait ASPxClientRecurrenceTypeEdit
+  extends StObject
+     with ASPxClientCheckListBase {
   
   /**
     * Gets the selected recurrence type.
     */
-  def GetRecurrenceType(): ASPxClientRecurrenceType = js.native
+  def GetRecurrenceType(): ASPxClientRecurrenceType
   
   /**
     * Sets the selected recurrence type.
     * @param recurrenceType An ASPxClientRecurrenceType enumeration value.
     */
-  def SetRecurrenceType(recurrenceType: ASPxClientRecurrenceType): Unit = js.native
+  def SetRecurrenceType(recurrenceType: ASPxClientRecurrenceType): Unit
 }
 object ASPxClientRecurrenceTypeEdit {
   

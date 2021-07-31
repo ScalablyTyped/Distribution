@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightEventsResult extends StObject {
   
   /**
     * A detailed description of the event. This includes the time of the event, client and root cause impact statistics, and the top anomalous service at the time of the event.
     */
-  var InsightEvents: js.UndefOr[InsightEventList] = js.native
+  var InsightEvents: js.UndefOr[InsightEventList] = js.undefined
   
   /**
     * Use this token to retrieve the next page of insight events.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetInsightEventsResult {
   

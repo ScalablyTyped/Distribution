@@ -7,14 +7,15 @@ import typings.gulpTypescript.typesMod.FinalTransformers
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compilerMod {
   
   @JSImport("gulp-typescript/release/compiler", "FileCompiler")
   @js.native
-  class FileCompiler () extends ICompiler {
+  class FileCompiler ()
+    extends StObject
+       with ICompiler {
     
     var compilationResult: js.Any = js.native
     
@@ -33,7 +34,9 @@ object compilerMod {
   
   @JSImport("gulp-typescript/release/compiler", "ProjectCompiler")
   @js.native
-  class ProjectCompiler () extends ICompiler {
+  class ProjectCompiler ()
+    extends StObject
+       with ICompiler {
     
     var attachContentToFile: js.Any = js.native
     

@@ -2,17 +2,15 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivateRoomResponse extends StObject {
   
-  var immutableRoomAttributes: ImmutableRoomAttributes = js.native
+  var immutableRoomAttributes: ImmutableRoomAttributes
   
-  var roomAttributes: BaseRoomAttributes = js.native
+  var roomAttributes: BaseRoomAttributes
   
-  var roomSystemInfo: RoomSystemInfo = js.native
+  var roomSystemInfo: RoomSystemInfo
 }
 object ActivateRoomResponse {
   

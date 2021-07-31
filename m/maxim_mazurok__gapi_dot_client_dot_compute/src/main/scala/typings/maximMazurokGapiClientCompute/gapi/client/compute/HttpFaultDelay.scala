@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpFaultDelay extends StObject {
   
   /** Specifies the value of the fixed delay interval. */
-  var fixedDelay: js.UndefOr[Duration] = js.native
+  var fixedDelay: js.UndefOr[Duration] = js.undefined
   
   /**
     * The percentage of traffic (connections/operations/requests) on which delay will be introduced as part of fault injection.
     * The value must be between 0.0 and 100.0 inclusive.
     */
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
 }
 object HttpFaultDelay {
   

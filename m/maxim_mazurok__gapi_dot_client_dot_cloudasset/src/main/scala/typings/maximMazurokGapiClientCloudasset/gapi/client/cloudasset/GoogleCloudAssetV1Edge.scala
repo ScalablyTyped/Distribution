@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssetV1Edge extends StObject {
   
   /** The source node of the edge. For example, it could be a full resource name for a resource node or an email of an identity. */
-  var sourceNode: js.UndefOr[String] = js.native
+  var sourceNode: js.UndefOr[String] = js.undefined
   
   /** The target node of the edge. For example, it could be a full resource name for a resource node or an email of an identity. */
-  var targetNode: js.UndefOr[String] = js.native
+  var targetNode: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudAssetV1Edge {
   

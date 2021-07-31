@@ -7,10 +7,13 @@ import typings.std.RegExp
 import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("fuzzaldrin-plus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("fuzzaldrin-plus", "Query")
   @js.native
@@ -20,57 +23,40 @@ object mod {
     var DollarDollar__internal: Symbol = js.native
   }
   
-  @JSImport("fuzzaldrin-plus", "filter")
-  @js.native
-  def filter[T](data: js.Array[T], query: String): js.Array[T] = js.native
-  @JSImport("fuzzaldrin-plus", "filter")
-  @js.native
-  def filter[T](data: js.Array[T], query: String, options: IFilterOptions[T]): js.Array[T] = js.native
+  @scala.inline
+  def filter[T](data: js.Array[T], query: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(data.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def filter[T](data: js.Array[T], query: String, options: IFilterOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(data.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("fuzzaldrin-plus", "prepareQuery")
-  @js.native
-  def prepareQuery(query: String): Query = js.native
-  @JSImport("fuzzaldrin-plus", "prepareQuery")
-  @js.native
-  def prepareQuery(query: String, options: IOptions): Query = js.native
+  @scala.inline
+  def `match`(str: String, query: String): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def `match`(str: String, query: String, options: IOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("fuzzaldrin-plus", "score")
-  @js.native
-  def score(str: String, query: String): Double = js.native
-  @JSImport("fuzzaldrin-plus", "score")
-  @js.native
-  def score(str: String, query: String, options: IOptions): Double = js.native
+  @scala.inline
+  def prepareQuery(query: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareQuery")(query.asInstanceOf[js.Any]).asInstanceOf[Query]
+  @scala.inline
+  def prepareQuery(query: String, options: IOptions): Query = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareQuery")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Query]
   
-  @JSImport("fuzzaldrin-plus", "wrap")
-  @js.native
-  def wrap(str: String, query: String): String = js.native
-  @JSImport("fuzzaldrin-plus", "wrap")
-  @js.native
-  def wrap(str: String, query: String, options: IOptions): String = js.native
+  @scala.inline
+  def score(str: String, query: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("score")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def score(str: String, query: String, options: IOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("score")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  /* Inlined fuzzaldrin-plus.fuzzaldrin-plus.IOptions & {  key :T extends string ? never : keyof T | undefined,   maxResults :number | undefined,   maxInners :number | undefined} */
-  @js.native
-  trait IFilterOptions[T] extends StObject {
+  @scala.inline
+  def wrap(str: String, query: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def wrap(str: String, query: String, options: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(str.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  trait IFilterOptions[T]
+    extends StObject
+       with IOptions {
     
-    var allowErrors: js.UndefOr[Boolean] = js.native
+    var key: js.UndefOr[/* keyof T */ String] = js.undefined
     
-    var key: js.UndefOr[/* keyof T */ String] = js.native
+    var maxInners: js.UndefOr[Double] = js.undefined
     
-    var maxInners: js.UndefOr[Double] = js.native
-    
-    var maxResults: js.UndefOr[Double] = js.native
-    
-    var optCharRegEx: js.UndefOr[RegExp] = js.native
-    
-    var pathSeparator: js.UndefOr[Slash | Backslash | String] = js.native
-    
-    var preparedQuery: js.UndefOr[Query] = js.native
-    
-    var useExtensionBonus: js.UndefOr[Boolean] = js.native
-    
-    var usePathScoring: js.UndefOr[Boolean] = js.native
-    
-    var wrap: js.UndefOr[TagClass] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
   }
   object IFilterOptions {
     
@@ -81,13 +67,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IFilterOptionsMutableBuilder[Self <: IFilterOptions[_], T] (val x: Self with IFilterOptions[T]) extends AnyVal {
-      
-      @scala.inline
-      def setAllowErrors(value: Boolean): Self = StObject.set(x, "allowErrors", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAllowErrorsUndefined: Self = StObject.set(x, "allowErrors", js.undefined)
+    implicit class IFilterOptionsMutableBuilder[Self <: IFilterOptions[?], T] (val x: Self & IFilterOptions[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: /* keyof T */ String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -106,61 +86,24 @@ object mod {
       
       @scala.inline
       def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
-      
-      @scala.inline
-      def setOptCharRegEx(value: RegExp): Self = StObject.set(x, "optCharRegEx", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOptCharRegExUndefined: Self = StObject.set(x, "optCharRegEx", js.undefined)
-      
-      @scala.inline
-      def setPathSeparator(value: Slash | Backslash | String): Self = StObject.set(x, "pathSeparator", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPathSeparatorUndefined: Self = StObject.set(x, "pathSeparator", js.undefined)
-      
-      @scala.inline
-      def setPreparedQuery(value: Query): Self = StObject.set(x, "preparedQuery", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPreparedQueryUndefined: Self = StObject.set(x, "preparedQuery", js.undefined)
-      
-      @scala.inline
-      def setUseExtensionBonus(value: Boolean): Self = StObject.set(x, "useExtensionBonus", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUseExtensionBonusUndefined: Self = StObject.set(x, "useExtensionBonus", js.undefined)
-      
-      @scala.inline
-      def setUsePathScoring(value: Boolean): Self = StObject.set(x, "usePathScoring", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUsePathScoringUndefined: Self = StObject.set(x, "usePathScoring", js.undefined)
-      
-      @scala.inline
-      def setWrap(value: TagClass): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
-    var allowErrors: js.UndefOr[Boolean] = js.native
+    var allowErrors: js.UndefOr[Boolean] = js.undefined
     
-    var optCharRegEx: js.UndefOr[RegExp] = js.native
+    var optCharRegEx: js.UndefOr[RegExp] = js.undefined
     
-    var pathSeparator: js.UndefOr[Slash | Backslash | String] = js.native
+    var pathSeparator: js.UndefOr[Slash | Backslash | String] = js.undefined
     
-    var preparedQuery: js.UndefOr[Query] = js.native
+    var preparedQuery: js.UndefOr[Query] = js.undefined
     
-    var useExtensionBonus: js.UndefOr[Boolean] = js.native
+    var useExtensionBonus: js.UndefOr[Boolean] = js.undefined
     
-    var usePathScoring: js.UndefOr[Boolean] = js.native
+    var usePathScoring: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[TagClass] = js.native
+    var wrap: js.UndefOr[TagClass] = js.undefined
   }
   object IOptions {
     
@@ -216,11 +159,4 @@ object mod {
       def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
-  
-  @JSImport("fuzzaldrin-plus", "match")
-  @js.native
-  def `match`(str: String, query: String): js.Array[Double] = js.native
-  @JSImport("fuzzaldrin-plus", "match")
-  @js.native
-  def `match`(str: String, query: String, options: IOptions): js.Array[Double] = js.native
 }

@@ -3,7 +3,6 @@ package typings.jsmediatags
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blobFileReaderMod {
@@ -16,9 +15,12 @@ object blobFileReaderMod {
   /* static members */
   object default {
     
-    @JSImport("jsmediatags/build2/BlobFileReader", "default.canReadFile")
+    @JSImport("jsmediatags/build2/BlobFileReader", JSImport.Default)
     @js.native
-    def canReadFile(file: js.Any): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def canReadFile(file: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canReadFile")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @js.native

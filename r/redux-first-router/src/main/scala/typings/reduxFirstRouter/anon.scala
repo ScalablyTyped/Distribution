@@ -18,17 +18,15 @@ import typings.reduxFirstRouter.mod.RouteThunk
 import typings.reduxFirstRouter.mod.StateGetter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Action extends StObject {
     
-    var action: js.Object = js.native
+    var action: js.Object
     
-    var navigationAction: Nullable[NavigationAction] = js.native
+    var navigationAction: Nullable[NavigationAction]
   }
   object Action {
     
@@ -55,26 +53,25 @@ object anon {
     }
   }
   
-  @js.native
   trait CapitalizedWords[TState] extends StObject {
     
-    var capitalizedWords: js.UndefOr[Boolean] = js.native
+    var capitalizedWords: js.UndefOr[Boolean] = js.undefined
     
-    var coerceNumbers: js.UndefOr[Boolean] = js.native
+    var coerceNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var confirmLeave: js.UndefOr[ConfirmLeave] = js.native
+    var confirmLeave: js.UndefOr[ConfirmLeave] = js.undefined
     
-    var fromPath: js.UndefOr[js.Function2[/* path */ String, /* key */ js.UndefOr[String], String]] = js.native
+    var fromPath: js.UndefOr[js.Function2[/* path */ String, /* key */ js.UndefOr[String], String]] = js.undefined
     
-    var meta: js.UndefOr[Meta] = js.native
+    var meta: js.UndefOr[Meta] = js.undefined
     
-    var navKey: js.UndefOr[String] = js.native
+    var navKey: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var thunk: js.UndefOr[RouteThunk[TState]] = js.native
+    var thunk: js.UndefOr[RouteThunk[TState]] = js.undefined
     
-    var toPath: js.UndefOr[js.Function2[/* param */ String, /* key */ js.UndefOr[String], String]] = js.native
+    var toPath: js.UndefOr[js.Function2[/* param */ String, /* key */ js.UndefOr[String], String]] = js.undefined
   }
   object CapitalizedWords {
     
@@ -85,7 +82,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CapitalizedWordsMutableBuilder[Self <: CapitalizedWords[_], TState] (val x: Self with CapitalizedWords[TState]) extends AnyVal {
+    implicit class CapitalizedWordsMutableBuilder[Self <: CapitalizedWords[?], TState] (val x: Self & CapitalizedWords[TState]) extends AnyVal {
       
       @scala.inline
       def setCapitalizedWords(value: Boolean): Self = StObject.set(x, "capitalizedWords", value.asInstanceOf[js.Any])
@@ -145,35 +142,74 @@ object anon {
     }
   }
   
-  @js.native
   trait Enhancer[TKeys, TState] extends StObject {
     
-    def enhancer(next: StoreEnhancerStoreCreator[js.Object, js.Object]): StoreEnhancerStoreCreator[js.Object, js.Object] = js.native
+    def enhancer(next: StoreEnhancerStoreCreator[js.Object, js.Object]): StoreEnhancerStoreCreator[js.Object, js.Object]
     @JSName("enhancer")
-    var enhancer_Original: StoreEnhancer[js.Object, js.Object] = js.native
+    var enhancer_Original: StoreEnhancer[js.Object, js.Object]
     
-    var initialDispatch: js.UndefOr[js.Function0[Unit]] = js.native
+    var initialDispatch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def middleware(api: MiddlewareAPI[Dispatch[AnyAction], _]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ _, _]] = js.native
+    def middleware(api: MiddlewareAPI[Dispatch[AnyAction], js.Any]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
     @JSName("middleware")
-    var middleware_Original: Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+    var middleware_Original: Middleware[js.Object, js.Any, Dispatch[AnyAction]]
     
-    def reducer(state: js.UndefOr[scala.Nothing], action: AnyAction): LocationState[TKeys, TState] = js.native
-    def reducer(state: LocationState[TKeys, TState], action: AnyAction): LocationState[TKeys, TState] = js.native
+    def reducer(state: Unit, action: AnyAction): LocationState[TKeys, TState]
+    def reducer(state: LocationState[TKeys, TState], action: AnyAction): LocationState[TKeys, TState]
     @JSName("reducer")
-    var reducer_Original: Reducer[LocationState[TKeys, TState], AnyAction] = js.native
+    var reducer_Original: Reducer[LocationState[TKeys, TState], AnyAction]
     
-    def thunk(store: Store[TState, AnyAction]): js.Promise[Nullable[RouteThunk[TState]]] = js.native
+    def thunk(store: Store[TState, AnyAction]): js.Promise[Nullable[RouteThunk[TState]]]
+  }
+  object Enhancer {
+    
+    @scala.inline
+    def apply[TKeys, TState](
+      enhancer: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Object, js.Object],
+      middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]],
+      reducer: (/* state */ js.UndefOr[LocationState[TKeys, TState]], AnyAction) => LocationState[TKeys, TState],
+      thunk: Store[TState, AnyAction] => js.Promise[Nullable[RouteThunk[TState]]]
+    ): Enhancer[TKeys, TState] = {
+      val __obj = js.Dynamic.literal(enhancer = js.Any.fromFunction1(enhancer), middleware = js.Any.fromFunction1(middleware), reducer = js.Any.fromFunction2(reducer), thunk = js.Any.fromFunction1(thunk))
+      __obj.asInstanceOf[Enhancer[TKeys, TState]]
+    }
+    
+    @scala.inline
+    implicit class EnhancerMutableBuilder[Self <: Enhancer[?, ?], TKeys, TState] (val x: Self & (Enhancer[TKeys, TState])) extends AnyVal {
+      
+      @scala.inline
+      def setEnhancer(
+        value: /* next */ StoreEnhancerStoreCreator[js.Object, js.Object] => StoreEnhancerStoreCreator[js.Object, js.Object]
+      ): Self = StObject.set(x, "enhancer", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setInitialDispatch(value: () => Unit): Self = StObject.set(x, "initialDispatch", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setInitialDispatchUndefined: Self = StObject.set(x, "initialDispatch", js.undefined)
+      
+      @scala.inline
+      def setMiddleware(
+        value: /* api */ MiddlewareAPI[Dispatch[AnyAction], js.Any] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+      ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReducer(
+        value: (/* state */ js.UndefOr[LocationState[TKeys, TState]], AnyAction) => LocationState[TKeys, TState]
+      ): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setThunk(value: Store[TState, AnyAction] => js.Promise[Nullable[RouteThunk[TState]]]): Self = StObject.set(x, "thunk", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait NotFoundPath extends StObject {
     
-    var notFoundPath: js.UndefOr[String] = js.native
+    var notFoundPath: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
   }
   object NotFoundPath {
     
@@ -206,12 +242,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: Nullable[typings.reduxFirstRouter.mod.Params] = js.native
+    var params: Nullable[typings.reduxFirstRouter.mod.Params]
     
-    var path: Nullable[String] = js.native
+    var path: Nullable[String]
   }
   object Params {
     
@@ -244,10 +279,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pathname extends StObject {
     
-    var pathname: String = js.native
+    var pathname: String
   }
   object Pathname {
     

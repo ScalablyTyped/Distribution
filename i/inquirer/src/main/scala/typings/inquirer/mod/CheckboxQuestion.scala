@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.checkbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait CheckboxQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
+trait CheckboxQuestion[T /* <: Answers */]
+  extends StObject
+     with ListQuestionOptionsBase[T, CheckboxChoiceMap[T]] {
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_CheckboxQuestion: checkbox = js.native
+  var type_CheckboxQuestion: checkbox
 }
 object CheckboxQuestion {
   
   @scala.inline
-  def apply[T /* <: Answers */](`type`: checkbox): CheckboxQuestion[T] = {
+  def apply[T /* <: Answers */](): CheckboxQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("checkbox")
     __obj.asInstanceOf[CheckboxQuestion[T]]
   }
   
   @scala.inline
-  implicit class CheckboxQuestionMutableBuilder[Self <: CheckboxQuestion[_], T /* <: Answers */] (val x: Self with CheckboxQuestion[T]) extends AnyVal {
+  implicit class CheckboxQuestionMutableBuilder[Self <: CheckboxQuestion[?], T /* <: Answers */] (val x: Self & CheckboxQuestion[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

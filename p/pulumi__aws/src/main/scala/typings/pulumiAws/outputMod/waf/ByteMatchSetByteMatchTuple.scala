@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.waf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteMatchSetByteMatchTuple extends StObject {
   
   /**
     * The part of a web request that you want to search, such as a specified header or a query string.
     */
-  var fieldToMatch: ByteMatchSetByteMatchTupleFieldToMatch = js.native
+  var fieldToMatch: ByteMatchSetByteMatchTupleFieldToMatch
   
   /**
     * Within the portion of a web request that you want to search
@@ -20,14 +18,14 @@ trait ByteMatchSetByteMatchTuple extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_ByteMatchTuple.html#WAF-Type-ByteMatchTuple-PositionalConstraint)
     * for all supported values.
     */
-  var positionalConstraint: String = js.native
+  var positionalConstraint: String
   
   /**
     * The value that you want to search for. e.g. `HEADER`, `METHOD` or `BODY`.
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_ByteMatchTuple.html#WAF-Type-ByteMatchTuple-TargetString)
     * for all supported values.
     */
-  var targetString: js.UndefOr[String] = js.native
+  var targetString: js.UndefOr[String] = js.undefined
   
   /**
     * Text transformations used to eliminate unusual formatting that attackers use in web requests in an effort to bypass AWS WAF.
@@ -36,7 +34,7 @@ trait ByteMatchSetByteMatchTuple extends StObject {
     * See [docs](http://docs.aws.amazon.com/waf/latest/APIReference/API_ByteMatchTuple.html#WAF-Type-ByteMatchTuple-TextTransformation)
     * for all supported values.
     */
-  var textTransformation: String = js.native
+  var textTransformation: String
 }
 object ByteMatchSetByteMatchTuple {
   

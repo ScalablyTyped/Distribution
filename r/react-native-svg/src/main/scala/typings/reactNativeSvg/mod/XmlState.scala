@@ -2,19 +2,17 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XmlState extends StObject {
   
-  var ast: JsxAST | Null = js.native
+  var ast: JsxAST | Null
 }
 object XmlState {
   
   @scala.inline
   def apply(): XmlState = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(ast = null)
     __obj.asInstanceOf[XmlState]
   }
   

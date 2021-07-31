@@ -2,15 +2,13 @@ package typings.node.dnsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordWithTtl extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var ttl: Double = js.native
+  var ttl: Double
 }
 object RecordWithTtl {
   

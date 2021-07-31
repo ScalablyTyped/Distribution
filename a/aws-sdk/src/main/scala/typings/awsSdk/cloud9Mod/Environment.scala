@@ -2,51 +2,49 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the environment.
     */
-  var arn: js.UndefOr[String] = js.native
+  var arn: js.UndefOr[String] = js.undefined
   
   /**
     * The connection type used for connecting to an Amazon EC2 environment.
     */
-  var connectionType: js.UndefOr[ConnectionType] = js.native
+  var connectionType: js.UndefOr[ConnectionType] = js.undefined
   
   /**
     * The description for the environment.
     */
-  var description: js.UndefOr[EnvironmentDescription] = js.native
+  var description: js.UndefOr[EnvironmentDescription] = js.undefined
   
   /**
     * The ID of the environment.
     */
-  var id: js.UndefOr[EnvironmentId] = js.native
+  var id: js.UndefOr[EnvironmentId] = js.undefined
   
   /**
     * The state of the environment in its creation or deletion lifecycle.
     */
-  var lifecycle: js.UndefOr[EnvironmentLifecycle] = js.native
+  var lifecycle: js.UndefOr[EnvironmentLifecycle] = js.undefined
   
   /**
     * The name of the environment.
     */
-  var name: js.UndefOr[EnvironmentName] = js.native
+  var name: js.UndefOr[EnvironmentName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the environment owner.
     */
-  var ownerArn: js.UndefOr[String] = js.native
+  var ownerArn: js.UndefOr[String] = js.undefined
   
   /**
     * The type of environment. Valid values include the following:    ec2: An Amazon Elastic Compute Cloud (Amazon EC2) instance connects to the environment.    ssh: Your own server connects to the environment.  
     */
-  var `type`: js.UndefOr[EnvironmentType] = js.native
+  var `type`: js.UndefOr[EnvironmentType] = js.undefined
 }
 object Environment {
   

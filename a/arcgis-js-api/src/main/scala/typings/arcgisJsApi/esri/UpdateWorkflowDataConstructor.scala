@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UpdateWorkflowDataConstructor
-  extends Instantiable0[UpdateWorkflowData]
+  extends StObject
+     with Instantiable0[UpdateWorkflowData]
      with Instantiable1[/* properties */ UpdateWorkflowDataProperties, UpdateWorkflowData]

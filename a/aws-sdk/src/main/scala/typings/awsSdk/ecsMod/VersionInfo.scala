@@ -2,26 +2,24 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionInfo extends StObject {
   
   /**
     * The Git commit hash for the Amazon ECS container agent build on the amazon-ecs-agent  GitHub repository.
     */
-  var agentHash: js.UndefOr[String] = js.native
+  var agentHash: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the Amazon ECS container agent.
     */
-  var agentVersion: js.UndefOr[String] = js.native
+  var agentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The Docker version running on the container instance.
     */
-  var dockerVersion: js.UndefOr[String] = js.native
+  var dockerVersion: js.UndefOr[String] = js.undefined
 }
 object VersionInfo {
   

@@ -2,17 +2,15 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDescribeSObjectOptions extends StObject {
   
-  var autofetch: js.UndefOr[Boolean] = js.native
+  var autofetch: js.UndefOr[Boolean] = js.undefined
   
-  var maxConcurrentRequests: js.UndefOr[Double] = js.native
+  var maxConcurrentRequests: js.UndefOr[Double] = js.undefined
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object BatchDescribeSObjectOptions {
   

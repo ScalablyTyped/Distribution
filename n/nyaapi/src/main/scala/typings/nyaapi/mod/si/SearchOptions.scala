@@ -4,25 +4,23 @@ import typings.nyaapi.nyaapiStrings.asc
 import typings.nyaapi.nyaapiStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchOptions extends StObject {
   
-  var category: js.UndefOr[Category] = js.native
+  var category: js.UndefOr[Category] = js.undefined
   
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
-  var filter: js.UndefOr[Filter] = js.native
+  var filter: js.UndefOr[Filter] = js.undefined
   
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
-  var p: js.UndefOr[Double] = js.native
+  var p: js.UndefOr[Double] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var term: js.UndefOr[String] = js.native
+  var term: js.UndefOr[String] = js.undefined
 }
 object SearchOptions {
   

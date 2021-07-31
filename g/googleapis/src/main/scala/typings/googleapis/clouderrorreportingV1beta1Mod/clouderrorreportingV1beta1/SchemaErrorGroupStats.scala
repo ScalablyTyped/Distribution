@@ -2,14 +2,12 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data extracted for a specific group based on certain filter criteria, such
   * as a given time period and/or service filter.
   */
-@js.native
 trait SchemaErrorGroupStats extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaErrorGroupStats extends StObject {
     * criteria. This list can be truncated if multiple services are affected.
     * Refer to `num_affected_services` for the total count.
     */
-  var affectedServices: js.UndefOr[js.Array[SchemaServiceContext]] = js.native
+  var affectedServices: js.UndefOr[js.Array[SchemaServiceContext]] = js.undefined
   
   /**
     * Approximate number of affected users in the given group that match the
@@ -30,38 +28,38 @@ trait SchemaErrorGroupStats extends StObject {
     * more users are implicitly affected, such as due to a crash of the whole
     * service, this is not reflected here.
     */
-  var affectedUsersCount: js.UndefOr[String] = js.native
+  var affectedUsersCount: js.UndefOr[String] = js.undefined
   
   /**
     * Approximate total number of events in the given group that match the
     * filter criteria.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * Approximate first occurrence that was ever seen for this group and which
     * matches the given filter criteria, ignoring the time_range that was
     * specified in the request.
     */
-  var firstSeenTime: js.UndefOr[String] = js.native
+  var firstSeenTime: js.UndefOr[String] = js.undefined
   
   /**
     * Group data that is independent of the filter criteria.
     */
-  var group: js.UndefOr[SchemaErrorGroup] = js.native
+  var group: js.UndefOr[SchemaErrorGroup] = js.undefined
   
   /**
     * Approximate last occurrence that was ever seen for this group and which
     * matches the given filter criteria, ignoring the time_range that was
     * specified in the request.
     */
-  var lastSeenTime: js.UndefOr[String] = js.native
+  var lastSeenTime: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of services with a non-zero error count for the given
     * filter criteria.
     */
-  var numAffectedServices: js.UndefOr[Double] = js.native
+  var numAffectedServices: js.UndefOr[Double] = js.undefined
   
   /**
     * An arbitrary event that is chosen as representative for the whole group.
@@ -70,14 +68,14 @@ trait SchemaErrorGroupStats extends StObject {
     * each other such that showing an arbitrary representative provides insight
     * into the characteristics of the group as a whole.
     */
-  var representative: js.UndefOr[SchemaErrorEvent] = js.native
+  var representative: js.UndefOr[SchemaErrorEvent] = js.undefined
   
   /**
     * Approximate number of occurrences over time. Timed counts returned by
     * ListGroups are guaranteed to be:  - Inside the requested time interval -
     * Non-overlapping, and - Ordered by ascending time.
     */
-  var timedCounts: js.UndefOr[js.Array[SchemaTimedCount]] = js.native
+  var timedCounts: js.UndefOr[js.Array[SchemaTimedCount]] = js.undefined
 }
 object SchemaErrorGroupStats {
   

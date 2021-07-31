@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIndirectPropertyID extends StObject {
   
-  def Add(Index: Double, IndirectPropertyIDLevel: IIndirectPropertyIDLevel): Unit = js.native
+  def Add(Index: Double, IndirectPropertyIDLevel: IIndirectPropertyIDLevel): Unit
   
-  def Clone(): IIndirectPropertyID = js.native
+  def Clone(): IIndirectPropertyID
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def EqualTo(IndirectPropertyID: IIndirectPropertyID): Boolean = js.native
+  def EqualTo(IndirectPropertyID: IIndirectPropertyID): Boolean
   
-  def Item(Index: Double): IIndirectPropertyIDLevel = js.native
+  def Item(Index: Double): IIndirectPropertyIDLevel
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
   
-  def ToJSON(): String = js.native
+  def ToJSON(): String
 }
 object IIndirectPropertyID {
   

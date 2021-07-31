@@ -4,7 +4,6 @@ import typings.leafletDeepzoom.mod.TileLayer_.DeepZoom
 import typings.leafletDeepzoom.mod.TileLayer_.DeepZoomOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -20,18 +19,17 @@ object mod {
       def this(urlTemplate: String, options: DeepZoomOptions) = this()
     }
     
-    @js.native
     trait DeepZoomOptions extends StObject {
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var imageFormat: js.UndefOr[String] = js.native
+      var imageFormat: js.UndefOr[String] = js.undefined
       
-      var maxZoom: js.UndefOr[Double] = js.native
+      var maxZoom: js.UndefOr[Double] = js.undefined
       
-      var tileSize: js.UndefOr[Double] = js.native
+      var tileSize: js.UndefOr[Double] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object DeepZoomOptions {
       
@@ -79,11 +77,13 @@ object mod {
   
   object tileLayer {
     
-    @JSImport("leaflet", "tileLayer.deepzoom")
+    @JSImport("leaflet", "tileLayer")
     @js.native
-    def deepzoom(urlTemplate: String): DeepZoom = js.native
-    @JSImport("leaflet", "tileLayer.deepzoom")
-    @js.native
-    def deepzoom(urlTemplate: String, options: DeepZoomOptions): DeepZoom = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deepzoom(urlTemplate: String): DeepZoom = ^.asInstanceOf[js.Dynamic].applyDynamic("deepzoom")(urlTemplate.asInstanceOf[js.Any]).asInstanceOf[DeepZoom]
+    @scala.inline
+    def deepzoom(urlTemplate: String, options: DeepZoomOptions): DeepZoom = (^.asInstanceOf[js.Dynamic].applyDynamic("deepzoom")(urlTemplate.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DeepZoom]
   }
 }

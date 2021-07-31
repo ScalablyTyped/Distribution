@@ -12,11 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.redo
 import typings.arcgisJsApi.arcgisJsApiStrings.undo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolygonDrawAction extends DrawAction {
+trait PolygonDrawAction
+  extends StObject
+     with DrawAction {
   
   /**
     * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#event-draw-complete) event.

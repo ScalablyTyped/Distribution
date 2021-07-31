@@ -9,7 +9,6 @@ import typings.activexShell.activexShellNumbers.`0x00000080`
 import typings.activexShell.activexShellNumbers.`0x00000200`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-const-enum

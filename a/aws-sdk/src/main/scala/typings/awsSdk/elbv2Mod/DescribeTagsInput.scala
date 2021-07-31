@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsInput extends StObject {
   
   /**
     * The Amazon Resource Names (ARN) of the resources. You can specify up to 20 resources in a single call.
     */
-  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns = js.native
+  var ResourceArns: typings.awsSdk.elbv2Mod.ResourceArns
 }
 object DescribeTagsInput {
   

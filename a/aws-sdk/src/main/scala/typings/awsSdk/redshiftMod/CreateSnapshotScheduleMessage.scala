@@ -2,41 +2,39 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSnapshotScheduleMessage extends StObject {
   
   /**
     * 
     */
-  var DryRun: js.UndefOr[BooleanOptional] = js.native
+  var DryRun: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * 
     */
-  var NextInvocations: js.UndefOr[IntegerOptional] = js.native
+  var NextInvocations: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example "cron(30 12 *)" or "rate(12 hours)". 
     */
-  var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.native
+  var ScheduleDefinitions: js.UndefOr[ScheduleDefinitionList] = js.undefined
   
   /**
     * The description of the snapshot schedule.
     */
-  var ScheduleDescription: js.UndefOr[String] = js.native
+  var ScheduleDescription: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for a snapshot schedule. Only alphanumeric characters are allowed for the identifier.
     */
-  var ScheduleIdentifier: js.UndefOr[String] = js.native
+  var ScheduleIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * An optional set of tags you can use to search for the schedule.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateSnapshotScheduleMessage {
   

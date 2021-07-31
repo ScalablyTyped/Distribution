@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryResultsRequest extends StObject {
   
   /**
     * The ID number of the query.
     */
-  var queryId: QueryId = js.native
+  var queryId: QueryId
 }
 object GetQueryResultsRequest {
   

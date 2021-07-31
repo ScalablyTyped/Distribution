@@ -2,16 +2,14 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableResponse extends StObject {
   
   /**
     * The updated Timestream table.
     */
-  var Table: js.UndefOr[typings.awsSdk.timestreamwriteMod.Table] = js.native
+  var Table: js.UndefOr[typings.awsSdk.timestreamwriteMod.Table] = js.undefined
 }
 object UpdateTableResponse {
   

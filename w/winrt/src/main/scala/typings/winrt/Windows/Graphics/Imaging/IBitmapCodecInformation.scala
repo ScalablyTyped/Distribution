@@ -3,19 +3,17 @@ package typings.winrt.Windows.Graphics.Imaging
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBitmapCodecInformation extends StObject {
   
-  var codecId: String = js.native
+  var codecId: String
   
-  var fileExtensions: IVectorView[String] = js.native
+  var fileExtensions: IVectorView[String]
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var mimeTypes: IVectorView[String] = js.native
+  var mimeTypes: IVectorView[String]
 }
 object IBitmapCodecInformation {
   

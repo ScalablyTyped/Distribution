@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Chat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofChat extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Chat = js.native
+  def extend(proto: js.Object): Chat
   
   /* static member */
-  var fn: Chat = js.native
+  var fn: Chat
 }
 object TypeofChat {
   

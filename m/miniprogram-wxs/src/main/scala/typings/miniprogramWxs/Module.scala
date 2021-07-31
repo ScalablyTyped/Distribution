@@ -2,16 +2,14 @@ package typings.miniprogramWxs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Module extends StObject {
   
   /**
     * 导出内容
     */
-  var exports: js.Any = js.native
+  var exports: js.Any
 }
 object Module {
   

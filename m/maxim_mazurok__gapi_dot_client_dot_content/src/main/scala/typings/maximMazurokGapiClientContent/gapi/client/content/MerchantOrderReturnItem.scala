@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantOrderReturnItem extends StObject {
   
   /** The reason that the customer chooses to return an item. */
-  var customerReturnReason: js.UndefOr[CustomerReturnReason] = js.native
+  var customerReturnReason: js.UndefOr[CustomerReturnReason] = js.undefined
   
   /** Product level item ID. If the returned items are of the same product, they will have the same ID. */
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
   /** The reason that the merchant chose to reject an item return. */
-  var merchantRejectionReason: js.UndefOr[MerchantRejectionReason] = js.native
+  var merchantRejectionReason: js.UndefOr[MerchantRejectionReason] = js.undefined
   
   /** The reason that merchant chooses to accept a return item. */
-  var merchantReturnReason: js.UndefOr[RefundReason] = js.native
+  var merchantReturnReason: js.UndefOr[RefundReason] = js.undefined
   
   /** Product data from the time of the order placement. */
-  var product: js.UndefOr[OrderLineItemProduct] = js.native
+  var product: js.UndefOr[OrderLineItemProduct] = js.undefined
   
   /** Maximum amount that can be refunded for this return item. */
-  var refundableAmount: js.UndefOr[MonetaryAmount] = js.native
+  var refundableAmount: js.UndefOr[MonetaryAmount] = js.undefined
   
   /** Unit level ID for the return item. Different units of the same product will have different IDs. */
-  var returnItemId: js.UndefOr[String] = js.native
+  var returnItemId: js.UndefOr[String] = js.undefined
   
   /** IDs of the return shipments that this return item belongs to. */
-  var returnShipmentIds: js.UndefOr[js.Array[String]] = js.native
+  var returnShipmentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** ID of the original shipment group. Provided for shipments with invoice support. */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
   
   /** ID of the shipment unit assigned by the merchant. Provided for shipments with invoice support. */
-  var shipmentUnitId: js.UndefOr[String] = js.native
+  var shipmentUnitId: js.UndefOr[String] = js.undefined
   
   /** State of the item. Acceptable values are: - "`canceled`" - "`new`" - "`received`" - "`refunded`" - "`rejected`" */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object MerchantOrderReturnItem {
   

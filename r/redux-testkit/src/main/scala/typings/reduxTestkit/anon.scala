@@ -5,17 +5,15 @@ import typings.reduxTestkit.mod.ReducerTestkit
 import typings.reduxTestkit.mod.ThunkTestkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Execute extends StObject {
     
-    def execute(state: js.Any, args: js.Any*): js.Any = js.native
+    def execute(state: js.Any, args: js.Any*): js.Any
     
-    def expect(state: js.Any, args: js.Any*): ToReturn = js.native
+    def expect(state: js.Any, args: js.Any*): ToReturn
   }
   object Execute {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Flush extends StObject {
     
-    def flush(): Unit = js.native
+    def flush(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object Flush {
     
@@ -66,21 +63,20 @@ object anon {
   }
   
   /* Inlined redux-testkit.redux-testkit.ReducerTestkit & {withState (state : any): redux-testkit.redux-testkit.ReducerTestkit} */
-  @js.native
   trait ReducerTestkitwithStatest extends StObject {
     
-    def execute(action: Action[_]): js.Any = js.native
+    def execute(action: Action[js.Any]): js.Any
     
-    def expect(action: Action[_]): ToChangeInState = js.native
+    def expect(action: Action[js.Any]): ToChangeInState
     
-    def withState(state: js.Any): ReducerTestkit = js.native
+    def withState(state: js.Any): ReducerTestkit
   }
   object ReducerTestkitwithStatest {
     
     @scala.inline
     def apply(
-      execute: Action[_] => js.Any,
-      expect: Action[_] => ToChangeInState,
+      execute: Action[js.Any] => js.Any,
+      expect: Action[js.Any] => ToChangeInState,
       withState: js.Any => ReducerTestkit
     ): ReducerTestkitwithStatest = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), expect = js.Any.fromFunction1(expect), withState = js.Any.fromFunction1(withState))
@@ -91,10 +87,10 @@ object anon {
     implicit class ReducerTestkitwithStatestMutableBuilder[Self <: ReducerTestkitwithStatest] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExecute(value: Action[_] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      def setExecute(value: Action[js.Any] => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setExpect(value: Action[_] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
+      def setExpect(value: Action[js.Any] => ToChangeInState): Self = StObject.set(x, "expect", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWithState(value: js.Any => ReducerTestkit): Self = StObject.set(x, "withState", js.Any.fromFunction1(value))
@@ -102,12 +98,11 @@ object anon {
   }
   
   /* Inlined redux-testkit.redux-testkit.ThunkTestkit & {withState (state : any): redux-testkit.redux-testkit.ThunkTestkit} */
-  @js.native
   trait ThunkTestkitwithStatestat extends StObject {
     
-    def execute(args: js.Any*): js.Any = js.native
+    def execute(args: js.Any*): js.Any
     
-    def withState(state: js.Any): ThunkTestkit = js.native
+    def withState(state: js.Any): ThunkTestkit
   }
   object ThunkTestkitwithStatestat {
     
@@ -128,14 +123,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ToChangeInState extends StObject {
     
-    def toChangeInState(expectedChanges: js.Any): Unit = js.native
+    def toChangeInState(expectedChanges: js.Any): Unit
     
-    def toReturnState(expected: js.Any): Unit = js.native
+    def toReturnState(expected: js.Any): Unit
     
-    def toStayTheSame(): Unit = js.native
+    def toStayTheSame(): Unit
   }
   object ToChangeInState {
     
@@ -159,10 +153,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ToReturn extends StObject {
     
-    def toReturn(expected: js.Any): Unit = js.native
+    def toReturn(expected: js.Any): Unit
   }
   object ToReturn {
     

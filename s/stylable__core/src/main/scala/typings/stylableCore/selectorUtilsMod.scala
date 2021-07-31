@@ -10,21 +10,21 @@ import typings.stylableCore.stylableMetaMod.ElementSymbol
 import typings.stylableCore.stylableResolverMod.CSSResolve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorUtilsMod {
   
-  @JSImport("@stylable/core/cjs/selector-utils", "createChecker")
+  @JSImport("@stylable/core/cjs/selector-utils", JSImport.Namespace)
   @js.native
-  def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@stylable/core/cjs/selector-utils", "createSimpleSelectorChecker")
-  @js.native
-  def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = js.native
+  @scala.inline
+  def createChecker(types: js.Array[String | js.Array[String]]): js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChecker")(types.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Function1[/* node */ SelectorAstNode, Boolean]]]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "createWarningRule")
-  @js.native
+  @scala.inline
+  def createSimpleSelectorChecker(): js.Function1[/* node */ SelectorAstNode, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleSelectorChecker")().asInstanceOf[js.Function1[/* node */ SelectorAstNode, Boolean]]
+  
+  @scala.inline
   def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
@@ -32,9 +32,8 @@ object selectorUtilsMod {
     extendingNode: String,
     scopedExtendingNode: String,
     extendingFile: String
-  ): Rule_ = js.native
-  @JSImport("@stylable/core/cjs/selector-utils", "createWarningRule")
-  @js.native
+  ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any])).asInstanceOf[Rule_]
+  @scala.inline
   def createWarningRule(
     extendedNode: String,
     scopedExtendedNode: String,
@@ -43,113 +42,87 @@ object selectorUtilsMod {
     scopedExtendingNode: String,
     extendingFile: String,
     useScoped: Boolean
-  ): Rule_ = js.native
+  ): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("createWarningRule")(extendedNode.asInstanceOf[js.Any], scopedExtendedNode.asInstanceOf[js.Any], extendedFile.asInstanceOf[js.Any], extendingNode.asInstanceOf[js.Any], scopedExtendingNode.asInstanceOf[js.Any], extendingFile.asInstanceOf[js.Any], useScoped.asInstanceOf[js.Any])).asInstanceOf[Rule_]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "filterChunkNodesByType")
-  @js.native
-  def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = js.native
+  @scala.inline
+  def filterChunkNodesByType(chunk: SelectorChunk, typeOptions: js.Array[String]): js.Array[PartialSelectorAstNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterChunkNodesByType")(chunk.asInstanceOf[js.Any], typeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[PartialSelectorAstNode]]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "fixChunkOrdering")
-  @js.native
-  def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = js.native
+  @scala.inline
+  def fixChunkOrdering(selectorNode: SelectorAstNode, prefixType: SelectorAstNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixChunkOrdering")(selectorNode.asInstanceOf[js.Any], prefixType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "getOriginDefinition")
-  @js.native
-  def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = js.native
+  @scala.inline
+  def getOriginDefinition(resolved: js.Array[CSSResolve[ClassSymbol | ElementSymbol]]): CSSResolve[ClassSymbol | ElementSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginDefinition")(resolved.asInstanceOf[js.Any]).asInstanceOf[CSSResolve[ClassSymbol | ElementSymbol]]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isChildOfAtRule")
-  @js.native
-  def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = js.native
+  @scala.inline
+  def isChildOfAtRule(rule: Container, atRuleName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isChildOfAtRule")(rule.asInstanceOf[js.Any], atRuleName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isCompRoot")
-  @js.native
-  def isCompRoot(name: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def isCompRoot(name: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompRoot")(name.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isGlobal")
-  @js.native
-  def isGlobal(node: SelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isGlobal(node: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGlobal")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isImport")
-  @js.native
-  def isImport(ast: SelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isImport(ast: SelectorAstNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isNodeMatch")
-  @js.native
-  def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = js.native
+  @scala.inline
+  def isNodeMatch(nodeA: PartialSelectorAstNode, nodeB: PartialSelectorAstNode): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeMatch")(nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isRootValid")
-  @js.native
-  def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = js.native
+  @scala.inline
+  def isRootValid(ast: SelectorAstNode, rootName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRootValid")(ast.asInstanceOf[js.Any], rootName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "isSimpleSelector")
-  @js.native
-  def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = js.native
+  @scala.inline
+  def isSimpleSelector(selectorAst: SelectorAstNode): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isSimpleSelector")(selectorAst.asInstanceOf[js.Any]).asInstanceOf[Boolean | Unit]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "matchAtKeyframes")
-  @js.native
-  def matchAtKeyframes(selector: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def matchAtKeyframes(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtKeyframes")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "matchAtMedia")
-  @js.native
-  def matchAtMedia(selector: String): RegExpMatchArray | Null = js.native
+  @scala.inline
+  def matchAtMedia(selector: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAtMedia")(selector.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "matchSelectorTarget")
-  @js.native
-  def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = js.native
+  @scala.inline
+  def matchSelectorTarget(sourceSelector: String, targetSelector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSelectorTarget")(sourceSelector.asInstanceOf[js.Any], targetSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "mergeChunks")
-  @js.native
-  def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = js.native
+  @scala.inline
+  def mergeChunks(chunks: js.Array[js.Array[SelectorChunk2]]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeChunks")(chunks.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "parseSelector")
-  @js.native
-  def parseSelector(selector: String): SelectorAstNode = js.native
+  @scala.inline
+  def parseSelector(selector: String): SelectorAstNode = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[SelectorAstNode]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "separateChunks")
-  @js.native
-  def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = js.native
+  @scala.inline
+  def separateChunks(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk]]]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "separateChunks2")
-  @js.native
-  def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = js.native
+  @scala.inline
+  def separateChunks2(selectorNode: SelectorAstNode): js.Array[js.Array[SelectorChunk2]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateChunks2")(selectorNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[SelectorChunk2]]]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "stringifySelector")
-  @js.native
-  def stringifySelector(ast: SelectorAstNode): String = js.native
+  @scala.inline
+  def stringifySelector(ast: SelectorAstNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifySelector")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/selector-utils", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = js.native
-  @JSImport("@stylable/core/cjs/selector-utils", "traverseNode")
-  @js.native
-  def traverseNode(
-    node: SelectorAstNode,
-    visitor: Visitor,
-    index: js.UndefOr[scala.Nothing],
-    nodes: js.Array[SelectorAstNode]
-  ): Boolean | Unit = js.native
-  @JSImport("@stylable/core/cjs/selector-utils", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = js.native
-  @JSImport("@stylable/core/cjs/selector-utils", "traverseNode")
-  @js.native
-  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = js.native
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Double, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
+  @scala.inline
+  def traverseNode(node: SelectorAstNode, visitor: Visitor, index: Unit, nodes: js.Array[SelectorAstNode]): Boolean | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseNode")(node.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], index.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[Boolean | Unit]
   
-  @js.native
-  trait PseudoSelectorAstNode extends SelectorAstNode {
+  trait PseudoSelectorAstNode
+    extends StObject
+       with SelectorAstNode {
     
     @JSName("content")
-    var content_PseudoSelectorAstNode: String = js.native
+    var content_PseudoSelectorAstNode: String
     
     @JSName("type")
-    var type_PseudoSelectorAstNode: `pseudo-class` = js.native
+    var type_PseudoSelectorAstNode: `pseudo-class`
   }
   object PseudoSelectorAstNode {
     
     @scala.inline
-    def apply(content: String, name: String, nodes: js.Array[SelectorAstNode], `type`: `pseudo-class`): PseudoSelectorAstNode = {
+    def apply(content: String, name: String, nodes: js.Array[SelectorAstNode]): PseudoSelectorAstNode = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("pseudo-class")
       __obj.asInstanceOf[PseudoSelectorAstNode]
     }
     
@@ -164,22 +137,21 @@ object selectorUtilsMod {
     }
   }
   
-  @js.native
   trait SelectorAstNode extends StObject {
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var nodes: js.Array[SelectorAstNode] = js.native
+    var nodes: js.Array[SelectorAstNode]
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectorAstNode {
     
@@ -231,16 +203,15 @@ object selectorUtilsMod {
     }
   }
   
-  @js.native
   trait SelectorChunk extends StObject {
     
-    var nodes: js.Array[PartialSelectorAstNode] = js.native
+    var nodes: js.Array[PartialSelectorAstNode]
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectorChunk {
     
@@ -277,18 +248,17 @@ object selectorUtilsMod {
     }
   }
   
-  @js.native
   trait SelectorChunk2 extends StObject {
     
-    var before: js.UndefOr[String] = js.native
+    var before: js.UndefOr[String] = js.undefined
     
-    var nodes: js.Array[SelectorAstNode] = js.native
+    var nodes: js.Array[SelectorAstNode]
     
-    var operator: js.UndefOr[String] = js.native
+    var operator: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectorChunk2 {
     

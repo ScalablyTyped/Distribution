@@ -4,52 +4,42 @@ import typings.appBuilderLib.anon.File
 import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object licenseMod {
   
-  @JSImport("app-builder-lib/out/util/license", "getLicenseAssets")
+  @JSImport("app-builder-lib/out/util/license", JSImport.Namespace)
   @js.native
-  def getLicenseAssets(fileNames: js.Array[String], packager: PlatformPackager[_]): js.Array[File] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/license", "getLicenseFiles")
-  @js.native
-  def getLicenseFiles(packager: PlatformPackager[_]): js.Promise[js.Array[LicenseFile]] = js.native
+  @scala.inline
+  def getLicenseAssets(fileNames: js.Array[String], packager: PlatformPackager[js.Any]): js.Array[File] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseAssets")(fileNames.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Array[File]]
   
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(custom: js.UndefOr[scala.Nothing], packager: PlatformPackager[_]): js.Promise[String | Null] = js.native
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(
-    custom: js.UndefOr[scala.Nothing],
-    packager: PlatformPackager[_],
-    supportedExtension: js.Array[String]
-  ): js.Promise[String | Null] = js.native
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[_]): js.Promise[String | Null] = js.native
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[_], supportedExtension: js.Array[String]): js.Promise[String | Null] = js.native
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[_]): js.Promise[String | Null] = js.native
-  @JSImport("app-builder-lib/out/util/license", "getNotLocalizedLicenseFile")
-  @js.native
-  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[_], supportedExtension: js.Array[String]): js.Promise[String | Null] = js.native
+  @scala.inline
+  def getLicenseFiles(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseFiles")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseFile]]]
   
-  @js.native
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: String, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: Null, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  @scala.inline
+  def getNotLocalizedLicenseFile(custom: Unit, packager: PlatformPackager[js.Any], supportedExtension: js.Array[String]): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNotLocalizedLicenseFile")(custom.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], supportedExtension.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
+  
   trait LicenseFile extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var lang: String = js.native
+    var lang: String
     
-    var langName: String = js.native
+    var langName: String
     
-    var langWithRegion: String = js.native
+    var langWithRegion: String
   }
   object LicenseFile {
     

@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosVppEBook extends ManagedEBook {
+trait IosVppEBook
+  extends StObject
+     with ManagedEBook {
   
   // The Apple ID associated with Vpp token.
-  var appleId: js.UndefOr[NullableOption[String]] = js.native
+  var appleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Genres.
-  var genres: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var genres: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Language.
-  var language: js.UndefOr[NullableOption[String]] = js.native
+  var language: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Seller.
-  var seller: js.UndefOr[NullableOption[String]] = js.native
+  var seller: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Total license count.
-  var totalLicenseCount: js.UndefOr[Double] = js.native
+  var totalLicenseCount: js.UndefOr[Double] = js.undefined
   
   // Used license count.
-  var usedLicenseCount: js.UndefOr[Double] = js.native
+  var usedLicenseCount: js.UndefOr[Double] = js.undefined
   
   // The Vpp token's organization name.
-  var vppOrganizationName: js.UndefOr[NullableOption[String]] = js.native
+  var vppOrganizationName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Vpp token ID.
-  var vppTokenId: js.UndefOr[String] = js.native
+  var vppTokenId: js.UndefOr[String] = js.undefined
 }
 object IosVppEBook {
   

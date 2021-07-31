@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WEBGLCompressedTextureS3tcSrgb extends StObject {
   
-  val COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: GLenum = js.native
+  val COMPRESSED_SRGB_ALPHA_S3TC_DXT1_EXT: GLenum
   
-  val COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: GLenum = js.native
+  val COMPRESSED_SRGB_ALPHA_S3TC_DXT3_EXT: GLenum
   
-  val COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: GLenum = js.native
+  val COMPRESSED_SRGB_ALPHA_S3TC_DXT5_EXT: GLenum
   
-  val COMPRESSED_SRGB_S3TC_DXT1_EXT: GLenum = js.native
+  val COMPRESSED_SRGB_S3TC_DXT1_EXT: GLenum
 }
 object WEBGLCompressedTextureS3tcSrgb {
   

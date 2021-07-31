@@ -2,19 +2,17 @@ package typings.twit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigKeys extends StObject {
   
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
-  var access_token_secret: js.UndefOr[String] = js.native
+  var access_token_secret: js.UndefOr[String] = js.undefined
   
-  var consumer_key: String = js.native
+  var consumer_key: String
   
-  var consumer_secret: String = js.native
+  var consumer_secret: String
 }
 object ConfigKeys {
   

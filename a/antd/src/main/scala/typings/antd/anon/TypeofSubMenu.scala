@@ -4,17 +4,15 @@ import typings.antd.menuContextMod.MenuContextProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSubMenu extends StObject {
   
   /* static member */
-  var contextType: Context[MenuContextProps] = js.native
+  var contextType: Context[MenuContextProps]
   
   /* static member */
-  var isSubMenu: Double = js.native
+  var isSubMenu: Double
 }
 object TypeofSubMenu {
   

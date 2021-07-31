@@ -2,18 +2,16 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IEditorHoverOptions>> */
-@js.native
 trait EditorHoverOptions extends StObject {
   
-  val delay: Double = js.native
+  val delay: Double
   
-  val enabled: Boolean = js.native
+  val enabled: Boolean
   
-  val sticky: Boolean = js.native
+  val sticky: Boolean
 }
 object EditorHoverOptions {
   

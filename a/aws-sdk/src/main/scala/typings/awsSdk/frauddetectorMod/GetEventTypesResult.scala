@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventTypesResult extends StObject {
   
   /**
     * An array of event types.
     */
-  var eventTypes: js.UndefOr[eventTypeList] = js.native
+  var eventTypes: js.UndefOr[eventTypeList] = js.undefined
   
   /**
     * The next page token.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object GetEventTypesResult {
   

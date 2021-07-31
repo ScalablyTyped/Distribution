@@ -8,11 +8,12 @@ import typings.std.HTMLImageElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MeshTexture extends Accessor {
+trait MeshTexture
+  extends StObject
+     with Accessor {
   
   /**
     * A direct reference to the image or video data.

@@ -5,14 +5,15 @@ import typings.antvGBase.interfacesMod.IElement
 import typings.d3Timer.mod.Timer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineMod {
   
   @JSImport("@antv/g-base/lib/animate/timeline", JSImport.Default)
   @js.native
-  class default protected () extends Timeline {
+  class default protected ()
+    extends StObject
+       with Timeline {
     /**
       * 时间轴构造函数，依赖于画布
       * @param {}

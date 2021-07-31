@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents cookie information used in the Cookie HTTP header on an HTTP request. */
-@js.native
 trait HttpCookiePairHeaderValue extends StObject {
   
   /** Gets a token that represents the cookie name used in the Cookie HTTP header. */
-  var name: String = js.native
+  var name: String
   
   /** Gets or sets a value for the cookie used in the Cookie HTTP header. */
-  var value: String = js.native
+  var value: String
 }
 object HttpCookiePairHeaderValue {
   

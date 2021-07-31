@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FromRssFeedRuleCondition extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ConditionType: OlRuleConditionType = js.native
+  val ConditionType: OlRuleConditionType
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var FromRssFeed: js.Any = js.native
+  var FromRssFeed: js.Any
   
   @JSName("Outlook.FromRssFeedRuleCondition_typekey")
-  var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition = js.native
+  var OutlookDotFromRssFeedRuleCondition_typekey: FromRssFeedRuleCondition
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object FromRssFeedRuleCondition {
   

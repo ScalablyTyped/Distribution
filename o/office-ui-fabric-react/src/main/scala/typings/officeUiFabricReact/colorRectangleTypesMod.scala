@@ -12,16 +12,14 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorRectangleTypesMod {
   
-  @js.native
   trait IColorRectangle extends StObject {
     
     /** Currently selected color. */
-    var color: IColor = js.native
+    var color: IColor
   }
   object IColorRectangle {
     
@@ -39,7 +37,6 @@ object colorRectangleTypesMod {
     }
   }
   
-  @js.native
   trait IColorRectangleProps extends StObject {
     
     /**
@@ -47,13 +44,13 @@ object colorRectangleTypesMod {
       * saturation and moving it vertically adjusts value (essentially, brightness).
       * @defaultvalue 'Use left and right arrow keys to set saturation. Use up and down arrow keys to set brightness.'
       */
-    var ariaDescription: js.UndefOr[String] = js.native
+    var ariaDescription: js.UndefOr[String] = js.undefined
     
     /**
       * Label of the ColorRectangle for the benefit of screen reader users.
       * @defaultvalue 'Saturation and brightness'
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Format string for the color rectangle's current value as read by screen readers.
@@ -61,27 +58,27 @@ object colorRectangleTypesMod {
       * `{0}` for saturation and `{1}` for value/brightness.
       * @defaultvalue `'Saturation {0} brightness {1}'`
       */
-    var ariaValueFormat: js.UndefOr[String] = js.native
+    var ariaValueFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Additional CSS class(es) to apply to the ColorRectangle.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Current color of the rectangle.
       */
-    var color: IColor = js.native
+    var color: IColor
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.undefined
     
     /**
       * Minimum width and height.
       */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback for when the color changes.
@@ -92,17 +89,17 @@ object colorRectangleTypesMod {
           /* color */ IColor, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IColorRectangleProps {
     
@@ -182,23 +179,22 @@ object colorRectangleTypesMod {
     }
   }
   
-  @js.native
   trait IColorRectangleStyleProps extends StObject {
     
     /**
       * Additional CSS class(es) to apply to the ColorRectangle.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Minimum width and height.
       */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IColorRectangleStyleProps {
     
@@ -228,33 +224,32 @@ object colorRectangleTypesMod {
     }
   }
   
-  @js.native
   trait IColorRectangleStyles extends StObject {
     
     /**
       * Style set for the dark-colored rectangle.
       */
-    var dark: js.UndefOr[IStyle] = js.native
+    var dark: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for a hidden detailed description for screen reader users.
       */
-    var description: js.UndefOr[IStyle] = js.native
+    var description: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the light-colored rectangle.
       */
-    var light: js.UndefOr[IStyle] = js.native
+    var light: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the root element.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the draggable thumb element.
       */
-    var thumb: js.UndefOr[IStyle] = js.native
+    var thumb: js.UndefOr[IStyle] = js.undefined
   }
   object IColorRectangleStyles {
     

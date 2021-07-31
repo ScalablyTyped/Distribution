@@ -2,18 +2,16 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 上报的自定义数据。 */
-@js.native
 trait Data extends StObject {
   
   /** 配置中的字段名 */
-  var key: String = js.native
+  var key: String
   
   /** 上报的数据 */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Data {
   

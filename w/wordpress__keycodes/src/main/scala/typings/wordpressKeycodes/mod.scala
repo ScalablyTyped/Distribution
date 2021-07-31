@@ -3,7 +3,6 @@ package typings.wordpressKeycodes
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -70,259 +69,223 @@ object mod {
   
   object displayShortcut {
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.access")
+    @JSImport("@wordpress/keycodes", "displayShortcut")
     @js.native
-    def access(character: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.alt")
-    @js.native
-    def alt(character: String): String = js.native
+    @scala.inline
+    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.ctrl")
-    @js.native
-    def ctrl(character: String): String = js.native
+    @scala.inline
+    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.ctrlShift")
-    @js.native
-    def ctrlShift(character: String): String = js.native
+    @scala.inline
+    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.primary")
-    @js.native
-    def primary(character: String): String = js.native
+    @scala.inline
+    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.primaryAlt")
-    @js.native
-    def primaryAlt(character: String): String = js.native
+    @scala.inline
+    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.primaryShift")
-    @js.native
-    def primaryShift(character: String): String = js.native
+    @scala.inline
+    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.secondary")
-    @js.native
-    def secondary(character: String): String = js.native
+    @scala.inline
+    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.shift")
-    @js.native
-    def shift(character: String): String = js.native
+    @scala.inline
+    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "displayShortcut.shiftAlt")
-    @js.native
-    def shiftAlt(character: String): String = js.native
+    @scala.inline
+    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object displayShortcutList {
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.access")
+    @JSImport("@wordpress/keycodes", "displayShortcutList")
     @js.native
-    def access(character: String): js.Array[String] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.alt")
-    @js.native
-    def alt(character: String): js.Array[String] = js.native
+    @scala.inline
+    def access(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.ctrl")
-    @js.native
-    def ctrl(character: String): js.Array[String] = js.native
+    @scala.inline
+    def alt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.ctrlShift")
-    @js.native
-    def ctrlShift(character: String): js.Array[String] = js.native
+    @scala.inline
+    def ctrl(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.primary")
-    @js.native
-    def primary(character: String): js.Array[String] = js.native
+    @scala.inline
+    def ctrlShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.primaryAlt")
-    @js.native
-    def primaryAlt(character: String): js.Array[String] = js.native
+    @scala.inline
+    def primary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.primaryShift")
-    @js.native
-    def primaryShift(character: String): js.Array[String] = js.native
+    @scala.inline
+    def primaryAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.secondary")
-    @js.native
-    def secondary(character: String): js.Array[String] = js.native
+    @scala.inline
+    def primaryShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.shift")
-    @js.native
-    def shift(character: String): js.Array[String] = js.native
+    @scala.inline
+    def secondary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "displayShortcutList.shiftAlt")
-    @js.native
-    def shiftAlt(character: String): js.Array[String] = js.native
+    @scala.inline
+    def shift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    @scala.inline
+    def shiftAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   object isKeyboardEvent {
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.access")
+    @JSImport("@wordpress/keycodes", "isKeyboardEvent")
     @js.native
-    def access(event: Event, character: String): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.alt")
-    @js.native
-    def alt(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def access(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.ctrl")
-    @js.native
-    def ctrl(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def alt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("alt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.ctrlShift")
-    @js.native
-    def ctrlShift(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def ctrl(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.primary")
-    @js.native
-    def primary(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def ctrlShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.primaryAlt")
-    @js.native
-    def primaryAlt(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def primary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.primaryShift")
-    @js.native
-    def primaryShift(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def primaryAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.secondary")
-    @js.native
-    def secondary(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def primaryShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.shift")
-    @js.native
-    def shift(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def secondary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@wordpress/keycodes", "isKeyboardEvent.shiftAlt")
-    @js.native
-    def shiftAlt(event: Event, character: String): Boolean = js.native
+    @scala.inline
+    def shift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def shiftAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object modifiers {
     
-    @JSImport("@wordpress/keycodes", "modifiers.access")
+    @JSImport("@wordpress/keycodes", "modifiers")
     @js.native
-    def access(isApple: js.Function0[Boolean]): js.Array[String] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "modifiers.alt")
-    @js.native
-    def alt(): js.Array[String] = js.native
+    @scala.inline
+    def access(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.ctrl")
-    @js.native
-    def ctrl(): js.Array[String] = js.native
+    @scala.inline
+    def alt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")().asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.ctrlShift")
-    @js.native
-    def ctrlShift(): js.Array[String] = js.native
+    @scala.inline
+    def ctrl(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")().asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.primary")
-    @js.native
-    def primary(isApple: js.Function0[Boolean]): js.Array[String] = js.native
+    @scala.inline
+    def ctrlShift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")().asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.primaryAlt")
-    @js.native
-    def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = js.native
+    @scala.inline
+    def primary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.primaryShift")
-    @js.native
-    def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = js.native
+    @scala.inline
+    def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.secondary")
-    @js.native
-    def secondary(isApple: js.Function0[Boolean]): js.Array[String] = js.native
+    @scala.inline
+    def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.shift")
-    @js.native
-    def shift(): js.Array[String] = js.native
+    @scala.inline
+    def secondary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
-    @JSImport("@wordpress/keycodes", "modifiers.shiftAlt")
-    @js.native
-    def shiftAlt(): js.Array[String] = js.native
+    @scala.inline
+    def shift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.Array[String]]
+    
+    @scala.inline
+    def shiftAlt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")().asInstanceOf[js.Array[String]]
   }
   
   object rawShortcut {
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.access")
+    @JSImport("@wordpress/keycodes", "rawShortcut")
     @js.native
-    def access(character: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.alt")
-    @js.native
-    def alt(character: String): String = js.native
+    @scala.inline
+    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.ctrl")
-    @js.native
-    def ctrl(character: String): String = js.native
+    @scala.inline
+    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.ctrlShift")
-    @js.native
-    def ctrlShift(character: String): String = js.native
+    @scala.inline
+    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.primary")
-    @js.native
-    def primary(character: String): String = js.native
+    @scala.inline
+    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.primaryAlt")
-    @js.native
-    def primaryAlt(character: String): String = js.native
+    @scala.inline
+    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.primaryShift")
-    @js.native
-    def primaryShift(character: String): String = js.native
+    @scala.inline
+    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.secondary")
-    @js.native
-    def secondary(character: String): String = js.native
+    @scala.inline
+    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.shift")
-    @js.native
-    def shift(character: String): String = js.native
+    @scala.inline
+    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "rawShortcut.shiftAlt")
-    @js.native
-    def shiftAlt(character: String): String = js.native
+    @scala.inline
+    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object shortcutAriaLabel {
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.access")
+    @JSImport("@wordpress/keycodes", "shortcutAriaLabel")
     @js.native
-    def access(character: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.alt")
-    @js.native
-    def alt(character: String): String = js.native
+    @scala.inline
+    def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.ctrl")
-    @js.native
-    def ctrl(character: String): String = js.native
+    @scala.inline
+    def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.ctrlShift")
-    @js.native
-    def ctrlShift(character: String): String = js.native
+    @scala.inline
+    def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.primary")
-    @js.native
-    def primary(character: String): String = js.native
+    @scala.inline
+    def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.primaryAlt")
-    @js.native
-    def primaryAlt(character: String): String = js.native
+    @scala.inline
+    def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.primaryShift")
-    @js.native
-    def primaryShift(character: String): String = js.native
+    @scala.inline
+    def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.secondary")
-    @js.native
-    def secondary(character: String): String = js.native
+    @scala.inline
+    def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.shift")
-    @js.native
-    def shift(character: String): String = js.native
+    @scala.inline
+    def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@wordpress/keycodes", "shortcutAriaLabel.shiftAlt")
-    @js.native
-    def shiftAlt(character: String): String = js.native
+    @scala.inline
+    def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

@@ -2,15 +2,13 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluploadFiltersMimeTypes extends StObject {
   
-  var extensions: String = js.native
+  var extensions: String
   
-  var title: String = js.native
+  var title: String
 }
 object pluploadFiltersMimeTypes {
   

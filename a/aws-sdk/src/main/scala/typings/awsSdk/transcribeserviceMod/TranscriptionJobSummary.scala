@@ -2,68 +2,66 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranscriptionJobSummary extends StObject {
   
   /**
     * A timestamp that shows when the job was completed.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.native
+  var CompletionTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The content redaction settings of the transcription job.
     */
-  var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.native
+  var ContentRedaction: js.UndefOr[typings.awsSdk.transcribeserviceMod.ContentRedaction] = js.undefined
   
   /**
     * A timestamp that shows when the job was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * If the TranscriptionJobStatus field is FAILED, a description of the error.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
     * A value between zero and one that Amazon Transcribe assigned to the language it identified in the source audio. A higher score indicates that Amazon Transcribe is more confident in the language it identified.
     */
-  var IdentifiedLanguageScore: js.UndefOr[typings.awsSdk.transcribeserviceMod.IdentifiedLanguageScore] = js.native
+  var IdentifiedLanguageScore: js.UndefOr[typings.awsSdk.transcribeserviceMod.IdentifiedLanguageScore] = js.undefined
   
   /**
     * Whether automatic language identification was enabled for a transcription job.
     */
-  var IdentifyLanguage: js.UndefOr[Boolean] = js.native
+  var IdentifyLanguage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The language code for the input speech.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
-  var ModelSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelSettings] = js.native
+  var ModelSettings: js.UndefOr[typings.awsSdk.transcribeserviceMod.ModelSettings] = js.undefined
   
   /**
     * Indicates the location of the output of the transcription job. If the value is CUSTOMER_BUCKET then the location is the S3 bucket specified in the outputBucketName field when the transcription job was started with the StartTranscriptionJob operation. If the value is SERVICE_BUCKET then the output is stored by Amazon Transcribe and can be retrieved using the URI in the GetTranscriptionJob response's TranscriptFileUri field.
     */
-  var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.native
+  var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.undefined
   
   /**
     * A timestamp that shows when the job started processing.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the transcription job.
     */
-  var TranscriptionJobName: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobName] = js.native
+  var TranscriptionJobName: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobName] = js.undefined
   
   /**
     * The status of the transcription job. When the status is COMPLETED, use the GetTranscriptionJob operation to get the results of the transcription.
     */
-  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.native
+  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
 }
 object TranscriptionJobSummary {
   

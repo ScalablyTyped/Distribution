@@ -11,14 +11,19 @@ import typings.browserfs.isoFSMod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofIsoFS
-  extends Instantiable1[/* data */ Buffer, default]
+  extends StObject
+     with Instantiable1[/* data */ Buffer, default]
      with Instantiable2[/* data */ Buffer, /* name */ String, default]
-     with Instantiable3[/* data */ Buffer, js.UndefOr[/* name */ String], /* deprecateMsg */ Boolean, default] {
+     with Instantiable3[
+      /* data */ Buffer, 
+      (/* name */ String) | (/* name */ Unit), 
+      /* deprecateMsg */ Boolean, 
+      default
+    ] {
   
   /**
     * Creates an IsoFS instance with the given options.

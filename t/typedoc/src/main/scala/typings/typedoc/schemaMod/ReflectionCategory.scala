@@ -2,21 +2,20 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ReflectionCategory, 'title'> */
-@js.native
 trait ReflectionCategory
-  extends __ModelToObject[js.Any] {
+  extends StObject
+     with __ModelToObject[js.Any] {
   
   var children: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: std.Array<typedoc.typedoc/dist/lib/models/reflections/abstract.Reflection>[number]['id'] */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var title: ModelToObject[String] | String = js.native
+  var title: ModelToObject[String] | String
 }
 object ReflectionCategory {
   

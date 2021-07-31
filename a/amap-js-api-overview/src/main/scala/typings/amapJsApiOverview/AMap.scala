@@ -9,7 +9,6 @@ import typings.amapJsApiOverview.amapJsApiOverviewStrings.open
 import typings.amapJsApiOverview.amapJsApiOverviewStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -18,7 +17,9 @@ object AMap {
     * 地图鹰眼插件
     */
   @js.native
-  trait OverView[L /* <: TileLayer */] extends EventEmitter {
+  trait OverView[L /* <: TileLayer */]
+    extends StObject
+       with EventEmitter {
     
     /***
       * 折叠鹰眼窗口
@@ -53,28 +54,24 @@ object AMap {
   }
   object OverView {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var close: Event_[
-            typings.amapJsApiOverview.amapJsApiOverviewStrings.close, 
-            js.UndefOr[scala.Nothing]
-          ] = js.native
+      var close: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.close, Unit]
       
-      var hide: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.hide, js.UndefOr[scala.Nothing]] = js.native
+      var hide: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.hide, Unit]
       
-      var open: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.open, js.UndefOr[scala.Nothing]] = js.native
+      var open: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.open, Unit]
       
-      var show: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.show, js.UndefOr[scala.Nothing]] = js.native
+      var show: Event_[typings.amapJsApiOverview.amapJsApiOverviewStrings.show, Unit]
     }
     object EventMap {
       
       @scala.inline
       def apply(
-        close: Event_[close, js.UndefOr[scala.Nothing]],
-        hide: Event_[hide, js.UndefOr[scala.Nothing]],
-        open: Event_[open, js.UndefOr[scala.Nothing]],
-        show: Event_[show, js.UndefOr[scala.Nothing]]
+        close: Event_[close, Unit],
+        hide: Event_[hide, Unit],
+        open: Event_[open, Unit],
+        show: Event_[show, Unit]
       ): EventMap = {
         val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], hide = hide.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
@@ -84,36 +81,35 @@ object AMap {
       implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setClose(value: Event_[close, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        def setClose(value: Event_[close, Unit]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setHide(value: Event_[hide, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setOpen(value: Event_[open, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+        def setOpen(value: Event_[open, Unit]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setShow(value: Event_[show, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait Options[L /* <: TileLayer */] extends StObject {
       
       /**
         * 鹰眼是否展开，默认为false
         */
-      var isOpen: js.UndefOr[Boolean] = js.native
+      var isOpen: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 鹰眼窗体中需显示的切片图层
         */
-      var tileLayer: js.UndefOr[L] = js.native
+      var tileLayer: js.UndefOr[L] = js.undefined
       
       /**
         * 鹰眼是否显示，默认为true
         */
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -124,7 +120,7 @@ object AMap {
       }
       
       @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options[_], L /* <: TileLayer */] (val x: Self with Options[L]) extends AnyVal {
+      implicit class OptionsMutableBuilder[Self <: Options[?], L /* <: TileLayer */] (val x: Self & Options[L]) extends AnyVal {
         
         @scala.inline
         def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ A JavaScript time formatter and parser inspired by strftime and strptime.
 | ------------------ | :-------------: |
 | Full name          | d3-time-format |
 | Keywords           | d3, d3-module, time, format, strftime, strptime |
-| # releases         | 7 |
-| # dependents       | 246 |
-| # downloads        | 68984618 |
+| # releases         | 8 |
+| # dependents       | 295 |
+| # downloads        | 87272692 |
 | # stars            | 2 |
 
 ## Links

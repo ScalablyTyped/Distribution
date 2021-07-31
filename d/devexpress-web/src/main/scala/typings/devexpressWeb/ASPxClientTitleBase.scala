@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the base for ASPxClientChartTitle and ASPxClientSeriesTitle classes.
   */
-@js.native
-trait ASPxClientTitleBase extends ASPxClientWebChartElement {
+trait ASPxClientTitleBase
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the alignment of the title.
     */
-  var alignment: String = js.native
+  var alignment: String
   
   /**
     * Gets a value that specifies to which edges of a parent element the title should be docked.
     */
-  var dock: String = js.native
+  var dock: String
   
   /**
     * Gets the lines of text within a title.
     */
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
 }
 object ASPxClientTitleBase {
   

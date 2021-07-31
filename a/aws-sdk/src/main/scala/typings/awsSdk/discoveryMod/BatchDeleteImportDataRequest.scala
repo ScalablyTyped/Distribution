@@ -2,16 +2,14 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteImportDataRequest extends StObject {
   
   /**
     * The IDs for the import tasks that you want to delete.
     */
-  var importTaskIds: ToDeleteIdentifierList = js.native
+  var importTaskIds: ToDeleteIdentifierList
 }
 object BatchDeleteImportDataRequest {
   

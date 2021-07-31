@@ -2,7 +2,6 @@ package typings.jqueryBackstretch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryBackStretch {
@@ -56,7 +55,6 @@ object JQueryBackStretch {
     def show(newIndex: Double): BackStretch = js.native
   }
   
-  @js.native
   trait BackStretchOptions extends StObject {
     
     /**
@@ -64,26 +62,26 @@ object JQueryBackStretch {
       * width/height of the window. This parameter controls whether or not we
       * center the image on the X axis to account for the discrepancy.
       */
-    var centeredX: js.UndefOr[Boolean] = js.native
+    var centeredX: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter controls whether or not we center the image on the Y axis
       * to account for the aforementioned discrepancy.
       */
-    var centeredY: js.UndefOr[Boolean] = js.native
+    var centeredY: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is the speed at which the image will fade in. Integers in
       * milliseconds are accepted, as well as standard jQuery speed strings
       * (slow, normal, fast).
       */
-    var duration: js.UndefOr[Double | String] = js.native
+    var duration: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The amount of time in between slides, when using Backstretch as a
       * slideshow, expressed as the number of milliseconds.
       */
-    var fade: js.UndefOr[Double] = js.native
+    var fade: js.UndefOr[Double] = js.undefined
   }
   object BackStretchOptions {
     

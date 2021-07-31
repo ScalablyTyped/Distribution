@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBLEConnectionStateChangeCallbackResult extends StObject {
   
   /** 是否处于已连接状态 */
-  var connected: Boolean = js.native
+  var connected: Boolean
   
   /** 蓝牙设备ID */
-  var deviceId: String = js.native
+  var deviceId: String
 }
 object OnBLEConnectionStateChangeCallbackResult {
   

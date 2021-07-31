@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectCountByEncryptionType extends StObject {
   
   /**
     * The total number of objects that are encrypted using a customer-managed key. The objects use customer-provided server-side (SSE-C) encryption.
     */
-  var customerManaged: js.UndefOr[long] = js.native
+  var customerManaged: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of objects that are encrypted using an AWS Key Management Service (AWS KMS) customer master key (CMK). The objects use AWS managed AWS KMS (AWS-KMS) encryption or customer managed AWS KMS (SSE-KMS) encryption.
     */
-  var kmsManaged: js.UndefOr[long] = js.native
+  var kmsManaged: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of objects that are encrypted using an Amazon S3 managed key. The objects use Amazon S3 managed (SSE-S3) encryption.
     */
-  var s3Managed: js.UndefOr[long] = js.native
+  var s3Managed: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of objects that aren't encrypted or use client-side encryption.
     */
-  var unencrypted: js.UndefOr[long] = js.native
+  var unencrypted: js.UndefOr[long] = js.undefined
 }
 object ObjectCountByEncryptionType {
   

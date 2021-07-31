@@ -6,30 +6,30 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("check-sum", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     path: String,
     hashes: Hashes,
     callback: js.Function1[/* error */ js.UndefOr[ChecksumError | Error], Unit]
-  ): js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
+  ): js.Function1[/* fn */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], hashes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fn */ js.Function0[Unit], Unit]]
+  @scala.inline
+  def apply(stream: Readable, hashes: Hashes, callback: js.Function1[/* error */ ChecksumError | js.Any, Unit]): js.Function1[/* fn */ js.Function0[Unit], Unit] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], hashes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* fn */ js.Function0[Unit], Unit]]
+  
   @JSImport("check-sum", JSImport.Namespace)
   @js.native
-  def apply(stream: Readable, hashes: Hashes, callback: js.Function1[/* error */ ChecksumError | js.Any, Unit]): js.Function1[/* fn */ js.Function0[Unit], Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ChecksumError extends StObject {
     
-    var actual: String = js.native
+    var actual: String
     
-    var algorithm: String = js.native
+    var algorithm: String
     
-    var expected: String = js.native
+    var expected: String
   }
   object ChecksumError {
     

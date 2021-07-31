@@ -2,7 +2,6 @@ package typings.hashtable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,7 +15,7 @@ trait IHashtable[TKey, TValue] extends StObject {
   
   def each(callback: js.Function2[/* key */ TKey, /* value */ TValue, Unit]): Unit = js.native
   
-  def entries(): js.Array[js.Array[_]] = js.native
+  def entries(): js.Array[js.Array[js.Any]] = js.native
   
   def equals(hashtable: IHashtable[TKey, TValue]): Boolean = js.native
   

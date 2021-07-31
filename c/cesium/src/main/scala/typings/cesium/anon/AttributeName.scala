@@ -2,21 +2,19 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeName extends StObject {
   
-  var attributeName: String = js.native
+  var attributeName: String
   
-  var fragmentShaderSource: js.UndefOr[String] = js.native
+  var fragmentShaderSource: js.UndefOr[String] = js.undefined
   
-  var glslDatatype: js.UndefOr[String] = js.native
+  var glslDatatype: js.UndefOr[String] = js.undefined
   
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.native
+  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
   
-  var vertexShaderSource: js.UndefOr[String] = js.native
+  var vertexShaderSource: js.UndefOr[String] = js.undefined
 }
 object AttributeName {
   

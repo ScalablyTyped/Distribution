@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEventsQuickadd extends StandardParameters {
+trait ParamsResourceEventsQuickadd
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier. To retrieve calendar IDs call the calendarList.list
     * method. If you want to access the primary calendar of the currently
     * logged in user, use the "primary" keyword.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Please use sendUpdates instead.  Whether to send
@@ -30,18 +30,18 @@ trait ParamsResourceEventsQuickadd extends StandardParameters {
     * might still be sent even if you set the value to false. The default is
     * false.
     */
-  var sendNotifications: js.UndefOr[Boolean] = js.native
+  var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Guests who should receive notifications about the creation of the new
     * event.
     */
-  var sendUpdates: js.UndefOr[String] = js.native
+  var sendUpdates: js.UndefOr[String] = js.undefined
   
   /**
     * The text describing the event to be created.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEventsQuickadd {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assessmentTargetMod {
@@ -24,7 +23,7 @@ object assessmentTargetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AssessmentTargetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AssessmentTargetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -45,6 +44,10 @@ object assessmentTargetMod {
   /* static members */
   object AssessmentTarget {
     
+    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AssessmentTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -54,40 +57,34 @@ object assessmentTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AssessmentTarget = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AssessmentTarget = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssessmentTargetState): AssessmentTarget = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): AssessmentTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AssessmentTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AssessmentTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AssessmentTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssessmentTargetState): AssessmentTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AssessmentTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssessmentTargetState, opts: CustomResourceOptions): AssessmentTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTarget]
     
     /**
       * Returns true if the given object is an instance of AssessmentTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/assessmentTarget.AssessmentTarget */ Boolean]
   }
   
-  @js.native
   trait AssessmentTargetArgs extends StObject {
     
     /**
       * The name of the assessment target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.
       */
-    val resourceGroupArn: js.UndefOr[Input[String]] = js.native
+    val resourceGroupArn: js.UndefOr[Input[String]] = js.undefined
   }
   object AssessmentTargetArgs {
     
@@ -114,23 +111,22 @@ object assessmentTargetMod {
     }
   }
   
-  @js.native
   trait AssessmentTargetState extends StObject {
     
     /**
       * The target assessment ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the assessment target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.
       */
-    val resourceGroupArn: js.UndefOr[Input[String]] = js.native
+    val resourceGroupArn: js.UndefOr[Input[String]] = js.undefined
   }
   object AssessmentTargetState {
     

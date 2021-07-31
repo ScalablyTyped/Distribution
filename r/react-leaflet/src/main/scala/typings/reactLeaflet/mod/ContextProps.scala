@@ -2,13 +2,11 @@ package typings.reactLeaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextProps extends StObject {
   
-  var leaflet: js.UndefOr[LeafletContext] = js.native
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
 }
 object ContextProps {
   

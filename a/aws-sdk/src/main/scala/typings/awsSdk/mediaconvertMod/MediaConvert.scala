@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait MediaConvert extends Service {
   ): Request[CancelJobResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_MediaConvert: ConfigBase with ClientConfiguration = js.native
+  var config_MediaConvert: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Create a new transcoding job. For information about jobs and job settings, see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html

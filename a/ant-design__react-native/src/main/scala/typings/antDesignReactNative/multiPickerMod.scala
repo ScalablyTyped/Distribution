@@ -7,7 +7,6 @@ import typings.antDesignReactNative.multiPickerPropsMod.MultiPickerProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiPickerMod {
@@ -15,7 +14,9 @@ object multiPickerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ant-design/react-native/lib/picker/MultiPicker", JSImport.Default)
   @js.native
-  class default protected () extends ComponentDidCatch {
+  class default protected ()
+    extends StObject
+       with ComponentDidCatch {
     def this(props: Readonlydefault) = this()
     def this(props: MultiPickerProps) = this()
     def this(props: MultiPickerProps, context: js.Any) = this()
@@ -39,10 +40,9 @@ object multiPickerMod {
     def defaultProps_=(x: OnValueChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait MultiPickerProp extends StObject {
     
-    var getValue: js.Function = js.native
+    var getValue: js.Function
   }
   object MultiPickerProp {
     

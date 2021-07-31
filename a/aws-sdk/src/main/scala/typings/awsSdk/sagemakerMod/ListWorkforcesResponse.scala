@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListWorkforcesResponse extends StObject {
   
   /**
     * A token to resume pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * A list containing information about your workforce.
     */
-  var Workforces: typings.awsSdk.sagemakerMod.Workforces = js.native
+  var Workforces: typings.awsSdk.sagemakerMod.Workforces
 }
 object ListWorkforcesResponse {
   

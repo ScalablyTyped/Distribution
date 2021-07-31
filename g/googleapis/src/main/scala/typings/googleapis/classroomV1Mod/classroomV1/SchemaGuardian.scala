@@ -2,36 +2,34 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Association between a student and a guardian of that student. The guardian
   * may receive information about the student&#39;s course work.
   */
-@js.native
 trait SchemaGuardian extends StObject {
   
   /**
     * Identifier for the guardian.
     */
-  var guardianId: js.UndefOr[String] = js.native
+  var guardianId: js.UndefOr[String] = js.undefined
   
   /**
     * User profile for the guardian.
     */
-  var guardianProfile: js.UndefOr[SchemaUserProfile] = js.native
+  var guardianProfile: js.UndefOr[SchemaUserProfile] = js.undefined
   
   /**
     * The email address to which the initial guardian invitation was sent. This
     * field is only visible to domain administrators.
     */
-  var invitedEmailAddress: js.UndefOr[String] = js.native
+  var invitedEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the student to whom the guardian relationship applies.
     */
-  var studentId: js.UndefOr[String] = js.native
+  var studentId: js.UndefOr[String] = js.undefined
 }
 object SchemaGuardian {
   

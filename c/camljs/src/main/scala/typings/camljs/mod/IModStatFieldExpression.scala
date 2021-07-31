@@ -2,26 +2,24 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IModStatFieldExpression extends StObject {
   
   /** Checks whether the value of the field is Approved - same as ModStatId.EqualTo(0) */
-  def IsApproved(): IExpression = js.native
+  def IsApproved(): IExpression
   
   /** Checks whether the value of the field is Pending - same as ModStatId.EqualTo(2) */
-  def IsPending(): IExpression = js.native
+  def IsPending(): IExpression
   
   /** Checks whether the value of the field is Rejected - same as ModStatId.EqualTo(1) */
-  def IsRejected(): IExpression = js.native
+  def IsRejected(): IExpression
   
   /** Represents moderation status ID. */
-  def ModStatId(): INumberFieldExpression = js.native
+  def ModStatId(): INumberFieldExpression
   
   /** Represents moderation status as localized text. In most cases it is better to use ModStatId in the queries instead of ValueAsText. */
-  def ValueAsText(): ITextFieldExpression = js.native
+  def ValueAsText(): ITextFieldExpression
 }
 object IModStatFieldExpression {
   

@@ -2,31 +2,31 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxDedenter extends SyntaxRewriter {
+trait SyntaxDedenter
+  extends StObject
+     with SyntaxRewriter {
   
-  /* private */ def abort(): js.Any = js.native
+  /* private */ def abort(): js.Any
   
-  /* private */ def dedentMultiLineComment(trivia: js.Any): js.Any = js.native
+  /* private */ def dedentMultiLineComment(trivia: js.Any): js.Any
   
-  /* private */ def dedentSegment(segment: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
+  /* private */ def dedentSegment(segment: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any
   
-  /* private */ def dedentTriviaList(triviaList: js.Any): js.Any = js.native
+  /* private */ def dedentTriviaList(triviaList: js.Any): js.Any
   
-  /* private */ def dedentWhitespace(trivia: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
+  /* private */ def dedentWhitespace(trivia: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any
   
-  var dedentationAmount: js.Any = js.native
+  var dedentationAmount: js.Any
   
-  /* private */ def isAborted(): js.Any = js.native
+  /* private */ def isAborted(): js.Any
   
-  var lastTriviaWasNewLine: js.Any = js.native
+  var lastTriviaWasNewLine: js.Any
   
-  var minimumIndent: js.Any = js.native
+  var minimumIndent: js.Any
   
-  var options: js.Any = js.native
+  var options: js.Any
 }
 object SyntaxDedenter {
   

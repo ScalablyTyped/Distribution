@@ -2,21 +2,19 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var field: String = js.native
+  var field: String
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Template {
   

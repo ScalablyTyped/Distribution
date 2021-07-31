@@ -2,21 +2,19 @@ package typings.nodeSnap7.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiVarRead extends StObject {
   
-  var Amount: Double = js.native
+  var Amount: Double
   
-  var Area: typings.nodeSnap7.mod.Area = js.native
+  var Area: typings.nodeSnap7.mod.Area
   
-  var DBNumber: js.UndefOr[Double] = js.native
+  var DBNumber: js.UndefOr[Double] = js.undefined
   
-  var Start: Double = js.native
+  var Start: Double
   
-  var WordLen: typings.nodeSnap7.mod.WordLen = js.native
+  var WordLen: typings.nodeSnap7.mod.WordLen
 }
 object MultiVarRead {
   

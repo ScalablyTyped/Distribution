@@ -5,43 +5,56 @@ import typings.uirouterCore.resolveInterfaceMod._PolicyAsync
 import typings.uirouterCore.urlInterfaceMod.UrlRuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uirouterCoreStrings {
   
   @js.native
-  sealed trait EAGER extends PolicyWhen
+  sealed trait EAGER
+    extends StObject
+       with PolicyWhen
   @scala.inline
   def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
   
   @js.native
-  sealed trait LAZY extends PolicyWhen
+  sealed trait LAZY
+    extends StObject
+       with PolicyWhen
   @scala.inline
   def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
   
   @js.native
-  sealed trait NOWAIT extends _PolicyAsync
+  sealed trait NOWAIT
+    extends StObject
+       with _PolicyAsync
   @scala.inline
   def NOWAIT: NOWAIT = "NOWAIT".asInstanceOf[NOWAIT]
   
   @js.native
-  sealed trait OTHER extends UrlRuleType
+  sealed trait OTHER
+    extends StObject
+       with UrlRuleType
   @scala.inline
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
-  sealed trait RAW extends UrlRuleType
+  sealed trait RAW
+    extends StObject
+       with UrlRuleType
   @scala.inline
   def RAW: RAW = "RAW".asInstanceOf[RAW]
   
   @js.native
-  sealed trait REGEXP extends UrlRuleType
+  sealed trait REGEXP
+    extends StObject
+       with UrlRuleType
   @scala.inline
   def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
   
   @js.native
-  sealed trait STATE extends UrlRuleType
+  sealed trait STATE
+    extends StObject
+       with UrlRuleType
   @scala.inline
   def STATE: STATE = "STATE".asInstanceOf[STATE]
   
@@ -56,12 +69,16 @@ object uirouterCoreStrings {
   def SameAsPending: SameAsPending = "SameAsPending".asInstanceOf[SameAsPending]
   
   @js.native
-  sealed trait URLMATCHER extends UrlRuleType
+  sealed trait URLMATCHER
+    extends StObject
+       with UrlRuleType
   @scala.inline
   def URLMATCHER: URLMATCHER = "URLMATCHER".asInstanceOf[URLMATCHER]
   
   @js.native
-  sealed trait WAIT extends _PolicyAsync
+  sealed trait WAIT
+    extends StObject
+       with _PolicyAsync
   @scala.inline
   def WAIT: WAIT = "WAIT".asInstanceOf[WAIT]
   

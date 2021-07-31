@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ManualFocusDistance extends StObject {
   
   /** Focus to the hyperfocal distance. */
   @js.native
-  sealed trait hyperfocal extends ManualFocusDistance
+  sealed trait hyperfocal
+    extends StObject
+       with ManualFocusDistance
   
   /** Focus to infinity. */
   @js.native
-  sealed trait infinity extends ManualFocusDistance
+  sealed trait infinity
+    extends StObject
+       with ManualFocusDistance
   
   /** Focus to the nearest distance. */
   @js.native
-  sealed trait nearest extends ManualFocusDistance
+  sealed trait nearest
+    extends StObject
+       with ManualFocusDistance
 }

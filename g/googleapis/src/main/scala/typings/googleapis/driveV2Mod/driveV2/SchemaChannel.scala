@@ -3,68 +3,66 @@ package typings.googleapis.driveV2Mod.driveV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An notification channel used to watch for resource changes.
   */
-@js.native
 trait SchemaChannel extends StObject {
   
   /**
     * The address where notifications are delivered for this channel.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time of notification channel expiration, expressed as a Unix
     * timestamp, in milliseconds. Optional.
     */
-  var expiration: js.UndefOr[String] = js.native
+  var expiration: js.UndefOr[String] = js.undefined
   
   /**
     * A UUID or similar unique string that identifies this channel.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies this as a notification channel used to watch for changes to a
     * resource. Value: the fixed string &quot;api#channel&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Additional parameters controlling delivery channel behavior. Optional.
     */
-  var params: js.UndefOr[StringDictionary[String]] = js.native
+  var params: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A Boolean value to indicate whether payload is wanted. Optional.
     */
-  var payload: js.UndefOr[Boolean] = js.native
+  var payload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An opaque ID that identifies the resource being watched on this channel.
     * Stable across different API versions.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /**
     * A version-specific identifier for the watched resource.
     */
-  var resourceUri: js.UndefOr[String] = js.native
+  var resourceUri: js.UndefOr[String] = js.undefined
   
   /**
     * An arbitrary string delivered to the target address with each
     * notification delivered over this channel. Optional.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /**
     * The type of delivery mechanism used for this channel.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaChannel {
   

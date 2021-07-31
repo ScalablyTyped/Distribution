@@ -14,7 +14,6 @@ import typings.storybookComponents.anon.PickDetailedHTMLPropsHTML
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -57,12 +56,11 @@ object tabsMod {
     def defaultProps_=(x: TabsStateProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ContentProps extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
   }
   object ContentProps {
     
@@ -91,14 +89,13 @@ object tabsMod {
   
   type FuncChildren = js.Function0[Unit]
   
-  @js.native
   trait TabWrapperProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var render: js.UndefOr[js.Function0[Element]] = js.native
+    var render: js.UndefOr[js.Function0[Element]] = js.undefined
   }
   object TabWrapperProps {
     
@@ -128,22 +125,21 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var actions: js.UndefOr[OnSelect with (Record[String, _])] = js.native
+    var actions: js.UndefOr[OnSelect & (Record[String, js.Any])] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
-    var tools: js.UndefOr[ReactNode] = js.native
+    var tools: js.UndefOr[ReactNode] = js.undefined
   }
   object TabsProps {
     
@@ -163,7 +159,7 @@ object tabsMod {
       def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
       @scala.inline
-      def setActions(value: OnSelect with (Record[String, _])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      def setActions(value: OnSelect & (Record[String, js.Any])): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
@@ -200,18 +196,17 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabsStateProps extends StObject {
     
-    var absolute: Boolean = js.native
+    var absolute: Boolean
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var bordered: Boolean = js.native
+    var bordered: Boolean
     
-    var children: js.Array[ReactNode | FuncChildren] = js.native
+    var children: js.Array[ReactNode | FuncChildren]
     
-    var initial: String = js.native
+    var initial: String
   }
   object TabsStateProps {
     
@@ -250,10 +245,9 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait TabsStateState extends StObject {
     
-    var selected: String = js.native
+    var selected: String
   }
   object TabsStateState {
     
@@ -271,10 +265,9 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait VisuallyHiddenProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
   }
   object VisuallyHiddenProps {
     
@@ -295,12 +288,11 @@ object tabsMod {
     }
   }
   
-  @js.native
   trait WrapperProps extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
   }
   object WrapperProps {
     

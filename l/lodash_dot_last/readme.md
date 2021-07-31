@@ -11,8 +11,8 @@ The modern build of lodash’s `_.last` as a module.
 | Full name          | lodash.last |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
 | # releases         | 0 |
-| # dependents       | 99 |
-| # downloads        | 17402313 |
+| # dependents       | 101 |
+| # downloads        | 14527022 |
 | # stars            | 0 |
 
 ## Links

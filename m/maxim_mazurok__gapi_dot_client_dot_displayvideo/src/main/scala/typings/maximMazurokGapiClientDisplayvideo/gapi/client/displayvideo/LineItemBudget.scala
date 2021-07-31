@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineItemBudget extends StObject {
   
   /**
     * Required. The type of the budget allocation. `LINE_ITEM_BUDGET_ALLOCATION_TYPE_AUTOMATIC` is only applicable when automatic budget allocation is enabled for the parent insertion
     * order.
     */
-  var budgetAllocationType: js.UndefOr[String] = js.native
+  var budgetAllocationType: js.UndefOr[String] = js.undefined
   
   /** Output only. The budget unit specifies whether the budget is currency based or impression based. This value is inherited from the parent insertion order. */
-  var budgetUnit: js.UndefOr[String] = js.native
+  var budgetUnit: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum budget amount the line item will spend. Must be greater than 0. When budget_allocation_type is: * `LINE_ITEM_BUDGET_ALLOCATION_TYPE_AUTOMATIC`, this field is immutable
@@ -23,7 +21,7 @@ trait LineItemBudget extends StObject {
     * the advertiser's currency. For example, 1500000 represents 1.5 standard units of the currency. - `BUDGET_UNIT_IMPRESSIONS`, this field represents the maximum number of impressions
     * to serve. * `LINE_ITEM_BUDGET_ALLOCATION_TYPE_UNLIMITED`, this field is not applicable and will be ignored by the system.
     */
-  var maxAmount: js.UndefOr[String] = js.native
+  var maxAmount: js.UndefOr[String] = js.undefined
 }
 object LineItemBudget {
   

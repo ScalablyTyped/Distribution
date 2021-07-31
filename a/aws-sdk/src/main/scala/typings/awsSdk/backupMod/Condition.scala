@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * The key in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "ec2:ResourceTag/Department" is the key.
     */
-  var ConditionKey: typings.awsSdk.backupMod.ConditionKey = js.native
+  var ConditionKey: typings.awsSdk.backupMod.ConditionKey
   
   /**
     * An operation, such as StringEquals, that is applied to a key-value pair used to filter resources in a selection.
     */
-  var ConditionType: typings.awsSdk.backupMod.ConditionType = js.native
+  var ConditionType: typings.awsSdk.backupMod.ConditionType
   
   /**
     * The value in a key-value pair. For example, in "ec2:ResourceTag/Department": "accounting", "accounting" is the value.
     */
-  var ConditionValue: typings.awsSdk.backupMod.ConditionValue = js.native
+  var ConditionValue: typings.awsSdk.backupMod.ConditionValue
 }
 object Condition {
   

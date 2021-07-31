@@ -2,81 +2,79 @@ package typings.seamless
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Seamless {
   
   type Callback = js.Function2[/* data */ js.Any, /* event */ js.Any, js.Any | Boolean | Unit]
   
-  @js.native
   trait ConnectOptions extends StObject {
     
     /**
       * Allow appended styles to be injected.
       * @default false
       */
-    var allowAppendedStyleInjection: js.UndefOr[Boolean] = js.native
+    var allowAppendedStyleInjection: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  If this page should allow injected styles.
       *  @default false
       */
-    var allowStyleInjection: js.UndefOr[Boolean] = js.native
+    var allowStyleInjection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The container for the main content on the page which determines the height of the page.
       * @default 'body'
       */
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     /**
       * The text to place after the link when the cookie test fails.
       * @default ' to open in a separate window.'
       */
-    var cookieFallbackAfterMsg: js.UndefOr[String] = js.native
+    var cookieFallbackAfterMsg: js.UndefOr[String] = js.undefined
     
     /**
       * The text to place inside the link to have them open a new window if the cookie test fails.
       * @default 'Click Here'
       */
-    var cookieFallbackLinkMsg: js.UndefOr[String] = js.native
+    var cookieFallbackLinkMsg: js.UndefOr[String] = js.undefined
     
     /**
       * The message to show if the cookie test fails.
       * @default 'Your browser requires this page to be opened in a separate window.'
       */
-    var cookieFallbackMsg: js.UndefOr[String] = js.native
+    var cookieFallbackMsg: js.UndefOr[String] = js.undefined
     
     /**
       *  Called when the parent connects to this iframe.
       *  @default null
       */
-    var onConnect: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /**
       *  Callback that is called when an update is triggered to the parent.
       *  @default null
       */
-    var onUpdate: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /**
       * If the child page requires cookies (See Child iFrame Cookie Problem section)
       * @default false
       */
-    var requireCookies: js.UndefOr[Boolean] = js.native
+    var requireCookies: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The milliseconds that an update is created from the child to the parent.
       * @default 200
       */
-    var update: js.UndefOr[Double] = js.native
+    var update: js.UndefOr[Double] = js.undefined
     
     /**
       * The url of the parent page to connect to.
       * @default ''
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ConnectOptions {
     
@@ -164,7 +162,7 @@ object Seamless {
     
     var id: Double = js.native
     
-    var queue: js.Array[_] = js.native
+    var queue: js.Array[js.Any] = js.native
     
     def receive(callback: Callback): Unit = js.native
     def receive(`type`: String, callback: Callback): Unit = js.native
@@ -178,98 +176,97 @@ object Seamless {
     var url: String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * If the fallback functionality is enabled.
       * @default false
       */
-    var fallback: js.UndefOr[Boolean] = js.native
+    var fallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text to add after the fallbackLinkText link.
       * @default 'to open in a separate window.'
       */
-    var fallbackLinkAfter: js.UndefOr[String] = js.native
+    var fallbackLinkAfter: js.UndefOr[String] = js.undefined
     
     /**
       * An array of string styles to add to the fallback link on hover.
       * @default [ 'background-color:#ebebeb', 'border-color:#adadad' ]
       */
-    var fallbackLinkHoverStyles: js.UndefOr[js.Array[String]] = js.native
+    var fallbackLinkHoverStyles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An array of string styles to add to the fallback link.
       * @default [ 'display: inline-block', 'color: #333', 'border: 1px solid #ccc', 'background-color: #fff', 'padding: 5px 10px', 'text-decoration: none', 'font-size: 12px', 'line-height: 1.5', 'border-radius: 6px', 'font-weight: 400', 'cursor: pointer', '-webkit-user-select: none', '-moz-user-select: none', '-ms-user-select: none', 'user-select: none' ]
       */
-    var fallbackLinkStyles: js.UndefOr[js.Array[String]] = js.native
+    var fallbackLinkStyles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The string to show within the 'Click here' link to open the fallback window.
       * @default 'Click Here'
       */
-    var fallbackLinkText: js.UndefOr[String] = js.native
+    var fallbackLinkText: js.UndefOr[String] = js.undefined
     
     /**
       * Additional query params to attach to the fallback window when it is opened.
       * @default ''
       */
-    var fallbackParams: js.UndefOr[String] = js.native
+    var fallbackParams: js.UndefOr[String] = js.undefined
     
     /**
       * An array of string styles to add to the fallback text when something bad happens.
       * @default [ 'padding: 15px', 'border: 1px solid transparent', 'border-radius: 4px', 'color: #3a87ad', 'background-color: #d9edf7', 'border-color: #bce8f1' ]
       */
-    var fallbackStyles: js.UndefOr[js.Array[String]] = js.native
+    var fallbackStyles: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A message to show below the child iframe to offer assistance if they are having problems.
       * @default ''
       */
-    var fallbackText: js.UndefOr[String] = js.native
+    var fallbackText: js.UndefOr[String] = js.undefined
     
     /**
       * The height of the window that is opened up for the fallback.
       * @default 800
       */
-    var fallbackWindowHeight: js.UndefOr[Double] = js.native
+    var fallbackWindowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the window that is opened up for the fallback.
       * @default 960
       */
-    var fallbackWindowWidth: js.UndefOr[Double] = js.native
+    var fallbackWindowWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The text to show when the child page is loading.
       * @default 'Loading ...'
       */
-    var loading: js.UndefOr[String] = js.native
+    var loading: js.UndefOr[String] = js.undefined
     
     /**
       * Called when a child iframe has finished connecting.
       * @default null
       */
-    var onConnect: js.UndefOr[(js.Function1[/* data */ js.Any, Unit]) | Null] = js.native
+    var onConnect: js.UndefOr[(js.Function1[/* data */ js.Any, Unit]) | Null] = js.undefined
     
     /**
       * Show or not the loading indicator.
       * @default true
       */
-    var showLoadingIndicator: js.UndefOr[Boolean] = js.native
+    var showLoadingIndicator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The url of the spinner GIF that is shown when the child page is loading.
       * @default 'http://www.travistidwell.com/seamless.js/src/loader.gif'
       */
-    var spinner: js.UndefOr[String] = js.native
+    var spinner: js.UndefOr[String] = js.undefined
     
     /**
       * The styles to inject into the child page.
       * @default []
       */
-    var styles: js.UndefOr[js.Array[String]] = js.native
+    var styles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -390,7 +387,9 @@ object Seamless {
   }
   
   @js.native
-  trait SeamlessJQuery extends JQuery {
+  trait SeamlessJQuery
+    extends StObject
+       with JQuery {
     
     var connection: Connection = js.native
     
@@ -408,12 +407,11 @@ object Seamless {
     def send(data: js.Any): Unit = js.native
   }
   
-  @js.native
   trait Static extends StObject {
     
-    def connect(options: ConnectOptions): Connection = js.native
+    def connect(options: ConnectOptions): Connection
     
-    var options: ConnectOptions = js.native
+    var options: ConnectOptions
   }
   object Static {
     

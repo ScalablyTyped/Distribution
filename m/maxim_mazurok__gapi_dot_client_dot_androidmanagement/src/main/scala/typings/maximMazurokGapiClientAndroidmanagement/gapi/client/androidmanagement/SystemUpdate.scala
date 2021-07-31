@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemUpdate extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait SystemUpdate extends StObject {
     * inclusive. If this value is less than start_minutes, then the maintenance window spans midnight. If the maintenance window specified is smaller than 30 minutes, the actual window is
     * extended to 30 minutes beyond the start time.
     */
-  var endMinutes: js.UndefOr[Double] = js.native
+  var endMinutes: js.UndefOr[Double] = js.undefined
   
   /**
     * An annually repeating time period in which over-the-air (OTA) system updates are postponed to freeze the OS version running on a device. To prevent freezing the device indefinitely,
     * each freeze period must be separated by at least 60 days.
     */
-  var freezePeriods: js.UndefOr[js.Array[FreezePeriod]] = js.native
+  var freezePeriods: js.UndefOr[js.Array[FreezePeriod]] = js.undefined
   
   /**
     * If the type is WINDOWED, the start of the maintenance window, measured as the number of minutes after midnight in the device's local time. This value must be between 0 and 1439,
     * inclusive.
     */
-  var startMinutes: js.UndefOr[Double] = js.native
+  var startMinutes: js.UndefOr[Double] = js.undefined
   
   /** The type of system update to configure. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SystemUpdate {
   

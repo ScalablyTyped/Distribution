@@ -7,21 +7,21 @@ import typings.requestPromise.mod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
-  @js.native
-  trait RequestError extends Error {
+  trait RequestError
+    extends StObject
+       with Error {
     
-    var cause: js.Any = js.native
+    var cause: js.Any
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var options: Options = js.native
+    var options: Options
     
-    var response: IncomingMessage = js.native
+    var response: IncomingMessage
   }
   object RequestError {
     
@@ -49,20 +49,41 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "RequestError")
   @js.native
-  class RequestErrorCls protected () extends RequestError {
+  class RequestErrorCls protected ()
+    extends StObject
+       with RequestError {
     def this(cause: js.Any, options: Options, response: IncomingMessage) = this()
-  }
-  
-  @js.native
-  trait StatusCodeError extends Error {
     
+    /* CompleteClass */
+    var cause: js.Any = js.native
+    
+    /* CompleteClass */
     var error: js.Any = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
     var options: Options = js.native
     
+    /* CompleteClass */
     var response: IncomingMessage = js.native
+  }
+  
+  trait StatusCodeError
+    extends StObject
+       with Error {
     
-    var statusCode: Double = js.native
+    var error: js.Any
+    
+    var options: Options
+    
+    var response: IncomingMessage
+    
+    var statusCode: Double
   }
   object StatusCodeError {
     
@@ -90,20 +111,41 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "StatusCodeError")
   @js.native
-  class StatusCodeErrorCls protected () extends StatusCodeError {
+  class StatusCodeErrorCls protected ()
+    extends StObject
+       with StatusCodeError {
     def this(statusCode: Double, body: js.Any, options: Options, response: IncomingMessage) = this()
-  }
-  
-  @js.native
-  trait TransformError extends Error {
     
-    var cause: js.Any = js.native
-    
+    /* CompleteClass */
     var error: js.Any = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
     var options: Options = js.native
     
+    /* CompleteClass */
     var response: IncomingMessage = js.native
+    
+    /* CompleteClass */
+    var statusCode: Double = js.native
+  }
+  
+  trait TransformError
+    extends StObject
+       with Error {
+    
+    var cause: js.Any
+    
+    var error: js.Any
+    
+    var options: Options
+    
+    var response: IncomingMessage
   }
   object TransformError {
     
@@ -131,13 +173,34 @@ object errorsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("request-promise/errors", "TransformError")
   @js.native
-  class TransformErrorCls protected () extends TransformError {
+  class TransformErrorCls protected ()
+    extends StObject
+       with TransformError {
     def this(cause: js.Any, options: Options, response: IncomingMessage) = this()
+    
+    /* CompleteClass */
+    var cause: js.Any = js.native
+    
+    /* CompleteClass */
+    var error: js.Any = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
+    
+    /* CompleteClass */
+    var response: IncomingMessage = js.native
   }
   
   @js.native
   trait RequestErrorConstructor
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           /* cause */ js.Any, 
           /* options */ Options, 
           /* response */ IncomingMessage, 
@@ -149,7 +212,8 @@ object errorsMod {
   
   @js.native
   trait StatusCodeErrorConstructor
-    extends Error
+    extends StObject
+       with Error
        with Instantiable4[
           /* statusCode */ Double, 
           /* body */ js.Any, 
@@ -163,7 +227,8 @@ object errorsMod {
   
   @js.native
   trait TransformErrorConstructor
-    extends Error
+    extends StObject
+       with Error
        with Instantiable3[
           /* cause */ js.Any, 
           /* options */ Options, 

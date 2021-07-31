@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudsearch/v1", "cloudsearch_v1.Resource$Stats")
@@ -37,7 +36,7 @@ class ResourceStats protected () extends StObject {
     */
   def getIndex(): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(callback: BodyResponseCallback[SchemaGetCustomerIndexStatsResponse]): Unit = js.native
-  def getIndex(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
+  def getIndex(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(params: ParamsResourceStatsGetindex): GaxiosPromise[SchemaGetCustomerIndexStatsResponse] = js.native
   def getIndex(
     params: ParamsResourceStatsGetindex,

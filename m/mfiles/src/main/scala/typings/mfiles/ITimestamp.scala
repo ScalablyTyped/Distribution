@@ -2,35 +2,33 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimestamp extends StObject {
   
-  def Clone(): ITimestamp = js.native
+  def Clone(): ITimestamp
   
-  var Day: Double = js.native
+  var Day: Double
   
-  var Fraction: Double = js.native
+  var Fraction: Double
   
-  def GetValue(): js.Any = js.native
+  def GetValue(): js.Any
   
-  var Hour: Double = js.native
+  var Hour: Double
   
-  def LocalTimeToUtc(): ITimestamp = js.native
+  def LocalTimeToUtc(): ITimestamp
   
-  var Minute: Double = js.native
+  var Minute: Double
   
-  var Month: Double = js.native
+  var Month: Double
   
-  var Second: Double = js.native
+  var Second: Double
   
-  def SetValue(Value: js.Any): Unit = js.native
+  def SetValue(Value: js.Any): Unit
   
-  def UtcToLocalTime(): ITimestamp = js.native
+  def UtcToLocalTime(): ITimestamp
   
-  var Year: Double = js.native
+  var Year: Double
 }
 object ITimestamp {
   

@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.anon.Resolution
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,11 +48,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "RenderTexture")
 @js.native
 class RenderTexture protected ()
-  extends typings.pixiJs.PIXI.RenderTexture {
+  extends StObject
+     with typings.pixiJs.PIXI.RenderTexture {
   def this(baseRenderTexture: typings.pixiJs.PIXI.BaseRenderTexture) = this()
   def this(baseRenderTexture: typings.pixiJs.PIXI.BaseRenderTexture, frame: typings.pixiJs.PIXI.Rectangle) = this()
 }
 object RenderTexture {
+  
+  @JSImport("pixi.js", "RenderTexture")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A short hand way of creating a render texture.
@@ -66,10 +70,8 @@ object RenderTexture {
     * @return {PIXI.RenderTexture} The new render texture
     */
   /* static member */
-  @JSImport("pixi.js", "RenderTexture.create")
-  @js.native
-  def create(): typings.pixiJs.PIXI.RenderTexture = js.native
-  @JSImport("pixi.js", "RenderTexture.create")
-  @js.native
-  def create(options: Resolution): typings.pixiJs.PIXI.RenderTexture = js.native
+  @scala.inline
+  def create(): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
+  @scala.inline
+  def create(options: Resolution): typings.pixiJs.PIXI.RenderTexture = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.RenderTexture]
 }

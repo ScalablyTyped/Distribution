@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServerLoginAccountOperations extends StObject {
   
-  def AddLoginAccount(LoginAccount: ILoginAccount, Password: String): Unit = js.native
+  def AddLoginAccount(LoginAccount: ILoginAccount, Password: String): Unit
   
-  def ForceLogout(AccountNames: IStrings): Unit = js.native
+  def ForceLogout(AccountNames: IStrings): Unit
   
-  def GetLoginAccount(AccountName: String): ILoginAccount = js.native
+  def GetLoginAccount(AccountName: String): ILoginAccount
   
-  def GetLoginAccounts(): ILoginAccounts = js.native
+  def GetLoginAccounts(): ILoginAccounts
   
-  def GetLoginAccountsWithSessions(): ILoginAccounts = js.native
+  def GetLoginAccountsWithSessions(): ILoginAccounts
   
-  def GetPersonalInformationFromDomain(AccountName: String): ILoginAccountPersonalInformation = js.native
+  def GetPersonalInformationFromDomain(AccountName: String): ILoginAccountPersonalInformation
   
-  def ModifyLoginAccount(LoginAccount: ILoginAccount): Unit = js.native
+  def ModifyLoginAccount(LoginAccount: ILoginAccount): Unit
   
-  def RemoveLoginAccount(AccountName: String): Unit = js.native
+  def RemoveLoginAccount(AccountName: String): Unit
   
-  def UpdateLoginPassword(AccountName: String, NewPassword: String): Unit = js.native
+  def UpdateLoginPassword(AccountName: String, NewPassword: String): Unit
 }
 object IServerLoginAccountOperations {
   

@@ -6,15 +6,13 @@ import typings.remarkable.libMod.InlineParsingRule
 import typings.remarkable.rulerMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var ruler: ^[BlockParsingRule] = js.native
+    var ruler: ^[BlockParsingRule]
   }
   object `0` {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var ruler: ^[CoreParsingRule] = js.native
+    var ruler: ^[CoreParsingRule]
   }
   object `1` {
     
@@ -53,10 +50,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ruler extends StObject {
     
-    var ruler: ^[InlineParsingRule] = js.native
+    var ruler: ^[InlineParsingRule]
   }
   object Ruler {
     
@@ -74,10 +70,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Rules extends StObject {
     
-    var rules: typings.remarkable.libMod.Rules = js.native
+    var rules: typings.remarkable.libMod.Rules
   }
   object Rules {
     

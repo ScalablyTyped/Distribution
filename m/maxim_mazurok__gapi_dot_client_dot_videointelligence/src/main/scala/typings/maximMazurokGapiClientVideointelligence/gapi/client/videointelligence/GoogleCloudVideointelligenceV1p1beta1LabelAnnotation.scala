@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p1beta1LabelAnnotation extends StObject {
   
   /**
     * Common categories for the detected entity. For example, when the label is `Terrier`, the category is likely `dog`. And in some cases there might be more than one categories e.g.,
     * `Terrier` could also be a `pet`.
     */
-  var categoryEntities: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1Entity]] = js.native
+  var categoryEntities: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1Entity]] = js.undefined
   
   /** Detected entity. */
-  var entity: js.UndefOr[GoogleCloudVideointelligenceV1p1beta1Entity] = js.native
+  var entity: js.UndefOr[GoogleCloudVideointelligenceV1p1beta1Entity] = js.undefined
   
   /** All video frames where a label was detected. */
-  var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1LabelFrame]] = js.native
+  var frames: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1LabelFrame]] = js.undefined
   
   /** All video segments where a label was detected. */
-  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1LabelSegment]] = js.native
+  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p1beta1LabelSegment]] = js.undefined
   
   /** Feature version. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p1beta1LabelAnnotation {
   

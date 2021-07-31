@@ -2,19 +2,19 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RowSelectionModel[T /* <: SlickData */, E] extends SelectionModel[T, E] {
+trait RowSelectionModel[T /* <: SlickData */, E]
+  extends StObject
+     with SelectionModel[T, E] {
   
-  def getSelectedRanges(): js.Array[Double] = js.native
+  def getSelectedRanges(): js.Array[Double]
   
-  def getSelectedRows(): js.Array[Double] = js.native
+  def getSelectedRows(): js.Array[Double]
   
-  def setSelectedRanges(ranges: js.Array[Double]): Unit = js.native
+  def setSelectedRanges(ranges: js.Array[Double]): Unit
   
-  def setSelectedRows(rows: js.Array[Double]): Unit = js.native
+  def setSelectedRows(rows: js.Array[Double]): Unit
 }
 object RowSelectionModel {
   
@@ -33,7 +33,7 @@ object RowSelectionModel {
   }
   
   @scala.inline
-  implicit class RowSelectionModelMutableBuilder[Self <: RowSelectionModel[_, _], T /* <: SlickData */, E] (val x: Self with (RowSelectionModel[T, E])) extends AnyVal {
+  implicit class RowSelectionModelMutableBuilder[Self <: RowSelectionModel[?, ?], T /* <: SlickData */, E] (val x: Self & (RowSelectionModel[T, E])) extends AnyVal {
     
     @scala.inline
     def setGetSelectedRanges(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))

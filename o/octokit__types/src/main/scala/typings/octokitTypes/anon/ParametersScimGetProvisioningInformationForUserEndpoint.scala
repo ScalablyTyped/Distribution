@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ScimGetProvisioningInformationForUserRe
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersScimGetProvisioningInformationForUserEndpoint extends StObject {
   
-  var parameters: ScimGetProvisioningInformationForUserEndpoint = js.native
+  var parameters: ScimGetProvisioningInformationForUserEndpoint
   
-  var request: ScimGetProvisioningInformationForUserRequestOptions = js.native
+  var request: ScimGetProvisioningInformationForUserRequestOptions
   
-  var response: OctokitResponse[ScimGetProvisioningInformationForUserResponseData] = js.native
+  var response: OctokitResponse[ScimGetProvisioningInformationForUserResponseData]
 }
 object ParametersScimGetProvisioningInformationForUserEndpoint {
   

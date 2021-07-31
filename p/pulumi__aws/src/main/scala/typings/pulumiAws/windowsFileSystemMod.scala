@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowsFileSystemMod {
@@ -145,6 +144,10 @@ object windowsFileSystemMod {
   /* static members */
   object WindowsFileSystem {
     
+    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WindowsFileSystem resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -154,112 +157,106 @@ object windowsFileSystemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WindowsFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WindowsFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WindowsFileSystemState): WindowsFileSystem = js.native
-    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WindowsFileSystemState, opts: CustomResourceOptions): WindowsFileSystem = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WindowsFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WindowsFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WindowsFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WindowsFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WindowsFileSystemState): WindowsFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WindowsFileSystem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WindowsFileSystemState, opts: CustomResourceOptions): WindowsFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WindowsFileSystem]
     
     /**
       * Returns true if the given object is an instance of WindowsFileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/fsx/windowsFileSystem", "WindowsFileSystem.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/windowsFileSystem.WindowsFileSystem */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/windowsFileSystem.WindowsFileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fsx/windowsFileSystem.WindowsFileSystem */ Boolean]
   }
   
-  @js.native
   trait WindowsFileSystemArgs extends StObject {
     
     /**
       * The ID for an existing Microsoft Active Directory instance that the file system should join when it's created. Cannot be specified with `selfManagedActiveDirectory`.
       */
-    val activeDirectoryId: js.UndefOr[Input[String]] = js.native
+    val activeDirectoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days to retain automatic backups. Minimum of `0` and maximum of `90`. Defaults to `7`. Set to `0` to disable.
       */
-    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.native
+    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to `false`.
       */
-    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The preferred time (in `HH:MM` format) to take daily automatic backups, in the UTC time zone.
       */
-    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.native
+    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the file system deployment type, valid values are `MULTI_AZ_1`, `SINGLE_AZ_1` and `SINGLE_AZ_2`. Default value is `SINGLE_AZ_1`.
       */
-    val deploymentType: js.UndefOr[Input[String]] = js.native
+    val deploymentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN for the KMS Key to encrypt the file system at rest. Defaults to an AWS managed KMS Key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is `MULTI_AZ_1`.
       */
-    val preferredSubnetId: js.UndefOr[Input[String]] = js.native
+    val preferredSubnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Cannot be specified with `activeDirectoryId`. Detailed below.
       */
     val selfManagedActiveDirectory: js.UndefOr[
         Input[typings.pulumiAws.inputMod.fsx.WindowsFileSystemSelfManagedActiveDirectory]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to `false`.
       */
-    val skipFinalBackup: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalBackup: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Storage capacity (GiB) of the file system. Minimum of 32 and maximum of 65536. If the storage type is set to `HDD` the minimum value is 2000.
       */
-    val storageCapacity: Input[Double] = js.native
+    val storageCapacity: Input[Double]
     
     /**
       * Specifies the storage type, Valid values are `SSD` and `HDD`. `HDD` is supported on `SINGLE_AZ_2` and `MULTI_AZ_1` Windows file system deployment types. Default value is `SSD`.
       */
-    val storageType: js.UndefOr[Input[String]] = js.native
+    val storageType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set `deploymentType` to `MULTI_AZ_1`.
       */
-    val subnetIds: Input[js.Array[Input[String]]] = js.native
+    val subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * A map of tags to assign to the file system.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Throughput (megabytes per second) of the file system in power of 2 increments. Minimum of `8` and maximum of `2048`.
       */
-    val throughputCapacity: Input[Double] = js.native
+    val throughputCapacity: Input[Double]
     
     /**
       * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
       */
-    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.native
+    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.undefined
   }
   object WindowsFileSystemArgs {
     
@@ -371,125 +368,124 @@ object windowsFileSystemMod {
     }
   }
   
-  @js.native
   trait WindowsFileSystemState extends StObject {
     
     /**
       * The ID for an existing Microsoft Active Directory instance that the file system should join when it's created. Cannot be specified with `selfManagedActiveDirectory`.
       */
-    val activeDirectoryId: js.UndefOr[Input[String]] = js.native
+    val activeDirectoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name of the file system.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days to retain automatic backups. Minimum of `0` and maximum of `90`. Defaults to `7`. Set to `0` to disable.
       */
-    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.native
+    val automaticBackupRetentionDays: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A boolean flag indicating whether tags on the file system should be copied to backups. Defaults to `false`.
       */
-    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.native
+    val copyTagsToBackups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The preferred time (in `HH:MM` format) to take daily automatic backups, in the UTC time zone.
       */
-    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.native
+    val dailyAutomaticBackupStartTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the file system deployment type, valid values are `MULTI_AZ_1`, `SINGLE_AZ_1` and `SINGLE_AZ_2`. Default value is `SINGLE_AZ_1`.
       */
-    val deploymentType: js.UndefOr[Input[String]] = js.native
+    val deploymentType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DNS name for the file system, e.g. `fs-12345678.corp.example.com` (domain name matching the Active Directory domain name)
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN for the KMS Key to encrypt the file system at rest. Defaults to an AWS managed KMS Key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of Elastic Network Interface identifiers from which the file system is accessible.
       */
-    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * AWS account identifier that created the file system.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP address of the primary, or preferred, file server.
       */
-    val preferredFileServerIp: js.UndefOr[Input[String]] = js.native
+    val preferredFileServerIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the subnet in which you want the preferred file server to be located. Required for when deployment type is `MULTI_AZ_1`.
       */
-    val preferredSubnetId: js.UndefOr[Input[String]] = js.native
+    val preferredSubnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * For `MULTI_AZ_1` deployment types, use this endpoint when performing administrative tasks on the file system using Amazon FSx Remote PowerShell. For `SINGLE_AZ_1` deployment types, this is the DNS name of the file system.
       */
-    val remoteAdministrationEndpoint: js.UndefOr[Input[String]] = js.native
+    val remoteAdministrationEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the security groups that apply to the specified network interfaces created for file system access. These security groups will apply to all network interfaces.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block that Amazon FSx uses to join the Windows File Server instance to your self-managed (including on-premises) Microsoft Active Directory (AD) directory. Cannot be specified with `activeDirectoryId`. Detailed below.
       */
     val selfManagedActiveDirectory: js.UndefOr[
         Input[typings.pulumiAws.inputMod.fsx.WindowsFileSystemSelfManagedActiveDirectory]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * When enabled, will skip the default final backup taken when the file system is deleted. This configuration must be applied separately before attempting to delete the resource to have the desired behavior. Defaults to `false`.
       */
-    val skipFinalBackup: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalBackup: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Storage capacity (GiB) of the file system. Minimum of 32 and maximum of 65536. If the storage type is set to `HDD` the minimum value is 2000.
       */
-    val storageCapacity: js.UndefOr[Input[Double]] = js.native
+    val storageCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specifies the storage type, Valid values are `SSD` and `HDD`. `HDD` is supported on `SINGLE_AZ_2` and `MULTI_AZ_1` Windows file system deployment types. Default value is `SSD`.
       */
-    val storageType: js.UndefOr[Input[String]] = js.native
+    val storageType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IDs for the subnets that the file system will be accessible from. To specify more than a single subnet set `deploymentType` to `MULTI_AZ_1`.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the file system.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Throughput (megabytes per second) of the file system in power of 2 increments. Minimum of `8` and maximum of `2048`.
       */
-    val throughputCapacity: js.UndefOr[Input[Double]] = js.native
+    val throughputCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Identifier of the Virtual Private Cloud for the file system.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The preferred start time (in `d:HH:MM` format) to perform weekly maintenance, in the UTC time zone.
       */
-    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.native
+    val weeklyMaintenanceStartTime: js.UndefOr[Input[String]] = js.undefined
   }
   object WindowsFileSystemState {
     

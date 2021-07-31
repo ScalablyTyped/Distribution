@@ -6,35 +6,34 @@ import typings.next.nextBooleans.`false`
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadCustomRoutesMod {
   
-  @JSImport("next/dist/lib/load-custom-routes", JSImport.Default)
+  @JSImport("next/dist/lib/load-custom-routes", JSImport.Namespace)
   @js.native
-  def default(config: js.Any): js.Promise[CustomRoutes] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(config: js.Any): js.Promise[CustomRoutes] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CustomRoutes]]
   
   @JSImport("next/dist/lib/load-custom-routes", "allowedStatusCodes")
   @js.native
   val allowedStatusCodes: Set[Double] = js.native
   
-  @JSImport("next/dist/lib/load-custom-routes", "getRedirectStatus")
-  @js.native
-  def getRedirectStatus(route: Permanent): Double = js.native
+  @scala.inline
+  def getRedirectStatus(route: Permanent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectStatus")(route.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("next/dist/lib/load-custom-routes", "normalizeRouteRegex")
-  @js.native
-  def normalizeRouteRegex(regex: String): String = js.native
+  @scala.inline
+  def normalizeRouteRegex(regex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeRouteRegex")(regex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait CustomRoutes extends StObject {
     
-    var headers: js.Array[Header] = js.native
+    var headers: js.Array[Header]
     
-    var redirects: js.Array[Redirect] = js.native
+    var redirects: js.Array[Redirect]
     
-    var rewrites: js.Array[Rewrite] = js.native
+    var rewrites: js.Array[Rewrite]
   }
   object CustomRoutes {
     
@@ -67,16 +66,15 @@ object loadCustomRoutesMod {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var basePath: js.UndefOr[`false`] = js.native
+    var basePath: js.UndefOr[`false`] = js.undefined
     
-    var headers: js.Array[Key] = js.native
+    var headers: js.Array[Key]
     
-    var locale: js.UndefOr[`false`] = js.native
+    var locale: js.UndefOr[`false`] = js.undefined
     
-    var source: String = js.native
+    var source: String
   }
   object Header {
     
@@ -112,21 +110,13 @@ object loadCustomRoutesMod {
     }
   }
   
-  /* Inlined next.next/dist/lib/load-custom-routes.Rewrite & {  statusCode :number | undefined,   permanent :boolean | undefined} */
-  @js.native
-  trait Redirect extends StObject {
+  trait Redirect
+    extends StObject
+       with Rewrite {
     
-    var basePath: js.UndefOr[`false`] = js.native
+    var permanent: js.UndefOr[Boolean] = js.undefined
     
-    var destination: String = js.native
-    
-    var locale: js.UndefOr[`false`] = js.native
-    
-    var permanent: js.UndefOr[Boolean] = js.native
-    
-    var source: String = js.native
-    
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object Redirect {
     
@@ -140,28 +130,10 @@ object loadCustomRoutesMod {
     implicit class RedirectMutableBuilder[Self <: Redirect] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBasePath(value: `false`): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
-      
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocale(value: `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
-      
-      @scala.inline
       def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
-      
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
@@ -171,16 +143,15 @@ object loadCustomRoutesMod {
     }
   }
   
-  @js.native
   trait Rewrite extends StObject {
     
-    var basePath: js.UndefOr[`false`] = js.native
+    var basePath: js.UndefOr[`false`] = js.undefined
     
-    var destination: String = js.native
+    var destination: String
     
-    var locale: js.UndefOr[`false`] = js.native
+    var locale: js.UndefOr[`false`] = js.undefined
     
-    var source: String = js.native
+    var source: String
   }
   object Rewrite {
     

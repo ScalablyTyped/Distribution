@@ -5,7 +5,6 @@ import typings.emojiMart.sharedPropsMod.EmojiProps
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emojiMod extends Shortcut {

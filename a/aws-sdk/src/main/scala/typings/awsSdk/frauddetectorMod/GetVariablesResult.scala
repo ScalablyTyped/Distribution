@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVariablesResult extends StObject {
   
   /**
     * The next page token to be used in subsequent requests. 
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The names of the variables returned. 
     */
-  var variables: js.UndefOr[VariableList] = js.native
+  var variables: js.UndefOr[VariableList] = js.undefined
 }
 object GetVariablesResult {
   

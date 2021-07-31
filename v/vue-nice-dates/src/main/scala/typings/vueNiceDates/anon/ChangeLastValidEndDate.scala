@@ -3,27 +3,25 @@ package typings.vueNiceDates.anon
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeLastValidEndDate extends StObject {
   
-  def changeLastValidEndDate(date: String): Unit = js.native
+  def changeLastValidEndDate(date: String): Unit
   
-  def changeLastValidStartDate(date: String): Unit = js.native
+  def changeLastValidStartDate(date: String): Unit
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit = js.native
+  def handleClickDate(date: typings.std.Date, `type`: String): Unit
   
-  def handleFocusIn(e: MouseEvent): Unit = js.native
+  def handleFocusIn(e: MouseEvent): Unit
   
-  def handleOutsideClick(e: MouseEvent): Unit = js.native
+  def handleOutsideClick(e: MouseEvent): Unit
   
-  def triggerFocusEvent(focusName: String): Unit = js.native
+  def triggerFocusEvent(focusName: String): Unit
   
-  def updateReceivedEndDate(date: String): Unit = js.native
+  def updateReceivedEndDate(date: String): Unit
   
-  def updateReceivedStartDate(date: String): Unit = js.native
+  def updateReceivedStartDate(date: String): Unit
 }
 object ChangeLastValidEndDate {
   

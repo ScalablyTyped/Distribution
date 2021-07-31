@@ -13,36 +13,34 @@ import typings.exceljs.mod.Color
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.Font> */
-@js.native
 trait PartialFontBold extends StObject {
   
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
-  var charset: js.UndefOr[Double] = js.native
+  var charset: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[Partial[Color]] = js.native
+  var color: js.UndefOr[Partial[Color]] = js.undefined
   
-  var family: js.UndefOr[Double] = js.native
+  var family: js.UndefOr[Double] = js.undefined
   
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var outline: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[minor | major | none_] = js.native
+  var scheme: js.UndefOr[minor | major | none_] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var strike: js.UndefOr[Boolean] = js.native
+  var strike: js.UndefOr[Boolean] = js.undefined
   
-  var underline: js.UndefOr[Boolean | none_ | single | double | singleAccounting | doubleAccounting] = js.native
+  var underline: js.UndefOr[Boolean | none_ | single | double | singleAccounting | doubleAccounting] = js.undefined
   
-  var vertAlign: js.UndefOr[superscript | subscript] = js.native
+  var vertAlign: js.UndefOr[superscript | subscript] = js.undefined
 }
 object PartialFontBold {
   

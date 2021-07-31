@@ -4,32 +4,31 @@ import typings.node.http2Mod.Http2ServerRequest
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("basic-auth", JSImport.Namespace)
-  @js.native
-  def apply(req: Http2ServerRequest): js.UndefOr[BasicAuthResult] = js.native
+  @scala.inline
+  def apply(req: Http2ServerRequest): js.UndefOr[BasicAuthResult] = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BasicAuthResult]]
   // See https://github.com/jshttp/basic-auth/blob/v1.1.0/index.js#L49
+  @scala.inline
+  def apply(req: IncomingMessage): js.UndefOr[BasicAuthResult] = ^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BasicAuthResult]]
+  
   @JSImport("basic-auth", JSImport.Namespace)
   @js.native
-  def apply(req: IncomingMessage): js.UndefOr[BasicAuthResult] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Parse basic auth to object.
     */
-  @JSImport("basic-auth", "parse")
-  @js.native
-  def parse(authorizationHeader: String): js.UndefOr[BasicAuthResult] = js.native
+  @scala.inline
+  def parse(authorizationHeader: String): js.UndefOr[BasicAuthResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(authorizationHeader.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[BasicAuthResult]]
   
-  @js.native
   trait BasicAuthResult extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var pass: String = js.native
+    var pass: String
   }
   object BasicAuthResult {
     

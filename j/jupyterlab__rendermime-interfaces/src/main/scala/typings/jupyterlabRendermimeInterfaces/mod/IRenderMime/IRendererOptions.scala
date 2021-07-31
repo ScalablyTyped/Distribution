@@ -2,45 +2,43 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options used to create a renderer.
   */
-@js.native
 trait IRendererOptions extends StObject {
   
   /**
     * The LaTeX typesetter.
     */
-  var latexTypesetter: ILatexTypesetter | Null = js.native
+  var latexTypesetter: ILatexTypesetter | Null
   
   /**
     * An optional link handler.
     */
-  var linkHandler: ILinkHandler | Null = js.native
+  var linkHandler: ILinkHandler | Null
   
   /**
     * The preferred mimeType to render.
     */
-  var mimeType: String = js.native
+  var mimeType: String
   
   /**
     * An optional url resolver.
     */
-  var resolver: IResolver | Null = js.native
+  var resolver: IResolver | Null
   
   /**
     * The html sanitizer.
     */
-  var sanitizer: ISanitizer = js.native
+  var sanitizer: ISanitizer
 }
 object IRendererOptions {
   
   @scala.inline
   def apply(mimeType: String, sanitizer: ISanitizer): IRendererOptions = {
-    val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], sanitizer = sanitizer.asInstanceOf[js.Any], latexTypesetter = null, linkHandler = null, resolver = null)
     __obj.asInstanceOf[IRendererOptions]
   }
   

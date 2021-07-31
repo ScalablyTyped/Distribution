@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,9 @@ object ComposeType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Forward extends ComposeType
+  sealed trait Forward
+    extends StObject
+       with ComposeType
   
   /**
     * New mail.
@@ -36,7 +37,9 @@ object ComposeType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait NewMail extends ComposeType
+  sealed trait NewMail
+    extends StObject
+       with ComposeType
   
   /**
     * Reply.
@@ -44,5 +47,7 @@ object ComposeType extends StObject {
     * [Api set: Mailbox Preview]
     */
   @js.native
-  sealed trait Reply extends ComposeType
+  sealed trait Reply
+    extends StObject
+       with ComposeType
 }

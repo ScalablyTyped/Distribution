@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackRelease extends StObject {
   
   /** Restricts a release to a specific set of countries. */
-  var countryTargeting: js.UndefOr[CountryTargeting] = js.native
+  var countryTargeting: js.UndefOr[CountryTargeting] = js.undefined
   
   /**
     * In-app update priority of the release. All newly added APKs in the release will be considered at this priority. Can take values in the range [0, 5], with 5 the highest priority.
     * Defaults to 0. in_app_update_priority can not be updated once the release is rolled out. See https://developer.android.com/guide/playcore/in-app-updates.
     */
-  var inAppUpdatePriority: js.UndefOr[Double] = js.native
+  var inAppUpdatePriority: js.UndefOr[Double] = js.undefined
   
   /**
     * The release name. Not required to be unique. If not set, the name is generated from the APK's version_name. If the release contains multiple APKs, the name is generated from the
     * date.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A description of what is new in this release. */
-  var releaseNotes: js.UndefOr[js.Array[LocalizedText]] = js.native
+  var releaseNotes: js.UndefOr[js.Array[LocalizedText]] = js.undefined
   
   /** The status of the release. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Fraction of users who are eligible for a staged release. 0 < fraction < 1. Can only be set when status is "inProgress" or "halted". */
-  var userFraction: js.UndefOr[Double] = js.native
+  var userFraction: js.UndefOr[Double] = js.undefined
   
   /** Version codes of all APKs in the release. Must include version codes to retain from previous releases. */
-  var versionCodes: js.UndefOr[js.Array[String]] = js.native
+  var versionCodes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TrackRelease {
   

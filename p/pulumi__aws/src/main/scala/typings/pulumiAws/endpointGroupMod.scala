@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointGroupMod {
@@ -79,6 +78,10 @@ object endpointGroupMod {
   /* static members */
   object EndpointGroup {
     
+    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -88,29 +91,23 @@ object endpointGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EndpointGroup = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EndpointGroup = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointGroupState): EndpointGroup = js.native
-    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): EndpointGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointGroupState): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EndpointGroup]
     
     /**
       * Returns true if the given object is an instance of EndpointGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/globalaccelerator/endpointGroup", "EndpointGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean]
   }
   
-  @js.native
   trait EndpointGroupArgs extends StObject {
     
     /**
@@ -122,31 +119,31 @@ object endpointGroupMod {
             Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the AWS Region where the endpoint group is located.
       */
-    val endpointGroupRegion: js.UndefOr[Input[String]] = js.native
+    val endpointGroupRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.
       */
-    val healthCheckIntervalSeconds: js.UndefOr[Input[Double]] = js.native
+    val healthCheckIntervalSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val healthCheckPath: js.UndefOr[Input[String]] = js.native
+    val healthCheckPath: js.UndefOr[Input[String]] = js.undefined
     
-    val healthCheckPort: js.UndefOr[Input[Double]] = js.native
+    val healthCheckPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.
       */
-    val healthCheckProtocol: js.UndefOr[Input[String]] = js.native
+    val healthCheckProtocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    val listenerArn: Input[String] = js.native
+    val listenerArn: Input[String]
     
     /**
       * Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. Fields documented below.
@@ -155,17 +152,17 @@ object endpointGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.
       */
-    val thresholdCount: js.UndefOr[Input[Double]] = js.native
+    val thresholdCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.
       */
-    val trafficDialPercentage: js.UndefOr[Input[Double]] = js.native
+    val trafficDialPercentage: js.UndefOr[Input[Double]] = js.undefined
   }
   object EndpointGroupArgs {
     
@@ -253,13 +250,12 @@ object endpointGroupMod {
     }
   }
   
-  @js.native
   trait EndpointGroupState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the endpoint group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of endpoint objects. Fields documented below.
@@ -270,31 +266,31 @@ object endpointGroupMod {
             Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupEndpointConfiguration]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the AWS Region where the endpoint group is located.
       */
-    val endpointGroupRegion: js.UndefOr[Input[String]] = js.native
+    val endpointGroupRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time—10 seconds or 30 seconds—between each health check for an endpoint. The default value is 30.
       */
-    val healthCheckIntervalSeconds: js.UndefOr[Input[Double]] = js.native
+    val healthCheckIntervalSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val healthCheckPath: js.UndefOr[Input[String]] = js.native
+    val healthCheckPath: js.UndefOr[Input[String]] = js.undefined
     
-    val healthCheckPort: js.UndefOr[Input[Double]] = js.native
+    val healthCheckPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The protocol that AWS Global Accelerator uses to check the health of endpoints that are part of this endpoint group. The default value is TCP.
       */
-    val healthCheckProtocol: js.UndefOr[Input[String]] = js.native
+    val healthCheckProtocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the listener.
       */
-    val listenerArn: js.UndefOr[Input[String]] = js.native
+    val listenerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Override specific listener ports used to route traffic to endpoints that are part of this endpoint group. Fields documented below.
@@ -303,17 +299,17 @@ object endpointGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.EndpointGroupPortOverride]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The number of consecutive health checks required to set the state of a healthy endpoint to unhealthy, or to set an unhealthy endpoint to healthy. The default value is 3.
       */
-    val thresholdCount: js.UndefOr[Input[Double]] = js.native
+    val thresholdCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The percentage of traffic to send to an AWS Region. Additional traffic is distributed to other endpoint groups for this listener. The default value is 100.
       */
-    val trafficDialPercentage: js.UndefOr[Input[Double]] = js.native
+    val trafficDialPercentage: js.UndefOr[Input[Double]] = js.undefined
   }
   object EndpointGroupState {
     

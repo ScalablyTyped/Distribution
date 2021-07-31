@@ -2,23 +2,23 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointAttachment extends VertexAttachment {
+trait PointAttachment
+  extends StObject
+     with VertexAttachment {
   
-  var color: Color = js.native
+  var color: Color
   
-  def computeWorldPosition(bone: Bone, point: Vector2): Vector2 = js.native
+  def computeWorldPosition(bone: Bone, point: Vector2): Vector2
   
-  def computeWorldRotation(bone: Bone): Double = js.native
+  def computeWorldRotation(bone: Bone): Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object PointAttachment {
   

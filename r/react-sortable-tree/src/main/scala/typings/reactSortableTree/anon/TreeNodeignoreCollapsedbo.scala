@@ -3,16 +3,14 @@ package typings.reactSortableTree.anon
 import typings.reactSortableTree.mod.TreeItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.TreeNode & {  ignoreCollapsed :boolean | undefined} */
-@js.native
 trait TreeNodeignoreCollapsedbo extends StObject {
   
-  var ignoreCollapsed: js.UndefOr[Boolean] = js.native
+  var ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   
-  var node: TreeItem = js.native
+  var node: TreeItem
 }
 object TreeNodeignoreCollapsedbo {
   

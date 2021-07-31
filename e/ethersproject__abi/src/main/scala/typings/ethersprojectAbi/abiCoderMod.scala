@@ -9,7 +9,6 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abiCoderMod {
@@ -31,7 +30,7 @@ object abiCoderMod {
     
     def decode(types: js.Array[String | ParamType], data: BytesLike): Result = js.native
     
-    def encode(types: js.Array[String | ParamType], values: js.Array[_]): String = js.native
+    def encode(types: js.Array[String | ParamType], values: js.Array[js.Any]): String = js.native
   }
   
   @JSImport("@ethersproject/abi/lib/abi-coder", "defaultAbiCoder")

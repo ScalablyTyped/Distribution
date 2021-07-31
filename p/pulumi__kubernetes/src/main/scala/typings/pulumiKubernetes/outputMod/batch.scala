@@ -10,7 +10,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.batchSlashv1beta1
 import typings.pulumiKubernetes.pulumiKubernetesStrings.batchSlashv2alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batch {
@@ -35,45 +34,38 @@ object batch {
       * time out and mark the resource update as Failed. You can override the default timeout value
       * by setting the 'customTimeouts' option on the resource.
       */
-    @js.native
     trait Job extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: batchSlashv1 = js.native
+      var apiVersion: batchSlashv1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Job = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Job
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the desired behavior of a job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: JobSpec = js.native
+      var spec: JobSpec
       
       /**
         * Current status of a job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: JobStatus = js.native
+      var status: JobStatus
     }
     object Job {
       
       @scala.inline
-      def apply(
-        apiVersion: batchSlashv1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.Job,
-        metadata: ObjectMeta,
-        spec: JobSpec,
-        status: JobStatus
-      ): Job = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: JobSpec, status: JobStatus): Job = {
+        val __obj = js.Dynamic.literal(apiVersion = "batch/v1", kind = "Job", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[Job]
       }
       
@@ -100,38 +92,37 @@ object batch {
     /**
       * JobCondition describes current state of a job.
       */
-    @js.native
     trait JobCondition extends StObject {
       
       /**
         * Last time the condition was checked.
         */
-      var lastProbeTime: String = js.native
+      var lastProbeTime: String
       
       /**
         * Last time the condition transit from one status to another.
         */
-      var lastTransitionTime: String = js.native
+      var lastTransitionTime: String
       
       /**
         * Human readable message indicating details about last transition.
         */
-      var message: String = js.native
+      var message: String
       
       /**
         * (brief) reason for the condition's last transition.
         */
-      var reason: String = js.native
+      var reason: String
       
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: String = js.native
+      var status: String
       
       /**
         * Type of job condition, Complete or Failed.
         */
-      var `type`: String = js.native
+      var `type`: String
     }
     object JobCondition {
       
@@ -175,48 +166,47 @@ object batch {
     /**
       * JobSpec describes how the job execution will look like.
       */
-    @js.native
     trait JobSpec extends StObject {
       
       /**
         * Specifies the duration in seconds relative to the startTime that the job may be active before the system tries to terminate it; value must be positive integer
         */
-      var activeDeadlineSeconds: Double = js.native
+      var activeDeadlineSeconds: Double
       
       /**
         * Specifies the number of retries before marking this job failed. Defaults to 6
         */
-      var backoffLimit: Double = js.native
+      var backoffLimit: Double
       
       /**
         * Specifies the desired number of successfully finished pods the job should be run with.  Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value.  Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var completions: Double = js.native
+      var completions: Double
       
       /**
         * manualSelector controls generation of pod labels and pod selectors. Leave `manualSelector` unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template.  When true, the user is responsible for picking unique labels and specifying the selector.  Failure to pick a unique label may cause this and other jobs to not function correctly.  However, You may see `manualSelector=true` in jobs that were created with the old `extensions/v1beta1` API. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#specifying-your-own-pod-selector
         */
-      var manualSelector: Boolean = js.native
+      var manualSelector: Boolean
       
       /**
         * Specifies the maximum desired number of pods the job should run at any given time. The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var parallelism: Double = js.native
+      var parallelism: Double
       
       /**
         * A label query over pods that should match the pod count. Normally, the system sets this field for you. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: LabelSelector = js.native
+      var selector: LabelSelector
       
       /**
         * Describes the pod that will be created when executing a job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var template: PodTemplateSpec = js.native
+      var template: PodTemplateSpec
       
       /**
         * ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution (either Complete or Failed). If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes. This field is alpha-level and is only honored by servers that enable the TTLAfterFinished feature.
         */
-      var ttlSecondsAfterFinished: Double = js.native
+      var ttlSecondsAfterFinished: Double
     }
     object JobSpec {
       
@@ -267,38 +257,37 @@ object batch {
     /**
       * JobStatus represents the current state of a Job.
       */
-    @js.native
     trait JobStatus extends StObject {
       
       /**
         * The number of actively running pods.
         */
-      var active: Double = js.native
+      var active: Double
       
       /**
         * Represents time when the job was completed. It is not guaranteed to be set in happens-before order across separate operations. It is represented in RFC3339 form and is in UTC.
         */
-      var completionTime: String = js.native
+      var completionTime: String
       
       /**
         * The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var conditions: js.Array[JobCondition] = js.native
+      var conditions: js.Array[JobCondition]
       
       /**
         * The number of pods which reached phase Failed.
         */
-      var failed: Double = js.native
+      var failed: Double
       
       /**
         * Represents time when the job was acknowledged by the job controller. It is not guaranteed to be set in happens-before order across separate operations. It is represented in RFC3339 form and is in UTC.
         */
-      var startTime: String = js.native
+      var startTime: String
       
       /**
         * The number of pods which reached phase Succeeded.
         */
-      var succeeded: Double = js.native
+      var succeeded: Double
     }
     object JobStatus {
       
@@ -347,45 +336,38 @@ object batch {
     /**
       * CronJob represents the configuration of a single cron job.
       */
-    @js.native
     trait CronJob extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: batchSlashv1beta1 = js.native
+      var apiVersion: batchSlashv1beta1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: CronJobSpec = js.native
+      var spec: CronJobSpec
       
       /**
         * Current status of a cron job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: CronJobStatus = js.native
+      var status: CronJobStatus
     }
     object CronJob {
       
       @scala.inline
-      def apply(
-        apiVersion: batchSlashv1beta1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob,
-        metadata: ObjectMeta,
-        spec: CronJobSpec,
-        status: CronJobStatus
-      ): CronJob = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: CronJobSpec, status: CronJobStatus): CronJob = {
+        val __obj = js.Dynamic.literal(apiVersion = "batch/v1beta1", kind = "CronJob", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[CronJob]
       }
       
@@ -412,43 +394,42 @@ object batch {
     /**
       * CronJobSpec describes how the job execution will look like and when it will actually run.
       */
-    @js.native
     trait CronJobSpec extends StObject {
       
       /**
         * Specifies how to treat concurrent executions of a Job. Valid values are: - "Allow" (default): allows CronJobs to run concurrently; - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet; - "Replace": cancels currently running job and replaces it with a new one
         */
-      var concurrencyPolicy: String = js.native
+      var concurrencyPolicy: String
       
       /**
         * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
         */
-      var failedJobsHistoryLimit: Double = js.native
+      var failedJobsHistoryLimit: Double
       
       /**
         * Specifies the job that will be created when executing a CronJob.
         */
-      var jobTemplate: JobTemplateSpec = js.native
+      var jobTemplate: JobTemplateSpec
       
       /**
         * The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
         */
-      var schedule: String = js.native
+      var schedule: String
       
       /**
         * Optional deadline in seconds for starting the job if it misses scheduled time for any reason.  Missed jobs executions will be counted as failed ones.
         */
-      var startingDeadlineSeconds: Double = js.native
+      var startingDeadlineSeconds: Double
       
       /**
         * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 3.
         */
-      var successfulJobsHistoryLimit: Double = js.native
+      var successfulJobsHistoryLimit: Double
       
       /**
         * This flag tells the controller to suspend subsequent executions, it does not apply to already started executions.  Defaults to false.
         */
-      var suspend: Boolean = js.native
+      var suspend: Boolean
     }
     object CronJobSpec {
       
@@ -495,18 +476,17 @@ object batch {
     /**
       * CronJobStatus represents the current state of a cron job.
       */
-    @js.native
     trait CronJobStatus extends StObject {
       
       /**
         * A list of pointers to currently running jobs.
         */
-      var active: js.Array[ObjectReference] = js.native
+      var active: js.Array[ObjectReference]
       
       /**
         * Information when was the last time the job was successfully scheduled.
         */
-      var lastScheduleTime: String = js.native
+      var lastScheduleTime: String
     }
     object CronJobStatus {
       
@@ -533,18 +513,17 @@ object batch {
     /**
       * JobTemplateSpec describes the data a Job should have when created from a template
       */
-    @js.native
     trait JobTemplateSpec extends StObject {
       
       /**
         * Standard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: JobSpec = js.native
+      var spec: JobSpec
     }
     object JobTemplateSpec {
       
@@ -571,45 +550,38 @@ object batch {
     /**
       * CronJob represents the configuration of a single cron job.
       */
-    @js.native
     trait CronJob extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: batchSlashv2alpha1 = js.native
+      var apiVersion: batchSlashv2alpha1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: CronJobSpec = js.native
+      var spec: CronJobSpec
       
       /**
         * Current status of a cron job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: CronJobStatus = js.native
+      var status: CronJobStatus
     }
     object CronJob {
       
       @scala.inline
-      def apply(
-        apiVersion: batchSlashv2alpha1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob,
-        metadata: ObjectMeta,
-        spec: CronJobSpec,
-        status: CronJobStatus
-      ): CronJob = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: CronJobSpec, status: CronJobStatus): CronJob = {
+        val __obj = js.Dynamic.literal(apiVersion = "batch/v2alpha1", kind = "CronJob", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
         __obj.asInstanceOf[CronJob]
       }
       
@@ -636,43 +608,42 @@ object batch {
     /**
       * CronJobSpec describes how the job execution will look like and when it will actually run.
       */
-    @js.native
     trait CronJobSpec extends StObject {
       
       /**
         * Specifies how to treat concurrent executions of a Job. Valid values are: - "Allow" (default): allows CronJobs to run concurrently; - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet; - "Replace": cancels currently running job and replaces it with a new one
         */
-      var concurrencyPolicy: String = js.native
+      var concurrencyPolicy: String
       
       /**
         * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
         */
-      var failedJobsHistoryLimit: Double = js.native
+      var failedJobsHistoryLimit: Double
       
       /**
         * Specifies the job that will be created when executing a CronJob.
         */
-      var jobTemplate: JobTemplateSpec = js.native
+      var jobTemplate: JobTemplateSpec
       
       /**
         * The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
         */
-      var schedule: String = js.native
+      var schedule: String
       
       /**
         * Optional deadline in seconds for starting the job if it misses scheduled time for any reason.  Missed jobs executions will be counted as failed ones.
         */
-      var startingDeadlineSeconds: Double = js.native
+      var startingDeadlineSeconds: Double
       
       /**
         * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
         */
-      var successfulJobsHistoryLimit: Double = js.native
+      var successfulJobsHistoryLimit: Double
       
       /**
         * This flag tells the controller to suspend subsequent executions, it does not apply to already started executions.  Defaults to false.
         */
-      var suspend: Boolean = js.native
+      var suspend: Boolean
     }
     object CronJobSpec {
       
@@ -719,18 +690,17 @@ object batch {
     /**
       * CronJobStatus represents the current state of a cron job.
       */
-    @js.native
     trait CronJobStatus extends StObject {
       
       /**
         * A list of pointers to currently running jobs.
         */
-      var active: js.Array[ObjectReference] = js.native
+      var active: js.Array[ObjectReference]
       
       /**
         * Information when was the last time the job was successfully scheduled.
         */
-      var lastScheduleTime: String = js.native
+      var lastScheduleTime: String
     }
     object CronJobStatus {
       
@@ -757,18 +727,17 @@ object batch {
     /**
       * JobTemplateSpec describes the data a Job should have when created from a template
       */
-    @js.native
     trait JobTemplateSpec extends StObject {
       
       /**
         * Standard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
       /**
         * Specification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: JobSpec = js.native
+      var spec: JobSpec
     }
     object JobTemplateSpec {
       

@@ -5,25 +5,25 @@ import typings.pulumiAws.inputMod.acmpca.GetCertificateAuthorityRevocationConfig
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCertificateAuthorityMod {
   
-  @JSImport("@pulumi/aws/acmpca/getCertificateAuthority", "getCertificateAuthority")
+  @JSImport("@pulumi/aws/acmpca/getCertificateAuthority", JSImport.Namespace)
   @js.native
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = js.native
-  @JSImport("@pulumi/aws/acmpca/getCertificateAuthority", "getCertificateAuthority")
-  @js.native
-  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs): js.Promise[GetCertificateAuthorityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
+  @scala.inline
+  def getCertificateAuthority(args: GetCertificateAuthorityArgs, opts: InvokeOptions): js.Promise[GetCertificateAuthorityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateAuthority")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateAuthorityResult]]
+  
   trait GetCertificateAuthorityArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the certificate authority.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Nested attribute containing revocation configuration.
@@ -33,12 +33,12 @@ object getCertificateAuthorityMod {
       * * `revocation_configuration.0.crl_configuration.0.expiration_in_days` - Number of days until a certificate expires.
       * * `revocation_configuration.0.crl_configuration.0.s3_bucket_name` - Name of the S3 bucket that contains the CRL.
       */
-    val revocationConfigurations: js.UndefOr[js.Array[GetCertificateAuthorityRevocationConfiguration]] = js.native
+    val revocationConfigurations: js.UndefOr[js.Array[GetCertificateAuthorityRevocationConfiguration]] = js.undefined
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetCertificateAuthorityArgs {
     
@@ -71,40 +71,39 @@ object getCertificateAuthorityMod {
     }
   }
   
-  @js.native
   trait GetCertificateAuthorityResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Base64-encoded certificate authority (CA) certificate. Only available after the certificate authority certificate has been imported.
       */
-    val certificate: String = js.native
+    val certificate: String
     
     /**
       * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
       */
-    val certificateChain: String = js.native
+    val certificateChain: String
     
     /**
       * The base64 PEM-encoded certificate signing request (CSR) for your private CA certificate.
       */
-    val certificateSigningRequest: String = js.native
+    val certificateSigningRequest: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Date and time after which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
       */
-    val notAfter: String = js.native
+    val notAfter: String
     
     /**
       * Date and time before which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
       */
-    val notBefore: String = js.native
+    val notBefore: String
     
     /**
       * Nested attribute containing revocation configuration.
@@ -116,27 +115,27 @@ object getCertificateAuthorityMod {
       */
     val revocationConfigurations: js.Array[
         typings.pulumiAws.outputMod.acmpca.GetCertificateAuthorityRevocationConfiguration
-      ] = js.native
+      ]
     
     /**
       * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
       */
-    val serial: String = js.native
+    val serial: String
     
     /**
       * Status of the certificate authority.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The type of the certificate authority.
       */
-    val `type`: String = js.native
+    val `type`: String
   }
   object GetCertificateAuthorityResult {
     

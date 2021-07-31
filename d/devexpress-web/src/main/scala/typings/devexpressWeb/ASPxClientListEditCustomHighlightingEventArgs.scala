@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientComboBox.CustomHighlighting and ASPxClientListBox.CustomHighlighting events.
   */
-@js.native
-trait ASPxClientListEditCustomHighlightingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientListEditCustomHighlightingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a string that is a filter condition for the editor's items typed by a user.
     */
-  var filter: String = js.native
+  var filter: String
   
   /**
     * Specifies rules according to which the editor highlights the filtered items.
     */
-  var highlighting: js.Any = js.native
+  var highlighting: js.Any
 }
 object ASPxClientListEditCustomHighlightingEventArgs {
   

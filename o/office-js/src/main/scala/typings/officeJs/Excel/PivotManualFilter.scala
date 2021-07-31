@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait PivotManualFilter extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PivotManualFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var selectedItems: js.UndefOr[js.Array[String | PivotItem]] = js.native
+  var selectedItems: js.UndefOr[js.Array[String | PivotItem]] = js.undefined
 }
 object PivotManualFilter {
   

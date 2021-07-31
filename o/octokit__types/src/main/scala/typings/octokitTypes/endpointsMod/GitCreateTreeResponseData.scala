@@ -3,17 +3,15 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateTreeResponseData extends StObject {
   
-  var sha: String = js.native
+  var sha: String
   
-  var tree: js.Array[Mode] = js.native
+  var tree: js.Array[Mode]
   
-  var url: String = js.native
+  var url: String
 }
 object GitCreateTreeResponseData {
   

@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnectionVgwTelemetry extends StObject {
   
-  var acceptedRouteCount: js.UndefOr[Input[Double]] = js.native
+  var acceptedRouteCount: js.UndefOr[Input[Double]] = js.undefined
   
-  var lastStatusChange: js.UndefOr[Input[String]] = js.native
+  var lastStatusChange: js.UndefOr[Input[String]] = js.undefined
   
-  var outsideIpAddress: js.UndefOr[Input[String]] = js.native
+  var outsideIpAddress: js.UndefOr[Input[String]] = js.undefined
   
-  var status: js.UndefOr[Input[String]] = js.native
+  var status: js.UndefOr[Input[String]] = js.undefined
   
-  var statusMessage: js.UndefOr[Input[String]] = js.native
+  var statusMessage: js.UndefOr[Input[String]] = js.undefined
 }
 object VpnConnectionVgwTelemetry {
   

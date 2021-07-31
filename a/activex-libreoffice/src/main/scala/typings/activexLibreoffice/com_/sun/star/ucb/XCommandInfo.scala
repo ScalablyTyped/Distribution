@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Kai Sommerfeld
   * @version 1.0
   */
-@js.native
-trait XCommandInfo extends XInterface {
+trait XCommandInfo
+  extends StObject
+     with XInterface {
   
   /**
     * obtains information for all supported commands.
     * @returns a sequence with information for all supported commands.
     */
-  val Commands: SafeArray[CommandInfo] = js.native
+  val Commands: SafeArray[CommandInfo]
   
   /**
     * returns information for a specific command.
@@ -28,7 +28,7 @@ trait XCommandInfo extends XInterface {
     * @returns the information for the requested command.
     * @throws UnsupportedCommandException if the command is not supported.
     */
-  def getCommandInfoByHandle(Handle: Double): CommandInfo = js.native
+  def getCommandInfoByHandle(Handle: Double): CommandInfo
   
   /**
     * returns information for a specific command.
@@ -36,27 +36,27 @@ trait XCommandInfo extends XInterface {
     * @returns the information for the requested command.
     * @throws UnsupportedCommandException if the command is not supported.
     */
-  def getCommandInfoByName(Name: String): CommandInfo = js.native
+  def getCommandInfoByName(Name: String): CommandInfo
   
   /**
     * obtains information for all supported commands.
     * @returns a sequence with information for all supported commands.
     */
-  def getCommands(): SafeArray[CommandInfo] = js.native
+  def getCommands(): SafeArray[CommandInfo]
   
   /**
     * checks whether a specific command is supported.
     * @param Handle specifies the handle of the requested command.
     * @returns `TRUE` if a command with the specified handle is supported; otherwise `FALSE` is returned.
     */
-  def hasCommandByHandle(Handle: Double): Boolean = js.native
+  def hasCommandByHandle(Handle: Double): Boolean
   
   /**
     * checks whether a command specific is supported.
     * @param Name specifies the name of the requested command.
     * @returns `TRUE` if a command with the specified name is supported; otherwise `FALSE` is returned.
     */
-  def hasCommandByName(Name: String): Boolean = js.native
+  def hasCommandByName(Name: String): Boolean
 }
 object XCommandInfo {
   

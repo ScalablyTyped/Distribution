@@ -4,19 +4,23 @@ import typings.react.mod.global.JSX.Element
 import typings.reactToastify.typesMod.ToastTransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssTransitionMod {
   
-  @JSImport("react-toastify/dist/utils/cssTransition", "cssTransition")
+  @JSImport("react-toastify/dist/utils/cssTransition", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
     /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
     Element
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitDurationAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+    Element
+  ]]
   
-  @js.native
   trait CSSTransitionProps extends StObject {
     
     /**
@@ -24,36 +28,36 @@ object cssTransitionMod {
       * For instance `myclass--top-center`...
       * `Default: false`
       */
-    var appendPosition: js.UndefOr[Boolean] = js.native
+    var appendPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Collapse toast smoothly when animation end
       * `Default: true`
       */
-    var collapse: js.UndefOr[Boolean] = js.native
+    var collapse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Collapse transition duration
       * `Default: 300`
       */
-    var collapseDuration: js.UndefOr[Double] = js.native
+    var collapseDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Define the duration of the transition in ms
       * You can also pass an array `[enterDuration, exitDuration]`
       * `Default: 750`
       */
-    var duration: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var duration: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
     /**
       * Css class to apply when toast enter
       */
-    var enter: String = js.native
+    var enter: String
     
     /**
       * Css class to apply when toast leave
       */
-    var exit: String = js.native
+    var exit: String
   }
   object CSSTransitionProps {
     

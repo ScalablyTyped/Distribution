@@ -7,7 +7,6 @@ import typings.twilsock.twilsockMod.TwilsockChannel.State
 import typings.twilsock.websocketchannelMod.WebSocketChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twilsockMod {

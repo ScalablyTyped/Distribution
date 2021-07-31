@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChannelsList extends StandardParameters {
+trait ParamsResourceChannelsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The categoryId parameter specifies a YouTube guide category, thereby
     * requesting YouTube channels associated with that category.
     */
-  var categoryId: js.UndefOr[String] = js.native
+  var categoryId: js.UndefOr[String] = js.undefined
   
   /**
     * The forUsername parameter specifies a YouTube username, thereby
     * requesting the channel associated with that username.
     */
-  var forUsername: js.UndefOr[String] = js.native
+  var forUsername: js.UndefOr[String] = js.undefined
   
   /**
     * The hl parameter should be used for filter out the properties that are
     * not in the given language. Used for the brandingSettings part.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of the YouTube channel
     * ID(s) for the resource(s) that are being retrieved. In a channel
     * resource, the id property specifies the channel's YouTube channel ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -50,25 +50,25 @@ trait ParamsResourceChannelsList extends StandardParameters {
     * authenticated as a CMS account linked to the specified content owner and
     * onBehalfOfContentOwner must be provided.
     */
-  var managedByMe: js.UndefOr[Boolean] = js.native
+  var managedByMe: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this parameter's value to true to instruct the API to only return
     * channels owned by the authenticated user.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use the subscriptions.list method and its mySubscribers parameter to
     * retrieve a list of subscribers to the authenticated user's channel.
     */
-  var mySubscribers: js.UndefOr[Boolean] = js.native
+  var mySubscribers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -82,14 +82,14 @@ trait ParamsResourceChannelsList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken and
     * prevPageToken properties identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -100,7 +100,7 @@ trait ParamsResourceChannelsList extends StandardParameters {
     * the uploads properties. As such, if you set part=contentDetails, the API
     * response will also contain all of those nested properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceChannelsList {
   

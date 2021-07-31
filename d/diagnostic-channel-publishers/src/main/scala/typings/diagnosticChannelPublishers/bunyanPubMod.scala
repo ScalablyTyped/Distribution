@@ -3,25 +3,26 @@ package typings.diagnosticChannelPublishers
 import typings.diagnosticChannel.patchRequireMod.IModulePatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bunyanPubMod {
+  
+  @JSImport("diagnostic-channel-publishers/dist/src/bunyan.pub", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("diagnostic-channel-publishers/dist/src/bunyan.pub", "bunyan")
   @js.native
   val bunyan: IModulePatcher = js.native
   
-  @JSImport("diagnostic-channel-publishers/dist/src/bunyan.pub", "enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
-  @js.native
   trait IBunyanData extends StObject {
     
-    var level: Double = js.native
+    var level: Double
     
-    var result: String = js.native
+    var result: String
   }
   object IBunyanData {
     

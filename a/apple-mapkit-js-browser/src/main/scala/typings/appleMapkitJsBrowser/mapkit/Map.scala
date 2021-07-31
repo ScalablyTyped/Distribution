@@ -24,7 +24,6 @@ import typings.std.DOMPoint
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,7 +47,7 @@ trait Map extends StObject {
     `type`: deselect,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ]
   ): Unit = js.native
@@ -57,7 +56,7 @@ trait Map extends StObject {
     `type`: deselect,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ],
     thisObject: T
@@ -76,12 +75,12 @@ trait Map extends StObject {
   @JSName("addEventListener")
   def addEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
@@ -89,7 +88,7 @@ trait Map extends StObject {
     `type`: dragging,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Coordinate, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Coordinate, 
       Unit
     ]
   ): Unit = js.native
@@ -98,7 +97,7 @@ trait Map extends StObject {
     `type`: dragging,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Coordinate, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Coordinate, 
       Unit
     ],
     thisObject: T
@@ -106,12 +105,12 @@ trait Map extends StObject {
   @JSName("addEventListener")
   def addEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
@@ -195,7 +194,7 @@ trait Map extends StObject {
     `type`: select,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ]
   ): Unit = js.native
@@ -204,7 +203,7 @@ trait Map extends StObject {
     `type`: select,
     listener: js.ThisFunction1[
       /* this */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ],
     thisObject: T
@@ -223,23 +222,23 @@ trait Map extends StObject {
   @JSName("addEventListener")
   def addEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with Timestamp, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & Timestamp, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with Timestamp, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & Timestamp, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_userlocationerror[T](
     `type`: `user-location-error`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with Code, Unit]
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & Code, Unit]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_userlocationerror[T](
     `type`: `user-location-error`,
-    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] with Code, Unit],
+    listener: js.ThisFunction1[/* this */ T, /* event */ EventBase[this.type] & Code, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("addEventListener")
@@ -433,7 +432,7 @@ trait Map extends StObject {
     `type`: deselect,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ]
   ): Unit = js.native
@@ -442,7 +441,7 @@ trait Map extends StObject {
     `type`: deselect,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ],
     thisObject: T
@@ -458,12 +457,12 @@ trait Map extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragend[T](
     `type`: `drag-end`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -471,7 +470,7 @@ trait Map extends StObject {
     `type`: dragging,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Coordinate, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Coordinate, 
       Unit
     ]
   ): Unit = js.native
@@ -480,7 +479,7 @@ trait Map extends StObject {
     `type`: dragging,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Coordinate, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Coordinate, 
       Unit
     ],
     thisObject: T
@@ -488,12 +487,12 @@ trait Map extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_dragstart[T](
     `type`: `drag-start`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with AnnotationAnnotation, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & AnnotationAnnotation, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -564,7 +563,7 @@ trait Map extends StObject {
     `type`: select,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ]
   ): Unit = js.native
@@ -573,7 +572,7 @@ trait Map extends StObject {
     `type`: select,
     listener: js.Function2[
       /* type */ T, 
-      /* event */ EventBase[this.type] with typings.appleMapkitJsBrowser.anon.Annotation, 
+      /* event */ EventBase[this.type] & typings.appleMapkitJsBrowser.anon.Annotation, 
       Unit
     ],
     thisObject: T
@@ -589,23 +588,23 @@ trait Map extends StObject {
   @JSName("removeEventListener")
   def removeEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with Timestamp, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & Timestamp, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_userlocationchange[T](
     `type`: `user-location-change`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with Timestamp, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & Timestamp, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_userlocationerror[T](
     `type`: `user-location-error`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with Code, Unit]
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & Code, Unit]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_userlocationerror[T](
     `type`: `user-location-error`,
-    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] with Code, Unit],
+    listener: js.Function2[/* type */ T, /* event */ EventBase[this.type] & Code, Unit],
     thisObject: T
   ): Unit = js.native
   @JSName("removeEventListener")

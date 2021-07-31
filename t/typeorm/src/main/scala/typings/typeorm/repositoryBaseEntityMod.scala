@@ -17,7 +17,6 @@ import typings.typeorm.resultInsertResultMod.InsertResult
 import typings.typeorm.resultUpdateResultMod.UpdateResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryBaseEntityMod {
@@ -72,9 +71,8 @@ object repositoryBaseEntityMod {
     /**
       * Clears all the data from the given table/collection (truncates/drops it).
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.clear")
-    @js.native
-    def clear[T /* <: BaseEntity */](): js.Promise[Unit] = js.native
+    @scala.inline
+    def clear[T /* <: BaseEntity */](): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Unit]]
     
     /**
       * Counts entities that match given options.
@@ -82,46 +80,38 @@ object repositoryBaseEntityMod {
     /**
       * Counts entities that match given conditions.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.count")
-    @js.native
-    def count[T /* <: BaseEntity */](): js.Promise[Double] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.count")
-    @js.native
-    def count[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[Double] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.count")
-    @js.native
-    def count[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[Double] = js.native
+    @scala.inline
+    def count[T /* <: BaseEntity */](): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def count[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(conditions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def count[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("count")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Creates a new entity instance.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.create")
-    @js.native
-    def create[T /* <: BaseEntity */](): T = js.native
+    @scala.inline
+    def create[T /* <: BaseEntity */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[T]
     /**
       * Creates a new entities and copies all entity properties from given objects into their new entities.
       * Note that it copies only properties that present in entity schema.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.create")
-    @js.native
-    def create[T /* <: BaseEntity */](entityLikeArray: js.Array[DeepPartial[T]]): js.Array[T] = js.native
+    @scala.inline
+    def create[T /* <: BaseEntity */](entityLikeArray: js.Array[DeepPartial[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityLikeArray.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
     /**
       * Creates a new entity instance and copies all entity properties from this object into a new entity.
       * Note that it copies only properties that present in entity schema.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.create")
-    @js.native
-    def create[T /* <: BaseEntity */](entityLike: DeepPartial[T]): T = js.native
+    @scala.inline
+    def create[T /* <: BaseEntity */](entityLike: DeepPartial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityLike.asInstanceOf[js.Any]).asInstanceOf[T]
     
     /**
       * Creates a new query builder that can be used to build a sql query.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.createQueryBuilder")
-    @js.native
-    def createQueryBuilder[T /* <: BaseEntity */](): SelectQueryBuilder[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.createQueryBuilder")
-    @js.native
-    def createQueryBuilder[T /* <: BaseEntity */](alias: String): SelectQueryBuilder[T] = js.native
+    @scala.inline
+    def createQueryBuilder[T /* <: BaseEntity */](): SelectQueryBuilder[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryBuilder")().asInstanceOf[SelectQueryBuilder[T]]
+    @scala.inline
+    def createQueryBuilder[T /* <: BaseEntity */](alias: String): SelectQueryBuilder[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryBuilder")(alias.asInstanceOf[js.Any]).asInstanceOf[SelectQueryBuilder[T]]
     
     /**
       * Deletes entities by a given criteria.
@@ -129,42 +119,30 @@ object repositoryBaseEntityMod {
       * Executes fast and efficient DELETE query.
       * Does not check if entity exist in the database.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: String): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: String, options: RemoveOptions): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String]): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String], options: RemoveOptions): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: Double): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: Double, options: RemoveOptions): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: Date): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: Date, options: RemoveOptions): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: FindConditions[T]): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: FindConditions[T], options: RemoveOptions): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: ObjectID): js.Promise[DeleteResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.delete")
-    @js.native
-    def delete[T /* <: BaseEntity */](criteria: ObjectID, options: RemoveOptions): js.Promise[DeleteResult] = js.native
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: String): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: String, options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String]): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String], options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: Double): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: Double, options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: Date): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: Date, options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: FindConditions[T]): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: FindConditions[T], options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: ObjectID): js.Promise[DeleteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DeleteResult]]
+    @scala.inline
+    def delete[T /* <: BaseEntity */](criteria: ObjectID, options: RemoveOptions): js.Promise[DeleteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(criteria.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteResult]]
     
     /**
       * Finds entities that match given options.
@@ -172,15 +150,12 @@ object repositoryBaseEntityMod {
     /**
       * Finds entities that match given conditions.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.find")
-    @js.native
-    def find[T /* <: BaseEntity */](): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.find")
-    @js.native
-    def find[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.find")
-    @js.native
-    def find[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[js.Array[T]] = js.native
+    @scala.inline
+    def find[T /* <: BaseEntity */](): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")().asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def find[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(conditions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def find[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
     
     /**
       * Finds entities that match given find options.
@@ -192,15 +167,12 @@ object repositoryBaseEntityMod {
       * Also counts all entities that match given conditions,
       * but ignores pagination settings (from and take options).
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findAndCount")
-    @js.native
-    def findAndCount[T /* <: BaseEntity */](): js.Promise[js.Tuple2[js.Array[T], Double]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findAndCount")
-    @js.native
-    def findAndCount[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.Tuple2[js.Array[T], Double]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findAndCount")
-    @js.native
-    def findAndCount[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[js.Tuple2[js.Array[T], Double]] = js.native
+    @scala.inline
+    def findAndCount[T /* <: BaseEntity */](): js.Promise[js.Tuple2[js.Array[T], Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAndCount")().asInstanceOf[js.Promise[js.Tuple2[js.Array[T], Double]]]
+    @scala.inline
+    def findAndCount[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.Tuple2[js.Array[T], Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAndCount")(conditions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[T], Double]]]
+    @scala.inline
+    def findAndCount[T /* <: BaseEntity */](options: FindManyOptions[T]): js.Promise[js.Tuple2[js.Array[T], Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAndCount")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[js.Array[T], Double]]]
     
     /**
       * Finds entities by ids.
@@ -210,15 +182,12 @@ object repositoryBaseEntityMod {
       * Finds entities by ids.
       * Optionally conditions can be applied.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findByIds")
-    @js.native
-    def findByIds[T /* <: BaseEntity */](ids: js.Array[_]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findByIds")
-    @js.native
-    def findByIds[T /* <: BaseEntity */](ids: js.Array[_], conditions: FindConditions[T]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findByIds")
-    @js.native
-    def findByIds[T /* <: BaseEntity */](ids: js.Array[_], options: FindManyOptions[T]): js.Promise[js.Array[T]] = js.native
+    @scala.inline
+    def findByIds[T /* <: BaseEntity */](ids: js.Array[js.Any]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(ids.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def findByIds[T /* <: BaseEntity */](ids: js.Array[js.Any], conditions: FindConditions[T]): js.Promise[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(ids.asInstanceOf[js.Any], conditions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def findByIds[T /* <: BaseEntity */](ids: js.Array[js.Any], options: FindManyOptions[T]): js.Promise[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(ids.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T]]]
     
     /**
       * Finds first entity that matches given options.
@@ -226,45 +195,32 @@ object repositoryBaseEntityMod {
     /**
       * Finds first entity that matches given conditions.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](conditions: FindConditions[T], options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: js.UndefOr[scala.Nothing], options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: String): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: String, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: Double): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: Double, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: Date): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: Date, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: ObjectID): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](id: ObjectID, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOne")
-    @js.native
-    def findOne[T /* <: BaseEntity */](options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = js.native
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")().asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(conditions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](conditions: FindConditions[T], options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(conditions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: String): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: String, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: Double): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: Double, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: Unit, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: Date): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: Date, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: ObjectID): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](id: ObjectID, options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[T]]]
+    @scala.inline
+    def findOne[T /* <: BaseEntity */](options: FindOneOptions[T]): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOne")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
     
     /**
       * Finds first entity that matches given options.
@@ -272,93 +228,72 @@ object repositoryBaseEntityMod {
     /**
       * Finds first entity that matches given conditions.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](conditions: FindConditions[T], options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: js.UndefOr[scala.Nothing], options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: String): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: String, options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: Double): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: Double, options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: Date): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: Date, options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: ObjectID): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](id: ObjectID, options: FindOneOptions[T]): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.findOneOrFail")
-    @js.native
-    def findOneOrFail[T /* <: BaseEntity */](options: FindOneOptions[T]): js.Promise[T] = js.native
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")().asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](conditions: FindConditions[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(conditions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](conditions: FindConditions[T], options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(conditions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: String, options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: Double): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: Double, options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: Unit, options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: Date): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: Date, options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: ObjectID): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](id: ObjectID, options: FindOneOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(id.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def findOneOrFail[T /* <: BaseEntity */](options: FindOneOptions[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("findOneOrFail")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
     
     /**
       * Gets entity mixed id.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.getId")
-    @js.native
-    def getId[T /* <: BaseEntity */](entity: T): js.Any = js.native
+    @scala.inline
+    def getId[T /* <: BaseEntity */](entity: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets current entity's Repository.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.getRepository")
-    @js.native
-    def getRepository[T /* <: BaseEntity */](): Repository[T] = js.native
+    @scala.inline
+    def getRepository[T /* <: BaseEntity */](): Repository[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")().asInstanceOf[Repository[T]]
     
     /**
       * Checks entity has an id.
       * If entity composite compose ids, it will check them all.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.hasId")
-    @js.native
-    def hasId(entity: BaseEntity): Boolean = js.native
+    @scala.inline
+    def hasId(entity: BaseEntity): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasId")(entity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.insert")
-    @js.native
-    def insert[T /* <: BaseEntity */](entity: js.Array[QueryDeepPartialEntity[T]]): js.Promise[InsertResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.insert")
-    @js.native
-    def insert[T /* <: BaseEntity */](entity: js.Array[QueryDeepPartialEntity[T]], options: SaveOptions): js.Promise[InsertResult] = js.native
+    @scala.inline
+    def insert[T /* <: BaseEntity */](entity: js.Array[QueryDeepPartialEntity[T]]): js.Promise[InsertResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InsertResult]]
+    @scala.inline
+    def insert[T /* <: BaseEntity */](entity: js.Array[QueryDeepPartialEntity[T]], options: SaveOptions): js.Promise[InsertResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InsertResult]]
     /**
       * Inserts a given entity into the database.
       * Unlike save method executes a primitive operation without cascades, relations and other operations included.
       * Executes fast and efficient INSERT query.
       * Does not check if entity exist in the database, so query will fail if duplicate entity is being inserted.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.insert")
-    @js.native
-    def insert[T /* <: BaseEntity */](entity: QueryDeepPartialEntity[T]): js.Promise[InsertResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.insert")
-    @js.native
-    def insert[T /* <: BaseEntity */](entity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[InsertResult] = js.native
+    @scala.inline
+    def insert[T /* <: BaseEntity */](entity: QueryDeepPartialEntity[T]): js.Promise[InsertResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("insert")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InsertResult]]
+    @scala.inline
+    def insert[T /* <: BaseEntity */](entity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[InsertResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InsertResult]]
     
     /**
       * Merges multiple entities (or entity-like objects) into a given entity.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.merge")
-    @js.native
-    def merge[T /* <: BaseEntity */](mergeIntoEntity: T, entityLikes: DeepPartial[T]*): T = js.native
+    @scala.inline
+    def merge[T /* <: BaseEntity */](mergeIntoEntity: T, entityLikes: DeepPartial[T]*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(mergeIntoEntity.asInstanceOf[js.Any], entityLikes.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Creates a new entity from the given plain javascript object. If entity already exist in the database, then
@@ -369,79 +304,64 @@ object repositoryBaseEntityMod {
       * Note that given entity-like object must have an entity id / primary key to find entity by.
       * Returns undefined if entity with given id was not found.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.preload")
-    @js.native
-    def preload[T /* <: BaseEntity */](entityLike: DeepPartial[T]): js.Promise[js.UndefOr[T]] = js.native
+    @scala.inline
+    def preload[T /* <: BaseEntity */](entityLike: DeepPartial[T]): js.Promise[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("preload")(entityLike.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[T]]]
     
     /**
       * Executes a raw SQL query and returns a raw database results.
       * Raw query execution is supported only by relational databases (MongoDB is not supported).
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.query")
-    @js.native
-    def query[T /* <: BaseEntity */](query: String): js.Promise[_] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.query")
-    @js.native
-    def query[T /* <: BaseEntity */](query: String, parameters: js.Array[_]): js.Promise[_] = js.native
+    @scala.inline
+    def query[T /* <: BaseEntity */](query: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def query[T /* <: BaseEntity */](query: String, parameters: js.Array[js.Any]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Removes a given entities from the database.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.remove")
-    @js.native
-    def remove[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.remove")
-    @js.native
-    def remove[T /* <: BaseEntity */](entities: js.Array[T], options: RemoveOptions): js.Promise[js.Array[T]] = js.native
+    @scala.inline
+    def remove[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(entities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def remove[T /* <: BaseEntity */](entities: js.Array[T], options: RemoveOptions): js.Promise[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T]]]
     /**
       * Removes a given entity from the database.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.remove")
-    @js.native
-    def remove[T /* <: BaseEntity */](entity: T): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.remove")
-    @js.native
-    def remove[T /* <: BaseEntity */](entity: T, options: RemoveOptions): js.Promise[T] = js.native
+    @scala.inline
+    def remove[T /* <: BaseEntity */](entity: T): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def remove[T /* <: BaseEntity */](entity: T, options: RemoveOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
     
     /**
       * Saves all given entities in the database.
       * If entities do not exist in the database then inserts, otherwise updates.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.save")
-    @js.native
-    def save[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.save")
-    @js.native
-    def save[T /* <: BaseEntity */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T]] = js.native
+    @scala.inline
+    def save[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(entities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def save[T /* <: BaseEntity */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T]]]
     /**
       * Saves a given entity in the database.
       * If entity does not exist in the database then inserts, otherwise updates.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.save")
-    @js.native
-    def save[T /* <: BaseEntity */](entity: T): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.save")
-    @js.native
-    def save[T /* <: BaseEntity */](entity: T, options: SaveOptions): js.Promise[T] = js.native
+    @scala.inline
+    def save[T /* <: BaseEntity */](entity: T): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def save[T /* <: BaseEntity */](entity: T, options: SaveOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
     
     /**
       * Records the delete date of all given entities.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.softRemove")
-    @js.native
-    def softRemove[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.softRemove")
-    @js.native
-    def softRemove[T /* <: BaseEntity */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T]] = js.native
+    @scala.inline
+    def softRemove[T /* <: BaseEntity */](entities: js.Array[T]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("softRemove")(entities.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
+    @scala.inline
+    def softRemove[T /* <: BaseEntity */](entities: js.Array[T], options: SaveOptions): js.Promise[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("softRemove")(entities.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[T]]]
     /**
       * Records the delete date of a given entity.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.softRemove")
-    @js.native
-    def softRemove[T /* <: BaseEntity */](entity: T): js.Promise[T] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.softRemove")
-    @js.native
-    def softRemove[T /* <: BaseEntity */](entity: T, options: SaveOptions): js.Promise[T] = js.native
+    @scala.inline
+    def softRemove[T /* <: BaseEntity */](entity: T): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("softRemove")(entity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+    @scala.inline
+    def softRemove[T /* <: BaseEntity */](entity: T, options: SaveOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("softRemove")(entity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
     
     /**
       * Returns object that is managed by this repository.
@@ -458,53 +378,40 @@ object repositoryBaseEntityMod {
       * Executes fast and efficient UPDATE query.
       * Does not check if entity exist in the database.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: String, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: String, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String], partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: String, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: String, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: js.Array[Date | Double | ObjectID | String], partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
     def update[T /* <: BaseEntity */](
       criteria: js.Array[Date | Double | ObjectID | String],
       partialEntity: QueryDeepPartialEntity[T],
       options: SaveOptions
-    ): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: Double, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: Double, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: Date, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: Date, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: FindConditions[T], partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: FindConditions[T], partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: ObjectID, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = js.native
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.update")
-    @js.native
-    def update[T /* <: BaseEntity */](criteria: ObjectID, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = js.native
+    ): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: Double, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: Double, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: Date, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: Date, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: FindConditions[T], partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: FindConditions[T], partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: ObjectID, partialEntity: QueryDeepPartialEntity[T]): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
+    @scala.inline
+    def update[T /* <: BaseEntity */](criteria: ObjectID, partialEntity: QueryDeepPartialEntity[T], options: SaveOptions): js.Promise[UpdateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(criteria.asInstanceOf[js.Any], partialEntity.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UpdateResult]]
     
     /**
       * Sets connection to be used by entity.
       */
-    @JSImport("typeorm/repository/BaseEntity", "BaseEntity.useConnection")
-    @js.native
-    def useConnection(connection: Connection): Unit = js.native
+    @scala.inline
+    def useConnection(connection: Connection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useConnection")(connection.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Connection used in all static methods of the BaseEntity.

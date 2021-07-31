@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductAvailabilityChangeEvent extends StObject {
   
   /** The new state of the product. This field will always be present. */
-  var availabilityStatus: js.UndefOr[String] = js.native
+  var availabilityStatus: js.UndefOr[String] = js.undefined
   
   /** The id of the product (e.g. "app:com.google.android.gm") for which the product availability changed. This field will always be present. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object ProductAvailabilityChangeEvent {
   

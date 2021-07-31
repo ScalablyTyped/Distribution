@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNodesResponse extends StObject {
   
   /**
@@ -14,14 +12,14 @@ trait ListNodesResponse extends StObject {
     To get another batch of nodes, provide this token in your next request.
     
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * 
     List containing a NodeInfo object.
     
     */
-  var NodeInfoList: js.UndefOr[listOfNodeInfo] = js.native
+  var NodeInfoList: js.UndefOr[listOfNodeInfo] = js.undefined
 }
 object ListNodesResponse {
   

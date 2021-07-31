@@ -2,26 +2,24 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFAnnotationData extends StObject {
   
   // [x1, y1, x2, y2]
-  var annotationFlags: js.Any = js.native
+  var annotationFlags: js.Any
   
   // [r,g,b]
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
   // todo
-  var color: js.Array[Double] = js.native
+  var color: js.Array[Double]
   
-  var hasAppearance: Boolean = js.native
+  var hasAppearance: Boolean
   
-  var rect: js.Array[Double] = js.native
+  var rect: js.Array[Double]
   
-  var subtype: String = js.native
+  var subtype: String
 }
 object PDFAnnotationData {
   

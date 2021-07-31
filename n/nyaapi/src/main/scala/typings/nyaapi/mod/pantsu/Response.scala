@@ -2,17 +2,15 @@ package typings.nyaapi.mod.pantsu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response[T] extends StObject {
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
-  var infos: js.Array[String] = js.native
+  var infos: js.Array[String]
   
-  var ok: Boolean = js.native
+  var ok: Boolean
 }
 object Response {
   
@@ -23,7 +21,7 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

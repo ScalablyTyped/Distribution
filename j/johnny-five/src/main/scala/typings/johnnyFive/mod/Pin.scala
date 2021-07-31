@@ -8,7 +8,6 @@ import typings.johnnyFive.johnnyFiveStrings.low
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Pin")
@@ -49,11 +48,13 @@ class Pin protected () extends StObject {
 /* static members */
 object Pin {
   
-  @JSImport("johnny-five", "Pin.read")
+  @JSImport("johnny-five", "Pin")
   @js.native
-  def read(pin: Double, cb: js.Function2[/* error */ Error, /* data */ Double, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("johnny-five", "Pin.write")
-  @js.native
-  def write(pin: Double, value: Double): Unit = js.native
+  @scala.inline
+  def read(pin: Double, cb: js.Function2[/* error */ Error, /* data */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pin.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def write(pin: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(pin.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

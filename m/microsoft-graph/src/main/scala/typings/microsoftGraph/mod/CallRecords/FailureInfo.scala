@@ -3,17 +3,15 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureInfo extends StObject {
   
   // Classification of why a call or portion of a call failed.
-  var reason: js.UndefOr[NullableOption[String]] = js.native
+  var reason: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The stage when the failure occurred. Possible values are: unknown, callSetup, midcall, unknownFutureValue.
-  var stage: js.UndefOr[FailureStage] = js.native
+  var stage: js.UndefOr[FailureStage] = js.undefined
 }
 object FailureInfo {
   

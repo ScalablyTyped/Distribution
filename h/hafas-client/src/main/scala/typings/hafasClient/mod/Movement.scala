@@ -2,25 +2,23 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Movement extends StObject {
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var frames: js.UndefOr[js.Array[Frame]] = js.native
+  var frames: js.UndefOr[js.Array[Frame]] = js.undefined
   
-  var line: js.UndefOr[Line] = js.native
+  var line: js.UndefOr[Line] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var nextStopovers: js.UndefOr[js.Array[StopOver]] = js.native
+  var nextStopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   
-  var polyline: js.UndefOr[FeatureCollection] = js.native
+  var polyline: js.UndefOr[FeatureCollection] = js.undefined
   
-  var tripId: js.UndefOr[String] = js.native
+  var tripId: js.UndefOr[String] = js.undefined
 }
 object Movement {
   

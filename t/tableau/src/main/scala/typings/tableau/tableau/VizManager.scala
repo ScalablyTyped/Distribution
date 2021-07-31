@@ -2,15 +2,13 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Viz Classes
-@js.native
 trait VizManager extends StObject {
   
-  def getVizs(): js.Array[Viz] = js.native
+  def getVizs(): js.Array[Viz]
 }
 object VizManager {
   

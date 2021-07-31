@@ -4,33 +4,31 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.ContainerIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconToggleProps extends StObject {
   
-  var children: js.UndefOr[Element] = js.native
+  var children: js.UndefOr[Element] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var maxOpacity: js.UndefOr[Double] = js.native
+  var maxOpacity: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[ContainerIcon] = js.native
+  var style: js.UndefOr[ContainerIcon] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
 }
 object IconToggleProps {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Subnetworks")
@@ -32,7 +31,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaSubnetworkAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaSubnetworkAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubnetworkAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubnetworkAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceSubnetworksAggregatedlist): GaxiosPromise[SchemaSubnetworkAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceSubnetworksAggregatedlist,
@@ -69,7 +68,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSubnetworksDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSubnetworksDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -102,7 +101,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def expandIpCidrRange(): GaxiosPromise[SchemaOperation] = js.native
   def expandIpCidrRange(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def expandIpCidrRange(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def expandIpCidrRange(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def expandIpCidrRange(params: ParamsResourceSubnetworksExpandipcidrrange): GaxiosPromise[SchemaOperation] = js.native
   def expandIpCidrRange(
     params: ParamsResourceSubnetworksExpandipcidrrange,
@@ -137,7 +136,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSubnetwork] = js.native
   def get(callback: BodyResponseCallback[SchemaSubnetwork]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubnetwork] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubnetwork] = js.native
   def get(params: ParamsResourceSubnetworksGet): GaxiosPromise[SchemaSubnetwork] = js.native
   def get(params: ParamsResourceSubnetworksGet, callback: BodyResponseCallback[SchemaSubnetwork]): Unit = js.native
   def get(
@@ -169,7 +168,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceSubnetworksGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceSubnetworksGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -202,7 +201,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSubnetworksInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSubnetworksInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -236,7 +235,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSubnetworkList] = js.native
   def list(callback: BodyResponseCallback[SchemaSubnetworkList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSubnetworkList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSubnetworkList] = js.native
   def list(params: ParamsResourceSubnetworksList): GaxiosPromise[SchemaSubnetworkList] = js.native
   def list(params: ParamsResourceSubnetworksList, callback: BodyResponseCallback[SchemaSubnetworkList]): Unit = js.native
   def list(
@@ -269,7 +268,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def listUsable(): GaxiosPromise[SchemaUsableSubnetworksAggregatedList] = js.native
   def listUsable(callback: BodyResponseCallback[SchemaUsableSubnetworksAggregatedList]): Unit = js.native
-  def listUsable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsableSubnetworksAggregatedList] = js.native
+  def listUsable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUsableSubnetworksAggregatedList] = js.native
   def listUsable(params: ParamsResourceSubnetworksListusable): GaxiosPromise[SchemaUsableSubnetworksAggregatedList] = js.native
   def listUsable(
     params: ParamsResourceSubnetworksListusable,
@@ -309,7 +308,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSubnetworksPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSubnetworksPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -342,7 +341,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceSubnetworksSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceSubnetworksSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -376,7 +375,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def setPrivateIpGoogleAccess(): GaxiosPromise[SchemaOperation] = js.native
   def setPrivateIpGoogleAccess(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setPrivateIpGoogleAccess(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setPrivateIpGoogleAccess(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setPrivateIpGoogleAccess(params: ParamsResourceSubnetworksSetprivateipgoogleaccess): GaxiosPromise[SchemaOperation] = js.native
   def setPrivateIpGoogleAccess(
     params: ParamsResourceSubnetworksSetprivateipgoogleaccess,
@@ -411,7 +410,7 @@ class ResourceSubnetworks protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceSubnetworksTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceSubnetworksTestiampermissions,

@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.CompartmentDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyCompartmentDefinition extends StObject {
   
-  var body: CompartmentDefinition = js.native
+  var body: CompartmentDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition
 }
 object BodyCompartmentDefinition {
   
   @scala.inline
-  def apply(
-    body: CompartmentDefinition,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.CompartmentDefinition
-  ): BodyCompartmentDefinition = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: CompartmentDefinition): BodyCompartmentDefinition = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "CompartmentDefinition")
     __obj.asInstanceOf[BodyCompartmentDefinition]
   }
   

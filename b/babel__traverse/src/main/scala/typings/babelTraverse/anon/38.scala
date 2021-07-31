@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `38` extends StObject {
   
-  var `type`: WhileStatement = js.native
+  var `type`: WhileStatement
 }
 object `38` {
   
   @scala.inline
-  def apply(`type`: WhileStatement): `38` = {
+  def apply(): `38` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[`38`]
   }
   

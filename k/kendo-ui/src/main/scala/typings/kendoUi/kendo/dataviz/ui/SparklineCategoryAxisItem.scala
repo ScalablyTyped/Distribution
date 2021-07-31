@@ -3,67 +3,65 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineCategoryAxisItem extends StObject {
   
-  var autoBaseUnitSteps: js.UndefOr[js.Any] = js.native
+  var autoBaseUnitSteps: js.UndefOr[js.Any] = js.undefined
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
+  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
   
-  var baseUnit: js.UndefOr[String] = js.native
+  var baseUnit: js.UndefOr[String] = js.undefined
   
-  var baseUnitStep: js.UndefOr[js.Any] = js.native
+  var baseUnitStep: js.UndefOr[js.Any] = js.undefined
   
-  var categories: js.UndefOr[js.Any] = js.native
+  var categories: js.UndefOr[js.Any] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[SparklineCategoryAxisItemCrosshair] = js.native
+  var crosshair: js.UndefOr[SparklineCategoryAxisItemCrosshair] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var justified: js.UndefOr[Boolean] = js.native
+  var justified: js.UndefOr[Boolean] = js.undefined
   
-  var labels: js.UndefOr[SparklineCategoryAxisItemLabels] = js.native
+  var labels: js.UndefOr[SparklineCategoryAxisItemLabels] = js.undefined
   
-  var line: js.UndefOr[SparklineCategoryAxisItemLine] = js.native
+  var line: js.UndefOr[SparklineCategoryAxisItemLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[SparklineCategoryAxisItemMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[SparklineCategoryAxisItemMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[SparklineCategoryAxisItemMajorTicks] = js.native
+  var majorTicks: js.UndefOr[SparklineCategoryAxisItemMajorTicks] = js.undefined
   
-  var max: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[js.Any] = js.undefined
   
-  var maxDateGroups: js.UndefOr[Double] = js.native
+  var maxDateGroups: js.UndefOr[Double] = js.undefined
   
-  var maxDivisions: js.UndefOr[Double] = js.native
+  var maxDivisions: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.native
+  var min: js.UndefOr[js.Any] = js.undefined
   
-  var minorGridLines: js.UndefOr[SparklineCategoryAxisItemMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[SparklineCategoryAxisItemMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[SparklineCategoryAxisItemMinorTicks] = js.native
+  var minorTicks: js.UndefOr[SparklineCategoryAxisItemMinorTicks] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[SparklineCategoryAxisItemNotes] = js.native
+  var notes: js.UndefOr[SparklineCategoryAxisItemNotes] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[SparklineCategoryAxisItemPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[SparklineCategoryAxisItemPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var roundToBaseUnit: js.UndefOr[Boolean] = js.native
+  var roundToBaseUnit: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[SparklineCategoryAxisItemTitle] = js.native
+  var title: js.UndefOr[SparklineCategoryAxisItemTitle] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var weekStartDay: js.UndefOr[Double] = js.native
+  var weekStartDay: js.UndefOr[Double] = js.undefined
 }
 object SparklineCategoryAxisItem {
   

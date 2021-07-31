@@ -5,10 +5,13 @@ import typings.seleniumWebdriver.anon.Message
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object error {
+  
+  @JSImport("selenium-webdriver", "error")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates a {@linkplain ./webdriver.WebElement#click click command} could
@@ -48,8 +51,16 @@ object error {
   
   @JSImport("selenium-webdriver", "error.IError")
   @js.native
-  class IError () extends Error {
+  class IError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /**
@@ -249,8 +260,8 @@ object error {
   @js.native
   class UnexpectedAlertOpenError () extends WebDriverError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], openAlertText: String) = this()
     def this(message: String, openAlertText: String) = this()
+    def this(message: Unit, openAlertText: String) = this()
     
     /**
       * @return {(string|undefined)} The text displayed with the unhandled alert,
@@ -302,44 +313,40 @@ object error {
   /**
     * Checks a legacy response from the Selenium 2.0 wire protocol for an error.
     */
-  @JSImport("selenium-webdriver", "error.checkLegacyResponse")
-  @js.native
-  def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = js.native
+  @scala.inline
+  def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLegacyResponse")(response.asInstanceOf[js.Any]).asInstanceOf[MaybeLegacyResponse]
   
   /**
     * Checks a response object from a server that adheres to the W3C WebDriver
     * protocol.
     */
-  @JSImport("selenium-webdriver", "error.checkResponse")
-  @js.native
-  def checkResponse(data: Response): Response = js.native
+  @scala.inline
+  def checkResponse(data: Response): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResponse")(data.asInstanceOf[js.Any]).asInstanceOf[Response]
   
   /**
     * Lookup the err in table of errors.
     */
-  @JSImport("selenium-webdriver", "error.encodeError")
-  @js.native
-  def encodeError(err: js.Any): typings.seleniumWebdriver.anon.Error = js.native
+  @scala.inline
+  def encodeError(err: js.Any): typings.seleniumWebdriver.anon.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[typings.seleniumWebdriver.anon.Error]
   
-  @JSImport("selenium-webdriver", "error.throwDecodedError")
-  @js.native
-  def throwDecodedError(data: String): scala.Nothing = js.native
+  @scala.inline
+  def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   /**
     * Throws an error coded from the W3C protocol. A generic error will be thrown
     * if the provided `data` is not a valid encoded error.
     */
-  @JSImport("selenium-webdriver", "error.throwDecodedError")
-  @js.native
-  def throwDecodedError(data: ErrorData): scala.Nothing = js.native
+  @scala.inline
+  def throwDecodedError(data: ErrorData): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
   type ErrorCodeType = StringDictionary[Double]
   
-  @js.native
-  trait ErrorData extends /* key */ StringDictionary[String | Double] {
+  trait ErrorData
+    extends StObject
+       with /* key */ StringDictionary[String | Double] {
     
-    var error: String | Double = js.native
+    var error: String | Double
     
-    var message: String = js.native
+    var message: String
   }
   object ErrorData {
     
@@ -360,16 +367,15 @@ object error {
     }
   }
   
-  @js.native
   trait MaybeLegacyResponse extends StObject {
     
-    var getAlertText: js.UndefOr[js.Function0[String]] = js.native
+    var getAlertText: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Message] = js.native
+    var value: js.UndefOr[Message] = js.undefined
   }
   object MaybeLegacyResponse {
     
@@ -408,12 +414,11 @@ object error {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var error: String | Double = js.native
+    var error: String | Double
     
-    var message: String = js.native
+    var message: String
   }
   object Response {
     

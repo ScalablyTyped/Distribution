@@ -10,9 +10,9 @@ TypeScript typings for Google Cloud Data Catalog API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datacatalog |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 37 |
+| # releases         | 11 |
+| # dependents       | 1 |
+| # downloads        | 1154 |
 | # stars            | 0 |
 
 ## Links

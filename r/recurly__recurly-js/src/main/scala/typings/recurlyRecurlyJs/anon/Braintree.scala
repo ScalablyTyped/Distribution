@@ -2,17 +2,15 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Braintree extends StObject {
   
-  var braintree: js.UndefOr[DeviceData] = js.native
+  var braintree: js.UndefOr[DeviceData] = js.undefined
   
-  var kount: js.UndefOr[DataCollector] = js.native
+  var kount: js.UndefOr[DataCollector] = js.undefined
   
-  var litle: js.UndefOr[SessionId] = js.native
+  var litle: js.UndefOr[SessionId] = js.undefined
 }
 object Braintree {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Urlcrawlerrorssamples")
@@ -33,7 +32,7 @@ class ResourceUrlcrawlerrorssamples protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUrlCrawlErrorsSample] = js.native
   def get(callback: BodyResponseCallback[SchemaUrlCrawlErrorsSample]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsSample] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsSample] = js.native
   def get(params: ParamsResourceUrlcrawlerrorssamplesGet): GaxiosPromise[SchemaUrlCrawlErrorsSample] = js.native
   def get(
     params: ParamsResourceUrlcrawlerrorssamplesGet,
@@ -68,7 +67,7 @@ class ResourceUrlcrawlerrorssamples protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUrlCrawlErrorsSamplesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUrlCrawlErrorsSamplesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsSamplesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsSamplesListResponse] = js.native
   def list(params: ParamsResourceUrlcrawlerrorssamplesList): GaxiosPromise[SchemaUrlCrawlErrorsSamplesListResponse] = js.native
   def list(
     params: ParamsResourceUrlcrawlerrorssamplesList,
@@ -104,7 +103,7 @@ class ResourceUrlcrawlerrorssamples protected () extends StObject {
     */
   def markAsFixed(): GaxiosPromise[Unit] = js.native
   def markAsFixed(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def markAsFixed(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def markAsFixed(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def markAsFixed(params: ParamsResourceUrlcrawlerrorssamplesMarkasfixed): GaxiosPromise[Unit] = js.native
   def markAsFixed(params: ParamsResourceUrlcrawlerrorssamplesMarkasfixed, callback: BodyResponseCallback[Unit]): Unit = js.native
   def markAsFixed(

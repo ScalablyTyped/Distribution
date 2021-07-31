@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocReturnEventObject extends StObject {
   
   @JSName("InfoPath.DocReturnEventObject_typekey")
-  var InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject = js.native
+  var InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject
   
-  var ReturnStatus: Boolean = js.native
+  var ReturnStatus: Boolean
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object DocReturnEventObject {
   

@@ -2,12 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal]
-  extends TextColorProps[ThemeType, TVal]
+  extends StObject
+     with TextColorProps[ThemeType, TVal]
      with BackgroundColorProps[ThemeType, TVal]
      with OpacityProps[RequiredTheme]
 object ColorProps {

@@ -2,17 +2,15 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateURL extends StObject {
   
-  def createURL(args: js.Any*): String = js.native
+  def createURL(args: js.Any*): String
   
-  def refine(args: js.Any*): js.Any = js.native
+  def refine(args: js.Any*): js.Any
   
-  def searchForItems(args: js.Any*): js.Any = js.native
+  def searchForItems(args: js.Any*): js.Any
 }
 object CreateURL {
   

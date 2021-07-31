@@ -2,18 +2,16 @@ package typings.tabtab
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<tabtab.tabtab.CompletionItem> */
-  @js.native
   trait ReadonlyCompletionItem extends StObject {
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    val name: String = js.native
+    val name: String
   }
   object ReadonlyCompletionItem {
     

@@ -2,17 +2,15 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpEventAddRequest extends StObject {
   
   /** TpEventAddRequest contextId */
-  var contextId: js.UndefOr[String | Null] = js.native
+  var contextId: js.UndefOr[String | Null] = js.undefined
   
   /** TpEventAddRequest event */
-  var event: js.UndefOr[IEvent | Null] = js.native
+  var event: js.UndefOr[IEvent | Null] = js.undefined
 }
 object ITpEventAddRequest {
   

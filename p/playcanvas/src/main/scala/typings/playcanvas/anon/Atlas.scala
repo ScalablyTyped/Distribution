@@ -3,19 +3,17 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.TextureAtlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Atlas extends StObject {
   
-  var atlas: js.UndefOr[TextureAtlas] = js.native
+  var atlas: js.UndefOr[TextureAtlas] = js.undefined
   
-  var frameKeys: js.UndefOr[js.Array[String]] = js.native
+  var frameKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pixelsPerUnit: js.UndefOr[Double] = js.native
+  var pixelsPerUnit: js.UndefOr[Double] = js.undefined
   
-  var renderMode: js.UndefOr[Double] = js.native
+  var renderMode: js.UndefOr[Double] = js.undefined
 }
 object Atlas {
   

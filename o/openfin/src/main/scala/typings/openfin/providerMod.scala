@@ -7,7 +7,6 @@ import typings.openfin.shapesIdentityMod.ClientIdentity
 import typings.openfin.shapesIdentityMod.ProviderIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerMod {
@@ -25,16 +24,16 @@ object providerMod {
     
     var disconnectListener: js.Any = js.native
     
-    def dispatch(to: Identity, action: String): js.Promise[_] = js.native
-    def dispatch(to: Identity, action: String, payload: js.Any): js.Promise[_] = js.native
+    def dispatch(to: Identity, action: String): js.Promise[js.Any] = js.native
+    def dispatch(to: Identity, action: String, payload: js.Any): js.Promise[js.Any] = js.native
     
     def onConnection(listener: ConnectionListener): Unit = js.native
     
     def onDisconnection(listener: DisconnectionListener): Unit = js.native
     
-    def processConnection(senderId: Identity, payload: js.Any): js.Promise[_] = js.native
+    def processConnection(senderId: Identity, payload: js.Any): js.Promise[js.Any] = js.native
     
-    def publish(action: String, payload: js.Any): js.Array[js.Promise[_]] = js.native
+    def publish(action: String, payload: js.Any): js.Array[js.Promise[js.Any]] = js.native
   }
   
   type ConnectionListener = js.Function2[/* identity */ Identity, /* connectionMessage */ js.UndefOr[js.Any], js.Any]

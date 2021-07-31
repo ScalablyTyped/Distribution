@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsS3BucketDetails extends StObject {
   
   /**
     * Indicates when the S3 bucket was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedAt: js.UndefOr[NonEmptyString] = js.native
+  var CreatedAt: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The canonical user ID of the owner of the S3 bucket.
     */
-  var OwnerId: js.UndefOr[NonEmptyString] = js.native
+  var OwnerId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The display name of the owner of the S3 bucket.
     */
-  var OwnerName: js.UndefOr[NonEmptyString] = js.native
+  var OwnerName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The encryption rules that are applied to the S3 bucket.
     */
-  var ServerSideEncryptionConfiguration: js.UndefOr[AwsS3BucketServerSideEncryptionConfiguration] = js.native
+  var ServerSideEncryptionConfiguration: js.UndefOr[AwsS3BucketServerSideEncryptionConfiguration] = js.undefined
 }
 object AwsS3BucketDetails {
   

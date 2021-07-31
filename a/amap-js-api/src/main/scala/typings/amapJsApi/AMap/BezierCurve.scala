@@ -2,11 +2,12 @@ package typings.amapJsApi.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BezierCurve[ExtraData] extends Polyline[ExtraData] {
+trait BezierCurve[ExtraData]
+  extends StObject
+     with Polyline[ExtraData] {
   
   // internal
   def getInterpolateLngLats(): js.Array[LngLat] = js.native
@@ -17,9 +18,9 @@ object BezierCurve {
   
   type EventMap[I] = typings.amapJsApi.AMap.Polyline.EventMap[I]
   
-  @js.native
   trait GetOptionsResult[ExtraData]
-    extends typings.amapJsApi.AMap.Polyline.GetOptionsResult[ExtraData]
+    extends StObject
+       with typings.amapJsApi.AMap.Polyline.GetOptionsResult[ExtraData]
   object GetOptionsResult {
     
     @scala.inline
@@ -51,75 +52,74 @@ object BezierCurve {
   }
   
   /* Inlined amap-js-api.AMap.Merge<amap-js-api.AMap.Polyline.Options<ExtraData>, {  path :std.Array<std.Array<number | string | std.Array<string | number>>>,   tolerance :number | undefined,   interpolateNumLimit :[number] | undefined}> */
-  @js.native
   trait Options[ExtraData] extends StObject {
     
     /**
       * 描边的宽度
       */
-    var borderWeight: js.UndefOr[Double] = js.native
+    var borderWeight: js.UndefOr[Double] = js.undefined
     
     /**
       * 事件是否穿透到地图
       */
-    var bubble: js.UndefOr[Boolean] = js.native
+    var bubble: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否支持点击
       */
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 鼠标悬停时的鼠标样式
       */
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
     /**
       * 方向箭头颜色
       */
-    var dirColor: js.UndefOr[String] = js.native
+    var dirColor: js.UndefOr[String] = js.undefined
     
     /**
       * 是否支持拖拽
       */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 自定义数据
       */
-    var extData: js.UndefOr[ExtraData] = js.native
+    var extData: js.UndefOr[ExtraData] = js.undefined
     
     /**
       * 是否绘制成大地线
       */
-    var geodesic: js.UndefOr[Boolean] = js.native
+    var geodesic: js.UndefOr[Boolean] = js.undefined
     
-    var interpolateNumLimit: js.UndefOr[js.Array[Double]] = js.native
+    var interpolateNumLimit: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * 线条是否带描边
       */
-    var isOutline: js.UndefOr[Boolean] = js.native
+    var isOutline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 折线两端线帽的绘制样式
       */
-    var lineCap: js.UndefOr[StrokeLineCap] = js.native
+    var lineCap: js.UndefOr[StrokeLineCap] = js.undefined
     
     /**
       * 折线拐点的绘制样式
       */
-    var lineJoin: js.UndefOr[StrokeLineJoin] = js.native
+    var lineJoin: js.UndefOr[StrokeLineJoin] = js.undefined
     
     /**
       * 所属地图
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
     /**
       * 线条描边颜色
       */
-    var outlineColor: js.UndefOr[String] = js.native
+    var outlineColor: js.UndefOr[String] = js.undefined
     
     // internal
     /**
@@ -128,63 +128,63 @@ object BezierCurve {
     /**
       * 贝瑟尔曲线的路径
       */
-    var path: js.UndefOr[js.Array[LocationValue]] with (js.Array[js.Array[Double | String | (js.Array[String | Double])]]) = js.native
+    var path: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
     
     /**
       * 是否延路径显示方向箭头
       */
-    var showDir: js.UndefOr[Boolean] = js.native
+    var showDir: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 描边线条颜色
       */
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
     /**
       * 虚线间隔
       */
-    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.native
+    var strokeDasharray: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * 描边线条透明度
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 描边样式
       */
-    var strokeStyle: js.UndefOr[StrokeStyle] = js.native
+    var strokeStyle: js.UndefOr[StrokeStyle] = js.undefined
     
     /**
       * 描边宽度
       */
-    var strokeWeight: js.UndefOr[Double] = js.native
+    var strokeWeight: js.UndefOr[Double] = js.undefined
     
     // internal
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * 是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 覆盖物层级
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
     @scala.inline
     def apply[ExtraData](
-      path: js.UndefOr[js.Array[LocationValue]] with (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
+      path: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
     ): Options[ExtraData] = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setBorderWeight(value: Double): Self = StObject.set(x, "borderWeight", value.asInstanceOf[js.Any])
@@ -275,7 +275,7 @@ object BezierCurve {
       
       @scala.inline
       def setPath(
-        value: js.UndefOr[js.Array[LocationValue]] with (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
+        value: js.UndefOr[js.Array[LocationValue]] & (js.Array[js.Array[Double | String | (js.Array[String | Double])]])
       ): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline

@@ -2,52 +2,50 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelColor extends StObject {
   
   /**
     * 取消按钮的文字颜色，必须是 16 进制格式的颜色字符串，默认值#000000
     */
-  var cancelColor: js.UndefOr[String] = js.native
+  var cancelColor: js.UndefOr[String] = js.undefined
   
   /**
     * 取消按钮的文字，最多 4 个字符串
     */
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 确认按钮的文字颜色，必须是 16 进制格式的颜色字符串，默认值#3cc51f
     */
-  var confirmColor: js.UndefOr[String] = js.native
+  var confirmColor: js.UndefOr[String] = js.undefined
   
   /**
     * 确认按钮的文字，最多 4 个字符串
     */
-  var confirmText: js.UndefOr[String] = js.native
+  var confirmText: js.UndefOr[String] = js.undefined
   
   /**
     * 提示的内容
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 是否显示取消按钮，默认true
     */
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ Cancel, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Cancel, Unit]] = js.undefined
   
   /**
     * 提示的标题
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object CancelColor {
   

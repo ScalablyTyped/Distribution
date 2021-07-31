@@ -2,15 +2,13 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcPolicyFailureInfo extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var policyName: String = js.native
+  var policyName: String
 }
 object TfvcPolicyFailureInfo {
   

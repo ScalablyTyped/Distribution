@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionMetadata extends StObject {
   
   /** This dimension's name. Useable in [Dimension](#Dimension)'s `name`. For example, `eventName`. */
-  var apiName: js.UndefOr[String] = js.native
+  var apiName: js.UndefOr[String] = js.undefined
   
   /** True if the dimension is a custom dimension for this property. */
-  var customDefinition: js.UndefOr[Boolean] = js.native
+  var customDefinition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Still usable but deprecated names for this dimension. If populated, this dimension is available by either `apiName` or one of `deprecatedApiNames` for a period of time. After the
     * deprecation period, the dimension will be available only by `apiName`.
     */
-  var deprecatedApiNames: js.UndefOr[js.Array[String]] = js.native
+  var deprecatedApiNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Description of how this dimension is used and calculated. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** This dimension's name within the Google Analytics user interface. For example, `Event name`. */
-  var uiName: js.UndefOr[String] = js.native
+  var uiName: js.UndefOr[String] = js.undefined
 }
 object DimensionMetadata {
   

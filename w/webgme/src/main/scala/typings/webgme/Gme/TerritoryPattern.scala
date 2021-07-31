@@ -2,7 +2,6 @@ package typings.webgme.Gme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,10 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * hierarchy to load.
   * It can be set to any positive integer [0, Inf).
   */
-@js.native
 trait TerritoryPattern extends StObject {
   
-  var children: Double = js.native
+  var children: Double
 }
 object TerritoryPattern {
   

@@ -284,30 +284,27 @@ import typings.std.SVGElement
 import typings.std.SVGGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait viz extends StObject
 object viz {
   
-  @js.native
   trait BarGaugeBarInfo extends StObject {
     
     /**
       * [descr:BarGaugeBarInfo.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BarGaugeBarInfo.index]
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BarGaugeBarInfo.value]
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object BarGaugeBarInfo {
     
@@ -340,13 +337,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait BarGaugeLegendItem extends BaseLegendItem {
+  trait BarGaugeLegendItem
+    extends StObject
+       with BaseLegendItem {
     
     /**
       * [descr:BarGaugeLegendItem.item]
       */
-    var item: js.UndefOr[BarGaugeBarInfo] = js.native
+    var item: js.UndefOr[BarGaugeBarInfo] = js.undefined
   }
   object BarGaugeLegendItem {
     
@@ -368,7 +366,9 @@ object viz {
   }
   
   @js.native
-  trait BaseChart extends BaseWidget {
+  trait BaseChart
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:BaseChart.clearSelection()]
@@ -414,23 +414,22 @@ object viz {
   /**
     * [descr:BaseChart.Options.adaptiveLayout]
     */
-  @js.native
   trait BaseChartAdaptiveLayout extends StObject {
     
     /**
       * [descr:BaseChart.Options.adaptiveLayout.height]
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseChart.Options.adaptiveLayout.keepLabels]
       */
-    var keepLabels: js.UndefOr[Boolean] = js.native
+    var keepLabels: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseChart.Options.adaptiveLayout.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object BaseChartAdaptiveLayout {
     
@@ -463,23 +462,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait BaseChartAnnotationConfig extends BaseWidgetAnnotationConfig {
+  trait BaseChartAnnotationConfig
+    extends StObject
+       with BaseWidgetAnnotationConfig {
     
     /**
       * [descr:BaseChartAnnotationConfig.argument]
       */
-    var argument: js.UndefOr[Double | Date | String] = js.native
+    var argument: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:BaseChartAnnotationConfig.series]
       */
-    var series: js.UndefOr[String] = js.native
+    var series: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseChartAnnotationConfig.value]
       */
-    var value: js.UndefOr[Double | Date | String] = js.native
+    var value: js.UndefOr[Double | Date | String] = js.undefined
   }
   object BaseChartAnnotationConfig {
     
@@ -515,15 +515,16 @@ object viz {
   /**
     * [descr:BaseChart.Options.legend]
     */
-  @js.native
-  trait BaseChartLegend extends BaseLegend {
+  trait BaseChartLegend
+    extends StObject
+       with BaseLegend {
     
     /**
       * [descr:BaseChart.Options.legend.customizeItems]
       */
     var customizeItems: js.UndefOr[
         js.Function1[/* items */ js.Array[BaseChartLegendItem], js.Array[BaseChartLegendItem]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseChart.Options.legend.markerTemplate]
@@ -534,7 +535,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object BaseChartLegend {
     
@@ -572,13 +573,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait BaseChartLegendItem extends BaseLegendItem {
+  trait BaseChartLegendItem
+    extends StObject
+       with BaseLegendItem {
     
     /**
       * [descr:BaseChartLegendItem.series]
       */
-    var series: js.UndefOr[baseSeriesObject] = js.native
+    var series: js.UndefOr[baseSeriesObject] = js.undefined
   }
   object BaseChartLegendItem {
     
@@ -599,96 +601,97 @@ object viz {
     }
   }
   
-  @js.native
-  trait BaseChartOptions[T] extends BaseWidgetOptions[T] {
+  trait BaseChartOptions[T]
+    extends StObject
+       with BaseWidgetOptions[T] {
     
     /**
       * [descr:BaseChart.Options.adaptiveLayout]
       */
-    var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.native
+    var adaptiveLayout: js.UndefOr[BaseChartAdaptiveLayout] = js.undefined
     
     /**
       * [descr:BaseChart.Options.animation]
       */
-    var animation: js.UndefOr[Duration | Boolean] = js.native
+    var animation: js.UndefOr[Duration | Boolean] = js.undefined
     
     /**
       * [descr:BaseChart.Options.customizeLabel]
       */
-    var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.native
+    var customizeLabel: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesLabel]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.customizePoint]
       */
-    var customizePoint: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesPoint]] = js.native
+    var customizePoint: js.UndefOr[js.Function1[/* pointInfo */ js.Any, dxChartSeriesTypesCommonSeriesPoint]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:BaseChart.Options.legend]
       */
-    var legend: js.UndefOr[BaseChartLegend] = js.native
+    var legend: js.UndefOr[BaseChartLegend] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onDone]
       */
-    var onDone: js.UndefOr[js.Function1[/* e */ `17`[T], _]] = js.native
+    var onDone: js.UndefOr[js.Function1[/* e */ `17`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onPointClick]
       */
-    var onPointClick: js.UndefOr[(js.Function1[/* e */ ModelTarget[T], _]) | String] = js.native
+    var onPointClick: js.UndefOr[(js.Function1[/* e */ ModelTarget[T], js.Any]) | String] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onPointHoverChanged]
       */
-    var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.native
+    var onPointHoverChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onPointSelectionChanged]
       */
-    var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, _]] = js.native
+    var onPointSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementTarget, js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onTooltipHidden]
       */
-    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.native
+    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.onTooltipShown]
       */
-    var onTooltipShown: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], _]] = js.native
+    var onTooltipShown: js.UndefOr[js.Function1[/* e */ ElementModelTarget[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseChart.Options.paletteExtensionMode]
       */
-    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
     
     /**
       * [descr:BaseChart.Options.pointSelectionMode]
       */
-    var pointSelectionMode: js.UndefOr[multiple | single_] = js.native
+    var pointSelectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:BaseChart.Options.series]
       */
-    var series: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var series: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_BaseChartOptions: js.UndefOr[BaseChartTooltip] = js.native
+    var tooltip_BaseChartOptions: js.UndefOr[BaseChartTooltip] = js.undefined
   }
   object BaseChartOptions {
     
@@ -699,7 +702,7 @@ object viz {
     }
     
     @scala.inline
-    implicit class BaseChartOptionsMutableBuilder[Self <: BaseChartOptions[_], T] (val x: Self with BaseChartOptions[T]) extends AnyVal {
+    implicit class BaseChartOptionsMutableBuilder[Self <: BaseChartOptions[?], T] (val x: Self & BaseChartOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAdaptiveLayout(value: BaseChartAdaptiveLayout): Self = StObject.set(x, "adaptiveLayout", value.asInstanceOf[js.Any])
@@ -726,7 +729,7 @@ object viz {
       def setCustomizePointUndefined: Self = StObject.set(x, "customizePoint", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -741,40 +744,40 @@ object viz {
       def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
       
       @scala.inline
-      def setOnDone(value: /* e */ `17`[T] => _): Self = StObject.set(x, "onDone", js.Any.fromFunction1(value))
+      def setOnDone(value: /* e */ `17`[T] => js.Any): Self = StObject.set(x, "onDone", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
       
       @scala.inline
-      def setOnPointClick(value: (js.Function1[/* e */ ModelTarget[T], _]) | String): Self = StObject.set(x, "onPointClick", value.asInstanceOf[js.Any])
+      def setOnPointClick(value: (js.Function1[/* e */ ModelTarget[T], js.Any]) | String): Self = StObject.set(x, "onPointClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointClickFunction1(value: /* e */ ModelTarget[T] => _): Self = StObject.set(x, "onPointClick", js.Any.fromFunction1(value))
+      def setOnPointClickFunction1(value: /* e */ ModelTarget[T] => js.Any): Self = StObject.set(x, "onPointClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPointClickUndefined: Self = StObject.set(x, "onPointClick", js.undefined)
       
       @scala.inline
-      def setOnPointHoverChanged(value: /* e */ ElementTarget => _): Self = StObject.set(x, "onPointHoverChanged", js.Any.fromFunction1(value))
+      def setOnPointHoverChanged(value: /* e */ ElementTarget => js.Any): Self = StObject.set(x, "onPointHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPointHoverChangedUndefined: Self = StObject.set(x, "onPointHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnPointSelectionChanged(value: /* e */ ElementTarget => _): Self = StObject.set(x, "onPointSelectionChanged", js.Any.fromFunction1(value))
+      def setOnPointSelectionChanged(value: /* e */ ElementTarget => js.Any): Self = StObject.set(x, "onPointSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPointSelectionChangedUndefined: Self = StObject.set(x, "onPointSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnTooltipHidden(value: /* e */ ElementModelTarget[T] => _): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
+      def setOnTooltipHidden(value: /* e */ ElementModelTarget[T] => js.Any): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipHiddenUndefined: Self = StObject.set(x, "onTooltipHidden", js.undefined)
       
       @scala.inline
-      def setOnTooltipShown(value: /* e */ ElementModelTarget[T] => _): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
+      def setOnTooltipShown(value: /* e */ ElementModelTarget[T] => js.Any): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipShownUndefined: Self = StObject.set(x, "onTooltipShown", js.undefined)
@@ -803,7 +806,7 @@ object viz {
       def setPointSelectionModeUndefined: Self = StObject.set(x, "pointSelectionMode", js.undefined)
       
       @scala.inline
-      def setSeries(value: js.Any | js.Array[_]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+      def setSeries(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
@@ -822,35 +825,36 @@ object viz {
   /**
     * [descr:BaseChart.Options.tooltip]
     */
-  @js.native
-  trait BaseChartTooltip extends BaseWidgetTooltip {
+  trait BaseChartTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:BaseChart.Options.tooltip.argumentFormat]
       */
-    var argumentFormat: js.UndefOr[format] = js.native
+    var argumentFormat: js.UndefOr[format] = js.undefined
     
     /**
       * [descr:BaseChart.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* pointInfo */ js.Any, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseChart.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* pointInfo */ js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* pointInfo */ js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:BaseChart.Options.tooltip.interactive]
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseChart.Options.tooltip.shared]
       */
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
   }
   object BaseChartTooltip {
     
@@ -884,7 +888,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* pointInfo */ js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* pointInfo */ js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -904,7 +908,9 @@ object viz {
   }
   
   @js.native
-  trait BaseGauge extends BaseWidget {
+  trait BaseGauge
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:BaseGauge.subvalues()]
@@ -928,23 +934,22 @@ object viz {
   /**
     * [descr:BaseGauge.Options.animation]
     */
-  @js.native
   trait BaseGaugeAnimation extends StObject {
     
     /**
       * [descr:BaseGauge.Options.animation.duration]
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.animation.easing]
       */
-    var easing: js.UndefOr[easeOutCubic | linear] = js.native
+    var easing: js.UndefOr[easeOutCubic | linear] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.animation.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object BaseGaugeAnimation {
     
@@ -982,60 +987,61 @@ object viz {
     */
   type BaseGaugeLoadingIndicator = BaseWidgetLoadingIndicator
   
-  @js.native
-  trait BaseGaugeOptions[T] extends BaseWidgetOptions[T] {
+  trait BaseGaugeOptions[T]
+    extends StObject
+       with BaseWidgetOptions[T] {
     
     /**
       * [descr:BaseGauge.Options.animation]
       */
-    var animation: js.UndefOr[BaseGaugeAnimation] = js.native
+    var animation: js.UndefOr[BaseGaugeAnimation] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.containerBackgroundColor]
       */
-    var containerBackgroundColor: js.UndefOr[String] = js.native
+    var containerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.loadingIndicator]
       */
     @JSName("loadingIndicator")
-    var loadingIndicator_BaseGaugeOptions: js.UndefOr[BaseGaugeLoadingIndicator] = js.native
+    var loadingIndicator_BaseGaugeOptions: js.UndefOr[BaseGaugeLoadingIndicator] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.onTooltipHidden]
       */
-    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ComponentElementModelTarget[T], _]] = js.native
+    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ ComponentElementModelTarget[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.onTooltipShown]
       */
-    var onTooltipShown: js.UndefOr[js.Function1[/* e */ ComponentElementModelTarget[T], _]] = js.native
+    var onTooltipShown: js.UndefOr[js.Function1[/* e */ ComponentElementModelTarget[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.rangeContainer]
       */
-    var rangeContainer: js.UndefOr[BaseGaugeRangeContainer] = js.native
+    var rangeContainer: js.UndefOr[BaseGaugeRangeContainer] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale]
       */
-    var scale: js.UndefOr[BaseGaugeScale] = js.native
+    var scale: js.UndefOr[BaseGaugeScale] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.subvalues]
       */
-    var subvalues: js.UndefOr[js.Array[Double]] = js.native
+    var subvalues: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_BaseGaugeOptions: js.UndefOr[BaseGaugeTooltip] = js.native
+    var tooltip_BaseGaugeOptions: js.UndefOr[BaseGaugeTooltip] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.value]
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object BaseGaugeOptions {
     
@@ -1046,7 +1052,7 @@ object viz {
     }
     
     @scala.inline
-    implicit class BaseGaugeOptionsMutableBuilder[Self <: BaseGaugeOptions[_], T] (val x: Self with BaseGaugeOptions[T]) extends AnyVal {
+    implicit class BaseGaugeOptionsMutableBuilder[Self <: BaseGaugeOptions[?], T] (val x: Self & BaseGaugeOptions[T]) extends AnyVal {
       
       @scala.inline
       def setAnimation(value: BaseGaugeAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
@@ -1067,13 +1073,13 @@ object viz {
       def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
       @scala.inline
-      def setOnTooltipHidden(value: /* e */ ComponentElementModelTarget[T] => _): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
+      def setOnTooltipHidden(value: /* e */ ComponentElementModelTarget[T] => js.Any): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipHiddenUndefined: Self = StObject.set(x, "onTooltipHidden", js.undefined)
       
       @scala.inline
-      def setOnTooltipShown(value: /* e */ ComponentElementModelTarget[T] => _): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
+      def setOnTooltipShown(value: /* e */ ComponentElementModelTarget[T] => js.Any): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipShownUndefined: Self = StObject.set(x, "onTooltipShown", js.undefined)
@@ -1116,35 +1122,34 @@ object viz {
   /**
     * [descr:BaseGauge.Options.rangeContainer]
     */
-  @js.native
   trait BaseGaugeRangeContainer extends StObject {
     
     /**
       * [descr:BaseGauge.Options.rangeContainer.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.rangeContainer.offset]
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.rangeContainer.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.rangeContainer.paletteExtensionMode]
       */
-    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.rangeContainer.ranges]
       */
-    var ranges: js.UndefOr[js.Array[EndValue]] = js.native
+    var ranges: js.UndefOr[js.Array[EndValue]] = js.undefined
   }
   object BaseGaugeRangeContainer {
     
@@ -1200,63 +1205,62 @@ object viz {
   /**
     * [descr:BaseGauge.Options.scale]
     */
-  @js.native
   trait BaseGaugeScale extends StObject {
     
     /**
       * [descr:BaseGauge.Options.scale.allowDecimals]
       */
-    var allowDecimals: js.UndefOr[Boolean] = js.native
+    var allowDecimals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.customMinorTicks]
       */
-    var customMinorTicks: js.UndefOr[js.Array[Double]] = js.native
+    var customMinorTicks: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.customTicks]
       */
-    var customTicks: js.UndefOr[js.Array[Double]] = js.native
+    var customTicks: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.endValue]
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label]
       */
-    var label: js.UndefOr[BaseGaugeScaleLabel] = js.native
+    var label: js.UndefOr[BaseGaugeScaleLabel] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.minorTick]
       */
-    var minorTick: js.UndefOr[ColorLength] = js.native
+    var minorTick: js.UndefOr[ColorLength] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.minorTickInterval]
       */
-    var minorTickInterval: js.UndefOr[Double] = js.native
+    var minorTickInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.scaleDivisionFactor]
       */
-    var scaleDivisionFactor: js.UndefOr[Double] = js.native
+    var scaleDivisionFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.startValue]
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.tick]
       */
-    var tick: js.UndefOr[ColorLength] = js.native
+    var tick: js.UndefOr[ColorLength] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.tickInterval]
       */
-    var tickInterval: js.UndefOr[Double] = js.native
+    var tickInterval: js.UndefOr[Double] = js.undefined
   }
   object BaseGaugeScale {
     
@@ -1346,38 +1350,37 @@ object viz {
   /**
     * [descr:BaseGauge.Options.scale.label]
     */
-  @js.native
   trait BaseGaugeScaleLabel extends StObject {
     
     /**
       * [descr:BaseGauge.Options.scale.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* scaleValue */ ValueText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* scaleValue */ ValueText, String]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label.overlappingBehavior]
       */
-    var overlappingBehavior: js.UndefOr[hide | none] = js.native
+    var overlappingBehavior: js.UndefOr[hide | none] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label.useRangeColors]
       */
-    var useRangeColors: js.UndefOr[Boolean] = js.native
+    var useRangeColors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.scale.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object BaseGaugeScaleLabel {
     
@@ -1434,25 +1437,26 @@ object viz {
   /**
     * [descr:BaseGauge.Options.tooltip]
     */
-  @js.native
-  trait BaseGaugeTooltip extends BaseWidgetTooltip {
+  trait BaseGaugeTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:BaseGauge.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* scaleValue */ ValueText, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ ValueText, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ ValueText, js.Any]] = js.undefined
     
     /**
       * [descr:BaseGauge.Options.tooltip.interactive]
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
   }
   object BaseGaugeTooltip {
     
@@ -1477,7 +1481,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* scaleValue */ ValueText => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* scaleValue */ ValueText => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -1490,98 +1494,97 @@ object viz {
     }
   }
   
-  @js.native
   trait BaseLegend extends StObject {
     
     /**
       * [descr:BaseLegend.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseLegend.border]
       */
-    var border: js.UndefOr[CornerRadius] = js.native
+    var border: js.UndefOr[CornerRadius] = js.undefined
     
     /**
       * [descr:BaseLegend.columnCount]
       */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.columnItemSpacing]
       */
-    var columnItemSpacing: js.UndefOr[Double] = js.native
+    var columnItemSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseLegend.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:BaseLegend.itemTextPosition]
       */
-    var itemTextPosition: js.UndefOr[bottom | left | right | top] = js.native
+    var itemTextPosition: js.UndefOr[bottom | left | right | top] = js.undefined
     
     /**
       * [descr:BaseLegend.itemsAlignment]
       */
-    var itemsAlignment: js.UndefOr[center | left | right] = js.native
+    var itemsAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:BaseLegend.margin]
       */
-    var margin: js.UndefOr[Double | Bottom] = js.native
+    var margin: js.UndefOr[Double | Bottom] = js.undefined
     
     /**
       * [descr:BaseLegend.markerSize]
       */
-    var markerSize: js.UndefOr[Double] = js.native
+    var markerSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.orientation]
       */
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * [descr:BaseLegend.paddingLeftRight]
       */
-    var paddingLeftRight: js.UndefOr[Double] = js.native
+    var paddingLeftRight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.paddingTopBottom]
       */
-    var paddingTopBottom: js.UndefOr[Double] = js.native
+    var paddingTopBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.rowCount]
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.rowItemSpacing]
       */
-    var rowItemSpacing: js.UndefOr[Double] = js.native
+    var rowItemSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseLegend.title]
       */
-    var title: js.UndefOr[HorizontalAlignment | String] = js.native
+    var title: js.UndefOr[HorizontalAlignment | String] = js.undefined
     
     /**
       * [descr:BaseLegend.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
     
     /**
       * [descr:BaseLegend.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object BaseLegend {
     
@@ -1704,23 +1707,22 @@ object viz {
     }
   }
   
-  @js.native
   trait BaseLegendItem extends StObject {
     
     /**
       * [descr:BaseLegendItem.marker]
       */
-    var marker: js.UndefOr[Fill] = js.native
+    var marker: js.UndefOr[Fill] = js.undefined
     
     /**
       * [descr:BaseLegendItem.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseLegendItem.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object BaseLegendItem {
     
@@ -1755,24 +1757,25 @@ object viz {
   
   type BaseSparkline = BaseWidget
   
-  @js.native
-  trait BaseSparklineOptions[T] extends BaseWidgetOptions[T] {
+  trait BaseSparklineOptions[T]
+    extends StObject
+       with BaseWidgetOptions[T] {
     
     /**
       * [descr:BaseSparkline.Options.onTooltipHidden]
       */
-    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `18`[T], _]] = js.native
+    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `18`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseSparkline.Options.onTooltipShown]
       */
-    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `18`[T], _]] = js.native
+    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `18`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseSparkline.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_BaseSparklineOptions: js.UndefOr[BaseSparklineTooltip] = js.native
+    var tooltip_BaseSparklineOptions: js.UndefOr[BaseSparklineTooltip] = js.undefined
   }
   object BaseSparklineOptions {
     
@@ -1783,16 +1786,16 @@ object viz {
     }
     
     @scala.inline
-    implicit class BaseSparklineOptionsMutableBuilder[Self <: BaseSparklineOptions[_], T] (val x: Self with BaseSparklineOptions[T]) extends AnyVal {
+    implicit class BaseSparklineOptionsMutableBuilder[Self <: BaseSparklineOptions[?], T] (val x: Self & BaseSparklineOptions[T]) extends AnyVal {
       
       @scala.inline
-      def setOnTooltipHidden(value: /* e */ `18`[T] => _): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
+      def setOnTooltipHidden(value: /* e */ `18`[T] => js.Any): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipHiddenUndefined: Self = StObject.set(x, "onTooltipHidden", js.undefined)
       
       @scala.inline
-      def setOnTooltipShown(value: /* e */ `18`[T] => _): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
+      def setOnTooltipShown(value: /* e */ `18`[T] => js.Any): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipShownUndefined: Self = StObject.set(x, "onTooltipShown", js.undefined)
@@ -1808,25 +1811,26 @@ object viz {
   /**
     * [descr:BaseSparkline.Options.tooltip]
     */
-  @js.native
-  trait BaseSparklineTooltip extends BaseWidgetTooltip {
+  trait BaseSparklineTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:BaseSparkline.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* pointsInfo */ js.Any, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseSparkline.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* pointsInfo */ js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* pointsInfo */ js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:BaseSparkline.Options.tooltip.interactive]
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
   }
   object BaseSparklineTooltip {
     
@@ -1851,7 +1855,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* pointsInfo */ js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* pointsInfo */ js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -1865,7 +1869,9 @@ object viz {
   }
   
   @js.native
-  trait BaseWidget extends DOMComponent {
+  trait BaseWidget
+    extends StObject
+       with DOMComponent {
     
     /**
       * [descr:BaseWidget.exportTo(fileName, format)]
@@ -1903,128 +1909,127 @@ object viz {
     def svg(): String = js.native
   }
   
-  @js.native
   trait BaseWidgetAnnotationConfig extends StObject {
     
     /**
       * [descr:BaseWidgetAnnotationConfig.allowDragging]
       */
-    var allowDragging: js.UndefOr[Boolean] = js.native
+    var allowDragging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.arrowLength]
       */
-    var arrowLength: js.UndefOr[Double] = js.native
+    var arrowLength: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.arrowWidth]
       */
-    var arrowWidth: js.UndefOr[Double] = js.native
+    var arrowWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.border]
       */
-    var border: js.UndefOr[CornerRadius] = js.native
+    var border: js.UndefOr[CornerRadius] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.description]
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.height]
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.image]
       */
-    var image: js.UndefOr[String | Url] = js.native
+    var image: js.UndefOr[String | Url] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.offsetX]
       */
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.offsetY]
       */
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.paddingLeftRight]
       */
-    var paddingLeftRight: js.UndefOr[Double] = js.native
+    var paddingLeftRight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.paddingTopBottom]
       */
-    var paddingTopBottom: js.UndefOr[Double] = js.native
+    var paddingTopBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.shadow]
       */
-    var shadow: js.UndefOr[Blur] = js.native
+    var shadow: js.UndefOr[Blur] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.textOverflow]
       */
-    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.tooltipEnabled]
       */
-    var tooltipEnabled: js.UndefOr[Boolean] = js.native
+    var tooltipEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.type]
       */
-    var `type`: js.UndefOr[text | image | custom] = js.native
+    var `type`: js.UndefOr[text | image | custom] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.wordWrap]
       */
-    var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+    var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.x]
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidgetAnnotationConfig.y]
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object BaseWidgetAnnotationConfig {
     
@@ -2186,44 +2191,43 @@ object viz {
   /**
     * [descr:BaseWidget.Options.export]
     */
-  @js.native
   trait BaseWidgetExport extends StObject {
     
     /**
       * [descr:BaseWidget.Options.export.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.fileName]
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.formats]
       */
-    var formats: js.UndefOr[js.Array[GIF | JPEG | PDF | PNG | SVG]] = js.native
+    var formats: js.UndefOr[js.Array[GIF | JPEG | PDF | PNG | SVG]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.margin]
       */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.printingEnabled]
       */
-    var printingEnabled: js.UndefOr[Boolean] = js.native
+    var printingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.proxyUrl]
       * @deprecated [depNote:BaseWidget.Options.export.proxyUrl]
       */
-    var proxyUrl: js.UndefOr[String] = js.native
+    var proxyUrl: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export.svgToCanvas]
@@ -2234,7 +2238,7 @@ object viz {
           /* canvas */ HTMLCanvasElement, 
           Promise[Unit] | JQueryPromise[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object BaseWidgetExport {
     
@@ -2305,33 +2309,32 @@ object viz {
   /**
     * [descr:BaseWidget.Options.loadingIndicator]
     */
-  @js.native
   trait BaseWidgetLoadingIndicator extends StObject {
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator.show]
       */
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object BaseWidgetLoadingIndicator {
     
@@ -2379,28 +2382,27 @@ object viz {
   /**
     * [descr:BaseWidget.Options.margin]
     */
-  @js.native
   trait BaseWidgetMargin extends StObject {
     
     /**
       * [descr:BaseWidget.Options.margin.bottom]
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.margin.left]
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.margin.right]
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.margin.top]
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object BaseWidgetMargin {
     
@@ -2439,85 +2441,86 @@ object viz {
     }
   }
   
-  @js.native
-  trait BaseWidgetOptions[T] extends DOMComponentOptions[T] {
+  trait BaseWidgetOptions[T]
+    extends StObject
+       with DOMComponentOptions[T] {
     
     /**
       * [descr:BaseWidget.Options.disabled]
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.export]
       */
-    var export: js.UndefOr[BaseWidgetExport] = js.native
+    var `export`: js.UndefOr[BaseWidgetExport] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.loadingIndicator]
       */
-    var loadingIndicator: js.UndefOr[BaseWidgetLoadingIndicator] = js.native
+    var loadingIndicator: js.UndefOr[BaseWidgetLoadingIndicator] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.margin]
       */
-    var margin: js.UndefOr[BaseWidgetMargin] = js.native
+    var margin: js.UndefOr[BaseWidgetMargin] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.onDrawn]
       */
-    var onDrawn: js.UndefOr[js.Function1[/* e */ `19`[T], _]] = js.native
+    var onDrawn: js.UndefOr[js.Function1[/* e */ `19`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.onExported]
       */
-    var onExported: js.UndefOr[js.Function1[/* e */ `19`[T], _]] = js.native
+    var onExported: js.UndefOr[js.Function1[/* e */ `19`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.onExporting]
       */
-    var onExporting: js.UndefOr[js.Function1[/* e */ FormatModel[T], _]] = js.native
+    var onExporting: js.UndefOr[js.Function1[/* e */ FormatModel[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.onFileSaving]
       */
-    var onFileSaving: js.UndefOr[js.Function1[/* e */ CancelComponentData[T], _]] = js.native
+    var onFileSaving: js.UndefOr[js.Function1[/* e */ CancelComponentData[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.onIncidentOccurred]
       */
-    var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ `20`[T], _]] = js.native
+    var onIncidentOccurred: js.UndefOr[js.Function1[/* e */ `20`[T], js.Any]] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.pathModified]
       */
-    var pathModified: js.UndefOr[Boolean] = js.native
+    var pathModified: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.redrawOnResize]
       */
-    var redrawOnResize: js.UndefOr[Boolean] = js.native
+    var redrawOnResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.size]
       */
-    var size: js.UndefOr[BaseWidgetSize] = js.native
+    var size: js.UndefOr[BaseWidgetSize] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.theme]
       */
     var theme: js.UndefOr[
         genericDotdark | genericDotlight | genericDotcontrast | genericDotcarmine | genericDotdarkmoon | genericDotdarkviolet | genericDotgreenmist | genericDotsoftblue | materialDotblueDotlight | materialDotlimeDotlight | materialDotorangeDotlight | materialDotpurpleDotlight | materialDottealDotlight
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title]
       */
-    var title: js.UndefOr[BaseWidgetTitle | String] = js.native
+    var title: js.UndefOr[BaseWidgetTitle | String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip]
       */
-    var tooltip: js.UndefOr[BaseWidgetTooltip] = js.native
+    var tooltip: js.UndefOr[BaseWidgetTooltip] = js.undefined
   }
   object BaseWidgetOptions {
     
@@ -2528,7 +2531,7 @@ object viz {
     }
     
     @scala.inline
-    implicit class BaseWidgetOptionsMutableBuilder[Self <: BaseWidgetOptions[_], T] (val x: Self with BaseWidgetOptions[T]) extends AnyVal {
+    implicit class BaseWidgetOptionsMutableBuilder[Self <: BaseWidgetOptions[?], T] (val x: Self & BaseWidgetOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
@@ -2555,31 +2558,31 @@ object viz {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setOnDrawn(value: /* e */ `19`[T] => _): Self = StObject.set(x, "onDrawn", js.Any.fromFunction1(value))
+      def setOnDrawn(value: /* e */ `19`[T] => js.Any): Self = StObject.set(x, "onDrawn", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDrawnUndefined: Self = StObject.set(x, "onDrawn", js.undefined)
       
       @scala.inline
-      def setOnExported(value: /* e */ `19`[T] => _): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
+      def setOnExported(value: /* e */ `19`[T] => js.Any): Self = StObject.set(x, "onExported", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
       
       @scala.inline
-      def setOnExporting(value: /* e */ FormatModel[T] => _): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
+      def setOnExporting(value: /* e */ FormatModel[T] => js.Any): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
       
       @scala.inline
-      def setOnFileSaving(value: /* e */ CancelComponentData[T] => _): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
+      def setOnFileSaving(value: /* e */ CancelComponentData[T] => js.Any): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
       
       @scala.inline
-      def setOnIncidentOccurred(value: /* e */ `20`[T] => _): Self = StObject.set(x, "onIncidentOccurred", js.Any.fromFunction1(value))
+      def setOnIncidentOccurred(value: /* e */ `20`[T] => js.Any): Self = StObject.set(x, "onIncidentOccurred", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnIncidentOccurredUndefined: Self = StObject.set(x, "onIncidentOccurred", js.undefined)
@@ -2627,18 +2630,17 @@ object viz {
   /**
     * [descr:BaseWidget.Options.size]
     */
-  @js.native
   trait BaseWidgetSize extends StObject {
     
     /**
       * [descr:BaseWidget.Options.size.height]
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.size.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object BaseWidgetSize {
     
@@ -2668,53 +2670,52 @@ object viz {
   /**
     * [descr:BaseWidget.Options.title]
     */
-  @js.native
   trait BaseWidgetTitle extends StObject {
     
     /**
       * [descr:BaseWidget.Options.title.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.margin]
       */
-    var margin: js.UndefOr[Double | Bottom] = js.native
+    var margin: js.UndefOr[Double | Bottom] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.placeholderSize]
       */
-    var placeholderSize: js.UndefOr[Double] = js.native
+    var placeholderSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.subtitle]
       */
-    var subtitle: js.UndefOr[FontOffset | String] = js.native
+    var subtitle: js.UndefOr[FontOffset | String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.textOverflow]
       */
-    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.title.wordWrap]
       */
-    var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+    var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
   }
   object BaseWidgetTitle {
     
@@ -2786,73 +2787,72 @@ object viz {
   /**
     * [descr:BaseWidget.Options.tooltip]
     */
-  @js.native
   trait BaseWidgetTooltip extends StObject {
     
     /**
       * [descr:BaseWidget.Options.tooltip.arrowLength]
       */
-    var arrowLength: js.UndefOr[Double] = js.native
+    var arrowLength: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.border]
       */
-    var border: js.UndefOr[DashStyleOpacity] = js.native
+    var border: js.UndefOr[DashStyleOpacity] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.container]
       */
-    var container: js.UndefOr[String | Element | JQuery] = js.native
+    var container: js.UndefOr[String | Element | JQuery] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.cornerRadius]
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.paddingLeftRight]
       */
-    var paddingLeftRight: js.UndefOr[Double] = js.native
+    var paddingLeftRight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.paddingTopBottom]
       */
-    var paddingTopBottom: js.UndefOr[Double] = js.native
+    var paddingTopBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.shadow]
       */
-    var shadow: js.UndefOr[Blur] = js.native
+    var shadow: js.UndefOr[Blur] = js.undefined
     
     /**
       * [descr:BaseWidget.Options.tooltip.zIndex]
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object BaseWidgetTooltip {
     
@@ -2948,25 +2948,26 @@ object viz {
     }
   }
   
-  @js.native
-  trait ChartSeries extends dxChartSeriesTypesCommonSeries {
+  trait ChartSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:ChartSeries.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:ChartSeries.tag]
       */
-    var tag: js.UndefOr[js.Any] = js.native
+    var tag: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:ChartSeries.type]
       */
     var `type`: js.UndefOr[
         area | bar | bubble | candlestick | fullstackedarea | fullstackedbar | fullstackedline | fullstackedspline | fullstackedsplinearea | line | rangearea | rangebar_ | scatter | spline | splinearea | stackedarea | stackedbar | stackedline | stackedspline | stackedsplinearea | steparea | stepline | stock
-      ] = js.native
+      ] = js.undefined
   }
   object ChartSeries {
     
@@ -3001,100 +3002,99 @@ object viz {
     }
   }
   
-  @js.native
   trait CommonIndicator extends StObject {
     
     /**
       * [descr:CommonIndicator.arrowLength]
       */
-    var arrowLength: js.UndefOr[Double] = js.native
+    var arrowLength: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CommonIndicator.baseValue]
       */
-    var baseValue: js.UndefOr[Double] = js.native
+    var baseValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.beginAdaptingAtRadius]
       */
-    var beginAdaptingAtRadius: js.UndefOr[Double] = js.native
+    var beginAdaptingAtRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CommonIndicator.horizontalOrientation]
       */
-    var horizontalOrientation: js.UndefOr[left | right] = js.native
+    var horizontalOrientation: js.UndefOr[left | right] = js.undefined
     
     /**
       * [descr:CommonIndicator.indentFromCenter]
       */
-    var indentFromCenter: js.UndefOr[Double] = js.native
+    var indentFromCenter: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.length]
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.offset]
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:CommonIndicator.secondColor]
       */
-    var secondColor: js.UndefOr[String] = js.native
+    var secondColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:CommonIndicator.secondFraction]
       */
-    var secondFraction: js.UndefOr[Double] = js.native
+    var secondFraction: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.size]
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.spindleGapSize]
       */
-    var spindleGapSize: js.UndefOr[Double] = js.native
+    var spindleGapSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.spindleSize]
       */
-    var spindleSize: js.UndefOr[Double] = js.native
+    var spindleSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:CommonIndicator.text]
       */
-    var text: js.UndefOr[Indent] = js.native
+    var text: js.UndefOr[Indent] = js.undefined
     
     /**
       * [descr:CommonIndicator.verticalOrientation]
       */
-    var verticalOrientation: js.UndefOr[bottom | top] = js.native
+    var verticalOrientation: js.UndefOr[bottom | top] = js.undefined
     
     /**
       * [descr:CommonIndicator.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CommonIndicator {
     
@@ -3222,33 +3222,32 @@ object viz {
     }
   }
   
-  @js.native
   trait Font extends StObject {
     
     /**
       * [descr:Font.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:Font.family]
       */
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:Font.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:Font.size]
       */
-    var size: js.UndefOr[String | Double] = js.native
+    var size: js.UndefOr[String | Double] = js.undefined
     
     /**
       * [descr:Font.weight]
       */
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object Font {
     
@@ -3293,13 +3292,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait FunnelLegendItem extends BaseLegendItem {
+  trait FunnelLegendItem
+    extends StObject
+       with BaseLegendItem {
     
     /**
       * [descr:FunnelLegendItem.item]
       */
-    var item: js.UndefOr[dxFunnelItem] = js.native
+    var item: js.UndefOr[dxFunnelItem] = js.undefined
   }
   object FunnelLegendItem {
     
@@ -3320,15 +3320,16 @@ object viz {
     }
   }
   
-  @js.native
-  trait GaugeIndicator extends CommonIndicator {
+  trait GaugeIndicator
+    extends StObject
+       with CommonIndicator {
     
     /**
       * [descr:GaugeIndicator.type]
       */
     var `type`: js.UndefOr[
         circle | rangeBar | rectangle | rectangleNeedle | rhombus | textCloud | triangleMarker | triangleNeedle | twoColorNeedle
-      ] = js.native
+      ] = js.undefined
   }
   object GaugeIndicator {
     
@@ -3351,43 +3352,42 @@ object viz {
     }
   }
   
-  @js.native
   trait MapLayer extends StObject {
     
     /**
       * [descr:MapLayer.clearSelection()]
       */
-    def clearSelection(): Unit = js.native
+    def clearSelection(): Unit
     
     /**
       * [descr:MapLayer.elementType]
       */
-    var elementType: js.UndefOr[String] = js.native
+    var elementType: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:MapLayer.getDataSource()]
       */
-    def getDataSource(): DataSource = js.native
+    def getDataSource(): DataSource
     
     /**
       * [descr:MapLayer.getElements()]
       */
-    def getElements(): js.Array[MapLayerElement] = js.native
+    def getElements(): js.Array[MapLayerElement]
     
     /**
       * [descr:MapLayer.index]
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:MapLayer.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:MapLayer.type]
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MapLayer {
     
@@ -3476,29 +3476,30 @@ object viz {
     def selected(state: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait PieChartLegendItem extends BaseLegendItem {
+  trait PieChartLegendItem
+    extends StObject
+       with BaseLegendItem {
     
     /**
       * [descr:PieChartLegendItem.argument]
       */
-    var argument: js.UndefOr[String | Date | Double] = js.native
+    var argument: js.UndefOr[String | Date | Double] = js.undefined
     
     /**
       * [descr:PieChartLegendItem.argumentIndex]
       */
-    var argumentIndex: js.UndefOr[Double] = js.native
+    var argumentIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:PieChartLegendItem.points]
       */
-    var points: js.UndefOr[js.Array[piePointObject]] = js.native
+    var points: js.UndefOr[js.Array[piePointObject]] = js.undefined
     
     /**
       * [descr:PieChartLegendItem.text]
       */
     @JSName("text")
-    var text_PieChartLegendItem: js.UndefOr[js.Any] = js.native
+    var text_PieChartLegendItem: js.UndefOr[js.Any] = js.undefined
   }
   object PieChartLegendItem {
     
@@ -3540,18 +3541,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait PieChartSeries extends dxPieChartSeriesTypesCommonPieChartSeries {
+  trait PieChartSeries
+    extends StObject
+       with dxPieChartSeriesTypesCommonPieChartSeries {
     
     /**
       * [descr:PieChartSeries.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:PieChartSeries.tag]
       */
-    var tag: js.UndefOr[js.Any] = js.native
+    var tag: js.UndefOr[js.Any] = js.undefined
   }
   object PieChartSeries {
     
@@ -3578,23 +3580,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait PolarChartSeries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait PolarChartSeries
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:PolarChartSeries.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:PolarChartSeries.tag]
       */
-    var tag: js.UndefOr[js.Any] = js.native
+    var tag: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:PolarChartSeries.type]
       */
-    var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.native
+    var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.undefined
   }
   object PolarChartSeries {
     
@@ -3627,18 +3630,17 @@ object viz {
     }
   }
   
-  @js.native
   trait ScaleBreak extends StObject {
     
     /**
       * [descr:ScaleBreak.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:ScaleBreak.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object ScaleBreak {
     
@@ -3665,28 +3667,29 @@ object viz {
     }
   }
   
-  @js.native
-  trait VectorMapLegendItem extends BaseLegendItem {
+  trait VectorMapLegendItem
+    extends StObject
+       with BaseLegendItem {
     
     /**
       * [descr:VectorMapLegendItem.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:VectorMapLegendItem.end]
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:VectorMapLegendItem.size]
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:VectorMapLegendItem.start]
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object VectorMapLegendItem {
     
@@ -3725,23 +3728,22 @@ object viz {
     }
   }
   
-  @js.native
   trait VectorMapProjectionConfig extends StObject {
     
     /**
       * [descr:VectorMapProjectionConfig.aspectRatio]
       */
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:VectorMapProjectionConfig.from]
       */
-    var from: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.native
+    var from: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.undefined
     
     /**
       * [descr:VectorMapProjectionConfig.to]
       */
-    var to: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.native
+    var to: js.UndefOr[js.Function1[/* coordinates */ js.Array[Double], js.Array[Double]]] = js.undefined
   }
   object VectorMapProjectionConfig {
     
@@ -3774,25 +3776,24 @@ object viz {
     }
   }
   
-  @js.native
   trait VizRange extends StObject {
     
     /**
       * [descr:VizRange.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:VizRange.length]
       */
     var length: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:VizRange.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object VizRange {
     
@@ -3876,88 +3877,87 @@ object viz {
     def show(holdVisible: Boolean): Unit = js.native
   }
   
-  @js.native
   trait basePointObject extends StObject {
     
     /**
       * [descr:basePointObject.clearHover()]
       */
-    def clearHover(): Unit = js.native
+    def clearHover(): Unit
     
     /**
       * [descr:basePointObject.clearSelection()]
       */
-    def clearSelection(): Unit = js.native
+    def clearSelection(): Unit
     
     /**
       * [descr:basePointObject.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:basePointObject.fullState]
       */
-    var fullState: js.UndefOr[Double] = js.native
+    var fullState: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:basePointObject.getColor()]
       */
-    def getColor(): String = js.native
+    def getColor(): String
     
     /**
       * [descr:basePointObject.getLabel()]
       */
-    def getLabel(): baseLabelObject with js.Array[baseLabelObject] = js.native
+    def getLabel(): baseLabelObject & js.Array[baseLabelObject]
     
     /**
       * [descr:basePointObject.hideTooltip()]
       */
-    def hideTooltip(): Unit = js.native
+    def hideTooltip(): Unit
     
     /**
       * [descr:basePointObject.hover()]
       */
-    def hover(): Unit = js.native
+    def hover(): Unit
     
     /**
       * [descr:basePointObject.isHovered()]
       */
-    def isHovered(): Boolean = js.native
+    def isHovered(): Boolean
     
     /**
       * [descr:basePointObject.isSelected()]
       */
-    def isSelected(): Boolean = js.native
+    def isSelected(): Boolean
     
     /**
       * [descr:basePointObject.originalArgument]
       */
-    var originalArgument: js.UndefOr[String | Double | Date] = js.native
+    var originalArgument: js.UndefOr[String | Double | Date] = js.undefined
     
     /**
       * [descr:basePointObject.originalValue]
       */
-    var originalValue: js.UndefOr[String | Double | Date] = js.native
+    var originalValue: js.UndefOr[String | Double | Date] = js.undefined
     
     /**
       * [descr:basePointObject.select()]
       */
-    def select(): Unit = js.native
+    def select(): Unit
     
     /**
       * [descr:basePointObject.series]
       */
-    var series: js.UndefOr[js.Any] = js.native
+    var series: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:basePointObject.showTooltip()]
       */
-    def showTooltip(): Unit = js.native
+    def showTooltip(): Unit
     
     /**
       * [descr:basePointObject.tag]
       */
-    var tag: js.UndefOr[js.Any] = js.native
+    var tag: js.UndefOr[js.Any] = js.undefined
   }
   object basePointObject {
     
@@ -3966,7 +3966,7 @@ object viz {
       clearHover: () => Unit,
       clearSelection: () => Unit,
       getColor: () => String,
-      getLabel: () => baseLabelObject with js.Array[baseLabelObject],
+      getLabel: () => baseLabelObject & js.Array[baseLabelObject],
       hideTooltip: () => Unit,
       hover: () => Unit,
       isHovered: () => Boolean,
@@ -4003,7 +4003,7 @@ object viz {
       def setGetColor(value: () => String): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetLabel(value: () => baseLabelObject with js.Array[baseLabelObject]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      def setGetLabel(value: () => baseLabelObject & js.Array[baseLabelObject]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setHideTooltip(value: () => Unit): Self = StObject.set(x, "hideTooltip", js.Any.fromFunction0(value))
@@ -4169,28 +4169,27 @@ object viz {
     def visualRange(visualRange: VizRange): Unit = js.native
   }
   
-  @js.native
   trait chartPointAggregationInfoObject extends StObject {
     
     /**
       * [descr:chartPointAggregationInfoObject.aggregationInterval]
       */
-    var aggregationInterval: js.UndefOr[js.Any] = js.native
+    var aggregationInterval: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:chartPointAggregationInfoObject.data]
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:chartPointAggregationInfoObject.intervalEnd]
       */
-    var intervalEnd: js.UndefOr[js.Any] = js.native
+    var intervalEnd: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:chartPointAggregationInfoObject.intervalStart]
       */
-    var intervalStart: js.UndefOr[js.Any] = js.native
+    var intervalStart: js.UndefOr[js.Any] = js.undefined
   }
   object chartPointAggregationInfoObject {
     
@@ -4210,7 +4209,7 @@ object viz {
       def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -4232,48 +4231,49 @@ object viz {
     }
   }
   
-  @js.native
-  trait chartPointObject extends basePointObject {
+  trait chartPointObject
+    extends StObject
+       with basePointObject {
     
     /**
       * [descr:chartPointObject.aggregationInfo]
       */
-    var aggregationInfo: js.UndefOr[chartPointAggregationInfoObject] = js.native
+    var aggregationInfo: js.UndefOr[chartPointAggregationInfoObject] = js.undefined
     
     /**
       * [descr:chartPointObject.getBoundingRect()]
       */
-    def getBoundingRect(): js.Any = js.native
+    def getBoundingRect(): js.Any
     
     /**
       * [descr:chartPointObject.originalCloseValue]
       */
-    var originalCloseValue: js.UndefOr[Double | String] = js.native
+    var originalCloseValue: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:chartPointObject.originalHighValue]
       */
-    var originalHighValue: js.UndefOr[Double | String] = js.native
+    var originalHighValue: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:chartPointObject.originalLowValue]
       */
-    var originalLowValue: js.UndefOr[Double | String] = js.native
+    var originalLowValue: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:chartPointObject.originalMinValue]
       */
-    var originalMinValue: js.UndefOr[String | Double | Date] = js.native
+    var originalMinValue: js.UndefOr[String | Double | Date] = js.undefined
     
     /**
       * [descr:chartPointObject.originalOpenValue]
       */
-    var originalOpenValue: js.UndefOr[Double | String] = js.native
+    var originalOpenValue: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:chartPointObject.size]
       */
-    var size: js.UndefOr[Double | String] = js.native
+    var size: js.UndefOr[Double | String] = js.undefined
   }
   object chartPointObject {
     
@@ -4283,7 +4283,7 @@ object viz {
       clearSelection: () => Unit,
       getBoundingRect: () => js.Any,
       getColor: () => String,
-      getLabel: () => baseLabelObject with js.Array[baseLabelObject],
+      getLabel: () => baseLabelObject & js.Array[baseLabelObject],
       hideTooltip: () => Unit,
       hover: () => Unit,
       isHovered: () => Boolean,
@@ -4346,7 +4346,9 @@ object viz {
   }
   
   @js.native
-  trait chartSeriesObject extends baseSeriesObject {
+  trait chartSeriesObject
+    extends StObject
+       with baseSeriesObject {
     
     /**
       * [descr:chartSeriesObject.axis]
@@ -4519,7 +4521,9 @@ object viz {
   type circularTwoColorNeedle = CommonIndicator
   
   @js.native
-  trait dxBarGauge extends BaseWidget {
+  trait dxBarGauge
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:dxBarGauge.values()]
@@ -4531,30 +4535,31 @@ object viz {
     def values(values: js.Array[Double]): Unit = js.native
   }
   
-  @js.native
-  trait dxBarGaugeLegend extends BaseLegend {
+  trait dxBarGaugeLegend
+    extends StObject
+       with BaseLegend {
     
     /**
       * [descr:dxBarGauge.Options.legend.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* arg */ ItemText, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* arg */ ItemText, String]] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.legend.customizeItems]
       */
     var customizeItems: js.UndefOr[
         js.Function1[/* items */ js.Array[BarGaugeLegendItem], js.Array[BarGaugeLegendItem]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.legend.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* arg */ ItemText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* arg */ ItemText, String]] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.legend.itemTextFormat]
       */
-    var itemTextFormat: js.UndefOr[format] = js.native
+    var itemTextFormat: js.UndefOr[format] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.legend.markerTemplate]
@@ -4565,7 +4570,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxBarGaugeLegend {
     
@@ -4626,102 +4631,103 @@ object viz {
   
   type dxBarGaugeLoadingIndicator = BaseWidgetLoadingIndicator
   
-  @js.native
-  trait dxBarGaugeOptions extends BaseWidgetOptions[dxBarGauge] {
+  trait dxBarGaugeOptions
+    extends StObject
+       with BaseWidgetOptions[dxBarGauge] {
     
     /**
       * [descr:dxBarGauge.Options.animation]
       */
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.barSpacing]
       */
-    var barSpacing: js.UndefOr[Double] = js.native
+    var barSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.baseValue]
       */
-    var baseValue: js.UndefOr[Double] = js.native
+    var baseValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.endValue]
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.geometry]
       */
-    var geometry: js.UndefOr[EndAngle] = js.native
+    var geometry: js.UndefOr[EndAngle] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.label]
       */
-    var label: js.UndefOr[ConnectorColor] = js.native
+    var label: js.UndefOr[ConnectorColor] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.legend]
       */
-    var legend: js.UndefOr[dxBarGaugeLegend] = js.native
+    var legend: js.UndefOr[dxBarGaugeLegend] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.loadingIndicator]
       */
     @JSName("loadingIndicator")
-    var loadingIndicator_dxBarGaugeOptions: js.UndefOr[dxBarGaugeLoadingIndicator] = js.native
+    var loadingIndicator_dxBarGaugeOptions: js.UndefOr[dxBarGaugeLoadingIndicator] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.onTooltipHidden]
       */
-    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `21`, _]] = js.native
+    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `21`, js.Any]] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.onTooltipShown]
       */
-    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `21`, _]] = js.native
+    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `21`, js.Any]] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.paletteExtensionMode]
       */
-    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.relativeInnerRadius]
       */
-    var relativeInnerRadius: js.UndefOr[Double] = js.native
+    var relativeInnerRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.resolveLabelOverlapping]
       */
-    var resolveLabelOverlapping: js.UndefOr[hide | none] = js.native
+    var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.startValue]
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxBarGaugeOptions: js.UndefOr[dxBarGaugeTooltip] = js.native
+    var tooltip_dxBarGaugeOptions: js.UndefOr[dxBarGaugeTooltip] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.values]
       */
-    var values: js.UndefOr[js.Array[Double]] = js.native
+    var values: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object dxBarGaugeOptions {
     
@@ -4789,13 +4795,13 @@ object viz {
       def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
       @scala.inline
-      def setOnTooltipHidden(value: /* e */ `21` => _): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
+      def setOnTooltipHidden(value: /* e */ `21` => js.Any): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipHiddenUndefined: Self = StObject.set(x, "onTooltipHidden", js.undefined)
       
       @scala.inline
-      def setOnTooltipShown(value: /* e */ `21` => _): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
+      def setOnTooltipShown(value: /* e */ `21` => js.Any): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipShownUndefined: Self = StObject.set(x, "onTooltipShown", js.undefined)
@@ -4852,25 +4858,26 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxBarGaugeTooltip extends BaseWidgetTooltip {
+  trait dxBarGaugeTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:dxBarGauge.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* scaleValue */ Index, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ Index, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* scaleValue */ Index, js.Any]] = js.undefined
     
     /**
       * [descr:dxBarGauge.Options.tooltip.interactive]
       */
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
   }
   object dxBarGaugeTooltip {
     
@@ -4895,7 +4902,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* scaleValue */ Index => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* scaleValue */ Index => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -4910,53 +4917,54 @@ object viz {
   
   type dxBullet = BaseSparkline
   
-  @js.native
-  trait dxBulletOptions extends BaseSparklineOptions[dxBullet] {
+  trait dxBulletOptions
+    extends StObject
+       with BaseSparklineOptions[dxBullet] {
     
     /**
       * [descr:dxBullet.Options.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxBullet.Options.endScaleValue]
       */
-    var endScaleValue: js.UndefOr[Double] = js.native
+    var endScaleValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBullet.Options.showTarget]
       */
-    var showTarget: js.UndefOr[Boolean] = js.native
+    var showTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxBullet.Options.showZeroLevel]
       */
-    var showZeroLevel: js.UndefOr[Boolean] = js.native
+    var showZeroLevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxBullet.Options.startScaleValue]
       */
-    var startScaleValue: js.UndefOr[Double] = js.native
+    var startScaleValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBullet.Options.target]
       */
-    var target: js.UndefOr[Double] = js.native
+    var target: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBullet.Options.targetColor]
       */
-    var targetColor: js.UndefOr[String] = js.native
+    var targetColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxBullet.Options.targetWidth]
       */
-    var targetWidth: js.UndefOr[Double] = js.native
+    var targetWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxBullet.Options.value]
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object dxBulletOptions {
     
@@ -5026,7 +5034,9 @@ object viz {
   }
   
   @js.native
-  trait dxChart extends BaseChart {
+  trait dxChart
+    extends StObject
+       with BaseChart {
     
     /**
       * [descr:dxChart.getArgumentAxis()]
@@ -5061,13 +5071,14 @@ object viz {
     def zoomArgument(startValue: Date, endValue: Date): Unit = js.native
   }
   
-  @js.native
-  trait dxChartAnnotationConfig extends dxChartCommonAnnotationConfig {
+  trait dxChartAnnotationConfig
+    extends StObject
+       with dxChartCommonAnnotationConfig {
     
     /**
       * [descr:dxChartAnnotationConfig.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxChartAnnotationConfig {
     
@@ -5088,174 +5099,175 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxis extends dxChartCommonAxisSettings {
+  trait dxChartArgumentAxis
+    extends StObject
+       with dxChartCommonAxisSettings {
     
     /**
       * [descr:dxChart.Options.argumentAxis.aggregateByCategory]
       */
-    var aggregateByCategory: js.UndefOr[Boolean] = js.native
+    var aggregateByCategory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.aggregationGroupWidth]
       */
-    var aggregationGroupWidth: js.UndefOr[Double] = js.native
+    var aggregationGroupWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.aggregationInterval]
       */
     var aggregationInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.argumentType]
       */
-    var argumentType: js.UndefOr[datetime | numeric | string_] = js.native
+    var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.axisDivisionFactor]
       */
-    var axisDivisionFactor: js.UndefOr[Double] = js.native
+    var axisDivisionFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.breaks]
       */
-    var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.native
+    var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.categories]
       */
-    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.native
+    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLineStyle]
       */
     @JSName("constantLineStyle")
-    var constantLineStyle_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisConstantLineStyle] = js.native
+    var constantLineStyle_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisConstantLineStyle] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines]
       */
-    var constantLines: js.UndefOr[js.Array[dxChartArgumentAxisConstantLines]] = js.native
+    var constantLines: js.UndefOr[js.Array[dxChartArgumentAxisConstantLines]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.customPosition]
       */
-    var customPosition: js.UndefOr[Double | Date | String] = js.native
+    var customPosition: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.customPositionAxis]
       */
-    var customPositionAxis: js.UndefOr[String] = js.native
+    var customPositionAxis: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.holidays]
       */
-    var holidays: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var holidays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.hoverMode]
       */
-    var hoverMode: js.UndefOr[allArgumentPoints | none] = js.native
+    var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.label]
       */
     @JSName("label")
-    var label_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisLabel] = js.native
+    var label_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.linearThreshold]
       */
-    var linearThreshold: js.UndefOr[Double] = js.native
+    var linearThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.logarithmBase]
       */
-    var logarithmBase: js.UndefOr[Double] = js.native
+    var logarithmBase: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.minVisualRangeLength]
       */
     var minVisualRangeLength: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.minorTickCount]
       */
-    var minorTickCount: js.UndefOr[Double] = js.native
+    var minorTickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.minorTickInterval]
       */
     var minorTickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.offset]
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.position]
       */
-    var position: js.UndefOr[bottom | left | right | top] = js.native
+    var position: js.UndefOr[bottom | left | right | top] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.singleWorkdays]
       */
-    var singleWorkdays: js.UndefOr[js.Array[Date | Double | String]] = js.native
+    var singleWorkdays: js.UndefOr[js.Array[Date | Double | String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips]
       */
-    var strips: js.UndefOr[js.Array[dxChartArgumentAxisStrips]] = js.native
+    var strips: js.UndefOr[js.Array[dxChartArgumentAxisStrips]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.tickInterval]
       */
     var tickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.title]
       */
     @JSName("title")
-    var title_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisTitle] = js.native
+    var title_dxChartArgumentAxis: js.UndefOr[dxChartArgumentAxisTitle] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.type]
       */
-    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.native
+    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.visualRange]
       */
-    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.visualRangeUpdateMode]
       */
-    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.native
+    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.wholeRange]
       */
-    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.workWeek]
       */
-    var workWeek: js.UndefOr[js.Array[Double]] = js.native
+    var workWeek: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.workdaysOnly]
       */
-    var workdaysOnly: js.UndefOr[Boolean] = js.native
+    var workdaysOnly: js.UndefOr[Boolean] = js.undefined
   }
   object dxChartArgumentAxis {
     
@@ -5491,14 +5503,15 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisConstantLineStyle extends dxChartCommonAxisSettingsConstantLineStyle {
+  trait dxChartArgumentAxisConstantLineStyle
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLineStyle.label]
       */
     @JSName("label")
-    var label_dxChartArgumentAxisConstantLineStyle: js.UndefOr[dxChartArgumentAxisConstantLineStyleLabel] = js.native
+    var label_dxChartArgumentAxisConstantLineStyle: js.UndefOr[dxChartArgumentAxisConstantLineStyleLabel] = js.undefined
   }
   object dxChartArgumentAxisConstantLineStyle {
     
@@ -5519,18 +5532,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisConstantLineStyleLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxChartArgumentAxisConstantLineStyleLabel
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLineStyle.label.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLineStyle.label.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxChartArgumentAxisConstantLineStyleLabel {
     
@@ -5557,29 +5571,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisConstantLines extends dxChartCommonAxisSettingsConstantLineStyle {
+  trait dxChartArgumentAxisConstantLines
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.displayBehindSeries]
       */
-    var displayBehindSeries: js.UndefOr[Boolean] = js.native
+    var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.extendAxis]
       */
-    var extendAxis: js.UndefOr[Boolean] = js.native
+    var extendAxis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.label]
       */
     @JSName("label")
-    var label_dxChartArgumentAxisConstantLines: js.UndefOr[dxChartArgumentAxisConstantLinesLabel] = js.native
+    var label_dxChartArgumentAxisConstantLines: js.UndefOr[dxChartArgumentAxisConstantLinesLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.value]
       */
-    var value: js.UndefOr[Double | Date | String] = js.native
+    var value: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxChartArgumentAxisConstantLines {
     
@@ -5618,23 +5633,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisConstantLinesLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxChartArgumentAxisConstantLinesLabel
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.label.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.constantLines.label.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxChartArgumentAxisConstantLinesLabel {
     
@@ -5667,23 +5683,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisLabel extends dxChartCommonAxisSettingsLabel {
+  trait dxChartArgumentAxisLabel
+    extends StObject
+       with dxChartCommonAxisSettingsLabel {
     
     /**
       * [descr:dxChart.Options.argumentAxis.label.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   }
   object dxChartArgumentAxisLabel {
     
@@ -5719,29 +5736,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisStrips extends dxChartCommonAxisSettingsStripStyle {
+  trait dxChartArgumentAxisStrips
+    extends StObject
+       with dxChartCommonAxisSettingsStripStyle {
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips.label]
       */
     @JSName("label")
-    var label_dxChartArgumentAxisStrips: js.UndefOr[dxChartArgumentAxisStripsLabel] = js.native
+    var label_dxChartArgumentAxisStrips: js.UndefOr[dxChartArgumentAxisStripsLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxChartArgumentAxisStrips {
     
@@ -5780,13 +5798,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisStripsLabel extends dxChartCommonAxisSettingsStripStyleLabel {
+  trait dxChartArgumentAxisStripsLabel
+    extends StObject
+       with dxChartCommonAxisSettingsStripStyleLabel {
     
     /**
       * [descr:dxChart.Options.argumentAxis.strips.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxChartArgumentAxisStripsLabel {
     
@@ -5807,13 +5826,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartArgumentAxisTitle extends dxChartCommonAxisSettingsTitle {
+  trait dxChartArgumentAxisTitle
+    extends StObject
+       with dxChartCommonAxisSettingsTitle {
     
     /**
       * [descr:dxChart.Options.argumentAxis.title.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxChartArgumentAxisTitle {
     
@@ -5834,18 +5854,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartCommonAnnotationConfig extends BaseChartAnnotationConfig {
+  trait dxChartCommonAnnotationConfig
+    extends StObject
+       with BaseChartAnnotationConfig {
     
     /**
       * [descr:dxChartCommonAnnotationConfig.axis]
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartCommonAnnotationConfig.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxChartAnnotationConfig | js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxChartAnnotationConfig | js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:dxChartCommonAnnotationConfig.template]
@@ -5856,7 +5877,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChartCommonAnnotationConfig.tooltipTemplate]
@@ -5867,7 +5888,7 @@ object viz {
           /* element */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxChartCommonAnnotationConfig {
     
@@ -5887,7 +5908,7 @@ object viz {
       def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* annotation */ dxChartAnnotationConfig | js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* annotation */ dxChartAnnotationConfig | js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -5928,113 +5949,112 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettings extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.allowDecimals]
       */
-    var allowDecimals: js.UndefOr[Boolean] = js.native
+    var allowDecimals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.breakStyle]
       */
-    var breakStyle: js.UndefOr[Line] = js.native
+    var breakStyle: js.UndefOr[Line] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle]
       */
-    var constantLineStyle: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyle] = js.native
+    var constantLineStyle: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyle] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.discreteAxisDivisionMode]
       */
-    var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.native
+    var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.endOnTick]
       */
-    var endOnTick: js.UndefOr[Boolean] = js.native
+    var endOnTick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.grid]
       */
-    var grid: js.UndefOr[ColorOpacity] = js.native
+    var grid: js.UndefOr[ColorOpacity] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.inverted]
       */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label]
       */
-    var label: js.UndefOr[dxChartCommonAxisSettingsLabel] = js.native
+    var label: js.UndefOr[dxChartCommonAxisSettingsLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.maxValueMargin]
       */
-    var maxValueMargin: js.UndefOr[Double] = js.native
+    var maxValueMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.minValueMargin]
       */
-    var minValueMargin: js.UndefOr[Double] = js.native
+    var minValueMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.minorGrid]
       */
-    var minorGrid: js.UndefOr[ColorOpacity] = js.native
+    var minorGrid: js.UndefOr[ColorOpacity] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.minorTick]
       */
-    var minorTick: js.UndefOr[Length] = js.native
+    var minorTick: js.UndefOr[Length] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.placeholderSize]
       */
-    var placeholderSize: js.UndefOr[Double] = js.native
+    var placeholderSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle]
       */
-    var stripStyle: js.UndefOr[dxChartCommonAxisSettingsStripStyle] = js.native
+    var stripStyle: js.UndefOr[dxChartCommonAxisSettingsStripStyle] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.tick]
       */
-    var tick: js.UndefOr[Length] = js.native
+    var tick: js.UndefOr[Length] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title]
       */
-    var title: js.UndefOr[dxChartCommonAxisSettingsTitle] = js.native
+    var title: js.UndefOr[dxChartCommonAxisSettingsTitle] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.valueMarginsEnabled]
       */
-    var valueMarginsEnabled: js.UndefOr[Boolean] = js.native
+    var valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartCommonAxisSettings {
     
@@ -6175,38 +6195,37 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsConstantLineStyle extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.label]
       */
-    var label: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyleLabel] = js.native
+    var label: js.UndefOr[dxChartCommonAxisSettingsConstantLineStyleLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.paddingLeftRight]
       */
-    var paddingLeftRight: js.UndefOr[Double] = js.native
+    var paddingLeftRight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.paddingTopBottom]
       */
-    var paddingTopBottom: js.UndefOr[Double] = js.native
+    var paddingTopBottom: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartCommonAxisSettingsConstantLineStyle {
     
@@ -6257,23 +6276,22 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsConstantLineStyleLabel extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.label.position]
       */
-    var position: js.UndefOr[inside | outside] = js.native
+    var position: js.UndefOr[inside | outside] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.constantLineStyle.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxChartCommonAxisSettingsConstantLineStyleLabel {
     
@@ -6306,70 +6324,69 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsLabel extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.alignment]
       */
-    var alignment: js.UndefOr[center | left | right] = js.native
+    var alignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.displayMode]
       */
-    var displayMode: js.UndefOr[rotate | stagger | standard] = js.native
+    var displayMode: js.UndefOr[rotate | stagger | standard] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.indentFromAxis]
       */
-    var indentFromAxis: js.UndefOr[Double] = js.native
+    var indentFromAxis: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.overlappingBehavior]
       */
-    var overlappingBehavior: js.UndefOr[rotate | stagger | none | hide] = js.native
+    var overlappingBehavior: js.UndefOr[rotate | stagger | none | hide] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.position]
       */
-    var position: js.UndefOr[inside | outside | bottom | left | right | top] = js.native
+    var position: js.UndefOr[inside | outside | bottom | left | right | top] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.rotationAngle]
       */
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.staggeringSpacing]
       */
-    var staggeringSpacing: js.UndefOr[Double] = js.native
+    var staggeringSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.template]
       */
     var template: js.UndefOr[
         typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* data */ ValueValueText, /* element */ SVGGElement, String | SVGElement | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.textOverflow]
       */
-    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.label.wordWrap]
       */
-    var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+    var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
   }
   object dxChartCommonAxisSettingsLabel {
     
@@ -6461,23 +6478,22 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsStripStyle extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.label]
       */
-    var label: js.UndefOr[dxChartCommonAxisSettingsStripStyleLabel] = js.native
+    var label: js.UndefOr[dxChartCommonAxisSettingsStripStyleLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.paddingLeftRight]
       */
-    var paddingLeftRight: js.UndefOr[Double] = js.native
+    var paddingLeftRight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.paddingTopBottom]
       */
-    var paddingTopBottom: js.UndefOr[Double] = js.native
+    var paddingTopBottom: js.UndefOr[Double] = js.undefined
   }
   object dxChartCommonAxisSettingsStripStyle {
     
@@ -6510,23 +6526,22 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsStripStyleLabel extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.label.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.stripStyle.label.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxChartCommonAxisSettingsStripStyleLabel {
     
@@ -6559,33 +6574,32 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonAxisSettingsTitle extends StObject {
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title.alignment]
       */
-    var alignment: js.UndefOr[center | left | right] = js.native
+    var alignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title.margin]
       */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title.textOverflow]
       */
-    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.native
+    var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings.title.wordWrap]
       */
-    var wordWrap: js.UndefOr[normal | breakWord | none] = js.native
+    var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
   }
   object dxChartCommonAxisSettingsTitle {
     
@@ -6630,18 +6644,17 @@ object viz {
     }
   }
   
-  @js.native
   trait dxChartCommonPaneSettings extends StObject {
     
     /**
       * [descr:dxChart.Options.commonPaneSettings.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonPaneSettings.border]
       */
-    var border: js.UndefOr[Left] = js.native
+    var border: js.UndefOr[Left] = js.undefined
   }
   object dxChartCommonPaneSettings {
     
@@ -6668,130 +6681,131 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartCommonSeriesSettings extends dxChartSeriesTypesCommonSeries {
+  trait dxChartCommonSeriesSettings
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.area]
       */
-    var area: js.UndefOr[js.Any] = js.native
+    var area: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.bar]
       */
-    var bar: js.UndefOr[js.Any] = js.native
+    var bar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.bubble]
       */
-    var bubble: js.UndefOr[js.Any] = js.native
+    var bubble: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.candlestick]
       */
-    var candlestick: js.UndefOr[js.Any] = js.native
+    var candlestick: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.fullstackedarea]
       */
-    var fullstackedarea: js.UndefOr[js.Any] = js.native
+    var fullstackedarea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.fullstackedbar]
       */
-    var fullstackedbar: js.UndefOr[js.Any] = js.native
+    var fullstackedbar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.fullstackedline]
       */
-    var fullstackedline: js.UndefOr[js.Any] = js.native
+    var fullstackedline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.fullstackedspline]
       */
-    var fullstackedspline: js.UndefOr[js.Any] = js.native
+    var fullstackedspline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.fullstackedsplinearea]
       */
-    var fullstackedsplinearea: js.UndefOr[js.Any] = js.native
+    var fullstackedsplinearea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.line]
       */
-    var line: js.UndefOr[js.Any] = js.native
+    var line: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.rangearea]
       */
-    var rangearea: js.UndefOr[js.Any] = js.native
+    var rangearea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.rangebar]
       */
-    var rangebar: js.UndefOr[js.Any] = js.native
+    var rangebar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.scatter]
       */
-    var scatter: js.UndefOr[js.Any] = js.native
+    var scatter: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.spline]
       */
-    var spline: js.UndefOr[js.Any] = js.native
+    var spline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.splinearea]
       */
-    var splinearea: js.UndefOr[js.Any] = js.native
+    var splinearea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stackedarea]
       */
-    var stackedarea: js.UndefOr[js.Any] = js.native
+    var stackedarea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stackedbar]
       */
-    var stackedbar: js.UndefOr[js.Any] = js.native
+    var stackedbar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stackedline]
       */
-    var stackedline: js.UndefOr[js.Any] = js.native
+    var stackedline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stackedspline]
       */
-    var stackedspline: js.UndefOr[js.Any] = js.native
+    var stackedspline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stackedsplinearea]
       */
-    var stackedsplinearea: js.UndefOr[js.Any] = js.native
+    var stackedsplinearea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.steparea]
       */
-    var steparea: js.UndefOr[js.Any] = js.native
+    var steparea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stepline]
       */
-    var stepline: js.UndefOr[js.Any] = js.native
+    var stepline: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.stock]
       */
-    var stock: js.UndefOr[js.Any] = js.native
+    var stock: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings.type]
       */
     var `type`: js.UndefOr[
         area | bar | bubble | candlestick | fullstackedarea | fullstackedbar | fullstackedline | fullstackedspline | fullstackedsplinearea | line | rangearea | rangebar_ | scatter | spline | splinearea | stackedarea | stackedbar | stackedline | stackedspline | stackedsplinearea | steparea | stepline | stock
-      ] = js.native
+      ] = js.undefined
   }
   object dxChartCommonSeriesSettings {
     
@@ -6952,28 +6966,29 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartLegend extends BaseChartLegend {
+  trait dxChartLegend
+    extends StObject
+       with BaseChartLegend {
     
     /**
       * [descr:dxChart.Options.legend.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.legend.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.legend.hoverMode]
       */
-    var hoverMode: js.UndefOr[excludePoints | includePoints | none] = js.native
+    var hoverMode: js.UndefOr[excludePoints | includePoints | none] = js.undefined
     
     /**
       * [descr:dxChart.Options.legend.position]
       */
-    var position: js.UndefOr[inside | outside] = js.native
+    var position: js.UndefOr[inside | outside] = js.undefined
   }
   object dxChartLegend {
     
@@ -7012,208 +7027,209 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartOptions extends BaseChartOptions[dxChart] {
+  trait dxChartOptions
+    extends StObject
+       with BaseChartOptions[dxChart] {
     
     /**
       * [descr:dxChart.Options.adjustOnZoom]
       */
-    var adjustOnZoom: js.UndefOr[Boolean] = js.native
+    var adjustOnZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.annotations]
       */
-    var annotations: js.UndefOr[js.Array[dxChartAnnotationConfig | _]] = js.native
+    var annotations: js.UndefOr[js.Array[dxChartAnnotationConfig | js.Any]] = js.undefined
     
     /**
       * [descr:dxChart.Options.argumentAxis]
       */
-    var argumentAxis: js.UndefOr[dxChartArgumentAxis] = js.native
+    var argumentAxis: js.UndefOr[dxChartArgumentAxis] = js.undefined
     
     /**
       * [descr:dxChart.Options.autoHidePointMarkers]
       */
-    var autoHidePointMarkers: js.UndefOr[Boolean] = js.native
+    var autoHidePointMarkers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.barGroupPadding]
       */
-    var barGroupPadding: js.UndefOr[Double] = js.native
+    var barGroupPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.barGroupWidth]
       */
-    var barGroupWidth: js.UndefOr[Double] = js.native
+    var barGroupWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAnnotationSettings]
       */
-    var commonAnnotationSettings: js.UndefOr[dxChartCommonAnnotationConfig] = js.native
+    var commonAnnotationSettings: js.UndefOr[dxChartCommonAnnotationConfig] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonAxisSettings]
       */
-    var commonAxisSettings: js.UndefOr[dxChartCommonAxisSettings] = js.native
+    var commonAxisSettings: js.UndefOr[dxChartCommonAxisSettings] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonPaneSettings]
       */
-    var commonPaneSettings: js.UndefOr[dxChartCommonPaneSettings] = js.native
+    var commonPaneSettings: js.UndefOr[dxChartCommonPaneSettings] = js.undefined
     
     /**
       * [descr:dxChart.Options.commonSeriesSettings]
       */
-    var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.native
+    var commonSeriesSettings: js.UndefOr[dxChartCommonSeriesSettings] = js.undefined
     
     /**
       * [descr:dxChart.Options.containerBackgroundColor]
       */
-    var containerBackgroundColor: js.UndefOr[String] = js.native
+    var containerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.crosshair]
       */
-    var crosshair: js.UndefOr[HorizontalLine] = js.native
+    var crosshair: js.UndefOr[HorizontalLine] = js.undefined
     
     /**
       * [descr:dxChart.Options.customizeAnnotation]
       */
     var customizeAnnotation: js.UndefOr[
         js.Function1[/* annotation */ dxChartAnnotationConfig | js.Any, dxChartAnnotationConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.dataPrepareSettings]
       */
-    var dataPrepareSettings: js.UndefOr[CheckTypeForAllData] = js.native
+    var dataPrepareSettings: js.UndefOr[CheckTypeForAllData] = js.undefined
     
     /**
       * [descr:dxChart.Options.defaultPane]
       */
-    var defaultPane: js.UndefOr[String] = js.native
+    var defaultPane: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.legend]
       */
     @JSName("legend")
-    var legend_dxChartOptions: js.UndefOr[dxChartLegend] = js.native
+    var legend_dxChartOptions: js.UndefOr[dxChartLegend] = js.undefined
     
     /**
       * [descr:dxChart.Options.maxBubbleSize]
       */
-    var maxBubbleSize: js.UndefOr[Double] = js.native
+    var maxBubbleSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.minBubbleSize]
       */
-    var minBubbleSize: js.UndefOr[Double] = js.native
+    var minBubbleSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.negativesAsZeroes]
       */
-    var negativesAsZeroes: js.UndefOr[Boolean] = js.native
+    var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.onArgumentAxisClick]
       */
-    var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ Argument, _]) | String] = js.native
+    var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ Argument, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.onLegendClick]
       */
-    var onLegendClick: js.UndefOr[(js.Function1[/* e */ EventModelTarget, _]) | String] = js.native
+    var onLegendClick: js.UndefOr[(js.Function1[/* e */ EventModelTarget, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.onSeriesClick]
       */
-    var onSeriesClick: js.UndefOr[(js.Function1[/* e */ EventModelTarget, _]) | String] = js.native
+    var onSeriesClick: js.UndefOr[(js.Function1[/* e */ EventModelTarget, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.onSeriesHoverChanged]
       */
-    var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ `22`, _]] = js.native
+    var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ `22`, js.Any]] = js.undefined
     
     /**
       * [descr:dxChart.Options.onSeriesSelectionChanged]
       */
-    var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ `22`, _]] = js.native
+    var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ `22`, js.Any]] = js.undefined
     
     /**
       * [descr:dxChart.Options.onZoomEnd]
       */
-    var onZoomEnd: js.UndefOr[js.Function1[/* e */ ActionType, _]] = js.native
+    var onZoomEnd: js.UndefOr[js.Function1[/* e */ ActionType, js.Any]] = js.undefined
     
     /**
       * [descr:dxChart.Options.onZoomStart]
       */
-    var onZoomStart: js.UndefOr[js.Function1[/* e */ Axis, _]] = js.native
+    var onZoomStart: js.UndefOr[js.Function1[/* e */ Axis, js.Any]] = js.undefined
     
     /**
       * [descr:dxChart.Options.panes]
       */
-    var panes: js.UndefOr[dxChartPanes | js.Array[dxChartPanes]] = js.native
+    var panes: js.UndefOr[dxChartPanes | js.Array[dxChartPanes]] = js.undefined
     
     /**
       * [descr:dxChart.Options.resizePanesOnZoom]
       */
-    var resizePanesOnZoom: js.UndefOr[Boolean] = js.native
+    var resizePanesOnZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.resolveLabelOverlapping]
       */
-    var resolveLabelOverlapping: js.UndefOr[hide | none | stack] = js.native
+    var resolveLabelOverlapping: js.UndefOr[hide | none | stack] = js.undefined
     
     /**
       * [descr:dxChart.Options.rotated]
       */
-    var rotated: js.UndefOr[Boolean] = js.native
+    var rotated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.scrollBar]
       */
-    var scrollBar: js.UndefOr[Offset] = js.native
+    var scrollBar: js.UndefOr[Offset] = js.undefined
     
     /**
       * [descr:dxChart.Options.seriesSelectionMode]
       */
-    var seriesSelectionMode: js.UndefOr[multiple | single_] = js.native
+    var seriesSelectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxChart.Options.seriesTemplate]
       */
-    var seriesTemplate: js.UndefOr[CustomizeSeries] = js.native
+    var seriesTemplate: js.UndefOr[CustomizeSeries] = js.undefined
     
     /**
       * [descr:dxChart.Options.series]
       */
     @JSName("series")
-    var series_dxChartOptions: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.native
+    var series_dxChartOptions: js.UndefOr[ChartSeries | js.Array[ChartSeries]] = js.undefined
     
     /**
       * [descr:dxChart.Options.stickyHovering]
       */
-    var stickyHovering: js.UndefOr[Boolean] = js.native
+    var stickyHovering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.synchronizeMultiAxes]
       */
-    var synchronizeMultiAxes: js.UndefOr[Boolean] = js.native
+    var synchronizeMultiAxes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxChartOptions: js.UndefOr[dxChartTooltip] = js.native
+    var tooltip_dxChartOptions: js.UndefOr[dxChartTooltip] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis]
       */
-    var valueAxis: js.UndefOr[dxChartValueAxis | js.Array[dxChartValueAxis]] = js.native
+    var valueAxis: js.UndefOr[dxChartValueAxis | js.Array[dxChartValueAxis]] = js.undefined
     
     /**
       * [descr:dxChart.Options.zoomAndPan]
       */
-    var zoomAndPan: js.UndefOr[AllowMouseWheel] = js.native
+    var zoomAndPan: js.UndefOr[AllowMouseWheel] = js.undefined
   }
   object dxChartOptions {
     
@@ -7233,7 +7249,7 @@ object viz {
       def setAdjustOnZoomUndefined: Self = StObject.set(x, "adjustOnZoom", js.undefined)
       
       @scala.inline
-      def setAnnotations(value: js.Array[dxChartAnnotationConfig | _]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      def setAnnotations(value: js.Array[dxChartAnnotationConfig | js.Any]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -7344,52 +7360,52 @@ object viz {
       def setNegativesAsZeroesUndefined: Self = StObject.set(x, "negativesAsZeroes", js.undefined)
       
       @scala.inline
-      def setOnArgumentAxisClick(value: (js.Function1[/* e */ Argument, _]) | String): Self = StObject.set(x, "onArgumentAxisClick", value.asInstanceOf[js.Any])
+      def setOnArgumentAxisClick(value: (js.Function1[/* e */ Argument, js.Any]) | String): Self = StObject.set(x, "onArgumentAxisClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnArgumentAxisClickFunction1(value: /* e */ Argument => _): Self = StObject.set(x, "onArgumentAxisClick", js.Any.fromFunction1(value))
+      def setOnArgumentAxisClickFunction1(value: /* e */ Argument => js.Any): Self = StObject.set(x, "onArgumentAxisClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnArgumentAxisClickUndefined: Self = StObject.set(x, "onArgumentAxisClick", js.undefined)
       
       @scala.inline
-      def setOnLegendClick(value: (js.Function1[/* e */ EventModelTarget, _]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
+      def setOnLegendClick(value: (js.Function1[/* e */ EventModelTarget, js.Any]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLegendClickFunction1(value: /* e */ EventModelTarget => _): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
+      def setOnLegendClickFunction1(value: /* e */ EventModelTarget => js.Any): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLegendClickUndefined: Self = StObject.set(x, "onLegendClick", js.undefined)
       
       @scala.inline
-      def setOnSeriesClick(value: (js.Function1[/* e */ EventModelTarget, _]) | String): Self = StObject.set(x, "onSeriesClick", value.asInstanceOf[js.Any])
+      def setOnSeriesClick(value: (js.Function1[/* e */ EventModelTarget, js.Any]) | String): Self = StObject.set(x, "onSeriesClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSeriesClickFunction1(value: /* e */ EventModelTarget => _): Self = StObject.set(x, "onSeriesClick", js.Any.fromFunction1(value))
+      def setOnSeriesClickFunction1(value: /* e */ EventModelTarget => js.Any): Self = StObject.set(x, "onSeriesClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesClickUndefined: Self = StObject.set(x, "onSeriesClick", js.undefined)
       
       @scala.inline
-      def setOnSeriesHoverChanged(value: /* e */ `22` => _): Self = StObject.set(x, "onSeriesHoverChanged", js.Any.fromFunction1(value))
+      def setOnSeriesHoverChanged(value: /* e */ `22` => js.Any): Self = StObject.set(x, "onSeriesHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesHoverChangedUndefined: Self = StObject.set(x, "onSeriesHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnSeriesSelectionChanged(value: /* e */ `22` => _): Self = StObject.set(x, "onSeriesSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSeriesSelectionChanged(value: /* e */ `22` => js.Any): Self = StObject.set(x, "onSeriesSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesSelectionChangedUndefined: Self = StObject.set(x, "onSeriesSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnZoomEnd(value: /* e */ ActionType => _): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction1(value))
+      def setOnZoomEnd(value: /* e */ ActionType => js.Any): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
       
       @scala.inline
-      def setOnZoomStart(value: /* e */ Axis => _): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction1(value))
+      def setOnZoomStart(value: /* e */ Axis => js.Any): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
@@ -7483,18 +7499,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartPanes extends dxChartCommonPaneSettings {
+  trait dxChartPanes
+    extends StObject
+       with dxChartCommonPaneSettings {
     
     /**
       * [descr:dxChart.Options.panes.height]
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.panes.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxChartPanes {
     
@@ -7526,128 +7543,127 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes]
     */
-  @js.native
   trait dxChartSeriesTypes extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries]
       */
-    var AreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeries] = js.native
+    var AreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries]
       */
-    var BarSeries: js.UndefOr[dxChartSeriesTypesBarSeries] = js.native
+    var BarSeries: js.UndefOr[dxChartSeriesTypesBarSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries]
       */
-    var BubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeries] = js.native
+    var BubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries]
       */
-    var CandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeries] = js.native
+    var CandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries]
       */
-    var CommonSeries: js.UndefOr[dxChartSeriesTypesCommonSeries] = js.native
+    var CommonSeries: js.UndefOr[dxChartSeriesTypesCommonSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries]
       */
-    var FullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeries] = js.native
+    var FullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries]
       */
-    var FullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeries] = js.native
+    var FullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries]
       */
-    var FullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeries] = js.native
+    var FullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries]
       */
-    var FullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeries] = js.native
+    var FullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries]
       */
-    var FullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeries] = js.native
+    var FullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries]
       */
-    var LineSeries: js.UndefOr[dxChartSeriesTypesLineSeries] = js.native
+    var LineSeries: js.UndefOr[dxChartSeriesTypesLineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries]
       */
-    var RangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeries] = js.native
+    var RangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries]
       */
-    var RangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeries] = js.native
+    var RangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.ScatterSeries]
       */
-    var ScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeries] = js.native
+    var ScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries]
       */
-    var SplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeries] = js.native
+    var SplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries]
       */
-    var SplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeries] = js.native
+    var SplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries]
       */
-    var StackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeries] = js.native
+    var StackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries]
       */
-    var StackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeries] = js.native
+    var StackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries]
       */
-    var StackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeries] = js.native
+    var StackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries]
       */
-    var StackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeries] = js.native
+    var StackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries]
       */
-    var StackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeries] = js.native
+    var StackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries]
       */
-    var StepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeries] = js.native
+    var StepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries]
       */
-    var StepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeries] = js.native
+    var StepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeries] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries]
       */
-    var StockSeries: js.UndefOr[dxChartSeriesTypesStockSeries] = js.native
+    var StockSeries: js.UndefOr[dxChartSeriesTypesStockSeries] = js.undefined
   }
   object dxChartSeriesTypes {
     
@@ -7809,38 +7825,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.AreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesAreaSeries: js.UndefOr[dxChartSeriesTypesAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesAreaSeries {
     
@@ -7888,14 +7905,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.AreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.AreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesAreaSeriesAggregation {
     
@@ -7919,8 +7937,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.AreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesAreaSeriesLabel {
     
     @scala.inline
@@ -7933,8 +7952,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.AreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesAreaSeriesPoint {
     
     @scala.inline
@@ -7947,32 +7967,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BarSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesBarSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesBarSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesLabel] = js.native
+    var label_dxChartSeriesTypesBarSeries: js.UndefOr[dxChartSeriesTypesBarSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesBarSeries {
     
@@ -8014,14 +8035,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BarSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesBarSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.BarSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesBarSeriesAggregation {
     
@@ -8045,8 +8067,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BarSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesBarSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesBarSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesBarSeriesLabel {
     
     @scala.inline
@@ -8059,32 +8082,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BubbleSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesBubbleSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesBubbleSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesLabel] = js.native
+    var label_dxChartSeriesTypesBubbleSeries: js.UndefOr[dxChartSeriesTypesBubbleSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesBubbleSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesBubbleSeries {
     
@@ -8126,14 +8150,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BubbleSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesBubbleSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesBubbleSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.BubbleSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesBubbleSeriesAggregation: js.UndefOr[avg | custom] = js.native
+    var method_dxChartSeriesTypesBubbleSeriesAggregation: js.UndefOr[avg | custom] = js.undefined
   }
   object dxChartSeriesTypesBubbleSeriesAggregation {
     
@@ -8157,8 +8182,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.BubbleSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesBubbleSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesBubbleSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesBubbleSeriesLabel {
     
     @scala.inline
@@ -8171,44 +8197,45 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesCandleStickSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.hoverStyle]
       */
     @JSName("hoverStyle")
-    var hoverStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyle] = js.native
+    var hoverStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyle] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesLabel] = js.native
+    var label_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesCandleStickSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.selectionStyle]
       */
     @JSName("selectionStyle")
-    var selectionStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyle] = js.native
+    var selectionStyle_dxChartSeriesTypesCandleStickSeries: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyle] = js.undefined
   }
   object dxChartSeriesTypesCandleStickSeries {
     
@@ -8262,14 +8289,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesCandleStickSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesCandleStickSeriesAggregation: js.UndefOr[ohlc | custom] = js.native
+    var method_dxChartSeriesTypesCandleStickSeriesAggregation: js.UndefOr[ohlc | custom] = js.undefined
   }
   object dxChartSeriesTypesCandleStickSeriesAggregation {
     
@@ -8293,14 +8321,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.hoverStyle]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
+  trait dxChartSeriesTypesCandleStickSeriesHoverStyle
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesHoverStyle {
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.hoverStyle.hatching]
       */
     @JSName("hatching")
-    var hatching_dxChartSeriesTypesCandleStickSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyleHatching] = js.native
+    var hatching_dxChartSeriesTypesCandleStickSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesHoverStyleHatching] = js.undefined
   }
   object dxChartSeriesTypesCandleStickSeriesHoverStyle {
     
@@ -8324,8 +8353,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.hoverStyle.hatching]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesHoverStyleHatching extends dxChartSeriesTypesCommonSeriesHoverStyleHatching
+  trait dxChartSeriesTypesCandleStickSeriesHoverStyleHatching
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesHoverStyleHatching
   object dxChartSeriesTypesCandleStickSeriesHoverStyleHatching {
     
     @scala.inline
@@ -8338,8 +8368,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesCandleStickSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesCandleStickSeriesLabel {
     
     @scala.inline
@@ -8352,14 +8383,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.selectionStyle]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesSelectionStyle extends dxChartSeriesTypesCommonSeriesSelectionStyle {
+  trait dxChartSeriesTypesCandleStickSeriesSelectionStyle
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesSelectionStyle {
     
     /**
       * [descr:dxChartSeriesTypes.CandleStickSeries.selectionStyle.hatching]
       */
     @JSName("hatching")
-    var hatching_dxChartSeriesTypesCandleStickSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching] = js.native
+    var hatching_dxChartSeriesTypesCandleStickSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching] = js.undefined
   }
   object dxChartSeriesTypesCandleStickSeriesSelectionStyle {
     
@@ -8383,8 +8415,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CandleStickSeries.selectionStyle.hatching]
     */
-  @js.native
-  trait dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching extends dxChartSeriesTypesCommonSeriesSelectionStyleHatching
+  trait dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesSelectionStyleHatching
   object dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching {
     
     @scala.inline
@@ -8397,197 +8430,196 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeries extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.aggregation]
       */
-    var aggregation: js.UndefOr[dxChartSeriesTypesCommonSeriesAggregation] = js.native
+    var aggregation: js.UndefOr[dxChartSeriesTypesCommonSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.argumentField]
       */
-    var argumentField: js.UndefOr[String] = js.native
+    var argumentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.axis]
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.barOverlapGroup]
       */
-    var barOverlapGroup: js.UndefOr[String] = js.native
+    var barOverlapGroup: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.barPadding]
       */
-    var barPadding: js.UndefOr[Double] = js.native
+    var barPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.barWidth]
       */
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.border]
       */
-    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesBorder] = js.native
+    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesBorder] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.closeValueField]
       */
-    var closeValueField: js.UndefOr[String] = js.native
+    var closeValueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.cornerRadius]
       */
-    var cornerRadius: js.UndefOr[Double] = js.native
+    var cornerRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.highValueField]
       */
-    var highValueField: js.UndefOr[String] = js.native
+    var highValueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverMode]
       */
     var hoverMode: js.UndefOr[
         allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle]
       */
-    var hoverStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyle] = js.native
+    var hoverStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyle] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.ignoreEmptyPoints]
       */
-    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.innerColor]
       */
-    var innerColor: js.UndefOr[String] = js.native
+    var innerColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label]
       */
-    var label: js.UndefOr[dxChartSeriesTypesCommonSeriesLabel] = js.native
+    var label: js.UndefOr[dxChartSeriesTypesCommonSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.lowValueField]
       */
-    var lowValueField: js.UndefOr[String] = js.native
+    var lowValueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.maxLabelCount]
       */
-    var maxLabelCount: js.UndefOr[Double] = js.native
+    var maxLabelCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.minBarSize]
       */
-    var minBarSize: js.UndefOr[Double] = js.native
+    var minBarSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.openValueField]
       */
-    var openValueField: js.UndefOr[String] = js.native
+    var openValueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.pane]
       */
-    var pane: js.UndefOr[String] = js.native
+    var pane: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point]
       */
-    var point: js.UndefOr[dxChartSeriesTypesCommonSeriesPoint] = js.native
+    var point: js.UndefOr[dxChartSeriesTypesCommonSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.rangeValue1Field]
       */
-    var rangeValue1Field: js.UndefOr[String] = js.native
+    var rangeValue1Field: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.rangeValue2Field]
       */
-    var rangeValue2Field: js.UndefOr[String] = js.native
+    var rangeValue2Field: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.reduction]
       */
-    var reduction: js.UndefOr[ColorLevel] = js.native
+    var reduction: js.UndefOr[ColorLevel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionMode]
       */
     var selectionMode: js.UndefOr[
         allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle]
       */
-    var selectionStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyle] = js.native
+    var selectionStyle: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyle] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.showInLegend]
       */
-    var showInLegend: js.UndefOr[Boolean] = js.native
+    var showInLegend: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.sizeField]
       */
-    var sizeField: js.UndefOr[String] = js.native
+    var sizeField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.stack]
       */
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.tagField]
       */
-    var tagField: js.UndefOr[String] = js.native
+    var tagField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.valueErrorBar]
       */
-    var valueErrorBar: js.UndefOr[EdgeLength] = js.native
+    var valueErrorBar: js.UndefOr[EdgeLength] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeries {
     
@@ -8829,7 +8861,6 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.aggregation]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesAggregation extends StObject {
     
     /**
@@ -8839,19 +8870,19 @@ object viz {
         js.Function2[
           /* aggregationInfo */ chartPointAggregationInfoObject, 
           /* series */ chartSeriesObject, 
-          _ | js.Array[_]
+          js.Any | js.Array[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.aggregation.enabled]
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.aggregation.method]
       */
-    var method: js.UndefOr[avg | count | max | min | ohlc | range | sum | custom] = js.native
+    var method: js.UndefOr[avg | count | max | min | ohlc | range | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesAggregation {
     
@@ -8866,7 +8897,7 @@ object viz {
       
       @scala.inline
       def setCalculate(
-        value: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => _ | js.Array[_]
+        value: (/* aggregationInfo */ chartPointAggregationInfoObject, /* series */ chartSeriesObject) => js.Any | js.Array[js.Any]
       ): Self = StObject.set(x, "calculate", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -8889,28 +8920,27 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.border]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesBorder extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.border.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.border.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.border.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.border.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesBorder {
     
@@ -8952,33 +8982,32 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesHoverStyle extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border]
       */
-    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyleBorder] = js.native
+    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyleBorder] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching]
       */
-    var hatching: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyleHatching] = js.native
+    var hatching: js.UndefOr[dxChartSeriesTypesCommonSeriesHoverStyleHatching] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesHoverStyle {
     
@@ -9026,28 +9055,27 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesHoverStyleBorder extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.border.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesHoverStyleBorder {
     
@@ -9089,28 +9117,27 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesHoverStyleHatching extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.direction]
       */
-    var direction: js.UndefOr[left | none | right] = js.native
+    var direction: js.UndefOr[left | none | right] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.step]
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.hoverStyle.hatching.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesHoverStyleHatching {
     
@@ -9152,78 +9179,77 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.label]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesLabel extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.alignment]
       */
-    var alignment: js.UndefOr[center | left | right] = js.native
+    var alignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.argumentFormat]
       */
-    var argumentFormat: js.UndefOr[format] = js.native
+    var argumentFormat: js.UndefOr[format] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.border]
       */
-    var border: js.UndefOr[ColorDashStyle] = js.native
+    var border: js.UndefOr[ColorDashStyle] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.connector]
       */
-    var connector: js.UndefOr[ColorVisible] = js.native
+    var connector: js.UndefOr[ColorVisible] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.horizontalOffset]
       */
-    var horizontalOffset: js.UndefOr[Double] = js.native
+    var horizontalOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.position]
       */
-    var position: js.UndefOr[inside | outside] = js.native
+    var position: js.UndefOr[inside | outside] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.rotationAngle]
       */
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.showForZeroValues]
       */
-    var showForZeroValues: js.UndefOr[Boolean] = js.native
+    var showForZeroValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.verticalOffset]
       */
-    var verticalOffset: js.UndefOr[Double] = js.native
+    var verticalOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesLabel {
     
@@ -9331,58 +9357,57 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.point]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesPoint extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.border]
       */
-    var border: js.UndefOr[ColorVisible] = js.native
+    var border: js.UndefOr[ColorVisible] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.hoverMode]
       */
-    var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.native
+    var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.hoverStyle]
       */
-    var hoverStyle: js.UndefOr[Size] = js.native
+    var hoverStyle: js.UndefOr[Size] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.image]
       */
-    var image: js.UndefOr[String | HeightUrl] = js.native
+    var image: js.UndefOr[String | HeightUrl] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.selectionMode]
       */
-    var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.native
+    var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.selectionStyle]
       */
-    var selectionStyle: js.UndefOr[Size] = js.native
+    var selectionStyle: js.UndefOr[Size] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.size]
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.symbol]
       */
-    var symbol: js.UndefOr[circle | cross | polygon | square | triangleDown | triangleUp] = js.native
+    var symbol: js.UndefOr[circle | cross | polygon | square | triangleDown | triangleUp] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.point.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesPoint {
     
@@ -9460,33 +9485,32 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesSelectionStyle extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border]
       */
-    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleBorder] = js.native
+    var border: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleBorder] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching]
       */
-    var hatching: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleHatching] = js.native
+    var hatching: js.UndefOr[dxChartSeriesTypesCommonSeriesSelectionStyleHatching] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesSelectionStyle {
     
@@ -9534,28 +9558,27 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesSelectionStyleBorder extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.border.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesSelectionStyleBorder {
     
@@ -9597,28 +9620,27 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching]
     */
-  @js.native
   trait dxChartSeriesTypesCommonSeriesSelectionStyleHatching extends StObject {
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.direction]
       */
-    var direction: js.UndefOr[left | none | right] = js.native
+    var direction: js.UndefOr[left | none | right] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.step]
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.CommonSeries.selectionStyle.hatching.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxChartSeriesTypesCommonSeriesSelectionStyleHatching {
     
@@ -9660,38 +9682,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesFullStackedAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesFullStackedAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesFullStackedAreaSeries {
     
@@ -9739,14 +9762,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesFullStackedAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesFullStackedAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesFullStackedAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesFullStackedAreaSeriesAggregation {
     
@@ -9770,8 +9794,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesFullStackedAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesFullStackedAreaSeriesLabel {
     
     @scala.inline
@@ -9784,8 +9809,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesFullStackedAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesFullStackedAreaSeriesPoint {
     
     @scala.inline
@@ -9798,32 +9824,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedBarSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedBarSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesFullStackedBarSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeriesLabel] = js.native
+    var label_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[dxChartSeriesTypesFullStackedBarSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesFullStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesFullStackedBarSeries {
     
@@ -9865,14 +9892,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedBarSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesFullStackedBarSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedBarSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesFullStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesFullStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesFullStackedBarSeriesAggregation {
     
@@ -9896,8 +9924,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedBarSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedBarSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesFullStackedBarSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesFullStackedBarSeriesLabel {
     
     @scala.inline
@@ -9910,32 +9939,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedLineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedLineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesFullStackedLineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[dxChartSeriesTypesFullStackedLineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesFullStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesFullStackedLineSeries {
     
@@ -9977,14 +10007,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedLineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedLineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesFullStackedLineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedLineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesFullStackedLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesFullStackedLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesFullStackedLineSeriesAggregation {
     
@@ -10008,8 +10039,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedLineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedLineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesFullStackedLineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesFullStackedLineSeriesLabel {
     
     @scala.inline
@@ -10022,38 +10054,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesFullStackedSplineAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesFullStackedSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesFullStackedSplineAreaSeries {
     
@@ -10101,14 +10134,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesFullStackedSplineAreaSeriesAggregation {
     
@@ -10132,8 +10166,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesFullStackedSplineAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesFullStackedSplineAreaSeriesLabel {
     
     @scala.inline
@@ -10146,8 +10181,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesFullStackedSplineAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesFullStackedSplineAreaSeriesPoint {
     
     @scala.inline
@@ -10160,32 +10196,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesFullStackedSplineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[dxChartSeriesTypesFullStackedSplineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesFullStackedSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesFullStackedSplineSeries {
     
@@ -10227,14 +10264,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesFullStackedSplineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.FullStackedSplineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesFullStackedSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesFullStackedSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesFullStackedSplineSeriesAggregation {
     
@@ -10258,8 +10296,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.FullStackedSplineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesFullStackedSplineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesFullStackedSplineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesFullStackedSplineSeriesLabel {
     
     @scala.inline
@@ -10272,32 +10311,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.LineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesLineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesLineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesLineSeries: js.UndefOr[dxChartSeriesTypesLineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesLineSeries {
     
@@ -10339,14 +10379,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.LineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesLineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesLineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.LineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesLineSeriesAggregation {
     
@@ -10370,8 +10411,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.LineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesLineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesLineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesLineSeriesLabel {
     
     @scala.inline
@@ -10384,38 +10426,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesRangeAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[dxChartSeriesTypesRangeAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesRangeAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesRangeAreaSeries {
     
@@ -10463,14 +10506,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesRangeAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.RangeAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesRangeAreaSeriesAggregation: js.UndefOr[range | custom] = js.native
+    var method_dxChartSeriesTypesRangeAreaSeriesAggregation: js.UndefOr[range | custom] = js.undefined
   }
   object dxChartSeriesTypesRangeAreaSeriesAggregation {
     
@@ -10494,8 +10538,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesRangeAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesRangeAreaSeriesLabel {
     
     @scala.inline
@@ -10508,8 +10553,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesRangeAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesRangeAreaSeriesPoint {
     
     @scala.inline
@@ -10522,32 +10568,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeBarSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeBarSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesRangeBarSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesLabel] = js.native
+    var label_dxChartSeriesTypesRangeBarSeries: js.UndefOr[dxChartSeriesTypesRangeBarSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesRangeBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesRangeBarSeries {
     
@@ -10589,14 +10636,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeBarSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesRangeBarSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.RangeBarSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesRangeBarSeriesAggregation: js.UndefOr[range | custom] = js.native
+    var method_dxChartSeriesTypesRangeBarSeriesAggregation: js.UndefOr[range | custom] = js.undefined
   }
   object dxChartSeriesTypesRangeBarSeriesAggregation {
     
@@ -10620,8 +10668,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.RangeBarSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesRangeBarSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesRangeBarSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesRangeBarSeriesLabel {
     
     @scala.inline
@@ -10634,20 +10683,21 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.ScatterSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesScatterSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesScatterSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.ScatterSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.ScatterSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesLabel] = js.native
+    var label_dxChartSeriesTypesScatterSeries: js.UndefOr[dxChartSeriesTypesScatterSeriesLabel] = js.undefined
   }
   object dxChartSeriesTypesScatterSeries {
     
@@ -10677,14 +10727,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.ScatterSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesScatterSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesScatterSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.ScatterSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesScatterSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesScatterSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesScatterSeriesAggregation {
     
@@ -10708,8 +10759,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.ScatterSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesScatterSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesScatterSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesScatterSeriesLabel {
     
     @scala.inline
@@ -10722,38 +10774,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesSplineAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[dxChartSeriesTypesSplineAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesSplineAreaSeries {
     
@@ -10801,14 +10854,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesSplineAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.SplineAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesSplineAreaSeriesAggregation {
     
@@ -10832,8 +10886,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesSplineAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesSplineAreaSeriesLabel {
     
     @scala.inline
@@ -10846,8 +10901,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesSplineAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesSplineAreaSeriesPoint {
     
     @scala.inline
@@ -10860,32 +10916,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesSplineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesSplineSeries: js.UndefOr[dxChartSeriesTypesSplineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesSplineSeries {
     
@@ -10927,14 +10984,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesSplineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.SplineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesSplineSeriesAggregation {
     
@@ -10958,8 +11016,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.SplineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesSplineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesSplineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesSplineSeriesLabel {
     
     @scala.inline
@@ -10972,38 +11031,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStackedAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[dxChartSeriesTypesStackedAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStackedAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesStackedAreaSeries {
     
@@ -11051,14 +11111,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStackedAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StackedAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStackedAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStackedAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStackedAreaSeriesAggregation {
     
@@ -11082,8 +11143,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStackedAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStackedAreaSeriesLabel {
     
     @scala.inline
@@ -11096,8 +11158,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesStackedAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesStackedAreaSeriesPoint {
     
     @scala.inline
@@ -11110,32 +11173,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedBarSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedBarSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStackedBarSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStackedBarSeries: js.UndefOr[dxChartSeriesTypesStackedBarSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStackedBarSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesStackedBarSeries {
     
@@ -11177,14 +11241,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedBarSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedBarSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStackedBarSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StackedBarSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStackedBarSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStackedBarSeriesAggregation {
     
@@ -11208,8 +11273,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedBarSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedBarSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStackedBarSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStackedBarSeriesLabel {
     
     @scala.inline
@@ -11222,32 +11288,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedLineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedLineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStackedLineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStackedLineSeries: js.UndefOr[dxChartSeriesTypesStackedLineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStackedLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesStackedLineSeries {
     
@@ -11289,14 +11356,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedLineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedLineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStackedLineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StackedLineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStackedLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStackedLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStackedLineSeriesAggregation {
     
@@ -11320,8 +11388,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedLineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedLineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStackedLineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStackedLineSeriesLabel {
     
     @scala.inline
@@ -11334,38 +11403,39 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStackedSplineAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[dxChartSeriesTypesStackedSplineAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStackedSplineAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesStackedSplineAreaSeries {
     
@@ -11413,14 +11483,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStackedSplineAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStackedSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStackedSplineAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStackedSplineAreaSeriesAggregation {
     
@@ -11444,8 +11515,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStackedSplineAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStackedSplineAreaSeriesLabel {
     
     @scala.inline
@@ -11458,8 +11530,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesStackedSplineAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesStackedSplineAreaSeriesPoint {
     
     @scala.inline
@@ -11472,32 +11545,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStackedSplineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[dxChartSeriesTypesStackedSplineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStackedSplineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesStackedSplineSeries {
     
@@ -11539,14 +11613,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStackedSplineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StackedSplineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStackedSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStackedSplineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStackedSplineSeriesAggregation {
     
@@ -11570,8 +11645,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StackedSplineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStackedSplineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStackedSplineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStackedSplineSeriesLabel {
     
     @scala.inline
@@ -11584,56 +11660,57 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStepAreaSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.border]
       */
     @JSName("border")
-    var border_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesBorder] = js.native
+    var border_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesBorder] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.hoverStyle]
       */
     @JSName("hoverStyle")
-    var hoverStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyle] = js.native
+    var hoverStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyle] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.point]
       */
     @JSName("point")
-    var point_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesPoint] = js.native
+    var point_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesPoint] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStepAreaSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.selectionStyle]
       */
     @JSName("selectionStyle")
-    var selectionStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyle] = js.native
+    var selectionStyle_dxChartSeriesTypesStepAreaSeries: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyle] = js.undefined
   }
   object dxChartSeriesTypesStepAreaSeries {
     
@@ -11699,14 +11776,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStepAreaSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStepAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStepAreaSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStepAreaSeriesAggregation {
     
@@ -11730,8 +11808,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.border]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesBorder extends dxChartSeriesTypesCommonSeriesBorder
+  trait dxChartSeriesTypesStepAreaSeriesBorder
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesBorder
   object dxChartSeriesTypesStepAreaSeriesBorder {
     
     @scala.inline
@@ -11744,14 +11823,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.hoverStyle]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesHoverStyle extends dxChartSeriesTypesCommonSeriesHoverStyle {
+  trait dxChartSeriesTypesStepAreaSeriesHoverStyle
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesHoverStyle {
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.hoverStyle.border]
       */
     @JSName("border")
-    var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.native
+    var border_dxChartSeriesTypesStepAreaSeriesHoverStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesHoverStyleBorder] = js.undefined
   }
   object dxChartSeriesTypesStepAreaSeriesHoverStyle {
     
@@ -11775,8 +11855,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.hoverStyle.border]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesHoverStyleBorder extends dxChartSeriesTypesCommonSeriesHoverStyleBorder
+  trait dxChartSeriesTypesStepAreaSeriesHoverStyleBorder
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesHoverStyleBorder
   object dxChartSeriesTypesStepAreaSeriesHoverStyleBorder {
     
     @scala.inline
@@ -11789,8 +11870,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStepAreaSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStepAreaSeriesLabel {
     
     @scala.inline
@@ -11803,8 +11885,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.point]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesPoint extends dxChartSeriesTypesCommonSeriesPoint
+  trait dxChartSeriesTypesStepAreaSeriesPoint
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesPoint
   object dxChartSeriesTypesStepAreaSeriesPoint {
     
     @scala.inline
@@ -11817,14 +11900,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.selectionStyle]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesSelectionStyle extends dxChartSeriesTypesCommonSeriesSelectionStyle {
+  trait dxChartSeriesTypesStepAreaSeriesSelectionStyle
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesSelectionStyle {
     
     /**
       * [descr:dxChartSeriesTypes.StepAreaSeries.selectionStyle.border]
       */
     @JSName("border")
-    var border_dxChartSeriesTypesStepAreaSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder] = js.native
+    var border_dxChartSeriesTypesStepAreaSeriesSelectionStyle: js.UndefOr[dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder] = js.undefined
   }
   object dxChartSeriesTypesStepAreaSeriesSelectionStyle {
     
@@ -11848,8 +11932,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepAreaSeries.selectionStyle.border]
     */
-  @js.native
-  trait dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder extends dxChartSeriesTypesCommonSeriesSelectionStyleBorder
+  trait dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesSelectionStyleBorder
   object dxChartSeriesTypesStepAreaSeriesSelectionStyleBorder {
     
     @scala.inline
@@ -11862,32 +11947,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepLineSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStepLineSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStepLineSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStepLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStepLineSeries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStepLineSeries: js.UndefOr[dxChartSeriesTypesStepLineSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStepLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStepLineSeries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxChartSeriesTypesStepLineSeries {
     
@@ -11929,14 +12015,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepLineSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStepLineSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStepLineSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StepLineSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStepLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.native
+    var method_dxChartSeriesTypesStepLineSeriesAggregation: js.UndefOr[avg | count | max | min | sum | custom] = js.undefined
   }
   object dxChartSeriesTypesStepLineSeriesAggregation {
     
@@ -11960,8 +12047,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StepLineSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStepLineSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStepLineSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStepLineSeriesLabel {
     
     @scala.inline
@@ -11974,32 +12062,33 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StockSeries]
     */
-  @js.native
-  trait dxChartSeriesTypesStockSeries extends dxChartSeriesTypesCommonSeries {
+  trait dxChartSeriesTypesStockSeries
+    extends StObject
+       with dxChartSeriesTypesCommonSeries {
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries.aggregation]
       */
     @JSName("aggregation")
-    var aggregation_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesAggregation] = js.native
+    var aggregation_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesAggregation] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries.label]
       */
     @JSName("label")
-    var label_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesLabel] = js.native
+    var label_dxChartSeriesTypesStockSeries: js.UndefOr[dxChartSeriesTypesStockSeriesLabel] = js.undefined
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxChartSeriesTypesStockSeries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxChartSeriesTypesStockSeries {
     
@@ -12041,14 +12130,15 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StockSeries.aggregation]
     */
-  @js.native
-  trait dxChartSeriesTypesStockSeriesAggregation extends dxChartSeriesTypesCommonSeriesAggregation {
+  trait dxChartSeriesTypesStockSeriesAggregation
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesAggregation {
     
     /**
       * [descr:dxChartSeriesTypes.StockSeries.aggregation.method]
       */
     @JSName("method")
-    var method_dxChartSeriesTypesStockSeriesAggregation: js.UndefOr[ohlc | custom] = js.native
+    var method_dxChartSeriesTypesStockSeriesAggregation: js.UndefOr[ohlc | custom] = js.undefined
   }
   object dxChartSeriesTypesStockSeriesAggregation {
     
@@ -12072,8 +12162,9 @@ object viz {
   /**
     * [descr:dxChartSeriesTypes.StockSeries.label]
     */
-  @js.native
-  trait dxChartSeriesTypesStockSeriesLabel extends dxChartSeriesTypesCommonSeriesLabel
+  trait dxChartSeriesTypesStockSeriesLabel
+    extends StObject
+       with dxChartSeriesTypesCommonSeriesLabel
   object dxChartSeriesTypesStockSeriesLabel {
     
     @scala.inline
@@ -12083,13 +12174,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartTooltip extends BaseChartTooltip {
+  trait dxChartTooltip
+    extends StObject
+       with BaseChartTooltip {
     
     /**
       * [descr:dxChart.Options.tooltip.location]
       */
-    var location: js.UndefOr[center | edge] = js.native
+    var location: js.UndefOr[center | edge] = js.undefined
   }
   object dxChartTooltip {
     
@@ -12110,162 +12202,163 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxis extends dxChartCommonAxisSettings {
+  trait dxChartValueAxis
+    extends StObject
+       with dxChartCommonAxisSettings {
     
     /**
       * [descr:dxChart.Options.valueAxis.autoBreaksEnabled]
       */
-    var autoBreaksEnabled: js.UndefOr[Boolean] = js.native
+    var autoBreaksEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.axisDivisionFactor]
       */
-    var axisDivisionFactor: js.UndefOr[Double] = js.native
+    var axisDivisionFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.breaks]
       */
-    var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.native
+    var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.categories]
       */
-    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.native
+    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLineStyle]
       */
     @JSName("constantLineStyle")
-    var constantLineStyle_dxChartValueAxis: js.UndefOr[dxChartValueAxisConstantLineStyle] = js.native
+    var constantLineStyle_dxChartValueAxis: js.UndefOr[dxChartValueAxisConstantLineStyle] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines]
       */
-    var constantLines: js.UndefOr[js.Array[dxChartValueAxisConstantLines]] = js.native
+    var constantLines: js.UndefOr[js.Array[dxChartValueAxisConstantLines]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.customPosition]
       */
-    var customPosition: js.UndefOr[Double | Date | String] = js.native
+    var customPosition: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.label]
       */
     @JSName("label")
-    var label_dxChartValueAxis: js.UndefOr[dxChartValueAxisLabel] = js.native
+    var label_dxChartValueAxis: js.UndefOr[dxChartValueAxisLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.linearThreshold]
       */
-    var linearThreshold: js.UndefOr[Double] = js.native
+    var linearThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.logarithmBase]
       */
-    var logarithmBase: js.UndefOr[Double] = js.native
+    var logarithmBase: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.maxAutoBreakCount]
       */
-    var maxAutoBreakCount: js.UndefOr[Double] = js.native
+    var maxAutoBreakCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.minVisualRangeLength]
       */
     var minVisualRangeLength: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.minorTickCount]
       */
-    var minorTickCount: js.UndefOr[Double] = js.native
+    var minorTickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.minorTickInterval]
       */
     var minorTickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.multipleAxesSpacing]
       */
-    var multipleAxesSpacing: js.UndefOr[Double] = js.native
+    var multipleAxesSpacing: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.offset]
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.pane]
       */
-    var pane: js.UndefOr[String] = js.native
+    var pane: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.position]
       */
-    var position: js.UndefOr[bottom | left | right | top] = js.native
+    var position: js.UndefOr[bottom | left | right | top] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.showZero]
       */
-    var showZero: js.UndefOr[Boolean] = js.native
+    var showZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.strips]
       */
-    var strips: js.UndefOr[js.Array[dxChartValueAxisStrips]] = js.native
+    var strips: js.UndefOr[js.Array[dxChartValueAxisStrips]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.synchronizedValue]
       */
-    var synchronizedValue: js.UndefOr[Double] = js.native
+    var synchronizedValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.tickInterval]
       */
     var tickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.title]
       */
     @JSName("title")
-    var title_dxChartValueAxis: js.UndefOr[dxChartValueAxisTitle] = js.native
+    var title_dxChartValueAxis: js.UndefOr[dxChartValueAxisTitle] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.type]
       */
-    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.native
+    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.valueType]
       */
-    var valueType: js.UndefOr[datetime | numeric | string_] = js.native
+    var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.visualRange]
       */
-    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.visualRangeUpdateMode]
       */
-    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.native
+    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.wholeRange]
       */
-    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
   }
   object dxChartValueAxis {
     
@@ -12478,14 +12571,15 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisConstantLineStyle extends dxChartCommonAxisSettingsConstantLineStyle {
+  trait dxChartValueAxisConstantLineStyle
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLineStyle.label]
       */
     @JSName("label")
-    var label_dxChartValueAxisConstantLineStyle: js.UndefOr[dxChartValueAxisConstantLineStyleLabel] = js.native
+    var label_dxChartValueAxisConstantLineStyle: js.UndefOr[dxChartValueAxisConstantLineStyleLabel] = js.undefined
   }
   object dxChartValueAxisConstantLineStyle {
     
@@ -12506,18 +12600,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisConstantLineStyleLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxChartValueAxisConstantLineStyleLabel
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLineStyle.label.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLineStyle.label.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxChartValueAxisConstantLineStyleLabel {
     
@@ -12544,29 +12639,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisConstantLines extends dxChartCommonAxisSettingsConstantLineStyle {
+  trait dxChartValueAxisConstantLines
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.displayBehindSeries]
       */
-    var displayBehindSeries: js.UndefOr[Boolean] = js.native
+    var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.extendAxis]
       */
-    var extendAxis: js.UndefOr[Boolean] = js.native
+    var extendAxis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.label]
       */
     @JSName("label")
-    var label_dxChartValueAxisConstantLines: js.UndefOr[dxChartValueAxisConstantLinesLabel] = js.native
+    var label_dxChartValueAxisConstantLines: js.UndefOr[dxChartValueAxisConstantLinesLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.value]
       */
-    var value: js.UndefOr[Double | Date | String] = js.native
+    var value: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxChartValueAxisConstantLines {
     
@@ -12605,23 +12701,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisConstantLinesLabel extends dxChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxChartValueAxisConstantLinesLabel
+    extends StObject
+       with dxChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.label.horizontalAlignment]
       */
-    var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+    var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.constantLines.label.verticalAlignment]
       */
-    var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+    var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxChartValueAxisConstantLinesLabel {
     
@@ -12654,23 +12751,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisLabel extends dxChartCommonAxisSettingsLabel {
+  trait dxChartValueAxisLabel
+    extends StObject
+       with dxChartCommonAxisSettingsLabel {
     
     /**
       * [descr:dxChart.Options.valueAxis.label.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   }
   object dxChartValueAxisLabel {
     
@@ -12706,29 +12804,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisStrips extends dxChartCommonAxisSettingsStripStyle {
+  trait dxChartValueAxisStrips
+    extends StObject
+       with dxChartCommonAxisSettingsStripStyle {
     
     /**
       * [descr:dxChart.Options.valueAxis.strips.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.strips.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.strips.label]
       */
     @JSName("label")
-    var label_dxChartValueAxisStrips: js.UndefOr[dxChartValueAxisStripsLabel] = js.native
+    var label_dxChartValueAxisStrips: js.UndefOr[dxChartValueAxisStripsLabel] = js.undefined
     
     /**
       * [descr:dxChart.Options.valueAxis.strips.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxChartValueAxisStrips {
     
@@ -12767,13 +12866,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisStripsLabel extends dxChartCommonAxisSettingsStripStyleLabel {
+  trait dxChartValueAxisStripsLabel
+    extends StObject
+       with dxChartCommonAxisSettingsStripStyleLabel {
     
     /**
       * [descr:dxChart.Options.valueAxis.strips.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxChartValueAxisStripsLabel {
     
@@ -12794,13 +12894,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxChartValueAxisTitle extends dxChartCommonAxisSettingsTitle {
+  trait dxChartValueAxisTitle
+    extends StObject
+       with dxChartCommonAxisSettingsTitle {
     
     /**
       * [descr:dxChart.Options.valueAxis.title.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxChartValueAxisTitle {
     
@@ -12823,35 +12924,36 @@ object viz {
   
   type dxCircularGauge = BaseGauge
   
-  @js.native
-  trait dxCircularGaugeOptions extends BaseGaugeOptions[dxCircularGauge] {
+  trait dxCircularGaugeOptions
+    extends StObject
+       with BaseGaugeOptions[dxCircularGauge] {
     
     /**
       * [descr:dxCircularGauge.Options.geometry]
       */
-    var geometry: js.UndefOr[EndAngle] = js.native
+    var geometry: js.UndefOr[EndAngle] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.rangeContainer]
       */
     @JSName("rangeContainer")
-    var rangeContainer_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeRangeContainer] = js.native
+    var rangeContainer_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeRangeContainer] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.scale]
       */
     @JSName("scale")
-    var scale_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeScale] = js.native
+    var scale_dxCircularGaugeOptions: js.UndefOr[dxCircularGaugeScale] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.subvalueIndicator]
       */
-    var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.native
+    var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.valueIndicator]
       */
-    var valueIndicator: js.UndefOr[GaugeIndicator] = js.native
+    var valueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
   }
   object dxCircularGaugeOptions {
     
@@ -12896,18 +12998,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxCircularGaugeRangeContainer extends BaseGaugeRangeContainer {
+  trait dxCircularGaugeRangeContainer
+    extends StObject
+       with BaseGaugeRangeContainer {
     
     /**
       * [descr:dxCircularGauge.Options.rangeContainer.orientation]
       */
-    var orientation: js.UndefOr[center | inside | outside] = js.native
+    var orientation: js.UndefOr[center | inside | outside] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.rangeContainer.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxCircularGaugeRangeContainer {
     
@@ -12934,19 +13037,20 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxCircularGaugeScale extends BaseGaugeScale {
+  trait dxCircularGaugeScale
+    extends StObject
+       with BaseGaugeScale {
     
     /**
       * [descr:dxCircularGauge.Options.scale.label]
       */
     @JSName("label")
-    var label_dxCircularGaugeScale: js.UndefOr[dxCircularGaugeScaleLabel] = js.native
+    var label_dxCircularGaugeScale: js.UndefOr[dxCircularGaugeScaleLabel] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.scale.orientation]
       */
-    var orientation: js.UndefOr[center | inside | outside] = js.native
+    var orientation: js.UndefOr[center | inside | outside] = js.undefined
   }
   object dxCircularGaugeScale {
     
@@ -12973,18 +13077,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxCircularGaugeScaleLabel extends BaseGaugeScaleLabel {
+  trait dxCircularGaugeScaleLabel
+    extends StObject
+       with BaseGaugeScaleLabel {
     
     /**
       * [descr:dxCircularGauge.Options.scale.label.hideFirstOrLast]
       */
-    var hideFirstOrLast: js.UndefOr[first | last] = js.native
+    var hideFirstOrLast: js.UndefOr[first | last] = js.undefined
     
     /**
       * [descr:dxCircularGauge.Options.scale.label.indentFromTick]
       */
-    var indentFromTick: js.UndefOr[Double] = js.native
+    var indentFromTick: js.UndefOr[Double] = js.undefined
   }
   object dxCircularGaugeScaleLabel {
     
@@ -13012,7 +13117,9 @@ object viz {
   }
   
   @js.native
-  trait dxFunnel extends BaseWidget {
+  trait dxFunnel
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:dxFunnel.clearSelection()]
@@ -13035,58 +13142,57 @@ object viz {
     def hideTooltip(): Unit = js.native
   }
   
-  @js.native
   trait dxFunnelItem extends StObject {
     
     /**
       * [descr:dxFunnelItem.argument]
       */
-    var argument: js.UndefOr[String | Date | Double] = js.native
+    var argument: js.UndefOr[String | Date | Double] = js.undefined
     
     /**
       * [descr:dxFunnelItem.data]
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxFunnelItem.getColor()]
       */
-    def getColor(): String = js.native
+    def getColor(): String
     
     /**
       * [descr:dxFunnelItem.hover(state)]
       */
-    def hover(state: Boolean): Unit = js.native
+    def hover(state: Boolean): Unit
     
     /**
       * [descr:dxFunnelItem.isHovered()]
       */
-    def isHovered(): Boolean = js.native
+    def isHovered(): Boolean
     
     /**
       * [descr:dxFunnelItem.isSelected()]
       */
-    def isSelected(): Boolean = js.native
+    def isSelected(): Boolean
     
     /**
       * [descr:dxFunnelItem.percent]
       */
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFunnelItem.select(state)]
       */
-    def select(state: Boolean): Unit = js.native
+    def select(state: Boolean): Unit
     
     /**
       * [descr:dxFunnelItem.showTooltip()]
       */
-    def showTooltip(): Unit = js.native
+    def showTooltip(): Unit
     
     /**
       * [descr:dxFunnelItem.value]
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object dxFunnelItem {
     
@@ -13150,23 +13256,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxFunnelLegend extends BaseLegend {
+  trait dxFunnelLegend
+    extends StObject
+       with BaseLegend {
     
     /**
       * [descr:dxFunnel.Options.legend.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ `23`, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ `23`, String]] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.legend.customizeItems]
       */
-    var customizeItems: js.UndefOr[js.Function1[/* items */ js.Array[FunnelLegendItem], js.Array[FunnelLegendItem]]] = js.native
+    var customizeItems: js.UndefOr[js.Function1[/* items */ js.Array[FunnelLegendItem], js.Array[FunnelLegendItem]]] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.legend.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* itemInfo */ `23`, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* itemInfo */ `23`, String]] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.legend.markerTemplate]
@@ -13177,7 +13284,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxFunnelLegend {
     
@@ -13227,126 +13334,127 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxFunnelOptions extends BaseWidgetOptions[dxFunnel] {
+  trait dxFunnelOptions
+    extends StObject
+       with BaseWidgetOptions[dxFunnel] {
     
     /**
       * [descr:dxFunnel.Options.adaptiveLayout]
       */
-    var adaptiveLayout: js.UndefOr[KeepLabels] = js.native
+    var adaptiveLayout: js.UndefOr[KeepLabels] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.algorithm]
       */
-    var algorithm: js.UndefOr[dynamicHeight | dynamicSlope] = js.native
+    var algorithm: js.UndefOr[dynamicHeight | dynamicSlope] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.argumentField]
       */
-    var argumentField: js.UndefOr[String] = js.native
+    var argumentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.colorField]
       */
-    var colorField: js.UndefOr[String] = js.native
+    var colorField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.hoverEnabled]
       */
-    var hoverEnabled: js.UndefOr[Boolean] = js.native
+    var hoverEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.inverted]
       */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.item]
       */
-    var item: js.UndefOr[HoverStyle] = js.native
+    var item: js.UndefOr[HoverStyle] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.label]
       */
-    var label: js.UndefOr[Connector] = js.native
+    var label: js.UndefOr[Connector] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.legend]
       */
-    var legend: js.UndefOr[dxFunnelLegend] = js.native
+    var legend: js.UndefOr[dxFunnelLegend] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.neckHeight]
       */
-    var neckHeight: js.UndefOr[Double] = js.native
+    var neckHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.neckWidth]
       */
-    var neckWidth: js.UndefOr[Double] = js.native
+    var neckWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.onHoverChanged]
       */
-    var onHoverChanged: js.UndefOr[js.Function1[/* e */ ItemModel, _]] = js.native
+    var onHoverChanged: js.UndefOr[js.Function1[/* e */ ItemModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.onItemClick]
       */
-    var onItemClick: js.UndefOr[(js.Function1[/* e */ EventItem, _]) | String] = js.native
+    var onItemClick: js.UndefOr[(js.Function1[/* e */ EventItem, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.onLegendClick]
       */
-    var onLegendClick: js.UndefOr[(js.Function1[/* e */ EventItem, _]) | String] = js.native
+    var onLegendClick: js.UndefOr[(js.Function1[/* e */ EventItem, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ItemModel, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ItemModel, js.Any]] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.paletteExtensionMode]
       */
-    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.resolveLabelOverlapping]
       */
-    var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.native
+    var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | none | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.sortData]
       */
-    var sortData: js.UndefOr[Boolean] = js.native
+    var sortData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxFunnelOptions: js.UndefOr[dxFunnelTooltip] = js.native
+    var tooltip_dxFunnelOptions: js.UndefOr[dxFunnelTooltip] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object dxFunnelOptions {
     
@@ -13384,7 +13492,7 @@ object viz {
       def setColorFieldUndefined: Self = StObject.set(x, "colorField", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -13435,31 +13543,31 @@ object viz {
       def setNeckWidthUndefined: Self = StObject.set(x, "neckWidth", js.undefined)
       
       @scala.inline
-      def setOnHoverChanged(value: /* e */ ItemModel => _): Self = StObject.set(x, "onHoverChanged", js.Any.fromFunction1(value))
+      def setOnHoverChanged(value: /* e */ ItemModel => js.Any): Self = StObject.set(x, "onHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHoverChangedUndefined: Self = StObject.set(x, "onHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnItemClick(value: (js.Function1[/* e */ EventItem, _]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
+      def setOnItemClick(value: (js.Function1[/* e */ EventItem, js.Any]) | String): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnItemClickFunction1(value: /* e */ EventItem => _): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
+      def setOnItemClickFunction1(value: /* e */ EventItem => js.Any): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
       
       @scala.inline
-      def setOnLegendClick(value: (js.Function1[/* e */ EventItem, _]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
+      def setOnLegendClick(value: (js.Function1[/* e */ EventItem, js.Any]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLegendClickFunction1(value: /* e */ EventItem => _): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
+      def setOnLegendClickFunction1(value: /* e */ EventItem => js.Any): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLegendClickUndefined: Self = StObject.set(x, "onLegendClick", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ ItemModel => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ ItemModel => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -13513,20 +13621,21 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxFunnelTooltip extends BaseWidgetTooltip {
+  trait dxFunnelTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:dxFunnel.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* info */ Percent, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxFunnel.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* info */ Percent, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* info */ Percent, js.Any]] = js.undefined
   }
   object dxFunnelTooltip {
     
@@ -13551,7 +13660,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* info */ Percent => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* info */ Percent => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -13560,35 +13669,36 @@ object viz {
   
   type dxLinearGauge = BaseGauge
   
-  @js.native
-  trait dxLinearGaugeOptions extends BaseGaugeOptions[dxLinearGauge] {
+  trait dxLinearGaugeOptions
+    extends StObject
+       with BaseGaugeOptions[dxLinearGauge] {
     
     /**
       * [descr:dxLinearGauge.Options.geometry]
       */
-    var geometry: js.UndefOr[`24`] = js.native
+    var geometry: js.UndefOr[`24`] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.rangeContainer]
       */
     @JSName("rangeContainer")
-    var rangeContainer_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeRangeContainer] = js.native
+    var rangeContainer_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeRangeContainer] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.scale]
       */
     @JSName("scale")
-    var scale_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeScale] = js.native
+    var scale_dxLinearGaugeOptions: js.UndefOr[dxLinearGaugeScale] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.subvalueIndicator]
       */
-    var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.native
+    var subvalueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.valueIndicator]
       */
-    var valueIndicator: js.UndefOr[GaugeIndicator] = js.native
+    var valueIndicator: js.UndefOr[GaugeIndicator] = js.undefined
   }
   object dxLinearGaugeOptions {
     
@@ -13633,23 +13743,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxLinearGaugeRangeContainer extends BaseGaugeRangeContainer {
+  trait dxLinearGaugeRangeContainer
+    extends StObject
+       with BaseGaugeRangeContainer {
     
     /**
       * [descr:dxLinearGauge.Options.rangeContainer.horizontalOrientation]
       */
-    var horizontalOrientation: js.UndefOr[center | left | right] = js.native
+    var horizontalOrientation: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.rangeContainer.verticalOrientation]
       */
-    var verticalOrientation: js.UndefOr[bottom | center | top] = js.native
+    var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.rangeContainer.width]
       */
-    var width: js.UndefOr[Start | Double] = js.native
+    var width: js.UndefOr[Start | Double] = js.undefined
   }
   object dxLinearGaugeRangeContainer {
     
@@ -13682,24 +13793,25 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxLinearGaugeScale extends BaseGaugeScale {
+  trait dxLinearGaugeScale
+    extends StObject
+       with BaseGaugeScale {
     
     /**
       * [descr:dxLinearGauge.Options.scale.horizontalOrientation]
       */
-    var horizontalOrientation: js.UndefOr[center | left | right] = js.native
+    var horizontalOrientation: js.UndefOr[center | left | right] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.scale.label]
       */
     @JSName("label")
-    var label_dxLinearGaugeScale: js.UndefOr[dxLinearGaugeScaleLabel] = js.native
+    var label_dxLinearGaugeScale: js.UndefOr[dxLinearGaugeScaleLabel] = js.undefined
     
     /**
       * [descr:dxLinearGauge.Options.scale.verticalOrientation]
       */
-    var verticalOrientation: js.UndefOr[bottom | center | top] = js.native
+    var verticalOrientation: js.UndefOr[bottom | center | top] = js.undefined
   }
   object dxLinearGaugeScale {
     
@@ -13732,13 +13844,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxLinearGaugeScaleLabel extends BaseGaugeScaleLabel {
+  trait dxLinearGaugeScaleLabel
+    extends StObject
+       with BaseGaugeScaleLabel {
     
     /**
       * [descr:dxLinearGauge.Options.scale.label.indentFromTick]
       */
-    var indentFromTick: js.UndefOr[Double] = js.native
+    var indentFromTick: js.UndefOr[Double] = js.undefined
   }
   object dxLinearGaugeScaleLabel {
     
@@ -13760,7 +13873,9 @@ object viz {
   }
   
   @js.native
-  trait dxPieChart extends BaseChart {
+  trait dxPieChart
+    extends StObject
+       with BaseChart {
     
     /**
       * [descr:dxPieChart.getInnerRadius()]
@@ -13768,8 +13883,9 @@ object viz {
     def getInnerRadius(): Double = js.native
   }
   
-  @js.native
-  trait dxPieChartAdaptiveLayout extends BaseChartAdaptiveLayout
+  trait dxPieChartAdaptiveLayout
+    extends StObject
+       with BaseChartAdaptiveLayout
   object dxPieChartAdaptiveLayout {
     
     @scala.inline
@@ -13779,13 +13895,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPieChartAnnotationConfig extends dxPieChartCommonAnnotationConfig {
+  trait dxPieChartAnnotationConfig
+    extends StObject
+       with dxPieChartCommonAnnotationConfig {
     
     /**
       * [descr:dxPieChartAnnotationConfig.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxPieChartAnnotationConfig {
     
@@ -13806,28 +13923,29 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPieChartCommonAnnotationConfig extends BaseWidgetAnnotationConfig {
+  trait dxPieChartCommonAnnotationConfig
+    extends StObject
+       with BaseWidgetAnnotationConfig {
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.argument]
       */
-    var argument: js.UndefOr[Double | Date | String] = js.native
+    var argument: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxPieChartAnnotationConfig | js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxPieChartAnnotationConfig | js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.location]
       */
-    var location: js.UndefOr[center | edge] = js.native
+    var location: js.UndefOr[center | edge] = js.undefined
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.series]
       */
-    var series: js.UndefOr[String] = js.native
+    var series: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.template]
@@ -13838,7 +13956,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPieChartCommonAnnotationConfig.tooltipTemplate]
@@ -13849,7 +13967,7 @@ object viz {
           /* element */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxPieChartCommonAnnotationConfig {
     
@@ -13869,7 +13987,7 @@ object viz {
       def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* annotation */ dxPieChartAnnotationConfig | js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* annotation */ dxPieChartAnnotationConfig | js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -13922,13 +14040,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPieChartLegend extends BaseChartLegend {
+  trait dxPieChartLegend
+    extends StObject
+       with BaseChartLegend {
     
     /**
       * [descr:dxPieChart.Options.legend.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* pointInfo */ PointColor, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* pointInfo */ PointColor, String]] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.legend.customizeItems]
@@ -13936,17 +14055,17 @@ object viz {
     @JSName("customizeItems")
     var customizeItems_dxPieChartLegend: js.UndefOr[
         js.Function1[/* items */ js.Array[PieChartLegendItem], js.Array[PieChartLegendItem]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.legend.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ PointColor, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ PointColor, String]] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.legend.hoverMode]
       */
-    var hoverMode: js.UndefOr[none | allArgumentPoints] = js.native
+    var hoverMode: js.UndefOr[none | allArgumentPoints] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.legend.markerTemplate]
@@ -13958,7 +14077,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxPieChartLegend {
     
@@ -14014,105 +14133,106 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPieChartOptions extends BaseChartOptions[dxPieChart] {
+  trait dxPieChartOptions
+    extends StObject
+       with BaseChartOptions[dxPieChart] {
     
     /**
       * [descr:dxPieChart.Options.adaptiveLayout]
       */
     @JSName("adaptiveLayout")
-    var adaptiveLayout_dxPieChartOptions: js.UndefOr[dxPieChartAdaptiveLayout] = js.native
+    var adaptiveLayout_dxPieChartOptions: js.UndefOr[dxPieChartAdaptiveLayout] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.annotations]
       */
-    var annotations: js.UndefOr[js.Array[dxPieChartAnnotationConfig | _]] = js.native
+    var annotations: js.UndefOr[js.Array[dxPieChartAnnotationConfig | js.Any]] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.centerTemplate]
       */
     var centerTemplate: js.UndefOr[
         template | (js.Function2[/* component */ dxPieChart, /* element */ SVGGElement, String | SVGElement | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.commonAnnotationSettings]
       */
-    var commonAnnotationSettings: js.UndefOr[dxPieChartCommonAnnotationConfig] = js.native
+    var commonAnnotationSettings: js.UndefOr[dxPieChartCommonAnnotationConfig] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.commonSeriesSettings]
       */
-    var commonSeriesSettings: js.UndefOr[js.Any] = js.native
+    var commonSeriesSettings: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.customizeAnnotation]
       */
     var customizeAnnotation: js.UndefOr[
         js.Function1[/* annotation */ dxPieChartAnnotationConfig | js.Any, dxPieChartAnnotationConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.diameter]
       */
-    var diameter: js.UndefOr[Double] = js.native
+    var diameter: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.innerRadius]
       */
-    var innerRadius: js.UndefOr[Double] = js.native
+    var innerRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.legend]
       */
     @JSName("legend")
-    var legend_dxPieChartOptions: js.UndefOr[dxPieChartLegend] = js.native
+    var legend_dxPieChartOptions: js.UndefOr[dxPieChartLegend] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.minDiameter]
       */
-    var minDiameter: js.UndefOr[Double] = js.native
+    var minDiameter: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.onLegendClick]
       */
-    var onLegendClick: js.UndefOr[(js.Function1[/* e */ Points, _]) | String] = js.native
+    var onLegendClick: js.UndefOr[(js.Function1[/* e */ Points, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.resolveLabelOverlapping]
       */
-    var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.native
+    var resolveLabelOverlapping: js.UndefOr[hide | none | shift] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.segmentsDirection]
       */
-    var segmentsDirection: js.UndefOr[anticlockwise | clockwise] = js.native
+    var segmentsDirection: js.UndefOr[anticlockwise | clockwise] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.seriesTemplate]
       */
-    var seriesTemplate: js.UndefOr[NameField] = js.native
+    var seriesTemplate: js.UndefOr[NameField] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.series]
       */
     @JSName("series")
-    var series_dxPieChartOptions: js.UndefOr[PieChartSeries | js.Array[PieChartSeries]] = js.native
+    var series_dxPieChartOptions: js.UndefOr[PieChartSeries | js.Array[PieChartSeries]] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.sizeGroup]
       */
-    var sizeGroup: js.UndefOr[String] = js.native
+    var sizeGroup: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.startAngle]
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChart.Options.type]
       */
-    var `type`: js.UndefOr[donut | doughnut | pie] = js.native
+    var `type`: js.UndefOr[donut | doughnut | pie] = js.undefined
   }
   object dxPieChartOptions {
     
@@ -14132,7 +14252,7 @@ object viz {
       def setAdaptiveLayoutUndefined: Self = StObject.set(x, "adaptiveLayout", js.undefined)
       
       @scala.inline
-      def setAnnotations(value: js.Array[dxPieChartAnnotationConfig | _]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      def setAnnotations(value: js.Array[dxPieChartAnnotationConfig | js.Any]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -14194,10 +14314,10 @@ object viz {
       def setMinDiameterUndefined: Self = StObject.set(x, "minDiameter", js.undefined)
       
       @scala.inline
-      def setOnLegendClick(value: (js.Function1[/* e */ Points, _]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
+      def setOnLegendClick(value: (js.Function1[/* e */ Points, js.Any]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLegendClickFunction1(value: /* e */ Points => _): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
+      def setOnLegendClickFunction1(value: /* e */ Points => js.Any): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLegendClickUndefined: Self = StObject.set(x, "onLegendClick", js.undefined)
@@ -14251,23 +14371,22 @@ object viz {
   
   type dxPieChartSeries = PieChartSeries
   
-  @js.native
   trait dxPieChartSeriesTypes extends StObject {
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries]
       */
-    var CommonPieChartSeries: js.UndefOr[dxPieChartSeriesTypesCommonPieChartSeries] = js.native
+    var CommonPieChartSeries: js.UndefOr[dxPieChartSeriesTypesCommonPieChartSeries] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.DoughnutSeries]
       */
-    var DoughnutSeries: js.UndefOr[js.Any] = js.native
+    var DoughnutSeries: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.PieSeries]
       */
-    var PieSeries: js.UndefOr[js.Any] = js.native
+    var PieSeries: js.UndefOr[js.Any] = js.undefined
   }
   object dxPieChartSeriesTypes {
     
@@ -14300,78 +14419,77 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPieChartSeriesTypesCommonPieChartSeries extends StObject {
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.argumentField]
       */
-    var argumentField: js.UndefOr[String] = js.native
+    var argumentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.argumentType]
       */
-    var argumentType: js.UndefOr[datetime | numeric | string_] = js.native
+    var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.border]
       */
-    var border: js.UndefOr[ColorDashStyle] = js.native
+    var border: js.UndefOr[ColorDashStyle] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.hoverMode]
       */
-    var hoverMode: js.UndefOr[none | onlyPoint] = js.native
+    var hoverMode: js.UndefOr[none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.hoverStyle]
       */
-    var hoverStyle: js.UndefOr[Hatching] = js.native
+    var hoverStyle: js.UndefOr[Hatching] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.label]
       */
-    var label: js.UndefOr[ArgumentFormat] = js.native
+    var label: js.UndefOr[ArgumentFormat] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.maxLabelCount]
       */
-    var maxLabelCount: js.UndefOr[Double] = js.native
+    var maxLabelCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.minSegmentSize]
       */
-    var minSegmentSize: js.UndefOr[Double] = js.native
+    var minSegmentSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.selectionMode]
       */
-    var selectionMode: js.UndefOr[none | onlyPoint] = js.native
+    var selectionMode: js.UndefOr[none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.selectionStyle]
       */
-    var selectionStyle: js.UndefOr[Hatching] = js.native
+    var selectionStyle: js.UndefOr[Hatching] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.smallValuesGrouping]
       */
-    var smallValuesGrouping: js.UndefOr[GroupName] = js.native
+    var smallValuesGrouping: js.UndefOr[GroupName] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.tagField]
       */
-    var tagField: js.UndefOr[String] = js.native
+    var tagField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPieChartSeriesTypes.CommonPieChartSeries.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object dxPieChartSeriesTypesCommonPieChartSeries {
     
@@ -14471,7 +14589,9 @@ object viz {
   }
   
   @js.native
-  trait dxPolarChart extends BaseChart {
+  trait dxPolarChart
+    extends StObject
+       with BaseChart {
     
     /**
       * [descr:dxPolarChart.getValueAxis()]
@@ -14484,8 +14604,9 @@ object viz {
     def resetVisualRange(): Unit = js.native
   }
   
-  @js.native
-  trait dxPolarChartAdaptiveLayout extends BaseChartAdaptiveLayout
+  trait dxPolarChartAdaptiveLayout
+    extends StObject
+       with BaseChartAdaptiveLayout
   object dxPolarChartAdaptiveLayout {
     
     @scala.inline
@@ -14495,13 +14616,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartAnnotationConfig extends dxPolarChartCommonAnnotationConfig {
+  trait dxPolarChartAnnotationConfig
+    extends StObject
+       with dxPolarChartCommonAnnotationConfig {
     
     /**
       * [descr:dxPolarChartAnnotationConfig.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxPolarChartAnnotationConfig {
     
@@ -14522,110 +14644,111 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxis extends dxPolarChartCommonAxisSettings {
+  trait dxPolarChartArgumentAxis
+    extends StObject
+       with dxPolarChartCommonAxisSettings {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.argumentType]
       */
-    var argumentType: js.UndefOr[datetime | numeric | string_] = js.native
+    var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.axisDivisionFactor]
       */
-    var axisDivisionFactor: js.UndefOr[Double] = js.native
+    var axisDivisionFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.categories]
       */
-    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.native
+    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines]
       */
-    var constantLines: js.UndefOr[js.Array[dxPolarChartArgumentAxisConstantLines]] = js.native
+    var constantLines: js.UndefOr[js.Array[dxPolarChartArgumentAxisConstantLines]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.firstPointOnStartAngle]
       */
-    var firstPointOnStartAngle: js.UndefOr[Boolean] = js.native
+    var firstPointOnStartAngle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.hoverMode]
       */
-    var hoverMode: js.UndefOr[allArgumentPoints | none] = js.native
+    var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.label]
       */
     @JSName("label")
-    var label_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisLabel] = js.native
+    var label_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.linearThreshold]
       */
-    var linearThreshold: js.UndefOr[Double] = js.native
+    var linearThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.logarithmBase]
       */
-    var logarithmBase: js.UndefOr[Double] = js.native
+    var logarithmBase: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.minorTickCount]
       */
-    var minorTickCount: js.UndefOr[Double] = js.native
+    var minorTickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.minorTickInterval]
       */
     var minorTickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.minorTick]
       */
     @JSName("minorTick")
-    var minorTick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisMinorTick] = js.native
+    var minorTick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisMinorTick] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.originValue]
       */
-    var originValue: js.UndefOr[Double] = js.native
+    var originValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.period]
       */
-    var period: js.UndefOr[Double] = js.native
+    var period: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.startAngle]
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips]
       */
-    var strips: js.UndefOr[js.Array[dxPolarChartArgumentAxisStrips]] = js.native
+    var strips: js.UndefOr[js.Array[dxPolarChartArgumentAxisStrips]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.tickInterval]
       */
     var tickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.tick]
       */
     @JSName("tick")
-    var tick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisTick] = js.native
+    var tick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisTick] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.type]
       */
-    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.native
+    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
   }
   object dxPolarChartArgumentAxis {
     
@@ -14767,29 +14890,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisConstantLines extends dxPolarChartCommonAxisSettingsConstantLineStyle {
+  trait dxPolarChartArgumentAxisConstantLines
+    extends StObject
+       with dxPolarChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines.displayBehindSeries]
       */
-    var displayBehindSeries: js.UndefOr[Boolean] = js.native
+    var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines.extendAxis]
       */
-    var extendAxis: js.UndefOr[Boolean] = js.native
+    var extendAxis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines.label]
       */
     @JSName("label")
-    var label_dxPolarChartArgumentAxisConstantLines: js.UndefOr[dxPolarChartArgumentAxisConstantLinesLabel] = js.native
+    var label_dxPolarChartArgumentAxisConstantLines: js.UndefOr[dxPolarChartArgumentAxisConstantLinesLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines.value]
       */
-    var value: js.UndefOr[Double | Date | String] = js.native
+    var value: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxPolarChartArgumentAxisConstantLines {
     
@@ -14828,13 +14952,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisConstantLinesLabel extends dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxPolarChartArgumentAxisConstantLinesLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.constantLines.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxPolarChartArgumentAxisConstantLinesLabel {
     
@@ -14855,23 +14980,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisLabel extends dxPolarChartCommonAxisSettingsLabel {
+  trait dxPolarChartArgumentAxisLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsLabel {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.label.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* argument */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   }
   object dxPolarChartArgumentAxisLabel {
     
@@ -14907,13 +15033,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisMinorTick extends dxPolarChartCommonAxisSettingsMinorTick {
+  trait dxPolarChartArgumentAxisMinorTick
+    extends StObject
+       with dxPolarChartCommonAxisSettingsMinorTick {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.minorTick.shift]
       */
-    var shift: js.UndefOr[Double] = js.native
+    var shift: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartArgumentAxisMinorTick {
     
@@ -14934,29 +15061,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisStrips extends dxPolarChartCommonAxisSettingsStripStyle {
+  trait dxPolarChartArgumentAxisStrips
+    extends StObject
+       with dxPolarChartCommonAxisSettingsStripStyle {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips.label]
       */
     @JSName("label")
-    var label_dxPolarChartArgumentAxisStrips: js.UndefOr[dxPolarChartArgumentAxisStripsLabel] = js.native
+    var label_dxPolarChartArgumentAxisStrips: js.UndefOr[dxPolarChartArgumentAxisStripsLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxPolarChartArgumentAxisStrips {
     
@@ -14995,13 +15123,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisStripsLabel extends dxPolarChartCommonAxisSettingsStripStyleLabel {
+  trait dxPolarChartArgumentAxisStripsLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsStripStyleLabel {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.strips.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxPolarChartArgumentAxisStripsLabel {
     
@@ -15022,13 +15151,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartArgumentAxisTick extends dxPolarChartCommonAxisSettingsTick {
+  trait dxPolarChartArgumentAxisTick
+    extends StObject
+       with dxPolarChartCommonAxisSettingsTick {
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis.tick.shift]
       */
-    var shift: js.UndefOr[Double] = js.native
+    var shift: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartArgumentAxisTick {
     
@@ -15049,23 +15179,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartCommonAnnotationConfig extends BaseChartAnnotationConfig {
+  trait dxPolarChartCommonAnnotationConfig
+    extends StObject
+       with BaseChartAnnotationConfig {
     
     /**
       * [descr:dxPolarChartCommonAnnotationConfig.angle]
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartCommonAnnotationConfig.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxPolarChartAnnotationConfig | js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxPolarChartAnnotationConfig | js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChartCommonAnnotationConfig.radius]
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartCommonAnnotationConfig.template]
@@ -15076,7 +15207,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChartCommonAnnotationConfig.tooltipTemplate]
@@ -15087,7 +15218,7 @@ object viz {
           /* element */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxPolarChartCommonAnnotationConfig {
     
@@ -15107,7 +15238,7 @@ object viz {
       def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* annotation */ dxPolarChartAnnotationConfig | js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* annotation */ dxPolarChartAnnotationConfig | js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -15154,83 +15285,82 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettings extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.allowDecimals]
       */
-    var allowDecimals: js.UndefOr[Boolean] = js.native
+    var allowDecimals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle]
       */
-    var constantLineStyle: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyle] = js.native
+    var constantLineStyle: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyle] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.discreteAxisDivisionMode]
       */
-    var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.native
+    var discreteAxisDivisionMode: js.UndefOr[betweenLabels | crossLabels] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.endOnTick]
       */
-    var endOnTick: js.UndefOr[Boolean] = js.native
+    var endOnTick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.grid]
       */
-    var grid: js.UndefOr[ColorOpacity] = js.native
+    var grid: js.UndefOr[ColorOpacity] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.inverted]
       */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.label]
       */
-    var label: js.UndefOr[dxPolarChartCommonAxisSettingsLabel] = js.native
+    var label: js.UndefOr[dxPolarChartCommonAxisSettingsLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorGrid]
       */
-    var minorGrid: js.UndefOr[ColorOpacity] = js.native
+    var minorGrid: js.UndefOr[ColorOpacity] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick]
       */
-    var minorTick: js.UndefOr[dxPolarChartCommonAxisSettingsMinorTick] = js.native
+    var minorTick: js.UndefOr[dxPolarChartCommonAxisSettingsMinorTick] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.stripStyle]
       */
-    var stripStyle: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyle] = js.native
+    var stripStyle: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyle] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick]
       */
-    var tick: js.UndefOr[dxPolarChartCommonAxisSettingsTick] = js.native
+    var tick: js.UndefOr[dxPolarChartCommonAxisSettingsTick] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartCommonAxisSettings {
     
@@ -15335,28 +15465,27 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsConstantLineStyle extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.label]
       */
-    var label: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyleLabel] = js.native
+    var label: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyleLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsConstantLineStyle {
     
@@ -15395,18 +15524,17 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsConstantLineStyleLabel extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.constantLineStyle.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
     
@@ -15433,28 +15561,27 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsLabel extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.label.indentFromAxis]
       */
-    var indentFromAxis: js.UndefOr[Double] = js.native
+    var indentFromAxis: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.label.overlappingBehavior]
       */
-    var overlappingBehavior: js.UndefOr[none | hide] = js.native
+    var overlappingBehavior: js.UndefOr[none | hide] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsLabel {
     
@@ -15493,33 +15620,32 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsMinorTick extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick.length]
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.minorTick.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsMinorTick {
     
@@ -15564,13 +15690,12 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsStripStyle extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.stripStyle.label]
       */
-    var label: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyleLabel] = js.native
+    var label: js.UndefOr[dxPolarChartCommonAxisSettingsStripStyleLabel] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsStripStyle {
     
@@ -15591,13 +15716,12 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsStripStyleLabel extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.stripStyle.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsStripStyleLabel {
     
@@ -15618,33 +15742,32 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartCommonAxisSettingsTick extends StObject {
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick.length]
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings.tick.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartCommonAxisSettingsTick {
     
@@ -15689,38 +15812,39 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartCommonSeriesSettings extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait dxPolarChartCommonSeriesSettings
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.area]
       */
-    var area: js.UndefOr[js.Any] = js.native
+    var area: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.bar]
       */
-    var bar: js.UndefOr[js.Any] = js.native
+    var bar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.line]
       */
-    var line: js.UndefOr[js.Any] = js.native
+    var line: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.scatter]
       */
-    var scatter: js.UndefOr[js.Any] = js.native
+    var scatter: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.stackedbar]
       */
-    var stackedbar: js.UndefOr[js.Any] = js.native
+    var stackedbar: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings.type]
       */
-    var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.native
+    var `type`: js.UndefOr[area | bar | line | scatter | stackedbar] = js.undefined
   }
   object dxPolarChartCommonSeriesSettings {
     
@@ -15771,23 +15895,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartLegend extends BaseChartLegend {
+  trait dxPolarChartLegend
+    extends StObject
+       with BaseChartLegend {
     
     /**
       * [descr:dxPolarChart.Options.legend.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.legend.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* seriesInfo */ SeriesColor, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.legend.hoverMode]
       */
-    var hoverMode: js.UndefOr[excludePoints | includePoints | none] = js.native
+    var hoverMode: js.UndefOr[excludePoints | includePoints | none] = js.undefined
   }
   object dxPolarChartLegend {
     
@@ -15820,54 +15945,55 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartOptions extends BaseChartOptions[dxPolarChart] {
+  trait dxPolarChartOptions
+    extends StObject
+       with BaseChartOptions[dxPolarChart] {
     
     /**
       * [descr:dxPolarChart.Options.adaptiveLayout]
       */
     @JSName("adaptiveLayout")
-    var adaptiveLayout_dxPolarChartOptions: js.UndefOr[dxPolarChartAdaptiveLayout] = js.native
+    var adaptiveLayout_dxPolarChartOptions: js.UndefOr[dxPolarChartAdaptiveLayout] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.annotations]
       */
-    var annotations: js.UndefOr[js.Array[dxPolarChartAnnotationConfig | _]] = js.native
+    var annotations: js.UndefOr[js.Array[dxPolarChartAnnotationConfig | js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.argumentAxis]
       */
-    var argumentAxis: js.UndefOr[dxPolarChartArgumentAxis] = js.native
+    var argumentAxis: js.UndefOr[dxPolarChartArgumentAxis] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.barGroupPadding]
       */
-    var barGroupPadding: js.UndefOr[Double] = js.native
+    var barGroupPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.barGroupWidth]
       */
-    var barGroupWidth: js.UndefOr[Double] = js.native
+    var barGroupWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAnnotationSettings]
       */
-    var commonAnnotationSettings: js.UndefOr[dxPolarChartCommonAnnotationConfig] = js.native
+    var commonAnnotationSettings: js.UndefOr[dxPolarChartCommonAnnotationConfig] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonAxisSettings]
       */
-    var commonAxisSettings: js.UndefOr[dxPolarChartCommonAxisSettings] = js.native
+    var commonAxisSettings: js.UndefOr[dxPolarChartCommonAxisSettings] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.commonSeriesSettings]
       */
-    var commonSeriesSettings: js.UndefOr[dxPolarChartCommonSeriesSettings] = js.native
+    var commonSeriesSettings: js.UndefOr[dxPolarChartCommonSeriesSettings] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.containerBackgroundColor]
       */
-    var containerBackgroundColor: js.UndefOr[String] = js.native
+    var containerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.customizeAnnotation]
@@ -15877,95 +16003,95 @@ object viz {
           /* annotation */ dxPolarChartAnnotationConfig | js.Any, 
           dxPolarChartAnnotationConfig
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.dataPrepareSettings]
       */
-    var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.native
+    var dataPrepareSettings: js.UndefOr[ConvertToAxisDataType] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.legend]
       */
     @JSName("legend")
-    var legend_dxPolarChartOptions: js.UndefOr[dxPolarChartLegend] = js.native
+    var legend_dxPolarChartOptions: js.UndefOr[dxPolarChartLegend] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.negativesAsZeroes]
       */
-    var negativesAsZeroes: js.UndefOr[Boolean] = js.native
+    var negativesAsZeroes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onArgumentAxisClick]
       */
-    var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ ArgumentComponent, _]) | String] = js.native
+    var onArgumentAxisClick: js.UndefOr[(js.Function1[/* e */ ArgumentComponent, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onLegendClick]
       */
-    var onLegendClick: js.UndefOr[(js.Function1[/* e */ ElementEventModelTarget, _]) | String] = js.native
+    var onLegendClick: js.UndefOr[(js.Function1[/* e */ ElementEventModelTarget, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onSeriesClick]
       */
-    var onSeriesClick: js.UndefOr[(js.Function1[/* e */ ElementEventModelTarget, _]) | String] = js.native
+    var onSeriesClick: js.UndefOr[(js.Function1[/* e */ ElementEventModelTarget, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onSeriesHoverChanged]
       */
-    var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ `25`, _]] = js.native
+    var onSeriesHoverChanged: js.UndefOr[js.Function1[/* e */ `25`, js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onSeriesSelectionChanged]
       */
-    var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ `25`, _]] = js.native
+    var onSeriesSelectionChanged: js.UndefOr[js.Function1[/* e */ `25`, js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onZoomEnd]
       */
-    var onZoomEnd: js.UndefOr[js.Function1[/* e */ PreviousRange, _]] = js.native
+    var onZoomEnd: js.UndefOr[js.Function1[/* e */ PreviousRange, js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.onZoomStart]
       */
-    var onZoomStart: js.UndefOr[js.Function1[/* e */ Range, _]] = js.native
+    var onZoomStart: js.UndefOr[js.Function1[/* e */ Range, js.Any]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.resolveLabelOverlapping]
       */
-    var resolveLabelOverlapping: js.UndefOr[hide | none] = js.native
+    var resolveLabelOverlapping: js.UndefOr[hide | none] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.seriesSelectionMode]
       */
-    var seriesSelectionMode: js.UndefOr[multiple | single_] = js.native
+    var seriesSelectionMode: js.UndefOr[multiple | single_] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.seriesTemplate]
       */
-    var seriesTemplate: js.UndefOr[CustomizeSeriesNameField] = js.native
+    var seriesTemplate: js.UndefOr[CustomizeSeriesNameField] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.series]
       */
     @JSName("series")
-    var series_dxPolarChartOptions: js.UndefOr[PolarChartSeries | js.Array[PolarChartSeries]] = js.native
+    var series_dxPolarChartOptions: js.UndefOr[PolarChartSeries | js.Array[PolarChartSeries]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxPolarChartOptions: js.UndefOr[dxPolarChartTooltip] = js.native
+    var tooltip_dxPolarChartOptions: js.UndefOr[dxPolarChartTooltip] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.useSpiderWeb]
       */
-    var useSpiderWeb: js.UndefOr[Boolean] = js.native
+    var useSpiderWeb: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis]
       */
-    var valueAxis: js.UndefOr[dxPolarChartValueAxis] = js.native
+    var valueAxis: js.UndefOr[dxPolarChartValueAxis] = js.undefined
   }
   object dxPolarChartOptions {
     
@@ -15985,7 +16111,7 @@ object viz {
       def setAdaptiveLayoutUndefined: Self = StObject.set(x, "adaptiveLayout", js.undefined)
       
       @scala.inline
-      def setAnnotations(value: js.Array[dxPolarChartAnnotationConfig | _]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      def setAnnotations(value: js.Array[dxPolarChartAnnotationConfig | js.Any]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -16060,52 +16186,52 @@ object viz {
       def setNegativesAsZeroesUndefined: Self = StObject.set(x, "negativesAsZeroes", js.undefined)
       
       @scala.inline
-      def setOnArgumentAxisClick(value: (js.Function1[/* e */ ArgumentComponent, _]) | String): Self = StObject.set(x, "onArgumentAxisClick", value.asInstanceOf[js.Any])
+      def setOnArgumentAxisClick(value: (js.Function1[/* e */ ArgumentComponent, js.Any]) | String): Self = StObject.set(x, "onArgumentAxisClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnArgumentAxisClickFunction1(value: /* e */ ArgumentComponent => _): Self = StObject.set(x, "onArgumentAxisClick", js.Any.fromFunction1(value))
+      def setOnArgumentAxisClickFunction1(value: /* e */ ArgumentComponent => js.Any): Self = StObject.set(x, "onArgumentAxisClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnArgumentAxisClickUndefined: Self = StObject.set(x, "onArgumentAxisClick", js.undefined)
       
       @scala.inline
-      def setOnLegendClick(value: (js.Function1[/* e */ ElementEventModelTarget, _]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
+      def setOnLegendClick(value: (js.Function1[/* e */ ElementEventModelTarget, js.Any]) | String): Self = StObject.set(x, "onLegendClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLegendClickFunction1(value: /* e */ ElementEventModelTarget => _): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
+      def setOnLegendClickFunction1(value: /* e */ ElementEventModelTarget => js.Any): Self = StObject.set(x, "onLegendClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLegendClickUndefined: Self = StObject.set(x, "onLegendClick", js.undefined)
       
       @scala.inline
-      def setOnSeriesClick(value: (js.Function1[/* e */ ElementEventModelTarget, _]) | String): Self = StObject.set(x, "onSeriesClick", value.asInstanceOf[js.Any])
+      def setOnSeriesClick(value: (js.Function1[/* e */ ElementEventModelTarget, js.Any]) | String): Self = StObject.set(x, "onSeriesClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSeriesClickFunction1(value: /* e */ ElementEventModelTarget => _): Self = StObject.set(x, "onSeriesClick", js.Any.fromFunction1(value))
+      def setOnSeriesClickFunction1(value: /* e */ ElementEventModelTarget => js.Any): Self = StObject.set(x, "onSeriesClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesClickUndefined: Self = StObject.set(x, "onSeriesClick", js.undefined)
       
       @scala.inline
-      def setOnSeriesHoverChanged(value: /* e */ `25` => _): Self = StObject.set(x, "onSeriesHoverChanged", js.Any.fromFunction1(value))
+      def setOnSeriesHoverChanged(value: /* e */ `25` => js.Any): Self = StObject.set(x, "onSeriesHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesHoverChangedUndefined: Self = StObject.set(x, "onSeriesHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnSeriesSelectionChanged(value: /* e */ `25` => _): Self = StObject.set(x, "onSeriesSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSeriesSelectionChanged(value: /* e */ `25` => js.Any): Self = StObject.set(x, "onSeriesSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSeriesSelectionChangedUndefined: Self = StObject.set(x, "onSeriesSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnZoomEnd(value: /* e */ PreviousRange => _): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction1(value))
+      def setOnZoomEnd(value: /* e */ PreviousRange => js.Any): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
       
       @scala.inline
-      def setOnZoomStart(value: /* e */ Range => _): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction1(value))
+      def setOnZoomStart(value: /* e */ Range => js.Any): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
@@ -16159,38 +16285,37 @@ object viz {
   
   type dxPolarChartSeries = PolarChartSeries
   
-  @js.native
   trait dxPolarChartSeriesTypes extends StObject {
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries]
       */
-    var CommonPolarChartSeries: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeries] = js.native
+    var CommonPolarChartSeries: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeries] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.areapolarseries]
       */
-    var areapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseries] = js.native
+    var areapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseries] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.barpolarseries]
       */
-    var barpolarseries: js.UndefOr[dxPolarChartSeriesTypesBarpolarseries] = js.native
+    var barpolarseries: js.UndefOr[dxPolarChartSeriesTypesBarpolarseries] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.linepolarseries]
       */
-    var linepolarseries: js.UndefOr[dxPolarChartSeriesTypesLinepolarseries] = js.native
+    var linepolarseries: js.UndefOr[dxPolarChartSeriesTypesLinepolarseries] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.scatterpolarseries]
       */
-    var scatterpolarseries: js.UndefOr[js.Any] = js.native
+    var scatterpolarseries: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.stackedbarpolarseries]
       */
-    var stackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseries] = js.native
+    var stackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseries] = js.undefined
   }
   object dxPolarChartSeriesTypes {
     
@@ -16241,26 +16366,27 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesAreapolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait dxPolarChartSeriesTypesAreapolarseries
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:dxPolarChartSeriesTypes.areapolarseries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.areapolarseries.point]
       */
     @JSName("point")
-    var point_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseriesPoint] = js.native
+    var point_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseriesPoint] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.areapolarseries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxPolarChartSeriesTypesAreapolarseries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxPolarChartSeriesTypesAreapolarseries {
     
@@ -16293,8 +16419,9 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesAreapolarseriesPoint extends dxPolarChartSeriesTypesCommonPolarChartSeriesPoint
+  trait dxPolarChartSeriesTypesAreapolarseriesPoint
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeriesPoint
   object dxPolarChartSeriesTypesAreapolarseriesPoint {
     
     @scala.inline
@@ -16304,20 +16431,21 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesBarpolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait dxPolarChartSeriesTypesBarpolarseries
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:dxPolarChartSeriesTypes.barpolarseries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.barpolarseries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxPolarChartSeriesTypesBarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxPolarChartSeriesTypesBarpolarseries {
     
@@ -16344,132 +16472,131 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartSeriesTypesCommonPolarChartSeries extends StObject {
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.argumentField]
       */
-    var argumentField: js.UndefOr[String] = js.native
+    var argumentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.barPadding]
       */
-    var barPadding: js.UndefOr[Double] = js.native
+    var barPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.barWidth]
       */
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.border]
       */
-    var border: js.UndefOr[ColorDashStyle] = js.native
+    var border: js.UndefOr[ColorDashStyle] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.closed]
       */
-    var closed: js.UndefOr[Boolean] = js.native
+    var closed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.dashStyle]
       */
-    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.native
+    var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverMode]
       */
     var hoverMode: js.UndefOr[
         allArgumentPoints | allSeriesPoints | excludePoints | includePoints | nearestPoint | none | onlyPoint
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.hoverStyle]
       */
-    var hoverStyle: js.UndefOr[BorderColor] = js.native
+    var hoverStyle: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.ignoreEmptyPoints]
       */
-    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label]
       */
-    var label: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] = js.native
+    var label: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.maxLabelCount]
       */
-    var maxLabelCount: js.UndefOr[Double] = js.native
+    var maxLabelCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.minBarSize]
       */
-    var minBarSize: js.UndefOr[Double] = js.native
+    var minBarSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.opacity]
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point]
       */
-    var point: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] = js.native
+    var point: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionMode]
       */
     var selectionMode: js.UndefOr[
         allArgumentPoints | allSeriesPoints | excludePoints | includePoints | none | onlyPoint
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.selectionStyle]
       */
-    var selectionStyle: js.UndefOr[BorderColor] = js.native
+    var selectionStyle: js.UndefOr[BorderColor] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.showInLegend]
       */
-    var showInLegend: js.UndefOr[Boolean] = js.native
+    var showInLegend: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.stack]
       */
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.tagField]
       */
-    var tagField: js.UndefOr[String] = js.native
+    var tagField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.valueErrorBar]
       */
-    var valueErrorBar: js.UndefOr[EdgeLength] = js.native
+    var valueErrorBar: js.UndefOr[EdgeLength] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.width]
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object dxPolarChartSeriesTypesCommonPolarChartSeries {
     
@@ -16630,63 +16757,62 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartSeriesTypesCommonPolarChartSeriesLabel extends StObject {
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.argumentFormat]
       */
-    var argumentFormat: js.UndefOr[format] = js.native
+    var argumentFormat: js.UndefOr[format] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.backgroundColor]
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.border]
       */
-    var border: js.UndefOr[ColorDashStyle] = js.native
+    var border: js.UndefOr[ColorDashStyle] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.connector]
       */
-    var connector: js.UndefOr[ColorVisible] = js.native
+    var connector: js.UndefOr[ColorVisible] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.font]
       */
-    var font: js.UndefOr[Font] = js.native
+    var font: js.UndefOr[Font] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.position]
       */
-    var position: js.UndefOr[inside | outside] = js.native
+    var position: js.UndefOr[inside | outside] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.rotationAngle]
       */
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.showForZeroValues]
       */
-    var showForZeroValues: js.UndefOr[Boolean] = js.native
+    var showForZeroValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.label.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxPolarChartSeriesTypesCommonPolarChartSeriesLabel {
     
@@ -16773,58 +16899,57 @@ object viz {
     }
   }
   
-  @js.native
   trait dxPolarChartSeriesTypesCommonPolarChartSeriesPoint extends StObject {
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.border]
       */
-    var border: js.UndefOr[ColorVisible] = js.native
+    var border: js.UndefOr[ColorVisible] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverMode]
       */
-    var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.native
+    var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.hoverStyle]
       */
-    var hoverStyle: js.UndefOr[Size] = js.native
+    var hoverStyle: js.UndefOr[Size] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.image]
       */
-    var image: js.UndefOr[String | Url] = js.native
+    var image: js.UndefOr[String | Url] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionMode]
       */
-    var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.native
+    var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.selectionStyle]
       */
-    var selectionStyle: js.UndefOr[Size] = js.native
+    var selectionStyle: js.UndefOr[Size] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.size]
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.symbol]
       */
-    var symbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.native
+    var symbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.CommonPolarChartSeries.point.visible]
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object dxPolarChartSeriesTypesCommonPolarChartSeriesPoint {
     
@@ -16899,20 +17024,21 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesLinepolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait dxPolarChartSeriesTypesLinepolarseries
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:dxPolarChartSeriesTypes.linepolarseries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxPolarChartSeriesTypesLinepolarseries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.native
+    var hoverMode_dxPolarChartSeriesTypesLinepolarseries: js.UndefOr[nearestPoint | includePoints | excludePoints | none] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.linepolarseries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxPolarChartSeriesTypesLinepolarseries: js.UndefOr[includePoints | excludePoints | none] = js.native
+    var selectionMode_dxPolarChartSeriesTypesLinepolarseries: js.UndefOr[includePoints | excludePoints | none] = js.undefined
   }
   object dxPolarChartSeriesTypesLinepolarseries {
     
@@ -16939,26 +17065,27 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesStackedbarpolarseries extends dxPolarChartSeriesTypesCommonPolarChartSeries {
+  trait dxPolarChartSeriesTypesStackedbarpolarseries
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeries {
     
     /**
       * [descr:dxPolarChartSeriesTypes.stackedbarpolarseries.hoverMode]
       */
     @JSName("hoverMode")
-    var hoverMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var hoverMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.stackedbarpolarseries.label]
       */
     @JSName("label")
-    var label_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseriesLabel] = js.native
+    var label_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseriesLabel] = js.undefined
     
     /**
       * [descr:dxPolarChartSeriesTypes.stackedbarpolarseries.selectionMode]
       */
     @JSName("selectionMode")
-    var selectionMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.native
+    var selectionMode_dxPolarChartSeriesTypesStackedbarpolarseries: js.UndefOr[onlyPoint | allSeriesPoints | allArgumentPoints | none] = js.undefined
   }
   object dxPolarChartSeriesTypesStackedbarpolarseries {
     
@@ -16991,8 +17118,9 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartSeriesTypesStackedbarpolarseriesLabel extends dxPolarChartSeriesTypesCommonPolarChartSeriesLabel
+  trait dxPolarChartSeriesTypesStackedbarpolarseriesLabel
+    extends StObject
+       with dxPolarChartSeriesTypesCommonPolarChartSeriesLabel
   object dxPolarChartSeriesTypesStackedbarpolarseriesLabel {
     
     @scala.inline
@@ -17002,8 +17130,9 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartTooltip extends BaseChartTooltip
+  trait dxPolarChartTooltip
+    extends StObject
+       with BaseChartTooltip
   object dxPolarChartTooltip {
     
     @scala.inline
@@ -17013,121 +17142,122 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxis extends dxPolarChartCommonAxisSettings {
+  trait dxPolarChartValueAxis
+    extends StObject
+       with dxPolarChartCommonAxisSettings {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.axisDivisionFactor]
       */
-    var axisDivisionFactor: js.UndefOr[Double] = js.native
+    var axisDivisionFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.categories]
       */
-    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.native
+    var categories: js.UndefOr[js.Array[Double | String | Date]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines]
       */
-    var constantLines: js.UndefOr[js.Array[dxPolarChartValueAxisConstantLines]] = js.native
+    var constantLines: js.UndefOr[js.Array[dxPolarChartValueAxisConstantLines]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.label]
       */
     @JSName("label")
-    var label_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisLabel] = js.native
+    var label_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.linearThreshold]
       */
-    var linearThreshold: js.UndefOr[Double] = js.native
+    var linearThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.logarithmBase]
       */
-    var logarithmBase: js.UndefOr[Double] = js.native
+    var logarithmBase: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.maxValueMargin]
       */
-    var maxValueMargin: js.UndefOr[Double] = js.native
+    var maxValueMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.minValueMargin]
       */
-    var minValueMargin: js.UndefOr[Double] = js.native
+    var minValueMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.minVisualRangeLength]
       */
     var minVisualRangeLength: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.minorTickCount]
       */
-    var minorTickCount: js.UndefOr[Double] = js.native
+    var minorTickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.minorTickInterval]
       */
     var minorTickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.showZero]
       */
-    var showZero: js.UndefOr[Boolean] = js.native
+    var showZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips]
       */
-    var strips: js.UndefOr[js.Array[dxPolarChartValueAxisStrips]] = js.native
+    var strips: js.UndefOr[js.Array[dxPolarChartValueAxisStrips]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.tickInterval]
       */
     var tickInterval: js.UndefOr[
         Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.tick]
       */
     @JSName("tick")
-    var tick_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisTick] = js.native
+    var tick_dxPolarChartValueAxis: js.UndefOr[dxPolarChartValueAxisTick] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.type]
       */
-    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.native
+    var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.valueMarginsEnabled]
       */
-    var valueMarginsEnabled: js.UndefOr[Boolean] = js.native
+    var valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.valueType]
       */
-    var valueType: js.UndefOr[datetime | numeric | string_] = js.native
+    var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.visualRange]
       */
-    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.visualRangeUpdateMode]
       */
-    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset] = js.native
+    var visualRangeUpdateMode: js.UndefOr[auto | keep | reset] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.wholeRange]
       */
-    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.native
+    var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | Date])] = js.undefined
   }
   object dxPolarChartValueAxis {
     
@@ -17289,29 +17419,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisConstantLines extends dxPolarChartCommonAxisSettingsConstantLineStyle {
+  trait dxPolarChartValueAxisConstantLines
+    extends StObject
+       with dxPolarChartCommonAxisSettingsConstantLineStyle {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines.displayBehindSeries]
       */
-    var displayBehindSeries: js.UndefOr[Boolean] = js.native
+    var displayBehindSeries: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines.extendAxis]
       */
-    var extendAxis: js.UndefOr[Boolean] = js.native
+    var extendAxis: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines.label]
       */
     @JSName("label")
-    var label_dxPolarChartValueAxisConstantLines: js.UndefOr[dxPolarChartValueAxisConstantLinesLabel] = js.native
+    var label_dxPolarChartValueAxisConstantLines: js.UndefOr[dxPolarChartValueAxisConstantLinesLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines.value]
       */
-    var value: js.UndefOr[Double | Date | String] = js.native
+    var value: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxPolarChartValueAxisConstantLines {
     
@@ -17350,13 +17481,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisConstantLinesLabel extends dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
+  trait dxPolarChartValueAxisConstantLinesLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.constantLines.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxPolarChartValueAxisConstantLinesLabel {
     
@@ -17377,23 +17509,24 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisLabel extends dxPolarChartCommonAxisSettingsLabel {
+  trait dxPolarChartValueAxisLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsLabel {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.label.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.label.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* axisValue */ ValueValueText, String]] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.label.format]
       */
-    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+    var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   }
   object dxPolarChartValueAxisLabel {
     
@@ -17429,29 +17562,30 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisStrips extends dxPolarChartCommonAxisSettingsStripStyle {
+  trait dxPolarChartValueAxisStrips
+    extends StObject
+       with dxPolarChartCommonAxisSettingsStripStyle {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips.color]
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips.endValue]
       */
-    var endValue: js.UndefOr[Double | Date | String] = js.native
+    var endValue: js.UndefOr[Double | Date | String] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips.label]
       */
     @JSName("label")
-    var label_dxPolarChartValueAxisStrips: js.UndefOr[dxPolarChartValueAxisStripsLabel] = js.native
+    var label_dxPolarChartValueAxisStrips: js.UndefOr[dxPolarChartValueAxisStripsLabel] = js.undefined
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips.startValue]
       */
-    var startValue: js.UndefOr[Double | Date | String] = js.native
+    var startValue: js.UndefOr[Double | Date | String] = js.undefined
   }
   object dxPolarChartValueAxisStrips {
     
@@ -17490,13 +17624,14 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisStripsLabel extends dxPolarChartCommonAxisSettingsStripStyleLabel {
+  trait dxPolarChartValueAxisStripsLabel
+    extends StObject
+       with dxPolarChartCommonAxisSettingsStripStyleLabel {
     
     /**
       * [descr:dxPolarChart.Options.valueAxis.strips.label.text]
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object dxPolarChartValueAxisStripsLabel {
     
@@ -17517,8 +17652,9 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxPolarChartValueAxisTick extends dxPolarChartCommonAxisSettingsTick
+  trait dxPolarChartValueAxisTick
+    extends StObject
+       with dxPolarChartCommonAxisSettingsTick
   object dxPolarChartValueAxisTick {
     
     @scala.inline
@@ -17529,7 +17665,9 @@ object viz {
   }
   
   @js.native
-  trait dxRangeSelector extends BaseWidget {
+  trait dxRangeSelector
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -17553,83 +17691,84 @@ object viz {
     def setValue(value: VizRange): Unit = js.native
   }
   
-  @js.native
-  trait dxRangeSelectorOptions extends BaseWidgetOptions[dxRangeSelector] {
+  trait dxRangeSelectorOptions
+    extends StObject
+       with BaseWidgetOptions[dxRangeSelector] {
     
     /**
       * [descr:dxRangeSelector.Options.background]
       */
-    var background: js.UndefOr[Image] = js.native
+    var background: js.UndefOr[Image] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.behavior]
       */
-    var behavior: js.UndefOr[AllowSlidersSwap] = js.native
+    var behavior: js.UndefOr[AllowSlidersSwap] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.chart]
       */
-    var chart: js.UndefOr[BarGroupPadding] = js.native
+    var chart: js.UndefOr[BarGroupPadding] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.containerBackgroundColor]
       */
-    var containerBackgroundColor: js.UndefOr[String] = js.native
+    var containerBackgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.dataSourceField]
       */
-    var dataSourceField: js.UndefOr[String] = js.native
+    var dataSourceField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.indent]
       */
-    var indent: js.UndefOr[Right] = js.native
+    var indent: js.UndefOr[Right] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.onValueChanged]
       */
-    var onValueChanged: js.UndefOr[js.Function1[/* e */ EventModelPreviousValue, _]] = js.native
+    var onValueChanged: js.UndefOr[js.Function1[/* e */ EventModelPreviousValue, js.Any]] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.scale]
       */
-    var scale: js.UndefOr[AggregateByCategory] = js.native
+    var scale: js.UndefOr[AggregateByCategory] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.selectedRangeColor]
       */
-    var selectedRangeColor: js.UndefOr[String] = js.native
+    var selectedRangeColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.selectedRangeUpdateMode]
       */
-    var selectedRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.native
+    var selectedRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.shutter]
       */
-    var shutter: js.UndefOr[Opacity] = js.native
+    var shutter: js.UndefOr[Opacity] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.sliderHandle]
       */
-    var sliderHandle: js.UndefOr[OpacityWidth] = js.native
+    var sliderHandle: js.UndefOr[OpacityWidth] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.sliderMarker]
       */
-    var sliderMarker: js.UndefOr[InvalidRangeColor] = js.native
+    var sliderMarker: js.UndefOr[InvalidRangeColor] = js.undefined
     
     /**
       * [descr:dxRangeSelector.Options.value]
       */
-    var value: js.UndefOr[(js.Array[Double | String | Date]) | VizRange] = js.native
+    var value: js.UndefOr[(js.Array[Double | String | Date]) | VizRange] = js.undefined
   }
   object dxRangeSelectorOptions {
     
@@ -17667,7 +17806,7 @@ object viz {
       def setContainerBackgroundColorUndefined: Self = StObject.set(x, "containerBackgroundColor", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceField(value: String): Self = StObject.set(x, "dataSourceField", value.asInstanceOf[js.Any])
@@ -17688,7 +17827,7 @@ object viz {
       def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
       @scala.inline
-      def setOnValueChanged(value: /* e */ EventModelPreviousValue => _): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
+      def setOnValueChanged(value: /* e */ EventModelPreviousValue => js.Any): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
@@ -17741,7 +17880,9 @@ object viz {
   }
   
   @js.native
-  trait dxSankey extends BaseWidget {
+  trait dxSankey
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:dxSankey.getAllLinks()]
@@ -17764,23 +17905,22 @@ object viz {
     def hideTooltip(): Unit = js.native
   }
   
-  @js.native
   trait dxSankeyConnectionInfoObject extends StObject {
     
     /**
       * [descr:dxSankeyConnectionInfoObject.source]
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSankeyConnectionInfoObject.target]
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSankeyConnectionInfoObject.weight]
       */
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object dxSankeyConnectionInfoObject {
     
@@ -17813,33 +17953,32 @@ object viz {
     }
   }
   
-  @js.native
   trait dxSankeyLink extends StObject {
     
     /**
       * [descr:dxSankeyLink.connection]
       */
-    var connection: js.UndefOr[dxSankeyConnectionInfoObject] = js.native
+    var connection: js.UndefOr[dxSankeyConnectionInfoObject] = js.undefined
     
     /**
       * [descr:dxSankeyLink.hideTooltip()]
       */
-    def hideTooltip(): Unit = js.native
+    def hideTooltip(): Unit
     
     /**
       * [descr:dxSankeyLink.hover(state)]
       */
-    def hover(state: Boolean): Unit = js.native
+    def hover(state: Boolean): Unit
     
     /**
       * [descr:dxSankeyLink.isHovered()]
       */
-    def isHovered(): Boolean = js.native
+    def isHovered(): Boolean
     
     /**
       * [descr:dxSankeyLink.showTooltip()]
       */
-    def showTooltip(): Unit = js.native
+    def showTooltip(): Unit
   }
   object dxSankeyLink {
     
@@ -17872,49 +18011,48 @@ object viz {
     }
   }
   
-  @js.native
   trait dxSankeyNode extends StObject {
     
     /**
       * [descr:dxSankeyNode.hideTooltip()]
       */
-    def hideTooltip(): Unit = js.native
+    def hideTooltip(): Unit
     
     /**
       * [descr:dxSankeyNode.hover(state)]
       */
-    def hover(state: Boolean): Unit = js.native
+    def hover(state: Boolean): Unit
     
     /**
       * [descr:dxSankeyNode.isHovered()]
       */
-    def isHovered(): Boolean = js.native
+    def isHovered(): Boolean
     
     /**
       * [descr:dxSankeyNode.label]
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSankeyNode.linksIn]
       */
-    var linksIn: js.UndefOr[js.Array[_]] = js.native
+    var linksIn: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxSankeyNode.linksOut]
       */
-    var linksOut: js.UndefOr[js.Array[_]] = js.native
+    var linksOut: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * [descr:dxSankeyNode.showTooltip()]
       */
-    def showTooltip(): Unit = js.native
+    def showTooltip(): Unit
     
     /**
       * [descr:dxSankeyNode.title]
       * @deprecated [depNote:dxSankeyNode.title]
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object dxSankeyNode {
     
@@ -17943,7 +18081,7 @@ object viz {
       def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       @scala.inline
-      def setLinksIn(value: js.Array[_]): Self = StObject.set(x, "linksIn", value.asInstanceOf[js.Any])
+      def setLinksIn(value: js.Array[js.Any]): Self = StObject.set(x, "linksIn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinksInUndefined: Self = StObject.set(x, "linksIn", js.undefined)
@@ -17952,7 +18090,7 @@ object viz {
       def setLinksInVarargs(value: js.Any*): Self = StObject.set(x, "linksIn", js.Array(value :_*))
       
       @scala.inline
-      def setLinksOut(value: js.Array[_]): Self = StObject.set(x, "linksOut", value.asInstanceOf[js.Any])
+      def setLinksOut(value: js.Array[js.Any]): Self = StObject.set(x, "linksOut", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLinksOutUndefined: Self = StObject.set(x, "linksOut", js.undefined)
@@ -17971,101 +18109,102 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxSankeyOptions extends BaseWidgetOptions[dxSankey] {
+  trait dxSankeyOptions
+    extends StObject
+       with BaseWidgetOptions[dxSankey] {
     
     /**
       * [descr:dxSankey.Options.adaptiveLayout]
       */
-    var adaptiveLayout: js.UndefOr[KeepLabels] = js.native
+    var adaptiveLayout: js.UndefOr[KeepLabels] = js.undefined
     
     /**
       * [descr:dxSankey.Options.alignment]
       */
-    var alignment: js.UndefOr[bottom | center | top | (js.Array[bottom | center | top])] = js.native
+    var alignment: js.UndefOr[bottom | center | top | (js.Array[bottom | center | top])] = js.undefined
     
     /**
       * [descr:dxSankey.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:dxSankey.Options.hoverEnabled]
       */
-    var hoverEnabled: js.UndefOr[Boolean] = js.native
+    var hoverEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSankey.Options.label]
       */
-    var label: js.UndefOr[HorizontalOffset] = js.native
+    var label: js.UndefOr[HorizontalOffset] = js.undefined
     
     /**
       * [descr:dxSankey.Options.link]
       */
-    var link: js.UndefOr[ColorMode] = js.native
+    var link: js.UndefOr[ColorMode] = js.undefined
     
     /**
       * [descr:dxSankey.Options.node]
       */
-    var node: js.UndefOr[Padding] = js.native
+    var node: js.UndefOr[Padding] = js.undefined
     
     /**
       * [descr:dxSankey.Options.onLinkClick]
       */
-    var onLinkClick: js.UndefOr[(js.Function1[/* e */ ComponentElementEventModelTarget, _]) | String] = js.native
+    var onLinkClick: js.UndefOr[(js.Function1[/* e */ ComponentElementEventModelTarget, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxSankey.Options.onLinkHoverChanged]
       */
-    var onLinkHoverChanged: js.UndefOr[js.Function1[/* e */ `27`, _]] = js.native
+    var onLinkHoverChanged: js.UndefOr[js.Function1[/* e */ `27`, js.Any]] = js.undefined
     
     /**
       * [descr:dxSankey.Options.onNodeClick]
       */
-    var onNodeClick: js.UndefOr[(js.Function1[/* e */ `28`, _]) | String] = js.native
+    var onNodeClick: js.UndefOr[(js.Function1[/* e */ `28`, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxSankey.Options.onNodeHoverChanged]
       */
-    var onNodeHoverChanged: js.UndefOr[js.Function1[/* e */ `29`, _]] = js.native
+    var onNodeHoverChanged: js.UndefOr[js.Function1[/* e */ `29`, js.Any]] = js.undefined
     
     /**
       * [descr:dxSankey.Options.palette]
       */
     var palette: js.UndefOr[
         js.Array[String] | Bright | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSankey.Options.paletteExtensionMode]
       */
-    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+    var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
     
     /**
       * [descr:dxSankey.Options.sortData]
       */
-    var sortData: js.UndefOr[js.Any] = js.native
+    var sortData: js.UndefOr[js.Any] = js.undefined
     
     /**
       * [descr:dxSankey.Options.sourceField]
       */
-    var sourceField: js.UndefOr[String] = js.native
+    var sourceField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSankey.Options.targetField]
       */
-    var targetField: js.UndefOr[String] = js.native
+    var targetField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSankey.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxSankeyOptions: js.UndefOr[dxSankeyTooltip] = js.native
+    var tooltip_dxSankeyOptions: js.UndefOr[dxSankeyTooltip] = js.undefined
     
     /**
       * [descr:dxSankey.Options.weightField]
       */
-    var weightField: js.UndefOr[String] = js.native
+    var weightField: js.UndefOr[String] = js.undefined
   }
   object dxSankeyOptions {
     
@@ -18094,7 +18233,7 @@ object viz {
       def setAlignmentVarargs(value: (bottom | center | top)*): Self = StObject.set(x, "alignment", js.Array(value :_*))
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -18127,31 +18266,31 @@ object viz {
       def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
       @scala.inline
-      def setOnLinkClick(value: (js.Function1[/* e */ ComponentElementEventModelTarget, _]) | String): Self = StObject.set(x, "onLinkClick", value.asInstanceOf[js.Any])
+      def setOnLinkClick(value: (js.Function1[/* e */ ComponentElementEventModelTarget, js.Any]) | String): Self = StObject.set(x, "onLinkClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLinkClickFunction1(value: /* e */ ComponentElementEventModelTarget => _): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction1(value))
+      def setOnLinkClickFunction1(value: /* e */ ComponentElementEventModelTarget => js.Any): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
       
       @scala.inline
-      def setOnLinkHoverChanged(value: /* e */ `27` => _): Self = StObject.set(x, "onLinkHoverChanged", js.Any.fromFunction1(value))
+      def setOnLinkHoverChanged(value: /* e */ `27` => js.Any): Self = StObject.set(x, "onLinkHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnLinkHoverChangedUndefined: Self = StObject.set(x, "onLinkHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnNodeClick(value: (js.Function1[/* e */ `28`, _]) | String): Self = StObject.set(x, "onNodeClick", value.asInstanceOf[js.Any])
+      def setOnNodeClick(value: (js.Function1[/* e */ `28`, js.Any]) | String): Self = StObject.set(x, "onNodeClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnNodeClickFunction1(value: /* e */ `28` => _): Self = StObject.set(x, "onNodeClick", js.Any.fromFunction1(value))
+      def setOnNodeClickFunction1(value: /* e */ `28` => js.Any): Self = StObject.set(x, "onNodeClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNodeClickUndefined: Self = StObject.set(x, "onNodeClick", js.undefined)
       
       @scala.inline
-      def setOnNodeHoverChanged(value: /* e */ `29` => _): Self = StObject.set(x, "onNodeHoverChanged", js.Any.fromFunction1(value))
+      def setOnNodeHoverChanged(value: /* e */ `29` => js.Any): Self = StObject.set(x, "onNodeHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNodeHoverChangedUndefined: Self = StObject.set(x, "onNodeHoverChanged", js.undefined)
@@ -18205,32 +18344,33 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxSankeyTooltip extends BaseWidgetTooltip {
+  trait dxSankeyTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:dxSankey.Options.tooltip.customizeLinkTooltip]
       */
-    var customizeLinkTooltip: js.UndefOr[js.Function1[/* info */ Source, _]] = js.native
+    var customizeLinkTooltip: js.UndefOr[js.Function1[/* info */ Source, js.Any]] = js.undefined
     
     /**
       * [descr:dxSankey.Options.tooltip.customizeNodeTooltip]
       */
-    var customizeNodeTooltip: js.UndefOr[js.Function1[/* info */ WeightIn, _]] = js.native
+    var customizeNodeTooltip: js.UndefOr[js.Function1[/* info */ WeightIn, js.Any]] = js.undefined
     
     /**
       * [descr:dxSankey.Options.tooltip.linkTooltipTemplate]
       */
     var linkTooltipTemplate: js.UndefOr[
         template | (js.Function2[/* info */ Source, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxSankey.Options.tooltip.nodeTooltipTemplate]
       */
     var nodeTooltipTemplate: js.UndefOr[
         template | (js.Function2[/* info */ WeightOut, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
   }
   object dxSankeyTooltip {
     
@@ -18244,13 +18384,13 @@ object viz {
     implicit class dxSankeyTooltipMutableBuilder[Self <: dxSankeyTooltip] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustomizeLinkTooltip(value: /* info */ Source => _): Self = StObject.set(x, "customizeLinkTooltip", js.Any.fromFunction1(value))
+      def setCustomizeLinkTooltip(value: /* info */ Source => js.Any): Self = StObject.set(x, "customizeLinkTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeLinkTooltipUndefined: Self = StObject.set(x, "customizeLinkTooltip", js.undefined)
       
       @scala.inline
-      def setCustomizeNodeTooltip(value: /* info */ WeightIn => _): Self = StObject.set(x, "customizeNodeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeNodeTooltip(value: /* info */ WeightIn => js.Any): Self = StObject.set(x, "customizeNodeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeNodeTooltipUndefined: Self = StObject.set(x, "customizeNodeTooltip", js.undefined)
@@ -18280,7 +18420,9 @@ object viz {
   }
   
   @js.native
-  trait dxSparkline extends BaseWidget {
+  trait dxSparkline
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:DataHelperMixin.getDataSource()]
@@ -18288,118 +18430,119 @@ object viz {
     def getDataSource(): DataSource = js.native
   }
   
-  @js.native
-  trait dxSparklineOptions extends BaseSparklineOptions[dxSparkline] {
+  trait dxSparklineOptions
+    extends StObject
+       with BaseSparklineOptions[dxSparkline] {
     
     /**
       * [descr:dxSparkline.Options.argumentField]
       */
-    var argumentField: js.UndefOr[String] = js.native
+    var argumentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.barNegativeColor]
       */
-    var barNegativeColor: js.UndefOr[String] = js.native
+    var barNegativeColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.barPositiveColor]
       */
-    var barPositiveColor: js.UndefOr[String] = js.native
+    var barPositiveColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.firstLastColor]
       */
-    var firstLastColor: js.UndefOr[String] = js.native
+    var firstLastColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.ignoreEmptyPoints]
       */
-    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.native
+    var ignoreEmptyPoints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.lineColor]
       */
-    var lineColor: js.UndefOr[String] = js.native
+    var lineColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.lineWidth]
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.lossColor]
       */
-    var lossColor: js.UndefOr[String] = js.native
+    var lossColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.maxColor]
       */
-    var maxColor: js.UndefOr[String] = js.native
+    var maxColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.maxValue]
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.minColor]
       */
-    var minColor: js.UndefOr[String] = js.native
+    var minColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.minValue]
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.pointColor]
       */
-    var pointColor: js.UndefOr[String] = js.native
+    var pointColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.pointSize]
       */
-    var pointSize: js.UndefOr[Double] = js.native
+    var pointSize: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.pointSymbol]
       */
-    var pointSymbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.native
+    var pointSymbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.showFirstLast]
       */
-    var showFirstLast: js.UndefOr[Boolean] = js.native
+    var showFirstLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.showMinMax]
       */
-    var showMinMax: js.UndefOr[Boolean] = js.native
+    var showMinMax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.type]
       */
-    var `type`: js.UndefOr[area | bar | line | spline | splinearea | steparea | stepline | winloss] = js.native
+    var `type`: js.UndefOr[area | bar | line | spline | splinearea | steparea | stepline | winloss] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.winColor]
       */
-    var winColor: js.UndefOr[String] = js.native
+    var winColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxSparkline.Options.winlossThreshold]
       */
-    var winlossThreshold: js.UndefOr[Double] = js.native
+    var winlossThreshold: js.UndefOr[Double] = js.undefined
   }
   object dxSparklineOptions {
     
@@ -18431,7 +18574,7 @@ object viz {
       def setBarPositiveColorUndefined: Self = StObject.set(x, "barPositiveColor", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -18550,7 +18693,9 @@ object viz {
   }
   
   @js.native
-  trait dxTreeMap extends BaseWidget {
+  trait dxTreeMap
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:dxTreeMap.clearSelection()]
@@ -18691,126 +18836,127 @@ object viz {
     def value(): Double = js.native
   }
   
-  @js.native
-  trait dxTreeMapOptions extends BaseWidgetOptions[dxTreeMap] {
+  trait dxTreeMapOptions
+    extends StObject
+       with BaseWidgetOptions[dxTreeMap] {
     
     /**
       * [descr:dxTreeMap.Options.childrenField]
       */
-    var childrenField: js.UndefOr[String] = js.native
+    var childrenField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.colorField]
       */
-    var colorField: js.UndefOr[String] = js.native
+    var colorField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.colorizer]
       */
-    var colorizer: js.UndefOr[ColorCodeField] = js.native
+    var colorizer: js.UndefOr[ColorCodeField] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.dataSource]
       */
-    var dataSource: js.UndefOr[js.Array[_] | DataSource | DataSourceOptions | String] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | DataSource | DataSourceOptions | String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.group]
       */
-    var group: js.UndefOr[HeaderHeight] = js.native
+    var group: js.UndefOr[HeaderHeight] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.hoverEnabled]
       */
-    var hoverEnabled: js.UndefOr[Boolean] = js.native
+    var hoverEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.idField]
       */
-    var idField: js.UndefOr[String] = js.native
+    var idField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.interactWithGroup]
       */
-    var interactWithGroup: js.UndefOr[Boolean] = js.native
+    var interactWithGroup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.labelField]
       */
-    var labelField: js.UndefOr[String] = js.native
+    var labelField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.layoutAlgorithm]
       */
-    var layoutAlgorithm: js.UndefOr[sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, _])] = js.native
+    var layoutAlgorithm: js.UndefOr[sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, js.Any])] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.layoutDirection]
       */
     var layoutDirection: js.UndefOr[
         leftBottomRightTop | leftTopRightBottom | rightBottomLeftTop | rightTopLeftBottom
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.maxDepth]
       */
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ EventModelNode, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ EventModelNode, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onDrill]
       */
-    var onDrill: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.native
+    var onDrill: js.UndefOr[js.Function1[/* e */ ElementModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onHoverChanged]
       */
-    var onHoverChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.native
+    var onHoverChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onNodesInitialized]
       */
-    var onNodesInitialized: js.UndefOr[js.Function1[/* e */ ModelRoot, _]] = js.native
+    var onNodesInitialized: js.UndefOr[js.Function1[/* e */ ModelRoot, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onNodesRendering]
       */
-    var onNodesRendering: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.native
+    var onNodesRendering: js.UndefOr[js.Function1[/* e */ ElementModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ ElementModelNode, js.Any]] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.parentField]
       */
-    var parentField: js.UndefOr[String] = js.native
+    var parentField: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.selectionMode]
       */
-    var selectionMode: js.UndefOr[multiple | none | single_] = js.native
+    var selectionMode: js.UndefOr[multiple | none | single_] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.tile]
       */
-    var tile: js.UndefOr[SelectionStyle] = js.native
+    var tile: js.UndefOr[SelectionStyle] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxTreeMapOptions: js.UndefOr[dxTreeMapTooltip] = js.native
+    var tooltip_dxTreeMapOptions: js.UndefOr[dxTreeMapTooltip] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.valueField]
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object dxTreeMapOptions {
     
@@ -18842,7 +18988,7 @@ object viz {
       def setColorizerUndefined: Self = StObject.set(x, "colorizer", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | DataSource | DataSourceOptions | String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -18881,10 +19027,10 @@ object viz {
       def setLabelFieldUndefined: Self = StObject.set(x, "labelField", js.undefined)
       
       @scala.inline
-      def setLayoutAlgorithm(value: sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, _])): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
+      def setLayoutAlgorithm(value: sliceanddice | squarified | strip | (js.Function1[/* e */ Rect, js.Any])): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLayoutAlgorithmFunction1(value: /* e */ Rect => _): Self = StObject.set(x, "layoutAlgorithm", js.Any.fromFunction1(value))
+      def setLayoutAlgorithmFunction1(value: /* e */ Rect => js.Any): Self = StObject.set(x, "layoutAlgorithm", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
@@ -18902,40 +19048,40 @@ object viz {
       def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ EventModelNode, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ EventModelNode, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ EventModelNode => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ EventModelNode => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnDrill(value: /* e */ ElementModelNode => _): Self = StObject.set(x, "onDrill", js.Any.fromFunction1(value))
+      def setOnDrill(value: /* e */ ElementModelNode => js.Any): Self = StObject.set(x, "onDrill", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDrillUndefined: Self = StObject.set(x, "onDrill", js.undefined)
       
       @scala.inline
-      def setOnHoverChanged(value: /* e */ ElementModelNode => _): Self = StObject.set(x, "onHoverChanged", js.Any.fromFunction1(value))
+      def setOnHoverChanged(value: /* e */ ElementModelNode => js.Any): Self = StObject.set(x, "onHoverChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnHoverChangedUndefined: Self = StObject.set(x, "onHoverChanged", js.undefined)
       
       @scala.inline
-      def setOnNodesInitialized(value: /* e */ ModelRoot => _): Self = StObject.set(x, "onNodesInitialized", js.Any.fromFunction1(value))
+      def setOnNodesInitialized(value: /* e */ ModelRoot => js.Any): Self = StObject.set(x, "onNodesInitialized", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNodesInitializedUndefined: Self = StObject.set(x, "onNodesInitialized", js.undefined)
       
       @scala.inline
-      def setOnNodesRendering(value: /* e */ ElementModelNode => _): Self = StObject.set(x, "onNodesRendering", js.Any.fromFunction1(value))
+      def setOnNodesRendering(value: /* e */ ElementModelNode => js.Any): Self = StObject.set(x, "onNodesRendering", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnNodesRenderingUndefined: Self = StObject.set(x, "onNodesRendering", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ ElementModelNode => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ ElementModelNode => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
@@ -18972,20 +19118,21 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxTreeMapTooltip extends BaseWidgetTooltip {
+  trait dxTreeMapTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:dxTreeMap.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* info */ NodeValue, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxTreeMap.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* info */ NodeValue, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* info */ NodeValue, js.Any]] = js.undefined
   }
   object dxTreeMapTooltip {
     
@@ -19010,7 +19157,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* info */ NodeValue => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* info */ NodeValue => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -19018,7 +19165,9 @@ object viz {
   }
   
   @js.native
-  trait dxVectorMap extends BaseWidget {
+  trait dxVectorMap
+    extends StObject
+       with BaseWidget {
     
     /**
       * [descr:dxVectorMap.center()]
@@ -19084,13 +19233,14 @@ object viz {
     def zoomFactor(zoomFactor: Double): Unit = js.native
   }
   
-  @js.native
-  trait dxVectorMapAnnotationConfig extends dxVectorMapCommonAnnotationConfig {
+  trait dxVectorMapAnnotationConfig
+    extends StObject
+       with dxVectorMapCommonAnnotationConfig {
     
     /**
       * [descr:dxVectorMapAnnotationConfig.name]
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object dxVectorMapAnnotationConfig {
     
@@ -19111,18 +19261,19 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxVectorMapCommonAnnotationConfig extends BaseWidgetAnnotationConfig {
+  trait dxVectorMapCommonAnnotationConfig
+    extends StObject
+       with BaseWidgetAnnotationConfig {
     
     /**
       * [descr:dxVectorMapCommonAnnotationConfig.coordinates]
       */
-    var coordinates: js.UndefOr[js.Array[Double]] = js.native
+    var coordinates: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:dxVectorMapCommonAnnotationConfig.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxVectorMapAnnotationConfig | js.Any, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* annotation */ dxVectorMapAnnotationConfig | js.Any, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMapCommonAnnotationConfig.template]
@@ -19133,7 +19284,7 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMapCommonAnnotationConfig.tooltipTemplate]
@@ -19144,7 +19295,7 @@ object viz {
           /* element */ dxElement, 
           String | Element | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object dxVectorMapCommonAnnotationConfig {
     
@@ -19167,7 +19318,7 @@ object viz {
       def setCoordinatesVarargs(value: Double*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
       
       @scala.inline
-      def setCustomizeTooltip(value: /* annotation */ dxVectorMapAnnotationConfig | js.Any => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* annotation */ dxVectorMapAnnotationConfig | js.Any => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -19208,35 +19359,36 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxVectorMapLegends extends BaseLegend {
+  trait dxVectorMapLegends
+    extends StObject
+       with BaseLegend {
     
     /**
       * [descr:dxVectorMap.Options.legends.customizeHint]
       */
-    var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ ColorEnd, String]] = js.native
+    var customizeHint: js.UndefOr[js.Function1[/* itemInfo */ ColorEnd, String]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.customizeItems]
       */
     var customizeItems: js.UndefOr[
         js.Function1[/* items */ js.Array[VectorMapLegendItem], js.Array[VectorMapLegendItem]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.customizeText]
       */
-    var customizeText: js.UndefOr[js.Function1[/* itemInfo */ ColorEnd, String]] = js.native
+    var customizeText: js.UndefOr[js.Function1[/* itemInfo */ ColorEnd, String]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.markerColor]
       */
-    var markerColor: js.UndefOr[String] = js.native
+    var markerColor: js.UndefOr[String] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.markerShape]
       */
-    var markerShape: js.UndefOr[circle | square] = js.native
+    var markerShape: js.UndefOr[circle | square] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.markerTemplate]
@@ -19247,12 +19399,12 @@ object viz {
           /* element */ SVGGElement, 
           String | SVGElement | JQuery
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends.source]
       */
-    var source: js.UndefOr[Layer] = js.native
+    var source: js.UndefOr[Layer] = js.undefined
   }
   object dxVectorMapLegends {
     
@@ -19320,128 +19472,129 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxVectorMapOptions extends BaseWidgetOptions[dxVectorMap] {
+  trait dxVectorMapOptions
+    extends StObject
+       with BaseWidgetOptions[dxVectorMap] {
     
     /**
       * [descr:dxVectorMap.Options.annotations]
       */
-    var annotations: js.UndefOr[js.Array[dxVectorMapAnnotationConfig | _]] = js.native
+    var annotations: js.UndefOr[js.Array[dxVectorMapAnnotationConfig | js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.background]
       */
-    var background: js.UndefOr[BorderColorColor] = js.native
+    var background: js.UndefOr[BorderColorColor] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.bounds]
       */
-    var bounds: js.UndefOr[js.Array[Double]] = js.native
+    var bounds: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.center]
       */
-    var center: js.UndefOr[js.Array[Double]] = js.native
+    var center: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.commonAnnotationSettings]
       */
-    var commonAnnotationSettings: js.UndefOr[dxVectorMapCommonAnnotationConfig] = js.native
+    var commonAnnotationSettings: js.UndefOr[dxVectorMapCommonAnnotationConfig] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.controlBar]
       */
-    var controlBar: js.UndefOr[Margin] = js.native
+    var controlBar: js.UndefOr[Margin] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.customizeAnnotation]
       */
     var customizeAnnotation: js.UndefOr[
         js.Function1[/* annotation */ dxVectorMapAnnotationConfig | js.Any, dxVectorMapAnnotationConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.layers]
       */
-    var layers: js.UndefOr[js.Array[BorderWidth] | BorderWidth] = js.native
+    var layers: js.UndefOr[js.Array[BorderWidth] | BorderWidth] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.legends]
       */
-    var legends: js.UndefOr[js.Array[dxVectorMapLegends]] = js.native
+    var legends: js.UndefOr[js.Array[dxVectorMapLegends]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.maxZoomFactor]
       */
-    var maxZoomFactor: js.UndefOr[Double] = js.native
+    var maxZoomFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onCenterChanged]
       */
-    var onCenterChanged: js.UndefOr[js.Function1[/* e */ Center, _]] = js.native
+    var onCenterChanged: js.UndefOr[js.Function1[/* e */ Center, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onClick]
       */
-    var onClick: js.UndefOr[(js.Function1[/* e */ `31`, _]) | String] = js.native
+    var onClick: js.UndefOr[(js.Function1[/* e */ `31`, js.Any]) | String] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onSelectionChanged]
       */
-    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ `32`, _]] = js.native
+    var onSelectionChanged: js.UndefOr[js.Function1[/* e */ `32`, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onTooltipHidden]
       */
-    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `33`, _]] = js.native
+    var onTooltipHidden: js.UndefOr[js.Function1[/* e */ `33`, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onTooltipShown]
       */
-    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `33`, _]] = js.native
+    var onTooltipShown: js.UndefOr[js.Function1[/* e */ `33`, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.onZoomFactorChanged]
       */
-    var onZoomFactorChanged: js.UndefOr[js.Function1[/* e */ ZoomFactor, _]] = js.native
+    var onZoomFactorChanged: js.UndefOr[js.Function1[/* e */ ZoomFactor, js.Any]] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.panningEnabled]
       */
-    var panningEnabled: js.UndefOr[Boolean] = js.native
+    var panningEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.projection]
       */
     var projection: js.UndefOr[
         equirectangular | lambert | mercator | miller | VectorMapProjectionConfig | String | js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.tooltip]
       */
     @JSName("tooltip")
-    var tooltip_dxVectorMapOptions: js.UndefOr[dxVectorMapTooltip] = js.native
+    var tooltip_dxVectorMapOptions: js.UndefOr[dxVectorMapTooltip] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.touchEnabled]
       */
-    var touchEnabled: js.UndefOr[Boolean] = js.native
+    var touchEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.wheelEnabled]
       */
-    var wheelEnabled: js.UndefOr[Boolean] = js.native
+    var wheelEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.zoomFactor]
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.zoomingEnabled]
       */
-    var zoomingEnabled: js.UndefOr[Boolean] = js.native
+    var zoomingEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object dxVectorMapOptions {
     
@@ -19455,7 +19608,7 @@ object viz {
     implicit class dxVectorMapOptionsMutableBuilder[Self <: dxVectorMapOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnnotations(value: js.Array[dxVectorMapAnnotationConfig | _]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+      def setAnnotations(value: js.Array[dxVectorMapAnnotationConfig | js.Any]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
@@ -19530,40 +19683,40 @@ object viz {
       def setMaxZoomFactorUndefined: Self = StObject.set(x, "maxZoomFactor", js.undefined)
       
       @scala.inline
-      def setOnCenterChanged(value: /* e */ Center => _): Self = StObject.set(x, "onCenterChanged", js.Any.fromFunction1(value))
+      def setOnCenterChanged(value: /* e */ Center => js.Any): Self = StObject.set(x, "onCenterChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCenterChangedUndefined: Self = StObject.set(x, "onCenterChanged", js.undefined)
       
       @scala.inline
-      def setOnClick(value: (js.Function1[/* e */ `31`, _]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: (js.Function1[/* e */ `31`, js.Any]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickFunction1(value: /* e */ `31` => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClickFunction1(value: /* e */ `31` => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnSelectionChanged(value: /* e */ `32` => _): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      def setOnSelectionChanged(value: /* e */ `32` => js.Any): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
       @scala.inline
-      def setOnTooltipHidden(value: /* e */ `33` => _): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
+      def setOnTooltipHidden(value: /* e */ `33` => js.Any): Self = StObject.set(x, "onTooltipHidden", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipHiddenUndefined: Self = StObject.set(x, "onTooltipHidden", js.undefined)
       
       @scala.inline
-      def setOnTooltipShown(value: /* e */ `33` => _): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
+      def setOnTooltipShown(value: /* e */ `33` => js.Any): Self = StObject.set(x, "onTooltipShown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTooltipShownUndefined: Self = StObject.set(x, "onTooltipShown", js.undefined)
       
       @scala.inline
-      def setOnZoomFactorChanged(value: /* e */ ZoomFactor => _): Self = StObject.set(x, "onZoomFactorChanged", js.Any.fromFunction1(value))
+      def setOnZoomFactorChanged(value: /* e */ ZoomFactor => js.Any): Self = StObject.set(x, "onZoomFactorChanged", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnZoomFactorChangedUndefined: Self = StObject.set(x, "onZoomFactorChanged", js.undefined)
@@ -19612,20 +19765,21 @@ object viz {
     }
   }
   
-  @js.native
-  trait dxVectorMapTooltip extends BaseWidgetTooltip {
+  trait dxVectorMapTooltip
+    extends StObject
+       with BaseWidgetTooltip {
     
     /**
       * [descr:dxVectorMap.Options.tooltip.contentTemplate]
       */
     var contentTemplate: js.UndefOr[
         template | (js.Function2[/* info */ MapLayerElement, /* element */ dxElement, String | Element | JQuery])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * [descr:dxVectorMap.Options.tooltip.customizeTooltip]
       */
-    var customizeTooltip: js.UndefOr[js.Function1[/* info */ MapLayerElement, _]] = js.native
+    var customizeTooltip: js.UndefOr[js.Function1[/* info */ MapLayerElement, js.Any]] = js.undefined
   }
   object dxVectorMapTooltip {
     
@@ -19650,7 +19804,7 @@ object viz {
       def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
       
       @scala.inline
-      def setCustomizeTooltip(value: /* info */ MapLayerElement => _): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
+      def setCustomizeTooltip(value: /* info */ MapLayerElement => js.Any): Self = StObject.set(x, "customizeTooltip", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCustomizeTooltipUndefined: Self = StObject.set(x, "customizeTooltip", js.undefined)
@@ -19708,28 +19862,29 @@ object viz {
   
   type pieChartSeriesObject = baseSeriesObject
   
-  @js.native
-  trait piePointObject extends basePointObject {
+  trait piePointObject
+    extends StObject
+       with basePointObject {
     
     /**
       * [descr:piePointObject.hide()]
       */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**
       * [descr:piePointObject.isVisible()]
       */
-    def isVisible(): Boolean = js.native
+    def isVisible(): Boolean
     
     /**
       * [descr:piePointObject.percent]
       */
-    var percent: js.UndefOr[String | Double | Date] = js.native
+    var percent: js.UndefOr[String | Double | Date] = js.undefined
     
     /**
       * [descr:piePointObject.show()]
       */
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object piePointObject {
     
@@ -19738,7 +19893,7 @@ object viz {
       clearHover: () => Unit,
       clearSelection: () => Unit,
       getColor: () => String,
-      getLabel: () => baseLabelObject with js.Array[baseLabelObject],
+      getLabel: () => baseLabelObject & js.Array[baseLabelObject],
       hide: () => Unit,
       hideTooltip: () => Unit,
       hover: () => Unit,

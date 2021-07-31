@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceSummary extends StObject {
   
   /**
     * The time that AWS Config created the compliance summary.
     */
-  var ComplianceSummaryTimestamp: js.UndefOr[Date] = js.native
+  var ComplianceSummaryTimestamp: js.UndefOr[Date] = js.undefined
   
   /**
     * The number of AWS Config rules or AWS resources that are compliant, up to a maximum of 25 for rules and 100 for resources.
     */
-  var CompliantResourceCount: js.UndefOr[ComplianceContributorCount] = js.native
+  var CompliantResourceCount: js.UndefOr[ComplianceContributorCount] = js.undefined
   
   /**
     * The number of AWS Config rules or AWS resources that are noncompliant, up to a maximum of 25 for rules and 100 for resources.
     */
-  var NonCompliantResourceCount: js.UndefOr[ComplianceContributorCount] = js.native
+  var NonCompliantResourceCount: js.UndefOr[ComplianceContributorCount] = js.undefined
 }
 object ComplianceSummary {
   

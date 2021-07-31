@@ -2,17 +2,15 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcornNode extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object AcornNode {
   

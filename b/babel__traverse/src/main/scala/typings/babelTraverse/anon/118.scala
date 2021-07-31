@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSExternalModuleReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `118` extends StObject {
   
-  var `type`: TSExternalModuleReference = js.native
+  var `type`: TSExternalModuleReference
 }
 object `118` {
   
   @scala.inline
-  def apply(`type`: TSExternalModuleReference): `118` = {
+  def apply(): `118` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSExternalModuleReference")
     __obj.asInstanceOf[`118`]
   }
   

@@ -4,7 +4,6 @@ import typings.activexOffice.Office.CommandBar
 import typings.activexOffice.Office.CommandBars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,13 +32,13 @@ trait Global extends StObject {
   val AutoCorrectEmail: typings.activexWord.Word.AutoCorrect = js.native
   
   def BuildKeyCode(Arg1: WdKey): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.UndefOr[scala.Nothing], Arg3: js.Any, Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any): Double = js.native
-  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.UndefOr[scala.Nothing], Arg4: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any): Double = js.native
   def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: js.Any, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: js.Any, Arg3: Unit, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: js.Any, Arg4: js.Any): Double = js.native
+  def BuildKeyCode(Arg1: WdKey, Arg2: Unit, Arg3: Unit, Arg4: js.Any): Double = js.native
   
   val CaptionLabels: typings.activexWord.Word.CaptionLabels = js.native
   

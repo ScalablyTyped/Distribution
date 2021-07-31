@@ -3,31 +3,29 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A video resource represents a YouTube video.
   */
-@js.native
 trait SchemaVideo extends StObject {
   
   /**
     * Age restriction details related to a video. This data can only be
     * retrieved by the video owner.
     */
-  var ageGating: js.UndefOr[SchemaVideoAgeGating] = js.native
+  var ageGating: js.UndefOr[SchemaVideoAgeGating] = js.undefined
   
   /**
     * The contentDetails object contains information about the video content,
     * including the length of the video and its aspect ratio.
     */
-  var contentDetails: js.UndefOr[SchemaVideoContentDetails] = js.native
+  var contentDetails: js.UndefOr[SchemaVideoContentDetails] = js.undefined
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The fileDetails object encapsulates information about the video file that
@@ -35,42 +33,42 @@ trait SchemaVideo extends StObject {
     * audio and video codecs, stream bitrates, and more. This data can only be
     * retrieved by the video owner.
     */
-  var fileDetails: js.UndefOr[SchemaVideoFileDetails] = js.native
+  var fileDetails: js.UndefOr[SchemaVideoFileDetails] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the video.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#video&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The liveStreamingDetails object contains metadata about a live video
     * broadcast. The object will only be present in a video resource if the
     * video is an upcoming, live, or completed live broadcast.
     */
-  var liveStreamingDetails: js.UndefOr[SchemaVideoLiveStreamingDetails] = js.native
+  var liveStreamingDetails: js.UndefOr[SchemaVideoLiveStreamingDetails] = js.undefined
   
   /**
     * List with all localizations.
     */
-  var localizations: js.UndefOr[StringDictionary[SchemaVideoLocalization]] = js.native
+  var localizations: js.UndefOr[StringDictionary[SchemaVideoLocalization]] = js.undefined
   
   /**
     * The monetizationDetails object encapsulates information about the
     * monetization status of the video.
     */
-  var monetizationDetails: js.UndefOr[SchemaVideoMonetizationDetails] = js.native
+  var monetizationDetails: js.UndefOr[SchemaVideoMonetizationDetails] = js.undefined
   
   /**
     * The player object contains information that you would use to play the
     * video in an embedded player.
     */
-  var player: js.UndefOr[SchemaVideoPlayer] = js.native
+  var player: js.UndefOr[SchemaVideoPlayer] = js.undefined
   
   /**
     * The processingDetails object encapsulates information about YouTube&#39;s
@@ -83,49 +81,49 @@ trait SchemaVideo extends StObject {
     * uploaded can track the progress that YouTube has made in processing the
     * uploaded video file. This data can only be retrieved by the video owner.
     */
-  var processingDetails: js.UndefOr[SchemaVideoProcessingDetails] = js.native
+  var processingDetails: js.UndefOr[SchemaVideoProcessingDetails] = js.undefined
   
   /**
     * The projectDetails object contains information about the project specific
     * video metadata.
     */
-  var projectDetails: js.UndefOr[SchemaVideoProjectDetails] = js.native
+  var projectDetails: js.UndefOr[SchemaVideoProjectDetails] = js.undefined
   
   /**
     * The recordingDetails object encapsulates information about the location,
     * date and address where the video was recorded.
     */
-  var recordingDetails: js.UndefOr[SchemaVideoRecordingDetails] = js.native
+  var recordingDetails: js.UndefOr[SchemaVideoRecordingDetails] = js.undefined
   
   /**
     * The snippet object contains basic details about the video, such as its
     * title, description, and category.
     */
-  var snippet: js.UndefOr[SchemaVideoSnippet] = js.native
+  var snippet: js.UndefOr[SchemaVideoSnippet] = js.undefined
   
   /**
     * The statistics object contains statistics about the video.
     */
-  var statistics: js.UndefOr[SchemaVideoStatistics] = js.native
+  var statistics: js.UndefOr[SchemaVideoStatistics] = js.undefined
   
   /**
     * The status object contains information about the video&#39;s uploading,
     * processing, and privacy statuses.
     */
-  var status: js.UndefOr[SchemaVideoStatus] = js.native
+  var status: js.UndefOr[SchemaVideoStatus] = js.undefined
   
   /**
     * The suggestions object encapsulates suggestions that identify
     * opportunities to improve the video quality or the metadata for the
     * uploaded video. This data can only be retrieved by the video owner.
     */
-  var suggestions: js.UndefOr[SchemaVideoSuggestions] = js.native
+  var suggestions: js.UndefOr[SchemaVideoSuggestions] = js.undefined
   
   /**
     * The topicDetails object encapsulates information about Freebase topics
     * associated with the video.
     */
-  var topicDetails: js.UndefOr[SchemaVideoTopicDetails] = js.native
+  var topicDetails: js.UndefOr[SchemaVideoTopicDetails] = js.undefined
 }
 object SchemaVideo {
   

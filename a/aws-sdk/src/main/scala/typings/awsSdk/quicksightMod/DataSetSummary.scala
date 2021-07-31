@@ -2,51 +2,49 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * Indicates if the dataset has column level permission configured. 
     */
-  var ColumnLevelPermissionRulesApplied: js.UndefOr[Boolean] = js.native
+  var ColumnLevelPermissionRulesApplied: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time that this dataset was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The ID of the dataset.
     */
-  var DataSetId: js.UndefOr[ResourceId] = js.native
+  var DataSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * Indicates whether you want to import the data into SPICE.
     */
-  var ImportMode: js.UndefOr[DataSetImportMode] = js.native
+  var ImportMode: js.UndefOr[DataSetImportMode] = js.undefined
   
   /**
     * The last time that this dataset was updated.
     */
-  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.native
+  var LastUpdatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * A display name for the dataset.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The row-level security configuration for the dataset.
     */
-  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.native
+  var RowLevelPermissionDataSet: js.UndefOr[typings.awsSdk.quicksightMod.RowLevelPermissionDataSet] = js.undefined
 }
 object DataSetSummary {
   

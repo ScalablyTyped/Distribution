@@ -10,42 +10,39 @@ import typings.std.Omit
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type ConnectedComponent[C /* <: ComponentType[_] */, T, P] = (NamedExoticComponent[
+  type ConnectedComponent[C /* <: ComponentType[js.Any] */, T, P] = (NamedExoticComponent[
     LibraryManagedAttributes[
       C, 
       (Omit[
         GetProps[C], 
         /* keyof mini-store.mini-store/cjs/types.Shared<T, mini-store.mini-store/cjs/types.GetProps<C>> */ String
-      ]) with P
+      ]) & P
     ]
-  ]) with (NonReactStatics[C, js.Object]) with WrappedComponent[C]
+  ]) & (NonReactStatics[C, js.Object]) & WrappedComponent[C]
   
-  @js.native
   trait DefaultRootState extends StObject
   
   type GetProps[C] = js.Any
   
   type Matching[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.miniStore.miniStoreStrings.Matching with TopLevel[js.Any]
+    */ typings.miniStore.miniStoreStrings.Matching & TopLevel[js.Any]
   
   type Shared[InjectedProps, DecorationTargetProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : never}
-    */ typings.miniStore.miniStoreStrings.Shared with TopLevel[js.Any]
+    */ typings.miniStore.miniStoreStrings.Shared & TopLevel[js.Any]
   
-  @js.native
   trait Store[S] extends StObject {
     
-    def getState(): S = js.native
+    def getState(): S
     
-    def setState(state: Partial[S]): Unit = js.native
+    def setState(state: Partial[S]): Unit
     
-    def subscribe(listener: js.Function0[Unit]): js.Function0[Unit] = js.native
+    def subscribe(listener: js.Function0[Unit]): js.Function0[Unit]
   }
   object Store {
     
@@ -60,7 +57,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store[_], S] (val x: Self with Store[S]) extends AnyVal {
+    implicit class StoreMutableBuilder[Self <: Store[?], S] (val x: Self & Store[S]) extends AnyVal {
       
       @scala.inline
       def setGetState(value: () => S): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
@@ -73,10 +70,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait StoreProp[S] extends StObject {
     
-    var store: Store[S] = js.native
+    var store: Store[S]
   }
   object StoreProp {
     
@@ -87,7 +83,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class StorePropMutableBuilder[Self <: StoreProp[_], S] (val x: Self with StoreProp[S]) extends AnyVal {
+    implicit class StorePropMutableBuilder[Self <: StoreProp[?], S] (val x: Self & StoreProp[S]) extends AnyVal {
       
       @scala.inline
       def setStore(value: Store[S]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])

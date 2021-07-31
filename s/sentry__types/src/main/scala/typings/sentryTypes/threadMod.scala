@@ -3,23 +3,21 @@ package typings.sentryTypes
 import typings.sentryTypes.stacktraceMod.Stacktrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object threadMod {
   
-  @js.native
   trait Thread extends StObject {
     
-    var crashed: js.UndefOr[Boolean] = js.native
+    var crashed: js.UndefOr[Boolean] = js.undefined
     
-    var current: js.UndefOr[Boolean] = js.native
+    var current: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[Double] = js.native
+    var id: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var stacktrace: js.UndefOr[Stacktrace] = js.native
+    var stacktrace: js.UndefOr[Stacktrace] = js.undefined
   }
   object Thread {
     

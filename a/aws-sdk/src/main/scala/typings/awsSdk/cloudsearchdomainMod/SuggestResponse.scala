@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestResponse extends StObject {
   
   /**
     * The status of a SuggestRequest. Contains the resource ID (rid) and how long it took to process the request (timems).
     */
-  var status: js.UndefOr[SuggestStatus] = js.native
+  var status: js.UndefOr[SuggestStatus] = js.undefined
   
   /**
     * Container for the matching search suggestion information.
     */
-  var suggest: js.UndefOr[SuggestModel] = js.native
+  var suggest: js.UndefOr[SuggestModel] = js.undefined
 }
 object SuggestResponse {
   

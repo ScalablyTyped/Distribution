@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutersPreviewResponse extends StObject {
   
   /** Preview of given router. */
-  var resource: js.UndefOr[Router] = js.native
+  var resource: js.UndefOr[Router] = js.undefined
 }
 object RoutersPreviewResponse {
   

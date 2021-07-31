@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConfiguration extends StObject {
   
   /** The emulation rule applying to the download traffic. */
-  var downRule: js.UndefOr[TrafficRule] = js.native
+  var downRule: js.UndefOr[TrafficRule] = js.undefined
   
   /** The unique opaque id for this network traffic configuration. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The emulation rule applying to the upload traffic. */
-  var upRule: js.UndefOr[TrafficRule] = js.native
+  var upRule: js.UndefOr[TrafficRule] = js.undefined
 }
 object NetworkConfiguration {
   

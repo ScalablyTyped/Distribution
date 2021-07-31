@@ -2,25 +2,23 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * 位置精度
     */
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
   /**
     * 速度，以米/每秒计
     */
-  var speed: Double = js.native
+  var speed: Double
 }
 object Location {
   

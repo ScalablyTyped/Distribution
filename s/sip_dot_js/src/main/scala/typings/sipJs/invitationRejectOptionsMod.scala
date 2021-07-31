@@ -3,33 +3,31 @@ package typings.sipJs
 import typings.sipJs.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object invitationRejectOptionsMod {
   
-  @js.native
   trait InvitationRejectOptions extends StObject {
     
     /**
       * Body
       */
-    var body: js.UndefOr[String | Body] = js.native
+    var body: js.UndefOr[String | Body] = js.undefined
     
     /**
       * Array of extra headers added to the response.
       */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Reason phrase for response.
       */
-    var reasonPhrase: js.UndefOr[String] = js.native
+    var reasonPhrase: js.UndefOr[String] = js.undefined
     
     /**
       * Status code for response.
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object InvitationRejectOptions {
     

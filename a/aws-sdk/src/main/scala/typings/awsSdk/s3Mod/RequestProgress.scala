@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestProgress extends StObject {
   
   /**
     * Specifies whether periodic QueryProgress frames should be sent. Valid values: TRUE, FALSE. Default value: FALSE.
     */
-  var Enabled: js.UndefOr[EnableRequestProgress] = js.native
+  var Enabled: js.UndefOr[EnableRequestProgress] = js.undefined
 }
 object RequestProgress {
   

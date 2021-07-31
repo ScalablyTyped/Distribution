@@ -2,17 +2,15 @@ package typings.ghPages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Email extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object Email {
     

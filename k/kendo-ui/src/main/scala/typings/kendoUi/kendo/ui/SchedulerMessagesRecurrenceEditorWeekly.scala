@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerMessagesRecurrenceEditorWeekly extends StObject {
   
-  var interval: js.UndefOr[String] = js.native
+  var interval: js.UndefOr[String] = js.undefined
   
-  var repeatEvery: js.UndefOr[String] = js.native
+  var repeatEvery: js.UndefOr[String] = js.undefined
   
-  var repeatOn: js.UndefOr[String] = js.native
+  var repeatOn: js.UndefOr[String] = js.undefined
 }
 object SchedulerMessagesRecurrenceEditorWeekly {
   

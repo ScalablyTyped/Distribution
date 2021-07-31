@@ -3,12 +3,13 @@ package typings.typedoc.abstractMod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc/dist/lib/models/reflections/abstract", "ReflectionFlags")
 @js.native
-class ReflectionFlags () extends Array[String] {
+class ReflectionFlags ()
+  extends StObject
+     with Array[String] {
   
   var flags: js.Any = js.native
   

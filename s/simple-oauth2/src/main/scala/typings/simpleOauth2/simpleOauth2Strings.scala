@@ -3,7 +3,6 @@ package typings.simpleOauth2
 import typings.simpleOauth2.mod.TokenType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleOauth2Strings {
@@ -14,7 +13,9 @@ object simpleOauth2Strings {
   def AuthorizationCode: AuthorizationCode = "AuthorizationCode".asInstanceOf[AuthorizationCode]
   
   @js.native
-  sealed trait access_token extends TokenType
+  sealed trait access_token
+    extends StObject
+       with TokenType
   @scala.inline
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   
@@ -44,7 +45,9 @@ object simpleOauth2Strings {
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait refresh_token extends TokenType
+  sealed trait refresh_token
+    extends StObject
+       with TokenType
   @scala.inline
   def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   

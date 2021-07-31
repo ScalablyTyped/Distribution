@@ -2,40 +2,38 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bookmark extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Column: Boolean = js.native
+  val Column: Boolean
   
-  def Copy(Name: String): Bookmark = js.native
+  def Copy(Name: String): Bookmark
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Empty: Boolean = js.native
+  val Empty: Boolean
   
-  var End: Double = js.native
+  var End: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  var Start: Double = js.native
+  var Start: Double
   
-  val StoryType: WdStoryType = js.native
+  val StoryType: WdStoryType
   
   @JSName("Word.Bookmark_typekey")
-  var WordDotBookmark_typekey: Bookmark = js.native
+  var WordDotBookmark_typekey: Bookmark
 }
 object Bookmark {
   

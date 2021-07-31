@@ -7,24 +7,22 @@ import typings.googleapisCommon.schemaMod.Schema
 import typings.googleapisCommon.schemaMod.SchemaResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<googleapis-common.googleapis-common.Endpoint> */
-@js.native
 trait ReadonlyEndpoint extends StObject {
   
-  val _options: GlobalOptions = js.native
+  val _options: GlobalOptions
   
-  val applyMethodsFromSchema: js.Any = js.native
+  val applyMethodsFromSchema: js.Any
   
-  def applySchema(target: Target, rootSchema: Schema, schema: SchemaResource, context: APIRequestContext): scala.Unit = js.native
+  def applySchema(target: Target, rootSchema: Schema, schema: SchemaResource, context: APIRequestContext): scala.Unit
   
-  val getPathParams: js.Any = js.native
+  val getPathParams: js.Any
   
-  val google: js.Any = js.native
+  val google: js.Any
   
-  val makeMethod: js.Any = js.native
+  val makeMethod: js.Any
 }
 object ReadonlyEndpoint {
   

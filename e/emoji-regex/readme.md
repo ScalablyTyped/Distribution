@@ -10,9 +10,9 @@ A regular expression to match all Emoji-only symbols as per the Unicode Standard
 | ------------------ | :-------------: |
 | Full name          | emoji-regex |
 | Keywords           | unicode, regex, regexp, regular expressions, code points, symbols, characters, emoji |
-| # releases         | 5 |
-| # dependents       | 206 |
-| # downloads        | 971807017 |
+| # releases         | 4 |
+| # dependents       | 252 |
+| # downloads        | 1344181701 |
 | # stars            | 3 |
 
 ## Links

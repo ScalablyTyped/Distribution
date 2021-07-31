@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAttendeeResponse extends StObject {
   
   /**
     * The Amazon Chime SDK attendee information.
     */
-  var Attendee: js.UndefOr[typings.awsSdk.chimeMod.Attendee] = js.native
+  var Attendee: js.UndefOr[typings.awsSdk.chimeMod.Attendee] = js.undefined
 }
 object GetAttendeeResponse {
   

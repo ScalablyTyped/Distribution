@@ -5,7 +5,6 @@ import typings.three.lineBasicMaterialMod.LineBasicMaterialParameters
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineDashedMaterialMod {
@@ -35,14 +34,15 @@ object lineDashedMaterialMod {
     def setValues(parameters: LineDashedMaterialParameters): Unit = js.native
   }
   
-  @js.native
-  trait LineDashedMaterialParameters extends LineBasicMaterialParameters {
+  trait LineDashedMaterialParameters
+    extends StObject
+       with LineBasicMaterialParameters {
     
-    var dashSize: js.UndefOr[Double] = js.native
+    var dashSize: js.UndefOr[Double] = js.undefined
     
-    var gapSize: js.UndefOr[Double] = js.native
+    var gapSize: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
   }
   object LineDashedMaterialParameters {
     

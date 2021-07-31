@@ -5,29 +5,28 @@ import typings.colorNamer.anon.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("color-namer", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Palette */](color: String): Colors[T] = js.native
-  @JSImport("color-namer", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Palette */](color: String, options: Omit[T]): Colors[Diff[Palette, T]] = js.native
-  @JSImport("color-namer", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Palette */](color: String, options: Pick[T]): Colors[T] = js.native
+  @scala.inline
+  def apply[T /* <: Palette */](color: String): Colors[T] = ^.asInstanceOf[js.Dynamic].apply(color.asInstanceOf[js.Any]).asInstanceOf[Colors[T]]
+  @scala.inline
+  def apply[T /* <: Palette */](color: String, options: Omit[T]): Colors[Diff[Palette, T]] = (^.asInstanceOf[js.Dynamic].apply(color.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Colors[Diff[Palette, T]]]
+  @scala.inline
+  def apply[T /* <: Palette */](color: String, options: Pick[T]): Colors[T] = (^.asInstanceOf[js.Dynamic].apply(color.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Colors[T]]
   
+  @JSImport("color-namer", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Color extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var hex: String = js.native
+    var hex: String
     
-    var name: String = js.native
+    var name: String
   }
   object Color {
     

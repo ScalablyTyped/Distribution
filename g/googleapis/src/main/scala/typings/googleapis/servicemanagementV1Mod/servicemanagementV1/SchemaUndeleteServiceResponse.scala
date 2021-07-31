@@ -2,19 +2,17 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for UndeleteService method.
   */
-@js.native
 trait SchemaUndeleteServiceResponse extends StObject {
   
   /**
     * Revived service resource.
     */
-  var service: js.UndefOr[SchemaManagedService] = js.native
+  var service: js.UndefOr[SchemaManagedService] = js.undefined
 }
 object SchemaUndeleteServiceResponse {
   

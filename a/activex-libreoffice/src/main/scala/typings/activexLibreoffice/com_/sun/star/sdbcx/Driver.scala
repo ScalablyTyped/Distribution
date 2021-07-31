@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XDriver
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Definition and deletion of database catalogs can't be defined in a common manner for DBMS, but it should be possible to hide much of the complexity of
   * creation and deletion of catalogs. Each driver could provide methods to cover these tasks.
   */
-@js.native
 trait Driver
-  extends XDriver
+  extends StObject
+     with XDriver
      with XDataDefinitionSupplier
      with XCreateCatalog
      with XDropCatalog

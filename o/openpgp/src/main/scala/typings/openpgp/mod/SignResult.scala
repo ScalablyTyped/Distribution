@@ -4,17 +4,15 @@ import typings.openpgp.mod.message.Message
 import typings.openpgp.mod.signature.Signature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignResult extends StObject {
   
-  var data: String | ReadableStream[String] | NodeStream = js.native
+  var data: String | ReadableStream[String] | NodeStream
   
-  var message: Message = js.native
+  var message: Message
   
-  var signature: String | ReadableStream[String] | NodeStream | Signature = js.native
+  var signature: String | ReadableStream[String] | NodeStream | Signature
 }
 object SignResult {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBuildBatchOutput extends StObject {
   
   /**
     * An array of strings that contain the identifiers of the builds that were deleted.
     */
-  var buildsDeleted: js.UndefOr[BuildIds] = js.native
+  var buildsDeleted: js.UndefOr[BuildIds] = js.undefined
   
   /**
     * An array of BuildNotDeleted objects that specify the builds that could not be deleted.
     */
-  var buildsNotDeleted: js.UndefOr[BuildsNotDeleted] = js.native
+  var buildsNotDeleted: js.UndefOr[BuildsNotDeleted] = js.undefined
   
   /**
     * The status code.
     */
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
 }
 object DeleteBuildBatchOutput {
   

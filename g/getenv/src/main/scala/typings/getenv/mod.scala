@@ -11,7 +11,6 @@ import typings.getenv.getenvStrings.url
 import typings.node.urlMod.UrlWithStringQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,91 +18,76 @@ object mod {
   /**
     * Alias for `env.string(name, [fallback])`
     */
+  @scala.inline
+  def apply(name: String): String = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(name: String, fallback: String): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("getenv", JSImport.Namespace)
   @js.native
-  def apply(name: String): String = js.native
-  @JSImport("getenv", JSImport.Namespace)
-  @js.native
-  def apply(name: String, fallback: String): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Split value of the environment variable at each comma and return the resulting array
     * where each value has been typecast according to the `type` parameter. An array can be
     * provided as `fallback`.
     */
-  @JSImport("getenv", "array")
-  @js.native
-  def array(name: String): js.Array[String] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array(
-    name: String,
-    `type`: js.UndefOr[scala.Nothing],
-    fallback: js.Array[Boolean | Double | String | UrlWithStringQuery]
-  ): js.Array[String] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_bool(name: String, `type`: bool): js.Array[Boolean] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_bool(name: String, `type`: bool, fallback: js.Array[Boolean]): js.Array[Boolean] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_boolish(name: String, `type`: boolish): js.Array[Boolean] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_boolish(name: String, `type`: boolish, fallback: js.Array[Boolean]): js.Array[Boolean] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_float(name: String, `type`: float): js.Array[Double] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_float(name: String, `type`: float, fallback: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_int(name: String, `type`: int): js.Array[Double] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_int(name: String, `type`: int, fallback: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_string(name: String, `type`: string): js.Array[String] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_string(name: String, `type`: string, fallback: js.Array[String]): js.Array[String] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_url(name: String, `type`: url): js.Array[UrlWithStringQuery] = js.native
-  @JSImport("getenv", "array")
-  @js.native
-  def array_url(name: String, `type`: url, fallback: js.Array[UrlWithStringQuery]): js.Array[UrlWithStringQuery] = js.native
+  @scala.inline
+  def array(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def array(name: String, `type`: Unit, fallback: js.Array[Boolean | Double | String | UrlWithStringQuery]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def array_bool(name: String, `type`: bool): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def array_bool(name: String, `type`: bool, fallback: js.Array[Boolean]): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  
+  @scala.inline
+  def array_boolish(name: String, `type`: boolish): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  @scala.inline
+  def array_boolish(name: String, `type`: boolish, fallback: js.Array[Boolean]): js.Array[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Boolean]]
+  
+  @scala.inline
+  def array_float(name: String, `type`: float): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def array_float(name: String, `type`: float, fallback: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def array_int(name: String, `type`: int): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def array_int(name: String, `type`: int, fallback: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def array_string(name: String, `type`: string): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def array_string(name: String, `type`: string, fallback: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def array_url(name: String, `type`: url): js.Array[UrlWithStringQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithStringQuery]]
+  @scala.inline
+  def array_url(name: String, `type`: url, fallback: js.Array[UrlWithStringQuery]): js.Array[UrlWithStringQuery] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[UrlWithStringQuery]]
   
   /**
     * Return as boolean. Only allows true/false as valid values.
     */
-  @JSImport("getenv", "bool")
-  @js.native
-  def bool(name: String): Boolean = js.native
-  @JSImport("getenv", "bool")
-  @js.native
-  def bool(name: String, fallback: Boolean): Boolean = js.native
+  @scala.inline
+  def bool(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("bool")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def bool(name: String, fallback: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bool")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return as boolean. Allows true/false/1/0 as valid values.
     */
-  @JSImport("getenv", "boolish")
-  @js.native
-  def boolish(name: String): Boolean = js.native
-  @JSImport("getenv", "boolish")
-  @js.native
-  def boolish(name: String, fallback: Boolean): Boolean = js.native
+  @scala.inline
+  def boolish(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolish")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def boolish(name: String, fallback: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolish")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * `getenv` won't throw any error. If a fallback value is provided, that will be returned, else undefined is returned.
     */
-  @JSImport("getenv", "disableErrors")
-  @js.native
-  def disableErrors(): Unit = js.native
+  @scala.inline
+  def disableErrors(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableErrors")().asInstanceOf[Unit]
   
   /**
     * Disallows fallbacks in environments where you don't want to rely on brittle development
@@ -115,43 +99,36 @@ object mod {
     *   }
     * ```
     */
-  @JSImport("getenv", "disableFallbacks")
-  @js.native
-  def disableFallbacks(): Unit = js.native
+  @scala.inline
+  def disableFallbacks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableFallbacks")().asInstanceOf[Unit]
   
   /**
     * Revert the effect of `disableErrors()`.
     */
-  @JSImport("getenv", "enableErrors")
-  @js.native
-  def enableErrors(): Unit = js.native
+  @scala.inline
+  def enableErrors(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableErrors")().asInstanceOf[Unit]
   
   /**
     * Revert the effect of `disableFallbacks()`.
     */
-  @JSImport("getenv", "enableFallbacks")
-  @js.native
-  def enableFallbacks(): Unit = js.native
+  @scala.inline
+  def enableFallbacks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableFallbacks")().asInstanceOf[Unit]
   
   /**
     * Return as float number.
     */
-  @JSImport("getenv", "float")
-  @js.native
-  def float(name: String): Double = js.native
-  @JSImport("getenv", "float")
-  @js.native
-  def float(name: String, fallback: Double): Double = js.native
+  @scala.inline
+  def float(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def float(name: String, fallback: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Return as integer number.
     */
-  @JSImport("getenv", "int")
-  @js.native
-  def int(name: String): Double = js.native
-  @JSImport("getenv", "int")
-  @js.native
-  def int(name: String, fallback: Double): Double = js.native
+  @scala.inline
+  def int(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("int")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def int(name: String, fallback: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("int")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Return a list of environment variables based on a spec:
@@ -164,46 +141,42 @@ object mod {
     *  });
     * ```
     */
-  @JSImport("getenv", "multi")
-  @js.native
+  @scala.inline
   def multi[S /* <: StringDictionary[String | ParseWithFallback | ParseWithEachType] */](spec: S): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
-    */ typings.getenv.getenvStrings.multi with TopLevel[js.Any] = js.native
+    */ typings.getenv.getenvStrings.multi & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("multi")(spec.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof S ]: S[P][2] extends getenv.getenv.ParseTypes? getenv.getenv.ParseMappings[S[P][2]] : string}
+    */ typings.getenv.getenvStrings.multi & TopLevel[js.Any]]
   
   /**
     * Return as string.
     */
-  @JSImport("getenv", "string")
-  @js.native
-  def string(name: String): String = js.native
-  @JSImport("getenv", "string")
-  @js.native
-  def string(name: String, fallback: String): String = js.native
+  @scala.inline
+  def string(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def string(name: String, fallback: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("string")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return a parsed URL as per Node's `require("url").parse`. N.B `url` doesn't validate URLs, so be sure it includes a protocol or you'll get deeply weird results.
     */
-  @JSImport("getenv", "url")
-  @js.native
-  def url(name: String): UrlWithStringQuery = js.native
-  @JSImport("getenv", "url")
-  @js.native
-  def url(name: String, fallback: UrlWithStringQuery): UrlWithStringQuery = js.native
+  @scala.inline
+  def url(name: String): UrlWithStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(name.asInstanceOf[js.Any]).asInstanceOf[UrlWithStringQuery]
+  @scala.inline
+  def url(name: String, fallback: UrlWithStringQuery): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(name.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
   
-  @js.native
   trait ParseMappings extends StObject {
     
-    var bool: Boolean = js.native
+    var bool: Boolean
     
-    var boolish: Boolean = js.native
+    var boolish: Boolean
     
-    var float: Double = js.native
+    var float: Double
     
-    var int: Double = js.native
+    var int: Double
     
-    var string: String = js.native
+    var string: String
     
-    var url: UrlWithStringQuery = js.native
+    var url: UrlWithStringQuery
   }
   object ParseMappings {
     

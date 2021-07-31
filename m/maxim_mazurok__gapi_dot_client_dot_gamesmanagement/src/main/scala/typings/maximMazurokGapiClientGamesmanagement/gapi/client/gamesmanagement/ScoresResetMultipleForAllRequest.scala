@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScoresResetMultipleForAllRequest extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#scoresResetMultipleForAllRequest`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The IDs of leaderboards to reset. */
-  var leaderboard_ids: js.UndefOr[js.Array[String]] = js.native
+  var leaderboard_ids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ScoresResetMultipleForAllRequest {
   

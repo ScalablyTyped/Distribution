@@ -3,55 +3,53 @@ package typings.matchmediaquery
 import typings.matchmediaquery.anon.PartialMediaValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(query: String): Mql = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[Mql]
+  @scala.inline
+  def apply(query: String, values: Unit, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  @scala.inline
+  def apply(query: String, values: PartialMediaValues): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  @scala.inline
+  def apply(query: String, values: PartialMediaValues, forceStatic: Boolean): Mql = (^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any], values.asInstanceOf[js.Any], forceStatic.asInstanceOf[js.Any])).asInstanceOf[Mql]
+  
   @JSImport("matchmediaquery", JSImport.Namespace)
   @js.native
-  def apply(query: String): Mql = js.native
-  @JSImport("matchmediaquery", JSImport.Namespace)
-  @js.native
-  def apply(query: String, values: js.UndefOr[scala.Nothing], forceStatic: Boolean): Mql = js.native
-  @JSImport("matchmediaquery", JSImport.Namespace)
-  @js.native
-  def apply(query: String, values: PartialMediaValues): Mql = js.native
-  @JSImport("matchmediaquery", JSImport.Namespace)
-  @js.native
-  def apply(query: String, values: PartialMediaValues, forceStatic: Boolean): Mql = js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Record<'aspect-ratio' | 'color-index' | 'color' | 'device-aspect-ratio' | 'device-height' | 'device-width' | 'grid' | 'height' | 'monochrome' | 'orientation' | 'resolution' | 'scan' | 'type' | 'width', unknown> */
-  @js.native
   trait MediaValues extends StObject {
     
-    var `aspect-ratio`: js.Any = js.native
+    var `aspect-ratio`: js.Any
     
-    var color: js.Any = js.native
+    var color: js.Any
     
-    var `color-index`: js.Any = js.native
+    var `color-index`: js.Any
     
-    var `device-aspect-ratio`: js.Any = js.native
+    var `device-aspect-ratio`: js.Any
     
-    var `device-height`: js.Any = js.native
+    var `device-height`: js.Any
     
-    var `device-width`: js.Any = js.native
+    var `device-width`: js.Any
     
-    var grid: js.Any = js.native
+    var grid: js.Any
     
-    var height: js.Any = js.native
+    var height: js.Any
     
-    var monochrome: js.Any = js.native
+    var monochrome: js.Any
     
-    var orientation: js.Any = js.native
+    var orientation: js.Any
     
-    var resolution: js.Any = js.native
+    var resolution: js.Any
     
-    var scan: js.Any = js.native
+    var scan: js.Any
     
-    var `type`: js.Any = js.native
+    var `type`: js.Any
     
-    var width: js.Any = js.native
+    var width: js.Any
   }
   object MediaValues {
     
@@ -129,16 +127,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Mql extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    var matches: Boolean = js.native
+    var matches: Boolean
     
-    var media: String = js.native
+    var media: String
     
-    def update(evt: Mql): Unit = js.native
+    def update(evt: Mql): Unit
   }
   object Mql {
     

@@ -2,29 +2,27 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotStarted extends StObject {
   
-  var canceled: scala.Double = js.native
+  var canceled: scala.Double
   
-  var cancelling: scala.Double = js.native
+  var cancelling: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var notStarted: scala.Double = js.native
+  var notStarted: scala.Double
   
-  var partiallySucceeded: scala.Double = js.native
+  var partiallySucceeded: scala.Double
   
-  var skipped: scala.Double = js.native
+  var skipped: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
   
-  var undefined: scala.Double = js.native
+  var undefined: scala.Double
 }
 object NotStarted {
   

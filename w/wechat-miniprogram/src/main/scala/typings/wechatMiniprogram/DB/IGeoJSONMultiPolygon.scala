@@ -3,22 +3,22 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.wechatMiniprogramStrings.MultiPolygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoJSONMultiPolygon extends IGeoJSONObject {
+trait IGeoJSONMultiPolygon
+  extends StObject
+     with IGeoJSONObject {
   
-  var coordinates: js.Array[js.Array[js.Array[js.Tuple2[Double, Double]]]] = js.native
+  var coordinates: js.Array[js.Array[js.Array[js.Tuple2[Double, Double]]]]
   
-  var `type`: MultiPolygon = js.native
+  var `type`: MultiPolygon
 }
 object IGeoJSONMultiPolygon {
   
   @scala.inline
-  def apply(coordinates: js.Array[js.Array[js.Array[js.Tuple2[Double, Double]]]], `type`: MultiPolygon): IGeoJSONMultiPolygon = {
+  def apply(coordinates: js.Array[js.Array[js.Array[js.Tuple2[Double, Double]]]]): IGeoJSONMultiPolygon = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MultiPolygon")
     __obj.asInstanceOf[IGeoJSONMultiPolygon]
   }
   

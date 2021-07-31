@@ -3,16 +3,15 @@ package typings.kendoUi.kendo.data
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSchemaModel
-  extends /* index */ StringDictionary[js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[js.Any] {
   
-  var fields: js.UndefOr[js.Any] = js.native
+  var fields: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object DataSourceSchemaModel {
   

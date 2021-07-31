@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridAppendRowsOnDemandMethods extends StObject {
   
   /**
     * Destroys the append rows on demand widget
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Loads the next chunk of data.
     */
-  def nextChunk(): Unit = js.native
+  def nextChunk(): Unit
 }
 object IgGridAppendRowsOnDemandMethods {
   

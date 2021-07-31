@@ -4,24 +4,24 @@ import typings.awsSdkClientKmsBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetKeyRotationStatusOutputMod {
   
-  @js.native
-  trait GetKeyRotationStatusOutput extends OutputTypesUnion {
+  trait GetKeyRotationStatusOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A Boolean value that specifies whether key rotation is enabled.</p>
       */
-    var KeyRotationEnabled: js.UndefOr[Boolean] = js.native
+    var KeyRotationEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object GetKeyRotationStatusOutput {
     

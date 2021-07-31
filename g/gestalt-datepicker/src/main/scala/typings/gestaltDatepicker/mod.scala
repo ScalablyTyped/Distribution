@@ -13,7 +13,6 @@ import typings.react.mod.Ref
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,46 +24,45 @@ object mod {
   
   type DatePicker = Component[DatePickerProps, js.Any, js.Any]
   
-  @js.native
   trait DatePickerProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var excludeDates: js.UndefOr[js.Array[Date]] = js.native
+    var excludeDates: js.UndefOr[js.Array[Date]] = js.undefined
     
-    var helperText: js.UndefOr[String] = js.native
+    var helperText: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var idealDirection: js.UndefOr[up | right | down | left] = js.native
+    var idealDirection: js.UndefOr[up | right | down | left] = js.undefined
     
-    var includeDates: js.UndefOr[js.Array[Date]] = js.native
+    var includeDates: js.UndefOr[js.Array[Date]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var localeData: js.UndefOr[Locale] = js.native
+    var localeData: js.UndefOr[Locale] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var nextRef: js.UndefOr[Ref[_]] = js.native
+    var nextRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    def onChange(args: Event): Unit = js.native
+    def onChange(args: Event): Unit
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var rangeEndDate: js.UndefOr[Date] = js.native
+    var rangeEndDate: js.UndefOr[Date] = js.undefined
     
-    var rangeSelector: js.UndefOr[start | end] = js.native
+    var rangeSelector: js.UndefOr[start | end] = js.undefined
     
-    var rangeStartDate: js.UndefOr[Date] = js.native
+    var rangeStartDate: js.UndefOr[Date] = js.undefined
     
-    var ref: js.UndefOr[Ref[_]] = js.native
+    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object DatePickerProps {
     
@@ -147,10 +145,10 @@ object mod {
       def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
       
       @scala.inline
-      def setNextRef(value: Ref[_]): Self = StObject.set(x, "nextRef", value.asInstanceOf[js.Any])
+      def setNextRef(value: Ref[js.Any]): Self = StObject.set(x, "nextRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNextRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "nextRef", js.Any.fromFunction1(value))
+      def setNextRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "nextRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setNextRefNull: Self = StObject.set(x, "nextRef", null)
@@ -186,10 +184,10 @@ object mod {
       def setRangeStartDateUndefined: Self = StObject.set(x, "rangeStartDate", js.undefined)
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)

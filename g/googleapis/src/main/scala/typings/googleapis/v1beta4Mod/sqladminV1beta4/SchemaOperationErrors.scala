@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance operation errors list wrapper.
   */
-@js.native
 trait SchemaOperationErrors extends StObject {
   
   /**
     * The list of errors encountered while processing this operation.
     */
-  var errors: js.UndefOr[js.Array[SchemaOperationError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaOperationError]] = js.undefined
   
   /**
     * This is always sql#operationErrors.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaOperationErrors {
   

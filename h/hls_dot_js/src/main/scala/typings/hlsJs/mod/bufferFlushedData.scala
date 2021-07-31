@@ -2,15 +2,13 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait bufferFlushedData extends StObject {
   
-  var endOffset: Double = js.native
+  var endOffset: Double
   
-  var startOffset: Double = js.native
+  var startOffset: Double
 }
 object bufferFlushedData {
   

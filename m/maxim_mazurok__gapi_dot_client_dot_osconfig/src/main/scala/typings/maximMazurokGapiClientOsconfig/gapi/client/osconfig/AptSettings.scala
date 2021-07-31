@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AptSettings extends StObject {
   
   /** List of packages to exclude from update. These packages will be excluded */
-  var excludes: js.UndefOr[js.Array[String]] = js.native
+  var excludes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An exclusive list of packages to be updated. These are the only packages that will be updated. If these packages are not installed, they will be ignored. This field cannot be
     * specified with any other patch configuration fields.
     */
-  var exclusivePackages: js.UndefOr[js.Array[String]] = js.native
+  var exclusivePackages: js.UndefOr[js.Array[String]] = js.undefined
   
   /** By changing the type to DIST, the patching is performed using `apt-get dist-upgrade` instead. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AptSettings {
   

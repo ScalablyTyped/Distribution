@@ -2,14 +2,12 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReloadReloadProperties extends StObject {
   
   /** Whether using any local cache. Default is false. */
-  var bypassCache: js.UndefOr[Boolean] = js.native
+  var bypassCache: js.UndefOr[Boolean] = js.undefined
 }
 object ReloadReloadProperties {
   

@@ -6,15 +6,13 @@ import typings.std.HTMLElement
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var priority: PriorityString | Double = js.native
+    var priority: PriorityString | Double
   }
   object `0` {
     
@@ -32,16 +30,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -76,10 +73,9 @@ object anon {
     var called: Boolean = js.native
   }
   
-  @js.native
   trait IdProperty[T] extends StObject {
     
-    var idProperty: js.UndefOr[/* keyof T */ String] = js.native
+    var idProperty: js.UndefOr[/* keyof T */ String] = js.undefined
   }
   object IdProperty {
     
@@ -90,7 +86,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdPropertyMutableBuilder[Self <: IdProperty[_], T] (val x: Self with IdProperty[T]) extends AnyVal {
+    implicit class IdPropertyMutableBuilder[Self <: IdProperty[?], T] (val x: Self & IdProperty[T]) extends AnyVal {
       
       @scala.inline
       def setIdProperty(value: /* keyof T */ String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
@@ -101,16 +97,18 @@ object anon {
   }
   
   @js.native
-  trait Instantiable[T, K] extends Instantiable1[/* item */ T, K]
+  trait Instantiable[T, K]
+    extends StObject
+       with Instantiable1[/* item */ T, K]
   
   @js.native
   trait InstantiableT[T]
-    extends Instantiable1[/* p (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* p (repeated) */ js.Any, T]
   
-  @js.native
   trait Priority extends StObject {
     
-    var priority: js.UndefOr[PriorityString | Double] = js.native
+    var priority: js.UndefOr[PriorityString | Double] = js.undefined
   }
   object Priority {
     
@@ -131,12 +129,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var target: HTMLElement | Range = js.native
+    var target: HTMLElement | Range
     
-    var viewportOffset: js.UndefOr[Double] = js.native
+    var viewportOffset: js.UndefOr[Double] = js.undefined
   }
   object Target {
     

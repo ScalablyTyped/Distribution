@@ -2,25 +2,23 @@ package typings.builderUtilRuntime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Format extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var variant: String = js.native
+    var variant: String
     
-    var version: js.UndefOr[scala.Nothing] = js.native
+    var version: Unit
   }
   object Format {
     
     @scala.inline
-    def apply(format: String, variant: String): Format = {
-      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any])
+    def apply(format: String, variant: String, version: Unit): Format = {
+      val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
@@ -32,17 +30,19 @@ object anon {
       
       @scala.inline
       def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVersion(value: Unit): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Variant extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var variant: String = js.native
+    var variant: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object Variant {
     

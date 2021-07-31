@@ -4,6 +4,7 @@ import typings.keepNetworkTbtcJs.anon.ACTIVE
 import typings.keepNetworkTbtcJs.anon.Confirmations
 import typings.keepNetworkTbtcJs.anon.DepositAddress
 import typings.keepNetworkTbtcJs.anon.Digest
+import typings.keepNetworkTbtcJs.anon.OmitFoundTransactionvalue
 import typings.keepNetworkTbtcJs.anon.RequiredConfirmations
 import typings.keepNetworkTbtcJs.bitcoinHelpersMod.FoundTransaction
 import typings.keepNetworkTbtcJs.commonTypesMod.Contract
@@ -11,32 +12,60 @@ import typings.keepNetworkTbtcJs.commonTypesMod.DepositBaseClass
 import typings.keepNetworkTbtcJs.commonTypesMod.KeyPoint
 import typings.keepNetworkTbtcJs.commonTypesMod.RedemptionDetails
 import typings.keepNetworkTbtcJs.commonTypesMod.TBTCConfig
+import typings.node.Buffer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depositMod {
   
   @JSImport("@keep-network/tbtc.js/src/Deposit", JSImport.Default)
   @js.native
-  class default protected () extends Deposit {
+  class default protected ()
+    extends StObject
+       with Deposit {
     def this(factory: DepositFactory, depositContract: Contract, keepContract: Contract) = this()
+    
+    /* CompleteClass */
+    var address: String = js.native
+    
+    /* CompleteClass */
+    override def constructFundingProof(bitcoinTransaction: OmitFoundTransactionvalue, confirmations: Double): js.Promise[js.Tuple8[Buffer, Buffer, Buffer, Buffer, Double, Buffer, String, Buffer]] = js.native
+    
+    /* CompleteClass */
+    var contract: Contract = js.native
+    
+    /* CompleteClass */
+    var factory: js.Any = js.native
+    
+    /* CompleteClass */
+    override def getCurrentState(): js.Promise[Double] = js.native
+    
+    /* CompleteClass */
+    override def getLatestRedemptionDetails(): js.Promise[Null | RedemptionDetails] = js.native
+    
+    /* CompleteClass */
+    var keepContract: Contract = js.native
+    
+    /* CompleteClass */
+    var publicKeyPoint: js.Promise[KeyPoint] = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("@keep-network/tbtc.js/src/Deposit", "default.forAddress")
+    @JSImport("@keep-network/tbtc.js/src/Deposit", JSImport.Default)
     @js.native
-    def forAddress(factory: DepositFactory, address: String): js.Promise[Deposit] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@keep-network/tbtc.js/src/Deposit", "default.forLotSize")
-    @js.native
+    @scala.inline
+    def forAddress(factory: DepositFactory, address: String): js.Promise[Deposit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forAddress")(factory.asInstanceOf[js.Any], address.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Deposit]]
+    
+    @scala.inline
     def forLotSize(
       factory: DepositFactory,
       satoshiLotSize: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-    ): js.Promise[Deposit] = js.native
+    ): js.Promise[Deposit] = (^.asInstanceOf[js.Dynamic].applyDynamic("forLotSize")(factory.asInstanceOf[js.Any], satoshiLotSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Deposit]]
   }
   
   @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositFactory")
@@ -46,7 +75,7 @@ object depositMod {
     
     var State: ACTIVE = js.native
     
-    def availableSatoshiLotSizes(): js.Promise[_] = js.native
+    def availableSatoshiLotSizes(): js.Promise[js.Any] = js.native
     
     var config: TBTCConfig = js.native
     
@@ -85,9 +114,12 @@ object depositMod {
   /* static members */
   object DepositFactory {
     
-    @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositFactory.withConfig")
+    @JSImport("@keep-network/tbtc.js/src/Deposit", "DepositFactory")
     @js.native
-    def withConfig(config: TBTCConfig): js.Promise[DepositFactory] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def withConfig(config: TBTCConfig): js.Promise[DepositFactory] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepositFactory]]
   }
   
   object DepositStates {
@@ -169,18 +201,17 @@ object depositMod {
     def START_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("START")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AutoSubmitState extends StObject {
     
-    var fundingConfirmations: js.Promise[RequiredConfirmations] = js.native
+    var fundingConfirmations: js.Promise[RequiredConfirmations]
     
-    var fundingTransaction: js.Promise[FoundTransaction] = js.native
+    var fundingTransaction: js.Promise[FoundTransaction]
     
     var mintedTBTC: js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
+      ]
     
-    var proofTransaction: js.Promise[_] = js.native
+    var proofTransaction: js.Promise[js.Any]
   }
   object AutoSubmitState {
     
@@ -189,9 +220,9 @@ object depositMod {
       fundingConfirmations: js.Promise[RequiredConfirmations],
       fundingTransaction: js.Promise[FoundTransaction],
       mintedTBTC: js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
         ],
-      proofTransaction: js.Promise[_]
+      proofTransaction: js.Promise[js.Any]
     ): AutoSubmitState = {
       val __obj = js.Dynamic.literal(fundingConfirmations = fundingConfirmations.asInstanceOf[js.Any], fundingTransaction = fundingTransaction.asInstanceOf[js.Any], mintedTBTC = mintedTBTC.asInstanceOf[js.Any], proofTransaction = proofTransaction.asInstanceOf[js.Any])
       __obj.asInstanceOf[AutoSubmitState]
@@ -209,17 +240,19 @@ object depositMod {
       @scala.inline
       def setMintedTBTC(
         value: js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
             ]
       ): Self = StObject.set(x, "mintedTBTC", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProofTransaction(value: js.Promise[_]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
+      def setProofTransaction(value: js.Promise[js.Any]): Self = StObject.set(x, "proofTransaction", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
-  trait Deposit extends DepositBaseClass {
+  trait Deposit
+    extends StObject
+       with DepositBaseClass {
     
     var _fundingConfirmations: js.UndefOr[js.Promise[FundingConfirmations]] = js.native
     
@@ -228,7 +261,7 @@ object depositMod {
     var activeStatePromise: js.Promise[Boolean] = js.native
     
     def auctionValue(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def autoMint(): AutoSubmitState = js.native
@@ -253,7 +286,7 @@ object depositMod {
     def getBitcoinAddress(): js.Promise[String] = js.native
     
     def getCollateralizationPercentage(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getCurrentRedemption(): js.Promise[typings.keepNetworkTbtcJs.redemptionMod.default | Null] = js.native
@@ -261,35 +294,35 @@ object depositMod {
     def getFRT(): js.Promise[js.Object] = js.native
     
     def getInitialCollateralizedPercentage(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getLotSizeSatoshis(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getLotSizeTBTC(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
-    def getOwner(): js.Promise[_] = js.native
+    def getOwner(): js.Promise[js.Any] = js.native
     
     def getRedemptionCost(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getSeverelyUndercollateralizedThresholdPercent(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getSignerFeeTBTC(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def getTDT(): js.Promise[js.Object] = js.native
     
     def getUndercollateralizedThresholdPercent(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
     def inVendingMachine(): js.Promise[Boolean] = js.native
@@ -327,10 +360,10 @@ object depositMod {
     def purchaseSignerBondsAtAuction(): js.Promise[Unit] = js.native
     
     def qualifyAndMintTBTC(): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.native
     
-    def readPublishedPubkeyEvent(): js.Promise[_] = js.native
+    def readPublishedPubkeyEvent(): js.Promise[js.Any] = js.native
     
     var receivedFundingConfirmationEmitter: EventEmitter = js.native
     
@@ -343,12 +376,11 @@ object depositMod {
     def wasSignatureApproved(digest: String): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait FundingConfirmations extends StObject {
     
-    var requiredConfirmations: Double = js.native
+    var requiredConfirmations: Double
     
-    var transaction: FoundTransaction = js.native
+    var transaction: FoundTransaction
   }
   object FundingConfirmations {
     

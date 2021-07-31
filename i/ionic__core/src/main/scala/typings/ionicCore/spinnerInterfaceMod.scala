@@ -3,23 +3,21 @@ package typings.ionicCore
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spinnerInterfaceMod {
   
-  @js.native
   trait SpinnerConfig extends StObject {
     
-    var circles: js.UndefOr[Double] = js.native
+    var circles: js.UndefOr[Double] = js.undefined
     
-    var dur: Double = js.native
+    var dur: Double
     
-    var elmDuration: js.UndefOr[Boolean] = js.native
+    var elmDuration: js.UndefOr[Boolean] = js.undefined
     
-    def fn(dur: Double, index: Double, total: Double): SpinnerData = js.native
+    def fn(dur: Double, index: Double, total: Double): SpinnerData
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
   }
   object SpinnerConfig {
     
@@ -60,24 +58,23 @@ object spinnerInterfaceMod {
   
   type SpinnerConfigs = StringDictionary[SpinnerConfig]
   
-  @js.native
   trait SpinnerData extends StObject {
     
-    var cx: js.UndefOr[Double] = js.native
+    var cx: js.UndefOr[Double] = js.undefined
     
-    var cy: js.UndefOr[Double] = js.native
+    var cy: js.UndefOr[Double] = js.undefined
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
     
-    var style: js.Any = js.native
+    var style: js.Any
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
     
-    var y2: js.UndefOr[Double] = js.native
+    var y2: js.UndefOr[Double] = js.undefined
   }
   object SpinnerData {
     

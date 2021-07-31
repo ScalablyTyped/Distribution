@@ -15,7 +15,6 @@ import typings.maximMazurokGapiClientGmail.anon.Uploadprotocol
 import typings.maximMazurokGapiClientGmail.anon.UserId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -5,7 +5,6 @@ import typings.blueprintjsDatetime.dateRangeMod.DateRange
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateRangeSelectionStrategyMod {
@@ -51,12 +50,10 @@ object dateRangeSelectionStrategyMod {
       * clicking a particular boundary's selected date will always deselect it regardless of which
       * `boundary` you provide to this function (because it's simply a more intuitive interaction).
       */
-    @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getNextState")
-    @js.native
-    def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean): IDateRangeSelectionState = js.native
-    @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getNextState")
-    @js.native
-    def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean, boundary: Boundary): IDateRangeSelectionState = js.native
+    @scala.inline
+    def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
+    @scala.inline
+    def getNextState(currentRange: DateRange, day: Date, allowSingleDayRange: Boolean, boundary: Boundary): IDateRangeSelectionState = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextState")(currentRange.asInstanceOf[js.Any], day.asInstanceOf[js.Any], allowSingleDayRange.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[IDateRangeSelectionState]
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeSelectionStrategy", "DateRangeSelectionStrategy.getNextStateForBoundary")
     @js.native
@@ -77,18 +74,17 @@ object dateRangeSelectionStrategyMod {
     def isOverlappingOtherBoundary_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isOverlappingOtherBoundary")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDateRangeSelectionState extends StObject {
     
     /**
       * The boundary that would be modified by clicking the provided `day`.
       */
-    var boundary: js.UndefOr[Boundary] = js.native
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
     /**
       * The date range that would be selected after clicking the provided `day`.
       */
-    var dateRange: DateRange = js.native
+    var dateRange: DateRange
   }
   object IDateRangeSelectionState {
     

@@ -5,43 +5,44 @@ import typings.appBuilderLib.frameworkMod.Framework
 import typings.appBuilderLib.mod.Packager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object electronFrameworkMod {
   
-  @JSImport("app-builder-lib/out/electron/ElectronFramework", "createElectronFrameworkSupport")
+  @JSImport("app-builder-lib/out/electron/ElectronFramework", JSImport.Namespace)
   @js.native
-  def createElectronFrameworkSupport(configuration: Configuration, packager: Packager): js.Promise[Framework] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createElectronFrameworkSupport(configuration: Configuration, packager: Packager): js.Promise[Framework] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElectronFrameworkSupport")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Framework]]
+  
   trait ElectronDownloadOptions extends StObject {
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
     /**
       * The [cache location](https://github.com/electron-userland/electron-download#cache-location).
       */
-    var cache: js.UndefOr[String | Null] = js.native
+    var cache: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    var customDir: js.UndefOr[String | Null] = js.native
+    var customDir: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    var customFilename: js.UndefOr[String | Null] = js.native
+    var customFilename: js.UndefOr[String | Null] = js.undefined
     
-    var isVerifyChecksum: js.UndefOr[Boolean] = js.native
+    var isVerifyChecksum: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The mirror.
       */
-    var mirror: js.UndefOr[String | Null] = js.native
+    var mirror: js.UndefOr[String | Null] = js.undefined
     
-    var platform: js.UndefOr[ElectronPlatformName] = js.native
+    var platform: js.UndefOr[ElectronPlatformName] = js.undefined
     
-    var strictSSL: js.UndefOr[Boolean] = js.native
+    var strictSSL: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ElectronDownloadOptions {
     

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object ErrorEvent {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent.create")
-  @js.native
-  def create(model: IModel): ErrorEvent = js.native
+  @scala.inline
+  def create(model: IModel): ErrorEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ErrorEvent]
   
   /**
     * Creates and returns a new ErrorEvent instance in the SDK and on the server.
@@ -49,9 +47,8 @@ object ErrorEvent {
     * of the parent MicroflowObjectCollection element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent.createIn")
-  @js.native
-  def createIn(container: MicroflowObjectCollection): ErrorEvent = js.native
+  @scala.inline
+  def createIn(container: MicroflowObjectCollection): ErrorEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ErrorEvent]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ErrorEvent.structureTypeName")

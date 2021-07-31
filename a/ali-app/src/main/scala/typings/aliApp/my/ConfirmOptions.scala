@@ -3,27 +3,26 @@ package typings.aliApp.my
 import typings.aliApp.anon.Confirm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 确认按钮文字，默认‘取消’ */
-  var cancelButtonText: String = js.native
+  var cancelButtonText: String
   
   /** 确认按钮文字，默认‘确定’ */
-  var confirmButtonText: String = js.native
+  var confirmButtonText: String
   
   /** confirm框的内容 */
-  var content: String = js.native
+  var content: String
   
   @JSName("success")
-  def success_MConfirmOptions(result: Confirm): Unit = js.native
+  def success_MConfirmOptions(result: Confirm): Unit
   
   /** confirm框的标题 */
-  var title: String = js.native
+  var title: String
 }
 object ConfirmOptions {
   

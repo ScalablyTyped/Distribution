@@ -3,66 +3,66 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.argumentArgumentMod._Argument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoogleActionsV2Location extends _Argument {
+trait GoogleActionsV2Location
+  extends StObject
+     with _Argument {
   
   /**
     * City.
     * Requires the DEVICE_PRECISE_LOCATION or
     * DEVICE_COARSE_LOCATION permission.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * Geo coordinates.
     * Requires the DEVICE_PRECISE_LOCATION permission.
     */
-  var coordinates: js.UndefOr[GoogleTypeLatLng] = js.native
+  var coordinates: js.UndefOr[GoogleTypeLatLng] = js.undefined
   
   /**
     * Display address, e.g., \"1600 Amphitheatre Pkwy, Mountain View, CA 94043\".
     * Requires the DEVICE_PRECISE_LOCATION permission.
     */
-  var formattedAddress: js.UndefOr[String] = js.native
+  var formattedAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the place.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Notes about the location.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Phone number of the location, e.g. contact number of business location or
     * phone number for delivery location.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * place_id is used with Places API to fetch details of a place.
     * See https://developers.google.com/places/web-service/place-id
     */
-  var placeId: js.UndefOr[String] = js.native
+  var placeId: js.UndefOr[String] = js.undefined
   
   /**
     * Postal address.
     * Requires the DEVICE_PRECISE_LOCATION or
     * DEVICE_COARSE_LOCATION permission.
     */
-  var postalAddress: js.UndefOr[GoogleTypePostalAddress] = js.native
+  var postalAddress: js.UndefOr[GoogleTypePostalAddress] = js.undefined
   
   /**
     * Zip code.
     * Requires the DEVICE_PRECISE_LOCATION or
     * DEVICE_COARSE_LOCATION permission.
     */
-  var zipCode: js.UndefOr[String] = js.native
+  var zipCode: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2Location {
   

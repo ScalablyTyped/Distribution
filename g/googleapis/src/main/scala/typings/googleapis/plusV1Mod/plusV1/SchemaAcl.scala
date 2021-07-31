@@ -2,27 +2,25 @@ package typings.googleapis.plusV1Mod.plusV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAcl extends StObject {
   
   /**
     * Description of the access granted, suitable for display.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The list of access entries.
     */
-  var items: js.UndefOr[js.Array[SchemaPlusAclentryResource]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPlusAclentryResource]] = js.undefined
   
   /**
     * Identifies this resource as a collection of access controls. Value:
     * &quot;plus#acl&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAcl {
   

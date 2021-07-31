@@ -9,14 +9,15 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents an information bubble bound to a geo-position on the map.
   */
 @js.native
-trait InfoBubble extends Element {
+trait InfoBubble
+  extends StObject
+     with Element {
   
   /**
     * This method closes the info bubble (setting its state to CLOSED)
@@ -76,26 +77,29 @@ object InfoBubble {
     
     /** This value represents the state where an info bubble is closed and invisible (value: 'closed') */
     @js.native
-    sealed trait CLOSED extends State
+    sealed trait CLOSED
+      extends StObject
+         with State
     
     /** This value represents the state where an info bubble is open and visible (value: 'open'). */
     @js.native
-    sealed trait OPEN extends State
+    sealed trait OPEN
+      extends StObject
+         with State
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * content to be added to the info bubble
       */
-    var content: String | Node = js.native
+    var content: String | Node
     
     /**
       * a callback to be invoked when the info bubble's state changes
       * @param event {H.util.Event}
       */
-    var onStateChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   }
   object Options {
     

@@ -2,23 +2,22 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongosOptions
-  extends SSLOptions
+  extends StObject
+     with SSLOptions
      with HighAvailabilityOptions {
   
   /**
     * Default: 15; Cutoff latency point in MS for MongoS proxy selection
     */
-  var acceptableLatencyMS: js.UndefOr[scala.Double] = js.native
+  var acceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Socket Options
     */
-  var socketOptions: js.UndefOr[SocketOptions] = js.native
+  var socketOptions: js.UndefOr[SocketOptions] = js.undefined
 }
 object MongosOptions {
   

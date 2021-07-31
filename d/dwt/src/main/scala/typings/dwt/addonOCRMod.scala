@@ -5,29 +5,27 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCROutputFormat
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTOCRPageSetMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonOCRMod {
   
-  @js.native
   trait Line extends StObject {
     
     /**
       * Return the coordinates for the rectangle that contains the specified line. The coordinates are in the sequence of "left,top,right,bottom" like "121,125,892,143".
       */
-    def GetLineRect(): String = js.native
+    def GetLineRect(): String
     
     /**
       * Return the content of the specified word.
       * @index Specify the word.
       */
-    def GetWordContent(index: Double): Word = js.native
+    def GetWordContent(index: Double): Word
     
     /**
       * Return the number of words in the line.
       */
-    def GetWordCount(): Double = js.native
+    def GetWordCount(): Double
   }
   object Line {
     
@@ -220,51 +218,50 @@ object addonOCRMod {
     def SetUnicodeFontName(name: String): Boolean = js.native
   }
   
-  @js.native
   trait OCRResult extends StObject {
     
     /**
       * Return a base64 string that contains the result of the OCR.
       * Newlines are represented by the newline character: '\n'.
       */
-    def Get(): String = js.native
+    def Get(): String
     
     /**
       * Return the error code.
       */
-    def GetErrorCode(): Double = js.native
+    def GetErrorCode(): Double
     
     /**
       * Return the error string.
       */
-    def GetErrorString(): String = js.native
+    def GetErrorString(): String
     
     /**
       * Return the output format.
       */
-    def GetFormat(): Double = js.native
+    def GetFormat(): Double
     
     /**
       * Return the source information. It could be the index of the OCR'd image or the path of the OCR'd file.
       */
-    def GetInput(): Double | String = js.native
+    def GetInput(): Double | String
     
     /**
       * Return the content of a pageset.
       * @param index Specify the pageset
       */
-    def GetPageSetContent(index: Double): PageSet = js.native
+    def GetPageSetContent(index: Double): PageSet
     
     /**
       * Return the number of pagesets in the OCR result.
       */
-    def GetPageSetCount(): Double = js.native
+    def GetPageSetCount(): Double
     
     /**
       * Save the OCR result as a file.
       * @param path The path to save the file.
       */
-    def Save(path: String): Boolean = js.native
+    def Save(path: String): Boolean
   }
   object OCRResult {
     
@@ -312,19 +309,18 @@ object addonOCRMod {
     }
   }
   
-  @js.native
   trait Page extends StObject {
     
     /**
       * Return the content of the specified line.
       * @index Specify the line.
       */
-    def GetLineContent(index: Double): Line = js.native
+    def GetLineContent(index: Double): Line
     
     /**
       * Return the number of lines in the page.
       */
-    def GetLineCount(): Double = js.native
+    def GetLineCount(): Double
   }
   object Page {
     
@@ -345,19 +341,18 @@ object addonOCRMod {
     }
   }
   
-  @js.native
   trait PageSet extends StObject {
     
     /**
       * Return the content of the specified page.
       * @index Specify the page.
       */
-    def GetPageContent(index: Double): Page = js.native
+    def GetPageContent(index: Double): Page
     
     /**
       * Return the number of pages in the pageset.
       */
-    def GetPageCount(): Double = js.native
+    def GetPageCount(): Double
   }
   object PageSet {
     
@@ -378,26 +373,25 @@ object addonOCRMod {
     }
   }
   
-  @js.native
   trait Word extends StObject {
     
     /**
       * Return the font name/size of the word.
       */
-    def GetFontName(): String = js.native
+    def GetFontName(): String
     
-    def GetFontSize(): Double = js.native
+    def GetFontSize(): Double
     
     /**
       * Return the text of the word.
       */
-    def GetText(): String = js.native
+    def GetText(): String
     
     /**
       * Return the coordinates for the rectangle that contains the specified word. The coordinates are in the sequence of "left,top,right,bottom" like "121,126,157,139".
       * @index Specify the word.
       */
-    def GetWordRect(index: Double): String = js.native
+    def GetWordRect(index: Double): String
   }
   object Word {
     

@@ -2,29 +2,27 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentBucket extends StObject {
   
-  var blockPublicAccess: js.UndefOr[Boolean] = js.native
+  var blockPublicAccess: js.UndefOr[Boolean] = js.undefined
   
-  var maxPreviousDeploymentArtifacts: js.UndefOr[Double | String] = js.native
+  var maxPreviousDeploymentArtifacts: js.UndefOr[Double | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var serverSideEncryption: js.UndefOr[String] = js.native
+  var serverSideEncryption: js.UndefOr[String] = js.undefined
   
-  var sseCustomerAlgorithim: js.UndefOr[String] = js.native
+  var sseCustomerAlgorithim: js.UndefOr[String] = js.undefined
   
-  var sseCustomerKey: js.UndefOr[String] = js.native
+  var sseCustomerKey: js.UndefOr[String] = js.undefined
   
-  var sseCustomerKeyMD5: js.UndefOr[String] = js.native
+  var sseCustomerKeyMD5: js.UndefOr[String] = js.undefined
   
-  var sseKMSKeyId: js.UndefOr[String] = js.native
+  var sseKMSKeyId: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object DeploymentBucket {
   

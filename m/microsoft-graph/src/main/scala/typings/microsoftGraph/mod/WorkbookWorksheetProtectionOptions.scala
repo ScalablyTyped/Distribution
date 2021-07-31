@@ -2,44 +2,42 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookWorksheetProtectionOptions extends StObject {
   
   // Represents the worksheet protection option of allowing using auto filter feature.
-  var allowAutoFilter: js.UndefOr[Boolean] = js.native
+  var allowAutoFilter: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing deleting columns.
-  var allowDeleteColumns: js.UndefOr[Boolean] = js.native
+  var allowDeleteColumns: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing deleting rows.
-  var allowDeleteRows: js.UndefOr[Boolean] = js.native
+  var allowDeleteRows: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing formatting cells.
-  var allowFormatCells: js.UndefOr[Boolean] = js.native
+  var allowFormatCells: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing formatting columns.
-  var allowFormatColumns: js.UndefOr[Boolean] = js.native
+  var allowFormatColumns: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing formatting rows.
-  var allowFormatRows: js.UndefOr[Boolean] = js.native
+  var allowFormatRows: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing inserting columns.
-  var allowInsertColumns: js.UndefOr[Boolean] = js.native
+  var allowInsertColumns: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing inserting hyperlinks.
-  var allowInsertHyperlinks: js.UndefOr[Boolean] = js.native
+  var allowInsertHyperlinks: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing inserting rows.
-  var allowInsertRows: js.UndefOr[Boolean] = js.native
+  var allowInsertRows: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing using pivot table feature.
-  var allowPivotTables: js.UndefOr[Boolean] = js.native
+  var allowPivotTables: js.UndefOr[Boolean] = js.undefined
   
   // Represents the worksheet protection option of allowing using sort feature.
-  var allowSort: js.UndefOr[Boolean] = js.native
+  var allowSort: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookWorksheetProtectionOptions {
   

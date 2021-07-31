@@ -5,16 +5,15 @@ import typings.meteor.meteorStrings.date
 import typings.meteor.meteorStrings.timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type
-  extends CurrentDateModifier
+  extends StObject
+     with CurrentDateModifier
      with typings.meteor.mongoMod.Mongo.CurrentDateModifier {
   
   @JSName("$type")
-  var $type: timestamp | date = js.native
+  var $type: timestamp | date
 }
 object Type {
   

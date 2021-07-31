@@ -2,14 +2,12 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELang database (LocalStorage) functionality with Singleton instance
-@js.native
 trait IELangDBOptions extends StObject {
   
-  var autocompleteRows: Double = js.native
+  var autocompleteRows: Double
 }
 object IELangDBOptions {
   

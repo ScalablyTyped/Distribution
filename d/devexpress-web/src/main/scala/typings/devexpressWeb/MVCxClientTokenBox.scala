@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the TokenBox and TokenBoxFor extensions.
   */
 @js.native
-trait MVCxClientTokenBox extends ASPxClientTokenBox {
+trait MVCxClientTokenBox
+  extends StObject
+     with ASPxClientTokenBox {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

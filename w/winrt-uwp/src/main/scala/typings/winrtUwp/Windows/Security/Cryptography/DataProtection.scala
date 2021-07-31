@@ -7,14 +7,12 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains a class that enables you to easily encrypt and decrypt static data or a data stream. */
 object DataProtection {
   
   /** Represents a cryptographic provider that can be used to asynchronously encrypt and decrypt static data or a data stream. */
-  @js.native
   trait DataProtectionProvider extends StObject {
     
     /**
@@ -22,7 +20,7 @@ object DataProtection {
       * @param data Data to protect.
       * @return Represents an asynchronous operation.
       */
-    def protectAsync(data: IBuffer): IPromiseWithIAsyncOperation[IBuffer] = js.native
+    def protectAsync(data: IBuffer): IPromiseWithIAsyncOperation[IBuffer]
     
     /**
       * Asynchronously protects a data stream.
@@ -30,14 +28,14 @@ object DataProtection {
       * @param dest Protected stream.
       * @return Represents an asynchronous action.
       */
-    def protectStreamAsync(src: IInputStream, dest: IOutputStream): IPromiseWithIAsyncAction = js.native
+    def protectStreamAsync(src: IInputStream, dest: IOutputStream): IPromiseWithIAsyncAction
     
     /**
       * Asynchronously decrypts static data.
       * @param data Data to decrypt.
       * @return Represents an asynchronous operation.
       */
-    def unprotectAsync(data: IBuffer): IPromiseWithIAsyncOperation[IBuffer] = js.native
+    def unprotectAsync(data: IBuffer): IPromiseWithIAsyncOperation[IBuffer]
     
     /**
       * Asynchronously decrypts a data stream.
@@ -45,7 +43,7 @@ object DataProtection {
       * @param dest Decrypted stream.
       * @return Represents an asynchronous action.
       */
-    def unprotectStreamAsync(src: IInputStream, dest: IOutputStream): IPromiseWithIAsyncAction = js.native
+    def unprotectStreamAsync(src: IInputStream, dest: IOutputStream): IPromiseWithIAsyncAction
   }
   object DataProtectionProvider {
     

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations possible. To overcome these problems it's recommended to create a new instance on demand.
   * @see XFilePicker
   */
-@js.native
-trait FilePicker extends XFilePicker3 {
+trait FilePicker
+  extends StObject
+     with XFilePicker3 {
   
   /**
     * Provides the ability to choose between different custom templates that do extend the subset of common controls a {@link FilePicker} usually supports.
@@ -31,7 +31,7 @@ trait FilePicker extends XFilePicker3 {
     * issue a warning if a file with the same name already exist.
     * @see com.sun.star.ui.dialogs.TemplateDescription
     */
-  def createWithMode(Mode: Double): Unit = js.native
+  def createWithMode(Mode: Double): Unit
 }
 object FilePicker {
   

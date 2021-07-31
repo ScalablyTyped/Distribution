@@ -4,43 +4,41 @@ import typings.hapiJoi.hapiJoiBooleans.`false`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionRule extends StObject {
   
   /**
     * alternative name for this rule.
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * list of arguments accepted by `method`.
     */
-  var args: js.UndefOr[js.Array[RuleArgs | String]] = js.native
+  var args: js.UndefOr[js.Array[RuleArgs | String]] = js.undefined
   
   /**
     * Dual rule: converts or validates.
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var manifest: js.UndefOr[Boolean] = js.native
+  var manifest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * rule body.
     */
-  var method: js.UndefOr[RuleMethod | `false`] = js.native
+  var method: js.UndefOr[RuleMethod | `false`] = js.undefined
   
   /**
     * whether rule supports multiple invocations.
     */
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
   /**
     * undocumented flags.
     */
-  var priority: js.UndefOr[Boolean] = js.native
+  var priority: js.UndefOr[Boolean] = js.undefined
   
   /**
     * validation function.
@@ -49,11 +47,11 @@ trait ExtensionRule extends StObject {
     js.Function4[
       /* value */ js.Any, 
       /* helpers */ js.Any, 
-      /* args */ Record[String, _], 
+      /* args */ Record[String, js.Any], 
       /* options */ js.Any, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ExtensionRule {
   
@@ -97,9 +95,6 @@ object ExtensionRule {
     def setMethod(value: RuleMethod | `false`): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMethodFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
@@ -116,7 +111,7 @@ object ExtensionRule {
     
     @scala.inline
     def setValidate(
-      value: (/* value */ js.Any, /* helpers */ js.Any, /* args */ Record[String, _], /* options */ js.Any) => _
+      value: (/* value */ js.Any, /* helpers */ js.Any, /* args */ Record[String, js.Any], /* options */ js.Any) => js.Any
     ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
     
     @scala.inline

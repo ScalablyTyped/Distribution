@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionedObjectProperties extends StObject {
   
   /** The embedded object of this positioned object. */
-  var embeddedObject: js.UndefOr[EmbeddedObject] = js.native
+  var embeddedObject: js.UndefOr[EmbeddedObject] = js.undefined
   
   /** The positioning of this positioned object relative to the newline of the Paragraph that references this positioned object. */
-  var positioning: js.UndefOr[PositionedObjectPositioning] = js.native
+  var positioning: js.UndefOr[PositionedObjectPositioning] = js.undefined
 }
 object PositionedObjectProperties {
   

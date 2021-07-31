@@ -2,33 +2,31 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An invitation for a new client user to get access to the Authorized Buyers
   * UI. All fields are required unless otherwise specified.
   */
-@js.native
 trait SchemaClientUserInvitation extends StObject {
   
   /**
     * Numerical account ID of the client buyer that the invited user is
     * associated with. The value of this field is ignored in create operations.
     */
-  var clientAccountId: js.UndefOr[String] = js.native
+  var clientAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The email address to which the invitation is sent. Email addresses should
     * be unique among all client users under each sponsor buyer.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The unique numerical ID of the invitation that is sent to the user. The
     * value of this field is ignored in create operations.
     */
-  var invitationId: js.UndefOr[String] = js.native
+  var invitationId: js.UndefOr[String] = js.undefined
 }
 object SchemaClientUserInvitation {
   

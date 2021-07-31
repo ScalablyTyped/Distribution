@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSubscriptionAttributesInput extends StObject {
   
   /**
     * The ARN of the subscription whose properties you want to get.
     */
-  var SubscriptionArn: subscriptionARN = js.native
+  var SubscriptionArn: subscriptionARN
 }
 object GetSubscriptionAttributesInput {
   

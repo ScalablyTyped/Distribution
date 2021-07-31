@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOn extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var addOnId: js.UndefOr[String] = js.native
+  var addOnId: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID for the Salesforce object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object AddOn {
   

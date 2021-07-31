@@ -2,17 +2,15 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OAuth2 {
   
-  @js.native
   trait Credentials extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
   }
   object Credentials {
     

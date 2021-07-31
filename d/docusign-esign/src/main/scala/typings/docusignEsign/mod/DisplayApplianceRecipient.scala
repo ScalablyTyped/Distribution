@@ -2,51 +2,49 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceRecipient extends StObject {
   
-  var cfrPart11: js.UndefOr[Boolean] = js.native
+  var cfrPart11: js.UndefOr[Boolean] = js.undefined
   
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
-  var digitalSignatureBase64: js.UndefOr[String] = js.native
+  var digitalSignatureBase64: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var inPersonEmail: js.UndefOr[String] = js.native
+  var inPersonEmail: js.UndefOr[String] = js.undefined
   
-  var initialsBase64: js.UndefOr[String] = js.native
+  var initialsBase64: js.UndefOr[String] = js.undefined
   
-  var isNotary: js.UndefOr[Boolean] = js.native
+  var isNotary: js.UndefOr[Boolean] = js.undefined
   
-  var notarySealBase64: js.UndefOr[String] = js.native
+  var notarySealBase64: js.UndefOr[String] = js.undefined
   
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
-  var recipientCompleteCount: js.UndefOr[Double] = js.native
+  var recipientCompleteCount: js.UndefOr[Double] = js.undefined
   
-  var recipientGuidId: js.UndefOr[String] = js.native
+  var recipientGuidId: js.UndefOr[String] = js.undefined
   
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
-  var recipientStatus: js.UndefOr[String] = js.native
+  var recipientStatus: js.UndefOr[String] = js.undefined
   
-  var recipientType: js.UndefOr[String] = js.native
+  var recipientType: js.UndefOr[String] = js.undefined
   
-  var rowState: js.UndefOr[String] = js.native
+  var rowState: js.UndefOr[String] = js.undefined
   
-  var signatureBase64: js.UndefOr[String] = js.native
+  var signatureBase64: js.UndefOr[String] = js.undefined
   
-  var signed: js.UndefOr[Boolean] = js.native
+  var signed: js.UndefOr[Boolean] = js.undefined
   
-  var signerApplyTabs: js.UndefOr[Boolean] = js.native
+  var signerApplyTabs: js.UndefOr[Boolean] = js.undefined
   
-  var signerAttachmentBase64: js.UndefOr[String] = js.native
+  var signerAttachmentBase64: js.UndefOr[String] = js.undefined
   
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object DisplayApplianceRecipient {
   

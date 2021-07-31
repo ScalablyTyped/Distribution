@@ -6,15 +6,13 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.io.XStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service describes the properties that are used when using the {@link XGraphicProvider} interface methods */
-@js.native
 trait MediaProperties extends StObject {
   
   /** Additional properties that will be passed to the appropriate filter module. */
-  var FilterData: PropertyValues = js.native
+  var FilterData: PropertyValues
   
   /**
     * This property is only used for loading graphics or querying graphic descriptors
@@ -22,7 +20,7 @@ trait MediaProperties extends StObject {
     * A {@link InputStream} can be used instead of the {@link URL} property
     * @see com.sun.star.io.XInputStream
     */
-  var InputStream: XInputStream = js.native
+  var InputStream: XInputStream
   
   /**
     * This property is only used for storing graphics and describes the format into which the graphic is to be converted
@@ -31,7 +29,7 @@ trait MediaProperties extends StObject {
     *
     * sterimage/x-emfimage/x-epsimage/x-metimage/x-pictimage/x-portable-bitmapimage/x-portable-pixmapimage/x-wmfimage/x-svmimage/x-xpixmapimage/x-vclgraphic
     */
-  var MimeType: String = js.native
+  var MimeType: String
   
   /**
     * This property is only used for storing graphics
@@ -39,7 +37,7 @@ trait MediaProperties extends StObject {
     * A {@link OutputStream} can be used instead of the {@link URL} property
     * @see com.sun.star.io.XStream
     */
-  var OutputStream: XStream = js.native
+  var OutputStream: XStream
   
   /**
     * Property that describes the location of the source or target of the graphic as URL.
@@ -56,7 +54,7 @@ trait MediaProperties extends StObject {
     * Yet more, you can access graphics in the application-wide image repository by specifying URLs of the form
     * `private:graphicrepository/<path_in_repository>` .
     */
-  var URL: String = js.native
+  var URL: String
 }
 object MediaProperties {
   

@@ -6,25 +6,25 @@ import typings.pulumiAws.outputMod.ec2.GetLaunchConfigurationRootBlockDevice
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLaunchConfigurationMod {
   
-  @JSImport("@pulumi/aws/ec2/getLaunchConfiguration", "getLaunchConfiguration")
+  @JSImport("@pulumi/aws/ec2/getLaunchConfiguration", JSImport.Namespace)
   @js.native
-  def getLaunchConfiguration(args: GetLaunchConfigurationArgs): js.Promise[GetLaunchConfigurationResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLaunchConfiguration", "getLaunchConfiguration")
-  @js.native
-  def getLaunchConfiguration(args: GetLaunchConfigurationArgs, opts: InvokeOptions): js.Promise[GetLaunchConfigurationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLaunchConfiguration(args: GetLaunchConfigurationArgs): js.Promise[GetLaunchConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
+  @scala.inline
+  def getLaunchConfiguration(args: GetLaunchConfigurationArgs, opts: InvokeOptions): js.Promise[GetLaunchConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLaunchConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLaunchConfigurationResult]]
+  
   trait GetLaunchConfigurationArgs extends StObject {
     
     /**
       * The name of the launch configuration.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetLaunchConfigurationArgs {
     
@@ -42,103 +42,102 @@ object getLaunchConfigurationMod {
     }
   }
   
-  @js.native
   trait GetLaunchConfigurationResult extends StObject {
     
     /**
       * The Amazon Resource Name of the launch configuration.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Whether a Public IP address is associated with the instance.
       */
-    val associatePublicIpAddress: Boolean = js.native
+    val associatePublicIpAddress: Boolean
     
     /**
       * The EBS Block Devices attached to the instance.
       */
-    val ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice] = js.native
+    val ebsBlockDevices: js.Array[GetLaunchConfigurationEbsBlockDevice]
     
     /**
       * Whether the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: Boolean = js.native
+    val ebsOptimized: Boolean
     
     /**
       * Whether Detailed Monitoring is Enabled.
       */
-    val enableMonitoring: Boolean = js.native
+    val enableMonitoring: Boolean
     
     /**
       * The Ephemeral volumes on the instance.
       */
-    val ephemeralBlockDevices: js.Array[GetLaunchConfigurationEphemeralBlockDevice] = js.native
+    val ephemeralBlockDevices: js.Array[GetLaunchConfigurationEphemeralBlockDevice]
     
     /**
       * The IAM Instance Profile to associate with launched instances.
       */
-    val iamInstanceProfile: String = js.native
+    val iamInstanceProfile: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The EC2 Image ID of the instance.
       */
-    val imageId: String = js.native
+    val imageId: String
     
     /**
       * The Instance Type of the instance to launch.
       */
-    val instanceType: String = js.native
+    val instanceType: String
     
     /**
       * The Key Name that should be used for the instance.
       */
-    val keyName: String = js.native
+    val keyName: String
     
     /**
       * The Name of the launch configuration.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The Tenancy of the instance.
       */
-    val placementTenancy: String = js.native
+    val placementTenancy: String
     
     /**
       * The Root Block Device of the instance.
       */
-    val rootBlockDevices: js.Array[GetLaunchConfigurationRootBlockDevice] = js.native
+    val rootBlockDevices: js.Array[GetLaunchConfigurationRootBlockDevice]
     
     /**
       * A list of associated Security Group IDS.
       */
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
     /**
       * The Price to use for reserving Spot instances.
       */
-    val spotPrice: String = js.native
+    val spotPrice: String
     
     /**
       * The User Data of the instance.
       */
-    val userData: String = js.native
+    val userData: String
     
     /**
       * The ID of a ClassicLink-enabled VPC.
       */
-    val vpcClassicLinkId: String = js.native
+    val vpcClassicLinkId: String
     
     /**
       * The IDs of one or more Security Groups for the specified ClassicLink-enabled VPC.
       */
-    val vpcClassicLinkSecurityGroups: js.Array[String] = js.native
+    val vpcClassicLinkSecurityGroups: js.Array[String]
   }
   object GetLaunchConfigurationResult {
     

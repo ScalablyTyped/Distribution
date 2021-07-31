@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBuildsResponse extends StObject {
   
   /** Builds will be sorted by `create_time`, descending. */
-  var builds: js.UndefOr[js.Array[Build]] = js.native
+  var builds: js.UndefOr[js.Array[Build]] = js.undefined
   
   /** Token to receive the next page of results. This will be absent if the end of the response list has been reached. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListBuildsResponse {
   

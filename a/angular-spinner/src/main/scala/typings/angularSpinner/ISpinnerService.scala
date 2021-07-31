@@ -2,10 +2,8 @@ package typings.angularSpinner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISpinnerService extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ISpinnerService extends StObject {
     *
     * @param spinner key
     */
-  def spin(key: String): Unit = js.native
+  def spin(key: String): Unit
   
   /**
     * Stop selected spinner
     *
     * @param spinner key
     */
-  def stop(key: String): Unit = js.native
+  def stop(key: String): Unit
 }
 object ISpinnerService {
   

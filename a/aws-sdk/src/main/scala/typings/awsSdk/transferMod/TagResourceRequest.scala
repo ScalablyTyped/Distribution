@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) for a specific AWS resource, such as a server, user, or role.
     */
-  var Arn: typings.awsSdk.transferMod.Arn = js.native
+  var Arn: typings.awsSdk.transferMod.Arn
   
   /**
     * Key-value pairs assigned to ARNs that you can use to group and search for resources by type. You can attach this metadata to user accounts for any purpose.
     */
-  var Tags: typings.awsSdk.transferMod.Tags = js.native
+  var Tags: typings.awsSdk.transferMod.Tags
 }
 object TagResourceRequest {
   

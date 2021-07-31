@@ -2,17 +2,15 @@ package typings.primereact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldRange extends StObject {
   
-  var oldRange: js.Any = js.native
+  var oldRange: js.Any
   
-  var range: js.Any = js.native
+  var range: js.Any
   
-  var source: String = js.native
+  var source: String
 }
 object OldRange {
   

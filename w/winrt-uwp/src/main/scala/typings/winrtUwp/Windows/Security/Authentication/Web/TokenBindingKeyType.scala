@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Authentication.Web
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object TokenBindingKeyType extends StObject {
   
   /** ECDsaP256. */
   @js.native
-  sealed trait ecdsaP256 extends TokenBindingKeyType
+  sealed trait ecdsaP256
+    extends StObject
+       with TokenBindingKeyType
   
   /** RSA-2048. */
   @js.native
-  sealed trait rsa2048 extends TokenBindingKeyType
+  sealed trait rsa2048
+    extends StObject
+       with TokenBindingKeyType
 }

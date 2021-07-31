@@ -5,29 +5,29 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGenerateDataKeyWithoutPlaintextOutputMod {
   
-  @js.native
-  trait GenerateDataKeyWithoutPlaintextOutput extends OutputTypesUnion {
+  trait GenerateDataKeyWithoutPlaintextOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The encrypted data encryption key. When you use the HTTP API or the AWS CLI, the value is Base64-encoded. Otherwise, it is not encoded.</p>
       */
-    var CiphertextBlob: js.UndefOr[Uint8Array] = js.native
+    var CiphertextBlob: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * <p>The identifier of the CMK under which the data encryption key was generated and encrypted.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
   }
   object GenerateDataKeyWithoutPlaintextOutput {
     

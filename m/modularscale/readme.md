@@ -12,7 +12,7 @@ Calculate a value from a modular scale
 | Keywords           | modular, modular-scale, modularscale, scale, typography |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 2364510 |
+| # downloads        | 2576807 |
 | # stars            | 0 |
 
 ## Links

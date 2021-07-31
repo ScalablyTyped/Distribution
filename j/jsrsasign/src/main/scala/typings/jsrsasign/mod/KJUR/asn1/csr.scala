@@ -5,7 +5,6 @@ import typings.jsrsasign.anon.Ext
 import typings.jsrsasign.jsrsasign.KJUR.asn1.csr.PEMInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,6 +41,10 @@ object csr {
     */
   object CSRUtil {
     
+    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * get field values from CSR/PKCS#10 PEM string
       * @param sPEM PEM string of CSR/PKCS#10
@@ -61,9 +64,8 @@ object csr {
       * o = KJUR.asn1.csr.CSRUtil.getInfo("-----BEGIN CERTIFICATE REQUEST...");
       * console.log(o.subject.name) → "/C=US/O=Test"
       */
-    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.getInfo")
-    @js.native
-    def getInfo(sPEM: String): PEMInfo = js.native
+    @scala.inline
+    def getInfo(sPEM: String): PEMInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(sPEM.asInstanceOf[js.Any]).asInstanceOf[PEMInfo]
     
     /**
       * generate a PEM format of CSR/PKCS#10 certificate signing request
@@ -115,12 +117,10 @@ object csr {
       *   sbjprvkey: prvKeyPEM
       * });
       */
-    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.newCSRPEM")
-    @js.native
-    def newCSRPEM(): String = js.native
-    @JSImport("jsrsasign", "KJUR.asn1.csr.CSRUtil.newCSRPEM")
-    @js.native
-    def newCSRPEM(param: Ext): String = js.native
+    @scala.inline
+    def newCSRPEM(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")().asInstanceOf[String]
+    @scala.inline
+    def newCSRPEM(param: Ext): String = ^.asInstanceOf[js.Dynamic].applyDynamic("newCSRPEM")(param.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**
@@ -149,8 +149,84 @@ object csr {
   @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequest")
   @js.native
   class CertificationRequest ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequest {
     def this(params: Csrinfo) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get PEM formatted certificate signing request (CSR/PKCS#10)
+      * @return PEM formatted string of CSR/PKCS#10
+      * @description
+      * This method is to a get CSR PEM string after signed.
+      *
+      * @example
+      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
+      * csr.sign();
+      * pem =  csr.getPEMString();
+      * // pem will be following:
+      * // -----BEGIN CERTIFICATE REQUEST-----
+      * // MII ...snip...
+      * // -----END CERTIFICATE REQUEST-----
+      */
+    /* CompleteClass */
+    override def getPEMString(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /**
+      * sign CertificationRequest and set signature value internally
+      * @description
+      * This method self-signs CertificateRequestInfo with a subject's
+      * private key and set signature value internally.
+      *
+      * @example
+      * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
+      * csr.sign("SHA256withRSA", prvKeyObj);
+      */
+    /* CompleteClass */
+    override def sign(sigAlgName: String, prvKeyObj: js.Any): Unit = js.native
   }
   
   /**
@@ -174,5 +250,51 @@ object csr {
   @JSImport("jsrsasign", "KJUR.asn1.csr.CertificationRequestInfo")
   @js.native
   class CertificationRequestInfo ()
-    extends typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo
+    extends StObject
+       with typings.jsrsasign.jsrsasign.KJUR.asn1.csr.CertificationRequestInfo {
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+  }
 }

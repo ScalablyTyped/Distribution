@@ -1,16 +1,19 @@
 package typings.egjsAxes
 
 import typings.egjsAxes.inputTypeMod.IInputType
+import typings.egjsAxes.inputTypeMod.IInputTypeObserver
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinchInputMod {
   
   @JSImport("@egjs/axes/inputType/PinchInput", "PinchInput")
   @js.native
-  class PinchInput protected () extends IInputType {
+  class PinchInput protected ()
+    extends StObject
+       with IInputType {
     def this(el: js.Any) = this()
     def this(el: js.Any, options: PinchInputOption) = this()
     
@@ -18,16 +21,34 @@ object pinchInputMod {
     
     /* private */ def attachEvent(observer: js.Any): js.Any = js.native
     
+    /* CompleteClass */
+    var axes: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def connect(observer: IInputTypeObserver): IInputType = js.native
+    
+    /* CompleteClass */
+    override def destroy(): js.Any = js.native
+    
     /* private */ def dettachEvent(): js.Any = js.native
     
     @JSName("disable")
     def disable_MPinchInput(): this.type = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): js.Any = js.native
+    
+    /* CompleteClass */
+    var element: HTMLElement = js.native
     
     @JSName("enable")
     def enable_MPinchInput(): this.type = js.native
     
     @JSName("isEnable")
     def isEnable_MPinchInput(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def mapAxes(axes: js.Array[String]): js.Any = js.native
     
     var observer: js.Any = js.native
     
@@ -40,12 +61,11 @@ object pinchInputMod {
     var options: PinchInputOption = js.native
   }
   
-  @js.native
   trait PinchInputOption extends StObject {
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object PinchInputOption {
     

@@ -15,19 +15,18 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a component which may be part of a report.
   * @see XReportDefinition
   */
-@js.native
 trait XReportComponent
-  extends typings.activexLibreoffice.com_.sun.star.drawing.XShape
+  extends StObject
      with XCloneable
      with XChild
      with XComponent
+     with typings.activexLibreoffice.com_.sun.star.drawing.XShape
      with XPropertySet {
   
   /**
@@ -35,14 +34,14 @@ trait XReportComponent
     *
     * `; 0: No border; 2: simple border; `
     */
-  var ControlBorder: Double = js.native
+  var ControlBorder: Double
   
   /**
     * specifies the color of the border, if present
     *
     * Not every border style (see Border) may support coloring. For instance, usually a border with 3D effect will ignore the BorderColor setting.
     */
-  var ControlBorderColor: Double = js.native
+  var ControlBorderColor: Double
   
   /**
     * is used for subreports and contains the names of the columns of the subreport which are related to the master fields of the parent report.
@@ -58,10 +57,10 @@ trait XReportComponent
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var DetailFields: SafeArray[String] = js.native
+  var DetailFields: SafeArray[String]
   
   /** specifies the height of the control. */
-  var Height: Double = js.native
+  var Height: Double
   
   /**
     * is used for subreports and contains the names of columns of the parent report.
@@ -71,31 +70,31 @@ trait XReportComponent
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var MasterFields: SafeArray[String] = js.native
+  var MasterFields: SafeArray[String]
   
   /** the name of the component. */
-  var Name: String = js.native
+  var Name: String
   
   /** specifies the horizontal position of the control. */
-  var PositionX: Double = js.native
+  var PositionX: Double
   
   /** specifies the vertical position of the control. */
-  var PositionY: Double = js.native
+  var PositionY: Double
   
   /**
     * Specifies that recurring values are printed. If set to `TRUE` then the value will be printed every time. If set to `FALSE` then the value will only be
     * printed once. The default value is `TRUE` .
     */
-  var PrintRepeatedValues: Boolean = js.native
+  var PrintRepeatedValues: Boolean
   
   /**
     * Specifies the section where the control belongs to. This is a shortcut to get control hierarchy up. This value is `NULL` when the control was not
     * inserted in any section.
     */
-  var Section: XSection = js.native
+  var Section: XSection
   
   /** specifies the width of the control. */
-  var Width: Double = js.native
+  var Width: Double
 }
 object XReportComponent {
   

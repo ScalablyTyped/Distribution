@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.RangeValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeView.toJSON()`. */
-@js.native
 trait RangeViewData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var cellAddresses: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var cellAddresses: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulas: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulas: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -40,7 +38,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -48,7 +46,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasR1C1: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasR1C1: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -56,7 +54,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -64,7 +62,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormat: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -72,7 +70,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var rows: js.UndefOr[js.Array[RangeViewData]] = js.native
+  var rows: js.UndefOr[js.Array[RangeViewData]] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var text: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var text: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     *
@@ -96,7 +94,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var valueTypes: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.native
+  var valueTypes: js.UndefOr[js.Array[js.Array[RangeValueType]]] = js.undefined
   
   /**
     *
@@ -104,7 +102,7 @@ trait RangeViewData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object RangeViewData {
   
@@ -118,7 +116,7 @@ object RangeViewData {
   implicit class RangeViewDataMutableBuilder[Self <: RangeViewData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCellAddresses(value: js.Array[js.Array[_]]): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
+    def setCellAddresses(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellAddressesUndefined: Self = StObject.set(x, "cellAddresses", js.undefined)
@@ -133,10 +131,10 @@ object RangeViewData {
     def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
     @scala.inline
-    def setFormulas(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
@@ -145,7 +143,7 @@ object RangeViewData {
     def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
@@ -166,7 +164,7 @@ object RangeViewData {
     def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
     @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
@@ -208,7 +206,7 @@ object RangeViewData {
     def setValueTypesVarargs(value: js.Array[RangeValueType]*): Self = StObject.set(x, "valueTypes", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStop extends StObject {
   
-  var Alignment: WdTabAlignment = js.native
+  var Alignment: WdTabAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val CustomTab: Boolean = js.native
+  val CustomTab: Boolean
   
-  var Leader: WdTabLeader = js.native
+  var Leader: WdTabLeader
   
-  val Next: TabStop = js.native
+  val Next: TabStop
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: Double = js.native
+  var Position: Double
   
-  val Previous: TabStop = js.native
+  val Previous: TabStop
   
   @JSName("Word.TabStop_typekey")
-  var WordDotTabStop_typekey: TabStop = js.native
+  var WordDotTabStop_typekey: TabStop
 }
 object TabStop {
   

@@ -7,39 +7,37 @@ import typings.devextreme.mod.DevExpress.ui.dxSortable
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPromise extends StObject {
   
-  var component: js.UndefOr[dxSortable] = js.native
+  var component: js.UndefOr[dxSortable] = js.undefined
   
-  var dropInsideItem: js.UndefOr[Boolean] = js.native
+  var dropInsideItem: js.UndefOr[Boolean] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
+  var fromComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
   
-  var fromData: js.UndefOr[js.Any] = js.native
+  var fromData: js.UndefOr[js.Any] = js.undefined
   
-  var fromIndex: js.UndefOr[Double] = js.native
+  var fromIndex: js.UndefOr[Double] = js.undefined
   
-  var itemData: js.UndefOr[js.Any] = js.native
+  var itemData: js.UndefOr[js.Any] = js.undefined
   
-  var itemElement: js.UndefOr[dxElement] = js.native
+  var itemElement: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.native
+  var promise: js.UndefOr[typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.undefined
   
-  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.native
+  var toComponent: js.UndefOr[dxSortable | dxDraggable] = js.undefined
   
-  var toData: js.UndefOr[js.Any] = js.native
+  var toData: js.UndefOr[js.Any] = js.undefined
   
-  var toIndex: js.UndefOr[Double] = js.native
+  var toIndex: js.UndefOr[Double] = js.undefined
 }
 object ModelPromise {
   

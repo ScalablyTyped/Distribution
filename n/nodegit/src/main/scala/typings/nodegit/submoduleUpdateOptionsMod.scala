@@ -5,22 +5,21 @@ import typings.nodegit.checkoutOptionsMod.CheckoutOptions
 import typings.nodegit.fetchOptionsMod.FetchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object submoduleUpdateOptionsMod {
   
-  @js.native
   trait SubmoduleUpdateOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.native
+    var checkoutOpts: js.UndefOr[CheckoutOptions] = js.undefined
     
-    var cloneCheckoutStrategy: js.UndefOr[Double] = js.native
+    var cloneCheckoutStrategy: js.UndefOr[Double] = js.undefined
     
-    var fetchOpts: js.UndefOr[FetchOptions] = js.native
+    var fetchOpts: js.UndefOr[FetchOptions] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object SubmoduleUpdateOptions {
     

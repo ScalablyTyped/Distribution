@@ -7,36 +7,28 @@ import typings.jimpPluginResize.jimpPluginResizeStrings.hermiteInterpolation
 import typings.jimpPluginResize.jimpPluginResizeStrings.nearestNeighbor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RESIZEBEZIER extends StObject {
     
-    var RESIZE_BEZIER: bezierInterpolation = js.native
+    var RESIZE_BEZIER: bezierInterpolation
     
-    var RESIZE_BICUBIC: bicubicInterpolation = js.native
+    var RESIZE_BICUBIC: bicubicInterpolation
     
-    var RESIZE_BILINEAR: bilinearInterpolation = js.native
+    var RESIZE_BILINEAR: bilinearInterpolation
     
-    var RESIZE_HERMITE: hermiteInterpolation = js.native
+    var RESIZE_HERMITE: hermiteInterpolation
     
     // resize methods
-    var RESIZE_NEAREST_NEIGHBOR: nearestNeighbor = js.native
+    var RESIZE_NEAREST_NEIGHBOR: nearestNeighbor
   }
   object RESIZEBEZIER {
     
     @scala.inline
-    def apply(
-      RESIZE_BEZIER: bezierInterpolation,
-      RESIZE_BICUBIC: bicubicInterpolation,
-      RESIZE_BILINEAR: bilinearInterpolation,
-      RESIZE_HERMITE: hermiteInterpolation,
-      RESIZE_NEAREST_NEIGHBOR: nearestNeighbor
-    ): RESIZEBEZIER = {
-      val __obj = js.Dynamic.literal(RESIZE_BEZIER = RESIZE_BEZIER.asInstanceOf[js.Any], RESIZE_BICUBIC = RESIZE_BICUBIC.asInstanceOf[js.Any], RESIZE_BILINEAR = RESIZE_BILINEAR.asInstanceOf[js.Any], RESIZE_HERMITE = RESIZE_HERMITE.asInstanceOf[js.Any], RESIZE_NEAREST_NEIGHBOR = RESIZE_NEAREST_NEIGHBOR.asInstanceOf[js.Any])
+    def apply(): RESIZEBEZIER = {
+      val __obj = js.Dynamic.literal(RESIZE_BEZIER = "bezierInterpolation", RESIZE_BICUBIC = "bicubicInterpolation", RESIZE_BILINEAR = "bilinearInterpolation", RESIZE_HERMITE = "hermiteInterpolation", RESIZE_NEAREST_NEIGHBOR = "nearestNeighbor")
       __obj.asInstanceOf[RESIZEBEZIER]
     }
     

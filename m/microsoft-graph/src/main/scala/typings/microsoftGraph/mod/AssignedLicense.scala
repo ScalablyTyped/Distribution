@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedLicense extends StObject {
   
   // A collection of the unique identifiers for plans that have been disabled.
-  var disabledPlans: js.UndefOr[js.Array[String]] = js.native
+  var disabledPlans: js.UndefOr[js.Array[String]] = js.undefined
   
   // The unique identifier for the SKU.
-  var skuId: js.UndefOr[NullableOption[String]] = js.native
+  var skuId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object AssignedLicense {
   

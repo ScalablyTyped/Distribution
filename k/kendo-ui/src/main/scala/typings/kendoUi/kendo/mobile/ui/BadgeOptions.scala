@@ -2,31 +2,29 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeOptions extends StObject {
   
-  var appearance: js.UndefOr[String] = js.native
+  var appearance: js.UndefOr[String] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ BadgeChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ BadgeChangeEvent, Unit]] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ BadgeEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ BadgeEvent, Unit]] = js.undefined
   
-  var look: js.UndefOr[String] = js.native
+  var look: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ BadgeEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ BadgeEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object BadgeOptions {
   

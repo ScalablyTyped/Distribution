@@ -2,13 +2,11 @@ package typings.ckeditor.CKEDITOR.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait list extends StObject {
   
-  def arrayToList(listArray: js.Any, database: js.Any, paragraphMode: js.Any, dir: js.Any): Unit = js.native
+  def arrayToList(listArray: js.Any, database: js.Any, paragraphMode: js.Any, dir: js.Any): Unit
   
   def listToArray(
     listNode: js.Any,
@@ -16,7 +14,7 @@ trait list extends StObject {
     baseArray: js.Any,
     baseIndentLevel: js.Any,
     grandparentNode: js.Any
-  ): Unit = js.native
+  ): Unit
 }
 object list {
   

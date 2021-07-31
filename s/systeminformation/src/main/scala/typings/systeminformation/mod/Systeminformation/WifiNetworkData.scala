@@ -2,31 +2,29 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WifiNetworkData extends StObject {
   
-  var bssid: String = js.native
+  var bssid: String
   
-  var channel: Double = js.native
+  var channel: Double
   
-  var frequency: Double = js.native
+  var frequency: Double
   
-  var mode: String = js.native
+  var mode: String
   
-  var quality: Double = js.native
+  var quality: Double
   
-  var rsnFlags: js.Array[String] = js.native
+  var rsnFlags: js.Array[String]
   
-  var security: js.Array[String] = js.native
+  var security: js.Array[String]
   
-  var signalLevel: Double = js.native
+  var signalLevel: Double
   
-  var ssid: String = js.native
+  var ssid: String
   
-  var wpaFlags: js.Array[String] = js.native
+  var wpaFlags: js.Array[String]
 }
 object WifiNetworkData {
   

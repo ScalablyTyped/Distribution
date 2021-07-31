@@ -13,23 +13,23 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod extends Shortcut {
   
   @JSImport("antd/lib/input/Search", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]] = js.native
+  val default: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]] = js.native
   
-  @js.native
-  trait SearchProps extends InputProps {
+  trait SearchProps
+    extends StObject
+       with InputProps {
     
-    var enterButton: js.UndefOr[ReactNode] = js.native
+    var enterButton: js.UndefOr[ReactNode] = js.undefined
     
-    var inputPrefixCls: js.UndefOr[String] = js.native
+    var inputPrefixCls: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     var onSearch: js.UndefOr[
         js.Function2[
@@ -39,7 +39,7 @@ object searchMod extends Shortcut {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SearchProps {
     
@@ -82,8 +82,8 @@ object searchMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]]
+  type _To = ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]]
   
   /* This means you don't have to write `default`, but can instead just say `searchMod.foo` */
-  override def _to: ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]] = default
+  override def _to: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]] = default
 }

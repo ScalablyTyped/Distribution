@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     *  The key for a developer-defined key:value pair for tagging an AWS resource. 
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     *  The value for a developer-defined key:value pair for tagging an AWS resource. 
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

@@ -6,22 +6,20 @@ import typings.reactBootstrapTypeahead.anon.PickCSSPropertiesboxSizin
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react.react.InputHTMLAttributes<'input'>, 'className' | 'style'> */
-@js.native
 trait AutosizeInputProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var inputClassName: js.UndefOr[String] = js.native
+  var inputClassName: js.UndefOr[String] = js.undefined
   
-  var inputRef: js.UndefOr[LegacyRef[HTMLInputElement]] = js.native
+  var inputRef: js.UndefOr[LegacyRef[HTMLInputElement]] = js.undefined
   
-  var inputStyle: js.UndefOr[PickCSSPropertiesboxSizin] = js.native
+  var inputStyle: js.UndefOr[PickCSSPropertiesboxSizin] = js.undefined
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object AutosizeInputProps {
   

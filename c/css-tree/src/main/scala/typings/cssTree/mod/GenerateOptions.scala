@@ -2,15 +2,13 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateOptions extends StObject {
   
-  var decorator: js.UndefOr[js.Function1[/* handlers */ GenerateHandlers, GenerateHandlers]] = js.native
+  var decorator: js.UndefOr[js.Function1[/* handlers */ GenerateHandlers, GenerateHandlers]] = js.undefined
   
-  var sourceMap: js.UndefOr[Boolean] = js.native
+  var sourceMap: js.UndefOr[Boolean] = js.undefined
 }
 object GenerateOptions {
   

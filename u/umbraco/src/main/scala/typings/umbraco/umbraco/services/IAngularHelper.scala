@@ -4,7 +4,6 @@ import typings.angular.mod.IFormController
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * Some angular helper/extension methods
   */
-@js.native
 trait IAngularHelper extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait IAngularHelper extends StObject {
     * @description
     * Returns the current form object applied to the scope or null if one is not found
     */
-  def getCurrentForm(scope: IScope): js.Any = js.native
+  def getCurrentForm(scope: IScope): js.Any
   
   /**
     * @ngdoc function
@@ -42,7 +40,7 @@ trait IAngularHelper extends StObject {
     *
     * @param {string} formName The form name to assign
     */
-  def getNullForm(formName: String): IFormController = js.native
+  def getNullForm(formName: String): IFormController
   
   /**
     * @ngdoc function
@@ -54,7 +52,7 @@ trait IAngularHelper extends StObject {
     * This will validate that the current scope has an assigned form object, if it doesn't an exception is thrown, if
     * it does we return the form object.
     */
-  def getRequiredCurrentForm(scope: IScope): js.Object = js.native
+  def getRequiredCurrentForm(scope: IScope): js.Object
   
   /**
     * @ngdoc function
@@ -68,7 +66,7 @@ trait IAngularHelper extends StObject {
     *
     * @param {object} objReject The object to send back with the promise rejection
     */
-  def rejectedPromise(objReject: js.Object): Unit = js.native
+  def rejectedPromise(objReject: js.Object): Unit
   
   /**
     * @ngdoc function
@@ -79,7 +77,7 @@ trait IAngularHelper extends StObject {
     * @description
     * This checks if a digest/apply is already occuring, if not it will force an apply call
     */
-  def safeApply(scope: IScope, fn: js.Function): Unit = js.native
+  def safeApply(scope: IScope, fn: js.Function): Unit
 }
 object IAngularHelper {
   

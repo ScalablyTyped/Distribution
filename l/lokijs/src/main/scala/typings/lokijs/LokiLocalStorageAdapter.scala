@@ -3,14 +3,12 @@ package typings.lokijs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A loki persistence adapter which persists to web browser's local storage object
   * @constructor LokiLocalStorageAdapter
   */
-@js.native
 trait LokiLocalStorageAdapter extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait LokiLocalStorageAdapter extends StObject {
     * @param dbname - the filename of the database to delete
     * @param callback - the callback to handle the result
     */
-  def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def deleteDatabase(dbname: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
   
   /**
     * loadDatabase() - Load data from localstorage
     * @param dbname - the name of the database to load
     * @param callback - the callback to handle the result
     */
-  def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ js.Any | Error, Unit]): Unit = js.native
+  def loadDatabase(dbname: String, callback: js.Function1[/* dataOrError */ js.Any | Error, Unit]): Unit
   
   /**
     * saveDatabase() - save data to localstorage, will throw an error if the file can't be saved
@@ -34,7 +32,7 @@ trait LokiLocalStorageAdapter extends StObject {
     * @param dbname - the filename of the database to load
     * @param callback - the callback to handle the result
     */
-  def saveDatabase(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit = js.native
+  def saveDatabase(dbname: String, dbstring: String, callback: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Unit
 }
 object LokiLocalStorageAdapter {
   

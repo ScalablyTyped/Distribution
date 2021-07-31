@@ -2,7 +2,6 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait ViewStrategy_ extends StObject {
   def loadViewFactory(
     viewEngine: ViewEngine,
     compileInstruction: ViewCompileInstruction,
-    loadContext: js.UndefOr[scala.Nothing],
+    loadContext: Unit,
     target: js.Any
   ): js.Promise[ViewFactory] = js.native
   def loadViewFactory(

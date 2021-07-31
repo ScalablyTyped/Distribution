@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
-@js.native
 trait PlusGeolocationCoordinates extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var accuracy: js.UndefOr[Double] = js.native
+  var accuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * 海拔信息
@@ -27,7 +25,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /**
     * 海拔的精确度信息
@@ -35,7 +33,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var altitudeAccuracy: js.UndefOr[Double] = js.native
+  var altitudeAccuracy: js.UndefOr[Double] = js.undefined
   
   /**
     * 表示设备移动的方向
@@ -43,7 +41,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   /**
     * 坐标纬度值
@@ -51,7 +49,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /**
     * 坐标经度值
@@ -59,7 +57,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   /**
     * 表示设备移动的速度
@@ -67,7 +65,7 @@ trait PlusGeolocationCoordinates extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object PlusGeolocationCoordinates {
   

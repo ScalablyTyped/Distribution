@@ -5,26 +5,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceInstancegroupmanagersResize extends StandardParameters {
+trait ParamsResourceInstancegroupmanagersResize
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name of the managed instance group.
     */
-  var instanceGroupManager: js.UndefOr[String] = js.native
+  var instanceGroupManager: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -38,7 +38,7 @@ trait ParamsResourceInstancegroupmanagersResize extends StandardParameters {
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of running instances that the managed instance group should
@@ -46,12 +46,12 @@ trait ParamsResourceInstancegroupmanagersResize extends StandardParameters {
     * instances to maintain the number of instances specified by this
     * parameter.
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the zone where the managed instance group is located.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceInstancegroupmanagersResize {
   

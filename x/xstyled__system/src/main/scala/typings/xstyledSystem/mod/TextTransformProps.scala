@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTransformProps extends StObject {
   
   val textTransform: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TextTransformProps {
   
@@ -28,7 +26,7 @@ object TextTransformProps {
     @scala.inline
     def setTextTransform(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any
         ]
     ): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object TextTransformProps {
     def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
     
     @scala.inline
-    def setTextTransformVarargs(value: js.Any*): Self = StObject.set(x, "textTransform", js.Array(value :_*))
+    def setTextTransformVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextTransform */ js.Any)*
+    ): Self = StObject.set(x, "textTransform", js.Array(value :_*))
   }
 }

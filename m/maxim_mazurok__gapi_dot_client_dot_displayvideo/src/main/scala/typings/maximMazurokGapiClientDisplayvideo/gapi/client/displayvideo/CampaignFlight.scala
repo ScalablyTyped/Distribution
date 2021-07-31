@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignFlight extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait CampaignFlight extends StObject {
     * `start_date` is required and must be the current date or later. * `end_date` is optional. If specified, it must be the `start_date` or later. * Any specified date must be before the
     * year 2037.
     */
-  var plannedDates: js.UndefOr[DateRange] = js.native
+  var plannedDates: js.UndefOr[DateRange] = js.undefined
   
   /**
     * The amount the campaign is expected to spend for its given planned_dates. This will not limit serving, but will be used for tracking spend in the DV360 UI. The amount is in micros.
     * Must be greater than or equal to 0. For example, 500000000 represents 500 standard units of the currency.
     */
-  var plannedSpendAmountMicros: js.UndefOr[String] = js.native
+  var plannedSpendAmountMicros: js.UndefOr[String] = js.undefined
 }
 object CampaignFlight {
   

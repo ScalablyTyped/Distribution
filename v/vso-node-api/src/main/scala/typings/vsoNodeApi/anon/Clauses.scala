@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clauses extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var clauses: scala.Double = js.native
+  var clauses: scala.Double
   
-  var minimal: scala.Double = js.native
+  var minimal: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var wiql: scala.Double = js.native
+  var wiql: scala.Double
 }
 object Clauses {
   

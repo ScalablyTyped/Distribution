@@ -4,7 +4,6 @@ import typings.endemolshinegroupCosmiconfigTypescriptLoader.anon.Message
 import typings.makeError.mod.BaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptCompileErrorMod {
@@ -17,9 +16,12 @@ object typeScriptCompileErrorMod {
   /* static members */
   object default {
     
-    @JSImport("@endemolshinegroup/cosmiconfig-typescript-loader/dist/Errors/TypeScriptCompileError", "default.fromError")
+    @JSImport("@endemolshinegroup/cosmiconfig-typescript-loader/dist/Errors/TypeScriptCompileError", JSImport.Default)
     @js.native
-    def fromError(error: TypeScriptCompileErrorProps): TypeScriptCompileError = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromError(error: TypeScriptCompileErrorProps): TypeScriptCompileError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromError")(error.asInstanceOf[js.Any]).asInstanceOf[TypeScriptCompileError]
   }
   
   @js.native
@@ -28,10 +30,9 @@ object typeScriptCompileErrorMod {
     def toObject(): Message = js.native
   }
   
-  @js.native
   trait TypeScriptCompileErrorProps extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object TypeScriptCompileErrorProps {
     

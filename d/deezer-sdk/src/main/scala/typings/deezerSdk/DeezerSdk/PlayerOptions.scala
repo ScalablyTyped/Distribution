@@ -2,7 +2,6 @@ package typings.deezerSdk.DeezerSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link https://developers.deezer.com/sdk/javascript/player | Initialize a player}\
   * {@link https://developers.deezer.com/musicplugins/player | Widget player}
   */
-@js.native
 trait PlayerOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlayerOptions extends StObject {
     * {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}\
     * {@link https://developers.deezer.com/musicplugins/player | Widget player}
     */
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the div that will contain the widget player
@@ -34,7 +32,7 @@ trait PlayerOptions extends StObject {
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  val container: js.UndefOr[String] = js.native
+  val container: js.UndefOr[String] = js.undefined
   
   /**
     * The layout format of the widget
@@ -45,7 +43,7 @@ trait PlayerOptions extends StObject {
     * {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}\
     * {@link https://developers.deezer.com/musicplugins/player | Widget player}
     */
-  val format: js.UndefOr[WidgetFormat] = js.native
+  val format: js.UndefOr[WidgetFormat] = js.undefined
   
   /**
     * The height of the player in pixels
@@ -54,7 +52,7 @@ trait PlayerOptions extends StObject {
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
   /**
     * The general layout of the widget
@@ -65,14 +63,14 @@ trait PlayerOptions extends StObject {
     * {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}\
     * {@link https://developers.deezer.com/musicplugins/player | Widget player}
     */
-  val layout: js.UndefOr[WidgetLayout] = js.native
+  val layout: js.UndefOr[WidgetLayout] = js.undefined
   
   /**
     * The callback function executed after the player has loaded.
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  var onload: js.UndefOr[js.Function1[/* state */ PlayerState, Unit]] = js.native
+  var onload: js.UndefOr[js.Function1[/* state */ PlayerState, Unit]] = js.undefined
   
   /**
     * Whether to display the playlist from the player
@@ -81,7 +79,7 @@ trait PlayerOptions extends StObject {
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  val playlist: js.UndefOr[Boolean] = js.native
+  val playlist: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layout size of the widget
@@ -90,7 +88,7 @@ trait PlayerOptions extends StObject {
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  val size: js.UndefOr[WidgetSize] = js.native
+  val size: js.UndefOr[WidgetSize] = js.undefined
   
   /**
     * The width of the player in pixels
@@ -99,7 +97,7 @@ trait PlayerOptions extends StObject {
     *
     * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
     */
-  val width: js.UndefOr[Double] = js.native
+  val width: js.UndefOr[Double] = js.undefined
 }
 object PlayerOptions {
   

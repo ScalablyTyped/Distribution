@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnStaticRoute extends StObject {
   
   /**
     * The CIDR block associated with the local subnet of the customer data center.
     */
-  var DestinationCidrBlock: js.UndefOr[String] = js.native
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates how the routes were provided.
     */
-  var Source: js.UndefOr[VpnStaticRouteSource] = js.native
+  var Source: js.UndefOr[VpnStaticRouteSource] = js.undefined
   
   /**
     * The current state of the static route.
     */
-  var State: js.UndefOr[VpnState] = js.native
+  var State: js.UndefOr[VpnState] = js.undefined
 }
 object VpnStaticRoute {
   

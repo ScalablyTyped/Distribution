@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLivebroadcastsUpdate extends StandardParameters {
+trait ParamsResourceLivebroadcastsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -29,7 +29,7 @@ trait ParamsResourceLivebroadcastsUpdate extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Note:
@@ -49,7 +49,7 @@ trait ParamsResourceLivebroadcastsUpdate extends StandardParameters {
     * without having to provide authentication credentials for each separate
     * channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter serves two purposes in this operation. It identifies
@@ -66,12 +66,12 @@ trait ParamsResourceLivebroadcastsUpdate extends StandardParameters {
     * not specify a value, the existing privacy setting will be removed and the
     * broadcast will revert to the default privacy setting.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaLiveBroadcast] = js.native
+  var requestBody: js.UndefOr[SchemaLiveBroadcast] = js.undefined
 }
 object ParamsResourceLivebroadcastsUpdate {
   

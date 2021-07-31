@@ -2,31 +2,29 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEvaluationInput extends StObject {
   
   /**
     * The ID of the DataSource for the evaluation. The schema of the DataSource must match the schema used to create the MLModel.
     */
-  var EvaluationDataSourceId: EntityId = js.native
+  var EvaluationDataSourceId: EntityId
   
   /**
     * A user-supplied ID that uniquely identifies the Evaluation.
     */
-  var EvaluationId: EntityId = js.native
+  var EvaluationId: EntityId
   
   /**
     * A user-supplied name or description of the Evaluation.
     */
-  var EvaluationName: js.UndefOr[EntityName] = js.native
+  var EvaluationName: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The ID of the MLModel to evaluate. The schema used in creating the MLModel must match the schema of the DataSource used in the Evaluation.
     */
-  var MLModelId: EntityId = js.native
+  var MLModelId: EntityId
 }
 object CreateEvaluationInput {
   

@@ -2,25 +2,23 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LazyOptions extends StObject {
   
-  var elementClass: js.UndefOr[String] = js.native
+  var elementClass: js.UndefOr[String] = js.undefined
   
-  var loadOnTransitionStart: js.UndefOr[Boolean] = js.native
+  var loadOnTransitionStart: js.UndefOr[Boolean] = js.undefined
   
-  var loadPrevNext: js.UndefOr[Boolean] = js.native
+  var loadPrevNext: js.UndefOr[Boolean] = js.undefined
   
-  var loadPrevNextAmount: js.UndefOr[Double] = js.native
+  var loadPrevNextAmount: js.UndefOr[Double] = js.undefined
   
-  var loadedClass: js.UndefOr[String] = js.native
+  var loadedClass: js.UndefOr[String] = js.undefined
   
-  var loadingClass: js.UndefOr[String] = js.native
+  var loadingClass: js.UndefOr[String] = js.undefined
   
-  var preloaderClass: js.UndefOr[String] = js.native
+  var preloaderClass: js.UndefOr[String] = js.undefined
 }
 object LazyOptions {
   

@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for running an action.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAction extends XInterface {
+trait XAction
+  extends StObject
+     with XInterface {
   
   /**
     * Action to be done.
     * @returns result
     * @throws com::sun::star::uno::Exception any UNO exception may be thrown
     */
-  def run(): js.Any = js.native
+  def run(): js.Any
 }
 object XAction {
   

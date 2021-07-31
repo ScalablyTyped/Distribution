@@ -2,35 +2,33 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxPivotValuePoint...
   */
-@js.native
 trait INxPivotValuePoint extends StObject {
   
   /**
     * NxAttribute expressions values.
     */
-  var qAttrExps: INxAttributeExpressionValues = js.native
+  var qAttrExps: INxAttributeExpressionValues
   
   /**
     * Label of the cell.
     * >> This parameter is optional.
     */
-  var qLabel: js.UndefOr[String] = js.native
+  var qLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the cell.
     */
-  var qNum: Double = js.native
+  var qNum: Double
   
   /**
     * Some text related to the cell.
     */
-  var qText: String = js.native
+  var qText: String
   
   /**
     * Type of the cell.
@@ -45,7 +43,7 @@ trait INxPivotValuePoint extends StObject {
     *    R for NX_DIM_CELL_ROOT. Applies to root node.
     *    U for NX_DIM_CELL_NULL. Applies to Null values in the data matrix.
     */
-  var qType: NxCellType = js.native
+  var qType: NxCellType
 }
 object INxPivotValuePoint {
   

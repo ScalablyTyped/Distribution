@@ -2,27 +2,25 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugOnly extends StObject {
   
-  var debugOnly: js.UndefOr[Boolean] = js.native
+  var debugOnly: js.UndefOr[Boolean] = js.undefined
   
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
-  var git: js.UndefOr[String] = js.native
+  var git: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var prodOnly: js.UndefOr[Boolean] = js.native
+  var prodOnly: js.UndefOr[Boolean] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var testOnly: js.UndefOr[Boolean] = js.native
+  var testOnly: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DebugOnly {
   

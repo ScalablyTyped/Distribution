@@ -2,18 +2,18 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationInlineFragment extends NormalizationSelection {
+trait NormalizationInlineFragment
+  extends StObject
+     with NormalizationSelection {
   
-  val kind: String = js.native
+  val kind: String
   
   // 'InlineFragment';
-  val selections: js.Array[NormalizationSelection] = js.native
+  val selections: js.Array[NormalizationSelection]
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object NormalizationInlineFragment {
   

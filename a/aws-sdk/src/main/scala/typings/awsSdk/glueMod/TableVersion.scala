@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableVersion extends StObject {
   
   /**
     * The table in question.
     */
-  var Table: js.UndefOr[typings.awsSdk.glueMod.Table] = js.native
+  var Table: js.UndefOr[typings.awsSdk.glueMod.Table] = js.undefined
   
   /**
     * The ID value that identifies this table version. A VersionId is a string representation of an integer. Each version is incremented by 1.
     */
-  var VersionId: js.UndefOr[VersionString] = js.native
+  var VersionId: js.UndefOr[VersionString] = js.undefined
 }
 object TableVersion {
   

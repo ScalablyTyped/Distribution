@@ -7,13 +7,13 @@ import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsArray
 import typings.kendoUi.kendo.data.DataSourceSchemaModelWithFieldsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.data.GanttDependency")
 @js.native
 class GanttDependency ()
-  extends typings.kendoUi.kendo.data.GanttDependency {
+  extends StObject
+     with typings.kendoUi.kendo.data.GanttDependency {
   def this(data: js.Any) = this()
 }
 object GanttDependency {
@@ -23,13 +23,11 @@ object GanttDependency {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.data.GanttDependency.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttDependency with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsArray): TypeofGanttDependency & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttDependency & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency])]
   /* static member */
-  @JSGlobal("kendo.data.GanttDependency.define")
-  @js.native
-  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttDependency with (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = js.native
+  @scala.inline
+  def define(options: DataSourceSchemaModelWithFieldsObject): TypeofGanttDependency & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency]) = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(options.asInstanceOf[js.Any]).asInstanceOf[TypeofGanttDependency & (Instantiable1[/* data */ js.UndefOr[js.Any], typings.kendoUi.kendo.data.GanttDependency])]
   
   /* static member */
   @JSGlobal("kendo.data.GanttDependency.fields")

@@ -13,10 +13,13 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("react-toastify/dist/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined {[ key in react-toastify.react-toastify/dist/utils/constant.KeyOfPosition ]: react-toastify.react-toastify/dist/types.ToastPosition} */
   object POSITION {
@@ -106,84 +109,67 @@ object utilsMod {
     def WARNING_=(x: TypeOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARNING")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-toastify/dist/utils", "canBeRendered")
-  @js.native
-  def canBeRendered[T](content: T): Boolean = js.native
+  @scala.inline
+  def canBeRendered[T](content: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canBeRendered")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("react-toastify/dist/utils", "canUseDom")
   @js.native
   val canUseDom: Boolean = js.native
   
-  @JSImport("react-toastify/dist/utils", "collapseToast")
-  @js.native
-  def collapseToast(node: HTMLElement, done: js.Function0[Unit]): Unit = js.native
-  @JSImport("react-toastify/dist/utils", "collapseToast")
-  @js.native
-  def collapseToast(node: HTMLElement, done: js.Function0[Unit], duration: DEFAULT): Unit = js.native
+  @scala.inline
+  def collapseToast(node: HTMLElement, done: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToast")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def collapseToast(node: HTMLElement, done: js.Function0[Unit], duration: DEFAULT): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collapseToast")(node.asInstanceOf[js.Any], done.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-toastify/dist/utils", "cssTransition")
-  @js.native
+  @scala.inline
   def cssTransition(hasEnterExitDurationAppendPositionCollapseCollapseDuration: CSSTransitionProps): js.Function1[
     /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
     Element
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssTransition")(hasEnterExitDurationAppendPositionCollapseCollapseDuration.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasChildrenPositionPreventExitTransitionDoneProps */ ToastTransitionProps, 
+    Element
+  ]]
   
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay(): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay(toastAutoClose: js.UndefOr[scala.Nothing], containerAutoClose: Double): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay(toastAutoClose: Double): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay(toastAutoClose: Double, containerAutoClose: Double): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay_false(toastAutoClose: js.UndefOr[scala.Nothing], containerAutoClose: `false`): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay_false(toastAutoClose: Double, containerAutoClose: `false`): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay_false(toastAutoClose: `false`): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: Double): js.UndefOr[Double | `false`] = js.native
-  @JSImport("react-toastify/dist/utils", "getAutoCloseDelay")
-  @js.native
-  def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: `false`): js.UndefOr[Double | `false`] = js.native
+  @scala.inline
+  def getAutoCloseDelay(): js.UndefOr[Double | `false`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")().asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay(toastAutoClose: Double): js.UndefOr[Double | `false`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay(toastAutoClose: Double, containerAutoClose: Double): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay(toastAutoClose: Unit, containerAutoClose: Double): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   
-  @JSImport("react-toastify/dist/utils", "hasToastId")
-  @js.native
-  def hasToastId(): js.UndefOr[String | Double | `true`] = js.native
-  @JSImport("react-toastify/dist/utils", "hasToastId")
-  @js.native
-  def hasToastId(toastId: Id): js.UndefOr[String | Double | `true`] = js.native
+  @scala.inline
+  def getAutoCloseDelay_false(toastAutoClose: Double, containerAutoClose: `false`): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay_false(toastAutoClose: Unit, containerAutoClose: `false`): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay_false(toastAutoClose: `false`): js.UndefOr[Double | `false`] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: Double): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
+  @scala.inline
+  def getAutoCloseDelay_false(toastAutoClose: `false`, containerAutoClose: `false`): js.UndefOr[Double | `false`] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoCloseDelay")(toastAutoClose.asInstanceOf[js.Any], containerAutoClose.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double | `false`]]
   
-  @JSImport("react-toastify/dist/utils", "isBool")
-  @js.native
-  def isBool(v: js.Any): /* is std.Boolean */ Boolean = js.native
+  @scala.inline
+  def hasToastId(): js.UndefOr[String | Double | `true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasToastId")().asInstanceOf[js.UndefOr[String | Double | `true`]]
+  @scala.inline
+  def hasToastId(toastId: Id): js.UndefOr[String | Double | `true`] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasToastId")(toastId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Double | `true`]]
   
-  @JSImport("react-toastify/dist/utils", "isFn")
-  @js.native
-  def isFn(v: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isBool(v: js.Any): /* is std.Boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBool")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Boolean */ Boolean]
   
-  @JSImport("react-toastify/dist/utils", "isNum")
-  @js.native
-  def isNum(v: js.Any): /* is std.Number */ Boolean = js.native
+  @scala.inline
+  def isFn(v: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFn")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("react-toastify/dist/utils", "isStr")
-  @js.native
-  def isStr(v: js.Any): /* is std.String */ Boolean = js.native
+  @scala.inline
+  def isNum(v: js.Any): /* is std.Number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNum")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.Number */ Boolean]
   
-  @JSImport("react-toastify/dist/utils", "objectValues")
-  @js.native
-  def objectValues[T](obj: Record[String, T]): js.Array[T] = js.native
+  @scala.inline
+  def isStr(v: js.Any): /* is std.String */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(v.asInstanceOf[js.Any]).asInstanceOf[/* is std.String */ Boolean]
   
-  @JSImport("react-toastify/dist/utils", "parseClassName")
-  @js.native
-  def parseClassName(v: js.Any): js.Any = js.native
+  @scala.inline
+  def objectValues[T](obj: Record[String, T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def parseClassName(v: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseClassName")(v.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

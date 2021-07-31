@@ -2,23 +2,21 @@ package typings.domSerial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialOptions extends StObject {
   
-  var baudRate: Double = js.native
+  var baudRate: Double
   
-  var bufferSize: js.UndefOr[Double] = js.native
+  var bufferSize: js.UndefOr[Double] = js.undefined
   
-  var dataBits: js.UndefOr[Double] = js.native
+  var dataBits: js.UndefOr[Double] = js.undefined
   
-  var flowControl: js.UndefOr[FlowControlType] = js.native
+  var flowControl: js.UndefOr[FlowControlType] = js.undefined
   
-  var parity: js.UndefOr[ParityType] = js.native
+  var parity: js.UndefOr[ParityType] = js.undefined
   
-  var stopBits: js.UndefOr[Double] = js.native
+  var stopBits: js.UndefOr[Double] = js.undefined
 }
 object SerialOptions {
   

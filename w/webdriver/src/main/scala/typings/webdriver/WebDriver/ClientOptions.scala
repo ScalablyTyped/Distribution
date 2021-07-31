@@ -1,60 +1,75 @@
 package typings.webdriver.WebDriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientOptions extends js.Object {
-  var capabilities: DesiredCapabilities = js.native
-  var isAndroid: Boolean = js.native
-  var isChrome: Boolean = js.native
-  var isIOS: Boolean = js.native
-  var isMobile: Boolean = js.native
-  var isW3C: Boolean = js.native
-  var sessionId: String = js.native
+trait ClientOptions extends StObject {
+  
+  var capabilities: DesiredCapabilities
+  
+  var isAndroid: Boolean
+  
+  var isChrome: Boolean
+  
+  var isDevTools: Boolean
+  
+  var isIOS: Boolean
+  
+  var isMobile: Boolean
+  
+  var isSauce: Boolean
+  
+  var isW3C: Boolean
+  
+  var sessionId: String
 }
-
 object ClientOptions {
+  
   @scala.inline
   def apply(
     capabilities: DesiredCapabilities,
     isAndroid: Boolean,
     isChrome: Boolean,
+    isDevTools: Boolean,
     isIOS: Boolean,
     isMobile: Boolean,
+    isSauce: Boolean,
     isW3C: Boolean,
     sessionId: String
   ): ClientOptions = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], isAndroid = isAndroid.asInstanceOf[js.Any], isChrome = isChrome.asInstanceOf[js.Any], isDevTools = isDevTools.asInstanceOf[js.Any], isIOS = isIOS.asInstanceOf[js.Any], isMobile = isMobile.asInstanceOf[js.Any], isSauce = isSauce.asInstanceOf[js.Any], isW3C = isW3C.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientOptions]
   }
-  @scala.inline
-  implicit class ClientOptionsOps[Self <: ClientOptions] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setCapabilities(value: DesiredCapabilities): Self = this.set("capabilities", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsAndroid(value: Boolean): Self = this.set("isAndroid", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsChrome(value: Boolean): Self = this.set("isChrome", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsIOS(value: Boolean): Self = this.set("isIOS", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsMobile(value: Boolean): Self = this.set("isMobile", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setIsW3C(value: Boolean): Self = this.set("isW3C", value.asInstanceOf[js.Any])
-    @scala.inline
-    def setSessionId(value: String): Self = this.set("sessionId", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCapabilities(value: DesiredCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsDevTools(value: Boolean): Self = StObject.set(x, "isDevTools", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsIOS(value: Boolean): Self = StObject.set(x, "isIOS", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsSauce(value: Boolean): Self = StObject.set(x, "isSauce", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsW3C(value: Boolean): Self = StObject.set(x, "isW3C", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+  }
 }
-

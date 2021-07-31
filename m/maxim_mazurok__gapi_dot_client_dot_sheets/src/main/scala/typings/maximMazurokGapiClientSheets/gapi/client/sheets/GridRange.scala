@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridRange extends StObject {
   
   /** The end column (exclusive) of the range, or not set if unbounded. */
-  var endColumnIndex: js.UndefOr[Double] = js.native
+  var endColumnIndex: js.UndefOr[Double] = js.undefined
   
   /** The end row (exclusive) of the range, or not set if unbounded. */
-  var endRowIndex: js.UndefOr[Double] = js.native
+  var endRowIndex: js.UndefOr[Double] = js.undefined
   
   /** The sheet this range is on. */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
   
   /** The start column (inclusive) of the range, or not set if unbounded. */
-  var startColumnIndex: js.UndefOr[Double] = js.native
+  var startColumnIndex: js.UndefOr[Double] = js.undefined
   
   /** The start row (inclusive) of the range, or not set if unbounded. */
-  var startRowIndex: js.UndefOr[Double] = js.native
+  var startRowIndex: js.UndefOr[Double] = js.undefined
 }
 object GridRange {
   

@@ -2,31 +2,29 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The namespace of the attribute.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * The namespace-related prefix of the attribute.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the attribute.
     */
-  var value: String = js.native
+  var value: String
 }
 object Attribute {
   

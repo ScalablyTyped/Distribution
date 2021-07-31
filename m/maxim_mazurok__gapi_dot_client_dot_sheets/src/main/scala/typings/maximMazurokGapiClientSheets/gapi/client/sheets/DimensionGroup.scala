@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionGroup extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait DimensionGroup extends StObject {
     * dimensions within the group are hidden, since a dimension's visibility can change independently from this group property. However, when this property is updated, all dimensions
     * within it are set to hidden if this field is true, or set to visible if this field is false.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /** The depth of the group, representing how many groups have a range that wholly contains the range of this group. */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /** The range over which this group exists. */
-  var range: js.UndefOr[DimensionRange] = js.native
+  var range: js.UndefOr[DimensionRange] = js.undefined
 }
 object DimensionGroup {
   

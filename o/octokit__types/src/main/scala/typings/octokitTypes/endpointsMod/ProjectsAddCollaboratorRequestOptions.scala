@@ -6,30 +6,23 @@ import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsAddCollaboratorRequestOptions extends StObject {
   
-  var headers: RequestHeaders = js.native
+  var headers: RequestHeaders
   
-  var method: PUT = js.native
+  var method: PUT
   
-  var request: RequestRequestOptions = js.native
+  var request: RequestRequestOptions
   
-  var url: SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername = js.native
+  var url: SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername
 }
 object ProjectsAddCollaboratorRequestOptions {
   
   @scala.inline
-  def apply(
-    headers: RequestHeaders,
-    method: PUT,
-    request: RequestRequestOptions,
-    url: SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername
-  ): ProjectsAddCollaboratorRequestOptions = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsAddCollaboratorRequestOptions = {
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/projects/:project_id/collaborators/:username")
     __obj.asInstanceOf[ProjectsAddCollaboratorRequestOptions]
   }
   

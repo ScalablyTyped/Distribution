@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWebACLRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafregionalMod.ChangeToken
   
   /**
     * The WebACLId of the WebACL that you want to delete. WebACLId is returned by CreateWebACL and by ListWebACLs.
     */
-  var WebACLId: ResourceId = js.native
+  var WebACLId: ResourceId
 }
 object DeleteWebACLRequest {
   

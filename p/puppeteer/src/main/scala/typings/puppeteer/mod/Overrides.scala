@@ -2,19 +2,17 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overrides extends StObject {
   
-  var headers: js.UndefOr[Headers] = js.native
+  var headers: js.UndefOr[Headers] = js.undefined
   
-  var method: js.UndefOr[HttpMethod] = js.native
+  var method: js.UndefOr[HttpMethod] = js.undefined
   
-  var postData: js.UndefOr[String] = js.native
+  var postData: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Overrides {
   

@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XComponentContext
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Factory interface to create instances of an implementation of a service specification.
   * @see XInitialization
   */
-@js.native
-trait XSingleComponentFactory extends XInterface {
+trait XSingleComponentFactory
+  extends StObject
+     with XInterface {
   
   /**
     * Creates an instance of a component and initializes the new instance with the given arguments and context.
@@ -22,21 +22,21 @@ trait XSingleComponentFactory extends XInterface {
     * @param Context the instance gets its deployment values from this
     * @returns component instance
     */
-  def createInstanceWithArgumentsAndContext(Arguments: SeqEquiv[_], Context: XComponentContext): XInterface = js.native
+  def createInstanceWithArgumentsAndContext(Arguments: SeqEquiv[js.Any], Context: XComponentContext): XInterface
   
   /**
     * Creates an instance of a service implementation.
     * @param Context the instance gets its deployment values from this
     * @returns component instance
     */
-  def createInstanceWithContext(Context: XComponentContext): XInterface = js.native
+  def createInstanceWithContext(Context: XComponentContext): XInterface
 }
 object XSingleComponentFactory {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    createInstanceWithArgumentsAndContext: (SeqEquiv[_], XComponentContext) => XInterface,
+    createInstanceWithArgumentsAndContext: (SeqEquiv[js.Any], XComponentContext) => XInterface,
     createInstanceWithContext: XComponentContext => XInterface,
     queryInterface: `type` => js.Any,
     release: () => Unit
@@ -49,7 +49,7 @@ object XSingleComponentFactory {
   implicit class XSingleComponentFactoryMutableBuilder[Self <: XSingleComponentFactory] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[_], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
+    def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
     
     @scala.inline
     def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction1(value))

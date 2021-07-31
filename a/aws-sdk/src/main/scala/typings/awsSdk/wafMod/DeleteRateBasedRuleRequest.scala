@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRateBasedRuleRequest extends StObject {
   
   /**
     * The value returned by the most recent call to GetChangeToken.
     */
-  var ChangeToken: typings.awsSdk.wafMod.ChangeToken = js.native
+  var ChangeToken: typings.awsSdk.wafMod.ChangeToken
   
   /**
     * The RuleId of the RateBasedRule that you want to delete. RuleId is returned by CreateRateBasedRule and by ListRateBasedRules.
     */
-  var RuleId: ResourceId = js.native
+  var RuleId: ResourceId
 }
 object DeleteRateBasedRuleRequest {
   

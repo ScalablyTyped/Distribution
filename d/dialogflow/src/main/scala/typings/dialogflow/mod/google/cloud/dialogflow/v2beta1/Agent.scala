@@ -10,7 +10,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Agent. */
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Agent.
   * @param [properties] Properties to set
   */
-class Agent () extends IAgent {
+class Agent ()
+  extends StObject
+     with IAgent {
   def this(properties: IAgent) = this()
   
   /** Agent apiVersion. */
@@ -79,6 +80,10 @@ class Agent () extends IAgent {
 }
 object Agent {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait ApiVersion extends StObject
   /** ApiVersion enum. */
@@ -87,23 +92,31 @@ object Agent {
   object ApiVersion extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ApiVersion with Double] = js.native
+    def apply(value: Double): js.UndefOr[ApiVersion & Double] = js.native
     
     @js.native
-    sealed trait API_VERSION_UNSPECIFIED extends ApiVersion
-    /* 0 */ val API_VERSION_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_UNSPECIFIED with Double = js.native
+    sealed trait API_VERSION_UNSPECIFIED
+      extends StObject
+         with ApiVersion
+    /* 0 */ val API_VERSION_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait API_VERSION_V1 extends ApiVersion
-    /* 1 */ val API_VERSION_V1: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V1 with Double = js.native
+    sealed trait API_VERSION_V1
+      extends StObject
+         with ApiVersion
+    /* 1 */ val API_VERSION_V1: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V1 & Double = js.native
     
     @js.native
-    sealed trait API_VERSION_V2 extends ApiVersion
-    /* 2 */ val API_VERSION_V2: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V2 with Double = js.native
+    sealed trait API_VERSION_V2
+      extends StObject
+         with ApiVersion
+    /* 2 */ val API_VERSION_V2: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V2 & Double = js.native
     
     @js.native
-    sealed trait API_VERSION_V2_BETA_1 extends ApiVersion
-    /* 3 */ val API_VERSION_V2_BETA_1: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V2_BETA_1 with Double = js.native
+    sealed trait API_VERSION_V2_BETA_1
+      extends StObject
+         with ApiVersion
+    /* 3 */ val API_VERSION_V2_BETA_1: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.ApiVersion.API_VERSION_V2_BETA_1 & Double = js.native
   }
   
   @js.native
@@ -114,19 +127,25 @@ object Agent {
   object MatchMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MatchMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[MatchMode & Double] = js.native
     
     @js.native
-    sealed trait MATCH_MODE_HYBRID extends MatchMode
-    /* 1 */ val MATCH_MODE_HYBRID: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_HYBRID with Double = js.native
+    sealed trait MATCH_MODE_HYBRID
+      extends StObject
+         with MatchMode
+    /* 1 */ val MATCH_MODE_HYBRID: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_HYBRID & Double = js.native
     
     @js.native
-    sealed trait MATCH_MODE_ML_ONLY extends MatchMode
-    /* 2 */ val MATCH_MODE_ML_ONLY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_ML_ONLY with Double = js.native
+    sealed trait MATCH_MODE_ML_ONLY
+      extends StObject
+         with MatchMode
+    /* 2 */ val MATCH_MODE_ML_ONLY: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_ML_ONLY & Double = js.native
     
     @js.native
-    sealed trait MATCH_MODE_UNSPECIFIED extends MatchMode
-    /* 0 */ val MATCH_MODE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_UNSPECIFIED with Double = js.native
+    sealed trait MATCH_MODE_UNSPECIFIED
+      extends StObject
+         with MatchMode
+    /* 0 */ val MATCH_MODE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.MatchMode.MATCH_MODE_UNSPECIFIED & Double = js.native
   }
   
   @js.native
@@ -137,23 +156,31 @@ object Agent {
   object Tier extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Tier with Double] = js.native
+    def apply(value: Double): js.UndefOr[Tier & Double] = js.native
     
     @js.native
-    sealed trait TIER_ENTERPRISE extends Tier
-    /* 2 */ val TIER_ENTERPRISE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_ENTERPRISE with Double = js.native
+    sealed trait TIER_ENTERPRISE
+      extends StObject
+         with Tier
+    /* 2 */ val TIER_ENTERPRISE: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_ENTERPRISE & Double = js.native
     
     @js.native
-    sealed trait TIER_ENTERPRISE_PLUS extends Tier
-    /* 3 */ val TIER_ENTERPRISE_PLUS: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_ENTERPRISE_PLUS with Double = js.native
+    sealed trait TIER_ENTERPRISE_PLUS
+      extends StObject
+         with Tier
+    /* 3 */ val TIER_ENTERPRISE_PLUS: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_ENTERPRISE_PLUS & Double = js.native
     
     @js.native
-    sealed trait TIER_STANDARD extends Tier
-    /* 1 */ val TIER_STANDARD: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_STANDARD with Double = js.native
+    sealed trait TIER_STANDARD
+      extends StObject
+         with Tier
+    /* 1 */ val TIER_STANDARD: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_STANDARD & Double = js.native
     
     @js.native
-    sealed trait TIER_UNSPECIFIED extends Tier
-    /* 0 */ val TIER_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_UNSPECIFIED with Double = js.native
+    sealed trait TIER_UNSPECIFIED
+      extends StObject
+         with Tier
+    /* 0 */ val TIER_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Agent.Tier.TIER_UNSPECIFIED & Double = js.native
   }
   
   /**
@@ -162,12 +189,10 @@ object Agent {
     * @returns Agent instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.create")
-  @js.native
-  def create(): Agent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.create")
-  @js.native
-  def create(properties: IAgent): Agent = js.native
+  @scala.inline
+  def create(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Agent]
+  @scala.inline
+  def create(properties: IAgent): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Decodes an Agent message from the specified reader or buffer.
@@ -178,18 +203,14 @@ object Agent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decode")
-  @js.native
-  def decode(reader: Reader): Agent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Agent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decode")
-  @js.native
-  def decode(reader: Uint8Array): Agent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Agent = js.native
+  @scala.inline
+  def decode(reader: Reader): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Agent]
+  @scala.inline
+  def decode(reader: Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Agent = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Agent]
   
   /**
     * Decodes an Agent message from the specified reader or buffer, length delimited.
@@ -199,12 +220,10 @@ object Agent {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Agent = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Agent = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Encodes the specified Agent message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Agent.verify|verify} messages.
@@ -213,12 +232,10 @@ object Agent {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.encode")
-  @js.native
-  def encode(message: IAgent): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.encode")
-  @js.native
-  def encode(message: IAgent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IAgent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IAgent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Agent message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.Agent.verify|verify} messages.
@@ -227,12 +244,10 @@ object Agent {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAgent): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAgent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IAgent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IAgent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Agent message from a plain object. Also converts values to their respective internal types.
@@ -240,9 +255,8 @@ object Agent {
     * @returns Agent
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Agent = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
   /**
     * Creates a plain object from an Agent message. Also converts values to other types if specified.
@@ -251,12 +265,10 @@ object Agent {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.toObject")
-  @js.native
-  def toObject(message: Agent): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.toObject")
-  @js.native
-  def toObject(message: Agent, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Agent): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Agent, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Agent message.
@@ -264,7 +276,6 @@ object Agent {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.Agent.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,21 +2,19 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonXmlElement extends StObject {
   
-  def appendChild(name: String, attrs: js.Array[String]): JsonXmlElement = js.native
+  def appendChild(name: String, attrs: js.Array[String]): JsonXmlElement
   
-  def appendChildNode(node: JsonXmlElement): JsonXmlElement = js.native
+  def appendChildNode(node: JsonXmlElement): JsonXmlElement
   
-  def get_attributes(): js.Array[String] = js.native
+  def get_attributes(): js.Array[String]
   
-  def get_childNodes(): js.Array[JsonXmlElement] = js.native
+  def get_childNodes(): js.Array[JsonXmlElement]
   
-  def get_name(): String = js.native
+  def get_name(): String
 }
 object JsonXmlElement {
   

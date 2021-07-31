@@ -2,16 +2,14 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecyclePolicyPreviewSummary extends StObject {
   
   /**
     * The number of expiring images.
     */
-  var expiringImageTotalCount: js.UndefOr[ImageCount] = js.native
+  var expiringImageTotalCount: js.UndefOr[ImageCount] = js.undefined
 }
 object LifecyclePolicyPreviewSummary {
   

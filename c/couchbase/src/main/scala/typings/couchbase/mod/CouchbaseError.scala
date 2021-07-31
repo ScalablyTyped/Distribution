@@ -3,29 +3,29 @@ package typings.couchbase.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The virtual class thrown for all Couchnode errors.
   */
-@js.native
-trait CouchbaseError extends Error {
+trait CouchbaseError
+  extends StObject
+     with Error {
   
   /**
     * The error code for this error.
     */
-  var code: js.UndefOr[errors] = js.native
+  var code: js.UndefOr[errors] = js.undefined
   
   /**
     * Possible inner error for this error.
     */
-  var innerError: js.UndefOr[CouchbaseError] = js.native
+  var innerError: js.UndefOr[CouchbaseError] = js.undefined
   
   /**
     * Possible response body included with the error.
     */
-  var responseBody: js.UndefOr[js.Any] = js.native
+  var responseBody: js.UndefOr[js.Any] = js.undefined
 }
 object CouchbaseError {
   

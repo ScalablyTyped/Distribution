@@ -2,28 +2,41 @@ package typings.enhancedResolve
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aliasFieldPluginMod {
   
   @JSImport("enhanced-resolve/lib/AliasFieldPlugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AliasFieldPlugin {
+  class ^ protected ()
+    extends StObject
+       with AliasFieldPlugin {
     def this(source: String, field: String, target: String) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    
+    /* CompleteClass */
+    var field: String = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var target: String = js.native
   }
   
-  @js.native
   trait AliasFieldPlugin extends StObject {
     
     @JSName("apply")
-    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit = js.native
+    def apply(resolver: typings.enhancedResolve.resolverMod.^): Unit
     
-    var field: String = js.native
+    var field: String
     
-    var source: String = js.native
+    var source: String
     
-    var target: String = js.native
+    var target: String
   }
   object AliasFieldPlugin {
     

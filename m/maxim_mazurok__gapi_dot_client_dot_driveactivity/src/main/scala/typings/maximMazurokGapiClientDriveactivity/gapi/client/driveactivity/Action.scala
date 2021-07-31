@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /** The actor responsible for this action (or empty if all actors are responsible). */
-  var actor: js.UndefOr[Actor] = js.native
+  var actor: js.UndefOr[Actor] = js.undefined
   
   /** The type and detailed information about the action. */
-  var detail: js.UndefOr[ActionDetail] = js.native
+  var detail: js.UndefOr[ActionDetail] = js.undefined
   
   /** The target this action affects (or empty if affecting all targets). This represents the state of the target immediately after this action occurred. */
-  var target: js.UndefOr[Target] = js.native
+  var target: js.UndefOr[Target] = js.undefined
   
   /** The action occurred over this time range. */
-  var timeRange: js.UndefOr[TimeRange] = js.native
+  var timeRange: js.UndefOr[TimeRange] = js.undefined
   
   /** The action occurred at this specific time. */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
 }
 object Action {
   

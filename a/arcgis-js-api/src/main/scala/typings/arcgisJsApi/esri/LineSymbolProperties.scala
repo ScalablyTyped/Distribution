@@ -3,25 +3,25 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-line`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineSymbolProperties extends SymbolProperties {
+trait LineSymbolProperties
+  extends StObject
+     with SymbolProperties {
   
   /**
     * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#type)
     */
-  var `type`: js.UndefOr[`simple-line`] = js.native
+  var `type`: js.UndefOr[`simple-line`] = js.undefined
   
   /**
     * The width of the symbol in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object LineSymbolProperties {
   

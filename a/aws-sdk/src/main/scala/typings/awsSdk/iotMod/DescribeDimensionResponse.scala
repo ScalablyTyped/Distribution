@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDimensionResponse extends StObject {
   
   /**
     * The ARN (Amazon resource name) for the dimension.
     */
-  var arn: js.UndefOr[DimensionArn] = js.native
+  var arn: js.UndefOr[DimensionArn] = js.undefined
   
   /**
     * The date the dimension was created.
     */
-  var creationDate: js.UndefOr[Timestamp] = js.native
+  var creationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date the dimension was last modified.
     */
-  var lastModifiedDate: js.UndefOr[Timestamp] = js.native
+  var lastModifiedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier for the dimension.
     */
-  var name: js.UndefOr[DimensionName] = js.native
+  var name: js.UndefOr[DimensionName] = js.undefined
   
   /**
     * The value or list of values used to scope the dimension. For example, for topic filters, this is the pattern used to match the MQTT topic name.
     */
-  var stringValues: js.UndefOr[DimensionStringValues] = js.native
+  var stringValues: js.UndefOr[DimensionStringValues] = js.undefined
   
   /**
     * The type of the dimension.
     */
-  var `type`: js.UndefOr[DimensionType] = js.native
+  var `type`: js.UndefOr[DimensionType] = js.undefined
 }
 object DescribeDimensionResponse {
   

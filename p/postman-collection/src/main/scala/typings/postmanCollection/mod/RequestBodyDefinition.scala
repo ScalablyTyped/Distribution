@@ -3,21 +3,21 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.SrcString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestBodyDefinition extends PropertyBaseDefinition {
+trait RequestBodyDefinition
+  extends StObject
+     with PropertyBaseDefinition {
   
-  var file: js.UndefOr[String | SrcString] = js.native
+  var file: js.UndefOr[String | SrcString] = js.undefined
   
-  var formdata: js.UndefOr[js.Array[FormParamDefinition] | PropertyList[FormParam]] = js.native
+  var formdata: js.UndefOr[js.Array[FormParamDefinition] | PropertyList[FormParam]] = js.undefined
   
-  var mode: String = js.native
+  var mode: String
   
-  var raw: js.UndefOr[String] = js.native
+  var raw: js.UndefOr[String] = js.undefined
   
-  var urlencoded: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.native
+  var urlencoded: js.UndefOr[js.Array[QueryParamDefinition] | PropertyList[QueryParam] | String] = js.undefined
 }
 object RequestBodyDefinition {
   

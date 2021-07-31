@@ -11,8 +11,8 @@ The lodash method `_.lowerCase` exported as a module.
 | Full name          | lodash.lowercase |
 | Keywords           | lodash-modularized, lowercase |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 1641037 |
+| # dependents       | 13 |
+| # downloads        | 1239630 |
 | # stars            | 0 |
 
 ## Links

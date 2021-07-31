@@ -2,27 +2,25 @@ package typings.activexWia.WIA
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The DeviceEvent object describes an EventID that can be used when calling RegisterEvent or RegisterPersistentEvent on a DeviceManager object. */
-@js.native
 trait DeviceEvent extends StObject {
   
   /** Returns the event Description */
-  val Description: String = js.native
+  val Description: String
   
   /** Returns the EventID for this Event */
-  val EventID: String = js.native
+  val EventID: String
   
   /** Returns the event Name */
-  val Name: String = js.native
+  val Name: String
   
   /** Returns the Type of this Event */
-  val Type: WiaEventFlag = js.native
+  val Type: WiaEventFlag
   
   @JSName("WIA.DeviceEvent_typekey")
-  var WIADotDeviceEvent_typekey: DeviceEvent = js.native
+  var WIADotDeviceEvent_typekey: DeviceEvent
 }
 object DeviceEvent {
   

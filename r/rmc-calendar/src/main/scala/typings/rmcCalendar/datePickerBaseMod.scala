@@ -10,7 +10,6 @@ import typings.rmcCalendar.datePickerPropsMod.PropsType
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerBaseMod {
@@ -55,7 +54,7 @@ object datePickerBaseMod {
     def genMonthComponent(data: MonthData): ReactNode = js.native
     
     def genMonthData(): MonthData = js.native
-    def genMonthData(date: js.UndefOr[scala.Nothing], addMonth: Double): MonthData = js.native
+    def genMonthData(date: Unit, addMonth: Double): MonthData = js.native
     def genMonthData(date: Date): MonthData = js.native
     def genMonthData(date: Date, addMonth: Double): MonthData = js.native
     
@@ -65,7 +64,7 @@ object datePickerBaseMod {
     def getDateWithoutTime(date: Date): Double = js.native
     
     def getMonthDate(): FirstDate = js.native
-    def getMonthDate(date: js.UndefOr[scala.Nothing], addMonth: Double): FirstDate = js.native
+    def getMonthDate(date: Unit, addMonth: Double): FirstDate = js.native
     def getMonthDate(date: Date): FirstDate = js.native
     def getMonthDate(date: Date, addMonth: Double): FirstDate = js.native
     
@@ -74,7 +73,7 @@ object datePickerBaseMod {
     def onCellClick(day: CellData): Unit = js.native
     
     def selectDateRange(startDate: Date): Unit = js.native
-    def selectDateRange(startDate: Date, endDate: js.UndefOr[scala.Nothing], clear: Boolean): Unit = js.native
+    def selectDateRange(startDate: Date, endDate: Unit, clear: Boolean): Unit = js.native
     def selectDateRange(startDate: Date, endDate: Date): Unit = js.native
     def selectDateRange(startDate: Date, endDate: Date, clear: Boolean): Unit = js.native
     
@@ -84,10 +83,9 @@ object datePickerBaseMod {
     var visibleMonth: js.Array[MonthData] = js.native
   }
   
-  @js.native
   trait StateType extends StObject {
     
-    var months: js.Array[MonthData] = js.native
+    var months: js.Array[MonthData]
   }
   object StateType {
     

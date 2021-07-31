@@ -3,15 +3,13 @@ package typings.agGrid
 import typings.agGrid.componentMod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iCompFactoryMod {
   
-  @js.native
   trait ICompFactory extends StObject {
     
-    def create(): Component = js.native
+    def create(): Component
   }
   object ICompFactory {
     

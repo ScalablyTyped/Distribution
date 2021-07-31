@@ -3,21 +3,20 @@ package typings.mendixmodelsdk.transportInterfacesMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.svn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICommitToSVNTeamServerOptions
-  extends ICommitToTeamServerBaseOptions
+  extends StObject
+     with ICommitToTeamServerBaseOptions
      with ICommitToTeamServerOptions {
   
-  var repositoryType: js.UndefOr[svn] = js.native
+  var repositoryType: js.UndefOr[svn] = js.undefined
   
-  var targetRevision: Double = js.native
+  var targetRevision: Double
   
-  var teamServerPassword: String = js.native
+  var teamServerPassword: String
   
-  var teamServerUsername: String = js.native
+  var teamServerUsername: String
 }
 object ICommitToSVNTeamServerOptions {
   

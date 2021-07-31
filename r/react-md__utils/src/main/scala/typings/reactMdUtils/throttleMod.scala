@@ -4,16 +4,22 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object throttleMod {
   
-  @JSImport("@react-md/utils/types/throttle", "throttle")
+  @JSImport("@react-md/utils/types/throttle", JSImport.Namespace)
   @js.native
-  def throttle[F /* <: ThrottleableFunction */](fn: F, wait: Double): ThrottledFunction[F] = js.native
+  val ^ : js.Any = js.native
   
-  type ThrottleableFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @scala.inline
+  def throttle[F /* <: ThrottleableFunction */](fn: F, wait: Double): ThrottledFunction[F] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[ThrottledFunction[F]]
+  
+  @js.native
+  trait ThrottleableFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   type ThrottledFunction[F /* <: ThrottleableFunction */] = js.Function1[/* args */ Parameters[F], ReturnType[F]]
 }

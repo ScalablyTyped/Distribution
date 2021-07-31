@@ -2,15 +2,13 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventId_ extends StObject {
   
-  var eventId: String = js.native
+  var eventId: String
   
-  var roomId: String = js.native
+  var roomId: String
 }
 object EventId_ {
   

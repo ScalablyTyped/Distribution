@@ -2,33 +2,31 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalDataConfiguration extends StObject {
   
-  var autodetect: js.UndefOr[Boolean] = js.native
+  var autodetect: js.UndefOr[Boolean] = js.undefined
   
-  var bigtableOptions: js.UndefOr[BigtableOptions] = js.native
+  var bigtableOptions: js.UndefOr[BigtableOptions] = js.undefined
   
-  var compression: js.UndefOr[String] = js.native
+  var compression: js.UndefOr[String] = js.undefined
   
-  var csvOptions: js.UndefOr[CsvOptions] = js.native
+  var csvOptions: js.UndefOr[CsvOptions] = js.undefined
   
-  var googleSheetsOptions: js.UndefOr[GoogleSheetsOptions] = js.native
+  var googleSheetsOptions: js.UndefOr[GoogleSheetsOptions] = js.undefined
   
-  var hivePartitioningMode: js.UndefOr[String] = js.native
+  var hivePartitioningMode: js.UndefOr[String] = js.undefined
   
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
-  var maxBadRecords: js.UndefOr[Double] = js.native
+  var maxBadRecords: js.UndefOr[Double] = js.undefined
   
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
-  var sourceFormat: js.UndefOr[String] = js.native
+  var sourceFormat: js.UndefOr[String] = js.undefined
   
-  var sourceUris: js.UndefOr[js.Array[String]] = js.native
+  var sourceUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExternalDataConfiguration {
   

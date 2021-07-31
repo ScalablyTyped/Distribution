@@ -2,13 +2,11 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Refresh extends StObject {
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object Refresh {
   

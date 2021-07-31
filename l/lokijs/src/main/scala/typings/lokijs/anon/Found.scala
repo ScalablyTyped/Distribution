@@ -2,15 +2,13 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Found extends StObject {
   
-  var found: Boolean = js.native
+  var found: Boolean
   
-  var index: Double = js.native
+  var index: Double
 }
 object Found {
   

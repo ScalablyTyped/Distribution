@@ -6,7 +6,6 @@ import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,16 +16,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait AutoFilter extends ClientObject {
+trait AutoFilter
+  extends StObject
+     with ClientObject {
   
   @JSName("apply")
   def apply(range: String): Unit = js.native
   @JSName("apply")
-  def apply(range: String, columnIndex: js.UndefOr[scala.Nothing], criteria: FilterCriteria): Unit = js.native
-  @JSName("apply")
   def apply(range: String, columnIndex: Double): Unit = js.native
   @JSName("apply")
   def apply(range: String, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
+  @JSName("apply")
+  def apply(range: String, columnIndex: Unit, criteria: FilterCriteria): Unit = js.native
   /**
     * Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
     *
@@ -39,11 +40,11 @@ trait AutoFilter extends ClientObject {
   @JSName("apply")
   def apply(range: Range): Unit = js.native
   @JSName("apply")
-  def apply(range: Range, columnIndex: js.UndefOr[scala.Nothing], criteria: FilterCriteria): Unit = js.native
-  @JSName("apply")
   def apply(range: Range, columnIndex: Double): Unit = js.native
   @JSName("apply")
   def apply(range: Range, columnIndex: Double, criteria: FilterCriteria): Unit = js.native
+  @JSName("apply")
+  def apply(range: Range, columnIndex: Unit, criteria: FilterCriteria): Unit = js.native
   
   /**
     * Clears the filter criteria of the AutoFilter.

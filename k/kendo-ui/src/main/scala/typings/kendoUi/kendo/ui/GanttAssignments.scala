@@ -3,19 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttAssignments extends StObject {
   
-  var dataResourceIdField: js.UndefOr[String] = js.native
+  var dataResourceIdField: js.UndefOr[String] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataTaskIdField: js.UndefOr[String] = js.native
+  var dataTaskIdField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.undefined
 }
 object GanttAssignments {
   

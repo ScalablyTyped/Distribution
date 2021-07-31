@@ -2,19 +2,17 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityType extends StObject {
   
-  var entityType: js.UndefOr[typings.breeze.breeze.EntityType] = js.native
+  var entityType: js.UndefOr[typings.breeze.breeze.EntityType] = js.undefined
   
-  var ignore: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[Boolean] = js.undefined
   
-  var nodeId: js.UndefOr[js.Any] = js.native
+  var nodeId: js.UndefOr[js.Any] = js.undefined
   
-  var nodeRefId: js.UndefOr[js.Any] = js.native
+  var nodeRefId: js.UndefOr[js.Any] = js.undefined
 }
 object EntityType {
   

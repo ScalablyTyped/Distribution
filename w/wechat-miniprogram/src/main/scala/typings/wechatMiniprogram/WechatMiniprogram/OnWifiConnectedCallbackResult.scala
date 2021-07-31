@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnWifiConnectedCallbackResult extends StObject {
   
   /** [WifiInfo](https://developers.weixin.qq.com/miniprogram/dev/api/device/wifi/WifiInfo.html)
     *
     * Wi-Fi 信息 */
-  var wifi: WifiInfo = js.native
+  var wifi: WifiInfo
 }
 object OnWifiConnectedCallbackResult {
   

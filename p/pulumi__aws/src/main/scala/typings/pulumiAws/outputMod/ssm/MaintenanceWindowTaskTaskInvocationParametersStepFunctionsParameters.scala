@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ssm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters extends StObject {
   
   /**
     * The inputs for the STEP_FUNCTION task.
     */
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the STEP_FUNCTION task.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
   

@@ -2,21 +2,19 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxWithCredentials extends StObject {
   
-  var ajaxWithCredentials: js.UndefOr[String | Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[String | Boolean] = js.undefined
   
-  var buildPyramid: js.UndefOr[Boolean] = js.native
+  var buildPyramid: js.UndefOr[Boolean] = js.undefined
   
-  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.native
+  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var useCanvas: js.UndefOr[Boolean] = js.native
+  var useCanvas: js.UndefOr[Boolean] = js.undefined
 }
 object AjaxWithCredentials {
   

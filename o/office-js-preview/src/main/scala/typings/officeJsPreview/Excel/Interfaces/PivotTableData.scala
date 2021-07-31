@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotTable.toJSON()`. */
-@js.native
 trait PivotTableData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.native
+  var allowMultipleFiltersPerField: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var columnHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.native
+  var columnHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.native
+  var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enableDataValueEditing: js.UndefOr[Boolean] = js.native
+  var enableDataValueEditing: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var filterHierarchies: js.UndefOr[js.Array[FilterPivotHierarchyData]] = js.native
+  var filterHierarchies: js.UndefOr[js.Array[FilterPivotHierarchyData]] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var hierarchies: js.UndefOr[js.Array[PivotHierarchyData]] = js.native
+  var hierarchies: js.UndefOr[js.Array[PivotHierarchyData]] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.5]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait PivotTableData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshOnOpen: js.UndefOr[Boolean] = js.native
+  var refreshOnOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.native
+  var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
   
   /**
     *
@@ -96,7 +94,7 @@ trait PivotTableData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useCustomSortLists: js.UndefOr[Boolean] = js.native
+  var useCustomSortLists: js.UndefOr[Boolean] = js.undefined
 }
 object PivotTableData {
   

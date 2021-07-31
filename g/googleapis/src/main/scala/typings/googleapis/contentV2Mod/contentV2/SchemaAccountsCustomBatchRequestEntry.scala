@@ -2,57 +2,55 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch accounts request.
   */
-@js.native
 trait SchemaAccountsCustomBatchRequestEntry extends StObject {
   
   /**
     * The account to create or update. Only defined if the method is insert or
     * update.
     */
-  var account: js.UndefOr[SchemaAccount] = js.native
+  var account: js.UndefOr[SchemaAccount] = js.undefined
   
   /**
     * The ID of the targeted account. Only defined if the method is not insert.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * An entry ID, unique within the batch request.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the account should be deleted if the account has offers. Only
     * applicable if the method is delete.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Details about the link request.
     */
-  var linkRequest: js.UndefOr[SchemaAccountsCustomBatchRequestEntryLinkRequest] = js.native
+  var linkRequest: js.UndefOr[SchemaAccountsCustomBatchRequestEntryLinkRequest] = js.undefined
   
   /**
     * The ID of the managing account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * The method of the batch entry.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Only applicable if the method is claimwebsite. Indicates whether or not
     * to take the claim from another account in case there is a conflict.
     */
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAccountsCustomBatchRequestEntry {
   

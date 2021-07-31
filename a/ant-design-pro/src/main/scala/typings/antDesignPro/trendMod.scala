@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trendMod {
@@ -16,18 +15,17 @@ object trendMod {
   class default ()
     extends Component[ITrendProps, js.Any, js.Any]
   
-  @js.native
   trait ITrendProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colorful: js.UndefOr[Boolean] = js.native
+    var colorful: js.UndefOr[Boolean] = js.undefined
     
-    var flag: up | down = js.native
+    var flag: up | down
     
-    var reverseColor: js.UndefOr[Boolean] = js.native
+    var reverseColor: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ITrendProps {
     

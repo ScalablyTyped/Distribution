@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTaskExecutionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the task that is being executed.
     */
-  var TaskExecutionArn: typings.awsSdk.datasyncMod.TaskExecutionArn = js.native
+  var TaskExecutionArn: typings.awsSdk.datasyncMod.TaskExecutionArn
 }
 object DescribeTaskExecutionRequest {
   

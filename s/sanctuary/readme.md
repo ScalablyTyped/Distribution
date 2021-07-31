@@ -10,9 +10,9 @@ Refuge from unsafe JavaScript
 | ------------------ | :-------------: |
 | Full name          | sanctuary |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 76 |
-| # downloads        | 8761896 |
+| # releases         | 8 |
+| # dependents       | 79 |
+| # downloads        | 3215959 |
 | # stars            | 4 |
 
 ## Links

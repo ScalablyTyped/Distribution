@@ -11,8 +11,8 @@ RSocket types
 | Full name          | rsocket-types |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 13 |
-| # downloads        | 475745 |
+| # dependents       | 15 |
+| # downloads        | 647700 |
 | # stars            | 0 |
 
 ## Links

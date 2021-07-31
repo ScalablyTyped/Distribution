@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Transform extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_currentLocalID
     */
-  var _currentLocalID: Double = js.native
+  var _currentLocalID: Double
   
   /**
     * The X-coordinate value of the normalized local X axis,
@@ -30,7 +28,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_cx
     */
-  var _cx: Double = js.native
+  var _cx: Double
   
   /**
     * The X-coordinate value of the normalized local Y axis,
@@ -39,7 +37,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_cy
     */
-  var _cy: Double = js.native
+  var _cy: Double
   
   /**
     * The locally unique ID of the local transform.
@@ -47,7 +45,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_localID
     */
-  var _localID: Double = js.native
+  var _localID: Double
   
   /**
     * The locally unique ID of the parent's world transform
@@ -56,7 +54,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_parentID
     */
-  var _parentID: Double = js.native
+  var _parentID: Double
   
   /**
     * The rotation amount.
@@ -64,7 +62,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_rotation
     */
-  var _rotation: Double = js.native
+  var _rotation: Double
   
   /**
     * The Y-coordinate value of the normalized local X axis,
@@ -73,7 +71,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_sx
     */
-  var _sx: Double = js.native
+  var _sx: Double
   
   /**
     * The Y-coordinate value of the normalized local Y axis,
@@ -82,7 +80,7 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_sy
     */
-  var _sy: Double = js.native
+  var _sy: Double
   
   /**
     * The locally unique ID of the world transform.
@@ -90,89 +88,89 @@ trait Transform extends StObject {
     * @protected
     * @member {number} PIXI.Transform#_worldID
     */
-  var _worldID: Double = js.native
+  var _worldID: Double
   
   /**
     * The local transformation matrix.
     *
     * @member {PIXI.Matrix} PIXI.Transform#localTransform
     */
-  var localTransform: Matrix = js.native
+  var localTransform: Matrix
   
   /**
     * Called when a value changes.
     *
     * @protected
     */
-  /* protected */ def onChange(): Unit = js.native
+  /* protected */ def onChange(): Unit
   
   /**
     * The pivot point of the displayObject that it rotates around.
     *
     * @member {PIXI.ObservablePoint} PIXI.Transform#pivot
     */
-  var pivot: ObservablePoint = js.native
+  var pivot: ObservablePoint
   
   /**
     * The coordinate of the object relative to the local coordinates of the parent.
     *
     * @member {PIXI.ObservablePoint} PIXI.Transform#position
     */
-  var position: ObservablePoint = js.native
+  var position: ObservablePoint
   
   /**
     * The rotation of the object in radians.
     *
     * @member {number}
     */
-  var rotation: Double = js.native
+  var rotation: Double
   
   /**
     * The scale factor of the object.
     *
     * @member {PIXI.ObservablePoint} PIXI.Transform#scale
     */
-  var scale: ObservablePoint = js.native
+  var scale: ObservablePoint
   
   /**
     * Decomposes a matrix and sets the transforms properties based on it.
     *
     * @param {PIXI.Matrix} matrix - The matrix to decompose
     */
-  def setFromMatrix(matrix: Matrix): Unit = js.native
+  def setFromMatrix(matrix: Matrix): Unit
   
   /**
     * The skew amount, on the x and y axis.
     *
     * @member {PIXI.ObservablePoint} PIXI.Transform#skew
     */
-  var skew: ObservablePoint = js.native
+  var skew: ObservablePoint
   
   /**
     * Updates the local transformation matrix.
     */
-  def updateLocalTransform(): Unit = js.native
+  def updateLocalTransform(): Unit
   
   /**
     * Called when the skew or the rotation changes.
     *
     * @protected
     */
-  /* protected */ def updateSkew(): Unit = js.native
+  /* protected */ def updateSkew(): Unit
   
   /**
     * Updates the local and the world transformation matrices.
     *
     * @param {PIXI.Transform} parentTransform - The parent transform
     */
-  def updateTransform(parentTransform: Transform): Unit = js.native
+  def updateTransform(parentTransform: Transform): Unit
   
   /**
     * The world transformation matrix.
     *
     * @member {PIXI.Matrix} PIXI.Transform#worldTransform
     */
-  var worldTransform: Matrix = js.native
+  var worldTransform: Matrix
 }
 object Transform {
   

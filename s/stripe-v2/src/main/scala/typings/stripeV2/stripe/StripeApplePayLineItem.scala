@@ -4,18 +4,16 @@ import typings.stripeV2.stripeV2Strings.`final`
 import typings.stripeV2.stripeV2Strings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/reference/applepayjs/1916082-applepay_js_data_types
-@js.native
 trait StripeApplePayLineItem extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var label: String = js.native
+  var label: String
   
-  var `type`: pending | `final` = js.native
+  var `type`: pending | `final`
 }
 object StripeApplePayLineItem {
   

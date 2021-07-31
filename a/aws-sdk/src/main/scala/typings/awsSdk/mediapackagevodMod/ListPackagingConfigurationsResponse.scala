@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPackagingConfigurationsResponse extends StObject {
   
   /**
     * A token that can be used to resume pagination from the end of the collection.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * A list of MediaPackage VOD PackagingConfiguration resources.
     */
-  var PackagingConfigurations: js.UndefOr[listOfPackagingConfiguration] = js.native
+  var PackagingConfigurations: js.UndefOr[listOfPackagingConfiguration] = js.undefined
 }
 object ListPackagingConfigurationsResponse {
   

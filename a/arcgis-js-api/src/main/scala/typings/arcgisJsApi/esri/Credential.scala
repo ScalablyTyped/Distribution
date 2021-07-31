@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`token-change`
 import typings.arcgisJsApi.arcgisJsApiStrings.destroy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Credential extends Accessor {
+trait Credential
+  extends StObject
+     with Accessor {
   
   /**
     * Token expiration time specified as number of milliseconds since 1 January 1970 00:00:00 UTC.

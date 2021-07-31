@@ -7,7 +7,6 @@ import typings.storybookApi.storybookApiStrings.sidebar
 import typings.storybookTheming.typesMod.ThemeVars
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
@@ -84,20 +83,19 @@ object layoutMod {
     def sidebar: typings.storybookApi.storybookApiStrings.sidebar = "sidebar".asInstanceOf[typings.storybookApi.storybookApiStrings.sidebar]
   }
   
-  @js.native
   trait Layout extends StObject {
     
-    var initialActive: ActiveTabsType = js.native
+    var initialActive: ActiveTabsType
     
-    var isFullscreen: Boolean = js.native
+    var isFullscreen: Boolean
     
-    var isToolshown: Boolean = js.native
+    var isToolshown: Boolean
     
-    var panelPosition: PanelPositions = js.native
+    var panelPosition: PanelPositions
     
-    var showNav: Boolean = js.native
+    var showNav: Boolean
     
-    var showPanel: Boolean = js.native
+    var showPanel: Boolean
   }
   object Layout {
     
@@ -172,16 +170,15 @@ object layoutMod {
     def toggleToolbar(toggled: Boolean): Unit = js.native
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var layout: Layout = js.native
+    var layout: Layout
     
-    var selectedPanel: js.UndefOr[String] = js.native
+    var selectedPanel: js.UndefOr[String] = js.undefined
     
-    var theme: ThemeVars = js.native
+    var theme: ThemeVars
     
-    var ui: UI = js.native
+    var ui: UI
   }
   object SubState {
     
@@ -211,18 +208,17 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait UI extends StObject {
     
-    var docsMode: Boolean = js.native
+    var docsMode: Boolean
     
-    var enableShortcuts: Boolean = js.native
+    var enableShortcuts: Boolean
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var sidebarAnimations: Boolean = js.native
+    var sidebarAnimations: Boolean
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object UI {
     
@@ -258,24 +254,23 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait UIOptions extends StObject {
     
-    var addonPanelInRight: Boolean = js.native
+    var addonPanelInRight: Boolean
     
-    var goFullScreen: Boolean = js.native
+    var goFullScreen: Boolean
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var selectedPanel: js.UndefOr[String] = js.native
+    var selectedPanel: js.UndefOr[String] = js.undefined
     
-    var showAddonPanel: Boolean = js.native
+    var showAddonPanel: Boolean
     
-    var showStoriesPanel: Boolean = js.native
+    var showStoriesPanel: Boolean
     
-    var theme: js.UndefOr[ThemeVars] = js.native
+    var theme: js.UndefOr[ThemeVars] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object UIOptions {
     

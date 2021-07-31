@@ -3,14 +3,22 @@ package typings.pollyjsPersister
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@pollyjs/persister", JSImport.Default)
   @js.native
-  class default () extends Persister
+  class default ()
+    extends StObject
+       with Persister {
+    
+    /* CompleteClass */
+    override val options: StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def persist(): js.Promise[Unit] = js.native
+  }
   /* static members */
   object default {
     
@@ -23,12 +31,11 @@ object mod {
     val `type`: String = js.native
   }
   
-  @js.native
   trait Persister extends StObject {
     
-    val options: StringDictionary[js.Any] = js.native
+    val options: StringDictionary[js.Any]
     
-    def persist(): js.Promise[Unit] = js.native
+    def persist(): js.Promise[Unit]
   }
   object Persister {
     

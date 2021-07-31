@@ -5,7 +5,6 @@ import typings.reactAsync.anon.ChildrenInitial
 import typings.reactAsync.anon.Initial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object IfPending {
   
-  @JSImport("react-async", "IfPending")
-  @js.native
-  def apply[T /* <: js.Object */](hasChildrenInitialState: Initial[T]): Element = js.native
+  @scala.inline
+  def apply[T /* <: js.Object */](hasChildrenInitialState: Initial[T]): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenInitialState.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("react-async", "IfPending")
   @js.native
   val ^ : js.Any = js.native

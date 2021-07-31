@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualInterventions extends StObject {
   
-  var approvals: scala.Double = js.native
+  var approvals: scala.Double
   
-  var artifacts: scala.Double = js.native
+  var artifacts: scala.Double
   
-  var environments: scala.Double = js.native
+  var environments: scala.Double
   
-  var manualInterventions: scala.Double = js.native
+  var manualInterventions: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var tags: scala.Double = js.native
+  var tags: scala.Double
   
-  var variables: scala.Double = js.native
+  var variables: scala.Double
 }
 object ManualInterventions {
   

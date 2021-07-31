@@ -2,15 +2,13 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseComponentAugmentingMod {
   
-  @js.native
   trait NameServiceMapping extends StObject {
     
-    var auth: FirebaseAuth = js.native
+    var auth: FirebaseAuth
   }
   object NameServiceMapping {
     

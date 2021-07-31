@@ -7,30 +7,30 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Interface of Security Environment */
-@js.native
-trait XSecurityEnvironment extends XInterface {
+trait XSecurityEnvironment
+  extends StObject
+     with XInterface {
   
   /** Get personal certificate from the environment */
-  val PersonalCertificates: SafeArray[XCertificate] = js.native
+  val PersonalCertificates: SafeArray[XCertificate]
   
   /** Get the Environment detail infos */
-  val SecurityEnvironmentInformation: String = js.native
+  val SecurityEnvironmentInformation: String
   
   /** build certificate path from a certain certificate */
-  def buildCertificatePath(beginCert: XCertificate): SafeArray[XCertificate] = js.native
+  def buildCertificatePath(beginCert: XCertificate): SafeArray[XCertificate]
   
   /** Create certificate interface from a Base64 encoded certificate. */
-  def createCertificateFromAscii(asciiCertificate: String): XCertificate = js.native
+  def createCertificateFromAscii(asciiCertificate: String): XCertificate
   
   /** Create certificate interface from raw DER encoded certificate */
-  def createCertificateFromRaw(rawCertificate: SeqEquiv[Double]): XCertificate = js.native
+  def createCertificateFromRaw(rawCertificate: SeqEquiv[Double]): XCertificate
   
   /** Get certificate from the environment by issuer name and serial number */
-  def getCertificate(issuerName: String, serialNumber: SeqEquiv[Double]): XCertificate = js.native
+  def getCertificate(issuerName: String, serialNumber: SeqEquiv[Double]): XCertificate
   
   /**
     * Get a certificate characters.
@@ -40,13 +40,13 @@ trait XSecurityEnvironment extends XInterface {
     *
     * The certificate characters is defined as bit-wise long, please refer to CertificateCharacters definition.
     */
-  def getCertificateCharacters(xCertificate: XCertificate): Double = js.native
+  def getCertificateCharacters(xCertificate: XCertificate): Double
   
   /** Get personal certificate from the environment */
-  def getPersonalCertificates(): SafeArray[XCertificate] = js.native
+  def getPersonalCertificates(): SafeArray[XCertificate]
   
   /** Get the Environment detail infos */
-  def getSecurityEnvironmentInformation(): String = js.native
+  def getSecurityEnvironmentInformation(): String
   
   /**
     * Verify a certificate.
@@ -56,7 +56,7 @@ trait XSecurityEnvironment extends XInterface {
     * @param intermediateCertificates Additional certificates which can be used by the method in constructing the certificate chain. The root certificate may
     * @returns The validation status will returned as a bit-wise long, please refer to CertificateValidity definition.
     */
-  def verifyCertificate(xEECertificate: XCertificate, intermediateCertificates: SeqEquiv[XCertificate]): Double = js.native
+  def verifyCertificate(xEECertificate: XCertificate, intermediateCertificates: SeqEquiv[XCertificate]): Double
 }
 object XSecurityEnvironment {
   

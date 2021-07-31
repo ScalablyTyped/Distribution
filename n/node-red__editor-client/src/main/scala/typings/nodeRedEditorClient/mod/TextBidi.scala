@@ -3,10 +3,8 @@ package typings.nodeRedEditorClient.mod
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBidi extends StObject {
   
   /**
@@ -14,26 +12,26 @@ trait TextBidi extends StObject {
     * UCC (Unicode Control Characters)
     * @param value - the string
     */
-  def enforceTextDirectionWithUCC(value: String): String = js.native
+  def enforceTextDirectionWithUCC(value: String): String
   
   /**
     * Adds event listeners to the Input to ensure its text-direction attribute
     * is properly set based on its content.
     * @param input - the input field
     */
-  def prepareInput(input: HTMLInputElement): Unit = js.native
+  def prepareInput(input: HTMLInputElement): Unit
   
   /**
     * Determines the text direction of a given string.
     * @param value - the string
     */
-  def resolveBaseTextDir(value: String): String = js.native
+  def resolveBaseTextDir(value: String): String
   
   /**
     * Sets the text direction preference
     * @param dir - the text direction preference
     */
-  def setTextDirection(dir: String): Unit = js.native
+  def setTextDirection(dir: String): Unit
 }
 object TextBidi {
   

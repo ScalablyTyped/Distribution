@@ -2,28 +2,26 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Account> */
-@js.native
 trait AccountOptions extends StObject {
   
-  var addressBooks: js.UndefOr[js.Array[AddressBook]] = js.native
+  var addressBooks: js.UndefOr[js.Array[AddressBook]] = js.undefined
   
-  var calendars: js.UndefOr[js.Array[Calendar]] = js.native
+  var calendars: js.UndefOr[js.Array[Calendar]] = js.undefined
   
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.native
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
   
-  var credentials: js.UndefOr[Credentials] = js.native
+  var credentials: js.UndefOr[Credentials] = js.undefined
   
-  var homeUrl: js.UndefOr[String] = js.native
+  var homeUrl: js.UndefOr[String] = js.undefined
   
-  var principalUrl: js.UndefOr[String] = js.native
+  var principalUrl: js.UndefOr[String] = js.undefined
   
-  var rootUrl: js.UndefOr[String] = js.native
+  var rootUrl: js.UndefOr[String] = js.undefined
   
-  var server: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.undefined
 }
 object AccountOptions {
   

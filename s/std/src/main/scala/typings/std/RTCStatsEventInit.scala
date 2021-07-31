@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCStatsEventInit extends EventInit {
+trait RTCStatsEventInit
+  extends StObject
+     with EventInit {
   
-  var report: RTCStatsReport = js.native
+  var report: RTCStatsReport
 }
 object RTCStatsEventInit {
   

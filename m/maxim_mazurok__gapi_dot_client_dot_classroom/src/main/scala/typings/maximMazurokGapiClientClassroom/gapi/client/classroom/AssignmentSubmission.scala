@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentSubmission extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AssignmentSubmission extends StObject {
     * Classroom. Some attachment metadata is only populated if the requesting user has permission to access it. Identifier and alternate_link fields are always available, but others (for
     * example, title) may not be.
     */
-  var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+  var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
 }
 object AssignmentSubmission {
   

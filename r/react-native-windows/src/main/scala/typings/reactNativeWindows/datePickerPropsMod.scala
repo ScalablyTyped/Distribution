@@ -19,7 +19,6 @@ import typings.reactNativeWindows.reactNativeWindowsStrings.shortdate
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerPropsMod {
@@ -58,10 +57,9 @@ object datePickerPropsMod {
     def Wednesday: `3` = 3.asInstanceOf[`3`]
   }
   
-  @js.native
   trait IDatePickerChangeEvent extends StObject {
     
-    var nativeEvent: NewDate = js.native
+    var nativeEvent: NewDate
   }
   object IDatePickerChangeEvent {
     
@@ -79,30 +77,31 @@ object datePickerPropsMod {
     }
   }
   
-  @js.native
-  trait IDatePickerProps extends ViewProps {
+  trait IDatePickerProps
+    extends StObject
+       with ViewProps {
     
-    var dateFormat: js.UndefOr[(`day month year`) | (`dayofweek day month`) | longdate | shortdate] = js.native
+    var dateFormat: js.UndefOr[(`day month year`) | (`dayofweek day month`) | longdate | shortdate] = js.undefined
     
     var dayOfWeekFormat: js.UndefOr[
         LeftcurlybracketdayofweekDotabbreviatedLeftparenthesis2RightparenthesisRightcurlybracket | LeftcurlybracketdayofweekDotabbreviatedLeftparenthesis3RightparenthesisRightcurlybracket | LeftcurlybracketdayofweekDotfullRightcurlybracket
-      ] = js.native
+      ] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.native
+    var firstDayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ IDatePickerChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ IDatePickerChangeEvent, Unit]] = js.undefined
     
-    var onDateChange: js.UndefOr[js.Function1[/* newDate */ Date, Unit]] = js.native
+    var onDateChange: js.UndefOr[js.Function1[/* newDate */ Date, Unit]] = js.undefined
     
-    var placeholderText: js.UndefOr[String] = js.native
+    var placeholderText: js.UndefOr[String] = js.undefined
     
-    var selectedDate: js.UndefOr[Date] = js.native
+    var selectedDate: js.UndefOr[Date] = js.undefined
     
-    var timeZoneOffsetInSeconds: js.UndefOr[Double] = js.native
+    var timeZoneOffsetInSeconds: js.UndefOr[Double] = js.undefined
   }
   object IDatePickerProps {
     

@@ -6,32 +6,31 @@ import typings.babelTypes.babelTypesStrings.init
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ObjectTypeProperty_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait ObjectTypeProperty_
+  extends StObject
      with BaseNode
+     with Flow
      with UserWhitespacable {
   
-  var key: Identifier_ | StringLiteral_ = js.native
+  var key: Identifier_ | StringLiteral_
   
-  var kind: init | get | set = js.native
+  var kind: init | get | set
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var proto: Boolean = js.native
+  var proto: Boolean
   
-  var static: Boolean = js.native
+  var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeProperty_ : ObjectTypeProperty = js.native
+  var type_ObjectTypeProperty_ : ObjectTypeProperty
   
-  var value: FlowType = js.native
+  var value: FlowType
   
-  var variance: Variance_ | Null = js.native
+  var variance: Variance_ | Null
 }
 object ObjectTypeProperty_ {
   
@@ -42,11 +41,10 @@ object ObjectTypeProperty_ {
     optional: Boolean,
     proto: Boolean,
     static: Boolean,
-    `type`: ObjectTypeProperty,
     value: FlowType
   ): ObjectTypeProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], proto = proto.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    __obj.updateDynamic("type")("ObjectTypeProperty")
     __obj.asInstanceOf[ObjectTypeProperty_]
   }
   

@@ -10,9 +10,9 @@ Utilities for perspective-enabled Web Mercator projections
 | ------------------ | :-------------: |
 | Full name          | viewport-mercator-project |
 | Keywords           | webgl, javascript, math, geospatial, cartographic, projection, web mercator, geographic |
-| # releases         | 11 |
-| # dependents       | 57 |
-| # downloads        | 4369360 |
+| # releases         | 9 |
+| # dependents       | 62 |
+| # downloads        | 5142285 |
 | # stars            | 0 |
 
 ## Links

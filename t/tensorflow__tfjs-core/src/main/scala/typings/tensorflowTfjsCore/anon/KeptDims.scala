@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeptDims extends StObject {
   
-  var keptDims: js.Array[Double] = js.native
+  var keptDims: js.Array[Double]
   
-  var newShape: js.Array[Double] = js.native
+  var newShape: js.Array[Double]
 }
 object KeptDims {
   

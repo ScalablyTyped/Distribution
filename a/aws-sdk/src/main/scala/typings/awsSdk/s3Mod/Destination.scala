@@ -2,46 +2,44 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * Specify this only in a cross-account scenario (where source and destination bucket owners are not the same), and you want to change replica ownership to the AWS account that owns the destination bucket. If this is not specified in the replication configuration, the replicas are owned by same AWS account that owns the source object.
     */
-  var AccessControlTranslation: js.UndefOr[typings.awsSdk.s3Mod.AccessControlTranslation] = js.native
+  var AccessControlTranslation: js.UndefOr[typings.awsSdk.s3Mod.AccessControlTranslation] = js.undefined
   
   /**
     * Destination bucket owner account ID. In a cross-account scenario, if you direct Amazon S3 to change replica ownership to the AWS account that owns the destination bucket by specifying the AccessControlTranslation property, this is the account ID of the destination bucket owner. For more information, see Replication Additional Configuration: Changing the Replica Owner in the Amazon Simple Storage Service Developer Guide.
     */
-  var Account: js.UndefOr[AccountId] = js.native
+  var Account: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the bucket where you want Amazon S3 to store the results.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * A container that provides information about encryption. If SourceSelectionCriteria is specified, you must specify this element.
     */
-  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.s3Mod.EncryptionConfiguration] = js.native
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.s3Mod.EncryptionConfiguration] = js.undefined
   
   /**
     *  A container specifying replication metrics-related settings enabling replication metrics and events. 
     */
-  var Metrics: js.UndefOr[typings.awsSdk.s3Mod.Metrics] = js.native
+  var Metrics: js.UndefOr[typings.awsSdk.s3Mod.Metrics] = js.undefined
   
   /**
     *  A container specifying S3 Replication Time Control (S3 RTC), including whether S3 RTC is enabled and the time when all objects and operations on objects must be replicated. Must be specified together with a Metrics block. 
     */
-  var ReplicationTime: js.UndefOr[typings.awsSdk.s3Mod.ReplicationTime] = js.native
+  var ReplicationTime: js.UndefOr[typings.awsSdk.s3Mod.ReplicationTime] = js.undefined
   
   /**
     *  The storage class to use when replicating objects, such as S3 Standard or reduced redundancy. By default, Amazon S3 uses the storage class of the source object to create the object replica.  For valid values, see the StorageClass element of the PUT Bucket replication action in the Amazon Simple Storage Service API Reference.
     */
-  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.native
+  var StorageClass: js.UndefOr[typings.awsSdk.s3Mod.StorageClass] = js.undefined
 }
 object Destination {
   

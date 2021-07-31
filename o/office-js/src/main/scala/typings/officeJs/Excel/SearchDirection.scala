@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,12 +21,16 @@ object SearchDirection extends StObject {
     *
     */
   @js.native
-  sealed trait backwards extends SearchDirection
+  sealed trait backwards
+    extends StObject
+       with SearchDirection
   
   /**
     * Search in forward order.
     *
     */
   @js.native
-  sealed trait forward extends SearchDirection
+  sealed trait forward
+    extends StObject
+       with SearchDirection
 }

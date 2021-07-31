@@ -2,41 +2,39 @@ package typings.wordpressApiFetch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Createposts extends StObject {
   
-  var create_posts: String = js.native
+  var create_posts: String
   
-  var delete_others_posts: String = js.native
+  var delete_others_posts: String
   
-  var delete_post: String = js.native
+  var delete_post: String
   
-  var delete_posts: String = js.native
+  var delete_posts: String
   
-  var delete_private_posts: String = js.native
+  var delete_private_posts: String
   
-  var delete_published_posts: String = js.native
+  var delete_published_posts: String
   
-  var edit_others_posts: String = js.native
+  var edit_others_posts: String
   
-  var edit_post: String = js.native
+  var edit_post: String
   
-  var edit_posts: String = js.native
+  var edit_posts: String
   
-  var edit_private_posts: String = js.native
+  var edit_private_posts: String
   
-  var edit_published_posts: String = js.native
+  var edit_published_posts: String
   
-  var publish_posts: String = js.native
+  var publish_posts: String
   
-  var read: String = js.native
+  var read: String
   
-  var read_post: String = js.native
+  var read_post: String
   
-  var read_private_posts: String = js.native
+  var read_private_posts: String
 }
 object Createposts {
   

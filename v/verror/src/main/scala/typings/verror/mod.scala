@@ -6,27 +6,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("verror", JSImport.Namespace)
   @js.native
-  class ^ protected () extends VError {
-    def this(message: js.UndefOr[scala.Nothing], params: js.Any*) = this()
+  class ^ protected ()
+    extends StObject
+       with VError {
     def this(message: String, params: js.Any*) = this()
+    def this(message: Unit, params: js.Any*) = this()
     def this(options: Error, message: String, params: js.Any*) = this()
     def this(options: Options, message: String, params: js.Any*) = this()
+    
+    /* CompleteClass */
+    override def cause(): js.UndefOr[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   @JSImport("verror", JSImport.Namespace)
   @js.native
-  val ^ : Instantiable3[
+  val ^ : js.Object & (Instantiable3[
     /* options */ Options | Error, 
     /* message */ String, 
     /* params (repeated) */ js.Any, 
     VError
-  ] = js.native
+  ]) = js.native
   
   /*
     * Represents a collection of errors for the purpose of consumers that generally
@@ -36,10 +46,21 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "MultiError")
   @js.native
-  class MultiError protected () extends VError {
+  class MultiError protected ()
+    extends StObject
+       with VError {
     def this(errors: js.Array[Error]) = this()
     
+    /* CompleteClass */
+    override def cause(): js.UndefOr[Error] = js.native
+    
     def errors(): js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /*
@@ -50,12 +71,25 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "SError")
   @js.native
-  class SError () extends VError
-  
-  @js.native
-  trait VError extends Error {
+  class SError ()
+    extends StObject
+       with VError {
     
-    def cause(): js.UndefOr[Error] = js.native
+    /* CompleteClass */
+    override def cause(): js.UndefOr[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  trait VError
+    extends StObject
+       with Error {
+    
+    def cause(): js.UndefOr[Error]
   }
   object VError {
     
@@ -80,9 +114,20 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("verror", "VError")
   @js.native
-  class VErrorCls protected () extends VError {
+  class VErrorCls protected ()
+    extends StObject
+       with VError {
     def this(options: Error, message: String, params: js.Any*) = this()
     def this(options: Options, message: String, params: js.Any*) = this()
+    
+    /* CompleteClass */
+    override def cause(): js.UndefOr[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /*
@@ -92,57 +137,61 @@ object mod extends Shortcut {
     */
   @JSImport("verror", "WError")
   @js.native
-  class WError () extends VError
+  class WError ()
+    extends StObject
+       with VError {
+    
+    /* CompleteClass */
+    override def cause(): js.UndefOr[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   /* static member */
-  @JSImport("verror", "cause")
-  @js.native
-  def cause(err: Error): Error | Null = js.native
+  @scala.inline
+  def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
   
   /* static member */
-  @JSImport("verror", "errorForEach")
-  @js.native
-  def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("verror", "errorFromList")
-  @js.native
-  def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = js.native
+  @scala.inline
+  def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
   
   /* static member */
-  @JSImport("verror", "findCauseByName")
-  @js.native
-  def findCauseByName(err: Error, name: String): Error | Null = js.native
+  @scala.inline
+  def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
   
   /* static member */
-  @JSImport("verror", "fullStack")
-  @js.native
-  def fullStack(err: Error): String = js.native
+  @scala.inline
+  def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("verror", "hasCauseWithName")
-  @js.native
-  def hasCauseWithName(err: Error, name: String): Boolean = js.native
+  @scala.inline
+  def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("verror", "info")
-  @js.native
-  def info(err: Error): Info_ = js.native
+  @scala.inline
+  def info(err: Error): Info_ = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info_]
   
   type Info_ = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var cause: js.UndefOr[Error | Null] = js.native
+    var cause: js.UndefOr[Error | Null] = js.undefined
     
-    var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var info: js.UndefOr[Info_] = js.native
+    var info: js.UndefOr[Info_] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -190,18 +239,18 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Instantiable3[
+  type _To = js.Object & (Instantiable3[
     /* options */ Options | Error, 
     /* message */ String, 
     /* params (repeated) */ js.Any, 
     VError
-  ]
+  ])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Instantiable3[
+  override def _to: js.Object & (Instantiable3[
     /* options */ Options | Error, 
     /* message */ String, 
     /* params (repeated) */ js.Any, 
     VError
-  ] = ^
+  ]) = ^
 }

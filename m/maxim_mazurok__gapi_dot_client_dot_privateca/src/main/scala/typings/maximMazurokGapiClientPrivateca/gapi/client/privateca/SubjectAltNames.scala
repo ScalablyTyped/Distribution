@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubjectAltNames extends StObject {
   
   /** Contains additional subject alternative name values. */
-  var customSans: js.UndefOr[js.Array[X509Extension]] = js.native
+  var customSans: js.UndefOr[js.Array[X509Extension]] = js.undefined
   
   /** Contains only valid, fully-qualified host names. */
-  var dnsNames: js.UndefOr[js.Array[String]] = js.native
+  var dnsNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Contains only valid RFC 2822 E-mail addresses. */
-  var emailAddresses: js.UndefOr[js.Array[String]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Contains only valid 32-bit IPv4 addresses or RFC 4291 IPv6 addresses. */
-  var ipAddresses: js.UndefOr[js.Array[String]] = js.native
+  var ipAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Contains only valid RFC 3986 URIs. */
-  var uris: js.UndefOr[js.Array[String]] = js.native
+  var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SubjectAltNames {
   

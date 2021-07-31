@@ -7,16 +7,18 @@ import typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelInputMod.Delet
 import typings.awsSdkClientPinpointBrowser.typesDeleteEmailChannelOutputMod.DeleteEmailChannelOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteEmailChannelCommandMod {
   
   @JSImport("@aws-sdk/client-pinpoint-browser/commands/DeleteEmailChannelCommand", "DeleteEmailChannelCommand")
   @js.native
-  class DeleteEmailChannelCommand protected () extends Command[
+  class DeleteEmailChannelCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DeleteEmailChannelInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object deleteEmailChannelCommandMod {
         ] {
     def this(input: DeleteEmailChannelInput) = this()
     
+    /* CompleteClass */
+    override val input: DeleteEmailChannelInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteEmailChannelInput, DeleteEmailChannelOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, Blob> */ js.Any,
       configuration: PinpointResolvedConfiguration
+    ): Handler[DeleteEmailChannelInput, DeleteEmailChannelOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: PinpointResolvedConfiguration,
+      options: js.Any
     ): Handler[DeleteEmailChannelInput, DeleteEmailChannelOutput] = js.native
   }
 }

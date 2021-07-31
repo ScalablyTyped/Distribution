@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maintain extends StObject {
   
-  var admin: Boolean = js.native
+  var admin: Boolean
   
-  var maintain: Boolean = js.native
+  var maintain: Boolean
   
-  var pull: Boolean = js.native
+  var pull: Boolean
   
-  var push: Boolean = js.native
+  var push: Boolean
   
-  var triage: Boolean = js.native
+  var triage: Boolean
 }
 object Maintain {
   

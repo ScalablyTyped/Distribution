@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Google Cloud Storage location where the output will be written to.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1GcsDestination extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaGoogleCloudVisionV1p2beta1GcsDestination extends StObject {
     * happen if, for example, the output JSON is too large and overflows into
     * multiple sharded files.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1GcsDestination {
   

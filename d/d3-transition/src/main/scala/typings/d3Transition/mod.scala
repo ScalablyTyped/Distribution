@@ -12,58 +12,46 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-transition", "active")
+  @JSImport("d3-transition", JSImport.Namespace)
   @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
-  @JSImport("d3-transition", "active")
-  @js.native
-  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-transition", "interrupt")
-  @js.native
-  def interrupt(node: BaseType): Unit = js.native
-  @JSImport("d3-transition", "interrupt")
-  @js.native
-  def interrupt(node: BaseType, name: String): Unit = js.native
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](): (Transition_[Null, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")().asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Null, name: String): (Transition_[Null, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Null, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: EnterElement, name: String): (Transition_[EnterElement, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[EnterElement, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document): (Transition_[Document, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Document, name: String): (Transition_[Document, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Document, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element): (Transition_[Element, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Element, name: String): (Transition_[Element, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Element, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window): (Transition_[Window, Datum, PElement, PDatum]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any]).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
+  @scala.inline
+  def active[Datum, PElement /* <: BaseType */, PDatum](node: Window, name: String): (Transition_[Window, Datum, PElement, PDatum]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("active")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[(Transition_[Window, Datum, PElement, PDatum]) | Null]
   
-  @JSImport("d3-transition", "transition")
-  @js.native
-  def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-transition", "transition")
-  @js.native
-  def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-transition", "transition")
-  @js.native
-  def transition[OldDatum](transition: Transition_[BaseType, _, BaseType, _]): Transition_[HTMLElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def interrupt(node: BaseType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def interrupt(node: BaseType, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interrupt")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def transition[OldDatum](): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")().asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def transition[OldDatum](name: String): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(name.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def transition[OldDatum](transition: Transition_[BaseType, js.Any, BaseType, js.Any]): Transition_[HTMLElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(transition.asInstanceOf[js.Any]).asInstanceOf[Transition_[HTMLElement, OldDatum, Null, Unit]]
   
   type SelectionOrTransition[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] = (Selection_[GElement, Datum, PElement, PDatum]) | (Transition_[GElement, Datum, PElement, PDatum])
   
@@ -158,7 +146,7 @@ object mod {
       func: js.Function2[
           /* transition */ Transition_[GElement, Datum, PElement, PDatum], 
           /* repeated */ js.Any, 
-          _
+          js.Any
         ],
       args: js.Any*
     ): this.type = js.native
@@ -684,7 +672,7 @@ object mod {
         *
         * @param transition A transition instance.
         */
-      def transition(transition: Transition_[BaseType, _, _, _]): Transition_[GElement, Datum, PElement, PDatum] = js.native
+      def transition(transition: Transition_[BaseType, js.Any, js.Any, js.Any]): Transition_[GElement, Datum, PElement, PDatum] = js.native
     }
   }
 }

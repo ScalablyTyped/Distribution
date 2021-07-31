@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Implementations of this service usually also implement service {@link HierarchyAccess} , which concerns the complementary role of providing access to
   * subelements of the hierarchy.
   */
-@js.native
 trait HierarchyElement
-  extends XHierarchicalName
+  extends StObject
+     with XHierarchicalName
      with XNamed
      with XProperty
      with XPropertyWithState

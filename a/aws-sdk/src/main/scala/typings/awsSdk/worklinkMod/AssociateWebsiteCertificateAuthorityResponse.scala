@@ -2,16 +2,14 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateWebsiteCertificateAuthorityResponse extends StObject {
   
   /**
     * A unique identifier for the CA.
     */
-  var WebsiteCaId: js.UndefOr[Id] = js.native
+  var WebsiteCaId: js.UndefOr[Id] = js.undefined
 }
 object AssociateWebsiteCertificateAuthorityResponse {
   

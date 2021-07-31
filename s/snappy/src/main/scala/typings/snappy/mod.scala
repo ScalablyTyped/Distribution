@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,19 +12,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("snappy/snappy", "compress")
-  @js.native
-  def compress(input: String, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = js.native
-  @JSImport("snappy/snappy", "compress")
-  @js.native
-  def compress(input: Buffer, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = js.native
+  @scala.inline
+  def compress(input: String, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(input: Buffer, callback: js.Function2[/* err */ Error, /* buffer */ js.UndefOr[Buffer], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("snappy/snappy", "compressSync")
-  @js.native
-  def compressSync(input: String): Buffer = js.native
-  @JSImport("snappy/snappy", "compressSync")
-  @js.native
-  def compressSync(input: Buffer): Buffer = js.native
+  @scala.inline
+  def compressSync(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def compressSync(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   @JSImport("snappy/snappy", "isValidCompressed")
   @js.native
@@ -50,15 +45,13 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isValidCompressed")(x.asInstanceOf[js.Any])
   
-  @JSImport("snappy/snappy", "uncompress")
-  @js.native
+  @scala.inline
   def uncompress(
     compressed: Buffer,
     opts: js.Any,
     callback: js.Function2[/* err */ Error, /* uncompressed */ js.UndefOr[String | Buffer], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompress")(compressed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("snappy/snappy", "uncompressSync")
-  @js.native
-  def uncompressSync(compressed: Buffer, opts: js.Any): String | Buffer = js.native
+  @scala.inline
+  def uncompressSync(compressed: Buffer, opts: js.Any): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("uncompressSync")(compressed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
 }

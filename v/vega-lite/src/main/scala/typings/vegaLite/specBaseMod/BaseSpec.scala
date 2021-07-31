@@ -8,36 +8,34 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseSpec extends StObject {
   
   /**
     * An object describing the data source. Set to `null` to ignore the parent's data source. If no data is set, it is derived from the parent.
     */
-  var data: js.UndefOr[Data | Null] = js.native
+  var data: js.UndefOr[Data | Null] = js.undefined
   
   /**
     * Description of this mark for commenting purpose.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the visualization for later reference.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Title for the plot.
     */
-  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.native
+  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.undefined
   
   /**
     * An array of data transformations such as filter and new field calculation.
     */
-  var transform: js.UndefOr[js.Array[Transform]] = js.native
+  var transform: js.UndefOr[js.Array[Transform]] = js.undefined
 }
 object BaseSpec {
   

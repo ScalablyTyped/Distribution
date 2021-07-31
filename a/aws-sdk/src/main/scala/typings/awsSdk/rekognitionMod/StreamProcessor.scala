@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamProcessor extends StObject {
   
   /**
     * Name of the Amazon Rekognition stream processor. 
     */
-  var Name: js.UndefOr[StreamProcessorName] = js.native
+  var Name: js.UndefOr[StreamProcessorName] = js.undefined
   
   /**
     * Current status of the Amazon Rekognition stream processor.
     */
-  var Status: js.UndefOr[StreamProcessorStatus] = js.native
+  var Status: js.UndefOr[StreamProcessorStatus] = js.undefined
 }
 object StreamProcessor {
   

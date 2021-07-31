@@ -2,13 +2,11 @@ package typings.rcTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children[RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */] extends StObject {
   
-  var children: js.UndefOr[js.Array[RecordType]] = js.native
+  var children: js.UndefOr[js.Array[RecordType]] = js.undefined
 }
 object Children {
   
@@ -19,7 +17,7 @@ object Children {
   }
   
   @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children[_], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */] (val x: Self with Children[RecordType]) extends AnyVal {
+  implicit class ChildrenMutableBuilder[Self <: Children[?], RecordType /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  children :std.Array<RecordType> | undefined} */ js.Any */] (val x: Self & Children[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: js.Array[RecordType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

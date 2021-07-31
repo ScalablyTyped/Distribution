@@ -2,28 +2,26 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subnet extends StObject {
   
-  var SubnetAvailabilityZone: js.UndefOr[AvailabilityZone] = js.native
+  var SubnetAvailabilityZone: js.UndefOr[AvailabilityZone] = js.undefined
   
   /**
     * The identifier of the subnet.
     */
-  var SubnetIdentifier: js.UndefOr[String] = js.native
+  var SubnetIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * If the subnet is associated with an Outpost, this value specifies the Outpost. For more information about RDS on Outposts, see Amazon RDS on AWS Outposts in the Amazon RDS User Guide. 
     */
-  var SubnetOutpost: js.UndefOr[Outpost] = js.native
+  var SubnetOutpost: js.UndefOr[Outpost] = js.undefined
   
   /**
     * The status of the subnet.
     */
-  var SubnetStatus: js.UndefOr[String] = js.native
+  var SubnetStatus: js.UndefOr[String] = js.undefined
 }
 object Subnet {
   

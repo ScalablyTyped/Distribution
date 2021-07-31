@@ -3,14 +3,15 @@ package typings.semver
 import typings.semver.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
   
   @JSImport("semver/classes/range", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Range {
+  class ^ protected ()
+    extends StObject
+       with Range {
     def this(range: String) = this()
     def this(range: Range) = this()
     def this(range: String, optionsOrLoose: Boolean) = this()

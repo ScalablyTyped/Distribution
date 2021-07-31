@@ -3,47 +3,47 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Update[T] extends Generic {
+trait Update[T]
+  extends StObject
+     with Generic {
   
-  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var id: String = js.native
+  var id: String
   
-  var if_primary_term: js.UndefOr[Double] = js.native
+  var if_primary_term: js.UndefOr[Double] = js.undefined
   
-  var if_seq_no: js.UndefOr[Double] = js.native
+  var if_seq_no: js.UndefOr[Double] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var require_alias: js.UndefOr[Boolean] = js.native
+  var require_alias: js.UndefOr[Boolean] = js.undefined
   
-  var retry_on_conflict: js.UndefOr[Double] = js.native
+  var retry_on_conflict: js.UndefOr[Double] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object Update {
   
@@ -54,7 +54,7 @@ object Update {
   }
   
   @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update[_], T] (val x: Self with Update[T]) extends AnyVal {
+  implicit class UpdateMutableBuilder[Self <: Update[?], T] (val x: Self & Update[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

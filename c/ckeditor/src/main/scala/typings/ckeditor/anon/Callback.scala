@@ -2,17 +2,15 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callback extends StObject {
   
-  var callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var internal: js.UndefOr[Boolean] = js.native
+  var internal: js.UndefOr[Boolean] = js.undefined
   
-  var noSnapshot: js.UndefOr[Boolean] = js.native
+  var noSnapshot: js.UndefOr[Boolean] = js.undefined
 }
 object Callback {
   

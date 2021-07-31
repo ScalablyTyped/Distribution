@@ -5,15 +5,17 @@ import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.TileLayer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @JSImport("leaflet", "heatLayer")
+  @JSImport("leaflet", JSImport.Namespace)
   @js.native
-  def heatLayer(latlngs: js.Array[LatLng_ | HeatLatLngTuple], options: HeatMapOptions): HeatLayer_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def heatLayer(latlngs: js.Array[LatLng_ | HeatLatLngTuple], options: HeatMapOptions): HeatLayer_ = (^.asInstanceOf[js.Dynamic].applyDynamic("heatLayer")(latlngs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HeatLayer_]
   
   type ColorGradientConfig = NumberDictionary[String]
   
@@ -30,20 +32,19 @@ object mod {
     def setOptions(options: HeatMapOptions): HeatLayer_ = js.native
   }
   
-  @js.native
   trait HeatMapOptions extends StObject {
     
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
-    var gradient: js.UndefOr[ColorGradientConfig] = js.native
+    var gradient: js.UndefOr[ColorGradientConfig] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minOpacity: js.UndefOr[Double] = js.native
+    var minOpacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object HeatMapOptions {
     

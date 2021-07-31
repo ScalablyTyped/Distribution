@@ -3,46 +3,44 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageItem extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Attachments: typings.activexOutlook.Outlook.Attachments = js.native
+  val Attachments: typings.activexOutlook.Outlook.Attachments
   
-  var Body: String = js.native
+  var Body: String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val CreationTime: VarDate = js.native
+  val CreationTime: VarDate
   
-  var Creator: String = js.native
+  var Creator: String
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val EntryID: String = js.native
+  val EntryID: String
   
-  val LastModificationTime: VarDate = js.native
+  val LastModificationTime: VarDate
   
   @JSName("Outlook.StorageItem_typekey")
-  var OutlookDotStorageItem_typekey: StorageItem = js.native
+  var OutlookDotStorageItem_typekey: StorageItem
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Size: Double = js.native
+  val Size: Double
   
-  var Subject: String = js.native
+  var Subject: String
   
-  val UserProperties: typings.activexOutlook.Outlook.UserProperties = js.native
+  val UserProperties: typings.activexOutlook.Outlook.UserProperties
 }
 object StorageItem {
   

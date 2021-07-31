@@ -11,7 +11,6 @@ import typings.d3Format.d3FormatStrings.Percentsign
 import typings.d3Format.d3FormatStrings.Plussign
 import typings.d3Format.d3FormatStrings.Space
 import typings.d3Format.d3FormatStrings.X
-import typings.d3Format.d3FormatStrings.^
 import typings.d3Format.d3FormatStrings._empty
 import typings.d3Format.d3FormatStrings.`-_`
 import typings.d3Format.d3FormatStrings.b
@@ -28,10 +27,13 @@ import typings.d3Format.d3FormatStrings.s
 import typings.d3Format.d3FormatStrings.x_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("d3-format", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("d3-format", "FormatSpecifier")
   @js.native
@@ -50,7 +52,7 @@ object mod {
       * '^' - Forces the field to be centered within the available space.
       * '=' - Like '>', but with any sign and symbol to the left of any padding.
       */
-    var align: Greaterthansign | Lessthansign | ^ | Equalssign = js.native
+    var align: Greaterthansign | Lessthansign | typings.d3Format.d3FormatStrings.^ | Equalssign = js.native
     
     /**
       * The comma (,) option enables the use of a group separator, such as a comma for thousands.
@@ -133,81 +135,72 @@ object mod {
     var zero: Boolean = js.native
   }
   
-  @JSImport("d3-format", "format")
-  @js.native
-  def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = js.native
+  @scala.inline
+  def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @JSImport("d3-format", "formatDefaultLocale")
-  @js.native
-  def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = js.native
+  @scala.inline
+  def formatDefaultLocale(defaultLocale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDefaultLocale")(defaultLocale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @JSImport("d3-format", "formatLocale")
-  @js.native
-  def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = js.native
+  @scala.inline
+  def formatLocale(locale: FormatLocaleDefinition): FormatLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("formatLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[FormatLocaleObject]
   
-  @JSImport("d3-format", "formatPrefix")
-  @js.native
-  def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = js.native
+  @scala.inline
+  def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPrefix")(specifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* n */ Double | ValueOf, String]]
   
-  @JSImport("d3-format", "formatSpecifier")
-  @js.native
-  def formatSpecifier(specifier: String): FormatSpecifier_ = js.native
+  @scala.inline
+  def formatSpecifier(specifier: String): FormatSpecifier_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSpecifier")(specifier.asInstanceOf[js.Any]).asInstanceOf[FormatSpecifier_]
   
-  @JSImport("d3-format", "precisionFixed")
-  @js.native
-  def precisionFixed(step: Double): Double = js.native
+  @scala.inline
+  def precisionFixed(step: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("precisionFixed")(step.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("d3-format", "precisionPrefix")
-  @js.native
-  def precisionPrefix(step: Double, value: Double): Double = js.native
+  @scala.inline
+  def precisionPrefix(step: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionPrefix")(step.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("d3-format", "precisionRound")
-  @js.native
-  def precisionRound(step: Double, max: Double): Double = js.native
+  @scala.inline
+  def precisionRound(step: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("precisionRound")(step.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait FormatLocaleDefinition extends StObject {
     
     /**
       * The currency prefix and suffix (e.g., ["$", ""]).
       */
-    var currency: js.Tuple2[String, String] = js.native
+    var currency: js.Tuple2[String, String]
     
     /**
       * The decimal point (e.g., ".")
       */
-    var decimal: String = js.native
+    var decimal: String
     
     /**
       * The array of group sizes (e.g., [3]), cycled as needed.
       */
-    var grouping: js.Array[Double] = js.native
+    var grouping: js.Array[Double]
     
     /**
       * Optional; the minus sign (defaults to "−").
       */
-    var minus: js.UndefOr[String] = js.native
+    var minus: js.UndefOr[String] = js.undefined
     
     /**
       * Optional; the not-a-number value (defaults "NaN").
       */
-    var nan: js.UndefOr[String] = js.native
+    var nan: js.UndefOr[String] = js.undefined
     
     /**
       * An optional array of ten strings to replace the numerals 0-9.
       */
-    var numerals: js.UndefOr[js.Array[String]] = js.native
+    var numerals: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional symbol to replace the `percent` suffix; the percent suffix (defaults to "%").
       */
-    var percent: js.UndefOr[String] = js.native
+    var percent: js.UndefOr[String] = js.undefined
     
     /**
       * The group separator (e.g., ","). Note that the thousands property is a misnomer, as
       * the grouping definition allows groups other than thousands.
       */
-    var thousands: String = js.native
+    var thousands: String
   }
   object FormatLocaleDefinition {
     
@@ -269,7 +262,6 @@ object mod {
     }
   }
   
-  @js.native
   trait FormatLocaleObject extends StObject {
     
     /**
@@ -279,7 +271,7 @@ object mod {
       * @param specifier A Specifier string.
       * @throws Error on invalid format specifier.
       */
-    def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String] = js.native
+    def format(specifier: String): js.Function1[/* n */ Double | ValueOf, String]
     
     /**
       * Returns a new format function for the given string specifier. The returned function
@@ -291,7 +283,7 @@ object mod {
       * @param value The reference value to determine the appropriate SI prefix.
       * @throws Error on invalid format specifier.
       */
-    def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String] = js.native
+    def formatPrefix(specifier: String, value: Double): js.Function1[/* n */ Double | ValueOf, String]
   }
   object FormatLocaleObject {
     
@@ -315,7 +307,6 @@ object mod {
     }
   }
   
-  @js.native
   trait FormatSpecifierObject extends StObject {
     
     /**
@@ -326,17 +317,17 @@ object mod {
       * '^' - Forces the field to be centered within the available space.
       * '=' - Like '>', but with any sign and symbol to the left of any padding.
       */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /**
       * The comma (,) option enables the use of a group separator, such as a comma for thousands.
       */
-    var comma: js.UndefOr[String] = js.native
+    var comma: js.UndefOr[String] = js.undefined
     
     /**
       * fill can be any character. The presence of a fill character is signaled by the align character following it.
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /**
       * Depending on the type, the precision either indicates the number of digits that follow the decimal point (types 'f' and '%'),
@@ -346,7 +337,7 @@ object mod {
       *
       * See precisionFixed and precisionRound for help picking an appropriate precision.
       */
-    var precision: js.UndefOr[String] = js.native
+    var precision: js.UndefOr[String] = js.undefined
     
     /**
       * The sign can be:
@@ -357,7 +348,7 @@ object mod {
       * ' ' (space) - a space for positive and a minus sign for negative.
       *
       */
-    var sign: js.UndefOr[String] = js.native
+    var sign: js.UndefOr[String] = js.undefined
     
     /**
       * The symbol can be:
@@ -366,13 +357,13 @@ object mod {
       * '#' - for binary, octal, or hexadecimal notation, prefix by 0b, 0o, or 0x, respectively.
       * '' (none) - no symbol. (Default behavior.)
       */
-    var symbol: js.UndefOr[String] = js.native
+    var symbol: js.UndefOr[String] = js.undefined
     
     /**
       * The '~' option trims insignificant trailing zeros across all format types.
       * This is most commonly used in conjunction with types 'r', 'e', 's' and '%'.
       */
-    var trim: js.UndefOr[String] = js.native
+    var trim: js.UndefOr[String] = js.undefined
     
     /**
       * The available type values are:
@@ -395,18 +386,18 @@ object mod {
       * the type 'n' is shorthand for ',g'. For the 'g', 'n' and '' (none) types,
       * decimal notation is used if the resulting string would have precision or fewer digits; otherwise, exponent notation is used.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /**
       * The width defines the minimum field width;
       * if not specified, then the width will be determined by the content.
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     /**
       * The zero (0) option enables zero-padding; this implicitly sets fill to 0 and align to =.
       */
-    var zero: js.UndefOr[String] = js.native
+    var zero: js.UndefOr[String] = js.undefined
   }
   object FormatSpecifierObject {
     

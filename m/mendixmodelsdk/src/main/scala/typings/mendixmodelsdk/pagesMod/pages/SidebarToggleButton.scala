@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -61,9 +60,8 @@ object SidebarToggleButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.create")
-  @js.native
-  def create(model: IModel): SidebarToggleButton = js.native
+  @scala.inline
+  def create(model: IModel): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -74,9 +72,8 @@ object SidebarToggleButton {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): SidebarToggleButton = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -87,9 +84,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): SidebarToggleButton = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -100,9 +96,8 @@ object SidebarToggleButton {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -113,9 +108,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -126,9 +120,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -139,9 +132,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -152,9 +144,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -165,9 +156,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): SidebarToggleButton = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -178,9 +168,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): SidebarToggleButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -191,9 +180,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): SidebarToggleButton = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -204,9 +192,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): SidebarToggleButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -217,9 +204,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): SidebarToggleButton = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -230,9 +216,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): SidebarToggleButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -243,9 +228,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): SidebarToggleButton = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -256,9 +240,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -269,9 +252,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -282,9 +264,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -295,9 +276,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -308,9 +288,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -321,9 +300,8 @@ object SidebarToggleButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): SidebarToggleButton = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -334,9 +312,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SidebarToggleButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -347,9 +324,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): SidebarToggleButton = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -360,9 +336,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -373,9 +348,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): SidebarToggleButton = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -386,9 +360,8 @@ object SidebarToggleButton {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): SidebarToggleButton = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -399,9 +372,8 @@ object SidebarToggleButton {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -412,9 +384,8 @@ object SidebarToggleButton {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -425,9 +396,8 @@ object SidebarToggleButton {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -438,9 +408,8 @@ object SidebarToggleButton {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -451,9 +420,8 @@ object SidebarToggleButton {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -464,9 +432,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -477,9 +444,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): SidebarToggleButton = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -490,9 +456,8 @@ object SidebarToggleButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -503,9 +468,8 @@ object SidebarToggleButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -516,9 +480,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SidebarToggleButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -529,9 +492,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): SidebarToggleButton = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -542,9 +504,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -555,9 +516,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -568,9 +528,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -581,9 +540,8 @@ object SidebarToggleButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -594,9 +552,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -607,9 +564,8 @@ object SidebarToggleButton {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): SidebarToggleButton = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -620,9 +576,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -633,9 +588,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -646,9 +600,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -659,9 +612,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -672,9 +624,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -685,9 +636,8 @@ object SidebarToggleButton {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): SidebarToggleButton = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -698,9 +648,8 @@ object SidebarToggleButton {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SidebarToggleButton = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -711,9 +660,8 @@ object SidebarToggleButton {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): SidebarToggleButton = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /**
     * Creates and returns a new SidebarToggleButton instance in the SDK and on the server.
@@ -724,9 +672,8 @@ object SidebarToggleButton {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): SidebarToggleButton = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): SidebarToggleButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[SidebarToggleButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SidebarToggleButton.structureTypeName")

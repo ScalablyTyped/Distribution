@@ -10,9 +10,9 @@ Simple, lightweight and modern library library for making visual DOM Selections.
 | ------------------ | :-------------: |
 | Full name          | @simonwep/selection-js |
 | Keywords           | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
-| # releases         | 24 |
+| # releases         | 27 |
 | # dependents       | 2 |
-| # downloads        | 47286 |
+| # downloads        | 73484 |
 | # stars            | 0 |
 
 ## Links

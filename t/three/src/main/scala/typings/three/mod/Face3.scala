@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Face3")
@@ -20,18 +19,12 @@ class Face3 protected ()
   def this(a: Double, b: Double, c: Double) = this()
   def this(a: Double, b: Double, c: Double, normal: typings.three.vector3Mod.Vector3) = this()
   def this(a: Double, b: Double, c: Double, vertexNormals: js.Array[typings.three.vector3Mod.Vector3]) = this()
+  def this(a: Double, b: Double, c: Double, normal: Unit, color: typings.three.colorMod.Color) = this()
   def this(
     a: Double,
     b: Double,
     c: Double,
-    normal: js.UndefOr[scala.Nothing],
-    color: typings.three.colorMod.Color
-  ) = this()
-  def this(
-    a: Double,
-    b: Double,
-    c: Double,
-    normal: js.UndefOr[scala.Nothing],
+    normal: Unit,
     vertexColors: js.Array[typings.three.colorMod.Color]
   ) = this()
   def this(
@@ -62,19 +55,12 @@ class Face3 protected ()
     vertexNormals: js.Array[typings.three.vector3Mod.Vector3],
     vertexColors: js.Array[typings.three.colorMod.Color]
   ) = this()
+  def this(a: Double, b: Double, c: Double, normal: Unit, color: Unit, materialIndex: Double) = this()
   def this(
     a: Double,
     b: Double,
     c: Double,
-    normal: js.UndefOr[scala.Nothing],
-    color: js.UndefOr[scala.Nothing],
-    materialIndex: Double
-  ) = this()
-  def this(
-    a: Double,
-    b: Double,
-    c: Double,
-    normal: js.UndefOr[scala.Nothing],
+    normal: Unit,
     color: typings.three.colorMod.Color,
     materialIndex: Double
   ) = this()
@@ -82,7 +68,7 @@ class Face3 protected ()
     a: Double,
     b: Double,
     c: Double,
-    normal: js.UndefOr[scala.Nothing],
+    normal: Unit,
     vertexColors: js.Array[typings.three.colorMod.Color],
     materialIndex: Double
   ) = this()
@@ -91,7 +77,7 @@ class Face3 protected ()
     b: Double,
     c: Double,
     normal: typings.three.vector3Mod.Vector3,
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     materialIndex: Double
   ) = this()
   def this(
@@ -115,7 +101,7 @@ class Face3 protected ()
     b: Double,
     c: Double,
     vertexNormals: js.Array[typings.three.vector3Mod.Vector3],
-    color: js.UndefOr[scala.Nothing],
+    color: Unit,
     materialIndex: Double
   ) = this()
   def this(

@@ -32,14 +32,13 @@ import typings.awsSdkClientLambdaNode.updateFunctionCodeExceptionsUnionMod.Updat
 import typings.awsSdkClientLambdaNode.updateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesServiceExceptionMod {
   
-  @js.native
   trait ServiceException
-    extends AddPermissionExceptionsUnion
+    extends StObject
+       with AddPermissionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateEventSourceMappingExceptionsUnion
        with CreateFunctionExceptionsUnion
@@ -70,13 +69,13 @@ object typesServiceExceptionMod {
        with UpdateFunctionCodeExceptionsUnion
        with UpdateFunctionConfigurationExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException
   }
   object ServiceException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException): ServiceException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ServiceException = {
+      val __obj = js.Dynamic.literal(name = "ServiceException")
       __obj.asInstanceOf[ServiceException]
     }
     
@@ -88,18 +87,17 @@ object typesServiceExceptionMod {
     }
   }
   
-  @js.native
   trait ServiceExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object ServiceExceptionDetails {
     

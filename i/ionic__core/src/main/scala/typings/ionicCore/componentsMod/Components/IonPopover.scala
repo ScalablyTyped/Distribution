@@ -9,7 +9,6 @@ import typings.ionicCore.mod.FrameworkDelegate
 import typings.ionicCore.overlaysInterfaceMod.OverlayEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,9 +47,9 @@ trait IonPopover extends StObject {
     * @param role The role of the element that is dismissing the popover. For example, 'cancel' or 'backdrop'.
     */
   def dismiss(): js.Promise[Boolean] = js.native
-  def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any): js.Promise[Boolean] = js.native
   def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
+  def dismiss(data: Unit, role: String): js.Promise[Boolean] = js.native
   
   /**
     * Animation to use when the popover is presented.

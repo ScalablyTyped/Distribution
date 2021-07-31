@@ -4,17 +4,15 @@ import typings.formatjsEcma402Abstract.displaynamesMod.ScriptCode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongNarrowShort extends StObject {
   
-  var long: Record[ScriptCode, String] = js.native
+  var long: Record[ScriptCode, String]
   
-  var narrow: Record[ScriptCode, String] = js.native
+  var narrow: Record[ScriptCode, String]
   
-  var short: Record[ScriptCode, String] = js.native
+  var short: Record[ScriptCode, String]
 }
 object LongNarrowShort {
   

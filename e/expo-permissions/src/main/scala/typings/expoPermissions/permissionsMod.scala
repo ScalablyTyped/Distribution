@@ -4,10 +4,13 @@ import typings.expoPermissions.permissionsTypesMod.PermissionResponse
 import typings.expoPermissions.permissionsTypesMod.PermissionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permissionsMod {
+  
+  @JSImport("expo-permissions/build/Permissions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo-permissions/build/Permissions", "AUDIO_RECORDING")
   @js.native
@@ -46,13 +49,13 @@ object permissionsMod {
   object PermissionStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus with String] = js.native
+    def apply(value: String): js.UndefOr[typings.unimodulesPermissionsInterface.mod.PermissionStatus & String] = js.native
     
-    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED with String = js.native
+    /* "denied" */ val DENIED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.DENIED & String = js.native
     
-    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED with String = js.native
+    /* "granted" */ val GRANTED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.GRANTED & String = js.native
     
-    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED with String = js.native
+    /* "undetermined" */ val UNDETERMINED: typings.unimodulesPermissionsInterface.mod.PermissionStatus.UNDETERMINED & String = js.native
   }
   
   @JSImport("expo-permissions/build/Permissions", "REMINDERS")
@@ -67,11 +70,9 @@ object permissionsMod {
   @js.native
   val USER_FACING_NOTIFICATIONS: /* "userFacingNotifications" */ String = js.native
   
-  @JSImport("expo-permissions/build/Permissions", "askAsync")
-  @js.native
-  def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = js.native
+  @scala.inline
+  def askAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("askAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
   
-  @JSImport("expo-permissions/build/Permissions", "getAsync")
-  @js.native
-  def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = js.native
+  @scala.inline
+  def getAsync(types: PermissionType*): js.Promise[PermissionResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAsync")(types.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PermissionResponse]]
 }

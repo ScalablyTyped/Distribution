@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssistiveWindowButtonClickedDetails extends StObject {
   
   /** The ID of the button clicked. */
-  var buttonID: AssistiveWindowButton = js.native
+  var buttonID: AssistiveWindowButton
   
   /** The type of the assistive window. */
-  var windowType: AssistiveWindowType = js.native
+  var windowType: AssistiveWindowType
 }
 object AssistiveWindowButtonClickedDetails {
   

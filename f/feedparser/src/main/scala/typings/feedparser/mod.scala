@@ -7,7 +7,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,17 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Attrs extends StObject {
     
-    var local: String = js.native
+    var local: String
     
-    var name: String = js.native
+    var name: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Attrs {
     
@@ -59,14 +57,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Enclosure extends StObject {
     
-    var length: js.UndefOr[String] = js.native
+    var length: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Enclosure {
     
@@ -101,9 +98,9 @@ object mod {
     
     var _emitted_meta: Boolean = js.native
     
-    /* private */ def _flush(done: js.Function0[_]): Unit = js.native
+    /* private */ def _flush(done: js.Function0[js.Any]): Unit = js.native
     
-    /* private */ def _transform(data: js.Any, encoding: String, done: js.Function0[_]): Unit = js.native
+    /* private */ def _transform(data: js.Any, encoding: String, done: js.Function0[js.Any]): Unit = js.native
     
     def addListener(ev: js.Any, fn: js.Any): js.Any = js.native
     
@@ -157,7 +154,7 @@ object mod {
     
     def setMaxListeners(n: js.Any): js.Any = js.native
     
-    var stack: js.Array[_] = js.native
+    var stack: js.Array[js.Any] = js.native
     
     var stream: SAXStream = js.native
     
@@ -167,15 +164,14 @@ object mod {
     
     var xhtml: StringDictionary[js.Any] = js.native
     
-    var xmlbase: js.Array[_] = js.native
+    var xmlbase: js.Array[js.Any] = js.native
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object Image {
     
@@ -196,36 +192,35 @@ object mod {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
     
-    var comments: String = js.native
+    var comments: String
     
-    var date: Date | Null = js.native
+    var date: Date | Null
     
-    var description: String = js.native
+    var description: String
     
-    var enclosures: js.Array[Enclosure] = js.native
+    var enclosures: js.Array[Enclosure]
     
-    var guid: String = js.native
+    var guid: String
     
-    var image: Image = js.native
+    var image: Image
     
-    var link: String = js.native
+    var link: String
     
-    var meta: Meta = js.native
+    var meta: Meta
     
-    var origlink: String = js.native
+    var origlink: String
     
-    var pubdate: Date | Null = js.native
+    var pubdate: Date | Null
     
-    var summary: String = js.native
+    var summary: String
     
-    var title: String = js.native
+    var title: String
   }
   object Item {
     
@@ -244,7 +239,7 @@ object mod {
       summary: String,
       title: String
     ): Item = {
-      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enclosures = enclosures.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], origlink = origlink.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], enclosures = enclosures.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], origlink = origlink.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], date = null, pubdate = null)
       __obj.asInstanceOf[Item]
     }
     
@@ -307,40 +302,39 @@ object mod {
     }
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
     
-    var copyright: String = js.native
+    var copyright: String
     
-    var date: Date | Null = js.native
+    var date: Date | Null
     
-    var description: String = js.native
+    var description: String
     
-    var favicon: String = js.native
+    var favicon: String
     
-    var generator: String = js.native
+    var generator: String
     
-    var image: Image = js.native
+    var image: Image
     
-    var language: String = js.native
+    var language: String
     
-    var link: String = js.native
+    var link: String
     
-    var ns: js.Array[NS] = js.native
+    var ns: js.Array[NS]
     
-    var pubdate: Date | Null = js.native
+    var pubdate: Date | Null
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: Type = js.native
+    var `type`: Type
     
-    var version: String = js.native
+    var version: String
     
-    var xmlurl: String = js.native
+    var xmlurl: String
   }
   object Meta {
     
@@ -361,7 +355,7 @@ object mod {
       version: String,
       xmlurl: String
     ): Meta = {
-      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favicon = favicon.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], xmlurl = xmlurl.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], categories = categories.asInstanceOf[js.Any], copyright = copyright.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], favicon = favicon.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], xmlurl = xmlurl.asInstanceOf[js.Any], date = null, pubdate = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Meta]
     }
@@ -435,18 +429,17 @@ object mod {
   
   type Node = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var MAX_BUFFER_LENGTH: js.UndefOr[Double] = js.native
+    var MAX_BUFFER_LENGTH: js.UndefOr[Double] = js.undefined
     
-    var addmeta: js.UndefOr[Boolean] = js.native
+    var addmeta: js.UndefOr[Boolean] = js.undefined
     
-    var feedurl: js.UndefOr[String] = js.native
+    var feedurl: js.UndefOr[String] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var resume_saxerror: js.UndefOr[Boolean] = js.native
+    var resume_saxerror: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

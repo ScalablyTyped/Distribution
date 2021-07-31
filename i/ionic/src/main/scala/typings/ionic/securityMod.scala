@@ -6,7 +6,6 @@ import typings.ionic.definitionsMod.SecurityProfile
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object securityMod {
@@ -25,12 +24,11 @@ object securityMod {
     val token: String = js.native
   }
   
-  @js.native
   trait SecurityClientDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val token: String = js.native
+    val token: String
   }
   object SecurityClientDeps {
     

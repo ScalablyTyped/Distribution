@@ -2,13 +2,11 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionRestrictions extends StObject {
   
-  var geoRestriction: DistributionRestrictionsGeoRestriction = js.native
+  var geoRestriction: DistributionRestrictionsGeoRestriction
 }
 object DistributionRestrictions {
   

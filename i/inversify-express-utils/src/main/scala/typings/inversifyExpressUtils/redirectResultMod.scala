@@ -6,24 +6,35 @@ import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redirectResultMod {
   
   @JSImport("inversify-express-utils/dts/results/RedirectResult", JSImport.Default)
   @js.native
-  class default protected () extends RedirectResult {
+  class default protected ()
+    extends StObject
+       with RedirectResult {
     def this(location: String, apiController: BaseHttpController) = this()
     def this(location: URL_, apiController: BaseHttpController) = this()
-  }
-  
-  @js.native
-  trait RedirectResult extends IHttpActionResult {
     
+    /* CompleteClass */
     var apiController: js.Any = js.native
     
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
+    
+    /* CompleteClass */
     var location: js.Any = js.native
+  }
+  
+  trait RedirectResult
+    extends StObject
+       with IHttpActionResult {
+    
+    var apiController: js.Any
+    
+    var location: js.Any
   }
   object RedirectResult {
     

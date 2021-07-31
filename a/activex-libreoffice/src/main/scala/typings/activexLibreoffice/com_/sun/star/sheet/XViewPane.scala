@@ -5,39 +5,39 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a pane in a view of a spreadsheet document.
   * @see com.sun.star.sheet.SpreadsheetViewPane
   */
-@js.native
-trait XViewPane extends XInterface {
+trait XViewPane
+  extends StObject
+     with XInterface {
   
   /** returns the first column that is visible in the pane. */
-  var FirstVisibleColumn: Double = js.native
+  var FirstVisibleColumn: Double
   
   /** returns the first row that is visible in the pane. */
-  var FirstVisibleRow: Double = js.native
+  var FirstVisibleRow: Double
   
   /** returns the address of the cell range that consists of the cells which are visible in the pane. */
-  val VisibleRange: CellRangeAddress = js.native
+  val VisibleRange: CellRangeAddress
   
   /** returns the first column that is visible in the pane. */
-  def getFirstVisibleColumn(): Double = js.native
+  def getFirstVisibleColumn(): Double
   
   /** returns the first row that is visible in the pane. */
-  def getFirstVisibleRow(): Double = js.native
+  def getFirstVisibleRow(): Double
   
   /** returns the address of the cell range that consists of the cells which are visible in the pane. */
-  def getVisibleRange(): CellRangeAddress = js.native
+  def getVisibleRange(): CellRangeAddress
   
   /** sets the first column that is visible in the pane. */
-  def setFirstVisibleColumn(nFirstVisibleColumn: Double): Unit = js.native
+  def setFirstVisibleColumn(nFirstVisibleColumn: Double): Unit
   
   /** sets the first row that is visible in the pane. */
-  def setFirstVisibleRow(nFirstVisibleRow: Double): Unit = js.native
+  def setFirstVisibleRow(nFirstVisibleRow: Double): Unit
 }
 object XViewPane {
   

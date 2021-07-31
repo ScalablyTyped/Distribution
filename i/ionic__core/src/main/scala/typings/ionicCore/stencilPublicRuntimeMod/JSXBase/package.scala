@@ -1,11 +1,8 @@
-package typings.ionicCore.stencilPublicRuntimeMod
+package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object JSXBase {
-  
-  type AudioHTMLAttributes[T] = typings.ionicCore.stencilPublicRuntimeMod.JSXBase.MediaHTMLAttributes[T]
-}
+
+type AudioHTMLAttributes[T] = typings.ionicCore.stencilPublicRuntimeMod.JSXBase.MediaHTMLAttributes[T]

@@ -3,20 +3,18 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoRGBType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RGBColor extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.RGBColor_typekey")
-  var PowerPointDotRGBColor_typekey: RGBColor = js.native
+  var PowerPointDotRGBColor_typekey: RGBColor
   
-  var RGB: MsoRGBType = js.native
+  var RGB: MsoRGBType
 }
 object RGBColor {
   

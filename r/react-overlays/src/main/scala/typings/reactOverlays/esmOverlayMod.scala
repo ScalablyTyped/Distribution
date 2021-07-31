@@ -20,7 +20,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmOverlayMod extends Shortcut {
@@ -31,44 +30,45 @@ object esmOverlayMod extends Shortcut {
     */
   @JSImport("react-overlays/esm/Overlay", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[OverlayProps with RefAttributes[HTMLElement]] = js.native
+  val default: ForwardRefExoticComponent[OverlayProps & RefAttributes[HTMLElement]] = js.native
   
-  @js.native
-  trait OverlayProps extends TransitionCallbacks {
+  trait OverlayProps
+    extends StObject
+       with TransitionCallbacks {
     
-    def children(value: ForceUpdate): ReactNode = js.native
+    def children(value: ForceUpdate): ReactNode
     
-    var container: js.UndefOr[DOMContainer[HTMLElement]] = js.native
+    var container: js.UndefOr[DOMContainer[HTMLElement]] = js.undefined
     
-    var containerPadding: js.UndefOr[Double] = js.native
+    var containerPadding: js.UndefOr[Double] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Offset] = js.native
+    var offset: js.UndefOr[Offset] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var popperConfig: js.UndefOr[OmitUsePopperOptionsplace] = js.native
+    var popperConfig: js.UndefOr[OmitUsePopperOptionsplace] = js.undefined
     
-    var rootClose: js.UndefOr[Boolean] = js.native
+    var rootClose: js.UndefOr[Boolean] = js.undefined
     
-    var rootCloseDisabled: js.UndefOr[Boolean] = js.native
+    var rootCloseDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var rootCloseEvent: js.UndefOr[MouseEvents] = js.native
+    var rootCloseEvent: js.UndefOr[MouseEvents] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
     
-    var target: DOMContainer[HTMLElement] = js.native
+    var target: DOMContainer[HTMLElement]
     
-    var transition: js.UndefOr[ComponentType[inbooleanundefinedappearb]] = js.native
+    var transition: js.UndefOr[ComponentType[inbooleanundefinedappearb]] = js.undefined
   }
   object OverlayProps {
     
     @scala.inline
     def apply(children: ForceUpdate => ReactNode): OverlayProps = {
-      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), target = null)
       __obj.asInstanceOf[OverlayProps]
     }
     
@@ -170,8 +170,8 @@ object esmOverlayMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[OverlayProps with RefAttributes[HTMLElement]]
+  type _To = ForwardRefExoticComponent[OverlayProps & RefAttributes[HTMLElement]]
   
   /* This means you don't have to write `default`, but can instead just say `esmOverlayMod.foo` */
-  override def _to: ForwardRefExoticComponent[OverlayProps with RefAttributes[HTMLElement]] = default
+  override def _to: ForwardRefExoticComponent[OverlayProps & RefAttributes[HTMLElement]] = default
 }

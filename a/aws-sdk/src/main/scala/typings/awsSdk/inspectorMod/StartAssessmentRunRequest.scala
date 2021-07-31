@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAssessmentRunRequest extends StObject {
   
   /**
     * You can specify the name for the assessment run. The name must be unique for the assessment template whose ARN is used to start the assessment run.
     */
-  var assessmentRunName: js.UndefOr[AssessmentRunName] = js.native
+  var assessmentRunName: js.UndefOr[AssessmentRunName] = js.undefined
   
   /**
     * The ARN of the assessment template of the assessment run that you want to start.
     */
-  var assessmentTemplateArn: Arn = js.native
+  var assessmentTemplateArn: Arn
 }
 object StartAssessmentRunRequest {
   

@@ -2,15 +2,16 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuToggleUtilMod {
   
-  @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle-util", "updateVisibility")
+  @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle-util", JSImport.Namespace)
   @js.native
-  def updateVisibility(): js.Promise[Boolean] = js.native
-  @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle-util", "updateVisibility")
-  @js.native
-  def updateVisibility(menu: String): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def updateVisibility(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")().asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def updateVisibility(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateVisibility")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

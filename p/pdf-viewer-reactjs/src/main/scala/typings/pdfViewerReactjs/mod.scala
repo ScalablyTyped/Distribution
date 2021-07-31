@@ -7,7 +7,6 @@ import typings.react.mod.Props
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -205,12 +204,11 @@ object mod {
   
   type DocClickHandler = js.Function0[Unit]
   
-  @js.native
   trait Document extends StObject {
     
-    var base64: js.UndefOr[String] = js.native
+    var base64: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Document {
     
@@ -237,10 +235,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Err extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Err {
     
@@ -262,56 +259,57 @@ object mod {
   trait PDFViewer
     extends Component[PDFViewerProps, js.Object, js.Any]
   
-  @js.native
-  trait PDFViewerProps extends Props[PDFViewer] {
+  trait PDFViewerProps
+    extends StObject
+       with Props[PDFViewer] {
     
-    var alert: js.UndefOr[AlertHandler] = js.native
+    var alert: js.UndefOr[AlertHandler] = js.undefined
     
-    var canvasCss: js.UndefOr[String] = js.native
+    var canvasCss: js.UndefOr[String] = js.undefined
     
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
-    var defaultScale: js.UndefOr[Double] = js.native
+    var defaultScale: js.UndefOr[Double] = js.undefined
     
-    var document: typings.std.Document = js.native
+    var document: typings.std.Document
     
-    var hideNavbar: js.UndefOr[Boolean] = js.native
+    var hideNavbar: js.UndefOr[Boolean] = js.undefined
     
-    var hideRotation: js.UndefOr[Boolean] = js.native
+    var hideRotation: js.UndefOr[Boolean] = js.undefined
     
-    var hideZoom: js.UndefOr[Boolean] = js.native
+    var hideZoom: js.UndefOr[Boolean] = js.undefined
     
-    var loader: js.UndefOr[ReactNode] = js.native
+    var loader: js.UndefOr[ReactNode] = js.undefined
     
-    var maxScale: js.UndefOr[Double] = js.native
+    var maxScale: js.UndefOr[Double] = js.undefined
     
-    var minScale: js.UndefOr[Double] = js.native
+    var minScale: js.UndefOr[Double] = js.undefined
     
-    var navbarOnTop: js.UndefOr[Boolean] = js.native
+    var navbarOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var navigation: js.UndefOr[js.Any] = js.native
+    var navigation: js.UndefOr[js.Any] = js.undefined
     
-    var onDocumentClick: js.UndefOr[DocClickHandler] = js.native
+    var onDocumentClick: js.UndefOr[DocClickHandler] = js.undefined
     
-    var onNextBtnClick: js.UndefOr[BtnClickHandler] = js.native
+    var onNextBtnClick: js.UndefOr[BtnClickHandler] = js.undefined
     
-    var onPrevBtnClick: js.UndefOr[BtnClickHandler] = js.native
+    var onPrevBtnClick: js.UndefOr[BtnClickHandler] = js.undefined
     
-    var onRotation: js.UndefOr[RotationClickHandler] = js.native
+    var onRotation: js.UndefOr[RotationClickHandler] = js.undefined
     
-    var onZoom: js.UndefOr[ZoomClickHandler] = js.native
+    var onZoom: js.UndefOr[ZoomClickHandler] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var protectContent: js.UndefOr[Boolean] = js.native
+    var protectContent: js.UndefOr[Boolean] = js.undefined
     
-    var rotationAngle: js.UndefOr[Double] = js.native
+    var rotationAngle: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var scaleStep: js.UndefOr[Double] = js.native
+    var scaleStep: js.UndefOr[Double] = js.undefined
     
-    var watermark: js.UndefOr[Watermark] = js.native
+    var watermark: js.UndefOr[Watermark] = js.undefined
   }
   object PDFViewerProps {
     
@@ -469,18 +467,17 @@ object mod {
   
   type RotationClickHandler = js.Function1[/* angle */ Double, Unit]
   
-  @js.native
   trait Watermark extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var diagonal: js.UndefOr[Boolean] = js.native
+    var diagonal: js.UndefOr[Boolean] = js.undefined
     
-    var opacity: js.UndefOr[String] = js.native
+    var opacity: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Watermark {
     

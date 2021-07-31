@@ -5,7 +5,6 @@ import typings.angularCompiler.outputAstMod.LiteralPiece
 import typings.angularCompiler.outputAstMod.PlaceholderPiece
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "LocalizedString")

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteTypesMod {
@@ -77,11 +76,7 @@ object sqliteTypesMod {
   trait Database extends StObject {
     
     def readTransaction(callback: SQLTransactionCallback): Unit = js.native
-    def readTransaction(
-      callback: SQLTransactionCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      successCallback: SQLVoidCallback
-    ): Unit = js.native
+    def readTransaction(callback: SQLTransactionCallback, errorCallback: Unit, successCallback: SQLVoidCallback): Unit = js.native
     def readTransaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
     def readTransaction(
       callback: SQLTransactionCallback,
@@ -90,11 +85,7 @@ object sqliteTypesMod {
     ): Unit = js.native
     
     def transaction(callback: SQLTransactionCallback): Unit = js.native
-    def transaction(
-      callback: SQLTransactionCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      successCallback: SQLVoidCallback
-    ): Unit = js.native
+    def transaction(callback: SQLTransactionCallback, errorCallback: Unit, successCallback: SQLVoidCallback): Unit = js.native
     def transaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
     def transaction(
       callback: SQLTransactionCallback,
@@ -107,17 +98,16 @@ object sqliteTypesMod {
   
   type DatabaseCallback = js.Function1[/* database */ Database, Unit]
   
-  @js.native
   trait Query extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var sql: String = js.native
+    var sql: String
   }
   object Query {
     
     @scala.inline
-    def apply(args: js.Array[_], sql: String): Query = {
+    def apply(args: js.Array[js.Any], sql: String): Query = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], sql = sql.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
@@ -126,7 +116,7 @@ object sqliteTypesMod {
     implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -136,19 +126,18 @@ object sqliteTypesMod {
     }
   }
   
-  @js.native
   trait ResultSet extends StObject {
     
-    var insertId: js.UndefOr[Double] = js.native
+    var insertId: js.UndefOr[Double] = js.undefined
     
-    var rows: js.Array[StringDictionary[_]] = js.native
+    var rows: js.Array[StringDictionary[js.Any]]
     
-    var rowsAffected: Double = js.native
+    var rowsAffected: Double
   }
   object ResultSet {
     
     @scala.inline
-    def apply(rows: js.Array[StringDictionary[_]], rowsAffected: Double): ResultSet = {
+    def apply(rows: js.Array[StringDictionary[js.Any]], rowsAffected: Double): ResultSet = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any], rowsAffected = rowsAffected.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
@@ -163,7 +152,7 @@ object sqliteTypesMod {
       def setInsertIdUndefined: Self = StObject.set(x, "insertId", js.undefined)
       
       @scala.inline
-      def setRows(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
@@ -173,10 +162,9 @@ object sqliteTypesMod {
     }
   }
   
-  @js.native
   trait ResultSetError extends StObject {
     
-    var error: Error = js.native
+    var error: Error
   }
   object ResultSetError {
     
@@ -194,14 +182,13 @@ object sqliteTypesMod {
     }
   }
   
-  @js.native
   trait SQLResultSet extends StObject {
     
-    var insertId: Double = js.native
+    var insertId: Double
     
-    var rows: SQLResultSetRowList = js.native
+    var rows: SQLResultSetRowList
     
-    var rowsAffected: Double = js.native
+    var rowsAffected: Double
   }
   object SQLResultSet {
     
@@ -225,12 +212,11 @@ object sqliteTypesMod {
     }
   }
   
-  @js.native
   trait SQLResultSetRowList extends StObject {
     
-    def item(index: Double): js.Any = js.native
+    def item(index: Double): js.Any
     
-    var length: Double = js.native
+    var length: Double
   }
   object SQLResultSetRowList {
     
@@ -259,30 +245,25 @@ object sqliteTypesMod {
   trait SQLTransaction extends StObject {
     
     def executeSql(sqlStatement: String): Unit = js.native
+    def executeSql(sqlStatement: String, args: js.Array[js.Any]): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      args: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
+      args: js.Array[js.Any],
+      callback: Unit,
       errorCallback: SQLStatementErrorCallback
     ): Unit = js.native
-    def executeSql(sqlStatement: String, args: js.UndefOr[scala.Nothing], callback: SQLStatementCallback): Unit = js.native
+    def executeSql(sqlStatement: String, args: js.Array[js.Any], callback: SQLStatementCallback): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      args: js.UndefOr[scala.Nothing],
+      args: js.Array[js.Any],
       callback: SQLStatementCallback,
       errorCallback: SQLStatementErrorCallback
     ): Unit = js.native
-    def executeSql(sqlStatement: String, args: js.Array[_]): Unit = js.native
+    def executeSql(sqlStatement: String, args: Unit, callback: Unit, errorCallback: SQLStatementErrorCallback): Unit = js.native
+    def executeSql(sqlStatement: String, args: Unit, callback: SQLStatementCallback): Unit = js.native
     def executeSql(
       sqlStatement: String,
-      args: js.Array[_],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: SQLStatementErrorCallback
-    ): Unit = js.native
-    def executeSql(sqlStatement: String, args: js.Array[_], callback: SQLStatementCallback): Unit = js.native
-    def executeSql(
-      sqlStatement: String,
-      args: js.Array[_],
+      args: Unit,
       callback: SQLStatementCallback,
       errorCallback: SQLStatementErrorCallback
     ): Unit = js.native
@@ -301,12 +282,13 @@ object sqliteTypesMod {
   ]
   
   @js.native
-  trait WebSQLDatabase extends Database {
+  trait WebSQLDatabase
+    extends StObject
+       with Database {
     
     def exec(queries: js.Array[Query], readOnly: Boolean, callback: SQLiteCallback): Unit = js.native
   }
   
-  @js.native
   trait Window extends StObject {
     
     var openDatabase: js.UndefOr[
@@ -318,7 +300,7 @@ object sqliteTypesMod {
           /* creationCallback */ js.UndefOr[DatabaseCallback], 
           Database
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Window {
     

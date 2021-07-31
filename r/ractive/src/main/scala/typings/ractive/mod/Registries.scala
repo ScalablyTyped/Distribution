@@ -3,27 +3,25 @@ package typings.ractive.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Registries[T /* <: Ractive[T] */] extends StObject {
   
-  var adaptors: Registry[Adaptor] = js.native
+  var adaptors: Registry[Adaptor]
   
-  var components: Registry[Component] = js.native
+  var components: Registry[Component]
   
-  var decorators: Registry[Decorator[T]] = js.native
+  var decorators: Registry[Decorator[T]]
   
-  var easings: Registry[Easing] = js.native
+  var easings: Registry[Easing]
   
-  var events: Registry[Event] = js.native
+  var events: Registry[Event]
   
-  var helpers: Registry[Helper] = js.native
+  var helpers: Registry[Helper]
   
-  var interpolators: Registry[Interpolator] = js.native
+  var interpolators: Registry[Interpolator]
   
-  var partials: Registry[Partial] = js.native
+  var partials: Registry[Partial]
 }
 object Registries {
   
@@ -43,7 +41,7 @@ object Registries {
   }
   
   @scala.inline
-  implicit class RegistriesMutableBuilder[Self <: Registries[_], T /* <: Ractive[T] */] (val x: Self with Registries[T]) extends AnyVal {
+  implicit class RegistriesMutableBuilder[Self <: Registries[?], T /* <: Ractive[T] */] (val x: Self & Registries[T]) extends AnyVal {
     
     @scala.inline
     def setAdaptors(value: Registry[Adaptor]): Self = StObject.set(x, "adaptors", value.asInstanceOf[js.Any])

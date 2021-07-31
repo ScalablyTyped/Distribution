@@ -7,22 +7,20 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemRendererMod {
   
-  @js.native
   trait IItemModifiers extends StObject {
     
     /** Whether this is the "active" (focused) item, meaning keyboard interactions will act upon it. */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /** Whether this item is disabled and should ignore interactions. */
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
     /** Whether this item matches the predicate. A typical renderer could hide `false` values. */
-    var matchesPredicate: Boolean = js.native
+    var matchesPredicate: Boolean
   }
   object IItemModifiers {
     
@@ -46,19 +44,18 @@ object itemRendererMod {
     }
   }
   
-  @js.native
   trait IItemRendererProps extends StObject {
     
     /** Click event handler to select this item. */
-    var handleClick: MouseEventHandler[HTMLElement] = js.native
+    var handleClick: MouseEventHandler[HTMLElement]
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** Modifiers that describe how to render this item, such as `active` or `disabled`. */
-    var modifiers: IItemModifiers = js.native
+    var modifiers: IItemModifiers
     
     /** The current query string used to filter the items. */
-    var query: String = js.native
+    var query: String
   }
   object IItemRendererProps {
     

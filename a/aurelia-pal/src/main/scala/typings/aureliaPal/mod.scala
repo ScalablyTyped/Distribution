@@ -19,7 +19,6 @@ import typings.std.NodeList
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,18 +27,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("aurelia-pal", "AggregateError")
-  @js.native
-  def AggregateError(message: String): Error = js.native
-  @JSImport("aurelia-pal", "AggregateError")
-  @js.native
-  def AggregateError(message: String, innerError: js.UndefOr[scala.Nothing], skipIfAlreadyAggregate: Boolean): Error = js.native
-  @JSImport("aurelia-pal", "AggregateError")
-  @js.native
-  def AggregateError(message: String, innerError: Error): Error = js.native
-  @JSImport("aurelia-pal", "AggregateError")
-  @js.native
-  def AggregateError(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = js.native
+  @scala.inline
+  def AggregateError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  @scala.inline
+  def AggregateError(message: String, innerError: Unit, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
+  @scala.inline
+  def AggregateError(message: String, innerError: Error): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any])).asInstanceOf[Error]
+  @scala.inline
+  def AggregateError(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   @JSImport("aurelia-pal", "DOM")
   @js.native
@@ -53,9 +48,8 @@ object mod {
   @js.native
   val PLATFORM_ : Platform = js.native
   
-  @JSImport("aurelia-pal", "initializePAL")
-  @js.native
-  def initializePAL(callback: js.Function3[/* platform */ Platform, /* feature */ Feature, /* dom */ Dom, Unit]): Unit = js.native
+  @scala.inline
+  def initializePAL(callback: js.Function3[/* platform */ Platform, /* feature */ Feature, /* dom */ Dom, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePAL")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("aurelia-pal", "isInitialized")
   @js.native
@@ -63,9 +57,8 @@ object mod {
   @scala.inline
   def isInitialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInitialized")(x.asInstanceOf[js.Any])
   
-  @JSImport("aurelia-pal", "reset")
-  @js.native
-  def reset(): js.Any = js.native
+  @scala.inline
+  def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
   
   @js.native
   trait Dom extends StObject {
@@ -138,8 +131,8 @@ object mod {
       * @param options An options object specifying bubbles:boolean, cancelable:boolean and/or detail:Object information.
       * @return A CustomEvent.
       */
-    def createCustomEvent(eventType: String): CustomEvent[_] = js.native
-    def createCustomEvent(eventType: String, options: CustomEventInit[_]): CustomEvent[_] = js.native
+    def createCustomEvent(eventType: String): CustomEvent[js.Any] = js.native
+    def createCustomEvent(eventType: String, options: CustomEventInit[js.Any]): CustomEvent[js.Any] = js.native
     
     /**
       * Creates a new DocumentFragment.
@@ -211,18 +204,13 @@ object mod {
       * @return The Style node that was created.
       */
     def injectStyles(styles: String): Node = js.native
-    def injectStyles(
-      styles: String,
-      destination: js.UndefOr[scala.Nothing],
-      prepend: js.UndefOr[scala.Nothing],
-      id: String
-    ): Node = js.native
-    def injectStyles(styles: String, destination: js.UndefOr[scala.Nothing], prepend: Boolean): Node = js.native
-    def injectStyles(styles: String, destination: js.UndefOr[scala.Nothing], prepend: Boolean, id: String): Node = js.native
+    def injectStyles(styles: String, destination: Unit, prepend: Boolean): Node = js.native
+    def injectStyles(styles: String, destination: Unit, prepend: Boolean, id: String): Node = js.native
+    def injectStyles(styles: String, destination: Unit, prepend: Unit, id: String): Node = js.native
     def injectStyles(styles: String, destination: Element): Node = js.native
-    def injectStyles(styles: String, destination: Element, prepend: js.UndefOr[scala.Nothing], id: String): Node = js.native
     def injectStyles(styles: String, destination: Element, prepend: Boolean): Node = js.native
     def injectStyles(styles: String, destination: Element, prepend: Boolean, id: String): Node = js.native
+    def injectStyles(styles: String, destination: Element, prepend: Unit, id: String): Node = js.native
     
     /**
       * Gets the element that is the next sibling of the provided element.
@@ -282,28 +270,27 @@ object mod {
     var title: String = js.native
   }
   
-  @js.native
   trait Feature extends StObject {
     
     /**
       * Does the runtime environment support native HTMLTemplateElement?
       */
-    var htmlTemplateElement: Boolean = js.native
+    var htmlTemplateElement: Boolean
     
     /**
       * Does the runtime environment support native DOM mutation observers?
       */
-    var mutationObserver: Boolean = js.native
+    var mutationObserver: Boolean
     
     /**
       * Does the runtime environment support the css scoped attribute?
       */
-    var scopedCSS: Boolean = js.native
+    var scopedCSS: Boolean
     
     /**
       * Does the runtime environment support ShadowDOM?
       */
-    var shadowDOM: Boolean = js.native
+    var shadowDOM: Boolean
   }
   object Feature {
     
@@ -330,18 +317,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ModuleNameOptions extends StObject {
     
     /**
       * Add the module to a chunk by name
       */
-    var chunk: js.UndefOr[String] = js.native
+    var chunk: js.UndefOr[String] = js.undefined
     
     /**
       * Optionally declare which exports are used. This enables tree-shaking when only few out of many exports are used.
       */
-    var exports: js.UndefOr[js.Array[String]] = js.native
+    var exports: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ModuleNameOptions {
     
@@ -429,9 +415,9 @@ object mod {
       * @memberof IPerformance
       */
     def measure(measureName: String): Unit = js.native
-    def measure(measureName: String, startMarkName: js.UndefOr[scala.Nothing], endMarkName: String): Unit = js.native
     def measure(measureName: String, startMarkName: String): Unit = js.native
     def measure(measureName: String, startMarkName: String, endMarkName: String): Unit = js.native
+    def measure(measureName: String, startMarkName: Unit, endMarkName: String): Unit = js.native
     
     /**
       * Gets a DOMHighResTimeStamp.

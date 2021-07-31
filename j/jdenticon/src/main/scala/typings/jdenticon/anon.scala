@@ -2,25 +2,23 @@ package typings.jdenticon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
     /**
       * Specifies the lightness range of colored shapes of an icon. The range is expressed as an array
       * containing two numbers, representing the minimum and maximum lightness in the range [0.0, 1.0].
       */
-    var color: js.UndefOr[js.Array[Double]] = js.native
+    var color: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Specifies the lightness range of grayscale shapes of an icon. The range is expressed as an array
       * containing two numbers, representing the minimum and maximum lightness in the range [0.0, 1.0].
       */
-    var grayscale: js.UndefOr[js.Array[Double]] = js.native
+    var grayscale: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Color {
     
@@ -53,20 +51,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Grayscale extends StObject {
     
     /**
       * Specifies the saturation of originally colored shapes of an icon. The saturation is expressed as a
       * number in the range [0.0, 1.0].
       */
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies the saturation of originally grayscale shapes of an icon. The saturation is expressed as a
       * number in the range [0.0, 1.0].
       */
-    var grayscale: js.UndefOr[Double] = js.native
+    var grayscale: js.UndefOr[Double] = js.undefined
   }
   object Grayscale {
     

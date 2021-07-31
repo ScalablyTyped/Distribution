@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaPropertySummary extends StObject {
   
   /** Display name for the property referred to in this account summary. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Resource name of property referred to by this property summary Format: properties/{property_id} Example: "properties/1000" */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaPropertySummary {
   

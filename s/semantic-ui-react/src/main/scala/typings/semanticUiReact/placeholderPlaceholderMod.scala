@@ -11,7 +11,6 @@ import typings.semanticUiReact.placeholderLineMod.PlaceholderLineComponent
 import typings.semanticUiReact.placeholderParagraphMod.PlaceholderParagraphComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object placeholderPlaceholderMod extends Shortcut {
@@ -21,7 +20,9 @@ object placeholderPlaceholderMod extends Shortcut {
   val default: PlaceholderComponent = js.native
   
   @js.native
-  trait PlaceholderComponent extends FunctionComponent[PlaceholderProps] {
+  trait PlaceholderComponent
+    extends StObject
+       with FunctionComponent[PlaceholderProps] {
     
     var Header: PlaceholderHeaderComponent = js.native
     
@@ -32,9 +33,9 @@ object placeholderPlaceholderMod extends Shortcut {
     var Paragraph: PlaceholderParagraphComponent = js.native
   }
   
-  @js.native
   trait PlaceholderProps
-    extends StrictPlaceholderProps
+    extends StObject
+       with StrictPlaceholderProps
        with /* key */ StringDictionary[js.Any]
   object PlaceholderProps {
     
@@ -45,26 +46,25 @@ object placeholderPlaceholderMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictPlaceholderProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A fluid placeholder takes up the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** A placeholder can have their colors inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
   }
   object StrictPlaceholderProps {
     

@@ -2,26 +2,24 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Catalogues extends StObject {
   
   /**
     * Alternative palette manager catalogues
     */
-  var catalogues: js.UndefOr[js.Array[String]] = js.native
+  var catalogues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Enable/disable the Palette Manager
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Override node colours - rules test against category/type by RegExp.
     */
-  var theme: js.UndefOr[js.Array[Category]] = js.native
+  var theme: js.UndefOr[js.Array[Category]] = js.undefined
 }
 object Catalogues {
   

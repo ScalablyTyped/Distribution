@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instantly teleports your creeps to a distant room acting as a room exit tile.
   * Portals appear randomly in the central room of each sector.
   */
-@js.native
 trait StructurePortal
-  extends Structure[STRUCTURE_PORTAL]
+  extends StObject
+     with Structure[STRUCTURE_PORTAL]
      with AnyStructure
      with ConcreteStructure[js.Any] {
   
@@ -21,12 +20,12 @@ trait StructurePortal
     * If this is an inter-shard portal, then this property contains an object with shard and room string properties.
     * Exact coordinates are undetermined, the creep will appear at any free spot in the destination room.
     */
-  var destination: RoomPosition | typings.screeps.anon.Shard = js.native
+  var destination: RoomPosition | typings.screeps.anon.Shard
   
   /**
     * The amount of game ticks when the portal disappears, or undefined when the portal is stable.
     */
-  var ticksToDecay: js.UndefOr[Double] = js.native
+  var ticksToDecay: js.UndefOr[Double] = js.undefined
 }
 object StructurePortal {
   

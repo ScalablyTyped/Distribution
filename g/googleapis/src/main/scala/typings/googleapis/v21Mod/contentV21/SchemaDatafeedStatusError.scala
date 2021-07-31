@@ -2,34 +2,32 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error occurring in the feed, like &quot;invalid price&quot;.
   */
-@js.native
 trait SchemaDatafeedStatusError extends StObject {
   
   /**
     * The code of the error, e.g., &quot;validation/invalid_value&quot;.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * The number of occurrences of the error in the feed.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * A list of example occurrences of the error, grouped by product.
     */
-  var examples: js.UndefOr[js.Array[SchemaDatafeedStatusExample]] = js.native
+  var examples: js.UndefOr[js.Array[SchemaDatafeedStatusExample]] = js.undefined
   
   /**
     * The error message, e.g., &quot;Invalid price&quot;.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object SchemaDatafeedStatusError {
   

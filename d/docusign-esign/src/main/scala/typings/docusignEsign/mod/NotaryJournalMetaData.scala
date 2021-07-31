@@ -2,19 +2,17 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotaryJournalMetaData extends StObject {
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var credibleWitnesses: js.UndefOr[js.Array[NotaryJournalCredibleWitness]] = js.native
+  var credibleWitnesses: js.UndefOr[js.Array[NotaryJournalCredibleWitness]] = js.undefined
   
-  var signatureImage: js.UndefOr[String] = js.native
+  var signatureImage: js.UndefOr[String] = js.undefined
   
-  var signerIdType: js.UndefOr[String] = js.native
+  var signerIdType: js.UndefOr[String] = js.undefined
 }
 object NotaryJournalMetaData {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorOriginationResponse extends StObject {
   
   /**
     * The updated origination setting details.
     */
-  var Origination: js.UndefOr[typings.awsSdk.chimeMod.Origination] = js.native
+  var Origination: js.UndefOr[typings.awsSdk.chimeMod.Origination] = js.undefined
 }
 object PutVoiceConnectorOriginationResponse {
   

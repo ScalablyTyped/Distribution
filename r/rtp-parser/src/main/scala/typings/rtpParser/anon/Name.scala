@@ -3,19 +3,17 @@ package typings.rtpParser.anon
 import typings.rtpParser.rtpParserStrings.dynamic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: dynamic = js.native
+  var name: dynamic
 }
 object Name {
   
   @scala.inline
-  def apply(name: dynamic): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): Name = {
+    val __obj = js.Dynamic.literal(name = "dynamic")
     __obj.asInstanceOf[Name]
   }
   

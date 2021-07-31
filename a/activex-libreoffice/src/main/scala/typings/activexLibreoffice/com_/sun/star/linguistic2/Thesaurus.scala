@@ -11,13 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XServiceDisplayName
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers thesaurus functionality. */
-@js.native
 trait Thesaurus
-  extends XThesaurus
+  extends StObject
+     with XThesaurus
      with XInitialization
      with XComponent
      with XServiceDisplayName
@@ -32,7 +31,7 @@ object Thesaurus {
     getLocales: () => SafeArray[Locale],
     getServiceDisplayName: Locale => String,
     hasLocale: Locale => Boolean,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     queryMeanings: (String, Locale, PropertyValues) => SafeArray[XMeaning],
     release: () => Unit,

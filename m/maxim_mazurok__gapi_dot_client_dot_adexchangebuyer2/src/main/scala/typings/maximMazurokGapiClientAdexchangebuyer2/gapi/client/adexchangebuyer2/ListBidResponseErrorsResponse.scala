@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBidResponseErrorsResponse extends StObject {
   
   /** List of rows, with counts of bid responses aggregated by callout status. */
-  var calloutStatusRows: js.UndefOr[js.Array[CalloutStatusRow]] = js.native
+  var calloutStatusRows: js.UndefOr[js.Array[CalloutStatusRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the ListBidResponseErrorsRequest.pageToken field in the subsequent call to the bidResponseErrors.list method to
     * retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListBidResponseErrorsResponse {
   

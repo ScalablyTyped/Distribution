@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICellActionEventArgs extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var columnName: Double = js.native
+  var columnName: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object ICellActionEventArgs {
   

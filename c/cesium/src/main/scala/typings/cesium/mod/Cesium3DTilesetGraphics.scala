@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,7 @@ class Cesium3DTilesetGraphics () extends StObject {
   /**
     * Gets the event that is raised whenever a property or sub-property is changed or modified.
     */
-  val definitionChanged: Event[js.Array[_]] = js.native
+  val definitionChanged: Event[js.Array[js.Any]] = js.native
   
   /**
     * Gets or sets the maximum screen space error used to drive level of detail refinement.

@@ -6,12 +6,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ReturnValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parses a URL query string, and exposes the results as a read-only vector (list) of name-value pairs from the query string. */
 @js.native
-trait WwwFormUrlDecoder extends Array[IWwwFormUrlDecoderEntry] {
+trait WwwFormUrlDecoder
+  extends StObject
+     with Array[IWwwFormUrlDecoderEntry] {
   
   /**
     * Gets an iterator that represents the first name-value pair in the current URL query string.

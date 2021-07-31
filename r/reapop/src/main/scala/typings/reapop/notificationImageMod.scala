@@ -4,19 +4,20 @@ import typings.react.mod.global.JSX.Element
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationImageMod {
   
-  @JSImport("reapop/dist/components/NotificationImage", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationImage", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var notification: Notification = js.native
+    var notification: Notification
   }
   object Props {
     

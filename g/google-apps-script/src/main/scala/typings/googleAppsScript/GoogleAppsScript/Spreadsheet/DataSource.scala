@@ -2,19 +2,17 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify existing data source. To create a data source table with new data source, see
   * DataSourceTable.
   */
-@js.native
 trait DataSource extends StObject {
   
-  def getSpec(): DataSourceSpec = js.native
+  def getSpec(): DataSourceSpec
   
-  def updateSpec(spec: DataSourceSpec): DataSource = js.native
+  def updateSpec(spec: DataSourceSpec): DataSource
 }
 object DataSource {
   

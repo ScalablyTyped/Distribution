@@ -3,13 +3,11 @@ package typings.reactRelay.anon
 import typings.reactRelay.mod.RelayProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Relay extends StObject {
   
-  var relay: js.UndefOr[RelayProp] = js.native
+  var relay: js.UndefOr[RelayProp] = js.undefined
 }
 object Relay {
   

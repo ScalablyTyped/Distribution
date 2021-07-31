@@ -36,15 +36,13 @@ import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CustomFormatConfig extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object CustomFormatConfig {
     
@@ -66,16 +64,15 @@ object typesMod {
   }
   
   /* Inlined parent std.Partial<intl-messageformat.intl-messageformat.Formats> */
-  @js.native
   trait CustomFormats extends StObject {
     
-    var date: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.native
+    var date: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.undefined
     
-    var number: js.UndefOr[Record[String, NumberFormatOptions]] = js.native
+    var number: js.UndefOr[Record[String, NumberFormatOptions]] = js.undefined
     
-    var relative: js.UndefOr[Record[String, IntlRelativeTimeFormatOptions]] = js.native
+    var relative: js.UndefOr[Record[String, IntlRelativeTimeFormatOptions]] = js.undefined
     
-    var time: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.native
+    var time: js.UndefOr[Record[String, DateTimeFormatOptions]] = js.undefined
   }
   object CustomFormats {
     
@@ -117,7 +114,7 @@ object typesMod {
   type FormatDateOptions = (Exclude[
     typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormatOptions, 
     localeMatcher
-  ]) with CustomFormatConfig
+  ]) & CustomFormatConfig
   
   /* Inlined std.Exclude<@formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNamesOptions, 'localeMatcher'> */
   /* Rewritten from type alias, can be one of: 
@@ -153,42 +150,41 @@ object typesMod {
     def `type`: typings.formatjsIntl.formatjsIntlStrings.`type` = "type".asInstanceOf[typings.formatjsIntl.formatjsIntlStrings.`type`]
   }
   
-  type FormatNumberOptions = (Exclude[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions, localeMatcher]) with CustomFormatConfig
+  type FormatNumberOptions = (Exclude[typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions, localeMatcher]) & CustomFormatConfig
   
-  type FormatPluralOptions = (Exclude[PluralRulesOptions, localeMatcher]) with CustomFormatConfig
+  type FormatPluralOptions = (Exclude[PluralRulesOptions, localeMatcher]) & CustomFormatConfig
   
-  type FormatRelativeTimeOptions = (Exclude[IntlRelativeTimeFormatOptions, localeMatcher]) with CustomFormatConfig
+  type FormatRelativeTimeOptions = (Exclude[IntlRelativeTimeFormatOptions, localeMatcher]) & CustomFormatConfig
   
-  @js.native
   trait Formatters extends StObject {
     
     def getDateTimeFormat(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.DateTimeFormat> is not an array type */ args: ConstructorParameters[TypeofDateTimeFormat]
-    ): DateTimeFormat = js.native
+    ): DateTimeFormat
     
     def getDisplayNames(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof DisplayNames> is not an array type */ args: ConstructorParameters[TypeofDisplayNames]
-    ): DisplayNames = js.native
+    ): DisplayNames
     
     def getListFormat(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof IntlListFormat> is not an array type */ args: ConstructorParameters[TypeofIntlListFormat]
-    ): default = js.native
+    ): default
     
     def getMessageFormat(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof IntlMessageFormat> is not an array type */ args: ConstructorParameters[TypeofIntlMessageFormat]
-    ): IntlMessageFormat = js.native
+    ): IntlMessageFormat
     
     def getNumberFormat(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.NumberFormat> is not an array type */ args: ConstructorParameters[TypeofNumberFormat]
-    ): NumberFormat = js.native
+    ): NumberFormat
     
     def getPluralRules(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof Intl.PluralRules> is not an array type */ args: ConstructorParameters[TypeofPluralRules]
-    ): PluralRules = js.native
+    ): PluralRules
     
     def getRelativeTimeFormat(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type ConstructorParameters<typeof IntlRelativeTimeFormat> is not an array type */ args: ConstructorParameters[TypeofIntlRelativeTimeFor]
-    ): typings.formatjsIntlRelativetimeformat.mod.default = js.native
+    ): typings.formatjsIntlRelativetimeformat.mod.default
   }
   object Formatters {
     
@@ -234,22 +230,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IntlCache extends StObject {
     
-    var dateTime: Record[String, DateTimeFormat] = js.native
+    var dateTime: Record[String, DateTimeFormat]
     
-    var displayNames: Record[String, DisplayNames] = js.native
+    var displayNames: Record[String, DisplayNames]
     
-    var list: Record[String, default] = js.native
+    var list: Record[String, default]
     
-    var message: Record[String, IntlMessageFormat] = js.native
+    var message: Record[String, IntlMessageFormat]
     
-    var number: Record[String, NumberFormat] = js.native
+    var number: Record[String, NumberFormat]
     
-    var pluralRules: Record[String, PluralRules] = js.native
+    var pluralRules: Record[String, PluralRules]
     
-    var relativeTime: Record[String, typings.formatjsIntlRelativetimeformat.mod.default] = js.native
+    var relativeTime: Record[String, typings.formatjsIntlRelativetimeformat.mod.default]
   }
   object IntlCache {
     
@@ -293,31 +288,81 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IntlConfig[T] extends StObject {
     
-    var defaultFormats: CustomFormats = js.native
+    var defaultFormats: CustomFormats
     
-    var defaultLocale: String = js.native
+    var defaultLocale: String
     
-    var defaultRichTextElements: js.UndefOr[Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]] = js.native
+    var defaultRichTextElements: js.UndefOr[Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]] = js.undefined
     
-    var formats: CustomFormats = js.native
+    var formats: CustomFormats
     
-    var locale: String = js.native
+    var locale: String
     
-    var messages: Record[String, js.Array[MessageFormatElement] | String] = js.native
+    var messages: Record[String, js.Array[MessageFormatElement] | String]
     
-    def onError(err: InvalidConfigError): Unit = js.native
-    def onError(err: MessageFormatError): Unit = js.native
-    def onError(err: MissingDataError): Unit = js.native
-    def onError(err: MissingTranslationError): Unit = js.native
-    def onError(err: UnsupportedFormatterError): Unit = js.native
-    def onError(err: FormatError): Unit = js.native
+    def onError(err: InvalidConfigError): Unit
+    def onError(err: MessageFormatError): Unit
+    def onError(err: MissingDataError): Unit
+    def onError(err: MissingTranslationError): Unit
+    def onError(err: UnsupportedFormatterError): Unit
+    def onError(err: FormatError): Unit
     @JSName("onError")
-    var onError_Original: OnErrorFn = js.native
+    var onError_Original: OnErrorFn
     
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
+  }
+  object IntlConfig {
+    
+    @scala.inline
+    def apply[T](
+      defaultFormats: CustomFormats,
+      defaultLocale: String,
+      formats: CustomFormats,
+      locale: String,
+      messages: Record[String, js.Array[MessageFormatElement] | String],
+      onError: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
+    ): IntlConfig[T] = {
+      val __obj = js.Dynamic.literal(defaultFormats = defaultFormats.asInstanceOf[js.Any], defaultLocale = defaultLocale.asInstanceOf[js.Any], formats = formats.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], onError = js.Any.fromFunction1(onError))
+      __obj.asInstanceOf[IntlConfig[T]]
+    }
+    
+    @scala.inline
+    implicit class IntlConfigMutableBuilder[Self <: IntlConfig[?], T] (val x: Self & IntlConfig[T]) extends AnyVal {
+      
+      @scala.inline
+      def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultRichTextElements(value: Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]): Self = StObject.set(x, "defaultRichTextElements", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultRichTextElementsUndefined: Self = StObject.set(x, "defaultRichTextElements", js.undefined)
+      
+      @scala.inline
+      def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOnError(
+        value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
+      ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    }
   }
   
   @js.native
@@ -430,7 +475,7 @@ object typesMod {
     @JSName("formatRelativeTime")
     def formatRelativeTime_0(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<(value : number, unit : @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/types/relative-time.RelativeTimeFormattableUnit): string>[0] */ js.Any,
-      unit: js.UndefOr[scala.Nothing],
+      unit: Unit,
       opts: FormatRelativeTimeOptions
     ): String = js.native
     
@@ -462,20 +507,20 @@ object typesMod {
   
   @js.native
   trait IntlShape[T]
-    extends IntlConfig[T]
+    extends StObject
+       with IntlConfig[T]
        with IntlFormatters[js.Any, js.Any] {
     
     var formatters: Formatters = js.native
   }
   
-  @js.native
   trait MessageDescriptor extends StObject {
     
-    var defaultMessage: js.UndefOr[String | js.Array[MessageFormatElement]] = js.native
+    var defaultMessage: js.UndefOr[String | js.Array[MessageFormatElement]] = js.undefined
     
-    var description: js.UndefOr[String | js.Object] = js.native
+    var description: js.UndefOr[String | js.Object] = js.undefined
     
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
   }
   object MessageDescriptor {
     
@@ -517,24 +562,23 @@ object typesMod {
   ]
   
   /* Inlined std.Omit<@formatjs/intl.@formatjs/intl/lib/src/types.IntlConfig<T>, keyof std.Pick<@formatjs/intl.@formatjs/intl/lib/src/types.IntlConfig<any>, 'formats' | 'messages' | 'timeZone' | 'defaultLocale' | 'defaultFormats' | 'onError'>> & std.Partial<std.Pick<@formatjs/intl.@formatjs/intl/lib/src/types.IntlConfig<any>, 'formats' | 'messages' | 'timeZone' | 'defaultLocale' | 'defaultFormats' | 'onError'>> */
-  @js.native
   trait OptionalIntlConfig[T] extends StObject {
     
-    var defaultFormats: js.UndefOr[CustomFormats] = js.native
+    var defaultFormats: js.UndefOr[CustomFormats] = js.undefined
     
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
-    var defaultRichTextElements: js.UndefOr[Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]] = js.native
+    var defaultRichTextElements: js.UndefOr[Record[String, FormatXMLElementFn[T, String | T | (js.Array[String | T])]]] = js.undefined
     
-    var formats: js.UndefOr[CustomFormats] = js.native
+    var formats: js.UndefOr[CustomFormats] = js.undefined
     
-    var locale: String = js.native
+    var locale: String
     
-    var messages: js.UndefOr[Record[String, js.Array[MessageFormatElement] | String]] = js.native
+    var messages: js.UndefOr[Record[String, js.Array[MessageFormatElement] | String]] = js.undefined
     
-    var onError: js.UndefOr[OnErrorFn] = js.native
+    var onError: js.UndefOr[OnErrorFn] = js.undefined
     
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
   }
   object OptionalIntlConfig {
     
@@ -545,7 +589,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class OptionalIntlConfigMutableBuilder[Self <: OptionalIntlConfig[_], T] (val x: Self with OptionalIntlConfig[T]) extends AnyVal {
+    implicit class OptionalIntlConfigMutableBuilder[Self <: OptionalIntlConfig[?], T] (val x: Self & OptionalIntlConfig[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])

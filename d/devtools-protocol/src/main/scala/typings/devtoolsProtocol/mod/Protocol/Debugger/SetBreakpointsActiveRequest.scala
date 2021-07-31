@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBreakpointsActiveRequest extends StObject {
   
   /**
     * New value for breakpoints active state.
     */
-  var active: Boolean = js.native
+  var active: Boolean
 }
 object SetBreakpointsActiveRequest {
   

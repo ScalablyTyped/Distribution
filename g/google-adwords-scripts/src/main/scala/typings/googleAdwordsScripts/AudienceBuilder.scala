@@ -2,17 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudienceBuilder[Audience] extends DisplayBuilder[AudienceBuilder[Audience]] {
+trait AudienceBuilder[Audience]
+  extends StObject
+     with DisplayBuilder[AudienceBuilder[Audience]] {
   
-  def withAudience(userList: UserList): AudienceBuilder[Audience] = js.native
+  def withAudience(userList: UserList): AudienceBuilder[Audience]
   
-  def withAudienceId(audienceId: Double): AudienceBuilder[Audience] = js.native
+  def withAudienceId(audienceId: Double): AudienceBuilder[Audience]
   
-  def withAudienceType(audienceType: AudienceType): AudienceBuilder[Audience] = js.native
+  def withAudienceType(audienceType: AudienceType): AudienceBuilder[Audience]
 }
 object AudienceBuilder {
   
@@ -31,7 +31,7 @@ object AudienceBuilder {
   }
   
   @scala.inline
-  implicit class AudienceBuilderMutableBuilder[Self <: AudienceBuilder[_], Audience] (val x: Self with AudienceBuilder[Audience]) extends AnyVal {
+  implicit class AudienceBuilderMutableBuilder[Self <: AudienceBuilder[?], Audience] (val x: Self & AudienceBuilder[Audience]) extends AnyVal {
     
     @scala.inline
     def setWithAudience(value: UserList => AudienceBuilder[Audience]): Self = StObject.set(x, "withAudience", js.Any.fromFunction1(value))

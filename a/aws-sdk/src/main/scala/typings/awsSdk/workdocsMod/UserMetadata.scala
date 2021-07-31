@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserMetadata extends StObject {
   
   /**
     * The email address of the user.
     */
-  var EmailAddress: js.UndefOr[EmailAddressType] = js.native
+  var EmailAddress: js.UndefOr[EmailAddressType] = js.undefined
   
   /**
     * The given name of the user before a rename operation.
     */
-  var GivenName: js.UndefOr[UserAttributeValueType] = js.native
+  var GivenName: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * The ID of the user.
     */
-  var Id: js.UndefOr[IdType] = js.native
+  var Id: js.UndefOr[IdType] = js.undefined
   
   /**
     * The surname of the user.
     */
-  var Surname: js.UndefOr[UserAttributeValueType] = js.native
+  var Surname: js.UndefOr[UserAttributeValueType] = js.undefined
   
   /**
     * The name of the user.
     */
-  var Username: js.UndefOr[UsernameType] = js.native
+  var Username: js.UndefOr[UsernameType] = js.undefined
 }
 object UserMetadata {
   

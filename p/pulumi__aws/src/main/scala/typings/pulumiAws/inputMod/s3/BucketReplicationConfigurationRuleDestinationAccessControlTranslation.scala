@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfigurationRuleDestinationAccessControlTranslation extends StObject {
   
   /**
     * The override value for the owner on replicated objects. Currently only `Destination` is supported.
     */
-  var owner: Input[String] = js.native
+  var owner: Input[String]
 }
 object BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
   

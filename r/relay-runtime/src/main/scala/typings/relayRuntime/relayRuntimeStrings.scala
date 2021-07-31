@@ -8,7 +8,6 @@ import typings.relayRuntime.relayRuntimeTypesMod.FetchQueryFetchPolicy
 import typings.relayRuntime.relayRuntimeTypesMod.RenderPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayRuntimeStrings {
@@ -44,7 +43,9 @@ object relayRuntimeStrings {
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait EXISTENT extends RecordState
+  sealed trait EXISTENT
+    extends StObject
+       with RecordState
   @scala.inline
   def EXISTENT: EXISTENT = "EXISTENT".asInstanceOf[EXISTENT]
   
@@ -109,12 +110,16 @@ object relayRuntimeStrings {
   def ModuleImport: ModuleImport = "ModuleImport".asInstanceOf[ModuleImport]
   
   @js.native
-  sealed trait NODE_DELETE extends MutationTypes
+  sealed trait NODE_DELETE
+    extends StObject
+       with MutationTypes
   @scala.inline
   def NODE_DELETE: NODE_DELETE = "NODE_DELETE".asInstanceOf[NODE_DELETE]
   
   @js.native
-  sealed trait NONEXISTENT extends RecordState
+  sealed trait NONEXISTENT
+    extends StObject
+       with RecordState
   @scala.inline
   def NONEXISTENT: NONEXISTENT = "NONEXISTENT".asInstanceOf[NONEXISTENT]
   
@@ -134,12 +139,16 @@ object relayRuntimeStrings {
   def PageInfo: PageInfo = "PageInfo".asInstanceOf[PageInfo]
   
   @js.native
-  sealed trait RANGE_ADD extends MutationTypes
+  sealed trait RANGE_ADD
+    extends StObject
+       with MutationTypes
   @scala.inline
   def RANGE_ADD: RANGE_ADD = "RANGE_ADD".asInstanceOf[RANGE_ADD]
   
   @js.native
-  sealed trait RANGE_DELETE extends MutationTypes
+  sealed trait RANGE_DELETE
+    extends StObject
+       with MutationTypes
   @scala.inline
   def RANGE_DELETE: RANGE_DELETE = "RANGE_DELETE".asInstanceOf[RANGE_DELETE]
   
@@ -179,7 +188,9 @@ object relayRuntimeStrings {
   def TypeDiscriminator: TypeDiscriminator = "TypeDiscriminator".asInstanceOf[TypeDiscriminator]
   
   @js.native
-  sealed trait UNKNOWN extends RecordState
+  sealed trait UNKNOWN
+    extends StObject
+       with RecordState
   @scala.inline
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
@@ -199,7 +210,9 @@ object relayRuntimeStrings {
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
-  sealed trait append extends RangeOperations
+  sealed trait append
+    extends StObject
+       with RangeOperations
   @scala.inline
   def append: append = "append".asInstanceOf[append]
   
@@ -279,7 +292,9 @@ object relayRuntimeStrings {
   def executeDotunsubscribe: executeDotunsubscribe = "execute.unsubscribe".asInstanceOf[executeDotunsubscribe]
   
   @js.native
-  sealed trait full extends RenderPolicy
+  sealed trait full
+    extends StObject
+       with RenderPolicy
   @scala.inline
   def full: full = "full".asInstanceOf[full]
   
@@ -315,7 +330,8 @@ object relayRuntimeStrings {
   
   @js.native
   sealed trait `network-only`
-    extends FetchPolicy
+    extends StObject
+       with FetchPolicy
        with FetchQueryFetchPolicy
   @scala.inline
   def `network-only`: `network-only` = "network-only".asInstanceOf[`network-only`]
@@ -331,7 +347,9 @@ object relayRuntimeStrings {
   def pageInfo_ : pageInfo_ = "pageInfo".asInstanceOf[pageInfo_]
   
   @js.native
-  sealed trait partial extends RenderPolicy
+  sealed trait partial
+    extends StObject
+       with RenderPolicy
   @scala.inline
   def partial: partial = "partial".asInstanceOf[partial]
   
@@ -341,7 +359,9 @@ object relayRuntimeStrings {
   def pluralLinked: pluralLinked = "pluralLinked".asInstanceOf[pluralLinked]
   
   @js.native
-  sealed trait prepend extends RangeOperations
+  sealed trait prepend
+    extends StObject
+       with RangeOperations
   @scala.inline
   def prepend: prepend = "prepend".asInstanceOf[prepend]
   
@@ -371,18 +391,23 @@ object relayRuntimeStrings {
   def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
   
   @js.native
-  sealed trait `store-and-network` extends FetchPolicy
+  sealed trait `store-and-network`
+    extends StObject
+       with FetchPolicy
   @scala.inline
   def `store-and-network`: `store-and-network` = "store-and-network".asInstanceOf[`store-and-network`]
   
   @js.native
-  sealed trait `store-only` extends FetchPolicy
+  sealed trait `store-only`
+    extends StObject
+       with FetchPolicy
   @scala.inline
   def `store-only`: `store-only` = "store-only".asInstanceOf[`store-only`]
   
   @js.native
   sealed trait `store-or-network`
-    extends FetchPolicy
+    extends StObject
+       with FetchPolicy
        with FetchQueryFetchPolicy
   @scala.inline
   def `store-or-network`: `store-or-network` = "store-or-network".asInstanceOf[`store-or-network`]

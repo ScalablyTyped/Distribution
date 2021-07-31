@@ -4,7 +4,6 @@ import typings.googleProtobuf.mod.BinaryConstants.FieldType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf", "BinaryWriter")
@@ -20,13 +19,13 @@ class BinaryWriter () extends StObject {
   def getResultBuffer(): Uint8Array = js.native
   
   def maybeWriteSerializedMessage(): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: js.UndefOr[scala.Nothing], start: Double, end: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: Unit, start: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: Unit, start: Double, end: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: Unit, start: Unit, end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array): Unit = js.native
-  def maybeWriteSerializedMessage(bytes: Uint8Array, start: js.UndefOr[scala.Nothing], end: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double): Unit = js.native
   def maybeWriteSerializedMessage(bytes: Uint8Array, start: Double, end: Double): Unit = js.native
+  def maybeWriteSerializedMessage(bytes: Uint8Array, start: Unit, end: Double): Unit = js.native
   
   def reset(): Unit = js.native
   

@@ -3,54 +3,51 @@ package typings.grumblerScripts
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait WebpackConfig extends StObject
   
-  @js.native
   trait WebpackConfigOptions extends StObject {
     
-    var alias: js.UndefOr[StringDictionary[String]] = js.native
+    var alias: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var analyze: js.UndefOr[Boolean] = js.native
+    var analyze: js.UndefOr[Boolean] = js.undefined
     
-    var babelConfig: js.UndefOr[String] = js.native
+    var babelConfig: js.UndefOr[String] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
-    var entry: js.UndefOr[String | js.Array[String]] = js.native
+    var entry: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var libraryTarget: js.UndefOr[String] = js.native
+    var libraryTarget: js.UndefOr[String] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var modulename: js.UndefOr[String] = js.native
+    var modulename: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var sourcemaps: js.UndefOr[Boolean] = js.native
+    var sourcemaps: js.UndefOr[Boolean] = js.undefined
     
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
     
-    var vars: js.UndefOr[js.Object] = js.native
+    var vars: js.UndefOr[js.Object] = js.undefined
     
-    var web: js.UndefOr[Boolean] = js.native
+    var web: js.UndefOr[Boolean] = js.undefined
   }
   object WebpackConfigOptions {
     

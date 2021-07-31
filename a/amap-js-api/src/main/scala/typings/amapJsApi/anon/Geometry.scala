@@ -4,24 +4,24 @@ import typings.amapJsApi.AMap.GeoJSON.GeoJSONObject
 import typings.amapJsApi.amapJsApiStrings.Feature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Geometry extends GeoJSONObject {
+trait Geometry
+  extends StObject
+     with GeoJSONObject {
   
-  var geometry: typings.amapJsApi.AMap.GeoJSON.Geometry = js.native
+  var geometry: typings.amapJsApi.AMap.GeoJSON.Geometry
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
-  var `type`: Feature = js.native
+  var `type`: Feature
 }
 object Geometry {
   
   @scala.inline
-  def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any, `type`: Feature): Geometry = {
+  def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any): Geometry = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Feature")
     __obj.asInstanceOf[Geometry]
   }
   

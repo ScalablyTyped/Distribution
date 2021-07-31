@@ -3,27 +3,27 @@ package typings.jestSpecificSnapshot
 import typings.jestSpecificSnapshot.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-specific-snapshot", "addSerializer")
+  @JSImport("jest-specific-snapshot", JSImport.Namespace)
   @js.native
-  def addSerializer(serializer: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-specific-snapshot", "toMatchSpecificSnapshot")
-  @js.native
-  def toMatchSpecificSnapshot(data: js.Any, snapshotFile: String, testName: String): js.Function0[Message] = js.native
+  @scala.inline
+  def addSerializer(serializer: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addSerializer")(serializer.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def toMatchSpecificSnapshot(data: js.Any, snapshotFile: String, testName: String): js.Function0[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("toMatchSpecificSnapshot")(data.asInstanceOf[js.Any], snapshotFile.asInstanceOf[js.Any], testName.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Message]]
   
   object global {
     
     object jest {
       
-      @js.native
       trait Matchers[R, T] extends StObject {
         
-        def toMatchSpecificSnapshot(snapshotFilename: String): R = js.native
+        def toMatchSpecificSnapshot(snapshotFilename: String): R
       }
       object Matchers {
         
@@ -34,7 +34,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[_, _], R, T] (val x: Self with (Matchers[R, T])) extends AnyVal {
+        implicit class MatchersMutableBuilder[Self <: Matchers[?, ?], R, T] (val x: Self & (Matchers[R, T])) extends AnyVal {
           
           @scala.inline
           def setToMatchSpecificSnapshot(value: String => R): Self = StObject.set(x, "toMatchSpecificSnapshot", js.Any.fromFunction1(value))

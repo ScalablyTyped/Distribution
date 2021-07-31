@@ -10,7 +10,6 @@ import typings.uirouterCore.stateObjectMod.StateObject
 import typings.uirouterCore.transitionTransitionMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveContextMod {
@@ -66,7 +65,7 @@ object resolveContextMod {
     def getResolvable(token: js.Any): Resolvable = js.native
     
     /** Gets all the tokens found in the resolve context, de-duplicated */
-    def getTokens(): js.Array[_] = js.native
+    def getTokens(): js.Array[js.Any] = js.native
     
     def injector(): UIInjector = js.native
     
@@ -78,7 +77,7 @@ object resolveContextMod {
       * @returns {Promise<any>|any}
       */
     def resolvePath(): js.Promise[js.Array[Token]] = js.native
-    def resolvePath(when: js.UndefOr[scala.Nothing], trans: Transition): js.Promise[js.Array[Token]] = js.native
+    def resolvePath(when: Unit, trans: Transition): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen): js.Promise[js.Array[Token]] = js.native
     def resolvePath(when: PolicyWhen, trans: Transition): js.Promise[js.Array[Token]] = js.native
     

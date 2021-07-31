@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVersionErrorItem extends StObject {
   
   /**
     * The details of the error for the schema version.
     */
-  var ErrorDetails: js.UndefOr[typings.awsSdk.glueMod.ErrorDetails] = js.native
+  var ErrorDetails: js.UndefOr[typings.awsSdk.glueMod.ErrorDetails] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var VersionNumber: js.UndefOr[VersionLongNumber] = js.native
+  var VersionNumber: js.UndefOr[VersionLongNumber] = js.undefined
 }
 object SchemaVersionErrorItem {
   

@@ -2,31 +2,29 @@ package typings.wegameApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserGameData extends StObject {
   
   /**
     * 用户的托管 KV 数据列表
     */
-  var KVDataList: js.Array[KVData] = js.native
+  var KVDataList: js.Array[KVData]
   
   /**
     * 用户的微信头像 url
     */
-  var avatarUrl: String = js.native
+  var avatarUrl: String
   
   /**
     * 用户的微信昵称
     */
-  var nickname: String = js.native
+  var nickname: String
   
   /**
     * 用户的openid
     */
-  var openid: String = js.native
+  var openid: String
 }
 object UserGameData {
   

@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The functionality described in this topic is not available to all Windows and Windows Phone apps. For your code to call these APIs, Microsoft must approve your use of them and provision your developer account. Otherwise the calls will fail at runtime. */
-@js.native
 trait EmailMailboxChangeTracker extends StObject {
   
   /** Enables change tracking on a mailbox. */
-  def enable(): Unit = js.native
+  def enable(): Unit
   
   /**
     * Gets a reader that will read a batch of changes.
     * @return A reader that will read a batch of changes.
     */
-  def getChangeReader(): EmailMailboxChangeReader = js.native
+  def getChangeReader(): EmailMailboxChangeReader
   
   /** Gets a Boolean value indicating whether change tracking is active. */
-  var isTracking: Boolean = js.native
+  var isTracking: Boolean
   
   /** Moves the change tracking cursor to now. */
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object EmailMailboxChangeTracker {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatastoreStorage extends StObject {
   
   /**
     * Use this to store data store data in an S3 bucket that you manage. When customer managed storage is selected, the retentionPeriod parameter is ignored. The choice of service-managed or customer-managed S3 storage cannot be changed after creation of the data store.
     */
-  var customerManagedS3: js.UndefOr[CustomerManagedDatastoreS3Storage] = js.native
+  var customerManagedS3: js.UndefOr[CustomerManagedDatastoreS3Storage] = js.undefined
   
   /**
     * Use this to store data store data in an S3 bucket managed by AWS IoT Analytics. You cannot change the choice of service-managed or customer-managed S3 storage after the data store is created.
     */
-  var serviceManagedS3: js.UndefOr[ServiceManagedDatastoreS3Storage] = js.native
+  var serviceManagedS3: js.UndefOr[ServiceManagedDatastoreS3Storage] = js.undefined
 }
 object DatastoreStorage {
   

@@ -2,15 +2,13 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstructorMetadata extends StObject {
   
-  var compilerGeneratedMetadata: js.UndefOr[js.Array[js.Function]] = js.native
+  var compilerGeneratedMetadata: js.UndefOr[js.Array[js.Function]] = js.undefined
   
-  var userGeneratedMetadata: MetadataMap = js.native
+  var userGeneratedMetadata: MetadataMap
 }
 object ConstructorMetadata {
   

@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasRenderingContext2DSettings extends StObject {
   
-  var alpha: js.UndefOr[scala.Boolean] = js.native
+  var alpha: js.UndefOr[scala.Boolean] = js.undefined
   
-  var desynchronized: js.UndefOr[scala.Boolean] = js.native
+  var desynchronized: js.UndefOr[scala.Boolean] = js.undefined
 }
 object CanvasRenderingContext2DSettings {
   

@@ -11,8 +11,8 @@ A simple utility for creating an object with values equal to its keys. Identical
 | Full name          | keymirror |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 349 |
-| # downloads        | 10121637 |
+| # dependents       | 363 |
+| # downloads        | 10372064 |
 | # stars            | 27 |
 
 ## Links

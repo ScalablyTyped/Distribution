@@ -3,19 +3,17 @@ package typings.grommet.anon
 import typings.grommet.boxMod.BoxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyContainer extends StObject {
   
-  var body: js.UndefOr[BoxProps] = js.native
+  var body: js.UndefOr[BoxProps] = js.undefined
   
-  var container: js.UndefOr[BoxProps] = js.native
+  var container: js.UndefOr[BoxProps] = js.undefined
   
-  var footer: js.UndefOr[BoxProps] = js.native
+  var footer: js.UndefOr[BoxProps] = js.undefined
   
-  var header: js.UndefOr[BoxProps] = js.native
+  var header: js.UndefOr[BoxProps] = js.undefined
 }
 object BodyContainer {
   

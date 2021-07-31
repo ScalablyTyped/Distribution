@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSection extends StObject {
   
   /** The contentDetails object contains details about the channel section content, such as a list of playlists or channels featured in the section. */
-  var contentDetails: js.UndefOr[ChannelSectionContentDetails] = js.native
+  var contentDetails: js.UndefOr[ChannelSectionContentDetails] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the channel section. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#channelSection". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Localizations for different languages */
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelSectionLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The snippet object contains basic details about the channel section, such as its type, style and title. */
-  var snippet: js.UndefOr[ChannelSectionSnippet] = js.native
+  var snippet: js.UndefOr[ChannelSectionSnippet] = js.undefined
   
   /** The targeting object contains basic targeting settings about the channel section. */
-  var targeting: js.UndefOr[ChannelSectionTargeting] = js.native
+  var targeting: js.UndefOr[ChannelSectionTargeting] = js.undefined
 }
 object ChannelSection {
   
@@ -73,7 +71,7 @@ object ChannelSection {
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.ChannelSectionLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.ChannelSection & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline

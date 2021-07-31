@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for Windows music file properties. */
-@js.native
 trait SystemMusicProperties extends StObject {
   
   /** Gets the name of the System.Music.AlbumArtist property (one of the Windows music file properties). */
-  var albumArtist: String = js.native
+  var albumArtist: String
   
   /** Gets the name of the System.Music.AlbumTitle property (one of the Windows music file properties). */
-  var albumTitle: String = js.native
+  var albumTitle: String
   
   /** Gets the name of the System.Music.Artist property (one of the Windows music file properties). */
-  var artist: String = js.native
+  var artist: String
   
   /** Gets the name of the System.Music.Composer property (one of the Windows music file properties). */
-  var composer: String = js.native
+  var composer: String
   
   /** Gets the name of the System.Music.Conductor property (one of the Windows music file properties). */
-  var conductor: String = js.native
+  var conductor: String
   
   /** Gets the name of the System.Music.DisplayArtist property (one of the Windows music file properties). */
-  var displayArtist: String = js.native
+  var displayArtist: String
   
   /** Gets the name of the System.Music.Genre property (one of the Windows music file properties). */
-  var genre: String = js.native
+  var genre: String
   
   /** Gets the name of the System.Music.TrackNumber property (one of the Windows music file properties). */
-  var trackNumber: String = js.native
+  var trackNumber: String
 }
 object SystemMusicProperties {
   

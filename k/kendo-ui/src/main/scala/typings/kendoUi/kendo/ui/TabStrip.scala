@@ -6,11 +6,12 @@ import typings.std.Element
 import typings.std.HTMLCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TabStrip extends Widget {
+trait TabStrip
+  extends StObject
+     with Widget {
   
   def activateTab(item: JQuery): Unit = js.native
   

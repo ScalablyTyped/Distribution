@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRule extends StObject {
   
   /**
     * The action that AWS WAF should take on a web request when it matches the rule's statement. This is used only for rules whose **statements do not reference a rule group**. See Action below for details.
     */
-  var action: js.UndefOr[WebAclRuleAction] = js.native
+  var action: js.UndefOr[WebAclRuleAction] = js.undefined
   
   /**
     * A friendly name of the rule.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The override action to apply to the rules in a rule group. Used only for rule **statements that reference a rule group**, like `ruleGroupReferenceStatement` and `managedRuleGroupStatement`. See Override Action below for details.
     */
-  var overrideAction: js.UndefOr[WebAclRuleOverrideAction] = js.native
+  var overrideAction: js.UndefOr[WebAclRuleOverrideAction] = js.undefined
   
   /**
     * If you define more than one Rule in a WebACL, AWS WAF evaluates each request against the `rules` in order based on the value of `priority`. AWS WAF processes rules with lower priority first.
     */
-  var priority: Double = js.native
+  var priority: Double
   
   /**
     * The AWS WAF processing statement for the rule, for example `byteMatchStatement` or `geoMatchStatement`. See Statement below for details.
     */
-  var statement: WebAclRuleStatement = js.native
+  var statement: WebAclRuleStatement
   
   /**
     * Defines and enables Amazon CloudWatch metrics and web request sample collection. See Visibility Configuration below for details.
     */
-  var visibilityConfig: WebAclRuleVisibilityConfig = js.native
+  var visibilityConfig: WebAclRuleVisibilityConfig
 }
 object WebAclRule {
   

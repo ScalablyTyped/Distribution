@@ -3,20 +3,18 @@ package typings.webrtc
 import typings.std.RTCDegradationPreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpparameters
-@js.native
 trait RTCRtpParameters extends StObject {
   
   //encodings: RTCRtpEncodingParameters[];
   //headerExtensions: RTCRtpHeaderExtensionParameters[];
   //rtcp: RTCRtcpParameters;
   //codecs: RTCRtpCodecParameters[];
-  var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.native
+  var degradationPreference: js.UndefOr[RTCDegradationPreference] = js.undefined
   
-  var transactionId: String = js.native
+  var transactionId: String
 }
 object RTCRtpParameters {
   

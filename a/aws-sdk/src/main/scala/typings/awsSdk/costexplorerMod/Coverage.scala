@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coverage extends StObject {
   
   /**
     * The amount of cost that the reservation covered.
     */
-  var CoverageCost: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageCost] = js.native
+  var CoverageCost: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageCost] = js.undefined
   
   /**
     * The amount of instance usage that the reservation covered, in hours.
     */
-  var CoverageHours: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageHours] = js.native
+  var CoverageHours: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageHours] = js.undefined
   
   /**
     * The amount of instance usage that the reservation covered, in normalized units.
     */
-  var CoverageNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageNormalizedUnits] = js.native
+  var CoverageNormalizedUnits: js.UndefOr[typings.awsSdk.costexplorerMod.CoverageNormalizedUnits] = js.undefined
 }
 object Coverage {
   

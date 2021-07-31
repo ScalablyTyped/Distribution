@@ -10,9 +10,9 @@ Write logs based on conventional commits and templates
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog-writer |
 | Keywords           | conventional-changelog-writer, changelog, conventional, commits, templates, writer, writing, logs |
-| # releases         | 12 |
-| # dependents       | 29 |
-| # downloads        | 59706980 |
+| # releases         | 14 |
+| # dependents       | 44 |
+| # downloads        | 70485704 |
 | # stars            | 0 |
 
 ## Links

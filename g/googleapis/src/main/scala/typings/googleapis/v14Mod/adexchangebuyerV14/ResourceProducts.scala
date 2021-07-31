@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Products")
@@ -30,7 +29,7 @@ class ResourceProducts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet): GaxiosPromise[SchemaProduct] = js.native
   def get(params: ParamsResourceProductsGet, callback: BodyResponseCallback[SchemaProduct]): Unit = js.native
   def get(
@@ -59,7 +58,7 @@ class ResourceProducts protected () extends StObject {
     */
   def search(): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(callback: BodyResponseCallback[SchemaGetOffersResponse]): Unit = js.native
-  def search(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOffersResponse] = js.native
+  def search(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(params: ParamsResourceProductsSearch): GaxiosPromise[SchemaGetOffersResponse] = js.native
   def search(params: ParamsResourceProductsSearch, callback: BodyResponseCallback[SchemaGetOffersResponse]): Unit = js.native
   def search(

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddChartResponse extends StObject {
   
   /** The newly added chart. */
-  var chart: js.UndefOr[EmbeddedChart] = js.native
+  var chart: js.UndefOr[EmbeddedChart] = js.undefined
 }
 object AddChartResponse {
   

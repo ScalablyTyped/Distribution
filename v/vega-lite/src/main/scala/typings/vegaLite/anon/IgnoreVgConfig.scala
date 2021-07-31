@@ -3,15 +3,13 @@ package typings.vegaLite.anon
 import typings.vegaLite.vegaSchemaMod.VgEncodeChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreVgConfig extends StObject {
   
-  var ignoreVgConfig: js.UndefOr[Boolean] = js.native
+  var ignoreVgConfig: js.UndefOr[Boolean] = js.undefined
   
-  var vgChannel: js.UndefOr[VgEncodeChannel] = js.native
+  var vgChannel: js.UndefOr[VgEncodeChannel] = js.undefined
 }
 object IgnoreVgConfig {
   

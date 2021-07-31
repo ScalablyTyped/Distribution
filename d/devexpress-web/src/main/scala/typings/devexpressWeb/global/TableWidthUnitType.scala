@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object TableWidthUnitType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.TableWidthUnitType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.TableWidthUnitType & Double] = js.native
   
-  /* 1 */ val Auto: typings.devexpressWeb.TableWidthUnitType.Auto with Double = js.native
+  /* 1 */ val Auto: typings.devexpressWeb.TableWidthUnitType.Auto & Double = js.native
   
-  /* 2 */ val FiftiethsOfPercent: typings.devexpressWeb.TableWidthUnitType.FiftiethsOfPercent with Double = js.native
+  /* 2 */ val FiftiethsOfPercent: typings.devexpressWeb.TableWidthUnitType.FiftiethsOfPercent & Double = js.native
   
-  /* 3 */ val ModelUnits: typings.devexpressWeb.TableWidthUnitType.ModelUnits with Double = js.native
+  /* 3 */ val ModelUnits: typings.devexpressWeb.TableWidthUnitType.ModelUnits & Double = js.native
   
-  /* 0 */ val Nil: typings.devexpressWeb.TableWidthUnitType.Nil with Double = js.native
+  /* 0 */ val Nil: typings.devexpressWeb.TableWidthUnitType.Nil & Double = js.native
 }

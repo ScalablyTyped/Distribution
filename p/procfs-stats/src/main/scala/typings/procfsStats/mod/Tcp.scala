@@ -3,39 +3,37 @@ package typings.procfsStats.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tcp extends StObject {
   
   @JSName("_")
-  var _underscore: StringDictionary[String] = js.native
+  var _underscore: StringDictionary[String]
   
-  var inode: String = js.native
+  var inode: String
   
-  var local_address: String = js.native
+  var local_address: String
   
-  var rem_address: String = js.native
+  var rem_address: String
   
-  var retrnsmt: String = js.native
+  var retrnsmt: String
   
-  var rx_queue: String = js.native
+  var rx_queue: String
   
-  var sl: String = js.native
+  var sl: String
   
-  var st: String = js.native
+  var st: String
   
-  var timeout: String = js.native
+  var timeout: String
   
   @JSName("tm->when")
-  var `tm-Greaterthansignwhen`: String = js.native
+  var `tm-Greaterthansignwhen`: String
   
-  var tr: String = js.native
+  var tr: String
   
-  var tx_queue: String = js.native
+  var tx_queue: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object Tcp {
   

@@ -3,43 +3,59 @@ package typings.pkijs
 import typings.asn1js.mod.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicConstraintsMod {
   
   @JSImport("pkijs/src/BasicConstraints", JSImport.Default)
   @js.native
-  class default () extends BasicConstraints {
+  class default ()
+    extends StObject
+       with BasicConstraints {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    var cA: Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var pathLenConstraint: Double | Integer = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/BasicConstraints", "default.defaultValues")
+    @JSImport("pkijs/src/BasicConstraints", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/BasicConstraints", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/BasicConstraints", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait BasicConstraints extends StObject {
     
-    var cA: Boolean = js.native
+    var cA: Boolean
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var pathLenConstraint: Double | Integer = js.native
+    var pathLenConstraint: Double | Integer
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object BasicConstraints {
     

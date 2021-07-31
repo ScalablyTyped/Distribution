@@ -3,20 +3,19 @@ package typings.storybookApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictparameterName
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var docsOnly: js.UndefOr[Boolean] = js.native
+  var docsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var options: StringDictionary[js.Any] = js.native
+  var options: StringDictionary[js.Any]
   
-  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.native
+  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.undefined
 }
 object DictparameterName {
   

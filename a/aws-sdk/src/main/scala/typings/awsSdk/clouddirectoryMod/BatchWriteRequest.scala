@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchWriteRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * A list of operations that are part of the batch.
     */
-  var Operations: BatchWriteOperationList = js.native
+  var Operations: BatchWriteOperationList
 }
 object BatchWriteRequest {
   

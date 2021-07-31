@@ -4,25 +4,23 @@ import typings.awsSdk.eksMod.String
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/eks.DescribeNodegroupRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeNodegroupRequestw extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The name of the Amazon EKS cluster associated with the node group.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The name of the node group to describe.
     */
-  var nodegroupName: String = js.native
+  var nodegroupName: String
 }
 object DescribeNodegroupRequestw {
   

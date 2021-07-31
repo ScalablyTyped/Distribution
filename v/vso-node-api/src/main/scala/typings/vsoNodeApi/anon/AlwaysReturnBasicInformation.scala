@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlwaysReturnBasicInformation extends StObject {
   
-  var alwaysReturnBasicInformation: scala.Double = js.native
+  var alwaysReturnBasicInformation: scala.Double
   
-  var includeDeletedSubscriptions: scala.Double = js.native
+  var includeDeletedSubscriptions: scala.Double
   
-  var includeFilterDetails: scala.Double = js.native
+  var includeFilterDetails: scala.Double
   
-  var includeInvalidSubscriptions: scala.Double = js.native
+  var includeInvalidSubscriptions: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object AlwaysReturnBasicInformation {
   

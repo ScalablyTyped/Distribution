@@ -2,10 +2,8 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeKeyboardShowOptions extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait NativeKeyboardShowOptions extends StObject {
     *
     * Default: false
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Options are: "light", "dark".
     *
     * Default: "default"
     */
-  var appearance: js.UndefOr[String] = js.native
+  var appearance: js.UndefOr[String] = js.undefined
   
   /**
     * DOM element, which should be scrolled automatically
     */
-  var autoscrollElement: js.UndefOr[js.Any] = js.native
+  var autoscrollElement: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The background color of the messenger bar.
     *
     * Default: #F6F6F6
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Options are: "none", "split", "countdown", "countdownreversed".
@@ -40,7 +38,7 @@ trait NativeKeyboardShowOptions extends StObject {
     *
     * Default: "none"
     */
-  var counterStyle: js.UndefOr[String] = js.native
+  var counterStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean value indicating if the keyboard should be kept open after submitting the entered
@@ -48,98 +46,98 @@ trait NativeKeyboardShowOptions extends StObject {
     *
     * Default: false
     */
-  var keepOpenAfterSubmit: js.UndefOr[Boolean] = js.native
+  var keepOpenAfterSubmit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The left button of the messenger bar
     */
-  var leftButton: js.UndefOr[LeftButtonOptions] = js.native
+  var leftButton: js.UndefOr[LeftButtonOptions] = js.undefined
   
   /**
     * Maximum amount of chars that can be entered
     */
-  var maxChars: js.UndefOr[Double] = js.native
+  var maxChars: js.UndefOr[Double] = js.undefined
   
   /**
     * Callback function which is being executed as soon as the keyboard did hide
     */
-  var onKeyboardDidHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onKeyboardDidHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function which is being executed as soon as the keyboard did show
     */
-  var onKeyboardDidShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onKeyboardDidShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function which is being executed as soon as the keyboard will hide
     */
-  var onKeyboardWillHide: js.UndefOr[js.Function0[Unit]] = js.native
+  var onKeyboardWillHide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function which is being executed as soon as the keyboard will show
     */
-  var onKeyboardWillShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onKeyboardWillShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback function, which is being called as soon as the user submits
     */
-  def onSubmit(text: String): Unit = js.native
+  def onSubmit(text: String): Unit
   
   /**
     * Callback function which is being executed as soon as the entered text changes. Will
     * return the new text
     */
-  var onTextChanged: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.native
+  var onTextChanged: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
   
   /**
     * A placeholder which will be in the messenger bar, when opening and the input field is
     * empty
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * The color of the placeholder.
     *
     * Default: #ccc
     */
-  var placeholderColor: js.UndefOr[String] = js.native
+  var placeholderColor: js.UndefOr[String] = js.undefined
   
   /**
     * The right button of the messenger bar
     */
-  var rightButton: js.UndefOr[ButtonOptions] = js.native
+  var rightButton: js.UndefOr[ButtonOptions] = js.undefined
   
   /**
     * Boolean value indicating if the content should be scrolled to the end after the messenger is
     * shown
     */
-  var scrollToBottomAfterMessengerShows: js.UndefOr[Boolean] = js.native
+  var scrollToBottomAfterMessengerShows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disables things like the Emoji keyboard and the Predicive text entry bar
     *
     * Default: false
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Open the keyboard when showing the messenger.
     *
     * Default: false
     */
-  var showKeyboard: js.UndefOr[Boolean] = js.native
+  var showKeyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A text which will be in the messenger bar, when opening
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The color of the typed text in HEX.
     *
     * Default: #444
     */
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
   /**
     * The background color of the textview. Looks nicest on Android
@@ -147,14 +145,14 @@ trait NativeKeyboardShowOptions extends StObject {
     *
     * Default: #F6F6F6
     */
-  var textViewBackgroundColor: js.UndefOr[String] = js.native
+  var textViewBackgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * The border color of the textview.
     *
     * Default: #666666
     */
-  var textViewBorderColor: js.UndefOr[String] = js.native
+  var textViewBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Options are: "default", "decimalpad", "phonepad", "numberpad", "namephonepad",
@@ -162,7 +160,7 @@ trait NativeKeyboardShowOptions extends StObject {
     *
     * Default: "default"
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object NativeKeyboardShowOptions {
   

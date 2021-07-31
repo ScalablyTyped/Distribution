@@ -5,12 +5,11 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`object`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyNullableAllOptionalObjectSchema
-  extends NullableAllOptionalObjectSchema[Record[String, AnySchema]]
+  extends StObject
+     with NullableAllOptionalObjectSchema[Record[String, AnySchema]]
      with _AnySchema
 object AnyNullableAllOptionalObjectSchema {
   

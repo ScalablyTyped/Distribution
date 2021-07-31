@@ -11,8 +11,8 @@ Generate text content from html for Nodemailer e-mails
 | Full name          | nodemailer-html-to-text |
 | Keywords           | Nodemailer |
 | # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 659312 |
+| # dependents       | 74 |
+| # downloads        | 693418 |
 | # stars            | 2 |
 
 ## Links

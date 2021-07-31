@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/blogger/v2", "blogger_v2.Resource$Posts")
@@ -31,7 +30,7 @@ class ResourcePosts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPost] = js.native
   def get(callback: BodyResponseCallback[SchemaPost]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet): GaxiosPromise[SchemaPost] = js.native
   def get(params: ParamsResourcePostsGet, callback: BodyResponseCallback[SchemaPost]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourcePosts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPostList] = js.native
   def list(callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPostList] = js.native
   def list(params: ParamsResourcePostsList): GaxiosPromise[SchemaPostList] = js.native
   def list(params: ParamsResourcePostsList, callback: BodyResponseCallback[SchemaPostList]): Unit = js.native
   def list(

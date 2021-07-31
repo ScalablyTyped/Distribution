@@ -17,53 +17,51 @@ import typings.tuyaPanelKit.routersTypesMod.NavigationRoute
 import typings.tuyaPanelKit.routersTypesMod.ParamListBase
 import typings.tuyaPanelKit.routersTypesMod.Router
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
-import typings.tuyaPanelKit.tuyaPanelKitStrings.POP
-import typings.tuyaPanelKit.tuyaPanelKitStrings.POP_TO_TOP
-import typings.tuyaPanelKit.tuyaPanelKitStrings.PUSH
-import typings.tuyaPanelKit.tuyaPanelKitStrings.REPLACE
 import typings.tuyaPanelKit.tuyaPanelKitStrings.stack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackRouterMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(options: StackRouterOptions): Router[
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | Target | Type | PayloadSource | SourceTarget | TargetType | SourceTargetType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
+    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | Target | Type | PayloadSource | SourceTarget | TargetType | SourceTargetType
+  ]]
   
   object StackActions {
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.pop")
+    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions")
     @js.native
-    def pop(): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.pop")
-    @js.native
-    def pop(count: Double): StackActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.popToTop")
-    @js.native
-    def popToTop(): StackActionType = js.native
+    @scala.inline
+    def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
+    @scala.inline
+    def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
     
-    // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.push")
-    @js.native
-    def push(name: String): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.push")
-    @js.native
-    def push(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
     
     // tslint:disable-next-line no-redundant-undefined
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.replace")
-    @js.native
-    def replace(name: String): StackActionType = js.native
-    @JSImport("tuya-panel-kit/@react-navigation/routers/StackRouter", "StackActions.replace")
-    @js.native
-    def replace(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    
+    // tslint:disable-next-line no-redundant-undefined
+    @scala.inline
+    def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
   @js.native
@@ -117,54 +115,53 @@ object stackRouterMod {
   object StackActionType {
     
     @scala.inline
-    def PayloadSource(payload: Params, `type`: REPLACE): typings.tuyaPanelKit.anon.PayloadSource = {
+    def PayloadSource(payload: Params): typings.tuyaPanelKit.anon.PayloadSource = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("REPLACE")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.PayloadSource]
     }
     
     @scala.inline
-    def SourceTarget(payload: Params, `type`: PUSH): typings.tuyaPanelKit.anon.SourceTarget = {
+    def SourceTarget(payload: Params): typings.tuyaPanelKit.anon.SourceTarget = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("PUSH")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.SourceTarget]
     }
     
     @scala.inline
-    def SourceTargetType(`type`: POP_TO_TOP): typings.tuyaPanelKit.anon.SourceTargetType = {
+    def SourceTargetType(): typings.tuyaPanelKit.anon.SourceTargetType = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("POP_TO_TOP")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.SourceTargetType]
     }
     
     @scala.inline
-    def TargetType(payload: Count, `type`: POP): typings.tuyaPanelKit.anon.TargetType = {
+    def TargetType(payload: Count): typings.tuyaPanelKit.anon.TargetType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("POP")
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.TargetType]
     }
   }
   
   /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<ParamList> & {  type :'stack'} */
-  @js.native
   trait StackNavigationState[ParamList /* <: ParamListBase */] extends StObject {
     
-    val history: js.UndefOr[js.Array[_]] = js.native
+    val history: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    val index: Double = js.native
+    val index: Double
     
-    val key: String = js.native
+    val key: String
     
-    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]] = js.native
+    val routeNames: js.Array[Extract[/* keyof ParamList */ String, String]]
     
-    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]] = js.native
+    val routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]
     
-    val stale: `false` = js.native
+    val stale: `false`
     
     /**
       * Type of the router, in this case, it's stack.
       */
-    val `type`: String with stack = js.native
+    val `type`: String & stack
   }
   object StackNavigationState {
     
@@ -174,19 +171,18 @@ object stackRouterMod {
       key: String,
       routeNames: js.Array[Extract[/* keyof ParamList */ String, String]],
       routes: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]],
-      stale: `false`,
-      `type`: String with stack
+      `type`: String & stack
     ): StackNavigationState[ParamList] = {
-      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackNavigationState[ParamList]]
     }
     
     @scala.inline
-    implicit class StackNavigationStateMutableBuilder[Self <: StackNavigationState[_], ParamList /* <: ParamListBase */] (val x: Self with StackNavigationState[ParamList]) extends AnyVal {
+    implicit class StackNavigationStateMutableBuilder[Self <: StackNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & StackNavigationState[ParamList]) extends AnyVal {
       
       @scala.inline
-      def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
@@ -216,7 +212,7 @@ object stackRouterMod {
       def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setType(value: String with stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String & stack): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

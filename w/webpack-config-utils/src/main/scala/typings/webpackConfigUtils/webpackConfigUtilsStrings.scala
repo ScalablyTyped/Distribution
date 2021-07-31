@@ -4,7 +4,6 @@ import typings.webpackConfigUtils.mod.EnvVars
 import typings.webpackConfigUtils.mod._Falsy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackConfigUtilsStrings {
@@ -15,22 +14,30 @@ object webpackConfigUtilsStrings {
   def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
   
   @js.native
-  sealed trait _empty extends _Falsy
+  sealed trait _empty
+    extends StObject
+       with _Falsy
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait dev extends EnvVars
+  sealed trait dev
+    extends StObject
+       with EnvVars
   @scala.inline
   def dev: dev = "dev".asInstanceOf[dev]
   
   @js.native
-  sealed trait development extends EnvVars
+  sealed trait development
+    extends StObject
+       with EnvVars
   @scala.inline
   def development: development = "development".asInstanceOf[development]
   
   @js.native
-  sealed trait `false` extends _Falsy
+  sealed trait `false`
+    extends StObject
+       with _Falsy
   @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
   
@@ -40,12 +47,16 @@ object webpackConfigUtilsStrings {
   def getIfUtils: getIfUtils = "getIfUtils".asInstanceOf[getIfUtils]
   
   @js.native
-  sealed trait prod extends EnvVars
+  sealed trait prod
+    extends StObject
+       with EnvVars
   @scala.inline
   def prod: prod = "prod".asInstanceOf[prod]
   
   @js.native
-  sealed trait production extends EnvVars
+  sealed trait production
+    extends StObject
+       with EnvVars
   @scala.inline
   def production: production = "production".asInstanceOf[production]
   
@@ -55,7 +66,9 @@ object webpackConfigUtilsStrings {
   def removeEmpty: removeEmpty = "removeEmpty".asInstanceOf[removeEmpty]
   
   @js.native
-  sealed trait test extends EnvVars
+  sealed trait test
+    extends StObject
+       with EnvVars
   @scala.inline
   def test: test = "test".asInstanceOf[test]
 }

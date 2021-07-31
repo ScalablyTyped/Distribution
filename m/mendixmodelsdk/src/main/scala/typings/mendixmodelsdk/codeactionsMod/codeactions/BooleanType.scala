@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object BooleanType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BooleanType.create")
-  @js.native
-  def create(model: IModel): BooleanType = js.native
+  @scala.inline
+  def create(model: IModel): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object BooleanType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BooleanType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): BooleanType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -78,9 +75,8 @@ object BooleanType {
     *  7.21.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BooleanType.createInCodeActionUnderActionReturnType")
-  @js.native
-  def createInCodeActionUnderActionReturnType(container: CodeAction): BooleanType = js.native
+  @scala.inline
+  def createInCodeActionUnderActionReturnType(container: CodeAction): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCodeActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/codeactions", "codeactions.BooleanType.structureTypeName")

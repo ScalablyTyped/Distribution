@@ -3,11 +3,12 @@ package typings.sharepoint
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MQueryResultSet[T] extends /* index */ NumberDictionary[T] {
+trait MQueryResultSet[T]
+  extends StObject
+     with /* index */ NumberDictionary[T] {
   
   def contains(contained: T): Boolean = js.native
   
@@ -35,7 +36,7 @@ trait MQueryResultSet[T] extends /* index */ NumberDictionary[T] {
   def lastIndexOf(`object`: js.Any): Double = js.native
   def lastIndexOf(`object`: js.Any, startIndex: Double): Double = js.native
   
-  def map(callback: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[Double], _]): MQueryResultSet[T] = js.native
+  def map(callback: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[Double], js.Any]): MQueryResultSet[T] = js.native
   
   def some(fn: js.Function2[/* elementOfArray */ T, /* indexInArray */ js.UndefOr[Double], Boolean]): Boolean = js.native
   def some(

@@ -2,26 +2,24 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartBackupJobOutput extends StObject {
   
   /**
     * Uniquely identifies a request to AWS Backup to back up a resource.
     */
-  var BackupJobId: js.UndefOr[String] = js.native
+  var BackupJobId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that a backup job is started, in Unix format and Coordinated Universal Time (UTC). The value of CreationDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
-  var CreationDate: js.UndefOr[timestamp] = js.native
+  var CreationDate: js.UndefOr[timestamp] = js.undefined
   
   /**
     * An ARN that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
-  var RecoveryPointArn: js.UndefOr[ARN] = js.native
+  var RecoveryPointArn: js.UndefOr[ARN] = js.undefined
 }
 object StartBackupJobOutput {
   

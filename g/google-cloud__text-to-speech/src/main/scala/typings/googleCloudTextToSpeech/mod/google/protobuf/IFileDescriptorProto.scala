@@ -2,49 +2,47 @@ package typings.googleCloudTextToSpeech.mod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a FileDescriptorProto. */
-@js.native
 trait IFileDescriptorProto extends StObject {
   
   /** FileDescriptorProto package */
   @JSName("package")
-  var _package: js.UndefOr[String | Null] = js.native
+  var _package: js.UndefOr[String | Null] = js.undefined
   
   /** FileDescriptorProto dependency */
-  var dependency: js.UndefOr[js.Array[String] | Null] = js.native
+  var dependency: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** FileDescriptorProto enumType */
-  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto] | Null] = js.native
+  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto] | Null] = js.undefined
   
   /** FileDescriptorProto extension */
-  var extension: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.native
+  var `extension`: js.UndefOr[js.Array[IFieldDescriptorProto] | Null] = js.undefined
   
   /** FileDescriptorProto messageType */
-  var messageType: js.UndefOr[js.Array[IDescriptorProto] | Null] = js.native
+  var messageType: js.UndefOr[js.Array[IDescriptorProto] | Null] = js.undefined
   
   /** FileDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** FileDescriptorProto options */
-  var options: js.UndefOr[IFileOptions | Null] = js.native
+  var options: js.UndefOr[IFileOptions | Null] = js.undefined
   
   /** FileDescriptorProto publicDependency */
-  var publicDependency: js.UndefOr[js.Array[Double] | Null] = js.native
+  var publicDependency: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** FileDescriptorProto service */
-  var service: js.UndefOr[js.Array[IServiceDescriptorProto] | Null] = js.native
+  var service: js.UndefOr[js.Array[IServiceDescriptorProto] | Null] = js.undefined
   
   /** FileDescriptorProto sourceCodeInfo */
-  var sourceCodeInfo: js.UndefOr[ISourceCodeInfo | Null] = js.native
+  var sourceCodeInfo: js.UndefOr[ISourceCodeInfo | Null] = js.undefined
   
   /** FileDescriptorProto syntax */
-  var syntax: js.UndefOr[String | Null] = js.native
+  var syntax: js.UndefOr[String | Null] = js.undefined
   
   /** FileDescriptorProto weakDependency */
-  var weakDependency: js.UndefOr[js.Array[Double] | Null] = js.native
+  var weakDependency: js.UndefOr[js.Array[Double] | Null] = js.undefined
 }
 object IFileDescriptorProto {
   

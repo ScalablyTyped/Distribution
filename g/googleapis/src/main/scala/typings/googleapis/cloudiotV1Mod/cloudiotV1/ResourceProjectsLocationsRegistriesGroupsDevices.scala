@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Groups$Devices")
@@ -33,7 +32,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevices protected () extends StOb
     */
   def get(): GaxiosPromise[SchemaDevice] = js.native
   def get(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def get(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesGet): GaxiosPromise[SchemaDevice] = js.native
   def get(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesGet,
@@ -73,7 +72,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevices protected () extends StOb
     */
   def list(): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDevicesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDevicesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesList): GaxiosPromise[SchemaListDevicesResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesList,
@@ -109,7 +108,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevices protected () extends StOb
     */
   def modifyCloudToDeviceConfig(): GaxiosPromise[SchemaDeviceConfig] = js.native
   def modifyCloudToDeviceConfig(callback: BodyResponseCallback[SchemaDeviceConfig]): Unit = js.native
-  def modifyCloudToDeviceConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeviceConfig] = js.native
+  def modifyCloudToDeviceConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeviceConfig] = js.native
   def modifyCloudToDeviceConfig(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesModifycloudtodeviceconfig): GaxiosPromise[SchemaDeviceConfig] = js.native
   def modifyCloudToDeviceConfig(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesModifycloudtodeviceconfig,
@@ -146,7 +145,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevices protected () extends StOb
     */
   def patch(): GaxiosPromise[SchemaDevice] = js.native
   def patch(callback: BodyResponseCallback[SchemaDevice]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDevice] = js.native
   def patch(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesPatch): GaxiosPromise[SchemaDevice] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesPatch,
@@ -192,7 +191,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevices protected () extends StOb
     */
   def sendCommandToDevice(): GaxiosPromise[SchemaSendCommandToDeviceResponse] = js.native
   def sendCommandToDevice(callback: BodyResponseCallback[SchemaSendCommandToDeviceResponse]): Unit = js.native
-  def sendCommandToDevice(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendCommandToDeviceResponse] = js.native
+  def sendCommandToDevice(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSendCommandToDeviceResponse] = js.native
   def sendCommandToDevice(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesSendcommandtodevice): GaxiosPromise[SchemaSendCommandToDeviceResponse] = js.native
   def sendCommandToDevice(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesSendcommandtodevice,

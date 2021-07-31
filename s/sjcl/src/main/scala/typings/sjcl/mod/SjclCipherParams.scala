@@ -2,26 +2,24 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@js.native
 trait SjclCipherParams extends StObject {
   
-  var adata: js.UndefOr[String] = js.native
+  var adata: js.UndefOr[String] = js.undefined
   
-  var cipher: js.UndefOr[String] = js.native
+  var cipher: js.UndefOr[String] = js.undefined
   
-  var iter: js.UndefOr[Double] = js.native
+  var iter: js.UndefOr[Double] = js.undefined
   
-  var ks: js.UndefOr[Double] = js.native
+  var ks: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var v: js.UndefOr[Double] = js.native
+  var v: js.UndefOr[Double] = js.undefined
 }
 object SjclCipherParams {
   

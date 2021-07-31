@@ -2,55 +2,53 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableRecord...
   */
-@js.native
 trait ITableRecord extends StObject {
   
   /**
     * Comment related to the table.
     */
-  var qComment: String = js.native
+  var qComment: String
   
   /**
     * Information about the fields in the table.
     */
-  var qFields: js.Array[IFieldInTableData] = js.native
+  var qFields: js.Array[IFieldInTableData]
   
   /**
     * If set to true, Direct Discovery is used.
     * Direct Discovery fields are not loaded into memory and remain in the external database.
     */
-  var qIsDirectDiscovery: Boolean = js.native
+  var qIsDirectDiscovery: Boolean
   
   /**
     * This property is set to true if the table contains a synthetic key.
     */
-  var qIsSynthetic: Boolean = js.native
+  var qIsSynthetic: Boolean
   
   /**
     * This property is set to true if the table is loose.
     */
-  var qLoose: Boolean = js.native
+  var qLoose: Boolean
   
   /**
     * Name of the table.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Number of rows in the table.
     */
-  var qNoOfRows: Double = js.native
+  var qNoOfRows: Double
   
   /**
     * Information about the position of the table.
     */
-  var qPos: IPoint = js.native
+  var qPos: IPoint
 }
 object ITableRecord {
   

@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replicaSetMod {
@@ -29,7 +28,7 @@ object replicaSetMod {
     /** @deprecated apps/v1beta2/ReplicaSet is deprecated by apps/v1/ReplicaSet and not supported by Kubernetes v1.16+ clusters. */
     def this(name: String) = this()
     def this(name: String, args: ReplicaSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ReplicaSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -60,6 +59,10 @@ object replicaSetMod {
   /* static members */
   object ReplicaSet {
     
+    @JSImport("@pulumi/kubernetes/apps/v1beta2/replicaSet", "ReplicaSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReplicaSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,44 +71,40 @@ object replicaSetMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1beta2/replicaSet", "ReplicaSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReplicaSet = js.native
-    @JSImport("@pulumi/kubernetes/apps/v1beta2/replicaSet", "ReplicaSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ReplicaSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReplicaSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicaSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ReplicaSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicaSet]
     
     /**
       * Returns true if the given object is an instance of ReplicaSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1beta2/replicaSet", "ReplicaSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta2/replicaSet.ReplicaSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta2/replicaSet.ReplicaSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta2/replicaSet.ReplicaSet */ Boolean]
   }
   
-  @js.native
   trait ReplicaSetArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[appsSlashv1beta2]] = js.native
+    val apiVersion: js.UndefOr[Input[appsSlashv1beta2]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ReplicaSet]] = js.undefined
     
     /**
       * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s) that the ReplicaSet manages. Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Spec defines the specification of the desired behavior of the ReplicaSet. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
       */
-    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.apps.v1beta2.ReplicaSetSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.apps.v1beta2.ReplicaSetSpec]] = js.undefined
   }
   object ReplicaSetArgs {
     

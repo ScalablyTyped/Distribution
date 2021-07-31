@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMax_ extends StObject {
   
-  var xMax: Double = js.native
+  var xMax: Double
   
-  var xMin: Double = js.native
+  var xMin: Double
   
-  var yMax: Double = js.native
+  var yMax: Double
   
-  var yMin: Double = js.native
+  var yMin: Double
 }
 object XMax_ {
   

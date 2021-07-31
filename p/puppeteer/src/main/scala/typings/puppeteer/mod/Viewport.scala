@@ -2,41 +2,39 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport extends StObject {
   
   /**
     * Specify device scale factor (can be thought of as dpr).
     * @default 1
     */
-  var deviceScaleFactor: js.UndefOr[Double] = js.native
+  var deviceScaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies if viewport supports touch events.
     * @default false
     */
-  var hasTouch: js.UndefOr[Boolean] = js.native
+  var hasTouch: js.UndefOr[Boolean] = js.undefined
   
   /** The page height in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Specifies if viewport is in landscape mode.
     * @default false
     */
-  var isLandscape: js.UndefOr[Boolean] = js.native
+  var isLandscape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the `meta viewport` tag is taken into account.
     * @default false
     */
-  var isMobile: js.UndefOr[Boolean] = js.native
+  var isMobile: js.UndefOr[Boolean] = js.undefined
   
   /** The page width in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object Viewport {
   

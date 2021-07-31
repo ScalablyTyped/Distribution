@@ -2,13 +2,11 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Meta extends StObject {
   
-  var meta: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any = js.native
+  var meta: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
 }
 object Meta {
   

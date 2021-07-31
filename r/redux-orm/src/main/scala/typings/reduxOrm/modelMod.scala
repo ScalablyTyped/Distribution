@@ -32,14 +32,15 @@ import typings.std.Required
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelMod {
   
   @JSImport("redux-orm/Model", JSImport.Default)
   @js.native
-  class default[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected () extends Model[MClass, Fields] {
+  class default[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] protected ()
+    extends StObject
+       with Model[MClass, Fields] {
     /**
       * Creates a Model instance from it's properties.
       * Don't use this to create a new record; Use the static method {@link Model#create}.
@@ -57,23 +58,20 @@ object modelMod {
     /**
       * @see {@link QuerySet.all}
       */
-    @JSImport("redux-orm/Model", "default.all")
-    @js.native
-    def all(): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+    @scala.inline
+    def all(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
     
     /**
       * @see {@link QuerySet.at}
       */
-    @JSImport("redux-orm/Model", "default.at")
-    @js.native
-    def at(index: Double): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+    @scala.inline
+    def at(index: Double): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("at")(index.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
     
     /**
       * @see {@link QuerySet.count}
       */
-    @JSImport("redux-orm/Model", "default.count")
-    @js.native
-    def count(): Double = js.native
+    @scala.inline
+    def count(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Double]
     
     /**
       * Creates a new record in the database, instantiates a {@link Model} and returns it.
@@ -84,29 +82,26 @@ object modelMod {
       * @param  userProps - the new {@link Model}'s properties.
       * @return a new {@link SessionBoundModel} instance.
       */
-    @JSImport("redux-orm/Model", "default.create")
-    @js.native
+    @scala.inline
     def create[M /* <: AnyModel */, TProps /* <: CreateProps[
         M, 
         ModelFields[M], 
         /* keyof redux-orm.redux-orm/helpers.PickByValue<redux-orm.redux-orm/Model.ModelFields<M>, redux-orm.redux-orm/QuerySet.MutableQuerySet<any, {}>> */ String, 
         FieldSpecKeys[M, AttributeWithDefault], 
         (/* keyof redux-orm.redux-orm/helpers.PickByValue<redux-orm.redux-orm/Model.ModelFields<M>, redux-orm.redux-orm/QuerySet.MutableQuerySet<any, {}>> */ String) | OptionalKeys[ModelFields[M]] | (FieldSpecKeys[M, AttributeWithDefault]) | IdKeyOpt[M]
-      ] */](userProps: TProps): SessionBoundModel[M, TProps] = js.native
+      ] */](userProps: TProps): SessionBoundModel[M, TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(userProps.asInstanceOf[js.Any]).asInstanceOf[SessionBoundModel[M, TProps]]
     
     /**
       * @see {@link QuerySet.delete}
       */
-    @JSImport("redux-orm/Model", "default.delete")
-    @js.native
-    def delete(): Unit = js.native
+    @scala.inline
+    def delete(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[Unit]
     
     /**
       * @see {@link QuerySet.exclude}
       */
-    @JSImport("redux-orm/Model", "default.exclude")
-    @js.native
-    def exclude(props: LookupSpec[Model[Instantiable0[AnyModel], _]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+    @scala.inline
+    def exclude(props: LookupSpec[Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
     
     /**
       * Returns a boolean indicating if an entity
@@ -115,9 +110,8 @@ object modelMod {
       * @param  props - a key-value that {@link Model} instances should have to be considered as existing.
       * @return a boolean indicating if entity with `props` exists in the state
       */
-    @JSImport("redux-orm/Model", "default.exists")
-    @js.native
-    def exists(props: Partial[Ref[Model[Instantiable0[AnyModel], _]]]): Boolean = js.native
+    @scala.inline
+    def exists(props: Partial[Ref[Model[Instantiable0[AnyModel], js.Any]]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(props.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Model field descriptors.
@@ -135,16 +129,14 @@ object modelMod {
     /**
       * @see {@link QuerySet.filter}
       */
-    @JSImport("redux-orm/Model", "default.filter")
-    @js.native
-    def filter(props: LookupSpec[Model[Instantiable0[AnyModel], _]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+    @scala.inline
+    def filter(props: LookupSpec[Model[Instantiable0[AnyModel], js.Any]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(props.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
     
     /**
       * @see {@link QuerySet.first}
       */
-    @JSImport("redux-orm/Model", "default.first")
-    @js.native
-    def first(): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+    @scala.inline
+    def first(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
     
     /**
       * Gets the {@link Model} instance that matches properties in `lookupObj`.
@@ -155,9 +147,8 @@ object modelMod {
       * @throws {Error} If more than one entity matches the properties in `lookupObj`.
       * @return a {@link SessionBoundModel} instance that matches the properties in `lookupObj`.
       */
-    @JSImport("redux-orm/Model", "default.get")
-    @js.native
-    def get[M /* <: AnyModel */](lookupObj: LookupSpec[M]): (SessionBoundModel[M, js.Object]) | Null = js.native
+    @scala.inline
+    def get[M /* <: AnyModel */](lookupObj: LookupSpec[M]): (SessionBoundModel[M, js.Object]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(lookupObj.asInstanceOf[js.Any]).asInstanceOf[(SessionBoundModel[M, js.Object]) | Null]
     
     /**
       * Returns an instance of the model's `querySetClass` field.
@@ -165,9 +156,8 @@ object modelMod {
       *
       * @return An instance of the model's `querySetClass`.
       */
-    @JSImport("redux-orm/Model", "default.getQuerySet")
-    @js.native
-    def getQuerySet(): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+    @scala.inline
+    def getQuerySet(): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuerySet")().asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
     
     /**
       * The key of Model's identifier property
@@ -185,19 +175,16 @@ object modelMod {
       *
       * @since 0.11.0
       */
-    @JSImport("redux-orm/Model", "default.idExists")
-    @js.native
-    def idExists(id: String): Boolean = js.native
-    @JSImport("redux-orm/Model", "default.idExists")
-    @js.native
-    def idExists(id: Double): Boolean = js.native
+    @scala.inline
+    def idExists(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("idExists")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def idExists(id: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("idExists")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * @see {@link QuerySet.last}
       */
-    @JSImport("redux-orm/Model", "default.last")
-    @js.native
-    def last(): js.UndefOr[SessionBoundModel[_, js.Object]] = js.native
+    @scala.inline
+    def last(): js.UndefOr[SessionBoundModel[js.Any, js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("last")().asInstanceOf[js.UndefOr[SessionBoundModel[js.Any, js.Object]]]
     
     /**
       * Manually mark individual instances as accessed.
@@ -205,18 +192,16 @@ object modelMod {
       *
       * @param ids - Array of primary key values
       */
-    @JSImport("redux-orm/Model", "default.markAccessed")
-    @js.native
-    def markAccessed(ids: js.Array[String | Double]): Unit = js.native
+    @scala.inline
+    def markAccessed(ids: js.Array[String | Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markAccessed")(ids.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Manually mark this model's table as scanned.
       * This allows invalidating selector memoization within mutable sessions.
       *
       */
-    @JSImport("redux-orm/Model", "default.markFullTableScanned")
-    @js.native
-    def markFullTableScanned(): Unit = js.native
+    @scala.inline
+    def markFullTableScanned(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markFullTableScanned")().asInstanceOf[Unit]
     
     /**
       * A string constant identifying specific Model, necessary to retain the shape of state and relations through transpilation steps
@@ -248,12 +233,13 @@ object modelMod {
     /**
       * @see {@link QuerySet.orderBy}
       */
-    @JSImport("redux-orm/Model", "default.orderBy")
-    @js.native
-    def orderBy(iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], _]]]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
-    @JSImport("redux-orm/Model", "default.orderBy")
-    @js.native
-    def orderBy(iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], _]]], orders: js.Array[SortOrder]): typings.reduxOrm.querySetMod.default[_, js.Object] = js.native
+    @scala.inline
+    def orderBy(iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], js.Any]]]): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any]).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
+    @scala.inline
+    def orderBy(
+      iteratees: js.Array[SortIteratee[Model[Instantiable0[AnyModel], js.Any]]],
+      orders: js.Array[SortOrder]
+    ): typings.reduxOrm.querySetMod.default[js.Any, js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(iteratees.asInstanceOf[js.Any], orders.asInstanceOf[js.Any])).asInstanceOf[typings.reduxOrm.querySetMod.default[js.Any, js.Object]]
     
     /**
       * @see {@link Model.getQuerySet}
@@ -274,7 +260,7 @@ object modelMod {
         /* clauses */ js.Array[QueryClause[js.Object]], 
         /* opts */ js.UndefOr[js.Object], 
         typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
-      ]) with TypeofQuerySet = js.native
+      ]) & TypeofQuerySet = js.native
     @scala.inline
     def querySetClass_=(
       x: (Instantiable3[
@@ -282,7 +268,7 @@ object modelMod {
           /* clauses */ js.Array[QueryClause[js.Object]], 
           /* opts */ js.UndefOr[js.Object], 
           typings.reduxOrm.querySetMod.default[AnyModel, js.Object]
-        ]) with TypeofQuerySet
+        ]) & TypeofQuerySet
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("querySetClass")(x.asInstanceOf[js.Any])
     
     /**
@@ -297,16 +283,14 @@ object modelMod {
       *                      {@link Model} type that the reducer is being attached to.
       * @param session - an optional parameter, can be used for querying other Models (mutations are not supported)
       */
-    @JSImport("redux-orm/Model", "default.reducer")
-    @js.native
-    def reducer(action: js.Any, modelType: ModelType[_], session: OrmSession[_]): Unit = js.native
+    @scala.inline
+    def reducer(action: js.Any, modelType: ModelType[js.Any], session: OrmSession[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(action.asInstanceOf[js.Any], modelType.asInstanceOf[js.Any], session.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * @see {@link QuerySet.update}
       */
-    @JSImport("redux-orm/Model", "default.update")
-    @js.native
-    def update(props: UpdateProps[Model[Instantiable0[AnyModel], _]]): Unit = js.native
+    @scala.inline
+    def update(props: UpdateProps[Model[Instantiable0[AnyModel], js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Creates a new or update existing record in the database, instantiates a {@link Model} and returns it.
@@ -317,9 +301,8 @@ object modelMod {
       * @param  userProps - the upserted {@link Model}'s properties.
       * @return a {@link SessionBoundModel} instance.
       */
-    @JSImport("redux-orm/Model", "default.upsert")
-    @js.native
-    def upsert[M /* <: AnyModel */, TProps /* <: UpsertProps[M] */](userProps: TProps): SessionBoundModel[M, TProps] = js.native
+    @scala.inline
+    def upsert[M /* <: AnyModel */, TProps /* <: UpsertProps[M] */](userProps: TProps): SessionBoundModel[M, TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("upsert")(userProps.asInstanceOf[js.Any]).asInstanceOf[SessionBoundModel[M, TProps]]
     
     /**
       * Returns a {@link Model} instance for the object with id `id`.
@@ -330,15 +313,15 @@ object modelMod {
       * @param  id - the `id` of the object to get
       * @return a {@link SessionBoundModel} instance with id `id`
       */
-    @JSImport("redux-orm/Model", "default.withId")
-    @js.native
-    def withId[M /* <: AnyModel */](id: IdType[M]): (SessionBoundModel[M, js.Object]) | Null = js.native
+    @scala.inline
+    def withId[M /* <: AnyModel */](id: IdType[M]): (SessionBoundModel[M, js.Object]) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("withId")(id.asInstanceOf[js.Any]).asInstanceOf[(SessionBoundModel[M, js.Object]) | Null]
   }
   
   @JSImport("redux-orm/Model", "AnyModel")
   @js.native
   class AnyModel ()
-    extends Model[Instantiable0[AnyModel], js.Any]
+    extends StObject
+       with Model[Instantiable0[AnyModel], js.Any]
   
   @js.native
   trait BlueprintProps[M /* <: AnyModel */, ReqKeys /* <: /* keyof redux-orm.redux-orm/Model.ModelBlueprint<M, std.Required<redux-orm.redux-orm/Model.ModelFields<M>>> */ String */, OptKeys /* <: /* keyof redux-orm.redux-orm/Model.ModelBlueprint<M, std.Required<redux-orm.redux-orm/Model.ModelFields<M>>> */ String */] extends StObject
@@ -359,9 +342,9 @@ object modelMod {
   
   type IdKeyOpt[M /* <: AnyModel */] = IdKey[M]
   
-  type IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], _] */] = IdType[M] | GetId[M]
+  type IdOrModelLike[M /* <: Model[Instantiable0[AnyModel], js.Any] */] = IdType[M] | GetId[M]
   
-  type IdType[M /* <: Model[Instantiable0[AnyModel], _] */] = Double | (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[any] */ js.Any)
+  type IdType[M /* <: Model[Instantiable0[AnyModel], js.Any] */] = Double | (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[any] */ js.Any)
   
   @js.native
   trait Model[MClass /* <: Instantiable0[AnyModel] */, Fields /* <: ModelFieldMap */] extends StObject {
@@ -383,7 +366,8 @@ object modelMod {
       * @param  otherModel - a {@link Model} instance to compare
       * @return a boolean indicating if the {@link Model} instance's are equal.
       */
-    def equals(otherModel: Model[Instantiable0[AnyModel], _]): Boolean = js.native
+    def equals(otherModel: Model[Instantiable0[AnyModel], js.Any]): Boolean = js.native
+    def equals(otherModel: SessionBoundModel[js.Any, js.Object]): Boolean = js.native
     
     /**
       * Gets the id value of the current instance by looking up the id attribute.
@@ -425,7 +409,7 @@ object modelMod {
   
   type ModelBlueprint[M /* <: AnyModel */, Fields /* <: Required[ModelFields[M]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Fields ]: Fields[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdOrModelLike<Fields[K]> : Fields[K] extends redux-orm.redux-orm/QuerySet.MutableQuerySet<infer RM, {}>? std.ReadonlyArray<redux-orm.redux-orm/Model.IdOrModelLike<any>> : Fields[K]}
-    */ typings.reduxOrm.reduxOrmStrings.ModelBlueprint with TopLevel[js.Any]
+    */ typings.reduxOrm.reduxOrmStrings.ModelBlueprint & TopLevel[js.Any]
   
   type ModelClass[M /* <: AnyModel */] = ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: M['getClass'] */ js.Any
@@ -433,8 +417,9 @@ object modelMod {
   
   type ModelField = (typings.reduxOrm.querySetMod.default[js.Any, js.Object]) | (SessionBoundModel[js.Any, js.Object]) | Serializable
   
-  @js.native
-  trait ModelFieldMap extends /* K */ StringDictionary[ModelField]
+  trait ModelFieldMap
+    extends StObject
+       with /* K */ StringDictionary[ModelField]
   object ModelFieldMap {
     
     @scala.inline
@@ -444,11 +429,12 @@ object modelMod {
     }
   }
   
-  type ModelFields[M /* <: Model[Instantiable0[AnyModel], _] */] = js.Any
+  type ModelFields[M /* <: Model[Instantiable0[AnyModel], js.Any] */] = js.Any
   
   @js.native
   trait ModelType[M /* <: AnyModel */]
-    extends QueryBuilder[M, js.Object] {
+    extends StObject
+       with QueryBuilder[M, js.Object] {
     
     /**
       * @see {@link Model#create}
@@ -502,7 +488,7 @@ object modelMod {
   
   type Ref[M /* <: AnyModel */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>> ]: redux-orm.redux-orm/Model.ModelFields<M>[K] extends redux-orm.redux-orm/Model.AnyModel? redux-orm.redux-orm/Model.IdType<redux-orm.redux-orm/Model.ModelFields<M>[K]> : redux-orm.redux-orm/Model.RefFields<M, keyof redux-orm.redux-orm/Model.ModelFields<M>>[K]}
-    */ typings.reduxOrm.reduxOrmStrings.Ref with TopLevel[js.Any]
+    */ typings.reduxOrm.reduxOrmStrings.Ref & TopLevel[js.Any]
   
   type RefFields[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] = Omit[ModelFields[M], Extract[K, FieldSpecKeys[M, ManyToMany]]]
   
@@ -516,7 +502,7 @@ object modelMod {
     ])
   ]
   
-  type SessionBoundModel[M /* <: Model[Instantiable0[AnyModel], _] */, InstanceProps /* <: js.Object */] = M with typings.reduxOrm.reduxOrmStrings.SessionBoundModel with TopLevel[js.Any] with InstanceProps
+  type SessionBoundModel[M /* <: Model[Instantiable0[AnyModel], js.Any] */, InstanceProps /* <: js.Object */] = M & typings.reduxOrm.reduxOrmStrings.SessionBoundModel & TopLevel[js.Any] & InstanceProps
   
   type SessionBoundModelField[M /* <: AnyModel */, K /* <: /* keyof redux-orm.redux-orm/Model.ModelFields<M> */ String */] = (/* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[K] */ js.Any) | (SessionBoundModel[
     /* import warning: importer.ImportType#apply Failed type conversion: redux-orm.redux-orm/Model.ModelFields<M>[K] */ js.Any, 

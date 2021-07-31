@@ -2,19 +2,19 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextureAtlas extends Disposable {
+trait TextureAtlas
+  extends StObject
+     with Disposable {
   
-  def findRegion(name: String): TextureAtlasRegion = js.native
+  def findRegion(name: String): TextureAtlasRegion
   
-  var load: js.Any = js.native
+  var load: js.Any
   
-  var pages: js.Array[TextureAtlasPage] = js.native
+  var pages: js.Array[TextureAtlasPage]
   
-  var regions: js.Array[TextureAtlasRegion] = js.native
+  var regions: js.Array[TextureAtlasRegion]
 }
 object TextureAtlas {
   

@@ -9,101 +9,101 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityItemTypesMod {
   
-  @js.native
-  trait IActivityItemProps extends AllHTMLAttributes[HTMLElement] {
+  trait IActivityItemProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * An element describing the activity that took place. If no activityDescription, activityDescriptionText, or
       * onRenderActivityDescription are included, no description of the activity is shown.
       */
-    var activityDescription: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var activityDescription: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
     /**
       * Text describing the activity that occurred and naming the people involved in it.
       * Deprecated, use `activityDescription` instead.
       * @deprecated Use `activityDescription` instead.
       */
-    var activityDescriptionText: js.UndefOr[String] = js.native
+    var activityDescriptionText: js.UndefOr[String] = js.undefined
     
     /**
       * An element containing an icon shown next to the activity item.
       */
-    var activityIcon: js.UndefOr[ReactNode] = js.native
+    var activityIcon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * If activityIcon is not set, then the persona props in this array will be used as the icon for this activity item.
       */
-    var activityPersonas: js.UndefOr[js.Array[IPersonaSharedProps]] = js.native
+    var activityPersonas: js.UndefOr[js.Array[IPersonaSharedProps]] = js.undefined
     
     /**
       * Enables/Disables the beacon that radiates
       * from the center of the center of the activity icon. Signals an activity has started.
       * @defaultvalue false
       */
-    var animateBeaconSignal: js.UndefOr[Boolean] = js.native
+    var animateBeaconSignal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Beacon color one
       */
-    var beaconColorOne: js.UndefOr[String] = js.native
+    var beaconColorOne: js.UndefOr[String] = js.undefined
     
     /**
       * Beacon color two
       */
-    var beaconColorTwo: js.UndefOr[String] = js.native
+    var beaconColorTwo: js.UndefOr[String] = js.undefined
     
     /**
       * Text of comments or \@mention messages.
       * Deprecated, use `comments` instead.
       * @deprecated Use `comments` instead.
       */
-    var commentText: js.UndefOr[String] = js.native
+    var commentText: js.UndefOr[String] = js.undefined
     
     /**
       * An element containing the text of comments or \@mention messages.
       * If no comments, commentText, or onRenderComments are included, no comments are shown.
       */
-    var comments: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var comments: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
     /**
       * Indicated if the compact styling should be used.
       */
-    var isCompact: js.UndefOr[Boolean] = js.native
+    var isCompact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A renderer for the description of the current activity.
       */
-    var onRenderActivityDescription: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.native
+    var onRenderActivityDescription: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.undefined
     
     /**
       * A renderer that adds the text of a comment below the activity description.
       */
-    var onRenderComments: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.native
+    var onRenderComments: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.undefined
     
     /**
       * A renderer to create the icon next to the activity item.
       */
-    var onRenderIcon: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.native
+    var onRenderIcon: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.undefined
     
     /**
       * A renderer adds a time stamp. If not included, timeStamp is shown as plain text below the activity.
       */
-    var onRenderTimeStamp: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.native
+    var onRenderTimeStamp: js.UndefOr[IRenderFunction[IActivityItemProps]] = js.undefined
     
     /**
       * Optional styling for the elements within the Activity Item.
       */
-    var styles: js.UndefOr[IActivityItemStyles] = js.native
+    var styles: js.UndefOr[IActivityItemStyles] = js.undefined
     
     /**
       * Element shown as a timestamp on this activity. If not included, no timestamp is shown.
       */
-    var timeStamp: js.UndefOr[String | js.Array[ReactNode] | ReactNode] = js.native
+    var timeStamp: js.UndefOr[String | js.Array[ReactNode] | ReactNode] = js.undefined
   }
   object IActivityItemProps {
     
@@ -234,89 +234,88 @@ object activityItemTypesMod {
     }
   }
   
-  @js.native
   trait IActivityItemStyles extends StObject {
     
     /**
       * Styles applied to the main container of the activity's description.
       */
-    var activityContent: js.UndefOr[IStyle] = js.native
+    var activityContent: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the persona of the user that did this activity.
       */
-    var activityPersona: js.UndefOr[IStyle] = js.native
+    var activityPersona: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the activity's description.
       */
-    var activityText: js.UndefOr[IStyle] = js.native
+    var activityText: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the icon indicating the type of the activity. Only shown when personas are unavailable.
       */
-    var activityTypeIcon: js.UndefOr[IStyle] = js.native
+    var activityTypeIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the text of comments.
       */
-    var commentText: js.UndefOr[IStyle] = js.native
+    var commentText: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to personas when two users are involved in a single activity.
       */
-    var doublePersona: js.UndefOr[IStyle] = js.native
+    var doublePersona: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to main text container in the compact variant.
       */
-    var isCompactContent: js.UndefOr[IStyle] = js.native
+    var isCompactContent: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to personas and icons in the compact variant.
       */
-    var isCompactIcon: js.UndefOr[IStyle] = js.native
+    var isCompactIcon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to personas in the compact variant.
       */
-    var isCompactPersona: js.UndefOr[IStyle] = js.native
+    var isCompactPersona: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to a wrapper around personas in the compact variant.
       */
-    var isCompactPersonaContainer: js.UndefOr[IStyle] = js.native
+    var isCompactPersonaContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to root in the compact variant.
       */
-    var isCompactRoot: js.UndefOr[IStyle] = js.native
+    var isCompactRoot: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the timestamp in compact mode.
       * This can occur if a host overrides the render behavior to force the timestamp to render.
       */
-    var isCompactTimeStamp: js.UndefOr[IStyle] = js.native
+    var isCompactTimeStamp: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the container of the persona image or activity type icon.
       */
-    var personaContainer: js.UndefOr[IStyle] = js.native
+    var personaContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the root activity item container.
       */
-    var pulsingBeacon: js.UndefOr[IStyle] = js.native
+    var pulsingBeacon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the root activity item container.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Styles applied to the timestamp at the end of each activity item.
       */
-    var timeStamp: js.UndefOr[IStyle] = js.native
+    var timeStamp: js.UndefOr[IStyle] = js.undefined
   }
   object IActivityItemStyles {
     

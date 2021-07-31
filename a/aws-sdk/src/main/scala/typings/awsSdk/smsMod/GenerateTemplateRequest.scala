@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateTemplateRequest extends StObject {
   
   /**
     * The ID of the application associated with the AWS CloudFormation template.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * The format for generating the AWS CloudFormation template.
     */
-  var templateFormat: js.UndefOr[OutputFormat] = js.native
+  var templateFormat: js.UndefOr[OutputFormat] = js.undefined
 }
 object GenerateTemplateRequest {
   

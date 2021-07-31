@@ -2,95 +2,95 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The technical details of an endpoint that can be used for electronic services
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Endpoint extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Endpoint
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'address'.
     */
-  var _address: js.UndefOr[Element] = js.native
+  var _address: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'header'.
     */
-  var _header: js.UndefOr[js.Array[Element]] = js.native
+  var _header: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'payloadMimeType'.
     */
-  var _payloadMimeType: js.UndefOr[js.Array[Element]] = js.native
+  var _payloadMimeType: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The technical base address for connecting to this endpoint
     */
-  var address: uri = js.native
+  var address: uri
   
   /**
     * Protocol/Profile/Standard to be used with this endpoint connection
     */
-  var connectionType: Coding = js.native
+  var connectionType: Coding
   
   /**
     * Contact details for source (e.g. troubleshooting)
     */
-  var contact: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var contact: js.UndefOr[js.Array[ContactPoint]] = js.undefined
   
   /**
     * Usage depends on the channel type
     */
-  var header: js.UndefOr[js.Array[String]] = js.native
+  var header: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Identifies this endpoint across multiple systems
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Organization that manages this endpoint (may not be the organization that exposes the endpoint)
     */
-  var managingOrganization: js.UndefOr[Reference] = js.native
+  var managingOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
     * A name that this endpoint can be identified by
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Mimetype to send. If not specified, the content could be anything (including no payload, if the connectionType defined this)
     */
-  var payloadMimeType: js.UndefOr[js.Array[code]] = js.native
+  var payloadMimeType: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * The type of content that may be used at this endpoint (e.g. XDS Discharge summaries)
     */
-  var payloadType: js.Array[CodeableConcept] = js.native
+  var payloadType: js.Array[CodeableConcept]
   
   /**
     * Interval the endpoint is expected to be operational
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * active | suspended | error | off | entered-in-error | test
     */
-  var status: code = js.native
+  var status: code
 }
 object Endpoint {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Serializer extends StObject {
   
   /**
     * A serializer to use for converting data to the ORC format before storing it in Amazon S3. For more information, see Apache ORC.
     */
-  var OrcSerDe: js.UndefOr[typings.awsSdk.firehoseMod.OrcSerDe] = js.native
+  var OrcSerDe: js.UndefOr[typings.awsSdk.firehoseMod.OrcSerDe] = js.undefined
   
   /**
     * A serializer to use for converting data to the Parquet format before storing it in Amazon S3. For more information, see Apache Parquet.
     */
-  var ParquetSerDe: js.UndefOr[typings.awsSdk.firehoseMod.ParquetSerDe] = js.native
+  var ParquetSerDe: js.UndefOr[typings.awsSdk.firehoseMod.ParquetSerDe] = js.undefined
 }
 object Serializer {
   

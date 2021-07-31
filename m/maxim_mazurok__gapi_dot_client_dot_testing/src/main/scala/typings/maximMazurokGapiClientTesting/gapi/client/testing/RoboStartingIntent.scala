@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoboStartingIntent extends StObject {
   
   /** An intent that starts the main launcher activity. */
-  var launcherActivity: js.UndefOr[js.Any] = js.native
+  var launcherActivity: js.UndefOr[js.Any] = js.undefined
   
   /** An intent that starts an activity with specific details. */
-  var startActivity: js.UndefOr[StartActivityIntent] = js.native
+  var startActivity: js.UndefOr[StartActivityIntent] = js.undefined
   
   /** Timeout in seconds for each intent. */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object RoboStartingIntent {
   

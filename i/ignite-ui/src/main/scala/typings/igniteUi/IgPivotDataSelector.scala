@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotDataSelector
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -22,126 +21,126 @@ trait IgPivotDataSelector
     * paramType="string" The unique name of the item.
     * returnType="bool"  The function must return true if the item should be accepted.
     */
-  var customMoveValidation: js.UndefOr[js.Function] = js.native
+  var customMoveValidation: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Fired after the data selector is rendered. Changing the data source instance will re-render the data selector.
     */
-  var dataSelectorRendered: js.UndefOr[DataSelectorRenderedEvent] = js.native
+  var dataSelectorRendered: js.UndefOr[DataSelectorRenderedEvent] = js.undefined
   
   /**
     * An instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Fired after the data source has initialized.
     */
-  var dataSourceInitialized: js.UndefOr[DataSourceInitializedEvent] = js.native
+  var dataSourceInitialized: js.UndefOr[DataSourceInitializedEvent] = js.undefined
   
   /**
     * An object that will be used to create an instance of $.ig.OlapXmlaDataSource or $.ig.OlapFlatDataSource.
     * The provided value must contain an object with settings for one of the data source types - xmlaOptions or flatDataOptions.
     *
     */
-  var dataSourceOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptions] = js.native
+  var dataSourceOptions: js.UndefOr[IgPivotDataSelectorDataSourceOptions] = js.undefined
   
   /**
     * Fired after the data source has updated.
     */
-  var dataSourceUpdated: js.UndefOr[DataSourceUpdatedEvent] = js.native
+  var dataSourceUpdated: js.UndefOr[DataSourceUpdatedEvent] = js.undefined
   
   /**
     * Setting deferUpdate to true will not apply changes to the data source until the update method is called or the update layout button is clicked.
     *
     */
-  var deferUpdate: js.UndefOr[Boolean] = js.native
+  var deferUpdate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fired when the defer update checkbox changes.
     */
-  var deferUpdateChanged: js.UndefOr[DeferUpdateChangedEvent] = js.native
+  var deferUpdateChanged: js.UndefOr[DeferUpdateChangedEvent] = js.undefined
   
   /**
     * Disable the drag and drop for the columns drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableColumnsDropArea: js.UndefOr[Boolean] = js.native
+  var disableColumnsDropArea: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the drag and drop for the filters drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableFiltersDropArea: js.UndefOr[Boolean] = js.native
+  var disableFiltersDropArea: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the drag and drop for the measures drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableMeasuresDropArea: js.UndefOr[Boolean] = js.native
+  var disableMeasuresDropArea: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the drag and drop for the rows drop area and the ability to use filtering and remove items from it.
     *
     */
-  var disableRowsDropArea: js.UndefOr[Boolean] = js.native
+  var disableRowsDropArea: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fired on drag. Return false to cancel the dragging.
     */
-  var drag: js.UndefOr[DragEvent] = js.native
+  var drag: js.UndefOr[DragEvent] = js.undefined
   
   /**
     * Settings for the drag and drop functionality of the igPivotDataSelector.
     *
     */
-  var dragAndDropSettings: js.UndefOr[IgPivotDataSelectorDragAndDropSettings] = js.native
+  var dragAndDropSettings: js.UndefOr[IgPivotDataSelectorDragAndDropSettings] = js.undefined
   
   /**
     * Fired on drag start. Return false to cancel the drag.
     */
-  var dragStart: js.UndefOr[DragStartEvent] = js.native
+  var dragStart: js.UndefOr[DragStartEvent] = js.undefined
   
   /**
     * Fired on drag stop.
     */
-  var dragStop: js.UndefOr[DragStopEvent] = js.native
+  var dragStop: js.UndefOr[DragStopEvent] = js.undefined
   
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.native
+  var dropDownParent: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Fired after the filter members drop down closes.
     */
-  var filterDropDownClosed: js.UndefOr[FilterDropDownClosedEvent] = js.native
+  var filterDropDownClosed: js.UndefOr[FilterDropDownClosedEvent] = js.undefined
   
   /**
     * Fired before the filter members drop down closes. Return false to cancel the closing.
     */
-  var filterDropDownClosing: js.UndefOr[FilterDropDownClosingEvent] = js.native
+  var filterDropDownClosing: js.UndefOr[FilterDropDownClosingEvent] = js.undefined
   
   /**
     * Fired after the OK button in the filter members drop down is clicked. Return false to cancel the applying of the filters.
     */
-  var filterDropDownOk: js.UndefOr[FilterDropDownOkEvent] = js.native
+  var filterDropDownOk: js.UndefOr[FilterDropDownOkEvent] = js.undefined
   
   /**
     * Fired after the filter members drop down opens.
     */
-  var filterDropDownOpened: js.UndefOr[FilterDropDownOpenedEvent] = js.native
+  var filterDropDownOpened: js.UndefOr[FilterDropDownOpenedEvent] = js.undefined
   
   /**
     * Fired before the filter members drop down opens. Return false to cancel the opening.
     */
-  var filterDropDownOpening: js.UndefOr[FilterDropDownOpeningEvent] = js.native
+  var filterDropDownOpening: js.UndefOr[FilterDropDownOpeningEvent] = js.undefined
   
   /**
     * Fired after the filter members are loaded.
     */
-  var filterMembersLoaded: js.UndefOr[FilterMembersLoadedEvent] = js.native
+  var filterMembersLoaded: js.UndefOr[FilterMembersLoadedEvent] = js.undefined
   
   /**
     * This is the total height of the grid, including all UI elements - scroll container with data rows, header, footer, filter row -  (if any), etc.
@@ -152,45 +151,45 @@ trait IgPivotDataSelector
     * "number" The widget height can be set as a number.
     * "null" will stretch vertically to fit data, if no other heights are defined.
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Fired after a metadata item drop.
     */
-  var metadataDropped: js.UndefOr[MetadataDroppedEvent] = js.native
+  var metadataDropped: js.UndefOr[MetadataDroppedEvent] = js.undefined
   
   /**
     * Fired before a metadata item drop. Return false to cancel the drop.
     */
-  var metadataDropping: js.UndefOr[MetadataDroppingEvent] = js.native
+  var metadataDropping: js.UndefOr[MetadataDroppingEvent] = js.undefined
   
   /**
     * Fired after a metadata item is removed when the user clicks the close icon.
     */
-  var metadataRemoved: js.UndefOr[MetadataRemovedEvent] = js.native
+  var metadataRemoved: js.UndefOr[MetadataRemovedEvent] = js.undefined
   
   /**
     * Fired before a metadata item is removed when the user clicks the close icon. Return false to cancel the removing.
     */
-  var metadataRemoving: js.UndefOr[MetadataRemovingEvent] = js.native
+  var metadataRemoving: js.UndefOr[MetadataRemovingEvent] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     *
@@ -200,7 +199,7 @@ trait IgPivotDataSelector
     * "number" The widget width can be set as a number.
     * "null" will stretch to fit data, if no other widths are defined.
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgPivotDataSelector {
   

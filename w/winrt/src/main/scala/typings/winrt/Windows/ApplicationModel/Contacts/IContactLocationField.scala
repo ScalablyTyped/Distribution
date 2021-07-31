@@ -2,23 +2,23 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IContactLocationField extends IContactField {
+trait IContactLocationField
+  extends StObject
+     with IContactField {
   
-  var city: String = js.native
+  var city: String
   
-  var country: String = js.native
+  var country: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var region: String = js.native
+  var region: String
   
-  var street: String = js.native
+  var street: String
   
-  var unstructuredAddress: String = js.native
+  var unstructuredAddress: String
 }
 object IContactLocationField {
   

@@ -3,28 +3,28 @@ package typings.arcgisRestApi.mod
 import typings.arcgisRestApi.arcgisRestApiStrings.esriSLS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleLineSymbol extends Symbol {
+trait SimpleLineSymbol
+  extends StObject
+     with Symbol {
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   @JSName("style")
-  var style_SimpleLineSymbol: js.UndefOr[SimpleLineSymbolStyle] = js.native
+  var style_SimpleLineSymbol: js.UndefOr[SimpleLineSymbolStyle] = js.undefined
   
   @JSName("type")
-  var type_SimpleLineSymbol: esriSLS = js.native
+  var type_SimpleLineSymbol: esriSLS
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SimpleLineSymbol {
   
   @scala.inline
-  def apply(`type`: esriSLS): SimpleLineSymbol = {
+  def apply(): SimpleLineSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriSLS")
     __obj.asInstanceOf[SimpleLineSymbol]
   }
   

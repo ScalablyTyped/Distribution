@@ -6,59 +6,55 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.ethersprojectBytes.mod.SignatureLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/transactions", "computeAddress")
+  @JSImport("@ethersproject/transactions", JSImport.Namespace)
   @js.native
-  def computeAddress(key: String): String = js.native
-  @JSImport("@ethersproject/transactions", "computeAddress")
-  @js.native
-  def computeAddress(key: BytesLike): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/transactions", "parse")
-  @js.native
-  def parse(rawTransaction: BytesLike): Transaction = js.native
+  @scala.inline
+  def computeAddress(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAddress")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeAddress(key: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAddress")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/transactions", "recoverAddress")
-  @js.native
-  def recoverAddress(digest: BytesLike, signature: SignatureLike): String = js.native
+  @scala.inline
+  def parse(rawTransaction: BytesLike): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawTransaction.asInstanceOf[js.Any]).asInstanceOf[Transaction]
   
-  @JSImport("@ethersproject/transactions", "serialize")
-  @js.native
-  def serialize(transaction: UnsignedTransaction): String = js.native
-  @JSImport("@ethersproject/transactions", "serialize")
-  @js.native
-  def serialize(transaction: UnsignedTransaction, signature: SignatureLike): String = js.native
+  @scala.inline
+  def recoverAddress(digest: BytesLike, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("recoverAddress")(digest.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def serialize(transaction: UnsignedTransaction): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(transaction.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serialize(transaction: UnsignedTransaction, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(transaction.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Transaction extends StObject {
     
-    var chainId: Double = js.native
+    var chainId: Double
     
-    var data: String = js.native
+    var data: String
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var gasLimit: BigNumber = js.native
+    var gasLimit: BigNumber
     
-    var gasPrice: BigNumber = js.native
+    var gasPrice: BigNumber
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var nonce: Double = js.native
+    var nonce: Double
     
-    var r: js.UndefOr[String] = js.native
+    var r: js.UndefOr[String] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var v: js.UndefOr[Double] = js.native
+    var v: js.UndefOr[Double] = js.undefined
     
-    var value: BigNumber = js.native
+    var value: BigNumber
   }
   object Transaction {
     
@@ -134,22 +130,21 @@ object mod {
     }
   }
   
-  @js.native
   trait UnsignedTransaction extends StObject {
     
-    var chainId: js.UndefOr[Double] = js.native
+    var chainId: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[BytesLike] = js.native
+    var data: js.UndefOr[BytesLike] = js.undefined
     
-    var gasLimit: js.UndefOr[BigNumberish] = js.native
+    var gasLimit: js.UndefOr[BigNumberish] = js.undefined
     
-    var gasPrice: js.UndefOr[BigNumberish] = js.native
+    var gasPrice: js.UndefOr[BigNumberish] = js.undefined
     
-    var nonce: js.UndefOr[Double] = js.native
+    var nonce: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[BigNumberish] = js.native
+    var value: js.UndefOr[BigNumberish] = js.undefined
   }
   object UnsignedTransaction {
     

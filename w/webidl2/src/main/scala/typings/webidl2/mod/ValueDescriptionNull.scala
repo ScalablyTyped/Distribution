@@ -3,27 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`null`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueDescriptionNull
-  extends AbstractValueDescription
+  extends StObject
+     with AbstractValueDescription
      with ValueDescription {
   
   @JSName("type")
-  var type_ValueDescriptionNull: `null` = js.native
+  var type_ValueDescriptionNull: `null`
 }
 object ValueDescriptionNull {
   
   @scala.inline
-  def apply(
-    extAttrs: js.Array[ExtendedAttribute],
-    parent: Argument | ConstantMemberType | FieldType,
-    `type`: `null`
-  ): ValueDescriptionNull = {
+  def apply(extAttrs: js.Array[ExtendedAttribute], parent: Argument | ConstantMemberType | FieldType): ValueDescriptionNull = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("null")
     __obj.asInstanceOf[ValueDescriptionNull]
   }
   

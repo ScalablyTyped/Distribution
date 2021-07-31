@@ -10,9 +10,9 @@ PostCSS plugin to reduce calc()
 | ------------------ | :-------------: |
 | Full name          | postcss-calc |
 | Keywords           | css, postcss, postcss-plugin, calculation, calc |
-| # releases         | 5 |
-| # dependents       | 184 |
-| # downloads        | 291284361 |
+| # releases         | 6 |
+| # dependents       | 194 |
+| # downloads        | 366727482 |
 | # stars            | 4 |
 
 ## Links

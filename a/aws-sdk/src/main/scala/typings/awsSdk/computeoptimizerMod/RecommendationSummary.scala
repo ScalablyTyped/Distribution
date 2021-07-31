@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendationSummary extends StObject {
   
   /**
     * The AWS account ID of the recommendation summary.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The resource type of the recommendation.
     */
-  var recommendationResourceType: js.UndefOr[RecommendationSourceType] = js.native
+  var recommendationResourceType: js.UndefOr[RecommendationSourceType] = js.undefined
   
   /**
     * An array of objects that describe a recommendation summary.
     */
-  var summaries: js.UndefOr[Summaries] = js.native
+  var summaries: js.UndefOr[Summaries] = js.undefined
 }
 object RecommendationSummary {
   

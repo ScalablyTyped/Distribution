@@ -2,40 +2,38 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a user role permission.
   */
-@js.native
 trait SchemaUserRolePermission extends StObject {
   
   /**
     * Levels of availability for a user role permission.
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this user role permission.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#userRolePermission&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this user role permission.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the permission group that this user role permission belongs to.
     */
-  var permissionGroupId: js.UndefOr[String] = js.native
+  var permissionGroupId: js.UndefOr[String] = js.undefined
 }
 object SchemaUserRolePermission {
   

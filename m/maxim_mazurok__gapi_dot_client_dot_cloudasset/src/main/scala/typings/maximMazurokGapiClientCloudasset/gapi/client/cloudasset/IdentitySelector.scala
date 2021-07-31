@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitySelector extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IdentitySelector extends StObject {
     * "user:mike@example.com", "group:admins@example.com", "domain:google.com", "serviceAccount:my-project-id@appspot.gserviceaccount.com". Notice that wildcard characters (such as * and
     * ?) are not supported. You must give a specific identity.
     */
-  var identity: js.UndefOr[String] = js.native
+  var identity: js.UndefOr[String] = js.undefined
 }
 object IdentitySelector {
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Additionally, it makes it possible to register listener objects, which get notification whenever the status or content of the object changes.
   */
-@js.native
-trait XModifiable extends XModifyBroadcaster {
+trait XModifiable
+  extends StObject
+     with XModifyBroadcaster {
   
   /** @returns `TRUE` if the object is modified.  The modification is always in relation to a certain state (i.e., the initial, loaded, or last stored version). */
-  def isModified(): Boolean = js.native
+  def isModified(): Boolean
   
   /** sets the status of the **modified** -flag from outside of the object. */
-  def setModified(bModified: Boolean): Unit = js.native
+  def setModified(bModified: Boolean): Unit
 }
 object XModifiable {
   

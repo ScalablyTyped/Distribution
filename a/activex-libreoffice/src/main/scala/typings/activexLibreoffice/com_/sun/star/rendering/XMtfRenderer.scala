@@ -5,15 +5,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XMtfRenderer extends XInterface {
+trait XMtfRenderer
+  extends StObject
+     with XInterface {
   
-  def draw(fScaleX: Double, fScaleY: Double): Unit = js.native
+  def draw(fScaleX: Double, fScaleY: Double): Unit
   
-  def setMetafile(aMtf: SeqEquiv[Double]): Unit = js.native
+  def setMetafile(aMtf: SeqEquiv[Double]): Unit
 }
 object XMtfRenderer {
   

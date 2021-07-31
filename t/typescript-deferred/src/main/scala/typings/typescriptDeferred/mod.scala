@@ -2,24 +2,23 @@ package typings.typescriptDeferred
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("typescript-deferred", "create")
+  @JSImport("typescript-deferred", JSImport.Namespace)
   @js.native
-  def create[T](): DeferredInterface[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typescript-deferred", "when")
-  @js.native
-  def when[T](): PromiseInterface[T] = js.native
-  @JSImport("typescript-deferred", "when")
-  @js.native
-  def when[T](value: T): PromiseInterface[T] = js.native
-  @JSImport("typescript-deferred", "when")
-  @js.native
-  def when[T](value: ThenableInterface[T]): PromiseInterface[T] = js.native
+  @scala.inline
+  def create[T](): DeferredInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferredInterface[T]]
+  
+  @scala.inline
+  def when[T](): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[PromiseInterface[T]]
+  @scala.inline
+  def when[T](value: T): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
+  @scala.inline
+  def when[T](value: ThenableInterface[T]): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
   
   type DeferredErrorCB[TP] = js.Function1[/* error */ js.Any, ThenableInterface[TP]]
   
@@ -43,7 +42,9 @@ object mod {
   type ImmediateSuccessCB[T, TP] = js.Function1[/* value */ T, TP]
   
   @js.native
-  trait PromiseInterface[T] extends ThenableInterface[T] {
+  trait PromiseInterface[T]
+    extends StObject
+       with ThenableInterface[T] {
     
     def always[TP](): PromiseInterface[TP] = js.native
     def always[TP](errorCB: DeferredErrorCB[TP] | ImmediateErrorCB[TP]): PromiseInterface[TP] = js.native
@@ -58,8 +59,9 @@ object mod {
     def `then`[TP](): ThenableInterface[TP] = js.native
     def `then`[TP](successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])): ThenableInterface[TP] = js.native
     def `then`[TP](
-      successCB: js.UndefOr[(DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP])],
+      successCB: (DeferredSuccessCB[T, TP]) | (ImmediateSuccessCB[T, TP]),
       errorCB: DeferredErrorCB[TP] | ImmediateErrorCB[TP]
     ): ThenableInterface[TP] = js.native
+    def `then`[TP](successCB: Unit, errorCB: DeferredErrorCB[TP] | ImmediateErrorCB[TP]): ThenableInterface[TP] = js.native
   }
 }

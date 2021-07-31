@@ -2,15 +2,13 @@ package typings.ecmarkup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alg extends StObject {
   
-  var alg: typings.std.Element = js.native
+  var alg: typings.std.Element
   
-  var grammar: typings.std.Element = js.native
+  var grammar: typings.std.Element
 }
 object Alg {
   

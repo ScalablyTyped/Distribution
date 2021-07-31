@@ -4,31 +4,29 @@ import typings.jui.juiStrings.horizontal
 import typings.jui.juiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarSize extends StObject {
   
   /**
     * @cfg {Number} [barSize=4]
     * set splitter's bar size
     */
-  var barSize: js.UndefOr[Double] = js.native
+  var barSize: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Object} [barStyle={}]
     * set custom splitter bar style
     */
-  var barStyle: js.UndefOr[js.Object] = js.native
+  var barStyle: js.UndefOr[js.Object] = js.undefined
   
   /**
     * @cfg {"vertical"/"horizontal"} [direction='vertical']
     * set bar's direction
     */
-  var direction: js.UndefOr[vertical | horizontal] = js.native
+  var direction: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Boolean} [fixed=false]
@@ -36,19 +34,19 @@ trait BarSize extends StObject {
     * if fixed is true, panels can not resize.
     *
     */
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {String} [hideClass='hide']
     * set splitter's hide class for design
     */
-  var hideClass: js.UndefOr[String] = js.native
+  var hideClass: js.UndefOr[String] = js.undefined
   
   /**
     * @cfg {String/Number} [initSize='50%']
     * set first panel's default width or height
     */
-  var initSize: js.UndefOr[String | Double] = js.native
+  var initSize: js.UndefOr[String | Double] = js.undefined
   
   /**
     * @cfg {String} [items=[]]
@@ -58,7 +56,7 @@ trait BarSize extends StObject {
     * support max two times
     *
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * @cfg {Number/Array} [minSize=30]
@@ -70,15 +68,15 @@ trait BarSize extends StObject {
     * minSize[1] is second panel's minimum size
     *
     */
-  var minSize: js.UndefOr[Double | js.Array[Double]] = js.native
+  var minSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * @cfg {String} [splitterClass='ui-splitter']
     * set splitter's class for design
     */
-  var splitterClass: js.UndefOr[String] = js.native
+  var splitterClass: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object BarSize {
   
@@ -134,7 +132,7 @@ object BarSize {
     def setInitSizeUndefined: Self = StObject.set(x, "initSize", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

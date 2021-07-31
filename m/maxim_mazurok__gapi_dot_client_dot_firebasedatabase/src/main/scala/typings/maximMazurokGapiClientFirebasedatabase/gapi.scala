@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientFirebasedatabase.anon.Key
 import typings.maximMazurokGapiClientFirebasedatabase.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -18,26 +17,25 @@ object gapi {
     
     object firebasedatabase {
       
-      @js.native
       trait DatabaseInstance extends StObject {
         
         /** Immutable. The globally unique hostname of the database. */
-        var databaseUrl: js.UndefOr[String] = js.native
+        var databaseUrl: js.UndefOr[String] = js.undefined
         
         /**
           * The fully qualified resource name of the database instance, in the form: `projects/{project-number}/locations/{location-id}/instances/{database-id}`. Currently the only supported
           * location is 'us-central1'.
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The resource name of the project this instance belongs to. For example: `projects/{project-number}`. */
-        var project: js.UndefOr[String] = js.native
+        var project: js.UndefOr[String] = js.undefined
         
         /** The database's lifecycle state. Read-only. */
-        var state: js.UndefOr[String] = js.native
+        var state: js.UndefOr[String] = js.undefined
         
         /** The database instance type. On creation only USER_DATABASE is allowed, which is also the default when omitted. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object DatabaseInstance {
         
@@ -83,7 +81,6 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait DisableDatabaseInstanceRequest extends StObject
       
       @js.native
@@ -128,17 +125,16 @@ object gapi {
         def reenable(request: Name): Request[DatabaseInstance] = js.native
       }
       
-      @js.native
       trait ListDatabaseInstancesResponse extends StObject {
         
         /** List of each DatabaseInstance that is in the parent Firebase project. */
-        var instances: js.UndefOr[js.Array[DatabaseInstance]] = js.native
+        var instances: js.UndefOr[js.Array[DatabaseInstance]] = js.undefined
         
         /**
           * If the result list is too large to fit in a single response, then a token is returned. If the string is empty, then this response is the last page of results. This token can be used
           * in a subsequent call to `ListDatabaseInstances` to find the next group of database instances. Page tokens are short-lived and should not be persisted.
           */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object ListDatabaseInstancesResponse {
         
@@ -168,10 +164,9 @@ object gapi {
         }
       }
       
-      @js.native
       trait LocationsResource extends StObject {
         
-        var instances: InstancesResource = js.native
+        var instances: InstancesResource
       }
       object LocationsResource {
         
@@ -189,10 +184,9 @@ object gapi {
         }
       }
       
-      @js.native
       trait ProjectsResource extends StObject {
         
-        var locations: LocationsResource = js.native
+        var locations: LocationsResource
       }
       object ProjectsResource {
         
@@ -211,7 +205,6 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait ReenableDatabaseInstanceRequest extends StObject
     }
   }

@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePullRequestStatusInput extends StObject {
   
   /**
     * The system-generated ID of the pull request. To get this ID, use ListPullRequests.
     */
-  var pullRequestId: PullRequestId = js.native
+  var pullRequestId: PullRequestId
   
   /**
     * The status of the pull request. The only valid operations are to update the status from OPEN to OPEN, OPEN to CLOSED or from CLOSED to CLOSED.
     */
-  var pullRequestStatus: PullRequestStatusEnum = js.native
+  var pullRequestStatus: PullRequestStatusEnum
 }
 object UpdatePullRequestStatusInput {
   

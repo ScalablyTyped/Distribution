@@ -2,15 +2,13 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchCriteria extends StObject {
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
-  var term: String = js.native
+  var term: String
 }
 object SearchCriteria {
   

@@ -12,67 +12,65 @@ import typings.typescriptServices.TypeScript.PullSymbolInfo
 import typings.typescriptServices.TypeScript.PullVisibleSymbolsInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageServiceCompiler extends StObject {
   
-  def canEmitDeclarations(fileName: String): Boolean = js.native
+  def canEmitDeclarations(fileName: String): Boolean
   
-  def cleanupSemanticCache(): Unit = js.native
+  def cleanupSemanticCache(): Unit
   
-  def compilationSettings(): ImmutableCompilationSettings = js.native
+  def compilationSettings(): ImmutableCompilationSettings
   
-  var compiler: js.Any = js.native
+  var compiler: js.Any
   
-  def emit(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
+  def emit(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput
   
-  def emitDeclarations(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput = js.native
+  def emitDeclarations(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput
   
-  def fileNames(): js.Array[String] = js.native
+  def fileNames(): js.Array[String]
   
-  def getCachedHostFileName(fileName: String): String = js.native
+  def getCachedHostFileName(fileName: String): String
   
-  def getCachedTopLevelDeclaration(fileName: String): PullDecl = js.native
+  def getCachedTopLevelDeclaration(fileName: String): PullDecl
   
-  def getCallInformationFromAST(ast: AST, document: Document): PullCallSymbolInfo = js.native
+  def getCallInformationFromAST(ast: AST, document: Document): PullCallSymbolInfo
   
-  def getCompilerOptionsDiagnostics(resolvePath: js.Function1[/* path */ String, String]): js.Array[Diagnostic] = js.native
+  def getCompilerOptionsDiagnostics(resolvePath: js.Function1[/* path */ String, String]): js.Array[Diagnostic]
   
-  def getContextualMembersFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo = js.native
+  def getContextualMembersFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo
   
-  def getDeclForAST(ast: AST): PullDecl = js.native
+  def getDeclForAST(ast: AST): PullDecl
   
-  def getDocument(fileName: String): Document = js.native
+  def getDocument(fileName: String): Document
   
-  def getScriptSnapshot(fileName: String): IScriptSnapshot = js.native
+  def getScriptSnapshot(fileName: String): IScriptSnapshot
   
-  def getSemanticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
+  def getSemanticDiagnostics(fileName: String): js.Array[Diagnostic]
   
-  def getSymbolInformationFromAST(ast: AST, document: Document): PullSymbolInfo = js.native
+  def getSymbolInformationFromAST(ast: AST, document: Document): PullSymbolInfo
   
-  def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
+  def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic]
   
-  def getVisibleDeclsFromAST(ast: AST, document: Document): js.Array[PullDecl] = js.native
+  def getVisibleDeclsFromAST(ast: AST, document: Document): js.Array[PullDecl]
   
-  def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo = js.native
+  def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo
   
-  var host: js.Any = js.native
+  var host: js.Any
   
-  var hostCache: js.Any = js.native
+  var hostCache: js.Any
   
-  var logger: js.Any = js.native
+  var logger: js.Any
   
-  def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo = js.native
+  def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo
   
-  /* private */ def synchronizeHostData(): js.Any = js.native
+  /* private */ def synchronizeHostData(): js.Any
   
-  /* private */ def synchronizeHostDataWorker(): js.Any = js.native
+  /* private */ def synchronizeHostDataWorker(): js.Any
   
-  def topLevelDeclaration(fileName: String): PullDecl = js.native
+  def topLevelDeclaration(fileName: String): PullDecl
   
-  /* private */ def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any = js.native
+  /* private */ def tryUpdateFile(compiler: js.Any, fileName: js.Any): js.Any
 }
 object LanguageServiceCompiler {
   

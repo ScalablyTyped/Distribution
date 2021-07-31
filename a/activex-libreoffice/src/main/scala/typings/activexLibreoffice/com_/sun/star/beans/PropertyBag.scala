@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,12 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Scripting engines might not be able to use such objects as normal property sets, giving direct access to the properties. In this case, use the methods
   * like {@link XPropertySet.getPropertyValue()} .
   */
-@js.native
-trait PropertyBag extends XPropertyBag {
+trait PropertyBag
+  extends StObject
+     with XPropertyBag {
   
-  def createDefault(): Unit = js.native
+  def createDefault(): Unit
   
-  def createWithTypes(AllowedTypes: SeqEquiv[`type`], AllowEmptyPropertyName: Boolean, AutomaticAddition: Boolean): Unit = js.native
+  def createWithTypes(AllowedTypes: SeqEquiv[`type`], AllowEmptyPropertyName: Boolean, AutomaticAddition: Boolean): Unit
 }
 object PropertyBag {
   

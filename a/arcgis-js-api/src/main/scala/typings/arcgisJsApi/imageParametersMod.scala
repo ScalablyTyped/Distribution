@@ -6,24 +6,25 @@ import typings.arcgisJsApi.esri.ImageParametersConstructor
 import typings.arcgisJsApi.esri.ImageParametersProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageParametersMod extends Shortcut {
   
   @JSImport("esri/layers/support/ImageParameters", JSImport.Namespace)
   @js.native
-  val ^ : ImageParametersConstructor = js.native
+  val ^ : js.Object & ImageParametersConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/ImageParameters", JSImport.Namespace)
   @js.native
-  class Class () extends ImageParameters {
+  class Class ()
+    extends StObject
+       with ImageParameters {
     def this(properties: ImageParametersProperties) = this()
   }
   
-  type _To = ImageParametersConstructor
+  type _To = js.Object & ImageParametersConstructor
   
   /* This means you don't have to write `^`, but can instead just say `imageParametersMod.foo` */
-  override def _to: ImageParametersConstructor = ^
+  override def _to: js.Object & ImageParametersConstructor = ^
 }

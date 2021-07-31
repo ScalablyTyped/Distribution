@@ -14,7 +14,6 @@ import typings.officeJs.officeJsStrings.PictureAndTexture
 import typings.officeJs.officeJsStrings.Solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ShapeFill extends ClientObject {
+trait ShapeFill
+  extends StObject
+     with ClientObject {
   
   /**
     * Clears the fill formatting of this shape.

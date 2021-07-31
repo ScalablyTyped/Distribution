@@ -2,26 +2,24 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorContribution extends StObject {
   
   /**
     * Dispose this contribution.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Restore view state.
     */
-  var restoreViewState: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.native
+  var restoreViewState: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
   
   /**
     * Store view state.
     */
-  var saveViewState: js.UndefOr[js.Function0[_]] = js.native
+  var saveViewState: js.UndefOr[js.Function0[js.Any]] = js.undefined
 }
 object IEditorContribution {
   
@@ -44,7 +42,7 @@ object IEditorContribution {
     def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
     
     @scala.inline
-    def setSaveViewState(value: () => _): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
+    def setSaveViewState(value: () => js.Any): Self = StObject.set(x, "saveViewState", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)

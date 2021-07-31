@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video that is associated with a product listing in the Windows Store. */
-@js.native
 trait StoreVideo extends StObject {
   
   /** Gets the caption for the video. */
-  var caption: String = js.native
+  var caption: String
   
   /** Gets the height of the video, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /** Gets the preview image that is displayed for the video. */
-  var previewImage: StoreImage = js.native
+  var previewImage: StoreImage
   
   /** Gets the URI of the video. */
-  var uri: Uri = js.native
+  var uri: Uri
   
   /** Gets the tag for the video. */
-  var videoPurposeTag: String = js.native
+  var videoPurposeTag: String
   
   /** Gets the width of the video, in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object StoreVideo {
   

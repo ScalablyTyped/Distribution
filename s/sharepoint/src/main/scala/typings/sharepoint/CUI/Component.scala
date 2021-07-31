@@ -4,91 +4,90 @@ import typings.microsoftAjax.Sys.IDisposable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Component
-  extends IMenuItem
+  extends StObject
+     with IMenuItem
      with IDisposable {
   
-  var _lastHeightUpdate: Double = js.native
+  var _lastHeightUpdate: Double
   
-  var _lastLeftUpdate: Double = js.native
+  var _lastLeftUpdate: Double
   
-  var _lastTopUpdate: Double = js.native
+  var _lastTopUpdate: Double
   
-  var _lastWidthUpdate: Double = js.native
+  var _lastWidthUpdate: Double
   
-  def addChild(child: Component): scala.Unit = js.native
+  def addChild(child: Component): scala.Unit
   
-  def addChildAtIndex(child: Component, index: Double): js.Any = js.native
+  def addChildAtIndex(child: Component, index: Double): js.Any
   
-  def appendChildrenToElement(elm: Element): scala.Unit = js.native
+  def appendChildrenToElement(elm: Element): scala.Unit
   
-  def createChildArray(): scala.Unit = js.native
+  def createChildArray(): scala.Unit
   
-  def doDelayedInit(): scala.Unit = js.native
+  def doDelayedInit(): scala.Unit
   
-  def ensureCorrectChildType(): scala.Unit = js.native
+  def ensureCorrectChildType(): scala.Unit
   
-  def ensureDOMElementAndEmpty(): scala.Unit = js.native
+  def ensureDOMElementAndEmpty(): scala.Unit
   
-  def getChild(id: String): Component = js.native
+  def getChild(id: String): Component
   
-  def getChildByTitle(title: String): Component = js.native
+  def getChildByTitle(title: String): Component
   
-  def getTextValue(): String = js.native
+  def getTextValue(): String
   
-  def get_cssClass(): String = js.native
+  def get_cssClass(): String
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_domElementTagName(): String = js.native
+  def get_domElementTagName(): String
   
-  def get_enabled(): Boolean = js.native
+  def get_enabled(): Boolean
   
-  def get_id(): String = js.native
+  def get_id(): String
   
-  def get_needsDelayIniting(): Boolean = js.native
+  def get_needsDelayIniting(): Boolean
   
-  def get_parent(): Component = js.native
+  def get_parent(): Component
   
-  def get_root(): Component = js.native
+  def get_root(): Component
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_visible(): Boolean = js.native
+  def get_visible(): Boolean
   
-  def get_visibleInDOM(): Boolean = js.native
+  def get_visibleInDOM(): Boolean
   
-  def initRootMember(root: Component): js.Any = js.native
+  def initRootMember(root: Component): js.Any
   
-  def onEnabledChanged(enabled: Boolean): js.Any = js.native
+  def onEnabledChanged(enabled: Boolean): js.Any
   
-  def onMenuClosed(): scala.Unit = js.native
+  def onMenuClosed(): scala.Unit
   
-  def raiseCommandEvent(commandId: String, `type`: CommandType, properties: js.Any): js.Any = js.native
+  def raiseCommandEvent(commandId: String, `type`: CommandType, properties: js.Any): js.Any
   
-  def receiveFocus(): scala.Unit = js.native
+  def receiveFocus(): scala.Unit
   
-  def removeChild(id: String): scala.Unit = js.native
+  def removeChild(id: String): scala.Unit
   
-  def removeChildren(): scala.Unit = js.native
+  def removeChildren(): scala.Unit
   
-  def set_description(description: String): String = js.native
+  def set_description(description: String): String
   
-  def set_enabled(value: Boolean): Boolean = js.native
+  def set_enabled(value: Boolean): Boolean
   
-  def set_id(id: String): scala.Unit = js.native
+  def set_id(id: String): scala.Unit
   
-  def set_parent(value: Component): Component = js.native
+  def set_parent(value: Component): Component
   
-  def set_title(title: String): String = js.native
+  def set_title(title: String): String
   
-  def set_visible(value: Boolean): Boolean = js.native
+  def set_visible(value: Boolean): Boolean
   
-  def valueIsDirty(lastUpdate: Double): Boolean = js.native
+  def valueIsDirty(lastUpdate: Double): Boolean
 }
 object Component {
   

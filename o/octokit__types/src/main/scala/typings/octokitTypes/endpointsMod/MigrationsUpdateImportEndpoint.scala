@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsUpdateImportEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The password to provide to the originating repository.
     */
-  var vcs_password: js.UndefOr[String] = js.native
+  var vcs_password: js.UndefOr[String] = js.undefined
   
   /**
     * The username to provide to the originating repository.
     */
-  var vcs_username: js.UndefOr[String] = js.native
+  var vcs_username: js.UndefOr[String] = js.undefined
 }
 object MigrationsUpdateImportEndpoint {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the data for MediaPlayerRateChanged events. */
-@js.native
 trait MediaPlayerRateChangedEventArgs extends StObject {
   
   /** Gets the new playback rate for the media. */
-  var newRate: Double = js.native
+  var newRate: Double
 }
 object MediaPlayerRateChangedEventArgs {
   

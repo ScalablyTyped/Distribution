@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object CurrentGame {
   
-  @js.native
   trait BannedChampion extends StObject {
     
-    var championId: Double = js.native
+    var championId: Double
     
-    var pickTurn: Double = js.native
+    var pickTurn: Double
     
-    var teamId: Double = js.native
+    var teamId: Double
   }
   object BannedChampion {
     
@@ -41,30 +39,29 @@ object CurrentGame {
     }
   }
   
-  @js.native
   trait CurrentGameInfo extends StObject {
     
-    var bannedChampion: js.Array[BannedChampion] = js.native
+    var bannedChampion: js.Array[BannedChampion]
     
-    var gameId: Double = js.native
+    var gameId: Double
     
-    var gameLength: Double = js.native
+    var gameLength: Double
     
-    var gameMode: Double = js.native
+    var gameMode: Double
     
-    var gameQueueConfigId: Double = js.native
+    var gameQueueConfigId: Double
     
-    var gameStartTime: Double = js.native
+    var gameStartTime: Double
     
-    var gameType: String = js.native
+    var gameType: String
     
-    var mapId: Double = js.native
+    var mapId: Double
     
-    var observers: Observer = js.native
+    var observers: Observer
     
-    var participants: js.Array[CurrentGameParticipant] = js.native
+    var participants: js.Array[CurrentGameParticipant]
     
-    var platformId: String = js.native
+    var platformId: String
   }
   object CurrentGameInfo {
     
@@ -130,28 +127,27 @@ object CurrentGame {
     }
   }
   
-  @js.native
   trait CurrentGameParticipant extends StObject {
     
-    var bot: Boolean = js.native
+    var bot: Boolean
     
-    var championId: Double = js.native
+    var championId: Double
     
-    var masteries: js.Array[Mastery] = js.native
+    var masteries: js.Array[Mastery]
     
-    var profileIconId: Double = js.native
+    var profileIconId: Double
     
-    var runes: js.Array[Rune] = js.native
+    var runes: js.Array[Rune]
     
-    var spell1Id: Double = js.native
+    var spell1Id: Double
     
-    var spell2Id: Double = js.native
+    var spell2Id: Double
     
-    var summonerId: Double = js.native
+    var summonerId: Double
     
-    var summonerName: String = js.native
+    var summonerName: String
     
-    var teamId: Double = js.native
+    var teamId: Double
   }
   object CurrentGameParticipant {
     
@@ -213,12 +209,11 @@ object CurrentGame {
     }
   }
   
-  @js.native
   trait Mastery extends StObject {
     
-    var masterId: Double = js.native
+    var masterId: Double
     
-    var rank: Double = js.native
+    var rank: Double
   }
   object Mastery {
     
@@ -239,10 +234,9 @@ object CurrentGame {
     }
   }
   
-  @js.native
   trait Observer extends StObject {
     
-    var encryptionKey: String = js.native
+    var encryptionKey: String
   }
   object Observer {
     
@@ -260,12 +254,11 @@ object CurrentGame {
     }
   }
   
-  @js.native
   trait Rune extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var runeId: Double = js.native
+    var runeId: Double
   }
   object Rune {
     

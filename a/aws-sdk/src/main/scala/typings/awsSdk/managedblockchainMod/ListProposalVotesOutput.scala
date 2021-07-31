@@ -2,21 +2,19 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProposalVotesOutput extends StObject {
   
   /**
     *  The pagination token that indicates the next set of results to retrieve. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The listing of votes. 
     */
-  var ProposalVotes: js.UndefOr[ProposalVoteList] = js.native
+  var ProposalVotes: js.UndefOr[ProposalVoteList] = js.undefined
 }
 object ListProposalVotesOutput {
   

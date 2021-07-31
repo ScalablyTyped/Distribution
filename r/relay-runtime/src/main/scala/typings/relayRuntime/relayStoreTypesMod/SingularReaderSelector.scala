@@ -5,23 +5,23 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SingularReaderSelector extends ReaderSelector {
+trait SingularReaderSelector
+  extends StObject
+     with ReaderSelector {
   
-  val dataID: DataID = js.native
+  val dataID: DataID
   
-  val isWithinUnmatchedTypeRefinement: Boolean = js.native
+  val isWithinUnmatchedTypeRefinement: Boolean
   
-  val kind: String = js.native
+  val kind: String
   
-  val node: ReaderFragment = js.native
+  val node: ReaderFragment
   
-  val owner: RequestDescriptor = js.native
+  val owner: RequestDescriptor
   
-  val variables: Variables = js.native
+  val variables: Variables
 }
 object SingularReaderSelector {
   

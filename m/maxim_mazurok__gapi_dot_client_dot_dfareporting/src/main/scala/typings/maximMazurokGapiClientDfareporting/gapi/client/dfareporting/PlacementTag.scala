@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementTag extends StObject {
   
   /** Placement ID */
-  var placementId: js.UndefOr[String] = js.native
+  var placementId: js.UndefOr[String] = js.undefined
   
   /** Tags generated for this placement. */
-  var tagDatas: js.UndefOr[js.Array[TagData]] = js.native
+  var tagDatas: js.UndefOr[js.Array[TagData]] = js.undefined
 }
 object PlacementTag {
   

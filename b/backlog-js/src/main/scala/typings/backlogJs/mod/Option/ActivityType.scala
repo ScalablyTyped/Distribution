@@ -2,7 +2,6 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,93 +11,137 @@ sealed trait ActivityType extends StObject
 object ActivityType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ActivityType with Double] = js.native
+  def apply(value: Double): js.UndefOr[ActivityType & Double] = js.native
   
   @js.native
-  sealed trait FileAdded extends ActivityType
-  /* 8 */ val FileAdded: typings.backlogJs.mod.Option.ActivityType.FileAdded with Double = js.native
+  sealed trait FileAdded
+    extends StObject
+       with ActivityType
+  /* 8 */ val FileAdded: typings.backlogJs.mod.Option.ActivityType.FileAdded & Double = js.native
   
   @js.native
-  sealed trait FileDeleted extends ActivityType
-  /* 10 */ val FileDeleted: typings.backlogJs.mod.Option.ActivityType.FileDeleted with Double = js.native
+  sealed trait FileDeleted
+    extends StObject
+       with ActivityType
+  /* 10 */ val FileDeleted: typings.backlogJs.mod.Option.ActivityType.FileDeleted & Double = js.native
   
   @js.native
-  sealed trait FileUpdated extends ActivityType
-  /* 9 */ val FileUpdated: typings.backlogJs.mod.Option.ActivityType.FileUpdated with Double = js.native
+  sealed trait FileUpdated
+    extends StObject
+       with ActivityType
+  /* 9 */ val FileUpdated: typings.backlogJs.mod.Option.ActivityType.FileUpdated & Double = js.native
   
   @js.native
-  sealed trait GitPushed extends ActivityType
-  /* 12 */ val GitPushed: typings.backlogJs.mod.Option.ActivityType.GitPushed with Double = js.native
+  sealed trait GitPushed
+    extends StObject
+       with ActivityType
+  /* 12 */ val GitPushed: typings.backlogJs.mod.Option.ActivityType.GitPushed & Double = js.native
   
   @js.native
-  sealed trait GitRepositoryCreated extends ActivityType
-  /* 13 */ val GitRepositoryCreated: typings.backlogJs.mod.Option.ActivityType.GitRepositoryCreated with Double = js.native
+  sealed trait GitRepositoryCreated
+    extends StObject
+       with ActivityType
+  /* 13 */ val GitRepositoryCreated: typings.backlogJs.mod.Option.ActivityType.GitRepositoryCreated & Double = js.native
   
   @js.native
-  sealed trait IssueCommented extends ActivityType
-  /* 3 */ val IssueCommented: typings.backlogJs.mod.Option.ActivityType.IssueCommented with Double = js.native
+  sealed trait IssueCommented
+    extends StObject
+       with ActivityType
+  /* 3 */ val IssueCommented: typings.backlogJs.mod.Option.ActivityType.IssueCommented & Double = js.native
   
   @js.native
-  sealed trait IssueCreated extends ActivityType
-  /* 1 */ val IssueCreated: typings.backlogJs.mod.Option.ActivityType.IssueCreated with Double = js.native
+  sealed trait IssueCreated
+    extends StObject
+       with ActivityType
+  /* 1 */ val IssueCreated: typings.backlogJs.mod.Option.ActivityType.IssueCreated & Double = js.native
   
   @js.native
-  sealed trait IssueDeleted extends ActivityType
-  /* 4 */ val IssueDeleted: typings.backlogJs.mod.Option.ActivityType.IssueDeleted with Double = js.native
+  sealed trait IssueDeleted
+    extends StObject
+       with ActivityType
+  /* 4 */ val IssueDeleted: typings.backlogJs.mod.Option.ActivityType.IssueDeleted & Double = js.native
   
   @js.native
-  sealed trait IssueMultiUpdated extends ActivityType
-  /* 14 */ val IssueMultiUpdated: typings.backlogJs.mod.Option.ActivityType.IssueMultiUpdated with Double = js.native
+  sealed trait IssueMultiUpdated
+    extends StObject
+       with ActivityType
+  /* 14 */ val IssueMultiUpdated: typings.backlogJs.mod.Option.ActivityType.IssueMultiUpdated & Double = js.native
   
   @js.native
-  sealed trait IssueUpdated extends ActivityType
-  /* 2 */ val IssueUpdated: typings.backlogJs.mod.Option.ActivityType.IssueUpdated with Double = js.native
+  sealed trait IssueUpdated
+    extends StObject
+       with ActivityType
+  /* 2 */ val IssueUpdated: typings.backlogJs.mod.Option.ActivityType.IssueUpdated & Double = js.native
   
   @js.native
-  sealed trait NotifyAdded extends ActivityType
-  /* 17 */ val NotifyAdded: typings.backlogJs.mod.Option.ActivityType.NotifyAdded with Double = js.native
+  sealed trait NotifyAdded
+    extends StObject
+       with ActivityType
+  /* 17 */ val NotifyAdded: typings.backlogJs.mod.Option.ActivityType.NotifyAdded & Double = js.native
   
   @js.native
-  sealed trait ProjectUserAdded extends ActivityType
-  /* 15 */ val ProjectUserAdded: typings.backlogJs.mod.Option.ActivityType.ProjectUserAdded with Double = js.native
+  sealed trait ProjectUserAdded
+    extends StObject
+       with ActivityType
+  /* 15 */ val ProjectUserAdded: typings.backlogJs.mod.Option.ActivityType.ProjectUserAdded & Double = js.native
   
   @js.native
-  sealed trait ProjectUserRemoved extends ActivityType
-  /* 16 */ val ProjectUserRemoved: typings.backlogJs.mod.Option.ActivityType.ProjectUserRemoved with Double = js.native
+  sealed trait ProjectUserRemoved
+    extends StObject
+       with ActivityType
+  /* 16 */ val ProjectUserRemoved: typings.backlogJs.mod.Option.ActivityType.ProjectUserRemoved & Double = js.native
   
   @js.native
-  sealed trait PullRequestAdded extends ActivityType
-  /* 18 */ val PullRequestAdded: typings.backlogJs.mod.Option.ActivityType.PullRequestAdded with Double = js.native
+  sealed trait PullRequestAdded
+    extends StObject
+       with ActivityType
+  /* 18 */ val PullRequestAdded: typings.backlogJs.mod.Option.ActivityType.PullRequestAdded & Double = js.native
   
   @js.native
-  sealed trait PullRequestCommented extends ActivityType
-  /* 20 */ val PullRequestCommented: typings.backlogJs.mod.Option.ActivityType.PullRequestCommented with Double = js.native
+  sealed trait PullRequestCommented
+    extends StObject
+       with ActivityType
+  /* 20 */ val PullRequestCommented: typings.backlogJs.mod.Option.ActivityType.PullRequestCommented & Double = js.native
   
   @js.native
-  sealed trait PullRequestMerged extends ActivityType
-  /* 21 */ val PullRequestMerged: typings.backlogJs.mod.Option.ActivityType.PullRequestMerged with Double = js.native
+  sealed trait PullRequestMerged
+    extends StObject
+       with ActivityType
+  /* 21 */ val PullRequestMerged: typings.backlogJs.mod.Option.ActivityType.PullRequestMerged & Double = js.native
   
   @js.native
-  sealed trait PullRequestUpdated extends ActivityType
-  /* 19 */ val PullRequestUpdated: typings.backlogJs.mod.Option.ActivityType.PullRequestUpdated with Double = js.native
+  sealed trait PullRequestUpdated
+    extends StObject
+       with ActivityType
+  /* 19 */ val PullRequestUpdated: typings.backlogJs.mod.Option.ActivityType.PullRequestUpdated & Double = js.native
   
   @js.native
-  sealed trait SvnCommitted extends ActivityType
-  /* 11 */ val SvnCommitted: typings.backlogJs.mod.Option.ActivityType.SvnCommitted with Double = js.native
+  sealed trait SvnCommitted
+    extends StObject
+       with ActivityType
+  /* 11 */ val SvnCommitted: typings.backlogJs.mod.Option.ActivityType.SvnCommitted & Double = js.native
   
   @js.native
-  sealed trait Undefined extends ActivityType
-  /* -1 */ val Undefined: typings.backlogJs.mod.Option.ActivityType.Undefined with Double = js.native
+  sealed trait Undefined
+    extends StObject
+       with ActivityType
+  /* -1 */ val Undefined: typings.backlogJs.mod.Option.ActivityType.Undefined & Double = js.native
   
   @js.native
-  sealed trait WikiCreated extends ActivityType
-  /* 5 */ val WikiCreated: typings.backlogJs.mod.Option.ActivityType.WikiCreated with Double = js.native
+  sealed trait WikiCreated
+    extends StObject
+       with ActivityType
+  /* 5 */ val WikiCreated: typings.backlogJs.mod.Option.ActivityType.WikiCreated & Double = js.native
   
   @js.native
-  sealed trait WikiDeleted extends ActivityType
-  /* 7 */ val WikiDeleted: typings.backlogJs.mod.Option.ActivityType.WikiDeleted with Double = js.native
+  sealed trait WikiDeleted
+    extends StObject
+       with ActivityType
+  /* 7 */ val WikiDeleted: typings.backlogJs.mod.Option.ActivityType.WikiDeleted & Double = js.native
   
   @js.native
-  sealed trait WikiUpdated extends ActivityType
-  /* 6 */ val WikiUpdated: typings.backlogJs.mod.Option.ActivityType.WikiUpdated with Double = js.native
+  sealed trait WikiUpdated
+    extends StObject
+       with ActivityType
+  /* 6 */ val WikiUpdated: typings.backlogJs.mod.Option.ActivityType.WikiUpdated & Double = js.native
 }

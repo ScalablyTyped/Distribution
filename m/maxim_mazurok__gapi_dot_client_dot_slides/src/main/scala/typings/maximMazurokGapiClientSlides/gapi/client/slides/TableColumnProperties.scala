@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableColumnProperties extends StObject {
   
   /** Width of a column. */
-  var columnWidth: js.UndefOr[Dimension] = js.native
+  var columnWidth: js.UndefOr[Dimension] = js.undefined
 }
 object TableColumnProperties {
   

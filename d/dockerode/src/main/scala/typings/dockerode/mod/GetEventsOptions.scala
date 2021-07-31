@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEventsOptions extends StObject {
   
-  var filters: js.UndefOr[String | typings.dockerode.anon.Container] = js.native
+  var filters: js.UndefOr[String | typings.dockerode.anon.Container] = js.undefined
   
-  var since: js.UndefOr[Double] = js.native
+  var since: js.UndefOr[Double] = js.undefined
   
-  var until: js.UndefOr[Double] = js.native
+  var until: js.UndefOr[Double] = js.undefined
 }
 object GetEventsOptions {
   

@@ -2,24 +2,22 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTypeInfoSchemaInfo extends StObject {
   
   /**
     * The properties that this composite type or base type collection accept as
     * input, represented as a json blob, format is: JSON Schema Draft V4
     */
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
   /**
     * The properties that this composite type or base type collection exposes
     * as output, these properties can be used for references, represented as
     * json blob, format is: JSON Schema Draft V4
     */
-  var output: js.UndefOr[String] = js.native
+  var output: js.UndefOr[String] = js.undefined
 }
 object SchemaTypeInfoSchemaInfo {
   

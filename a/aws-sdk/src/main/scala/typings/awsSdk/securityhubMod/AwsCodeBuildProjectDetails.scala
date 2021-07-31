@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCodeBuildProjectDetails extends StObject {
   
   /**
     * The AWS Key Management Service (AWS KMS) customer master key (CMK) used to encrypt the build output artifacts. You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK alias (using the format alias/alias-name). 
     */
-  var EncryptionKey: js.UndefOr[NonEmptyString] = js.native
+  var EncryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the build environment for this build project.
     */
-  var Environment: js.UndefOr[AwsCodeBuildProjectEnvironment] = js.native
+  var Environment: js.UndefOr[AwsCodeBuildProjectEnvironment] = js.undefined
   
   /**
     * The name of the build project.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of the IAM role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     */
-  var ServiceRole: js.UndefOr[NonEmptyString] = js.native
+  var ServiceRole: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the build input source code for this build project.
     */
-  var Source: js.UndefOr[AwsCodeBuildProjectSource] = js.native
+  var Source: js.UndefOr[AwsCodeBuildProjectSource] = js.undefined
   
   /**
     * Information about the VPC configuration that AWS CodeBuild accesses.
     */
-  var VpcConfig: js.UndefOr[AwsCodeBuildProjectVpcConfig] = js.native
+  var VpcConfig: js.UndefOr[AwsCodeBuildProjectVpcConfig] = js.undefined
 }
 object AwsCodeBuildProjectDetails {
   

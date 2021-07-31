@@ -6,7 +6,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,7 +19,9 @@ object mod extends Shortcut {
   val h: HCaptcha = js.native
   
   @js.native
-  trait HCaptcha extends VueConstructor[Vue] {
+  trait HCaptcha
+    extends StObject
+       with VueConstructor[Vue] {
     
     var data: js.Any = js.native
     
@@ -29,20 +30,19 @@ object mod extends Shortcut {
     var props: HCaptchaProps = js.native
   }
   
-  @js.native
   trait HCaptchaMethods extends StObject {
     
-    def execute(): Unit = js.native
+    def execute(): Unit
     
-    def onError(e: Error): Unit = js.native
+    def onError(e: Error): Unit
     
-    def onExpired(): Unit = js.native
+    def onExpired(): Unit
     
-    def onVerify(response: String): Unit = js.native
+    def onVerify(response: String): Unit
     
-    def onloadScript(): Unit = js.native
+    def onloadScript(): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object HCaptchaMethods {
     
@@ -82,16 +82,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HCaptchaProps extends StObject {
     
-    var sitekey: String = js.native
+    var sitekey: String
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var tabindex: js.UndefOr[String] = js.native
+    var tabindex: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object HCaptchaProps {
     

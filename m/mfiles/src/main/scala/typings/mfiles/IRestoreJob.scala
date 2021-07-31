@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRestoreJob extends StObject {
   
-  var BackupFileDifferential: String = js.native
+  var BackupFileDifferential: String
   
-  var BackupFileFull: String = js.native
+  var BackupFileFull: String
   
-  var Impersonation: IImpersonation = js.native
+  var Impersonation: IImpersonation
   
-  var OverwriteExistingFiles: Boolean = js.native
+  var OverwriteExistingFiles: Boolean
   
-  var VaultProperties: IVaultProperties = js.native
+  var VaultProperties: IVaultProperties
 }
 object IRestoreJob {
   

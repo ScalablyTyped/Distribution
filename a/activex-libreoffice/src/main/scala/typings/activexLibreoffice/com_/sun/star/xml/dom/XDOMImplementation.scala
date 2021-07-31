@@ -4,11 +4,11 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDOMImplementation extends XInterface {
+trait XDOMImplementation
+  extends StObject
+     with XInterface {
   
   /**
     * Creates a DOM Document object of the specified type with its document element. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the
@@ -20,7 +20,7 @@ trait XDOMImplementation extends XInterface {
     * support this method. Other features introduced in the future, by the DOM WG or in extensions defined by other groups, may also demand support for this
     * method; please consult the definition of the feature to see if it requires this method.
     */
-  def createDocument(namespaceURI: String, qualifiedName: String, doctype: XDocumentType): XDocument = js.native
+  def createDocument(namespaceURI: String, qualifiedName: String, doctype: XDocumentType): XDocument
   
   /**
     * Creates an empty DocumentType node. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified qualified name contains an illegal
@@ -28,10 +28,10 @@ trait XDOMImplementation extends XInterface {
     * "XML" feature, if they choose not to support this method. Other features introduced in the future, by the DOM WG or in extensions defined by other
     * groups, may also demand support for this method; please consult the definition of the feature to see if it requires this method.
     */
-  def createDocumentType(qualifiedName: String, publicId: String, systemId: String): XDocumentType = js.native
+  def createDocumentType(qualifiedName: String, publicId: String, systemId: String): XDocumentType
   
   /** Test if the DOM implementation implements a specific feature. */
-  def hasFeature(feature: String, ver: String): Boolean = js.native
+  def hasFeature(feature: String, ver: String): Boolean
 }
 object XDOMImplementation {
   

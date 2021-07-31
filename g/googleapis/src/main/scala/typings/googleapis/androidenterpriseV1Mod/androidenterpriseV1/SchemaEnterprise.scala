@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,35 +18,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * steps. As an EMM, you can support either or both approaches in your EMM
   * console. See Create an Enterprise for details.
   */
-@js.native
 trait SchemaEnterprise extends StObject {
   
   /**
     * Admins of the enterprise. This is only supported for enterprises created
     * via the EMM-initiated flow.
     */
-  var administrator: js.UndefOr[js.Array[SchemaAdministrator]] = js.native
+  var administrator: js.UndefOr[js.Array[SchemaAdministrator]] = js.undefined
   
   /**
     * The unique ID for the enterprise.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#enterprise&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the enterprise, for example, &quot;Example, Inc&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The enterprise&#39;s primary domain, such as &quot;example.com&quot;.
     */
-  var primaryDomain: js.UndefOr[String] = js.native
+  var primaryDomain: js.UndefOr[String] = js.undefined
 }
 object SchemaEnterprise {
   

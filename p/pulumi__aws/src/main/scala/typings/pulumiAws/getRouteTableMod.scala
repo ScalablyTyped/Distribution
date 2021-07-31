@@ -5,41 +5,39 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetRouteTableFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRouteTableMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getRouteTable", "getRouteTable")
+  @JSImport("@pulumi/aws/ec2transitgateway/getRouteTable", JSImport.Namespace)
   @js.native
-  def getRouteTable(): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getRouteTable", "getRouteTable")
-  @js.native
-  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRouteTable(): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")().asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: Unit, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs): js.Promise[GetRouteTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRouteTableResult]]
+  @scala.inline
+  def getRouteTable(args: GetRouteTableArgs, opts: InvokeOptions): js.Promise[GetRouteTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRouteTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRouteTableResult]]
+  
   trait GetRouteTableArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetRouteTableFilter]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway Route Table.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway Route Table
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetRouteTableArgs {
     
@@ -75,40 +73,39 @@ object getRouteTableMod {
     }
   }
   
-  @js.native
   trait GetRouteTableResult extends StObject {
     
     /**
       * EC2 Transit Gateway Route Table Amazon Resource Name (ARN).
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Boolean whether this is the default association route table for the EC2 Transit Gateway
       */
-    val defaultAssociationRouteTable: Boolean = js.native
+    val defaultAssociationRouteTable: Boolean
     
     /**
       * Boolean whether this is the default propagation route table for the EC2 Transit Gateway
       */
-    val defaultPropagationRouteTable: Boolean = js.native
+    val defaultPropagationRouteTable: Boolean
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetRouteTableFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetRouteTableFilter]] = js.undefined
     
     /**
       * EC2 Transit Gateway Route Table identifier
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway Route Table
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * EC2 Transit Gateway identifier
       */
-    val transitGatewayId: String = js.native
+    val transitGatewayId: String
   }
   object GetRouteTableResult {
     

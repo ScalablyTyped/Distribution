@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Styles that apply to a table row.
   */
-@js.native
 trait SchemaTableRowStyle extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTableRowStyle extends StObject {
     * editor at a height equal to or greater than this value in order to show
     * all the content in the row&#39;s cells.
     */
-  var minRowHeight: js.UndefOr[SchemaDimension] = js.native
+  var minRowHeight: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTableRowStyle {
   

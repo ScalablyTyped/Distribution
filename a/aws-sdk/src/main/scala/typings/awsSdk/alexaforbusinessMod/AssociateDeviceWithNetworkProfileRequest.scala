@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateDeviceWithNetworkProfileRequest extends StObject {
   
   /**
     * The device ARN.
     */
-  var DeviceArn: Arn = js.native
+  var DeviceArn: Arn
   
   /**
     * The ARN of the network profile to associate with a device.
     */
-  var NetworkProfileArn: Arn = js.native
+  var NetworkProfileArn: Arn
 }
 object AssociateDeviceWithNetworkProfileRequest {
   

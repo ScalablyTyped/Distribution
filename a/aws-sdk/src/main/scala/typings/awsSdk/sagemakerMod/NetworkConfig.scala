@@ -2,23 +2,21 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConfig extends StObject {
   
   /**
     * Whether to encrypt all communications between distributed processing jobs. Choose True to encrypt communications. Encryption provides greater security for distributed processing jobs, but the processing might take longer.
     */
-  var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.native
+  var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to allow inbound and outbound network calls to and from the containers used for the processing job.
     */
-  var EnableNetworkIsolation: js.UndefOr[Boolean] = js.native
+  var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
   
-  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.native
+  var VpcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.VpcConfig] = js.undefined
 }
 object NetworkConfig {
   

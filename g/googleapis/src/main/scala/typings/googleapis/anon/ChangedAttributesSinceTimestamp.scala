@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangedAttributesSinceTimestamp extends StObject {
   
-  var changedAttributesSinceTimestamp: js.UndefOr[String] = js.native
+  var changedAttributesSinceTimestamp: js.UndefOr[String] = js.undefined
   
-  var changedMetricsSinceTimestamp: js.UndefOr[String] = js.native
+  var changedMetricsSinceTimestamp: js.UndefOr[String] = js.undefined
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object ChangedAttributesSinceTimestamp {
   

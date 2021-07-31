@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnicodeRange
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_UnicodeRange: typings.cssTree.cssTreeStrings.UnicodeRange = js.native
+  var type_UnicodeRange: typings.cssTree.cssTreeStrings.UnicodeRange
   
-  var value: String = js.native
+  var value: String
 }
 object UnicodeRange {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.UnicodeRange, value: String): UnicodeRange = {
+  def apply(value: String): UnicodeRange = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnicodeRange")
     __obj.asInstanceOf[UnicodeRange]
   }
   

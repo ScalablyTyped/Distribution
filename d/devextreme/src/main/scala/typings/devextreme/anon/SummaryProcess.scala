@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummaryProcess extends StObject {
   
-  var summaryProcess: js.UndefOr[String] = js.native
+  var summaryProcess: js.UndefOr[String] = js.undefined
   
-  var totalValue: js.UndefOr[js.Any] = js.native
+  var totalValue: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SummaryProcess {
   

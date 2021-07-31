@@ -2,51 +2,49 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabaseParameter extends StObject {
   
   /**
     * Specifies the valid range of values for the parameter.
     */
-  var allowedValues: js.UndefOr[String] = js.native
+  var allowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates when parameter updates are applied. Can be immediate or pending-reboot.
     */
-  var applyMethod: js.UndefOr[String] = js.native
+  var applyMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the engine-specific parameter type.
     */
-  var applyType: js.UndefOr[String] = js.native
+  var applyType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the valid data type for the parameter.
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /**
     * Provides a description of the parameter.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value indicating whether the parameter can be modified.
     */
-  var isModifiable: js.UndefOr[Boolean] = js.native
+  var isModifiable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the name of the parameter.
     */
-  var parameterName: js.UndefOr[String] = js.native
+  var parameterName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the value of the parameter.
     */
-  var parameterValue: js.UndefOr[String] = js.native
+  var parameterValue: js.UndefOr[String] = js.undefined
 }
 object RelationalDatabaseParameter {
   

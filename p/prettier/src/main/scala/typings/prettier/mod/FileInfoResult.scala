@@ -2,21 +2,19 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileInfoResult extends StObject {
   
-  var ignored: Boolean = js.native
+  var ignored: Boolean
   
-  var inferredParser: String | Null = js.native
+  var inferredParser: String | Null
 }
 object FileInfoResult {
   
   @scala.inline
   def apply(ignored: Boolean): FileInfoResult = {
-    val __obj = js.Dynamic.literal(ignored = ignored.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ignored = ignored.asInstanceOf[js.Any], inferredParser = null)
     __obj.asInstanceOf[FileInfoResult]
   }
   

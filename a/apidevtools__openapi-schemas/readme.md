@@ -12,7 +12,7 @@ JSON Schemas for every version of the OpenAPI Specification
 | Keywords           | openapi, open-api, swagger, oas, api, rest, json, specification, definition, schema |
 | # releases         | 8 |
 | # dependents       | 2 |
-| # downloads        | 2179671 |
+| # downloads        | 6238144 |
 | # stars            | 0 |
 
 ## Links

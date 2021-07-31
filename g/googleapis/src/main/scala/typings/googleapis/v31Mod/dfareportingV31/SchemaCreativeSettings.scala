@@ -2,26 +2,24 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creative Settings
   */
-@js.native
 trait SchemaCreativeSettings extends StObject {
   
   /**
     * Header text for iFrames for this site. Must be less than or equal to 2000
     * characters long.
     */
-  var iFrameFooter: js.UndefOr[String] = js.native
+  var iFrameFooter: js.UndefOr[String] = js.undefined
   
   /**
     * Header text for iFrames for this site. Must be less than or equal to 2000
     * characters long.
     */
-  var iFrameHeader: js.UndefOr[String] = js.native
+  var iFrameHeader: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeSettings {
   

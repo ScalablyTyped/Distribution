@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticGpus extends StObject {
   
   /**
     * The Availability Zone in the which the Elastic Graphics accelerator resides.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the Elastic Graphics accelerator.
     */
-  var ElasticGpuHealth: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuHealth] = js.native
+  var ElasticGpuHealth: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuHealth] = js.undefined
   
   /**
     * The ID of the Elastic Graphics accelerator.
     */
-  var ElasticGpuId: js.UndefOr[String] = js.native
+  var ElasticGpuId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the Elastic Graphics accelerator.
     */
-  var ElasticGpuState: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuState] = js.native
+  var ElasticGpuState: js.UndefOr[typings.awsSdk.ec2Mod.ElasticGpuState] = js.undefined
   
   /**
     * The type of Elastic Graphics accelerator.
     */
-  var ElasticGpuType: js.UndefOr[String] = js.native
+  var ElasticGpuType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance to which the Elastic Graphics accelerator is attached.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The tags assigned to the Elastic Graphics accelerator.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object ElasticGpus {
   

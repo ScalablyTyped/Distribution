@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MemberVariableDeclaration extends AST {
+trait MemberVariableDeclaration
+  extends StObject
+     with AST {
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  var variableDeclarator: VariableDeclarator = js.native
+  var variableDeclarator: VariableDeclarator
 }
 object MemberVariableDeclaration {
   

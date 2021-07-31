@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This cursor is the same instance that is available in the user interface.
   * @see TextDocumentView
   */
-@js.native
-trait XTextViewCursorSupplier extends XInterface {
+trait XTextViewCursorSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the cursor of the document view. */
-  val ViewCursor: XTextViewCursor = js.native
+  val ViewCursor: XTextViewCursor
   
   /** @returns the cursor of the document view. */
-  def getViewCursor(): XTextViewCursor = js.native
+  def getViewCursor(): XTextViewCursor
 }
 object XTextViewCursorSupplier {
   

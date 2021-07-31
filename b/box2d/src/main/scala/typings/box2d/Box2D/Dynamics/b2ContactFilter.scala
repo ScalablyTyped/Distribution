@@ -2,10 +2,8 @@ package typings.box2d.Box2D.Dynamics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2ContactFilter extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait b2ContactFilter extends StObject {
     * @param userData User provided data.  Comments indicate that this might be a b2Fixture.
     * @return True if the fixture should be considered for ray intersection, otherwise false.
     **/
-  def RayCollide(userData: js.Any): Boolean = js.native
+  def RayCollide(userData: js.Any): Boolean
   
   /**
     * Return true if contact calculations should be performed between these two fixtures.
@@ -25,7 +23,7 @@ trait b2ContactFilter extends StObject {
     * @param fixtureB b2Fixture potentially colliding with fixtureA.
     * @return True if fixtureA and fixtureB probably collide requiring more calculations, otherwise false.
     **/
-  def ShouldCollide(fixtureA: b2Fixture, fixtureB: b2Fixture): Boolean = js.native
+  def ShouldCollide(fixtureA: b2Fixture, fixtureB: b2Fixture): Boolean
 }
 object b2ContactFilter {
   

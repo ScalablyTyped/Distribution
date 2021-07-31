@@ -5,16 +5,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceNetworkendpointgroupsListnetworkendpoints extends StandardParameters {
+trait ParamsResourceNetworkendpointgroupsListnetworkendpoints
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A filter expression that filters resources listed in the response. The
@@ -34,7 +34,7 @@ trait ParamsResourceNetworkendpointgroupsListnetworkendpoints extends StandardPa
     * For example, (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel
     * Broadwell") AND (scheduling.automaticRestart = true).
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results per page that should be returned. If the
@@ -43,13 +43,13 @@ trait ParamsResourceNetworkendpointgroupsListnetworkendpoints extends StandardPa
     * in subsequent list requests. Acceptable values are 0 to 500, inclusive.
     * (Default: 500)
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the network endpoint group from which you want to generate a
     * list of included network endpoints. It should comply with RFC1035.
     */
-  var networkEndpointGroup: js.UndefOr[String] = js.native
+  var networkEndpointGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Sorts list results by a certain order. By default, results are returned
@@ -61,29 +61,29 @@ trait ParamsResourceNetworkendpointgroupsListnetworkendpoints extends StandardPa
     * operation is returned first.  Currently, only sorting by name or
     * creationTimestamp desc is supported.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a page token to use. Set pageToken to the nextPageToken
     * returned by a previous list request to get the next page of results.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaNetworkEndpointGroupsListEndpointsRequest] = js.native
+  var requestBody: js.UndefOr[SchemaNetworkEndpointGroupsListEndpointsRequest] = js.undefined
   
   /**
     * The name of the zone where the network endpoint group is located. It
     * should comply with RFC1035.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceNetworkendpointgroupsListnetworkendpoints {
   

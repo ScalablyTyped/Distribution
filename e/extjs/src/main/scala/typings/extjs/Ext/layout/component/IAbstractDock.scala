@@ -4,29 +4,29 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.layout.ISizePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAbstractDock extends IComponent {
+trait IAbstractDock
+  extends StObject
+     with IComponent {
   
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
     * @param ownerContext Object
     */
   @JSName("beginLayoutCycle")
-  var beginLayoutCycle_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayoutCycle_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Called before any calculation cycles to prepare for layout
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayout_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_IAbstractDock: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Retrieve an ordered and or filtered array of all docked Components
     * @param order String The desired ordering of the items ('render' or 'visual').
@@ -35,7 +35,7 @@ trait IAbstractDock extends IComponent {
     */
   var getDockedItems: js.UndefOr[
     js.Function2[/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean], Array]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns an object describing how this layout manages the size of the given component
     * @param item Object
@@ -45,13 +45,13 @@ trait IAbstractDock extends IComponent {
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IAbstractDock: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns an array containing all the visible docked items inside this layout s owner Panel
     * @returns Array An array containing all the visible docked items of the Panel
     */
   @JSName("getLayoutItems")
-  var getLayoutItems_IAbstractDock: js.UndefOr[js.Function0[Array]] = js.native
+  var getLayoutItems_IAbstractDock: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] The default weighting of docked items produces this arrangement
     * @param ownerContext Object
@@ -65,7 +65,7 @@ trait IAbstractDock extends IComponent {
       /* vert */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IAbstractDock {
   

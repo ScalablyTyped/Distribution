@@ -3,20 +3,18 @@ package typings.nodeZendesk.mod.Requests
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/requests#update-request|Zendesk Requests Update}
   */
-@js.native
 trait UpdateModel extends StObject {
   
-  var additional_collaborators: js.UndefOr[js.Array[Collaborator | String | ZendeskID]] = js.native
+  var additional_collaborators: js.UndefOr[js.Array[Collaborator | String | ZendeskID]] = js.undefined
   
-  var comment: js.UndefOr[typings.nodeZendesk.mod.Requests.Comments.CreateModel] = js.native
+  var comment: js.UndefOr[typings.nodeZendesk.mod.Requests.Comments.CreateModel] = js.undefined
   
-  var solved: js.UndefOr[Boolean] = js.native
+  var solved: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateModel {
   

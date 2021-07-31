@@ -8,19 +8,17 @@ import typings.firebaseAppTypes.mod.FirebaseApp
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait AnalyticsCallOptions extends StObject {
     
     /**
       * If true, this config or event call applies globally to all
       * analytics properties on the page.
       */
-    var global: Boolean = js.native
+    var global: Boolean
   }
   object AnalyticsCallOptions {
     
@@ -38,16 +36,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ControlParams extends StObject {
     
-    var event_callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var event_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var event_timeout: js.UndefOr[Double] = js.native
+    var event_timeout: js.UndefOr[Double] = js.undefined
     
-    var groups: js.UndefOr[String | js.Array[String]] = js.native
+    var groups: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var send_to: js.UndefOr[String | js.Array[String]] = js.native
+    var send_to: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ControlParams {
     
@@ -102,26 +99,25 @@ object mod {
     * Dynamic configuration fetched from server.
     * See https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects.webApps/getConfig
     */
-  @js.native
   trait DynamicConfig extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var appId: String = js.native
+    var appId: String
     
-    var authDomain: String = js.native
+    var authDomain: String
     
-    var databaseURL: String = js.native
+    var databaseURL: String
     
-    var locationId: String = js.native
+    var locationId: String
     
-    var measurementId: String = js.native
+    var measurementId: String
     
-    var messagingSenderId: String = js.native
+    var messagingSenderId: String
     
-    var projectId: String = js.native
+    var projectId: String
     
-    var storageBucket: String = js.native
+    var storageBucket: String
   }
   object DynamicConfig {
     
@@ -287,62 +283,61 @@ object mod {
     def view_search_results: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results = "view_search_results".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.view_search_results]
   }
   
-  @js.native
   trait EventParams extends StObject {
     
-    var affiliation: js.UndefOr[String] = js.native
+    var affiliation: js.UndefOr[String] = js.undefined
     
-    var checkout_option: js.UndefOr[String] = js.native
+    var checkout_option: js.UndefOr[String] = js.undefined
     
-    var checkout_step: js.UndefOr[Double] = js.native
+    var checkout_step: js.UndefOr[Double] = js.undefined
     
-    var content_id: js.UndefOr[String] = js.native
+    var content_id: js.UndefOr[String] = js.undefined
     
-    var content_type: js.UndefOr[String] = js.native
+    var content_type: js.UndefOr[String] = js.undefined
     
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var event_category: js.UndefOr[String] = js.native
+    var event_category: js.UndefOr[String] = js.undefined
     
-    var event_label: js.UndefOr[String] = js.native
+    var event_label: js.UndefOr[String] = js.undefined
     
-    var fatal: js.UndefOr[Boolean] = js.native
+    var fatal: js.UndefOr[Boolean] = js.undefined
     
-    var item_list_id: js.UndefOr[String] = js.native
+    var item_list_id: js.UndefOr[String] = js.undefined
     
-    var item_list_name: js.UndefOr[String] = js.native
+    var item_list_name: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Array[Item]] = js.native
+    var items: js.UndefOr[js.Array[Item]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var number: js.UndefOr[String] = js.native
+    var number: js.UndefOr[String] = js.undefined
     
-    var payment_type: js.UndefOr[String] = js.native
+    var payment_type: js.UndefOr[String] = js.undefined
     
-    var promotion_id: js.UndefOr[String] = js.native
+    var promotion_id: js.UndefOr[String] = js.undefined
     
-    var promotion_name: js.UndefOr[String] = js.native
+    var promotion_name: js.UndefOr[String] = js.undefined
     
-    var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+    var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
     
-    var screen_name: js.UndefOr[String] = js.native
+    var screen_name: js.UndefOr[String] = js.undefined
     
-    var search_term: js.UndefOr[String] = js.native
+    var search_term: js.UndefOr[String] = js.undefined
     
-    var shipping: js.UndefOr[Currency] = js.native
+    var shipping: js.UndefOr[Currency] = js.undefined
     
-    var shipping_tier: js.UndefOr[String] = js.native
+    var shipping_tier: js.UndefOr[String] = js.undefined
     
-    var tax: js.UndefOr[Currency] = js.native
+    var tax: js.UndefOr[Currency] = js.undefined
     
-    var transaction_id: js.UndefOr[String] = js.native
+    var transaction_id: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object EventParams {
     
@@ -539,7 +534,7 @@ object mod {
       * the gtag.js reference documentation}.
       */
     def logEvent(eventName: EventNameString): Unit = js.native
-    def logEvent(eventName: EventNameString, eventParams: js.UndefOr[scala.Nothing], options: AnalyticsCallOptions): Unit = js.native
+    def logEvent(eventName: EventNameString, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
     def logEvent(eventName: EventNameString, eventParams: EventParams): Unit = js.native
     def logEvent(eventName: EventNameString, eventParams: EventParams, options: AnalyticsCallOptions): Unit = js.native
     
@@ -600,64 +595,63 @@ object mod {
     def set: typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set = "set".asInstanceOf[typings.firebaseAnalyticsTypes.firebaseAnalyticsTypesStrings.set]
   }
   
-  @js.native
   trait Item extends StObject {
     
-    var affiliation: js.UndefOr[String] = js.native
+    var affiliation: js.UndefOr[String] = js.undefined
     
     /** @deprecated Use item_brand instead. */
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
     
     /** @deprecated Use item_category instead. */
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var coupon: js.UndefOr[String] = js.native
+    var coupon: js.UndefOr[String] = js.undefined
     
-    var creative_name: js.UndefOr[String] = js.native
+    var creative_name: js.UndefOr[String] = js.undefined
     
-    var creative_slot: js.UndefOr[String] = js.native
+    var creative_slot: js.UndefOr[String] = js.undefined
     
-    var discount: js.UndefOr[Currency] = js.native
+    var discount: js.UndefOr[Currency] = js.undefined
     
     /** @deprecated Use item_id instead. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var item_brand: js.UndefOr[String] = js.native
+    var item_brand: js.UndefOr[String] = js.undefined
     
-    var item_category: js.UndefOr[String] = js.native
+    var item_category: js.UndefOr[String] = js.undefined
     
-    var item_category2: js.UndefOr[String] = js.native
+    var item_category2: js.UndefOr[String] = js.undefined
     
-    var item_category3: js.UndefOr[String] = js.native
+    var item_category3: js.UndefOr[String] = js.undefined
     
-    var item_category4: js.UndefOr[String] = js.native
+    var item_category4: js.UndefOr[String] = js.undefined
     
-    var item_category5: js.UndefOr[String] = js.native
+    var item_category5: js.UndefOr[String] = js.undefined
     
-    var item_id: js.UndefOr[String] = js.native
+    var item_id: js.UndefOr[String] = js.undefined
     
-    var item_list_id: js.UndefOr[String] = js.native
+    var item_list_id: js.UndefOr[String] = js.undefined
     
-    var item_list_name: js.UndefOr[String] = js.native
+    var item_list_name: js.UndefOr[String] = js.undefined
     
-    var item_name: js.UndefOr[String] = js.native
+    var item_name: js.UndefOr[String] = js.undefined
     
-    var item_variant: js.UndefOr[String] = js.native
+    var item_variant: js.UndefOr[String] = js.undefined
     
-    var location_id: js.UndefOr[String] = js.native
+    var location_id: js.UndefOr[String] = js.undefined
     
     /** @deprecated Use item_name instead. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var price: js.UndefOr[Currency] = js.native
+    var price: js.UndefOr[Currency] = js.undefined
     
-    var promotion_id: js.UndefOr[String] = js.native
+    var promotion_id: js.UndefOr[String] = js.undefined
     
-    var promotion_name: js.UndefOr[String] = js.native
+    var promotion_name: js.UndefOr[String] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
   }
   object Item {
     
@@ -828,12 +822,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MinimalDynamicConfig extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    var measurementId: String = js.native
+    var measurementId: String
   }
   object MinimalDynamicConfig {
     
@@ -854,16 +847,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Promotion extends StObject {
     
-    var creative_name: js.UndefOr[String] = js.native
+    var creative_name: js.UndefOr[String] = js.undefined
     
-    var creative_slot: js.UndefOr[String] = js.native
+    var creative_slot: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Promotion {
     
@@ -902,14 +894,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SettingsOptions extends StObject {
     
     /** Sets custom name for `dataLayer` array used by gtag. */
-    var dataLayerName: js.UndefOr[String] = js.native
+    var dataLayerName: js.UndefOr[String] = js.undefined
     
     /** Sets custom name for `gtag` function. */
-    var gtagName: js.UndefOr[String] = js.native
+    var gtagName: js.UndefOr[String] = js.undefined
   }
   object SettingsOptions {
     
@@ -936,14 +927,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ThrottleMetadata extends StObject {
     
     // The number of times fetch has backed off. Used for resuming backoff after a timeout.
-    var backoffCount: Double = js.native
+    var backoffCount: Double
     
     // The Unix timestamp in milliseconds when callers can retry a request.
-    var throttleEndTimeMillis: Double = js.native
+    var throttleEndTimeMillis: Double
   }
   object ThrottleMetadata {
     
@@ -966,10 +956,9 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var analytics: FirebaseAnalytics = js.native
+      var analytics: FirebaseAnalytics
     }
     object NameServiceMapping {
       

@@ -2,23 +2,21 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  def annotate(fn: js.Function, msg: String): Logger = js.native
+  def annotate(fn: js.Function, msg: String): Logger
   
-  def debug(msg: String): Logger = js.native
+  def debug(msg: String): Logger
   
-  def deprecate(fn: js.Function, msg: String): Unit = js.native
+  def deprecate(fn: js.Function, msg: String): Unit
   
-  var enableDebugLog: Boolean = js.native
+  var enableDebugLog: Boolean
   
-  def warn(msg: String): Logger = js.native
+  def warn(msg: String): Logger
   
-  def warnOnce(msg: String): Logger = js.native
+  def warnOnce(msg: String): Logger
 }
 object Logger {
   

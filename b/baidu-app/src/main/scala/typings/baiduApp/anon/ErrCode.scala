@@ -2,15 +2,13 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrCode extends StObject {
   
-  var errCode: Double = js.native
+  var errCode: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ErrCode {
   

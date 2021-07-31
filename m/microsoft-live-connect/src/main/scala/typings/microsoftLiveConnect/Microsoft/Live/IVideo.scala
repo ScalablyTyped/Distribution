@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,129 +12,128 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * users have shared with the user. Use the wl.skydrive_update scope to
   * create, update, or delete Video objects.
   */
-@js.native
 trait IVideo extends StObject {
   
   /**
     * The bit rate, in bits per second, of the video.
     */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /**
     * The number of comments that are associated with the video.
     */
-  var comments_count: Double = js.native
+  var comments_count: Double
   
   /**
     * A value that indicates whether comments are enabled for the video. If
     * comments can be made, this value is true; otherwise, it is false.
     */
-  var comments_enabled: Boolean = js.native
+  var comments_enabled: Boolean
   
   /**
     * The time, in ISO 8601 format, at which the video was created.
     */
-  var created_time: String = js.native
+  var created_time: String
   
   /**
     * A description of the video, or null if no description is specified.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The duration, in milliseconds, of the video run time.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Info about the user who uploaded the video.
     */
-  var from: IUserInfo = js.native
+  var from: IUserInfo
   
   /**
     * The height, in pixels, of the video.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The Video object's ID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value that indicates whether this video can be embedded. If this
     * video can be embedded, this value is true; otherwise, it is false.
     */
-  var is_embeddable: Boolean = js.native
+  var is_embeddable: Boolean
   
   /**
     * A URL of the video, hosted in SkyDrive.
     */
-  var link: String = js.native
+  var link: String
   
   /**
     * The file name of the video.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The id of the folder where the item is stored.
     */
-  var parent_id: String = js.native
+  var parent_id: String
   
   /**
     * A URL of a picture that represents the video.
     */
-  var picture: String = js.native
+  var picture: String
   
   /**
     * The object that contains permission info.
     */
-  var shared_with: ISharedWith = js.native
+  var shared_with: ISharedWith
   
   /**
     * The size, in bytes, of the video.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * The download URL for the video.
     * Warning: This value is not persistent. Use it immediately after
     * making the request, and avoid caching.
     */
-  var source: String = js.native
+  var source: String
   
   /**
     * The number of tags on the video.
     */
-  var tags_count: Double = js.native
+  var tags_count: Double
   
   /**
     * A value that indicates whether tags are enabled for the video. If
     * tags can be set, this value is true; otherwise, it is false.
     */
-  var tags_enabled: Boolean = js.native
+  var tags_enabled: Boolean
   
   /**
     * The type of object; in this case, "video".
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The time, in ISO 8601 format, at which the video was last updated.
     */
-  var updated_time: String = js.native
+  var updated_time: String
   
   /**
     * The URL to upload video content, hosted in SkyDrive. This value is
     * returned only if the wl.skydrive scope is present.
     */
-  var upload_location: String = js.native
+  var upload_location: String
   
   /**
     * The width, in pixels, of the video.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object IVideo {
   

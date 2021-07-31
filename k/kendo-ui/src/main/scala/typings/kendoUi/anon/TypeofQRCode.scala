@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.QRCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofQRCode extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): QRCode = js.native
+  def extend(proto: js.Object): QRCode
   
   /* static member */
-  var fn: QRCode = js.native
+  var fn: QRCode
 }
 object TypeofQRCode {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
-  var clauses: js.Array[FilterClause] = js.native
+  var clauses: js.Array[FilterClause]
   
-  var filter: String = js.native
+  var filter: String
   
-  var isEnabled: String = js.native
+  var isEnabled: String
   
-  var name: String = js.native
+  var name: String
   
-  var settings: attribute = js.native
+  var settings: attribute
 }
 object Rule {
   

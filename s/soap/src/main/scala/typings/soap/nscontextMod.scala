@@ -3,7 +3,6 @@ package typings.soap
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nscontextMod {
@@ -75,14 +74,13 @@ object nscontextMod {
     var scopes: js.Array[NamespaceScope] = js.native
   }
   
-  @js.native
   trait INamespace extends StObject {
     
-    var declared: Boolean = js.native
+    var declared: Boolean
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object INamespace {
     

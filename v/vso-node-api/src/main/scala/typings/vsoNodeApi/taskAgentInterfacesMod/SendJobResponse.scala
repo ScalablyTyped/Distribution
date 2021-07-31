@@ -3,15 +3,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendJobResponse extends StObject {
   
-  var events: JobEventsConfig = js.native
+  var events: JobEventsConfig
   
-  var variables: StringDictionary[String] = js.native
+  var variables: StringDictionary[String]
 }
 object SendJobResponse {
   

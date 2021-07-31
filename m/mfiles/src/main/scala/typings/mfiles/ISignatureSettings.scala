@@ -3,35 +3,33 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFSignaturePromptInfoType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISignatureSettings extends StObject {
   
-  var AdditionalInfo: String = js.native
+  var AdditionalInfo: String
   
-  def Clone(): ISignatureSettings = js.native
+  def Clone(): ISignatureSettings
   
-  var FreeFormTextPropertyID: Double = js.native
+  var FreeFormTextPropertyID: Double
   
-  var IsFreeFormTextPrompted: Boolean = js.native
+  var IsFreeFormTextPrompted: Boolean
   
-  var IsRequired: Boolean = js.native
+  var IsRequired: Boolean
   
-  var IsSeparateSignatureObject: Boolean = js.native
+  var IsSeparateSignatureObject: Boolean
   
-  var ManifestationPropertyID: Double = js.native
+  var ManifestationPropertyID: Double
   
-  val PromptInfoType: MFSignaturePromptInfoType = js.native
+  val PromptInfoType: MFSignaturePromptInfoType
   
-  var SignatureIdentifier: String = js.native
+  var SignatureIdentifier: String
   
-  var SignaturePromptInfoFixed: ISignaturePromptInfo = js.native
+  var SignaturePromptInfoFixed: ISignaturePromptInfo
   
-  var SignaturePromptInfoMetadataBased: ISignaturePromptInfoMetadataBased = js.native
+  var SignaturePromptInfoMetadataBased: ISignaturePromptInfoMetadataBased
   
-  var SignaturePromptInfoSelectable: ISignaturePromptInfoSelectable = js.native
+  var SignaturePromptInfoSelectable: ISignaturePromptInfoSelectable
 }
 object ISignatureSettings {
   

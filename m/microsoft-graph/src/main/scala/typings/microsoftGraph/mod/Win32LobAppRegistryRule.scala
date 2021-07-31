@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Win32LobAppRegistryRule extends Win32LobAppRule {
+trait Win32LobAppRegistryRule
+  extends StObject
+     with Win32LobAppRule {
   
   // A value indicating whether to search the 32-bit registry on 64-bit systems.
-  var check32BitOn64System: js.UndefOr[Boolean] = js.native
+  var check32BitOn64System: js.UndefOr[Boolean] = js.undefined
   
   // The registry comparison value.
-  var comparisonValue: js.UndefOr[NullableOption[String]] = js.native
+  var comparisonValue: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The full path of the registry entry containing the value to detect.
-  var keyPath: js.UndefOr[NullableOption[String]] = js.native
+  var keyPath: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The registry operation type. Possible values are: notConfigured, exists, doesNotExist, string, integer, version.
-  var operationType: js.UndefOr[Win32LobAppRegistryRuleOperationType] = js.native
+  var operationType: js.UndefOr[Win32LobAppRegistryRuleOperationType] = js.undefined
   
   /**
     * The operator for registry detection. Possible values are: notConfigured, equal, notEqual, greaterThan,
     * greaterThanOrEqual, lessThan, lessThanOrEqual.
     */
-  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.native
+  var operator: js.UndefOr[Win32LobAppRuleOperator] = js.undefined
   
   // The name of the registry value to detect.
-  var valueName: js.UndefOr[NullableOption[String]] = js.native
+  var valueName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Win32LobAppRegistryRule {
   

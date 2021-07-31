@@ -2,25 +2,23 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellLabel extends StObject {
   
-  var cellLabel: String = js.native
+  var cellLabel: String
   
-  var cellText: String = js.native
+  var cellText: String
   
-  var cellTextSelected: String = js.native
+  var cellTextSelected: String
   
-  var itemChecked: String = js.native
+  var itemChecked: String
   
-  var itemDecorator: String = js.native
+  var itemDecorator: String
   
-  var label: String = js.native
+  var label: String
   
-  var root: String = js.native
+  var root: String
 }
 object CellLabel {
   

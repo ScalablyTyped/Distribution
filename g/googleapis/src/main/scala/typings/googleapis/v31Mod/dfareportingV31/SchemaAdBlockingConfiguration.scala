@@ -2,27 +2,25 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Campaign ad blocking settings.
   */
-@js.native
 trait SchemaAdBlockingConfiguration extends StObject {
   
   /**
     * Click-through URL used by brand-neutral ads. This is a required field
     * when overrideClickThroughUrl is set to true.
     */
-  var clickThroughUrl: js.UndefOr[String] = js.native
+  var clickThroughUrl: js.UndefOr[String] = js.undefined
   
   /**
     * ID of a creative bundle to use for this campaign. If set, brand-neutral
     * ads will select creatives from this bundle. Otherwise, a default
     * transparent pixel will be used.
     */
-  var creativeBundleId: js.UndefOr[String] = js.native
+  var creativeBundleId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this campaign has enabled ad blocking. When true, ad blocking is
@@ -30,14 +28,14 @@ trait SchemaAdBlockingConfiguration extends StObject {
     * site and placement settings. When false, ad blocking is disabled for all
     * placements under the campaign, regardless of site and placement settings.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the brand-neutral ad&#39;s click-through URL comes from the
     * campaign&#39;s creative bundle or the override URL. Must be set to true
     * if ad blocking is enabled and no creative bundle is configured.
     */
-  var overrideClickThroughUrl: js.UndefOr[Boolean] = js.native
+  var overrideClickThroughUrl: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAdBlockingConfiguration {
   

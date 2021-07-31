@@ -4,39 +4,37 @@ import typings.rascal.anon.Dictkey
 import typings.rascal.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAttributes extends StObject {
   
-  var auth: js.UndefOr[String] = js.native
+  var auth: js.UndefOr[String] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
-  var loggableUrl: js.UndefOr[String] = js.native
+  var loggableUrl: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[Dictkey] = js.native
+  var options: js.UndefOr[Dictkey] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var pathname: js.UndefOr[String] = js.native
+  var pathname: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[String | Double] = js.native
+  var port: js.UndefOr[String | Double] = js.undefined
   
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var slashes: js.UndefOr[Boolean] = js.native
+  var slashes: js.UndefOr[Boolean] = js.undefined
   
-  var socketOptions: js.UndefOr[Timeout] = js.native
+  var socketOptions: js.UndefOr[Timeout] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
-  var vhost: js.UndefOr[String] = js.native
+  var vhost: js.UndefOr[String] = js.undefined
 }
 object ConnectionAttributes {
   

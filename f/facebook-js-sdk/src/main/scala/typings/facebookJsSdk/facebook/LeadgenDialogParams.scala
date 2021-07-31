@@ -4,26 +4,26 @@ import typings.facebookJsSdk.facebookJsSdkStrings.lead_gen
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeadgenDialogParams extends DialogParams {
+trait LeadgenDialogParams
+  extends StObject
+     with DialogParams {
   
-  var account_id: String = js.native
+  var account_id: String
   
   @JSName("display")
-  var display_LeadgenDialogParams: popup = js.native
+  var display_LeadgenDialogParams: popup
   
-  var method: lead_gen = js.native
+  var method: lead_gen
   
-  var page_id: String = js.native
+  var page_id: String
 }
 object LeadgenDialogParams {
   
   @scala.inline
-  def apply(account_id: String, display: popup, method: lead_gen, page_id: String): LeadgenDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
+  def apply(account_id: String, page_id: String): LeadgenDialogParams = {
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = "popup", method = "lead_gen", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadgenDialogParams]
   }
   

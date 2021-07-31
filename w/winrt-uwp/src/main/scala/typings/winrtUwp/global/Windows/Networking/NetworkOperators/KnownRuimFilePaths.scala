@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static class that provides known RUIM file paths. */
 @JSGlobal("Windows.Networking.NetworkOperators.KnownRuimFilePaths")
 @js.native
 abstract class KnownRuimFilePaths ()
-  extends typings.winrtUwp.Windows.Networking.NetworkOperators.KnownRuimFilePaths
+  extends StObject
+     with typings.winrtUwp.Windows.Networking.NetworkOperators.KnownRuimFilePaths
 object KnownRuimFilePaths {
   
   @JSGlobal("Windows.Networking.NetworkOperators.KnownRuimFilePaths")

@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3OutputUrl extends StObject {
   
   /**
     * A URL for an S3 bucket where you want to store the results of this request.
     */
-  var OutputUrl: js.UndefOr[Url] = js.native
+  var OutputUrl: js.UndefOr[Url] = js.undefined
 }
 object S3OutputUrl {
   

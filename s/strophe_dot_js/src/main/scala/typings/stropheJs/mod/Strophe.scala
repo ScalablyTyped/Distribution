@@ -7,10 +7,13 @@ import typings.std.Text
 import typings.stropheJs.anon.MatchBare
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Strophe {
+  
+  @JSImport("strophe.js", "Strophe")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** Class: Strophe.Builder
     *  XML DOM builder.
@@ -89,9 +92,9 @@ object Strophe {
       *    The Strophe.Builder object.
       */
     def c(name: String): Builder = js.native
-    def c(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Builder = js.native
     def c(name: String, attrs: js.Any): Builder = js.native
     def c(name: String, attrs: js.Any, text: String): Builder = js.native
+    def c(name: String, attrs: Unit, text: String): Builder = js.native
     
     /** Function: cnode
       *  Add a child to the current element and make it the new current
@@ -273,7 +276,7 @@ object Strophe {
       *    A reference to the handler that can be used to remove it.
       */
     def addHandler(
-      handler: js.Function1[/* stanza */ Element, _],
+      handler: js.Function1[/* stanza */ Element, js.Any],
       ns: String,
       name: String,
       `type`: String,
@@ -281,7 +284,7 @@ object Strophe {
       from: String
     ): js.Any = js.native
     def addHandler(
-      handler: js.Function1[/* stanza */ Element, _],
+      handler: js.Function1[/* stanza */ Element, js.Any],
       ns: String,
       name: String,
       `type`: String,
@@ -343,108 +346,20 @@ object Strophe {
       jid: String,
       sid: String,
       rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      wind: Double
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any]
     ): Unit = js.native
     def attach(
       jid: String,
       sid: String,
       rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      wind: Double
-    ): Unit = js.native
-    def attach(jid: String, sid: String, rid: String, callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      wind: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: Double,
-      wind: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _]
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      wind: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      wind: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double
     ): Unit = js.native
     def attach(
       jid: String,
       sid: String,
       rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      wind: Double
-    ): Unit = js.native
-    def attach(
-      jid: String,
-      sid: String,
-      rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double,
       hold: Double
     ): Unit = js.native
@@ -452,11 +367,53 @@ object Strophe {
       jid: String,
       sid: String,
       rid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double,
       hold: Double,
       wind: Double
     ): Unit = js.native
+    def attach(
+      jid: String,
+      sid: String,
+      rid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double,
+      hold: Unit,
+      wind: Double
+    ): Unit = js.native
+    def attach(
+      jid: String,
+      sid: String,
+      rid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double
+    ): Unit = js.native
+    def attach(
+      jid: String,
+      sid: String,
+      rid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double,
+      wind: Double
+    ): Unit = js.native
+    def attach(
+      jid: String,
+      sid: String,
+      rid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Unit,
+      wind: Double
+    ): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Double, hold: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Double, hold: Double, wind: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Double, hold: Unit, wind: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Unit, hold: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Unit, hold: Double, wind: Double): Unit = js.native
+    def attach(jid: String, sid: String, rid: String, callback: Unit, wait: Unit, hold: Unit, wind: Double): Unit = js.native
     
     var authcid: String = js.native
     
@@ -494,7 +451,7 @@ object Strophe {
     def connect(
       jid: js.UndefOr[String],
       pass: js.UndefOr[String],
-      callback: js.UndefOr[js.Function2[/* status */ Status, /* condition */ String, _]],
+      callback: js.UndefOr[js.Function2[/* status */ Status, /* condition */ String, js.Any]],
       wait: js.UndefOr[Double],
       hold: js.UndefOr[Double],
       route: js.UndefOr[String]
@@ -659,159 +616,113 @@ object Strophe {
       *      The default is 5.
       */
     def restore(): Unit = js.native
+    def restore(jid: String): Unit = js.native
+    def restore(jid: String, callback: js.Function2[/* status */ Status, /* condition */ String, js.Any]): Unit = js.native
     def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(jid: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(jid: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _]
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      jid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double
     ): Unit = js.native
     def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: Double,
-      hold: Double
-    ): Unit = js.native
-    def restore(
-      jid: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: Double,
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(jid: String): Unit = js.native
-    def restore(
       jid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: js.UndefOr[scala.Nothing], hold: Double): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.UndefOr[scala.Nothing],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double): Unit = js.native
-    def restore(jid: String, callback: js.UndefOr[scala.Nothing], wait: Double, hold: Double, route: String): Unit = js.native
-    def restore(jid: String, callback: js.Function2[/* status */ Status, /* condition */ String, _]): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double
-    ): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: js.UndefOr[scala.Nothing],
-      hold: Double,
-      route: String
-    ): Unit = js.native
-    def restore(jid: String, callback: js.Function2[/* status */ Status, /* condition */ String, _], wait: Double): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
-      wait: Double,
-      hold: js.UndefOr[scala.Nothing],
-      route: String
-    ): Unit = js.native
-    def restore(
-      jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double,
       hold: Double
     ): Unit = js.native
     def restore(
       jid: String,
-      callback: js.Function2[/* status */ Status, /* condition */ String, _],
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
       wait: Double,
       hold: Double,
       route: String
     ): Unit = js.native
+    def restore(
+      jid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double,
+      hold: Unit,
+      route: String
+    ): Unit = js.native
+    def restore(
+      jid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double
+    ): Unit = js.native
+    def restore(
+      jid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double,
+      route: String
+    ): Unit = js.native
+    def restore(
+      jid: String,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Unit,
+      route: String
+    ): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Double): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Double, hold: Double): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Double, hold: Double, route: String): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Double, hold: Unit, route: String): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Unit, hold: Double): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Unit, hold: Double, route: String): Unit = js.native
+    def restore(jid: String, callback: Unit, wait: Unit, hold: Unit, route: String): Unit = js.native
+    def restore(jid: Unit, callback: js.Function2[/* status */ Status, /* condition */ String, js.Any]): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double,
+      hold: Double
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double,
+      hold: Double,
+      route: String
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Double,
+      hold: Unit,
+      route: String
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Double,
+      route: String
+    ): Unit = js.native
+    def restore(
+      jid: Unit,
+      callback: js.Function2[/* status */ Status, /* condition */ String, js.Any],
+      wait: Unit,
+      hold: Unit,
+      route: String
+    ): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Double): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Double, hold: Double): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Double, hold: Double, route: String): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Double, hold: Unit, route: String): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Unit, hold: Double): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Unit, hold: Double, route: String): Unit = js.native
+    def restore(jid: Unit, callback: Unit, wait: Unit, hold: Unit, route: String): Unit = js.native
     
     /** Function: resume
       *  Resume the request manager.
@@ -851,69 +762,59 @@ object Strophe {
       *    The id used to send the IQ.
       */
     def sendIQ(elem: Element): String = js.native
+    def sendIQ(elem: Element, callback: js.Function1[/* stanza */ Element, js.Any]): String = js.native
     def sendIQ(
       elem: Element,
-      callback: js.UndefOr[scala.Nothing],
-      errback: js.UndefOr[scala.Nothing],
-      timeout: Double
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: js.Function1[/* stanza */ Element, js.Any]
     ): String = js.native
-    def sendIQ(elem: Element, callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* stanza */ Element, _]): String = js.native
     def sendIQ(
       elem: Element,
-      callback: js.UndefOr[scala.Nothing],
-      errback: js.Function1[/* stanza */ Element, _],
-      timeout: Double
-    ): String = js.native
-    def sendIQ(elem: Element, callback: js.Function1[/* stanza */ Element, _]): String = js.native
-    def sendIQ(
-      elem: Element,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: js.Function1[/* stanza */ Element, js.Any],
       timeout: Double
     ): String = js.native
     def sendIQ(
       elem: Element,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.Function1[/* stanza */ Element, _]
-    ): String = js.native
-    def sendIQ(
-      elem: Element,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.Function1[/* stanza */ Element, _],
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: Unit,
       timeout: Double
     ): String = js.native
+    def sendIQ(elem: Element, callback: Unit, errback: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+    def sendIQ(
+      elem: Element,
+      callback: Unit,
+      errback: js.Function1[/* stanza */ Element, js.Any],
+      timeout: Double
+    ): String = js.native
+    def sendIQ(elem: Element, callback: Unit, errback: Unit, timeout: Double): String = js.native
     def sendIQ(elem: Builder): String = js.native
+    def sendIQ(elem: Builder, callback: js.Function1[/* stanza */ Element, js.Any]): String = js.native
     def sendIQ(
       elem: Builder,
-      callback: js.UndefOr[scala.Nothing],
-      errback: js.UndefOr[scala.Nothing],
-      timeout: Double
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: js.Function1[/* stanza */ Element, js.Any]
     ): String = js.native
-    def sendIQ(elem: Builder, callback: js.UndefOr[scala.Nothing], errback: js.Function1[/* stanza */ Element, _]): String = js.native
     def sendIQ(
       elem: Builder,
-      callback: js.UndefOr[scala.Nothing],
-      errback: js.Function1[/* stanza */ Element, _],
-      timeout: Double
-    ): String = js.native
-    def sendIQ(elem: Builder, callback: js.Function1[/* stanza */ Element, _]): String = js.native
-    def sendIQ(
-      elem: Builder,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.UndefOr[scala.Nothing],
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: js.Function1[/* stanza */ Element, js.Any],
       timeout: Double
     ): String = js.native
     def sendIQ(
       elem: Builder,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.Function1[/* stanza */ Element, _]
-    ): String = js.native
-    def sendIQ(
-      elem: Builder,
-      callback: js.Function1[/* stanza */ Element, _],
-      errback: js.Function1[/* stanza */ Element, _],
+      callback: js.Function1[/* stanza */ Element, js.Any],
+      errback: Unit,
       timeout: Double
     ): String = js.native
+    def sendIQ(elem: Builder, callback: Unit, errback: js.Function1[/* stanza */ Element, js.Any]): String = js.native
+    def sendIQ(
+      elem: Builder,
+      callback: Unit,
+      errback: js.Function1[/* stanza */ Element, js.Any],
+      timeout: Double
+    ): String = js.native
+    def sendIQ(elem: Builder, callback: Unit, errback: Unit, timeout: Double): String = js.native
     
     var servtype: String = js.native
     
@@ -974,27 +875,37 @@ object Strophe {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[LogLevel & Double] = js.native
     
     @js.native
-    sealed trait DEBUG extends LogLevel
-    /* 0 */ val DEBUG: typings.stropheJs.mod.Strophe.LogLevel.DEBUG with Double = js.native
+    sealed trait DEBUG
+      extends StObject
+         with LogLevel
+    /* 0 */ val DEBUG: typings.stropheJs.mod.Strophe.LogLevel.DEBUG & Double = js.native
     
     @js.native
-    sealed trait ERROR extends LogLevel
-    /* 3 */ val ERROR: typings.stropheJs.mod.Strophe.LogLevel.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with LogLevel
+    /* 3 */ val ERROR: typings.stropheJs.mod.Strophe.LogLevel.ERROR & Double = js.native
     
     @js.native
-    sealed trait FATAL extends LogLevel
-    /* 4 */ val FATAL: typings.stropheJs.mod.Strophe.LogLevel.FATAL with Double = js.native
+    sealed trait FATAL
+      extends StObject
+         with LogLevel
+    /* 4 */ val FATAL: typings.stropheJs.mod.Strophe.LogLevel.FATAL & Double = js.native
     
     @js.native
-    sealed trait INFO extends LogLevel
-    /* 1 */ val INFO: typings.stropheJs.mod.Strophe.LogLevel.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with LogLevel
+    /* 1 */ val INFO: typings.stropheJs.mod.Strophe.LogLevel.INFO & Double = js.native
     
     @js.native
-    sealed trait WARN extends LogLevel
-    /* 2 */ val WARN: typings.stropheJs.mod.Strophe.LogLevel.WARN with Double = js.native
+    sealed trait WARN
+      extends StObject
+         with LogLevel
+    /* 2 */ val WARN: typings.stropheJs.mod.Strophe.LogLevel.WARN & Double = js.native
   }
   
   /** Constants: XMPP Namespace Constants
@@ -1176,51 +1087,73 @@ object Strophe {
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[Status & Double] = js.native
     
     @js.native
-    sealed trait ATTACHED extends Status
-    /* 8 */ val ATTACHED: typings.stropheJs.mod.Strophe.Status.ATTACHED with Double = js.native
+    sealed trait ATTACHED
+      extends StObject
+         with Status
+    /* 8 */ val ATTACHED: typings.stropheJs.mod.Strophe.Status.ATTACHED & Double = js.native
     
     @js.native
-    sealed trait AUTHENTICATING extends Status
-    /* 3 */ val AUTHENTICATING: typings.stropheJs.mod.Strophe.Status.AUTHENTICATING with Double = js.native
+    sealed trait AUTHENTICATING
+      extends StObject
+         with Status
+    /* 3 */ val AUTHENTICATING: typings.stropheJs.mod.Strophe.Status.AUTHENTICATING & Double = js.native
     
     @js.native
-    sealed trait AUTHFAIL extends Status
-    /* 4 */ val AUTHFAIL: typings.stropheJs.mod.Strophe.Status.AUTHFAIL with Double = js.native
+    sealed trait AUTHFAIL
+      extends StObject
+         with Status
+    /* 4 */ val AUTHFAIL: typings.stropheJs.mod.Strophe.Status.AUTHFAIL & Double = js.native
     
     @js.native
-    sealed trait CONNECTED extends Status
-    /* 5 */ val CONNECTED: typings.stropheJs.mod.Strophe.Status.CONNECTED with Double = js.native
+    sealed trait CONNECTED
+      extends StObject
+         with Status
+    /* 5 */ val CONNECTED: typings.stropheJs.mod.Strophe.Status.CONNECTED & Double = js.native
     
     @js.native
-    sealed trait CONNECTING extends Status
-    /* 1 */ val CONNECTING: typings.stropheJs.mod.Strophe.Status.CONNECTING with Double = js.native
+    sealed trait CONNECTING
+      extends StObject
+         with Status
+    /* 1 */ val CONNECTING: typings.stropheJs.mod.Strophe.Status.CONNECTING & Double = js.native
     
     @js.native
-    sealed trait CONNFAIL extends Status
-    /* 2 */ val CONNFAIL: typings.stropheJs.mod.Strophe.Status.CONNFAIL with Double = js.native
+    sealed trait CONNFAIL
+      extends StObject
+         with Status
+    /* 2 */ val CONNFAIL: typings.stropheJs.mod.Strophe.Status.CONNFAIL & Double = js.native
     
     @js.native
-    sealed trait CONNTIMEOUT extends Status
-    /* 10 */ val CONNTIMEOUT: typings.stropheJs.mod.Strophe.Status.CONNTIMEOUT with Double = js.native
+    sealed trait CONNTIMEOUT
+      extends StObject
+         with Status
+    /* 10 */ val CONNTIMEOUT: typings.stropheJs.mod.Strophe.Status.CONNTIMEOUT & Double = js.native
     
     @js.native
-    sealed trait DISCONNECTED extends Status
-    /* 6 */ val DISCONNECTED: typings.stropheJs.mod.Strophe.Status.DISCONNECTED with Double = js.native
+    sealed trait DISCONNECTED
+      extends StObject
+         with Status
+    /* 6 */ val DISCONNECTED: typings.stropheJs.mod.Strophe.Status.DISCONNECTED & Double = js.native
     
     @js.native
-    sealed trait DISCONNECTING extends Status
-    /* 7 */ val DISCONNECTING: typings.stropheJs.mod.Strophe.Status.DISCONNECTING with Double = js.native
+    sealed trait DISCONNECTING
+      extends StObject
+         with Status
+    /* 7 */ val DISCONNECTING: typings.stropheJs.mod.Strophe.Status.DISCONNECTING & Double = js.native
     
     @js.native
-    sealed trait ERROR extends Status
-    /* 0 */ val ERROR: typings.stropheJs.mod.Strophe.Status.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with Status
+    /* 0 */ val ERROR: typings.stropheJs.mod.Strophe.Status.ERROR & Double = js.native
     
     @js.native
-    sealed trait REDIRECT extends Status
-    /* 9 */ val REDIRECT: typings.stropheJs.mod.Strophe.Status.REDIRECT with Double = js.native
+    sealed trait REDIRECT
+      extends StObject
+         with Status
+    /* 9 */ val REDIRECT: typings.stropheJs.mod.Strophe.Status.REDIRECT & Double = js.native
   }
   
   /** Constant: VERSION
@@ -1238,9 +1171,8 @@ object Strophe {
     *    (String) name - The name of the extension.
     *    (Object) ptype - The plugin's prototype.
     */
-  @JSImport("strophe.js", "Strophe.addConnectionPlugin")
-  @js.native
-  def addConnectionPlugin(name: String, ptype: js.Any): Unit = js.native
+  @scala.inline
+  def addConnectionPlugin(name: String, ptype: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addConnectionPlugin")(name.asInstanceOf[js.Any], ptype.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Function: addNamespace
     *  This function is used to extend the current namespaces in
@@ -1254,9 +1186,8 @@ object Strophe {
     *      referenced under Strophe.NS
     *    (String) value - The actual namespace.
     */
-  @JSImport("strophe.js", "Strophe.addNamespace")
-  @js.native
-  def addNamespace(name: String, value: String): Unit = js.native
+  @scala.inline
+  def addNamespace(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Function: copyElement
     *  Copy an XML DOM element.
@@ -1270,9 +1201,8 @@ object Strophe {
     *  Returns:
     *    A new, copied DOM element tree.
     */
-  @JSImport("strophe.js", "Strophe.copyElement")
-  @js.native
-  def copyElement(elem: Element): Element = js.native
+  @scala.inline
+  def copyElement(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("copyElement")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /** Function: createHtml
     *  Copy an HTML DOM element into an XML DOM.
@@ -1286,9 +1216,8 @@ object Strophe {
     *  Returns:
     *    A new, copied DOM element tree.
     */
-  @JSImport("strophe.js", "Strophe.createHtml")
-  @js.native
-  def createHtml(elem: Element): Element = js.native
+  @scala.inline
+  def createHtml(elem: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createHtml")(elem.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /** Functions: debug, info, warn, error
     *  Log a message at the appropriate Strophe.LogLevel
@@ -1296,13 +1225,11 @@ object Strophe {
     *  Parameters:
     *    (String) msg - The log message.
     */
-  @JSImport("strophe.js", "Strophe.debug")
-  @js.native
-  def debug(msg: String): Unit = js.native
+  @scala.inline
+  def debug(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("strophe.js", "Strophe.error")
-  @js.native
-  def error(msg: String): Unit = js.native
+  @scala.inline
+  def error(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Function: escapeNode
     *  Escape the node part (also called local part) of a JID.
@@ -1313,13 +1240,11 @@ object Strophe {
     *  Returns:
     *    An escaped node (or local part).
     */
-  @JSImport("strophe.js", "Strophe.escapeNode")
-  @js.native
-  def escapeNode(node: String): String = js.native
+  @scala.inline
+  def escapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("strophe.js", "Strophe.fatal")
-  @js.native
-  def fatal(msg: String): Unit = js.native
+  @scala.inline
+  def fatal(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Function: forEachChild
     *  Map a function over some or all child elements of a given element.
@@ -1335,9 +1260,8 @@ object Strophe {
     *    (Function) func - The function to apply to each child.  This
     *      function should take a single argument, a DOM element.
     */
-  @JSImport("strophe.js", "Strophe.forEachChild")
-  @js.native
-  def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, _]): Unit = js.native
+  @scala.inline
+  def forEachChild(elem: Element, elemName: String, func: js.Function1[/* child */ Element, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachChild")(elem.asInstanceOf[js.Any], elemName.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Function: getBareJidFromJid
     *  Get the bare JID from a JID String.
@@ -1348,9 +1272,8 @@ object Strophe {
     *  Returns:
     *    A String containing the bare JID.
     */
-  @JSImport("strophe.js", "Strophe.getBareJidFromJid")
-  @js.native
-  def getBareJidFromJid(jid: String): String = js.native
+  @scala.inline
+  def getBareJidFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBareJidFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Function: getDomainFromJid
     *  Get the domain portion of a JID String.
@@ -1361,9 +1284,8 @@ object Strophe {
     *  Returns:
     *    A String containing the domain.
     */
-  @JSImport("strophe.js", "Strophe.getDomainFromJid")
-  @js.native
-  def getDomainFromJid(jid: String): String = js.native
+  @scala.inline
+  def getDomainFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Function: getNodeFromJid
     *  Get the node portion of a JID String.
@@ -1374,9 +1296,8 @@ object Strophe {
     *  Returns:
     *    A String containing the node.
     */
-  @JSImport("strophe.js", "Strophe.getNodeFromJid")
-  @js.native
-  def getNodeFromJid(jid: String): String = js.native
+  @scala.inline
+  def getNodeFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Function: getResourceFromJid
     *  Get the resource portion of a JID String.
@@ -1387,9 +1308,8 @@ object Strophe {
     *  Returns:
     *    A String containing the resource.
     */
-  @JSImport("strophe.js", "Strophe.getResourceFromJid")
-  @js.native
-  def getResourceFromJid(jid: String): String = js.native
+  @scala.inline
+  def getResourceFromJid(jid: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getResourceFromJid")(jid.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Function: getText
     *  Get the concatenation of all text children of an element.
@@ -1400,13 +1320,11 @@ object Strophe {
     *  Returns:
     *    A String with the concatenated text of all text element children.
     */
-  @JSImport("strophe.js", "Strophe.getText")
-  @js.native
-  def getText(elem: Element): String = js.native
+  @scala.inline
+  def getText(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("strophe.js", "Strophe.info")
-  @js.native
-  def info(msg: String): Unit = js.native
+  @scala.inline
+  def info(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Function: isTagEqual
     *  Compare an element's tag name with a string.
@@ -1421,9 +1339,8 @@ object Strophe {
     *    true if the element's tag name matches _el_, and false
     *    otherwise.
     */
-  @JSImport("strophe.js", "Strophe.isTagEqual")
-  @js.native
-  def isTagEqual(el: Element, name: String): Boolean = js.native
+  @scala.inline
+  def isTagEqual(el: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTagEqual")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** Function: log
     *  User overrideable logging function.
@@ -1454,9 +1371,8 @@ object Strophe {
     *      be one of the values in Strophe.LogLevel.
     *    (String) msg - The log message.
     */
-  @JSImport("strophe.js", "Strophe.log")
-  @js.native
-  def log(level: LogLevel, msg: String): Unit = js.native
+  @scala.inline
+  def log(level: LogLevel, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(level.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Function: serialize
     *  Render a DOM element and all descendants to a String.
@@ -1467,12 +1383,10 @@ object Strophe {
     *  Returns:
     *    The serialized element tree as a String.
     */
-  @JSImport("strophe.js", "Strophe.serialize")
-  @js.native
-  def serialize(elem: Element): String = js.native
-  @JSImport("strophe.js", "Strophe.serialize")
-  @js.native
-  def serialize(elem: Builder): String = js.native
+  @scala.inline
+  def serialize(elem: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serialize(elem: Builder): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(elem.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Function: unescapeNode
     *  Unescape a node part (also called local part) of a JID.
@@ -1483,13 +1397,11 @@ object Strophe {
     *  Returns:
     *    An unescaped node (or local part).
     */
-  @JSImport("strophe.js", "Strophe.unescapeNode")
-  @js.native
-  def unescapeNode(node: String): String = js.native
+  @scala.inline
+  def unescapeNode(node: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeNode")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("strophe.js", "Strophe.warn")
-  @js.native
-  def warn(msg: String): Unit = js.native
+  @scala.inline
+  def warn(msg: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Function: xmlElement
     *  Create an XML DOM element.
@@ -1509,27 +1421,20 @@ object Strophe {
     *  Returns:
     *    A new XML DOM element.
     */
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, attrs: js.UndefOr[scala.Nothing], text: String): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, attrs: js.Any): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, attrs: js.Any, text: String): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, text: js.UndefOr[scala.Nothing], attrs: js.Any): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, text: String): Element = js.native
-  @JSImport("strophe.js", "Strophe.xmlElement")
-  @js.native
-  def xmlElement(name: String, text: String, attrs: js.Any): Element = js.native
+  @scala.inline
+  def xmlElement(name: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, attrs: js.Any, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, attrs: Unit, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, text: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, text: String, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
+  @scala.inline
+  def xmlElement(name: String, text: Unit, attrs: js.Any): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElement")(name.asInstanceOf[js.Any], text.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   /** Function: xmlGenerator
     *  Get the DOM document to generate elements.
@@ -1537,9 +1442,8 @@ object Strophe {
     *  Returns:
     *    The currently used DOM document.
     */
-  @JSImport("strophe.js", "Strophe.xmlGenerator")
-  @js.native
-  def xmlGenerator(): Document = js.native
+  @scala.inline
+  def xmlGenerator(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlGenerator")().asInstanceOf[Document]
   
   /** Function: xmlHtmlNode
     *  Creates an XML DOM html node.
@@ -1550,9 +1454,8 @@ object Strophe {
     *  Returns:
     *    A new XML DOM text node.
     */
-  @JSImport("strophe.js", "Strophe.xmlHtmlNode")
-  @js.native
-  def xmlHtmlNode(html: String): Document = js.native
+  @scala.inline
+  def xmlHtmlNode(html: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlHtmlNode")(html.asInstanceOf[js.Any]).asInstanceOf[Document]
   
   /** Function: xmlTextNode
     *  Creates an XML DOM text node.
@@ -1565,9 +1468,8 @@ object Strophe {
     *  Returns:
     *    A new XML DOM text node.
     */
-  @JSImport("strophe.js", "Strophe.xmlTextNode")
-  @js.native
-  def xmlTextNode(text: String): Text = js.native
+  @scala.inline
+  def xmlTextNode(text: String): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlTextNode")(text.asInstanceOf[js.Any]).asInstanceOf[Text]
   
   /*  Function: xmlescape
     *  Excapes invalid xml characters.
@@ -1578,9 +1480,8 @@ object Strophe {
     *  Returns:
     *      Escaped text.
     */
-  @JSImport("strophe.js", "Strophe.xmlescape")
-  @js.native
-  def xmlescape(text: String): String = js.native
+  @scala.inline
+  def xmlescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /*  Function: xmlunescape
     *  Unexcapes invalid xml characters.
@@ -1591,18 +1492,16 @@ object Strophe {
     *  Returns:
     *      Unescaped text.
     */
-  @JSImport("strophe.js", "Strophe.xmlunescape")
-  @js.native
-  def xmlunescape(text: String): String = js.native
+  @scala.inline
+  def xmlunescape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlunescape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var keepalive: js.UndefOr[Boolean] = js.native
+    var keepalive: js.UndefOr[Boolean] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectionOptions {
     
@@ -1649,7 +1548,6 @@ object Strophe {
     *  DIGEST-MD5 - 30
     *  Plain - 20
     */
-  @js.native
   trait SASLMechanism extends StObject {
     
     /** Variable: priority
@@ -1669,7 +1567,7 @@ object Strophe {
       *  See <SASL mechanisms> for a list of available mechanisms.
       *
       */
-    var priority: Double = js.native
+    var priority: Double
     
     /**
       *  Function: test
@@ -1689,7 +1587,7 @@ object Strophe {
       *  Returns:
       *    (Boolean) If mechanism was able to run.
       */
-    def test(connection: Connection): Boolean = js.native
+    def test(connection: Connection): Boolean
   }
   object SASLMechanism {
     

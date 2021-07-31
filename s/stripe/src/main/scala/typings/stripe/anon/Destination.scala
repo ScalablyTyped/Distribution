@@ -2,23 +2,21 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * The amount transferred to the destination account, if specified. By
     * default, the entire charge amount is transferred to the destination account.
     */
-  var amount: js.UndefOr[Double | Null] = js.native
+  var amount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * ID of an existing, connected Stripe account to transfer funds to if
     * transfer_data was specified in the charge request.
     */
-  var destination: String = js.native
+  var destination: String
 }
 object Destination {
   

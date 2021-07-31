@@ -14,7 +14,6 @@ import typings.nodemailer.sharedMod.Logger
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xoauth2Mod {
@@ -23,30 +22,29 @@ object xoauth2Mod {
   @js.native
   class ^ () extends XOAuth2 {
     def this(options: Options) = this()
-    def this(options: js.UndefOr[scala.Nothing], logger: Logger) = this()
+    def this(options: Unit, logger: Logger) = this()
     def this(options: Options, logger: Logger) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** An existing valid accessToken */
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
     /** Endpoint for token generation, defaults to 'https://accounts.google.com/o/oauth2/token' */
-    var accessUrl: js.UndefOr[String] = js.native
+    var accessUrl: js.UndefOr[String] = js.undefined
     
     /** Client ID value */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /** Client secret value */
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
     /** Optional Access Token expire time in ms */
-    var expires: js.UndefOr[ms] = js.native
+    var expires: js.UndefOr[ms] = js.undefined
     
     /** Private key for JSW */
-    var privateKey: js.UndefOr[String | Key] = js.native
+    var privateKey: js.UndefOr[String | Key] = js.undefined
     
     /** Function to run when a new access token is required */
     var provisionCallback: js.UndefOr[
@@ -56,18 +54,18 @@ object xoauth2Mod {
           /* callback */ js.Function3[/* err */ Error | Null, /* accessToken */ String, /* expires */ Double, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Refresh token for an user */
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
-    var serviceClient: js.UndefOr[String] = js.native
+    var serviceClient: js.UndefOr[String] = js.undefined
     
     /** Optional TTL for Access Token in seconds */
-    var timeout: js.UndefOr[s] = js.native
+    var timeout: js.UndefOr[s] = js.undefined
     
     /** User e-mail address */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -150,10 +148,9 @@ object xoauth2Mod {
     }
   }
   
-  @js.native
   trait RequestParams extends StObject {
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   }
   object RequestParams {
     
@@ -174,14 +171,13 @@ object xoauth2Mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var user: String = js.native
+    var user: String
   }
   object Token {
     

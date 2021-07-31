@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <image> element. */
 @js.native
 trait SVGImageElement
-  extends SVGGraphicsElement
+  extends StObject
+     with SVGGraphicsElement
      with SVGURIReference
      with HTMLOrSVGImageElement {
   

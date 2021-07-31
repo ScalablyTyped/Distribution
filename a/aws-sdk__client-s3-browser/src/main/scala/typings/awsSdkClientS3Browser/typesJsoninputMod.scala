@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.DOCUMENT
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.LINES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesJsoninputMod {
   
-  @js.native
   trait JSONInput extends StObject {
     
     /**
       * <p>The type of JSON. Valid values: Document, Lines.</p>
       */
-    var Type: js.UndefOr[DOCUMENT | LINES | String] = js.native
+    var Type: js.UndefOr[DOCUMENT | LINES | String] = js.undefined
   }
   object JSONInput {
     

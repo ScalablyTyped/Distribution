@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Aggregation result data for the requested metric. */
-@js.native
 trait MetricAggregationResult extends StObject {
   
   /** The number of queries with associated events divided by the total number of queries for the interval. Only returned with **event_rate** metrics. */
-  var event_rate: js.UndefOr[Double] = js.native
+  var event_rate: js.UndefOr[Double] = js.undefined
   
   /** Unix epoch time equivalent of the **key_as_string**, that represents the start of this interval. */
-  var key: js.UndefOr[Double] = js.native
+  var key: js.UndefOr[Double] = js.undefined
   
   /** Date in string form representing the start of this interval. */
-  var key_as_string: js.UndefOr[String] = js.native
+  var key_as_string: js.UndefOr[String] = js.undefined
   
   /** Number of matching results. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
 }
 object MetricAggregationResult {
   

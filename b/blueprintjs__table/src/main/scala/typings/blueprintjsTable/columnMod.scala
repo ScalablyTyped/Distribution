@@ -9,7 +9,6 @@ import typings.react.mod.PureComponent
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnMod {
@@ -45,22 +44,22 @@ object columnMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IColumnProps
-    extends IColumnNameProps
+    extends StObject
+       with IColumnNameProps
        with IProps {
     
     /**
       * An instance of `ICellRenderer`, a function that takes a row and column
       * index, and returns a `Cell` React element.
       */
-    var cellRenderer: js.UndefOr[ICellRenderer] = js.native
+    var cellRenderer: js.UndefOr[ICellRenderer] = js.undefined
     
     /**
       * An instance of `IColumnHeaderRenderer`, a function that takes a column
       * index and returns a `ColumnHeaderCell` React element.
       */
-    var columnHeaderCellRenderer: js.UndefOr[IColumnHeaderRenderer] = js.native
+    var columnHeaderCellRenderer: js.UndefOr[IColumnHeaderRenderer] = js.undefined
     
     /**
       * A unique ID, similar to React's `key`. This is used, for example, to
@@ -69,7 +68,7 @@ object columnMod {
       * column's index only. Columns widths can also be persisted outside the
       * `Table` component, then passed in with the `columnWidths` prop.
       */
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Set this prop to specify whether to render the loading state of the
@@ -79,7 +78,7 @@ object columnMod {
       * `loadingOptions=[ ColumnLoadingOption.HEADER ]` on a `Column`, the cells
       * in that column will _not_ show their loading state.
       */
-    var loadingOptions: js.UndefOr[js.Array[ColumnLoadingOption]] = js.native
+    var loadingOptions: js.UndefOr[js.Array[ColumnLoadingOption]] = js.undefined
   }
   object IColumnProps {
     

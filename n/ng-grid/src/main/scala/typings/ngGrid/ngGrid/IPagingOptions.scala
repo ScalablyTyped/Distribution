@@ -2,23 +2,21 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPagingOptions extends StObject {
   
   /** currentPage: the uhm... current page. */
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
   /** pageSize: currently selected page size.  */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**  pageSizes: list of available page sizes.  */
-  var pageSizes: js.UndefOr[js.Array[Double]] = js.native
+  var pageSizes: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** totalServerItems: Total items are on the server.  */
-  var totalServerItems: js.UndefOr[Double] = js.native
+  var totalServerItems: js.UndefOr[Double] = js.undefined
 }
 object IPagingOptions {
   

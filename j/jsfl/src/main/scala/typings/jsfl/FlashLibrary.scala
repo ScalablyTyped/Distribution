@@ -2,7 +2,6 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,9 +24,9 @@ trait FlashLibrary extends StObject {
   def editItem(namePath: String): Boolean = js.native
   
   def expandFolder(bExpand: Boolean): Boolean = js.native
-  def expandFolder(bExpand: Boolean, bRecurseNestedParents: js.UndefOr[scala.Nothing], namePath: String): Boolean = js.native
   def expandFolder(bExpand: Boolean, bRecurseNestedParents: Boolean): Boolean = js.native
   def expandFolder(bExpand: Boolean, bRecurseNestedParents: Boolean, namePath: String): Boolean = js.native
+  def expandFolder(bExpand: Boolean, bRecurseNestedParents: Unit, namePath: String): Boolean = js.native
   
   def findItemIndex(namePath: String): Double = js.native
   
@@ -39,8 +38,8 @@ trait FlashLibrary extends StObject {
   /** An array of values for all currently selected items in the library. */
   def getSelectedItems(): js.Array[FlashItem] = js.native
   
-  def importEmbeddedSWF(linkageName: String, swfData: js.Array[_]): Unit = js.native
-  def importEmbeddedSWF(linkageName: String, swfData: js.Array[_], libName: String): Unit = js.native
+  def importEmbeddedSWF(linkageName: String, swfData: js.Array[js.Any]): Unit = js.native
+  def importEmbeddedSWF(linkageName: String, swfData: js.Array[js.Any], libName: String): Unit = js.native
   
   def itemExists(namePath: String): Boolean = js.native
   
@@ -48,9 +47,9 @@ trait FlashLibrary extends StObject {
   var items: js.Array[FlashItem] = js.native
   
   def moveToFolder(folderPath: String): Boolean = js.native
-  def moveToFolder(folderPath: String, itemToMove: js.UndefOr[scala.Nothing], bReplace: Boolean): Boolean = js.native
   def moveToFolder(folderPath: String, itemToMove: String): Boolean = js.native
   def moveToFolder(folderPath: String, itemToMove: String, bReplace: Boolean): Boolean = js.native
+  def moveToFolder(folderPath: String, itemToMove: Unit, bReplace: Boolean): Boolean = js.native
   
   /** Method; creates a new folder with the specified name, or a default name ("untitled folder #" ) if no folderName parameter is provided, in the currently selected folder. */
   def newFolder(): Boolean = js.native
@@ -65,9 +64,9 @@ trait FlashLibrary extends StObject {
   
   /** Method; selects a specified library item. */
   def selectItem(namePath: String): Boolean = js.native
-  def selectItem(namePath: String, bReplaceCurrentSelection: js.UndefOr[scala.Nothing], bSelect: Boolean): Boolean = js.native
   def selectItem(namePath: String, bReplaceCurrentSelection: Boolean): Boolean = js.native
   def selectItem(namePath: String, bReplaceCurrentSelection: Boolean, bSelect: Boolean): Boolean = js.native
+  def selectItem(namePath: String, bReplaceCurrentSelection: Unit, bSelect: Boolean): Boolean = js.native
   
   /** Method; deselects all the library items. */
   def selectNone(): Unit = js.native

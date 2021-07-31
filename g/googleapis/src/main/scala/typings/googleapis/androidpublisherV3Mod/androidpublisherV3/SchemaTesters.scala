@@ -2,15 +2,13 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTesters extends StObject {
   
-  var googleGroups: js.UndefOr[js.Array[String]] = js.native
+  var googleGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var googlePlusCommunities: js.UndefOr[js.Array[String]] = js.native
+  var googlePlusCommunities: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTesters {
   

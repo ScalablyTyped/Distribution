@@ -12,7 +12,7 @@ Custom errors and exceptions in Node.js
 | Keywords           | error, errors, error factory, custom error |
 | # releases         | 0 |
 | # dependents       | 28 |
-| # downloads        | 142495 |
+| # downloads        | 120271 |
 | # stars            | 5 |
 
 ## Links

@@ -8,7 +8,6 @@ import typings.leafletIconGlyph.mod.Icon_.GlyphIconOptions
 import typings.leafletIconGlyph.mod.Icon_.GlyphOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -27,22 +26,23 @@ object mod {
       var options_Glyph: GlyphIconOptions = js.native
     }
     
-    @js.native
-    trait GlyphIconOptions extends IconOptions {
+    trait GlyphIconOptions
+      extends StObject
+         with IconOptions {
       
-      var bgPos: js.UndefOr[PointExpression] = js.native
+      var bgPos: js.UndefOr[PointExpression] = js.undefined
       
-      var bgSize: js.UndefOr[PointExpression] = js.native
+      var bgSize: js.UndefOr[PointExpression] = js.undefined
       
-      var glyph: js.UndefOr[String] = js.native
+      var glyph: js.UndefOr[String] = js.undefined
       
-      var glyphAnchor: js.UndefOr[PointExpression] = js.native
+      var glyphAnchor: js.UndefOr[PointExpression] = js.undefined
       
-      var glyphColor: js.UndefOr[String] = js.native
+      var glyphColor: js.UndefOr[String] = js.undefined
       
-      var glyphSize: js.UndefOr[String] = js.native
+      var glyphSize: js.UndefOr[String] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
     }
     object GlyphIconOptions {
       
@@ -99,22 +99,23 @@ object mod {
       }
     }
     
-    @js.native
-    trait GlyphOptions extends BaseIconOptions {
+    trait GlyphOptions
+      extends StObject
+         with BaseIconOptions {
       
-      var bgPos: js.UndefOr[PointExpression] = js.native
+      var bgPos: js.UndefOr[PointExpression] = js.undefined
       
-      var bgSize: js.UndefOr[PointExpression] = js.native
+      var bgSize: js.UndefOr[PointExpression] = js.undefined
       
-      var glyph: js.UndefOr[String] = js.native
+      var glyph: js.UndefOr[String] = js.undefined
       
-      var glyphAnchor: js.UndefOr[PointExpression] = js.native
+      var glyphAnchor: js.UndefOr[PointExpression] = js.undefined
       
-      var glyphColor: js.UndefOr[String] = js.native
+      var glyphColor: js.UndefOr[String] = js.undefined
       
-      var glyphSize: js.UndefOr[String] = js.native
+      var glyphSize: js.UndefOr[String] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
     }
     object GlyphOptions {
       
@@ -174,14 +175,15 @@ object mod {
   
   object icon {
     
-    @JSImport("leaflet", "icon.glyph")
+    @JSImport("leaflet", "icon")
     @js.native
-    def glyph(): Glyph = js.native
-    @JSImport("leaflet", "icon.glyph")
-    @js.native
-    def glyph(options: GlyphIconOptions): Glyph = js.native
-    @JSImport("leaflet", "icon.glyph")
-    @js.native
-    def glyph(options: GlyphOptions): Glyph = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def glyph(): Glyph = ^.asInstanceOf[js.Dynamic].applyDynamic("glyph")().asInstanceOf[Glyph]
+    @scala.inline
+    def glyph(options: GlyphIconOptions): Glyph = ^.asInstanceOf[js.Dynamic].applyDynamic("glyph")(options.asInstanceOf[js.Any]).asInstanceOf[Glyph]
+    @scala.inline
+    def glyph(options: GlyphOptions): Glyph = ^.asInstanceOf[js.Dynamic].applyDynamic("glyph")(options.asInstanceOf[js.Any]).asInstanceOf[Glyph]
   }
 }

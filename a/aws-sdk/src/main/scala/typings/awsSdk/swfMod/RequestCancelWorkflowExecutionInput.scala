@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestCancelWorkflowExecutionInput extends StObject {
   
   /**
     * The name of the domain containing the workflow execution to cancel.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * The runId of the workflow execution to cancel.
     */
-  var runId: js.UndefOr[WorkflowRunIdOptional] = js.native
+  var runId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
   
   /**
     * The workflowId of the workflow execution to cancel.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object RequestCancelWorkflowExecutionInput {
   

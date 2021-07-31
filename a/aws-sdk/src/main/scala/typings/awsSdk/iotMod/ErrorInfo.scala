@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorInfo extends StObject {
   
   /**
     * The error code.
     */
-  var code: js.UndefOr[Code] = js.native
+  var code: js.UndefOr[Code] = js.undefined
   
   /**
     * The error message.
     */
-  var message: js.UndefOr[OTAUpdateErrorMessage] = js.native
+  var message: js.UndefOr[OTAUpdateErrorMessage] = js.undefined
 }
 object ErrorInfo {
   

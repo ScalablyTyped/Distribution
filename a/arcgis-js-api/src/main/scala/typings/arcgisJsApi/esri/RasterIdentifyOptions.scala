@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RasterIdentifyOptions extends Object {
+trait RasterIdentifyOptions
+  extends StObject
+     with Object {
   
   /**
     * A dimensional definition that will be used for the `identify` operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyOptions)
     */
-  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinition]] = js.native
+  var multidimensionalDefinition: js.UndefOr[js.Array[DimensionalDefinition]] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyOptions)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object RasterIdentifyOptions {
   

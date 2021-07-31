@@ -3,10 +3,13 @@ package typings.argon2Browser
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("argon2-browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ArgonType extends StObject
@@ -15,51 +18,53 @@ object mod {
   object ArgonType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ArgonType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ArgonType & Double] = js.native
     
     @js.native
-    sealed trait Argon2d extends ArgonType
-    /* 0 */ val Argon2d: typings.argon2Browser.mod.ArgonType.Argon2d with Double = js.native
+    sealed trait Argon2d
+      extends StObject
+         with ArgonType
+    /* 0 */ val Argon2d: typings.argon2Browser.mod.ArgonType.Argon2d & Double = js.native
     
     @js.native
-    sealed trait Argon2i extends ArgonType
-    /* 1 */ val Argon2i: typings.argon2Browser.mod.ArgonType.Argon2i with Double = js.native
+    sealed trait Argon2i
+      extends StObject
+         with ArgonType
+    /* 1 */ val Argon2i: typings.argon2Browser.mod.ArgonType.Argon2i & Double = js.native
     
     @js.native
-    sealed trait Argon2id extends ArgonType
-    /* 2 */ val Argon2id: typings.argon2Browser.mod.ArgonType.Argon2id with Double = js.native
+    sealed trait Argon2id
+      extends StObject
+         with ArgonType
+    /* 2 */ val Argon2id: typings.argon2Browser.mod.ArgonType.Argon2id & Double = js.native
   }
   
-  @JSImport("argon2-browser", "hash")
-  @js.native
-  def hash(options: Argon2BrowserHashOptions): js.Promise[Argon2BrowserHashResult] = js.native
+  @scala.inline
+  def hash(options: Argon2BrowserHashOptions): js.Promise[Argon2BrowserHashResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Argon2BrowserHashResult]]
   
-  @JSImport("argon2-browser", "unloadRuntime")
-  @js.native
-  def unloadRuntime(): Unit = js.native
+  @scala.inline
+  def unloadRuntime(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unloadRuntime")().asInstanceOf[Unit]
   
-  @JSImport("argon2-browser", "verify")
-  @js.native
-  def verify(options: Argon2VerifyOptions): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def verify(options: Argon2VerifyOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait Argon2BrowserHashOptions extends StObject {
     
-    var distPath: js.UndefOr[String] = js.native
+    var distPath: js.UndefOr[String] = js.undefined
     
-    var hashLen: js.UndefOr[Double] = js.native
+    var hashLen: js.UndefOr[Double] = js.undefined
     
-    var mem: js.UndefOr[Double] = js.native
+    var mem: js.UndefOr[Double] = js.undefined
     
-    var parallelism: js.UndefOr[Double] = js.native
+    var parallelism: js.UndefOr[Double] = js.undefined
     
-    var pass: String | Uint8Array = js.native
+    var pass: String | Uint8Array
     
-    var salt: String | Uint8Array = js.native
+    var salt: String | Uint8Array
     
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[ArgonType] = js.native
+    var `type`: js.UndefOr[ArgonType] = js.undefined
   }
   object Argon2BrowserHashOptions {
     
@@ -116,14 +121,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Argon2BrowserHashResult extends StObject {
     
-    var encoded: String = js.native
+    var encoded: String
     
-    var hash: Uint8Array = js.native
+    var hash: Uint8Array
     
-    var hashHex: String = js.native
+    var hashHex: String
   }
   object Argon2BrowserHashResult {
     
@@ -147,12 +151,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Argon2Error extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
   }
   object Argon2Error {
     
@@ -173,14 +176,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Argon2VerifyOptions extends StObject {
     
-    var encoded: String | Uint8Array = js.native
+    var encoded: String | Uint8Array
     
-    var pass: String = js.native
+    var pass: String
     
-    var `type`: js.UndefOr[ArgonType] = js.native
+    var `type`: js.UndefOr[ArgonType] = js.undefined
   }
   object Argon2VerifyOptions {
     

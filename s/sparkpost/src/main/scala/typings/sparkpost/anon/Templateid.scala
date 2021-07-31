@@ -2,15 +2,13 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Templateid extends StObject {
   
-  var template_id: String = js.native
+  var template_id: String
   
-  var use_draft_template: js.UndefOr[Boolean] = js.native
+  var use_draft_template: js.UndefOr[Boolean] = js.undefined
 }
 object Templateid {
   

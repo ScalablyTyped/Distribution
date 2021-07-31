@@ -12,7 +12,7 @@ An simple, relational SDK for querying TypeScript and JavaScript data structures
 | Keywords           | linq, query, rxjs |
 | # releases         | 17 |
 | # dependents       | 3 |
-| # downloads        | 989419 |
+| # downloads        | 1764756 |
 | # stars            | 0 |
 
 ## Links

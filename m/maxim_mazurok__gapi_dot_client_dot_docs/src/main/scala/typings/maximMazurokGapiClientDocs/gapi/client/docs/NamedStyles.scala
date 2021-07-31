@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedStyles extends StObject {
   
   /** The named styles. There is an entry for each of the possible named style types. */
-  var styles: js.UndefOr[js.Array[NamedStyle]] = js.native
+  var styles: js.UndefOr[js.Array[NamedStyle]] = js.undefined
 }
 object NamedStyles {
   

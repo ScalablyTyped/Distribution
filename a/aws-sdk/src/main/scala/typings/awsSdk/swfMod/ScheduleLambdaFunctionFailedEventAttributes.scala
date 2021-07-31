@@ -2,31 +2,29 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleLambdaFunctionFailedEventAttributes extends StObject {
   
   /**
     * The cause of the failure. To help diagnose issues, use this information to trace back the chain of events leading up to this event.  If cause is set to OPERATION_NOT_PERMITTED, the decision failed because it lacked sufficient permissions. For details and example IAM policies, see Using IAM to Manage Access to Amazon SWF Workflows in the Amazon SWF Developer Guide. 
     */
-  var cause: ScheduleLambdaFunctionFailedCause = js.native
+  var cause: ScheduleLambdaFunctionFailedCause
   
   /**
     * The ID of the LambdaFunctionCompleted event corresponding to the decision that resulted in scheduling this Lambda task. To help diagnose issues, use this information to trace back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The ID provided in the ScheduleLambdaFunction decision that failed. 
     */
-  var id: FunctionId = js.native
+  var id: FunctionId
   
   /**
     * The name of the Lambda function.
     */
-  var name: FunctionName = js.native
+  var name: FunctionName
 }
 object ScheduleLambdaFunctionFailedEventAttributes {
   

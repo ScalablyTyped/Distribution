@@ -3,60 +3,58 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the metadata of the long-running operation.
   */
-@js.native
 trait SchemaGoogleCloudMlV1OperationMetadata extends StObject {
   
   /**
     * The time the operation was submitted.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time operation processing completed.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether a request to cancel this operation has been made.
     */
-  var isCancellationRequested: js.UndefOr[Boolean] = js.native
+  var isCancellationRequested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user labels, inherited from the model or the model version being
     * operated on.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Contains the name of the model associated with the operation.
     */
-  var modelName: js.UndefOr[String] = js.native
+  var modelName: js.UndefOr[String] = js.undefined
   
   /**
     * The operation type.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the project number associated with the operation.
     */
-  var projectNumber: js.UndefOr[String] = js.native
+  var projectNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The time operation processing started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the version associated with the operation.
     */
-  var version: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.native
+  var version: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.undefined
 }
 object SchemaGoogleCloudMlV1OperationMetadata {
   

@@ -2,10 +2,10 @@ package typings.storybookAddonKnobs
 
 import typings.react.mod.Component
 import typings.storybookAddonKnobs.anon.KnobValidator
+import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object numberMod {
@@ -26,9 +26,8 @@ object numberMod {
     @scala.inline
     def defaultProps_=(x: NumberTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Number", "default.deserialize")
-    @js.native
-    def deserialize(value: String): Double | Null = js.native
+    @scala.inline
+    def deserialize(value: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Number", "default.propTypes")
     @js.native
@@ -36,12 +35,10 @@ object numberMod {
     @scala.inline
     def propTypes_=(x: KnobValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Number", "default.serialize")
-    @js.native
-    def serialize(): String = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Number", "default.serialize")
-    @js.native
-    def serialize(value: NumberTypeKnobValue): String = js.native
+    @scala.inline
+    def serialize(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")().asInstanceOf[String]
+    @scala.inline
+    def serialize(value: NumberTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -54,29 +51,19 @@ object numberMod {
     def shouldComponentUpdate_MNumberType(nextProps: NumberTypeProps): Boolean = js.native
   }
   
-  /* Inlined @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/types.KnobControlConfig<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Number.NumberTypeKnobValue> & @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Number.NumberTypeKnobOptions & {  value :@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Number.NumberTypeKnobValue | undefined} */
-  @js.native
-  trait NumberTypeKnob extends StObject {
+  trait NumberTypeKnob
+    extends StObject
+       with KnobControlConfig[NumberTypeKnobValue]
+       with NumberTypeKnobOptions {
     
-    var defaultValue: js.UndefOr[NumberTypeKnobValue] = js.native
-    
-    var max: js.UndefOr[Double] = js.native
-    
-    var min: js.UndefOr[Double] = js.native
-    
-    var name: String = js.native
-    
-    var range: js.UndefOr[Boolean] = js.native
-    
-    var step: js.UndefOr[Double] = js.native
-    
-    var value: NumberTypeKnobValue with js.UndefOr[NumberTypeKnobValue] = js.native
+    @JSName("value")
+    var value_NumberTypeKnob: js.UndefOr[NumberTypeKnobValue] = js.undefined
   }
   object NumberTypeKnob {
     
     @scala.inline
-    def apply(name: String, value: NumberTypeKnobValue with js.UndefOr[NumberTypeKnobValue]): NumberTypeKnob = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(name: String): NumberTypeKnob = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberTypeKnob]
     }
     
@@ -84,53 +71,22 @@ object numberMod {
     implicit class NumberTypeKnobMutableBuilder[Self <: NumberTypeKnob] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDefaultValue(value: NumberTypeKnobValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      def setValue(value: NumberTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
-      
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
-      
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
-      
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-      
-      @scala.inline
-      def setValue(value: NumberTypeKnobValue with js.UndefOr[NumberTypeKnobValue]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
-  @js.native
   trait NumberTypeKnobOptions extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object NumberTypeKnobOptions {
     
@@ -171,11 +127,12 @@ object numberMod {
   
   type NumberTypeKnobValue = Double
   
-  @js.native
-  trait NumberTypeProps extends KnobControlProps[NumberTypeKnobValue | Null] {
+  trait NumberTypeProps
+    extends StObject
+       with KnobControlProps[NumberTypeKnobValue | Null] {
     
     @JSName("knob")
-    var knob_NumberTypeProps: NumberTypeKnob = js.native
+    var knob_NumberTypeProps: NumberTypeKnob
   }
   object NumberTypeProps {
     

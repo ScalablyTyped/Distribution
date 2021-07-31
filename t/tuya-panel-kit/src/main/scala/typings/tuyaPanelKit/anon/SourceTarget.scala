@@ -4,28 +4,28 @@ import typings.tuyaPanelKit.stackRouterMod.StackActionType
 import typings.tuyaPanelKit.tuyaPanelKitStrings.PUSH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceTarget extends StackActionType {
+trait SourceTarget
+  extends StObject
+     with StackActionType {
   
-  var payload: Params = js.native
-  
-  // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var payload: Params
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: PUSH = js.native
+  // tslint:disable-next-line no-redundant-undefined
+  var target: js.UndefOr[String] = js.undefined
+  
+  var `type`: PUSH
 }
 object SourceTarget {
   
   @scala.inline
-  def apply(payload: Params, `type`: PUSH): SourceTarget = {
+  def apply(payload: Params): SourceTarget = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PUSH")
     __obj.asInstanceOf[SourceTarget]
   }
   

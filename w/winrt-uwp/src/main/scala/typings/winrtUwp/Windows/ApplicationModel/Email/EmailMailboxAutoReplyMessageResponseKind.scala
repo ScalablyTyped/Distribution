@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object EmailMailboxAutoReplyMessageResponseKind extends StObject {
   
   /** The autoreply message is encoded as HTML. */
   @js.native
-  sealed trait html extends EmailMailboxAutoReplyMessageResponseKind
+  sealed trait html
+    extends StObject
+       with EmailMailboxAutoReplyMessageResponseKind
   
   /** The autoreply message is encoded as plain text. */
   @js.native
-  sealed trait plainText extends EmailMailboxAutoReplyMessageResponseKind
+  sealed trait plainText
+    extends StObject
+       with EmailMailboxAutoReplyMessageResponseKind
 }

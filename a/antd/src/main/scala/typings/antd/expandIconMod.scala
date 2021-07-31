@@ -7,30 +7,34 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandIconMod {
   
-  @JSImport("antd/lib/table/ExpandIcon", JSImport.Default)
+  @JSImport("antd/lib/table/ExpandIcon", JSImport.Namespace)
   @js.native
-  def default(locale: TableLocale): js.Function1[
-    /* hasPrefixClsOnExpandRecordExpandedExpandable */ DefaultExpandIconProps[_], 
-    Element
-  ] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(locale: TableLocale): js.Function1[
+    /* hasPrefixClsOnExpandRecordExpandedExpandable */ DefaultExpandIconProps[js.Any], 
+    Element
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* hasPrefixClsOnExpandRecordExpandedExpandable */ DefaultExpandIconProps[js.Any], 
+    Element
+  ]]
+  
   trait DefaultExpandIconProps[RecordType] extends StObject {
     
-    var expandable: Boolean = js.native
+    var expandable: Boolean
     
-    var expanded: Boolean = js.native
+    var expanded: Boolean
     
-    def onExpand(record: RecordType, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+    def onExpand(record: RecordType, e: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var record: RecordType = js.native
+    var record: RecordType
   }
   object DefaultExpandIconProps {
     
@@ -47,7 +51,7 @@ object expandIconMod {
     }
     
     @scala.inline
-    implicit class DefaultExpandIconPropsMutableBuilder[Self <: DefaultExpandIconProps[_], RecordType] (val x: Self with DefaultExpandIconProps[RecordType]) extends AnyVal {
+    implicit class DefaultExpandIconPropsMutableBuilder[Self <: DefaultExpandIconProps[?], RecordType] (val x: Self & DefaultExpandIconProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])

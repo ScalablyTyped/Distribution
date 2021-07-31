@@ -11,30 +11,29 @@ import typings.stripe.stripeStrings.verification_failed
 import typings.stripe.stripeStrings.verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bankAccounts {
   
-  @js.native
   trait IBankAccount
-    extends IBankAccountHash
+    extends StObject
+       with IBankAccountHash
        with IExternalAccount
        with IStripeSource {
     
-    var account: js.UndefOr[String] = js.native
+    var account: js.UndefOr[String] = js.undefined
     
     /**
       * This indicates whether or not this bank account is the default external account for its currency.
       */
-    var default_for_currency: js.UndefOr[Boolean] = js.native
+    var default_for_currency: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A set of key/value pairs that you can attach to a bank account object. It
       * can be useful for storing additional information about the bank account in
       * a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
   }
   object IBankAccount {
     
@@ -47,12 +46,11 @@ object bankAccounts {
       id: String,
       last4: String,
       metadata: IMetadata,
-      `object`: bank_account,
       routing_number: String,
       status: `new` | validated | verified | verification_failed | errored
     ): typings.stripe.mod.bankAccounts.IBankAccount = {
-      val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], account_holder_name = null, account_holder_type = null)
+      __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
     }
     
@@ -76,55 +74,56 @@ object bankAccounts {
     }
   }
   
-  @js.native
-  trait IBankAccountHash extends IResourceObject {
+  trait IBankAccountHash
+    extends StObject
+       with IResourceObject {
     
     /**
       * The name of the person or business that owns the bank account.
       */
-    var account_holder_name: String | Null = js.native
+    var account_holder_name: String | Null
     
     /**
       * The type of entity that holds the account. This can be either
       * "individual"" or "company".
       */
-    var account_holder_type: individual | company | Null = js.native
+    var account_holder_type: individual | company | Null
     
     /**
       * Name of the bank associated with the routing number, e.g. WELLS FARGO.
       */
-    var bank_name: String = js.native
+    var bank_name: String
     
     /**
       * Two-letter ISO code representing the country the bank account is located in.
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Three-letter ISO currency code representing the currency paid out to the bank account.
       */
-    var currency: String = js.native
+    var currency: String
     
-    var customer: js.UndefOr[String] = js.native
+    var customer: js.UndefOr[String] = js.undefined
     
     /**
       * Uniquely identifies this particular bank account. You can use this attribute
       * to check whether two bank accounts are the same.
       */
-    var fingerprint: String = js.native
+    var fingerprint: String
     
-    var last4: String = js.native
+    var last4: String
     
     /**
       * value is "bank_account"
       */
     @JSName("object")
-    var object_IBankAccountHash: bank_account = js.native
+    var object_IBankAccountHash: bank_account
     
     /**
       * The routing transit number for the bank account.
       */
-    var routing_number: String = js.native
+    var routing_number: String
     
     /**
       * Possible values are "new", "validated", "verified", "verification_failed",
@@ -138,7 +137,7 @@ object bankAccounts {
       * transfer sent to this bank account fails, we’ll set the status to "errored""
       * and will not continue to send transfers until the bank details are updated.
       */
-    var status: `new` | validated | verified | verification_failed | errored = js.native
+    var status: `new` | validated | verified | verification_failed | errored
   }
   object IBankAccountHash {
     
@@ -150,12 +149,11 @@ object bankAccounts {
       fingerprint: String,
       id: String,
       last4: String,
-      `object`: bank_account,
       routing_number: String,
       status: `new` | validated | verified | verification_failed | errored
     ): IBankAccountHash = {
-      val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bank_name = bank_name.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], routing_number = routing_number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], account_holder_name = null, account_holder_type = null)
+      __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[IBankAccountHash]
     }
     
@@ -206,18 +204,19 @@ object bankAccounts {
     }
   }
   
-  @js.native
-  trait IBankAccountUpdateOptions extends IDataOptionsWithMetadata {
+  trait IBankAccountUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
     /**
       * The name of the person or business that owns the bank account.
       */
-    var account_holder_name: js.UndefOr[String | Null] = js.native
+    var account_holder_name: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The type of entity that holds the account. This can be either "individual" or "company".
       */
-    var account_holder_type: js.UndefOr[individual | company | Null] = js.native
+    var account_holder_type: js.UndefOr[individual | company | Null] = js.undefined
   }
   object IBankAccountUpdateOptions {
     
@@ -250,13 +249,12 @@ object bankAccounts {
     }
   }
   
-  @js.native
   trait IBankAccountVerifyOptions extends StObject {
     
     /**
       * Two positive integers, in cents, equal to the values of the microdeposits sent to the bank account.
       */
-    var amounts: js.Tuple2[Double, Double] = js.native
+    var amounts: js.Tuple2[Double, Double]
   }
   object IBankAccountVerifyOptions {
     
@@ -274,7 +272,6 @@ object bankAccounts {
     }
   }
   
-  @js.native
   trait ISourceCreationOptions extends StObject {
     
     /**
@@ -282,36 +279,36 @@ object bankAccounts {
       * account. This field is required when attaching the bank
       * account to a customer object.
       */
-    var account_holder_name: js.UndefOr[String] = js.native
+    var account_holder_name: js.UndefOr[String] = js.undefined
     
     /**
       * The type of entity that holds the account. This can be either
       * "individual" or "company". This field is required when
       * attaching the bank account to a customer object.
       */
-    var account_holder_type: js.UndefOr[individual | company] = js.native
+    var account_holder_type: js.UndefOr[individual | company] = js.undefined
     
     /**
       * The account number for the bank account in string form.
       * Must be a checking account.
       */
-    var account_number: String = js.native
+    var account_number: String
     
     /**
       * The country the bank account is in.
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * The currency the bank account is in. This must be a
       * country/currency pairing that Stripe supports.
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * The type of payment source. Should be "bank_account".
       */
-    var `object`: bank_account = js.native
+    var `object`: bank_account
     
     /**
       * The routing number, sort code, or other country-appropriate
@@ -320,14 +317,14 @@ object bankAccounts {
       * number, not the wire routing number. If you are providing an
       * IBAN for account_number, this field is not required.
       */
-    var routing_number: js.UndefOr[String] = js.native
+    var routing_number: js.UndefOr[String] = js.undefined
   }
   object ISourceCreationOptions {
     
     @scala.inline
-    def apply(account_number: String, country: String, currency: String, `object`: bank_account): ISourceCreationOptions = {
+    def apply(account_number: String, country: String, currency: String): ISourceCreationOptions = {
       val __obj = js.Dynamic.literal(account_number = account_number.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("bank_account")
       __obj.asInstanceOf[ISourceCreationOptions]
     }
     

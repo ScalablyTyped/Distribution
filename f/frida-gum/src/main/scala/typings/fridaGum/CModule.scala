@@ -3,7 +3,6 @@ package typings.fridaGum
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,15 +30,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `extern`, allocated using e.g. `Memory.alloc()`, and passed in as symbols
   * through the constructor's second argument.
   */
-@js.native
 trait CModule
-  extends /* name */ StringDictionary[js.Any] {
+  extends StObject
+     with /* name */ StringDictionary[js.Any] {
   
   /**
     * Eagerly unmaps the module from memory. Useful for short-lived modules
     * when waiting for a future garbage collection isn't desirable.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object CModule {
   

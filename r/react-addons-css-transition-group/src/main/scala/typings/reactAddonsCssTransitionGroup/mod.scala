@@ -7,14 +7,13 @@ import typings.react.mod.ComponentState
 import typings.reactAddonsCssTransitionGroup.mod.reactAugmentingMod.CSSTransitionGroupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("react-addons-css-transition-group", JSImport.Namespace)
   @js.native
-  val ^ : ReactCSSTransitionGroup = js.native
+  val ^ : js.Object & ReactCSSTransitionGroup = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-addons-css-transition-group", JSImport.Namespace)
@@ -27,31 +26,30 @@ object mod extends Shortcut {
   
   type ReactCSSTransitionGroup = ComponentClass[CSSTransitionGroupProps, ComponentState]
   
-  type _To = ReactCSSTransitionGroup
+  type _To = js.Object & ReactCSSTransitionGroup
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ReactCSSTransitionGroup = ^
+  override def _to: js.Object & ReactCSSTransitionGroup = ^
   
   /* augmented module */
   object reactAugmentingMod {
     
     /* import warning: RemoveDifficultInheritance.summarizeChanges 
-    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLTransitionGroupProps<ReactCSSTransitionGroup> * / any */ @js.native
-    trait CSSTransitionGroupProps extends StObject {
+    - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLTransitionGroupProps<ReactCSSTransitionGroup> * / any */ trait CSSTransitionGroupProps extends StObject {
       
-      var transitionAppear: js.UndefOr[Boolean] = js.native
+      var transitionAppear: js.UndefOr[Boolean] = js.undefined
       
-      var transitionAppearTimeout: js.UndefOr[Double] = js.native
+      var transitionAppearTimeout: js.UndefOr[Double] = js.undefined
       
-      var transitionEnter: js.UndefOr[Boolean] = js.native
+      var transitionEnter: js.UndefOr[Boolean] = js.undefined
       
-      var transitionEnterTimeout: js.UndefOr[Double] = js.native
+      var transitionEnterTimeout: js.UndefOr[Double] = js.undefined
       
-      var transitionLeave: js.UndefOr[Boolean] = js.native
+      var transitionLeave: js.UndefOr[Boolean] = js.undefined
       
-      var transitionLeaveTimeout: js.UndefOr[Double] = js.native
+      var transitionLeaveTimeout: js.UndefOr[Double] = js.undefined
       
-      var transitionName: String | CSSTransitionGroupTransitionName = js.native
+      var transitionName: String | CSSTransitionGroupTransitionName
     }
     object CSSTransitionGroupProps {
       
@@ -105,20 +103,19 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait CSSTransitionGroupTransitionName extends StObject {
       
-      var appear: js.UndefOr[String] = js.native
+      var appear: js.UndefOr[String] = js.undefined
       
-      var appearActive: js.UndefOr[String] = js.native
+      var appearActive: js.UndefOr[String] = js.undefined
       
-      var enter: String = js.native
+      var enter: String
       
-      var enterActive: js.UndefOr[String] = js.native
+      var enterActive: js.UndefOr[String] = js.undefined
       
-      var leave: String = js.native
+      var leave: String
       
-      var leaveActive: js.UndefOr[String] = js.native
+      var leaveActive: js.UndefOr[String] = js.undefined
     }
     object CSSTransitionGroupTransitionName {
       

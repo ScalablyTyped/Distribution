@@ -14,7 +14,6 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poolMod {
@@ -29,15 +28,22 @@ object poolMod {
     var config: PoolOptions = js.native
     
     def end(): Unit = js.native
-    def end(callback: js.Function2[/* err */ ErrnoException | Null, /* repeated */ js.Any, _]): Unit = js.native
+    def end(callback: js.Function2[/* err */ ErrnoException | Null, /* repeated */ js.Any, js.Any]): Unit = js.native
     
     def getConnection(
-      callback: js.Function2[/* err */ ErrnoException, /* connection */ typings.mysql2.poolConnectionMod.^, _]
+      callback: js.Function2[
+          /* err */ ErrnoException, 
+          /* connection */ typings.mysql2.poolConnectionMod.^, 
+          js.Any
+        ]
     ): Unit = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* connection */ typings.mysql2.poolConnectionMod.^, _]): this.type = js.native
+    def on_connection(
+      event: connection,
+      listener: js.Function1[/* connection */ typings.mysql2.poolConnectionMod.^, js.Any]
+    ): this.type = js.native
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
@@ -46,89 +52,125 @@ object poolMod {
           /* err */ QueryError | Null, 
           /* result */ T, 
           /* fields */ js.UndefOr[js.Array[FieldPacket]], 
-          _
+          js.Any
         ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
       values: js.Any,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[_]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
-      values: js.Array[_],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      values: js.Array[js.Any],
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       options: QueryOptions,
       values: StringDictionary[js.Any],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Any): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
       values: js.Any,
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
-    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[_]): typings.mysql2.queryMod.^ = js.native
+    def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
-      values: js.Array[_],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      values: js.Array[js.Any],
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[js.Any]): typings.mysql2.queryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
       sql: String,
       values: StringDictionary[js.Any],
-      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], _]
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.Array[FieldPacket], 
+          js.Any
+        ]
     ): typings.mysql2.queryMod.^ = js.native
   }
   
-  @js.native
-  trait PoolOptions extends ConnectionOptions {
+  trait PoolOptions
+    extends StObject
+       with ConnectionOptions {
     
     /**
       * The milliseconds before a timeout occurs during the connection acquisition. This is slightly different from connectTimeout,
       * because acquiring a pool connection does not always involve making a connection. (Default: 10 seconds)
       */
-    var acquireTimeout: js.UndefOr[Double] = js.native
+    var acquireTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of connections to create at once. (Default: 10)
       */
-    var connectionLimit: js.UndefOr[Double] = js.native
+    var connectionLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable keep-alive on the socket.  It's disabled by default, but the
       * user can enable it and supply an initial delay.
       */
-    var enableKeepAlive: js.UndefOr[`true`] = js.native
+    var enableKeepAlive: js.UndefOr[`true`] = js.undefined
     
     /**
       * If keep-alive is enabled users can supply an initial delay.
       */
-    var keepAliveInitialDelay: js.UndefOr[Double] = js.native
+    var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of connection requests the pool will queue before returning an error from getConnection. If set to 0, there
       * is no limit to the number of queued connection requests. (Default: 0)
       */
-    var queueLimit: js.UndefOr[Double] = js.native
+    var queueLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines the pool's action when no connections are available and the limit has been reached. If true, the pool will queue
       * the connection request and call it when one becomes available. If false, the pool will immediately call back with an error.
       * (Default: true)
       */
-    var waitForConnections: js.UndefOr[Boolean] = js.native
+    var waitForConnections: js.UndefOr[Boolean] = js.undefined
   }
   object PoolOptions {
     

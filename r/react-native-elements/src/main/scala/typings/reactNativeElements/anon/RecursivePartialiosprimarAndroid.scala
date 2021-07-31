@@ -3,16 +3,14 @@ package typings.reactNativeElements.anon
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<{  ios :{  primary :string,   secondary :string,   success :string,   error :string,   warning :string},   android :{  primary :string,   secondary :string,   success :string,   error :string,   warning :string}}> */
-@js.native
 trait RecursivePartialiosprimarAndroid extends StObject {
   
-  var android: js.UndefOr[RecursivePartial[Error]] = js.native
+  var android: js.UndefOr[RecursivePartial[Error]] = js.undefined
   
-  var ios: js.UndefOr[RecursivePartial[Error]] = js.native
+  var ios: js.UndefOr[RecursivePartial[Error]] = js.undefined
 }
 object RecursivePartialiosprimarAndroid {
   

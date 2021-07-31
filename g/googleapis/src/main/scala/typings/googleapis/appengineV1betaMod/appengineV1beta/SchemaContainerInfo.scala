@@ -2,7 +2,6 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the version that you deploy. Only applicable for instances running in the
   * App Engine flexible environment.
   */
-@js.native
 trait SchemaContainerInfo extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaContainerInfo extends StObject {
     * &quot;gcr.io/my-project/image:tag&quot; or
     * &quot;gcr.io/my-project/image@digest&quot;
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
 }
 object SchemaContainerInfo {
   

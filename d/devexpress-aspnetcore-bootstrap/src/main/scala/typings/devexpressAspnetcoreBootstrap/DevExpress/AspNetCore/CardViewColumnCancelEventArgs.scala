@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewColumnCancelEventArgs extends CancelEventArgs {
+trait CardViewColumnCancelEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val column: BootstrapCardViewColumn = js.native
+  val column: BootstrapCardViewColumn
 }
 object CardViewColumnCancelEventArgs {
   

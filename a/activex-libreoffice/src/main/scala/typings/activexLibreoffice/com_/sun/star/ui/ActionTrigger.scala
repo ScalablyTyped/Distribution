@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XBitmap
 import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Common examples for such triggers are menu entries or toolbar icons.
   */
-@js.native
 trait ActionTrigger extends StObject {
   
   /** contains the command URL for the menu entry. */
-  var CommandURL: String = js.native
+  var CommandURL: String
   
   /** contains the a URL that points to a help text. */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /** contains the menu item image. */
-  var Image: XBitmap = js.native
+  var Image: XBitmap
   
   /** contains a sub menu. */
-  var SubContainer: XIndexContainer = js.native
+  var SubContainer: XIndexContainer
   
   /** contains the text of the menu entry. */
-  var Text: String = js.native
+  var Text: String
 }
 object ActionTrigger {
   

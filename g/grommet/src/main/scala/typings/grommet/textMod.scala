@@ -26,7 +26,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
@@ -34,35 +33,34 @@ object textMod {
   @JSImport("grommet/components/Text", "Text")
   @js.native
   val Text: FC[
-    TextProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
+    TextProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLSpanElement], HTMLSpanElement], color])
   ] = js.native
   
-  @js.native
   trait TextProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var as: js.UndefOr[PolymorphicType] = js.native
+    var as: js.UndefOr[PolymorphicType] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge | xxlarge | String] = js.undefined
     
-    var tag: js.UndefOr[PolymorphicType] = js.native
+    var tag: js.UndefOr[PolymorphicType] = js.undefined
     
-    var textAlign: js.UndefOr[TextAlignType] = js.native
+    var textAlign: js.UndefOr[TextAlignType] = js.undefined
     
-    var truncate: js.UndefOr[Boolean] = js.native
+    var truncate: js.UndefOr[Boolean] = js.undefined
     
-    var weight: js.UndefOr[normal | bold | Double] = js.native
+    var weight: js.UndefOr[normal | bold | Double] = js.undefined
     
-    var wordBreak: js.UndefOr[normal | `break-all` | `keep-all` | `break-word`] = js.native
+    var wordBreak: js.UndefOr[normal | `break-all` | `keep-all` | `break-word`] = js.undefined
   }
   object TextProps {
     

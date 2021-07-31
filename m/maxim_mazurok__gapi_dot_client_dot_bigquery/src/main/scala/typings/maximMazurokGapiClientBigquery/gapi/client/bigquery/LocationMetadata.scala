@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationMetadata extends StObject {
   
   /** The legacy BigQuery location ID, e.g. “EU” for the “europe” location. This is for any API consumers that need the legacy “US” and “EU” locations. */
-  var legacyLocationId: js.UndefOr[String] = js.native
+  var legacyLocationId: js.UndefOr[String] = js.undefined
 }
 object LocationMetadata {
   

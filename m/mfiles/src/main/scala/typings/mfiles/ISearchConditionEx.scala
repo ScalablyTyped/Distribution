@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchConditionEx extends StObject {
   
-  def Clone(): ISearchConditionEx = js.native
+  def Clone(): ISearchConditionEx
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Ignored: Boolean = js.native
+  var Ignored: Boolean
   
-  var SearchCondition: ISearchCondition = js.native
+  var SearchCondition: ISearchCondition
   
-  def Set(SearchCondition: ISearchCondition, Enabled: Boolean, SpecialNULL: Boolean, Ignored: Boolean): Unit = js.native
+  def Set(SearchCondition: ISearchCondition, Enabled: Boolean, SpecialNULL: Boolean, Ignored: Boolean): Unit
   
-  var SpecialNULL: Boolean = js.native
+  var SpecialNULL: Boolean
 }
 object ISearchConditionEx {
   

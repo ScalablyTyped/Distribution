@@ -2,31 +2,29 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Poly Bezier
   * @param {[type]} curves [description]
   */
-@js.native
 trait PolyBezier extends StObject {
   
-  var _3d: js.Any = js.native
+  var _3d: js.Any
   
-  def addCurve(curve: Bezier): Unit = js.native
+  def addCurve(curve: Bezier): Unit
   
-  def bbox(): BBox = js.native
+  def bbox(): BBox
   
-  def curve(idx: Double): Bezier = js.native
+  def curve(idx: Double): Bezier
   
-  var curves: js.Array[Bezier] = js.native
+  var curves: js.Array[Bezier]
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def offset(d: Double): PolyBezier = js.native
+  def offset(d: Double): PolyBezier
   
-  var points: js.Array[Point] = js.native
+  var points: js.Array[Point]
 }
 object PolyBezier {
   

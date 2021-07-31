@@ -2,46 +2,44 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSnapshot extends StObject {
   
   /**
     * A unique identifier for the source cluster.
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the cache node was created in the source cluster.
     */
-  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.native
+  var CacheNodeCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The cache node identifier for the node in the source cluster.
     */
-  var CacheNodeId: js.UndefOr[String] = js.native
+  var CacheNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the cache on the source cache node.
     */
-  var CacheSize: js.UndefOr[String] = js.native
+  var CacheSize: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration for the source node group (shard).
     */
-  var NodeGroupConfiguration: js.UndefOr[typings.awsSdk.elasticacheMod.NodeGroupConfiguration] = js.native
+  var NodeGroupConfiguration: js.UndefOr[typings.awsSdk.elasticacheMod.NodeGroupConfiguration] = js.undefined
   
   /**
     * A unique identifier for the source node group (shard).
     */
-  var NodeGroupId: js.UndefOr[String] = js.native
+  var NodeGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the source node's metadata and cache data set was obtained for the snapshot.
     */
-  var SnapshotCreateTime: js.UndefOr[TStamp] = js.native
+  var SnapshotCreateTime: js.UndefOr[TStamp] = js.undefined
 }
 object NodeSnapshot {
   

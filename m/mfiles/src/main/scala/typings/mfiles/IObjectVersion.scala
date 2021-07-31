@@ -7,89 +7,87 @@ import typings.mfiles.MFiles.MFSpecialObjectFlag
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectVersion extends StObject {
   
-  val AccessedByMeUtc: Date = js.native
+  val AccessedByMeUtc: Date
   
-  val CheckedOutAtUtc: Date = js.native
+  val CheckedOutAtUtc: Date
   
-  val CheckedOutTo: Double = js.native
+  val CheckedOutTo: Double
   
-  val CheckedOutToHostName: String = js.native
+  val CheckedOutToHostName: String
   
-  val CheckedOutToUserName: String = js.native
+  val CheckedOutToUserName: String
   
-  val CheckedOutVersion: Double = js.native
+  val CheckedOutVersion: Double
   
-  val Class: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double = js.native
+  val Class: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double
   
-  def Clone(): IObjectVersion = js.native
+  def Clone(): IObjectVersion
   
-  val CreatedUtc: Date = js.native
+  val CreatedUtc: Date
   
-  val Deleted: Boolean = js.native
+  val Deleted: Boolean
   
-  val DisplayID: String = js.native
+  val DisplayID: String
   
-  val DisplayIDAvailable: Boolean = js.native
+  val DisplayIDAvailable: Boolean
   
-  val Files: IObjectFiles = js.native
+  val Files: IObjectFiles
   
-  val FilesCount: Double = js.native
+  val FilesCount: Double
   
-  def GetNameForFileSystem(IncludeID: Boolean): String = js.native
+  def GetNameForFileSystem(IncludeID: Boolean): String
   
-  def GetNameForFileSystemEx(IncludeID: Boolean, UseOriginalID: Boolean): String = js.native
+  def GetNameForFileSystemEx(IncludeID: Boolean, UseOriginalID: Boolean): String
   
-  val HasAssignments: Boolean = js.native
+  val HasAssignments: Boolean
   
-  val HasSharedFiles: Boolean = js.native
+  val HasSharedFiles: Boolean
   
-  val IsAccessedByMeValid: Boolean = js.native
+  val IsAccessedByMeValid: Boolean
   
-  val IsObjectConflict: Boolean = js.native
+  val IsObjectConflict: Boolean
   
-  val IsObjectShortcut: Boolean = js.native
+  val IsObjectShortcut: Boolean
   
-  val LastModifiedUtc: Date = js.native
+  val LastModifiedUtc: Date
   
-  val LatestCheckedInVersion: Double = js.native
+  val LatestCheckedInVersion: Double
   
-  val LatestCheckedInVersionOrCheckedOutVersion: Boolean = js.native
+  val LatestCheckedInVersionOrCheckedOutVersion: Boolean
   
-  val ObjVer: IObjVer = js.native
+  val ObjVer: IObjVer
   
-  val ObjectCheckedOut: Boolean = js.native
+  val ObjectCheckedOut: Boolean
   
-  val ObjectCheckedOutToThisUserOnAnyComputer: Boolean = js.native
+  val ObjectCheckedOutToThisUserOnAnyComputer: Boolean
   
-  val ObjectCheckedOutToThisUserOnThisComputer: Boolean = js.native
+  val ObjectCheckedOutToThisUserOnThisComputer: Boolean
   
-  val ObjectFlags: MFSpecialObjectFlag = js.native
+  val ObjectFlags: MFSpecialObjectFlag
   
-  val ObjectGUID: String = js.native
+  val ObjectGUID: String
   
-  val ObjectVersionFlags: MFObjectVersionFlag = js.native
+  val ObjectVersionFlags: MFObjectVersionFlag
   
-  val OriginalObjID: IObjID = js.native
+  val OriginalObjID: IObjID
   
-  val OriginalVaultGUID: String = js.native
+  val OriginalVaultGUID: String
   
-  val SingleFile: Boolean = js.native
+  val SingleFile: Boolean
   
-  val ThisVersionCheckedOut: Boolean = js.native
+  val ThisVersionCheckedOut: Boolean
   
-  val ThisVersionLatestToThisUser: Boolean = js.native
+  val ThisVersionLatestToThisUser: Boolean
   
-  val Title: String = js.native
+  val Title: String
   
-  val VersionGUID: String = js.native
+  val VersionGUID: String
   
-  val VisibleAfterOperation: Boolean = js.native
+  val VisibleAfterOperation: Boolean
 }
 object IObjectVersion {
   

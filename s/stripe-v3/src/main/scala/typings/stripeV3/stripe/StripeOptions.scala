@@ -2,17 +2,15 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeOptions extends StObject {
   
-  var betas: js.UndefOr[js.Array[String]] = js.native
+  var betas: js.UndefOr[js.Array[String]] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var stripeAccount: js.UndefOr[String] = js.native
+  var stripeAccount: js.UndefOr[String] = js.undefined
 }
 object StripeOptions {
   

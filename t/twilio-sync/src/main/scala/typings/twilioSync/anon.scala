@@ -2,19 +2,17 @@ package typings.twilioSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var key: String = js.native
+    var key: String
     
-    var revision: Double = js.native
+    var revision: Double
   }
   object Data {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientApiVersions extends StObject {
   
   /**
     * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
     */
-  var apiVersion: js.UndefOr[typings.awsSdk.comprehendmedicalMod.apiVersion] = js.native
+  var apiVersion: js.UndefOr[typings.awsSdk.comprehendmedicalMod.apiVersion] = js.undefined
 }
 object ClientApiVersions {
   

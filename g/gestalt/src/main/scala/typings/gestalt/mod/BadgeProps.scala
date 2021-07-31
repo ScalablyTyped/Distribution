@@ -4,15 +4,13 @@ import typings.gestalt.gestaltStrings.middle
 import typings.gestalt.gestaltStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeProps extends StObject {
   
-  var position: js.UndefOr[middle | top] = js.native
+  var position: js.UndefOr[middle | top] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object BadgeProps {
   

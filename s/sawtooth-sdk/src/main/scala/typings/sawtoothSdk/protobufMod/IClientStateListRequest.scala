@@ -2,23 +2,21 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientStateListRequest extends StObject {
   
   /** ClientStateListRequest address */
-  var address: js.UndefOr[String | Null] = js.native
+  var address: js.UndefOr[String | Null] = js.undefined
   
   /** ClientStateListRequest paging */
-  var paging: js.UndefOr[IClientPagingControls | Null] = js.native
+  var paging: js.UndefOr[IClientPagingControls | Null] = js.undefined
   
   /** ClientStateListRequest sorting */
-  var sorting: js.UndefOr[js.Array[IClientSortControls] | Null] = js.native
+  var sorting: js.UndefOr[js.Array[IClientSortControls] | Null] = js.undefined
   
   /** ClientStateListRequest stateRoot */
-  var stateRoot: js.UndefOr[String | Null] = js.native
+  var stateRoot: js.UndefOr[String | Null] = js.undefined
 }
 object IClientStateListRequest {
   

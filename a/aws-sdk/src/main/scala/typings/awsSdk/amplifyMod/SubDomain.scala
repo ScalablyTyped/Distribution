@@ -2,26 +2,24 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubDomain extends StObject {
   
   /**
     *  The DNS record for the subdomain. 
     */
-  var dnsRecord: DNSRecord = js.native
+  var dnsRecord: DNSRecord
   
   /**
     *  Describes the settings for the subdomain. 
     */
-  var subDomainSetting: SubDomainSetting = js.native
+  var subDomainSetting: SubDomainSetting
   
   /**
     *  The verified status of the subdomain 
     */
-  var verified: Verified = js.native
+  var verified: Verified
 }
 object SubDomain {
   

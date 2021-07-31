@@ -4,7 +4,6 @@ import typings.sipJs.coreTransportMod.Transport
 import typings.sipJs.transactionUserMod.ClientTransactionUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.InviteClientTransaction")

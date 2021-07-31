@@ -2,15 +2,13 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionRecipient extends StObject {
   
-  var name: js.UndefOr[AgentName] = js.native
+  var name: js.UndefOr[AgentName] = js.undefined
   
-  var url: js.UndefOr[AgentURL] = js.native
+  var url: js.UndefOr[AgentURL] = js.undefined
 }
 object ConnectionRecipient {
   

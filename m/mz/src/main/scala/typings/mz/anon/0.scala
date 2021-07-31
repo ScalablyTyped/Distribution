@@ -3,19 +3,17 @@ package typings.mz.anon
 import typings.mz.mzStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var encoding: buffer = js.native
+  var encoding: buffer
 }
 object `0` {
   
   @scala.inline
-  def apply(encoding: buffer): `0` = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[`0`]
   }
   

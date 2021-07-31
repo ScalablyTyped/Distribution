@@ -5,11 +5,12 @@ import typings.rax.raxStrings.pen
 import typings.rax.raxStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointerEvent[T] extends MouseEvent[T, NativePointerEvent] {
+trait PointerEvent[T]
+  extends StObject
+     with MouseEvent[T, NativePointerEvent] {
   
   var height: Double = js.native
   

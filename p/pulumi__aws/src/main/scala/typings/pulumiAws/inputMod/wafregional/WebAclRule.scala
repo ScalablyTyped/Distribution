@@ -3,37 +3,35 @@ package typings.pulumiAws.inputMod.wafregional
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRule extends StObject {
   
   /**
     * Configuration block of the action that CloudFront or AWS WAF takes when a web request matches the conditions in the rule.  Not used if `type` is `GROUP`. Detailed below.
     */
-  var action: js.UndefOr[Input[WebAclRuleAction]] = js.native
+  var action: js.UndefOr[Input[WebAclRuleAction]] = js.undefined
   
   /**
     * Configuration block of the override the action that a group requests CloudFront or AWS WAF takes when a web request matches the conditions in the rule.  Only used if `type` is `GROUP`. Detailed below.
     */
-  var overrideAction: js.UndefOr[Input[WebAclRuleOverrideAction]] = js.native
+  var overrideAction: js.UndefOr[Input[WebAclRuleOverrideAction]] = js.undefined
   
   /**
     * Specifies the order in which the rules in a WebACL are evaluated.
     * Rules with a lower value are evaluated before rules with a higher value.
     */
-  var priority: Input[Double] = js.native
+  var priority: Input[Double]
   
   /**
     * ID of the associated WAF (Regional) rule (e.g. `aws.wafregional.Rule`). WAF (Global) rules cannot be used.
     */
-  var ruleId: Input[String] = js.native
+  var ruleId: Input[String]
   
   /**
     * Specifies how you want AWS WAF Regional to respond to requests that match the settings in a rule. e.g. `ALLOW`, `BLOCK` or `COUNT`
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
 }
 object WebAclRule {
   

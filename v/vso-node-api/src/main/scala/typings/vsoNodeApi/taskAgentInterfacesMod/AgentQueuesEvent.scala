@@ -2,15 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentQueuesEvent extends StObject {
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var queues: js.Array[TaskAgentQueue] = js.native
+  var queues: js.Array[TaskAgentQueue]
 }
 object AgentQueuesEvent {
   

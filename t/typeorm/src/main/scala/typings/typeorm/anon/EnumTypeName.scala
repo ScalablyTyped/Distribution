@@ -2,15 +2,13 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumTypeName extends StObject {
   
-  var enumTypeName: js.Any = js.native
+  var enumTypeName: js.Any
   
-  var enumTypeSchema: js.Any = js.native
+  var enumTypeSchema: js.Any
 }
 object EnumTypeName {
   

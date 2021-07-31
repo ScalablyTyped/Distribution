@@ -3,25 +3,25 @@ package typings.ethereumProtocol.mod
 import typings.ethereumProtocol.mod.AbiType.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MethodAbi extends FunctionAbi {
+trait MethodAbi
+  extends StObject
+     with FunctionAbi {
   
-  var constant: Boolean = js.native
+  var constant: Boolean
   
-  var inputs: js.Array[DataItem] = js.native
+  var inputs: js.Array[DataItem]
   
-  var name: String = js.native
+  var name: String
   
-  var outputs: js.Array[DataItem] = js.native
+  var outputs: js.Array[DataItem]
   
-  var payable: Boolean = js.native
+  var payable: Boolean
   
-  var stateMutability: StateMutability = js.native
+  var stateMutability: StateMutability
   
-  var `type`: Function = js.native
+  var `type`: Function
 }
 object MethodAbi {
   

@@ -7,25 +7,27 @@ import typings.jsmediatags.typesMod.CallbackType
 import typings.jsmediatags.typesMod.LoadCallbackType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("jsmediatags", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Config extends StObject {
     
-    def EXPERIMENTAL_avoidHeadRequests(): Unit = js.native
+    def EXPERIMENTAL_avoidHeadRequests(): Unit
     
-    def addFileReader(fileReader: TypeofMediaFileReader): Config = js.native
+    def addFileReader(fileReader: TypeofMediaFileReader): Config
     
-    def addTagReader(tagReader: TypeofMediaTagReader): Config = js.native
+    def addTagReader(tagReader: TypeofMediaTagReader): Config
     
-    def removeTagReader(tagReader: TypeofMediaTagReader): Config = js.native
+    def removeTagReader(tagReader: TypeofMediaTagReader): Config
     
-    def setDisallowedXhrHeaders(disallowedXhrHeaders: js.Array[String]): Unit = js.native
+    def setDisallowedXhrHeaders(disallowedXhrHeaders: js.Array[String]): Unit
     
-    def setXhrTimeoutInSec(timeoutInSec: Double): Unit = js.native
+    def setXhrTimeoutInSec(timeoutInSec: Double): Unit
   }
   object Config {
     
@@ -88,7 +90,6 @@ object mod {
     def setTagsToRead(tagsToRead: js.Array[String]): Reader = js.native
   }
   
-  @JSImport("jsmediatags", "read")
-  @js.native
-  def read(location: js.Any, callbacks: CallbackType): Unit = js.native
+  @scala.inline
+  def read(location: js.Any, callbacks: CallbackType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(location.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -6,14 +6,16 @@ import typings.agentBase.mod.ClientRequest
 import typings.agentBase.mod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promisifyMod {
   
-  @JSImport("agent-base/dist/src/promisify", JSImport.Default)
+  @JSImport("agent-base/dist/src/promisify", JSImport.Namespace)
   @js.native
-  def default(fn: LegacyCallback): AgentCallbackPromise = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fn: LegacyCallback): AgentCallbackPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[AgentCallbackPromise]
   
   type LegacyCallback = js.Function3[
     /* req */ ClientRequest, 

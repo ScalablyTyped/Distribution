@@ -4,42 +4,40 @@ import typings.eyes.anon.All
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("eyes", "inspect")
+  @JSImport("eyes", JSImport.Namespace)
   @js.native
-  def inspect(thing: js.Any): Unit = js.native
-  @JSImport("eyes", "inspect")
-  @js.native
-  def inspect(thing: js.Any, label: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("eyes", "inspector")
-  @js.native
-  def inspector(): InspectorFunction = js.native
-  @JSImport("eyes", "inspector")
-  @js.native
-  def inspector(options: EyesOptions): InspectorFunction = js.native
+  @scala.inline
+  def inspect(thing: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def inspect(thing: js.Any, label: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(thing.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def inspector(): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")().asInstanceOf[InspectorFunction]
+  @scala.inline
+  def inspector(options: EyesOptions): InspectorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("inspector")(options.asInstanceOf[js.Any]).asInstanceOf[InspectorFunction]
+  
   trait EyesOptions extends StObject {
     
     /** Don't output functions at all */
-    var hideFunctions: js.UndefOr[Boolean] = js.native
+    var hideFunctions: js.UndefOr[Boolean] = js.undefined
     
     /** Truncate output if longer */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /** Indent object literals */
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
     /** Stream to write to, or null */
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /** Styles applied to stdout */
-    var styles: js.UndefOr[All] = js.native
+    var styles: js.UndefOr[All] = js.undefined
   }
   object EyesOptions {
     

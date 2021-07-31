@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ListDocumentsRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ListDocumentsRequest.
   * @param [properties] Properties to set
   */
-class ListDocumentsRequest () extends IListDocumentsRequest {
+class ListDocumentsRequest ()
+  extends StObject
+     with IListDocumentsRequest {
   def this(properties: IListDocumentsRequest) = this()
   
   /** ListDocumentsRequest pageSize. */
@@ -40,18 +41,20 @@ class ListDocumentsRequest () extends IListDocumentsRequest {
 }
 object ListDocumentsRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ListDocumentsRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ListDocumentsRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.create")
-  @js.native
-  def create(): ListDocumentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.create")
-  @js.native
-  def create(properties: IListDocumentsRequest): ListDocumentsRequest = js.native
+  @scala.inline
+  def create(): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListDocumentsRequest]
+  @scala.inline
+  def create(properties: IListDocumentsRequest): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
   
   /**
     * Decodes a ListDocumentsRequest message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object ListDocumentsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decode")
-  @js.native
-  def decode(reader: Reader): ListDocumentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ListDocumentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): ListDocumentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ListDocumentsRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ListDocumentsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListDocumentsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ListDocumentsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListDocumentsRequest]
   
   /**
     * Decodes a ListDocumentsRequest message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object ListDocumentsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ListDocumentsRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ListDocumentsRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
   
   /**
     * Encodes the specified ListDocumentsRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListDocumentsRequest.verify|verify} messages.
@@ -97,12 +94,10 @@ object ListDocumentsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.encode")
-  @js.native
-  def encode(message: IListDocumentsRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.encode")
-  @js.native
-  def encode(message: IListDocumentsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IListDocumentsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IListDocumentsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListDocumentsRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ListDocumentsRequest.verify|verify} messages.
@@ -111,12 +106,10 @@ object ListDocumentsRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListDocumentsRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IListDocumentsRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IListDocumentsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IListDocumentsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListDocumentsRequest message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object ListDocumentsRequest {
     * @returns ListDocumentsRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ListDocumentsRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ListDocumentsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListDocumentsRequest]
   
   /**
     * Creates a plain object from a ListDocumentsRequest message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object ListDocumentsRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.toObject")
-  @js.native
-  def toObject(message: ListDocumentsRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.toObject")
-  @js.native
-  def toObject(message: ListDocumentsRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ListDocumentsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ListDocumentsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListDocumentsRequest message.
@@ -148,7 +138,6 @@ object ListDocumentsRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ListDocumentsRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

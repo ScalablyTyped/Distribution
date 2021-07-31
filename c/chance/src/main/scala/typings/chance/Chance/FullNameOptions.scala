@@ -2,19 +2,17 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullNameOptions extends StObject {
   
-  var middle: Boolean = js.native
+  var middle: Boolean
   
-  var middle_initial: Boolean = js.native
+  var middle_initial: Boolean
   
-  var prefix: Boolean = js.native
+  var prefix: Boolean
   
-  var suffix: Boolean = js.native
+  var suffix: Boolean
 }
 object FullNameOptions {
   

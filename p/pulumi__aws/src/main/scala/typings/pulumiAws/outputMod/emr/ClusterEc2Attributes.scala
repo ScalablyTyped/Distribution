@@ -2,51 +2,49 @@ package typings.pulumiAws.outputMod.emr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterEc2Attributes extends StObject {
   
   /**
     * String containing a comma separated list of additional Amazon EC2 security group IDs for the master node
     */
-  var additionalMasterSecurityGroups: js.UndefOr[String] = js.native
+  var additionalMasterSecurityGroups: js.UndefOr[String] = js.undefined
   
   /**
     * String containing a comma separated list of additional Amazon EC2 security group IDs for the slave nodes as a comma separated string
     */
-  var additionalSlaveSecurityGroups: js.UndefOr[String] = js.native
+  var additionalSlaveSecurityGroups: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the Amazon EC2 EMR-Managed security group for the master node
     */
-  var emrManagedMasterSecurityGroup: String = js.native
+  var emrManagedMasterSecurityGroup: String
   
   /**
     * Identifier of the Amazon EC2 EMR-Managed security group for the slave nodes
     */
-  var emrManagedSlaveSecurityGroup: String = js.native
+  var emrManagedSlaveSecurityGroup: String
   
   /**
     * Instance Profile for EC2 instances of the cluster assume this role
     */
-  var instanceProfile: String = js.native
+  var instanceProfile: String
   
   /**
     * Amazon EC2 key pair that can be used to ssh to the master node as the user called `hadoop`
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the Amazon EC2 service-access security group - required when the cluster runs on a private subnet
     */
-  var serviceAccessSecurityGroup: String = js.native
+  var serviceAccessSecurityGroup: String
   
   /**
     * VPC subnet id where you want the job flow to launch. Cannot specify the `cc1.4xlarge` instance type for nodes of a job flow launched in a Amazon VPC
     */
-  var subnetId: js.UndefOr[String] = js.native
+  var subnetId: js.UndefOr[String] = js.undefined
 }
 object ClusterEc2Attributes {
   

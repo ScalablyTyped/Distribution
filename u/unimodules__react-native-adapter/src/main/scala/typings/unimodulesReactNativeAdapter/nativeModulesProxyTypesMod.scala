@@ -3,18 +3,17 @@ package typings.unimodulesReactNativeAdapter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeModulesProxyTypesMod {
   
-  @js.native
   trait ProxyNativeModule
-    extends /* propertyName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propertyName */ StringDictionary[js.Any] {
     
-    def addListener(eventName: String): Unit = js.native
+    def addListener(eventName: String): Unit
     
-    def removeListeners(count: Double): Unit = js.native
+    def removeListeners(count: Double): Unit
   }
   object ProxyNativeModule {
     

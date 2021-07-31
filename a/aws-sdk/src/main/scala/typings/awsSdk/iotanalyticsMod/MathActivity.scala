@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MathActivity extends StObject {
   
   /**
     * The name of the attribute that contains the result of the math operation.
     */
-  var attribute: AttributeName = js.native
+  var attribute: AttributeName
   
   /**
     * An expression that uses one or more existing attributes and must return an integer value.
     */
-  var math: MathExpression = js.native
+  var math: MathExpression
   
   /**
     * The name of the math activity.
     */
-  var name: ActivityName = js.native
+  var name: ActivityName
   
   /**
     * The next activity in the pipeline.
     */
-  var next: js.UndefOr[ActivityName] = js.native
+  var next: js.UndefOr[ActivityName] = js.undefined
 }
 object MathActivity {
   

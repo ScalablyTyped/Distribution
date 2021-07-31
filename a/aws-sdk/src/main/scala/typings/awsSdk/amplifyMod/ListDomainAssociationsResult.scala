@@ -2,21 +2,19 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDomainAssociationsResult extends StObject {
   
   /**
     *  A list of domain associations. 
     */
-  var domainAssociations: DomainAssociations = js.native
+  var domainAssociations: DomainAssociations
   
   /**
     *  A pagination token. If non-null, a pagination token is returned in a result. Pass its value in another request to retrieve more entries. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDomainAssociationsResult {
   

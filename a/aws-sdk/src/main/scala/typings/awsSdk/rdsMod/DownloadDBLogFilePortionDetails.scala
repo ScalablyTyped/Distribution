@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadDBLogFilePortionDetails extends StObject {
   
   /**
     * Boolean value that if true, indicates there is more data to be downloaded.
     */
-  var AdditionalDataPending: js.UndefOr[Boolean] = js.native
+  var AdditionalDataPending: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Entries from the specified log file.
     */
-  var LogFileData: js.UndefOr[String] = js.native
+  var LogFileData: js.UndefOr[String] = js.undefined
   
   /**
     * A pagination token that can be used in a later DownloadDBLogFilePortion request.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DownloadDBLogFilePortionDetails {
   

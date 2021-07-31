@@ -2,7 +2,6 @@ package typings.uirouterCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
@@ -11,8 +10,8 @@ object queueMod {
   @js.native
   class Queue[T] () extends StObject {
     def this(_items: js.Array[T]) = this()
-    def this(_items: js.UndefOr[scala.Nothing], _limit: Double) = this()
     def this(_items: js.Array[T], _limit: Double) = this()
+    def this(_items: Unit, _limit: Double) = this()
     
     var _evictListeners: js.Any = js.native
     

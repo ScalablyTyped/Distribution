@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotebookInstanceLifecycleConfigsInput extends StObject {
   
   /**
     * A filter that returns only lifecycle configurations that were created after the specified time (timestamp).
     */
-  var CreationTimeAfter: js.UndefOr[CreationTime] = js.native
+  var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were created before the specified time (timestamp).
     */
-  var CreationTimeBefore: js.UndefOr[CreationTime] = js.native
+  var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were modified after the specified time (timestamp).
     */
-  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * A filter that returns only lifecycle configurations that were modified before the specified time (timestamp).
     */
-  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[LastModifiedTime] = js.undefined
   
   /**
     * The maximum number of lifecycle configurations to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * A string in the lifecycle configuration name. This filter returns only lifecycle configurations whose name contains the specified string.
     */
-  var NameContains: js.UndefOr[NotebookInstanceLifecycleConfigNameContains] = js.native
+  var NameContains: js.UndefOr[NotebookInstanceLifecycleConfigNameContains] = js.undefined
   
   /**
     * If the result of a ListNotebookInstanceLifecycleConfigs request was truncated, the response includes a NextToken. To get the next set of lifecycle configurations, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * Sorts the list of results. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[NotebookInstanceLifecycleConfigSortKey] = js.native
+  var SortBy: js.UndefOr[NotebookInstanceLifecycleConfigSortKey] = js.undefined
   
   /**
     * The sort order for results.
     */
-  var SortOrder: js.UndefOr[NotebookInstanceLifecycleConfigSortOrder] = js.native
+  var SortOrder: js.UndefOr[NotebookInstanceLifecycleConfigSortOrder] = js.undefined
 }
 object ListNotebookInstanceLifecycleConfigsInput {
   

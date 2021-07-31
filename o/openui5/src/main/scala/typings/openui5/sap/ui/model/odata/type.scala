@@ -3,13 +3,14 @@ package typings.openui5.sap.ui.model.odata
 import typings.openui5.sap.ui.model.SimpleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `type` {
   
   @js.native
-  trait Boolean extends ODataType {
+  trait Boolean
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given boolean value to the given target type.
@@ -41,7 +42,9 @@ object `type` {
   }
   
   @js.native
-  trait Byte extends Int {
+  trait Byte
+    extends StObject
+       with Int {
     
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
@@ -52,7 +55,9 @@ object `type` {
   }
   
   @js.native
-  trait Date extends ODataType {
+  trait Date
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.
@@ -81,10 +86,14 @@ object `type` {
   }
   
   @js.native
-  trait DateTime extends DateTimeBase
+  trait DateTime
+    extends StObject
+       with DateTimeBase
   
   @js.native
-  trait DateTimeBase extends ODataType {
+  trait DateTimeBase
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.
@@ -118,13 +127,17 @@ object `type` {
   }
   
   @js.native
-  trait DateTimeOffset extends DateTimeBase {
+  trait DateTimeOffset
+    extends StObject
+       with DateTimeBase {
     
     def formatValue(vValue: java.lang.String, sTargetType: java.lang.String): Date | java.lang.String = js.native
   }
   
   @js.native
-  trait Decimal extends ODataType {
+  trait Decimal
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type. When formatting to "string" the type'sconstraint
@@ -157,7 +170,9 @@ object `type` {
   }
   
   @js.native
-  trait Double extends ODataType {
+  trait Double
+    extends StObject
+       with ODataType {
     
     def formatValue(vValue: java.lang.String, sTargetType: java.lang.String): scala.Double | java.lang.String = js.native
     /**
@@ -194,7 +209,9 @@ object `type` {
   }
   
   @js.native
-  trait Guid extends ODataType {
+  trait Guid
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.
@@ -223,7 +240,9 @@ object `type` {
   }
   
   @js.native
-  trait Int extends ODataType {
+  trait Int
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.When formatting to <code>string</code> the format
@@ -256,7 +275,9 @@ object `type` {
   }
   
   @js.native
-  trait Int16 extends Int {
+  trait Int16
+    extends StObject
+       with Int {
     
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
@@ -267,7 +288,9 @@ object `type` {
   }
   
   @js.native
-  trait Int32 extends Int {
+  trait Int32
+    extends StObject
+       with Int {
     
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
@@ -278,7 +301,9 @@ object `type` {
   }
   
   @js.native
-  trait Int64 extends ODataType {
+  trait Int64
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.
@@ -310,10 +335,14 @@ object `type` {
   }
   
   @js.native
-  trait ODataType extends SimpleType
+  trait ODataType
+    extends StObject
+       with SimpleType
   
   @js.native
-  trait Raw extends ODataType {
+  trait Raw
+    extends StObject
+       with ODataType {
     
     /**
       * Method not supported
@@ -329,7 +358,9 @@ object `type` {
   }
   
   @js.native
-  trait SByte extends Int {
+  trait SByte
+    extends StObject
+       with Int {
     
     /**
       * Returns the type's supported range as object with properties <code>minimum</code>
@@ -340,7 +371,9 @@ object `type` {
   }
   
   @js.native
-  trait Single extends ODataType {
+  trait Single
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.
@@ -376,7 +409,9 @@ object `type` {
   }
   
   @js.native
-  trait String extends ODataType {
+  trait String
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.If <code>isDigitSequence</code> constraint of this
@@ -412,7 +447,9 @@ object `type` {
   }
   
   @js.native
-  trait Time extends ODataType {
+  trait Time
+    extends StObject
+       with ODataType {
     
     /**
       * Parses the given value, which is expected to be of the given type, to a time object.
@@ -425,7 +462,9 @@ object `type` {
   }
   
   @js.native
-  trait TimeOfDay extends ODataType {
+  trait TimeOfDay
+    extends StObject
+       with ODataType {
     
     /**
       * Formats the given value to the given target type.

@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds action types for the client-side ASPxClientScheduler.Refresh method.
   */
-@js.native
 trait ASPxClientSchedulerRefreshAction extends StObject {
   
   /**
     * Gets the value of the action parameter which initiates reloading of the main ASPxScheduler control and its satellite View controls.
     */
-  var ActiveViewTypeChanged: Double = js.native
+  var ActiveViewTypeChanged: Double
   
   /**
     * Gets the value of the action parameter which initiates a simple reload of the control.
     */
-  var None: Double = js.native
+  var None: Double
   
   /**
     * Gets the value of the action parameter which initiates reloading of the main ASPxScheduler control and its data-dependent satellites.
     */
-  var VisibleIntervalChanged: Double = js.native
+  var VisibleIntervalChanged: Double
 }
 object ASPxClientSchedulerRefreshAction {
   

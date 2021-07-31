@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DaylightVisibleElements extends Object {
+trait DaylightVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * When set to `false`, neither the date nor the season picker are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
-  var datePicker: js.UndefOr[Boolean] = js.native
+  var datePicker: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to `false`, neither of the play buttons are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
-  var playButtons: js.UndefOr[Boolean] = js.native
+  var playButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to `false`, the shadow toggle button is not displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
-  var shadowsToggle: js.UndefOr[Boolean] = js.native
+  var shadowsToggle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to `false`, the timezone selector is not displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight.html#VisibleElements)
     */
-  var timezone: js.UndefOr[Boolean] = js.native
+  var timezone: js.UndefOr[Boolean] = js.undefined
 }
 object DaylightVisibleElements {
   

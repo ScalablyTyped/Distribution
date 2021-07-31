@@ -6,10 +6,13 @@ import typings.plottable.scaleMod.Scale
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
+  
+  @JSImport("plottable/build/src/memoize/signature", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable/build/src/memoize/signature", "ArraySignature")
   @js.native
@@ -17,22 +20,12 @@ object signatureMod {
     def this(array: js.Array[Signature]) = this()
     
     var array: js.Any = js.native
-    
-    /**
-      * An array of signatures is different if any of the elements isDifferent.
-      */
-    def isSignatureDifferent(other: ArraySignature): Boolean = js.native
   }
   
   @JSImport("plottable/build/src/memoize/signature", "ObjectSignature")
   @js.native
   class ObjectSignature protected () extends Signature {
     def this(obj: ISignatureRecord) = this()
-    
-    /**
-      * An object signature is different if any of the elements isDifferent.
-      */
-    def isSignatureDifferent(other: ObjectSignature): Boolean = js.native
     
     var obj: js.Any = js.native
   }
@@ -41,8 +34,6 @@ object signatureMod {
   @js.native
   class ReferenceSignature protected () extends Signature {
     def this(ref: js.Any) = this()
-    
-    def isSignatureDifferent(other: ReferenceSignature): Boolean = js.native
     
     var ref: js.Any = js.native
   }
@@ -56,29 +47,23 @@ object signatureMod {
     /* protected */ def isSignatureDifferent(other: this.type): Boolean = js.native
   }
   
-  @JSImport("plottable/build/src/memoize/signature", "sign")
-  @js.native
-  def sign(a: js.Any): Signature = js.native
+  @scala.inline
+  def sign(a: js.Any): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(a.asInstanceOf[js.Any]).asInstanceOf[Signature]
   
-  @JSImport("plottable/build/src/memoize/signature", "signArray")
-  @js.native
-  def signArray(a: js.Array[_]): ArraySignature = js.native
+  @scala.inline
+  def signArray(a: js.Array[js.Any]): ArraySignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signArray")(a.asInstanceOf[js.Any]).asInstanceOf[ArraySignature]
   
-  @JSImport("plottable/build/src/memoize/signature", "signDataset")
-  @js.native
-  def signDataset(dataset: Dataset): ObjectSignature = js.native
+  @scala.inline
+  def signDataset(dataset: Dataset): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signDataset")(dataset.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
-  @JSImport("plottable/build/src/memoize/signature", "signObj")
-  @js.native
-  def signObj(obj: StringDictionary[js.Any]): ObjectSignature = js.native
+  @scala.inline
+  def signObj(obj: StringDictionary[js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signObj")(obj.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
-  @JSImport("plottable/build/src/memoize/signature", "signRef")
-  @js.native
-  def signRef(a: js.Any): ReferenceSignature = js.native
+  @scala.inline
+  def signRef(a: js.Any): ReferenceSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signRef")(a.asInstanceOf[js.Any]).asInstanceOf[ReferenceSignature]
   
-  @JSImport("plottable/build/src/memoize/signature", "signScale")
-  @js.native
-  def signScale(scale: Scale[_, _]): ObjectSignature = js.native
+  @scala.inline
+  def signScale(scale: Scale[js.Any, js.Any]): ObjectSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("signScale")(scale.asInstanceOf[js.Any]).asInstanceOf[ObjectSignature]
   
   type ISignatureRecord = Record[String, Signature]
 }

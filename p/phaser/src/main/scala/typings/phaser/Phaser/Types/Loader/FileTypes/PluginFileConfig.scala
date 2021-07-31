@@ -3,41 +3,39 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within the Loader.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * If this plugin is to be injected into the Scene, this is the property key used.
     */
-  var mapping: js.UndefOr[String] = js.native
+  var mapping: js.UndefOr[String] = js.undefined
   
   /**
     * Automatically start the plugin after loading?
     */
-  var start: js.UndefOr[Boolean] = js.native
+  var start: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The absolute or relative URL to load the file from.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object PluginFileConfig {
   

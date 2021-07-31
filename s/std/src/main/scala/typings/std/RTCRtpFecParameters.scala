@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCRtpFecParameters extends StObject {
   
-  var mechanism: js.UndefOr[java.lang.String] = js.native
+  var mechanism: js.UndefOr[java.lang.String] = js.undefined
   
-  var ssrc: js.UndefOr[Double] = js.native
+  var ssrc: js.UndefOr[Double] = js.undefined
 }
 object RTCRtpFecParameters {
   

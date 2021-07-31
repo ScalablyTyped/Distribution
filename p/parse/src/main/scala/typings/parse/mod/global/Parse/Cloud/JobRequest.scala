@@ -2,15 +2,13 @@ package typings.parse.mod.global.Parse.Cloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobRequest extends StObject {
   
-  def message(response: js.Any): Unit = js.native
+  def message(response: js.Any): Unit
   
-  var params: js.Any = js.native
+  var params: js.Any
 }
 object JobRequest {
   

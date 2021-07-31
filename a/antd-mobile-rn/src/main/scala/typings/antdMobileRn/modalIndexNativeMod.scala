@@ -3,7 +3,6 @@ package typings.antdMobileRn
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalIndexNativeMod {
@@ -76,9 +75,8 @@ object modalIndexNativeMod {
       @scala.inline
       def maskClosable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
       
-      @JSImport("antd-mobile-rn/lib/modal/index.native", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
       @JSImport("antd-mobile-rn/lib/modal/index.native", "default.defaultProps.operation")
       @js.native

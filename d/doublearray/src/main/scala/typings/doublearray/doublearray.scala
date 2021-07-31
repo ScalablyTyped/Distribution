@@ -9,7 +9,6 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object doublearray {
@@ -58,24 +57,23 @@ object doublearray {
     def size(): Double = js.native
   }
   
-  @js.native
   trait DoubleArray extends StObject {
     
-    var bc: BaseAndCheck = js.native
+    var bc: BaseAndCheck
     
-    def calc(): All = js.native
+    def calc(): All
     
-    def commonPrefixSearch(key: String): KeyValue = js.native
+    def commonPrefixSearch(key: String): KeyValue
     
-    def contain(key: String): Boolean = js.native
+    def contain(key: String): Boolean
     
-    def dump(): String = js.native
+    def dump(): String
     
-    def lookup(key: String): Double = js.native
+    def lookup(key: String): Double
     
-    def size(): Double = js.native
+    def size(): Double
     
-    def traverse(parent: Double, code: Double): Double = js.native
+    def traverse(parent: Double, code: Double): Double
   }
   object DoubleArray {
     
@@ -131,9 +129,9 @@ object doublearray {
     var bc: BaseAndCheck = js.native
     
     def build(): DoubleArray = js.native
-    def build(keys: js.UndefOr[scala.Nothing], sorted: Boolean): DoubleArray = js.native
     def build(keys: js.Array[KeyValue]): DoubleArray = js.native
     def build(keys: js.Array[KeyValue], sorted: Boolean): DoubleArray = js.native
+    def build(keys: Unit, sorted: Boolean): DoubleArray = js.native
     
     def findAllocatableBase(children_info: Int32Array): Double = js.native
     
@@ -146,12 +144,11 @@ object doublearray {
     def setBC(parent_id: Double, children_info: Int32Array, _base: Double): Unit = js.native
   }
   
-  @js.native
   trait KeyValue extends StObject {
     
-    var k: String = js.native
+    var k: String
     
-    var v: Double = js.native
+    var v: Double
   }
   object KeyValue {
     

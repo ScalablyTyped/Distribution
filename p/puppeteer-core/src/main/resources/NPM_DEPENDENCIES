@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "puppeteer-core" : "5.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "puppeteer-core" : "5.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

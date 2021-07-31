@@ -3,19 +3,17 @@ package typings.web3Core.mod
 import typings.web3Core.anon.Cipher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedKeystoreV3Json extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var crypto: Cipher = js.native
+  var crypto: Cipher
   
-  var id: String = js.native
+  var id: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object EncryptedKeystoreV3Json {
   

@@ -9,7 +9,6 @@ import typings.serveHandler.anon.Typeofreaddir
 import typings.serveHandler.anon.Typeofrealpath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,21 +21,19 @@ object mod {
     * rules, provide your own methods for interacting with the file system and much
     * more.
     */
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
-    response: js.UndefOr[scala.Nothing],
+    request: Unit,
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
     *
     * @see https://github.com/zeit/serve-handler#options
     */
-  config: js.UndefOr[scala.Nothing],
+  config: Unit,
     /**
     * If you want to replace the methods the package is using for interacting
     * with the file system and sending responses, you can pass them as the
@@ -47,12 +44,11 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
-    response: js.UndefOr[scala.Nothing],
+    request: Unit,
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -60,12 +56,11 @@ object mod {
     * @see https://github.com/zeit/serve-handler#options
     */
   config: Config
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
-    response: js.UndefOr[scala.Nothing],
+    request: Unit,
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -83,14 +78,12 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
-  def apply(request: js.UndefOr[scala.Nothing], response: ServerResponse): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(request: Unit, response: ServerResponse): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
+    request: Unit,
     response: ServerResponse,
     /**
     * If you want to customize the package's default behaviour, you can use
@@ -98,7 +91,7 @@ object mod {
     *
     * @see https://github.com/zeit/serve-handler#options
     */
-  config: js.UndefOr[scala.Nothing],
+  config: Unit,
     /**
     * If you want to replace the methods the package is using for interacting
     * with the file system and sending responses, you can pass them as the
@@ -109,11 +102,10 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
+    request: Unit,
     response: ServerResponse,
     /**
     * If you want to customize the package's default behaviour, you can use
@@ -122,11 +114,10 @@ object mod {
     * @see https://github.com/zeit/serve-handler#options
     */
   config: Config
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
-    request: js.UndefOr[scala.Nothing],
+    request: Unit,
     response: ServerResponse,
     /**
     * If you want to customize the package's default behaviour, you can use
@@ -145,22 +136,20 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
-  def apply(request: IncomingMessage): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(request: IncomingMessage): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
-    response: js.UndefOr[scala.Nothing],
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
     *
     * @see https://github.com/zeit/serve-handler#options
     */
-  config: js.UndefOr[scala.Nothing],
+  config: Unit,
     /**
     * If you want to replace the methods the package is using for interacting
     * with the file system and sending responses, you can pass them as the
@@ -171,12 +160,11 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
-    response: js.UndefOr[scala.Nothing],
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -184,12 +172,11 @@ object mod {
     * @see https://github.com/zeit/serve-handler#options
     */
   config: Config
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
-    response: js.UndefOr[scala.Nothing],
+    response: Unit,
     /**
     * If you want to customize the package's default behaviour, you can use
     * this argument to pass any of the configuration options provided.
@@ -207,12 +194,10 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
-  def apply(request: IncomingMessage, response: ServerResponse): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(request: IncomingMessage, response: ServerResponse): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
     response: ServerResponse,
@@ -222,7 +207,7 @@ object mod {
     *
     * @see https://github.com/zeit/serve-handler#options
     */
-  config: js.UndefOr[scala.Nothing],
+  config: Unit,
     /**
     * If you want to replace the methods the package is using for interacting
     * with the file system and sending responses, you can pass them as the
@@ -233,9 +218,8 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
     response: ServerResponse,
@@ -246,9 +230,8 @@ object mod {
     * @see https://github.com/zeit/serve-handler#options
     */
   config: Config
-  ): js.Promise[Unit] = js.native
-  @JSImport("serve-handler", JSImport.Namespace)
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     request: IncomingMessage,
     response: ServerResponse,
@@ -269,9 +252,12 @@ object mod {
     * `createReadStream` – all arguments are passed on to the native call.
     */
   methods: Methods
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], response.asInstanceOf[js.Any], config.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
+  @JSImport("serve-handler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Config extends StObject {
     
     /**
@@ -287,7 +273,7 @@ object mod {
       * strings (**NOTE:** the paths can only contain globs that are matched
       * using `minimatch`).
       */
-    var cleanUrls: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var cleanUrls: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * ### Disable directory listing or restrict it to certain paths.
@@ -300,7 +286,7 @@ object mod {
       *
       * **NOTE:** The paths can only contain globs that are matched using `minimatch`.
       */
-    var directoryListing: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var directoryListing: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * #### Calculate a strong `ETag` response header, instead of `Last-Modified`.
@@ -312,7 +298,7 @@ object mod {
       * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
       * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
       */
-    var etag: js.UndefOr[Boolean] = js.native
+    var etag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * #### Set custom headers for specific paths.
@@ -326,7 +312,7 @@ object mod {
       *
       * **NOTE:** The paths can only contain globs that are matched using `minimatch`.
       */
-    var headers: js.UndefOr[js.Array[Header]] = js.native
+    var headers: js.UndefOr[js.Array[Header]] = js.undefined
     
     /**
       * #### Set a sub directory to be served.
@@ -338,7 +324,7 @@ object mod {
       *
       * **NOTE:** The path cannot contain globs or regular expressions.
       */
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
     /**
       * #### Forward paths to different paths or external URLs.
@@ -351,7 +337,7 @@ object mod {
       * **NOTE:** The paths can contain globs (matched using `minimatch`) or
       * regular expressions (match using `path-to-regexp`).
       */
-    var redirects: js.UndefOr[js.Array[Redirect]] = js.native
+    var redirects: js.UndefOr[js.Array[Redirect]] = js.undefined
     
     /**
       * #### If a directory only contains one file, render it.
@@ -364,7 +350,7 @@ object mod {
       * see an image being rendered if the directory contains a single image
       * file.
       */
-    var renderSingle: js.UndefOr[Boolean] = js.native
+    var renderSingle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * #### Rewrite paths to different paths.
@@ -376,7 +362,7 @@ object mod {
       * **NOTE:** The paths can contain globs (matched using `minimatch`) or
       * regular expressions (match using `path-to-regexp`).
       */
-    var rewrites: js.UndefOr[js.Array[Rewrite]] = js.native
+    var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
     
     /**
       * #### Resolve symlinks instead of rendering a 404 error.
@@ -388,7 +374,7 @@ object mod {
       * Once this property is set, all symlinks will automatically be resolved to
       * their targets.
       */
-    var symlinks: js.UndefOr[Boolean] = js.native
+    var symlinks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * #### Remove or add trailing slashes to all paths.
@@ -398,7 +384,7 @@ object mod {
       * this property to `false` and `true` if you want to force them on all
       * URLs.
       */
-    var trailingSlash: js.UndefOr[Boolean] = js.native
+    var trailingSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * #### Exclude paths from the directory listing.
@@ -411,7 +397,7 @@ object mod {
       *
       * **NOTE:** The paths can only contain globs that are matched using `minimatch`.
       */
-    var unlisted: js.UndefOr[js.Array[String]] = js.native
+    var unlisted: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Config {
     
@@ -510,12 +496,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Header extends StObject {
     
-    var headers: js.Array[Key] = js.native
+    var headers: js.Array[Key]
     
-    var source: String = js.native
+    var source: String
   }
   object Header {
     
@@ -539,18 +524,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Methods extends StObject {
     
-    var createReadStream: js.UndefOr[FnCall] = js.native
+    var createReadStream: js.UndefOr[FnCall] = js.undefined
     
-    var lstat: js.UndefOr[Typeoflstat] = js.native
+    var lstat: js.UndefOr[Typeoflstat] = js.undefined
     
-    var readdir: js.UndefOr[Typeofreaddir] = js.native
+    var readdir: js.UndefOr[Typeofreaddir] = js.undefined
     
-    var realpath: js.UndefOr[Typeofrealpath] = js.native
+    var realpath: js.UndefOr[Typeofrealpath] = js.undefined
     
-    var sendError: js.UndefOr[SendErrorHandler] = js.native
+    var sendError: js.UndefOr[SendErrorHandler] = js.undefined
   }
   object Methods {
     
@@ -597,10 +581,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Redirect extends Rewrite {
+  trait Redirect
+    extends StObject
+       with Rewrite {
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object Redirect {
     
@@ -619,12 +604,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Rewrite extends StObject {
     
-    var destination: String = js.native
+    var destination: String
     
-    var source: String = js.native
+    var source: String
   }
   object Rewrite {
     

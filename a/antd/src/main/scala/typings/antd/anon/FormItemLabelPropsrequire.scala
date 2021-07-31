@@ -6,30 +6,28 @@ import typings.antd.interfaceMod.FormLabelAlign
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/form/FormItemLabel.FormItemLabelProps & {  required :boolean | undefined,   prefixCls :string} */
-@js.native
 trait FormItemLabelPropsrequire extends StObject {
   
-  var colon: js.UndefOr[Boolean] = js.native
+  var colon: js.UndefOr[Boolean] = js.undefined
   
-  var htmlFor: js.UndefOr[String] = js.native
+  var htmlFor: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var labelAlign: js.UndefOr[FormLabelAlign] = js.native
+  var labelAlign: js.UndefOr[FormLabelAlign] = js.undefined
   
-  var labelCol: js.UndefOr[ColProps] = js.native
+  var labelCol: js.UndefOr[ColProps] = js.undefined
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var requiredMark: js.UndefOr[typings.antd.formFormMod.RequiredMark] = js.native
+  var requiredMark: js.UndefOr[typings.antd.formFormMod.RequiredMark] = js.undefined
   
-  var tooltip: js.UndefOr[LabelTooltipType] = js.native
+  var tooltip: js.UndefOr[LabelTooltipType] = js.undefined
 }
 object FormItemLabelPropsrequire {
   

@@ -8,17 +8,15 @@ import typings.octokitTypes.endpointsMod.PullsMergeResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersPullsMergeEndpoint extends StObject {
   
-  var parameters: PullsMergeEndpoint = js.native
+  var parameters: PullsMergeEndpoint
   
-  var request: PullsMergeRequestOptions = js.native
+  var request: PullsMergeRequestOptions
   
-  var response: OctokitResponse[PullsMergeResponseData | PullsMergeResponse405Data | PullsMergeResponse409Data] = js.native
+  var response: OctokitResponse[PullsMergeResponseData | PullsMergeResponse405Data | PullsMergeResponse409Data]
 }
 object ParametersPullsMergeEndpoint {
   

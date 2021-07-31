@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateCredentialReportResponse extends StObject {
   
   /**
     * Information about the credential report.
     */
-  var Description: js.UndefOr[ReportStateDescriptionType] = js.native
+  var Description: js.UndefOr[ReportStateDescriptionType] = js.undefined
   
   /**
     * Information about the state of the credential report.
     */
-  var State: js.UndefOr[ReportStateType] = js.native
+  var State: js.UndefOr[ReportStateType] = js.undefined
 }
 object GenerateCredentialReportResponse {
   

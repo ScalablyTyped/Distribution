@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordOutput extends StObject {
   
   /**
     * The encryption type to use on the record. This parameter can be one of the following values:    NONE: Do not encrypt the records in the stream.    KMS: Use server-side encryption on the records in the stream using a customer-managed AWS KMS key.  
     */
-  var EncryptionType: js.UndefOr[typings.awsSdk.kinesisMod.EncryptionType] = js.native
+  var EncryptionType: js.UndefOr[typings.awsSdk.kinesisMod.EncryptionType] = js.undefined
   
   /**
     * The sequence number identifier that was assigned to the put data record. The sequence number for the record is unique across all records in the stream. A sequence number is the identifier associated with every record put into the stream.
     */
-  var SequenceNumber: typings.awsSdk.kinesisMod.SequenceNumber = js.native
+  var SequenceNumber: typings.awsSdk.kinesisMod.SequenceNumber
   
   /**
     * The shard ID of the shard where the data record was placed.
     */
-  var ShardId: typings.awsSdk.kinesisMod.ShardId = js.native
+  var ShardId: typings.awsSdk.kinesisMod.ShardId
 }
 object PutRecordOutput {
   

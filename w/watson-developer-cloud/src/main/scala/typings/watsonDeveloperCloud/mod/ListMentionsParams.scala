@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listMentions` operation. */
-@js.native
 trait ListMentionsParams extends StObject {
   
   /** Whether to include all element content in the returned data. If **export**=`false`, the returned data includes only information about the element itself. If **export**=`true`, all content, including subelements, is included. */
-  var _export: js.UndefOr[Boolean] = js.native
+  var _export: js.UndefOr[Boolean] = js.undefined
   
   /** The name of the entity. */
-  var entity: String = js.native
+  var entity: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Whether to include the audit properties (`created` and `updated` timestamps) in the response. */
-  var include_audit: js.UndefOr[Boolean] = js.native
+  var include_audit: js.UndefOr[Boolean] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object ListMentionsParams {
   

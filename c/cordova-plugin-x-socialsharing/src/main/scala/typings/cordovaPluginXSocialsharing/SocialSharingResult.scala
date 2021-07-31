@@ -2,15 +2,13 @@ package typings.cordovaPluginXSocialsharing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialSharingResult extends StObject {
   
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
-  var completed: Boolean = js.native
+  var completed: Boolean
 }
 object SocialSharingResult {
   

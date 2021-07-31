@@ -5,16 +5,17 @@ import typings.vegaLite.layerMod.LayerModel
 import typings.vegaLite.unitMod.UnitModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parseMod {
   
-  @JSImport("vega-lite/build/src/compile/axis/parse", "parseLayerAxes")
+  @JSImport("vega-lite/build/src/compile/axis/parse", JSImport.Namespace)
   @js.native
-  def parseLayerAxes(model: LayerModel): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/axis/parse", "parseUnitAxes")
-  @js.native
-  def parseUnitAxes(model: UnitModel): AxisComponentIndex = js.native
+  @scala.inline
+  def parseLayerAxes(model: LayerModel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLayerAxes")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def parseUnitAxes(model: UnitModel): AxisComponentIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUnitAxes")(model.asInstanceOf[js.Any]).asInstanceOf[AxisComponentIndex]
 }

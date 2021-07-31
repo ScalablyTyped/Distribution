@@ -8,12 +8,10 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.pipeline_error
 import typings.devtoolsProtocol.devtoolsProtocolStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Media {
   
-  @js.native
   trait PlayerError extends StObject {
     
     /**
@@ -23,12 +21,12 @@ object Media {
       * level enum - there is a todo bug to have that level removed and
       * use this instead. (crbug.com/1068454)
       */
-    var errorCode: String = js.native
+    var errorCode: String
     
     /**
       *  (PlayerErrorType enum)
       */
-    var `type`: pipeline_error | media_error = js.native
+    var `type`: pipeline_error | media_error
   }
   object PlayerError {
     
@@ -64,12 +62,11 @@ object Media {
     def Pipeline_error: pipeline_error = "pipeline_error".asInstanceOf[pipeline_error]
   }
   
-  @js.native
   trait PlayerErrorsRaisedEvent extends StObject {
     
-    var errors: js.Array[PlayerError] = js.native
+    var errors: js.Array[PlayerError]
     
-    var playerId: PlayerId = js.native
+    var playerId: PlayerId
   }
   object PlayerErrorsRaisedEvent {
     
@@ -93,12 +90,11 @@ object Media {
     }
   }
   
-  @js.native
   trait PlayerEvent extends StObject {
     
-    var timestamp: Timestamp = js.native
+    var timestamp: Timestamp
     
-    var value: String = js.native
+    var value: String
   }
   object PlayerEvent {
     
@@ -119,12 +115,11 @@ object Media {
     }
   }
   
-  @js.native
   trait PlayerEventsAddedEvent extends StObject {
     
-    var events: js.Array[PlayerEvent] = js.native
+    var events: js.Array[PlayerEvent]
     
-    var playerId: PlayerId = js.native
+    var playerId: PlayerId
   }
   object PlayerEventsAddedEvent {
     
@@ -150,7 +145,6 @@ object Media {
   
   type PlayerId = String
   
-  @js.native
   trait PlayerMessage extends StObject {
     
     /**
@@ -164,9 +158,9 @@ object Media {
       * introducing a new error type which should hopefully let us integrate
       * the error log level into the PlayerError type. (PlayerMessageLevel enum)
       */
-    var level: error | warning | info | debug = js.native
+    var level: error | warning | info | debug
     
-    var message: String = js.native
+    var message: String
   }
   object PlayerMessage {
     
@@ -209,12 +203,11 @@ object Media {
     def Warning: warning = "warning".asInstanceOf[warning]
   }
   
-  @js.native
   trait PlayerMessagesLoggedEvent extends StObject {
     
-    var messages: js.Array[PlayerMessage] = js.native
+    var messages: js.Array[PlayerMessage]
     
-    var playerId: PlayerId = js.native
+    var playerId: PlayerId
   }
   object PlayerMessagesLoggedEvent {
     
@@ -238,12 +231,11 @@ object Media {
     }
   }
   
-  @js.native
   trait PlayerPropertiesChangedEvent extends StObject {
     
-    var playerId: PlayerId = js.native
+    var playerId: PlayerId
     
-    var properties: js.Array[PlayerProperty] = js.native
+    var properties: js.Array[PlayerProperty]
   }
   object PlayerPropertiesChangedEvent {
     
@@ -267,12 +259,11 @@ object Media {
     }
   }
   
-  @js.native
   trait PlayerProperty extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object PlayerProperty {
     
@@ -293,10 +284,9 @@ object Media {
     }
   }
   
-  @js.native
   trait PlayersCreatedEvent extends StObject {
     
-    var players: js.Array[PlayerId] = js.native
+    var players: js.Array[PlayerId]
   }
   object PlayersCreatedEvent {
     

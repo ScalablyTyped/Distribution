@@ -10,9 +10,9 @@ A Twilio helper library
 | ------------------ | :-------------: |
 | Full name          | twilio |
 | Keywords           | twilio, sms, rest, api |
-| # releases         | 59 |
-| # dependents       | 362 |
-| # downloads        | 17599081 |
+| # releases         | 58 |
+| # dependents       | 386 |
+| # downloads        | 19956056 |
 | # stars            | 26 |
 
 ## Links

@@ -11,8 +11,8 @@ Extension for require.resolve which will resolve directories as well as files
 | Full name          | dir-resolve |
 | Keywords           | require, resolve, directory |
 | # releases         | 0 |
-| # dependents       | 3 |
-| # downloads        | 15490 |
+| # dependents       | 6 |
+| # downloads        | 19727 |
 | # stars            | 1 |
 
 ## Links

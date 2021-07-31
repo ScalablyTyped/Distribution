@@ -3,28 +3,26 @@ package typings.marko
 import typings.marko.taglibMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taglibFinderMod {
   
-  @JSImport("marko/src/compiler/taglib-finder", "clearCache")
+  @JSImport("marko/src/compiler/taglib-finder", JSImport.Namespace)
   @js.native
-  def clearCache(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("marko/src/compiler/taglib-finder", "excludeDir")
-  @js.native
-  def excludeDir(dir: String): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @JSImport("marko/src/compiler/taglib-finder", "excludePackage")
-  @js.native
-  def excludePackage(name: String): Unit = js.native
+  @scala.inline
+  def excludeDir(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("excludeDir")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("marko/src/compiler/taglib-finder", "find")
-  @js.native
-  def find(dirname: String, registeredTaglibs: js.Array[default]): js.Array[default] = js.native
+  @scala.inline
+  def excludePackage(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("excludePackage")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("marko/src/compiler/taglib-finder", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def find(dirname: String, registeredTaglibs: js.Array[default]): js.Array[default] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(dirname.asInstanceOf[js.Any], registeredTaglibs.asInstanceOf[js.Any])).asInstanceOf[js.Array[default]]
+  
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
 }

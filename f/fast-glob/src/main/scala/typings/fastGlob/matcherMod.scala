@@ -7,35 +7,58 @@ import typings.fastGlob.typesMod.Pattern
 import typings.fastGlob.typesMod.PatternRe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matcherMod {
   
   @JSImport("fast-glob/out/providers/matchers/matcher", JSImport.Default)
   @js.native
-  abstract class default protected () extends Matcher {
+  abstract class default protected ()
+    extends StObject
+       with Matcher {
     def this(
       _patterns: js.Array[Pattern],
       _settings: typings.fastGlob.settingsMod.default,
       _micromatchOptions: MicromatchOptions
     ) = this()
+    
+    /* CompleteClass */
+    var _fillStorage: js.Any = js.native
+    
+    /* CompleteClass */
+    var _getPatternSegments: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _micromatchOptions: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _patterns: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
+    
+    /* CompleteClass */
+    var _splitSegmentsIntoSections: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _storage: js.Array[PatternInfo] = js.native
   }
   
-  @js.native
-  trait DynamicPatternSegment extends PatternSegment {
+  trait DynamicPatternSegment
+    extends StObject
+       with PatternSegment {
     
-    var dynamic: `true` = js.native
+    var dynamic: `true`
     
-    var pattern: Pattern = js.native
+    var pattern: Pattern
     
-    var patternRe: PatternRe = js.native
+    var patternRe: PatternRe
   }
   object DynamicPatternSegment {
     
     @scala.inline
-    def apply(dynamic: `true`, pattern: Pattern, patternRe: PatternRe): DynamicPatternSegment = {
-      val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
+    def apply(pattern: Pattern, patternRe: PatternRe): DynamicPatternSegment = {
+      val __obj = js.Dynamic.literal(dynamic = true, pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
       __obj.asInstanceOf[DynamicPatternSegment]
     }
     
@@ -53,22 +76,21 @@ object matcherMod {
     }
   }
   
-  @js.native
   trait Matcher extends StObject {
     
-    var _fillStorage: js.Any = js.native
+    var _fillStorage: js.Any
     
-    var _getPatternSegments: js.Any = js.native
+    var _getPatternSegments: js.Any
     
-    val _micromatchOptions: js.Any = js.native
+    val _micromatchOptions: js.Any
     
-    val _patterns: js.Any = js.native
+    val _patterns: js.Any
     
-    val _settings: js.Any = js.native
+    val _settings: js.Any
     
-    var _splitSegmentsIntoSections: js.Any = js.native
+    var _splitSegmentsIntoSections: js.Any
     
-    val _storage: js.Array[PatternInfo] = js.native
+    val _storage: js.Array[PatternInfo]
   }
   object Matcher {
     
@@ -115,19 +137,18 @@ object matcherMod {
     }
   }
   
-  @js.native
   trait PatternInfo extends StObject {
     
     /**
       * Indicates that the pattern has a globstar (more than a single section).
       */
-    var complete: Boolean = js.native
+    var complete: Boolean
     
-    var pattern: Pattern = js.native
+    var pattern: Pattern
     
-    var sections: js.Array[PatternSection] = js.native
+    var sections: js.Array[PatternSection]
     
-    var segments: js.Array[PatternSegment] = js.native
+    var segments: js.Array[PatternSegment]
   }
   object PatternInfo {
     
@@ -175,30 +196,31 @@ object matcherMod {
   object PatternSegment {
     
     @scala.inline
-    def DynamicPatternSegment(dynamic: `true`, pattern: Pattern, patternRe: PatternRe): typings.fastGlob.matcherMod.DynamicPatternSegment = {
-      val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
+    def DynamicPatternSegment(pattern: Pattern, patternRe: PatternRe): typings.fastGlob.matcherMod.DynamicPatternSegment = {
+      val __obj = js.Dynamic.literal(dynamic = true, pattern = pattern.asInstanceOf[js.Any], patternRe = patternRe.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fastGlob.matcherMod.DynamicPatternSegment]
     }
     
     @scala.inline
-    def StaticPatternSegment(dynamic: `false`, pattern: Pattern): typings.fastGlob.matcherMod.StaticPatternSegment = {
-      val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    def StaticPatternSegment(pattern: Pattern): typings.fastGlob.matcherMod.StaticPatternSegment = {
+      val __obj = js.Dynamic.literal(dynamic = false, pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fastGlob.matcherMod.StaticPatternSegment]
     }
   }
   
-  @js.native
-  trait StaticPatternSegment extends PatternSegment {
+  trait StaticPatternSegment
+    extends StObject
+       with PatternSegment {
     
-    var dynamic: `false` = js.native
+    var dynamic: `false`
     
-    var pattern: Pattern = js.native
+    var pattern: Pattern
   }
   object StaticPatternSegment {
     
     @scala.inline
-    def apply(dynamic: `false`, pattern: Pattern): StaticPatternSegment = {
-      val __obj = js.Dynamic.literal(dynamic = dynamic.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    def apply(pattern: Pattern): StaticPatternSegment = {
+      val __obj = js.Dynamic.literal(dynamic = false, pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[StaticPatternSegment]
     }
     

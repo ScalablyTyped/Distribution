@@ -5,16 +5,16 @@ import typings.rmcTabs.modelsMod.Models.TabData
 import typings.rmcTabs.propsTypeMod.PropsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsPropsTypeMod {
   
-  @js.native
-  trait TabsProps extends PropsType {
+  trait TabsProps
+    extends StObject
+       with PropsType {
     
     /** render for replace the tab of tabbar. */
-    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.native
+    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
   }
   object TabsProps {
     

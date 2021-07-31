@@ -10,7 +10,6 @@ import typings.gulpTypedoc.gulpTypedocStrings.umd
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,138 +21,140 @@ object mod {
     * @param options Typedoc options
     * @return Empty output stream (ends when the files are written)
     */
+  @scala.inline
+  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   @JSImport("gulp-typedoc", JSImport.Namespace)
   @js.native
-  def apply(options: Options): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
   type Logger = js.Function3[/* message */ String, /* level */ Double, /* newline */ Boolean, Unit]
   
   /**
     * Typedoc options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * Specifies the fully qualified name of the root symbol. Defaults to global namespace.
       */
-    var entryPoint: js.UndefOr[String] = js.native
+    var entryPoint: js.UndefOr[String] = js.undefined
     
     /**
       * Exclude files by the given pattern when a path is provided as source. Supports standard minimatch patterns
       * (see TypeStrong/typedoc#170)
       */
-    var exclude: js.UndefOr[String] = js.native
+    var exclude: js.UndefOr[String] = js.undefined
     
     /**
       * Prevent externally resolved TypeScript files from being documented.
       */
-    var excludeExternals: js.UndefOr[Boolean] = js.native
+    var excludeExternals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent private members from being included in the generated documentation.
       */
-    var excludePrivate: js.UndefOr[Boolean] = js.native
+    var excludePrivate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent protected members from being included in the generated documentation.
       */
-    var excludeProtected: js.UndefOr[Boolean] = js.native
+    var excludeProtected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define a pattern for files that should be considered being external.
       */
-    var externalPattern: js.UndefOr[String] = js.native
+    var externalPattern: js.UndefOr[String] = js.undefined
     
     /**
       * Set the Google Analytics tracking ID and activate tracking code.
       */
-    var gaID: js.UndefOr[String] = js.native
+    var gaID: js.UndefOr[String] = js.undefined
     
     /**
       * Set the site name for Google Analytics. Defaults to `auto`
       */
-    var gaSite: js.UndefOr[String] = js.native
+    var gaSite: js.UndefOr[String] = js.undefined
     
     /**
       * Use specified revision or branch instead of the last revision for linking to GitHub source files.
       */
-    var gitRevision: js.UndefOr[String] = js.native
+    var gitRevision: js.UndefOr[String] = js.undefined
     
     /**
       * Do not print the TypeDoc link at the end of the page.
       */
-    var hideGenerator: js.UndefOr[Boolean] = js.native
+    var hideGenerator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turn on parsing of .d.ts declaration files.
       */
-    var includeDeclarations: js.UndefOr[Boolean] = js.native
+    var includeDeclarations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies the location to look for included documents. One may use [[include:FILENAME]] in comments to include
       * documents from this location.
       */
-    var includes: js.UndefOr[String] = js.native
+    var includes: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the location and file name a json file describing the project is written to. When specified no
       * documentation will be generated.
       */
-    var json: js.UndefOr[String] = js.native
+    var json: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Logger | none] = js.native
+    var logger: js.UndefOr[Logger | none] = js.undefined
     
     /**
       * Specifies the location with media files that should be copied to the output directory. In order to create a link
       * to media files use the pattern media://FILENAME in comments.
       */
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the output mode the project is used to be compiled with.
       */
-    var mode: js.UndefOr[file | modules] = js.native
+    var mode: js.UndefOr[file | modules] = js.undefined
     
     /**
       * Specify module code generation: "commonjs", "amd", "system" or "umd".
       */
-    var module: js.UndefOr[commonjs | amd | system | umd] = js.native
+    var module: js.UndefOr[commonjs | amd | system | umd] = js.undefined
     
     /**
       * Set the name of the project that will be used in the header of the template.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the location the documentation should be written to.
       */
-    var out: String = js.native
+    var out: String
     
     /**
       * Specify the npm plugins that should be loaded.
       */
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and
       * start the documentation on the globals page.
       */
-    var readme: js.UndefOr[String] = js.native
+    var readme: js.UndefOr[String] = js.undefined
     
     /**
       * Specify ECMAScript target version: "ES3" (default), "ES5" or "ES6"
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the path to the theme that should be used.
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[Boolean] = js.native
+    var version: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

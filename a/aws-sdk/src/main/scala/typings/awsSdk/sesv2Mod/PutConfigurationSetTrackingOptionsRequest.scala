@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConfigurationSetTrackingOptionsRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to add a custom tracking domain to.
     */
-  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesv2Mod.ConfigurationSetName
   
   /**
     * The domain that you want to use to track open and click events.
     */
-  var CustomRedirectDomain: js.UndefOr[typings.awsSdk.sesv2Mod.CustomRedirectDomain] = js.native
+  var CustomRedirectDomain: js.UndefOr[typings.awsSdk.sesv2Mod.CustomRedirectDomain] = js.undefined
 }
 object PutConfigurationSetTrackingOptionsRequest {
   

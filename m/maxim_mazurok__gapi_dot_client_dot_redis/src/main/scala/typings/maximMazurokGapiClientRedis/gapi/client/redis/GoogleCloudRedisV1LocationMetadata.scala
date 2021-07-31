@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRedisV1LocationMetadata extends StObject {
   
   /**
@@ -16,8 +14,8 @@ trait GoogleCloudRedisV1LocationMetadata extends StObject {
   var availableZones: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudRedisV1LocationMetadata {
   
@@ -34,7 +32,7 @@ object GoogleCloudRedisV1LocationMetadata {
     def setAvailableZones(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRedis.maximMazurokGapiClientRedisStrings.GoogleCloudRedisV1LocationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
     @scala.inline

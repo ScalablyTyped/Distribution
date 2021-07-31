@@ -7,7 +7,6 @@ import typings.wordpressEditPost.anon.OmitPropsname
 import typings.wordpressEditPost.pluginPostPublishPanelMod.PluginPostPublishPanel.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginPostPublishPanelMod {
@@ -33,9 +32,9 @@ object pluginPostPublishPanelMod {
     */
   object default {
     
-    @JSImport("@wordpress/edit-post/components/sidebar/plugin-post-publish-panel", JSImport.Default)
-    @js.native
-    def apply(props: Props): Element = js.native
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/edit-post/components/sidebar/plugin-post-publish-panel", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -49,27 +48,26 @@ object pluginPostPublishPanelMod {
   
   object PluginPostPublishPanel {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
       /**
         * An optional class name added to the panel.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Whether to have the panel initially opened. When no title is provided it is always
         * opened.
         * @defaultValue `false`
         */
-      var initialOpen: js.UndefOr[Boolean] = js.native
+      var initialOpen: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Title displayed at the top of the panel.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Props {
       

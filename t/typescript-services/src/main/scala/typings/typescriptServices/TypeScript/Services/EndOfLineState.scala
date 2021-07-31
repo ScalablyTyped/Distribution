@@ -2,7 +2,6 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait EndOfLineState extends StObject
 object EndOfLineState extends StObject {
   
   @js.native
-  sealed trait InDoubleQuoteStringLiteral extends EndOfLineState
+  sealed trait InDoubleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
   
   @js.native
-  sealed trait InMultiLineCommentTrivia extends EndOfLineState
+  sealed trait InMultiLineCommentTrivia
+    extends StObject
+       with EndOfLineState
   
   @js.native
-  sealed trait InSingleQuoteStringLiteral extends EndOfLineState
+  sealed trait InSingleQuoteStringLiteral
+    extends StObject
+       with EndOfLineState
   
   @js.native
-  sealed trait Start extends EndOfLineState
+  sealed trait Start
+    extends StObject
+       with EndOfLineState
 }

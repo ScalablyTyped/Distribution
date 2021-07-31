@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The text response message.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentMessageText extends StObject {
   
   /**
     * Optional. The collection of the agent&#39;s responses.
     */
-  var text: js.UndefOr[js.Array[String]] = js.native
+  var text: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageText {
   

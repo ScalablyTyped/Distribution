@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewDataSelectorPanel
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,22 +15,22 @@ trait IgPivotViewDataSelectorPanel
   /**
     * Determines if the panel containing the igPivotDataSelector will initially collapsed.
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if the panel containing the igPivotDataSelector will be collapsible.
     */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the position of the data selector panel inside the igPivotView widget.
     */
-  var location: js.UndefOr[js.Any] = js.native
+  var location: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Determines if the panel containing the igPivotDataSelector will be resizable.
     */
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines the size of the igPivotDataSelector  panel. The recommended value is 250px.
@@ -41,7 +40,7 @@ trait IgPivotViewDataSelectorPanel
     * "number" The size can be set as a number.
     * "null" will automatically size the panel.
     */
-  var size: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.undefined
 }
 object IgPivotViewDataSelectorPanel {
   

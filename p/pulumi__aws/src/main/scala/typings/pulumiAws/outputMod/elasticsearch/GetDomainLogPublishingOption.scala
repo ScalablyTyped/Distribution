@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainLogPublishingOption extends StObject {
   
   /**
     * The CloudWatch Log Group where the logs are published.
     */
-  var cloudwatchLogGroupArn: String = js.native
+  var cloudwatchLogGroupArn: String
   
   /**
     * Whether node to node encryption is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * The type of Elasticsearch log being published.
     */
-  var logType: String = js.native
+  var logType: String
 }
 object GetDomainLogPublishingOption {
   

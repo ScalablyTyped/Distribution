@@ -2,10 +2,8 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPoolsDeleteRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaPoolsDeleteRequest extends StObject {
     * These instances won&#39;t be deleted, but the associated replica objects
     * will be removed.
     */
-  var abandonInstances: js.UndefOr[js.Array[String]] = js.native
+  var abandonInstances: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPoolsDeleteRequest {
   

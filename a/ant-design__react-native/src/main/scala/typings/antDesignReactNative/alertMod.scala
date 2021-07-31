@@ -6,31 +6,25 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertMod {
   
-  @JSImport("@ant-design/react-native/lib/modal/alert", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/modal/alert", JSImport.Namespace)
   @js.native
-  def default(title: ReactNode, content: ReactNode): Double = js.native
-  @JSImport("@ant-design/react-native/lib/modal/alert", JSImport.Default)
-  @js.native
-  def default(
-    title: ReactNode,
-    content: ReactNode,
-    actions: js.UndefOr[scala.Nothing],
-    onBackHandler: CallbackOnBackHandler
-  ): Double = js.native
-  @JSImport("@ant-design/react-native/lib/modal/alert", JSImport.Default)
-  @js.native
-  def default(title: ReactNode, content: ReactNode, actions: js.Array[Action[TextStyle]]): Double = js.native
-  @JSImport("@ant-design/react-native/lib/modal/alert", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(title: ReactNode, content: ReactNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def default(title: ReactNode, content: ReactNode, actions: js.Array[Action[TextStyle]]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def default(
     title: ReactNode,
     content: ReactNode,
     actions: js.Array[Action[TextStyle]],
     onBackHandler: CallbackOnBackHandler
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def default(title: ReactNode, content: ReactNode, actions: Unit, onBackHandler: CallbackOnBackHandler): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

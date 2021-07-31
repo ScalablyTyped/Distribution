@@ -3,31 +3,29 @@ package typings.easyXHeaders.anon
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Env extends StObject {
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[js.Any] = js.native
+  var env: js.UndefOr[js.Any] = js.undefined
   
-  var gid: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.undefined
   
-  var input: js.UndefOr[String | Buffer] = js.native
+  var input: js.UndefOr[String | Buffer] = js.undefined
   
-  var killSignal: js.UndefOr[String] = js.native
+  var killSignal: js.UndefOr[String] = js.undefined
   
-  var maxBuffer: js.UndefOr[Double] = js.native
+  var maxBuffer: js.UndefOr[Double] = js.undefined
   
-  var stdio: js.UndefOr[js.Any] = js.native
+  var stdio: js.UndefOr[js.Any] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var uid: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.undefined
 }
 object Env {
   

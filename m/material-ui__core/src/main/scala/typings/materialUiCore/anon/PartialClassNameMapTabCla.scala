@@ -2,36 +2,34 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tab/Tab.TabClassKey>> */
-@js.native
 trait PartialClassNameMapTabCla extends StObject {
   
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
-  var fullWidth: js.UndefOr[String] = js.native
+  var fullWidth: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelContainer: js.UndefOr[String] = js.native
+  var labelContainer: js.UndefOr[String] = js.undefined
   
-  var labelIcon: js.UndefOr[String] = js.native
+  var labelIcon: js.UndefOr[String] = js.undefined
   
-  var labelWrapped: js.UndefOr[String] = js.native
+  var labelWrapped: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
-  var textColorInherit: js.UndefOr[String] = js.native
+  var textColorInherit: js.UndefOr[String] = js.undefined
   
-  var textColorPrimary: js.UndefOr[String] = js.native
+  var textColorPrimary: js.UndefOr[String] = js.undefined
   
-  var textColorSecondary: js.UndefOr[String] = js.native
+  var textColorSecondary: js.UndefOr[String] = js.undefined
   
-  var wrapper: js.UndefOr[String] = js.native
+  var wrapper: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapTabCla {
   

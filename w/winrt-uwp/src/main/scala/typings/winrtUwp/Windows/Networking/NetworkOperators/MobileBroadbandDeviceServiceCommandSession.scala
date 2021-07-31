@@ -4,15 +4,13 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a device service command session which allows the caller to submit predefined commands to the modem on a mobile broadband device service. */
-@js.native
 trait MobileBroadbandDeviceServiceCommandSession extends StObject {
   
   /** Closes the command session on a mobile broadband device service. */
-  def closeSession(): Unit = js.native
+  def closeSession(): Unit
   
   /**
     * Starts an asynchronous operation on a mobile broadband device service to send a query command to the command session.
@@ -20,7 +18,7 @@ trait MobileBroadbandDeviceServiceCommandSession extends StObject {
     * @param data The data to be submitted as part of the command.
     * @return An asynchronous operation that returns the result of the command.
     */
-  def sendQueryCommandAsync(commandId: Double, data: IBuffer): IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult] = js.native
+  def sendQueryCommandAsync(commandId: Double, data: IBuffer): IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]
   
   /**
     * Starts an asynchronous operation on a mobile broadband device service to send a set command to the command session.
@@ -28,7 +26,7 @@ trait MobileBroadbandDeviceServiceCommandSession extends StObject {
     * @param data The data to be submitted as part of the command.
     * @return An asynchronous operation that returns the result of the command.
     */
-  def sendSetCommandAsync(commandId: Double, data: IBuffer): IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult] = js.native
+  def sendSetCommandAsync(commandId: Double, data: IBuffer): IPromiseWithIAsyncOperation[MobileBroadbandDeviceServiceCommandResult]
 }
 object MobileBroadbandDeviceServiceCommandSession {
   

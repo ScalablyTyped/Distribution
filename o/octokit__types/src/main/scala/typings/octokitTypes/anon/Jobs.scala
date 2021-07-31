@@ -2,15 +2,13 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jobs extends StObject {
   
-  var jobs: Double = js.native
+  var jobs: Double
   
-  var total_ms: Double = js.native
+  var total_ms: Double
 }
 object Jobs {
   

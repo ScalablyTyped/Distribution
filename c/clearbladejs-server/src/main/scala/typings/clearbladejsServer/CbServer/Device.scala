@@ -2,25 +2,23 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  def create(newDevice: js.Object, callback: CbCallback): Unit = js.native
+  def create(newDevice: js.Object, callback: CbCallback): Unit
   
-  def delete(query: Query, callback: CbCallback): Unit = js.native
+  def delete(query: Query, callback: CbCallback): Unit
   
-  def fetch(query: Query, callback: CbCallback): Unit = js.native
+  def fetch(query: Query, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(query: Query, changes: js.Object, callback: CbCallback): Unit = js.native
+  def update(query: Query, changes: js.Object, callback: CbCallback): Unit
 }
 object Device {
   

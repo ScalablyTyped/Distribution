@@ -3,7 +3,6 @@ package typings.hapiCall
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,17 +15,16 @@ object mod {
     def add(definition: RouteDefinition): Unit = js.native
     def add(definition: RouteDefinition, data: js.Any): Unit = js.native
     
-    def route(method: String, path: String): Route[_, _] = js.native
+    def route(method: String, path: String): Route[js.Any, js.Any] = js.native
   }
   
-  @js.native
   trait Match[P, D] extends StObject {
     
-    var params: P = js.native
+    var params: P
     
-    var paramsArray: js.Array[String] = js.native
+    var paramsArray: js.Array[String]
     
-    var route: D = js.native
+    var route: D
   }
   object Match {
     
@@ -37,7 +35,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match[_, _], P, D] (val x: Self with (Match[P, D])) extends AnyVal {
+    implicit class MatchMutableBuilder[Self <: Match[?, ?], P, D] (val x: Self & (Match[P, D])) extends AnyVal {
       
       @scala.inline
       def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
@@ -55,12 +53,11 @@ object mod {
   
   type Route[P, D] = (Match[P, D]) | Error
   
-  @js.native
   trait RouteDefinition extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
   }
   object RouteDefinition {
     
@@ -81,10 +78,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RouterOptions extends StObject {
     
-    var isCaseSensitive: Boolean = js.native
+    var isCaseSensitive: Boolean
   }
   object RouterOptions {
     

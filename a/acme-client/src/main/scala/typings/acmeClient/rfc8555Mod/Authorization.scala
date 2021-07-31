@@ -8,21 +8,19 @@ import typings.acmeClient.acmeClientStrings.revoked
 import typings.acmeClient.acmeClientStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorization extends StObject {
   
-  var challenges: js.Array[Challenge] = js.native
+  var challenges: js.Array[Challenge]
   
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var status: pending | valid | invalid | deactivated | expired | revoked = js.native
+  var status: pending | valid | invalid | deactivated | expired | revoked
   
-  var wildcard: js.UndefOr[Boolean] = js.native
+  var wildcard: js.UndefOr[Boolean] = js.undefined
 }
 object Authorization {
   

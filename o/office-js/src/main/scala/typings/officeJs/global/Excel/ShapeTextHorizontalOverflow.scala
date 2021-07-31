@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShapeTextHorizontalOverflow extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ShapeTextHorizontalOverflow with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ShapeTextHorizontalOverflow & String] = js.native
   
-  /* "Clip" */ val clip: typings.officeJs.Excel.ShapeTextHorizontalOverflow.clip with String = js.native
+  /* "Clip" */ val clip: typings.officeJs.Excel.ShapeTextHorizontalOverflow.clip & String = js.native
   
-  /* "Overflow" */ val overflow: typings.officeJs.Excel.ShapeTextHorizontalOverflow.overflow with String = js.native
+  /* "Overflow" */ val overflow: typings.officeJs.Excel.ShapeTextHorizontalOverflow.overflow & String = js.native
 }

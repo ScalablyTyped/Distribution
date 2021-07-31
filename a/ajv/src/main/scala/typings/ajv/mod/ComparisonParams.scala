@@ -2,17 +2,17 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComparisonParams extends ErrorParameters {
+trait ComparisonParams
+  extends StObject
+     with ErrorParameters {
   
-  var comparison: String = js.native
+  var comparison: String
   
-  var exclusive: Boolean = js.native
+  var exclusive: Boolean
   
-  var limit: Double | String = js.native
+  var limit: Double | String
 }
 object ComparisonParams {
   

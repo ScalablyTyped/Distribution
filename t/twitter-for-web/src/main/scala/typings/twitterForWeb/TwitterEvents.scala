@@ -9,7 +9,6 @@ import typings.twitterForWeb.twitterForWebStrings.retweet
 import typings.twitterForWeb.twitterForWebStrings.tweet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

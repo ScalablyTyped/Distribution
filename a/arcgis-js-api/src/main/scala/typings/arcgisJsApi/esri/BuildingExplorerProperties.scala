@@ -2,46 +2,46 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildingExplorerProperties extends WidgetProperties {
+trait BuildingExplorerProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of layers of type [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) that are added to the widget for exploration.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#layers)
     */
-  var layers: js.UndefOr[CollectionProperties[BuildingSceneLayerProperties]] = js.native
+  var layers: js.UndefOr[CollectionProperties[BuildingSceneLayerProperties]] = js.undefined
   
   /**
     * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#viewModel)
     */
-  var viewModel: js.UndefOr[BuildingExplorerViewModelProperties] = js.native
+  var viewModel: js.UndefOr[BuildingExplorerViewModelProperties] = js.undefined
   
   /**
     * This property provides the ability to display or hide the individual elements of the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BuildingExplorer.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[BuildingExplorerVisibleElements] = js.native
+  var visibleElements: js.UndefOr[BuildingExplorerVisibleElements] = js.undefined
 }
 object BuildingExplorerProperties {
   

@@ -2,23 +2,21 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrioConfig extends StObject {
   
-  var exclude: js.UndefOr[js.Any] = js.native
+  var exclude: js.UndefOr[js.Any] = js.undefined
   
-  var include: js.UndefOr[js.Any] = js.native
+  var include: js.UndefOr[js.Any] = js.undefined
   
-  var inherited: js.UndefOr[Boolean] = js.native
+  var inherited: js.UndefOr[Boolean] = js.undefined
   
-  var `private`: js.UndefOr[Boolean] = js.native
+  var `private`: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
 }
 object ErrioConfig {
   

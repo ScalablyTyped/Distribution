@@ -2,15 +2,13 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabElement extends StObject {
   
-  var bodyElem: String = js.native
+  var bodyElem: String
   
-  var headerElem: String = js.native
+  var headerElem: String
 }
 object TabElement {
   

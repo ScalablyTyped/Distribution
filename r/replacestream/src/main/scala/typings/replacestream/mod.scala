@@ -3,37 +3,31 @@ package typings.replacestream
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: String, replace: String): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: String, replace: String, options: Options): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: String, replace: ReplaceFunction): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: String, replace: ReplaceFunction, options: Options): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: RegExp, replace: String): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: RegExp, replace: String, options: Options): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: RegExp, replace: ReplaceFunction): js.Any = js.native
-  @JSImport("replacestream", JSImport.Namespace)
-  @js.native
-  def apply(search: RegExp, replace: ReplaceFunction, options: Options): js.Any = js.native
+  @scala.inline
+  def apply(search: String, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: String, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: String, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: String, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: RegExp, replace: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: RegExp, replace: String, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: RegExp, replace: ReplaceFunction): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(search: RegExp, replace: ReplaceFunction, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(search.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("replacestream", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -41,7 +35,7 @@ object mod {
       *
       * Default: `"utf8"`
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * When doing string match (not relevant for regex matching) whether to do a
@@ -49,7 +43,7 @@ object mod {
       *
       * Default: `true`
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets a limit on the number of times the replacement will be made. This
@@ -57,7 +51,7 @@ object mod {
       *
       * Default: `Infinity`
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * When doing cross-chunk replacing, this sets the maximum length match
@@ -65,7 +59,7 @@ object mod {
       *
       * Default: `100`
       */
-    var maxMatchLen: js.UndefOr[Double] = js.native
+    var maxMatchLen: js.UndefOr[Double] = js.undefined
     
     /**
       * When provided, these flags will be used when creating the search regexes
@@ -74,7 +68,7 @@ object mod {
       * @deprecated as the flags set on the regex provided are no longer mutated
       * if this is not provided.
       */
-    var regExpOptions: js.UndefOr[String] = js.native
+    var regExpOptions: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooleanColumnStatisticsData extends StObject {
   
   /**
     * The number of false values in the column.
     */
-  var NumberOfFalses: NonNegativeLong = js.native
+  var NumberOfFalses: NonNegativeLong
   
   /**
     * The number of null values in the column.
     */
-  var NumberOfNulls: NonNegativeLong = js.native
+  var NumberOfNulls: NonNegativeLong
   
   /**
     * The number of true values in the column.
     */
-  var NumberOfTrues: NonNegativeLong = js.native
+  var NumberOfTrues: NonNegativeLong
 }
 object BooleanColumnStatisticsData {
   

@@ -10,9 +10,9 @@ Toolbox to extract information from Vue component files for documentation genera
 | ------------------ | :-------------: |
 | Full name          | vue-docgen-api |
 | Keywords           | vue, documentation-generation, jsdoc, parse |
-| # releases         | 147 |
-| # dependents       | 38 |
-| # downloads        | 13215199 |
+| # releases         | 129 |
+| # dependents       | 44 |
+| # downloads        | 15210737 |
 | # stars            | 1 |
 
 ## Links

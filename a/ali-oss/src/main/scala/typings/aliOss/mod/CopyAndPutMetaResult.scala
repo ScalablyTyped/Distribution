@@ -2,15 +2,13 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyAndPutMetaResult extends StObject {
   
-  var data: ModifyData = js.native
+  var data: ModifyData
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object CopyAndPutMetaResult {
   

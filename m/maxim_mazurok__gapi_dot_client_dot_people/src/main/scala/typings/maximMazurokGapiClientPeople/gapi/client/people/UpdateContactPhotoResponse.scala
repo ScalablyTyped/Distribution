@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateContactPhotoResponse extends StObject {
   
   /** The updated person, if person_fields is set in the UpdateContactPhotoRequest; otherwise this will be unset. */
-  var person: js.UndefOr[Person] = js.native
+  var person: js.UndefOr[Person] = js.undefined
 }
 object UpdateContactPhotoResponse {
   

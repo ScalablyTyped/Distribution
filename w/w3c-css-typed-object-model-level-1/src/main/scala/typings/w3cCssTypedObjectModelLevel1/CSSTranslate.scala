@@ -3,17 +3,17 @@ package typings.w3cCssTypedObjectModelLevel1
 import typings.std.DOMMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSSTranslate extends CSSTransformComponent {
+trait CSSTranslate
+  extends StObject
+     with CSSTransformComponent {
   
-  var x: CSSNumericValue = js.native
+  var x: CSSNumericValue
   
-  var y: CSSNumericValue = js.native
+  var y: CSSNumericValue
   
-  var z: CSSNumericValue = js.native
+  var z: CSSNumericValue
 }
 object CSSTranslate {
   

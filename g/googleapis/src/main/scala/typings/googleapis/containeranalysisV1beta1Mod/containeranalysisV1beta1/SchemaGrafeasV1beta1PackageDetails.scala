@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a package occurrence.
   */
-@js.native
 trait SchemaGrafeasV1beta1PackageDetails extends StObject {
   
   /**
     * Required. Where the package was installed.
     */
-  var installation: js.UndefOr[SchemaInstallation] = js.native
+  var installation: js.UndefOr[SchemaInstallation] = js.undefined
 }
 object SchemaGrafeasV1beta1PackageDetails {
   

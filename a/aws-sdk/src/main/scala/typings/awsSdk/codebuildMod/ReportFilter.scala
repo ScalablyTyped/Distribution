@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportFilter extends StObject {
   
   /**
     *  The status used to filter reports. You can filter using one status only. 
     */
-  var status: js.UndefOr[ReportStatusType] = js.native
+  var status: js.UndefOr[ReportStatusType] = js.undefined
 }
 object ReportFilter {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAvailabilityMonitorTestOutput extends StObject {
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The time the High Availability monitoring test was started. If a test hasn't been performed, the value of this field is null.
     */
-  var StartTime: js.UndefOr[Time] = js.native
+  var StartTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The status of the High Availability monitoring test. If a test hasn't been performed, the value of this field is null.
     */
-  var Status: js.UndefOr[AvailabilityMonitorTestStatus] = js.native
+  var Status: js.UndefOr[AvailabilityMonitorTestStatus] = js.undefined
 }
 object DescribeAvailabilityMonitorTestOutput {
   

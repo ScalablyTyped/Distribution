@@ -4,71 +4,69 @@ import typings.aliApp.anon.Address
 import typings.aliApp.anon.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 位置 https://docs.alipay.com/mini/api/location
-@js.native
 trait LocationData extends StObject {
   
   /** 精确度，单位m */
-  var accuracy: String = js.native
+  var accuracy: String
   
   /**
     * 城市(type>0生效)
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * 城市级别的地区代码(type>0生效)
     */
-  var cityAdcode: js.UndefOr[String] = js.native
+  var cityAdcode: js.UndefOr[String] = js.undefined
   
   /**
     * 国家(type>0生效)
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * 国家编号 (type>0生效)
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * 区县(type>0生效)
     */
-  var district: js.UndefOr[String] = js.native
+  var district: js.UndefOr[String] = js.undefined
   
   /**
     * 区县级别的地区代码(type>0生效)
     */
-  var districtAdcode: js.UndefOr[String] = js.native
+  var districtAdcode: js.UndefOr[String] = js.undefined
   
   /**
     * 水平精确度，单位m
     */
-  var horizontalAccuracy: String = js.native
+  var horizontalAccuracy: String
   
   /** 纬度 */
-  var latitude: String = js.native
+  var latitude: String
   
   /** 经度 */
-  var longitude: String = js.native
+  var longitude: String
   
   /**
     * 需要POI级别逆地理的才会有的字段, 定位点附近的 POI 信息，结构是：{ name, address } （type > 2生效）
     */
-  var pois: js.UndefOr[js.Array[Address]] = js.native
+  var pois: js.UndefOr[js.Array[Address]] = js.undefined
   
   /**
     * 省份(type>0生效)
     */
-  var province: js.UndefOr[String] = js.native
+  var province: js.UndefOr[String] = js.undefined
   
   /**
     * 需要街道级别逆地理的才会有的字段,街道门牌信息，结构是：{ street, number } (type > 1生效)
     */
-  var streetNumber: js.UndefOr[Number] = js.native
+  var streetNumber: js.UndefOr[Number] = js.undefined
 }
 object LocationData {
   

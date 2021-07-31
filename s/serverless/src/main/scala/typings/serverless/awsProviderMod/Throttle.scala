@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Throttle extends StObject {
   
-  var burstLimit: js.UndefOr[Double | String] = js.native
+  var burstLimit: js.UndefOr[Double | String] = js.undefined
   
-  var rateLimit: js.UndefOr[Double | String] = js.native
+  var rateLimit: js.UndefOr[Double | String] = js.undefined
 }
 object Throttle {
   

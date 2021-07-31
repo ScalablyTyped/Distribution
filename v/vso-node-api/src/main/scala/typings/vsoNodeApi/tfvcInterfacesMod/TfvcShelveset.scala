@@ -4,19 +4,19 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcShelveset extends TfvcShelvesetRef {
+trait TfvcShelveset
+  extends StObject
+     with TfvcShelvesetRef {
   
-  var changes: js.Array[TfvcChange] = js.native
+  var changes: js.Array[TfvcChange]
   
-  var notes: js.Array[CheckinNote] = js.native
+  var notes: js.Array[CheckinNote]
   
-  var policyOverride: TfvcPolicyOverrideInfo = js.native
+  var policyOverride: TfvcPolicyOverrideInfo
   
-  var workItems: js.Array[AssociatedWorkItem] = js.native
+  var workItems: js.Array[AssociatedWorkItem]
 }
 object TfvcShelveset {
   

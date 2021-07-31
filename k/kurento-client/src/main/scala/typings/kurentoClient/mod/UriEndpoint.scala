@@ -4,11 +4,12 @@ import typings.kurentoClient.anon.EventUriEndpointStateChan
 import typings.kurentoClient.kurentoClientStrings.UriEndpointStateChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UriEndpoint extends MediaElement {
+trait UriEndpoint
+  extends StObject
+     with MediaElement {
   
   def getState(): js.Promise[UriEndpointState] = js.native
   def getState(callback: Callback[UriEndpointState]): js.Promise[UriEndpointState] = js.native

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,20 +14,32 @@ sealed trait ChartTrendlineType extends StObject
 object ChartTrendlineType extends StObject {
   
   @js.native
-  sealed trait exponential extends ChartTrendlineType
+  sealed trait exponential
+    extends StObject
+       with ChartTrendlineType
   
   @js.native
-  sealed trait linear extends ChartTrendlineType
+  sealed trait linear
+    extends StObject
+       with ChartTrendlineType
   
   @js.native
-  sealed trait logarithmic extends ChartTrendlineType
+  sealed trait logarithmic
+    extends StObject
+       with ChartTrendlineType
   
   @js.native
-  sealed trait movingAverage extends ChartTrendlineType
+  sealed trait movingAverage
+    extends StObject
+       with ChartTrendlineType
   
   @js.native
-  sealed trait polynomial extends ChartTrendlineType
+  sealed trait polynomial
+    extends StObject
+       with ChartTrendlineType
   
   @js.native
-  sealed trait power extends ChartTrendlineType
+  sealed trait power
+    extends StObject
+       with ChartTrendlineType
 }

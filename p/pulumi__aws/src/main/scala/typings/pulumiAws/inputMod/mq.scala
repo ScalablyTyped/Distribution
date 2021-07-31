@@ -3,23 +3,21 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mq {
   
-  @js.native
   trait BrokerConfiguration extends StObject {
     
     /**
       * The Configuration ID.
       */
-    var id: js.UndefOr[Input[String]] = js.native
+    var id: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Revision of the Configuration.
       */
-    var revision: js.UndefOr[Input[Double]] = js.native
+    var revision: js.UndefOr[Input[Double]] = js.undefined
   }
   object BrokerConfiguration {
     
@@ -46,18 +44,17 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerEncryptionOptions extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Key Management Service (KMS) Customer Master Key (CMK) to use for encryption at rest. Requires setting `useAwsOwnedKey` to `false`. To perform drift detection when AWS managed CMKs or customer managed CMKs are in use, this value must be configured.
       */
-    var kmsKeyId: js.UndefOr[Input[String]] = js.native
+    var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean to enable an AWS owned Key Management Service (KMS) Customer Master Key (CMK) that is not in your account. Defaults to `true`. Setting to `false` without configuring `kmsKeyId` will create an AWS managed Customer Master Key (CMK) aliased to `aws/mq` in your account.
       */
-    var useAwsOwnedKey: js.UndefOr[Input[Boolean]] = js.native
+    var useAwsOwnedKey: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BrokerEncryptionOptions {
     
@@ -84,14 +81,13 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerInstance extends StObject {
     
-    var consoleUrl: js.UndefOr[Input[String]] = js.native
+    var consoleUrl: js.UndefOr[Input[String]] = js.undefined
     
-    var endpoints: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var endpoints: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    var ipAddress: js.UndefOr[Input[String]] = js.native
+    var ipAddress: js.UndefOr[Input[String]] = js.undefined
   }
   object BrokerInstance {
     
@@ -127,18 +123,17 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerLogs extends StObject {
     
     /**
       * Enables audit logging. User management action made using JMX or the ActiveMQ Web Console is logged. Defaults to `false`.
       */
-    var audit: js.UndefOr[Input[Boolean]] = js.native
+    var audit: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enables general logging via CloudWatch. Defaults to `false`.
       */
-    var general: js.UndefOr[Input[Boolean]] = js.native
+    var general: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BrokerLogs {
     
@@ -165,23 +160,22 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerMaintenanceWindowStartTime extends StObject {
     
     /**
       * The day of the week. e.g. `MONDAY`, `TUESDAY`, or `WEDNESDAY`
       */
-    var dayOfWeek: Input[String] = js.native
+    var dayOfWeek: Input[String]
     
     /**
       * The time, in 24-hour format. e.g. `02:00`
       */
-    var timeOfDay: Input[String] = js.native
+    var timeOfDay: Input[String]
     
     /**
       * The time zone, UTC by default, in either the Country/City format, or the UTC offset format. e.g. `CET`
       */
-    var timeZone: Input[String] = js.native
+    var timeZone: Input[String]
   }
   object BrokerMaintenanceWindowStartTime {
     
@@ -205,28 +199,27 @@ object mq {
     }
   }
   
-  @js.native
   trait BrokerUser extends StObject {
     
     /**
       * Whether to enable access to the [ActiveMQ Web Console](http://activemq.apache.org/web-console.html) for the user.
       */
-    var consoleAccess: js.UndefOr[Input[Boolean]] = js.native
+    var consoleAccess: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of groups (20 maximum) to which the ActiveMQ user belongs.
       */
-    var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var groups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The password of the user. It must be 12 to 250 characters long, at least 4 unique characters, and must not contain commas.
       */
-    var password: Input[String] = js.native
+    var password: Input[String]
     
     /**
       * The username of the user.
       */
-    var username: Input[String] = js.native
+    var username: Input[String]
   }
   object BrokerUser {
     
@@ -262,12 +255,11 @@ object mq {
     }
   }
   
-  @js.native
   trait GetBrokerLogs extends StObject {
     
-    var audit: js.UndefOr[Boolean] = js.native
+    var audit: js.UndefOr[Boolean] = js.undefined
     
-    var general: js.UndefOr[Boolean] = js.native
+    var general: js.UndefOr[Boolean] = js.undefined
   }
   object GetBrokerLogs {
     

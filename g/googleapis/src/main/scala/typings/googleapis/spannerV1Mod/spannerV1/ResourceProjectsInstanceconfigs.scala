@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/spanner/v1", "spanner_v1.Resource$Projects$Instanceconfigs")
@@ -30,7 +29,7 @@ class ResourceProjectsInstanceconfigs protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceConfig]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceConfig] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(params: ParamsResourceProjectsInstanceconfigsGet): GaxiosPromise[SchemaInstanceConfig] = js.native
   def get(
     params: ParamsResourceProjectsInstanceconfigsGet,
@@ -64,7 +63,7 @@ class ResourceProjectsInstanceconfigs protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListInstanceConfigsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(params: ParamsResourceProjectsInstanceconfigsList): GaxiosPromise[SchemaListInstanceConfigsResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstanceconfigsList,

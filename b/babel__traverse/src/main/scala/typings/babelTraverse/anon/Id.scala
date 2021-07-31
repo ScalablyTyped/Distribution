@@ -7,19 +7,17 @@ import typings.babelTypes.mod.Expression
 import typings.babelTypes.mod.LVal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: LVal = js.native
+  var id: LVal
   
-  var init: js.UndefOr[Expression] = js.native
+  var init: js.UndefOr[Expression] = js.undefined
   
-  var kind: js.UndefOr[`var` | let | const] = js.native
+  var kind: js.UndefOr[`var` | let | const] = js.undefined
   
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object Id {
   

@@ -3,7 +3,6 @@ package typings.angularCompiler.publicApiMod
 import typings.angularCompiler.outputAstMod.FnParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "ClassMethod")
@@ -36,14 +35,14 @@ class ClassMethod protected ()
     name: String,
     params: js.Array[FnParam],
     body: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
   def this(
     name: String,
     params: js.Array[FnParam],
     body: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: Null,
+    `type`: Unit,
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
   def this(
@@ -57,14 +56,14 @@ class ClassMethod protected ()
     name: Null,
     params: js.Array[FnParam],
     body: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
   def this(
     name: Null,
     params: js.Array[FnParam],
     body: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: Null,
+    `type`: Unit,
     modifiers: js.Array[typings.angularCompiler.outputAstMod.StmtModifier]
   ) = this()
   def this(

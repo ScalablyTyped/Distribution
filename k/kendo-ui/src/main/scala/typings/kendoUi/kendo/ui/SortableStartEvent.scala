@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SortableStartEvent extends SortableEvent {
+trait SortableStartEvent
+  extends StObject
+     with SortableEvent {
   
-  var draggableEvent: js.UndefOr[js.Any] = js.native
+  var draggableEvent: js.UndefOr[js.Any] = js.undefined
   
-  var item: js.UndefOr[JQuery] = js.native
+  var item: js.UndefOr[JQuery] = js.undefined
 }
 object SortableStartEvent {
   

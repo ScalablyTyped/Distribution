@@ -10,7 +10,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -219,7 +218,6 @@ object mod {
       * @param retries
       */
     def perform(key: String, request: Buffer, seq: Double): Unit = js.native
-    def perform(key: String, request: Buffer, seq: Double, callback: js.UndefOr[scala.Nothing], retries: Double): Unit = js.native
     def perform(
       key: String,
       request: Buffer,
@@ -233,6 +231,7 @@ object mod {
       callback: js.Function2[/* err */ Error | Null, /* repeated */ js.Any, Unit],
       retries: Double
     ): Unit = js.native
+    def perform(key: String, request: Buffer, seq: Double, callback: Unit, retries: Double): Unit = js.native
     
     /**
       * PREPEND
@@ -434,6 +433,10 @@ object mod {
   /* static members */
   object Client {
     
+    @JSImport("memjs", "Client")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new client given an optional config string and optional hash of
       * options. The config string should be of the form:
@@ -471,21 +474,16 @@ object mod {
       * * `keepAliveDelay` in seconds to the initial delay before the first keepalive
       *                    probe is sent on an idle socket. Defaults is 30 seconds.
       */
-    @JSImport("memjs", "Client.create")
-    @js.native
-    def create(): Client = js.native
-    @JSImport("memjs", "Client.create")
-    @js.native
-    def create(serversStr: js.UndefOr[scala.Nothing], options: ClientOptions): Client = js.native
-    @JSImport("memjs", "Client.create")
-    @js.native
-    def create(serversStr: String): Client = js.native
-    @JSImport("memjs", "Client.create")
-    @js.native
-    def create(serversStr: String, options: ClientOptions): Client = js.native
+    @scala.inline
+    def create(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Client]
+    @scala.inline
+    def create(serversStr: String): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any]).asInstanceOf[Client]
+    @scala.inline
+    def create(serversStr: String, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+    @scala.inline
+    def create(serversStr: Unit, options: ClientOptions): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(serversStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
     /**
@@ -494,30 +492,30 @@ object mod {
       * treated as a UNIX time (number of seconds since January 1, 1970).
       * @default 0
       */
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
     /**
       * How many seconds to wait until retrying a failed server.
       * @default 60
       */
-    var failoverTime: js.UndefOr[Double] = js.native
+    var failoverTime: js.UndefOr[Double] = js.undefined
     
     /**
       * A logger object that responds to `log(string)` method calls.
       * @default console
       */
-    var logger: js.UndefOr[Log] = js.native
+    var logger: js.UndefOr[Log] = js.undefined
     
     /**
       * The number of times to retry an operation in lieu of failures.
       * @default 2
       */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
     /**
       * @default 0.2
       */
-    var retry_delay: js.UndefOr[Double] = js.native
+    var retry_delay: js.UndefOr[Double] = js.undefined
   }
   object ClientOptions {
     

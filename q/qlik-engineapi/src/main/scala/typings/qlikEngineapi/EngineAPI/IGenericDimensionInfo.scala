@@ -2,41 +2,39 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericDimensionInfo...
   */
-@js.native
 trait IGenericDimensionInfo extends StObject {
   
   /**
     * If set to true a logical AND (instead of a logical OR) is used when making selections in a field.
     * The default value is false.
     */
-  var qAndMode: Boolean = js.native
+  var qAndMode: Boolean
   
   /**
     * Length of the longest value in the field.
     */
-  var qApprMaxGlyphCount: Double = js.native
+  var qApprMaxGlyphCount: Double
   
   /**
     * Number of distinct field values
     */
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
   /**
     * If set to true, it means that the field is a semantic.
     */
-  var qIsSemantic: Boolean = js.native
+  var qIsSemantic: Boolean
   
   /**
     * Gives information on a field. For example, it can return the type of the field.
     * Examples: key, text, ASCII
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
 }
 object IGenericDimensionInfo {
   

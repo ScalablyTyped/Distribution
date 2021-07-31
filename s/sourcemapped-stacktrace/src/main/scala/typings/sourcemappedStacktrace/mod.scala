@@ -2,43 +2,41 @@ package typings.sourcemappedStacktrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sourcemapped-stacktrace", "mapStackTrace")
+  @JSImport("sourcemapped-stacktrace", JSImport.Namespace)
   @js.native
-  def mapStackTrace(stack: js.UndefOr[scala.Nothing], done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("sourcemapped-stacktrace", "mapStackTrace")
-  @js.native
-  def mapStackTrace(
-    stack: js.UndefOr[scala.Nothing],
-    done: js.Function1[/* mappedStack */ js.Array[String], Unit],
-    opts: MapStackTraceOptions
-  ): Unit = js.native
-  @JSImport("sourcemapped-stacktrace", "mapStackTrace")
-  @js.native
-  def mapStackTrace(stack: String, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = js.native
-  @JSImport("sourcemapped-stacktrace", "mapStackTrace")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def mapStackTrace(stack: String, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def mapStackTrace(
     stack: String,
     done: js.Function1[/* mappedStack */ js.Array[String], Unit],
     opts: MapStackTraceOptions
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mapStackTrace(stack: Unit, done: js.Function1[/* mappedStack */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mapStackTrace(
+    stack: Unit,
+    done: js.Function1[/* mappedStack */ js.Array[String], Unit],
+    opts: MapStackTraceOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mapStackTrace")(stack.asInstanceOf[js.Any], done.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait MapStackTraceOptions extends StObject {
     
     /** Whether to cache sourcemaps globally across multiple calls. */
-    var cacheGlobally: js.UndefOr[Boolean] = js.native
+    var cacheGlobally: js.UndefOr[Boolean] = js.undefined
     
     /** Filter function applied to each stackTrace line. Lines which do not pass the filter won't be processesd. */
-    var filter: js.UndefOr[js.Function1[/* line */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* line */ String, Boolean]] = js.undefined
     
     /** Whether to use synchronous ajax to load the sourcemaps. */
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object MapStackTraceOptions {
     

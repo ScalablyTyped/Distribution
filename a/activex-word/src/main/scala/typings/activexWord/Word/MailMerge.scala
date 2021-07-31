@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,28 +24,13 @@ trait MailMerge extends StObject {
   ): Unit = js.native
   
   def CreateHeaderSource(Name: String): Unit = js.native
-  def CreateHeaderSource(
-    Name: String,
-    PasswordDocument: js.UndefOr[scala.Nothing],
-    WritePasswordDocument: js.UndefOr[scala.Nothing],
-    HeaderRecord: js.Any
-  ): Unit = js.native
-  def CreateHeaderSource(Name: String, PasswordDocument: js.UndefOr[scala.Nothing], WritePasswordDocument: js.Any): Unit = js.native
-  def CreateHeaderSource(
-    Name: String,
-    PasswordDocument: js.UndefOr[scala.Nothing],
-    WritePasswordDocument: js.Any,
-    HeaderRecord: js.Any
-  ): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any): Unit = js.native
-  def CreateHeaderSource(
-    Name: String,
-    PasswordDocument: js.Any,
-    WritePasswordDocument: js.UndefOr[scala.Nothing],
-    HeaderRecord: js.Any
-  ): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any, WritePasswordDocument: js.Any): Unit = js.native
   def CreateHeaderSource(Name: String, PasswordDocument: js.Any, WritePasswordDocument: js.Any, HeaderRecord: js.Any): Unit = js.native
+  def CreateHeaderSource(Name: String, PasswordDocument: js.Any, WritePasswordDocument: Unit, HeaderRecord: js.Any): Unit = js.native
+  def CreateHeaderSource(Name: String, PasswordDocument: Unit, WritePasswordDocument: js.Any): Unit = js.native
+  def CreateHeaderSource(Name: String, PasswordDocument: Unit, WritePasswordDocument: js.Any, HeaderRecord: js.Any): Unit = js.native
+  def CreateHeaderSource(Name: String, PasswordDocument: Unit, WritePasswordDocument: Unit, HeaderRecord: js.Any): Unit = js.native
   
   val Creator: Double = js.native
   

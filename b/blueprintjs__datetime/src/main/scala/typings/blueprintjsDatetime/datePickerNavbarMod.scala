@@ -5,7 +5,6 @@ import typings.reactDayPicker.propsMod.NavbarElementProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerNavbarMod {
@@ -27,7 +26,9 @@ object datePickerNavbarMod {
   }
   
   @js.native
-  trait IDatePickerNavbarProps extends NavbarElementProps {
+  trait IDatePickerNavbarProps
+    extends StObject
+       with NavbarElementProps {
     
     var hideLeftNavButton: js.UndefOr[Boolean] = js.native
     

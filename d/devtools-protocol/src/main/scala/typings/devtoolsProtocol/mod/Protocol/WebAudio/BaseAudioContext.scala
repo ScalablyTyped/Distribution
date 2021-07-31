@@ -2,34 +2,32 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseAudioContext extends StObject {
   
   /**
     * Platform-dependent callback buffer size.
     */
-  var callbackBufferSize: Double = js.native
+  var callbackBufferSize: Double
   
-  var contextId: GraphObjectId = js.native
+  var contextId: GraphObjectId
   
-  var contextState: ContextState = js.native
+  var contextState: ContextState
   
-  var contextType: ContextType = js.native
+  var contextType: ContextType
   
   /**
     * Number of output channels supported by audio hardware in use.
     */
-  var maxOutputChannelCount: Double = js.native
+  var maxOutputChannelCount: Double
   
-  var realtimeData: js.UndefOr[ContextRealtimeData] = js.native
+  var realtimeData: js.UndefOr[ContextRealtimeData] = js.undefined
   
   /**
     * Context sample rate.
     */
-  var sampleRate: Double = js.native
+  var sampleRate: Double
 }
 object BaseAudioContext {
   

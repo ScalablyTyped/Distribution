@@ -10,31 +10,35 @@ import typings.std.HTMLElement
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("create-emotion", JSImport.Default)
+  @JSImport("create-emotion", JSImport.Namespace)
   @js.native
-  def default(context: EmotionContext): Emotion = js.native
-  @JSImport("create-emotion", JSImport.Default)
-  @js.native
-  def default(context: EmotionContext, options: EmotionOptions): Emotion = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(context: EmotionContext): Emotion = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any]).asInstanceOf[Emotion]
+  @scala.inline
+  def default(context: EmotionContext, options: EmotionOptions): Emotion = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Emotion]
   
   @js.native
-  trait ArrayClassNameArg extends Array[ClassNameArg]
+  trait ArrayClassNameArg
+    extends StObject
+       with Array[ClassNameArg]
   
   @js.native
   trait ArrayInterpolation
-    extends Array[Interpolation]
+    extends StObject
+       with Array[Interpolation]
        with _Interpolation
   
   type CSSBaseObject = PropertiesFallback[Double | String]
   
-  @js.native
   trait CSSObject
-    extends PropertiesFallback[Double | String]
+    extends StObject
+       with PropertiesFallback[Double | String]
        with CSSPseudoObject
        with CSSOthersObject
        with _Interpolation
@@ -47,8 +51,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait CSSOthersObject extends /* propertiesName */ StringDictionary[Interpolation]
+  trait CSSOthersObject
+    extends StObject
+       with /* propertiesName */ StringDictionary[Interpolation]
   object CSSOthersObject {
     
     @scala.inline
@@ -59,341 +64,340 @@ object mod {
   }
   
   /* Inlined {[ K in csstype.csstype.Pseudos ]:? create-emotion.create-emotion.CSSObject} */
-  @js.native
   trait CSSPseudoObject extends StObject {
     
     @JSName(":-khtml-any-link")
-    var `Colon-khtml-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-khtml-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-any-link")
-    var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-any()")
-    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-dir")
-    var `Colon-moz-dir`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-dir`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-focusring")
-    var `Colon-moz-focusring`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-focusring`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-full-screen")
-    var `Colon-moz-full-screen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-full-screen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-placeholder")
-    var `Colon-moz-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-read-only")
-    var `Colon-moz-read-only`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-read-only`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-read-write")
-    var `Colon-moz-read-write`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-read-write`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-ms-fullscreen")
-    var `Colon-ms-fullscreen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-ms-fullscreen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-ms-input-placeholder")
-    var `Colon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `Colon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-any-link")
-    var `Colon-webkit-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-any()")
-    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-full-screen")
-    var `Colon-webkit-full-screen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-full-screen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-placeholder")
-    var `ColonColon-moz-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-progress-bar")
-    var `ColonColon-moz-progress-bar`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-progress-bar`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-progress")
-    var `ColonColon-moz-range-progress`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-progress`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-thumb")
-    var `ColonColon-moz-range-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-track")
-    var `ColonColon-moz-range-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-selection")
-    var `ColonColon-moz-selection`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-selection`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-backdrop")
-    var `ColonColon-ms-backdrop`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-backdrop`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-browse")
-    var `ColonColon-ms-browse`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-browse`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-check")
-    var `ColonColon-ms-check`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-check`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-clear")
-    var `ColonColon-ms-clear`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-clear`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill")
-    var `ColonColon-ms-fill`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill-lower")
-    var `ColonColon-ms-fill-lower`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill-lower`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill-upper")
-    var `ColonColon-ms-fill-upper`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill-upper`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-input-placeholder")
-    var `ColonColon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-reveal")
-    var `ColonColon-ms-reveal`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-reveal`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-thumb")
-    var `ColonColon-ms-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-ticks-after")
-    var `ColonColon-ms-ticks-after`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-ticks-after`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-ticks-before")
-    var `ColonColon-ms-ticks-before`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-ticks-before`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-tooltip")
-    var `ColonColon-ms-tooltip`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-tooltip`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-track")
-    var `ColonColon-ms-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-value")
-    var `ColonColon-ms-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-backdrop")
-    var `ColonColon-webkit-backdrop`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-backdrop`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-input-placeholder")
-    var `ColonColon-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-bar")
-    var `ColonColon-webkit-progress-bar`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-bar`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-inner-value")
-    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-value")
-    var `ColonColon-webkit-progress-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-slider-runnable-track")
-    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-slider-thumb")
-    var `ColonColon-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::after")
-    var ColonColonafter: js.UndefOr[CSSObject] = js.native
+    var ColonColonafter: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::backdrop")
-    var ColonColonbackdrop: js.UndefOr[CSSObject] = js.native
+    var ColonColonbackdrop: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::before")
-    var ColonColonbefore: js.UndefOr[CSSObject] = js.native
+    var ColonColonbefore: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::cue")
-    var ColonColoncue: js.UndefOr[CSSObject] = js.native
+    var ColonColoncue: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::cue-region")
-    var `ColonColoncue-region`: js.UndefOr[CSSObject] = js.native
+    var `ColonColoncue-region`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::first-letter")
-    var `ColonColonfirst-letter`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::first-line")
-    var `ColonColonfirst-line`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonfirst-line`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::grammar-error")
-    var `ColonColongrammar-error`: js.UndefOr[CSSObject] = js.native
+    var `ColonColongrammar-error`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::marker")
-    var ColonColonmarker: js.UndefOr[CSSObject] = js.native
+    var ColonColonmarker: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::part")
-    var ColonColonpart: js.UndefOr[CSSObject] = js.native
+    var ColonColonpart: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::placeholder")
-    var ColonColonplaceholder: js.UndefOr[CSSObject] = js.native
+    var ColonColonplaceholder: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::selection")
-    var ColonColonselection: js.UndefOr[CSSObject] = js.native
+    var ColonColonselection: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::slotted")
-    var ColonColonslotted: js.UndefOr[CSSObject] = js.native
+    var ColonColonslotted: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::spelling-error")
-    var `ColonColonspelling-error`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonspelling-error`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":active")
-    var Colonactive: js.UndefOr[CSSObject] = js.native
+    var Colonactive: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":after")
-    var Colonafter: js.UndefOr[CSSObject] = js.native
+    var Colonafter: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":any-link")
-    var `Colonany-link`: js.UndefOr[CSSObject] = js.native
+    var `Colonany-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":before")
-    var Colonbefore: js.UndefOr[CSSObject] = js.native
+    var Colonbefore: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":blank")
-    var Colonblank: js.UndefOr[CSSObject] = js.native
+    var Colonblank: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":checked")
-    var Colonchecked: js.UndefOr[CSSObject] = js.native
+    var Colonchecked: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":default")
-    var Colondefault: js.UndefOr[CSSObject] = js.native
+    var Colondefault: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":defined")
-    var Colondefined: js.UndefOr[CSSObject] = js.native
+    var Colondefined: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":dir")
-    var Colondir: js.UndefOr[CSSObject] = js.native
+    var Colondir: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":disabled")
-    var Colondisabled: js.UndefOr[CSSObject] = js.native
+    var Colondisabled: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":empty")
-    var Colonempty: js.UndefOr[CSSObject] = js.native
+    var Colonempty: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":enabled")
-    var Colonenabled: js.UndefOr[CSSObject] = js.native
+    var Colonenabled: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first")
-    var Colonfirst: js.UndefOr[CSSObject] = js.native
+    var Colonfirst: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-child")
-    var `Colonfirst-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-letter")
-    var `Colonfirst-letter`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-line")
-    var `Colonfirst-line`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-line`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-of-type")
-    var `Colonfirst-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus")
-    var Colonfocus: js.UndefOr[CSSObject] = js.native
+    var Colonfocus: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus-visible")
-    var `Colonfocus-visible`: js.UndefOr[CSSObject] = js.native
+    var `Colonfocus-visible`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus-within")
-    var `Colonfocus-within`: js.UndefOr[CSSObject] = js.native
+    var `Colonfocus-within`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":fullscreen")
-    var Colonfullscreen: js.UndefOr[CSSObject] = js.native
+    var Colonfullscreen: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":has")
-    var Colonhas: js.UndefOr[CSSObject] = js.native
+    var Colonhas: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":host")
-    var Colonhost: js.UndefOr[CSSObject] = js.native
+    var Colonhost: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":host-context")
-    var `Colonhost-context`: js.UndefOr[CSSObject] = js.native
+    var `Colonhost-context`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":hover")
-    var Colonhover: js.UndefOr[CSSObject] = js.native
+    var Colonhover: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":in-range")
-    var `Colonin-range`: js.UndefOr[CSSObject] = js.native
+    var `Colonin-range`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":indeterminate")
-    var Colonindeterminate: js.UndefOr[CSSObject] = js.native
+    var Colonindeterminate: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":invalid")
-    var Coloninvalid: js.UndefOr[CSSObject] = js.native
+    var Coloninvalid: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":is")
-    var Colonis: js.UndefOr[CSSObject] = js.native
+    var Colonis: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":lang")
-    var Colonlang: js.UndefOr[CSSObject] = js.native
+    var Colonlang: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":last-child")
-    var `Colonlast-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonlast-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":last-of-type")
-    var `Colonlast-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonlast-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":left")
-    var Colonleft: js.UndefOr[CSSObject] = js.native
+    var Colonleft: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":link")
-    var Colonlink: js.UndefOr[CSSObject] = js.native
+    var Colonlink: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":matches()")
-    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[CSSObject] = js.native
+    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":not")
-    var Colonnot: js.UndefOr[CSSObject] = js.native
+    var Colonnot: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-child")
-    var `Colonnth-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-last-child")
-    var `Colonnth-last-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-last-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-last-of-type")
-    var `Colonnth-last-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-last-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-of-type")
-    var `Colonnth-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":only-child")
-    var `Colononly-child`: js.UndefOr[CSSObject] = js.native
+    var `Colononly-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":only-of-type")
-    var `Colononly-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colononly-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":optional")
-    var Colonoptional: js.UndefOr[CSSObject] = js.native
+    var Colonoptional: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":out-of-range")
-    var `Colonout-of-range`: js.UndefOr[CSSObject] = js.native
+    var `Colonout-of-range`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":placeholder-shown")
-    var `Colonplaceholder-shown`: js.UndefOr[CSSObject] = js.native
+    var `Colonplaceholder-shown`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":read-only")
-    var `Colonread-only`: js.UndefOr[CSSObject] = js.native
+    var `Colonread-only`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":read-write")
-    var `Colonread-write`: js.UndefOr[CSSObject] = js.native
+    var `Colonread-write`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":required")
-    var Colonrequired: js.UndefOr[CSSObject] = js.native
+    var Colonrequired: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":right")
-    var Colonright: js.UndefOr[CSSObject] = js.native
+    var Colonright: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":root")
-    var Colonroot: js.UndefOr[CSSObject] = js.native
+    var Colonroot: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":scope")
-    var Colonscope: js.UndefOr[CSSObject] = js.native
+    var Colonscope: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":target")
-    var Colontarget: js.UndefOr[CSSObject] = js.native
+    var Colontarget: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":valid")
-    var Colonvalid: js.UndefOr[CSSObject] = js.native
+    var Colonvalid: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":visited")
-    var Colonvisited: js.UndefOr[CSSObject] = js.native
+    var Colonvisited: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":where")
-    var Colonwhere: js.UndefOr[CSSObject] = js.native
+    var Colonwhere: js.UndefOr[CSSObject] = js.undefined
   }
   object CSSPseudoObject {
     
@@ -1119,10 +1123,9 @@ object mod {
     var sheet: StyleSheet = js.native
   }
   
-  @js.native
   trait EmotionBaseContext extends StObject {
     
-    var __SECRET_EMOTION__ : js.UndefOr[Emotion] = js.native
+    var __SECRET_EMOTION__ : js.UndefOr[Emotion] = js.undefined
   }
   object EmotionBaseContext {
     
@@ -1143,16 +1146,15 @@ object mod {
     }
   }
   
-  @js.native
   trait EmotionCache extends StObject {
     
-    var inserted: StringDictionary[String] = js.native
+    var inserted: StringDictionary[String]
     
-    var key: String = js.native
+    var key: String
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var registered: StringDictionary[String] = js.native
+    var registered: StringDictionary[String]
   }
   object EmotionCache {
     
@@ -1182,9 +1184,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EmotionContext
-    extends EmotionBaseContext
+    extends StObject
+       with EmotionBaseContext
        with /* key */ StringDictionary[js.Any]
   object EmotionContext {
     
@@ -1195,20 +1197,19 @@ object mod {
     }
   }
   
-  @js.native
   trait EmotionOptions extends StObject {
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[
         Boolean | (js.Function3[/* key */ String, /* value */ String, /* context */ `1` | `2` | `3`, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var stylisPlugins: js.UndefOr[StylisPlugins] = js.native
+    var stylisPlugins: js.UndefOr[StylisPlugins] = js.undefined
   }
   object EmotionOptions {
     
@@ -1268,7 +1269,7 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - scala.Boolean
     - java.lang.String
@@ -1302,10 +1303,9 @@ object mod {
     
     object JSX {
       
-      @js.native
       trait HTMLAttributes extends StObject {
         
-        var css: js.UndefOr[Interpolation] = js.native
+        var css: js.UndefOr[Interpolation] = js.undefined
       }
       object HTMLAttributes {
         
@@ -1333,10 +1333,9 @@ object mod {
   
   object reactAugmentingMod {
     
-    @js.native
     trait HTMLAttributes[T] extends StObject {
       
-      var css: js.UndefOr[Interpolation] = js.native
+      var css: js.UndefOr[Interpolation] = js.undefined
     }
     object HTMLAttributes {
       
@@ -1347,7 +1346,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[_], T] (val x: Self with HTMLAttributes[T]) extends AnyVal {
+      implicit class HTMLAttributesMutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         @scala.inline
         def setCss(value: Interpolation): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])

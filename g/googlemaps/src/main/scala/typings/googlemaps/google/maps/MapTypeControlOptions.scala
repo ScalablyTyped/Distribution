@@ -2,24 +2,22 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for the rendering of the map type control. */
-@js.native
 trait MapTypeControlOptions extends StObject {
   
   /** IDs of map types to show in the control. */
-  var mapTypeIds: js.UndefOr[js.Array[MapTypeId | String]] = js.native
+  var mapTypeIds: js.UndefOr[js.Array[MapTypeId | String]] = js.undefined
   
   /**
     * Position id. Used to specify the position of the control on the map.
     * The default position is TOP_RIGHT.
     */
-  var position: js.UndefOr[ControlPosition] = js.native
+  var position: js.UndefOr[ControlPosition] = js.undefined
   
   /** Style id. Used to select what style of map type control to display. */
-  var style: js.UndefOr[MapTypeControlStyle] = js.native
+  var style: js.UndefOr[MapTypeControlStyle] = js.undefined
 }
 object MapTypeControlOptions {
   

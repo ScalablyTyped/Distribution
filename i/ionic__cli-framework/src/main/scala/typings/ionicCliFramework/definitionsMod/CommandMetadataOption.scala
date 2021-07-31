@@ -3,19 +3,19 @@ package typings.ionicCliFramework.definitionsMod
 import typings.ionicCliFramework.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommandMetadataOption extends Metadata {
+trait CommandMetadataOption
+  extends StObject
+     with Metadata {
   
-  var default: js.UndefOr[String | Boolean] = js.native
+  var default: js.UndefOr[String | Boolean] = js.undefined
   
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var spec: js.UndefOr[Value] = js.native
+  var spec: js.UndefOr[Value] = js.undefined
   
-  var `type`: js.UndefOr[CommandOptionType] = js.native
+  var `type`: js.UndefOr[CommandOptionType] = js.undefined
 }
 object CommandMetadataOption {
   

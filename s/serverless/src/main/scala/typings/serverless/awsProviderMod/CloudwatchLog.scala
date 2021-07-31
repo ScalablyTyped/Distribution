@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudwatchLog extends StObject {
   
-  var filter: String = js.native
+  var filter: String
   
-  var logGroup: String = js.native
+  var logGroup: String
 }
 object CloudwatchLog {
   

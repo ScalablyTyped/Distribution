@@ -2,14 +2,12 @@ package typings.shelljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadOptions extends StObject {
   
   /** Show the first <num> lines of the files. */
-  var `-n`: Double = js.native
+  var `-n`: Double
 }
 object HeadOptions {
   

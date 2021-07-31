@@ -1,9 +1,7 @@
 package typings.mendixmodelsdk.transportInterfacesMod
 
-import typings.mendixmodelsdk.mendixmodelsdkStrings.git
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -18,12 +16,11 @@ object ICommitToTeamServerOptions {
     authorEmail: String,
     authorName: String,
     commitMessage: String,
-    repositoryType: git,
     targetBranch: String,
     targetCommitId: String,
     teamServerGitUrl: String
   ): typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions = {
-    val __obj = js.Dynamic.literal(authorEmail = authorEmail.asInstanceOf[js.Any], authorName = authorName.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], repositoryType = repositoryType.asInstanceOf[js.Any], targetBranch = targetBranch.asInstanceOf[js.Any], targetCommitId = targetCommitId.asInstanceOf[js.Any], teamServerGitUrl = teamServerGitUrl.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authorEmail = authorEmail.asInstanceOf[js.Any], authorName = authorName.asInstanceOf[js.Any], commitMessage = commitMessage.asInstanceOf[js.Any], repositoryType = "git", targetBranch = targetBranch.asInstanceOf[js.Any], targetCommitId = targetCommitId.asInstanceOf[js.Any], teamServerGitUrl = teamServerGitUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mendixmodelsdk.transportInterfacesMod.ICommitToGitTeamServerOptions]
   }
   

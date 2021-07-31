@@ -6,7 +6,6 @@ import typings.firebaseAdmin.databaseMod.database.EventType
 import typings.firebaseAdmin.remoteConfigMod.remoteConfig.TagColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseAdminStrings {
@@ -22,17 +21,23 @@ object firebaseAdminStrings {
   def ADMIN_SDK_NODE: ADMIN_SDK_NODE = "ADMIN_SDK_NODE".asInstanceOf[ADMIN_SDK_NODE]
   
   @js.native
-  sealed trait BCRYPT extends HashAlgorithmType
+  sealed trait BCRYPT
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def BCRYPT: BCRYPT = "BCRYPT".asInstanceOf[BCRYPT]
   
   @js.native
-  sealed trait BLUE extends TagColor
+  sealed trait BLUE
+    extends StObject
+       with TagColor
   @scala.inline
   def BLUE: BLUE = "BLUE".asInstanceOf[BLUE]
   
   @js.native
-  sealed trait BROWN extends TagColor
+  sealed trait BROWN
+    extends StObject
+       with TagColor
   @scala.inline
   def BROWN: BROWN = "BROWN".asInstanceOf[BROWN]
   
@@ -42,22 +47,30 @@ object firebaseAdminStrings {
   def CONSOLE: CONSOLE = "CONSOLE".asInstanceOf[CONSOLE]
   
   @js.native
-  sealed trait CYAN extends TagColor
+  sealed trait CYAN
+    extends StObject
+       with TagColor
   @scala.inline
   def CYAN: CYAN = "CYAN".asInstanceOf[CYAN]
   
   @js.native
-  sealed trait DEEP_ORANGE extends TagColor
+  sealed trait DEEP_ORANGE
+    extends StObject
+       with TagColor
   @scala.inline
   def DEEP_ORANGE: DEEP_ORANGE = "DEEP_ORANGE".asInstanceOf[DEEP_ORANGE]
   
   @js.native
-  sealed trait DISABLED extends MultiFactorConfigState
+  sealed trait DISABLED
+    extends StObject
+       with MultiFactorConfigState
   @scala.inline
   def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
   
   @js.native
-  sealed trait ENABLED extends MultiFactorConfigState
+  sealed trait ENABLED
+    extends StObject
+       with MultiFactorConfigState
   @scala.inline
   def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
   
@@ -67,27 +80,37 @@ object firebaseAdminStrings {
   def FORCED_UPDATE: FORCED_UPDATE = "FORCED_UPDATE".asInstanceOf[FORCED_UPDATE]
   
   @js.native
-  sealed trait GREEN extends TagColor
+  sealed trait GREEN
+    extends StObject
+       with TagColor
   @scala.inline
   def GREEN: GREEN = "GREEN".asInstanceOf[GREEN]
   
   @js.native
-  sealed trait HMAC_MD5 extends HashAlgorithmType
+  sealed trait HMAC_MD5
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def HMAC_MD5: HMAC_MD5 = "HMAC_MD5".asInstanceOf[HMAC_MD5]
   
   @js.native
-  sealed trait HMAC_SHA1 extends HashAlgorithmType
+  sealed trait HMAC_SHA1
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def HMAC_SHA1: HMAC_SHA1 = "HMAC_SHA1".asInstanceOf[HMAC_SHA1]
   
   @js.native
-  sealed trait HMAC_SHA256 extends HashAlgorithmType
+  sealed trait HMAC_SHA256
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def HMAC_SHA256: HMAC_SHA256 = "HMAC_SHA256".asInstanceOf[HMAC_SHA256]
   
   @js.native
-  sealed trait HMAC_SHA512 extends HashAlgorithmType
+  sealed trait HMAC_SHA512
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def HMAC_SHA512: HMAC_SHA512 = "HMAC_SHA512".asInstanceOf[HMAC_SHA512]
   
@@ -97,42 +120,58 @@ object firebaseAdminStrings {
   def INCREMENTAL_UPDATE: INCREMENTAL_UPDATE = "INCREMENTAL_UPDATE".asInstanceOf[INCREMENTAL_UPDATE]
   
   @js.native
-  sealed trait INDIGO extends TagColor
+  sealed trait INDIGO
+    extends StObject
+       with TagColor
   @scala.inline
   def INDIGO: INDIGO = "INDIGO".asInstanceOf[INDIGO]
   
   @js.native
-  sealed trait LIME extends TagColor
+  sealed trait LIME
+    extends StObject
+       with TagColor
   @scala.inline
   def LIME: LIME = "LIME".asInstanceOf[LIME]
   
   @js.native
-  sealed trait MD5 extends HashAlgorithmType
+  sealed trait MD5
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
   
   @js.native
-  sealed trait ORANGE extends TagColor
+  sealed trait ORANGE
+    extends StObject
+       with TagColor
   @scala.inline
   def ORANGE: ORANGE = "ORANGE".asInstanceOf[ORANGE]
   
   @js.native
-  sealed trait PBKDF2_SHA256 extends HashAlgorithmType
+  sealed trait PBKDF2_SHA256
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def PBKDF2_SHA256: PBKDF2_SHA256 = "PBKDF2_SHA256".asInstanceOf[PBKDF2_SHA256]
   
   @js.native
-  sealed trait PBKDF_SHA1 extends HashAlgorithmType
+  sealed trait PBKDF_SHA1
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def PBKDF_SHA1: PBKDF_SHA1 = "PBKDF_SHA1".asInstanceOf[PBKDF_SHA1]
   
   @js.native
-  sealed trait PINK extends TagColor
+  sealed trait PINK
+    extends StObject
+       with TagColor
   @scala.inline
   def PINK: PINK = "PINK".asInstanceOf[PINK]
   
   @js.native
-  sealed trait PURPLE extends TagColor
+  sealed trait PURPLE
+    extends StObject
+       with TagColor
   @scala.inline
   def PURPLE: PURPLE = "PURPLE".asInstanceOf[PURPLE]
   
@@ -157,32 +196,44 @@ object firebaseAdminStrings {
   def ROLLBACK: ROLLBACK = "ROLLBACK".asInstanceOf[ROLLBACK]
   
   @js.native
-  sealed trait SCRYPT extends HashAlgorithmType
+  sealed trait SCRYPT
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def SCRYPT: SCRYPT = "SCRYPT".asInstanceOf[SCRYPT]
   
   @js.native
-  sealed trait SHA1 extends HashAlgorithmType
+  sealed trait SHA1
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def SHA1: SHA1 = "SHA1".asInstanceOf[SHA1]
   
   @js.native
-  sealed trait SHA256 extends HashAlgorithmType
+  sealed trait SHA256
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def SHA256: SHA256 = "SHA256".asInstanceOf[SHA256]
   
   @js.native
-  sealed trait SHA512 extends HashAlgorithmType
+  sealed trait SHA512
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def SHA512: SHA512 = "SHA512".asInstanceOf[SHA512]
   
   @js.native
-  sealed trait STANDARD_SCRYPT extends HashAlgorithmType
+  sealed trait STANDARD_SCRYPT
+    extends StObject
+       with HashAlgorithmType
   @scala.inline
   def STANDARD_SCRYPT: STANDARD_SCRYPT = "STANDARD_SCRYPT".asInstanceOf[STANDARD_SCRYPT]
   
   @js.native
-  sealed trait TEAL extends TagColor
+  sealed trait TEAL
+    extends StObject
+       with TagColor
   @scala.inline
   def TEAL: TEAL = "TEAL".asInstanceOf[TEAL]
   
@@ -192,22 +243,30 @@ object firebaseAdminStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait child_added extends EventType
+  sealed trait child_added
+    extends StObject
+       with EventType
   @scala.inline
   def child_added: child_added = "child_added".asInstanceOf[child_added]
   
   @js.native
-  sealed trait child_changed extends EventType
+  sealed trait child_changed
+    extends StObject
+       with EventType
   @scala.inline
   def child_changed: child_changed = "child_changed".asInstanceOf[child_changed]
   
   @js.native
-  sealed trait child_moved extends EventType
+  sealed trait child_moved
+    extends StObject
+       with EventType
   @scala.inline
   def child_moved: child_moved = "child_moved".asInstanceOf[child_moved]
   
   @js.native
-  sealed trait child_removed extends EventType
+  sealed trait child_removed
+    extends StObject
+       with EventType
   @scala.inline
   def child_removed: child_removed = "child_removed".asInstanceOf[child_removed]
   
@@ -287,7 +346,9 @@ object firebaseAdminStrings {
   def sha256_ : sha256_ = "sha256".asInstanceOf[sha256_]
   
   @js.native
-  sealed trait value extends EventType
+  sealed trait value
+    extends StObject
+       with EventType
   @scala.inline
   def value: value = "value".asInstanceOf[value]
 }

@@ -2,73 +2,71 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TediousTypes extends StObject {
   
-  var BigInt: TediousType = js.native
+  var BigInt: TediousType
   
-  var Binary: TediousType = js.native
+  var Binary: TediousType
   
-  var Bit: TediousType = js.native
+  var Bit: TediousType
   
-  var Char: TediousType = js.native
+  var Char: TediousType
   
-  var Date: TediousType = js.native
+  var Date: TediousType
   
-  var DateTime: TediousType = js.native
+  var DateTime: TediousType
   
-  var DateTime2: TediousType = js.native
+  var DateTime2: TediousType
   
-  var DateTimeOffset: TediousType = js.native
+  var DateTimeOffset: TediousType
   
-  var Decimal: TediousType = js.native
+  var Decimal: TediousType
   
-  var Float: TediousType = js.native
+  var Float: TediousType
   
-  var Image: TediousType = js.native
+  var Image: TediousType
   
-  var Int: TediousType = js.native
+  var Int: TediousType
   
-  var Money: TediousType = js.native
+  var Money: TediousType
   
-  var NChar: TediousType = js.native
+  var NChar: TediousType
   
-  var NText: TediousType = js.native
+  var NText: TediousType
   
-  var NVarChar: TediousType = js.native
+  var NVarChar: TediousType
   
-  var Null: TediousType = js.native
+  var Null: TediousType
   
-  var Numeric: TediousType = js.native
+  var Numeric: TediousType
   
-  var Real: TediousType = js.native
+  var Real: TediousType
   
-  var SmallDateTime: TediousType = js.native
+  var SmallDateTime: TediousType
   
-  var SmallInt: TediousType = js.native
+  var SmallInt: TediousType
   
-  var SmallMoney: TediousType = js.native
+  var SmallMoney: TediousType
   
-  var TVP: TediousType = js.native
+  var TVP: TediousType
   
-  var Text: TediousType = js.native
+  var Text: TediousType
   
-  var Time: TediousType = js.native
+  var Time: TediousType
   
-  var TinyInt: TediousType = js.native
+  var TinyInt: TediousType
   
-  var UDT: TediousType = js.native
+  var UDT: TediousType
   
-  var UniqueIdentifier: TediousType = js.native
+  var UniqueIdentifier: TediousType
   
-  var VarBinary: TediousType = js.native
+  var VarBinary: TediousType
   
-  var VarChar: TediousType = js.native
+  var VarChar: TediousType
   
-  var Xml: TediousType = js.native
+  var Xml: TediousType
 }
 object TediousTypes {
   

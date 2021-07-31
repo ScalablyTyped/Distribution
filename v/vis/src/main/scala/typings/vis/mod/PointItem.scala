@@ -2,15 +2,15 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointItem extends DataItem {
+trait PointItem
+  extends StObject
+     with DataItem {
   
-  var x: String = js.native
+  var x: String
   
-  var y: Double = js.native
+  var y: Double
 }
 object PointItem {
   

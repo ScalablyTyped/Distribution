@@ -2,17 +2,15 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParallaxOptions extends StObject {
   
   /**
     * The minimum width of the screen, in pixels, where the parallax functionality starts working
     * @default 0
     */
-  var responsiveThreshold: Double = js.native
+  var responsiveThreshold: Double
 }
 object ParallaxOptions {
   

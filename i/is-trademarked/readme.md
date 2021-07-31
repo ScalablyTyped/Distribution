@@ -12,7 +12,7 @@ Check if a word is trademarked.
 | Keywords           | trademarked |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 527 |
+| # downloads        | 604 |
 | # stars            | 1 |
 
 ## Links

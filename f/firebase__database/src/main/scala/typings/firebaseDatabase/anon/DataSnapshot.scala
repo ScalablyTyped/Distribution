@@ -8,7 +8,6 @@ import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoMod.Repo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,9 +37,9 @@ trait DataSnapshot extends StObject {
   var TEST_ACCESS: TypeofTESTACCESS = js.native
   
   def enableLogging(): Unit = js.native
-  def enableLogging(logger_ : js.UndefOr[scala.Nothing], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit]): Unit = js.native
   def enableLogging(logger_ : js.Function1[/* a */ String, Unit], persistent: Boolean): Unit = js.native
   def enableLogging(logger_ : Boolean): Unit = js.native
   def enableLogging(logger_ : Boolean, persistent: Boolean): Unit = js.native
+  def enableLogging(logger_ : Unit, persistent: Boolean): Unit = js.native
 }

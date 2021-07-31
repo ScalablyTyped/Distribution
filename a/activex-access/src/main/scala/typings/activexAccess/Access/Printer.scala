@@ -2,60 +2,58 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Printer extends StObject {
   
   @JSName("Access.Printer_typekey")
-  var AccessDotPrinter_typekey: Printer = js.native
+  var AccessDotPrinter_typekey: Printer
   
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
-  var ColorMode: AcPrintColor = js.native
+  var ColorMode: AcPrintColor
   
-  var ColumnSpacing: Double = js.native
+  var ColumnSpacing: Double
   
-  var Copies: Double = js.native
+  var Copies: Double
   
-  var DataOnly: Boolean = js.native
+  var DataOnly: Boolean
   
-  var DefaultSize: Boolean = js.native
+  var DefaultSize: Boolean
   
-  val DeviceName: String = js.native
+  val DeviceName: String
   
-  val DriverName: String = js.native
+  val DriverName: String
   
-  var Duplex: AcPrintDuplex = js.native
+  var Duplex: AcPrintDuplex
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var ItemLayout: AcPrintItemLayout = js.native
+  var ItemLayout: AcPrintItemLayout
   
-  var ItemSizeHeight: Double = js.native
+  var ItemSizeHeight: Double
   
-  var ItemSizeWidth: Double = js.native
+  var ItemSizeWidth: Double
   
-  var ItemsAcross: Double = js.native
+  var ItemsAcross: Double
   
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
-  var Orientation: AcPrintOrientation = js.native
+  var Orientation: AcPrintOrientation
   
-  var PaperBin: AcPrintPaperBin = js.native
+  var PaperBin: AcPrintPaperBin
   
-  var PaperSize: AcPrintPaperSize = js.native
+  var PaperSize: AcPrintPaperSize
   
-  val Port: String = js.native
+  val Port: String
   
-  var PrintQuality: AcPrintObjQuality = js.native
+  var PrintQuality: AcPrintObjQuality
   
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
-  var RowSpacing: Double = js.native
+  var RowSpacing: Double
   
-  var TopMargin: Double = js.native
+  var TopMargin: Double
 }
 object Printer {
   

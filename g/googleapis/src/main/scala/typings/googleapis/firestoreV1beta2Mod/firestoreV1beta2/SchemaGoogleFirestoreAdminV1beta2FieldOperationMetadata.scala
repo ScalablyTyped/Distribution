@@ -2,52 +2,50 @@ package typings.googleapis.firestoreV1beta2Mod.firestoreV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for google.longrunning.Operation results from
   * FirestoreAdmin.UpdateField.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata extends StObject {
   
   /**
     * The progress, in bytes, of this operation.
     */
-  var bytesProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.native
+  var bytesProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.undefined
   
   /**
     * The progress, in documents, of this operation.
     */
-  var documentProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.native
+  var documentProgress: js.UndefOr[SchemaGoogleFirestoreAdminV1beta2Progress] = js.undefined
   
   /**
     * The time this operation completed. Will be unset if operation still in
     * progress.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The field resource that this operation is acting on. For example:
     * `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/fields/{field_path}`
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * A list of IndexConfigDelta, which describe the intent of this operation.
     */
-  var indexConfigDeltas: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta]] = js.native
+  var indexConfigDeltas: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta2IndexConfigDelta]] = js.undefined
   
   /**
     * The time this operation started.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the operation.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta2FieldOperationMetadata {
   

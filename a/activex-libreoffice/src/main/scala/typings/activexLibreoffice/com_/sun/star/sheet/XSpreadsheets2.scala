@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * extends {@link XSpreadsheets} interface to import external sheets.
   * @see com.sun.star.sheet.Spreadsheets
   */
-@js.native
-trait XSpreadsheets2 extends XSpreadsheets {
+trait XSpreadsheets2
+  extends StObject
+     with XSpreadsheets {
   
   /**
     * copies a sheet from a source document.
@@ -24,7 +24,7 @@ trait XSpreadsheets2 extends XSpreadsheets {
     * @throws com::sun::star::lang::IllegalArgumentException
     * @throws com::sun::star::lang::IndexOutOfBoundsException
     */
-  def importSheet(srcDoc: XSpreadsheetDocument, srcName: String, nDestPosition: Double): Double = js.native
+  def importSheet(srcDoc: XSpreadsheetDocument, srcName: String, nDestPosition: Double): Double
 }
 object XSpreadsheets2 {
   

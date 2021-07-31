@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionMod {
@@ -73,6 +72,10 @@ object functionMod {
   /* static members */
   object Function {
     
+    @JSImport("@pulumi/aws/appsync/function", "Function")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Function resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -82,65 +85,59 @@ object functionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appsync/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Function = js.native
-    @JSImport("@pulumi/aws/appsync/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Function = js.native
-    @JSImport("@pulumi/aws/appsync/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionState): Function = js.native
-    @JSImport("@pulumi/aws/appsync/function", "Function.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionState): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FunctionState, opts: CustomResourceOptions): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Returns true if the given object is an instance of Function.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appsync/function", "Function.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/function.Function */ Boolean]
   }
   
-  @js.native
   trait FunctionArgs extends StObject {
     
     /**
       * The ID of the associated AppSync API.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The Function DataSource name.
       */
-    val dataSource: Input[String] = js.native
+    val dataSource: Input[String]
     
     /**
       * The Function description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the request mapping template. Currently the supported value is `2018-05-29`.
       */
-    val functionVersion: js.UndefOr[Input[String]] = js.native
+    val functionVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function name. The function name does not have to be unique.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
       */
-    val requestMappingTemplate: Input[String] = js.native
+    val requestMappingTemplate: Input[String]
     
     /**
       * The Function response mapping template.
       */
-    val responseMappingTemplate: Input[String] = js.native
+    val responseMappingTemplate: Input[String]
   }
   object FunctionArgs {
     
@@ -190,53 +187,52 @@ object functionMod {
     }
   }
   
-  @js.native
   trait FunctionState extends StObject {
     
     /**
       * The ID of the associated AppSync API.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the Function object.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function DataSource name.
       */
-    val dataSource: js.UndefOr[Input[String]] = js.native
+    val dataSource: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function description.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique ID representing the Function object.
       */
-    val functionId: js.UndefOr[Input[String]] = js.native
+    val functionId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the request mapping template. Currently the supported value is `2018-05-29`.
       */
-    val functionVersion: js.UndefOr[Input[String]] = js.native
+    val functionVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function name. The function name does not have to be unique.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function request mapping template. Functions support only the 2018-05-29 version of the request mapping template.
       */
-    val requestMappingTemplate: js.UndefOr[Input[String]] = js.native
+    val requestMappingTemplate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Function response mapping template.
       */
-    val responseMappingTemplate: js.UndefOr[Input[String]] = js.native
+    val responseMappingTemplate: js.UndefOr[Input[String]] = js.undefined
   }
   object FunctionState {
     

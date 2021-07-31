@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value in the NextToken member of a subsequent call to DescribeSnapshots.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * The list of Snapshot objects that were retrieved. It is possible that this list contains less than the number of items specified in the Limit member of the request. This occurs if there are less than the requested number of items left to retrieve, or if the limitations of the operation have been exceeded.
     */
-  var Snapshots: js.UndefOr[typings.awsSdk.directoryserviceMod.Snapshots] = js.native
+  var Snapshots: js.UndefOr[typings.awsSdk.directoryserviceMod.Snapshots] = js.undefined
 }
 object DescribeSnapshotsResult {
   

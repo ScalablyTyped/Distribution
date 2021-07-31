@@ -10,9 +10,9 @@ Returns integer ranges for a given number of bytes
 | ------------------ | :-------------: |
 | Full name          | byte-range |
 | Keywords           | integer, byte, c, range |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 434 |
+| # downloads        | 569 |
 | # stars            | 0 |
 
 ## Links

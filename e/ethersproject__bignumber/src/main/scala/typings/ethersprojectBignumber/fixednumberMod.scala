@@ -5,10 +5,13 @@ import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import typings.ethersprojectBytes.mod.BytesLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fixednumberMod {
+  
+  @JSImport("@ethersproject/bignumber/lib/fixednumber", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat")
   @js.native
@@ -28,9 +31,12 @@ object fixednumberMod {
   /* static members */
   object FixedFormat {
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat.from")
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedFormat")
     @js.native
-    def from(value: js.Any): FixedFormat = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def from(value: js.Any): FixedFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedFormat]
   }
   
   @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber")
@@ -79,68 +85,57 @@ object fixednumberMod {
   /* static members */
   object FixedNumber {
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
+    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber")
     @js.native
-    def from(value: js.Any): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
-    @js.native
-    def from(value: js.Any, format: String): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.from")
-    @js.native
-    def from(value: js.Any, format: FixedFormat): FixedNumber = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
-    @js.native
-    def fromBytes(value: BytesLike): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
-    @js.native
-    def fromBytes(value: BytesLike, format: String): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromBytes")
-    @js.native
-    def fromBytes(value: BytesLike, format: FixedFormat): FixedNumber = js.native
+    @scala.inline
+    def from(value: js.Any): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
+    @scala.inline
+    def from(value: js.Any, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def from(value: js.Any, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
-    @js.native
-    def fromString(value: String): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
-    @js.native
-    def fromString(value: String, format: String): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromString")
-    @js.native
-    def fromString(value: String, format: FixedFormat): FixedNumber = js.native
+    @scala.inline
+    def fromBytes(value: BytesLike): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromBytes(value: BytesLike, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromBytes(value: BytesLike, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
-    @js.native
-    def fromValue(value: BigNumber): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
-    @js.native
-    def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: String): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
-    @js.native
-    def fromValue(value: BigNumber, decimals: js.UndefOr[BigNumberish], format: FixedFormat): FixedNumber = js.native
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.fromValue")
-    @js.native
-    def fromValue(value: BigNumber, decimals: BigNumberish): FixedNumber = js.native
+    @scala.inline
+    def fromString(value: String): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromString(value: String, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromString(value: String, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
     
-    @JSImport("@ethersproject/bignumber/lib/fixednumber", "FixedNumber.isFixedNumber")
-    @js.native
-    def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = js.native
+    @scala.inline
+    def fromValue(value: BigNumber): FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromValue(value: BigNumber, decimals: Unit, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromValue(value: BigNumber, decimals: Unit, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromValue(value: BigNumber, decimals: BigNumberish): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromValue(value: BigNumber, decimals: BigNumberish, format: String): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    @scala.inline
+    def fromValue(value: BigNumber, decimals: BigNumberish, format: FixedFormat): FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[FixedNumber]
+    
+    @scala.inline
+    def isFixedNumber(value: js.Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
   }
   
-  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
-  @js.native
-  def formatFixed(value: BigNumberish): String = js.native
-  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
-  @js.native
-  def formatFixed(value: BigNumberish, decimals: String): String = js.native
-  @JSImport("@ethersproject/bignumber/lib/fixednumber", "formatFixed")
-  @js.native
-  def formatFixed(value: BigNumberish, decimals: BigNumberish): String = js.native
+  @scala.inline
+  def formatFixed(value: BigNumberish): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatFixed(value: BigNumberish, decimals: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatFixed(value: BigNumberish, decimals: BigNumberish): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatFixed")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bignumber/lib/fixednumber", "parseFixed")
-  @js.native
-  def parseFixed(value: String): BigNumber = js.native
-  @JSImport("@ethersproject/bignumber/lib/fixednumber", "parseFixed")
-  @js.native
-  def parseFixed(value: String, decimals: BigNumberish): BigNumber = js.native
+  @scala.inline
+  def parseFixed(value: String): BigNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFixed")(value.asInstanceOf[js.Any]).asInstanceOf[BigNumber]
+  @scala.inline
+  def parseFixed(value: String, decimals: BigNumberish): BigNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFixed")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[BigNumber]
 }

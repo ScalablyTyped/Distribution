@@ -26,7 +26,6 @@ import typings.node.streamMod.Readable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -66,7 +65,7 @@ object mod extends Shortcut {
     def delete[T](uri: String): js.Promise[Response[T]] = js.native
     def delete[T](
       uri: String,
-      options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
+      options: typings.hapiWreck.mod.Client.request.Options & typings.hapiWreck.mod.Client.read.Options
     ): js.Promise[Response[T]] = js.native
     
     /**
@@ -85,7 +84,7 @@ object mod extends Shortcut {
     def get[T](uri: String): js.Promise[Response[T]] = js.native
     def get[T](
       uri: String,
-      options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
+      options: typings.hapiWreck.mod.Client.request.Options & typings.hapiWreck.mod.Client.read.Options
     ): js.Promise[Response[T]] = js.native
     
     /**
@@ -108,7 +107,7 @@ object mod extends Shortcut {
     def patch[T](uri: String): js.Promise[Response[T]] = js.native
     def patch[T](
       uri: String,
-      options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
+      options: typings.hapiWreck.mod.Client.request.Options & typings.hapiWreck.mod.Client.read.Options
     ): js.Promise[Response[T]] = js.native
     
     /**
@@ -122,7 +121,7 @@ object mod extends Shortcut {
     def post[T](uri: String): js.Promise[Response[T]] = js.native
     def post[T](
       uri: String,
-      options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
+      options: typings.hapiWreck.mod.Client.request.Options & typings.hapiWreck.mod.Client.read.Options
     ): js.Promise[Response[T]] = js.native
     
     /**
@@ -136,7 +135,7 @@ object mod extends Shortcut {
     def put[T](uri: String): js.Promise[Response[T]] = js.native
     def put[T](
       uri: String,
-      options: typings.hapiWreck.mod.Client.request.Options with typings.hapiWreck.mod.Client.read.Options
+      options: typings.hapiWreck.mod.Client.request.Options & typings.hapiWreck.mod.Client.read.Options
     ): js.Promise[Response[T]] = js.native
     
     def read[T](res: IncomingMessage): js.Promise[T] = js.native
@@ -177,23 +176,22 @@ object mod extends Shortcut {
   }
   object Client {
     
-    @js.native
     trait Agents extends StObject {
       
       /**
         * The agent used for HTTP requests.
         */
-      val http: Agent = js.native
+      val http: Agent
       
       /**
         * The agent used for HTTPS requests.
         */
-      val https: typings.node.httpsMod.Agent = js.native
+      val https: typings.node.httpsMod.Agent
       
       /**
         * The agent used for HTTPS requests which ignores unauthorized requests.
         */
-      val httpsAllowUnauthorized: typings.node.httpsMod.Agent = js.native
+      val httpsAllowUnauthorized: typings.node.httpsMod.Agent
     }
     object Agents {
       
@@ -254,22 +252,22 @@ object mod extends Shortcut {
       type response = js.Function2[/* err */ js.UndefOr[Boom[js.Any]], /* details */ Req, Unit]
     }
     
-    @js.native
     trait Options
-      extends typings.hapiWreck.mod.Client.request.Options
+      extends StObject
+         with typings.hapiWreck.mod.Client.request.Options
          with typings.hapiWreck.mod.Client.read.Options {
       
       /**
         * An object containing the node agents used for pooling connections for `http` and `https`.
         */
-      val agents: js.UndefOr[Agents] = js.native
+      val agents: js.UndefOr[Agents] = js.undefined
       
       /**
         * Enables events.
         * 
         * @default false
         */
-      val events: js.UndefOr[Boolean] = js.native
+      val events: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Determines how to handle gzipped payloads.
@@ -277,7 +275,7 @@ object mod extends Shortcut {
         * @default false
         */
       /* InferMemberOverrides */
-      override val gunzip: js.UndefOr[Boolean | force] = js.native
+      override val gunzip: js.UndefOr[Boolean | force] = js.undefined
       
       /**
         * The number of milliseconds to wait while reading data before aborting handling of the response.
@@ -285,7 +283,7 @@ object mod extends Shortcut {
         * @default 0
         */
       /* InferMemberOverrides */
-      override val timeout: js.UndefOr[Double] = js.native
+      override val timeout: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -326,11 +324,11 @@ object mod extends Shortcut {
     
     object parseCacheControl {
       
-      @js.native
       trait Parameters
-        extends /* key */ StringDictionary[js.UndefOr[String | Double]] {
+        extends StObject
+           with /* key */ StringDictionary[js.UndefOr[String | Double]] {
         
-        var `max-age`: js.UndefOr[Double] = js.native
+        var `max-age`: js.UndefOr[Double] = js.undefined
       }
       object Parameters {
         
@@ -354,7 +352,6 @@ object mod extends Shortcut {
     
     object read {
       
-      @js.native
       trait Options extends StObject {
         
         /**
@@ -362,26 +359,26 @@ object mod extends Shortcut {
           *
           * @default false
           */
-        val gunzip: js.UndefOr[Boolean | force] = js.native
+        val gunzip: js.UndefOr[Boolean | force] = js.undefined
         
         /**
           * Determines how to parse the payload as JSON.
           */
-        val json: js.UndefOr[Boolean | strict | force] = js.native
+        val json: js.UndefOr[Boolean | strict | force] = js.undefined
         
         /**
           * The maximum allowed response payload size.
           * 
           * @default 0
           */
-        val maxBytes: js.UndefOr[Double] = js.native
+        val maxBytes: js.UndefOr[Double] = js.undefined
         
         /**
           * The number of milliseconds to wait while reading data before aborting handling of the response.
           * 
           * @default 0
           */
-        val timeout: js.UndefOr[Double] = js.native
+        val timeout: js.UndefOr[Double] = js.undefined
       }
       object Options {
         
@@ -423,18 +420,17 @@ object mod extends Shortcut {
     
     object request {
       
-      @js.native
       trait Options extends StObject {
         
         /**
           * Node HTTP or HTTPS Agent object (false disables agent pooling).
           */
-        val agent: js.UndefOr[Agent | typings.node.httpsMod.Agent | `false`] = js.native
+        val agent: js.UndefOr[Agent | typings.node.httpsMod.Agent | `false`] = js.undefined
         
         /**
           * Fully qualified URL string used as the base URL.
           */
-        val baseUrl: js.UndefOr[String] = js.native
+        val baseUrl: js.UndefOr[String] = js.undefined
         
         /**
           * A function to call before a redirect is triggered.
@@ -456,41 +452,41 @@ object mod extends Shortcut {
                   /* next */ js.Function0[Unit], 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * TLS list of TLS ciphers to override node's default.
           */
-        val ciphers: js.UndefOr[String] = js.native
+        val ciphers: js.UndefOr[String] = js.undefined
         
         /**
           * Determines how to handle gzipped payloads.
           * 
           * @default false
           */
-        val gunzip: js.UndefOr[Boolean | force] = js.native
+        val gunzip: js.UndefOr[Boolean | force] = js.undefined
         
         /**
           * An object containing the request headers.
           */
-        val headers: js.UndefOr[Record[String, String]] = js.native
+        val headers: js.UndefOr[Record[String, String]] = js.undefined
         
         /**
           * The request body as a string, Buffer, readable stream, or an object that can be serialized using `JSON.stringify()`.
           */
-        val payload: js.UndefOr[typings.hapiWreck.mod.Client.request.Payload] = js.native
+        val payload: js.UndefOr[typings.hapiWreck.mod.Client.request.Payload] = js.undefined
         
         /**
           * Enables redirects on 303 responses (using GET).
           * 
           * @default false
           */
-        val redirect303: js.UndefOr[Boolean] = js.native
+        val redirect303: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Overrides the HTTP method used when following 301 and 302 redirections. Defaults to the original method.
           */
-        val redirectMethod: js.UndefOr[String] = js.native
+        val redirectMethod: js.UndefOr[String] = js.undefined
         
         /**
           * A function to call when a redirect was triggered.
@@ -501,36 +497,36 @@ object mod extends Shortcut {
           */
         val redirected: js.UndefOr[
                 js.Function3[/* statusCode */ Double, /* location */ String, /* req */ ClientRequest, Unit]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * The maximum number of redirects to follow.
           * 
           * @default false
           */
-        val redirects: js.UndefOr[Double | `false`] = js.native
+        val redirects: js.UndefOr[Double | `false`] = js.undefined
         
         /**
           * TLS flag indicating whether the client should reject a response from a server with invalid certificates.
           */
-        val rejectUnauthorized: js.UndefOr[Boolean] = js.native
+        val rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
         
         /**
           * TLS flag indicating the SSL method to use, e.g. `SSLv3_method` to force SSL version 3.
           */
-        val secureProtocol: js.UndefOr[String] = js.native
+        val secureProtocol: js.UndefOr[String] = js.undefined
         
         /**
           * A UNIX socket path string for direct server connection.
           */
-        val socketPath: js.UndefOr[String] = js.native
+        val socketPath: js.UndefOr[String] = js.undefined
         
         /**
           * Number of milliseconds to wait without receiving a response before aborting the request.
           * 
           * @default 0
           */
-        val timeout: js.UndefOr[Double] = js.native
+        val timeout: js.UndefOr[Double] = js.undefined
       }
       object Options {
         
@@ -639,12 +635,11 @@ object mod extends Shortcut {
       
       type Payload = String | Buffer | Readable | js.Object
       
-      @js.native
       trait Response[T] extends StObject {
         
-        var payload: T = js.native
+        var payload: T
         
-        var res: IncomingMessage = js.native
+        var res: IncomingMessage
       }
       object Response {
         
@@ -655,7 +650,7 @@ object mod extends Shortcut {
         }
         
         @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response[_], T] (val x: Self with Response[T]) extends AnyVal {
+        implicit class ResponseMutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
           
           @scala.inline
           def setPayload(value: T): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])

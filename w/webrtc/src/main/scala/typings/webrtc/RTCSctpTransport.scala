@@ -2,16 +2,14 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcsctptransport
-@js.native
 trait RTCSctpTransport extends StObject {
   
-  val maxMessageSize: Double = js.native
+  val maxMessageSize: Double
   
-  val transport: RTCDtlsTransport = js.native
+  val transport: RTCDtlsTransport
 }
 object RTCSctpTransport {
   

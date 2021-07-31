@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var emptyValue: js.UndefOr[String] = js.native
+  var emptyValue: js.UndefOr[String] = js.undefined
   
-  var ok: js.UndefOr[String] = js.native
+  var ok: js.UndefOr[String] = js.undefined
 }
 object Cancel {
   

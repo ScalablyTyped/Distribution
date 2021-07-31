@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotTreemapTraverseUpButtonOptions extends StObject {
   
   /**
     * (Highcharts) The position of the button.
     */
-  var position: js.UndefOr[PlotTreemapTraverseUpButtonPositionOptions] = js.native
+  var position: js.UndefOr[PlotTreemapTraverseUpButtonPositionOptions] = js.undefined
 }
 object PlotTreemapTraverseUpButtonOptions {
   

@@ -5,72 +5,58 @@ import typings.navermaps.naver.maps.MapEventListener
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Event {
   
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  
   @JSGlobal("naver.maps.Event")
   @js.native
-  def apply(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("naver.maps.Event.addDOMListener")
-  @js.native
-  def addDOMListener(element: HTMLElement, eventName: String, listener: js.Function1[/* event */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def addDOMListener(element: HTMLElement, eventName: String, listener: js.Function1[/* event */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDOMListener")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.addListener")
-  @js.native
-  def addListener(target: js.Any, eventName: String, listener: js.Function1[/* event */ js.Any, _]): MapEventListener = js.native
+  @scala.inline
+  def addListener(target: js.Any, eventName: String, listener: js.Function1[/* event */ js.Any, js.Any]): MapEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[MapEventListener]
   
-  @JSGlobal("naver.maps.Event.clearInstanceListeners")
-  @js.native
-  def clearInstanceListeners(target: js.Any): Unit = js.native
+  @scala.inline
+  def clearInstanceListeners(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInstanceListeners")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.clearListeners")
-  @js.native
-  def clearListeners(target: js.Any, fromEventName: String): Unit = js.native
+  @scala.inline
+  def clearListeners(target: js.Any, fromEventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearListeners")(target.asInstanceOf[js.Any], fromEventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.forward")
-  @js.native
-  def forward(source: js.Any, fromEventName: String, target: js.Any, toEventName: String): MapEventListener = js.native
+  @scala.inline
+  def forward(source: js.Any, fromEventName: String, target: js.Any, toEventName: String): MapEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("forward")(source.asInstanceOf[js.Any], fromEventName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], toEventName.asInstanceOf[js.Any])).asInstanceOf[MapEventListener]
   
-  @JSGlobal("naver.maps.Event.hasListener")
-  @js.native
-  def hasListener(target: js.Any, eventName: String): Boolean = js.native
+  @scala.inline
+  def hasListener(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasListener")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("naver.maps.Event.once")
-  @js.native
-  def once(target: js.Any, eventName: String, listener: js.Function1[/* event */ js.Any, _]): MapEventListener = js.native
+  @scala.inline
+  def once(target: js.Any, eventName: String, listener: js.Function1[/* event */ js.Any, js.Any]): MapEventListener = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[MapEventListener]
   
-  @JSGlobal("naver.maps.Event.removeDOMListener")
-  @js.native
-  def removeDOMListener(element: HTMLElement, eventName: String, listener: js.Function1[/* event */ js.Any, _]): Unit = js.native
-  @JSGlobal("naver.maps.Event.removeDOMListener")
-  @js.native
-  def removeDOMListener(listeners: js.Array[DOMEventListener]): Unit = js.native
-  @JSGlobal("naver.maps.Event.removeDOMListener")
-  @js.native
-  def removeDOMListener(listeners: DOMEventListener): Unit = js.native
+  @scala.inline
+  def removeDOMListener(element: HTMLElement, eventName: String, listener: js.Function1[/* event */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeDOMListener")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def removeDOMListener(listeners: js.Array[DOMEventListener]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDOMListener")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeDOMListener(listeners: DOMEventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDOMListener")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.removeListener")
-  @js.native
-  def removeListener(listeners: js.Array[MapEventListener]): Unit = js.native
-  @JSGlobal("naver.maps.Event.removeListener")
-  @js.native
-  def removeListener(listeners: MapEventListener): Unit = js.native
+  @scala.inline
+  def removeListener(listeners: js.Array[MapEventListener]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeListener(listeners: MapEventListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(listeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.resumeDispatch")
-  @js.native
-  def resumeDispatch(target: js.Any, eventName: String): Unit = js.native
+  @scala.inline
+  def resumeDispatch(target: js.Any, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resumeDispatch")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.stopDispatch")
-  @js.native
-  def stopDispatch(target: js.Any, eventName: String): Unit = js.native
+  @scala.inline
+  def stopDispatch(target: js.Any, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stopDispatch")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("naver.maps.Event.trigger")
-  @js.native
-  def trigger(target: js.Any, eventName: String): Unit = js.native
-  @JSGlobal("naver.maps.Event.trigger")
-  @js.native
-  def trigger(target: js.Any, eventName: String, eventObject: js.Any): Unit = js.native
+  @scala.inline
+  def trigger(target: js.Any, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def trigger(target: js.Any, eventName: String, eventObject: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

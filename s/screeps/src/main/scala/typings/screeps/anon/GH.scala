@@ -2,35 +2,33 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GH extends StObject {
   
-  var GH: UpgradeController = js.native
+  var GH: UpgradeController
   
-  var GH2O: `4` = js.native
+  var GH2O: `4`
   
-  var LH: Build = js.native
+  var LH: Build
   
-  var LH2O: Repair = js.native
+  var LH2O: Repair
   
-  var UHO2: `0` = js.native
+  var UHO2: `0`
   
-  var UO: Harvest = js.native
+  var UO: Harvest
   
-  var XGH2O: `5` = js.native
+  var XGH2O: `5`
   
-  var XLH2O: BuildRepair = js.native
+  var XLH2O: BuildRepair
   
-  var XUHO2: `1` = js.native
+  var XUHO2: `1`
   
-  var XZH2O: `3` = js.native
+  var XZH2O: `3`
   
-  var ZH: Dismantle = js.native
+  var ZH: Dismantle
   
-  var ZH2O: `2` = js.native
+  var ZH2O: `2`
 }
 object GH {
   

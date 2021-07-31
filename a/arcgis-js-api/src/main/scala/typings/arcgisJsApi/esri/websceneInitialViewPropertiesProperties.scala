@@ -4,10 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait websceneInitialViewPropertiesProperties extends StObject {
   
   /**
@@ -15,28 +13,28 @@ trait websceneInitialViewPropertiesProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#environment)
     */
-  var environment: js.UndefOr[EnvironmentProperties] = js.native
+  var environment: js.UndefOr[EnvironmentProperties] = js.undefined
   
   /**
     * The spatial reference of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The viewing mode of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
     */
-  var viewingMode: js.UndefOr[global | local] = js.native
+  var viewingMode: js.UndefOr[global | local] = js.undefined
   
   /**
     * The initial viewpoint of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
 object websceneInitialViewPropertiesProperties {
   

@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxShadowProps extends StObject {
   
   val boxShadow: js.UndefOr[
     ResponsiveValue[
-      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BoxShadowProps {
   
@@ -28,7 +26,7 @@ object BoxShadowProps {
     @scala.inline
     def setBoxShadow(
       value: ResponsiveValue[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
         ]
     ): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object BoxShadowProps {
     def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
     @scala.inline
-    def setBoxShadowVarargs(value: (js.Any | Double)*): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
+    def setBoxShadowVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double)*
+    ): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
   }
 }

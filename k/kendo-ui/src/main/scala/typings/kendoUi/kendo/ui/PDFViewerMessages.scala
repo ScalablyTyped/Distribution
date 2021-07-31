@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFViewerMessages extends StObject {
   
-  var defaultFileName: js.UndefOr[String] = js.native
+  var defaultFileName: js.UndefOr[String] = js.undefined
   
-  var dialogs: js.UndefOr[PDFViewerMessagesDialogs] = js.native
+  var dialogs: js.UndefOr[PDFViewerMessagesDialogs] = js.undefined
   
-  var errorMessages: js.UndefOr[PDFViewerMessagesErrorMessages] = js.native
+  var errorMessages: js.UndefOr[PDFViewerMessagesErrorMessages] = js.undefined
   
-  var toolbar: js.UndefOr[PDFViewerMessagesToolbar] = js.native
+  var toolbar: js.UndefOr[PDFViewerMessagesToolbar] = js.undefined
 }
 object PDFViewerMessages {
   

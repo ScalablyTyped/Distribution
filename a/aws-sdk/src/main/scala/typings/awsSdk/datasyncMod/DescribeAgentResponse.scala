@@ -2,46 +2,44 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAgentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the agent.
     */
-  var AgentArn: js.UndefOr[typings.awsSdk.datasyncMod.AgentArn] = js.native
+  var AgentArn: js.UndefOr[typings.awsSdk.datasyncMod.AgentArn] = js.undefined
   
   /**
     * The time that the agent was activated (that is, created in your account).
     */
-  var CreationTime: js.UndefOr[Time] = js.native
+  var CreationTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The type of endpoint that your agent is connected to. If the endpoint is a VPC endpoint, the agent is not accessible over the public internet. 
     */
-  var EndpointType: js.UndefOr[typings.awsSdk.datasyncMod.EndpointType] = js.native
+  var EndpointType: js.UndefOr[typings.awsSdk.datasyncMod.EndpointType] = js.undefined
   
   /**
     * The time that the agent last connected to DataSyc.
     */
-  var LastConnectionTime: js.UndefOr[Time] = js.native
+  var LastConnectionTime: js.UndefOr[Time] = js.undefined
   
   /**
     * The name of the agent.
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
     * The subnet and the security group that DataSync used to access a VPC endpoint.
     */
-  var PrivateLinkConfig: js.UndefOr[typings.awsSdk.datasyncMod.PrivateLinkConfig] = js.native
+  var PrivateLinkConfig: js.UndefOr[typings.awsSdk.datasyncMod.PrivateLinkConfig] = js.undefined
   
   /**
     * The status of the agent. If the status is ONLINE, then the agent is configured properly and is available to use. The Running status is the normal running status for an agent. If the status is OFFLINE, the agent's VM is turned off or the agent is in an unhealthy state. When the issue that caused the unhealthy state is resolved, the agent returns to ONLINE status.
     */
-  var Status: js.UndefOr[AgentStatus] = js.native
+  var Status: js.UndefOr[AgentStatus] = js.undefined
 }
 object DescribeAgentResponse {
   

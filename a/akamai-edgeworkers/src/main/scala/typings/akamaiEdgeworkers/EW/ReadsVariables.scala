@@ -2,16 +2,14 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadsVariables extends StObject {
   
   /**
     * Gets the value of a metadata variable
     */
-  def getVariable(name: String): js.UndefOr[String] = js.native
+  def getVariable(name: String): js.UndefOr[String]
 }
 object ReadsVariables {
   

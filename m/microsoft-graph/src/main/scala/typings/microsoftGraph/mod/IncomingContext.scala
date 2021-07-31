@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncomingContext extends StObject {
   
   // The ID of the participant that is under observation. Read-only.
-  var observedParticipantId: js.UndefOr[NullableOption[String]] = js.native
+  var observedParticipantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The identity that the call is happening on behalf of.
-  var onBehalfOf: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var onBehalfOf: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // The ID of the participant that triggered the incoming call. Read-only.
-  var sourceParticipantId: js.UndefOr[NullableOption[String]] = js.native
+  var sourceParticipantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The identity that transferred the call.
-  var transferor: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var transferor: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
 }
 object IncomingContext {
   

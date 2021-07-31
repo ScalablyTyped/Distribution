@@ -19,15 +19,14 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XSelectionFunction
-  extends XKeyHandler
+  extends StObject
      with XComponent
      with XServiceInfo
      with XDispatch
+     with XKeyHandler
      with XMouseClickHandler
      with XMouseMotionHandler
      with XSelectionChangeListener

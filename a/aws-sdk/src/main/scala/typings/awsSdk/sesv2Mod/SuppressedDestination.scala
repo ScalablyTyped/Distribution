@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuppressedDestination extends StObject {
   
   /**
     * An optional value that can contain additional information about the reasons that the address was added to the suppression list for your account.
     */
-  var Attributes: js.UndefOr[SuppressedDestinationAttributes] = js.native
+  var Attributes: js.UndefOr[SuppressedDestinationAttributes] = js.undefined
   
   /**
     * The email address that is on the suppression list for your account.
     */
-  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress
   
   /**
     * The date and time when the suppressed destination was last updated, shown in Unix time format.
     */
-  var LastUpdateTime: Timestamp = js.native
+  var LastUpdateTime: Timestamp
   
   /**
     * The reason that the address was added to the suppression list for your account.
     */
-  var Reason: SuppressionListReason = js.native
+  var Reason: SuppressionListReason
 }
 object SuppressedDestination {
   

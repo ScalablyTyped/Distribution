@@ -10,9 +10,9 @@ A react component for Ace Editor
 | ------------------ | :-------------: |
 | Full name          | react-ace |
 | Keywords           | ace, ace editor, react-component, react |
-| # releases         | 19 |
-| # dependents       | 252 |
-| # downloads        | 12586264 |
+| # releases         | 18 |
+| # dependents       | 288 |
+| # downloads        | 14429243 |
 | # stars            | 13 |
 
 ## Links

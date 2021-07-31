@@ -6,56 +6,54 @@ import typings.plotlyJs.plotlyJsStrings.area
 import typings.plotlyJs.plotlyJsStrings.diameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotMarker> */
-@js.native
 trait PartialPlotMarkerAutocolorscale extends StObject {
   
-  var autocolorscale: js.UndefOr[Boolean] = js.native
+  var autocolorscale: js.UndefOr[Boolean] = js.undefined
   
-  var cauto: js.UndefOr[Boolean] = js.native
+  var cauto: js.UndefOr[Boolean] = js.undefined
   
-  var cmax: js.UndefOr[Double] = js.native
+  var cmax: js.UndefOr[Double] = js.undefined
   
-  var cmin: js.UndefOr[Double] = js.native
+  var cmin: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color | js.Array[typings.plotlyJs.mod.Color]] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color | js.Array[typings.plotlyJs.mod.Color]] = js.undefined
   
-  var colorbar: js.UndefOr[PartialColorBar] = js.native
+  var colorbar: js.UndefOr[PartialColorBar] = js.undefined
   
-  var colors: js.UndefOr[js.Array[typings.plotlyJs.mod.Color]] = js.native
+  var colors: js.UndefOr[js.Array[typings.plotlyJs.mod.Color]] = js.undefined
   
-  var colorscale: js.UndefOr[ColorScale] = js.native
+  var colorscale: js.UndefOr[ColorScale] = js.undefined
   
-  var gradient: js.UndefOr[Colorsrc] = js.native
+  var gradient: js.UndefOr[Colorsrc] = js.undefined
   
-  var line: js.UndefOr[PartialScatterMarkerLine] = js.native
+  var line: js.UndefOr[PartialScatterMarkerLine] = js.undefined
   
-  var maxdisplayed: js.UndefOr[Double] = js.native
+  var maxdisplayed: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double | js.Array[Double]] = js.native
+  var opacity: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var pad: js.UndefOr[PartialPadding] = js.native
+  var pad: js.UndefOr[PartialPadding] = js.undefined
   
-  var reversescale: js.UndefOr[Boolean] = js.native
+  var reversescale: js.UndefOr[Boolean] = js.undefined
   
-  var showscale: js.UndefOr[Boolean] = js.native
+  var showscale: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double | js.Array[Double]] = js.native
+  var size: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var sizemax: js.UndefOr[Double] = js.native
+  var sizemax: js.UndefOr[Double] = js.undefined
   
-  var sizemin: js.UndefOr[Double] = js.native
+  var sizemin: js.UndefOr[Double] = js.undefined
   
-  var sizemode: js.UndefOr[diameter | area] = js.native
+  var sizemode: js.UndefOr[diameter | area] = js.undefined
   
-  var sizeref: js.UndefOr[Double] = js.native
+  var sizeref: js.UndefOr[Double] = js.undefined
   
-  var symbol: js.UndefOr[MarkerSymbol] = js.native
+  var symbol: js.UndefOr[MarkerSymbol] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialPlotMarkerAutocolorscale {
   

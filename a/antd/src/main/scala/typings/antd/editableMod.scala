@@ -7,7 +7,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editableMod extends Shortcut {
@@ -16,28 +15,27 @@ object editableMod extends Shortcut {
   @js.native
   val default: FC[EditableProps] = js.native
   
-  @js.native
   trait EditableProps extends StObject {
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.native
+    var autoSize: js.UndefOr[Boolean | AutoSizeType] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
-    def onSave(value: String): Unit = js.native
+    def onSave(value: String): Unit
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object EditableProps {
     

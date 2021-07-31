@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcDhcpOptionsMod {
@@ -25,7 +24,7 @@ object vpcDhcpOptionsMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VpcDhcpOptionsArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VpcDhcpOptionsArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -71,6 +70,10 @@ object vpcDhcpOptionsMod {
   /* static members */
   object VpcDhcpOptions {
     
+    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcDhcpOptions resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -80,60 +83,54 @@ object vpcDhcpOptionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState): VpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState, opts: CustomResourceOptions): VpcDhcpOptions = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcDhcpOptionsState, opts: CustomResourceOptions): VpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptions]
     
     /**
       * Returns true if the given object is an instance of VpcDhcpOptions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptions.VpcDhcpOptions */ Boolean]
   }
   
-  @js.native
   trait VpcDhcpOptionsArgs extends StObject {
     
     /**
       * the suffix domain name to use by default when resolving non Fully Qualified Domain Names. In other words, this is what ends up being the `search` value in the `/etc/resolv.conf` file.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of name servers to configure in `/etc/resolv.conf`. If you want to use the default AWS nameservers you should set this to `AmazonProvidedDNS`.
       */
-    val domainNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val domainNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of NETBIOS name servers.
       */
-    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see [RFC 2132](http://www.ietf.org/rfc/rfc2132.txt).
       */
-    val netbiosNodeType: js.UndefOr[Input[String]] = js.native
+    val netbiosNodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of NTP servers to configure.
       */
-    val ntpServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ntpServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcDhcpOptionsArgs {
     
@@ -193,48 +190,47 @@ object vpcDhcpOptionsMod {
     }
   }
   
-  @js.native
   trait VpcDhcpOptionsState extends StObject {
     
     /**
       * The ARN of the DHCP Options Set.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * the suffix domain name to use by default when resolving non Fully Qualified Domain Names. In other words, this is what ends up being the `search` value in the `/etc/resolv.conf` file.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of name servers to configure in `/etc/resolv.conf`. If you want to use the default AWS nameservers you should set this to `AmazonProvidedDNS`.
       */
-    val domainNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val domainNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of NETBIOS name servers.
       */
-    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see [RFC 2132](http://www.ietf.org/rfc/rfc2132.txt).
       */
-    val netbiosNodeType: js.UndefOr[Input[String]] = js.native
+    val netbiosNodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of NTP servers to configure.
       */
-    val ntpServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val ntpServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the DHCP options set.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcDhcpOptionsState {
     

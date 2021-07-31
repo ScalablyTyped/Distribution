@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TodoTaskList extends Entity {
+trait TodoTaskList
+  extends StObject
+     with Entity {
   
   // The name of the task list.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of open extensions defined for the task list. Nullable.
-  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.native
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
   
   // True if the user is owner of the given task list.
-  var isOwner: js.UndefOr[Boolean] = js.native
+  var isOwner: js.UndefOr[Boolean] = js.undefined
   
   // True if the task list is shared with other users
-  var isShared: js.UndefOr[Boolean] = js.native
+  var isShared: js.UndefOr[Boolean] = js.undefined
   
   // The tasks in this task list. Read-only. Nullable.
-  var tasks: js.UndefOr[NullableOption[js.Array[TodoTask]]] = js.native
+  var tasks: js.UndefOr[NullableOption[js.Array[TodoTask]]] = js.undefined
   
   /**
     * Property indicating the list name if the given list is a well-known list. Possible values are: none, defaultList,
     * flaggedEmails, unknownFutureValue.
     */
-  var wellknownListName: js.UndefOr[WellknownListName] = js.native
+  var wellknownListName: js.UndefOr[WellknownListName] = js.undefined
 }
 object TodoTaskList {
   

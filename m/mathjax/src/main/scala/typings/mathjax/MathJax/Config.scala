@@ -2,48 +2,46 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
-  var AsciiMath: js.UndefOr[AsciiMathInputProcessor] = js.native
+  var AsciiMath: js.UndefOr[AsciiMathInputProcessor] = js.undefined
   
-  var CommonHTML: js.UndefOr[CommonHTMLOutputProcessor] = js.native
+  var CommonHTML: js.UndefOr[CommonHTMLOutputProcessor] = js.undefined
   
-  var FontWarnings: js.UndefOr[typings.mathjax.MathJax.FontWarnings] = js.native
+  var FontWarnings: js.UndefOr[typings.mathjax.MathJax.FontWarnings] = js.undefined
   
-  var `HTML-CSS`: js.UndefOr[HTMLCSSOutputProcessor] = js.native
+  var `HTML-CSS`: js.UndefOr[HTMLCSSOutputProcessor] = js.undefined
   
-  var MMLorHTML: js.UndefOr[MMLorHTMLConfiguration] = js.native
+  var MMLorHTML: js.UndefOr[MMLorHTMLConfiguration] = js.undefined
   
-  var MatchWebFonts: js.UndefOr[typings.mathjax.MathJax.MatchWebFonts] = js.native
+  var MatchWebFonts: js.UndefOr[typings.mathjax.MathJax.MatchWebFonts] = js.undefined
   
-  var MathEvents: js.UndefOr[typings.mathjax.MathJax.MathEvents] = js.native
+  var MathEvents: js.UndefOr[typings.mathjax.MathJax.MathEvents] = js.undefined
   
-  var MathML: js.UndefOr[MathMLInputProcessor] = js.native
+  var MathML: js.UndefOr[MathMLInputProcessor] = js.undefined
   
-  var MathMenu: js.UndefOr[typings.mathjax.MathJax.MathMenu] = js.native
+  var MathMenu: js.UndefOr[typings.mathjax.MathJax.MathMenu] = js.undefined
   
-  var MathZoom: js.UndefOr[typings.mathjax.MathJax.MathZoom] = js.native
+  var MathZoom: js.UndefOr[typings.mathjax.MathJax.MathZoom] = js.undefined
   
-  var NativeMML: js.UndefOr[NativeMMLOutputProcessor] = js.native
+  var NativeMML: js.UndefOr[NativeMMLOutputProcessor] = js.undefined
   
-  var SVG: js.UndefOr[SVGOutputProcessor] = js.native
+  var SVG: js.UndefOr[SVGOutputProcessor] = js.undefined
   
-  var Safe: js.UndefOr[typings.mathjax.MathJax.Safe] = js.native
+  var Safe: js.UndefOr[typings.mathjax.MathJax.Safe] = js.undefined
   
-  var TeX: js.UndefOr[TeXInputProcessor] = js.native
+  var TeX: js.UndefOr[TeXInputProcessor] = js.undefined
   
-  var asciimath2jax: js.UndefOr[Asciimath2jaxPreprocessor] = js.native
+  var asciimath2jax: js.UndefOr[Asciimath2jaxPreprocessor] = js.undefined
   
   /*A list of configuration files to load when MathJax starts up, e.g., to define local macros,
     * etc., and there is a sample config file named config/local/local.js. The default directory is the
     * MathJax/config directory. The MMLorHTML.js configuration is one such configuration file, and there are a
     * number of other pre-defined configurations (see Using a configuration file for more details).
     */
-  var config: js.UndefOr[js.Array[String]] = js.native
+  var config: js.UndefOr[js.Array[String]] = js.undefined
   
   /*Normally MathJax will perform its startup commands (loading of configuration, styles, jax, and so on) as soon
     * as it can. If you expect to be doing additional configuration on the page, however, you may want to have it
@@ -51,56 +49,56 @@ trait Config extends StObject {
     * "configured", in which case, MathJax will delay its startup until you explicitly call
     * MathJax.Hub.Configured(). See Configuring MathJax after it is loaded for more details.
     */
-  var delayStartupUntil: js.UndefOr[String] = js.native
+  var delayStartupUntil: js.UndefOr[String] = js.undefined
   
   /*These two parameters control the alignment and shifting of displayed equations. The first can be "left",
     * "center", or "right", and determines the alignment of displayed equations. When the alignment is not "center",
     * the second determines an indentation from the left or right side for the displayed equations.*/
-  var displayAlign: js.UndefOr[String] = js.native
+  var displayAlign: js.UndefOr[String] = js.undefined
   
-  var displayIndent: js.UndefOr[String] = js.native
+  var displayIndent: js.UndefOr[String] = js.undefined
   
   /*This is a list of DOM element ID’s that are the ones to process for mathematics when any of the Hub typesetting
     * calls (Typeset(), Process(), Update(), etc.) are called with no element specified, and during MathJax’s initial
     * typesetting run when it starts up. This lets you restrict the processing to particular containers rather than
     * scanning the entire document for mathematics. If none are supplied, the complete document is processed.
     */
-  var elements: js.UndefOr[js.Array[String]] = js.native
+  var elements: js.UndefOr[js.Array[String]] = js.undefined
   
   /*This block contains settings that control how MathJax responds to unexpected errors while processing
     * mathematical equations. Rather than simply crash, MathJax can report an error and go on.
     */
-  var errorSettings: js.UndefOr[ErrorSettings] = js.native
+  var errorSettings: js.UndefOr[ErrorSettings] = js.undefined
   
   /*A list of extensions to load at startup. The default directory is MathJax/extensions. The
     * tex2jax and mml2jax preprocessors can be listed here, as well as a FontWarnings extension that you can use to
     * inform your user that mathematics fonts are available that they can download to improve their experience of
     * your site.
     */
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /*A list of input and output jax to initialize at startup. Their main code is loaded only when
     * they are actually used, so it is not inefficient to include jax that may not actually be used on the page.
     * These are found in the MathJax/jax directory.
     */
-  var jax: js.UndefOr[js.Array[String]] = js.native
+  var jax: js.UndefOr[js.Array[String]] = js.undefined
   
-  var jsMath2jax: js.UndefOr[JSMath2jaxPreprocessor] = js.native
+  var jsMath2jax: js.UndefOr[JSMath2jaxPreprocessor] = js.undefined
   
   /*This block contains settings for the mathematics contextual menu that act as the defaults for the user’s
     * settings in that menu.
     * There are also settings for format, renderer, font, mpContext, and mpMouse, but these are maintained by
     * MathJax and should not be set by the page author.
     */
-  var menuSettings: js.UndefOr[MenuSettings] = js.native
+  var menuSettings: js.UndefOr[MenuSettings] = js.undefined
   
   /*This value controls the verbosity of the messages in the lower left-hand corner. Set it to "none" to eliminate
     * all messages, or set it to "simple" to show “Loading...” and “Processing...” rather than showing the full file
     * name or the percentage of the mathematics processed.
     */
-  var messageStyle: js.UndefOr[String] = js.native
+  var messageStyle: js.UndefOr[String] = js.undefined
   
-  var mml2jax: js.UndefOr[MML2jaxPreprocessor] = js.native
+  var mml2jax: js.UndefOr[MML2jaxPreprocessor] = js.undefined
   
   /*ince typesetting usually changes the vertical dimensions of the page, if the URL contains an anchor position,
     * then after the page is typeset, you may no longer be positioned at the correct position on the page. MathJax
@@ -108,9 +106,9 @@ trait Config extends StObject {
     * whether MathJax will reposition the browser to the #hash location from the page URL after typesetting for
     * the page.
     */
-  var positionToHash: js.UndefOr[Boolean] = js.native
+  var positionToHash: js.UndefOr[Boolean] = js.undefined
   
-  var postJax: js.UndefOr[js.Any] = js.native
+  var postJax: js.UndefOr[js.Any] = js.undefined
   
   /*Patterns to remove from before and after math script tags. If you are not using one of the preprocessors, you
     * need to insert something extra into your HTML file in order to avoid a bug in Internet Explorer. IE removes
@@ -134,7 +132,7 @@ trait Config extends StObject {
     *
     * preJax: "\\[\\[", postJax: "\\]\\]" makes it so jax scripts must be enclosed in double brackets.
     */
-  var preJax: js.UndefOr[js.Any] = js.native
+  var preJax: js.UndefOr[js.Any] = js.undefined
   
   /*This is the CSS class name for math previews that will be removed preceding a MathJax SCRIPT tag. If the tag
     * just before the MathJax <script> tag is of this class, its contents are removed when MathJax processes the
@@ -147,7 +145,7 @@ trait Config extends StObject {
     * <span class="MathJax_Preview">[math]</span><script  type="math/tex">...</script>
     * would display “[math]” in place of the math until MathJax is able to typeset it.
     */
-  var preRemoveClass: js.UndefOr[String] = js.native
+  var preRemoveClass: js.UndefOr[String] = js.undefined
   
   /*These control whether to attach the MathJax contextual menu to the expressions typeset by MathJax. Since the
     * code for handling MathPlayer in Internet Explorer is somewhat delicate, it is controlled separately via
@@ -166,35 +164,35 @@ trait Config extends StObject {
     * since they are shared by all output jax. MathJax will still honor their values from their original positions,
     * if they are set there.
     */
-  var showMathMenu: js.UndefOr[Boolean] = js.native
+  var showMathMenu: js.UndefOr[Boolean] = js.undefined
   
-  var showMathMenuMSIE: js.UndefOr[Boolean] = js.native
+  var showMathMenuMSIE: js.UndefOr[Boolean] = js.undefined
   
   /*This value controls whether the Processing Math: nn% messages are displayed in the lower left-hand corner.
     * Set to false to prevent those messages (though file loading and other messages will still be shown).
     */
-  var showProcessingMessages: js.UndefOr[Boolean] = js.native
+  var showProcessingMessages: js.UndefOr[Boolean] = js.undefined
   
   /*Normally MathJax will typeset the mathematics on the page as soon as the page is loaded. If you want to delay
     * that process, in which case you will need to call MathJax.Hub.Typeset() yourself by hand, set this value to
     * true.
     */
-  var skipStartupTypeset: js.UndefOr[Boolean] = js.native
+  var skipStartupTypeset: js.UndefOr[Boolean] = js.undefined
   
   /*A list of CSS stylesheet files to be loaded when MathJax starts up. The default directory is
     * the MathJax/config directory.
     */
-  var styleSheets: js.UndefOr[js.Array[String]] = js.native
+  var styleSheets: js.UndefOr[js.Array[String]] = js.undefined
   
   /*CSS styles to be defined dynamically at startup time. These are in the form selector:rules (see CSS Style
     * Objects for complete details).
     */
-  var styles: js.UndefOr[js.Any] = js.native
+  var styles: js.UndefOr[js.Any] = js.undefined
   
-  var tex2jax: js.UndefOr[TEX2jaxPreprocessor] = js.native
+  var tex2jax: js.UndefOr[TEX2jaxPreprocessor] = js.undefined
   
   @JSName("v1.0-compatible")
-  var `v1Dot0-compatible`: js.UndefOr[Boolean] = js.native
+  var `v1Dot0-compatible`: js.UndefOr[Boolean] = js.undefined
 }
 object Config {
   

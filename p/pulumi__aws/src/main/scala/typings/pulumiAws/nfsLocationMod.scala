@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nfsLocationMod {
@@ -57,6 +56,10 @@ object nfsLocationMod {
   /* static members */
   object NfsLocation {
     
+    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NfsLocation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -66,50 +69,44 @@ object nfsLocationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsLocationState): NfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): NfsLocation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsLocationState): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NfsLocationState, opts: CustomResourceOptions): NfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NfsLocation]
     
     /**
       * Returns true if the given object is an instance of NfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/nfsLocation.NfsLocation */ Boolean]
   }
   
-  @js.native
   trait NfsLocationArgs extends StObject {
     
     /**
       * Configuration block containing information for connecting to the NFS File System.
       */
-    val onPremConfig: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig] = js.native
+    val onPremConfig: Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]
     
     /**
       * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
       */
-    val serverHostname: Input[String] = js.native
+    val serverHostname: Input[String]
     
     /**
       * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
       */
-    val subdirectory: Input[String] = js.native
+    val subdirectory: Input[String]
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object NfsLocationArgs {
     
@@ -143,35 +140,34 @@ object nfsLocationMod {
     }
   }
   
-  @js.native
   trait NfsLocationState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the DataSync Location.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing information for connecting to the NFS File System.
       */
-    val onPremConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]] = js.native
+    val onPremConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.NfsLocationOnPremConfig]] = js.undefined
     
     /**
       * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
       */
-    val serverHostname: js.UndefOr[Input[String]] = js.native
+    val serverHostname: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
   }
   object NfsLocationState {
     

@@ -17,7 +17,6 @@ import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import typings.uifabricUtilities.keyCodesMod.KeyCodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsTypesMod {
@@ -29,35 +28,40 @@ object suggestionsTypesMod {
   object SuggestionActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SuggestionActionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[SuggestionActionType & Double] = js.native
     
     /** ForceResolve action is selected. */
     @js.native
-    sealed trait forceResolve extends SuggestionActionType
-    /* 1 */ val forceResolve: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.forceResolve with Double = js.native
+    sealed trait forceResolve
+      extends StObject
+         with SuggestionActionType
+    /* 1 */ val forceResolve: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.forceResolve & Double = js.native
     
     /** None of the actions is selected. */
     @js.native
-    sealed trait none extends SuggestionActionType
-    /* 0 */ val none: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.none with Double = js.native
+    sealed trait none
+      extends StObject
+         with SuggestionActionType
+    /* 0 */ val none: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.none & Double = js.native
     
     /** SearchMore action is selected. */
     @js.native
-    sealed trait searchMore extends SuggestionActionType
-    /* 2 */ val searchMore: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.searchMore with Double = js.native
+    sealed trait searchMore
+      extends StObject
+         with SuggestionActionType
+    /* 2 */ val searchMore: typings.officeUiFabricReact.suggestionsTypesMod.SuggestionActionType.searchMore & Double = js.native
   }
   
-  @js.native
   trait ISuggestionModel[T] extends StObject {
     
     /** Aria-label string for each suggested item. */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /** The suggested item of the type T */
-    var item: T = js.native
+    var item: T
     
     /** Whether the suggested item is selected or not. */
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object ISuggestionModel {
     
@@ -68,7 +72,7 @@ object suggestionsTypesMod {
     }
     
     @scala.inline
-    implicit class ISuggestionModelMutableBuilder[Self <: ISuggestionModel[_], T] (val x: Self with ISuggestionModel[T]) extends AnyVal {
+    implicit class ISuggestionModelMutableBuilder[Self <: ISuggestionModel[?], T] (val x: Self & ISuggestionModel[T]) extends AnyVal {
       
       @scala.inline
       def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
@@ -84,29 +88,28 @@ object suggestionsTypesMod {
     }
   }
   
-  @js.native
   trait ISuggestions[T] extends StObject {
     
     /** Execute the action selected. Can be SearchMore or ForceResolve actions. */
-    def executeSelectedAction(): Unit = js.native
+    def executeSelectedAction(): Unit
     
     /** Focus on the ForceResolve action above the suggestions. If not available then focus on SearchMore action. */
-    def focusAboveSuggestions(): Unit = js.native
+    def focusAboveSuggestions(): Unit
     
     /** Focus on the SearchMore action below the suggestions. If not available then focus on ForceResolve action. */
-    def focusBelowSuggestions(): Unit = js.native
+    def focusBelowSuggestions(): Unit
     
     /** Focus the SearchMore action button. */
-    def focusSearchForMoreButton(): Unit = js.native
+    def focusSearchForMoreButton(): Unit
     
     /** Whether it has any suggested actions like ForceResolve or SearchMore. */
-    def hasSuggestedAction(): Boolean = js.native
+    def hasSuggestedAction(): Boolean
     
     /** Whether any of the suggested actions (ForceResolve or SearchMore) is selected. */
-    def hasSuggestedActionSelected(): Boolean = js.native
+    def hasSuggestedActionSelected(): Boolean
     
     /** Returns true if the event was handled, false otherwise. */
-    def tryHandleKeyDown(keyCode: Double, currentSuggestionIndex: Double): Boolean = js.native
+    def tryHandleKeyDown(keyCode: Double, currentSuggestionIndex: Double): Boolean
   }
   object ISuggestions {
     
@@ -125,7 +128,7 @@ object suggestionsTypesMod {
     }
     
     @scala.inline
-    implicit class ISuggestionsMutableBuilder[Self <: ISuggestions[_], T] (val x: Self with ISuggestions[T]) extends AnyVal {
+    implicit class ISuggestionsMutableBuilder[Self <: ISuggestions[?], T] (val x: Self & ISuggestions[T]) extends AnyVal {
       
       @scala.inline
       def setExecuteSelectedAction(value: () => Unit): Self = StObject.set(x, "executeSelectedAction", js.Any.fromFunction0(value))
@@ -152,7 +155,8 @@ object suggestionsTypesMod {
   
   @js.native
   trait ISuggestionsProps[T]
-    extends Props[js.Any] {
+    extends StObject
+       with Props[js.Any] {
     
     /**
       * The CSS className of the suggestions root.
@@ -236,13 +240,13 @@ object suggestionsTypesMod {
       * What should occur when a suggestion is clicked
       */
     def onSuggestionClick(): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any): Unit = js.native
-    def onSuggestionClick(ev: js.UndefOr[scala.Nothing], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: js.Any): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: Unit, item: Unit, index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
-    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any): Unit = js.native
     def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: js.Any, index: Double): Unit = js.native
+    def onSuggestionClick(ev: MouseEvent[HTMLElement, NativeMouseEvent], item: Unit, index: Double): Unit = js.native
     
     /**
       * Function to fire when one of the optional remove buttons on a suggestion is clicked.
@@ -311,7 +315,7 @@ object suggestionsTypesMod {
     var showRemoveButtons: js.UndefOr[Boolean] = js.native
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[_, _]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[js.Any, js.Any]] = js.native
     
     /**
       * The list of Suggestions that will be displayed
@@ -354,20 +358,19 @@ object suggestionsTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<any>, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/Suggestions.types.ISuggestionsProps<any>, 'className' | 'suggestionsClassName'> & {  forceResolveButtonSelected :boolean | undefined,   searchForMoreButtonSelected :boolean | undefined} */
-  @js.native
   trait ISuggestionsStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the forceResolve actionButton is selected. */
-    var forceResolveButtonSelected: js.UndefOr[Boolean] = js.native
+    var forceResolveButtonSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the searchForMore actionButton is selected. */
-    var searchForMoreButtonSelected: js.UndefOr[Boolean] = js.native
+    var searchForMoreButtonSelected: js.UndefOr[Boolean] = js.undefined
     
-    var suggestionsClassName: js.UndefOr[String] = js.native
+    var suggestionsClassName: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ISuggestionsStyleProps {
     
@@ -409,32 +412,31 @@ object suggestionsTypesMod {
     }
   }
   
-  @js.native
   trait ISuggestionsStyles extends StObject {
     
     /** Refers to the 'Force resolve' actionButton. */
-    var forceResolveButton: IStyle = js.native
+    var forceResolveButton: IStyle
     
     /** Refers to the text rendered when no suggestions are found. */
-    var noSuggestions: IStyle = js.native
+    var noSuggestions: IStyle
     
     /** Root element of the suggestions outer wrapper. */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** Refers to the 'Search for more' actionButton. */
-    var searchForMoreButton: IStyle = js.native
+    var searchForMoreButton: IStyle
     
     /** SubComponents (Spinner) styles. */
-    var subComponentStyles: ISuggestionsSubComponentStyles = js.native
+    var subComponentStyles: ISuggestionsSubComponentStyles
     
     /** Refers to the text displaying if more suggestions available. */
-    var suggestionsAvailable: IStyle = js.native
+    var suggestionsAvailable: IStyle
     
     /** Refers to the suggestions container. */
-    var suggestionsContainer: IStyle = js.native
+    var suggestionsContainer: IStyle
     
     /** Refers to the title rendered for suggestions container header and/or footer (if provided). */
-    var title: IStyle = js.native
+    var title: IStyle
   }
   object ISuggestionsStyles {
     
@@ -515,16 +517,15 @@ object suggestionsTypesMod {
     }
   }
   
-  @js.native
   trait ISuggestionsSubComponentStyles extends StObject {
     
     /** Refers to the Spinner rendered within the Suggestions when searching or loading suggestions. */
-    var spinner: IStyleFunctionOrObject[ISpinnerStyleProps, _] = js.native
+    var spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]
   }
   object ISuggestionsSubComponentStyles {
     
     @scala.inline
-    def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, _]): ISuggestionsSubComponentStyles = {
+    def apply(spinner: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): ISuggestionsSubComponentStyles = {
       val __obj = js.Dynamic.literal(spinner = spinner.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsSubComponentStyles]
     }
@@ -533,10 +534,10 @@ object suggestionsTypesMod {
     implicit class ISuggestionsSubComponentStylesMutableBuilder[Self <: ISuggestionsSubComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, _]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      def setSpinner(value: IStyleFunctionOrObject[ISpinnerStyleProps, js.Any]): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[_]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
+      def setSpinnerFunction1(value: ISpinnerStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "spinner", js.Any.fromFunction1(value))
     }
   }
 }

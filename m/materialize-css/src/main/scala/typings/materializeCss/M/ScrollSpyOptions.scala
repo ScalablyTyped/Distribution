@@ -2,35 +2,33 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollSpyOptions extends StObject {
   
   /**
     * Class applied to active elements
     * @default 'active'
     */
-  var activeClass: String = js.native
+  var activeClass: String
   
   /**
     * Used to find active element
     * @default id => 'a[href="#' + id + '"]'
     */
-  def getActiveElement(id: String): String = js.native
+  def getActiveElement(id: String): String
   
   /**
     * Offset for centering element when scrolled to
     * @default 200
     */
-  var scrollOffset: Double = js.native
+  var scrollOffset: Double
   
   /**
     * Throttle of scroll handler
     * @default 100
     */
-  var throttle: Double = js.native
+  var throttle: Double
 }
 object ScrollSpyOptions {
   

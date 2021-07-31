@@ -2,41 +2,39 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
     * The date indicating when the group was disabled from Amazon WorkMail use.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.native
+  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The email of the group.
     */
-  var Email: js.UndefOr[EmailAddress] = js.native
+  var Email: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The date indicating when the group was enabled for Amazon WorkMail use.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.native
+  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the group.
     */
-  var Id: js.UndefOr[WorkMailIdentifier] = js.native
+  var Id: js.UndefOr[WorkMailIdentifier] = js.undefined
   
   /**
     * The name of the group.
     */
-  var Name: js.UndefOr[GroupName] = js.native
+  var Name: js.UndefOr[GroupName] = js.undefined
   
   /**
     * The state of the group, which can be ENABLED, DISABLED, or DELETED.
     */
-  var State: js.UndefOr[EntityState] = js.native
+  var State: js.UndefOr[EntityState] = js.undefined
 }
 object Group {
   

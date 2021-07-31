@@ -10,9 +10,9 @@ TypeScript typings for Google Analytics Admin API v1alpha
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.analyticsadmin |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 40 |
 | # dependents       | 1 |
-| # downloads        | 156 |
+| # downloads        | 2673 |
 | # stars            | 0 |
 
 ## Links

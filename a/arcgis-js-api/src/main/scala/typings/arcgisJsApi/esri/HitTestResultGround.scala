@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HitTestResultGround extends Object {
+trait HitTestResultGround
+  extends StObject
+     with Object {
   
   /**
     * The distance from camera position to the ground hit.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * The point at which the ground was hit while performing the hitTest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#HitTestResult)
     */
-  var mapPoint: Point = js.native
+  var mapPoint: Point
 }
 object HitTestResultGround {
   

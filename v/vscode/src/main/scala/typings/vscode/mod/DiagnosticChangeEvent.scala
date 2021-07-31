@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagnosticChangeEvent extends StObject {
   
   /**
     * An array of resources for which diagnostics have changed.
     */
-  val uris: js.Array[Uri] = js.native
+  val uris: js.Array[Uri]
 }
 object DiagnosticChangeEvent {
   

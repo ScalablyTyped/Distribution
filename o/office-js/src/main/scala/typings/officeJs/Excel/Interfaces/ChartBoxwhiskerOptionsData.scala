@@ -5,11 +5,9 @@ import typings.officeJs.officeJsStrings.Exclusive
 import typings.officeJs.officeJsStrings.Inclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartBoxwhiskerOptions.toJSON()`. */
-@js.native
 trait ChartBoxwhiskerOptionsData extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ChartBoxwhiskerOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var quartileCalculation: js.UndefOr[ChartBoxQuartileCalculation | Inclusive | Exclusive] = js.native
+  var quartileCalculation: js.UndefOr[ChartBoxQuartileCalculation | Inclusive | Exclusive] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartBoxwhiskerOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showInnerPoints: js.UndefOr[Boolean] = js.native
+  var showInnerPoints: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartBoxwhiskerOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showMeanLine: js.UndefOr[Boolean] = js.native
+  var showMeanLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartBoxwhiskerOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showMeanMarker: js.UndefOr[Boolean] = js.native
+  var showMeanMarker: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartBoxwhiskerOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var showOutlierPoints: js.UndefOr[Boolean] = js.native
+  var showOutlierPoints: js.UndefOr[Boolean] = js.undefined
 }
 object ChartBoxwhiskerOptionsData {
   

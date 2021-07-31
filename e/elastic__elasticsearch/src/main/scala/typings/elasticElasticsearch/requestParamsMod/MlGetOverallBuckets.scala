@@ -2,31 +2,31 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlGetOverallBuckets[T] extends Generic {
+trait MlGetOverallBuckets[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_jobs: js.UndefOr[Boolean] = js.native
+  var allow_no_jobs: js.UndefOr[Boolean] = js.undefined
   
-  var allow_no_match: js.UndefOr[Boolean] = js.native
+  var allow_no_match: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var bucket_span: js.UndefOr[String] = js.native
+  var bucket_span: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var exclude_interim: js.UndefOr[Boolean] = js.native
+  var exclude_interim: js.UndefOr[Boolean] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var overall_score: js.UndefOr[Double] = js.native
+  var overall_score: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var top_n: js.UndefOr[Double] = js.native
+  var top_n: js.UndefOr[Double] = js.undefined
 }
 object MlGetOverallBuckets {
   
@@ -37,7 +37,7 @@ object MlGetOverallBuckets {
   }
   
   @scala.inline
-  implicit class MlGetOverallBucketsMutableBuilder[Self <: MlGetOverallBuckets[_], T] (val x: Self with MlGetOverallBuckets[T]) extends AnyVal {
+  implicit class MlGetOverallBucketsMutableBuilder[Self <: MlGetOverallBuckets[?], T] (val x: Self & MlGetOverallBuckets[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_jobs(value: Boolean): Self = StObject.set(x, "allow_no_jobs", value.asInstanceOf[js.Any])

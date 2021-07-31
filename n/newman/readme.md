@@ -10,9 +10,9 @@ Command-line companion utility for Postman
 | ------------------ | :-------------: |
 | Full name          | newman |
 | Keywords           | newman, postman, api, testing, ci, rest-client, rest |
-| # releases         | 24 |
-| # dependents       | 70 |
-| # downloads        | 7686599 |
+| # releases         | 22 |
+| # dependents       | 84 |
+| # downloads        | 9206007 |
 | # stars            | 118 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait LoadState extends StObject
 object LoadState extends StObject {
   
   @js.native
-  sealed trait Disabled extends LoadState
+  sealed trait Disabled
+    extends StObject
+       with LoadState
   
   @js.native
-  sealed trait Failed extends LoadState
+  sealed trait Failed
+    extends StObject
+       with LoadState
   
   @js.native
-  sealed trait Loaded extends LoadState
+  sealed trait Loaded
+    extends StObject
+       with LoadState
   
   @js.native
-  sealed trait Loading extends LoadState
+  sealed trait Loading
+    extends StObject
+       with LoadState
 }

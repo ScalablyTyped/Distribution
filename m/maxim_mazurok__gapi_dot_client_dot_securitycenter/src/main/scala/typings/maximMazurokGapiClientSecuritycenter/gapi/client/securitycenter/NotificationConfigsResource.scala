@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientSecuritycenter.anon.QuotaUser
 import typings.maximMazurokGapiClientSecuritycenter.anon.UpdateMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

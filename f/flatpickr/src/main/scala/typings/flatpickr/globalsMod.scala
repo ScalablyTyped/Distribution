@@ -7,17 +7,15 @@ import typings.std.ArrayLike
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalsMod {
   
   object global {
     
-    @js.native
     trait Date extends StObject {
       
-      def fp_incr(n: Double): Date = js.native
+      def fp_incr(n: Double): Date
     }
     object Date {
       
@@ -58,17 +56,31 @@ object globalsMod {
       def flatpickr(config: Options): Instance | js.Array[Instance] = js.native
     }
     
-    @js.native
     trait Window extends StObject {
       
-      def flatpickr(selector: String): Instance | js.Array[Instance] = js.native
-      def flatpickr(selector: String, config: Options): Instance | js.Array[Instance] = js.native
-      def flatpickr(selector: ArrayLike[Node]): js.Array[Instance] = js.native
-      def flatpickr(selector: ArrayLike[Node], config: Options): js.Array[Instance] = js.native
-      def flatpickr(selector: Node): Instance = js.native
-      def flatpickr(selector: Node, config: Options): Instance = js.native
+      def flatpickr(selector: String): Instance | js.Array[Instance]
+      def flatpickr(selector: String, config: Options): Instance | js.Array[Instance]
+      def flatpickr(selector: ArrayLike[Node]): js.Array[Instance]
+      def flatpickr(selector: ArrayLike[Node], config: Options): js.Array[Instance]
+      def flatpickr(selector: Node): Instance
+      def flatpickr(selector: Node, config: Options): Instance
       @JSName("flatpickr")
-      var flatpickr_Original: FlatpickrFn = js.native
+      var flatpickr_Original: FlatpickrFn
+    }
+    object Window {
+      
+      @scala.inline
+      def apply(flatpickr: FlatpickrFn): Window = {
+        val __obj = js.Dynamic.literal(flatpickr = flatpickr.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Window]
+      }
+      
+      @scala.inline
+      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setFlatpickr(value: FlatpickrFn): Self = StObject.set(x, "flatpickr", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

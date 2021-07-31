@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteCacheSubnetGroupMessage extends StObject {
   
   /**
     * The name of the cache subnet group to delete. Constraints: Must contain no more than 255 alphanumeric characters or hyphens.
     */
-  var CacheSubnetGroupName: String = js.native
+  var CacheSubnetGroupName: String
 }
 object DeleteCacheSubnetGroupMessage {
   

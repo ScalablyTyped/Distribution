@@ -3,14 +3,12 @@ package typings.bingmaps.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.SpatialMath.DistanceUnits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataBinningOptions extends StObject {
   
   /* The name of a property in the Pushpin.metadata object on which to perform calculations (average, count, sum) against the pushpins in each data bin. */
-  var aggregationProperty: js.UndefOr[String] = js.native
+  var aggregationProperty: js.UndefOr[String] = js.undefined
   
   /*
     * A callback function which defines the color a data bin polygon should be. This callback recieves data bin information
@@ -23,22 +21,22 @@ trait IDataBinningOptions extends StObject {
       /* max */ IDataBinMetrics, 
       String | Color
     ]
-  ] = js.native
+  ] = js.undefined
   
   /* The shape of the data bin to generate. Default: hexagon */
-  var dataBinType: js.UndefOr[DataBinType] = js.native
+  var dataBinType: js.UndefOr[DataBinType] = js.undefined
   
   /* The distance units of the radius option. Default: meters */
-  var distanceUnits: js.UndefOr[DistanceUnits] = js.native
+  var distanceUnits: js.UndefOr[DistanceUnits] = js.undefined
   
   /* The default options used for rendering the data bin polygons. */
-  var polygonOptions: js.UndefOr[IPolygonOptions] = js.native
+  var polygonOptions: js.UndefOr[IPolygonOptions] = js.undefined
   
   /*
     * A spatial distance which will be converted into a pixel distance at the equater and used to generate symetrically sized data bins
     * that have the apprimate spatial distance radius. Default: 1000
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /*
     * A callback function which defines how much to scale a data bins size. This callback recieves data bin information
@@ -51,7 +49,7 @@ trait IDataBinningOptions extends StObject {
       /* max */ IDataBinMetrics, 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IDataBinningOptions {
   

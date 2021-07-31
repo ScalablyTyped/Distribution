@@ -2,7 +2,6 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * statements is assigned a name which can be used with the Operations API to
   * monitor progress. See the operation_id field for more details.
   */
-@js.native
 trait SchemaUpdateDatabaseDdlRequest extends StObject {
   
   /**
@@ -35,12 +33,12 @@ trait SchemaUpdateDatabaseDdlRequest extends StObject {
     * an underscore. If the named operation already exists, UpdateDatabaseDdl
     * returns `ALREADY_EXISTS`.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * DDL statements to be applied to the database.
     */
-  var statements: js.UndefOr[js.Array[String]] = js.native
+  var statements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUpdateDatabaseDdlRequest {
   

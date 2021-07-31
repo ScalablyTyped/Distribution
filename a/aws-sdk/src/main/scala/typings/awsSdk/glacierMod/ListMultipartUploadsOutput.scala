@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMultipartUploadsOutput extends StObject {
   
   /**
     * An opaque string that represents where to continue pagination of the results. You use the marker in a new List Multipart Uploads request to obtain more uploads in the list. If there are no more uploads, this value is null.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * A list of in-progress multipart uploads.
     */
-  var UploadsList: js.UndefOr[typings.awsSdk.glacierMod.UploadsList] = js.native
+  var UploadsList: js.UndefOr[typings.awsSdk.glacierMod.UploadsList] = js.undefined
 }
 object ListMultipartUploadsOutput {
   

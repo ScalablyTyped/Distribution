@@ -4,22 +4,23 @@ import typings.tuyaPanelKit.anon.AccessibilityRole
 import typings.tuyaPanelKit.routersTypesMod.NavigationAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLinkPropsMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/native/useLinkProps", JSImport.Default)
+  @JSImport("tuya-panel-kit/@react-navigation/native/useLinkProps", JSImport.Namespace)
   @js.native
-  def default(hasToAction: Props): AccessibilityRole = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasToAction: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
-  @js.native
   trait Props extends StObject {
     
-    var action: js.UndefOr[NavigationAction] = js.native
+    var action: js.UndefOr[NavigationAction] = js.undefined
     
-    var to: String = js.native
+    var to: String
   }
   object Props {
     

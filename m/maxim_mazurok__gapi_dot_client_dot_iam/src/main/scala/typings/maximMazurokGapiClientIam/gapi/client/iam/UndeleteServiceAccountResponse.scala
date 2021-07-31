@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeleteServiceAccountResponse extends StObject {
   
   /** Metadata for the restored service account. */
-  var restoredAccount: js.UndefOr[ServiceAccount] = js.native
+  var restoredAccount: js.UndefOr[ServiceAccount] = js.undefined
 }
 object UndeleteServiceAccountResponse {
   

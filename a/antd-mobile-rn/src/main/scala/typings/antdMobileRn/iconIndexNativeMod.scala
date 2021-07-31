@@ -12,7 +12,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconIndexNativeMod {
@@ -38,12 +37,13 @@ object iconIndexNativeMod {
   trait Icon
     extends Component[IconProps, js.Any, js.Any]
   
-  @js.native
-  trait IconProps extends IconPropsType {
+  trait IconProps
+    extends StObject
+       with IconPropsType {
     
-    var size: js.UndefOr[xxs | xs | sm | md | lg | Double] = js.native
+    var size: js.UndefOr[xxs | xs | sm | md | lg | Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object IconProps {
     

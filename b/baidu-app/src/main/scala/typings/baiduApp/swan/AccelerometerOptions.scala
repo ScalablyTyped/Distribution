@@ -5,14 +5,13 @@ import typings.baiduApp.baiduAppStrings.normal
 import typings.baiduApp.baiduAppStrings.ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccelerometerOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var interval: game | ui | normal = js.native
+  var interval: game | ui | normal
 }
 object AccelerometerOptions {
   

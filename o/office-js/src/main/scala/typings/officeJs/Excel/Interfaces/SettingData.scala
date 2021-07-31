@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `setting.toJSON()`. */
-@js.native
 trait SettingData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SettingData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait SettingData extends StObject {
     *
     * [Api set: ExcelApi 1.4]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SettingData {
   

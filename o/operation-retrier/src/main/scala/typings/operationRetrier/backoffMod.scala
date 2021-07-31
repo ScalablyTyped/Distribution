@@ -3,7 +3,6 @@ package typings.operationRetrier
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backoffMod {
@@ -15,10 +14,13 @@ object backoffMod {
   }
   object default {
     
-    /* static member */
-    @JSImport("operation-retrier/lib/backoff", "default.exponential")
+    @JSImport("operation-retrier/lib/backoff", JSImport.Default)
     @js.native
-    def exponential(options: js.Any): Backoff = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   }
   
   @JSImport("operation-retrier/lib/backoff", "Backoff")
@@ -57,9 +59,12 @@ object backoffMod {
   }
   object Backoff {
     
-    /* static member */
-    @JSImport("operation-retrier/lib/backoff", "Backoff.exponential")
+    @JSImport("operation-retrier/lib/backoff", "Backoff")
     @js.native
-    def exponential(options: js.Any): Backoff = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def exponential(options: js.Any): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   }
 }

@@ -6,23 +6,23 @@ import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SFCTemplateBlock extends SFCBlock {
+trait SFCTemplateBlock
+  extends StObject
+     with SFCBlock {
   
-  var functional: js.UndefOr[Boolean] = js.native
+  var functional: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_SFCTemplateBlock: template = js.native
+  var type_SFCTemplateBlock: template
 }
 object SFCTemplateBlock {
   
   @scala.inline
-  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation, `type`: template): SFCTemplateBlock = {
+  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCTemplateBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("template")
     __obj.asInstanceOf[SFCTemplateBlock]
   }
   

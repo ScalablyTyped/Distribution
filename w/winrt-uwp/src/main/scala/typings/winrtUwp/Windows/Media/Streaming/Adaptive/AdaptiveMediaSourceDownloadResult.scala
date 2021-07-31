@@ -5,27 +5,25 @@ import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the results of a resource download operation. */
-@js.native
 trait AdaptiveMediaSourceDownloadResult extends StObject {
   
   /** Gets or sets a buffer containing the downloaded resource. */
-  var buffer: IBuffer = js.native
+  var buffer: IBuffer
   
   /** Gets or sets a string that identifies the MIME content type of the downloaded resource. */
-  var contentType: String = js.native
+  var contentType: String
   
   /** Gets or sets an integer value that represents extended status information about the resource download operation. */
-  var extendedStatus: Double = js.native
+  var extendedStatus: Double
   
   /** Gets or sets an input stream containing the downloaded resource. */
-  var inputStream: IInputStream = js.native
+  var inputStream: IInputStream
   
   /** Gets or sets the Uniform Resource Identifier (URI) of the downloaded resource. */
-  var resourceUri: Uri = js.native
+  var resourceUri: Uri
 }
 object AdaptiveMediaSourceDownloadResult {
   

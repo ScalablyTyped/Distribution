@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,8 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.LinguProperties
   * @see com.sun.star.linguistic2.XSupportedLocales
   */
-@js.native
-trait XHyphenator extends XSupportedLocales {
+trait XHyphenator
+  extends StObject
+     with XSupportedLocales {
   
   /**
     * returns information about all possible hyphenation positions of a word.
@@ -35,7 +35,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XPossibleHyphens
     * @see com.sun.star.lang.Locale
     */
-  def createPossibleHyphens(aWord: String, aLocale: Locale, aProperties: PropertyValues): XPossibleHyphens = js.native
+  def createPossibleHyphens(aWord: String, aLocale: Locale, aProperties: PropertyValues): XPossibleHyphens
   
   /**
     * tries to find a valid hyphenation position relative to the beginning of a word.
@@ -49,7 +49,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XHyphenatedWord
     * @see com.sun.star.lang.Locale
     */
-  def hyphenate(aWord: String, aLocale: Locale, nMaxLeading: Double, aProperties: PropertyValues): XHyphenatedWord = js.native
+  def hyphenate(aWord: String, aLocale: Locale, nMaxLeading: Double, aProperties: PropertyValues): XHyphenatedWord
   
   /**
     * checks whether hyphenation at a position in a word will result in an alternative spelling or not.
@@ -66,7 +66,7 @@ trait XHyphenator extends XSupportedLocales {
     * @see com.sun.star.linguistic2.XHyphenatedWord
     * @see com.sun.star.lang.Locale
     */
-  def queryAlternativeSpelling(aWord: String, aLocale: Locale, nIndex: Double, aProperties: PropertyValues): XHyphenatedWord = js.native
+  def queryAlternativeSpelling(aWord: String, aLocale: Locale, nIndex: Double, aProperties: PropertyValues): XHyphenatedWord
 }
 object XHyphenator {
   

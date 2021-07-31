@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsDomainmappingsCreate extends StandardParameters {
+trait ParamsResourceAppsDomainmappingsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `parent`. Name of the parent Application resource. Example:
     * apps/myapp.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether a managed certificate should be provided by App Engine. If true,
@@ -29,18 +29,18 @@ trait ParamsResourceAppsDomainmappingsCreate extends StandardParameters {
     * configure SSL for this domain. If false, a managed certificate will be
     * provisioned and a certificate ID will be automatically populated.
     */
-  var noManagedCertificate: js.UndefOr[Boolean] = js.native
+  var noManagedCertificate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the domain creation should override any existing mappings for
     * this domain. By default, overrides are rejected.
     */
-  var overrideStrategy: js.UndefOr[String] = js.native
+  var overrideStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDomainMapping] = js.native
+  var requestBody: js.UndefOr[SchemaDomainMapping] = js.undefined
 }
 object ParamsResourceAppsDomainmappingsCreate {
   

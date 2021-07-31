@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudsearchMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudsearch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object cloudsearchMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudsearch", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudsearch", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object cloudsearchMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudsearch", "cloudsearch")
-  @js.native
-  def cloudsearch(options: Options): Cloudsearch = js.native
-  @JSImport("googleapis/build/src/apis/cloudsearch", "cloudsearch")
-  @js.native
-  def cloudsearch_v1(version: v1): Cloudsearch = js.native
+  @scala.inline
+  def cloudsearch(options: Options): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
+  
+  @scala.inline
+  def cloudsearch_v1(version: v1): Cloudsearch = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudsearch")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudsearch]
 }

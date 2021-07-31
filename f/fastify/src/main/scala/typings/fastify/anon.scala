@@ -18,19 +18,17 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Backlog extends StObject {
     
-    var backlog: js.UndefOr[Double] = js.native
+    var backlog: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
   }
   object Backlog {
     
@@ -60,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BodyLimit extends StObject {
     
-    var bodyLimit: js.UndefOr[Double] = js.native
+    var bodyLimit: js.UndefOr[Double] = js.undefined
   }
   object BodyLimit {
     
@@ -84,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CustomOptions extends StObject {
     
-    var customOptions: js.UndefOr[Options] = js.native
+    var customOptions: js.UndefOr[Options] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Function]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Function]] = js.undefined
   }
   object CustomOptions {
     
@@ -119,7 +115,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Default[Options /* <: FastifyPluginOptions */] extends StObject {
     
     def default(
@@ -131,12 +126,40 @@ object anon {
         ],
       opts: Options,
       next: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
+    ): Unit
     @JSName("default")
-    var default_Original: FastifyPluginCallback[Options, RawServerDefault] = js.native
+    var default_Original: FastifyPluginCallback[Options, RawServerDefault]
+  }
+  object Default {
+    
+    @scala.inline
+    def apply[Options /* <: FastifyPluginOptions */](
+      default: (/* instance */ FastifyInstance[
+          RawServerDefault, 
+          RawRequestDefaultExpression[RawServerDefault], 
+          RawReplyDefaultExpression[RawServerDefault], 
+          FastifyLoggerInstance
+        ], Options, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
+    ): Default[Options] = {
+      val __obj = js.Dynamic.literal(default = js.Any.fromFunction3(default))
+      __obj.asInstanceOf[Default[Options]]
+    }
+    
+    @scala.inline
+    implicit class DefaultMutableBuilder[Self <: Default[?], Options /* <: FastifyPluginOptions */] (val x: Self & Default[Options]) extends AnyVal {
+      
+      @scala.inline
+      def setDefault(
+        value: (/* instance */ FastifyInstance[
+              RawServerDefault, 
+              RawRequestDefaultExpression[RawServerDefault], 
+              RawReplyDefaultExpression[RawServerDefault], 
+              FastifyLoggerInstance
+            ], Options, /* next */ js.Function1[/* err */ js.UndefOr[Error], Unit]) => Unit
+      ): Self = StObject.set(x, "default", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait DefaultFastifyPluginAsync[Options /* <: FastifyPluginOptions */] extends StObject {
     
     def default(
@@ -147,21 +170,49 @@ object anon {
           FastifyLoggerInstance
         ],
       opts: Options
-    ): js.Promise[Unit] = js.native
+    ): js.Promise[Unit]
     @JSName("default")
-    var default_Original: FastifyPluginAsync[Options, RawServerDefault] = js.native
+    var default_Original: FastifyPluginAsync[Options, RawServerDefault]
+  }
+  object DefaultFastifyPluginAsync {
+    
+    @scala.inline
+    def apply[Options /* <: FastifyPluginOptions */](
+      default: (/* instance */ FastifyInstance[
+          RawServerDefault, 
+          RawRequestDefaultExpression[RawServerDefault], 
+          RawReplyDefaultExpression[RawServerDefault], 
+          FastifyLoggerInstance
+        ], Options) => js.Promise[Unit]
+    ): DefaultFastifyPluginAsync[Options] = {
+      val __obj = js.Dynamic.literal(default = js.Any.fromFunction2(default))
+      __obj.asInstanceOf[DefaultFastifyPluginAsync[Options]]
+    }
+    
+    @scala.inline
+    implicit class DefaultFastifyPluginAsyncMutableBuilder[Self <: DefaultFastifyPluginAsync[?], Options /* <: FastifyPluginOptions */] (val x: Self & DefaultFastifyPluginAsync[Options]) extends AnyVal {
+      
+      @scala.inline
+      def setDefault(
+        value: (/* instance */ FastifyInstance[
+              RawServerDefault, 
+              RawRequestDefaultExpression[RawServerDefault], 
+              RawReplyDefaultExpression[RawServerDefault], 
+              FastifyLoggerInstance
+            ], Options) => js.Promise[Unit]
+      ): Self = StObject.set(x, "default", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait Del extends StObject {
     
-    def del(version: String): Unit = js.native
+    def del(version: String): Unit
     
-    def empty(): Unit = js.native
+    def empty(): Unit
     
-    def get(version: String): String | Null = js.native
+    def get(version: String): String | Null
     
-    def set(version: String, store: js.Function): Unit = js.native
+    def set(version: String, store: js.Function): Unit
   }
   object Del {
     
@@ -202,21 +253,21 @@ object anon {
     def storage(): Del = js.native
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var remoteAddress: js.UndefOr[String] = js.native
+    var remoteAddress: js.UndefOr[String] = js.undefined
     
-    var remotePort: js.UndefOr[Double] = js.native
+    var remotePort: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -267,14 +318,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Err[RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RawServer /* <: RawServerBase */] extends StObject {
     
-    var err: js.UndefOr[js.Function1[/* err */ FastifyError, Message]] = js.native
+    var err: js.UndefOr[js.Function1[/* err */ FastifyError, Message]] = js.undefined
     
-    var req: js.UndefOr[js.Function1[/* req */ RawRequest, Dictkey]] = js.native
+    var req: js.UndefOr[js.Function1[/* req */ RawRequest, Dictkey]] = js.undefined
     
-    var res: js.UndefOr[js.Function1[/* res */ RawReply, StatusCode]] = js.native
+    var res: js.UndefOr[js.Function1[/* res */ RawReply, StatusCode]] = js.undefined
   }
   object Err {
     
@@ -285,7 +335,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ErrMutableBuilder[Self <: Err[_, _, _], RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RawServer /* <: RawServerBase */] (val x: Self with (Err[RawRequest, RawReply, RawServer])) extends AnyVal {
+    implicit class ErrMutableBuilder[Self <: Err[?, ?, ?], RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RawServer /* <: RawServerBase */] (val x: Self & (Err[RawRequest, RawReply, RawServer])) extends AnyVal {
       
       @scala.inline
       def setErr(value: /* err */ FastifyError => Message): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
@@ -308,18 +358,17 @@ object anon {
   }
   
   /* Inlined std.Error & {  validation :any,   validationContext :string} */
-  @js.native
   trait Errorvalidationanyvalidat extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var validation: js.Any = js.native
+    var validation: js.Any
     
-    var validationContext: String = js.native
+    var validationContext: String
   }
   object Errorvalidationanyvalidat {
     
@@ -352,15 +401,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Message
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var message: String = js.native
+    var message: String
     
-    var stack: String = js.native
+    var stack: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Message {
     
@@ -385,12 +434,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ParseAs[parseAs /* <: String | Buffer */] extends StObject {
     
-    var bodyLimit: js.UndefOr[Double] = js.native
+    var bodyLimit: js.UndefOr[Double] = js.undefined
     
-    var parseAs: string | buffer = js.native
+    var parseAs: string | buffer
   }
   object ParseAs {
     
@@ -401,7 +449,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ParseAsMutableBuilder[Self <: ParseAs[_], parseAs /* <: String | Buffer */] (val x: Self with ParseAs[parseAs]) extends AnyVal {
+    implicit class ParseAsMutableBuilder[Self <: ParseAs[?], parseAs /* <: String | Buffer */] (val x: Self & ParseAs[parseAs]) extends AnyVal {
       
       @scala.inline
       def setBodyLimit(value: Double): Self = StObject.set(x, "bodyLimit", value.asInstanceOf[js.Any])
@@ -414,14 +462,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var routePath: String = js.native
+    var routePath: String
   }
   object Path {
     
@@ -445,11 +492,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StatusCode
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var statusCode: String | Double = js.native
+    var statusCode: String | Double
   }
   object StatusCode {
     

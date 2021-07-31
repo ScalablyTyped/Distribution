@@ -2,17 +2,15 @@ package typings.parse.mod.global.Parse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONBaseAttributes extends StObject {
   
-  var createdAt: String = js.native
+  var createdAt: String
   
-  var objectId: String = js.native
+  var objectId: String
   
-  var updatedAt: String = js.native
+  var updatedAt: String
 }
 object JSONBaseAttributes {
   

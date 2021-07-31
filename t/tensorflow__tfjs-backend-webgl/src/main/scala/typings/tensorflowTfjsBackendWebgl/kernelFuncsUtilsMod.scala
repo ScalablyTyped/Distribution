@@ -6,10 +6,13 @@ import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.kernelRegistryMod.KernelFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelFuncsUtilsMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/kernel_funcs_utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/kernel_funcs_utils", "CHECK_NAN_SNIPPET_BINARY")
   @js.native
@@ -23,30 +26,27 @@ object kernelFuncsUtilsMod {
   @js.native
   val CHECK_NAN_SNIPPET_UNARY: /* "if (isnan(x)) return x;" */ String = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/kernel_funcs_utils", "binaryKernelFunc")
-  @js.native
+  @scala.inline
   def binaryKernelFunc(
     hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype: BinaryKernelFuncConfig
-  ): KernelFunc = js.native
+  ): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryKernelFunc")(hasOpSnippetPackedOpSnippetCheckOutOfBoundsSupportsComplexCpuKernelImplDtype.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/kernel_funcs_utils", "unaryKernelFunc")
-  @js.native
-  def unaryKernelFunc(opSnippet: String): KernelFunc = js.native
+  @scala.inline
+  def unaryKernelFunc(opSnippet: String): KernelFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(opSnippet.asInstanceOf[js.Any]).asInstanceOf[KernelFunc]
   
-  @js.native
   trait BinaryKernelFuncConfig extends StObject {
     
-    var checkOutOfBounds: js.UndefOr[Boolean] = js.native
+    var checkOutOfBounds: js.UndefOr[Boolean] = js.undefined
     
-    var cpuKernelImpl: js.UndefOr[SimpleBinaryKernelImplCPU] = js.native
+    var cpuKernelImpl: js.UndefOr[SimpleBinaryKernelImplCPU] = js.undefined
     
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
-    var opSnippet: String = js.native
+    var opSnippet: String
     
-    var packedOpSnippet: js.UndefOr[String] = js.native
+    var packedOpSnippet: js.UndefOr[String] = js.undefined
     
-    var supportsComplex: js.UndefOr[Boolean] = js.native
+    var supportsComplex: js.UndefOr[Boolean] = js.undefined
   }
   object BinaryKernelFuncConfig {
     

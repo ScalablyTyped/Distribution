@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgToolbarButton
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -19,40 +18,40 @@ trait IgToolbarButton
     *                 Function takes arguments evt and ui.
     *                 Use ui.owner to get reference to this igToolbarButton.
     */
-  var activated: js.UndefOr[ActivatedEvent] = js.native
+  var activated: js.UndefOr[ActivatedEvent] = js.undefined
   
   /**
     * Event fired before the toolbar button is activated.
     *                 Function takes arguments evt and ui.
     *                 Use ui.owner to get reference to this igToolbarButton.
     */
-  var activating: js.UndefOr[ActivatingEvent] = js.native
+  var activating: js.UndefOr[ActivatingEvent] = js.undefined
   
   /**
     * Enable/Disable the "Toggling" of a button.
     *
     */
-  var allowToggling: js.UndefOr[Boolean] = js.native
+  var allowToggling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event fired after the toolbar button is deactivated.
     *                 Function takes arguments evt and ui.
     *                 Use ui.owner to get reference to this igToolbarButton.
     */
-  var deactivated: js.UndefOr[DeactivatedEvent] = js.native
+  var deactivated: js.UndefOr[DeactivatedEvent] = js.undefined
   
   /**
     * Event fired before the toolbar button is deactivated.
     *                 Function takes arguments evt and ui.
     *                 Use ui.owner to get reference to this igToolbarButton.
     */
-  var deactivating: js.UndefOr[DeactivatingEvent] = js.native
+  var deactivating: js.UndefOr[DeactivatingEvent] = js.undefined
   
   /**
     * Get/Set whether the toolbar button is selected.
     *
     */
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
 }
 object IgToolbarButton {
   

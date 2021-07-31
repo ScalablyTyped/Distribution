@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Placementgroups")
@@ -31,7 +30,7 @@ class ResourcePlacementgroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPlacementGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
   def get(params: ParamsResourcePlacementgroupsGet): GaxiosPromise[SchemaPlacementGroup] = js.native
   def get(params: ParamsResourcePlacementgroupsGet, callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourcePlacementgroups protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPlacementGroup] = js.native
   def insert(callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
   def insert(params: ParamsResourcePlacementgroupsInsert): GaxiosPromise[SchemaPlacementGroup] = js.native
   def insert(params: ParamsResourcePlacementgroupsInsert, callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
   def insert(
@@ -110,7 +109,7 @@ class ResourcePlacementgroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlacementGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlacementGroupsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementGroupsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementGroupsListResponse] = js.native
   def list(params: ParamsResourcePlacementgroupsList): GaxiosPromise[SchemaPlacementGroupsListResponse] = js.native
   def list(
     params: ParamsResourcePlacementgroupsList,
@@ -145,7 +144,7 @@ class ResourcePlacementgroups protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaPlacementGroup] = js.native
   def patch(callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
   def patch(params: ParamsResourcePlacementgroupsPatch): GaxiosPromise[SchemaPlacementGroup] = js.native
   def patch(params: ParamsResourcePlacementgroupsPatch, callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
   def patch(
@@ -175,7 +174,7 @@ class ResourcePlacementgroups protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaPlacementGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlacementGroup] = js.native
   def update(params: ParamsResourcePlacementgroupsUpdate): GaxiosPromise[SchemaPlacementGroup] = js.native
   def update(params: ParamsResourcePlacementgroupsUpdate, callback: BodyResponseCallback[SchemaPlacementGroup]): Unit = js.native
   def update(

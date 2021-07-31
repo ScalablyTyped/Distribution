@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is typically used in conjunction with the {@link XAccessibleText} interface and extents it with a notion of line numbers
   * @since OOo 3.0
   */
-@js.native
-trait XAccessibleMultiLineText extends XAccessibleText {
+trait XAccessibleMultiLineText
+  extends StObject
+     with XAccessibleText {
   
   /**
     * Returns the number of the line in which the caret is located.
@@ -31,7 +31,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the index of the line in which the caret is located or -1 if the paragraph does not have a valid caret position.
     */
-  val NumberOfLineWithCaret: Double = js.native
+  val NumberOfLineWithCaret: Double
   
   /**
     * Returns the text of the line in which the caret is located.
@@ -44,7 +44,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the requested text portion. This portion may be empty or invalid if the paragraph object does not have a valid caret position.
     */
-  val TextAtLineWithCaret: TextSegment = js.native
+  val TextAtLineWithCaret: TextSegment
   
   /**
     * Returns the line number at the specified index.
@@ -54,7 +54,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * @returns Returns the line number of the specified text index.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid.
     */
-  def getLineNumberAtIndex(nIndex: Double): Double = js.native
+  def getLineNumberAtIndex(nIndex: Double): Double
   
   /**
     * Returns the number of the line in which the caret is located.
@@ -67,7 +67,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the index of the line in which the caret is located or -1 if the paragraph does not have a valid caret position.
     */
-  def getNumberOfLineWithCaret(): Double = js.native
+  def getNumberOfLineWithCaret(): Double
   
   /**
     * Returns the text of the specified line.
@@ -81,7 +81,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * @returns Returns the requested text portion. This portion may be empty or invalid when no appropriate text portion is found.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the line number is invalid
     */
-  def getTextAtLineNumber(nLineNo: Double): TextSegment = js.native
+  def getTextAtLineNumber(nLineNo: Double): TextSegment
   
   /**
     * Returns the text of the line in which the caret is located.
@@ -94,7 +94,7 @@ trait XAccessibleMultiLineText extends XAccessibleText {
     * following the current one in this case.
     * @returns Returns the requested text portion. This portion may be empty or invalid if the paragraph object does not have a valid caret position.
     */
-  def getTextAtLineWithCaret(): TextSegment = js.native
+  def getTextAtLineWithCaret(): TextSegment
 }
 object XAccessibleMultiLineText {
   

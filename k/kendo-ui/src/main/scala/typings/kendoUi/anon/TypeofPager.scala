@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Pager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPager extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Pager = js.native
+  def extend(proto: js.Object): Pager
   
   /* static member */
-  var fn: Pager = js.native
+  var fn: Pager
 }
 object TypeofPager {
   

@@ -2,17 +2,15 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICloseEventDetails extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var reason: String = js.native
+  var reason: String
   
-  var wasClean: Boolean = js.native
+  var wasClean: Boolean
 }
 object ICloseEventDetails {
   

@@ -9,7 +9,6 @@ import typings.reactMotionSlider.reactMotionSliderStrings.right
 import typings.reactMotionSlider.reactMotionSliderStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,77 +32,76 @@ object mod {
     def prev(): Unit = js.native
   }
   
-  @js.native
   trait SliderProps extends StObject {
     
     /**
       * Prop callback fired after slide change.
       * @param currentIndex
       */
-    var afterSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.native
+    var afterSlide: js.UndefOr[js.Function1[/* currentIndex */ Double, Unit]] = js.undefined
     
     /**
       * Offsets the slide to align either left, center, or right.
       * @default "left"
       */
-    var align: js.UndefOr[left | center | right] = js.native
+    var align: js.UndefOr[left | center | right] = js.undefined
     
     /**
       * Animates the wrapper height to fit the current slide.
       * @default false
       */
-    var autoHeight: js.UndefOr[Boolean] = js.native
+    var autoHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prop callback fired before slide change.
       * @param currentIndex
       * @param nextIndex
       */
-    var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* nextIndex */ Double, Unit]] = js.native
+    var beforeSlide: js.UndefOr[js.Function2[/* currentIndex */ Double, /* nextIndex */ Double, Unit]] = js.undefined
     
     /**
       * Move to a slide by its index.
       */
-    var currentIndex: js.UndefOr[Double] = js.native
+    var currentIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Move to a slide by its key.
       */
-    var currentKey: js.UndefOr[String | Double] = js.native
+    var currentKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The amount of time in milliseconds that determines if a swipe was a flick or not.
       */
-    var flickTimeout: js.UndefOr[Double] = js.native
+    var flickTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of slides to move upon using prev and next methods.
       * @default 1
       */
-    var slidesToMove: js.UndefOr[Double] = js.native
+    var slidesToMove: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of slides shown in view
       * @default 1
       */
-    var slidesToShow: js.UndefOr[Double] = js.native
+    var slidesToShow: js.UndefOr[Double] = js.undefined
     
     /**
       * Accepts a React Motion spring config.
       */
-    var springConfig: js.UndefOr[OpaqueConfig] = js.native
+    var springConfig: js.UndefOr[OpaqueConfig] = js.undefined
     
     /**
       * Enable touch and/or mouse dragging
       * @default true
       */
-    var swipe: js.UndefOr[Boolean | touch | mouse] = js.native
+    var swipe: js.UndefOr[Boolean | touch | mouse] = js.undefined
     
     /**
       * The amount the user must swipe to advance slides. (sliderWidth * swipeThreshold)
       * @default 0.5
       */
-    var swipeThreshold: js.UndefOr[Double] = js.native
+    var swipeThreshold: js.UndefOr[Double] = js.undefined
   }
   object SliderProps {
     

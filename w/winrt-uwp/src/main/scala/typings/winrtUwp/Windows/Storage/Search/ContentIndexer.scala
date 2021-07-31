@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables Windows Store apps to place content properties in the system index. */
@@ -75,7 +74,7 @@ trait ContentIndexer extends StObject {
     * @param propertiesToRetrieve The retrieved properties, based on contentId.
     * @return When this method completes, it returns the retrieved properties as a map of key-value pairs.
     */
-  def retrievePropertiesAsync(contentId: String, propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMapView[_, _]] = js.native
+  def retrievePropertiesAsync(contentId: String, propertiesToRetrieve: IIterable[String]): IPromiseWithIAsyncOperation[IMapView[js.Any, js.Any]] = js.native
   
   /** Gets the version of the ContentIndexer . */
   var revision: Double = js.native

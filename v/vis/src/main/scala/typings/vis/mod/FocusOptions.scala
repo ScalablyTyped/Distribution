@@ -2,18 +2,18 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FocusOptions extends ViewPortOptions {
+trait FocusOptions
+  extends StObject
+     with ViewPortOptions {
   
   /**
     * Locked denotes whether or not the view remains locked to
     * the node once the zoom-in animation is finished.
     * Default value is true.
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
 }
 object FocusOptions {
   

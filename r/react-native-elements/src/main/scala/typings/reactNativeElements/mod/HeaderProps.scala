@@ -15,11 +15,11 @@ import typings.reactNativeElements.reactNativeElementsStrings.left
 import typings.reactNativeElements.reactNativeElementsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeaderProps extends ViewProps {
+trait HeaderProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Specify a different component as the background for the button.
@@ -27,81 +27,81 @@ trait HeaderProps extends ViewProps {
     *
     * @default View
     */
-  var ViewComponent: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
+  var ViewComponent: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
   
   /**
     * Sets backgroundColor of the parent component
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Background image source
     */
-  var backgroundImage: js.UndefOr[ImageSourcePropType] = js.native
+  var backgroundImage: js.UndefOr[ImageSourcePropType] = js.undefined
   
   /**
     * Styles for the background image in the container
     */
-  var backgroundImageStyle: js.UndefOr[ImageStyle] = js.native
+  var backgroundImageStyle: js.UndefOr[ImageStyle] = js.undefined
   
   /**
     * Sets the color of the status bar text.
     *
     * @default 'default'
     */
-  var barStyle: js.UndefOr[StatusBarStyle] = js.native
+  var barStyle: js.UndefOr[StatusBarStyle] = js.undefined
   
   /**
     * Configuration object for default component (text: string, ...props for React Native Text component) valid React Element	define your center component here
     */
-  var centerComponent: js.UndefOr[HeaderSubComponent] = js.native
+  var centerComponent: js.UndefOr[HeaderSubComponent] = js.undefined
   
   /**
     * Styles for the container surrounding the title
     */
-  var centerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var centerContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for main container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Configuration object for default component (icon: string, ...props for React Native Elements Icon) or a valid React Element	define your left component here
     */
-  var leftComponent: js.UndefOr[HeaderSubComponent] = js.native
+  var leftComponent: js.UndefOr[HeaderSubComponent] = js.undefined
   
   /**
     * Styling for container around the leftComponent
     */
-  var leftContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var leftContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Object of props to be applied to the linearGradient view(ViewComponent)
     */
-  var linearGradientProps: js.UndefOr[js.Object] = js.native
+  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Determines the alignment of the title
     *
     * @default 'center'
     */
-  var placement: js.UndefOr[left | center | right] = js.native
+  var placement: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * Configuration object for default component (icon: string, ...props for React Native Elements Icon component) or a valid React Element	define your right component here
     */
-  var rightComponent: js.UndefOr[HeaderSubComponent] = js.native
+  var rightComponent: js.UndefOr[HeaderSubComponent] = js.undefined
   
   /**
     * Styling for container around the rightComponent
     */
-  var rightContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var rightContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Accepts all props for StatusBar
     */
-  var statusBarProps: js.UndefOr[StatusBarProperties] = js.native
+  var statusBarProps: js.UndefOr[StatusBarProperties] = js.undefined
 }
 object HeaderProps {
   
@@ -214,7 +214,7 @@ object HeaderProps {
     def setStatusBarPropsUndefined: Self = StObject.set(x, "statusBarProps", js.undefined)
     
     @scala.inline
-    def setViewComponent(value: ComponentClass[_, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
+    def setViewComponent(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "ViewComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewComponentUndefined: Self = StObject.set(x, "ViewComponent", js.undefined)

@@ -3,19 +3,17 @@ package typings.nodecredstash
 import typings.nodecredstash.mod.CredstashContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Context extends StObject {
     
-    var context: js.UndefOr[CredstashContext] = js.native
+    var context: js.UndefOr[CredstashContext] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Context {
     
@@ -45,10 +43,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
   }
   object Key {
     
@@ -66,10 +63,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -87,12 +83,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NameVersion extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object NameVersion {
     
@@ -113,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Secret extends StObject {
     
-    var secret: String = js.native
+    var secret: String
     
-    var version: String = js.native
+    var version: String
   }
   object Secret {
     
@@ -139,14 +133,13 @@ object anon {
     }
   }
   
-  @js.native
   trait StartsWith extends StObject {
     
-    var context: js.UndefOr[CredstashContext] = js.native
+    var context: js.UndefOr[CredstashContext] = js.undefined
     
-    var startsWith: js.UndefOr[String] = js.native
+    var startsWith: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object StartsWith {
     
@@ -179,14 +172,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Version extends StObject {
     
-    var context: js.UndefOr[CredstashContext] = js.native
+    var context: js.UndefOr[CredstashContext] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Version {
     

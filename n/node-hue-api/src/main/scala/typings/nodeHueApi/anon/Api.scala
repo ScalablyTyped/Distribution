@@ -2,15 +2,13 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Api extends StObject {
   
-  var api: String = js.native
+  var api: String
   
-  var software: String = js.native
+  var software: String
 }
 object Api {
   

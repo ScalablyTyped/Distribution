@@ -5,41 +5,39 @@ import typings.antvG2.mod.Styles.background
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 图表接收的参数
   */
-@js.native
 trait ChartProps extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
+  var background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.undefined
   
-  var container: String | HTMLDivElement = js.native
+  var container: String | HTMLDivElement
   
-  var data: js.UndefOr[js.Object | js.Any] = js.native
+  var data: js.UndefOr[js.Object | js.Any] = js.undefined
   
-  var forceFit: js.UndefOr[Boolean] = js.native
+  var forceFit: js.UndefOr[Boolean] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
   var padding: js.UndefOr[
     Bottom | Double | String | (js.Tuple4[Double | String, Double | String, Double | String, Double | String]) | (js.Tuple2[String, String])
-  ] = js.native
+  ] = js.undefined
   
-  var pixelRatio: js.UndefOr[Double] = js.native
+  var pixelRatio: js.UndefOr[Double] = js.undefined
   
-  var plotBackground: js.UndefOr[background] = js.native
+  var plotBackground: js.UndefOr[background] = js.undefined
   
   /**
     * 主题
     */
-  var theme: js.UndefOr[js.Object | String] = js.native
+  var theme: js.UndefOr[js.Object | String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartProps {
   

@@ -2,10 +2,8 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pluggable[Input /* <: js.Object */, Output /* <: js.Object */] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Pluggable[Input /* <: js.Object */, Output /* <: js.Object */] extends StO
     * this interface can add, remove, modify existing middleware stack from clients
     * or commands
     */
-  def applyToStack(stack: MiddlewareStack[Input, Output]): Unit = js.native
+  def applyToStack(stack: MiddlewareStack[Input, Output]): Unit
 }
 object Pluggable {
   
@@ -24,7 +22,7 @@ object Pluggable {
   }
   
   @scala.inline
-  implicit class PluggableMutableBuilder[Self <: Pluggable[_, _], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self with (Pluggable[Input, Output])) extends AnyVal {
+  implicit class PluggableMutableBuilder[Self <: Pluggable[?, ?], Input /* <: js.Object */, Output /* <: js.Object */] (val x: Self & (Pluggable[Input, Output])) extends AnyVal {
     
     @scala.inline
     def setApplyToStack(value: MiddlewareStack[Input, Output] => Unit): Self = StObject.set(x, "applyToStack", js.Any.fromFunction1(value))

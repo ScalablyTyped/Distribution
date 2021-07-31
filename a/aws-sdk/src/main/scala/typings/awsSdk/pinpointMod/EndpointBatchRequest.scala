@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointBatchRequest extends StObject {
   
   /**
     * An array that defines the endpoints to create or update and, for each endpoint, the property values to set or change. An array can contain a maximum of 100 items.
     */
-  var Item: ListOfEndpointBatchItem = js.native
+  var Item: ListOfEndpointBatchItem
 }
 object EndpointBatchRequest {
   

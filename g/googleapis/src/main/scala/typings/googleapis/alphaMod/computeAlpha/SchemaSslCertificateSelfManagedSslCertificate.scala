@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration and status of a self-managed SSL certificate.
   */
-@js.native
 trait SchemaSslCertificateSelfManagedSslCertificate extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaSslCertificateSelfManagedSslCertificate extends StObject {
     * certificate chain must be no greater than 5 certs long. The chain must
     * include at least one intermediate cert.
     */
-  var certificate: js.UndefOr[String] = js.native
+  var certificate: js.UndefOr[String] = js.undefined
   
   /**
     * A write-only private key in PEM format. Only insert requests will include
     * this field.
     */
-  var privateKey: js.UndefOr[String] = js.native
+  var privateKey: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertificateSelfManagedSslCertificate {
   

@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "TransactionHeader")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new TransactionHeader.
   * @param [properties] Properties to set
   */
-class TransactionHeader () extends ITransactionHeader {
+class TransactionHeader ()
+  extends StObject
+     with ITransactionHeader {
   def this(properties: ITransactionHeader) = this()
   
   /** TransactionHeader batcherPublicKey. */
@@ -64,17 +65,19 @@ class TransactionHeader () extends ITransactionHeader {
 /* static members */
 object TransactionHeader {
   
+  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new TransactionHeader instance using the specified properties.
     * @param [properties] Properties to set
     * @returns TransactionHeader instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.create")
-  @js.native
-  def create(): TransactionHeader = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.create")
-  @js.native
-  def create(properties: ITransactionHeader): TransactionHeader = js.native
+  @scala.inline
+  def create(): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TransactionHeader]
+  @scala.inline
+  def create(properties: ITransactionHeader): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
   
   /**
     * Decodes a TransactionHeader message from the specified reader or buffer.
@@ -84,18 +87,14 @@ object TransactionHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decode")
-  @js.native
-  def decode(reader: Reader): TransactionHeader = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): TransactionHeader = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decode")
-  @js.native
-  def decode(reader: Uint8Array): TransactionHeader = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): TransactionHeader = js.native
+  @scala.inline
+  def decode(reader: Reader): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
+  @scala.inline
+  def decode(reader: Reader, length: Double): TransactionHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TransactionHeader]
+  @scala.inline
+  def decode(reader: Uint8Array): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): TransactionHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TransactionHeader]
   
   /**
     * Decodes a TransactionHeader message from the specified reader or buffer, length delimited.
@@ -104,12 +103,10 @@ object TransactionHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): TransactionHeader = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): TransactionHeader = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
   
   /**
     * Encodes the specified TransactionHeader message. Does not implicitly {@link TransactionHeader.verify|verify} messages.
@@ -117,12 +114,10 @@ object TransactionHeader {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.encode")
-  @js.native
-  def encode(message: ITransactionHeader): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.encode")
-  @js.native
-  def encode(message: ITransactionHeader, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ITransactionHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ITransactionHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified TransactionHeader message, length delimited. Does not implicitly {@link TransactionHeader.verify|verify} messages.
@@ -130,21 +125,18 @@ object TransactionHeader {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITransactionHeader): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ITransactionHeader, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ITransactionHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ITransactionHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a TransactionHeader message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns TransactionHeader
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): TransactionHeader = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): TransactionHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TransactionHeader]
   
   /**
     * Creates a plain object from a TransactionHeader message. Also converts values to other types if specified.
@@ -152,19 +144,16 @@ object TransactionHeader {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.toObject")
-  @js.native
-  def toObject(message: TransactionHeader): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.toObject")
-  @js.native
-  def toObject(message: TransactionHeader, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: TransactionHeader): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: TransactionHeader, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a TransactionHeader message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "TransactionHeader.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

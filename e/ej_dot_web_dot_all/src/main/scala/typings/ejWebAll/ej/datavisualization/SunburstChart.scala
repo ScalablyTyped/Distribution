@@ -18,11 +18,12 @@ import typings.ejWebAll.ej.datavisualization.Sunburst.SunburstTheme
 import typings.ejWebAll.ej.datavisualization.Sunburst.SunburstVerticalAlignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SunburstChart extends Widget_ {
+trait SunburstChart
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -36,18 +37,17 @@ trait SunburstChart extends Widget_ {
 }
 object SunburstChart {
   
-  @js.native
   trait Border extends StObject {
     
     /** Border color of the sunburst.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst border.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Border {
     
@@ -74,24 +74,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Includes clicked region data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -130,24 +129,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DataLabelRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst datalabel data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DataLabelRenderingEventArgs {
     
@@ -186,37 +184,36 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DataLabelSettings extends StObject {
     
     /** Fill color for the datalabel
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the data label font.
       */
-    var font: js.UndefOr[DataLabelSettingsFont] = js.native
+    var font: js.UndefOr[DataLabelSettingsFont] = js.undefined
     
     /** Datalabel overflow mode
       * @Default {Trim. See LabelOverflowMode}
       */
-    var labelOverflowMode: js.UndefOr[SunburstLabelOverflowMode | String] = js.native
+    var labelOverflowMode: js.UndefOr[SunburstLabelOverflowMode | String] = js.undefined
     
     /** Alignment of sunburst datalabel
       * @Default {Angle. See DatalabelAlignment}
       */
-    var labelRotationMode: js.UndefOr[SunburstLabelRotationMode | String] = js.native
+    var labelRotationMode: js.UndefOr[SunburstLabelRotationMode | String] = js.undefined
     
     /** Custom template for datalabel
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Datalabel visibility of the Sunburst.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object DataLabelSettings {
     
@@ -267,38 +264,37 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DataLabelSettingsFont extends StObject {
     
     /** Font color of the data label text.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family of the data label.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style of the data label.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight of the data label.
       * @Default {regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the text.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size of the data label.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object DataLabelSettingsFont {
     
@@ -349,24 +345,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Includes double clicked region data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -405,24 +400,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DrillDownBackEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Drill down data of points
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrillDownBackEventArgs {
     
@@ -461,24 +455,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DrillDownClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Clicked point data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrillDownClickEventArgs {
     
@@ -517,24 +510,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait DrillDownResetEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Drill down reset data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrillDownResetEventArgs {
     
@@ -573,33 +565,32 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait HighlightSettings extends StObject {
     
     /** Color of the levels/point on highlight.
       * @Default {red}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to highlight the levels or point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the levels or point has to be highlighted.
       * @Default {point. See Mode}
       */
-    var mode: js.UndefOr[SunburstHighlightMode | String] = js.native
+    var mode: js.UndefOr[SunburstHighlightMode | String] = js.undefined
     
     /** Opacity of the levels/point on highlight.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether the levels or data point has to be highlighted.
       * @Default {opacity. See Mode}
       */
-    var `type`: js.UndefOr[SunburstHighlightType | String] = js.native
+    var `type`: js.UndefOr[SunburstHighlightType | String] = js.undefined
   }
   object HighlightSettings {
     
@@ -644,73 +635,72 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Legend extends StObject {
     
     /** Horizontal alignment of the legend.
       * @Default {Center. See Alignment}
       */
-    var alignment: js.UndefOr[SunburstAlignment | String] = js.native
+    var alignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Options for customizing the legend border.
       */
-    var border: js.UndefOr[LegendBorder] = js.native
+    var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Interactive action of legend items.
       * @Default {toggleSegmentVisibility. See Alignment}
       */
-    var clickAction: js.UndefOr[SunburstClickAction | String] = js.native
+    var clickAction: js.UndefOr[SunburstClickAction | String] = js.undefined
     
     /** Number of columns to arrange the legend items.
       * @Default {null}
       */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the font used for legend item text.
       */
-    var font: js.UndefOr[LegendFont] = js.native
+    var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
       * @Default {10}
       */
-    var itemPadding: js.UndefOr[Double] = js.native
+    var itemPadding: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the style of legend items.
       */
-    var itemStyle: js.UndefOr[LegendItemStyle] = js.native
+    var itemStyle: js.UndefOr[LegendItemStyle] = js.undefined
     
     /** Options to customize the location of sunburst legend. Legend is placed in provided location only when value of position property is custom
       */
-    var location: js.UndefOr[LegendLocation] = js.native
+    var location: js.UndefOr[LegendLocation] = js.undefined
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. To manually specify the location of legend, set
       * **custom** as value to this property.
       * @Default {Bottom. See Position}
       */
-    var position: js.UndefOr[SunburstLegendPosition | String] = js.native
+    var position: js.UndefOr[SunburstLegendPosition | String] = js.undefined
     
     /** Number of rows to arrange the legend items.
       * @Default {null}
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /** Shape of the legend items.
       * @Default {None. See Shape}
       */
-    var shape: js.UndefOr[SunburstLegendShape | String] = js.native
+    var shape: js.UndefOr[SunburstLegendShape | String] = js.undefined
     
     /** Options to customize the size of the legend.
       */
-    var size: js.UndefOr[LegendSize] = js.native
+    var size: js.UndefOr[LegendSize] = js.undefined
     
     /** Options to customize the legend title.
       */
-    var title: js.UndefOr[LegendTitle] = js.native
+    var title: js.UndefOr[LegendTitle] = js.undefined
     
     /** Visibility of the legend.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Legend {
     
@@ -809,18 +799,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendBorder {
     
@@ -847,28 +836,27 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendFont extends StObject {
     
     /** Font family for legend item text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend item text.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend item text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LegendFont {
     
@@ -907,18 +895,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendItemStyle extends StObject {
     
     /** Height of the shape in legend items.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Width of the shape in legend items.
       * @Default {10}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendItemStyle {
     
@@ -945,18 +932,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendLocation extends StObject {
     
     /** X value or horizontal offset to position the legend in chart.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Y value or vertical offset to position the legend.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object LegendLocation {
     
@@ -983,18 +969,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendSize extends StObject {
     
     /** Height of the legend. Height can be specified in either pixel or percentage.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the legend. Width can be specified in either pixel or percentage.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LegendSize {
     
@@ -1021,26 +1006,25 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendTitle extends StObject {
     
     /** Options to customize the font used for legend title
       */
-    var font: js.UndefOr[LegendTitleFont] = js.native
+    var font: js.UndefOr[LegendTitleFont] = js.undefined
     
     /** Text to be displayed in legend title.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Alignment of the legend title.
       * @Default {center. See Alignment}
       */
-    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.native
+    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Enables or disables the legend title.
       * @Default {true}
       */
-    var visible: js.UndefOr[String] = js.native
+    var visible: js.UndefOr[String] = js.undefined
   }
   object LegendTitle {
     
@@ -1079,28 +1063,27 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LegendTitleFont extends StObject {
     
     /** Font family for the text in legend title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend title.
       * @Default {normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for legend title.
       * @Default {normal. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Font size for legend title.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LegendTitleFont {
     
@@ -1139,13 +1122,12 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Level extends StObject {
     
     /** Specifies the group member path
       * @Default {null}
       */
-    var groupMemberPath: js.UndefOr[String] = js.native
+    var groupMemberPath: js.UndefOr[String] = js.undefined
   }
   object Level {
     
@@ -1166,24 +1148,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Load event data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -1222,24 +1203,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait LoadedEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Loaded event data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadedEventArgs {
     
@@ -1278,28 +1258,27 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Margin extends StObject {
     
     /** Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
       * @Default {10}
       */
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
       * @Default {10}
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
       * @Default {10}
       */
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
     /** Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
       * @Default {10}
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Margin {
     
@@ -1338,206 +1317,205 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the sunburst chart.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Animation type of sunburst
       * @Default {rotation. See Alignment}
       */
-    var animationType: js.UndefOr[Animation | String] = js.native
+    var animationType: js.UndefOr[Animation | String] = js.undefined
     
     /** Background color of the plot area.
       * @Default {null}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the sunburst border.
       */
-    var border: js.UndefOr[Border] = js.native
+    var border: js.UndefOr[Border] = js.undefined
     
     /** Fires before rendering the datalabel
       */
-    var dataLabelRendering: js.UndefOr[js.Function1[/* e */ DataLabelRenderingEventArgs, Unit]] = js.native
+    var dataLabelRendering: js.UndefOr[js.Function1[/* e */ DataLabelRenderingEventArgs, Unit]] = js.undefined
     
     /** Options to customize the Sunburst dataLabel.
       */
-    var dataLabelSettings: js.UndefOr[DataLabelSettings] = js.native
+    var dataLabelSettings: js.UndefOr[DataLabelSettings] = js.undefined
     
     /** Specifies the dataSource to the sunburst.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Fires, on double clicking the sunburst chart.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Fires when resetting drilldown points.
       */
-    var drillDownBack: js.UndefOr[js.Function1[/* e */ DrillDownBackEventArgs, Unit]] = js.native
+    var drillDownBack: js.UndefOr[js.Function1[/* e */ DrillDownBackEventArgs, Unit]] = js.undefined
     
     /** Fires when clicking the point to perform drilldown.
       */
-    var drillDownClick: js.UndefOr[js.Function1[/* e */ DrillDownClickEventArgs, Unit]] = js.native
+    var drillDownClick: js.UndefOr[js.Function1[/* e */ DrillDownClickEventArgs, Unit]] = js.undefined
     
     /** Fires after resetting the sunburst points
       */
-    var drillDownReset: js.UndefOr[js.Function1[/* e */ DrillDownResetEventArgs, Unit]] = js.native
+    var drillDownReset: js.UndefOr[js.Function1[/* e */ DrillDownResetEventArgs, Unit]] = js.undefined
     
     /** Enable/disable the animation for all the levels.
       * @Default {false}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst rendering will end at the specified value
       * @Default {null}
       */
-    var endAngle: js.UndefOr[Double] = js.native
+    var endAngle: js.UndefOr[Double] = js.undefined
     
     /** Options for customizing the appearance of the levels or point while highlighting.
       */
-    var highlightSettings: js.UndefOr[HighlightSettings] = js.native
+    var highlightSettings: js.UndefOr[HighlightSettings] = js.undefined
     
     /** Sunburst inner radius value
       * @Default {0.4}
       */
-    var innerRadius: js.UndefOr[Double] = js.native
+    var innerRadius: js.UndefOr[Double] = js.undefined
     
     /** Controls whether sunburst has to be responsive or not.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the legend items and legend title.
       */
-    var legend: js.UndefOr[Legend] = js.native
+    var legend: js.UndefOr[Legend] = js.undefined
     
     /** Specify levels of sunburst for grouped visualization of data
       * @Default {[]}
       */
-    var levels: js.UndefOr[js.Array[Level]] = js.native
+    var levels: js.UndefOr[js.Array[Level]] = js.undefined
     
     /** Fires before loading.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Fires after rendering sunburst.
       */
-    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* e */ LoadedEventArgs, Unit]] = js.undefined
     
     /** Options to customize the left, right, top and bottom margins of sunburst area.
       */
-    var margin: js.UndefOr[Margin] = js.native
+    var margin: js.UndefOr[Margin] = js.undefined
     
     /** Opacity of the levels.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Palette color for the data points.
       * @Default {null}
       */
-    var palette: js.UndefOr[String] = js.native
+    var palette: js.UndefOr[String] = js.undefined
     
     /** Parent node of the data points.
       * @Default {null}
       */
-    var parentNode: js.UndefOr[String] = js.native
+    var parentNode: js.UndefOr[String] = js.undefined
     
     /** Fires after clicking the point in sunburst
       */
-    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, Unit]] = js.native
+    var pointRegionClick: js.UndefOr[js.Function1[/* e */ PointRegionClickEventArgs, Unit]] = js.undefined
     
     /** Fires while moving the mouse over sunburst points
       */
-    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, Unit]] = js.native
+    var pointRegionMouseMove: js.UndefOr[js.Function1[/* e */ PointRegionMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Options for customizing sunburst points.
       */
-    var points: js.UndefOr[Points] = js.native
+    var points: js.UndefOr[Points] = js.undefined
     
     /** Fires before rendering sunburst.
       */
-    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, Unit]] = js.native
+    var preRender: js.UndefOr[js.Function1[/* e */ PreRenderEventArgs, Unit]] = js.undefined
     
     /** Sunburst outer radius value
       * @Default {1}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** Fires, on right clicking the sunburst chart
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Options for customizing the sunburst segment border.
       */
-    var segmentBorder: js.UndefOr[SegmentBorder] = js.native
+    var segmentBorder: js.UndefOr[SegmentBorder] = js.undefined
     
     /** Fires before rendering each segment
       */
-    var segmentRendering: js.UndefOr[js.Function1[/* e */ SegmentRenderingEventArgs, Unit]] = js.native
+    var segmentRendering: js.UndefOr[js.Function1[/* e */ SegmentRenderingEventArgs, Unit]] = js.undefined
     
     /** Options for customizing the appearance of the levels or data point while selection.
       */
-    var selectionSettings: js.UndefOr[SelectionSettings] = js.native
+    var selectionSettings: js.UndefOr[SelectionSettings] = js.undefined
     
     /** Options to customize the Sunburst size.
       */
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
     /** Sunburst rendering will start from the specified value
       * @Default {null}
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the theme for Sunburst.
       * @Default {Flatlight. See Theme}
       */
-    var theme: js.UndefOr[SunburstTheme | String] = js.native
+    var theme: js.UndefOr[SunburstTheme | String] = js.undefined
     
     /** Options for customizing the title and subtitle of sunburst.
       */
-    var title: js.UndefOr[Title] = js.native
+    var title: js.UndefOr[Title] = js.undefined
     
     /** Fires before rendering sunburst title.
       */
-    var titleRendering: js.UndefOr[js.Function1[/* e */ TitleRenderingEventArgs, Unit]] = js.native
+    var titleRendering: js.UndefOr[js.Function1[/* e */ TitleRenderingEventArgs, Unit]] = js.undefined
     
     /** Options to customize the Sunburst tooltip.
       */
-    var tooltip: js.UndefOr[Tooltip] = js.native
+    var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Fires during initialization of tooltip.
       */
-    var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.native
+    var tooltipInitialize: js.UndefOr[js.Function1[/* e */ TooltipInitializeEventArgs, Unit]] = js.undefined
     
     /** Bind the data field from the data source.
       * @Default {null}
       */
-    var valueMemberPath: js.UndefOr[String] = js.native
+    var valueMemberPath: js.UndefOr[String] = js.undefined
     
     /** Controls the visibility of sunburst.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the property in the datasource that contains x values.
       * @Default {null}
       */
-    var xName: js.UndefOr[String] = js.native
+    var xName: js.UndefOr[String] = js.undefined
     
     /** Name of the property in the datasource that contains y values.
       * @Default {null}
       */
-    var yName: js.UndefOr[String] = js.native
+    var yName: js.UndefOr[String] = js.undefined
     
     /** Options for enable zooming feature of chart.
       */
-    var zoomSettings: js.UndefOr[ZoomSettings] = js.native
+    var zoomSettings: js.UndefOr[ZoomSettings] = js.undefined
   }
   object Model {
     
@@ -1825,24 +1803,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait PointRegionClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Includes clicked points region data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionClickEventArgs {
     
@@ -1881,24 +1858,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait PointRegionMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Includes data of mouse moved region
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PointRegionMouseMoveEventArgs {
     
@@ -1937,28 +1913,27 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Points extends StObject {
     
     /** Points fill color of the sunburst.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Points text of the sunburst.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Points x value of the sunburst.
       * @Default {null}
       */
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
     /** Points y value of the sunburst.
       * @Default {null}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Points {
     
@@ -1997,24 +1972,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait PreRenderEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** PreRender event data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object PreRenderEventArgs {
     
@@ -2053,24 +2027,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Includes right clicked region data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -2109,18 +2082,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait SegmentBorder extends StObject {
     
     /** Segment Border color of the sunburst.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst segment border.
       * @Default {2}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SegmentBorder {
     
@@ -2147,24 +2119,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait SegmentRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst datalabel data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SegmentRenderingEventArgs {
     
@@ -2203,33 +2174,32 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait SelectionSettings extends StObject {
     
     /** Color of the levels/point on selection.
       * @Default {green}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Enables/disables the ability to select the levels or data point interactively.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies whether the levels or data point has to be selected.
       * @Default {point. See Mode}
       */
-    var mode: js.UndefOr[SunburstHighlightMode | String] = js.native
+    var mode: js.UndefOr[SunburstHighlightMode | String] = js.undefined
     
     /** Opacity of the levels/point on selection.
       * @Default {0.5}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies whether the levels or data point has to be selected.
       * @Default {opacity. See Mode}
       */
-    var `type`: js.UndefOr[SunburstHighlightType | String] = js.native
+    var `type`: js.UndefOr[SunburstHighlightType | String] = js.undefined
   }
   object SelectionSettings {
     
@@ -2274,18 +2244,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
     /** Height of the Sunburst.
       * @Default {''}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Width of the Sunburst.
       * @Default {''}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Size {
     
@@ -2312,30 +2281,29 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Title extends StObject {
     
     /** Options for customizing the font of sunburst title.
       */
-    var font: js.UndefOr[TitleFont] = js.native
+    var font: js.UndefOr[TitleFont] = js.undefined
     
     /** Options to customize the sub title of Sunburst.
       */
-    var subtitle: js.UndefOr[TitleSubtitle] = js.native
+    var subtitle: js.UndefOr[TitleSubtitle] = js.undefined
     
     /** Title text for sunburst
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Title text alignment
       * @Default {center. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.native
+    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Title text visibility for sunburst
       * @Default {true}
       */
-    var visible: js.UndefOr[String] = js.native
+    var visible: js.UndefOr[String] = js.undefined
   }
   object Title {
     
@@ -2380,33 +2348,32 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TitleFont extends StObject {
     
     /** Font family for Sunburst title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for Sunburst title.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for Sunburst title.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the Sunburst title.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for Sunburst title.
       * @Default {20px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TitleFont {
     
@@ -2451,24 +2418,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TitleRenderingEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst title data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TitleRenderingEventArgs {
     
@@ -2507,26 +2473,25 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TitleSubtitle extends StObject {
     
     /** Options for customizing the font of sub title.
       */
-    var font: js.UndefOr[TitleSubtitleFont] = js.native
+    var font: js.UndefOr[TitleSubtitleFont] = js.undefined
     
     /** Subtitle text for sunburst
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Sub title text alignment
       * @Default {far. See TextAlignment}
       */
-    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.native
+    var textAlignment: js.UndefOr[SunburstAlignment | String] = js.undefined
     
     /** Sub title text visibility for sunburst
       * @Default {true}
       */
-    var visible: js.UndefOr[String] = js.native
+    var visible: js.UndefOr[String] = js.undefined
   }
   object TitleSubtitle {
     
@@ -2565,33 +2530,32 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TitleSubtitleFont extends StObject {
     
     /** Font family of sub title.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for sub title.
       * @Default {Normal. See FontStyle}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Font weight for sub title.
       * @Default {Regular. See FontWeight}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity of the sub title.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for sub title.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TitleSubtitleFont {
     
@@ -2636,41 +2600,40 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
     /** Options for customizing the border of the sunburst tooltip.
       */
-    var border: js.UndefOr[TooltipBorder] = js.native
+    var border: js.UndefOr[TooltipBorder] = js.undefined
     
     /** Fill color for the sunburst tooltip.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options for customizing the font of the tooltip.
       */
-    var font: js.UndefOr[TooltipFont] = js.native
+    var font: js.UndefOr[TooltipFont] = js.undefined
     
     /** Setting the format for the data displayed in the tooltip
       * @Default {#point.x# : #point.y#}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** Sets the opacity of the displayed tooltip
       * @Default {0.95}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Custom template to the tooltip.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** tooltip visibility of the Sunburst.
       * @Default {true}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Tooltip {
     
@@ -2727,18 +2690,17 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TooltipBorder extends StObject {
     
     /** Border color of the tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the tooltip.
       * @Default {5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TooltipBorder {
     
@@ -2765,38 +2727,37 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TooltipFont extends StObject {
     
     /** Font color of the text in the tooltip.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font Family for the tooltip.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the font Style for the tooltip.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font weight for the tooltip.
       * @Default {Regular}
       */
-    var fontWeight: js.UndefOr[FontWeight | String] = js.native
+    var fontWeight: js.UndefOr[FontWeight | String] = js.undefined
     
     /** Opacity for text in the tooltip.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Font size for text in the tooltip.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object TooltipFont {
     
@@ -2847,24 +2808,23 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait TooltipInitializeEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Sunburst tooltip data
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the sunburst model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TooltipInitializeEventArgs {
     
@@ -2903,23 +2863,22 @@ object SunburstChart {
     }
   }
   
-  @js.native
   trait ZoomSettings extends StObject {
     
     /** Enables or disables zooming.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Toolbar horizontal alignment
       * @Default {right. See Alignment}
       */
-    var toolbarHorizontalAlignment: js.UndefOr[SunburstHorizontalAlignment | String] = js.native
+    var toolbarHorizontalAlignment: js.UndefOr[SunburstHorizontalAlignment | String] = js.undefined
     
     /** Toolbar vertical alignment
       * @Default {top. See Alignment}
       */
-    var toolbarVerticalAlignment: js.UndefOr[SunburstVerticalAlignment | String] = js.native
+    var toolbarVerticalAlignment: js.UndefOr[SunburstVerticalAlignment | String] = js.undefined
   }
   object ZoomSettings {
     

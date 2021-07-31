@@ -2,49 +2,47 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Building object in Directory API.
   */
-@js.native
 trait SchemaBuilding extends StObject {
   
   /**
     * The postal address of the building. See PostalAddress for details. Note
     * that only a single address line and region code are required.
     */
-  var address: js.UndefOr[SchemaBuildingAddress] = js.native
+  var address: js.UndefOr[SchemaBuildingAddress] = js.undefined
   
   /**
     * Unique identifier for the building. The maximum length is 100 characters.
     */
-  var buildingId: js.UndefOr[String] = js.native
+  var buildingId: js.UndefOr[String] = js.undefined
   
   /**
     * The building name as seen by users in Calendar. Must be unique for the
     * customer. For example, &quot;NYC-CHEL&quot;. The maximum length is 100
     * characters.
     */
-  var buildingName: js.UndefOr[String] = js.native
+  var buildingName: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic coordinates of the center of the building, expressed as
     * latitude and longitude in decimal degrees.
     */
-  var coordinates: js.UndefOr[SchemaBuildingCoordinates] = js.native
+  var coordinates: js.UndefOr[SchemaBuildingCoordinates] = js.undefined
   
   /**
     * A brief description of the building. For example, &quot;Chelsea
     * Market&quot;.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etags: js.UndefOr[String] = js.native
+  var etags: js.UndefOr[String] = js.undefined
   
   /**
     * The display names for all floors in this building. The floors are
@@ -53,12 +51,12 @@ trait SchemaBuilding extends StObject {
     * &quot;1&quot;, &quot;2&quot;, &quot;2M&quot;, &quot;3&quot;,
     * &quot;PH&quot;] Must contain at least one entry.
     */
-  var floorNames: js.UndefOr[js.Array[String]] = js.native
+  var floorNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaBuilding {
   

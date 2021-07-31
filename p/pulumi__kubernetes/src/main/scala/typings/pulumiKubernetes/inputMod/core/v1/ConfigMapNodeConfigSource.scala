@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ConfigMapNodeConfigSource contains the information to reference a ConfigMap as a config source for the Node.
   */
-@js.native
 trait ConfigMapNodeConfigSource extends StObject {
   
   /**
     * KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the KubeletConfiguration structure This field is required in all cases.
     */
-  var kubeletConfigKey: Input[String] = js.native
+  var kubeletConfigKey: Input[String]
   
   /**
     * Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in all cases.
     */
-  var namespace: Input[String] = js.native
+  var namespace: Input[String]
   
   /**
     * ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
     */
-  var resourceVersion: js.UndefOr[Input[String]] = js.native
+  var resourceVersion: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec, and required in Node.Status.
     */
-  var uid: js.UndefOr[Input[String]] = js.native
+  var uid: js.UndefOr[Input[String]] = js.undefined
 }
 object ConfigMapNodeConfigSource {
   

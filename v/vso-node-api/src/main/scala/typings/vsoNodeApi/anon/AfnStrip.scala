@@ -2,35 +2,33 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfnStrip extends StObject {
   
-  var afnStrip: scala.Double = js.native
+  var afnStrip: scala.Double
   
-  var bugFilingData: scala.Double = js.native
+  var bugFilingData: scala.Double
   
-  var codeCoverage: scala.Double = js.native
+  var codeCoverage: scala.Double
   
-  var consoleLog: scala.Double = js.native
+  var consoleLog: scala.Double
   
-  var generalAttachment: scala.Double = js.native
+  var generalAttachment: scala.Double
   
-  var intermediateCollectorData: scala.Double = js.native
+  var intermediateCollectorData: scala.Double
   
-  var runConfig: scala.Double = js.native
+  var runConfig: scala.Double
   
-  var testImpactDetails: scala.Double = js.native
+  var testImpactDetails: scala.Double
   
-  var tmiTestResultDetail: scala.Double = js.native
+  var tmiTestResultDetail: scala.Double
   
-  var tmiTestRunDeploymentFiles: scala.Double = js.native
+  var tmiTestRunDeploymentFiles: scala.Double
   
-  var tmiTestRunReverseDeploymentFiles: scala.Double = js.native
+  var tmiTestRunReverseDeploymentFiles: scala.Double
   
-  var tmiTestRunSummary: scala.Double = js.native
+  var tmiTestRunSummary: scala.Double
 }
 object AfnStrip {
   

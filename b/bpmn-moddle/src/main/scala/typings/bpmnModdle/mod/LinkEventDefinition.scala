@@ -2,17 +2,17 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkEventDefinition extends BaseElement {
+trait LinkEventDefinition
+  extends StObject
+     with BaseElement {
   
-  var name: String = js.native
+  var name: String
   
-  var source: LinkEventDefinition = js.native
+  var source: LinkEventDefinition
   
-  var target: LinkEventDefinition = js.native
+  var target: LinkEventDefinition
 }
 object LinkEventDefinition {
   

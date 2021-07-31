@@ -2,10 +2,8 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait HostProperties extends StObject {
     *
     * Default is "linux".
     */
-  var os: js.UndefOr[HostOperatingSystem] = js.native
+  var os: js.UndefOr[HostOperatingSystem] = js.undefined
 }
 object HostProperties {
   

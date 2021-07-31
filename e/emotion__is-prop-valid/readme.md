@@ -10,9 +10,9 @@ A function to check whether a prop is valid for HTML and SVG elements
 | ------------------ | :-------------: |
 | Full name          | @emotion/is-prop-valid |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 129 |
-| # downloads        | 150598677 |
+| # releases         | 12 |
+| # dependents       | 137 |
+| # downloads        | 184139071 |
 | # stars            | 0 |
 
 ## Links

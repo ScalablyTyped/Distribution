@@ -1,8 +1,8 @@
 package typings.wonderFrp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/commonjs", "Entity")
 @js.native
@@ -10,11 +10,16 @@ abstract class Entity protected ()
   extends typings.wonderFrp.entityMod.Entity {
   def this(uidPre: String) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/commonjs", "Entity")
-@js.native
-object Entity extends js.Object {
-  var UID: Double = js.native
+object Entity {
+  
+  @JSImport("wonder-frp/dist/commonjs", "Entity")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("wonder-frp/dist/commonjs", "Entity.UID")
+  @js.native
+  def UID: Double = js.native
+  @scala.inline
+  def UID_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UID")(x.asInstanceOf[js.Any])
 }
-

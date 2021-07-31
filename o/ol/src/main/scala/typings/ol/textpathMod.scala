@@ -3,13 +3,15 @@ package typings.ol
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textpathMod {
   
-  @JSImport("ol/geom/flat/textpath", "drawTextOnPath")
+  @JSImport("ol/geom/flat/textpath", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def drawTextOnPath(
     flatCoordinates: js.Array[Double],
     offset: Double,
@@ -23,5 +25,5 @@ object textpathMod {
     font: String,
     cache: StringDictionary[Double],
     rotation: Double
-  ): js.Array[js.Array[_]] = js.native
+  ): js.Array[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTextOnPath")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], text.asInstanceOf[js.Any], startM.asInstanceOf[js.Any], maxAngle.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], measureAndCacheTextWidth.asInstanceOf[js.Any], font.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[js.Any]]]
 }

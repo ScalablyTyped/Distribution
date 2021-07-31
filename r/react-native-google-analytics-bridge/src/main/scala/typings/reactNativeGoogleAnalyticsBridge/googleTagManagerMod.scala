@@ -3,7 +3,6 @@ package typings.reactNativeGoogleAnalyticsBridge
 import typings.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleTagManagerMod {
@@ -20,8 +19,14 @@ object googleTagManagerMod {
     */
   @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", JSImport.Default)
   @js.native
-  class default () extends GoogleTagManager
+  class default ()
+    extends StObject
+       with GoogleTagManager
   object default {
+    
+    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Retrieves a boolean value with the given key from the opened container.
@@ -30,9 +35,8 @@ object googleTagManagerMod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.boolForKey")
-    @js.native
-    def boolForKey(key: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def boolForKey(key: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("boolForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Retrieves a number with the given key from the opened container.
@@ -41,9 +45,8 @@ object googleTagManagerMod {
       * @returns {Promise<number>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.doubleForKey")
-    @js.native
-    def doubleForKey(key: js.Any): js.Promise[Double] = js.native
+    @scala.inline
+    def doubleForKey(key: js.Any): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
     
     /**
       * Call once to open the container for all subsequent static calls.
@@ -53,9 +56,8 @@ object googleTagManagerMod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.openContainerWithId")
-    @js.native
-    def openContainerWithId(containerId: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def openContainerWithId(containerId: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openContainerWithId")(containerId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Push a datalayer event for Google Analytics through Google Tag Manager. The event must have at least one key "event" with event name.
@@ -68,9 +70,8 @@ object googleTagManagerMod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.pushDataLayerEvent")
-    @js.native
-    def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = js.native
+    @scala.inline
+    def pushDataLayerEvent(event: DataLayerEvent): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pushDataLayerEvent")(event.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Refreshes the GTM container.
@@ -81,9 +82,8 @@ object googleTagManagerMod {
       * @returns {Promise<boolean>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.refreshContainer")
-    @js.native
-    def refreshContainer(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def refreshContainer(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshContainer")().asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Register Function Call tag handler
@@ -91,18 +91,16 @@ object googleTagManagerMod {
       * @param {Function} handler
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.registerFunctionCallTagHandler")
-    @js.native
-    def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = js.native
+    @scala.inline
+    def registerFunctionCallTagHandler(functionName: js.Any, handler: js.Any): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionCallTagHandler")(functionName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Sets logger to verbose, default is warning
       * @param {boolean} enabled
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.setVerboseLoggingEnabled")
-    @js.native
-    def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = js.native
+    @scala.inline
+    def setVerboseLoggingEnabled(enabled: Boolean): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerboseLoggingEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
     /**
       * Retrieves a string with the given key from the opened container.
@@ -111,9 +109,8 @@ object googleTagManagerMod {
       * @returns {Promise<string>}
       */
     /* static member */
-    @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", "default.stringForKey")
-    @js.native
-    def stringForKey(key: String): js.Promise[String] = js.native
+    @scala.inline
+    def stringForKey(key: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringForKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
   
   /**
@@ -126,6 +123,5 @@ object googleTagManagerMod {
     *   .then(() => GoogleTagManager.stringForKey("pack"))
     *   .then(str => console.log("Pack: ", str));
     */
-  @js.native
   trait GoogleTagManager extends StObject
 }

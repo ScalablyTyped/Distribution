@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebSceneUpdateFromOptionsThumbnailSize extends Object {
+trait WebSceneUpdateFromOptionsThumbnailSize
+  extends StObject
+     with Object {
   
   /**
     * The height of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The width of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
-  var width: Double = js.native
+  var width: Double
 }
 object WebSceneUpdateFromOptionsThumbnailSize {
   

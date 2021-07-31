@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scale {
@@ -49,15 +48,15 @@ object Scale {
   object Center extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Center with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Center & Double] = js.native
     
-    /* 1 */ val CENTER_BOTH: typings.phaser.Phaser.Scale.Center.CENTER_BOTH with Double = js.native
+    /* 1 */ val CENTER_BOTH: typings.phaser.Phaser.Scale.Center.CENTER_BOTH & Double = js.native
     
-    /* 2 */ val CENTER_HORIZONTALLY: typings.phaser.Phaser.Scale.Center.CENTER_HORIZONTALLY with Double = js.native
+    /* 2 */ val CENTER_HORIZONTALLY: typings.phaser.Phaser.Scale.Center.CENTER_HORIZONTALLY & Double = js.native
     
-    /* 3 */ val CENTER_VERTICALLY: typings.phaser.Phaser.Scale.Center.CENTER_VERTICALLY with Double = js.native
+    /* 3 */ val CENTER_VERTICALLY: typings.phaser.Phaser.Scale.Center.CENTER_VERTICALLY & Double = js.native
     
-    /* 0 */ val NO_CENTER: typings.phaser.Phaser.Scale.Center.NO_CENTER with Double = js.native
+    /* 0 */ val NO_CENTER: typings.phaser.Phaser.Scale.Center.NO_CENTER & Double = js.native
   }
   
   /**
@@ -182,11 +181,11 @@ object Scale {
   object Orientation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Orientation with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Orientation & Double] = js.native
     
-    /* 0 */ val LANDSCAPE: typings.phaser.Phaser.Scale.Orientation.LANDSCAPE with Double = js.native
+    /* 0 */ val LANDSCAPE: typings.phaser.Phaser.Scale.Orientation.LANDSCAPE & Double = js.native
     
-    /* 1 */ val PORTRAIT: typings.phaser.Phaser.Scale.Orientation.PORTRAIT with Double = js.native
+    /* 1 */ val PORTRAIT: typings.phaser.Phaser.Scale.Orientation.PORTRAIT & Double = js.native
   }
   
   /**
@@ -300,7 +299,8 @@ object Scale {
   @JSGlobal("Phaser.Scale.ScaleManager")
   @js.native
   class ScaleManager protected ()
-    extends typings.phaser.Phaser.Scale.ScaleManager {
+    extends StObject
+       with typings.phaser.Phaser.Scale.ScaleManager {
     /**
       * 
       * @param game A reference to the Phaser.Game instance.
@@ -316,19 +316,19 @@ object Scale {
   object ScaleModes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.ScaleModes with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.ScaleModes & Double] = js.native
     
-    /* 4 */ val ENVELOP: typings.phaser.Phaser.Scale.ScaleModes.ENVELOP with Double = js.native
+    /* 4 */ val ENVELOP: typings.phaser.Phaser.Scale.ScaleModes.ENVELOP & Double = js.native
     
-    /* 3 */ val FIT: typings.phaser.Phaser.Scale.ScaleModes.FIT with Double = js.native
+    /* 3 */ val FIT: typings.phaser.Phaser.Scale.ScaleModes.FIT & Double = js.native
     
-    /* 2 */ val HEIGHT_CONTROLS_WIDTH: typings.phaser.Phaser.Scale.ScaleModes.HEIGHT_CONTROLS_WIDTH with Double = js.native
+    /* 2 */ val HEIGHT_CONTROLS_WIDTH: typings.phaser.Phaser.Scale.ScaleModes.HEIGHT_CONTROLS_WIDTH & Double = js.native
     
-    /* 0 */ val NONE: typings.phaser.Phaser.Scale.ScaleModes.NONE with Double = js.native
+    /* 0 */ val NONE: typings.phaser.Phaser.Scale.ScaleModes.NONE & Double = js.native
     
-    /* 5 */ val RESIZE: typings.phaser.Phaser.Scale.ScaleModes.RESIZE with Double = js.native
+    /* 5 */ val RESIZE: typings.phaser.Phaser.Scale.ScaleModes.RESIZE & Double = js.native
     
-    /* 1 */ val WIDTH_CONTROLS_HEIGHT: typings.phaser.Phaser.Scale.ScaleModes.WIDTH_CONTROLS_HEIGHT with Double = js.native
+    /* 1 */ val WIDTH_CONTROLS_HEIGHT: typings.phaser.Phaser.Scale.ScaleModes.WIDTH_CONTROLS_HEIGHT & Double = js.native
   }
   
   /**
@@ -360,14 +360,14 @@ object Scale {
   object Zoom extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Zoom with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Scale.Zoom & Double] = js.native
     
-    /* 3 */ val MAX_ZOOM: typings.phaser.Phaser.Scale.Zoom.MAX_ZOOM with Double = js.native
+    /* 3 */ val MAX_ZOOM: typings.phaser.Phaser.Scale.Zoom.MAX_ZOOM & Double = js.native
     
-    /* 0 */ val NO_ZOOM: typings.phaser.Phaser.Scale.Zoom.NO_ZOOM with Double = js.native
+    /* 0 */ val NO_ZOOM: typings.phaser.Phaser.Scale.Zoom.NO_ZOOM & Double = js.native
     
-    /* 1 */ val ZOOM_2X: typings.phaser.Phaser.Scale.Zoom.ZOOM_2X with Double = js.native
+    /* 1 */ val ZOOM_2X: typings.phaser.Phaser.Scale.Zoom.ZOOM_2X & Double = js.native
     
-    /* 2 */ val ZOOM_4X: typings.phaser.Phaser.Scale.Zoom.ZOOM_4X with Double = js.native
+    /* 2 */ val ZOOM_4X: typings.phaser.Phaser.Scale.Zoom.ZOOM_4X & Double = js.native
   }
 }

@@ -2,14 +2,16 @@ package typings.d3Path
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-path", "path")
+  @JSImport("d3-path", JSImport.Namespace)
   @js.native
-  def path(): Path_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def path(): Path_ = ^.asInstanceOf[js.Dynamic].applyDynamic("path")().asInstanceOf[Path_]
   
   @js.native
   trait Path_ extends StObject {

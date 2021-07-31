@@ -2,20 +2,18 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents information about the player along with a signature to verify that it indeed comes from Facebook.
   */
-@js.native
 trait SignedPlayerInfo extends StObject {
   
   /**
     * Get the id of the player.
     * @returns The ID of the player
     */
-  def getPlayerID(): String = js.native
+  def getPlayerID(): String
   
   /**
     * A signature to verify this object indeed comes from Facebook. The string is base64url encoded and signed with an HMAC version of your App Secret,
@@ -41,7 +39,7 @@ trait SignedPlayerInfo extends StObject {
     *
     * @returns The signature string.
     */
-  def getSignature(): String = js.native
+  def getSignature(): String
 }
 object SignedPlayerInfo {
   

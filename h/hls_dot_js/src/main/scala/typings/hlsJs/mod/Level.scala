@@ -2,84 +2,82 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a Level object represents a given quality level and contains quality level related info
   */
-@js.native
 trait Level extends StObject {
   
   /**
     * attribute list
     */
-  var attrs: js.Array[LevelAttr] = js.native
+  var attrs: js.Array[LevelAttr]
   
   /**
     * audio codec
     */
-  var audioCodec: String = js.native
+  var audioCodec: String
   
   /**
     * level bitrate
     */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /**
     * level details
     */
-  var details: js.UndefOr[LevelDetails] = js.native
+  var details: js.UndefOr[LevelDetails] = js.undefined
   
   /**
     * whether there is any error on the fragment
     */
-  var fragmentError: js.UndefOr[Boolean] = js.native
+  var fragmentError: js.UndefOr[Boolean] = js.undefined
   
   /**
     * video height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * index of the level
     */
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
   /**
     * error code
     */
-  var loadError: Double = js.native
+  var loadError: Double
   
   /**
     * level name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * array of unrecognized codecs
     */
-  var unkownCodecs: js.Array[String] = js.native
+  var unkownCodecs: js.Array[String]
   
   /**
     * level url. might contain several items if failover/redundant streams are found in the manifest
     */
-  var url: js.Array[String] = js.native
+  var url: js.Array[String]
   
   /**
     * index of current url from url[] array
     */
-  var urlId: Double = js.native
+  var urlId: Double
   
   /**
     * video codec
     */
-  var videoCodec: String = js.native
+  var videoCodec: String
   
   /**
     * video width
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Level {
   

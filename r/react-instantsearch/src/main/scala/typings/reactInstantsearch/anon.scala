@@ -8,38 +8,36 @@ import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<react-instantsearch-dom.react-instantsearch-dom.SearchBoxProps> */
-  @js.native
   trait ReadonlySearchBoxProps extends StObject {
     
-    val autoFocus: js.UndefOr[Boolean] = js.native
+    val autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    val defaultRefinement: js.UndefOr[String] = js.native
+    val defaultRefinement: js.UndefOr[String] = js.undefined
     
-    val focusShortcuts: js.UndefOr[js.Array[String]] = js.native
+    val focusShortcuts: js.UndefOr[js.Array[String]] = js.undefined
     
-    val loadingIndicator: js.UndefOr[Element] = js.native
+    val loadingIndicator: js.UndefOr[Element] = js.undefined
     
-    val onChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event], _]] = js.native
+    val onChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event], js.Any]] = js.undefined
     
-    val onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], _]] = js.native
+    val onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], js.Any]] = js.undefined
     
-    val onSubmit: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], _]] = js.native
+    val onSubmit: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], js.Any]] = js.undefined
     
-    val reset: js.UndefOr[Element] = js.native
+    val reset: js.UndefOr[Element] = js.undefined
     
-    val searchAsYouType: js.UndefOr[Boolean] = js.native
+    val searchAsYouType: js.UndefOr[Boolean] = js.undefined
     
-    val showLoadingIndicator: js.UndefOr[Boolean] = js.native
+    val showLoadingIndicator: js.UndefOr[Boolean] = js.undefined
     
-    val submit: js.UndefOr[Element] = js.native
+    val submit: js.UndefOr[Element] = js.undefined
     
-    val translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]] = js.native
+    val translations: js.UndefOr[StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]] = js.undefined
   }
   object ReadonlySearchBoxProps {
     
@@ -80,19 +78,19 @@ object anon {
       def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => js.Any): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       @scala.inline
-      def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => js.Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -122,7 +120,7 @@ object anon {
       def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
       @scala.inline
-      def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+      def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ js.Any, js.Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
@@ -130,10 +128,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<react-instantsearch-dom.anon.Translations> */
-  @js.native
   trait ReadonlyTranslations extends StObject {
     
-    val translations: js.UndefOr[StringDictionary[js.Function2[/* n */ Double, /* ms */ Double, String]]] = js.native
+    val translations: js.UndefOr[StringDictionary[js.Function2[/* n */ Double, /* ms */ Double, String]]] = js.undefined
   }
   object ReadonlyTranslations {
     

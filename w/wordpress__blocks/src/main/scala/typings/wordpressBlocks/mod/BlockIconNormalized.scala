@@ -5,19 +5,17 @@ import typings.react.mod.ReactElement
 import typings.wordpressComponents.dashiconMod.Dashicon.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockIconNormalized extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var foreground: js.UndefOr[String] = js.native
+  var foreground: js.UndefOr[String] = js.undefined
   
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
-  var src: Icon | ReactElement | ComponentType[js.Object] = js.native
+  var src: Icon | ReactElement | ComponentType[js.Object]
 }
 object BlockIconNormalized {
   

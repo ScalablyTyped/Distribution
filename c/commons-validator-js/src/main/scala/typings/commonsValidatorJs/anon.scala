@@ -2,17 +2,15 @@ package typings.commonsValidatorJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowLocal extends StObject {
     
-    var allowLocal: Boolean = js.native
+    var allowLocal: Boolean
     
-    var allowTld: Boolean = js.native
+    var allowTld: Boolean
   }
   object AllowLocal {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AllowLocalBoolean extends StObject {
     
-    var allowLocal: Boolean = js.native
+    var allowLocal: Boolean
   }
   object AllowLocalBoolean {
     

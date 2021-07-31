@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object healthcareMod {
+  
+  @JSImport("googleapis/build/src/apis/healthcare", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -119,9 +122,12 @@ object healthcareMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/healthcare", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/healthcare", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -165,22 +171,19 @@ object healthcareMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare(options: Options): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = js.native
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): Healthcare = js.native
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare(options: typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Options): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = js.native
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare_v1alpha(version: v1alpha): Healthcare = js.native
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare_v1alpha2(version: v1alpha2): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = js.native
-  @JSImport("googleapis/build/src/apis/healthcare", "healthcare")
-  @js.native
-  def healthcare_v1beta1(version: v1beta1): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = js.native
+  @scala.inline
+  def healthcare(options: Options): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
+  @scala.inline
+  def healthcare(options: typings.googleapis.healthcareV1alphaMod.healthcareV1alpha.Options): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
+  @scala.inline
+  def healthcare(options: typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Options): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
+  
+  @scala.inline
+  def healthcare_v1alpha(version: v1alpha): Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[Healthcare]
+  
+  @scala.inline
+  def healthcare_v1alpha2(version: v1alpha2): typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare]
+  
+  @scala.inline
+  def healthcare_v1beta1(version: v1beta1): typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare = ^.asInstanceOf[js.Dynamic].applyDynamic("healthcare")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1.Healthcare]
 }

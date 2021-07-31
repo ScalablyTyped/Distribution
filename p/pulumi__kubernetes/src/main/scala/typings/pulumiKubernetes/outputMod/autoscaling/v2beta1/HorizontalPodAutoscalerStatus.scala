@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.autoscaling.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler.
   */
-@js.native
 trait HorizontalPodAutoscalerStatus extends StObject {
   
   /**
     * conditions is the set of conditions required for this autoscaler to scale its target, and indicates whether or not those conditions are met.
     */
-  var conditions: js.Array[HorizontalPodAutoscalerCondition] = js.native
+  var conditions: js.Array[HorizontalPodAutoscalerCondition]
   
   /**
     * currentMetrics is the last read state of the metrics used by this autoscaler.
     */
-  var currentMetrics: js.Array[MetricStatus] = js.native
+  var currentMetrics: js.Array[MetricStatus]
   
   /**
     * currentReplicas is current number of replicas of pods managed by this autoscaler, as last seen by the autoscaler.
     */
-  var currentReplicas: Double = js.native
+  var currentReplicas: Double
   
   /**
     * desiredReplicas is the desired number of replicas of pods managed by this autoscaler, as last calculated by the autoscaler.
     */
-  var desiredReplicas: Double = js.native
+  var desiredReplicas: Double
   
   /**
     * lastScaleTime is the last time the HorizontalPodAutoscaler scaled the number of pods, used by the autoscaler to control how often the number of pods is changed.
     */
-  var lastScaleTime: String = js.native
+  var lastScaleTime: String
   
   /**
     * observedGeneration is the most recent generation observed by this autoscaler.
     */
-  var observedGeneration: Double = js.native
+  var observedGeneration: Double
 }
 object HorizontalPodAutoscalerStatus {
   

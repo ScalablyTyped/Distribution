@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCTrackEventInit extends EventInit {
+trait RTCTrackEventInit
+  extends StObject
+     with EventInit {
   
-  var receiver: RTCRtpReceiver = js.native
+  var receiver: RTCRtpReceiver
   
-  var streams: js.UndefOr[js.Array[MediaStream]] = js.native
+  var streams: js.UndefOr[js.Array[MediaStream]] = js.undefined
   
-  var track: MediaStreamTrack = js.native
+  var track: MediaStreamTrack
   
-  var transceiver: RTCRtpTransceiver = js.native
+  var transceiver: RTCRtpTransceiver
 }
 object RTCTrackEventInit {
   

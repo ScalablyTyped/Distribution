@@ -2,21 +2,21 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CountryResponse extends Response {
+trait CountryResponse
+  extends StObject
+     with Response {
   
-  val continent: js.UndefOr[ContinentRecord] = js.native
+  val continent: js.UndefOr[ContinentRecord] = js.undefined
   
-  val country: js.UndefOr[CountryRecord] = js.native
+  val country: js.UndefOr[CountryRecord] = js.undefined
   
-  val registered_country: js.UndefOr[RegisteredCountryRecord] = js.native
+  val registered_country: js.UndefOr[RegisteredCountryRecord] = js.undefined
   
-  val represented_country: js.UndefOr[RepresentedCountryRecord] = js.native
+  val represented_country: js.UndefOr[RepresentedCountryRecord] = js.undefined
   
-  val traits: js.UndefOr[TraitsRecord] = js.native
+  val traits: js.UndefOr[TraitsRecord] = js.undefined
 }
 object CountryResponse {
   

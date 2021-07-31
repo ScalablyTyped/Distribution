@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolVerificationMessageTemplate extends StObject {
   
   /**
     * The default email option. Must be either `CONFIRM_WITH_CODE` or `CONFIRM_WITH_LINK`. Defaults to `CONFIRM_WITH_CODE`.
     */
-  var defaultEmailOption: js.UndefOr[String] = js.native
+  var defaultEmailOption: js.UndefOr[String] = js.undefined
   
   /**
     * The email message template. Must contain the `{####}` placeholder. Conflicts with `emailVerificationMessage` argument.
     */
-  var emailMessage: String = js.native
+  var emailMessage: String
   
   /**
     * The email message template for sending a confirmation link to the user, it must contain the `{##Click Here##}` placeholder.
     */
-  var emailMessageByLink: String = js.native
+  var emailMessageByLink: String
   
   /**
     * The subject line for the email message template. Conflicts with `emailVerificationSubject` argument.
     */
-  var emailSubject: String = js.native
+  var emailSubject: String
   
   /**
     * The subject line for the email message template for sending a confirmation link to the user.
     */
-  var emailSubjectByLink: String = js.native
+  var emailSubjectByLink: String
   
   /**
     * The SMS message template. Must contain the `{####}` placeholder. Conflicts with `smsVerificationMessage` argument.
     */
-  var smsMessage: String = js.native
+  var smsMessage: String
 }
 object UserPoolVerificationMessageTemplate {
   

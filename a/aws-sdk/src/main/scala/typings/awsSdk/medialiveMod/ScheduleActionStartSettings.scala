@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleActionStartSettings extends StObject {
   
   /**
     * Option for specifying the start time for an action.
     */
-  var FixedModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.FixedModeScheduleActionStartSettings] = js.native
+  var FixedModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.FixedModeScheduleActionStartSettings] = js.undefined
   
   /**
     * Option for specifying an action as relative to another action.
     */
-  var FollowModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.FollowModeScheduleActionStartSettings] = js.native
+  var FollowModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.FollowModeScheduleActionStartSettings] = js.undefined
   
   /**
     * Option for specifying an action that should be applied immediately.
     */
-  var ImmediateModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.ImmediateModeScheduleActionStartSettings] = js.native
+  var ImmediateModeScheduleActionStartSettings: js.UndefOr[typings.awsSdk.medialiveMod.ImmediateModeScheduleActionStartSettings] = js.undefined
 }
 object ScheduleActionStartSettings {
   

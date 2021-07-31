@@ -3,61 +3,57 @@ package typings.rxjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorTimeoutWithMod {
   
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
+  @JSImport("rxjs/operator/timeoutWith", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def timeoutWith[T](
     due: Double,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith[T](
     due: Double,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith[T](
     due: Date,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith[T](
     due: Date,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ js.Any,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
   def timeoutWith_TR[T, R](
     due: Double,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith_TR[T, R](
     due: Double,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith_TR[T, R](
     due: Date,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operator/timeoutWith", "timeoutWith")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
   def timeoutWith_TR[T, R](
     due: Date,
     withObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ js.Any,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeoutWith")(due.asInstanceOf[js.Any], withObservable.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

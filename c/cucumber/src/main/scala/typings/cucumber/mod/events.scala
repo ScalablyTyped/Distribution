@@ -3,17 +3,15 @@ package typings.cucumber.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
   
-  @js.native
   trait Event extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var name: String = js.native
+    var name: String
   }
   object Event {
     
@@ -35,25 +33,25 @@ object events {
   }
   
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait EventPayload extends StObject
   
-  @js.native
-  trait FeaturePayload extends EventPayload {
+  trait FeaturePayload
+    extends StObject
+       with EventPayload {
     
-    var description: String = js.native
+    var description: String
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var name: String = js.native
+    var name: String
     
-    var scenarios: js.Array[Scenario] = js.native
+    var scenarios: js.Array[Scenario]
     
-    var tags: js.Array[Tag] = js.native
+    var tags: js.Array[Tag]
     
-    var uri: String = js.native
+    var uri: String
   }
   object FeaturePayload {
     
@@ -103,15 +101,16 @@ object events {
     }
   }
   
-  @js.native
-  trait FeaturesPayload extends EventPayload {
+  trait FeaturesPayload
+    extends StObject
+       with EventPayload {
     
-    def getFeatures(): js.Array[_] = js.native
+    def getFeatures(): js.Array[js.Any]
   }
   object FeaturesPayload {
     
     @scala.inline
-    def apply(getFeatures: () => js.Array[_]): FeaturesPayload = {
+    def apply(getFeatures: () => js.Array[js.Any]): FeaturesPayload = {
       val __obj = js.Dynamic.literal(getFeatures = js.Any.fromFunction0(getFeatures))
       __obj.asInstanceOf[FeaturesPayload]
     }
@@ -120,30 +119,31 @@ object events {
     implicit class FeaturesPayloadMutableBuilder[Self <: FeaturesPayload] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetFeatures(value: () => js.Array[_]): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
+      def setGetFeatures(value: () => js.Array[js.Any]): Self = StObject.set(x, "getFeatures", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait FeaturesResultPayload extends EventPayload {
+  trait FeaturesResultPayload
+    extends StObject
+       with EventPayload {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var scenarioResults: js.Array[_] = js.native
+    var scenarioResults: js.Array[js.Any]
     
-    var stepsResults: js.Array[_] = js.native
+    var stepsResults: js.Array[js.Any]
     
-    var strict: Boolean = js.native
+    var strict: Boolean
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object FeaturesResultPayload {
     
     @scala.inline
     def apply(
       duration: Double,
-      scenarioResults: js.Array[_],
-      stepsResults: js.Array[_],
+      scenarioResults: js.Array[js.Any],
+      stepsResults: js.Array[js.Any],
       strict: Boolean,
       success: Boolean
     ): FeaturesResultPayload = {
@@ -158,13 +158,13 @@ object events {
       def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setScenarioResults(value: js.Array[_]): Self = StObject.set(x, "scenarioResults", value.asInstanceOf[js.Any])
+      def setScenarioResults(value: js.Array[js.Any]): Self = StObject.set(x, "scenarioResults", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScenarioResultsVarargs(value: js.Any*): Self = StObject.set(x, "scenarioResults", js.Array(value :_*))
       
       @scala.inline
-      def setStepsResults(value: js.Array[_]): Self = StObject.set(x, "stepsResults", value.asInstanceOf[js.Any])
+      def setStepsResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepsResults", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStepsResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepsResults", js.Array(value :_*))
@@ -177,28 +177,29 @@ object events {
     }
   }
   
-  @js.native
-  trait ScenarioPayload extends EventPayload {
+  trait ScenarioPayload
+    extends StObject
+       with EventPayload {
     
-    var description: String = js.native
+    var description: String
     
-    var exception: Error = js.native
+    var exception: Error
     
-    var feature: Feature = js.native
+    var feature: Feature
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var lines: js.Array[Double] = js.native
+    var lines: js.Array[Double]
     
-    var name: String = js.native
+    var name: String
     
-    var steps: js.Array[Step] = js.native
+    var steps: js.Array[Step]
     
-    var tags: js.Array[Tag] = js.native
+    var tags: js.Array[Tag]
     
-    var uri: String = js.native
+    var uri: String
   }
   object ScenarioPayload {
     
@@ -263,18 +264,19 @@ object events {
     }
   }
   
-  @js.native
-  trait ScenarioResultPayload extends EventPayload {
+  trait ScenarioResultPayload
+    extends StObject
+       with EventPayload {
     
-    var duration: js.Any = js.native
+    var duration: js.Any
     
-    var failureException: Error = js.native
+    var failureException: Error
     
-    var scenario: Scenario = js.native
+    var scenario: Scenario
     
-    var status: Status = js.native
+    var status: Status
     
-    var stepResults: js.Array[_] = js.native
+    var stepResults: js.Array[js.Any]
   }
   object ScenarioResultPayload {
     
@@ -284,7 +286,7 @@ object events {
       failureException: Error,
       scenario: Scenario,
       status: Status,
-      stepResults: js.Array[_]
+      stepResults: js.Array[js.Any]
     ): ScenarioResultPayload = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], failureException = failureException.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stepResults = stepResults.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScenarioResultPayload]
@@ -306,31 +308,32 @@ object events {
       def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStepResults(value: js.Array[_]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
+      def setStepResults(value: js.Array[js.Any]): Self = StObject.set(x, "stepResults", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStepResultsVarargs(value: js.Any*): Self = StObject.set(x, "stepResults", js.Array(value :_*))
     }
   }
   
-  @js.native
-  trait StepPayload extends EventPayload {
+  trait StepPayload
+    extends StObject
+       with EventPayload {
     
-    var arguments: js.Any = js.native
+    var arguments: js.Any
     
-    var isBackground: Boolean = js.native
+    var isBackground: Boolean
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var keywordType: String = js.native
+    var keywordType: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var name: String = js.native
+    var name: String
     
-    var scenario: Scenario = js.native
+    var scenario: Scenario
     
-    var uri: String = js.native
+    var uri: String
   }
   object StepPayload {
     
@@ -378,29 +381,30 @@ object events {
     }
   }
   
-  @js.native
-  trait StepResultPayload extends EventPayload {
+  trait StepResultPayload
+    extends StObject
+       with EventPayload {
     
-    var ambiguousStepDefinitions: js.Any = js.native
+    var ambiguousStepDefinitions: js.Any
     
-    var attachments: js.Array[_] = js.native
+    var attachments: js.Array[js.Any]
     
-    var duration: js.Any = js.native
+    var duration: js.Any
     
-    var failureException: Error = js.native
+    var failureException: Error
     
-    var status: Status = js.native
+    var status: Status
     
-    var step: Step = js.native
+    var step: Step
     
-    var stepDefinition: StepDefinition = js.native
+    var stepDefinition: StepDefinition
   }
   object StepResultPayload {
     
     @scala.inline
     def apply(
       ambiguousStepDefinitions: js.Any,
-      attachments: js.Array[_],
+      attachments: js.Array[js.Any],
       duration: js.Any,
       failureException: Error,
       status: Status,
@@ -418,7 +422,7 @@ object events {
       def setAmbiguousStepDefinitions(value: js.Any): Self = StObject.set(x, "ambiguousStepDefinitions", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))

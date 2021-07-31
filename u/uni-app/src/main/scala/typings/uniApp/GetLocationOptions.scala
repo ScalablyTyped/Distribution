@@ -2,41 +2,39 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLocationOptions extends StObject {
   
   /**
     * 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度
     */
-  var altitude: js.UndefOr[Boolean] = js.native
+  var altitude: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 传入 true 会解析地址
     */
-  var geocode: js.UndefOr[Boolean] = js.native
+  var geocode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ GetLocationSuccess, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ GetLocationSuccess, Unit]] = js.undefined
   
   /**
     * 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于uni.openLocation的坐标
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GetLocationOptions {
   

@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificateResponse extends StObject {
   
-  var tableNames: js.Array[String] = js.native
+  var tableNames: js.Array[String]
 }
 object GetCertificateResponse {
   

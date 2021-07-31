@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains lists of property names for different appointment types.
   */
-@js.native
 trait AppointmentPropertyNames extends StObject {
   
   /**
     * Gets the list of properties characteristic for appointments of the ASPxAppointmentType.Normal type.
     */
-  var Normal: String = js.native
+  var Normal: String
   
   /**
     * Gets the list of properties characteristic for appointments of the ASPxAppointmentType.Pattern type.
     */
-  var Pattern: String = js.native
+  var Pattern: String
 }
 object AppointmentPropertyNames {
   

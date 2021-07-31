@@ -2,29 +2,27 @@ package typings.pulumiAws.outputMod.elasticloadbalancingv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTargetGroupHealthCheck extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var healthyThreshold: Double = js.native
+  var healthyThreshold: Double
   
-  var interval: Double = js.native
+  var interval: Double
   
-  var matcher: String = js.native
+  var matcher: String
   
-  var path: String = js.native
+  var path: String
   
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var timeout: Double = js.native
+  var timeout: Double
   
-  var unhealthyThreshold: Double = js.native
+  var unhealthyThreshold: Double
 }
 object GetTargetGroupHealthCheck {
   

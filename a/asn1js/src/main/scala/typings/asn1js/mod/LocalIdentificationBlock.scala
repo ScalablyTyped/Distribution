@@ -2,7 +2,6 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "LocalIdentificationBlock")
@@ -26,5 +25,5 @@ class LocalIdentificationBlock ()
     * @memberOf LocalBaseBlock
     */
   /* InferMemberOverrides */
-  override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
+  override def toJSON(): JsonLocalBaseBlock & js.Any = js.native
 }

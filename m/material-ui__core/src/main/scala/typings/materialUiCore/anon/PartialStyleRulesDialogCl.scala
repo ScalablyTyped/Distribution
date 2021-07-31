@@ -3,40 +3,38 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Dialog.DialogClassKey>> */
-@js.native
 trait PartialStyleRulesDialogCl extends StObject {
   
-  var container: js.UndefOr[CSSProperties] = js.native
+  var container: js.UndefOr[CSSProperties] = js.undefined
   
-  var paper: js.UndefOr[CSSProperties] = js.native
+  var paper: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperFullScreen: js.UndefOr[CSSProperties] = js.native
+  var paperFullScreen: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperFullWidth: js.UndefOr[CSSProperties] = js.native
+  var paperFullWidth: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperScrollBody: js.UndefOr[CSSProperties] = js.native
+  var paperScrollBody: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperScrollPaper: js.UndefOr[CSSProperties] = js.native
+  var paperScrollPaper: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperWidthLg: js.UndefOr[CSSProperties] = js.native
+  var paperWidthLg: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperWidthMd: js.UndefOr[CSSProperties] = js.native
+  var paperWidthMd: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperWidthSm: js.UndefOr[CSSProperties] = js.native
+  var paperWidthSm: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperWidthXl: js.UndefOr[CSSProperties] = js.native
+  var paperWidthXl: js.UndefOr[CSSProperties] = js.undefined
   
-  var paperWidthXs: js.UndefOr[CSSProperties] = js.native
+  var paperWidthXs: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var scrollBody: js.UndefOr[CSSProperties] = js.native
+  var scrollBody: js.UndefOr[CSSProperties] = js.undefined
   
-  var scrollPaper: js.UndefOr[CSSProperties] = js.native
+  var scrollPaper: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesDialogCl {
   

@@ -3,120 +3,120 @@ package typings.sharepoint.SPClientTemplates
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListSchemaInView extends ListSchema {
+trait ListSchemaInView
+  extends StObject
+     with ListSchema {
   
   /** Key-value object that represents all aggregations defined for the view.
     Key specifies the field internal name, and value specifies the type of the aggregation. */
-  var Aggregate: StringDictionary[String] = js.native
+  var Aggregate: StringDictionary[String]
   
   /** Either "TRUE" or false (for grouping) */
-  var Collapse: String = js.native
+  var Collapse: String
   
   /** Specifies whether to open items in a client application ("1") or in browser ("0"). */
-  var DefaultItemOpen: String = js.native
+  var DefaultItemOpen: String
   
-  var Direction: String = js.native
+  var Direction: String
   
   /** Either "0" or "1" */
-  var EffectivePresenceEnabled: String = js.native
+  var EffectivePresenceEnabled: String
   
   /** If in grid mode (context.inGridMode == true), cast to FieldSchema_InForm[], otherwise cast to FieldSchema_InView[] */
-  var FieldSortParam: String = js.native
+  var FieldSortParam: String
   
-  var Filter: js.Any = js.native
+  var Filter: js.Any
   
   /** Either "0" or "1" */
-  var ForceCheckout: String = js.native
+  var ForceCheckout: String
   
   /** "1" if the view contains "Title" field, otherwise not defined. */
-  var HasTitle: String = js.native
+  var HasTitle: String
   
-  var HttpVDir: String = js.native
-  
-  /** Either "0" or "1" */
-  var InplaceSearchEnabled: String = js.native
+  var HttpVDir: String
   
   /** Either "0" or "1" */
-  var IsDocLib: String = js.native
+  var InplaceSearchEnabled: String
+  
+  /** Either "0" or "1" */
+  var IsDocLib: String
   
   /** e.g. "1033" */
-  var LCID: String = js.native
+  var LCID: String
   
   /** Either "0" or "1" */
-  var ListRight_AddListItems: String = js.native
+  var ListRight_AddListItems: String
   
-  var NoListItem: String = js.native
+  var NoListItem: String
   
-  var NoListItemHowTo: String = js.native
+  var NoListItemHowTo: String
   
   /** Server-relative path to the current page */
-  var PagePath: String = js.native
+  var PagePath: String
   
   /** Internal name of the field inside which the hierarchy buttons are displayed */
-  var ParentHierarchyDisplayField: String = js.native
+  var ParentHierarchyDisplayField: String
   
-  var PresenceAlt: String = js.native
+  var PresenceAlt: String
   
   /** Represents SPList.RootFolder.Properties. Exists only if SPList.FetchPropertyBagForListView property is set to true. */
-  var PropertyBag: StringDictionary[String] = js.native
+  var PropertyBag: StringDictionary[String]
   
   /** Either "True" or "False" */
-  var RenderSaveAsNewViewButton: String = js.native
+  var RenderSaveAsNewViewButton: String
   
   /** Either "True" or "False" */
-  var RenderViewSelectorPivotMenu: String = js.native
+  var RenderViewSelectorPivotMenu: String
   
   /** Either "True" or "False" */
-  var RenderViewSelectorPivotMenuAsync: String = js.native
+  var RenderViewSelectorPivotMenuAsync: String
   
   /** Query string parameters that specify GUID of the current view and the current root folder */
-  var RootFolderParam: String = js.native
+  var RootFolderParam: String
   
-  var SelectedID: String = js.native
+  var SelectedID: String
   
   // number
-  var ShowWebPart: String = js.native
+  var ShowWebPart: String
   
   /** Either "1" or undefined. */
-  var StrikeThroughOnCompletedEnabled: String = js.native
+  var StrikeThroughOnCompletedEnabled: String
   
   /** Either "0" or "1" */
-  var TabularView: String = js.native
+  var TabularView: String
   
-  var Toolbar: String = js.native
+  var Toolbar: String
   
-  var UIVersion: String = js.native
+  var UIVersion: String
   
   /** Either "1" or "" */
-  var UseParentHierarchy: String = js.native
+  var UseParentHierarchy: String
   
   /** Server relative path to "/_layouts/userdisp.aspx" in the current web */
-  var UserDispUrl: String = js.native
+  var UserDispUrl: String
   
   // number
-  var UserVanilla: js.Any = js.native
+  var UserVanilla: js.Any
   
   // number
-  var Userid: String = js.native
+  var Userid: String
   
   /** Guid of the view */
-  var View: String = js.native
+  var View: String
   
   /** JSON string */
-  var ViewSelectorPivotMenuOptions: String = js.native
+  var ViewSelectorPivotMenuOptions: String
   
   /** Query string parameters that specify current root folder (RootFolder) and folder content type id (FolderCTID) */
-  var ViewSelector_ViewParameters: String = js.native
+  var ViewSelector_ViewParameters: String
   
   /** Internal name for the first group by field, if any */
-  var group1: String = js.native
+  var group1: String
   
   /** Internal name for the second group by field, if any */
-  var group2: String = js.native
+  var group2: String
 }
 object ListSchemaInView {
   

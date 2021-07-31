@@ -4,17 +4,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conv3DBackpropFilterAttrs extends StObject {
   
-  var filterShape: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+  var filterShape: js.Tuple5[Double, Double, Double, Double, Double]
   
-  var pad: valid_ | same_ = js.native
+  var pad: valid_ | same_
   
-  var strides: (js.Tuple3[Double, Double, Double]) | Double = js.native
+  var strides: (js.Tuple3[Double, Double, Double]) | Double
 }
 object Conv3DBackpropFilterAttrs {
   

@@ -10,10 +10,10 @@ Extended regular expressions
 | ------------------ | :-------------: |
 | Full name          | xregexp |
 | Keywords           | regex, regexp, regular expression, unicode |
-| # releases         | 5 |
-| # dependents       | 479 |
-| # downloads        | 233980392 |
-| # stars            | 31 |
+| # releases         | 4 |
+| # dependents       | 503 |
+| # downloads        | 276161186 |
+| # stars            | 32 |
 
 ## Links
 - [Homepage](http://xregexp.com/)

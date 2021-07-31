@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object SmsMessageClass extends StObject {
   
   /** Message should be immediately displayed. */
   @js.native
-  sealed trait class0 extends SmsMessageClass
+  sealed trait class0
+    extends StObject
+       with SmsMessageClass
   
   /** Mobile equipment (ME) specific message. */
   @js.native
-  sealed trait class1 extends SmsMessageClass
+  sealed trait class1
+    extends StObject
+       with SmsMessageClass
   
   /** SIM specific message. */
   @js.native
-  sealed trait class2 extends SmsMessageClass
+  sealed trait class2
+    extends StObject
+       with SmsMessageClass
   
   /** Terminal equipment (TE) specific message. Note that this message type is not currently supported. */
   @js.native
-  sealed trait class3 extends SmsMessageClass
+  sealed trait class3
+    extends StObject
+       with SmsMessageClass
   
   /** No class was specified. */
   @js.native
-  sealed trait none extends SmsMessageClass
+  sealed trait none
+    extends StObject
+       with SmsMessageClass
 }

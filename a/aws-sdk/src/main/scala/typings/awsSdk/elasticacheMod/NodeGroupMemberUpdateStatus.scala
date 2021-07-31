@@ -2,56 +2,54 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupMemberUpdateStatus extends StObject {
   
   /**
     * The cache cluster ID
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The node ID of the cache cluster
     */
-  var CacheNodeId: js.UndefOr[String] = js.native
+  var CacheNodeId: js.UndefOr[String] = js.undefined
   
   /**
     * The deletion date of the node
     */
-  var NodeDeletionDate: js.UndefOr[TStamp] = js.native
+  var NodeDeletionDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The end date of the update for a node
     */
-  var NodeUpdateEndDate: js.UndefOr[TStamp] = js.native
+  var NodeUpdateEndDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Reflects whether the update was initiated by the customer or automatically applied
     */
-  var NodeUpdateInitiatedBy: js.UndefOr[typings.awsSdk.elasticacheMod.NodeUpdateInitiatedBy] = js.native
+  var NodeUpdateInitiatedBy: js.UndefOr[typings.awsSdk.elasticacheMod.NodeUpdateInitiatedBy] = js.undefined
   
   /**
     * The date when the update is triggered
     */
-  var NodeUpdateInitiatedDate: js.UndefOr[TStamp] = js.native
+  var NodeUpdateInitiatedDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The start date of the update for a node
     */
-  var NodeUpdateStartDate: js.UndefOr[TStamp] = js.native
+  var NodeUpdateStartDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The update status of the node
     */
-  var NodeUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.NodeUpdateStatus] = js.native
+  var NodeUpdateStatus: js.UndefOr[typings.awsSdk.elasticacheMod.NodeUpdateStatus] = js.undefined
   
   /**
     * The date when the NodeUpdateStatus was last modified
     */
-  var NodeUpdateStatusModifiedDate: js.UndefOr[TStamp] = js.native
+  var NodeUpdateStatusModifiedDate: js.UndefOr[TStamp] = js.undefined
 }
 object NodeGroupMemberUpdateStatus {
   

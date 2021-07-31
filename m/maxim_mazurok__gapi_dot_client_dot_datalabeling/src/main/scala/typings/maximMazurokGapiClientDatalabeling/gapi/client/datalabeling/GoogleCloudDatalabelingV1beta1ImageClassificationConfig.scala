@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1ImageClassificationConfig extends StObject {
   
   /** Optional. If allow_multi_label is true, contributors are able to choose multiple labels for one image. */
-  var allowMultiLabel: js.UndefOr[Boolean] = js.native
+  var allowMultiLabel: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Annotation spec set resource name. */
-  var annotationSpecSet: js.UndefOr[String] = js.native
+  var annotationSpecSet: js.UndefOr[String] = js.undefined
   
   /** Optional. The type of how to aggregate answers. */
-  var answerAggregationType: js.UndefOr[String] = js.native
+  var answerAggregationType: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1ImageClassificationConfig {
   

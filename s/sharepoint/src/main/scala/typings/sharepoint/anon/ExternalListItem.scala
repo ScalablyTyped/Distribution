@@ -2,19 +2,17 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalListItem extends StObject {
   
-  var ExternalListItem: Boolean = js.native
+  var ExternalListItem: Boolean
   
-  var FsObjType: Double = js.native
+  var FsObjType: Double
   
-  var Id: Double = js.native
+  var Id: Double
   
-  var Url: String = js.native
+  var Url: String
 }
 object ExternalListItem {
   

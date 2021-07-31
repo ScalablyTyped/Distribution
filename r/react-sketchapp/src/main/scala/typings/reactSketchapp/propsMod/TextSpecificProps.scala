@@ -2,27 +2,26 @@ package typings.reactSketchapp.propsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextSpecificProps
-  extends PathProps
+  extends StObject
+     with PathProps
      with FontProps {
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.native
+  var alignmentBaseline: js.UndefOr[AlignmentBaseline] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShift] = js.native
+  var baselineShift: js.UndefOr[BaselineShift] = js.undefined
   
-  var fontData: js.UndefOr[js.Object] = js.native
+  var fontData: js.UndefOr[js.Object] = js.undefined
   
-  var fontFeatureSettings: js.UndefOr[FontFeatureSettings] = js.native
+  var fontFeatureSettings: js.UndefOr[FontFeatureSettings] = js.undefined
   
-  var lengthAdjust: js.UndefOr[LengthAdjust] = js.native
+  var lengthAdjust: js.UndefOr[LengthAdjust] = js.undefined
   
-  var textLength: js.UndefOr[TextLength] = js.native
+  var textLength: js.UndefOr[TextLength] = js.undefined
   
-  var verticalAlign: js.UndefOr[VerticalAlign] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlign] = js.undefined
 }
 object TextSpecificProps {
   

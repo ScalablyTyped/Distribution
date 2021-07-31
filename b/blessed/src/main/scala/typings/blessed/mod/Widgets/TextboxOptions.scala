@@ -2,21 +2,21 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextboxOptions extends TextareaOptions {
+trait TextboxOptions
+  extends StObject
+     with TextareaOptions {
   
   /**
     * Replace text with asterisks (*).
     */
-  var censor: js.UndefOr[Boolean] = js.native
+  var censor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Completely hide text.
     */
-  var secret: js.UndefOr[Boolean] = js.native
+  var secret: js.UndefOr[Boolean] = js.undefined
 }
 object TextboxOptions {
   

@@ -9,55 +9,54 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardTitleTypesMod {
   
-  @js.native
   trait IDocumentCardTitle extends StObject
   
-  @js.native
-  trait IDocumentCardTitleProps extends ClassAttributes[DocumentCardTitleBase] {
+  trait IDocumentCardTitleProps
+    extends StObject
+       with ClassAttributes[DocumentCardTitleBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardTitle]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardTitle]] = js.undefined
     
     /**
       * Whether we truncate the title to fit within the box. May have a performance impact.
       * @defaultvalue true
       */
-    var shouldTruncate: js.UndefOr[Boolean] = js.native
+    var shouldTruncate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether show as title as secondary title style such as smaller font and lighter color.
       * @defaultvalue false
       */
-    var showAsSecondaryTitle: js.UndefOr[Boolean] = js.native
+    var showAsSecondaryTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDocumentCardTitleStyleProps, IDocumentCardTitleStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Title text.
       * If the card represents more than one document, this should be the title of one document and a "+X" string.
       * For example, a collection of four documents would have a string of "Document.docx +3".
       */
-    var title: String = js.native
+    var title: String
   }
   object IDocumentCardTitleProps {
     
@@ -117,23 +116,22 @@ object documentCardTitleTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardTitleStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Is this a secondary title?
       */
-    var showAsSecondaryTitle: js.UndefOr[Boolean] = js.native
+    var showAsSecondaryTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardTitleStyleProps {
     
@@ -163,10 +161,9 @@ object documentCardTitleTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardTitleStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardTitleStyles {
     

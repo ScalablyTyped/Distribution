@@ -3,17 +3,16 @@ package typings.actionsOnGoogle.v1Mod
 import typings.actionsOnGoogle.actionsOnGoogleNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageQuickReplies
-  extends DialogflowV1BaseMessage[`2`]
+  extends StObject
+     with DialogflowV1BaseMessage[`2`]
      with DialogflowV1Message {
   
-  var replies: js.UndefOr[js.Array[String]] = js.native
+  var replies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageQuickReplies {
   

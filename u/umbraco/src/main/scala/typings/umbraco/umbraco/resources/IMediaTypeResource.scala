@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @name umbraco.resources.mediaTypeResource
   * @description Loads in data for media types
   **/
-@js.native
 trait IMediaTypeResource extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait IMediaTypeResource extends StObject {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def getAllowedTypes(mediaId: Double): IPromise[IResourcePromise] = js.native
+  def getAllowedTypes(mediaId: Double): IPromise[IResourcePromise]
 }
 object IMediaTypeResource {
   

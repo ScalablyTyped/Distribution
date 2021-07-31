@@ -2,10 +2,8 @@ package typings.vegaLite.channeldefMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BandMixins extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait BandMixins extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
 }
 object BandMixins {
   

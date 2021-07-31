@@ -2,41 +2,39 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TimePicker
-@js.native
 trait TimePickerSettings extends StObject {
   
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var footer: js.UndefOr[Boolean] = js.native
+  var footer: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[Boolean] = js.native
+  var header: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, _]] = js.native
+  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, js.Any]] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TimePickerSettings {
   
@@ -50,13 +48,13 @@ object TimePickerSettings {
   implicit class TimePickerSettingsMutableBuilder[Self <: TimePickerSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChange(value: /* e */ js.Any => _): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    def setChange(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
     @scala.inline
-    def setClose(value: /* e */ js.Any => _): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    def setClose(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
@@ -98,13 +96,13 @@ object TimePickerSettings {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOpen(value: /* e */ js.Any => _): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    def setOpen(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
     @scala.inline
-    def setSelect(value: (/* e */ js.Any, /* type */ String) => _): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    def setSelect(value: (/* e */ js.Any, /* type */ String) => js.Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)

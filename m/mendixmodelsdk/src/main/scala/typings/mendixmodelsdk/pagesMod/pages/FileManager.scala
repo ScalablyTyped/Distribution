@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -55,9 +54,8 @@ object FileManager {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.create")
-  @js.native
-  def create(model: IModel): FileManager = js.native
+  @scala.inline
+  def create(model: IModel): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -68,9 +66,8 @@ object FileManager {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): FileManager = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -81,9 +78,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): FileManager = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -94,9 +90,8 @@ object FileManager {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): FileManager = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -107,9 +102,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): FileManager = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -120,9 +114,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): FileManager = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -133,9 +126,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): FileManager = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -146,9 +138,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): FileManager = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -159,9 +150,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): FileManager = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -172,9 +162,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): FileManager = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -185,9 +174,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): FileManager = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -198,9 +186,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): FileManager = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -211,9 +198,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): FileManager = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -224,9 +210,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): FileManager = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -237,9 +222,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): FileManager = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -250,9 +234,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): FileManager = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -263,9 +246,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): FileManager = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -276,9 +258,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): FileManager = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -289,9 +270,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): FileManager = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -302,9 +282,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): FileManager = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -315,9 +294,8 @@ object FileManager {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): FileManager = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -328,9 +306,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): FileManager = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -341,9 +318,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): FileManager = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -354,9 +330,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): FileManager = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -367,9 +342,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): FileManager = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -380,9 +354,8 @@ object FileManager {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): FileManager = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -393,9 +366,8 @@ object FileManager {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): FileManager = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -406,9 +378,8 @@ object FileManager {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): FileManager = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -419,9 +390,8 @@ object FileManager {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): FileManager = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -432,9 +402,8 @@ object FileManager {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): FileManager = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -445,9 +414,8 @@ object FileManager {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): FileManager = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -458,9 +426,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): FileManager = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -471,9 +438,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): FileManager = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -484,9 +450,8 @@ object FileManager {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): FileManager = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -497,9 +462,8 @@ object FileManager {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): FileManager = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -510,9 +474,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): FileManager = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -523,9 +486,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): FileManager = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -536,9 +498,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): FileManager = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -549,9 +510,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): FileManager = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -562,9 +522,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): FileManager = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -575,9 +534,8 @@ object FileManager {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): FileManager = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -588,9 +546,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): FileManager = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -601,9 +558,8 @@ object FileManager {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): FileManager = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -614,9 +570,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): FileManager = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -627,9 +582,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): FileManager = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -640,9 +594,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): FileManager = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -653,9 +606,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): FileManager = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -666,9 +618,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): FileManager = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -679,9 +630,8 @@ object FileManager {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): FileManager = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -692,9 +642,8 @@ object FileManager {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): FileManager = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -705,9 +654,8 @@ object FileManager {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): FileManager = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /**
     * Creates and returns a new FileManager instance in the SDK and on the server.
@@ -718,9 +666,8 @@ object FileManager {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): FileManager = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): FileManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[FileManager]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FileManager.structureTypeName")

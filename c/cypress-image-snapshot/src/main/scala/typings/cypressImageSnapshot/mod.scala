@@ -13,54 +13,52 @@ import typings.cypressImageSnapshot.cypressImageSnapshotStrings.viewport
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined parent std.Partial<{  blackout :std.Array<string>,   capture :'runner' | 'viewport' | 'fullPage',   clip :{  x :number,   y :number,   width :number,   height :number},   disableTimersAndAnimations :boolean,   padding :number | [number] | [number, number] | [number, number, number] | [number, number, number, number],   scale :boolean, beforeScreenshot (doc : std.Document): void, afterScreenshot (doc : std.Document): void,   customDiffConfig :{ readonly threshold :number | undefined,  readonly includeAA :boolean | undefined} | undefined,   customSnapshotsDir :string | undefined,   customDiffDir :string | undefined,   customSnapshotIdentifier :(parameters : {  testPath :string,   currentTestName :string,   counter :number,   defaultIdentifier :string}): string | string | undefined,   diffDirection :'horizontal' | 'vertical' | undefined,   noColors :boolean | undefined,   failureThreshold :number | undefined,   failureThresholdType :'pixel' | 'percent' | undefined,   updatePassedSnapshot :boolean | undefined,   blur :number | undefined,   runInProcess :boolean | undefined}> */
-  @js.native
   trait Options extends StObject {
     
-    var afterScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.native
+    var afterScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.undefined
     
-    var beforeScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.native
+    var beforeScreenshot: js.UndefOr[js.Function1[/* doc */ Document, Unit]] = js.undefined
     
-    var blackout: js.UndefOr[js.Array[String]] = js.native
+    var blackout: js.UndefOr[js.Array[String]] = js.undefined
     
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
-    var capture: js.UndefOr[runner | viewport | fullPage] = js.native
+    var capture: js.UndefOr[runner | viewport | fullPage] = js.undefined
     
-    var clip: js.UndefOr[Height] = js.native
+    var clip: js.UndefOr[Height] = js.undefined
     
-    var customDiffConfig: js.UndefOr[IncludeAA] = js.native
+    var customDiffConfig: js.UndefOr[IncludeAA] = js.undefined
     
-    var customDiffDir: js.UndefOr[String] = js.native
+    var customDiffDir: js.UndefOr[String] = js.undefined
     
-    var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.native
+    var customSnapshotIdentifier: js.UndefOr[(js.Function1[/* parameters */ Counter, String]) | String] = js.undefined
     
-    var customSnapshotsDir: js.UndefOr[String] = js.native
+    var customSnapshotsDir: js.UndefOr[String] = js.undefined
     
-    var diffDirection: js.UndefOr[horizontal | vertical] = js.native
+    var diffDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var disableTimersAndAnimations: js.UndefOr[Boolean] = js.native
+    var disableTimersAndAnimations: js.UndefOr[Boolean] = js.undefined
     
-    var failureThreshold: js.UndefOr[Double] = js.native
+    var failureThreshold: js.UndefOr[Double] = js.undefined
     
-    var failureThresholdType: js.UndefOr[pixel | percent] = js.native
+    var failureThresholdType: js.UndefOr[pixel | percent] = js.undefined
     
-    var noColors: js.UndefOr[Boolean] = js.native
+    var noColors: js.UndefOr[Boolean] = js.undefined
     
     var padding: js.UndefOr[
         Double | js.Array[Double] | (js.Tuple2[Double, Double]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var runInProcess: js.UndefOr[Boolean] = js.native
+    var runInProcess: js.UndefOr[Boolean] = js.undefined
     
-    var scale: js.UndefOr[Boolean] = js.native
+    var scale: js.UndefOr[Boolean] = js.undefined
     
-    var updatePassedSnapshot: js.UndefOr[Boolean] = js.native
+    var updatePassedSnapshot: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -6,7 +6,6 @@ import typings.xdate.mod.^
 import typings.xdate.mod.formattersInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-calendars", "LocaleConfig")
@@ -51,96 +50,12 @@ class LocaleConfig () extends ^ {
     */
   def this(year: Double, month: Double, date: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double) = this()
-  def this(year: Double, month: Double, date: Double, hours: js.UndefOr[scala.Nothing], minutes: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double, minutes: Double) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double,
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    milliseconds: Double
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double
-  ) = this()
+  def this(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double) = this()
   def this(
     year: Double,
     month: Double,
@@ -154,77 +69,70 @@ class LocaleConfig () extends ^ {
     year: Double,
     month: Double,
     date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: js.UndefOr[scala.Nothing],
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double,
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    milliseconds: js.UndefOr[scala.Nothing],
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    milliseconds: Double,
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: js.UndefOr[scala.Nothing],
+    hours: Double,
     minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: js.UndefOr[scala.Nothing],
-    utcmode: Boolean
+    seconds: Unit,
+    milliseconds: Double
   ) = this()
   def this(
     year: Double,
     month: Double,
     date: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double,
-    utcmode: Boolean
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double
   ) = this()
   def this(
     year: Double,
     month: Double,
     date: Double,
-    hours: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
     minutes: Double,
     seconds: Double,
-    milliseconds: js.UndefOr[scala.Nothing],
-    utcmode: Boolean
+    milliseconds: Double
   ) = this()
   def this(
     year: Double,
     month: Double,
     date: Double,
-    hours: js.UndefOr[scala.Nothing],
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
     minutes: Double,
     seconds: Double,
     milliseconds: Double,
@@ -235,29 +143,9 @@ class LocaleConfig () extends ^ {
     month: Double,
     date: Double,
     hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: js.UndefOr[scala.Nothing],
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: Double,
-    utcmode: Boolean
-  ) = this()
-  def this(
-    year: Double,
-    month: Double,
-    date: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
+    minutes: Double,
     seconds: Double,
-    milliseconds: js.UndefOr[scala.Nothing],
+    milliseconds: Unit,
     utcmode: Boolean
   ) = this()
   def this(
@@ -265,8 +153,8 @@ class LocaleConfig () extends ^ {
     month: Double,
     date: Double,
     hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
+    minutes: Double,
+    seconds: Unit,
     milliseconds: Double,
     utcmode: Boolean
   ) = this()
@@ -276,8 +164,8 @@ class LocaleConfig () extends ^ {
     date: Double,
     hours: Double,
     minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    milliseconds: js.UndefOr[scala.Nothing],
+    seconds: Unit,
+    milliseconds: Unit,
     utcmode: Boolean
   ) = this()
   def this(
@@ -285,8 +173,28 @@ class LocaleConfig () extends ^ {
     month: Double,
     date: Double,
     hours: Double,
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Unit,
     milliseconds: Double,
     utcmode: Boolean
   ) = this()
@@ -295,19 +203,89 @@ class LocaleConfig () extends ^ {
     month: Double,
     date: Double,
     hours: Double,
-    minutes: Double,
-    seconds: Double,
-    milliseconds: js.UndefOr[scala.Nothing],
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Unit,
     utcmode: Boolean
   ) = this()
   def this(
     year: Double,
     month: Double,
     date: Double,
-    hours: Double,
+    hours: Unit,
     minutes: Double,
     seconds: Double,
     milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Unit,
     utcmode: Boolean
   ) = this()
 }
@@ -321,8 +299,7 @@ object LocaleConfig {
     *Returns a milliseconds time since the epoch for the given UTC date
     */
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
+  @scala.inline
   def UTC(
     year: Double,
     month: Double,
@@ -331,132 +308,64 @@ object LocaleConfig {
     minutes: Double,
     seconds: Double,
     milliseconds: Double
-  ): XDate = js.native
+  ): XDate = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], date.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[XDate]
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(year: Double, month: Double, day: Double): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def UTC(
     year: Double,
     month: Double,
     day: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Double,
+    seconds: Unit,
     ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def UTC(
     year: Double,
     month: Double,
     day: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: js.UndefOr[scala.Nothing],
+    hours: Double,
+    minutes: Unit,
     seconds: Double,
     ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(year: Double, month: Double, day: Double, hours: js.UndefOr[scala.Nothing], minutes: Double): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def UTC(
     year: Double,
     month: Double,
     day: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: js.UndefOr[scala.Nothing],
-    minutes: Double,
-    seconds: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: js.UndefOr[scala.Nothing],
+    hours: Unit,
     minutes: Double,
     seconds: Double,
     ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: Double,
-    minutes: js.UndefOr[scala.Nothing],
-    seconds: Double,
-    ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(
-    year: Double,
-    month: Double,
-    day: Double,
-    hours: Double,
-    minutes: Double,
-    seconds: js.UndefOr[scala.Nothing],
-    ms: Double
-  ): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
-  @JSImport("react-native-calendars", "LocaleConfig.UTC")
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Double, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Double, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def UTC(year: Double, month: Double, day: Double, hours: Unit, minutes: Unit, seconds: Unit, ms: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def UTC_Double(
     year: Double,
     month: Double,
@@ -465,7 +374,7 @@ object LocaleConfig {
     minutes: Double,
     seconds: Double,
     ms: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("UTC")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any], hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
   @JSImport("react-native-calendars", "LocaleConfig.defaultLocale")
@@ -488,33 +397,29 @@ object LocaleConfig {
     *Returns the number of days in the given month
     */
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.getDaysInMonth")
-  @js.native
-  def getDaysInMonth(year: Double, month: Double): Double = js.native
+  @scala.inline
+  def getDaysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDaysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /*
     *Returns the current date, as milliseconds since the epoch. You'll probably want to use new XDate() instead.
     */
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
   /*
     *Parses a date-string and returns milliseconds since the epoch. You'll probably want to use new XDate(dateString) instead.
     */
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.parse")
-  @js.native
-  def parse(dateString: String): Double = js.native
+  @scala.inline
+  def parse(dateString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /*
     *Returns the current date with time cleared, as an XDate object
     */
   /* static member */
-  @JSImport("react-native-calendars", "LocaleConfig.today")
-  @js.native
-  def today(): XDate = js.native
+  @scala.inline
+  def today(): XDate = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[XDate]
   
   /* static member */
   object locales

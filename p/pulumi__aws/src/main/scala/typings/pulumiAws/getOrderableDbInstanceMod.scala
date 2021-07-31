@@ -3,56 +3,54 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOrderableDbInstanceMod {
   
-  @JSImport("@pulumi/aws/docdb/getOrderableDbInstance", "getOrderableDbInstance")
+  @JSImport("@pulumi/aws/docdb/getOrderableDbInstance", JSImport.Namespace)
   @js.native
-  def getOrderableDbInstance(): js.Promise[GetOrderableDbInstanceResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getOrderableDbInstance", "getOrderableDbInstance")
-  @js.native
-  def getOrderableDbInstance(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getOrderableDbInstance", "getOrderableDbInstance")
-  @js.native
-  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs): js.Promise[GetOrderableDbInstanceResult] = js.native
-  @JSImport("@pulumi/aws/docdb/getOrderableDbInstance", "getOrderableDbInstance")
-  @js.native
-  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOrderableDbInstance(): js.Promise[GetOrderableDbInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")().asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  @scala.inline
+  def getOrderableDbInstance(args: Unit, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  @scala.inline
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs): js.Promise[GetOrderableDbInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  @scala.inline
+  def getOrderableDbInstance(args: GetOrderableDbInstanceArgs, opts: InvokeOptions): js.Promise[GetOrderableDbInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrderableDbInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrderableDbInstanceResult]]
+  
   trait GetOrderableDbInstanceArgs extends StObject {
     
     /**
       * DB engine. Default: `docdb`
       */
-    val engine: js.UndefOr[String] = js.native
+    val engine: js.UndefOr[String] = js.undefined
     
     /**
       * Version of the DB engine.
       */
-    val engineVersion: js.UndefOr[String] = js.native
+    val engineVersion: js.UndefOr[String] = js.undefined
     
     /**
       * DB instance class. Examples of classes are `db.r5.12xlarge`, `db.r5.24xlarge`, `db.r5.2xlarge`, `db.r5.4xlarge`, `db.r5.large`, `db.r5.xlarge`, and `db.t3.medium`. (Conflicts with `preferredInstanceClasses`.)
       */
-    val instanceClass: js.UndefOr[String] = js.native
+    val instanceClass: js.UndefOr[String] = js.undefined
     
     /**
       * License model. Default: `na`
       */
-    val licenseModel: js.UndefOr[String] = js.native
+    val licenseModel: js.UndefOr[String] = js.undefined
     
     /**
       * Ordered list of preferred DocumentDB DB instance classes. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned. (Conflicts with `instanceClass`.)
       */
-    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Enable to show only VPC.
       */
-    val vpc: js.UndefOr[Boolean] = js.native
+    val vpc: js.UndefOr[Boolean] = js.undefined
   }
   object GetOrderableDbInstanceArgs {
     
@@ -106,30 +104,29 @@ object getOrderableDbInstanceMod {
     }
   }
   
-  @js.native
   trait GetOrderableDbInstanceResult extends StObject {
     
     /**
       * Availability zones where the instance is available.
       */
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
-    val engine: js.UndefOr[String] = js.native
+    val engine: js.UndefOr[String] = js.undefined
     
-    val engineVersion: String = js.native
+    val engineVersion: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceClass: String = js.native
+    val instanceClass: String
     
-    val licenseModel: js.UndefOr[String] = js.native
+    val licenseModel: js.UndefOr[String] = js.undefined
     
-    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.native
+    val preferredInstanceClasses: js.UndefOr[js.Array[String]] = js.undefined
     
-    val vpc: Boolean = js.native
+    val vpc: Boolean
   }
   object GetOrderableDbInstanceResult {
     

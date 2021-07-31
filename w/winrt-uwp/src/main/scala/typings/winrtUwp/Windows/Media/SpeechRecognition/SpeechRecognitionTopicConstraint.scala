@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A pre-defined grammar constraint (specifed by SpeechRecognitionScenario ) provided through a web service. */
-@js.native
 trait SpeechRecognitionTopicConstraint extends StObject {
   
   /** Gets or sets whether the constraint can be used by the SpeechRecognizer object to perform recognition. */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   /** Gets or sets the weighted value of the constraint. */
-  var probability: SpeechRecognitionConstraintProbability = js.native
+  var probability: SpeechRecognitionConstraintProbability
   
   /** Gets the predefined scenario type for the constraint. */
-  var scenario: SpeechRecognitionScenario = js.native
+  var scenario: SpeechRecognitionScenario
   
   /** Gets or sets a tag that can be useful for identifying the constraint. */
-  var tag: String = js.native
+  var tag: String
   
   /** Gets the topic hint for the constraint. */
-  var topicHint: String = js.native
+  var topicHint: String
   
   /** Gets the type of the constraint. */
-  var `type`: SpeechRecognitionConstraintType = js.native
+  var `type`: SpeechRecognitionConstraintType
 }
 object SpeechRecognitionTopicConstraint {
   

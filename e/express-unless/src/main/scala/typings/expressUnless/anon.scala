@@ -3,19 +3,17 @@ package typings.expressUnless
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Method extends StObject {
     
-    var method: js.UndefOr[String | js.Array[String]] = js.native
+    var method: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var url: String | RegExp = js.native
+    var url: String | RegExp
   }
   object Method {
     

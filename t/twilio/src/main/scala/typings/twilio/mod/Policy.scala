@@ -2,23 +2,21 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   // Map<string, FilterRequirement>, where FilterRequirement ::= Map<string, boolean>
-  var allow: Boolean = js.native
+  var allow: Boolean
   
-  var method: String = js.native
+  var method: String
   
   // Map<string, FilterRequirement>, where FilterRequirement ::= Map<string, boolean>
-  var post_filter: js.UndefOr[js.Any] = js.native
+  var post_filter: js.UndefOr[js.Any] = js.undefined
   
-  var query_filter: js.UndefOr[js.Any] = js.native
+  var query_filter: js.UndefOr[js.Any] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Policy {
   

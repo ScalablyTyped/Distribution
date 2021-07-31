@@ -2,17 +2,15 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVoIPSignOptions extends StObject {
   
-  var groupId: String = js.native
+  var groupId: String
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object GetVoIPSignOptions {
   

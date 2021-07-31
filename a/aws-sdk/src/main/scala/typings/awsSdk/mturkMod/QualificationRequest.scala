@@ -2,41 +2,39 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QualificationRequest extends StObject {
   
   /**
     *  The Worker's answers for the Qualification type's test contained in a QuestionFormAnswers document, if the type has a test and the Worker has submitted answers. If the Worker does not provide any answers, Answer may be empty. 
     */
-  var Answer: js.UndefOr[String] = js.native
+  var Answer: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Qualification request, a unique identifier generated when the request was submitted. 
     */
-  var QualificationRequestId: js.UndefOr[String] = js.native
+  var QualificationRequestId: js.UndefOr[String] = js.undefined
   
   /**
     *  The ID of the Qualification type the Worker is requesting, as returned by the CreateQualificationType operation. 
     */
-  var QualificationTypeId: js.UndefOr[EntityId] = js.native
+  var QualificationTypeId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The date and time the Qualification request had a status of Submitted. This is either the time the Worker submitted answers for a Qualification test, or the time the Worker requested the Qualification if the Qualification type does not have a test. 
     */
-  var SubmitTime: js.UndefOr[Timestamp] = js.native
+  var SubmitTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The contents of the Qualification test that was presented to the Worker, if the type has a test and the Worker has submitted answers. This value is identical to the QuestionForm associated with the Qualification type at the time the Worker requests the Qualification.
     */
-  var Test: js.UndefOr[String] = js.native
+  var Test: js.UndefOr[String] = js.undefined
   
   /**
     *  The ID of the Worker requesting the Qualification.
     */
-  var WorkerId: js.UndefOr[CustomerId] = js.native
+  var WorkerId: js.UndefOr[CustomerId] = js.undefined
 }
 object QualificationRequest {
   

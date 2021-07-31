@@ -3,7 +3,6 @@ package typings.charsetDetector
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,14 @@ object mod {
     * @param matchers charset detectors, default value is `detect.DEFAULT_CS_RECOGNIZERS`
     * @returns array of matches sorted by most confident first
     */
+  @scala.inline
+  def apply(input: ArrayLike[Double]): js.Array[CharsetMatch] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[CharsetMatch]]
+  @scala.inline
+  def apply(input: ArrayLike[Double], matchers: js.Array[CharsetMatcher]): js.Array[CharsetMatch] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], matchers.asInstanceOf[js.Any])).asInstanceOf[js.Array[CharsetMatch]]
+  
   @JSImport("charset-detector", JSImport.Namespace)
   @js.native
-  def apply(input: ArrayLike[Double]): js.Array[CharsetMatch] = js.native
-  @JSImport("charset-detector", JSImport.Namespace)
-  @js.native
-  def apply(input: ArrayLike[Double], matchers: js.Array[CharsetMatcher]): js.Array[CharsetMatch] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("charset-detector", "ALL_CS_RECOGNIZERS")
   @js.native
@@ -35,25 +36,24 @@ object mod {
   /**
     * charset detect match result
     */
-  @js.native
   trait CharsetMatch extends StObject {
     
     /**
       * name of charset
       * @example 'UTF-8'
       */
-    var charsetName: String = js.native
+    var charsetName: String
     
     /**
       * confidence between 0 and 100
       */
-    var confidence: Double = js.native
+    var confidence: Double
     
     /**
       * language of charset
       * @example 'zh'
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
   }
   object CharsetMatch {
     
@@ -85,18 +85,17 @@ object mod {
   /**
     * input statics
     */
-  @js.native
   trait InputStats extends StObject {
     
     /**
       * count of bytes, eg. `byteStats[32] === 17` means there are 17 bytes with value of `32` in the input
       */
-    val byteStats: js.Array[Double] = js.native
+    val byteStats: js.Array[Double]
     
     /**
       * whether input contains bytes larger that 0x7F (127)
       */
-    val c1Bytes: Boolean = js.native
+    val c1Bytes: Boolean
   }
   object InputStats {
     

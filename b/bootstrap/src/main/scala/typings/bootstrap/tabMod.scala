@@ -3,51 +3,22 @@ package typings.bootstrap
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabMod {
   
   @JSImport("bootstrap/js/dist/tab", JSImport.Default)
   @js.native
-  class default protected () extends Tab {
+  class default protected ()
+    extends StObject
+       with Tab {
     def this(element: Element) = this()
-  }
-  object default {
-    
-    @JSImport("bootstrap/js/dist/tab", "default.Events")
-    @js.native
-    object Events extends StObject {
-      
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.tabMod.Tab.Events with String] = js.native
-      
-      /* "hidden.bs.tab" */ val hidden: typings.bootstrap.tabMod.Tab.Events.hidden with String = js.native
-      
-      /* "hide.bs.tab" */ val hide: typings.bootstrap.tabMod.Tab.Events.hide with String = js.native
-      
-      /* "show.bs.tab" */ val show: typings.bootstrap.tabMod.Tab.Events.show with String = js.native
-      
-      /* "shown.bs.tab" */ val shown: typings.bootstrap.tabMod.Tab.Events.shown with String = js.native
-    }
-    
-    /**
-      * Static method which allows you to get the tab instance associated with a
-      * DOM element
-      */
-    /* static member */
-    @JSImport("bootstrap/js/dist/tab", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Tab = js.native
-  }
-  
-  @js.native
-  trait Tab extends StObject {
     
     /**
       * Destroys an element’s tab.
       */
-    def dispose(): Unit = js.native
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Selects the given list item and shows its associated pane. Any other
@@ -56,7 +27,55 @@ object tabMod {
       * has actually been shown (for example, before the shown.bs.tab event
       * occurs).
       */
-    def show(): Unit = js.native
+    /* CompleteClass */
+    override def show(): Unit = js.native
+  }
+  object default {
+    
+    @JSImport("bootstrap/js/dist/tab", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("bootstrap/js/dist/tab", "default.Events")
+    @js.native
+    object Events extends StObject {
+      
+      @JSBracketAccess
+      def apply(value: String): js.UndefOr[typings.bootstrap.tabMod.Tab.Events & String] = js.native
+      
+      /* "hidden.bs.tab" */ val hidden: typings.bootstrap.tabMod.Tab.Events.hidden & String = js.native
+      
+      /* "hide.bs.tab" */ val hide: typings.bootstrap.tabMod.Tab.Events.hide & String = js.native
+      
+      /* "show.bs.tab" */ val show: typings.bootstrap.tabMod.Tab.Events.show & String = js.native
+      
+      /* "shown.bs.tab" */ val shown: typings.bootstrap.tabMod.Tab.Events.shown & String = js.native
+    }
+    
+    /**
+      * Static method which allows you to get the tab instance associated with a
+      * DOM element
+      */
+    /* static member */
+    @scala.inline
+    def getInstance(element: Element): Tab = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Tab]
+  }
+  
+  trait Tab extends StObject {
+    
+    /**
+      * Destroys an element’s tab.
+      */
+    def dispose(): Unit
+    
+    /**
+      * Selects the given list item and shows its associated pane. Any other
+      * list item that was previously selected becomes unselected and its
+      * associated pane is hidden. Returns to the caller before the tab pane
+      * has actually been shown (for example, before the shown.bs.tab event
+      * occurs).
+      */
+    def show(): Unit
   }
   object Tab {
     
@@ -78,7 +97,9 @@ object tabMod {
         * target the previous active tab and the new active tab, respectively.
         */
       @js.native
-      sealed trait hidden extends Events
+      sealed trait hidden
+        extends StObject
+           with Events
       
       /**
         * This event fires when a new tab is to be shown (and thus the previous
@@ -87,7 +108,9 @@ object tabMod {
         * respectively.
         */
       @js.native
-      sealed trait hide extends Events
+      sealed trait hide
+        extends StObject
+           with Events
       
       /**
         * This event fires on tab show, but before the new tab has been shown.
@@ -95,7 +118,9 @@ object tabMod {
         * the previous active tab (if available) respectively.
         */
       @js.native
-      sealed trait show extends Events
+      sealed trait show
+        extends StObject
+           with Events
       
       /**
         * This event fires on tab show after a tab has been shown. Use
@@ -103,7 +128,9 @@ object tabMod {
         * previous active tab (if available) respectively.
         */
       @js.native
-      sealed trait shown extends Events
+      sealed trait shown
+        extends StObject
+           with Events
     }
     
     @scala.inline

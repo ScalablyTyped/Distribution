@@ -2,13 +2,11 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnError extends StObject {
   
-  var onError: js.UndefOr[js.Function] = js.native
+  var onError: js.UndefOr[js.Function] = js.undefined
 }
 object OnError {
   

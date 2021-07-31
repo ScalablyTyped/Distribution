@@ -13,66 +13,70 @@ import typings.namedRoutes.anon.PartialRouteOptions
 import typings.namedRoutes.anon.PartialRouterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("named-routes", JSImport.Namespace)
   @js.native
-  class ^ () extends NamedRouter {
+  class ^ ()
+    extends StObject
+       with NamedRouter {
     def this(options: PartialRouterOptions) = this()
   }
   
   @js.native
   trait NamedRouter extends StObject {
     
-    def add(method: String, path: String, callbacks: js.Array[RequestHandler[ParamsDictionary, _, _, Query]]): Unit = js.native
     def add(
       method: String,
       path: String,
-      callbacks: js.Array[RequestHandler[ParamsDictionary, _, _, Query]],
+      callbacks: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+    ): Unit = js.native
+    def add(
+      method: String,
+      path: String,
+      callbacks: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]],
       options: PartialRouteOptions
     ): Unit = js.native
-    def add(method: String, path: String, callbacks: RequestHandler[ParamsDictionary, _, _, Query]): Unit = js.native
+    def add(method: String, path: String, callbacks: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
     def add(
       method: String,
       path: String,
-      callbacks: RequestHandler[ParamsDictionary, _, _, Query],
+      callbacks: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
       options: PartialRouteOptions
     ): Unit = js.native
     
     def build(name: String): String = js.native
-    def build(name: String, params: js.UndefOr[scala.Nothing], method: String): String = js.native
+    def build(name: String, params: Unit, method: String): String = js.native
     def build(name: String, params: RouteParams): String = js.native
     def build(name: String, params: RouteParams, method: String): String = js.native
     
-    def dispatch(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: js.UndefOr[scala.Nothing], next: NextFunction): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Unit = js.native
-    def dispatch(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_], next: NextFunction): Unit = js.native
+    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Unit, next: NextFunction): Unit = js.native
+    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Unit = js.native
+    def dispatch(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any], next: NextFunction): Unit = js.native
     
     def extendExpress(app: Express): NamedRouter = js.native
     def extendExpress(app: Router): NamedRouter = js.native
     
-    def `match`(req: Request_[ParamsDictionary, _, _, Query]): Boolean | js.Object = js.native
+    def `match`(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Boolean | js.Object = js.native
     
-    def param(callback: RequestHandler[ParamsDictionary, _, _, Query]): NamedRouter = js.native
-    def param(name: String, callback: RequestHandler[ParamsDictionary, _, _, Query]): NamedRouter = js.native
+    def param(callback: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): NamedRouter = js.native
+    def param(name: String, callback: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): NamedRouter = js.native
     
     def registerAppHelpers(app: Express): NamedRouter = js.native
   }
   
-  @js.native
   trait RouteOptions extends StObject {
     
-    var caseSensitive: Boolean = js.native
+    var caseSensitive: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var recursiveWildcard: Boolean = js.native
+    var recursiveWildcard: Boolean
     
-    var wildcardInPairs: Boolean = js.native
+    var wildcardInPairs: Boolean
   }
   object RouteOptions {
     
@@ -101,10 +105,9 @@ object mod {
   
   type RouteParams = StringDictionary[String | (js.Array[Boolean | Double | String]) | Double | Boolean | Null]
   
-  @js.native
   trait RouterOptions extends StObject {
     
-    var caseSensitive: Boolean = js.native
+    var caseSensitive: Boolean
   }
   object RouterOptions {
     
@@ -124,10 +127,9 @@ object mod {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Application extends StObject {
       
-      var namedRoutes: NamedRouter = js.native
+      var namedRoutes: NamedRouter
     }
     object Application {
       

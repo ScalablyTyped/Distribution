@@ -5,22 +5,21 @@ import typings.node.zlibMod.InputType
 import typings.node.zlibMod.ZlibOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-gzip", "gzip")
+  @JSImport("node-gzip", JSImport.Namespace)
   @js.native
-  def gzip(input: InputType): js.Promise[Buffer] = js.native
-  @JSImport("node-gzip", "gzip")
-  @js.native
-  def gzip(input: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-gzip", "ungzip")
-  @js.native
-  def ungzip(input: InputType): js.Promise[Buffer] = js.native
-  @JSImport("node-gzip", "ungzip")
-  @js.native
-  def ungzip(input: InputType, options: ZlibOptions): js.Promise[Buffer] = js.native
+  @scala.inline
+  def gzip(input: InputType): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def gzip(input: InputType, options: ZlibOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  
+  @scala.inline
+  def ungzip(input: InputType): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("ungzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def ungzip(input: InputType, options: ZlibOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("ungzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
 }

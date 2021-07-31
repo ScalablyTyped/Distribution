@@ -3,7 +3,6 @@ package typings.agGrid
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pinnedRowModelMod {
@@ -58,8 +57,8 @@ object pinnedRowModelMod {
     
     var pinnedTopRows: js.Any = js.native
     
-    def setPinnedBottomRowData(rowData: js.Array[_]): Unit = js.native
+    def setPinnedBottomRowData(rowData: js.Array[js.Any]): Unit = js.native
     
-    def setPinnedTopRowData(rowData: js.Array[_]): Unit = js.native
+    def setPinnedTopRowData(rowData: js.Array[js.Any]): Unit = js.native
   }
 }

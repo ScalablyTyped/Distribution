@@ -10,7 +10,6 @@ import typings.loopback.loopbackStrings.`null`
 import typings.loopback.loopbackStrings.any
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,19 +22,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {"any" | "Array" | "Boolean" | "Buffer" | "Date" | "GeoPoint" | "null" | "Number" | "Object" | "String"} type
   * @property {string} default Default value that will be used to populate loopback-explorer input fields and swagger documentation
   */
-@js.native
 trait RemoteMethodArgument extends StObject {
   
   /**
     *    Default value that will be used to populate loopback-explorer input fields and swagger documentation.
     *    Note: This value will not be passed into remote methods function if argument is not present.
     */
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /**
     *     Argument name
     */
-  var arg: String = js.native
+  var arg: String
   
   /**
     * A text description of the argument. This is used by API documentation generators like Swagger.
@@ -48,7 +46,7 @@ trait RemoteMethodArgument extends StObject {
     ]
     ```
     */
-  var description: js.UndefOr[String | js.Array[String]] = js.native
+  var description: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * http    Object or Function    For input arguments: a function or an object describing mapping from HTTP request to the argument value. See HTTP mapping of input arguments below.
@@ -57,23 +55,23 @@ trait RemoteMethodArgument extends StObject {
     * * status sets the res.statusCode to the provided value
     * * header sets the http.header or arg named header to the value
     */
-  var http: js.UndefOr[RemoteHttpOptions] = js.native
+  var http: js.UndefOr[RemoteHttpOptions] = js.undefined
   
   /**
     *     True if argument is required; false otherwise.
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /**
     *     For callback arguments: set this property to true if your function has a single callback argument to use as the root object returned to remote caller.
     *    Otherwise the root object returned is a map (argument-name to argument-value).
     */
-  var root: js.UndefOr[Boolean] = js.native
+  var root: js.UndefOr[Boolean] = js.undefined
   
   /**
     *     Argument datatype; must be a Loopback type. Additionally, callback arguments allow a special type "file"; see below.
     */
-  var `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String = js.native
+  var `type`: any | Array | typings.loopback.loopbackStrings.Boolean | Buffer | Date | GeoPoint | `null` | Number | Object | typings.loopback.loopbackStrings.String
 }
 object RemoteMethodArgument {
   

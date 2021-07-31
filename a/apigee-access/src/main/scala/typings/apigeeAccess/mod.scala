@@ -17,65 +17,55 @@ import typings.apigeeAccess.mod.ApigeeAccess.QuotaService
 import typings.apigeeAccess.mod.ApigeeAccess.SecureVault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("apigee-access", "default.deleteVariable")
+    @JSImport("apigee-access", JSImport.Default)
     @js.native
-    def deleteVariable(request: js.Any, name: String): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apigee-access", "default.getCache")
-    @js.native
-    def getCache(name: String): js.Any = js.native
-    @JSImport("apigee-access", "default.getCache")
-    @js.native
-    def getCache(name: String, options: CacheOptions): js.Any = js.native
+    @scala.inline
+    def deleteVariable(request: js.Any, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("apigee-access", "default.getMode")
-    @js.native
-    def getMode(): apigee | standalone = js.native
+    @scala.inline
+    def getCache(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def getCache(name: String, options: CacheOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getCache")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("apigee-access", "default.getQuota")
-    @js.native
-    def getQuota(): QuotaService = js.native
-    @JSImport("apigee-access", "default.getQuota")
-    @js.native
-    def getQuota(options: js.Any): QuotaService = js.native
+    @scala.inline
+    def getMode(): apigee | standalone = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[apigee | standalone]
     
-    @JSImport("apigee-access", "default.getVariable")
-    @js.native
-    def getVariable(request: js.Any, name: String): String | Double | Boolean = js.native
+    @scala.inline
+    def getQuota(): QuotaService = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuota")().asInstanceOf[QuotaService]
+    @scala.inline
+    def getQuota(options: js.Any): QuotaService = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuota")(options.asInstanceOf[js.Any]).asInstanceOf[QuotaService]
     
-    @JSImport("apigee-access", "default.getVault")
-    @js.native
-    def getVault(name: String): SecureVault = js.native
-    @JSImport("apigee-access", "default.getVault")
-    @js.native
-    def getVault_environment(name: String, scope: environment): SecureVault = js.native
-    @JSImport("apigee-access", "default.getVault")
-    @js.native
-    def getVault_organization(name: String, scope: organization): SecureVault = js.native
+    @scala.inline
+    def getVariable(request: js.Any, name: String): String | Double | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String | Double | Boolean]
     
-    @JSImport("apigee-access", "default.setIntVariable")
-    @js.native
-    def setIntVariable(request: js.Any, name: String, value: String): Unit = js.native
-    @JSImport("apigee-access", "default.setIntVariable")
-    @js.native
-    def setIntVariable(request: js.Any, name: String, value: Double): Unit = js.native
+    @scala.inline
+    def getVault(name: String): SecureVault = ^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any]).asInstanceOf[SecureVault]
     
-    @JSImport("apigee-access", "default.setVariable")
-    @js.native
-    def setVariable(request: js.Any, name: String, value: String): Unit = js.native
-    @JSImport("apigee-access", "default.setVariable")
-    @js.native
-    def setVariable(request: js.Any, name: String, value: Boolean): Unit = js.native
-    @JSImport("apigee-access", "default.setVariable")
-    @js.native
-    def setVariable(request: js.Any, name: String, value: Double): Unit = js.native
+    @scala.inline
+    def getVault_environment(name: String, scope: environment): SecureVault = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[SecureVault]
+    
+    @scala.inline
+    def getVault_organization(name: String, scope: organization): SecureVault = (^.asInstanceOf[js.Dynamic].applyDynamic("getVault")(name.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[SecureVault]
+    
+    @scala.inline
+    def setIntVariable(request: js.Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setIntVariable(request: js.Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setIntVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setVariable(request: js.Any, name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setVariable(request: js.Any, name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setVariable(request: js.Any, name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVariable")(request.asInstanceOf[js.Any], name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object ApigeeAccess {
@@ -86,29 +76,23 @@ object mod {
       def get(key: String, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
       
       def put(key: String, data: js.Any): Unit = js.native
-      def put(
-        key: String,
-        data: js.Any,
-        ttl: js.UndefOr[scala.Nothing],
-        callback: js.Function1[/* err */ js.Any, Unit]
-      ): Unit = js.native
       def put(key: String, data: js.Any, ttl: Double): Unit = js.native
       def put(key: String, data: js.Any, ttl: Double, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+      def put(key: String, data: js.Any, ttl: Unit, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
       
       def remove(key: String): Unit = js.native
       def remove(key: String, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
     }
     
-    @js.native
     trait CacheOptions extends StObject {
       
-      var defaultTtl: js.UndefOr[Double] = js.native
+      var defaultTtl: js.UndefOr[Double] = js.undefined
       
-      var resource: js.UndefOr[String] = js.native
+      var resource: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[global | application | exclusive] = js.native
+      var scope: js.UndefOr[global | application | exclusive] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object CacheOptions {
       
@@ -154,7 +138,7 @@ object mod {
       def apply(): Unit = js.native
       @JSName("apply")
       def apply(
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         callback: js.Function2[/* err */ js.Any, /* data */ QuotaServiceApplyCallbackData, Unit]
       ): Unit = js.native
       @JSName("apply")
@@ -166,18 +150,17 @@ object mod {
       ): Unit = js.native
     }
     
-    @js.native
     trait QuotaServiceApplyCallbackData extends StObject {
       
-      var allowed: Double = js.native
+      var allowed: Double
       
-      var expiryTime: Double = js.native
+      var expiryTime: Double
       
-      var isAllowed: Boolean = js.native
+      var isAllowed: Boolean
       
-      var timestamp: Double = js.native
+      var timestamp: Double
       
-      var used: Double = js.native
+      var used: Double
     }
     object QuotaServiceApplyCallbackData {
       
@@ -207,18 +190,17 @@ object mod {
       }
     }
     
-    @js.native
     trait QuotaServiceApplyOptions extends StObject {
       
-      var allow: Double = js.native
+      var allow: Double
       
-      var identifier: String = js.native
+      var identifier: String
       
-      var interval: js.UndefOr[Double] = js.native
+      var interval: js.UndefOr[Double] = js.undefined
       
-      var timeUnit: minute | hour | day | week | month = js.native
+      var timeUnit: minute | hour | day | week | month
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object QuotaServiceApplyOptions {
       
@@ -254,12 +236,11 @@ object mod {
       }
     }
     
-    @js.native
     trait SecureVault extends StObject {
       
-      def get(key: String, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+      def get(key: String, callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit
       
-      def getKeys(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit = js.native
+      def getKeys(callback: js.Function2[/* err */ js.Any, /* data */ js.Any, Unit]): Unit
     }
     object SecureVault {
       

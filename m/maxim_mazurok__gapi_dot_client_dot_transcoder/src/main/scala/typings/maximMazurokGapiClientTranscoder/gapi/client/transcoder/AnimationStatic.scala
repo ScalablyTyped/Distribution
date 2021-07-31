@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationStatic extends StObject {
   
   /** The time to start displaying the overlay object, in seconds. Default: 0 */
-  var startTimeOffset: js.UndefOr[String] = js.native
+  var startTimeOffset: js.UndefOr[String] = js.undefined
   
   /** Normalized coordinates based on output video resolution. Valid values: `0.0`–`1.0`. `xy` is the upper-left coordinate of the overlay object. */
-  var xy: js.UndefOr[NormalizedCoordinate] = js.native
+  var xy: js.UndefOr[NormalizedCoordinate] = js.undefined
 }
 object AnimationStatic {
   

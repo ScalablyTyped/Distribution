@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionSendNotification extends StObject {
   
-  def Clone(): IActionSendNotification = js.native
+  def Clone(): IActionSendNotification
   
-  var Message: String = js.native
+  var Message: String
   
-  var RecipientsEx: IUserOrUserGroupIDExs = js.native
+  var RecipientsEx: IUserOrUserGroupIDExs
   
-  var Subject: String = js.native
+  var Subject: String
 }
 object IActionSendNotification {
   

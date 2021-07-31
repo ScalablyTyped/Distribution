@@ -2,26 +2,24 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayClientPolicyTls extends StObject {
   
   /**
     * Whether the policy is enforced. The default is True, if a value isn't specified.
     */
-  var enforce: js.UndefOr[Boolean] = js.native
+  var enforce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more ports that the policy is enforced for.
     */
-  var ports: js.UndefOr[PortSet] = js.native
+  var ports: js.UndefOr[PortSet] = js.undefined
   
   /**
     * A reference to an object that represents a TLS validation context.
     */
-  var validation: VirtualGatewayTlsValidationContext = js.native
+  var validation: VirtualGatewayTlsValidationContext
 }
 object VirtualGatewayClientPolicyTls {
   

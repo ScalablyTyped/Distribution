@@ -6,21 +6,16 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unsortedSegmentSumMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unsorted_segment_sum", "unsortedSegmentSum")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/unsorted_segment_sum", JSImport.Namespace)
   @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: Tensor1D, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unsorted_segment_sum", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: TensorLike, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unsorted_segment_sum", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: TensorLike, segmentIds: Tensor1D, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/unsorted_segment_sum", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: TensorLike, segmentIds: TensorLike, numSegments: Double): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T | TensorLike, segmentIds: Tensor1D, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T | TensorLike, segmentIds: TensorLike, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
 }

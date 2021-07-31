@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BadgeChangeEvent extends BadgeEvent {
+trait BadgeChangeEvent
+  extends StObject
+     with BadgeEvent {
   
-  var newValue: js.UndefOr[String | Double] = js.native
+  var newValue: js.UndefOr[String | Double] = js.undefined
   
-  var oldValue: js.UndefOr[String | Double] = js.native
+  var oldValue: js.UndefOr[String | Double] = js.undefined
 }
 object BadgeChangeEvent {
   

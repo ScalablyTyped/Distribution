@@ -7,32 +7,32 @@ import typings.emotionUtils.mod.EmotionCache
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@emotion/cache", JSImport.Default)
+  @JSImport("@emotion/cache", JSImport.Namespace)
   @js.native
-  def default(): EmotionCache = js.native
-  @JSImport("@emotion/cache", JSImport.Default)
-  @js.native
-  def default(options: Options): EmotionCache = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EmotionCache]
+  @scala.inline
+  def default(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
+  
   trait Options extends StObject {
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[Prefix] = js.native
+    var prefix: js.UndefOr[Prefix] = js.undefined
     
-    var speedy: js.UndefOr[Boolean] = js.native
+    var speedy: js.UndefOr[Boolean] = js.undefined
     
-    var stylisPlugins: js.UndefOr[Plugin | js.Array[Plugin]] = js.native
+    var stylisPlugins: js.UndefOr[Plugin | js.Array[Plugin]] = js.undefined
   }
   object Options {
     

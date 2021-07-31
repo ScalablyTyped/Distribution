@@ -2,22 +2,20 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadBlob extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/upload-blob
   /**
     * UUID of blob data to upload.
     */
-  var blobUUID: String = js.native
+  var blobUUID: String
   
   /**
     * `blob`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object UploadBlob {
   

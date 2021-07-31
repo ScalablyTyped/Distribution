@@ -2,19 +2,17 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindAnswersOptions extends StObject {
   
-  val attributesForPrediction: js.UndefOr[js.Array[String]] = js.native
+  val attributesForPrediction: js.UndefOr[js.Array[String]] = js.undefined
   
-  val nbHits: js.UndefOr[Double] = js.native
+  val nbHits: js.UndefOr[Double] = js.undefined
   
-  val params: js.UndefOr[SearchOptions] = js.native
+  val params: js.UndefOr[SearchOptions] = js.undefined
   
-  val threshold: js.UndefOr[Double] = js.native
+  val threshold: js.UndefOr[Double] = js.undefined
 }
 object FindAnswersOptions {
   

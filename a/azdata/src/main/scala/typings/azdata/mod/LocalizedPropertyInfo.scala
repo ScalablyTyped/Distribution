@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalizedPropertyInfo extends StObject {
   
-  var propertyDisplayName: String = js.native
+  var propertyDisplayName: String
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var propertyValue: String = js.native
+  var propertyValue: String
   
-  var propertyValueDisplayName: String = js.native
+  var propertyValueDisplayName: String
 }
 object LocalizedPropertyInfo {
   

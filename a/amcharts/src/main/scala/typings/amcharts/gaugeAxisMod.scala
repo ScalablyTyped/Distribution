@@ -2,45 +2,48 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaugeAxisMod {
   
   @JSImport("amcharts/GaugeAxis", JSImport.Default)
   @js.native
-  class default () extends GaugeAxis
-  
-  @js.native
-  trait GaugeAxis extends StObject {
+  class default ()
+    extends StObject
+       with GaugeAxis {
     
     /**
       * Adds event listener to the object.
       */
-    def addListener(`type`: String, handler: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def addListener(`type`: String, handler: js.Any): Unit = js.native
     
     /**
       * Axis opacity.
       * @default 1
       */
+    /* CompleteClass */
     var axisAlpha: Double = js.native
     
     /**
       * Axis color.
       * @default #000000
       */
+    /* CompleteClass */
     var axisColor: String = js.native
     
     /**
       * Thickness of the axis outline.
       * @default 1
       */
+    /* CompleteClass */
     var axisThickness: Double = js.native
     
     /**
       * Opacity of band fills.
       * @default 1
       */
+    /* CompleteClass */
     var bandAlpha: Double = js.native
     
     /**
@@ -49,89 +52,105 @@ object gaugeAxisMod {
       * and positive number means the color will be lighter.
       * @default []
       */
+    /* CompleteClass */
     var bandGradientRatio: js.Array[Double] = js.native
     
     /**
       * Opacity of band outlines.
       * @default 0
       */
+    /* CompleteClass */
     var bandOutlineAlpha: Double = js.native
     
     /**
       * Color of band outlines.
       * @default #000000
       */
+    /* CompleteClass */
     var bandOutlineColor: String = js.native
     
     /**
       * Thickness of band outlines.
       * @default 0
       */
+    /* CompleteClass */
     var bandOutlineThickness: Double = js.native
     
     /**
       * Array of bands - GaugeBand objects. Bands are used to draw color fills between specified values.
       */
+    /* CompleteClass */
     var bands: js.Array[typings.amcharts.gaugeBandMod.default] = js.native
     
     /**
       * Text displayed below the axis center.
       */
+    /* CompleteClass */
     var bottomText: String = js.native
     
     /**
       * Specifies if text should be bold.
       * @default true
       */
+    /* CompleteClass */
     var bottomTextBold: Boolean = js.native
     
     /**
       * Bottom text color.
       */
+    /* CompleteClass */
     var bottomTextColor: String = js.native
     
     /**
       * Font size of bottom text.
       */
+    /* CompleteClass */
     var bottomTextFontSize: Double = js.native
     
     /**
       * Y offset of bottom text.
       * @default 0
       */
+    /* CompleteClass */
     var bottomTextYOffset: Double = js.native
     
     /**
       * X position of the axis, relative to the center of the gauge.
       * @default '0%'
       */
+    /* CompleteClass */
     var centerX: js.Any = js.native
     
     /**
       * Y position of the axis, relative to the center of the gauge.
       * @default '0%'
       */
+    /* CompleteClass */
     var centerY: js.Any = js.native
     
     /**
       * Specifies labels color of the axis.
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Axis end angle. Valid values are from - 180 to 180.
       * @default 120
       */
+    /* CompleteClass */
     var endAngle: Double = js.native
     
     /**
       * Axis end (max) value
       */
+    /* CompleteClass */
     var endValue: Double = js.native
     
     /**
       * Font size for axis labels.
       */
+    /* CompleteClass */
     var fontSize: Double = js.native
     
     /**
@@ -139,188 +158,532 @@ object gaugeAxisMod {
       * so you should check your values and choose a proper gridCount which would result grids at round numbers.
       * @default 5
       */
+    /* CompleteClass */
     var gridCount: Double = js.native
     
     /**
       * Specifies if grid should be drawn inside or outside the axis.
       * @default true
       */
+    /* CompleteClass */
     var gridInside: Boolean = js.native
     
     /**
       * Unique id of an axis.
       */
+    /* CompleteClass */
     var id: js.Any = js.native
     
     /**
       * Specifies if labels should be placed inside or outside the axis.
       * @default true
       */
+    /* CompleteClass */
     var inside: Boolean = js.native
     
     /**
       * Frequency of labels.
       * @default 1
       */
+    /* CompleteClass */
     var labelFrequency: Double = js.native
     
     /**
       * You can use this function to format axis labels.
       * This function is called and value is passed as a attribute: labelFunction(value);
       */
-    def labelFunction(value: Double): String = js.native
+    /* CompleteClass */
+    override def labelFunction(value: Double): String = js.native
     
     /**
       * Distance from axis to the labels.
       * @default 15
       */
+    /* CompleteClass */
     var labelOffset: Double = js.native
     
     /**
       * Specifies if labels on the axis should be shown.
       * @default true
       */
+    /* CompleteClass */
     var labelsEnabled: Boolean = js.native
     
     /**
       * You can add listeners of events using this property.
       * Example: listeners = [{"event":"clickBand", "method":handleClick}];
       */
+    /* CompleteClass */
     var listeners: js.Array[js.Object] = js.native
     
     /**
       * Interval, at which minor ticks should be placed.
       */
+    /* CompleteClass */
     var minorTickInterval: Double = js.native
     
     /**
       * Length of a minor tick.
       * @default 5
       */
+    /* CompleteClass */
     var minorTickLength: Double = js.native
     
     /**
       * Axis radius.
       * @default '95%'
       */
+    /* CompleteClass */
     var radius: js.Any = js.native
     
     /**
       * Removes event listener from chart object.
       */
-    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit = js.native
     
     /**
       * Sets bottom text.
       */
-    def setBottomText(text: String): Unit = js.native
+    /* CompleteClass */
+    override def setBottomText(text: String): Unit = js.native
     
     /**
       * Sets top text.
       */
-    def setTopText(textstring: String): Unit = js.native
+    /* CompleteClass */
+    override def setTopText(textstring: String): Unit = js.native
     
     /**
       * Specifies if the first label should be shown.
       * @default true
       */
+    /* CompleteClass */
     var showFirstLabel: Boolean = js.native
     
     /**
       * Specifies if the last label should be shown.
       * @default true
       */
+    /* CompleteClass */
     var showLastLabel: Boolean = js.native
     
     /**
       * Axis start angle. Valid values are from - 180 to 180.
       * @default -120
       */
+    /* CompleteClass */
     var startAngle: Double = js.native
     
     /**
       * Axis start (min) value.
       * @default 0
       */
+    /* CompleteClass */
     var startValue: Double = js.native
     
     /**
       * Opacity of axis ticks.
       * @default 1
       */
+    /* CompleteClass */
     var tickAlpha: Double = js.native
     
     /**
       * Color of axis ticks.
       * @default #555555
       */
+    /* CompleteClass */
     var tickColor: String = js.native
     
     /**
       * Length of a major tick.
       * @default 10
       */
+    /* CompleteClass */
     var tickLength: Double = js.native
     
     /**
       * Tick thickness.
       * @default 1
       */
+    /* CompleteClass */
     var tickThickness: Double = js.native
     
     /**
       * Text displayed above the axis center.
       */
+    /* CompleteClass */
     var topText: String = js.native
     
     /**
       * Specifies if text should be bold.
       * @default true
       */
+    /* CompleteClass */
     var topTextBold: Boolean = js.native
     
     /**
       * Color of top text.
       */
+    /* CompleteClass */
     var topTextColor: String = js.native
     
     /**
       * Font size of top text.
       */
+    /* CompleteClass */
     var topTextFontSize: Double = js.native
     
     /**
       * Y offset of top text.
       * @default 0
       */
+    /* CompleteClass */
     var topTextYOffset: Double = js.native
     
     /**
       * A string which can be placed next to axis labels.
       */
+    /* CompleteClass */
     var unit: String = js.native
     
     /**
       * Position of the unit.
       * @default right
       */
+    /* CompleteClass */
     var unitPosition: String = js.native
     
     /**
       * Specifies if small and big numbers should use prefixes to make them more readable.
       * @default false
       */
+    /* CompleteClass */
     var usePrefixes: Boolean = js.native
     
     /**
       * Returns angle of the value.
       */
-    def value2angle(value: Double): Unit = js.native
+    /* CompleteClass */
+    override def value2angle(value: Double): Unit = js.native
     
     /**
       * Interval, at which ticks with values should be placed.
       */
+    /* CompleteClass */
     var valueInterval: Double = js.native
+  }
+  
+  trait GaugeAxis extends StObject {
+    
+    /**
+      * Adds event listener to the object.
+      */
+    def addListener(`type`: String, handler: js.Any): Unit
+    
+    /**
+      * Axis opacity.
+      * @default 1
+      */
+    var axisAlpha: Double
+    
+    /**
+      * Axis color.
+      * @default #000000
+      */
+    var axisColor: String
+    
+    /**
+      * Thickness of the axis outline.
+      * @default 1
+      */
+    var axisThickness: Double
+    
+    /**
+      * Opacity of band fills.
+      * @default 1
+      */
+    var bandAlpha: Double
+    
+    /**
+      * Example: [-0.2, 0, -0.2]. Will make bands to be filled with color gradients.
+      * Negative value means the color will be darker than the original,
+      * and positive number means the color will be lighter.
+      * @default []
+      */
+    var bandGradientRatio: js.Array[Double]
+    
+    /**
+      * Opacity of band outlines.
+      * @default 0
+      */
+    var bandOutlineAlpha: Double
+    
+    /**
+      * Color of band outlines.
+      * @default #000000
+      */
+    var bandOutlineColor: String
+    
+    /**
+      * Thickness of band outlines.
+      * @default 0
+      */
+    var bandOutlineThickness: Double
+    
+    /**
+      * Array of bands - GaugeBand objects. Bands are used to draw color fills between specified values.
+      */
+    var bands: js.Array[typings.amcharts.gaugeBandMod.default]
+    
+    /**
+      * Text displayed below the axis center.
+      */
+    var bottomText: String
+    
+    /**
+      * Specifies if text should be bold.
+      * @default true
+      */
+    var bottomTextBold: Boolean
+    
+    /**
+      * Bottom text color.
+      */
+    var bottomTextColor: String
+    
+    /**
+      * Font size of bottom text.
+      */
+    var bottomTextFontSize: Double
+    
+    /**
+      * Y offset of bottom text.
+      * @default 0
+      */
+    var bottomTextYOffset: Double
+    
+    /**
+      * X position of the axis, relative to the center of the gauge.
+      * @default '0%'
+      */
+    var centerX: js.Any
+    
+    /**
+      * Y position of the axis, relative to the center of the gauge.
+      * @default '0%'
+      */
+    var centerY: js.Any
+    
+    /**
+      * Specifies labels color of the axis.
+      */
+    var color: String
+    
+    /**
+      * Axis end angle. Valid values are from - 180 to 180.
+      * @default 120
+      */
+    var endAngle: Double
+    
+    /**
+      * Axis end (max) value
+      */
+    var endValue: Double
+    
+    /**
+      * Font size for axis labels.
+      */
+    var fontSize: Double
+    
+    /**
+      * Number of grid lines. Note, GaugeAxis doesn't adjust gridCount,
+      * so you should check your values and choose a proper gridCount which would result grids at round numbers.
+      * @default 5
+      */
+    var gridCount: Double
+    
+    /**
+      * Specifies if grid should be drawn inside or outside the axis.
+      * @default true
+      */
+    var gridInside: Boolean
+    
+    /**
+      * Unique id of an axis.
+      */
+    var id: js.Any
+    
+    /**
+      * Specifies if labels should be placed inside or outside the axis.
+      * @default true
+      */
+    var inside: Boolean
+    
+    /**
+      * Frequency of labels.
+      * @default 1
+      */
+    var labelFrequency: Double
+    
+    /**
+      * You can use this function to format axis labels.
+      * This function is called and value is passed as a attribute: labelFunction(value);
+      */
+    def labelFunction(value: Double): String
+    
+    /**
+      * Distance from axis to the labels.
+      * @default 15
+      */
+    var labelOffset: Double
+    
+    /**
+      * Specifies if labels on the axis should be shown.
+      * @default true
+      */
+    var labelsEnabled: Boolean
+    
+    /**
+      * You can add listeners of events using this property.
+      * Example: listeners = [{"event":"clickBand", "method":handleClick}];
+      */
+    var listeners: js.Array[js.Object]
+    
+    /**
+      * Interval, at which minor ticks should be placed.
+      */
+    var minorTickInterval: Double
+    
+    /**
+      * Length of a minor tick.
+      * @default 5
+      */
+    var minorTickLength: Double
+    
+    /**
+      * Axis radius.
+      * @default '95%'
+      */
+    var radius: js.Any
+    
+    /**
+      * Removes event listener from chart object.
+      */
+    def removeListener(chart: typings.amcharts.amChartMod.default, `type`: String, handler: js.Any): Unit
+    
+    /**
+      * Sets bottom text.
+      */
+    def setBottomText(text: String): Unit
+    
+    /**
+      * Sets top text.
+      */
+    def setTopText(textstring: String): Unit
+    
+    /**
+      * Specifies if the first label should be shown.
+      * @default true
+      */
+    var showFirstLabel: Boolean
+    
+    /**
+      * Specifies if the last label should be shown.
+      * @default true
+      */
+    var showLastLabel: Boolean
+    
+    /**
+      * Axis start angle. Valid values are from - 180 to 180.
+      * @default -120
+      */
+    var startAngle: Double
+    
+    /**
+      * Axis start (min) value.
+      * @default 0
+      */
+    var startValue: Double
+    
+    /**
+      * Opacity of axis ticks.
+      * @default 1
+      */
+    var tickAlpha: Double
+    
+    /**
+      * Color of axis ticks.
+      * @default #555555
+      */
+    var tickColor: String
+    
+    /**
+      * Length of a major tick.
+      * @default 10
+      */
+    var tickLength: Double
+    
+    /**
+      * Tick thickness.
+      * @default 1
+      */
+    var tickThickness: Double
+    
+    /**
+      * Text displayed above the axis center.
+      */
+    var topText: String
+    
+    /**
+      * Specifies if text should be bold.
+      * @default true
+      */
+    var topTextBold: Boolean
+    
+    /**
+      * Color of top text.
+      */
+    var topTextColor: String
+    
+    /**
+      * Font size of top text.
+      */
+    var topTextFontSize: Double
+    
+    /**
+      * Y offset of top text.
+      * @default 0
+      */
+    var topTextYOffset: Double
+    
+    /**
+      * A string which can be placed next to axis labels.
+      */
+    var unit: String
+    
+    /**
+      * Position of the unit.
+      * @default right
+      */
+    var unitPosition: String
+    
+    /**
+      * Specifies if small and big numbers should use prefixes to make them more readable.
+      * @default false
+      */
+    var usePrefixes: Boolean
+    
+    /**
+      * Returns angle of the value.
+      */
+    def value2angle(value: Double): Unit
+    
+    /**
+      * Interval, at which ticks with values should be placed.
+      */
+    var valueInterval: Double
   }
   object GaugeAxis {
     

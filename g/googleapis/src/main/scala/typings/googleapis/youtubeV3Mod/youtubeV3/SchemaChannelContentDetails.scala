@@ -3,16 +3,14 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 import typings.googleapis.anon.Favorites
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details about the content of a channel.
   */
-@js.native
 trait SchemaChannelContentDetails extends StObject {
   
-  var relatedPlaylists: js.UndefOr[Favorites] = js.native
+  var relatedPlaylists: js.UndefOr[Favorites] = js.undefined
 }
 object SchemaChannelContentDetails {
   

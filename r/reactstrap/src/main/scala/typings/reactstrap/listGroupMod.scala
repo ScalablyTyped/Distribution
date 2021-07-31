@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listGroupMod {
@@ -20,18 +19,18 @@ object listGroupMod {
   
   type ListGroup = Component[ListGroupProps, js.Object, js.Any]
   
-  @js.native
   trait ListGroupProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var flush: js.UndefOr[Boolean] = js.native
+    var flush: js.UndefOr[Boolean] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean | String] = js.native
+    var horizontal: js.UndefOr[Boolean | String] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object ListGroupProps {
     
@@ -63,7 +62,7 @@ object listGroupMod {
       def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

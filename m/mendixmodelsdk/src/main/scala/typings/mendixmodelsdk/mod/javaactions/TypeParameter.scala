@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,9 +40,8 @@ object TypeParameter {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.TypeParameter.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter]
   
   /**
     * Creates and returns a new TypeParameter instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object TypeParameter {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "javaactions.TypeParameter.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction): typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter]
   
   /* static member */
   @JSImport("mendixmodelsdk", "javaactions.TypeParameter.structureTypeName")

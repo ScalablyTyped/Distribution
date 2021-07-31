@@ -2,39 +2,37 @@ package typings.reactNativeMaterialUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemStyle extends StObject {
   
-  var LeftElement: js.UndefOr[TextStyle] = js.native
+  var LeftElement: js.UndefOr[TextStyle] = js.undefined
   
-  var centerElementContainer: js.UndefOr[ViewStyle] = js.native
+  var centerElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var content: js.UndefOr[ViewStyle] = js.native
+  var content: js.UndefOr[ViewStyle] = js.undefined
   
-  var contentViewContainer: js.UndefOr[ViewStyle] = js.native
+  var contentViewContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var firstLine: js.UndefOr[TextStyle] = js.native
+  var firstLine: js.UndefOr[TextStyle] = js.undefined
   
-  var leftElementContainer: js.UndefOr[ViewStyle] = js.native
+  var leftElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var primaryText: js.UndefOr[TextStyle] = js.native
+  var primaryText: js.UndefOr[TextStyle] = js.undefined
   
-  var primaryTextContainer: js.UndefOr[ViewStyle] = js.native
+  var primaryTextContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var rightElement: js.UndefOr[TextStyle] = js.native
+  var rightElement: js.UndefOr[TextStyle] = js.undefined
   
-  var rightElementContainer: js.UndefOr[ViewStyle] = js.native
+  var rightElementContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var secondaryText: js.UndefOr[TextStyle] = js.native
+  var secondaryText: js.UndefOr[TextStyle] = js.undefined
   
-  var tertiaryText: js.UndefOr[TextStyle] = js.native
+  var tertiaryText: js.UndefOr[TextStyle] = js.undefined
   
-  var textViewContainer: js.UndefOr[ViewStyle] = js.native
+  var textViewContainer: js.UndefOr[ViewStyle] = js.undefined
 }
 object ListItemStyle {
   

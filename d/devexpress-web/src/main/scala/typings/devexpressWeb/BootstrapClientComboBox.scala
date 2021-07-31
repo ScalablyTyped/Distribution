@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapComboBox control.
   */
 @js.native
-trait BootstrapClientComboBox extends ASPxClientComboBox {
+trait BootstrapClientComboBox
+  extends StObject
+     with ASPxClientComboBox {
   
   /**
     * Gets the CSS class of the icon displayed within a Combo Box item badge. A String containing the name of a CSS class.

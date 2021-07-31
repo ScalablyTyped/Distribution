@@ -2,17 +2,15 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Global extends StObject {
   
   /** Command description */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Global scope? */
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Keys can be provided matching this pattern:
@@ -23,7 +21,7 @@ trait Global extends StObject {
     *     'mac': 'Command+Shift+Y'
     * },
     */
-  var suggested_key: js.UndefOr[Chromeos] = js.native
+  var suggested_key: js.UndefOr[Chromeos] = js.undefined
 }
 object Global {
   

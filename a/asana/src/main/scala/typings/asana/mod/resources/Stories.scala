@@ -6,7 +6,6 @@ import typings.asana.mod.resources.Stories.ShortType
 import typings.asana.mod.resources.Stories.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Stories
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Adds a comment to a task. The comment will be authored by the
@@ -57,11 +57,11 @@ trait Stories
     * @return
     */
   def findById(story: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(story: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(story: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(story: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(story: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(story: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(story: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(story: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(story: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -77,11 +77,11 @@ trait Stories
     * @return
     */
   def findByTask(task: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTask(task: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTask(task: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTask(task: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTask(task: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
 }
@@ -90,7 +90,9 @@ object Stories extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Stories")
   @js.native
-  class ^ protected () extends Stories {
+  class ^ protected ()
+    extends StObject
+       with Stories {
     /**
       * @param dispatcher
       */
@@ -103,11 +105,12 @@ object Stories extends Shortcut {
   
   @js.native
   trait ShortType
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var created_at: String = js.native
     
-    var created_by: typings.asana.mod.resources.Resource = js.native
+    var created_by: Resource = js.native
     
     var text: String = js.native
     
@@ -115,7 +118,9 @@ object Stories extends Shortcut {
   }
   
   @js.native
-  trait Type extends ShortType {
+  trait Type
+    extends StObject
+       with ShortType {
     
     var hearts: js.Array[Type] = js.native
     
@@ -123,7 +128,7 @@ object Stories extends Shortcut {
     
     var source: String = js.native
     
-    var target: typings.asana.mod.resources.Resource = js.native
+    var target: Resource = js.native
   }
   
   type _To = StoriesStatic

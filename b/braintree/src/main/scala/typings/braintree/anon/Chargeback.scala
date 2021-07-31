@@ -2,13 +2,11 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chargeback extends StObject {
   
-  var Chargeback: String = js.native
+  var Chargeback: String
 }
 object Chargeback {
   

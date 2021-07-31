@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppValidationConfigurationResponse extends StObject {
   
   /**
     * The configuration for application validation.
     */
-  var appValidationConfigurations: js.UndefOr[AppValidationConfigurations] = js.native
+  var appValidationConfigurations: js.UndefOr[AppValidationConfigurations] = js.undefined
   
   /**
     * The configuration for instance validation.
     */
-  var serverGroupValidationConfigurations: js.UndefOr[ServerGroupValidationConfigurations] = js.native
+  var serverGroupValidationConfigurations: js.UndefOr[ServerGroupValidationConfigurations] = js.undefined
 }
 object GetAppValidationConfigurationResponse {
   

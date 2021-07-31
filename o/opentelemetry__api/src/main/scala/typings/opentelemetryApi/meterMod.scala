@@ -11,7 +11,6 @@ import typings.opentelemetryApi.metricMod.ValueRecorder
 import typings.opentelemetryApi.observerResultMod.ObserverResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meterMod {
@@ -70,11 +69,7 @@ object meterMod {
       * @param [callback] the observer callback
       */
     def createValueObserver(name: String): ValueObserver = js.native
-    def createValueObserver(
-      name: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* observerResult */ ObserverResult, Unit]
-    ): ValueObserver = js.native
+    def createValueObserver(name: String, options: Unit, callback: js.Function1[/* observerResult */ ObserverResult, Unit]): ValueObserver = js.native
     def createValueObserver(name: String, options: MetricOptions): ValueObserver = js.native
     def createValueObserver(
       name: String,

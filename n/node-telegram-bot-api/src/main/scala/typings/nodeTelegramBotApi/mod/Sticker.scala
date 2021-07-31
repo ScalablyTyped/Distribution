@@ -2,31 +2,29 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sticker extends StObject {
   
-  var emoji: js.UndefOr[String] = js.native
+  var emoji: js.UndefOr[String] = js.undefined
   
-  var file_id: String = js.native
+  var file_id: String
   
-  var file_size: js.UndefOr[Double] = js.native
+  var file_size: js.UndefOr[Double] = js.undefined
   
-  var file_unique_id: String = js.native
+  var file_unique_id: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var is_animated: Boolean = js.native
+  var is_animated: Boolean
   
-  var mask_position: js.UndefOr[MaskPosition] = js.native
+  var mask_position: js.UndefOr[MaskPosition] = js.undefined
   
-  var set_name: js.UndefOr[String] = js.native
+  var set_name: js.UndefOr[String] = js.undefined
   
-  var thumb: js.UndefOr[PhotoSize] = js.native
+  var thumb: js.UndefOr[PhotoSize] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object Sticker {
   

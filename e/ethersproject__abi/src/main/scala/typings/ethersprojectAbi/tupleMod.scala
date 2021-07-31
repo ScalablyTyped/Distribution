@@ -4,7 +4,6 @@ import typings.ethersprojectAbi.abstractCoderMod.Coder
 import typings.ethersprojectAbi.abstractCoderMod.Writer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tupleMod {
@@ -16,6 +15,6 @@ object tupleMod {
     
     val coders: js.Array[Coder] = js.native
     
-    def encode(writer: Writer, value: js.Array[_]): Double = js.native
+    def encode(writer: Writer, value: js.Array[js.Any]): Double = js.native
   }
 }

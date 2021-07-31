@@ -12,7 +12,7 @@ Create an accurate interval that does not skew over time.
 | Keywords           | accurate, timeout, skew, interval, setInterval, setTimeout, timer |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 20640 |
+| # downloads        | 19236 |
 | # stars            | 1 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutesConfigDump extends StObject {
   
   /** The dynamically loaded route configs. */
-  var dynamicRouteConfigs: js.UndefOr[js.Array[DynamicRouteConfig]] = js.native
+  var dynamicRouteConfigs: js.UndefOr[js.Array[DynamicRouteConfig]] = js.undefined
   
   /** The statically loaded route configs. */
-  var staticRouteConfigs: js.UndefOr[js.Array[StaticRouteConfig]] = js.native
+  var staticRouteConfigs: js.UndefOr[js.Array[StaticRouteConfig]] = js.undefined
 }
 object RoutesConfigDump {
   

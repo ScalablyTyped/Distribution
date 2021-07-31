@@ -2,36 +2,32 @@ package typings.wordpressEscapeHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/escape-html", "escapeAmpersand")
+  @JSImport("@wordpress/escape-html", JSImport.Namespace)
   @js.native
-  def escapeAmpersand(value: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/escape-html", "escapeAttribute")
-  @js.native
-  def escapeAttribute(value: String): String = js.native
+  @scala.inline
+  def escapeAmpersand(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAmpersand")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/escape-html", "escapeEditableHTML")
-  @js.native
-  def escapeEditableHTML(value: String): String = js.native
+  @scala.inline
+  def escapeAttribute(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeAttribute")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/escape-html", "escapeHTML")
-  @js.native
-  def escapeHTML(value: String): String = js.native
+  @scala.inline
+  def escapeEditableHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeEditableHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/escape-html", "escapeLessThan")
-  @js.native
-  def escapeLessThan(value: String): String = js.native
+  @scala.inline
+  def escapeHTML(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHTML")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/escape-html", "escapeQuotationMark")
-  @js.native
-  def escapeQuotationMark(value: String): String = js.native
+  @scala.inline
+  def escapeLessThan(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeLessThan")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/escape-html", "isValidAttributeName")
-  @js.native
-  def isValidAttributeName(name: String): Boolean = js.native
+  @scala.inline
+  def escapeQuotationMark(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeQuotationMark")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def isValidAttributeName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAttributeName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

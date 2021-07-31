@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainCalls extends StObject {
   
   /** The domain name. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** Number of HTTP calls made to the domain. */
-  var httpCallCount: js.UndefOr[Double] = js.native
+  var httpCallCount: js.UndefOr[Double] = js.undefined
 }
 object DomainCalls {
   

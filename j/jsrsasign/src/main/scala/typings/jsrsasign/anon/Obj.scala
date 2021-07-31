@@ -5,15 +5,13 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Obj extends StObject {
   
-  var hex: String = js.native
+  var hex: String
   
-  var obj: RSAKey | DSA | ECDSA = js.native
+  var obj: RSAKey | DSA | ECDSA
 }
 object Obj {
   

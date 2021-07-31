@@ -3,29 +3,27 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanPurchaseUploadAllowance extends StObject {
   
-  var canPurchaseUploadAllowance: js.UndefOr[Boolean] = js.native
+  var canPurchaseUploadAllowance: js.UndefOr[Boolean] = js.undefined
   
-  var currentTime: js.UndefOr[Timestamp] = js.native
+  var currentTime: js.UndefOr[Timestamp] = js.undefined
   
-  var premium: js.UndefOr[Boolean] = js.native
+  var premium: js.UndefOr[Boolean] = js.undefined
   
-  var premiumCancellationPending: js.UndefOr[Boolean] = js.native
+  var premiumCancellationPending: js.UndefOr[Boolean] = js.undefined
   
-  var premiumExpirationDate: js.UndefOr[Timestamp] = js.native
+  var premiumExpirationDate: js.UndefOr[Timestamp] = js.undefined
   
-  var premiumExtendable: js.UndefOr[Boolean] = js.native
+  var premiumExtendable: js.UndefOr[Boolean] = js.undefined
   
-  var premiumPending: js.UndefOr[Boolean] = js.native
+  var premiumPending: js.UndefOr[Boolean] = js.undefined
   
-  var premiumRecurring: js.UndefOr[Boolean] = js.native
+  var premiumRecurring: js.UndefOr[Boolean] = js.undefined
   
-  var premiumUpgradable: js.UndefOr[Boolean] = js.native
+  var premiumUpgradable: js.UndefOr[Boolean] = js.undefined
 }
 object CanPurchaseUploadAllowance {
   

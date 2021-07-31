@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShiftAvailability extends StObject {
   
   // Specifies the pattern for recurrence
-  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.native
+  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
   
   // The time slot(s) preferred by the user.
-  var timeSlots: js.UndefOr[NullableOption[js.Array[TimeRange]]] = js.native
+  var timeSlots: js.UndefOr[NullableOption[js.Array[TimeRange]]] = js.undefined
   
   // Specifies the time zone for the indicated time.
-  var timeZone: js.UndefOr[NullableOption[String]] = js.native
+  var timeZone: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ShiftAvailability {
   

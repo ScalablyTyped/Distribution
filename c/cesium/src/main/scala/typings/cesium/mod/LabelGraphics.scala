@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.BackgroundColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "LabelGraphics")
@@ -15,7 +14,7 @@ class LabelGraphics () extends StObject {
   
   def clone(result: LabelGraphics): LabelGraphics = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var distanceDisplayCondition: js.UndefOr[Property] = js.native
   

@@ -2,31 +2,31 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Transport extends ITransportStateListener {
+trait Transport
+  extends StObject
+     with ITransportStateListener {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  var compression: String = js.native
+  var compression: String
   
-  var encryption: String = js.native
+  var encryption: String
   
-  def getSupportedCompression(): js.Array[String] = js.native
+  def getSupportedCompression(): js.Array[String]
   
-  def getSupportedEncryption(): js.Array[String] = js.native
+  def getSupportedEncryption(): js.Array[String]
   
-  def onEnvelope(envelope: Envelope): js.Any = js.native
+  def onEnvelope(envelope: Envelope): js.Any
   
-  def open(uri: String): Unit = js.native
+  def open(uri: String): Unit
   
-  def send(envelope: Envelope): Unit = js.native
+  def send(envelope: Envelope): Unit
   
-  def setCompression(compression: String): Unit = js.native
+  def setCompression(compression: String): Unit
   
-  def setEncryption(encryption: String): Unit = js.native
+  def setEncryption(encryption: String): Unit
 }
 object Transport {
   

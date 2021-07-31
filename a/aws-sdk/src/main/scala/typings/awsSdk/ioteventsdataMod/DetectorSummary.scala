@@ -2,41 +2,39 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectorSummary extends StObject {
   
   /**
     * The time the detector (instance) was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the detector model that created this detector (instance).
     */
-  var detectorModelName: js.UndefOr[DetectorModelName] = js.native
+  var detectorModelName: js.UndefOr[DetectorModelName] = js.undefined
   
   /**
     * The version of the detector model that created this detector (instance).
     */
-  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.native
+  var detectorModelVersion: js.UndefOr[DetectorModelVersion] = js.undefined
   
   /**
     * The value of the key (identifying the device or system) that caused the creation of this detector (instance).
     */
-  var keyValue: js.UndefOr[KeyValue] = js.native
+  var keyValue: js.UndefOr[KeyValue] = js.undefined
   
   /**
     * The time the detector (instance) was last updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The current state of the detector (instance).
     */
-  var state: js.UndefOr[DetectorStateSummary] = js.native
+  var state: js.UndefOr[DetectorStateSummary] = js.undefined
 }
 object DetectorSummary {
   

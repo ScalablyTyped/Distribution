@@ -52,7 +52,6 @@ import typings.dv.dvStrings.vertical
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -457,7 +456,8 @@ object mod {
     * Creates a Tesseract engine with language set to english.
     */
   class Tesseract ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     def this(datapath: String) = this()
     /**
       * Creates a Tesseract engine with the specified language.
@@ -586,16 +586,15 @@ object mod {
     val `type`: None | QR_CODE | DATA_MATRIX | PDF_417 | UPC_E | UPC_A | EAN_8 | EAN_13 | CODE_128 | CODE_39 | ITF | AZTEC = js.native
   }
   
-  @js.native
   trait BarCode extends StObject {
     
-    var buffer: Buffer = js.native
+    var buffer: Buffer
     
-    var data: String = js.native
+    var data: String
     
-    var points: js.Array[Point] = js.native
+    var points: js.Array[Point]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BarCode {
     
@@ -626,30 +625,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Barcodeformat extends StObject {
     
-    var AZTEC: Boolean = js.native
+    var AZTEC: Boolean
     
-    var CODE_128: Boolean = js.native
+    var CODE_128: Boolean
     
-    var CODE_39: Boolean = js.native
+    var CODE_39: Boolean
     
-    var DATA_MATRIX: Boolean = js.native
+    var DATA_MATRIX: Boolean
     
-    var EAN_13: Boolean = js.native
+    var EAN_13: Boolean
     
-    var EAN_8: Boolean = js.native
+    var EAN_8: Boolean
     
-    var ITF: Boolean = js.native
+    var ITF: Boolean
     
-    var PDF_417: Boolean = js.native
+    var PDF_417: Boolean
     
-    var QR_CODE: Boolean = js.native
+    var QR_CODE: Boolean
     
-    var UPC_A: Boolean = js.native
+    var UPC_A: Boolean
     
-    var UPC_E: Boolean = js.native
+    var UPC_E: Boolean
   }
   object Barcodeformat {
     
@@ -709,16 +707,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Box extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Box {
     
@@ -745,12 +742,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Choice extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var text: String = js.native
+    var text: String
   }
   object Choice {
     
@@ -771,16 +767,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Component extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Component {
     
@@ -809,12 +804,11 @@ object mod {
   
   type Paragaph = Region
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -835,16 +829,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Rect {
     
@@ -871,14 +864,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Region extends StObject {
     
-    var box: Box = js.native
+    var box: Box
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var text: String = js.native
+    var text: String
   }
   object Region {
     
@@ -902,14 +894,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Segment extends StObject {
     
-    var error: Double = js.native
+    var error: Double
     
-    var p1: Point = js.native
+    var p1: Point
     
-    var p2: Point = js.native
+    var p2: Point
   }
   object Segment {
     
@@ -933,12 +924,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Skew extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var confidence: Double = js.native
+    var confidence: Double
   }
   object Skew {
     
@@ -959,10 +949,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Symbol extends Region {
+  trait Symbol
+    extends StObject
+       with Region {
     
-    var choices: js.Array[Choice] = js.native
+    var choices: js.Array[Choice]
   }
   object Symbol {
     
@@ -985,10 +976,9 @@ object mod {
   
   type Text = Choice
   
-  @js.native
   trait Textline extends StObject {
     
-    var box: Box = js.native
+    var box: Box
   }
   object Textline {
     

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a group of Contact objects and server search status. */
-@js.native
 trait ContactBatch extends StObject {
   
   /** Gets the list of Contact objects returned by a search operation. */
-  var contacts: IVectorView[Contact] = js.native
+  var contacts: IVectorView[Contact]
   
   /** Gets a ContactBatchStatus value that indicates if a search was successful or if there was a server error. */
-  var status: ContactBatchStatus = js.native
+  var status: ContactBatchStatus
 }
 object ContactBatch {
   

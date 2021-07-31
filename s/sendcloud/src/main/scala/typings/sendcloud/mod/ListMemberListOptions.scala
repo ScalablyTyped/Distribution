@@ -2,23 +2,21 @@ package typings.sendcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMemberListOptions extends StObject {
   
-  var api_key: String = js.native
+  var api_key: String
   
-  var api_user: String = js.native
+  var api_user: String
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var mail_list_addr: js.UndefOr[String] = js.native
+  var mail_list_addr: js.UndefOr[String] = js.undefined
   
-  var member_addr: js.UndefOr[String] = js.native
+  var member_addr: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object ListMemberListOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAppImageConfigRequest extends StObject {
   
   /**
     * The name of the AppImageConfig to describe.
     */
-  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName = js.native
+  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName
 }
 object DescribeAppImageConfigRequest {
   

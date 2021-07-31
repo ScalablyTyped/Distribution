@@ -14,94 +14,92 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsPropsTypeMod {
   
-  @js.native
   trait PropsType extends StObject {
     
     /** whether to change tabs with animation | default: true */
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
     /** destroy inactive tab | default: false */
-    var destroyInactiveTab: js.UndefOr[Boolean] = js.native
+    var destroyInactiveTab: js.UndefOr[Boolean] = js.undefined
     
     /** distance to change tab, width ratio | default: 0.3 */
-    var distanceToChangeTab: js.UndefOr[Double] = js.native
+    var distanceToChangeTab: js.UndefOr[Double] = js.undefined
     
     /** initial Tab, index or key */
-    var initialPage: js.UndefOr[Double | String] = js.native
+    var initialPage: js.UndefOr[Double | String] = js.undefined
     
-    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.native
+    var keyboardShouldPersistTaps: js.UndefOr[Boolean] = js.undefined
     
     /** can't render content | default: false */
-    var noRenderContent: js.UndefOr[Boolean] = js.native
+    var noRenderContent: js.UndefOr[Boolean] = js.undefined
     
     /** callback when tab is switched */
-    var onChange: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
     
     /** on tab click */
-    var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+    var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
     
     /** current tab, index or key */
-    var page: js.UndefOr[Double | String] = js.native
+    var page: js.UndefOr[Double | String] = js.undefined
     
     /**
       * pre-render nearby # sibling, Infinity: render all the siblings, 0: render
       * current page | default: 1
       */
-    var prerenderingSiblingsNumber: js.UndefOr[Double] = js.native
+    var prerenderingSiblingsNumber: js.UndefOr[Double] = js.undefined
     
     /** render the tab of tabbar */
-    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.native
+    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
     
     /** render for TabBar */
-    var renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarPropsType, ReactNode]) | `false`] = js.native
+    var renderTabBar: js.UndefOr[(js.Function1[/* props */ TabBarPropsType, ReactNode]) | `false`] = js.undefined
     
     /** render the underline of tabbar */
-    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.native
+    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * whether to switch tabs with swipe gestrue in the content | default: true
       */
-    var swipeable: js.UndefOr[Boolean] = js.native
+    var swipeable: js.UndefOr[Boolean] = js.undefined
     
     /** tabBar active text color */
-    var tabBarActiveTextColor: js.UndefOr[String] = js.native
+    var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
     
     /** tabBar background color */
-    var tabBarBackgroundColor: js.UndefOr[String] = js.native
+    var tabBarBackgroundColor: js.UndefOr[String] = js.undefined
     
     /** tabBar inactive text color */
-    var tabBarInactiveTextColor: js.UndefOr[String] = js.native
+    var tabBarInactiveTextColor: js.UndefOr[String] = js.undefined
     
     /** TabBar's position | default: top */
-    var tabBarPosition: js.UndefOr[top | bottom] = js.native
+    var tabBarPosition: js.UndefOr[top | bottom] = js.undefined
     
     /** tabBar text style */
-    var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /** tabBar underline style */
-    var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /** tab paging direction | default: horizontal */
-    var tabDirection: js.UndefOr[horizontal | vertical] = js.native
+    var tabDirection: js.UndefOr[horizontal | vertical] = js.undefined
     
     /** tabs data */
-    var tabs: js.Array[TabData] = js.native
+    var tabs: js.Array[TabData]
     
     /** use left instead of transform | default: false */
-    var useLeftInsteadTransform: js.UndefOr[Boolean] = js.native
+    var useLeftInsteadTransform: js.UndefOr[Boolean] = js.undefined
     
     /** use scroll follow pan | default: true */
-    var useOnPan: js.UndefOr[Boolean] = js.native
+    var useOnPan: js.UndefOr[Boolean] = js.undefined
     
     /** use paged | default: true */
-    var usePaged: js.UndefOr[Boolean] = js.native
+    var usePaged: js.UndefOr[Boolean] = js.undefined
   }
   object PropsType {
     
@@ -284,52 +282,51 @@ object tabsPropsTypeMod {
     }
   }
   
-  @js.native
   trait TabBarPropsType extends StObject {
     
     /** current active tab */
-    var activeTab: Double = js.native
+    var activeTab: Double
     
     /** use animate | default: true */
-    var animated: Boolean = js.native
+    var animated: Boolean
     
     /** call this function to switch tab */
-    def goToTab(index: Double): Unit = js.native
+    def goToTab(index: Double): Unit
     
-    var instanceId: Double = js.native
+    var instanceId: Double
     
     /** on tab click */
-    var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+    var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
     
     /** page size of tabbar's tab | default: 5 */
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
     /** render the tab of tabbar */
-    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.native
+    var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
     
     /** render the underline of tabbar */
-    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.native
+    var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
     
     /** tabBar active text color */
-    var tabBarActiveTextColor: js.UndefOr[String] = js.native
+    var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
     
     /** tabBar background color */
-    var tabBarBackgroundColor: js.UndefOr[String] = js.native
+    var tabBarBackgroundColor: js.UndefOr[String] = js.undefined
     
     /** tabBar inactive text color */
-    var tabBarInactiveTextColor: js.UndefOr[String] = js.native
+    var tabBarInactiveTextColor: js.UndefOr[String] = js.undefined
     
     /** tabBar's position | defualt: top */
-    var tabBarPosition: js.UndefOr[top | bottom | left | right] = js.native
+    var tabBarPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
     /** tabBar text style */
-    var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var tabBarTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /** tabBar underline style */
-    var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /** tabs data */
-    var tabs: js.Array[TabData] = js.native
+    var tabs: js.Array[TabData]
   }
   object TabBarPropsType {
     
@@ -434,13 +431,13 @@ object tabsPropsTypeMod {
     }
   }
   
-  @js.native
   trait TabData
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object TabData {
     

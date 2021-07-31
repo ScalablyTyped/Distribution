@@ -4,19 +4,21 @@
 Typings are for version 5.14
 
 ## Library description:
-metascraper integration with SoundCloud
+Metascraper integration with SoundCloud
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metascraper-soundcloud |
 | Keywords           | audio, metascraper, soundcloud |
-| # releases         | 111 |
+| # releases         | 134 |
 | # dependents       | 3 |
-| # downloads        | 50502 |
+| # downloads        | 49053 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-soundcloud)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-soundcloud)
     
 

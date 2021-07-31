@@ -5,7 +5,6 @@ import typings.std.PropertyDescriptor
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,7 +23,8 @@ object mod {
   @JSImport("es6-shim", "Map")
   @js.native
   class Map[K, V] ()
-    extends typings.es6Shim.Map[K, V] {
+    extends StObject
+       with typings.es6Shim.Map[K, V] {
     def this(iterable: IterableShim[js.Tuple2[K, V]]) = this()
   }
   @JSImport("es6-shim", "Map")
@@ -55,7 +55,8 @@ object mod {
   @JSImport("es6-shim", "Promise")
   @js.native
   class Promise[T] protected ()
-    extends typings.es6Shim.Promise[T] {
+    extends StObject
+       with typings.es6Shim.Promise[T] {
     /**
       * Creates a new Promise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -76,74 +77,63 @@ object mod {
   
   object Reflect {
     
-    @JSImport("es6-shim", "Reflect.apply")
+    @JSImport("es6-shim", "Reflect")
     @js.native
-    def apply(target: js.Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("es6-shim", "Reflect.construct")
-    @js.native
-    def construct(target: js.Function, argumentsList: ArrayLike[_]): js.Any = js.native
+    @scala.inline
+    def apply(target: js.Function, thisArgument: js.Any, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(target.asInstanceOf[js.Any], thisArgument.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("es6-shim", "Reflect.defineProperty")
-    @js.native
-    def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = js.native
+    @scala.inline
+    def construct(target: js.Function, argumentsList: ArrayLike[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct")(target.asInstanceOf[js.Any], argumentsList.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("es6-shim", "Reflect.deleteProperty")
-    @js.native
-    def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
+    @scala.inline
+    def defineProperty(target: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defineProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("es6-shim", "Reflect.enumerate")
-    @js.native
-    def enumerate(target: js.Any): Iterator[_] = js.native
+    @scala.inline
+    def deleteProperty(target: js.Any, propertyKey: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteProperty")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("es6-shim", "Reflect.get")
-    @js.native
-    def get(target: js.Any, propertyKey: PropertyKey): js.Any = js.native
-    @JSImport("es6-shim", "Reflect.get")
-    @js.native
-    def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = js.native
+    @scala.inline
+    def enumerate(target: js.Any): Iterator[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerate")(target.asInstanceOf[js.Any]).asInstanceOf[Iterator[js.Any]]
     
-    @JSImport("es6-shim", "Reflect.getOwnPropertyDescriptor")
-    @js.native
-    def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
+    @scala.inline
+    def get(target: js.Any, propertyKey: PropertyKey): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get(target: js.Any, propertyKey: PropertyKey, receiver: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("es6-shim", "Reflect.getPrototypeOf")
-    @js.native
-    def getPrototypeOf(target: js.Any): js.Any = js.native
+    @scala.inline
+    def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("getOwnPropertyDescriptor")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[PropertyDescriptor]
     
-    @JSImport("es6-shim", "Reflect.has")
-    @js.native
-    def has(target: js.Any, propertyKey: PropertyKey): Boolean = js.native
+    @scala.inline
+    def getPrototypeOf(target: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototypeOf")(target.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("es6-shim", "Reflect.isExtensible")
-    @js.native
-    def isExtensible(target: js.Any): Boolean = js.native
+    @scala.inline
+    def has(target: js.Any, propertyKey: PropertyKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("es6-shim", "Reflect.ownKeys")
-    @js.native
-    def ownKeys(target: js.Any): Array[PropertyKey] = js.native
+    @scala.inline
+    def isExtensible(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtensible")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("es6-shim", "Reflect.preventExtensions")
-    @js.native
-    def preventExtensions(target: js.Any): Boolean = js.native
+    @scala.inline
+    def ownKeys(target: js.Any): Array[PropertyKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("ownKeys")(target.asInstanceOf[js.Any]).asInstanceOf[Array[PropertyKey]]
     
-    @JSImport("es6-shim", "Reflect.set")
-    @js.native
-    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = js.native
-    @JSImport("es6-shim", "Reflect.set")
-    @js.native
-    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = js.native
+    @scala.inline
+    def preventExtensions(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventExtensions")(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("es6-shim", "Reflect.setPrototypeOf")
-    @js.native
-    def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = js.native
+    @scala.inline
+    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def set(target: js.Any, propertyKey: PropertyKey, value: js.Any, receiver: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any], receiver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def setPrototypeOf(target: js.Any, proto: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(target.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("es6-shim", "Set")
   @js.native
   class Set[T] ()
-    extends typings.es6Shim.Set[T] {
+    extends StObject
+       with typings.es6Shim.Set[T] {
     def this(iterable: IterableShim[T]) = this()
   }
   @JSImport("es6-shim", "Set")
@@ -162,8 +152,21 @@ object mod {
   @JSImport("es6-shim", "WeakMap")
   @js.native
   class WeakMap[K /* <: js.Object */, V] ()
-    extends typings.es6Shim.WeakMap[K, V] {
+    extends StObject
+       with typings.es6Shim.WeakMap[K, V] {
     def this(iterable: IterableShim[js.Tuple2[K, V]]) = this()
+    
+    /* CompleteClass */
+    override def delete(key: K): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get(key: K): js.UndefOr[V] = js.native
+    
+    /* CompleteClass */
+    override def has(key: K): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set(key: K, value: V): typings.es6Shim.WeakMap[K, V] = js.native
   }
   @JSImport("es6-shim", "WeakMap")
   @js.native
@@ -175,8 +178,18 @@ object mod {
   @JSImport("es6-shim", "WeakSet")
   @js.native
   class WeakSet[T] ()
-    extends typings.es6Shim.WeakSet[T] {
+    extends StObject
+       with typings.es6Shim.WeakSet[T] {
     def this(iterable: IterableShim[T]) = this()
+    
+    /* CompleteClass */
+    override def add(value: T): typings.es6Shim.WeakSet[T] = js.native
+    
+    /* CompleteClass */
+    override def delete(value: T): Boolean = js.native
+    
+    /* CompleteClass */
+    override def has(value: T): Boolean = js.native
   }
   @JSImport("es6-shim", "WeakSet")
   @js.native

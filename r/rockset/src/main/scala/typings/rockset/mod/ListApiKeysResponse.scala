@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApiKeysResponse extends StObject {
   
   // list of API key objects
-  var data: js.UndefOr[js.Array[ApiKey]] = js.native
+  var data: js.UndefOr[js.Array[ApiKey]] = js.undefined
 }
 object ListApiKeysResponse {
   

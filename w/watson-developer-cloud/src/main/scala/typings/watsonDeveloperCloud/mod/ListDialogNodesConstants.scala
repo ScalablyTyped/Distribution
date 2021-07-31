@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listDialogNodes` operation. */
@@ -16,14 +15,18 @@ object ListDialogNodesConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait DIALOG_NODE extends Sort
-    /* "dialog_node" */ val DIALOG_NODE: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.DIALOG_NODE with String = js.native
+    sealed trait DIALOG_NODE
+      extends StObject
+         with Sort
+    /* "dialog_node" */ val DIALOG_NODE: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.DIALOG_NODE & String = js.native
     
     @js.native
-    sealed trait UPDATED extends Sort
-    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.UPDATED with String = js.native
+    sealed trait UPDATED
+      extends StObject
+         with Sort
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.UPDATED & String = js.native
   }
 }

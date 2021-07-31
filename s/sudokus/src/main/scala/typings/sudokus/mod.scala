@@ -2,24 +2,24 @@ package typings.sudokus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sudokus", "solve")
+  @JSImport("sudokus", JSImport.Namespace)
   @js.native
-  def solve(data: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = js.native
-  @JSImport("sudokus", "solve")
-  @js.native
-  def solve(data: js.Array[js.Array[Double]], options: Options): js.Array[js.Array[Double]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def solve(data: js.Array[js.Array[Double]]): js.Array[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[Double]]]
+  @scala.inline
+  def solve(data: js.Array[js.Array[Double]], options: Options): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("solve")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  
   trait Cell extends StObject {
     
-    var fixed: Boolean = js.native
+    var fixed: Boolean
     
-    var value: Double = js.native
+    var value: Double
   }
   object Cell {
     
@@ -40,10 +40,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var onProgress: js.UndefOr[ProgressFn] = js.native
+    var onProgress: js.UndefOr[ProgressFn] = js.undefined
   }
   object Options {
     

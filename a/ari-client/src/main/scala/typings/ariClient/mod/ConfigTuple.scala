@@ -2,21 +2,19 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigTuple extends StObject {
   
   /**
     * A configuration object attribute.
     */
-  var attribute: String = js.native
+  var attribute: String
   
   /**
     * The value for the attribute.
     */
-  var value: String = js.native
+  var value: String
 }
 object ConfigTuple {
   

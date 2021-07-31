@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,12 +17,11 @@ object mod extends Shortcut {
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
   override def _to: typings.argv.mod.argv = ^
   
-  @js.native
   trait args extends StObject {
     
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[js.Any]
     
-    var targets: js.Array[String] = js.native
+    var targets: js.Array[String]
   }
   object args {
     
@@ -83,18 +81,17 @@ object mod extends Shortcut {
     def version(v: String): typings.argv.mod.argv = js.native
   }
   
-  @js.native
   trait helpOption extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var example: js.UndefOr[String] = js.native
+    var example: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var short: js.UndefOr[String] = js.native
+    var short: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object helpOption {
     
@@ -134,14 +131,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait module extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var mod: String = js.native
+    var mod: String
     
-    var options: StringDictionary[helpOption] = js.native
+    var options: StringDictionary[helpOption]
   }
   object module {
     
@@ -165,5 +161,9 @@ object mod extends Shortcut {
     }
   }
   
-  type typeFunction = js.Function2[/* value */ js.Any, /* repeated */ js.Any, js.Any]
+  @js.native
+  trait typeFunction extends StObject {
+    
+    def apply(value: js.Any, arglist: js.Any*): js.Any = js.native
+  }
 }

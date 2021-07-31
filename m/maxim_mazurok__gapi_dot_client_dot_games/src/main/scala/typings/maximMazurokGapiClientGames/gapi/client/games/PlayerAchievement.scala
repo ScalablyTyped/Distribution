@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlayerAchievement extends StObject {
   
   /** The state of the achievement. */
-  var achievementState: js.UndefOr[String] = js.native
+  var achievementState: js.UndefOr[String] = js.undefined
   
   /** The current steps for an incremental achievement. */
-  var currentSteps: js.UndefOr[Double] = js.native
+  var currentSteps: js.UndefOr[Double] = js.undefined
   
   /**
     * Experience points earned for the achievement. This field is absent for achievements that have not yet been unlocked and 0 for achievements that have been unlocked by testers but
     * that are unpublished.
     */
-  var experiencePoints: js.UndefOr[String] = js.native
+  var experiencePoints: js.UndefOr[String] = js.undefined
   
   /** The current steps for an incremental achievement as a string. */
-  var formattedCurrentStepsString: js.UndefOr[String] = js.native
+  var formattedCurrentStepsString: js.UndefOr[String] = js.undefined
   
   /** The ID of the achievement. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#playerAchievement`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The timestamp of the last modification to this achievement's state. */
-  var lastUpdatedTimestamp: js.UndefOr[String] = js.native
+  var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
 }
 object PlayerAchievement {
   

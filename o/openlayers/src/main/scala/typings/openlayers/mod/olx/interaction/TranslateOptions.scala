@@ -5,15 +5,13 @@ import typings.openlayers.mod.Feature
 import typings.openlayers.mod.layer.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateOptions extends StObject {
   
-  var features: js.UndefOr[Collection[Feature]] = js.native
+  var features: js.UndefOr[Collection[Feature]] = js.undefined
   
-  var layers: js.UndefOr[js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])] = js.native
+  var layers: js.UndefOr[js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])] = js.undefined
 }
 object TranslateOptions {
   

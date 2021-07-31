@@ -2,7 +2,6 @@ package typings.babelPluginTransformRuntime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,7 +17,9 @@ object mod {
     - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`2`
     - typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3`
   */
-  trait CorejsVersion extends CorejsOption
+  trait CorejsVersion
+    extends StObject
+       with CorejsOption
   object CorejsVersion {
     
     @scala.inline
@@ -28,20 +29,19 @@ object mod {
     def `3`: typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3` = 3.asInstanceOf[typings.babelPluginTransformRuntime.babelPluginTransformRuntimeNumbers.`3`]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var absoluteRuntime: js.UndefOr[Boolean | String] = js.native
+    var absoluteRuntime: js.UndefOr[Boolean | String] = js.undefined
     
-    var corejs: js.UndefOr[CorejsOption] = js.native
+    var corejs: js.UndefOr[CorejsOption] = js.undefined
     
-    var helpers: js.UndefOr[Boolean] = js.native
+    var helpers: js.UndefOr[Boolean] = js.undefined
     
-    var regenerator: js.UndefOr[Boolean] = js.native
+    var regenerator: js.UndefOr[Boolean] = js.undefined
     
-    var useESModules: js.UndefOr[Boolean] = js.native
+    var useESModules: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -11,7 +11,6 @@ import typings.openui5.sap.ui.core.routing.HashChanger
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object test {
@@ -97,7 +96,9 @@ object test {
   }
   
   @js.native
-  trait Opa5 extends Object {
+  trait Opa5
+    extends StObject
+       with Object {
     
     /**
       * Create a page object configured as arrangement, action and assertion to the Opa.config.Use it to
@@ -234,7 +235,6 @@ object test {
     def waitFor(oOptions: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait OpaPlugin extends StObject {
     
     /**
@@ -243,7 +243,7 @@ object test {
       * @param fnConstructorType the control type, e.g: sap.m.CheckBox
       * @returns an array of the found controls (can be empty)
       */
-    def getAllControls(fnConstructorType: js.Any): js.Array[_] = js.native
+    def getAllControls(fnConstructorType: js.Any): js.Array[js.Any]
     
     /**
       * Returns a control by its idaccepts an object with an ID property the ID can bewill check a control
@@ -255,7 +255,7 @@ object test {
       * controlType property, will check it as well
       * @returns all controls matched by the regex or the control matched by the string or null
       */
-    def getControlByGlobalId(oOptions: js.Any): js.Array[Element] = js.native
+    def getControlByGlobalId(oOptions: js.Any): js.Array[Element]
     
     /**
       * Gets the constructor function of a certain controlType
@@ -263,7 +263,7 @@ object test {
       * @returns When the type is loaded, the contstructor is returned, if it is a lazy stub or not yet
       * loaded, null will be returned and there will be a log entry.
       */
-    def getControlConstructor(sControlType: String): js.Any = js.native
+    def getControlConstructor(sControlType: String): js.Any
     
     /**
       * Gets a control inside of the view (same as calling oView.byId)If no ID is provided, it will return
@@ -279,7 +279,7 @@ object test {
       * controls, if the view is not found or no control is found for multiple ids an empty array is
       * returned.
       */
-    def getControlInView(oOptions: js.Any): Element | js.Array[Element] | js.Any = js.native
+    def getControlInView(oOptions: js.Any): Element | js.Array[Element] | js.Any
     
     /**
       * Tries to find a control depending on the options provided.
@@ -288,13 +288,13 @@ object test {
       * if no id was given</li>    <li>the found control/element when an id as a string is specified</li>   
       * <li>null if an id as string was specified</li></ul>
       */
-    def getMatchingControls(oOptions: js.Any): Element | js.Array[Element] | js.Any = js.native
+    def getMatchingControls(oOptions: js.Any): Element | js.Array[Element] | js.Any
     
     /**
       * Returns a metadata object for class sap.ui.test.OpaPlugin.
       * @returns Metadata object describing this class
       */
-    def getMetadata(): Metadata = js.native
+    def getMetadata(): Metadata
     
     /**
       * Returns the view with a specific name - if there are multiple views with that name only the first
@@ -302,13 +302,13 @@ object test {
       * @param sViewName the name of the view
       * @returns or undefined
       */
-    def getView(sViewName: String): View = js.native
+    def getView(sViewName: String): View
   }
   object OpaPlugin {
     
     @scala.inline
     def apply(
-      getAllControls: js.Any => js.Array[_],
+      getAllControls: js.Any => js.Array[js.Any],
       getControlByGlobalId: js.Any => js.Array[Element],
       getControlConstructor: String => js.Any,
       getControlInView: js.Any => Element | js.Array[Element] | js.Any,
@@ -324,7 +324,7 @@ object test {
     implicit class OpaPluginMutableBuilder[Self <: OpaPlugin] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetAllControls(value: js.Any => js.Array[_]): Self = StObject.set(x, "getAllControls", js.Any.fromFunction1(value))
+      def setGetAllControls(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "getAllControls", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetControlByGlobalId(value: js.Any => js.Array[Element]): Self = StObject.set(x, "getControlByGlobalId", js.Any.fromFunction1(value))
@@ -347,7 +347,9 @@ object test {
   }
   
   @js.native
-  trait PageObjectFactory extends Object {
+  trait PageObjectFactory
+    extends StObject
+       with Object {
     
     /**
       * Create a page object configured as arrangement, action and assertion to the Opa.config.Use it to
@@ -360,7 +362,9 @@ object test {
   object actions {
     
     @js.native
-    trait Action extends ManagedObject {
+    trait Action
+      extends StObject
+         with ManagedObject {
       
       /**
         * Checks if the matcher is matching - will get an instance of sap.ui.Control as parameterShould be
@@ -388,7 +392,9 @@ object test {
     }
     
     @js.native
-    trait EnterText extends Action {
+    trait EnterText
+      extends StObject
+         with Action {
       
       /**
         * Gets current value of property <code>clearTextFirst</code>.Default value is <code>true</code>.
@@ -425,7 +431,9 @@ object test {
     }
     
     @js.native
-    trait Press extends Action {
+    trait Press
+      extends StObject
+         with Action {
       
       /**
         * A map that contains the id suffixes for certain controls of the library.When you extended a UI5
@@ -447,7 +455,9 @@ object test {
   object gherkin {
     
     @js.native
-    trait StepDefinitions extends Object {
+    trait StepDefinitions
+      extends StObject
+         with Object {
       
       /**
         * Closes the application and cleans up any mess made by the tests. To avoid erroneous exceptions
@@ -487,7 +497,9 @@ object test {
   object matchers {
     
     @js.native
-    trait AggregationContainsPropertyEqual extends Matcher {
+    trait AggregationContainsPropertyEqual
+      extends StObject
+         with Matcher {
       
       /**
         * Gets current value of property <code>aggregationName</code>.The Name of the aggregation that is used
@@ -539,7 +551,9 @@ object test {
     }
     
     @js.native
-    trait AggregationFilled extends Matcher {
+    trait AggregationFilled
+      extends StObject
+         with Matcher {
       
       /**
         * Gets current value of property <code>name</code>.The name of the aggregation that is used for
@@ -559,7 +573,9 @@ object test {
     }
     
     @js.native
-    trait AggregationLengthEquals extends Matcher {
+    trait AggregationLengthEquals
+      extends StObject
+         with Matcher {
       
       /**
         * Gets current value of property <code>length</code>.The length that aggregation <code>name</code>
@@ -594,11 +610,12 @@ object test {
       def setName(sName: String): AggregationLengthEquals = js.native
     }
     
-    @js.native
     trait Ancestor extends StObject
     
     @js.native
-    trait BindingPath extends Matcher {
+    trait BindingPath
+      extends StObject
+         with Matcher {
       
       /**
         * Gets current value of property <code>modelName</code>.The name of the binding model that is used for
@@ -634,10 +651,14 @@ object test {
     }
     
     @js.native
-    trait Interactable extends Matcher
+    trait Interactable
+      extends StObject
+         with Matcher
     
     @js.native
-    trait Matcher extends ManagedObject {
+    trait Matcher
+      extends StObject
+         with ManagedObject {
       
       /**
         * Checks if the matcher is matching - will get an instance of sap.ui.Control as parameter.Should be
@@ -648,11 +669,12 @@ object test {
       def isMatching(oControl: Control): Boolean = js.native
     }
     
-    @js.native
     trait Properties extends StObject
     
     @js.native
-    trait PropertyStrictEquals extends Matcher {
+    trait PropertyStrictEquals
+      extends StObject
+         with Matcher {
       
       /**
         * Gets current value of property <code>name</code>.The Name of the property that is used for matching.

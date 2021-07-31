@@ -4,38 +4,36 @@ import typings.maximMazurokGapiClientAnalytics.anon.Effective
 import typings.maximMazurokGapiClientAnalytics.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /** Child link for an account entry. Points to the list of web properties for this account. */
-  var childLink: js.UndefOr[Href] = js.native
+  var childLink: js.UndefOr[Href] = js.undefined
   
   /** Time the account was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** Account ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics account. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Account name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Permissions the user has for this account. */
-  var permissions: js.UndefOr[Effective] = js.native
+  var permissions: js.UndefOr[Effective] = js.undefined
   
   /** Link for this account. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Indicates whether this account is starred or not. */
-  var starred: js.UndefOr[Boolean] = js.native
+  var starred: js.UndefOr[Boolean] = js.undefined
   
   /** Time the account was last modified. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Account {
   

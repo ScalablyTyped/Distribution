@@ -3,17 +3,15 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.ON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationReplicaSyncOnInfo extends StObject {
   
-  var master_sync_in_progress: ON = js.native
+  var master_sync_in_progress: ON
   
-  var master_sync_last_io_seconds_ago: String = js.native
+  var master_sync_last_io_seconds_ago: String
   
-  var master_sync_left_bytes: String = js.native
+  var master_sync_left_bytes: String
 }
 object ReplicationReplicaSyncOnInfo {
   

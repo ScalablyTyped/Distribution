@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTrackListEventMap extends StObject {
   
-  var addtrack: TrackEvent = js.native
+  var addtrack: TrackEvent
   
-  var change: Event = js.native
+  var change: Event
   
-  var removetrack: TrackEvent = js.native
+  var removetrack: TrackEvent
 }
 object TextTrackListEventMap {
   

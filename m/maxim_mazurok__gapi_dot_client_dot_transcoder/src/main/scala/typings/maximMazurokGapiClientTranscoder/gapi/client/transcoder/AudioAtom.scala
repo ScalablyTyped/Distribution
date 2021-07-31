@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioAtom extends StObject {
   
   /** List of `Channel`s for this audio stream. for in-depth explanation. */
-  var channels: js.UndefOr[js.Array[AudioChannel]] = js.native
+  var channels: js.UndefOr[js.Array[AudioChannel]] = js.undefined
   
   /** Required. The `EditAtom.key` that references the atom with audio inputs in the `Job.edit_list`. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
 }
 object AudioAtom {
   

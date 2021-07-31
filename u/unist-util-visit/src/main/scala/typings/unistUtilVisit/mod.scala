@@ -11,7 +11,6 @@ import typings.unistUtilVisitParents.mod.Index
 import typings.unistUtilVisitParents.mod.Skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,18 +22,14 @@ object mod {
     * @param visitor function to run for each node
     * @param reverse visit the tree in reverse, defaults to false
     */
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply(tree: Node, visitor: Visitor[Node]): Unit = js.native
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply(tree: Node, visitor: Visitor[Node], reverse: Boolean): Unit = js.native
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[_]], visitor: Visitor[V]): Unit = js.native
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[_]], visitor: Visitor[V], reverse: Boolean): Unit = js.native
+  @scala.inline
+  def apply(tree: Node, visitor: Visitor[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(tree: Node, visitor: Visitor[Node], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[V /* <: Node */](tree: Node, test: js.Array[Test[js.Any]], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Visit children of tree which pass a test
     *
@@ -45,12 +40,10 @@ object mod {
     * @typeParam T tree node
     * @typeParam V node type found
     */
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V]): Unit = js.native
-  @JSImport("unist-util-visit", JSImport.Namespace)
-  @js.native
-  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V], reverse: Boolean): Unit = js.native
+  @scala.inline
+  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V]): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[V /* <: Node */](tree: Node, test: Test[V], visitor: Visitor[V], reverse: Boolean): Unit = (^.asInstanceOf[js.Dynamic].apply(tree.asInstanceOf[js.Any], test.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("unist-util-visit", JSImport.Namespace)
   @js.native

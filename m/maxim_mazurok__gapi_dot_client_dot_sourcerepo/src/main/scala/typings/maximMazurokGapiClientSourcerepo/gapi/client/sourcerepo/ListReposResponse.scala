@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSourcerepo.gapi.client.sourcerepo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReposResponse extends StObject {
   
   /** If non-empty, additional repositories exist within the project. These can be retrieved by including this value in the next ListReposRequest's page_token field. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The listed repos. */
-  var repos: js.UndefOr[js.Array[Repo]] = js.native
+  var repos: js.UndefOr[js.Array[Repo]] = js.undefined
 }
 object ListReposResponse {
   

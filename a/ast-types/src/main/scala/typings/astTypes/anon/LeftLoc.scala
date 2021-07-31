@@ -8,21 +8,19 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeftLoc extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var left: ExpressionKind = js.native
+  var left: ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark = js.native
+  var operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark
   
-  var right: ExpressionKind = js.native
+  var right: ExpressionKind
 }
 object LeftLoc {
   

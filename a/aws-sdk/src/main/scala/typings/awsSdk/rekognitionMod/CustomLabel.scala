@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLabel extends StObject {
   
   /**
     * The confidence that the model has in the detection of the custom label. The range is 0-100. A higher value indicates a higher confidence.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * The location of the detected object on the image that corresponds to the custom label. Includes an axis aligned coarse bounding box surrounding the object and a finer grain polygon for more accurate spatial information.
     */
-  var Geometry: js.UndefOr[typings.awsSdk.rekognitionMod.Geometry] = js.native
+  var Geometry: js.UndefOr[typings.awsSdk.rekognitionMod.Geometry] = js.undefined
   
   /**
     * The name of the custom label.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object CustomLabel {
   

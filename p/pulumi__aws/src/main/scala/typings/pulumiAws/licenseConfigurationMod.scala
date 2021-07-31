@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object licenseConfigurationMod {
@@ -64,6 +63,10 @@ object licenseConfigurationMod {
   /* static members */
   object LicenseConfiguration {
     
+    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LicenseConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,65 +76,59 @@ object licenseConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LicenseConfiguration = js.native
-    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LicenseConfiguration = js.native
-    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LicenseConfigurationState): LicenseConfiguration = js.native
-    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LicenseConfigurationState, opts: CustomResourceOptions): LicenseConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LicenseConfigurationState): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LicenseConfigurationState, opts: CustomResourceOptions): LicenseConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LicenseConfiguration]
     
     /**
       * Returns true if the given object is an instance of LicenseConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/licenseConfiguration.LicenseConfiguration */ Boolean]
   }
   
-  @js.native
   trait LicenseConfigurationArgs extends StObject {
     
     /**
       * Description of the license configuration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Number of licenses managed by the license configuration.
       */
-    val licenseCount: js.UndefOr[Input[Double]] = js.native
+    val licenseCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Sets the number of available licenses as a hard limit.
       */
-    val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.native
+    val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Dimension to use to track license inventory. Specify either `vCPU`, `Instance`, `Core` or `Socket`.
       */
-    val licenseCountingType: Input[String] = js.native
+    val licenseCountingType: Input[String]
     
     /**
       * Array of configured License Manager rules.
       */
-    val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Name of the license configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LicenseConfigurationArgs {
     
@@ -188,43 +185,42 @@ object licenseConfigurationMod {
     }
   }
   
-  @js.native
   trait LicenseConfigurationState extends StObject {
     
     /**
       * Description of the license configuration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Number of licenses managed by the license configuration.
       */
-    val licenseCount: js.UndefOr[Input[Double]] = js.native
+    val licenseCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Sets the number of available licenses as a hard limit.
       */
-    val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.native
+    val licenseCountHardLimit: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Dimension to use to track license inventory. Specify either `vCPU`, `Instance`, `Core` or `Socket`.
       */
-    val licenseCountingType: js.UndefOr[Input[String]] = js.native
+    val licenseCountingType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Array of configured License Manager rules.
       */
-    val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val licenseRules: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Name of the license configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object LicenseConfigurationState {
     

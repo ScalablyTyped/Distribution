@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EgressOnlyInternetGateway extends StObject {
   
   /**
     * Information about the attachment of the egress-only internet gateway.
     */
-  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.native
+  var Attachments: js.UndefOr[InternetGatewayAttachmentList] = js.undefined
   
   /**
     * The ID of the egress-only internet gateway.
     */
-  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.EgressOnlyInternetGatewayId] = js.native
+  var EgressOnlyInternetGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.EgressOnlyInternetGatewayId] = js.undefined
   
   /**
     * The tags assigned to the egress-only internet gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object EgressOnlyInternetGateway {
   

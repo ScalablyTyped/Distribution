@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetResult extends StObject {
   
   /** FacetBuckets for values in response containing at least a single result. */
-  var buckets: js.UndefOr[js.Array[FacetBucket]] = js.native
+  var buckets: js.UndefOr[js.Array[FacetBucket]] = js.undefined
   
   /** Object type for which facet results are returned. Can be empty. */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /** Name of the operator chosen for faceting. @see cloudsearch.SchemaPropertyOptions */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /** Source name for which facet results are returned. Will not be empty. */
-  var sourceName: js.UndefOr[String] = js.native
+  var sourceName: js.UndefOr[String] = js.undefined
 }
 object FacetResult {
   

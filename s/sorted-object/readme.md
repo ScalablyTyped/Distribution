@@ -11,8 +11,8 @@ Returns a copy of an object with its keys sorted
 | Full name          | sorted-object |
 | Keywords           | sort, keys, object |
 | # releases         | 0 |
-| # dependents       | 238 |
-| # downloads        | 19366614 |
+| # dependents       | 242 |
+| # downloads        | 24320992 |
 | # stars            | 1 |
 
 ## Links

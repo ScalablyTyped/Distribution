@@ -4,39 +4,37 @@ import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentSpecResolver extends StObject {
   
   /**
     * Stop watching for changes to the results of the fragments.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Get the current results.
     */
-  def resolve(): FragmentSpecResults = js.native
+  def resolve(): FragmentSpecResults
   
   /**
     * Subscribe to resolver updates.
     * Overrides existing callback (if one has been specified).
     */
-  def setCallback(callback: js.Function0[Unit]): Unit = js.native
+  def setCallback(callback: js.Function0[Unit]): Unit
   
   /**
     * Update the resolver with new inputs. Call `resolve()` to get the updated
     * results.
     */
-  def setProps(props: Props): Unit = js.native
+  def setProps(props: Props): Unit
   
   /**
     * Override the variables used to read the results of the fragments. Call
     * `resolve()` to get the updated results.
     */
-  def setVariables(variables: Variables, node: ConcreteRequest): Unit = js.native
+  def setVariables(variables: Variables, node: ConcreteRequest): Unit
 }
 object FragmentSpecResolver {
   

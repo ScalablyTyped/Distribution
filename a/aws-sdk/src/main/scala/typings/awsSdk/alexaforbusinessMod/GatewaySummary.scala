@@ -2,36 +2,34 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewaySummary extends StObject {
   
   /**
     * The ARN of the gateway.
     */
-  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Arn] = js.undefined
   
   /**
     * The description of the gateway.
     */
-  var Description: js.UndefOr[GatewayDescription] = js.native
+  var Description: js.UndefOr[GatewayDescription] = js.undefined
   
   /**
     * The ARN of the gateway group that the gateway is associated to.
     */
-  var GatewayGroupArn: js.UndefOr[Arn] = js.native
+  var GatewayGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the gateway.
     */
-  var Name: js.UndefOr[GatewayName] = js.native
+  var Name: js.UndefOr[GatewayName] = js.undefined
   
   /**
     * The software version of the gateway. The gateway automatically updates its software version during normal operation.
     */
-  var SoftwareVersion: js.UndefOr[GatewayVersion] = js.native
+  var SoftwareVersion: js.UndefOr[GatewayVersion] = js.undefined
 }
 object GatewaySummary {
   

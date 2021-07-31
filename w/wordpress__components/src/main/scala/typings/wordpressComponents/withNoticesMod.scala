@@ -10,7 +10,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.noticeOperations
 import typings.wordpressComponents.wordpressComponentsStrings.noticeUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withNoticesMod {
@@ -18,21 +17,23 @@ object withNoticesMod {
   object default {
     
     // prettier-ignore
+    @scala.inline
+    def apply[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]] = ^.asInstanceOf[js.Dynamic].apply(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, noticeList | noticeOperations | noticeUI]]]
+    
     @JSImport("@wordpress/components/higher-order/with-notices", JSImport.Default)
     @js.native
-    def apply[T /* <: ComponentType[_] */](wrapped: T): ComponentType[Omit[_, noticeList | noticeOperations | noticeUI]] = js.native
+    val ^ : js.Any = js.native
   }
   
   object withNotices {
     
-    @js.native
     trait Props extends StObject {
       
-      var noticeList: js.Array[Notice] = js.native
+      var noticeList: js.Array[Notice]
       
-      var noticeOperations: CreateErrorNotice = js.native
+      var noticeOperations: CreateErrorNotice
       
-      var noticeUI: ReactNode = js.native
+      var noticeUI: ReactNode
     }
     object Props {
       

@@ -4,32 +4,29 @@ import typings.tuyaPanelKit.stackTypesMod.StackHeaderInterpolatedStyle
 import typings.tuyaPanelKit.stackTypesMod.StackHeaderInterpolationProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerStyleInterpolatorsMod {
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forFade")
+  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", JSImport.Namespace)
   @js.native
-  def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forNoAnimation")
-  @js.native
-  def forNoAnimation(): StackHeaderInterpolatedStyle = js.native
+  @scala.inline
+  def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(hasCurrentNext.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forSlideLeft")
-  @js.native
-  def forSlideLeft(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+  @scala.inline
+  def forNoAnimation(): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackHeaderInterpolatedStyle]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forSlideRight")
-  @js.native
-  def forSlideRight(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+  @scala.inline
+  def forSlideLeft(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forSlideUp")
-  @js.native
-  def forSlideUp(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+  @scala.inline
+  def forSlideRight(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack/TransitionConfigs/HeaderStyleInterpolators", "forUIKit")
-  @js.native
-  def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+  @scala.inline
+  def forSlideUp(hasCurrentNextHasHeader: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(hasCurrentNextHasHeader.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+  
+  @scala.inline
+  def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
 }

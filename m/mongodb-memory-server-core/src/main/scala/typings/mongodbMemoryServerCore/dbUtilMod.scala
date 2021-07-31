@@ -2,34 +2,30 @@ package typings.mongodbMemoryServerCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dbUtilMod {
   
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", JSImport.Default)
+  @JSImport("mongodb-memory-server-core/lib/util/db_util", JSImport.Namespace)
   @js.native
-  def default(): String = js.native
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", JSImport.Default)
-  @js.native
-  def default(dbName: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", "generateDbName")
-  @js.native
-  def generateDbName(): String = js.native
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", "generateDbName")
-  @js.native
-  def generateDbName(dbName: String): String = js.native
+  @scala.inline
+  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  @scala.inline
+  def default(dbName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dbName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", "getHost")
-  @js.native
-  def getHost(uri: String): String = js.native
+  @scala.inline
+  def generateDbName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDbName")().asInstanceOf[String]
+  @scala.inline
+  def generateDbName(dbName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateDbName")(dbName.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", "getUriBase")
-  @js.native
-  def getUriBase(host: String, port: Double, dbName: String): String = js.native
+  @scala.inline
+  def getHost(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHost")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mongodb-memory-server-core/lib/util/db_util", "isNullOrUndefined")
-  @js.native
-  def isNullOrUndefined(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def getUriBase(host: String, port: Double, dbName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUriBase")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], dbName.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def isNullOrUndefined(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

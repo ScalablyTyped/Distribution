@@ -20,13 +20,12 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used on provider side to access a {@link ContentResultSet} remote optimized. */
-@js.native
 trait CachedContentResultSetStub
-  extends ContentResultSet
+  extends StObject
+     with ContentResultSet
      with XFetchProvider
      with XFetchProviderForContentAccess
 object CachedContentResultSetStub {

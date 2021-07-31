@@ -3,33 +3,31 @@ package typings.stripeV3.anon
 import typings.stripeV3.stripe.OwnerAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var address: OwnerAddress | Null = js.native
+  var address: OwnerAddress | Null
   
-  var email: String | Null = js.native
+  var email: String | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
-  var phone: String | Null = js.native
+  var phone: String | Null
   
-  var verified_address: String | Null = js.native
+  var verified_address: String | Null
   
-  var verified_email: String | Null = js.native
+  var verified_email: String | Null
   
-  var verified_name: String | Null = js.native
+  var verified_name: String | Null
   
-  var verified_phone: String | Null = js.native
+  var verified_phone: String | Null
 }
 object Address {
   
   @scala.inline
   def apply(): Address = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(address = null, email = null, name = null, phone = null, verified_address = null, verified_email = null, verified_name = null, verified_phone = null)
     __obj.asInstanceOf[Address]
   }
   

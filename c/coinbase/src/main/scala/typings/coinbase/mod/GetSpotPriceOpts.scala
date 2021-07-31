@@ -2,21 +2,19 @@ package typings.coinbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSpotPriceOpts extends StObject {
   
   /**
     * Currency pair, e.g. 'BTC-USD'
     */
-  var currencyPair: String = js.native
+  var currencyPair: String
   
   /**
     * Specify date for historic spot price in format YYYY-MM-DD (UTC)
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
 }
 object GetSpotPriceOpts {
   

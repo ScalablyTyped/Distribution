@@ -7,14 +7,15 @@ import typings.vanillaSwipe.typesMod.EventData
 import typings.vanillaSwipe.typesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vanilla-swipe", JSImport.Default)
   @js.native
-  class default protected () extends VanillaSwipe {
+  class default protected ()
+    extends StObject
+       with VanillaSwipe {
     def this(props: ConstructorProps) = this()
   }
   

@@ -3,19 +3,17 @@ package typings.vis.mod
 import typings.vis.anon.Background
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
-  var highlight: js.UndefOr[String | Background] = js.native
+  var highlight: js.UndefOr[String | Background] = js.undefined
   
-  var hover: js.UndefOr[String | Background] = js.native
+  var hover: js.UndefOr[String | Background] = js.undefined
 }
 object Color {
   

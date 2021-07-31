@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
@@ -17,9 +16,8 @@ object urlMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/url", "Url.containsClientScript")
-    @js.native
-    def containsClientScript(url: String): Boolean = js.native
+    @scala.inline
+    def containsClientScript(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containsClientScript")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.getFrame")
     @js.native
@@ -27,12 +25,10 @@ object urlMod {
     @scala.inline
     def getFrame_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFrame")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/url", "Url.navigate")
-    @js.native
-    def navigate(url: String): Unit = js.native
-    @JSImport("@devexpress/utils/lib/utils/url", "Url.navigate")
-    @js.native
-    def navigate(url: String, target: String): Unit = js.native
+    @scala.inline
+    def navigate(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def navigate(url: String, target: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(url.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/utils/url", "Url.navigateTo")
     @js.native

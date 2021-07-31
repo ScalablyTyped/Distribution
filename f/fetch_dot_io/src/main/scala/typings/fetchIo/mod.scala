@@ -9,7 +9,6 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,8 +54,8 @@ object mod {
     /**
       * Make Response to JSON
       */
-    def json(): js.Promise[_] = js.native
-    def json(strict: Boolean): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any] = js.native
+    def json(strict: Boolean): js.Promise[js.Any] = js.native
     
     /**
       * HTTP options method
@@ -102,11 +101,11 @@ object mod {
     /**
       * Get Response directly
       */
-    def `then`(resolve: js.Function1[/* value */ js.UndefOr[Response], Unit]): js.Promise[_] = js.native
+    def `then`(resolve: js.Function1[/* value */ js.UndefOr[Response], Unit]): js.Promise[js.Any] = js.native
     def `then`(
       resolve: js.Function1[/* value */ js.UndefOr[Response], Unit],
       reject: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = js.native
     
     @JSName("type")
     def type_form(`type`: form): this.type = js.native
@@ -123,20 +122,21 @@ object mod {
   
   type Header = StringDictionary[String]
   
-  @js.native
-  trait Options extends RequestInit {
+  trait Options
+    extends StObject
+       with RequestInit {
     
-    var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, Unit]] = js.native
+    var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, Unit]] = js.undefined
     
-    var afterResponse: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.native
+    var afterResponse: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.undefined
     
-    var beforeRequest: js.UndefOr[js.Function2[/* url */ TUrl, /* body */ BodyInit, Boolean | Unit]] = js.native
+    var beforeRequest: js.UndefOr[js.Function2[/* url */ TUrl, /* body */ BodyInit, Boolean | Unit]] = js.undefined
     
-    var header: js.UndefOr[Header] = js.native
+    var header: js.UndefOr[Header] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
   }
   object Options {
     

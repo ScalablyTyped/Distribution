@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathQueryOptions extends StObject {
   
   /** Custom Channel Groupings. */
-  var channelGrouping: js.UndefOr[ChannelGrouping] = js.native
+  var channelGrouping: js.UndefOr[ChannelGrouping] = js.undefined
   
   /** Path Filters. There is a limit of 100 path filters that can be set per report. */
-  var pathFilters: js.UndefOr[js.Array[PathFilter]] = js.native
+  var pathFilters: js.UndefOr[js.Array[PathFilter]] = js.undefined
 }
 object PathQueryOptions {
   

@@ -2,7 +2,6 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Application")
@@ -20,7 +19,7 @@ class Application () extends Object {
     * attached region. If the Application is not currently displaying a
     * view, this method returns undefined.
     */
-  def getView(): View[_] = js.native
+  def getView(): View[js.Any] = js.native
   
   /**
     * Called immediately after the Application has been instantiated, and
@@ -47,7 +46,7 @@ class Application () extends Object {
     * Display View in the region attached to the Application. This runs the
     * View lifecycle.
     */
-  def showView(view: View[_]): Unit = js.native
+  def showView(view: View[js.Any]): Unit = js.native
   
   /**
     * Once you have your application configured, you can kick everything

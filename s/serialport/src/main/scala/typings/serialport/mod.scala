@@ -46,7 +46,6 @@ import typings.serialport.serialportStrings.utf8
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,7 +56,7 @@ object mod {
     def this(path: String) = this()
     def this(path: String, callback: ErrorCallback) = this()
     def this(path: String, options: OpenOptions) = this()
-    def this(path: String, options: js.UndefOr[scala.Nothing], callback: ErrorCallback) = this()
+    def this(path: String, options: Unit, callback: ErrorCallback) = this()
     def this(path: String, options: OpenOptions, callback: ErrorCallback) = this()
   }
   @JSImport("serialport", JSImport.Namespace)
@@ -70,32 +69,35 @@ object mod {
   class BaseBinding protected () extends StObject {
     def this(options: js.Any) = this()
     
-    def close(): js.Promise[_] = js.native
+    def close(): js.Promise[js.Any] = js.native
     
-    def drain(): js.Promise[_] = js.native
+    def drain(): js.Promise[js.Any] = js.native
     
-    def flush(): js.Promise[_] = js.native
+    def flush(): js.Promise[js.Any] = js.native
     
-    def get(): js.Promise[_] = js.native
+    def get(): js.Promise[js.Any] = js.native
     
-    def open(path: String, options: OpenOptions): js.Promise[_] = js.native
+    def open(path: String, options: OpenOptions): js.Promise[js.Any] = js.native
     
-    def read(data: Buffer, offset: Double, length: Double): js.Promise[_] = js.native
+    def read(data: Buffer, offset: Double, length: Double): js.Promise[js.Any] = js.native
     
-    def set(): js.Promise[_] = js.native
-    def set(options: SetOptions): js.Promise[_] = js.native
+    def set(): js.Promise[js.Any] = js.native
+    def set(options: SetOptions): js.Promise[js.Any] = js.native
     
-    def update(): js.Promise[_] = js.native
-    def update(options: UpdateOptions): js.Promise[_] = js.native
+    def update(): js.Promise[js.Any] = js.native
+    def update(options: UpdateOptions): js.Promise[js.Any] = js.native
     
-    def write(data: Buffer): js.Promise[_] = js.native
+    def write(data: Buffer): js.Promise[js.Any] = js.native
   }
   object BaseBinding {
     
-    /* static member */
-    @JSImport("serialport", "BaseBinding.list")
+    @JSImport("serialport", "BaseBinding")
     @js.native
-    def list(): js.Promise[js.Array[PortInfo]] = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
   }
   
   /* static member */
@@ -106,9 +108,8 @@ object mod {
   def Binding_=(x: BaseBinding): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binding")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("serialport", "list")
-  @js.native
-  def list(): js.Promise[js.Array[PortInfo]] = js.native
+  @scala.inline
+  def list(): js.Promise[js.Array[PortInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[PortInfo]]]
   
   object parsers {
     
@@ -153,36 +154,35 @@ object mod {
   type ModemBitsCallback = js.Function2[/* error */ js.UndefOr[Error | Null], /* status */ Cts, Unit]
   
   // Options Type Defs
-  @js.native
   trait OpenOptions extends StObject {
     
-    var autoOpen: js.UndefOr[Boolean] = js.native
+    var autoOpen: js.UndefOr[Boolean] = js.undefined
     
     var baudRate: js.UndefOr[
         `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
-      ] = js.native
+      ] = js.undefined
     
-    var binding: js.UndefOr[BaseBinding] = js.native
+    var binding: js.UndefOr[BaseBinding] = js.undefined
     
-    var bindingOptions: js.UndefOr[Vmin] = js.native
+    var bindingOptions: js.UndefOr[Vmin] = js.undefined
     
-    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.native
+    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var lock: js.UndefOr[Boolean] = js.native
+    var lock: js.UndefOr[Boolean] = js.undefined
     
-    var parity: js.UndefOr[none | even | mark | odd | space] = js.native
+    var parity: js.UndefOr[none | even | mark | odd | space] = js.undefined
     
-    var rtscts: js.UndefOr[Boolean] = js.native
+    var rtscts: js.UndefOr[Boolean] = js.undefined
     
-    var stopBits: js.UndefOr[`1` | `2`] = js.native
+    var stopBits: js.UndefOr[`1` | `2`] = js.undefined
     
-    var xany: js.UndefOr[Boolean] = js.native
+    var xany: js.UndefOr[Boolean] = js.undefined
     
-    var xoff: js.UndefOr[Boolean] = js.native
+    var xoff: js.UndefOr[Boolean] = js.undefined
     
-    var xon: js.UndefOr[Boolean] = js.native
+    var xon: js.UndefOr[Boolean] = js.undefined
   }
   object OpenOptions {
     
@@ -277,22 +277,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PortInfo extends StObject {
     
-    var locationId: js.UndefOr[String] = js.native
+    var locationId: js.UndefOr[String] = js.undefined
     
-    var manufacturer: js.UndefOr[String] = js.native
+    var manufacturer: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var pnpId: js.UndefOr[String] = js.native
+    var pnpId: js.UndefOr[String] = js.undefined
     
-    var productId: js.UndefOr[String] = js.native
+    var productId: js.UndefOr[String] = js.undefined
     
-    var serialNumber: js.UndefOr[String] = js.native
+    var serialNumber: js.UndefOr[String] = js.undefined
     
-    var vendorId: js.UndefOr[String] = js.native
+    var vendorId: js.UndefOr[String] = js.undefined
   }
   object PortInfo {
     
@@ -380,17 +379,17 @@ object mod {
     
     def write(
       buffer: String,
-      encoding: js.UndefOr[scala.Nothing],
+      encoding: Unit,
       callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(
       buffer: js.Array[Double],
-      encoding: js.UndefOr[scala.Nothing],
+      encoding: Unit,
       callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(
       buffer: Buffer,
-      encoding: js.UndefOr[scala.Nothing],
+      encoding: Unit,
       callback: js.Function2[/* error */ js.UndefOr[Error | Null], /* bytesWritten */ Double, Unit]
     ): Boolean = js.native
     def write(data: String): Boolean = js.native
@@ -578,18 +577,17 @@ object mod {
     ): Boolean = js.native
   }
   
-  @js.native
   trait SetOptions extends StObject {
     
-    var brk: js.UndefOr[Boolean] = js.native
+    var brk: js.UndefOr[Boolean] = js.undefined
     
-    var cts: js.UndefOr[Boolean] = js.native
+    var cts: js.UndefOr[Boolean] = js.undefined
     
-    var dsr: js.UndefOr[Boolean] = js.native
+    var dsr: js.UndefOr[Boolean] = js.undefined
     
-    var dtr: js.UndefOr[Boolean] = js.native
+    var dtr: js.UndefOr[Boolean] = js.undefined
     
-    var rts: js.UndefOr[Boolean] = js.native
+    var rts: js.UndefOr[Boolean] = js.undefined
   }
   object SetOptions {
     
@@ -634,12 +632,11 @@ object mod {
     }
   }
   
-  @js.native
   trait UpdateOptions extends StObject {
     
     var baudRate: js.UndefOr[
         `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
-      ] = js.native
+      ] = js.undefined
   }
   object UpdateOptions {
     

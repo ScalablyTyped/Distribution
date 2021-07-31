@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Security.Authentication.Web
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the result of the authentication operation. */
-@js.native
 trait WebAuthenticationResult extends StObject {
   
   /** Contains the protocol data when the operation successfully completes. */
-  var responseData: String = js.native
+  var responseData: String
   
   /** Returns the HTTP error code when ResponseStatus is equal to WebAuthenticationStatus.ErrorHttp . This is only available if there is an error. */
-  var responseErrorDetail: Double = js.native
+  var responseErrorDetail: Double
   
   /** Contains the status of the asynchronous operation when it completes. */
-  var responseStatus: WebAuthenticationStatus = js.native
+  var responseStatus: WebAuthenticationStatus
 }
 object WebAuthenticationResult {
   

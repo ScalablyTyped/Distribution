@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublishingDestinationsRequest extends StObject {
   
   /**
     * The ID of the detector to retrieve publishing destinations for.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The maximum number of results to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.guarddutyMod.MaxResults] = js.undefined
   
   /**
     * A token to use for paginating results that are returned in the response. Set the value of this parameter to null for the first request to a list action. For subsequent calls, use the NextToken value returned from the previous request to continue listing results after the first page.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListPublishingDestinationsRequest {
   

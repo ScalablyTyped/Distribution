@@ -5,83 +5,69 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("promptly", "choose")
+  @JSImport("promptly", JSImport.Namespace)
   @js.native
-  def choose(message: String, choices: js.Array[String]): js.Any = js.native
-  @JSImport("promptly", "choose")
-  @js.native
-  def choose(message: String, choices: js.Array[String], fn: Callback): js.Any = js.native
-  @JSImport("promptly", "choose")
-  @js.native
-  def choose(message: String, choices: js.Array[String], opts: Options): js.Any = js.native
-  @JSImport("promptly", "choose")
-  @js.native
-  def choose(message: String, choices: js.Array[String], opts: Options, fn: Callback): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("promptly", "confirm")
-  @js.native
-  def confirm(message: String): js.Any = js.native
-  @JSImport("promptly", "confirm")
-  @js.native
-  def confirm(message: String, fn: Callback): js.Any = js.native
-  @JSImport("promptly", "confirm")
-  @js.native
-  def confirm(message: String, opts: Options): js.Any = js.native
-  @JSImport("promptly", "confirm")
-  @js.native
-  def confirm(message: String, opts: Options, fn: Callback): js.Any = js.native
+  @scala.inline
+  def choose(message: String, choices: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def choose(message: String, choices: js.Array[String], fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def choose(message: String, choices: js.Array[String], opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def choose(message: String, choices: js.Array[String], opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(message.asInstanceOf[js.Any], choices.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("promptly", "password")
-  @js.native
-  def password(message: String): js.Any = js.native
-  @JSImport("promptly", "password")
-  @js.native
-  def password(message: String, fn: Callback): js.Any = js.native
-  @JSImport("promptly", "password")
-  @js.native
-  def password(message: String, opts: Options): js.Any = js.native
-  @JSImport("promptly", "password")
-  @js.native
-  def password(message: String, opts: Options, fn: Callback): js.Any = js.native
+  @scala.inline
+  def confirm(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def confirm(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def confirm(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def confirm(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("promptly", "prompt")
-  @js.native
-  def prompt(message: String): js.Any = js.native
-  @JSImport("promptly", "prompt")
-  @js.native
-  def prompt(message: String, fn: Callback): js.Any = js.native
-  @JSImport("promptly", "prompt")
-  @js.native
-  def prompt(message: String, opts: Options): js.Any = js.native
-  @JSImport("promptly", "prompt")
-  @js.native
-  def prompt(message: String, opts: Options, fn: Callback): js.Any = js.native
+  @scala.inline
+  def password(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def password(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def password(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def password(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def prompt(message: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def prompt(message: String, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def prompt(message: String, opts: Options): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def prompt(message: String, opts: Options, fn: Callback): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("prompt")(message.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Callback = js.Function2[/* err */ Error, /* value */ String, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var input: js.UndefOr[ReadableStream] = js.native
+    var input: js.UndefOr[ReadableStream] = js.undefined
     
-    var output: js.UndefOr[WritableStream] = js.native
+    var output: js.UndefOr[WritableStream] = js.undefined
     
-    var replace: js.UndefOr[String] = js.native
+    var replace: js.UndefOr[String] = js.undefined
     
-    var retry: js.UndefOr[Boolean] = js.native
+    var retry: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
-    var validator: js.UndefOr[js.Any] = js.native
+    var validator: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

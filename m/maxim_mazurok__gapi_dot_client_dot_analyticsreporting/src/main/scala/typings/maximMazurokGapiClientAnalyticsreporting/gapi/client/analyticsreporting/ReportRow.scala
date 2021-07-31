@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportRow extends StObject {
   
   /** List of requested dimensions. */
-  var dimensions: js.UndefOr[js.Array[String]] = js.native
+  var dimensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of metrics for each requested DateRange. */
-  var metrics: js.UndefOr[js.Array[DateRangeValues]] = js.native
+  var metrics: js.UndefOr[js.Array[DateRangeValues]] = js.undefined
 }
 object ReportRow {
   

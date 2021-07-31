@@ -2,19 +2,17 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delta extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
-  var range: Range = js.native
+  var range: Range
   
-  var text: String = js.native
+  var text: String
 }
 object Delta {
   

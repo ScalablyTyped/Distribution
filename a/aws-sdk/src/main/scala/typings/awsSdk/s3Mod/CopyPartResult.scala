@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyPartResult extends StObject {
   
   /**
     * Entity tag of the object.
     */
-  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.native
+  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
     * Date and time at which the object was uploaded.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
 }
 object CopyPartResult {
   

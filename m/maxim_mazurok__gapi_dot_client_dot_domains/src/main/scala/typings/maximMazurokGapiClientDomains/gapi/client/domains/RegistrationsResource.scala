@@ -17,7 +17,6 @@ import typings.maximMazurokGapiClientDomains.anon.Resource
 import typings.maximMazurokGapiClientDomains.anon.UploadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,14 +41,14 @@ trait RegistrationsResource extends StObject {
   def delete(): Request[Operation] = js.native
   def delete(request: Accesstoken): Request[Operation] = js.native
   
-  def export(request: Accesstoken, body: ExportRegistrationRequest): Request[Operation] = js.native
+  def `export`(request: Accesstoken, body: ExportRegistrationRequest): Request[Operation] = js.native
   /**
     * Exports a `Registration` that you no longer want to use with Cloud Domains. You can continue to use the domain in [Google Domains](https://domains.google/) until it expires. If the
     * export is successful: * The resource's `state` becomes `EXPORTED`, meaning that it is no longer managed by Cloud Domains * Because individual users can own domains in Google
     * Domains, the calling user becomes the domain's sole owner. Permissions for the domain are subsequently managed in Google Domains. * Without further action, the domain does not renew
     * automatically. The new owner can set up billing in Google Domains to renew the domain if needed.
     */
-  def export(request: Name): Request[Operation] = js.native
+  def `export`(request: Name): Request[Operation] = js.native
   
   /** Gets the details of a `Registration` resource. */
   def get(): Request[Registration] = js.native

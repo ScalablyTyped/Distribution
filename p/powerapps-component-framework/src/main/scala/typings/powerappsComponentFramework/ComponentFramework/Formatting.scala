@@ -4,7 +4,6 @@ import typings.powerappsComponentFramework.ComponentFramework.FormattingApi.Type
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ trait Formatting extends StObject {
     * @param symbol The currency symbol/code to be added with currency value.
     */
   def formatCurrency(value: Double): String = js.native
-  def formatCurrency(value: Double, precision: js.UndefOr[scala.Nothing], symbol: String): String = js.native
   def formatCurrency(value: Double, precision: Double): String = js.native
   def formatCurrency(value: Double, precision: Double, symbol: String): String = js.native
+  def formatCurrency(value: Double, precision: Unit, symbol: String): String = js.native
   
   /**
     * Returns a formatted string that represents a date in a YYYY-MM-DD standard UTC format.

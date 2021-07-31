@@ -2,10 +2,8 @@ package typings.cordovaPluginDeviceOrientation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /** 
@@ -13,7 +11,7 @@ trait Navigator extends StObject {
     * the direction or heading that the device is pointed, typically from the top of the device.
     * It measures the heading in degrees from 0 to 359.99, where 0 is north.
     */
-  var compass: Compass = js.native
+  var compass: Compass
 }
 object Navigator {
   

@@ -2,41 +2,39 @@ package typings.kendoUi.kendo.mobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationOptions extends StObject {
   
-  var browserHistory: js.UndefOr[Boolean] = js.native
+  var browserHistory: js.UndefOr[Boolean] = js.undefined
   
-  var hideAddressBar: js.UndefOr[Boolean] = js.native
+  var hideAddressBar: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* e */ ApplicationEvent, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* e */ ApplicationEvent, Unit]] = js.undefined
   
-  var initial: js.UndefOr[String] = js.native
+  var initial: js.UndefOr[String] = js.undefined
   
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
-  var loading: js.UndefOr[String] = js.native
+  var loading: js.UndefOr[String] = js.undefined
   
-  var modelScope: js.UndefOr[js.Object] = js.native
+  var modelScope: js.UndefOr[js.Object] = js.undefined
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var retina: js.UndefOr[Boolean] = js.native
+  var retina: js.UndefOr[Boolean] = js.undefined
   
-  var serverNavigation: js.UndefOr[Boolean] = js.native
+  var serverNavigation: js.UndefOr[Boolean] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var statusBarStyle: js.UndefOr[String] = js.native
+  var statusBarStyle: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var updateDocumentTitle: js.UndefOr[Boolean] = js.native
+  var updateDocumentTitle: js.UndefOr[Boolean] = js.undefined
   
-  var useNativeScrolling: js.UndefOr[Boolean] = js.native
+  var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationOptions {
   

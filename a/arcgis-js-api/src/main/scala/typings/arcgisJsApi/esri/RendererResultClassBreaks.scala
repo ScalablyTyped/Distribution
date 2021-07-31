@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RendererResultClassBreaks extends Object {
+trait RendererResultClassBreaks
+  extends StObject
+     with Object {
   
   /**
     * The class breaks generated for values in the `field1` parameter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var field1: ClassBreaksResult = js.native
+  var field1: ClassBreaksResult
   
   /**
     * The class breaks generated for values in the `field2` parameter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#RendererResult)
     */
-  var field2: ClassBreaksResult = js.native
+  var field2: ClassBreaksResult
 }
 object RendererResultClassBreaks {
   

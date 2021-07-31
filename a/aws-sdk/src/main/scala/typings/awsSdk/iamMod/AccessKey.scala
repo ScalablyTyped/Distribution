@@ -2,36 +2,34 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessKey extends StObject {
   
   /**
     * The ID for this access key.
     */
-  var AccessKeyId: accessKeyIdType = js.native
+  var AccessKeyId: accessKeyIdType
   
   /**
     * The date when the access key was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * The secret key used to sign requests.
     */
-  var SecretAccessKey: accessKeySecretType = js.native
+  var SecretAccessKey: accessKeySecretType
   
   /**
     * The status of the access key. Active means that the key is valid for API calls, while Inactive means it is not. 
     */
-  var Status: statusType = js.native
+  var Status: statusType
   
   /**
     * The name of the IAM user that the access key is associated with.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object AccessKey {
   

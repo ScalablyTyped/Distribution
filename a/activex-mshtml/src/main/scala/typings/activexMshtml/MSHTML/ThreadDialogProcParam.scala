@@ -2,22 +2,20 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreadDialogProcParam extends StObject {
   
   @JSName("MSHTML.ThreadDialogProcParam_typekey")
-  var MSHTMLDotThreadDialogProcParam_typekey: ThreadDialogProcParam = js.native
+  var MSHTMLDotThreadDialogProcParam_typekey: ThreadDialogProcParam
   
-  val document: js.Any = js.native
+  val document: js.Any
   
-  val moniker: js.Any = js.native
+  val moniker: js.Any
   
-  val optionString: js.Any = js.native
+  val optionString: js.Any
   
-  val parameters: js.Any = js.native
+  val parameters: js.Any
 }
 object ThreadDialogProcParam {
   

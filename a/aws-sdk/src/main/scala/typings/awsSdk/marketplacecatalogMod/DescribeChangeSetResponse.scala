@@ -2,56 +2,54 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChangeSetResponse extends StObject {
   
   /**
     * An array of ChangeSummary objects.
     */
-  var ChangeSet: js.UndefOr[ChangeSetDescription] = js.native
+  var ChangeSet: js.UndefOr[ChangeSetDescription] = js.undefined
   
   /**
     * The ARN associated with the unique identifier for the change set referenced in this request.
     */
-  var ChangeSetArn: js.UndefOr[ARN] = js.native
+  var ChangeSetArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Required. The unique identifier for the change set referenced in this request.
     */
-  var ChangeSetId: js.UndefOr[ResourceId] = js.native
+  var ChangeSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The optional name provided in the StartChangeSet request. If you do not provide a name, one is set by default.
     */
-  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.native
+  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format (2018-02-27T13:45:22Z), the request transitioned to a terminal state. The change cannot transition to a different state. Null if the request is not in a terminal state. 
     */
-  var EndTime: js.UndefOr[DateTimeISO8601] = js.native
+  var EndTime: js.UndefOr[DateTimeISO8601] = js.undefined
   
   /**
     * Returned if the change set is in FAILED status. Can be either CLIENT_ERROR, which means that there are issues with the request (see the ErrorDetailList), or SERVER_FAULT, which means that there is a problem in the system, and you should retry your request.
     */
-  var FailureCode: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FailureCode] = js.native
+  var FailureCode: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FailureCode] = js.undefined
   
   /**
     * Returned if there is a failure on the change set, but that failure is not related to any of the changes in the request.
     */
-  var FailureDescription: js.UndefOr[StringValue] = js.native
+  var FailureDescription: js.UndefOr[StringValue] = js.undefined
   
   /**
     * The date and time, in ISO 8601 format (2018-02-27T13:45:22Z), the request started. 
     */
-  var StartTime: js.UndefOr[DateTimeISO8601] = js.native
+  var StartTime: js.UndefOr[DateTimeISO8601] = js.undefined
   
   /**
     * The status of the change request.
     */
-  var Status: js.UndefOr[ChangeStatus] = js.native
+  var Status: js.UndefOr[ChangeStatus] = js.undefined
 }
 object DescribeChangeSetResponse {
   

@@ -3,7 +3,6 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,7 +42,7 @@ trait IListDataNotificationHandler[T] extends StObject {
     * Indicates that all previous data obtained from the IListDataAdapter is invalid and should be refreshed.
     * @returns A Promise that completes when the data has been completely refreshed and all change notifications have been sent.
     **/
-  def invalidateAll(): Promise[_] = js.native
+  def invalidateAll(): Promise[js.Any] = js.native
   
   /**
     * Raises a notification that an item was moved within the IListDataAdapter object's data source.
@@ -54,15 +53,9 @@ trait IListDataNotificationHandler[T] extends StObject {
     * @param newIndex The item's new index.
     **/
   def moved(item: IItem[T], previousKey: String, nextKey: String): Unit = js.native
-  def moved(
-    item: IItem[T],
-    previousKey: String,
-    nextKey: String,
-    oldIndex: js.UndefOr[scala.Nothing],
-    newIndex: Double
-  ): Unit = js.native
   def moved(item: IItem[T], previousKey: String, nextKey: String, oldIndex: Double): Unit = js.native
   def moved(item: IItem[T], previousKey: String, nextKey: String, oldIndex: Double, newIndex: Double): Unit = js.native
+  def moved(item: IItem[T], previousKey: String, nextKey: String, oldIndex: Unit, newIndex: Double): Unit = js.native
   
   /**
     * Reloads data from the IListDataAdapter.

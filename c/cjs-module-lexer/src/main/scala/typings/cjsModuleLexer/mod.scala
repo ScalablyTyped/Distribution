@@ -2,28 +2,27 @@ package typings.cjsModuleLexer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cjs-module-lexer", "init")
+  @JSImport("cjs-module-lexer", JSImport.Namespace)
   @js.native
-  def init(): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cjs-module-lexer", "parse")
-  @js.native
-  def parse(source: String): Exports = js.native
-  @JSImport("cjs-module-lexer", "parse")
-  @js.native
-  def parse(source: String, name: String): Exports = js.native
+  @scala.inline
+  def init(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def parse(source: String): Exports = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Exports]
+  @scala.inline
+  def parse(source: String, name: String): Exports = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Exports]
+  
   trait Exports extends StObject {
     
-    var exports: js.Array[String] = js.native
+    var exports: js.Array[String]
     
-    var reexports: js.Array[String] = js.native
+    var reexports: js.Array[String]
   }
   object Exports {
     

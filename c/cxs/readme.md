@@ -12,7 +12,7 @@ Fast af css-in-js in under 1kb
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 624259 |
+| # downloads        | 657088 |
 | # stars            | 5 |
 
 ## Links

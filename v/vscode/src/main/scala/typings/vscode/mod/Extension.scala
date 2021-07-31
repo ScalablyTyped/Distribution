@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extension[T] extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait Extension[T] extends StObject {
     *
     * @return A promise that will resolve when this extension has been activated.
     */
-  def activate(): Thenable[T] = js.native
+  def activate(): Thenable[T]
   
   /**
     * The public API exported by this extension. It is an invalid action
     * to access this field before this extension has been activated.
     */
-  val exports: T = js.native
+  val exports: T
   
   /**
     * The extension kind describes if an extension runs where the UI runs
@@ -29,33 +27,33 @@ trait Extension[T] extends StObject {
     * via the `remote.extensionKind`-setting. When no remote extension host exists,
     * the value is [`ExtensionKind.UI`](#ExtensionKind.UI).
     */
-  var extensionKind: ExtensionKind = js.native
+  var extensionKind: ExtensionKind
   
   /**
     * The absolute file path of the directory containing this extension. Shorthand
     * notation for [Extension.extensionUri.fsPath](#Extension.extensionUri) (independent of the uri scheme).
     */
-  val extensionPath: String = js.native
+  val extensionPath: String
   
   /**
     * The uri of the directory containing the extension.
     */
-  val extensionUri: Uri = js.native
+  val extensionUri: Uri
   
   /**
     * The canonical extension identifier in the form of: `publisher.name`.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * `true` if the extension has been activated.
     */
-  val isActive: Boolean = js.native
+  val isActive: Boolean
   
   /**
     * The parsed contents of the extension's package.json.
     */
-  val packageJSON: js.Any = js.native
+  val packageJSON: js.Any
 }
 object Extension {
   
@@ -75,7 +73,7 @@ object Extension {
   }
   
   @scala.inline
-  implicit class ExtensionMutableBuilder[Self <: Extension[_], T] (val x: Self with Extension[T]) extends AnyVal {
+  implicit class ExtensionMutableBuilder[Self <: Extension[?], T] (val x: Self & Extension[T]) extends AnyVal {
     
     @scala.inline
     def setActivate(value: () => Thenable[T]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))

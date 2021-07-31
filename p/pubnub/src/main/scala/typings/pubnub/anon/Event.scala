@@ -3,17 +3,15 @@ package typings.pubnub.anon
 import typings.pubnub.mod.SpaceData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var data: SpaceData = js.native
+  var data: SpaceData
   
-  var event: String = js.native
+  var event: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Event {
   

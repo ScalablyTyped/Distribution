@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServiceConfigsResponse extends StObject {
   
   /** The token of the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of service configuration resources. */
-  var serviceConfigs: js.UndefOr[js.Array[Service]] = js.native
+  var serviceConfigs: js.UndefOr[js.Array[Service]] = js.undefined
 }
 object ListServiceConfigsResponse {
   

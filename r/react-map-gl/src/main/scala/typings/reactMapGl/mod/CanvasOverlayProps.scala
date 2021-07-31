@@ -2,13 +2,13 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CanvasOverlayProps extends BaseControlProps {
+trait CanvasOverlayProps
+  extends StObject
+     with BaseControlProps {
   
-  def redraw(opts: CanvasRedrawOptions): Unit = js.native
+  def redraw(opts: CanvasRedrawOptions): Unit
 }
 object CanvasOverlayProps {
   

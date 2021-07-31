@@ -3,11 +3,9 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options that determine what data should be cleared by *clearData* */
-@js.native
 trait ClearDataOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait ClearDataOptions extends StObject {
     * If absent, defaults to 0 (which would remove all browsing data).
     * @default 0
     */
-  var since: js.UndefOr[integer] = js.native
+  var since: js.UndefOr[integer] = js.undefined
 }
 object ClearDataOptions {
   

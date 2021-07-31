@@ -18,7 +18,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provider {
@@ -37,17 +36,18 @@ object provider {
   type MasterScriptProviderFactory = XScriptProviderFactory
   
   /** is a checked exception that represents an error encountered by a {@link LanguageScriptProvider} whilst executing a script */
-  @js.native
-  trait ScriptErrorRaisedException extends Exception {
+  trait ScriptErrorRaisedException
+    extends StObject
+       with Exception {
     
     /** Scripting language of script that generated exception */
-    var language: String = js.native
+    var language: String
     
     /** line number where error occurred. */
-    var lineNum: Double = js.native
+    var lineNum: Double
     
     /** Name of script where error occurred */
-    var scriptName: String = js.native
+    var scriptName: String
   }
   object ScriptErrorRaisedException {
     
@@ -72,11 +72,12 @@ object provider {
   }
   
   /** is a checked exception that represents the detail of an exception thrown by a {@link LanguageScriptProvider} whilst executing a script */
-  @js.native
-  trait ScriptExceptionRaisedException extends ScriptErrorRaisedException {
+  trait ScriptExceptionRaisedException
+    extends StObject
+       with ScriptErrorRaisedException {
     
     /** Name of script where error occurred */
-    var exceptionType: String = js.native
+    var exceptionType: String
   }
   object ScriptExceptionRaisedException {
     
@@ -102,17 +103,18 @@ object provider {
   }
   
   /** is a checked exception that represents an error encountered by the Scripting Framework whilst executing a script */
-  @js.native
-  trait ScriptFrameworkErrorException extends Exception {
+  trait ScriptFrameworkErrorException
+    extends StObject
+       with Exception {
     
     /** error type {@link com.sun.star.script.provider.ScriptFrameworkErrorType} */
-    var errorType: Double = js.native
+    var errorType: Double
     
     /** Scripting language of script that generated exception */
-    var language: String = js.native
+    var language: String
     
     /** Name of script where error occurred */
-    var scriptName: String = js.native
+    var scriptName: String
   }
   object ScriptFrameworkErrorException {
     
@@ -162,9 +164,9 @@ object provider {
   }
   
   /** This service providers a means to browse and execute scripts. */
-  @js.native
   trait ScriptProvider
-    extends BrowseNode
+    extends StObject
+       with BrowseNode
        with XScriptProvider
   object ScriptProvider {
     
@@ -184,7 +186,7 @@ object provider {
       hasChildNodes: () => Boolean,
       hasMethod: String => Boolean,
       hasProperty: String => Boolean,
-      invoke: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+      invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
       queryInterface: `type` => js.Any,
       release: () => Unit,
       setValue: (String, js.Any) => Unit
@@ -207,8 +209,9 @@ object provider {
   type ScriptProviderForJavaScript = LanguageScriptProvider
   
   /** This service is used to help transform Scripting Framework storage locations to Scripting Framework script URIs and vice versa. */
-  @js.native
-  trait ScriptURIHelper extends XScriptURIHelper {
+  trait ScriptURIHelper
+    extends StObject
+       with XScriptURIHelper {
     
     /**
       * create a new {@link ScriptURIHelper}
@@ -216,7 +219,7 @@ object provider {
       * @param location This location which was passed to the {@link LanguageScriptProvider} by the Scripting Framework on its creation
       * @throws com::sun::star::lang::IllegalArgumentException
       */
-    def create(language: String, location: String): Unit = js.native
+    def create(language: String, location: String): Unit
   }
   object ScriptURIHelper {
     
@@ -244,8 +247,9 @@ object provider {
   }
   
   /** This interface represents an invokable script or UNO function. */
-  @js.native
-  trait XScript extends XInterface {
+  trait XScript
+    extends StObject
+       with XInterface {
     
     /**
       * invoke the script or function represented by the implementing object
@@ -255,14 +259,18 @@ object provider {
       * @returns the value returned from the function being invoked
       * @throws com::sun::star::reflection::InvocationTargetException if and error occurs while attempting to invoke a script the information is captured. If the
       */
-    def invoke(aParams: SeqEquiv[_], aOutParamIndex: js.Array[SeqEquiv[Double]], aOutParam: js.Array[SeqEquiv[_]]): js.Any = js.native
+    def invoke(
+      aParams: SeqEquiv[js.Any],
+      aOutParamIndex: js.Array[SeqEquiv[Double]],
+      aOutParam: js.Array[SeqEquiv[js.Any]]
+    ): js.Any
   }
   object XScript {
     
     @scala.inline
     def apply(
       acquire: () => Unit,
-      invoke: (SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+      invoke: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
       queryInterface: `type` => js.Any,
       release: () => Unit
     ): XScript = {
@@ -274,7 +282,7 @@ object provider {
     implicit class XScriptMutableBuilder[Self <: XScript] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInvoke(value: (SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
+      def setInvoke(value: (SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))
     }
   }
   
@@ -282,26 +290,27 @@ object provider {
     * This interface is provided to scripts, and provides a means of access to the various interfaces which they might need to perform some action on a
     * document. It is required to be passed as the first argument for any Java scripts.
     */
-  @js.native
-  trait XScriptContext extends XInterface {
+  trait XScriptContext
+    extends StObject
+       with XInterface {
     
     /**
       * Obtain the component context which the script can use to create other uno components
       * @returns {@link com.sun.star.uno.XComponentContext} interface
       */
-    val ComponentContext: XComponentContext = js.native
+    val ComponentContext: XComponentContext
     
     /**
       * Obtain the desktop reference on which the script can operate
       * @returns {@link com.sun.star.frame.XDesktop} interface
       */
-    val Desktop: XDesktop = js.native
+    val Desktop: XDesktop
     
     /**
       * Obtain the document reference on which the script can operate
       * @returns {@link com.sun.star.frame.XModel} interface
       */
-    val Document: XModel = js.native
+    val Document: XModel
     
     /**
       * provides access to the context where the script was invoked
@@ -314,25 +323,25 @@ object provider {
       * If the returned context is not `NULL` , its `ScriptContainer` attribute equals the document as returned by `XScriptContext::getDocument` .
       * @since OOo 3.0
       */
-    val InvocationContext: XScriptInvocationContext = js.native
+    val InvocationContext: XScriptInvocationContext
     
     /**
       * Obtain the component context which the script can use to create other uno components
       * @returns {@link com.sun.star.uno.XComponentContext} interface
       */
-    def getComponentContext(): XComponentContext = js.native
+    def getComponentContext(): XComponentContext
     
     /**
       * Obtain the desktop reference on which the script can operate
       * @returns {@link com.sun.star.frame.XDesktop} interface
       */
-    def getDesktop(): XDesktop = js.native
+    def getDesktop(): XDesktop
     
     /**
       * Obtain the document reference on which the script can operate
       * @returns {@link com.sun.star.frame.XModel} interface
       */
-    def getDocument(): XModel = js.native
+    def getDocument(): XModel
     
     /**
       * provides access to the context where the script was invoked
@@ -345,7 +354,7 @@ object provider {
       * If the returned context is not `NULL` , its `ScriptContainer` attribute equals the document as returned by `XScriptContext::getDocument` .
       * @since OOo 3.0
       */
-    def getInvocationContext(): XScriptInvocationContext = js.native
+    def getInvocationContext(): XScriptInvocationContext
   }
   object XScriptContext {
     
@@ -397,8 +406,9 @@ object provider {
   }
   
   /** This interface provides a factory for obtaining objects implementing the {@link XScript} interface. */
-  @js.native
-  trait XScriptProvider extends XInterface {
+  trait XScriptProvider
+    extends StObject
+       with XInterface {
     
     /**
       * a factory method for the creation of {@link XScript} implementations.
@@ -406,7 +416,7 @@ object provider {
       * @returns an object implementing {@link com.sun.star.script.provider.XScript} representing the script
       * @throws com::sun::star::script::provider::ScriptFrameworkErrorException Framework error getting script for URI.
       */
-    def getScript(sScriptURI: String): XScript = js.native
+    def getScript(sScriptURI: String): XScript
   }
   object XScriptProvider {
     
@@ -430,8 +440,9 @@ object provider {
   }
   
   /** This interface provides a factory for obtaining objects implementing the {@link XScriptProvider} interface. */
-  @js.native
-  trait XScriptProviderFactory extends XInterface {
+  trait XScriptProviderFactory
+    extends StObject
+       with XInterface {
     
     /**
       * a factory method for the creation of XScriptProviders implementations.
@@ -439,7 +450,7 @@ object provider {
       * @returns an object implementing {@link com.sun.star.script.provider.XScriptProvider}
       * @throws com::sun::star::lang::IllegalArgumentException if illegal or unknown context is passed
       */
-    def createScriptProvider(Context: js.Any): XScriptProvider = js.native
+    def createScriptProvider(Context: js.Any): XScriptProvider
   }
   object XScriptProviderFactory {
     
@@ -463,20 +474,21 @@ object provider {
   }
   
   /** This interface allows to get the scripting provider related to the object. */
-  @js.native
-  trait XScriptProviderSupplier extends XInterface {
+  trait XScriptProviderSupplier
+    extends StObject
+       with XInterface {
     
     /**
       * returns scripting provider related to the object.
       * @returns an object implementing {@link com.sun.star.script.provider.XScriptProvider} representing the script provider
       */
-    val ScriptProvider: XScriptProvider = js.native
+    val ScriptProvider: XScriptProvider
     
     /**
       * returns scripting provider related to the object.
       * @returns an object implementing {@link com.sun.star.script.provider.XScriptProvider} representing the script provider
       */
-    def getScriptProvider(): XScriptProvider = js.native
+    def getScriptProvider(): XScriptProvider
   }
   object XScriptProviderSupplier {
     
@@ -504,36 +516,37 @@ object provider {
   }
   
   /** This interface is used to help transform Scripting Framework storage locations to Scripting Framework script URIs and vice versa. */
-  @js.native
-  trait XScriptURIHelper extends XInterface {
+  trait XScriptURIHelper
+    extends StObject
+       with XInterface {
     
     /**
       * Obtain the root storage URI for this {@link ScriptURIHelper} . The resulting string can be used to access the storage for this using the Universal
       * Content Broker
       * @returns a URI to the storage as a `string`
       */
-    val RootStorageURI: String = js.native
+    val RootStorageURI: String
     
     /**
       * Obtain the root storage URI for this {@link ScriptURIHelper} . The resulting string can be used to access the storage for this using the Universal
       * Content Broker
       * @returns a URI to the storage as a `string`
       */
-    def getRootStorageURI(): String = js.native
+    def getRootStorageURI(): String
     
     /**
       * Obtain the Scripting Framework script URI for a specific UCB URI
       * @returns the URI as a `string`
       * @throws com::sun::star::lang::IllegalArgumentException if the storageURI is not a valid
       */
-    def getScriptURI(storageURI: String): String = js.native
+    def getScriptURI(storageURI: String): String
     
     /**
       * Obtain the storage URI for a specific Scripting Framework script URI.
       * @returns a URI to the storage as a `string`
       * @throws com::sun::star::lang::IllegalArgumentException if the storageURI is not a valid
       */
-    def getStorageURI(scriptURI: String): String = js.native
+    def getStorageURI(scriptURI: String): String
   }
   object XScriptURIHelper {
     

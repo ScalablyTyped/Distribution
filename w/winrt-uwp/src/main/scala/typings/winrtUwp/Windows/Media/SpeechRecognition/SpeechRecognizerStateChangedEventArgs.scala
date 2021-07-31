@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the SpeechRecognizer.StateChangedEvent event. */
-@js.native
 trait SpeechRecognizerStateChangedEventArgs extends StObject {
   
   /** Gets the audio capture state. */
-  var state: SpeechRecognizerState = js.native
+  var state: SpeechRecognizerState
 }
 object SpeechRecognizerStateChangedEventArgs {
   

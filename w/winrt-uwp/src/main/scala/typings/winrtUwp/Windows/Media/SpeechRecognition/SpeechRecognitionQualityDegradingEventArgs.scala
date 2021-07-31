@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the SpeechRecognitionQualityDegradingEvent event. */
-@js.native
 trait SpeechRecognitionQualityDegradingEventArgs extends StObject {
   
   /** Gets the audio problem that occurred. */
-  var problem: SpeechRecognitionAudioProblem = js.native
+  var problem: SpeechRecognitionAudioProblem
 }
 object SpeechRecognitionQualityDegradingEventArgs {
   

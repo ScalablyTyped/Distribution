@@ -11,7 +11,6 @@ import typings.typeorm.orderByConditionMod.OrderByCondition
 import typings.typeorm.tableTypesMod.TableType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitySchemaOptionsMod {
@@ -30,7 +29,7 @@ object entitySchemaOptionsMod {
       */
     var columns: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? typeorm.typeorm/browser/entity-schema/EntitySchemaColumnOptions.EntitySchemaColumnOptions}
-      */ typings.typeorm.typeormStrings.EntitySchemaOptions with TopLevel[js.Any] = js.native
+      */ typings.typeorm.typeormStrings.EntitySchemaOptions & TopLevel[js.Any] = js.native
     
     /**
       * Database name. Used in MySql and Sql Server.
@@ -45,7 +44,7 @@ object entitySchemaOptionsMod {
     /**
       * View expression.
       */
-    var expression: js.UndefOr[String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[_]])] = js.native
+    var expression: js.UndefOr[String | (js.Function1[/* connection */ Connection, SelectQueryBuilder[js.Any]])] = js.native
     
     /**
       * Name of the schema it extends.
@@ -73,7 +72,7 @@ object entitySchemaOptionsMod {
     var relations: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]:? typeorm.typeorm/browser/entity-schema/EntitySchemaRelationOptions.EntitySchemaRelationOptions}
-      */ typings.typeorm.typeormStrings.EntitySchemaOptions with TopLevel[js.Any]
+      */ typings.typeorm.typeormStrings.EntitySchemaOptions & TopLevel[js.Any]
       ] = js.native
     
     /**

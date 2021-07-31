@@ -5,14 +5,12 @@ import typings.xmlpoke.XmlPoke.API
 import typings.xmlpoke.XmlPoke.XmlValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xmlpoke", JSImport.Namespace)
-  @js.native
-  def apply(xml: String, modify: js.Function1[/* api */ API, Unit]): String = js.native
+  @scala.inline
+  def apply(xml: String, modify: js.Function1[/* api */ API, Unit]): String = (^.asInstanceOf[js.Dynamic].apply(xml.asInstanceOf[js.Any], modify.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xmlpoke", JSImport.Namespace)
   @js.native
@@ -22,8 +20,12 @@ object mod {
   @JSImport("xmlpoke", "CDataValue")
   @js.native
   class CDataValue protected ()
-    extends typings.xmlpoke.XmlPoke.CDataValue {
+    extends StObject
+       with typings.xmlpoke.XmlPoke.CDataValue {
     def this(value: String) = this()
+    
+    /* CompleteClass */
+    var value: String = js.native
   }
   @JSImport("xmlpoke", "CDataValue")
   @js.native
@@ -34,8 +36,13 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("xmlpoke", "XmlString")
   @js.native
-  class XmlString protected () extends XmlValue {
+  class XmlString protected ()
+    extends StObject
+       with XmlValue {
     def this(value: String) = this()
+    
+    /* CompleteClass */
+    var value: String = js.native
   }
   @JSImport("xmlpoke", "XmlString")
   @js.native

@@ -4,30 +4,30 @@ import typings.marked.markedStrings.list_item
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItem extends Token {
+trait ListItem
+  extends StObject
+     with Token {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var loose: Boolean = js.native
+  var loose: Boolean
   
-  var raw: String = js.native
+  var raw: String
   
-  var task: Boolean = js.native
+  var task: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: list_item = js.native
+  var `type`: list_item
 }
 object ListItem {
   
   @scala.inline
-  def apply(checked: Boolean, loose: Boolean, raw: String, task: Boolean, text: String, `type`: list_item): ListItem = {
+  def apply(checked: Boolean, loose: Boolean, raw: String, task: Boolean, text: String): ListItem = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], loose = loose.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list_item")
     __obj.asInstanceOf[ListItem]
   }
   

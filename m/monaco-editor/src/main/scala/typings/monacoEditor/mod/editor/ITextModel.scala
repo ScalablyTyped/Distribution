@@ -11,11 +11,12 @@ import typings.monacoEditor.monacoEditorBooleans.`false`
 import typings.monacoEditor.monacoEditorBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ITextModel extends IEditorModel {
+trait ITextModel
+  extends StObject
+     with IEditorModel {
   
   /**
     * Edit the model without adding the edits to the undo stack.
@@ -238,9 +239,9 @@ trait ITextModel extends IEditorModel {
     * @param filterOutValidation If set, it will ignore decorations specific to validation (i.e. warnings, errors).
     */
   def getAllDecorations(): js.Array[IModelDecoration] = js.native
-  def getAllDecorations(ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getAllDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
   def getAllDecorations(ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getAllDecorations(ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
     * Get the alternative version id of the model.
@@ -278,9 +279,9 @@ trait ITextModel extends IEditorModel {
     * @return An array with the decorations
     */
   def getDecorationsInRange(range: IRange): js.Array[IModelDecoration] = js.native
-  def getDecorationsInRange(range: IRange, ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(range: IRange, ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
     * Get the end of line sequence predominantly used in the text buffer.
@@ -311,9 +312,9 @@ trait ITextModel extends IEditorModel {
     * @return An array with the decorations
     */
   def getLineDecorations(lineNumber: Double): js.Array[IModelDecoration] = js.native
-  def getLineDecorations(lineNumber: Double, ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getLineDecorations(lineNumber: Double, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getLineDecorations(lineNumber: Double, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getLineDecorations(lineNumber: Double, ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
     * Returns the column before the first non whitespace character for line at `lineNumber`.
@@ -356,14 +357,9 @@ trait ITextModel extends IEditorModel {
     * @return An array with the decorations
     */
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double): js.Array[IModelDecoration] = js.native
-  def getLinesDecorations(
-    startLineNumber: Double,
-    endLineNumber: Double,
-    ownerId: js.UndefOr[scala.Nothing],
-    filterOutValidation: Boolean
-  ): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getLinesDecorations(startLineNumber: Double, endLineNumber: Double, ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
     * Get the language associated with this model.
@@ -391,9 +387,9 @@ trait ITextModel extends IEditorModel {
     * @param filterOutValidation If set, it will ignore decorations specific to validation (i.e. warnings, errors).
     */
   def getOverviewRulerDecorations(): js.Array[IModelDecoration] = js.native
-  def getOverviewRulerDecorations(ownerId: js.UndefOr[scala.Nothing], filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   def getOverviewRulerDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
   def getOverviewRulerDecorations(ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getOverviewRulerDecorations(ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
     * Converts a zero-based offset to a position.
@@ -410,7 +406,7 @@ trait ITextModel extends IEditorModel {
     * @return The text.
     */
   def getValue(): String = js.native
-  def getValue(eol: js.UndefOr[scala.Nothing], preserveBOM: Boolean): String = js.native
+  def getValue(eol: Unit, preserveBOM: Boolean): String = js.native
   def getValue(eol: EndOfLinePreference): String = js.native
   def getValue(eol: EndOfLinePreference, preserveBOM: Boolean): String = js.native
   
@@ -427,7 +423,7 @@ trait ITextModel extends IEditorModel {
     * Get the length of the text stored in this model.
     */
   def getValueLength(): Double = js.native
-  def getValueLength(eol: js.UndefOr[scala.Nothing], preserveBOM: Boolean): Double = js.native
+  def getValueLength(eol: Unit, preserveBOM: Boolean): Double = js.native
   def getValueLength(eol: EndOfLinePreference): Double = js.native
   def getValueLength(eol: EndOfLinePreference, preserveBOM: Boolean): Double = js.native
   

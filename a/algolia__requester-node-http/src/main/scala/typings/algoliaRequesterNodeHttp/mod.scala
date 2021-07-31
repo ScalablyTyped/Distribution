@@ -6,28 +6,28 @@ import typings.node.httpsMod.Agent
 import typings.node.httpsMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/requester-node-http", "createNodeHttpRequester")
+  @JSImport("@algolia/requester-node-http", JSImport.Namespace)
   @js.native
-  def createNodeHttpRequester(): Requester with Destroyable = js.native
-  @JSImport("@algolia/requester-node-http", "createNodeHttpRequester")
-  @js.native
-  def createNodeHttpRequester(hasAgentHttpAgentHttpsAgentRequesterOptions: NodeHttpRequesterOptions): Requester with Destroyable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createNodeHttpRequester(): Requester & Destroyable = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpRequester")().asInstanceOf[Requester & Destroyable]
+  @scala.inline
+  def createNodeHttpRequester(hasUserGlobalAgentUserHttpAgentUserHttpsAgentRequesterOptions: NodeHttpRequesterOptions): Requester & Destroyable = ^.asInstanceOf[js.Dynamic].applyDynamic("createNodeHttpRequester")(hasUserGlobalAgentUserHttpAgentUserHttpsAgentRequesterOptions.asInstanceOf[js.Any]).asInstanceOf[Requester & Destroyable]
+  
   trait NodeHttpRequesterOptions extends StObject {
     
-    var agent: js.UndefOr[Agent | typings.node.httpMod.Agent] = js.native
+    var agent: js.UndefOr[Agent | typings.node.httpMod.Agent] = js.undefined
     
-    var httpAgent: js.UndefOr[typings.node.httpMod.Agent] = js.native
+    var httpAgent: js.UndefOr[typings.node.httpMod.Agent] = js.undefined
     
-    var httpsAgent: js.UndefOr[Agent] = js.native
+    var httpsAgent: js.UndefOr[Agent] = js.undefined
     
-    var requesterOptions: js.UndefOr[RequestOptions] = js.native
+    var requesterOptions: js.UndefOr[RequestOptions] = js.undefined
   }
   object NodeHttpRequesterOptions {
     

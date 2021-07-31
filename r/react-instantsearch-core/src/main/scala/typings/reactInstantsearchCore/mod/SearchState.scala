@@ -5,36 +5,35 @@ import typings.reactInstantsearchCore.anon.Dictkey
 import typings.reactInstantsearchCore.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchState
-  extends /* widgetId */ StringDictionary[js.Any] {
+  extends StObject
+     with /* widgetId */ StringDictionary[js.Any] {
   
-  var configure: js.UndefOr[Dictkey] = js.native
+  var configure: js.UndefOr[Dictkey] = js.undefined
   
-  var hierarchicalMenu: js.UndefOr[StringDictionary[String]] = js.native
+  var hierarchicalMenu: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var hitsPerPage: js.UndefOr[Double] = js.native
+  var hitsPerPage: js.UndefOr[Double] = js.undefined
   
-  var indices: js.UndefOr[StringDictionary[typings.reactInstantsearchCore.anon.Configure]] = js.native
+  var indices: js.UndefOr[StringDictionary[typings.reactInstantsearchCore.anon.Configure]] = js.undefined
   
-  var menu: js.UndefOr[StringDictionary[String]] = js.native
+  var menu: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var multiRange: js.UndefOr[StringDictionary[String]] = js.native
+  var multiRange: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[StringDictionary[Max]] = js.native
+  var range: js.UndefOr[StringDictionary[Max]] = js.undefined
   
-  var refinementList: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var refinementList: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
-  var sortBy: js.UndefOr[String] = js.native
+  var sortBy: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var toggle: js.UndefOr[StringDictionary[Boolean]] = js.undefined
 }
 object SearchState {
   

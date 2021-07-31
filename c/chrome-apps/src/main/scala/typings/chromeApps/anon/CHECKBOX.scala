@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.radio_
 import typings.chromeApps.chromeAppsStrings.separator_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CHECKBOX extends StObject {
   
-  var CHECKBOX: checkbox_ = js.native
+  var CHECKBOX: checkbox_
   
-  var NORMAL: normal_ = js.native
+  var NORMAL: normal_
   
-  var RADIO: radio_ = js.native
+  var RADIO: radio_
   
-  var SEPARATOR: separator_ = js.native
+  var SEPARATOR: separator_
 }
 object CHECKBOX {
   
   @scala.inline
-  def apply(CHECKBOX: checkbox_, NORMAL: normal_, RADIO: radio_, SEPARATOR: separator_): CHECKBOX = {
-    val __obj = js.Dynamic.literal(CHECKBOX = CHECKBOX.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], RADIO = RADIO.asInstanceOf[js.Any], SEPARATOR = SEPARATOR.asInstanceOf[js.Any])
+  def apply(): CHECKBOX = {
+    val __obj = js.Dynamic.literal(CHECKBOX = "checkbox", NORMAL = "normal", RADIO = "radio", SEPARATOR = "separator")
     __obj.asInstanceOf[CHECKBOX]
   }
   

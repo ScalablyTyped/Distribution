@@ -2,41 +2,39 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingStatisticsDocument extends StObject {
   
   /**
     * The number of requests recorded with borrowed reservoir quota.
     */
-  var BorrowCount: js.UndefOr[typings.awsSdk.xrayMod.BorrowCount] = js.native
+  var BorrowCount: js.UndefOr[typings.awsSdk.xrayMod.BorrowCount] = js.undefined
   
   /**
     * A unique identifier for the service in hexadecimal.
     */
-  var ClientID: typings.awsSdk.xrayMod.ClientID = js.native
+  var ClientID: typings.awsSdk.xrayMod.ClientID
   
   /**
     * The number of requests that matched the rule.
     */
-  var RequestCount: typings.awsSdk.xrayMod.RequestCount = js.native
+  var RequestCount: typings.awsSdk.xrayMod.RequestCount
   
   /**
     * The name of the sampling rule.
     */
-  var RuleName: typings.awsSdk.xrayMod.RuleName = js.native
+  var RuleName: typings.awsSdk.xrayMod.RuleName
   
   /**
     * The number of requests recorded.
     */
-  var SampledCount: typings.awsSdk.xrayMod.SampledCount = js.native
+  var SampledCount: typings.awsSdk.xrayMod.SampledCount
   
   /**
     * The current time.
     */
-  var Timestamp: typings.awsSdk.xrayMod.Timestamp = js.native
+  var Timestamp: typings.awsSdk.xrayMod.Timestamp
 }
 object SamplingStatisticsDocument {
   

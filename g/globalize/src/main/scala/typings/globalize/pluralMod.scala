@@ -8,19 +8,20 @@ import typings.globalize.globalizeStrings.cardinal
 import typings.globalize.globalizeStrings.ordinal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluralMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/plural", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/plural", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -35,21 +36,20 @@ object pluralMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `pluralMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
     
-    @js.native
     trait PluralGeneratorOptions extends StObject {
       
       /**
         * cardinal (default), or ordinal.
         */
-      var `type`: js.UndefOr[cardinal | ordinal] = js.native
+      var `type`: js.UndefOr[cardinal | ordinal] = js.undefined
     }
     object PluralGeneratorOptions {
       

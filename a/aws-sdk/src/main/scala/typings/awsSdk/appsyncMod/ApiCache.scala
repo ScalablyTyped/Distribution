@@ -2,41 +2,39 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiCache extends StObject {
   
   /**
     * Caching behavior.    FULL_REQUEST_CACHING: All requests are fully cached.    PER_RESOLVER_CACHING: Individual resolvers that you specify are cached.  
     */
-  var apiCachingBehavior: js.UndefOr[ApiCachingBehavior] = js.native
+  var apiCachingBehavior: js.UndefOr[ApiCachingBehavior] = js.undefined
   
   /**
     * At rest encryption flag for cache. This setting cannot be updated after creation.
     */
-  var atRestEncryptionEnabled: js.UndefOr[Boolean] = js.native
+  var atRestEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The cache instance status.    AVAILABLE: The instance is available for use.    CREATING: The instance is currently creating.    DELETING: The instance is currently deleting.    MODIFYING: The instance is currently modifying.    FAILED: The instance has failed creation.  
     */
-  var status: js.UndefOr[ApiCacheStatus] = js.native
+  var status: js.UndefOr[ApiCacheStatus] = js.undefined
   
   /**
     * Transit encryption flag when connecting to cache. This setting cannot be updated after creation.
     */
-  var transitEncryptionEnabled: js.UndefOr[Boolean] = js.native
+  var transitEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * TTL in seconds for cache entries. Valid values are between 1 and 3600 seconds.
     */
-  var ttl: js.UndefOr[Long] = js.native
+  var ttl: js.UndefOr[Long] = js.undefined
   
   /**
     * The cache instance type. Valid values are     SMALL     MEDIUM     LARGE     XLARGE     LARGE_2X     LARGE_4X     LARGE_8X (not available in all regions)    LARGE_12X    Historically, instance types were identified by an EC2-style value. As of July 2020, this is deprecated, and the generic identifiers above should be used. The following legacy instance types are available, but their use is discouraged:    T2_SMALL: A t2.small instance type.    T2_MEDIUM: A t2.medium instance type.    R4_LARGE: A r4.large instance type.    R4_XLARGE: A r4.xlarge instance type.    R4_2XLARGE: A r4.2xlarge instance type.    R4_4XLARGE: A r4.4xlarge instance type.    R4_8XLARGE: A r4.8xlarge instance type.  
     */
-  var `type`: js.UndefOr[ApiCacheType] = js.native
+  var `type`: js.UndefOr[ApiCacheType] = js.undefined
 }
 object ApiCache {
   

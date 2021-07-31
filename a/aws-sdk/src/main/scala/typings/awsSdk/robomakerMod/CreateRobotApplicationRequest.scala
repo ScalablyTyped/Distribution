@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRobotApplicationRequest extends StObject {
   
   /**
     * The name of the robot application.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The robot software suite (ROS distribuition) used by the robot application.
     */
-  var robotSoftwareSuite: RobotSoftwareSuite = js.native
+  var robotSoftwareSuite: RobotSoftwareSuite
   
   /**
     * The sources of the robot application.
     */
-  var sources: SourceConfigs = js.native
+  var sources: SourceConfigs
   
   /**
     * A map that contains tag keys and tag values that are attached to the robot application.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateRobotApplicationRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignEventFilter extends StObject {
   
   /**
     * The dimension settings of the event filter for the campaign.
     */
-  var Dimensions: EventDimensions = js.native
+  var Dimensions: EventDimensions
   
   /**
     * The type of event that causes the campaign to be sent. Valid values are: SYSTEM, sends the campaign when a system event occurs; and, ENDPOINT, sends the campaign when an endpoint event (Events resource) occurs.
     */
-  var FilterType: typings.awsSdk.pinpointMod.FilterType = js.native
+  var FilterType: typings.awsSdk.pinpointMod.FilterType
 }
 object CampaignEventFilter {
   

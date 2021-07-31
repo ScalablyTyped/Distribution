@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientWebsecurityscanner.gapi.client.websecurity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IapTestServiceAccountInfo extends StObject {
   
   /** Required. Describes OAuth2 client id of resources protected by Identity-Aware-Proxy (IAP). */
-  var targetAudienceClientId: js.UndefOr[String] = js.native
+  var targetAudienceClientId: js.UndefOr[String] = js.undefined
 }
 object IapTestServiceAccountInfo {
   

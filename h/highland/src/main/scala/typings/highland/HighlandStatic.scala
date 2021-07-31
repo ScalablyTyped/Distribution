@@ -11,7 +11,6 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -135,7 +134,7 @@ trait HighlandStatic extends StObject {
   def apply[R](source: ReadableStream): Stream[R] = js.native
   def apply[R](source: ReadableStream, onFinished: OnFinished): Stream[R] = js.native
   def apply[R](source: Iterable[R]): Stream[R] = js.native
-  def apply[R](source: Iterator[R, _, js.UndefOr[scala.Nothing]]): Stream[R] = js.native
+  def apply[R](source: Iterator[R, js.Any, Unit]): Stream[R] = js.native
   
   def add(a: Double): js.Function1[/* b */ Double, Double] = js.native
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -327,7 +326,7 @@ trait HighlandStatic extends StObject {
     */
   def not[R](x: js.Any): Boolean = js.native
   
-  def pairs(obj: js.Array[_]): Stream[js.Array[_]] = js.native
+  def pairs(obj: js.Array[js.Any]): Stream[js.Array[js.Any]] = js.native
   /**
     * Returns key/value pairs for an Object as a Stream. Reads properties
     * lazily, so if you don't read from all keys on an object, not
@@ -340,7 +339,7 @@ trait HighlandStatic extends StObject {
     * @param {Object} obj - the object to return key/value pairs from
     * @api public
     */
-  def pairs(obj: js.Object): Stream[js.Array[_]] = js.native
+  def pairs(obj: js.Object): Stream[js.Array[js.Any]] = js.native
   
   /**
     * Partially applies the function (regardless of whether it has had curry
@@ -393,7 +392,7 @@ trait HighlandStatic extends StObject {
     * @param {Object} obj - the object to return values from
     * @api public
     */
-  def values(obj: js.Object): Stream[_] = js.native
+  def values(obj: js.Object): Stream[js.Any] = js.native
   
   /**
     * Wraps a node-style async function which accepts a callback, transforming
@@ -419,6 +418,6 @@ trait HighlandStatic extends StObject {
     * @param {Array | Function | Number} [mappingHint] - how to pass the arguments to the callback
     * @api public
     */
-  def wrapCallback(f: js.Function): js.Function1[/* repeated */ js.Any, Stream[_]] = js.native
-  def wrapCallback(f: js.Function, mappingHint: MappingHint): js.Function1[/* repeated */ js.Any, Stream[_]] = js.native
+  def wrapCallback(f: js.Function): js.Function1[/* repeated */ js.Any, Stream[js.Any]] = js.native
+  def wrapCallback(f: js.Function, mappingHint: MappingHint): js.Function1[/* repeated */ js.Any, Stream[js.Any]] = js.native
 }

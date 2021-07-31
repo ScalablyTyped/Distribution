@@ -2,26 +2,24 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSigningProfilesRequest extends StObject {
   
   /**
     * Designates whether to include profiles with the status of CANCELED.
     */
-  var includeCanceled: js.UndefOr[bool] = js.native
+  var includeCanceled: js.UndefOr[bool] = js.undefined
   
   /**
     * The maximum number of profiles to be returned.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * Value for specifying the next set of paginated results to return. After you receive a response with truncated results, use this parameter in a subsequent request. Set it to the value of nextToken from the response that you just received.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListSigningProfilesRequest {
   

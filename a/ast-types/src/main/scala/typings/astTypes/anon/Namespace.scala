@@ -5,19 +5,17 @@ import typings.astTypes.kindsMod.JSXIdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namespace extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var name: JSXIdentifierKind = js.native
+  var name: JSXIdentifierKind
   
-  var namespace: JSXIdentifierKind = js.native
+  var namespace: JSXIdentifierKind
 }
 object Namespace {
   

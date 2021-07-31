@@ -2,45 +2,43 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a tenancy unit.
   */
-@js.native
 trait SchemaTenancyUnit extends StObject {
   
   /**
     * @OutputOnly Cloud resource name of the consumer of this service. For
     * example &#39;projects/123456&#39;.
     */
-  var consumer: js.UndefOr[String] = js.native
+  var consumer: js.UndefOr[String] = js.undefined
   
   /**
     * @OutputOnly The time this tenancy unit was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Globally unique identifier of this tenancy unit
     * &quot;services/{service}/{collection id}/{resource
     * id}/tenancyUnits/{unit}&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Google Cloud API name of the managed service owning this
     * tenancy unit. For example
     * &#39;serviceconsumermanagement.googleapis.com&#39;.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * Resources constituting the tenancy unit. There can be at most 512 tenant
     * resources in a tenancy unit.
     */
-  var tenantResources: js.UndefOr[js.Array[SchemaTenantResource]] = js.native
+  var tenantResources: js.UndefOr[js.Array[SchemaTenantResource]] = js.undefined
 }
 object SchemaTenancyUnit {
   

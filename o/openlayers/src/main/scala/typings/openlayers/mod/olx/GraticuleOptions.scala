@@ -5,33 +5,31 @@ import typings.openlayers.mod.style.Stroke
 import typings.openlayers.mod.style.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraticuleOptions extends StObject {
   
-  var latLabelFormatter: js.UndefOr[js.Function1[/* lat */ Double, String]] = js.native
+  var latLabelFormatter: js.UndefOr[js.Function1[/* lat */ Double, String]] = js.undefined
   
-  var latLabelPosition: js.UndefOr[Double] = js.native
+  var latLabelPosition: js.UndefOr[Double] = js.undefined
   
-  var latLabelStyle: js.UndefOr[Text] = js.native
+  var latLabelStyle: js.UndefOr[Text] = js.undefined
   
-  var lonLabelFormatter: js.UndefOr[js.Function1[/* lon */ Double, String]] = js.native
+  var lonLabelFormatter: js.UndefOr[js.Function1[/* lon */ Double, String]] = js.undefined
   
-  var lonLabelPosition: js.UndefOr[Double] = js.native
+  var lonLabelPosition: js.UndefOr[Double] = js.undefined
   
-  var lonLabelStyle: js.UndefOr[Text] = js.native
+  var lonLabelStyle: js.UndefOr[Text] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var maxLines: js.UndefOr[Double] = js.native
+  var maxLines: js.UndefOr[Double] = js.undefined
   
-  var showLabels: js.UndefOr[Boolean] = js.native
+  var showLabels: js.UndefOr[Boolean] = js.undefined
   
-  var strokeStyle: js.UndefOr[Stroke] = js.native
+  var strokeStyle: js.UndefOr[Stroke] = js.undefined
   
-  var targetSize: js.UndefOr[Double] = js.native
+  var targetSize: js.UndefOr[Double] = js.undefined
 }
 object GraticuleOptions {
   

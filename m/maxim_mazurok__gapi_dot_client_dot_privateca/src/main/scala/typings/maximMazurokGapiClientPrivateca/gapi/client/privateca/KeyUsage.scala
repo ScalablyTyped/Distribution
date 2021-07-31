@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyUsage extends StObject {
   
   /** Describes high-level ways in which a key may be used. */
-  var baseKeyUsage: js.UndefOr[KeyUsageOptions] = js.native
+  var baseKeyUsage: js.UndefOr[KeyUsageOptions] = js.undefined
   
   /** Detailed scenarios in which a key may be used. */
-  var extendedKeyUsage: js.UndefOr[ExtendedKeyUsageOptions] = js.native
+  var extendedKeyUsage: js.UndefOr[ExtendedKeyUsageOptions] = js.undefined
   
   /** Used to describe extended key usages that are not listed in the KeyUsage.ExtendedKeyUsageOptions message. */
-  var unknownExtendedKeyUsages: js.UndefOr[js.Array[ObjectId]] = js.native
+  var unknownExtendedKeyUsages: js.UndefOr[js.Array[ObjectId]] = js.undefined
 }
 object KeyUsage {
   

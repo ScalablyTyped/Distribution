@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveUselessStrokeAndFill extends PluginConfig {
+trait PluginRemoveUselessStrokeAndFill
+  extends StObject
+     with PluginConfig {
   
-  var removeUselessStrokeAndFill: Boolean | js.Object = js.native
+  var removeUselessStrokeAndFill: Boolean | js.Object
 }
 object PluginRemoveUselessStrokeAndFill {
   

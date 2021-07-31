@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a BatchUpdateEntityTypesResponse. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new BatchUpdateEntityTypesResponse.
   * @param [properties] Properties to set
   */
-class BatchUpdateEntityTypesResponse () extends IBatchUpdateEntityTypesResponse {
+class BatchUpdateEntityTypesResponse ()
+  extends StObject
+     with IBatchUpdateEntityTypesResponse {
   def this(properties: IBatchUpdateEntityTypesResponse) = this()
   
   /** BatchUpdateEntityTypesResponse entityTypes. */
@@ -32,18 +33,20 @@ class BatchUpdateEntityTypesResponse () extends IBatchUpdateEntityTypesResponse 
 }
 object BatchUpdateEntityTypesResponse {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new BatchUpdateEntityTypesResponse instance using the specified properties.
     * @param [properties] Properties to set
     * @returns BatchUpdateEntityTypesResponse instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.create")
-  @js.native
-  def create(): BatchUpdateEntityTypesResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.create")
-  @js.native
-  def create(properties: IBatchUpdateEntityTypesResponse): BatchUpdateEntityTypesResponse = js.native
+  @scala.inline
+  def create(): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchUpdateEntityTypesResponse]
+  @scala.inline
+  def create(properties: IBatchUpdateEntityTypesResponse): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
   
   /**
     * Decodes a BatchUpdateEntityTypesResponse message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object BatchUpdateEntityTypesResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decode")
-  @js.native
-  def decode(reader: Reader): BatchUpdateEntityTypesResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): BatchUpdateEntityTypesResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): BatchUpdateEntityTypesResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): BatchUpdateEntityTypesResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): BatchUpdateEntityTypesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateEntityTypesResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): BatchUpdateEntityTypesResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchUpdateEntityTypesResponse]
   
   /**
     * Decodes a BatchUpdateEntityTypesResponse message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object BatchUpdateEntityTypesResponse {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): BatchUpdateEntityTypesResponse = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): BatchUpdateEntityTypesResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
   
   /**
     * Encodes the specified BatchUpdateEntityTypesResponse message. Does not implicitly {@link google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.verify|verify} messages.
@@ -89,12 +86,10 @@ object BatchUpdateEntityTypesResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.encode")
-  @js.native
-  def encode(message: IBatchUpdateEntityTypesResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.encode")
-  @js.native
-  def encode(message: IBatchUpdateEntityTypesResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IBatchUpdateEntityTypesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IBatchUpdateEntityTypesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchUpdateEntityTypesResponse message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.verify|verify} messages.
@@ -103,12 +98,10 @@ object BatchUpdateEntityTypesResponse {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateEntityTypesResponse): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IBatchUpdateEntityTypesResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateEntityTypesResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IBatchUpdateEntityTypesResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchUpdateEntityTypesResponse message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object BatchUpdateEntityTypesResponse {
     * @returns BatchUpdateEntityTypesResponse
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateEntityTypesResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): BatchUpdateEntityTypesResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchUpdateEntityTypesResponse]
   
   /**
     * Creates a plain object from a BatchUpdateEntityTypesResponse message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object BatchUpdateEntityTypesResponse {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.toObject")
-  @js.native
-  def toObject(message: BatchUpdateEntityTypesResponse): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.toObject")
-  @js.native
-  def toObject(message: BatchUpdateEntityTypesResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: BatchUpdateEntityTypesResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: BatchUpdateEntityTypesResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchUpdateEntityTypesResponse message.
@@ -140,7 +130,6 @@ object BatchUpdateEntityTypesResponse {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.BatchUpdateEntityTypesResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

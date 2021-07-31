@@ -3,37 +3,35 @@ package typings.knockoutValidation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutValidationUtils extends StObject {
   
-  def contextFor(node: Element): KnockoutValidationConfiguration = js.native
+  def contextFor(node: Element): KnockoutValidationConfiguration
   
-  def getConfigOptions(element: Element): KnockoutValidationConfiguration = js.native
+  def getConfigOptions(element: Element): KnockoutValidationConfiguration
   
-  def getDomData(node: Element): KnockoutValidationConfiguration = js.native
+  def getDomData(node: Element): KnockoutValidationConfiguration
   
-  def getValue(o: js.Any): js.Any = js.native
+  def getValue(o: js.Any): js.Any
   
-  def hasAttribute(node: Element, attr: String): Boolean = js.native
+  def hasAttribute(node: Element, attr: String): Boolean
   
-  def insertAfter(node: Element, newNode: Element): Unit = js.native
+  def insertAfter(node: Element, newNode: Element): Unit
   
-  def isArray(o: js.Any): Boolean = js.native
+  def isArray(o: js.Any): Boolean
   
-  def isEmptyVal(`val`: js.Any): Boolean = js.native
+  def isEmptyVal(`val`: js.Any): Boolean
   
-  def isObject(o: js.Any): Boolean = js.native
+  def isObject(o: js.Any): Boolean
   
-  def isValidatable(o: js.Any): Boolean = js.native
+  def isValidatable(o: js.Any): Boolean
   
-  def newId(): Double = js.native
+  def newId(): Double
   
-  def setDomData(node: Element, data: KnockoutValidationConfiguration): Unit = js.native
+  def setDomData(node: Element, data: KnockoutValidationConfiguration): Unit
   
-  def values(o: js.Any): js.Array[_] = js.native
+  def values(o: js.Any): js.Array[js.Any]
 }
 object KnockoutValidationUtils {
   
@@ -51,7 +49,7 @@ object KnockoutValidationUtils {
     isValidatable: js.Any => Boolean,
     newId: () => Double,
     setDomData: (Element, KnockoutValidationConfiguration) => Unit,
-    values: js.Any => js.Array[_]
+    values: js.Any => js.Array[js.Any]
   ): KnockoutValidationUtils = {
     val __obj = js.Dynamic.literal(contextFor = js.Any.fromFunction1(contextFor), getConfigOptions = js.Any.fromFunction1(getConfigOptions), getDomData = js.Any.fromFunction1(getDomData), getValue = js.Any.fromFunction1(getValue), hasAttribute = js.Any.fromFunction2(hasAttribute), insertAfter = js.Any.fromFunction2(insertAfter), isArray = js.Any.fromFunction1(isArray), isEmptyVal = js.Any.fromFunction1(isEmptyVal), isObject = js.Any.fromFunction1(isObject), isValidatable = js.Any.fromFunction1(isValidatable), newId = js.Any.fromFunction0(newId), setDomData = js.Any.fromFunction2(setDomData), values = js.Any.fromFunction1(values))
     __obj.asInstanceOf[KnockoutValidationUtils]
@@ -97,6 +95,6 @@ object KnockoutValidationUtils {
     def setSetDomData(value: (Element, KnockoutValidationConfiguration) => Unit): Self = StObject.set(x, "setDomData", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setValues(value: js.Any => js.Array[_]): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
+    def setValues(value: js.Any => js.Array[js.Any]): Self = StObject.set(x, "values", js.Any.fromFunction1(value))
   }
 }

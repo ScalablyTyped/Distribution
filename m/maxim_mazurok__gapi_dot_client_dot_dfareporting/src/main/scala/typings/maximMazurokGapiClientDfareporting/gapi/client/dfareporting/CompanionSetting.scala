@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompanionSetting extends StObject {
   
   /** Whether companions are disabled for this placement. */
-  var companionsDisabled: js.UndefOr[Boolean] = js.native
+  var companionsDisabled: js.UndefOr[Boolean] = js.undefined
   
   /** Allowlist of companion sizes to be served to this placement. Set this list to null or empty to serve all companion sizes. */
-  var enabledSizes: js.UndefOr[js.Array[Size]] = js.native
+  var enabledSizes: js.UndefOr[js.Array[Size]] = js.undefined
   
   /** Whether to serve only static images as companions. */
-  var imageOnly: js.UndefOr[Boolean] = js.native
+  var imageOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#companionSetting". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object CompanionSetting {
   

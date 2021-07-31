@@ -3,27 +3,25 @@ package typings.winrt.Windows.ApplicationModel
 import typings.winrt.Windows.System.ProcessorArchitecture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPackageId extends StObject {
   
-  var architecture: ProcessorArchitecture = js.native
+  var architecture: ProcessorArchitecture
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var name: String = js.native
+  var name: String
   
-  var publisher: String = js.native
+  var publisher: String
   
-  var publisherId: String = js.native
+  var publisherId: String
   
-  var resourceId: String = js.native
+  var resourceId: String
   
-  var version: PackageVersion = js.native
+  var version: PackageVersion
 }
 object IPackageId {
   

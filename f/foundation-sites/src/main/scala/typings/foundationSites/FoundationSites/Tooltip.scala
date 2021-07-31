@@ -2,20 +2,18 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/tooltip.html#javascript-reference
-@js.native
 trait Tooltip extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object Tooltip {
   

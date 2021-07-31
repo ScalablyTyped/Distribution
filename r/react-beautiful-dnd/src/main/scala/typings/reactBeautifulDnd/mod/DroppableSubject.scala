@@ -2,10 +2,8 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableSubject extends StObject {
   
   // The hitbox for a droppable
@@ -14,12 +12,12 @@ trait DroppableSubject extends StObject {
   // - with any additional droppable placeholder
   // - clipped by frame
   // The subject will be null if the hit area is completely empty
-  var active: js.UndefOr[Rect] = js.native
+  var active: js.UndefOr[Rect] = js.undefined
   
   // raw, unchanging
-  var page: BoxModel = js.native
+  var page: BoxModel
   
-  var withPlaceholder: js.UndefOr[PlaceholderInSubject] = js.native
+  var withPlaceholder: js.UndefOr[PlaceholderInSubject] = js.undefined
 }
 object DroppableSubject {
   

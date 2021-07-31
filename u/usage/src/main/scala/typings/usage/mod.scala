@@ -4,33 +4,31 @@ import typings.std.Error
 import typings.usage.anon.Rss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("usage", "clearHistory")
+  @JSImport("usage", JSImport.Namespace)
   @js.native
-  def clearHistory(): Unit = js.native
-  @JSImport("usage", "clearHistory")
-  @js.native
-  def clearHistory(pid: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("usage", "lookup")
-  @js.native
-  def lookup(pid: Double, callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]): Unit = js.native
-  @JSImport("usage", "lookup")
-  @js.native
+  @scala.inline
+  def clearHistory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")().asInstanceOf[Unit]
+  @scala.inline
+  def clearHistory(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHistory")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def lookup(pid: Double, callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def lookup(
     pid: Double,
     options: Options,
     callback: js.Function2[/* err */ Error, /* result */ ResultObject, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(pid.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var keepHistory: Boolean = js.native
+    var keepHistory: Boolean
   }
   object Options {
     
@@ -48,14 +46,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultObject extends StObject {
     
-    var cpu: Double = js.native
+    var cpu: Double
     
-    var memory: Double = js.native
+    var memory: Double
     
-    var memoryInfo: Rss = js.native
+    var memoryInfo: Rss
   }
   object ResultObject {
     

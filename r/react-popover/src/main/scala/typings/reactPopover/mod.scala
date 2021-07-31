@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -58,32 +57,31 @@ object mod {
     def start: typings.reactPopover.reactPopoverStrings.start = "start".asInstanceOf[typings.reactPopover.reactPopoverStrings.start]
   }
   
-  @js.native
   trait PopoverProps extends StObject {
     
-    var appendTarget: js.UndefOr[Element] = js.native
+    var appendTarget: js.UndefOr[Element] = js.undefined
     
-    var body: ReactNode = js.native
+    var body: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var enterExitTransitionDurationMs: js.UndefOr[Double] = js.native
+    var enterExitTransitionDurationMs: js.UndefOr[Double] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var onOuterAction: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onOuterAction: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var place: js.UndefOr[PopoverPlace] = js.native
+    var place: js.UndefOr[PopoverPlace] = js.undefined
     
-    var preferPlace: js.UndefOr[PopoverPlace] = js.native
+    var preferPlace: js.UndefOr[PopoverPlace] = js.undefined
     
-    var refreshIntervalMs: js.UndefOr[Double] = js.native
+    var refreshIntervalMs: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var target: js.UndefOr[ReactElement] = js.native
+    var target: js.UndefOr[ReactElement] = js.undefined
     
-    var tipSize: js.UndefOr[Double] = js.native
+    var tipSize: js.UndefOr[Double] = js.undefined
   }
   object PopoverProps {
     

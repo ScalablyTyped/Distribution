@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadEntityDefinitionsResponse extends StObject {
   
   /**
     * The ID that specifies the upload action. You can use this to track the status of the upload.
     */
-  var uploadId: UploadId = js.native
+  var uploadId: UploadId
 }
 object UploadEntityDefinitionsResponse {
   

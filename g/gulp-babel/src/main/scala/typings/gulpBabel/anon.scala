@@ -2,67 +2,65 @@ package typings.gulpBabel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ast extends StObject {
     
-    var ast: js.UndefOr[Boolean] = js.native
+    var ast: js.UndefOr[Boolean] = js.undefined
     
-    var auxiliaryCommentAfter: js.UndefOr[js.Any] = js.native
+    var auxiliaryCommentAfter: js.UndefOr[js.Any] = js.undefined
     
-    var auxiliaryCommentBefore: js.UndefOr[js.Any] = js.native
+    var auxiliaryCommentBefore: js.UndefOr[js.Any] = js.undefined
     
-    var code: js.UndefOr[Boolean] = js.native
+    var code: js.UndefOr[Boolean] = js.undefined
     
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
-    var compact: js.UndefOr[js.Any] = js.native
+    var compact: js.UndefOr[js.Any] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var filenameRelative: js.UndefOr[String] = js.native
+    var filenameRelative: js.UndefOr[String] = js.undefined
     
-    var getModuleId: js.UndefOr[js.Any] = js.native
+    var getModuleId: js.UndefOr[js.Any] = js.undefined
     
-    var highlightCode: js.UndefOr[Boolean] = js.native
+    var highlightCode: js.UndefOr[Boolean] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var inputSourceMap: js.UndefOr[js.Any] = js.native
+    var inputSourceMap: js.UndefOr[js.Any] = js.undefined
     
-    var keepModuleIdExtesions: js.UndefOr[Boolean] = js.native
+    var keepModuleIdExtesions: js.UndefOr[Boolean] = js.undefined
     
-    var moduleId: js.UndefOr[js.Any] = js.native
+    var moduleId: js.UndefOr[js.Any] = js.undefined
     
-    var moduleIds: js.UndefOr[js.Any] = js.native
+    var moduleIds: js.UndefOr[js.Any] = js.undefined
     
-    var moduleRoot: js.UndefOr[js.Any] = js.native
+    var moduleRoot: js.UndefOr[js.Any] = js.undefined
     
-    var only: js.UndefOr[String | js.Array[String]] = js.native
+    var only: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
-    var presets: js.UndefOr[js.Array[String]] = js.native
+    var presets: js.UndefOr[js.Array[String]] = js.undefined
     
-    var resolveModuleSource: js.UndefOr[js.Any] = js.native
+    var resolveModuleSource: js.UndefOr[js.Any] = js.undefined
     
-    var retainLines: js.UndefOr[Boolean] = js.native
+    var retainLines: js.UndefOr[Boolean] = js.undefined
     
-    var shouldPrintComment: js.UndefOr[js.Any] = js.native
+    var shouldPrintComment: js.UndefOr[js.Any] = js.undefined
     
-    var sourceFileName: js.UndefOr[js.Any] = js.native
+    var sourceFileName: js.UndefOr[js.Any] = js.undefined
     
-    var sourceMapTarget: js.UndefOr[js.Any] = js.native
+    var sourceMapTarget: js.UndefOr[js.Any] = js.undefined
     
-    var sourceMaps: js.UndefOr[js.Any] = js.native
+    var sourceMaps: js.UndefOr[js.Any] = js.undefined
     
-    var sourceRoot: js.UndefOr[js.Any] = js.native
+    var sourceRoot: js.UndefOr[js.Any] = js.undefined
   }
   object Ast {
     

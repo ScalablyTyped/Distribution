@@ -2,86 +2,68 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bezier {
   
-  @JSImport("jointjs", "g.bezier.curveThroughPoints")
+  @JSImport("jointjs", "g.bezier")
   @js.native
-  def curveThroughPoints(points: js.Array[PlainPoint | Point]): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jointjs", "g.bezier.getCurveControlPoints")
-  @js.native
-  def getCurveControlPoints(points: js.Array[PlainPoint | Point]): js.Tuple2[js.Array[Point], js.Array[Point]] = js.native
+  @scala.inline
+  def curveThroughPoints(points: js.Array[PlainPoint | Point]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("curveThroughPoints")(points.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: String, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: String, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: String, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: String, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: PlainPoint, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: PlainPoint, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: PlainPoint, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: String, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: String, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: String, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: String, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: String, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
-  @JSImport("jointjs", "g.bezier.getCurveDivider")
-  @js.native
-  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = js.native
+  @scala.inline
+  def getCurveControlPoints(points: js.Array[PlainPoint | Point]): js.Tuple2[js.Array[Point], js.Array[Point]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurveControlPoints")(points.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Point], js.Array[Point]]]
   
-  @JSImport("jointjs", "g.bezier.getFirstControlPoints")
-  @js.native
-  def getFirstControlPoints(rhs: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def getCurveDivider(p0: String, p1: String, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: String, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: String, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: String, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: PlainPoint, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: PlainPoint, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: PlainPoint, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: String, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: String, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: String, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: String, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: String, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: String, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: String, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: String): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
+  @scala.inline
+  def getCurveDivider(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurveDivider")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[IBezierCurve, IBezierCurve]]]
   
-  @JSImport("jointjs", "g.bezier.getInversionSolver")
-  @js.native
-  def getInversionSolver(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* p */ PlainPoint, Double] = js.native
+  @scala.inline
+  def getFirstControlPoints(rhs: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstControlPoints")(rhs.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @js.native
+  @scala.inline
+  def getInversionSolver(p0: PlainPoint, p1: PlainPoint, p2: PlainPoint, p3: PlainPoint): js.Function1[/* p */ PlainPoint, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInversionSolver")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* p */ PlainPoint, Double]]
+  
   trait IBezierCurve extends StObject {
     
-    var p0: Point = js.native
+    var p0: Point
     
-    var p1: Point = js.native
+    var p1: Point
     
-    var p2: Point = js.native
+    var p2: Point
     
-    var p3: Point = js.native
+    var p3: Point
   }
   object IBezierCurve {
     

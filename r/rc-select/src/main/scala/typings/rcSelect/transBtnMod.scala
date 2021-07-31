@@ -10,7 +10,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transBtnMod extends Shortcut {
@@ -19,20 +18,19 @@ object transBtnMod extends Shortcut {
   @js.native
   val default: FC[TransBtnProps] = js.native
   
-  @js.native
   trait TransBtnProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: String = js.native
+    var className: String
     
-    var customizeIcon: RenderNode = js.native
+    var customizeIcon: RenderNode
     
-    var customizeIconProps: js.UndefOr[js.Any] = js.native
+    var customizeIconProps: js.UndefOr[js.Any] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
   }
   object TransBtnProps {
     

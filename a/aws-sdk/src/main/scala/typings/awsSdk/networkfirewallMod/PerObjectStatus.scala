@@ -2,16 +2,14 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerObjectStatus extends StObject {
   
   /**
     * 
     */
-  var SyncStatus: js.UndefOr[PerObjectSyncStatus] = js.native
+  var SyncStatus: js.UndefOr[PerObjectSyncStatus] = js.undefined
 }
 object PerObjectStatus {
   

@@ -2,17 +2,15 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateMatch extends StObject {
   
-  var documentEndPage: js.UndefOr[String] = js.native
+  var documentEndPage: js.UndefOr[String] = js.undefined
   
-  var documentStartPage: js.UndefOr[String] = js.native
+  var documentStartPage: js.UndefOr[String] = js.undefined
   
-  var matchPercentage: js.UndefOr[String] = js.native
+  var matchPercentage: js.UndefOr[String] = js.undefined
 }
 object TemplateMatch {
   

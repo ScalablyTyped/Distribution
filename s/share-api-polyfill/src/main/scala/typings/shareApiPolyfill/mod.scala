@@ -3,17 +3,17 @@ package typings.shareApiPolyfill
 import typings.std.ShareData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
-  trait ShareAPIPolyfillData extends ShareData {
+  trait ShareAPIPolyfillData
+    extends StObject
+       with ShareData {
     
-    var fbId: js.UndefOr[String] = js.native
+    var fbId: js.UndefOr[String] = js.undefined
     
-    var hashtags: js.UndefOr[String] = js.native
+    var hashtags: js.UndefOr[String] = js.undefined
   }
   object ShareAPIPolyfillData {
     
@@ -40,32 +40,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ShareAPIPolyfillOptions extends StObject {
     
-    var copy: js.UndefOr[Boolean] = js.native
+    var copy: js.UndefOr[Boolean] = js.undefined
     
-    var email: js.UndefOr[Boolean] = js.native
+    var email: js.UndefOr[Boolean] = js.undefined
     
-    var facebook: js.UndefOr[Boolean] = js.native
+    var facebook: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var linkedin: js.UndefOr[Boolean] = js.native
+    var linkedin: js.UndefOr[Boolean] = js.undefined
     
-    var messenger: js.UndefOr[Boolean] = js.native
+    var messenger: js.UndefOr[Boolean] = js.undefined
     
-    var print: js.UndefOr[Boolean] = js.native
+    var print: js.UndefOr[Boolean] = js.undefined
     
-    var skype: js.UndefOr[Boolean] = js.native
+    var skype: js.UndefOr[Boolean] = js.undefined
     
-    var sms: js.UndefOr[Boolean] = js.native
+    var sms: js.UndefOr[Boolean] = js.undefined
     
-    var telegram: js.UndefOr[Boolean] = js.native
+    var telegram: js.UndefOr[Boolean] = js.undefined
     
-    var twitter: js.UndefOr[Boolean] = js.native
+    var twitter: js.UndefOr[Boolean] = js.undefined
     
-    var whatsapp: js.UndefOr[Boolean] = js.native
+    var whatsapp: js.UndefOr[Boolean] = js.undefined
   }
   object ShareAPIPolyfillOptions {
     
@@ -158,7 +157,7 @@ object mod {
     trait Navigator extends StObject {
       
       def share(): js.Promise[Unit] = js.native
-      def share(data: js.UndefOr[scala.Nothing], configuration: ShareAPIPolyfillOptions): js.Promise[Unit] = js.native
+      def share(data: Unit, configuration: ShareAPIPolyfillOptions): js.Promise[Unit] = js.native
       def share(data: ShareAPIPolyfillData): js.Promise[Unit] = js.native
       def share(data: ShareAPIPolyfillData, configuration: ShareAPIPolyfillOptions): js.Promise[Unit] = js.native
     }

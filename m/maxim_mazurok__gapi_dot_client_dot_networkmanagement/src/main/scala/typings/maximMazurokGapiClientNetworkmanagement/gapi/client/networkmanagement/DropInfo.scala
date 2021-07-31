@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropInfo extends StObject {
   
   /** Cause that the packet is dropped. */
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
   /** URI of the resource that caused the drop. */
-  var resourceUri: js.UndefOr[String] = js.native
+  var resourceUri: js.UndefOr[String] = js.undefined
 }
 object DropInfo {
   

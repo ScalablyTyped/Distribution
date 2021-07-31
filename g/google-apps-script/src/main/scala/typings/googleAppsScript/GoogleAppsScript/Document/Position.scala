@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,22 +26,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       DocumentApp.getUi().alert('Cannot find a cursor.');
   *     }
   */
-@js.native
 trait Position extends StObject {
   
-  def getElement(): Element = js.native
+  def getElement(): Element
   
-  def getOffset(): Integer = js.native
+  def getOffset(): Integer
   
-  def getSurroundingText(): Text = js.native
+  def getSurroundingText(): Text
   
-  def getSurroundingTextOffset(): Integer = js.native
+  def getSurroundingTextOffset(): Integer
   
-  def insertBookmark(): Bookmark = js.native
+  def insertBookmark(): Bookmark
   
-  def insertInlineImage(image: BlobSource): InlineImage = js.native
+  def insertInlineImage(image: BlobSource): InlineImage
   
-  def insertText(text: String): Text = js.native
+  def insertText(text: String): Text
 }
 object Position {
   

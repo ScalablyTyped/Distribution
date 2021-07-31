@@ -15,7 +15,6 @@ import typings.tizenCommonWeb.tizenMod.ErrorCallback
 import typings.tizenCommonWeb.tizenMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tvwindowMod {
@@ -27,27 +26,37 @@ object tvwindowMod {
   object AspectRatio extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AspectRatio with String] = js.native
+    def apply(value: String): js.UndefOr[AspectRatio & String] = js.native
     
     @js.native
-    sealed trait ASPECT_RATIO_16x9 extends AspectRatio
-    /* "ASPECT_RATIO_16x9" */ val ASPECT_RATIO_16x9: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_16x9 with String = js.native
+    sealed trait ASPECT_RATIO_16x9
+      extends StObject
+         with AspectRatio
+    /* "ASPECT_RATIO_16x9" */ val ASPECT_RATIO_16x9: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_16x9 & String = js.native
     
     @js.native
-    sealed trait ASPECT_RATIO_1x1 extends AspectRatio
-    /* "ASPECT_RATIO_1x1" */ val ASPECT_RATIO_1x1: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_1x1 with String = js.native
+    sealed trait ASPECT_RATIO_1x1
+      extends StObject
+         with AspectRatio
+    /* "ASPECT_RATIO_1x1" */ val ASPECT_RATIO_1x1: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_1x1 & String = js.native
     
     @js.native
-    sealed trait ASPECT_RATIO_221x100 extends AspectRatio
-    /* "ASPECT_RATIO_221x100" */ val ASPECT_RATIO_221x100: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_221x100 with String = js.native
+    sealed trait ASPECT_RATIO_221x100
+      extends StObject
+         with AspectRatio
+    /* "ASPECT_RATIO_221x100" */ val ASPECT_RATIO_221x100: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_221x100 & String = js.native
     
     @js.native
-    sealed trait ASPECT_RATIO_4x3 extends AspectRatio
-    /* "ASPECT_RATIO_4x3" */ val ASPECT_RATIO_4x3: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_4x3 with String = js.native
+    sealed trait ASPECT_RATIO_4x3
+      extends StObject
+         with AspectRatio
+    /* "ASPECT_RATIO_4x3" */ val ASPECT_RATIO_4x3: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_4x3 & String = js.native
     
     @js.native
-    sealed trait ASPECT_RATIO_UNKNOWN extends AspectRatio
-    /* "ASPECT_RATIO_UNKNOWN" */ val ASPECT_RATIO_UNKNOWN: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_UNKNOWN with String = js.native
+    sealed trait ASPECT_RATIO_UNKNOWN
+      extends StObject
+         with AspectRatio
+    /* "ASPECT_RATIO_UNKNOWN" */ val ASPECT_RATIO_UNKNOWN: typings.tizenCommonWeb.tvwindowMod.AspectRatio.ASPECT_RATIO_UNKNOWN & String = js.native
   }
   
   @js.native
@@ -57,15 +66,19 @@ object tvwindowMod {
   object MeasurementUnit extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MeasurementUnit with String] = js.native
+    def apply(value: String): js.UndefOr[MeasurementUnit & String] = js.native
     
     @js.native
-    sealed trait Percentsign extends MeasurementUnit
-    /* "%" */ val Percentsign: typings.tizenCommonWeb.tvwindowMod.MeasurementUnit.Percentsign with String = js.native
+    sealed trait Percentsign
+      extends StObject
+         with MeasurementUnit
+    /* "%" */ val Percentsign: typings.tizenCommonWeb.tvwindowMod.MeasurementUnit.Percentsign & String = js.native
     
     @js.native
-    sealed trait px extends MeasurementUnit
-    /* "px" */ val px: typings.tizenCommonWeb.tvwindowMod.MeasurementUnit.px with String = js.native
+    sealed trait px
+      extends StObject
+         with MeasurementUnit
+    /* "px" */ val px: typings.tizenCommonWeb.tvwindowMod.MeasurementUnit.px & String = js.native
   }
   
   @js.native
@@ -75,11 +88,13 @@ object tvwindowMod {
   object WindowType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WindowType with String] = js.native
+    def apply(value: String): js.UndefOr[WindowType & String] = js.native
     
     @js.native
-    sealed trait MAIN extends WindowType
-    /* "MAIN" */ val MAIN: typings.tizenCommonWeb.tvwindowMod.WindowType.MAIN with String = js.native
+    sealed trait MAIN
+      extends StObject
+         with WindowType
+    /* "MAIN" */ val MAIN: typings.tizenCommonWeb.tvwindowMod.WindowType.MAIN & String = js.native
   }
   
   @js.native
@@ -89,15 +104,19 @@ object tvwindowMod {
   object ZPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ZPosition with String] = js.native
+    def apply(value: String): js.UndefOr[ZPosition & String] = js.native
     
     @js.native
-    sealed trait BEHIND extends ZPosition
-    /* "BEHIND" */ val BEHIND: typings.tizenCommonWeb.tvwindowMod.ZPosition.BEHIND with String = js.native
+    sealed trait BEHIND
+      extends StObject
+         with ZPosition
+    /* "BEHIND" */ val BEHIND: typings.tizenCommonWeb.tvwindowMod.ZPosition.BEHIND & String = js.native
     
     @js.native
-    sealed trait FRONT extends ZPosition
-    /* "FRONT" */ val FRONT: typings.tizenCommonWeb.tvwindowMod.ZPosition.FRONT with String = js.native
+    sealed trait FRONT
+      extends StObject
+         with ZPosition
+    /* "FRONT" */ val FRONT: typings.tizenCommonWeb.tvwindowMod.ZPosition.FRONT & String = js.native
   }
   
   type AvailableWindowListCallback = js.Function1[/* type */ js.Array[WindowType], Unit]
@@ -158,35 +177,22 @@ object tvwindowMod {
     def getRect(successCallback: WindowRectangleSuccessCallback): Unit = js.native
     def getRect(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      unit: Unit,
       `type`: WindowType
     ): Unit = js.native
+    def getRect(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: Percentsign): Unit = js.native
     def getRect(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: Percentsign
-    ): Unit = js.native
-    def getRect(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       unit: Percentsign,
       `type`: WindowType
     ): Unit = js.native
+    def getRect(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: px, `type`: MAIN): Unit = js.native
+    def getRect(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: MeasurementUnit): Unit = js.native
     def getRect(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: px,
-      `type`: MAIN
-    ): Unit = js.native
-    def getRect(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: MeasurementUnit
-    ): Unit = js.native
-    def getRect(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       unit: MeasurementUnit,
       `type`: WindowType
     ): Unit = js.native
@@ -194,7 +200,7 @@ object tvwindowMod {
     def getRect(
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
-      unit: js.UndefOr[scala.Nothing],
+      unit: Unit,
       `type`: WindowType
     ): Unit = js.native
     def getRect(successCallback: WindowRectangleSuccessCallback, errorCallback: ErrorCallback, unit: Percentsign): Unit = js.native
@@ -222,23 +228,18 @@ object tvwindowMod {
       `type`: WindowType
     ): Unit = js.native
     @JSName("getRect")
-    def getRect_MAIN(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: js.UndefOr[scala.Nothing],
-      `type`: MAIN
-    ): Unit = js.native
+    def getRect_MAIN(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: Unit, `type`: MAIN): Unit = js.native
     @JSName("getRect")
     def getRect_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       unit: Percentsign,
       `type`: MAIN
     ): Unit = js.native
     @JSName("getRect")
     def getRect_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       unit: MeasurementUnit,
       `type`: MAIN
     ): Unit = js.native
@@ -246,7 +247,7 @@ object tvwindowMod {
     def getRect_MAIN(
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
-      unit: js.UndefOr[scala.Nothing],
+      unit: Unit,
       `type`: MAIN
     ): Unit = js.native
     @JSName("getRect")
@@ -264,18 +265,9 @@ object tvwindowMod {
       `type`: MAIN
     ): Unit = js.native
     @JSName("getRect")
-    def getRect_px(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: px
-    ): Unit = js.native
+    def getRect_px(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: px): Unit = js.native
     @JSName("getRect")
-    def getRect_px(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      unit: px,
-      `type`: WindowType
-    ): Unit = js.native
+    def getRect_px(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, unit: px, `type`: WindowType): Unit = js.native
     @JSName("getRect")
     def getRect_px(successCallback: WindowRectangleSuccessCallback, errorCallback: ErrorCallback, unit: px): Unit = js.native
     @JSName("getRect")
@@ -332,11 +324,11 @@ object tvwindowMod {
       * @privilegeName http://tizen.org/privilege/tv.window
       */
     def hide(successCallback: SuccessCallback): Unit = js.native
-    def hide(successCallback: SuccessCallback, errorCallback: js.UndefOr[scala.Nothing], `type`: WindowType): Unit = js.native
+    def hide(successCallback: SuccessCallback, errorCallback: Unit, `type`: WindowType): Unit = js.native
     def hide(successCallback: SuccessCallback, errorCallback: ErrorCallback): Unit = js.native
     def hide(successCallback: SuccessCallback, errorCallback: ErrorCallback, `type`: WindowType): Unit = js.native
     @JSName("hide")
-    def hide_MAIN(successCallback: SuccessCallback, errorCallback: js.UndefOr[scala.Nothing], `type`: MAIN): Unit = js.native
+    def hide_MAIN(successCallback: SuccessCallback, errorCallback: Unit, `type`: MAIN): Unit = js.native
     @JSName("hide")
     def hide_MAIN(successCallback: SuccessCallback, errorCallback: ErrorCallback, `type`: MAIN): Unit = js.native
     
@@ -372,7 +364,7 @@ object tvwindowMod {
     def setSource(
       videoSource: SystemInfoVideoSourceInfo,
       successCallback: SourceChangedSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       `type`: WindowType
     ): Unit = js.native
     def setSource(
@@ -390,7 +382,7 @@ object tvwindowMod {
     def setSource_MAIN(
       videoSource: SystemInfoVideoSourceInfo,
       successCallback: SourceChangedSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
       `type`: MAIN
     ): Unit = js.native
     @JSName("setSource")
@@ -436,76 +428,72 @@ object tvwindowMod {
       * @privilegeName http://tizen.org/privilege/tv.window
       */
     def show(successCallback: WindowRectangleSuccessCallback): Unit = js.native
+    def show(successCallback: WindowRectangleSuccessCallback, errorCallback: Unit, rectangle: js.Array[String]): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
+      `type`: Unit,
       zPosition: ZPosition
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: MAIN,
       zPosition: BEHIND
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: MAIN,
       zPosition: FRONT
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: WindowType
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: WindowType,
       zPosition: ZPosition
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String]
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
+      `type`: Unit,
       zPosition: ZPosition
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: MAIN,
       zPosition: BEHIND
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: MAIN,
       zPosition: FRONT
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: WindowType
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: WindowType,
       zPosition: ZPosition
     ): Unit = js.native
@@ -513,47 +501,13 @@ object tvwindowMod {
     def show(
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      zPosition: ZPosition
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: MAIN,
-      zPosition: BEHIND
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: MAIN,
-      zPosition: FRONT
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: WindowType
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: WindowType,
-      zPosition: ZPosition
-    ): Unit = js.native
-    def show(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
       rectangle: js.Array[String]
     ): Unit = js.native
     def show(
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
       rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: Unit,
       zPosition: ZPosition
     ): Unit = js.native
     def show(
@@ -583,51 +537,69 @@ object tvwindowMod {
       `type`: WindowType,
       zPosition: ZPosition
     ): Unit = js.native
+    def show(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: Unit,
+      zPosition: ZPosition
+    ): Unit = js.native
+    def show(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: MAIN,
+      zPosition: BEHIND
+    ): Unit = js.native
+    def show(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: MAIN,
+      zPosition: FRONT
+    ): Unit = js.native
+    def show(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: WindowType
+    ): Unit = js.native
+    def show(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: WindowType,
+      zPosition: ZPosition
+    ): Unit = js.native
     @JSName("show")
     def show_BEHIND(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
+      `type`: Unit,
       zPosition: BEHIND
     ): Unit = js.native
     @JSName("show")
     def show_BEHIND(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: WindowType,
       zPosition: BEHIND
     ): Unit = js.native
     @JSName("show")
     def show_BEHIND(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
+      `type`: Unit,
       zPosition: BEHIND
     ): Unit = js.native
     @JSName("show")
     def show_BEHIND(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: WindowType,
-      zPosition: BEHIND
-    ): Unit = js.native
-    @JSName("show")
-    def show_BEHIND(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      zPosition: BEHIND
-    ): Unit = js.native
-    @JSName("show")
-    def show_BEHIND(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: WindowType,
       zPosition: BEHIND
     ): Unit = js.native
@@ -636,7 +608,7 @@ object tvwindowMod {
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
       rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: Unit,
       zPosition: BEHIND
     ): Unit = js.native
     @JSName("show")
@@ -648,50 +620,50 @@ object tvwindowMod {
       zPosition: BEHIND
     ): Unit = js.native
     @JSName("show")
+    def show_BEHIND(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: Unit,
+      zPosition: BEHIND
+    ): Unit = js.native
+    @JSName("show")
+    def show_BEHIND(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: WindowType,
+      zPosition: BEHIND
+    ): Unit = js.native
+    @JSName("show")
     def show_FRONT(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
+      `type`: Unit,
       zPosition: FRONT
     ): Unit = js.native
     @JSName("show")
     def show_FRONT(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: WindowType,
       zPosition: FRONT
     ): Unit = js.native
     @JSName("show")
     def show_FRONT(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
+      `type`: Unit,
       zPosition: FRONT
     ): Unit = js.native
     @JSName("show")
     def show_FRONT(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: WindowType,
-      zPosition: FRONT
-    ): Unit = js.native
-    @JSName("show")
-    def show_FRONT(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      zPosition: FRONT
-    ): Unit = js.native
-    @JSName("show")
-    def show_FRONT(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: WindowType,
       zPosition: FRONT
     ): Unit = js.native
@@ -700,7 +672,7 @@ object tvwindowMod {
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
       rectangle: js.Array[String],
-      `type`: js.UndefOr[scala.Nothing],
+      `type`: Unit,
       zPosition: FRONT
     ): Unit = js.native
     @JSName("show")
@@ -708,51 +680,52 @@ object tvwindowMod {
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
       rectangle: js.Array[String],
+      `type`: WindowType,
+      zPosition: FRONT
+    ): Unit = js.native
+    @JSName("show")
+    def show_FRONT(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: Unit,
+      zPosition: FRONT
+    ): Unit = js.native
+    @JSName("show")
+    def show_FRONT(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
       `type`: WindowType,
       zPosition: FRONT
     ): Unit = js.native
     @JSName("show")
     def show_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: MAIN
     ): Unit = js.native
     @JSName("show")
     def show_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: js.Array[String],
       `type`: MAIN,
       zPosition: ZPosition
     ): Unit = js.native
     @JSName("show")
     def show_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: MAIN
     ): Unit = js.native
     @JSName("show")
     def show_MAIN(
       successCallback: WindowRectangleSuccessCallback,
-      errorCallback: js.UndefOr[scala.Nothing],
-      rectangle: js.Array[String],
-      `type`: MAIN,
-      zPosition: ZPosition
-    ): Unit = js.native
-    @JSName("show")
-    def show_MAIN(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
-      `type`: MAIN
-    ): Unit = js.native
-    @JSName("show")
-    def show_MAIN(
-      successCallback: WindowRectangleSuccessCallback,
-      errorCallback: ErrorCallback,
-      rectangle: js.UndefOr[scala.Nothing],
+      errorCallback: Unit,
+      rectangle: Unit,
       `type`: MAIN,
       zPosition: ZPosition
     ): Unit = js.native
@@ -768,34 +741,48 @@ object tvwindowMod {
       successCallback: WindowRectangleSuccessCallback,
       errorCallback: ErrorCallback,
       rectangle: js.Array[String],
+      `type`: MAIN,
+      zPosition: ZPosition
+    ): Unit = js.native
+    @JSName("show")
+    def show_MAIN(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
+      `type`: MAIN
+    ): Unit = js.native
+    @JSName("show")
+    def show_MAIN(
+      successCallback: WindowRectangleSuccessCallback,
+      errorCallback: ErrorCallback,
+      rectangle: Unit,
       `type`: MAIN,
       zPosition: ZPosition
     ): Unit = js.native
   }
   
-  @js.native
   trait VideoResolution extends StObject {
     
     /**
       * Video aspect ratio.
       *
       */
-    val aspectRatio: AspectRatio | ASPECT_RATIO_1x1 | ASPECT_RATIO_4x3 | ASPECT_RATIO_16x9 | ASPECT_RATIO_221x100 | ASPECT_RATIO_UNKNOWN = js.native
+    val aspectRatio: AspectRatio | ASPECT_RATIO_1x1 | ASPECT_RATIO_4x3 | ASPECT_RATIO_16x9 | ASPECT_RATIO_221x100 | ASPECT_RATIO_UNKNOWN
     
     /**
       * Vertical frequency rate in Hz.
       */
-    val frequency: Double = js.native
+    val frequency: Double
     
     /**
       * Video height in pixels.
       */
-    val height: Double = js.native
+    val height: Double
     
     /**
       * Video width in pixels.
       */
-    val width: Double = js.native
+    val width: Double
   }
   object VideoResolution {
     

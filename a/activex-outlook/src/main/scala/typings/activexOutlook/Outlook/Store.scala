@@ -2,58 +2,56 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Store extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Categories: typings.activexOutlook.Outlook.Categories = js.native
+  val Categories: typings.activexOutlook.Outlook.Categories
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val DisplayName: String = js.native
+  val DisplayName: String
   
-  val ExchangeStoreType: OlExchangeStoreType = js.native
+  val ExchangeStoreType: OlExchangeStoreType
   
-  val FilePath: String = js.native
+  val FilePath: String
   
-  def GetDefaultFolder(FolderType: OlDefaultFolders): Folder = js.native
+  def GetDefaultFolder(FolderType: OlDefaultFolders): Folder
   
-  def GetRootFolder(): Folder = js.native
+  def GetRootFolder(): Folder
   
-  def GetRules(): Rules = js.native
+  def GetRules(): Rules
   
-  def GetSearchFolders(): Folders = js.native
+  def GetSearchFolders(): Folders
   
-  def GetSpecialFolder(FolderType: OlSpecialFolders): Folder = js.native
+  def GetSpecialFolder(FolderType: OlSpecialFolders): Folder
   
-  val IsCachedExchange: Boolean = js.native
+  val IsCachedExchange: Boolean
   
-  val IsConversationEnabled: Boolean = js.native
+  val IsConversationEnabled: Boolean
   
-  val IsDataFileStore: Boolean = js.native
+  val IsDataFileStore: Boolean
   
-  val IsInstantSearchEnabled: Boolean = js.native
+  val IsInstantSearchEnabled: Boolean
   
-  val IsOpen: Boolean = js.native
+  val IsOpen: Boolean
   
-  val MAPIOBJECT: js.Any = js.native
+  val MAPIOBJECT: js.Any
   
   @JSName("Outlook.Store_typekey")
-  var OutlookDotStore_typekey: Store = js.native
+  var OutlookDotStore_typekey: Store
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
-  def RefreshQuotaDisplay(): Unit = js.native
+  def RefreshQuotaDisplay(): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val StoreID: String = js.native
+  val StoreID: String
 }
 object Store {
   

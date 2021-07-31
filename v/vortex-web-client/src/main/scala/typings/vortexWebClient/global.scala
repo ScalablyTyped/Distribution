@@ -5,7 +5,6 @@ import typings.vortexWebClient.DDS_.Policy
 import typings.vortexWebClient.DDS_.Runtime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,14 +15,14 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("DDS.ContentFilter")
-    @js.native
-    def ContentFilter(expr: String): Policy = js.native
+    @scala.inline
+    def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.DataCache")
     @js.native
     class DataCache protected ()
-      extends typings.vortexWebClient.DDS_.DataCache {
+      extends StObject
+         with typings.vortexWebClient.DDS_.DataCache {
       /**
         * Constructs a `DataCache` with a given `depth`. If the `cache` parameter
         * is present, then the current cache is initialized with this parameter.
@@ -42,7 +41,8 @@ object global {
     @JSGlobal("DDS.DataReader")
     @js.native
     class DataReader protected ()
-      extends typings.vortexWebClient.DDS_.DataReader {
+      extends StObject
+         with typings.vortexWebClient.DDS_.DataReader {
       /**
         * Creates a `DataReader` for a given topic and a specific in a specific DDS runtime.
         *
@@ -57,12 +57,39 @@ object global {
         * @param qos - DataReader quality of service
         */
       def this(runtime: Runtime, topic: typings.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+      
+      /**
+        * Attaches the  listener `l` to this data reader and returns
+        * the id associated to the listener.
+        * @param l - listener code
+        * @returns listener handle
+        */
+      /* CompleteClass */
+      override def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
+      
+      /**
+        * closes the DataReader
+        */
+      /* CompleteClass */
+      override def close(): Unit = js.native
+      
+      /**
+        * removes a listener from this data reader.
+        * @param idx - listener id
+        */
+      /* CompleteClass */
+      override def removeListener(idx: Double): Unit = js.native
+      
+      /* CompleteClass */
+      override def resetStats(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.DataReaderQos")
     @js.native
-    class DataReaderQos protected () extends EntityQos {
+    class DataReaderQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -79,7 +106,8 @@ object global {
     @JSGlobal("DDS.DataWriter")
     @js.native
     class DataWriter protected ()
-      extends typings.vortexWebClient.DDS_.DataWriter {
+      extends StObject
+         with typings.vortexWebClient.DDS_.DataWriter {
       /**
         * Creates a `DataWriter` for a given topic and a specific in a specific DDS runtime
         *
@@ -96,12 +124,27 @@ object global {
         * @param qos - DataWriter quality of service
         */
       def this(runtime: Runtime, topic: typings.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+      
+      /**
+        * Closes the DataWriter
+        */
+      /* CompleteClass */
+      override def close(): Unit = js.native
+      
+      /**
+        * Writes one or more samples.
+        * @param ds - data sample
+        */
+      /* CompleteClass */
+      override def write(ds: js.Any*): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.DataWriterQos")
     @js.native
-    class DataWriterQos protected () extends EntityQos {
+    class DataWriterQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -117,7 +160,9 @@ object global {
     
     @JSGlobal("DDS.Durability")
     @js.native
-    class Durability () extends Policy
+    class Durability ()
+      extends StObject
+         with Policy
     /* static members */
     object Durability {
       
@@ -168,20 +213,22 @@ object global {
     object DurabilityKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.DurabilityKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.DurabilityKind & Double] = js.native
       
-      /* 3 */ val Persistent: typings.vortexWebClient.DDS_.DurabilityKind.Persistent with Double = js.native
+      /* 3 */ val Persistent: typings.vortexWebClient.DDS_.DurabilityKind.Persistent & Double = js.native
       
-      /* 2 */ val Transient: typings.vortexWebClient.DDS_.DurabilityKind.Transient with Double = js.native
+      /* 2 */ val Transient: typings.vortexWebClient.DDS_.DurabilityKind.Transient & Double = js.native
       
-      /* 1 */ val TransientLocal: typings.vortexWebClient.DDS_.DurabilityKind.TransientLocal with Double = js.native
+      /* 1 */ val TransientLocal: typings.vortexWebClient.DDS_.DurabilityKind.TransientLocal & Double = js.native
       
-      /* 0 */ val Volatile: typings.vortexWebClient.DDS_.DurabilityKind.Volatile with Double = js.native
+      /* 0 */ val Volatile: typings.vortexWebClient.DDS_.DurabilityKind.Volatile & Double = js.native
     }
     
     @JSGlobal("DDS.History")
     @js.native
-    class History () extends Policy
+    class History ()
+      extends StObject
+         with Policy
     /* static members */
     object History {
       
@@ -213,20 +260,21 @@ object global {
     object HistoryKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.HistoryKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.HistoryKind & Double] = js.native
       
-      /* 0 */ val KeepAll: typings.vortexWebClient.DDS_.HistoryKind.KeepAll with Double = js.native
+      /* 0 */ val KeepAll: typings.vortexWebClient.DDS_.HistoryKind.KeepAll & Double = js.native
       
-      /* 1 */ val KeepLast: typings.vortexWebClient.DDS_.HistoryKind.KeepLast with Double = js.native
+      /* 1 */ val KeepLast: typings.vortexWebClient.DDS_.HistoryKind.KeepLast & Double = js.native
     }
     
-    @JSGlobal("DDS.Partition")
-    @js.native
-    def Partition(policies: String*): Policy = js.native
+    @scala.inline
+    def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.Reliability")
     @js.native
-    class Reliability () extends Policy
+    class Reliability ()
+      extends StObject
+         with Policy
     /* static members */
     object Reliability {
       
@@ -258,21 +306,21 @@ object global {
     object ReliabilityKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.ReliabilityKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.DDS_.ReliabilityKind & Double] = js.native
       
-      /* 1 */ val BestEffort: typings.vortexWebClient.DDS_.ReliabilityKind.BestEffort with Double = js.native
+      /* 1 */ val BestEffort: typings.vortexWebClient.DDS_.ReliabilityKind.BestEffort & Double = js.native
       
-      /* 0 */ val Reliable: typings.vortexWebClient.DDS_.ReliabilityKind.Reliable with Double = js.native
+      /* 0 */ val Reliable: typings.vortexWebClient.DDS_.ReliabilityKind.Reliable & Double = js.native
     }
     
-    @JSGlobal("DDS.TimeFilter")
-    @js.native
-    def TimeFilter(period: Double): Policy = js.native
+    @scala.inline
+    def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("DDS.Topic")
     @js.native
     class Topic protected ()
-      extends typings.vortexWebClient.DDS_.Topic {
+      extends StObject
+         with typings.vortexWebClient.DDS_.Topic {
       /**
         * Creates a `Topic` in the domain `did`, named `tname`, having `qos` Qos,
         * for the type `ttype` whose registered name is `tregtype`
@@ -284,14 +332,28 @@ object global {
         */
       def this(did: Double, tname: String, qos: EntityQos) = this()
       def this(did: Double, tname: String, qos: EntityQos, ttype: String) = this()
-      def this(did: Double, tname: String, qos: EntityQos, ttype: js.UndefOr[scala.Nothing], tregtype: String) = this()
       def this(did: Double, tname: String, qos: EntityQos, ttype: String, tregtype: String) = this()
+      def this(did: Double, tname: String, qos: EntityQos, ttype: Unit, tregtype: String) = this()
+      
+      /**
+        * Called when topic gets registered in the runtime
+        */
+      /* CompleteClass */
+      override def onregistered(): Unit = js.native
+      
+      /**
+        * Called when topic gets unregistered in the runtime
+        */
+      /* CompleteClass */
+      override def onunregistered(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("DDS.TopicQos")
     @js.native
-    class TopicQos protected () extends EntityQos {
+    class TopicQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -330,7 +392,9 @@ object global {
         * maintains the connection with the server, re-establish the connection
         * if dropped and mediates the `DataReader` and `DataWriter` communication.
         */
-      class RuntimeCls () extends Runtime
+      class RuntimeCls ()
+        extends StObject
+           with Runtime
       
       @scala.inline
       def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])
@@ -344,14 +408,14 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("dds.ContentFilter")
-    @js.native
-    def ContentFilter(expr: String): Policy = js.native
+    @scala.inline
+    def ContentFilter(expr: String): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("ContentFilter")(expr.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.DataCache")
     @js.native
     class DataCache protected ()
-      extends typings.vortexWebClient.dds.DataCache {
+      extends StObject
+         with typings.vortexWebClient.dds.DataCache {
       /**
         * Constructs a `DataCache` with a given `depth`. If the `cache` parameter
         * is present, then the current cache is initialized with this parameter.
@@ -370,7 +434,8 @@ object global {
     @JSGlobal("dds.DataReader")
     @js.native
     class DataReader protected ()
-      extends typings.vortexWebClient.dds.DataReader {
+      extends StObject
+         with typings.vortexWebClient.dds.DataReader {
       /**
         * Creates a `DataReader` for a given topic and a specific in a specific DDS runtime.
         *
@@ -385,12 +450,39 @@ object global {
         * @param qos - DataReader quality of service
         */
       def this(runtime: Runtime, topic: typings.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+      
+      /**
+        * Attaches the  listener `l` to this data reader and returns
+        * the id associated to the listener.
+        * @param l - listener code
+        * @returns listener handle
+        */
+      /* CompleteClass */
+      override def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
+      
+      /**
+        * closes the DataReader
+        */
+      /* CompleteClass */
+      override def close(): Unit = js.native
+      
+      /**
+        * removes a listener from this data reader.
+        * @param idx - listener id
+        */
+      /* CompleteClass */
+      override def removeListener(idx: Double): Unit = js.native
+      
+      /* CompleteClass */
+      override def resetStats(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.DataReaderQos")
     @js.native
-    class DataReaderQos protected () extends EntityQos {
+    class DataReaderQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -407,7 +499,8 @@ object global {
     @JSGlobal("dds.DataWriter")
     @js.native
     class DataWriter protected ()
-      extends typings.vortexWebClient.dds.DataWriter {
+      extends StObject
+         with typings.vortexWebClient.dds.DataWriter {
       /**
         * Creates a `DataWriter` for a given topic and a specific in a specific DDS runtime
         *
@@ -424,12 +517,27 @@ object global {
         * @param qos - DataWriter quality of service
         */
       def this(runtime: Runtime, topic: typings.vortexWebClient.DDS_.Topic, qos: EntityQos) = this()
+      
+      /**
+        * Closes the DataWriter
+        */
+      /* CompleteClass */
+      override def close(): Unit = js.native
+      
+      /**
+        * Writes one or more samples.
+        * @param ds - data sample
+        */
+      /* CompleteClass */
+      override def write(ds: js.Any*): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.DataWriterQos")
     @js.native
-    class DataWriterQos protected () extends EntityQos {
+    class DataWriterQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -445,7 +553,9 @@ object global {
     
     @JSGlobal("dds.Durability")
     @js.native
-    class Durability () extends Policy
+    class Durability ()
+      extends StObject
+         with Policy
     /* static members */
     object Durability {
       
@@ -496,20 +606,22 @@ object global {
     object DurabilityKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.DurabilityKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.DurabilityKind & Double] = js.native
       
-      /* 3 */ val Persistent: typings.vortexWebClient.dds.DurabilityKind.Persistent with Double = js.native
+      /* 3 */ val Persistent: typings.vortexWebClient.dds.DurabilityKind.Persistent & Double = js.native
       
-      /* 2 */ val Transient: typings.vortexWebClient.dds.DurabilityKind.Transient with Double = js.native
+      /* 2 */ val Transient: typings.vortexWebClient.dds.DurabilityKind.Transient & Double = js.native
       
-      /* 1 */ val TransientLocal: typings.vortexWebClient.dds.DurabilityKind.TransientLocal with Double = js.native
+      /* 1 */ val TransientLocal: typings.vortexWebClient.dds.DurabilityKind.TransientLocal & Double = js.native
       
-      /* 0 */ val Volatile: typings.vortexWebClient.dds.DurabilityKind.Volatile with Double = js.native
+      /* 0 */ val Volatile: typings.vortexWebClient.dds.DurabilityKind.Volatile & Double = js.native
     }
     
     @JSGlobal("dds.History")
     @js.native
-    class History () extends Policy
+    class History ()
+      extends StObject
+         with Policy
     /* static members */
     object History {
       
@@ -541,20 +653,21 @@ object global {
     object HistoryKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.HistoryKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.HistoryKind & Double] = js.native
       
-      /* 0 */ val KeepAll: typings.vortexWebClient.dds.HistoryKind.KeepAll with Double = js.native
+      /* 0 */ val KeepAll: typings.vortexWebClient.dds.HistoryKind.KeepAll & Double = js.native
       
-      /* 1 */ val KeepLast: typings.vortexWebClient.dds.HistoryKind.KeepLast with Double = js.native
+      /* 1 */ val KeepLast: typings.vortexWebClient.dds.HistoryKind.KeepLast & Double = js.native
     }
     
-    @JSGlobal("dds.Partition")
-    @js.native
-    def Partition(policies: String*): Policy = js.native
+    @scala.inline
+    def Partition(policies: String*): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("Partition")(policies.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.Reliability")
     @js.native
-    class Reliability () extends Policy
+    class Reliability ()
+      extends StObject
+         with Policy
     /* static members */
     object Reliability {
       
@@ -586,21 +699,21 @@ object global {
     object ReliabilityKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.ReliabilityKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.vortexWebClient.dds.ReliabilityKind & Double] = js.native
       
-      /* 1 */ val BestEffort: typings.vortexWebClient.dds.ReliabilityKind.BestEffort with Double = js.native
+      /* 1 */ val BestEffort: typings.vortexWebClient.dds.ReliabilityKind.BestEffort & Double = js.native
       
-      /* 0 */ val Reliable: typings.vortexWebClient.dds.ReliabilityKind.Reliable with Double = js.native
+      /* 0 */ val Reliable: typings.vortexWebClient.dds.ReliabilityKind.Reliable & Double = js.native
     }
     
-    @JSGlobal("dds.TimeFilter")
-    @js.native
-    def TimeFilter(period: Double): Policy = js.native
+    @scala.inline
+    def TimeFilter(period: Double): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("TimeFilter")(period.asInstanceOf[js.Any]).asInstanceOf[Policy]
     
     @JSGlobal("dds.Topic")
     @js.native
     class Topic protected ()
-      extends typings.vortexWebClient.dds.Topic {
+      extends StObject
+         with typings.vortexWebClient.dds.Topic {
       /**
         * Creates a `Topic` in the domain `did`, named `tname`, having `qos` Qos,
         * for the type `ttype` whose registered name is `tregtype`
@@ -612,14 +725,28 @@ object global {
         */
       def this(did: Double, tname: String, qos: EntityQos) = this()
       def this(did: Double, tname: String, qos: EntityQos, ttype: String) = this()
-      def this(did: Double, tname: String, qos: EntityQos, ttype: js.UndefOr[scala.Nothing], tregtype: String) = this()
       def this(did: Double, tname: String, qos: EntityQos, ttype: String, tregtype: String) = this()
+      def this(did: Double, tname: String, qos: EntityQos, ttype: Unit, tregtype: String) = this()
+      
+      /**
+        * Called when topic gets registered in the runtime
+        */
+      /* CompleteClass */
+      override def onregistered(): Unit = js.native
+      
+      /**
+        * Called when topic gets unregistered in the runtime
+        */
+      /* CompleteClass */
+      override def onunregistered(): Unit = js.native
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("dds.TopicQos")
     @js.native
-    class TopicQos protected () extends EntityQos {
+    class TopicQos protected ()
+      extends StObject
+         with EntityQos {
       /**
         * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
         *
@@ -658,7 +785,9 @@ object global {
         * maintains the connection with the server, re-establish the connection
         * if dropped and mediates the `DataReader` and `DataWriter` communication.
         */
-      class RuntimeCls () extends Runtime
+      class RuntimeCls ()
+        extends StObject
+           with Runtime
       
       @scala.inline
       def Runtime_=(x: Runtime): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Runtime")(x.asInstanceOf[js.Any])

@@ -10,9 +10,9 @@ Storybook framework-agnostic API
 | ------------------ | :-------------: |
 | Full name          | @storybook/core |
 | Keywords           | storybook |
-| # releases         | 556 |
-| # dependents       | 64 |
-| # downloads        | 82303667 |
+| # releases         | 549 |
+| # dependents       | 71 |
+| # downloads        | 95269767 |
 | # stars            | 0 |
 
 ## Links

@@ -11,7 +11,6 @@ import typings.reactCountup.anon.Start
 import typings.reactCountup.anon.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,41 +20,40 @@ object mod {
   class ^ ()
     extends PureComponent[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: js.UndefOr[js.Function1[/* data */ RenderProps, ReactElement]] = js.native
+    var children: js.UndefOr[js.Function1[/* data */ RenderProps, ReactElement]] = js.undefined
     
     /**
       * CSS class name of the span element.
       * Note: This won't be applied when using CountUp with render props.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies decimal character.
       * Default: .
       */
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
     /**
       * Amount of decimals to display.
       * Default: 0
       */
-    var decimals: js.UndefOr[Double] = js.native
+    var decimals: js.UndefOr[Double] = js.undefined
     
     /**
       * Delay in seconds before starting the transition.
       * Default: null
       * Note: delay={0} will automatically start the count up.
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Duration in seconds.
       * Default: 2
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Easing function. http://robertpenner.com/easing for more details.
@@ -63,89 +61,89 @@ object mod {
       */
     var easingFn: js.UndefOr[
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Target value.
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to customize the formatting of the number
       */
-    var formattingFn: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
+    var formattingFn: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
     
     /**
       * Callback function on transition end.
       */
-    var onEnd: js.UndefOr[js.Function1[/* providedFn */ PauseResume, Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* providedFn */ PauseResume, Unit]] = js.undefined
     
     /**
       * Callback function on pause or resume.
       */
-    var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Start, Unit]]] = js.native
+    var onPauseResume: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Start, Unit]]] = js.undefined
     
     /**
       * Callback function on reset.
       */
-    var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Update, Unit]]] = js.native
+    var onReset: js.UndefOr[js.Function0[js.Function1[/* providedFn */ Update, Unit]]] = js.undefined
     
     /**
       * Callback function on transition start.
       */
-    var onStart: js.UndefOr[js.Function1[/* providedFn */ Reset, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* providedFn */ Reset, Unit]] = js.undefined
     
     /**
       * Callback function on update.
       */
-    var onUpdate: js.UndefOr[js.Function1[/* providedFn */ PauseResumeReset, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* providedFn */ PauseResumeReset, Unit]] = js.undefined
     
     /**
       * Static text before the transitioning value.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Save previously ended number to start every new animation from it.
       * Default: false
       */
-    var preserveValue: js.UndefOr[Boolean] = js.native
+    var preserveValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces count up transition on every component update.
       * Default: false
       */
-    var redraw: js.UndefOr[Boolean] = js.native
+    var redraw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies character of thousands separator.
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * Initial value.
       * Default: 0
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /**
       * Use for start counter on mount for hook usage.
       * Default: true
       */
-    var startOnMount: js.UndefOr[Boolean] = js.native
+    var startOnMount: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Static text after the transitioning value.
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * Enables easing. Set to false for a linear transition.
       * Default: true
       */
-    var useEasing: js.UndefOr[Boolean] = js.native
+    var useEasing: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     
@@ -306,7 +304,7 @@ object mod {
     /**
       * Ref to hook the countUp instance to
       */
-    var countUpRef: RefObject[_] = js.native
+    var countUpRef: RefObject[js.Any] = js.native
     
     /**
       * Pauses or resumes the transition

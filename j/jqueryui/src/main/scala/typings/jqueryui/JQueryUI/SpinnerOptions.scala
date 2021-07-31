@@ -2,33 +2,33 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Spinner //////////////////////////////////////////////////
-@js.native
-trait SpinnerOptions extends SpinnerEvents {
+trait SpinnerOptions
+  extends StObject
+     with SpinnerEvents {
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var incremental: js.UndefOr[js.Any] = js.native
+  var incremental: js.UndefOr[js.Any] = js.undefined
   
   // boolean or ()
-  var max: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[js.Any] = js.undefined
   
   // number or string
-  var min: js.UndefOr[js.Any] = js.native
+  var min: js.UndefOr[js.Any] = js.undefined
   
   // number or string
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[js.Any] = js.native
+  var step: js.UndefOr[js.Any] = js.undefined
 }
 object SpinnerOptions {
   

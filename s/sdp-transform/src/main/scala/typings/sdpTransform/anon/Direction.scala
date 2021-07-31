@@ -2,17 +2,15 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: String = js.native
+  var direction: String
   
-  var id: Double | String = js.native
+  var id: Double | String
   
-  var params: js.UndefOr[String] = js.native
+  var params: js.UndefOr[String] = js.undefined
 }
 object Direction {
   

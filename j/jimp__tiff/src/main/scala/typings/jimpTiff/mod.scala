@@ -6,25 +6,26 @@ import typings.jimpTiff.anon.ImagetiffEncoderFn
 import typings.jimpTiff.anon.MIMETIFF
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/tiff", JSImport.Default)
+  @JSImport("@jimp/tiff", JSImport.Namespace)
   @js.native
-  def default(): Tiff = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Tiff = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Tiff]
+  
   trait Tiff extends StObject {
     
-    var constants: MIMETIFF = js.native
+    var constants: MIMETIFF
     
-    var decoders: ImagetiffDecoderFn = js.native
+    var decoders: ImagetiffDecoderFn
     
-    var encoders: ImagetiffEncoderFn = js.native
+    var encoders: ImagetiffEncoderFn
     
-    var mime: Imagetiff = js.native
+    var mime: Imagetiff
   }
   object Tiff {
     

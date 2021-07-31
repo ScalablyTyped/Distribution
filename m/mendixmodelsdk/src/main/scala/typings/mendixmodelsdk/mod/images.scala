@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object images {
@@ -36,9 +35,8 @@ object images {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "images.Image.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.imagesMod.images.Image = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.imagesMod.images.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.imagesMod.images.Image]
     
     /**
       * Creates and returns a new Image instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object images {
       * of the parent ImageCollection element passed as argument.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "images.Image.createIn")
-    @js.native
-    def createIn(container: typings.mendixmodelsdk.imagesMod.images.ImageCollection): typings.mendixmodelsdk.imagesMod.images.Image = js.native
+    @scala.inline
+    def createIn(container: typings.mendixmodelsdk.imagesMod.images.ImageCollection): typings.mendixmodelsdk.imagesMod.images.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.imagesMod.images.Image]
     
     /* static member */
     @JSImport("mendixmodelsdk", "images.Image.structureTypeName")
@@ -91,9 +88,8 @@ object images {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "images.ImageCollection.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.imagesMod.images.ImageCollection = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.imagesMod.images.ImageCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.imagesMod.images.ImageCollection]
     
     /* static member */
     @JSImport("mendixmodelsdk", "images.ImageCollection.structureTypeName")

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerListDpcsResponse extends StObject {
   
   /** The list of DPCs available to the customer that support zero-touch enrollment. */
-  var dpcs: js.UndefOr[js.Array[Dpc]] = js.native
+  var dpcs: js.UndefOr[js.Array[Dpc]] = js.undefined
 }
 object CustomerListDpcsResponse {
   

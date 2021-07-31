@@ -2,47 +2,45 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseProduct extends StObject {
   
-  var can_share_to_story: Boolean = js.native
+  var can_share_to_story: Boolean
   
-  var checkout_style: String = js.native
+  var checkout_style: String
   
-  var current_price: String = js.native
+  var current_price: String
   
-  var current_price_stripped: String = js.native
+  var current_price_stripped: String
   
-  var description: String = js.native
+  var description: String
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var full_price: String = js.native
+  var full_price: String
   
-  var full_price_stripped: String = js.native
+  var full_price_stripped: String
   
-  var has_viewer_saved: Boolean = js.native
+  var has_viewer_saved: Boolean
   
-  var main_image: SavedFeedResponseMainImage = js.native
+  var main_image: SavedFeedResponseMainImage
   
-  var merchant: SavedFeedResponseMerchant = js.native
+  var merchant: SavedFeedResponseMerchant
   
-  var name: String = js.native
+  var name: String
   
-  var price: String = js.native
+  var price: String
   
-  var product_id: String = js.native
+  var product_id: String
   
-  var retailer_id: String = js.native
+  var retailer_id: String
   
-  var review_status: String = js.native
+  var review_status: String
   
-  var thumbnail_image: SavedFeedResponseThumbnailImage = js.native
+  var thumbnail_image: SavedFeedResponseThumbnailImage
   
-  var variant_values: js.UndefOr[js.Array[SavedFeedResponseVariantValuesItem]] = js.native
+  var variant_values: js.UndefOr[js.Array[SavedFeedResponseVariantValuesItem]] = js.undefined
 }
 object SavedFeedResponseProduct {
   

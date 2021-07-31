@@ -4,48 +4,46 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.FocusEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-onsenui.react-onsenui.InputHTMLAttributes<'min' | 'max' | 'step'> & {  modifier :string | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   onChange :(e : react.react.ChangeEvent<any>): void | undefined,   onBlur :(e : react.react.FocusEvent<any>): void | undefined,   onFocus :(e : react.react.FocusEvent<any>): void | undefined,   value :string | undefined,   defaultValue :string | undefined,   checked :boolean | undefined,   placeholder :string | undefined,   type :string | undefined,   inputId :string | undefined,   float :boolean | undefined,   name :string | undefined,   autoFocus :boolean | undefined} */
-@js.native
 trait InputHTMLAttributesminmax extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var float: js.UndefOr[Boolean] = js.native
+  var float: js.UndefOr[Boolean] = js.undefined
   
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double | String] = js.native
+  var max: js.UndefOr[Double | String] = js.undefined
   
-  var min: js.UndefOr[Double | String] = js.native
+  var min: js.UndefOr[Double | String] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[_], Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[js.Any], Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[_], Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent[js.Any], Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[_], Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[js.Any], Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double | String] = js.native
+  var step: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object InputHTMLAttributesminmax {
   
@@ -119,19 +117,19 @@ object InputHTMLAttributesminmax {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setOnBlur(value: /* e */ FocusEvent[_] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    def setOnBlur(value: /* e */ FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* e */ ChangeEvent[_] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* e */ ChangeEvent[js.Any] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnFocus(value: /* e */ FocusEvent[_] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    def setOnFocus(value: /* e */ FocusEvent[js.Any] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)

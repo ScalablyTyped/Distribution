@@ -12,7 +12,7 @@ Typings are for version 8.2
 | Keywords           | jwplayer, platform, jwplayer, API |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 4975 |
+| # downloads        | 4057 |
 | # stars            | 1 |
 
 ## Links

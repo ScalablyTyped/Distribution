@@ -3,7 +3,6 @@ package typings.reactDnd
 import typings.reactDnd.anon.Dispose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object disposablesMod {
@@ -61,9 +60,8 @@ object disposablesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("react-dnd/lib/decorators/disposables", "Disposable._fixup")
-    @js.native
-    def _fixup(result: js.Any): js.Any = js.native
+    @scala.inline
+    def _fixup(result: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_fixup")(result.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Creates a disposable object that invokes the specified action when disposed.
@@ -71,9 +69,8 @@ object disposablesMod {
       * The action is guaranteed to be run at most once.
       * @return {Disposable} The disposable object that runs the given action upon disposal.
       */
-    @JSImport("react-dnd/lib/decorators/disposables", "Disposable.create")
-    @js.native
-    def create(action: js.Any): Disposable = js.native
+    @scala.inline
+    def create(action: js.Any): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(action.asInstanceOf[js.Any]).asInstanceOf[Disposable]
     
     /**
       * Gets the disposable that does nothing when disposed.
@@ -89,9 +86,8 @@ object disposablesMod {
       * @param {Object} Object to test whether it has a dispose method
       * @returns {Boolean} true if a disposable object, else false.
       */
-    @JSImport("react-dnd/lib/decorators/disposables", "Disposable.isDisposable")
-    @js.native
-    def isDisposable(d: js.Any): Boolean = js.native
+    @scala.inline
+    def isDisposable(d: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("react-dnd/lib/decorators/disposables", "SerialDisposable")

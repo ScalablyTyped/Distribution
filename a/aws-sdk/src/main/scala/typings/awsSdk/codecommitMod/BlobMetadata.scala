@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobMetadata extends StObject {
   
   /**
     * The full ID of the blob.
     */
-  var blobId: js.UndefOr[ObjectId] = js.native
+  var blobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The file mode permissions of the blob. File mode permission codes include:    100644 indicates read/write    100755 indicates read/write/execute    160000 indicates a submodule    120000 indicates a symlink  
     */
-  var mode: js.UndefOr[Mode] = js.native
+  var mode: js.UndefOr[Mode] = js.undefined
   
   /**
     * The path to the blob and associated file name, if any.
     */
-  var path: js.UndefOr[Path] = js.native
+  var path: js.UndefOr[Path] = js.undefined
 }
 object BlobMetadata {
   

@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.commonTypesMod.IgResponse
 import typings.instagramPrivateApi.spamResponseMod.SpamResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api", "IgActionSpamError")

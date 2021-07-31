@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientBigqueryconnection.gapi.client.bigquerycon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
   /** Cloud SQL properties. */
-  var cloudSql: js.UndefOr[CloudSqlProperties] = js.native
+  var cloudSql: js.UndefOr[CloudSqlProperties] = js.undefined
   
   /** Output only. The creation timestamp of the connection. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** User provided description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** User provided display name for the connection. */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /** Output only. True, if credential is configured for this connection. */
-  var hasCredential: js.UndefOr[Boolean] = js.native
+  var hasCredential: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The last update timestamp of the connection. */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /** The resource name of the connection in the form of: `projects/{project_id}/locations/{location_id}/connections/{connection_id}` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Connection {
   

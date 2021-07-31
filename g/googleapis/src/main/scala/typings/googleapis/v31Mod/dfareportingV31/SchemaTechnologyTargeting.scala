@@ -2,13 +2,11 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Technology Targeting.
   */
-@js.native
 trait SchemaTechnologyTargeting extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaTechnologyTargeting extends StObject {
     * specified, only browserVersionId will be used. The other fields are
     * populated automatically when the ad is inserted or updated.
     */
-  var browsers: js.UndefOr[js.Array[SchemaBrowser]] = js.native
+  var browsers: js.UndefOr[js.Array[SchemaBrowser]] = js.undefined
   
   /**
     * Connection types that this ad targets. For each connection type only id
     * is required. The other fields are populated automatically when the ad is
     * inserted or updated.
     */
-  var connectionTypes: js.UndefOr[js.Array[SchemaConnectionType]] = js.native
+  var connectionTypes: js.UndefOr[js.Array[SchemaConnectionType]] = js.undefined
   
   /**
     * Mobile carriers that this ad targets. For each mobile carrier only id is
@@ -32,7 +30,7 @@ trait SchemaTechnologyTargeting extends StObject {
     * inserted or updated. If targeting a mobile carrier, do not set targeting
     * for any zip codes.
     */
-  var mobileCarriers: js.UndefOr[js.Array[SchemaMobileCarrier]] = js.native
+  var mobileCarriers: js.UndefOr[js.Array[SchemaMobileCarrier]] = js.undefined
   
   /**
     * Operating system versions that this ad targets. To target all versions,
@@ -41,7 +39,7 @@ trait SchemaTechnologyTargeting extends StObject {
     * inserted or updated. If targeting an operating system version, do not set
     * targeting for the corresponding operating system in operatingSystems.
     */
-  var operatingSystemVersions: js.UndefOr[js.Array[SchemaOperatingSystemVersion]] = js.native
+  var operatingSystemVersions: js.UndefOr[js.Array[SchemaOperatingSystemVersion]] = js.undefined
   
   /**
     * Operating systems that this ad targets. To target specific versions, use
@@ -50,14 +48,14 @@ trait SchemaTechnologyTargeting extends StObject {
     * inserted or updated. If targeting an operating system, do not set
     * targeting for operating system versions for the same operating system.
     */
-  var operatingSystems: js.UndefOr[js.Array[SchemaOperatingSystem]] = js.native
+  var operatingSystems: js.UndefOr[js.Array[SchemaOperatingSystem]] = js.undefined
   
   /**
     * Platform types that this ad targets. For example, desktop, mobile, or
     * tablet. For each platform type, only id is required, and the other fields
     * are populated automatically when the ad is inserted or updated.
     */
-  var platformTypes: js.UndefOr[js.Array[SchemaPlatformType]] = js.native
+  var platformTypes: js.UndefOr[js.Array[SchemaPlatformType]] = js.undefined
 }
 object SchemaTechnologyTargeting {
   

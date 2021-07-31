@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImageVersionRequest extends StObject {
   
   /**
     * The name of the image.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * The version of the image. If not specified, the latest version is described.
     */
-  var Version: js.UndefOr[ImageVersionNumber] = js.native
+  var Version: js.UndefOr[ImageVersionNumber] = js.undefined
 }
 object DescribeImageVersionRequest {
   

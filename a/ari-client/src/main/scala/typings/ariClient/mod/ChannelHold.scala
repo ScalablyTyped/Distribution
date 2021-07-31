@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChannelHold extends Event {
+trait ChannelHold
+  extends StObject
+     with Event {
   
   /**
     * The channel that initiated the hold event.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * The music on hold class that the initiator requested.
     */
-  var musicclass: js.UndefOr[String] = js.native
+  var musicclass: js.UndefOr[String] = js.undefined
 }
 object ChannelHold {
   

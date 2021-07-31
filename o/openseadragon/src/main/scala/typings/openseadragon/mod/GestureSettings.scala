@@ -2,25 +2,23 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GestureSettings extends StObject {
   
-  var clickToZoom: js.UndefOr[Boolean] = js.native
+  var clickToZoom: js.UndefOr[Boolean] = js.undefined
   
-  var dblClickToZoom: js.UndefOr[Boolean] = js.native
+  var dblClickToZoom: js.UndefOr[Boolean] = js.undefined
   
-  var flickEnabled: js.UndefOr[Boolean] = js.native
+  var flickEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var flickMinSpeed: js.UndefOr[Double] = js.native
+  var flickMinSpeed: js.UndefOr[Double] = js.undefined
   
-  var flickMomentum: js.UndefOr[Double] = js.native
+  var flickMomentum: js.UndefOr[Double] = js.undefined
   
-  var pinchToZoom: js.UndefOr[Boolean] = js.native
+  var pinchToZoom: js.UndefOr[Boolean] = js.undefined
   
-  var scrollToZoom: js.UndefOr[Boolean] = js.native
+  var scrollToZoom: js.UndefOr[Boolean] = js.undefined
 }
 object GestureSettings {
   

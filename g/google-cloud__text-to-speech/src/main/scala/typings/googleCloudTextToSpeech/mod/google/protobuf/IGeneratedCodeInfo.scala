@@ -3,15 +3,13 @@ package typings.googleCloudTextToSpeech.mod.google.protobuf
 import typings.googleCloudTextToSpeech.mod.google.protobuf.GeneratedCodeInfo.IAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GeneratedCodeInfo. */
-@js.native
 trait IGeneratedCodeInfo extends StObject {
   
   /** GeneratedCodeInfo annotation */
-  var annotation: js.UndefOr[js.Array[IAnnotation] | Null] = js.native
+  var annotation: js.UndefOr[js.Array[IAnnotation] | Null] = js.undefined
 }
 object IGeneratedCodeInfo {
   

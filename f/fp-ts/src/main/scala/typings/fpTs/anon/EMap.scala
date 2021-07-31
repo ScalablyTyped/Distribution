@@ -1,0 +1,58 @@
+package typings.fpTs.anon
+
+import typings.fpTs.writerTMod.WriterT3
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait EMap[W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] extends StObject {
+  
+  val _E: W
+  
+  def ap[R, E, A, B](mab: WriterT3[M, R, E, W, js.Function1[/* a */ A, B]], ma: WriterT3[M, R, E, W, A]): WriterT3[M, R, E, W, B]
+  
+  def chain[R, E, A, B](ma: WriterT3[M, R, E, W, A], f: js.Function1[/* a */ A, WriterT3[M, R, E, W, B]]): WriterT3[M, R, E, W, B]
+  
+  def map[R, E, A, B](ma: WriterT3[M, R, E, W, A], f: js.Function1[/* a */ A, B]): WriterT3[M, R, E, W, B]
+  
+  def of[R, E, A](a: A): WriterT3[M, R, E, W, A]
+}
+object EMap {
+  
+  @scala.inline
+  def apply[W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    _E: W,
+    ap: (WriterT3[M, js.Any, js.Any, W, js.Function1[js.Any, js.Any]], WriterT3[M, js.Any, js.Any, W, js.Any]) => WriterT3[M, js.Any, js.Any, W, js.Any],
+    chain: (WriterT3[M, js.Any, js.Any, W, js.Any], js.Function1[js.Any, WriterT3[M, js.Any, js.Any, W, js.Any]]) => WriterT3[M, js.Any, js.Any, W, js.Any],
+    map: (WriterT3[M, js.Any, js.Any, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, W, js.Any],
+    of: js.Any => WriterT3[M, js.Any, js.Any, W, js.Any]
+  ): EMap[W, M] = {
+    val __obj = js.Dynamic.literal(_E = _E.asInstanceOf[js.Any], ap = js.Any.fromFunction2(ap), chain = js.Any.fromFunction2(chain), map = js.Any.fromFunction2(map), of = js.Any.fromFunction1(of))
+    __obj.asInstanceOf[EMap[W, M]]
+  }
+  
+  @scala.inline
+  implicit class EMapMutableBuilder[Self <: EMap[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & (EMap[W, M])) extends AnyVal {
+    
+    @scala.inline
+    def setAp(
+      value: (WriterT3[M, js.Any, js.Any, W, js.Function1[js.Any, js.Any]], WriterT3[M, js.Any, js.Any, W, js.Any]) => WriterT3[M, js.Any, js.Any, W, js.Any]
+    ): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setChain(
+      value: (WriterT3[M, js.Any, js.Any, W, js.Any], js.Function1[js.Any, WriterT3[M, js.Any, js.Any, W, js.Any]]) => WriterT3[M, js.Any, js.Any, W, js.Any]
+    ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setMap(
+      value: (WriterT3[M, js.Any, js.Any, W, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, W, js.Any]
+    ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setOf(value: js.Any => WriterT3[M, js.Any, js.Any, W, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def set_E(value: W): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+  }
+}

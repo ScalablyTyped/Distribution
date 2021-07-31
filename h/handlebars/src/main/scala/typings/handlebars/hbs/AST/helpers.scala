@@ -2,17 +2,15 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait helpers extends StObject {
   
-  def helperExpression(node: Node): Boolean = js.native
+  def helperExpression(node: Node): Boolean
   
-  def scopeId(path: PathExpression): Boolean = js.native
+  def scopeId(path: PathExpression): Boolean
   
-  def simpleId(path: PathExpression): Boolean = js.native
+  def simpleId(path: PathExpression): Boolean
 }
 object helpers {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlanUpdateResponse extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait BillingPlanUpdateResponse extends StObject {
     * - `credit_card`
     * -
     */
-  var accountPaymentMethod: js.UndefOr[String] = js.native
+  var accountPaymentMethod: js.UndefOr[String] = js.undefined
   
   var billingPlanPreview: js.UndefOr[
     /* Information used to provide a preview of a billing plan. */ BillingPlanPreview
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Specifies the ISO currency code for the account.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seats (users) included in the plan.
     */
-  var includedSeats: js.UndefOr[String] = js.native
+  var includedSeats: js.UndefOr[String] = js.undefined
   
   /**
     * The payment cycle associated with the plan. The possible values are:
@@ -36,7 +34,7 @@ trait BillingPlanUpdateResponse extends StObject {
     * - `Monthly`
     * - `Annually`
     */
-  var paymentCycle: js.UndefOr[String] = js.native
+  var paymentCycle: js.UndefOr[String] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -51,12 +49,12 @@ trait BillingPlanUpdateResponse extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
   
   /**
     * DocuSign's id for the account plan.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the billing plan used for the account.
@@ -66,7 +64,7 @@ trait BillingPlanUpdateResponse extends StObject {
     * - `Personal - Annual`
     * - `Unlimited Envelope Subscription - Annual Billing`
     */
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
 }
 object BillingPlanUpdateResponse {
   

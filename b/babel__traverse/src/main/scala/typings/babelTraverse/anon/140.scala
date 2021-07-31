@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.DirectiveLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `140` extends StObject {
   
-  var `type`: DirectiveLiteral = js.native
+  var `type`: DirectiveLiteral
 }
 object `140` {
   
   @scala.inline
-  def apply(`type`: DirectiveLiteral): `140` = {
+  def apply(): `140` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DirectiveLiteral")
     __obj.asInstanceOf[`140`]
   }
   

@@ -10,9 +10,9 @@ TypeScript typings for Knowledge Graph Search API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.kgsearch |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 658 |
 | # stars            | 0 |
 
 ## Links

@@ -2,23 +2,21 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInitiatorMod {
   
-  @js.native
   trait Initiator extends StObject {
     
     /**
       * <p>Name of the Principal.</p>
       */
-    var DisplayName: js.UndefOr[String] = js.native
+    var DisplayName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>If the principal is an AWS account, it provides the Canonical User ID. If the principal is an IAM User, it provides a user ARN value.</p>
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
   }
   object Initiator {
     

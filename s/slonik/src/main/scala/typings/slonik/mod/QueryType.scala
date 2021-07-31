@@ -2,15 +2,13 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryType extends StObject {
   
-  var sql: String = js.native
+  var sql: String
   
-  var values: js.UndefOr[js.Array[PrimitiveValueExpressionType]] = js.native
+  var values: js.UndefOr[js.Array[PrimitiveValueExpressionType]] = js.undefined
 }
 object QueryType {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The way this works might change, therefore this interface is marked as deprecated.
   * @deprecated Deprecated
   */
-@js.native
-trait XRemoteContentProviderActivator extends XInterface {
+trait XRemoteContentProviderActivator
+  extends StObject
+     with XInterface {
   
   /**
     * Activate (i.e., register at the broker) the remote content providers that until now have only been remembered by {@link
@@ -26,7 +26,7 @@ trait XRemoteContentProviderActivator extends XInterface {
     * of {@link XRemoteContentProviderAcceptor} uses this lazy strategy (and thus also implements this interface).
     * @returns the broker at which the remote content providers have been registered.
     */
-  def activateRemoteContentProviders(): XContentProviderManager = js.native
+  def activateRemoteContentProviders(): XContentProviderManager
 }
 object XRemoteContentProviderActivator {
   

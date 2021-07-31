@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwitchChangeEvent extends SwitchEvent {
+trait SwitchChangeEvent
+  extends StObject
+     with SwitchEvent {
   
-  var checked: js.UndefOr[js.Any] = js.native
+  var checked: js.UndefOr[js.Any] = js.undefined
 }
 object SwitchChangeEvent {
   

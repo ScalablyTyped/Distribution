@@ -3,13 +3,13 @@ package typings.sharepoint.SP
 import typings.sharepoint.IEnumerable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a base class for a collection of objects on a remote client. */
 @js.native
 trait ClientObjectCollection[T]
-  extends ClientObject
+  extends StObject
+     with ClientObject
      with IEnumerable[T] {
   
   def addChild(obj: T): Unit = js.native

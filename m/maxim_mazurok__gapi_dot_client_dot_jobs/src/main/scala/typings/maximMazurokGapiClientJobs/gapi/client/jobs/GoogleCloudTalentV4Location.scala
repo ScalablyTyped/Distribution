@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4Location extends StObject {
   
   /** An object representing a latitude/longitude pair. */
-  var latLng: js.UndefOr[LatLng] = js.native
+  var latLng: js.UndefOr[LatLng] = js.undefined
   
   /**
     * The type of a location, which corresponds to the address lines field of google.type.PostalAddress. For example, "Downtown, Atlanta, GA, USA" has a type of LocationType.NEIGHBORHOOD,
     * and "Kansas City, KS, USA" has a type of LocationType.LOCALITY.
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * Postal address of the location that includes human readable information, such as postal delivery and payments addresses. Given a postal address, a postal service can deliver items
     * to a premises, P.O. Box, or other delivery location.
     */
-  var postalAddress: js.UndefOr[PostalAddress] = js.native
+  var postalAddress: js.UndefOr[PostalAddress] = js.undefined
   
   /**
     * Radius in miles of the job location. This value is derived from the location bounding box in which a circle with the specified radius centered from google.type.LatLng covers the
     * area associated with the job location. For example, currently, "Mountain View, CA, USA" has a radius of 6.17 miles.
     */
-  var radiusMiles: js.UndefOr[Double] = js.native
+  var radiusMiles: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudTalentV4Location {
   

@@ -12,73 +12,71 @@ import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeRendererProps extends StObject {
   
-  var buttons: js.UndefOr[js.Array[Element]] = js.native
+  var buttons: js.UndefOr[js.Array[Element]] = js.undefined
   
-  var canDrag: Boolean = js.native
+  var canDrag: Boolean
   
-  var canDrop: js.UndefOr[Boolean] = js.native
+  var canDrop: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var connectDragPreview: ConnectDragPreview = js.native
+  var connectDragPreview: ConnectDragPreview
   
-  var connectDragSource: ConnectDragSource = js.native
+  var connectDragSource: ConnectDragSource
   
-  var didDrop: Boolean = js.native
+  var didDrop: Boolean
   
-  var draggedNode: js.UndefOr[TreeItem] = js.native
+  var draggedNode: js.UndefOr[TreeItem] = js.undefined
   
-  var endDrag: js.Any = js.native
+  var endDrag: js.Any
   
-  var icons: js.UndefOr[js.Array[Element]] = js.native
+  var icons: js.UndefOr[js.Array[Element]] = js.undefined
   
-  var isDragging: Boolean = js.native
+  var isDragging: Boolean
   
-  var isOver: Boolean = js.native
+  var isOver: Boolean
   
-  var isSearchFocus: Boolean = js.native
+  var isSearchFocus: Boolean
   
-  var isSearchMatch: Boolean = js.native
+  var isSearchMatch: Boolean
   
-  var listIndex: Double = js.native
+  var listIndex: Double
   
-  var lowerSiblingCounts: js.Array[Double] = js.native
+  var lowerSiblingCounts: js.Array[Double]
   
-  var node: TreeItem = js.native
+  var node: TreeItem
   
-  var parentNode: js.UndefOr[TreeItem] = js.native
+  var parentNode: js.UndefOr[TreeItem] = js.undefined
   
-  var path: NumberOrStringArray = js.native
+  var path: NumberOrStringArray
   
-  var rowDirection: js.UndefOr[ltr | rtl] = js.native
+  var rowDirection: js.UndefOr[ltr | rtl] = js.undefined
   
-  var scaffoldBlockPxWidth: Double = js.native
+  var scaffoldBlockPxWidth: Double
   
-  var startDrag: js.Any = js.native
+  var startDrag: js.Any
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var subtitle: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.native
+  var subtitle: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.undefined
   
-  var swapDepth: js.UndefOr[Double] = js.native
+  var swapDepth: js.UndefOr[Double] = js.undefined
   
-  var swapFrom: js.UndefOr[Double] = js.native
+  var swapFrom: js.UndefOr[Double] = js.undefined
   
-  var swapLength: js.UndefOr[Double] = js.native
+  var swapLength: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.native
+  var title: js.UndefOr[js.Function1[/* data */ NodeData, Element]] = js.undefined
   
-  var toggleChildrenVisibility: js.UndefOr[js.Function1[/* data */ NodeData, Unit]] = js.native
+  var toggleChildrenVisibility: js.UndefOr[js.Function1[/* data */ NodeData, Unit]] = js.undefined
   
-  var treeId: String = js.native
+  var treeId: String
   
-  var treeIndex: Double = js.native
+  var treeIndex: Double
 }
 object NodeRendererProps {
   

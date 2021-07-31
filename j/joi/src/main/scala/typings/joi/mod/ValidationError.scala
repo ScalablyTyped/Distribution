@@ -3,11 +3,12 @@ package typings.joi.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ValidationError extends Error {
+trait ValidationError
+  extends StObject
+     with Error {
   
   var _original: js.Any = js.native
   

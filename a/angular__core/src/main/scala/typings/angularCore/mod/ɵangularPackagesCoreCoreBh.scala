@@ -2,16 +2,15 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵangularPackagesCoreCoreBh
-  extends TNode
+  extends StObject
+     with TNode
      with TNodeWithLocalRefs {
   
   @JSName("child")
-  var child_ɵangularPackagesCoreCoreBh: ɵangularPackagesCoreCoreBh | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode | Null = js.native
+  var child_ɵangularPackagesCoreCoreBh: ɵangularPackagesCoreCoreBh | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode | Null
   
   /**
     * Element nodes will have parents unless they are the first node of a component or
@@ -19,7 +18,7 @@ trait ɵangularPackagesCoreCoreBh
     * retrieved using viewData[HOST_NODE]).
     */
   @JSName("parent")
-  var parent_ɵangularPackagesCoreCoreBh: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null = js.native
+  var parent_ɵangularPackagesCoreCoreBh: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
   
   /**
     * If this is a component TNode with projection, this will be an array of projected
@@ -27,16 +26,16 @@ trait ɵangularPackagesCoreCoreBh
     * or a component without projection, it will be null.
     */
   @JSName("projection")
-  var projection_ɵangularPackagesCoreCoreBh: (js.Array[TNode | js.Array[RNode]]) | Null = js.native
+  var projection_ɵangularPackagesCoreCoreBh: (js.Array[TNode | js.Array[RNode]]) | Null
   
   @JSName("tViews")
-  var tViews_ɵangularPackagesCoreCoreBh: Null = js.native
+  var tViews_ɵangularPackagesCoreCoreBh: Null
   
   /**
     * Stores TagName
     */
   @JSName("value")
-  var value_ɵangularPackagesCoreCoreBh: String = js.native
+  var value_ɵangularPackagesCoreCoreBh: String
 }
 object ɵangularPackagesCoreCoreBh {
   
@@ -55,7 +54,7 @@ object ɵangularPackagesCoreCoreBh {
     `type`: TNodeType,
     value: String
   ): ɵangularPackagesCoreCoreBh = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵangularPackagesCoreCoreBh]
   }

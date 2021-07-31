@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiResolverMatch extends StObject {
   
   /**
     * Memory address that the given function is loaded at.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
   
   /**
     * Canonical name of the function that was found.
     */
-  var name: String = js.native
+  var name: String
 }
 object ApiResolverMatch {
   

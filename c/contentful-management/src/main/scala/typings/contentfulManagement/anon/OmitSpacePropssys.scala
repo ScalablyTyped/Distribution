@@ -2,14 +2,12 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/space.SpaceProps, 'sys'> */
-@js.native
 trait OmitSpacePropssys extends StObject {
   
-  var name: String = js.native
+  var name: String
 }
 object OmitSpacePropssys {
   

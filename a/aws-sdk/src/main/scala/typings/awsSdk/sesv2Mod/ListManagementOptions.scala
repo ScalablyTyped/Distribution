@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListManagementOptions extends StObject {
   
   /**
     * The name of the contact list.
     */
-  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName = js.native
+  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName
   
   /**
     * The name of the topic.
     */
-  var TopicName: js.UndefOr[typings.awsSdk.sesv2Mod.TopicName] = js.native
+  var TopicName: js.UndefOr[typings.awsSdk.sesv2Mod.TopicName] = js.undefined
 }
 object ListManagementOptions {
   

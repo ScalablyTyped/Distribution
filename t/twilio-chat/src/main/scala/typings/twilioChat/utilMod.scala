@@ -4,10 +4,13 @@ import typings.std.Date
 import typings.twilioChat.loggerMod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
+  
+  @JSImport("twilio-chat/lib/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Construct URI with query parameters
@@ -36,26 +39,21 @@ object utilMod {
     * @param {object} obj - the object to deep-clone
     * @returns {object}
     */
-  @JSImport("twilio-chat/lib/util", "deepClone")
-  @js.native
-  def deepClone[T](obj: T): T = js.native
+  @scala.inline
+  def deepClone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepClone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Checks if objects are equal
     */
-  @JSImport("twilio-chat/lib/util", "isDeepEqual")
-  @js.native
-  def isDeepEqual(o1: js.Object, o2: js.Object): Boolean = js.native
+  @scala.inline
+  def isDeepEqual(o1: js.Object, o2: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeepEqual")(o1.asInstanceOf[js.Any], o2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("twilio-chat/lib/util", "parseAttributes")
-  @js.native
-  def parseAttributes(rawAttributes: js.Any, warningMessage: String, log: Logger): js.Object = js.native
+  @scala.inline
+  def parseAttributes(rawAttributes: js.Any, warningMessage: String, log: Logger): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAttributes")(rawAttributes.asInstanceOf[js.Any], warningMessage.asInstanceOf[js.Any], log.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("twilio-chat/lib/util", "parseTime")
-  @js.native
-  def parseTime(timeString: js.Any): Date = js.native
+  @scala.inline
+  def parseTime(timeString: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTime")(timeString.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("twilio-chat/lib/util", "parseToNumber")
-  @js.native
-  def parseToNumber(value: js.Any): Double = js.native
+  @scala.inline
+  def parseToNumber(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseToNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

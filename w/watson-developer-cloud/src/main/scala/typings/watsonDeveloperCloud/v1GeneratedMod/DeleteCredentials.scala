@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object returned after credentials are deleted. */
-@js.native
 trait DeleteCredentials extends StObject {
   
   /** The unique identifier of the credentials that have been deleted. */
-  var credential_id: js.UndefOr[String] = js.native
+  var credential_id: js.UndefOr[String] = js.undefined
   
   /** The status of the deletion request. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object DeleteCredentials {
   

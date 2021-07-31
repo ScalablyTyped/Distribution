@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAppRequest extends StObject {
   
   /**
     * The name of the app.
     */
-  var AppName: typings.awsSdk.sagemakerMod.AppName = js.native
+  var AppName: typings.awsSdk.sagemakerMod.AppName
   
   /**
     * The type of app.
     */
-  var AppType: typings.awsSdk.sagemakerMod.AppType = js.native
+  var AppType: typings.awsSdk.sagemakerMod.AppType
   
   /**
     * The domain ID.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
     * The user profile name.
     */
-  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName = js.native
+  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName
 }
 object DeleteAppRequest {
   

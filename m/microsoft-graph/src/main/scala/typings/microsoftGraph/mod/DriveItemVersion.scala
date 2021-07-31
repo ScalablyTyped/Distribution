@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DriveItemVersion extends BaseItemVersion {
+trait DriveItemVersion
+  extends StObject
+     with BaseItemVersion {
   
   // The content stream for this version of the item.
-  var content: js.UndefOr[NullableOption[_]] = js.native
+  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Indicates the size of the content stream for this version of the item.
-  var size: js.UndefOr[NullableOption[Double]] = js.native
+  var size: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object DriveItemVersion {
   
@@ -26,7 +26,7 @@ object DriveItemVersion {
   implicit class DriveItemVersionMutableBuilder[Self <: DriveItemVersion] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentNull: Self = StObject.set(x, "content", null)

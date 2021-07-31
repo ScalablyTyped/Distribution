@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileTextChanges extends StObject {
   
-  var fileName: java.lang.String = js.native
+  var fileName: java.lang.String
   
-  var isNewFile: js.UndefOr[Boolean] = js.native
+  var isNewFile: js.UndefOr[Boolean] = js.undefined
   
-  var textChanges: js.Array[TextChange] = js.native
+  var textChanges: js.Array[TextChange]
 }
 object FileTextChanges {
   

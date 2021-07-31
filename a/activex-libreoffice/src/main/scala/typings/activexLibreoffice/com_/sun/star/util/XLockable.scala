@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `lock` and `unlock` calls can be nested. However, they must be in pairs. As long as there has been one more call to `lock` than to `unlock` , the
   * component is considered locked, which is reflected by {@link isLocked()} returning `TRUE` .
   */
-@js.native
 trait XLockable extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait XLockable extends StObject {
     * @see lock
     * @see unlock
     */
-  def isLocked(): Boolean = js.native
+  def isLocked(): Boolean
   
   /**
     * locks the component
     * @see unlock
     * @see isLocked
     */
-  def lock(): Unit = js.native
+  def lock(): Unit
   
   /**
     * unlocks the component
@@ -34,7 +32,7 @@ trait XLockable extends StObject {
     * @see isLocked
     * @throws NotLockedException if the component is not currently locked.
     */
-  def unlock(): Unit = js.native
+  def unlock(): Unit
 }
 object XLockable {
   

@@ -10,9 +10,9 @@ Easily turn your web application into a LTI 1.3 Learning Tool.
 | ------------------ | :-------------: |
 | Full name          | ltijs |
 | Keywords           | lti, lms, lti 1.3, imslti, 1.3, advantage |
-| # releases         | 124 |
+| # releases         | 142 |
 | # dependents       | 0 |
-| # downloads        | 21663 |
+| # downloads        | 26964 |
 | # stars            | 0 |
 
 ## Links

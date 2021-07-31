@@ -3,46 +3,44 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A repository (or repo) is a Git repository storing versioned source
   * content.
   */
-@js.native
 trait SchemaRepo extends StObject {
   
   /**
     * How this repository mirrors a repository managed by another service.
     * Read-only field.
     */
-  var mirrorConfig: js.UndefOr[SchemaMirrorConfig] = js.native
+  var mirrorConfig: js.UndefOr[SchemaMirrorConfig] = js.undefined
   
   /**
     * Resource name of the repository, of the form
     * `projects/&lt;project&gt;/repos/&lt;repo&gt;`.  The repo name may contain
     * slashes. eg, `projects/myproject/repos/name/with/slash`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * How this repository publishes a change in the repository through Cloud
     * Pub/Sub. Keyed by the topic names.
     */
-  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig]] = js.native
+  var pubsubConfigs: js.UndefOr[StringDictionary[SchemaPubsubConfig]] = js.undefined
   
   /**
     * The disk usage of the repo, in bytes. Read-only field. Size is only
     * returned by GetRepo.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * URL to clone the repository from Google Cloud Source Repositories.
     * Read-only field.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaRepo {
   

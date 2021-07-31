@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitFilterOptions extends StObject {
   
-  var selActive: js.UndefOr[String | Boolean] = js.native
+  var selActive: js.UndefOr[String | Boolean] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object UIkitFilterOptions {
   

@@ -8,24 +8,24 @@ import typings.justifiedLayout.justifiedLayoutStrings.justify
 import typings.justifiedLayout.justifiedLayoutStrings.left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(items: js.Array[JustifiedLayoutItem]): JustifiedLayoutResult = ^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any]).asInstanceOf[JustifiedLayoutResult]
+  @scala.inline
+  def apply(items: js.Array[JustifiedLayoutItem], options: JustifiedLayoutOptions): JustifiedLayoutResult = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JustifiedLayoutResult]
+  
   @JSImport("justified-layout", JSImport.Namespace)
   @js.native
-  def apply(items: js.Array[JustifiedLayoutItem]): JustifiedLayoutResult = js.native
-  @JSImport("justified-layout", JSImport.Namespace)
-  @js.native
-  def apply(items: js.Array[JustifiedLayoutItem], options: JustifiedLayoutOptions): JustifiedLayoutResult = js.native
+  val ^ : js.Any = js.native
   
   type JustifiedLayoutItem = Double | Height
   
   /**
     * Options for configuring the justified layout.
     */
-  @js.native
   trait JustifiedLayoutOptions extends StObject {
     
     /**
@@ -33,27 +33,27 @@ object mod {
       * object to apply individual values to each axis.
       * @default 10
       */
-    var boxSpacing: js.UndefOr[Double | Horizontal] = js.native
+    var boxSpacing: js.UndefOr[Double | Horizontal] = js.undefined
     
     /**
       * Provide a single integer to apply padding to all sides or provide an object to apply
       * individual values to each side.
       * @default 10
       */
-    var containerPadding: js.UndefOr[Double | Bottom] = js.native
+    var containerPadding: js.UndefOr[Double | Bottom] = js.undefined
     
     /**
       * The width that boxes will be contained within irrelevant of padding.
       * @default 1060
       */
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Provide an aspect ratio here to return everything in that aspect ratio. Makes the values
       * in your input array irrelevant. The length of the array remains relevant.
       * @default false
       */
-    var forceAspectRatio: js.UndefOr[Boolean | Double] = js.native
+    var forceAspectRatio: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * If you'd like to insert a full width box every n rows you can specify it with this
@@ -63,28 +63,28 @@ object mod {
       * see what this does.
       * @default false
       */
-    var fullWidthBreakoutRowCadence: js.UndefOr[Boolean | Double] = js.native
+    var fullWidthBreakoutRowCadence: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Will stop adding rows at this number regardless of how many items still need to be laid
       * out.
       * @default Number.POSITIVE_INFINITY
       */
-    var maxNumRows: js.UndefOr[Double] = js.native
+    var maxNumRows: js.UndefOr[Double] = js.undefined
     
     /**
       * By default we'll return items at the end of a justified layout even if they don't make a
       * full row. If false they'll be omitted from the output.
       * @default true
       */
-    var showWidows: js.UndefOr[Boolean] = js.native
+    var showWidows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It's called a target because row height is the lever we use in order to fit everything in
       * nicely. The algorithm will get as close to the target row height as it can.
       * @default 320
       */
-    var targetRowHeight: js.UndefOr[Double] = js.native
+    var targetRowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * How far row heights can stray from targetRowHeight. `0` would force rows to be the
@@ -92,13 +92,13 @@ object mod {
       * be between `0` and `1`.
       * @default 0.25
       */
-    var targetRowHeightTolerance: js.UndefOr[Double] = js.native
+    var targetRowHeightTolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * If widows are visible, how should they be laid out?
       * @default "left"
       */
-    var widowLayoutStyle: js.UndefOr[left | justify | center] = js.native
+    var widowLayoutStyle: js.UndefOr[left | justify | center] = js.undefined
   }
   object JustifiedLayoutOptions {
     
@@ -176,23 +176,22 @@ object mod {
   /**
     * Results from calculating the justified layout.
     */
-  @js.native
   trait JustifiedLayoutResult extends StObject {
     
     /**
       * Computed positional and sizing properties of a box in the justified layout.
       */
-    var boxes: js.Array[LayoutBox] = js.native
+    var boxes: js.Array[LayoutBox]
     
     /**
       * Height of the container containing the justified layout.
       */
-    var containerHeight: Double = js.native
+    var containerHeight: Double
     
     /**
       * Number of items that are in rows that aren't fully-packed.
       */
-    var widowCount: Double = js.native
+    var widowCount: Double
   }
   object JustifiedLayoutResult {
     
@@ -222,33 +221,32 @@ object mod {
   /**
     * Computed positional and sizing properties of a box in the layout.
     */
-  @js.native
   trait LayoutBox extends StObject {
     
     /**
       * Aspect ratio of the box.
       */
-    var aspectRatio: Double = js.native
+    var aspectRatio: Double
     
     /**
       * Height of the box in a justified layout.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Distance between the left side of the box and the left boundary of the justified layout.
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * Distance between the top side of the box and the top boundary of the justified layout.
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * Width of the box in a justified layout.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object LayoutBox {
     

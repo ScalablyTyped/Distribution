@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesTruncateLogRequest extends StObject {
   
   /** Contains details about the truncate log operation. */
-  var truncateLogContext: js.UndefOr[TruncateLogContext] = js.native
+  var truncateLogContext: js.UndefOr[TruncateLogContext] = js.undefined
 }
 object InstancesTruncateLogRequest {
   

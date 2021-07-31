@@ -10,7 +10,6 @@ import typings.send.sendStrings.ignore
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,45 +18,46 @@ object mod {
     * Create a new SendStream for the given path to send to a res.
     * The req is the Node.js HTTP request and the path is a urlencoded path to send (urlencoded, not the actual file-system path).
     */
+  @scala.inline
+  def apply(req: Readable, path: String): SendStream = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[SendStream]
+  @scala.inline
+  def apply(req: Readable, path: String, options: SendOptions): SendStream = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendStream]
+  
   @JSImport("send", JSImport.Namespace)
   @js.native
-  def apply(req: Readable, path: String): SendStream = js.native
-  @JSImport("send", JSImport.Namespace)
-  @js.native
-  def apply(req: Readable, path: String, options: SendOptions): SendStream = js.native
+  val ^ : js.Any = js.native
   
   object mime {
     
-    @JSImport("send", "mime.define")
+    @JSImport("send", "mime")
     @js.native
-    def define(mimes: TypeMap): Unit = js.native
-    @JSImport("send", "mime.define")
-    @js.native
-    def define(mimes: TypeMap, force: Boolean): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("send", "mime.getExtension")
-    @js.native
-    def getExtension(mime: String): String | Null = js.native
+    @scala.inline
+    def define(mimes: TypeMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def define(mimes: TypeMap, force: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("send", "mime.getType")
-    @js.native
-    def getType(path: String): String | Null = js.native
+    @scala.inline
+    def getExtension(mime: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtension")(mime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    
+    @scala.inline
+    def getType(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
-  @js.native
   trait SendOptions extends StObject {
     
     /**
       * Enable or disable accepting ranged requests, defaults to true.
       * Disabling this will not send Accept-Ranges and ignore the contents of the Range request header.
       */
-    var acceptRanges: js.UndefOr[Boolean] = js.native
+    var acceptRanges: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable setting Cache-Control response header, defaults to true.
       * Disabling this will ignore the maxAge option.
       */
-    var cacheControl: js.UndefOr[Boolean] = js.native
+    var cacheControl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set how "dotfiles" are treated when encountered.
@@ -69,18 +69,18 @@ object mod {
       * 'ignore' Pretend like the dotfile does not exist and 404.
       * The default value is similar to 'ignore', with the exception that this default will not ignore the files within a directory that begins with a dot, for backward-compatibility.
       */
-    var dotfiles: js.UndefOr[allow | deny | ignore] = js.native
+    var dotfiles: js.UndefOr[allow | deny | ignore] = js.undefined
     
     /**
       * Byte offset at which the stream ends, defaults to the length of the file minus 1.
       * The end is inclusive in the stream, meaning end: 3 will include the 4th byte in the stream.
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable or disable etag generation, defaults to true.
       */
-    var etag: js.UndefOr[Boolean] = js.native
+    var etag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If a given file doesn't exist, try appending one of the given extensions, in the given order.
@@ -88,35 +88,35 @@ object mod {
       * An example value that will serve extension-less HTML files: ['html', 'htm'].
       * This is skipped if the requested file already has an extension.
       */
-    var extensions: js.UndefOr[js.Array[String] | String | Boolean] = js.native
+    var extensions: js.UndefOr[js.Array[String] | String | Boolean] = js.undefined
     
     /**
       * By default send supports "index.html" files, to disable this set false or to supply a new index pass a string or an array in preferred order.
       */
-    var index: js.UndefOr[js.Array[String] | String | Boolean] = js.native
+    var index: js.UndefOr[js.Array[String] | String | Boolean] = js.undefined
     
     /**
       * Enable or disable Last-Modified header, defaults to true.
       * Uses the file system's last modified value.
       */
-    var lastModified: js.UndefOr[Boolean] = js.native
+    var lastModified: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provide a max-age in milliseconds for http caching, defaults to 0.
       * This can also be a string accepted by the ms module.
       */
-    var maxAge: js.UndefOr[String | Double] = js.native
+    var maxAge: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Serve files relative to path.
       */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
     /**
       * Byte offset at which the stream starts, defaults to 0.
       * The start is inclusive, meaning start: 2 will include the 3rd byte in the stream.
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object SendOptions {
     

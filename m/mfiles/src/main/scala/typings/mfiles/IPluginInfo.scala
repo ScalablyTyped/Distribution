@@ -2,31 +2,29 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPluginInfo extends StObject {
   
-  var AssemblyName: String = js.native
+  var AssemblyName: String
   
-  var BridgeClassName: String = js.native
+  var BridgeClassName: String
   
-  def Clone(): IPluginInfo = js.native
+  def Clone(): IPluginInfo
   
-  var Configuration: INamedValues = js.native
+  var Configuration: INamedValues
   
-  var ConfigurationScope: String = js.native
+  var ConfigurationScope: String
   
-  var ConfigurationSource: INamedValues = js.native
+  var ConfigurationSource: INamedValues
   
-  var ConfigurationVaultGUID: String = js.native
+  var ConfigurationVaultGUID: String
   
-  var IsDefault: Boolean = js.native
+  var IsDefault: Boolean
   
-  var IsScopeIndependent: Boolean = js.native
+  var IsScopeIndependent: Boolean
   
-  var Name: String = js.native
+  var Name: String
 }
 object IPluginInfo {
   

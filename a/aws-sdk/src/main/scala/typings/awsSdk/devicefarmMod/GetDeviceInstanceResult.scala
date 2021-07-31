@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeviceInstanceResult extends StObject {
   
   /**
     * An object that contains information about your device instance.
     */
-  var deviceInstance: js.UndefOr[DeviceInstance] = js.native
+  var deviceInstance: js.UndefOr[DeviceInstance] = js.undefined
 }
 object GetDeviceInstanceResult {
   

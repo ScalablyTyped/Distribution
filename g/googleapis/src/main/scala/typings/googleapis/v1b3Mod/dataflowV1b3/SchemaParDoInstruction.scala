@@ -3,40 +3,38 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction that does a ParDo operation. Takes one main input and zero
   * or more side inputs, and produces zero or more outputs. Runs user code.
   */
-@js.native
 trait SchemaParDoInstruction extends StObject {
   
   /**
     * The input.
     */
-  var input: js.UndefOr[SchemaInstructionInput] = js.native
+  var input: js.UndefOr[SchemaInstructionInput] = js.undefined
   
   /**
     * Information about each of the outputs, if user_fn is a  MultiDoFn.
     */
-  var multiOutputInfos: js.UndefOr[js.Array[SchemaMultiOutputInfo]] = js.native
+  var multiOutputInfos: js.UndefOr[js.Array[SchemaMultiOutputInfo]] = js.undefined
   
   /**
     * The number of outputs.
     */
-  var numOutputs: js.UndefOr[Double] = js.native
+  var numOutputs: js.UndefOr[Double] = js.undefined
   
   /**
     * Zero or more side inputs.
     */
-  var sideInputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.native
+  var sideInputs: js.UndefOr[js.Array[SchemaSideInputInfo]] = js.undefined
   
   /**
     * The user function to invoke.
     */
-  var userFn: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var userFn: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaParDoInstruction {
   

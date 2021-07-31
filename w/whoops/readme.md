@@ -12,7 +12,7 @@ It makes simple throw qualified errors.
 | Keywords           | constructor, custom, error, simple, throw |
 | # releases         | 3 |
 | # dependents       | 9 |
-| # downloads        | 729595 |
+| # downloads        | 987606 |
 | # stars            | 0 |
 
 ## Links

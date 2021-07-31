@@ -3,19 +3,17 @@ package typings.akamaiEdgeworkers.streamsMod
 import typings.akamaiEdgeworkers.anon.Aborted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipeOptions extends StObject {
   
-  var preventAbort: js.UndefOr[Boolean] = js.native
+  var preventAbort: js.UndefOr[Boolean] = js.undefined
   
-  var preventCancel: js.UndefOr[Boolean] = js.native
+  var preventCancel: js.UndefOr[Boolean] = js.undefined
   
-  var preventClose: js.UndefOr[Boolean] = js.native
+  var preventClose: js.UndefOr[Boolean] = js.undefined
   
-  var signal: js.UndefOr[Aborted] = js.native
+  var signal: js.UndefOr[Aborted] = js.undefined
 }
 object PipeOptions {
   

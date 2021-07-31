@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleAction extends StObject {
   
   /**
     * The name of the action, must be unique within the schedule. This name provides the main reference to an action once it is added to the schedule. A name is unique if it is no longer in the schedule. The schedule is automatically cleaned up to remove actions with a start time of more than 1 hour ago (approximately) so at that point a name can be reused.
     */
-  var ActionName: string = js.native
+  var ActionName: string
   
   /**
     * Settings for this schedule action.
     */
-  var ScheduleActionSettings: typings.awsSdk.medialiveMod.ScheduleActionSettings = js.native
+  var ScheduleActionSettings: typings.awsSdk.medialiveMod.ScheduleActionSettings
   
   /**
     * The time for the action to start in the channel.
     */
-  var ScheduleActionStartSettings: typings.awsSdk.medialiveMod.ScheduleActionStartSettings = js.native
+  var ScheduleActionStartSettings: typings.awsSdk.medialiveMod.ScheduleActionStartSettings
 }
 object ScheduleAction {
   

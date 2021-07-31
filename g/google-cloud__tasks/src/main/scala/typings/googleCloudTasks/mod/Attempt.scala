@@ -2,19 +2,17 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attempt extends StObject {
   
-  var dispatchTime: String = js.native
+  var dispatchTime: String
   
-  var responseStatus: Status = js.native
+  var responseStatus: Status
   
-  var responseTime: String = js.native
+  var responseTime: String
   
-  var scheduleTime: String = js.native
+  var scheduleTime: String
 }
 object Attempt {
   

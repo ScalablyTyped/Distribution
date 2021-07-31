@@ -3,27 +3,25 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIdentityPoolInput extends StObject {
   
   /**
     * <p>Enables or disables the Basic (Classic) authentication flow. For more information, see
     *       <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/authentication-flow.html">Identity Pools (Federated Identities) Authentication Flow</a> in the <i>Amazon Cognito Developer Guide</i>.</p>
     */
-  var AllowClassicFlow: js.UndefOr[Boolean] = js.native
+  var AllowClassicFlow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * <p>TRUE if the identity pool supports unauthenticated logins.</p>
     */
-  var AllowUnauthenticatedIdentities: js.UndefOr[Boolean] = js.native
+  var AllowUnauthenticatedIdentities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * <p>An array of Amazon Cognito user pools and their client IDs.</p>
     */
-  var CognitoIdentityProviders: js.UndefOr[js.Array[CognitoIdentityProvider]] = js.native
+  var CognitoIdentityProviders: js.UndefOr[js.Array[CognitoIdentityProvider]] = js.undefined
   
   /**
     * <p>The "domain" by which Cognito will refer to your users. This name acts as a
@@ -34,35 +32,35 @@ trait CreateIdentityPoolInput extends StObject {
     *          <p>Once you have set a developer provider name, you cannot change it. Please take care
     *          in setting this parameter.</p>
     */
-  var DeveloperProviderName: js.UndefOr[String] = js.native
+  var DeveloperProviderName: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A string that you provide.</p>
     */
-  var IdentityPoolName: js.UndefOr[String] = js.native
+  var IdentityPoolName: js.UndefOr[String] = js.undefined
   
   /**
     * <p>Tags to assign to the identity pool. A tag is a label that you can apply to identity
     *          pools to categorize and manage them in different ways, such as by purpose, owner,
     *          environment, or other criteria.</p>
     */
-  var IdentityPoolTags: js.UndefOr[StringDictionary[String]] = js.native
+  var IdentityPoolTags: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * <p>A list of OpendID Connect provider ARNs.</p>
     */
-  var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String]] = js.native
+  var OpenIdConnectProviderARNs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * <p>An array of Amazon Resource Names (ARNs) of the SAML provider for your identity
     *          pool.</p>
     */
-  var SamlProviderARNs: js.UndefOr[js.Array[String]] = js.native
+  var SamlProviderARNs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * <p>Optional key:value pairs mapping provider names to provider app IDs.</p>
     */
-  var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.native
+  var SupportedLoginProviders: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object CreateIdentityPoolInput {
   
@@ -72,9 +70,12 @@ object CreateIdentityPoolInput {
     __obj.asInstanceOf[CreateIdentityPoolInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "CreateIdentityPoolInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "CreateIdentityPoolInput")
   @js.native
-  def filterSensitiveLog(obj: CreateIdentityPoolInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: CreateIdentityPoolInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class CreateIdentityPoolInputMutableBuilder[Self <: CreateIdentityPoolInput] (val x: Self) extends AnyVal {

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotScheduleMod {
@@ -62,6 +61,10 @@ object snapshotScheduleMod {
   /* static members */
   object SnapshotSchedule {
     
+    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SnapshotSchedule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,61 +74,55 @@ object snapshotScheduleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SnapshotSchedule = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotSchedule = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotScheduleState): SnapshotSchedule = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotScheduleState, opts: CustomResourceOptions): SnapshotSchedule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SnapshotSchedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotSchedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotSchedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotSchedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotScheduleState): SnapshotSchedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotSchedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotScheduleState, opts: CustomResourceOptions): SnapshotSchedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotSchedule]
     
     /**
       * Returns true if the given object is an instance of SnapshotSchedule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/redshift/snapshotSchedule", "SnapshotSchedule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotSchedule.SnapshotSchedule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotSchedule.SnapshotSchedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotSchedule.SnapshotSchedule */ Boolean]
   }
   
-  @js.native
   trait SnapshotScheduleArgs extends StObject {
     
     /**
       * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example `cron(30 12 *)` or `rate(12 hours)`.
       */
-    val definitions: Input[js.Array[Input[String]]] = js.native
+    val definitions: Input[js.Array[Input[String]]]
     
     /**
       * The description of the snapshot schedule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The snapshot schedule identifier. If omitted, this provider will assign a random, unique identifier.
       */
-    val identifier: js.UndefOr[Input[String]] = js.native
+    val identifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique
       * identifier beginning with the specified prefix. Conflicts with `identifier`.
       */
-    val identifierPrefix: js.UndefOr[Input[String]] = js.native
+    val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SnapshotScheduleArgs {
     
@@ -176,41 +173,40 @@ object snapshotScheduleMod {
     }
   }
   
-  @js.native
   trait SnapshotScheduleState extends StObject {
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The definition of the snapshot schedule. The definition is made up of schedule expressions, for example `cron(30 12 *)` or `rate(12 hours)`.
       */
-    val definitions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val definitions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The description of the snapshot schedule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether to destroy all associated clusters with this snapshot schedule on deletion. Must be enabled and applied before attempting deletion.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The snapshot schedule identifier. If omitted, this provider will assign a random, unique identifier.
       */
-    val identifier: js.UndefOr[Input[String]] = js.native
+    val identifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique
       * identifier beginning with the specified prefix. Conflicts with `identifier`.
       */
-    val identifierPrefix: js.UndefOr[Input[String]] = js.native
+    val identifierPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SnapshotScheduleState {
     

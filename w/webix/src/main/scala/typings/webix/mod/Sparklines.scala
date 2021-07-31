@@ -2,19 +2,17 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sparklines extends StObject {
   
-  var paddingX: Double = js.native
+  var paddingX: Double
   
-  var paddingY: Double = js.native
+  var paddingY: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  def template(item: js.Any, common: String, data: js.Array[_], column: js.Any, index: Double): String = js.native
+  def template(item: js.Any, common: String, data: js.Array[js.Any], column: js.Any, index: Double): String
 }
 object Sparklines {
   
@@ -35,6 +33,6 @@ object Sparklines {
     def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplate(value: (js.Any, String, js.Array[_], js.Any, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
+    def setTemplate(value: (js.Any, String, js.Array[js.Any], js.Any, Double) => String): Self = StObject.set(x, "template", js.Any.fromFunction5(value))
   }
 }

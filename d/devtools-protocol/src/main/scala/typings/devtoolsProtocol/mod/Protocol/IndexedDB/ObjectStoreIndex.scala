@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectStoreIndex extends StObject {
   
   /**
     * Index key path.
     */
-  var keyPath: KeyPath = js.native
+  var keyPath: KeyPath
   
   /**
     * If true, index allows multiple entries for a key.
     */
-  var multiEntry: Boolean = js.native
+  var multiEntry: Boolean
   
   /**
     * Index name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * If true, index is unique.
     */
-  var unique: Boolean = js.native
+  var unique: Boolean
 }
 object ObjectStoreIndex {
   

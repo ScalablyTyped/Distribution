@@ -2,17 +2,15 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebRequestOnErrorOccurredEvent[TCallback] extends StObject {
   
-  def addListener(cb: TCallback, filter: RequestFilter): Unit = js.native
+  def addListener(cb: TCallback, filter: RequestFilter): Unit
   
-  def hasListener(cb: TCallback): Boolean = js.native
+  def hasListener(cb: TCallback): Boolean
   
-  def removeListener(cb: TCallback): Unit = js.native
+  def removeListener(cb: TCallback): Unit
 }
 object WebRequestOnErrorOccurredEvent {
   
@@ -27,7 +25,7 @@ object WebRequestOnErrorOccurredEvent {
   }
   
   @scala.inline
-  implicit class WebRequestOnErrorOccurredEventMutableBuilder[Self <: WebRequestOnErrorOccurredEvent[_], TCallback] (val x: Self with WebRequestOnErrorOccurredEvent[TCallback]) extends AnyVal {
+  implicit class WebRequestOnErrorOccurredEventMutableBuilder[Self <: WebRequestOnErrorOccurredEvent[?], TCallback] (val x: Self & WebRequestOnErrorOccurredEvent[TCallback]) extends AnyVal {
     
     @scala.inline
     def setAddListener(value: (TCallback, RequestFilter) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))

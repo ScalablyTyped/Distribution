@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationshipMod {
@@ -12,19 +11,19 @@ object relationshipMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Relationship with Double] = js.native
+    def apply(value: Double): js.UndefOr[Relationship & Double] = js.native
     
-    /* 2 */ val ABOVE: typings.ol.relationshipMod.Relationship.ABOVE with Double = js.native
+    /* 2 */ val ABOVE: typings.ol.relationshipMod.Relationship.ABOVE & Double = js.native
     
-    /* 8 */ val BELOW: typings.ol.relationshipMod.Relationship.BELOW with Double = js.native
+    /* 8 */ val BELOW: typings.ol.relationshipMod.Relationship.BELOW & Double = js.native
     
-    /* 1 */ val INTERSECTING: typings.ol.relationshipMod.Relationship.INTERSECTING with Double = js.native
+    /* 1 */ val INTERSECTING: typings.ol.relationshipMod.Relationship.INTERSECTING & Double = js.native
     
-    /* 16 */ val LEFT: typings.ol.relationshipMod.Relationship.LEFT with Double = js.native
+    /* 16 */ val LEFT: typings.ol.relationshipMod.Relationship.LEFT & Double = js.native
     
-    /* 4 */ val RIGHT: typings.ol.relationshipMod.Relationship.RIGHT with Double = js.native
+    /* 4 */ val RIGHT: typings.ol.relationshipMod.Relationship.RIGHT & Double = js.native
     
-    /* 0 */ val UNKNOWN: typings.ol.relationshipMod.Relationship.UNKNOWN with Double = js.native
+    /* 0 */ val UNKNOWN: typings.ol.relationshipMod.Relationship.UNKNOWN & Double = js.native
   }
   
   @js.native
@@ -34,21 +33,33 @@ object relationshipMod {
   object Relationship extends StObject {
     
     @js.native
-    sealed trait ABOVE extends Relationship
+    sealed trait ABOVE
+      extends StObject
+         with Relationship
     
     @js.native
-    sealed trait BELOW extends Relationship
+    sealed trait BELOW
+      extends StObject
+         with Relationship
     
     @js.native
-    sealed trait INTERSECTING extends Relationship
+    sealed trait INTERSECTING
+      extends StObject
+         with Relationship
     
     @js.native
-    sealed trait LEFT extends Relationship
+    sealed trait LEFT
+      extends StObject
+         with Relationship
     
     @js.native
-    sealed trait RIGHT extends Relationship
+    sealed trait RIGHT
+      extends StObject
+         with Relationship
     
     @js.native
-    sealed trait UNKNOWN extends Relationship
+    sealed trait UNKNOWN
+      extends StObject
+         with Relationship
   }
 }

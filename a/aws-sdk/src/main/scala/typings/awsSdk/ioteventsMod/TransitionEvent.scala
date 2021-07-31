@@ -2,31 +2,29 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionEvent extends StObject {
   
   /**
     * The actions to be performed.
     */
-  var actions: js.UndefOr[Actions] = js.native
+  var actions: js.UndefOr[Actions] = js.undefined
   
   /**
     * Required. A Boolean expression that when TRUE causes the actions to be performed and the nextState to be entered.
     */
-  var condition: Condition = js.native
+  var condition: Condition
   
   /**
     * The name of the transition event.
     */
-  var eventName: EventName = js.native
+  var eventName: EventName
   
   /**
     * The next state to enter.
     */
-  var nextState: StateName = js.native
+  var nextState: StateName
 }
 object TransitionEvent {
   

@@ -7,38 +7,49 @@ import typings.unsplashJs.mod.PhotoOrderBy
 import typings.unsplashJs.mod.Scopes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unsplashJsStrings {
   
   @js.native
-  sealed trait af extends Languages
+  sealed trait af
+    extends StObject
+       with Languages
   @scala.inline
   def af: af = "af".asInstanceOf[af]
   
   @js.native
-  sealed trait am extends Languages
+  sealed trait am
+    extends StObject
+       with Languages
   @scala.inline
   def am: am = "am".asInstanceOf[am]
   
   @js.native
-  sealed trait ar extends Languages
+  sealed trait ar
+    extends StObject
+       with Languages
   @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
   
   @js.native
-  sealed trait az extends Languages
+  sealed trait az
+    extends StObject
+       with Languages
   @scala.inline
   def az: az = "az".asInstanceOf[az]
   
   @js.native
-  sealed trait be extends Languages
+  sealed trait be
+    extends StObject
+       with Languages
   @scala.inline
   def be: be = "be".asInstanceOf[be]
   
   @js.native
-  sealed trait bg extends Languages
+  sealed trait bg
+    extends StObject
+       with Languages
   @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
   
@@ -58,42 +69,58 @@ object unsplashJsStrings {
   def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait bn extends Languages
+  sealed trait bn
+    extends StObject
+       with Languages
   @scala.inline
   def bn: bn = "bn".asInstanceOf[bn]
   
   @js.native
-  sealed trait bs extends Languages
+  sealed trait bs
+    extends StObject
+       with Languages
   @scala.inline
   def bs: bs = "bs".asInstanceOf[bs]
   
   @js.native
-  sealed trait ca extends Languages
+  sealed trait ca
+    extends StObject
+       with Languages
   @scala.inline
   def ca: ca = "ca".asInstanceOf[ca]
   
   @js.native
-  sealed trait ceb extends Languages
+  sealed trait ceb
+    extends StObject
+       with Languages
   @scala.inline
   def ceb: ceb = "ceb".asInstanceOf[ceb]
   
   @js.native
-  sealed trait co extends Languages
+  sealed trait co
+    extends StObject
+       with Languages
   @scala.inline
   def co: co = "co".asInstanceOf[co]
   
   @js.native
-  sealed trait cs extends Languages
+  sealed trait cs
+    extends StObject
+       with Languages
   @scala.inline
   def cs: cs = "cs".asInstanceOf[cs]
   
   @js.native
-  sealed trait cy extends Languages
+  sealed trait cy
+    extends StObject
+       with Languages
   @scala.inline
   def cy: cy = "cy".asInstanceOf[cy]
   
   @js.native
-  sealed trait da extends Languages
+  sealed trait da
+    extends StObject
+       with Languages
   @scala.inline
   def da: da = "da".asInstanceOf[da]
   
@@ -103,72 +130,100 @@ object unsplashJsStrings {
   def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait de extends Languages
+  sealed trait de
+    extends StObject
+       with Languages
   @scala.inline
   def de: de = "de".asInstanceOf[de]
   
   @js.native
-  sealed trait el extends Languages
+  sealed trait el
+    extends StObject
+       with Languages
   @scala.inline
   def el: el = "el".asInstanceOf[el]
   
   @js.native
-  sealed trait en extends Languages
+  sealed trait en
+    extends StObject
+       with Languages
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait eo extends Languages
+  sealed trait eo
+    extends StObject
+       with Languages
   @scala.inline
   def eo: eo = "eo".asInstanceOf[eo]
   
   @js.native
-  sealed trait es extends Languages
+  sealed trait es
+    extends StObject
+       with Languages
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   
   @js.native
-  sealed trait et extends Languages
+  sealed trait et
+    extends StObject
+       with Languages
   @scala.inline
   def et: et = "et".asInstanceOf[et]
   
   @js.native
-  sealed trait eu extends Languages
+  sealed trait eu
+    extends StObject
+       with Languages
   @scala.inline
   def eu: eu = "eu".asInstanceOf[eu]
   
   @js.native
-  sealed trait fa extends Languages
+  sealed trait fa
+    extends StObject
+       with Languages
   @scala.inline
   def fa: fa = "fa".asInstanceOf[fa]
   
   @js.native
-  sealed trait fi extends Languages
+  sealed trait fi
+    extends StObject
+       with Languages
   @scala.inline
   def fi: fi = "fi".asInstanceOf[fi]
   
   @js.native
-  sealed trait fr extends Languages
+  sealed trait fr
+    extends StObject
+       with Languages
   @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait fy extends Languages
+  sealed trait fy
+    extends StObject
+       with Languages
   @scala.inline
   def fy: fy = "fy".asInstanceOf[fy]
   
   @js.native
-  sealed trait ga extends Languages
+  sealed trait ga
+    extends StObject
+       with Languages
   @scala.inline
   def ga: ga = "ga".asInstanceOf[ga]
   
   @js.native
-  sealed trait gd extends Languages
+  sealed trait gd
+    extends StObject
+       with Languages
   @scala.inline
   def gd: gd = "gd".asInstanceOf[gd]
   
   @js.native
-  sealed trait gl extends Languages
+  sealed trait gl
+    extends StObject
+       with Languages
   @scala.inline
   def gl: gl = "gl".asInstanceOf[gl]
   
@@ -178,162 +233,226 @@ object unsplashJsStrings {
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait gu extends Languages
+  sealed trait gu
+    extends StObject
+       with Languages
   @scala.inline
   def gu: gu = "gu".asInstanceOf[gu]
   
   @js.native
-  sealed trait ha extends Languages
+  sealed trait ha
+    extends StObject
+       with Languages
   @scala.inline
   def ha: ha = "ha".asInstanceOf[ha]
   
   @js.native
-  sealed trait haw extends Languages
+  sealed trait haw
+    extends StObject
+       with Languages
   @scala.inline
   def haw: haw = "haw".asInstanceOf[haw]
   
   @js.native
-  sealed trait hi extends Languages
+  sealed trait hi
+    extends StObject
+       with Languages
   @scala.inline
   def hi: hi = "hi".asInstanceOf[hi]
   
   @js.native
-  sealed trait high extends ContentSafety
+  sealed trait high
+    extends StObject
+       with ContentSafety
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait hmn extends Languages
+  sealed trait hmn
+    extends StObject
+       with Languages
   @scala.inline
   def hmn: hmn = "hmn".asInstanceOf[hmn]
   
   @js.native
-  sealed trait hr extends Languages
+  sealed trait hr
+    extends StObject
+       with Languages
   @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait ht extends Languages
+  sealed trait ht
+    extends StObject
+       with Languages
   @scala.inline
   def ht: ht = "ht".asInstanceOf[ht]
   
   @js.native
-  sealed trait hu extends Languages
+  sealed trait hu
+    extends StObject
+       with Languages
   @scala.inline
   def hu: hu = "hu".asInstanceOf[hu]
   
   @js.native
-  sealed trait hy extends Languages
+  sealed trait hy
+    extends StObject
+       with Languages
   @scala.inline
   def hy: hy = "hy".asInstanceOf[hy]
   
   @js.native
-  sealed trait id extends Languages
+  sealed trait id
+    extends StObject
+       with Languages
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait ig extends Languages
+  sealed trait ig
+    extends StObject
+       with Languages
   @scala.inline
   def ig: ig = "ig".asInstanceOf[ig]
   
   @js.native
-  sealed trait is extends Languages
+  sealed trait is
+    extends StObject
+       with Languages
   @scala.inline
   def is: is = "is".asInstanceOf[is]
   
   @js.native
-  sealed trait it extends Languages
+  sealed trait it
+    extends StObject
+       with Languages
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   
   @js.native
-  sealed trait iw extends Languages
+  sealed trait iw
+    extends StObject
+       with Languages
   @scala.inline
   def iw: iw = "iw".asInstanceOf[iw]
   
   @js.native
-  sealed trait ja extends Languages
+  sealed trait ja
+    extends StObject
+       with Languages
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
   
   @js.native
-  sealed trait jw extends Languages
+  sealed trait jw
+    extends StObject
+       with Languages
   @scala.inline
   def jw: jw = "jw".asInstanceOf[jw]
   
   @js.native
-  sealed trait ka extends Languages
+  sealed trait ka
+    extends StObject
+       with Languages
   @scala.inline
   def ka: ka = "ka".asInstanceOf[ka]
   
   @js.native
-  sealed trait kk extends Languages
+  sealed trait kk
+    extends StObject
+       with Languages
   @scala.inline
   def kk: kk = "kk".asInstanceOf[kk]
   
   @js.native
-  sealed trait km extends Languages
+  sealed trait km
+    extends StObject
+       with Languages
   @scala.inline
   def km: km = "km".asInstanceOf[km]
   
   @js.native
-  sealed trait kn extends Languages
+  sealed trait kn
+    extends StObject
+       with Languages
   @scala.inline
   def kn: kn = "kn".asInstanceOf[kn]
   
   @js.native
-  sealed trait ko extends Languages
+  sealed trait ko
+    extends StObject
+       with Languages
   @scala.inline
   def ko: ko = "ko".asInstanceOf[ko]
   
   @js.native
-  sealed trait ku extends Languages
+  sealed trait ku
+    extends StObject
+       with Languages
   @scala.inline
   def ku: ku = "ku".asInstanceOf[ku]
   
   @js.native
-  sealed trait ky extends Languages
+  sealed trait ky
+    extends StObject
+       with Languages
   @scala.inline
   def ky: ky = "ky".asInstanceOf[ky]
   
   @js.native
-  sealed trait la extends Languages
+  sealed trait la
+    extends StObject
+       with Languages
   @scala.inline
   def la: la = "la".asInstanceOf[la]
   
   @js.native
-  sealed trait landscape extends Orientation
+  sealed trait landscape
+    extends StObject
+       with Orientation
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait latest extends PhotoOrderBy
+  sealed trait latest
+    extends StObject
+       with PhotoOrderBy
   @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
   
   @js.native
-  sealed trait lb extends Languages
+  sealed trait lb
+    extends StObject
+       with Languages
   @scala.inline
   def lb: lb = "lb".asInstanceOf[lb]
   
   @js.native
-  sealed trait lo extends Languages
+  sealed trait lo
+    extends StObject
+       with Languages
   @scala.inline
   def lo: lo = "lo".asInstanceOf[lo]
   
   @js.native
-  sealed trait low extends ContentSafety
+  sealed trait low
+    extends StObject
+       with ContentSafety
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait lt extends Languages
+  sealed trait lt
+    extends StObject
+       with Languages
   @scala.inline
   def lt: lt = "lt".asInstanceOf[lt]
   
   @js.native
-  sealed trait lv extends Languages
+  sealed trait lv
+    extends StObject
+       with Languages
   @scala.inline
   def lv: lv = "lv".asInstanceOf[lv]
   
@@ -343,77 +462,107 @@ object unsplashJsStrings {
   def magenta: magenta = "magenta".asInstanceOf[magenta]
   
   @js.native
-  sealed trait mg extends Languages
+  sealed trait mg
+    extends StObject
+       with Languages
   @scala.inline
   def mg: mg = "mg".asInstanceOf[mg]
   
   @js.native
-  sealed trait mi extends Languages
+  sealed trait mi
+    extends StObject
+       with Languages
   @scala.inline
   def mi: mi = "mi".asInstanceOf[mi]
   
   @js.native
-  sealed trait mk extends Languages
+  sealed trait mk
+    extends StObject
+       with Languages
   @scala.inline
   def mk: mk = "mk".asInstanceOf[mk]
   
   @js.native
-  sealed trait ml extends Languages
+  sealed trait ml
+    extends StObject
+       with Languages
   @scala.inline
   def ml: ml = "ml".asInstanceOf[ml]
   
   @js.native
-  sealed trait mn extends Languages
+  sealed trait mn
+    extends StObject
+       with Languages
   @scala.inline
   def mn: mn = "mn".asInstanceOf[mn]
   
   @js.native
-  sealed trait mr extends Languages
+  sealed trait mr
+    extends StObject
+       with Languages
   @scala.inline
   def mr: mr = "mr".asInstanceOf[mr]
   
   @js.native
-  sealed trait ms extends Languages
+  sealed trait ms
+    extends StObject
+       with Languages
   @scala.inline
   def ms: ms = "ms".asInstanceOf[ms]
   
   @js.native
-  sealed trait mt extends Languages
+  sealed trait mt
+    extends StObject
+       with Languages
   @scala.inline
   def mt: mt = "mt".asInstanceOf[mt]
   
   @js.native
-  sealed trait my extends Languages
+  sealed trait my
+    extends StObject
+       with Languages
   @scala.inline
   def my: my = "my".asInstanceOf[my]
   
   @js.native
-  sealed trait ne extends Languages
+  sealed trait ne
+    extends StObject
+       with Languages
   @scala.inline
   def ne: ne = "ne".asInstanceOf[ne]
   
   @js.native
-  sealed trait nl extends Languages
+  sealed trait nl
+    extends StObject
+       with Languages
   @scala.inline
   def nl: nl = "nl".asInstanceOf[nl]
   
   @js.native
-  sealed trait no extends Languages
+  sealed trait no
+    extends StObject
+       with Languages
   @scala.inline
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait ny extends Languages
+  sealed trait ny
+    extends StObject
+       with Languages
   @scala.inline
   def ny: ny = "ny".asInstanceOf[ny]
   
   @js.native
-  sealed trait oldest extends PhotoOrderBy
+  sealed trait oldest
+    extends StObject
+       with PhotoOrderBy
   @scala.inline
   def oldest: oldest = "oldest".asInstanceOf[oldest]
   
   @js.native
-  sealed trait or extends Languages
+  sealed trait or
+    extends StObject
+       with Languages
   @scala.inline
   def or: or = "or".asInstanceOf[or]
   
@@ -423,32 +572,44 @@ object unsplashJsStrings {
   def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
-  sealed trait pa extends Languages
+  sealed trait pa
+    extends StObject
+       with Languages
   @scala.inline
   def pa: pa = "pa".asInstanceOf[pa]
   
   @js.native
-  sealed trait pl extends Languages
+  sealed trait pl
+    extends StObject
+       with Languages
   @scala.inline
   def pl: pl = "pl".asInstanceOf[pl]
   
   @js.native
-  sealed trait portrait extends Orientation
+  sealed trait portrait
+    extends StObject
+       with Orientation
   @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait ps extends Languages
+  sealed trait ps
+    extends StObject
+       with Languages
   @scala.inline
   def ps: ps = "ps".asInstanceOf[ps]
   
   @js.native
-  sealed trait pt extends Languages
+  sealed trait pt
+    extends StObject
+       with Languages
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
   
   @js.native
-  sealed trait public extends Scopes
+  sealed trait public
+    extends StObject
+       with Scopes
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   
@@ -458,17 +619,23 @@ object unsplashJsStrings {
   def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
-  sealed trait read_collections extends Scopes
+  sealed trait read_collections
+    extends StObject
+       with Scopes
   @scala.inline
   def read_collections: read_collections = "read_collections".asInstanceOf[read_collections]
   
   @js.native
-  sealed trait read_photos extends Scopes
+  sealed trait read_photos
+    extends StObject
+       with Scopes
   @scala.inline
   def read_photos: read_photos = "read_photos".asInstanceOf[read_photos]
   
   @js.native
-  sealed trait read_user extends Scopes
+  sealed trait read_user
+    extends StObject
+       with Scopes
   @scala.inline
   def read_user: read_user = "read_user".asInstanceOf[read_user]
   
@@ -483,97 +650,135 @@ object unsplashJsStrings {
   def relevant: relevant = "relevant".asInstanceOf[relevant]
   
   @js.native
-  sealed trait ro extends Languages
+  sealed trait ro
+    extends StObject
+       with Languages
   @scala.inline
   def ro: ro = "ro".asInstanceOf[ro]
   
   @js.native
-  sealed trait ru extends Languages
+  sealed trait ru
+    extends StObject
+       with Languages
   @scala.inline
   def ru: ru = "ru".asInstanceOf[ru]
   
   @js.native
-  sealed trait rw extends Languages
+  sealed trait rw
+    extends StObject
+       with Languages
   @scala.inline
   def rw: rw = "rw".asInstanceOf[rw]
   
   @js.native
-  sealed trait sd extends Languages
+  sealed trait sd
+    extends StObject
+       with Languages
   @scala.inline
   def sd: sd = "sd".asInstanceOf[sd]
   
   @js.native
-  sealed trait si extends Languages
+  sealed trait si
+    extends StObject
+       with Languages
   @scala.inline
   def si: si = "si".asInstanceOf[si]
   
   @js.native
-  sealed trait sk extends Languages
+  sealed trait sk
+    extends StObject
+       with Languages
   @scala.inline
   def sk: sk = "sk".asInstanceOf[sk]
   
   @js.native
-  sealed trait sl extends Languages
+  sealed trait sl
+    extends StObject
+       with Languages
   @scala.inline
   def sl: sl = "sl".asInstanceOf[sl]
   
   @js.native
-  sealed trait sm extends Languages
+  sealed trait sm
+    extends StObject
+       with Languages
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
-  sealed trait sn extends Languages
+  sealed trait sn
+    extends StObject
+       with Languages
   @scala.inline
   def sn: sn = "sn".asInstanceOf[sn]
   
   @js.native
-  sealed trait so extends Languages
+  sealed trait so
+    extends StObject
+       with Languages
   @scala.inline
   def so: so = "so".asInstanceOf[so]
   
   @js.native
-  sealed trait sq extends Languages
+  sealed trait sq
+    extends StObject
+       with Languages
   @scala.inline
   def sq: sq = "sq".asInstanceOf[sq]
   
   @js.native
-  sealed trait squareish extends Orientation
+  sealed trait squareish
+    extends StObject
+       with Orientation
   @scala.inline
   def squareish: squareish = "squareish".asInstanceOf[squareish]
   
   @js.native
-  sealed trait sr extends Languages
+  sealed trait sr
+    extends StObject
+       with Languages
   @scala.inline
   def sr: sr = "sr".asInstanceOf[sr]
   
   @js.native
-  sealed trait st extends Languages
+  sealed trait st
+    extends StObject
+       with Languages
   @scala.inline
   def st: st = "st".asInstanceOf[st]
   
   @js.native
-  sealed trait su extends Languages
+  sealed trait su
+    extends StObject
+       with Languages
   @scala.inline
   def su: su = "su".asInstanceOf[su]
   
   @js.native
-  sealed trait sv extends Languages
+  sealed trait sv
+    extends StObject
+       with Languages
   @scala.inline
   def sv: sv = "sv".asInstanceOf[sv]
   
   @js.native
-  sealed trait sw extends Languages
+  sealed trait sw
+    extends StObject
+       with Languages
   @scala.inline
   def sw: sw = "sw".asInstanceOf[sw]
   
   @js.native
-  sealed trait ta extends Languages
+  sealed trait ta
+    extends StObject
+       with Languages
   @scala.inline
   def ta: ta = "ta".asInstanceOf[ta]
   
   @js.native
-  sealed trait te extends Languages
+  sealed trait te
+    extends StObject
+       with Languages
   @scala.inline
   def te: te = "te".asInstanceOf[te]
   
@@ -583,57 +788,79 @@ object unsplashJsStrings {
   def teal: teal = "teal".asInstanceOf[teal]
   
   @js.native
-  sealed trait tg extends Languages
+  sealed trait tg
+    extends StObject
+       with Languages
   @scala.inline
   def tg: tg = "tg".asInstanceOf[tg]
   
   @js.native
-  sealed trait th extends Languages
+  sealed trait th
+    extends StObject
+       with Languages
   @scala.inline
   def th: th = "th".asInstanceOf[th]
   
   @js.native
-  sealed trait tk extends Languages
+  sealed trait tk
+    extends StObject
+       with Languages
   @scala.inline
   def tk: tk = "tk".asInstanceOf[tk]
   
   @js.native
-  sealed trait tl extends Languages
+  sealed trait tl
+    extends StObject
+       with Languages
   @scala.inline
   def tl: tl = "tl".asInstanceOf[tl]
   
   @js.native
-  sealed trait tr extends Languages
+  sealed trait tr
+    extends StObject
+       with Languages
   @scala.inline
   def tr: tr = "tr".asInstanceOf[tr]
   
   @js.native
-  sealed trait tt extends Languages
+  sealed trait tt
+    extends StObject
+       with Languages
   @scala.inline
   def tt: tt = "tt".asInstanceOf[tt]
   
   @js.native
-  sealed trait ug extends Languages
+  sealed trait ug
+    extends StObject
+       with Languages
   @scala.inline
   def ug: ug = "ug".asInstanceOf[ug]
   
   @js.native
-  sealed trait uk extends Languages
+  sealed trait uk
+    extends StObject
+       with Languages
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
   
   @js.native
-  sealed trait ur extends Languages
+  sealed trait ur
+    extends StObject
+       with Languages
   @scala.inline
   def ur: ur = "ur".asInstanceOf[ur]
   
   @js.native
-  sealed trait uz extends Languages
+  sealed trait uz
+    extends StObject
+       with Languages
   @scala.inline
   def uz: uz = "uz".asInstanceOf[uz]
   
   @js.native
-  sealed trait vi extends Languages
+  sealed trait vi
+    extends StObject
+       with Languages
   @scala.inline
   def vi: vi = "vi".asInstanceOf[vi]
   
@@ -643,32 +870,44 @@ object unsplashJsStrings {
   def white: white = "white".asInstanceOf[white]
   
   @js.native
-  sealed trait write_collections extends Scopes
+  sealed trait write_collections
+    extends StObject
+       with Scopes
   @scala.inline
   def write_collections: write_collections = "write_collections".asInstanceOf[write_collections]
   
   @js.native
-  sealed trait write_followers extends Scopes
+  sealed trait write_followers
+    extends StObject
+       with Scopes
   @scala.inline
   def write_followers: write_followers = "write_followers".asInstanceOf[write_followers]
   
   @js.native
-  sealed trait write_likes extends Scopes
+  sealed trait write_likes
+    extends StObject
+       with Scopes
   @scala.inline
   def write_likes: write_likes = "write_likes".asInstanceOf[write_likes]
   
   @js.native
-  sealed trait write_photos extends Scopes
+  sealed trait write_photos
+    extends StObject
+       with Scopes
   @scala.inline
   def write_photos: write_photos = "write_photos".asInstanceOf[write_photos]
   
   @js.native
-  sealed trait write_user extends Scopes
+  sealed trait write_user
+    extends StObject
+       with Scopes
   @scala.inline
   def write_user: write_user = "write_user".asInstanceOf[write_user]
   
   @js.native
-  sealed trait xh extends Languages
+  sealed trait xh
+    extends StObject
+       with Languages
   @scala.inline
   def xh: xh = "xh".asInstanceOf[xh]
   
@@ -678,27 +917,37 @@ object unsplashJsStrings {
   def yellow: yellow = "yellow".asInstanceOf[yellow]
   
   @js.native
-  sealed trait yi extends Languages
+  sealed trait yi
+    extends StObject
+       with Languages
   @scala.inline
   def yi: yi = "yi".asInstanceOf[yi]
   
   @js.native
-  sealed trait yo extends Languages
+  sealed trait yo
+    extends StObject
+       with Languages
   @scala.inline
   def yo: yo = "yo".asInstanceOf[yo]
   
   @js.native
-  sealed trait zh extends Languages
+  sealed trait zh
+    extends StObject
+       with Languages
   @scala.inline
   def zh: zh = "zh".asInstanceOf[zh]
   
   @js.native
-  sealed trait `zh-TW` extends Languages
+  sealed trait `zh-TW`
+    extends StObject
+       with Languages
   @scala.inline
   def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
   
   @js.native
-  sealed trait zu extends Languages
+  sealed trait zu
+    extends StObject
+       with Languages
   @scala.inline
   def zu: zu = "zu".asInstanceOf[zu]
 }

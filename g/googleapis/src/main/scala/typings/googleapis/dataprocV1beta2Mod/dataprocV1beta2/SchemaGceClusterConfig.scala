@@ -3,14 +3,12 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common config settings for resources of Compute Engine cluster instances,
   * applicable to all instances in the cluster.
   */
-@js.native
 trait SchemaGceClusterConfig extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait SchemaGceClusterConfig extends StObject {
     * subnetwork enabled networks, and all off-cluster dependencies must be
     * configured to be accessible without external IP addresses.
     */
-  var internalIpOnly: js.UndefOr[Boolean] = js.native
+  var internalIpOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Compute Engine metadata entries to add to all instances (see Project
     * and instance metadata
     * (https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)).
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The Compute Engine network to be used for machine
@@ -40,12 +38,12 @@ trait SchemaGceClusterConfig extends StObject {
     * https://www.googleapis.com/compute/v1/projects/[project_id]/regions/global/default
     * projects/[project_id]/regions/global/default default
     */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Reservation Affinity for consuming Zonal reservation.
     */
-  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.native
+  var reservationAffinity: js.UndefOr[SchemaReservationAffinity] = js.undefined
   
   /**
     * Optional. The service account of the instances. Defaults to the default
@@ -56,7 +54,7 @@ trait SchemaGceClusterConfig extends StObject {
     * for more information). Example:
     * [account_id]@[project_id].iam.gserviceaccount.com
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The URIs of service account scopes to be included in Compute
@@ -70,7 +68,7 @@ trait SchemaGceClusterConfig extends StObject {
     * https://www.googleapis.com/auth/bigtable.data
     * https://www.googleapis.com/auth/devstorage.full_control
     */
-  var serviceAccountScopes: js.UndefOr[js.Array[String]] = js.native
+  var serviceAccountScopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The Compute Engine subnetwork to be used for machine
@@ -79,12 +77,12 @@ trait SchemaGceClusterConfig extends StObject {
     * https://www.googleapis.com/compute/v1/projects/[project_id]/regions/us-east1/sub0
     * projects/[project_id]/regions/us-east1/sub0 sub0
     */
-  var subnetworkUri: js.UndefOr[String] = js.native
+  var subnetworkUri: js.UndefOr[String] = js.undefined
   
   /**
     * The Compute Engine tags to add to all instances (see Tagging instances).
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The zone where the Compute Engine cluster will be located. On a
@@ -96,7 +94,7 @@ trait SchemaGceClusterConfig extends StObject {
     * https://www.googleapis.com/compute/v1/projects/[project_id]/zones/[zone]
     * projects/[project_id]/zones/[zone] us-central1-f
     */
-  var zoneUri: js.UndefOr[String] = js.native
+  var zoneUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGceClusterConfig {
   

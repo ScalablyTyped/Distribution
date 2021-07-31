@@ -2,21 +2,19 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterDefinition extends StObject {
   
   /**
     * A regular expression that represents the patterns to allow for String types.
     */
-  var AllowedPattern: js.UndefOr[string] = js.native
+  var AllowedPattern: js.UndefOr[string] = js.undefined
   
   /**
     * An array containing the list of values allowed for the parameter.
     */
-  var AllowedValues: js.UndefOr[listOfString] = js.native
+  var AllowedValues: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A string that explains a constraint when the constraint is violated. For example, without a constraint description,
@@ -28,54 +26,54 @@ trait ParameterDefinition extends StObject {
     Malformed input-Parameter MyParameter must contain only uppercase and lowercase letters and numbers.
     
     */
-  var ConstraintDescription: js.UndefOr[string] = js.native
+  var ConstraintDescription: js.UndefOr[string] = js.undefined
   
   /**
     * A value of the appropriate type for the template to use if no value is specified when a stack is created.
     If you define constraints for the parameter, you must specify a value that adheres to those constraints.
     */
-  var DefaultValue: js.UndefOr[string] = js.native
+  var DefaultValue: js.UndefOr[string] = js.undefined
   
   /**
     * A string of up to 4,000 characters that describes the parameter.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * An integer value that determines the largest number of characters that you want to allow for String types.
     */
-  var MaxLength: js.UndefOr[integer] = js.native
+  var MaxLength: js.UndefOr[integer] = js.undefined
   
   /**
     * A numeric value that determines the largest numeric value that you want to allow for Number types.
     */
-  var MaxValue: js.UndefOr[integer] = js.native
+  var MaxValue: js.UndefOr[integer] = js.undefined
   
   /**
     * An integer value that determines the smallest number of characters that you want to allow for String types.
     */
-  var MinLength: js.UndefOr[integer] = js.native
+  var MinLength: js.UndefOr[integer] = js.undefined
   
   /**
     * A numeric value that determines the smallest numeric value that you want to allow for Number types.
     */
-  var MinValue: js.UndefOr[integer] = js.native
+  var MinValue: js.UndefOr[integer] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * Whether to mask the parameter value whenever anyone makes a call that describes the stack. If you set the
     value to true, the parameter value is masked with asterisks (*****).
     */
-  var NoEcho: js.UndefOr[boolean] = js.native
+  var NoEcho: js.UndefOr[boolean] = js.undefined
   
   /**
     * A list of AWS SAM resources that use this parameter.
     */
-  var ReferencedByResources: listOfString = js.native
+  var ReferencedByResources: listOfString
   
   /**
     * The type of the parameter.Valid values: String | Number | List&lt;Number> | CommaDelimitedList
@@ -88,7 +86,7 @@ trait ParameterDefinition extends StObject {
     CommaDelimitedList: An array of literal strings that are separated by commas. The total number of strings should be one more than the total number of commas.
     Also, each member string is space-trimmed.For example, users might specify "test,dev,prod", and then Ref results in ["test","dev","prod"].
     */
-  var Type: js.UndefOr[string] = js.native
+  var Type: js.UndefOr[string] = js.undefined
 }
 object ParameterDefinition {
   

@@ -2,31 +2,29 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCPeerConnectionEventMap extends StObject {
   
-  var connectionstatechange: Event = js.native
+  var connectionstatechange: Event
   
-  var datachannel: RTCDataChannelEvent = js.native
+  var datachannel: RTCDataChannelEvent
   
-  var icecandidate: RTCPeerConnectionIceEvent = js.native
+  var icecandidate: RTCPeerConnectionIceEvent
   
-  var icecandidateerror: RTCPeerConnectionIceErrorEvent = js.native
+  var icecandidateerror: RTCPeerConnectionIceErrorEvent
   
-  var iceconnectionstatechange: Event = js.native
+  var iceconnectionstatechange: Event
   
-  var icegatheringstatechange: Event = js.native
+  var icegatheringstatechange: Event
   
-  var negotiationneeded: Event = js.native
+  var negotiationneeded: Event
   
-  var signalingstatechange: Event = js.native
+  var signalingstatechange: Event
   
-  var statsended: RTCStatsEvent = js.native
+  var statsended: RTCStatsEvent
   
-  var track: RTCTrackEvent = js.native
+  var track: RTCTrackEvent
 }
 object RTCPeerConnectionEventMap {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as a base for commands with the Boolean state.
   */
-@js.native
-trait CommandWithBooleanStateBase extends CommandBase {
+trait CommandWithBooleanStateBase
+  extends StObject
+     with CommandBase {
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[Boolean] = js.native
+  def getState(): CommandState[Boolean]
 }
 object CommandWithBooleanStateBase {
   

@@ -4,35 +4,33 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeList[T] extends StObject {
   
-  var allChangesIncluded: Boolean = js.native
+  var allChangesIncluded: Boolean
   
-  var changeCounts: NumberDictionary[Double] = js.native
+  var changeCounts: NumberDictionary[Double]
   
-  var changes: js.Array[Change[T]] = js.native
+  var changes: js.Array[Change[T]]
   
-  var comment: String = js.native
+  var comment: String
   
-  var commentTruncated: Boolean = js.native
+  var commentTruncated: Boolean
   
-  var creationDate: Date = js.native
+  var creationDate: Date
   
-  var notes: js.Array[CheckinNote] = js.native
+  var notes: js.Array[CheckinNote]
   
-  var owner: String = js.native
+  var owner: String
   
-  var ownerDisplayName: String = js.native
+  var ownerDisplayName: String
   
-  var ownerId: String = js.native
+  var ownerId: String
   
-  var sortDate: Date = js.native
+  var sortDate: Date
   
-  var version: String = js.native
+  var version: String
 }
 object ChangeList {
   
@@ -56,7 +54,7 @@ object ChangeList {
   }
   
   @scala.inline
-  implicit class ChangeListMutableBuilder[Self <: ChangeList[_], T] (val x: Self with ChangeList[T]) extends AnyVal {
+  implicit class ChangeListMutableBuilder[Self <: ChangeList[?], T] (val x: Self & ChangeList[T]) extends AnyVal {
     
     @scala.inline
     def setAllChangesIncluded(value: Boolean): Self = StObject.set(x, "allChangesIncluded", value.asInstanceOf[js.Any])

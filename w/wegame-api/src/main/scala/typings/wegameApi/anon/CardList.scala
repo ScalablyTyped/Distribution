@@ -2,16 +2,14 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardList extends StObject {
   
   /**
     * 卡券添加结果列表
     */
-  var cardList: js.Array[IsSuccess] = js.native
+  var cardList: js.Array[IsSuccess]
 }
 object CardList {
   

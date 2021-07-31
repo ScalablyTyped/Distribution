@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcEndpointMod {
@@ -121,6 +120,10 @@ object vpcEndpointMod {
   /* static members */
   object VpcEndpoint {
     
+    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcEndpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -130,81 +133,75 @@ object vpcEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcEndpoint = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpoint = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointState): VpcEndpoint = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointState, opts: CustomResourceOptions): VpcEndpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointState): VpcEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointState, opts: CustomResourceOptions): VpcEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpoint]
     
     /**
       * Returns true if the given object is an instance of VpcEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpoint", "VpcEndpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpoint.VpcEndpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpoint.VpcEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpoint.VpcEndpoint */ Boolean]
   }
   
-  @js.native
   trait VpcEndpointArgs extends StObject {
     
     /**
       * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
       */
-    val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+    val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
       * Defaults to `false`.
       */
-    val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * One or more route table IDs. Applicable for endpoints of type `Gateway`.
       */
-    val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The service name. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
       */
-    val serviceName: Input[String] = js.native
+    val serviceName: Input[String]
     
     /**
       * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `GatewayLoadBalancer` and `Interface`.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC endpoint type, `Gateway`, `GatewayLoadBalancer`, or `Interface`. Defaults to `Gateway`.
       */
-    val vpcEndpointType: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC in which the endpoint will be used.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object VpcEndpointArgs {
     
@@ -282,99 +279,98 @@ object vpcEndpointMod {
     }
   }
   
-  @js.native
   trait VpcEndpointState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the VPC endpoint.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Accept the VPC endpoint (the VPC endpoint and service need to be in the same AWS account).
       */
-    val autoAccept: js.UndefOr[Input[Boolean]] = js.native
+    val autoAccept: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of CIDR blocks for the exposed AWS service. Applicable for endpoints of type `Gateway`.
       */
-    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val cidrBlocks: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
       */
-    val dnsEntries: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpcEndpointDnsEntry]]]] = js.native
+    val dnsEntries: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.VpcEndpointDnsEntry]]]] = js.undefined
     
     /**
       * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
       */
-    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val networkInterfaceIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the VPC endpoint.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A policy to attach to the endpoint that controls access to the service. Defaults to full access. All `Gateway` and some `Interface` endpoints support policies - see the [relevant AWS documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints-access.html) for more details.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The prefix list ID of the exposed AWS service. Applicable for endpoints of type `Gateway`.
       */
-    val prefixListId: js.UndefOr[Input[String]] = js.native
+    val prefixListId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether or not to associate a private hosted zone with the specified VPC. Applicable for endpoints of type `Interface`.
       * Defaults to `false`.
       */
-    val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val privateDnsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether or not the VPC Endpoint is being managed by its service - `true` or `false`.
       */
-    val requesterManaged: js.UndefOr[Input[Boolean]] = js.native
+    val requesterManaged: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * One or more route table IDs. Applicable for endpoints of type `Gateway`.
       */
-    val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val routeTableIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ID of one or more security groups to associate with the network interface. Required for endpoints of type `Interface`.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The service name. For AWS services the service name is usually in the form `com.amazonaws.<region>.<service>` (the SageMaker Notebook service is an exception to this rule, the service name is in the form `aws.sagemaker.<region>.notebook`).
       */
-    val serviceName: js.UndefOr[Input[String]] = js.native
+    val serviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the VPC endpoint.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of one or more subnets in which to create a network interface for the endpoint. Applicable for endpoints of type `GatewayLoadBalancer` and `Interface`.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The VPC endpoint type, `Gateway`, `GatewayLoadBalancer`, or `Interface`. Defaults to `Gateway`.
       */
-    val vpcEndpointType: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC in which the endpoint will be used.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcEndpointState {
     

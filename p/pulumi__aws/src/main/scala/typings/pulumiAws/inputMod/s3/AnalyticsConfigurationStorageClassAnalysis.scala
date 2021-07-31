@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationStorageClassAnalysis extends StObject {
   
   /**
     * Data export configuration (documented below).
     */
-  var dataExport: Input[AnalyticsConfigurationStorageClassAnalysisDataExport] = js.native
+  var dataExport: Input[AnalyticsConfigurationStorageClassAnalysisDataExport]
 }
 object AnalyticsConfigurationStorageClassAnalysis {
   

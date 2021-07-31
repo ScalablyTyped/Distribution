@@ -14,31 +14,25 @@ import typings.std.IDBObjectStoreParameters
 import typings.std.IDBValidKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("idb", "deleteDb")
+  @JSImport("idb", JSImport.Namespace)
   @js.native
-  def deleteDb(name: String): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("idb", "openDb")
-  @js.native
-  def openDb(name: String): js.Promise[DB] = js.native
-  @JSImport("idb", "openDb")
-  @js.native
-  def openDb(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]
-  ): js.Promise[DB] = js.native
-  @JSImport("idb", "openDb")
-  @js.native
-  def openDb(name: String, version: Double): js.Promise[DB] = js.native
-  @JSImport("idb", "openDb")
-  @js.native
-  def openDb(name: String, version: Double, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = js.native
+  @scala.inline
+  def deleteDb(name: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def openDb(name: String): js.Promise[DB] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DB]]
+  @scala.inline
+  def openDb(name: String, version: Double): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
+  @scala.inline
+  def openDb(name: String, version: Double, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
+  @scala.inline
+  def openDb(name: String, version: Unit, upgradeCallback: js.Function1[/* db */ UpgradeDB, Unit]): js.Promise[DB] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDb")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], upgradeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DB]]
   
   @js.native
   trait Cursor[TValue, TKey] extends StObject {
@@ -60,10 +54,11 @@ object mod {
       * @param primaryKey The primary key to position the cursor at.
       * @returns The cursor after having been continued to the next or specified record. */
     def continuePrimaryKey(): js.Promise[Cursor[TValue, TKey]] = js.native
-    def continuePrimaryKey(key: js.UndefOr[IDBValidKey], primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
+    def continuePrimaryKey(key: Unit, primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
     def continuePrimaryKey(key: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
     def continuePrimaryKey(key: IDBKeyRange, primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
     def continuePrimaryKey(key: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
+    def continuePrimaryKey(key: IDBValidKey, primaryKey: TKey): js.Promise[Cursor[TValue, TKey]] = js.native
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) deletes the record at the cursor's position, without changing the cursor's position.
       * This can be used to delete specific records.
@@ -227,29 +222,37 @@ object mod {
     def openCursor(range: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
     def openCursor(range: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
-    def openCursor_next(range: js.UndefOr[IDBValidKey], direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
-    @JSName("openCursor")
     def openCursor_next(range: Null, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openCursor")
+    def openCursor_next(range: Unit, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
     def openCursor_next(range: IDBKeyRange, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
-    def openCursor_nextunique(range: js.UndefOr[IDBValidKey], direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openCursor_next(range: IDBValidKey, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
     def openCursor_nextunique(range: Null, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
+    def openCursor_nextunique(range: Unit, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openCursor")
     def openCursor_nextunique(range: IDBKeyRange, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
-    def openCursor_prev(range: js.UndefOr[IDBValidKey], direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openCursor_nextunique(range: IDBValidKey, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
     def openCursor_prev(range: Null, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
+    def openCursor_prev(range: Unit, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openCursor")
     def openCursor_prev(range: IDBKeyRange, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
-    def openCursor_prevunique(range: js.UndefOr[IDBValidKey], direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openCursor_prev(range: IDBValidKey, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
     def openCursor_prevunique(range: Null, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openCursor")
+    def openCursor_prevunique(range: Unit, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openCursor")
     def openCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openCursor")
+    def openCursor_prevunique(range: IDBValidKey, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves a new cursor object.
       * Used for iterating through an object store with a key.
@@ -260,33 +263,43 @@ object mod {
     def openKeyCursor(range: IDBKeyRange): js.Promise[Cursor[TValue, TKey]] = js.native
     def openKeyCursor(range: IDBValidKey): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
-    def openKeyCursor_next(range: js.UndefOr[IDBValidKey], direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
-    @JSName("openKeyCursor")
     def openKeyCursor_next(range: Null, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openKeyCursor")
+    def openKeyCursor_next(range: Unit, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
     def openKeyCursor_next(range: IDBKeyRange, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
-    def openKeyCursor_nextunique(range: js.UndefOr[IDBValidKey], direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openKeyCursor_next(range: IDBValidKey, direction: next): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
     def openKeyCursor_nextunique(range: Null, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
+    def openKeyCursor_nextunique(range: Unit, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openKeyCursor")
     def openKeyCursor_nextunique(range: IDBKeyRange, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
-    def openKeyCursor_prev(range: js.UndefOr[IDBValidKey], direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openKeyCursor_nextunique(range: IDBValidKey, direction: nextunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
     def openKeyCursor_prev(range: Null, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
+    def openKeyCursor_prev(range: Unit, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openKeyCursor")
     def openKeyCursor_prev(range: IDBKeyRange, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
-    def openKeyCursor_prevunique(range: js.UndefOr[IDBValidKey], direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    def openKeyCursor_prev(range: IDBValidKey, direction: prev): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
     def openKeyCursor_prevunique(range: Null, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
     @JSName("openKeyCursor")
+    def openKeyCursor_prevunique(range: Unit, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openKeyCursor")
     def openKeyCursor_prevunique(range: IDBKeyRange, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
+    @JSName("openKeyCursor")
+    def openKeyCursor_prevunique(range: IDBValidKey, direction: prevunique): js.Promise[Cursor[TValue, TKey]] = js.native
   }
   
   @js.native
-  trait Index[TValue, TKey] extends HasCursor[TValue, TKey] {
+  trait Index[TValue, TKey]
+    extends StObject
+       with HasCursor[TValue, TKey] {
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) counts the matching records.
       * If no arguments are provided, it returns the total number of records in the store.
@@ -308,17 +321,18 @@ object mod {
       * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
       * @returns A promise that resolves with the items when the underlying getAll IDBRequest is successful. */
     def getAll(): js.Promise[js.Array[TValue]] = js.native
-    def getAll(query: js.UndefOr[IDBValidKey], count: Double): js.Promise[js.Array[TValue]] = js.native
+    def getAll(query: Unit, count: Double): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBKeyRange): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBKeyRange, count: Double): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBValidKey): js.Promise[js.Array[TValue]] = js.native
+    def getAll(query: IDBValidKey, count: Double): js.Promise[js.Array[TValue]] = js.native
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves with record keys for all the objects matching the specified parameter or all record keys in the store if no parameters are given.
       * @param query Optional. A key or IDBKeyRange to be queried. If nothing is passed, this will default to a key range that selects all the records in this object store.
       * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
       * @returns A promise that resolves with the record keys when the underlying getAllKeys IDBRequest is successful. */
     def getAllKeys(): js.Promise[js.Array[TKey]] = js.native
-    def getAllKeys(query: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[TKey]] = js.native
+    def getAllKeys(query: Unit, count: Double): js.Promise[js.Array[TKey]] = js.native
     def getAllKeys(query: IDBKeyRange): js.Promise[js.Array[TKey]] = js.native
     def getAllKeys(query: IDBKeyRange, count: Double): js.Promise[js.Array[TKey]] = js.native
     
@@ -344,7 +358,9 @@ object mod {
   }
   
   @js.native
-  trait ObjectStore[TValue, TKey] extends HasCursor[TValue, TKey] {
+  trait ObjectStore[TValue, TKey]
+    extends StObject
+       with HasCursor[TValue, TKey] {
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) creates a structured clone of the value, and stores the cloned value in the object store.
       * This is for adding new records to an object store.
@@ -403,17 +419,18 @@ object mod {
       * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
       * @returns A promise that resolves with the items when the underlying getAll IDBRequest is successful. */
     def getAll(): js.Promise[js.Array[TValue]] = js.native
-    def getAll(query: js.UndefOr[IDBValidKey], count: Double): js.Promise[js.Array[TValue]] = js.native
+    def getAll(query: Unit, count: Double): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBKeyRange): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBKeyRange, count: Double): js.Promise[js.Array[TValue]] = js.native
     def getAll(query: IDBValidKey): js.Promise[js.Array[TValue]] = js.native
+    def getAll(query: IDBValidKey, count: Double): js.Promise[js.Array[TValue]] = js.native
     
     /** Returns a Promise of an IDBRequest object that (in a separate thread) resolves with record keys for all the objects matching the specified parameter or all record keys in the store if no parameters are given.
       * @param query Optional. A key or IDBKeyRange to be queried. If nothing is passed, this will default to a key range that selects all the records in this object store.
       * @param count Optional. Specifies the number of values to return if more than one is found. If it is lower than 0 or greater than 232-1 a TypeError exception will be thrown.
       * @returns A promise that resolves with the record keys when the underlying getAllKeys IDBRequest is successful. */
     def getAllKeys(): js.Promise[js.Array[TKey]] = js.native
-    def getAllKeys(query: js.UndefOr[scala.Nothing], count: Double): js.Promise[js.Array[TKey]] = js.native
+    def getAllKeys(query: Unit, count: Double): js.Promise[js.Array[TKey]] = js.native
     def getAllKeys(query: IDBKeyRange): js.Promise[js.Array[TKey]] = js.native
     def getAllKeys(query: IDBKeyRange, count: Double): js.Promise[js.Array[TKey]] = js.native
     
@@ -447,25 +464,24 @@ object mod {
     def put(value: TValue, key: IDBValidKey): js.Promise[IDBValidKey] = js.native
   }
   
-  @js.native
   trait Transaction extends StObject {
     
     /** Rolls back all the changes to objects in the database associated with this transaction. If this transaction has been aborted or completed, then this method throws an error event. */
-    def abort(): Unit = js.native
+    def abort(): Unit
     
     /** Resolves when transaction completes, rejects if transaction aborts or errors. */
-    val complete: js.Promise[Unit] = js.native
+    val complete: js.Promise[Unit]
     
     /** The mode for isolating access to data in the object stores that are in the scope of the transaction. For possible values, see the Constants section below. The default value is readonly. */
-    val mode: readonly | readwrite | versionchange = js.native
+    val mode: readonly | readwrite | versionchange
     
     /** Returns an ObjectStore object representing an object store that is part of the scope of this transaction.
       * @param name The name of the requested object store.
       * @returns The object store in the context of the transaction. */
-    def objectStore[TValue, TKey](name: String): ObjectStore[TValue, TKey] = js.native
+    def objectStore[TValue, TKey](name: String): ObjectStore[TValue, TKey]
     
     /** Returns a DOMStringList of the names of IDBObjectStore objects. */
-    val objectStoreNames: DOMStringList = js.native
+    val objectStoreNames: DOMStringList
   }
   object Transaction {
     

@@ -2,23 +2,21 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeScrollEvent extends StObject {
   
-  var contentInset: NativeScrollRectangle = js.native
+  var contentInset: NativeScrollRectangle
   
-  var contentOffset: NativeScrollPoint = js.native
+  var contentOffset: NativeScrollPoint
   
-  var contentSize: NativeScrollSize = js.native
+  var contentSize: NativeScrollSize
   
-  var layoutMeasurement: NativeScrollSize = js.native
+  var layoutMeasurement: NativeScrollSize
   
-  var velocity: js.UndefOr[NativeScrollVelocity] = js.native
+  var velocity: js.UndefOr[NativeScrollVelocity] = js.undefined
   
-  var zoomScale: Double = js.native
+  var zoomScale: Double
 }
 object NativeScrollEvent {
   

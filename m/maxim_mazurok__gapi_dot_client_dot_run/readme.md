@@ -10,9 +10,9 @@ TypeScript typings for Cloud Run Admin API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.run |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 960 |
 | # stars            | 0 |
 
 ## Links

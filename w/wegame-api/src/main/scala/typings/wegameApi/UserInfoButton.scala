@@ -4,11 +4,11 @@ import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserInfoButton extends CreatedButton
+trait UserInfoButton
+  extends StObject
+     with CreatedButton
 object UserInfoButton {
   
   @scala.inline

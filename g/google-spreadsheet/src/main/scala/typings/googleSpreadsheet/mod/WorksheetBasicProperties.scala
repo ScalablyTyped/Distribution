@@ -2,17 +2,15 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetBasicProperties extends StObject {
   
   /**
     * @description
     * additional properties of the worksheet if this sheet is a grid
     */
-  var gridProperties: js.UndefOr[WorksheetGridProperties] = js.native
+  var gridProperties: js.UndefOr[WorksheetGridProperties] = js.undefined
   
   // #region BASIC PROPERTIES
   /* separates basic (editable) properties as they are used as inputs to various methods
@@ -24,37 +22,37 @@ trait WorksheetBasicProperties extends StObject {
     * - used in row-based interactions
     * - defines the dynamic properties of the Worksheet's GoogleSpreadsheetRows
     */
-  var headerValues: js.UndefOr[js.Array[String]] = js.native
+  var headerValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * @description
     * true if the worksheet is hidden in the UI, false if it's visible
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description
     * tab index in the worksheet doc (based on rightToLeft property)
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * @description
     * true if the worksheet is an RTL sheet instead of an LTR sheet
     */
-  var rightToLeft: js.UndefOr[Boolean] = js.native
+  var rightToLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description
     * the color of the worksheet tab
     */
-  var tabColor: js.UndefOr[Color] = js.native
+  var tabColor: js.UndefOr[Color] = js.undefined
   
   /**
     * @description
     * name of the worksheet tab
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object WorksheetBasicProperties {
   

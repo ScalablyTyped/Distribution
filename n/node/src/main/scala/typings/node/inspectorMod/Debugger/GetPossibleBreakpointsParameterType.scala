@@ -2,26 +2,24 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPossibleBreakpointsParameterType extends StObject {
   
   /**
     * End of range to search possible breakpoint locations in (excluding). When not specified, end of scripts is used as end of range.
     */
-  var end: js.UndefOr[Location] = js.native
+  var end: js.UndefOr[Location] = js.undefined
   
   /**
     * Only consider locations which are in the same (non-nested) function as start.
     */
-  var restrictToFunction: js.UndefOr[Boolean] = js.native
+  var restrictToFunction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Start of range to search possible breakpoint locations in.
     */
-  var start: Location = js.native
+  var start: Location
 }
 object GetPossibleBreakpointsParameterType {
   

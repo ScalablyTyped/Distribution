@@ -2,24 +2,22 @@ package typings.cordovaPluginGlobalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Pattern to format and parse dates according to the client's user preferences.*/
-@js.native
 trait GlobalizationDatePattern extends StObject {
   
   /* The current daylight saving time offset in seconds between the client's non-daylight saving's time zone and the client's daylight saving's time zone. */
-  var dst_offset: Double = js.native
+  var dst_offset: Double
   
   /* The date and time pattern to format and parse dates. The patterns follow Unicode Technical Standard #35. */
-  var pattern: String = js.native
+  var pattern: String
   
   /* The abbreviated name of the time zone on the client. */
-  var timezone: String = js.native
+  var timezone: String
   
   /* The current difference in seconds between the client's time zone and coordinated universal time. */
-  var utc_offset: Double = js.native
+  var utc_offset: Double
 }
 object GlobalizationDatePattern {
   

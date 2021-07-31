@@ -2,45 +2,73 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logger extends StObject {
   
-  def debug(msg: String, args: js.Any*): Unit = js.native
-  def debug(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def debug(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def debug(msg: String, args: js.Any*): Unit
+  def debug(obj: js.Object, msg: String, args: js.Any*): Unit
+  def debug(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("debug")
-  var debug_Original: LogFn = js.native
+  var debug_Original: LogFn
   
-  def error(msg: String, args: js.Any*): Unit = js.native
-  def error(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def error(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def error(msg: String, args: js.Any*): Unit
+  def error(obj: js.Object, msg: String, args: js.Any*): Unit
+  def error(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("error")
-  var error_Original: LogFn = js.native
+  var error_Original: LogFn
   
-  def fatal(msg: String, args: js.Any*): Unit = js.native
-  def fatal(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def fatal(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def fatal(msg: String, args: js.Any*): Unit
+  def fatal(obj: js.Object, msg: String, args: js.Any*): Unit
+  def fatal(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("fatal")
-  var fatal_Original: LogFn = js.native
+  var fatal_Original: LogFn
   
-  def info(msg: String, args: js.Any*): Unit = js.native
-  def info(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def info(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def info(msg: String, args: js.Any*): Unit
+  def info(obj: js.Object, msg: String, args: js.Any*): Unit
+  def info(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("info")
-  var info_Original: LogFn = js.native
+  var info_Original: LogFn
   
-  def trace(msg: String, args: js.Any*): Unit = js.native
-  def trace(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def trace(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def trace(msg: String, args: js.Any*): Unit
+  def trace(obj: js.Object, msg: String, args: js.Any*): Unit
+  def trace(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("trace")
-  var trace_Original: LogFn = js.native
+  var trace_Original: LogFn
   
-  def warn(msg: String, args: js.Any*): Unit = js.native
-  def warn(obj: js.Object, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  def warn(obj: js.Object, msg: String, args: js.Any*): Unit = js.native
+  def warn(msg: String, args: js.Any*): Unit
+  def warn(obj: js.Object, msg: String, args: js.Any*): Unit
+  def warn(obj: js.Object, msg: Unit, args: js.Any*): Unit
   @JSName("warn")
-  var warn_Original: LogFn = js.native
+  var warn_Original: LogFn
+}
+object Logger {
+  
+  @scala.inline
+  def apply(debug: LogFn, error: LogFn, fatal: LogFn, info: LogFn, trace: LogFn, warn: LogFn): Logger = {
+    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Logger]
+  }
+  
+  @scala.inline
+  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDebug(value: LogFn): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setError(value: LogFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFatal(value: LogFn): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInfo(value: LogFn): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTrace(value: LogFn): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWarn(value: LogFn): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+  }
 }

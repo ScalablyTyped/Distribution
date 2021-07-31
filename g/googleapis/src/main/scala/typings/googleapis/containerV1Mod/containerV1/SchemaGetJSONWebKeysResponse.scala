@@ -2,21 +2,19 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GetJSONWebKeysResponse is a valid JSON Web Key Set as specififed in rfc
   * 7517
   */
-@js.native
 trait SchemaGetJSONWebKeysResponse extends StObject {
   
   /**
     * The public component of the keys used by the cluster to sign token
     * requests.
     */
-  var keys: js.UndefOr[js.Array[SchemaJwk]] = js.native
+  var keys: js.UndefOr[js.Array[SchemaJwk]] = js.undefined
 }
 object SchemaGetJSONWebKeysResponse {
   

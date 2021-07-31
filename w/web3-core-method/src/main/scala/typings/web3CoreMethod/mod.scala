@@ -2,35 +2,33 @@ package typings.web3CoreMethod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Method extends StObject {
     
-    var abiCoder: js.UndefOr[js.Any] = js.native
+    var abiCoder: js.UndefOr[js.Any] = js.undefined
     
-    var call: String = js.native
+    var call: String
     
-    var defaultAccount: js.UndefOr[String | Null] = js.native
+    var defaultAccount: js.UndefOr[String | Null] = js.undefined
     
-    var defaultBlock: js.UndefOr[String] = js.native
+    var defaultBlock: js.UndefOr[String] = js.undefined
     
-    var extraFormatters: js.UndefOr[js.Any] = js.native
+    var extraFormatters: js.UndefOr[js.Any] = js.undefined
     
-    var handleRevert: js.UndefOr[Boolean] = js.native
+    var handleRevert: js.UndefOr[Boolean] = js.undefined
     
-    var inputFormatter: js.UndefOr[js.Array[js.Function0[Unit] | Null]] = js.native
+    var inputFormatter: js.UndefOr[js.Array[js.Function0[Unit] | Null]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var outputFormatter: js.UndefOr[js.Function0[Unit]] = js.native
+    var outputFormatter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var params: js.UndefOr[Double] = js.native
+    var params: js.UndefOr[Double] = js.undefined
     
-    var transformPayload: js.UndefOr[js.Function0[Unit]] = js.native
+    var transformPayload: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Method {
     

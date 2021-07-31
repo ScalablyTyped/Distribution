@@ -3,14 +3,15 @@ package typings.heremaps.H.map
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a map object which can contain other map objects. It's visibility, zIndex and object-order influences the contained map objects
   */
 @js.native
-trait Group extends Object {
+trait Group
+  extends StObject
+     with Object {
   
   /**
     * To add an object to this group.
@@ -34,16 +35,16 @@ trait Group extends Object {
   def forEach(callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit]): Unit = js.native
   def forEach(
     callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
-    opt_recursive: js.UndefOr[scala.Nothing],
-    opt_context: js.Any
-  ): Unit = js.native
-  def forEach(
-    callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
     opt_recursive: Boolean
   ): Unit = js.native
   def forEach(
     callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
     opt_recursive: Boolean,
+    opt_context: js.Any
+  ): Unit = js.native
+  def forEach(
+    callback: js.Function3[/* object */ Object, /* n */ Double, /* group */ this.type, Unit],
+    opt_recursive: Unit,
     opt_context: js.Any
   ): Unit = js.native
   
@@ -92,22 +93,21 @@ object Group {
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     * @property objects {Array<H.map.Object>=} - A list of map objects to add initially to this group.
     */
-  @js.native
   trait Options extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var objects: js.UndefOr[js.Array[Object]] = js.native
+    var objects: js.UndefOr[js.Array[Object]] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

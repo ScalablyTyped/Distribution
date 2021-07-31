@@ -2,19 +2,17 @@ package typings.sassGraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ImportedBy extends StObject {
     
-    var importedBy: js.Array[String] = js.native
+    var importedBy: js.Array[String]
     
-    var imports: js.Array[String] = js.native
+    var imports: js.Array[String]
     
-    var modified: String = js.native
+    var modified: String
   }
   object ImportedBy {
     

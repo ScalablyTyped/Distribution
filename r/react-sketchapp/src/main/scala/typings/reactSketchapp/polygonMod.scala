@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polygonMod {
@@ -16,10 +15,11 @@ object polygonMod {
   
   type Polygon = Component[PolygonProps, js.Object, js.Any]
   
-  @js.native
-  trait PolygonProps extends PathProps {
+  trait PolygonProps
+    extends StObject
+       with PathProps {
     
-    var points: String = js.native
+    var points: String
   }
   object PolygonProps {
     

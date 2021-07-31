@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.OperationOutcome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyOperationOutcome extends StObject {
   
-  var body: OperationOutcome = js.native
+  var body: OperationOutcome
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationOutcome = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationOutcome
 }
 object BodyOperationOutcome {
   
   @scala.inline
-  def apply(body: OperationOutcome, resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationOutcome): BodyOperationOutcome = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: OperationOutcome): BodyOperationOutcome = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "OperationOutcome")
     __obj.asInstanceOf[BodyOperationOutcome]
   }
   

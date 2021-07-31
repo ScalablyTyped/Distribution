@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends StObject {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /** The session info previously returned by IdentityToolkit-SendVerificationCode. */
-  var sessionInfo: js.UndefOr[String] = js.native
+  var sessionInfo: js.UndefOr[String] = js.undefined
   
-  var temporaryProof: js.UndefOr[String] = js.native
+  var temporaryProof: js.UndefOr[String] = js.undefined
   
-  var verificationProof: js.UndefOr[String] = js.native
+  var verificationProof: js.UndefOr[String] = js.undefined
 }
 object IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest {
   

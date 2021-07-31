@@ -2,19 +2,17 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to update device metadata in batch.
   */
-@js.native
 trait SchemaUpdateDeviceMetadataInBatchRequest extends StObject {
   
   /**
     * Required. The list of metadata updates.
     */
-  var updates: js.UndefOr[js.Array[SchemaUpdateMetadataArguments]] = js.native
+  var updates: js.UndefOr[js.Array[SchemaUpdateMetadataArguments]] = js.undefined
 }
 object SchemaUpdateDeviceMetadataInBatchRequest {
   

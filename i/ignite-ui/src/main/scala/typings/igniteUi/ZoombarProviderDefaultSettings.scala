@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoombarProviderDefaultSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait ZoombarProviderDefaultSettings
   /**
     * Contains the target component's instance
     */
-  var targetObject: js.UndefOr[js.Any] = js.native
+  var targetObject: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Expects two parameters
@@ -30,7 +29,7 @@ trait ZoombarProviderDefaultSettings
     * }
     * The values should represent the fractions of the total width of the zoomed component in a number ranging from 0 to 1
     */
-  var zoomChangedCallback: js.UndefOr[js.Any] = js.native
+  var zoomChangedCallback: js.UndefOr[js.Any] = js.undefined
 }
 object ZoombarProviderDefaultSettings {
   

@@ -2,106 +2,104 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ type in plotly.js.plotly.js.PlotType ]:? std.Partial<plotly.js.plotly.js.PlotData>} */
-@js.native
 trait typeinPlotTypePartialPlot extends StObject {
   
-  var bar: js.UndefOr[PartialPlotData] = js.native
+  var bar: js.UndefOr[PartialPlotData] = js.undefined
   
-  var barpolar: js.UndefOr[PartialPlotData] = js.native
+  var barpolar: js.UndefOr[PartialPlotData] = js.undefined
   
-  var box: js.UndefOr[PartialPlotData] = js.native
+  var box: js.UndefOr[PartialPlotData] = js.undefined
   
-  var candlestick: js.UndefOr[PartialPlotData] = js.native
+  var candlestick: js.UndefOr[PartialPlotData] = js.undefined
   
-  var carpet: js.UndefOr[PartialPlotData] = js.native
+  var carpet: js.UndefOr[PartialPlotData] = js.undefined
   
-  var choropleth: js.UndefOr[PartialPlotData] = js.native
+  var choropleth: js.UndefOr[PartialPlotData] = js.undefined
   
-  var choroplethmapbox: js.UndefOr[PartialPlotData] = js.native
+  var choroplethmapbox: js.UndefOr[PartialPlotData] = js.undefined
   
-  var cone: js.UndefOr[PartialPlotData] = js.native
+  var cone: js.UndefOr[PartialPlotData] = js.undefined
   
-  var contour: js.UndefOr[PartialPlotData] = js.native
+  var contour: js.UndefOr[PartialPlotData] = js.undefined
   
-  var contourcarpet: js.UndefOr[PartialPlotData] = js.native
+  var contourcarpet: js.UndefOr[PartialPlotData] = js.undefined
   
-  var contourgl: js.UndefOr[PartialPlotData] = js.native
+  var contourgl: js.UndefOr[PartialPlotData] = js.undefined
   
-  var densitymapbox: js.UndefOr[PartialPlotData] = js.native
+  var densitymapbox: js.UndefOr[PartialPlotData] = js.undefined
   
-  var funnel: js.UndefOr[PartialPlotData] = js.native
+  var funnel: js.UndefOr[PartialPlotData] = js.undefined
   
-  var funnelarea: js.UndefOr[PartialPlotData] = js.native
+  var funnelarea: js.UndefOr[PartialPlotData] = js.undefined
   
-  var heatmap: js.UndefOr[PartialPlotData] = js.native
+  var heatmap: js.UndefOr[PartialPlotData] = js.undefined
   
-  var heatmapgl: js.UndefOr[PartialPlotData] = js.native
+  var heatmapgl: js.UndefOr[PartialPlotData] = js.undefined
   
-  var histogram: js.UndefOr[PartialPlotData] = js.native
+  var histogram: js.UndefOr[PartialPlotData] = js.undefined
   
-  var histogram2d: js.UndefOr[PartialPlotData] = js.native
+  var histogram2d: js.UndefOr[PartialPlotData] = js.undefined
   
-  var histogram2dcontour: js.UndefOr[PartialPlotData] = js.native
+  var histogram2dcontour: js.UndefOr[PartialPlotData] = js.undefined
   
-  var image: js.UndefOr[PartialPlotData] = js.native
+  var image: js.UndefOr[PartialPlotData] = js.undefined
   
-  var indicator: js.UndefOr[PartialPlotData] = js.native
+  var indicator: js.UndefOr[PartialPlotData] = js.undefined
   
-  var isosurface: js.UndefOr[PartialPlotData] = js.native
+  var isosurface: js.UndefOr[PartialPlotData] = js.undefined
   
-  var mesh3d: js.UndefOr[PartialPlotData] = js.native
+  var mesh3d: js.UndefOr[PartialPlotData] = js.undefined
   
-  var ohlc: js.UndefOr[PartialPlotData] = js.native
+  var ohlc: js.UndefOr[PartialPlotData] = js.undefined
   
-  var parcats: js.UndefOr[PartialPlotData] = js.native
+  var parcats: js.UndefOr[PartialPlotData] = js.undefined
   
-  var parcoords: js.UndefOr[PartialPlotData] = js.native
+  var parcoords: js.UndefOr[PartialPlotData] = js.undefined
   
-  var pie: js.UndefOr[PartialPlotData] = js.native
+  var pie: js.UndefOr[PartialPlotData] = js.undefined
   
-  var pointcloud: js.UndefOr[PartialPlotData] = js.native
+  var pointcloud: js.UndefOr[PartialPlotData] = js.undefined
   
-  var sankey: js.UndefOr[PartialPlotData] = js.native
+  var sankey: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scatter: js.UndefOr[PartialPlotData] = js.native
+  var scatter: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scatter3d: js.UndefOr[PartialPlotData] = js.native
+  var scatter3d: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scattercarpet: js.UndefOr[PartialPlotData] = js.native
+  var scattercarpet: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scattergeo: js.UndefOr[PartialPlotData] = js.native
+  var scattergeo: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scattergl: js.UndefOr[PartialPlotData] = js.native
+  var scattergl: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scattermapbox: js.UndefOr[PartialPlotData] = js.native
+  var scattermapbox: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scatterpolar: js.UndefOr[PartialPlotData] = js.native
+  var scatterpolar: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scatterpolargl: js.UndefOr[PartialPlotData] = js.native
+  var scatterpolargl: js.UndefOr[PartialPlotData] = js.undefined
   
-  var scatterternary: js.UndefOr[PartialPlotData] = js.native
+  var scatterternary: js.UndefOr[PartialPlotData] = js.undefined
   
-  var splom: js.UndefOr[PartialPlotData] = js.native
+  var splom: js.UndefOr[PartialPlotData] = js.undefined
   
-  var streamtube: js.UndefOr[PartialPlotData] = js.native
+  var streamtube: js.UndefOr[PartialPlotData] = js.undefined
   
-  var sunburst: js.UndefOr[PartialPlotData] = js.native
+  var sunburst: js.UndefOr[PartialPlotData] = js.undefined
   
-  var surface: js.UndefOr[PartialPlotData] = js.native
+  var surface: js.UndefOr[PartialPlotData] = js.undefined
   
-  var table: js.UndefOr[PartialPlotData] = js.native
+  var table: js.UndefOr[PartialPlotData] = js.undefined
   
-  var treemap: js.UndefOr[PartialPlotData] = js.native
+  var treemap: js.UndefOr[PartialPlotData] = js.undefined
   
-  var violin: js.UndefOr[PartialPlotData] = js.native
+  var violin: js.UndefOr[PartialPlotData] = js.undefined
   
-  var volume: js.UndefOr[PartialPlotData] = js.native
+  var volume: js.UndefOr[PartialPlotData] = js.undefined
   
-  var waterfall: js.UndefOr[PartialPlotData] = js.native
+  var waterfall: js.UndefOr[PartialPlotData] = js.undefined
 }
 object typeinPlotTypePartialPlot {
   

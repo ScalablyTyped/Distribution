@@ -7,16 +7,18 @@ import typings.bser.bserNumbers.`1`
 import typings.node.Buffer
 import typings.node.NodeJS.TypedArray
 import typings.node.eventsMod.EventEmitter
-import typings.nodeInt64.mod.^
 import typings.std.ArrayBuffer
 import typings.std.DataView
 import typings.std.SharedArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bser", "Accumulator")
   @js.native
@@ -106,17 +108,15 @@ object mod {
     var state: `0` | `1` = js.native
   }
   
-  @JSImport("bser", "dumpToBuffer")
-  @js.native
-  def dumpToBuffer(`val`: js.Any): Buffer = js.native
+  @scala.inline
+  def dumpToBuffer(`val`: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpToBuffer")(`val`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("bser", "loadFromBuffer")
-  @js.native
-  def loadFromBuffer(input: InputWrapper): AnyWrapper | js.Array[AnyWrapper] = js.native
+  @scala.inline
+  def loadFromBuffer(input: InputWrapper): AnyWrapper | js.Array[AnyWrapper] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFromBuffer")(input.asInstanceOf[js.Any]).asInstanceOf[AnyWrapper | js.Array[AnyWrapper]]
   
   type AnyWrapper = Boolean | IntWrapper | Null | String | js.Object
   
   type InputWrapper = Buffer | String | TypedArray | DataView | ArrayBuffer | SharedArrayBuffer
   
-  type IntWrapper = Double | ^
+  type IntWrapper = Double | typings.nodeInt64.mod.^
 }

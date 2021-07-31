@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polishMod extends Shortcut {
@@ -16,7 +15,8 @@ object polishMod extends Shortcut {
   
   @js.native
   trait Library
-    extends typings.yadda.englishMod.Library {
+    extends StObject
+       with typings.yadda.englishMod.Library {
     
     def gdy(
       step: String,
@@ -1412,23 +1412,23 @@ object polishMod extends Shortcut {
     ): this.type = js.native
   }
   
-  @js.native
   trait Vocabulary
-    extends typings.yadda.englishMod.Vocabulary {
+    extends StObject
+       with typings.yadda.englishMod.Vocabulary {
     
-    var gdy: String = js.native
+    var gdy: String
     
-    var jesli: String = js.native
+    var jesli: String
     
-    var jezeli: String = js.native
+    var jezeli: String
     
-    var kiedy: String = js.native
+    var kiedy: String
     
-    var majac: String = js.native
+    var majac: String
     
-    var wtedy: String = js.native
+    var wtedy: String
     
-    var zakladajac: String = js.native
+    var zakladajac: String
   }
   object Vocabulary {
     
@@ -1439,7 +1439,7 @@ object polishMod extends Shortcut {
       examples: String,
       feature: String,
       gdy: String,
-      given: String,
+      `given`: String,
       jesli: String,
       jezeli: String,
       kiedy: String,
@@ -1452,7 +1452,8 @@ object polishMod extends Shortcut {
       wtedy: String,
       zakladajac: String
     ): Vocabulary = {
-      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], gdy = gdy.asInstanceOf[js.Any], given = given.asInstanceOf[js.Any], jesli = jesli.asInstanceOf[js.Any], jezeli = jezeli.asInstanceOf[js.Any], kiedy = kiedy.asInstanceOf[js.Any], majac = majac.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], wtedy = wtedy.asInstanceOf[js.Any], zakladajac = zakladajac.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], examples = examples.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], gdy = gdy.asInstanceOf[js.Any], jesli = jesli.asInstanceOf[js.Any], jezeli = jezeli.asInstanceOf[js.Any], kiedy = kiedy.asInstanceOf[js.Any], majac = majac.asInstanceOf[js.Any], only = only.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], scenario = scenario.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any], wtedy = wtedy.asInstanceOf[js.Any], zakladajac = zakladajac.asInstanceOf[js.Any])
+      __obj.updateDynamic("given")(`given`.asInstanceOf[js.Any])
       __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }

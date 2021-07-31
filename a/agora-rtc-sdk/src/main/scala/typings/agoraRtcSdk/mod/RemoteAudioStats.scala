@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If {@link getRemoteAudioStats} is called successfully, the {@link RemoteAudioStatsMap} interface provides the UID and {@link RemoteAudioStats} of each remote user.
   */
-@js.native
 trait RemoteAudioStats extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait RemoteAudioStats extends StObject {
     * - "1": Opus.
     * - "2": AAC.
     */
-  val CodecType: js.UndefOr[String] = js.native
+  val CodecType: js.UndefOr[String] = js.undefined
   
   /**
     * End-to-end delay in ms.
     *
     * Delay from capturing to playing the audio.
     */
-  val End2EndDelay: js.UndefOr[String] = js.native
+  val End2EndDelay: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the audio is muted or not.
@@ -34,29 +32,29 @@ trait RemoteAudioStats extends StObject {
     * - "1": Muted.
     * - "0": Unmuted.
     */
-  val MuteState: js.UndefOr[String] = js.native
+  val MuteState: js.UndefOr[String] = js.undefined
   
   /** Packet loss rate (%) of the remote audio. */
-  val PacketLossRate: js.UndefOr[String] = js.native
+  val PacketLossRate: js.UndefOr[String] = js.undefined
   
   /** Bitrate of the received audio, in Kbps. */
-  val RecvBitrate: js.UndefOr[String] = js.native
+  val RecvBitrate: js.UndefOr[String] = js.undefined
   
   /** Volume of the received audio. */
-  val RecvLevel: js.UndefOr[String] = js.native
+  val RecvLevel: js.UndefOr[String] = js.undefined
   
   /** Total freeze time of the received audio. */
-  val TotalFreezeTime: js.UndefOr[String] = js.native
+  val TotalFreezeTime: js.UndefOr[String] = js.undefined
   
   /** Total playing duration of the received audio. */
-  val TotalPlayDuration: js.UndefOr[String] = js.native
+  val TotalPlayDuration: js.UndefOr[String] = js.undefined
   
   /**
     * Transport delay in ms.
     *
     * Delay from sending to receiving the audio.
     */
-  val TransportDelay: js.UndefOr[String] = js.native
+  val TransportDelay: js.UndefOr[String] = js.undefined
 }
 object RemoteAudioStats {
   

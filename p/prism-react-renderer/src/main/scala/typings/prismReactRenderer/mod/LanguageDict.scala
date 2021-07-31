@@ -2,76 +2,74 @@ package typings.prismReactRenderer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ lang in prism-react-renderer.prism-react-renderer.Language ]: prism-react-renderer.prism-react-renderer.PrismGrammar} */
-@js.native
 trait LanguageDict extends StObject {
   
-  var actionscript: PrismGrammar = js.native
+  var actionscript: PrismGrammar
   
-  var bash: PrismGrammar = js.native
+  var bash: PrismGrammar
   
-  var c: PrismGrammar = js.native
+  var c: PrismGrammar
   
-  var clike: PrismGrammar = js.native
+  var clike: PrismGrammar
   
-  var coffeescript: PrismGrammar = js.native
+  var coffeescript: PrismGrammar
   
-  var cpp: PrismGrammar = js.native
+  var cpp: PrismGrammar
   
-  var css: PrismGrammar = js.native
+  var css: PrismGrammar
   
-  var `css-extr`: PrismGrammar = js.native
+  var `css-extr`: PrismGrammar
   
-  var diff: PrismGrammar = js.native
+  var diff: PrismGrammar
   
-  var git: PrismGrammar = js.native
+  var git: PrismGrammar
   
-  var go: PrismGrammar = js.native
+  var go: PrismGrammar
   
-  var graphql: PrismGrammar = js.native
+  var graphql: PrismGrammar
   
-  var handlebars: PrismGrammar = js.native
+  var handlebars: PrismGrammar
   
-  var javascript: PrismGrammar = js.native
+  var javascript: PrismGrammar
   
-  var json: PrismGrammar = js.native
+  var json: PrismGrammar
   
-  var jsx: PrismGrammar = js.native
+  var jsx: PrismGrammar
   
-  var less: PrismGrammar = js.native
+  var less: PrismGrammar
   
-  var makefile: PrismGrammar = js.native
+  var makefile: PrismGrammar
   
-  var markdown: PrismGrammar = js.native
+  var markdown: PrismGrammar
   
-  var markup: PrismGrammar = js.native
+  var markup: PrismGrammar
   
-  var objectivec: PrismGrammar = js.native
+  var objectivec: PrismGrammar
   
-  var ocaml: PrismGrammar = js.native
+  var ocaml: PrismGrammar
   
-  var python: PrismGrammar = js.native
+  var python: PrismGrammar
   
-  var reason: PrismGrammar = js.native
+  var reason: PrismGrammar
   
-  var sass: PrismGrammar = js.native
+  var sass: PrismGrammar
   
-  var scss: PrismGrammar = js.native
+  var scss: PrismGrammar
   
-  var sql: PrismGrammar = js.native
+  var sql: PrismGrammar
   
-  var stylus: PrismGrammar = js.native
+  var stylus: PrismGrammar
   
-  var tsx: PrismGrammar = js.native
+  var tsx: PrismGrammar
   
-  var typescript: PrismGrammar = js.native
+  var typescript: PrismGrammar
   
-  var wasm: PrismGrammar = js.native
+  var wasm: PrismGrammar
   
-  var yaml: PrismGrammar = js.native
+  var yaml: PrismGrammar
 }
 object LanguageDict {
   

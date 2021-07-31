@@ -11,8 +11,8 @@ A globbing fs.watch wrapper built from the best parts of other fine watch libs.
 | Full name          | gaze |
 | Keywords           | watch, glob |
 | # releases         | 0 |
-| # dependents       | 477 |
-| # downloads        | 259002879 |
+| # dependents       | 485 |
+| # downloads        | 280427912 |
 | # stars            | 40 |
 
 ## Links

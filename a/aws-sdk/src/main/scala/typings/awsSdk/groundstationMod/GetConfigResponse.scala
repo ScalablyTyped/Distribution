@@ -2,41 +2,39 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigResponse extends StObject {
   
   /**
     * ARN of a Config 
     */
-  var configArn: ConfigArn = js.native
+  var configArn: ConfigArn
   
   /**
     * Data elements in a Config.
     */
-  var configData: ConfigTypeData = js.native
+  var configData: ConfigTypeData
   
   /**
     * UUID of a Config.
     */
-  var configId: String = js.native
+  var configId: String
   
   /**
     * Type of a Config.
     */
-  var configType: js.UndefOr[ConfigCapabilityType] = js.native
+  var configType: js.UndefOr[ConfigCapabilityType] = js.undefined
   
   /**
     * Name of a Config.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Tags assigned to a Config.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object GetConfigResponse {
   

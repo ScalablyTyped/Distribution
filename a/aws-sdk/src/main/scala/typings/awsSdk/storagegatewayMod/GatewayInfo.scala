@@ -2,46 +2,44 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayInfo extends StObject {
   
   /**
     * The ID of the Amazon EC2 instance that was used to launch the gateway.
     */
-  var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.native
+  var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.undefined
   
   /**
     * The AWS Region where the Amazon EC2 instance is located.
     */
-  var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.native
+  var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
     */
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The unique identifier assigned to your gateway during activation. This ID becomes part of the gateway Amazon Resource Name (ARN), which you use as input for other operations.
     */
-  var GatewayId: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayId] = js.native
+  var GatewayId: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayId] = js.undefined
   
   /**
     * The name of the gateway.
     */
-  var GatewayName: js.UndefOr[String] = js.native
+  var GatewayName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the gateway. Valid Values: DISABLED | ACTIVE 
     */
-  var GatewayOperationalState: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayOperationalState] = js.native
+  var GatewayOperationalState: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayOperationalState] = js.undefined
   
   /**
     * The type of the gateway.
     */
-  var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.native
+  var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.undefined
 }
 object GatewayInfo {
   

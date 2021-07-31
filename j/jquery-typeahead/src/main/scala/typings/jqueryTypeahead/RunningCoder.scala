@@ -14,16 +14,15 @@ import typings.jqueryTypeahead.jqueryTypeaheadStrings.sessionStorage
 import typings.jqueryTypeahead.jqueryTypeaheadStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RunningCoder {
   
   object Typeahead {
     
-    @js.native
     trait AJaxSettings
-      extends AjaxSettings[js.Any] {
+      extends StObject
+         with AjaxSettings[js.Any] {
       
       var always: js.UndefOr[
             js.Function3[
@@ -32,7 +31,7 @@ object RunningCoder {
               /* jqXHR */ js.UndefOr[JQueryXHR], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var done: js.UndefOr[
             js.Function3[
@@ -41,7 +40,7 @@ object RunningCoder {
               /* jqXHR */ js.UndefOr[JQueryXHR], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       var fail: js.UndefOr[
             js.Function3[
@@ -50,13 +49,13 @@ object RunningCoder {
               /* errorThrown */ js.UndefOr[js.Any], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
       var `then`: js.UndefOr[
             js.Function2[/* jqXHR */ js.UndefOr[JQueryXHR], /* textStatus */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
     }
     object AJaxSettings {
       
@@ -107,7 +106,6 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait Callback extends StObject {
       
       /** Perform operation on the source data before it gets in Typeahead cache */
@@ -119,7 +117,7 @@ object RunningCoder {
               /* path */ js.UndefOr[js.Any], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Any time there is text inside the input and it gets cleared (Backspace, Esc, Cancel button, etc).
@@ -127,7 +125,7 @@ object RunningCoder {
         */
       var onCancel: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* event */ js.UndefOr[JQueryEventObject], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Will be executed when a result item is clicked or the right arrow is pressed when an item is selected from
@@ -141,7 +139,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Will be executed when a result item is clicked or the right arrow is pressed when an item is selected from
@@ -155,7 +153,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Will be executed when a result item is clicked or the right arrow is pressed when an item is selected from
@@ -169,7 +167,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Will be executed when a dropdown filter is selected. Requires `dropdownFilter: true`. */
       var onDropdownFilter: js.UndefOr[
@@ -180,7 +178,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** When an item in the result list is focused */
       var onEnter: js.UndefOr[
@@ -191,15 +189,15 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Triggers when the Typeahead results layout is requested to hide. */
       var onHideLayout: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** Will be executed on Typeahead initialization, before anything else. */
-      var onInit: js.UndefOr[js.Function1[/* node */ js.UndefOr[JQuery], Unit]] = js.native
+      var onInit: js.UndefOr[js.Function1[/* node */ js.UndefOr[JQuery], Unit]] = js.undefined
       
       /** Perform an action right after the result HTML gets inserted into Typeahead's DOM. */
       var onLayoutBuiltAfter: js.UndefOr[
@@ -209,7 +207,7 @@ object RunningCoder {
               /* result */ js.UndefOr[js.Any], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * When the result HTML is build, modify it before it get showed.
@@ -224,7 +222,7 @@ object RunningCoder {
               /* resultHtmlList */ js.UndefOr[JQuery], 
               JQuery
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** When an item in the result list is blurred */
       var onLeave: js.UndefOr[
@@ -235,7 +233,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Will be executed when a item is hovered inside the result list. */
       var onMouseEnter: js.UndefOr[
@@ -246,7 +244,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Will be executed when a result item is hovered out. */
       var onMouseLeave: js.UndefOr[
@@ -257,7 +255,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Called at the end of Navigate (once the `.active` class and other operations are completed). */
       var onNavigateAfter: js.UndefOr[
@@ -270,7 +268,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * When a key is pressed to navigate the results. It is possible to disable the input text change
@@ -283,7 +281,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Gets called after the Ajax requests are all received and the data is populated inside Typeahead.
@@ -294,20 +292,20 @@ object RunningCoder {
       var onPopulateSource: js.UndefOr[
             js.Function4[
               /* node */ js.UndefOr[JQuery], 
-              /* data */ js.UndefOr[js.Array[_]], 
+              /* data */ js.UndefOr[js.Array[js.Any]], 
               /* group */ js.UndefOr[js.Any], 
               /* path */ js.UndefOr[js.Any], 
-              js.Array[_]
+              js.Array[js.Any]
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Triggers when the Typeahead initial preparation is completed. */
-      var onReady: js.UndefOr[js.Function1[/* node */ js.UndefOr[JQuery], Unit]] = js.native
+      var onReady: js.UndefOr[js.Function1[/* node */ js.UndefOr[JQuery], Unit]] = js.undefined
       
       /** Gets called when the Ajax request(s) are all received */
       var onReceiveRequest: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** Whenever the result changes, this callback will be triggered. */
       var onResult: js.UndefOr[
@@ -318,22 +316,22 @@ object RunningCoder {
               /* resultCount */ js.UndefOr[Double], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Triggers every time a new search is executed in Typeahead. */
       var onSearch: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** Gets called when the Ajax request(s) are sent. Either on initial requests or on every dynamic requests. */
       var onSendRequest: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /** Triggers when the Typeahead results layout is displayed. */
       var onShowLayout: js.UndefOr[
             js.Function2[/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Override the native onSubmit function by your own.
@@ -348,7 +346,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object Callback {
       
@@ -485,7 +483,7 @@ object RunningCoder {
         
         @scala.inline
         def setOnPopulateSource(
-          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[js.Array[_]], /* group */ js.UndefOr[js.Any], /* path */ js.UndefOr[js.Any]) => js.Array[_]
+          value: (/* node */ js.UndefOr[JQuery], /* data */ js.UndefOr[js.Array[js.Any]], /* group */ js.UndefOr[js.Any], /* path */ js.UndefOr[js.Any]) => js.Array[js.Any]
         ): Self = StObject.set(x, "onPopulateSource", js.Any.fromFunction4(value))
         
         @scala.inline
@@ -541,16 +539,15 @@ object RunningCoder {
     
     type CssObject = StringDictionary[String]
     
-    @js.native
     trait DropdownFilterItem extends StObject {
       
-      var all: String = js.native
+      var all: String
       
-      var key: String = js.native
+      var key: String
       
-      var template: String | (js.Function1[/* item */ js.Any, String]) = js.native
+      var template: String | (js.Function1[/* item */ js.Any, String])
       
-      var value: String = js.native
+      var value: String
     }
     object DropdownFilterItem {
       
@@ -585,12 +582,11 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait DynamicFilterItem extends StObject {
       
-      var key: String = js.native
+      var key: String
       
-      var selector: String = js.native
+      var selector: String
     }
     object DynamicFilterItem {
       
@@ -611,12 +607,11 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait FromToPair extends StObject {
       
-      var from: String = js.native
+      var from: String
       
-      var to: String = js.native
+      var to: String
     }
     object FromToPair {
       
@@ -637,12 +632,11 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait GroupSetting extends StObject {
       
-      var key: String = js.native
+      var key: String
       
-      var template: String | (js.Function1[/* item */ js.Any, String]) = js.native
+      var template: String | (js.Function1[/* item */ js.Any, String])
     }
     object GroupSetting {
       
@@ -666,28 +660,27 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait MultiSelectSettings extends StObject {
       
-      var callback: js.UndefOr[MultiSelectSettingsCallback] = js.native
+      var callback: js.UndefOr[MultiSelectSettingsCallback] = js.undefined
       
       /** If true, the last label will be deleted if the query is empty and backspace is pressed */
-      var cancelOnBackspace: js.UndefOr[Boolean] = js.native
+      var cancelOnBackspace: js.UndefOr[Boolean] = js.undefined
       
       /** Default items when Typeahead is loade */
-      var data: js.UndefOr[js.Array[_] | js.Function0[_]] = js.native
+      var data: js.UndefOr[js.Array[js.Any] | js.Function0[js.Any]] = js.undefined
       
       /** Href link on the multiselect item */
-      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.native
+      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.undefined
       
       /** Optional limit of maximum items to select */
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
       /** Template when the limit is reached */
-      var limitTemplate: js.UndefOr[String | (js.Function1[/* query */ js.UndefOr[String], String])] = js.native
+      var limitTemplate: js.UndefOr[String | (js.Function1[/* query */ js.UndefOr[String], String])] = js.undefined
       
       /** Unique item identifier to remove an item from the result list when selected (use any of the item key), by default a JSON of the item will be used */
-      var matchOn: js.UndefOr[String | js.Array[_]] = js.native
+      var matchOn: js.UndefOr[String | js.Array[js.Any]] = js.undefined
     }
     object MultiSelectSettings {
       
@@ -713,10 +706,10 @@ object RunningCoder {
         def setCancelOnBackspaceUndefined: Self = StObject.set(x, "cancelOnBackspace", js.undefined)
         
         @scala.inline
-        def setData(value: js.Array[_] | js.Function0[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        def setData(value: js.Array[js.Any] | js.Function0[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDataFunction0(value: () => _): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+        def setDataFunction0(value: () => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
         
         @scala.inline
         def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -749,7 +742,7 @@ object RunningCoder {
         def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
         @scala.inline
-        def setMatchOn(value: String | js.Array[_]): Self = StObject.set(x, "matchOn", value.asInstanceOf[js.Any])
+        def setMatchOn(value: String | js.Array[js.Any]): Self = StObject.set(x, "matchOn", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMatchOnUndefined: Self = StObject.set(x, "matchOn", js.undefined)
@@ -759,7 +752,6 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait MultiSelectSettingsCallback extends StObject {
       
       /** Triggered when a multiselect item is canceled */
@@ -770,7 +762,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /** Triggered when a multiselect item is clicked */
       var onClick: js.UndefOr[
@@ -780,7 +772,7 @@ object RunningCoder {
               /* event */ js.UndefOr[JQueryEventObject], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
     }
     object MultiSelectSettingsCallback {
       
@@ -811,7 +803,6 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
@@ -821,27 +812,27 @@ object RunningCoder {
         *
         * @default false
         */
-      var accent: js.UndefOr[Boolean | FromToPair] = js.native
+      var accent: js.UndefOr[Boolean | FromToPair] = js.undefined
       
       /**
         * If set to `true`, html will be added to add a backdrop under the search input and results.
         * It is possible to override the css options by passing an object to this option.
         */
-      var backdrop: js.UndefOr[Boolean | CssObject] = js.native
+      var backdrop: js.UndefOr[Boolean | CssObject] = js.undefined
       
       /**
         * If set to `true`, as soon as the Typeahead input is focused, the `backdrop` option will be displayed regardless.
         */
-      var backdropOnFocus: js.UndefOr[`true`] = js.native
+      var backdropOnFocus: js.UndefOr[`true`] = js.undefined
       
       /** Blur Typeahead when Tab key is pressed, if false Tab will go though search results */
-      var blurOnTab: js.UndefOr[Boolean] = js.native
+      var blurOnTab: js.UndefOr[Boolean] = js.undefined
       
       /**
         * * If set to `true` or `localStorage`, the source data will be stored in `localStorage`.
         * * If set to `sessionStorage`, the source data will be stored in `sessionStorage`.
         */
-      var cache: js.UndefOr[Boolean | localStorage | sessionStorage] = js.native
+      var cache: js.UndefOr[Boolean | localStorage | sessionStorage] = js.undefined
       
       /**
         * The callbacks are used to customize and add functionality to your Typeahead instance. You will find plenty of examples in the Demo section.
@@ -850,19 +841,19 @@ object RunningCoder {
         * * String: Function name (can be namespaced) located on the window scope without any parameters.
         * * Array: First element is the function name accessible from the window scope, second element is an array containing the parameters.
         */
-      var callback: js.UndefOr[Callback] = js.native
+      var callback: js.UndefOr[Callback] = js.undefined
       
       /**
         * This option provides a small `"x"` on the right side of the input to clear the text,
         * similar to some browser's default behavior with `input[type="search"]`.
         */
-      var cancelButton: js.UndefOr[Boolean] = js.native
+      var cancelButton: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Enabling this option will compress the data inside Localstorage.
         * * Setting `compression: true` requires `cache: true` option to be enabled.
         */
-      var compression: js.UndefOr[Boolean] = js.native
+      var compression: js.UndefOr[Boolean] = js.undefined
       
       /**
         * By default, search text matching is reserved to `display` keys. A searched text can't match multiple keys.
@@ -876,10 +867,10 @@ object RunningCoder {
         * It is also possible to set an Array of display keys instead of the complete template. Try it on
         * [Hockey_v1](http://www.runningcoder.org/jquerytypeahead/demo/#form-hockey_v1)
         */
-      var correlativeTemplate: js.UndefOr[Boolean | js.Array[_]] = js.native
+      var correlativeTemplate: js.UndefOr[Boolean | js.Array[js.Any]] = js.undefined
       
       /** Display debug information (RECOMMENDED for dev environment) */
-      var debug: js.UndefOr[Boolean] = js.native
+      var debug: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If `dynamic: true`, the delay (in milliseconds) will add a timer to prevent from sending a request on every key typed.
@@ -887,13 +878,13 @@ object RunningCoder {
         *
         * @default 300
         */
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
       /**
         * The key that will be searched for typeahead matching results inside source objects.
         * It is possible to search through multiple keys by simply adding them inside the configuration array.
         */
-      var display: js.UndefOr[js.Array[String]] = js.native
+      var display: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * If a string a specified, a dropdown filter will be created between the search input and the search submit button using the `source.group` as indexes.
@@ -902,7 +893,7 @@ object RunningCoder {
         * If an array of objects is set, the dropdownFilter will be built based on it. It is then possible to create filters based on item matching key:value. -
         * [Demo](http://www.runningcoder.org/jquerytypeahead/demo/#form-hockey_v1)
         */
-      var dropdownFilter: js.UndefOr[Boolean | string | js.Array[DropdownFilterItem]] = js.native
+      var dropdownFilter: js.UndefOr[Boolean | string | js.Array[DropdownFilterItem]] = js.undefined
       
       /**
         * By default, the typeahead will only load once the source data.
@@ -912,7 +903,7 @@ object RunningCoder {
         *
         * @default false
         */
-      var dynamic: js.UndefOr[Boolean] = js.native
+      var dynamic: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If filters objects are defined, the Typeahead source data will be filtered based on the `"selected"` / `"checked"` checkboxes,
@@ -925,27 +916,27 @@ object RunningCoder {
         *
         * Ex `dynamicFilter: [{ selector: "#assassin", key: "|tags.Assassin" }],`
         */
-      var dynamicFilter: js.UndefOr[`false` | js.Array[DynamicFilterItem]] = js.native
+      var dynamicFilter: js.UndefOr[`false` | js.Array[DynamicFilterItem]] = js.undefined
       
       /**
         * In case there are no results to be displayed, a row will be displayed containing this template.
         * It is possible to display the query using `{{query}}` string.
         */
-      var emptyTemplate: js.UndefOr[String | (js.Function1[/* query */ js.UndefOr[String], String | JQuery])] = js.native
+      var emptyTemplate: js.UndefOr[String | (js.Function1[/* query */ js.UndefOr[String], String | JQuery])] = js.undefined
       
       /**
         * If set to function, every element will be filtered using this custom rule AFTER the regular Typeahead filters have been applied.
         */
       var filter: js.UndefOr[
             Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
-          ] = js.native
+          ] = js.undefined
       
       /**
         * If enabled, the source data will be generated (doing Ajax request and preparing to data to be searched)
         * on page load instead of waiting for the input to be focused.
         * * This option does not work well with `dynamic: true` unless some other configuration is adjusted.
         */
-      var generateOnLoad: js.UndefOr[Boolean] = js.native
+      var generateOnLoad: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If set to `true`, the results will grouped by the group name specified inside `source`.
@@ -957,7 +948,7 @@ object RunningCoder {
         *
         * @default false
         */
-      var group: js.UndefOr[Boolean | String | GroupSetting] = js.native
+      var group: js.UndefOr[Boolean | String | GroupSetting] = js.undefined
       
       /**
         * By default, the groups will be output in the same order as they are defined in `source`.
@@ -971,12 +962,12 @@ object RunningCoder {
               /* result */ js.UndefOr[js.Any], 
               /* resultCount */ js.UndefOr[Double], 
               /* resultCountPerGroup */ js.UndefOr[Double], 
-              js.Array[_]
+              js.Array[js.Any]
             ])
-          ] = js.native
+          ] = js.undefined
       
       /** Set a custom template for the groups */
-      var groupTemplate: js.UndefOr[Null] = js.native
+      var groupTemplate: js.UndefOr[Null] = js.undefined
       
       /**
         * The search result(s) will receive the <strong> HTML tag around the matched query.
@@ -987,7 +978,7 @@ object RunningCoder {
         *
         * @default true
         */
-      var highlight: js.UndefOr[any | Boolean] = js.native
+      var highlight: js.UndefOr[any | Boolean] = js.undefined
       
       /**
         * A suggestion text will appear if there is an item inside the result list that starts by the user query.
@@ -995,27 +986,27 @@ object RunningCoder {
         *
         * @default false
         */
-      var hint: js.UndefOr[Boolean | CssObject] = js.native
+      var hint: js.UndefOr[Boolean | CssObject] = js.undefined
       
       /**
         * If a string is defined, every result item will receive the string as href attribute replacing any `{{itemKey}}` by the `item's value`.
         * It is possible to apply an extra operation of `"slugify"` on the value `{{url|slugify}}`. - [Demo](http://www.runningcoder.org/jquerytypeahead/demo/#form-beer_v1)
         */
-      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.native
+      var href: js.UndefOr[String | (js.Function1[/* item */ js.UndefOr[js.Any], String])] = js.undefined
       
       /**
         * The jQuery input selector is only required if the Typeahead was initialized without a jQuery object.
         * In that case, if no input is found, the Typeahead is dropped.
         */
-      var input: js.UndefOr[String] = js.native
+      var input: js.UndefOr[String] = js.undefined
       
       /** Display a loading animation when typeahead is doing request / searching for results */
-      var loadingAnimation: js.UndefOr[`true`] = js.native
+      var loadingAnimation: js.UndefOr[`true`] = js.undefined
       
       /** If set to function, every element will be filtered using this custom rule AFTER the regular Typeahead filters have been applied. */
       var matcher: js.UndefOr[
             js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The maximum number of search results that will appear inside the list. Set 0 to display ALL search results.
@@ -1023,17 +1014,17 @@ object RunningCoder {
         *
         * @default 8
         */
-      var maxItem: js.UndefOr[`false` | Double] = js.native
+      var maxItem: js.UndefOr[`false` | Double] = js.undefined
       
       /** Set a maximum results per group if `group: true` configuration is enabled */
-      var maxItemPerGroup: js.UndefOr[Double] = js.native
+      var maxItemPerGroup: js.UndefOr[Double] = js.undefined
       
       /**
         * The maximum number of characters typed inside the input to perform a search.
         *
         * @default false
         */
-      var maxLength: js.UndefOr[`false` | Double] = js.native
+      var maxLength: js.UndefOr[`false` | Double] = js.undefined
       
       /**
         * The number of characters typed inside the search input before searching for results.
@@ -1041,16 +1032,16 @@ object RunningCoder {
         *
         * @default 2
         */
-      var minLength: js.UndefOr[Double] = js.native
+      var minLength: js.UndefOr[Double] = js.undefined
       
       /** `multiselect` configuration */
-      var multiselect: js.UndefOr[MultiSelectSettings] = js.native
+      var multiselect: js.UndefOr[MultiSelectSettings] = js.undefined
       
       /**
         * If enabled, an item will HAVE TO be selected in order to submit the form.
         * Use this option if you want to restrict searching to your data set only.
         */
-      var mustSelectItem: js.UndefOr[Boolean] = js.native
+      var mustSelectItem: js.UndefOr[Boolean] = js.undefined
       
       /**
         * `false` The position of the matched query can be anywhere inside the result string
@@ -1059,28 +1050,28 @@ object RunningCoder {
         *
         * @default false
         */
-      var offset: js.UndefOr[Boolean] = js.native
+      var offset: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Takes the default order in which the data was given.
         * If `"asc"` or `"desc"` is set, they results will re-order based on display key.
         */
-      var order: js.UndefOr[asc | desc] = js.native
+      var order: js.UndefOr[asc | desc] = js.undefined
       
       /**
         * If a jQuery string selector or jQuery object is specified, the typeahead results will appear in that container instead of the default one.
         * If the option is set to `false`, the HTML result list will not be built.
         * Use this option for filtering "already on page" HTML list elements with show / hide.
         */
-      var resultContainer: js.UndefOr[string | `false` | JQuery] = js.native
+      var resultContainer: js.UndefOr[string | `false` | JQuery] = js.undefined
       
       /**
         * If enabled, the typeahead will display results (if any) on input focus. You can combine this option with the input
         * attribute `"autofocus"` to display results when the page is loaded.
         */
-      var searchOnFocus: js.UndefOr[Boolean] = js.native
+      var searchOnFocus: js.UndefOr[Boolean] = js.undefined
       
-      var selector: js.UndefOr[Selector] = js.native
+      var selector: js.UndefOr[Selector] = js.undefined
       
       /**
         * The source option corresponds to the data set(s) that Typeahead will look through to find matches for the user query string.
@@ -1088,7 +1079,7 @@ object RunningCoder {
         * It is possible to send an async request inside the data function using `$.Deferred`
         * `source.group` configuration:
         */
-      var source: js.UndefOr[Source | js.Array[Source] | SourceTable] = js.native
+      var source: js.UndefOr[Source | js.Array[Source] | SourceTable] = js.undefined
       
       /**
         * The template is a HTML string containing keys that will replaced by match results object keys.
@@ -1101,16 +1092,16 @@ object RunningCoder {
         */
       var template: js.UndefOr[
             String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
-          ] = js.native
+          ] = js.undefined
       
       /**
         * When an item is selected / clicked, by default the `"Matched key"` will go inside the input.
         * By defining a `templateValue`, the text that will result in the input can be customized.
         */
-      var templateValue: js.UndefOr[String] = js.native
+      var templateValue: js.UndefOr[String] = js.undefined
       
       /** This is a `cache` configuration, it sets the storage time to live in milliseconds. */
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -1172,7 +1163,7 @@ object RunningCoder {
         def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
         
         @scala.inline
-        def setCorrelativeTemplate(value: Boolean | js.Array[_]): Self = StObject.set(x, "correlativeTemplate", value.asInstanceOf[js.Any])
+        def setCorrelativeTemplate(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "correlativeTemplate", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCorrelativeTemplateUndefined: Self = StObject.set(x, "correlativeTemplate", js.undefined)
@@ -1262,13 +1253,13 @@ object RunningCoder {
                   /* result */ js.UndefOr[js.Any], 
                   /* resultCount */ js.UndefOr[Double], 
                   /* resultCountPerGroup */ js.UndefOr[Double], 
-                  js.Array[_]
+                  js.Array[js.Any]
                 ])
         ): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setGroupOrderFunction5(
-          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any], /* resultCount */ js.UndefOr[Double], /* resultCountPerGroup */ js.UndefOr[Double]) => js.Array[_]
+          value: (/* node */ js.UndefOr[JQuery], /* query */ js.UndefOr[String], /* result */ js.UndefOr[js.Any], /* resultCount */ js.UndefOr[Double], /* resultCountPerGroup */ js.UndefOr[Double]) => js.Array[js.Any]
         ): Self = StObject.set(x, "groupOrder", js.Any.fromFunction5(value))
         
         @scala.inline
@@ -1419,44 +1410,43 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait Selector extends StObject {
       
-      var backdrop: js.UndefOr[String] = js.native
+      var backdrop: js.UndefOr[String] = js.undefined
       
-      var button: js.UndefOr[String] = js.native
+      var button: js.UndefOr[String] = js.undefined
       
-      var cancelButton: js.UndefOr[String] = js.native
+      var cancelButton: js.UndefOr[String] = js.undefined
       
-      var container: js.UndefOr[String] = js.native
+      var container: js.UndefOr[String] = js.undefined
       
-      var display: js.UndefOr[String] = js.native
+      var display: js.UndefOr[String] = js.undefined
       
-      var dropdown: js.UndefOr[String] = js.native
+      var dropdown: js.UndefOr[String] = js.undefined
       
-      var dropdownItem: js.UndefOr[String] = js.native
+      var dropdownItem: js.UndefOr[String] = js.undefined
       
-      var empty: js.UndefOr[String] = js.native
+      var empty: js.UndefOr[String] = js.undefined
       
-      var filter: js.UndefOr[String] = js.native
+      var filter: js.UndefOr[String] = js.undefined
       
-      var filterButton: js.UndefOr[String] = js.native
+      var filterButton: js.UndefOr[String] = js.undefined
       
-      var group: js.UndefOr[String] = js.native
+      var group: js.UndefOr[String] = js.undefined
       
-      var hint: js.UndefOr[String] = js.native
+      var hint: js.UndefOr[String] = js.undefined
       
-      var item: js.UndefOr[String] = js.native
+      var item: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var labelContainer: js.UndefOr[String] = js.native
+      var labelContainer: js.UndefOr[String] = js.undefined
       
-      var list: js.UndefOr[String] = js.native
+      var list: js.UndefOr[String] = js.undefined
       
-      var query: js.UndefOr[String] = js.native
+      var query: js.UndefOr[String] = js.undefined
       
-      var result: js.UndefOr[String] = js.native
+      var result: js.UndefOr[String] = js.undefined
     }
     object Selector {
       
@@ -1579,50 +1569,49 @@ object RunningCoder {
       }
     }
     
-    @js.native
     trait Source extends StObject {
       
       /** En extended version of `JQuery Ajax` */
-      var ajax: js.UndefOr[AJaxSettings | (js.Function1[/* query */ js.UndefOr[String], AJaxSettings])] = js.native
+      var ajax: js.UndefOr[AJaxSettings | (js.Function1[/* query */ js.UndefOr[String], AJaxSettings])] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var cache: js.UndefOr[Boolean | localStorage | sessionStorage] = js.native
+      var cache: js.UndefOr[Boolean | localStorage | sessionStorage] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var compression: js.UndefOr[Boolean] = js.native
+      var compression: js.UndefOr[Boolean] = js.undefined
       
       /**  Array or function that returns an Array. The items in your array can either be strings or objects */
-      var data: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.native
+      var data: js.UndefOr[js.Array[js.Any] | js.Function0[js.Array[js.Any]]] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var display: js.UndefOr[String | js.Array[String]] = js.native
+      var display: js.UndefOr[String | js.Array[String]] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var dynamic: js.UndefOr[Boolean] = js.native
+      var dynamic: js.UndefOr[Boolean] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
       var filter: js.UndefOr[
             Boolean | (js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean])
-          ] = js.native
+          ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
       var matcher: js.UndefOr[
             js.Function2[/* item */ js.UndefOr[js.Any], /* displayKey */ js.UndefOr[String], Boolean]
-          ] = js.native
+          ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var maxLength: js.UndefOr[`false` | Double] = js.native
+      var maxLength: js.UndefOr[`false` | Double] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var minLength: js.UndefOr[Double] = js.native
+      var minLength: js.UndefOr[Double] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
       var template: js.UndefOr[
             String | (js.Function2[/* query */ js.UndefOr[String], /* item */ js.UndefOr[js.Any], String])
-          ] = js.native
+          ] = js.undefined
       
       /** Overrides the default configuration for the specified group. */
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
     }
     object Source {
       
@@ -1657,10 +1646,10 @@ object RunningCoder {
         def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
         
         @scala.inline
-        def setData(value: js.Array[_] | js.Function0[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        def setData(value: js.Array[js.Any] | js.Function0[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setDataFunction0(value: () => js.Array[_]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+        def setDataFunction0(value: () => js.Array[js.Any]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
         
         @scala.inline
         def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

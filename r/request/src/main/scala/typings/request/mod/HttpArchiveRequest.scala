@@ -3,19 +3,17 @@ package typings.request.mod
 import typings.request.anon.MimeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpArchiveRequest extends StObject {
   
-  var headers: js.UndefOr[js.Array[NameValuePair]] = js.native
+  var headers: js.UndefOr[js.Array[NameValuePair]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var postData: js.UndefOr[MimeType] = js.native
+  var postData: js.UndefOr[MimeType] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object HttpArchiveRequest {
   

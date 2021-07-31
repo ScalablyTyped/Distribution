@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * see:
   * https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   */
-@js.native
 trait SchemaNodeTaint extends StObject {
   
   /**
     * Effect for taint.
     */
-  var effect: js.UndefOr[String] = js.native
+  var effect: js.UndefOr[String] = js.undefined
   
   /**
     * Key for taint.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Value for taint.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaNodeTaint {
   

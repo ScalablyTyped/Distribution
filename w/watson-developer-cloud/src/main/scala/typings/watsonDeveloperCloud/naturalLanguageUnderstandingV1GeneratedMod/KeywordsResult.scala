@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The important keywords in the content, organized by relevance. */
-@js.native
 trait KeywordsResult extends StObject {
   
   /** Number of times the keyword appears in the analyzed text. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** Emotion analysis results for the keyword, enabled with the `emotion` option. */
-  var emotion: js.UndefOr[EmotionScores] = js.native
+  var emotion: js.UndefOr[EmotionScores] = js.undefined
   
   /** Relevance score from 0 to 1. Higher values indicate greater relevance. */
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
   /** Sentiment analysis results for the keyword, enabled with the `sentiment` option. */
-  var sentiment: js.UndefOr[FeatureSentimentResults] = js.native
+  var sentiment: js.UndefOr[FeatureSentimentResults] = js.undefined
   
   /** The keyword text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object KeywordsResult {
   

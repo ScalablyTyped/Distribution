@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyInstanceMetadataOptionsResult extends StObject {
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata options for the instance.
     */
-  var InstanceMetadataOptions: js.UndefOr[InstanceMetadataOptionsResponse] = js.native
+  var InstanceMetadataOptions: js.UndefOr[InstanceMetadataOptionsResponse] = js.undefined
 }
 object ModifyInstanceMetadataOptionsResult {
   

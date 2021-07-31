@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspaceDirectoriesRequest extends StObject {
   
   /**
     * The identifiers of the directories. If the value is null, all directories are retrieved.
     */
-  var DirectoryIds: js.UndefOr[DirectoryIdList] = js.native
+  var DirectoryIds: js.UndefOr[DirectoryIdList] = js.undefined
   
   /**
     * The maximum number of directories to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.undefined
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeWorkspaceDirectoriesRequest {
   

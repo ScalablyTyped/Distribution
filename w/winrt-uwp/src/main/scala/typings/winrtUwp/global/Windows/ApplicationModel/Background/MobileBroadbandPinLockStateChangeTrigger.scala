@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that indicates when the SIM PIN lock state has changed. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Constructs a MobileBroadbandPinLockStateChangeTrigger object. */
 class MobileBroadbandPinLockStateChangeTrigger ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger

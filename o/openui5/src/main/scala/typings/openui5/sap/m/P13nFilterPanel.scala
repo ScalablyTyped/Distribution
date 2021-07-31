@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nFilterPanel extends P13nPanel {
+trait P13nFilterPanel
+  extends StObject
+     with P13nPanel {
   
   /**
     * Adds some filterItem to the aggregation <code>filterItems</code>.
@@ -160,7 +161,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @returns array of operations [<code>sap.m.P13nConditionOperation.BT</code>,        
     * <code>sap.m.P13nConditionOperation.EQ</code>]
     */
-  def getExcludeOperations(the: String): js.Array[_] = js.native
+  def getExcludeOperations(the: String): js.Array[js.Any] = js.native
   
   /**
     * Gets content of aggregation <code>filterItems</code>.Defines filter items.
@@ -259,7 +260,7 @@ trait P13nFilterPanel extends P13nPanel {
     * @param aConditions the complete list of conditions
     * @returns this for chaining
     */
-  def setConditions(aConditions: js.Array[_]): P13nFilterPanel = js.native
+  def setConditions(aConditions: js.Array[js.Any]): P13nFilterPanel = js.native
   
   /**
     * Sets a new value for property <code>containerQuery</code>.Defines if the <code>mediaQuery</code> or
@@ -280,7 +281,7 @@ trait P13nFilterPanel extends P13nPanel {
     * <code>sap.m.P13nConditionOperation.EQ</code>]
     * @param the type for which the operations are defined
     */
-  def setExcludeOperations(array: js.Array[_], the: String): Unit = js.native
+  def setExcludeOperations(array: js.Array[js.Any], the: String): Unit = js.native
   
   /**
     * Setter for the supported Include operations array.
@@ -289,7 +290,7 @@ trait P13nFilterPanel extends P13nPanel {
     * <code>sap.m.P13nConditionOperation.EQ</code>]
     * @param the type for which the operations are defined
     */
-  def setIncludeOperations(array: js.Array[_], the: String): Unit = js.native
+  def setIncludeOperations(array: js.Array[js.Any], the: String): Unit = js.native
   
   /**
     * Sets a new value for property <code>layoutMode</code>.Can be used to control the layout behavior.

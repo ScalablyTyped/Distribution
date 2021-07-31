@@ -4,17 +4,15 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableSticky extends StObject {
   
-  var getContainer: js.UndefOr[js.Function0[Window | HTMLElement]] = js.native
+  var getContainer: js.UndefOr[js.Function0[Window | HTMLElement]] = js.undefined
   
-  var offsetHeader: js.UndefOr[Double] = js.native
+  var offsetHeader: js.UndefOr[Double] = js.undefined
   
-  var offsetScroll: js.UndefOr[Double] = js.native
+  var offsetScroll: js.UndefOr[Double] = js.undefined
 }
 object TableSticky {
   

@@ -3,45 +3,43 @@ package typings.ethereumProtocol.mod
 import typings.bignumberJs.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractBlock extends StObject {
   
-  var difficulty: default = js.native
+  var difficulty: default
   
-  var extraData: String = js.native
+  var extraData: String
   
-  var gasLimit: Double = js.native
+  var gasLimit: Double
   
-  var gasUsed: Double = js.native
+  var gasUsed: Double
   
-  var hash: String | Null = js.native
+  var hash: String | Null
   
-  var logsBloom: String | Null = js.native
+  var logsBloom: String | Null
   
-  var miner: String = js.native
+  var miner: String
   
-  var nonce: String | Null = js.native
+  var nonce: String | Null
   
-  var number: Double | Null = js.native
+  var number: Double | Null
   
-  var parentHash: String = js.native
+  var parentHash: String
   
-  var sha3Uncles: String = js.native
+  var sha3Uncles: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var stateRoot: String = js.native
+  var stateRoot: String
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var totalDifficulty: default = js.native
+  var totalDifficulty: default
   
-  var transactionsRoot: String = js.native
+  var transactionsRoot: String
   
-  var uncles: js.Array[String] = js.native
+  var uncles: js.Array[String]
 }
 object AbstractBlock {
   
@@ -61,7 +59,7 @@ object AbstractBlock {
     transactionsRoot: String,
     uncles: js.Array[String]
   ): AbstractBlock = {
-    val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(difficulty = difficulty.asInstanceOf[js.Any], extraData = extraData.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], miner = miner.asInstanceOf[js.Any], parentHash = parentHash.asInstanceOf[js.Any], sha3Uncles = sha3Uncles.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], stateRoot = stateRoot.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], totalDifficulty = totalDifficulty.asInstanceOf[js.Any], transactionsRoot = transactionsRoot.asInstanceOf[js.Any], uncles = uncles.asInstanceOf[js.Any], hash = null, logsBloom = null, nonce = null, number = null)
     __obj.asInstanceOf[AbstractBlock]
   }
   

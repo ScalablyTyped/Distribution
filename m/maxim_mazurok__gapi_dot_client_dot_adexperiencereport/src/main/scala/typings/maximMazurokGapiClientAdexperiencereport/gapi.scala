@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientAdexperiencereport.anon.Accesstoken
 import typings.maximMazurokGapiClientAdexperiencereport.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,32 +13,31 @@ object gapi {
     
     object adexperiencereport {
       
-      @js.native
       trait PlatformSummary extends StObject {
         
         /** The site's Ad Experience Report status on this platform. */
-        var betterAdsStatus: js.UndefOr[String] = js.native
+        var betterAdsStatus: js.UndefOr[String] = js.undefined
         
         /** The time at which [enforcement](https://support.google.com/webtools/answer/7308033) against the site began or will begin on this platform. Not set when the filter_status is OFF. */
-        var enforcementTime: js.UndefOr[String] = js.native
+        var enforcementTime: js.UndefOr[String] = js.undefined
         
         /** The site's [enforcement status](https://support.google.com/webtools/answer/7308033) on this platform. */
-        var filterStatus: js.UndefOr[String] = js.native
+        var filterStatus: js.UndefOr[String] = js.undefined
         
         /** The time at which the site's status last changed on this platform. */
-        var lastChangeTime: js.UndefOr[String] = js.native
+        var lastChangeTime: js.UndefOr[String] = js.undefined
         
         /** The site's regions on this platform. No longer populated, because there is no longer any semantic difference between sites in different regions. */
-        var region: js.UndefOr[js.Array[String]] = js.native
+        var region: js.UndefOr[js.Array[String]] = js.undefined
         
         /**
           * A link to the full Ad Experience Report for the site on this platform.. Not set in ViolatingSitesResponse. Note that you must complete the [Search Console verification
           * process](https://support.google.com/webmasters/answer/9008080) for the site before you can access the full report.
           */
-        var reportUrl: js.UndefOr[String] = js.native
+        var reportUrl: js.UndefOr[String] = js.undefined
         
         /** Whether the site is currently under review on this platform. */
-        var underReview: js.UndefOr[Boolean] = js.native
+        var underReview: js.UndefOr[Boolean] = js.undefined
       }
       object PlatformSummary {
         
@@ -99,17 +97,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait SiteSummaryResponse extends StObject {
         
         /** The site's Ad Experience Report summary on desktop. */
-        var desktopSummary: js.UndefOr[PlatformSummary] = js.native
+        var desktopSummary: js.UndefOr[PlatformSummary] = js.undefined
         
         /** The site's Ad Experience Report summary on mobile. */
-        var mobileSummary: js.UndefOr[PlatformSummary] = js.native
+        var mobileSummary: js.UndefOr[PlatformSummary] = js.undefined
         
         /** The name of the reviewed site, e.g. `google.com`. */
-        var reviewedSite: js.UndefOr[String] = js.native
+        var reviewedSite: js.UndefOr[String] = js.undefined
       }
       object SiteSummaryResponse {
         
@@ -158,11 +155,10 @@ object gapi {
         def list(request: Alt): Request[ViolatingSitesResponse] = js.native
       }
       
-      @js.native
       trait ViolatingSitesResponse extends StObject {
         
         /** The list of violating sites. */
-        var violatingSites: js.UndefOr[js.Array[SiteSummaryResponse]] = js.native
+        var violatingSites: js.UndefOr[js.Array[SiteSummaryResponse]] = js.undefined
       }
       object ViolatingSitesResponse {
         

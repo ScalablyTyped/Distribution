@@ -4,7 +4,6 @@ import typings.grunt.anon.Custom
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object util {
@@ -12,36 +11,35 @@ object util {
   /**
     * {@link http://gruntjs.com/api/grunt.util#grunt.util.spawn}
     */
-  @js.native
   trait ISpawnOptions extends StObject {
     
     /**
       * An array of arguments to pass to the command.
       */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The command to execute. It should be in the system path.
       */
-    var cmd: js.UndefOr[String] = js.native
+    var cmd: js.UndefOr[String] = js.undefined
     
     /**
       * If this value is set and an error occurs, it will be used as the value
       * and null will be passed as the error value.
       */
-    var fallback: js.UndefOr[js.Any] = js.native
+    var fallback: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If specified, the same grunt bin that is currently running will be
       * spawned as the child command, instead of the "cmd" option.
       * Defaults to false.
       */
-    var grunt: js.UndefOr[Boolean] = js.native
+    var grunt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional options for the Node.js child_process spawn method.
       */
-    var opts: js.UndefOr[Custom] = js.native
+    var opts: js.UndefOr[Custom] = js.undefined
   }
   object ISpawnOptions {
     
@@ -95,14 +93,13 @@ object util {
     *       specified, or stderr if the exit code was non-zero and a fallback was
     *       not specified.
     */
-  @js.native
   trait ISpawnResult extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var stderr: String = js.native
+    var stderr: String
     
-    var stdout: String = js.native
+    var stdout: String
   }
   object ISpawnResult {
     
@@ -129,30 +126,29 @@ object util {
   /**
     * {@link https://github.com/snbartell/node-spawn}
     */
-  @js.native
   trait ISpawnedChild extends StObject {
     
     /**
       * Convenience function. Overrides options.restarts to -1.
       * Runs command indefinitely no matter the options passed into the constructor.
       */
-    def forever(): Unit = js.native
+    def forever(): Unit
     
     /**
       * Shut down the child and don't let it restart.
       */
-    def kill(): Unit = js.native
+    def kill(): Unit
     
     /**
       * Convenience function. Overrides options. restarts to 0.
       * Runs command exactly once no matter the options passed into the constructor.
       */
-    def once(): Unit = js.native
+    def once(): Unit
     
     /**
       * Start the cmd with the options provided.
       */
-    def start(): Unit = js.native
+    def start(): Unit
   }
   object ISpawnedChild {
     

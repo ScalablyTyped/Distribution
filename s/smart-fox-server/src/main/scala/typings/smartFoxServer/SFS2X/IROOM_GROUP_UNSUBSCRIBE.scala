@@ -2,13 +2,11 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IROOM_GROUP_UNSUBSCRIBE extends StObject {
   
-  var groupId: String = js.native
+  var groupId: String
 }
 object IROOM_GROUP_UNSUBSCRIBE {
   

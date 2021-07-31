@@ -4,13 +4,13 @@ import typings.giphyApi.anon.Count
 import typings.giphyApi.anon.Msg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiResponse extends BaseResponse {
+trait MultiResponse
+  extends StObject
+     with BaseResponse {
   
-  var data: js.Array[GIFObject] = js.native
+  var data: js.Array[GIFObject]
 }
 object MultiResponse {
   

@@ -3,15 +3,13 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITargetFileRequest extends StObject {
   
-  def getDeferral(): TargetFileRequestDeferral = js.native
+  def getDeferral(): TargetFileRequestDeferral
   
-  var targetFile: IStorageFile = js.native
+  var targetFile: IStorageFile
 }
 object ITargetFileRequest {
   

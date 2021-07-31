@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem")
@@ -47,9 +46,8 @@ object DropDownButtonItem {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem.create")
-  @js.native
-  def create(model: IModel): DropDownButtonItem = js.native
+  @scala.inline
+  def create(model: IModel): DropDownButtonItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DropDownButtonItem]
   
   /**
     * Creates and returns a new DropDownButtonItem instance in the SDK and on the server.
@@ -57,9 +55,8 @@ object DropDownButtonItem {
     * of the parent DropDownButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem.createIn")
-  @js.native
-  def createIn(container: DropDownButton): DropDownButtonItem = js.native
+  @scala.inline
+  def createIn(container: DropDownButton): DropDownButtonItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DropDownButtonItem]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DropDownButtonItem.structureTypeName")

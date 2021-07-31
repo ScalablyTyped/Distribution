@@ -2,17 +2,17 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXmlDocumentType extends IXmlNode {
+trait IXmlDocumentType
+  extends StObject
+     with IXmlNode {
   
-  var entities: XmlNamedNodeMap = js.native
+  var entities: XmlNamedNodeMap
   
-  var name: String = js.native
+  var name: String
   
-  var notations: XmlNamedNodeMap = js.native
+  var notations: XmlNamedNodeMap
 }
 object IXmlDocumentType {
   

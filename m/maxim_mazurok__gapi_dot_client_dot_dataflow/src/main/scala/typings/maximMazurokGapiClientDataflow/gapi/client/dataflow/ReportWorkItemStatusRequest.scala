@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportWorkItemStatusRequest extends StObject {
   
   /** The current timestamp at the worker. */
-  var currentWorkerTime: js.UndefOr[String] = js.native
+  var currentWorkerTime: js.UndefOr[String] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the WorkItem's job. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Untranslated bag-of-bytes WorkProgressUpdateRequest from UnifiedWorker. */
   var unifiedWorkerRequest: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The order is unimportant, except that the order of the WorkItemServiceState messages in the ReportWorkItemStatusResponse corresponds to the order of WorkItemStatus messages here. */
-  var workItemStatuses: js.UndefOr[js.Array[WorkItemStatus]] = js.native
+  var workItemStatuses: js.UndefOr[js.Array[WorkItemStatus]] = js.undefined
   
   /**
     * The ID of the worker reporting the WorkItem status. If this does not match the ID of the worker which the Dataflow service believes currently has the lease on the WorkItem, the
     * report will be dropped (with an error response).
     */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object ReportWorkItemStatusRequest {
   
@@ -58,7 +56,7 @@ object ReportWorkItemStatusRequest {
     def setUnifiedWorkerRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ReportWorkItemStatusRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline

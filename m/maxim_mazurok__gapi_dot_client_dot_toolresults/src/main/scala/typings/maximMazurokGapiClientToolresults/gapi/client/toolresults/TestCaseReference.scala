@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCaseReference extends StObject {
   
   /** The name of the class. */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** The name of the test case. Required. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The name of the test suite to which this test case belongs. */
-  var testSuiteName: js.UndefOr[String] = js.native
+  var testSuiteName: js.UndefOr[String] = js.undefined
 }
 object TestCaseReference {
   

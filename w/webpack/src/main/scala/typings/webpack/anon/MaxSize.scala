@@ -2,26 +2,24 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxSize extends StObject {
   
   /**
   		 * Sets the name delimiter for created chunks
   		 */
-  var automaticNameDelimiter: js.UndefOr[String] = js.native
+  var automaticNameDelimiter: js.UndefOr[String] = js.undefined
   
   /**
   		 * Maximal size hint for the created chunks
   		 */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
   		 * Minimal size for the created chunk
   		 */
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
 }
 object MaxSize {
   

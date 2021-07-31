@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IPixelateFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIPixelateFilter
-  extends Instantiable0[IPixelateFilter]
+  extends StObject
+     with Instantiable0[IPixelateFilter]
      with Instantiable1[/* options */ Blocksize, IPixelateFilter] {
   
   /**

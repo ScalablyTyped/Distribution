@@ -10,9 +10,9 @@ TypeScript typings for Game Services API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gameservices |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 48 |
+| # downloads        | 889 |
 | # stars            | 0 |
 
 ## Links

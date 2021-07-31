@@ -2,17 +2,15 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaDataDto extends StObject {
   
-  var isRune: Boolean = js.native
+  var isRune: Boolean
   
-  var tier: String = js.native
+  var tier: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MetaDataDto {
   

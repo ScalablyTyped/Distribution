@@ -2,61 +2,59 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resolver extends StObject {
   
   /**
     * The caching configuration for the resolver.
     */
-  var cachingConfig: js.UndefOr[CachingConfig] = js.native
+  var cachingConfig: js.UndefOr[CachingConfig] = js.undefined
   
   /**
     * The resolver data source name.
     */
-  var dataSourceName: js.UndefOr[ResourceName] = js.native
+  var dataSourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resolver field name.
     */
-  var fieldName: js.UndefOr[ResourceName] = js.native
+  var fieldName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
     */
-  var kind: js.UndefOr[ResolverKind] = js.native
+  var kind: js.UndefOr[ResolverKind] = js.undefined
   
   /**
     * The PipelineConfig.
     */
-  var pipelineConfig: js.UndefOr[PipelineConfig] = js.native
+  var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
   
   /**
     * The request mapping template.
     */
-  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The resolver ARN.
     */
-  var resolverArn: js.UndefOr[String] = js.native
+  var resolverArn: js.UndefOr[String] = js.undefined
   
   /**
     * The response mapping template.
     */
-  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The SyncConfig for a resolver attached to a versioned datasource.
     */
-  var syncConfig: js.UndefOr[SyncConfig] = js.native
+  var syncConfig: js.UndefOr[SyncConfig] = js.undefined
   
   /**
     * The resolver type name.
     */
-  var typeName: js.UndefOr[ResourceName] = js.native
+  var typeName: js.UndefOr[ResourceName] = js.undefined
 }
 object Resolver {
   

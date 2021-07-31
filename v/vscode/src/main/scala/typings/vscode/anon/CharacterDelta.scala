@@ -2,15 +2,13 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharacterDelta extends StObject {
   
-  var characterDelta: js.UndefOr[Double] = js.native
+  var characterDelta: js.UndefOr[Double] = js.undefined
   
-  var lineDelta: js.UndefOr[Double] = js.native
+  var lineDelta: js.UndefOr[Double] = js.undefined
 }
 object CharacterDelta {
   

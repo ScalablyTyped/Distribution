@@ -3,41 +3,39 @@ package typings.algoliaTransporter.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappedRequestOptions extends StObject {
   
   /**
     * If the request should be cached.
     */
-  val cacheable: js.UndefOr[Boolean] = js.native
+  val cacheable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The data to be transfered to the server.
     */
-  val data: js.UndefOr[Record[String, String]] = js.native
+  val data: js.UndefOr[Record[String, String]] = js.undefined
   
   /**
     * The headers of the request.
     */
-  val headers: Record[String, String] = js.native
+  val headers: Record[String, String]
   
   /**
     * The query parameters of the request.
     */
-  val queryParameters: Record[String, _] = js.native
+  val queryParameters: Record[String, js.Any]
   
   /**
     * The `read` or `write` timeout of the request.
     */
-  val timeout: js.UndefOr[Double] = js.native
+  val timeout: js.UndefOr[Double] = js.undefined
 }
 object MappedRequestOptions {
   
   @scala.inline
-  def apply(headers: Record[String, String], queryParameters: Record[String, _]): MappedRequestOptions = {
+  def apply(headers: Record[String, String], queryParameters: Record[String, js.Any]): MappedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], queryParameters = queryParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[MappedRequestOptions]
   }
@@ -61,7 +59,7 @@ object MappedRequestOptions {
     def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQueryParameters(value: Record[String, _]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+    def setQueryParameters(value: Record[String, js.Any]): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])

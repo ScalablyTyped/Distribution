@@ -2,83 +2,83 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISegmentedButton extends IContainer {
+trait ISegmentedButton
+  extends StObject
+     with IContainer {
   
   /** [Config Option] (Boolean) */
-  var allowDepress: js.UndefOr[Boolean] = js.native
+  var allowDepress: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowMultiple: js.UndefOr[Boolean] = js.native
+  var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowToggle: js.UndefOr[Boolean] = js.native
+  var allowToggle: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] We override initItems so we can check for the pressed config  */
-  var applyItems: js.UndefOr[js.Function0[Unit]] = js.native
+  var applyItems: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns the value of allowDepress
     * @returns Boolean
     */
-  var getAllowDepress: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowDepress: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of allowMultiple
     * @returns Boolean
     */
-  var getAllowMultiple: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowMultiple: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of allowToggle
     * @returns Boolean
     */
-  var getAllowToggle: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAllowToggle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of layout
     * @returns Object
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.native
+  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Gets the currently pressed button s */
-  var getPressed: js.UndefOr[js.Function0[Unit]] = js.native
+  var getPressed: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns the value of pressedButtons
     * @returns Array
     */
-  var getPressedButtons: js.UndefOr[js.Function0[Array]] = js.native
+  var getPressedButtons: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of pressedCls
     * @returns String
     */
-  var getPressedCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getPressedCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns true if a specified Ext Button is pressed
     * @param button Ext.Button The button to check if pressed.
     * @returns Boolean pressed
     */
-  var isPressed: js.UndefOr[js.Function1[/* button */ js.UndefOr[IButton], Boolean]] = js.native
+  var isPressed: js.UndefOr[js.Function1[/* button */ js.UndefOr[IButton], Boolean]] = js.undefined
   
   /** [Config Option] (Array) */
-  var pressedButtons: js.UndefOr[Array] = js.native
+  var pressedButtons: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (String) */
-  var pressedCls: js.UndefOr[java.lang.String] = js.native
+  var pressedCls: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the value of allowDepress
     * @param allowDepress Boolean The new value.
     */
-  var setAllowDepress: js.UndefOr[js.Function1[/* allowDepress */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowDepress: js.UndefOr[js.Function1[/* allowDepress */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of allowMultiple
     * @param allowMultiple Boolean The new value.
     */
-  var setAllowMultiple: js.UndefOr[js.Function1[/* allowMultiple */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowMultiple: js.UndefOr[js.Function1[/* allowMultiple */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of allowToggle
     * @param allowToggle Boolean The new value.
     */
-  var setAllowToggle: js.UndefOr[js.Function1[/* allowToggle */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAllowToggle: js.UndefOr[js.Function1[/* allowToggle */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Activates a button
     * @param button Number/String/Ext.Button The button to activate.
@@ -92,17 +92,17 @@ trait ISegmentedButton extends IContainer {
       /* suppressEvents */ js.UndefOr[Boolean], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of pressedButtons
     * @param pressedButtons Array The new value.
     */
-  var setPressedButtons: js.UndefOr[js.Function1[/* pressedButtons */ js.UndefOr[Array], Unit]] = js.native
+  var setPressedButtons: js.UndefOr[js.Function1[/* pressedButtons */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of pressedCls
     * @param pressedCls String The new value.
     */
-  var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
 }
 object ISegmentedButton {
   
@@ -158,7 +158,7 @@ object ISegmentedButton {
     def setGetAllowToggleUndefined: Self = StObject.set(x, "getAllowToggle", js.undefined)
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)

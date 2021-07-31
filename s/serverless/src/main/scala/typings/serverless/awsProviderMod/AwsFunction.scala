@@ -2,54 +2,52 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsFunction extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[Package] = js.native
+  var _package: js.UndefOr[Package] = js.undefined
   
-  var awsKmsKeyArn: js.UndefOr[String] = js.native
+  var awsKmsKeyArn: js.UndefOr[String] = js.undefined
   
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
-  var dependsOn: js.UndefOr[js.Array[String]] = js.native
+  var dependsOn: js.UndefOr[js.Array[String]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var destinations: js.UndefOr[Destinations] = js.native
+  var destinations: js.UndefOr[Destinations] = js.undefined
   
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
-  var events: js.UndefOr[js.Array[Event]] = js.native
+  var events: js.UndefOr[js.Array[Event]] = js.undefined
   
-  var handler: String = js.native
+  var handler: String
   
-  var layers: js.UndefOr[js.Array[String]] = js.native
+  var layers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var memorySize: js.UndefOr[Double | String] = js.native
+  var memorySize: js.UndefOr[Double | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onError: js.UndefOr[String] = js.native
+  var onError: js.UndefOr[String] = js.undefined
   
-  var provisionedConcurrency: js.UndefOr[Double | String] = js.native
+  var provisionedConcurrency: js.UndefOr[Double | String] = js.undefined
   
-  var reservedConcurrency: js.UndefOr[Double | String] = js.native
+  var reservedConcurrency: js.UndefOr[Double | String] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
-  var timeout: js.UndefOr[Double | String] = js.native
+  var timeout: js.UndefOr[Double | String] = js.undefined
   
-  var tracing: js.UndefOr[String] = js.native
+  var tracing: js.UndefOr[String] = js.undefined
   
-  var vpc: js.UndefOr[Vpc] = js.native
+  var vpc: js.UndefOr[Vpc] = js.undefined
 }
 object AwsFunction {
   

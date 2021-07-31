@@ -2,15 +2,13 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderRaw extends StObject {
   
-  var render: `760` = js.native
+  var render: `760`
   
-  var renderRaw: `761` = js.native
+  var renderRaw: `761`
 }
 object RenderRaw {
   

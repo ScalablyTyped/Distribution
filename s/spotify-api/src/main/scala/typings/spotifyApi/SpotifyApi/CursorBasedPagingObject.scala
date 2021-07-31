@@ -2,27 +2,25 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cursor Based Paging Object wrappers used for retrieving collections from the Spotify API.
   * [](https://developer.spotify.com/web-api/object-model/#cursor-based-paging-object)
   */
-@js.native
 trait CursorBasedPagingObject[T] extends StObject {
   
-  var cursors: CursorObject = js.native
+  var cursors: CursorObject
   
-  var href: String = js.native
+  var href: String
   
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
-  var limit: Double = js.native
+  var limit: Double
   
-  var next: String = js.native
+  var next: String
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object CursorBasedPagingObject {
   
@@ -33,7 +31,7 @@ object CursorBasedPagingObject {
   }
   
   @scala.inline
-  implicit class CursorBasedPagingObjectMutableBuilder[Self <: CursorBasedPagingObject[_], T] (val x: Self with CursorBasedPagingObject[T]) extends AnyVal {
+  implicit class CursorBasedPagingObjectMutableBuilder[Self <: CursorBasedPagingObject[?], T] (val x: Self & CursorBasedPagingObject[T]) extends AnyVal {
     
     @scala.inline
     def setCursors(value: CursorObject): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])

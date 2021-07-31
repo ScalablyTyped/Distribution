@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DecorationPropsChangedEvent extends StObject {
   
   /** Object the new parameters the decoration now has */
-  var newProperties: DecorationOptions = js.native
+  var newProperties: DecorationOptions
   
   /** Object the old parameters the decoration used to have. */
-  var oldProperties: DecorationOptions = js.native
+  var oldProperties: DecorationOptions
 }
 object DecorationPropsChangedEvent {
   

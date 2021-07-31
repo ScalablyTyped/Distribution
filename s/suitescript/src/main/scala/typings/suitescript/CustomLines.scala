@@ -2,17 +2,15 @@ package typings.suitescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLines extends StObject {
   
-  def addNewLine(): CustomLine = js.native
+  def addNewLine(): CustomLine
   
-  def getCount(): Double = js.native
+  def getCount(): Double
   
-  def getLine(index: Double): CustomLine = js.native
+  def getLine(index: Double): CustomLine
 }
 object CustomLines {
   

@@ -2,99 +2,97 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stat extends StObject {
   
-  var blocked: String = js.native
+  var blocked: String
   
-  var cguest_time: String = js.native
+  var cguest_time: String
   
-  var cmajflt: String = js.native
+  var cmajflt: String
   
-  var cminflt: String = js.native
+  var cminflt: String
   
-  var cnswap: String = js.native
+  var cnswap: String
   
-  var comm: String = js.native
+  var comm: String
   
-  var cstime: String = js.native
+  var cstime: String
   
-  var cutime: String = js.native
+  var cutime: String
   
-  var delayacct_blkio_ticks: String = js.native
+  var delayacct_blkio_ticks: String
   
-  var endcode: String = js.native
+  var endcode: String
   
-  var exit_signal: String = js.native
+  var exit_signal: String
   
-  var flags: String = js.native
+  var flags: String
   
-  var guest_time: String = js.native
+  var guest_time: String
   
-  var itrealvalue: String = js.native
+  var itrealvalue: String
   
-  var kstkeip: String = js.native
+  var kstkeip: String
   
-  var kstkesp: String = js.native
+  var kstkesp: String
   
-  var majflt: String = js.native
+  var majflt: String
   
-  var minflt: String = js.native
+  var minflt: String
   
-  var nice: String = js.native
+  var nice: String
   
-  var nswap: String = js.native
+  var nswap: String
   
-  var num_threads: String = js.native
+  var num_threads: String
   
-  var pgrp: String = js.native
+  var pgrp: String
   
-  var pid: String = js.native
+  var pid: String
   
-  var policy: String = js.native
+  var policy: String
   
-  var ppid: String = js.native
+  var ppid: String
   
-  var priority: String = js.native
+  var priority: String
   
-  var processor: String = js.native
+  var processor: String
   
-  var rss: String = js.native
+  var rss: String
   
-  var rsslim: String = js.native
+  var rsslim: String
   
-  var rt_priority: String = js.native
+  var rt_priority: String
   
-  var session: String = js.native
+  var session: String
   
-  var sigcatch: String = js.native
+  var sigcatch: String
   
-  var sigignore: String = js.native
+  var sigignore: String
   
-  var signal: String = js.native
+  var signal: String
   
-  var startcode: String = js.native
+  var startcode: String
   
-  var startstack: String = js.native
+  var startstack: String
   
-  var starttime: String = js.native
+  var starttime: String
   
-  var state: String = js.native
+  var state: String
   
-  var stime: String = js.native
+  var stime: String
   
-  var tpgid: String = js.native
+  var tpgid: String
   
-  var tty_nr: String = js.native
+  var tty_nr: String
   
-  var utime: String = js.native
+  var utime: String
   
-  var vsize: String = js.native
+  var vsize: String
   
-  var wchan: String = js.native
+  var wchan: String
 }
 object Stat {
   

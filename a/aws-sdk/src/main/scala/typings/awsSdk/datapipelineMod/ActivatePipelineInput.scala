@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivatePipelineInput extends StObject {
   
   /**
     * A list of parameter values to pass to the pipeline at activation.
     */
-  var parameterValues: js.UndefOr[ParameterValueList] = js.native
+  var parameterValues: js.UndefOr[ParameterValueList] = js.undefined
   
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
   
   /**
     * The date and time to resume the pipeline. By default, the pipeline resumes from the last completed execution.
     */
-  var startTimestamp: js.UndefOr[timestamp] = js.native
+  var startTimestamp: js.UndefOr[timestamp] = js.undefined
 }
 object ActivatePipelineInput {
   

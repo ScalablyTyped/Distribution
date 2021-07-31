@@ -5,14 +5,13 @@ import typings.react.mod.global.JSX.Element
 import typings.wordpressComponents.disabledMod.Disabled.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Disabled {
   
-  @JSImport("@wordpress/components", "Disabled")
-  @js.native
-  def apply(props: Props): Element = js.native
+  @scala.inline
+  def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   @JSImport("@wordpress/components", "Disabled")
   @js.native
   val ^ : js.Any = js.native

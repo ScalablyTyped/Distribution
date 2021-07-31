@@ -10,9 +10,9 @@ vfile utility to convert between positional (line and column-based) and offset (
 | ------------------ | :-------------: |
 | Full name          | vfile-location |
 | Keywords           | vfile, vfile-util, util, utility, virtual, file, location, point, position, offset |
-| # releases         | 5 |
-| # dependents       | 25 |
-| # downloads        | 116155598 |
+| # releases         | 7 |
+| # dependents       | 30 |
+| # downloads        | 164862439 |
 | # stars            | 0 |
 
 ## Links

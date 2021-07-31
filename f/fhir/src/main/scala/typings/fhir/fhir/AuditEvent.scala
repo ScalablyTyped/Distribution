@@ -2,85 +2,85 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Event record kept for security purposes
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait AuditEvent extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait AuditEvent
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'action'.
     */
-  var _action: js.UndefOr[Element] = js.native
+  var _action: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'outcome'.
     */
-  var _outcome: js.UndefOr[Element] = js.native
+  var _outcome: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'outcomeDesc'.
     */
-  var _outcomeDesc: js.UndefOr[Element] = js.native
+  var _outcomeDesc: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'recorded'.
     */
-  var _recorded: js.UndefOr[Element] = js.native
+  var _recorded: js.UndefOr[Element] = js.undefined
   
   /**
     * Type of action performed during the event
     */
-  var action: js.UndefOr[code] = js.native
+  var action: js.UndefOr[code] = js.undefined
   
   /**
     * Actor involved in the event
     */
-  var agent: js.Array[AuditEventAgent] = js.native
+  var agent: js.Array[AuditEventAgent]
   
   /**
     * Data or objects used
     */
-  var entity: js.UndefOr[js.Array[AuditEventEntity]] = js.native
+  var entity: js.UndefOr[js.Array[AuditEventEntity]] = js.undefined
   
   /**
     * Whether the event succeeded or failed
     */
-  var outcome: js.UndefOr[code] = js.native
+  var outcome: js.UndefOr[code] = js.undefined
   
   /**
     * Description of the event outcome
     */
-  var outcomeDesc: js.UndefOr[String] = js.native
+  var outcomeDesc: js.UndefOr[String] = js.undefined
   
   /**
     * The purposeOfUse of the event
     */
-  var purposeOfEvent: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var purposeOfEvent: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Time when the event occurred on source
     */
-  var recorded: instant = js.native
+  var recorded: instant
   
   /**
     * Audit Event Reporter
     */
-  var source: AuditEventSource = js.native
+  var source: AuditEventSource
   
   /**
     * More specific type/id for the event
     */
-  var subtype: js.UndefOr[js.Array[Coding]] = js.native
+  var subtype: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * Type/identifier of event
     */
-  var `type`: Coding = js.native
+  var `type`: Coding
 }
 object AuditEvent {
   

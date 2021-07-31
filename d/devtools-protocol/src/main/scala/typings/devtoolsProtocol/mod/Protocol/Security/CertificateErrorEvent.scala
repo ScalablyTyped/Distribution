@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateErrorEvent extends StObject {
   
   /**
     * The type of the error.
     */
-  var errorType: String = js.native
+  var errorType: String
   
   /**
     * The ID of the event.
     */
-  var eventId: integer = js.native
+  var eventId: integer
   
   /**
     * The url that was requested.
     */
-  var requestURL: String = js.native
+  var requestURL: String
 }
 object CertificateErrorEvent {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLicenseConfigurationRequest extends StObject {
   
   /**
     * New description of the license configuration.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the license configuration.
     */
-  var LicenseConfigurationArn: String = js.native
+  var LicenseConfigurationArn: String
   
   /**
     * New status of the license configuration.
     */
-  var LicenseConfigurationStatus: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseConfigurationStatus] = js.native
+  var LicenseConfigurationStatus: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseConfigurationStatus] = js.undefined
   
   /**
     * New number of licenses managed by the license configuration.
     */
-  var LicenseCount: js.UndefOr[BoxLong] = js.native
+  var LicenseCount: js.UndefOr[BoxLong] = js.undefined
   
   /**
     * New hard limit of the number of available licenses.
     */
-  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.native
+  var LicenseCountHardLimit: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
     * New license rule. The only rule that you can add after you create a license configuration is licenseAffinityToHost.
     */
-  var LicenseRules: js.UndefOr[StringList] = js.native
+  var LicenseRules: js.UndefOr[StringList] = js.undefined
   
   /**
     * New name of the license configuration.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * New product information.
     */
-  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.native
+  var ProductInformationList: js.UndefOr[typings.awsSdk.licensemanagerMod.ProductInformationList] = js.undefined
 }
 object UpdateLicenseConfigurationRequest {
   

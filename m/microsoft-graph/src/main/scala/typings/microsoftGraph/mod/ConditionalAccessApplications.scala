@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessApplications extends StObject {
   
   // The list of application IDs explicitly excluded from the policy.
-  var excludeApplications: js.UndefOr[js.Array[String]] = js.native
+  var excludeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set
     * to All.
     */
-  var includeApplications: js.UndefOr[js.Array[String]] = js.native
+  var includeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   // User actions to include. For example, urn:user:registersecurityinfo
-  var includeUserActions: js.UndefOr[js.Array[String]] = js.native
+  var includeUserActions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessApplications {
   

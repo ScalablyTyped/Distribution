@@ -2,81 +2,79 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WheelInfo extends StObject {
   
-  var axleLocal: Vec3 = js.native
+  var axleLocal: Vec3
   
-  var axleWorld: Vec3 = js.native
+  var axleWorld: Vec3
   
-  var brake: Double = js.native
+  var brake: Double
   
-  var chassisConnectionPointLocal: Vec3 = js.native
+  var chassisConnectionPointLocal: Vec3
   
-  var chassisConnectionPointWorld: Vec3 = js.native
+  var chassisConnectionPointWorld: Vec3
   
-  var clippedInvContactDotSuspension: Double = js.native
+  var clippedInvContactDotSuspension: Double
   
-  var customSlidingRotationalSpeed: Double = js.native
+  var customSlidingRotationalSpeed: Double
   
-  var dampingCompression: Double = js.native
+  var dampingCompression: Double
   
-  var dampingRelaxation: Double = js.native
+  var dampingRelaxation: Double
   
-  var deltaRotation: Double = js.native
+  var deltaRotation: Double
   
-  var directionLocal: Vec3 = js.native
+  var directionLocal: Vec3
   
-  var directionWorld: Vec3 = js.native
+  var directionWorld: Vec3
   
-  var engineForce: Double = js.native
+  var engineForce: Double
   
-  var forwardImpulse: Double = js.native
+  var forwardImpulse: Double
   
-  var frictionSlip: Double = js.native
+  var frictionSlip: Double
   
-  var isFrontWheel: Boolean = js.native
+  var isFrontWheel: Boolean
   
-  var isInContact: Boolean = js.native
+  var isInContact: Boolean
   
-  var maxSuspensionForce: Double = js.native
+  var maxSuspensionForce: Double
   
-  var maxSuspensionTravbel: Double = js.native
+  var maxSuspensionTravbel: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var raycastResult: RaycastResult = js.native
+  var raycastResult: RaycastResult
   
-  var rollInfluence: Double = js.native
+  var rollInfluence: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var sideImpulse: Double = js.native
+  var sideImpulse: Double
   
-  var skidInfo: Double = js.native
+  var skidInfo: Double
   
-  var sliding: Boolean = js.native
+  var sliding: Boolean
   
-  var steering: Double = js.native
+  var steering: Double
   
-  var suspensionForce: Double = js.native
+  var suspensionForce: Double
   
-  var suspensionLength: Double = js.native
+  var suspensionLength: Double
   
-  var suspensionMaxLength: Double = js.native
+  var suspensionMaxLength: Double
   
-  var suspensionRelativeVelocity: Double = js.native
+  var suspensionRelativeVelocity: Double
   
-  var suspensionRestLength: Double = js.native
+  var suspensionRestLength: Double
   
-  var suspensionStiffness: Double = js.native
+  var suspensionStiffness: Double
   
-  var useCustomSlidingRotationalSpeed: Boolean = js.native
+  var useCustomSlidingRotationalSpeed: Boolean
   
-  var worldTransform: Transform = js.native
+  var worldTransform: Transform
 }
 object WheelInfo {
   

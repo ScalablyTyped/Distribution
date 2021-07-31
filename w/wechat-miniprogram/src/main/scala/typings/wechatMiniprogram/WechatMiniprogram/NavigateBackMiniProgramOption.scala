@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateBackMiniProgramOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[NavigateBackMiniProgramCompleteCallback] = js.native
+  var complete: js.UndefOr[NavigateBackMiniProgramCompleteCallback] = js.undefined
   
   /** 需要返回给上一个小程序的数据，上一个小程序可在 `App.onShow` 中获取到这份数据。 [详情](https://developers.weixin.qq.com/miniprogram/dev/reference/api/App.html)。 */
-  var extraData: js.UndefOr[IAnyObject] = js.native
+  var extraData: js.UndefOr[IAnyObject] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[NavigateBackMiniProgramFailCallback] = js.native
+  var fail: js.UndefOr[NavigateBackMiniProgramFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[NavigateBackMiniProgramSuccessCallback] = js.native
+  var success: js.UndefOr[NavigateBackMiniProgramSuccessCallback] = js.undefined
 }
 object NavigateBackMiniProgramOption {
   

@@ -2,13 +2,11 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoiObject extends StObject {
   
-  var isJoi: Boolean = js.native
+  var isJoi: Boolean
 }
 object JoiObject {
   

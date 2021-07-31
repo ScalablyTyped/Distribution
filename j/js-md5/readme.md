@@ -11,8 +11,8 @@ A simple MD5 hash function for JavaScript supports UTF-8 encoding.
 | Full name          | js-md5 |
 | Keywords           | md5, hash, encryption, cryptography, HMAC |
 | # releases         | 0 |
-| # dependents       | 407 |
-| # downloads        | 3078007 |
+| # dependents       | 471 |
+| # downloads        | 3489169 |
 | # stars            | 4 |
 
 ## Links

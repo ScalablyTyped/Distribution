@@ -5,15 +5,13 @@ import typings.history.mod.LocationState
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var location: js.UndefOr[Location[LocationState]] = js.native
+  var location: js.UndefOr[Location[LocationState]] = js.undefined
 }
 object SwitchProps {
   

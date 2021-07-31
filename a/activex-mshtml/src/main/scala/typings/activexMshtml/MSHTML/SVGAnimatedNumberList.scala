@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedNumberList extends StObject {
   
   @JSName("MSHTML.SVGAnimatedNumberList_typekey")
-  var MSHTMLDotSVGAnimatedNumberList_typekey: SVGAnimatedNumberList = js.native
+  var MSHTMLDotSVGAnimatedNumberList_typekey: SVGAnimatedNumberList
   
-  var animVal: SVGNumberList = js.native
+  var animVal: SVGNumberList
   
-  var baseVal: SVGNumberList = js.native
+  var baseVal: SVGNumberList
 }
 object SVGAnimatedNumberList {
   

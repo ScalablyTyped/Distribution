@@ -17,7 +17,6 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod extends Shortcut {
@@ -25,74 +24,73 @@ object tooltipMod extends Shortcut {
   @JSImport("antd/lib/tooltip", JSImport.Default)
   @js.native
   val default: ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay with RefAttributes[_]) | (TooltipPropsWithTitle with RefAttributes[_])
+    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
   ] = js.native
   
   /* Inlined parent std.Partial<std.Omit<rc-tooltip.rc-tooltip/es/Tooltip.TooltipProps, 'children'>> */
-  @js.native
   trait AbstractTooltipProps extends StObject {
     
-    var afterVisibleChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterVisibleChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
-    var animation: js.UndefOr[AnimationType] = js.native
+    var animation: js.UndefOr[AnimationType] = js.undefined
     
-    var arrowContent: js.UndefOr[ReactNode] = js.native
+    var arrowContent: js.UndefOr[ReactNode] = js.undefined
     
-    var arrowPointAtCenter: js.UndefOr[Boolean] = js.native
+    var arrowPointAtCenter: js.UndefOr[Boolean] = js.undefined
     
-    var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.native
+    var autoAdjustOverflow: js.UndefOr[Boolean | AdjustOverflow] = js.undefined
     
-    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.native
+    var builtinPlacements: js.UndefOr[BuildInPlacements] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.native
+    var color: js.UndefOr[LiteralUnion[PresetColorType, String]] = js.undefined
     
-    var defaultVisible: js.UndefOr[Boolean] = js.native
+    var defaultVisible: js.UndefOr[Boolean] = js.undefined
     
-    var destroyTooltipOnHide: js.UndefOr[Boolean | KeepParent] = js.native
+    var destroyTooltipOnHide: js.UndefOr[Boolean | KeepParent] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
-    var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.native
+    var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var mouseEnterDelay: js.UndefOr[Double] = js.native
+    var mouseEnterDelay: js.UndefOr[Double] = js.undefined
     
-    var mouseLeaveDelay: js.UndefOr[Double] = js.native
+    var mouseLeaveDelay: js.UndefOr[Double] = js.undefined
     
-    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.native
+    var onPopupAlign: js.UndefOr[js.Function2[/* element */ HTMLElement, /* align */ AlignType, Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var openClassName: js.UndefOr[String] = js.native
+    var openClassName: js.UndefOr[String] = js.undefined
     
-    var overlay: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.native
+    var overlay: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
     
-    var overlayClassName: js.UndefOr[String] = js.native
+    var overlayClassName: js.UndefOr[String] = js.undefined
     
-    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayInnerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var placement: js.UndefOr[TooltipPlacement] = js.native
+    var placement: js.UndefOr[TooltipPlacement] = js.undefined
     
-    var popupVisible: js.UndefOr[Boolean] = js.native
+    var popupVisible: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.native
+    var trigger: js.UndefOr[ActionType | js.Array[ActionType]] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AbstractTooltipProps {
     
@@ -301,22 +299,21 @@ object tooltipMod extends Shortcut {
   
   type RenderFunction = js.Function0[ReactNode]
   
-  @js.native
   trait TooltipAlignConfig extends StObject {
     
-    var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.native
+    var offset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
     
-    var overflow: js.UndefOr[AdjustY] = js.native
+    var overflow: js.UndefOr[AdjustY] = js.undefined
     
-    var points: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var points: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var targetOffset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.native
+    var targetOffset: js.UndefOr[js.Tuple2[Double | String, Double | String]] = js.undefined
     
-    var useCssBottom: js.UndefOr[Boolean] = js.native
+    var useCssBottom: js.UndefOr[Boolean] = js.undefined
     
-    var useCssRight: js.UndefOr[Boolean] = js.native
+    var useCssRight: js.UndefOr[Boolean] = js.undefined
     
-    var useCssTransform: js.UndefOr[Boolean] = js.native
+    var useCssTransform: js.UndefOr[Boolean] = js.undefined
   }
   object TooltipAlignConfig {
     
@@ -447,15 +444,15 @@ object tooltipMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TooltipPropsWithOverlay
-    extends AbstractTooltipProps
+    extends StObject
+       with AbstractTooltipProps
        with TooltipProps {
     
     @JSName("overlay")
-    var overlay_TooltipPropsWithOverlay: ReactNode | RenderFunction = js.native
+    var overlay_TooltipPropsWithOverlay: ReactNode | RenderFunction
     
-    var title: js.UndefOr[ReactNode | RenderFunction] = js.native
+    var title: js.UndefOr[ReactNode | RenderFunction] = js.undefined
   }
   object TooltipPropsWithOverlay {
     
@@ -488,15 +485,15 @@ object tooltipMod extends Shortcut {
     }
   }
   
-  @js.native
   trait TooltipPropsWithTitle
-    extends AbstractTooltipProps
+    extends StObject
+       with AbstractTooltipProps
        with TooltipProps {
     
     @JSName("overlay")
-    var overlay_TooltipPropsWithTitle: js.UndefOr[ReactNode | RenderFunction] = js.native
+    var overlay_TooltipPropsWithTitle: js.UndefOr[ReactNode | RenderFunction] = js.undefined
     
-    var title: ReactNode | RenderFunction = js.native
+    var title: ReactNode | RenderFunction
   }
   object TooltipPropsWithTitle {
     
@@ -530,11 +527,11 @@ object tooltipMod extends Shortcut {
   }
   
   type _To = ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay with RefAttributes[_]) | (TooltipPropsWithTitle with RefAttributes[_])
+    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
   ]
   
   /* This means you don't have to write `default`, but can instead just say `tooltipMod.foo` */
   override def _to: ForwardRefExoticComponent[
-    (TooltipPropsWithOverlay with RefAttributes[_]) | (TooltipPropsWithTitle with RefAttributes[_])
+    (TooltipPropsWithOverlay & RefAttributes[js.Any]) | (TooltipPropsWithTitle & RefAttributes[js.Any])
   ] = default
 }

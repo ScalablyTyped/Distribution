@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionTickInfo extends StObject {
   
   /**
     * Source line number (1-based).
     */
-  var line: integer = js.native
+  var line: integer
   
   /**
     * Number of samples attributed to the source line.
     */
-  var ticks: integer = js.native
+  var ticks: integer
 }
 object PositionTickInfo {
   

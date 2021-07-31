@@ -13,7 +13,6 @@ import typings.typescript.mod.SyntaxKind.PrefixUnaryExpression
 import typings.typescript.mod.UnaryExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined typescript.typescript.PrefixUnaryExpression & {  operand :typescript.typescript.NumericLiteral} */
@@ -68,7 +67,7 @@ trait PrefixUnaryExpressionoper extends StObject {
   def getSourceFile(): SourceFile = js.native
   
   def getStart(): Double = js.native
-  def getStart(sourceFile: js.UndefOr[scala.Nothing], includeJsDocComment: Boolean): Double = js.native
+  def getStart(sourceFile: Unit, includeJsDocComment: Boolean): Double = js.native
   def getStart(sourceFile: SourceFile): Double = js.native
   def getStart(sourceFile: SourceFile, includeJsDocComment: Boolean): Double = js.native
   
@@ -82,7 +81,7 @@ trait PrefixUnaryExpressionoper extends StObject {
   
   val modifiers: js.UndefOr[ModifiersArray] = js.native
   
-  val operand: UnaryExpression with NumericLiteral = js.native
+  val operand: UnaryExpression & NumericLiteral = js.native
   
   val operator: PrefixUnaryOperator = js.native
   

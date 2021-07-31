@@ -3,27 +3,25 @@ package typings.stripe.mod.accounts
 import typings.stripe.stripeStrings.login_link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoginLink extends StObject {
   
-  var created: Double = js.native
+  var created: Double
   
-  var `object`: login_link = js.native
+  var `object`: login_link
   
   /**
     * A single-use login link for an Express account to access their Stripe dashboard.
     */
-  var url: String = js.native
+  var url: String
 }
 object ILoginLink {
   
   @scala.inline
-  def apply(created: Double, `object`: login_link, url: String): ILoginLink = {
+  def apply(created: Double, url: String): ILoginLink = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("login_link")
     __obj.asInstanceOf[ILoginLink]
   }
   

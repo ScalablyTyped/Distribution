@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autocompleteAutoCompleteMod {
@@ -25,100 +24,99 @@ object autocompleteAutoCompleteMod {
     def this(props: AutoCompleteProps, context: js.Any) = this()
   }
   
-  @js.native
   trait AutoCompleteProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var completeMethod: js.UndefOr[js.Function1[/* e */ OriginalEvent, Unit]] = js.native
+    var completeMethod: js.UndefOr[js.Function1[/* e */ OriginalEvent, Unit]] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropdown: js.UndefOr[Boolean] = js.native
+    var dropdown: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownMode: js.UndefOr[String] = js.native
+    var dropdownMode: js.UndefOr[String] = js.undefined
     
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
-    var inputStyle: js.UndefOr[js.Object] = js.native
+    var inputStyle: js.UndefOr[js.Object] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
-    var maxlength: js.UndefOr[Double] = js.native
+    var maxlength: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ Target, Unit]] = js.undefined
     
-    var onClear: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClear: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onContextMenu: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onDblClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onDblClick: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onDropdownClick: js.UndefOr[js.Function1[/* e */ OriginalEvent, Unit]] = js.native
+    var onDropdownClick: js.UndefOr[js.Function1[/* e */ OriginalEvent, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onKeyUp: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onMouseDown: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var onUnselect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.native
+    var onUnselect: js.UndefOr[js.Function1[/* e */ Value, Unit]] = js.undefined
     
-    var panelClassName: js.UndefOr[String] = js.native
+    var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelStyle: js.UndefOr[js.Object] = js.native
+    var panelStyle: js.UndefOr[js.Object] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollHeight: js.UndefOr[String] = js.native
+    var scrollHeight: js.UndefOr[String] = js.undefined
     
-    var selectedItemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+    var selectedItemTemplate: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var suggestions: js.UndefOr[js.Array[_]] = js.native
+    var suggestions: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object AutoCompleteProps {
     
@@ -216,7 +214,7 @@ object autocompleteAutoCompleteMod {
       def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
       @scala.inline
-      def setItemTemplate(value: /* data */ js.Any => _): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
+      def setItemTemplate(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
@@ -354,7 +352,7 @@ object autocompleteAutoCompleteMod {
       def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
       
       @scala.inline
-      def setSelectedItemTemplate(value: /* data */ js.Any => _): Self = StObject.set(x, "selectedItemTemplate", js.Any.fromFunction1(value))
+      def setSelectedItemTemplate(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "selectedItemTemplate", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSelectedItemTemplateUndefined: Self = StObject.set(x, "selectedItemTemplate", js.undefined)
@@ -372,7 +370,7 @@ object autocompleteAutoCompleteMod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setSuggestions(value: js.Array[_]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+      def setSuggestions(value: js.Array[js.Any]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)

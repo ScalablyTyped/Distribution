@@ -2,18 +2,18 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.TupleType, 'type'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait TupleType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait TupleType
+  extends StObject
+     with SomeType {
   
-  var elements: js.UndefOr[ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]] = js.native
+  var elements: js.UndefOr[ModelToObject[js.Array[typings.typedoc.typesAbstractMod.Type]]] = js.undefined
   
-  var `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String) = js.native
+  var `type`: (ModelToObject[/* "tuple" */ String]) | (/* "tuple" */ String)
 }
 object TupleType {
   

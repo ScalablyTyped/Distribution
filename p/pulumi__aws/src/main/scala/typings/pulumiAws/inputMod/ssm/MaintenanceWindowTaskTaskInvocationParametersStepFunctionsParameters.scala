@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters extends StObject {
   
   /**
     * The inputs for the STEP_FUNCTION task.
     */
-  var input: js.UndefOr[Input[String]] = js.native
+  var input: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the STEP_FUNCTION task.
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersStepFunctionsParameters {
   

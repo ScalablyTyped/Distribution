@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate signature verify result listener.
   */
-@js.native
-trait XSignatureVerifyResultBroadcaster extends XInterface {
+trait XSignatureVerifyResultBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds a new signature verify result listener.
@@ -21,7 +21,7 @@ trait XSignatureVerifyResultBroadcaster extends XInterface {
     * When the signature is verified, the result information will be sent to this listener.
     * @param listener the listener to be added
     */
-  def addSignatureVerifyResultListener(listener: XSignatureVerifyResultListener): Unit = js.native
+  def addSignatureVerifyResultListener(listener: XSignatureVerifyResultListener): Unit
   
   /**
     * Removes a signature verify result listener.
@@ -29,7 +29,7 @@ trait XSignatureVerifyResultBroadcaster extends XInterface {
     * After a listener is removed, no result information will be sent to it.
     * @param listener the listener to be removed
     */
-  def removeSignatureVerifyResultListener(listener: XSignatureVerifyResultListener): Unit = js.native
+  def removeSignatureVerifyResultListener(listener: XSignatureVerifyResultListener): Unit
 }
 object XSignatureVerifyResultBroadcaster {
   

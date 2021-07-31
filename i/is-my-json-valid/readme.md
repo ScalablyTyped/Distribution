@@ -11,8 +11,8 @@ A [JSONSchema](https://json-schema.org/) validator that uses code generation to 
 | Full name          | is-my-json-valid |
 | Keywords           | json, schema, orderly, jsonschema |
 | # releases         | 7 |
-| # dependents       | 202 |
-| # downloads        | 79892391 |
+| # dependents       | 210 |
+| # downloads        | 73587101 |
 | # stars            | 24 |
 
 ## Links

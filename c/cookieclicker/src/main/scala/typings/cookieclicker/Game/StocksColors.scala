@@ -2,41 +2,39 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StocksColors extends StObject {
   
   /**
     * The background color of the graph
     */
-  var bg: String = js.native
+  var bg: String
   
   /**
     * The stock line when the value goes up
     */
-  var high: String = js.native
+  var high: String
   
   /**
     * The stock line when the it's hovered over
     */
-  var hightlight: String = js.native
+  var hightlight: String
   
   /**
     * The big lines in the background of the graph
     */
-  var line1: String = js.native
+  var line1: String
   
   /**
     * The small lines in the background of the graph
     */
-  var line2: String = js.native
+  var line2: String
   
   /**
     * The stock line when the value goes down
     */
-  var low: String = js.native
+  var low: String
 }
 object StocksColors {
   

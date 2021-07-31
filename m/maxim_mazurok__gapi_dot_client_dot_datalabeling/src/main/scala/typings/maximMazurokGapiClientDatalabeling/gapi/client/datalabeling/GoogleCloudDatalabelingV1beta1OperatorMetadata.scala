@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1OperatorMetadata extends StObject {
   
   /** Comments from contributors. */
-  var comments: js.UndefOr[js.Array[String]] = js.native
+  var comments: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The total number of contributors that choose this label. */
-  var labelVotes: js.UndefOr[Double] = js.native
+  var labelVotes: js.UndefOr[Double] = js.undefined
   
   /** Confidence score corresponding to a label. For examle, if 3 contributors have answered the question and 2 of them agree on the final label, the confidence score will be 0.67 (2/3). */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
   /** The total number of contributors that answer this question. */
-  var totalVotes: js.UndefOr[Double] = js.native
+  var totalVotes: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1OperatorMetadata {
   

@@ -2,16 +2,14 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetPoolsRemoveInstanceRequest extends StObject {
   
   /**
     * URLs of the instances to be removed from target pool.
     */
-  var instances: js.UndefOr[js.Array[SchemaInstanceReference]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstanceReference]] = js.undefined
 }
 object SchemaTargetPoolsRemoveInstanceRequest {
   

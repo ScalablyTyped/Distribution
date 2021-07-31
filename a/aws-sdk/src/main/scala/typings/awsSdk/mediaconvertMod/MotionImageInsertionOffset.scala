@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MotionImageInsertionOffset extends StObject {
   
   /**
     * Set the distance, in pixels, between the overlay and the left edge of the video frame.
     */
-  var ImageX: js.UndefOr[integerMin0Max2147483647] = js.native
+  var ImageX: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
     * Set the distance, in pixels, between the overlay and the top edge of the video frame.
     */
-  var ImageY: js.UndefOr[integerMin0Max2147483647] = js.native
+  var ImageY: js.UndefOr[integerMin0Max2147483647] = js.undefined
 }
 object MotionImageInsertionOffset {
   

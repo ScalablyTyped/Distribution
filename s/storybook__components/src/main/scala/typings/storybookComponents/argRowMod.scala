@@ -5,7 +5,6 @@ import typings.storybookComponents.typesMod.ArgType
 import typings.storybookComponents.typesMod.Args
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argRowMod {
@@ -14,20 +13,19 @@ object argRowMod {
   @js.native
   val ArgRow: FC[ArgRowProps] = js.native
   
-  @js.native
   trait ArgRowProps extends StObject {
     
-    var arg: js.Any = js.native
+    var arg: js.Any
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var expandable: js.UndefOr[Boolean] = js.native
+    var expandable: js.UndefOr[Boolean] = js.undefined
     
-    var initialExpandedArgs: js.UndefOr[Boolean] = js.native
+    var initialExpandedArgs: js.UndefOr[Boolean] = js.undefined
     
-    var row: ArgType = js.native
+    var row: ArgType
     
-    var updateArgs: js.UndefOr[js.Function1[/* args */ Args, Unit]] = js.native
+    var updateArgs: js.UndefOr[js.Function1[/* args */ Args, Unit]] = js.undefined
   }
   object ArgRowProps {
     

@@ -3,19 +3,17 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.map.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapMarker extends StObject {
   
-  var location: js.UndefOr[js.Any | Location] = js.native
+  var location: js.UndefOr[js.Any | Location] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[MapMarkerTooltip] = js.native
+  var tooltip: js.UndefOr[MapMarkerTooltip] = js.undefined
 }
 object MapMarker {
   

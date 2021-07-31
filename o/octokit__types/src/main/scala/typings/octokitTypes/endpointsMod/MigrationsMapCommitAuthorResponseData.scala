@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsMapCommitAuthorResponseData extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var import_url: String = js.native
+  var import_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var remote_id: String = js.native
+  var remote_id: String
   
-  var remote_name: String = js.native
+  var remote_name: String
   
-  var url: String = js.native
+  var url: String
 }
 object MigrationsMapCommitAuthorResponseData {
   

@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,15 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object URLScheme {
   
+  @JSGlobal("URLScheme")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * _URL for opening the script._
     *
     * Gets the URL for opening the current script. When making a request to the returned URL from another app, e.g. Safari, the script will be opened.
     * @see https://docs.scriptable.app/urlscheme/#foropeningscript
     */
-  @JSGlobal("URLScheme.forOpeningScript")
-  @js.native
-  def forOpeningScript(): String = js.native
+  @scala.inline
+  def forOpeningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScript")().asInstanceOf[String]
   
   /**
     * _URL for opening script settings._
@@ -28,9 +30,8 @@ object URLScheme {
     * opened.
     * @see https://docs.scriptable.app/urlscheme/#foropeningscriptsettings
     */
-  @JSGlobal("URLScheme.forOpeningScriptSettings")
-  @js.native
-  def forOpeningScriptSettings(): String = js.native
+  @scala.inline
+  def forOpeningScriptSettings(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forOpeningScriptSettings")().asInstanceOf[String]
   
   /**
     * _URL for running script._
@@ -40,7 +41,6 @@ object URLScheme {
     * Get the query parameters using `args.queryParameters`.
     * @see https://docs.scriptable.app/urlscheme/#forrunningscript
     */
-  @JSGlobal("URLScheme.forRunningScript")
-  @js.native
-  def forRunningScript(): String = js.native
+  @scala.inline
+  def forRunningScript(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("forRunningScript")().asInstanceOf[String]
 }

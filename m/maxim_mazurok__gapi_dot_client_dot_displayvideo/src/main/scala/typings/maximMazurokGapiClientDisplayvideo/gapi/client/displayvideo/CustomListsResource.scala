@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.CallbackFieldsFilter
 import typings.maximMazurokGapiClientDisplayvideo.anon.CustomListId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

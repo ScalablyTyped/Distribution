@@ -2,20 +2,18 @@ package typings.saxes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLDecl extends StObject {
   
   /** The encoding specified by the XML declaration. */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /** The value of the standalone parameter */
-  var standalone: js.UndefOr[String] = js.native
+  var standalone: js.UndefOr[String] = js.undefined
   
   /** The version specified by the XML declaration. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object XMLDecl {
   

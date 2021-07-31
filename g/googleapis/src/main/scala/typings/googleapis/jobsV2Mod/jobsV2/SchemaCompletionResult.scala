@@ -2,29 +2,27 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Resource that represents completion results.
   */
-@js.native
 trait SchemaCompletionResult extends StObject {
   
   /**
     * The URL for the company logo if `type=COMPANY_NAME`.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The suggestion for the query.
     */
-  var suggestion: js.UndefOr[String] = js.native
+  var suggestion: js.UndefOr[String] = js.undefined
   
   /**
     * The completion topic.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCompletionResult {
   

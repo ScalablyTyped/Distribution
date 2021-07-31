@@ -2,38 +2,36 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationResponseDetails extends StObject {
   
   /**
     * User's billing address details.
     */
-  var billingAddress: js.UndefOr[Address] = js.native
+  var billingAddress: js.UndefOr[Address] = js.undefined
   
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * This property will only be present when the customer pays with PayPal Credit.
     */
-  var creditFinancingOffered: js.UndefOr[CreditFinancingOptions] = js.native
+  var creditFinancingOffered: js.UndefOr[CreditFinancingOptions] = js.undefined
   
-  var email: String = js.native
+  var email: String
   
-  var firstName: String = js.native
+  var firstName: String
   
-  var lastName: String = js.native
+  var lastName: String
   
-  var payerId: String = js.native
+  var payerId: String
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * User's shipping address details, only available if shipping address is enabled.
     */
-  var shippingAddress: js.UndefOr[Address] = js.native
+  var shippingAddress: js.UndefOr[Address] = js.undefined
 }
 object AuthorizationResponseDetails {
   

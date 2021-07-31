@@ -2,31 +2,29 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLDAPSSettingsRequest extends StObject {
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * Specifies the number of items that should be displayed on one page.
     */
-  var Limit: js.UndefOr[PageLimit] = js.native
+  var Limit: js.UndefOr[PageLimit] = js.undefined
   
   /**
     * The type of next token used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * The type of LDAP security to enable. Currently only the value Client is supported.
     */
-  var Type: js.UndefOr[LDAPSType] = js.native
+  var Type: js.UndefOr[LDAPSType] = js.undefined
 }
 object DescribeLDAPSSettingsRequest {
   

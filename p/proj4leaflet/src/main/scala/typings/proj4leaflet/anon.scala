@@ -2,15 +2,13 @@ package typings.proj4leaflet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Properties extends StObject {
     
-    var properties: Name = js.native
+    var properties: Name
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Properties {
     

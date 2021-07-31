@@ -2,36 +2,34 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Peer extends StObject {
   
   /**
     * The IP address of the peer.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * An optional reason associated with the change in peer_status.
     */
-  var cause: js.UndefOr[String] = js.native
+  var cause: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the peer. Note that the values of the status are dependent on the underlying peer technology.
     */
-  var peer_status: String = js.native
+  var peer_status: String
   
   /**
     * The port of the peer.
     */
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
   /**
     * The last known time the peer was contacted.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object Peer {
   

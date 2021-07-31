@@ -5,34 +5,34 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.density
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DensityTransform extends _Transforms {
+trait DensityTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var distribution: js.UndefOr[Distribution | SignalRef] = js.native
+  var distribution: js.UndefOr[Distribution | SignalRef] = js.undefined
   
-  var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var maxsteps: js.UndefOr[Double | SignalRef] = js.native
+  var maxsteps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var method: js.UndefOr[DensityMethod | SignalRef] = js.native
+  var method: js.UndefOr[DensityMethod | SignalRef] = js.undefined
   
-  var minsteps: js.UndefOr[Double | SignalRef] = js.native
+  var minsteps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var steps: js.UndefOr[Double | SignalRef] = js.native
+  var steps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var `type`: density = js.native
+  var `type`: density
 }
 object DensityTransform {
   
   @scala.inline
-  def apply(`type`: density): DensityTransform = {
+  def apply(): DensityTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("density")
     __obj.asInstanceOf[DensityTransform]
   }
   

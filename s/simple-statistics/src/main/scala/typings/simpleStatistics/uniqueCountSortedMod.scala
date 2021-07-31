@@ -2,12 +2,14 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniqueCountSortedMod {
   
-  @JSImport("simple-statistics/src/unique_count_sorted", JSImport.Default)
+  @JSImport("simple-statistics/src/unique_count_sorted", JSImport.Namespace)
   @js.native
-  def default(x: js.Array[_]): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(x: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

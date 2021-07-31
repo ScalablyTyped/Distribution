@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMContainer extends StObject {
   
   /**
@@ -14,63 +12,63 @@ trait DOMContainer extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#container)
     */
-  var container: HTMLDivElement = js.native
+  var container: HTMLDivElement
   
   /**
     * Indicates if the browser focus is on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#focused)
     */
-  val focused: Boolean = js.native
+  val focused: Boolean
   
   /**
     * The height of the view in pixels read from the view container element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#height)
     */
-  val height: Double = js.native
+  val height: Double
   
   /**
     * A Popup object that displays general content or attributes from [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#map).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#popup)
     */
-  var popup: Popup = js.native
+  var popup: Popup
   
   /**
     * Indicates if the view is being resized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#resizing)
     */
-  val resizing: Boolean = js.native
+  val resizing: Boolean
   
   /**
     * An array containing the width and height of the view in pixels, e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#size)
     */
-  val size: js.Array[Double] = js.native
+  val size: js.Array[Double]
   
   /**
     * Indicates if the view is visible on the page.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#suspended)
     */
-  val suspended: Boolean = js.native
+  val suspended: Boolean
   
   /**
     * Exposes the default widgets available in the view and allows you to toggle them on and off.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#ui)
     */
-  var ui: DefaultUI = js.native
+  var ui: DefaultUI
   
   /**
     * The width of the view in pixels read from the view container element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-DOMContainer.html#width)
     */
-  val width: Double = js.native
+  val width: Double
 }
 object DOMContainer {
   

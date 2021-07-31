@@ -6,21 +6,20 @@ import typings.cadesplugin.CADESCommon.Unpacked
 import typings.cadesplugin.CADESCommon._Unpacked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAPICOM.EncodedData> */
-@js.native
 trait EncodedDataAsync
-  extends _Unpacked[js.Any] {
+  extends StObject
+     with _Unpacked[js.Any] {
   
   val Format: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val Value: (// tslint:disable-line ban-types
   js.Promise[
     Unpacked[js.Function1[/* EncodingType */ js.UndefOr[CAPICOM_ENCODING_TYPE], String]]
-  ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ js.UndefOr[CAPICOM_ENCODING_TYPE], String]]) = js.native
+  ]) | (PromisifiedFunction[js.Function1[/* EncodingType */ js.UndefOr[CAPICOM_ENCODING_TYPE], String]])
 }
 object EncodedDataAsync {
   
@@ -50,7 +49,7 @@ object EncodedDataAsync {
     def setFormatFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -66,7 +65,7 @@ object EncodedDataAsync {
       value: js.UndefOr[
           (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any]) | CAPICOM_ENCODING_TYPE
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any]) | CAPICOM_ENCODING_TYPE
         ] => js.Promise[Unpacked[js.Any]] | String
     ): Self = StObject.set(x, "Value", js.Any.fromFunction1(value))
   }

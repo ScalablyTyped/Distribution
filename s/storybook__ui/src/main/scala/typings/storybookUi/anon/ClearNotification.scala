@@ -3,24 +3,22 @@ package typings.storybookUi.anon
 import typings.emotionSerialize.mod.CSSObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearNotification extends StObject {
   
-  def clearNotification(id: String): Unit = js.native
+  def clearNotification(id: String): Unit
   
-  var notifications: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'] */ js.Any = js.native
+  var notifications: js.Array[typings.storybookApi.notificationsMod.Notification]
   
-  var placement: CSSObject = js.native
+  var placement: CSSObject
 }
 object ClearNotification {
   
   @scala.inline
   def apply(
     clearNotification: String => Unit,
-    notifications: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'] */ js.Any,
+    notifications: js.Array[typings.storybookApi.notificationsMod.Notification],
     placement: CSSObject
   ): ClearNotification = {
     val __obj = js.Dynamic.literal(clearNotification = js.Any.fromFunction1(clearNotification), notifications = notifications.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any])
@@ -34,9 +32,10 @@ object ClearNotification {
     def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNotifications(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'] */ js.Any
-    ): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    def setNotifications(value: js.Array[typings.storybookApi.notificationsMod.Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNotificationsVarargs(value: typings.storybookApi.notificationsMod.Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     
     @scala.inline
     def setPlacement(value: CSSObject): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])

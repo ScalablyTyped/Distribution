@@ -10,9 +10,9 @@ Storybook PostMessage Channel is a channel for Storybook that can be used when t
 | ------------------ | :-------------: |
 | Full name          | @storybook/channel-postmessage |
 | Keywords           | storybook |
-| # releases         | 574 |
-| # dependents       | 16 |
-| # downloads        | 91263407 |
+| # releases         | 564 |
+| # dependents       | 17 |
+| # downloads        | 107385048 |
 | # stars            | 0 |
 
 ## Links

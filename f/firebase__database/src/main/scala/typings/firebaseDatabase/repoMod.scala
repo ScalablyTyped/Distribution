@@ -14,7 +14,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repoMod {
@@ -101,7 +100,7 @@ object repoMod {
     var interceptServerDataCallback_ : js.Any = js.native
     
     def interceptServerData_(): Unit = js.native
-    def interceptServerData_(callback: js.Function2[/* a */ String, /* b */ js.Any, _]): Unit = js.native
+    def interceptServerData_(callback: js.Function2[/* a */ String, /* b */ js.Any, js.Any]): Unit = js.native
     
     def interrupt(): Unit = js.native
     

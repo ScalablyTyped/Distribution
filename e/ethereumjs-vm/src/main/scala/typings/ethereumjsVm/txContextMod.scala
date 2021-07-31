@@ -3,23 +3,29 @@ package typings.ethereumjsVm
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object txContextMod {
   
   @JSImport("ethereumjs-vm/dist/evm/txContext", JSImport.Default)
   @js.native
-  class default protected () extends TxContext {
+  class default protected ()
+    extends StObject
+       with TxContext {
     def this(gasPrice: Buffer, origin: Buffer) = this()
-  }
-  
-  @js.native
-  trait TxContext extends StObject {
     
+    /* CompleteClass */
     var gasPrice: Buffer = js.native
     
+    /* CompleteClass */
     var origin: Buffer = js.native
+  }
+  
+  trait TxContext extends StObject {
+    
+    var gasPrice: Buffer
+    
+    var origin: Buffer
   }
   object TxContext {
     

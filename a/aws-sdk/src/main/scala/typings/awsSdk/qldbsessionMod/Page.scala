@@ -2,21 +2,19 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Page extends StObject {
   
   /**
     * The token of the next page.
     */
-  var NextPageToken: js.UndefOr[PageToken] = js.native
+  var NextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * A structure that contains values in multiple encoding formats.
     */
-  var Values: js.UndefOr[ValueHolders] = js.native
+  var Values: js.UndefOr[ValueHolders] = js.undefined
 }
 object Page {
   

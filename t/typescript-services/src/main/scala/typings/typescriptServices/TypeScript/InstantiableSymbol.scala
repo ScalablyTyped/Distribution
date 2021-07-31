@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstantiableSymbol extends StObject {
   
-  def getAllowedToReferenceTypeParameters(): js.Array[PullTypeParameterSymbol] = js.native
+  def getAllowedToReferenceTypeParameters(): js.Array[PullTypeParameterSymbol]
   
-  def getIsSpecialized(): Boolean = js.native
+  def getIsSpecialized(): Boolean
   
-  def getTypeParameterArgumentMap(): TypeArgumentMap = js.native
+  def getTypeParameterArgumentMap(): TypeArgumentMap
 }
 object InstantiableSymbol {
   

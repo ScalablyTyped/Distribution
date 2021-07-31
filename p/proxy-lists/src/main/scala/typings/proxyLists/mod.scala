@@ -11,10 +11,13 @@ import typings.proxyLists.proxyListsStrings.strict
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("proxy-lists", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("proxy-lists", "GetProxiesEventEmitter")
   @js.native
@@ -29,37 +32,29 @@ object mod {
     def on_error(event: error, listener: js.Function1[/* error */ js.Any, Unit]): this.type = js.native
   }
   
-  @JSImport("proxy-lists", "addSource")
-  @js.native
-  def addSource(name: String, source: AddSource_): Unit = js.native
+  @scala.inline
+  def addSource(name: String, source: AddSource_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addSource")(name.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-lists", "getProxies")
-  @js.native
-  def getProxies(): GetProxiesEventEmitter = js.native
-  @JSImport("proxy-lists", "getProxies")
-  @js.native
-  def getProxies(options: PartialOptions): GetProxiesEventEmitter = js.native
+  @scala.inline
+  def getProxies(): GetProxiesEventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxies")().asInstanceOf[GetProxiesEventEmitter]
+  @scala.inline
+  def getProxies(options: PartialOptions): GetProxiesEventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxies")(options.asInstanceOf[js.Any]).asInstanceOf[GetProxiesEventEmitter]
   
-  @JSImport("proxy-lists", "getProxiesFromSource")
-  @js.native
-  def getProxiesFromSource(name: String): GetProxiesEventEmitter = js.native
-  @JSImport("proxy-lists", "getProxiesFromSource")
-  @js.native
-  def getProxiesFromSource(name: String, options: Options): GetProxiesEventEmitter = js.native
+  @scala.inline
+  def getProxiesFromSource(name: String): GetProxiesEventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxiesFromSource")(name.asInstanceOf[js.Any]).asInstanceOf[GetProxiesEventEmitter]
+  @scala.inline
+  def getProxiesFromSource(name: String, options: Options): GetProxiesEventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("getProxiesFromSource")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GetProxiesEventEmitter]
   
-  @JSImport("proxy-lists", "listSources")
-  @js.native
-  def listSources(): js.Array[Source] = js.native
-  @JSImport("proxy-lists", "listSources")
-  @js.native
-  def listSources(options: ListSourcesOptions): js.Array[Source] = js.native
+  @scala.inline
+  def listSources(): js.Array[Source] = ^.asInstanceOf[js.Dynamic].applyDynamic("listSources")().asInstanceOf[js.Array[Source]]
+  @scala.inline
+  def listSources(options: ListSourcesOptions): js.Array[Source] = ^.asInstanceOf[js.Dynamic].applyDynamic("listSources")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Source]]
   
-  @js.native
   trait AddSource_ extends StObject {
     
-    def getProxies(options: InternalOptions): GetProxiesEventEmitter = js.native
+    def getProxies(options: InternalOptions): GetProxiesEventEmitter
     
-    var homeUrl: String = js.native
+    var homeUrl: String
   }
   object AddSource_ {
     
@@ -112,10 +107,11 @@ object mod {
     def ipv6: typings.proxyLists.proxyListsStrings.ipv6 = "ipv6".asInstanceOf[typings.proxyLists.proxyListsStrings.ipv6]
   }
   
-  @js.native
-  trait InternalOptions extends Options {
+  trait InternalOptions
+    extends StObject
+       with Options {
     
-    var sample: js.UndefOr[Boolean] = js.native
+    var sample: js.UndefOr[Boolean] = js.undefined
   }
   object InternalOptions {
     
@@ -136,12 +132,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ListSourcesOptions extends StObject {
     
-    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ListSourcesOptions {
     
@@ -174,28 +169,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var anonymityLevels: js.UndefOr[js.Array[AnonymityLevel]] = js.native
+    var anonymityLevels: js.UndefOr[js.Array[AnonymityLevel]] = js.undefined
     
-    var countries: js.UndefOr[js.Array[String]] = js.native
+    var countries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var countriesBlackList: js.UndefOr[js.Array[String]] = js.native
+    var countriesBlackList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var defaultRequestOptions: js.UndefOr[CoreOptions] = js.native
+    var defaultRequestOptions: js.UndefOr[CoreOptions] = js.undefined
     
-    var filterMode: js.UndefOr[strict | loose] = js.native
+    var filterMode: js.UndefOr[strict | loose] = js.undefined
     
-    var ipTypes: js.UndefOr[js.Array[IPType]] = js.native
+    var ipTypes: js.UndefOr[js.Array[IPType]] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+    var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
     
-    var series: js.UndefOr[Boolean] = js.native
+    var series: js.UndefOr[Boolean] = js.undefined
     
-    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -313,22 +307,21 @@ object mod {
     def socks5: typings.proxyLists.proxyListsStrings.socks5 = "socks5".asInstanceOf[typings.proxyLists.proxyListsStrings.socks5]
   }
   
-  @js.native
   trait Proxy extends StObject {
     
-    var anonymityLevel: js.UndefOr[AnonymityLevel] = js.native
+    var anonymityLevel: js.UndefOr[AnonymityLevel] = js.undefined
     
-    var country: String = js.native
+    var country: String
     
-    var ipAddress: String = js.native
+    var ipAddress: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+    var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var tunnel: js.UndefOr[Boolean] = js.native
+    var tunnel: js.UndefOr[Boolean] = js.undefined
   }
   object Proxy {
     
@@ -376,12 +369,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var homeUrl: String = js.native
+    var homeUrl: String
     
-    var name: String = js.native
+    var name: String
   }
   object Source {
     

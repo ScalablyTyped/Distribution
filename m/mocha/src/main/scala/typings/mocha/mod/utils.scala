@@ -3,10 +3,13 @@ package typings.mocha.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
+  
+  @JSImport("mocha", "utils")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Return a new Thing that has the keys in sorted order. Recursive.
@@ -22,64 +25,54 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.canonicalize
     */
-  @JSImport("mocha", "utils.canonicalize")
-  @js.native
-  def canonicalize(value: js.Any, stack: js.Array[_], typeHint: String): js.Any = js.native
+  @scala.inline
+  def canonicalize(value: js.Any, stack: js.Array[js.Any], typeHint: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("canonicalize")(value.asInstanceOf[js.Any], stack.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Strip the function definition from `str`, and re-indent for pre whitespace.
     *
     * @see https://mochajs.org/api/module-utils.html#.clean
     */
-  @JSImport("mocha", "utils.clean")
-  @js.native
-  def clean(str: String): String = js.native
+  @scala.inline
+  def clean(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Generate an undefined error if `err` is not defined.
     *
     * @see https://mochajs.org/api/module-utils.html#.getError
     */
-  @JSImport("mocha", "utils.getError")
-  @js.native
-  def getError(): Error = js.native
-  @JSImport("mocha", "utils.getError")
-  @js.native
-  def getError(err: Error): Error = js.native
+  @scala.inline
+  def getError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")().asInstanceOf[Error]
+  @scala.inline
+  def getError(err: Error): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("getError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   /**
     * Highlight the given string of `js`.
     */
-  @JSImport("mocha", "utils.highlight")
-  @js.native
-  def highlight(js_ : String): String = js.native
+  @scala.inline
+  def highlight(js_ : String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlight")(js_.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Lookup file names at the given `path`.
     *
     * @see https://mochajs.org/api/Mocha.utils.html#.exports.lookupFiles
     */
-  @JSImport("mocha", "utils.lookupFiles")
-  @js.native
-  def lookupFiles(filepath: String): js.Array[String] = js.native
-  @JSImport("mocha", "utils.lookupFiles")
-  @js.native
-  def lookupFiles(filepath: String, extensions: js.UndefOr[scala.Nothing], recursive: Boolean): js.Array[String] = js.native
-  @JSImport("mocha", "utils.lookupFiles")
-  @js.native
-  def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = js.native
-  @JSImport("mocha", "utils.lookupFiles")
-  @js.native
-  def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def lookupFiles(filepath: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def lookupFiles(filepath: String, extensions: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def lookupFiles(filepath: String, extensions: js.Array[String], recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def lookupFiles(filepath: String, extensions: Unit, recursive: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupFiles")(filepath.asInstanceOf[js.Any], extensions.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * Compute a slug from the given `str`.
     *
     * @see https://mochajs.org/api/module-utils.html#.slug
     */
-  @JSImport("mocha", "utils.slug")
-  @js.native
-  def slug(str: String): String = js.native
+  @scala.inline
+  def slug(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slug")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * When invoking this function you get a filter function that get the Error.stack as an
@@ -88,9 +81,8 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.stackTraceFilter
     */
-  @JSImport("mocha", "utils.stackTraceFilter")
-  @js.native
-  def stackTraceFilter(): js.Function1[/* stack */ String, String] = js.native
+  @scala.inline
+  def stackTraceFilter(): js.Function1[/* stack */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackTraceFilter")().asInstanceOf[js.Function1[/* stack */ String, String]]
   
   /**
     * Stringify `value`. Different behavior depending on type of value:
@@ -102,23 +94,20 @@ object utils {
     *
     * @see https://mochajs.org/api/module-utils.html#.stringify
     */
-  @JSImport("mocha", "utils.stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
+    */
+  @scala.inline
+  def `type`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Generate an undefined error with a message warning the user.
     *
     * @see https://mochajs.org/api/module-utils.html#.undefinedError
     */
-  @JSImport("mocha", "utils.undefinedError")
-  @js.native
-  def undefinedError(): Error = js.native
-  
-  /**
-    * Takes some variable and asks `Object.prototype.toString()` what it thinks it is.
-    */
-  @JSImport("mocha", "utils.type")
-  @js.native
-  def `type`(value: js.Any): String = js.native
+  @scala.inline
+  def undefinedError(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("undefinedError")().asInstanceOf[Error]
 }

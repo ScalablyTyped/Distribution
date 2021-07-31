@@ -2,10 +2,8 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomField extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait CustomField extends StObject {
     * @param  key The name of the field to get.
     * @return      The field value, or undefined if it doesn't exist.
     */
-  def get(key: String): CustomField = js.native
+  def get(key: String): CustomField
   
   /**
     * Set a custom field.
@@ -23,7 +21,7 @@ trait CustomField extends StObject {
     * @param          value The value to set, if `key` is not an object.
     * @promise {Object|null}         The new set of custom fields, or null if none are present.
     */
-  def set(key: String, value: js.Any): CustomField = js.native
+  def set(key: String, value: js.Any): CustomField
   
   /**
     * Unset the custom field with the given name,
@@ -31,7 +29,7 @@ trait CustomField extends StObject {
     * @param        key The name of the custom field to remove.
     * @promise {Object|null}     The new set of custom fields, or null if none are present.
     */
-  def unset(key: String): CustomField = js.native
+  def unset(key: String): CustomField
 }
 object CustomField {
   

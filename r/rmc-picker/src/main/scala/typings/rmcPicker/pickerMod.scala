@@ -5,7 +5,6 @@ import typings.rmcPicker.pickerMixinMod.IItemProps
 import typings.rmcPicker.pickerTypesMod.IPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {
@@ -13,26 +12,30 @@ object pickerMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rmc-picker/lib/Picker", JSImport.Default)
   @js.native
-  class default () extends ComponentDidUpdate {
+  class default ()
+    extends StObject
+       with ComponentDidUpdate {
     def this(props: IPickerProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: IPickerProps, context: js.Any) = this()
   }
   object default {
     
-    @JSImport("rmc-picker/lib/Picker", "default.Item")
+    @JSImport("rmc-picker/lib/Picker", JSImport.Default)
     @js.native
-    def Item(_props: IItemProps): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def Item(_props: IItemProps): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Item")(_props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait IPickerProp extends StObject {
     
-    def computeChildIndex(arg: js.Any*): Double = js.native
+    def computeChildIndex(arg: js.Any*): Double
     
-    def doScrollingComplete(arg: js.Any*): Unit = js.native
+    def doScrollingComplete(arg: js.Any*): Unit
     
-    def select(arg: js.Any*): Unit = js.native
+    def select(arg: js.Any*): Unit
   }
   object IPickerProp {
     

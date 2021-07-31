@@ -2,35 +2,33 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemMemoryInfo extends StObject {
   
   /**
     * The total amount of memory not being used by applications or disk cache.
     */
-  var free: Double = js.native
+  var free: Double
   
   /**
     * The free amount of swap memory in Kilobytes available to the system.
     *
     * @platform win32,linux
     */
-  var swapFree: Double = js.native
+  var swapFree: Double
   
   /**
     * The total amount of swap memory in Kilobytes available to the system.
     *
     * @platform win32,linux
     */
-  var swapTotal: Double = js.native
+  var swapTotal: Double
   
   /**
     * The total amount of physical memory in Kilobytes available to the system.
     */
-  var total: Double = js.native
+  var total: Double
 }
 object SystemMemoryInfo {
   

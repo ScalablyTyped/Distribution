@@ -2,15 +2,13 @@ package typings.expo.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Data {
   

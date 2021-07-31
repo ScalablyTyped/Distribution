@@ -4,53 +4,43 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilsMod {
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "describeMathCPU")
+  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", JSImport.Namespace)
   @js.native
-  def describeMathCPU(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "describeMathCPUAndGPU")
-  @js.native
-  def describeMathCPUAndGPU(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describeMathCPU(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeMathCPU")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "describeMathGPU")
-  @js.native
-  def describeMathGPU(testName: String, tests: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describeMathCPUAndGPU(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeMathCPUAndGPU")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectNoLeakedTensors")
-  @js.native
-  def expectNoLeakedTensors(testFunc: js.Function0[_], numNewTensors: Double): Unit = js.native
+  @scala.inline
+  def describeMathGPU(testName: String, tests: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeMathGPU")(testName.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double], epsilon: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank], epsilon: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double], epsilon: Double): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank]): Unit = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsClose")
-  @js.native
-  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank], epsilon: Double): Unit = js.native
+  @scala.inline
+  def expectNoLeakedTensors(testFunc: js.Function0[js.Any], numNewTensors: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectNoLeakedTensors")(testFunc.asInstanceOf[js.Any], numNewTensors.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/utils/test_utils", "expectTensorsValuesInRange")
-  @js.native
-  def expectTensorsValuesInRange(actual: Tensor[Rank], low: Double, high: Double): Unit = js.native
+  @scala.inline
+  def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: js.Array[Double], expected: js.Array[Double], epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: js.Array[Double], expected: Tensor[Rank], epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: Tensor[Rank], expected: js.Array[Double], epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def expectTensorsClose(actual: Tensor[Rank], expected: Tensor[Rank], epsilon: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsClose")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def expectTensorsValuesInRange(actual: Tensor[Rank], low: Double, high: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectTensorsValuesInRange")(actual.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

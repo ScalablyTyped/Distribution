@@ -11,7 +11,6 @@ import typings.maximMazurokGapiClientWorkflows.anon.Key
 import typings.maximMazurokGapiClientWorkflows.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -21,17 +20,15 @@ object gapi {
     object workflows {
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait ListLocationsResponse extends StObject {
         
         /** A list of locations that matches the specified filter in the request. */
-        var locations: js.UndefOr[js.Array[Location]] = js.native
+        var locations: js.UndefOr[js.Array[Location]] = js.undefined
         
         /** The standard List next-page token. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object ListLocationsResponse {
         
@@ -61,14 +58,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListOperationsResponse extends StObject {
         
         /** The standard List next-page token. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** A list of operations that matches the specified filter in the request. */
-        var operations: js.UndefOr[js.Array[Operation]] = js.native
+        var operations: js.UndefOr[js.Array[Operation]] = js.undefined
       }
       object ListOperationsResponse {
         
@@ -98,17 +94,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait ListWorkflowsResponse extends StObject {
         
         /** A token, which can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
         
         /** Unreachable resources. */
-        var unreachable: js.UndefOr[js.Array[String]] = js.native
+        var unreachable: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The workflows which match the request. */
-        var workflows: js.UndefOr[js.Array[Workflow]] = js.native
+        var workflows: js.UndefOr[js.Array[Workflow]] = js.undefined
       }
       object ListWorkflowsResponse {
         
@@ -147,31 +142,30 @@ object gapi {
         }
       }
       
-      @js.native
       trait Location extends StObject {
         
         /** The friendly name for this location, typically a nearby city name. For example, "Tokyo". */
-        var displayName: js.UndefOr[String] = js.native
+        var displayName: js.UndefOr[String] = js.undefined
         
         /** Cross-service attributes for the location. For example {"cloud.googleapis.com/region": "us-east1"} */
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+              ] = js.undefined
         
         /** The canonical id for this location. For example: `"us-east1"`. */
-        var locationId: js.UndefOr[String] = js.native
+        var locationId: js.UndefOr[String] = js.undefined
         
         /** Service-specific metadata. For example the available capacity at the given location. */
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
+              ] = js.undefined
         
         /** Resource name for the location, which may vary between implementations. For example: `"projects/example-project/locations/us-east1"` */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
       }
       object Location {
         
@@ -194,7 +188,7 @@ object gapi {
           def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -210,7 +204,7 @@ object gapi {
           def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Location & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -240,14 +234,13 @@ object gapi {
         var workflows: WorkflowsResource = js.native
       }
       
-      @js.native
       trait Operation extends StObject {
         
         /** If the value is `false`, it means the operation is still in progress. If `true`, the operation is completed, and either `error` or `response` is available. */
-        var done: js.UndefOr[Boolean] = js.native
+        var done: js.UndefOr[Boolean] = js.undefined
         
         /** The error result of the operation in case of failure or cancellation. */
-        var error: js.UndefOr[Status] = js.native
+        var error: js.UndefOr[Status] = js.undefined
         
         /**
           * Service-specific metadata associated with the operation. It typically contains progress information and common metadata such as create time. Some services might not provide such
@@ -256,14 +249,14 @@ object gapi {
         var metadata: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+              ] = js.undefined
         
         /**
           * The server-assigned name, which is only unique within the same service that originally returns it. If you use the default HTTP mapping, the `name` should be a resource name ending
           * with `operations/{unique_id}`.
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /**
           * The normal response of the operation in case of success. If the original method returns no data on success, such as `Delete`, the response is `google.protobuf.Empty`. If the
@@ -273,8 +266,8 @@ object gapi {
         var response: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
+              ] = js.undefined
       }
       object Operation {
         
@@ -303,7 +296,7 @@ object gapi {
           def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -319,7 +312,7 @@ object gapi {
           def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -327,23 +320,22 @@ object gapi {
         }
       }
       
-      @js.native
       trait OperationMetadata extends StObject {
         
         /** API version used to start the operation. */
-        var apiVersion: js.UndefOr[String] = js.native
+        var apiVersion: js.UndefOr[String] = js.undefined
         
         /** The time the operation was created. */
-        var createTime: js.UndefOr[String] = js.native
+        var createTime: js.UndefOr[String] = js.undefined
         
         /** The time the operation finished running. */
-        var endTime: js.UndefOr[String] = js.native
+        var endTime: js.UndefOr[String] = js.undefined
         
         /** Server-defined resource path for the target of the operation. */
-        var target: js.UndefOr[String] = js.native
+        var target: js.UndefOr[String] = js.undefined
         
         /** Name of the verb executed by the operation. */
-        var verb: js.UndefOr[String] = js.native
+        var verb: js.UndefOr[String] = js.undefined
       }
       object OperationMetadata {
         
@@ -412,10 +404,9 @@ object gapi {
         def list(request: Alt): Request[ListOperationsResponse] = js.native
       }
       
-      @js.native
       trait ProjectsResource extends StObject {
         
-        var locations: LocationsResource = js.native
+        var locations: LocationsResource
       }
       object ProjectsResource {
         
@@ -433,26 +424,25 @@ object gapi {
         }
       }
       
-      @js.native
       trait Status extends StObject {
         
         /** The status code, which should be an enum value of google.rpc.Code. */
-        var code: js.UndefOr[Double] = js.native
+        var code: js.UndefOr[Double] = js.undefined
         
         /** A list of messages that carry the error details. There is a common set of message types for APIs to use. */
         var details: js.UndefOr[
                 js.Array[
                   /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status with TopLevel[js.Any]
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any]
                 ]
-              ] = js.native
+              ] = js.undefined
         
         /**
           * A developer-facing error message, which should be in English. Any user-facing error message should be localized and sent in the google.rpc.Status.details field, or localized by the
           * client.
           */
-        var message: js.UndefOr[String] = js.native
+        var message: js.UndefOr[String] = js.undefined
       }
       object Status {
         
@@ -476,7 +466,7 @@ object gapi {
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any]
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
@@ -487,7 +477,7 @@ object gapi {
           def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status with TopLevel[js.Any])*
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Status & TopLevel[js.Any])*
           ): Self = StObject.set(x, "details", js.Array(value :_*))
           
           @scala.inline
@@ -498,14 +488,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait Workflow extends StObject {
         
         /** Output only. The timestamp of when the workflow was created. */
-        var createTime: js.UndefOr[String] = js.native
+        var createTime: js.UndefOr[String] = js.undefined
         
         /** Description of the workflow provided by the user. Must be at most 1000 unicode characters long. */
-        var description: js.UndefOr[String] = js.native
+        var description: js.UndefOr[String] = js.undefined
         
         /**
           * Labels associated with this workflow. Labels can contain at most 64 entries. Keys and values can be no longer than 63 characters and can only contain lowercase letters, numeric
@@ -514,20 +503,20 @@ object gapi {
         var labels: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: string}
-          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[js.Any]
+              ] = js.undefined
         
         /** The resource name of the workflow. Format: projects/{project}/locations/{location}/workflows/{workflow} */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** Output only. The timestamp that the latest revision of the workflow was created. */
-        var revisionCreateTime: js.UndefOr[String] = js.native
+        var revisionCreateTime: js.UndefOr[String] = js.undefined
         
         /**
           * Output only. The revision of the workflow. A new revision of a workflow is created as a result of updating the following fields of a workflow: - `source_code` - `service_account`
           * The format is "000001-a4d", where the first 6 characters define the zero-padded revision ordinal number. They are followed by a hyphen and 3 hexadecimal random characters.
           */
-        var revisionId: js.UndefOr[String] = js.native
+        var revisionId: js.UndefOr[String] = js.undefined
         
         /**
           * Name of the service account associated with the latest workflow version. This service account represents the identity of the workflow and determines what permissions the workflow
@@ -535,16 +524,16 @@ object gapi {
           * `email` address or the `unique_id` of the service account. If not provided, workflow will use the project's default service account. Modifying this field for an existing workflow
           * results in a new workflow revision.
           */
-        var serviceAccount: js.UndefOr[String] = js.native
+        var serviceAccount: js.UndefOr[String] = js.undefined
         
         /** Workflow code to be executed. The size limit is 32KB. */
-        var sourceContents: js.UndefOr[String] = js.native
+        var sourceContents: js.UndefOr[String] = js.undefined
         
         /** Output only. State of the workflow deployment. */
-        var state: js.UndefOr[String] = js.native
+        var state: js.UndefOr[String] = js.undefined
         
         /** Output only. The last update timestamp of the workflow. */
-        var updateTime: js.UndefOr[String] = js.native
+        var updateTime: js.UndefOr[String] = js.undefined
       }
       object Workflow {
         
@@ -573,7 +562,7 @@ object gapi {
           def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
-            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientWorkflows.maximMazurokGapiClientWorkflowsStrings.Workflow & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
           @scala.inline

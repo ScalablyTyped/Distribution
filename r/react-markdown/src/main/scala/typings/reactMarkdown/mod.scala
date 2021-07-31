@@ -11,14 +11,16 @@ import typings.unified.mod.PluggableList
 import typings.unified.mod.Settings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(props: ReactMarkdownProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   @JSImport("react-markdown", JSImport.Namespace)
   @js.native
-  def apply(props: ReactMarkdownProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-markdown", "renderers")
   @js.native
@@ -28,16 +30,14 @@ object mod {
   @js.native
   val types: js.Array[NodeType] = js.native
   
-  @JSImport("react-markdown", "uriTransformer")
-  @js.native
-  def uriTransformer(uri: String): String = js.native
+  @scala.inline
+  def uriTransformer(uri: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriTransformer")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type AlignType = typings.mdast.mod.AlignType
   
-  @js.native
   trait AllowDangerousHtmlProp extends StObject {
     
-    val allowDangerousHtml: js.UndefOr[Boolean] = js.native
+    val allowDangerousHtml: js.UndefOr[Boolean] = js.undefined
   }
   object AllowDangerousHtmlProp {
     
@@ -58,10 +58,9 @@ object mod {
     }
   }
   
-  @js.native
   trait AllowedTypesProp extends StObject {
     
-    val allowedTypes: js.UndefOr[js.Array[NodeType]] = js.native
+    val allowedTypes: js.UndefOr[js.Array[NodeType]] = js.undefined
   }
   object AllowedTypesProp {
     
@@ -85,10 +84,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ChildrenProp extends StObject {
     
-    val children: String = js.native
+    val children: String
   }
   object ChildrenProp {
     
@@ -106,10 +104,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DisallowedTypesProp extends StObject {
     
-    val disallowedTypes: js.Array[NodeType] = js.native
+    val disallowedTypes: js.Array[NodeType]
   }
   object DisallowedTypesProp {
     
@@ -130,11 +127,10 @@ object mod {
     }
   }
   
-  @js.native
   trait EscapeHtmlProp extends StObject {
     
     /** @deprecated use allowDangerousHtml */
-    val escapeHtml: js.UndefOr[Boolean] = js.native
+    val escapeHtml: js.UndefOr[Boolean] = js.undefined
   }
   object EscapeHtmlProp {
     
@@ -157,7 +153,7 @@ object mod {
   
   type LinkTargetResolver = js.Function3[/* uri */ String, /* text */ String, /* title */ js.UndefOr[String], String]
   
-  type MutuallyExclusive[T, U] = (T with Not[U]) | (U with Not[T])
+  type MutuallyExclusive[T, U] = (T & Not[U]) | (U & Not[T])
   
   /* Inlined mdast.mdast.Content['type'] */
   /* Rewritten from type alias, can be one of: 
@@ -272,36 +268,35 @@ object mod {
   
   type Not[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof T ]:? never}
-    */ typings.reactMarkdown.reactMarkdownStrings.Not with TopLevel[js.Any]
+    */ typings.reactMarkdown.reactMarkdownStrings.Not & TopLevel[js.Any]
   
   type Point = typings.unist.mod.Point
   
   type Position = typings.unist.mod.Position
   
-  type ReactMarkdownProps = ReactMarkdownPropsBase with (MutuallyExclusive[ChildrenProp, SourceProp]) with (MutuallyExclusive[AllowedTypesProp, DisallowedTypesProp]) with (MutuallyExclusive[EscapeHtmlProp, MutuallyExclusive[SkipHtmlProp, AllowDangerousHtmlProp]])
+  type ReactMarkdownProps = ReactMarkdownPropsBase & (MutuallyExclusive[ChildrenProp, SourceProp]) & (MutuallyExclusive[AllowedTypesProp, DisallowedTypesProp]) & (MutuallyExclusive[EscapeHtmlProp, MutuallyExclusive[SkipHtmlProp, AllowDangerousHtmlProp]])
   
-  @js.native
   trait ReactMarkdownPropsBase extends StObject {
     
     val allowNode: js.UndefOr[
         js.Function3[/* node */ Content, /* index */ Double, /* parent */ NodeType, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    val astPlugins: js.UndefOr[PluggableList[Settings]] = js.native
+    val astPlugins: js.UndefOr[PluggableList[Settings]] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val includeNodeIndex: js.UndefOr[Boolean] = js.native
+    val includeNodeIndex: js.UndefOr[Boolean] = js.undefined
     
-    val linkTarget: js.UndefOr[String | LinkTargetResolver] = js.native
+    val linkTarget: js.UndefOr[String | LinkTargetResolver] = js.undefined
     
-    val plugins: js.UndefOr[PluggableList[Settings]] = js.native
+    val plugins: js.UndefOr[PluggableList[Settings]] = js.undefined
     
-    val rawSourcePos: js.UndefOr[Boolean] = js.native
+    val rawSourcePos: js.UndefOr[Boolean] = js.undefined
     
-    val renderers: js.UndefOr[StringDictionary[ElementType[_]]] = js.native
+    val renderers: js.UndefOr[StringDictionary[ElementType[js.Any]]] = js.undefined
     
-    val sourcePos: js.UndefOr[Boolean] = js.native
+    val sourcePos: js.UndefOr[Boolean] = js.undefined
     
     val transformImageUri: js.UndefOr[
         (js.Function4[
@@ -311,7 +306,7 @@ object mod {
           /* alt */ js.UndefOr[String], 
           String
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     val transformLinkUri: js.UndefOr[
         (js.Function3[
@@ -320,9 +315,9 @@ object mod {
           /* title */ js.UndefOr[String], 
           String
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    val unwrapDisallowed: js.UndefOr[Boolean] = js.native
+    val unwrapDisallowed: js.UndefOr[Boolean] = js.undefined
   }
   object ReactMarkdownPropsBase {
     
@@ -387,7 +382,7 @@ object mod {
       def setRawSourcePosUndefined: Self = StObject.set(x, "rawSourcePos", js.undefined)
       
       @scala.inline
-      def setRenderers(value: StringDictionary[ElementType[_]]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      def setRenderers(value: StringDictionary[ElementType[js.Any]]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)
@@ -434,10 +429,9 @@ object mod {
   
   type Renderers_ = StringDictionary[String | Renderer[js.Any]]
   
-  @js.native
   trait SkipHtmlProp extends StObject {
     
-    val skipHtml: js.UndefOr[Boolean] = js.native
+    val skipHtml: js.UndefOr[Boolean] = js.undefined
   }
   object SkipHtmlProp {
     
@@ -458,11 +452,10 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceProp extends StObject {
     
     /** @deprecated use children */
-    val source: String = js.native
+    val source: String
   }
   object SourceProp {
     

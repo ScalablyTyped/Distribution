@@ -2,20 +2,18 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to batch update of metadata of one or more Photos.
   */
-@js.native
 trait SchemaBatchUpdatePhotosResponse extends StObject {
   
   /**
     * List of results for each individual Photo updated, in the same order as
     * the request.
     */
-  var results: js.UndefOr[js.Array[SchemaPhotoResponse]] = js.native
+  var results: js.UndefOr[js.Array[SchemaPhotoResponse]] = js.undefined
 }
 object SchemaBatchUpdatePhotosResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoOptionsStatus extends StObject {
   
   /**
     * Specifies the Cognito options for the specified Elasticsearch domain.
     */
-  var Options: CognitoOptions = js.native
+  var Options: CognitoOptions
   
   /**
     * Specifies the status of the Cognito options for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object CognitoOptionsStatus {
   

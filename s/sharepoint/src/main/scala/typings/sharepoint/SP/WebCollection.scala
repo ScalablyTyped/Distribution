@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebCollection extends ClientObjectCollection[Web] {
+trait WebCollection
+  extends StObject
+     with ClientObjectCollection[Web] {
   
   def add(parameters: WebCreationInformation): Web = js.native
   

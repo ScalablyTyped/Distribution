@@ -2,22 +2,20 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPrice extends StObject {
   
   /**
     * 3 letter Currency code, as defined by ISO 4217.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * The price in millionths of the currency base unit represented as a
     * string.
     */
-  var priceMicros: js.UndefOr[String] = js.native
+  var priceMicros: js.UndefOr[String] = js.undefined
 }
 object SchemaPrice {
   

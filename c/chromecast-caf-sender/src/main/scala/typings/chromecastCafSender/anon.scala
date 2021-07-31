@@ -28,16 +28,14 @@ import typings.chromecastCafSender.cast.framework.SessionStateEventData
 import typings.chromecastCafSender.cast.framework.VolumeEventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofCastContext extends StObject {
     
     /* static member */
-    def getInstance(): CastContext = js.native
+    def getInstance(): CastContext
   }
   object TypeofCastContext {
     
@@ -55,7 +53,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofcast extends StObject {
     
     ////////////////////
@@ -65,7 +62,7 @@ object anon {
       * Cast Application Framework
       * @see https://developers.google.com/cast/docs/reference/chrome/cast.framework
       */
-    val framework: Typeofframework = js.native
+    val framework: Typeofframework
   }
   object Typeofcast {
     
@@ -83,79 +80,78 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofframework extends StObject {
     
     var ActiveInputStateEventData: Instantiable1[
         /* activeInputState */ ActiveInputState, 
         typings.chromecastCafSender.cast.framework.ActiveInputStateEventData
-      ] = js.native
+      ]
     
     var ApplicationMetadata: Instantiable1[
         /* sessionObj */ Session, 
         typings.chromecastCafSender.cast.framework.ApplicationMetadata
-      ] = js.native
+      ]
     
     var ApplicationMetadataEventData: Instantiable1[
         /* metadata */ ApplicationMetadata, 
         typings.chromecastCafSender.cast.framework.ApplicationMetadataEventData
-      ] = js.native
+      ]
     
     var ApplicationStatusEventData: Instantiable1[
         /* status */ String, 
         typings.chromecastCafSender.cast.framework.ApplicationStatusEventData
-      ] = js.native
+      ]
     
-    var CastContext: Instantiable0[typings.chromecastCafSender.cast.framework.CastContext] with TypeofCastContext = js.native
+    var CastContext: Instantiable0[typings.chromecastCafSender.cast.framework.CastContext] & TypeofCastContext
     
     var CastSession: Instantiable2[
         /* sessionObj */ Session, 
         /* state */ SessionState, 
         typings.chromecastCafSender.cast.framework.CastSession
-      ] = js.native
+      ]
     
     var CastStateEventData: Instantiable1[
         /* castState */ CastState, 
         typings.chromecastCafSender.cast.framework.CastStateEventData
-      ] = js.native
+      ]
     
-    var EventData: Instantiable1[/* type */ String, typings.chromecastCafSender.cast.framework.EventData] = js.native
+    var EventData: Instantiable1[/* type */ String, typings.chromecastCafSender.cast.framework.EventData]
     
     var MediaSessionEventData: Instantiable1[
         /* mediaSession */ Media, 
         typings.chromecastCafSender.cast.framework.MediaSessionEventData
-      ] = js.native
+      ]
     
-    var RemotePlayer: Instantiable0[typings.chromecastCafSender.cast.framework.RemotePlayer] = js.native
+    var RemotePlayer: Instantiable0[typings.chromecastCafSender.cast.framework.RemotePlayer]
     
     var RemotePlayerChangedEvent: Instantiable3[
         /* type */ RemotePlayerEventType, 
         /* field */ String, 
         /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ js.Any, 
         typings.chromecastCafSender.cast.framework.RemotePlayerChangedEvent[js.Object]
-      ] = js.native
+      ]
     
     var RemotePlayerController: Instantiable1[
         /* player */ RemotePlayer, 
         typings.chromecastCafSender.cast.framework.RemotePlayerController
-      ] = js.native
+      ]
     
     var SessionStateEventData: Instantiable3[
         /* session */ CastSession, 
         /* sessionState */ SessionState, 
         /* opt_errorCode */ ErrorCode, 
         typings.chromecastCafSender.cast.framework.SessionStateEventData
-      ] = js.native
+      ]
     
-    val VERSION: String = js.native
+    val VERSION: String
     
     var VolumeEventData: Instantiable2[
         /* volume */ Double, 
         /* isMute */ Boolean, 
         typings.chromecastCafSender.cast.framework.VolumeEventData
-      ] = js.native
+      ]
     
-    def setLoggerLevel(level: LoggerLevel): Unit = js.native
+    def setLoggerLevel(level: LoggerLevel): Unit
   }
   object Typeofframework {
     
@@ -165,7 +161,7 @@ object anon {
       ApplicationMetadata: Instantiable1[/* sessionObj */ Session, ApplicationMetadata],
       ApplicationMetadataEventData: Instantiable1[/* metadata */ ApplicationMetadata, ApplicationMetadataEventData],
       ApplicationStatusEventData: Instantiable1[/* status */ String, ApplicationStatusEventData],
-      CastContext: Instantiable0[CastContext] with TypeofCastContext,
+      CastContext: Instantiable0[CastContext] & TypeofCastContext,
       CastSession: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession],
       CastStateEventData: Instantiable1[/* castState */ CastState, CastStateEventData],
       EventData: Instantiable1[/* type */ String, EventData],
@@ -208,7 +204,7 @@ object anon {
       def setApplicationStatusEventData(value: Instantiable1[/* status */ String, ApplicationStatusEventData]): Self = StObject.set(x, "ApplicationStatusEventData", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCastContext(value: Instantiable0[CastContext] with TypeofCastContext): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
+      def setCastContext(value: Instantiable0[CastContext] & TypeofCastContext): Self = StObject.set(x, "CastContext", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCastSession(value: Instantiable2[/* sessionObj */ Session, /* state */ SessionState, CastSession]): Self = StObject.set(x, "CastSession", value.asInstanceOf[js.Any])

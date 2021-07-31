@@ -2,7 +2,6 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Type Definition
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typedGraphql.mod.InputObjectTypeDefinition
   - typings.typedGraphql.mod.TypeExtensionDefinition
 */
-trait TypeDefinition extends Definition
+trait TypeDefinition
+  extends StObject
+     with Definition
 object TypeDefinition {
   
   @scala.inline

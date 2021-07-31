@@ -4,189 +4,189 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextInView extends RenderContext {
+trait RenderContextInView
+  extends StObject
+     with RenderContext {
   
-  var AllowCreateFolder: Boolean = js.native
+  var AllowCreateFolder: Boolean
   
-  var AllowGridMode: Boolean = js.native
+  var AllowGridMode: Boolean
   
-  var BasePermissions: StringDictionary[Boolean] = js.native
+  var BasePermissions: StringDictionary[Boolean]
   
-  var CanShareLinkForNewDocument: Boolean = js.native
+  var CanShareLinkForNewDocument: Boolean
   
-  var CascadeDeleteWarningMessage: String = js.native
-  
-  // not in View
-  var ContentTypesEnabled: Boolean = js.native
+  var CascadeDeleteWarningMessage: String
   
   // not in View
-  var CurrentUserId: Double = js.native
+  var ContentTypesEnabled: Boolean
   
-  var CurrentUserIsSiteAdmin: Boolean = js.native
+  // not in View
+  var CurrentUserId: Double
   
-  var EnableMinorVersions: Boolean = js.native
+  var CurrentUserIsSiteAdmin: Boolean
   
-  var ExternalDataList: Boolean = js.native
+  var EnableMinorVersions: Boolean
   
-  var HasRelatedCascadeLists: Double = js.native
+  var ExternalDataList: Boolean
+  
+  var HasRelatedCascadeLists: Double
   
   // e.g. "idHomePageNewItem"
-  var HttpPath: String = js.native
+  var HttpPath: String
   
-  var HttpRoot: String = js.native
+  var HttpRoot: String
   
-  var IsAppWeb: Boolean = js.native
+  var IsAppWeb: Boolean
   
-  var IsClientRendering: Boolean = js.native
+  var IsClientRendering: Boolean
   
-  var LastRowIndexSelected: js.Any = js.native
-  
-  // not in View
-  var LastSelectableRowIdx: js.Any = js.native
-  
-  var LastSelectedItemIID: js.Any = js.native
-  
-  var LastSelectedItemId: js.Any = js.native
-  
-  var ListData: ListDataInView = js.native
-  
-  var ListDataJSONItemsKey: String = js.native
-  
-  var ListSchema: ListSchemaInView = js.native
-  
-  var ListTitle: String = js.native
-  
-  var ModerationStatus: Double = js.native
-  
-  var NavigateForFormsPages: Boolean = js.native
-  
-  var NewWOPIDocumentEnabled: js.Any = js.native
-  
-  var NewWOPIDocumentUrl: js.Any = js.native
-  
-  var OfficialFileName: String = js.native
-  
-  var OfficialFileNames: String = js.native
+  var LastRowIndexSelected: js.Any
   
   // not in View
-  var PortalUrl: String = js.native
+  var LastSelectableRowIdx: js.Any
+  
+  var LastSelectedItemIID: js.Any
+  
+  var LastSelectedItemId: js.Any
+  
+  var ListData: ListDataInView
+  
+  var ListDataJSONItemsKey: String
+  
+  var ListSchema: ListSchemaInView
+  
+  var ListTitle: String
+  
+  var ModerationStatus: Double
+  
+  var NavigateForFormsPages: Boolean
+  
+  var NewWOPIDocumentEnabled: js.Any
+  
+  var NewWOPIDocumentUrl: js.Any
+  
+  var OfficialFileName: String
+  
+  var OfficialFileNames: String
+  
+  // not in View
+  var PortalUrl: String
   
   /** either 1 or 0 */
-  var RecycleBinEnabled: Double = js.native
+  var RecycleBinEnabled: Double
   
-  var RegionalSettingsTimeZoneBias: String = js.native
+  var RegionalSettingsTimeZoneBias: String
   
-  var RowFocusTimerID: js.Any = js.native
+  var RowFocusTimerID: js.Any
   
-  var SelectAllCbx: js.Any = js.native
+  var SelectAllCbx: js.Any
   
-  var SendToLocationName: String = js.native
+  var SendToLocationName: String
   
-  var SendToLocationUrl: String = js.native
+  var SendToLocationUrl: String
   
-  var SiteTitle: String = js.native
+  var SiteTitle: String
   
-  var StateInitDone: Boolean = js.native
+  var StateInitDone: Boolean
   
-  var TableCbxFocusHandler: js.Any = js.native
+  var TableCbxFocusHandler: js.Any
   
-  var TableMouseOverHandler: js.Any = js.native
+  var TableMouseOverHandler: js.Any
   
-  var TotalListItems: Double = js.native
+  var TotalListItems: Double
   
-  var WorkflowAssociated: Boolean = js.native
+  var WorkflowAssociated: Boolean
   
-  var WriteSecurity: String = js.native
+  var WriteSecurity: String
   
   // SP.BasePermissions?
-  var bInitialRender: Boolean = js.native
+  var bInitialRender: Boolean
   
-  var clvp: HTMLElement = js.native
+  var clvp: HTMLElement
   
-  var ctxId: Double = js.native
+  var ctxId: Double
   
-  var ctxType: js.Any = js.native
+  var ctxType: js.Any
   
-  var dictSel: js.Any = js.native
+  var dictSel: js.Any
   
   /** Absolute path for the list display form */
-  var displayFormUrl: String = js.native
+  var displayFormUrl: String
   
   /** Absolute path for the list edit form */
-  var editFormUrl: String = js.native
+  var editFormUrl: String
   
-  var enteringGridMode: Boolean = js.native
+  var enteringGridMode: Boolean
   
-  var existingServerFilterHash: js.Any = js.native
+  var existingServerFilterHash: js.Any
   
-  var heroId: String = js.native
+  var heroId: String
   
-  var imagesPath: String = js.native
+  var imagesPath: String
   
-  var inGridFullRender: js.Any = js.native
-  
-  // not in View
-  var inGridMode: Boolean = js.native
-  
-  var isForceCheckout: Boolean = js.native
-  
-  var isModerated: Boolean = js.native
-  
-  var isPortalTemplate: js.Any = js.native
-  
-  var isVersions: Double = js.native
-  
-  var isWebEditorPreview: Double = js.native
-  
-  var isXslView: Boolean = js.native
+  var inGridFullRender: js.Any
   
   // not in View
-  var leavingGridMode: Boolean = js.native
+  var inGridMode: Boolean
   
-  var listBaseType: Double = js.native
+  var isForceCheckout: Boolean
+  
+  var isModerated: Boolean
+  
+  var isPortalTemplate: js.Any
+  
+  var isVersions: Double
+  
+  var isWebEditorPreview: Double
+  
+  var isXslView: Boolean
+  
+  // not in View
+  var leavingGridMode: Boolean
+  
+  var listBaseType: Double
   
   // ="Row"
   /** Guid of the list */
-  var listName: String = js.native
+  var listName: String
   
-  var listTemplate: String = js.native
+  var listTemplate: String
   
-  var listUrlDir: String = js.native
+  var listUrlDir: String
   
-  var loadingAsyncData: Boolean = js.native
+  var loadingAsyncData: Boolean
   
   /** Absolute path for the list new form */
-  var newFormUrl: String = js.native
+  var newFormUrl: String
   
-  var noGroupCollapse: Boolean = js.native
+  var noGroupCollapse: Boolean
   
-  var overrideDeleteConfirmation: String = js.native
+  var overrideDeleteConfirmation: String
   
   // not in View
-  var overrideFilterQstring: String = js.native
+  var overrideFilterQstring: String
   
-  var queryString: js.Any = js.native
+  var queryString: js.Any
   
-  var recursiveView: Boolean = js.native
+  var recursiveView: Boolean
   
-  var rootFolder: String = js.native
+  var rootFolder: String
   
-  var rootFolderForDisplay: js.Any = js.native
+  var rootFolderForDisplay: js.Any
   
-  var serverUrl: js.Any = js.native
+  var serverUrl: js.Any
   
-  var verEnabled: Double = js.native
+  var verEnabled: Double
   
   /** Guid of the view. */
-  var view: String = js.native
+  var view: String
   
-  var viewTitle: String = js.native
+  var viewTitle: String
   
-  var wpq: String = js.native
+  var wpq: String
 }
 object RenderContextInView {
   

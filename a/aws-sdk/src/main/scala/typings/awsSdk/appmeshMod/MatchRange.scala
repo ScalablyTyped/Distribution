@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchRange extends StObject {
   
   /**
     * The end of the range.
     */
-  var end: Long = js.native
+  var end: Long
   
   /**
     * The start of the range.
     */
-  var start: Long = js.native
+  var start: Long
 }
 object MatchRange {
   

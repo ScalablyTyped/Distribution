@@ -2,23 +2,21 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var Format: String = js.native
+  var Format: String
   
-  var Overlap: String = js.native
+  var Overlap: String
   
-  var Size: Width = js.native
+  var Size: Width
   
-  var TileSize: String = js.native
+  var TileSize: String
   
-  var Url: String = js.native
+  var Url: String
   
-  var xmlns: js.UndefOr[String] = js.native
+  var xmlns: js.UndefOr[String] = js.undefined
 }
 object Format {
   

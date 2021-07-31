@@ -17,7 +17,6 @@ import typings.intercomWeb.intercomWebStrings.trackEvent
 import typings.intercomWeb.intercomWebStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Intercom {
@@ -84,56 +83,55 @@ object Intercom {
     def update: typings.intercomWeb.intercomWebStrings.update = "update".asInstanceOf[typings.intercomWeb.intercomWebStrings.update]
   }
   
-  @js.native
   trait IntercomSettings extends StObject {
     
-    var action_color: js.UndefOr[String] = js.native
+    var action_color: js.UndefOr[String] = js.undefined
     
-    var alignment: js.UndefOr[String] = js.native
+    var alignment: js.UndefOr[String] = js.undefined
     
     // Messenger attributes
-    var app_id: js.UndefOr[String] = js.native
+    var app_id: js.UndefOr[String] = js.undefined
     
-    var background_color: js.UndefOr[String] = js.native
+    var background_color: js.UndefOr[String] = js.undefined
     
-    var company: js.UndefOr[Createdat] = js.native
+    var company: js.UndefOr[Createdat] = js.undefined
     
-    var created_at: js.UndefOr[Double] = js.native
+    var created_at: js.UndefOr[Double] = js.undefined
     
-    var custom_launcher_selector: js.UndefOr[String] = js.native
+    var custom_launcher_selector: js.UndefOr[String] = js.undefined
     
     // Data attributes
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var hide_default_launcher: js.UndefOr[Boolean] = js.native
+    var hide_default_launcher: js.UndefOr[Boolean] = js.undefined
     
-    var horizontal_padding: js.UndefOr[Double] = js.native
+    var horizontal_padding: js.UndefOr[Double] = js.undefined
     
-    var language_override: js.UndefOr[String] = js.native
+    var language_override: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
     
-    var session_duration: js.UndefOr[Double] = js.native
+    var session_duration: js.UndefOr[Double] = js.undefined
     
-    var unsubscribed_from_emails: js.UndefOr[Boolean] = js.native
+    var unsubscribed_from_emails: js.UndefOr[Boolean] = js.undefined
     
-    var user_hash: js.UndefOr[String] = js.native
+    var user_hash: js.UndefOr[String] = js.undefined
     
-    var user_id: js.UndefOr[String] = js.native
+    var user_id: js.UndefOr[String] = js.undefined
     
-    var utm_campaign: js.UndefOr[String] = js.native
+    var utm_campaign: js.UndefOr[String] = js.undefined
     
-    var utm_content: js.UndefOr[String] = js.native
+    var utm_content: js.UndefOr[String] = js.undefined
     
-    var utm_medium: js.UndefOr[String] = js.native
+    var utm_medium: js.UndefOr[String] = js.undefined
     
-    var utm_source: js.UndefOr[String] = js.native
+    var utm_source: js.UndefOr[String] = js.undefined
     
-    var utm_term: js.UndefOr[String] = js.native
+    var utm_term: js.UndefOr[String] = js.undefined
     
-    var vertical_padding: js.UndefOr[Double] = js.native
+    var vertical_padding: js.UndefOr[Double] = js.undefined
   }
   object IntercomSettings {
     
@@ -290,9 +288,9 @@ object Intercom {
   trait IntercomStatic extends StObject {
     
     def apply(command: IntercomCommand): Unit = js.native
-    def apply(command: IntercomCommand, param1: js.UndefOr[scala.Nothing], param2: js.Any): Unit = js.native
     def apply(command: IntercomCommand, param1: js.Any): Unit = js.native
     def apply(command: IntercomCommand, param1: js.Any, param2: js.Any): Unit = js.native
+    def apply(command: IntercomCommand, param1: Unit, param2: js.Any): Unit = js.native
     def apply(command: boot, param: IntercomSettings): Unit = js.native
     def apply(command: getVisitorId): String = js.native
     def apply(command: hide): Unit = js.native
@@ -310,9 +308,9 @@ object Intercom {
     def apply(command: shutdown): Unit = js.native
     def apply(command: startTour, tourId: Double): Unit = js.native
     def apply(command: trackEvent): Unit = js.native
-    def apply(command: trackEvent, tag: js.UndefOr[scala.Nothing], metadata: js.Any): Unit = js.native
     def apply(command: trackEvent, tag: String): Unit = js.native
     def apply(command: trackEvent, tag: String, metadata: js.Any): Unit = js.native
+    def apply(command: trackEvent, tag: Unit, metadata: js.Any): Unit = js.native
     def apply(command: update): Unit = js.native
     def apply(command: update, param: IntercomSettings): Unit = js.native
     

@@ -5,28 +5,26 @@ import typings.std.Error
 import typings.xml2js.mod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Encoding extends StObject {
     
     // requested encoding. Default is utf8. If not set, the lib will retrive it from content-type(such as content-type:application/xml;charset=gb2312).
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     // length of the body. When content-length is found, it will be overwritten automatically.
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     // limit of the body. If the body ends up being larger than this limit, a 413 error code is returned. Default is 1mb.
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     // error handler. Default is a noop function. It means it will eat the error silently. You can config it to customize the response.
-    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function2[/* err */ Error, /* ctx */ Context, Unit]] = js.undefined
     
     // options which will be used to parse xml. Default is {}. See xml2js Options for details.
-    var xmlOptions: js.UndefOr[ParserOptions] = js.native
+    var xmlOptions: js.UndefOr[ParserOptions] = js.undefined
   }
   object Encoding {
     

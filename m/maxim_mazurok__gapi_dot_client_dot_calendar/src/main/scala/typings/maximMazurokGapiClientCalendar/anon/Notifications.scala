@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientCalendar.anon
 import typings.maximMazurokGapiClientCalendar.gapi.client.calendar.CalendarNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notifications extends StObject {
   
   /** The list of notifications set for this calendar. */
-  var notifications: js.UndefOr[js.Array[CalendarNotification]] = js.native
+  var notifications: js.UndefOr[js.Array[CalendarNotification]] = js.undefined
 }
 object Notifications {
   

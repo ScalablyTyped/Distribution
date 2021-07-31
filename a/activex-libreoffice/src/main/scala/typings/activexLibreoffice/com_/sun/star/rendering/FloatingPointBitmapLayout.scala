@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,31 +10,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure collects all necessary information to describe the memory layout of a bitmap having floating point color channels
   * @since OOo 2.0
   */
-@js.native
 trait FloatingPointBitmapLayout extends StObject {
   
-  var ColorSpace: XColorSpace = js.native
+  var ColorSpace: XColorSpace
   
   /**
     * Endianness of the pixel values.
     *
     * This value must be one of the Endianness constants
     */
-  var Endianness: Double = js.native
+  var Endianness: Double
   
   /**
     * Format type of this bitmap.
     *
     * This value must be one of the {@link FloatingPointBitmapFormat} constants.
     */
-  var Format: Double = js.native
+  var Format: Double
   
   /**
     * Number of color components per pixel.
     *
     * This value must not be negative
     */
-  var NumComponents: Double = js.native
+  var NumComponents: Double
   
   /**
     * Byte offset between the start of two consecutive planes.
@@ -45,28 +43,28 @@ trait FloatingPointBitmapLayout extends StObject {
     * pixel lies consecutively in memory. For a planar layout, the first channel of all pixel is stored consecutive, followed by the second channel, and so
     * forth.
     */
-  var PlaneStride: Double = js.native
+  var PlaneStride: Double
   
   /**
     * Number of data bytes per scanline.
     *
     * This value must not be negative
     */
-  var ScanLineBytes: Double = js.native
+  var ScanLineBytes: Double
   
   /**
     * Byte offset between the start of two consecutive scanlines.
     *
     * This value is permitted to be negative, denoting a bitmap whose content is flipped at the x axis.
     */
-  var ScanLineStride: Double = js.native
+  var ScanLineStride: Double
   
   /**
     * Number of scanlines for this bitmap.
     *
     * This value must not be negative
     */
-  var ScanLines: Double = js.native
+  var ScanLines: Double
 }
 object FloatingPointBitmapLayout {
   

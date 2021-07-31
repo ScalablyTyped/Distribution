@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateParam extends StObject {
   
   /**
     * The keys associated with an update request.
     */
-  var `type`: js.UndefOr[UpdateParamType] = js.native
+  var `type`: js.UndefOr[UpdateParamType] = js.undefined
   
   /**
     * The value of the keys submitted as part of an update request.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object UpdateParam {
   

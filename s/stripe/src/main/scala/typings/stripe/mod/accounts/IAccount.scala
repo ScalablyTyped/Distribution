@@ -11,12 +11,11 @@ import typings.stripe.stripeStrings.express
 import typings.stripe.stripeStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccount
-  extends IResourceObject
+  extends StObject
+     with IResourceObject
      with IAccountShared {
   
   /**
@@ -24,89 +23,89 @@ trait IAccount
     * account and their associatedstates. Keys are names of capabilities.
     * You can see the full list here. Values may be active, inactive, or pending.
     */
-  var capabilities: js.UndefOr[Cardpayments] = js.native
+  var capabilities: js.UndefOr[Cardpayments] = js.undefined
   
   /**
     * Whether or not the account can create live charges
     */
-  var charges_enabled: Boolean = js.native
+  var charges_enabled: Boolean
   
   /**
     * Information about the company or business.
     * This field is null unless business_type is set to company.
     */
-  var company: js.UndefOr[ICompany] = js.native
+  var company: js.UndefOr[ICompany] = js.undefined
   
   /**
     * The country of the account
     */
-  var country: String = js.native
+  var country: String
   
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
-  var created: js.UndefOr[Double] = js.native
+  var created: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not account details have been submitted yet. Standalone
     * accounts cannot receive transfers before this is true.
     */
-  var details_submitted: Boolean = js.native
+  var details_submitted: Boolean
   
   /**
     * The display name for this account. This is used on the Stripe dashboard to
     * help you differentiate between accounts.
     */
-  var display_name: String = js.native
+  var display_name: String
   
   /**
     * External accounts (bank accounts and debit cards) currently
     * attached to this account
     */
-  var external_accounts: js.UndefOr[IList[IExternalAccount]] = js.native
+  var external_accounts: js.UndefOr[IList[IExternalAccount]] = js.undefined
   
   /**
     * Information about the person represented by the account.
     * This field is null unless business_type is set to individual.
     */
-  var individual: js.UndefOr[IIndividual] = js.native
+  var individual: js.UndefOr[IIndividual] = js.undefined
   
   /**
     * Set of key-value pairs that you can attach to an object. This can be useful
     * for storing additional information about the object in a structured format.
     */
-  var metadata: js.UndefOr[IMetadata] = js.native
+  var metadata: js.UndefOr[IMetadata] = js.undefined
   
   /**
     * Value is "account"
     */
   @JSName("object")
-  var object_IAccount: account = js.native
+  var object_IAccount: account
   
   /**
     * Whether or not Stripe will send automatic transfers for this account. This
     * is only false when Stripe is waiting for additional information from the
     * account holder.
     */
-  var payouts_enabled: Boolean = js.native
+  var payouts_enabled: Boolean
   
   /**
     * Information about the requirements for the account, including what information
     * needs to be collected, and by when.
     */
-  var requirements: js.UndefOr[IAccountRequirements] = js.native
+  var requirements: js.UndefOr[IAccountRequirements] = js.undefined
   
   /**
     * The Stripe account type. Can be standard, express, or custom.
     */
-  var `type`: standard | express | custom = js.native
+  var `type`: standard | express | custom
   
   /**
     * The state of the account’s information requests, including what
     * information is needed and by when it must be provided.
     * @deprecated
     */
-  var verification: js.UndefOr[Disabledreason] = js.native
+  var verification: js.UndefOr[Disabledreason] = js.undefined
 }
 object IAccount {
   
@@ -117,12 +116,11 @@ object IAccount {
     details_submitted: Boolean,
     display_name: String,
     id: String,
-    `object`: account,
     payouts_enabled: Boolean,
     `type`: standard | express | custom
   ): IAccount = {
     val __obj = js.Dynamic.literal(charges_enabled = charges_enabled.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], details_submitted = details_submitted.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payouts_enabled = payouts_enabled.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("account")
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccount]
   }

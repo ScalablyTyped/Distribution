@@ -2,14 +2,14 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorChangeLinkedList extends EditorChange {
+trait EditorChangeLinkedList
+  extends StObject
+     with EditorChange {
   
   /** Points to another change object (which may point to another, etc). */
-  var next: js.UndefOr[EditorChangeLinkedList] = js.native
+  var next: js.UndefOr[EditorChangeLinkedList] = js.undefined
 }
 object EditorChangeLinkedList {
   

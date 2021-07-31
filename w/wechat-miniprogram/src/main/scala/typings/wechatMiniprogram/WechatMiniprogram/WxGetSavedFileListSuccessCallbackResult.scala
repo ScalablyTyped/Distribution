@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WxGetSavedFileListSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 文件数组，每一项是一个 FileItem */
-  var fileList: js.Array[FileItem] = js.native
+  var fileList: js.Array[FileItem]
 }
 object WxGetSavedFileListSuccessCallbackResult {
   

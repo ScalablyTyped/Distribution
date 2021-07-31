@@ -2,10 +2,8 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxImageOption extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait FancyBoxImageOption extends StObject {
     *   false - display thumbnail and load the full-sized image over top,
     *               requires predefined image dimensions (`data-width` and `data-height` attributes)
     */
-  var preload: Boolean = js.native
+  var preload: Boolean
 }
 object FancyBoxImageOption {
   

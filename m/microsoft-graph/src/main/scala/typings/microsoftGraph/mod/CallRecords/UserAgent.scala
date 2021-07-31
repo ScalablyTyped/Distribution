@@ -3,17 +3,15 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgent extends StObject {
   
   // Identifies the version of application software used by this endpoint.
-  var applicationVersion: js.UndefOr[NullableOption[String]] = js.native
+  var applicationVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User-agent header value reported by this endpoint.
-  var headerValue: js.UndefOr[NullableOption[String]] = js.native
+  var headerValue: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object UserAgent {
   

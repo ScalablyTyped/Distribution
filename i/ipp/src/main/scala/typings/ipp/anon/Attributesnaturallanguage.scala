@@ -3,19 +3,17 @@ package typings.ipp.anon
 import typings.ipp.mod.CharacterSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributesnaturallanguage extends StObject {
   
-  var `attributes-charset`: CharacterSet = js.native
+  var `attributes-charset`: CharacterSet
   
-  var `attributes-natural-language`: String = js.native
+  var `attributes-natural-language`: String
   
-  var `detailed-status-message`: js.UndefOr[String] = js.native
+  var `detailed-status-message`: js.UndefOr[String] = js.undefined
   
-  var `status-message`: js.UndefOr[String] = js.native
+  var `status-message`: js.UndefOr[String] = js.undefined
 }
 object Attributesnaturallanguage {
   

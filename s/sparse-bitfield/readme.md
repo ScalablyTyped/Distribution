@@ -12,7 +12,7 @@ Bitfield that allocates a series of small buffers to support sparse bits without
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 40982458 |
+| # downloads        | 57347669 |
 | # stars            | 0 |
 
 ## Links

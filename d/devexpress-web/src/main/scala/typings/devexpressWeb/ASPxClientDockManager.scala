@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxDockManager object.
   */
 @js.native
-trait ASPxClientDockManager extends ASPxClientControl {
+trait ASPxClientDockManager
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Fires on the client side after a panel is docked in a zone.

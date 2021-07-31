@@ -8,17 +8,23 @@ import typings.zfont.anon.Typeofzdog
 import typings.zfont.zfontBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zfont", "init")
+  @JSImport("zfont", JSImport.Namespace)
   @js.native
-  def init(x: Typeofzdog): Typeofzdog = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def init(x: Typeofzdog): Typeofzdog = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(x.asInstanceOf[js.Any]).asInstanceOf[Typeofzdog]
   
   /* augmented module */
   object zdogAugmentingMod {
+    
+    @JSImport("zdog", JSImport.Namespace)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Represents a font that can be used by an instance of either {@link Text} or {@link TextGroup}.
@@ -125,19 +131,17 @@ object mod {
       * Returns a {@link Promise} which resolves as soon as all the fonts currently added to the scene are loaded and ready for use.
       * @see {@link https://github.com/jaames/zfont#zdogtext Zfont API}
       */
-    @JSImport("zdog", "waitForFonts")
-    @js.native
-    def waitForFonts(): js.Promise[js.Array[js.UndefOr[scala.Nothing]]] = js.native
+    @scala.inline
+    def waitForFonts(): js.Promise[js.Array[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForFonts")().asInstanceOf[js.Promise[js.Array[Unit]]]
     
     /**
       * @see {@link Font}
       * @see {@link https://github.com/jaames/zfont#options Zfont API}
       */
-    @js.native
     trait FontOptions extends StObject {
       
       /** Font URL path. This can be a `.ttf` or `.otf` font, check out the {@link https://github.com/photopea/Typr.js Typr.js repo} for more details about font support. */
-      val src: String = js.native
+      val src: String
     }
     object FontOptions {
       
@@ -208,54 +212,55 @@ object mod {
       * @see {@link TextGroup}
       * @see {@link https://github.com/jaames/zfont#options-2 Zfont API}
       */
-    @js.native
-    trait TextGroupOptions[T /* <: MultilineText */] extends GroupOptions {
+    trait TextGroupOptions[T /* <: MultilineText */]
+      extends StObject
+         with GroupOptions {
       
       /**
         * @default '#333'
         * @see {@link TextGroup#color}
         */
-      val color: js.UndefOr[String] = js.native
+      val color: js.UndefOr[String] = js.undefined
       
       /**
         * @default false
         * @see {@link TextGroup#fill}
         */
-      val fill: js.UndefOr[Boolean] = js.native
+      val fill: js.UndefOr[Boolean] = js.undefined
       
       /** @see {@link TextGroup#font} */
-      val font: Font = js.native
+      val font: Font
       
       /**
         * Measured in pixels.
         * @default 64
         * @see {@link TextGroup#fontSize}
         */
-      val fontSize: js.UndefOr[Double] = js.native
+      val fontSize: js.UndefOr[Double] = js.undefined
       
       /**
         * @default 1
         * @see {@link TextGroup#stroke}
         */
-      val stroke: js.UndefOr[Double | `false`] = js.native
+      val stroke: js.UndefOr[Double | `false`] = js.undefined
       
       /**
         * @default 'left'
         * @see {@link TextGroup#textAlign}
         */
-      val textAlign: js.UndefOr[TextAlign] = js.native
+      val textAlign: js.UndefOr[TextAlign] = js.undefined
       
       /**
         * @default 'bottom'
         * @see {@link TextGroup#textBaseline}
         */
-      val textBaseline: js.UndefOr[TextBaseline] = js.native
+      val textBaseline: js.UndefOr[TextBaseline] = js.undefined
       
       /**
         * @default ''
         * @see {@link TextGroup#value}
         */
-      val value: js.UndefOr[T] = js.native
+      val value: js.UndefOr[T] = js.undefined
     }
     object TextGroupOptions {
       
@@ -266,7 +271,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class TextGroupOptionsMutableBuilder[Self <: TextGroupOptions[_], T /* <: MultilineText */] (val x: Self with TextGroupOptions[T]) extends AnyVal {
+      implicit class TextGroupOptionsMutableBuilder[Self <: TextGroupOptions[?], T /* <: MultilineText */] (val x: Self & TextGroupOptions[T]) extends AnyVal {
         
         @scala.inline
         def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -319,36 +324,37 @@ object mod {
       * @see {@link Text}
       * @see {@link https://github.com/jaames/zfont#options-1 Zfont API}
       */
-    @js.native
-    trait TextOptions[T /* <: MultilineText */] extends ShapeOptions {
+    trait TextOptions[T /* <: MultilineText */]
+      extends StObject
+         with ShapeOptions {
       
       /** @see {@link Text#font} */
-      val font: Font = js.native
+      val font: Font
       
       /**
         * Measured in pixels.
         * @default 64
         * @see {@link Text#fontSize}
         */
-      val fontSize: js.UndefOr[Double] = js.native
+      val fontSize: js.UndefOr[Double] = js.undefined
       
       /**
         * @default 'left'
         * @see {@link Text#textAlign}
         */
-      val textAlign: js.UndefOr[TextAlign] = js.native
+      val textAlign: js.UndefOr[TextAlign] = js.undefined
       
       /**
         * @default 'bottom'
         * @see {@link Text#textBaseline}
         */
-      val textBaseline: js.UndefOr[TextBaseline] = js.native
+      val textBaseline: js.UndefOr[TextBaseline] = js.undefined
       
       /**
         * @default ''
         * @see {@link Text#value}
         */
-      val value: js.UndefOr[T] = js.native
+      val value: js.UndefOr[T] = js.undefined
     }
     object TextOptions {
       
@@ -359,7 +365,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class TextOptionsMutableBuilder[Self <: TextOptions[_], T /* <: MultilineText */] (val x: Self with TextOptions[T]) extends AnyVal {
+      implicit class TextOptionsMutableBuilder[Self <: TextOptions[?], T /* <: MultilineText */] (val x: Self & TextOptions[T]) extends AnyVal {
         
         @scala.inline
         def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])

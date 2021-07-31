@@ -3,41 +3,39 @@ package typings.artyomJs
 import typings.artyomJs.anon.FatalityPromiseCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtyomProperties extends StObject {
   
-  var continuous: js.UndefOr[Boolean] = js.native
+  var continuous: js.UndefOr[Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var executionKeyword: js.UndefOr[String] = js.native
+  var executionKeyword: js.UndefOr[String] = js.undefined
   
-  var helpers: js.UndefOr[FatalityPromiseCallback] = js.native
+  var helpers: js.UndefOr[FatalityPromiseCallback] = js.undefined
   
-  var lang: String = js.native
+  var lang: String
   
-  var listen: Boolean = js.native
+  var listen: Boolean
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var obeyKeyword: js.UndefOr[String] = js.native
+  var obeyKeyword: js.UndefOr[String] = js.undefined
   
-  var obeying: js.UndefOr[Boolean] = js.native
+  var obeying: js.UndefOr[Boolean] = js.undefined
   
-  var recognizing: js.UndefOr[Boolean] = js.native
+  var recognizing: js.UndefOr[Boolean] = js.undefined
   
-  var soundex: js.UndefOr[Boolean] = js.native
+  var soundex: js.UndefOr[Boolean] = js.undefined
   
-  var speaking: js.UndefOr[Boolean] = js.native
+  var speaking: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object ArtyomProperties {
   

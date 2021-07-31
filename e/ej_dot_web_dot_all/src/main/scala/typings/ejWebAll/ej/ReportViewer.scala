@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReportViewer extends Widget_ {
+trait ReportViewer
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -93,19 +94,27 @@ object ReportViewer {
     
     ///Specifies the Excel2007 property in ExcelFormats to get specified version of exported format.
     @js.native
-    sealed trait Excel2007 extends ExcelFormats
+    sealed trait Excel2007
+      extends StObject
+         with ExcelFormats
     
     ///Specifies the Excel2010 property in ExcelFormats to get specified version of exported format.
     @js.native
-    sealed trait Excel2010 extends ExcelFormats
+    sealed trait Excel2010
+      extends StObject
+         with ExcelFormats
     
     ///Specifies the Excel2013 property in ExcelFormats to get specified version of exported format.
     @js.native
-    sealed trait Excel2013 extends ExcelFormats
+    sealed trait Excel2013
+      extends StObject
+         with ExcelFormats
     
     ///Specifies the Excel97to2003 property in ExcelFormats to get specified version of exported format.
     @js.native
-    sealed trait Excel97to2003 extends ExcelFormats
+    sealed trait Excel97to2003
+      extends StObject
+         with ExcelFormats
   }
   
   @js.native
@@ -116,35 +125,51 @@ object ReportViewer {
     
     ///Specifies the All property in ExportOptions to get all available options.
     @js.native
-    sealed trait All extends ExportOptions
+    sealed trait All
+      extends StObject
+         with ExportOptions
     
     ///Specifies the CSV property in ExportOptions to get CSV option.
     @js.native
-    sealed trait CSV extends ExportOptions
+    sealed trait CSV
+      extends StObject
+         with ExportOptions
     
     ///Specifies the customItems property in ExportOptions to get customItems option.
     @js.native
-    sealed trait CustomItems extends ExportOptions
+    sealed trait CustomItems
+      extends StObject
+         with ExportOptions
     
     ///Specifies the Excel property in ExportOptions to get Excel option.
     @js.native
-    sealed trait Excel extends ExportOptions
+    sealed trait Excel
+      extends StObject
+         with ExportOptions
     
     ///Specifies the Html property in ExportOptions to get Html option.
     @js.native
-    sealed trait Html extends ExportOptions
+    sealed trait Html
+      extends StObject
+         with ExportOptions
     
     ///Specifies the PPT property in ExportOptions to get PPT option.
     @js.native
-    sealed trait PPT extends ExportOptions
+    sealed trait PPT
+      extends StObject
+         with ExportOptions
     
     ///Specifies the Pdf property in ExportOptions to get Pdf option.
     @js.native
-    sealed trait Pdf extends ExportOptions
+    sealed trait Pdf
+      extends StObject
+         with ExportOptions
     
     ///Specifies the Word property in ExportOptions to get Word option.
     @js.native
-    sealed trait Word extends ExportOptions
+    sealed trait Word
+      extends StObject
+         with ExportOptions
   }
   
   @js.native
@@ -156,12 +181,14 @@ object ReportViewer {
     ///Specifies the Landscape property in pageSettings.orientation to get specified layout.
     @js.native
     sealed trait Landscape
-      extends typings.ejWebAll.ej.ReportViewer.Orientation
+      extends StObject
+         with typings.ejWebAll.ej.ReportViewer.Orientation
     
     ///Specifies the portrait property in pageSettings.orientation to get specified layout.
     @js.native
     sealed trait Portrait
-      extends typings.ejWebAll.ej.ReportViewer.Orientation
+      extends StObject
+         with typings.ejWebAll.ej.ReportViewer.Orientation
   }
   
   @js.native
@@ -172,19 +199,27 @@ object ReportViewer {
     
     ///Represents PowerPoint2007 version.
     @js.native
-    sealed trait PowerPoint2007 extends PPTFormats
+    sealed trait PowerPoint2007
+      extends StObject
+         with PPTFormats
     
     ///Represents PowerPoint2010 version.
     @js.native
-    sealed trait PowerPoint2010 extends PPTFormats
+    sealed trait PowerPoint2010
+      extends StObject
+         with PPTFormats
     
     ///Represents PowerPoint2013 version.
     @js.native
-    sealed trait PowerPoint2013 extends PPTFormats
+    sealed trait PowerPoint2013
+      extends StObject
+         with PPTFormats
     
     ///Represents PowerPoint97to2003 version.
     @js.native
-    sealed trait PowerPoint97to2003 extends PPTFormats
+    sealed trait PowerPoint97to2003
+      extends StObject
+         with PPTFormats
   }
   
   @js.native
@@ -195,47 +230,69 @@ object ReportViewer {
     
     ///Specifies the A3 as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait A3 extends PaperSize
+    sealed trait A3
+      extends StObject
+         with PaperSize
     
     ///Specifies the B4(JIS) as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait B4_JIS extends PaperSize
+    sealed trait B4_JIS
+      extends StObject
+         with PaperSize
     
     ///Specifies the B5(JIS) as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait B5_JIS extends PaperSize
+    sealed trait B5_JIS
+      extends StObject
+         with PaperSize
     
     ///Specifies the Custom as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Custom extends PaperSize
+    sealed trait Custom
+      extends StObject
+         with PaperSize
     
     ///Specifies the Envelope #10 as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Envelope_10 extends PaperSize
+    sealed trait Envelope_10
+      extends StObject
+         with PaperSize
     
     ///Specifies the Envelope as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Envelope_Monarch extends PaperSize
+    sealed trait Envelope_Monarch
+      extends StObject
+         with PaperSize
     
     ///Specifies the Executive as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Executive extends PaperSize
+    sealed trait Executive
+      extends StObject
+         with PaperSize
     
     ///Specifies the Legal as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Legal extends PaperSize
+    sealed trait Legal
+      extends StObject
+         with PaperSize
     
     ///Specifies the Letter as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Letter extends PaperSize
+    sealed trait Letter
+      extends StObject
+         with PaperSize
     
     ///Specifies the A4 as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Portrait extends PaperSize
+    sealed trait Portrait
+      extends StObject
+         with PaperSize
     
     ///Specifies the Tabloid as value in pageSettings.paperSize to get specified size.
     @js.native
-    sealed trait Tabloid extends PaperSize
+    sealed trait Tabloid
+      extends StObject
+         with PaperSize
   }
   
   @js.native
@@ -246,15 +303,21 @@ object ReportViewer {
     
     ///Specifies the Default property in printOptions.
     @js.native
-    sealed trait Default extends PrintOptions
+    sealed trait Default
+      extends StObject
+         with PrintOptions
     
     ///Specifies the NewTab property in printOptions.
     @js.native
-    sealed trait NewTab extends PrintOptions
+    sealed trait NewTab
+      extends StObject
+         with PrintOptions
     
     ///Specifies the None property in printOptions.
     @js.native
-    sealed trait None extends PrintOptions
+    sealed trait None
+      extends StObject
+         with PrintOptions
   }
   
   @js.native
@@ -265,11 +328,15 @@ object ReportViewer {
     
     ///Specifies the Local property in processingMode.
     @js.native
-    sealed trait Local extends ProcessingMode
+    sealed trait Local
+      extends StObject
+         with ProcessingMode
     
     ///Specifies the Remote property in processingMode.
     @js.native
-    sealed trait Remote extends ProcessingMode
+    sealed trait Remote
+      extends StObject
+         with ProcessingMode
   }
   
   @js.native
@@ -280,15 +347,21 @@ object ReportViewer {
     
     ///Specifies the Default property in RenderMode to get default output.
     @js.native
-    sealed trait Default extends RenderMode
+    sealed trait Default
+      extends StObject
+         with RenderMode
     
     ///Specifies the Desktop property in RenderMode to get specified output.
     @js.native
-    sealed trait Desktop extends RenderMode
+    sealed trait Desktop
+      extends StObject
+         with RenderMode
     
     ///Specifies the Mobile property in RenderMode to get specified output.
     @js.native
-    sealed trait Mobile extends RenderMode
+    sealed trait Mobile
+      extends StObject
+         with RenderMode
   }
   
   @js.native
@@ -299,39 +372,57 @@ object ReportViewer {
     
     ///Specifies the Export as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait Export extends ToolbarItems
+    sealed trait Export
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the FittoPage as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait FittoPage extends ToolbarItems
+    sealed trait FittoPage
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the PageNavigation as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait PageNavigation extends ToolbarItems
+    sealed trait PageNavigation
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the PageSetup as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait PageSetup extends ToolbarItems
+    sealed trait PageSetup
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the Parameters as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait Parameters extends ToolbarItems
+    sealed trait Parameters
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the Print as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait Print extends ToolbarItems
+    sealed trait Print
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the PrintLayout as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait PrintLayout extends ToolbarItems
+    sealed trait PrintLayout
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the Refresh as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait Refresh extends ToolbarItems
+    sealed trait Refresh
+      extends StObject
+         with ToolbarItems
     
     ///Specifies the Zoom as value in ToolbarItems to get specified item.
     @js.native
-    sealed trait Zoom extends ToolbarItems
+    sealed trait Zoom
+      extends StObject
+         with ToolbarItems
   }
   
   @js.native
@@ -342,111 +433,152 @@ object ReportViewer {
     
     ///Specifies the Automatic property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Automatic extends WordFormats
+    sealed trait Automatic
+      extends StObject
+         with WordFormats
     
     ///Specifies the DOCX property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait DOCX extends WordFormats
+    sealed trait DOCX
+      extends StObject
+         with WordFormats
     
     ///Specifies the Doc property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Doc extends WordFormats
+    sealed trait Doc
+      extends StObject
+         with WordFormats
     
     ///Specifies the Dot property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Dot extends WordFormats
+    sealed trait Dot
+      extends StObject
+         with WordFormats
     
     ///Specifies the EPUB property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait EPUB extends WordFormats
+    sealed trait EPUB
+      extends StObject
+         with WordFormats
     
     ///Specifies the HTML property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait HTML extends WordFormats
+    sealed trait HTML
+      extends StObject
+         with WordFormats
     
     ///Specifies the RTF property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait RTF extends WordFormats
+    sealed trait RTF
+      extends StObject
+         with WordFormats
     
     ///Specifies the Txt property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Txt extends WordFormats
+    sealed trait Txt
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2007 property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2007 extends WordFormats
+    sealed trait Word2007
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2007Docm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2007Docm extends WordFormats
+    sealed trait Word2007Docm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2007Dotm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2007Dotm extends WordFormats
+    sealed trait Word2007Dotm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2007Dotx property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2007Dotx extends WordFormats
+    sealed trait Word2007Dotx
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2010 property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2010 extends WordFormats
+    sealed trait Word2010
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2010Docm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2010Docm extends WordFormats
+    sealed trait Word2010Docm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2010Dotm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2010Dotm extends WordFormats
+    sealed trait Word2010Dotm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2010Dotx property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2010Dotx extends WordFormats
+    sealed trait Word2010Dotx
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2013 property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2013 extends WordFormats
+    sealed trait Word2013
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2013Docm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2013Docm extends WordFormats
+    sealed trait Word2013Docm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2013Dotm property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2013Dotm extends WordFormats
+    sealed trait Word2013Dotm
+      extends StObject
+         with WordFormats
     
     ///Specifies the Word2013Dotx property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait Word2013Dotx extends WordFormats
+    sealed trait Word2013Dotx
+      extends StObject
+         with WordFormats
     
     ///Specifies the XML property in WordFormats to get specified version of exported format.
     @js.native
-    sealed trait XML extends WordFormats
+    sealed trait XML
+      extends StObject
+         with WordFormats
   }
   
-  @js.native
   trait AjaxBeforeLoadEventArgs extends StObject {
     
     /** Send the custom data.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Send the headerReq collection.
       */
-    var headerReq: js.UndefOr[js.Any] = js.native
+    var headerReq: js.UndefOr[js.Any] = js.undefined
     
     /** Send the headers collection.
       */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
     /** returns the reportViewerToken.
       */
-    var reportViewerToken: js.UndefOr[String] = js.native
+    var reportViewerToken: js.UndefOr[String] = js.undefined
     
     /** returns the serviceAuthorizationToken.
       */
-    var serviceAuthorizationToken: js.UndefOr[String] = js.native
+    var serviceAuthorizationToken: js.UndefOr[String] = js.undefined
   }
   object AjaxBeforeLoadEventArgs {
     
@@ -491,12 +623,11 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait AjaxErrorEventArgs extends StObject {
     
     /** returns the error details
       */
-    var msg: js.UndefOr[String] = js.native
+    var msg: js.UndefOr[String] = js.undefined
   }
   object AjaxErrorEventArgs {
     
@@ -517,12 +648,11 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait AjaxSuccessEventArgs extends StObject {
     
     /** returns the success data.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object AjaxSuccessEventArgs {
     
@@ -543,18 +673,17 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait DataSource extends StObject {
     
     /** Gets or sets the name of the data source.
       * @Default {empty}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the values of data source.
       * @Default {[]}
       */
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSource {
     
@@ -574,7 +703,7 @@ object ReportViewer {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -584,20 +713,19 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -630,24 +758,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait DrillThroughEventArgs extends StObject {
     
     /** returns the actionInfo's parameters bookmarkLink, reportName, parameters.
       */
-    var actionInfo: js.UndefOr[js.Any] = js.native
+    var actionInfo: js.UndefOr[js.Any] = js.undefined
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrillThroughEventArgs {
     
@@ -686,12 +813,11 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ExportItemClickEventArgs extends StObject {
     
     /** returns the export format value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ExportItemClickEventArgs {
     
@@ -712,24 +838,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ExportProgressChangedEventArgs extends StObject {
     
     /** returns ReportViewer container Id.
       */
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
     /** returns the export format
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** true if the event should be handled; otherwise, false.
       */
-    var handled: js.UndefOr[Boolean] = js.native
+    var handled: js.UndefOr[Boolean] = js.undefined
     
     /** returns the stage of export processing.
       */
-    var stage: js.UndefOr[String] = js.native
+    var stage: js.UndefOr[String] = js.undefined
   }
   object ExportProgressChangedEventArgs {
     
@@ -768,33 +893,32 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Add the custom icon item to the export options.
       * @Default {empty}
       */
-    var customItems: js.UndefOr[js.Array[_]] = js.native
+    var customItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the excel export format.
       * @Default {ej.ReportViewer.ExcelFormats.Excel97to2003}
       */
-    var excelFormat: js.UndefOr[ExcelFormats | String] = js.native
+    var excelFormat: js.UndefOr[ExcelFormats | String] = js.undefined
     
     /** Specifies the export formats.
       * @Default {ej.ReportViewer.ExportOptions.All}
       */
-    var exportOptions: js.UndefOr[ExportOptions | String] = js.native
+    var exportOptions: js.UndefOr[ExportOptions | String] = js.undefined
     
     /** Specifies the ppt export format.
       * @Default {ej.ReportViewer.PPTFormats.PowerPoint97to2003}
       */
-    var pptFormat: js.UndefOr[PPTFormats | String] = js.native
+    var pptFormat: js.UndefOr[PPTFormats | String] = js.undefined
     
     /** Specifies the word export format.
       * @Default {ej.ReportViewer.WordFormats.Doc}
       */
-    var wordFormat: js.UndefOr[WordFormats | String] = js.native
+    var wordFormat: js.UndefOr[WordFormats | String] = js.undefined
   }
   object ExportSettings {
     
@@ -808,7 +932,7 @@ object ReportViewer {
     implicit class ExportSettingsMutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCustomItems(value: js.Array[_]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+      def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
@@ -842,24 +966,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait HyperlinkEventArgs extends StObject {
     
     /** returns the actionInfo's hyperLink detail
       */
-    var actionInfo: js.UndefOr[js.Any] = js.native
+    var actionInfo: js.UndefOr[js.Any] = js.undefined
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HyperlinkEventArgs {
     
@@ -898,216 +1021,215 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires before the ajax request process started.
       */
-    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.native
+    var ajaxBeforeLoad: js.UndefOr[js.Function1[/* e */ AjaxBeforeLoadEventArgs, Unit]] = js.undefined
     
     /** Fires when ajax request failed.
       */
-    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.native
+    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Fires when ajax post call succeed.
       */
-    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.native
+    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Enables and disables the rendering of Viewer when default values are specified for the parameters.
       * @Default {true}
       */
-    var autoRender: js.UndefOr[Boolean] = js.native
+    var autoRender: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the list of data sources for the RDLC report.
       * @Default {[]}
       */
-    var dataSources: js.UndefOr[js.Array[DataSource]] = js.native
+    var dataSources: js.UndefOr[js.Array[DataSource]] = js.undefined
     
     /** Fires when the report viewer is destroyed successfully.If you want to perform any operation after destroying the reportviewer control,you can make use of the destroy event.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Fires during drill through action done in report.If you want to perform any operation when a drill through action is performed, you can make use of the drillThrough event.
       */
-    var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.native
+    var drillThrough: js.UndefOr[js.Function1[/* e */ DrillThroughEventArgs, Unit]] = js.undefined
     
     /** Enables and disables the data source credential block scroller.
       * @Default {true}
       */
-    var enableDatasourceBlockScroller: js.UndefOr[Boolean] = js.native
+    var enableDatasourceBlockScroller: js.UndefOr[Boolean] = js.undefined
     
     /** Enables and disables the drop-down parameter search.
       * @Default {false}
       */
-    var enableDropDownSearch: js.UndefOr[Boolean] = js.native
+    var enableDropDownSearch: js.UndefOr[Boolean] = js.undefined
     
     /** Enables and disables the Error Notification bar.
       * @Default {true}
       */
-    var enableNotificationBar: js.UndefOr[Boolean] = js.native
+    var enableNotificationBar: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the page cache of report.
       * @Default {false}
       */
-    var enablePageCache: js.UndefOr[Boolean] = js.native
+    var enablePageCache: js.UndefOr[Boolean] = js.undefined
     
     /** Enables and disables the PageVirtualization.
       * @Default {false}
       */
-    var enablePageVirtualization: js.UndefOr[Boolean] = js.native
+    var enablePageVirtualization: js.UndefOr[Boolean] = js.undefined
     
     /** Enables and disables the parameter block scroller.
       * @Default {true}
       */
-    var enableParameterBlockScroller: js.UndefOr[Boolean] = js.native
+    var enableParameterBlockScroller: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the export items are clicked. To perform any operation when the export items are clicked, use the exportItemClick event.
       */
-    var exportItemClick: js.UndefOr[js.Function1[/* e */ ExportItemClickEventArgs, Unit]] = js.native
+    var exportItemClick: js.UndefOr[js.Function1[/* e */ ExportItemClickEventArgs, Unit]] = js.undefined
     
     /** Fires when the export progress is changed. To perform any operation when the export progress is changed, use the exportProgressChanged event.
       */
-    var exportProgressChanged: js.UndefOr[js.Function1[/* e */ ExportProgressChangedEventArgs, Unit]] = js.native
+    var exportProgressChanged: js.UndefOr[js.Function1[/* e */ ExportProgressChangedEventArgs, Unit]] = js.undefined
     
     /** Specifies the export settings.
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Fires when the hyperlink action is performed in the report. To perform any operation during the hyperlink action, use the hyperlink event.
       */
-    var hyperlink: js.UndefOr[js.Function1[/* e */ HyperlinkEventArgs, Unit]] = js.native
+    var hyperlink: js.UndefOr[js.Function1[/* e */ HyperlinkEventArgs, Unit]] = js.undefined
     
     /** When set to true, adapts the report layout to fit the screen size of devices on which it renders.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the locale for report viewer.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the page settings.
       */
-    var pageSettings: js.UndefOr[PageSettings] = js.native
+    var pageSettings: js.UndefOr[PageSettings] = js.undefined
     
     /** Specifies the parameter settings.
       */
-    var parameterSettings: js.UndefOr[ParameterSettings] = js.native
+    var parameterSettings: js.UndefOr[ParameterSettings] = js.undefined
     
     /** Fires when the dependent parameter value is the parameter block. You can add custom user interface, loading indicator and modify the default progress text, using the
       * ParameterUpdateStateChange event.
       */
-    var parameterUpdateStateChange: js.UndefOr[js.Function1[/* e */ ParameterUpdateStateChangeEventArgs, Unit]] = js.native
+    var parameterUpdateStateChange: js.UndefOr[js.Function1[/* e */ ParameterUpdateStateChangeEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the list of parameters associated with the report.
       * @Default {[]}
       */
-    var parameters: js.UndefOr[js.Array[Parameter]] = js.native
+    var parameters: js.UndefOr[js.Array[Parameter]] = js.undefined
     
     /** Enables and disables the print mode.
       * @Default {false}
       */
-    var printMode: js.UndefOr[Boolean] = js.native
+    var printMode: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the print option of the report.
       * @Default {ej.ReportViewer.PrintOptions.Default}
       */
-    var printOption: js.UndefOr[PrintOptions | String] = js.native
+    var printOption: js.UndefOr[PrintOptions | String] = js.undefined
     
     /** Fires when the print progress is changed. To perform any operation when the print progress is changed, use the printProgressChanged event.
       */
-    var printProgressChanged: js.UndefOr[js.Function1[/* e */ PrintProgressChangedEventArgs, Unit]] = js.native
+    var printProgressChanged: js.UndefOr[js.Function1[/* e */ PrintProgressChangedEventArgs, Unit]] = js.undefined
     
     /** Specifies the processing mode of the report.
       * @Default {ej.ReportViewer.ProcessingMode.Remote}
       */
-    var processingMode: js.UndefOr[ProcessingMode | String] = js.native
+    var processingMode: js.UndefOr[ProcessingMode | String] = js.undefined
     
     /** Specifies the render layout.
       * @Default {ej.ReportViewer.RenderMode.Default}
       */
-    var renderMode: js.UndefOr[RenderMode | String] = js.native
+    var renderMode: js.UndefOr[RenderMode | String] = js.undefined
     
     /** Fires before report rendering is completed.If you want to perform any operation before the rendering of report,you can make use of the renderingBegin event.
       */
-    var renderingBegin: js.UndefOr[js.Function1[/* e */ RenderingBeginEventArgs, Unit]] = js.native
+    var renderingBegin: js.UndefOr[js.Function1[/* e */ RenderingBeginEventArgs, Unit]] = js.undefined
     
     /** Fires after report rendering completed.If you want to perform any operation after the rendering of report,you can make use of this renderingComplete event.
       */
-    var renderingComplete: js.UndefOr[js.Function1[/* e */ RenderingCompleteEventArgs, Unit]] = js.native
+    var renderingComplete: js.UndefOr[js.Function1[/* e */ RenderingCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires when any error occurred while rendering the report.If you want to perform any operation when an error occurs in the report, you can make use of the reportError event.
       */
-    var reportError: js.UndefOr[js.Function1[/* e */ ReportErrorEventArgs, Unit]] = js.native
+    var reportError: js.UndefOr[js.Function1[/* e */ ReportErrorEventArgs, Unit]] = js.undefined
     
     /** Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
       */
-    var reportExport: js.UndefOr[js.Function1[/* e */ ReportExportEventArgs, Unit]] = js.native
+    var reportExport: js.UndefOr[js.Function1[/* e */ ReportExportEventArgs, Unit]] = js.undefined
     
     /** Fires when the report is loaded.If you want to perform any operation after the successful loading of report, you can make use of the reportLoaded event.
       */
-    var reportLoaded: js.UndefOr[js.Function1[/* e */ ReportLoadedEventArgs, Unit]] = js.native
+    var reportLoaded: js.UndefOr[js.Function1[/* e */ ReportLoadedEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the path of the report file.
       * @Default {empty}
       */
-    var reportPath: js.UndefOr[String] = js.native
+    var reportPath: js.UndefOr[String] = js.undefined
     
     /** Fires when the report print action is performed in the report. To perform any operation during the report print action, use the ReportPrint event.
       */
-    var reportPrint: js.UndefOr[js.Function1[/* e */ ReportPrintEventArgs, Unit]] = js.native
+    var reportPrint: js.UndefOr[js.Function1[/* e */ ReportPrintEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the reports server URL.
       * @Default {empty}
       */
-    var reportServerUrl: js.UndefOr[String] = js.native
+    var reportServerUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the report Web API service URL.
       * @Default {empty}
       */
-    var reportServiceUrl: js.UndefOr[String] = js.native
+    var reportServiceUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the token for authorizing reporting service url to process the reports.
       * @Default {empty}
       */
-    var serviceAuthorizationToken: js.UndefOr[String] = js.native
+    var serviceAuthorizationToken: js.UndefOr[String] = js.undefined
     
     /** Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before
       * viewing error detail, you can make use of the showError event.
       */
-    var showError: js.UndefOr[js.Function1[/* e */ ShowErrorEventArgs, Unit]] = js.native
+    var showError: js.UndefOr[js.Function1[/* e */ ShowErrorEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the showExceptionsInDialog for report viewer.
       * @Default {false}
       */
-    var showExceptionsInDialog: js.UndefOr[Boolean] = js.native
+    var showExceptionsInDialog: js.UndefOr[Boolean] = js.undefined
     
     /** Render the ReportViewer height based on the report content size.
       * @Default {false}
       */
-    var sizeToReportContent: js.UndefOr[Boolean] = js.native
+    var sizeToReportContent: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the toolbar items are clicked. To perform any operation when the toolbar items are clicked, use the toolBarItemClick event.
       */
-    var toolBarItemClick: js.UndefOr[js.Function1[/* e */ ToolBarItemClickEventArgs, Unit]] = js.native
+    var toolBarItemClick: js.UndefOr[js.Function1[/* e */ ToolBarItemClickEventArgs, Unit]] = js.undefined
     
     /** This event will be triggered on rendering the Report Viewer toolbar.
       */
-    var toolbarRendering: js.UndefOr[js.Function1[/* e */ ToolbarRenderingEventArgs, Unit]] = js.native
+    var toolbarRendering: js.UndefOr[js.Function1[/* e */ ToolbarRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the toolbar settings.
       */
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
     /** Fires when click the View Report Button.
       */
-    var viewReportClick: js.UndefOr[js.Function1[/* e */ ViewReportClickEventArgs, Unit]] = js.native
+    var viewReportClick: js.UndefOr[js.Function1[/* e */ ViewReportClickEventArgs, Unit]] = js.undefined
     
     /** Gets or sets the zoom factor for report viewer.
       * @Default {1}
       */
-    var zoomFactor: js.UndefOr[Double] = js.native
+    var zoomFactor: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -1404,18 +1526,17 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait PageSettings extends StObject {
     
     /** Specifies the print layout orientation.
       * @Default {null}
       */
-    var orientation: js.UndefOr[typings.ejWebAll.ej.Orientation | String] = js.native
+    var orientation: js.UndefOr[typings.ejWebAll.ej.Orientation | String] = js.undefined
     
     /** Specifies the paper size of print layout.
       * @Default {null}
       */
-    var paperSize: js.UndefOr[PaperSize | String] = js.native
+    var paperSize: js.UndefOr[PaperSize | String] = js.undefined
   }
   object PageSettings {
     
@@ -1442,33 +1563,32 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait Parameter extends StObject {
     
     /** Gets or sets the parameter labels.
       * @Default {null}
       */
-    var labels: js.UndefOr[js.Array[_]] = js.native
+    var labels: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Gets or sets the name of the parameter.
       * @Default {empty}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Gets or sets whether the parameter allows nullable value or not.
       * @Default {false}
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets the prompt message associated with the specified parameter.
       * @Default {empty}
       */
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
     /** Gets or sets the parameter values.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Parameter {
     
@@ -1482,7 +1602,7 @@ object ReportViewer {
     implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLabels(value: js.Array[_]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      def setLabels(value: js.Array[js.Any]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
@@ -1509,7 +1629,7 @@ object ReportViewer {
       def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -1519,7 +1639,6 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ParameterSettings extends StObject {
     
     /** Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are
@@ -1527,27 +1646,27 @@ object ReportViewer {
       * any other special character.
       * @Default {,}
       */
-    var delimiterChar: js.UndefOr[String] = js.native
+    var delimiterChar: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the parameter item. By default, the item width value is set as &quot;185px&quot;.
       * @Default {185px}
       */
-    var itemWidth: js.UndefOr[String] = js.native
+    var itemWidth: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the parameter label. By default, the parameter label width value is set as &quot;110px&quot;.
       * @Default {110px}
       */
-    var labelWidth: js.UndefOr[String] = js.native
+    var labelWidth: js.UndefOr[String] = js.undefined
     
     /** Specifies the height of the combobox parameter popup list. By default, the popup height value is &quot;152px&quot;.
       * @Default {152px}
       */
-    var popupHeight: js.UndefOr[String] = js.native
+    var popupHeight: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the combobox parameter popup list. By default, the popup width sets based on the width of the component.
       * @Default {auto}
       */
-    var popupWidth: js.UndefOr[String] = js.native
+    var popupWidth: js.UndefOr[String] = js.undefined
   }
   object ParameterSettings {
     
@@ -1592,40 +1711,39 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ParameterUpdateStateChangeEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** The parameter block id.
       */
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
     /** true, if the event handled by user; otherwise, false.
       */
-    var handled: js.UndefOr[Boolean] = js.native
+    var handled: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Its only to notify the the current parameter.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The progress text that is displayed on the loading indicator.
       */
-    var progressText: js.UndefOr[String] = js.native
+    var progressText: js.UndefOr[String] = js.undefined
     
     /** Its only to notify the current parameter prompt value.
       */
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
     /** The processing state.
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object ParameterUpdateStateChangeEventArgs {
     
@@ -1688,28 +1806,27 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait PrintProgressChangedEventArgs extends StObject {
     
     /** returns ReportViewer container Id.
       */
-    var containerId: js.UndefOr[String] = js.native
+    var containerId: js.UndefOr[String] = js.undefined
     
     /** returns the currentPage value
       */
-    var currentPage: js.UndefOr[String] = js.native
+    var currentPage: js.UndefOr[String] = js.undefined
     
     /** true if the event should be handled; otherwise, false.
       */
-    var handled: js.UndefOr[Boolean] = js.native
+    var handled: js.UndefOr[Boolean] = js.undefined
     
     /** returns the stage of export processing.
       */
-    var stage: js.UndefOr[String] = js.native
+    var stage: js.UndefOr[String] = js.undefined
     
     /** returns the totalPages value
       */
-    var totalPages: js.UndefOr[String] = js.native
+    var totalPages: js.UndefOr[String] = js.undefined
   }
   object PrintProgressChangedEventArgs {
     
@@ -1754,20 +1871,19 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait RenderingBeginEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RenderingBeginEventArgs {
     
@@ -1800,24 +1916,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait RenderingCompleteEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the collection of parameters.
       */
-    var reportParameters: js.UndefOr[js.Any] = js.native
+    var reportParameters: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RenderingCompleteEventArgs {
     
@@ -1856,24 +1971,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ReportErrorEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the error details.
       */
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ReportErrorEventArgs {
     
@@ -1912,20 +2026,19 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ReportExportEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ReportExportEventArgs {
     
@@ -1958,20 +2071,19 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ReportLoadedEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ReportLoadedEventArgs {
     
@@ -2004,12 +2116,11 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ReportPrintEventArgs extends StObject {
     
     /** true if you have to load the external style file; otherwise, false.
       */
-    var isStyleLoad: js.UndefOr[Boolean] = js.native
+    var isStyleLoad: js.UndefOr[Boolean] = js.undefined
   }
   object ReportPrintEventArgs {
     
@@ -2030,24 +2141,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ShowErrorEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the detailed error information.
       */
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
     /** returns the error code.
       */
-    var errorCode: js.UndefOr[String] = js.native
+    var errorCode: js.UndefOr[String] = js.undefined
     
     /** returns the error message.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ShowErrorEventArgs {
     
@@ -2086,28 +2196,27 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ToolBarItemClickEventArgs extends StObject {
     
     /** returns the Toolbar item rendered index
       */
-    var Index: js.UndefOr[String] = js.native
+    var Index: js.UndefOr[String] = js.undefined
     
     /** returns the CSS class name specified for the toolbar item
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** returns the Toolbar item rendered group index
       */
-    var groupIndex: js.UndefOr[String] = js.native
+    var groupIndex: js.UndefOr[String] = js.undefined
     
     /** returns the toolbar clicked item name .
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /** returns the Toolbar item value.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ToolBarItemClickEventArgs {
     
@@ -2152,46 +2261,44 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ToolbarRenderingEventArgs extends StObject
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
     /** Fires when user click on toolbar item in the toolbar.
       * @Default {empty}
       */
-    var click: js.UndefOr[String] = js.native
+    var click: js.UndefOr[String] = js.undefined
     
     /** Add the custom icon groups to the toolbar.
       * @Default {empty}
       */
-    var customGroups: js.UndefOr[js.Array[_]] = js.native
+    var customGroups: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Add the custom icon item to the toolbar.
       * @Default {empty}
       */
-    var customItems: js.UndefOr[js.Array[_]] = js.native
+    var customItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the toolbar items.
       * @Default {ej.ReportViewer.ToolbarItems.All}
       */
-    var items: js.UndefOr[ToolbarItems | String] = js.native
+    var items: js.UndefOr[ToolbarItems | String] = js.undefined
     
     /** Shows or hides the toolbar.
       * @Default {true}
       */
-    var showToolbar: js.UndefOr[Boolean] = js.native
+    var showToolbar: js.UndefOr[Boolean] = js.undefined
     
     /** Shows or hides the tooltip of toolbar items.
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the toolbar template ID.
       * @Default {empty}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
   }
   object ToolbarSettings {
     
@@ -2211,7 +2318,7 @@ object ReportViewer {
       def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
       @scala.inline
-      def setCustomGroups(value: js.Array[_]): Self = StObject.set(x, "customGroups", value.asInstanceOf[js.Any])
+      def setCustomGroups(value: js.Array[js.Any]): Self = StObject.set(x, "customGroups", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomGroupsUndefined: Self = StObject.set(x, "customGroups", js.undefined)
@@ -2220,7 +2327,7 @@ object ReportViewer {
       def setCustomGroupsVarargs(value: js.Any*): Self = StObject.set(x, "customGroups", js.Array(value :_*))
       
       @scala.inline
-      def setCustomItems(value: js.Array[_]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+      def setCustomItems(value: js.Array[js.Any]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomItemsUndefined: Self = StObject.set(x, "customItems", js.undefined)
@@ -2254,24 +2361,23 @@ object ReportViewer {
     }
   }
   
-  @js.native
   trait ViewReportClickEventArgs extends StObject {
     
     /** true if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the report model.
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the parameter collection.
       */
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ViewReportClickEventArgs {
     

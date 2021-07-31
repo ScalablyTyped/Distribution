@@ -3,13 +3,11 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUSER_FIND_RESULT extends StObject {
   
-  var users: js.Array[SFSUser] = js.native
+  var users: js.Array[SFSUser]
 }
 object IUSER_FIND_RESULT {
   

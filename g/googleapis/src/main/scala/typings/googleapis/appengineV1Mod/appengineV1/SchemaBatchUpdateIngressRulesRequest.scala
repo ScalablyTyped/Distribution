@@ -2,19 +2,17 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for Firewall.BatchUpdateIngressRules.
   */
-@js.native
 trait SchemaBatchUpdateIngressRulesRequest extends StObject {
   
   /**
     * A list of FirewallRules to replace the existing set.
     */
-  var ingressRules: js.UndefOr[js.Array[SchemaFirewallRule]] = js.native
+  var ingressRules: js.UndefOr[js.Array[SchemaFirewallRule]] = js.undefined
 }
 object SchemaBatchUpdateIngressRulesRequest {
   

@@ -3,14 +3,19 @@ package typings.merklePatriciaTree
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trieNodeMod {
   
+  @JSImport("merkle-patricia-tree/dist/trieNode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode")
   @js.native
-  class BranchNode () extends TrieNode {
+  class BranchNode ()
+    extends StObject
+       with TrieNode {
     
     var _branches: js.Array[EmbeddedNode | Null] = js.native
     
@@ -35,14 +40,19 @@ object trieNodeMod {
   /* static members */
   object BranchNode {
     
-    @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode.fromArray")
+    @JSImport("merkle-patricia-tree/dist/trieNode", "BranchNode")
     @js.native
-    def fromArray(arr: js.Array[Buffer]): BranchNode = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromArray(arr: js.Array[Buffer]): BranchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[BranchNode]
   }
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode")
   @js.native
-  class ExtensionNode protected () extends TrieNode {
+  class ExtensionNode protected ()
+    extends StObject
+       with TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
     
     var _nibbles: Nibbles = js.native
@@ -66,18 +76,22 @@ object trieNodeMod {
   /* static members */
   object ExtensionNode {
     
-    @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode.decodeKey")
+    @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode")
     @js.native
-    def decodeKey(key: Nibbles): Nibbles = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode.encodeKey")
-    @js.native
-    def encodeKey(key: Nibbles): Nibbles = js.native
+    @scala.inline
+    def decodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    
+    @scala.inline
+    def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
   }
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode")
   @js.native
-  class LeafNode protected () extends TrieNode {
+  class LeafNode protected ()
+    extends StObject
+       with TrieNode {
     def this(nibbles: Nibbles, value: Buffer) = this()
     
     var _nibbles: Nibbles = js.native
@@ -101,26 +115,25 @@ object trieNodeMod {
   /* static members */
   object LeafNode {
     
-    @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode.decodeKey")
+    @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode")
     @js.native
-    def decodeKey(encodedKey: Nibbles): Nibbles = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode.encodeKey")
-    @js.native
-    def encodeKey(key: Nibbles): Nibbles = js.native
+    @scala.inline
+    def decodeKey(encodedKey: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(encodedKey.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    
+    @scala.inline
+    def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
   }
   
-  @JSImport("merkle-patricia-tree/dist/trieNode", "decodeNode")
-  @js.native
-  def decodeNode(raw: Buffer): TrieNode = js.native
+  @scala.inline
+  def decodeNode(raw: Buffer): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
   
-  @JSImport("merkle-patricia-tree/dist/trieNode", "decodeRawNode")
-  @js.native
-  def decodeRawNode(raw: js.Array[Buffer]): TrieNode = js.native
+  @scala.inline
+  def decodeRawNode(raw: js.Array[Buffer]): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRawNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
   
-  @JSImport("merkle-patricia-tree/dist/trieNode", "isRawNode")
-  @js.native
-  def isRawNode(n: js.Any): Boolean = js.native
+  @scala.inline
+  def isRawNode(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawNode")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type EmbeddedNode = Buffer | js.Array[Buffer]
   

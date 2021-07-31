@@ -2,36 +2,34 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineExecution extends StObject {
   
   /**
     * A list of ArtifactRevision objects included in a pipeline execution.
     */
-  var artifactRevisions: js.UndefOr[ArtifactRevisionList] = js.native
+  var artifactRevisions: js.UndefOr[ArtifactRevisionList] = js.undefined
   
   /**
     * The ID of the pipeline execution.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
   
   /**
     * The name of the pipeline with the specified pipeline execution.
     */
-  var pipelineName: js.UndefOr[PipelineName] = js.native
+  var pipelineName: js.UndefOr[PipelineName] = js.undefined
   
   /**
     * The version number of the pipeline with the specified pipeline execution.
     */
-  var pipelineVersion: js.UndefOr[PipelineVersion] = js.native
+  var pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined
   
   /**
     * The status of the pipeline execution.   InProgress: The pipeline execution is currently running.   Stopped: The pipeline execution was manually stopped. For more information, see Stopped Executions.   Stopping: The pipeline execution received a request to be manually stopped. Depending on the selected stop mode, the execution is either completing or abandoning in-progress actions. For more information, see Stopped Executions.   Succeeded: The pipeline execution was completed successfully.    Superseded: While this pipeline execution was waiting for the next stage to be completed, a newer pipeline execution advanced and continued through the pipeline instead. For more information, see Superseded Executions.   Failed: The pipeline execution was not completed successfully.  
     */
-  var status: js.UndefOr[PipelineExecutionStatus] = js.native
+  var status: js.UndefOr[PipelineExecutionStatus] = js.undefined
 }
 object PipelineExecution {
   

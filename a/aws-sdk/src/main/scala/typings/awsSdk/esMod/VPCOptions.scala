@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPCOptions extends StObject {
   
   /**
     * Specifies the security groups for VPC endpoint.
     */
-  var SecurityGroupIds: js.UndefOr[StringList] = js.native
+  var SecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * Specifies the subnets for VPC endpoint.
     */
-  var SubnetIds: js.UndefOr[StringList] = js.native
+  var SubnetIds: js.UndefOr[StringList] = js.undefined
 }
 object VPCOptions {
   

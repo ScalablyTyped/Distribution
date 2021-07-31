@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quicksightUserMod {
@@ -73,6 +72,10 @@ object quicksightUserMod {
   /* static members */
   object User {
     
+    @JSImport("@pulumi/aws/quicksight/user", "User")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing User resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -82,70 +85,64 @@ object quicksightUserMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/quicksight/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID]): User = js.native
-    @JSImport("@pulumi/aws/quicksight/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): User = js.native
-    @JSImport("@pulumi/aws/quicksight/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState): User = js.native
-    @JSImport("@pulumi/aws/quicksight/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/quicksight/user", "User.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/quicksight/user.User */ Boolean]
   }
   
-  @js.native
   trait UserArgs extends StObject {
     
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    val awsAccountId: js.UndefOr[Input[String]] = js.native
+    val awsAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email address of the user that you want to register.
       */
-    val email: Input[String] = js.native
+    val email: Input[String]
     
     /**
       * The ARN of the IAM user or role that you are registering with Amazon QuickSight.
       */
-    val iamArn: js.UndefOr[Input[String]] = js.native
+    val iamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts either  `IAM` or `QUICKSIGHT`.
       */
-    val identityType: Input[String] = js.native
+    val identityType: Input[String]
     
     /**
       * The namespace. Currently, you should set this to `default`.
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM session to use when assuming roles that can embed QuickSight dashboards.
       */
-    val sessionName: js.UndefOr[Input[String]] = js.native
+    val sessionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon QuickSight user name that you want to create for the user you are registering.
       */
-    val userName: js.UndefOr[Input[String]] = js.native
+    val userName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon QuickSight role of the user. The user role can be one of the following: `READER`, `AUTHOR`, or `ADMIN`
       */
-    val userRole: Input[String] = js.native
+    val userRole: Input[String]
   }
   object UserArgs {
     
@@ -199,53 +196,52 @@ object quicksightUserMod {
     }
   }
   
-  @js.native
   trait UserState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the user
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for the AWS account that the user is in. Currently, you use the ID for the AWS account that contains your Amazon QuickSight account.
       */
-    val awsAccountId: js.UndefOr[Input[String]] = js.native
+    val awsAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email address of the user that you want to register.
       */
-    val email: js.UndefOr[Input[String]] = js.native
+    val email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM user or role that you are registering with Amazon QuickSight.
       */
-    val iamArn: js.UndefOr[Input[String]] = js.native
+    val iamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon QuickSight supports several ways of managing the identity of users. This parameter accepts either  `IAM` or `QUICKSIGHT`.
       */
-    val identityType: js.UndefOr[Input[String]] = js.native
+    val identityType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The namespace. Currently, you should set this to `default`.
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM session to use when assuming roles that can embed QuickSight dashboards.
       */
-    val sessionName: js.UndefOr[Input[String]] = js.native
+    val sessionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon QuickSight user name that you want to create for the user you are registering.
       */
-    val userName: js.UndefOr[Input[String]] = js.native
+    val userName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon QuickSight role of the user. The user role can be one of the following: `READER`, `AUTHOR`, or `ADMIN`
       */
-    val userRole: js.UndefOr[Input[String]] = js.native
+    val userRole: js.UndefOr[Input[String]] = js.undefined
   }
   object UserState {
     

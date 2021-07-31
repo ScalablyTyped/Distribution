@@ -11,8 +11,8 @@ strftime for JavaScript
 | Full name          | strftime |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 214 |
-| # downloads        | 11655725 |
+| # dependents       | 220 |
+| # downloads        | 14591804 |
 | # stars            | 35 |
 
 ## Links

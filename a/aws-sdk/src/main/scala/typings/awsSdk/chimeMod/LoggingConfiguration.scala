@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfiguration extends StObject {
   
   /**
     * When true, enables SIP message logs for sending to Amazon CloudWatch Logs.
     */
-  var EnableSIPLogs: js.UndefOr[Boolean] = js.native
+  var EnableSIPLogs: js.UndefOr[Boolean] = js.undefined
 }
 object LoggingConfiguration {
   

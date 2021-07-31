@@ -6,36 +6,32 @@ import typings.history.mod.LocationState
 import typings.history.mod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathUtilsMod {
   
-  @JSImport("history/PathUtils", "addLeadingSlash")
+  @JSImport("history/PathUtils", JSImport.Namespace)
   @js.native
-  def addLeadingSlash(path: Path): Path = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("history/PathUtils", "createPath")
-  @js.native
-  def createPath[S](location: LocationDescriptorObject[S]): Path = js.native
+  @scala.inline
+  def addLeadingSlash(path: Path): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("addLeadingSlash")(path.asInstanceOf[js.Any]).asInstanceOf[Path]
   
-  @JSImport("history/PathUtils", "hasBasename")
-  @js.native
-  def hasBasename(path: Path): Boolean = js.native
+  @scala.inline
+  def createPath[S](location: LocationDescriptorObject[S]): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(location.asInstanceOf[js.Any]).asInstanceOf[Path]
   
-  @JSImport("history/PathUtils", "parsePath")
-  @js.native
-  def parsePath(path: Path): Location[LocationState] = js.native
+  @scala.inline
+  def hasBasename(path: Path): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBasename")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("history/PathUtils", "stripBasename")
-  @js.native
-  def stripBasename(path: Path, prefix: String): Path = js.native
+  @scala.inline
+  def parsePath(path: Path): Location[LocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[Location[LocationState]]
   
-  @JSImport("history/PathUtils", "stripLeadingSlash")
-  @js.native
-  def stripLeadingSlash(path: Path): Path = js.native
+  @scala.inline
+  def stripBasename(path: Path, prefix: String): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("stripBasename")(path.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[Path]
   
-  @JSImport("history/PathUtils", "stripTrailingSlash")
-  @js.native
-  def stripTrailingSlash(path: Path): Path = js.native
+  @scala.inline
+  def stripLeadingSlash(path: Path): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("stripLeadingSlash")(path.asInstanceOf[js.Any]).asInstanceOf[Path]
+  
+  @scala.inline
+  def stripTrailingSlash(path: Path): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingSlash")(path.asInstanceOf[js.Any]).asInstanceOf[Path]
 }

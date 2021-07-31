@@ -4,60 +4,58 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Intent.IMessage
 import typings.dialogflow.mod.google.protobuf.IStruct
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a QueryResult. */
-@js.native
 trait IQueryResult extends StObject {
   
   /** QueryResult action */
-  var action: js.UndefOr[String | Null] = js.native
+  var action: js.UndefOr[String | Null] = js.undefined
   
   /** QueryResult allRequiredParamsPresent */
-  var allRequiredParamsPresent: js.UndefOr[Boolean | Null] = js.native
+  var allRequiredParamsPresent: js.UndefOr[Boolean | Null] = js.undefined
   
   /** QueryResult diagnosticInfo */
-  var diagnosticInfo: js.UndefOr[IStruct | Null] = js.native
+  var diagnosticInfo: js.UndefOr[IStruct | Null] = js.undefined
   
   /** QueryResult fulfillmentMessages */
-  var fulfillmentMessages: js.UndefOr[js.Array[IMessage] | Null] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[IMessage] | Null] = js.undefined
   
   /** QueryResult fulfillmentText */
-  var fulfillmentText: js.UndefOr[String | Null] = js.native
+  var fulfillmentText: js.UndefOr[String | Null] = js.undefined
   
   /** QueryResult intent */
-  var intent: js.UndefOr[IIntent | Null] = js.native
+  var intent: js.UndefOr[IIntent | Null] = js.undefined
   
   /** QueryResult intentDetectionConfidence */
-  var intentDetectionConfidence: js.UndefOr[Double | Null] = js.native
+  var intentDetectionConfidence: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryResult knowledgeAnswers */
-  var knowledgeAnswers: js.UndefOr[IKnowledgeAnswers | Null] = js.native
+  var knowledgeAnswers: js.UndefOr[IKnowledgeAnswers | Null] = js.undefined
   
   /** QueryResult languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** QueryResult outputContexts */
-  var outputContexts: js.UndefOr[js.Array[IContext] | Null] = js.native
+  var outputContexts: js.UndefOr[js.Array[IContext] | Null] = js.undefined
   
   /** QueryResult parameters */
-  var parameters: js.UndefOr[IStruct | Null] = js.native
+  var parameters: js.UndefOr[IStruct | Null] = js.undefined
   
   /** QueryResult queryText */
-  var queryText: js.UndefOr[String | Null] = js.native
+  var queryText: js.UndefOr[String | Null] = js.undefined
   
   /** QueryResult sentimentAnalysisResult */
-  var sentimentAnalysisResult: js.UndefOr[ISentimentAnalysisResult | Null] = js.native
+  var sentimentAnalysisResult: js.UndefOr[ISentimentAnalysisResult | Null] = js.undefined
   
   /** QueryResult speechRecognitionConfidence */
-  var speechRecognitionConfidence: js.UndefOr[Double | Null] = js.native
+  var speechRecognitionConfidence: js.UndefOr[Double | Null] = js.undefined
   
   /** QueryResult webhookPayload */
-  var webhookPayload: js.UndefOr[IStruct | Null] = js.native
+  var webhookPayload: js.UndefOr[IStruct | Null] = js.undefined
   
   /** QueryResult webhookSource */
-  var webhookSource: js.UndefOr[String | Null] = js.native
+  var webhookSource: js.UndefOr[String | Null] = js.undefined
 }
 object IQueryResult {
   

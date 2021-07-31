@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedPreserveAspectRatio extends StObject {
   
   @JSName("MSHTML.SVGAnimatedPreserveAspectRatio_typekey")
-  var MSHTMLDotSVGAnimatedPreserveAspectRatio_typekey: SVGAnimatedPreserveAspectRatio = js.native
+  var MSHTMLDotSVGAnimatedPreserveAspectRatio_typekey: SVGAnimatedPreserveAspectRatio
   
-  var animVal: SVGPreserveAspectRatio = js.native
+  var animVal: SVGPreserveAspectRatio
   
-  var baseVal: SVGPreserveAspectRatio = js.native
+  var baseVal: SVGPreserveAspectRatio
 }
 object SVGAnimatedPreserveAspectRatio {
   

@@ -6,7 +6,6 @@ import typings.opentelemetryContextBase.mod.Context
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracerMod {
@@ -53,7 +52,7 @@ object tracerMod {
       *     span.end();
       */
     def startSpan(name: String): Span = js.native
-    def startSpan(name: String, options: js.UndefOr[scala.Nothing], context: Context): Span = js.native
+    def startSpan(name: String, options: Unit, context: Context): Span = js.native
     def startSpan(name: String, options: SpanOptions): Span = js.native
     def startSpan(name: String, options: SpanOptions, context: Context): Span = js.native
     

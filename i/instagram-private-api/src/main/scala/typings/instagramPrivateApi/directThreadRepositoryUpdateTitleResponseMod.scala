@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadRepositoryUpdateTitleResponseMod {
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseActionLog extends StObject {
     
-    var bold: js.Array[DirectThreadRepositoryUpdateTitleResponseBoldItem] = js.native
+    var bold: js.Array[DirectThreadRepositoryUpdateTitleResponseBoldItem]
     
-    var description: String = js.native
+    var description: String
     
-    var text_attributes: js.Array[DirectThreadRepositoryUpdateTitleResponseTextAttributesItem] = js.native
+    var text_attributes: js.Array[DirectThreadRepositoryUpdateTitleResponseTextAttributesItem]
   }
   object DirectThreadRepositoryUpdateTitleResponseActionLog {
     
@@ -48,12 +46,11 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseBoldItem extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object DirectThreadRepositoryUpdateTitleResponseBoldItem {
     
@@ -74,22 +71,21 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseFriendshipStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object DirectThreadRepositoryUpdateTitleResponseFriendshipStatus {
     
@@ -133,28 +129,27 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseInviter extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadRepositoryUpdateTitleResponseInviter {
     
@@ -210,18 +205,17 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseItemsItem extends StObject {
     
-    var action_log: DirectThreadRepositoryUpdateTitleResponseActionLog = js.native
+    var action_log: DirectThreadRepositoryUpdateTitleResponseActionLog
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadRepositoryUpdateTitleResponseItemsItem {
     
@@ -257,18 +251,17 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseLastPermanentItem extends StObject {
     
-    var action_log: DirectThreadRepositoryUpdateTitleResponseActionLog = js.native
+    var action_log: DirectThreadRepositoryUpdateTitleResponseActionLog
     
-    var item_id: String = js.native
+    var item_id: String
     
-    var item_type: String = js.native
+    var item_type: String
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object DirectThreadRepositoryUpdateTitleResponseLastPermanentItem {
     
@@ -304,12 +297,11 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var thread: DirectThreadRepositoryUpdateTitleResponseThread = js.native
+    var thread: DirectThreadRepositoryUpdateTitleResponseThread
   }
   object DirectThreadRepositoryUpdateTitleResponseRootObject {
     
@@ -330,18 +322,17 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseTextAttributesItem extends StObject {
     
-    var bold: Double = js.native
+    var bold: Double
     
-    var color: String = js.native
+    var color: String
     
-    var end: Double = js.native
+    var end: Double
     
-    var intent: String = js.native
+    var intent: String
     
-    var start: Double = js.native
+    var start: Double
   }
   object DirectThreadRepositoryUpdateTitleResponseTextAttributesItem {
     
@@ -371,78 +362,77 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseThread extends StObject {
     
-    var admin_user_ids: js.Array[Double] = js.native
+    var admin_user_ids: js.Array[Double]
     
-    var approval_required_for_new_members: Boolean = js.native
+    var approval_required_for_new_members: Boolean
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var business_thread_folder: Double = js.native
+    var business_thread_folder: Double
     
-    var canonical: Boolean = js.native
+    var canonical: Boolean
     
-    var folder: Double = js.native
+    var folder: Double
     
-    var has_newer: Boolean = js.native
+    var has_newer: Boolean
     
-    var has_older: Boolean = js.native
+    var has_older: Boolean
     
-    var input_mode: Double = js.native
+    var input_mode: Double
     
-    var inviter: DirectThreadRepositoryUpdateTitleResponseInviter = js.native
+    var inviter: DirectThreadRepositoryUpdateTitleResponseInviter
     
-    var is_group: Boolean = js.native
+    var is_group: Boolean
     
-    var is_pin: Boolean = js.native
+    var is_pin: Boolean
     
-    var items: js.Array[DirectThreadRepositoryUpdateTitleResponseItemsItem] = js.native
+    var items: js.Array[DirectThreadRepositoryUpdateTitleResponseItemsItem]
     
-    var last_activity_at: String = js.native
+    var last_activity_at: String
     
-    var last_permanent_item: DirectThreadRepositoryUpdateTitleResponseLastPermanentItem = js.native
+    var last_permanent_item: DirectThreadRepositoryUpdateTitleResponseLastPermanentItem
     
-    var last_seen_at: js.Any = js.native
+    var last_seen_at: js.Any
     
-    var left_users: js.Array[_] = js.native
+    var left_users: js.Array[js.Any]
     
-    var mentions_muted: Boolean = js.native
+    var mentions_muted: Boolean
     
-    var muted: Boolean = js.native
+    var muted: Boolean
     
-    var named: Boolean = js.native
+    var named: Boolean
     
-    var newest_cursor: String = js.native
+    var newest_cursor: String
     
-    var next_cursor: String = js.native
+    var next_cursor: String
     
-    var oldest_cursor: String = js.native
+    var oldest_cursor: String
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var pending_score: String = js.native
+    var pending_score: String
     
-    var prev_cursor: String = js.native
+    var prev_cursor: String
     
-    var read_state: Double = js.native
+    var read_state: Double
     
-    var thread_id: String = js.native
+    var thread_id: String
     
-    var thread_title: String = js.native
+    var thread_title: String
     
-    var thread_type: String = js.native
+    var thread_type: String
     
-    var thread_v2_id: String = js.native
+    var thread_v2_id: String
     
-    var users: js.Array[DirectThreadRepositoryUpdateTitleResponseUsersItem] = js.native
+    var users: js.Array[DirectThreadRepositoryUpdateTitleResponseUsersItem]
     
-    var valued_request: Boolean = js.native
+    var valued_request: Boolean
     
-    var vc_muted: Boolean = js.native
+    var vc_muted: Boolean
     
-    var viewer_id: Double = js.native
+    var viewer_id: Double
   }
   object DirectThreadRepositoryUpdateTitleResponseThread {
     
@@ -464,7 +454,7 @@ object directThreadRepositoryUpdateTitleResponseMod {
       last_activity_at: String,
       last_permanent_item: DirectThreadRepositoryUpdateTitleResponseLastPermanentItem,
       last_seen_at: js.Any,
-      left_users: js.Array[_],
+      left_users: js.Array[js.Any],
       mentions_muted: Boolean,
       muted: Boolean,
       named: Boolean,
@@ -546,7 +536,7 @@ object directThreadRepositoryUpdateTitleResponseMod {
       def setLast_seen_at(value: js.Any): Self = StObject.set(x, "last_seen_at", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLeft_users(value: js.Array[_]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
+      def setLeft_users(value: js.Array[js.Any]): Self = StObject.set(x, "left_users", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLeft_usersVarargs(value: js.Any*): Self = StObject.set(x, "left_users", js.Array(value :_*))
@@ -610,30 +600,29 @@ object directThreadRepositoryUpdateTitleResponseMod {
     }
   }
   
-  @js.native
   trait DirectThreadRepositoryUpdateTitleResponseUsersItem extends StObject {
     
-    var friendship_status: DirectThreadRepositoryUpdateTitleResponseFriendshipStatus = js.native
+    var friendship_status: DirectThreadRepositoryUpdateTitleResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_directapp_installed: Boolean = js.native
+    var is_directapp_installed: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_using_unified_inbox_for_direct: Boolean = js.native
+    var is_using_unified_inbox_for_direct: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object DirectThreadRepositoryUpdateTitleResponseUsersItem {
     

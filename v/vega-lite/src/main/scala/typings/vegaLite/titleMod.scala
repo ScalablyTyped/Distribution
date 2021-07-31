@@ -22,128 +22,143 @@ import typings.vegaTypings.valuesMod.StringValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
   
-  @JSImport("vega-lite/build/src/title", "extractTitleConfig")
+  @JSImport("vega-lite/build/src/title", JSImport.Namespace)
   @js.native
-  def extractTitleConfig(titleConfig: TitleConfig[SignalRef]): NonMark = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/title", "isText")
-  @js.native
-  def isText(v: js.Any): /* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean = js.native
+  @scala.inline
+  def extractTitleConfig(titleConfig: TitleConfig[SignalRef]): NonMark = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTitleConfig")(titleConfig.asInstanceOf[js.Any]).asInstanceOf[NonMark]
+  
+  @scala.inline
+  def isText(v: js.Any): /* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(v.asInstanceOf[js.Any]).asInstanceOf[/* is vega-typings.vega-typings/types/spec/encode.Text */ Boolean]
   
   /* Inlined vega-lite.vega-lite/build/src/vega.schema.MapExcludeValueRefAndReplaceSignalWith<std.Omit<vega.vega.BaseTitle, 'align' | 'baseline'>, ES> & vega-lite.vega-lite/build/src/vega.schema.MappedExcludeValueRef<std.Pick<vega.vega.BaseTitle, 'align' | 'baseline'>> */
-  @js.native
   trait BaseTitleNoValueRefs[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     var align: js.UndefOr[
-        Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]
-      ] = js.native
+        Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]
+      ] = js.undefined
     
     var anchor: js.UndefOr[
-        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var angle: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var aria: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var baseline: js.UndefOr[
-        Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]
-      ] = js.native
+        Exclude[
+          js.UndefOr[TextBaselineValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]
+      ] = js.undefined
     
     var color: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var dx: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var dy: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var font: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var fontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var fontStyle: js.UndefOr[
-        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontStyleValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var fontWeight: js.UndefOr[
-        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontWeightValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var frame: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleFrame | StringValue], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
-      ] = js.native
+      ] = js.undefined
     
     var limit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var lineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var offset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var orient: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleOrient | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
-      ] = js.native
+      ] = js.undefined
     
     var subtitleColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFontStyle: js.UndefOr[
-        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontStyleValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var subtitleFontWeight: js.UndefOr[
-        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontWeightValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var subtitleLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitlePadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var zindex: js.UndefOr[
-        (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
   }
   object BaseTitleNoValueRefs {
     
@@ -154,17 +169,17 @@ object titleMod {
     }
     
     @scala.inline
-    implicit class BaseTitleNoValueRefsMutableBuilder[Self <: BaseTitleNoValueRefs[_], ES /* <: ExprRef | SignalRef */] (val x: Self with BaseTitleNoValueRefs[ES]) extends AnyVal {
+    implicit class BaseTitleNoValueRefsMutableBuilder[Self <: BaseTitleNoValueRefs[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseTitleNoValueRefs[ES]) extends AnyVal {
       
       @scala.inline
-      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
       @scala.inline
       def setAnchor(
-        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -175,26 +190,35 @@ object titleMod {
       
       @scala.inline
       def setAngle(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
       @scala.inline
-      def setAria(value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+      def setAria(
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
       @scala.inline
-      def setBaseline(value: Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      def setBaseline(
+        value: Exclude[
+              js.UndefOr[TextBaselineValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]
+      ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
       @scala.inline
-      def setColor(value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorNull: Self = StObject.set(x, "color", null)
@@ -204,7 +228,7 @@ object titleMod {
       
       @scala.inline
       def setDx(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -212,7 +236,7 @@ object titleMod {
       
       @scala.inline
       def setDy(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -220,12 +244,12 @@ object titleMod {
       
       @scala.inline
       def setFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -233,7 +257,10 @@ object titleMod {
       
       @scala.inline
       def setFontStyle(
-        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontStyleValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -244,7 +271,10 @@ object titleMod {
       
       @scala.inline
       def setFontWeight(
-        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontWeightValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -254,7 +284,7 @@ object titleMod {
       def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
-              ScaledValueRef[_] | NumericValueRef | ColorValueRef
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
@@ -263,7 +293,7 @@ object titleMod {
       
       @scala.inline
       def setLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -271,7 +301,7 @@ object titleMod {
       
       @scala.inline
       def setLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -279,7 +309,7 @@ object titleMod {
       
       @scala.inline
       def setOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -289,7 +319,7 @@ object titleMod {
       def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
-              ScaledValueRef[_] | NumericValueRef | ColorValueRef
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
@@ -297,7 +327,9 @@ object titleMod {
       def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
       @scala.inline
-      def setSubtitleColor(value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+      def setSubtitleColor(
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
@@ -307,12 +339,12 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitleFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -320,7 +352,10 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFontStyle(
-        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontStyleValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -331,7 +366,10 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFontWeight(
-        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontWeightValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -339,7 +377,7 @@ object titleMod {
       
       @scala.inline
       def setSubtitleLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -347,22 +385,25 @@ object titleMod {
       
       @scala.inline
       def setSubtitlePadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
       @scala.inline
-      def setZindex(value: (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
+      def setZindex(
+        value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
-  @js.native
-  trait TitleBase[ES /* <: ExprRef | SignalRef */] extends BaseTitleNoValueRefs[ES] {
+  trait TitleBase[ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with BaseTitleNoValueRefs[ES] {
     
     /**
       * The anchor position for placing the title. One of `"start"`, `"middle"`, or `"end"`. For example, with an orientation of top these anchor positions map to a left-, center-, or right-aligned title.
@@ -373,21 +414,21 @@ object titleMod {
       * __Note:__ [For now](https://github.com/vega/vega-lite/issues/2875), `anchor` is only customizable only for [single](https://vega.github.io/vega-lite/docs/spec.html) and [layered](https://vega.github.io/vega-lite/docs/layer.html) views. For other composite views, `anchor` is always `"start"`.
       */
     @JSName("anchor")
-    var anchor_TitleBase: js.UndefOr[TitleAnchor] = js.native
+    var anchor_TitleBase: js.UndefOr[TitleAnchor] = js.undefined
     
     /**
       * Mark definitions for custom encoding.
       *
       * @hidden
       */
-    var encoding: js.UndefOr[TextEncodeEntry] = js.native
+    var encoding: js.UndefOr[TextEncodeEntry] = js.undefined
     
     /**
       * A [mark style property](https://vega.github.io/vega-lite/docs/config.html#style) to apply to the title text mark.
       *
       * __Default value:__ `"group-title"`.
       */
-    var style: js.UndefOr[String | js.Array[String]] = js.native
+    var style: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * 	The integer z-index indicating the layering of the title group relative to other axis, mark and legend groups.
@@ -398,7 +439,7 @@ object titleMod {
       * @minimum 0
       */
     @JSName("zindex")
-    var zindex_TitleBase: js.UndefOr[Double] = js.native
+    var zindex_TitleBase: js.UndefOr[Double] = js.undefined
   }
   object TitleBase {
     
@@ -409,7 +450,7 @@ object titleMod {
     }
     
     @scala.inline
-    implicit class TitleBaseMutableBuilder[Self <: TitleBase[_], ES /* <: ExprRef | SignalRef */] (val x: Self with TitleBase[ES]) extends AnyVal {
+    implicit class TitleBaseMutableBuilder[Self <: TitleBase[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleBase[ES]) extends AnyVal {
       
       @scala.inline
       def setAnchor(value: TitleAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
@@ -444,114 +485,128 @@ object titleMod {
   }
   
   /* Inlined vega-lite.vega-lite/build/src/title.BaseTitleNoValueRefs<ES> */
-  @js.native
   trait TitleConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     var align: js.UndefOr[
-        Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]
-      ] = js.native
+        Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]
+      ] = js.undefined
     
     var anchor: js.UndefOr[
-        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var angle: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var aria: js.UndefOr[
-        (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var baseline: js.UndefOr[
-        Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]
-      ] = js.native
+        Exclude[
+          js.UndefOr[TextBaselineValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]
+      ] = js.undefined
     
     var color: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var dx: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var dy: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var font: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var fontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var fontStyle: js.UndefOr[
-        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontStyleValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var fontWeight: js.UndefOr[
-        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontWeightValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var frame: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleFrame | StringValue], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
-      ] = js.native
+      ] = js.undefined
     
     var limit: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var lineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var offset: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var orient: js.UndefOr[
         (Exclude[
           js.UndefOr[TitleOrient | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
-      ] = js.native
+      ] = js.undefined
     
     var subtitleColor: js.UndefOr[
-        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFont: js.UndefOr[
-        (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFontSize: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitleFontStyle: js.UndefOr[
-        (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontStyleValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var subtitleFontWeight: js.UndefOr[
-        (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[
+          js.UndefOr[FontWeightValue], 
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+        ]) | ES
+      ] = js.undefined
     
     var subtitleLineHeight: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var subtitlePadding: js.UndefOr[
-        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
     
     var zindex: js.UndefOr[
-        (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
-      ] = js.native
+        (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ] = js.undefined
   }
   object TitleConfig {
     
@@ -562,17 +617,17 @@ object titleMod {
     }
     
     @scala.inline
-    implicit class TitleConfigMutableBuilder[Self <: TitleConfig[_], ES /* <: ExprRef | SignalRef */] (val x: Self with TitleConfig[ES]) extends AnyVal {
+    implicit class TitleConfigMutableBuilder[Self <: TitleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleConfig[ES]) extends AnyVal {
       
       @scala.inline
-      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      def setAlign(value: Exclude[js.UndefOr[AlignValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
       @scala.inline
       def setAnchor(
-        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[AnchorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -583,26 +638,35 @@ object titleMod {
       
       @scala.inline
       def setAngle(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
       
       @scala.inline
-      def setAria(value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+      def setAria(
+        value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
       
       @scala.inline
-      def setBaseline(value: Exclude[js.UndefOr[TextBaselineValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      def setBaseline(
+        value: Exclude[
+              js.UndefOr[TextBaselineValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]
+      ): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
       @scala.inline
-      def setColor(value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      def setColor(
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColorNull: Self = StObject.set(x, "color", null)
@@ -612,7 +676,7 @@ object titleMod {
       
       @scala.inline
       def setDx(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -620,7 +684,7 @@ object titleMod {
       
       @scala.inline
       def setDy(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -628,12 +692,12 @@ object titleMod {
       
       @scala.inline
       def setFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -641,7 +705,10 @@ object titleMod {
       
       @scala.inline
       def setFontStyle(
-        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontStyleValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -652,7 +719,10 @@ object titleMod {
       
       @scala.inline
       def setFontWeight(
-        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontWeightValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -662,7 +732,7 @@ object titleMod {
       def setFrame(
         value: (Exclude[
               js.UndefOr[TitleFrame | StringValue], 
-              ScaledValueRef[_] | NumericValueRef | ColorValueRef
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
@@ -671,7 +741,7 @@ object titleMod {
       
       @scala.inline
       def setLimit(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -679,7 +749,7 @@ object titleMod {
       
       @scala.inline
       def setLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -687,7 +757,7 @@ object titleMod {
       
       @scala.inline
       def setOffset(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -697,7 +767,7 @@ object titleMod {
       def setOrient(
         value: (Exclude[
               js.UndefOr[TitleOrient | SignalRef], 
-              ScaledValueRef[_] | NumericValueRef | ColorValueRef
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
             ]) | ES
       ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
       
@@ -705,7 +775,9 @@ object titleMod {
       def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
       
       @scala.inline
-      def setSubtitleColor(value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
+      def setSubtitleColor(
+        value: (Exclude[js.UndefOr[ColorValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "subtitleColor", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitleColorNull: Self = StObject.set(x, "subtitleColor", null)
@@ -715,12 +787,12 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFont(
-        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[StringValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFont", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitleFontSize(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleFontSize", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -728,7 +800,10 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFontStyle(
-        value: (Exclude[js.UndefOr[FontStyleValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontStyleValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "subtitleFontStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -739,7 +814,10 @@ object titleMod {
       
       @scala.inline
       def setSubtitleFontWeight(
-        value: (Exclude[js.UndefOr[FontWeightValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[
+              js.UndefOr[FontWeightValue], 
+              ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
+            ]) | ES
       ): Self = StObject.set(x, "subtitleFontWeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -747,7 +825,7 @@ object titleMod {
       
       @scala.inline
       def setSubtitleLineHeight(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitleLineHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -755,32 +833,35 @@ object titleMod {
       
       @scala.inline
       def setSubtitlePadding(
-        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES
+        value: (Exclude[js.UndefOr[NumberValue], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
       ): Self = StObject.set(x, "subtitlePadding", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubtitlePaddingUndefined: Self = StObject.set(x, "subtitlePadding", js.undefined)
       
       @scala.inline
-      def setZindex(value: (Exclude[js.UndefOr[Double], ScaledValueRef[_] | NumericValueRef | ColorValueRef]) | ES): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
+      def setZindex(
+        value: (Exclude[js.UndefOr[Double], ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef]) | ES
+      ): Self = StObject.set(x, "zindex", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setZindexUndefined: Self = StObject.set(x, "zindex", js.undefined)
     }
   }
   
-  @js.native
-  trait TitleParams[ES /* <: ExprRef | SignalRef */] extends TitleBase[ES] {
+  trait TitleParams[ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with TitleBase[ES] {
     
     /**
       * The subtitle Text.
       */
-    var subtitle: js.UndefOr[Text] = js.native
+    var subtitle: js.UndefOr[Text] = js.undefined
     
     /**
       * The title text.
       */
-    var text: Text | ES = js.native
+    var text: Text | ES
   }
   object TitleParams {
     
@@ -791,7 +872,7 @@ object titleMod {
     }
     
     @scala.inline
-    implicit class TitleParamsMutableBuilder[Self <: TitleParams[_], ES /* <: ExprRef | SignalRef */] (val x: Self with TitleParams[ES]) extends AnyVal {
+    implicit class TitleParamsMutableBuilder[Self <: TitleParams[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TitleParams[ES]) extends AnyVal {
       
       @scala.inline
       def setSubtitle(value: Text): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])

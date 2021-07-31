@@ -5,15 +5,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Oidc {
   
-  @js.native
   trait DefaultHttpRequest extends StObject {
     
-    def getJSON(url: String, config: js.Any): DefaultPromise = js.native
+    def getJSON(url: String, config: js.Any): DefaultPromise
   }
   object DefaultHttpRequest {
     
@@ -31,15 +29,14 @@ object Oidc {
     }
   }
   
-  @js.native
   trait DefaultPromise extends StObject {
     
-    def `catch`(errorCallback: js.Function0[Unit]): DefaultPromise = js.native
+    def `catch`(errorCallback: js.Function0[Unit]): DefaultPromise
     
     def `then`(
       successCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit],
       errorCallback: js.Function1[/* reason */ js.UndefOr[js.Any], Unit]
-    ): DefaultPromise = js.native
+    ): DefaultPromise
   }
   object DefaultPromise {
     
@@ -67,14 +64,13 @@ object Oidc {
     }
   }
   
-  @js.native
   trait DefaultPromiseFactory extends StObject {
     
-    def create(callback: js.Any): DefaultPromise = js.native
+    def create(callback: js.Any): DefaultPromise
     
-    def reject(reason: js.Any): DefaultPromise = js.native
+    def reject(reason: js.Any): DefaultPromise
     
-    def resolve(value: js.Any): DefaultPromise = js.native
+    def resolve(value: js.Any): DefaultPromise
   }
   object DefaultPromiseFactory {
     
@@ -102,32 +98,31 @@ object Oidc {
     }
   }
   
-  @js.native
   trait OidcClient extends StObject {
     
-    def createLogoutRequestAsync(id_token_hint: String): DefaultPromise = js.native
+    def createLogoutRequestAsync(id_token_hint: String): DefaultPromise
     
-    def createTokenRequestAsync(): DefaultPromise = js.native
+    def createTokenRequestAsync(): DefaultPromise
     
-    var isOAuth: Boolean = js.native
+    var isOAuth: Boolean
     
-    var isOidc: Boolean = js.native
+    var isOidc: Boolean
     
-    def loadAuthorizationEndpoint(): Unit = js.native
+    def loadAuthorizationEndpoint(): Unit
     
-    def loadMetadataAsync(): DefaultPromise = js.native
+    def loadMetadataAsync(): DefaultPromise
     
-    def loadUserProfile(access_token: String): DefaultPromise = js.native
+    def loadUserProfile(access_token: String): DefaultPromise
     
-    def loadX509SigningKeyAsync(): DefaultPromise = js.native
+    def loadX509SigningKeyAsync(): DefaultPromise
     
-    def processResponseAsync(queryString: String): DefaultPromise = js.native
+    def processResponseAsync(queryString: String): DefaultPromise
     
-    def validateAccessTokenAsync(id_token_contents: String, access_token: String): DefaultPromise = js.native
+    def validateAccessTokenAsync(id_token_contents: String, access_token: String): DefaultPromise
     
-    def validateIdTokenAndAccessTokenAsync(id_token: String, nonce: String, access_token: String): DefaultPromise = js.native
+    def validateIdTokenAndAccessTokenAsync(id_token: String, nonce: String, access_token: String): DefaultPromise
     
-    def validateIdTokenAsync(id_token: String, nonce: String, access_token: String): DefaultPromise = js.native
+    def validateIdTokenAsync(id_token: String, nonce: String, access_token: String): DefaultPromise
   }
   object OidcClient {
     
@@ -191,20 +186,19 @@ object Oidc {
     }
   }
   
-  @js.native
   trait OidcClientSettings extends StObject {
     
-    var authority: js.UndefOr[String] = js.native
+    var authority: js.UndefOr[String] = js.undefined
     
-    var filter_protocol_claims: js.UndefOr[Boolean] = js.native
+    var filter_protocol_claims: js.UndefOr[Boolean] = js.undefined
     
-    var load_user_profile: js.UndefOr[Boolean] = js.native
+    var load_user_profile: js.UndefOr[Boolean] = js.undefined
     
-    var request_state_key: js.UndefOr[String] = js.native
+    var request_state_key: js.UndefOr[String] = js.undefined
     
-    var request_state_store: js.UndefOr[js.Any] = js.native
+    var request_state_store: js.UndefOr[js.Any] = js.undefined
     
-    var response_type: js.UndefOr[String] = js.native
+    var response_type: js.UndefOr[String] = js.undefined
   }
   object OidcClientSettings {
     
@@ -256,30 +250,31 @@ object Oidc {
   }
   
   @js.native
-  trait OidcClientStatic extends Instantiable1[/* settings */ OidcClientSettings, OidcTokenManager]
+  trait OidcClientStatic
+    extends StObject
+       with Instantiable1[/* settings */ OidcClientSettings, OidcTokenManager]
   
-  @js.native
   trait OidcToken extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var expired: Boolean = js.native
+    var expired: Boolean
     
-    var expires_at: Double = js.native
+    var expires_at: Double
     
-    var expires_in: Double = js.native
+    var expires_in: Double
     
-    var id_token: String = js.native
+    var id_token: String
     
-    var profile: String = js.native
+    var profile: String
     
-    var scope: String = js.native
+    var scope: String
     
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
     
-    var session_state: js.Any = js.native
+    var session_state: js.Any
     
-    def toJSON(): String = js.native
+    def toJSON(): String
   }
   object OidcToken {
     
@@ -392,50 +387,49 @@ object Oidc {
     var session_state: js.Any = js.native
   }
   
-  @js.native
   trait OidcTokenManagerSettings extends StObject {
     
-    var authority: js.UndefOr[String] = js.native
+    var authority: js.UndefOr[String] = js.undefined
     
-    var authorization_endpoint: js.UndefOr[String] = js.native
+    var authorization_endpoint: js.UndefOr[String] = js.undefined
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var end_session_endpoint: js.UndefOr[String] = js.native
+    var end_session_endpoint: js.UndefOr[String] = js.undefined
     
-    var jwks: js.UndefOr[js.Any] = js.native
+    var jwks: js.UndefOr[js.Any] = js.undefined
     
-    var jwks_uri: js.UndefOr[String] = js.native
+    var jwks_uri: js.UndefOr[String] = js.undefined
     
-    var load_user_profile: js.UndefOr[Boolean] = js.native
+    var load_user_profile: js.UndefOr[Boolean] = js.undefined
     
-    var metadata: js.UndefOr[js.Any] = js.native
+    var metadata: js.UndefOr[js.Any] = js.undefined
     
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
     
-    var persistKey: js.UndefOr[String] = js.native
+    var persistKey: js.UndefOr[String] = js.undefined
     
-    var popup_redirect_uri: js.UndefOr[String] = js.native
+    var popup_redirect_uri: js.UndefOr[String] = js.undefined
     
-    var post_logout_redirect_uri: js.UndefOr[String] = js.native
+    var post_logout_redirect_uri: js.UndefOr[String] = js.undefined
     
-    var redirect_uri: js.UndefOr[String] = js.native
+    var redirect_uri: js.UndefOr[String] = js.undefined
     
-    var request_state_key: js.UndefOr[String] = js.native
+    var request_state_key: js.UndefOr[String] = js.undefined
     
-    var request_state_store: js.UndefOr[Storage] = js.native
+    var request_state_store: js.UndefOr[Storage] = js.undefined
     
-    var response_type: js.UndefOr[String] = js.native
+    var response_type: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var silent_redirect_uri: js.UndefOr[String] = js.native
+    var silent_redirect_uri: js.UndefOr[String] = js.undefined
     
-    var silent_renew: js.UndefOr[Boolean] = js.native
+    var silent_renew: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[Storage] = js.native
+    var store: js.UndefOr[Storage] = js.undefined
     
-    var userinfo_endpoint: js.UndefOr[String] = js.native
+    var userinfo_endpoint: js.UndefOr[String] = js.undefined
   }
   object OidcTokenManagerSettings {
     
@@ -578,7 +572,8 @@ object Oidc {
   
   @js.native
   trait OidcTokenManagerStatic
-    extends Instantiable0[OidcTokenManager]
+    extends StObject
+       with Instantiable0[OidcTokenManager]
        with Instantiable1[/* settings */ OidcTokenManagerSettings, OidcTokenManager] {
     
     def setHttpRequest(httpRequest: DefaultHttpRequest): Unit = js.native
@@ -586,12 +581,11 @@ object Oidc {
     def setPromiseFactory(promiseFactory: DefaultPromiseFactory): Unit = js.native
   }
   
-  @js.native
   trait PopupSettings extends StObject {
     
-    var features: js.UndefOr[String] = js.native
+    var features: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
   }
   object PopupSettings {
     

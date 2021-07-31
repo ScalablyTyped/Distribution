@@ -10,7 +10,6 @@ import typings.unfetch.anon.Body
 import typings.unfetch.anon.Entries
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,24 +26,23 @@ object mod {
     override def _to: Unfetch_ = ^
   }
   
-  @js.native
   trait UnfetchResponse extends StObject {
     
-    def blob(): js.Promise[Blob] = js.native
+    def blob(): js.Promise[Blob]
     
-    var headers: Entries = js.native
+    var headers: Entries
     
-    def json(): js.Promise[_] = js.native
+    def json(): js.Promise[js.Any]
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
     
-    def text(): js.Promise[String] = js.native
+    def text(): js.Promise[String]
     
-    var url: String = js.native
+    var url: String
   }
   object UnfetchResponse {
     
@@ -52,7 +50,7 @@ object mod {
     def apply(
       blob: () => js.Promise[Blob],
       headers: Entries,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       ok: Boolean,
       status: Double,
       statusText: String,
@@ -73,7 +71,7 @@ object mod {
       def setHeaders(value: Entries): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setJson(value: () => js.Promise[_]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
+      def setJson(value: () => js.Promise[js.Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])

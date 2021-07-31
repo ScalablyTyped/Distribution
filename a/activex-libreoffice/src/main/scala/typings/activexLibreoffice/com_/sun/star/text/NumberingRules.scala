@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XIndexReplace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,31 +15,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Numbering rules may be set at a {@link Paragraph} object. The numbering rules are levels of property values. Each level contains equal properties.
   */
-@js.native
 trait NumberingRules
-  extends XIndexReplace
+  extends StObject
+     with XIndexReplace
      with XPropertySet {
   
   /** id of default list for the numbering rules instance */
-  var DefaultListId: String = js.native
+  var DefaultListId: String
   
   /** determines if the margins are absolute or relative to the preceding numbering level. */
-  var IsAbsoluteMargins: Boolean = js.native
+  var IsAbsoluteMargins: Boolean
   
   /** determines if the numbering rules are automatically created as opposed to numbering rules that are part of a numbering style. */
-  var IsAutomatic: Boolean = js.native
+  var IsAutomatic: Boolean
   
   /** determines if the numbering levels are counted continuously or if each numbering level is counted separately. */
-  var IsContinuousNumbering: Boolean = js.native
+  var IsContinuousNumbering: Boolean
   
   /** contains the name of the numbering rules. It is used to identify a certain numbering rules property */
-  var Name: String = js.native
+  var Name: String
   
   /** This numbering is used in the outline of the document (e.g. headings). */
-  var NumberingIsOutline: Boolean = js.native
+  var NumberingIsOutline: Boolean
   
   /** the type of numbering (Arabic, characters, roman numbers, etc.). */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
 }
 object NumberingRules {
   

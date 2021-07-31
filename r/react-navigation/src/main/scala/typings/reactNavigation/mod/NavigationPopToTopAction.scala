@@ -3,22 +3,21 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP_TO_TOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationPopToTopAction
-  extends NavigationStackAction
-     with NavigationPopToTopActionPayload {
+  extends StObject
+     with NavigationPopToTopActionPayload
+     with NavigationStackAction {
   
-  var `type`: NavigationSlashPOP_TO_TOP = js.native
+  var `type`: NavigationSlashPOP_TO_TOP
 }
 object NavigationPopToTopAction {
   
   @scala.inline
-  def apply(`type`: NavigationSlashPOP_TO_TOP): NavigationPopToTopAction = {
+  def apply(): NavigationPopToTopAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/POP_TO_TOP")
     __obj.asInstanceOf[NavigationPopToTopAction]
   }
   

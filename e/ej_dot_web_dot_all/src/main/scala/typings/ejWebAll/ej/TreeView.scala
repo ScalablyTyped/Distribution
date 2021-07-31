@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeView extends Widget_ {
+trait TreeView
+  extends StObject
+     with Widget_ {
   
   /** To add a Node or collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in
     * TreeView.
@@ -28,8 +29,8 @@ trait TreeView extends Widget_ {
     */
   def addNodes(collection: js.Any, target: String, preventTargetExpand: Boolean): Unit = js.native
   def addNodes(collection: js.Any, target: js.Any, preventTargetExpand: Boolean): Unit = js.native
-  def addNodes(collection: js.Array[_], target: String, preventTargetExpand: Boolean): Unit = js.native
-  def addNodes(collection: js.Array[_], target: js.Any, preventTargetExpand: Boolean): Unit = js.native
+  def addNodes(collection: js.Array[js.Any], target: String, preventTargetExpand: Boolean): Unit = js.native
+  def addNodes(collection: js.Array[js.Any], target: js.Any, preventTargetExpand: Boolean): Unit = js.native
   
   /** To check all the nodes in TreeView.
     * @returns {void}
@@ -42,7 +43,7 @@ trait TreeView extends Widget_ {
     */
   def checkNode(element: String): Unit = js.native
   def checkNode(element: js.Any): Unit = js.native
-  def checkNode(element: js.Array[_]): Unit = js.native
+  def checkNode(element: js.Array[js.Any]): Unit = js.native
   
   /** This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass levelUntil as
     * argument to this method.
@@ -51,9 +52,9 @@ trait TreeView extends Widget_ {
     * @returns {void}
     */
   def collapseAll(): Unit = js.native
-  def collapseAll(levelUntil: js.UndefOr[scala.Nothing], excludeHiddenNodes: Boolean): Unit = js.native
   def collapseAll(levelUntil: Double): Unit = js.native
   def collapseAll(levelUntil: Double, excludeHiddenNodes: Boolean): Unit = js.native
+  def collapseAll(levelUntil: Unit, excludeHiddenNodes: Boolean): Unit = js.native
   
   /** To collapse a particular node in TreeView.
     * @param {string|any|any[]} ID of TreeView node|object of TreeView node/collection of ID/object of TreeView nodes
@@ -61,7 +62,7 @@ trait TreeView extends Widget_ {
     */
   def collapseNode(element: String): Unit = js.native
   def collapseNode(element: js.Any): Unit = js.native
-  def collapseNode(element: js.Array[_]): Unit = js.native
+  def collapseNode(element: js.Array[js.Any]): Unit = js.native
   
   var defaults: Model = js.native
   
@@ -71,7 +72,7 @@ trait TreeView extends Widget_ {
     */
   def disableNode(element: String): Unit = js.native
   def disableNode(element: js.Any): Unit = js.native
-  def disableNode(element: js.Array[_]): Unit = js.native
+  def disableNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To enable the node in the TreeView.
     * @param {string|any|any[]} ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes
@@ -79,7 +80,7 @@ trait TreeView extends Widget_ {
     */
   def enableNode(element: String): Unit = js.native
   def enableNode(element: js.Any): Unit = js.native
-  def enableNode(element: js.Array[_]): Unit = js.native
+  def enableNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To ensure that the TreeView node is visible in the TreeView. This method is useful if we need select a TreeView node dynamically.
     * @param {string|any} ID of TreeView node/object of TreeView node
@@ -95,9 +96,9 @@ trait TreeView extends Widget_ {
     * @returns {void}
     */
   def expandAll(): Unit = js.native
-  def expandAll(levelUntil: js.UndefOr[scala.Nothing], excludeHiddenNodes: Boolean): Unit = js.native
   def expandAll(levelUntil: Double): Unit = js.native
   def expandAll(levelUntil: Double, excludeHiddenNodes: Boolean): Unit = js.native
+  def expandAll(levelUntil: Unit, excludeHiddenNodes: Boolean): Unit = js.native
   
   /** To expandNode particular node in TreeView.
     * @param {string|any|any[]} ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes
@@ -105,7 +106,7 @@ trait TreeView extends Widget_ {
     */
   def expandNode(element: String): Unit = js.native
   def expandNode(element: js.Any): Unit = js.native
-  def expandNode(element: js.Array[_]): Unit = js.native
+  def expandNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To get currently checked nodes in TreeView.
     * @returns {any}
@@ -115,7 +116,7 @@ trait TreeView extends Widget_ {
   /** To get currently checked nodes indexes in TreeView.
     * @returns {any[]}
     */
-  def getCheckedNodesIndex(): js.Array[_] = js.native
+  def getCheckedNodesIndex(): js.Array[js.Any] = js.native
   
   /** This method is used to get immediate child nodes of a node in TreeView control. If you want to get the all child nodes include nested child nodes then we need to pass
     * includeNestedChild as true along with element arguments to this method.
@@ -123,10 +124,10 @@ trait TreeView extends Widget_ {
     * @param {boolean} Weather include nested child nodes of TreeView node
     * @returns {any[]}
     */
-  def getChildren(element: String): js.Array[_] = js.native
-  def getChildren(element: String, includeNestedChild: Boolean): js.Array[_] = js.native
-  def getChildren(element: js.Any): js.Array[_] = js.native
-  def getChildren(element: js.Any, includeNestedChild: Boolean): js.Array[_] = js.native
+  def getChildren(element: String): js.Array[js.Any] = js.native
+  def getChildren(element: String, includeNestedChild: Boolean): js.Array[js.Any] = js.native
+  def getChildren(element: js.Any): js.Array[js.Any] = js.native
+  def getChildren(element: js.Any, includeNestedChild: Boolean): js.Array[js.Any] = js.native
   
   /** To get currently expanded nodes in TreeView.
     * @returns {any}
@@ -136,7 +137,7 @@ trait TreeView extends Widget_ {
   /** To get currently expanded nodes indexes in TreeView.
     * @returns {any[]}
     */
-  def getExpandedNodesIndex(): js.Array[_] = js.native
+  def getExpandedNodesIndex(): js.Array[js.Any] = js.native
   
   /** To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childes and index.
     * @param {string|any} ID of TreeView node/object of TreeView node
@@ -183,12 +184,12 @@ trait TreeView extends Widget_ {
   /** To get the currently selected nodes in TreeView.
     * @returns {any[]}
     */
-  def getSelectedNodes(): js.Array[_] = js.native
+  def getSelectedNodes(): js.Array[js.Any] = js.native
   
   /** To get the index positions of currently selected nodes in TreeView.
     * @returns {any[]}
     */
-  def getSelectedNodesIndex(): js.Array[_] = js.native
+  def getSelectedNodesIndex(): js.Array[js.Any] = js.native
   
   /** To get the text of a node in TreeView.
     * @param {string|any} ID of TreeView node/object of TreeView node
@@ -201,9 +202,9 @@ trait TreeView extends Widget_ {
     * @param {string|number} ID of TreeView node
     * @returns {any[]}
     */
-  def getTreeData(): js.Array[_] = js.native
-  def getTreeData(id: String): js.Array[_] = js.native
-  def getTreeData(id: Double): js.Array[_] = js.native
+  def getTreeData(): js.Array[js.Any] = js.native
+  def getTreeData(id: String): js.Array[js.Any] = js.native
+  def getTreeData(id: Double): js.Array[js.Any] = js.native
   
   /** To get currently visible nodes in TreeView.
     * @returns {any}
@@ -228,7 +229,7 @@ trait TreeView extends Widget_ {
     */
   def hideNode(element: String): Unit = js.native
   def hideNode(element: js.Any): Unit = js.native
-  def hideNode(element: js.Array[_]): Unit = js.native
+  def hideNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To add a Node or collection of nodes after the particular TreeView node.
     * @param {string|any} New node text or JSON object
@@ -338,7 +339,7 @@ trait TreeView extends Widget_ {
     */
   def removeNode(element: String): Unit = js.native
   def removeNode(element: js.Any): Unit = js.native
-  def removeNode(element: js.Array[_]): Unit = js.native
+  def removeNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To select all the TreeView nodes when enable allowMultiSelection property.
     * @returns {void}
@@ -351,7 +352,7 @@ trait TreeView extends Widget_ {
     */
   def selectNode(element: String): Unit = js.native
   def selectNode(element: js.Any): Unit = js.native
-  def selectNode(element: js.Array[_]): Unit = js.native
+  def selectNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To show nodes in TreeView.
     * @returns {void}
@@ -364,7 +365,7 @@ trait TreeView extends Widget_ {
     */
   def showNode(element: String): Unit = js.native
   def showNode(element: js.Any): Unit = js.native
-  def showNode(element: js.Array[_]): Unit = js.native
+  def showNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To uncheck all the nodes in TreeView.
     * @returns {void}
@@ -377,7 +378,7 @@ trait TreeView extends Widget_ {
     */
   def uncheckNode(element: String): Unit = js.native
   def uncheckNode(element: js.Any): Unit = js.native
-  def uncheckNode(element: js.Array[_]): Unit = js.native
+  def uncheckNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To unselect all the TreeView nodes when enable allowMultiSelection property.
     * @returns {void}
@@ -390,7 +391,7 @@ trait TreeView extends Widget_ {
     */
   def unselectNode(element: String): Unit = js.native
   def unselectNode(element: js.Any): Unit = js.native
-  def unselectNode(element: js.Array[_]): Unit = js.native
+  def unselectNode(element: js.Array[js.Any]): Unit = js.native
   
   /** To edit or update the text of the TreeView node.
     * @param {string|any} ID of TreeView node/object of TreeView node
@@ -402,32 +403,31 @@ trait TreeView extends Widget_ {
 }
 object TreeView {
   
-  @js.native
   trait BeforeAddEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the given new node data
       */
-    var data: js.UndefOr[String | js.Any] = js.native
+    var data: js.UndefOr[String | js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the parent element, the given new nodes to be appended to the given parent element
       */
-    var targetParent: js.UndefOr[js.Any] = js.native
+    var targetParent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeAddEventArgs {
     
@@ -478,44 +478,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeCollapseEventArgs extends StObject {
     
     /** returns the format asynchronous or synchronous
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the child nodes are loaded or not
       */
-    var isChildLoaded: js.UndefOr[Boolean] = js.native
+    var isChildLoaded: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parent id of currently clicked node
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforeCollapseEventArgs {
     
@@ -584,36 +583,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeCutEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the key pressed key code value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target element, the given node to be cut
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCutEventArgs {
     
@@ -670,44 +668,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeDeleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the parent node values
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current parent element of the target node
       */
-    var parentElement: js.UndefOr[js.Any] = js.native
+    var parentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the currently removed nodes
       */
-    var removedNodes: js.UndefOr[js.Array[_]] = js.native
+    var removedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the target element, the given node to be deleted
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeDeleteEventArgs {
     
@@ -757,7 +754,7 @@ object TreeView {
       def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
       @scala.inline
-      def setRemovedNodes(value: js.Array[_]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
+      def setRemovedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemovedNodesUndefined: Self = StObject.set(x, "removedNodes", js.undefined)
@@ -779,24 +776,23 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeEditEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeEditEventArgs {
     
@@ -835,44 +831,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeExpandEventArgs extends StObject {
     
     /** returns the format asynchronous or synchronous
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** if the child node is ready to expanded state; otherwise, false.
       */
-    var isChildLoaded: js.UndefOr[Boolean] = js.native
+    var isChildLoaded: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parent id of currently clicked node
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforeExpandEventArgs {
     
@@ -941,24 +936,23 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeLoadEventArgs extends StObject {
     
     /** returns the AJAX settings object
       */
-    var AjaxOptions: js.UndefOr[js.Any] = js.native
+    var AjaxOptions: js.UndefOr[js.Any] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeLoadEventArgs {
     
@@ -997,36 +991,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforePasteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the key pressed key code value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target element, the given node to be pasted
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforePasteEventArgs {
     
@@ -1083,28 +1076,27 @@ object TreeView {
     }
   }
   
-  @js.native
   trait BeforeSelectEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target element, the given node to be selected
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeSelectEventArgs {
     
@@ -1149,20 +1141,19 @@ object TreeView {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -1195,20 +1186,19 @@ object TreeView {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -1241,72 +1231,71 @@ object TreeView {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** It receives the child level or inner level data source such as Essential DataManager object and JSON object.
       */
-    var child: js.UndefOr[js.Any] = js.native
+    var child: js.UndefOr[js.Any] = js.undefined
     
     /** It receives Essential DataManager object and JSON object.
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the node to be in expanded state.
       */
-    var expanded: js.UndefOr[String] = js.native
+    var expanded: js.UndefOr[String] = js.undefined
     
     /** Its allow us to indicate whether the node has child or not in load on demand
       */
-    var hasChild: js.UndefOr[String] = js.native
+    var hasChild: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML Attributes to &quot;li&quot; item list.
       */
-    var htmlAttribute: js.UndefOr[js.Any] = js.native
+    var htmlAttribute: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the id to TreeView node items list.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Specifies the image attribute to â€œimgâ€ tag inside items list
       */
-    var imageAttribute: js.UndefOr[js.Any] = js.native
+    var imageAttribute: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the HTML Attributes to &quot;li&quot; item list.
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** If its true Checkbox node will be checked when rendered with checkbox.
       */
-    var isChecked: js.UndefOr[String] = js.native
+    var isChecked: js.UndefOr[String] = js.undefined
     
     /** Specifies the link attribute to â€œaâ€ tag in item list.
       */
-    var linkAttribute: js.UndefOr[js.Any] = js.native
+    var linkAttribute: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the parent id of the node. The nodes are listed as child nodes of the specified parent node by using its parent id.
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** It receives query to retrieve data from the table (query is same as SQL).
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Allow us to specify the node to be in selected state
       */
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
     /** Specifies the sprite CSS class to &quot;li&quot; item list.
       */
-    var spriteCssClass: js.UndefOr[String] = js.native
+    var spriteCssClass: js.UndefOr[String] = js.undefined
     
     /** It receives the table name to execute query on the corresponding table.
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
     /** Specifies the text of TreeView node items list.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -1417,32 +1406,31 @@ object TreeView {
     }
   }
   
-  @js.native
   trait InlineEditValidationEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current node element id
       */
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the new entered text for the node
       */
-    var newText: js.UndefOr[String] = js.native
+    var newText: js.UndefOr[String] = js.undefined
     
     /** returns the old node text
       */
-    var oldText: js.UndefOr[String] = js.native
+    var oldText: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InlineEditValidationEventArgs {
     
@@ -1493,52 +1481,51 @@ object TreeView {
     }
   }
   
-  @js.native
   trait KeyPressEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of current TreeView node
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** it returns when the current node is in expanded state; otherwise, false.
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /** returns the key pressed key code value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parentId of current TreeView node
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns node path from root element
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object KeyPressEventArgs {
     
@@ -1619,24 +1606,23 @@ object TreeView {
     }
   }
   
-  @js.native
   trait LoadErrorEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the AJAX error object
       */
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadErrorEventArgs {
     
@@ -1675,32 +1661,31 @@ object TreeView {
     }
   }
   
-  @js.native
   trait LoadSuccessEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the success data from the URL
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target parent element, the data returned from the URL to be appended to the given parent element, else in TreeView
       */
-    var targetParent: js.UndefOr[js.Any] = js.native
+    var targetParent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadSuccessEventArgs {
     
@@ -1751,280 +1736,279 @@ object TreeView {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Gets or sets a value that indicates whether to enable drag and drop a node within the same tree.
       * @Default {false}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable drag and drop a node in inter ej.TreeView.
       * @Default {true}
       */
-    var allowDragAndDropAcrossControl: js.UndefOr[Boolean] = js.native
+    var allowDragAndDropAcrossControl: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to drop a node to a child of particular node.
       * @Default {true}
       */
-    var allowDropChild: js.UndefOr[Boolean] = js.native
+    var allowDropChild: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to drop a node to a sibling of particular node.
       * @Default {true}
       */
-    var allowDropSibling: js.UndefOr[Boolean] = js.native
+    var allowDropSibling: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable node editing support for TreeView.
       * @Default {false}
       */
-    var allowEditing: js.UndefOr[Boolean] = js.native
+    var allowEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable keyboard support for TreeView actions like nodeSelection, nodeEditing, nodeExpand, nodeCollapse, nodeCut and Paste.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable multi selection support for TreeView.
       * @Default {false}
       */
-    var allowMultiSelection: js.UndefOr[Boolean] = js.native
+    var allowMultiSelection: js.UndefOr[Boolean] = js.undefined
     
     /** Allow us to specify the parent and child nodes to get auto check while we check or uncheck a node.
       * @Default {true}
       */
-    var autoCheck: js.UndefOr[Boolean] = js.native
+    var autoCheck: js.UndefOr[Boolean] = js.undefined
     
     /** Allow us to specify the parent node to be retain in checked or unchecked state instead of going for indeterminate state.
       * @Default {false}
       */
-    var autoCheckParentNode: js.UndefOr[Boolean] = js.native
+    var autoCheckParentNode: js.UndefOr[Boolean] = js.undefined
     
     /** Fires before adding node to TreeView.
       */
-    var beforeAdd: js.UndefOr[js.Function1[/* e */ BeforeAddEventArgs, Unit]] = js.native
+    var beforeAdd: js.UndefOr[js.Function1[/* e */ BeforeAddEventArgs, Unit]] = js.undefined
     
     /** Fires before collapse a node.
       */
-    var beforeCollapse: js.UndefOr[js.Function1[/* e */ BeforeCollapseEventArgs, Unit]] = js.native
+    var beforeCollapse: js.UndefOr[js.Function1[/* e */ BeforeCollapseEventArgs, Unit]] = js.undefined
     
     /** Fires before cut node in TreeView.
       */
-    var beforeCut: js.UndefOr[js.Function1[/* e */ BeforeCutEventArgs, Unit]] = js.native
+    var beforeCut: js.UndefOr[js.Function1[/* e */ BeforeCutEventArgs, Unit]] = js.undefined
     
     /** Fires before deleting node in TreeView.
       */
-    var beforeDelete: js.UndefOr[js.Function1[/* e */ BeforeDeleteEventArgs, Unit]] = js.native
+    var beforeDelete: js.UndefOr[js.Function1[/* e */ BeforeDeleteEventArgs, Unit]] = js.undefined
     
     /** Fires before editing the node in TreeView.
       */
-    var beforeEdit: js.UndefOr[js.Function1[/* e */ BeforeEditEventArgs, Unit]] = js.native
+    var beforeEdit: js.UndefOr[js.Function1[/* e */ BeforeEditEventArgs, Unit]] = js.undefined
     
     /** Fires before expanding the node.
       */
-    var beforeExpand: js.UndefOr[js.Function1[/* e */ BeforeExpandEventArgs, Unit]] = js.native
+    var beforeExpand: js.UndefOr[js.Function1[/* e */ BeforeExpandEventArgs, Unit]] = js.undefined
     
     /** Fires before loading nodes to TreeView.
       */
-    var beforeLoad: js.UndefOr[js.Function1[/* e */ BeforeLoadEventArgs, Unit]] = js.native
+    var beforeLoad: js.UndefOr[js.Function1[/* e */ BeforeLoadEventArgs, Unit]] = js.undefined
     
     /** Fires before paste node in TreeView.
       */
-    var beforePaste: js.UndefOr[js.Function1[/* e */ BeforePasteEventArgs, Unit]] = js.native
+    var beforePaste: js.UndefOr[js.Function1[/* e */ BeforePasteEventArgs, Unit]] = js.undefined
     
     /** Fires before selecting node in TreeView.
       */
-    var beforeSelect: js.UndefOr[js.Function1[/* e */ BeforeSelectEventArgs, Unit]] = js.native
+    var beforeSelect: js.UndefOr[js.Function1[/* e */ BeforeSelectEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering TreeView.
       * @Default {[]}
       */
-    var checkedNodes: js.UndefOr[js.Array[_]] = js.native
+    var checkedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Fires when TreeView created successfully.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for TreeView which allow us to customize the appearance.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when TreeView destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable or disable the animation effect while expanding or collapsing a node.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Allow us to prevent multiple nodes to be in expanded state. If it set to false, previously expanded node will be collapsed automatically, while we expand a node.
       * @Default {true}
       */
-    var enableMultipleExpand: js.UndefOr[Boolean] = js.native
+    var enableMultipleExpand: js.UndefOr[Boolean] = js.undefined
     
     /** Sets a value that indicates whether to persist the TreeView model state in page using applicable medium i.e., HTML5 localStorage or cookies
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates to align content in the TreeView control from right to left by setting the property as true.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates whether a TreeView can be enabled or disabled. No actions can be performed while this property is set as false
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Gets or sets a value that indicates the TreeView node can be expand or collapse by using the specified action.
       * @Default {dblclick}
       */
-    var expandOn: js.UndefOr[String] = js.native
+    var expandOn: js.UndefOr[String] = js.undefined
     
     /** Gets or sets a array of value that indicates the expandedNodes index collection as an array. The given array index position denotes the nodes, that are expanded while rendering
       * TreeView.
       * @Default {[]}
       */
-    var expandedNodes: js.UndefOr[js.Array[_]] = js.native
+    var expandedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Gets or sets a fields object that allow us to map the data members with field properties in order to make the data binding easier.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Gets or sets a value that indicates whether to enable full row selection support for TreeView.
       * @Default {false}
       */
-    var fullRowSelect: js.UndefOr[Boolean] = js.native
+    var fullRowSelect: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the TreeView.
       * @Default {Null}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Specifies the HTML Attributes for the TreeView. Using this API we can add custom attributes in TreeView control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Fires before nodeEdit Successful.
       */
-    var inlineEditValidation: js.UndefOr[js.Function1[/* e */ InlineEditValidationEventArgs, Unit]] = js.native
+    var inlineEditValidation: js.UndefOr[js.Function1[/* e */ InlineEditValidationEventArgs, Unit]] = js.undefined
     
     /** Fires when key pressed successfully.
       */
-    var keyPress: js.UndefOr[js.Function1[/* e */ KeyPressEventArgs, Unit]] = js.native
+    var keyPress: js.UndefOr[js.Function1[/* e */ KeyPressEventArgs, Unit]] = js.undefined
     
     /** Fires when data load fails.
       */
-    var loadError: js.UndefOr[js.Function1[/* e */ LoadErrorEventArgs, Unit]] = js.native
+    var loadError: js.UndefOr[js.Function1[/* e */ LoadErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the child nodes to be loaded on demand
       * @Default {false}
       */
-    var loadOnDemand: js.UndefOr[Boolean] = js.native
+    var loadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when data loaded successfully.
       */
-    var loadSuccess: js.UndefOr[js.Function1[/* e */ LoadSuccessEventArgs, Unit]] = js.native
+    var loadSuccess: js.UndefOr[js.Function1[/* e */ LoadSuccessEventArgs, Unit]] = js.undefined
     
     /** Fires once node added successfully.
       */
-    var nodeAdd: js.UndefOr[js.Function1[/* e */ NodeAddEventArgs, Unit]] = js.native
+    var nodeAdd: js.UndefOr[js.Function1[/* e */ NodeAddEventArgs, Unit]] = js.undefined
     
     /** Fires once node checked successfully.
       */
-    var nodeCheck: js.UndefOr[js.Function1[/* e */ NodeCheckEventArgs, Unit]] = js.native
+    var nodeCheck: js.UndefOr[js.Function1[/* e */ NodeCheckEventArgs, Unit]] = js.undefined
     
     /** Fires when node clicked successfully.
       */
-    var nodeClick: js.UndefOr[js.Function1[/* e */ NodeClickEventArgs, Unit]] = js.native
+    var nodeClick: js.UndefOr[js.Function1[/* e */ NodeClickEventArgs, Unit]] = js.undefined
     
     /** Fires when node collapsed successfully.
       */
-    var nodeCollapse: js.UndefOr[js.Function1[/* e */ NodeCollapseEventArgs, Unit]] = js.native
+    var nodeCollapse: js.UndefOr[js.Function1[/* e */ NodeCollapseEventArgs, Unit]] = js.undefined
     
     /** Fires when node cut successfully.
       */
-    var nodeCut: js.UndefOr[js.Function1[/* e */ NodeCutEventArgs, Unit]] = js.native
+    var nodeCut: js.UndefOr[js.Function1[/* e */ NodeCutEventArgs, Unit]] = js.undefined
     
     /** Fires when node deleted successfully.
       */
-    var nodeDelete: js.UndefOr[js.Function1[/* e */ NodeDeleteEventArgs, Unit]] = js.native
+    var nodeDelete: js.UndefOr[js.Function1[/* e */ NodeDeleteEventArgs, Unit]] = js.undefined
     
     /** Fires when node dragging.
       */
-    var nodeDrag: js.UndefOr[js.Function1[/* e */ NodeDragEventArgs, Unit]] = js.native
+    var nodeDrag: js.UndefOr[js.Function1[/* e */ NodeDragEventArgs, Unit]] = js.undefined
     
     /** Fires once node drag start successfully.
       */
-    var nodeDragStart: js.UndefOr[js.Function1[/* e */ NodeDragStartEventArgs, Unit]] = js.native
+    var nodeDragStart: js.UndefOr[js.Function1[/* e */ NodeDragStartEventArgs, Unit]] = js.undefined
     
     /** Fires before the dragged node to be dropped.
       */
-    var nodeDragStop: js.UndefOr[js.Function1[/* e */ NodeDragStopEventArgs, Unit]] = js.native
+    var nodeDragStop: js.UndefOr[js.Function1[/* e */ NodeDragStopEventArgs, Unit]] = js.undefined
     
     /** Fires once node dropped successfully.
       */
-    var nodeDropped: js.UndefOr[js.Function1[/* e */ NodeDroppedEventArgs, Unit]] = js.native
+    var nodeDropped: js.UndefOr[js.Function1[/* e */ NodeDroppedEventArgs, Unit]] = js.undefined
     
     /** Fires once node edited successfully.
       */
-    var nodeEdit: js.UndefOr[js.Function1[/* e */ NodeEditEventArgs, Unit]] = js.native
+    var nodeEdit: js.UndefOr[js.Function1[/* e */ NodeEditEventArgs, Unit]] = js.undefined
     
     /** Fires once node expanded successfully.
       */
-    var nodeExpand: js.UndefOr[js.Function1[/* e */ NodeExpandEventArgs, Unit]] = js.native
+    var nodeExpand: js.UndefOr[js.Function1[/* e */ NodeExpandEventArgs, Unit]] = js.undefined
     
     /** Fires once node pasted successfully.
       */
-    var nodePaste: js.UndefOr[js.Function1[/* e */ NodePasteEventArgs, Unit]] = js.native
+    var nodePaste: js.UndefOr[js.Function1[/* e */ NodePasteEventArgs, Unit]] = js.undefined
     
     /** Fires when node selected successfully.
       */
-    var nodeSelect: js.UndefOr[js.Function1[/* e */ NodeSelectEventArgs, Unit]] = js.native
+    var nodeSelect: js.UndefOr[js.Function1[/* e */ NodeSelectEventArgs, Unit]] = js.undefined
     
     /** Fires once node unchecked successfully.
       */
-    var nodeUncheck: js.UndefOr[js.Function1[/* e */ NodeUncheckEventArgs, Unit]] = js.native
+    var nodeUncheck: js.UndefOr[js.Function1[/* e */ NodeUncheckEventArgs, Unit]] = js.undefined
     
     /** Fires once node unselected successfully.
       */
-    var nodeUnselect: js.UndefOr[js.Function1[/* e */ NodeUnselectEventArgs, Unit]] = js.native
+    var nodeUnselect: js.UndefOr[js.Function1[/* e */ NodeUnselectEventArgs, Unit]] = js.undefined
     
     /** Fires when TreeView nodes are loaded successfully
       */
-    var ready: js.UndefOr[js.Function1[/* e */ ReadyEventArgs, Unit]] = js.native
+    var ready: js.UndefOr[js.Function1[/* e */ ReadyEventArgs, Unit]] = js.undefined
     
     /** Gets or Sets a value that indicates the index position of a tree node. The particular index tree node will be selected while rendering the TreeView.
       * @Default {-1}
       */
-    var selectedNode: js.UndefOr[Double] = js.native
+    var selectedNode: js.UndefOr[Double] = js.undefined
     
     /** Gets or sets a value that indicates the selectedNodes index collection as an array. The given array index position denotes the nodes, that are selected while rendering TreeView.
       * @Default {[]}
       */
-    var selectedNodes: js.UndefOr[js.Array[_]] = js.native
+    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Gets or sets a value that indicates whether to display or hide checkbox for all TreeView nodes.
       * @Default {false}
       */
-    var showCheckbox: js.UndefOr[Boolean] = js.native
+    var showCheckbox: js.UndefOr[Boolean] = js.undefined
     
     /** By using sortSettings property, you can customize the sorting option in TreeView control.
       */
-    var sortSettings: js.UndefOr[SortSettings] = js.native
+    var sortSettings: js.UndefOr[SortSettings] = js.undefined
     
     /** Allow us to use custom template in order to create TreeView.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the TreeView.
       * @Default {Null}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -2146,7 +2130,7 @@ object TreeView {
       def setBeforeSelectUndefined: Self = StObject.set(x, "beforeSelect", js.undefined)
       
       @scala.inline
-      def setCheckedNodes(value: js.Array[_]): Self = StObject.set(x, "checkedNodes", value.asInstanceOf[js.Any])
+      def setCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "checkedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCheckedNodesUndefined: Self = StObject.set(x, "checkedNodes", js.undefined)
@@ -2209,7 +2193,7 @@ object TreeView {
       def setExpandOnUndefined: Self = StObject.set(x, "expandOn", js.undefined)
       
       @scala.inline
-      def setExpandedNodes(value: js.Array[_]): Self = StObject.set(x, "expandedNodes", value.asInstanceOf[js.Any])
+      def setExpandedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "expandedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExpandedNodesUndefined: Self = StObject.set(x, "expandedNodes", js.undefined)
@@ -2380,7 +2364,7 @@ object TreeView {
       def setSelectedNodeUndefined: Self = StObject.set(x, "selectedNode", js.undefined)
       
       @scala.inline
-      def setSelectedNodes(value: js.Array[_]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
@@ -2414,36 +2398,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeAddEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the added data, that are given initially
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the newly added elements
       */
-    var nodes: js.UndefOr[js.Any] = js.native
+    var nodes: js.UndefOr[js.Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the target parent element of the added element
       */
-    var parentElement: js.UndefOr[js.Any] = js.native
+    var parentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeAddEventArgs {
     
@@ -2500,52 +2483,51 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeCheckEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** it returns the currently checked and its child node details
       */
-    var currentCheckedNodes: js.UndefOr[js.Array[_]] = js.native
+    var currentCheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** it returns the currently checked node name
       */
-    var currentNode: js.UndefOr[js.Array[_]] = js.native
+    var currentNode: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** it returns true when the node checkbox is checked; otherwise, false.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeCheckEventArgs {
     
@@ -2565,7 +2547,7 @@ object TreeView {
       def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
       @scala.inline
-      def setCurrentCheckedNodes(value: js.Array[_]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
+      def setCurrentCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentCheckedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCurrentCheckedNodesUndefined: Self = StObject.set(x, "currentCheckedNodes", js.undefined)
@@ -2580,7 +2562,7 @@ object TreeView {
       def setCurrentElementUndefined: Self = StObject.set(x, "currentElement", js.undefined)
       
       @scala.inline
-      def setCurrentNode(value: js.Array[_]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
+      def setCurrentNode(value: js.Array[js.Any]): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCurrentNodeUndefined: Self = StObject.set(x, "currentNode", js.undefined)
@@ -2632,36 +2614,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeClickEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of currently clicked TreeView node
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parentId of currently clicked TreeView node
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeClickEventArgs {
     
@@ -2718,44 +2699,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeCollapseEventArgs extends StObject {
     
     /** returns the format asynchronous or synchronous
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the child nodes are loaded or not
       */
-    var isChildLoaded: js.UndefOr[Boolean] = js.native
+    var isChildLoaded: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeCollapseEventArgs {
     
@@ -2824,36 +2804,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeCutEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the key pressed key code value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current parent element of the cut node
       */
-    var parentElement: js.UndefOr[js.Any] = js.native
+    var parentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeCutEventArgs {
     
@@ -2910,36 +2889,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeDeleteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given parent node details
       */
-    var parentDetails: js.UndefOr[js.Any] = js.native
+    var parentDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current parent element of the deleted node
       */
-    var parentElement: js.UndefOr[js.Any] = js.native
+    var parentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the currently removed nodes
       */
-    var removedNodes: js.UndefOr[js.Array[_]] = js.native
+    var removedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeDeleteEventArgs {
     
@@ -2983,7 +2961,7 @@ object TreeView {
       def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
       
       @scala.inline
-      def setRemovedNodes(value: js.Array[_]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
+      def setRemovedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "removedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemovedNodesUndefined: Self = StObject.set(x, "removedNodes", js.undefined)
@@ -2999,44 +2977,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeDragEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the original drag target
       */
-    var dragTarget: js.UndefOr[js.Any] = js.native
+    var dragTarget: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current parent element of the target node
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.native
+    var draggedElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current target TreeView node
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current target details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.native
+    var targetElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeDragEventArgs {
     
@@ -3105,44 +3082,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeDragStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the original drag target
       */
-    var dragTarget: js.UndefOr[js.Any] = js.native
+    var dragTarget: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the current dragging parent TreeView node
       */
-    var parentElement: js.UndefOr[js.Any] = js.native
+    var parentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current dragging parent TreeView node details
       */
-    var parentElementData: js.UndefOr[js.Any] = js.native
+    var parentElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current parent element of the dragging node
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.native
+    var targetElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeDragStartEventArgs {
     
@@ -3211,52 +3187,51 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeDragStopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current dragged TreeView node
       */
-    var draggedElement: js.UndefOr[js.Any] = js.native
+    var draggedElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current dragged TreeView node details
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.native
+    var draggedElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the original drop target
       */
-    var dropTarget: js.UndefOr[js.Any] = js.native
+    var dropTarget: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the drop position such as before, after or over
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /** if it is true, the parent node will be prevented from auto expanding; otherwise, it work's usually
       */
-    var preventTargetExpand: js.UndefOr[Boolean] = js.native
+    var preventTargetExpand: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current parent element of the dragged node
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.native
+    var targetElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeDragStopEventArgs {
     
@@ -3337,48 +3312,47 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeDroppedEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the original drop target
       */
-    var dropTarget: js.UndefOr[js.Any] = js.native
+    var dropTarget: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current dropped TreeView node
       */
-    var droppedElement: js.UndefOr[js.Any] = js.native
+    var droppedElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current dropped TreeView node details
       */
-    var droppedElementData: js.UndefOr[js.Any] = js.native
+    var droppedElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the drop position such as before, after or over
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /** returns the current parent element of the dropped node
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the given parent node details
       */
-    var targetElementData: js.UndefOr[js.Any] = js.native
+    var targetElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeDroppedEventArgs {
     
@@ -3453,44 +3427,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeEditEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the element
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the newText of the element
       */
-    var newText: js.UndefOr[String] = js.native
+    var newText: js.UndefOr[String] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the oldText of the element
       */
-    var oldText: js.UndefOr[String] = js.native
+    var oldText: js.UndefOr[String] = js.undefined
     
     /** returns the target element, the given node to be cut
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodeEditEventArgs {
     
@@ -3559,44 +3532,43 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeExpandEventArgs extends StObject {
     
     /** returns the format asynchronous or synchronous
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of currently clicked node
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** if the child node is ready to expanded state; otherwise, false.
       */
-    var isChildLoaded: js.UndefOr[Boolean] = js.native
+    var isChildLoaded: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the parent id of currently clicked node
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeExpandEventArgs {
     
@@ -3665,36 +3637,35 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodePasteEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the key pressed key code value
       */
-    var keyCode: js.UndefOr[Double] = js.native
+    var keyCode: js.UndefOr[Double] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the given target node values
       */
-    var nodeDetails: js.UndefOr[js.Any] = js.native
+    var nodeDetails: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pasted element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NodePasteEventArgs {
     
@@ -3751,40 +3722,39 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeSelectEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[js.Any] = js.native
+    var parentId: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current selected nodes index of TreeView
       */
-    var selectedNodes: js.UndefOr[js.Array[_]] = js.native
+    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeSelectEventArgs {
     
@@ -3828,7 +3798,7 @@ object TreeView {
       def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
       @scala.inline
-      def setSelectedNodes(value: js.Array[_]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
@@ -3850,52 +3820,51 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeUncheckEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node clicked
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** it returns currently unchecked node name
       */
-    var currentNode: js.UndefOr[String] = js.native
+    var currentNode: js.UndefOr[String] = js.undefined
     
     /** it returns currently unchecked node and its child node details.
       */
-    var currentUncheckedNodes: js.UndefOr[js.Array[_]] = js.native
+    var currentUncheckedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the current element of the node clicked
       */
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
     
     /** it returns true when the node checkbox is checked; otherwise, false.
       */
-    var isChecked: js.UndefOr[Boolean] = js.native
+    var isChecked: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the id of the parent element of current element of the node clicked
       */
-    var parentId: js.UndefOr[js.Any] = js.native
+    var parentId: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeUncheckEventArgs {
     
@@ -3927,7 +3896,7 @@ object TreeView {
       def setCurrentNodeUndefined: Self = StObject.set(x, "currentNode", js.undefined)
       
       @scala.inline
-      def setCurrentUncheckedNodes(value: js.Array[_]): Self = StObject.set(x, "currentUncheckedNodes", value.asInstanceOf[js.Any])
+      def setCurrentUncheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "currentUncheckedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCurrentUncheckedNodesUndefined: Self = StObject.set(x, "currentUncheckedNodes", js.undefined)
@@ -3979,40 +3948,39 @@ object TreeView {
     }
   }
   
-  @js.native
   trait NodeUnselectEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current element of the node unselected
       */
-    var currentElement: js.UndefOr[js.Any] = js.native
+    var currentElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the id of the current element of the node unselected
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the id of the parent element of current element of the node unselected
       */
-    var parentId: js.UndefOr[String] = js.native
+    var parentId: js.UndefOr[String] = js.undefined
     
     /** returns the current selected nodes index of TreeView
       */
-    var selectedNodes: js.UndefOr[js.Array[_]] = js.native
+    var selectedNodes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the node
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object NodeUnselectEventArgs {
     
@@ -4056,7 +4024,7 @@ object TreeView {
       def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
       @scala.inline
-      def setSelectedNodes(value: js.Array[_]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+      def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
@@ -4078,20 +4046,19 @@ object TreeView {
     }
   }
   
-  @js.native
   trait ReadyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TreeView model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ReadyEventArgs {
     
@@ -4124,18 +4091,17 @@ object TreeView {
     }
   }
   
-  @js.native
   trait SortSettings extends StObject {
     
     /** Enables or disables the sorting option in TreeView control
       * @Default {false}
       */
-    var allowSorting: js.UndefOr[Boolean] = js.native
+    var allowSorting: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the sorting order type. There are two sorting types available, such as &quot;ascending&quot;, &quot;descending&quot;.
       * @Default {ej.sortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[typings.ejWebAll.ej.sortOrder | String] = js.native
+    var sortOrder: js.UndefOr[typings.ejWebAll.ej.sortOrder | String] = js.undefined
   }
   object SortSettings {
     

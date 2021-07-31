@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostedTransitVirtualInterfaceAcceptorMod {
@@ -49,6 +48,10 @@ object hostedTransitVirtualInterfaceAcceptorMod {
   /* static members */
   object HostedTransitVirtualInterfaceAcceptor {
     
+    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedTransitVirtualInterfaceAcceptor resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,50 +61,44 @@ object hostedTransitVirtualInterfaceAcceptorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID]): HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedTransitVirtualInterfaceAcceptorState,
       opts: CustomResourceOptions
-    ): HostedTransitVirtualInterfaceAcceptor = js.native
+    ): HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HostedTransitVirtualInterfaceAcceptor]
     
     /**
       * Returns true if the given object is an instance of HostedTransitVirtualInterfaceAcceptor.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor", "HostedTransitVirtualInterfaceAcceptor.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean]
   }
   
-  @js.native
   trait HostedTransitVirtualInterfaceAcceptorArgs extends StObject {
     
     /**
       * The ID of the Direct Connect gateway to which to connect the virtual interface.
       */
-    val dxGatewayId: Input[String] = js.native
+    val dxGatewayId: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface to accept.
       */
-    val virtualInterfaceId: Input[String] = js.native
+    val virtualInterfaceId: Input[String]
   }
   object HostedTransitVirtualInterfaceAcceptorArgs {
     
@@ -128,28 +125,27 @@ object hostedTransitVirtualInterfaceAcceptorMod {
     }
   }
   
-  @js.native
   trait HostedTransitVirtualInterfaceAcceptorState extends StObject {
     
     /**
       * The ARN of the virtual interface.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect gateway to which to connect the virtual interface.
       */
-    val dxGatewayId: js.UndefOr[Input[String]] = js.native
+    val dxGatewayId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface to accept.
       */
-    val virtualInterfaceId: js.UndefOr[Input[String]] = js.native
+    val virtualInterfaceId: js.UndefOr[Input[String]] = js.undefined
   }
   object HostedTransitVirtualInterfaceAcceptorState {
     

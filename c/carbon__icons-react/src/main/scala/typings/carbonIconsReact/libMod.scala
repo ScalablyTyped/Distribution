@@ -3,10 +3,25 @@ package typings.carbonIconsReact
 import typings.carbonIconsReact.mod.CarbonIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
+  
+  @JSImport("@carbon/icons-react/lib", "_4KFilled16")
+  @js.native
+  val `4KFilled16`: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react/lib", "_4KFilled20")
+  @js.native
+  val `4KFilled20`: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react/lib", "_4KFilled24")
+  @js.native
+  val `4KFilled24`: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react/lib", "_4KFilled32")
+  @js.native
+  val `4KFilled32`: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react/lib", "Accessibility16")
   @js.native
@@ -23431,20 +23446,4 @@ object libMod {
   @JSImport("@carbon/icons-react/lib", "_4K32")
   @js.native
   val _4K32: CarbonIconType = js.native
-  
-  @JSImport("@carbon/icons-react/lib", "_4KFilled16")
-  @js.native
-  val `4KFilled16`: CarbonIconType = js.native
-  
-  @JSImport("@carbon/icons-react/lib", "_4KFilled20")
-  @js.native
-  val `4KFilled20`: CarbonIconType = js.native
-  
-  @JSImport("@carbon/icons-react/lib", "_4KFilled24")
-  @js.native
-  val `4KFilled24`: CarbonIconType = js.native
-  
-  @JSImport("@carbon/icons-react/lib", "_4KFilled32")
-  @js.native
-  val `4KFilled32`: CarbonIconType = js.native
 }

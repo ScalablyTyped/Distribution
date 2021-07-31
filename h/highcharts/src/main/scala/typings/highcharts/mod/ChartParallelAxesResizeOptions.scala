@@ -2,60 +2,58 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartParallelAxesResizeOptions extends StObject {
   
   /**
     * (Highstock) Contains two arrays of axes that are controlled by control
     * line of the axis.
     */
-  var controlledAxis: js.UndefOr[ChartParallelAxesResizeControlledAxisOptions] = js.native
+  var controlledAxis: js.UndefOr[ChartParallelAxesResizeControlledAxisOptions] = js.undefined
   
   /**
     * (Highstock) Cursor style for the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Enable or disable resize by drag for the axis.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Color of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
-  var lineColor: js.UndefOr[ColorString] = js.native
+  var lineColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highstock) Dash style of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
-  var lineDashStyle: js.UndefOr[String] = js.native
+  var lineDashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Width of the control line.
     *
     * In styled mode use class `highcharts-axis-resizer` instead.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Horizontal offset of the control line.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Vertical offset of the control line.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ChartParallelAxesResizeOptions {
   

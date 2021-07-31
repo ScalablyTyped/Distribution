@@ -2,41 +2,39 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollingEventUIParam extends StObject {
   
   /**
     * Gets if the content is scrolled by the scrollbar track areas. 0 - none used, -1 - Scrolled Up/Left, 1 - Scrolled Down/Right.
     */
-  var bigIncrement: js.UndefOr[Double] = js.native
+  var bigIncrement: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
     */
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets a reference to the igScroll.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets if the content is scrolled by the arrows. 0 - none used, -1 - Arrow Up/Left, 1 - Arrow Down/Right.
     */
-  var smallIncrement: js.UndefOr[Double] = js.native
+  var smallIncrement: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets how much the content will be scrolled horizontally.
     */
-  var stepX: js.UndefOr[Double] = js.native
+  var stepX: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets how much the content will be scrolled vertically.
     */
-  var stepY: js.UndefOr[Double] = js.native
+  var stepY: js.UndefOr[Double] = js.undefined
 }
 object ScrollingEventUIParam {
   

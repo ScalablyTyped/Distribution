@@ -3,16 +3,16 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.ux.device.analytics.IAbstract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ux {
   
-  @js.native
-  trait IActionOverFlowMenuButton extends IMenuButton {
+  trait IActionOverFlowMenuButton
+    extends StObject
+       with IMenuButton {
     
     /** [Property] () */
-    var menuItems: js.UndefOr[js.Any] = js.native
+    var menuItems: js.UndefOr[js.Any] = js.undefined
   }
   object IActionOverFlowMenuButton {
     
@@ -33,8 +33,9 @@ object ux {
     }
   }
   
-  @js.native
-  trait IApplicationMenu extends IMenu
+  trait IApplicationMenu
+    extends StObject
+       with IMenu
   object IApplicationMenu {
     
     @scala.inline
@@ -46,18 +47,19 @@ object ux {
   
   type IContextMenu = IMenu
   
-  @js.native
-  trait IMenuButton extends IButton {
+  trait IMenuButton
+    extends StObject
+       with IButton {
     
     /** [Method] Returns the value of menuItems
       * @returns Array
       */
-    var getMenuItems: js.UndefOr[js.Function0[Array]] = js.native
+    var getMenuItems: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Sets the value of menuItems
       * @param menuItems Array The new value.
       */
-    var setMenuItems: js.UndefOr[js.Function1[/* menuItems */ js.UndefOr[Array], Unit]] = js.native
+    var setMenuItems: js.UndefOr[js.Function1[/* menuItems */ js.UndefOr[Array], Unit]] = js.undefined
   }
   object IMenuButton {
     
@@ -84,11 +86,12 @@ object ux {
     }
   }
   
-  @js.native
-  trait ITabMenuButton extends IMenuButton {
+  trait ITabMenuButton
+    extends StObject
+       with IMenuButton {
     
     /** [Property] () */
-    var menuItems: js.UndefOr[js.Any] = js.native
+    var menuItems: js.UndefOr[js.Any] = js.undefined
   }
   object ITabMenuButton {
     
@@ -111,11 +114,11 @@ object ux {
   
   object device {
     
-    @js.native
     trait Analytics_ extends StObject
     
-    @js.native
-    trait IAnalytics extends IAbstract
+    trait IAnalytics
+      extends StObject
+         with IAbstract
     object IAnalytics {
       
       @scala.inline
@@ -125,9 +128,9 @@ object ux {
       }
     }
     
-    @js.native
     trait ITwitter
-      extends typings.senchaTouch.Ext.ux.device.twitter.IAbstract
+      extends StObject
+         with typings.senchaTouch.Ext.ux.device.twitter.IAbstract
     object ITwitter {
       
       @scala.inline
@@ -137,38 +140,38 @@ object ux {
       }
     }
     
-    @js.native
     trait Twitter_ extends StObject
     
     object analytics {
       
-      @js.native
-      trait IAbstract extends IBase {
+      trait IAbstract
+        extends StObject
+           with IBase {
         
         /** [Method] Returns the value of accountID
           * @returns Object
           */
-        var getAccountID: js.UndefOr[js.Function0[_]] = js.native
+        var getAccountID: js.UndefOr[js.Function0[js.Any]] = js.undefined
         
         /** [Method] Registers yur Google Analytics account
           * @param accountID String Your Google Analytics account ID
           */
-        var registerAccount: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[java.lang.String], Unit]] = js.native
+        var registerAccount: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[java.lang.String], Unit]] = js.undefined
         
         /** [Method] Sets the value of accountID
           * @param accountID Object The new value.
           */
-        var setAccountID: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[js.Any], Unit]] = js.native
+        var setAccountID: js.UndefOr[js.Function1[/* accountID */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Track an event in your application
           * @param config Object
           */
-        var trackEvent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var trackEvent: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Track an pageview in your application
           * @param config String The page you want to track (must start with a slash).
           */
-        var trackPageview: js.UndefOr[js.Function1[/* config */ js.UndefOr[java.lang.String], Unit]] = js.native
+        var trackPageview: js.UndefOr[js.Function1[/* config */ js.UndefOr[java.lang.String], Unit]] = js.undefined
       }
       object IAbstract {
         
@@ -182,7 +185,7 @@ object ux {
         implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setGetAccountID(value: () => _): Self = StObject.set(x, "getAccountID", js.Any.fromFunction0(value))
+          def setGetAccountID(value: () => js.Any): Self = StObject.set(x, "getAccountID", js.Any.fromFunction0(value))
           
           @scala.inline
           def setGetAccountIDUndefined: Self = StObject.set(x, "getAccountID", js.undefined)
@@ -213,14 +216,15 @@ object ux {
         }
       }
       
-      @js.native
-      trait ICordova extends IAbstract {
+      trait ICordova
+        extends StObject
+           with IAbstract {
         
         /** [Method] Track an pageview in your application
           * @param page Object
           */
         @JSName("trackPageview")
-        var trackPageview_ICordova: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.native
+        var trackPageview_ICordova: js.UndefOr[js.Function1[/* page */ js.UndefOr[js.Any], Unit]] = js.undefined
       }
       object ICordova {
         
@@ -244,33 +248,34 @@ object ux {
     
     object twitter {
       
-      @js.native
-      trait IAbstract extends IBase {
+      trait IAbstract
+        extends StObject
+           with IBase {
         
         /** [Method] Pops up a Twitter compose sheet view with your specified tweet
           * @param config Object An object which contains the following config options:
           */
-        var compose: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var compose: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Gets Tweets from Twitter Mentions
           * @param config Object An object which contains the following config options:
           */
-        var getMentions: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var getMentions: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Gets Tweets from Twitter Timeline
           * @param config Object An object which contains the following config options:
           */
-        var getPublicTimeline: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var getPublicTimeline: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Gets a specific Twitter user info
           * @param config Object An object which contains the following config options:
           */
-        var getTwitterRequest: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var getTwitterRequest: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
         
         /** [Method] Gets a specific Twitter user info
           * @param config Object An object which contains the following config options:
           */
-        var getTwitterUsername: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+        var getTwitterUsername: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
       }
       object IAbstract {
         

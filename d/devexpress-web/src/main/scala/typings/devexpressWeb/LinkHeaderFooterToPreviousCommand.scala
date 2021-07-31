@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to link a header/footer to the previous section, so it has the same content.
   */
-@js.native
-trait LinkHeaderFooterToPreviousCommand extends CommandWithSimpleStateBase {
+trait LinkHeaderFooterToPreviousCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the LinkHeaderFooterToPreviousCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object LinkHeaderFooterToPreviousCommand {
   

@@ -15,7 +15,6 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -63,26 +62,25 @@ object typesMod {
   }
   
   /* Inlined std.Pick<react.react.HTMLAttributes<E>, @react-md/states.@react-md/states/types/ripples/types.MergableRippleHandlerNames> */
-  @js.native
   trait MergableRippleHandlers[E /* <: HTMLElement */] extends StObject {
     
-    var onClick: js.UndefOr[MouseEventHandler[E]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[E]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[E]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[E]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[E]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[E]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[E]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[E]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[E]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[E]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[E]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[E]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[E]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[E]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[E]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[E]] = js.undefined
   }
   object MergableRippleHandlers {
     
@@ -93,7 +91,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class MergableRippleHandlersMutableBuilder[Self <: MergableRippleHandlers[_], E /* <: HTMLElement */] (val x: Self with MergableRippleHandlers[E]) extends AnyVal {
+    implicit class MergableRippleHandlersMutableBuilder[Self <: MergableRippleHandlers[?], E /* <: HTMLElement */] (val x: Self & MergableRippleHandlers[E]) extends AnyVal {
       
       @scala.inline
       def setOnClick(value: MouseEvent[E, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
@@ -152,36 +150,35 @@ object typesMod {
   }
   
   /* Inlined std.Pick<react.react.MouseEvent<E, react.react.NativeMouseEvent>, 'target' | 'currentTarget' | 'type'> & std.Partial<std.Pick<react.react.MouseEvent<E, react.react.NativeMouseEvent>, 'pageX' | 'pageY' | 'button'>> & std.Partial<std.Pick<react.react.KeyboardEvent<E>, 'key'>> & std.Partial<std.Pick<react.react.TouchEvent<E>, 'touches'>> */
-  @js.native
   trait RippleEvent[E /* <: HTMLElement */] extends StObject {
     
-    var button: js.UndefOr[Double] = js.native
+    var button: js.UndefOr[Double] = js.undefined
     
-    var currentTarget: EventTarget with E = js.native
+    var currentTarget: EventTarget & E
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var pageX: js.UndefOr[Double] = js.native
+    var pageX: js.UndefOr[Double] = js.undefined
     
-    var pageY: js.UndefOr[Double] = js.native
+    var pageY: js.UndefOr[Double] = js.undefined
     
-    var target: EventTarget = js.native
+    var target: EventTarget
     
-    var touches: js.UndefOr[TouchList] = js.native
+    var touches: js.UndefOr[TouchList] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object RippleEvent {
     
     @scala.inline
-    def apply[E /* <: HTMLElement */](currentTarget: EventTarget with E, target: EventTarget, `type`: String): RippleEvent[E] = {
+    def apply[E /* <: HTMLElement */](currentTarget: EventTarget & E, target: EventTarget, `type`: String): RippleEvent[E] = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RippleEvent[E]]
     }
     
     @scala.inline
-    implicit class RippleEventMutableBuilder[Self <: RippleEvent[_], E /* <: HTMLElement */] (val x: Self with RippleEvent[E]) extends AnyVal {
+    implicit class RippleEventMutableBuilder[Self <: RippleEvent[?], E /* <: HTMLElement */] (val x: Self & RippleEvent[E]) extends AnyVal {
       
       @scala.inline
       def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
@@ -190,7 +187,7 @@ object typesMod {
       def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
       @scala.inline
-      def setCurrentTarget(value: EventTarget with E): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      def setCurrentTarget(value: EventTarget & E): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -224,20 +221,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait RippleState extends StObject {
     
-    var entered: Boolean = js.native
+    var entered: Boolean
     
-    var exiting: Boolean = js.native
+    var exiting: Boolean
     
-    var holding: Boolean = js.native
+    var holding: Boolean
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var style: CSSPropertiesleftnumberto = js.native
+    var style: CSSPropertiesleftnumberto
     
-    var `type`: RippleType = js.native
+    var `type`: RippleType
   }
   object RippleState {
     
@@ -300,7 +296,6 @@ object typesMod {
     def touch: typings.reactMdStates.reactMdStatesStrings.touch = "touch".asInstanceOf[typings.reactMdStates.reactMdStatesStrings.touch]
   }
   
-  @js.native
   trait RipplesOptions[E /* <: HTMLElement */] extends StObject {
     
     /**
@@ -308,54 +303,54 @@ object typesMod {
       * of a click event. This would normally happen if using `aria-activedescendat`
       * movement and the user "presses" the current active element.
       */
-    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.native
+    var disableProgrammaticRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the ripple effeect should be disabled. This will make the `useRipples`
       * hook not provide any additional logic for the provided handlers.
       */
-    var disableRipple: js.UndefOr[Boolean] = js.native
+    var disableRipple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the spacebar click effect should be disabled. This should normally
       * state disabled unless dealing with links.
       */
-    var disableSpacebarClick: js.UndefOr[Boolean] = js.native
+    var disableSpacebarClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional boolean if the element is currently disabled. This will ensure
       * that the ripple states are not applied during these times.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional object of event handlers to merge with the required
       * ripple trigger event handlers.
       */
-    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.native
+    var handlers: js.UndefOr[MergableRippleHandlers[E]] = js.undefined
     
     /**
       * An optional className to apply to the ripple element.
       */
-    var rippleClassName: js.UndefOr[String] = js.native
+    var rippleClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional object containing the different transition class names for the ripple
       * effect. If this is undefined, it will be extracted from the current `StatesContext`
       * instead.
       */
-    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.native
+    var rippleClassNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
     /**
       * An optional className to apply to the ripple's container element.
       */
-    var rippleContainerClassName: js.UndefOr[String] = js.native
+    var rippleContainerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional timeout duration for the ripple effect. If this is undefined, its value
       * will be extracted from the current `StatesContext` instead.
       */
-    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.native
+    var rippleTimeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object RipplesOptions {
     
@@ -366,7 +361,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class RipplesOptionsMutableBuilder[Self <: RipplesOptions[_], E /* <: HTMLElement */] (val x: Self with RipplesOptions[E]) extends AnyVal {
+    implicit class RipplesOptionsMutableBuilder[Self <: RipplesOptions[?], E /* <: HTMLElement */] (val x: Self & RipplesOptions[E]) extends AnyVal {
       
       @scala.inline
       def setDisableProgrammaticRipple(value: Boolean): Self = StObject.set(x, "disableProgrammaticRipple", value.asInstanceOf[js.Any])

@@ -2,14 +2,12 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A &lt;a href=&quot;/chart/interactive/docs/gallery/treemap&quot;&gt;Treemap
   * chart&lt;/a&gt;.
   */
-@js.native
 trait SchemaTreemapChartSpec extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaTreemapChartSpec extends StObject {
     * color_scale will determine how the values in this data map to data cell
     * background colors.
     */
-  var colorData: js.UndefOr[SchemaChartData] = js.native
+  var colorData: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The color scale for data cells in the treemap chart. Data cells are
@@ -33,36 +31,36 @@ trait SchemaTreemapChartSpec extends StObject {
     * the gradient being midValueColor. Cells with missing or non-numeric color
     * values will have noDataColor as their background color.
     */
-  var colorScale: js.UndefOr[SchemaTreemapChartColorScale] = js.native
+  var colorScale: js.UndefOr[SchemaTreemapChartColorScale] = js.undefined
   
   /**
     * The background color for header cells.
     */
-  var headerColor: js.UndefOr[SchemaColor] = js.native
+  var headerColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * True to hide tooltips.
     */
-  var hideTooltips: js.UndefOr[Boolean] = js.native
+  var hideTooltips: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of additional data levels beyond the labeled levels to be
     * shown on the treemap chart. These levels are not interactive and are
     * shown without their labels. Defaults to 0 if not specified.
     */
-  var hintedLevels: js.UndefOr[Double] = js.native
+  var hintedLevels: js.UndefOr[Double] = js.undefined
   
   /**
     * The data that contains the treemap cell labels.
     */
-  var labels: js.UndefOr[SchemaChartData] = js.native
+  var labels: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The number of data levels to show on the treemap chart. These levels are
     * interactive and are shown with their labels. Defaults to 2 if not
     * specified.
     */
-  var levels: js.UndefOr[Double] = js.native
+  var levels: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum possible data value. Cells with values greater than this will
@@ -70,7 +68,7 @@ trait SchemaTreemapChartSpec extends StObject {
     * to the actual maximum value from color_data, or the maximum value from
     * size_data if color_data is not specified.
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum possible data value. Cells with values less than this will
@@ -78,12 +76,12 @@ trait SchemaTreemapChartSpec extends StObject {
     * to the actual minimum value from color_data, or the minimum value from
     * size_data if color_data is not specified.
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The data the contains the treemap cells&#39; parent labels.
     */
-  var parentLabels: js.UndefOr[SchemaChartData] = js.native
+  var parentLabels: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The data that determines the size of each treemap data cell. This data is
@@ -91,12 +89,12 @@ trait SchemaTreemapChartSpec extends StObject {
     * data will not be rendered. If color_data is not specified, this data is
     * used to determine data cell background colors as well.
     */
-  var sizeData: js.UndefOr[SchemaChartData] = js.native
+  var sizeData: js.UndefOr[SchemaChartData] = js.undefined
   
   /**
     * The text format for all labels on the chart.
     */
-  var textFormat: js.UndefOr[SchemaTextFormat] = js.native
+  var textFormat: js.UndefOr[SchemaTextFormat] = js.undefined
 }
 object SchemaTreemapChartSpec {
   

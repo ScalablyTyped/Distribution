@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a single field in a sort descriptor.
   * @deprecated Deprecated
   */
-@js.native
 trait SortField extends StObject {
   
   /** index of the field in the table; 0-based. */
-  var Field: Double = js.native
+  var Field: Double
   
   /** type of contents in the field. */
-  var FieldType: SortFieldType = js.native
+  var FieldType: SortFieldType
   
   /** `TRUE` if data are sorted in ascending order, `FALSE` if in descending order. */
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
 }
 object SortField {
   

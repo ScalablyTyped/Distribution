@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePresentationsPagesGetthumbnail extends StandardParameters {
+trait ParamsResourcePresentationsPagesGetthumbnail
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The object ID of the page whose thumbnail to retrieve.
     */
-  var pageObjectId: js.UndefOr[String] = js.native
+  var pageObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the presentation to retrieve.
     */
-  var presentationId: js.UndefOr[String] = js.native
+  var presentationId: js.UndefOr[String] = js.undefined
   
   /**
     * The optional mime type of the thumbnail image.  If you don't specify the
     * mime type, the default mime type will be PNG.
     */
   @JSName("thumbnailProperties.mimeType")
-  var thumbnailPropertiesDotmimeType: js.UndefOr[String] = js.native
+  var thumbnailPropertiesDotmimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The optional thumbnail image size.  If you don't specify the size, the
     * server chooses a default size of the image.
     */
   @JSName("thumbnailProperties.thumbnailSize")
-  var thumbnailPropertiesDotthumbnailSize: js.UndefOr[String] = js.native
+  var thumbnailPropertiesDotthumbnailSize: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePresentationsPagesGetthumbnail {
   

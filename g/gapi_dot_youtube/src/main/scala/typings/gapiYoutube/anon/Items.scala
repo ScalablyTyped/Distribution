@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
   /**
     * The list of promoted items in the order that they will display across different playbacks to the same viewer.
     */
-  var items: js.Array[Type] = js.native
+  var items: js.Array[Type]
   
   /**
     * The position object encapsulates information about the spatial position within the video where the promoted item will be displayed.
     */
-  var position: CornerPosition = js.native
+  var position: CornerPosition
   
   /**
     * The timing object encapsulates information about the temporal position within the video when the promoted item will be displayed.
     */
-  var timing: OffsetMs = js.native
+  var timing: OffsetMs
 }
 object Items {
   

@@ -8,67 +8,65 @@ import typings.paypalCheckoutComponents.configurationMod.ButtonStyle
 import typings.paypalCheckoutComponents.configurationMod.Environment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: js.UndefOr[js.Function0[Unit]] = js.native
+    var accessToken: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var authCode: js.UndefOr[String] = js.native
+    var authCode: js.UndefOr[String] = js.undefined
     
-    var buttonSessionID: js.UndefOr[String] = js.native
+    var buttonSessionID: js.UndefOr[String] = js.undefined
     
-    var checkoutUri: js.UndefOr[String] = js.native
+    var checkoutUri: js.UndefOr[String] = js.undefined
     
-    var client: js.UndefOr[js.Object] = js.native
+    var client: js.UndefOr[js.Object] = js.undefined
     
-    var commit: js.UndefOr[Boolean] = js.native
+    var commit: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[Environment] = js.native
+    var env: js.UndefOr[Environment] = js.undefined
     
-    var experience: js.UndefOr[js.Object] = js.native
+    var experience: js.UndefOr[js.Object] = js.undefined
     
-    var funding: js.UndefOr[Allowed] = js.native
+    var funding: js.UndefOr[Allowed] = js.undefined
     
-    var fundingOffered: js.UndefOr[js.Object] = js.native
+    var fundingOffered: js.UndefOr[js.Object] = js.undefined
     
-    var fundingSource: js.UndefOr[String] = js.native
+    var fundingSource: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var localhostUrl: js.UndefOr[String] = js.native
+    var localhostUrl: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var meta: js.UndefOr[js.Object] = js.native
+    var meta: js.UndefOr[js.Object] = js.undefined
     
-    var onAuth: js.UndefOr[js.Function1[/* data */ String | js.Object, js.Object]] = js.native
+    var onAuth: js.UndefOr[js.Function1[/* data */ String | js.Object, js.Object]] = js.undefined
     
-    def onAuthorize(data: AuthorizationData, actions: js.Object): js.Promise[AuthorizationResponse] = js.native
+    def onAuthorize(data: AuthorizationData, actions: js.Object): js.Promise[AuthorizationResponse]
     
-    var onCancel: js.UndefOr[js.Function2[/* data */ CancellationData, /* actions */ js.Object, Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function2[/* data */ CancellationData, /* actions */ js.Object, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
     
-    var onShippingChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShippingChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var payment: js.UndefOr[js.Function0[js.Promise[String]]] = js.native
+    var payment: js.UndefOr[js.Function0[js.Promise[String]]] = js.undefined
     
-    var sessionID: js.UndefOr[String] = js.native
+    var sessionID: js.UndefOr[String] = js.undefined
     
-    var stage: js.UndefOr[String] = js.native
+    var stage: js.UndefOr[String] = js.undefined
     
-    var stageUrl: js.UndefOr[String] = js.native
+    var stageUrl: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[ButtonStyle] = js.native
+    var style: js.UndefOr[ButtonStyle] = js.undefined
     
-    var test: js.UndefOr[js.Object] = js.native
+    var test: js.UndefOr[js.Object] = js.undefined
   }
   object AccessToken {
     
@@ -242,12 +240,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Allowed extends StObject {
     
-    var allowed: js.UndefOr[js.Array[FundingOption]] = js.native
+    var allowed: js.UndefOr[js.Array[FundingOption]] = js.undefined
     
-    var disallowed: js.UndefOr[js.Array[FundingOption]] = js.native
+    var disallowed: js.UndefOr[js.Array[FundingOption]] = js.undefined
   }
   object Allowed {
     

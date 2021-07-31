@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,12 +24,13 @@ object mod extends Shortcut {
   
   @js.native
   trait prng
-    extends Instantiable0[prng]
+    extends StObject
+       with Instantiable0[prng]
        with Instantiable1[/* seed */ String, prng]
-       with Instantiable2[js.UndefOr[/* seed */ String], /* options */ seedRandomOptions, prng]
+       with Instantiable2[(/* seed */ String) | (/* seed */ Unit), /* options */ seedRandomOptions, prng]
        with Instantiable3[
-          js.UndefOr[/* seed */ String], 
-          js.UndefOr[/* options */ seedRandomOptions], 
+          (/* seed */ String) | (/* seed */ Unit), 
+          (/* options */ Unit) | (/* options */ seedRandomOptions), 
           /* callback */ js.Any, 
           prng
         ] {
@@ -46,16 +46,15 @@ object mod extends Shortcut {
     def state(): State = js.native
   }
   
-  @js.native
   trait seedRandomOptions extends StObject {
     
-    var entropy: js.UndefOr[Boolean] = js.native
+    var entropy: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var pass: js.UndefOr[seedrandomCallback] = js.native
+    var pass: js.UndefOr[seedrandomCallback] = js.undefined
     
-    var state: js.UndefOr[Boolean | State] = js.native
+    var state: js.UndefOr[Boolean | State] = js.undefined
   }
   object seedRandomOptions {
     
@@ -108,47 +107,47 @@ object mod extends Shortcut {
   trait seedrandomPrng extends StObject {
     
     def apply(): prng = js.native
-    def apply(seed: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], callback: seedrandomCallback): prng = js.native
-    def apply(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
-    def apply(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions, callback: seedrandomCallback): prng = js.native
     def apply(seed: String): prng = js.native
-    def apply(seed: String, options: js.UndefOr[scala.Nothing], callback: seedrandomCallback): prng = js.native
+    def apply(seed: String, options: Unit, callback: seedrandomCallback): prng = js.native
     def apply(seed: String, options: seedRandomOptions): prng = js.native
     def apply(seed: String, options: seedRandomOptions, callback: seedrandomCallback): prng = js.native
+    def apply(seed: Unit, options: Unit, callback: seedrandomCallback): prng = js.native
+    def apply(seed: Unit, options: seedRandomOptions): prng = js.native
+    def apply(seed: Unit, options: seedRandomOptions, callback: seedrandomCallback): prng = js.native
     
     def alea(): prng = js.native
-    def alea(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def alea(seed: String): prng = js.native
     def alea(seed: String, options: seedRandomOptions): prng = js.native
+    def alea(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def quick(): prng = js.native
-    def quick(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def quick(seed: String): prng = js.native
     def quick(seed: String, options: seedRandomOptions): prng = js.native
+    def quick(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def tychei(): prng = js.native
-    def tychei(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def tychei(seed: String): prng = js.native
     def tychei(seed: String, options: seedRandomOptions): prng = js.native
+    def tychei(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def xor128(): prng = js.native
-    def xor128(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def xor128(seed: String): prng = js.native
     def xor128(seed: String, options: seedRandomOptions): prng = js.native
+    def xor128(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def xor4096(): prng = js.native
-    def xor4096(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def xor4096(seed: String): prng = js.native
     def xor4096(seed: String, options: seedRandomOptions): prng = js.native
+    def xor4096(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def xorshift7(): prng = js.native
-    def xorshift7(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def xorshift7(seed: String): prng = js.native
     def xorshift7(seed: String, options: seedRandomOptions): prng = js.native
+    def xorshift7(seed: Unit, options: seedRandomOptions): prng = js.native
     
     def xorwow(): prng = js.native
-    def xorwow(seed: js.UndefOr[scala.Nothing], options: seedRandomOptions): prng = js.native
     def xorwow(seed: String): prng = js.native
     def xorwow(seed: String, options: seedRandomOptions): prng = js.native
+    def xorwow(seed: Unit, options: seedRandomOptions): prng = js.native
   }
 }

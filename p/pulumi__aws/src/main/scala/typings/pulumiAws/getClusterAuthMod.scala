@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getClusterAuthMod {
   
-  @JSImport("@pulumi/aws/eks/getClusterAuth", "getClusterAuth")
+  @JSImport("@pulumi/aws/eks/getClusterAuth", JSImport.Namespace)
   @js.native
-  def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = js.native
-  @JSImport("@pulumi/aws/eks/getClusterAuth", "getClusterAuth")
-  @js.native
-  def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getClusterAuth(args: GetClusterAuthArgs): js.Promise[GetClusterAuthResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterAuthResult]]
+  @scala.inline
+  def getClusterAuth(args: GetClusterAuthArgs, opts: InvokeOptions): js.Promise[GetClusterAuthResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClusterAuth")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterAuthResult]]
+  
   trait GetClusterAuthArgs extends StObject {
     
     /**
       * The name of the cluster
       */
-    val name: String = js.native
+    val name: String
   }
   object GetClusterAuthArgs {
     
@@ -39,20 +39,19 @@ object getClusterAuthMod {
     }
   }
   
-  @js.native
   trait GetClusterAuthResult extends StObject {
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * The token to use to authenticate with the cluster.
       */
-    val token: String = js.native
+    val token: String
   }
   object GetClusterAuthResult {
     

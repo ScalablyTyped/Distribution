@@ -7,18 +7,17 @@ import typings.cloudeventsSdk.httpEmitterMod.HTTPEmitter
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var binary: js.Any = js.native
+    var binary: js.Any
     
-    var structured: js.Any = js.native
+    var structured: js.Any
   }
   object Dictkey {
     
@@ -39,13 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictx
-    extends /* x */ NumberDictionary[NumberDictionary[js.Any]] {
+    extends StObject
+       with /* x */ NumberDictionary[NumberDictionary[js.Any]] {
     
-    var `null`: NumberDictionary[js.Any] = js.native
+    var `null`: NumberDictionary[js.Any]
     
-    var undefined: NumberDictionary[js.Any] = js.native
+    var undefined: NumberDictionary[js.Any]
   }
   object Dictx {
     
@@ -67,14 +66,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
-    var specversion: String = js.native
+    var specversion: String
     
-    var time: String = js.native
+    var time: String
   }
   object Id {
     
@@ -98,12 +96,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Mode extends StObject {
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Mode {
     
@@ -130,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    def parser(v: js.Any): js.Any = js.native
+    def parser(v: js.Any): js.Any
   }
   object Name {
     
@@ -157,17 +153,18 @@ object anon {
   }
   
   @js.native
-  trait TypeofHTTPEmitter extends Instantiable1[/* hasUrlVersion */ Url, HTTPEmitter] {
+  trait TypeofHTTPEmitter
+    extends StObject
+       with Instantiable1[/* hasUrlVersion */ Url, HTTPEmitter] {
     
     var headers: js.Function = js.native
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[js.Any] = js.native
+    var version: js.UndefOr[js.Any] = js.undefined
   }
   object Url {
     
@@ -194,10 +191,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UrlURL extends StObject {
     
-    var url: URL = js.native
+    var url: URL
   }
   object UrlURL {
     
@@ -215,12 +211,11 @@ object anon {
     }
   }
   
-  @js.native
   trait V03 extends StObject {
     
-    var v03: Dictkey = js.native
+    var v03: Dictkey
     
-    var v1: Dictkey = js.native
+    var v1: Dictkey
   }
   object V03 {
     

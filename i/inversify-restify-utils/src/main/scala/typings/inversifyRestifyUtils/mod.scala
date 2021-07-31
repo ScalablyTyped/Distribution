@@ -7,26 +7,25 @@ import typings.inversifyRestifyUtils.interfacesMod.interfaces.RouteOptions
 import typings.restify.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("inversify-restify-utils", "Controller")
+  @JSImport("inversify-restify-utils", JSImport.Namespace)
   @js.native
-  def Controller(path: String, middleware: Middleware*): js.Function1[/* target */ js.Any, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("inversify-restify-utils", "Delete")
-  @js.native
-  def Delete(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Controller(path: String, middleware: Middleware*): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("Controller")(path.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
-  @JSImport("inversify-restify-utils", "Get")
-  @js.native
-  def Get(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Delete(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Delete")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-restify-utils", "Head")
-  @js.native
-  def Head(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Get(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Get")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
+  
+  @scala.inline
+  def Head(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Head")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
   @JSImport("inversify-restify-utils", "InversifyRestifyServer")
   @js.native
@@ -35,29 +34,24 @@ object mod {
     def this(container: Container) = this()
     def this(
       container: Container,
-      opts: ServerOptions with typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
+      opts: ServerOptions & typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
     ) = this()
   }
   
-  @JSImport("inversify-restify-utils", "Method")
-  @js.native
-  def Method(method: String, options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Method(method: String, options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Method")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-restify-utils", "Options")
-  @js.native
-  def Options(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Options(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Options")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-restify-utils", "Patch")
-  @js.native
-  def Patch(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Patch(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Patch")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-restify-utils", "Post")
-  @js.native
-  def Post(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Post(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Post")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
-  @JSImport("inversify-restify-utils", "Put")
-  @js.native
-  def Put(options: RouteOptions, middleware: Middleware*): HandlerDecorator = js.native
+  @scala.inline
+  def Put(options: RouteOptions, middleware: Middleware*): HandlerDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Put")(options.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[HandlerDecorator]
   
   object TYPE {
     

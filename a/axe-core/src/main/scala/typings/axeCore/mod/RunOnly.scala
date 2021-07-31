@@ -2,15 +2,13 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunOnly extends StObject {
   
-  var `type`: RunOnlyType = js.native
+  var `type`: RunOnlyType
   
-  var values: js.Array[String | TagValue] = js.native
+  var values: js.Array[String | TagValue]
 }
 object RunOnly {
   

@@ -6,14 +6,12 @@ import typings.weappApi.weappApiStrings.`4g`
 import typings.weappApi.weappApiStrings.wifi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkTypeData extends StObject {
   
   /** 返回网络类型2g，3g，4g，wifi */
-  var networkType: `2g` | `3g` | `4g` | wifi = js.native
+  var networkType: `2g` | `3g` | `4g` | wifi
 }
 object NetworkTypeData {
   

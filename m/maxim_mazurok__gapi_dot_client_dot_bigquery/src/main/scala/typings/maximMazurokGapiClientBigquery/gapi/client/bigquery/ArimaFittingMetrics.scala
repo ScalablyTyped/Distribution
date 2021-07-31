@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArimaFittingMetrics extends StObject {
   
   /** AIC. */
-  var aic: js.UndefOr[Double] = js.native
+  var aic: js.UndefOr[Double] = js.undefined
   
   /** Log-likelihood. */
-  var logLikelihood: js.UndefOr[Double] = js.native
+  var logLikelihood: js.UndefOr[Double] = js.undefined
   
   /** Variance. */
-  var variance: js.UndefOr[Double] = js.native
+  var variance: js.UndefOr[Double] = js.undefined
 }
 object ArimaFittingMetrics {
   

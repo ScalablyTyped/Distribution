@@ -8,94 +8,92 @@ import typings.reactDates.anon.EndDate
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react-dates.react-dates.DateRangePickerInputShape, 'startDateId' | 'startDatePlaceholderText' | 'isStartDateFocused' | 'startDateAriaLabel' | 'endDateId' | 'endDatePlaceholderText' | 'isEndDateFocused' | 'endDateAriaLabel' | 'screenReaderMessage' | 'showClearDates' | 'showCaret' | 'showDefaultInputIcon' | 'inputIconPosition' | 'disabled' | 'required' | 'readOnly' | 'openDirection' | 'noBorder' | 'block' | 'small' | 'regular' | 'verticalSpacing' | 'onKeyDownArrowDown' | 'onKeyDownQuestionMark' | 'customInputIcon' | 'customArrowIcon' | 'customCloseIcon' | 'isFocused' | 'phrases' | 'isRTL'> */
-@js.native
 trait DateRangePickerInputControllerShape extends StObject {
   
-  var block: js.UndefOr[Boolean] = js.native
+  var block: js.UndefOr[Boolean] = js.undefined
   
-  var customArrowIcon: js.UndefOr[ReactNode] = js.native
+  var customArrowIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var customCloseIcon: js.UndefOr[ReactNode] = js.native
+  var customCloseIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var customInputIcon: js.UndefOr[ReactNode] = js.native
+  var customInputIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[DisabledShape] = js.native
+  var disabled: js.UndefOr[DisabledShape] = js.undefined
   
-  var displayFormat: js.UndefOr[String | js.Function0[String]] = js.native
+  var displayFormat: js.UndefOr[String | js.Function0[String]] = js.undefined
   
-  var endDate: js.UndefOr[Moment | Null] = js.native
+  var endDate: js.UndefOr[Moment | Null] = js.undefined
   
-  var endDateAriaLabel: js.UndefOr[String] = js.native
+  var endDateAriaLabel: js.UndefOr[String] = js.undefined
   
-  var endDateId: js.UndefOr[String] = js.native
+  var endDateId: js.UndefOr[String] = js.undefined
   
-  var endDatePlaceholderText: js.UndefOr[String] = js.native
+  var endDatePlaceholderText: js.UndefOr[String] = js.undefined
   
-  var inputIconPosition: js.UndefOr[IconPositionShape] = js.native
+  var inputIconPosition: js.UndefOr[IconPositionShape] = js.undefined
   
-  var isEndDateFocused: js.UndefOr[Boolean] = js.native
+  var isEndDateFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isOutsideRange: js.UndefOr[js.Function1[/* day */ Moment, Boolean]] = js.native
+  var isOutsideRange: js.UndefOr[js.Function1[/* day */ Moment, Boolean]] = js.undefined
   
-  var isRTL: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   
-  var isStartDateFocused: js.UndefOr[Boolean] = js.native
+  var isStartDateFocused: js.UndefOr[Boolean] = js.undefined
   
-  var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.native
+  var keepOpenOnDateSelect: js.UndefOr[Boolean] = js.undefined
   
-  var minimumNights: js.UndefOr[Double] = js.native
+  var minimumNights: js.UndefOr[Double] = js.undefined
   
-  var noBorder: js.UndefOr[Boolean] = js.native
+  var noBorder: js.UndefOr[Boolean] = js.undefined
   
-  var onClose: js.UndefOr[js.Function1[/* final */ EndDate, Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ EndDate, Unit]] = js.undefined
   
-  var onDatesChange: js.UndefOr[js.Function1[/* arg */ EndDate, Unit]] = js.native
+  var onDatesChange: js.UndefOr[js.Function1[/* arg */ EndDate, Unit]] = js.undefined
   
-  var onFocusChange: js.UndefOr[js.Function1[/* arg */ FocusedInputShape | Null, Unit]] = js.native
+  var onFocusChange: js.UndefOr[js.Function1[/* arg */ FocusedInputShape | Null, Unit]] = js.undefined
   
-  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var openDirection: js.UndefOr[OpenDirectionShape] = js.native
+  var openDirection: js.UndefOr[OpenDirectionShape] = js.undefined
   
-  var phrases: js.UndefOr[DateRangePickerInputPhrases] = js.native
+  var phrases: js.UndefOr[DateRangePickerInputPhrases] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var regular: js.UndefOr[Boolean] = js.native
+  var regular: js.UndefOr[Boolean] = js.undefined
   
-  var reopenPickerOnClearDates: js.UndefOr[Boolean] = js.native
+  var reopenPickerOnClearDates: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var screenReaderMessage: js.UndefOr[String] = js.native
+  var screenReaderMessage: js.UndefOr[String] = js.undefined
   
-  var showCaret: js.UndefOr[Boolean] = js.native
+  var showCaret: js.UndefOr[Boolean] = js.undefined
   
-  var showClearDates: js.UndefOr[Boolean] = js.native
+  var showClearDates: js.UndefOr[Boolean] = js.undefined
   
-  var showDefaultInputIcon: js.UndefOr[Boolean] = js.native
+  var showDefaultInputIcon: js.UndefOr[Boolean] = js.undefined
   
-  var small: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: js.UndefOr[Moment | Null] = js.native
+  var startDate: js.UndefOr[Moment | Null] = js.undefined
   
-  var startDateAriaLabel: js.UndefOr[String] = js.native
+  var startDateAriaLabel: js.UndefOr[String] = js.undefined
   
-  var startDateId: js.UndefOr[String] = js.native
+  var startDateId: js.UndefOr[String] = js.undefined
   
-  var startDatePlaceholderText: js.UndefOr[String] = js.native
+  var startDatePlaceholderText: js.UndefOr[String] = js.undefined
   
-  var verticalSpacing: js.UndefOr[Double] = js.native
+  var verticalSpacing: js.UndefOr[Double] = js.undefined
   
-  var withFullScreenPortal: js.UndefOr[Boolean] = js.native
+  var withFullScreenPortal: js.UndefOr[Boolean] = js.undefined
 }
 object DateRangePickerInputControllerShape {
   

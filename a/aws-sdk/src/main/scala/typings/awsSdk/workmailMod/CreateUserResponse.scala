@@ -2,16 +2,14 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserResponse extends StObject {
   
   /**
     * The identifier for the new user.
     */
-  var UserId: js.UndefOr[WorkMailIdentifier] = js.native
+  var UserId: js.UndefOr[WorkMailIdentifier] = js.undefined
 }
 object CreateUserResponse {
   

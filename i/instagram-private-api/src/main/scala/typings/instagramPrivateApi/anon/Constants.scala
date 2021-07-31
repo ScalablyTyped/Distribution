@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Constants extends StObject {
   
-  var constants: js.Any = js.native
+  var constants: js.Any
   
-  var cookies: js.Any = js.native
+  var cookies: js.Any
 }
 object Constants {
   

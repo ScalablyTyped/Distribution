@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRuleInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var RuleArn: typings.awsSdk.elbv2Mod.RuleArn = js.native
+  var RuleArn: typings.awsSdk.elbv2Mod.RuleArn
 }
 object DeleteRuleInput {
   

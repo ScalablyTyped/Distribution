@@ -6,38 +6,36 @@ import typings.std.FormData
 import typings.std.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<angular-file-upload.angular-file-upload.FileUploaderOptions> */
-  @js.native
   trait PartialFileUploaderOption extends StObject {
     
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
-    var autoUpload: js.UndefOr[Boolean] = js.native
+    var autoUpload: js.UndefOr[Boolean] = js.undefined
     
-    var disableMultipart: js.UndefOr[Boolean] = js.native
+    var disableMultipart: js.UndefOr[Boolean] = js.undefined
     
-    var filters: js.UndefOr[js.Array[Filter]] = js.native
+    var filters: js.UndefOr[js.Array[Filter]] = js.undefined
     
-    var formData: js.UndefOr[js.Array[FormData]] = js.native
+    var formData: js.UndefOr[js.Array[FormData]] = js.undefined
     
-    var headers: js.UndefOr[Headers] = js.native
+    var headers: js.UndefOr[Headers] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var queue: js.UndefOr[js.Array[FileItem]] = js.native
+    var queue: js.UndefOr[js.Array[FileItem]] = js.undefined
     
-    var queueLimit: js.UndefOr[Double] = js.native
+    var queueLimit: js.UndefOr[Double] = js.undefined
     
-    var removeAfterUpload: js.UndefOr[Boolean] = js.native
+    var removeAfterUpload: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object PartialFileUploaderOption {
     

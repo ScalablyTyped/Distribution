@@ -7,95 +7,93 @@ import typings.googleAppsScript.GoogleAppsScript.Charts.Position
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder for bar charts. For more details, see the Gviz
   * documentation.
   */
-@js.native
 trait EmbeddedBarChartBuilder extends StObject {
   
-  def addRange(range: Range): EmbeddedChartBuilder = js.native
+  def addRange(range: Range): EmbeddedChartBuilder
   
-  def asAreaChart(): EmbeddedAreaChartBuilder = js.native
+  def asAreaChart(): EmbeddedAreaChartBuilder
   
-  def asBarChart(): EmbeddedBarChartBuilder = js.native
+  def asBarChart(): EmbeddedBarChartBuilder
   
-  def asColumnChart(): EmbeddedColumnChartBuilder = js.native
+  def asColumnChart(): EmbeddedColumnChartBuilder
   
-  def asComboChart(): EmbeddedComboChartBuilder = js.native
+  def asComboChart(): EmbeddedComboChartBuilder
   
-  def asHistogramChart(): EmbeddedHistogramChartBuilder = js.native
+  def asHistogramChart(): EmbeddedHistogramChartBuilder
   
-  def asLineChart(): EmbeddedLineChartBuilder = js.native
+  def asLineChart(): EmbeddedLineChartBuilder
   
-  def asPieChart(): EmbeddedPieChartBuilder = js.native
+  def asPieChart(): EmbeddedPieChartBuilder
   
-  def asScatterChart(): EmbeddedScatterChartBuilder = js.native
+  def asScatterChart(): EmbeddedScatterChartBuilder
   
-  def asTableChart(): EmbeddedTableChartBuilder = js.native
+  def asTableChart(): EmbeddedTableChartBuilder
   
-  def build(): EmbeddedChart = js.native
+  def build(): EmbeddedChart
   
-  def clearRanges(): EmbeddedChartBuilder = js.native
+  def clearRanges(): EmbeddedChartBuilder
   
-  def getChartType(): ChartType = js.native
+  def getChartType(): ChartType
   
-  def getContainer(): ContainerInfo = js.native
+  def getContainer(): ContainerInfo
   
-  def getRanges(): js.Array[Range] = js.native
+  def getRanges(): js.Array[Range]
   
-  def removeRange(range: Range): EmbeddedChartBuilder = js.native
+  def removeRange(range: Range): EmbeddedChartBuilder
   
-  def reverseCategories(): EmbeddedBarChartBuilder = js.native
+  def reverseCategories(): EmbeddedBarChartBuilder
   
-  def reverseDirection(): EmbeddedBarChartBuilder = js.native
+  def reverseDirection(): EmbeddedBarChartBuilder
   
-  def setBackgroundColor(cssValue: String): EmbeddedBarChartBuilder = js.native
+  def setBackgroundColor(cssValue: String): EmbeddedBarChartBuilder
   
-  def setChartType(`type`: ChartType): EmbeddedChartBuilder = js.native
+  def setChartType(`type`: ChartType): EmbeddedChartBuilder
   
-  def setColors(cssValues: js.Array[String]): EmbeddedBarChartBuilder = js.native
+  def setColors(cssValues: js.Array[String]): EmbeddedBarChartBuilder
   
-  def setHiddenDimensionStrategy(strategy: ChartHiddenDimensionStrategy): EmbeddedChartBuilder = js.native
+  def setHiddenDimensionStrategy(strategy: ChartHiddenDimensionStrategy): EmbeddedChartBuilder
   
-  def setLegendPosition(position: Position): EmbeddedBarChartBuilder = js.native
+  def setLegendPosition(position: Position): EmbeddedBarChartBuilder
   
-  def setLegendTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setLegendTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def setMergeStrategy(mergeStrategy: ChartMergeStrategy): EmbeddedChartBuilder = js.native
+  def setMergeStrategy(mergeStrategy: ChartMergeStrategy): EmbeddedChartBuilder
   
-  def setNumHeaders(headers: Integer): EmbeddedChartBuilder = js.native
+  def setNumHeaders(headers: Integer): EmbeddedChartBuilder
   
-  def setOption(option: String, value: js.Any): EmbeddedChartBuilder = js.native
+  def setOption(option: String, value: js.Any): EmbeddedChartBuilder
   
-  def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder = js.native
+  def setPosition(anchorRowPos: Integer, anchorColPos: Integer, offsetX: Integer, offsetY: Integer): EmbeddedChartBuilder
   
-  def setRange(start: Double, end: Double): EmbeddedBarChartBuilder = js.native
+  def setRange(start: Double, end: Double): EmbeddedBarChartBuilder
   
-  def setStacked(): EmbeddedBarChartBuilder = js.native
+  def setStacked(): EmbeddedBarChartBuilder
   
-  def setTitle(chartTitle: String): EmbeddedBarChartBuilder = js.native
+  def setTitle(chartTitle: String): EmbeddedBarChartBuilder
   
-  def setTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def setTransposeRowsAndColumns(transpose: Boolean): EmbeddedChartBuilder = js.native
+  def setTransposeRowsAndColumns(transpose: Boolean): EmbeddedChartBuilder
   
-  def setXAxisTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setXAxisTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def setXAxisTitle(title: String): EmbeddedBarChartBuilder = js.native
+  def setXAxisTitle(title: String): EmbeddedBarChartBuilder
   
-  def setXAxisTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setXAxisTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def setYAxisTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setYAxisTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def setYAxisTitle(title: String): EmbeddedBarChartBuilder = js.native
+  def setYAxisTitle(title: String): EmbeddedBarChartBuilder
   
-  def setYAxisTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder = js.native
+  def setYAxisTitleTextStyle(textStyle: typings.googleAppsScript.GoogleAppsScript.Charts.TextStyle): EmbeddedBarChartBuilder
   
-  def useLogScale(): EmbeddedBarChartBuilder = js.native
+  def useLogScale(): EmbeddedBarChartBuilder
 }
 object EmbeddedBarChartBuilder {
   

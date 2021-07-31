@@ -2,17 +2,15 @@ package typings.nodeRedRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialsFlows extends StObject {
   
-  var credentials: js.Object = js.native
+  var credentials: js.Object
   
-  var flows: js.Array[js.Object] = js.native
+  var flows: js.Array[js.Object]
   
-  var rev: String = js.native
+  var rev: String
 }
 object CredentialsFlows {
   

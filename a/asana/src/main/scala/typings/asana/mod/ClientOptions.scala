@@ -3,22 +3,22 @@ package typings.asana.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options to configure the client */
-@js.native
-trait ClientOptions extends DispatcherOptions {
+trait ClientOptions
+  extends StObject
+     with DispatcherOptions {
   
-  var asanaBaseUrl: js.UndefOr[String] = js.native
+  var asanaBaseUrl: js.UndefOr[String] = js.undefined
   
-  var clientId: js.UndefOr[String | Double] = js.native
+  var clientId: js.UndefOr[String | Double] = js.undefined
   
-  var clientSecret: js.UndefOr[String] = js.native
+  var clientSecret: js.UndefOr[String] = js.undefined
   
-  var defaultHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var defaultHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var redirectUri: js.UndefOr[String] = js.native
+  var redirectUri: js.UndefOr[String] = js.undefined
 }
 object ClientOptions {
   

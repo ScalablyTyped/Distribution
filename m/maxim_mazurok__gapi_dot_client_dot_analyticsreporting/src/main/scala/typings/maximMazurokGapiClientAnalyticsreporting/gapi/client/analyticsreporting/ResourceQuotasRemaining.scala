@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceQuotasRemaining extends StObject {
   
   /** Daily resource quota remaining remaining. */
-  var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+  var dailyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
   
   /** Hourly resource quota tokens remaining. */
-  var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.native
+  var hourlyQuotaTokensRemaining: js.UndefOr[Double] = js.undefined
 }
 object ResourceQuotasRemaining {
   

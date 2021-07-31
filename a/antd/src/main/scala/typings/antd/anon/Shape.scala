@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var shape: String = js.native
+  var shape: String
   
-  var size: String = js.native
+  var size: String
 }
 object Shape {
   

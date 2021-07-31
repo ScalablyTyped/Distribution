@@ -2,26 +2,24 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2PermissionValueSpec extends StObject {
   
   /**
     * The context why agent needs to request permission.
     */
-  var optContext: js.UndefOr[String] = js.native
+  var optContext: js.UndefOr[String] = js.undefined
   
   /**
     * List of permissions requested by the agent.
     */
-  var permissions: js.UndefOr[js.Array[GoogleActionsV2PermissionValueSpecPermissions]] = js.native
+  var permissions: js.UndefOr[js.Array[GoogleActionsV2PermissionValueSpecPermissions]] = js.undefined
   
   /**
     * Additional information needed to fulfill update permission request.
     */
-  var updatePermissionValueSpec: js.UndefOr[GoogleActionsV2UpdatePermissionValueSpec] = js.native
+  var updatePermissionValueSpec: js.UndefOr[GoogleActionsV2UpdatePermissionValueSpec] = js.undefined
 }
 object GoogleActionsV2PermissionValueSpec {
   

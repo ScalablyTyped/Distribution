@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,25 +11,35 @@ sealed trait WatchFileKind extends StObject
 object WatchFileKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WatchFileKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[WatchFileKind & Double] = js.native
   
   @js.native
-  sealed trait DynamicPriorityPolling extends WatchFileKind
-  /* 2 */ val DynamicPriorityPolling: typings.typescript.mod.WatchFileKind.DynamicPriorityPolling with Double = js.native
+  sealed trait DynamicPriorityPolling
+    extends StObject
+       with WatchFileKind
+  /* 2 */ val DynamicPriorityPolling: typings.typescript.mod.WatchFileKind.DynamicPriorityPolling & Double = js.native
   
   @js.native
-  sealed trait FixedPollingInterval extends WatchFileKind
-  /* 0 */ val FixedPollingInterval: typings.typescript.mod.WatchFileKind.FixedPollingInterval with Double = js.native
+  sealed trait FixedPollingInterval
+    extends StObject
+       with WatchFileKind
+  /* 0 */ val FixedPollingInterval: typings.typescript.mod.WatchFileKind.FixedPollingInterval & Double = js.native
   
   @js.native
-  sealed trait PriorityPollingInterval extends WatchFileKind
-  /* 1 */ val PriorityPollingInterval: typings.typescript.mod.WatchFileKind.PriorityPollingInterval with Double = js.native
+  sealed trait PriorityPollingInterval
+    extends StObject
+       with WatchFileKind
+  /* 1 */ val PriorityPollingInterval: typings.typescript.mod.WatchFileKind.PriorityPollingInterval & Double = js.native
   
   @js.native
-  sealed trait UseFsEvents extends WatchFileKind
-  /* 3 */ val UseFsEvents: typings.typescript.mod.WatchFileKind.UseFsEvents with Double = js.native
+  sealed trait UseFsEvents
+    extends StObject
+       with WatchFileKind
+  /* 3 */ val UseFsEvents: typings.typescript.mod.WatchFileKind.UseFsEvents & Double = js.native
   
   @js.native
-  sealed trait UseFsEventsOnParentDirectory extends WatchFileKind
-  /* 4 */ val UseFsEventsOnParentDirectory: typings.typescript.mod.WatchFileKind.UseFsEventsOnParentDirectory with Double = js.native
+  sealed trait UseFsEventsOnParentDirectory
+    extends StObject
+       with WatchFileKind
+  /* 4 */ val UseFsEventsOnParentDirectory: typings.typescript.mod.WatchFileKind.UseFsEventsOnParentDirectory & Double = js.native
 }

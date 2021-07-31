@@ -9,10 +9,13 @@ import typings.firebaseStorage.srcReferenceMod.Reference
 import typings.firebaseStorage.xhriopoolMod.XhrIoPool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcServiceMod {
+  
+  @JSImport("@firebase/storage/dist/src/service", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _FirebaseService * / any */ @JSImport("@firebase/storage/dist/src/service", "StorageService")
@@ -106,23 +109,17 @@ object srcServiceMod {
     def maxUploadRetryTime_=(time: Double): Unit = js.native
   }
   
-  @JSImport("@firebase/storage/dist/src/service", "isUrl")
-  @js.native
-  def isUrl(): Boolean = js.native
-  @JSImport("@firebase/storage/dist/src/service", "isUrl")
-  @js.native
-  def isUrl(path: String): Boolean = js.native
+  @scala.inline
+  def isUrl(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")().asInstanceOf[Boolean]
+  @scala.inline
+  def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/storage/dist/src/service", "ref")
-  @js.native
-  def ref(storageOrRef: Reference): Reference = js.native
-  @JSImport("@firebase/storage/dist/src/service", "ref")
-  @js.native
-  def ref(storageOrRef: Reference, path: String): Reference = js.native
-  @JSImport("@firebase/storage/dist/src/service", "ref")
-  @js.native
-  def ref(storage: StorageService): Reference = js.native
-  @JSImport("@firebase/storage/dist/src/service", "ref")
-  @js.native
-  def ref(storage: StorageService, url: String): Reference = js.native
+  @scala.inline
+  def ref(storageOrRef: Reference): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  @scala.inline
+  def ref(storageOrRef: Reference, path: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storageOrRef.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Reference]
+  @scala.inline
+  def ref(storage: StorageService): Reference = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any]).asInstanceOf[Reference]
+  @scala.inline
+  def ref(storage: StorageService, url: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(storage.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Reference]
 }

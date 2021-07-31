@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SparklinePaneRenderEvent extends SparklineEvent {
+trait SparklinePaneRenderEvent
+  extends StObject
+     with SparklineEvent {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pane: js.UndefOr[typings.kendoUi.kendo.dataviz.ChartPane] = js.native
+  var pane: js.UndefOr[typings.kendoUi.kendo.dataviz.ChartPane] = js.undefined
 }
 object SparklinePaneRenderEvent {
   

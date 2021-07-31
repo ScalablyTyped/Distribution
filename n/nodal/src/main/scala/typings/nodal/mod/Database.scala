@@ -2,7 +2,6 @@ package typings.nodal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Database")
@@ -28,9 +27,9 @@ class Database () extends StObject {
   def info(message: String): Unit = js.native
   
   def log(sql: String): Boolean = js.native
-  def log(sql: String, params: js.UndefOr[scala.Nothing], time: Double): Boolean = js.native
   def log(sql: String, params: js.Any): Boolean = js.native
   def log(sql: String, params: js.Any, time: Double): Boolean = js.native
+  def log(sql: String, params: Unit, time: Double): Boolean = js.native
   
   def query(args: js.Any*): Unit = js.native
   

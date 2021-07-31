@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to register for action events of an image button and sets the action command. */
-@js.native
-trait XImageButton extends XInterface {
+trait XImageButton
+  extends StObject
+     with XInterface {
   
   /** registers a listener for action events. */
-  def addActionListener(l: XActionListener): Unit = js.native
+  def addActionListener(l: XActionListener): Unit
   
   /** unregisters a listener for action events. */
-  def removeActionListener(l: XActionListener): Unit = js.native
+  def removeActionListener(l: XActionListener): Unit
   
   /** sets the action command string. */
-  def setActionCommand(Command: String): Unit = js.native
+  def setActionCommand(Command: String): Unit
 }
 object XImageButton {
   

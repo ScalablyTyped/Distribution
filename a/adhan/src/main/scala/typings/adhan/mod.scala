@@ -3,7 +3,6 @@ package typings.adhan
 import typings.adhan.anon.Asr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,19 +32,25 @@ object mod {
   object HighLatitudeRule extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HighLatitudeRule with Double] = js.native
+    def apply(value: Double): js.UndefOr[HighLatitudeRule & Double] = js.native
     
     @js.native
-    sealed trait MiddleOfTheNight extends HighLatitudeRule
-    /* 0 */ val MiddleOfTheNight: typings.adhan.mod.HighLatitudeRule.MiddleOfTheNight with Double = js.native
+    sealed trait MiddleOfTheNight
+      extends StObject
+         with HighLatitudeRule
+    /* 0 */ val MiddleOfTheNight: typings.adhan.mod.HighLatitudeRule.MiddleOfTheNight & Double = js.native
     
     @js.native
-    sealed trait SeventhOfTheNight extends HighLatitudeRule
-    /* 1 */ val SeventhOfTheNight: typings.adhan.mod.HighLatitudeRule.SeventhOfTheNight with Double = js.native
+    sealed trait SeventhOfTheNight
+      extends StObject
+         with HighLatitudeRule
+    /* 1 */ val SeventhOfTheNight: typings.adhan.mod.HighLatitudeRule.SeventhOfTheNight & Double = js.native
     
     @js.native
-    sealed trait TwilightAngle extends HighLatitudeRule
-    /* 2 */ val TwilightAngle: typings.adhan.mod.HighLatitudeRule.TwilightAngle with Double = js.native
+    sealed trait TwilightAngle
+      extends StObject
+         with HighLatitudeRule
+    /* 2 */ val TwilightAngle: typings.adhan.mod.HighLatitudeRule.TwilightAngle & Double = js.native
   }
   
   @js.native
@@ -55,15 +60,19 @@ object mod {
   object Madhab extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Madhab with Double] = js.native
+    def apply(value: Double): js.UndefOr[Madhab & Double] = js.native
     
     @js.native
-    sealed trait Hanafi extends Madhab
-    /* 0 */ val Hanafi: typings.adhan.mod.Madhab.Hanafi with Double = js.native
+    sealed trait Hanafi
+      extends StObject
+         with Madhab
+    /* 0 */ val Hanafi: typings.adhan.mod.Madhab.Hanafi & Double = js.native
     
     @js.native
-    sealed trait Shafi extends Madhab
-    /* 1 */ val Shafi: typings.adhan.mod.Madhab.Shafi with Double = js.native
+    sealed trait Shafi
+      extends StObject
+         with Madhab
+    /* 1 */ val Shafi: typings.adhan.mod.Madhab.Shafi & Double = js.native
   }
   
   @JSImport("adhan", "Math")
@@ -88,30 +97,29 @@ object mod {
     var sunrise: typings.std.Date = js.native
   }
   
-  @js.native
   trait AdhanCalculationMethod extends StObject {
     
-    def Dubai(): Parameter = js.native
+    def Dubai(): Parameter
     
-    def Egyptian(): Parameter = js.native
+    def Egyptian(): Parameter
     
-    def Karachi(): Parameter = js.native
+    def Karachi(): Parameter
     
-    def Kuwait(): Parameter = js.native
+    def Kuwait(): Parameter
     
-    def MoonsightingCommittee(): Parameter = js.native
+    def MoonsightingCommittee(): Parameter
     
-    def MuslimWorldLeague(): Parameter = js.native
+    def MuslimWorldLeague(): Parameter
     
-    def NorthAmerica(): Parameter = js.native
+    def NorthAmerica(): Parameter
     
-    def Other(): Parameter = js.native
+    def Other(): Parameter
     
-    def Qatar(): Parameter = js.native
+    def Qatar(): Parameter
     
-    def Singapore(): Parameter = js.native
+    def Singapore(): Parameter
     
-    def UmmAlQura(): Parameter = js.native
+    def UmmAlQura(): Parameter
   }
   object AdhanCalculationMethod {
     
@@ -185,29 +193,28 @@ object mod {
     def dayOfYear(date: typings.std.Date): String = js.native
     
     def formattedTime(prayerTime: typings.std.Date): String = js.native
-    def formattedTime(prayerTime: typings.std.Date, offset: js.UndefOr[scala.Nothing], style: TimeMode): String = js.native
     def formattedTime(prayerTime: typings.std.Date, offset: Double): String = js.native
     def formattedTime(prayerTime: typings.std.Date, offset: Double, style: TimeMode): String = js.native
+    def formattedTime(prayerTime: typings.std.Date, offset: Unit, style: TimeMode): String = js.native
     
     def julianDate(date: typings.std.Date): String = js.native
     
     def roundedMinute(date: typings.std.Date): String = js.native
   }
   
-  @js.native
   trait AdhanMath extends StObject {
     
-    def degreesToRadians(degrees: Double): Double = js.native
+    def degreesToRadians(degrees: Double): Double
     
-    def normalizeToScale(number: Double, max: Double): Double = js.native
+    def normalizeToScale(number: Double, max: Double): Double
     
-    def quadrantShiftAngle(angle: Double): Double = js.native
+    def quadrantShiftAngle(angle: Double): Double
     
-    def radiansToDegrees(radians: Double): Double = js.native
+    def radiansToDegrees(radians: Double): Double
     
-    def timeComponents(number: Double): Double = js.native
+    def timeComponents(number: Double): Double
     
-    def unwindAngle(angle: Double): Double = js.native
+    def unwindAngle(angle: Double): Double
   }
   object AdhanMath {
     
@@ -247,22 +254,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Parameter extends StObject {
     
-    var adjustments: Asr = js.native
+    var adjustments: Asr
     
-    var fajrAngle: Double = js.native
+    var fajrAngle: Double
     
-    var highLatitudeRule: HighLatitudeRule = js.native
+    var highLatitudeRule: HighLatitudeRule
     
-    var ishaAngle: Double = js.native
+    var ishaAngle: Double
     
-    var ishaInterval: Double = js.native
+    var ishaInterval: Double
     
-    var madhab: Madhab = js.native
+    var madhab: Madhab
     
-    val method: String = js.native
+    val method: String
   }
   object Parameter {
     

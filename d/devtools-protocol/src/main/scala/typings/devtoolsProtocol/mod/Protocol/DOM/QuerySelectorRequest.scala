@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySelectorRequest extends StObject {
   
   /**
     * Id of the node to query upon.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Selector string.
     */
-  var selector: String = js.native
+  var selector: String
 }
 object QuerySelectorRequest {
   

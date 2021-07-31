@@ -4,23 +4,21 @@ import typings.fundamentalReact.iconMod.IconSize
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link extends StObject {
   
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var glyph: js.UndefOr[String] = js.native
+  var glyph: js.UndefOr[String] = js.undefined
   
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[ReactNode] = js.native
+  var name: js.UndefOr[ReactNode] = js.undefined
   
-  var size: js.UndefOr[IconSize] = js.native
+  var size: js.UndefOr[IconSize] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Link {
   

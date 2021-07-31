@@ -2,74 +2,72 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationButtonOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment for the buttons.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel spacing between
     * buttons.
     */
-  var buttonSpacing: js.UndefOr[Double] = js.native
+  var buttonSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to enable buttons.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Pixel height of the buttons.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fill color for the symbol within
     * the button.
     */
-  var symbolFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var symbolFill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel size of the symbol on
     * the button.
     */
-  var symbolSize: js.UndefOr[Double] = js.native
+  var symbolSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the symbol's stroke
     * or line.
     */
-  var symbolStroke: js.UndefOr[ColorString] = js.native
+  var symbolStroke: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel stroke width of the
     * symbol on the button.
     */
-  var symbolStrokeWidth: js.UndefOr[Double] = js.native
+  var symbolStrokeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position of the center of
     * the symbol inside the button.
     */
-  var symbolX: js.UndefOr[Double] = js.native
+  var symbolX: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position of the center of
     * the symbol inside the button.
     */
-  var symbolY: js.UndefOr[Double] = js.native
+  var symbolY: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text string to add to the
     * individual button.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A configuration object for the
@@ -77,24 +75,24 @@ trait NavigationButtonOptions extends StObject {
     * `stroke` and `fill`. Tri-state button styles are supported by the
     * `states.hover` and `states.select` objects.
     */
-  var theme: js.UndefOr[NavigationButtonThemeOptions] = js.native
+  var theme: js.UndefOr[NavigationButtonThemeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * buttons. Can be one of `"top"`, `"middle"` or `"bottom"`.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the button.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical offset of the
     * button's position relative to its `verticalAlign`.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object NavigationButtonOptions {
   

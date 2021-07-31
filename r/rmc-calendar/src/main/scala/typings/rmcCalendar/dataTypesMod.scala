@@ -5,7 +5,6 @@ import typings.rmcCalendar.singleMonthMod.default
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataTypesMod {
@@ -19,57 +18,70 @@ object dataTypesMod {
     object SelectType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[SelectType with Double] = js.native
+      def apply(value: Double): js.UndefOr[SelectType & Double] = js.native
       
       /** 起/止 */
       @js.native
-      sealed trait All extends SelectType
-      /* 2 */ val All: typings.rmcCalendar.dataTypesMod.Models.SelectType.All with Double = js.native
+      sealed trait All
+        extends StObject
+           with SelectType
+      /* 2 */ val All: typings.rmcCalendar.dataTypesMod.Models.SelectType.All & Double = js.native
       
       /** 区间止 */
       @js.native
-      sealed trait End extends SelectType
-      /* 6 */ val End: typings.rmcCalendar.dataTypesMod.Models.SelectType.End with Double = js.native
+      sealed trait End
+        extends StObject
+           with SelectType
+      /* 6 */ val End: typings.rmcCalendar.dataTypesMod.Models.SelectType.End & Double = js.native
       
       /** 区间中 */
       @js.native
-      sealed trait Middle extends SelectType
-      /* 5 */ val Middle: typings.rmcCalendar.dataTypesMod.Models.SelectType.Middle with Double = js.native
+      sealed trait Middle
+        extends StObject
+           with SelectType
+      /* 5 */ val Middle: typings.rmcCalendar.dataTypesMod.Models.SelectType.Middle & Double = js.native
       
       @js.native
-      sealed trait None extends SelectType
-      /* 0 */ val None: typings.rmcCalendar.dataTypesMod.Models.SelectType.None with Double = js.native
+      sealed trait None
+        extends StObject
+           with SelectType
+      /* 0 */ val None: typings.rmcCalendar.dataTypesMod.Models.SelectType.None & Double = js.native
       
       /** 区间仅选择了 起 */
       @js.native
-      sealed trait Only extends SelectType
-      /* 3 */ val Only: typings.rmcCalendar.dataTypesMod.Models.SelectType.Only with Double = js.native
+      sealed trait Only
+        extends StObject
+           with SelectType
+      /* 3 */ val Only: typings.rmcCalendar.dataTypesMod.Models.SelectType.Only & Double = js.native
       
       /** 单选 */
       @js.native
-      sealed trait Single extends SelectType
-      /* 1 */ val Single: typings.rmcCalendar.dataTypesMod.Models.SelectType.Single with Double = js.native
+      sealed trait Single
+        extends StObject
+           with SelectType
+      /* 1 */ val Single: typings.rmcCalendar.dataTypesMod.Models.SelectType.Single & Double = js.native
       
       /** 区间起 */
       @js.native
-      sealed trait Start extends SelectType
-      /* 4 */ val Start: typings.rmcCalendar.dataTypesMod.Models.SelectType.Start with Double = js.native
+      sealed trait Start
+        extends StObject
+           with SelectType
+      /* 4 */ val Start: typings.rmcCalendar.dataTypesMod.Models.SelectType.Start & Double = js.native
     }
     
-    @js.native
     trait CellData extends StObject {
       
-      var dayOfMonth: Double = js.native
+      var dayOfMonth: Double
       
-      var isFirstOfMonth: Boolean = js.native
+      var isFirstOfMonth: Boolean
       
-      var isLastOfMonth: Boolean = js.native
+      var isLastOfMonth: Boolean
       
-      var outOfDate: Boolean = js.native
+      var outOfDate: Boolean
       
-      var selected: SelectType = js.native
+      var selected: SelectType
       
-      var tick: Double = js.native
+      var tick: Double
     }
     object CellData {
       
@@ -109,19 +121,18 @@ object dataTypesMod {
       }
     }
     
-    @js.native
     trait ExtraData extends StObject {
       
       /** (web only) 附加cell样式 className */
-      var cellCls: js.UndefOr[js.Any] = js.native
+      var cellCls: js.UndefOr[js.Any] = js.undefined
       
-      var cellRender: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.native
+      var cellRender: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.undefined
       
       /** 是否禁止选择 */
-      var disable: js.UndefOr[Boolean] = js.native
+      var disable: js.UndefOr[Boolean] = js.undefined
       
       /** 扩展信息 */
-      var info: js.UndefOr[String] = js.native
+      var info: js.UndefOr[String] = js.undefined
     }
     object ExtraData {
       
@@ -160,58 +171,57 @@ object dataTypesMod {
       }
     }
     
-    @js.native
     trait Locale extends StObject {
       
-      var am: String = js.native
+      var am: String
       
-      var begin: String = js.native
+      var begin: String
       
-      var begin_over: String = js.native
+      var begin_over: String
       
-      var clear: String = js.native
+      var clear: String
       
-      var confirm: String = js.native
+      var confirm: String
       
-      var dateFormat: String = js.native
+      var dateFormat: String
       
-      var dateTimeFormat: String = js.native
+      var dateTimeFormat: String
       
-      var end: String = js.native
+      var end: String
       
-      var lastMonth: String = js.native
+      var lastMonth: String
       
-      var lastWeek: String = js.native
+      var lastWeek: String
       
-      var loadPrevMonth: String = js.native
+      var loadPrevMonth: String
       
-      var month: String = js.native
+      var month: String
       
-      var monthTitle: String = js.native
+      var monthTitle: String
       
-      var noChoose: String = js.native
+      var noChoose: String
       
-      var over: String = js.native
+      var over: String
       
-      var pm: String = js.native
+      var pm: String
       
-      var selectEndTime: String = js.native
+      var selectEndTime: String
       
-      var selectStartTime: String = js.native
+      var selectStartTime: String
       
-      var selectTime: String = js.native
+      var selectTime: String
       
-      var start: String = js.native
+      var start: String
       
-      var title: String = js.native
+      var title: String
       
-      var today: String = js.native
+      var today: String
       
-      var week: js.Array[String] = js.native
+      var week: js.Array[String]
       
-      var year: String = js.native
+      var year: String
       
-      var yesterday: String = js.native
+      var yesterday: String
     }
     object Locale {
       
@@ -330,26 +340,25 @@ object dataTypesMod {
       }
     }
     
-    @js.native
     trait MonthData extends StObject {
       
-      var component: js.UndefOr[ReactNode] = js.native
+      var component: js.UndefOr[ReactNode] = js.undefined
       
-      var componentRef: js.UndefOr[default] = js.native
+      var componentRef: js.UndefOr[default] = js.undefined
       
-      var firstDate: Date = js.native
+      var firstDate: Date
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var lastDate: Date = js.native
+      var lastDate: Date
       
-      var title: String = js.native
+      var title: String
       
-      var updateLayout: js.UndefOr[js.Function] = js.native
+      var updateLayout: js.UndefOr[js.Function] = js.undefined
       
-      var weeks: js.Array[js.Array[CellData]] = js.native
+      var weeks: js.Array[js.Array[CellData]]
       
-      var y: js.UndefOr[Double] = js.native
+      var y: js.UndefOr[Double] = js.undefined
     }
     object MonthData {
       

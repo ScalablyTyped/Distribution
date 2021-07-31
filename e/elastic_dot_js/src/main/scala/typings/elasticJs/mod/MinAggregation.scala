@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MinAggregation")
 @js.native
-class MinAggregation protected () extends Aggregation {
+class MinAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that keeps track and returns the minimum value among numeric
     values extracted from the aggregated documents.

@@ -6,7 +6,6 @@ import typings.astTypes.kindsMod.TemplateElementKind
 import typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

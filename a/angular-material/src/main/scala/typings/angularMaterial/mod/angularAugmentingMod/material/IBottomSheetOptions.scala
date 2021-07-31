@@ -9,45 +9,43 @@ import typings.angular.mod.Injectable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBottomSheetOptions extends StObject {
   
-  var bindToController: js.UndefOr[Boolean] = js.native
+  var bindToController: js.UndefOr[Boolean] = js.undefined
   
-  var clickOutsideToClose: js.UndefOr[Boolean] = js.native
-  
-  // default: false
-  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
-  
-  var controllerAs: js.UndefOr[String] = js.native
+  var clickOutsideToClose: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var disableBackdrop: js.UndefOr[Boolean] = js.native
+  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
+  
+  var controllerAs: js.UndefOr[String] = js.undefined
+  
+  // default: false
+  var disableBackdrop: js.UndefOr[Boolean] = js.undefined
   
   // default: root node
-  var disableParentScroll: js.UndefOr[Boolean] = js.native
+  var disableParentScroll: js.UndefOr[Boolean] = js.undefined
   
-  var escapeToClose: js.UndefOr[Boolean] = js.native
+  var escapeToClose: js.UndefOr[Boolean] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   var parent: js.UndefOr[
     (js.Function2[/* scope */ IScope, /* element */ JQuery, Element | JQuery]) | String | Element | JQuery
-  ] = js.native
+  ] = js.undefined
   
   // default: new child scope
-  var preserveScope: js.UndefOr[Boolean] = js.native
+  var preserveScope: js.UndefOr[Boolean] = js.undefined
   
-  var resolve: js.UndefOr[ResolveObject] = js.native
+  var resolve: js.UndefOr[ResolveObject] = js.undefined
   
-  var scope: js.UndefOr[IScope] = js.native
+  var scope: js.UndefOr[IScope] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
 }
 object IBottomSheetOptions {
   

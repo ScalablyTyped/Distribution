@@ -2,29 +2,27 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about the environment in which the add-in is running.
   */
-@js.native
 trait ContextInformation extends StObject {
   
   /**
     * Gets the Office application host in which the add-in is running.
     */
-  var host: HostType = js.native
+  var host: HostType
   
   /**
     * Gets the platform on which the add-in is running.
     */
-  var platform: PlatformType = js.native
+  var platform: PlatformType
   
   /**
     * Gets the version of Office on which the add-in is running.
     */
-  var version: String = js.native
+  var version: String
 }
 object ContextInformation {
   

@@ -2,23 +2,21 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITool extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  def clicked(p: IPoint): Boolean = js.native
+  def clicked(p: IPoint): Boolean
   
-  def draw(): Unit = js.native
+  def draw(): Unit
   
-  def mousedown(event: js.Any): Boolean = js.native
+  def mousedown(event: js.Any): Boolean
   
-  def mousemove(event: js.Any): Boolean = js.native
+  def mousemove(event: js.Any): Boolean
 }
 object ITool {
   

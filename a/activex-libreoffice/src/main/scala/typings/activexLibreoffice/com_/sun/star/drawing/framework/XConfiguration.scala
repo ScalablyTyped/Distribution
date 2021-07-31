@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link XConfigurationChangeRequest} interface.
   * @see XConfigurationController
   */
-@js.native
-trait XConfiguration extends XCloneable {
+trait XConfiguration
+  extends StObject
+     with XCloneable {
   
   /**
     * Add a resource to the configuration.
@@ -27,7 +27,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The resource to add to the configuration. When the specified resource is already part of the configuration then this call is silently
     * @throws IllegalArgumentException When an empty resource id is given then an IllegalArgumentException is thrown.
     */
-  def addResource(xResourceId: XResourceId): Unit = js.native
+  def addResource(xResourceId: XResourceId): Unit
   
   /**
     * Returns the list of resources that are bound directly and/or indirectly to the given anchor. A URL filter can reduce the set of returned resource ids.
@@ -36,7 +36,7 @@ trait XConfiguration extends XCloneable {
     * @param eSearchMode This flag defines whether to return only resources that are directly bound to the given anchor or a recursive search is to be made. N
     * @returns The set of returned resource ids may be empty when there are no resource ids that match all conditions. The resources in the sequence are ordered
     */
-  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: String, eSearchMode: AnchorBindingMode): SafeArray[XResourceId] = js.native
+  def getResources(xAnchorId: XResourceId, sTargetURLPrefix: String, eSearchMode: AnchorBindingMode): SafeArray[XResourceId]
   
   /**
     * Returns whether the specified resource is part of the configuration.
@@ -45,7 +45,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The id of a resource. May be empty (empty reference or empty {@link XResourceId} object) in which case `FALSE` is returned.
     * @returns Returns `TRUE` when the resource is part of the configuration and `FALSE` when it is not.
     */
-  def hasResource(xResourceId: XResourceId): Boolean = js.native
+  def hasResource(xResourceId: XResourceId): Boolean
   
   /**
     * Remove a resource from the configuration.
@@ -54,7 +54,7 @@ trait XConfiguration extends XCloneable {
     * @param xResourceId The resource to remove from the configuration. When the specified resource is not part of the configuration then this call is silentl
     * @throws IllegalArgumentException When an empty resource id is given then an IllegalArgumentException is thrown.
     */
-  def removeResource(xResourceId: XResourceId): Unit = js.native
+  def removeResource(xResourceId: XResourceId): Unit
 }
 object XConfiguration {
   

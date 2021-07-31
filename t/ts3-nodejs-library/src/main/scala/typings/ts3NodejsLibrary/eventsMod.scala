@@ -10,26 +10,29 @@ import typings.ts3NodejsLibrary.responseTypesMod.ClientEntry
 import typings.ts3NodejsLibrary.responseTypesMod.ClientList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
   
-  @js.native
   trait ChannelCreate extends StObject {
     
-    var channel: TeamSpeakChannel = js.native
+    var channel: TeamSpeakChannel
     
-    var cpid: Double = js.native
+    var cpid: Double
     
-    var invoker: TeamSpeakClient = js.native
+    var invoker: TeamSpeakClient
     
-    var modified: Record[String, _] = js.native
+    var modified: Record[String, js.Any]
   }
   object ChannelCreate {
     
     @scala.inline
-    def apply(channel: TeamSpeakChannel, cpid: Double, invoker: TeamSpeakClient, modified: Record[String, _]): ChannelCreate = {
+    def apply(
+      channel: TeamSpeakChannel,
+      cpid: Double,
+      invoker: TeamSpeakClient,
+      modified: Record[String, js.Any]
+    ): ChannelCreate = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], cpid = cpid.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelCreate]
     }
@@ -47,16 +50,15 @@ object eventsMod {
       def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setModified(value: Record[String, _]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ChannelDelete extends StObject {
     
-    var cid: Double = js.native
+    var cid: Double
     
-    var invoker: js.UndefOr[TeamSpeakClient] = js.native
+    var invoker: js.UndefOr[TeamSpeakClient] = js.undefined
   }
   object ChannelDelete {
     
@@ -80,21 +82,25 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait ChannelEdit extends StObject {
     
-    var channel: TeamSpeakChannel = js.native
+    var channel: TeamSpeakChannel
     
-    var invoker: TeamSpeakClient = js.native
+    var invoker: TeamSpeakClient
     
-    var modified: Record[String, _] = js.native
+    var modified: Record[String, js.Any]
     
-    var reasonid: Double = js.native
+    var reasonid: Double
   }
   object ChannelEdit {
     
     @scala.inline
-    def apply(channel: TeamSpeakChannel, invoker: TeamSpeakClient, modified: Record[String, _], reasonid: Double): ChannelEdit = {
+    def apply(
+      channel: TeamSpeakChannel,
+      invoker: TeamSpeakClient,
+      modified: Record[String, js.Any],
+      reasonid: Double
+    ): ChannelEdit = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelEdit]
     }
@@ -109,23 +115,22 @@ object eventsMod {
       def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setModified(value: Record[String, _]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ChannelMove extends StObject {
     
-    var channel: TeamSpeakChannel = js.native
+    var channel: TeamSpeakChannel
     
-    var invoker: TeamSpeakClient = js.native
+    var invoker: TeamSpeakClient
     
-    var order: Double = js.native
+    var order: Double
     
-    var parent: TeamSpeakChannel = js.native
+    var parent: TeamSpeakChannel
   }
   object ChannelMove {
     
@@ -152,10 +157,9 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait ClientConnect extends StObject {
     
-    var client: TeamSpeakClient = js.native
+    var client: TeamSpeakClient
   }
   object ClientConnect {
     
@@ -173,12 +177,11 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait ClientDisconnect extends StObject {
     
-    var client: js.UndefOr[TeamSpeakClient] = js.native
+    var client: js.UndefOr[TeamSpeakClient] = js.undefined
     
-    var event: Cfid = js.native
+    var event: Cfid
   }
   object ClientDisconnect {
     
@@ -202,14 +205,13 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait ClientMoved extends StObject {
     
-    var channel: TeamSpeakChannel = js.native
+    var channel: TeamSpeakChannel
     
-    var client: TeamSpeakClient = js.native
+    var client: TeamSpeakClient
     
-    var reasonid: ReasonIdentifier = js.native
+    var reasonid: ReasonIdentifier
   }
   object ClientMoved {
     
@@ -233,12 +235,11 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Debug {
     
@@ -260,19 +261,18 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait ServerEdit extends StObject {
     
-    var invoker: TeamSpeakClient = js.native
+    var invoker: TeamSpeakClient
     
-    var modified: Record[String, _] = js.native
+    var modified: Record[String, js.Any]
     
-    var reasonid: Double = js.native
+    var reasonid: Double
   }
   object ServerEdit {
     
     @scala.inline
-    def apply(invoker: TeamSpeakClient, modified: Record[String, _], reasonid: Double): ServerEdit = {
+    def apply(invoker: TeamSpeakClient, modified: Record[String, js.Any], reasonid: Double): ServerEdit = {
       val __obj = js.Dynamic.literal(invoker = invoker.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], reasonid = reasonid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerEdit]
     }
@@ -284,21 +284,20 @@ object eventsMod {
       def setInvoker(value: TeamSpeakClient): Self = StObject.set(x, "invoker", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setModified(value: Record[String, _]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      def setModified(value: Record[String, js.Any]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReasonid(value: Double): Self = StObject.set(x, "reasonid", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TextMessage extends StObject {
     
-    var invoker: TeamSpeakClient = js.native
+    var invoker: TeamSpeakClient
     
-    var msg: String = js.native
+    var msg: String
     
-    var targetmode: TextMessageTargetMode = js.native
+    var targetmode: TextMessageTargetMode
   }
   object TextMessage {
     
@@ -322,16 +321,15 @@ object eventsMod {
     }
   }
   
-  @js.native
   trait TokenUsed extends StObject {
     
-    var client: ClientList = js.native
+    var client: ClientList
     
-    var token: String = js.native
+    var token: String
     
-    var token1: String = js.native
+    var token1: String
     
-    var token2: String = js.native
+    var token2: String
   }
   object TokenUsed {
     

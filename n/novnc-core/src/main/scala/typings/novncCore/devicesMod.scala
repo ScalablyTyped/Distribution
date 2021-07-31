@@ -3,7 +3,6 @@ package typings.novncCore
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devicesMod {
@@ -62,14 +61,13 @@ object devicesMod {
     def ungrab(): Unit = js.native
   }
   
-  @js.native
   trait NvKeyboardDefaults extends StObject {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function3[/* keysym */ String, /* code */ Double, /* down */ Boolean, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function3[/* keysym */ String, /* code */ Double, /* down */ Boolean, Unit]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
   }
   object NvKeyboardDefaults {
     
@@ -102,20 +100,19 @@ object devicesMod {
     }
   }
   
-  @js.native
   trait NvMouseDefaults extends StObject {
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
     var onMouseButton: js.UndefOr[
         js.Function4[/* x */ Double, /* y */ Double, /* down */ Boolean, /* bmask */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var touchButton: js.UndefOr[Double] = js.native
+    var touchButton: js.UndefOr[Double] = js.undefined
   }
   object NvMouseDefaults {
     

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.TextCursor
   * @see com.sun.star.view.XLineCursor
   */
-@js.native
-trait XViewCursor extends XInterface {
+trait XViewCursor
+  extends StObject
+     with XInterface {
   
   /**
     * moves the cursor the specified number of lines down.
@@ -22,7 +22,7 @@ trait XViewCursor extends XInterface {
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` ) or the cursor will be just at the new position after the move ( `F
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already in the bottom row.
     */
-  def goDown(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goDown(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor the specified number of characters to the left.
@@ -30,7 +30,7 @@ trait XViewCursor extends XInterface {
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already at the leftmost position.
     */
-  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor the specified number of characters to the right.
@@ -38,7 +38,7 @@ trait XViewCursor extends XInterface {
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already at the rightmost position.
     */
-  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goRight(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor the specified number of lines up.
@@ -46,7 +46,7 @@ trait XViewCursor extends XInterface {
     * @param bExpand determines whether the text range of the cursor is expanded ( `TRUE` )
     * @returns `TRUE` if the cursor was moved, or `FALSE` if it was already in the top row.
     */
-  def goUp(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goUp(nCount: Double, bExpand: Boolean): Boolean
 }
 object XViewCursor {
   

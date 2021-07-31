@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.ajvBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -38,13 +37,27 @@ object anon {
     def unescapeJsonPointer(str: String): String = js.native
   }
   
-  @js.native
   trait TypeofMissingRefError extends StObject {
     
     /* static member */
-    def message(baseId: String, ref: String): String = js.native
+    def message(baseId: String, ref: String): String
     /* static member */
     @JSName("message")
-    var message_Original: js.Function2[/* baseId */ String, /* ref */ String, String] = js.native
+    var message_Original: js.Function2[/* baseId */ String, /* ref */ String, String]
+  }
+  object TypeofMissingRefError {
+    
+    @scala.inline
+    def apply(message: (/* baseId */ String, /* ref */ String) => String): TypeofMissingRefError = {
+      val __obj = js.Dynamic.literal(message = js.Any.fromFunction2(message))
+      __obj.asInstanceOf[TypeofMissingRefError]
+    }
+    
+    @scala.inline
+    implicit class TypeofMissingRefErrorMutableBuilder[Self <: TypeofMissingRefError] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMessage(value: (/* baseId */ String, /* ref */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    }
   }
 }

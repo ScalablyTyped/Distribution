@@ -3,21 +3,19 @@ package typings.gijgo.Types
 import typings.gijgo.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridSettings[Entity] extends StObject {
   
   //Configuration options
-  var autoGenerateColumns: js.UndefOr[Boolean] = js.native
+  var autoGenerateColumns: js.UndefOr[Boolean] = js.undefined
   
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
   //Events
-  var beforeEmptyRowInsert: js.UndefOr[js.Function2[/* e */ js.Any, /* $row */ JQuery, _]] = js.native
+  var beforeEmptyRowInsert: js.UndefOr[js.Function2[/* e */ js.Any, /* $row */ JQuery, js.Any]] = js.undefined
   
-  var bodyRowHeight: js.UndefOr[String] = js.native
+  var bodyRowHeight: js.UndefOr[String] = js.undefined
   
   var cellDataBound: js.UndefOr[
     js.Function5[
@@ -26,9 +24,9 @@ trait GridSettings[Entity] extends StObject {
       /* id */ String, 
       /* column */ GridColumn, 
       /* record */ Entity, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   var cellDataChanged: js.UndefOr[
     js.Function6[
@@ -38,125 +36,131 @@ trait GridSettings[Entity] extends StObject {
       /* record */ Entity, 
       /* oldValue */ js.Any, 
       /* newValue */ js.Any, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var columnHide: js.UndefOr[js.Function2[/* e */ js.Any, /* column */ GridColumn, _]] = js.native
+  var columnHide: js.UndefOr[js.Function2[/* e */ js.Any, /* column */ GridColumn, js.Any]] = js.undefined
   
-  var columnReorder: js.UndefOr[Boolean] = js.native
+  var columnReorder: js.UndefOr[Boolean] = js.undefined
   
-  var columnShow: js.UndefOr[js.Function2[/* e */ js.Any, /* column */ GridColumn, _]] = js.native
+  var columnShow: js.UndefOr[js.Function2[/* e */ js.Any, /* column */ GridColumn, js.Any]] = js.undefined
   
-  var columns: js.UndefOr[js.Array[GridColumn]] = js.native
+  var columns: js.UndefOr[js.Array[GridColumn]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], _]] = js.native
+  var dataBinding: js.UndefOr[js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], js.Any]] = js.undefined
   
   var dataBound: js.UndefOr[
-    js.Function3[/* e */ js.Any, /* records */ js.Array[Entity], /* totalRecords */ Double, _]
-  ] = js.native
+    js.Function3[/* e */ js.Any, /* records */ js.Array[Entity], /* totalRecords */ Double, js.Any]
+  ] = js.undefined
   
-  var dataFiltered: js.UndefOr[js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], _]] = js.native
+  var dataFiltered: js.UndefOr[js.Function2[/* e */ js.Any, /* records */ js.Array[Entity], js.Any]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
-  var defaultColumnSettings: js.UndefOr[GridColumn] = js.native
+  var defaultColumnSettings: js.UndefOr[GridColumn] = js.undefined
   
-  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var destroying: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var detailCollapse: js.UndefOr[js.Function3[/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String, _]] = js.native
+  var detailCollapse: js.UndefOr[
+    js.Function3[/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String, js.Any]
+  ] = js.undefined
   
-  var detailExpand: js.UndefOr[js.Function3[/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String, _]] = js.native
+  var detailExpand: js.UndefOr[
+    js.Function3[/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String, js.Any]
+  ] = js.undefined
   
-  var detailTemplate: js.UndefOr[String] = js.native
+  var detailTemplate: js.UndefOr[String] = js.undefined
   
-  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var grouping: js.UndefOr[GridGrouping] = js.native
+  var grouping: js.UndefOr[GridGrouping] = js.undefined
   
-  var headerFilter: js.UndefOr[GridHeaderFilter] = js.native
+  var headerFilter: js.UndefOr[GridHeaderFilter] = js.undefined
   
-  var headerRowHeight: js.UndefOr[String] = js.native
+  var headerRowHeight: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[GridIcons] = js.native
+  var icons: js.UndefOr[GridIcons] = js.undefined
   
-  var iconsLibrary: js.UndefOr[String] = js.native
+  var iconsLibrary: js.UndefOr[String] = js.undefined
   
-  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var initialized: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var inlineEditing: js.UndefOr[GridInlineEditing] = js.native
+  var inlineEditing: js.UndefOr[GridInlineEditing] = js.undefined
   
-  var keepExpandedRows: js.UndefOr[Boolean] = js.native
+  var keepExpandedRows: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var mapping: js.UndefOr[js.Any] = js.native
+  var mapping: js.UndefOr[js.Any] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var notFoundText: js.UndefOr[String] = js.native
+  var notFoundText: js.UndefOr[String] = js.undefined
   
-  var optimisticPersistence: js.UndefOr[GridOptimisticPersistence] = js.native
+  var optimisticPersistence: js.UndefOr[GridOptimisticPersistence] = js.undefined
   
-  var orderNumberField: js.UndefOr[String] = js.native
+  var orderNumberField: js.UndefOr[String] = js.undefined
   
-  var pageChanging: js.UndefOr[js.Function2[/* e */ js.Any, /* newPage */ Double, _]] = js.native
+  var pageChanging: js.UndefOr[js.Function2[/* e */ js.Any, /* newPage */ Double, js.Any]] = js.undefined
   
-  var pageSizeChange: js.UndefOr[js.Function2[/* e */ js.Any, /* newPage */ Double, _]] = js.native
+  var pageSizeChange: js.UndefOr[js.Function2[/* e */ js.Any, /* newPage */ Double, js.Any]] = js.undefined
   
-  var pager: js.UndefOr[GridPager] = js.native
+  var pager: js.UndefOr[GridPager] = js.undefined
   
-  var paramNames: js.UndefOr[GridParamNames] = js.native
+  var paramNames: js.UndefOr[GridParamNames] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
   
-  var resizableColumns: js.UndefOr[Boolean] = js.native
+  var resizableColumns: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function3[/* e */ js.Any, /* newWidth */ Double, /* oldWidth */ Double, _]] = js.native
+  var resize: js.UndefOr[
+    js.Function3[/* e */ js.Any, /* newWidth */ Double, /* oldWidth */ Double, js.Any]
+  ] = js.undefined
   
-  var resizeCheckInterval: js.UndefOr[Double] = js.native
+  var resizeCheckInterval: js.UndefOr[Double] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
   var rowDataBound: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, js.Any]
+  ] = js.undefined
   
-  var rowDataChanged: js.UndefOr[js.Function3[/* e */ js.Any, /* id */ String, /* record */ Entity, _]] = js.native
+  var rowDataChanged: js.UndefOr[js.Function3[/* e */ js.Any, /* id */ String, /* record */ Entity, js.Any]] = js.undefined
   
   var rowRemoving: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, js.Any]
+  ] = js.undefined
   
-  var rowReorder: js.UndefOr[Boolean] = js.native
+  var rowReorder: js.UndefOr[Boolean] = js.undefined
   
-  var rowReorderColumn: js.UndefOr[String] = js.native
+  var rowReorderColumn: js.UndefOr[String] = js.undefined
   
   var rowSelect: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, js.Any]
+  ] = js.undefined
   
   var rowUnselect: js.UndefOr[
-    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, _]
-  ] = js.native
+    js.Function4[/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity, js.Any]
+  ] = js.undefined
   
-  var selectionMethod: js.UndefOr[String] = js.native
+  var selectionMethod: js.UndefOr[String] = js.undefined
   
-  var selectionType: js.UndefOr[String] = js.native
+  var selectionType: js.UndefOr[String] = js.undefined
   
-  var showHiddenColumnsAsDetails: js.UndefOr[Boolean] = js.native
+  var showHiddenColumnsAsDetails: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var toolbarTemplate: js.UndefOr[String] = js.native
+  var toolbarTemplate: js.UndefOr[String] = js.undefined
   
-  var uiLibrary: js.UndefOr[String] = js.native
+  var uiLibrary: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GridSettings {
   
@@ -167,7 +171,7 @@ object GridSettings {
   }
   
   @scala.inline
-  implicit class GridSettingsMutableBuilder[Self <: GridSettings[_], Entity] (val x: Self with GridSettings[Entity]) extends AnyVal {
+  implicit class GridSettingsMutableBuilder[Self <: GridSettings[?], Entity] (val x: Self & GridSettings[Entity]) extends AnyVal {
     
     @scala.inline
     def setAutoGenerateColumns(value: Boolean): Self = StObject.set(x, "autoGenerateColumns", value.asInstanceOf[js.Any])
@@ -182,7 +186,7 @@ object GridSettings {
     def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
     
     @scala.inline
-    def setBeforeEmptyRowInsert(value: (/* e */ js.Any, /* $row */ JQuery) => _): Self = StObject.set(x, "beforeEmptyRowInsert", js.Any.fromFunction2(value))
+    def setBeforeEmptyRowInsert(value: (/* e */ js.Any, /* $row */ JQuery) => js.Any): Self = StObject.set(x, "beforeEmptyRowInsert", js.Any.fromFunction2(value))
     
     @scala.inline
     def setBeforeEmptyRowInsertUndefined: Self = StObject.set(x, "beforeEmptyRowInsert", js.undefined)
@@ -195,7 +199,7 @@ object GridSettings {
     
     @scala.inline
     def setCellDataBound(
-      value: (/* e */ js.Any, /* $wrapper */ JQuery, /* id */ String, /* column */ GridColumn, /* record */ Entity) => _
+      value: (/* e */ js.Any, /* $wrapper */ JQuery, /* id */ String, /* column */ GridColumn, /* record */ Entity) => js.Any
     ): Self = StObject.set(x, "cellDataBound", js.Any.fromFunction5(value))
     
     @scala.inline
@@ -203,14 +207,14 @@ object GridSettings {
     
     @scala.inline
     def setCellDataChanged(
-      value: (/* e */ js.Any, /* $cell */ JQuery, /* column */ GridColumn, /* record */ Entity, /* oldValue */ js.Any, /* newValue */ js.Any) => _
+      value: (/* e */ js.Any, /* $cell */ JQuery, /* column */ GridColumn, /* record */ Entity, /* oldValue */ js.Any, /* newValue */ js.Any) => js.Any
     ): Self = StObject.set(x, "cellDataChanged", js.Any.fromFunction6(value))
     
     @scala.inline
     def setCellDataChangedUndefined: Self = StObject.set(x, "cellDataChanged", js.undefined)
     
     @scala.inline
-    def setColumnHide(value: (/* e */ js.Any, /* column */ GridColumn) => _): Self = StObject.set(x, "columnHide", js.Any.fromFunction2(value))
+    def setColumnHide(value: (/* e */ js.Any, /* column */ GridColumn) => js.Any): Self = StObject.set(x, "columnHide", js.Any.fromFunction2(value))
     
     @scala.inline
     def setColumnHideUndefined: Self = StObject.set(x, "columnHide", js.undefined)
@@ -222,7 +226,7 @@ object GridSettings {
     def setColumnReorderUndefined: Self = StObject.set(x, "columnReorder", js.undefined)
     
     @scala.inline
-    def setColumnShow(value: (/* e */ js.Any, /* column */ GridColumn) => _): Self = StObject.set(x, "columnShow", js.Any.fromFunction2(value))
+    def setColumnShow(value: (/* e */ js.Any, /* column */ GridColumn) => js.Any): Self = StObject.set(x, "columnShow", js.Any.fromFunction2(value))
     
     @scala.inline
     def setColumnShowUndefined: Self = StObject.set(x, "columnShow", js.undefined)
@@ -237,19 +241,19 @@ object GridSettings {
     def setColumnsVarargs(value: GridColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
     @scala.inline
-    def setDataBinding(value: (/* e */ js.Any, /* records */ js.Array[Entity]) => _): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
+    def setDataBinding(value: (/* e */ js.Any, /* records */ js.Array[Entity]) => js.Any): Self = StObject.set(x, "dataBinding", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
     
     @scala.inline
-    def setDataBound(value: (/* e */ js.Any, /* records */ js.Array[Entity], /* totalRecords */ Double) => _): Self = StObject.set(x, "dataBound", js.Any.fromFunction3(value))
+    def setDataBound(value: (/* e */ js.Any, /* records */ js.Array[Entity], /* totalRecords */ Double) => js.Any): Self = StObject.set(x, "dataBound", js.Any.fromFunction3(value))
     
     @scala.inline
     def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
     
     @scala.inline
-    def setDataFiltered(value: (/* e */ js.Any, /* records */ js.Array[Entity]) => _): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction2(value))
+    def setDataFiltered(value: (/* e */ js.Any, /* records */ js.Array[Entity]) => js.Any): Self = StObject.set(x, "dataFiltered", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataFilteredUndefined: Self = StObject.set(x, "dataFiltered", js.undefined)
@@ -267,19 +271,19 @@ object GridSettings {
     def setDefaultColumnSettingsUndefined: Self = StObject.set(x, "defaultColumnSettings", js.undefined)
     
     @scala.inline
-    def setDestroying(value: /* e */ js.Any => _): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
+    def setDestroying(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "destroying", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDestroyingUndefined: Self = StObject.set(x, "destroying", js.undefined)
     
     @scala.inline
-    def setDetailCollapse(value: (/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String) => _): Self = StObject.set(x, "detailCollapse", js.Any.fromFunction3(value))
+    def setDetailCollapse(value: (/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String) => js.Any): Self = StObject.set(x, "detailCollapse", js.Any.fromFunction3(value))
     
     @scala.inline
     def setDetailCollapseUndefined: Self = StObject.set(x, "detailCollapse", js.undefined)
     
     @scala.inline
-    def setDetailExpand(value: (/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String) => _): Self = StObject.set(x, "detailExpand", js.Any.fromFunction3(value))
+    def setDetailExpand(value: (/* e */ js.Any, /* detailWrapper */ JQuery, /* id */ String) => js.Any): Self = StObject.set(x, "detailExpand", js.Any.fromFunction3(value))
     
     @scala.inline
     def setDetailExpandUndefined: Self = StObject.set(x, "detailExpand", js.undefined)
@@ -333,7 +337,7 @@ object GridSettings {
     def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
     @scala.inline
-    def setInitialized(value: /* e */ js.Any => _): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
+    def setInitialized(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "initialized", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitializedUndefined: Self = StObject.set(x, "initialized", js.undefined)
@@ -387,13 +391,13 @@ object GridSettings {
     def setOrderNumberFieldUndefined: Self = StObject.set(x, "orderNumberField", js.undefined)
     
     @scala.inline
-    def setPageChanging(value: (/* e */ js.Any, /* newPage */ Double) => _): Self = StObject.set(x, "pageChanging", js.Any.fromFunction2(value))
+    def setPageChanging(value: (/* e */ js.Any, /* newPage */ Double) => js.Any): Self = StObject.set(x, "pageChanging", js.Any.fromFunction2(value))
     
     @scala.inline
     def setPageChangingUndefined: Self = StObject.set(x, "pageChanging", js.undefined)
     
     @scala.inline
-    def setPageSizeChange(value: (/* e */ js.Any, /* newPage */ Double) => _): Self = StObject.set(x, "pageSizeChange", js.Any.fromFunction2(value))
+    def setPageSizeChange(value: (/* e */ js.Any, /* newPage */ Double) => js.Any): Self = StObject.set(x, "pageSizeChange", js.Any.fromFunction2(value))
     
     @scala.inline
     def setPageSizeChangeUndefined: Self = StObject.set(x, "pageSizeChange", js.undefined)
@@ -429,7 +433,7 @@ object GridSettings {
     def setResizableColumnsUndefined: Self = StObject.set(x, "resizableColumns", js.undefined)
     
     @scala.inline
-    def setResize(value: (/* e */ js.Any, /* newWidth */ Double, /* oldWidth */ Double) => _): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
+    def setResize(value: (/* e */ js.Any, /* newWidth */ Double, /* oldWidth */ Double) => js.Any): Self = StObject.set(x, "resize", js.Any.fromFunction3(value))
     
     @scala.inline
     def setResizeCheckInterval(value: Double): Self = StObject.set(x, "resizeCheckInterval", value.asInstanceOf[js.Any])
@@ -447,19 +451,19 @@ object GridSettings {
     def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
     
     @scala.inline
-    def setRowDataBound(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => _): Self = StObject.set(x, "rowDataBound", js.Any.fromFunction4(value))
+    def setRowDataBound(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => js.Any): Self = StObject.set(x, "rowDataBound", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRowDataBoundUndefined: Self = StObject.set(x, "rowDataBound", js.undefined)
     
     @scala.inline
-    def setRowDataChanged(value: (/* e */ js.Any, /* id */ String, /* record */ Entity) => _): Self = StObject.set(x, "rowDataChanged", js.Any.fromFunction3(value))
+    def setRowDataChanged(value: (/* e */ js.Any, /* id */ String, /* record */ Entity) => js.Any): Self = StObject.set(x, "rowDataChanged", js.Any.fromFunction3(value))
     
     @scala.inline
     def setRowDataChangedUndefined: Self = StObject.set(x, "rowDataChanged", js.undefined)
     
     @scala.inline
-    def setRowRemoving(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => _): Self = StObject.set(x, "rowRemoving", js.Any.fromFunction4(value))
+    def setRowRemoving(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => js.Any): Self = StObject.set(x, "rowRemoving", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRowRemovingUndefined: Self = StObject.set(x, "rowRemoving", js.undefined)
@@ -477,13 +481,13 @@ object GridSettings {
     def setRowReorderUndefined: Self = StObject.set(x, "rowReorder", js.undefined)
     
     @scala.inline
-    def setRowSelect(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => _): Self = StObject.set(x, "rowSelect", js.Any.fromFunction4(value))
+    def setRowSelect(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => js.Any): Self = StObject.set(x, "rowSelect", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRowSelectUndefined: Self = StObject.set(x, "rowSelect", js.undefined)
     
     @scala.inline
-    def setRowUnselect(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => _): Self = StObject.set(x, "rowUnselect", js.Any.fromFunction4(value))
+    def setRowUnselect(value: (/* e */ js.Any, /* $row */ JQuery, /* id */ String, /* record */ Entity) => js.Any): Self = StObject.set(x, "rowUnselect", js.Any.fromFunction4(value))
     
     @scala.inline
     def setRowUnselectUndefined: Self = StObject.set(x, "rowUnselect", js.undefined)

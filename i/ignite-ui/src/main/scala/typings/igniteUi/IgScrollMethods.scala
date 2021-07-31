@@ -2,33 +2,31 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgScrollMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * This method overrides the base method and does nothing, because the scoll container shouldn't change the container locales
     * Note that this method is for rare scenarios, use [language](ui.igupload#options:language) or [locale](ui.igupload#options:locale) option setter
     */
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def option(optionName: js.Object, value: js.Object): Unit = js.native
+  def option(optionName: js.Object, value: js.Object): Unit
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object IgScrollMethods {
   

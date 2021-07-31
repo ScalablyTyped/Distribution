@@ -6,7 +6,6 @@ import typings.documentdbServer.documentdbServerStrings.Replace
 import typings.documentdbServer.documentdbServerStrings.Upsert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

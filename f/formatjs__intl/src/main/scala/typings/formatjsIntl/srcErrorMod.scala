@@ -9,18 +9,25 @@ import typings.formatjsIntl.srcTypesMod.MessageDescriptor
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcErrorMod {
   
   @JSImport("@formatjs/intl/src/error", "IntlError")
   @js.native
-  class IntlError[T /* <: IntlErrorCode */] protected () extends Error {
+  class IntlError[T /* <: IntlErrorCode */] protected ()
+    extends StObject
+       with Error {
     def this(code: T, message: String) = this()
     def this(code: T, message: String, exception: Error) = this()
     
     val code: T = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@formatjs/intl/src/error", "InvalidConfigError")
@@ -35,7 +42,7 @@ object srcErrorMod {
   class MessageFormatError protected () extends IntlError[FORMAT_ERROR] {
     def this(message: String, locale: String) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor) = this()
-    def this(message: String, locale: String, descriptor: js.UndefOr[scala.Nothing], exception: Error) = this()
+    def this(message: String, locale: String, descriptor: Unit, exception: Error) = this()
     def this(message: String, locale: String, descriptor: MessageDescriptor, exception: Error) = this()
     
     val descriptor: js.UndefOr[MessageDescriptor] = js.native

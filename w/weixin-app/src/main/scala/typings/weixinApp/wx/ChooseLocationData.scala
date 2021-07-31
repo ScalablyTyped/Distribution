@@ -2,31 +2,29 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseLocationData extends StObject {
   
   /**
     * 详细地址
     */
-  var address: String = js.native
+  var address: String
   
   /**
     * 纬度，浮点数，范围为-90~90，负数表示南纬
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * 经度，浮点数，范围为-180~180，负数表示西经
     */
-  var longitude: Double = js.native
+  var longitude: Double
   
   /**
     * 位置名称
     */
-  var name: String = js.native
+  var name: String
 }
 object ChooseLocationData {
   

@@ -2,19 +2,19 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgendaThemeStyle extends CalendarTheme {
+trait AgendaThemeStyle
+  extends StObject
+     with CalendarTheme {
   
-  var agendaDayNumColor: js.UndefOr[String] = js.native
+  var agendaDayNumColor: js.UndefOr[String] = js.undefined
   
-  var agendaDayTextColor: js.UndefOr[String] = js.native
+  var agendaDayTextColor: js.UndefOr[String] = js.undefined
   
-  var agendaKnobColor: js.UndefOr[String] = js.native
+  var agendaKnobColor: js.UndefOr[String] = js.undefined
   
-  var agendaTodayColor: js.UndefOr[String] = js.native
+  var agendaTodayColor: js.UndefOr[String] = js.undefined
 }
 object AgendaThemeStyle {
   

@@ -3,7 +3,6 @@ package typings.sqlite
 import typings.sqlite.interfacesMod.ISqlite.RunResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statementMod {

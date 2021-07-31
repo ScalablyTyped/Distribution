@@ -7,34 +7,34 @@ import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
 import typings.tuyaPanelKit.tuyaPanelKitStrings.key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase>, 'routes'> & {  routes :std.Array<std.Omit<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.Route<string, object | undefined>, 'key'>>} */
-@js.native
-trait OmitNavigationStateParamL extends _ResetState {
+trait OmitNavigationStateParamL
+  extends StObject
+     with _ResetState {
   
-  var history: js.UndefOr[js.Array[_]] = js.native
+  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var key: String = js.native
+  var key: String
   
   var routeNames: js.Array[
     Extract[
       /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String, 
       String
     ]
-  ] = js.native
+  ]
   
   // tslint:disable-next-line array-type
   var routes: js.Array[
     Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key]
-  ] = js.native
+  ]
   
-  var stale: `false` = js.native
+  var stale: `false`
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object OmitNavigationStateParamL {
   
@@ -51,10 +51,9 @@ object OmitNavigationStateParamL {
     routes: js.Array[
       Omit[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]], key]
     ],
-    stale: `false`,
     `type`: String
   ): OmitNavigationStateParamL = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitNavigationStateParamL]
   }
@@ -63,7 +62,7 @@ object OmitNavigationStateParamL {
   implicit class OmitNavigationStateParamLMutableBuilder[Self <: OmitNavigationStateParamL] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

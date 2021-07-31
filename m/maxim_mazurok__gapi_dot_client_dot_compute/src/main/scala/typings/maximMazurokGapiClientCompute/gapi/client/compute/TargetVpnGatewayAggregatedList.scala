@@ -4,39 +4,37 @@ import org.scalablytyped.runtime.TopLevel
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetVpnGatewayAggregatedList extends StObject {
   
   /** [Output Only] Unique identifier for the resource; defined by the server. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** A list of TargetVpnGateway resources. */
   var items: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetVpnGatewaysScopedList}
-    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetVpnGatewayAggregatedList with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetVpnGatewayAggregatedList & TopLevel[js.Any]
+  ] = js.undefined
   
   /** [Output Only] Type of resource. Always compute#targetVpnGateway for target VPN gateways. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for list requests. If the number of results is larger than maxResults, use the nextPageToken as a value for the
     * query parameter pageToken in the next list request. Subsequent list requests will have their own nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Server-defined URL for this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Unreachable resources. */
-  var unreachables: js.UndefOr[js.Array[String]] = js.native
+  var unreachables: js.UndefOr[js.Array[String]] = js.undefined
   
   /** [Output Only] Informational warning message. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object TargetVpnGatewayAggregatedList {
   
@@ -59,7 +57,7 @@ object TargetVpnGatewayAggregatedList {
     def setItems(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.compute.gapi.client.compute.TargetVpnGatewaysScopedList}
-      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetVpnGatewayAggregatedList with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.TargetVpnGatewayAggregatedList & TopLevel[js.Any]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline

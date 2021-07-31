@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
   */
-@js.native
 trait PlusSpeechSpeechRecoginzeEvents extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /**
     * 语音识别错误
@@ -30,7 +28,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * 最终语音识别
@@ -39,7 +37,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var recognition: js.UndefOr[String] = js.native
+  var recognition: js.UndefOr[String] = js.undefined
   
   /**
     * 临时语音识别结果
@@ -48,7 +46,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var recognizing: js.UndefOr[String] = js.native
+  var recognizing: js.UndefOr[String] = js.undefined
   
   /**
     * 开始语音识别
@@ -57,7 +55,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
   /**
     * 音量变化
@@ -66,7 +64,7 @@ trait PlusSpeechSpeechRecoginzeEvents extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/speech.html](http://www.html5plus.org/doc/zh_cn/speech.html)
     */
-  var volumeChange: js.UndefOr[String] = js.native
+  var volumeChange: js.UndefOr[String] = js.undefined
 }
 object PlusSpeechSpeechRecoginzeEvents {
   

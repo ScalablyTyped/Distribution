@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a code defined by a terminology system
   */
-@js.native
-trait Coding extends Element {
+trait Coding
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'userSelected'.
     */
-  var _userSelected: js.UndefOr[Element] = js.native
+  var _userSelected: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Symbol in syntax defined by the system
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
   
   /**
     * Representation defined by the system
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Identity of the terminology system
     */
-  var system: js.UndefOr[uri] = js.native
+  var system: js.UndefOr[uri] = js.undefined
   
   /**
     * If this coding was chosen directly by the user
     */
-  var userSelected: js.UndefOr[Boolean] = js.native
+  var userSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Version of the system - if relevant
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Coding {
   

@@ -2,18 +2,16 @@ package typings.awsSdkClientDynamodbBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCapacityMod {
   
-  @js.native
   trait Capacity extends StObject {
     
     /**
       * <p>The total number of capacity units consumed on a table or an index.</p>
       */
-    var CapacityUnits: js.UndefOr[Double] = js.native
+    var CapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object Capacity {
     

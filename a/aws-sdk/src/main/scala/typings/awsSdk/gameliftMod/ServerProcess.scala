@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerProcess extends StObject {
   
   /**
     * The number of server processes that use this configuration to run concurrently on an instance.
     */
-  var ConcurrentExecutions: PositiveInteger = js.native
+  var ConcurrentExecutions: PositiveInteger
   
   /**
     * The location of the server executable in a custom game build or the name of the Realtime script file that contains the Init() function. Game builds and Realtime scripts are installed on instances at the root:    Windows (for custom game builds only): C:\game. Example: "C:\game\MyGame\server.exe"    Linux: /local/game. Examples: "/local/game/MyGame/server.exe" or "/local/game/MyRealtimeScript.js"  
     */
-  var LaunchPath: NonZeroAndMaxString = js.native
+  var LaunchPath: NonZeroAndMaxString
   
   /**
     * An optional list of parameters to pass to the server executable or Realtime script on launch.
     */
-  var Parameters: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Parameters: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object ServerProcess {
   

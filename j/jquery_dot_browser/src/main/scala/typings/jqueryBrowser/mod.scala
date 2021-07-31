@@ -2,7 +2,6 @@ package typings.jqueryBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -72,10 +71,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait JQueryStatic extends StObject {
       
-      var browser: Matchs = js.native
+      var browser: Matchs
     }
     object JQueryStatic {
       
@@ -93,10 +91,9 @@ object mod {
       }
     }
     
-    @js.native
     trait Window extends StObject {
       
-      var jQBrowser: Matchs = js.native
+      var jQBrowser: Matchs
     }
     object Window {
       

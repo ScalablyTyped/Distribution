@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
   
   /** Metadata common to all Datastore Admin operations. */
-  var common: js.UndefOr[GoogleDatastoreAdminV1CommonMetadata] = js.native
+  var common: js.UndefOr[GoogleDatastoreAdminV1CommonMetadata] = js.undefined
   
   /** The index resource ID that this operation is acting on. */
-  var indexId: js.UndefOr[String] = js.native
+  var indexId: js.UndefOr[String] = js.undefined
   
   /** An estimate of the number of entities processed. */
-  var progressEntities: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.native
+  var progressEntities: js.UndefOr[GoogleDatastoreAdminV1Progress] = js.undefined
 }
 object GoogleDatastoreAdminV1IndexOperationMetadata {
   

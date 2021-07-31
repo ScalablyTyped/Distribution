@@ -2,20 +2,18 @@ package typings.googleapis.cloudshellV1Mod.cloudshellV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message included in the metadata field of operations returned from
   * StartEnvironment.
   */
-@js.native
 trait SchemaStartEnvironmentMetadata extends StObject {
   
   /**
     * Current state of the environment being started.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaStartEnvironmentMetadata {
   

@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobStatistics3 extends StObject {
   
   /**
@@ -14,29 +12,29 @@ trait SchemaJobStatistics3 extends StObject {
     * allowed in the load job configuration, then this number can be less than
     * the total number of bad records present in the input data.
     */
-  var badRecords: js.UndefOr[String] = js.native
+  var badRecords: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Number of bytes of source data in a load job.
     */
-  var inputFileBytes: js.UndefOr[String] = js.native
+  var inputFileBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Number of source files in a load job.
     */
-  var inputFiles: js.UndefOr[String] = js.native
+  var inputFiles: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Size of the loaded data in bytes. Note that while a load
     * job is in the running state, this value may change.
     */
-  var outputBytes: js.UndefOr[String] = js.native
+  var outputBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Number of rows imported in a load job. Note that while an
     * import job is in the running state, this value may change.
     */
-  var outputRows: js.UndefOr[String] = js.native
+  var outputRows: js.UndefOr[String] = js.undefined
 }
 object SchemaJobStatistics3 {
   

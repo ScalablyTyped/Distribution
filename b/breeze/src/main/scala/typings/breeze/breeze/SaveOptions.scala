@@ -2,23 +2,21 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveOptions extends StObject {
   
-  var allowConcurrentSaves: Boolean = js.native
+  var allowConcurrentSaves: Boolean
   
-  var dataService: DataService = js.native
+  var dataService: DataService
   
-  var resourceName: String = js.native
+  var resourceName: String
   
-  def setAsDefault(): SaveOptions = js.native
+  def setAsDefault(): SaveOptions
   
-  var tag: js.Object = js.native
+  var tag: js.Object
   
-  def using(config: SaveOptionsConfiguration): SaveOptions = js.native
+  def `using`(config: SaveOptionsConfiguration): SaveOptions
 }
 object SaveOptions {
   
@@ -29,9 +27,10 @@ object SaveOptions {
     resourceName: String,
     setAsDefault: () => SaveOptions,
     tag: js.Object,
-    using: SaveOptionsConfiguration => SaveOptions
+    `using`: SaveOptionsConfiguration => SaveOptions
   ): SaveOptions = {
-    val __obj = js.Dynamic.literal(allowConcurrentSaves = allowConcurrentSaves.asInstanceOf[js.Any], dataService = dataService.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any], setAsDefault = js.Any.fromFunction0(setAsDefault), tag = tag.asInstanceOf[js.Any], using = js.Any.fromFunction1(using))
+    val __obj = js.Dynamic.literal(allowConcurrentSaves = allowConcurrentSaves.asInstanceOf[js.Any], dataService = dataService.asInstanceOf[js.Any], resourceName = resourceName.asInstanceOf[js.Any], setAsDefault = js.Any.fromFunction0(setAsDefault), tag = tag.asInstanceOf[js.Any])
+    __obj.updateDynamic("using")(js.Any.fromFunction1(`using`))
     __obj.asInstanceOf[SaveOptions]
   }
   

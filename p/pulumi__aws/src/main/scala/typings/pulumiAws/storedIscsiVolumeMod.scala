@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storedIscsiVolumeMod {
@@ -124,6 +123,10 @@ object storedIscsiVolumeMod {
   /* static members */
   object StoredIscsiVolume {
     
+    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StoredIscsiVolume resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -133,75 +136,69 @@ object storedIscsiVolumeMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID]): StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState): StoredIscsiVolume = js.native
-    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState, opts: CustomResourceOptions): StoredIscsiVolume = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState): StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StoredIscsiVolume]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StoredIscsiVolumeState, opts: CustomResourceOptions): StoredIscsiVolume = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StoredIscsiVolume]
     
     /**
       * Returns true if the given object is an instance of StoredIscsiVolume.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/storedIscsiVolume", "StoredIscsiVolume.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/storedIscsiVolume.StoredIscsiVolume */ Boolean]
   }
   
-  @js.native
   trait StoredIscsiVolumeArgs extends StObject {
     
     /**
       * The unique identifier for the gateway local disk that is configured as a stored volume.
       */
-    val diskId: Input[String] = js.native
+    val diskId: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: Input[String] = js.native
+    val gatewayArn: Input[String]
     
     /**
       * `true` to use Amazon S3 server side encryption with your own AWS KMS key, or `false` to use a key managed by Amazon S3. Optional.
       */
-    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when `kmsEncrypted` is `true`.
       */
-    val kmsKey: js.UndefOr[Input[String]] = js.native
+    val kmsKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
       */
-    val networkInterfaceId: Input[String] = js.native
+    val networkInterfaceId: Input[String]
     
     /**
       * Specify this field as `true` if you want to preserve the data on the local disk. Otherwise, specifying this field as false creates an empty volume.
       */
-    val preserveExistingData: Input[Boolean] = js.native
+    val preserveExistingData: Input[Boolean]
     
     /**
       * The snapshot ID of the snapshot to restore as the new stored volume. e.g. `snap-1122aabb`.
       */
-    val snapshotId: js.UndefOr[Input[String]] = js.native
+    val snapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
       */
-    val targetName: Input[String] = js.native
+    val targetName: Input[String]
   }
   object StoredIscsiVolumeArgs {
     
@@ -261,103 +258,102 @@ object storedIscsiVolumeMod {
     }
   }
   
-  @js.native
   trait StoredIscsiVolumeState extends StObject {
     
     /**
       * Volume Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/volume/vol-12345678`.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether mutual CHAP is enabled for the iSCSI target.
       */
-    val chapEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val chapEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The unique identifier for the gateway local disk that is configured as a stored volume.
       */
-    val diskId: js.UndefOr[Input[String]] = js.native
+    val diskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: js.UndefOr[Input[String]] = js.native
+    val gatewayArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * `true` to use Amazon S3 server side encryption with your own AWS KMS key, or `false` to use a key managed by Amazon S3. Optional.
       */
-    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val kmsEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the AWS KMS key used for Amazon S3 server side encryption. This value can only be set when `kmsEncrypted` is `true`.
       */
-    val kmsKey: js.UndefOr[Input[String]] = js.native
+    val kmsKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Logical disk number.
       */
-    val lunNumber: js.UndefOr[Input[Double]] = js.native
+    val lunNumber: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port used to communicate with iSCSI targets.
       */
-    val networkInterfacePort: js.UndefOr[Input[Double]] = js.native
+    val networkInterfacePort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Specify this field as `true` if you want to preserve the data on the local disk. Otherwise, specifying this field as false creates an empty volume.
       */
-    val preserveExistingData: js.UndefOr[Input[Boolean]] = js.native
+    val preserveExistingData: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The snapshot ID of the snapshot to restore as the new stored volume. e.g. `snap-1122aabb`.
       */
-    val snapshotId: js.UndefOr[Input[String]] = js.native
+    val snapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Target Amazon Resource Name (ARN), e.g. `arn:aws:storagegateway:us-east-1:123456789012:gateway/sgw-12345678/target/iqn.1997-05.com.amazon:TargetName`.
       */
-    val targetArn: js.UndefOr[Input[String]] = js.native
+    val targetArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the iSCSI target used by initiators to connect to the target and as a suffix for the target ARN. The target name must be unique across all volumes of a gateway.
       */
-    val targetName: js.UndefOr[Input[String]] = js.native
+    val targetName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway.
       */
-    val volumeAttachmentStatus: js.UndefOr[Input[String]] = js.native
+    val volumeAttachmentStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Volume ID, e.g. `vol-12345678`.
       */
-    val volumeId: js.UndefOr[Input[String]] = js.native
+    val volumeId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the data stored on the volume in bytes.
       */
-    val volumeSizeInBytes: js.UndefOr[Input[Double]] = js.native
+    val volumeSizeInBytes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * indicates the state of the storage volume.
       */
-    val volumeStatus: js.UndefOr[Input[String]] = js.native
+    val volumeStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * indicates the type of the volume.
       */
-    val volumeType: js.UndefOr[Input[String]] = js.native
+    val volumeType: js.UndefOr[Input[String]] = js.undefined
   }
   object StoredIscsiVolumeState {
     

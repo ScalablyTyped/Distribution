@@ -2,25 +2,23 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridSize extends StObject {
   
-  var gridSize: Double = js.native
+  var gridSize: Double
   
-  var id: String = js.native
+  var id: String
   
-  var links: js.Array[Labels] = js.native
+  var links: js.Array[Labels]
   
-  var nodes: js.Array[Ports] = js.native
+  var nodes: js.Array[Ports]
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object GridSize {
   

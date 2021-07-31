@@ -2,61 +2,59 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxPivotDimensionCell...
   */
-@js.native
 trait INxPivotDimensionCell extends StObject {
   
   /**
     * Information about attribute dimensions.
     */
-  var qAttrDims: js.Array[INxAttributeDimValues] = js.native
+  var qAttrDims: js.Array[INxAttributeDimValues]
   
   /**
     * Information about attribute expressions.
     * The array is empty [ ] when there is no attribute expressions.
     * AttrDims: INxAttributeDimValues[];
     */
-  var qAttrExps: js.Array[INxAttributeExpressionValues] = js.native
+  var qAttrExps: js.Array[INxAttributeExpressionValues]
   
   /**
     * If set to true, it means that the cell can be collapsed.
     * This parameter is not returned if it is set to false.
     */
-  var qCanCollapse: Boolean = js.native
+  var qCanCollapse: Boolean
   
   /**
     * If set to true, it means that the cell can be expanded.
     * This parameter is not returned if it is set to false.
     */
-  var qCanExpand: Boolean = js.native
+  var qCanExpand: Boolean
   
   /**
     * Number of elements that are part of the next tail.
     * This number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.
     */
-  var qDown: Double = js.native
+  var qDown: Double
   
   /**
     * Rank number of the value
     * If set to -1, it means that the value is not an element number.
     */
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
   /**
     * Information about sub nodes (or sub cells)
     * The array is empty [ ] when there is no sub nodes.
     */
-  var qSubNodes: js.Array[INxPivotDimensionCell] = js.native
+  var qSubNodes: js.Array[INxPivotDimensionCell]
   
   /**
     * Some text
     */
-  var qText: String = js.native
+  var qText: String
   
   /**
     * Type of the cell
@@ -70,19 +68,19 @@ trait INxPivotDimensionCell extends StObject {
     *   R for NX_DIM_CELL_ROOT. Applies to root node.
     *   U for NX_DIM_CELL_NULL. Applies to Null values in the data matrix.
     */
-  var qType: NxCellType = js.native
+  var qType: NxCellType
   
   /**
     * Number of elements that are part of the previous tail.
     * This number depends on the paging, more particularly it depends on the values defined in qTop and qHeight.
     */
-  var qUp: Double = js.native
+  var qUp: Double
   
   /**
     * Value of the cell
     * Is set to NaN, if the value is not a number.
     */
-  var qValue: Double = js.native
+  var qValue: Double
 }
 object INxPivotDimensionCell {
   

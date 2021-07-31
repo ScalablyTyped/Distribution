@@ -2,7 +2,6 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,29 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * where a single batch handler processes multiple requests from different
   * traces or when the handler receives a request from a different project.
   */
-@js.native
 trait SchemaLink extends StObject {
   
   /**
     * A set of attributes on the link. You have have up to  32 attributes per
     * link.
     */
-  var attributes: js.UndefOr[SchemaAttributes] = js.native
+  var attributes: js.UndefOr[SchemaAttributes] = js.undefined
   
   /**
     * The [SPAN_ID] for a span within a trace.
     */
-  var spanId: js.UndefOr[String] = js.native
+  var spanId: js.UndefOr[String] = js.undefined
   
   /**
     * The [TRACE_ID] for a trace within a project.
     */
-  var traceId: js.UndefOr[String] = js.native
+  var traceId: js.UndefOr[String] = js.undefined
   
   /**
     * The relationship of the current span relative to the linked span.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaLink {
   

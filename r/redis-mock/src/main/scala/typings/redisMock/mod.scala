@@ -6,7 +6,6 @@ import typings.redis.mod.ClientOpts
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,30 +61,22 @@ object mod {
   class ReplyError ()
     extends typings.redis.mod.ReplyError
   
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(port: Double): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(port: Double, host: js.UndefOr[scala.Nothing], options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(port: Double, host: String): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(unix_socket: String): typings.redis.mod.RedisClient = js.native
-  @JSImport("redis-mock", "createClient")
-  @js.native
-  def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = js.native
+  @scala.inline
+  def createClient(): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(options: ClientOpts): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: String): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(port: Double, host: Unit, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(unix_socket: String): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  @scala.inline
+  def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
   
   @JSImport("redis-mock", "debug_mode")
   @js.native
@@ -94,10 +85,8 @@ object mod {
   @scala.inline
   def debugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug_mode")(x.asInstanceOf[js.Any])
   
-  @JSImport("redis-mock", "print")
-  @js.native
-  def print(err: Null, reply: js.Any): Unit = js.native
-  @JSImport("redis-mock", "print")
-  @js.native
-  def print(err: Error, reply: js.Any): Unit = js.native
+  @scala.inline
+  def print(err: Null, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def print(err: Error, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

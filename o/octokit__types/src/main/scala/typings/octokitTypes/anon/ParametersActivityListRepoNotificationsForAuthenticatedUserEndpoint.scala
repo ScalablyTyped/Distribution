@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActivityListRepoNotificationsForAuthent
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint = js.native
+  var parameters: ActivityListRepoNotificationsForAuthenticatedUserEndpoint
   
-  var request: ActivityListRepoNotificationsForAuthenticatedUserRequestOptions = js.native
+  var request: ActivityListRepoNotificationsForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ActivityListRepoNotificationsForAuthenticatedUserResponseData]
 }
 object ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint {
   

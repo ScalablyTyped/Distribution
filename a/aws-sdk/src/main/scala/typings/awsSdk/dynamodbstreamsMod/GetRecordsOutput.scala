@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecordsOutput extends StObject {
   
   /**
     * The next position in the shard from which to start sequentially reading stream records. If set to null, the shard has been closed and the requested iterator will not return any more data.
     */
-  var NextShardIterator: js.UndefOr[ShardIterator] = js.native
+  var NextShardIterator: js.UndefOr[ShardIterator] = js.undefined
   
   /**
     * The stream records from the shard, which were retrieved using the shard iterator.
     */
-  var Records: js.UndefOr[RecordList] = js.native
+  var Records: js.UndefOr[RecordList] = js.undefined
 }
 object GetRecordsOutput {
   

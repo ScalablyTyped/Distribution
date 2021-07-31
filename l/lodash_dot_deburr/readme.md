@@ -11,8 +11,8 @@ The lodash method `_.deburr` exported as a module.
 | Full name          | lodash.deburr |
 | Keywords           | lodash-modularized, deburr |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 10910185 |
+| # dependents       | 51 |
+| # downloads        | 17092820 |
 | # stars            | 0 |
 
 ## Links

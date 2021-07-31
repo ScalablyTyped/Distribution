@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Entitlements")
@@ -32,7 +31,7 @@ class ResourceEntitlements protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEntitlementsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEntitlementsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourceEntitlements protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaEntitlement] = js.native
   def get(callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
   def get(params: ParamsResourceEntitlementsGet): GaxiosPromise[SchemaEntitlement] = js.native
   def get(params: ParamsResourceEntitlementsGet, callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
   def get(
@@ -93,7 +92,7 @@ class ResourceEntitlements protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaEntitlementsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaEntitlementsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntitlementsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntitlementsListResponse] = js.native
   def list(params: ParamsResourceEntitlementsList): GaxiosPromise[SchemaEntitlementsListResponse] = js.native
   def list(
     params: ParamsResourceEntitlementsList,
@@ -130,7 +129,7 @@ class ResourceEntitlements protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaEntitlement] = js.native
   def patch(callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
   def patch(params: ParamsResourceEntitlementsPatch): GaxiosPromise[SchemaEntitlement] = js.native
   def patch(params: ParamsResourceEntitlementsPatch, callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
   def patch(
@@ -163,7 +162,7 @@ class ResourceEntitlements protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaEntitlement] = js.native
   def update(callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntitlement] = js.native
   def update(params: ParamsResourceEntitlementsUpdate): GaxiosPromise[SchemaEntitlement] = js.native
   def update(params: ParamsResourceEntitlementsUpdate, callback: BodyResponseCallback[SchemaEntitlement]): Unit = js.native
   def update(

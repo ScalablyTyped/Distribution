@@ -7,29 +7,30 @@ import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@loadable/component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* Inlined {None <Props>(loadFn : (props : Props): std.Promise<@loadable/component.@loadable/component.DefaultComponent<Props>>, options : @loadable/component.@loadable/component.OptionsWithoutResolver<Props> | undefined): @loadable/component.@loadable/component.LoadableComponent<Props>, None <Props, Module = @loadable/component.@loadable/component.DefaultComponent<Props>>(loadFn : (props : Props): std.Promise<Module>, options : @loadable/component.@loadable/component.OptionsWithResolver<Props, Module>): @loadable/component.@loadable/component.LoadableComponent<Props>} & {  lib :{None <Props, Module>(loadFn : (props : Props): std.Promise<Module>, options : @loadable/component.@loadable/component.OptionsWithoutResolver<Props> | undefined): @loadable/component.@loadable/component.LoadableLibrary<Module>}} */
   object default {
     
-    @JSImport("@loadable/component", JSImport.Default)
-    @js.native
-    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = js.native
-    @JSImport("@loadable/component", JSImport.Default)
-    @js.native
+    @scala.inline
+    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = ^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any]).asInstanceOf[LoadableComponent[Props]]
+    @scala.inline
     def apply[Props](
       loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]],
       options: OptionsWithoutResolver[Props]
-    ): LoadableComponent[Props] = js.native
-    @JSImport("@loadable/component", JSImport.Default)
-    @js.native
+    ): LoadableComponent[Props] = (^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LoadableComponent[Props]]
+    @scala.inline
     def apply[Props, Module](
       loadFn: js.Function1[/* props */ Props, js.Promise[Module]],
       options: OptionsWithResolver[Props, Module]
-    ): LoadableComponent[Props] = js.native
+    ): LoadableComponent[Props] = (^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LoadableComponent[Props]]
+    
     @JSImport("@loadable/component", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -41,27 +42,35 @@ object mod {
     def lib_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lib")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@loadable/component", "loadableReady")
-  @js.native
-  def loadableReady(): js.Promise[Unit] = js.native
-  @JSImport("@loadable/component", "loadableReady")
-  @js.native
-  def loadableReady(done: js.UndefOr[scala.Nothing], options: LoadableReadyOptions): js.Promise[Unit] = js.native
-  @JSImport("@loadable/component", "loadableReady")
-  @js.native
-  def loadableReady(done: js.Function0[_]): js.Promise[Unit] = js.native
-  @JSImport("@loadable/component", "loadableReady")
-  @js.native
-  def loadableReady(done: js.Function0[_], options: LoadableReadyOptions): js.Promise[Unit] = js.native
+  object `lazy` {
+    
+    @scala.inline
+    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = ^.asInstanceOf[js.Dynamic].apply(loadFn.asInstanceOf[js.Any]).asInstanceOf[LoadableComponent[Props]]
+    
+    @JSImport("@loadable/component", "lazy")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def lib[Module](loadFn: js.Function1[/* props */ js.Object, js.Promise[Module]]): LoadableLibrary[Module] = ^.asInstanceOf[js.Dynamic].applyDynamic("lib")(loadFn.asInstanceOf[js.Any]).asInstanceOf[LoadableLibrary[Module]]
+  }
+  
+  @scala.inline
+  def loadableReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadableReady")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadableReady(done: js.Function0[js.Any]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadableReady")(done.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadableReady(done: js.Function0[js.Any], options: LoadableReadyOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadableReady")(done.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadableReady(done: Unit, options: LoadableReadyOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadableReady")(done.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   type ComponentResolver[Props, Module] = js.Function2[/* module */ Module, /* props */ Props, ComponentType[Props]]
   
   type DefaultComponent[Props] = ComponentType[Props] | DefaultImportedComponent[Props]
   
-  @js.native
   trait DefaultImportedComponent[Props] extends StObject {
     
-    var default: ComponentType[Props] = js.native
+    var default: ComponentType[Props]
   }
   object DefaultImportedComponent {
     
@@ -72,14 +81,14 @@ object mod {
     }
     
     @scala.inline
-    implicit class DefaultImportedComponentMutableBuilder[Self <: DefaultImportedComponent[_], Props] (val x: Self with DefaultImportedComponent[Props]) extends AnyVal {
+    implicit class DefaultImportedComponentMutableBuilder[Self <: DefaultImportedComponent[?], Props] (val x: Self & DefaultImportedComponent[Props]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: ComponentType[Props]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
-  type LoadableComponent[Props] = (ComponentType[Props with Fallback]) with LoadableComponentMethods[Props]
+  type LoadableComponent[Props] = (ComponentType[Props & Fallback]) & LoadableComponentMethods[Props]
   
   @js.native
   trait LoadableComponentMethods[Props] extends StObject {
@@ -91,12 +100,11 @@ object mod {
     def preload(props: Props): Unit = js.native
   }
   
-  type LoadableLibrary[Module] = ComponentType[Children[Module]] with Module with LoadableComponentMethods[js.Object]
+  type LoadableLibrary[Module] = ComponentType[Children[Module]] & Module & LoadableComponentMethods[js.Object]
   
-  @js.native
   trait LoadableReadyOptions extends StObject {
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
   }
   object LoadableReadyOptions {
     
@@ -117,10 +125,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options[Props, Module] extends OptionsWithoutResolver[Props] {
+  trait Options[Props, Module]
+    extends StObject
+       with OptionsWithoutResolver[Props] {
     
-    var resolveComponent: js.UndefOr[ComponentResolver[Props, Module]] = js.native
+    var resolveComponent: js.UndefOr[ComponentResolver[Props, Module]] = js.undefined
   }
   object Options {
     
@@ -131,7 +140,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_, _], Props, Module] (val x: Self with (Options[Props, Module])) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?, ?], Props, Module] (val x: Self & (Options[Props, Module])) extends AnyVal {
       
       @scala.inline
       def setResolveComponent(value: (Module, Props) => ComponentType[Props]): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction2(value))
@@ -141,10 +150,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsWithResolver[Props, Module] extends OptionsWithoutResolver[Props] {
+  trait OptionsWithResolver[Props, Module]
+    extends StObject
+       with OptionsWithoutResolver[Props] {
     
-    var resolveComponent: ComponentResolver[Props, Module] = js.native
+    var resolveComponent: ComponentResolver[Props, Module]
   }
   object OptionsWithResolver {
     
@@ -155,21 +165,20 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsWithResolverMutableBuilder[Self <: OptionsWithResolver[_, _], Props, Module] (val x: Self with (OptionsWithResolver[Props, Module])) extends AnyVal {
+    implicit class OptionsWithResolverMutableBuilder[Self <: OptionsWithResolver[?, ?], Props, Module] (val x: Self & (OptionsWithResolver[Props, Module])) extends AnyVal {
       
       @scala.inline
       def setResolveComponent(value: (Module, Props) => ComponentType[Props]): Self = StObject.set(x, "resolveComponent", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait OptionsWithoutResolver[Props] extends StObject {
     
-    var cacheKey: js.UndefOr[js.Function1[/* props */ Props, _]] = js.native
+    var cacheKey: js.UndefOr[js.Function1[/* props */ Props, js.Any]] = js.undefined
     
-    var fallback: js.UndefOr[Element] = js.native
+    var fallback: js.UndefOr[Element] = js.undefined
     
-    var ssr: js.UndefOr[Boolean] = js.native
+    var ssr: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsWithoutResolver {
     
@@ -180,10 +189,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsWithoutResolverMutableBuilder[Self <: OptionsWithoutResolver[_], Props] (val x: Self with OptionsWithoutResolver[Props]) extends AnyVal {
+    implicit class OptionsWithoutResolverMutableBuilder[Self <: OptionsWithoutResolver[?], Props] (val x: Self & OptionsWithoutResolver[Props]) extends AnyVal {
       
       @scala.inline
-      def setCacheKey(value: /* props */ Props => _): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
+      def setCacheKey(value: /* props */ Props => js.Any): Self = StObject.set(x, "cacheKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
@@ -200,16 +209,5 @@ object mod {
       @scala.inline
       def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     }
-  }
-  
-  object `lazy` {
-    
-    @JSImport("@loadable/component", "lazy")
-    @js.native
-    def apply[Props](loadFn: js.Function1[/* props */ Props, js.Promise[DefaultComponent[Props]]]): LoadableComponent[Props] = js.native
-    
-    @JSImport("@loadable/component", "lazy.lib")
-    @js.native
-    def lib[Module](loadFn: js.Function1[/* props */ js.Object, js.Promise[Module]]): LoadableLibrary[Module] = js.native
   }
 }

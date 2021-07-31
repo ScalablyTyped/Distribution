@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a RuntimeConfig. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new RuntimeConfig.
   * @param [properties] Properties to set
   */
-class RuntimeConfig () extends IRuntimeConfig {
+class RuntimeConfig ()
+  extends StObject
+     with IRuntimeConfig {
   def this(properties: IRuntimeConfig) = this()
   
   /** RuntimeConfig isDryRun. */
@@ -44,18 +45,20 @@ class RuntimeConfig () extends IRuntimeConfig {
 }
 object RuntimeConfig {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new RuntimeConfig instance using the specified properties.
     * @param [properties] Properties to set
     * @returns RuntimeConfig instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.create")
-  @js.native
-  def create(): RuntimeConfig = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.create")
-  @js.native
-  def create(properties: IRuntimeConfig): RuntimeConfig = js.native
+  @scala.inline
+  def create(): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RuntimeConfig]
+  @scala.inline
+  def create(properties: IRuntimeConfig): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
   /**
     * Decodes a RuntimeConfig message from the specified reader or buffer.
@@ -66,18 +69,14 @@ object RuntimeConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decode")
-  @js.native
-  def decode(reader: Reader): RuntimeConfig = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): RuntimeConfig = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): RuntimeConfig = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): RuntimeConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): RuntimeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuntimeConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): RuntimeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuntimeConfig]
   
   /**
     * Decodes a RuntimeConfig message from the specified reader or buffer, length delimited.
@@ -87,12 +86,10 @@ object RuntimeConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): RuntimeConfig = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): RuntimeConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
   /**
     * Encodes the specified RuntimeConfig message. Does not implicitly {@link io.cucumber.messages.RuntimeConfig.verify|verify} messages.
@@ -101,12 +98,10 @@ object RuntimeConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.encode")
-  @js.native
-  def encode(message: IRuntimeConfig): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.encode")
-  @js.native
-  def encode(message: IRuntimeConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IRuntimeConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IRuntimeConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified RuntimeConfig message, length delimited. Does not implicitly {@link io.cucumber.messages.RuntimeConfig.verify|verify} messages.
@@ -115,12 +110,10 @@ object RuntimeConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IRuntimeConfig): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IRuntimeConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IRuntimeConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IRuntimeConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a RuntimeConfig message from a plain object. Also converts values to their respective internal types.
@@ -128,9 +121,8 @@ object RuntimeConfig {
     * @returns RuntimeConfig
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): RuntimeConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): RuntimeConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuntimeConfig]
   
   /**
     * Creates a plain object from a RuntimeConfig message. Also converts values to other types if specified.
@@ -139,12 +131,10 @@ object RuntimeConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.toObject")
-  @js.native
-  def toObject(message: RuntimeConfig): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.toObject")
-  @js.native
-  def toObject(message: RuntimeConfig, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: RuntimeConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: RuntimeConfig, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a RuntimeConfig message.
@@ -152,7 +142,6 @@ object RuntimeConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.RuntimeConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

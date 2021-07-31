@@ -2,22 +2,20 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/text/text.ITextProps> */
-@js.native
 trait PartialITextProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var ellipsize: js.UndefOr[Boolean] = js.native
+  var ellipsize: js.UndefOr[Boolean] = js.undefined
   
   var tagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialITextProps {
   

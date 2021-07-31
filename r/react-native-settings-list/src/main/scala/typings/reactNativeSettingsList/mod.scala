@@ -11,7 +11,6 @@ import typings.reactNativeSettingsList.reactNativeSettingsListStrings.Bottom
 import typings.reactNativeSettingsList.reactNativeSettingsListStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,19 +32,18 @@ object mod {
       extends Component[ItemProps, js.Object, js.Any]
   }
   
-  @js.native
   trait HeaderProps extends StObject {
     
     /**
       * default: 1
       */
-    var headerNumberOfLines: js.UndefOr[Double] = js.native
+    var headerNumberOfLines: js.UndefOr[Double] = js.undefined
     
-    var headerRef: js.UndefOr[js.Function0[Unit]] = js.native
+    var headerRef: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var headerStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var headerStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var headerText: js.UndefOr[String] = js.native
+    var headerText: js.UndefOr[String] = js.undefined
   }
   object HeaderProps {
     
@@ -87,126 +85,125 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemProps extends StObject {
     
-    var arrowIcon: js.UndefOr[ReactNode] = js.native
+    var arrowIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var arrowStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var arrowStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var authPropsPW: js.UndefOr[js.Object] = js.native
+    var authPropsPW: js.UndefOr[js.Object] = js.undefined
     
-    var authPropsUser: js.UndefOr[js.Object] = js.native
+    var authPropsUser: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Individual background color. Can be globally set in the parent. Will become Deprecated
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /* Gives opens to hide specific borders */
-    var borderHide: js.UndefOr[Top | Bottom | Both] = js.native
+    var borderHide: js.UndefOr[Top | Bottom | Both] = js.undefined
     
     /**
       * Editable Right Side Style
       */
-    var editableTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var editableTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /**
       * Enable or disable the > arrow at the end of the setting item.
       * Default: true
       */
-    var hasNavArrow: js.UndefOr[Boolean] = js.native
+    var hasNavArrow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable a Switch component
       */
-    var hasSwitch: js.UndefOr[Boolean] = js.native
+    var hasSwitch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Icon displayed on the left of the settings item
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Allows for the item to become an auth item
       */
-    var isAuth: js.UndefOr[Boolean] = js.native
+    var isAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Item Box Style
       */
-    var itemBoxStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var itemBoxStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemRef: js.UndefOr[js.Function0[Unit]] = js.native
+    var itemRef: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Individual item width.  Can be globally set in the parent.  Will become deprecated
       */
-    var itemWidth: js.UndefOr[Double] = js.native
+    var itemWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Item on long press callback.
       */
-    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Item on press callback.
       */
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Right side content
       */
-    var rightSideContent: js.UndefOr[ReactNode] = js.native
+    var rightSideContent: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Right Side Style
       */
-    var rightSideStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var rightSideStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * On value change callback
       */
-    var switchOnValueChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var switchOnValueChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Switch props
       */
-    var switchProps: js.UndefOr[js.Object] = js.native
+    var switchProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Switch state
       */
-    var switchState: js.UndefOr[Boolean] = js.native
+    var switchState: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Title being displayed
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * Title Box Style
       */
-    var titleBoxStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var titleBoxStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * Right side information on the setting item
       */
-    var titleInfo: js.UndefOr[String] = js.native
+    var titleInfo: js.UndefOr[String] = js.undefined
     
     /**
       * If 'Bottom'; info is placed beneath the title
       */
-    var titleInfoPosition: js.UndefOr[String] = js.native
+    var titleInfoPosition: js.UndefOr[String] = js.undefined
     
-    var titleInfoStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var titleInfoStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /**
       * Individual underlay click color.  Can be globally set in the parent.
       */
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object ItemProps {
     
@@ -418,37 +415,36 @@ object mod {
   }
   type SettingsList = Component[SettingsListProps, js.Object, js.Any]
   
-  @js.native
   trait SettingsListProps extends StObject {
     
     /**
       * default: white
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * default: black
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /**
       * default: 50
       */
-    var defaultItemSize: js.UndefOr[Double] = js.native
+    var defaultItemSize: js.UndefOr[Double] = js.undefined
     
-    var defaultTitleInfoPosition: js.UndefOr[String] = js.native
+    var defaultTitleInfoPosition: js.UndefOr[String] = js.undefined
     
     /**
       * default: {fontSize: 16}
       */
-    var defaultTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var defaultTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var scrollViewProps: js.UndefOr[js.Object] = js.native
+    var scrollViewProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * default: transparent
       */
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object SettingsListProps {
     

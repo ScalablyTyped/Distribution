@@ -3,7 +3,6 @@ package typings.expectPuppeteer
 import typings.expectPuppeteer.mod._ExpectPolling
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expectPuppeteerStrings {
@@ -19,12 +18,16 @@ object expectPuppeteerStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait mutation extends _ExpectPolling
+  sealed trait mutation
+    extends StObject
+       with _ExpectPolling
   @scala.inline
   def mutation: mutation = "mutation".asInstanceOf[mutation]
   
   @js.native
-  sealed trait raf extends _ExpectPolling
+  sealed trait raf
+    extends StObject
+       with _ExpectPolling
   @scala.inline
   def raf: raf = "raf".asInstanceOf[raf]
   

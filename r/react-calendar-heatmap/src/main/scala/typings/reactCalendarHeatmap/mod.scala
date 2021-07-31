@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,49 +13,48 @@ object mod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var classForValue: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var classForValue: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
-    var endDate: js.UndefOr[String | Double | Date] = js.native
+    var endDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var gutterSize: js.UndefOr[Double] = js.native
+    var gutterSize: js.UndefOr[Double] = js.undefined
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var monthLabels: js.UndefOr[js.Array[String]] = js.native
+    var monthLabels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var numDays: js.UndefOr[Double] = js.native
+    var numDays: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ js.Any, Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ js.Any, Unit]] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ js.Any, Unit]] = js.native
+    var onMouseOver: js.UndefOr[js.Function2[/* e */ js.Any, /* value */ js.Any, Unit]] = js.undefined
     
-    var showMonthLabels: js.UndefOr[Boolean] = js.native
+    var showMonthLabels: js.UndefOr[Boolean] = js.undefined
     
-    var showOutOfRangeDays: js.UndefOr[Boolean] = js.native
+    var showOutOfRangeDays: js.UndefOr[Boolean] = js.undefined
     
-    var showWeekdayLabels: js.UndefOr[Boolean] = js.native
+    var showWeekdayLabels: js.UndefOr[Boolean] = js.undefined
     
-    var startDate: js.UndefOr[String | Double | Date] = js.native
+    var startDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var titleForValue: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var titleForValue: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
-    var tooltipDataAttrs: js.UndefOr[js.Object] = js.native
+    var tooltipDataAttrs: js.UndefOr[js.Object] = js.undefined
     
-    var transformDayElement: js.UndefOr[js.Function3[/* rect */ js.Any, /* value */ js.Any, /* index */ Double, _]] = js.native
+    var transformDayElement: js.UndefOr[js.Function3[/* rect */ js.Any, /* value */ js.Any, /* index */ Double, js.Any]] = js.undefined
     
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any]
     
-    var weekdayLabels: js.UndefOr[js.Array[String]] = js.native
+    var weekdayLabels: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Props {
     
     @scala.inline
-    def apply(values: js.Array[_]): Props = {
+    def apply(values: js.Array[js.Any]): Props = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
@@ -65,7 +63,7 @@ object mod {
     implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setClassForValue(value: /* value */ js.Any => _): Self = StObject.set(x, "classForValue", js.Any.fromFunction1(value))
+      def setClassForValue(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "classForValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setClassForValueUndefined: Self = StObject.set(x, "classForValue", js.undefined)
@@ -146,7 +144,7 @@ object mod {
       def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
       
       @scala.inline
-      def setTitleForValue(value: /* value */ js.Any => _): Self = StObject.set(x, "titleForValue", js.Any.fromFunction1(value))
+      def setTitleForValue(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "titleForValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTitleForValueUndefined: Self = StObject.set(x, "titleForValue", js.undefined)
@@ -158,13 +156,13 @@ object mod {
       def setTooltipDataAttrsUndefined: Self = StObject.set(x, "tooltipDataAttrs", js.undefined)
       
       @scala.inline
-      def setTransformDayElement(value: (/* rect */ js.Any, /* value */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "transformDayElement", js.Any.fromFunction3(value))
+      def setTransformDayElement(value: (/* rect */ js.Any, /* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "transformDayElement", js.Any.fromFunction3(value))
       
       @scala.inline
       def setTransformDayElementUndefined: Self = StObject.set(x, "transformDayElement", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))

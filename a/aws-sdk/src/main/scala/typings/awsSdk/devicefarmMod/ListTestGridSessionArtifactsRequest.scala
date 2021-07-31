@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridSessionArtifactsRequest extends StObject {
   
   /**
     * The maximum number of results to be returned by a request.
     */
-  var maxResult: js.UndefOr[MaxPageSize] = js.native
+  var maxResult: js.UndefOr[MaxPageSize] = js.undefined
   
   /**
     * Pagination token.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ARN of a TestGridSession. 
     */
-  var sessionArn: DeviceFarmArn = js.native
+  var sessionArn: DeviceFarmArn
   
   /**
     * Limit results to a specified type of artifact.
     */
-  var `type`: js.UndefOr[TestGridSessionArtifactCategory] = js.native
+  var `type`: js.UndefOr[TestGridSessionArtifactCategory] = js.undefined
 }
 object ListTestGridSessionArtifactsRequest {
   

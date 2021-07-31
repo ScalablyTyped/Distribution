@@ -3,17 +3,17 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.data.proxy.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMemoryProxy extends IClient {
+trait IMemoryProxy
+  extends StObject
+     with IClient {
   
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var enablePaging: js.UndefOr[Boolean] = js.native
+  var enablePaging: js.UndefOr[Boolean] = js.undefined
 }
 object IMemoryProxy {
   

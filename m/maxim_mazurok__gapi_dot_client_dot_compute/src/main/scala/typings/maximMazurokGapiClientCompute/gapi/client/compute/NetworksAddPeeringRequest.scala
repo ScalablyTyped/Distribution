@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworksAddPeeringRequest extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait NetworksAddPeeringRequest extends StObject {
     * peered networks. Currently this field should always be true since Google Compute Engine will automatically create and manage subnetwork routes between two networks when peering
     * state is ACTIVE.
     */
-  var autoCreateRoutes: js.UndefOr[Boolean] = js.native
+  var autoCreateRoutes: js.UndefOr[Boolean] = js.undefined
   
   /** Name of the peering, which should conform to RFC1035. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Network peering parameters. In order to specify route policies for peering using import and export custom routes, you must specify all peering related parameters (name, peer
     * network, exchange_subnet_routes) in the network_peering field. The corresponding fields in NetworksAddPeeringRequest will be deprecated soon.
     */
-  var networkPeering: js.UndefOr[NetworkPeering] = js.native
+  var networkPeering: js.UndefOr[NetworkPeering] = js.undefined
   
   /**
     * URL of the peer network. It can be either full URL or partial URL. The peer network may belong to a different project. If the partial URL does not contain project, it is assumed
     * that the peer network is in the same project as the current network.
     */
-  var peerNetwork: js.UndefOr[String] = js.native
+  var peerNetwork: js.UndefOr[String] = js.undefined
 }
 object NetworksAddPeeringRequest {
   

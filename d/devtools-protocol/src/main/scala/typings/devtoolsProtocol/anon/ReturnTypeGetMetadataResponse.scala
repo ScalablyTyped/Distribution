@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.IndexedDB.GetMetadataRequest
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.GetMetadataResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetMetadataResponse extends StObject {
   
-  var paramsType: js.Array[GetMetadataRequest] = js.native
+  var paramsType: js.Array[GetMetadataRequest]
   
-  var returnType: GetMetadataResponse = js.native
+  var returnType: GetMetadataResponse
 }
 object ReturnTypeGetMetadataResponse {
   

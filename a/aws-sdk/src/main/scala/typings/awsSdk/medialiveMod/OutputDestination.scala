@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDestination extends StObject {
   
   /**
     * User-specified id. This is used in an output group or an output.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * Destination settings for a MediaPackage output; one destination for both encoders.
     */
-  var MediaPackageSettings: js.UndefOr[listOfMediaPackageOutputDestinationSettings] = js.native
+  var MediaPackageSettings: js.UndefOr[listOfMediaPackageOutputDestinationSettings] = js.undefined
   
   /**
     * Destination settings for a Multiplex output; one destination for both encoders.
     */
-  var MultiplexSettings: js.UndefOr[MultiplexProgramChannelDestinationSettings] = js.native
+  var MultiplexSettings: js.UndefOr[MultiplexProgramChannelDestinationSettings] = js.undefined
   
   /**
     * Destination settings for a standard output; one destination for each redundant encoder.
     */
-  var Settings: js.UndefOr[listOfOutputDestinationSettings] = js.native
+  var Settings: js.UndefOr[listOfOutputDestinationSettings] = js.undefined
 }
 object OutputDestination {
   

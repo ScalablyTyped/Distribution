@@ -2,22 +2,20 @@ package typings.winrtUwp.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevicePairingActivatedEventArgs extends StObject {
   
-  var deviceInformation: js.Any = js.native
+  var deviceInformation: js.Any
   
   /* unmapped type */
-  var kind: js.Any = js.native
+  var kind: js.Any
   
   /* unmapped type */
-  var previousExecutionState: js.Any = js.native
+  var previousExecutionState: js.Any
   
   /* unmapped type */
-  var splashScreen: js.Any = js.native
+  var splashScreen: js.Any
 }
 object DevicePairingActivatedEventArgs {
   

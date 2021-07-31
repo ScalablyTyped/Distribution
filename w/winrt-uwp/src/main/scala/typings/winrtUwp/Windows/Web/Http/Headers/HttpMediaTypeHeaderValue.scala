@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of the Content-Type HTTP header on the HTTP content in a request or a response. */
-@js.native
 trait HttpMediaTypeHeaderValue extends StObject {
   
   /** Gets or sets the character set of the entity-body used in the Content-Type HTTP header. */
-  var charSet: String = js.native
+  var charSet: String
   
   /** Gets or sets the media-type of the entity-body used in the Content-Type HTTP header. */
-  var mediaType: String = js.native
+  var mediaType: String
   
   /** Gets a set of parameters included in the Content-Type HTTP header. */
-  var parameters: IVector[HttpNameValueHeaderValue] = js.native
+  var parameters: IVector[HttpNameValueHeaderValue]
 }
 object HttpMediaTypeHeaderValue {
   

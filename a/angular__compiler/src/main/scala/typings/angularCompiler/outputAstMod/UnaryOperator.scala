@@ -2,7 +2,6 @@ package typings.angularCompiler.outputAstMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait UnaryOperator extends StObject
 object UnaryOperator extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnaryOperator with Double] = js.native
+  def apply(value: Double): js.UndefOr[UnaryOperator & Double] = js.native
   
   @js.native
-  sealed trait Minus extends UnaryOperator
-  /* 0 */ val Minus: typings.angularCompiler.outputAstMod.UnaryOperator.Minus with Double = js.native
+  sealed trait Minus
+    extends StObject
+       with UnaryOperator
+  /* 0 */ val Minus: typings.angularCompiler.outputAstMod.UnaryOperator.Minus & Double = js.native
   
   @js.native
-  sealed trait Plus extends UnaryOperator
-  /* 1 */ val Plus: typings.angularCompiler.outputAstMod.UnaryOperator.Plus with Double = js.native
+  sealed trait Plus
+    extends StObject
+       with UnaryOperator
+  /* 1 */ val Plus: typings.angularCompiler.outputAstMod.UnaryOperator.Plus & Double = js.native
 }

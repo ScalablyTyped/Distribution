@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigSource extends StObject {
   
   /** Set of source configuration files that are used to generate a service configuration (`google.api.Service`). */
-  var files: js.UndefOr[js.Array[ConfigFile]] = js.native
+  var files: js.UndefOr[js.Array[ConfigFile]] = js.undefined
   
   /** A unique ID for a specific instance of this message, typically assigned by the client for tracking purpose. If empty, the server may choose to generate one instead. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object ConfigSource {
   

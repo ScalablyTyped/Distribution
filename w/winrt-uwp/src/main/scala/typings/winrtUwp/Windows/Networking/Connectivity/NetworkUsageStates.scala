@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the desired state of the connection profile for which usage data is returned by the method GetNetworkUsageAsync . */
-@js.native
 trait NetworkUsageStates extends StObject {
   
   /** Defines the desired roaming state of the network connection. */
-  var roaming: TriStates = js.native
+  var roaming: TriStates
   
   /** Defines the desired sharing state of the network connection. */
-  var shared: TriStates = js.native
+  var shared: TriStates
 }
 object NetworkUsageStates {
   

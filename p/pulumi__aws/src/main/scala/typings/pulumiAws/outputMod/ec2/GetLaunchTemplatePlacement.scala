@@ -2,25 +2,23 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplatePlacement extends StObject {
   
-  var affinity: String = js.native
+  var affinity: String
   
-  var availabilityZone: String = js.native
+  var availabilityZone: String
   
-  var groupName: String = js.native
+  var groupName: String
   
-  var hostId: String = js.native
+  var hostId: String
   
-  var partitionNumber: Double = js.native
+  var partitionNumber: Double
   
-  var spreadDomain: String = js.native
+  var spreadDomain: String
   
-  var tenancy: String = js.native
+  var tenancy: String
 }
 object GetLaunchTemplatePlacement {
   

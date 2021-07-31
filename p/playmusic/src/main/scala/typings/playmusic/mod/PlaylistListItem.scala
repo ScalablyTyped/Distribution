@@ -2,37 +2,35 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistListItem extends StObject {
   
-  var accessControlled: js.UndefOr[Boolean] = js.native
+  var accessControlled: js.UndefOr[Boolean] = js.undefined
   
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var lastModifiedTimestamp: js.UndefOr[String] = js.native
+  var lastModifiedTimestamp: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var ownerName: js.UndefOr[String] = js.native
+  var ownerName: js.UndefOr[String] = js.undefined
   
-  var ownerProfilePhotoUrl: js.UndefOr[String] = js.native
+  var ownerProfilePhotoUrl: js.UndefOr[String] = js.undefined
   
-  var recentTimestamp: js.UndefOr[String] = js.native
+  var recentTimestamp: js.UndefOr[String] = js.undefined
   
-  var shareToken: js.UndefOr[String] = js.native
+  var shareToken: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PlaylistListItem {
   

@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,7 +49,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @publicApi
   */
-@js.native
 trait ChangeDetectorRef extends StObject {
   
   /**
@@ -59,7 +57,7 @@ trait ChangeDetectorRef extends StObject {
     * Use in development mode to verify that running change detection doesn't introduce
     * other changes.
     */
-  def checkNoChanges(): Unit = js.native
+  def checkNoChanges(): Unit
   
   /**
     * Detaches this view from the change-detection tree.
@@ -73,7 +71,7 @@ trait ChangeDetectorRef extends StObject {
     * <!-- TODO: Add a live demo once ref.detectChanges is merged into master -->
     *
     */
-  def detach(): Unit = js.native
+  def detach(): Unit
   
   /**
     * Checks this view and its children. Use in combination with {@link ChangeDetectorRef#detach
@@ -84,7 +82,7 @@ trait ChangeDetectorRef extends StObject {
     * <!-- TODO: Add a live demo once ref.detectChanges is merged into master -->
     *
     */
-  def detectChanges(): Unit = js.native
+  def detectChanges(): Unit
   
   /**
     * When a view uses the {@link ChangeDetectionStrategy#OnPush OnPush} (checkOnce)
@@ -98,7 +96,7 @@ trait ChangeDetectorRef extends StObject {
     * <!-- TODO: Add a link to a chapter on OnPush components -->
     *
     */
-  def markForCheck(): Unit = js.native
+  def markForCheck(): Unit
   
   /**
     * Re-attaches the previously detached view to the change detection tree.
@@ -107,7 +105,7 @@ trait ChangeDetectorRef extends StObject {
     * <!-- TODO: Add a link to a chapter on detach/reattach/local digest -->
     *
     */
-  def reattach(): Unit = js.native
+  def reattach(): Unit
 }
 object ChangeDetectorRef {
   

@@ -2,13 +2,13 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellRichTextValue extends _CellValue {
+trait CellRichTextValue
+  extends StObject
+     with _CellValue {
   
-  var richText: js.Array[RichText] = js.native
+  var richText: js.Array[RichText]
 }
 object CellRichTextValue {
   

@@ -2,37 +2,35 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeStyles extends StObject {
   
-  var backgroundColor: js.UndefOr[Boolean] = js.native
+  var backgroundColor: js.UndefOr[Boolean] = js.undefined
   
-  var border: js.UndefOr[Boolean] = js.native
+  var border: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   
-  var cursor: js.UndefOr[Boolean] = js.native
+  var cursor: js.UndefOr[Boolean] = js.undefined
   
-  var fontFamily: js.UndefOr[Boolean] = js.native
+  var fontFamily: js.UndefOr[Boolean] = js.undefined
   
-  var fontSize: js.UndefOr[Boolean] = js.native
+  var fontSize: js.UndefOr[Boolean] = js.undefined
   
-  var fontStyle: js.UndefOr[Boolean] = js.native
+  var fontStyle: js.UndefOr[Boolean] = js.undefined
   
-  var fontWeight: js.UndefOr[Boolean] = js.native
+  var fontWeight: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[Boolean] = js.native
+  var margin: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Boolean] = js.undefined
   
-  var outline: js.UndefOr[Boolean] = js.native
+  var outline: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Boolean] = js.native
+  var padding: js.UndefOr[Boolean] = js.undefined
   
-  var textShadow: js.UndefOr[Boolean] = js.native
+  var textShadow: js.UndefOr[Boolean] = js.undefined
 }
 object SafeStyles {
   

@@ -3,17 +3,15 @@ package typings.slug
 import typings.slug.mod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Pretty extends StObject {
     
-    var pretty: Mode = js.native
+    var pretty: Mode
     
-    var rfc3986: Mode = js.native
+    var rfc3986: Mode
   }
   object Pretty {
     

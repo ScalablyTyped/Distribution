@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkArea extends StObject {
   
-  var text: String = js.native
+  var text: String
   
-  var url: String = js.native
+  var url: String
 }
 object LinkArea {
   

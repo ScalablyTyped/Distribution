@@ -3,31 +3,29 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 import typings.watsonDeveloperCloud.v1GeneratedMod.CreateCollectionConstants.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createCollection` operation. */
-@js.native
 trait CreateCollectionParams extends StObject {
   
   /** The ID of the configuration in which the collection is to be created. */
-  var configuration_id: js.UndefOr[String] = js.native
+  var configuration_id: js.UndefOr[String] = js.undefined
   
   /** A description of the collection. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The language of the documents stored in the collection, in the form of an ISO 639-1 language code. */
-  var language: js.UndefOr[Language | String] = js.native
+  var language: js.UndefOr[Language | String] = js.undefined
   
   /** The name of the collection to be created. */
-  var name: String = js.native
+  var name: String
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object CreateCollectionParams {
   

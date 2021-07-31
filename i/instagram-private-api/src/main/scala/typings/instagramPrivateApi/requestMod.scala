@@ -11,7 +11,6 @@ import typings.rxjs.mod.Subject
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestMod {
@@ -28,12 +27,12 @@ object requestMod {
     var defaults: Partial[Options] = js.native
     
     @JSName("end$")
-    var end$: Subject[_] = js.native
+    var end$: Subject[js.Any] = js.native
     
     @JSName("error$")
     var error$: Subject[IgClientError] = js.native
     
-    /* protected */ def faultTolerantRequest(options: Options): js.Promise[_] = js.native
+    /* protected */ def faultTolerantRequest(options: Options): js.Promise[js.Any] = js.native
     
     def getDefaultHeaders(): AcceptEncoding = js.native
     
@@ -72,12 +71,11 @@ object requestMod {
   
   type Payload = StringDictionary[js.Any] | String
   
-  @js.native
   trait SignedPost extends StObject {
     
-    var ig_sig_key_version: String = js.native
+    var ig_sig_key_version: String
     
-    var signed_body: String = js.native
+    var signed_body: String
   }
   object SignedPost {
     

@@ -3,18 +3,16 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediapackage {
   
-  @js.native
   trait ChannelHlsIngest extends StObject {
     
     /**
       * A list of the ingest endpoints
       */
-    var ingestEndpoints: js.UndefOr[Input[js.Array[Input[ChannelHlsIngestIngestEndpoint]]]] = js.native
+    var ingestEndpoints: js.UndefOr[Input[js.Array[Input[ChannelHlsIngestIngestEndpoint]]]] = js.undefined
   }
   object ChannelHlsIngest {
     
@@ -38,23 +36,22 @@ object mediapackage {
     }
   }
   
-  @js.native
   trait ChannelHlsIngestIngestEndpoint extends StObject {
     
     /**
       * The password
       */
-    var password: js.UndefOr[Input[String]] = js.native
+    var password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL
       */
-    var url: js.UndefOr[Input[String]] = js.native
+    var url: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The username
       */
-    var username: js.UndefOr[Input[String]] = js.native
+    var username: js.UndefOr[Input[String]] = js.undefined
   }
   object ChannelHlsIngestIngestEndpoint {
     

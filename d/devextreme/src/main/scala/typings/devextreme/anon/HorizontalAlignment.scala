@@ -7,25 +7,23 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HorizontalAlignment extends StObject {
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
   
-  var margin: js.UndefOr[Bottom] = js.native
+  var margin: js.UndefOr[Bottom] = js.undefined
   
-  var placeholderSize: js.UndefOr[Double] = js.native
+  var placeholderSize: js.UndefOr[Double] = js.undefined
   
-  var subtitle: js.UndefOr[Font | String] = js.native
+  var subtitle: js.UndefOr[Font | String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | top] = js.native
+  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
 }
 object HorizontalAlignment {
   

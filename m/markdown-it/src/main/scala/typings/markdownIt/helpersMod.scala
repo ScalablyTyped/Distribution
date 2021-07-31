@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.markdownIt.parseLinkDestinationMod.ParseResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod extends Shortcut {
@@ -13,26 +12,52 @@ object helpersMod extends Shortcut {
   @js.native
   val ^ : Helpers = js.native
   
-  @js.native
   trait Helpers extends StObject {
     
-    def parseLinkDestination(str: String, pos: Double, max: Double): ParseResult = js.native
+    def parseLinkDestination(str: String, pos: Double, max: Double): ParseResult
     @JSName("parseLinkDestination")
-    var parseLinkDestination_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult] = js.native
+    var parseLinkDestination_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult]
     
-    def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double): Double = js.native
-    def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double, disableNested: Boolean): Double = js.native
+    def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double): Double
+    def parseLinkLabel(state: typings.markdownIt.stateInlineMod.^, start: Double, disableNested: Boolean): Double
     @JSName("parseLinkLabel")
     var parseLinkLabel_Original: js.Function3[
         /* state */ typings.markdownIt.stateInlineMod.^, 
         /* start */ Double, 
         /* disableNested */ js.UndefOr[Boolean], 
         Double
-      ] = js.native
+      ]
     
-    def parseLinkTitle(str: String, pos: Double, max: Double): ParseResult = js.native
+    def parseLinkTitle(str: String, pos: Double, max: Double): ParseResult
     @JSName("parseLinkTitle")
-    var parseLinkTitle_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult] = js.native
+    var parseLinkTitle_Original: js.Function3[/* str */ String, /* pos */ Double, /* max */ Double, ParseResult]
+  }
+  object Helpers {
+    
+    @scala.inline
+    def apply(
+      parseLinkDestination: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult,
+      parseLinkLabel: (/* state */ typings.markdownIt.stateInlineMod.^, /* start */ Double, /* disableNested */ js.UndefOr[Boolean]) => Double,
+      parseLinkTitle: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult
+    ): Helpers = {
+      val __obj = js.Dynamic.literal(parseLinkDestination = js.Any.fromFunction3(parseLinkDestination), parseLinkLabel = js.Any.fromFunction3(parseLinkLabel), parseLinkTitle = js.Any.fromFunction3(parseLinkTitle))
+      __obj.asInstanceOf[Helpers]
+    }
+    
+    @scala.inline
+    implicit class HelpersMutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setParseLinkDestination(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkDestination", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setParseLinkLabel(
+        value: (/* state */ typings.markdownIt.stateInlineMod.^, /* start */ Double, /* disableNested */ js.UndefOr[Boolean]) => Double
+      ): Self = StObject.set(x, "parseLinkLabel", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setParseLinkTitle(value: (/* str */ String, /* pos */ Double, /* max */ Double) => ParseResult): Self = StObject.set(x, "parseLinkTitle", js.Any.fromFunction3(value))
+    }
   }
   
   type _To = Helpers

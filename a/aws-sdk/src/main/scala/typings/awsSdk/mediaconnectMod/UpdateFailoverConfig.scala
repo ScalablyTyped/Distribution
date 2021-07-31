@@ -2,18 +2,16 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFailoverConfig extends StObject {
   
   /**
     * Recovery window time to look for dash-7 packets
     */
-  var RecoveryWindow: js.UndefOr[integer] = js.native
+  var RecoveryWindow: js.UndefOr[integer] = js.undefined
   
-  var State: js.UndefOr[typings.awsSdk.mediaconnectMod.State] = js.native
+  var State: js.UndefOr[typings.awsSdk.mediaconnectMod.State] = js.undefined
 }
 object UpdateFailoverConfig {
   

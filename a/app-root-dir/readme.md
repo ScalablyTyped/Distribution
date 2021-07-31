@@ -11,8 +11,8 @@ Simple module to infer the root directory of the currently running node applicat
 | Full name          | app-root-dir |
 | Keywords           | modules, path, node, app, root, directory |
 | # releases         | 0 |
-| # dependents       | 158 |
-| # downloads        | 66080674 |
+| # dependents       | 165 |
+| # downloads        | 84089278 |
 | # stars            | 2 |
 
 ## Links

@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the manufacturer for the current device. */
-@js.native
 trait StoreHardwareManufacturerInfo extends StObject {
   
   /** Gets the hardware manufacture ID for the current device. */
-  var hardwareManufacturerId: String = js.native
+  var hardwareManufacturerId: String
   
   /** Gets the name of the hardware manufacturer for the current device. */
-  var manufacturerName: String = js.native
+  var manufacturerName: String
   
   /** Gets the model name for the current device. */
-  var modelName: String = js.native
+  var modelName: String
   
   /** Gets the ID of the Windows Store content modifier. */
-  var storeContentModifierId: String = js.native
+  var storeContentModifierId: String
 }
 object StoreHardwareManufacturerInfo {
   

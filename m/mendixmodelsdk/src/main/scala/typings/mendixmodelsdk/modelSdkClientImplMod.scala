@@ -18,14 +18,13 @@ import typings.mendixmodelsdk.transportInterfacesMod.IWorkingCopy
 import typings.mendixmodelsdk.transportInterfacesMod.LockType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelSdkClientImplMod {
   
   @JSImport("mendixmodelsdk/dist/ModelSdkClientImpl", "ModelSdkClientImpl")
   @js.native
-  class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel with IT */] protected () extends StObject {
+  class ModelSdkClientImpl[IT /* <: IAbstractModel */, CT /* <: AbstractModel & IT */] protected () extends StObject {
     def this(connectionConfig: ISdkConfig, modelConstructor: Instantiable[CT, IT]) = this()
     
     def checkAccess(workingCopyId: String, memberOpenId: String): js.Promise[Boolean] = js.native

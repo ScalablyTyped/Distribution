@@ -2,36 +2,34 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowSummary extends StObject {
   
   /**
     * The type of evaluation.    SUMMARY - The average metrics across all windows.    COMPUTED - The metrics for the specified window.  
     */
-  var EvaluationType: js.UndefOr[typings.awsSdk.forecastserviceMod.EvaluationType] = js.native
+  var EvaluationType: js.UndefOr[typings.awsSdk.forecastserviceMod.EvaluationType] = js.undefined
   
   /**
     * The number of data points within the window.
     */
-  var ItemCount: js.UndefOr[Integer] = js.native
+  var ItemCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * Provides metrics used to evaluate the performance of a predictor.
     */
-  var Metrics: js.UndefOr[typings.awsSdk.forecastserviceMod.Metrics] = js.native
+  var Metrics: js.UndefOr[typings.awsSdk.forecastserviceMod.Metrics] = js.undefined
   
   /**
     * The timestamp that defines the end of the window.
     */
-  var TestWindowEnd: js.UndefOr[Timestamp] = js.native
+  var TestWindowEnd: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The timestamp that defines the start of the window.
     */
-  var TestWindowStart: js.UndefOr[Timestamp] = js.native
+  var TestWindowStart: js.UndefOr[Timestamp] = js.undefined
 }
 object WindowSummary {
   

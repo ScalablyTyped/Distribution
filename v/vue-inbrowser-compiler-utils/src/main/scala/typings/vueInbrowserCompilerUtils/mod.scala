@@ -6,36 +6,32 @@ import typings.vueInbrowserCompilerUtils.parseComponentMod.VsgSFCDescriptor
 import typings.vueInbrowserCompilerUtils.typesMod.ComponentDoc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vue-inbrowser-compiler-utils", "adaptCreateElement")
+  @JSImport("vue-inbrowser-compiler-utils", JSImport.Namespace)
   @js.native
-  def adaptCreateElement(h: CreateElementFunction): CreateElementFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-inbrowser-compiler-utils", "addScopedStyle")
-  @js.native
-  def addScopedStyle(css: String, suffix: String): Unit = js.native
+  @scala.inline
+  def adaptCreateElement(h: CreateElementFunction): CreateElementFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptCreateElement")(h.asInstanceOf[js.Any]).asInstanceOf[CreateElementFunction]
   
-  @JSImport("vue-inbrowser-compiler-utils", "cleanName")
-  @js.native
-  def cleanName(name: String): String = js.native
+  @scala.inline
+  def addScopedStyle(css: String, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addScopedStyle")(css.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vue-inbrowser-compiler-utils", "concatenate")
-  @js.native
-  def concatenate(src: StringDictionary[js.Any], otherObj: StringDictionary[js.Any]*): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vue-inbrowser-compiler-utils", "getDefaultExample")
-  @js.native
-  def getDefaultExample(doc: ComponentDoc): String = js.native
+  @scala.inline
+  def concatenate(src: StringDictionary[js.Any], otherObj: StringDictionary[js.Any]*): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(src.asInstanceOf[js.Any], otherObj.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @JSImport("vue-inbrowser-compiler-utils", "isCodeVueSfc")
-  @js.native
-  def isCodeVueSfc(code: String): Boolean = js.native
+  @scala.inline
+  def getDefaultExample(doc: ComponentDoc): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExample")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vue-inbrowser-compiler-utils", "parseComponent")
-  @js.native
-  def parseComponent(code: String): VsgSFCDescriptor = js.native
+  @scala.inline
+  def isCodeVueSfc(code: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeVueSfc")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parseComponent(code: String): VsgSFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(code.asInstanceOf[js.Any]).asInstanceOf[VsgSFCDescriptor]
 }

@@ -3,17 +3,15 @@ package typings.jqueryTimeago
 import typings.jqueryTimeago.anon.Day
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeagoSetings extends StObject {
   
-  var allowFuture: js.UndefOr[Boolean] = js.native
+  var allowFuture: js.UndefOr[Boolean] = js.undefined
   
-  var refreshMillis: js.UndefOr[Double] = js.native
+  var refreshMillis: js.UndefOr[Double] = js.undefined
   
-  var strings: js.UndefOr[Day] = js.native
+  var strings: js.UndefOr[Day] = js.undefined
 }
 object TimeagoSetings {
   

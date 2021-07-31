@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configuration specifies which methods change the names of the system
   * parameters.
   */
-@js.native
 trait SchemaSystemParameters extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait SchemaSystemParameters extends StObject {
     * http_header: Api-Key2  **NOTE:** All service configuration rules follow
     * &quot;last one wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaSystemParameterRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaSystemParameterRule]] = js.undefined
 }
 object SchemaSystemParameters {
   

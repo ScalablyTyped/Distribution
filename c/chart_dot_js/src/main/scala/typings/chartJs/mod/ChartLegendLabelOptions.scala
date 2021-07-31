@@ -2,31 +2,29 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegendLabelOptions extends StObject {
   
-  var boxWidth: js.UndefOr[Double] = js.native
+  var boxWidth: js.UndefOr[Double] = js.undefined
   
-  var filter: js.UndefOr[js.Function2[/* legendItem */ ChartLegendLabelItem, /* data */ ChartData, _]] = js.native
+  var filter: js.UndefOr[
+    js.Function2[/* legendItem */ ChartLegendLabelItem, /* data */ ChartData, js.Any]
+  ] = js.undefined
   
-  var fontColor: js.UndefOr[ChartColor] = js.native
+  var fontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var generateLabels: js.UndefOr[
-    js.Function1[/* chart */ typings.chartJs.mod.Chart, js.Array[ChartLegendLabelItem]]
-  ] = js.native
+  var generateLabels: js.UndefOr[js.Function1[/* chart */ Chart, js.Array[ChartLegendLabelItem]]] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var usePointStyle: js.UndefOr[Boolean] = js.native
+  var usePointStyle: js.UndefOr[Boolean] = js.undefined
 }
 object ChartLegendLabelOptions {
   
@@ -46,7 +44,7 @@ object ChartLegendLabelOptions {
     def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
     
     @scala.inline
-    def setFilter(value: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => _): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    def setFilter(value: (/* legendItem */ ChartLegendLabelItem, /* data */ ChartData) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
@@ -79,7 +77,7 @@ object ChartLegendLabelOptions {
     def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setGenerateLabels(value: /* chart */ typings.chartJs.mod.Chart => js.Array[ChartLegendLabelItem]): Self = StObject.set(x, "generateLabels", js.Any.fromFunction1(value))
+    def setGenerateLabels(value: /* chart */ Chart => js.Array[ChartLegendLabelItem]): Self = StObject.set(x, "generateLabels", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGenerateLabelsUndefined: Self = StObject.set(x, "generateLabels", js.undefined)

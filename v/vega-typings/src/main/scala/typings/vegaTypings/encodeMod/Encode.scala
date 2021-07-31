@@ -2,26 +2,24 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega-typings.vega-typings/types/spec/encode.EncodeEntryName, T>> */
-@js.native
 trait Encode[T] extends StObject {
   
-  var enter: js.UndefOr[T] = js.native
+  var enter: js.UndefOr[T] = js.undefined
   
-  var exit: js.UndefOr[T] = js.native
+  var exit: js.UndefOr[T] = js.undefined
   
-  var hover: js.UndefOr[T] = js.native
+  var hover: js.UndefOr[T] = js.undefined
   
-  var leave: js.UndefOr[T] = js.native
+  var leave: js.UndefOr[T] = js.undefined
   
-  var release: js.UndefOr[T] = js.native
+  var release: js.UndefOr[T] = js.undefined
   
-  var select: js.UndefOr[T] = js.native
+  var select: js.UndefOr[T] = js.undefined
   
-  var update: js.UndefOr[T] = js.native
+  var update: js.UndefOr[T] = js.undefined
 }
 object Encode {
   
@@ -32,7 +30,7 @@ object Encode {
   }
   
   @scala.inline
-  implicit class EncodeMutableBuilder[Self <: Encode[_], T] (val x: Self with Encode[T]) extends AnyVal {
+  implicit class EncodeMutableBuilder[Self <: Encode[?], T] (val x: Self & Encode[T]) extends AnyVal {
     
     @scala.inline
     def setEnter(value: T): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])

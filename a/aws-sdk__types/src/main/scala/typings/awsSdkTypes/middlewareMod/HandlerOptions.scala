@@ -2,16 +2,14 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandlerOptions extends StObject {
   
   /**
     * A unique name to refer to a middleware
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Handlers are ordered using a "step" that describes the stage of command
@@ -42,13 +40,13 @@ trait HandlerOptions extends StObject {
     *
     * @default 'initialize'
     */
-  var step: js.UndefOr[Step] = js.native
+  var step: js.UndefOr[Step] = js.undefined
   
   /**
     * A list of strings to any that identify the general purpose or important
     * characteristics of a given handler.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HandlerOptions {
   

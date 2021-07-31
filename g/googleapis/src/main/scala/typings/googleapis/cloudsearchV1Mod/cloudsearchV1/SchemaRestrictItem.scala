@@ -2,47 +2,45 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information relevant only to a restrict entry. NextId: 12
   */
-@js.native
 trait SchemaRestrictItem extends StObject {
   
   /**
     * LINT.ThenChange(//depot/google3/java/com/google/apps/search/quality/itemsuggest/utils/SubtypeRerankingUtils.java)
     */
-  var driveFollowUpRestrict: js.UndefOr[SchemaDriveFollowUpRestrict] = js.native
+  var driveFollowUpRestrict: js.UndefOr[SchemaDriveFollowUpRestrict] = js.undefined
   
-  var driveLocationRestrict: js.UndefOr[SchemaDriveLocationRestrict] = js.native
+  var driveLocationRestrict: js.UndefOr[SchemaDriveLocationRestrict] = js.undefined
   
   /**
     * LINT.IfChange Drive Types.
     */
-  var driveMimeTypeRestrict: js.UndefOr[SchemaDriveMimeTypeRestrict] = js.native
+  var driveMimeTypeRestrict: js.UndefOr[SchemaDriveMimeTypeRestrict] = js.undefined
   
-  var driveTimeSpanRestrict: js.UndefOr[SchemaDriveTimeSpanRestrict] = js.native
+  var driveTimeSpanRestrict: js.UndefOr[SchemaDriveTimeSpanRestrict] = js.undefined
   
-  var gmailActionRestrict: js.UndefOr[SchemaGmailActionRestrict] = js.native
+  var gmailActionRestrict: js.UndefOr[SchemaGmailActionRestrict] = js.undefined
   
-  var gmailAttachmentRestrict: js.UndefOr[SchemaGmailAttachmentRestrict] = js.native
+  var gmailAttachmentRestrict: js.UndefOr[SchemaGmailAttachmentRestrict] = js.undefined
   
   /**
     * Gmail Types.
     */
-  var gmailFolderRestrict: js.UndefOr[SchemaGmailFolderRestrict] = js.native
+  var gmailFolderRestrict: js.UndefOr[SchemaGmailFolderRestrict] = js.undefined
   
-  var gmailIntelligentRestrict: js.UndefOr[SchemaGmailIntelligentRestrict] = js.native
+  var gmailIntelligentRestrict: js.UndefOr[SchemaGmailIntelligentRestrict] = js.undefined
   
-  var gmailTimeRestrict: js.UndefOr[SchemaGmailTimeRestrict] = js.native
+  var gmailTimeRestrict: js.UndefOr[SchemaGmailTimeRestrict] = js.undefined
   
   /**
     * The search restrict (e.g. &quot;after:2017-09-11
     * before:2017-09-12&quot;).
     */
-  var searchOperator: js.UndefOr[String] = js.native
+  var searchOperator: js.UndefOr[String] = js.undefined
 }
 object SchemaRestrictItem {
   

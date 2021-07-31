@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batchMod {
@@ -29,11 +28,15 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: JobArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: JobArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object Job {
+      
+      @JSImport("@pulumi/kubernetes/batch", "v1.Job")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing Job resource's state with the given name, ID, and optional extra
@@ -43,20 +46,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1.Job.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.jobMod.Job = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v1.Job.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.jobMod.Job = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.jobMod.Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.jobMod.Job]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.jobMod.Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.jobMod.Job]
       
       /**
         * Returns true if the given object is an instance of Job.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1.Job.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/job.Job */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/job.Job */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/job.Job */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/batch", "v1.JobList")
@@ -72,11 +72,15 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: JobListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: JobListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object JobList {
+      
+      @JSImport("@pulumi/kubernetes/batch", "v1.JobList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing JobList resource's state with the given name, ID, and optional extra
@@ -86,20 +90,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1.JobList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.jobListMod.JobList = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v1.JobList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.jobListMod.JobList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.jobListMod.JobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.jobListMod.JobList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.jobListMod.JobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.jobListMod.JobList]
       
       /**
         * Returns true if the given object is an instance of JobList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1.JobList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1/jobList.JobList */ Boolean]
     }
   }
   
@@ -118,11 +119,15 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: CronJobArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: CronJobArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object CronJob {
+      
+      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJob")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing CronJob resource's state with the given name, ID, and optional extra
@@ -132,20 +137,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJob.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.cronJobMod.CronJob = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJob.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.cronJobMod.CronJob = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.cronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.cronJobMod.CronJob]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.cronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.cronJobMod.CronJob]
       
       /**
         * Returns true if the given object is an instance of CronJob.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJob.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJob.CronJob */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJobList")
@@ -161,11 +163,15 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: CronJobListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: CronJobListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object CronJobList {
+      
+      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJobList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing CronJobList resource's state with the given name, ID, and optional extra
@@ -175,20 +181,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJobList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.cronJobListMod.CronJobList = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJobList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.cronJobListMod.CronJobList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.cronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.cronJobListMod.CronJobList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.cronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.cronJobListMod.CronJobList]
       
       /**
         * Returns true if the given object is an instance of CronJobList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v1beta1.CronJobList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v1beta1/cronJobList.CronJobList */ Boolean]
     }
   }
   
@@ -207,7 +210,7 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.v2alpha1CronJobMod.CronJobArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.v2alpha1CronJobMod.CronJobArgs,
@@ -217,6 +220,10 @@ object batchMod {
     /* static members */
     object CronJob {
       
+      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJob")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing CronJob resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -225,20 +232,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJob.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJob.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v2alpha1CronJobMod.CronJob]
       
       /**
         * Returns true if the given object is an instance of CronJob.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJob.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJob.CronJob */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJob.CronJob */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJob.CronJob */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJobList")
@@ -254,7 +258,7 @@ object batchMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobListArgs,
@@ -264,6 +268,10 @@ object batchMod {
     /* static members */
     object CronJobList {
       
+      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJobList")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing CronJobList resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -272,20 +280,17 @@ object batchMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJobList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = js.native
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJobList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v2alpha1CronJobListMod.CronJobList]
       
       /**
         * Returns true if the given object is an instance of CronJobList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/batch", "v2alpha1.CronJobList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean]
     }
   }
 }

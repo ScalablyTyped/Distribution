@@ -4,22 +4,22 @@ import typings.marked.markedStrings.space
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Space extends Token {
+trait Space
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var `type`: space = js.native
+  var `type`: space
 }
 object Space {
   
   @scala.inline
-  def apply(raw: String, `type`: space): Space = {
+  def apply(raw: String): Space = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("space")
     __obj.asInstanceOf[Space]
   }
   

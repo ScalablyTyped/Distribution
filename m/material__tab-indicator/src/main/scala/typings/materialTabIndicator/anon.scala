@@ -3,19 +3,17 @@ package typings.materialTabIndicator
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIVE extends StObject {
     
-    var ACTIVE: String = js.native
+    var ACTIVE: String
     
-    var FADE: String = js.native
+    var FADE: String
     
-    var NO_TRANSITION: String = js.native
+    var NO_TRANSITION: String
   }
   object ACTIVE {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CONTENTSELECTOR extends StObject {
     
-    var CONTENT_SELECTOR: String = js.native
+    var CONTENT_SELECTOR: String
   }
   object CONTENTSELECTOR {
     
@@ -61,16 +58,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tab-indicator.@material/tab-indicator/adapter.MDCTabIndicatorAdapter> */
-  @js.native
   trait PartialMDCTabIndicatorAda extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var computeContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var computeContentClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setContentStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.native
+    var setContentStyleProperty: js.UndefOr[js.Function2[/* propName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTabIndicatorAda {
     

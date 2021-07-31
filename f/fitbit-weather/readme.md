@@ -12,7 +12,7 @@ This library permits to retrieve weather data from the device
 | Keywords           | fitbitdev |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 224 |
+| # downloads        | 543 |
 | # stars            | 0 |
 
 ## Links

@@ -2,30 +2,28 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List Organization Units operation in Directory
   * API.
   */
-@js.native
 trait SchemaOrgUnits extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * List of user objects.
     */
-  var organizationUnits: js.UndefOr[js.Array[SchemaOrgUnit]] = js.native
+  var organizationUnits: js.UndefOr[js.Array[SchemaOrgUnit]] = js.undefined
 }
 object SchemaOrgUnits {
   

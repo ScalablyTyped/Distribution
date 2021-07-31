@@ -3,17 +3,15 @@ package typings.libp2pGossipsub.anon
 import typings.node.NodeJS.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var _intervalId: js.UndefOr[Timeout] = js.native
+  var _intervalId: js.UndefOr[Timeout] = js.undefined
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  def runPeriodically(fn: js.Function0[Unit], period: Double): Unit = js.native
+  def runPeriodically(fn: js.Function0[Unit], period: Double): Unit
 }
 object Cancel {
   

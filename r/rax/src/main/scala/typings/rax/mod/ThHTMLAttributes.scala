@@ -7,21 +7,21 @@ import typings.rax.raxStrings.left
 import typings.rax.raxStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ThHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var align: js.UndefOr[left | center | right | justify | char] = js.native
+  var align: js.UndefOr[left | center | right | justify | char] = js.undefined
   
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
-  var headers: js.UndefOr[String] = js.native
+  var headers: js.UndefOr[String] = js.undefined
   
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object ThHTMLAttributes {
   
@@ -32,7 +32,7 @@ object ThHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ThHTMLAttributesMutableBuilder[Self <: ThHTMLAttributes[_], T] (val x: Self with ThHTMLAttributes[T]) extends AnyVal {
+  implicit class ThHTMLAttributesMutableBuilder[Self <: ThHTMLAttributes[?], T] (val x: Self & ThHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAlign(value: left | center | right | justify | char): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

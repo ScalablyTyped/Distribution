@@ -3,12 +3,11 @@ package typings.xlsx.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sheet
-  extends /**
+  extends StObject
+     with /**
   * Indexing with a cell address string maps to a cell object
   * Special keys start with '!'
   */
@@ -16,15 +15,15 @@ trait Sheet
   
   /** Page Margins */
   @JSName("!margins")
-  var Exclamationmarkmargins: js.UndefOr[MarginInfo] = js.native
+  var Exclamationmarkmargins: js.UndefOr[MarginInfo] = js.undefined
   
   /** Sheet Range */
   @JSName("!ref")
-  var Exclamationmarkref: js.UndefOr[String] = js.native
+  var Exclamationmarkref: js.UndefOr[String] = js.undefined
   
   /** Sheet type */
   @JSName("!type")
-  var Exclamationmarktype: js.UndefOr[SheetType] = js.native
+  var Exclamationmarktype: js.UndefOr[SheetType] = js.undefined
 }
 object Sheet {
   

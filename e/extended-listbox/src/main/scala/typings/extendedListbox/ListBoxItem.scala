@@ -2,35 +2,33 @@ package typings.extendedListbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxItem extends StObject {
   
   /** list of childItems */
-  var childItems: js.UndefOr[js.Array[String | ListBoxItem]] = js.native
+  var childItems: js.UndefOr[js.Array[String | ListBoxItem]] = js.undefined
   
   /** determines if the item should be clickable */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** determines if the item has childItems */
-  var groupHeader: js.UndefOr[Boolean] = js.native
+  var groupHeader: js.UndefOr[Boolean] = js.undefined
   
   /** unique identifier, if not set it will be generated */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** index position from the item in the list; only used for manual addItem api calls */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** display text or id of the parent; only used for manual addItem api calls */
-  var parentGroupId: js.UndefOr[String] = js.native
+  var parentGroupId: js.UndefOr[String] = js.undefined
   
   /** determines if the item is selected */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /** display text */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ListBoxItem {
   

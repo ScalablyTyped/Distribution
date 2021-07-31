@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClassifierRequest extends StObject {
   
   /**
     * A CsvClassifier object specifying the classifier to create.
     */
-  var CsvClassifier: js.UndefOr[CreateCsvClassifierRequest] = js.native
+  var CsvClassifier: js.UndefOr[CreateCsvClassifierRequest] = js.undefined
   
   /**
     * A GrokClassifier object specifying the classifier to create.
     */
-  var GrokClassifier: js.UndefOr[CreateGrokClassifierRequest] = js.native
+  var GrokClassifier: js.UndefOr[CreateGrokClassifierRequest] = js.undefined
   
   /**
     * A JsonClassifier object specifying the classifier to create.
     */
-  var JsonClassifier: js.UndefOr[CreateJsonClassifierRequest] = js.native
+  var JsonClassifier: js.UndefOr[CreateJsonClassifierRequest] = js.undefined
   
   /**
     * An XMLClassifier object specifying the classifier to create.
     */
-  var XMLClassifier: js.UndefOr[CreateXMLClassifierRequest] = js.native
+  var XMLClassifier: js.UndefOr[CreateXMLClassifierRequest] = js.undefined
 }
 object CreateClassifierRequest {
   

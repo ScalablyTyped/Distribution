@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TtmlDestinationSettings extends StObject {
   
   /**
     * Pass through style and position information from a TTML-like input source (TTML, SMPTE-TT) to the TTML output.
     */
-  var StylePassthrough: js.UndefOr[TtmlStylePassthrough] = js.native
+  var StylePassthrough: js.UndefOr[TtmlStylePassthrough] = js.undefined
 }
 object TtmlDestinationSettings {
   

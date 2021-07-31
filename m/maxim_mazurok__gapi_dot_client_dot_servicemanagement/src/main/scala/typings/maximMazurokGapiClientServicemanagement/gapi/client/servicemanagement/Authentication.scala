@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authentication extends StObject {
   
   /** Defines a set of authentication providers that a service supports. */
-  var providers: js.UndefOr[js.Array[AuthProvider]] = js.native
+  var providers: js.UndefOr[js.Array[AuthProvider]] = js.undefined
   
   /** A list of authentication rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order. */
-  var rules: js.UndefOr[js.Array[AuthenticationRule]] = js.native
+  var rules: js.UndefOr[js.Array[AuthenticationRule]] = js.undefined
 }
 object Authentication {
   

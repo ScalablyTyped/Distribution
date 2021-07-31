@@ -3,7 +3,6 @@ package typings.jqueryCookie
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,7 +31,7 @@ trait JQueryStatic extends StObject {
   /**
     * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
     */
-  def cookie(name: String, converter: js.Function1[/* value */ String, _]): js.Any = js.native
+  def cookie(name: String, converter: js.Function1[/* value */ String, js.Any]): js.Any = js.native
   /**
     * Sets a cookie
     * @param name The name of the cookie to set

@@ -10,9 +10,9 @@ Encapsulated tokens (encrypted and mac'ed objects)
 | ------------------ | :-------------: |
 | Full name          | @hapi/iron |
 | Keywords           | authentication, encryption, data integrity |
-| # releases         | 8 |
-| # dependents       | 23 |
-| # downloads        | 11129294 |
+| # releases         | 7 |
+| # dependents       | 29 |
+| # downloads        | 15025860 |
 | # stars            | 0 |
 
 ## Links

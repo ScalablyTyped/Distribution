@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IngestMessageResponse extends StObject {
   
   /** HL7v2 ACK message. */
-  var hl7Ack: js.UndefOr[String] = js.native
+  var hl7Ack: js.UndefOr[String] = js.undefined
   
   /** Created message resource. */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
 }
 object IngestMessageResponse {
   

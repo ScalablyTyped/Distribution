@@ -5,17 +5,17 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FAIcon extends Widget {
+trait FAIcon
+  extends StObject
+     with Widget {
   
-  var color: String = js.native
+  var color: String
   
-  var iconName: String = js.native
+  var iconName: String
   
-  var size: String = js.native
+  var size: String
 }
 object FAIcon {
   

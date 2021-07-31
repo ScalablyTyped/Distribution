@@ -14,7 +14,6 @@ import typings.nodeHtmlParser.typeMod.NodeType
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -200,14 +199,13 @@ object anon {
   }
   
   /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.native
+    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     
@@ -241,22 +239,21 @@ object anon {
   }
   
   /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> & {  noFix :false} */
-  @js.native
   trait PartialOptionsnoFixfalse extends StObject {
     
-    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.native
+    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
     
-    var noFix: `false` = js.native
+    var noFix: `false`
   }
   object PartialOptionsnoFixfalse {
     
     @scala.inline
-    def apply(noFix: `false`): PartialOptionsnoFixfalse = {
-      val __obj = js.Dynamic.literal(noFix = noFix.asInstanceOf[js.Any])
+    def apply(): PartialOptionsnoFixfalse = {
+      val __obj = js.Dynamic.literal(noFix = false)
       __obj.asInstanceOf[PartialOptionsnoFixfalse]
     }
     
@@ -287,22 +284,21 @@ object anon {
   }
   
   /* Inlined std.Partial<node-html-parser.node-html-parser/dist/nodes/html.Options> & {  noFix :true} */
-  @js.native
   trait PartialOptionsnoFixtrue extends StObject {
     
-    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var blockTextElements: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTagName: js.UndefOr[Boolean] = js.native
+    var lowerCaseTagName: js.UndefOr[Boolean] = js.undefined
     
-    var noFix: `true` = js.native
+    var noFix: `true`
   }
   object PartialOptionsnoFixtrue {
     
     @scala.inline
-    def apply(noFix: `true`): PartialOptionsnoFixtrue = {
-      val __obj = js.Dynamic.literal(noFix = noFix.asInstanceOf[js.Any])
+    def apply(): PartialOptionsnoFixtrue = {
+      val __obj = js.Dynamic.literal(noFix = true)
       __obj.asInstanceOf[PartialOptionsnoFixtrue]
     }
     
@@ -332,10 +328,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Valid extends StObject {
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Valid {
     

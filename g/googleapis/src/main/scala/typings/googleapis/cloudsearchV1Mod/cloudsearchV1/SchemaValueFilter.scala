@@ -2,10 +2,8 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaValueFilter extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaValueFilter extends StObject {
     * in your schema. The query filters the results for the property values
     * that are greater than or less than  the supplied value in the query.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
   
   /**
     * The value to be compared with.
     */
-  var value: js.UndefOr[SchemaValue] = js.native
+  var value: js.UndefOr[SchemaValue] = js.undefined
 }
 object SchemaValueFilter {
   

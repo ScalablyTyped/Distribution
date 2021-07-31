@@ -3,7 +3,6 @@ package typings.oracledb.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -12,36 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://oracle.github.io/node-oracledb/doc/api.html#aqoptions
   * @since 4.0
   */
-@js.native
 trait DequeueOptions extends StObject {
   
   /** Condition that must be satisfied in order for a message to be dequeued. */
-  var condition: String = js.native
+  var condition: String
   
   /** Name of the consumer that is dequeuing messages. */
-  var consumerName: String = js.native
+  var consumerName: String
   
   /** Correlation to use when dequeuing. */
-  var correlation: String = js.native
+  var correlation: String
   
   /** Mode to use for dequeuing messages. It can be any one of the AQ_DEQ_MODE constants. */
-  var mode: Double = js.native
+  var mode: Double
   
   /** Unique identifier specifying the message to be dequeued. */
-  var msgId: Buffer = js.native
+  var msgId: Buffer
   
   /** Position in the queue of the message that is to be dequeued. It can be any one of the AQ_DEQ_NAV constants. */
-  var navigation: Double = js.native
+  var navigation: Double
   
   /** Transformation that will take place on messages when they are dequeued. */
-  var transformation: String = js.native
+  var transformation: String
   
   /** Defines whether the dequeue occurs in the current transaction or as a separate transaction. It can be any one of the AQ_VISIBILITY constants. */
-  var visibility: Double = js.native
+  var visibility: Double
   
   /** Number of seconds to wait for a message matching the search criteria to become available. It can be any one of the AQ_DEQ wait constants. */
   @JSName("wait")
-  var wait_FDequeueOptions: Double = js.native
+  var wait_FDequeueOptions: Double
 }
 object DequeueOptions {
   

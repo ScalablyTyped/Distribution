@@ -3,15 +3,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentDeploymentInput extends DeploymentInput {
+trait AgentDeploymentInput
+  extends StObject
+     with DeploymentInput {
   
-  var imageId: Double = js.native
+  var imageId: Double
   
-  var parallelExecution: ExecutionInput = js.native
+  var parallelExecution: ExecutionInput
 }
 object AgentDeploymentInput {
   
@@ -19,7 +19,7 @@ object AgentDeploymentInput {
   def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     enableAccessToken: Boolean,
     imageId: Double,
     jobCancelTimeoutInMinutes: Double,

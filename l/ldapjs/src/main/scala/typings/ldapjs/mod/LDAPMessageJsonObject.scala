@@ -3,18 +3,17 @@ package typings.ldapjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LDAPMessageJsonObject
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
-  var controls: js.Array[Control] = js.native
+  var controls: js.Array[Control]
   
-  var messageID: Double = js.native
+  var messageID: Double
   
-  var protocolOp: js.UndefOr[String] = js.native
+  var protocolOp: js.UndefOr[String] = js.undefined
 }
 object LDAPMessageJsonObject {
   

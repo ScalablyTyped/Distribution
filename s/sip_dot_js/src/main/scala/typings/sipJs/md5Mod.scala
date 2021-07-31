@@ -7,7 +7,6 @@ import typings.std.Int32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object md5Mod {
@@ -68,31 +67,29 @@ object md5Mod {
     @scala.inline
     def buffer32Identity_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buffer32Identity")(x.asInstanceOf[js.Any])
     
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
-    @js.native
-    def hashAsciiStr(str: String): String = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
-    @js.native
-    def hashAsciiStr_Int32Array(str: String): Int32Array = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
-    @js.native
-    def hashAsciiStr_false(str: String, raw: `false`): String = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashAsciiStr")
-    @js.native
-    def hashAsciiStr_true(str: String, raw: `true`): Int32Array = js.native
+    @scala.inline
+    def hashAsciiStr(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashAsciiStr")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
-    @js.native
-    def hashStr(str: String): String = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
-    @js.native
-    def hashStr_Int32Array(str: String): Int32Array = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
-    @js.native
-    def hashStr_false(str: String, raw: `false`): String = js.native
-    @JSImport("sip.js/lib/core/messages/md5", "Md5.hashStr")
-    @js.native
-    def hashStr_true(str: String, raw: `true`): Int32Array = js.native
+    @scala.inline
+    def hashAsciiStr_Int32Array(str: String): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hashAsciiStr")(str.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
+    
+    @scala.inline
+    def hashAsciiStr_false(str: String, raw: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAsciiStr")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def hashAsciiStr_true(str: String, raw: `true`): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAsciiStr")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
+    
+    @scala.inline
+    def hashStr(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashStr")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def hashStr_Int32Array(str: String): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hashStr")(str.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
+    
+    @scala.inline
+    def hashStr_false(str: String, raw: `false`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hashStr")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def hashStr_true(str: String, raw: `true`): Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("hashStr")(str.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[Int32Array]
     
     @JSImport("sip.js/lib/core/messages/md5", "Md5.hexChars")
     @js.native

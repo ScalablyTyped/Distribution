@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object DeviceWatcherEventKind extends StObject {
   
   /** The event is an add action. */
   @js.native
-  sealed trait add extends DeviceWatcherEventKind
+  sealed trait add
+    extends StObject
+       with DeviceWatcherEventKind
   
   /** The event is a remove action. */
   @js.native
-  sealed trait remove extends DeviceWatcherEventKind
+  sealed trait remove
+    extends StObject
+       with DeviceWatcherEventKind
   
   /** The event is an update action. */
   @js.native
-  sealed trait update extends DeviceWatcherEventKind
+  sealed trait update
+    extends StObject
+       with DeviceWatcherEventKind
 }

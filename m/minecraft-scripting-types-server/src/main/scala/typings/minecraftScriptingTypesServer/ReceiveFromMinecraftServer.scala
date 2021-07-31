@@ -21,7 +21,6 @@ import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerString
 import typings.minecraftScriptingTypesServer.minecraftScriptingTypesServerStrings.minecraftColonweather_changed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

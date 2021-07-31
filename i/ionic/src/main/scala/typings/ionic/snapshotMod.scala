@@ -12,7 +12,6 @@ import typings.ionic.definitionsMod.Snapshot
 import typings.ionic.httpMod.ResourceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotMod {
@@ -36,14 +35,13 @@ object snapshotMod {
     var token: String = js.native
   }
   
-  @js.native
   trait SnapshotClientDeps extends StObject {
     
-    val app: IdString = js.native
+    val app: IdString
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val token: String = js.native
+    val token: String
   }
   object SnapshotClientDeps {
     

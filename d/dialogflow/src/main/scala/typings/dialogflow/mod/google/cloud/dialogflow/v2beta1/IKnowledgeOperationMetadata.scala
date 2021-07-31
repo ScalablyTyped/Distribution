@@ -3,17 +3,15 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a KnowledgeOperationMetadata. */
-@js.native
 trait IKnowledgeOperationMetadata extends StObject {
   
   /** KnowledgeOperationMetadata state */
   var state: js.UndefOr[
     State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IKnowledgeOperationMetadata {
   

@@ -3,36 +3,34 @@ package typings.sarif.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeTraversal extends StObject {
   
   /**
     * Identifies the edge being traversed.
     */
-  var edgeId: String = js.native
+  var edgeId: String
   
   /**
     * The values of relevant expressions after the edge has been traversed.
     */
-  var finalState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.native
+  var finalState: js.UndefOr[StringDictionary[MultiformatMessageString]] = js.undefined
   
   /**
     * A message to display to the user as the edge is traversed.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the edge traversal.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The number of edge traversals necessary to return from a nested graph.
     */
-  var stepOverEdgeCount: js.UndefOr[Double] = js.native
+  var stepOverEdgeCount: js.UndefOr[Double] = js.undefined
 }
 object EdgeTraversal {
   

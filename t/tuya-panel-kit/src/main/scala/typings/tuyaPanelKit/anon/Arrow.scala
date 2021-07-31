@@ -2,31 +2,29 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arrow extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.native
+  var Action: js.UndefOr[js.Any] = js.undefined
   
-  var arrow: js.UndefOr[Boolean] = js.native
+  var arrow: js.UndefOr[Boolean] = js.undefined
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String | Double] = js.native
+  var key: js.UndefOr[String | Double] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* idx */ Double, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* idx */ Double, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | Double] = js.native
+  var title: js.UndefOr[String | Double] = js.undefined
   
-  var value: js.UndefOr[String | Double | Boolean] = js.native
+  var value: js.UndefOr[String | Double | Boolean] = js.undefined
 }
 object Arrow {
   

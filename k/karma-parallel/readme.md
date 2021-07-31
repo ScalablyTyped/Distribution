@@ -10,9 +10,9 @@ A Karma JS Framework to support sharding tests to run in parallel across multipl
 | ------------------ | :-------------: |
 | Full name          | karma-parallel |
 | Keywords           | karma, karma-parallel, karma-sharding, karma-plugin |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1745631 |
+| # downloads        | 2158024 |
 | # stars            | 1 |
 
 ## Links

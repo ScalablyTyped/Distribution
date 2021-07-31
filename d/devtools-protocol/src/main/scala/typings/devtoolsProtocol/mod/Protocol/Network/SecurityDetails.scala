@@ -3,76 +3,74 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Security.CertificateId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityDetails extends StObject {
   
   /**
     * Certificate ID value.
     */
-  var certificateId: CertificateId = js.native
+  var certificateId: CertificateId
   
   /**
     * Whether the request complied with Certificate Transparency policy
     */
-  var certificateTransparencyCompliance: CertificateTransparencyCompliance = js.native
+  var certificateTransparencyCompliance: CertificateTransparencyCompliance
   
   /**
     * Cipher name.
     */
-  var cipher: String = js.native
+  var cipher: String
   
   /**
     * Name of the issuing CA.
     */
-  var issuer: String = js.native
+  var issuer: String
   
   /**
     * Key Exchange used by the connection, or the empty string if not applicable.
     */
-  var keyExchange: String = js.native
+  var keyExchange: String
   
   /**
     * (EC)DH group used by the connection, if applicable.
     */
-  var keyExchangeGroup: js.UndefOr[String] = js.native
+  var keyExchangeGroup: js.UndefOr[String] = js.undefined
   
   /**
     * TLS MAC. Note that AEAD ciphers do not have separate MACs.
     */
-  var mac: js.UndefOr[String] = js.native
+  var mac: js.UndefOr[String] = js.undefined
   
   /**
     * Protocol name (e.g. "TLS 1.2" or "QUIC").
     */
-  var protocol: String = js.native
+  var protocol: String
   
   /**
     * Subject Alternative Name (SAN) DNS names and IP addresses.
     */
-  var sanList: js.Array[String] = js.native
+  var sanList: js.Array[String]
   
   /**
     * List of signed certificate timestamps (SCTs).
     */
-  var signedCertificateTimestampList: js.Array[SignedCertificateTimestamp] = js.native
+  var signedCertificateTimestampList: js.Array[SignedCertificateTimestamp]
   
   /**
     * Certificate subject name.
     */
-  var subjectName: String = js.native
+  var subjectName: String
   
   /**
     * Certificate valid from date.
     */
-  var validFrom: TimeSinceEpoch = js.native
+  var validFrom: TimeSinceEpoch
   
   /**
     * Certificate valid to (expiration) date
     */
-  var validTo: TimeSinceEpoch = js.native
+  var validTo: TimeSinceEpoch
 }
 object SecurityDetails {
   

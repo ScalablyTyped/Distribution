@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,7 +74,7 @@ trait IUtilMisc extends StObject {
     * @param y2 end y coordinate
     * @param da dash array pattern
     */
-  def drawDashedLine(ctx: CanvasRenderingContext2D, x: Double, y: Double, x2: Double, y2: Double, da: js.Array[_]): Unit = js.native
+  def drawDashedLine(ctx: CanvasRenderingContext2D, x: Double, y: Double, x2: Double, y2: Double, da: js.Array[js.Any]): Unit = js.native
   
   /**
     * Creates corresponding fabric instances from their object representations
@@ -84,8 +83,8 @@ trait IUtilMisc extends StObject {
     * @param namespace Namespace to get klass "Class" object from
     * @param reviver Method for further parsing of object elements, called after each fabric object created.
     */
-  def enlivenObjects(objects: js.Array[_], callback: js.Function, namespace: String): Unit = js.native
-  def enlivenObjects(objects: js.Array[_], callback: js.Function, namespace: String, reviver: js.Function): Unit = js.native
+  def enlivenObjects(objects: js.Array[js.Any], callback: js.Function, namespace: String): Unit = js.native
+  def enlivenObjects(objects: js.Array[js.Any], callback: js.Function, namespace: String, reviver: js.Function): Unit = js.native
   
   /**
     * Function which always returns `false`.
@@ -117,16 +116,16 @@ trait IUtilMisc extends StObject {
     * @param elements SVG elements to group
     * @param [options] Options object
     */
-  def groupSVGElements(elements: js.Array[_]): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[_], options: js.UndefOr[scala.Nothing], path: String): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[_], options: js.Any): Object | Group = js.native
-  def groupSVGElements(elements: js.Array[_], options: js.Any, path: String): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[js.Any]): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[js.Any], options: js.Any): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[js.Any], options: js.Any, path: String): Object | Group = js.native
+  def groupSVGElements(elements: js.Array[js.Any], options: Unit, path: String): Object | Group = js.native
   
   /**
     * Invert transformation t
     * @param t The transform
     */
-  def invertTransform(t: js.Array[_]): js.Array[_] = js.native
+  def invertTransform(t: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     * Returns true if context has transparent pixel
@@ -146,17 +145,17 @@ trait IUtilMisc extends StObject {
     * @param [crossOrigin] crossOrigin value to set image element to
     */
   def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit]): Unit = js.native
-  def loadImage(
-    url: String,
-    callback: js.Function1[/* image */ HTMLImageElement, Unit],
-    context: js.UndefOr[scala.Nothing],
-    crossOrigin: String
-  ): Unit = js.native
   def loadImage(url: String, callback: js.Function1[/* image */ HTMLImageElement, Unit], context: js.Any): Unit = js.native
   def loadImage(
     url: String,
     callback: js.Function1[/* image */ HTMLImageElement, Unit],
     context: js.Any,
+    crossOrigin: String
+  ): Unit = js.native
+  def loadImage(
+    url: String,
+    callback: js.Function1[/* image */ HTMLImageElement, Unit],
+    context: Unit,
     crossOrigin: String
   ): Unit = js.native
   
@@ -201,7 +200,7 @@ trait IUtilMisc extends StObject {
     * Removes value from an array.
     * Presence of value (and its position in an array) is determined via `Array.prototype.indexOf`
     */
-  def removeFromArray(array: js.Array[_], value: js.Any): js.Array[_] = js.native
+  def removeFromArray(array: js.Array[js.Any], value: js.Any): js.Array[js.Any] = js.native
   
   /**
     * reset an object transform state to neutral. Top and left are not accounted for
@@ -252,6 +251,6 @@ trait IUtilMisc extends StObject {
     * @param  t The transform
     * @param  [ignoreOffset] Indicates that the offset should not be applied
     */
-  def transformPoint(p: Point, t: js.Array[_]): Point = js.native
-  def transformPoint(p: Point, t: js.Array[_], ignoreOffset: Boolean): Point = js.native
+  def transformPoint(p: Point, t: js.Array[js.Any]): Point = js.native
+  def transformPoint(p: Point, t: js.Array[js.Any], ignoreOffset: Boolean): Point = js.native
 }

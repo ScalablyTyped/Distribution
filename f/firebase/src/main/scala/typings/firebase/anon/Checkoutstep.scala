@@ -3,16 +3,15 @@ package typings.firebase.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checkoutstep
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var checkout_option: js.UndefOr[String] = js.native
+  var checkout_option: js.UndefOr[String] = js.undefined
   
-  var checkout_step: js.UndefOr[Double] = js.native
+  var checkout_step: js.UndefOr[Double] = js.undefined
 }
 object Checkoutstep {
   

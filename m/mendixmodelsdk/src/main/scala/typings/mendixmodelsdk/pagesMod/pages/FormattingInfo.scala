@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo")
@@ -68,9 +67,8 @@ object FormattingInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.create")
-  @js.native
-  def create(model: IModel): FormattingInfo = js.native
+  @scala.inline
+  def create(model: IModel): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -81,9 +79,8 @@ object FormattingInfo {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInClientTemplateParameterUnderFormattingInfo")
-  @js.native
-  def createInClientTemplateParameterUnderFormattingInfo(container: ClientTemplateParameter): FormattingInfo = js.native
+  @scala.inline
+  def createInClientTemplateParameterUnderFormattingInfo(container: ClientTemplateParameter): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -91,9 +88,8 @@ object FormattingInfo {
     * of the parent documenttemplates.DataGridColumn element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInDataGridColumnUnderFormattingInfo")
-  @js.native
-  def createInDataGridColumnUnderFormattingInfo(container: DataGridColumn): FormattingInfo = js.native
+  @scala.inline
+  def createInDataGridColumnUnderFormattingInfo(container: DataGridColumn): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -101,9 +97,8 @@ object FormattingInfo {
     * of the parent DatePicker element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInDatePickerUnderFormattingInfo")
-  @js.native
-  def createInDatePickerUnderFormattingInfo(container: DatePicker): FormattingInfo = js.native
+  @scala.inline
+  def createInDatePickerUnderFormattingInfo(container: DatePicker): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatePickerUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -111,9 +106,8 @@ object FormattingInfo {
     * of the parent documenttemplates.DynamicLabel element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInDynamicLabelUnderFormattingInfo")
-  @js.native
-  def createInDynamicLabelUnderFormattingInfo(container: DynamicLabel): FormattingInfo = js.native
+  @scala.inline
+  def createInDynamicLabelUnderFormattingInfo(container: DynamicLabel): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicLabelUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -121,9 +115,8 @@ object FormattingInfo {
     * of the parent GridColumn element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInGridColumnUnderFormattingInfo")
-  @js.native
-  def createInGridColumnUnderFormattingInfo(container: GridColumn): FormattingInfo = js.native
+  @scala.inline
+  def createInGridColumnUnderFormattingInfo(container: GridColumn): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -131,9 +124,8 @@ object FormattingInfo {
     * of the parent ReferenceSelector element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInReferenceSelectorUnderFormattingInfo")
-  @js.native
-  def createInReferenceSelectorUnderFormattingInfo(container: ReferenceSelector): FormattingInfo = js.native
+  @scala.inline
+  def createInReferenceSelectorUnderFormattingInfo(container: ReferenceSelector): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /**
     * Creates and returns a new FormattingInfo instance in the SDK and on the server.
@@ -141,9 +133,8 @@ object FormattingInfo {
     * of the parent TextBox element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.createInTextBoxUnderFormattingInfo")
-  @js.native
-  def createInTextBoxUnderFormattingInfo(container: TextBox): FormattingInfo = js.native
+  @scala.inline
+  def createInTextBoxUnderFormattingInfo(container: TextBox): FormattingInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderFormattingInfo")(container.asInstanceOf[js.Any]).asInstanceOf[FormattingInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormattingInfo.structureTypeName")

@@ -10,35 +10,59 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseWatchPluginMod {
   
   @JSImport("jest-watcher/build/BaseWatchPlugin", JSImport.Default)
   @js.native
-  class default protected () extends BaseWatchPlugin {
+  class default protected ()
+    extends StObject
+       with BaseWatchPlugin {
     def this(hasStdinStdout: Stdin) = this()
-  }
-  
-  @js.native
-  trait BaseWatchPlugin extends WatchPlugin {
     
+    /* CompleteClass */
     var _stdin: ReadStream = js.native
     
+    /* CompleteClass */
     var _stdout: WriteStream = js.native
     
+    /* CompleteClass */
     @JSName("apply")
-    def apply_MBaseWatchPlugin(_hooks: JestHookSubscriber): Unit = js.native
+    override def apply_MBaseWatchPlugin(_hooks: JestHookSubscriber): Unit = js.native
+    
+    /* CompleteClass */
+    @JSName("getUsageInfo")
+    override def getUsageInfo_MBaseWatchPlugin(_globalConfig: GlobalConfig): UsageData | Null = js.native
+    
+    /* CompleteClass */
+    @JSName("onKey")
+    override def onKey_MBaseWatchPlugin(_key: String): Unit = js.native
+    
+    /* CompleteClass */
+    @JSName("run")
+    override def run_MBaseWatchPlugin(_globalConfig: GlobalConfig, _updateConfigAndRun: UpdateConfigCallback): js.Promise[Unit | Boolean] = js.native
+  }
+  
+  trait BaseWatchPlugin
+    extends StObject
+       with WatchPlugin {
+    
+    var _stdin: ReadStream
+    
+    var _stdout: WriteStream
+    
+    @JSName("apply")
+    def apply_MBaseWatchPlugin(_hooks: JestHookSubscriber): Unit
     
     @JSName("getUsageInfo")
-    def getUsageInfo_MBaseWatchPlugin(_globalConfig: GlobalConfig): UsageData | Null = js.native
+    def getUsageInfo_MBaseWatchPlugin(_globalConfig: GlobalConfig): UsageData | Null
     
     @JSName("onKey")
-    def onKey_MBaseWatchPlugin(_key: String): Unit = js.native
+    def onKey_MBaseWatchPlugin(_key: String): Unit
     
     @JSName("run")
-    def run_MBaseWatchPlugin(_globalConfig: GlobalConfig, _updateConfigAndRun: UpdateConfigCallback): js.Promise[Unit | Boolean] = js.native
+    def run_MBaseWatchPlugin(_globalConfig: GlobalConfig, _updateConfigAndRun: UpdateConfigCallback): js.Promise[Unit | Boolean]
   }
   object BaseWatchPlugin {
     

@@ -4,17 +4,15 @@ import typings.luminoVirtualdom.mod.ElementAttrs
 import typings.luminoVirtualdom.mod.VirtualNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attrs extends StObject {
     
-    var attrs: js.UndefOr[ElementAttrs] = js.native
+    var attrs: js.UndefOr[ElementAttrs] = js.undefined
     
-    var children: js.UndefOr[js.Array[VirtualNode]] = js.native
+    var children: js.UndefOr[js.Array[VirtualNode]] = js.undefined
   }
   object Attrs {
     

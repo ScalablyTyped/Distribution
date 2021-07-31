@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FeatureEditResult extends Object {
+trait FeatureEditResult
+  extends StObject
+     with Object {
   
   /**
     * If the edit failed, the edit result includes an error.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
     */
-  var error: FeatureEditResultError = js.native
+  var error: FeatureEditResultError
   
   /**
     * The globalId of the feature or the attachment that was edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
     */
-  var globalId: String = js.native
+  var globalId: String
   
   /**
     * The objectId of the feature or the attachmentId of the attachment that was edited.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#FeatureEditResult)
     */
-  var objectId: Double = js.native
+  var objectId: Double
 }
 object FeatureEditResult {
   

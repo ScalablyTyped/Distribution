@@ -3,13 +3,11 @@ package typings.winrt.Windows.Security.Cryptography.Core
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICryptographicEngineStatics extends StObject {
   
-  def decrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = js.native
+  def decrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer
   
   def decryptAndAuthenticate(
     key: CryptographicKey,
@@ -17,17 +15,17 @@ trait ICryptographicEngineStatics extends StObject {
     nonce: IBuffer,
     authenticationTag: IBuffer,
     authenticatedData: IBuffer
-  ): IBuffer = js.native
+  ): IBuffer
   
-  def deriveKeyMaterial(key: CryptographicKey, parameters: KeyDerivationParameters, desiredKeySize: Double): IBuffer = js.native
+  def deriveKeyMaterial(key: CryptographicKey, parameters: KeyDerivationParameters, desiredKeySize: Double): IBuffer
   
-  def encrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer = js.native
+  def encrypt(key: CryptographicKey, data: IBuffer, iv: IBuffer): IBuffer
   
-  def encryptAndAuthenticate(key: CryptographicKey, data: IBuffer, nonce: IBuffer, authenticatedData: IBuffer): EncryptedAndAuthenticatedData = js.native
+  def encryptAndAuthenticate(key: CryptographicKey, data: IBuffer, nonce: IBuffer, authenticatedData: IBuffer): EncryptedAndAuthenticatedData
   
-  def sign(key: CryptographicKey, data: IBuffer): IBuffer = js.native
+  def sign(key: CryptographicKey, data: IBuffer): IBuffer
   
-  def verifySignature(key: CryptographicKey, data: IBuffer, signature: IBuffer): Boolean = js.native
+  def verifySignature(key: CryptographicKey, data: IBuffer, signature: IBuffer): Boolean
 }
 object ICryptographicEngineStatics {
   

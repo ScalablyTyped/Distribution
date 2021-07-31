@@ -2,21 +2,21 @@ package typings.httpStatusCodes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsFunctionsMod {
   
-  @JSImport("http-status-codes/build/cjs/utils-functions", "getReasonPhrase")
+  @JSImport("http-status-codes/build/cjs/utils-functions", JSImport.Namespace)
   @js.native
-  def getReasonPhrase(statusCode: String): String = js.native
-  @JSImport("http-status-codes/build/cjs/utils-functions", "getReasonPhrase")
-  @js.native
-  def getReasonPhrase(statusCode: Double): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("http-status-codes/build/cjs/utils-functions", "getStatusCode")
-  @js.native
-  def getStatusCode(reasonPhrase: String): Double = js.native
+  @scala.inline
+  def getReasonPhrase(statusCode: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReasonPhrase")(statusCode.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getReasonPhrase(statusCode: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReasonPhrase")(statusCode.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def getStatusCode(reasonPhrase: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusCode")(reasonPhrase.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("http-status-codes/build/cjs/utils-functions", "getStatusText")
   @js.native

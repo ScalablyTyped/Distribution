@@ -3,20 +3,18 @@ package typings.atom.anon
 import typings.atom.mod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewRange extends StObject {
   
   /** The Range of the inserted text in the current contents of the buffer. */
-  var newRange: Range = js.native
+  var newRange: Range
   
   /**
     *  The Range of the deleted text in the contents of the buffer as it existed
     *  before the batch of changes reported by this event.
     */
-  var oldRange: Range = js.native
+  var oldRange: Range
 }
 object NewRange {
   

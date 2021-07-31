@@ -6,23 +6,21 @@ import typings.typeorm.typeormStrings.other
 import typings.typeorm.typeormStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var metadata: js.UndefOr[typings.typeorm.entityMetadataMod.EntityMetadata] = js.native
+  var metadata: js.UndefOr[typings.typeorm.entityMetadataMod.EntityMetadata] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var subQuery: js.UndefOr[String] = js.native
+  var subQuery: js.UndefOr[String] = js.undefined
   
-  var tablePath: js.UndefOr[String] = js.native
+  var tablePath: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[js.Function | String] = js.native
+  var target: js.UndefOr[js.Function | String] = js.undefined
   
-  var `type`: from | select | join | other = js.native
+  var `type`: from | select | join | other
 }
 object Metadata {
   

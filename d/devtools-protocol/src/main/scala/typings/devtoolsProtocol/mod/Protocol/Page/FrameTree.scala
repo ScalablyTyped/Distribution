@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameTree extends StObject {
   
   /**
     * Child frames.
     */
-  var childFrames: js.UndefOr[js.Array[FrameTree]] = js.native
+  var childFrames: js.UndefOr[js.Array[FrameTree]] = js.undefined
   
   /**
     * Frame information for this tree item.
     */
-  var frame: Frame = js.native
+  var frame: Frame
 }
 object FrameTree {
   

@@ -3,15 +3,13 @@ package typings.openssiWebsdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProofSelection extends StObject {
   
-  var attributes: StringDictionary[AttributeChoice] = js.native
+  var attributes: StringDictionary[AttributeChoice]
   
-  var predicates: StringDictionary[PredicateChoice] = js.native
+  var predicates: StringDictionary[PredicateChoice]
 }
 object ProofSelection {
   

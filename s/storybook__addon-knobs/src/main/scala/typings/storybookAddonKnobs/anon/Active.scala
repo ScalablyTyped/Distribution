@@ -3,17 +3,15 @@ package typings.storybookAddonKnobs.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Active extends StObject {
   
-  var active: Validator[Boolean] = js.native
+  var active: Validator[Boolean]
   
-  var api: Validator[PickAPIonoffemitgetQueryP] = js.native
+  var api: Validator[PickAPIonoffemitgetQueryP]
   
-  var onReset: Validator[js.UndefOr[js.Object]] = js.native
+  var onReset: Validator[js.UndefOr[js.Object]]
 }
 object Active {
   

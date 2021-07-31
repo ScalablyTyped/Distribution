@@ -2,24 +2,22 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key used to identify a report.
   */
-@js.native
 trait SchemaReportKey extends StObject {
   
   /**
     * Query ID.
     */
-  var queryId: js.UndefOr[String] = js.native
+  var queryId: js.UndefOr[String] = js.undefined
   
   /**
     * Report ID.
     */
-  var reportId: js.UndefOr[String] = js.native
+  var reportId: js.UndefOr[String] = js.undefined
 }
 object SchemaReportKey {
   

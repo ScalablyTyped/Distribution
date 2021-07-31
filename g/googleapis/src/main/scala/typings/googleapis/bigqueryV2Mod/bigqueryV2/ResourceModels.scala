@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Models")
@@ -32,7 +31,7 @@ class ResourceModels protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceModelsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceModelsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceModels protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaModel] = js.native
   def get(callback: BodyResponseCallback[SchemaModel]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaModel] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaModel] = js.native
   def get(params: ParamsResourceModelsGet): GaxiosPromise[SchemaModel] = js.native
   def get(params: ParamsResourceModelsGet, callback: BodyResponseCallback[SchemaModel]): Unit = js.native
   def get(
@@ -92,7 +91,7 @@ class ResourceModels protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListModelsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListModelsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListModelsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListModelsResponse] = js.native
   def list(params: ParamsResourceModelsList): GaxiosPromise[SchemaListModelsResponse] = js.native
   def list(params: ParamsResourceModelsList, callback: BodyResponseCallback[SchemaListModelsResponse]): Unit = js.native
   def list(
@@ -124,7 +123,7 @@ class ResourceModels protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaModel] = js.native
   def patch(callback: BodyResponseCallback[SchemaModel]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaModel] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaModel] = js.native
   def patch(params: ParamsResourceModelsPatch): GaxiosPromise[SchemaModel] = js.native
   def patch(params: ParamsResourceModelsPatch, callback: BodyResponseCallback[SchemaModel]): Unit = js.native
   def patch(

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: WordApi 1.3]
   */
-@js.native
 trait DocumentPropertiesLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var applicationName: js.UndefOr[Boolean] = js.native
+  var applicationName: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var author: js.UndefOr[Boolean] = js.native
+  var author: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var category: js.UndefOr[Boolean] = js.native
+  var category: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var comments: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var company: js.UndefOr[Boolean] = js.native
+  var company: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var creationDate: js.UndefOr[Boolean] = js.native
+  var creationDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var format: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var keywords: js.UndefOr[Boolean] = js.native
+  var keywords: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastAuthor: js.UndefOr[Boolean] = js.native
+  var lastAuthor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -98,7 +96,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastPrintDate: js.UndefOr[Boolean] = js.native
+  var lastPrintDate: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -106,7 +104,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var lastSaveTime: js.UndefOr[Boolean] = js.native
+  var lastSaveTime: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -114,7 +112,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var manager: js.UndefOr[Boolean] = js.native
+  var manager: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -122,7 +120,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var revisionNumber: js.UndefOr[Boolean] = js.native
+  var revisionNumber: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -130,7 +128,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var security: js.UndefOr[Boolean] = js.native
+  var security: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -138,7 +136,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var subject: js.UndefOr[Boolean] = js.native
+  var subject: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -146,7 +144,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var template: js.UndefOr[Boolean] = js.native
+  var template: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -154,7 +152,7 @@ trait DocumentPropertiesLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var title: js.UndefOr[Boolean] = js.native
+  var title: js.UndefOr[Boolean] = js.undefined
 }
 object DocumentPropertiesLoadOptions {
   

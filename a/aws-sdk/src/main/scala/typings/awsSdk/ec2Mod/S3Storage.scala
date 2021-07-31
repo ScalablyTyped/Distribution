@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Storage extends StObject {
   
   /**
     * The access key ID of the owner of the bucket. Before you specify a value for your access key ID, review and follow the guidance in Best Practices for Managing AWS Access Keys.
     */
-  var AWSAccessKeyId: js.UndefOr[String] = js.native
+  var AWSAccessKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket in which to store the AMI. You can specify a bucket that you already own or a new bucket that Amazon EC2 creates on your behalf. If you specify a bucket that belongs to someone else, Amazon EC2 returns an error.
     */
-  var Bucket: js.UndefOr[String] = js.native
+  var Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The beginning of the file name of the AMI.
     */
-  var Prefix: js.UndefOr[String] = js.native
+  var Prefix: js.UndefOr[String] = js.undefined
   
   /**
     * An Amazon S3 upload policy that gives Amazon EC2 permission to upload items into Amazon S3 on your behalf.
     */
-  var UploadPolicy: js.UndefOr[_Blob] = js.native
+  var UploadPolicy: js.UndefOr[_Blob] = js.undefined
   
   /**
     * The signature of the JSON document.
     */
-  var UploadPolicySignature: js.UndefOr[String] = js.native
+  var UploadPolicySignature: js.UndefOr[String] = js.undefined
 }
 object S3Storage {
   

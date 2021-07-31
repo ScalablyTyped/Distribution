@@ -7,19 +7,17 @@ import typings.amapJsApiMap3d.amapJsApiMap3dStrings.meter
 import typings.amapJsApiMap3d.amapJsApiMap3dStrings.px
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String | js.Array[Double]] = js.native
+    var color: js.UndefOr[String | js.Array[Double]] = js.undefined
     
-    var height: js.UndefOr[Double | js.Array[Double]] = js.native
+    var height: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Color {
     
@@ -59,20 +57,19 @@ object anon {
   }
   
   /* Inlined amap-js-api-map3d.AMap.Geometry3D & { readonly vertexIndices :std.Array<number>,  readonly directions :std.Array<number>,  readonly textureIndices :std.Array<number>} */
-  @js.native
   trait Geometry3DreadonlyvertexI extends StObject {
     
-    val directions: js.Array[Double] = js.native
+    val directions: js.Array[Double]
     
-    val textureIndices: js.Array[Double] = js.native
+    val textureIndices: js.Array[Double]
     
-    val vertexColors: js.Array[Double] = js.native
+    val vertexColors: js.Array[Double]
     
-    val vertexIndices: js.Array[Double] = js.native
+    val vertexIndices: js.Array[Double]
     
-    val vertexUVs: js.Array[Double] = js.native
+    val vertexUVs: js.Array[Double]
     
-    val vertices: js.Array[Double] = js.native
+    val vertices: js.Array[Double]
   }
   object Geometry3DreadonlyvertexI {
     
@@ -130,16 +127,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var scene: js.UndefOr[Double] = js.native
+    var scene: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -179,22 +175,21 @@ object anon {
   }
   
   /* Inlined amap-js-api-map3d.AMap.Geometry3D.Mesh & { readonly vertexNormals :std.Array<number>} */
-  @js.native
   trait MeshreadonlyvertexNormals extends StObject {
     
-    val faces: js.Array[Double] = js.native
+    val faces: js.Array[Double]
     
-    val textureIndices: js.Array[Double] = js.native
+    val textureIndices: js.Array[Double]
     
-    val `type`: mesh = js.native
+    val `type`: mesh
     
-    val vertexColors: js.Array[Double] = js.native
+    val vertexColors: js.Array[Double]
     
-    val vertexNormals: js.Array[Double] = js.native
+    val vertexNormals: js.Array[Double]
     
-    val vertexUVs: js.Array[Double] = js.native
+    val vertexUVs: js.Array[Double]
     
-    val vertices: js.Array[Double] = js.native
+    val vertices: js.Array[Double]
   }
   object MeshreadonlyvertexNormals {
     
@@ -202,14 +197,13 @@ object anon {
     def apply(
       faces: js.Array[Double],
       textureIndices: js.Array[Double],
-      `type`: mesh,
       vertexColors: js.Array[Double],
       vertexNormals: js.Array[Double],
       vertexUVs: js.Array[Double],
       vertices: js.Array[Double]
     ): MeshreadonlyvertexNormals = {
       val __obj = js.Dynamic.literal(faces = faces.asInstanceOf[js.Any], textureIndices = textureIndices.asInstanceOf[js.Any], vertexColors = vertexColors.asInstanceOf[js.Any], vertexNormals = vertexNormals.asInstanceOf[js.Any], vertexUVs = vertexUVs.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("mesh")
       __obj.asInstanceOf[MeshreadonlyvertexNormals]
     }
     
@@ -257,12 +251,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: js.Array[LngLat | (js.Tuple2[Double, Double])] = js.native
+    var path: js.Array[LngLat | (js.Tuple2[Double, Double])]
     
-    var unit: js.UndefOr[meter] = js.native
+    var unit: js.UndefOr[meter] = js.undefined
   }
   object Path {
     
@@ -289,18 +282,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Unit extends StObject {
     
-    var path: js.Array[Pixel | (js.Tuple2[Double, Double])] = js.native
+    var path: js.Array[Pixel | (js.Tuple2[Double, Double])]
     
-    var unit: px = js.native
+    var unit: px
   }
   object Unit {
     
     @scala.inline
-    def apply(path: js.Array[Pixel | (js.Tuple2[Double, Double])], unit: px): Unit = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+    def apply(path: js.Array[Pixel | (js.Tuple2[Double, Double])]): Unit = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], unit = "px")
       __obj.asInstanceOf[Unit]
     }
     

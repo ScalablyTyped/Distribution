@@ -2,18 +2,16 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAttackStatisticsResponse extends StObject {
   
   /**
     * The data that describes the attacks detected during the time period.
     */
-  var DataItems: AttackStatisticsDataList = js.native
+  var DataItems: AttackStatisticsDataList
   
-  var TimeRange: typings.awsSdk.shieldMod.TimeRange = js.native
+  var TimeRange: typings.awsSdk.shieldMod.TimeRange
 }
 object DescribeAttackStatisticsResponse {
   

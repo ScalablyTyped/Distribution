@@ -3,19 +3,17 @@ package typings.activexFaxcomexlib.anon
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BIncomingQueueBlocked extends StObject {
   
-  val bIncomingQueueBlocked: Boolean = js.native
+  val bIncomingQueueBlocked: Boolean
   
-  val bOutgoingQueueBlocked: Boolean = js.native
+  val bOutgoingQueueBlocked: Boolean
   
-  val bOutgoingQueuePaused: Boolean = js.native
+  val bOutgoingQueuePaused: Boolean
   
-  val pFaxServer: FaxServer = js.native
+  val pFaxServer: FaxServer
 }
 object BIncomingQueueBlocked {
   

@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelPivotGridCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotCell extends StObject {
   
-  var excelCell: js.UndefOr[js.Any] = js.native
+  var excelCell: js.UndefOr[js.Any] = js.undefined
   
-  var pivotCell: js.UndefOr[ExcelPivotGridCell] = js.native
+  var pivotCell: js.UndefOr[ExcelPivotGridCell] = js.undefined
 }
 object PivotCell {
   

@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCaptionsDelete extends StandardParameters {
+trait ParamsResourceCaptionsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The id parameter identifies the caption track that is being deleted. The
     * value is a caption track ID as identified by the id property in a caption
     * resource.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the Google+ Page for the channel that the request is be on behalf
     * of
     */
-  var onBehalfOf: js.UndefOr[String] = js.native
+  var onBehalfOf: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -42,7 +42,7 @@ trait ParamsResourceCaptionsDelete extends StandardParameters {
     * channel. The actual CMS account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCaptionsDelete {
   

@@ -4,16 +4,14 @@ import typings.vegaLite.logicalMod.LogicalComposition
 import typings.vegaLite.srcPredicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Test extends StObject {
   
   /**
     * Predicate for triggering the condition
     */
-  var test: LogicalComposition[Predicate] = js.native
+  var test: LogicalComposition[Predicate]
 }
 object Test {
   

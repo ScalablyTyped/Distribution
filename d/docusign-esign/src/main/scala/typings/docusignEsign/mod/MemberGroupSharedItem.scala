@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberGroupSharedItem extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait MemberGroupSharedItem extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The group sharing the item.
     */
-  var group: js.UndefOr[/* This object contains information about a group. */ Group] = js.native
+  var group: js.UndefOr[/* This object contains information about a group. */ Group] = js.undefined
   
   /**
     * How the item is shared. One of:
@@ -28,7 +26,7 @@ trait MemberGroupSharedItem extends StObject {
     *
     * - `shared_to`: The item is shared.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
 }
 object MemberGroupSharedItem {
   

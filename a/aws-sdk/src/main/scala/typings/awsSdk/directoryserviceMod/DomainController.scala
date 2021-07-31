@@ -2,61 +2,59 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainController extends StObject {
   
   /**
     * The Availability Zone where the domain controller is located.
     */
-  var AvailabilityZone: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZone] = js.native
+  var AvailabilityZone: js.UndefOr[typings.awsSdk.directoryserviceMod.AvailabilityZone] = js.undefined
   
   /**
     * Identifier of the directory where the domain controller resides.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The IP address of the domain controller.
     */
-  var DnsIpAddr: js.UndefOr[IpAddr] = js.native
+  var DnsIpAddr: js.UndefOr[IpAddr] = js.undefined
   
   /**
     * Identifies a specific domain controller in the directory.
     */
-  var DomainControllerId: js.UndefOr[typings.awsSdk.directoryserviceMod.DomainControllerId] = js.native
+  var DomainControllerId: js.UndefOr[typings.awsSdk.directoryserviceMod.DomainControllerId] = js.undefined
   
   /**
     * Specifies when the domain controller was created.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.native
+  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
   
   /**
     * The status of the domain controller.
     */
-  var Status: js.UndefOr[DomainControllerStatus] = js.native
+  var Status: js.UndefOr[DomainControllerStatus] = js.undefined
   
   /**
     * The date and time that the status was last updated.
     */
-  var StatusLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.native
+  var StatusLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.undefined
   
   /**
     * A description of the domain controller state.
     */
-  var StatusReason: js.UndefOr[DomainControllerStatusReason] = js.native
+  var StatusReason: js.UndefOr[DomainControllerStatusReason] = js.undefined
   
   /**
     * Identifier of the subnet in the VPC that contains the domain controller.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.directoryserviceMod.SubnetId] = js.undefined
   
   /**
     * The identifier of the VPC that contains the domain controller.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.directoryserviceMod.VpcId] = js.undefined
 }
 object DomainController {
   

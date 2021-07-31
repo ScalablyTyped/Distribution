@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotDatafeedSubscriptionMod {
@@ -38,6 +37,10 @@ object spotDatafeedSubscriptionMod {
   /* static members */
   object SpotDatafeedSubscription {
     
+    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SpotDatafeedSubscription resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object spotDatafeedSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SpotDatafeedSubscription = js.native
-    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SpotDatafeedSubscription = js.native
-    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SpotDatafeedSubscriptionState): SpotDatafeedSubscription = js.native
-    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SpotDatafeedSubscriptionState, opts: CustomResourceOptions): SpotDatafeedSubscription = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SpotDatafeedSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SpotDatafeedSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SpotDatafeedSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SpotDatafeedSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SpotDatafeedSubscriptionState): SpotDatafeedSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SpotDatafeedSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SpotDatafeedSubscriptionState, opts: CustomResourceOptions): SpotDatafeedSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SpotDatafeedSubscription]
     
     /**
       * Returns true if the given object is an instance of SpotDatafeedSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotDatafeedSubscription.SpotDatafeedSubscription */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotDatafeedSubscription.SpotDatafeedSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/spotDatafeedSubscription.SpotDatafeedSubscription */ Boolean]
   }
   
-  @js.native
   trait SpotDatafeedSubscriptionArgs extends StObject {
     
     /**
       * The Amazon S3 bucket in which to store the Spot instance data feed.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Path of folder inside bucket to place spot pricing data.
       */
-    val prefix: js.UndefOr[Input[String]] = js.native
+    val prefix: js.UndefOr[Input[String]] = js.undefined
   }
   object SpotDatafeedSubscriptionArgs {
     
@@ -104,18 +101,17 @@ object spotDatafeedSubscriptionMod {
     }
   }
   
-  @js.native
   trait SpotDatafeedSubscriptionState extends StObject {
     
     /**
       * The Amazon S3 bucket in which to store the Spot instance data feed.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path of folder inside bucket to place spot pricing data.
       */
-    val prefix: js.UndefOr[Input[String]] = js.native
+    val prefix: js.UndefOr[Input[String]] = js.undefined
   }
   object SpotDatafeedSubscriptionState {
     

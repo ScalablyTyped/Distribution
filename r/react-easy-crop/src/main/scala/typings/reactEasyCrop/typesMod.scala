@@ -2,21 +2,19 @@ package typings.reactEasyCrop
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Area extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Area {
     
@@ -43,16 +41,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MediaSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var naturalHeight: Double = js.native
+    var naturalHeight: Double
     
-    var naturalWidth: Double = js.native
+    var naturalWidth: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaSize {
     
@@ -79,12 +76,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -105,12 +101,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     

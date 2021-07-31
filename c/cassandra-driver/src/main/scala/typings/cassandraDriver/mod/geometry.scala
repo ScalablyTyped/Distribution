@@ -3,7 +3,6 @@ package typings.cassandraDriver.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometry {
@@ -16,15 +15,17 @@ object geometry {
   }
   object LineString {
     
-    /* static member */
-    @JSImport("cassandra-driver", "geometry.LineString.fromBuffer")
+    @JSImport("cassandra-driver", "geometry.LineString")
     @js.native
-    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.LineString = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("cassandra-driver", "geometry.LineString.fromString")
-    @js.native
-    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.LineString = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.LineString]
+    
+    /* static member */
+    @scala.inline
+    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.LineString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.LineString]
   }
   
   @JSImport("cassandra-driver", "geometry.Point")
@@ -35,15 +36,17 @@ object geometry {
   }
   object Point {
     
-    /* static member */
-    @JSImport("cassandra-driver", "geometry.Point.fromBuffer")
+    @JSImport("cassandra-driver", "geometry.Point")
     @js.native
-    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.Point = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("cassandra-driver", "geometry.Point.fromString")
-    @js.native
-    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.Point = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.Point]
+    
+    /* static member */
+    @scala.inline
+    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.Point]
   }
   
   @JSImport("cassandra-driver", "geometry.Polygon")
@@ -54,14 +57,16 @@ object geometry {
   }
   object Polygon {
     
-    /* static member */
-    @JSImport("cassandra-driver", "geometry.Polygon.fromBuffer")
+    @JSImport("cassandra-driver", "geometry.Polygon")
     @js.native
-    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.Polygon = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("cassandra-driver", "geometry.Polygon.fromString")
-    @js.native
-    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.Polygon = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): typings.cassandraDriver.geometryMod.geometry.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.Polygon]
+    
+    /* static member */
+    @scala.inline
+    def fromString(textValue: String): typings.cassandraDriver.geometryMod.geometry.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(textValue.asInstanceOf[js.Any]).asInstanceOf[typings.cassandraDriver.geometryMod.geometry.Polygon]
   }
 }

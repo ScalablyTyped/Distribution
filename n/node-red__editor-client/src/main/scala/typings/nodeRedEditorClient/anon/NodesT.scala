@@ -3,21 +3,19 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.removeFromGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodesT extends StObject {
   
-  var nodes: js.UndefOr[js.Array[js.Object]] = js.native
+  var nodes: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var t: removeFromGroup = js.native
+  var t: removeFromGroup
 }
 object NodesT {
   
   @scala.inline
-  def apply(t: removeFromGroup): NodesT = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): NodesT = {
+    val __obj = js.Dynamic.literal(t = "removeFromGroup")
     __obj.asInstanceOf[NodesT]
   }
   

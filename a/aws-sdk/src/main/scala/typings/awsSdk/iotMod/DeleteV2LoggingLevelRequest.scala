@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteV2LoggingLevelRequest extends StObject {
   
   /**
     * The name of the resource for which you are configuring logging.
     */
-  var targetName: LogTargetName = js.native
+  var targetName: LogTargetName
   
   /**
     * The type of resource for which you are configuring logging. Must be THING_Group.
     */
-  var targetType: LogTargetType = js.native
+  var targetType: LogTargetType
 }
 object DeleteV2LoggingLevelRequest {
   

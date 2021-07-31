@@ -3,28 +3,35 @@ package typings.reactImgpro
 import typings.reactImgpro.mod.ReactImgpro.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactImgproStrings {
   
   @js.native
-  sealed trait bezier extends Mode
+  sealed trait bezier
+    extends StObject
+       with Mode
   @scala.inline
   def bezier: bezier = "bezier".asInstanceOf[bezier]
   
   @js.native
-  sealed trait bicubic extends Mode
+  sealed trait bicubic
+    extends StObject
+       with Mode
   @scala.inline
   def bicubic: bicubic = "bicubic".asInstanceOf[bicubic]
   
   @js.native
-  sealed trait bilinear extends Mode
+  sealed trait bilinear
+    extends StObject
+       with Mode
   @scala.inline
   def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   
   @js.native
-  sealed trait hermite extends Mode
+  sealed trait hermite
+    extends StObject
+       with Mode
   @scala.inline
   def hermite: hermite = "hermite".asInstanceOf[hermite]
   
@@ -44,7 +51,9 @@ object reactImgproStrings {
   def horizontal_right: horizontal_right = "horizontal_right".asInstanceOf[horizontal_right]
   
   @js.native
-  sealed trait neighbor extends Mode
+  sealed trait neighbor
+    extends StObject
+       with Mode
   @scala.inline
   def neighbor: neighbor = "neighbor".asInstanceOf[neighbor]
   

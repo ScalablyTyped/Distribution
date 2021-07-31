@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object KeySize extends StObject {
   
   /** No size is specified. */
   @js.native
-  sealed trait invalid extends KeySize
+  sealed trait invalid
+    extends StObject
+       with KeySize
   
   /** The key length is 2048 bits. */
   @js.native
-  sealed trait rsa2048 extends KeySize
+  sealed trait rsa2048
+    extends StObject
+       with KeySize
   
   /** The key length is 4096 bits. */
   @js.native
-  sealed trait rsa4096 extends KeySize
+  sealed trait rsa4096
+    extends StObject
+       with KeySize
 }

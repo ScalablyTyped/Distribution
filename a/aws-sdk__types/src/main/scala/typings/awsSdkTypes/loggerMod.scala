@@ -2,7 +2,6 @@ package typings.awsSdkTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
@@ -37,16 +36,15 @@ object loggerMod {
     def warn: typings.awsSdkTypes.awsSdkTypesStrings.warn = "warn".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.warn]
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    def debug(content: js.Object): Unit = js.native
+    def debug(content: js.Object): Unit
     
-    def error(content: js.Object): Unit = js.native
+    def error(content: js.Object): Unit
     
-    def info(content: js.Object): Unit = js.native
+    def info(content: js.Object): Unit
     
-    def warn(content: js.Object): Unit = js.native
+    def warn(content: js.Object): Unit
   }
   object Logger {
     
@@ -78,12 +76,11 @@ object loggerMod {
     }
   }
   
-  @js.native
   trait LoggerOptions extends StObject {
     
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
   }
   object LoggerOptions {
     

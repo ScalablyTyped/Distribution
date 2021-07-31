@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentBuilder[T /* <: Component */] extends StObject {
   
-  def component(): T = js.native
+  def component(): T
   
-  def withProperties[U](properties: U): ComponentBuilder[T] = js.native
+  def withProperties[U](properties: U): ComponentBuilder[T]
   
-  def withValidation(validation: js.Function1[/* component */ T, Boolean]): ComponentBuilder[T] = js.native
+  def withValidation(validation: js.Function1[/* component */ T, Boolean]): ComponentBuilder[T]
 }
 object ComponentBuilder {
   
@@ -27,7 +25,7 @@ object ComponentBuilder {
   }
   
   @scala.inline
-  implicit class ComponentBuilderMutableBuilder[Self <: ComponentBuilder[_], T /* <: Component */] (val x: Self with ComponentBuilder[T]) extends AnyVal {
+  implicit class ComponentBuilderMutableBuilder[Self <: ComponentBuilder[?], T /* <: Component */] (val x: Self & ComponentBuilder[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: () => T): Self = StObject.set(x, "component", js.Any.fromFunction0(value))

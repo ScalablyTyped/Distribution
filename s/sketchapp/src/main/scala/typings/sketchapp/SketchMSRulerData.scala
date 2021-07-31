@@ -3,23 +3,21 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.rulerData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSRulerData extends StObject {
   
-  var _class: rulerData = js.native
+  var _class: rulerData
   
-  var base: Double = js.native
+  var base: Double
   
-  var guides: js.Array[_] = js.native
+  var guides: js.Array[js.Any]
 }
 object SketchMSRulerData {
   
   @scala.inline
-  def apply(_class: rulerData, base: Double, guides: js.Array[_]): SketchMSRulerData = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], guides = guides.asInstanceOf[js.Any])
+  def apply(base: Double, guides: js.Array[js.Any]): SketchMSRulerData = {
+    val __obj = js.Dynamic.literal(_class = "rulerData", base = base.asInstanceOf[js.Any], guides = guides.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSRulerData]
   }
   
@@ -30,7 +28,7 @@ object SketchMSRulerData {
     def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGuides(value: js.Array[_]): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
+    def setGuides(value: js.Array[js.Any]): Self = StObject.set(x, "guides", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGuidesVarargs(value: js.Any*): Self = StObject.set(x, "guides", js.Array(value :_*))

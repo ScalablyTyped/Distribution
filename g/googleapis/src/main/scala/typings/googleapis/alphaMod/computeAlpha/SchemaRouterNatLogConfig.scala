@@ -2,25 +2,23 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of logging on a NAT.
   */
-@js.native
 trait SchemaRouterNatLogConfig extends StObject {
   
   /**
     * Indicates whether or not to export logs. This is false by default.
     */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the desired filtering of logs on this NAT. If unspecified, logs
     * are exported for all connections handled by this NAT.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
 }
 object SchemaRouterNatLogConfig {
   

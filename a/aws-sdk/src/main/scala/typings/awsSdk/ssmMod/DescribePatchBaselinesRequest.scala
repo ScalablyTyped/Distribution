@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePatchBaselinesRequest extends StObject {
   
   /**
     * Each element in the array is a structure containing:  Key: (string, "NAME_PREFIX" or "OWNER") Value: (array of strings, exactly 1 entry, between 1 and 255 characters)
     */
-  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.native
+  var Filters: js.UndefOr[PatchOrchestratorFilterList] = js.undefined
   
   /**
     * The maximum number of patch baselines to return (per page).
     */
-  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.native
+  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribePatchBaselinesRequest {
   

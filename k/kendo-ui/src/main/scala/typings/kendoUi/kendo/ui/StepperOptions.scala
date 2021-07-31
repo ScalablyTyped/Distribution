@@ -5,29 +5,27 @@ import typings.kendoUi.kendoUiStrings.horizontal
 import typings.kendoUi.kendoUiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepperOptions extends StObject {
   
-  var activate: js.UndefOr[js.Function1[/* e */ StepperActivateEvent, Unit]] = js.native
+  var activate: js.UndefOr[js.Function1[/* e */ StepperActivateEvent, Unit]] = js.undefined
   
-  var indicator: js.UndefOr[Boolean] = js.native
+  var indicator: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[Boolean] = js.native
+  var label: js.UndefOr[Boolean] = js.undefined
   
-  var linear: js.UndefOr[Boolean] = js.native
+  var linear: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String | horizontal | vertical] = js.native
+  var orientation: js.UndefOr[String | horizontal | vertical] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ StepperSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ StepperSelectEvent, Unit]] = js.undefined
   
-  var selectOnFocus: js.UndefOr[Boolean] = js.native
+  var selectOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var steps: js.Array[StepOptions | String] = js.native
+  var steps: js.Array[StepOptions | String]
 }
 object StepperOptions {
   

@@ -2,10 +2,8 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemEventData extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait SystemEventData extends StObject {
     *
     * @since 2.4
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Value of the system event data item.
     *
     * @since 2.4
     */
-  var value: String = js.native
+  var value: String
 }
 object SystemEventData {
   

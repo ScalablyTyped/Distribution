@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "TemplateRef")
@@ -29,5 +28,5 @@ abstract class TemplateRef[C] () extends StObject {
     * data-binding and injection context from the original location.
     *
     */
-  def elementRef: ElementRef[_] = js.native
+  def elementRef: ElementRef[js.Any] = js.native
 }

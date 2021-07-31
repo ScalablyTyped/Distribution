@@ -2,21 +2,19 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchQuantumTasksResponse extends StObject {
   
   /**
     * A token used for pagination of results, or null if there are no additional results. Use the token value in a subsequent request to continue results where the previous request ended.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * An array of QuantumTaskSummary objects for tasks that match the specified filters.
     */
-  var quantumTasks: QuantumTaskSummaryList = js.native
+  var quantumTasks: QuantumTaskSummaryList
 }
 object SearchQuantumTasksResponse {
   

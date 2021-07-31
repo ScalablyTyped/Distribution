@@ -3,13 +3,11 @@ package typings.webxr.mod
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRHitResult extends StObject {
   
-  var hitMatrix: Float32Array = js.native
+  var hitMatrix: Float32Array
 }
 object XRHitResult {
   

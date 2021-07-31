@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIndicesResponse extends StObject {
   
   /**
     * An array of summary information for one or more indexes.
     */
-  var IndexConfigurationSummaryItems: js.UndefOr[IndexConfigurationSummaryList] = js.native
+  var IndexConfigurationSummaryItems: js.UndefOr[IndexConfigurationSummaryList] = js.undefined
   
   /**
     * If the response is truncated, Amazon Kendra returns this token that you can use in the subsequent request to retrieve the next set of indexes.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kendraMod.NextToken] = js.undefined
 }
 object ListIndicesResponse {
   

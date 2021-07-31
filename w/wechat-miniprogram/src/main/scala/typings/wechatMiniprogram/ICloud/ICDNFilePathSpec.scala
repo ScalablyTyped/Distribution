@@ -3,22 +3,20 @@ package typings.wechatMiniprogram.ICloud
 import typings.wechatMiniprogram.wechatMiniprogramStrings.filePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICDNFilePathSpec extends StObject {
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var `type`: filePath = js.native
+  var `type`: filePath
 }
 object ICDNFilePathSpec {
   
   @scala.inline
-  def apply(filePath: String, `type`: filePath): ICDNFilePathSpec = {
+  def apply(filePath: String): ICDNFilePathSpec = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("filePath")
     __obj.asInstanceOf[ICDNFilePathSpec]
   }
   

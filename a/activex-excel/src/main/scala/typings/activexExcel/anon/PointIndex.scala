@@ -2,15 +2,13 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointIndex extends StObject {
   
-  val PointIndex: Double = js.native
+  val PointIndex: Double
   
-  val SeriesIndex: Double = js.native
+  val SeriesIndex: Double
 }
 object PointIndex {
   

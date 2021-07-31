@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPerfSamplesResponse extends StObject {
   
   /**
     * Optional, returned if result size exceeds the page size specified in the request (or the default page size, 500, if unspecified). It indicates the last sample timestamp to be used
     * as page_token in subsequent request
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var perfSamples: js.UndefOr[js.Array[PerfSample]] = js.native
+  var perfSamples: js.UndefOr[js.Array[PerfSample]] = js.undefined
 }
 object ListPerfSamplesResponse {
   

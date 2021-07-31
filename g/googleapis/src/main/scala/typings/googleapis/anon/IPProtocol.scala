@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPProtocol extends StObject {
   
-  var IPProtocol: js.UndefOr[String] = js.native
+  var IPProtocol: js.UndefOr[String] = js.undefined
   
-  var ports: js.UndefOr[js.Array[String]] = js.native
+  var ports: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IPProtocol {
   

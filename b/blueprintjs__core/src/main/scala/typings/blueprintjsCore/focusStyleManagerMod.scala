@@ -2,23 +2,23 @@ package typings.blueprintjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusStyleManagerMod {
   
   object FocusStyleManager {
     
-    @JSImport("@blueprintjs/core/lib/esm/accessibility/focusStyleManager", "FocusStyleManager.alwaysShowFocus")
+    @JSImport("@blueprintjs/core/lib/esm/accessibility/focusStyleManager", "FocusStyleManager")
     @js.native
-    def alwaysShowFocus(): Boolean | Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@blueprintjs/core/lib/esm/accessibility/focusStyleManager", "FocusStyleManager.isActive")
-    @js.native
-    def isActive(): Boolean = js.native
+    @scala.inline
+    def alwaysShowFocus(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysShowFocus")().asInstanceOf[Boolean | Unit]
     
-    @JSImport("@blueprintjs/core/lib/esm/accessibility/focusStyleManager", "FocusStyleManager.onlyShowFocusOnTabs")
-    @js.native
-    def onlyShowFocusOnTabs(): Boolean | Unit = js.native
+    @scala.inline
+    def isActive(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")().asInstanceOf[Boolean]
+    
+    @scala.inline
+    def onlyShowFocusOnTabs(): Boolean | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyShowFocusOnTabs")().asInstanceOf[Boolean | Unit]
   }
 }

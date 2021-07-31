@@ -3,20 +3,20 @@ package typings.vueTemplateCompiler.mod
 import typings.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompilerOptionsWithSourceRange extends CompilerOptions {
+trait CompilerOptionsWithSourceRange
+  extends StObject
+     with CompilerOptions {
   
   @JSName("outputSourceRange")
-  var outputSourceRange_CompilerOptionsWithSourceRange: `true` = js.native
+  var outputSourceRange_CompilerOptionsWithSourceRange: `true`
 }
 object CompilerOptionsWithSourceRange {
   
   @scala.inline
-  def apply(outputSourceRange: `true`): CompilerOptionsWithSourceRange = {
-    val __obj = js.Dynamic.literal(outputSourceRange = outputSourceRange.asInstanceOf[js.Any])
+  def apply(): CompilerOptionsWithSourceRange = {
+    val __obj = js.Dynamic.literal(outputSourceRange = true)
     __obj.asInstanceOf[CompilerOptionsWithSourceRange]
   }
   

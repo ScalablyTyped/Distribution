@@ -2,17 +2,15 @@ package typings.azureKustoData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mgmt extends StObject {
     
-    var mgmt: String = js.native
+    var mgmt: String
     
-    var query: String = js.native
+    var query: String
   }
   object Mgmt {
     

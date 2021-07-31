@@ -2,13 +2,11 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextMetrics extends StObject {
   
-  var width: Double = js.native
+  var width: Double
 }
 object TextMetrics {
   

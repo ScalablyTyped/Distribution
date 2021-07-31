@@ -10,9 +10,9 @@ Integrate Stylable into your node application
 | ------------------ | :-------------: |
 | Full name          | @stylable/node |
 | Keywords           | - |
-| # releases         | 91 |
-| # dependents       | 8 |
-| # downloads        | 216999 |
+| # releases         | 99 |
+| # dependents       | 9 |
+| # downloads        | 313886 |
 | # stars            | 0 |
 
 ## Links

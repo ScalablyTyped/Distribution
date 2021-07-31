@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link TextRange} which is explicitly marked as an index entry. This is the base service of index marks for {@link DocumentIndex} , {@link
   * ContentIndex} , and {@link UserIndex} .
   */
-@js.native
-trait BaseIndexMark extends TextContent {
+trait BaseIndexMark
+  extends StObject
+     with TextContent {
   
   /**
     * the string that will be inserted into the corresponding index. If AlternativeText is empty then the string that is marked by the {@link TextRange} is
     * inserted into the index.
     */
-  var AlternativeText: String = js.native
+  var AlternativeText: String
 }
 object BaseIndexMark {
   

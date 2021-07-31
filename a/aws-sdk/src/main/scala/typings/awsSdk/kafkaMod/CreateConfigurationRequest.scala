@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConfigurationRequest extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait CreateConfigurationRequest extends StObject {
     The description of the configuration.
     
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The versions of Apache Kafka with which you can use this MSK configuration.
     
     */
-  var KafkaVersions: js.UndefOr[listOfString] = js.native
+  var KafkaVersions: js.UndefOr[listOfString] = js.undefined
   
   /**
     * 
     The name of the configuration.
     
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * 
@@ -35,7 +33,7 @@ trait CreateConfigurationRequest extends StObject {
     When using the AWS Management Console, the SDK, or the AWS CLI, the contents of server.properties can be in plaintext.
     
     */
-  var ServerProperties: _Blob = js.native
+  var ServerProperties: _Blob
 }
 object CreateConfigurationRequest {
   

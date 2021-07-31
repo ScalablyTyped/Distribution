@@ -4,29 +4,27 @@ import typings.aureliaDependencyInjection.mod.Container
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewEngineHooks_ extends StObject {
   
   /**
     * Invoked after a template is compiled.
     * @param viewFactory The view factory that was produced from the compilation process.
     */
-  var afterCompile: js.UndefOr[js.Function1[/* viewFactory */ ViewFactory, Unit]] = js.native
+  var afterCompile: js.UndefOr[js.Function1[/* viewFactory */ ViewFactory, Unit]] = js.undefined
   
   /**
     * Invoked after a view is created.
     * @param view The view that was created by the factory.
     */
-  var afterCreate: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.native
+  var afterCreate: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.undefined
   
   /**
     * Invoked after the bindingContext and overrideContext are configured on the view but before the view is bound.
     * @param view The view that was created by the factory.
     */
-  var beforeBind: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.native
+  var beforeBind: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.undefined
   
   /**
     * Invoked before a template is compiled.
@@ -41,7 +39,7 @@ trait ViewEngineHooks_ extends StObject {
       /* instruction */ ViewCompileInstruction, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Invoked before a view is created.
@@ -58,13 +56,13 @@ trait ViewEngineHooks_ extends StObject {
       /* instruction */ ViewCreateInstruction, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Invoked before the view is unbind. The bindingContext and overrideContext are still available on the view.
     * @param view The view that was created by the factory.
     */
-  var beforeUnbind: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.native
+  var beforeUnbind: js.UndefOr[js.Function1[/* view */ View_, Unit]] = js.undefined
 }
 object ViewEngineHooks_ {
   

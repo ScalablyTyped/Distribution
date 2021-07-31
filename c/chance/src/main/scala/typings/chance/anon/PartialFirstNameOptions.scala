@@ -5,16 +5,14 @@ import typings.chance.chanceStrings.female
 import typings.chance.chanceStrings.male
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.FirstNameOptions> */
-@js.native
 trait PartialFirstNameOptions extends StObject {
   
-  var gender: js.UndefOr[male | female] = js.native
+  var gender: js.UndefOr[male | female] = js.undefined
   
-  var nationality: js.UndefOr[FirstNameNationalities] = js.native
+  var nationality: js.UndefOr[FirstNameNationalities] = js.undefined
 }
 object PartialFirstNameOptions {
   

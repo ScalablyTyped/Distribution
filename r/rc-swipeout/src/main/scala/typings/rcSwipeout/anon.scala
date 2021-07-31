@@ -4,27 +4,25 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoClose extends StObject {
     
-    var autoClose: Boolean = js.native
+    var autoClose: Boolean
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var left: js.Array[scala.Nothing] = js.native
+    var left: js.Array[scala.Nothing]
     
-    def onClose(): Unit = js.native
+    def onClose(): Unit
     
-    def onOpen(): Unit = js.native
+    def onOpen(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var right: js.Array[scala.Nothing] = js.native
+    var right: js.Array[scala.Nothing]
   }
   object AutoClose {
     
@@ -74,22 +72,21 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundColor extends StObject {
     
-    var backgroundColor: String = js.native
+    var backgroundColor: String
     
-    var color: String = js.native
+    var color: String
     
-    var component: Element = js.native
+    var component: Element
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var onPress: js.Any = js.native
+    var onPress: js.Any
     
-    var text: js.Any = js.native
+    var text: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BackgroundColor {
     
@@ -134,18 +131,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var text: ReactNode = js.native
+    var text: ReactNode
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object ClassName {
     

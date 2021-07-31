@@ -9,7 +9,6 @@ import typings.std.Event
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,7 +30,9 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("nise", "fakeXhr.FakeXMLHttpRequest")
     @js.native
-    class FakeXMLHttpRequestCls () extends FakeXMLHttpRequest
+    class FakeXMLHttpRequestCls ()
+      extends StObject
+         with FakeXMLHttpRequest
     
     type _To = FakeXHR_
     
@@ -39,7 +40,6 @@ object mod {
     override def _to: FakeXHR_ = ^
   }
   
-  @js.native
   trait FakeServerOptions extends StObject {
     
     /**
@@ -47,18 +47,18 @@ object mod {
       * The default timeout is 10ms but you can control it through the autoRespondAfter property.
       * Note that this feature is intended to help during mockup development, and is not suitable for use in tests.
       */
-    var autoRespond: Boolean = js.native
+    var autoRespond: Boolean
     
     /**
       * When autoRespond is true, respond to requests after this number of milliseconds. Default is 10.
       */
-    var autoRespondAfter: Double = js.native
+    var autoRespondAfter: Double
     
     /**
       * If set to true, server will find _method parameter in POST body and recognize that as the actual method.
       * Supports a pattern common to Ruby on Rails applications. For custom HTTP method faking, override server.getHTTPMethod(request).
       */
-    var fakeHTTPMethods: Boolean = js.native
+    var fakeHTTPMethods: Boolean
     
     /**
       * If set, the server will respond to every request immediately and synchronously.
@@ -66,7 +66,7 @@ object mod {
       * As this is synchronous and immediate, this is not suitable for simulating actual network latency in tests or mockups.
       * To simulate network latency with automatic responses, see server.autoRespond and server.autoRespondAfter.
       */
-    var respondImmediately: Boolean = js.native
+    var respondImmediately: Boolean
   }
   object FakeServerOptions {
     
@@ -106,7 +106,9 @@ object mod {
   }
   
   @js.native
-  trait FakeServer_ extends FakeServerOptions {
+  trait FakeServer_
+    extends StObject
+       with FakeServerOptions {
     
     var firstRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
     
@@ -175,7 +177,7 @@ object mod {
       * Responds to all method requests to the given URL with the given response.
       * method is an HTTP verb.
       */
-    def respondWith(method: String, url: String, response: js.Array[_]): Unit = js.native
+    def respondWith(method: String, url: String, response: js.Array[js.Any]): Unit = js.native
     /**
       * Responds to all method requests to URLs matching the regular expression.
       */
@@ -187,14 +189,14 @@ object mod {
     /**
       * Responds to all method requests to URLs matching the regular expression.
       */
-    def respondWith(method: String, url: RegExp, response: js.Array[_]): Unit = js.native
+    def respondWith(method: String, url: RegExp, response: js.Array[js.Any]): Unit = js.native
     /**
       * Causes the server to respond to any request not matched by another response with the provided data. The default catch-all response is [404, {}, ""].
       * Default status is 200 and default headers are none.
       * When the response is a Function, it will be passed the request object. You must manually call respond on it to complete the request.
       * @param response An Array with status, headers and response body, e.g. [200, { "Content-Type": "text/html", "Content-Length": 2 }, "OK"]
       */
-    def respondWith(response: js.Array[_]): Unit = js.native
+    def respondWith(response: js.Array[js.Any]): Unit = js.native
     /**
       * Responds to all requests to given URL, e.g. /posts/1.
       */
@@ -206,7 +208,7 @@ object mod {
     /**
       * Responds to all requests to given URL, e.g. /posts/1.
       */
-    def respondWith(url: String, response: js.Array[_]): Unit = js.native
+    def respondWith(url: String, response: js.Array[js.Any]): Unit = js.native
     /**
       * URL may be a regular expression, e.g. /\\/post\\//\\d+
       * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
@@ -221,7 +223,7 @@ object mod {
       * URL may be a regular expression, e.g. /\\/post\\//\\d+
       * If the response is a Function, it will be passed any capture groups from the regular expression along with the XMLHttpRequest object:
       */
-    def respondWith(url: RegExp, response: js.Array[_]): Unit = js.native
+    def respondWith(url: RegExp, response: js.Array[js.Any]): Unit = js.native
     
     def restore(): Unit = js.native
     
@@ -230,25 +232,24 @@ object mod {
     var thirdRequest: js.UndefOr[FakeXMLHttpRequest] = js.native
   }
   
-  @js.native
   trait FakeUploadProgress extends StObject {
     
-    def addEventListener(event: String, listener: js.Function1[/* e */ Event, _]): Unit = js.native
+    def addEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
     
-    def dispatchEvent(event: Event): Unit = js.native
+    def dispatchEvent(event: Event): Unit
     
-    var eventListeners: Abort = js.native
+    var eventListeners: Abort
     
-    def removeEventListener(event: String, listener: js.Function1[/* e */ Event, _]): Unit = js.native
+    def removeEventListener(event: String, listener: js.Function1[/* e */ Event, js.Any]): Unit
   }
   object FakeUploadProgress {
     
     @scala.inline
     def apply(
-      addEventListener: (String, js.Function1[/* e */ Event, _]) => Unit,
+      addEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit,
       dispatchEvent: Event => Unit,
       eventListeners: Abort,
-      removeEventListener: (String, js.Function1[/* e */ Event, _]) => Unit
+      removeEventListener: (String, js.Function1[/* e */ Event, js.Any]) => Unit
     ): FakeUploadProgress = {
       val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), eventListeners = eventListeners.asInstanceOf[js.Any], removeEventListener = js.Any.fromFunction2(removeEventListener))
       __obj.asInstanceOf[FakeUploadProgress]
@@ -258,7 +259,7 @@ object mod {
     implicit class FakeUploadProgressMutableBuilder[Self <: FakeUploadProgress] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddEventListener(value: (String, js.Function1[/* e */ Event, _]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      def setAddEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
       @scala.inline
       def setDispatchEvent(value: Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
@@ -267,16 +268,15 @@ object mod {
       def setEventListeners(value: Abort): Self = StObject.set(x, "eventListeners", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, _]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+      def setRemoveEventListener(value: (String, js.Function1[/* e */ Event, js.Any]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait FakeXHR_ extends StObject {
     
-    var FakeXMLHttpRequest: FakeXMLHttpRequestStatic = js.native
+    var FakeXMLHttpRequest: FakeXMLHttpRequestStatic
     
-    def useFakeXMLHttpRequest(): FakeXMLHttpRequestStatic = js.native
+    def useFakeXMLHttpRequest(): FakeXMLHttpRequestStatic
   }
   object FakeXHR_ {
     
@@ -364,9 +364,9 @@ object mod {
       * Calls the above three methods.
       */
     def respond(status: Double): Unit = js.native
-    def respond(status: Double, headers: js.UndefOr[scala.Nothing], body: String): Unit = js.native
     def respond(status: Double, headers: js.Any): Unit = js.native
     def respond(status: Double, headers: js.Any, body: String): Unit = js.native
+    def respond(status: Double, headers: Unit, body: String): Unit = js.native
     
     /**
       * When using respond, this property is populated with a parsed document if response headers indicate as much (see the spec)
@@ -412,7 +412,9 @@ object mod {
   }
   
   @js.native
-  trait FakeXMLHttpRequestStatic extends Instantiable0[FakeXMLHttpRequest] {
+  trait FakeXMLHttpRequestStatic
+    extends StObject
+       with Instantiable0[FakeXMLHttpRequest] {
     
     /**
       * Add a filter that will decide whether or not to fake a request.

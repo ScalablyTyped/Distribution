@@ -2,53 +2,53 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Polyline extends IPrimitive {
+trait Polyline
+  extends StObject
+     with IPrimitive {
   
   /**
     * Returns whether the polyline is generalizable based on zoom level or not.
     * @returns whether the polyline is generalizable based on zoom level or not.
     */
-  def getGeneralizable(): Boolean = js.native
+  def getGeneralizable(): Boolean
   
   /**
     * Gets the locations that make up the polyline.
     * @returns An array that defines the path of the polyline.
     */
-  def getLocations(): js.Array[Location] = js.native
+  def getLocations(): js.Array[Location]
   
   /**
     * Gets the color of the border stroke of the polyline. Will be string or Color object depending on the the what method was used in the polyline options.
     * @returns The stroke color of the polyline.
     */
-  def getStrokeColor(): String | Color = js.native
+  def getStrokeColor(): String | Color
   
   /**
     * Gets the stroke dash array of the polyline, in format of either array or string, whichever user provides.
     * @returns The stroke dash array of the polyline.
     */
-  def getStrokeDashArray(): js.Array[Double] | String = js.native
+  def getStrokeDashArray(): js.Array[Double] | String
   
   /**
     * Gets the thickness of the border stroke of the polyline.
     * @returns The thickness of the border stroke of the polyline as a number.
     */
-  def getStrokeThickness(): Double = js.native
+  def getStrokeThickness(): Double
   
   /**
     * Sets locations of the polyline.
     * @param locations A Location[] that defines path of the polyline
     */
-  def setLocations(locations: js.Array[Location]): Unit = js.native
+  def setLocations(locations: js.Array[Location]): Unit
   
   /**
     * Sets the properties for the polyline.
     * @param options The IPolylineOptions object containing the options to customize the polyline.
     */
-  def setOptions(options: IPolylineOptions): Unit = js.native
+  def setOptions(options: IPolylineOptions): Unit
 }
 object Polyline {
   

@@ -3,14 +3,13 @@ package typings.registryAuthToken
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DictregistryUrls
-    extends /**
+    extends StObject
+       with /**
     * Registry url's with token information
     */
   /* registryUrls */ StringDictionary[js.UndefOr[String]] {
@@ -18,7 +17,7 @@ object anon {
     /**
       * A registry url used for matching
       */
-    var registry: js.UndefOr[String] = js.native
+    var registry: js.UndefOr[String] = js.undefined
   }
   object DictregistryUrls {
     

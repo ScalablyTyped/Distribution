@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait GridColumnProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     */
   var gridColumn: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridColumnProps {
   
@@ -31,12 +29,12 @@ object GridColumnProps {
   }
   
   @scala.inline
-  implicit class GridColumnPropsMutableBuilder[Self <: GridColumnProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with GridColumnProps[ThemeType]) extends AnyVal {
+  implicit class GridColumnPropsMutableBuilder[Self <: GridColumnProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridColumnProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setGridColumn(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
@@ -48,6 +46,8 @@ object GridColumnProps {
     def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
     
     @scala.inline
-    def setGridColumnVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
+    def setGridColumnVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridColumn */ js.Any) | Null)*
+    ): Self = StObject.set(x, "gridColumn", js.Array(value :_*))
   }
 }

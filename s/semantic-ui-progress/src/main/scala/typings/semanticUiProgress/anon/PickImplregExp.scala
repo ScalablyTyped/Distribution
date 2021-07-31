@@ -3,14 +3,12 @@ package typings.semanticUiProgress.anon
 import typings.semanticUiProgress.SemanticUI.Progress.RegExpSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'regExp'> */
-@js.native
 trait PickImplregExp extends StObject {
   
-  var regExp: RegExpSettings = js.native
+  var regExp: RegExpSettings
 }
 object PickImplregExp {
   

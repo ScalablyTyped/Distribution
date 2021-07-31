@@ -5,21 +5,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofglobalXpub extends StObject {
   
-  def canAddToArray(array: js.Array[GlobalXpub], item: GlobalXpub, dupeSet: Set[String]): Boolean = js.native
+  def canAddToArray(array: js.Array[GlobalXpub], item: GlobalXpub, dupeSet: Set[String]): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.GlobalXpub */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.GlobalXpub */ Boolean
   
-  def decode(keyVal: KeyValue): GlobalXpub = js.native
+  def decode(keyVal: KeyValue): GlobalXpub
   
-  def encode(data: GlobalXpub): KeyValue = js.native
+  def encode(data: GlobalXpub): KeyValue
   
-  val expected: /* "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }" */ String = js.native
+  val expected: /* "{ masterFingerprint: Buffer; extendedPubkey: Buffer; path: string; }" */ String
 }
 object TypeofglobalXpub {
   

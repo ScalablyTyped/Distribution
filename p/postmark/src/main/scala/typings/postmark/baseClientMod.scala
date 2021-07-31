@@ -10,14 +10,15 @@ import typings.postmark.modelsMod.ClientOptions.Configuration
 import typings.postmark.modelsMod.FilteringParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseClientMod {
   
   @JSImport("postmark/dist/client/BaseClient", JSImport.Default)
   @js.native
-  abstract class default protected () extends BaseClient {
+  abstract class default protected ()
+    extends StObject
+       with BaseClient {
     protected def this(token: String, authHeader: String) = this()
     protected def this(token: String, authHeader: String, configOptions: Configuration) = this()
   }
@@ -69,9 +70,9 @@ object baseClientMod {
     
     var getRequestTimeoutInSeconds: js.Any = js.native
     
-    def httpClient(config: AxiosRequestConfig): AxiosPromise[_] = js.native
-    def httpClient(url: String): AxiosPromise[_] = js.native
-    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native
+    def httpClient(config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
+    def httpClient(url: String): AxiosPromise[js.Any] = js.native
+    def httpClient(url: String, config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
     @JSName("httpClient")
     val httpClient_Original: AxiosInstance = js.native
     
@@ -134,14 +135,9 @@ object baseClientMod {
       * @see processRequest for more details.
       */
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String): js.Promise[T] = js.native
-    /* protected */ def processRequestWithoutBody[T](
-      method: HttpMethod,
-      path: String,
-      queryParameters: js.UndefOr[scala.Nothing],
-      callback: Callback[T]
-    ): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object): js.Promise[T] = js.native
     /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: js.Object, callback: Callback[T]): js.Promise[T] = js.native
+    /* protected */ def processRequestWithoutBody[T](method: HttpMethod, path: String, queryParameters: Unit, callback: Callback[T]): js.Promise[T] = js.native
     
     def setClientOptions(configOptions: Configuration): Unit = js.native
     

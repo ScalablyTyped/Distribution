@@ -4,24 +4,24 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a method to access a collection of charts in a table or spreadsheet. */
-@js.native
-trait XTableChartsSupplier extends XInterface {
+trait XTableChartsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of charts.
     * @see com.sun.star.table.TableCharts
     */
-  val Charts: XTableCharts = js.native
+  val Charts: XTableCharts
   
   /**
     * returns the collection of charts.
     * @see com.sun.star.table.TableCharts
     */
-  def getCharts(): XTableCharts = js.native
+  def getCharts(): XTableCharts
 }
 object XTableChartsSupplier {
   

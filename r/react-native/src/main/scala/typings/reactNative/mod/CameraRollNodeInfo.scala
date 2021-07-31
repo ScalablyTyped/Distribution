@@ -2,19 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraRollNodeInfo extends StObject {
   
-  var group_name: String = js.native
+  var group_name: String
   
-  var image: Image = js.native
+  var image: Image
   
-  var location: js.Any = js.native
+  var location: js.Any
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object CameraRollNodeInfo {
   

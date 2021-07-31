@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChange extends StObject {
   
-  val modifiedEndLineNumber: Double = js.native
+  val modifiedEndLineNumber: Double
   
-  val modifiedStartLineNumber: Double = js.native
+  val modifiedStartLineNumber: Double
   
-  val originalEndLineNumber: Double = js.native
+  val originalEndLineNumber: Double
   
-  val originalStartLineNumber: Double = js.native
+  val originalStartLineNumber: Double
 }
 object IChange {
   

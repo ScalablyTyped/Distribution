@@ -2,146 +2,144 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Auto Scaling group.
     */
-  var AutoScalingGroupARN: js.UndefOr[ResourceName] = js.native
+  var AutoScalingGroupARN: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: XmlStringMaxLen255 = js.native
+  var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
     * One or more Availability Zones for the group.
     */
-  var AvailabilityZones: typings.awsSdk.autoscalingMod.AvailabilityZones = js.native
+  var AvailabilityZones: typings.awsSdk.autoscalingMod.AvailabilityZones
   
   /**
     * Indicates whether Capacity Rebalancing is enabled.
     */
-  var CapacityRebalance: js.UndefOr[CapacityRebalanceEnabled] = js.native
+  var CapacityRebalance: js.UndefOr[CapacityRebalanceEnabled] = js.undefined
   
   /**
     * The date and time the group was created.
     */
-  var CreatedTime: TimestampType = js.native
+  var CreatedTime: TimestampType
   
   /**
     * The duration of the default cooldown period, in seconds.
     */
-  var DefaultCooldown: Cooldown = js.native
+  var DefaultCooldown: Cooldown
   
   /**
     * The desired size of the group.
     */
-  var DesiredCapacity: AutoScalingGroupDesiredCapacity = js.native
+  var DesiredCapacity: AutoScalingGroupDesiredCapacity
   
   /**
     * The metrics enabled for the group.
     */
-  var EnabledMetrics: js.UndefOr[typings.awsSdk.autoscalingMod.EnabledMetrics] = js.native
+  var EnabledMetrics: js.UndefOr[typings.awsSdk.autoscalingMod.EnabledMetrics] = js.undefined
   
   /**
     * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service.
     */
-  var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.autoscalingMod.HealthCheckGracePeriod] = js.native
+  var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.autoscalingMod.HealthCheckGracePeriod] = js.undefined
   
   /**
     * The service to use for the health checks. The valid values are EC2 and ELB. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks.
     */
-  var HealthCheckType: XmlStringMaxLen32 = js.native
+  var HealthCheckType: XmlStringMaxLen32
   
   /**
     * The EC2 instances associated with the group.
     */
-  var Instances: js.UndefOr[typings.awsSdk.autoscalingMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.autoscalingMod.Instances] = js.undefined
   
   /**
     * The name of the associated launch configuration.
     */
-  var LaunchConfigurationName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var LaunchConfigurationName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The launch template for the group.
     */
-  var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.native
+  var LaunchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
     * One or more load balancers associated with the group.
     */
-  var LoadBalancerNames: js.UndefOr[typings.awsSdk.autoscalingMod.LoadBalancerNames] = js.native
+  var LoadBalancerNames: js.UndefOr[typings.awsSdk.autoscalingMod.LoadBalancerNames] = js.undefined
   
   /**
     * The maximum amount of time, in seconds, that an instance can be in service. Valid Range: Minimum value of 0.
     */
-  var MaxInstanceLifetime: js.UndefOr[typings.awsSdk.autoscalingMod.MaxInstanceLifetime] = js.native
+  var MaxInstanceLifetime: js.UndefOr[typings.awsSdk.autoscalingMod.MaxInstanceLifetime] = js.undefined
   
   /**
     * The maximum size of the group.
     */
-  var MaxSize: AutoScalingGroupMaxSize = js.native
+  var MaxSize: AutoScalingGroupMaxSize
   
   /**
     * The minimum size of the group.
     */
-  var MinSize: AutoScalingGroupMinSize = js.native
+  var MinSize: AutoScalingGroupMinSize
   
   /**
     * The mixed instances policy for the group.
     */
-  var MixedInstancesPolicy: js.UndefOr[typings.awsSdk.autoscalingMod.MixedInstancesPolicy] = js.native
+  var MixedInstancesPolicy: js.UndefOr[typings.awsSdk.autoscalingMod.MixedInstancesPolicy] = js.undefined
   
   /**
     * Indicates whether newly launched instances are protected from termination by Amazon EC2 Auto Scaling when scaling in.
     */
-  var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.native
+  var NewInstancesProtectedFromScaleIn: js.UndefOr[InstanceProtected] = js.undefined
   
   /**
     * The name of the placement group into which to launch your instances, if any.
     */
-  var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.native
+  var PlacementGroup: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf.
     */
-  var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.native
+  var ServiceLinkedRoleARN: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The current state of the group when the DeleteAutoScalingGroup operation is in progress.
     */
-  var Status: js.UndefOr[XmlStringMaxLen255] = js.native
+  var Status: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The suspended processes associated with the group.
     */
-  var SuspendedProcesses: js.UndefOr[typings.awsSdk.autoscalingMod.SuspendedProcesses] = js.native
+  var SuspendedProcesses: js.UndefOr[typings.awsSdk.autoscalingMod.SuspendedProcesses] = js.undefined
   
   /**
     * The tags for the group.
     */
-  var Tags: js.UndefOr[TagDescriptionList] = js.native
+  var Tags: js.UndefOr[TagDescriptionList] = js.undefined
   
   /**
     * The Amazon Resource Names (ARN) of the target groups for your load balancer.
     */
-  var TargetGroupARNs: js.UndefOr[typings.awsSdk.autoscalingMod.TargetGroupARNs] = js.native
+  var TargetGroupARNs: js.UndefOr[typings.awsSdk.autoscalingMod.TargetGroupARNs] = js.undefined
   
   /**
     * The termination policies for the group.
     */
-  var TerminationPolicies: js.UndefOr[typings.awsSdk.autoscalingMod.TerminationPolicies] = js.native
+  var TerminationPolicies: js.UndefOr[typings.awsSdk.autoscalingMod.TerminationPolicies] = js.undefined
   
   /**
     * One or more subnet IDs, if applicable, separated by commas.
     */
-  var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.native
+  var VPCZoneIdentifier: js.UndefOr[XmlStringMaxLen2047] = js.undefined
 }
 object AutoScalingGroup {
   

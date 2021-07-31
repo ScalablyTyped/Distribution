@@ -11,97 +11,95 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonModal extends StObject {
   
   /**
     * If `true`, the modal will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the modal will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The component to display inside of the modal.
     */
-  var component: ComponentRef = js.native
+  var component: ComponentRef
   
   /**
     * The data to pass to the modal component.
     */
-  var componentProps: js.UndefOr[ComponentProps[Null]] = js.native
+  var componentProps: js.UndefOr[ComponentProps[Null]] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Animation to use when the modal is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the modal is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the modal has dismissed.
     */
-  var onIonModalDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonModalDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the modal has presented.
     */
-  var onIonModalDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonModalDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the modal has dismissed.
     */
-  var onIonModalWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonModalWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the modal has presented.
     */
-  var onIonModalWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonModalWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * The element that presented the modal. This is used for card presentation effects and for stacking multiple modals on top of each other. Only applies in iOS mode.
     */
-  var presentingElement: js.UndefOr[HTMLElement] = js.native
+  var presentingElement: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * If `true`, a backdrop will be displayed behind the modal.
     */
-  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the modal can be swiped to dismiss. Only applies in iOS mode.
     */
-  var swipeToClose: js.UndefOr[Boolean] = js.native
+  var swipeToClose: js.UndefOr[Boolean] = js.undefined
 }
 object IonModal {
   
   @scala.inline
   def apply(): IonModal = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(component = null)
     __obj.asInstanceOf[IonModal]
   }
   
@@ -166,7 +164,7 @@ object IonModal {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonModalDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonModalDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonModalDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonModalDidDismissUndefined: Self = StObject.set(x, "onIonModalDidDismiss", js.undefined)
@@ -178,7 +176,7 @@ object IonModal {
     def setOnIonModalDidPresentUndefined: Self = StObject.set(x, "onIonModalDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonModalWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonModalWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonModalWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonModalWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonModalWillDismissUndefined: Self = StObject.set(x, "onIonModalWillDismiss", js.undefined)

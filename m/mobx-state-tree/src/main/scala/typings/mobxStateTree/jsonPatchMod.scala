@@ -5,35 +5,33 @@ import typings.mobxStateTree.mobxStateTreeStrings.remove
 import typings.mobxStateTree.mobxStateTreeStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonPatchMod {
   
-  @JSImport("mobx-state-tree/dist/core/json-patch", "escapeJsonPath")
+  @JSImport("mobx-state-tree/dist/core/json-patch", JSImport.Namespace)
   @js.native
-  def escapeJsonPath(path: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-state-tree/dist/core/json-patch", "joinJsonPath")
-  @js.native
-  def joinJsonPath(path: js.Array[String]): String = js.native
+  @scala.inline
+  def escapeJsonPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeJsonPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mobx-state-tree/dist/core/json-patch", "splitJsonPath")
-  @js.native
-  def splitJsonPath(path: String): js.Array[String] = js.native
+  @scala.inline
+  def joinJsonPath(path: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinJsonPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mobx-state-tree/dist/core/json-patch", "unescapeJsonPath")
-  @js.native
-  def unescapeJsonPath(path: String): String = js.native
+  @scala.inline
+  def splitJsonPath(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitJsonPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
+  @scala.inline
+  def unescapeJsonPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeJsonPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait IJsonPatch extends StObject {
     
-    val op: replace | add | remove = js.native
+    val op: replace | add | remove
     
-    val path: String = js.native
+    val path: String
     
-    val value: js.UndefOr[js.Any] = js.native
+    val value: js.UndefOr[js.Any] = js.undefined
   }
   object IJsonPatch {
     
@@ -60,10 +58,11 @@ object jsonPatchMod {
     }
   }
   
-  @js.native
-  trait IReversibleJsonPatch extends IJsonPatch {
+  trait IReversibleJsonPatch
+    extends StObject
+       with IJsonPatch {
     
-    val oldValue: js.Any = js.native
+    val oldValue: js.Any
   }
   object IReversibleJsonPatch {
     

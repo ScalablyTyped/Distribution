@@ -3,23 +3,21 @@ package typings.officeJs.OfficeExtension
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedOptions extends StObject {
   
-  var container: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var sessionKey: js.UndefOr[String] = js.native
+  var sessionKey: js.UndefOr[String] = js.undefined
   
-  var timeoutInMilliseconds: js.UndefOr[Double] = js.native
+  var timeoutInMilliseconds: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object EmbeddedOptions {
   

@@ -2,45 +2,43 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for nw.Window.get().print().
   */
-@js.native
 trait PrintOption extends StObject {
   
   /**
     * Whether to enable header and footer
     */
-  var headerFooterEnabled: Boolean = js.native
+  var headerFooterEnabled: Boolean
   
   /**
     * Whether to use landscape or portrait
     */
-  var landscape: Boolean = js.native
+  var landscape: Boolean
   
   /**
     * The paper size spec
     * example: 'mediaSize':{'name': 'CUSTOM', 'width_microns': 279400, 'height_microns': 215900, 'custom_display_name':'Letter', 'is_default': true}
     */
-  var mediaSize: js.Any = js.native
+  var mediaSize: js.Any
   
   /**
     * The path of the output PDF when printing to PDF
     */
-  var pdf_path: String = js.native
+  var pdf_path: String
   
   /**
     * The device name of the printer
     */
-  var printer: String = js.native
+  var printer: String
   
   /**
     * Whether to print CSS backgrounds
     */
-  var shouldPrintBackgrounds: Boolean = js.native
+  var shouldPrintBackgrounds: Boolean
 }
 object PrintOption {
   

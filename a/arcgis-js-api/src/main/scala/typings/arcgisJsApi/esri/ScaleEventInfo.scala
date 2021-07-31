@@ -7,12 +7,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleEventInfo
-  extends Object
+  extends StObject
+     with Object
      with UpdateToolEventInfo {
   
   /**
@@ -20,21 +19,21 @@ trait ScaleEventInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
     */
-  var `type`: `scale-start` | scale | `scale-stop` = js.native
+  var `type`: `scale-start` | scale | `scale-stop`
   
   /**
     * The x scale factor used to enlarge or shrink the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
     */
-  var xScale: Double = js.native
+  var xScale: Double
   
   /**
     * The y scale factor used to enlarge or shrink the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#ScaleEventInfo)
     */
-  var yScale: Double = js.native
+  var yScale: Double
 }
 object ScaleEventInfo {
   

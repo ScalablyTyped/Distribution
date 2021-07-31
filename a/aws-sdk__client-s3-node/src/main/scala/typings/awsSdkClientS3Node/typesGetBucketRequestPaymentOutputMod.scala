@@ -7,20 +7,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketRequestPaymentOutputMod {
   
-  @js.native
   trait GetBucketRequestPaymentOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Specifies who pays for the download and request fees.</p>
       */
-    var Payer: js.UndefOr[Requester | BucketOwner | String] = js.native
+    var Payer: js.UndefOr[Requester | BucketOwner | String] = js.undefined
   }
   object GetBucketRequestPaymentOutput {
     

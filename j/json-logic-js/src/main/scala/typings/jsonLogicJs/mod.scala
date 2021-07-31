@@ -2,17 +2,18 @@ package typings.jsonLogicJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json-logic-js", "apply")
+  @JSImport("json-logic-js", JSImport.Namespace)
   @js.native
-  def apply(logic: RulesLogic): js.Any = js.native
-  @JSImport("json-logic-js", "apply")
-  @js.native
-  def apply(logic: RulesLogic, data: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def apply(logic: RulesLogic): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logic.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(logic: RulesLogic, data: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(logic.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - scala.Boolean
@@ -60,14 +61,14 @@ object mod {
   object _RulesLogic {
     
     @scala.inline
-    def `0`(EqualssignEqualssignEqualssign: js.Tuple2[_, _]): typings.jsonLogicJs.anon.`0` = {
+    def `0`(EqualssignEqualssignEqualssign: js.Tuple2[js.Any, js.Any]): typings.jsonLogicJs.anon.`0` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("===")(EqualssignEqualssignEqualssign.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonLogicJs.anon.`0`]
     }
     
     @scala.inline
-    def `1`(ExclamationmarkEqualssign: js.Tuple2[_, _]): typings.jsonLogicJs.anon.`1` = {
+    def `1`(ExclamationmarkEqualssign: js.Tuple2[js.Any, js.Any]): typings.jsonLogicJs.anon.`1` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("!=")(ExclamationmarkEqualssign.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonLogicJs.anon.`1`]
@@ -119,7 +120,7 @@ object mod {
     }
     
     @scala.inline
-    def `2`(ExclamationmarkEqualssignEqualssign: js.Tuple2[_, _]): typings.jsonLogicJs.anon.`2` = {
+    def `2`(ExclamationmarkEqualssignEqualssign: js.Tuple2[js.Any, js.Any]): typings.jsonLogicJs.anon.`2` = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("!==")(ExclamationmarkEqualssignEqualssign.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonLogicJs.anon.`2`]
@@ -334,7 +335,7 @@ object mod {
     
     @scala.inline
     def Missing(
-      missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[_]
+      missing: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
     ): typings.jsonLogicJs.anon.Missing = {
       val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonLogicJs.anon.Missing]
@@ -344,7 +345,7 @@ object mod {
     def Missingsome(
       missing_some: js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
-          (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[_]
+          (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object) | js.Array[js.Any]
         ]
     ): typings.jsonLogicJs.anon.Missingsome = {
       val __obj = js.Dynamic.literal(missing_some = missing_some.asInstanceOf[js.Any])
@@ -420,7 +421,7 @@ object mod {
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]) | (js.Tuple2[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
-          _
+          js.Any
         ])
     ): typings.jsonLogicJs.anon.Var = {
       val __obj = js.Dynamic.literal()
@@ -429,7 +430,7 @@ object mod {
     }
     
     @scala.inline
-    def _empty(EqualssignEqualssign: js.Tuple2[_, _]): typings.jsonLogicJs.anon._empty = {
+    def _empty(EqualssignEqualssign: js.Tuple2[js.Any, js.Any]): typings.jsonLogicJs.anon._empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("==")(EqualssignEqualssign.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jsonLogicJs.anon._empty]

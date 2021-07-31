@@ -2,26 +2,24 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTestGridProjectRequest extends StObject {
   
   /**
     * Human-readable description for the project.
     */
-  var description: js.UndefOr[ResourceDescription] = js.native
+  var description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * Human-readable name for the project.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * ARN of the project to update.
     */
-  var projectArn: DeviceFarmArn = js.native
+  var projectArn: DeviceFarmArn
 }
 object UpdateTestGridProjectRequest {
   

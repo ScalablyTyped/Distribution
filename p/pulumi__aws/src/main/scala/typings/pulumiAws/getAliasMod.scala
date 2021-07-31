@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAliasMod {
   
-  @JSImport("@pulumi/aws/kms/getAlias", "getAlias")
+  @JSImport("@pulumi/aws/kms/getAlias", JSImport.Namespace)
   @js.native
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = js.native
-  @JSImport("@pulumi/aws/kms/getAlias", "getAlias")
-  @js.native
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
+  @scala.inline
+  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
+  
   trait GetAliasArgs extends StObject {
     
     /**
       * The display name of the alias. The name must start with the word "alias" followed by a forward slash (alias/)
       */
-    val name: String = js.native
+    val name: String
   }
   object GetAliasArgs {
     
@@ -39,30 +39,29 @@ object getAliasMod {
     }
   }
   
-  @js.native
   trait GetAliasResult extends StObject {
     
     /**
       * The Amazon Resource Name(ARN) of the key alias.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * ARN pointed to by the alias.
       */
-    val targetKeyArn: String = js.native
+    val targetKeyArn: String
     
     /**
       * Key identifier pointed to by the alias.
       */
-    val targetKeyId: String = js.native
+    val targetKeyId: String
   }
   object GetAliasResult {
     

@@ -2,26 +2,24 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionFilterGroup extends StObject {
   
   /**
     * The index of the last FilterClause in this group
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * Level of the group, since groups can be nested for each nested group the level will increase by 1
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * The index of the first FilterClause in this group
     */
-  var start: Double = js.native
+  var start: Double
 }
 object ExpressionFilterGroup {
   

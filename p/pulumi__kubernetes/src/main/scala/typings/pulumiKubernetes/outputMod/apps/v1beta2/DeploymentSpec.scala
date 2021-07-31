@@ -4,54 +4,52 @@ import typings.pulumiKubernetes.outputMod.core.v1.PodTemplateSpec
 import typings.pulumiKubernetes.outputMod.meta.v1.LabelSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DeploymentSpec is the specification of the desired behavior of the Deployment.
   */
-@js.native
 trait DeploymentSpec extends StObject {
   
   /**
     * Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)
     */
-  var minReadySeconds: Double = js.native
+  var minReadySeconds: Double
   
   /**
     * Indicates that the deployment is paused.
     */
-  var paused: Boolean = js.native
+  var paused: Boolean
   
   /**
     * The maximum time in seconds for a deployment to make progress before it is considered to be failed. The deployment controller will continue to process failed deployments and a condition with a ProgressDeadlineExceeded reason will be surfaced in the deployment status. Note that progress will not be estimated during the time a deployment is paused. Defaults to 600s.
     */
-  var progressDeadlineSeconds: Double = js.native
+  var progressDeadlineSeconds: Double
   
   /**
     * Number of desired pods. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
     */
-  var replicas: Double = js.native
+  var replicas: Double
   
   /**
     * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish between explicit zero and not specified. Defaults to 10.
     */
-  var revisionHistoryLimit: Double = js.native
+  var revisionHistoryLimit: Double
   
   /**
     * Label selector for pods. Existing ReplicaSets whose pods are selected by this will be the ones affected by this deployment. It must match the pod template's labels.
     */
-  var selector: LabelSelector = js.native
+  var selector: LabelSelector
   
   /**
     * The deployment strategy to use to replace existing pods with new ones.
     */
-  var strategy: DeploymentStrategy = js.native
+  var strategy: DeploymentStrategy
   
   /**
     * Template describes the pods that will be created.
     */
-  var template: PodTemplateSpec = js.native
+  var template: PodTemplateSpec
 }
 object DeploymentSpec {
   

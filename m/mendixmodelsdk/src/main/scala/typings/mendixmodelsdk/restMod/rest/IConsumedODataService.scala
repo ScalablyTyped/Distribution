@@ -3,7 +3,6 @@ package typings.mendixmodelsdk.restMod.rest
 import typings.mendixmodelsdk.domainmodelsMod.domainmodels.IRemoteEntitySourceDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.18.0: introduced
   */
 @js.native
-trait IConsumedODataService extends IRemoteEntitySourceDocument {
+trait IConsumedODataService
+  extends StObject
+     with IRemoteEntitySourceDocument {
   
   /**
     * In version 8.14.0: introduced

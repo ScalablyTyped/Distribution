@@ -2,73 +2,71 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRepoSubscription extends StObject {
   
-  var checkRepoIsStarredByAuthenticatedUser: `589` = js.native
+  var checkRepoIsStarredByAuthenticatedUser: `589`
   
-  var deleteRepoSubscription: `590` = js.native
+  var deleteRepoSubscription: `590`
   
-  var deleteThreadSubscription: `591` = js.native
+  var deleteThreadSubscription: `591`
   
-  var getFeeds: `592` = js.native
+  var getFeeds: `592`
   
-  var getRepoSubscription: `593` = js.native
+  var getRepoSubscription: `593`
   
-  var getThread: `594` = js.native
+  var getThread: `594`
   
-  var getThreadSubscriptionForAuthenticatedUser: `595` = js.native
+  var getThreadSubscriptionForAuthenticatedUser: `595`
   
-  var listEventsForAuthenticatedUser: `596` = js.native
+  var listEventsForAuthenticatedUser: `596`
   
-  var listNotificationsForAuthenticatedUser: `597` = js.native
+  var listNotificationsForAuthenticatedUser: `597`
   
-  var listOrgEventsForAuthenticatedUser: `598` = js.native
+  var listOrgEventsForAuthenticatedUser: `598`
   
-  var listPublicEvents: `599` = js.native
+  var listPublicEvents: `599`
   
-  var listPublicEventsForRepoNetwork: `600` = js.native
+  var listPublicEventsForRepoNetwork: `600`
   
-  var listPublicEventsForUser: `601` = js.native
+  var listPublicEventsForUser: `601`
   
-  var listPublicOrgEvents: `602` = js.native
+  var listPublicOrgEvents: `602`
   
-  var listReceivedEventsForUser: `603` = js.native
+  var listReceivedEventsForUser: `603`
   
-  var listReceivedPublicEventsForUser: `604` = js.native
+  var listReceivedPublicEventsForUser: `604`
   
-  var listRepoEvents: `605` = js.native
+  var listRepoEvents: `605`
   
-  var listRepoNotificationsForAuthenticatedUser: `606` = js.native
+  var listRepoNotificationsForAuthenticatedUser: `606`
   
-  var listReposStarredByAuthenticatedUser: `607` = js.native
+  var listReposStarredByAuthenticatedUser: `607`
   
-  var listReposStarredByUser: `608` = js.native
+  var listReposStarredByUser: `608`
   
-  var listReposWatchedByUser: `609` = js.native
+  var listReposWatchedByUser: `609`
   
-  var listStargazersForRepo: `610` = js.native
+  var listStargazersForRepo: `610`
   
-  var listWatchedReposForAuthenticatedUser: `611` = js.native
+  var listWatchedReposForAuthenticatedUser: `611`
   
-  var listWatchersForRepo: `612` = js.native
+  var listWatchersForRepo: `612`
   
-  var markNotificationsAsRead: `613` = js.native
+  var markNotificationsAsRead: `613`
   
-  var markRepoNotificationsAsRead: `614` = js.native
+  var markRepoNotificationsAsRead: `614`
   
-  var markThreadAsRead: `615` = js.native
+  var markThreadAsRead: `615`
   
-  var setRepoSubscription: `616` = js.native
+  var setRepoSubscription: `616`
   
-  var setThreadSubscription: `617` = js.native
+  var setThreadSubscription: `617`
   
-  var starRepoForAuthenticatedUser: `618` = js.native
+  var starRepoForAuthenticatedUser: `618`
   
-  var unstarRepoForAuthenticatedUser: `619` = js.native
+  var unstarRepoForAuthenticatedUser: `619`
 }
 object DeleteRepoSubscription {
   

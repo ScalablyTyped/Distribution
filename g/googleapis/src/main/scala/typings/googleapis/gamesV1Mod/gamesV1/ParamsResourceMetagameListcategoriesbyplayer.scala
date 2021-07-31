@@ -6,44 +6,44 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMetagameListcategoriesbyplayer extends StandardParameters {
+trait ParamsResourceMetagameListcategoriesbyplayer
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The collection of categories for which data will be returned.
     */
-  var collection: js.UndefOr[String] = js.native
+  var collection: js.UndefOr[String] = js.undefined
   
   /**
     * The preferred language to use for strings returned by this method.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of category resources to return in the response, used
     * for paging. For any response, the actual number of category resources
     * returned may be less than the specified maxResults.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A player ID. A value of me may be used in place of the authenticated
     * player's ID.
     */
-  var playerId: js.UndefOr[String] = js.native
+  var playerId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMetagameListcategoriesbyplayer {
   

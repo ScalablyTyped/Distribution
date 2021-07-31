@@ -3,24 +3,22 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.microsoftLiveConnect.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains work information for one employer.
   */
-@js.native
 trait IWorkInfo extends StObject {
   
   /**
     * Info about the user's employer.
     */
-  var employer: Name = js.native
+  var employer: Name
   
   /**
     * Info about the user's work position.
     */
-  var position: Name = js.native
+  var position: Name
 }
 object IWorkInfo {
   

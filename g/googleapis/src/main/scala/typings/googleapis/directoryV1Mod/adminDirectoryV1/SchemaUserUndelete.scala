@@ -2,19 +2,17 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON request template to undelete a user in Directory API.
   */
-@js.native
 trait SchemaUserUndelete extends StObject {
   
   /**
     * OrgUnit of User
     */
-  var orgUnitPath: js.UndefOr[String] = js.native
+  var orgUnitPath: js.UndefOr[String] = js.undefined
 }
 object SchemaUserUndelete {
   

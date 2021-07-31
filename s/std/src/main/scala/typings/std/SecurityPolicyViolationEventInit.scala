@@ -2,31 +2,31 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityPolicyViolationEventInit extends EventInit {
+trait SecurityPolicyViolationEventInit
+  extends StObject
+     with EventInit {
   
-  var blockedURI: js.UndefOr[java.lang.String] = js.native
+  var blockedURI: js.UndefOr[java.lang.String] = js.undefined
   
-  var columnNumber: js.UndefOr[Double] = js.native
+  var columnNumber: js.UndefOr[Double] = js.undefined
   
-  var documentURI: js.UndefOr[java.lang.String] = js.native
+  var documentURI: js.UndefOr[java.lang.String] = js.undefined
   
-  var effectiveDirective: js.UndefOr[java.lang.String] = js.native
+  var effectiveDirective: js.UndefOr[java.lang.String] = js.undefined
   
-  var lineNumber: js.UndefOr[Double] = js.native
+  var lineNumber: js.UndefOr[Double] = js.undefined
   
-  var originalPolicy: js.UndefOr[java.lang.String] = js.native
+  var originalPolicy: js.UndefOr[java.lang.String] = js.undefined
   
-  var referrer: js.UndefOr[java.lang.String] = js.native
+  var referrer: js.UndefOr[java.lang.String] = js.undefined
   
-  var sourceFile: js.UndefOr[java.lang.String] = js.native
+  var sourceFile: js.UndefOr[java.lang.String] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var violatedDirective: js.UndefOr[java.lang.String] = js.native
+  var violatedDirective: js.UndefOr[java.lang.String] = js.undefined
 }
 object SecurityPolicyViolationEventInit {
   

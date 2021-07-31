@@ -2,14 +2,12 @@ package typings.semanticUiDimmer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dimmer.SemanticUI.DimmerSettings._Impl, 'useCSS'> */
-@js.native
 trait PickImpluseCSS extends StObject {
   
-  var useCSS: Boolean = js.native
+  var useCSS: Boolean
 }
 object PickImpluseCSS {
   

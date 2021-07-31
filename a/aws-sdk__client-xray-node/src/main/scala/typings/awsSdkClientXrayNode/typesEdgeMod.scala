@@ -10,43 +10,41 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEdgeMod {
   
-  @js.native
   trait Edge extends StObject {
     
     /**
       * <p>Aliases for the edge.</p>
       */
-    var Aliases: js.UndefOr[js.Array[Alias] | Iterable[Alias]] = js.native
+    var Aliases: js.UndefOr[js.Array[Alias] | Iterable[Alias]] = js.undefined
     
     /**
       * <p>The end time of the last segment on the edge.</p>
       */
-    var EndTime: js.UndefOr[Date | String | Double] = js.native
+    var EndTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>Identifier of the edge. Unique within a service map.</p>
       */
-    var ReferenceId: js.UndefOr[Double] = js.native
+    var ReferenceId: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>A histogram that maps the spread of client response times on an edge.</p>
       */
-    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | Iterable[HistogramEntry]] = js.native
+    var ResponseTimeHistogram: js.UndefOr[js.Array[HistogramEntry] | Iterable[HistogramEntry]] = js.undefined
     
     /**
       * <p>The start time of the first segment on the edge.</p>
       */
-    var StartTime: js.UndefOr[Date | String | Double] = js.native
+    var StartTime: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>Response statistics for segments on the edge.</p>
       */
-    var SummaryStatistics: js.UndefOr[EdgeStatistics] = js.native
+    var SummaryStatistics: js.UndefOr[EdgeStatistics] = js.undefined
   }
   object Edge {
     
@@ -103,38 +101,39 @@ object typesEdgeMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEdge extends Edge {
+  trait UnmarshalledEdge
+    extends StObject
+       with Edge {
     
     /**
       * <p>Aliases for the edge.</p>
       */
     @JSName("Aliases")
-    var Aliases_UnmarshalledEdge: js.UndefOr[js.Array[UnmarshalledAlias]] = js.native
+    var Aliases_UnmarshalledEdge: js.UndefOr[js.Array[UnmarshalledAlias]] = js.undefined
     
     /**
       * <p>The end time of the last segment on the edge.</p>
       */
     @JSName("EndTime")
-    var EndTime_UnmarshalledEdge: js.UndefOr[Date] = js.native
+    var EndTime_UnmarshalledEdge: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>A histogram that maps the spread of client response times on an edge.</p>
       */
     @JSName("ResponseTimeHistogram")
-    var ResponseTimeHistogram_UnmarshalledEdge: js.UndefOr[js.Array[UnmarshalledHistogramEntry]] = js.native
+    var ResponseTimeHistogram_UnmarshalledEdge: js.UndefOr[js.Array[UnmarshalledHistogramEntry]] = js.undefined
     
     /**
       * <p>The start time of the first segment on the edge.</p>
       */
     @JSName("StartTime")
-    var StartTime_UnmarshalledEdge: js.UndefOr[Date] = js.native
+    var StartTime_UnmarshalledEdge: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Response statistics for segments on the edge.</p>
       */
     @JSName("SummaryStatistics")
-    var SummaryStatistics_UnmarshalledEdge: js.UndefOr[UnmarshalledEdgeStatistics] = js.native
+    var SummaryStatistics_UnmarshalledEdge: js.UndefOr[UnmarshalledEdgeStatistics] = js.undefined
   }
   object UnmarshalledEdge {
     

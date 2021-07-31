@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxyDefaultTargetGroupMod {
@@ -49,6 +48,10 @@ object proxyDefaultTargetGroupMod {
   /* static members */
   object ProxyDefaultTargetGroup {
     
+    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ProxyDefaultTargetGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,40 +61,34 @@ object proxyDefaultTargetGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ProxyDefaultTargetGroup = js.native
-    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProxyDefaultTargetGroup = js.native
-    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState): ProxyDefaultTargetGroup = js.native
-    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState, opts: CustomResourceOptions): ProxyDefaultTargetGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyDefaultTargetGroupState, opts: CustomResourceOptions): ProxyDefaultTargetGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyDefaultTargetGroup]
     
     /**
       * Returns true if the given object is an instance of ProxyDefaultTargetGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/proxyDefaultTargetGroup", "ProxyDefaultTargetGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyDefaultTargetGroup.ProxyDefaultTargetGroup */ Boolean]
   }
   
-  @js.native
   trait ProxyDefaultTargetGroupArgs extends StObject {
     
     /**
       * The settings that determine the size and behavior of the connection pool for the target group.
       */
-    val connectionPoolConfig: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig] = js.native
+    val connectionPoolConfig: Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]
     
     /**
       * Name of the RDS DB Proxy.
       */
-    val dbProxyName: Input[String] = js.native
+    val dbProxyName: Input[String]
   }
   object ProxyDefaultTargetGroupArgs {
     
@@ -115,30 +112,29 @@ object proxyDefaultTargetGroupMod {
     }
   }
   
-  @js.native
   trait ProxyDefaultTargetGroupState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) representing the target group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The settings that determine the size and behavior of the connection pool for the target group.
       */
     val connectionPoolConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.rds.ProxyDefaultTargetGroupConnectionPoolConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the RDS DB Proxy.
       */
-    val dbProxyName: js.UndefOr[Input[String]] = js.native
+    val dbProxyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the default target group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ProxyDefaultTargetGroupState {
     

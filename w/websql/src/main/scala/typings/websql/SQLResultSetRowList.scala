@@ -2,7 +2,6 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SQLResultSetRowList objects have a length attribute that must return the number of
@@ -20,12 +19,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that these columns were returned by the database. Each property must have the
   * name of the column and the value of the cell, as they were returned by the database
   */
-@js.native
 trait SQLResultSetRowList extends StObject {
   
-  def item(index: Double): js.Any = js.native
+  def item(index: Double): js.Any
   
-  var length: Double = js.native
+  var length: Double
 }
 object SQLResultSetRowList {
   

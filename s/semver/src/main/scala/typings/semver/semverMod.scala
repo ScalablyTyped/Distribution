@@ -7,14 +7,15 @@ import typings.semver.semverNumbers.`0`
 import typings.semver.semverNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semverMod {
   
   @JSImport("semver/classes/semver", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SemVer {
+  class ^ protected ()
+    extends StObject
+       with SemVer {
     def this(version: String) = this()
     def this(version: SemVer) = this()
     def this(version: String, optionsOrLoose: Boolean) = this()

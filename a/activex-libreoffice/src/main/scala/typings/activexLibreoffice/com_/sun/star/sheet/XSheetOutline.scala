@@ -6,47 +6,47 @@ import typings.activexLibreoffice.com_.sun.star.table.TableOrientation
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides methods to access the outlines of a sheet. */
-@js.native
-trait XSheetOutline extends XInterface {
+trait XSheetOutline
+  extends StObject
+     with XInterface {
   
   /**
     * creates outline groups from formula references in a range.
     * @param aRange the cell range for which outlines are generated.
     */
-  def autoOutline(aRange: CellRangeAddress): Unit = js.native
+  def autoOutline(aRange: CellRangeAddress): Unit
   
   /** removes all outline groups from the sheet. */
-  def clearOutline(): Unit = js.native
+  def clearOutline(): Unit
   
   /**
     * creates an outline group.
     * @param aRange contains the range of rows or columns, depending on the parameter nOrientation.
     * @param nOrientation the orientation of the new outline (columns or rows).
     */
-  def group(aRange: CellRangeAddress, nOrientation: TableOrientation): Unit = js.native
+  def group(aRange: CellRangeAddress, nOrientation: TableOrientation): Unit
   
   /**
     * collapses an outline group.
     * @param aRange the cell range for which the outlines are collapsed.
     */
-  def hideDetail(aRange: CellRangeAddress): Unit = js.native
+  def hideDetail(aRange: CellRangeAddress): Unit
   
   /**
     * reopens an outline group.
     * @param aRange the cell range for which the outlines are reopened.
     */
-  def showDetail(aRange: CellRangeAddress): Unit = js.native
+  def showDetail(aRange: CellRangeAddress): Unit
   
   /**
     * shows all outlined groups below a specific level.
     * @param nLevel all outline levels from 1 to this value will be opened and the higher levels will be closed.
     * @param nOrientation the orientation of the outlines (columns or rows).
     */
-  def showLevel(nLevel: Double, nOrientation: TableOrientation): Unit = js.native
+  def showLevel(nLevel: Double, nOrientation: TableOrientation): Unit
   
   /**
     * removes outline groups.
@@ -55,7 +55,7 @@ trait XSheetOutline extends XInterface {
     * @param aRange contains the range of rows or columns, depending on the parameter nOrientation.
     * @param nOrientation the orientation of the outlines to remove (columns or rows).
     */
-  def ungroup(aRange: CellRangeAddress, nOrientation: TableOrientation): Unit = js.native
+  def ungroup(aRange: CellRangeAddress, nOrientation: TableOrientation): Unit
 }
 object XSheetOutline {
   

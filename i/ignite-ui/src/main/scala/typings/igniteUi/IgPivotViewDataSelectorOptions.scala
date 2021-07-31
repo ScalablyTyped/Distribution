@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewDataSelectorOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -20,17 +19,17 @@ trait IgPivotViewDataSelectorOptions
     * paramType="string" The unique name of the item.
     * returnType="bool"  The function must return true if the item should be accepted.
     */
-  var customMoveValidation: js.UndefOr[js.Function] = js.native
+  var customMoveValidation: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Settings for the drag and drop functionality of the igPivotDataSelector.
     */
-  var dragAndDropSettings: js.UndefOr[IgPivotViewDataSelectorOptionsDragAndDropSettings] = js.native
+  var dragAndDropSettings: js.UndefOr[IgPivotViewDataSelectorOptionsDragAndDropSettings] = js.undefined
   
   /**
     * Specifies the parent for the drop downs.
     */
-  var dropDownParent: js.UndefOr[js.Any] = js.native
+  var dropDownParent: js.UndefOr[js.Any] = js.undefined
 }
 object IgPivotViewDataSelectorOptions {
   

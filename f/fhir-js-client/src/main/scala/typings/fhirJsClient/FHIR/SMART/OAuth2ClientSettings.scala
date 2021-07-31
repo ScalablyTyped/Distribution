@@ -2,39 +2,37 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Client or application specific settings provided on the FHIR server during the client/application registration.
   */
-@js.native
 trait OAuth2ClientSettings extends StObject {
   
   /**
     * Unique ID representing the client or application
     */
-  var client_id: String = js.native
+  var client_id: String
   
   /**
     * URI to which the code is sent via query string during the OAuth2 authorization workflow. Defaults to the applications base url.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
   /**
     * Scopes based on the access required by the application
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
     * If the application registered is a confidential application, the client_secret needs to be provided during the Token workflow. (Not recommended for public applications)
     */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
   /**
     * Override the state parameter set by the SMART JS Client library. The library generates a random string as state.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object OAuth2ClientSettings {
   

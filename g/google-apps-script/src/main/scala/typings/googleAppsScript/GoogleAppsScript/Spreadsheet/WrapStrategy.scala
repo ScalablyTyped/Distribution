@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait WrapStrategy extends StObject
 object WrapStrategy extends StObject {
   
   @js.native
-  sealed trait CLIP extends WrapStrategy
+  sealed trait CLIP
+    extends StObject
+       with WrapStrategy
   
   @js.native
-  sealed trait OVERFLOW extends WrapStrategy
+  sealed trait OVERFLOW
+    extends StObject
+       with WrapStrategy
   
   @js.native
-  sealed trait WRAP extends WrapStrategy
+  sealed trait WRAP
+    extends StObject
+       with WrapStrategy
 }

@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.urijs.mod.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uritemplateMod extends Shortcut {
@@ -14,7 +13,9 @@ object uritemplateMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("urijs/src/URITemplate", JSImport.Namespace)
   @js.native
-  class ^ protected () extends URITemplate {
+  class ^ protected ()
+    extends StObject
+       with URITemplate {
     def this(template: String) = this()
   }
   @JSImport("urijs/src/URITemplate", JSImport.Namespace)
@@ -38,14 +39,13 @@ object uritemplateMod extends Shortcut {
   
   type URITemplateCallback = js.Function1[/* keyName */ String, URITemplateValue]
   
-  @js.native
   trait URITemplateExpression extends StObject {
     
-    var expression: String = js.native
+    var expression: String
     
-    var operator: String = js.native
+    var operator: String
     
-    var variables: js.Array[URITemplateVariable] = js.native
+    var variables: js.Array[URITemplateVariable]
   }
   object URITemplateExpression {
     
@@ -79,21 +79,22 @@ object uritemplateMod extends Shortcut {
   type URITemplatePart = URITemplateLiteral | URITemplateExpression
   
   @js.native
-  trait URITemplateStatic extends Instantiable1[/* template */ String, URITemplate] {
+  trait URITemplateStatic
+    extends StObject
+       with Instantiable1[/* template */ String, URITemplate] {
     
     def apply(template: String): URITemplate = js.native
   }
   
   type URITemplateValue = js.UndefOr[String | js.Array[String] | StringDictionary[String] | Null]
   
-  @js.native
   trait URITemplateVariable extends StObject {
     
-    var explode: Boolean = js.native
+    var explode: Boolean
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object URITemplateVariable {
     

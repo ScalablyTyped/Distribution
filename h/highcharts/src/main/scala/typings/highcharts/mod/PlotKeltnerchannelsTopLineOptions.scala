@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotKeltnerchannelsTopLineOptions extends StObject {
   
   /**
     * (Highstock) Styles for a bottom line.
     */
-  var styles: js.UndefOr[PlotKeltnerchannelsTopLineStylesOptions] = js.native
+  var styles: js.UndefOr[PlotKeltnerchannelsTopLineStylesOptions] = js.undefined
 }
 object PlotKeltnerchannelsTopLineOptions {
   

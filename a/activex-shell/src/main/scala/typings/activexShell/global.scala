@@ -2,7 +2,6 @@ package typings.activexShell
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -13,55 +12,82 @@ object global {
     @JSGlobal("Shell32.FileSearchBand")
     @js.native
     class FileSearchBand protected ()
-      extends typings.activexShell.Shell32.FileSearchBand
+      extends StObject
+         with typings.activexShell.Shell32.FileSearchBand
     
     /** Definition of interface Folder version 3 */
     @JSGlobal("Shell32.Folder3")
     @js.native
     class Folder3 protected ()
-      extends typings.activexShell.Shell32.Folder3
+      extends StObject
+         with typings.activexShell.Shell32.Folder3
     
     /** Definition of interface FolderItemVerb */
     @JSGlobal("Shell32.FolderItemVerb")
     @js.native
     class FolderItemVerb protected ()
-      extends typings.activexShell.Shell32.FolderItemVerb
+      extends StObject
+         with typings.activexShell.Shell32.FolderItemVerb {
+      
+      /** Execute the verb */
+      /* CompleteClass */
+      override def DoIt(): Unit = js.native
+      
+      /** Get display name for item */
+      /* CompleteClass */
+      override val Name: String = js.native
+      
+      /* CompleteClass */
+      @JSName("Shell32.FolderItemVerb_typekey")
+      var Shell32DotFolderItemVerb_typekey: typings.activexShell.Shell32.FolderItemVerb = js.native
+    }
     
     /** Definition of interface FolderItemVerbs */
     @JSGlobal("Shell32.FolderItemVerbs")
     @js.native
     class FolderItemVerbs protected ()
-      extends typings.activexShell.Shell32.FolderItemVerbs
+      extends StObject
+         with typings.activexShell.Shell32.FolderItemVerbs
     
     /** Definition of interface FolderItems3 */
     @JSGlobal("Shell32.FolderItems3")
     @js.native
     class FolderItems3 protected ()
-      extends typings.activexShell.Shell32.FolderItems3
+      extends StObject
+         with typings.activexShell.Shell32.FolderItems3
     
     /** Shell Object Type Information */
     @JSGlobal("Shell32.Shell")
     @js.native
     class Shell protected ()
-      extends typings.activexShell.Shell32.Shell
+      extends StObject
+         with typings.activexShell.Shell32.Shell
     
     /** ShellDispatch Load in Shell Context */
     @JSGlobal("Shell32.ShellDispatchInproc")
     @js.native
     class ShellDispatchInproc protected ()
-      extends typings.activexShell.Shell32.ShellDispatchInproc
+      extends StObject
+         with typings.activexShell.Shell32.ShellDispatchInproc {
+      
+      /* CompleteClass */
+      @JSName("Shell32.ShellDispatchInproc_typekey")
+      var Shell32DotShellDispatchInproc_typekey: typings.activexShell.Shell32.ShellDispatchInproc = js.native
+    }
     
     /** Shell Folder Item */
     @JSGlobal("Shell32.ShellFolderItem")
     @js.native
     class ShellFolderItem protected ()
-      extends typings.activexShell.Shell32.ShellFolderItem
+      extends StObject
+         with typings.activexShell.Shell32.ShellFolderItem
     
     /** Shell Folder View Object */
     @JSGlobal("Shell32.ShellFolderView")
     @js.native
     class ShellFolderView protected ()
-      extends typings.activexShell.Shell32.ShellFolderView
+      extends StObject
+         with typings.activexShell.Shell32.ShellFolderView
     
     /**
       * The **ShellFolderView** object fires two events, **EnumDone** and **SelectionChanged**, that are typically handled by applications. However, some applications
@@ -76,17 +102,29 @@ object global {
     @JSGlobal("Shell32.ShellFolderViewOC")
     @js.native
     class ShellFolderViewOC protected ()
-      extends typings.activexShell.Shell32.ShellFolderViewOC
+      extends StObject
+         with typings.activexShell.Shell32.ShellFolderViewOC {
+      
+      /** Set the ShellFolderView object to monitor events of. */
+      /* CompleteClass */
+      override def SetFolderView(pdisp: typings.activexShell.Shell32.ShellFolderView): Unit = js.native
+      
+      /* CompleteClass */
+      @JSName("Shell32.ShellFolderViewOC_typekey")
+      var Shell32DotShellFolderViewOC_typekey: typings.activexShell.Shell32.ShellFolderViewOC = js.native
+    }
     
     /** Shell Link object */
     @JSGlobal("Shell32.ShellLinkObject")
     @js.native
     class ShellLinkObject protected ()
-      extends typings.activexShell.Shell32.ShellLinkObject
+      extends StObject
+         with typings.activexShell.Shell32.ShellLinkObject
     
     @JSGlobal("Shell32.ShellWindows")
     @js.native
     class ShellWindows protected ()
-      extends typings.activexShell.Shell32.ShellWindows
+      extends StObject
+         with typings.activexShell.Shell32.ShellWindows
   }
 }

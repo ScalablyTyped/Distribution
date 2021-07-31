@@ -9,33 +9,30 @@ import typings.ip6addr.ip6addrStrings.v6
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ip6addr", "compare")
+  @JSImport("ip6addr", JSImport.Namespace)
   @js.native
-  def compare(addr1: String, addr2: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ip6addr", "compareCIDR")
-  @js.native
-  def compareCIDR(cidr1: String, cidr2: String): Double = js.native
+  @scala.inline
+  def compare(addr1: String, addr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(addr1.asInstanceOf[js.Any], addr2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ip6addr", "createAddrRange")
-  @js.native
-  def createAddrRange(begin: String, end: String): AddrRange = js.native
+  @scala.inline
+  def compareCIDR(cidr1: String, cidr2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareCIDR")(cidr1.asInstanceOf[js.Any], cidr2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ip6addr", "createCIDR")
-  @js.native
-  def createCIDR(addr: String): CIDR = js.native
-  @JSImport("ip6addr", "createCIDR")
-  @js.native
-  def createCIDR(addr: String, len: Double): CIDR = js.native
+  @scala.inline
+  def createAddrRange(begin: String, end: String): AddrRange = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddrRange")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[AddrRange]
   
-  @JSImport("ip6addr", "parse")
-  @js.native
-  def parse(input: String): Addr = js.native
+  @scala.inline
+  def createCIDR(addr: String): CIDR = ^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any]).asInstanceOf[CIDR]
+  @scala.inline
+  def createCIDR(addr: String, len: Double): CIDR = (^.asInstanceOf[js.Dynamic].applyDynamic("createCIDR")(addr.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[CIDR]
+  
+  @scala.inline
+  def parse(input: String): Addr = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Addr]
   
   @js.native
   trait Addr extends StObject {
@@ -54,14 +51,13 @@ object mod {
     def toString(opts: ToStringOpts): String = js.native
   }
   
-  @js.native
   trait AddrRange extends StObject {
     
-    def contains(input: String): Boolean = js.native
+    def contains(input: String): Boolean
     
-    def first(): Addr = js.native
+    def first(): Addr
     
-    def last(): Addr = js.native
+    def last(): Addr
   }
   object AddrRange {
     
@@ -105,14 +101,13 @@ object mod {
     def toString(opts: ToStringOpts): String = js.native
   }
   
-  @js.native
   trait ToStringOpts extends StObject {
     
-    var format: js.UndefOr[auto | v4 | `v4-mapped` | v6] = js.native
+    var format: js.UndefOr[auto | v4 | `v4-mapped` | v6] = js.undefined
     
-    var zeroElide: js.UndefOr[Boolean] = js.native
+    var zeroElide: js.UndefOr[Boolean] = js.undefined
     
-    var zeroPad: js.UndefOr[Boolean] = js.native
+    var zeroPad: js.UndefOr[Boolean] = js.undefined
   }
   object ToStringOpts {
     

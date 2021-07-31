@@ -4,51 +4,49 @@ import typings.phaser.phaserBooleans.`false`
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileConfig extends StObject {
   
   /**
     * A config object that can be used by file types to store transitional data.
     */
-  var config: js.UndefOr[js.Any] = js.native
+  var config: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The default extension this file uses.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * Unique cache key (unique within its file type)
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The path of the file, not including the baseURL.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The responseType to be used by the XHR request.
     */
-  var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.native
+  var responseType: js.UndefOr[XMLHttpRequestResponseType] = js.undefined
   
   /**
     * The file type string (image, json, etc) for sorting within the Loader.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL of the file, not including baseURL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Custom XHR Settings specific to this file and merged with the Loader defaults.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject | `false`] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject | `false`] = js.undefined
 }
 object FileConfig {
   

@@ -2,25 +2,25 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VersionDefinition extends PropertyBaseDefinition {
+trait VersionDefinition
+  extends StObject
+     with PropertyBaseDefinition {
   
-  var build: js.UndefOr[String] = js.native
+  var build: js.UndefOr[String] = js.undefined
   
-  var major: js.UndefOr[String] = js.native
+  var major: js.UndefOr[String] = js.undefined
   
-  var minor: js.UndefOr[String] = js.native
+  var minor: js.UndefOr[String] = js.undefined
   
-  var patch: js.UndefOr[String] = js.native
+  var patch: js.UndefOr[String] = js.undefined
   
-  var prerelease: js.UndefOr[String] = js.native
+  var prerelease: js.UndefOr[String] = js.undefined
   
-  var raw: js.UndefOr[String] = js.native
+  var raw: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object VersionDefinition {
   

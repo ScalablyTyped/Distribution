@@ -6,68 +6,66 @@ import typings.devextreme.devextremeStrings.outlined
 import typings.devextreme.devextremeStrings.underlined
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait globalConfig extends StObject {
   
   /**
     * [descr:globalConfig.decimalSeparator]
     * @deprecated [depNote:globalConfig.decimalSeparator]
     */
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:globalConfig.defaultCurrency]
     */
-  var defaultCurrency: js.UndefOr[String] = js.native
+  var defaultCurrency: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:globalConfig.editorStylingMode]
     */
-  var editorStylingMode: js.UndefOr[outlined | underlined | filled] = js.native
+  var editorStylingMode: js.UndefOr[outlined | underlined | filled] = js.undefined
   
   /**
     * [descr:globalConfig.floatingActionButtonConfig]
     */
-  var floatingActionButtonConfig: js.UndefOr[CloseIcon] = js.native
+  var floatingActionButtonConfig: js.UndefOr[CloseIcon] = js.undefined
   
   /**
     * [descr:globalConfig.forceIsoDateParsing]
     */
-  var forceIsoDateParsing: js.UndefOr[Boolean] = js.native
+  var forceIsoDateParsing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:globalConfig.oDataFilterToLower]
     */
-  var oDataFilterToLower: js.UndefOr[Boolean] = js.native
+  var oDataFilterToLower: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:globalConfig.rtlEnabled]
     */
-  var rtlEnabled: js.UndefOr[Boolean] = js.native
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:globalConfig.serverDecimalSeparator]
     */
-  var serverDecimalSeparator: js.UndefOr[String] = js.native
+  var serverDecimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:globalConfig.thousandsSeparator]
     * @deprecated [depNote:globalConfig.thousandsSeparator]
     */
-  var thousandsSeparator: js.UndefOr[String] = js.native
+  var thousandsSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:globalConfig.useLegacyStoreResult]
     */
-  var useLegacyStoreResult: js.UndefOr[Boolean] = js.native
+  var useLegacyStoreResult: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:globalConfig.useLegacyVisibleIndex]
     */
-  var useLegacyVisibleIndex: js.UndefOr[Boolean] = js.native
+  var useLegacyVisibleIndex: js.UndefOr[Boolean] = js.undefined
 }
 object globalConfig {
   

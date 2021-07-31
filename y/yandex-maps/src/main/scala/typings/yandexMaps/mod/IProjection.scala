@@ -2,19 +2,17 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IProjection extends StObject {
   
-  def fromGlobalPixels(globalPixelPoint: js.Array[Double], zoom: Double): js.Array[Double] = js.native
+  def fromGlobalPixels(globalPixelPoint: js.Array[Double], zoom: Double): js.Array[Double]
   
-  def getCoordSystem(): ICoordSystem = js.native
+  def getCoordSystem(): ICoordSystem
   
-  def isCycled(): js.Array[Boolean] = js.native
+  def isCycled(): js.Array[Boolean]
   
-  def toGlobalPixels(coordPoint: js.Array[Double], zoom: Double): js.Array[Double] = js.native
+  def toGlobalPixels(coordPoint: js.Array[Double], zoom: Double): js.Array[Double]
 }
 object IProjection {
   

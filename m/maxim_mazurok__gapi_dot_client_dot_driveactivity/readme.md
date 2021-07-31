@@ -10,9 +10,9 @@ TypeScript typings for Drive Activity API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.driveactivity |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 92 |
+| # downloads        | 2446 |
 | # stars            | 0 |
 
 ## Links

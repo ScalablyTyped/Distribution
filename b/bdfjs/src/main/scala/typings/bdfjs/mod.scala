@@ -5,42 +5,38 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bdfjs", "draw")
+  @JSImport("bdfjs", JSImport.Namespace)
   @js.native
-  def draw(font: Font, text: String): js.UndefOr[Bitmap] = js.native
-  @JSImport("bdfjs", "draw")
-  @js.native
-  def draw(font: Font, text: String, options: DrawOptions): js.UndefOr[Bitmap] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bdfjs", "parse")
-  @js.native
-  def parse(text: String): Font = js.native
-  @JSImport("bdfjs", "parse")
-  @js.native
-  def parse(text: String, options: ParseOptions): Font = js.native
-  @JSImport("bdfjs", "parse")
-  @js.native
-  def parse(text: Buffer): Font = js.native
-  @JSImport("bdfjs", "parse")
-  @js.native
-  def parse(text: Buffer, options: ParseOptions): Font = js.native
+  @scala.inline
+  def draw(font: Font, text: String): js.UndefOr[Bitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("draw")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Bitmap]]
+  @scala.inline
+  def draw(font: Font, text: String, options: DrawOptions): js.UndefOr[Bitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("draw")(font.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Bitmap]]
   
-  @JSImport("bdfjs", "trim")
-  @js.native
-  def trim(bitmap: Bitmap): Bitmap = js.native
+  @scala.inline
+  def parse(text: String): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Font]
+  @scala.inline
+  def parse(text: String, options: ParseOptions): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Font]
+  @scala.inline
+  def parse(text: Buffer): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Font]
+  @scala.inline
+  def parse(text: Buffer, options: ParseOptions): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Font]
   
-  @js.native
+  @scala.inline
+  def trim(bitmap: Bitmap): Bitmap = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(bitmap.asInstanceOf[js.Any]).asInstanceOf[Bitmap]
+  
   trait Bitmap
-    extends /* row */ NumberDictionary[js.Array[Double]] {
+    extends StObject
+       with /* row */ NumberDictionary[js.Array[Double]] {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bitmap {
     
@@ -61,16 +57,15 @@ object mod {
     }
   }
   
-  @js.native
   trait BoundingBox extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object BoundingBox {
     
@@ -97,10 +92,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DrawOptions extends StObject {
     
-    var kerningBias: js.UndefOr[Double] = js.native
+    var kerningBias: js.UndefOr[Double] = js.undefined
   }
   object DrawOptions {
     
@@ -121,12 +115,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Font extends StObject {
     
-    var glyphs: NumberDictionary[Glyph] = js.native
+    var glyphs: NumberDictionary[Glyph]
     
-    var meta: Meta = js.native
+    var meta: Meta
   }
   object Font {
     
@@ -147,28 +140,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Glyph extends StObject {
     
-    var bitmap: js.Array[js.Array[Double]] = js.native
+    var bitmap: js.Array[js.Array[Double]]
     
-    var boundingBox: BoundingBox = js.native
+    var boundingBox: BoundingBox
     
-    var bytes: js.Array[Double] = js.native
+    var bytes: js.Array[Double]
     
-    var char: String = js.native
+    var char: String
     
-    var code: Double = js.native
+    var code: Double
     
-    var deviceWidthX: Double = js.native
+    var deviceWidthX: Double
     
-    var deviceWidthY: Double = js.native
+    var deviceWidthY: Double
     
-    var name: String = js.native
+    var name: String
     
-    var scalableWidthX: Double = js.native
+    var scalableWidthX: Double
     
-    var scalableWidthY: Double = js.native
+    var scalableWidthY: Double
   }
   object Glyph {
     
@@ -230,23 +222,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var boundingBox: BoundingBox = js.native
+    var boundingBox: BoundingBox
     
-    var name: String = js.native
+    var name: String
     
     // The spec says that `properties` is optional, but then goes on to point out
     // that without `defaultChar`, `fontAscent` and `fontDescent` it's not really
     // a valid font, so I chose to not mark them as a maybe.
-    var properties: Properties = js.native
+    var properties: Properties
     
-    var size: Size = js.native
+    var size: Size
     
-    var totalChars: Double = js.native
+    var totalChars: Double
     
-    var version: String = js.native
+    var version: String
   }
   object Meta {
     
@@ -286,12 +277,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var allprops: js.UndefOr[Boolean] = js.native
+    var allprops: js.UndefOr[Boolean] = js.undefined
     
-    var onlymeta: js.UndefOr[Boolean] = js.native
+    var onlymeta: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -318,59 +308,59 @@ object mod {
     }
   }
   
-  @js.native
   trait Properties
-    extends /* key */ StringDictionary[js.UndefOr[String | Double]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[String | Double]] {
     
-    var addStyleName: js.UndefOr[String] = js.native
+    var addStyleName: js.UndefOr[String] = js.undefined
     
-    var averageWidth: js.UndefOr[Double] = js.native
+    var averageWidth: js.UndefOr[Double] = js.undefined
     
-    var capHeight: js.UndefOr[Double] = js.native
+    var capHeight: js.UndefOr[Double] = js.undefined
     
-    var charsetEncoding: js.UndefOr[String] = js.native
+    var charsetEncoding: js.UndefOr[String] = js.undefined
     
-    var charsetRegistry: js.UndefOr[String] = js.native
+    var charsetRegistry: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var defaultChar: Double = js.native
+    var defaultChar: Double
     
-    var faceName: js.UndefOr[String] = js.native
+    var faceName: js.UndefOr[String] = js.undefined
     
-    var familyName: js.UndefOr[String] = js.native
+    var familyName: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontAscent: Double = js.native
+    var fontAscent: Double
     
-    var fontDescent: Double = js.native
+    var fontDescent: Double
     
-    var fontVersion: js.UndefOr[String] = js.native
+    var fontVersion: js.UndefOr[String] = js.undefined
     
-    var fontnameRegistry: js.UndefOr[String] = js.native
+    var fontnameRegistry: js.UndefOr[String] = js.undefined
     
-    var foundry: js.UndefOr[String] = js.native
+    var foundry: js.UndefOr[String] = js.undefined
     
-    var notice: js.UndefOr[String] = js.native
+    var notice: js.UndefOr[String] = js.undefined
     
-    var pixelSize: js.UndefOr[Double] = js.native
+    var pixelSize: js.UndefOr[Double] = js.undefined
     
-    var pointSize: js.UndefOr[Double] = js.native
+    var pointSize: js.UndefOr[Double] = js.undefined
     
-    var resolutionX: js.UndefOr[Double] = js.native
+    var resolutionX: js.UndefOr[Double] = js.undefined
     
-    var resolutionY: js.UndefOr[Double] = js.native
+    var resolutionY: js.UndefOr[Double] = js.undefined
     
-    var setwidthName: js.UndefOr[String] = js.native
+    var setwidthName: js.UndefOr[String] = js.undefined
     
-    var slant: js.UndefOr[String] = js.native
+    var slant: js.UndefOr[String] = js.undefined
     
-    var spacing: js.UndefOr[String] = js.native
+    var spacing: js.UndefOr[String] = js.undefined
     
-    var weightName: js.UndefOr[String] = js.native
+    var weightName: js.UndefOr[String] = js.undefined
     
-    var xHeight: js.UndefOr[Double] = js.native
+    var xHeight: js.UndefOr[Double] = js.undefined
   }
   object Properties {
     
@@ -526,14 +516,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Size extends StObject {
     
-    var points: Double = js.native
+    var points: Double
     
-    var resolutionX: Double = js.native
+    var resolutionX: Double
     
-    var resolutionY: Double = js.native
+    var resolutionY: Double
   }
   object Size {
     

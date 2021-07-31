@@ -3,15 +3,15 @@ package typings.phaser.spine
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvas {
   
   type AssetManager = typings.phaser.spine.AssetManager
   
-  @js.native
-  trait CanvasTexture extends Texture
+  trait CanvasTexture
+    extends StObject
+       with Texture
   object CanvasTexture {
     
     @scala.inline
@@ -27,30 +27,29 @@ object canvas {
     }
   }
   
-  @js.native
   trait SkeletonRenderer extends StObject {
     
-    var computeMeshVertices: js.Any = js.native
+    var computeMeshVertices: js.Any
     
-    var computeRegionVertices: js.Any = js.native
+    var computeRegionVertices: js.Any
     
-    var ctx: js.Any = js.native
+    var ctx: js.Any
     
-    var debugRendering: Boolean = js.native
+    var debugRendering: Boolean
     
-    def draw(skeleton: Skeleton): Unit = js.native
+    def draw(skeleton: Skeleton): Unit
     
-    var drawImages: js.Any = js.native
+    var drawImages: js.Any
     
-    var drawTriangle: js.Any = js.native
+    var drawTriangle: js.Any
     
-    var drawTriangles: js.Any = js.native
+    var drawTriangles: js.Any
     
-    var tempColor: js.Any = js.native
+    var tempColor: js.Any
     
-    var triangleRendering: Boolean = js.native
+    var triangleRendering: Boolean
     
-    var vertices: js.Any = js.native
+    var vertices: js.Any
   }
   object SkeletonRenderer {
     

@@ -2,10 +2,8 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaddirFailCallbackResult extends StObject {
   
   /** 错误信息
@@ -14,7 +12,7 @@ trait ReaddirFailCallbackResult extends StObject {
     * - 'fail no such file or directory ${dirPath}': 目录不存在;
     * - 'fail not a directory ${dirPath}': dirPath 不是目录;
     * - 'fail permission denied, open ${dirPath}': 指定的 filePath 路径没有读权限; */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ReaddirFailCallbackResult {
   

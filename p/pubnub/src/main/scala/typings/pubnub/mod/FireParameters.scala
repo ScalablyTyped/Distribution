@@ -2,20 +2,18 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // fire
-@js.native
 trait FireParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var message: js.Any = js.native
+  var message: js.Any
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var sendByPost: js.UndefOr[Boolean] = js.native
+  var sendByPost: js.UndefOr[Boolean] = js.undefined
 }
 object FireParameters {
   

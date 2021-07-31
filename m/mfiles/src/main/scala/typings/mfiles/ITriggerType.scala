@@ -3,31 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFTriggerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITriggerType extends StObject {
   
-  def Clone(): ITriggerType = js.native
+  def Clone(): ITriggerType
   
-  val Daily: IDailyTrigger = js.native
+  val Daily: IDailyTrigger
   
-  val MonthlyDOW: IMonthlyDOWTrigger = js.native
+  val MonthlyDOW: IMonthlyDOWTrigger
   
-  val MonthlyDate: IMonthlyDateTrigger = js.native
+  val MonthlyDate: IMonthlyDateTrigger
   
-  def SetDailyTrigger(DailyTrigger: IDailyTrigger): Unit = js.native
+  def SetDailyTrigger(DailyTrigger: IDailyTrigger): Unit
   
-  def SetMonthlyDOW(MonthlyDOWTrigger: IMonthlyDOWTrigger): Unit = js.native
+  def SetMonthlyDOW(MonthlyDOWTrigger: IMonthlyDOWTrigger): Unit
   
-  def SetMonthlyDate(MonthlyDateTrigger: IMonthlyDateTrigger): Unit = js.native
+  def SetMonthlyDate(MonthlyDateTrigger: IMonthlyDateTrigger): Unit
   
-  def SetWeekly(WeeklyTrigger: IWeeklyTrigger): Unit = js.native
+  def SetWeekly(WeeklyTrigger: IWeeklyTrigger): Unit
   
-  var Type: MFTriggerType = js.native
+  var Type: MFTriggerType
   
-  val Weekly: IWeeklyTrigger = js.native
+  val Weekly: IWeeklyTrigger
 }
 object ITriggerType {
   

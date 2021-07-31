@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoTextEntries extends StObject {
   
-  def Add(Name: String, Range: Range): AutoTextEntry = js.native
+  def Add(Name: String, Range: Range): AutoTextEntry
   
-  def AppendToSpike(Range: Range): AutoTextEntry = js.native
+  def AppendToSpike(Range: Range): AutoTextEntry
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): AutoTextEntry = js.native
+  def Item(Index: js.Any): AutoTextEntry
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.AutoTextEntries_typekey")
-  var WordDotAutoTextEntries_typekey: AutoTextEntries = js.native
+  var WordDotAutoTextEntries_typekey: AutoTextEntries
 }
 object AutoTextEntries {
   

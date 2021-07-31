@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSqladmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Available extends StObject {
   
   /**
     * The availability status of the failover replica. A false status indicates that the failover replica is out of sync. The primary instance can only failover to the failover
     * replica when the status is true.
     */
-  var available: js.UndefOr[Boolean] = js.native
+  var available: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the failover replica. If specified at instance creation, a failover replica is created for the instance. The name doesn't include the project ID. This property is
     * applicable only to Second Generation instances.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Available {
   

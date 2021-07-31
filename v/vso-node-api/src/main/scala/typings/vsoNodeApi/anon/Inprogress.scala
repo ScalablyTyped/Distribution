@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inprogress extends StObject {
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var failed: scala.Double = js.native
+  var failed: scala.Double
   
-  var inprogress: scala.Double = js.native
+  var inprogress: scala.Double
   
-  var skipped: scala.Double = js.native
+  var skipped: scala.Double
 }
 object Inprogress {
   

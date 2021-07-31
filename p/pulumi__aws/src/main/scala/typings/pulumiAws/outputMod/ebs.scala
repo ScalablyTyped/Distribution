@@ -2,12 +2,10 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ebs {
   
-  @js.native
   trait GetEbsVolumesFilter extends StObject {
     
     /**
@@ -15,13 +13,13 @@ object ebs {
       * [the underlying AWS API](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVolumes.html).
       * For example, if matching against the `size` filter, use:
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Set of values that are accepted for the given field.
       * EBS Volume IDs will be selected if any one of the given values match.
       */
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetEbsVolumesFilter {
     
@@ -45,12 +43,11 @@ object ebs {
     }
   }
   
-  @js.native
   trait GetSnapshotFilter extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetSnapshotFilter {
     
@@ -74,12 +71,11 @@ object ebs {
     }
   }
   
-  @js.native
   trait GetSnapshotIdsFilter extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetSnapshotIdsFilter {
     
@@ -103,12 +99,11 @@ object ebs {
     }
   }
   
-  @js.native
   trait GetVolumeFilter extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetVolumeFilter {
     

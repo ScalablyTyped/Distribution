@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChildrenList extends StandardParameters {
+trait ParamsResourceChildrenList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var folderId: js.UndefOr[String] = js.native
+  var folderId: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of children to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma-separated list of sort keys. Valid keys are 'createdDate',
@@ -36,17 +36,17 @@ trait ParamsResourceChildrenList extends StandardParameters {
     * note that there is a current limitation for users with approximately one
     * million files in which the requested sort order is ignored.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Page token for children.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Query string for searching children.
     */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceChildrenList {
   

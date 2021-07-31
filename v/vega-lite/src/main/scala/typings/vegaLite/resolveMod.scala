@@ -6,16 +6,17 @@ import typings.vegaLite.srcResolveMod.Resolve
 import typings.vegaLite.srcResolveMod.ResolveMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveMod {
   
-  @JSImport("vega-lite/build/src/compile/resolve", "defaultScaleResolve")
+  @JSImport("vega-lite/build/src/compile/resolve", JSImport.Namespace)
   @js.native
-  def defaultScaleResolve(channel: ScaleChannel, model: Model): ResolveMode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/resolve", "parseGuideResolve")
-  @js.native
-  def parseGuideResolve(resolve: Resolve, channel: ScaleChannel): ResolveMode = js.native
+  @scala.inline
+  def defaultScaleResolve(channel: ScaleChannel, model: Model): ResolveMode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultScaleResolve")(channel.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[ResolveMode]
+  
+  @scala.inline
+  def parseGuideResolve(resolve: Resolve, channel: ScaleChannel): ResolveMode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseGuideResolve")(resolve.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[ResolveMode]
 }

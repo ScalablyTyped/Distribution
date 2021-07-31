@@ -3,39 +3,37 @@ package typings.downshift.mod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionProps[Item] extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var defaultActiveIndex: js.UndefOr[Double] = js.native
+  var defaultActiveIndex: js.UndefOr[Double] = js.undefined
   
-  var defaultSelectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var defaultSelectedItems: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
-  var getA11yRemovalMessage: js.UndefOr[js.Function1[/* options */ A11yRemovalMessage[Item], String]] = js.native
+  var getA11yRemovalMessage: js.UndefOr[js.Function1[/* options */ A11yRemovalMessage[Item], String]] = js.undefined
   
-  var initialActiveIndex: js.UndefOr[Double] = js.native
+  var initialActiveIndex: js.UndefOr[Double] = js.undefined
   
-  var initialSelectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var initialSelectedItems: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var itemToString: js.UndefOr[js.Function1[/* item */ Item, String]] = js.native
+  var itemToString: js.UndefOr[js.Function1[/* item */ Item, String]] = js.undefined
   
-  var keyNavigationNext: js.UndefOr[String] = js.native
+  var keyNavigationNext: js.UndefOr[String] = js.undefined
   
-  var keyNavigationPrevious: js.UndefOr[String] = js.native
+  var keyNavigationPrevious: js.UndefOr[String] = js.undefined
   
-  var onActiveIndexChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var onActiveIndexChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
   
-  var onSelectedItemsChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var onSelectedItemsChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
   
-  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseMultipleSelectionStateChange[Item], Unit]] = js.undefined
   
-  var selectedItems: js.UndefOr[js.Array[Item]] = js.native
+  var selectedItems: js.UndefOr[js.Array[Item]] = js.undefined
   
   var stateReducer: js.UndefOr[
     js.Function2[
@@ -43,7 +41,7 @@ trait UseMultipleSelectionProps[Item] extends StObject {
       /* actionAndChanges */ UseMultipleSelectionStateChangeOptions[Item], 
       Partial[UseMultipleSelectionState[Item]]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object UseMultipleSelectionProps {
   
@@ -54,7 +52,7 @@ object UseMultipleSelectionProps {
   }
   
   @scala.inline
-  implicit class UseMultipleSelectionPropsMutableBuilder[Self <: UseMultipleSelectionProps[_], Item] (val x: Self with UseMultipleSelectionProps[Item]) extends AnyVal {
+  implicit class UseMultipleSelectionPropsMutableBuilder[Self <: UseMultipleSelectionProps[?], Item] (val x: Self & UseMultipleSelectionProps[Item]) extends AnyVal {
     
     @scala.inline
     def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])

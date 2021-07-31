@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnswerCallbackQueryOptions extends StObject {
   
-  var cache_time: js.UndefOr[Double] = js.native
+  var cache_time: js.UndefOr[Double] = js.undefined
   
-  var callback_query_id: String = js.native
+  var callback_query_id: String
   
-  var show_alert: js.UndefOr[Boolean] = js.native
+  var show_alert: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object AnswerCallbackQueryOptions {
   

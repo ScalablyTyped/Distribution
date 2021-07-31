@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagStreamInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to add the tag or tags to.
     */
-  var StreamARN: js.UndefOr[ResourceARN] = js.native
+  var StreamARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the stream that you want to add the tag or tags to.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisvideoMod.StreamName] = js.undefined
   
   /**
     * A list of tags to associate with the specified stream. Each tag is a key-value pair (the value is optional).
     */
-  var Tags: ResourceTags = js.native
+  var Tags: ResourceTags
 }
 object TagStreamInput {
   

@@ -2,21 +2,19 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeMenuOption extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Array[TreeNode]] = js.native
+  var data: js.UndefOr[js.Array[TreeNode]] = js.undefined
   
-  var initialState: js.UndefOr[String] = js.native
+  var initialState: js.UndefOr[String] = js.undefined
   
-  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, _]] = js.native
+  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, js.Any]] = js.undefined
   
-  var itemWrapper: js.UndefOr[Boolean] = js.native
+  var itemWrapper: js.UndefOr[Boolean] = js.undefined
 }
 object TreeMenuOption {
   
@@ -51,7 +49,7 @@ object TreeMenuOption {
     def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
     @scala.inline
-    def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => _): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
+    def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => js.Any): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
     
     @scala.inline
     def setItemCreatorUndefined: Self = StObject.set(x, "itemCreator", js.undefined)

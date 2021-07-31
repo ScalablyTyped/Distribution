@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In contrast to the struct {@link SortingInfo} this struct is used to be on the safe side, that no one asks for sorting by a property which is not
   * contained in a {@link ContentResultSet} .
   */
-@js.native
 trait NumberedSortingInfo extends StObject {
   
   /** contains a flag indicating the sort mode (ascending or descending). */
-  var Ascending: Boolean = js.native
+  var Ascending: Boolean
   
   /** sort the result set by this column. Index starts with `1` . */
-  var ColumnIndex: Double = js.native
+  var ColumnIndex: Double
 }
 object NumberedSortingInfo {
   

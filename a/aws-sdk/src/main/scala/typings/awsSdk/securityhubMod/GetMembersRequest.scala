@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMembersRequest extends StObject {
   
   /**
     * The list of account IDs for the Security Hub member accounts to return the details for. 
     */
-  var AccountIds: AccountIdList = js.native
+  var AccountIds: AccountIdList
 }
 object GetMembersRequest {
   

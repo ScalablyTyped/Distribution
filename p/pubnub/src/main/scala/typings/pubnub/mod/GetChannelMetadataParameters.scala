@@ -3,15 +3,13 @@ package typings.pubnub.mod
 import typings.pubnub.anon.CustomFieldsBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetChannelMetadataParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var include: js.UndefOr[CustomFieldsBoolean] = js.native
+  var include: js.UndefOr[CustomFieldsBoolean] = js.undefined
 }
 object GetChannelMetadataParameters {
   

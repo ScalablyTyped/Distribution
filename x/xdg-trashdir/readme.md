@@ -12,7 +12,7 @@ Get the correct trash path on Linux
 | Keywords           | dir, file, linux, recycle, trash, xdg |
 | # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 1429821 |
+| # downloads        | 2385430 |
 | # stars            | 1 |
 
 ## Links

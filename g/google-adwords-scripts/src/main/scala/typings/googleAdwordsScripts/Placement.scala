@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Placement
-  extends ExcludedPlacement
+  extends StObject
+     with ExcludedPlacement
      with hasStats {
   
   def bidding(): PlacementBidding = js.native

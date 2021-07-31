@@ -2,61 +2,59 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordPolicy extends StObject {
   
   /**
     * Specifies whether IAM users are allowed to change their own password.
     */
-  var AllowUsersToChangePassword: js.UndefOr[booleanType] = js.native
+  var AllowUsersToChangePassword: js.UndefOr[booleanType] = js.undefined
   
   /**
     * Indicates whether passwords in the account expire. Returns true if MaxPasswordAge contains a value greater than 0. Returns false if MaxPasswordAge is 0 or not present.
     */
-  var ExpirePasswords: js.UndefOr[booleanType] = js.native
+  var ExpirePasswords: js.UndefOr[booleanType] = js.undefined
   
   /**
     * Specifies whether IAM users are prevented from setting a new password after their password has expired.
     */
-  var HardExpiry: js.UndefOr[booleanObjectType] = js.native
+  var HardExpiry: js.UndefOr[booleanObjectType] = js.undefined
   
   /**
     * The number of days that an IAM user password is valid.
     */
-  var MaxPasswordAge: js.UndefOr[maxPasswordAgeType] = js.native
+  var MaxPasswordAge: js.UndefOr[maxPasswordAgeType] = js.undefined
   
   /**
     * Minimum length to require for IAM user passwords.
     */
-  var MinimumPasswordLength: js.UndefOr[minimumPasswordLengthType] = js.native
+  var MinimumPasswordLength: js.UndefOr[minimumPasswordLengthType] = js.undefined
   
   /**
     * Specifies the number of previous passwords that IAM users are prevented from reusing.
     */
-  var PasswordReusePrevention: js.UndefOr[passwordReusePreventionType] = js.native
+  var PasswordReusePrevention: js.UndefOr[passwordReusePreventionType] = js.undefined
   
   /**
     * Specifies whether to require lowercase characters for IAM user passwords.
     */
-  var RequireLowercaseCharacters: js.UndefOr[booleanType] = js.native
+  var RequireLowercaseCharacters: js.UndefOr[booleanType] = js.undefined
   
   /**
     * Specifies whether to require numbers for IAM user passwords.
     */
-  var RequireNumbers: js.UndefOr[booleanType] = js.native
+  var RequireNumbers: js.UndefOr[booleanType] = js.undefined
   
   /**
     * Specifies whether to require symbols for IAM user passwords.
     */
-  var RequireSymbols: js.UndefOr[booleanType] = js.native
+  var RequireSymbols: js.UndefOr[booleanType] = js.undefined
   
   /**
     * Specifies whether to require uppercase characters for IAM user passwords.
     */
-  var RequireUppercaseCharacters: js.UndefOr[booleanType] = js.native
+  var RequireUppercaseCharacters: js.UndefOr[booleanType] = js.undefined
 }
 object PasswordPolicy {
   

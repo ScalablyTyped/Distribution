@@ -2,15 +2,13 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value[TContext] extends StObject {
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Value {
   
@@ -21,7 +19,7 @@ object Value {
   }
   
   @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value[_], TContext] (val x: Self with Value[TContext]) extends AnyVal {
+  implicit class ValueMutableBuilder[Self <: Value[?], TContext] (val x: Self & Value[TContext]) extends AnyVal {
     
     @scala.inline
     def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

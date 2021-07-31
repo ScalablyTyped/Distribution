@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBasicFilterRequest extends StObject {
   
   /** The filter to set. */
-  var filter: js.UndefOr[BasicFilter] = js.native
+  var filter: js.UndefOr[BasicFilter] = js.undefined
 }
 object SetBasicFilterRequest {
   

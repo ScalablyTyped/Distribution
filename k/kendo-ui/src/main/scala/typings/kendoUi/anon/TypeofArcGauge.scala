@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.ArcGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofArcGauge extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ArcGauge = js.native
+  def extend(proto: js.Object): ArcGauge
   
   /* static member */
-  var fn: ArcGauge = js.native
+  var fn: ArcGauge
 }
 object TypeofArcGauge {
   

@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrilldownDrillUpButtonOptions extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait DrilldownDrillUpButtonOptions extends StObject {
     * `relativeTo` box. Available properties are `x`, `y`, `align` and
     * `verticalAlign`.
     */
-  var position: js.UndefOr[AlignObject | DrilldownDrillUpButtonPositionOptions] = js.native
+  var position: js.UndefOr[AlignObject | DrilldownDrillUpButtonPositionOptions] = js.undefined
   
   /**
     * (Highcharts, Highmaps) What box to align the button to. Can be either
     * `plotBox` or `spacingBox`.
     */
-  var relativeTo: js.UndefOr[ButtonRelativeToValue] = js.native
+  var relativeTo: js.UndefOr[ButtonRelativeToValue] = js.undefined
   
   /**
     * (Highcharts, Highmaps) A collection of attributes for the button. The
@@ -31,7 +29,7 @@ trait DrilldownDrillUpButtonOptions extends StObject {
     * In styled mode, drill-up button styles can be applied with the
     * `.highcharts-drillup-button` class.
     */
-  var theme: js.UndefOr[js.Object] = js.native
+  var theme: js.UndefOr[js.Object] = js.undefined
 }
 object DrilldownDrillUpButtonOptions {
   

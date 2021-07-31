@@ -2,17 +2,15 @@ package typings.satnav
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INavigationOptions extends StObject {
   
-  var directions: js.UndefOr[js.Function1[/* params */ js.Any, _]] = js.native
+  var directions: js.UndefOr[js.Function1[/* params */ js.Any, js.Any]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | Callback] = js.native
+  var title: js.UndefOr[String | Callback] = js.undefined
 }
 object INavigationOptions {
   
@@ -26,7 +24,7 @@ object INavigationOptions {
   implicit class INavigationOptionsMutableBuilder[Self <: INavigationOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDirections(value: /* params */ js.Any => _): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
+    def setDirections(value: /* params */ js.Any => js.Any): Self = StObject.set(x, "directions", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)

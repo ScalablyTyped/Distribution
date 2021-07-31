@@ -2,35 +2,33 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 所有通过wx对象调用的接口的基础请求参数
   * 见：https://mp.weixin.qq.com/wiki?action=doc&id=mp1421141115&t=0.08966560295638093#7
   */
-@js.native
 trait WxBaseRequestConfig extends StObject {
   
   /**
     * 用户点击取消时的回调函数，仅部分有用户取消操作的api才会用到
     */
-  var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用完成时执行的回调函数，无论成功或失败都会执行
     */
-  var complete: js.UndefOr[js.Function1[/* res */ js.UndefOr[js.Any], Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /**
     * 接口调用失败时执行的回调函数
     */
-  var fail: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /**
     * 接口调用成功时执行的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* res */ js.UndefOr[js.Any], Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object WxBaseRequestConfig {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Eventtags")
@@ -31,7 +30,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEventtagsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEventtagsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaEventTag] = js.native
   def get(callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
   def get(params: ParamsResourceEventtagsGet): GaxiosPromise[SchemaEventTag] = js.native
   def get(params: ParamsResourceEventtagsGet, callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaEventTag] = js.native
   def insert(callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
   def insert(params: ParamsResourceEventtagsInsert): GaxiosPromise[SchemaEventTag] = js.native
   def insert(params: ParamsResourceEventtagsInsert, callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
   def insert(
@@ -130,7 +129,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaEventTagsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaEventTagsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventTagsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEventTagsListResponse] = js.native
   def list(params: ParamsResourceEventtagsList): GaxiosPromise[SchemaEventTagsListResponse] = js.native
   def list(params: ParamsResourceEventtagsList, callback: BodyResponseCallback[SchemaEventTagsListResponse]): Unit = js.native
   def list(
@@ -162,7 +161,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaEventTag] = js.native
   def patch(callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
   def patch(params: ParamsResourceEventtagsPatch): GaxiosPromise[SchemaEventTag] = js.native
   def patch(params: ParamsResourceEventtagsPatch, callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
   def patch(
@@ -192,7 +191,7 @@ class ResourceEventtags protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaEventTag] = js.native
   def update(callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEventTag] = js.native
   def update(params: ParamsResourceEventtagsUpdate): GaxiosPromise[SchemaEventTag] = js.native
   def update(params: ParamsResourceEventtagsUpdate, callback: BodyResponseCallback[SchemaEventTag]): Unit = js.native
   def update(

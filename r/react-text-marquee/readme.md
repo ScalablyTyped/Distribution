@@ -12,7 +12,7 @@ A <marquee> component for react.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6387 |
+| # downloads        | 9755 |
 | # stars            | 0 |
 
 ## Links

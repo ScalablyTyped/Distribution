@@ -3,37 +3,35 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportGroupExportConfigS3Destination extends StObject {
   
   /**
     * The name of the S3 bucket where the raw data of a report are exported.
     */
-  var bucket: Input[String] = js.native
+  var bucket: Input[String]
   
   /**
     * A boolean value that specifies if the results of a report are encrypted.
     * **Note: the API does not currently allow setting encryption as disabled**
     */
-  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
+  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The encryption key for the report's encrypted raw data. The KMS key ARN.
     */
-  var encryptionKey: Input[String] = js.native
+  var encryptionKey: Input[String]
   
   /**
     * The type of build output artifact to create. Valid values are: `NONE` (default) and `ZIP`.
     */
-  var packaging: js.UndefOr[Input[String]] = js.native
+  var packaging: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The path to the exported report's raw data results.
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
 }
 object ReportGroupExportConfigS3Destination {
   

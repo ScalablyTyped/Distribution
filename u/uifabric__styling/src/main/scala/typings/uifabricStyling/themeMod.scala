@@ -6,51 +6,43 @@ import typings.fluentuiTheme.themeMod.PartialTheme
 import typings.fluentuiTheme.themeMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
+  
+  @JSImport("@uifabric/styling/lib/styles/theme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uifabric/styling/lib/styles/theme", "ThemeSettingName")
   @js.native
   val ThemeSettingName: /* "theme" */ String = js.native
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "createTheme")
-  @js.native
-  def createTheme(): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles/theme", "createTheme")
-  @js.native
-  def createTheme(theme: js.UndefOr[scala.Nothing], depComments: Boolean): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles/theme", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme): Theme = js.native
-  @JSImport("@uifabric/styling/lib/styles/theme", "createTheme")
-  @js.native
-  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = js.native
+  @scala.inline
+  def createTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")().asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: Unit, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  @scala.inline
+  def createTheme(theme: PartialTheme, depComments: Boolean): Theme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[Theme]
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "getTheme")
-  @js.native
-  def getTheme(): ITheme = js.native
-  @JSImport("@uifabric/styling/lib/styles/theme", "getTheme")
-  @js.native
-  def getTheme(depComments: Boolean): ITheme = js.native
+  @scala.inline
+  def getTheme(): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")().asInstanceOf[ITheme]
+  @scala.inline
+  def getTheme(depComments: Boolean): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(depComments.asInstanceOf[js.Any]).asInstanceOf[ITheme]
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "initializeThemeInCustomizations")
-  @js.native
-  def initializeThemeInCustomizations(): Unit = js.native
+  @scala.inline
+  def initializeThemeInCustomizations(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeThemeInCustomizations")().asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "loadTheme")
-  @js.native
-  def loadTheme(theme: IPartialTheme): ITheme = js.native
-  @JSImport("@uifabric/styling/lib/styles/theme", "loadTheme")
-  @js.native
-  def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = js.native
+  @scala.inline
+  def loadTheme(theme: IPartialTheme): ITheme = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[ITheme]
+  @scala.inline
+  def loadTheme(theme: IPartialTheme, depComments: Boolean): ITheme = (^.asInstanceOf[js.Dynamic].applyDynamic("loadTheme")(theme.asInstanceOf[js.Any], depComments.asInstanceOf[js.Any])).asInstanceOf[ITheme]
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "registerOnThemeChangeCallback")
-  @js.native
-  def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
+  @scala.inline
+  def registerOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/styling/lib/styles/theme", "removeOnThemeChangeCallback")
-  @js.native
-  def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = js.native
+  @scala.inline
+  def removeOnThemeChangeCallback(callback: js.Function1[/* theme */ ITheme, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOnThemeChangeCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

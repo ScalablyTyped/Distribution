@@ -2,21 +2,19 @@ package typings.awsSdk.serverlessapplicationrepositoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationVersionsResponse extends StObject {
   
   /**
     * The token to request the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * An array of version summaries for the application.
     */
-  var Versions: js.UndefOr[listOfVersionSummary] = js.native
+  var Versions: js.UndefOr[listOfVersionSummary] = js.undefined
 }
 object ListApplicationVersionsResponse {
   

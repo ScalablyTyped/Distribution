@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChatPostEvent extends ChatEvent {
+trait ChatPostEvent
+  extends StObject
+     with ChatEvent {
   
-  var from: js.UndefOr[js.Any] = js.native
+  var from: js.UndefOr[js.Any] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var timestamp: js.UndefOr[Date] = js.native
+  var timestamp: js.UndefOr[Date] = js.undefined
 }
 object ChatPostEvent {
   

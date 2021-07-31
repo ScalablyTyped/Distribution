@@ -4,49 +4,72 @@ import typings.asn1js.mod.Integer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsapublickeyMod {
   
   @JSImport("pkijs/src/RSAPublicKey", JSImport.Default)
   @js.native
-  class default () extends RSAPublicKey {
+  class default ()
+    extends StObject
+       with RSAPublicKey {
     def this(params: js.Any) = this()
+    
+    /**
+      * Convert JSON value into current object
+      * @param {JsonWebKey} json
+      */
+    /* CompleteClass */
+    override def fromJSON(json: JsonWebKey): Unit = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var modulus: Integer = js.native
+    
+    /* CompleteClass */
+    var publicExponent: Integer = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/RSAPublicKey", "default.defaultValues")
+    @JSImport("pkijs/src/RSAPublicKey", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/RSAPublicKey", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/RSAPublicKey", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait RSAPublicKey extends StObject {
     
     /**
       * Convert JSON value into current object
       * @param {JsonWebKey} json
       */
-    def fromJSON(json: JsonWebKey): Unit = js.native
+    def fromJSON(json: JsonWebKey): Unit
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var modulus: Integer = js.native
+    var modulus: Integer
     
-    var publicExponent: Integer = js.native
+    var publicExponent: Integer
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object RSAPublicKey {
     

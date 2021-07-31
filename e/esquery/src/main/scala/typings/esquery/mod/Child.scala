@@ -3,24 +3,23 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.child
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Child
-  extends BinarySelectorAtom
+  extends StObject
+     with BinarySelectorAtom
      with BinarySelector
      with Selector {
   
   @JSName("type")
-  var type_Child: child = js.native
+  var type_Child: child
 }
 object Child {
   
   @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector, `type`: child): Child = {
+  def apply(left: SubjectSelector, right: SubjectSelector): Child = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("child")
     __obj.asInstanceOf[Child]
   }
   

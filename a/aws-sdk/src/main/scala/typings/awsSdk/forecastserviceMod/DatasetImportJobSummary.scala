@@ -2,46 +2,44 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetImportJobSummary extends StObject {
   
   /**
     * When the dataset import job was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The location of the training data to import and an AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the data. The training data must be stored in an Amazon S3 bucket. If encryption is used, DataSource includes an AWS Key Management Service (KMS) key.
     */
-  var DataSource: js.UndefOr[typings.awsSdk.forecastserviceMod.DataSource] = js.native
+  var DataSource: js.UndefOr[typings.awsSdk.forecastserviceMod.DataSource] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset import job.
     */
-  var DatasetImportJobArn: js.UndefOr[Arn] = js.native
+  var DatasetImportJobArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the dataset import job.
     */
-  var DatasetImportJobName: js.UndefOr[Name] = js.native
+  var DatasetImportJobName: js.UndefOr[Name] = js.undefined
   
   /**
     * The last time that the dataset was modified. The time depends on the status of the job, as follows:    CREATE_PENDING - The same time as CreationTime.    CREATE_IN_PROGRESS - The current timestamp.    ACTIVE or CREATE_FAILED - When the job finished or failed.  
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If an error occurred, an informational message about the error.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The status of the dataset import job. The status is reflected in the status of the dataset. For example, when the import job status is CREATE_IN_PROGRESS, the status of the dataset is UPDATE_IN_PROGRESS. States include:    ACTIVE     CREATE_PENDING, CREATE_IN_PROGRESS, CREATE_FAILED     DELETE_PENDING, DELETE_IN_PROGRESS, DELETE_FAILED   
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
 }
 object DatasetImportJobSummary {
   

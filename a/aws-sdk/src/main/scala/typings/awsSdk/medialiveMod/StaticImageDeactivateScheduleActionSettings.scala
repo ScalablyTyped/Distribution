@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticImageDeactivateScheduleActionSettings extends StObject {
   
   /**
     * The time in milliseconds for the image to fade out. Default is 0 (no fade-out).
     */
-  var FadeOut: js.UndefOr[integerMin0] = js.native
+  var FadeOut: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * The image overlay layer to deactivate, 0 to 7. Default is 0.
     */
-  var Layer: js.UndefOr[integerMin0Max7] = js.native
+  var Layer: js.UndefOr[integerMin0Max7] = js.undefined
 }
 object StaticImageDeactivateScheduleActionSettings {
   

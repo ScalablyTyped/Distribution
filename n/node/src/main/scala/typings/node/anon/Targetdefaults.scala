@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Targetdefaults extends StObject {
   
-  var target_defaults: Cflags = js.native
+  var target_defaults: Cflags
   
-  var variables: Clang = js.native
+  var variables: Clang
 }
 object Targetdefaults {
   

@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data controlled by this exception
   */
-@js.native
-trait ConsentExceptData extends BackboneElement {
+trait ConsentExceptData
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'meaning'.
     */
-  var _meaning: js.UndefOr[Element] = js.native
+  var _meaning: js.UndefOr[Element] = js.undefined
   
   /**
     * instance | related | dependents | authoredby
     */
-  var meaning: code = js.native
+  var meaning: code
   
   /**
     * The actual data reference
     */
-  var reference: Reference = js.native
+  var reference: Reference
 }
 object ConsentExceptData {
   

@@ -3,44 +3,42 @@ package typings.nwJs.mod.global.NWJSHelpers
 import typings.nwJs.mod.global.nw.Menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  Option for tray that contains initial settings for the Tray.
   */
-@js.native
 trait TrayOption extends StObject {
   
   /**
     * {string} alternate
     */
-  var alticon: js.UndefOr[String] = js.native
+  var alticon: js.UndefOr[String] = js.undefined
   
   /**
     * {string} icon
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * {boolean} whether icons are templates
     */
-  var iconsAreTemplates: js.UndefOr[Boolean] = js.native
+  var iconsAreTemplates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * {Menu} popup menu
     */
-  var menu: js.UndefOr[Menu] = js.native
+  var menu: js.UndefOr[Menu] = js.undefined
   
   /**
     * {string} title
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * {string} tooltip
     */
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object TrayOption {
   

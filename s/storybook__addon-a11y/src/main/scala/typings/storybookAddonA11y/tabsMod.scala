@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.storybookAddonA11y.anon.Items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -13,10 +12,9 @@ object tabsMod {
   @js.native
   val Tabs: FC[TabsProps] = js.native
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var tabs: js.Array[Items] = js.native
+    var tabs: js.Array[Items]
   }
   object TabsProps {
     

@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a FHIR store.
   */
-@js.native
 trait SchemaFhirStore extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaFhirStore extends StObject {
     * GetPatientEverything, will not return all the results if broken
     * references exist.
     */
-  var disableReferentialIntegrity: js.UndefOr[Boolean] = js.native
+  var disableReferentialIntegrity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to disable resource versioning for this FHIR store. This field
@@ -32,7 +30,7 @@ trait SchemaFhirStore extends StObject {
     * no historical versions will be kept. The server will send back errors for
     * attempts to read the historical versions.
     */
-  var disableResourceVersioning: js.UndefOr[Boolean] = js.native
+  var disableResourceVersioning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this FHIR store has the [updateCreate
@@ -46,13 +44,13 @@ trait SchemaFhirStore extends StObject {
     * FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub
     * notifications.
     */
-  var enableUpdateCreate: js.UndefOr[Boolean] = js.native
+  var enableUpdateCreate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. Resource name of the FHIR store, of the form
     * `projects/{project_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty, publish all resource modifications of this FHIR store to
@@ -60,7 +58,7 @@ trait SchemaFhirStore extends StObject {
     * with a string describing the action that has triggered the notification,
     * e.g. &quot;action&quot;:&quot;CreateResource&quot;.
     */
-  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.native
+  var notificationConfig: js.UndefOr[SchemaNotificationConfig] = js.undefined
 }
 object SchemaFhirStore {
   

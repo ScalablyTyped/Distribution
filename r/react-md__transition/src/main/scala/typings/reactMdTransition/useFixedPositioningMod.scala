@@ -8,26 +8,28 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFixedPositioningMod {
   
-  @JSImport("@react-md/transition/types/useFixedPositioning", "useFixedPositioning")
+  @JSImport("@react-md/transition/types/useFixedPositioning", JSImport.Namespace)
   @js.native
-  def useFixedPositioning(
-    hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds: FixedPositioningOptions
-  ): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useFixedPositioning(
+    hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds: FixedPositioningOptions
+  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFixedPositioning")(hasOnEnterOnEnteringOnEnteredOnExitedFixedToGetOptionsOnResizeOnScrollCurrentAnchorInitialXInitialYXMarginVwMarginYMarginVhMarginWidthOnPositionChangeTransformOriginPreventOverlapDisableSwappingDisableVHBounds.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
   trait FixedPositioningOptions
-    extends OptionalFixedPositionOptions
+    extends StObject
+       with OptionalFixedPositionOptions
        with TransitionHooks {
     
     /**
       * The element that the transitioning node should be fixed to.
       */
-    var fixedTo: FixedTo = js.native
+    var fixedTo: FixedTo
     
     /**
       * An optional function to call to dynamically get the options when the node
@@ -35,34 +37,34 @@ object useFixedPositioningMod {
       * things once the DOM node has been added for initial positioning or other things
       * like that. The returned options will override the existing options
       */
-    var getOptions: js.UndefOr[GetFixedPositionOptions] = js.native
+    var getOptions: js.UndefOr[GetFixedPositionOptions] = js.undefined
     
     /**
       * An optional function to call when the provide `xPosition` and `yPosition` are not
       * the same as the "calculated" position after trying to make the element fixed
       * within the viewport.
       */
-    var onPositionChange: js.UndefOr[PositionChange] = js.native
+    var onPositionChange: js.UndefOr[PositionChange] = js.undefined
     
     /**
       * An optional function to call when the element is in the DOM and a window resize
       * event has occurred. The main use-case for this is hiding the fixed element when
       * the page is resized.
       */
-    var onResize: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * An optional function to call when the element is in the DOM and a window scroll
       * event has occurred. The main use-case for this is hiding the fixed element when
       * the element or the entire page has a scroll event.
       */
-    var onScroll: js.UndefOr[OnFixedPositionScroll] = js.native
+    var onScroll: js.UndefOr[OnFixedPositionScroll] = js.undefined
   }
   object FixedPositioningOptions {
     
     @scala.inline
     def apply(): FixedPositioningOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(fixedTo = null)
       __obj.asInstanceOf[FixedPositioningOptions]
     }
     
@@ -113,32 +115,31 @@ object useFixedPositioningMod {
   type OnFixedPositionScroll = js.Function2[/* event */ Event, /* data */ ScrollData, Unit]
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils.FixedPositionOptions, 'container' | 'element'> */
-  @js.native
   trait OptionalFixedPositionOptions extends StObject {
     
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.native
+    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
     
-    var disableSwapping: js.UndefOr[Boolean] = js.native
+    var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
-    var disableVHBounds: js.UndefOr[Boolean] = js.native
+    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var preventOverlap: js.UndefOr[Boolean] = js.native
+    var preventOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var transformOrigin: js.UndefOr[Boolean] = js.native
+    var transformOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var vhMargin: js.UndefOr[Double] = js.native
+    var vhMargin: js.UndefOr[Double] = js.undefined
     
-    var vwMargin: js.UndefOr[Double] = js.native
+    var vwMargin: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[PositionWidth] = js.native
+    var width: js.UndefOr[PositionWidth] = js.undefined
     
-    var xMargin: js.UndefOr[Double] = js.native
+    var xMargin: js.UndefOr[Double] = js.undefined
     
-    var yMargin: js.UndefOr[Double] = js.native
+    var yMargin: js.UndefOr[Double] = js.undefined
   }
   object OptionalFixedPositionOptions {
     
@@ -228,20 +229,19 @@ object useFixedPositioningMod {
   type PositionChange = js.Function2[/* wanted */ PositionAnchor, /* actual */ PositionAnchor, Unit]
   
   /* Inlined parent std.Required<@react-md/transition.@react-md/transition/types/useFixedPositioning.TransitionHooks> */
-  @js.native
   trait ReturnValue extends StObject {
     
-    var onEnter: js.Any = js.native
+    var onEnter: js.Any
     
-    var onEntered: js.Any = js.native
+    var onEntered: js.Any
     
-    var onEntering: js.Any = js.native
+    var onEntering: js.Any
     
-    var onExited: js.Any = js.native
+    var onExited: js.Any
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    def updateStyle(): Unit = js.native
+    def updateStyle(): Unit
   }
   object ReturnValue {
     
@@ -277,25 +277,24 @@ object useFixedPositioningMod {
     }
   }
   
-  @js.native
   trait ScrollData extends StObject {
     
-    var element: HTMLElement | Null = js.native
+    var element: HTMLElement | Null
     
-    var fixedTo: HTMLElement | Null = js.native
+    var fixedTo: HTMLElement | Null
     
     /**
       * Boolean if the `fixedTo` element is visible within the viewport. This is useful
       * if you'd like to hide the element only once the user scrolls these elements
       * out of view.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ScrollData {
     
     @scala.inline
     def apply(visible: Boolean): ScrollData = {
-      val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any], element = null, fixedTo = null)
       __obj.asInstanceOf[ScrollData]
     }
     
@@ -320,16 +319,15 @@ object useFixedPositioningMod {
   }
   
   /* Inlined std.Pick<react-transition-group.react-transition-group/Transition.TransitionProps<undefined>, 'onEnter' | 'onEntering' | 'onEntered' | 'onExited'> */
-  @js.native
   trait TransitionHooks extends StObject {
     
-    var onEnter: js.UndefOr[js.Any] = js.native
+    var onEnter: js.UndefOr[js.Any] = js.undefined
     
-    var onEntered: js.UndefOr[js.Any] = js.native
+    var onEntered: js.UndefOr[js.Any] = js.undefined
     
-    var onEntering: js.UndefOr[js.Any] = js.native
+    var onEntering: js.UndefOr[js.Any] = js.undefined
     
-    var onExited: js.UndefOr[js.Any] = js.native
+    var onExited: js.UndefOr[js.Any] = js.undefined
   }
   object TransitionHooks {
     

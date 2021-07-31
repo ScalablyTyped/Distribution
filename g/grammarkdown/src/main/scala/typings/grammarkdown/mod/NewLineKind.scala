@@ -2,7 +2,6 @@ package typings.grammarkdown.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NewLineKind")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object NewLineKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.grammarkdown.optionsMod.NewLineKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.grammarkdown.optionsMod.NewLineKind & Double] = js.native
   
-  /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.optionsMod.NewLineKind.CarriageReturnLineFeed with Double = js.native
+  /* 1 */ val CarriageReturnLineFeed: typings.grammarkdown.optionsMod.NewLineKind.CarriageReturnLineFeed & Double = js.native
   
-  /* 0 */ val LineFeed: typings.grammarkdown.optionsMod.NewLineKind.LineFeed with Double = js.native
+  /* 0 */ val LineFeed: typings.grammarkdown.optionsMod.NewLineKind.LineFeed & Double = js.native
 }

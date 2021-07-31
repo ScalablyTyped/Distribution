@@ -2,15 +2,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CanvasHTMLAttributes[T] extends HTMLAttributes[T] {
+trait CanvasHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object CanvasHTMLAttributes {
   
@@ -21,7 +21,7 @@ object CanvasHTMLAttributes {
   }
   
   @scala.inline
-  implicit class CanvasHTMLAttributesMutableBuilder[Self <: CanvasHTMLAttributes[_], T] (val x: Self with CanvasHTMLAttributes[T]) extends AnyVal {
+  implicit class CanvasHTMLAttributesMutableBuilder[Self <: CanvasHTMLAttributes[?], T] (val x: Self & CanvasHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

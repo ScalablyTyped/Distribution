@@ -9,14 +9,15 @@ import typings.firebaseDatabase.sortedMapMod.SortedMap
 import typings.firebaseDatabase.sortedMapMod.SortedMapIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object childrenNodeMod {
   
   @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode")
   @js.native
-  class ChildrenNode protected () extends Node {
+  class ChildrenNode protected ()
+    extends StObject
+       with Node {
     def this(children_ : SortedMap[String, Node], priorityNode_ : Null, indexMap_ : IndexMap) = this()
     /**
       *
@@ -129,7 +130,9 @@ object childrenNodeMod {
   class MaxNode () extends ChildrenNode
   
   @js.native
-  trait ChildrenNodeConstructor extends Instantiable3[
+  trait ChildrenNodeConstructor
+    extends StObject
+       with Instantiable3[
           /* children_ */ SortedMap[String, Node], 
           (/* priorityNode_ */ Node) | (/* priorityNode_ */ Null), 
           /* indexMap_ */ IndexMap, 
@@ -145,12 +148,11 @@ object childrenNodeMod {
   /* augmented module */
   object firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod {
     
-    @js.native
     trait NamedNode extends StObject {
       
-      var MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode = js.native
+      var MAX: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
       
-      var MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode = js.native
+      var MIN: typings.firebaseDatabase.childrenNodeMod.firebaseDatabaseDistSrcCoreSnapNodeAugmentingMod.NamedNode
     }
     object NamedNode {
       

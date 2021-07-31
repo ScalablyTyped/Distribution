@@ -2,16 +2,14 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd-mobile.antd-mobile/lib/toast.IToastConfig> */
-@js.native
 trait PartialIToastConfig extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var mask: js.UndefOr[Boolean] = js.native
+  var mask: js.UndefOr[Boolean] = js.undefined
 }
 object PartialIToastConfig {
   

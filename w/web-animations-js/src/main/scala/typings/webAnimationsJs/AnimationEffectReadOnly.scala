@@ -2,15 +2,13 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEffectReadOnly extends StObject {
   
-  def getComputedTiming(): ComputedTimingProperties = js.native
+  def getComputedTiming(): ComputedTimingProperties
   
-  val timing: Double = js.native
+  val timing: Double
 }
 object AnimationEffectReadOnly {
   

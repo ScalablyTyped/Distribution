@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileOutput extends StObject {
   
   /**
     * The blob ID removed from the tree as part of deleting the file.
     */
-  var blobId: ObjectId = js.native
+  var blobId: ObjectId
   
   /**
     * The full commit ID of the commit that contains the change that deletes the file.
     */
-  var commitId: ObjectId = js.native
+  var commitId: ObjectId
   
   /**
     * The fully qualified path to the file to be deleted, including the full name and extension of that file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * The full SHA-1 pointer of the tree information for the commit that contains the delete file change.
     */
-  var treeId: ObjectId = js.native
+  var treeId: ObjectId
 }
 object DeleteFileOutput {
   

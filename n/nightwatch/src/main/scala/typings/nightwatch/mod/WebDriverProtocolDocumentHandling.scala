@@ -2,22 +2,21 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebDriverProtocolDocumentHandling extends StObject {
   
   def execute[T](body: String): this.type = js.native
+  def execute[T](body: String, args: js.Array[js.Any]): this.type = js.native
   def execute[T](
     body: String,
-    args: js.UndefOr[scala.Nothing],
+    args: js.Array[js.Any],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
-  def execute[T](body: String, args: js.Array[_]): this.type = js.native
   def execute[T](
     body: String,
-    args: js.Array[_],
+    args: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   /**
@@ -41,32 +40,29 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *    });
     * }
     */
-  def execute[T](body: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T]): this.type = js.native
+  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T]): this.type = js.native
+  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T], args: js.Array[js.Any]): this.type = js.native
   def execute[T](
-    body: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.UndefOr[scala.Nothing],
+    body: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T],
+    args: js.Array[js.Any],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   def execute[T](
-    body: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.Array[_]
-  ): this.type = js.native
-  def execute[T](
-    body: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.Array[_],
+    body: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T],
+    args: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   
   def executeAsync[T](script: String): this.type = js.native
+  def executeAsync[T](script: String, args: js.Array[js.Any]): this.type = js.native
   def executeAsync[T](
     script: String,
-    args: js.UndefOr[scala.Nothing],
+    args: js.Array[js.Any],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
-  def executeAsync[T](script: String, args: js.Array[_]): this.type = js.native
   def executeAsync[T](
     script: String,
-    args: js.Array[_],
+    args: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   /**
@@ -97,19 +93,16 @@ trait WebDriverProtocolDocumentHandling extends StObject {
     *    });
     * }
     */
-  def executeAsync[T](script: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T]): this.type = js.native
+  def executeAsync[T](script: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T]): this.type = js.native
+  def executeAsync[T](script: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T], args: js.Array[js.Any]): this.type = js.native
   def executeAsync[T](
-    script: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.UndefOr[scala.Nothing],
+    script: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T],
+    args: js.Array[js.Any],
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   def executeAsync[T](
-    script: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.Array[_]
-  ): this.type = js.native
-  def executeAsync[T](
-    script: js.ThisFunction1[/* this */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, T],
-    args: js.Array[_],
+    script: js.ThisFunction1[/* this */ Unit, /* repeated */ js.Any, T],
+    args: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
   ): this.type = js.native
   

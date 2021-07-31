@@ -5,7 +5,6 @@ import typings.postmanCollection.anon.IgnoreOwnVariables
 import typings.postmanCollection.anon.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -25,22 +24,23 @@ class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefiniti
   
   var name: js.UndefOr[String] = js.native
   
-  def toObjectResolved(scope: Null, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: Null, overrides: js.Array[_], options: IgnoreOwnVariables): TDefinition = js.native
-  def toObjectResolved(scope: Variables, overrides: js.Array[_]): TDefinition = js.native
-  def toObjectResolved(scope: Variables, overrides: js.Array[_], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[js.Any]): TDefinition = js.native
+  def toObjectResolved(scope: Null, overrides: js.Array[js.Any], options: IgnoreOwnVariables): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[js.Any]): TDefinition = js.native
+  def toObjectResolved(scope: Variables, overrides: js.Array[js.Any], options: IgnoreOwnVariables): TDefinition = js.native
 }
 /* static members */
 object Property {
   
-  @JSImport("postman-collection", "Property.replaceSubstitutions")
+  @JSImport("postman-collection", "Property")
   @js.native
-  def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = js.native
-  @JSImport("postman-collection", "Property.replaceSubstitutions")
-  @js.native
-  def replaceSubstitutions(str: String, variables: VariableList): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("postman-collection", "Property.replaceSubstitutionsIn")
-  @js.native
-  def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = js.native
+  @scala.inline
+  def replaceSubstitutions(str: String, variables: js.Array[VariableList]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def replaceSubstitutions(str: String, variables: VariableList): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutions")(str.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def replaceSubstitutionsIn[T](obj: T, variables: js.Array[VariableList], mutate: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceSubstitutionsIn")(obj.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], mutate.asInstanceOf[js.Any])).asInstanceOf[T]
 }

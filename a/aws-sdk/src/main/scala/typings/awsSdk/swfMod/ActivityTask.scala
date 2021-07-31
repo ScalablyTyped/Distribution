@@ -2,41 +2,39 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTask extends StObject {
   
   /**
     * The unique ID of the task.
     */
-  var activityId: ActivityId = js.native
+  var activityId: ActivityId
   
   /**
     * The type of this activity task.
     */
-  var activityType: ActivityType = js.native
+  var activityType: ActivityType
   
   /**
     * The inputs provided when the activity task was scheduled. The form of the input is user defined and should be meaningful to the activity implementation.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The ID of the ActivityTaskStarted event recorded in the history.
     */
-  var startedEventId: EventId = js.native
+  var startedEventId: EventId
   
   /**
     * The opaque string used as a handle on the task. This token is used by workers to communicate progress and response information back to the system about the task.
     */
-  var taskToken: TaskToken = js.native
+  var taskToken: TaskToken
   
   /**
     * The workflow execution that started this activity task.
     */
-  var workflowExecution: WorkflowExecution = js.native
+  var workflowExecution: WorkflowExecution
 }
 object ActivityTask {
   

@@ -2,24 +2,22 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s age range.
   */
-@js.native
 trait SchemaAgeRangeType extends StObject {
   
   /**
     * The age range.
     */
-  var ageRange: js.UndefOr[String] = js.native
+  var ageRange: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the age range.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
 }
 object SchemaAgeRangeType {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfManagedActiveDirectoryAttributes extends StObject {
   
   /**
     * A list of up to two IP addresses of DNS servers or domain controllers in the self-managed AD directory.
     */
-  var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.native
+  var DnsIps: js.UndefOr[typings.awsSdk.fsxMod.DnsIps] = js.undefined
   
   /**
     * The fully qualified domain name of the self-managed AD directory.
     */
-  var DomainName: js.UndefOr[ActiveDirectoryFullyQualifiedName] = js.native
+  var DomainName: js.UndefOr[ActiveDirectoryFullyQualifiedName] = js.undefined
   
   /**
     * The name of the domain group whose members have administrative privileges for the FSx file system.
     */
-  var FileSystemAdministratorsGroup: js.UndefOr[FileSystemAdministratorsGroupName] = js.native
+  var FileSystemAdministratorsGroup: js.UndefOr[FileSystemAdministratorsGroupName] = js.undefined
   
   /**
     * The fully qualified distinguished name of the organizational unit within the self-managed AD directory to which the Windows File Server instance is joined.
     */
-  var OrganizationalUnitDistinguishedName: js.UndefOr[typings.awsSdk.fsxMod.OrganizationalUnitDistinguishedName] = js.native
+  var OrganizationalUnitDistinguishedName: js.UndefOr[typings.awsSdk.fsxMod.OrganizationalUnitDistinguishedName] = js.undefined
   
   /**
     * The user name for the service account on your self-managed AD domain that FSx uses to join to your AD domain.
     */
-  var UserName: js.UndefOr[DirectoryUserName] = js.native
+  var UserName: js.UndefOr[DirectoryUserName] = js.undefined
 }
 object SelfManagedActiveDirectoryAttributes {
   

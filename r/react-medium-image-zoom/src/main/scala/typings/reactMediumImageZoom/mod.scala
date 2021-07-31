@@ -3,7 +3,6 @@ package typings.reactMediumImageZoom
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,16 +14,15 @@ object mod {
   
   type ImageZoom = Component[ImageZoomProps, js.Any, js.Any]
   
-  @js.native
   trait ImageZoomDefaultStyles extends StObject {
     
-    var image: js.UndefOr[js.Object] = js.native
+    var image: js.UndefOr[js.Object] = js.undefined
     
-    var overlay: js.UndefOr[js.Object] = js.native
+    var overlay: js.UndefOr[js.Object] = js.undefined
     
-    var zoomContainer: js.UndefOr[js.Object] = js.native
+    var zoomContainer: js.UndefOr[js.Object] = js.undefined
     
-    var zoomImage: js.UndefOr[js.Object] = js.native
+    var zoomImage: js.UndefOr[js.Object] = js.undefined
   }
   object ImageZoomDefaultStyles {
     
@@ -63,16 +61,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageZoomImage extends StObject {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ImageZoomImage {
     
@@ -108,28 +105,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageZoomProps extends StObject {
     
-    var defaultStyles: js.UndefOr[ImageZoomDefaultStyles] = js.native
+    var defaultStyles: js.UndefOr[ImageZoomDefaultStyles] = js.undefined
     
-    var image: ImageZoomImage = js.native
+    var image: ImageZoomImage
     
-    var isZoomed: js.UndefOr[Boolean] = js.native
+    var isZoomed: js.UndefOr[Boolean] = js.undefined
     
-    var onUnzoom: js.UndefOr[js.Function0[js.Object]] = js.native
+    var onUnzoom: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var onZoom: js.UndefOr[js.Function0[js.Object]] = js.native
+    var onZoom: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var shouldHandleZoom: js.UndefOr[js.Function0[Boolean]] = js.native
+    var shouldHandleZoom: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var shouldReplaceImage: js.UndefOr[Boolean] = js.native
+    var shouldReplaceImage: js.UndefOr[Boolean] = js.undefined
     
-    var shouldRespectMaxDimension: js.UndefOr[Boolean] = js.native
+    var shouldRespectMaxDimension: js.UndefOr[Boolean] = js.undefined
     
-    var zoomImage: js.UndefOr[ImageZoomZoomImage] = js.native
+    var zoomImage: js.UndefOr[ImageZoomZoomImage] = js.undefined
     
-    var zoomMargin: js.UndefOr[Double] = js.native
+    var zoomMargin: js.UndefOr[Double] = js.undefined
   }
   object ImageZoomProps {
     
@@ -201,16 +197,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageZoomZoomImage extends StObject {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object ImageZoomZoomImage {
     

@@ -2,22 +2,20 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudMlV1ListLocationsResponse extends StObject {
   
   /**
     * Locations where at least one type of CMLE capability is available.
     */
-  var locations: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Location]] = js.native
+  var locations: js.UndefOr[js.Array[SchemaGoogleCloudMlV1Location]] = js.undefined
   
   /**
     * Optional. Pass this token as the `page_token` field of the request for a
     * subsequent call.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1ListLocationsResponse {
   

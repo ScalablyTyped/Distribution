@@ -10,7 +10,6 @@ import typings.std.HTMLTextAreaElement
 import typings.webscopeioReactTextareaAutocomplete.anon.SelectionEnd
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,12 +28,11 @@ object mod {
   
   type DataProviderType[TItem] = js.Function1[/* token */ String, js.Promise[js.Array[TItem]] | js.Array[TItem]]
   
-  @js.native
   trait ItemComponentProps[TItem] extends StObject {
     
-    var entity: TItem = js.native
+    var entity: TItem
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object ItemComponentProps {
     
@@ -45,7 +43,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ItemComponentPropsMutableBuilder[Self <: ItemComponentProps[_], TItem] (val x: Self with ItemComponentProps[TItem]) extends AnyVal {
+    implicit class ItemComponentPropsMutableBuilder[Self <: ItemComponentProps[?], TItem] (val x: Self & ItemComponentProps[TItem]) extends AnyVal {
       
       @scala.inline
       def setEntity(value: TItem): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
@@ -81,30 +79,29 @@ object mod {
     def setCaretPosition(position: Double): Unit = js.native
   }
   
-  @js.native
   trait SettingType[TItem] extends StObject {
     
     /**
       * Show autocomplete only if it's preceded by whitespace. Cannot be combined with allowWhitespace.
       * @default false
       */
-    var afterWhitespace: js.UndefOr[Boolean] = js.native
+    var afterWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set this to true if you want to provide autocomplete for words (tokens) containing whitespace.
       * @default false
       */
-    var allowWhitespace: js.UndefOr[Boolean] = js.native
+    var allowWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The component for rendering the item in suggestion list. It has selected and entity props provided by React Textarea Autocomplete.
       */
-    var component: SFC[ItemComponentProps[TItem]] = js.native
+    var component: SFC[ItemComponentProps[TItem]]
     
     /**
       * Called after each keystroke to get data what the suggestion list should display (array or promise resolving array).
       */
-    var dataProvider: DataProviderType[TItem] = js.native
+    var dataProvider: DataProviderType[TItem]
     
     /**
       * (Optional for string based item. If the item is an object this method is required) This function defines text
@@ -121,7 +118,7 @@ object mod {
       */
     var output: js.UndefOr[
         js.Function2[/* item */ TItem, /* trigger */ js.UndefOr[String], TextToReplaceType | String]
-      ] = js.native
+      ] = js.undefined
   }
   object SettingType {
     
@@ -135,7 +132,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SettingTypeMutableBuilder[Self <: SettingType[_], TItem] (val x: Self with SettingType[TItem]) extends AnyVal {
+    implicit class SettingTypeMutableBuilder[Self <: SettingType[?], TItem] (val x: Self & SettingType[TItem]) extends AnyVal {
       
       @scala.inline
       def setAfterWhitespace(value: Boolean): Self = StObject.set(x, "afterWhitespace", value.asInstanceOf[js.Any])
@@ -163,14 +160,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TextToReplaceType extends StObject {
     
-    var caretPosition: CaretPositionType = js.native
+    var caretPosition: CaretPositionType
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object TextToReplaceType {
     
@@ -197,91 +193,92 @@ object mod {
     }
   }
   
-  @js.native
-  trait TextareaProps[TItem] extends TextareaHTMLAttributes[HTMLTextAreaElement] {
+  trait TextareaProps[TItem]
+    extends StObject
+       with TextareaHTMLAttributes[HTMLTextAreaElement] {
     
     /**
       *     When it's true autocomplete will close when use click outside.
       * @default false
       */
-    var closeOnClickOutside: js.UndefOr[Boolean] = js.native
+    var closeOnClickOutside: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ClassNames of the textarea's container.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Styles of textarea's container.
       */
-    var containerStyle: js.UndefOr[CSSProperties] = js.native
+    var containerStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       *     ClassNames of dropdown's wrapper.
       */
-    var dropdownClassName: js.UndefOr[String] = js.native
+    var dropdownClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Styles of dropdown's wrapper.
       */
-    var dropdownStyle: js.UndefOr[CSSProperties] = js.native
+    var dropdownStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Allows you to get React ref of the underlying textarea.
       */
-    var innerRef: js.UndefOr[js.Function1[/* ref */ HTMLTextAreaElement, Unit]] = js.native
+    var innerRef: js.UndefOr[js.Function1[/* ref */ HTMLTextAreaElement, Unit]] = js.undefined
     
     /**
       * ClassNames of item's wrapper.
       */
-    var itemClassName: js.UndefOr[String] = js.native
+    var itemClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Styles of item's wrapper.
       */
-    var itemStyle: js.UndefOr[CSSProperties] = js.native
+    var itemStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       *     ClassNames of list's wrapper.
       */
-    var listClassName: js.UndefOr[String] = js.native
+    var listClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Styles of list's wrapper.
       */
-    var listStyle: js.UndefOr[CSSProperties] = js.native
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * ClassNames of loader's wrapper.
       */
-    var loaderClassName: js.UndefOr[String] = js.native
+    var loaderClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Styles of loader's wrapper.
       */
-    var loaderStyle: js.UndefOr[CSSProperties] = js.native
+    var loaderStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Gets data props which is already fetched (and displayed) suggestion.
       */
-    var loadingComponent: SFC[js.Object] = js.native
+    var loadingComponent: SFC[js.Object]
     
     /**
       * Number of characters that user should type for trigger a suggestion.
       * @default 1
       */
-    var minChar: js.UndefOr[Double] = js.native
+    var minChar: js.UndefOr[Double] = js.undefined
     
     /**
       * When it's true the textarea will move along with a caret as a user continues to type.
       * @default false
       */
-    var movePopupAsYouType: js.UndefOr[Boolean] = js.native
+    var movePopupAsYouType: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Listener called every time the textarea's caret position is changed. The listener is called with one attribute - caret position denoted by an integer number.
       */
-    var onCaretPositionChange: js.UndefOr[js.Function1[/* pos */ Double, Unit]] = js.native
+    var onCaretPositionChange: js.UndefOr[js.Function1[/* pos */ Double, Unit]] = js.undefined
     
     /**
       * With default implementation it will scroll the dropdown every time when the item gets out of the view.
@@ -289,12 +286,12 @@ object mod {
       */
     var scrollToItem: js.UndefOr[
         Boolean | (js.Function2[/* container */ HTMLDivElement, /* item */ HTMLDivElement, Unit])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Define triggers and their corresponding behavior.
       */
-    var trigger: TriggerType[TItem] = js.native
+    var trigger: TriggerType[TItem]
   }
   object TextareaProps {
     
@@ -305,7 +302,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TextareaPropsMutableBuilder[Self <: TextareaProps[_], TItem] (val x: Self with TextareaProps[TItem]) extends AnyVal {
+    implicit class TextareaPropsMutableBuilder[Self <: TextareaProps[?], TItem] (val x: Self & TextareaProps[TItem]) extends AnyVal {
       
       @scala.inline
       def setCloseOnClickOutside(value: Boolean): Self = StObject.set(x, "closeOnClickOutside", value.asInstanceOf[js.Any])
@@ -414,28 +411,27 @@ object mod {
     }
   }
   
-  @js.native
   trait TextareaState[TItem] extends StObject {
     
-    var actualToken: String = js.native
+    var actualToken: String
     
-    var component: js.UndefOr[SFC[ItemComponentProps[TItem]]] = js.native
+    var component: js.UndefOr[SFC[ItemComponentProps[TItem]]] = js.undefined
     
-    var currentTrigger: js.UndefOr[String] = js.native
+    var currentTrigger: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Array[TItem]] = js.native
+    var data: js.UndefOr[js.Array[TItem]] = js.undefined
     
-    var dataLoading: Boolean = js.native
+    var dataLoading: Boolean
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var selectionEnd: Double = js.native
+    var selectionEnd: Double
     
-    var selectionStart: Double = js.native
+    var selectionStart: Double
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object TextareaState {
     
@@ -452,7 +448,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TextareaStateMutableBuilder[Self <: TextareaState[_], TItem] (val x: Self with TextareaState[TItem]) extends AnyVal {
+    implicit class TextareaStateMutableBuilder[Self <: TextareaState[?], TItem] (val x: Self & TextareaState[TItem]) extends AnyVal {
       
       @scala.inline
       def setActualToken(value: String): Self = StObject.set(x, "actualToken", value.asInstanceOf[js.Any])

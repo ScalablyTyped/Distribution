@@ -2,41 +2,39 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderableDBInstanceOption extends StObject {
   
   /**
     * A list of Availability Zones for an instance.
     */
-  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var AvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
   
   /**
     * The instance class for an instance.
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * The engine type of an instance.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The engine version of an instance.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The license model for an instance.
     */
-  var LicenseModel: js.UndefOr[String] = js.native
+  var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether an instance is in a virtual private cloud (VPC).
     */
-  var Vpc: js.UndefOr[Boolean] = js.native
+  var Vpc: js.UndefOr[Boolean] = js.undefined
 }
 object OrderableDBInstanceOption {
   

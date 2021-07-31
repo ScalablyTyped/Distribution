@@ -11,8 +11,8 @@ Registry for JavaScript native types loader based on RDF descriptions
 | Full name          | rdf-loaders-registry |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 6272 |
+| # dependents       | 3 |
+| # downloads        | 28637 |
 | # stars            | 0 |
 
 ## Links

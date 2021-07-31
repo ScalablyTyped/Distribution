@@ -3,27 +3,28 @@ package typings.openui5.global.sap.ui.core
 import typings.openui5.sap.ui.base.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResizeHandler {
+  
+  @JSGlobal("sap.ui.core.ResizeHandler")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Deregisters a previously registered handler for resize events with the given registration ID.
     * @param sId The registration ID of the handler to deregister. The ID was provided by function {@link
     * sap.ui.core.ResizeHandler.register}           when the handler was registered.
     */
-  @JSGlobal("sap.ui.core.ResizeHandler.deregister")
-  @js.native
-  def deregister(sId: String): Unit = js.native
+  @scala.inline
+  def deregister(sId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregister")(sId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns a metadata object for class sap.ui.core.ResizeHandler.
     * @returns Metadata object describing this class
     */
-  @JSGlobal("sap.ui.core.ResizeHandler.getMetadata")
-  @js.native
-  def getMetadata(): Metadata = js.native
+  @scala.inline
+  def getMetadata(): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[Metadata]
   
   /**
     * Registers the given event handler for resize events on the given DOM element or control.<b>Note:</b>
@@ -48,10 +49,8 @@ object ResizeHandler {
     * sap.ui.core.ResizeHandler.deregister}.            If the UI5 framework is not yet initialized
     * <code>null</code> is returned.
     */
-  @JSGlobal("sap.ui.core.ResizeHandler.register")
-  @js.native
-  def register(oRef: js.Any, fHandler: js.Any): String = js.native
-  @JSGlobal("sap.ui.core.ResizeHandler.register")
-  @js.native
-  def register(oRef: typings.openui5.sap.ui.core.Control, fHandler: js.Any): String = js.native
+  @scala.inline
+  def register(oRef: js.Any, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def register(oRef: typings.openui5.sap.ui.core.Control, fHandler: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fHandler.asInstanceOf[js.Any])).asInstanceOf[String]
 }

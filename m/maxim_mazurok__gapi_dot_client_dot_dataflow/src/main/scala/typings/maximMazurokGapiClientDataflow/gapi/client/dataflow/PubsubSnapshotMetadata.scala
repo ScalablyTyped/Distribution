@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubsubSnapshotMetadata extends StObject {
   
   /** The expire time of the Pubsub snapshot. */
-  var expireTime: js.UndefOr[String] = js.native
+  var expireTime: js.UndefOr[String] = js.undefined
   
   /** The name of the Pubsub snapshot. */
-  var snapshotName: js.UndefOr[String] = js.native
+  var snapshotName: js.UndefOr[String] = js.undefined
   
   /** The name of the Pubsub topic. */
-  var topicName: js.UndefOr[String] = js.native
+  var topicName: js.UndefOr[String] = js.undefined
 }
 object PubsubSnapshotMetadata {
   

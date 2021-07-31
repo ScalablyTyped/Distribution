@@ -10,9 +10,9 @@ JSON-Schema + fake data generators
 | ------------------ | :-------------: |
 | Full name          | json-schema-faker |
 | Keywords           | json, jsonschema, fake, mocks |
-| # releases         | 15 |
-| # dependents       | 176 |
-| # downloads        | 10791095 |
+| # releases         | 18 |
+| # dependents       | 195 |
+| # downloads        | 10496878 |
 | # stars            | 24 |
 
 ## Links

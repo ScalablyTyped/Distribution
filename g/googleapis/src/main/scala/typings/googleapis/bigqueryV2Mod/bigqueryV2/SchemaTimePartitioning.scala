@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTimePartitioning extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaTimePartitioning extends StObject {
     * partitions in the table. The storage in a partition will have an
     * expiration time of its partition time plus this value.
     */
-  var expirationMs: js.UndefOr[String] = js.native
+  var expirationMs: js.UndefOr[String] = js.undefined
   
   /**
     * [Beta] [Optional] If not set, the table is partitioned by pseudo column,
@@ -22,15 +20,15 @@ trait SchemaTimePartitioning extends StObject {
     * is instead partitioned by this field. The field must be a top-level
     * TIMESTAMP or DATE field. Its mode must be NULLABLE or REQUIRED.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var requirePartitionFilter: js.UndefOr[Boolean] = js.native
+  var requirePartitionFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Required] The only type supported is DAY, which will generate one
     * partition per day.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaTimePartitioning {
   

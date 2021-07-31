@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCollectionIdsResponse extends StObject {
   
   /** The collection ids. */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A page token that may be used to continue the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCollectionIdsResponse {
   

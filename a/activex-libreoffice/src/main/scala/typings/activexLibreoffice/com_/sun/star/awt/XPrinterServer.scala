@@ -5,32 +5,32 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** manages several printers on one machine. */
-@js.native
-trait XPrinterServer extends XInterface {
+trait XPrinterServer
+  extends StObject
+     with XInterface {
   
   /** returns a list of all available printer names. */
-  val PrinterNames: SafeArray[String] = js.native
+  val PrinterNames: SafeArray[String]
   
   /**
     * creates a new information printer.
     *
     * You can get all information from this printer, but the printer cannot really print.
     */
-  def createInfoPrinter(printerName: String): XInfoPrinter = js.native
+  def createInfoPrinter(printerName: String): XInfoPrinter
   
   /**
     * creates a new virtual printer.
     *
     * You must call {@link com.sun.star.awt.XPrinter.start()} to put the job into the printer spooler.
     */
-  def createPrinter(printerName: String): XPrinter = js.native
+  def createPrinter(printerName: String): XPrinter
   
   /** returns a list of all available printer names. */
-  def getPrinterNames(): SafeArray[String] = js.native
+  def getPrinterNames(): SafeArray[String]
 }
 object XPrinterServer {
   

@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var compositeFilter: js.UndefOr[CompositeFilter] = js.native
+  var compositeFilter: js.UndefOr[CompositeFilter] = js.undefined
   
-  var valueFilter: js.UndefOr[ValueFilter] = js.native
+  var valueFilter: js.UndefOr[ValueFilter] = js.undefined
 }
 object Filter {
   

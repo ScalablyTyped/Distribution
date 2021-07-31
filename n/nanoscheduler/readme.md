@@ -12,7 +12,7 @@ Schedule work to be completed when the browser is idle.
 | Keywords           | schedule, request, idle, callback, requestidlecallback, stack, push, singleton |
 | # releases         | 1 |
 | # dependents       | 4 |
-| # downloads        | 1749621 |
+| # downloads        | 1343598 |
 | # stars            | 0 |
 
 ## Links

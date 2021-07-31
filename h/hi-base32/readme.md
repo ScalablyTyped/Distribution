@@ -11,8 +11,8 @@ A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.
 | Full name          | hi-base32 |
 | Keywords           | base32, encode, decode |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 2393506 |
+| # dependents       | 33 |
+| # downloads        | 2631404 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Polygon extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Polygon extends StObject {
     * @member {boolean} PIXI.Polygon#closeStroke
     * @default true
     */
-  var closeStroke: Boolean = js.native
+  var closeStroke: Boolean
   
   /**
     * Checks whether the x and y coordinates passed to this function are contained within this polygon
@@ -28,14 +26,14 @@ trait Polygon extends StObject {
     * @param {number} y - The Y coordinate of the point to test
     * @return {boolean} Whether the x/y coordinates are within this polygon
     */
-  def contains(x: Double, y: Double): Boolean = js.native
+  def contains(x: Double, y: Double): Boolean
   
   /**
     * An array of the points of this polygon
     *
     * @member {number[]} PIXI.Polygon#points
     */
-  var points: js.Array[Double] = js.native
+  var points: js.Array[Double]
   
   /**
     * The type of the object, mainly used to avoid `instanceof` checks
@@ -45,7 +43,7 @@ trait Polygon extends StObject {
     * @default PIXI.SHAPES.POLY
     * @see PIXI.SHAPES
     */
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object Polygon {
   

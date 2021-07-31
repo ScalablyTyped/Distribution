@@ -3,37 +3,35 @@ package typings.sentryTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackframeMod {
   
-  @js.native
   trait StackFrame extends StObject {
     
-    var abs_path: js.UndefOr[String] = js.native
+    var abs_path: js.UndefOr[String] = js.undefined
     
-    var colno: js.UndefOr[Double] = js.native
+    var colno: js.UndefOr[Double] = js.undefined
     
-    var context_line: js.UndefOr[String] = js.native
+    var context_line: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var function: js.UndefOr[String] = js.native
+    var function: js.UndefOr[String] = js.undefined
     
-    var in_app: js.UndefOr[Boolean] = js.native
+    var in_app: js.UndefOr[Boolean] = js.undefined
     
-    var lineno: js.UndefOr[Double] = js.native
+    var lineno: js.UndefOr[Double] = js.undefined
     
-    var module: js.UndefOr[String] = js.native
+    var module: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var post_context: js.UndefOr[js.Array[String]] = js.native
+    var post_context: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pre_context: js.UndefOr[js.Array[String]] = js.native
+    var pre_context: js.UndefOr[js.Array[String]] = js.undefined
     
-    var vars: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var vars: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object StackFrame {
     

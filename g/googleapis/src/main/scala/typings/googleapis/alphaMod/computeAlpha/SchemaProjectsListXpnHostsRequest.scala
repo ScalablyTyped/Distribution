@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProjectsListXpnHostsRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaProjectsListXpnHostsRequest extends StObject {
     * list shared VPC host projects. If not specified, the organization will be
     * inferred from the project.
     */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
 }
 object SchemaProjectsListXpnHostsRequest {
   

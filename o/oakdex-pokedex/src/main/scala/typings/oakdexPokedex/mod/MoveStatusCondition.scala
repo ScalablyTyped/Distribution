@@ -2,15 +2,13 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveStatusCondition extends StObject {
   
-  var condition: String = js.native
+  var condition: String
   
-  var probability: Double = js.native
+  var probability: Double
 }
 object MoveStatusCondition {
   

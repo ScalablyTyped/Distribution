@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceControllerDebuggeesBreakpointsUpdate extends StandardParameters {
+trait ParamsResourceControllerDebuggeesBreakpointsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifies the debuggee being debugged.
     */
-  var debuggeeId: js.UndefOr[String] = js.native
+  var debuggeeId: js.UndefOr[String] = js.undefined
   
   /**
     * Breakpoint identifier, unique in the scope of the debuggee.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaUpdateActiveBreakpointRequest] = js.native
+  var requestBody: js.UndefOr[SchemaUpdateActiveBreakpointRequest] = js.undefined
 }
 object ParamsResourceControllerDebuggeesBreakpointsUpdate {
   

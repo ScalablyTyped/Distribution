@@ -2,15 +2,13 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinResult extends StObject {
   
-  var left: js.Any = js.native
+  var left: js.Any
   
-  var right: js.Any = js.native
+  var right: js.Any
 }
 object JoinResult {
   

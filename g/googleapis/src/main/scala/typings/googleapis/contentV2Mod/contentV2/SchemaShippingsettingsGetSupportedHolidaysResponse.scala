@@ -2,22 +2,20 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaShippingsettingsGetSupportedHolidaysResponse extends StObject {
   
   /**
     * A list of holidays applicable for delivery guarantees. May be empty.
     */
-  var holidays: js.UndefOr[js.Array[SchemaHolidaysHoliday]] = js.native
+  var holidays: js.UndefOr[js.Array[SchemaHolidaysHoliday]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#shippingsettingsGetSupportedHolidaysResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaShippingsettingsGetSupportedHolidaysResponse {
   

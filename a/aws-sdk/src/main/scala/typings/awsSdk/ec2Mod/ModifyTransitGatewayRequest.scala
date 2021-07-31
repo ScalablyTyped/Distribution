@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTransitGatewayRequest extends StObject {
   
   /**
     * The description for the transit gateway.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The options to modify.
     */
-  var Options: js.UndefOr[ModifyTransitGatewayOptions] = js.native
+  var Options: js.UndefOr[ModifyTransitGatewayOptions] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId = js.native
+  var TransitGatewayId: typings.awsSdk.ec2Mod.TransitGatewayId
 }
 object ModifyTransitGatewayRequest {
   

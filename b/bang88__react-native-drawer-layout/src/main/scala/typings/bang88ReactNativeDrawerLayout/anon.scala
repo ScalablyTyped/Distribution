@@ -4,23 +4,21 @@ import typings.bang88ReactNativeDrawerLayout.bang88ReactNativeDrawerLayoutString
 import typings.bang88ReactNativeDrawerLayout.bang88ReactNativeDrawerLayoutStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Left extends StObject {
     
-    var Left: left = js.native
+    var Left: left
     
-    var Right: right = js.native
+    var Right: right
   }
   object Left {
     
     @scala.inline
-    def apply(Left: left, Right: right): Left = {
-      val __obj = js.Dynamic.literal(Left = Left.asInstanceOf[js.Any], Right = Right.asInstanceOf[js.Any])
+    def apply(): Left = {
+      val __obj = js.Dynamic.literal(Left = "left", Right = "right")
       __obj.asInstanceOf[Left]
     }
     
@@ -35,10 +33,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Offset {
     

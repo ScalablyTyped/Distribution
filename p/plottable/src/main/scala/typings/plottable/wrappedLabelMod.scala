@@ -3,7 +3,6 @@ package typings.plottable
 import typings.plottable.labelMod.Label
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrappedLabelMod {
@@ -19,8 +18,8 @@ object wrappedLabelMod {
     */
   class WrappedLabel () extends Label {
     def this(displayText: String) = this()
-    def this(displayText: js.UndefOr[scala.Nothing], angle: Double) = this()
     def this(displayText: String, angle: Double) = this()
+    def this(displayText: Unit, angle: Double) = this()
     
     var _maxLines: Double = js.native
     

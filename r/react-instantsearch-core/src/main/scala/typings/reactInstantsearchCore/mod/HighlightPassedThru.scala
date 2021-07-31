@@ -2,17 +2,15 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightPassedThru[TDoc] extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var highlightProperty: js.UndefOr[String] = js.native
+  var highlightProperty: js.UndefOr[String] = js.undefined
   
-  var hit: Hit[TDoc] = js.native
+  var hit: Hit[TDoc]
 }
 object HighlightPassedThru {
   
@@ -23,7 +21,7 @@ object HighlightPassedThru {
   }
   
   @scala.inline
-  implicit class HighlightPassedThruMutableBuilder[Self <: HighlightPassedThru[_], TDoc] (val x: Self with HighlightPassedThru[TDoc]) extends AnyVal {
+  implicit class HighlightPassedThruMutableBuilder[Self <: HighlightPassedThru[?], TDoc] (val x: Self & HighlightPassedThru[TDoc]) extends AnyVal {
     
     @scala.inline
     def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])

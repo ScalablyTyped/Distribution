@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observer {
@@ -68,6 +67,9 @@ object observer {
     extends DomEventData
        with KeystrokeInfo {
     
+    /* CompleteClass */
+    var keyCode: Double = js.native
+    
     var keystroke: Double = js.native
   }
   
@@ -129,16 +131,15 @@ object observer {
     val selection: DocumentSelection = js.native
   }
   
-  @js.native
   trait MutatedChildren extends StObject {
     
-    var newChildren: js.Array[Node] = js.native
+    var newChildren: js.Array[Node]
     
-    var node: Element = js.native
+    var node: Element
     
-    var oldChildren: js.Array[Node] = js.native
+    var oldChildren: js.Array[Node]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MutatedChildren {
     
@@ -172,16 +173,15 @@ object observer {
     }
   }
   
-  @js.native
   trait MutatedText extends StObject {
     
-    var newText: String = js.native
+    var newText: String
     
-    var node: Text = js.native
+    var node: Text
     
-    var oldText: String = js.native
+    var oldText: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MutatedText {
     

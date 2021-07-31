@@ -2,17 +2,15 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnHighlightedHighlightInfo extends StObject {
   
   /** All highlighted tabs in the window. */
-  var tabIds: js.Array[Double] = js.native
+  var tabIds: js.Array[Double]
   
   /** The window whose tabs changed. */
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object OnHighlightedHighlightInfo {
   

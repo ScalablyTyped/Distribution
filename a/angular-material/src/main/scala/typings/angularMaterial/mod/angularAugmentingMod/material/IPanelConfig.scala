@@ -8,74 +8,72 @@ import typings.angular.mod.Injectable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanelConfig extends StObject {
   
   // default: false
-  var animation: js.UndefOr[IPanelAnimation] = js.native
+  var animation: js.UndefOr[IPanelAnimation] = js.undefined
   
-  var attachTo: js.UndefOr[String | JQuery | Element] = js.native
+  var attachTo: js.UndefOr[String | JQuery | Element] = js.undefined
   
-  var bindToController: js.UndefOr[Boolean] = js.native
+  var bindToController: js.UndefOr[Boolean] = js.undefined
   
-  var clickOutsideToClose: js.UndefOr[Boolean] = js.native
+  var clickOutsideToClose: js.UndefOr[Boolean] = js.undefined
   
-  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
+  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
   
-  var controllerAs: js.UndefOr[String] = js.native
-  
-  // default: false
-  var disableParentScroll: js.UndefOr[Boolean] = js.native
+  var controllerAs: js.UndefOr[String] = js.undefined
   
   // default: false
-  var escapeToClose: js.UndefOr[Boolean] = js.native
+  var disableParentScroll: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var focusOnOpen: js.UndefOr[Boolean] = js.native
+  var escapeToClose: js.UndefOr[Boolean] = js.undefined
+  
+  // default: false
+  var focusOnOpen: js.UndefOr[Boolean] = js.undefined
   
   // default: true
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var hasBackdrop: js.UndefOr[Boolean] = js.native
+  var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   // default: true
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, _]] = js.native
+  var onCloseSuccess: js.UndefOr[js.Function2[/* panel */ IPanelRef, /* closeReason */ String, js.Any]] = js.undefined
   
   // default: false
-  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
+  var onDomAdded: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
+  var onDomRemoved: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
+  var onOpenComplete: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var onRemoving: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.native
+  var onRemoving: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Thenable[Unit] | Unit]] = js.undefined
   
-  var origin: js.UndefOr[String | JQuery | Element] = js.native
+  var origin: js.UndefOr[String | JQuery | Element] = js.undefined
   
-  var panelClass: js.UndefOr[String] = js.native
+  var panelClass: js.UndefOr[String] = js.undefined
   
   // default: 80
-  var position: js.UndefOr[IPanelPosition] = js.native
+  var position: js.UndefOr[IPanelPosition] = js.undefined
   
-  var propagateContainerEvents: js.UndefOr[Boolean] = js.native
+  var propagateContainerEvents: js.UndefOr[Boolean] = js.undefined
   
-  var resolve: js.UndefOr[ResolveObject] = js.native
+  var resolve: js.UndefOr[ResolveObject] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
   // default: false
-  var trapFocus: js.UndefOr[Boolean] = js.native
+  var trapFocus: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object IPanelConfig {
   
@@ -173,7 +171,7 @@ object IPanelConfig {
     def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
     
     @scala.inline
-    def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => _): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
+    def setOnCloseSuccess(value: (/* panel */ IPanelRef, /* closeReason */ String) => js.Any): Self = StObject.set(x, "onCloseSuccess", js.Any.fromFunction2(value))
     
     @scala.inline
     def setOnCloseSuccessUndefined: Self = StObject.set(x, "onCloseSuccess", js.undefined)

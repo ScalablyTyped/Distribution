@@ -3,15 +3,13 @@ package typings.pulumiPulumi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectSettingsMod {
   
-  @js.native
   trait ProjectBackend extends StObject {
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object ProjectBackend {
     
@@ -54,12 +52,11 @@ object projectSettingsMod {
     def python: typings.pulumiPulumi.pulumiPulumiStrings.python = "python".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.python]
   }
   
-  @js.native
   trait ProjectRuntimeInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object ProjectRuntimeInfo {
     
@@ -83,28 +80,27 @@ object projectSettingsMod {
     }
   }
   
-  @js.native
   trait ProjectSettings extends StObject {
     
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
-    var backend: js.UndefOr[ProjectBackend] = js.native
+    var backend: js.UndefOr[ProjectBackend] = js.undefined
     
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var license: js.UndefOr[String] = js.native
+    var license: js.UndefOr[String] = js.undefined
     
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var runtime: ProjectRuntimeInfo | ProjectRuntime = js.native
+    var runtime: ProjectRuntimeInfo | ProjectRuntime
     
-    var template: js.UndefOr[ProjectTemplate] = js.native
+    var template: js.UndefOr[ProjectTemplate] = js.undefined
     
-    var website: js.UndefOr[String] = js.native
+    var website: js.UndefOr[String] = js.undefined
   }
   object ProjectSettings {
     
@@ -173,16 +169,15 @@ object projectSettingsMod {
     }
   }
   
-  @js.native
   trait ProjectTemplate extends StObject {
     
-    var config: js.UndefOr[StringDictionary[ProjectTemplateConfigValue]] = js.native
+    var config: js.UndefOr[StringDictionary[ProjectTemplateConfigValue]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var important: js.UndefOr[Boolean] = js.native
+    var important: js.UndefOr[Boolean] = js.undefined
     
-    var quickstart: js.UndefOr[String] = js.native
+    var quickstart: js.UndefOr[String] = js.undefined
   }
   object ProjectTemplate {
     
@@ -221,14 +216,13 @@ object projectSettingsMod {
     }
   }
   
-  @js.native
   trait ProjectTemplateConfigValue extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var secret: js.UndefOr[Boolean] = js.native
+    var secret: js.UndefOr[Boolean] = js.undefined
   }
   object ProjectTemplateConfigValue {
     

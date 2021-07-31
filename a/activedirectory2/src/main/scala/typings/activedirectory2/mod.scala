@@ -12,23 +12,23 @@ import typings.activedirectory2.anon.Group
 import typings.ldapjs.mod.Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("activedirectory2", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ActiveDirectory {
+  class ^ protected ()
+    extends StObject
+       with ActiveDirectory {
     def this(props: ADProperties) = this()
   }
   
-  @js.native
   trait ADProperties extends StObject {
     
-    var attributes: js.UndefOr[Group] = js.native
+    var attributes: js.UndefOr[Group] = js.undefined
     
-    var baseDN: String = js.native
+    var baseDN: String
     
     var entryParser: js.UndefOr[
         js.Function3[
@@ -37,17 +37,17 @@ object mod {
           /* cb */ js.Function1[/* entry */ js.Object, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pageSize: js.UndefOr[`1000`] = js.native
+    var pageSize: js.UndefOr[`1000`] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var referrals: js.UndefOr[Enabled] = js.native
+    var referrals: js.UndefOr[Enabled] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var username: String = js.native
+    var username: String
   }
   object ADProperties {
     
@@ -288,12 +288,11 @@ object mod {
     def userExists(username: String, callback: js.Function2[/* err */ js.Object, /* res */ Boolean, Unit]): Unit = js.native
   }
   
-  @js.native
   trait AttributeSpec extends StObject {
     
-    var group: js.Array[GroupAttributes] = js.native
+    var group: js.Array[GroupAttributes]
     
-    var user: js.Array[UserAttributes] = js.native
+    var user: js.Array[UserAttributes]
   }
   object AttributeSpec {
     
@@ -320,14 +319,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FindResult extends StObject {
     
-    var groups: js.Array[js.Object] = js.native
+    var groups: js.Array[js.Object]
     
-    var other: js.Array[js.Object] = js.native
+    var other: js.Array[js.Object]
     
-    var users: js.Array[js.Object] = js.native
+    var users: js.Array[js.Object]
   }
   object FindResult {
     
@@ -382,24 +380,23 @@ object mod {
     def objectCategory: typings.activedirectory2.activedirectory2Strings.objectCategory = "objectCategory".asInstanceOf[typings.activedirectory2.activedirectory2Strings.objectCategory]
   }
   
-  @js.native
   trait LDAPjsReqProps extends StObject {
     
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Any] = js.native
+    var log: js.UndefOr[js.Any] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
-    var strictDN: js.UndefOr[Boolean] = js.native
+    var strictDN: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tlsOptions: Ca = js.native
+    var tlsOptions: Ca
     
-    var url: String = js.native
+    var url: String
   }
   object LDAPjsReqProps {
     
@@ -474,26 +471,27 @@ object mod {
     def user: typings.activedirectory2.activedirectory2Strings.user = "user".asInstanceOf[typings.activedirectory2.activedirectory2Strings.user]
   }
   
-  @js.native
-  trait ReqProps extends LDAPjsReqProps {
+  trait ReqProps
+    extends StObject
+       with LDAPjsReqProps {
     
-    var attributes: AttributeSpec = js.native
+    var attributes: AttributeSpec
     
-    var baseDN: js.UndefOr[String] = js.native
+    var baseDN: js.UndefOr[String] = js.undefined
     
-    var bindCredentials: js.UndefOr[String] = js.native
+    var bindCredentials: js.UndefOr[String] = js.undefined
     
-    var bindDN: js.UndefOr[String] = js.native
+    var bindDN: js.UndefOr[String] = js.undefined
     
-    var filter: String | Filter = js.native
+    var filter: String | Filter
     
-    var includeMembership: js.Array[MembershipType] = js.native
+    var includeMembership: js.Array[MembershipType]
     
-    var scope: js.UndefOr[base | one | sub] = js.native
+    var scope: js.UndefOr[base | one | sub] = js.undefined
     
-    var sizeLimit: `0` = js.native
+    var sizeLimit: `0`
     
-    var timeLimit: `10` = js.native
+    var timeLimit: `10`
   }
   object ReqProps {
     
@@ -502,12 +500,10 @@ object mod {
       attributes: AttributeSpec,
       filter: String | Filter,
       includeMembership: js.Array[MembershipType],
-      sizeLimit: `0`,
-      timeLimit: `10`,
       tlsOptions: Ca,
       url: String
     ): ReqProps = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], includeMembership = includeMembership.asInstanceOf[js.Any], sizeLimit = sizeLimit.asInstanceOf[js.Any], timeLimit = timeLimit.asInstanceOf[js.Any], tlsOptions = tlsOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], includeMembership = includeMembership.asInstanceOf[js.Any], sizeLimit = 0, timeLimit = 10, tlsOptions = tlsOptions.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReqProps]
     }
     

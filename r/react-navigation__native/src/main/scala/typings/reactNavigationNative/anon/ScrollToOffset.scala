@@ -3,13 +3,13 @@ package typings.reactNavigationNative.anon
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollToOffset extends ScrollableView {
+trait ScrollToOffset
+  extends StObject
+     with ScrollableView {
   
-  def scrollToOffset(options: Animated): Unit = js.native
+  def scrollToOffset(options: Animated): Unit
 }
 object ScrollToOffset {
   

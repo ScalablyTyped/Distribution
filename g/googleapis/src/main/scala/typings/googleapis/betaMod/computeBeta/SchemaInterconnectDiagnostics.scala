@@ -2,14 +2,12 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Diagnostics information about interconnect, contains detailed and current
   * technical information about Google?s side of the connection.
   */
-@js.native
 trait SchemaInterconnectDiagnostics extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaInterconnectDiagnostics extends StObject {
     * neighbors currently seen by the Google router in the ARP cache for the
     * Interconnect. This will be empty when the Interconnect is not bundled.
     */
-  var arpCaches: js.UndefOr[js.Array[SchemaInterconnectDiagnosticsARPEntry]] = js.native
+  var arpCaches: js.UndefOr[js.Array[SchemaInterconnectDiagnosticsARPEntry]] = js.undefined
   
   /**
     * A list of InterconnectDiagnostics.LinkStatus objects, describing the
     * status for each link on the Interconnect.
     */
-  var links: js.UndefOr[js.Array[SchemaInterconnectDiagnosticsLinkStatus]] = js.native
+  var links: js.UndefOr[js.Array[SchemaInterconnectDiagnosticsLinkStatus]] = js.undefined
   
   /**
     * The MAC address of the Interconnect&#39;s bundle interface.
     */
-  var macAddress: js.UndefOr[String] = js.native
+  var macAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectDiagnostics {
   

@@ -7,21 +7,19 @@ import typings.antdMobileRn.antdMobileRnStrings.small
 import typings.antdMobileRn.antdMobileRnStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonPropsTypeMod {
   
-  @js.native
   trait ButtonPropsType extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
     
-    var `type`: js.UndefOr[primary | warning | ghost] = js.native
+    var `type`: js.UndefOr[primary | warning | ghost] = js.undefined
   }
   object ButtonPropsType {
     

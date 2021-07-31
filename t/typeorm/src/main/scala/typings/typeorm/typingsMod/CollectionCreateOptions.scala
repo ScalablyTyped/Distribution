@@ -2,71 +2,69 @@ package typings.typeorm.typingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionCreateOptions extends StObject {
   
   /**
     * Create an index on the _id field of the document, True by default on MongoDB 2.2 or higher off for version < 2.2.
     */
-  var autoIndexId: js.UndefOr[Boolean] = js.native
+  var autoIndexId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Create a capped collection.
     */
-  var capped: js.UndefOr[Boolean] = js.native
+  var capped: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of documents in the capped collection.
     */
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * A primary key factory object for generation of custom _id keys.
     */
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the capped collection in bytes.
     */
-  var size: js.UndefOr[scala.Double] = js.native
+  var size: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Returns an error if the collection does not exist.
     */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double | String] = js.native
+  var w: js.UndefOr[scala.Double | String] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object CollectionCreateOptions {
   

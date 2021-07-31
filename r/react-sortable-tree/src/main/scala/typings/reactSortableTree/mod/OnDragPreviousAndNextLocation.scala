@@ -2,15 +2,15 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnDragPreviousAndNextLocation extends PreviousAndNextLocation {
+trait OnDragPreviousAndNextLocation
+  extends StObject
+     with PreviousAndNextLocation {
   
-  var nextParent: TreeItem | Null = js.native
+  var nextParent: TreeItem | Null
   
-  var prevParent: TreeItem | Null = js.native
+  var prevParent: TreeItem | Null
 }
 object OnDragPreviousAndNextLocation {
   
@@ -21,7 +21,7 @@ object OnDragPreviousAndNextLocation {
     prevPath: NumberOrStringArray,
     prevTreeIndex: Double
   ): OnDragPreviousAndNextLocation = {
-    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(nextPath = nextPath.asInstanceOf[js.Any], nextTreeIndex = nextTreeIndex.asInstanceOf[js.Any], prevPath = prevPath.asInstanceOf[js.Any], prevTreeIndex = prevTreeIndex.asInstanceOf[js.Any], nextParent = null, prevParent = null)
     __obj.asInstanceOf[OnDragPreviousAndNextLocation]
   }
   

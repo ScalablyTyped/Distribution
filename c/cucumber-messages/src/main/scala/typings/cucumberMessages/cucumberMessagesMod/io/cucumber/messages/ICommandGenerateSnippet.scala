@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandGenerateSnippet. */
-@js.native
 trait ICommandGenerateSnippet extends StObject {
   
   /** CommandGenerateSnippet actionId */
-  var actionId: js.UndefOr[String | Null] = js.native
+  var actionId: js.UndefOr[String | Null] = js.undefined
   
   /** CommandGenerateSnippet generatedExpressions */
-  var generatedExpressions: js.UndefOr[js.Array[IGeneratedExpression] | Null] = js.native
+  var generatedExpressions: js.UndefOr[js.Array[IGeneratedExpression] | Null] = js.undefined
   
   /** CommandGenerateSnippet pickleStepArgument */
-  var pickleStepArgument: js.UndefOr[IPickleStepArgument | Null] = js.native
+  var pickleStepArgument: js.UndefOr[IPickleStepArgument | Null] = js.undefined
 }
 object ICommandGenerateSnippet {
   

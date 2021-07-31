@@ -10,40 +10,38 @@ import typings.typeorm.joinOptionsMod.JoinOptions
 import typings.typeorm.objectLiteralMod.ObjectLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findOneOptionsMod {
   
-  @js.native
   trait FindOneOptions[Entity] extends StObject {
     
     /**
       * Enables or disables query result caching.
       */
-    var cache: js.UndefOr[Boolean | Double | Milliseconds] = js.native
+    var cache: js.UndefOr[Boolean | Double | Milliseconds] = js.undefined
     
     /**
       * Specifies what relations should be loaded.
       */
-    var join: js.UndefOr[JoinOptions] = js.native
+    var join: js.UndefOr[JoinOptions] = js.undefined
     
     /**
       * Indicates if eager relations should be loaded or not.
       * By default they are loaded when find methods are used.
       */
-    var loadEagerRelations: js.UndefOr[Boolean] = js.native
+    var loadEagerRelations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If sets to true then loads all relation ids of the entity and maps them into relation values (not relation objects).
       * If array of strings is given then loads only relation ids of the given properties.
       */
-    var loadRelationIds: js.UndefOr[Boolean | DisableMixedMap] = js.native
+    var loadRelationIds: js.UndefOr[Boolean | DisableMixedMap] = js.undefined
     
     /**
       * Indicates what locking mode should be used.
       */
-    var lock: js.UndefOr[Mode | `2`] = js.native
+    var lock: js.UndefOr[Mode | `2`] = js.undefined
     
     /**
       * Order, in which entities should be ordered.
@@ -51,35 +49,35 @@ object findOneOptionsMod {
     var order: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof Entity ]:? 'ASC' | 'DESC' | 1 | -1}
-      */ typings.typeorm.typeormStrings.FindOneOptions with TopLevel[js.Any]
-      ] = js.native
+      */ typings.typeorm.typeormStrings.FindOneOptions & TopLevel[js.Any]
+      ] = js.undefined
     
     /**
       * Indicates what relations of entity should be loaded (simplified left join form).
       */
-    var relations: js.UndefOr[js.Array[String]] = js.native
+    var relations: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Specifies what columns should be retrieved.
       */
-    var select: js.UndefOr[js.Array[/* keyof Entity */ String]] = js.native
+    var select: js.UndefOr[js.Array[/* keyof Entity */ String]] = js.undefined
     
     /**
       * If this is set to true, SELECT query in a `find` method will be executed in a transaction.
       */
-    var transaction: js.UndefOr[Boolean] = js.native
+    var transaction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Simple condition that should be applied to match entities.
       */
     var where: js.UndefOr[
         js.Array[FindConditions[Entity]] | FindConditions[Entity] | ObjectLiteral | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Indicates if soft-deleted rows should be included in entity result.
       */
-    var withDeleted: js.UndefOr[Boolean] = js.native
+    var withDeleted: js.UndefOr[Boolean] = js.undefined
   }
   object FindOneOptions {
     
@@ -90,7 +88,7 @@ object findOneOptionsMod {
     }
     
     @scala.inline
-    implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions[_], Entity] (val x: Self with FindOneOptions[Entity]) extends AnyVal {
+    implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions[?], Entity] (val x: Self & FindOneOptions[Entity]) extends AnyVal {
       
       @scala.inline
       def setCache(value: Boolean | Double | Milliseconds): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
@@ -126,7 +124,7 @@ object findOneOptionsMod {
       def setOrder(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ P in keyof Entity ]:? 'ASC' | 'DESC' | 1 | -1}
-        */ typings.typeorm.typeormStrings.FindOneOptions with TopLevel[js.Any]
+        */ typings.typeorm.typeormStrings.FindOneOptions & TopLevel[js.Any]
       ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
       @scala.inline

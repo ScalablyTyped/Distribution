@@ -4,37 +4,36 @@ import typings.speedtestNet.speedtestNetStrings.log
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * These are various log messages. Only sent when `verbosity` is 1 or
   * greater. Higher verbosity leads to more messages. That's all I know.
   */
-@js.native
 trait LogEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
   /** Levels include `info` and `warning` and may include others. */
-  var level: String = js.native
+  var level: String
   
-  var message: String = js.native
+  var message: String
   
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
-  var progress: Double = js.native
+  var progress: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_LogEvent: log = js.native
+  var type_LogEvent: log
 }
 object LogEvent {
   
   @scala.inline
-  def apply(level: String, message: String, progress: Double, timestamp: Date, `type`: log): LogEvent = {
+  def apply(level: String, message: String, progress: Double, timestamp: Date): LogEvent = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogEvent]
   }
   

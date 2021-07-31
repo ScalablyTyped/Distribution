@@ -2,46 +2,44 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Correspond to the <length> basic data type. */
-@js.native
 trait SVGLength extends StObject {
   
-  val SVG_LENGTHTYPE_CM: Double = js.native
+  val SVG_LENGTHTYPE_CM: Double
   
-  val SVG_LENGTHTYPE_EMS: Double = js.native
+  val SVG_LENGTHTYPE_EMS: Double
   
-  val SVG_LENGTHTYPE_EXS: Double = js.native
+  val SVG_LENGTHTYPE_EXS: Double
   
-  val SVG_LENGTHTYPE_IN: Double = js.native
+  val SVG_LENGTHTYPE_IN: Double
   
-  val SVG_LENGTHTYPE_MM: Double = js.native
+  val SVG_LENGTHTYPE_MM: Double
   
-  val SVG_LENGTHTYPE_NUMBER: Double = js.native
+  val SVG_LENGTHTYPE_NUMBER: Double
   
-  val SVG_LENGTHTYPE_PC: Double = js.native
+  val SVG_LENGTHTYPE_PC: Double
   
-  val SVG_LENGTHTYPE_PERCENTAGE: Double = js.native
+  val SVG_LENGTHTYPE_PERCENTAGE: Double
   
-  val SVG_LENGTHTYPE_PT: Double = js.native
+  val SVG_LENGTHTYPE_PT: Double
   
-  val SVG_LENGTHTYPE_PX: Double = js.native
+  val SVG_LENGTHTYPE_PX: Double
   
-  val SVG_LENGTHTYPE_UNKNOWN: Double = js.native
+  val SVG_LENGTHTYPE_UNKNOWN: Double
   
-  def convertToSpecifiedUnits(unitType: Double): Unit = js.native
+  def convertToSpecifiedUnits(unitType: Double): Unit
   
-  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit = js.native
+  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit
   
-  val unitType: Double = js.native
+  val unitType: Double
   
-  var value: Double = js.native
+  var value: Double
   
-  var valueAsString: java.lang.String = js.native
+  var valueAsString: java.lang.String
   
-  var valueInSpecifiedUnits: Double = js.native
+  var valueInSpecifiedUnits: Double
 }
 object SVGLength {
   

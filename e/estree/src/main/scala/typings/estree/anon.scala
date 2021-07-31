@@ -2,17 +2,15 @@ package typings.estree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cooked extends StObject {
     
-    var cooked: String = js.native
+    var cooked: String
     
-    var raw: String = js.native
+    var raw: String
   }
   object Cooked {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Flags extends StObject {
     
-    var flags: String = js.native
+    var flags: String
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object Flags {
     

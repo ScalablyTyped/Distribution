@@ -2,14 +2,12 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $onChanges lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IOnChanges extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait IOnChanges extends StObject {
     * cloning the bound value to prevent accidental mutation of the outer value.
     */
   @JSName("$onChanges")
-  def $onChanges(onChangesObj: IOnChangesObject): Unit = js.native
+  def $onChanges(onChangesObj: IOnChangesObject): Unit
 }
 object IOnChanges {
   

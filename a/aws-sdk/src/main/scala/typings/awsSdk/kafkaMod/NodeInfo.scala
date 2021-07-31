@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeInfo extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait NodeInfo extends StObject {
     The start time.
     
     */
-  var AddedToClusterTime: js.UndefOr[string] = js.native
+  var AddedToClusterTime: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The broker node info.
     
     */
-  var BrokerNodeInfo: js.UndefOr[typings.awsSdk.kafkaMod.BrokerNodeInfo] = js.native
+  var BrokerNodeInfo: js.UndefOr[typings.awsSdk.kafkaMod.BrokerNodeInfo] = js.undefined
   
   /**
     * 
     The instance type.
     
     */
-  var InstanceType: js.UndefOr[string] = js.native
+  var InstanceType: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The Amazon Resource Name (ARN) of the node.
     
     */
-  var NodeARN: js.UndefOr[string] = js.native
+  var NodeARN: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The node type.
     
     */
-  var NodeType: js.UndefOr[typings.awsSdk.kafkaMod.NodeType] = js.native
+  var NodeType: js.UndefOr[typings.awsSdk.kafkaMod.NodeType] = js.undefined
   
   /**
     * 
     The ZookeeperNodeInfo.
     
     */
-  var ZookeeperNodeInfo: js.UndefOr[typings.awsSdk.kafkaMod.ZookeeperNodeInfo] = js.native
+  var ZookeeperNodeInfo: js.UndefOr[typings.awsSdk.kafkaMod.ZookeeperNodeInfo] = js.undefined
 }
 object NodeInfo {
   

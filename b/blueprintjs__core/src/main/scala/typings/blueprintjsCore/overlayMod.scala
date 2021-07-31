@@ -10,7 +10,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayMod {
@@ -72,9 +71,8 @@ object overlayMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(hasIsOpen: IOverlayProps): HasEverOpened | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(hasHasEverOpened: IOverlayProps): HasEverOpened | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(hasHasEverOpened.asInstanceOf[js.Any]).asInstanceOf[HasEverOpened | Null]
     
     @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay.getLastOpened")
     @js.native
@@ -89,27 +87,26 @@ object overlayMod {
     def openStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("openStack")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IBackdropProps extends StObject {
     
     /** CSS class names to apply to backdrop element. */
-    var backdropClassName: js.UndefOr[String] = js.native
+    var backdropClassName: js.UndefOr[String] = js.undefined
     
     /** HTML props for the backdrop element. */
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
     /**
       * Whether clicking outside the overlay element (either on backdrop when present or on document)
       * should invoke `onClose`.
       * @default true
       */
-    var canOutsideClickClose: js.UndefOr[Boolean] = js.native
+    var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether a container-spanning backdrop element should be rendered behind the contents.
       * @default true
       */
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
   }
   object IBackdropProps {
     
@@ -148,7 +145,6 @@ object overlayMod {
     }
   }
   
-  @js.native
   trait IOverlayLifecycleProps extends StObject {
     
     /**
@@ -156,26 +152,26 @@ object overlayMod {
       * before the child has been removed from the DOM. Receives the DOM element
       * of the child being closed.
       */
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     /**
       * Lifecycle method invoked just before the CSS _close_ transition begins on
       * a child. Receives the DOM element of the child being closed.
       */
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     /**
       * Lifecycle method invoked just after the CSS _open_ transition ends.
       * Receives the DOM element of the child being opened.
       */
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     /**
       * Lifecycle method invoked just after mounting the child in the DOM but
       * just before the CSS _open_ transition begins. Receives the DOM element of
       * the child being opened.
       */
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
   }
   object IOverlayLifecycleProps {
     
@@ -214,9 +210,9 @@ object overlayMod {
     }
   }
   
-  @js.native
   trait IOverlayProps
-    extends IOverlayableProps
+    extends StObject
+       with IOverlayableProps
        with IBackdropProps
        with IProps {
     
@@ -224,14 +220,14 @@ object overlayMod {
       * Toggles the visibility of the overlay and its children.
       * This prop is required because the component is controlled.
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Name of the transition for internal `CSSTransition`.
       * Providing your own name here will require defining new CSS transition properties.
       * @default Classes.OVERLAY
       */
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object IOverlayProps {
     
@@ -255,10 +251,9 @@ object overlayMod {
     }
   }
   
-  @js.native
   trait IOverlayState extends StObject {
     
-    var hasEverOpened: js.UndefOr[Boolean] = js.native
+    var hasEverOpened: js.UndefOr[Boolean] = js.undefined
   }
   object IOverlayState {
     
@@ -279,20 +274,21 @@ object overlayMod {
     }
   }
   
-  @js.native
-  trait IOverlayableProps extends IOverlayLifecycleProps {
+  trait IOverlayableProps
+    extends StObject
+       with IOverlayLifecycleProps {
     
     /**
       * Whether the overlay should acquire application focus when it first opens.
       * @default true
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether pressing the `esc` key should invoke `onClose`.
       * @default true
       */
-    var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the overlay should prevent focus from leaving itself. That is, if the user attempts
@@ -301,7 +297,7 @@ object overlayMod {
       * this prop on the "outermost" overlays or mark the nested ones `usePortal={false}`.
       * @default true
       */
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true` and `usePortal={true}`, the `Portal` containing the children is created and attached
@@ -310,7 +306,7 @@ object overlayMod {
       * of overlays at once, such as on each row of a table.
       * @default true
       */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback that is invoked when user interaction causes the overlay to close, such as
@@ -320,20 +316,20 @@ object overlayMod {
       * mouse or key event). Note that, since this component is controlled by the `isOpen` prop, it
       * will not actually close itself until that prop becomes `false`.
       */
-    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
     /**
       * Space-delimited string of class names applied to the `Portal` element if
       * `usePortal={true}`.
       */
-    var portalClassName: js.UndefOr[String] = js.native
+    var portalClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The container element into which the overlay renders its contents, when `usePortal` is `true`.
       * This prop is ignored if `usePortal` is `false`.
       * @default document.body
       */
-    var portalContainer: js.UndefOr[HTMLElement] = js.native
+    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
@@ -342,7 +338,7 @@ object overlayMod {
       * transitions with new transitions of a different length.
       * @default 300
       */
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the overlay should be wrapped in a `Portal`, which renders its contents in a new
@@ -356,7 +352,7 @@ object overlayMod {
       * are rendered above their parents.
       * @default true
       */
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
   }
   object IOverlayableProps {
     

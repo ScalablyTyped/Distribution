@@ -2,21 +2,19 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NeedLoadMoreData extends StObject {
   
   /**
     * This event fires when scroll reaches bottom percentage of grid and needs to load data
     */
-  var needLoadMoreData: js.Function = js.native
+  var needLoadMoreData: js.Function
   
   /**
     * This event fires when scroll reaches top percentage of grid and needs to load data
     */
-  var needLoadMoreDataTop: js.Function = js.native
+  var needLoadMoreDataTop: js.Function
 }
 object NeedLoadMoreData {
   

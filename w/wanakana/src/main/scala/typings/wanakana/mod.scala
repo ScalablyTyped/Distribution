@@ -5,87 +5,69 @@ import typings.std.Record
 import typings.wanakana.wanakanaStrings.hepburn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wanakana", "bind")
+  @JSImport("wanakana", JSImport.Namespace)
   @js.native
-  def bind(el: HTMLElement): Unit = js.native
-  @JSImport("wanakana", "bind")
-  @js.native
-  def bind(el: HTMLElement, options: WanakanaOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wanakana", "isHiragana")
-  @js.native
-  def isHiragana(input: String): Boolean = js.native
+  @scala.inline
+  def bind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def bind(el: HTMLElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wanakana", "isJapanese")
-  @js.native
-  def isJapanese(input: String): Boolean = js.native
+  @scala.inline
+  def isHiragana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "isKana")
-  @js.native
-  def isKana(input: String): Boolean = js.native
+  @scala.inline
+  def isJapanese(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJapanese")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "isKanji")
-  @js.native
-  def isKanji(input: String): Boolean = js.native
+  @scala.inline
+  def isKana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "isKatakana")
-  @js.native
-  def isKatakana(input: String): Boolean = js.native
+  @scala.inline
+  def isKanji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKanji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "isRomaji")
-  @js.native
-  def isRomaji(input: String): Boolean = js.native
+  @scala.inline
+  def isKatakana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "stripOkurigana")
-  @js.native
-  def stripOkurigana(input: String): String = js.native
-  @JSImport("wanakana", "stripOkurigana")
-  @js.native
-  def stripOkurigana(input: String, options: StripOkuriganaOptions): String = js.native
+  @scala.inline
+  def isRomaji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("wanakana", "toHiragana")
-  @js.native
-  def toHiragana(input: String): String = js.native
-  @JSImport("wanakana", "toHiragana")
-  @js.native
-  def toHiragana(input: String, options: WanakanaOptions): String = js.native
+  @scala.inline
+  def stripOkurigana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stripOkurigana(input: String, options: StripOkuriganaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("wanakana", "toKana")
-  @js.native
-  def toKana(input: String): String = js.native
-  @JSImport("wanakana", "toKana")
-  @js.native
-  def toKana(input: String, options: WanakanaOptions): String = js.native
+  @scala.inline
+  def toHiragana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHiragana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("wanakana", "toKatakana")
-  @js.native
-  def toKatakana(input: String): String = js.native
-  @JSImport("wanakana", "toKatakana")
-  @js.native
-  def toKatakana(input: String, options: WanakanaOptions): String = js.native
+  @scala.inline
+  def toKana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toKana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("wanakana", "toRomaji")
-  @js.native
-  def toRomaji(input: String): String = js.native
-  @JSImport("wanakana", "toRomaji")
-  @js.native
-  def toRomaji(input: String, options: WanakanaOptions): String = js.native
+  @scala.inline
+  def toKatakana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toKatakana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("wanakana", "tokenize")
-  @js.native
-  def tokenize(input: String): js.Array[String] = js.native
-  @JSImport("wanakana", "tokenize")
-  @js.native
-  def tokenize(input: String, options: TokenizeOptions): js.Array[String] = js.native
+  @scala.inline
+  def toRomaji(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toRomaji(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("wanakana", "unbind")
-  @js.native
-  def unbind(el: HTMLElement): Unit = js.native
+  @scala.inline
+  def tokenize(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def tokenize(input: String, options: TokenizeOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def unbind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.wanakana.wanakanaBooleans.`true`
@@ -109,12 +91,11 @@ object mod {
     def `true`: typings.wanakana.wanakanaBooleans.`true` = true.asInstanceOf[typings.wanakana.wanakanaBooleans.`true`]
   }
   
-  @js.native
   trait StripOkuriganaOptions extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var matchKanji: js.UndefOr[String] = js.native
+    var matchKanji: js.UndefOr[String] = js.undefined
   }
   object StripOkuriganaOptions {
     
@@ -141,12 +122,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenizeOptions extends StObject {
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var detailed: js.UndefOr[Boolean] = js.native
+    var detailed: js.UndefOr[Boolean] = js.undefined
   }
   object TokenizeOptions {
     
@@ -173,22 +153,21 @@ object mod {
     }
   }
   
-  @js.native
   trait WanakanaOptions extends StObject {
     
-    var IMEMode: js.UndefOr[IMEModes] = js.native
+    var IMEMode: js.UndefOr[IMEModes] = js.undefined
     
-    var customKanaMapping: js.UndefOr[Record[String, String]] = js.native
+    var customKanaMapping: js.UndefOr[Record[String, String]] = js.undefined
     
-    var customRomajiMapping: js.UndefOr[Record[String, String]] = js.native
+    var customRomajiMapping: js.UndefOr[Record[String, String]] = js.undefined
     
-    var passRomaji: js.UndefOr[Boolean] = js.native
+    var passRomaji: js.UndefOr[Boolean] = js.undefined
     
-    var romanization: js.UndefOr[hepburn] = js.native
+    var romanization: js.UndefOr[hepburn] = js.undefined
     
-    var upcaseKatakana: js.UndefOr[Boolean] = js.native
+    var upcaseKatakana: js.UndefOr[Boolean] = js.undefined
     
-    var useObsoleteKana: js.UndefOr[Boolean] = js.native
+    var useObsoleteKana: js.UndefOr[Boolean] = js.undefined
   }
   object WanakanaOptions {
     

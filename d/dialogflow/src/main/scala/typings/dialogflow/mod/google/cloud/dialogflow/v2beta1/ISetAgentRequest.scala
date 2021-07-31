@@ -3,18 +3,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.dialogflow.mod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SetAgentRequest. */
-@js.native
 trait ISetAgentRequest extends StObject {
   
   /** SetAgentRequest agent */
-  var agent: js.UndefOr[IAgent | Null] = js.native
+  var agent: js.UndefOr[IAgent | Null] = js.undefined
   
   /** SetAgentRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object ISetAgentRequest {
   

@@ -11,25 +11,24 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSelectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeSelectMod {
   
   @JSImport("@react-md/form/types/select/NativeSelect", "NativeSelect")
   @js.native
-  val NativeSelect: ForwardRefExoticComponent[NativeSelectProps with RefAttributes[HTMLSelectElement]] = js.native
+  val NativeSelect: ForwardRefExoticComponent[NativeSelectProps & RefAttributes[HTMLSelectElement]] = js.native
   
-  @js.native
   trait NativeSelectProps
-    extends SelectHTMLAttributes[HTMLSelectElement]
+    extends StObject
+       with SelectHTMLAttributes[HTMLSelectElement]
        with TextFieldContainerOptions {
     
     /**
       * An optional ref to apply to the text field's container div element. The
       * default ref is forwarded on to the `input` element.
       */
-    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var containerRef: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
     
     /**
       * The default value for the text field which will make it uncontrolled. If
@@ -40,7 +39,7 @@ object nativeSelectMod {
       * If the `multiple` prop is enabled, this **must** be a list of strings.
       */
     @JSName("defaultValue")
-    var defaultValue_NativeSelectProps: js.UndefOr[String | js.Array[String]] = js.native
+    var defaultValue_NativeSelectProps: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * An optional icon to display to the right of the select. This should
@@ -51,13 +50,13 @@ object nativeSelectMod {
       * This defaults to the `IconProvider`'s dropdown icon from the
       * `@react-md/icon` package.
       */
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The id for the select. This is required for accessibility.
       */
     @JSName("id")
-    var id_NativeSelectProps: String = js.native
+    var id_NativeSelectProps: String
     
     /**
       * An optional floating label to use for the text field. This should really
@@ -65,29 +64,29 @@ object nativeSelectMod {
       * wrapped in the `<Label>` component itself and automatically apply the
       * `htmlFor` prop for this text field.
       */
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the label wrapper.
       */
-    var labelClassName: js.UndefOr[String] = js.native
+    var labelClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the label wrapper.
       */
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * An optional className to apply to the select itself. The `className` prop
       * will be applied to the container `<div>` instead.
       */
-    var selectClassName: js.UndefOr[String] = js.native
+    var selectClassName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional style to apply to the select itself. The `style` prop will be
       * applied to the container `<div>` instead.
       */
-    var selectStyle: js.UndefOr[CSSProperties] = js.native
+    var selectStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The value to use for the text field. This will make the component
@@ -97,7 +96,7 @@ object nativeSelectMod {
       * If the `multiple` prop is enabled, this **must** be a list of strings.
       */
     @JSName("value")
-    var value_NativeSelectProps: js.UndefOr[String | js.Array[String]] = js.native
+    var value_NativeSelectProps: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object NativeSelectProps {
     

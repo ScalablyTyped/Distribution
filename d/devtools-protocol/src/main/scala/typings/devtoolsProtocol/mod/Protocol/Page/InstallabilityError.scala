@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallabilityError extends StObject {
   
   /**
     * The list of error arguments (e.g. {name:'minimum-icon-size-in-pixels', value:'64'}).
     */
-  var errorArguments: js.Array[InstallabilityErrorArgument] = js.native
+  var errorArguments: js.Array[InstallabilityErrorArgument]
   
   /**
     * The error id (e.g. 'manifest-missing-suitable-icon').
     */
-  var errorId: String = js.native
+  var errorId: String
 }
 object InstallabilityError {
   

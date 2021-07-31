@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.BackslashRightparenthesis
 import typings.polished.polishedStrings.Rightparenthesis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostfixRegSymbol extends StObject {
   
-  var postfix: ArgCountFNotation = js.native
+  var postfix: ArgCountFNotation
   
-  var regSymbol: BackslashRightparenthesis = js.native
+  var regSymbol: BackslashRightparenthesis
   
-  var symbol: Rightparenthesis = js.native
+  var symbol: Rightparenthesis
 }
 object PostfixRegSymbol {
   
   @scala.inline
-  def apply(postfix: ArgCountFNotation, regSymbol: BackslashRightparenthesis, symbol: Rightparenthesis): PostfixRegSymbol = {
-    val __obj = js.Dynamic.literal(postfix = postfix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(postfix: ArgCountFNotation): PostfixRegSymbol = {
+    val __obj = js.Dynamic.literal(postfix = postfix.asInstanceOf[js.Any], regSymbol = "\\)", symbol = ")")
     __obj.asInstanceOf[PostfixRegSymbol]
   }
   

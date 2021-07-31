@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplePushNotificationCertificate extends Entity {
+trait ApplePushNotificationCertificate
+  extends StObject
+     with Entity {
   
   // Apple Id of the account used to create the MDM push certificate.
-  var appleIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var appleIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Not yet documented
-  var certificate: js.UndefOr[NullableOption[String]] = js.native
+  var certificate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The expiration date and time for Apple push notification certificate.
-  var expirationDateTime: js.UndefOr[String] = js.native
+  var expirationDateTime: js.UndefOr[String] = js.undefined
   
   // Last modified date and time for Apple push notification certificate.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // Topic Id.
-  var topicIdentifier: js.UndefOr[NullableOption[String]] = js.native
+  var topicIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ApplePushNotificationCertificate {
   

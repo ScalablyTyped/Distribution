@@ -4,7 +4,6 @@ import typings.tslint.codeFrameFormatterMod.Formatter
 import typings.tslint.formatterMod.IFormatterMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indexMod {

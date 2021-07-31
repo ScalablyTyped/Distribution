@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,31 +13,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.useTouch] - Whether to allow touch input. Defaults to true.
   * @param [options.useXr] - Whether to allow XR input sources. Defaults to true.
   */
-@js.native
 trait ElementInput extends StObject {
   
   /**
     * Add a {@link pc.ElementComponent} to the internal list of ElementComponents that are being checked for input.
     * @param element - The ElementComponent.
     */
-  def addElement(element: ElementComponent): Unit = js.native
+  def addElement(element: ElementComponent): Unit
   
   /**
     * Attach mouse and touch events to a DOM element.
     * @param domElement - The DOM element.
     */
-  def attach(domElement: Element): Unit = js.native
+  def attach(domElement: Element): Unit
   
   /**
     * Remove mouse and touch events from the DOM element that it is attached to.
     */
-  def detach(): Unit = js.native
+  def detach(): Unit
   
   /**
     * Remove a {@link pc.ElementComponent} from the internal list of ElementComponents that are being checked for input.
     * @param element - The ElementComponent.
     */
-  def removeElement(element: ElementComponent): Unit = js.native
+  def removeElement(element: ElementComponent): Unit
 }
 object ElementInput {
   

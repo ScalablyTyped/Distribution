@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountRepositoryLoginErrorResponseMod {
   
-  @js.native
   trait AccountRepositoryLoginBadPasswordResponseButtonsItem extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var title: String = js.native
+    var title: String
   }
   object AccountRepositoryLoginBadPasswordResponseButtonsItem {
     
@@ -33,26 +31,25 @@ object accountRepositoryLoginErrorResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryLoginErrorResponse extends StObject {
     
-    var buttons: js.Array[AccountRepositoryLoginBadPasswordResponseButtonsItem] = js.native
+    var buttons: js.Array[AccountRepositoryLoginBadPasswordResponseButtonsItem]
     
-    var error_title: String = js.native
+    var error_title: String
     
-    var error_type: String = js.native
+    var error_type: String
     
-    var invalid_credentials: Boolean = js.native
+    var invalid_credentials: Boolean
     
-    var message: String = js.native
+    var message: String
     
-    var phone_verification_settings: AccountRepositoryLoginErrorResponsePhoneVerificationSettings = js.native
+    var phone_verification_settings: AccountRepositoryLoginErrorResponsePhoneVerificationSettings
     
-    var status: String = js.native
+    var status: String
     
-    var two_factor_info: AccountRepositoryLoginErrorResponseTwoFactorInfo = js.native
+    var two_factor_info: AccountRepositoryLoginErrorResponseTwoFactorInfo
     
-    var two_factor_required: Boolean = js.native
+    var two_factor_required: Boolean
   }
   object AccountRepositoryLoginErrorResponse {
     
@@ -107,16 +104,15 @@ object accountRepositoryLoginErrorResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryLoginErrorResponsePhoneVerificationSettings extends StObject {
     
-    var max_sms_count: Double = js.native
+    var max_sms_count: Double
     
-    var resend_sms_delay_sec: Double = js.native
+    var resend_sms_delay_sec: Double
     
-    var robocall_after_max_sms: Boolean = js.native
+    var robocall_after_max_sms: Boolean
     
-    var robocall_count_down_time_sec: Double = js.native
+    var robocall_count_down_time_sec: Double
   }
   object AccountRepositoryLoginErrorResponsePhoneVerificationSettings {
     
@@ -148,26 +144,25 @@ object accountRepositoryLoginErrorResponseMod {
     }
   }
   
-  @js.native
   trait AccountRepositoryLoginErrorResponseTwoFactorInfo extends StObject {
     
-    var obfuscated_phone_number: String = js.native
+    var obfuscated_phone_number: String
     
-    var phone_verification_settings: AccountRepositoryLoginErrorResponsePhoneVerificationSettings = js.native
+    var phone_verification_settings: AccountRepositoryLoginErrorResponsePhoneVerificationSettings
     
-    var show_messenger_code_option: Boolean = js.native
+    var show_messenger_code_option: Boolean
     
-    var show_new_login_screen: Boolean = js.native
+    var show_new_login_screen: Boolean
     
-    var show_trusted_device_option: Boolean = js.native
+    var show_trusted_device_option: Boolean
     
-    var sms_two_factor_on: Boolean = js.native
+    var sms_two_factor_on: Boolean
     
-    var totp_two_factor_on: Boolean = js.native
+    var totp_two_factor_on: Boolean
     
-    var two_factor_identifier: String = js.native
+    var two_factor_identifier: String
     
-    var username: String = js.native
+    var username: String
   }
   object AccountRepositoryLoginErrorResponseTwoFactorInfo {
     

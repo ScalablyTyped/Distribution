@@ -2,35 +2,33 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonHelper extends StObject {
   
   // properties
-  var downLabel: String | Double = js.native
+  var downLabel: String | Double
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * @deprecated - use the 'enabled' property instead
     */
-  def getEnabled(): Boolean = js.native
+  def getEnabled(): Boolean
   
-  var outLabel: String | Double = js.native
+  var outLabel: String | Double
   
-  var overLabel: String | Double = js.native
+  var overLabel: String | Double
   
-  var play: Boolean = js.native
+  var play: Boolean
   
   // methods
   /**
     * @deprecated - use the 'enabled' property instead
     */
-  def setEnabled(value: Boolean): Unit = js.native
+  def setEnabled(value: Boolean): Unit
   
-  var target: MovieClip | Sprite = js.native
+  var target: MovieClip | Sprite
 }
 object ButtonHelper {
   

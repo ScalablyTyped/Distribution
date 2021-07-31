@@ -12,7 +12,7 @@ Utility for downloading artifacts from different versions of Electron
 | Keywords           | electron, download, prebuild, get, artifact, release |
 | # releases         | 28 |
 | # dependents       | 13 |
-| # downloads        | 6292846 |
+| # downloads        | 11042420 |
 | # stars            | 0 |
 
 ## Links

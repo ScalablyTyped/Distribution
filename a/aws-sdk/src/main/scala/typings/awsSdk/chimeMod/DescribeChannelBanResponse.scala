@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChannelBanResponse extends StObject {
   
   /**
     * The the details of the ban.
     */
-  var ChannelBan: js.UndefOr[typings.awsSdk.chimeMod.ChannelBan] = js.native
+  var ChannelBan: js.UndefOr[typings.awsSdk.chimeMod.ChannelBan] = js.undefined
 }
 object DescribeChannelBanResponse {
   

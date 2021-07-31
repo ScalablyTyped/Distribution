@@ -8,10 +8,13 @@ import typings.whatwgUrl.anon.BaseURL
 import typings.whatwgUrl.anon.EncodingOverride
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("whatwg-url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("whatwg-url", "URL")
   @js.native
@@ -73,60 +76,45 @@ object mod {
     def sort(): Unit = js.native
   }
   
-  @JSImport("whatwg-url", "basicURLParse")
-  @js.native
-  def basicURLParse(input: String): URLRecord | Null = js.native
-  @JSImport("whatwg-url", "basicURLParse")
-  @js.native
-  def basicURLParse(input: String, options: EncodingOverride): URLRecord | Null = js.native
+  @scala.inline
+  def basicURLParse(input: String): URLRecord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("basicURLParse")(input.asInstanceOf[js.Any]).asInstanceOf[URLRecord | Null]
+  @scala.inline
+  def basicURLParse(input: String, options: EncodingOverride): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("basicURLParse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
   
-  @JSImport("whatwg-url", "cannotHaveAUsernamePasswordPort")
-  @js.native
-  def cannotHaveAUsernamePasswordPort(urlRecord: URLRecord): Boolean = js.native
+  @scala.inline
+  def cannotHaveAUsernamePasswordPort(urlRecord: URLRecord): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("cannotHaveAUsernamePasswordPort")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("whatwg-url", "parseURL")
-  @js.native
-  def parseURL(input: String): URLRecord | Null = js.native
-  @JSImport("whatwg-url", "parseURL")
-  @js.native
-  def parseURL(input: String, options: BaseURL): URLRecord | Null = js.native
+  @scala.inline
+  def parseURL(input: String): URLRecord | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(input.asInstanceOf[js.Any]).asInstanceOf[URLRecord | Null]
+  @scala.inline
+  def parseURL(input: String, options: BaseURL): URLRecord | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URLRecord | Null]
   
-  @JSImport("whatwg-url", "percentDecode")
-  @js.native
-  def percentDecode(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def percentDecode(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("percentDecode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("whatwg-url", "serializeHost")
-  @js.native
-  def serializeHost(host: String): String = js.native
-  @JSImport("whatwg-url", "serializeHost")
-  @js.native
-  def serializeHost(host: Double): String = js.native
-  @JSImport("whatwg-url", "serializeHost")
-  @js.native
-  def serializeHost(host: IPv6Address): String = js.native
+  @scala.inline
+  def serializeHost(host: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeHost")(host.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serializeHost(host: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeHost")(host.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serializeHost(host: IPv6Address): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeHost")(host.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("whatwg-url", "serializeInteger")
-  @js.native
-  def serializeInteger(number: Double): String = js.native
+  @scala.inline
+  def serializeInteger(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeInteger")(number.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("whatwg-url", "serializeURL")
-  @js.native
-  def serializeURL(urlRecord: URLRecord): String = js.native
-  @JSImport("whatwg-url", "serializeURL")
-  @js.native
-  def serializeURL(urlRecord: URLRecord, excludeFragment: Boolean): String = js.native
+  @scala.inline
+  def serializeURL(urlRecord: URLRecord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeURL")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def serializeURL(urlRecord: URLRecord, excludeFragment: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeURL")(urlRecord.asInstanceOf[js.Any], excludeFragment.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("whatwg-url", "serializeURLOrigin")
-  @js.native
-  def serializeURLOrigin(urlRecord: URLRecord): String = js.native
+  @scala.inline
+  def serializeURLOrigin(urlRecord: URLRecord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeURLOrigin")(urlRecord.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("whatwg-url", "setThePassword")
-  @js.native
-  def setThePassword(urlRecord: URLRecord, password: String): Unit = js.native
+  @scala.inline
+  def setThePassword(urlRecord: URLRecord, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setThePassword")(urlRecord.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("whatwg-url", "setTheUsername")
-  @js.native
-  def setTheUsername(urlRecord: URLRecord, username: String): Unit = js.native
+  @scala.inline
+  def setTheUsername(urlRecord: URLRecord, username: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTheUsername")(urlRecord.asInstanceOf[js.Any], username.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type IPv6Address = js.Tuple8[Double, Double, Double, Double, Double, Double, Double, Double]
   
@@ -220,32 +208,31 @@ object mod {
     def `special relative or authority`: typings.whatwgUrl.whatwgUrlStrings.`special relative or authority` = ("special relative or authority").asInstanceOf[typings.whatwgUrl.whatwgUrlStrings.`special relative or authority`]
   }
   
-  @js.native
   trait URLRecord extends StObject {
     
-    var cannotBeABaseURL: js.UndefOr[Boolean] = js.native
+    var cannotBeABaseURL: js.UndefOr[Boolean] = js.undefined
     
-    var fragment: String | Null = js.native
+    var fragment: String | Null
     
-    var host: String | Double | IPv6Address | Null = js.native
+    var host: String | Double | IPv6Address | Null
     
-    var password: String = js.native
+    var password: String
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
     
-    var port: Double | Null = js.native
+    var port: Double | Null
     
-    var query: String | Null = js.native
+    var query: String | Null
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var username: String = js.native
+    var username: String
   }
   object URLRecord {
     
     @scala.inline
     def apply(password: String, path: js.Array[String], scheme: String, username: String): URLRecord = {
-      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], fragment = null, host = null, port = null, query = null)
       __obj.asInstanceOf[URLRecord]
     }
     

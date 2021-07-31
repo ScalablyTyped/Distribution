@@ -2,15 +2,13 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextProcessor extends StObject {
   
-  def processText(text: String, returnDisplayValue: Boolean): String = js.native
+  def processText(text: String, returnDisplayValue: Boolean): String
   
-  def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any = js.native
+  def processTextEx(text: String, returnDisplayValue: Boolean, doEncoding: Boolean): js.Any
 }
 object ITextProcessor {
   

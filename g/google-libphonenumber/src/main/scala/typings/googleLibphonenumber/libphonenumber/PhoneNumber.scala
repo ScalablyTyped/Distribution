@@ -3,107 +3,105 @@ package typings.googleLibphonenumber.libphonenumber
 import typings.googleLibphonenumber.libphonenumber.PhoneNumber.CountryCodeSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneNumber extends StObject {
   
-  def clearCountryCode(): Unit = js.native
+  def clearCountryCode(): Unit
   
-  def clearCountryCodeSource(): Unit = js.native
+  def clearCountryCodeSource(): Unit
   
-  def clearExtension(): Unit = js.native
+  def clearExtension(): Unit
   
-  def clearItalianLeadingZero(): Unit = js.native
+  def clearItalianLeadingZero(): Unit
   
-  def clearNationalNumber(): Unit = js.native
+  def clearNationalNumber(): Unit
   
-  def clearNumberOfLeadingZeros(): Unit = js.native
+  def clearNumberOfLeadingZeros(): Unit
   
-  def clearPreferredDomesticCarrierCode(): Unit = js.native
+  def clearPreferredDomesticCarrierCode(): Unit
   
-  def clearRawInput(): Unit = js.native
+  def clearRawInput(): Unit
   
-  def countryCodeCount(): Double = js.native
+  def countryCodeCount(): Double
   
-  def countryCodeSourceCount(): Double = js.native
+  def countryCodeSourceCount(): Double
   
-  def extensionCount(): Double = js.native
+  def extensionCount(): Double
   
-  def getCountryCode(): js.UndefOr[Double] = js.native
+  def getCountryCode(): js.UndefOr[Double]
   
-  def getCountryCodeOrDefault(): Double = js.native
+  def getCountryCodeOrDefault(): Double
   
-  def getCountryCodeSource(): js.UndefOr[CountryCodeSource] = js.native
+  def getCountryCodeSource(): js.UndefOr[CountryCodeSource]
   
-  def getCountryCodeSourceOrDefault(): CountryCodeSource = js.native
+  def getCountryCodeSourceOrDefault(): CountryCodeSource
   
-  def getExtension(): js.UndefOr[String] = js.native
+  def getExtension(): js.UndefOr[String]
   
-  def getExtensionOrDefault(): String = js.native
+  def getExtensionOrDefault(): String
   
-  def getItalianLeadingZero(): js.UndefOr[Boolean] = js.native
+  def getItalianLeadingZero(): js.UndefOr[Boolean]
   
-  def getItalianLeadingZeroOrDefault(): Boolean = js.native
+  def getItalianLeadingZeroOrDefault(): Boolean
   
-  def getNationalNumber(): js.UndefOr[Double] = js.native
+  def getNationalNumber(): js.UndefOr[Double]
   
-  def getNationalNumberOrDefault(): Double = js.native
+  def getNationalNumberOrDefault(): Double
   
-  def getNumberOfLeadingZeros(): js.UndefOr[Double] = js.native
+  def getNumberOfLeadingZeros(): js.UndefOr[Double]
   
-  def getNumberOfLeadingZerosOrDefault(): Double = js.native
+  def getNumberOfLeadingZerosOrDefault(): Double
   
-  def getPreferredDomesticCarrierCode(): js.UndefOr[String] = js.native
+  def getPreferredDomesticCarrierCode(): js.UndefOr[String]
   
-  def getPreferredDomesticCarrierCodeOrDefault(): String = js.native
+  def getPreferredDomesticCarrierCodeOrDefault(): String
   
-  def getRawInput(): js.UndefOr[String] = js.native
+  def getRawInput(): js.UndefOr[String]
   
-  def getRawInputOrDefault(): String = js.native
+  def getRawInputOrDefault(): String
   
-  def hasCountryCode(): Boolean = js.native
+  def hasCountryCode(): Boolean
   
-  def hasCountryCodeSource(): Boolean = js.native
+  def hasCountryCodeSource(): Boolean
   
-  def hasExtension(): Boolean = js.native
+  def hasExtension(): Boolean
   
-  def hasItalianLeadingZero(): Boolean = js.native
+  def hasItalianLeadingZero(): Boolean
   
-  def hasNationalNumber(): Boolean = js.native
+  def hasNationalNumber(): Boolean
   
-  def hasNumberOfLeadingZeros(): Boolean = js.native
+  def hasNumberOfLeadingZeros(): Boolean
   
-  def hasPreferredDomesticCarrierCode(): Boolean = js.native
+  def hasPreferredDomesticCarrierCode(): Boolean
   
-  def hasRawInput(): Boolean = js.native
+  def hasRawInput(): Boolean
   
-  def italianLeadingZeroCount(): Double = js.native
+  def italianLeadingZeroCount(): Double
   
-  def nationalNumberCount(): Double = js.native
+  def nationalNumberCount(): Double
   
-  def numberOfLeadingZerosCount(): Double = js.native
+  def numberOfLeadingZerosCount(): Double
   
-  def preferredDomesticCarrierCodeCount(): Double = js.native
+  def preferredDomesticCarrierCodeCount(): Double
   
-  def rawInputCount(): Double = js.native
+  def rawInputCount(): Double
   
-  def setCountryCode(value: Double): Unit = js.native
+  def setCountryCode(value: Double): Unit
   
-  def setCountryCodeSource(value: CountryCodeSource): Unit = js.native
+  def setCountryCodeSource(value: CountryCodeSource): Unit
   
-  def setExtension(value: String): Unit = js.native
+  def setExtension(value: String): Unit
   
-  def setItalianLeadingZero(value: Boolean): Unit = js.native
+  def setItalianLeadingZero(value: Boolean): Unit
   
-  def setNationalNumber(value: Double): Double = js.native
+  def setNationalNumber(value: Double): Double
   
-  def setNumberOfLeadingZeros(value: Double): Unit = js.native
+  def setNumberOfLeadingZeros(value: Double): Unit
   
-  def setPreferredDomesticCarrierCode(value: String): Unit = js.native
+  def setPreferredDomesticCarrierCode(value: String): Unit
   
-  def setRawInput(value: String): Unit = js.native
+  def setRawInput(value: String): Unit
 }
 object PhoneNumber {
   
@@ -169,16 +167,24 @@ object PhoneNumber {
   object CountryCodeSource extends StObject {
     
     @js.native
-    sealed trait FROM_DEFAULT_COUNTRY extends CountryCodeSource
+    sealed trait FROM_DEFAULT_COUNTRY
+      extends StObject
+         with CountryCodeSource
     
     @js.native
-    sealed trait FROM_NUMBER_WITHOUT_PLUS_SIGN extends CountryCodeSource
+    sealed trait FROM_NUMBER_WITHOUT_PLUS_SIGN
+      extends StObject
+         with CountryCodeSource
     
     @js.native
-    sealed trait FROM_NUMBER_WITH_IDD extends CountryCodeSource
+    sealed trait FROM_NUMBER_WITH_IDD
+      extends StObject
+         with CountryCodeSource
     
     @js.native
-    sealed trait FROM_NUMBER_WITH_PLUS_SIGN extends CountryCodeSource
+    sealed trait FROM_NUMBER_WITH_PLUS_SIGN
+      extends StObject
+         with CountryCodeSource
   }
   
   @scala.inline

@@ -4,30 +4,30 @@ import typings.rollupTypescript.anon.Code
 import typings.rollupTypescript.anon.Typeofts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-typescript", JSImport.Default)
+  @JSImport("rollup-typescript", JSImport.Namespace)
   @js.native
-  def default(): RollupPlugin = js.native
-  @JSImport("rollup-typescript", JSImport.Default)
-  @js.native
-  def default(options: Options): RollupPlugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RollupPlugin]
+  @scala.inline
+  def default(options: Options): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[RollupPlugin]
+  
   trait Options extends StObject {
     
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[String | js.Array[String]] = js.native
+    var include: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var module: js.UndefOr[String] = js.native
+    var module: js.UndefOr[String] = js.undefined
     
-    var tsconfig: js.UndefOr[Boolean] = js.native
+    var tsconfig: js.UndefOr[Boolean] = js.undefined
     
-    var typescript: js.UndefOr[Typeofts] = js.native
+    var typescript: js.UndefOr[Typeofts] = js.undefined
   }
   object Options {
     
@@ -78,14 +78,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RollupPlugin extends StObject {
     
-    def load(id: String): String = js.native
+    def load(id: String): String
     
-    def resolveId(importee: String, importer: String): js.Any = js.native
+    def resolveId(importee: String, importer: String): js.Any
     
-    def transform(code: String, id: String): Code = js.native
+    def transform(code: String, id: String): Code
   }
   object RollupPlugin {
     

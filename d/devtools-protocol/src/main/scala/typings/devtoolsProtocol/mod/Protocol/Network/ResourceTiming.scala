@@ -2,102 +2,100 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceTiming extends StObject {
   
   /**
     * Connected to the remote host.
     */
-  var connectEnd: Double = js.native
+  var connectEnd: Double
   
   /**
     * Started connecting to the remote host.
     */
-  var connectStart: Double = js.native
+  var connectStart: Double
   
   /**
     * Finished DNS address resolve.
     */
-  var dnsEnd: Double = js.native
+  var dnsEnd: Double
   
   /**
     * Started DNS address resolve.
     */
-  var dnsStart: Double = js.native
+  var dnsStart: Double
   
   /**
     * Finished resolving proxy.
     */
-  var proxyEnd: Double = js.native
+  var proxyEnd: Double
   
   /**
     * Started resolving proxy.
     */
-  var proxyStart: Double = js.native
+  var proxyStart: Double
   
   /**
     * Time the server finished pushing request.
     */
-  var pushEnd: Double = js.native
+  var pushEnd: Double
   
   /**
     * Time the server started pushing request.
     */
-  var pushStart: Double = js.native
+  var pushStart: Double
   
   /**
     * Finished receiving response headers.
     */
-  var receiveHeadersEnd: Double = js.native
+  var receiveHeadersEnd: Double
   
   /**
     * Timing's requestTime is a baseline in seconds, while the other numbers are ticks in
     * milliseconds relatively to this requestTime.
     */
-  var requestTime: Double = js.native
+  var requestTime: Double
   
   /**
     * Finished sending request.
     */
-  var sendEnd: Double = js.native
+  var sendEnd: Double
   
   /**
     * Started sending request.
     */
-  var sendStart: Double = js.native
+  var sendStart: Double
   
   /**
     * Finished SSL handshake.
     */
-  var sslEnd: Double = js.native
+  var sslEnd: Double
   
   /**
     * Started SSL handshake.
     */
-  var sslStart: Double = js.native
+  var sslStart: Double
   
   /**
     * Started fetch event.
     */
-  var workerFetchStart: Double = js.native
+  var workerFetchStart: Double
   
   /**
     * Finished Starting ServiceWorker.
     */
-  var workerReady: Double = js.native
+  var workerReady: Double
   
   /**
     * Settled fetch event respondWith promise.
     */
-  var workerRespondWithSettled: Double = js.native
+  var workerRespondWithSettled: Double
   
   /**
     * Started running ServiceWorker.
     */
-  var workerStart: Double = js.native
+  var workerStart: Double
 }
 object ResourceTiming {
   

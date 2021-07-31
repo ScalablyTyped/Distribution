@@ -3,19 +3,19 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseBandScale extends BaseScale {
+trait BaseBandScale
+  extends StObject
+     with BaseScale {
   
-  var align: js.UndefOr[Double | SignalRef] = js.native
+  var align: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingOuter: js.UndefOr[Double | SignalRef] = js.native
+  var paddingOuter: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var range: js.UndefOr[RangeBand] = js.native
+  var range: js.UndefOr[RangeBand] = js.undefined
 }
 object BaseBandScale {
   

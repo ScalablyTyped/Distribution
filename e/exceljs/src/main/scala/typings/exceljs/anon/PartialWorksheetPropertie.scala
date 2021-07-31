@@ -2,26 +2,24 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.WorksheetProperties> */
-@js.native
 trait PartialWorksheetPropertie extends StObject {
   
-  var defaultColWidth: js.UndefOr[Double] = js.native
+  var defaultColWidth: js.UndefOr[Double] = js.undefined
   
-  var defaultRowHeight: js.UndefOr[Double] = js.native
+  var defaultRowHeight: js.UndefOr[Double] = js.undefined
   
-  var dyDescent: js.UndefOr[Double] = js.native
+  var dyDescent: js.UndefOr[Double] = js.undefined
   
-  var outlineLevelCol: js.UndefOr[Double] = js.native
+  var outlineLevelCol: js.UndefOr[Double] = js.undefined
   
-  var outlineLevelRow: js.UndefOr[Double] = js.native
+  var outlineLevelRow: js.UndefOr[Double] = js.undefined
   
-  var showGridLines: js.UndefOr[Boolean] = js.native
+  var showGridLines: js.UndefOr[Boolean] = js.undefined
   
-  var tabColor: js.UndefOr[PartialColor] = js.native
+  var tabColor: js.UndefOr[PartialColor] = js.undefined
 }
 object PartialWorksheetPropertie {
   

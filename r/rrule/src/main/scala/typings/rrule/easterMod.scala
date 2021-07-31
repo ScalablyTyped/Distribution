@@ -2,15 +2,16 @@ package typings.rrule
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easterMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/easter", "easter")
+  @JSImport("rrule/dist/esm/src/iterinfo/easter", JSImport.Namespace)
   @js.native
-  def easter(y: Double): js.Array[Double] = js.native
-  @JSImport("rrule/dist/esm/src/iterinfo/easter", "easter")
-  @js.native
-  def easter(y: Double, offset: Double): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def easter(y: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def easter(y: Double, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("easter")(y.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

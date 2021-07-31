@@ -2,21 +2,27 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Previews extends StObject {
   
-  var format: String = js.native
+  /**
+    * `json` by default. Can be `raw`, `text`, `html`, `full`, `diff`, `patch`, `sha`, `base64`. Depending on endpoint
+    */
+  var format: js.UndefOr[String] = js.undefined
   
-  var previews: js.Array[String] = js.native
+  /**
+    * Custom media type names of {@link https://developer.github.com/v3/media/|API Previews} without the `-preview` suffix.
+    * Example for single preview: `['squirrel-girl']`.
+    * Example for multiple previews: `['squirrel-girl', 'mister-fantastic']`.
+    */
+  var previews: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Previews {
   
   @scala.inline
-  def apply(format: String, previews: js.Array[String]): Previews = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], previews = previews.asInstanceOf[js.Any])
+  def apply(): Previews = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Previews]
   }
   
@@ -27,7 +33,13 @@ object Previews {
     def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    @scala.inline
     def setPreviews(value: js.Array[String]): Self = StObject.set(x, "previews", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPreviewsUndefined: Self = StObject.set(x, "previews", js.undefined)
     
     @scala.inline
     def setPreviewsVarargs(value: String*): Self = StObject.set(x, "previews", js.Array(value :_*))

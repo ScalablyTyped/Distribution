@@ -2,40 +2,38 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerGraphic extends StObject {
   
   /**
     * The geometry of the marker.
     */
-  var geometry: js.UndefOr[ExternalReferenceGeometry] = js.native
+  var geometry: js.UndefOr[ExternalReferenceGeometry] = js.undefined
   
   /**
     * The primitive name.
     */
-  var primitiveName: js.UndefOr[String] = js.native
+  var primitiveName: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol used to draw the marker graphic, can be a point, line, polygon, or text symbol.
     */
-  var symbol: js.UndefOr[CIMSymbolType] = js.native
+  var symbol: js.UndefOr[CIMSymbolType] = js.undefined
   
   /**
     * The text that is defined within the marker if drawn with a text symbol.
     */
-  var textString: js.UndefOr[String] = js.native
+  var textString: js.UndefOr[String] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic
 }
 object CIMMarkerGraphic {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerGraphic): CIMMarkerGraphic = {
+  def apply(): CIMMarkerGraphic = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerGraphic")
     __obj.asInstanceOf[CIMMarkerGraphic]
   }
   

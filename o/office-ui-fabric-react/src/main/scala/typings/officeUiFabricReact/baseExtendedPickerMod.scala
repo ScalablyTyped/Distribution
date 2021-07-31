@@ -21,7 +21,6 @@ import typings.std.MouseEvent
 import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseExtendedPickerMod {
@@ -64,6 +63,10 @@ object baseExtendedPickerMod {
     
     var floatingPickerProps: IBaseFloatingPickerProps[T] = js.native
     
+    /** Sets focus to the input. */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
     val highlightedItems: js.Array[T] = js.native
     
     var input: RefObject[Autofill] = js.native
@@ -98,25 +101,24 @@ object baseExtendedPickerMod {
     var selection: Selection[IObjectWithKey] = js.native
   }
   
-  @js.native
   trait IBaseExtendedPickerState[T] extends StObject {
     
-    var queryString: String | Null = js.native
+    var queryString: String | Null
     
-    var selectedItems: js.Array[T] | Null = js.native
+    var selectedItems: js.Array[T] | Null
     
-    var suggestionItems: js.Array[T] | Null = js.native
+    var suggestionItems: js.Array[T] | Null
   }
   object IBaseExtendedPickerState {
     
     @scala.inline
     def apply[T](): IBaseExtendedPickerState[T] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(queryString = null, selectedItems = null, suggestionItems = null)
       __obj.asInstanceOf[IBaseExtendedPickerState[T]]
     }
     
     @scala.inline
-    implicit class IBaseExtendedPickerStateMutableBuilder[Self <: IBaseExtendedPickerState[_], T] (val x: Self with IBaseExtendedPickerState[T]) extends AnyVal {
+    implicit class IBaseExtendedPickerStateMutableBuilder[Self <: IBaseExtendedPickerState[?], T] (val x: Self & IBaseExtendedPickerState[T]) extends AnyVal {
       
       @scala.inline
       def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])

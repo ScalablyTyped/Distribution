@@ -2,7 +2,6 @@ package typings.hashtable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,17 +9,16 @@ object global {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("Hashtable")
   @js.native
-  class Hashtable[TKey, TValue] () extends IHashtable[TKey, TValue] {
-    def this(hashCode: js.Function1[/* value */ TValue, _]) = this()
+  class Hashtable[TKey, TValue] ()
+    extends StObject
+       with IHashtable[TKey, TValue] {
+    def this(hashCode: js.Function1[/* value */ TValue, js.Any]) = this()
     def this(options: IHashtableOptions[TKey]) = this()
     def this(
-      hashCode: js.UndefOr[scala.Nothing],
+      hashCode: js.Function1[/* value */ TValue, js.Any],
       equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]
     ) = this()
-    def this(
-      hashCode: js.Function1[/* value */ TValue, _],
-      equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]
-    ) = this()
+    def this(hashCode: Unit, equals: js.Function2[/* value1 */ TValue, /* value2 */ TValue, Boolean]) = this()
   }
   @JSGlobal("Hashtable")
   @js.native

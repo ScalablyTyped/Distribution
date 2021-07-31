@@ -2,20 +2,18 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/completion-context/
-@js.native
 trait CompletionContext extends StObject {
   
-  val line: String = js.native
+  val line: String
   
-  val position: Double = js.native
+  val position: Double
   
-  val reason: CompletionReason = js.native
+  val reason: CompletionReason
   
-  val text: String = js.native
+  val text: String
 }
 object CompletionContext {
   

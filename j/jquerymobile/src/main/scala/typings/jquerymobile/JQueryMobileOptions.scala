@@ -2,61 +2,59 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryMobileOptions extends StObject {
   
-  var activeBtnClass: js.UndefOr[String] = js.native
+  var activeBtnClass: js.UndefOr[String] = js.undefined
   
-  var activePageClass: js.UndefOr[String] = js.native
+  var activePageClass: js.UndefOr[String] = js.undefined
   
-  var ajaxEnabled: js.UndefOr[Boolean] = js.native
+  var ajaxEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var allowCrossDomainPages: js.UndefOr[Boolean] = js.native
+  var allowCrossDomainPages: js.UndefOr[Boolean] = js.undefined
   
-  var autoInitializePage: js.UndefOr[Boolean] = js.native
+  var autoInitializePage: js.UndefOr[Boolean] = js.undefined
   
-  var buttonMarkup: js.Any = js.native
+  var buttonMarkup: js.Any
   
-  var defaultDialogTransition: js.UndefOr[String] = js.native
+  var defaultDialogTransition: js.UndefOr[String] = js.undefined
   
-  var defaultPageTransition: js.UndefOr[String] = js.native
+  var defaultPageTransition: js.UndefOr[String] = js.undefined
   
-  var getMaxScrollForTransition: js.UndefOr[Double] = js.native
+  var getMaxScrollForTransition: js.UndefOr[Double] = js.undefined
   
-  var gradeA: js.UndefOr[js.Function] = js.native
+  var gradeA: js.UndefOr[js.Function] = js.undefined
   
-  var hashListeningEnabled: js.UndefOr[Boolean] = js.native
+  var hashListeningEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreContentEnabled: js.UndefOr[Boolean] = js.native
+  var ignoreContentEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var linkBindingEnabled: js.UndefOr[Boolean] = js.native
+  var linkBindingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var loadingMessageTextVisible: js.UndefOr[Boolean] = js.native
+  var loadingMessageTextVisible: js.UndefOr[Boolean] = js.undefined
   
-  var loadingMessageTheme: js.UndefOr[String] = js.native
+  var loadingMessageTheme: js.UndefOr[String] = js.undefined
   
-  var maxTransitionWidth: js.UndefOr[Double] = js.native
+  var maxTransitionWidth: js.UndefOr[Double] = js.undefined
   
-  var minScrollBack: js.UndefOr[Double] = js.native
+  var minScrollBack: js.UndefOr[Double] = js.undefined
   
-  var ns: js.UndefOr[Double] = js.native
+  var ns: js.UndefOr[Double] = js.undefined
   
-  var pageLoadErrorMessage: js.UndefOr[String] = js.native
+  var pageLoadErrorMessage: js.UndefOr[String] = js.undefined
   
-  var pageLoadErrorMessageTheme: js.UndefOr[String] = js.native
+  var pageLoadErrorMessageTheme: js.UndefOr[String] = js.undefined
   
-  var phonegapNavigationEnabled: js.UndefOr[Boolean] = js.native
+  var phonegapNavigationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var pushStateEnabled: js.UndefOr[Boolean] = js.native
+  var pushStateEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var subPageUrlKey: js.UndefOr[String] = js.native
+  var subPageUrlKey: js.UndefOr[String] = js.undefined
   
-  var touchOverflowEnabled: js.UndefOr[Boolean] = js.native
+  var touchOverflowEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var transitionFallbacks: js.Any = js.native
+  var transitionFallbacks: js.Any
 }
 object JQueryMobileOptions {
   

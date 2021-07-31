@@ -2,13 +2,11 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A setting for Glass.
   */
-@js.native
 trait SchemaSetting extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait SchemaSetting extends StObject {
     * current time zone region as defined in the tz database. Example:
     * America/Los_Angeles.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The type of resource. This is always mirror#setting.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The setting value, as a string.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaSetting {
   

@@ -7,7 +7,6 @@ import typings.vsoNodeApi.anon.EnumValuesContext
 import typings.vsoNodeApi.identitiesInterfacesMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationsInterfacesMod {
@@ -19,27 +18,37 @@ object locationsInterfacesMod {
   object InheritLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[InheritLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[InheritLevel & Double] = js.native
     
     @js.native
-    sealed trait Account extends InheritLevel
-    /* 2 */ val Account: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Account with Double = js.native
+    sealed trait Account
+      extends StObject
+         with InheritLevel
+    /* 2 */ val Account: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Account & Double = js.native
     
     @js.native
-    sealed trait All extends InheritLevel
-    /* 7 */ val All: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.All with Double = js.native
+    sealed trait All
+      extends StObject
+         with InheritLevel
+    /* 7 */ val All: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.All & Double = js.native
     
     @js.native
-    sealed trait Collection extends InheritLevel
-    /* 4 */ val Collection: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Collection with Double = js.native
+    sealed trait Collection
+      extends StObject
+         with InheritLevel
+    /* 4 */ val Collection: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Collection & Double = js.native
     
     @js.native
-    sealed trait Deployment extends InheritLevel
-    /* 1 */ val Deployment: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Deployment with Double = js.native
+    sealed trait Deployment
+      extends StObject
+         with InheritLevel
+    /* 1 */ val Deployment: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.Deployment & Double = js.native
     
     @js.native
-    sealed trait None extends InheritLevel
-    /* 0 */ val None: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with InheritLevel
+    /* 0 */ val None: typings.vsoNodeApi.locationsInterfacesMod.InheritLevel.None & Double = js.native
   }
   
   @js.native
@@ -49,19 +58,25 @@ object locationsInterfacesMod {
   object RelativeToSetting extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RelativeToSetting with Double] = js.native
+    def apply(value: Double): js.UndefOr[RelativeToSetting & Double] = js.native
     
     @js.native
-    sealed trait Context extends RelativeToSetting
-    /* 0 */ val Context: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.Context with Double = js.native
+    sealed trait Context
+      extends StObject
+         with RelativeToSetting
+    /* 0 */ val Context: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.Context & Double = js.native
     
     @js.native
-    sealed trait FullyQualified extends RelativeToSetting
-    /* 3 */ val FullyQualified: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.FullyQualified with Double = js.native
+    sealed trait FullyQualified
+      extends StObject
+         with RelativeToSetting
+    /* 3 */ val FullyQualified: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.FullyQualified & Double = js.native
     
     @js.native
-    sealed trait WebApplication extends RelativeToSetting
-    /* 2 */ val WebApplication: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.WebApplication with Double = js.native
+    sealed trait WebApplication
+      extends StObject
+         with RelativeToSetting
+    /* 2 */ val WebApplication: typings.vsoNodeApi.locationsInterfacesMod.RelativeToSetting.WebApplication & Double = js.native
   }
   
   @js.native
@@ -71,19 +86,25 @@ object locationsInterfacesMod {
   object ServiceStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ServiceStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[ServiceStatus & Double] = js.native
     
     @js.native
-    sealed trait Active extends ServiceStatus
-    /* 1 */ val Active: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Active with Double = js.native
+    sealed trait Active
+      extends StObject
+         with ServiceStatus
+    /* 1 */ val Active: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Active & Double = js.native
     
     @js.native
-    sealed trait Assigned extends ServiceStatus
-    /* 0 */ val Assigned: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Assigned with Double = js.native
+    sealed trait Assigned
+      extends StObject
+         with ServiceStatus
+    /* 0 */ val Assigned: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Assigned & Double = js.native
     
     @js.native
-    sealed trait Moving extends ServiceStatus
-    /* 2 */ val Moving: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Moving with Double = js.native
+    sealed trait Moving
+      extends StObject
+         with ServiceStatus
+    /* 2 */ val Moving: typings.vsoNodeApi.locationsInterfacesMod.ServiceStatus.Moving & Double = js.native
   }
   
   object TypeInfo {
@@ -129,24 +150,23 @@ object locationsInterfacesMod {
     def ServiceStatus_=(x: EnumValuesAssigned): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceStatus")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AccessMapping extends StObject {
     
-    var accessPoint: String = js.native
+    var accessPoint: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var moniker: String = js.native
+    var moniker: String
     
     /**
       * The service which owns this access mapping e.g. TFS, ELS, etc.
       */
-    var serviceOwner: String = js.native
+    var serviceOwner: String
     
     /**
       * Part of the access mapping which applies context after the access point of the server.
       */
-    var virtualDirectory: String = js.native
+    var virtualDirectory: String
   }
   object AccessMapping {
     
@@ -182,43 +202,42 @@ object locationsInterfacesMod {
     }
   }
   
-  @js.native
   trait ConnectionData extends StObject {
     
     /**
       * The Id of the authenticated user who made this request. More information about the user can be obtained by passing this Id to the Identity service
       */
-    var authenticatedUser: Identity = js.native
+    var authenticatedUser: Identity
     
     /**
       * The Id of the authorized user who made this request. More information about the user can be obtained by passing this Id to the Identity service
       */
-    var authorizedUser: Identity = js.native
+    var authorizedUser: Identity
     
     /**
       * The id for the server.
       */
-    var deploymentId: String = js.native
+    var deploymentId: String
     
     /**
       * The instance id for this host.
       */
-    var instanceId: String = js.native
+    var instanceId: String
     
     /**
       * The last user access for this instance.  Null if not requested specifically.
       */
-    var lastUserAccess: Date = js.native
+    var lastUserAccess: Date
     
     /**
       * Data that the location service holds.
       */
-    var locationServiceData: LocationServiceData = js.native
+    var locationServiceData: LocationServiceData
     
     /**
       * The virtual directory of the host we are talking to.
       */
-    var webApplicationRelativeDirectory: String = js.native
+    var webApplicationRelativeDirectory: String
   }
   object ConnectionData {
     
@@ -262,12 +281,11 @@ object locationsInterfacesMod {
     }
   }
   
-  @js.native
   trait LocationMapping extends StObject {
     
-    var accessMappingMoniker: String = js.native
+    var accessMappingMoniker: String
     
-    var location: String = js.native
+    var location: String
   }
   object LocationMapping {
     
@@ -288,48 +306,47 @@ object locationsInterfacesMod {
     }
   }
   
-  @js.native
   trait LocationServiceData extends StObject {
     
     /**
       * Data about the access mappings contained by this location service.
       */
-    var accessMappings: js.Array[AccessMapping] = js.native
+    var accessMappings: js.Array[AccessMapping]
     
     /**
       * Data that the location service holds.
       */
-    var clientCacheFresh: Boolean = js.native
+    var clientCacheFresh: Boolean
     
     /**
       * The time to live on the location service cache.
       */
-    var clientCacheTimeToLive: Double = js.native
+    var clientCacheTimeToLive: Double
     
     /**
       * The default access mapping moniker for the server.
       */
-    var defaultAccessMappingMoniker: String = js.native
+    var defaultAccessMappingMoniker: String
     
     /**
       * The obsolete id for the last change that took place on the server (use LastChangeId64).
       */
-    var lastChangeId: Double = js.native
+    var lastChangeId: Double
     
     /**
       * The non-truncated 64-bit id for the last change that took place on the server.
       */
-    var lastChangeId64: Double = js.native
+    var lastChangeId64: Double
     
     /**
       * Data about the service definitions contained by this location service.
       */
-    var serviceDefinitions: js.Array[ServiceDefinition] = js.native
+    var serviceDefinitions: js.Array[ServiceDefinition]
     
     /**
       * The identifier of the deployment which is hosting this location data (e.g. SPS, TFS, ELS, Napa, etc.)
       */
-    var serviceOwner: String = js.native
+    var serviceOwner: String
   }
   object LocationServiceData {
     
@@ -383,14 +400,13 @@ object locationsInterfacesMod {
     }
   }
   
-  @js.native
   trait ResourceAreaInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var locationUrl: String = js.native
+    var locationUrl: String
     
-    var name: String = js.native
+    var name: String
   }
   object ResourceAreaInfo {
     
@@ -414,59 +430,58 @@ object locationsInterfacesMod {
     }
   }
   
-  @js.native
   trait ServiceDefinition extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var inheritLevel: InheritLevel = js.native
+    var inheritLevel: InheritLevel
     
-    var locationMappings: js.Array[LocationMapping] = js.native
+    var locationMappings: js.Array[LocationMapping]
     
     /**
       * Maximum api version that this resource supports (current server version for this resource). Copied from <c>ApiResourceLocation</c>.
       */
-    var maxVersion: String = js.native
+    var maxVersion: String
     
     /**
       * Minimum api version that this resource supports. Copied from <c>ApiResourceLocation</c>.
       */
-    var minVersion: String = js.native
+    var minVersion: String
     
-    var parentIdentifier: String = js.native
+    var parentIdentifier: String
     
-    var parentServiceType: String = js.native
+    var parentServiceType: String
     
-    var properties: js.Any = js.native
+    var properties: js.Any
     
-    var relativePath: String = js.native
+    var relativePath: String
     
-    var relativeToSetting: RelativeToSetting = js.native
+    var relativeToSetting: RelativeToSetting
     
     /**
       * The latest version of this resource location that is in "Release" (non-preview) mode. Copied from <c>ApiResourceLocation</c>.
       */
-    var releasedVersion: String = js.native
+    var releasedVersion: String
     
     /**
       * The current resource version supported by this resource location. Copied from <c>ApiResourceLocation</c>.
       */
-    var resourceVersion: Double = js.native
+    var resourceVersion: Double
     
     /**
       * The service which owns this definition e.g. TFS, ELS, etc.
       */
-    var serviceOwner: String = js.native
+    var serviceOwner: String
     
-    var serviceType: String = js.native
+    var serviceType: String
     
-    var status: ServiceStatus = js.native
+    var status: ServiceStatus
     
-    var toolId: String = js.native
+    var toolId: String
   }
   object ServiceDefinition {
     

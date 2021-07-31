@@ -3,17 +3,15 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IINVITATION_REPLY extends StObject {
   
-  var data: js.Object = js.native
+  var data: js.Object
   
-  var invitee: SFSUser = js.native
+  var invitee: SFSUser
   
-  var reply: Double = js.native
+  var reply: Double
 }
 object IINVITATION_REPLY {
   

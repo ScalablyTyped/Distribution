@@ -6,23 +6,21 @@ import typings.reachRouter.mod.NavigateFn
 import typings.reachRouter.mod.WindowLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[Boolean] = js.native
+    var default: js.UndefOr[Boolean] = js.undefined
     
-    var location: js.UndefOr[WindowLocation[LocationState]] = js.native
+    var location: js.UndefOr[WindowLocation[LocationState]] = js.undefined
     
-    var navigate: js.UndefOr[NavigateFn] = js.native
+    var navigate: js.UndefOr[NavigateFn] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Default {
     
@@ -67,12 +65,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictparam extends /* param */ StringDictionary[String] {
+  trait Dictparam
+    extends StObject
+       with /* param */ StringDictionary[String] {
     
-    var path: String = js.native
+    var path: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Dictparam {
     
@@ -93,12 +92,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Path {
     
@@ -119,14 +117,13 @@ object anon {
     }
   }
   
-  @js.native
   trait PushState extends StObject {
     
-    def pushState(state: js.Any, title: String, uri: String): Unit = js.native
+    def pushState(state: js.Any, title: String, uri: String): Unit
     
-    def replaceState(state: js.Any, title: String, uri: String): Unit = js.native
+    def replaceState(state: js.Any, title: String, uri: String): Unit
     
-    val state: js.Any = js.native
+    val state: js.Any
   }
   object PushState {
     
@@ -154,10 +151,9 @@ object anon {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
   }
   object State {
     

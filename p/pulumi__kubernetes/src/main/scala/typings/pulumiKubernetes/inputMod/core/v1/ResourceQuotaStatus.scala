@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ResourceQuotaStatus defines the enforced hard limits and observed use.
   */
-@js.native
 trait ResourceQuotaStatus extends StObject {
   
   /**
     * Hard is the set of enforced hard limits for each named resource. More info: https://kubernetes.io/docs/concepts/policy/resource-quotas/
     */
-  var hard: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var hard: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   
   /**
     * Used is the current observed total usage of the resource in the namespace.
     */
-  var used: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+  var used: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
 }
 object ResourceQuotaStatus {
   

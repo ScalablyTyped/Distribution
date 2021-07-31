@@ -2,53 +2,51 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAddressKana extends StObject {
   
   /**
     * City or ward.
     * This can be unset by updating the value to null and then saving.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * Two-letter country code (ISO 3166-1 alpha-2).
     * This can be unset by updating the value to null and then saving.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Block or building number.
     * This can be unset by updating the value to null and then saving.
     */
-  var line1: js.UndefOr[String] = js.native
+  var line1: js.UndefOr[String] = js.undefined
   
   /**
     * Building details.
     * This can be unset by updating the value to null and then saving.
     */
-  var line2: js.UndefOr[String] = js.native
+  var line2: js.UndefOr[String] = js.undefined
   
   /**
     * Postal code.
     * This can be unset by updating the value to null and then saving.
     */
-  var postal_code: js.UndefOr[String] = js.native
+  var postal_code: js.UndefOr[String] = js.undefined
   
   /**
     * Prefecture.
     * This can be unset by updating the value to null and then saving.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Town or cho-me.
     * This can be unset by updating the value to null and then saving.
     */
-  var town: js.UndefOr[String] = js.native
+  var town: js.UndefOr[String] = js.undefined
 }
 object IAddressKana {
   

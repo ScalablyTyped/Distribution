@@ -2,21 +2,19 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridType extends StObject {
   
-  var gridType: String = js.native
+  var gridType: String
   
-  var receivedInitialDate: typings.std.Date | Null = js.native
+  var receivedInitialDate: typings.std.Date | Null
 }
 object GridType {
   
   @scala.inline
   def apply(gridType: String): GridType = {
-    val __obj = js.Dynamic.literal(gridType = gridType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(gridType = gridType.asInstanceOf[js.Any], receivedInitialDate = null)
     __obj.asInstanceOf[GridType]
   }
   

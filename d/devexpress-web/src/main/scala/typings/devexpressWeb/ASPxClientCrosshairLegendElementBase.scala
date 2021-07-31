@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for elements the Crosshair Cursor displays in the legend.
   */
-@js.native
 trait ASPxClientCrosshairLegendElementBase extends StObject {
   
   /**
     * Provides access to the crosshair axis label element to custom draw the crosshair.
     */
-  var AxisLabelElement: ASPxClientCrosshairAxisLabelElement = js.native
+  var AxisLabelElement: ASPxClientCrosshairAxisLabelElement
   
   /**
     * Returns the Crosshair Cursor's line element to custom draw the crosshair.
     */
-  var LineElement: ASPxClientCrosshairLineElement = js.native
+  var LineElement: ASPxClientCrosshairLineElement
   
   /**
     * Returns the series or indicator point for which the Crosshair Cursor creates this element.
     */
-  var Point: ASPxClientSeriesPoint = js.native
+  var Point: ASPxClientSeriesPoint
   
   /**
     * Returns the value that specifies whether the crosshair legend element is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientCrosshairLegendElementBase {
   

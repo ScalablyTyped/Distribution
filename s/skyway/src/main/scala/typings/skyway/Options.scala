@@ -3,21 +3,19 @@ package typings.skyway
 import typings.std.RTCConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var config: js.UndefOr[RTCConfiguration] = js.native
+  var config: js.UndefOr[RTCConfiguration] = js.undefined
   
-  var credential: js.UndefOr[Credential] = js.native
+  var credential: js.UndefOr[Credential] = js.undefined
   
-  var debug: js.UndefOr[Double] = js.native
+  var debug: js.UndefOr[Double] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var turn: js.UndefOr[Boolean] = js.native
+  var turn: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   

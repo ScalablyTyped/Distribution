@@ -4,10 +4,8 @@ import typings.chromeApps.chrome.documentScan.DocumentScanCallbackArg
 import typings.chromeApps.chrome.documentScan.DocumentScanOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdocumentScan extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TypeofdocumentScan extends StObject {
     * @param options Object containing scan parameters.
     * @param callback Called with the result and data from the scan.
     */
-  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
+  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit
 }
 object TypeofdocumentScan {
   

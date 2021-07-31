@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientGamesmanagement.gapi.client.gamesmanagemen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfileSettings extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `gamesManagement#profileSettings`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var profileVisible: js.UndefOr[Boolean] = js.native
+  var profileVisible: js.UndefOr[Boolean] = js.undefined
 }
 object ProfileSettings {
   

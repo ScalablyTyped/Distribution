@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserPoolDomainResponse extends StObject {
   
   /**
     * The Amazon CloudFront endpoint that Amazon Cognito set up when you added the custom domain to your user pool.
     */
-  var CloudFrontDomain: js.UndefOr[DomainType] = js.native
+  var CloudFrontDomain: js.UndefOr[DomainType] = js.undefined
 }
 object UpdateUserPoolDomainResponse {
   

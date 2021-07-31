@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies where notifications should be sent upon changes to a data store.
   */
-@js.native
 trait SchemaNotificationConfig extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaNotificationConfig extends StObject {
     * adequate permissions will cause the calls that send notifications to
     * fail.
     */
-  var pubsubTopic: js.UndefOr[String] = js.native
+  var pubsubTopic: js.UndefOr[String] = js.undefined
 }
 object SchemaNotificationConfig {
   

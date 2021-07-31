@@ -2,46 +2,44 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFamilies extends StObject {
   
   /**
     * The cursive font-family.
     */
-  var cursive: js.UndefOr[String] = js.native
+  var cursive: js.UndefOr[String] = js.undefined
   
   /**
     * The fantasy font-family.
     */
-  var fantasy: js.UndefOr[String] = js.native
+  var fantasy: js.UndefOr[String] = js.undefined
   
   /**
     * The fixed font-family.
     */
-  var fixed: js.UndefOr[String] = js.native
+  var fixed: js.UndefOr[String] = js.undefined
   
   /**
     * The pictograph font-family.
     */
-  var pictograph: js.UndefOr[String] = js.native
+  var pictograph: js.UndefOr[String] = js.undefined
   
   /**
     * The sansSerif font-family.
     */
-  var sansSerif: js.UndefOr[String] = js.native
+  var sansSerif: js.UndefOr[String] = js.undefined
   
   /**
     * The serif font-family.
     */
-  var serif: js.UndefOr[String] = js.native
+  var serif: js.UndefOr[String] = js.undefined
   
   /**
     * The standard font-family.
     */
-  var standard: js.UndefOr[String] = js.native
+  var standard: js.UndefOr[String] = js.undefined
 }
 object FontFamilies {
   

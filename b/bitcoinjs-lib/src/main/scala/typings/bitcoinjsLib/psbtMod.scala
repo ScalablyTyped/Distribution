@@ -16,7 +16,6 @@ import typings.bitcoinjsLib.transactionMod.Transaction
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object psbtMod {
@@ -25,7 +24,7 @@ object psbtMod {
   @js.native
   class Psbt () extends StObject {
     def this(opts: PsbtOptsOptional) = this()
-    def this(opts: js.UndefOr[scala.Nothing], data: typings.bip174.mod.Psbt) = this()
+    def this(opts: Unit, data: typings.bip174.mod.Psbt) = this()
     def this(opts: PsbtOptsOptional, data: typings.bip174.mod.Psbt) = this()
     
     var __CACHE: js.Any = js.native
@@ -144,26 +143,24 @@ object psbtMod {
   /* static members */
   object Psbt {
     
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromBase64")
+    @JSImport("bitcoinjs-lib/types/psbt", "Psbt")
     @js.native
-    def fromBase64(data: String): Psbt = js.native
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromBase64")
-    @js.native
-    def fromBase64(data: String, opts: PsbtOptsOptional): Psbt = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): Psbt = js.native
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): Psbt = js.native
+    @scala.inline
+    def fromBase64(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    @scala.inline
+    def fromBase64(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
     
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromHex")
-    @js.native
-    def fromHex(data: String): Psbt = js.native
-    @JSImport("bitcoinjs-lib/types/psbt", "Psbt.fromHex")
-    @js.native
-    def fromHex(data: String, opts: PsbtOptsOptional): Psbt = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    @scala.inline
+    def fromBuffer(buffer: Buffer, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
+    
+    @scala.inline
+    def fromHex(data: String): Psbt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any]).asInstanceOf[Psbt]
+    @scala.inline
+    def fromHex(data: String, opts: PsbtOptsOptional): Psbt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Psbt]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -260,20 +257,21 @@ object psbtMod {
     FinalScriptSig
   ]
   
-  @js.native
-  trait HDSigner extends HDSignerBase {
+  trait HDSigner
+    extends StObject
+       with HDSignerBase {
     
     /**
       * The path string must match /^m(\/\d+'?)+$/
       * ex. m/44'/0'/0'/1/23 levels with ' must be hard derivations
       */
-    def derivePath(path: String): HDSigner = js.native
+    def derivePath(path: String): HDSigner
     
     /**
       * Input hash (the "message digest") for the signature algorithm
       * Return a 64 byte signature (32 byte r and 32 byte s in that order)
       */
-    def sign(hash: Buffer): Buffer = js.native
+    def sign(hash: Buffer): Buffer
   }
   object HDSigner {
     
@@ -297,12 +295,13 @@ object psbtMod {
   /**
     * Same as above but with async sign method
     */
-  @js.native
-  trait HDSignerAsync extends HDSignerBase {
+  trait HDSignerAsync
+    extends StObject
+       with HDSignerBase {
     
-    def derivePath(path: String): HDSignerAsync = js.native
+    def derivePath(path: String): HDSignerAsync
     
-    def sign(hash: Buffer): js.Promise[Buffer] = js.native
+    def sign(hash: Buffer): js.Promise[Buffer]
   }
   object HDSignerAsync {
     
@@ -328,18 +327,17 @@ object psbtMod {
     }
   }
   
-  @js.native
   trait HDSignerBase extends StObject {
     
     /**
       * The first 4 bytes of the sha256-ripemd160 of the publicKey
       */
-    var fingerprint: Buffer = js.native
+    var fingerprint: Buffer
     
     /**
       * DER format compressed publicKey buffer
       */
-    var publicKey: Buffer = js.native
+    var publicKey: Buffer
   }
   object HDSignerBase {
     
@@ -360,9 +358,9 @@ object psbtMod {
     }
   }
   
-  @js.native
   trait PsbtInputExtended
-    extends PsbtInput
+    extends StObject
+       with PsbtInput
        with TransactionInput
   object PsbtInputExtended {
     
@@ -373,12 +371,11 @@ object psbtMod {
     }
   }
   
-  @js.native
   trait PsbtOptsOptional extends StObject {
     
-    var maximumFeeRate: js.UndefOr[Double] = js.native
+    var maximumFeeRate: js.UndefOr[Double] = js.undefined
     
-    var network: js.UndefOr[Network] = js.native
+    var network: js.UndefOr[Network] = js.undefined
   }
   object PsbtOptsOptional {
     
@@ -425,14 +422,14 @@ object psbtMod {
     }
   }
   
-  @js.native
   trait PsbtOutputExtendedAddress
-    extends PsbtOutput
+    extends StObject
+       with PsbtOutput
        with PsbtOutputExtended {
     
-    var address: String = js.native
+    var address: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object PsbtOutputExtendedAddress {
     
@@ -453,14 +450,14 @@ object psbtMod {
     }
   }
   
-  @js.native
   trait PsbtOutputExtendedScript
-    extends PsbtOutput
+    extends StObject
+       with PsbtOutput
        with PsbtOutputExtended {
     
-    var script: Buffer = js.native
+    var script: Buffer
     
-    var value: Double = js.native
+    var value: Double
   }
   object PsbtOutputExtendedScript {
     
@@ -481,11 +478,12 @@ object psbtMod {
     }
   }
   
-  @js.native
-  trait PsbtTxInput extends TransactionInput {
+  trait PsbtTxInput
+    extends StObject
+       with TransactionInput {
     
     @JSName("hash")
-    var hash_PsbtTxInput: Buffer = js.native
+    var hash_PsbtTxInput: Buffer
   }
   object PsbtTxInput {
     
@@ -503,10 +501,11 @@ object psbtMod {
     }
   }
   
-  @js.native
-  trait PsbtTxOutput extends TransactionOutput {
+  trait PsbtTxOutput
+    extends StObject
+       with TransactionOutput {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
   }
   object PsbtTxOutput {
     

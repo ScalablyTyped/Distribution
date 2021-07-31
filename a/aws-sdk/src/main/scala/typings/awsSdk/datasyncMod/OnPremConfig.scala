@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnPremConfig extends StObject {
   
   /**
     * ARNs of the agents to use for an NFS location.
     */
-  var AgentArns: AgentArnList = js.native
+  var AgentArns: AgentArnList
 }
 object OnPremConfig {
   

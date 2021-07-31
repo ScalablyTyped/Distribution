@@ -5,36 +5,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTargetpoolsSetbackup extends StandardParameters {
+trait ParamsResourceTargetpoolsSetbackup
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * New failoverRatio value for the target pool.
     */
-  var failoverRatio: js.UndefOr[Double] = js.native
+  var failoverRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region scoping this request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaTargetReference] = js.native
+  var requestBody: js.UndefOr[SchemaTargetReference] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -48,12 +48,12 @@ trait ParamsResourceTargetpoolsSetbackup extends StandardParameters {
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the TargetPool resource to set a backup pool for.
     */
-  var targetPool: js.UndefOr[String] = js.native
+  var targetPool: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTargetpoolsSetbackup {
   

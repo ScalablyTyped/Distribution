@@ -2,26 +2,24 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVariablesRequest extends StObject {
   
   /**
     * The max size per page determined for the get variable request. 
     */
-  var maxResults: js.UndefOr[VariablesMaxResults] = js.native
+  var maxResults: js.UndefOr[VariablesMaxResults] = js.undefined
   
   /**
     * The name of the variable. 
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The next page token of the get variable request. 
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object GetVariablesRequest {
   

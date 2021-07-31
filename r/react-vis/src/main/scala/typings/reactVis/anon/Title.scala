@@ -2,15 +2,13 @@ package typings.reactVis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Title extends StObject {
   
-  var title: js.Any = js.native
+  var title: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Title {
   

@@ -4,7 +4,6 @@ import typings.antvG2.antvG2Strings.x
 import typings.antvG2.antvG2Strings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

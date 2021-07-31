@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicationFacet extends StObject {
   
   // The state of publication for this document. Either published or checkout. Read-only.
-  var level: js.UndefOr[NullableOption[String]] = js.native
+  var level: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the version that is visible to the current caller. Read-only.
-  var versionId: js.UndefOr[NullableOption[String]] = js.native
+  var versionId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PublicationFacet {
   

@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PasswordCredentialPropertyStore extends IPropertySet
+trait PasswordCredentialPropertyStore
+  extends StObject
+     with IPropertySet
 object PasswordCredentialPropertyStore {
   
   @scala.inline

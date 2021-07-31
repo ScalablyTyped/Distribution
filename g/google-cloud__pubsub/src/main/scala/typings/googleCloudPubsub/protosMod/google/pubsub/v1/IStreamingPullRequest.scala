@@ -3,36 +3,34 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import typings.long.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a StreamingPullRequest. */
-@js.native
 trait IStreamingPullRequest extends StObject {
   
   /** StreamingPullRequest ackIds */
-  var ackIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var ackIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** StreamingPullRequest clientId */
-  var clientId: js.UndefOr[String | Null] = js.native
+  var clientId: js.UndefOr[String | Null] = js.undefined
   
   /** StreamingPullRequest maxOutstandingBytes */
-  var maxOutstandingBytes: js.UndefOr[Double | Long | String | Null] = js.native
+  var maxOutstandingBytes: js.UndefOr[Double | Long | String | Null] = js.undefined
   
   /** StreamingPullRequest maxOutstandingMessages */
-  var maxOutstandingMessages: js.UndefOr[Double | Long | String | Null] = js.native
+  var maxOutstandingMessages: js.UndefOr[Double | Long | String | Null] = js.undefined
   
   /** StreamingPullRequest modifyDeadlineAckIds */
-  var modifyDeadlineAckIds: js.UndefOr[js.Array[String] | Null] = js.native
+  var modifyDeadlineAckIds: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** StreamingPullRequest modifyDeadlineSeconds */
-  var modifyDeadlineSeconds: js.UndefOr[js.Array[Double] | Null] = js.native
+  var modifyDeadlineSeconds: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** StreamingPullRequest streamAckDeadlineSeconds */
-  var streamAckDeadlineSeconds: js.UndefOr[Double | Null] = js.native
+  var streamAckDeadlineSeconds: js.UndefOr[Double | Null] = js.undefined
   
   /** StreamingPullRequest subscription */
-  var subscription: js.UndefOr[String | Null] = js.native
+  var subscription: js.UndefOr[String | Null] = js.undefined
 }
 object IStreamingPullRequest {
   

@@ -2,29 +2,27 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The border styling properties of the TableBorderCell.
   */
-@js.native
 trait SchemaTableBorderProperties extends StObject {
   
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The fill of the table border.
     */
-  var tableBorderFill: js.UndefOr[SchemaTableBorderFill] = js.native
+  var tableBorderFill: js.UndefOr[SchemaTableBorderFill] = js.undefined
   
   /**
     * The thickness of the border.
     */
-  var weight: js.UndefOr[SchemaDimension] = js.native
+  var weight: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTableBorderProperties {
   

@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.Accordion")
 @js.native
 class Accordion protected ()
-  extends typings.ejWebAll.ej.Accordion {
+  extends StObject
+     with typings.ejWebAll.ej.Accordion {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,13 +27,13 @@ object Accordion {
   object HeightAdjustMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Accordion.HeightAdjustMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.Accordion.HeightAdjustMode & Double] = js.native
     
-    /* 1 */ val Auto: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Auto with Double = js.native
+    /* 1 */ val Auto: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Auto & Double = js.native
     
-    /* 0 */ val Content: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Content with Double = js.native
+    /* 0 */ val Content: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Content & Double = js.native
     
-    /* 2 */ val Fill: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Fill with Double = js.native
+    /* 2 */ val Fill: typings.ejWebAll.ej.Accordion.HeightAdjustMode.Fill & Double = js.native
   }
   
   /* static member */

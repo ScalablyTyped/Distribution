@@ -10,9 +10,9 @@ Create accessible alerts through snackbars and banners.
 | ------------------ | :-------------: |
 | Full name          | @react-md/alert |
 | Keywords           | react-md, material design, react, alert, snackbar, toast, notification, banner, component |
-| # releases         | 32 |
+| # releases         | 34 |
 | # dependents       | 1 |
-| # downloads        | 9386 |
+| # downloads        | 15281 |
 | # stars            | 0 |
 
 ## Links

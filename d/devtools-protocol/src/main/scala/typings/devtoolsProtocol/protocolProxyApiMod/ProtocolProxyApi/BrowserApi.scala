@@ -18,87 +18,85 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.SetPermissionRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.SetWindowBoundsRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserApi extends StObject {
   
   /**
     * Close browser gracefully.
     */
-  def close(): js.Promise[Unit] = js.native
+  def close(): js.Promise[Unit]
   
   /**
     * Crashes browser on the main thread.
     */
-  def crash(): js.Promise[Unit] = js.native
+  def crash(): js.Promise[Unit]
   
   /**
     * Crashes GPU process.
     */
-  def crashGpuProcess(): js.Promise[Unit] = js.native
+  def crashGpuProcess(): js.Promise[Unit]
   
   /**
     * Returns the command line switches for the browser process if, and only if
     * --enable-automation is on the commandline.
     */
-  def getBrowserCommandLine(): js.Promise[GetBrowserCommandLineResponse] = js.native
+  def getBrowserCommandLine(): js.Promise[GetBrowserCommandLineResponse]
   
   /**
     * Get a Chrome histogram by name.
     */
-  def getHistogram(params: GetHistogramRequest): js.Promise[GetHistogramResponse] = js.native
+  def getHistogram(params: GetHistogramRequest): js.Promise[GetHistogramResponse]
   
   /**
     * Get Chrome histograms.
     */
-  def getHistograms(params: GetHistogramsRequest): js.Promise[GetHistogramsResponse] = js.native
+  def getHistograms(params: GetHistogramsRequest): js.Promise[GetHistogramsResponse]
   
   /**
     * Returns version information.
     */
-  def getVersion(): js.Promise[GetVersionResponse] = js.native
+  def getVersion(): js.Promise[GetVersionResponse]
   
   /**
     * Get position and size of the browser window.
     */
-  def getWindowBounds(params: GetWindowBoundsRequest): js.Promise[GetWindowBoundsResponse] = js.native
+  def getWindowBounds(params: GetWindowBoundsRequest): js.Promise[GetWindowBoundsResponse]
   
   /**
     * Get the browser window that contains the devtools target.
     */
-  def getWindowForTarget(params: GetWindowForTargetRequest): js.Promise[GetWindowForTargetResponse] = js.native
+  def getWindowForTarget(params: GetWindowForTargetRequest): js.Promise[GetWindowForTargetResponse]
   
   /**
     * Grant specific permissions to the given origin and reject all others.
     */
-  def grantPermissions(params: GrantPermissionsRequest): js.Promise[Unit] = js.native
+  def grantPermissions(params: GrantPermissionsRequest): js.Promise[Unit]
   
   /**
     * Reset all permission management for all origins.
     */
-  def resetPermissions(params: ResetPermissionsRequest): js.Promise[Unit] = js.native
+  def resetPermissions(params: ResetPermissionsRequest): js.Promise[Unit]
   
   /**
     * Set dock tile details, platform-specific.
     */
-  def setDockTile(params: SetDockTileRequest): js.Promise[Unit] = js.native
+  def setDockTile(params: SetDockTileRequest): js.Promise[Unit]
   
   /**
     * Set the behavior when downloading a file.
     */
-  def setDownloadBehavior(params: SetDownloadBehaviorRequest): js.Promise[Unit] = js.native
+  def setDownloadBehavior(params: SetDownloadBehaviorRequest): js.Promise[Unit]
   
   /**
     * Set permission settings for given origin.
     */
-  def setPermission(params: SetPermissionRequest): js.Promise[Unit] = js.native
+  def setPermission(params: SetPermissionRequest): js.Promise[Unit]
   
   /**
     * Set position and/or size of the browser window.
     */
-  def setWindowBounds(params: SetWindowBoundsRequest): js.Promise[Unit] = js.native
+  def setWindowBounds(params: SetWindowBoundsRequest): js.Promise[Unit]
 }
 object BrowserApi {
   

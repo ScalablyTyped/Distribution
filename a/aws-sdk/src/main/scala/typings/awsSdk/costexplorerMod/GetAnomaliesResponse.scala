@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAnomaliesResponse extends StObject {
   
   /**
     *  A list of cost anomalies. 
     */
-  var Anomalies: typings.awsSdk.costexplorerMod.Anomalies = js.native
+  var Anomalies: typings.awsSdk.costexplorerMod.Anomalies
   
   /**
     *  The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size. 
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
 }
 object GetAnomaliesResponse {
   

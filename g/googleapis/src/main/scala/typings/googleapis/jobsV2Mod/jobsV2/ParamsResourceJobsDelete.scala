@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceJobsDelete extends StandardParameters {
+trait ParamsResourceJobsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Deprecated. This field is not working anymore.  Optional.  If set to
@@ -23,13 +23,13 @@ trait ParamsResourceJobsDelete extends StandardParameters {
     * is cleaned up. Otherwise, the call returns while some steps are still
     * taking place asynchronously, hence faster.
     */
-  var disableFastProcess: js.UndefOr[Boolean] = js.native
+  var disableFastProcess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  The resource name of the job to be deleted, such as
     * "jobs/11111111".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceJobsDelete {
   

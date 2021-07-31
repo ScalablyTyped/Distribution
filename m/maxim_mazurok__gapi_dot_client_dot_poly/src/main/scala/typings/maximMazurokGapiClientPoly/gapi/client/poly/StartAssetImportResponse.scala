@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAssetImportResponse extends StObject {
   
   /**
     * The id of newly created asset. If this is empty when the operation is complete it means the import failed. Please refer to the assetImportMessages field to understand what went
     * wrong.
     */
-  var assetId: js.UndefOr[String] = js.native
+  var assetId: js.UndefOr[String] = js.undefined
   
   /** The id of the asset import. */
-  var assetImportId: js.UndefOr[String] = js.native
+  var assetImportId: js.UndefOr[String] = js.undefined
   
   /** The message from the asset import. This will contain any warnings (or - in the case of failure - errors) that occurred during import. */
-  var assetImportMessages: js.UndefOr[js.Array[AssetImportMessage]] = js.native
+  var assetImportMessages: js.UndefOr[js.Array[AssetImportMessage]] = js.undefined
   
   /** The publish URL for the asset. */
-  var publishUrl: js.UndefOr[String] = js.native
+  var publishUrl: js.UndefOr[String] = js.undefined
 }
 object StartAssetImportResponse {
   

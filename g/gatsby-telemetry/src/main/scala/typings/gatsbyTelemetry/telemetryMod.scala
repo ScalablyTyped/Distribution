@@ -8,7 +8,6 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object telemetryMod {
@@ -31,17 +30,17 @@ object telemetryMod {
     def captureError(`type`: String, tags: ITelemetryTagsPayload): Unit = js.native
     
     def captureEvent(): Unit = js.native
-    def captureEvent(`type`: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-    def captureEvent(`type`: js.UndefOr[scala.Nothing], tags: ITelemetryTagsPayload): Unit = js.native
-    def captureEvent(`type`: js.UndefOr[scala.Nothing], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     def captureEvent(`type`: String): Unit = js.native
-    def captureEvent(`type`: String, tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
+    def captureEvent(`type`: String, tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
     def captureEvent(`type`: String, tags: ITelemetryTagsPayload): Unit = js.native
     def captureEvent(`type`: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     def captureEvent(`type`: js.Array[String]): Unit = js.native
-    def captureEvent(`type`: js.Array[String], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
+    def captureEvent(`type`: js.Array[String], tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
     def captureEvent(`type`: js.Array[String], tags: ITelemetryTagsPayload): Unit = js.native
     def captureEvent(`type`: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
+    def captureEvent(`type`: Unit, tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
+    def captureEvent(`type`: Unit, tags: ITelemetryTagsPayload): Unit = js.native
+    def captureEvent(`type`: Unit, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     
     def captureMetadataEvent(): Unit = js.native
     
@@ -73,7 +72,7 @@ object telemetryMod {
     
     def getSessionId(): String = js.native
     
-    def getTagsFromEnv(): Record[String, _] = js.native
+    def getTagsFromEnv(): Record[String, js.Any] = js.native
     
     var installedGatsbyVersion: js.UndefOr[SemVer] = js.native
     
@@ -101,41 +100,40 @@ object telemetryMod {
     def trackActivity(source: String, tags: ITelemetryTagsPayload): Unit = js.native
     
     def trackCli(): Unit = js.native
-    def trackCli(`type`: js.UndefOr[scala.Nothing], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
-    def trackCli(`type`: js.UndefOr[scala.Nothing], tags: ITelemetryTagsPayload): Unit = js.native
-    def trackCli(`type`: js.UndefOr[scala.Nothing], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     def trackCli(`type`: String): Unit = js.native
-    def trackCli(`type`: String, tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
+    def trackCli(`type`: String, tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
     def trackCli(`type`: String, tags: ITelemetryTagsPayload): Unit = js.native
     def trackCli(`type`: String, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     def trackCli(`type`: js.Array[String]): Unit = js.native
-    def trackCli(`type`: js.Array[String], tags: js.UndefOr[scala.Nothing], opts: ITelemetryOptsPayload): Unit = js.native
+    def trackCli(`type`: js.Array[String], tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
     def trackCli(`type`: js.Array[String], tags: ITelemetryTagsPayload): Unit = js.native
     def trackCli(`type`: js.Array[String], tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
+    def trackCli(`type`: Unit, tags: Unit, opts: ITelemetryOptsPayload): Unit = js.native
+    def trackCli(`type`: Unit, tags: ITelemetryTagsPayload): Unit = js.native
+    def trackCli(`type`: Unit, tags: ITelemetryTagsPayload, opts: ITelemetryOptsPayload): Unit = js.native
     
     def trackFeatureIsUsed(name: String): Unit = js.native
     
     var trackingEnabled: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait IAggregateStats extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var mean: Double = js.native
+    var mean: Double
     
-    var median: Double = js.native
+    var median: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var skewness: Double = js.native
+    var skewness: Double
     
-    var stdDev: Double = js.native
+    var stdDev: Double
     
-    var sum: Double = js.native
+    var sum: Double
   }
   object IAggregateStats {
     
@@ -183,14 +181,13 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait IAnalyticsTrackerConstructorParameters extends StObject {
     
-    var componentId: js.UndefOr[SemVer] = js.native
+    var componentId: js.UndefOr[SemVer] = js.undefined
     
-    var gatsbyCliVersion: js.UndefOr[SemVer] = js.native
+    var gatsbyCliVersion: js.UndefOr[SemVer] = js.undefined
     
-    var trackingEnabled: js.UndefOr[Boolean] = js.native
+    var trackingEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object IAnalyticsTrackerConstructorParameters {
     
@@ -223,12 +220,13 @@ object telemetryMod {
     }
   }
   
-  @js.native
-  trait IDefaultTelemetryTagsPayload extends ITelemetryTagsPayload {
+  trait IDefaultTelemetryTagsPayload
+    extends StObject
+       with ITelemetryTagsPayload {
     
-    var gatsbyCliVersion: js.UndefOr[SemVer] = js.native
+    var gatsbyCliVersion: js.UndefOr[SemVer] = js.undefined
     
-    var installedGatsbyVersion: js.UndefOr[SemVer] = js.native
+    var installedGatsbyVersion: js.UndefOr[SemVer] = js.undefined
   }
   object IDefaultTelemetryTagsPayload {
     
@@ -255,34 +253,33 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait IOSInfo extends StObject {
     
-    var arch: String = js.native
+    var arch: String
     
-    var ci: js.UndefOr[Boolean] = js.native
+    var ci: js.UndefOr[Boolean] = js.undefined
     
-    var ciName: String | Null = js.native
+    var ciName: String | Null
     
-    var cpus: js.UndefOr[String] = js.native
+    var cpus: js.UndefOr[String] = js.undefined
     
-    var docker: js.UndefOr[Boolean] = js.native
+    var docker: js.UndefOr[Boolean] = js.undefined
     
-    var isTTY: Boolean = js.native
+    var isTTY: Boolean
     
-    var nodeVersion: SemVer = js.native
+    var nodeVersion: SemVer
     
-    var platform: String = js.native
+    var platform: String
     
-    var release: String = js.native
+    var release: String
     
-    var termProgram: js.UndefOr[String] = js.native
+    var termProgram: js.UndefOr[String] = js.undefined
   }
   object IOSInfo {
     
     @scala.inline
     def apply(arch: String, isTTY: Boolean, nodeVersion: SemVer, platform: String, release: String): IOSInfo = {
-      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], isTTY = isTTY.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], isTTY = isTTY.asInstanceOf[js.Any], nodeVersion = nodeVersion.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], ciName = null)
       __obj.asInstanceOf[IOSInfo]
     }
     
@@ -336,22 +333,21 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait IStructuredError extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[Stack] = js.native
+    var error: js.UndefOr[Stack] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IStructuredError {
     
@@ -405,20 +401,19 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait IStructuredErrorV2 extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object IStructuredErrorV2 {
     
@@ -466,10 +461,9 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait ITelemetryOptsPayload extends StObject {
     
-    var debounce: js.UndefOr[Boolean] = js.native
+    var debounce: js.UndefOr[Boolean] = js.undefined
   }
   object ITelemetryOptsPayload {
     
@@ -490,52 +484,51 @@ object telemetryMod {
     }
   }
   
-  @js.native
   trait ITelemetryTagsPayload extends StObject {
     
-    var cacheStatus: js.UndefOr[String] = js.native
+    var cacheStatus: js.UndefOr[String] = js.undefined
     
-    var dependencies: js.UndefOr[js.Array[String]] = js.native
+    var dependencies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var devDependencies: js.UndefOr[js.Array[String]] = js.native
+    var devDependencies: js.UndefOr[js.Array[String]] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[IStructuredError | js.Array[IStructuredError]] = js.native
+    var error: js.UndefOr[IStructuredError | js.Array[IStructuredError]] = js.undefined
     
-    var errorV2: js.UndefOr[IStructuredErrorV2] = js.native
+    var errorV2: js.UndefOr[IStructuredErrorV2] = js.undefined
     
-    var exitCode: js.UndefOr[Double] = js.native
+    var exitCode: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var pluginCachePurged: js.UndefOr[String] = js.native
+    var pluginCachePurged: js.UndefOr[String] = js.undefined
     
-    var pluginName: js.UndefOr[String] = js.native
+    var pluginName: js.UndefOr[String] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String]] = js.native
+    var plugins: js.UndefOr[js.Array[String]] = js.undefined
     
-    var siteHash: js.UndefOr[String] = js.native
+    var siteHash: js.UndefOr[String] = js.undefined
     
-    var siteMeasurements: js.UndefOr[BundleStats] = js.native
+    var siteMeasurements: js.UndefOr[BundleStats] = js.undefined
     
-    var siteName: js.UndefOr[String] = js.native
+    var siteName: js.UndefOr[String] = js.undefined
     
-    var starterName: js.UndefOr[String] = js.native
+    var starterName: js.UndefOr[String] = js.undefined
     
-    var uiSource: js.UndefOr[String] = js.native
+    var uiSource: js.UndefOr[String] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
-    var valid: js.UndefOr[Boolean] = js.native
+    var valid: js.UndefOr[Boolean] = js.undefined
     
-    var valueInteger: js.UndefOr[Double] = js.native
+    var valueInteger: js.UndefOr[Double] = js.undefined
     
-    var valueString: js.UndefOr[String] = js.native
+    var valueString: js.UndefOr[String] = js.undefined
     
-    var valueStringArray: js.UndefOr[js.Array[String]] = js.native
+    var valueStringArray: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ITelemetryTagsPayload {
     

@@ -6,25 +6,26 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateBodyMod {
   
-  @JSImport("rc-picker/es/panels/DatePanel/DateBody", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DatePanel/DateBody", JSImport.Namespace)
   @js.native
-  def default[DateType](props: DateBodyProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: DateBodyProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait DateBodyPassProps[DateType] extends StObject {
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
     
-    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.native
+    var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
-    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.native
+    var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
-    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.native
+    var rowClassName: js.UndefOr[js.Function1[/* date */ DateType, String]] = js.undefined
   }
   object DateBodyPassProps {
     
@@ -35,7 +36,7 @@ object dateBodyMod {
     }
     
     @scala.inline
-    implicit class DateBodyPassPropsMutableBuilder[Self <: DateBodyPassProps[_], DateType] (val x: Self with DateBodyPassProps[DateType]) extends AnyVal {
+    implicit class DateBodyPassPropsMutableBuilder[Self <: DateBodyPassProps[?], DateType] (val x: Self & DateBodyPassProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
@@ -63,22 +64,23 @@ object dateBodyMod {
     }
   }
   
-  @js.native
-  trait DateBodyProps[DateType] extends DateBodyPassProps[DateType] {
+  trait DateBodyProps[DateType]
+    extends StObject
+       with DateBodyPassProps[DateType] {
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    def onSelect(value: DateType): Unit = js.native
+    def onSelect(value: DateType): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var rowCount: Double = js.native
+    var rowCount: Double
     
-    var value: js.UndefOr[DateType | Null] = js.native
+    var value: js.UndefOr[DateType | Null] = js.undefined
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object DateBodyProps {
     
@@ -96,7 +98,7 @@ object dateBodyMod {
     }
     
     @scala.inline
-    implicit class DateBodyPropsMutableBuilder[Self <: DateBodyProps[_], DateType] (val x: Self with DateBodyProps[DateType]) extends AnyVal {
+    implicit class DateBodyPropsMutableBuilder[Self <: DateBodyProps[?], DateType] (val x: Self & DateBodyProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])

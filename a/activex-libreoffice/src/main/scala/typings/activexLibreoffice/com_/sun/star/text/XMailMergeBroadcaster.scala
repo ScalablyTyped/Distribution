@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,20 +14,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.text.MailMerge
   * @since OOo 1.1.2
   */
-@js.native
-trait XMailMergeBroadcaster extends XInterface {
+trait XMailMergeBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds an entry to the list of mail merge listeners.
     * @param xListener The listener to be added.
     */
-  def addMailMergeEventListener(xListener: XMailMergeListener): Unit = js.native
+  def addMailMergeEventListener(xListener: XMailMergeListener): Unit
   
   /**
     * Removes an entry to the list of mail merge listeners.
     * @param xListener The listener to be removed.
     */
-  def removeMailMergeEventListener(xListener: XMailMergeListener): Unit = js.native
+  def removeMailMergeEventListener(xListener: XMailMergeListener): Unit
 }
 object XMailMergeBroadcaster {
   

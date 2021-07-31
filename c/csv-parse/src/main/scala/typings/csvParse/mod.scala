@@ -7,73 +7,63 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Parser = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Parser]
+  @scala.inline
+  def apply(callback: Callback): Parser = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: String): Parser = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: String, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: String, options: Unit, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: String, options: Options): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: String, options: Options, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: Buffer): Parser = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: Buffer, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: Buffer, options: Unit, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: Buffer, options: Options): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(input: Buffer, options: Options, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(options: Unit, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(options: Options): Parser = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def apply(options: Options, callback: Callback): Parser = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  
   @JSImport("csv-parse", JSImport.Namespace)
   @js.native
-  def apply(): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String, callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: js.UndefOr[scala.Nothing], callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options, callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, options: js.UndefOr[scala.Nothing], callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, options: Options): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, options: Options, callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], callback: Callback): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Parser = js.native
-  @JSImport("csv-parse", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: Callback): Parser = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("csv-parse", "CsvError")
   @js.native
   class CsvError protected ()
-    extends Error
+    extends StObject
+       with Error
        with /* key */ StringDictionary[js.Any] {
-    def this(code: CsvErrorCode, message: String, options: js.UndefOr[scala.Nothing], contexts: js.Any*) = this()
+    def this(code: CsvErrorCode, message: String, options: Unit, contexts: js.Any*) = this()
     def this(code: CsvErrorCode, message: String, options: Options, contexts: js.Any*) = this()
-    def this(
-      code: CsvErrorCode,
-      message: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
-      contexts: js.Any*
-    ) = this()
+    def this(code: CsvErrorCode, message: js.Array[String], options: Unit, contexts: js.Any*) = this()
     def this(code: CsvErrorCode, message: js.Array[String], options: Options, contexts: js.Any*) = this()
     
     val code: CsvErrorCode = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("csv-parse", "Parser")
@@ -92,26 +82,25 @@ object mod {
   
   type Callback = js.Function3[/* err */ js.UndefOr[Error], /* records */ js.UndefOr[js.Any], /* info */ Info, Unit]
   
-  @js.native
   trait CastingContext extends StObject {
     
-    val column: Double | String = js.native
+    val column: Double | String
     
-    val empty_lines: Double = js.native
+    val empty_lines: Double
     
-    val error: CsvError = js.native
+    val error: CsvError
     
-    val header: Boolean = js.native
+    val header: Boolean
     
-    val index: Double = js.native
+    val index: Double
     
-    val invalid_field_length: Double = js.native
+    val invalid_field_length: Double
     
-    val lines: Double = js.native
+    val lines: Double
     
-    val quoting: Boolean = js.native
+    val quoting: Boolean
     
-    val records: Double = js.native
+    val records: Double
   }
   object CastingContext {
     
@@ -169,7 +158,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Null
     - typings.csvParse.csvParseBooleans.`false`
     - typings.csvParse.anon.Name
@@ -258,33 +247,32 @@ object mod {
     def INVALID_OPENING_QUOTE: typings.csvParse.csvParseStrings.INVALID_OPENING_QUOTE = "INVALID_OPENING_QUOTE".asInstanceOf[typings.csvParse.csvParseStrings.INVALID_OPENING_QUOTE]
   }
   
-  @js.native
   trait Info extends StObject {
     
     /**
       * Count the number of lines being fully commented.
       */
-    val comment_lines: Double = js.native
+    val comment_lines: Double
     
     /**
       * Count the number of processed empty lines.
       */
-    val empty_lines: Double = js.native
+    val empty_lines: Double
     
     /**
       * Number of non uniform records when `relax_column_count` is true.
       */
-    val invalid_field_length: Double = js.native
+    val invalid_field_length: Double
     
     /**
       * The number of lines encountered in the source dataset, start at 1 for the first line.
       */
-    val lines: Double = js.native
+    val lines: Double
     
     /**
       * Count the number of processed records.
       */
-    val records: Double = js.native
+    val records: Double
   }
   object Info {
     
@@ -320,43 +308,42 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoParse: js.UndefOr[Boolean | CastingFunction] = js.native
+    var autoParse: js.UndefOr[Boolean | CastingFunction] = js.undefined
     
-    var autoParseDate: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var autoParseDate: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * If true, the parser will attempt to convert read data types to native types.
       * @deprecated Use {@link cast}
       */
-    var auto_parse: js.UndefOr[Boolean | CastingFunction] = js.native
+    var auto_parse: js.UndefOr[Boolean | CastingFunction] = js.undefined
     
     /**
       * If true, the parser will attempt to convert read data types to dates. It requires the "auto_parse" option.
       * @deprecated Use {@link cast_date}
       */
-    var auto_parse_date: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var auto_parse_date: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * If true, detect and exclude the byte order mark (BOM) from the CSV input if present.
       */
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the parser will attempt to convert input string to native types.
       * If a function, receive the value as first argument, a context as second argument and return a new value. More information about the context properties is available below.
       */
-    var cast: js.UndefOr[Boolean | CastingFunction] = js.native
+    var cast: js.UndefOr[Boolean | CastingFunction] = js.undefined
     
-    var castDate: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var castDate: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * If true, the parser will attempt to convert input string to dates.
       * If a function, receive the value as argument and return a new value. It requires the "auto_parse" option. Be careful, it relies on Date.parse.
       */
-    var cast_date: js.UndefOr[Boolean | CastingDateFunction] = js.native
+    var cast_date: js.UndefOr[Boolean | CastingDateFunction] = js.undefined
     
     /**
       * List of fields as an array,
@@ -366,169 +353,169 @@ object mod {
       */
     var columns: js.UndefOr[
         js.Array[ColumnOption] | Boolean | (js.Function1[/* record */ js.Any, js.Array[ColumnOption]])
-      ] = js.native
+      ] = js.undefined
     
-    var columnsDuplicatesToArray: js.UndefOr[Boolean] = js.native
+    var columnsDuplicatesToArray: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Convert values into an array of values when columns are activated and
       * when multiple columns of the same name are found.
       */
-    var columns_duplicates_to_array: js.UndefOr[Boolean] = js.native
+    var columns_duplicates_to_array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Treat all the characters after this one as a comment, default to '' (disabled).
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Set the field delimiter. One character only, defaults to comma.
       */
-    var delimiter: js.UndefOr[String | js.Array[String] | Buffer] = js.native
+    var delimiter: js.UndefOr[String | js.Array[String] | Buffer] = js.undefined
     
     /**
       * Set the source and destination encoding, a value of `null` returns buffer instead of strings.
       */
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Set the escape character, one character only, defaults to double quotes.
       */
-    var escape: js.UndefOr[String | Buffer] = js.native
+    var escape: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Start handling records from the requested number of records.
       */
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var fromLine: js.UndefOr[Double] = js.native
+    var fromLine: js.UndefOr[Double] = js.undefined
     
     /**
       * Start handling records from the requested line number.
       */
-    var from_line: js.UndefOr[Double] = js.native
+    var from_line: js.UndefOr[Double] = js.undefined
     
     /**
       * Generate two properties `info` and `record` where `info` is a snapshot of the info object at the time the record was created and `record` is the parsed array or object.
       */
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, ignore whitespace immediately following the delimiter (i.e. left-trim all fields), defaults to false.
       * Does not remove whitespace in a quoted field.
       */
-    var ltrim: js.UndefOr[Boolean] = js.native
+    var ltrim: js.UndefOr[Boolean] = js.undefined
     
-    var maxRecordSize: js.UndefOr[Double] = js.native
+    var maxRecordSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum numer of characters to be contained in the field and line buffers before an exception is raised,
       * used to guard against a wrong delimiter or record_delimiter,
       * default to 128000 characters.
       */
-    var max_record_size: js.UndefOr[Double] = js.native
+    var max_record_size: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of header-record title to name objects by.
       */
-    var objname: js.UndefOr[String] = js.native
+    var objname: js.UndefOr[String] = js.undefined
     
-    var onRecord: js.UndefOr[js.Function2[/* record */ js.Any, /* context */ CastingContext, _]] = js.native
+    var onRecord: js.UndefOr[js.Function2[/* record */ js.Any, /* context */ CastingContext, js.Any]] = js.undefined
     
     /**
       * Alter and filter records by executing a user defined function.
       */
-    var on_record: js.UndefOr[js.Function2[/* record */ js.Any, /* context */ CastingContext, _]] = js.native
+    var on_record: js.UndefOr[js.Function2[/* record */ js.Any, /* context */ CastingContext, js.Any]] = js.undefined
     
     /**
       * Optional character surrounding a field, one character only, defaults to double quotes.
       */
-    var quote: js.UndefOr[String | Boolean | Buffer | Null] = js.native
+    var quote: js.UndefOr[String | Boolean | Buffer | Null] = js.undefined
     
     /**
       * Generate two properties raw and row where raw is the original CSV row content and row is the parsed array or object.
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var recordDelimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+    var recordDelimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * One or multiple characters used to delimit record rows; defaults to auto discovery if not provided.
       * Supported auto discovery method are Linux ("\n"), Apple ("\r") and Windows ("\r\n") row delimiters.
       */
-    var record_delimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.native
+    var record_delimiter: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
     
     /**
       * Preserve quotes inside unquoted field.
       */
-    var relax: js.UndefOr[Boolean] = js.native
+    var relax: js.UndefOr[Boolean] = js.undefined
     
-    var relaxColumnCount: js.UndefOr[Boolean] = js.native
+    var relaxColumnCount: js.UndefOr[Boolean] = js.undefined
     
-    var relaxColumnCountLess: js.UndefOr[Boolean] = js.native
+    var relaxColumnCountLess: js.UndefOr[Boolean] = js.undefined
     
-    var relaxColumnCountMore: js.UndefOr[Boolean] = js.native
+    var relaxColumnCountMore: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Discard inconsistent columns count, default to false.
       */
-    var relax_column_count: js.UndefOr[Boolean] = js.native
+    var relax_column_count: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Discard inconsistent columns count when the record contains less fields than expected, default to false.
       */
-    var relax_column_count_less: js.UndefOr[Boolean] = js.native
+    var relax_column_count_less: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Discard inconsistent columns count when the record contains more fields than expected, default to false.
       */
-    var relax_column_count_more: js.UndefOr[Boolean] = js.native
+    var relax_column_count_more: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, ignore whitespace immediately preceding the delimiter (i.e. right-trim all fields), defaults to false.
       * Does not remove whitespace in a quoted field.
       */
-    var rtrim: js.UndefOr[Boolean] = js.native
+    var rtrim: js.UndefOr[Boolean] = js.undefined
     
-    var skipEmptyLines: js.UndefOr[Boolean] = js.native
+    var skipEmptyLines: js.UndefOr[Boolean] = js.undefined
     
-    var skipLinesWithEmptyValues: js.UndefOr[Boolean] = js.native
+    var skipLinesWithEmptyValues: js.UndefOr[Boolean] = js.undefined
     
-    var skipLinesWithError: js.UndefOr[Boolean] = js.native
+    var skipLinesWithError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Dont generate empty values for empty lines.
       * Defaults to false
       */
-    var skip_empty_lines: js.UndefOr[Boolean] = js.native
+    var skip_empty_lines: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Don't generate records for lines containing empty column values (column matching /\s*\/), defaults to false.
       */
-    var skip_lines_with_empty_values: js.UndefOr[Boolean] = js.native
+    var skip_lines_with_empty_values: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Skip a line with error found inside and directly go process the next line.
       */
-    var skip_lines_with_error: js.UndefOr[Boolean] = js.native
+    var skip_lines_with_error: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stop handling records after the requested number of records.
       */
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
     
-    var toLine: js.UndefOr[Double] = js.native
+    var toLine: js.UndefOr[Double] = js.undefined
     
     /**
       * Stop handling records after the requested line number.
       */
-    var to_line: js.UndefOr[Double] = js.native
+    var to_line: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, ignore whitespace immediately around the delimiter, defaults to false.
       * Does not remove whitespace in a quoted field.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -715,13 +702,13 @@ object mod {
       def setObjnameUndefined: Self = StObject.set(x, "objname", js.undefined)
       
       @scala.inline
-      def setOnRecord(value: (/* record */ js.Any, /* context */ CastingContext) => _): Self = StObject.set(x, "onRecord", js.Any.fromFunction2(value))
+      def setOnRecord(value: (/* record */ js.Any, /* context */ CastingContext) => js.Any): Self = StObject.set(x, "onRecord", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnRecordUndefined: Self = StObject.set(x, "onRecord", js.undefined)
       
       @scala.inline
-      def setOn_record(value: (/* record */ js.Any, /* context */ CastingContext) => _): Self = StObject.set(x, "on_record", js.Any.fromFunction2(value))
+      def setOn_record(value: (/* record */ js.Any, /* context */ CastingContext) => js.Any): Self = StObject.set(x, "on_record", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOn_recordUndefined: Self = StObject.set(x, "on_record", js.undefined)

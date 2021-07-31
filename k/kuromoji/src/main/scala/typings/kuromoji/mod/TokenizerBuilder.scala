@@ -3,13 +3,11 @@ package typings.kuromoji.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenizerBuilder[T] extends StObject {
   
-  def build(callback: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit]): Unit = js.native
+  def build(callback: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit]): Unit
 }
 object TokenizerBuilder {
   
@@ -20,7 +18,7 @@ object TokenizerBuilder {
   }
   
   @scala.inline
-  implicit class TokenizerBuilderMutableBuilder[Self <: TokenizerBuilder[_], T] (val x: Self with TokenizerBuilder[T]) extends AnyVal {
+  implicit class TokenizerBuilderMutableBuilder[Self <: TokenizerBuilder[?], T] (val x: Self & TokenizerBuilder[T]) extends AnyVal {
     
     @scala.inline
     def setBuild(value: js.Function2[/* err */ Error, /* tokenizer */ Tokenizer[T], Unit] => Unit): Self = StObject.set(x, "build", js.Any.fromFunction1(value))

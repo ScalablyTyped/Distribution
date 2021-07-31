@@ -3,31 +3,29 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityDescription extends StObject {
   
   /**
     * <p>Date on which the identity was created.</p>
     */
-  var CreationDate: js.UndefOr[Date] = js.native
+  var CreationDate: js.UndefOr[Date] = js.undefined
   
   /**
     * <p>A unique identifier in the format REGION:GUID.</p>
     */
-  var IdentityId: js.UndefOr[String] = js.native
+  var IdentityId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>Date on which the identity was last modified.</p>
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * <p>The provider names.</p>
     */
-  var Logins: js.UndefOr[js.Array[String]] = js.native
+  var Logins: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IdentityDescription {
   
@@ -37,9 +35,12 @@ object IdentityDescription {
     __obj.asInstanceOf[IdentityDescription]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityDescription.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "IdentityDescription")
   @js.native
-  def filterSensitiveLog(obj: IdentityDescription): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: IdentityDescription): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class IdentityDescriptionMutableBuilder[Self <: IdentityDescription] (val x: Self) extends AnyVal {

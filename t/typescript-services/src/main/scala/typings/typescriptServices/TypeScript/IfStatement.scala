@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IfStatement extends AST {
+trait IfStatement
+  extends StObject
+     with AST {
   
-  var condition: AST = js.native
+  var condition: AST
   
-  var elseClause: ElseClause = js.native
+  var elseClause: ElseClause
   
-  var statement: AST = js.native
+  var statement: AST
   
-  def structuralEquals(ast: IfStatement, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: IfStatement, includingPosition: Boolean): Boolean
 }
 object IfStatement {
   

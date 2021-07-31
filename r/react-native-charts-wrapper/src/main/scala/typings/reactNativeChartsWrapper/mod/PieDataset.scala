@@ -2,18 +2,18 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PieDataset extends Dataset {
+trait PieDataset
+  extends StObject
+     with Dataset {
   
-  var config: js.UndefOr[PieDatasetConfig] = js.native
+  var config: js.UndefOr[PieDatasetConfig] = js.undefined
   
   @JSName("label")
-  var label_PieDataset: String = js.native
+  var label_PieDataset: String
   
-  var values: js.UndefOr[js.Array[PieValue | Double]] = js.native
+  var values: js.UndefOr[js.Array[PieValue | Double]] = js.undefined
 }
 object PieDataset {
   

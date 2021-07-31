@@ -3,20 +3,18 @@ package typings.googleapis.cloudassetV1Mod.cloudassetV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Representation of a cloud resource.
   */
-@js.native
 trait SchemaResource extends StObject {
   
   /**
     * The content of the resource, in which some sensitive fields are scrubbed
     * away and may not be present.
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The URL of the discovery document containing the resource&#39;s JSON
@@ -25,14 +23,14 @@ trait SchemaResource extends StObject {
     * It will be left unspecified for resources without a discovery-based API,
     * such as Cloud Bigtable.
     */
-  var discoveryDocumentUri: js.UndefOr[String] = js.native
+  var discoveryDocumentUri: js.UndefOr[String] = js.undefined
   
   /**
     * The JSON schema name listed in the discovery document. Example:
     * &quot;Project&quot;. It will be left unspecified for resources (such as
     * Cloud Bigtable) without a discovery-based API.
     */
-  var discoveryName: js.UndefOr[String] = js.native
+  var discoveryName: js.UndefOr[String] = js.undefined
   
   /**
     * The full name of the immediate parent of this resource. See [Resource
@@ -44,7 +42,7 @@ trait SchemaResource extends StObject {
     * `&quot;//cloudresourcemanager.googleapis.com/projects/my_project_123&quot;`.
     * For third-party assets, it is up to the users to define.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The REST URL for accessing the resource. An HTTP GET operation using this
@@ -52,12 +50,12 @@ trait SchemaResource extends StObject {
     * `https://cloudresourcemanager.googleapis.com/v1/projects/my-project-123`.
     * It will be left unspecified for resources without a REST API.
     */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The API version. Example: &quot;v1&quot;.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaResource {
   

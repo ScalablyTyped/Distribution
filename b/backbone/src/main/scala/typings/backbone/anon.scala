@@ -25,7 +25,6 @@ import typings.std.HTMLSelectElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -41,11 +40,10 @@ object anon {
     def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait TypeofHistory extends StObject {
     
     /* static member */
-    var started: Boolean = js.native
+    var started: Boolean
   }
   object TypeofHistory {
     
@@ -199,7 +197,7 @@ object anon {
     @JSName("$")
     def $[TElement /* <: HTMLElement */](html: htmlString): JQuery[TElement] = js.native
     @JSName("$")
-    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[_]): JQuery[TElement] = js.native
+    def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: PlainObject[js.Any]): JQuery[TElement] = js.native
     @JSName("$")
     def $[TElement /* <: HTMLElement */](html: htmlString, ownerDocument_attributes: Document): JQuery[TElement] = js.native
     /**
@@ -267,7 +265,7 @@ object anon {
       * @since 1.0
       */
     @JSName("$")
-    def $_T_PlainObjectWildcard[T /* <: PlainObject[_] */](`object`: T): JQuery[T] = js.native
+    def $_T_PlainObjectAny[T /* <: PlainObject[js.Any] */](`object`: T): JQuery[T] = js.native
     
     var Collection: (Instantiable2[
         /* models */ js.UndefOr[
@@ -277,7 +275,7 @@ object anon {
         ], 
         /* options */ js.UndefOr[js.Any], 
         typings.backbone.mod.Collection[Model[js.Any, ModelSetOptions, js.Object]]
-      ]) with TypeofCollection = js.native
+      ]) & TypeofCollection = js.native
     
     val Events: typings.backbone.mod.Events = js.native
     
@@ -293,7 +291,7 @@ object anon {
       */
     var EventsMixin: Instantiable0[typings.backbone.mod.EventsMixin] = js.native
     
-    var History: Instantiable0[History_] with TypeofHistory = js.native
+    var History: Instantiable0[History_] & TypeofHistory = js.native
     
     /**
       * E - Extensions to the model constructor options. You can accept additional constructor options
@@ -308,18 +306,18 @@ object anon {
           ]
         ], 
         typings.backbone.mod.Model[js.Object, js.Object, js.Object]
-      ]) with TypeofModel = js.native
+      ]) & TypeofModel = js.native
     
     var ModelBase: Instantiable0[typings.backbone.mod.ModelBase] = js.native
     
-    var Router: (Instantiable1[/* options */ js.UndefOr[RouterOptions], typings.backbone.mod.Router]) with TypeofRouter = js.native
+    var Router: (Instantiable1[/* options */ js.UndefOr[RouterOptions], typings.backbone.mod.Router]) & TypeofRouter = js.native
     
     var View: (Instantiable1[
         /* options */ js.UndefOr[
           ViewOptions[/* import warning: RewrittenClass.unapply cls was tparam TModel */ js.Any]
         ], 
         typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]
-      ]) with TypeofView = js.native
+      ]) & TypeofView = js.native
     
     def ajax(): JQueryXHR = js.native
     def ajax(options: JQueryAjaxSettings): JQueryXHR = js.native
@@ -333,14 +331,14 @@ object anon {
     // Utility
     def noConflict(): /* import warning: importer.ImportType#apply Failed type conversion: typeof Backbone */ js.Any = js.native
     
-    def sync(method: String, model: Collection[Model[_, ModelSetOptions, js.Object]]): js.Any = js.native
+    def sync(method: String, model: Collection[Model[js.Any, ModelSetOptions, js.Object]]): js.Any = js.native
     def sync(
       method: String,
-      model: Collection[Model[_, ModelSetOptions, js.Object]],
+      model: Collection[Model[js.Any, ModelSetOptions, js.Object]],
       options: JQueryAjaxSettings
     ): js.Any = js.native
     // SYNC
-    def sync(method: String, model: Model[_, ModelSetOptions, js.Object]): js.Any = js.native
-    def sync(method: String, model: Model[_, ModelSetOptions, js.Object], options: JQueryAjaxSettings): js.Any = js.native
+    def sync(method: String, model: Model[js.Any, ModelSetOptions, js.Object]): js.Any = js.native
+    def sync(method: String, model: Model[js.Any, ModelSetOptions, js.Object], options: JQueryAjaxSettings): js.Any = js.native
   }
 }

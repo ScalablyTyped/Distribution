@@ -10,9 +10,9 @@ Resize observer for React
 | ------------------ | :-------------: |
 | Full name          | rc-resize-observer |
 | Keywords           | react, react-component, react-resize-observer, resize-observer |
-| # releases         | 12 |
-| # dependents       | 100 |
-| # downloads        | 12318325 |
+| # releases         | 15 |
+| # dependents       | 109 |
+| # downloads        | 16600253 |
 | # stars            | 0 |
 
 ## Links

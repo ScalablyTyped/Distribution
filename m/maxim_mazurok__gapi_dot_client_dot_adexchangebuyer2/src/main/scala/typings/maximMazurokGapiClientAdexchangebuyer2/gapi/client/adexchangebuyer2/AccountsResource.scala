@@ -2,25 +2,23 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountsResource extends StObject {
   
-  var clients: ClientsResource = js.native
+  var clients: ClientsResource
   
-  var creatives: CreativesResource = js.native
+  var creatives: CreativesResource
   
-  var filterSets: FilterSetsResource = js.native
+  var filterSets: FilterSetsResource
   
-  var finalizedProposals: FinalizedProposalsResource = js.native
+  var finalizedProposals: FinalizedProposalsResource
   
-  var products: ProductsResource = js.native
+  var products: ProductsResource
   
-  var proposals: ProposalsResource = js.native
+  var proposals: ProposalsResource
   
-  var publisherProfiles: PublisherProfilesResource = js.native
+  var publisherProfiles: PublisherProfilesResource
 }
 object AccountsResource {
   

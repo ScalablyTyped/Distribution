@@ -5,24 +5,22 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a control event send by extended user interface controls.
   * @since OOo 2.0.3
   */
-@js.native
 trait ControlEvent extends StObject {
   
   /** specifies the event which has occurred. */
-  var Event: String = js.native
+  var Event: String
   
   /** specifies a sequence of named values which are used as additional values for the event. The number and types of named values depend on the event. */
-  var aInformation: SafeArray[NamedValue] = js.native
+  var aInformation: SafeArray[NamedValue]
   
   /** fully parsed URL describing the control that sends this notification. */
-  var aURL: URL = js.native
+  var aURL: URL
 }
 object ControlEvent {
   

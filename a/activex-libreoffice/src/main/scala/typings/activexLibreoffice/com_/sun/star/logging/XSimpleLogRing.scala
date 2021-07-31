@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.logging
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * performance. For this reasons the messages related API is quite simple, the strings should be produced by the preprocessor mainly.
   * @since OOo 3.2
   */
-@js.native
 trait XSimpleLogRing extends StObject {
   
   /**
@@ -21,17 +19,17 @@ trait XSimpleLogRing extends StObject {
     *
     * It is up to logger implementation to provide only the limited number of last messages.
     */
-  val CollectedLog: SafeArray[String] = js.native
+  val CollectedLog: SafeArray[String]
   
   /**
     * allows to get the collected messages from the logger
     *
     * It is up to logger implementation to provide only the limited number of last messages.
     */
-  def getCollectedLog(): SafeArray[String] = js.native
+  def getCollectedLog(): SafeArray[String]
   
   /** allows to add a message to the logger */
-  def logString(aMessage: String): Unit = js.native
+  def logString(aMessage: String): Unit
 }
 object XSimpleLogRing {
   

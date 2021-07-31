@@ -2,26 +2,24 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatabaseRequest extends StObject {
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: ResourceName = js.native
+  var DatabaseName: ResourceName
   
   /**
     * The KMS key for the database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. Refer to AWS managed KMS keys for more info.
     */
-  var KmsKeyId: js.UndefOr[StringValue2048] = js.native
+  var KmsKeyId: js.UndefOr[StringValue2048] = js.undefined
   
   /**
     *  A list of key-value pairs to label the table. 
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDatabaseRequest {
   

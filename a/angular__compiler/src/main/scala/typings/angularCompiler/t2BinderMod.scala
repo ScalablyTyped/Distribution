@@ -19,14 +19,15 @@ import typings.std.ReadonlySet
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object t2BinderMod {
   
   @JSImport("@angular/compiler/src/render3/view/t2_binder", "R3BoundTarget")
   @js.native
-  class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected () extends BoundTarget[DirectiveT] {
+  class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
+    extends StObject
+       with BoundTarget[DirectiveT] {
     def this(
       target: Target,
       directives: Map[Element | Template, js.Array[DirectiveT]],
@@ -61,8 +62,13 @@ object t2BinderMod {
   
   @JSImport("@angular/compiler/src/render3/view/t2_binder", "R3TargetBinder")
   @js.native
-  class R3TargetBinder[DirectiveT /* <: DirectiveMeta */] protected () extends TargetBinder[DirectiveT] {
+  class R3TargetBinder[DirectiveT /* <: DirectiveMeta */] protected ()
+    extends StObject
+       with TargetBinder[DirectiveT] {
     def this(directiveMatcher: SelectorMatcher[DirectiveT]) = this()
+    
+    /* CompleteClass */
+    override def bind(target: Target): BoundTarget[DirectiveT] = js.native
     
     var directiveMatcher: js.Any = js.native
   }

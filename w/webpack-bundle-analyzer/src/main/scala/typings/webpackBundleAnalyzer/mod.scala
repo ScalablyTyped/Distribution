@@ -17,7 +17,6 @@ import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.static
 import typings.webpackBundleAnalyzer.webpackBundleAnalyzerStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,14 +38,13 @@ object mod {
     
     type ExcludeAssetsPatternFn = js.Function1[/* assetName */ String, Boolean]
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Host that will be used in `server` mode to start HTTP server.
         * @default '127.0.0.1'
         */
-      var analyzerHost: js.UndefOr[String] = js.native
+      var analyzerHost: js.UndefOr[String] = js.undefined
       
       /**
         * Can be "server", "static" or "disabled".
@@ -56,20 +54,20 @@ object mod {
         * In "json" mode single JSON file with bundle report will be generated
         * In "disabled" mode you can use this plugin to just generate Webpack Stats JSON file by setting "generateStatsFile" to true.
         */
-      var analyzerMode: js.UndefOr[server | static | json | disabled] = js.native
+      var analyzerMode: js.UndefOr[server | static | json | disabled] = js.undefined
       
       /**
         * Port that will be used in `server` mode to start HTTP server.
         * @default 8888
         */
-      var analyzerPort: js.UndefOr[Double | auto] = js.native
+      var analyzerPort: js.UndefOr[Double | auto] = js.undefined
       
       /**
         * Module sizes to show in report by default.
         * Should be one of "stat", "parsed" or "gzip".
         * @default 'parsed'
         */
-      var defaultSizes: js.UndefOr[parsed | stat | gzip] = js.native
+      var defaultSizes: js.UndefOr[parsed | stat | gzip] = js.undefined
       
       /**
         * Patterns that will be used to match against asset names to exclude them from the report.
@@ -79,52 +77,52 @@ object mod {
         * If multiple patterns are provided asset should match at least one of them to be excluded.
         * @default null
         */
-      var excludeAssets: js.UndefOr[Null | ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern]] = js.native
+      var excludeAssets: js.UndefOr[Null | ExcludeAssetsPattern | js.Array[ExcludeAssetsPattern]] = js.undefined
       
       /**
         * If true, Webpack Stats JSON file will be generated in bundles output directory.
         * @default false
         */
-      var generateStatsFile: js.UndefOr[Boolean] = js.native
+      var generateStatsFile: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Log level. Can be "info", "warn", "error" or "silent".
         * @default 'info'
         */
-      var logLevel: js.UndefOr[info | warn | error | silent] = js.native
+      var logLevel: js.UndefOr[info | warn | error | silent] = js.undefined
       
       /**
         * Automatically open report in default browser.
         * @default true
         */
-      var openAnalyzer: js.UndefOr[Boolean] = js.native
+      var openAnalyzer: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Path to bundle report file that will be generated in "static" mode.
         * Relative to bundles output directory.
         * @default 'report.html'
         */
-      var reportFilename: js.UndefOr[String] = js.native
+      var reportFilename: js.UndefOr[String] = js.undefined
       
       /**
         * Content of the HTML title element; or a function of the form () => string that provides the content.
         * @default function that returns pretty printed current date and time.
         */
-      var reportTitle: js.UndefOr[String | js.Function0[String]] = js.native
+      var reportTitle: js.UndefOr[String | js.Function0[String]] = js.undefined
       
       /**
         * Name of Webpack Stats JSON file that will be generated if generateStatsFile is true.
         * Relative to bundles output directory.
         * @default 'stats.json'
         */
-      var statsFilename: js.UndefOr[String] = js.native
+      var statsFilename: js.UndefOr[String] = js.undefined
       
       /**
         * Options for stats.toJson() method.
         * For example you can exclude sources of your modules from stats file with "source: false" option.
         * @default null
         */
-      var statsOptions: js.UndefOr[Null | ToJsonOptionsObject] = js.native
+      var statsOptions: js.UndefOr[Null | ToJsonOptionsObject] = js.undefined
     }
     object Options {
       
@@ -249,118 +247,119 @@ object mod {
       */
       type ToJsonOptions = _ToJsonOptions | Boolean
       
-      @js.native
-      trait ToJsonOptionsObject extends _ToJsonOptions {
+      trait ToJsonOptionsObject
+        extends StObject
+           with _ToJsonOptions {
         
         /** fallback value for stats options when an option is not defined (has precedence over local webpack defaults) */
-        var all: js.UndefOr[Boolean] = js.native
+        var all: js.UndefOr[Boolean] = js.undefined
         
         /** Add asset Information */
-        var assets: js.UndefOr[Boolean] = js.native
+        var assets: js.UndefOr[Boolean] = js.undefined
         
         /** Sort assets by a field */
-        var assetsSort: js.UndefOr[String] = js.native
+        var assetsSort: js.UndefOr[String] = js.undefined
         
         /** Add built at time information */
-        var builtAt: js.UndefOr[Boolean] = js.native
+        var builtAt: js.UndefOr[Boolean] = js.undefined
         
         /** Add information about cached (not built) modules */
-        var cached: js.UndefOr[Boolean] = js.native
+        var cached: js.UndefOr[Boolean] = js.undefined
         
         /** Show cached assets (setting this to `false` only shows emitted files) */
-        var cachedAssets: js.UndefOr[Boolean] = js.native
+        var cachedAssets: js.UndefOr[Boolean] = js.undefined
         
         /** Add children information */
-        var children: js.UndefOr[Boolean] = js.native
+        var children: js.UndefOr[Boolean] = js.undefined
         
         /** Add information about the `namedChunkGroups` */
-        var chunkGroups: js.UndefOr[Boolean] = js.native
+        var chunkGroups: js.UndefOr[Boolean] = js.undefined
         
         /** Add built modules information to chunk information */
-        var chunkModules: js.UndefOr[Boolean] = js.native
+        var chunkModules: js.UndefOr[Boolean] = js.undefined
         
         /** Add the origins of chunks and chunk merging info */
-        var chunkOrigins: js.UndefOr[Boolean] = js.native
+        var chunkOrigins: js.UndefOr[Boolean] = js.undefined
         
         /** Add chunk information (setting this to `false` allows for a less verbose output) */
-        var chunks: js.UndefOr[Boolean] = js.native
+        var chunks: js.UndefOr[Boolean] = js.undefined
         
         /** Sort the chunks by a field */
-        var chunksSort: js.UndefOr[String] = js.native
+        var chunksSort: js.UndefOr[String] = js.undefined
         
         /** Context directory for request shortening */
-        var context: js.UndefOr[String] = js.native
+        var context: js.UndefOr[String] = js.undefined
         
         /** Display the distance from the entry point for each module */
-        var depth: js.UndefOr[Boolean] = js.native
+        var depth: js.UndefOr[Boolean] = js.undefined
         
         /** Display the entry points with the corresponding bundles */
-        var entrypoints: js.UndefOr[Boolean] = js.native
+        var entrypoints: js.UndefOr[Boolean] = js.undefined
         
         /** Add --env information */
-        var env: js.UndefOr[Boolean] = js.native
+        var env: js.UndefOr[Boolean] = js.undefined
         
         /** Add details to errors (like resolving log) */
-        var errorDetails: js.UndefOr[Boolean] = js.native
+        var errorDetails: js.UndefOr[Boolean] = js.undefined
         
         /** Add errors */
-        var errors: js.UndefOr[Boolean] = js.native
+        var errors: js.UndefOr[Boolean] = js.undefined
         
         /** See excludeModules */
-        var exclude: js.UndefOr[StatsExcludeFilter] = js.native
+        var exclude: js.UndefOr[StatsExcludeFilter] = js.undefined
         
         /** Exclude assets from being displayed in stats */
-        var excludeAssets: js.UndefOr[StatsExcludeFilter] = js.native
+        var excludeAssets: js.UndefOr[StatsExcludeFilter] = js.undefined
         
         /** Exclude modules from being displayed in stats */
-        var excludeModules: js.UndefOr[StatsExcludeFilter] = js.native
+        var excludeModules: js.UndefOr[StatsExcludeFilter] = js.undefined
         
         /** Add the hash of the compilation */
-        var hash: js.UndefOr[Boolean] = js.native
+        var hash: js.UndefOr[Boolean] = js.undefined
         
         /** Set the maximum number of modules to be shown */
-        var maxModules: js.UndefOr[Double] = js.native
+        var maxModules: js.UndefOr[Double] = js.undefined
         
         /** Show dependencies and origin of warnings/errors */
-        var moduleTrace: js.UndefOr[Boolean] = js.native
+        var moduleTrace: js.UndefOr[Boolean] = js.undefined
         
         /** Add built modules information */
-        var modules: js.UndefOr[Boolean] = js.native
+        var modules: js.UndefOr[Boolean] = js.undefined
         
         /** Sort the modules by a field */
-        var modulesSort: js.UndefOr[String] = js.native
+        var modulesSort: js.UndefOr[String] = js.undefined
         
         /** Show performance hint when file size exceeds `performance.maxAssetSize` */
-        var performance: js.UndefOr[Boolean] = js.native
+        var performance: js.UndefOr[Boolean] = js.undefined
         
         /** Show the exports of the modules */
-        var providedExports: js.UndefOr[Boolean] = js.native
+        var providedExports: js.UndefOr[Boolean] = js.undefined
         
         /** Add public path information */
-        var publicPath: js.UndefOr[Boolean] = js.native
+        var publicPath: js.UndefOr[Boolean] = js.undefined
         
         /** Add information about the reasons why modules are included */
-        var reasons: js.UndefOr[Boolean] = js.native
+        var reasons: js.UndefOr[Boolean] = js.undefined
         
         /** Add the source code of modules */
-        var source: js.UndefOr[Boolean] = js.native
+        var source: js.UndefOr[Boolean] = js.undefined
         
         /** Add timing information */
-        var timings: js.UndefOr[Boolean] = js.native
+        var timings: js.UndefOr[Boolean] = js.undefined
         
         /** Show which exports of a module are used */
-        var usedExports: js.UndefOr[Boolean] = js.native
+        var usedExports: js.UndefOr[Boolean] = js.undefined
         
         /** Add webpack version information */
-        var version: js.UndefOr[Boolean] = js.native
+        var version: js.UndefOr[Boolean] = js.undefined
         
         /** Add warnings */
-        var warnings: js.UndefOr[Boolean] = js.native
+        var warnings: js.UndefOr[Boolean] = js.undefined
         
         /** Filter warnings to be shown */
         var warningsFilter: js.UndefOr[
                 String | RegExp | (js.Array[String | RegExp]) | (js.Function1[/* warning */ String, Boolean])
-              ] = js.native
+              ] = js.undefined
       }
       object ToJsonOptionsObject {
         
@@ -617,7 +616,9 @@ object mod {
         }
       }
       
-      trait _Preset extends _ToJsonOptions
+      trait _Preset
+        extends StObject
+           with _ToJsonOptions
       
       trait _ToJsonOptions extends StObject
     }

@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.insightsServicePostResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServicePostResponseImpressions extends StObject {
   
-  var surfaces: InsightsServicePostResponseSurfaces = js.native
+  var surfaces: InsightsServicePostResponseSurfaces
   
-  var value: Double = js.native
+  var value: Double
 }
 object InsightsServicePostResponseImpressions {
   

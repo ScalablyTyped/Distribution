@@ -2,51 +2,49 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: String = js.native
+  var AccountId: String
   
   /**
     * The Amazon Chime account type. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide.
     */
-  var AccountType: js.UndefOr[typings.awsSdk.chimeMod.AccountType] = js.native
+  var AccountType: js.UndefOr[typings.awsSdk.chimeMod.AccountType] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: String = js.native
+  var AwsAccountId: String
   
   /**
     * The Amazon Chime account creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The default license for the Amazon Chime account.
     */
-  var DefaultLicense: js.UndefOr[License] = js.native
+  var DefaultLicense: js.UndefOr[License] = js.undefined
   
   /**
     * The Amazon Chime account name.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The sign-in delegate groups associated with the account.
     */
-  var SigninDelegateGroups: js.UndefOr[SigninDelegateGroupList] = js.native
+  var SigninDelegateGroups: js.UndefOr[SigninDelegateGroupList] = js.undefined
   
   /**
     * Supported licenses for the Amazon Chime account.
     */
-  var SupportedLicenses: js.UndefOr[LicenseList] = js.native
+  var SupportedLicenses: js.UndefOr[LicenseList] = js.undefined
 }
 object Account {
   

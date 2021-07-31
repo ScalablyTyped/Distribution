@@ -4,7 +4,6 @@ import typings.rcTabs.interfaceMod.TabBarExtraPosition
 import typings.rcTabs.interfaceMod.TabPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcTabsStrings {
@@ -50,7 +49,9 @@ object rcTabsStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends TabPosition
+  sealed trait bottom
+    extends StObject
+       with TabPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -116,7 +117,8 @@ object rcTabsStrings {
   
   @js.native
   sealed trait left
-    extends TabBarExtraPosition
+    extends StObject
+       with TabBarExtraPosition
        with TabPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
@@ -228,7 +230,8 @@ object rcTabsStrings {
   
   @js.native
   sealed trait right
-    extends TabBarExtraPosition
+    extends StObject
+       with TabBarExtraPosition
        with TabPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
@@ -279,7 +282,9 @@ object rcTabsStrings {
   def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait top extends TabPosition
+  sealed trait top
+    extends StObject
+       with TabPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

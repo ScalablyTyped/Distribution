@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndexType extends Type {
+trait IndexType
+  extends StObject
+     with Type {
   
-  var `type`: InstantiableType | UnionOrIntersectionType = js.native
+  var `type`: InstantiableType | UnionOrIntersectionType
 }
 object IndexType {
   

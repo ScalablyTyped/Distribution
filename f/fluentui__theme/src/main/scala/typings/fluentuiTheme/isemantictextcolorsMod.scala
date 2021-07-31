@@ -2,168 +2,166 @@ package typings.fluentuiTheme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isemantictextcolorsMod {
   
-  @js.native
   trait ISemanticTextColors extends StObject {
     
     /**
       * Color of text for accent button (kicker)
       */
-    var accentButtonText: String = js.native
+    var accentButtonText: String
     
     /**
       * Neutral colored links and links for action buttons.
       */
-    var actionLink: String = js.native
+    var actionLink: String
     
     /**
       * Hover state for neutral colored links and links for action buttons.
       */
-    var actionLinkHovered: String = js.native
+    var actionLinkHovered: String
     
     /**
       * De-emphasized text; e.g. metadata, captions, placeholder text.
       */
-    var bodySubtext: String = js.native
+    var bodySubtext: String
     
     /**
       * The default color for text.
       */
-    var bodyText: String = js.native
+    var bodyText: String
     
     /**
       * Checked text color, e.g. selected menu item text.
       */
-    var bodyTextChecked: String = js.native
+    var bodyTextChecked: String
     
     /**
       * Color of text in a standard button
       */
-    var buttonText: String = js.native
+    var buttonText: String
     
     /**
       * Color of text in a checked standard button
       */
-    var buttonTextChecked: String = js.native
+    var buttonTextChecked: String
     
     /**
       * Color of text in a checked and hovered standard button
       */
-    var buttonTextCheckedHovered: String = js.native
+    var buttonTextCheckedHovered: String
     
     /**
       * Color of text in a disabled standard button
       */
-    var buttonTextDisabled: String = js.native
+    var buttonTextDisabled: String
     
     /**
       * Color of text in a hovered standard button
       */
-    var buttonTextHovered: String = js.native
+    var buttonTextHovered: String
     
     /**
       * Color of text in a pressed standard button; i.e. currently being clicked by mouse
       */
-    var buttonTextPressed: String = js.native
+    var buttonTextPressed: String
     
     /**
       * Disabled de-emphasized text, for use on the default background (bodyBackground).
       */
-    var disabledBodySubtext: String = js.native
+    var disabledBodySubtext: String
     
     /**
       * The default color for disabled text on the default background (bodyBackground).
       */
-    var disabledBodyText: String = js.native
+    var disabledBodyText: String
     
     /**
       * Disabled de-emphasized text, for use on disabledBackground.
       */
-    var disabledSubtext: String = js.native
+    var disabledSubtext: String
     
     /**
       * The default color for disabled text on top of disabledBackground; e.g. text in a disabled text field or
       * disabled button text.
       */
-    var disabledText: String = js.native
+    var disabledText: String
     
     /**
       * The default color of error text on bodyBackground.
       */
-    var errorText: String = js.native
+    var errorText: String
     
     /**
       * The color of placeholder text.
       */
-    var inputPlaceholderText: String = js.native
+    var inputPlaceholderText: String
     
     /**
       * The color of input text.
       */
-    var inputText: String = js.native
+    var inputText: String
     
     /**
       * The color of input text on hover.
       */
-    var inputTextHovered: String = js.native
+    var inputTextHovered: String
     
     /**
       * The color of a link.
       */
-    var link: String = js.native
+    var link: String
     
     /**
       * The color of a hovered link. Also used when the link is active.
       */
-    var linkHovered: String = js.native
+    var linkHovered: String
     
     /**
       * The default text color for list item titles and text in column fields.
       */
-    var listText: String = js.native
+    var listText: String
     
     /** @deprecated
       * This slot was incorrectly named. Use listText instead. */
-    var listTextColor: String = js.native
+    var listTextColor: String
     
     /**
       * The default color of text in a message bar.
       */
-    var messageText: String = js.native
+    var messageText: String
     
     /**
       * Color of text in a primary button
       */
-    var primaryButtonText: String = js.native
+    var primaryButtonText: String
     
     /**
       * Color of text in a disabled primary button
       */
-    var primaryButtonTextDisabled: String = js.native
+    var primaryButtonTextDisabled: String
     
     /**
       * Color of text in a hovered primary button
       */
-    var primaryButtonTextHovered: String = js.native
+    var primaryButtonTextHovered: String
     
     /**
       * Color of text in a pressed primary button; i.e. currently being clicked by mouse
       */
-    var primaryButtonTextPressed: String = js.native
+    var primaryButtonTextPressed: String
     
     /** @deprecated
       * No longer used. Consider using messageText and/or successIcon instead.
       */
-    var successText: String = js.native
+    var successText: String
     
     /** @deprecated
       * No longer used. Consider using messageText and/or warningIcon instead.
       */
-    var warningText: String = js.native
+    var warningText: String
   }
   object ISemanticTextColors {
     

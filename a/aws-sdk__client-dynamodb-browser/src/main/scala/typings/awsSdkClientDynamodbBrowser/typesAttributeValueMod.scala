@@ -7,65 +7,63 @@ import typings.std.Iterable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAttributeValueMod {
   
-  @js.native
   trait AttributeValue extends StObject {
     
     /**
       * <p>An attribute of type Binary. For example:</p> <p> <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code> </p>
       */
-    var B: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.native
+    var B: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
     
     /**
       * <p>An attribute of type Boolean. For example:</p> <p> <code>"BOOL": true</code> </p>
       */
-    var BOOL: js.UndefOr[Boolean] = js.native
+    var BOOL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>An attribute of type Binary Set. For example:</p> <p> <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code> </p>
       */
     var BS: js.UndefOr[
         (js.Array[ArrayBuffer | ArrayBufferView | String]) | (Iterable[ArrayBuffer | ArrayBufferView | String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>An attribute of type List. For example:</p> <p> <code>"L": ["Cookies", "Coffee", 3.14159]</code> </p>
       */
-    var L: js.UndefOr[js.Array[AttributeValue] | Iterable[AttributeValue]] = js.native
+    var L: js.UndefOr[js.Array[AttributeValue] | Iterable[AttributeValue]] = js.undefined
     
     /**
       * <p>An attribute of type Map. For example:</p> <p> <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code> </p>
       */
-    var M: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.native
+    var M: js.UndefOr[StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])] = js.undefined
     
     /**
       * <p>An attribute of type Number. For example:</p> <p> <code>"N": "123.45"</code> </p> <p>Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.</p>
       */
-    var N: js.UndefOr[String] = js.native
+    var N: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An attribute of type Number Set. For example:</p> <p> <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code> </p> <p>Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.</p>
       */
-    var NS: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var NS: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>An attribute of type Null. For example:</p> <p> <code>"NULL": true</code> </p>
       */
-    var NULL: js.UndefOr[Boolean] = js.native
+    var NULL: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>An attribute of type String. For example:</p> <p> <code>"S": "Hello"</code> </p>
       */
-    var S: js.UndefOr[String] = js.native
+    var S: js.UndefOr[String] = js.undefined
     
     /**
       * <p>An attribute of type String Set. For example:</p> <p> <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code> </p>
       */
-    var SS: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var SS: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object AttributeValue {
     
@@ -154,44 +152,45 @@ object typesAttributeValueMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAttributeValue extends AttributeValue {
+  trait UnmarshalledAttributeValue
+    extends StObject
+       with AttributeValue {
     
     /**
       * <p>An attribute of type Binary Set. For example:</p> <p> <code>"BS": ["U3Vubnk=", "UmFpbnk=", "U25vd3k="]</code> </p>
       */
     @JSName("BS")
-    var BS_UnmarshalledAttributeValue: js.UndefOr[js.Array[Uint8Array]] = js.native
+    var BS_UnmarshalledAttributeValue: js.UndefOr[js.Array[Uint8Array]] = js.undefined
     
     /**
       * <p>An attribute of type Binary. For example:</p> <p> <code>"B": "dGhpcyB0ZXh0IGlzIGJhc2U2NC1lbmNvZGVk"</code> </p>
       */
     @JSName("B")
-    var B_UnmarshalledAttributeValue: js.UndefOr[Uint8Array] = js.native
+    var B_UnmarshalledAttributeValue: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * <p>An attribute of type List. For example:</p> <p> <code>"L": ["Cookies", "Coffee", 3.14159]</code> </p>
       */
     @JSName("L")
-    var L_UnmarshalledAttributeValue: js.UndefOr[js.Array[UnmarshalledAttributeValue]] = js.native
+    var L_UnmarshalledAttributeValue: js.UndefOr[js.Array[UnmarshalledAttributeValue]] = js.undefined
     
     /**
       * <p>An attribute of type Map. For example:</p> <p> <code>"M": {"Name": {"S": "Joe"}, "Age": {"N": "35"}}</code> </p>
       */
     @JSName("M")
-    var M_UnmarshalledAttributeValue: js.UndefOr[StringDictionary[UnmarshalledAttributeValue]] = js.native
+    var M_UnmarshalledAttributeValue: js.UndefOr[StringDictionary[UnmarshalledAttributeValue]] = js.undefined
     
     /**
       * <p>An attribute of type Number Set. For example:</p> <p> <code>"NS": ["42.2", "-19", "7.5", "3.14"]</code> </p> <p>Numbers are sent across the network to DynamoDB as strings, to maximize compatibility across languages and libraries. However, DynamoDB treats them as number type attributes for mathematical operations.</p>
       */
     @JSName("NS")
-    var NS_UnmarshalledAttributeValue: js.UndefOr[js.Array[String]] = js.native
+    var NS_UnmarshalledAttributeValue: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * <p>An attribute of type String Set. For example:</p> <p> <code>"SS": ["Giraffe", "Hippo" ,"Zebra"]</code> </p>
       */
     @JSName("SS")
-    var SS_UnmarshalledAttributeValue: js.UndefOr[js.Array[String]] = js.native
+    var SS_UnmarshalledAttributeValue: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledAttributeValue {
     

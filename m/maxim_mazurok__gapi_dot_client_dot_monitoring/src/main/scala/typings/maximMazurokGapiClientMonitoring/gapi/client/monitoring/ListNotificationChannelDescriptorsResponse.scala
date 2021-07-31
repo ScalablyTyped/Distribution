@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotificationChannelDescriptorsResponse extends StObject {
   
   /** The monitored resource descriptors supported for the specified project, optionally filtered. */
-  var channelDescriptors: js.UndefOr[js.Array[NotificationChannelDescriptor]] = js.native
+  var channelDescriptors: js.UndefOr[js.Array[NotificationChannelDescriptor]] = js.undefined
   
   /**
     * If not empty, indicates that there may be more results that match the request. Use the value in the page_token field in a subsequent request to fetch the next set of results. If
     * empty, all results have been returned.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListNotificationChannelDescriptorsResponse {
   

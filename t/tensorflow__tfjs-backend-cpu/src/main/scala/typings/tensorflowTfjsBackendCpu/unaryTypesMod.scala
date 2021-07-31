@@ -5,7 +5,6 @@ import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.kernelRegistryMod.NamedAttrMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unaryTypesMod {

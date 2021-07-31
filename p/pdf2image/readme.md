@@ -12,7 +12,7 @@ Converts a given pdf to the desired images
 | Keywords           | pdf, convert, image, imagemagick, pdf2image, pdf2img |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 5073 |
+| # downloads        | 4742 |
 | # stars            | 2 |
 
 ## Links

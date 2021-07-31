@@ -15,7 +15,6 @@ import typings.react.mod.Component
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonMod {
@@ -60,12 +59,11 @@ object skeletonMod {
   
   type SkeletonButton = ComponentType[SkeletonButtonProps]
   
-  @js.native
   trait SkeletonButtonProps extends StObject {
     
-    var size: xsmall | small | medium | large = js.native
+    var size: xsmall | small | medium | large
     
-    var theme: `1` = js.native
+    var theme: `1`
   }
   object SkeletonButtonProps {
     
@@ -88,18 +86,17 @@ object skeletonMod {
   
   type SkeletonCircle = ComponentType[js.Object]
   
-  @js.native
   trait SkeletonProps extends StObject {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large] = js.undefined
     
-    var theme: js.UndefOr[`13`] = js.native
+    var theme: js.UndefOr[`13`] = js.undefined
     
-    var `type`: js.UndefOr[rect | circle | text | button | tag] = js.native
+    var `type`: js.UndefOr[rect | circle | text | button | tag] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SkeletonProps {
     
@@ -146,12 +143,11 @@ object skeletonMod {
   
   type SkeletonTag = ComponentType[SkeletonTagProps]
   
-  @js.native
   trait SkeletonTagProps extends StObject {
     
-    var size: xsmall | small | medium | large = js.native
+    var size: xsmall | small | medium | large
     
-    var theme: `13` = js.native
+    var theme: `13`
   }
   object SkeletonTagProps {
     

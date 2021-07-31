@@ -5,57 +5,54 @@ import typings.formatjsEcma402Abstract.typesRelativeTimeMod.IntlRelativeTimeForm
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relativeTimeFormatInitializeRelativeTimeFormatMod {
   
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
+  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", JSImport.Namespace)
   @js.native
-  def InitializeRelativeTimeFormat(
-    rtf: RelativeTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
-  @js.native
-  def InitializeRelativeTimeFormat(
-    rtf: RelativeTimeFormat,
-    locales: js.UndefOr[scala.Nothing],
-    options: IntlRelativeTimeFormatOptions,
-    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: String,
     options: IntlRelativeTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
-  @JSImport("@formatjs/ecma402-abstract/RelativeTimeFormat/InitializeRelativeTimeFormat", "InitializeRelativeTimeFormat")
-  @js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
   def InitializeRelativeTimeFormat(
     rtf: RelativeTimeFormat,
     locales: js.Array[String],
     options: IntlRelativeTimeFormatOptions,
     hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
-  ): RelativeTimeFormat = js.native
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
+  def InitializeRelativeTimeFormat(
+    rtf: RelativeTimeFormat,
+    locales: Unit,
+    options: Unit,
+    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
+  @scala.inline
+  def InitializeRelativeTimeFormat(
+    rtf: RelativeTimeFormat,
+    locales: Unit,
+    options: IntlRelativeTimeFormatOptions,
+    hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale: RelevantExtensionKeys
+  ): RelativeTimeFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeRelativeTimeFormat")(rtf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hasGetInternalSlotsAvailableLocalesRelevantExtensionKeysLocaleDataGetDefaultLocale.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeFormat]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListByoipCidrsResponse extends StObject {
   
   /**
     * Information about your address ranges.
     */
-  var ByoipCidrs: js.UndefOr[typings.awsSdk.globalacceleratorMod.ByoipCidrs] = js.native
+  var ByoipCidrs: js.UndefOr[typings.awsSdk.globalacceleratorMod.ByoipCidrs] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object ListByoipCidrsResponse {
   

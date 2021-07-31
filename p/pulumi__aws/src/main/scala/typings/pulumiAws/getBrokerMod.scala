@@ -10,40 +10,38 @@ import typings.pulumiAws.outputMod.mq.GetBrokerUser
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBrokerMod {
   
-  @JSImport("@pulumi/aws/mq/getBroker", "getBroker")
+  @JSImport("@pulumi/aws/mq/getBroker", JSImport.Namespace)
   @js.native
-  def getBroker(): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq/getBroker", "getBroker")
-  @js.native
-  def getBroker(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq/getBroker", "getBroker")
-  @js.native
-  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq/getBroker", "getBroker")
-  @js.native
-  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBroker(): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")().asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: Unit, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
+  
   trait GetBrokerArgs extends StObject {
     
     /**
       * The unique id of the mq broker.
       */
-    val brokerId: js.UndefOr[String] = js.native
+    val brokerId: js.UndefOr[String] = js.undefined
     
     /**
       * The unique name of the mq broker.
       */
-    val brokerName: js.UndefOr[String] = js.native
+    val brokerName: js.UndefOr[String] = js.undefined
     
-    val logs: js.UndefOr[GetBrokerLogs] = js.native
+    val logs: js.UndefOr[GetBrokerLogs] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetBrokerArgs {
     
@@ -82,49 +80,48 @@ object getBrokerMod {
     }
   }
   
-  @js.native
   trait GetBrokerResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val autoMinorVersionUpgrade: Boolean = js.native
+    val autoMinorVersionUpgrade: Boolean
     
-    val brokerId: String = js.native
+    val brokerId: String
     
-    val brokerName: String = js.native
+    val brokerName: String
     
-    val configuration: GetBrokerConfiguration = js.native
+    val configuration: GetBrokerConfiguration
     
-    val deploymentMode: String = js.native
+    val deploymentMode: String
     
-    val encryptionOptions: js.Array[GetBrokerEncryptionOption] = js.native
+    val encryptionOptions: js.Array[GetBrokerEncryptionOption]
     
-    val engineType: String = js.native
+    val engineType: String
     
-    val engineVersion: String = js.native
+    val engineVersion: String
     
-    val hostInstanceType: String = js.native
+    val hostInstanceType: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instances: js.Array[GetBrokerInstance] = js.native
+    val instances: js.Array[GetBrokerInstance]
     
-    val logs: js.UndefOr[typings.pulumiAws.outputMod.mq.GetBrokerLogs] = js.native
+    val logs: js.UndefOr[typings.pulumiAws.outputMod.mq.GetBrokerLogs] = js.undefined
     
-    val maintenanceWindowStartTime: GetBrokerMaintenanceWindowStartTime = js.native
+    val maintenanceWindowStartTime: GetBrokerMaintenanceWindowStartTime
     
-    val publiclyAccessible: Boolean = js.native
+    val publiclyAccessible: Boolean
     
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
-    val subnetIds: js.Array[String] = js.native
+    val subnetIds: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val users: js.Array[GetBrokerUser] = js.native
+    val users: js.Array[GetBrokerUser]
   }
   object GetBrokerResult {
     

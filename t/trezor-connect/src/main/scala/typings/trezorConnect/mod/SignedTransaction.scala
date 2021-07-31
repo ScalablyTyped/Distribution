@@ -2,17 +2,15 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedTransaction extends StObject {
   
-  var serializedTx: String = js.native
+  var serializedTx: String
   
-  var signatures: js.Array[String] = js.native
+  var signatures: js.Array[String]
   
-  var txId: js.UndefOr[String] = js.native
+  var txId: js.UndefOr[String] = js.undefined
 }
 object SignedTransaction {
   

@@ -12,7 +12,6 @@ import typings.jointjs.mod.dia.Point
 import typings.jointjs.mod.g.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectors {
@@ -70,17 +69,17 @@ object connectors {
     def size: typings.jointjs.jointjsStrings.size = "size".asInstanceOf[typings.jointjs.jointjsStrings.size]
   }
   
-  @js.native
   trait ConnectorArgumentsMap
-    extends /* key */ StringDictionary[StringDictionary[js.Any]] {
+    extends StObject
+       with /* key */ StringDictionary[StringDictionary[js.Any]] {
     
-    var jumpover: JumpOverConnectorArguments = js.native
+    var jumpover: JumpOverConnectorArguments
     
-    var normal: NormalConnectorArguments = js.native
+    var normal: NormalConnectorArguments
     
-    var rounded: RoundedConnectorArguments = js.native
+    var rounded: RoundedConnectorArguments
     
-    var smooth: SmoothConnectorArguments = js.native
+    var smooth: SmoothConnectorArguments
   }
   object ConnectorArgumentsMap {
     
@@ -132,12 +131,11 @@ object connectors {
   
   type GenericConnectorArguments[K /* <: ConnectorType */] = /* import warning: importer.ImportType#apply Failed type conversion: jointjs.jointjs.connectors.ConnectorArgumentsMap[K] */ js.Any
   
-  @js.native
   trait GenericConnectorJSON[K /* <: ConnectorType */] extends StObject {
     
-    var args: js.UndefOr[GenericConnectorArguments[K]] = js.native
+    var args: js.UndefOr[GenericConnectorArguments[K]] = js.undefined
     
-    var name: K = js.native
+    var name: K
   }
   object GenericConnectorJSON {
     
@@ -148,7 +146,7 @@ object connectors {
     }
     
     @scala.inline
-    implicit class GenericConnectorJSONMutableBuilder[Self <: GenericConnectorJSON[_], K /* <: ConnectorType */] (val x: Self with GenericConnectorJSON[K]) extends AnyVal {
+    implicit class GenericConnectorJSONMutableBuilder[Self <: GenericConnectorJSON[?], K /* <: ConnectorType */] (val x: Self & GenericConnectorJSON[K]) extends AnyVal {
       
       @scala.inline
       def setArgs(value: GenericConnectorArguments[K]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
@@ -161,16 +159,15 @@ object connectors {
     }
   }
   
-  @js.native
   trait JumpOverConnectorArguments extends StObject {
     
-    var jump: js.UndefOr[arc | gap | cubic] = js.native
+    var jump: js.UndefOr[arc | gap | cubic] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object JumpOverConnectorArguments {
     
@@ -209,10 +206,9 @@ object connectors {
     }
   }
   
-  @js.native
   trait NormalConnectorArguments extends StObject {
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object NormalConnectorArguments {
     
@@ -233,12 +229,11 @@ object connectors {
     }
   }
   
-  @js.native
   trait RoundedConnectorArguments extends StObject {
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object RoundedConnectorArguments {
     
@@ -265,10 +260,9 @@ object connectors {
     }
   }
   
-  @js.native
   trait SmoothConnectorArguments extends StObject {
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object SmoothConnectorArguments {
     

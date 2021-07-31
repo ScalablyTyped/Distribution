@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConnectionMessage extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
     */
-  var EndpointArn: String = js.native
+  var EndpointArn: String
   
   /**
     * The Amazon Resource Name (ARN) of the replication instance.
     */
-  var ReplicationInstanceArn: String = js.native
+  var ReplicationInstanceArn: String
 }
 object DeleteConnectionMessage {
   

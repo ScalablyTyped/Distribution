@@ -6,15 +6,13 @@ import typings.devextreme.devextremeStrings.low
 import typings.devextreme.devextremeStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorLevel extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var level: js.UndefOr[close | high | low | open] = js.native
+  var level: js.UndefOr[close | high | low | open] = js.undefined
 }
 object ColorLevel {
   

@@ -6,21 +6,24 @@ import typings.cradle.anon.Id
 import typings.cradle.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cradle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cradle", "Connection")
   @js.native
   class Connection () extends StObject {
     def this(uri: String) = this()
-    def this(uri: js.UndefOr[scala.Nothing], port: Double) = this()
     def this(uri: String, port: Double) = this()
-    def this(uri: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], options: Options) = this()
-    def this(uri: js.UndefOr[scala.Nothing], port: Double, options: Options) = this()
-    def this(uri: String, port: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(uri: Unit, port: Double) = this()
     def this(uri: String, port: Double, options: Options) = this()
+    def this(uri: String, port: Unit, options: Options) = this()
+    def this(uri: Unit, port: Double, options: Options) = this()
+    def this(uri: Unit, port: Unit, options: Options) = this()
     
     def activeTasks(callback: Callback): Unit = js.native
     
@@ -47,9 +50,12 @@ object mod {
     def all(callback: Callback): Unit = js.native
     def all(options: js.Any, callback: Callback): Unit = js.native
     
-    def changes(callback: js.Function2[/* error */ js.Any, /* list */ js.Array[_], Unit]): Unit = js.native
+    def changes(callback: js.Function2[/* error */ js.Any, /* list */ js.Array[js.Any], Unit]): Unit = js.native
     def changes(options: ChangesOptions): js.Any = js.native
-    def changes(options: ChangesOptions, callback: js.Function2[/* error */ js.Any, /* list */ js.Array[_], Unit]): Unit = js.native
+    def changes(
+      options: ChangesOptions,
+      callback: js.Function2[/* error */ js.Any, /* list */ js.Array[js.Any], Unit]
+    ): Unit = js.native
     
     def compact(callback: Callback): Unit = js.native
     def compact(design: String, callback: Callback): Unit = js.native
@@ -86,7 +92,7 @@ object mod {
     def replicate(target: String, options: js.Any, callback: Callback): Unit = js.native
     
     def save(document: js.Any, callback: Callback): Unit = js.native
-    def save(documents: js.Array[_], callback: Callback): Unit = js.native
+    def save(documents: js.Array[js.Any], callback: Callback): Unit = js.native
     def save(id: String, document: js.Any, callback: Callback): Unit = js.native
     def save(id: String, revision: String, document: js.Any, callback: Callback): Unit = js.native
     def save[T](document: T, callback: Callback): Unit = js.native
@@ -105,16 +111,14 @@ object mod {
     def viewCleanup(callback: Callback): Unit = js.native
   }
   
-  @JSImport("cradle", "setup")
-  @js.native
-  def setup(options: Options): Unit = js.native
+  @scala.inline
+  def setup(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function2[/* error */ js.Any, /* response */ js.Any, Unit]
   
-  @js.native
   trait ChangesOptions extends StObject {
     
-    var since: Double = js.native
+    var since: Double
   }
   object ChangesOptions {
     
@@ -134,30 +138,29 @@ object mod {
   
   type ErrorCallback = js.Function1[/* error */ js.Any, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var auth: js.UndefOr[String | Password] = js.native
+    var auth: js.UndefOr[String | Password] = js.undefined
     
-    var ca: js.UndefOr[String] = js.native
+    var ca: js.UndefOr[String] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var forceSave: js.UndefOr[Boolean] = js.native
+    var forceSave: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var retryTimeout: js.UndefOr[Double] = js.native
+    var retryTimeout: js.UndefOr[Double] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

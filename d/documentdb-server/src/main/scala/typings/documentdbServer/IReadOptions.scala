@@ -2,15 +2,13 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a read operation. */
-@js.native
 trait IReadOptions extends StObject {
   
   /** The conditional HTTP method ifNoneMatch value. */
-  var ifNoneMatch: js.UndefOr[String] = js.native
+  var ifNoneMatch: js.UndefOr[String] = js.undefined
 }
 object IReadOptions {
   

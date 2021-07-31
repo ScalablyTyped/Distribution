@@ -4,23 +4,23 @@ import typings.iitc.iitctypesMod.PortalGUID
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalOptions extends PathOptions {
+trait PortalOptions
+  extends StObject
+     with PathOptions {
   
-  var data: PortalData = js.native
+  var data: PortalData
   
-  var ent: js.Any = js.native
+  var ent: js.Any
   
-  var guid: PortalGUID = js.native
+  var guid: PortalGUID
   
-  var level: Double = js.native
+  var level: Double
   
-  var team: Double = js.native
+  var team: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object PortalOptions {
   

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContinuousRendererResultColor extends Object {
+trait ContinuousRendererResultColor
+  extends StObject
+     with Object {
   
   /**
     * The color scheme used by the visual variable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
     */
-  var colorScheme: ColorScheme = js.native
+  var colorScheme: ColorScheme
   
   /**
     * A color visual variable configured based on the statistics of the data and the given basemap and scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#ContinuousRendererResult)
     */
-  var visualVariable: ColorVariable = js.native
+  var visualVariable: ColorVariable
 }
 object ContinuousRendererResultColor {
   

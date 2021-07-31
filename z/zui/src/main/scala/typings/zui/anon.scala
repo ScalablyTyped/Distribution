@@ -3,21 +3,19 @@ package typings.zui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Change extends StObject {
     
-    var change: String = js.native
+    var change: String
     
-    var colIndex: Double = js.native
+    var colIndex: Double
     
-    var newWidth: Double = js.native
+    var newWidth: Double
     
-    var oldWidth: Double = js.native
+    var oldWidth: Double
   }
   object Change {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CheckedAll extends StObject {
     
-    var checkedAll: Boolean = js.native
+    var checkedAll: Boolean
     
-    var checks: js.Array[Double] = js.native
+    var checks: js.Array[Double]
   }
   object CheckedAll {
     
@@ -73,18 +70,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Crop extends StObject {
     
-    var crop: js.UndefOr[Boolean] = js.native
+    var crop: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var preserve_headers: js.UndefOr[Boolean] = js.native
+    var preserve_headers: js.UndefOr[Boolean] = js.undefined
     
-    var quuality: js.UndefOr[Double] = js.native
+    var quuality: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Crop {
     
@@ -129,14 +125,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: ERRORS = js.native
+    var error: ERRORS
     
-    var file: FileObj = js.native
+    var file: FileObj
     
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -160,12 +155,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Extensions extends StObject {
     
-    var extensions: js.UndefOr[String] = js.native
+    var extensions: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Extensions {
     
@@ -192,12 +186,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -218,20 +211,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var lastModifiedDate: js.UndefOr[Date] = js.native
+    var lastModifiedDate: js.UndefOr[Date] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var origSize: js.UndefOr[String] = js.native
+    var origSize: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Id {
     
@@ -282,12 +274,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var sortUp: Boolean = js.native
+    var sortUp: Boolean
   }
   object Index {
     
@@ -308,14 +299,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Maxfilesize extends StObject {
     
-    var max_file_size: js.UndefOr[String] = js.native
+    var max_file_size: js.UndefOr[String] = js.undefined
     
-    var mime_type: js.Array[Extensions] = js.native
+    var mime_type: js.Array[Extensions]
     
-    var prevent_duplicates: js.UndefOr[String] = js.native
+    var prevent_duplicates: js.UndefOr[String] = js.undefined
   }
   object Maxfilesize {
     

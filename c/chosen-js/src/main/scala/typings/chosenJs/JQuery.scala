@@ -9,7 +9,6 @@ import typings.chosenJs.chosenJsStrings.destroy
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,14 +26,14 @@ trait JQuery extends StObject {
     * * `chosen:hiding_dropdown` Triggered when Chosen’s dropdown is closed.
     * * `chosen:no_results` Triggered when a search returns no matching results.
     */
-  def on(events: OnEvent, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def on(events: OnEvent, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   /**
     * Chosen triggers the standard DOM event whenever a selection is made (it also sends a selected or deselected parameter that tells you which option was changed).
     */
   @JSName("on")
   def on_change(
     events: change,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* args */ SelectedData, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* args */ SelectedData, js.Any]
   ): JQuery = js.native
   
   /**

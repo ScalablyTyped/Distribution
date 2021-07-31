@@ -3,7 +3,6 @@ package typings.grpc.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grpc", "Client")
@@ -45,14 +44,14 @@ class Client protected () extends StObject {
     method: String,
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
-    metadata: js.UndefOr[scala.Nothing],
+    metadata: Null,
     options: CallOptions
   ): ClientDuplexStream[RequestType, ResponseType] = js.native
   def makeBidiStreamRequest[RequestType, ResponseType](
     method: String,
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
-    metadata: Null,
+    metadata: Unit,
     options: CallOptions
   ): ClientDuplexStream[RequestType, ResponseType] = js.native
   def makeBidiStreamRequest[RequestType, ResponseType](
@@ -136,7 +135,7 @@ class Client protected () extends StObject {
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
     argument: RequestType,
-    metadata: js.UndefOr[scala.Nothing],
+    metadata: Null,
     options: CallOptions
   ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](
@@ -144,7 +143,7 @@ class Client protected () extends StObject {
     serialize: serialize[RequestType],
     deserialize: deserialize[ResponseType],
     argument: RequestType,
-    metadata: Null,
+    metadata: Unit,
     options: CallOptions
   ): ClientReadableStream[ResponseType] = js.native
   def makeServerStreamRequest[RequestType, ResponseType](

@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTargetsForPolicyRequest extends StObject {
   
   /**
     * A marker used to get the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The maximum number of results to return at one time.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The policy name.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
 }
 object ListTargetsForPolicyRequest {
   

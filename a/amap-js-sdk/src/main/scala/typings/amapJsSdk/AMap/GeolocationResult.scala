@@ -2,19 +2,17 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationResult extends StObject {
   
-  var accuracy: Double = js.native
+  var accuracy: Double
   
-  var info: String = js.native
+  var info: String
   
-  var isConverted: Boolean = js.native
+  var isConverted: Boolean
   
-  var position: LngLat = js.native
+  var position: LngLat
 }
 object GeolocationResult {
   

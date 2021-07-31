@@ -10,9 +10,9 @@ Stylable UniDriver testing utilities
 | ------------------ | :-------------: |
 | Full name          | @stylable/uni-driver |
 | Keywords           | - |
-| # releases         | 38 |
+| # releases         | 61 |
 | # dependents       | 1 |
-| # downloads        | 36728 |
+| # downloads        | 52378 |
 | # stars            | 0 |
 
 ## Links

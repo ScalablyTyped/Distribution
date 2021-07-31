@@ -3,30 +3,28 @@ package typings.stremioAddonSdk.anon
 import typings.stremioAddonSdk.mod.MetaPreview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  metas :std.Array<stremio-addon-sdk.stremio-addon-sdk.MetaPreview>} & stremio-addon-sdk.stremio-addon-sdk.Cache */
-@js.native
 trait metasArrayMetaPreviewCach extends StObject {
   
   /**
     * (in seconds) sets the Cache-Control header to max-age=$cacheMaxAge
     * and overwrites the global cache time set in serveHTTP options.
     */
-  var cacheMaxAge: js.UndefOr[Double] = js.native
+  var cacheMaxAge: js.UndefOr[Double] = js.undefined
   
-  var metas: js.Array[MetaPreview] = js.native
+  var metas: js.Array[MetaPreview]
   
   /**
     * (in seconds) sets the Cache-Control header to stale-if-error=$staleError.
     */
-  var staleError: js.UndefOr[Double] = js.native
+  var staleError: js.UndefOr[Double] = js.undefined
   
   /**
     * (in seconds) sets the Cache-Control header to stale-while-revalidate=$staleRevalidate.
     */
-  var staleRevalidate: js.UndefOr[Double] = js.native
+  var staleRevalidate: js.UndefOr[Double] = js.undefined
 }
 object metasArrayMetaPreviewCach {
   

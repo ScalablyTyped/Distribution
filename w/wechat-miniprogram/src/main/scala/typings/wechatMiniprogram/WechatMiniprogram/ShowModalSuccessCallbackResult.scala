@@ -2,21 +2,19 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowModalSuccessCallbackResult extends StObject {
   
   /** 为 true 时，表示用户点击了取消（用于 Android 系统区分点击蒙层关闭还是点击取消按钮关闭）
     *
     * 最低基础库： `1.1.0` */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
   /** 为 true 时，表示用户点击了确定按钮 */
-  var confirm: Boolean = js.native
+  var confirm: Boolean
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object ShowModalSuccessCallbackResult {
   

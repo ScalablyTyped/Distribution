@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an operation status change. */
-@js.native
 trait BarcodeScannerStatusUpdatedEventArgs extends StObject {
   
   /** Gets the vendor specific status code. */
-  var extendedStatus: Double = js.native
+  var extendedStatus: Double
   
   /** Gets the status change information. */
-  var status: BarcodeScannerStatus = js.native
+  var status: BarcodeScannerStatus
 }
 object BarcodeScannerStatusUpdatedEventArgs {
   

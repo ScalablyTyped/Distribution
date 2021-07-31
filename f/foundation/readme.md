@@ -12,7 +12,7 @@ You may also want to checkout:
 | Keywords           | zurb, foundation, stylus, express |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 54718 |
+| # downloads        | 47854 |
 | # stars            | 9 |
 
 ## Links

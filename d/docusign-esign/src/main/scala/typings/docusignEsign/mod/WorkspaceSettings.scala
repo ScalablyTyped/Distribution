@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceSettings extends StObject {
   
   /**
     * When **true**, commenting on the documents in the workspace is allowed.
     */
-  var commentsAllowed: js.UndefOr[String] = js.native
+  var commentsAllowed: js.UndefOr[String] = js.undefined
 }
 object WorkspaceSettings {
   

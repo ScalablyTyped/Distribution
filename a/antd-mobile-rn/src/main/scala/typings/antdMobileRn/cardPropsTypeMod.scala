@@ -3,17 +3,15 @@ package typings.antdMobileRn
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardPropsTypeMod {
   
-  @js.native
   trait CardFooterPropsType extends StObject {
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
   }
   object CardFooterPropsType {
     
@@ -40,15 +38,14 @@ object cardPropsTypeMod {
     }
   }
   
-  @js.native
   trait CardHeaderPropsType extends StObject {
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
     /** need url of img, if this is string. */
-    var thumb: js.UndefOr[ReactNode] = js.native
+    var thumb: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object CardHeaderPropsType {
     
@@ -81,10 +78,9 @@ object cardPropsTypeMod {
     }
   }
   
-  @js.native
   trait CardPropsType extends StObject {
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
   }
   object CardPropsType {
     

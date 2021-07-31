@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetScreenBrightnessOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetScreenBrightnessCompleteCallback] = js.native
+  var complete: js.UndefOr[SetScreenBrightnessCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetScreenBrightnessFailCallback] = js.native
+  var fail: js.UndefOr[SetScreenBrightnessFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetScreenBrightnessSuccessCallback] = js.native
+  var success: js.UndefOr[SetScreenBrightnessSuccessCallback] = js.undefined
   
   /** 屏幕亮度值，范围 0 ~ 1。0 最暗，1 最亮 */
-  var value: Double = js.native
+  var value: Double
 }
 object SetScreenBrightnessOption {
   

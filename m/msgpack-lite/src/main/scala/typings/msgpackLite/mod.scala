@@ -8,10 +8,13 @@ import typings.node.streamMod.TransformOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("msgpack-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Decoder extends EventEmitter {
@@ -38,12 +41,15 @@ object mod {
     
     def write(chunk: js.Any): Unit = js.native
   }
-  @JSImport("msgpack-lite", "Decoder")
-  @js.native
-  def Decoder(): Decoder = js.native
-  @JSImport("msgpack-lite", "Decoder")
-  @js.native
-  def Decoder(options: DecoderOptions): Decoder = js.native
+  object Decoder {
+    
+    @JSImport("msgpack-lite", "Decoder")
+    @js.native
+    def apply(): Decoder = js.native
+    @JSImport("msgpack-lite", "Decoder")
+    @js.native
+    def apply(options: DecoderOptions): Decoder = js.native
+  }
   
   object codec {
     
@@ -61,61 +67,46 @@ object mod {
     def preset_=(x: Codec_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preset")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("msgpack-lite", "createCodec")
-  @js.native
-  def createCodec(): Codec_ = js.native
-  @JSImport("msgpack-lite", "createCodec")
-  @js.native
-  def createCodec(options: CodecOptions): Codec_ = js.native
+  @scala.inline
+  def createCodec(): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")().asInstanceOf[Codec_]
+  @scala.inline
+  def createCodec(options: CodecOptions): Codec_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createCodec")(options.asInstanceOf[js.Any]).asInstanceOf[Codec_]
   
-  @JSImport("msgpack-lite", "createDecodeStream")
-  @js.native
-  def createDecodeStream(): DecodeStream = js.native
-  @JSImport("msgpack-lite", "createDecodeStream")
-  @js.native
-  def createDecodeStream(options: DecoderOptions with TransformOptions): DecodeStream = js.native
+  @scala.inline
+  def createDecodeStream(): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")().asInstanceOf[DecodeStream]
+  @scala.inline
+  def createDecodeStream(options: DecoderOptions & TransformOptions): DecodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[DecodeStream]
   
-  @JSImport("msgpack-lite", "createEncodeStream")
-  @js.native
-  def createEncodeStream(): EncodeStream = js.native
-  @JSImport("msgpack-lite", "createEncodeStream")
-  @js.native
-  def createEncodeStream(options: EncoderOptions with TransformOptions): EncodeStream = js.native
+  @scala.inline
+  def createEncodeStream(): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")().asInstanceOf[EncodeStream]
+  @scala.inline
+  def createEncodeStream(options: EncoderOptions & TransformOptions): EncodeStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncodeStream")(options.asInstanceOf[js.Any]).asInstanceOf[EncodeStream]
   
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: js.Array[Double]): js.Any = js.native
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: js.Array[Double], options: DecoderOptions): js.Any = js.native
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: Buffer): js.Any = js.native
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: Buffer, options: DecoderOptions): js.Any = js.native
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: Uint8Array): js.Any = js.native
-  @JSImport("msgpack-lite", "decode")
-  @js.native
-  def decode(input: Uint8Array, options: DecoderOptions): js.Any = js.native
+  @scala.inline
+  def decode(input: js.Array[Double]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def decode(input: js.Array[Double], options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decode(input: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def decode(input: Buffer, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def decode(input: Uint8Array): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def decode(input: Uint8Array, options: DecoderOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("msgpack-lite", "encode")
-  @js.native
-  def encode(input: js.Any): Buffer = js.native
-  @JSImport("msgpack-lite", "encode")
-  @js.native
-  def encode(input: js.Any, options: EncoderOptions): Buffer = js.native
+  @scala.inline
+  def encode(input: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def encode(input: js.Any, options: EncoderOptions): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @js.native
   trait CodecOptions extends StObject {
     
     /**
       * It ties msgpack's bin format with ArrayBuffer object, instead of Buffer object.
       * @default false
       */
-    var binarraybuffer: js.UndefOr[Boolean] = js.native
+    var binarraybuffer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It decodes msgpack's int64/uint64 formats with int64-buffer object.
@@ -123,33 +114,33 @@ object mod {
       * of the built-in IEEE-754 53 bits. See https://github.com/kawanet/int64-buffer
       * @default false
       */
-    var int64: js.UndefOr[Boolean] = js.native
+    var int64: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It includes the preset extensions for JavaScript native objects.
       * @see https://github.com/kawanet/msgpack-lite#extension-types
       * @default false
       */
-    var preset: js.UndefOr[Boolean] = js.native
+    var preset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It runs a validation of the value before writing it into buffer.
       * This is the default behavior for some old browsers which do not support ArrayBuffer object.
       * @default varies
       */
-    var safe: js.UndefOr[Boolean] = js.native
+    var safe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It returns Uint8Array object when encoding, instead of Buffer object.
       * @default false
       */
-    var uint8array: js.UndefOr[Boolean] = js.native
+    var uint8array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It uses the global JavaScript Map type, if available, to unpack MessagePack map elements.
       * @default false
       */
-    var usemap: js.UndefOr[Boolean] = js.native
+    var usemap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * It uses raw formats instead of bin and str.
@@ -157,7 +148,7 @@ object mod {
       * @see https://github.com/kawanet/msgpack-lite#compatibility-mode
       * @default false
       */
-    var useraw: js.UndefOr[Boolean] = js.native
+    var useraw: js.UndefOr[Boolean] = js.undefined
   }
   object CodecOptions {
     
@@ -214,7 +205,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Codec_ extends StObject {
     
     /**
@@ -228,7 +218,7 @@ object mod {
       etype: Double,
       Class: Instantiable1[/* args (repeated) */ js.Any, T],
       packer: js.Function1[/* t */ T, Buffer | Uint8Array]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Register a custom extension to deserialize your own class instances
@@ -236,7 +226,7 @@ object mod {
       * @param etype an integer within the range of 0 and 127 (0x0 and 0x7F)
       * @param unpacker a function that converts bytes to an instance of T
       */
-    def addExtUnpacker[T](etype: Double, unpacker: js.Function1[/* data */ Buffer | Uint8Array, T]): Unit = js.native
+    def addExtUnpacker[T](etype: Double, unpacker: js.Function1[/* data */ Buffer | Uint8Array, T]): Unit
   }
   object Codec_ {
     
@@ -268,10 +258,9 @@ object mod {
     var decoder: Decoder = js.native
   }
   
-  @js.native
   trait DecoderOptions extends StObject {
     
-    var codec: js.UndefOr[Codec_] = js.native
+    var codec: js.UndefOr[Codec_] = js.undefined
   }
   object DecoderOptions {
     
@@ -298,38 +287,37 @@ object mod {
     var encoder: Encoder = js.native
   }
   
-  @js.native
   trait Encoder extends StObject {
     
-    var bufferish: js.Any = js.native
+    var bufferish: js.Any
     
-    def encode(chunk: js.Any): Unit = js.native
+    def encode(chunk: js.Any): Unit
     
-    def end(chunk: js.Any): Unit = js.native
+    def end(chunk: js.Any): Unit
     
-    def fetch(): Unit = js.native
+    def fetch(): Unit
     
-    def flush(): Unit = js.native
+    def flush(): Unit
     
-    var maxBufferSize: Double = js.native
+    var maxBufferSize: Double
     
-    var minBufferSize: Double = js.native
+    var minBufferSize: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    def pull(): Double = js.native
+    def pull(): Double
     
-    def push(chunk: js.Any): Unit = js.native
+    def push(chunk: js.Any): Unit
     
-    def read(): Double = js.native
+    def read(): Double
     
-    def reserve(length: Double): Double = js.native
+    def reserve(length: Double): Double
     
-    def send(buffer: Buffer): Unit = js.native
+    def send(buffer: Buffer): Unit
     
-    var start: Double = js.native
+    var start: Double
     
-    def write(chunk: js.Any): Unit = js.native
+    def write(chunk: js.Any): Unit
   }
   object Encoder {
     
@@ -405,10 +393,9 @@ object mod {
     }
   }
   
-  @js.native
   trait EncoderOptions extends StObject {
     
-    var codec: js.UndefOr[Codec_] = js.native
+    var codec: js.UndefOr[Codec_] = js.undefined
   }
   object EncoderOptions {
     

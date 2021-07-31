@@ -10,9 +10,9 @@ Typings are for version 1.1
 | ------------------ | :-------------: |
 | Full name          | @node-red/runtime |
 | Keywords           | - |
-| # releases         | 37 |
+| # releases         | 38 |
 | # dependents       | 8 |
-| # downloads        | 829449 |
+| # downloads        | 932731 |
 | # stars            | 0 |
 
 ## Links

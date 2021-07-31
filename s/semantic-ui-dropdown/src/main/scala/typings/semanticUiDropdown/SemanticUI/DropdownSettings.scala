@@ -28,12 +28,10 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.upward
 import typings.semanticUiDropdown.semanticUiDropdownStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DropdownSettings {
   
-  @js.native
   trait Impl extends StObject {
     
     /**
@@ -48,35 +46,35 @@ object DropdownSettings {
         /* value */ String | `false`, 
         /* element */ JQuery, 
         Unit
-      ]) = js.native
+      ])
     
     /**
       * Whether search selection should allow users to add their own selections, works for single or multi-select.
       *
       * @default false
       */
-    var allowAdditions: Boolean = js.native
+    var allowAdditions: Boolean
     
     /**
       * Whether menu items with sub-menus (categories) should be selectable
       *
       * @default false
       */
-    var allowCategorySelection: Boolean = js.native
+    var allowCategorySelection: Boolean
     
     /**
       * When set to true will fire onChange even when the value a user select matches the currently selected value.
       *
       * @default false
       */
-    var allowReselection: Boolean = js.native
+    var allowReselection: Boolean
     
     /**
       * Whether to allow the element to be navigable by keyboard, by automatically creating a tabindex
       *
       * @default true
       */
-    var allowTab: Boolean = js.native
+    var allowTab: Boolean
     
     // endregion
     // region Remote Settings
@@ -86,26 +84,26 @@ object DropdownSettings {
       * @default false
       * @see {@link http://semantic-ui.com/behaviors/api.html}
       */
-    var apiSettings: `false` | ApiSettings = js.native
+    var apiSettings: `false` | ApiSettings
     
-    var className: ClassNameSettings = js.native
+    var className: ClassNameSettings
     
     /**
       * Element context to use when checking whether can show when keepOnScreen: true
       *
       * @default 'window'
       */
-    var context: String | JQuery = js.native
+    var context: String | JQuery
     
     /**
       * Debug output to console
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
     
     /**
       * Time in milliseconds to debounce show or hide behavior when on: hover is used, or when touch is used.
       */
-    var delay: DelaySettings = js.native
+    var delay: DelaySettings
     
     // endregion
     // region Additional Settings
@@ -114,23 +112,23 @@ object DropdownSettings {
       *
       * @default 'auto'
       */
-    var direction: auto | upward | downward = js.native
+    var direction: auto | upward | downward
     
     /**
       * Duration of animation events
       *
       * @default 200
       */
-    var duration: Double = js.native
+    var duration: Double
     
     // endregion
     // region Debug Settings
-    var error: ErrorSettings = js.native
+    var error: ErrorSettings
     
     /**
       * List mapping dropdown content to JSON Property when using API
       */
-    var fields: FieldsSettings = js.native
+    var fields: FieldsSettings
     
     /**
       * When set to true API will be expected to return the complete result set, which will then be filtered clientside to only display matching results.
@@ -138,89 +136,89 @@ object DropdownSettings {
       * @default false
       * @since 2.2.8
       */
-    var filterRemoteData: Boolean = js.native
+    var filterRemoteData: Boolean
     
     /**
       * Whether search selection will force currently selected choice when element is blurred.
       *
       * @default true
       */
-    var forceSelection: Boolean = js.native
+    var forceSelection: Boolean
     
     /**
       * Specifying to "true" will use a fuzzy full text search, setting to "exact" will force the exact search to be matched somewhere in the string
       *
       * @default false
       */
-    var fullTextSearch: Boolean | exact = js.native
+    var fullTextSearch: Boolean | exact
     
     /**
       * Maximum glyph width, used to calculate search size. This is usually size of a "W" in your font in em
       *
       * @default 1.0714
       */
-    var glyphWidth: Double = js.native
+    var glyphWidth: Double
     
     /**
       * When disabled user additions will appear in the results menu using a specially formatted selection item formatted by templates.addition.
       *
       * @default true
       */
-    var hideAdditions: Boolean = js.native
+    var hideAdditions: Boolean
     
     /**
       * Whether dropdown should try to keep itself on screen by checking whether menus display position in its context (Default context is page).
       *
       * @default true
       */
-    var keepOnScreen: Boolean = js.native
+    var keepOnScreen: Boolean
     
     /**
       * The keycode used to represent keyboard shortcuts. To avoid issues with some foreign languages, you can pass false for comma delimiter's value
       */
-    var keys: KeySettings = js.native
+    var keys: KeySettings
     
     /**
       * Allows customization of multi-select labels
       */
-    var label: LabelSettings = js.native
+    var label: LabelSettings
     
     /**
       * When using search selection specifies how to match values.
       *
       * @default 'both'
       */
-    var `match`: both | value | text = js.native
+    var `match`: both | value | text
     
     /**
       * When set to a number, sets the maximum number of selections
       *
       * @default false
       */
-    var maxSelections: `false` | Double = js.native
+    var maxSelections: `false` | Double
     
     // endregion
     // region DOM Settings
     /**
       * You can specify site wide messages by modifying $.fn.dropdown.settings.message that will apply on any dropdown if it appears in the page.
       */
-    var message: MessageSettings = js.native
+    var message: MessageSettings
     
-    var metadata: MetadataSettings = js.native
+    var metadata: MetadataSettings
     
     /**
       * The minimum characters for a search to begin showing results
       *
       * @default 1
       */
-    var minCharacters: Double = js.native
+    var minCharacters: Double
     
     // endregion
     // region Debug Settings
     /**
       * Name used in log statements
       */
-    var name: String = js.native
+    var name: String
     
     // endregion
     // region Component Settings
@@ -228,7 +226,7 @@ object DropdownSettings {
     /**
       * Event namespace. Makes sure module teardown does not effect other events attached to an element.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     // region Frequently Used Settings
     /**
@@ -236,108 +234,108 @@ object DropdownSettings {
       *
       * @default 'click'
       */
-    var on: String = js.native
+    var on: String
     
     /**
       * Is called after a dropdown selection is added using a multiple select dropdown, only receives the added value
       */
-    def onAdd(addedValue: js.Any, addedText: String, $addedChoice: JQuery): Unit = js.native
+    def onAdd(addedValue: js.Any, addedText: String, $addedChoice: JQuery): Unit
     
     // endregion
     // region Callbacks
     /**
       * Is called after a dropdown value changes. Receives the name and value of selection and the active menu element
       */
-    def onChange(value: js.Any, text: String, $choice: JQuery): Unit = js.native
+    def onChange(value: js.Any, text: String, $choice: JQuery): Unit
     
     /**
       * Is called before a dropdown is hidden. If false is returned, dropdown will not be hidden.
       */
-    def onHide(): `false` | Unit = js.native
+    def onHide(): `false` | Unit
     
     /**
       * Allows you to modify a label before it is added. Expects the jQ DOM element for a label to be returned.
       */
-    def onLabelCreate(value: js.Any, text: String): JQuery = js.native
+    def onLabelCreate(value: js.Any, text: String): JQuery
     
     /**
       * Called when a label is remove, return false; will prevent the label from being removed.
       */
-    def onLabelRemove(value: js.Any): `false` | Unit = js.native
+    def onLabelRemove(value: js.Any): `false` | Unit
     
     /**
       * Is called after a label is selected by a user
       */
-    def onLabelSelect($selectedLabels: JQuery): Unit = js.native
+    def onLabelSelect($selectedLabels: JQuery): Unit
     
     /**
       * Is called after a dropdown is searched with no matching values
       */
-    def onNoResults(searchValue: js.Any): Unit = js.native
+    def onNoResults(searchValue: js.Any): Unit
     
     /**
       * Is called after a dropdown selection is removed using a multiple select dropdown, only receives the removed value
       */
-    def onRemove(removedValue: js.Any, removedText: String, $removedChoice: JQuery): Unit = js.native
+    def onRemove(removedValue: js.Any, removedText: String, $removedChoice: JQuery): Unit
     
     /**
       * Is called before a dropdown is shown. If false is returned, dropdown will not be shown.
       */
-    def onShow(): `false` | Unit = js.native
+    def onShow(): `false` | Unit
     
     /**
       * Show console.table output with performance metrics
       */
-    var performance: Boolean = js.native
+    var performance: Boolean
     
     /**
       * @default 'auto'
       */
-    var placeholder: auto | value | `false` = js.native
+    var placeholder: auto | value | `false`
     
     /**
       * Whether HTML included in dropdown values should be preserved. (Allows icons to show up in selected value)
       *
       * @default true
       */
-    var preserveHTML: Boolean = js.native
+    var preserveHTML: Boolean
     
-    var regExp: RegExpSettings = js.native
+    var regExp: RegExpSettings
     
     /**
       * When enabled will automatically store selected name/value pairs in sessionStorage to preserve user selection on page refresh. Disabling will clear remote dropdown values on refresh.
       *
       * @default true
       */
-    var saveRemoteData: Boolean = js.native
+    var saveRemoteData: Boolean
     
     /**
       * Whether dropdown should select new option when using keyboard shortcuts. Setting to false will require enter or left click to confirm a choice.
       *
       * @default true
       */
-    var selectOnKeydown: Boolean = js.native
+    var selectOnKeydown: Boolean
     
-    var selector: SelectorSettings = js.native
+    var selector: SelectorSettings
     
     /**
       * Whether to show dropdown menu automatically on element focus.
       *
       * @default true
       */
-    var showOnFocus: Boolean = js.native
+    var showOnFocus: Boolean
     
     /**
       * Silences all console output including error messages, regardless of other debug settings.
       */
-    var silent: Boolean = js.native
+    var silent: Boolean
     
     /**
       * Whether to sort values when creating a dropdown automatically from a select element.
       *
       * @default false
       */
-    var sortSelect: Boolean = js.native
+    var sortSelect: Boolean
     
     /**
       * Named transition to use when animating menu in and out.
@@ -347,7 +345,7 @@ object DropdownSettings {
       * @default 'auto'
       * @see {@link http://semantic-ui.com/modules/transition.html}
       */
-    var transition: auto | String = js.native
+    var transition: auto | String
     
     // endregion
     // region Multiple Select Settings
@@ -356,19 +354,19 @@ object DropdownSettings {
       *
       * @default true
       */
-    var useLabels: Boolean = js.native
+    var useLabels: Boolean
     
     /**
       * When specified allows you to initialize dropdown with specific values. See usage guide for details.
       *
       * @default false
       */
-    var values: js.Any = js.native
+    var values: js.Any
     
     /**
       * Debug output includes all internal behaviors
       */
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object Impl {
     
@@ -611,5 +609,5 @@ object DropdownSettings {
     }
   }
   
-  type Param = (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ js.Any) with PartialPickImplkeyofImpl
+  type Param = (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 53 */ js.Any) & PartialPickImplkeyofImpl
 }

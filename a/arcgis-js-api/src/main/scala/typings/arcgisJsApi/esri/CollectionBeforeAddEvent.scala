@@ -2,19 +2,17 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionBeforeAddEvent extends StObject {
   
-  var cancellable: Boolean = js.native
+  var cancellable: Boolean
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var item: js.Any = js.native
+  var item: js.Any
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
 }
 object CollectionBeforeAddEvent {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTrailRequest extends StObject {
   
   /**
     * The name or the Amazon Resource Name (ARN) of the trail for which you want to retrieve settings information.
     */
-  var Name: String = js.native
+  var Name: String
 }
 object GetTrailRequest {
   

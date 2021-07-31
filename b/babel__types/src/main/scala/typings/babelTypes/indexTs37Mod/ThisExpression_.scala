@@ -3,24 +3,23 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ThisExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ThisExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ThisExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
   @JSName("type")
-  var type_ThisExpression_ : ThisExpression = js.native
+  var type_ThisExpression_ : ThisExpression
 }
 object ThisExpression_ {
   
   @scala.inline
-  def apply(`type`: ThisExpression): ThisExpression_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): ThisExpression_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ThisExpression")
     __obj.asInstanceOf[ThisExpression_]
   }
   

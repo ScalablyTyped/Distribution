@@ -15,7 +15,6 @@ import typings.deezerSdk.deezerSdkStrings.tracklist_changed
 import typings.deezerSdk.deezerSdkStrings.volume_changed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region Player Events

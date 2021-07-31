@@ -4,18 +4,21 @@ import typings.imagemapster.mod.global.ImageMapster.State
 import typings.imagemapster.mod.global.ImageMapster.ToolTipCloseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagemapsterStrings {
   
   @js.native
-  sealed trait `area-click` extends ToolTipCloseEvent
+  sealed trait `area-click`
+    extends StObject
+       with ToolTipCloseEvent
   @scala.inline
   def `area-click`: `area-click` = "area-click".asInstanceOf[`area-click`]
   
   @js.native
-  sealed trait `area-mouseout` extends ToolTipCloseEvent
+  sealed trait `area-mouseout`
+    extends StObject
+       with ToolTipCloseEvent
   @scala.inline
   def `area-mouseout`: `area-mouseout` = "area-mouseout".asInstanceOf[`area-mouseout`]
   
@@ -45,12 +48,16 @@ object imagemapsterStrings {
   def get_options: get_options = "get_options".asInstanceOf[get_options]
   
   @js.native
-  sealed trait highlight extends State
+  sealed trait highlight
+    extends StObject
+       with State
   @scala.inline
   def highlight: highlight = "highlight".asInstanceOf[highlight]
   
   @js.native
-  sealed trait `image-mouseout` extends ToolTipCloseEvent
+  sealed trait `image-mouseout`
+    extends StObject
+       with ToolTipCloseEvent
   @scala.inline
   def `image-mouseout`: `image-mouseout` = "image-mouseout".asInstanceOf[`image-mouseout`]
   
@@ -70,7 +77,9 @@ object imagemapsterStrings {
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait select extends State
+  sealed trait select
+    extends StObject
+       with State
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
@@ -95,7 +104,9 @@ object imagemapsterStrings {
   def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
-  sealed trait `tooltip-click` extends ToolTipCloseEvent
+  sealed trait `tooltip-click`
+    extends StObject
+       with ToolTipCloseEvent
   @scala.inline
   def `tooltip-click`: `tooltip-click` = "tooltip-click".asInstanceOf[`tooltip-click`]
   

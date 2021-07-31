@@ -2,10 +2,8 @@ package typings.grpc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallCredentials extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait CallCredentials extends StObject {
     * called first.
     * @param callCredentials The other CallCredentials object.
     */
-  def compose(callCredentials: CallCredentials): CallCredentials = js.native
+  def compose(callCredentials: CallCredentials): CallCredentials
   
   /**
     * Asynchronously generates a new Metadata object.
     * @param options Options used in generating the Metadata object.
     */
-  def generateMetadata(options: js.Object): js.Promise[Metadata] = js.native
+  def generateMetadata(options: js.Object): js.Promise[Metadata]
 }
 object CallCredentials {
   

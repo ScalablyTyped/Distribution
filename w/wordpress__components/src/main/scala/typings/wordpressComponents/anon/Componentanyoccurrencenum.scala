@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @wordpress/element.@wordpress/element.Component<{}, {}, any> & {  occurrence :number | undefined} */
@@ -171,7 +170,9 @@ trait Componentanyoccurrencenum extends StObject {
     * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
     * lifecycle events from running.
     */
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, _ | Null]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[
+    js.Function2[/* prevProps */ js.Object, /* prevState */ js.Object, js.Any | Null]
+  ] = js.native
   
   var occurrence: js.UndefOr[Double] = js.native
   

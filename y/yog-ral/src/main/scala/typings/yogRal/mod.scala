@@ -11,10 +11,13 @@ import typings.nodeRal.mod.LoggerFactory
 import typings.nodeRal.mod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("yog-ral", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yog-ral", "Balance")
   @js.native
@@ -60,22 +63,30 @@ object mod {
   @js.native
   val Logger: LoggerFactory = js.native
   
-  @JSImport("yog-ral", "Middleware")
-  @js.native
+  @scala.inline
   def Middleware(): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
-  @JSImport("yog-ral", "Middleware")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")().asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  @scala.inline
   def Middleware(options: Service): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* resp */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("Middleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* resp */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
   
   @JSImport("yog-ral", "Protocol")
   @js.native
@@ -84,23 +95,27 @@ object mod {
   /* static members */
   object Protocol {
     
-    @JSImport("yog-ral", "Protocol.beforeRequest")
+    @JSImport("yog-ral", "Protocol")
     @js.native
-    def beforeRequest(context: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("yog-ral", "Protocol.normalizeConfig")
-    @js.native
-    def normalizeConfig(context: js.Any): js.Any = js.native
+    @scala.inline
+    def beforeRequest(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeRequest")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def normalizeConfig(context: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeConfig")(context.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object RAL {
     
+    @scala.inline
+    def apply(serviceName: String): typings.nodeRal.mod.RAL.RalRunner = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.RAL.RalRunner]
+    @scala.inline
+    def apply(serviceName: String, options: js.Object): typings.nodeRal.mod.RAL.RalRunner = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.nodeRal.mod.RAL.RalRunner]
+    
     @JSImport("yog-ral", "RAL")
     @js.native
-    def apply(serviceName: String): typings.nodeRal.mod.RAL.RalRunner = js.native
-    @JSImport("yog-ral", "RAL")
-    @js.native
-    def apply(serviceName: String, options: js.Object): typings.nodeRal.mod.RAL.RalRunner = js.native
+    val ^ : js.Any = js.native
     
     @JSImport("yog-ral", "RAL.NormalizerManager")
     @js.native
@@ -115,43 +130,33 @@ object mod {
       def this(serviceName: String, options: js.Object) = this()
     }
     
-    @JSImport("yog-ral", "RAL.appendExtPath")
-    @js.native
-    def appendExtPath(extPath: String): Unit = js.native
+    @scala.inline
+    def appendExtPath(extPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("appendExtPath")(extPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("yog-ral", "RAL.getConf")
-    @js.native
-    def getConf(name: String): typings.nodeRal.mod.Config = js.native
+    @scala.inline
+    def getConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @JSImport("yog-ral", "RAL.getRawConf")
-    @js.native
-    def getRawConf(name: String): typings.nodeRal.mod.Config = js.native
+    @scala.inline
+    def getRawConf(name: String): typings.nodeRal.mod.Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawConf")(name.asInstanceOf[js.Any]).asInstanceOf[typings.nodeRal.mod.Config]
     
-    @JSImport("yog-ral", "RAL.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSImport("yog-ral", "RAL.init")
-    @js.native
-    def init(options: js.Object): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("yog-ral", "RAL.reload")
-    @js.native
-    def reload(): Unit = js.native
-    @JSImport("yog-ral", "RAL.reload")
-    @js.native
-    def reload(options: js.Object): Unit = js.native
+    @scala.inline
+    def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
+    @scala.inline
+    def reload(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("yog-ral", "RAL.setConfigNormalizer")
-    @js.native
-    def setConfigNormalizer(normalizers: typings.nodeRal.mod.ConfigNormalizer): Unit = js.native
+    @scala.inline
+    def setConfigNormalizer(normalizers: typings.nodeRal.mod.ConfigNormalizer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigNormalizer")(normalizers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("yog-ral", "RALPromise")
-  @js.native
-  def RALPromise[T](name: String): js.Promise[T] = js.native
-  @JSImport("yog-ral", "RALPromise")
-  @js.native
-  def RALPromise[T](name: String, options: js.Object): js.Promise[T] = js.native
+  @scala.inline
+  def RALPromise[T](name: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def RALPromise[T](name: String, options: js.Object): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("RALPromise")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("yog-ral", "RalModule")
   @js.native
@@ -164,16 +169,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("yog-ral", "RalModule.clearCache")
-    @js.native
-    def clearCache(): Unit = js.native
+    @scala.inline
+    def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
     
-    @JSImport("yog-ral", "RalModule.load")
-    @js.native
-    def load(pathOrModule: String): Unit = js.native
-    @JSImport("yog-ral", "RalModule.load")
-    @js.native
-    def load(pathOrModule: typings.nodeRal.mod.RalModule): Unit = js.native
+    @scala.inline
+    def load(pathOrModule: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def load(pathOrModule: typings.nodeRal.mod.RalModule): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(pathOrModule.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("yog-ral", "RalModule.modules")
     @js.native

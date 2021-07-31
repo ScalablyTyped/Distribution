@@ -6,18 +6,21 @@ import typings.awsSdkTypes.middlewareMod.Relation
 import typings.awsSdkTypes.middlewareMod.Step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkTypesStrings {
   
   @js.native
-  sealed trait after extends Relation
+  sealed trait after
+    extends StObject
+       with Relation
   @scala.inline
   def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait all extends LogLevel
+  sealed trait all
+    extends StObject
+       with LogLevel
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
@@ -27,7 +30,9 @@ object awsSdkTypesStrings {
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait before extends Relation
+  sealed trait before
+    extends StObject
+       with Relation
   @scala.inline
   def before: before = "before".asInstanceOf[before]
   
@@ -42,7 +47,9 @@ object awsSdkTypesStrings {
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait build extends Step
+  sealed trait build
+    extends StObject
+       with Step
   @scala.inline
   def build: build = "build".asInstanceOf[build]
   
@@ -52,32 +59,44 @@ object awsSdkTypesStrings {
   def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait deserialize extends Step
+  sealed trait deserialize
+    extends StObject
+       with Step
   @scala.inline
   def deserialize: deserialize = "deserialize".asInstanceOf[deserialize]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait finalizeRequest extends Step
+  sealed trait finalizeRequest
+    extends StObject
+       with Step
   @scala.inline
   def finalizeRequest: finalizeRequest = "finalizeRequest".asInstanceOf[finalizeRequest]
   
   @js.native
-  sealed trait high extends Priority
+  sealed trait high
+    extends StObject
+       with Priority
   @scala.inline
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait initialize extends Step
+  sealed trait initialize
+    extends StObject
+       with Step
   @scala.inline
   def initialize: initialize = "initialize".asInstanceOf[initialize]
   
@@ -92,7 +111,9 @@ object awsSdkTypesStrings {
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait log extends LogLevel
+  sealed trait log
+    extends StObject
+       with LogLevel
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
@@ -102,22 +123,30 @@ object awsSdkTypesStrings {
   def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait low extends Priority
+  sealed trait low
+    extends StObject
+       with Priority
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait normal extends Priority
+  sealed trait normal
+    extends StObject
+       with Priority
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait off extends LogLevel
+  sealed trait off
+    extends StObject
+       with LogLevel
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait serialize extends Step
+  sealed trait serialize
+    extends StObject
+       with Step
   @scala.inline
   def serialize: serialize = "serialize".asInstanceOf[serialize]
   
@@ -147,7 +176,9 @@ object awsSdkTypesStrings {
   def uuid: uuid = "uuid".asInstanceOf[uuid]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

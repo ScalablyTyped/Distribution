@@ -2,42 +2,40 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about a classifier. */
-@js.native
 trait Classifier extends StObject {
   
   /** Classes that define a classifier. */
-  var classes: js.UndefOr[js.Array[Class]] = js.native
+  var classes: js.UndefOr[js.Array[Class]] = js.undefined
   
   /** ID of a classifier identified in the image. */
-  var classifier_id: String = js.native
+  var classifier_id: String
   
   /** Whether the classifier can be downloaded as a Core ML model after the training status is `ready`. */
-  var core_ml_enabled: js.UndefOr[Boolean] = js.native
+  var core_ml_enabled: js.UndefOr[Boolean] = js.undefined
   
   /** Date and time in Coordinated Universal Time (UTC) that the classifier was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** If classifier training has failed, this field might explain why. */
-  var explanation: js.UndefOr[String] = js.native
+  var explanation: js.UndefOr[String] = js.undefined
   
   /** Name of the classifier. */
-  var name: String = js.native
+  var name: String
   
   /** Unique ID of the account who owns the classifier. Might not be returned by some requests. */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /** Date and time in Coordinated Universal Time (UTC) that the classifier was updated. Might not be returned by some requests. Identical to `updated` and retained for backward compatibility. */
-  var retrained: js.UndefOr[String] = js.native
+  var retrained: js.UndefOr[String] = js.undefined
   
   /** Training status of classifier. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Date and time in Coordinated Universal Time (UTC) that the classifier was most recently updated. The field matches either `retrained` or `created`. Might not be returned by some requests. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Classifier {
   

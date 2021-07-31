@@ -4,25 +4,23 @@ import typings.pulumiAws.inputMod.ebs.GetSnapshotIdsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSnapshotIdsMod {
   
-  @JSImport("@pulumi/aws/ebs/getSnapshotIds", "getSnapshotIds")
+  @JSImport("@pulumi/aws/ebs/getSnapshotIds", JSImport.Namespace)
   @js.native
-  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshotIds", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshotIds", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = js.native
-  @JSImport("@pulumi/aws/ebs/getSnapshotIds", "getSnapshotIds")
-  @js.native
-  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSnapshotIds(): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")().asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: Unit, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: GetSnapshotIdsArgs): js.Promise[GetSnapshotIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  @scala.inline
+  def getSnapshotIds(args: GetSnapshotIdsArgs, opts: InvokeOptions): js.Promise[GetSnapshotIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSnapshotIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSnapshotIdsResult]]
+  
   trait GetSnapshotIdsArgs extends StObject {
     
     /**
@@ -30,17 +28,17 @@ object getSnapshotIdsMod {
       * several valid keys, for a full reference, check out
       * [describe-volumes in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetSnapshotIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSnapshotIdsFilter]] = js.undefined
     
     /**
       * Returns the snapshots owned by the specified owner id. Multiple owners can be specified.
       */
-    val owners: js.UndefOr[js.Array[String]] = js.native
+    val owners: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * One or more AWS accounts IDs that can create volumes from the snapshot.
       */
-    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.native
+    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetSnapshotIdsArgs {
     
@@ -82,24 +80,23 @@ object getSnapshotIdsMod {
     }
   }
   
-  @js.native
   trait GetSnapshotIdsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ebs.GetSnapshotIdsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of EBS snapshot IDs, sorted by creation time in descending order.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val owners: js.UndefOr[js.Array[String]] = js.native
+    val owners: js.UndefOr[js.Array[String]] = js.undefined
     
-    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.native
+    val restorableByUserIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object GetSnapshotIdsResult {
     

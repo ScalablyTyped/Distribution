@@ -2,21 +2,20 @@ package typings.blueimpMd5
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, key: String): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, key: String, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(value: String, key: Unit, raw: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], key.asInstanceOf[js.Any], raw.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("blueimp-md5", JSImport.Namespace)
   @js.native
-  def apply(value: String): String = js.native
-  @JSImport("blueimp-md5", JSImport.Namespace)
-  @js.native
-  def apply(value: String, key: js.UndefOr[scala.Nothing], raw: Boolean): String = js.native
-  @JSImport("blueimp-md5", JSImport.Namespace)
-  @js.native
-  def apply(value: String, key: String): String = js.native
-  @JSImport("blueimp-md5", JSImport.Namespace)
-  @js.native
-  def apply(value: String, key: String, raw: Boolean): String = js.native
+  val ^ : js.Any = js.native
 }

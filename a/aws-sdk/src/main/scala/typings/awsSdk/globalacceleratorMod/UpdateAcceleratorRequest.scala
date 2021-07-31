@@ -2,31 +2,29 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAcceleratorRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the accelerator to update.
     */
-  var AcceleratorArn: GenericString = js.native
+  var AcceleratorArn: GenericString
   
   /**
     * Indicates whether an accelerator is enabled. The value is true or false. The default value is true.  If the value is set to true, the accelerator cannot be deleted. If set to false, the accelerator can be deleted.
     */
-  var Enabled: js.UndefOr[GenericBoolean] = js.native
+  var Enabled: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     * The value for the address type must be IPv4. 
     */
-  var IpAddressType: js.UndefOr[typings.awsSdk.globalacceleratorMod.IpAddressType] = js.native
+  var IpAddressType: js.UndefOr[typings.awsSdk.globalacceleratorMod.IpAddressType] = js.undefined
   
   /**
     * The name of the accelerator. The name can have a maximum of 32 characters, must contain only alphanumeric characters or hyphens (-), and must not begin or end with a hyphen.
     */
-  var Name: js.UndefOr[GenericString] = js.native
+  var Name: js.UndefOr[GenericString] = js.undefined
 }
 object UpdateAcceleratorRequest {
   

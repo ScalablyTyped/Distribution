@@ -3,27 +3,25 @@ package typings.jestTestResult
 import typings.jestTestResult.typesMod.Milliseconds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Added extends StObject {
     
-    var added: Double = js.native
+    var added: Double
     
-    var fileDeleted: Boolean = js.native
+    var fileDeleted: Boolean
     
-    var matched: Double = js.native
+    var matched: Double
     
-    var unchecked: Double = js.native
+    var unchecked: Double
     
-    var uncheckedKeys: js.Array[String] = js.native
+    var uncheckedKeys: js.Array[String]
     
-    var unmatched: Double = js.native
+    var unmatched: Double
     
-    var updated: Double = js.native
+    var updated: Double
   }
   object Added {
     
@@ -70,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Milliseconds = js.native
+    var end: Milliseconds
     
-    var start: Milliseconds = js.native
+    var start: Milliseconds
   }
   object End {
     

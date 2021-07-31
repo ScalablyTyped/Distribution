@@ -2,13 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeroWinRate extends Hero {
+trait HeroWinRate
+  extends StObject
+     with Hero {
   
-  var win_rate: String = js.native
+  var win_rate: String
 }
 object HeroWinRate {
   

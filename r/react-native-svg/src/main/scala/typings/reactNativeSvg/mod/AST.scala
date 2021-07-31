@@ -6,27 +6,25 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AST extends StObject {
   
-  var Tag: ComponentType[js.Object] = js.native
+  var Tag: ComponentType[js.Object]
   
-  var children: js.Array[AST | Element | String] = js.native
+  var children: js.Array[AST | Element | String]
   
-  var parent: AST | Null = js.native
+  var parent: AST | Null
   
-  var priority: js.UndefOr[Map[String, js.UndefOr[Boolean]]] = js.native
+  var priority: js.UndefOr[Map[String, js.UndefOr[Boolean]]] = js.undefined
   
-  var props: StringDictionary[js.UndefOr[Styles | String]] = js.native
+  var props: StringDictionary[js.UndefOr[Styles | String]]
   
-  var style: js.UndefOr[Styles] = js.native
+  var style: js.UndefOr[Styles] = js.undefined
   
-  var styles: js.UndefOr[String] = js.native
+  var styles: js.UndefOr[String] = js.undefined
   
-  var tag: String = js.native
+  var tag: String
 }
 object AST {
   
@@ -37,7 +35,7 @@ object AST {
     props: StringDictionary[js.UndefOr[Styles | String]],
     tag: String
   ): AST = {
-    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Tag = Tag.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[AST]
   }
   

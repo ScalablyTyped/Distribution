@@ -3,45 +3,84 @@ package typings.gherkin
 import typings.gherkin.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gherkinLineMod {
   
   @JSImport("gherkin/dist/src/GherkinLine", JSImport.Default)
   @js.native
-  class default protected () extends GherkinLine {
+  class default protected ()
+    extends StObject
+       with GherkinLine {
     def this(lineText: String, lineNumber: Double) = this()
-  }
-  
-  @js.native
-  trait GherkinLine extends StObject {
     
+    /* CompleteClass */
     var column: Double = js.native
     
-    def getLineText(indentToRemove: Double): String = js.native
+    /* CompleteClass */
+    override def getLineText(indentToRemove: Double): String = js.native
     
-    def getRestTrimmed(length: Double): String = js.native
+    /* CompleteClass */
+    override def getRestTrimmed(length: Double): String = js.native
     
-    def getTableCells(): js.Array[Column] = js.native
+    /* CompleteClass */
+    override def getTableCells(): js.Array[Column] = js.native
     
-    def getTags(): js.Array[Column] = js.native
+    /* CompleteClass */
+    override def getTags(): js.Array[Column] = js.native
     
+    /* CompleteClass */
     var indent: Double = js.native
     
+    /* CompleteClass */
     var isEmpty: Boolean = js.native
     
-    val lineNumber: js.Any = js.native
+    /* CompleteClass */
+    override val lineNumber: js.Any = js.native
     
-    val lineText: js.Any = js.native
+    /* CompleteClass */
+    override val lineText: js.Any = js.native
     
-    def startsWith(prefix: String): Boolean = js.native
+    /* CompleteClass */
+    override def startsWith(prefix: String): Boolean = js.native
     
-    def startsWithTitleKeyword(keyword: String): Boolean = js.native
+    /* CompleteClass */
+    override def startsWithTitleKeyword(keyword: String): Boolean = js.native
     
+    /* CompleteClass */
     var text: String = js.native
     
+    /* CompleteClass */
     var trimmedLineText: String = js.native
+  }
+  
+  trait GherkinLine extends StObject {
+    
+    var column: Double
+    
+    def getLineText(indentToRemove: Double): String
+    
+    def getRestTrimmed(length: Double): String
+    
+    def getTableCells(): js.Array[Column]
+    
+    def getTags(): js.Array[Column]
+    
+    var indent: Double
+    
+    var isEmpty: Boolean
+    
+    val lineNumber: js.Any
+    
+    val lineText: js.Any
+    
+    def startsWith(prefix: String): Boolean
+    
+    def startsWithTitleKeyword(keyword: String): Boolean
+    
+    var text: String
+    
+    var trimmedLineText: String
   }
   object GherkinLine {
     

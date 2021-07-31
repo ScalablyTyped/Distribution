@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderCreatedEventUIParam extends StObject {
   
   /**
     * Gets reference to the igZoombar.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the created provider.
     */
-  var provider: js.UndefOr[js.Any] = js.native
+  var provider: js.UndefOr[js.Any] = js.undefined
 }
 object ProviderCreatedEventUIParam {
   

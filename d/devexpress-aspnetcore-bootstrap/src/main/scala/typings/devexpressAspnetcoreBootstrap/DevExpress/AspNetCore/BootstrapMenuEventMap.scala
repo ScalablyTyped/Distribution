@@ -2,21 +2,21 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapMenuEventMap extends ControlEventMap {
+trait BootstrapMenuEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var closeUp: MenuItemEventArgs = js.native
+  var closeUp: MenuItemEventArgs
   
-  var itemClick: MenuItemClickEventArgs = js.native
+  var itemClick: MenuItemClickEventArgs
   
-  var itemMouseOut: MenuItemMouseEventArgs = js.native
+  var itemMouseOut: MenuItemMouseEventArgs
   
-  var itemMouseOver: MenuItemMouseEventArgs = js.native
+  var itemMouseOver: MenuItemMouseEventArgs
   
-  var popUp: MenuItemEventArgs = js.native
+  var popUp: MenuItemEventArgs
 }
 object BootstrapMenuEventMap {
   

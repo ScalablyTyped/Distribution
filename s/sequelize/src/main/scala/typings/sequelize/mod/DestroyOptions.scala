@@ -2,41 +2,41 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options used for Model.destroy
   */
-@js.native
-trait DestroyOptions extends TruncateOptions {
+trait DestroyOptions
+  extends StObject
+     with TruncateOptions {
   
   /**
     * Run before / after bulk destroy hooks?
     */
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, destroy will SELECT all records matching the where parameter and will execute before /
     * after destroy hooks on each row
     */
-  var individualHooks: js.UndefOr[Boolean] = js.native
+  var individualHooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How many rows to delete
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * If set to true, dialects that support it will use TRUNCATE instead of DELETE FROM. If a table is
     * truncated the where and limit options are ignored
     */
-  var truncate: js.UndefOr[Boolean] = js.native
+  var truncate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filter the destroy
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object DestroyOptions {
   

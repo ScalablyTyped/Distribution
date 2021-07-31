@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link BridgeFactory} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XBridgeFactory2
-  extends XBridgeFactory
+  extends StObject
+     with XBridgeFactory
      with XComponent
 object XBridgeFactory2 {
   

@@ -5,20 +5,20 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAccessibleGetAccFlowTo extends XInterface {
+trait XAccessibleGetAccFlowTo
+  extends StObject
+     with XInterface {
   
-  def getAccFlowTo(aXShape: js.Any, nType: Double): SafeArray[_] = js.native
+  def getAccFlowTo(aXShape: js.Any, nType: Double): SafeArray[js.Any]
 }
 object XAccessibleGetAccFlowTo {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    getAccFlowTo: (js.Any, Double) => SafeArray[_],
+    getAccFlowTo: (js.Any, Double) => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XAccessibleGetAccFlowTo = {
@@ -30,6 +30,6 @@ object XAccessibleGetAccFlowTo {
   implicit class XAccessibleGetAccFlowToMutableBuilder[Self <: XAccessibleGetAccFlowTo] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetAccFlowTo(value: (js.Any, Double) => SafeArray[_]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
+    def setGetAccFlowTo(value: (js.Any, Double) => SafeArray[js.Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
   }
 }

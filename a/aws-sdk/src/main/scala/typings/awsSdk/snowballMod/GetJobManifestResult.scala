@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobManifestResult extends StObject {
   
   /**
     * The Amazon S3 presigned URL for the manifest file associated with the specified JobId value.
     */
-  var ManifestURI: js.UndefOr[String] = js.native
+  var ManifestURI: js.UndefOr[String] = js.undefined
 }
 object GetJobManifestResult {
   

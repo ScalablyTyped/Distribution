@@ -2,25 +2,23 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A GitSourceContext denotes a particular revision in a third party Git
   * repository (e.g., GitHub).
   */
-@js.native
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext extends StObject {
   
   /**
     * Required. Git commit hash.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
   /**
     * Git repository URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext {
   

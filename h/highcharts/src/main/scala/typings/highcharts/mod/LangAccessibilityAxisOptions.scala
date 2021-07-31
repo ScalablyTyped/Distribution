@@ -2,31 +2,29 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilityAxisOptions extends StObject {
   
-  var rangeCategories: js.UndefOr[String] = js.native
+  var rangeCategories: js.UndefOr[String] = js.undefined
   
-  var rangeFromTo: js.UndefOr[String] = js.native
+  var rangeFromTo: js.UndefOr[String] = js.undefined
   
-  var timeRangeDays: js.UndefOr[String] = js.native
+  var timeRangeDays: js.UndefOr[String] = js.undefined
   
-  var timeRangeHours: js.UndefOr[String] = js.native
+  var timeRangeHours: js.UndefOr[String] = js.undefined
   
-  var timeRangeMinutes: js.UndefOr[String] = js.native
+  var timeRangeMinutes: js.UndefOr[String] = js.undefined
   
-  var timeRangeSeconds: js.UndefOr[String] = js.native
+  var timeRangeSeconds: js.UndefOr[String] = js.undefined
   
-  var xAxisDescriptionPlural: js.UndefOr[String] = js.native
+  var xAxisDescriptionPlural: js.UndefOr[String] = js.undefined
   
-  var xAxisDescriptionSingular: js.UndefOr[String] = js.native
+  var xAxisDescriptionSingular: js.UndefOr[String] = js.undefined
   
-  var yAxisDescriptionPlural: js.UndefOr[String] = js.native
+  var yAxisDescriptionPlural: js.UndefOr[String] = js.undefined
   
-  var yAxisDescriptionSingular: js.UndefOr[String] = js.native
+  var yAxisDescriptionSingular: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityAxisOptions {
   

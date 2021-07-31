@@ -2,25 +2,23 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluginDefinition extends StObject {
   
-  var afterInit: js.UndefOr[js.Function1[/* editor */ editor, _]] = js.native
+  var afterInit: js.UndefOr[js.Function1[/* editor */ editor, js.Any]] = js.undefined
   
-  var beforeInit: js.UndefOr[js.Function1[/* editor */ editor, _]] = js.native
+  var beforeInit: js.UndefOr[js.Function1[/* editor */ editor, js.Any]] = js.undefined
   
-  var hidpi: js.UndefOr[Boolean] = js.native
+  var hidpi: js.UndefOr[Boolean] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* editor */ editor, Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* editor */ editor, Unit]] = js.undefined
   
-  var lang: js.UndefOr[String | js.Array[String]] = js.native
+  var lang: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function0[_]] = js.native
+  var onLoad: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var requires: js.UndefOr[String | js.Array[String]] = js.native
+  var requires: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object pluginDefinition {
   
@@ -34,13 +32,13 @@ object pluginDefinition {
   implicit class pluginDefinitionMutableBuilder[Self <: pluginDefinition] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAfterInit(value: /* editor */ editor => _): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
+    def setAfterInit(value: /* editor */ editor => js.Any): Self = StObject.set(x, "afterInit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
     
     @scala.inline
-    def setBeforeInit(value: /* editor */ editor => _): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1(value))
+    def setBeforeInit(value: /* editor */ editor => js.Any): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
@@ -67,7 +65,7 @@ object pluginDefinition {
     def setLangVarargs(value: String*): Self = StObject.set(x, "lang", js.Array(value :_*))
     
     @scala.inline
-    def setOnLoad(value: () => _): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+    def setOnLoad(value: () => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)

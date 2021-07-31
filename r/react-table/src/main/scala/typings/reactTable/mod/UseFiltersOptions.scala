@@ -2,22 +2,20 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualFilters :boolean,   disableFilters :boolean,   defaultCanFilter :boolean,   filterTypes :react-table.react-table.FilterTypes<D>,   autoResetFilters :boolean | undefined}> */
-@js.native
 trait UseFiltersOptions[D /* <: js.Object */] extends StObject {
   
-  var autoResetFilters: js.UndefOr[Boolean] = js.native
+  var autoResetFilters: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCanFilter: js.UndefOr[Boolean] = js.native
+  var defaultCanFilter: js.UndefOr[Boolean] = js.undefined
   
-  var disableFilters: js.UndefOr[Boolean] = js.native
+  var disableFilters: js.UndefOr[Boolean] = js.undefined
   
-  var filterTypes: js.UndefOr[FilterTypes[D]] = js.native
+  var filterTypes: js.UndefOr[FilterTypes[D]] = js.undefined
   
-  var manualFilters: js.UndefOr[Boolean] = js.native
+  var manualFilters: js.UndefOr[Boolean] = js.undefined
 }
 object UseFiltersOptions {
   
@@ -28,7 +26,7 @@ object UseFiltersOptions {
   }
   
   @scala.inline
-  implicit class UseFiltersOptionsMutableBuilder[Self <: UseFiltersOptions[_], D /* <: js.Object */] (val x: Self with UseFiltersOptions[D]) extends AnyVal {
+  implicit class UseFiltersOptionsMutableBuilder[Self <: UseFiltersOptions[?], D /* <: js.Object */] (val x: Self & UseFiltersOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAutoResetFilters(value: Boolean): Self = StObject.set(x, "autoResetFilters", value.asInstanceOf[js.Any])

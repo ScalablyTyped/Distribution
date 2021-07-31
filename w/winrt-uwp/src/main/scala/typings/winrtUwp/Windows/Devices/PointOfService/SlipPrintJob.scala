@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Rect
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of printing instructions that you want to run on the slip printer station. */

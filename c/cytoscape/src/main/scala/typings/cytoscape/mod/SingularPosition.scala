@@ -2,60 +2,58 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/position--dimensions
   */
-@js.native
 trait SingularPosition extends StObject {
   
   /**
     * Gets whether the element is active (e.g. on user tap, grab, etc).
     * http://js.cytoscape.org/#ele.active
     */
-  def active(): Boolean = js.native
+  def active(): Boolean
   
   /**
     * Get the height of the element.
     */
-  def height(): Double = js.native
+  def height(): Double
   
   /**
     * Get the outer height of the element (includes height, padding, & border).
     */
-  def outerHeight(): Double = js.native
+  def outerHeight(): Double
   
   /**
     * Get the outer width of the element (includes width, padding, & border).
     */
-  def outerWidth(): Double = js.native
+  def outerWidth(): Double
   
   /**
     * Get the height of the element in rendered dimensions.
     */
-  def renderedHeight(): Double = js.native
+  def renderedHeight(): Double
   
   /**
     * Get the outer height of the element (includes height, padding, & border) in rendered dimensions.
     */
-  def renderedOuterHeight(): Double = js.native
+  def renderedOuterHeight(): Double
   
   /**
     * Get the outer width of the element (includes width, padding, & border) in rendered dimensions.
     */
-  def renderedOuterWidth(): Double = js.native
+  def renderedOuterWidth(): Double
   
   /**
     * Get the width of the element in rendered dimensions.
     */
-  def renderedWidth(): Double = js.native
+  def renderedWidth(): Double
   
   /**
     * Get the width of the element.
     */
-  def width(): Double = js.native
+  def width(): Double
 }
 object SingularPosition {
   

@@ -2,25 +2,23 @@ package typings.ismobilejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Blackberry extends StObject {
     
-    var blackberry: Boolean = js.native
+    var blackberry: Boolean
     
-    var blackberry10: Boolean = js.native
+    var blackberry10: Boolean
     
-    var chrome: Boolean = js.native
+    var chrome: Boolean
     
-    var device: Boolean = js.native
+    var device: Boolean
     
-    var firefox: Boolean = js.native
+    var firefox: Boolean
     
-    var opera: Boolean = js.native
+    var opera: Boolean
   }
   object Blackberry {
     
@@ -60,18 +58,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Device extends StObject {
     
-    var device: Boolean = js.native
+    var device: Boolean
     
-    var ipod: Boolean = js.native
+    var ipod: Boolean
     
-    var phone: Boolean = js.native
+    var phone: Boolean
     
-    var tablet: Boolean = js.native
+    var tablet: Boolean
     
-    var universal: Boolean = js.native
+    var universal: Boolean
   }
   object Device {
     
@@ -101,14 +98,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Phone extends StObject {
     
-    var device: Boolean = js.native
+    var device: Boolean
     
-    var phone: Boolean = js.native
+    var phone: Boolean
     
-    var tablet: Boolean = js.native
+    var tablet: Boolean
   }
   object Phone {
     

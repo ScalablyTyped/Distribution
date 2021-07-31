@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchSourceFilter extends Object {
+trait SearchSourceFilter
+  extends StObject
+     with Object {
   
   /**
     * The filter geometry for suggests or search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
-  var geometry: js.UndefOr[Geometry_] = js.native
+  var geometry: js.UndefOr[Geometry_] = js.undefined
   
   /**
     * The where clause specified for filtering suggests or search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object SearchSourceFilter {
   

@@ -2,19 +2,17 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a function in a script project.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeFunction extends StObject {
   
   /**
     * The function name in the script project.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeFunction {
   

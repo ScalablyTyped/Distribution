@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskMap extends StObject {
   
   /**
     * The new disk name (e.g., my-new-disk).
     */
-  var newDiskName: js.UndefOr[ResourceName] = js.native
+  var newDiskName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The original disk path exposed to the instance (for example, /dev/sdh).
     */
-  var originalDiskPath: js.UndefOr[NonEmptyString] = js.native
+  var originalDiskPath: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DiskMap {
   

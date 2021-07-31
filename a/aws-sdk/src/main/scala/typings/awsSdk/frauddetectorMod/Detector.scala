@@ -2,41 +2,39 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Detector extends StObject {
   
   /**
     * The detector ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * Timestamp of when the detector was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The detector description.
     */
-  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.native
+  var description: js.UndefOr[typings.awsSdk.frauddetectorMod.description] = js.undefined
   
   /**
     * The detector ID.
     */
-  var detectorId: js.UndefOr[identifier] = js.native
+  var detectorId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The name of the event type.
     */
-  var eventTypeName: js.UndefOr[identifier] = js.native
+  var eventTypeName: js.UndefOr[identifier] = js.undefined
   
   /**
     * Timestamp of when the detector was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
 }
 object Detector {
   

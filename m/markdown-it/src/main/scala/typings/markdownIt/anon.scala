@@ -3,15 +3,13 @@ package typings.markdownIt
 import typings.mdurl.mod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mdurl extends StObject {
     
-    var mdurl: Typeofmdurl = js.native
+    var mdurl: Typeofmdurl
   }
   object Mdurl {
     
@@ -44,9 +42,9 @@ object anon {
   trait Typeofencode extends StObject {
     
     def apply(str: String): String = js.native
-    def apply(str: String, exclude: js.UndefOr[scala.Nothing], keepEscaped: Boolean): String = js.native
     def apply(str: String, exclude: String): String = js.native
     def apply(str: String, exclude: String, keepEscaped: Boolean): String = js.native
+    def apply(str: String, exclude: Unit, keepEscaped: Boolean): String = js.native
     
     val componentChars: String = js.native
     
@@ -59,16 +57,15 @@ object anon {
     def apply(url: Url): String = js.native
   }
   
-  @js.native
   trait Typeofmdurl extends StObject {
     
-    val decode: Typeofdecode = js.native
+    val decode: Typeofdecode
     
-    val encode: Typeofencode = js.native
+    val encode: Typeofencode
     
-    val format: Typeofformat = js.native
+    val format: Typeofformat
     
-    val parse: Typeofparse = js.native
+    val parse: Typeofparse
   }
   object Typeofmdurl {
     

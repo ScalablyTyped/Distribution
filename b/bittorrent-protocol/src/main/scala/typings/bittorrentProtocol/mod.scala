@@ -27,13 +27,10 @@ import typings.bittorrentProtocol.bittorrentProtocolStrings.upload
 import typings.bittorrentProtocol.bittorrentProtocolStrings.webSeed
 import typings.bittorrentProtocol.bittorrentProtocolStrings.webrtc
 import typings.node.Buffer
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.streamMod.Duplex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -47,17 +44,18 @@ object mod extends Shortcut {
   val ^ : BittorrentProtocol = js.native
   
   @js.native
-  trait BittorrentProtocol extends Instantiable0[Wire] {
+  trait BittorrentProtocol
+    extends StObject
+       with Instantiable0[Wire] {
     
     def apply(): Wire = js.native
   }
   
-  @js.native
   trait Extension extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var onExtendedHandshake: js.UndefOr[js.Function1[/* handshake */ StringDictionary[js.Any], Unit]] = js.native
+    var onExtendedHandshake: js.UndefOr[js.Function1[/* handshake */ StringDictionary[js.Any], Unit]] = js.undefined
     
     var onHandshake: js.UndefOr[
         js.Function3[
@@ -66,9 +64,9 @@ object mod extends Shortcut {
           /* extensions */ StringDictionary[Boolean], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onMessage: js.UndefOr[js.Function1[/* buf */ Buffer, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* buf */ Buffer, Unit]] = js.undefined
   }
   object Extension {
     
@@ -107,18 +105,19 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ExtensionConstructor extends Instantiable1[/* wire */ Wire, Extension]
+  trait ExtensionConstructor
+    extends StObject
+       with Instantiable1[/* wire */ Wire, Extension]
   
-  @js.native
   trait Request extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var length: Double = js.native
+    var length: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var piece: Double = js.native
+    var piece: Double
   }
   object Request {
     
@@ -145,10 +144,18 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Wire
-    extends Duplex
-       with /* key */ StringDictionary[js.Any] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
+  trait Wire extends Duplex {
     
     // connection type
     val amChoking: Boolean = js.native
@@ -251,11 +258,6 @@ object mod extends Shortcut {
     val peerRequests: js.Array[Request] = js.native
     
     def piece(index: Double, offset: Double, buffer: Buffer): Unit = js.native
-    
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     def port(port: Double): Unit = js.native
     

@@ -2,23 +2,21 @@ package typings.usePosition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accuracy extends StObject {
     
-    var accuracy: js.UndefOr[Double] = js.native
+    var accuracy: js.UndefOr[Double] = js.undefined
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var latitude: js.UndefOr[Double] = js.native
+    var latitude: js.UndefOr[Double] = js.undefined
     
-    var longitude: js.UndefOr[Double] = js.native
+    var longitude: js.UndefOr[Double] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object Accuracy {
     

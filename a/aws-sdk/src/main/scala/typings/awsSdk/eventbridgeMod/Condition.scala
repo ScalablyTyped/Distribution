@@ -2,26 +2,24 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
   /**
     * Specifies the key for the condition. Currently the only supported key is aws:PrincipalOrgID.
     */
-  var Key: String = js.native
+  var Key: String
   
   /**
     * Specifies the type of condition. Currently the only supported value is StringEquals.
     */
-  var Type: String = js.native
+  var Type: String
   
   /**
     * Specifies the value for the key. Currently, this must be the ID of the organization.
     */
-  var Value: String = js.native
+  var Value: String
 }
 object Condition {
   

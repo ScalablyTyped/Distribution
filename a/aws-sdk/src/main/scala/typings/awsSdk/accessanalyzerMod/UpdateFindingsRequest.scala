@@ -2,36 +2,34 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFindingsRequest extends StObject {
   
   /**
     * The ARN of the analyzer that generated the findings to update.
     */
-  var analyzerArn: AnalyzerArn = js.native
+  var analyzerArn: AnalyzerArn
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the findings to update.
     */
-  var ids: js.UndefOr[FindingIdList] = js.native
+  var ids: js.UndefOr[FindingIdList] = js.undefined
   
   /**
     * The ARN of the resource identified in the finding.
     */
-  var resourceArn: js.UndefOr[ResourceArn] = js.native
+  var resourceArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
     * The state represents the action to take to update the finding Status. Use ARCHIVE to change an Active finding to an Archived finding. Use ACTIVE to change an Archived finding to an Active finding.
     */
-  var status: FindingStatusUpdate = js.native
+  var status: FindingStatusUpdate
 }
 object UpdateFindingsRequest {
   

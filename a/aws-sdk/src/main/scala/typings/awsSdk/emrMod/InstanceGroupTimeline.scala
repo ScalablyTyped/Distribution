@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupTimeline extends StObject {
   
   /**
     * The creation date and time of the instance group.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the instance group terminated.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the instance group became ready to perform tasks.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.native
+  var ReadyDateTime: js.UndefOr[Date] = js.undefined
 }
 object InstanceGroupTimeline {
   

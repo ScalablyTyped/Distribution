@@ -2,16 +2,14 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The resource ARN.
     */
-  var resourceArn: AmazonResourceName = js.native
+  var resourceArn: AmazonResourceName
 }
 object ListTagsForResourceRequest {
   

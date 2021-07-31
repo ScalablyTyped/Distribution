@@ -3,33 +3,31 @@ package typings.meteor.anon
 import typings.meteor.emailMod.MailComposer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachments extends StObject {
   
-  var attachments: js.UndefOr[js.Array[js.Object]] = js.native
+  var attachments: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var bcc: js.UndefOr[String | js.Array[String]] = js.native
+  var bcc: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var cc: js.UndefOr[String | js.Array[String]] = js.native
+  var cc: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var mailComposer: js.UndefOr[MailComposer] = js.native
+  var mailComposer: js.UndefOr[MailComposer] = js.undefined
   
-  var replyTo: js.UndefOr[String | js.Array[String]] = js.native
+  var replyTo: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[String | js.Array[String]] = js.native
+  var to: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Attachments {
   

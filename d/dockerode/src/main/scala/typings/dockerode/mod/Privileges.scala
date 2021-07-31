@@ -4,15 +4,13 @@ import typings.dockerode.anon.Disable
 import typings.dockerode.anon.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Privileges extends StObject {
   
-  var CredentialSpec: js.UndefOr[File] = js.native
+  var CredentialSpec: js.UndefOr[File] = js.undefined
   
-  var SELinuxContext: js.UndefOr[Disable] = js.native
+  var SELinuxContext: js.UndefOr[Disable] = js.undefined
 }
 object Privileges {
   

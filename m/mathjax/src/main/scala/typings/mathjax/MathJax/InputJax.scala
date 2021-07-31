@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputJax extends StObject {
   
   /*This is the method that the MathJax.Hub calls when it needs the input jax to process the given math <script>.
@@ -19,13 +17,13 @@ trait InputJax extends StObject {
     * Once the jax.js file has loaded, this method is replaced by the jax’s Translate() method (see below), so that
     * subsequent calls to Process() will perform the appropriate translation.
     */
-  def Process(script: js.Any, state: js.Any): js.Any = js.native
+  def Process(script: js.Any, state: js.Any): js.Any
   
   /*This registers the MIME-type associated with this input jax so that MathJax knows to call this input jax when
     * it sees a <script> of that type. An input jax can register more than one type, but it will be responsible for
     * distinguishing elements of the various types from one another.
     */
-  def Register(mimetype: String): Unit = js.native
+  def Register(mimetype: String): Unit
   
   /*This is the main routine called by MathJax when a <script> of the appropriate type is found. The default
     * Translate() method throws an error indicating that Translate() hasn’t been defined, so when the jax.js file
@@ -34,26 +32,26 @@ trait InputJax extends StObject {
     * The translation process should include the creation of an Element Jax that stores the data needed for this
     * element.
     */
-  def Translate(script: js.Any, state: js.Any): ElementJax = js.native
+  def Translate(script: js.Any, state: js.Any): ElementJax
   
   /*The directory where the jax files are stored (e.g., "[MathJax]/jax/input/TeX").*/
-  var directory: String = js.native
+  var directory: String
   
   /*The name of the ElementJax class that this input jax will produce (typically mml, as that is the only
     * ElementJax at the moment).
     */
-  var elementJax: String = js.native
+  var elementJax: String
   
   /*The name of the jax.*/
-  var id: String = js.native
+  var id: String
   
   /*This implements the element jax’s needsUpdate() method, and returns true if the jax needs to be rerendered
     * (i.e., the text has changed), and false otherwise.
     */
-  def needsUpdate(element: js.Any): Boolean = js.native
+  def needsUpdate(element: js.Any): Boolean
   
   /*The version number of the jax.*/
-  var version: String = js.native
+  var version: String
 }
 object InputJax {
   

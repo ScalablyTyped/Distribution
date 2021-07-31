@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait DataBarConditionalFormatLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var axisColor: js.UndefOr[Boolean] = js.native
+  var axisColor: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var axisFormat: js.UndefOr[Boolean] = js.native
+  var axisFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var barDirection: js.UndefOr[Boolean] = js.native
+  var barDirection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var lowerBoundRule: js.UndefOr[Boolean] = js.native
+  var lowerBoundRule: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatLoadOptions] = js.native
+  var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var positiveFormat: js.UndefOr[ConditionalDataBarPositiveFormatLoadOptions] = js.native
+  var positiveFormat: js.UndefOr[ConditionalDataBarPositiveFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var showDataBarOnly: js.UndefOr[Boolean] = js.native
+  var showDataBarOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait DataBarConditionalFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var upperBoundRule: js.UndefOr[Boolean] = js.native
+  var upperBoundRule: js.UndefOr[Boolean] = js.undefined
 }
 object DataBarConditionalFormatLoadOptions {
   

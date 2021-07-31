@@ -3,27 +3,25 @@ package typings.ytSearch.mod
 import typings.ytSearch.ytSearchStrings.list
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistSearchResult extends StObject {
   
-  var author: Author = js.native
+  var author: Author
   
-  var image: String = js.native
+  var image: String
   
-  var listId: String = js.native
+  var listId: String
   
-  var thumbnail: String = js.native
+  var thumbnail: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: list = js.native
+  var `type`: list
   
-  var url: String = js.native
+  var url: String
   
-  var videoCount: Double = js.native
+  var videoCount: Double
 }
 object PlaylistSearchResult {
   
@@ -34,12 +32,11 @@ object PlaylistSearchResult {
     listId: String,
     thumbnail: String,
     title: String,
-    `type`: list,
     url: String,
     videoCount: Double
   ): PlaylistSearchResult = {
     val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], listId = listId.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], videoCount = videoCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list")
     __obj.asInstanceOf[PlaylistSearchResult]
   }
   

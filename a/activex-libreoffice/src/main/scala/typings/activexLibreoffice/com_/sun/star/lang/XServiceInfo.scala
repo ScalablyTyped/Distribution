@@ -5,43 +5,43 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information regarding the implementation: which services are implemented and the name of the implementation. */
-@js.native
-trait XServiceInfo extends XInterface {
+trait XServiceInfo
+  extends StObject
+     with XInterface {
   
   /**
     * Provides the implementation name of the service implementation.
     * @returns unique name of the implementation
     */
-  val ImplementationName: String = js.native
+  val ImplementationName: String
   
   /**
     * Provides the supported service names of the implementation, including also indirect service names.
     * @returns sequence of service names that are supported
     */
-  val SupportedServiceNames: SafeArray[String] = js.native
+  val SupportedServiceNames: SafeArray[String]
   
   /**
     * Provides the implementation name of the service implementation.
     * @returns unique name of the implementation
     */
-  def getImplementationName(): String = js.native
+  def getImplementationName(): String
   
   /**
     * Provides the supported service names of the implementation, including also indirect service names.
     * @returns sequence of service names that are supported
     */
-  def getSupportedServiceNames(): SafeArray[String] = js.native
+  def getSupportedServiceNames(): SafeArray[String]
   
   /**
     * Tests whether the specified service is supported, i.e. implemented by the implementation.
     * @param ServiceName name of service to be tested
     * @returns true, if service is supported, false otherwise
     */
-  def supportsService(ServiceName: String): Boolean = js.native
+  def supportsService(ServiceName: String): Boolean
 }
 object XServiceInfo {
   

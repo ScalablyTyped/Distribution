@@ -13,17 +13,18 @@ import typings.std.Parameters
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("@redux-saga/core/types", JSImport.Default)
+  @JSImport("@redux-saga/core/types", JSImport.Namespace)
   @js.native
-  def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native
-  @JSImport("@redux-saga/core/types", JSImport.Default)
-  @js.native
-  def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[C /* <: js.Object */](): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SagaMiddleware[C]]
+  @scala.inline
+  def default[C /* <: js.Object */](options: SagaMiddlewareOptions[C]): SagaMiddleware[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SagaMiddleware[C]]
   
   @JSImport("@redux-saga/core/types", "CANCEL")
   @js.native
@@ -36,99 +37,85 @@ object typesMod {
   
   object buffers {
     
+    @JSImport("@redux-saga/core/types", "buffers")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Same as `fixed` but Overflow will silently drop the messages.
       */
-    @JSImport("@redux-saga/core/types", "buffers.dropping")
-    @js.native
-    def dropping[T](): Buffer = js.native
-    @JSImport("@redux-saga/core/types", "buffers.dropping")
-    @js.native
-    def dropping[T](limit: Double): Buffer = js.native
+    @scala.inline
+    def dropping[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")().asInstanceOf[Buffer]
+    @scala.inline
+    def dropping[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("dropping")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * Like `fixed` but Overflow will cause the buffer to expand dynamically.
       */
-    @JSImport("@redux-saga/core/types", "buffers.expanding")
-    @js.native
-    def expanding[T](): Buffer = js.native
-    @JSImport("@redux-saga/core/types", "buffers.expanding")
-    @js.native
-    def expanding[T](limit: Double): Buffer = js.native
+    @scala.inline
+    def expanding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")().asInstanceOf[Buffer]
+    @scala.inline
+    def expanding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("expanding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * New messages will be buffered up to `limit`. Overflow will raise an Error.
       * Omitting a `limit` value will result in a limit of 10.
       */
-    @JSImport("@redux-saga/core/types", "buffers.fixed")
-    @js.native
-    def fixed[T](): Buffer = js.native
-    @JSImport("@redux-saga/core/types", "buffers.fixed")
-    @js.native
-    def fixed[T](limit: Double): Buffer = js.native
+    @scala.inline
+    def fixed[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")().asInstanceOf[Buffer]
+    @scala.inline
+    def fixed[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("fixed")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
     /**
       * No buffering, new messages will be lost if there are no pending takers
       */
-    @JSImport("@redux-saga/core/types", "buffers.none")
-    @js.native
-    def none[T](): Buffer = js.native
+    @scala.inline
+    def none[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("none")().asInstanceOf[Buffer]
     
     /**
       * Same as `fixed` but Overflow will insert the new message at the end and
       * drop the oldest message in the buffer.
       */
-    @JSImport("@redux-saga/core/types", "buffers.sliding")
-    @js.native
-    def sliding[T](): Buffer = js.native
-    @JSImport("@redux-saga/core/types", "buffers.sliding")
-    @js.native
-    def sliding[T](limit: Double): Buffer = js.native
+    @scala.inline
+    def sliding[T](): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")().asInstanceOf[Buffer]
+    @scala.inline
+    def sliding[T](limit: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sliding")(limit.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   }
   
-  @JSImport("@redux-saga/core/types", "channel")
-  @js.native
-  def channel[T](): js.Any = js.native
-  @JSImport("@redux-saga/core/types", "channel")
-  @js.native
-  def channel[T](buffer: Buffer): js.Any = js.native
+  @scala.inline
+  def channel[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")().asInstanceOf[js.Any]
+  @scala.inline
+  def channel[T](buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@redux-saga/core/types", "detach")
-  @js.native
-  def detach(forkEffect: ForkEffect): ForkEffect = js.native
+  @scala.inline
+  def detach(forkEffect: ForkEffect): ForkEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(forkEffect.asInstanceOf[js.Any]).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/types", "eventChannel")
-  @js.native
-  def eventChannel[T](subscribe: Subscribe[T]): EventChannel_[T] = js.native
-  @JSImport("@redux-saga/core/types", "eventChannel")
-  @js.native
-  def eventChannel[T](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = js.native
+  @scala.inline
+  def eventChannel[T](subscribe: Subscribe[T]): EventChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any]).asInstanceOf[EventChannel_[T]]
+  @scala.inline
+  def eventChannel[T](subscribe: Subscribe[T], buffer: Buffer): EventChannel_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventChannel")(subscribe.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[EventChannel_[T]]
   
-  @JSImport("@redux-saga/core/types", "multicastChannel")
-  @js.native
-  def multicastChannel[T](): MulticastChannel_[T] = js.native
+  @scala.inline
+  def multicastChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("multicastChannel")().asInstanceOf[MulticastChannel_[T]]
   
-  @JSImport("@redux-saga/core/types", "runSaga")
-  @js.native
+  @scala.inline
   def runSaga[Action, State, S /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any */](
     options: RunSagaOptions[Action, State],
     saga: S,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<S> is not an array type */ args: Parameters[S]
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runSaga")(options.asInstanceOf[js.Any], saga.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@redux-saga/core/types", "stdChannel")
-  @js.native
-  def stdChannel[T](): MulticastChannel_[T] = js.native
+  @scala.inline
+  def stdChannel[T](): MulticastChannel_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("stdChannel")().asInstanceOf[MulticastChannel_[T]]
   
   type EffectMiddleware = js.Function1[
     /* next */ js.Function1[/* effect */ js.Any, Unit], 
     js.Function1[/* effect */ js.Any, Unit]
   ]
   
-  @js.native
   trait ErrorInfo extends StObject {
     
-    var sagaStack: String = js.native
+    var sagaStack: String
   }
   object ErrorInfo {
     
@@ -146,14 +133,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait EventChannel_[T] extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def flush(cb: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
+    def flush(cb: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit]): Unit
     
-    def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
+    def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit
   }
   object EventChannel_ {
     
@@ -168,7 +154,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class EventChannel_MutableBuilder[Self <: EventChannel_[_], T] (val x: Self with EventChannel_[T]) extends AnyVal {
+    implicit class EventChannel_MutableBuilder[Self <: EventChannel_[?], T] (val x: Self & EventChannel_[T]) extends AnyVal {
       
       @scala.inline
       def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
@@ -181,10 +167,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait FlushableChannel[T] extends StObject {
     
-    def flush(cb: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
+    def flush(cb: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit]): Unit
   }
   object FlushableChannel {
     
@@ -195,7 +180,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class FlushableChannelMutableBuilder[Self <: FlushableChannel[_], T] (val x: Self with FlushableChannel[T]) extends AnyVal {
+    implicit class FlushableChannelMutableBuilder[Self <: FlushableChannel[?], T] (val x: Self & FlushableChannel[T]) extends AnyVal {
       
       @scala.inline
       def setFlush(value: js.Function1[/* items */ js.Array[T] | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
@@ -234,45 +219,44 @@ object typesMod {
     def put(message: typings.reduxSagaCore.typesMod.END): Unit = js.native
   }
   
-  @js.native
   trait RunSagaOptions[A, S] extends StObject {
     
     /**
       * See docs for `channel`
       */
-    var channel: js.UndefOr[PredicateTakeableChannel[A]] = js.native
+    var channel: js.UndefOr[PredicateTakeableChannel[A]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
       */
-    var context: js.UndefOr[js.Object] = js.native
+    var context: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Used to fulfill `put` effects.
       *
       * @param output argument provided by the Saga to the `put` Effect
       */
-    var dispatch: js.UndefOr[js.Function1[/* output */ A, _]] = js.native
+    var dispatch: js.UndefOr[js.Function1[/* output */ A, js.Any]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
       */
-    var effectMiddlewares: js.UndefOr[js.Array[EffectMiddleware]] = js.native
+    var effectMiddlewares: js.UndefOr[js.Array[EffectMiddleware]] = js.undefined
     
     /**
       * Used to fulfill `select` and `getState` effects
       */
-    var getState: js.UndefOr[js.Function0[S]] = js.native
+    var getState: js.UndefOr[js.Function0[S]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
       */
-    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
     
     /**
       * See docs for `createSagaMiddleware(options)`
       */
-    var sagaMonitor: js.UndefOr[SagaMonitor] = js.native
+    var sagaMonitor: js.UndefOr[SagaMonitor] = js.undefined
   }
   object RunSagaOptions {
     
@@ -283,7 +267,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class RunSagaOptionsMutableBuilder[Self <: RunSagaOptions[_, _], A, S] (val x: Self with (RunSagaOptions[A, S])) extends AnyVal {
+    implicit class RunSagaOptionsMutableBuilder[Self <: RunSagaOptions[?, ?], A, S] (val x: Self & (RunSagaOptions[A, S])) extends AnyVal {
       
       @scala.inline
       def setChannel(value: PredicateTakeableChannel[A]): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
@@ -298,7 +282,7 @@ object typesMod {
       def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
       @scala.inline
-      def setDispatch(value: /* output */ A => _): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      def setDispatch(value: /* output */ A => js.Any): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
@@ -383,31 +367,30 @@ object typesMod {
     def setContext(props: Partial[C]): Unit = js.native
   }
   
-  @js.native
   trait SagaMiddlewareOptions[C /* <: js.Object */] extends StObject {
     
     /**
       * Initial value of the saga's context.
       */
-    var context: js.UndefOr[C] = js.native
+    var context: js.UndefOr[C] = js.undefined
     
     /**
       * Allows you to intercept any effect, resolve it on your own and pass to the
       * next middleware.
       */
-    var effectMiddlewares: js.UndefOr[js.Array[EffectMiddleware]] = js.native
+    var effectMiddlewares: js.UndefOr[js.Array[EffectMiddleware]] = js.undefined
     
     /**
       * If provided, the middleware will call it with uncaught errors from Sagas.
       * useful for sending uncaught exceptions to error tracking services.
       */
-    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+    var onError: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
     
     /**
       * If a Saga Monitor is provided, the middleware will deliver monitoring
       * events to the monitor.
       */
-    var sagaMonitor: js.UndefOr[SagaMonitor] = js.native
+    var sagaMonitor: js.UndefOr[SagaMonitor] = js.undefined
   }
   object SagaMiddlewareOptions {
     
@@ -418,7 +401,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class SagaMiddlewareOptionsMutableBuilder[Self <: SagaMiddlewareOptions[_], C /* <: js.Object */] (val x: Self with SagaMiddlewareOptions[C]) extends AnyVal {
+    implicit class SagaMiddlewareOptionsMutableBuilder[Self <: SagaMiddlewareOptions[?], C /* <: js.Object */] (val x: Self & SagaMiddlewareOptions[C]) extends AnyVal {
       
       @scala.inline
       def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -449,7 +432,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SagaMonitor extends StObject {
     
     /**
@@ -457,25 +439,25 @@ object typesMod {
       * a Saga then the action will have a property `SAGA_ACTION` set to true
       * (`SAGA_ACTION` can be imported from `@redux-saga/symbols`).
       */
-    var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[_], Unit]] = js.native
+    var actionDispatched: js.UndefOr[js.Function1[/* action */ Action[js.Any], Unit]] = js.undefined
     
     /**
       * @param effectId The ID of the yielded effect
       */
-    var effectCancelled: js.UndefOr[js.Function1[/* effectId */ Double, Unit]] = js.native
+    var effectCancelled: js.UndefOr[js.Function1[/* effectId */ Double, Unit]] = js.undefined
     
     /**
       * @param effectId The ID of the yielded effect
       * @param error Error raised with the rejection of the effect
       */
-    var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ js.Any, Unit]] = js.native
+    var effectRejected: js.UndefOr[js.Function2[/* effectId */ Double, /* error */ js.Any, Unit]] = js.undefined
     
     /**
       * @param effectId The ID of the yielded effect
       * @param result The result of the successful resolution of the effect. In
       *   case of `fork` or `spawn` effects, the result will be a `Task` object.
       */
-    var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ js.Any, Unit]] = js.native
+    var effectResolved: js.UndefOr[js.Function2[/* effectId */ Double, /* result */ js.Any, Unit]] = js.undefined
     
     /**
       * @param effectId Unique ID assigned to the yielded effect
@@ -488,14 +470,14 @@ object typesMod {
       *   `race`/`all`
       * @param effect The yielded effect itself
       */
-    var effectTriggered: js.UndefOr[js.Function1[/* options */ Effect, Unit]] = js.native
+    var effectTriggered: js.UndefOr[js.Function1[/* options */ Effect, Unit]] = js.undefined
     
     /**
       * @param effectId Unique ID assigned to this root saga execution
       * @param saga The generator function that starts to run
       * @param args The arguments passed to the generator function
       */
-    var rootSagaStarted: js.UndefOr[js.Function1[/* options */ Args, Unit]] = js.native
+    var rootSagaStarted: js.UndefOr[js.Function1[/* options */ Args, Unit]] = js.undefined
   }
   object SagaMonitor {
     
@@ -509,7 +491,7 @@ object typesMod {
     implicit class SagaMonitorMutableBuilder[Self <: SagaMonitor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActionDispatched(value: /* action */ Action[_] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
+      def setActionDispatched(value: /* action */ Action[js.Any] => Unit): Self = StObject.set(x, "actionDispatched", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionDispatchedUndefined: Self = StObject.set(x, "actionDispatched", js.undefined)
@@ -551,10 +533,9 @@ object typesMod {
     Unsubscribe
   ]
   
-  @js.native
   trait TakeableChannel[T] extends StObject {
     
-    def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit = js.native
+    def take(cb: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit]): Unit
   }
   object TakeableChannel {
     
@@ -565,7 +546,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class TakeableChannelMutableBuilder[Self <: TakeableChannel[_], T] (val x: Self with TakeableChannel[T]) extends AnyVal {
+    implicit class TakeableChannelMutableBuilder[Self <: TakeableChannel[?], T] (val x: Self & TakeableChannel[T]) extends AnyVal {
       
       @scala.inline
       def setTake(value: js.Function1[/* message */ T | typings.reduxSagaCore.typesMod.END, Unit] => Unit): Self = StObject.set(x, "take", js.Any.fromFunction1(value))

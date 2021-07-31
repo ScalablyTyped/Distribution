@@ -4,29 +4,27 @@ import typings.playable.mediaStreamMod.MediaStreamDeliveryPriority
 import typings.playable.mediaStreamMod.MediaStreamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bitrates extends StObject {
   
-  var bitrates: js.Any = js.native
+  var bitrates: js.Any
   
-  var bwEstimate: js.Any = js.native
+  var bwEstimate: js.Any
   
-  var currentBitrate: js.Any = js.native
+  var currentBitrate: js.Any
   
-  var currentTrack: js.Any = js.native
+  var currentTrack: js.Any
   
-  var deliveryPriority: MediaStreamDeliveryPriority = js.native
+  var deliveryPriority: MediaStreamDeliveryPriority
   
-  var nearestBufferSegInfo: End = js.native
+  var nearestBufferSegInfo: End
   
-  var overallBufferLength: js.Any = js.native
+  var overallBufferLength: js.Any
   
-  var `type`: MediaStreamType = js.native
+  var `type`: MediaStreamType
   
-  var url: String = js.native
+  var url: String
 }
 object Bitrates {
   

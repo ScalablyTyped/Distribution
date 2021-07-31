@@ -14,47 +14,36 @@ import typings.tensorflowTfjsData.typesMod.WebcamConfig
 import typings.tensorflowTfjsData.webcamIteratorMod.WebcamIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readersMod {
   
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "csv")
+  @JSImport("@tensorflow/tfjs-data/dist/readers", JSImport.Namespace)
   @js.native
-  def csv(source: RequestInfo): CSVDataset = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "csv")
-  @js.native
-  def csv(source: RequestInfo, csvConfig: CSVConfig): CSVDataset = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "func")
-  @js.native
-  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, _]) | (js.Promise[IteratorResult[T, _]])]): Dataset[T] = js.native
+  @scala.inline
+  def csv(source: RequestInfo): CSVDataset = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any]).asInstanceOf[CSVDataset]
+  @scala.inline
+  def csv(source: RequestInfo, csvConfig: CSVConfig): CSVDataset = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(source.asInstanceOf[js.Any], csvConfig.asInstanceOf[js.Any])).asInstanceOf[CSVDataset]
   
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "generator")
-  @js.native
-  def generator[T /* <: TensorContainer */](
-    generator: js.Function0[
-      (Iterator[T, _, js.UndefOr[scala.Nothing]]) | (js.Promise[Iterator[T, _, js.UndefOr[scala.Nothing]]])
-    ]
-  ): Dataset[T] = js.native
+  @scala.inline
+  def func[T /* <: TensorContainer */](f: js.Function0[(IteratorResult[T, js.Any]) | (js.Promise[IteratorResult[T, js.Any]])]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(f.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "microphone")
-  @js.native
-  def microphone(): js.Promise[MicrophoneIterator] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "microphone")
-  @js.native
-  def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = js.native
+  @scala.inline
+  def generator[T /* <: TensorContainer */](generator: js.Function0[(Iterator[T, js.Any, Unit]) | (js.Promise[Iterator[T, js.Any, Unit]])]): Dataset[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("generator")(generator.asInstanceOf[js.Any]).asInstanceOf[Dataset[T]]
   
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "webcam")
-  @js.native
-  def webcam(): js.Promise[WebcamIterator] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "webcam")
-  @js.native
-  def webcam(webcamVideoElement: js.UndefOr[scala.Nothing], webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "webcam")
-  @js.native
-  def webcam(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/readers", "webcam")
-  @js.native
-  def webcam(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = js.native
+  @scala.inline
+  def microphone(): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")().asInstanceOf[js.Promise[MicrophoneIterator]]
+  @scala.inline
+  def microphone(microphoneConfig: MicrophoneConfig): js.Promise[MicrophoneIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("microphone")(microphoneConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MicrophoneIterator]]
+  
+  @scala.inline
+  def webcam(): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")().asInstanceOf[js.Promise[WebcamIterator]]
+  @scala.inline
+  def webcam(webcamVideoElement: Unit, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
+  @scala.inline
+  def webcam(webcamVideoElement: HTMLVideoElement): js.Promise[WebcamIterator] = ^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any]).asInstanceOf[js.Promise[WebcamIterator]]
+  @scala.inline
+  def webcam(webcamVideoElement: HTMLVideoElement, webcamConfig: WebcamConfig): js.Promise[WebcamIterator] = (^.asInstanceOf[js.Dynamic].applyDynamic("webcam")(webcamVideoElement.asInstanceOf[js.Any], webcamConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[WebcamIterator]]
 }

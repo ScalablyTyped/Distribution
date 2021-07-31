@@ -4,25 +4,25 @@ import typings.react.mod.global.JSX.Element
 import typings.reactabularTable.mod.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("reactabular-dnd", "Header")
+  @JSImport("reactabular-dnd", JSImport.Namespace)
   @js.native
-  def Header(props: js.Any): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("reactabular-dnd", "moveLabels")
-  @js.native
-  def moveLabels(columns: js.Array[Column], event: DndMoveEvent): js.Array[Column] = js.native
+  @scala.inline
+  def Header(props: js.Any): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Header")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
+  @scala.inline
+  def moveLabels(columns: js.Array[Column], event: DndMoveEvent): js.Array[Column] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveLabels")(columns.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[js.Array[Column]]
+  
   trait DndMoveEvent extends StObject {
     
-    var sourceLabel: String = js.native
+    var sourceLabel: String
     
-    var targetLabel: String = js.native
+    var targetLabel: String
   }
   object DndMoveEvent {
     

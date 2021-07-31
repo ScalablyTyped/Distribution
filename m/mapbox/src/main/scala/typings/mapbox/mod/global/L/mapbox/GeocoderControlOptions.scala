@@ -2,14 +2,13 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderControlOptions
-  extends typings.leaflet.mod.ControlOptions {
+  extends StObject
+     with typings.leaflet.mod.ControlOptions {
   
-  var keepOpen: js.UndefOr[Boolean] = js.native
+  var keepOpen: js.UndefOr[Boolean] = js.undefined
 }
 object GeocoderControlOptions {
   

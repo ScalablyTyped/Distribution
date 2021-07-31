@@ -9,16 +9,14 @@ import typings.nodeRedRuntime.nodeRedRuntimeStrings.trace
 import typings.nodeRedRuntime.nodeRedRuntimeStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audit extends StObject {
   
   /**
     * Whether or not to include audit events in the log output
     */
-  var audit: Boolean = js.native
+  var audit: Boolean
   
   /**
     * Level of logging to be recorded. Options are:
@@ -30,12 +28,12 @@ trait Audit extends StObject {
     * trace - record very detailed logging + debug + info + warn + error + fatal errors
     * off - turn off all logging (doesn't affect metrics or audit)
     */
-  var level: fatal | error | warn | info | debug | trace | off = js.native
+  var level: fatal | error | warn | info | debug | trace | off
   
   /**
     * Whether or not to include metric events in the log output
     */
-  var metrics: Boolean = js.native
+  var metrics: Boolean
 }
 object Audit {
   

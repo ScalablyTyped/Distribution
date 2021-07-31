@@ -2,17 +2,15 @@ package typings.miniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthCode extends StObject {
   
-  var authCode: String = js.native
+  var authCode: String
   
-  var authErrorScopes: js.Any = js.native
+  var authErrorScopes: js.Any
   
-  var authSuccessScopes: js.Array[String] = js.native
+  var authSuccessScopes: js.Array[String]
 }
 object AuthCode {
   

@@ -9,17 +9,15 @@ import typings.mmdbLib.mmdbLibStrings.OC
 import typings.mmdbLib.mmdbLibStrings.SA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinentRecord extends StObject {
   
-  val code: AF | AN | AS | EU | NA | OC | SA = js.native
+  val code: AF | AN | AS | EU | NA | OC | SA
   
-  val geoname_id: Double = js.native
+  val geoname_id: Double
   
-  val names: Names = js.native
+  val names: Names
 }
 object ContinentRecord {
   

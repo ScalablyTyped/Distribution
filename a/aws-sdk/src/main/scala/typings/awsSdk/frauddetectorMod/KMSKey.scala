@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KMSKey extends StObject {
   
   /**
     * The encryption key ARN.
     */
-  var kmsEncryptionKeyArn: js.UndefOr[KmsEncryptionKeyArn] = js.native
+  var kmsEncryptionKeyArn: js.UndefOr[KmsEncryptionKeyArn] = js.undefined
 }
 object KMSKey {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSchemaVersionSummary extends StObject {
   
   /**
     * The date the schema version was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.native
+  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The version number of the schema
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The type of schema.
     */
-  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.schemasMod.Type] = js.undefined
 }
 object SearchSchemaVersionSummary {
   

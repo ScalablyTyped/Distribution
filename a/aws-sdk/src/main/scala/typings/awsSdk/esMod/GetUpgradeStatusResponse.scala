@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUpgradeStatusResponse extends StObject {
   
   /**
     *  One of 4 statuses that a step can go through returned as part of the  GetUpgradeStatusResponse  object. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
     */
-  var StepStatus: js.UndefOr[UpgradeStatus] = js.native
+  var StepStatus: js.UndefOr[UpgradeStatus] = js.undefined
   
   /**
     * A string that describes the update briefly
     */
-  var UpgradeName: js.UndefOr[typings.awsSdk.esMod.UpgradeName] = js.native
+  var UpgradeName: js.UndefOr[typings.awsSdk.esMod.UpgradeName] = js.undefined
   
   /**
     *  Represents one of 3 steps that an Upgrade or Upgrade Eligibility Check does through:  PreUpgradeCheck Snapshot Upgrade  
     */
-  var UpgradeStep: js.UndefOr[typings.awsSdk.esMod.UpgradeStep] = js.native
+  var UpgradeStep: js.UndefOr[typings.awsSdk.esMod.UpgradeStep] = js.undefined
 }
 object GetUpgradeStatusResponse {
   

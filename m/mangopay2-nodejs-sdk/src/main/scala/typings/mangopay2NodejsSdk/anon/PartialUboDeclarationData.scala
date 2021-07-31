@@ -3,28 +3,26 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.mod.kycDocument.DocumentStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.uboDeclaration.UboDeclarationData> */
-@js.native
 trait PartialUboDeclarationData extends StObject {
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.native
+  var DeclaredUBOs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var RefusedReasonMessage: js.UndefOr[String] = js.native
+  var RefusedReasonMessage: js.UndefOr[String] = js.undefined
   
-  var RefusedReasonTypes: js.UndefOr[js.Array[String]] = js.native
+  var RefusedReasonTypes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Status: js.UndefOr[DocumentStatus] = js.native
+  var Status: js.UndefOr[DocumentStatus] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var UserId: js.UndefOr[String] = js.native
+  var UserId: js.UndefOr[String] = js.undefined
 }
 object PartialUboDeclarationData {
   

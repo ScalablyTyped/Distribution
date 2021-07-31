@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerPolicyMod {
@@ -38,6 +37,10 @@ object containerPolicyMod {
   /* static members */
   object ContainerPolicy {
     
+    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ContainerPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object containerPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ContainerPolicy = js.native
-    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ContainerPolicy = js.native
-    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerPolicyState): ContainerPolicy = js.native
-    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): ContainerPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerPolicyState): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerPolicyState, opts: CustomResourceOptions): ContainerPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ContainerPolicy]
     
     /**
       * Returns true if the given object is an instance of ContainerPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/containerPolicy.ContainerPolicy */ Boolean]
   }
   
-  @js.native
   trait ContainerPolicyArgs extends StObject {
     
     /**
       * The name of the container.
       */
-    val containerName: Input[String] = js.native
+    val containerName: Input[String]
     
     /**
       * The contents of the policy.
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object ContainerPolicyArgs {
     
@@ -101,18 +98,17 @@ object containerPolicyMod {
     }
   }
   
-  @js.native
   trait ContainerPolicyState extends StObject {
     
     /**
       * The name of the container.
       */
-    val containerName: js.UndefOr[Input[String]] = js.native
+    val containerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The contents of the policy.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object ContainerPolicyState {
     

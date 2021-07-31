@@ -10,9 +10,9 @@ TypeScript typings for Cloud Life Sciences API v2beta
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.lifesciences |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 37 |
+| # releases         | 10 |
+| # dependents       | 1 |
+| # downloads        | 1128 |
 | # stars            | 0 |
 
 ## Links

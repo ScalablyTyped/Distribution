@@ -2,18 +2,16 @@ package typings.hapiHapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cache extends StObject {
   
   /**
     * @default '_default'
     */
-  var cache: js.UndefOr[String] = js.native
+  var cache: js.UndefOr[String] = js.undefined
   
-  var segment: js.UndefOr[String] = js.native
+  var segment: js.UndefOr[String] = js.undefined
 }
 object Cache {
   

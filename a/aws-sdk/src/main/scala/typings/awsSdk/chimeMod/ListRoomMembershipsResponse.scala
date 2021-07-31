@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRoomMembershipsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The room membership details.
     */
-  var RoomMemberships: js.UndefOr[RoomMembershipList] = js.native
+  var RoomMemberships: js.UndefOr[RoomMembershipList] = js.undefined
 }
 object ListRoomMembershipsResponse {
   

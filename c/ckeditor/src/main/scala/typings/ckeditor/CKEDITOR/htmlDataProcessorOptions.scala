@@ -2,23 +2,21 @@ package typings.ckeditor.CKEDITOR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait htmlDataProcessorOptions extends StObject {
   
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
-  var dontFilter: js.UndefOr[Boolean] = js.native
+  var dontFilter: js.UndefOr[Boolean] = js.undefined
   
-  var enterMode: js.UndefOr[Double] = js.native
+  var enterMode: js.UndefOr[Double] = js.undefined
   
-  var filter: js.UndefOr[typings.ckeditor.CKEDITOR.filter] = js.native
+  var filter: js.UndefOr[typings.ckeditor.CKEDITOR.filter] = js.undefined
   
-  var fixForBody: js.UndefOr[Boolean] = js.native
+  var fixForBody: js.UndefOr[Boolean] = js.undefined
   
-  var protectedWhitespaces: js.UndefOr[Boolean] = js.native
+  var protectedWhitespaces: js.UndefOr[Boolean] = js.undefined
 }
 object htmlDataProcessorOptions {
   

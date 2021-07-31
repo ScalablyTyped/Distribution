@@ -7,7 +7,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselBrowseItem
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsImage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browseMod {
@@ -15,8 +14,9 @@ object browseMod {
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/browse", "BrowseCarousel")
   @js.native
   class BrowseCarousel protected ()
-    extends _RichResponseItem
-       with GoogleActionsV2UiElementsCarouselBrowse {
+    extends StObject
+       with GoogleActionsV2UiElementsCarouselBrowse
+       with _RichResponseItem {
     /**
       * @param items BrowseCarousel items
       * @public
@@ -36,7 +36,9 @@ object browseMod {
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/response/browse", "BrowseCarouselItem")
   @js.native
-  class BrowseCarouselItem protected () extends GoogleActionsV2UiElementsCarouselBrowseItem {
+  class BrowseCarouselItem protected ()
+    extends StObject
+       with GoogleActionsV2UiElementsCarouselBrowseItem {
     /**
       * @param options BrowseCarouselItem options
       * @public
@@ -44,38 +46,37 @@ object browseMod {
     def this(options: BrowseCarouselItemOptions) = this()
   }
   
-  @js.native
   trait BrowseCarouselItemOptions extends StObject {
     
     /**
       * Description text of the item.
       * @public
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Footer text of the item.
       * @public
       */
-    var footer: js.UndefOr[String] = js.native
+    var footer: js.UndefOr[String] = js.undefined
     
     /**
       * Image to show on item.
       * @public
       */
-    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+    var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
     
     /**
       * Title of the option item.
       * @public
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * The URL of the link opened by clicking the BrowseCarouselItem.
       * @public
       */
-    var url: String = js.native
+    var url: String
   }
   object BrowseCarouselItemOptions {
     
@@ -114,20 +115,19 @@ object browseMod {
     }
   }
   
-  @js.native
   trait BrowseCarouselOptions extends StObject {
     
     /**
       * Sets the display options for the images in this carousel.
       * @public
       */
-    var display: js.UndefOr[GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions] = js.native
+    var display: js.UndefOr[GoogleActionsV2UiElementsCarouselBrowseImageDisplayOptions] = js.undefined
     
     /**
       * List of 2-20 items to show in this carousel.
       * @public
       */
-    var items: js.Array[GoogleActionsV2UiElementsCarouselBrowseItem] = js.native
+    var items: js.Array[GoogleActionsV2UiElementsCarouselBrowseItem]
   }
   object BrowseCarouselOptions {
     

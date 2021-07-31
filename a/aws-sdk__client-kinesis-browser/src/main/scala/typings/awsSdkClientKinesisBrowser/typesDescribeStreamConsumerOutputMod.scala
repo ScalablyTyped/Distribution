@@ -5,24 +5,24 @@ import typings.awsSdkClientKinesisBrowser.typesConsumerDescriptionMod.Unmarshall
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribeStreamConsumerOutputMod {
   
-  @js.native
-  trait DescribeStreamConsumerOutput extends OutputTypesUnion {
+  trait DescribeStreamConsumerOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An object that represents the details of the consumer.</p>
       */
-    var ConsumerDescription: UnmarshalledConsumerDescription = js.native
+    var ConsumerDescription: UnmarshalledConsumerDescription
   }
   object DescribeStreamConsumerOutput {
     

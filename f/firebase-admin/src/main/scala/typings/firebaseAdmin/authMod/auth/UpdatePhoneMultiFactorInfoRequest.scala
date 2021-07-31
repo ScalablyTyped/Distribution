@@ -2,20 +2,20 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing a phone specific user enrolled second factor
   * for an `UpdateRequest`.
   */
-@js.native
-trait UpdatePhoneMultiFactorInfoRequest extends UpdateMultiFactorInfoRequest {
+trait UpdatePhoneMultiFactorInfoRequest
+  extends StObject
+     with UpdateMultiFactorInfoRequest {
   
   /**
     * The phone number associated with a phone second factor.
     */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object UpdatePhoneMultiFactorInfoRequest {
   

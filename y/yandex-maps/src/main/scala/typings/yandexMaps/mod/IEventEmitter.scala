@@ -2,13 +2,11 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventEmitter extends StObject {
   
-  var events: IEventManager[js.Object] = js.native
+  var events: IEventManager[js.Object]
 }
 object IEventEmitter {
   

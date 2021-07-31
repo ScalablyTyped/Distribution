@@ -2,18 +2,16 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Virtual base for authenticators.
   */
-@js.native
 trait Authenticator extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var username: String = js.native
+  var username: String
 }
 object Authenticator {
   

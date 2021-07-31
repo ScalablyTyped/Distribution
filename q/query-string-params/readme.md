@@ -12,7 +12,7 @@ Creates a url with query params and creates and object/list of params using the 
 | Keywords           | query-string, query, url-string |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 32404 |
+| # downloads        | 32521 |
 | # stars            | 0 |
 
 ## Links

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a StatusChanged event on a WiFiDirectAdvertisementPublisher . */
-@js.native
 trait WiFiDirectAdvertisementPublisherStatusChangedEventArgs extends StObject {
   
   /** Gets the error status for a StatusChanged event on a WiFiDirectAdvertisementPublisher . */
-  var error: WiFiDirectError = js.native
+  var error: WiFiDirectError
   
   /** Gets the new status of the WiFiDirectAdvertisementPublisher . */
-  var status: WiFiDirectAdvertisementPublisherStatus = js.native
+  var status: WiFiDirectAdvertisementPublisherStatus
 }
 object WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
   

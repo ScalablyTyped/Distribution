@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * changed in this suggestion. For any field set to true, the Size has a new
   * suggested value.
   */
-@js.native
 trait SchemaSizeSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to height.
     */
-  var heightSuggested: js.UndefOr[Boolean] = js.native
+  var heightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to width.
     */
-  var widthSuggested: js.UndefOr[Boolean] = js.native
+  var widthSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSizeSuggestionState {
   

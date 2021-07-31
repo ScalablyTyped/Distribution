@@ -12,7 +12,7 @@ Get current battery level
 | Keywords           | app, battery, cli, cli-app, level, linux, mac, os x, osx, windows |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 4936 |
+| # downloads        | 4072 |
 | # stars            | 4 |
 
 ## Links

@@ -3,19 +3,17 @@ package typings.nodeVault
 import typings.nodeVault.mod.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var request: Option = js.native
+    var request: Option
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Body {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var scheme: js.Any = js.native
+    var scheme: js.Any
   }
   object Method {
     
@@ -70,14 +67,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var query: js.UndefOr[Option] = js.native
+    var query: js.UndefOr[Option] = js.undefined
     
-    var req: js.UndefOr[Option] = js.native
+    var req: js.UndefOr[Option] = js.undefined
     
-    var res: js.UndefOr[Option] = js.native
+    var res: js.UndefOr[Option] = js.undefined
   }
   object Query {
     

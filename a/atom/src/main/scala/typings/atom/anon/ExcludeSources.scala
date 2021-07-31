@@ -2,17 +2,15 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcludeSources extends StObject {
   
-  var excludeSources: js.UndefOr[js.Array[String]] = js.native
+  var excludeSources: js.UndefOr[js.Array[String]] = js.undefined
   
-  var scope: js.UndefOr[js.Array[String] | typings.atom.mod.ScopeDescriptor] = js.native
+  var scope: js.UndefOr[js.Array[String] | typings.atom.mod.ScopeDescriptor] = js.undefined
   
-  var sources: js.UndefOr[js.Array[String]] = js.native
+  var sources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ExcludeSources {
   

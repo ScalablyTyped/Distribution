@@ -2,23 +2,21 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timezone extends StObject {
   
-  var abbr: String = js.native
+  var abbr: String
   
-  var isdst: Boolean = js.native
+  var isdst: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var text: String = js.native
+  var text: String
   
-  var utc: js.Array[String] = js.native
+  var utc: js.Array[String]
 }
 object Timezone {
   

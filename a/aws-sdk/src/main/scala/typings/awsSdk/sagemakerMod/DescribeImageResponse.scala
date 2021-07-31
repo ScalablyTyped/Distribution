@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImageResponse extends StObject {
   
   /**
     * When the image was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the image.
     */
-  var Description: js.UndefOr[ImageDescription] = js.native
+  var Description: js.UndefOr[ImageDescription] = js.undefined
   
   /**
     * The name of the image as displayed.
     */
-  var DisplayName: js.UndefOr[ImageDisplayName] = js.native
+  var DisplayName: js.UndefOr[ImageDisplayName] = js.undefined
   
   /**
     * When a create, update, or delete operation fails, the reason for the failure.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image.
     */
-  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.native
+  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.undefined
   
   /**
     * The name of the image.
     */
-  var ImageName: js.UndefOr[typings.awsSdk.sagemakerMod.ImageName] = js.native
+  var ImageName: js.UndefOr[typings.awsSdk.sagemakerMod.ImageName] = js.undefined
   
   /**
     * The status of the image.
     */
-  var ImageStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ImageStatus] = js.native
+  var ImageStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ImageStatus] = js.undefined
   
   /**
     * When the image was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.sagemakerMod.RoleArn] = js.undefined
 }
 object DescribeImageResponse {
   

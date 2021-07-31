@@ -2,21 +2,20 @@ package typings.extjs.Ext.grid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBooleanColumn
-  extends typings.extjs.Ext.grid.column.IColumn {
+  extends StObject
+     with typings.extjs.Ext.grid.column.IColumn {
   
   /** [Config Option] (String) */
-  var falseText: js.UndefOr[String] = js.native
+  var falseText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var trueText: js.UndefOr[String] = js.native
+  var trueText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var undefinedText: js.UndefOr[String] = js.native
+  var undefinedText: js.UndefOr[String] = js.undefined
 }
 object IBooleanColumn {
   

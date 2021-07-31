@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a file.
   */
-@js.native
 trait SchemaFileReference extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaFileReference extends StObject {
     * error will be returned if the URI format is not supported.  - In
     * response: always set - In create/update request: always set
     */
-  var fileUri: js.UndefOr[String] = js.native
+  var fileUri: js.UndefOr[String] = js.undefined
 }
 object SchemaFileReference {
   

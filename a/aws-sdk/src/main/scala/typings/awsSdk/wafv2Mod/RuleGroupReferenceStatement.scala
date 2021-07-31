@@ -2,21 +2,19 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupReferenceStatement extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the entity.
     */
-  var ARN: ResourceArn = js.native
+  var ARN: ResourceArn
   
   /**
     * The names of rules that are in the referenced rule group, but that you want AWS WAF to exclude from processing for this rule statement. 
     */
-  var ExcludedRules: js.UndefOr[typings.awsSdk.wafv2Mod.ExcludedRules] = js.native
+  var ExcludedRules: js.UndefOr[typings.awsSdk.wafv2Mod.ExcludedRules] = js.undefined
 }
 object RuleGroupReferenceStatement {
   

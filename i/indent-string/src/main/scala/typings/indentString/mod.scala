@@ -2,7 +2,6 @@ package typings.indentString
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,33 +19,32 @@ object mod {
   //=> '♥♥♥♥Unicorns\n♥♥♥♥Rainbows'
   ```
   */
-  @JSImport("indent-string", JSImport.Namespace)
-  @js.native
-  def apply(string: String): String = js.native
-  @JSImport("indent-string", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: js.UndefOr[scala.Nothing], options: Options): String = js.native
-  @JSImport("indent-string", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: Double): String = js.native
-  @JSImport("indent-string", JSImport.Namespace)
-  @js.native
-  def apply(string: String, count: Double, options: Options): String = js.native
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Double): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, count: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("indent-string", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Also indent empty lines.
     		@default false
     		*/
-    val includeEmptyLines: js.UndefOr[Boolean] = js.native
+    val includeEmptyLines: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The string to use for the indent.
     		@default ' '
     		*/
-    val indent: js.UndefOr[String] = js.native
+    val indent: js.UndefOr[String] = js.undefined
   }
   object Options {
     

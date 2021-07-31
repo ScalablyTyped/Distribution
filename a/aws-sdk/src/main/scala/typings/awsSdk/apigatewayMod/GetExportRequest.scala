@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExportRequest extends StObject {
   
   /**
     * The content-type of the export, for example application/json. Currently application/json and application/yaml are supported for exportType ofoas30 and swagger. This should be specified in the Accept header for direct API requests.
     */
-  var accepts: js.UndefOr[String] = js.native
+  var accepts: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The type of export. Acceptable values are 'oas30' for OpenAPI 3.0.x and 'swagger' for Swagger/OpenAPI 2.0.
     */
-  var exportType: String = js.native
+  var exportType: String
   
   /**
     * A key-value map of query string parameters that specify properties of the export, depending on the requested exportType. For exportType oas30 and swagger, any combination of the following parameters are supported: extensions='integrations' or extensions='apigateway' will export the API with x-amazon-apigateway-integration extensions. extensions='authorizers' will export the API with x-amazon-apigateway-authorizer extensions. postman will export the API with Postman extensions, allowing for import to the Postman tool
     */
-  var parameters: js.UndefOr[MapOfStringToString] = js.native
+  var parameters: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * [Required] The name of the Stage that will be exported.
     */
-  var stageName: String = js.native
+  var stageName: String
 }
 object GetExportRequest {
   

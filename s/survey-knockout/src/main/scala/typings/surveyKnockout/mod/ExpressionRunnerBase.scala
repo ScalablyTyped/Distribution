@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ExpressionRunnerBase")
@@ -22,6 +21,6 @@ class ExpressionRunnerBase protected () extends StObject {
   
   val isAsync: Boolean = js.native
   
-  /* protected */ def runCore(values: HashTable[_]): js.Any = js.native
-  /* protected */ def runCore(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
+  /* protected */ def runCore(values: HashTable[js.Any]): js.Any = js.native
+  /* protected */ def runCore(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any = js.native
 }

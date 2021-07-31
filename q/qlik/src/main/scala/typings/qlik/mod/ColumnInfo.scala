@@ -5,35 +5,33 @@ import typings.qlik.qlikStrings.D
 import typings.qlik.qlikStrings.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnInfo extends StObject {
   
-  var qApprMaxGlyphCount: Double = js.native
+  var qApprMaxGlyphCount: Double
   
-  var qAttrDimInfo: js.Array[NxAttrDimInfo] = js.native
+  var qAttrDimInfo: js.Array[NxAttrDimInfo]
   
-  var qAttrExprInfo: js.Array[NxAttrExprInfo] = js.native
+  var qAttrExprInfo: js.Array[NxAttrExprInfo]
   
-  var qCardinal: String = js.native
+  var qCardinal: String
   
-  var qError: NxValidationError = js.native
+  var qError: NxValidationError
   
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
-  var qIsAutoFormat: Boolean = js.native
+  var qIsAutoFormat: Boolean
   
-  var qMax: Double = js.native
+  var qMax: Double
   
-  var qMin: Double = js.native
+  var qMin: Double
   
-  var qNumFormat: FieldAttributes = js.native
+  var qNumFormat: FieldAttributes
   
-  var qReverseSort: Boolean = js.native
+  var qReverseSort: Boolean
   
-  var qSortIndicator: N | A | D = js.native
+  var qSortIndicator: N | A | D
 }
 object ColumnInfo {
   

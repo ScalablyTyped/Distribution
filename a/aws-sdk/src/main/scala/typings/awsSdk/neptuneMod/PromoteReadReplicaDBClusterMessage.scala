@@ -2,16 +2,14 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromoteReadReplicaDBClusterMessage extends StObject {
   
   /**
     * Not supported.
     */
-  var DBClusterIdentifier: String = js.native
+  var DBClusterIdentifier: String
 }
 object PromoteReadReplicaDBClusterMessage {
   

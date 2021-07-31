@@ -12,7 +12,6 @@ import typings.qlikEngineapi.qlikEngineapiStrings.SlashqListObjectDef
 import typings.std.MediaList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait IApp
-  extends IGeneratedAPI
+  extends StObject
+     with IGeneratedAPI
      with IAppObjectPrototype[IGenericListProperties, IGenericList] {
   
   /**
@@ -397,13 +397,13 @@ trait IApp
     * @returns - A promise of Boolean
     */
   def doReload(): js.Promise[Boolean] = js.native
-  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[Boolean] = js.native
-  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean): js.Promise[Boolean] = js.native
-  def doReload(qMode: js.UndefOr[scala.Nothing], qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double): js.Promise[Boolean] = js.native
-  def doReload(qMode: Double, qPartial: js.UndefOr[scala.Nothing], qDebug: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean): js.Promise[Boolean] = js.native
   def doReload(qMode: Double, qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: Double, qPartial: Unit, qDebug: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: Unit, qPartial: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: Unit, qPartial: Boolean, qDebug: Boolean): js.Promise[Boolean] = js.native
+  def doReload(qMode: Unit, qPartial: Unit, qDebug: Boolean): js.Promise[Boolean] = js.native
   
   /**
     * Reloads the script that is set in an app and returns the path to the script log file.
@@ -514,7 +514,7 @@ trait IApp
     * @param qOptions - Information about the list of bookmarks.
     * @returns - return a Promise of INxContainerEntry.
     */
-  def getBookmarks(qOptions: INxGetBookmarkOptions): js.Promise[INxContainerEntry[_]] = js.native
+  def getBookmarks(qOptions: INxGetBookmarkOptions): js.Promise[INxContainerEntry[js.Any]] = js.native
   
   /**
     * Retrieves a connection and returns:
@@ -575,9 +575,9 @@ trait IApp
     * @returns - return a Promise Array of DataField.
     */
   def getDatabaseTableFields(qConnectionId: String, qTable: String): js.Promise[js.Array[IDataField]] = js.native
-  def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataField]] = js.native
   def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataField]] = js.native
+  def getDatabaseTableFields(qConnectionId: String, qTable: String, qDatabase: Unit, qOwner: String): js.Promise[js.Array[IDataField]] = js.native
   
   /**
     * Retrieves the values of the specified table of a database for a ODBC, OLEDB or CUSTOM connection.
@@ -590,9 +590,9 @@ trait IApp
     * @returns - return a Promise Array of DataRecord.
     */
   def getDatabaseTablePreview(qConnectionId: String, qTable: String): js.Promise[js.Array[IDataRecord]] = js.native
-  def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String): js.Promise[js.Array[IDataRecord]] = js.native
   def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
+  def getDatabaseTablePreview(qConnectionId: String, qTable: String, qDatabase: Unit, qOwner: String): js.Promise[js.Array[IDataRecord]] = js.native
   
   /**
     * Lists the tables inside a database for a ODBC, OLEDB or CUSTOM connection.
@@ -604,9 +604,9 @@ trait IApp
     * @returns - return a Promise Array of DataTable.
     */
   def getDatabaseTables(qConnectionId: String): js.Promise[js.Array[IDataTable]] = js.native
-  def getDatabaseTables(qConnectionId: String, qDatabase: js.UndefOr[scala.Nothing], qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String): js.Promise[js.Array[IDataTable]] = js.native
   def getDatabaseTables(qConnectionId: String, qDatabase: String, qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
+  def getDatabaseTables(qConnectionId: String, qDatabase: Unit, qOwner: String): js.Promise[js.Array[IDataTable]] = js.native
   
   /**
     * Lists the databases inside a ODBC, OLEDB or CUSTOM data source.
@@ -800,7 +800,7 @@ trait IApp
     * @param qOptions - Information about the list of objects.
     * @returns - return a Promise array of NxContainerEntry.
     */
-  def getObjects(qOptions: INxGetObjectOptions): js.Promise[INxContainerEntry[_]] = js.native
+  def getObjects(qOptions: INxGetObjectOptions): js.Promise[INxContainerEntry[js.Any]] = js.native
   
   /**
     * Shows the properties of an object.

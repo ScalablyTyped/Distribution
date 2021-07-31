@@ -6,14 +6,14 @@ import typings.winrtUwp.winrtUwpStrings.appmemoryusageincreased
 import typings.winrtUwp.winrtUwpStrings.appmemoryusagelimitchanging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to information on an app's memory usage. */
 @JSGlobal("Windows.System.MemoryManager")
 @js.native
 abstract class MemoryManager ()
-  extends typings.winrtUwp.Windows.System.MemoryManager
+  extends StObject
+     with typings.winrtUwp.Windows.System.MemoryManager
 object MemoryManager {
   
   @JSGlobal("Windows.System.MemoryManager")
@@ -22,21 +22,20 @@ object MemoryManager {
   
   /* unmapped type */
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.addEventListener")
-  @js.native
-  def addEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.addEventListener")
-  @js.native
-  def addEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.addEventListener")
-  @js.native
-  def addEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets the app's current memory usage. */
   /* static member */
@@ -68,18 +67,16 @@ object MemoryManager {
     * @return Information about the process' memory usage.
     */
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.getAppMemoryReport")
-  @js.native
-  def getAppMemoryReport(): typings.winrtUwp.Windows.System.AppMemoryReport = js.native
+  @scala.inline
+  def getAppMemoryReport(): typings.winrtUwp.Windows.System.AppMemoryReport = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppMemoryReport")().asInstanceOf[typings.winrtUwp.Windows.System.AppMemoryReport]
   
   /**
     * Gets a ProcessMemoryReport for a process, which provides information about its memory usage.
     * @return Information about the process' memory usage.
     */
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.getProcessMemoryReport")
-  @js.native
-  def getProcessMemoryReport(): typings.winrtUwp.Windows.System.ProcessMemoryReport = js.native
+  @scala.inline
+  def getProcessMemoryReport(): typings.winrtUwp.Windows.System.ProcessMemoryReport = ^.asInstanceOf[js.Dynamic].applyDynamic("getProcessMemoryReport")().asInstanceOf[typings.winrtUwp.Windows.System.ProcessMemoryReport]
   
   /** Raised when the app's memory consumption has decreased to a lower value in the AppMemoryUsageLevel enumeration. */
   /* static member */
@@ -106,21 +103,20 @@ object MemoryManager {
   def onappmemoryusagelimitchanging_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onappmemoryusagelimitchanging")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.removeEventListener")
-  @js.native
-  def removeEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_appmemoryusagedecreased(`type`: appmemoryusagedecreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.removeEventListener")
-  @js.native
-  def removeEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_appmemoryusageincreased(`type`: appmemoryusageincreased, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.System.MemoryManager.removeEventListener")
-  @js.native
-  def removeEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_appmemoryusagelimitchanging(`type`: appmemoryusagelimitchanging, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSGlobal("Windows.System.MemoryManager.trySetAppMemoryUsageLimit")

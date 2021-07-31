@@ -2,36 +2,34 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorldGenerationJobRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the world generator job.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world template describing the worlds you want to create.
     */
-  var template: Arn = js.native
+  var template: Arn
   
   /**
     * Information about the world count.
     */
-  var worldCount: WorldCount = js.native
+  var worldCount: WorldCount
   
   /**
     * A map that contains tag keys and tag values that are attached to the generated worlds.
     */
-  var worldTags: js.UndefOr[TagMap] = js.native
+  var worldTags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateWorldGenerationJobRequest {
   

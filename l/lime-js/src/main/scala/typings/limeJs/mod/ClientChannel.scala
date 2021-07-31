@@ -2,7 +2,6 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lime-js", "ClientChannel")
@@ -10,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ClientChannel protected () extends Channel {
   def this(transport: Transport) = this()
   def this(transport: Transport, autoReplyPings: Boolean) = this()
-  def this(transport: Transport, autoReplyPings: js.UndefOr[scala.Nothing], autoNotifyReceipt: Boolean) = this()
   def this(transport: Transport, autoReplyPings: Boolean, autoNotifyReceipt: Boolean) = this()
+  def this(transport: Transport, autoReplyPings: Unit, autoNotifyReceipt: Boolean) = this()
   
   def authenticateSession(identity: String, authentication: Authentication, instance: String): Unit = js.native
   

@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object agreeItemMod {
@@ -32,18 +31,19 @@ object agreeItemMod {
   trait AgreeItem
     extends Component[AgreeItemPropsType, js.Any, js.Any]
   
-  @js.native
-  trait AgreeItemPropsType extends CheckboxPropsType {
+  trait AgreeItemPropsType
+    extends StObject
+       with CheckboxPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var wrapLabel: js.UndefOr[Boolean] = js.native
+    var wrapLabel: js.UndefOr[Boolean] = js.undefined
   }
   object AgreeItemPropsType {
     

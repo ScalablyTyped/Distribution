@@ -2,27 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGPathSegList extends StObject {
   
-  def appendItem(newItem: SVGPathSeg): SVGPathSeg = js.native
+  def appendItem(newItem: SVGPathSeg): SVGPathSeg
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def getItem(index: Double): SVGPathSeg = js.native
+  def getItem(index: Double): SVGPathSeg
   
-  def initialize(newItem: SVGPathSeg): SVGPathSeg = js.native
+  def initialize(newItem: SVGPathSeg): SVGPathSeg
   
-  def insertItemBefore(newItem: SVGPathSeg, index: Double): SVGPathSeg = js.native
+  def insertItemBefore(newItem: SVGPathSeg, index: Double): SVGPathSeg
   
-  val numberOfItems: Double = js.native
+  val numberOfItems: Double
   
-  def removeItem(index: Double): SVGPathSeg = js.native
+  def removeItem(index: Double): SVGPathSeg
   
-  def replaceItem(newItem: SVGPathSeg, index: Double): SVGPathSeg = js.native
+  def replaceItem(newItem: SVGPathSeg, index: Double): SVGPathSeg
 }
 object SVGPathSegList {
   

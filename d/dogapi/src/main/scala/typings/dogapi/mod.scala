@@ -9,10 +9,13 @@ import typings.dogapi.dogapiStrings.ok
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dogapi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait event extends StObject {
@@ -33,9 +36,8 @@ object mod {
   @js.native
   val event: typings.dogapi.mod.event = js.native
   
-  @JSImport("dogapi", "initialize")
-  @js.native
-  def initialize(opts: Apihost): Unit = js.native
+  @scala.inline
+  def initialize(opts: Apihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait metric extends StObject {
@@ -68,20 +70,19 @@ object mod {
   @js.native
   val metric: typings.dogapi.mod.metric = js.native
   
-  @js.native
   trait EventCreateResponse extends StObject {
     
-    var event: Datehappened = js.native
+    var event: Datehappened
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var status: ok = js.native
+    var status: ok
   }
   object EventCreateResponse {
     
     @scala.inline
-    def apply(event: Datehappened, ok: Boolean, status: ok): EventCreateResponse = {
-      val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(event: Datehappened, ok: Boolean): EventCreateResponse = {
+      val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = "ok")
       __obj.asInstanceOf[EventCreateResponse]
     }
     

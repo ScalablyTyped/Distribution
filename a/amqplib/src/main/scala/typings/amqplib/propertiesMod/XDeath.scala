@@ -6,25 +6,23 @@ import typings.amqplib.amqplibStrings.rejected
 import typings.amqplib.anon._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XDeath extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var exchange: String = js.native
+  var exchange: String
   
-  var `original-expiration`: js.UndefOr[js.Any] = js.native
+  var `original-expiration`: js.UndefOr[js.Any] = js.undefined
   
-  var queue: String = js.native
+  var queue: String
   
-  var reason: rejected | expired | maxlen = js.native
+  var reason: rejected | expired | maxlen
   
-  var `routing-keys`: js.Array[String] = js.native
+  var `routing-keys`: js.Array[String]
   
-  var time: _empty = js.native
+  var time: _empty
 }
 object XDeath {
   

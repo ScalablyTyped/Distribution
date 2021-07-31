@@ -5,29 +5,27 @@ import typings.auth0Lock.auth0LockStrings.login
 import typings.auth0Lock.auth0LockStrings.signUp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockShowOptions extends StObject {
   
-  var allowForgotPassword: js.UndefOr[Boolean] = js.native
+  var allowForgotPassword: js.UndefOr[Boolean] = js.undefined
   
-  var allowLogin: js.UndefOr[Boolean] = js.native
+  var allowLogin: js.UndefOr[Boolean] = js.undefined
   
-  var allowSignUp: js.UndefOr[Boolean] = js.native
+  var allowSignUp: js.UndefOr[Boolean] = js.undefined
   
-  var allowedConnections: js.UndefOr[js.Array[String]] = js.native
+  var allowedConnections: js.UndefOr[js.Array[String]] = js.undefined
   
-  var auth: js.UndefOr[Auth0LockAuthOptions] = js.native
+  var auth: js.UndefOr[Auth0LockAuthOptions] = js.undefined
   
-  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.native
+  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.undefined
   
-  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.native
+  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.undefined
   
-  var languageDictionary: js.UndefOr[js.Any] = js.native
+  var languageDictionary: js.UndefOr[js.Any] = js.undefined
   
-  var rememberLastLogin: js.UndefOr[Boolean] = js.native
+  var rememberLastLogin: js.UndefOr[Boolean] = js.undefined
 }
 object Auth0LockShowOptions {
   

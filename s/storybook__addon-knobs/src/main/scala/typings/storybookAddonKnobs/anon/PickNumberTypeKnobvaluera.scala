@@ -3,28 +3,26 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.numberMod.NumberTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.NumberTypeKnob, 'value' | 'range' | 'min' | 'max' | 'step'> */
-@js.native
 trait PickNumberTypeKnobvaluera extends StObject {
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var value: NumberTypeKnobValue = js.native
+  var value: js.UndefOr[NumberTypeKnobValue] = js.undefined
 }
 object PickNumberTypeKnobvaluera {
   
   @scala.inline
-  def apply(value: NumberTypeKnobValue): PickNumberTypeKnobvaluera = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def apply(): PickNumberTypeKnobvaluera = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickNumberTypeKnobvaluera]
   }
   
@@ -57,5 +55,8 @@ object PickNumberTypeKnobvaluera {
     
     @scala.inline
     def setValue(value: NumberTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

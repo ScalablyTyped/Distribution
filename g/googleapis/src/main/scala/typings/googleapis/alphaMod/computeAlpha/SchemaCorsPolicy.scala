@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The specification for allowing client side cross-origin requests. Please
   * see W3C Recommendation for Cross Origin Resource Sharing
   */
-@js.native
 trait SchemaCorsPolicy extends StObject {
   
   /**
@@ -17,17 +15,17 @@ trait SchemaCorsPolicy extends StObject {
     * the actual request can include user credentials. This translates to the
     * Access-Control-Allow-Credentials header. Default is false.
     */
-  var allowCredentials: js.UndefOr[Boolean] = js.native
+  var allowCredentials: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the content for the Access-Control-Allow-Headers header.
     */
-  var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+  var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the content for the Access-Control-Allow-Methods header.
     */
-  var allowMethods: js.UndefOr[js.Array[String]] = js.native
+  var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the regualar expression patterns that match allowed origins.
@@ -35,31 +33,31 @@ trait SchemaCorsPolicy extends StObject {
     * en.cppreference.com/w/cpp/regex/ecmascript  An origin is allowed if it
     * matches either allow_origins or allow_origin_regex.
     */
-  var allowOriginRegexes: js.UndefOr[js.Array[String]] = js.native
+  var allowOriginRegexes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies the list of origins that will be allowed to do CORS requests.
     * An origin is allowed if it matches either allow_origins or
     * allow_origin_regex.
     */
-  var allowOrigins: js.UndefOr[js.Array[String]] = js.native
+  var allowOrigins: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If true, specifies the CORS policy is disabled. The default value of
     * false, which indicates that the CORS policy is in effect.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the content for the Access-Control-Expose-Headers header.
     */
-  var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+  var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies how long the results of a preflight request can be cached. This
     * translates to the content for the Access-Control-Max-Age header.
     */
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
 }
 object SchemaCorsPolicy {
   

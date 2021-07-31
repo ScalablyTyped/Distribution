@@ -3,23 +3,23 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageMapType extends MapType {
+trait ImageMapType
+  extends StObject
+     with MapType {
   
-  def getMapTypeOptions(): ImageMapTypeOptions = js.native
+  def getMapTypeOptions(): ImageMapTypeOptions
   
-  def getMaxZoom(): Double = js.native
+  def getMaxZoom(): Double
   
-  def getMinZoom(): Double = js.native
+  def getMinZoom(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getTileUrls(x: Double, y: Double, z: Double): js.Array[String] = js.native
+  def getTileUrls(x: Double, y: Double, z: Double): js.Array[String]
   
-  def setMapTypeOptions(imageMapTypeOptions: ImageMapTypeOptions): Unit = js.native
+  def setMapTypeOptions(imageMapTypeOptions: ImageMapTypeOptions): Unit
 }
 object ImageMapType {
   

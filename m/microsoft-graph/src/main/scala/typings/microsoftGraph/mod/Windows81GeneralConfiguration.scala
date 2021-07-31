@@ -2,116 +2,116 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows81GeneralConfiguration extends DeviceConfiguration {
+trait Windows81GeneralConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   /**
     * Indicates whether or not to Block the user from adding email accounts to the device that are not associated with a
     * Microsoft account.
     */
-  var accountsBlockAddingNonMicrosoftAccountEmail: js.UndefOr[Boolean] = js.native
+  var accountsBlockAddingNonMicrosoftAccountEmail: js.UndefOr[Boolean] = js.undefined
   
   // Value indicating whether this policy only applies to Windows 8.1. This property is read-only.
-  var applyOnlyToWindows81: js.UndefOr[Boolean] = js.native
+  var applyOnlyToWindows81: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block auto fill.
-  var browserBlockAutofill: js.UndefOr[Boolean] = js.native
+  var browserBlockAutofill: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block automatic detection of Intranet sites.
-  var browserBlockAutomaticDetectionOfIntranetSites: js.UndefOr[Boolean] = js.native
+  var browserBlockAutomaticDetectionOfIntranetSites: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block enterprise mode access.
-  var browserBlockEnterpriseModeAccess: js.UndefOr[Boolean] = js.native
+  var browserBlockEnterpriseModeAccess: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using JavaScript.
-  var browserBlockJavaScript: js.UndefOr[Boolean] = js.native
+  var browserBlockJavaScript: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block plug-ins.
-  var browserBlockPlugins: js.UndefOr[Boolean] = js.native
+  var browserBlockPlugins: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block popups.
-  var browserBlockPopups: js.UndefOr[Boolean] = js.native
+  var browserBlockPopups: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from sending the do not track header.
-  var browserBlockSendingDoNotTrackHeader: js.UndefOr[Boolean] = js.native
+  var browserBlockSendingDoNotTrackHeader: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block a single word entry on Intranet sites.
-  var browserBlockSingleWordEntryOnIntranetSites: js.UndefOr[Boolean] = js.native
+  var browserBlockSingleWordEntryOnIntranetSites: js.UndefOr[Boolean] = js.undefined
   
   // The enterprise mode site list location. Could be a local file, local network or http location.
-  var browserEnterpriseModeSiteListLocation: js.UndefOr[NullableOption[String]] = js.native
+  var browserEnterpriseModeSiteListLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The internet security level. Possible values are: userDefined, medium, mediumHigh, high.
-  var browserInternetSecurityLevel: js.UndefOr[InternetSiteSecurityLevel] = js.native
+  var browserInternetSecurityLevel: js.UndefOr[InternetSiteSecurityLevel] = js.undefined
   
   // The Intranet security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
-  var browserIntranetSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.native
+  var browserIntranetSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.undefined
   
   // The logging report location.
-  var browserLoggingReportLocation: js.UndefOr[NullableOption[String]] = js.native
+  var browserLoggingReportLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to require a firewall.
-  var browserRequireFirewall: js.UndefOr[Boolean] = js.native
+  var browserRequireFirewall: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require fraud warning.
-  var browserRequireFraudWarning: js.UndefOr[Boolean] = js.native
+  var browserRequireFraudWarning: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require high security for restricted sites.
-  var browserRequireHighSecurityForRestrictedSites: js.UndefOr[Boolean] = js.native
+  var browserRequireHighSecurityForRestrictedSites: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require the user to use the smart screen filter.
-  var browserRequireSmartScreen: js.UndefOr[Boolean] = js.native
+  var browserRequireSmartScreen: js.UndefOr[Boolean] = js.undefined
   
   // The trusted sites security level. Possible values are: userDefined, low, mediumLow, medium, mediumHigh, high.
-  var browserTrustedSitesSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.native
+  var browserTrustedSitesSecurityLevel: js.UndefOr[SiteSecurityLevel] = js.undefined
   
   // Indicates whether or not to block data roaming.
-  var cellularBlockDataRoaming: js.UndefOr[Boolean] = js.native
+  var cellularBlockDataRoaming: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block diagnostic data submission.
-  var diagnosticsBlockDataSubmission: js.UndefOr[Boolean] = js.native
+  var diagnosticsBlockDataSubmission: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block the user from using a pictures password and pin.
-  var passwordBlockPicturePasswordAndPin: js.UndefOr[Boolean] = js.native
+  var passwordBlockPicturePasswordAndPin: js.UndefOr[Boolean] = js.undefined
   
   // Password expiration in days.
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minimum password length.
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minutes of inactivity before the screen times out.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of previous passwords to prevent re-use of. Valid values 0 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // The number of sign in failures before factory reset.
-  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to require encryption on a mobile device.
-  var storageRequireDeviceEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireDeviceEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require automatic updates.
-  var updatesRequireAutomaticUpdates: js.UndefOr[Boolean] = js.native
+  var updatesRequireAutomaticUpdates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user account control settings. Possible values are: userDefined, alwaysNotify, notifyOnAppChanges,
     * notifyOnAppChangesWithoutDimming, neverNotify.
     */
-  var userAccountControlSettings: js.UndefOr[WindowsUserAccountControlSettings] = js.native
+  var userAccountControlSettings: js.UndefOr[WindowsUserAccountControlSettings] = js.undefined
   
   // The work folders url.
-  var workFoldersUrl: js.UndefOr[NullableOption[String]] = js.native
+  var workFoldersUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Windows81GeneralConfiguration {
   

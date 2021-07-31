@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsOverlapping extends StObject {
   
-  var isOverlapping: scala.Double = js.native
+  var isOverlapping: scala.Double
   
-  var oK: scala.Double = js.native
+  var oK: scala.Double
 }
 object IsOverlapping {
   

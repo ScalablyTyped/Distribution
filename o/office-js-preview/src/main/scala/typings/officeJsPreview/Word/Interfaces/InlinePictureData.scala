@@ -17,11 +17,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unsupported
 import typings.officeJsPreview.officeJsPreviewStrings.Wmf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `inlinePicture.toJSON()`. */
-@js.native
 trait InlinePictureData extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var altTextDescription: js.UndefOr[String] = js.native
+  var altTextDescription: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var altTextTitle: js.UndefOr[String] = js.native
+  var altTextTitle: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var hyperlink: js.UndefOr[String] = js.native
+  var hyperlink: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait InlinePictureData extends StObject {
     */
   var imageFormat: js.UndefOr[
     ImageFormat | Unsupported | Undefined | Bmp_ | Jpeg_ | Gif_ | Tiff | Png_ | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg_
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait InlinePictureData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object InlinePictureData {
   

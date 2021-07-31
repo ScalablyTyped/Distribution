@@ -5,7 +5,6 @@ import typings.std.MediaTrackConstraints
 import typings.twilioVideo.mod.Track.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "LocalAudioTrack")

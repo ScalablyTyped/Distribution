@@ -2,19 +2,17 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Carries information about an accelerator that can be attached to a VM.
   */
-@js.native
 trait SchemaAccelerator extends StObject {
   
   /**
     * How many accelerators of this type to attach.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * The accelerator type string (for example, &quot;nvidia-tesla-k80&quot;).
@@ -25,7 +23,7 @@ trait SchemaAccelerator extends StObject {
     * machine specification. Note that attaching a GPU increases the worker VM
     * startup time by a few minutes.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAccelerator {
   

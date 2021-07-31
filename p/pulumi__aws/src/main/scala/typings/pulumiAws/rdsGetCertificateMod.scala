@@ -3,36 +3,34 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsGetCertificateMod {
   
-  @JSImport("@pulumi/aws/rds/getCertificate", "getCertificate")
+  @JSImport("@pulumi/aws/rds/getCertificate", JSImport.Namespace)
   @js.native
-  def getCertificate(): js.Promise[GetCertificateResult] = js.native
-  @JSImport("@pulumi/aws/rds/getCertificate", "getCertificate")
-  @js.native
-  def getCertificate(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetCertificateResult] = js.native
-  @JSImport("@pulumi/aws/rds/getCertificate", "getCertificate")
-  @js.native
-  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = js.native
-  @JSImport("@pulumi/aws/rds/getCertificate", "getCertificate")
-  @js.native
-  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCertificate(): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")().asInstanceOf[js.Promise[GetCertificateResult]]
+  @scala.inline
+  def getCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
+  @scala.inline
+  def getCertificate(args: GetCertificateArgs): js.Promise[GetCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCertificateResult]]
+  @scala.inline
+  def getCertificate(args: GetCertificateArgs, opts: InvokeOptions): js.Promise[GetCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCertificateResult]]
+  
   trait GetCertificateArgs extends StObject {
     
     /**
       * Certificate identifier. For example, `rds-ca-2019`.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * When enabled, returns the certificate with the latest `ValidTill`.
       */
-    val latestValidTill: js.UndefOr[Boolean] = js.native
+    val latestValidTill: js.UndefOr[Boolean] = js.undefined
   }
   object GetCertificateArgs {
     
@@ -59,47 +57,46 @@ object rdsGetCertificateMod {
     }
   }
   
-  @js.native
   trait GetCertificateResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the certificate.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Type of certificate. For example, `CA`.
       */
-    val certificateType: String = js.native
+    val certificateType: String
     
     /**
       * Boolean whether there is an override for the default certificate identifier.
       */
-    val customerOverride: Boolean = js.native
+    val customerOverride: Boolean
     
     /**
       * If there is an override for the default certificate identifier, when the override expires.
       */
-    val customerOverrideValidTill: String = js.native
+    val customerOverrideValidTill: String
     
-    val id: String = js.native
+    val id: String
     
-    val latestValidTill: js.UndefOr[Boolean] = js.native
+    val latestValidTill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Thumbprint of the certificate.
       */
-    val thumbprint: String = js.native
+    val thumbprint: String
     
     /**
       * [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of certificate starting validity date.
       */
-    val validFrom: String = js.native
+    val validFrom: String
     
     /**
       * [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of certificate ending validity date.
       */
-    val validTill: String = js.native
+    val validTill: String
   }
   object GetCertificateResult {
     

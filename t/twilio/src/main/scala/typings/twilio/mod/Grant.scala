@@ -2,13 +2,11 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Grant extends StObject {
   
-  def toPayload(): GrantPayload = js.native
+  def toPayload(): GrantPayload
 }
 object Grant {
   

@@ -3,23 +3,23 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XNotation extends XNode {
+trait XNotation
+  extends StObject
+     with XNode {
   
   /** The public identifier of this notation. */
-  val PublicId: String = js.native
+  val PublicId: String
   
   /** The system identifier of this notation. */
-  val SystemId: String = js.native
+  val SystemId: String
   
   /** The public identifier of this notation. */
-  def getPublicId(): String = js.native
+  def getPublicId(): String
   
   /** The system identifier of this notation. */
-  def getSystemId(): String = js.native
+  def getSystemId(): String
 }
 object XNotation {
   

@@ -2,27 +2,27 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollableTextOptions extends ScrollableBoxOptions {
+trait ScrollableTextOptions
+  extends StObject
+     with ScrollableBoxOptions {
   
   /**
     * Use pre-defined keys (i or enter for insert, e for editor, C-e for editor while inserting).
     */
-  var keys: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+  var keys: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
   
   /**
     * Whether to enable automatic mouse support for this element.
     * Use pre-defined mouse events (right-click for editor).
     */
-  var mouse: js.UndefOr[Boolean | js.Function0[Unit]] = js.native
+  var mouse: js.UndefOr[Boolean | js.Function0[Unit]] = js.undefined
   
   /**
     * Use vi keys with the keys option.
     */
-  var vi: js.UndefOr[Boolean] = js.native
+  var vi: js.UndefOr[Boolean] = js.undefined
 }
 object ScrollableTextOptions {
   

@@ -2,38 +2,36 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait applicationCache extends StObject {
   
   @JSName("MSHTML.applicationCache_typekey")
-  var MSHTMLDotapplicationCache_typekey: applicationCache = js.native
+  var MSHTMLDotapplicationCache_typekey: applicationCache
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  var oncached: js.Any = js.native
+  var oncached: js.Any
   
-  var onchecking: js.Any = js.native
+  var onchecking: js.Any
   
-  var ondownloading: js.Any = js.native
+  var ondownloading: js.Any
   
-  var onerror: js.Any = js.native
+  var onerror: js.Any
   
-  var onnoupdate: js.Any = js.native
+  var onnoupdate: js.Any
   
-  var onobsolete: js.Any = js.native
+  var onobsolete: js.Any
   
-  var onprogress: js.Any = js.native
+  var onprogress: js.Any
   
-  var onupdateready: js.Any = js.native
+  var onupdateready: js.Any
   
-  val status: Double = js.native
+  val status: Double
   
-  def swapCache(): Unit = js.native
+  def swapCache(): Unit
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object applicationCache {
   

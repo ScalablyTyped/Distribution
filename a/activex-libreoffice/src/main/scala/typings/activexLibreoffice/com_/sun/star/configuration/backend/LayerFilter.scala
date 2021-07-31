@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,16 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.DataImporter Service that supports applying a LayerFilter to imported data.
   * @since OOo 2.0
   */
-@js.native
 trait LayerFilter
-  extends XLayer
+  extends StObject
+     with XLayer
      with XInitialization
 object LayerFilter {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     readData: XLayerHandler => Unit,
     release: () => Unit

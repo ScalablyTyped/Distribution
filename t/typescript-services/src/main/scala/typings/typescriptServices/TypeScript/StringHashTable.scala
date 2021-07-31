@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringHashTable[T] extends IHashTable[T] {
+trait StringHashTable[T]
+  extends StObject
+     with IHashTable[T] {
   
-  var itemCount: js.Any = js.native
+  var itemCount: js.Any
   
-  def remove(key: String): Unit = js.native
+  def remove(key: String): Unit
   
-  var table: js.Any = js.native
+  var table: js.Any
 }
 object StringHashTable {
   
@@ -35,7 +35,7 @@ object StringHashTable {
   }
   
   @scala.inline
-  implicit class StringHashTableMutableBuilder[Self <: StringHashTable[_], T] (val x: Self with StringHashTable[T]) extends AnyVal {
+  implicit class StringHashTableMutableBuilder[Self <: StringHashTable[?], T] (val x: Self & StringHashTable[T]) extends AnyVal {
     
     @scala.inline
     def setItemCount(value: js.Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])

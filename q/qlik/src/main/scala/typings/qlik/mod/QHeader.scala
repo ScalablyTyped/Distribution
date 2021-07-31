@@ -5,40 +5,38 @@ import typings.qlik.qlikStrings.A
 import typings.qlik.qlikStrings.B
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QHeader extends StObject {
   
-  var col: Double = js.native
+  var col: Double
   
-  var errorCode: js.UndefOr[Double] = js.native
+  var errorCode: js.UndefOr[Double] = js.undefined
   
-  var errorMessage: js.UndefOr[Double] = js.native
+  var errorMessage: js.UndefOr[Double] = js.undefined
   
-  var isOrderedBy: Boolean = js.native
+  var isOrderedBy: Boolean
   
-  def orderBy(): Unit = js.native
+  def orderBy(): Unit
   
-  var qCardinal: js.UndefOr[Double] = js.native
+  var qCardinal: js.UndefOr[Double] = js.undefined
   
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
-  var qMax: js.UndefOr[Double] = js.native
+  var qMax: js.UndefOr[Double] = js.undefined
   
   // field?: Field
-  var qMin: js.UndefOr[Double] = js.native
+  var qMin: js.UndefOr[Double] = js.undefined
   
-  var qReverseSort: Boolean = js.native
+  var qReverseSort: Boolean
   
-  var qSortIndicator: A | B = js.native
+  var qSortIndicator: A | B
   
-  var qStateCounts: js.UndefOr[StringDictionary[Double]] = js.native
+  var qStateCounts: js.UndefOr[StringDictionary[Double]] = js.undefined
   
-  def reverseOrder(): Unit = js.native
+  def reverseOrder(): Unit
   
-  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[_] = js.native
+  def selectRange(min: Double, max: Double, inclMin: Boolean, inclMax: Boolean): js.Promise[js.Any]
 }
 object QHeader {
   
@@ -51,7 +49,7 @@ object QHeader {
     qReverseSort: Boolean,
     qSortIndicator: A | B,
     reverseOrder: () => Unit,
-    selectRange: (Double, Double, Boolean, Boolean) => js.Promise[_]
+    selectRange: (Double, Double, Boolean, Boolean) => js.Promise[js.Any]
   ): QHeader = {
     val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], isOrderedBy = isOrderedBy.asInstanceOf[js.Any], orderBy = js.Any.fromFunction0(orderBy), qFallbackTitle = qFallbackTitle.asInstanceOf[js.Any], qReverseSort = qReverseSort.asInstanceOf[js.Any], qSortIndicator = qSortIndicator.asInstanceOf[js.Any], reverseOrder = js.Any.fromFunction0(reverseOrder), selectRange = js.Any.fromFunction4(selectRange))
     __obj.asInstanceOf[QHeader]
@@ -118,6 +116,6 @@ object QHeader {
     def setReverseOrder(value: () => Unit): Self = StObject.set(x, "reverseOrder", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[_]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
+    def setSelectRange(value: (Double, Double, Boolean, Boolean) => js.Promise[js.Any]): Self = StObject.set(x, "selectRange", js.Any.fromFunction4(value))
   }
 }

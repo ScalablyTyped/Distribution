@@ -6,7 +6,6 @@ import typings.googleapis.speechV1Mod.speechV1.Options
 import typings.googleapis.speechV1Mod.speechV1.Speech
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

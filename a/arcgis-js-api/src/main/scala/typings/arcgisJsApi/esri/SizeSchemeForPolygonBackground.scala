@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SizeSchemeForPolygonBackground extends Object {
+trait SizeSchemeForPolygonBackground
+  extends StObject
+     with Object {
   
   /**
     * The color of the fill symbol representing the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * Properties for defining the outline of the background fill symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
-  var outline: SizeSchemeForPolygonBackgroundOutline = js.native
+  var outline: SizeSchemeForPolygonBackgroundOutline
 }
 object SizeSchemeForPolygonBackground {
   

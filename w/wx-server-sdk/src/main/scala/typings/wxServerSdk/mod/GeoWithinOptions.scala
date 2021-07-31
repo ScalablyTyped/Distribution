@@ -2,13 +2,11 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoWithinOptions extends StObject {
   
-  var geometry: Polygon | MultiPolygon = js.native
+  var geometry: Polygon | MultiPolygon
 }
 object GeoWithinOptions {
   

@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ImplementationGuide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyImplementationGuide extends StObject {
   
-  var body: ImplementationGuide = js.native
+  var body: ImplementationGuide
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide
 }
 object BodyImplementationGuide {
   
   @scala.inline
-  def apply(
-    body: ImplementationGuide,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.ImplementationGuide
-  ): BodyImplementationGuide = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ImplementationGuide): BodyImplementationGuide = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ImplementationGuide")
     __obj.asInstanceOf[BodyImplementationGuide]
   }
   

@@ -3,41 +3,39 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildAgent extends StObject {
   
-  var buildDirectory: String = js.native
+  var buildDirectory: String
   
-  var controller: XamlBuildControllerReference = js.native
+  var controller: XamlBuildControllerReference
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var description: String = js.native
+  var description: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var messageQueueUrl: String = js.native
+  var messageQueueUrl: String
   
-  var name: String = js.native
+  var name: String
   
-  var reservedForBuild: String = js.native
+  var reservedForBuild: String
   
-  var server: XamlBuildServerReference = js.native
+  var server: XamlBuildServerReference
   
-  var status: AgentStatus = js.native
+  var status: AgentStatus
   
-  var statusMessage: String = js.native
+  var statusMessage: String
   
-  var updatedDate: Date = js.native
+  var updatedDate: Date
   
-  var uri: String = js.native
+  var uri: String
   
-  var url: String = js.native
+  var url: String
 }
 object BuildAgent {
   

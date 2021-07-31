@@ -2,21 +2,19 @@ package typings.nodeMailjet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectOptions extends StObject {
   
-  val perform_api_call: js.UndefOr[Boolean] = js.native
+  val perform_api_call: js.UndefOr[Boolean] = js.undefined
   
-  val proxyUrl: js.UndefOr[String] = js.native
+  val proxyUrl: js.UndefOr[String] = js.undefined
   
-  val timeout: js.UndefOr[Double] = js.native
+  val timeout: js.UndefOr[Double] = js.undefined
   
-  val url: js.UndefOr[String] = js.native
+  val url: js.UndefOr[String] = js.undefined
   
-  val version: js.UndefOr[String] = js.native
+  val version: js.UndefOr[String] = js.undefined
 }
 object ConnectOptions {
   

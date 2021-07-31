@@ -2,53 +2,51 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A version of the Android OS.
   */
-@js.native
 trait SchemaAndroidVersion extends StObject {
   
   /**
     * The API level for this Android version. Examples: 18, 19.
     */
-  var apiLevel: js.UndefOr[Double] = js.native
+  var apiLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * The code name for this Android version. Examples: &quot;JellyBean&quot;,
     * &quot;KitKat&quot;.
     */
-  var codeName: js.UndefOr[String] = js.native
+  var codeName: js.UndefOr[String] = js.undefined
   
   /**
     * Market share for this version.
     */
-  var distribution: js.UndefOr[SchemaDistribution] = js.native
+  var distribution: js.UndefOr[SchemaDistribution] = js.undefined
   
   /**
     * An opaque id for this Android version. Use this id to invoke the
     * TestExecutionService.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The date this Android version became available in the market.
     */
-  var releaseDate: js.UndefOr[SchemaDate] = js.native
+  var releaseDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * Tags for this dimension. Examples: &quot;default&quot;,
     * &quot;preview&quot;, &quot;deprecated&quot;.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A string representing this version of the Android OS. Examples:
     * &quot;4.3&quot;, &quot;4.4&quot;.
     */
-  var versionString: js.UndefOr[String] = js.native
+  var versionString: js.UndefOr[String] = js.undefined
 }
 object SchemaAndroidVersion {
   

@@ -10,9 +10,9 @@ Sanitize your express payload to prevent MongoDB operator injection.
 | ------------------ | :-------------: |
 | Full name          | express-mongo-sanitize |
 | Keywords           | mongodb, express, middleware, operator, injection, security |
-| # releases         | 2 |
-| # dependents       | 10 |
-| # downloads        | 317431 |
+| # releases         | 4 |
+| # dependents       | 14 |
+| # downloads        | 489088 |
 | # stars            | 2 |
 
 ## Links

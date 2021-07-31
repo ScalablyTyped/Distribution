@@ -6,22 +6,20 @@ import typings.styledComponents.styledComponentsStrings.defaultProps
 import typings.styledComponents.styledComponentsStrings.propTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // abuse Pick to strip the call signature from ForwardRefExoticComponent
 /* Inlined std.Pick<react.react.ForwardRefExoticComponent<P>, keyof react.react.ForwardRefExoticComponent<any>> */
-@js.native
 trait ForwardRefExoticBase[P] extends StObject {
   
   @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol = js.native
+  var DollarDollartypeof: js.Symbol
   
-  var defaultProps: js.UndefOr[Partial[typings.styledComponents.styledComponentsStrings.defaultProps]] = js.native
+  var defaultProps: js.UndefOr[Partial[typings.styledComponents.styledComponentsStrings.defaultProps]] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var propTypes: js.UndefOr[WeakValidationMap[typings.styledComponents.styledComponentsStrings.propTypes]] = js.native
+  var propTypes: js.UndefOr[WeakValidationMap[typings.styledComponents.styledComponentsStrings.propTypes]] = js.undefined
 }
 object ForwardRefExoticBase {
   
@@ -33,7 +31,7 @@ object ForwardRefExoticBase {
   }
   
   @scala.inline
-  implicit class ForwardRefExoticBaseMutableBuilder[Self <: ForwardRefExoticBase[_], P] (val x: Self with ForwardRefExoticBase[P]) extends AnyVal {
+  implicit class ForwardRefExoticBaseMutableBuilder[Self <: ForwardRefExoticBase[?], P] (val x: Self & ForwardRefExoticBase[P]) extends AnyVal {
     
     @scala.inline
     def setDefaultProps(value: Partial[defaultProps]): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])

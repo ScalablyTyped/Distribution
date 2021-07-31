@@ -17,7 +17,6 @@ import typings.officeJs.officeJsStrings.Pending
 import typings.officeJs.officeJsStrings.Recalculate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait Application extends ClientObject {
+trait Application
+  extends StObject
+     with ClientObject {
   
   /**
     * Recalculate all currently opened workbooks in Excel.

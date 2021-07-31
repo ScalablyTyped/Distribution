@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudasset/v1beta1", "cloudasset_v1beta1.Resource$Folders")
@@ -34,7 +33,7 @@ class ResourceFolders protected () extends StObject {
     */
   def exportAssets(): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def exportAssets(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def exportAssets(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceFoldersExportassets): GaxiosPromise[SchemaOperation] = js.native
   def exportAssets(params: ParamsResourceFoldersExportassets, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def exportAssets(

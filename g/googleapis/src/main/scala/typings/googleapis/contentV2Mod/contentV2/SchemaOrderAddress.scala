@@ -2,56 +2,54 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderAddress extends StObject {
   
   /**
     * CLDR country code (e.g. &quot;US&quot;).
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Strings representing the lines of the printed label for mailing the
     * order, for example: John Smith 1600 Amphitheatre Parkway Mountain View,
     * CA, 94043 United States
     */
-  var fullAddress: js.UndefOr[js.Array[String]] = js.native
+  var fullAddress: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the address is a post office box.
     */
-  var isPostOfficeBox: js.UndefOr[Boolean] = js.native
+  var isPostOfficeBox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * City, town or commune. May also include dependent localities or
     * sublocalities (e.g. neighborhoods or suburbs).
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Postal Code or ZIP (e.g. &quot;94043&quot;).
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the recipient.
     */
-  var recipientName: js.UndefOr[String] = js.native
+  var recipientName: js.UndefOr[String] = js.undefined
   
   /**
     * Top-level administrative subdivision of the country. For example, a state
     * like California (&quot;CA&quot;) or a province like Quebec
     * (&quot;QC&quot;).
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Street-level part of the address.
     */
-  var streetAddress: js.UndefOr[js.Array[String]] = js.native
+  var streetAddress: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaOrderAddress {
   

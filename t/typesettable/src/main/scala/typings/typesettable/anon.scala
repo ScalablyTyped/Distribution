@@ -3,17 +3,15 @@ package typings.typesettable
 import typings.typesettable.writerMod.IXAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Destroy extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def write(line: String, width: Double, xAlign: IXAlign, xOffset: Double, yOffset: Double): Unit = js.native
+    def write(line: String, width: Double, xAlign: IXAlign, xOffset: Double, yOffset: Double): Unit
   }
   object Destroy {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -61,14 +58,13 @@ object anon {
   }
   
   /* Inlined {[ K in typesettable.typesettable/build/src/writers/writer.IXAlign ]: number} */
-  @js.native
   trait KinIXAlignnumber extends StObject {
     
-    var center: Double = js.native
+    var center: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
   }
   object KinIXAlignnumber {
     
@@ -93,14 +89,13 @@ object anon {
   }
   
   /* Inlined {[ K in typesettable.typesettable/build/src/writers/writer.IYAlign ]: number} */
-  @js.native
   trait KinIYAlignnumber extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var center: Double = js.native
+    var center: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object KinIYAlignnumber {
     
@@ -124,10 +119,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Write extends StObject {
     
-    def write(line: String, width: Double, xAlign: IXAlign, xOffset: Double, yOffset: Double): Unit = js.native
+    def write(line: String, width: Double, xAlign: IXAlign, xOffset: Double, yOffset: Double): Unit
   }
   object Write {
     

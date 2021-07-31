@@ -2,34 +2,32 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to represent a value that can be an <angle> or <number> value. An SVGAngle reflected through the animVal attribute is always read only. */
-@js.native
 trait SVGAngle extends StObject {
   
-  val SVG_ANGLETYPE_DEG: Double = js.native
+  val SVG_ANGLETYPE_DEG: Double
   
-  val SVG_ANGLETYPE_GRAD: Double = js.native
+  val SVG_ANGLETYPE_GRAD: Double
   
-  val SVG_ANGLETYPE_RAD: Double = js.native
+  val SVG_ANGLETYPE_RAD: Double
   
-  val SVG_ANGLETYPE_UNKNOWN: Double = js.native
+  val SVG_ANGLETYPE_UNKNOWN: Double
   
-  val SVG_ANGLETYPE_UNSPECIFIED: Double = js.native
+  val SVG_ANGLETYPE_UNSPECIFIED: Double
   
-  def convertToSpecifiedUnits(unitType: Double): Unit = js.native
+  def convertToSpecifiedUnits(unitType: Double): Unit
   
-  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit = js.native
+  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit
   
-  val unitType: Double = js.native
+  val unitType: Double
   
-  var value: Double = js.native
+  var value: Double
   
-  var valueAsString: java.lang.String = js.native
+  var valueAsString: java.lang.String
   
-  var valueInSpecifiedUnits: Double = js.native
+  var valueInSpecifiedUnits: Double
 }
 object SVGAngle {
   

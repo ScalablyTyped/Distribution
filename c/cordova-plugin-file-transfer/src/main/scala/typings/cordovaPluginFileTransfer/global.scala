@@ -2,7 +2,6 @@ package typings.cordovaPluginFileTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,13 +10,15 @@ object global {
   @JSGlobal("FileTransfer")
   @js.native
   class FileTransfer ()
-    extends typings.cordovaPluginFileTransfer.FileTransfer
+    extends StObject
+       with typings.cordovaPluginFileTransfer.FileTransfer
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("FileTransferError")
   @js.native
   class FileTransferError protected ()
-    extends typings.cordovaPluginFileTransfer.FileTransferError {
+    extends StObject
+       with typings.cordovaPluginFileTransfer.FileTransferError {
     /** Constructor for FileTransferError object */
     def this(
       code: js.UndefOr[Double],
@@ -27,6 +28,37 @@ object global {
       body: js.UndefOr[js.Any],
       exception: js.UndefOr[js.Any]
     ) = this()
+    
+    /* Response body. This attribute is only available when a response is received from the HTTP connection. */
+    /* CompleteClass */
+    var body: String = js.native
+    
+    /**
+      * One of the predefined error codes listed below.
+      *     FileTransferError.FILE_NOT_FOUND_ERR
+      *     FileTransferError.INVALID_URL_ERR
+      *     FileTransferError.CONNECTION_ERR
+      *     FileTransferError.ABORT_ERR
+      *     FileTransferError.NOT_MODIFIED_ERR
+      */
+    /* CompleteClass */
+    var code: Double = js.native
+    
+    /* Exception that is thrown by native code */
+    /* CompleteClass */
+    var exception: js.Any = js.native
+    
+    /** HTTP status code. This attribute is only available when a response code is received from the HTTP connection. */
+    /* CompleteClass */
+    var http_status: Double = js.native
+    
+    /** URL to the source. */
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /** URL to the target. */
+    /* CompleteClass */
+    var target: String = js.native
   }
   object FileTransferError {
     

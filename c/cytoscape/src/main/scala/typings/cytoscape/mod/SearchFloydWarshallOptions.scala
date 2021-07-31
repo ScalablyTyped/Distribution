@@ -2,18 +2,37 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.floydWarshall
   */
-@js.native
 trait SearchFloydWarshallOptions extends StObject {
   
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
-  def weight(edge: EdgeCollection): Double = js.native
+  def weight(edge: EdgeCollection): Double
   @JSName("weight")
-  var weight_Original: WeightFn = js.native
+  var weight_Original: WeightFn
+}
+object SearchFloydWarshallOptions {
+  
+  @scala.inline
+  def apply(weight: /* edge */ EdgeCollection => Double): SearchFloydWarshallOptions = {
+    val __obj = js.Dynamic.literal(weight = js.Any.fromFunction1(weight))
+    __obj.asInstanceOf[SearchFloydWarshallOptions]
+  }
+  
+  @scala.inline
+  implicit class SearchFloydWarshallOptionsMutableBuilder[Self <: SearchFloydWarshallOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    
+    @scala.inline
+    def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+  }
 }

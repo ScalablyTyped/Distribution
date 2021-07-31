@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerDatasetAction extends StObject {
   
   /**
     * The ARN of the role that gives permission to the system to access required resources to run the containerAction. This includes, at minimum, permission to retrieve the dataset contents that are the input to the containerized application.
     */
-  var executionRoleArn: RoleArn = js.native
+  var executionRoleArn: RoleArn
   
   /**
     * The ARN of the Docker container stored in your account. The Docker container contains an application and required support libraries and is used to generate dataset contents.
     */
-  var image: Image = js.native
+  var image: Image
   
   /**
     * Configuration of the resource that executes the containerAction.
     */
-  var resourceConfiguration: ResourceConfiguration = js.native
+  var resourceConfiguration: ResourceConfiguration
   
   /**
     * The values of variables used in the context of the execution of the containerized application (basically, parameters passed to the application). Each variable must have a name and a value given by one of stringValue, datasetContentVersionValue, or outputFileUriValue.
     */
-  var variables: js.UndefOr[Variables] = js.native
+  var variables: js.UndefOr[Variables] = js.undefined
 }
 object ContainerDatasetAction {
   

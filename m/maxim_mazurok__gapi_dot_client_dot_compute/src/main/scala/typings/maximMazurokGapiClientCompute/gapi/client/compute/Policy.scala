@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /** Specifies cloud audit logging configuration for this policy. */
-  var auditConfigs: js.UndefOr[js.Array[AuditConfig]] = js.native
+  var auditConfigs: js.UndefOr[js.Array[AuditConfig]] = js.undefined
   
   /**
     * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
     * least one member.
     */
-  var bindings: js.UndefOr[js.Array[Binding]] = js.native
+  var bindings: js.UndefOr[js.Array[Binding]] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems make
@@ -25,16 +23,16 @@ trait Policy extends StObject {
     * **Important:** If you use IAM Conditions, you must include the `etag` field whenever you call `setIamPolicy`. If you omit this field, then IAM allows you to overwrite a version `3`
     * policy with a version `1` policy, and all of the conditions in the version `3` policy are lost.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var iamOwned: js.UndefOr[Boolean] = js.native
+  var iamOwned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If more than one rule is specified, the rules are applied in the following manner: - All matching LOG rules are always applied. - If any DENY/DENY_WITH_LOG rule matches, permission
     * is denied. Logging will be applied if one or more matching rule requires logging. - Otherwise, if any ALLOW/ALLOW_WITH_LOG rule matches, permission is granted. Logging will be
     * applied if one or more matching rule requires logging. - Otherwise, if no rule applies, permission is denied.
     */
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   
   /**
     * Specifies the format of the policy.
@@ -53,7 +51,7 @@ trait Policy extends StObject {
     *
     * To learn which resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object Policy {
   

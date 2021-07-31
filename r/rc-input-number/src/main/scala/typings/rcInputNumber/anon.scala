@@ -8,80 +8,78 @@ import typings.react.mod.ReactElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<rc-input-number.rc-input-number/es/interface.InputNumberProps> */
-  @js.native
   trait PartialInputNumberProps extends StObject {
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var decimalSeparator: js.UndefOr[String] = js.native
+    var decimalSeparator: js.UndefOr[String] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var downHandler: js.UndefOr[ReactElement] = js.native
+    var downHandler: js.UndefOr[ReactElement] = js.undefined
     
-    var focusOnUpDown: js.UndefOr[Boolean] = js.native
+    var focusOnUpDown: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], String]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.native
+    var onKeyUp: js.UndefOr[js.Function2[/* e */ js.Any, /* repeated */ js.Any, Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+    var onPressEnter: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
     
-    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.native
+    var parser: js.UndefOr[js.Function1[/* displayValue */ js.UndefOr[String], Double | String]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[ISize] = js.native
+    var size: js.UndefOr[ISize] = js.undefined
     
-    var step: js.UndefOr[Double | String] = js.native
+    var step: js.UndefOr[Double | String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var upHandler: js.UndefOr[ReactElement] = js.native
+    var upHandler: js.UndefOr[ReactElement] = js.undefined
     
-    var useTouch: js.UndefOr[Boolean] = js.native
+    var useTouch: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object PartialInputNumberProps {
     

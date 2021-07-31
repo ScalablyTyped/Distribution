@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object ExportOption extends StObject {
   
   /** The private key is exportable. */
   @js.native
-  sealed trait exportable extends ExportOption
+  sealed trait exportable
+    extends StObject
+       with ExportOption
   
   /** The private key is not exportable. */
   @js.native
-  sealed trait notExportable extends ExportOption
+  sealed trait notExportable
+    extends StObject
+       with ExportOption
 }

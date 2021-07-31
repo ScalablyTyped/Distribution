@@ -6,7 +6,6 @@ import typings.std.Partial
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jest.jest.jest.JestMatchersShape<jest.jest.jest.Matchers<void, T>, jest.jest.jest.Matchers<std.Promise<void>, T>> */
@@ -20,7 +19,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def lastCalledWith[E /* <: js.Array[_] */](
+  def lastCalledWith[E /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): Unit = js.native
   
@@ -42,7 +41,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def nthCalledWith[E /* <: js.Array[_] */](
+  def nthCalledWith[E /* <: js.Array[js.Any] */](
     nthCall: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
@@ -95,7 +94,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def toBeCalledWith[E /* <: js.Array[_] */](
+  def toBeCalledWith[E /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type E is not an array type */ args: E
   ): Unit = js.native
   
@@ -224,7 +223,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def toHaveBeenCalledWith[E /* <: js.Array[_] */](
+  def toHaveBeenCalledWith[E /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
   
@@ -236,7 +235,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def toHaveBeenLastCalledWith[E /* <: js.Array[_] */](
+  def toHaveBeenLastCalledWith[E /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
   
@@ -247,7 +246,7 @@ trait JestMatchers[T] extends StObject {
     * Note that the type must be either an array or a tuple.
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def toHaveBeenNthCalledWith[E /* <: js.Array[_] */](
+  def toHaveBeenNthCalledWith[E /* <: js.Array[js.Any] */](
     nthCall: Double,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type E is not an array type */ params: E
   ): Unit = js.native
@@ -296,8 +295,8 @@ trait JestMatchers[T] extends StObject {
   // tslint:disable-next-line: no-unnecessary-generics
   def toHaveProperty[E](propertyPath: String): Unit = js.native
   def toHaveProperty[E](propertyPath: String, value: E): Unit = js.native
-  def toHaveProperty[E](propertyPath: js.Array[_]): Unit = js.native
-  def toHaveProperty[E](propertyPath: js.Array[_], value: E): Unit = js.native
+  def toHaveProperty[E](propertyPath: js.Array[js.Any]): Unit = js.native
+  def toHaveProperty[E](propertyPath: js.Array[js.Any], value: E): Unit = js.native
   
   /**
     * Use to test that the mock function successfully returned (i.e., did not throw an error) at least one time
@@ -340,10 +339,10 @@ trait JestMatchers[T] extends StObject {
   // tslint:disable-next-line: no-unnecessary-generics
   def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers & TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
   def toMatchInlineSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshot: String): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers & TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshot: String): Unit = js.native
   
   /**
     * Used to check that a JavaScript object matches a subset of the properties of an object
@@ -366,7 +365,7 @@ trait JestMatchers[T] extends StObject {
     * expect(desiredHouse).toMatchObject<House>(...standardHouse, kitchen: {area: 20}) // wherein standardHouse is some base object of type House
     */
   // tslint:disable-next-line: no-unnecessary-generics
-  def toMatchObject[E /* <: js.Object | js.Array[_] */](expected: E): Unit = js.native
+  def toMatchObject[E /* <: js.Object | js.Array[js.Any] */](expected: E): Unit = js.native
   
   /**
     * This ensures that a value matches the most recent snapshot.
@@ -381,10 +380,10 @@ trait JestMatchers[T] extends StObject {
   // tslint:disable-next-line: no-unnecessary-generics
   def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers & TopLevel[js.Any] */](propertyMatchers: Partial[U]): Unit = js.native
   def toMatchSnapshot[U /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: any}
-    */ typings.jest.jestStrings.JestMatchers with TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshotName: String): Unit = js.native
+    */ typings.jest.jestStrings.JestMatchers & TopLevel[js.Any] */](propertyMatchers: Partial[U], snapshotName: String): Unit = js.native
   
   /**
     * Ensure that a mock function has returned (as opposed to thrown) at least once.

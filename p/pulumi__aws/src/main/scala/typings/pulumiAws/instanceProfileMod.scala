@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instanceProfileMod {
@@ -25,7 +24,7 @@ object instanceProfileMod {
       */
     def this(name: String) = this()
     def this(name: String, args: InstanceProfileArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: InstanceProfileArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -66,6 +65,10 @@ object instanceProfileMod {
   /* static members */
   object InstanceProfile {
     
+    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing InstanceProfile resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,50 +78,44 @@ object instanceProfileMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID]): InstanceProfile = js.native
-    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): InstanceProfile = js.native
-    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceProfileState): InstanceProfile = js.native
-    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: InstanceProfileState, opts: CustomResourceOptions): InstanceProfile = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): InstanceProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InstanceProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InstanceProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceProfileState): InstanceProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InstanceProfile]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: InstanceProfileState, opts: CustomResourceOptions): InstanceProfile = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InstanceProfile]
     
     /**
       * Returns true if the given object is an instance of InstanceProfile.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/instanceProfile.InstanceProfile */ Boolean]
   }
   
-  @js.native
   trait InstanceProfileArgs extends StObject {
     
     /**
       * The profile's name. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the profile.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The role name to include in the profile.
       */
-    val role: js.UndefOr[Input[String | Role]] = js.native
+    val role: js.UndefOr[Input[String | Role]] = js.undefined
   }
   object InstanceProfileArgs {
     
@@ -157,43 +154,42 @@ object instanceProfileMod {
     }
   }
   
-  @js.native
   trait InstanceProfileState extends StObject {
     
     /**
       * The ARN assigned by AWS to the instance profile.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation timestamp of the instance profile.
       */
-    val createDate: js.UndefOr[Input[String]] = js.native
+    val createDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The profile's name. If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Path in which to create the profile.
       */
-    val path: js.UndefOr[Input[String]] = js.native
+    val path: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The role name to include in the profile.
       */
-    val role: js.UndefOr[Input[String | Role]] = js.native
+    val role: js.UndefOr[Input[String | Role]] = js.undefined
     
     /**
       * The [unique ID][1] assigned by AWS.
       */
-    val uniqueId: js.UndefOr[Input[String]] = js.native
+    val uniqueId: js.UndefOr[Input[String]] = js.undefined
   }
   object InstanceProfileState {
     

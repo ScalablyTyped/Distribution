@@ -2,15 +2,13 @@ package typings.wechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICloudConfig extends StObject {
   
-  var env: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.undefined
   
-  var traceUser: js.UndefOr[Boolean] = js.native
+  var traceUser: js.UndefOr[Boolean] = js.undefined
 }
 object ICloudConfig {
   

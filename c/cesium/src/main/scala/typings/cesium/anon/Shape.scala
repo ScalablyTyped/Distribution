@@ -4,31 +4,29 @@ import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var cornerType: js.UndefOr[Property] = js.native
+  var cornerType: js.UndefOr[Property] = js.undefined
   
-  var fill: js.UndefOr[Property] = js.native
+  var fill: js.UndefOr[Property] = js.undefined
   
-  var granularity: js.UndefOr[Property] = js.native
+  var granularity: js.UndefOr[Property] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty] = js.native
+  var material: js.UndefOr[MaterialProperty] = js.undefined
   
-  var outline: js.UndefOr[Property] = js.native
+  var outline: js.UndefOr[Property] = js.undefined
   
-  var outlineColor: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[Property] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property] = js.native
+  var outlineWidth: js.UndefOr[Property] = js.undefined
   
-  var positions: js.UndefOr[Property] = js.native
+  var positions: js.UndefOr[Property] = js.undefined
   
-  var shape: js.UndefOr[Property] = js.native
+  var shape: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
 }
 object Shape {
   

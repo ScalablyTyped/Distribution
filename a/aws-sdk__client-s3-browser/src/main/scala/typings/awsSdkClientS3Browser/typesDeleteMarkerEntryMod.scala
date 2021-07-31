@@ -5,38 +5,36 @@ import typings.awsSdkClientS3Browser.typesOwnerMod.UnmarshalledOwner
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteMarkerEntryMod {
   
-  @js.native
   trait DeleteMarkerEntry extends StObject {
     
     /**
       * <p>Specifies whether the object is (true) or is not (false) the latest version of an object.</p>
       */
-    var IsLatest: js.UndefOr[Boolean] = js.native
+    var IsLatest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * <p>The object key.</p>
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Date and time the object was last modified.</p>
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.native
+    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[typings.awsSdkClientS3Browser.typesOwnerMod.Owner] = js.native
+    var Owner: js.UndefOr[typings.awsSdkClientS3Browser.typesOwnerMod.Owner] = js.undefined
     
     /**
       * <p>Version ID of an object.</p>
       */
-    var VersionId: js.UndefOr[String] = js.native
+    var VersionId: js.UndefOr[String] = js.undefined
   }
   object DeleteMarkerEntry {
     
@@ -81,20 +79,21 @@ object typesDeleteMarkerEntryMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledDeleteMarkerEntry extends DeleteMarkerEntry {
+  trait UnmarshalledDeleteMarkerEntry
+    extends StObject
+       with DeleteMarkerEntry {
     
     /**
       * <p>Date and time the object was last modified.</p>
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledDeleteMarkerEntry: js.UndefOr[Date] = js.native
+    var LastModified_UnmarshalledDeleteMarkerEntry: js.UndefOr[Date] = js.undefined
     
     /**
       * _Owner shape
       */
     @JSName("Owner")
-    var Owner_UnmarshalledDeleteMarkerEntry: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner_UnmarshalledDeleteMarkerEntry: js.UndefOr[UnmarshalledOwner] = js.undefined
   }
   object UnmarshalledDeleteMarkerEntry {
     

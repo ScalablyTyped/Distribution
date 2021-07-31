@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thumbnail extends StObject {
   
   /** The thumbnail's content type, i.e. "image/png". Always set. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The thumbnail file itself. That is, the bytes here are precisely the bytes that make up the thumbnail file; they can be served as an image as-is (with the appropriate content type.)
     * Always set.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /** The height of the thumbnail, in pixels. Always set. */
-  var heightPx: js.UndefOr[Double] = js.native
+  var heightPx: js.UndefOr[Double] = js.undefined
   
   /** The width of the thumbnail, in pixels. Always set. */
-  var widthPx: js.UndefOr[Double] = js.native
+  var widthPx: js.UndefOr[Double] = js.undefined
 }
 object Thumbnail {
   

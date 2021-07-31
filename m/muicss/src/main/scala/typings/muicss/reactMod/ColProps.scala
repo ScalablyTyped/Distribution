@@ -4,31 +4,31 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColProps extends HTMLAttributes[HTMLDivElement] {
+trait ColProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var lg: js.UndefOr[Double] = js.native
+  var lg: js.UndefOr[Double] = js.undefined
   
-  var `lg-offset`: js.UndefOr[Double] = js.native
+  var `lg-offset`: js.UndefOr[Double] = js.undefined
   
-  var md: js.UndefOr[Double] = js.native
+  var md: js.UndefOr[Double] = js.undefined
   
-  var `md-offset`: js.UndefOr[Double] = js.native
+  var `md-offset`: js.UndefOr[Double] = js.undefined
   
-  var sm: js.UndefOr[Double] = js.native
+  var sm: js.UndefOr[Double] = js.undefined
   
-  var `sm-offset`: js.UndefOr[Double] = js.native
+  var `sm-offset`: js.UndefOr[Double] = js.undefined
   
-  var xl: js.UndefOr[Double] = js.native
+  var xl: js.UndefOr[Double] = js.undefined
   
-  var `xl-offset`: js.UndefOr[Double] = js.native
+  var `xl-offset`: js.UndefOr[Double] = js.undefined
   
-  var xs: js.UndefOr[Double] = js.native
+  var xs: js.UndefOr[Double] = js.undefined
   
-  var `xs-offset`: js.UndefOr[Double] = js.native
+  var `xs-offset`: js.UndefOr[Double] = js.undefined
 }
 object ColProps {
   

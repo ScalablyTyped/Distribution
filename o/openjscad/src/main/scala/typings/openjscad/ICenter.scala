@@ -2,13 +2,11 @@ package typings.openjscad
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICenter extends StObject {
   
-  def center(cAxes: js.Array[String]): CxG = js.native
+  def center(cAxes: js.Array[String]): CxG
 }
 object ICenter {
   

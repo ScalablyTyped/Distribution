@@ -4,49 +4,49 @@ import typings.mapboxGl.mapboxGlStrings.map
 import typings.mapboxGl.mapboxGlStrings.viewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CirclePaint extends AnyPaint {
+trait CirclePaint
+  extends StObject
+     with AnyPaint {
   
-  var `circle-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `circle-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `circle-blur-transition`: js.UndefOr[Transition] = js.native
+  var `circle-blur-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `circle-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `circle-color-transition`: js.UndefOr[Transition] = js.native
+  var `circle-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `circle-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `circle-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `circle-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-pitch-alignment`: js.UndefOr[map | viewport] = js.native
+  var `circle-pitch-alignment`: js.UndefOr[map | viewport] = js.undefined
   
-  var `circle-pitch-scale`: js.UndefOr[map | viewport] = js.native
+  var `circle-pitch-scale`: js.UndefOr[map | viewport] = js.undefined
   
-  var `circle-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `circle-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `circle-radius-transition`: js.UndefOr[Transition] = js.native
+  var `circle-radius-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-stroke-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `circle-stroke-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `circle-stroke-color-transition`: js.UndefOr[Transition] = js.native
+  var `circle-stroke-color-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-stroke-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `circle-stroke-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `circle-stroke-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `circle-stroke-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-stroke-width`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `circle-stroke-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `circle-stroke-width-transition`: js.UndefOr[Transition] = js.native
+  var `circle-stroke-width-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `circle-translate`: js.UndefOr[js.Array[Double] | Expression] = js.native
+  var `circle-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
   
-  var `circle-translate-anchor`: js.UndefOr[map | viewport] = js.native
+  var `circle-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
   
-  var `circle-translate-transition`: js.UndefOr[Transition] = js.native
+  var `circle-translate-transition`: js.UndefOr[Transition] = js.undefined
 }
 object CirclePaint {
   

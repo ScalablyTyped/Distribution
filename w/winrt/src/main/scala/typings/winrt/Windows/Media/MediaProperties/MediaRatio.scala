@@ -2,11 +2,11 @@ package typings.winrt.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaRatio extends IMediaRatio
+trait MediaRatio
+  extends StObject
+     with IMediaRatio
 object MediaRatio {
   
   @scala.inline

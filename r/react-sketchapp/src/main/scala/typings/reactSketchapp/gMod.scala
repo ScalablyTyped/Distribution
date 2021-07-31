@@ -5,7 +5,6 @@ import typings.reactSketchapp.propsMod.FontProps
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gMod {
@@ -17,9 +16,9 @@ object gMod {
   
   type G = Component[GProps, js.Object, js.Any]
   
-  @js.native
   trait GProps
-    extends PathProps
+    extends StObject
+       with PathProps
        with FontProps
   object GProps {
     

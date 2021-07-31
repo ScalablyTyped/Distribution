@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewInfoObject extends StObject {
   
   @JSName("InfoPath.ViewInfoObject_typekey")
-  var InfoPathDotViewInfoObject_typekey: ViewInfoObject = js.native
+  var InfoPathDotViewInfoObject_typekey: ViewInfoObject
   
-  var IsDefault: Boolean = js.native
+  var IsDefault: Boolean
   
-  val Name: String = js.native
+  val Name: String
 }
 object ViewInfoObject {
   

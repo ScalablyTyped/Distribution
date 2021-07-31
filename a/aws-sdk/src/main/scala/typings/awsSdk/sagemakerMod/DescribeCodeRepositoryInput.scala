@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCodeRepositoryInput extends StObject {
   
   /**
     * The name of the Git repository to describe.
     */
-  var CodeRepositoryName: EntityName = js.native
+  var CodeRepositoryName: EntityName
 }
 object DescribeCodeRepositoryInput {
   

@@ -3,24 +3,23 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`interface mixin`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterfaceMixinType
-  extends AbstractContainer
+  extends StObject
+     with AbstractContainer
      with IDLRootType {
   
-  var inheritance: Null = js.native
+  var inheritance: Null
   
   @JSName("members")
-  var members_InterfaceMixinType: js.Array[IDLInterfaceMixinMemberType] = js.native
+  var members_InterfaceMixinType: js.Array[IDLInterfaceMixinMemberType]
   
   @JSName("parent")
-  var parent_InterfaceMixinType: Null = js.native
+  var parent_InterfaceMixinType: Null
   
   @JSName("type")
-  var type_InterfaceMixinType: `interface mixin` = js.native
+  var type_InterfaceMixinType: `interface mixin`
 }
 object InterfaceMixinType {
   
@@ -31,11 +30,10 @@ object InterfaceMixinType {
     members: js.Array[IDLInterfaceMixinMemberType],
     name: String,
     parent: Null,
-    partial: Boolean,
-    `type`: `interface mixin`
+    partial: Boolean
   ): InterfaceMixinType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], inheritance = inheritance.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("interface mixin")
     __obj.asInstanceOf[InterfaceMixinType]
   }
   

@@ -2,21 +2,21 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Defaults_ extends ClientConfig {
+trait Defaults_
+  extends StObject
+     with ClientConfig {
   
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
-  var parseInt8: js.UndefOr[Boolean] = js.native
+  var parseInt8: js.UndefOr[Boolean] = js.undefined
   
-  var poolIdleTimeout: js.UndefOr[Double] = js.native
+  var poolIdleTimeout: js.UndefOr[Double] = js.undefined
   
-  var poolSize: js.UndefOr[Double] = js.native
+  var poolSize: js.UndefOr[Double] = js.undefined
   
-  var reapIntervalMillis: js.UndefOr[Double] = js.native
+  var reapIntervalMillis: js.UndefOr[Double] = js.undefined
 }
 object Defaults_ {
   

@@ -3,7 +3,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * When duplicating a page element, the duplicate will be placed on the same
   * page at the same position as the original.
   */
-@js.native
 trait SchemaDuplicateObjectRequest extends StObject {
   
   /**
     * The ID of the object to duplicate.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The object being duplicated may contain other objects, for example when
@@ -37,7 +35,7 @@ trait SchemaDuplicateObjectRequest extends StObject {
     * a new random ID will be assigned. If the map is empty or unset, all
     * duplicate objects will receive a new random ID.
     */
-  var objectIds: js.UndefOr[StringDictionary[String]] = js.native
+  var objectIds: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaDuplicateObjectRequest {
   

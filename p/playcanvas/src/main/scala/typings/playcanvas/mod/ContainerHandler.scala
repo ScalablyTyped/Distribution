@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,7 +38,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("playcanvas", "ContainerHandler")
 @js.native
-class ContainerHandler protected () extends ResourceHandler {
+class ContainerHandler protected ()
+  extends StObject
+     with ResourceHandler {
   def this(
     device: typings.playcanvas.pc.GraphicsDevice,
     defaultMaterial: typings.playcanvas.pc.StandardMaterial

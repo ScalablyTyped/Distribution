@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileMetadata extends StObject {
   
   /**
     * The full path to the file to be added or updated, including the name of the file.
     */
-  var absolutePath: js.UndefOr[Path] = js.native
+  var absolutePath: js.UndefOr[Path] = js.undefined
   
   /**
     * The blob ID that contains the file information.
     */
-  var blobId: js.UndefOr[ObjectId] = js.native
+  var blobId: js.UndefOr[ObjectId] = js.undefined
   
   /**
     * The extrapolated file mode permissions for the file. Valid values include EXECUTABLE and NORMAL.
     */
-  var fileMode: js.UndefOr[FileModeTypeEnum] = js.native
+  var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
 }
 object FileMetadata {
   

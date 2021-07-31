@@ -4,28 +4,26 @@ import typings.fullpageJs.fullpageJsStrings.cover
 import typings.fullpageJs.fullpageJsStrings.reveal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FadeBackground extends StObject {
     
     /**
       * @default true
       */
-    var fadeBackground: js.UndefOr[Boolean] = js.native
+    var fadeBackground: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var fadeContent: js.UndefOr[Boolean] = js.native
+    var fadeContent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default 100
       */
-    var perspective: js.UndefOr[Double] = js.native
+    var perspective: js.UndefOr[Double] = js.undefined
   }
   object FadeBackground {
     
@@ -58,14 +56,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Percentage extends StObject {
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[cover | reveal] = js.native
+    var `type`: js.UndefOr[cover | reveal] = js.undefined
   }
   object Percentage {
     
@@ -98,21 +95,20 @@ object anon {
     }
   }
   
-  @js.native
   trait ToSections extends StObject {
     
     /**
       * Extension of fullpage.js. Requires fullpage.js >= 2.8.5.
       * Turns horizontal slides into vertical sections.
       */
-    def toSections(): Unit = js.native
+    def toSections(): Unit
     
     /**
       * Extension of fullpage.js. Requires fullpage.js >= 2.8.5.
       * Turns back the original slides (now converted into
       * vertical sections) into horizontal slides again.
       */
-    def toSlides(): Unit = js.native
+    def toSlides(): Unit
   }
   object ToSections {
     

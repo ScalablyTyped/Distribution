@@ -22,7 +22,6 @@ import typings.mendixmodelsdk.pagesMod.pages.StaticOrDynamicString
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -58,9 +57,8 @@ object AttributeRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.create")
-  @js.native
-  def create(model: IModel): AttributeRef = js.native
+  @scala.inline
+  def create(model: IModel): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -71,9 +69,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInAttributeWidgetUnderAttributeRef")
-  @js.native
-  def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): AttributeRef = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderAttributeRef(container: AttributeWidget): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -84,9 +81,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInClientTemplateParameterUnderAttributeRef")
-  @js.native
-  def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): AttributeRef = js.native
+  @scala.inline
+  def createInClientTemplateParameterUnderAttributeRef(container: ClientTemplateParameter): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -97,9 +93,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInDataGridColumnUnderAttributeRef")
-  @js.native
-  def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): AttributeRef = js.native
+  @scala.inline
+  def createInDataGridColumnUnderAttributeRef(container: DataGridColumn): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -110,9 +105,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInDocumentTemplatesGridSortItemUnderAttributeRef")
-  @js.native
-  def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): AttributeRef = js.native
+  @scala.inline
+  def createInDocumentTemplatesGridSortItemUnderAttributeRef(container: GridSortItem): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplatesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -123,9 +117,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInGridColumnUnderAttributeRef")
-  @js.native
-  def createInGridColumnUnderAttributeRef(container: GridColumn): AttributeRef = js.native
+  @scala.inline
+  def createInGridColumnUnderAttributeRef(container: GridColumn): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -136,9 +129,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInListViewSearchUnderSearchRefs")
-  @js.native
-  def createInListViewSearchUnderSearchRefs(container: ListViewSearch): AttributeRef = js.native
+  @scala.inline
+  def createInListViewSearchUnderSearchRefs(container: ListViewSearch): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewSearchUnderSearchRefs")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -149,9 +141,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInMemberWidgetUnderAttributeRef")
-  @js.native
-  def createInMemberWidgetUnderAttributeRef(container: MemberWidget): AttributeRef = js.native
+  @scala.inline
+  def createInMemberWidgetUnderAttributeRef(container: MemberWidget): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMemberWidgetUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -162,9 +153,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInPagesGridSortItemUnderAttributeRef")
-  @js.native
-  def createInPagesGridSortItemUnderAttributeRef(container: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): AttributeRef = js.native
+  @scala.inline
+  def createInPagesGridSortItemUnderAttributeRef(container: typings.mendixmodelsdk.pagesMod.pages.GridSortItem): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPagesGridSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -175,9 +165,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInRangeSearchFieldUnderLowerBoundRef")
-  @js.native
-  def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): AttributeRef = js.native
+  @scala.inline
+  def createInRangeSearchFieldUnderLowerBoundRef(container: RangeSearchField): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderLowerBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -188,9 +177,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInRangeSearchFieldUnderUpperBoundRef")
-  @js.native
-  def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): AttributeRef = js.native
+  @scala.inline
+  def createInRangeSearchFieldUnderUpperBoundRef(container: RangeSearchField): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRangeSearchFieldUnderUpperBoundRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -201,9 +189,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInSingleSearchFieldUnderAttributeRef")
-  @js.native
-  def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): AttributeRef = js.native
+  @scala.inline
+  def createInSingleSearchFieldUnderAttributeRef(container: SingleSearchField): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSingleSearchFieldUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -214,9 +201,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInSortItemUnderAttributeRef")
-  @js.native
-  def createInSortItemUnderAttributeRef(container: SortItem): AttributeRef = js.native
+  @scala.inline
+  def createInSortItemUnderAttributeRef(container: SortItem): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortItemUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -227,9 +213,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInStaticOrDynamicStringUnderAttributeRef")
-  @js.native
-  def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): AttributeRef = js.native
+  @scala.inline
+  def createInStaticOrDynamicStringUnderAttributeRef(container: StaticOrDynamicString): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticOrDynamicStringUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -240,9 +225,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInVariableRefExpressionUnderMember")
-  @js.native
-  def createInVariableRefExpressionUnderMember(container: VariableRefExpression): AttributeRef = js.native
+  @scala.inline
+  def createInVariableRefExpressionUnderMember(container: VariableRefExpression): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVariableRefExpressionUnderMember")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /**
     * Creates and returns a new AttributeRef instance in the SDK and on the server.
@@ -253,9 +237,8 @@ object AttributeRef {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.createInWidgetValueUnderAttributeRef")
-  @js.native
-  def createInWidgetValueUnderAttributeRef(container: WidgetValue): AttributeRef = js.native
+  @scala.inline
+  def createInWidgetValueUnderAttributeRef(container: WidgetValue): AttributeRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAttributeRef")(container.asInstanceOf[js.Any]).asInstanceOf[AttributeRef]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.AttributeRef.structureTypeName")

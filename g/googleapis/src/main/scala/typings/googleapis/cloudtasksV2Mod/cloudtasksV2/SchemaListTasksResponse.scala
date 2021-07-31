@@ -2,13 +2,11 @@ package typings.googleapis.cloudtasksV2Mod.cloudtasksV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for listing tasks using ListTasks.
   */
-@js.native
 trait SchemaListTasksResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListTasksResponse extends StObject {
     * results, call ListTasks with this value as the page_token.  If the
     * next_page_token is empty, there are no more results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tasks.
     */
-  var tasks: js.UndefOr[js.Array[SchemaTask]] = js.native
+  var tasks: js.UndefOr[js.Array[SchemaTask]] = js.undefined
 }
 object SchemaListTasksResponse {
   

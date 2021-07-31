@@ -13,7 +13,6 @@ import typings.guacamoleClient.guacamoleClientNumbers.`0xe`
 import typings.guacamoleClient.guacamoleClientNumbers.`0xf`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Layer")

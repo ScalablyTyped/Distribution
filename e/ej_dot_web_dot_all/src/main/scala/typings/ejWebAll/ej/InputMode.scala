@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,13 @@ object InputMode extends StObject {
   
   //string
   @js.native
-  sealed trait Password extends InputMode
+  sealed trait Password
+    extends StObject
+       with InputMode
   
   //string
   @js.native
-  sealed trait Text extends InputMode
+  sealed trait Text
+    extends StObject
+       with InputMode
 }

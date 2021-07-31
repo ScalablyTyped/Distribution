@@ -2,17 +2,15 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderDef extends StObject {
   
-  var deps: js.Array[DepDef] = js.native
+  var deps: js.Array[DepDef]
   
-  var token: js.Any = js.native
+  var token: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object ProviderDef {
   

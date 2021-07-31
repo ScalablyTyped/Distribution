@@ -12,89 +12,74 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: ArraySchema): js.Function1[/* doc */ js.Array[_], String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: ArraySchema, options: Options): js.Function1[/* doc */ js.Array[_], String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: BooleanSchema): js.Function1[/* doc */ Boolean, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: BooleanSchema, options: Options): js.Function1[/* doc */ Boolean, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: IntegerSchema): js.Function1[/* doc */ Double, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: IntegerSchema, options: Options): js.Function1[/* doc */ Double, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: NullSchema): js.Function1[/* doc */ Null, `null`] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: NullSchema, options: Options): js.Function1[/* doc */ Null, `null`] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: NumberSchema): js.Function1[/* doc */ Double, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: NumberSchema, options: Options): js.Function1[/* doc */ Double, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: ObjectSchema): js.Function1[/* doc */ js.Object, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: ObjectSchema, options: Options): js.Function1[/* doc */ js.Object, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: Schema): js.Function1[/* doc */ js.Object | js.Array[_] | String | Double | Boolean | Null, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: Schema, options: Options): js.Function1[/* doc */ js.Object | js.Array[_] | String | Double | Boolean | Null, String] = js.native
+  @scala.inline
+  def apply(schema: ArraySchema): js.Function1[/* doc */ js.Array[js.Any], String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ js.Array[js.Any], String]]
+  @scala.inline
+  def apply(schema: ArraySchema, options: Options): js.Function1[/* doc */ js.Array[js.Any], String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ js.Array[js.Any], String]]
+  @scala.inline
+  def apply(schema: BooleanSchema): js.Function1[/* doc */ Boolean, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ Boolean, String]]
+  @scala.inline
+  def apply(schema: BooleanSchema, options: Options): js.Function1[/* doc */ Boolean, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ Boolean, String]]
+  @scala.inline
+  def apply(schema: IntegerSchema): js.Function1[/* doc */ Double, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ Double, String]]
+  @scala.inline
+  def apply(schema: IntegerSchema, options: Options): js.Function1[/* doc */ Double, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ Double, String]]
+  @scala.inline
+  def apply(schema: NullSchema): js.Function1[/* doc */ Null, `null`] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ Null, `null`]]
+  @scala.inline
+  def apply(schema: NullSchema, options: Options): js.Function1[/* doc */ Null, `null`] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ Null, `null`]]
+  @scala.inline
+  def apply(schema: NumberSchema): js.Function1[/* doc */ Double, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ Double, String]]
+  @scala.inline
+  def apply(schema: NumberSchema, options: Options): js.Function1[/* doc */ Double, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ Double, String]]
+  @scala.inline
+  def apply(schema: ObjectSchema): js.Function1[/* doc */ js.Object, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ js.Object, String]]
+  @scala.inline
+  def apply(schema: ObjectSchema, options: Options): js.Function1[/* doc */ js.Object, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ js.Object, String]]
+  @scala.inline
+  def apply(schema: Schema): js.Function1[/* doc */ js.Object | js.Array[js.Any] | String | Double | Boolean | Null, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ js.Object | js.Array[js.Any] | String | Double | Boolean | Null, String]]
+  @scala.inline
+  def apply(schema: Schema, options: Options): js.Function1[/* doc */ js.Object | js.Array[js.Any] | String | Double | Boolean | Null, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ js.Object | js.Array[js.Any] | String | Double | Boolean | Null, String]]
   /**
     * Build a stringify function using a schema of the documents that should be stringified
     * @param schema The schema used to stringify values
     * @param options The options to use (optional)
     */
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: StringSchema): js.Function1[/* doc */ String, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: StringSchema, options: Options): js.Function1[/* doc */ String, String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: TupleSchema): js.Function1[/* doc */ js.Array[_], String] = js.native
-  @JSImport("fast-json-stringify", JSImport.Namespace)
-  @js.native
-  def apply(schema: TupleSchema, options: Options): js.Function1[/* doc */ js.Array[_], String] = js.native
+  @scala.inline
+  def apply(schema: StringSchema): js.Function1[/* doc */ String, String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ String, String]]
+  @scala.inline
+  def apply(schema: StringSchema, options: Options): js.Function1[/* doc */ String, String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ String, String]]
+  @scala.inline
+  def apply(schema: TupleSchema): js.Function1[/* doc */ js.Array[js.Any], String] = ^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* doc */ js.Array[js.Any], String]]
+  @scala.inline
+  def apply(schema: TupleSchema, options: Options): js.Function1[/* doc */ js.Array[js.Any], String] = (^.asInstanceOf[js.Dynamic].apply(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* doc */ js.Array[js.Any], String]]
   
+  @JSImport("fast-json-stringify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ArraySchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
     /**
       * The schema for the items in the array
       */
-    var items: Schema | js.Object = js.native
+    var items: Schema | js.Object
     
-    var `type`: array = js.native
+    var `type`: array
   }
   object ArraySchema {
     
     @scala.inline
-    def apply(items: Schema | js.Object, `type`: array): ArraySchema = {
+    def apply(items: Schema | js.Object): ArraySchema = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[ArraySchema]
     }
     
@@ -109,70 +94,69 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseSchema extends StObject {
     
     /**
       * Default value to be assigned when no value is given in the document
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A comment to be added to the schema
       */
     @JSName("$comment")
-    var $comment: js.UndefOr[String] = js.native
+    var $comment: js.UndefOr[String] = js.undefined
     
     /**
       * A set of schemas which must all match
       */
-    var allOf: js.UndefOr[js.Array[Partial[Schema]]] = js.native
+    var allOf: js.UndefOr[js.Array[Partial[Schema]]] = js.undefined
     
     /**
       * A set of schemas of which at least one must match
       */
-    var anyOf: js.UndefOr[js.Array[Partial[Schema]]] = js.native
+    var anyOf: js.UndefOr[js.Array[Partial[Schema]]] = js.undefined
     
     /**
       * Additional schema definition to reference from within the schema
       */
-    var definitions: js.UndefOr[Record[String, Schema]] = js.native
+    var definitions: js.UndefOr[Record[String, Schema]] = js.undefined
     
     /**
       * Schema description
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * A schema to apply if the conditional schema from `if` fails
       */
-    var `else`: js.UndefOr[Partial[Schema]] = js.native
+    var `else`: js.UndefOr[Partial[Schema]] = js.undefined
     
     /**
       * A list of example values that match this schema
       */
-    var examples: js.UndefOr[js.Array[_]] = js.native
+    var examples: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * A conditional schema to check, controls schemas defined in `then` and `else`
       */
-    var `if`: js.UndefOr[Partial[Schema]] = js.native
+    var `if`: js.UndefOr[Partial[Schema]] = js.undefined
     
     /**
       * Open API 3.0 spec states that any value that can be null must be declared `nullable`
       * @default false
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A schema to apply if the conditional schema from `if` passes
       */
-    var `then`: js.UndefOr[Partial[Schema]] = js.native
+    var `then`: js.UndefOr[Partial[Schema]] = js.undefined
     
     /**
       * Schema title
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object BaseSchema {
     
@@ -234,7 +218,7 @@ object mod {
       def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
       
       @scala.inline
-      def setExamples(value: js.Array[_]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      def setExamples(value: js.Array[js.Any]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
@@ -268,19 +252,19 @@ object mod {
     }
   }
   
-  @js.native
   trait BooleanSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
-    var `type`: boolean = js.native
+    var `type`: boolean
   }
   object BooleanSchema {
     
     @scala.inline
-    def apply(`type`: boolean): BooleanSchema = {
+    def apply(): BooleanSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[BooleanSchema]
     }
     
@@ -292,19 +276,19 @@ object mod {
     }
   }
   
-  @js.native
   trait IntegerSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
-    var `type`: integer = js.native
+    var `type`: integer
   }
   object IntegerSchema {
     
     @scala.inline
-    def apply(`type`: integer): IntegerSchema = {
+    def apply(): IntegerSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[IntegerSchema]
     }
     
@@ -316,19 +300,19 @@ object mod {
     }
   }
   
-  @js.native
   trait NullSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
-    var `type`: `null` = js.native
+    var `type`: `null`
   }
   object NullSchema {
     
     @scala.inline
-    def apply(`type`: `null`): NullSchema = {
+    def apply(): NullSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("null")
       __obj.asInstanceOf[NullSchema]
     }
     
@@ -340,19 +324,19 @@ object mod {
     }
   }
   
-  @js.native
   trait NumberSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
-    var `type`: number = js.native
+    var `type`: number
   }
   object NumberSchema {
     
     @scala.inline
-    def apply(`type`: number): NumberSchema = {
+    def apply(): NumberSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("number")
       __obj.asInstanceOf[NumberSchema]
     }
     
@@ -364,11 +348,11 @@ object mod {
     }
   }
   
-  type ObjectProperties = (Record[String, Partial[Schema]]) with AllOf
+  type ObjectProperties = (Record[String, Partial[Schema]]) & AllOf
   
-  @js.native
   trait ObjectSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
     /**
@@ -376,31 +360,31 @@ object mod {
       * adhere to
       * @default false
       */
-    var additionalProperties: js.UndefOr[Schema | Boolean] = js.native
+    var additionalProperties: js.UndefOr[Schema | Boolean] = js.undefined
     
     /**
       * Describe properties that have keys following a given pattern
       */
-    var patternProperties: js.UndefOr[ObjectProperties] = js.native
+    var patternProperties: js.UndefOr[ObjectProperties] = js.undefined
     
     /**
       * Describe the properties of the object
       */
-    var properties: js.UndefOr[ObjectProperties] = js.native
+    var properties: js.UndefOr[ObjectProperties] = js.undefined
     
     /**
       * The required properties of the object
       */
-    var required: js.UndefOr[js.Array[String]] = js.native
+    var required: js.UndefOr[js.Array[String]] = js.undefined
     
-    var `type`: `object` = js.native
+    var `type`: `object`
   }
   object ObjectSchema {
     
     @scala.inline
-    def apply(`type`: `object`): ObjectSchema = {
+    def apply(): ObjectSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[ObjectSchema]
     }
     
@@ -439,18 +423,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Configure Ajv, which is used to evaluate conditional schemas and combined (anyOf) schemas
       */
-    var ajv: js.UndefOr[typings.ajv.mod.Options] = js.native
+    var ajv: js.UndefOr[typings.ajv.mod.Options] = js.undefined
     
     /**
       * Optionally add an external definition to reference from your schema
       */
-    var schema: js.UndefOr[Record[String, Schema]] = js.native
+    var schema: js.UndefOr[Record[String, Schema]] = js.undefined
   }
   object Options {
     
@@ -477,14 +460,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RefSchema extends Schema {
+  trait RefSchema
+    extends StObject
+       with Schema {
     
     /**
       * A json-pointer to a schema to use as a reference
       */
     @JSName("$ref")
-    var $ref: String = js.native
+    var $ref: String
   }
   object RefSchema {
     
@@ -517,44 +501,44 @@ object mod {
   object Schema {
     
     @scala.inline
-    def ArraySchema(items: Schema | js.Object, `type`: array): typings.fastJsonStringify.mod.ArraySchema = {
+    def ArraySchema(items: Schema | js.Object): typings.fastJsonStringify.mod.ArraySchema = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.ArraySchema]
     }
     
     @scala.inline
-    def BooleanSchema(`type`: boolean): typings.fastJsonStringify.mod.BooleanSchema = {
+    def BooleanSchema(): typings.fastJsonStringify.mod.BooleanSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.BooleanSchema]
     }
     
     @scala.inline
-    def IntegerSchema(`type`: integer): typings.fastJsonStringify.mod.IntegerSchema = {
+    def IntegerSchema(): typings.fastJsonStringify.mod.IntegerSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.IntegerSchema]
     }
     
     @scala.inline
-    def NullSchema(`type`: `null`): typings.fastJsonStringify.mod.NullSchema = {
+    def NullSchema(): typings.fastJsonStringify.mod.NullSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("null")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.NullSchema]
     }
     
     @scala.inline
-    def NumberSchema(`type`: number): typings.fastJsonStringify.mod.NumberSchema = {
+    def NumberSchema(): typings.fastJsonStringify.mod.NumberSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("number")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.NumberSchema]
     }
     
     @scala.inline
-    def ObjectSchema(`type`: `object`): typings.fastJsonStringify.mod.ObjectSchema = {
+    def ObjectSchema(): typings.fastJsonStringify.mod.ObjectSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.ObjectSchema]
     }
     
@@ -565,33 +549,33 @@ object mod {
     }
     
     @scala.inline
-    def StringSchema(`type`: string): typings.fastJsonStringify.mod.StringSchema = {
+    def StringSchema(): typings.fastJsonStringify.mod.StringSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.StringSchema]
     }
     
     @scala.inline
-    def TupleSchema(items: js.Array[Schema], `type`: array): typings.fastJsonStringify.mod.TupleSchema = {
+    def TupleSchema(items: js.Array[Schema]): typings.fastJsonStringify.mod.TupleSchema = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[typings.fastJsonStringify.mod.TupleSchema]
     }
   }
   
-  @js.native
   trait StringSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object StringSchema {
     
     @scala.inline
-    def apply(`type`: string): StringSchema = {
+    def apply(): StringSchema = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[StringSchema]
     }
     
@@ -603,24 +587,24 @@ object mod {
     }
   }
   
-  @js.native
   trait TupleSchema
-    extends BaseSchema
+    extends StObject
+       with BaseSchema
        with Schema {
     
     /**
       * The schemas for the items in the tuple
       */
-    var items: js.Array[Schema] = js.native
+    var items: js.Array[Schema]
     
-    var `type`: array = js.native
+    var `type`: array
   }
   object TupleSchema {
     
     @scala.inline
-    def apply(items: js.Array[Schema], `type`: array): TupleSchema = {
+    def apply(items: js.Array[Schema]): TupleSchema = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[TupleSchema]
     }
     

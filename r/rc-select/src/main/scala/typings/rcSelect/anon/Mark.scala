@@ -5,15 +5,13 @@ import typings.rcSelect.generatorMod.RawValueType
 import typings.rcSelect.generatorMod.SelectSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mark[OptionsType /* <: js.Array[js.Object] */] extends StObject {
   
-  var mark: js.UndefOr[String] = js.native
+  var mark: js.UndefOr[String] = js.undefined
   
-  var onClear: js.UndefOr[OnClear] = js.native
+  var onClear: js.UndefOr[OnClear] = js.undefined
   
   var onRawDeselect: js.UndefOr[
     js.Function3[
@@ -22,7 +20,7 @@ trait Mark[OptionsType /* <: js.Array[js.Object] */] extends StObject {
       /* source */ SelectSource, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onRawSelect: js.UndefOr[
     js.Function3[
@@ -31,11 +29,11 @@ trait Mark[OptionsType /* <: js.Array[js.Object] */] extends StObject {
       /* source */ SelectSource, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var skipTriggerChange: js.UndefOr[Boolean] = js.native
+  var skipTriggerChange: js.UndefOr[Boolean] = js.undefined
   
-  var skipTriggerSelect: js.UndefOr[Boolean] = js.native
+  var skipTriggerSelect: js.UndefOr[Boolean] = js.undefined
 }
 object Mark {
   
@@ -46,7 +44,7 @@ object Mark {
   }
   
   @scala.inline
-  implicit class MarkMutableBuilder[Self <: Mark[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with Mark[OptionsType]) extends AnyVal {
+  implicit class MarkMutableBuilder[Self <: Mark[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & Mark[OptionsType]) extends AnyVal {
     
     @scala.inline
     def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])

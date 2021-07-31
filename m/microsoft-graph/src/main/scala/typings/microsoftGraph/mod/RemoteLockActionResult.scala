@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoteLockActionResult extends DeviceActionResult {
+trait RemoteLockActionResult
+  extends StObject
+     with DeviceActionResult {
   
   // Pin to unlock the client
-  var unlockPin: js.UndefOr[NullableOption[String]] = js.native
+  var unlockPin: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object RemoteLockActionResult {
   

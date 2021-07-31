@@ -2,19 +2,17 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to create a new contact group.
   */
-@js.native
 trait SchemaCreateContactGroupRequest extends StObject {
   
   /**
     * The contact group to create.
     */
-  var contactGroup: js.UndefOr[SchemaContactGroup] = js.native
+  var contactGroup: js.UndefOr[SchemaContactGroup] = js.undefined
 }
 object SchemaCreateContactGroupRequest {
   

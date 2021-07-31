@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTrafficPolicyInstanceCountResponse extends StObject {
   
   /**
     * The number of traffic policy instances that are associated with the current AWS account.
     */
-  var TrafficPolicyInstanceCount: typings.awsSdk.route53Mod.TrafficPolicyInstanceCount = js.native
+  var TrafficPolicyInstanceCount: typings.awsSdk.route53Mod.TrafficPolicyInstanceCount
 }
 object GetTrafficPolicyInstanceCountResponse {
   

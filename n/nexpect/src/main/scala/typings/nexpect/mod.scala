@@ -5,32 +5,28 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nexpect", "spawn")
+  @JSImport("nexpect", JSImport.Namespace)
   @js.native
-  def spawn(command: String): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: String, options: ISpawnOptions): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: String, params: js.UndefOr[scala.Nothing], options: ISpawnOptions): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: String, params: js.Array[_]): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: String, params: js.Array[_], options: ISpawnOptions): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: js.Array[String]): IChain = js.native
-  @JSImport("nexpect", "spawn")
-  @js.native
-  def spawn(command: js.Array[String], options: ISpawnOptions): IChain = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def spawn(command: String): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: String, options: ISpawnOptions): IChain = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: String, params: js.Array[js.Any]): IChain = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: String, params: js.Array[js.Any], options: ISpawnOptions): IChain = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: String, params: Unit, options: ISpawnOptions): IChain = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: js.Array[String]): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any]).asInstanceOf[IChain]
+  @scala.inline
+  def spawn(command: js.Array[String], options: ISpawnOptions): IChain = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IChain]
   
   @js.native
   trait IChain extends StObject {
@@ -50,20 +46,19 @@ object mod {
     def wait(expectation: RegExp): IChain = js.native
   }
   
-  @js.native
   trait ISpawnOptions extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var ignoreCase: js.UndefOr[js.Any] = js.native
+    var ignoreCase: js.UndefOr[js.Any] = js.undefined
     
-    var stream: js.UndefOr[js.Any] = js.native
+    var stream: js.UndefOr[js.Any] = js.undefined
     
-    var stripColors: js.UndefOr[js.Any] = js.native
+    var stripColors: js.UndefOr[js.Any] = js.undefined
     
-    var verbose: js.UndefOr[js.Any] = js.native
+    var verbose: js.UndefOr[js.Any] = js.undefined
   }
   object ISpawnOptions {
     

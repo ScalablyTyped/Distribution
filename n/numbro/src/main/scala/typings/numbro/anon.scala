@@ -3,21 +3,19 @@ package typings.numbro
 import typings.numbro.mod.numbro.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Billion extends StObject {
     
-    var billion: js.UndefOr[String] = js.native
+    var billion: js.UndefOr[String] = js.undefined
     
-    var million: js.UndefOr[String] = js.native
+    var million: js.UndefOr[String] = js.undefined
     
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
     
-    var trillion: js.UndefOr[String] = js.native
+    var trillion: js.UndefOr[String] = js.undefined
   }
   object Billion {
     
@@ -56,14 +54,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var position: String = js.native
+    var position: String
     
-    var symbol: String = js.native
+    var symbol: String
   }
   object Code {
     
@@ -87,14 +84,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Decimal extends StObject {
     
-    var decimal: String = js.native
+    var decimal: String
     
-    var thousands: String = js.native
+    var thousands: String
     
-    var thousandsSize: js.UndefOr[Double] = js.native
+    var thousandsSize: js.UndefOr[Double] = js.undefined
   }
   object Decimal {
     
@@ -121,16 +117,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FourDigits extends StObject {
     
-    var fourDigits: Format = js.native
+    var fourDigits: Format
     
-    var fullWithNoDecimals: Format = js.native
+    var fullWithNoDecimals: Format
     
-    var fullWithTwoDecimals: Format = js.native
+    var fullWithTwoDecimals: Format
     
-    var fullWithTwoDecimalsNoCurrency: Format = js.native
+    var fullWithTwoDecimalsNoCurrency: Format
   }
   object FourDigits {
     
@@ -162,16 +157,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Million extends StObject {
     
-    var billion: String = js.native
+    var billion: String
     
-    var million: String = js.native
+    var million: String
     
-    var thousand: String = js.native
+    var thousand: String
     
-    var trillion: String = js.native
+    var trillion: String
   }
   object Million {
     

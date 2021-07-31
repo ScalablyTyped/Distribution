@@ -7,7 +7,6 @@ import typings.ionic.libProjectMod.ProjectDeps
 import typings.ionic.libProjectMod.ProjectDetailsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionic1Mod {
@@ -31,14 +30,13 @@ object ionic1Mod {
     val type_Ionic1Project: ionic1 = js.native
   }
   
-  @js.native
   trait BowerJson extends StObject {
     
-    var dependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
-    var devDependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var devDependencies: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object BowerJson {
     

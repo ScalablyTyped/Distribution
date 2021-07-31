@@ -6,33 +6,44 @@ import typings.std.Float32Array
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("recorder-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Recorder {
+  class ^ protected ()
+    extends StObject
+       with Recorder {
     def this(audioContext: AudioContext) = this()
     def this(audioContext: AudioContext, config: RecorderConfig) = this()
+    
+    /* CompleteClass */
+    override def init(stream: MediaStream): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def start(): js.Promise[js.UndefOr[MediaStream]] = js.native
+    
+    /* CompleteClass */
+    override def stop(): js.Promise[RecorderResult] = js.native
   }
+  @JSImport("recorder-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("recorder-js", "download")
-  @js.native
-  def download(blob: Blob, filename: String): Unit = js.native
+  @scala.inline
+  def download(blob: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(blob.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OnAnalysedHandler = js.Function2[/* data */ js.Array[Double], /* lastNonZero */ Double, Unit]
   
-  @js.native
   trait Recorder extends StObject {
     
-    def init(stream: MediaStream): js.Promise[Unit] = js.native
+    def init(stream: MediaStream): js.Promise[Unit]
     
-    def start(): js.Promise[js.UndefOr[MediaStream]] = js.native
+    def start(): js.Promise[js.UndefOr[MediaStream]]
     
-    def stop(): js.Promise[RecorderResult] = js.native
+    def stop(): js.Promise[RecorderResult]
   }
   object Recorder {
     
@@ -60,10 +71,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RecorderConfig extends StObject {
     
-    var onAnalysed: js.UndefOr[OnAnalysedHandler] = js.native
+    var onAnalysed: js.UndefOr[OnAnalysedHandler] = js.undefined
   }
   object RecorderConfig {
     
@@ -84,12 +94,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RecorderResult extends StObject {
     
-    var blob: Blob = js.native
+    var blob: Blob
     
-    var buffer: js.Array[Float32Array] = js.native
+    var buffer: js.Array[Float32Array]
   }
   object RecorderResult {
     

@@ -2,43 +2,41 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an InputAudioConfig. */
-@js.native
 trait IInputAudioConfig extends StObject {
   
   /** InputAudioConfig audioEncoding */
   var audioEncoding: js.UndefOr[
     AudioEncoding | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.AudioEncoding * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** InputAudioConfig enableWordInfo */
-  var enableWordInfo: js.UndefOr[Boolean | Null] = js.native
+  var enableWordInfo: js.UndefOr[Boolean | Null] = js.undefined
   
   /** InputAudioConfig languageCode */
-  var languageCode: js.UndefOr[String | Null] = js.native
+  var languageCode: js.UndefOr[String | Null] = js.undefined
   
   /** InputAudioConfig model */
-  var model: js.UndefOr[String | Null] = js.native
+  var model: js.UndefOr[String | Null] = js.undefined
   
   /** InputAudioConfig modelVariant */
   var modelVariant: js.UndefOr[
     SpeechModelVariant | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.SpeechModelVariant * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** InputAudioConfig phraseHints */
-  var phraseHints: js.UndefOr[js.Array[String] | Null] = js.native
+  var phraseHints: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** InputAudioConfig sampleRateHertz */
-  var sampleRateHertz: js.UndefOr[Double | Null] = js.native
+  var sampleRateHertz: js.UndefOr[Double | Null] = js.undefined
   
   /** InputAudioConfig singleUtterance */
-  var singleUtterance: js.UndefOr[Boolean | Null] = js.native
+  var singleUtterance: js.UndefOr[Boolean | Null] = js.undefined
   
   /** InputAudioConfig speechContexts */
-  var speechContexts: js.UndefOr[js.Array[ISpeechContext] | Null] = js.native
+  var speechContexts: js.UndefOr[js.Array[ISpeechContext] | Null] = js.undefined
 }
 object IInputAudioConfig {
   

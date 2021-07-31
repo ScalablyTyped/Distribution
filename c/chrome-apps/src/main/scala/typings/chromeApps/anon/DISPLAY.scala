@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.display_
 import typings.chromeApps.chromeAppsStrings.system_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DISPLAY extends StObject {
   
-  var DISPLAY: display_ = js.native
+  var DISPLAY: display_
   
-  var SYSTEM: system_ = js.native
+  var SYSTEM: system_
 }
 object DISPLAY {
   
   @scala.inline
-  def apply(DISPLAY: display_, SYSTEM: system_): DISPLAY = {
-    val __obj = js.Dynamic.literal(DISPLAY = DISPLAY.asInstanceOf[js.Any], SYSTEM = SYSTEM.asInstanceOf[js.Any])
+  def apply(): DISPLAY = {
+    val __obj = js.Dynamic.literal(DISPLAY = "display", SYSTEM = "system")
     __obj.asInstanceOf[DISPLAY]
   }
   

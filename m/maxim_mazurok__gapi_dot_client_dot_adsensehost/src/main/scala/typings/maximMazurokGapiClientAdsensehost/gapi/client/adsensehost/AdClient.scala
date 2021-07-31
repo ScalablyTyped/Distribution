@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdsensehost.gapi.client.adsensehost
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdClient extends StObject {
   
   /** Whether this ad client is opted in to ARC. */
-  var arcOptIn: js.UndefOr[Boolean] = js.native
+  var arcOptIn: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of this ad client. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Kind of resource this is, in this case adsensehost#adClient. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** This ad client's product code, which corresponds to the PRODUCT_CODE report dimension. */
-  var productCode: js.UndefOr[String] = js.native
+  var productCode: js.UndefOr[String] = js.undefined
   
   /** Whether this ad client supports being reported on. */
-  var supportsReporting: js.UndefOr[Boolean] = js.native
+  var supportsReporting: js.UndefOr[Boolean] = js.undefined
 }
 object AdClient {
   

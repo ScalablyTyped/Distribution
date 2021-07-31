@@ -11,14 +11,15 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragDropMonitorImplMod {
   
   @JSImport("dnd-core/lib/DragDropMonitorImpl", "DragDropMonitorImpl")
   @js.native
-  class DragDropMonitorImpl protected () extends DragDropMonitor {
+  class DragDropMonitorImpl protected ()
+    extends StObject
+       with DragDropMonitor {
     def this(store: Store[State, AnyAction], registry: HandlerRegistry) = this()
     
     def canDragSource(sourceId: String): Boolean = js.native
@@ -27,9 +28,9 @@ object dragDropMonitorImplMod {
     
     def isDraggingSource(sourceId: String): Boolean = js.native
     
-    def isOverTarget(targetId: js.UndefOr[scala.Nothing], options: Shallow): Boolean = js.native
     def isOverTarget(targetId: String): Boolean = js.native
     def isOverTarget(targetId: String, options: Shallow): Boolean = js.native
+    def isOverTarget(targetId: Unit, options: Shallow): Boolean = js.native
     
     val registry: HandlerRegistry = js.native
     

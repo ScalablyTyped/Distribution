@@ -2,27 +2,25 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Merge extends StObject {
   
-  var key: String = js.native
+  var key: String
   
   // tslint:disable-next-line no-redundant-undefined
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[scala.Nothing] = js.native
+  var name: Unit
   
   // tslint:disable-next-line no-redundant-undefined
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[js.Object] = js.undefined
 }
 object Merge {
   
   @scala.inline
-  def apply(key: String): Merge = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
+  def apply(key: String, name: Unit): Merge = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Merge]
   }
   
@@ -37,6 +35,9 @@ object Merge {
     
     @scala.inline
     def setMergeUndefined: Self = StObject.set(x, "merge", js.undefined)
+    
+    @scala.inline
+    def setName(value: Unit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])

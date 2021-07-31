@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     body.appendTable(cells);
   */
 @js.native
-trait Table extends Element {
+trait Table
+  extends StObject
+     with Element {
   
   def appendTableRow(): TableRow = js.native
   def appendTableRow(tableRow: TableRow): TableRow = js.native

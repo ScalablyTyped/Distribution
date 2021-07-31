@@ -2,31 +2,29 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveResourcePermissionRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The principal ID of the resource.
     */
-  var PrincipalId: IdType = js.native
+  var PrincipalId: IdType
   
   /**
     * The principal type of the resource.
     */
-  var PrincipalType: js.UndefOr[typings.awsSdk.workdocsMod.PrincipalType] = js.native
+  var PrincipalType: js.UndefOr[typings.awsSdk.workdocsMod.PrincipalType] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
 }
 object RemoveResourcePermissionRequest {
   

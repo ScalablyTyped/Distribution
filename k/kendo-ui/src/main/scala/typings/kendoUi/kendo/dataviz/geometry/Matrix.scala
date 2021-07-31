@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.dataviz.geometry
 import typings.kendoUi.kendo.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Matrix extends Observable {
+trait Matrix
+  extends StObject
+     with Observable {
   
   var a: Double = js.native
   

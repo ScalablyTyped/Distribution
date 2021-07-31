@@ -2,36 +2,34 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRepositoryPermissionsPolicyRequest extends StObject {
   
   /**
     *  The name of the domain containing the repository to set the resource policy on. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  A valid displayable JSON Aspen policy string to be set as the access control resource policy on the provided repository. 
     */
-  var policyDocument: PolicyDocument = js.native
+  var policyDocument: PolicyDocument
   
   /**
     *  Sets the revision of the resource policy that specifies permissions to access the repository. This revision is used for optimistic locking, which prevents others from overwriting your changes to the repository's resource policy. 
     */
-  var policyRevision: js.UndefOr[PolicyRevision] = js.native
+  var policyRevision: js.UndefOr[PolicyRevision] = js.undefined
   
   /**
     *  The name of the repository to set the resource policy on. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
 }
 object PutRepositoryPermissionsPolicyRequest {
   

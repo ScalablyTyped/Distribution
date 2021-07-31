@@ -2,15 +2,15 @@ package typings.chromecastCafSender.cast.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemotePlayerChangedEvent[T] extends EventData {
+trait RemotePlayerChangedEvent[T]
+  extends StObject
+     with EventData {
   
-  var field: String = js.native
+  var field: String
   
-  var value: T = js.native
+  var value: T
 }
 object RemotePlayerChangedEvent {
   
@@ -22,7 +22,7 @@ object RemotePlayerChangedEvent {
   }
   
   @scala.inline
-  implicit class RemotePlayerChangedEventMutableBuilder[Self <: RemotePlayerChangedEvent[_], T] (val x: Self with RemotePlayerChangedEvent[T]) extends AnyVal {
+  implicit class RemotePlayerChangedEventMutableBuilder[Self <: RemotePlayerChangedEvent[?], T] (val x: Self & RemotePlayerChangedEvent[T]) extends AnyVal {
     
     @scala.inline
     def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])

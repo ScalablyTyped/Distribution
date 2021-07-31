@@ -2,13 +2,11 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeserializeHandlerOutput[Output /* <: js.Object */] extends StObject {
   
-  var output: js.UndefOr[Output] = js.native
+  var output: js.UndefOr[Output] = js.undefined
   
   /**
     * The raw response object from runtime is deserialized to structured output object.
@@ -18,7 +16,7 @@ trait DeserializeHandlerOutput[Output /* <: js.Object */] extends StObject {
     * During the deserialize phase of the execution of a middleware stack, a deserialized
     * response may or may not be available
     */
-  var response: js.Any = js.native
+  var response: js.Any
 }
 object DeserializeHandlerOutput {
   
@@ -29,7 +27,7 @@ object DeserializeHandlerOutput {
   }
   
   @scala.inline
-  implicit class DeserializeHandlerOutputMutableBuilder[Self <: DeserializeHandlerOutput[_], Output /* <: js.Object */] (val x: Self with DeserializeHandlerOutput[Output]) extends AnyVal {
+  implicit class DeserializeHandlerOutputMutableBuilder[Self <: DeserializeHandlerOutput[?], Output /* <: js.Object */] (val x: Self & DeserializeHandlerOutput[Output]) extends AnyVal {
     
     @scala.inline
     def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])

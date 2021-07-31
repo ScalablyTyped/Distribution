@@ -2,22 +2,20 @@ package typings.meteor.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Connection **/
-@js.native
 trait Connection extends StObject {
   
-  var clientAddress: String = js.native
+  var clientAddress: String
   
-  var close: js.Function = js.native
+  var close: js.Function
   
-  var httpHeaders: js.Object = js.native
+  var httpHeaders: js.Object
   
-  var id: String = js.native
+  var id: String
   
-  var onClose: js.Function = js.native
+  var onClose: js.Function
 }
 object Connection {
   

@@ -2,38 +2,36 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialSummary extends StObject {
   
   /**
     * When the trial was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the trial as displayed. If DisplayName isn't specified, TrialName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * When the trial was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial.
     */
-  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.native
+  var TrialArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialArn] = js.undefined
   
   /**
     * The name of the trial.
     */
-  var TrialName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialName: js.UndefOr[ExperimentEntityName] = js.undefined
   
-  var TrialSource: js.UndefOr[typings.awsSdk.sagemakerMod.TrialSource] = js.native
+  var TrialSource: js.UndefOr[typings.awsSdk.sagemakerMod.TrialSource] = js.undefined
 }
 object TrialSummary {
   

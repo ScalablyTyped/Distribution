@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triggerMod {
@@ -38,6 +37,10 @@ object triggerMod {
   /* static members */
   object Trigger {
     
+    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Trigger resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,37 +50,31 @@ object triggerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Trigger = js.native
-    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Trigger = js.native
-    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState): Trigger = js.native
-    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trigger]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TriggerState, opts: CustomResourceOptions): Trigger = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trigger]
     
     /**
       * Returns true if the given object is an instance of Trigger.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codecommit/trigger", "Trigger.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codecommit/trigger.Trigger */ Boolean]
   }
   
-  @js.native
   trait TriggerArgs extends StObject {
     
     /**
       * The name for the repository. This needs to be less than 100 characters.
       */
-    val repositoryName: Input[String] = js.native
+    val repositoryName: Input[String]
     
-    val triggers: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]] = js.native
+    val triggers: Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]
   }
   object TriggerArgs {
     
@@ -104,17 +101,16 @@ object triggerMod {
     }
   }
   
-  @js.native
   trait TriggerState extends StObject {
     
-    val configurationId: js.UndefOr[Input[String]] = js.native
+    val configurationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for the repository. This needs to be less than 100 characters.
       */
-    val repositoryName: js.UndefOr[Input[String]] = js.native
+    val repositoryName: js.UndefOr[Input[String]] = js.undefined
     
-    val triggers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]] = js.native
+    val triggers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codecommit.TriggerTrigger]]]] = js.undefined
   }
   object TriggerState {
     

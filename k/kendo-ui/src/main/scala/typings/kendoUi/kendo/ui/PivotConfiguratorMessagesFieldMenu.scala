@@ -2,33 +2,31 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotConfiguratorMessagesFieldMenu extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var clear: js.UndefOr[String] = js.native
+  var clear: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var filterFields: js.UndefOr[String] = js.native
+  var filterFields: js.UndefOr[String] = js.undefined
   
-  var include: js.UndefOr[String] = js.native
+  var include: js.UndefOr[String] = js.undefined
   
-  var info: js.UndefOr[String] = js.native
+  var info: js.UndefOr[String] = js.undefined
   
-  var ok: js.UndefOr[String] = js.native
+  var ok: js.UndefOr[String] = js.undefined
   
-  var operators: js.UndefOr[PivotConfiguratorMessagesFieldMenuOperators] = js.native
+  var operators: js.UndefOr[PivotConfiguratorMessagesFieldMenuOperators] = js.undefined
   
-  var sortAscending: js.UndefOr[String] = js.native
+  var sortAscending: js.UndefOr[String] = js.undefined
   
-  var sortDescending: js.UndefOr[String] = js.native
+  var sortDescending: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PivotConfiguratorMessagesFieldMenu {
   

@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPreviewerActiveXCtrl extends StObject {
   
-  def ClearPreview(): Double = js.native
+  def ClearPreview(): Double
   
-  def ShowFilePreview(bstrFilename: String): Double = js.native
+  def ShowFilePreview(bstrFilename: String): Double
   
   def ShowHitHighlightedFilePreview(
     bstrFilename: String,
@@ -21,7 +19,7 @@ trait IPreviewerActiveXCtrl extends StObject {
     lFileVersion: Double,
     pIHitHighlightingInfo: js.Any,
     bstrSearchConditions: String
-  ): Double = js.native
+  ): Double
 }
 object IPreviewerActiveXCtrl {
   

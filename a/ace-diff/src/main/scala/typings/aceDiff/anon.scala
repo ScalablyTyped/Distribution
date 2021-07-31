@@ -2,21 +2,19 @@ package typings.aceDiff
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Connector extends StObject {
     
-    var connector: String = js.native
+    var connector: String
     
-    var deletedCodeConnectorLinkContent: String = js.native
+    var deletedCodeConnectorLinkContent: String
     
-    var diff: String = js.native
+    var diff: String
     
-    var newCodeConnectorLinkContent: String = js.native
+    var newCodeConnectorLinkContent: String
   }
   object Connector {
     
@@ -48,12 +46,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: js.Any = js.native
+    var left: js.Any
     
-    var right: js.Any = js.native
+    var right: js.Any
   }
   object Left {
     

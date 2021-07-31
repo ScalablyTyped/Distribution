@@ -3,17 +3,15 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebSocketInformation extends StObject {
   
-  var bandwidthStatistics: BandwidthStatistics = js.native
+  var bandwidthStatistics: BandwidthStatistics
   
-  var localAddress: HostName = js.native
+  var localAddress: HostName
   
-  var protocol: String = js.native
+  var protocol: String
 }
 object IWebSocketInformation {
   

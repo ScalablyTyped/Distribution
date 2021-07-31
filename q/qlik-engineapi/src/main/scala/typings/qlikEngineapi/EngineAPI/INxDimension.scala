@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,45 +11,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: If the dimension is set in the hypercube and not in the library, this dimension cannot be shared with other objects.
   * Note: A dimension that is set in the library can be used by many objects.
   */
-@js.native
 trait INxDimension extends StObject {
   
   /**
     * List of attribute dimensions.
     */
-  var qAttributeDimensions: js.UndefOr[js.Array[INxAttrDimDef]] = js.native
+  var qAttributeDimensions: js.UndefOr[js.Array[INxAttrDimDef]] = js.undefined
   
   /**
     * List of attribute expressions.
     */
-  var qAttributeExpressions: js.UndefOr[js.Array[INxAttrExprDef]] = js.native
+  var qAttributeExpressions: js.UndefOr[js.Array[INxAttrExprDef]] = js.undefined
   
   /**
     * Specifies a calculation condition, which must be fulfilled for the dimension to be calculated.
     * If the calculation condition is not met, the dimension is excluded from the calculation.
     * This property is optional. By default, there is no calculation condition.
     */
-  var qCalcCond: js.UndefOr[IValueExpr] = js.native
+  var qCalcCond: js.UndefOr[IValueExpr] = js.undefined
   
   /**
     * Refers to a dimension stored in the hypercube.
     */
-  var qDef: INxInlineDimensionDef = js.native
+  var qDef: INxInlineDimensionDef
   
   /**
     * no / empty docu
     */
-  var qIncludeElemValue: js.UndefOr[Boolean] = js.native
+  var qIncludeElemValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Refers to a dimension stored in the library.
     */
-  var qLibraryId: js.UndefOr[String] = js.native
+  var qLibraryId: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, no null values are returned.
     */
-  var qNullSuppression: js.UndefOr[Boolean] = js.native
+  var qNullSuppression: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This property is used when some dimension limits are set.
@@ -62,25 +60,25 @@ trait INxDimension extends StObject {
     *               Where
     * <label> is the label of the Others group.
     */
-  var qOtherLabel: js.UndefOr[IStringExpressionContainer] = js.native
+  var qOtherLabel: js.UndefOr[IStringExpressionContainer] = js.undefined
   
   /**
     * Sets the dimension limits. Each dimension of a hypercube is configured separately.
     * Defines if some values (grouped as Others) should be grouped together in the visualization.
     * For example in a pie chart all values lower than 200 could be grouped together.
     */
-  var qOtherTotalSpec: js.UndefOr[IOtherTotalSpecProp] = js.native
+  var qOtherTotalSpec: js.UndefOr[IOtherTotalSpecProp] = js.undefined
   
   /**
     * If set to true, all dimension values are shown.
     */
-  var qShowAll: js.UndefOr[Boolean] = js.native
+  var qShowAll: js.UndefOr[Boolean] = js.undefined
   
   // ?Nicht in Doku
   /**
     * no / empty docu
     */
-  var qShowTotal: js.UndefOr[Boolean] = js.native
+  var qShowTotal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If this property is set, the total of the calculated values is returned.
@@ -92,7 +90,7 @@ trait INxDimension extends StObject {
     *               Where
     * <label> is the label of the Totalgroup.
     */
-  var qTotalLabel: js.UndefOr[IStringExpressionContainer] = js.native
+  var qTotalLabel: js.UndefOr[IStringExpressionContainer] = js.undefined
 }
 object INxDimension {
   

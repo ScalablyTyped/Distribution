@@ -7,15 +7,13 @@ import typings.vueInbrowserCompilerUtils.typesMod.ParamTag
 import typings.vueInbrowserCompilerUtils.typesMod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bindings extends StObject {
     
-    var bindings: js.Array[ParamTag | Tag] = js.native
+    var bindings: js.Array[ParamTag | Tag]
   }
   object Bindings {
     
@@ -36,10 +34,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CommentIndex extends StObject {
     
-    var commentIndex: js.UndefOr[Double] = js.native
+    var commentIndex: js.UndefOr[Double] = js.undefined
   }
   object CommentIndex {
     
@@ -60,10 +57,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Parse extends StObject {
     
-    def parse(src: String): File_ = js.native
+    def parse(src: String): File_
   }
   object Parse {
     
@@ -82,12 +78,11 @@ object anon {
   }
   
   /* Inlined std.Pick<@vue/compiler-sfc.@vue/compiler-sfc.SFCTemplateBlock, 'content' | 'attrs'> */
-  @js.native
   trait PickSFCTemplateBlockconte extends StObject {
     
-    var attrs: Record[String, String | `true`] = js.native
+    var attrs: Record[String, String | `true`]
     
-    var content: String = js.native
+    var content: String
   }
   object PickSFCTemplateBlockconte {
     

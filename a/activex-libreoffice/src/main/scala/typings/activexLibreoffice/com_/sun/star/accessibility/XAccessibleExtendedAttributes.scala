@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAccessibleExtendedAttributes extends XInterface {
+trait XAccessibleExtendedAttributes
+  extends StObject
+     with XInterface {
   
-  val ExtendedAttributes: js.Any = js.native
+  val ExtendedAttributes: js.Any
   
-  def getExtendedAttributes(): js.Any = js.native
+  def getExtendedAttributes(): js.Any
 }
 object XAccessibleExtendedAttributes {
   

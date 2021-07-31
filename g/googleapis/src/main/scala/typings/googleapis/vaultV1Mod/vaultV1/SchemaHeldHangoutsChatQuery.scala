@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Query options for hangouts chat holds.
   */
-@js.native
 trait SchemaHeldHangoutsChatQuery extends StObject {
   
   /**
     * If true, include rooms the user has participated in.
     */
-  var includeRooms: js.UndefOr[Boolean] = js.native
+  var includeRooms: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHeldHangoutsChatQuery {
   

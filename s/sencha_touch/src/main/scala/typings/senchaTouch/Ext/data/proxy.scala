@@ -4,16 +4,16 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxy {
   
-  @js.native
-  trait IAjax extends IServer {
+  trait IAjax
+    extends StObject
+       with IServer {
     
     /** [Property] (Object) */
-    var actionMethods: js.UndefOr[js.Any] = js.native
+    var actionMethods: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Performs Ajax request
       * @param operation Ext.data.Operation
@@ -27,80 +27,80 @@ object proxy {
           /* operation */ js.UndefOr[IOperation], 
           /* callback */ js.UndefOr[js.Any], 
           /* scope */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of headers
       * @returns Object
       */
-    var getHeaders: js.UndefOr[js.Function0[_]] = js.native
+    var getHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the HTTP method name for a given request
       * @param request Ext.data.Request The request object.
       * @returns String The HTTP method to use (should be one of 'GET', 'POST', 'PUT' or 'DELETE').
       */
-    var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.native
+    var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
     
     /** [Method] Returns the value of password
       * @returns String
       */
-    var getPassword: js.UndefOr[js.Function0[String]] = js.native
+    var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of useDefaultXhrHeader
       * @returns Boolean
       */
-    var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of username
       * @returns String
       */
-    var getUsername: js.UndefOr[js.Function0[String]] = js.native
+    var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of withCredentials
       * @returns Boolean
       */
-    var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Object) */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of headers
       * @param headers Object The new value.
       */
-    var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of password
       * @param password String The new value.
       */
-    var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.native
+    var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of useDefaultXhrHeader
       * @param useDefaultXhrHeader Boolean The new value.
       */
-    var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of username
       * @param username String The new value.
       */
-    var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.native
+    var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of withCredentials
       * @param withCredentials Boolean The new value.
       */
-    var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.native
+    var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var useDefaultXhrHeader: js.UndefOr[Boolean] = js.native
+    var useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object IAjax {
     
@@ -121,14 +121,14 @@ object proxy {
       
       @scala.inline
       def setDoRequest(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       @scala.inline
       def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
       
       @scala.inline
-      def setGetHeaders(value: () => _): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+      def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
@@ -225,12 +225,12 @@ object proxy {
     }
   }
   
-  @js.native
   trait IClient
-    extends typings.senchaTouch.Ext.data.proxy.IProxy {
+    extends StObject
+       with typings.senchaTouch.Ext.data.proxy.IProxy {
     
     /** [Method] Abstract function that must be implemented by each ClientProxy subclass  */
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IClient {
     
@@ -251,17 +251,18 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IDirect extends IServer {
+  trait IDirect
+    extends StObject
+       with IServer {
     
     /** [Method] Generates a url based on a given Ext data Request object
       * @returns String The url
       */
     @JSName("buildUrl")
-    var buildUrl_IDirect: js.UndefOr[js.Function0[String]] = js.native
+    var buildUrl_IDirect: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (Function/String) */
-    var directFn: js.UndefOr[js.Any] = js.native
+    var directFn: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
       * @param operation Object
@@ -276,43 +277,43 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of directFn
       * @returns Function/String
       */
-    var getDirectFn: js.UndefOr[js.Function0[_]] = js.native
+    var getDirectFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of paramOrder
       * @returns String/String[]
       */
-    var getParamOrder: js.UndefOr[js.Function0[_]] = js.native
+    var getParamOrder: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of paramsAsHash
       * @returns Boolean
       */
-    var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var paramOrder: js.UndefOr[js.Any] = js.native
+    var paramOrder: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var paramsAsHash: js.UndefOr[Boolean] = js.native
+    var paramsAsHash: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of directFn
       * @param directFn Function/String The new value.
       */
-    var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.native
+    var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of paramOrder
       * @param paramOrder String/String[] The new value.
       */
-    var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.native
+    var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of paramsAsHash
       * @param paramsAsHash Boolean The new value.
       */
-    var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.native
+    var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IDirect {
     
@@ -346,13 +347,13 @@ object proxy {
       def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
       
       @scala.inline
-      def setGetDirectFn(value: () => _): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+      def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
       
       @scala.inline
-      def setGetParamOrder(value: () => _): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+      def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
@@ -395,17 +396,18 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IJsonP extends IServer {
+  trait IJsonP
+    extends StObject
+       with IServer {
     
     /** [Method] Aborts the current server request if one is currently running  */
-    var abort: js.UndefOr[js.Function0[Unit]] = js.native
+    var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoAppendParams: js.UndefOr[Boolean] = js.native
+    var autoAppendParams: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var callbackKey: js.UndefOr[String] = js.native
+    var callbackKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the read request to the remote domain
       * @param operation Ext.data.Operation The Operation object to execute.
@@ -419,52 +421,52 @@ object proxy {
           /* operation */ js.UndefOr[IOperation], 
           /* callback */ js.UndefOr[js.Any], 
           /* scope */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of autoAppendParams
       * @returns Boolean
       */
-    var getAutoAppendParams: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoAppendParams: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of callbackKey
       * @returns String
       */
-    var getCallbackKey: js.UndefOr[js.Function0[String]] = js.native
+    var getCallbackKey: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of defaultWriterType
       * @returns String
       */
-    var getDefaultWriterType: js.UndefOr[js.Function0[String]] = js.native
+    var getDefaultWriterType: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of recordParam
       * @returns String
       */
-    var getRecordParam: js.UndefOr[js.Function0[String]] = js.native
+    var getRecordParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var recordParam: js.UndefOr[String] = js.native
+    var recordParam: js.UndefOr[String] = js.undefined
     
     /** [Method] Sets the value of autoAppendParams
       * @param autoAppendParams Boolean The new value.
       */
-    var setAutoAppendParams: js.UndefOr[js.Function1[/* autoAppendParams */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoAppendParams: js.UndefOr[js.Function1[/* autoAppendParams */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of callbackKey
       * @param callbackKey String The new value.
       */
-    var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.native
+    var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of defaultWriterType
       * @param defaultWriterType String The new value.
       */
-    var setDefaultWriterType: js.UndefOr[js.Function1[/* defaultWriterType */ js.UndefOr[String], Unit]] = js.native
+    var setDefaultWriterType: js.UndefOr[js.Function1[/* defaultWriterType */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of recordParam
       * @param recordParam String The new value.
       */
-    var setRecordParam: js.UndefOr[js.Function1[/* recordParam */ js.UndefOr[String], Unit]] = js.native
+    var setRecordParam: js.UndefOr[js.Function1[/* recordParam */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IJsonP {
     
@@ -497,7 +499,7 @@ object proxy {
       
       @scala.inline
       def setDoRequest(
-        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
+        value: (/* operation */ js.UndefOr[IOperation], /* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "doRequest", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -561,21 +563,22 @@ object proxy {
   
   type ILocalStorage = IWebStorage
   
-  @js.native
-  trait IMemory extends IClient {
+  trait IMemory
+    extends StObject
+       with IClient {
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IMemory {
     
@@ -595,7 +598,7 @@ object proxy {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
@@ -608,20 +611,21 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IProxy extends IEvented {
+  trait IProxy
+    extends StObject
+       with IEvented {
     
     /** [Method] Performs a batch of Operations in the order specified by batchOrder
       * @param options Object Object containing one or more properties supported by the batch method:
       * @returns Ext.data.Batch The newly created Batch
       */
-    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.native
+    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var batchActions: js.UndefOr[Boolean] = js.native
+    var batchActions: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var batchOrder: js.UndefOr[String] = js.native
+    var batchOrder: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the given create operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -635,7 +639,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Performs the given destroy operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -650,35 +654,35 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of batchActions
       * @returns Boolean
       */
-    var getBatchActions: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getBatchActions: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of batchOrder
       * @returns String
       */
-    var getBatchOrder: js.UndefOr[js.Function0[String]] = js.native
+    var getBatchOrder: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of model
       * @returns String/Ext.data.Model
       */
-    var getModel: js.UndefOr[js.Function0[_]] = js.native
+    var getModel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of reader
       * @returns Object/String/Ext.data.reader.Reader
       */
-    var getReader: js.UndefOr[js.Function0[_]] = js.native
+    var getReader: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of writer
       * @returns Object/String/Ext.data.writer.Writer
       */
-    var getWriter: js.UndefOr[js.Function0[_]] = js.native
+    var getWriter: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String/Ext.data.Model) */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Performs the given read operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -692,35 +696,35 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.reader.Reader) */
-    var reader: js.UndefOr[js.Any] = js.native
+    var reader: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of batchActions
       * @param batchActions Boolean The new value.
       */
-    var setBatchActions: js.UndefOr[js.Function1[/* batchActions */ js.UndefOr[Boolean], Unit]] = js.native
+    var setBatchActions: js.UndefOr[js.Function1[/* batchActions */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of batchOrder
       * @param batchOrder String The new value.
       */
-    var setBatchOrder: js.UndefOr[js.Function1[/* batchOrder */ js.UndefOr[String], Unit]] = js.native
+    var setBatchOrder: js.UndefOr[js.Function1[/* batchOrder */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of model
       * @param model String/Ext.data.Model The new value.
       */
-    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.native
+    var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of reader
       * @param reader Object/String/Ext.data.reader.Reader The new value.
       */
-    var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], Unit]] = js.native
+    var setReader: js.UndefOr[js.Function1[/* reader */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of writer
       * @param writer Object/String/Ext.data.writer.Writer The new value.
       */
-    var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], Unit]] = js.native
+    var setWriter: js.UndefOr[js.Function1[/* writer */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Performs the given update operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -734,10 +738,10 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.writer.Writer) */
-    var writer: js.UndefOr[js.Any] = js.native
+    var writer: js.UndefOr[js.Any] = js.undefined
   }
   object IProxy {
     
@@ -797,19 +801,19 @@ object proxy {
       def setGetBatchOrderUndefined: Self = StObject.set(x, "getBatchOrder", js.undefined)
       
       @scala.inline
-      def setGetModel(value: () => _): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+      def setGetModel(value: () => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
       
       @scala.inline
-      def setGetReader(value: () => _): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
+      def setGetReader(value: () => js.Any): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
       
       @scala.inline
-      def setGetWriter(value: () => _): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
+      def setGetWriter(value: () => js.Any): Self = StObject.set(x, "getWriter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetWriterUndefined: Self = StObject.set(x, "getWriter", js.undefined)
@@ -880,44 +884,45 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IRest extends IAjax {
+  trait IRest
+    extends StObject
+       with IAjax {
     
     /** [Config Option] (Boolean) */
-    var appendId: js.UndefOr[Boolean] = js.native
+    var appendId: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of actionMethods
       * @returns Object
       */
-    var getActionMethods: js.UndefOr[js.Function0[_]] = js.native
+    var getActionMethods: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of appendId
       * @returns Boolean
       */
-    var getAppendId: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAppendId: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of format
       * @returns String
       */
-    var getFormat: js.UndefOr[js.Function0[String]] = js.native
+    var getFormat: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Sets the value of actionMethods
       * @param actionMethods Object The new value.
       */
-    var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.native
+    var setActionMethods: js.UndefOr[js.Function1[/* actionMethods */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of appendId
       * @param appendId Boolean The new value.
       */
-    var setAppendId: js.UndefOr[js.Function1[/* appendId */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAppendId: js.UndefOr[js.Function1[/* appendId */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of format
       * @param format String The new value.
       */
-    var setFormat: js.UndefOr[js.Function1[/* format */ js.UndefOr[String], Unit]] = js.native
+    var setFormat: js.UndefOr[js.Function1[/* format */ js.UndefOr[String], Unit]] = js.undefined
   }
   object IRest {
     
@@ -943,7 +948,7 @@ object proxy {
       def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
       @scala.inline
-      def setGetActionMethods(value: () => _): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
+      def setGetActionMethods(value: () => js.Any): Self = StObject.set(x, "getActionMethods", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActionMethodsUndefined: Self = StObject.set(x, "getActionMethods", js.undefined)
@@ -980,9 +985,9 @@ object proxy {
     }
   }
   
-  @js.native
   trait IServer
-    extends typings.senchaTouch.Ext.data.proxy.IProxy {
+    extends StObject
+       with typings.senchaTouch.Ext.data.proxy.IProxy {
     
     /** [Method] Optional callback function which can be used to clean up after a request has been completed
       * @param request Ext.data.Request The Request object
@@ -990,32 +995,32 @@ object proxy {
       */
     var afterRequest: js.UndefOr[
         js.Function2[/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var api: js.UndefOr[js.Any] = js.native
+    var api: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Creates and returns an Ext data Request object based on the options passed by the Store that this Proxy is attached to
       * @param operation Ext.data.Operation The Operation object to execute
       * @returns Ext.data.Request The request object
       */
-    var buildRequest: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], IRequest]] = js.native
+    var buildRequest: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], IRequest]] = js.undefined
     
     /** [Method] Generates a url based on a given Ext data Request object
       * @param request Ext.data.Request The request object
       * @returns String The url
       */
-    var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.native
+    var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
     
     /** [Config Option] (String) */
-    var cacheString: js.UndefOr[String] = js.native
+    var cacheString: js.UndefOr[String] = js.undefined
     
     /** [Method] in a ServerProxy all four CRUD operations are executed in the same manner so we delegate to doRequest in each case */
     @JSName("create")
-    var create_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var create_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var directionParam: js.UndefOr[String] = js.native
+    var directionParam: js.UndefOr[String] = js.undefined
     
     /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
       * @param operation Ext.data.Operation The Ext.data.Operation object
@@ -1029,110 +1034,110 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enablePagingParams: js.UndefOr[Boolean] = js.native
+    var enablePagingParams: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Encodes the array of Ext util Filter objects into a string to be sent in the request url
       * @param filters Ext.util.Filter[] The array of Filter objects
       * @returns String The encoded filters
       */
-    var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.native
+    var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.undefined
     
     /** [Method] Encodes the array of Ext util Sorter objects into a string to be sent in the request url
       * @param sorters Ext.util.Sorter[] The array of Sorter objects
       * @returns String The encoded sorters
       */
-    var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.native
+    var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
     
     /** [Config Option] (Object) */
-    var extraParams: js.UndefOr[js.Any] = js.native
+    var extraParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var filterParam: js.UndefOr[String] = js.native
+    var filterParam: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of api
       * @returns Object
       */
-    var getApi: js.UndefOr[js.Function0[_]] = js.native
+    var getApi: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of cacheString
       * @returns String
       */
-    var getCacheString: js.UndefOr[js.Function0[String]] = js.native
+    var getCacheString: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of directionParam
       * @returns String
       */
-    var getDirectionParam: js.UndefOr[js.Function0[String]] = js.native
+    var getDirectionParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of enablePagingParams
       * @returns Boolean
       */
-    var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of extraParams
       * @returns Object
       */
-    var getExtraParams: js.UndefOr[js.Function0[_]] = js.native
+    var getExtraParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of filterParam
       * @returns String
       */
-    var getFilterParam: js.UndefOr[js.Function0[String]] = js.native
+    var getFilterParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of groupParam
       * @returns String
       */
-    var getGroupParam: js.UndefOr[js.Function0[String]] = js.native
+    var getGroupParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of limitParam
       * @returns String
       */
-    var getLimitParam: js.UndefOr[js.Function0[String]] = js.native
+    var getLimitParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of noCache
       * @returns Boolean
       */
-    var getNoCache: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getNoCache: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of pageParam
       * @returns String
       */
-    var getPageParam: js.UndefOr[js.Function0[String]] = js.native
+    var getPageParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of simpleSortMode
       * @returns Boolean
       */
-    var getSimpleSortMode: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getSimpleSortMode: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of sortParam
       * @returns String
       */
-    var getSortParam: js.UndefOr[js.Function0[String]] = js.native
+    var getSortParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of startParam
       * @returns String
       */
-    var getStartParam: js.UndefOr[js.Function0[String]] = js.native
+    var getStartParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of timeout
       * @returns Number
       */
-    var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+    var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (String) */
-    var groupParam: js.UndefOr[String] = js.native
+    var groupParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var limitParam: js.UndefOr[String] = js.native
+    var limitParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var pageParam: js.UndefOr[String] = js.native
+    var pageParam: js.UndefOr[String] = js.undefined
     
     /** [Method] This method handles the processing of the response and is usually overridden by subclasses to do additional processing
       * @param success Boolean Whether or not this request was successful
@@ -1152,31 +1157,31 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Performs the given read operation  */
     @JSName("read")
-    var read_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var read_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Sets the value of api
       * @param api Object The new value.
       */
-    var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.native
+    var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of cacheString
       * @param cacheString String The new value.
       */
-    var setCacheString: js.UndefOr[js.Function1[/* cacheString */ js.UndefOr[String], Unit]] = js.native
+    var setCacheString: js.UndefOr[js.Function1[/* cacheString */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of directionParam
       * @param directionParam String The new value.
       */
-    var setDirectionParam: js.UndefOr[js.Function1[/* directionParam */ js.UndefOr[String], Unit]] = js.native
+    var setDirectionParam: js.UndefOr[js.Function1[/* directionParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of enablePagingParams
       * @param enablePagingParams Boolean The new value.
       */
-    var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.native
+    var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets a value in the underlying extraParams
       * @param name String The key for the new value
@@ -1184,81 +1189,81 @@ object proxy {
       */
     var setExtraParam: js.UndefOr[
         js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of extraParams
       * @param extraParams Object The new value.
       */
-    var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.native
+    var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of filterParam
       * @param filterParam String The new value.
       */
-    var setFilterParam: js.UndefOr[js.Function1[/* filterParam */ js.UndefOr[String], Unit]] = js.native
+    var setFilterParam: js.UndefOr[js.Function1[/* filterParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of groupParam
       * @param groupParam String The new value.
       */
-    var setGroupParam: js.UndefOr[js.Function1[/* groupParam */ js.UndefOr[String], Unit]] = js.native
+    var setGroupParam: js.UndefOr[js.Function1[/* groupParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of limitParam
       * @param limitParam String The new value.
       */
-    var setLimitParam: js.UndefOr[js.Function1[/* limitParam */ js.UndefOr[String], Unit]] = js.native
+    var setLimitParam: js.UndefOr[js.Function1[/* limitParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of noCache
       * @param noCache Boolean The new value.
       */
-    var setNoCache: js.UndefOr[js.Function1[/* noCache */ js.UndefOr[Boolean], Unit]] = js.native
+    var setNoCache: js.UndefOr[js.Function1[/* noCache */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of pageParam
       * @param pageParam String The new value.
       */
-    var setPageParam: js.UndefOr[js.Function1[/* pageParam */ js.UndefOr[String], Unit]] = js.native
+    var setPageParam: js.UndefOr[js.Function1[/* pageParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of simpleSortMode
       * @param simpleSortMode Boolean The new value.
       */
-    var setSimpleSortMode: js.UndefOr[js.Function1[/* simpleSortMode */ js.UndefOr[Boolean], Unit]] = js.native
+    var setSimpleSortMode: js.UndefOr[js.Function1[/* simpleSortMode */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of sortParam
       * @param sortParam String The new value.
       */
-    var setSortParam: js.UndefOr[js.Function1[/* sortParam */ js.UndefOr[String], Unit]] = js.native
+    var setSortParam: js.UndefOr[js.Function1[/* sortParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of startParam
       * @param startParam String The new value.
       */
-    var setStartParam: js.UndefOr[js.Function1[/* startParam */ js.UndefOr[String], Unit]] = js.native
+    var setStartParam: js.UndefOr[js.Function1[/* startParam */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of timeout
       * @param timeout Number The new value.
       */
-    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var simpleSortMode: js.UndefOr[Boolean] = js.native
+    var simpleSortMode: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var sortParam: js.UndefOr[String] = js.native
+    var sortParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var startParam: js.UndefOr[String] = js.native
+    var startParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Method] Performs the given update operation  */
     @JSName("update")
-    var update_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var update_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IServer {
     
@@ -1352,7 +1357,7 @@ object proxy {
       def setFilterParamUndefined: Self = StObject.set(x, "filterParam", js.undefined)
       
       @scala.inline
-      def setGetApi(value: () => _): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+      def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
@@ -1376,7 +1381,7 @@ object proxy {
       def setGetEnablePagingParamsUndefined: Self = StObject.set(x, "getEnablePagingParams", js.undefined)
       
       @scala.inline
-      def setGetExtraParams(value: () => _): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+      def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
@@ -1609,8 +1614,9 @@ object proxy {
   
   type ISessionStorage = IWebStorage
   
-  @js.native
-  trait ISql extends IClient {
+  trait ISql
+    extends StObject
+       with IClient {
     
     /** [Method] Performs the given create operation
       * @param operation Object
@@ -1625,10 +1631,10 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the given destroy operation
       * @param operation Object
@@ -1643,43 +1649,43 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of columns
       * @returns String
       */
-    var getColumns: js.UndefOr[js.Function0[String]] = js.native
+    var getColumns: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of database
       * @returns String
       */
-    var getDatabase: js.UndefOr[js.Function0[String]] = js.native
+    var getDatabase: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of defaultDateFormat
       * @returns String
       */
-    var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.native
+    var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Formats the data for each record before sending it to the server
       * @param record Object The record that we are writing to the server.
       * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
       */
-    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], _]] = js.native
+    var getRecordData: js.UndefOr[js.Function1[/* record */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Returns the value of table
       * @returns String
       */
-    var getTable: js.UndefOr[js.Function0[String]] = js.native
+    var getTable: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of tableExists
       * @returns Boolean
       */
-    var getTableExists: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getTableExists: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of uniqueIdStrategy
       * @returns Boolean
       */
-    var getUniqueIdStrategy: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUniqueIdStrategy: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Performs the given read operation
       * @param operation Object
@@ -1694,40 +1700,40 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of columns
       * @param columns String The new value.
       */
-    var setColumns: js.UndefOr[js.Function1[/* columns */ js.UndefOr[String], Unit]] = js.native
+    var setColumns: js.UndefOr[js.Function1[/* columns */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of database
       * @param database String The new value.
       */
-    var setDatabase: js.UndefOr[js.Function1[/* database */ js.UndefOr[String], Unit]] = js.native
+    var setDatabase: js.UndefOr[js.Function1[/* database */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of defaultDateFormat
       * @param defaultDateFormat String The new value.
       */
-    var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.native
+    var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of table
       * @param table String The new value.
       */
-    var setTable: js.UndefOr[js.Function1[/* table */ js.UndefOr[String], Unit]] = js.native
+    var setTable: js.UndefOr[js.Function1[/* table */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of tableExists
       * @param tableExists Boolean The new value.
       */
-    var setTableExists: js.UndefOr[js.Function1[/* tableExists */ js.UndefOr[Boolean], Unit]] = js.native
+    var setTableExists: js.UndefOr[js.Function1[/* tableExists */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of uniqueIdStrategy
       * @param uniqueIdStrategy Boolean The new value.
       */
-    var setUniqueIdStrategy: js.UndefOr[js.Function1[/* uniqueIdStrategy */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUniqueIdStrategy: js.UndefOr[js.Function1[/* uniqueIdStrategy */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the given update operation
       * @param operation Object
@@ -1742,7 +1748,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ISql {
     
@@ -1796,7 +1802,7 @@ object proxy {
       def setGetDefaultDateFormatUndefined: Self = StObject.set(x, "getDefaultDateFormat", js.undefined)
       
       @scala.inline
-      def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
+      def setGetRecordData(value: /* record */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
@@ -1879,11 +1885,12 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IWebStorage extends IClient {
+  trait IWebStorage
+    extends StObject
+       with IClient {
     
     /** [Property] (Object) */
-    var cache: js.UndefOr[js.Any] = js.native
+    var cache: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -1898,7 +1905,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] inherit
       * @param operation Object
@@ -1913,29 +1920,29 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enablePagingParams: js.UndefOr[Boolean] = js.native
+    var enablePagingParams: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of defaultDateFormat
       * @returns String
       */
-    var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.native
+    var getDefaultDateFormat: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of enablePagingParams
       * @returns Boolean
       */
-    var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getEnablePagingParams: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of id
       * @returns String
       */
     @JSName("getId")
-    var getId_IWebStorage: js.UndefOr[js.Function0[String]] = js.native
+    var getId_IWebStorage: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -1950,28 +1957,28 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of defaultDateFormat
       * @param defaultDateFormat String The new value.
       */
-    var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.native
+    var setDefaultDateFormat: js.UndefOr[js.Function1[/* defaultDateFormat */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of enablePagingParams
       * @param enablePagingParams Boolean The new value.
       */
-    var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.native
+    var setEnablePagingParams: js.UndefOr[js.Function1[/* enablePagingParams */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id String The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.native
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Saves the given record in the Proxy
       * @param record Ext.data.Model The model instance
       * @param id String The id to save the record under (defaults to the value of the record's getId() function)
       */
-    var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -1986,7 +1993,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IWebStorage {
     

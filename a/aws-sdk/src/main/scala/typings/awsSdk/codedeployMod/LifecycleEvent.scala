@@ -2,36 +2,34 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleEvent extends StObject {
   
   /**
     * Diagnostic information about the deployment lifecycle event.
     */
-  var diagnostics: js.UndefOr[Diagnostics] = js.native
+  var diagnostics: js.UndefOr[Diagnostics] = js.undefined
   
   /**
     * A timestamp that indicates when the deployment lifecycle event ended.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The deployment lifecycle event name, such as ApplicationStop, BeforeInstall, AfterInstall, ApplicationStart, or ValidateService.
     */
-  var lifecycleEventName: js.UndefOr[LifecycleEventName] = js.native
+  var lifecycleEventName: js.UndefOr[LifecycleEventName] = js.undefined
   
   /**
     * A timestamp that indicates when the deployment lifecycle event started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The deployment lifecycle event status:   Pending: The deployment lifecycle event is pending.   InProgress: The deployment lifecycle event is in progress.   Succeeded: The deployment lifecycle event ran successfully.   Failed: The deployment lifecycle event has failed.   Skipped: The deployment lifecycle event has been skipped.   Unknown: The deployment lifecycle event is unknown.  
     */
-  var status: js.UndefOr[LifecycleEventStatus] = js.native
+  var status: js.UndefOr[LifecycleEventStatus] = js.undefined
 }
 object LifecycleEvent {
   

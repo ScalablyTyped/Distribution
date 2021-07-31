@@ -2,26 +2,24 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.ErrorSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplLogging extends StObject {
   
-  var logging: js.UndefOr[String] = js.native
+  var logging: js.UndefOr[String] = js.undefined
   
-  var maxResults: js.UndefOr[String] = js.native
+  var maxResults: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var noResults: js.UndefOr[String] = js.native
+  var noResults: js.UndefOr[String] = js.undefined
   
-  var noTemplate: js.UndefOr[String] = js.native
+  var noTemplate: js.UndefOr[String] = js.undefined
   
-  var serverError: js.UndefOr[String] = js.native
+  var serverError: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplLogging {
   

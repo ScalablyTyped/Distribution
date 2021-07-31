@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for the StatusChanged event. */
-@js.native
 trait StatusChangedEventArgs extends StObject {
   
   /** The updated status of the Geolocator object. */
-  var status: PositionStatus = js.native
+  var status: PositionStatus
 }
 object StatusChangedEventArgs {
   

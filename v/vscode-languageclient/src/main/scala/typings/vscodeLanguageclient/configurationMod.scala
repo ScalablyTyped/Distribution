@@ -9,14 +9,15 @@ import typings.vscodeLanguageserverProtocol.protocolConfigurationMod.Configurati
 import typings.vscodeLanguageserverProtocol.protocolConfigurationMod.ConfigurationRequest.MiddlewareSignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationMod {
   
   @JSImport("vscode-languageclient/lib/configuration", "ConfigurationFeature")
   @js.native
-  class ConfigurationFeature protected () extends StaticFeature {
+  class ConfigurationFeature protected ()
+    extends StObject
+       with StaticFeature {
     def this(_client: BaseLanguageClient) = this()
     
     var _client: js.Any = js.native
@@ -26,10 +27,9 @@ object configurationMod {
     def initialize(): Unit = js.native
   }
   
-  @js.native
   trait ConfigurationWorkspaceMiddleware extends StObject {
     
-    var configuration: js.UndefOr[MiddlewareSignature] = js.native
+    var configuration: js.UndefOr[MiddlewareSignature] = js.undefined
   }
   object ConfigurationWorkspaceMiddleware {
     

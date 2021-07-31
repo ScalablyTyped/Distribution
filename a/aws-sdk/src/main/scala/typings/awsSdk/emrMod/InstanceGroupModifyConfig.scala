@@ -2,36 +2,34 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupModifyConfig extends StObject {
   
   /**
     * A list of new or modified configurations to apply for an instance group.
     */
-  var Configurations: js.UndefOr[ConfigurationList] = js.native
+  var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
     * The EC2 InstanceIds to terminate. After you terminate the instances, the instance group will not return to its original requested size.
     */
-  var EC2InstanceIdsToTerminate: js.UndefOr[EC2InstanceIdsToTerminateList] = js.native
+  var EC2InstanceIdsToTerminate: js.UndefOr[EC2InstanceIdsToTerminateList] = js.undefined
   
   /**
     * Target size for the instance group.
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * Unique ID of the instance group to expand or shrink.
     */
-  var InstanceGroupId: XmlStringMaxLen256 = js.native
+  var InstanceGroupId: XmlStringMaxLen256
   
   /**
     * Policy for customizing shrink operations.
     */
-  var ShrinkPolicy: js.UndefOr[typings.awsSdk.emrMod.ShrinkPolicy] = js.native
+  var ShrinkPolicy: js.UndefOr[typings.awsSdk.emrMod.ShrinkPolicy] = js.undefined
 }
 object InstanceGroupModifyConfig {
   

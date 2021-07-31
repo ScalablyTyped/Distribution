@@ -2,13 +2,11 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleSet extends StObject {
   
-  var rules: js.Array[TransformationRule] = js.native
+  var rules: js.Array[TransformationRule]
 }
 object RuleSet {
   

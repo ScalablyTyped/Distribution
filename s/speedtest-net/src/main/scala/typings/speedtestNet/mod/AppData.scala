@@ -3,23 +3,21 @@ package typings.speedtestNet.mod
 import typings.speedtestNet.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppData extends StObject {
   
-  var ispName: String = js.native
+  var ispName: String
   
-  var license: Message = js.native
+  var license: Message
   
-  var licenseKey: String = js.native
+  var licenseKey: String
   
-  var resultFormat: String = js.native
+  var resultFormat: String
   
-  var saveTestResultUrl: String = js.native
+  var saveTestResultUrl: String
   
-  var traceLevel: Double = js.native
+  var traceLevel: Double
 }
 object AppData {
   

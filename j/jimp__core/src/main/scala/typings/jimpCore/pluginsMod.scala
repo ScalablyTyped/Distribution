@@ -12,46 +12,44 @@ import typings.std.Pick
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginsMod {
   
-  type ClassOrConstantPlugin[T /* <: Image */] = WellFormedPlugin[T] with (Required[Pick[WellFormedPlugin[T], `class` | constants]])
+  type ClassOrConstantPlugin[T /* <: Image */] = WellFormedPlugin[T] & (Required[Pick[WellFormedPlugin[T], `class` | constants]])
   
-  type IllformedPlugin = (Omit[_, `class` | constants]) with Class
+  type IllformedPlugin = (Omit[js.Any, `class` | constants]) & Class
   
   type JimpPlugin[T /* <: Image */] = ClassOrConstantPlugin[T] | IllformedPlugin
   
   /* Inlined @jimp/core.@jimp/core/types/plugins.WellFormedPlugin<T> & std.Required<std.Pick<@jimp/core.@jimp/core/types/plugins.WellFormedPlugin<T>, 'mime'>> */
-  @js.native
   trait JimpType[T /* <: Image */] extends StObject {
     
     // Extend the Jimp class with the following constants, etc
-    var `class`: js.UndefOr[js.Any] = js.native
+    var `class`: js.UndefOr[js.Any] = js.undefined
     
     var constants: js.UndefOr[// Contants to assign to the Jimp instance
-    StringDictionary[js.Any]] = js.native
+    StringDictionary[js.Any]] = js.undefined
     
-    var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.native
+    var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.undefined
     
     var encoders: js.UndefOr[// Jimp Image
-    StringDictionary[EncoderFn[T]]] = js.native
+    StringDictionary[EncoderFn[T]]] = js.undefined
     
-    var hasAlpha: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var hasAlpha: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var mime: js.UndefOr[StringDictionary[js.Array[String]]] with StringDictionary[js.Array[String]] = js.native
+    var mime: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]
   }
   object JimpType {
     
     @scala.inline
-    def apply[T /* <: Image */](mime: js.UndefOr[StringDictionary[js.Array[String]]] with StringDictionary[js.Array[String]]): JimpType[T] = {
+    def apply[T /* <: Image */](mime: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]): JimpType[T] = {
       val __obj = js.Dynamic.literal(mime = mime.asInstanceOf[js.Any])
       __obj.asInstanceOf[JimpType[T]]
     }
     
     @scala.inline
-    implicit class JimpTypeMutableBuilder[Self <: JimpType[_], T /* <: Image */] (val x: Self with JimpType[T]) extends AnyVal {
+    implicit class JimpTypeMutableBuilder[Self <: JimpType[?], T /* <: Image */] (val x: Self & JimpType[T]) extends AnyVal {
       
       @scala.inline
       def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
@@ -86,27 +84,26 @@ object pluginsMod {
       def setHasAlphaUndefined: Self = StObject.set(x, "hasAlpha", js.undefined)
       
       @scala.inline
-      def setMime(value: js.UndefOr[StringDictionary[js.Array[String]]] with StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      def setMime(value: js.UndefOr[StringDictionary[js.Array[String]]] & StringDictionary[js.Array[String]]): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait WellFormedPlugin[ImageType /* <: Image */] extends StObject {
     
     // Extend the Jimp class with the following constants, etc
-    var `class`: js.UndefOr[js.Any] = js.native
+    var `class`: js.UndefOr[js.Any] = js.undefined
     
     var constants: js.UndefOr[// Contants to assign to the Jimp instance
-    StringDictionary[js.Any]] = js.native
+    StringDictionary[js.Any]] = js.undefined
     
-    var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.native
+    var decoders: js.UndefOr[StringDictionary[DecoderFn]] = js.undefined
     
     var encoders: js.UndefOr[// Jimp Image
-    StringDictionary[EncoderFn[ImageType]]] = js.native
+    StringDictionary[EncoderFn[ImageType]]] = js.undefined
     
-    var hasAlpha: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var hasAlpha: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var mime: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object WellFormedPlugin {
     
@@ -117,7 +114,7 @@ object pluginsMod {
     }
     
     @scala.inline
-    implicit class WellFormedPluginMutableBuilder[Self <: WellFormedPlugin[_], ImageType /* <: Image */] (val x: Self with WellFormedPlugin[ImageType]) extends AnyVal {
+    implicit class WellFormedPluginMutableBuilder[Self <: WellFormedPlugin[?], ImageType /* <: Image */] (val x: Self & WellFormedPlugin[ImageType]) extends AnyVal {
       
       @scala.inline
       def setClass(value: js.Any): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])

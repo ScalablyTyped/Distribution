@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingExpansionConfig extends StObject {
   
   /**
     * Required. Whether to exclude first party audiences from targeting. Similar audiences of the excluded first party lists will not be excluded. Only applicable when a first-party
     * audience is positively targeted (directly or included in a combined audience), otherwise this selection will be ignored.
     */
-  var excludeFirstPartyAudience: js.UndefOr[Boolean] = js.native
+  var excludeFirstPartyAudience: js.UndefOr[Boolean] = js.undefined
   
   /** Required. Magnitude of expansion for applicable targeting under this line item. */
-  var targetingExpansionLevel: js.UndefOr[String] = js.native
+  var targetingExpansionLevel: js.UndefOr[String] = js.undefined
 }
 object TargetingExpansionConfig {
   

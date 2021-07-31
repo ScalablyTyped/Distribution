@@ -6,48 +6,48 @@ import typings.formatNumber.formatNumberStrings.none
 import typings.formatNumber.formatNumberStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("format-number", JSImport.Default)
+  @JSImport("format-number", JSImport.Namespace)
   @js.native
-  def default(): format = js.native
-  @JSImport("format-number", JSImport.Default)
-  @js.native
-  def default(options: IFormatNumberOptions): format = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): format = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[format]
+  @scala.inline
+  def default(options: IFormatNumberOptions): format = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[format]
+  
   trait IFormatNumberOptions extends StObject {
     
-    var decimal: js.UndefOr[String] = js.native
+    var decimal: js.UndefOr[String] = js.undefined
     
-    var decimalsSeparator: js.UndefOr[String] = js.native
+    var decimalsSeparator: js.UndefOr[String] = js.undefined
     
-    var integerSeparator: js.UndefOr[String] = js.native
+    var integerSeparator: js.UndefOr[String] = js.undefined
     
-    var negativeLeftOut: js.UndefOr[Boolean] = js.native
+    var negativeLeftOut: js.UndefOr[Boolean] = js.undefined
     
-    var negativeLeftSymbol: js.UndefOr[String] = js.native
+    var negativeLeftSymbol: js.UndefOr[String] = js.undefined
     
-    var negativeRightOut: js.UndefOr[Boolean] = js.native
+    var negativeRightOut: js.UndefOr[Boolean] = js.undefined
     
-    var negativeRightSymbol: js.UndefOr[String] = js.native
+    var negativeRightSymbol: js.UndefOr[String] = js.undefined
     
-    var negativeType: js.UndefOr[right | left | brackets | none] = js.native
+    var negativeType: js.UndefOr[right | left | brackets | none] = js.undefined
     
-    var padLeft: js.UndefOr[Double] = js.native
+    var padLeft: js.UndefOr[Double] = js.undefined
     
-    var padRight: js.UndefOr[Double] = js.native
+    var padRight: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var round: js.UndefOr[Double] = js.native
+    var round: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var truncate: js.UndefOr[Double] = js.native
+    var truncate: js.UndefOr[Double] = js.undefined
   }
   object IFormatNumberOptions {
     
@@ -146,12 +146,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IFormatNumberOverrideOptions extends StObject {
     
-    var noSeparator: js.UndefOr[Boolean] = js.native
+    var noSeparator: js.UndefOr[Boolean] = js.undefined
     
-    var noUnits: js.UndefOr[Boolean] = js.native
+    var noUnits: js.UndefOr[Boolean] = js.undefined
   }
   object IFormatNumberOverrideOptions {
     

@@ -2,37 +2,34 @@ package typings.signalExit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("signal-exit", JSImport.Namespace)
-  @js.native
-  def apply(callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit]): js.Function0[Unit] = js.native
-  @JSImport("signal-exit", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def apply(
     callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit],
     options: Options
-  ): js.Function0[Unit] = js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("signal-exit", "load")
+  @JSImport("signal-exit", JSImport.Namespace)
   @js.native
-  def load(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("signal-exit", "signals")
-  @js.native
-  def signals(): js.Array[Signal] = js.native
+  @scala.inline
+  def load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[Unit]
   
-  @JSImport("signal-exit", "unload")
-  @js.native
-  def unload(): Unit = js.native
+  @scala.inline
+  def signals(): js.Array[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("signals")().asInstanceOf[js.Array[Signal]]
   
-  @js.native
+  @scala.inline
+  def unload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")().asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var alwaysLast: js.UndefOr[Boolean] = js.native
+    var alwaysLast: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

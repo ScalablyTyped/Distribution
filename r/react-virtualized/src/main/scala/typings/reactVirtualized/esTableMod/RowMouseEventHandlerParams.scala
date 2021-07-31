@@ -4,22 +4,20 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowMouseEventHandlerParams extends StObject {
   
-  var event: MouseEvent[_, NativeMouseEvent] = js.native
+  var event: MouseEvent[js.Any, NativeMouseEvent]
   
-  var index: Double = js.native
+  var index: Double
   
-  var rowData: js.Any = js.native
+  var rowData: js.Any
 }
 object RowMouseEventHandlerParams {
   
   @scala.inline
-  def apply(event: MouseEvent[_, NativeMouseEvent], index: Double, rowData: js.Any): RowMouseEventHandlerParams = {
+  def apply(event: MouseEvent[js.Any, NativeMouseEvent], index: Double, rowData: js.Any): RowMouseEventHandlerParams = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], rowData = rowData.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowMouseEventHandlerParams]
   }
@@ -28,7 +26,7 @@ object RowMouseEventHandlerParams {
   implicit class RowMouseEventHandlerParamsMutableBuilder[Self <: RowMouseEventHandlerParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEvent(value: MouseEvent[_, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent[js.Any, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

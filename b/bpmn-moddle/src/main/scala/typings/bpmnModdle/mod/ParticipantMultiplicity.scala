@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParticipantMultiplicity extends BaseElement {
+trait ParticipantMultiplicity
+  extends StObject
+     with BaseElement {
   
-  var maximum: Double = js.native
+  var maximum: Double
   
-  var minimum: Double = js.native
+  var minimum: Double
 }
 object ParticipantMultiplicity {
   

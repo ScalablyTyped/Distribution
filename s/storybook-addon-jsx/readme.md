@@ -10,9 +10,9 @@ Display the JSX of the story
 | ------------------ | :-------------: |
 | Full name          | storybook-addon-jsx |
 | Keywords           | - |
-| # releases         | 65 |
+| # releases         | 67 |
 | # dependents       | 27 |
-| # downloads        | 2254282 |
+| # downloads        | 2594830 |
 | # stars            | 1 |
 
 ## Links

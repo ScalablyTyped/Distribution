@@ -2,17 +2,15 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceClientOptions extends StObject {
   
-  var filters: js.UndefOr[js.Array[_]] = js.native
+  var filters: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var noRetryPolicy: js.UndefOr[Boolean] = js.native
+  var noRetryPolicy: js.UndefOr[Boolean] = js.undefined
   
-  var requestOptions: js.UndefOr[ClientRequestOptions] = js.native
+  var requestOptions: js.UndefOr[ClientRequestOptions] = js.undefined
 }
 object ServiceClientOptions {
   
@@ -26,7 +24,7 @@ object ServiceClientOptions {
   implicit class ServiceClientOptionsMutableBuilder[Self <: ServiceClientOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFilters(value: js.Array[_]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    def setFilters(value: js.Array[js.Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)

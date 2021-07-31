@@ -5,30 +5,28 @@ import typings.openlayers.mod.Extent_
 import typings.openlayers.mod.proj.Units
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for the projection.
   */
-@js.native
 trait ProjectionOptions extends StObject {
   
-  var axisOrientation: js.UndefOr[String] = js.native
+  var axisOrientation: js.UndefOr[String] = js.undefined
   
-  var code: String = js.native
+  var code: String
   
-  var extent: js.UndefOr[Extent_] = js.native
+  var extent: js.UndefOr[Extent_] = js.undefined
   
-  var getPointResolution: js.UndefOr[js.Function2[/* resolution */ Double, /* coords */ Coordinate_, Double]] = js.native
+  var getPointResolution: js.UndefOr[js.Function2[/* resolution */ Double, /* coords */ Coordinate_, Double]] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var metersPerUnit: js.UndefOr[Double] = js.native
+  var metersPerUnit: js.UndefOr[Double] = js.undefined
   
-  var units: js.UndefOr[Units | String] = js.native
+  var units: js.UndefOr[Units | String] = js.undefined
   
-  var worldExtent: js.UndefOr[Extent_] = js.native
+  var worldExtent: js.UndefOr[Extent_] = js.undefined
 }
 object ProjectionOptions {
   

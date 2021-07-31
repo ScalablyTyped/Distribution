@@ -3,7 +3,6 @@ package typings.screeps
 import typings.screeps.anon.StoreRESOURCEENERGYMinera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait StructureLab
-  extends OwnedStructure[STRUCTURE_LAB]
+  extends StObject
+     with OwnedStructure[STRUCTURE_LAB]
      with AnyOwnedStructure
      with AnyStoreStructure
      with ConcreteStructure[js.Any] {

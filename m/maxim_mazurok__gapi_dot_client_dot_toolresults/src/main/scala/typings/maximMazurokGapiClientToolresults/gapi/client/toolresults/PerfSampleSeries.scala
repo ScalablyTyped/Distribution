@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerfSampleSeries extends StObject {
   
   /** Basic series represented by a line chart */
-  var basicPerfSampleSeries: js.UndefOr[BasicPerfSampleSeries] = js.native
+  var basicPerfSampleSeries: js.UndefOr[BasicPerfSampleSeries] = js.undefined
   
   /** A tool results execution ID. @OutputOnly */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** A tool results history ID. @OutputOnly */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** The cloud project @OutputOnly */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** A sample series id @OutputOnly */
-  var sampleSeriesId: js.UndefOr[String] = js.native
+  var sampleSeriesId: js.UndefOr[String] = js.undefined
   
   /** A tool results step ID. @OutputOnly */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object PerfSampleSeries {
   

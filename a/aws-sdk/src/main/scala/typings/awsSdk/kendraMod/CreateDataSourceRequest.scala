@@ -2,56 +2,54 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDataSourceRequest extends StObject {
   
   /**
     * A token that you provide to identify the request to create a data source. Multiple calls to the CreateDataSource operation with the same client token will create only one data source.
     */
-  var ClientToken: js.UndefOr[ClientTokenName] = js.native
+  var ClientToken: js.UndefOr[ClientTokenName] = js.undefined
   
   /**
     * The connector configuration information that is required to access the repository. You can't specify the Configuration parameter when the Type parameter is set to CUSTOM. If you do, you receive a ValidationException exception. The Configuration parameter is required for all other data sources.
     */
-  var Configuration: js.UndefOr[DataSourceConfiguration] = js.native
+  var Configuration: js.UndefOr[DataSourceConfiguration] = js.undefined
   
   /**
     * A description for the data source.
     */
-  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.kendraMod.Description] = js.undefined
   
   /**
     * The identifier of the index that should be associated with this data source.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * A unique name for the data source. A data source name can't be changed without deleting and recreating the data source.
     */
-  var Name: DataSourceName = js.native
+  var Name: DataSourceName
   
   /**
     * The Amazon Resource Name (ARN) of a role with permission to access the data source. For more information, see IAM Roles for Amazon Kendra. You can't specify the RoleArn parameter when the Type parameter is set to CUSTOM. If you do, you receive a ValidationException exception. The RoleArn parameter is required for all other data sources.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.kendraMod.RoleArn] = js.undefined
   
   /**
     * Sets the frequency that Amazon Kendra will check the documents in your repository and update the index. If you don't set a schedule Amazon Kendra will not periodically update the index. You can call the StartDataSourceSyncJob operation to update the index. You can't specify the Schedule parameter when the Type parameter is set to CUSTOM. If you do, you receive a ValidationException exception.
     */
-  var Schedule: js.UndefOr[ScanSchedule] = js.native
+  var Schedule: js.UndefOr[ScanSchedule] = js.undefined
   
   /**
     * A list of key-value pairs that identify the data source. You can use the tags to identify and organize your resources and to control access to resources.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of repository that contains the data source.
     */
-  var Type: DataSourceType = js.native
+  var Type: DataSourceType
 }
 object CreateDataSourceRequest {
   

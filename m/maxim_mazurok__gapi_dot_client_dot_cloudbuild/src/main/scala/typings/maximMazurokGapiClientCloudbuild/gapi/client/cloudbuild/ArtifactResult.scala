@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactResult extends StObject {
   
   /** The file hash of the artifact. */
-  var fileHash: js.UndefOr[js.Array[FileHashes]] = js.native
+  var fileHash: js.UndefOr[js.Array[FileHashes]] = js.undefined
   
   /** The path of an artifact in a Google Cloud Storage bucket, with the generation number. For example, `gs://mybucket/path/to/output.jar#generation`. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object ArtifactResult {
   

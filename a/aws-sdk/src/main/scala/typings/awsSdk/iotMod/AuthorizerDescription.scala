@@ -2,56 +2,54 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizerDescription extends StObject {
   
   /**
     * The authorizer ARN.
     */
-  var authorizerArn: js.UndefOr[AuthorizerArn] = js.native
+  var authorizerArn: js.UndefOr[AuthorizerArn] = js.undefined
   
   /**
     * The authorizer's Lambda function ARN.
     */
-  var authorizerFunctionArn: js.UndefOr[AuthorizerFunctionArn] = js.native
+  var authorizerFunctionArn: js.UndefOr[AuthorizerFunctionArn] = js.undefined
   
   /**
     * The authorizer name.
     */
-  var authorizerName: js.UndefOr[AuthorizerName] = js.native
+  var authorizerName: js.UndefOr[AuthorizerName] = js.undefined
   
   /**
     * The UNIX timestamp of when the authorizer was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The UNIX timestamp of when the authorizer was last updated.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * Specifies whether AWS IoT validates the token signature in an authorization request.
     */
-  var signingDisabled: js.UndefOr[BooleanKey] = js.native
+  var signingDisabled: js.UndefOr[BooleanKey] = js.undefined
   
   /**
     * The status of the authorizer.
     */
-  var status: js.UndefOr[AuthorizerStatus] = js.native
+  var status: js.UndefOr[AuthorizerStatus] = js.undefined
   
   /**
     * The key used to extract the token from the HTTP headers.
     */
-  var tokenKeyName: js.UndefOr[TokenKeyName] = js.native
+  var tokenKeyName: js.UndefOr[TokenKeyName] = js.undefined
   
   /**
     * The public keys used to validate the token signature returned by your custom authentication service.
     */
-  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.native
+  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.undefined
 }
 object AuthorizerDescription {
   

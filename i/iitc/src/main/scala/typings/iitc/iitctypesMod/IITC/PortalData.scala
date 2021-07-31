@@ -3,32 +3,32 @@ package typings.iitc.iitctypesMod.IITC
 import typings.iitc.anon.Fragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalData extends PortalDataCore {
+trait PortalData
+  extends StObject
+     with PortalDataCore {
   
-  var artifactBrief: Fragment | Null = js.native
+  var artifactBrief: Fragment | Null
   
-  var health: Double = js.native
+  var health: Double
   
-  var image: String = js.native
+  var image: String
   
   // url
-  var level: Double = js.native
+  var level: Double
   
-  var mission: Boolean = js.native
+  var mission: Boolean
   
-  var mission50plus: Boolean = js.native
+  var mission50plus: Boolean
   
-  var ornaments: js.Array[String] = js.native
+  var ornaments: js.Array[String]
   
-  var resCount: Double = js.native
+  var resCount: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var title: String = js.native
+  var title: String
 }
 object PortalData {
   
@@ -47,7 +47,7 @@ object PortalData {
     timestamp: Double,
     title: String
   ): PortalData = {
-    val __obj = js.Dynamic.literal(health = health.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], mission = mission.asInstanceOf[js.Any], mission50plus = mission50plus.asInstanceOf[js.Any], ornaments = ornaments.asInstanceOf[js.Any], resCount = resCount.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(health = health.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], latE6 = latE6.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], lngE6 = lngE6.asInstanceOf[js.Any], mission = mission.asInstanceOf[js.Any], mission50plus = mission50plus.asInstanceOf[js.Any], ornaments = ornaments.asInstanceOf[js.Any], resCount = resCount.asInstanceOf[js.Any], team = team.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], artifactBrief = null)
     __obj.asInstanceOf[PortalData]
   }
   

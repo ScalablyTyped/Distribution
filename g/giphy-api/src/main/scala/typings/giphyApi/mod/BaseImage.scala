@@ -2,17 +2,15 @@ package typings.giphyApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseImage extends StObject {
   
-  var height: String = js.native
+  var height: String
   
-  var url: String = js.native
+  var url: String
   
-  var width: String = js.native
+  var width: String
 }
 object BaseImage {
   

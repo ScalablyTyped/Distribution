@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceGroupItem extends StObject {
   
-  var aggregates: js.UndefOr[js.Array[DataSourceGroupItemAggregate]] = js.native
+  var aggregates: js.UndefOr[js.Array[DataSourceGroupItemAggregate]] = js.undefined
   
   var compare: js.UndefOr[
     js.Function2[/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem, Double]
-  ] = js.native
+  ] = js.undefined
   
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
 }
 object DataSourceGroupItem {
   

@@ -19,7 +19,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace iam. */
@@ -41,21 +40,23 @@ object iam {
     }
     object AuditConfigDelta {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Action enum. */
       @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.Action")
       @js.native
       object Action extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[
-                typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action with Double
-              ] = js.native
+        def apply(value: Double): js.UndefOr[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action & Double] = js.native
         
-        /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ACTION_UNSPECIFIED with Double = js.native
+        /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ACTION_UNSPECIFIED & Double = js.native
         
-        /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ADD with Double = js.native
+        /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.ADD & Double = js.native
         
-        /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.REMOVE with Double = js.native
+        /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta.Action.REMOVE & Double = js.native
       }
       
       /**
@@ -64,12 +65,10 @@ object iam {
         * @returns AuditConfigDelta instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.create")
-      @js.native
-      def create(properties: IAuditConfigDelta): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
+      @scala.inline
+      def create(properties: IAuditConfigDelta): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
       
       /**
         * Decodes an AuditConfigDelta message from the specified reader or buffer.
@@ -80,18 +79,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
       
       /**
         * Decodes an AuditConfigDelta message from the specified reader or buffer, length delimited.
@@ -101,12 +96,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
       
       /**
         * Encodes the specified AuditConfigDelta message. Does not implicitly {@link google.iam.v1.AuditConfigDelta.verify|verify} messages.
@@ -115,12 +108,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.encode")
-      @js.native
-      def encode(message: IAuditConfigDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.encode")
-      @js.native
-      def encode(message: IAuditConfigDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IAuditConfigDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IAuditConfigDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified AuditConfigDelta message, length delimited. Does not implicitly {@link google.iam.v1.AuditConfigDelta.verify|verify} messages.
@@ -129,12 +120,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IAuditConfigDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IAuditConfigDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IAuditConfigDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IAuditConfigDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates an AuditConfigDelta message from a plain object. Also converts values to their respective internal types.
@@ -142,9 +131,8 @@ object iam {
         * @returns AuditConfigDelta
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta]
       
       /**
         * Creates a plain object from an AuditConfigDelta message. Also converts values to other types if specified.
@@ -153,15 +141,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.AuditConfigDelta,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies an AuditConfigDelta message.
@@ -169,9 +155,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.AuditConfigDelta.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a Binding. */
@@ -187,18 +172,20 @@ object iam {
     }
     object Binding {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Binding instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Binding instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.create")
-      @js.native
-      def create(properties: IBinding): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
+      @scala.inline
+      def create(properties: IBinding): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
       
       /**
         * Decodes a Binding message from the specified reader or buffer.
@@ -209,18 +196,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Binding = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Binding = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
       
       /**
         * Decodes a Binding message from the specified reader or buffer, length delimited.
@@ -230,12 +213,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
       
       /**
         * Encodes the specified Binding message. Does not implicitly {@link google.iam.v1.Binding.verify|verify} messages.
@@ -244,12 +225,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.encode")
-      @js.native
-      def encode(message: IBinding): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.encode")
-      @js.native
-      def encode(message: IBinding, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IBinding): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IBinding, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Binding message, length delimited. Does not implicitly {@link google.iam.v1.Binding.verify|verify} messages.
@@ -258,12 +237,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBinding): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBinding, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IBinding): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IBinding, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Binding message from a plain object. Also converts values to their respective internal types.
@@ -271,9 +248,8 @@ object iam {
         * @returns Binding
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.Binding = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Binding]
       
       /**
         * Creates a plain object from a Binding message. Also converts values to other types if specified.
@@ -282,12 +258,10 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Binding): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Binding, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Binding): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Binding, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Binding message.
@@ -295,9 +269,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Binding.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a BindingDelta. */
@@ -313,19 +286,23 @@ object iam {
     }
     object BindingDelta {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Action enum. */
       @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.Action")
       @js.native
       object Action extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action & Double] = js.native
         
-        /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED with Double = js.native
+        /* 0 */ val ACTION_UNSPECIFIED: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ACTION_UNSPECIFIED & Double = js.native
         
-        /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ADD with Double = js.native
+        /* 1 */ val ADD: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.ADD & Double = js.native
         
-        /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.REMOVE with Double = js.native
+        /* 2 */ val REMOVE: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta.Action.REMOVE & Double = js.native
       }
       
       /**
@@ -334,12 +311,10 @@ object iam {
         * @returns BindingDelta instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.create")
-      @js.native
-      def create(properties: IBindingDelta): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
+      @scala.inline
+      def create(properties: IBindingDelta): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
       
       /**
         * Decodes a BindingDelta message from the specified reader or buffer.
@@ -350,18 +325,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
       
       /**
         * Decodes a BindingDelta message from the specified reader or buffer, length delimited.
@@ -371,12 +342,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
       
       /**
         * Encodes the specified BindingDelta message. Does not implicitly {@link google.iam.v1.BindingDelta.verify|verify} messages.
@@ -385,12 +354,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.encode")
-      @js.native
-      def encode(message: IBindingDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.encode")
-      @js.native
-      def encode(message: IBindingDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IBindingDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IBindingDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified BindingDelta message, length delimited. Does not implicitly {@link google.iam.v1.BindingDelta.verify|verify} messages.
@@ -399,12 +366,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBindingDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBindingDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IBindingDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IBindingDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a BindingDelta message from a plain object. Also converts values to their respective internal types.
@@ -412,9 +377,8 @@ object iam {
         * @returns BindingDelta
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta]
       
       /**
         * Creates a plain object from a BindingDelta message. Also converts values to other types if specified.
@@ -423,12 +387,10 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.BindingDelta, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a BindingDelta message.
@@ -436,9 +398,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.BindingDelta.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a GetIamPolicyRequest. */
@@ -454,18 +415,20 @@ object iam {
     }
     object GetIamPolicyRequest {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new GetIamPolicyRequest instance using the specified properties.
         * @param [properties] Properties to set
         * @returns GetIamPolicyRequest instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.create")
-      @js.native
-      def create(properties: IGetIamPolicyRequest): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
+      @scala.inline
+      def create(properties: IGetIamPolicyRequest): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
       
       /**
         * Decodes a GetIamPolicyRequest message from the specified reader or buffer.
@@ -476,18 +439,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
       
       /**
         * Decodes a GetIamPolicyRequest message from the specified reader or buffer, length delimited.
@@ -497,12 +456,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
       
       /**
         * Encodes the specified GetIamPolicyRequest message. Does not implicitly {@link google.iam.v1.GetIamPolicyRequest.verify|verify} messages.
@@ -511,12 +468,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.encode")
-      @js.native
-      def encode(message: IGetIamPolicyRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.encode")
-      @js.native
-      def encode(message: IGetIamPolicyRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IGetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IGetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified GetIamPolicyRequest message, length delimited. Does not implicitly {@link google.iam.v1.GetIamPolicyRequest.verify|verify} messages.
@@ -525,12 +480,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IGetIamPolicyRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IGetIamPolicyRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IGetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IGetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a GetIamPolicyRequest message from a plain object. Also converts values to their respective internal types.
@@ -538,9 +491,8 @@ object iam {
         * @returns GetIamPolicyRequest
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest]
       
       /**
         * Creates a plain object from a GetIamPolicyRequest message. Also converts values to other types if specified.
@@ -549,15 +501,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.GetIamPolicyRequest,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a GetIamPolicyRequest message.
@@ -565,9 +515,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetIamPolicyRequest.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a GetPolicyOptions. */
@@ -583,18 +532,20 @@ object iam {
     }
     object GetPolicyOptions {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new GetPolicyOptions instance using the specified properties.
         * @param [properties] Properties to set
         * @returns GetPolicyOptions instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.create")
-      @js.native
-      def create(properties: IGetPolicyOptions): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
+      @scala.inline
+      def create(properties: IGetPolicyOptions): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
       
       /**
         * Decodes a GetPolicyOptions message from the specified reader or buffer.
@@ -605,18 +556,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
       
       /**
         * Decodes a GetPolicyOptions message from the specified reader or buffer, length delimited.
@@ -626,12 +573,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
       
       /**
         * Encodes the specified GetPolicyOptions message. Does not implicitly {@link google.iam.v1.GetPolicyOptions.verify|verify} messages.
@@ -640,12 +585,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.encode")
-      @js.native
-      def encode(message: IGetPolicyOptions): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.encode")
-      @js.native
-      def encode(message: IGetPolicyOptions, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IGetPolicyOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IGetPolicyOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified GetPolicyOptions message, length delimited. Does not implicitly {@link google.iam.v1.GetPolicyOptions.verify|verify} messages.
@@ -654,12 +597,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IGetPolicyOptions): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IGetPolicyOptions, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IGetPolicyOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IGetPolicyOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a GetPolicyOptions message from a plain object. Also converts values to their respective internal types.
@@ -667,9 +608,8 @@ object iam {
         * @returns GetPolicyOptions
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions]
       
       /**
         * Creates a plain object from a GetPolicyOptions message. Also converts values to other types if specified.
@@ -678,15 +618,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.GetPolicyOptions,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a GetPolicyOptions message.
@@ -694,9 +632,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.GetPolicyOptions.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a IAMPolicy */
@@ -712,10 +649,14 @@ object iam {
         */
       def this(rpcImpl: RPCImpl) = this()
       def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-      def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
       def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+      def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
     }
     object IAMPolicy {
+      
+      @JSImport("google-gax", "IamProtos.google.iam.v1.IAMPolicy")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates new IAMPolicy service using the specified rpc implementation.
@@ -725,18 +666,14 @@ object iam {
         * @returns RPC service. Useful where requests and/or responses are streamed.
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.IAMPolicy.create")
-      @js.native
-      def create(rpcImpl: RPCImpl): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.IAMPolicy.create")
-      @js.native
-      def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.IAMPolicy.create")
-      @js.native
-      def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.IAMPolicy.create")
-      @js.native
-      def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = js.native
+      @scala.inline
+      def create(rpcImpl: RPCImpl): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy]
+      @scala.inline
+      def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy]
+      @scala.inline
+      def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy]
+      @scala.inline
+      def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.IAMPolicy]
     }
     
     /** Represents a Policy. */
@@ -752,18 +689,20 @@ object iam {
     }
     object Policy {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Policy instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Policy instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.create")
-      @js.native
-      def create(properties: IPolicy): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
+      @scala.inline
+      def create(properties: IPolicy): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
       
       /**
         * Decodes a Policy message from the specified reader or buffer.
@@ -774,18 +713,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
       
       /**
         * Decodes a Policy message from the specified reader or buffer, length delimited.
@@ -795,12 +730,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
       
       /**
         * Encodes the specified Policy message. Does not implicitly {@link google.iam.v1.Policy.verify|verify} messages.
@@ -809,12 +742,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.encode")
-      @js.native
-      def encode(message: IPolicy): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.encode")
-      @js.native
-      def encode(message: IPolicy, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Policy message, length delimited. Does not implicitly {@link google.iam.v1.Policy.verify|verify} messages.
@@ -823,12 +754,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPolicy): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPolicy, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Policy message from a plain object. Also converts values to their respective internal types.
@@ -836,9 +765,8 @@ object iam {
         * @returns Policy
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.Policy = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.Policy]
       
       /**
         * Creates a plain object from a Policy message. Also converts values to other types if specified.
@@ -847,12 +775,10 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Policy): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Policy, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Policy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.Policy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Policy message.
@@ -860,9 +786,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.Policy.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a PolicyDelta. */
@@ -878,18 +803,20 @@ object iam {
     }
     object PolicyDelta {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new PolicyDelta instance using the specified properties.
         * @param [properties] Properties to set
         * @returns PolicyDelta instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.create")
-      @js.native
-      def create(properties: IPolicyDelta): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
+      @scala.inline
+      def create(properties: IPolicyDelta): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
       
       /**
         * Decodes a PolicyDelta message from the specified reader or buffer.
@@ -900,18 +827,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
       
       /**
         * Decodes a PolicyDelta message from the specified reader or buffer, length delimited.
@@ -921,12 +844,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
       
       /**
         * Encodes the specified PolicyDelta message. Does not implicitly {@link google.iam.v1.PolicyDelta.verify|verify} messages.
@@ -935,12 +856,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.encode")
-      @js.native
-      def encode(message: IPolicyDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.encode")
-      @js.native
-      def encode(message: IPolicyDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IPolicyDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IPolicyDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified PolicyDelta message, length delimited. Does not implicitly {@link google.iam.v1.PolicyDelta.verify|verify} messages.
@@ -949,12 +868,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPolicyDelta): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IPolicyDelta, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IPolicyDelta): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IPolicyDelta, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a PolicyDelta message from a plain object. Also converts values to their respective internal types.
@@ -962,9 +879,8 @@ object iam {
         * @returns PolicyDelta
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta]
       
       /**
         * Creates a plain object from a PolicyDelta message. Also converts values to other types if specified.
@@ -973,12 +889,10 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.PolicyDelta, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a PolicyDelta message.
@@ -986,9 +900,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.PolicyDelta.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a SetIamPolicyRequest. */
@@ -1004,18 +917,20 @@ object iam {
     }
     object SetIamPolicyRequest {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new SetIamPolicyRequest instance using the specified properties.
         * @param [properties] Properties to set
         * @returns SetIamPolicyRequest instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.create")
-      @js.native
-      def create(properties: ISetIamPolicyRequest): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
+      @scala.inline
+      def create(properties: ISetIamPolicyRequest): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
       
       /**
         * Decodes a SetIamPolicyRequest message from the specified reader or buffer.
@@ -1026,18 +941,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
       
       /**
         * Decodes a SetIamPolicyRequest message from the specified reader or buffer, length delimited.
@@ -1047,12 +958,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
       
       /**
         * Encodes the specified SetIamPolicyRequest message. Does not implicitly {@link google.iam.v1.SetIamPolicyRequest.verify|verify} messages.
@@ -1061,12 +970,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.encode")
-      @js.native
-      def encode(message: ISetIamPolicyRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.encode")
-      @js.native
-      def encode(message: ISetIamPolicyRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ISetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ISetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified SetIamPolicyRequest message, length delimited. Does not implicitly {@link google.iam.v1.SetIamPolicyRequest.verify|verify} messages.
@@ -1075,12 +982,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISetIamPolicyRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ISetIamPolicyRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ISetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ISetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a SetIamPolicyRequest message from a plain object. Also converts values to their respective internal types.
@@ -1088,9 +993,8 @@ object iam {
         * @returns SetIamPolicyRequest
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest]
       
       /**
         * Creates a plain object from a SetIamPolicyRequest message. Also converts values to other types if specified.
@@ -1099,15 +1003,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.SetIamPolicyRequest,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a SetIamPolicyRequest message.
@@ -1115,9 +1017,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.SetIamPolicyRequest.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TestIamPermissionsRequest. */
@@ -1133,18 +1034,20 @@ object iam {
     }
     object TestIamPermissionsRequest {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TestIamPermissionsRequest instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TestIamPermissionsRequest instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.create")
-      @js.native
-      def create(properties: ITestIamPermissionsRequest): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
+      @scala.inline
+      def create(properties: ITestIamPermissionsRequest): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
       
       /**
         * Decodes a TestIamPermissionsRequest message from the specified reader or buffer.
@@ -1155,18 +1058,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
       
       /**
         * Decodes a TestIamPermissionsRequest message from the specified reader or buffer, length delimited.
@@ -1176,12 +1075,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
       
       /**
         * Encodes the specified TestIamPermissionsRequest message. Does not implicitly {@link google.iam.v1.TestIamPermissionsRequest.verify|verify} messages.
@@ -1190,12 +1087,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.encode")
-      @js.native
-      def encode(message: ITestIamPermissionsRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.encode")
-      @js.native
-      def encode(message: ITestIamPermissionsRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITestIamPermissionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITestIamPermissionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TestIamPermissionsRequest message, length delimited. Does not implicitly {@link google.iam.v1.TestIamPermissionsRequest.verify|verify} messages.
@@ -1204,12 +1099,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITestIamPermissionsRequest): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITestIamPermissionsRequest, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITestIamPermissionsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITestIamPermissionsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TestIamPermissionsRequest message from a plain object. Also converts values to their respective internal types.
@@ -1217,9 +1110,8 @@ object iam {
         * @returns TestIamPermissionsRequest
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest]
       
       /**
         * Creates a plain object from a TestIamPermissionsRequest message. Also converts values to other types if specified.
@@ -1228,15 +1120,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsRequest,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TestIamPermissionsRequest message.
@@ -1244,9 +1134,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsRequest.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Represents a TestIamPermissionsResponse. */
@@ -1262,18 +1151,20 @@ object iam {
     }
     object TestIamPermissionsResponse {
       
+      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new TestIamPermissionsResponse instance using the specified properties.
         * @param [properties] Properties to set
         * @returns TestIamPermissionsResponse instance
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.create")
-      @js.native
-      def create(): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.create")
-      @js.native
-      def create(properties: ITestIamPermissionsResponse): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
+      @scala.inline
+      def create(): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
+      @scala.inline
+      def create(properties: ITestIamPermissionsResponse): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
       
       /**
         * Decodes a TestIamPermissionsResponse message from the specified reader or buffer.
@@ -1284,18 +1175,14 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decode")
-      @js.native
-      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decode")
-      @js.native
-      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
+      @scala.inline
+      def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
+      @scala.inline
+      def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
+      @scala.inline
+      def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
       
       /**
         * Decodes a TestIamPermissionsResponse message from the specified reader or buffer, length delimited.
@@ -1305,12 +1192,10 @@ object iam {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
       
       /**
         * Encodes the specified TestIamPermissionsResponse message. Does not implicitly {@link google.iam.v1.TestIamPermissionsResponse.verify|verify} messages.
@@ -1319,12 +1204,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.encode")
-      @js.native
-      def encode(message: ITestIamPermissionsResponse): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.encode")
-      @js.native
-      def encode(message: ITestIamPermissionsResponse, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITestIamPermissionsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITestIamPermissionsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TestIamPermissionsResponse message, length delimited. Does not implicitly {@link google.iam.v1.TestIamPermissionsResponse.verify|verify} messages.
@@ -1333,12 +1216,10 @@ object iam {
         * @returns Writer
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITestIamPermissionsResponse): Writer = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITestIamPermissionsResponse, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITestIamPermissionsResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITestIamPermissionsResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TestIamPermissionsResponse message from a plain object. Also converts values to their respective internal types.
@@ -1346,9 +1227,8 @@ object iam {
         * @returns TestIamPermissionsResponse
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse]
       
       /**
         * Creates a plain object from a TestIamPermissionsResponse message. Also converts values to other types if specified.
@@ -1357,15 +1237,13 @@ object iam {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.toObject")
-      @js.native
-      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse): StringDictionary[js.Any] = js.native
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.toObject")
-      @js.native
+      @scala.inline
+      def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
       def toObject(
         message: typings.googleGax.iamServiceMod.google.iam.v1.TestIamPermissionsResponse,
         options: IConversionOptions
-      ): StringDictionary[js.Any] = js.native
+      ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TestIamPermissionsResponse message.
@@ -1373,9 +1251,8 @@ object iam {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("google-gax", "IamProtos.google.iam.v1.TestIamPermissionsResponse.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Namespace logging. */
@@ -1394,18 +1271,20 @@ object iam {
       }
       object AuditData {
         
+        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new AuditData instance using the specified properties.
           * @param [properties] Properties to set
           * @returns AuditData instance
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.create")
-        @js.native
-        def create(): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.create")
-        @js.native
-        def create(properties: IAuditData): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
+        @scala.inline
+        def create(): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
+        @scala.inline
+        def create(properties: IAuditData): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
         
         /**
           * Decodes an AuditData message from the specified reader or buffer.
@@ -1416,18 +1295,14 @@ object iam {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decode")
-        @js.native
-        def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decode")
-        @js.native
-        def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
+        @scala.inline
+        def decode(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
+        @scala.inline
+        def decode(reader: Reader, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
+        @scala.inline
+        def decode(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
         
         /**
           * Decodes an AuditData message from the specified reader or buffer, length delimited.
@@ -1437,12 +1312,10 @@ object iam {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
         
         /**
           * Encodes the specified AuditData message. Does not implicitly {@link google.iam.v1.logging.AuditData.verify|verify} messages.
@@ -1451,12 +1324,10 @@ object iam {
           * @returns Writer
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.encode")
-        @js.native
-        def encode(message: IAuditData): Writer = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.encode")
-        @js.native
-        def encode(message: IAuditData, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IAuditData): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IAuditData, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified AuditData message, length delimited. Does not implicitly {@link google.iam.v1.logging.AuditData.verify|verify} messages.
@@ -1465,12 +1336,10 @@ object iam {
           * @returns Writer
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IAuditData): Writer = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IAuditData, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IAuditData): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IAuditData, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates an AuditData message from a plain object. Also converts values to their respective internal types.
@@ -1478,9 +1347,8 @@ object iam {
           * @returns AuditData
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData]
         
         /**
           * Creates a plain object from an AuditData message. Also converts values to other types if specified.
@@ -1489,15 +1357,13 @@ object iam {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.toObject")
-        @js.native
-        def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData): StringDictionary[js.Any] = js.native
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.toObject")
-        @js.native
+        @scala.inline
+        def toObject(message: typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
         def toObject(
           message: typings.googleGax.iamServiceMod.google.iam.v1.logging.AuditData,
           options: IConversionOptions
-        ): StringDictionary[js.Any] = js.native
+        ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an AuditData message.
@@ -1505,9 +1371,8 @@ object iam {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("google-gax", "IamProtos.google.iam.v1.logging.AuditData.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
     }
   }

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type class of this type is com::sun::star::uno::TypeClass::CONSTANTS.
   * @since OOo 1.1.2
   */
-@js.native
-trait XConstantsTypeDescription extends XTypeDescription {
+trait XConstantsTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the contstants defined for this constants group.
     * @returns a sequence containing constants descriptions.
     */
-  val Constants: SafeArray[XConstantTypeDescription] = js.native
+  val Constants: SafeArray[XConstantTypeDescription]
   
   /**
     * Returns the contstants defined for this constants group.
     * @returns a sequence containing constants descriptions.
     */
-  def getConstants(): SafeArray[XConstantTypeDescription] = js.native
+  def getConstants(): SafeArray[XConstantTypeDescription]
 }
 object XConstantsTypeDescription {
   

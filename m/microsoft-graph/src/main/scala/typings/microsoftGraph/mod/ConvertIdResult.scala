@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConvertIdResult extends StObject {
   
   /**
     * An error object indicating the reason for the conversion failure. This value is not present if the conversion
     * succeeded.
     */
-  var errorDetails: js.UndefOr[NullableOption[GenericError]] = js.native
+  var errorDetails: js.UndefOr[NullableOption[GenericError]] = js.undefined
   
   // The identifier that was converted. This value is the original, un-converted identifier.
-  var sourceId: js.UndefOr[NullableOption[String]] = js.native
+  var sourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The converted identifier. This value is not present if the conversion failed.
-  var targetId: js.UndefOr[NullableOption[String]] = js.native
+  var targetId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ConvertIdResult {
   

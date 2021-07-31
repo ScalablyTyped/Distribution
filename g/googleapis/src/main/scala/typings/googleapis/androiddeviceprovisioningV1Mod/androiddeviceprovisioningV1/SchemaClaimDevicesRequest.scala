@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the device to zero-touch enrollment and shows the device in the
   * customer&#39;s view of the portal.
   */
-@js.native
 trait SchemaClaimDevicesRequest extends StObject {
   
   /**
     * Required. A list of device claims.
     */
-  var claims: js.UndefOr[js.Array[SchemaPartnerClaim]] = js.native
+  var claims: js.UndefOr[js.Array[SchemaPartnerClaim]] = js.undefined
 }
 object SchemaClaimDevicesRequest {
   

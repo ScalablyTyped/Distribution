@@ -6,18 +6,21 @@ import typings.nodeForge.mod.pki.rsa._EncryptionScheme
 import typings.nodeForge.mod.pki.rsa._SignatureScheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeForgeStrings {
   
   @js.native
-  sealed trait `3DES-CBC` extends Algorithm
+  sealed trait `3DES-CBC`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `3DES-CBC`: `3DES-CBC` = "3DES-CBC".asInstanceOf[`3DES-CBC`]
   
   @js.native
-  sealed trait `3DES-ECB` extends Algorithm
+  sealed trait `3DES-ECB`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `3DES-ECB`: `3DES-ECB` = "3DES-ECB".asInstanceOf[`3DES-ECB`]
   
@@ -27,64 +30,87 @@ object nodeForgeStrings {
   def `3des`: `3des` = "3des".asInstanceOf[`3des`]
   
   @js.native
-  sealed trait `AES-CBC` extends Algorithm
+  sealed trait `AES-CBC`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-CBC`: `AES-CBC` = "AES-CBC".asInstanceOf[`AES-CBC`]
   
   @js.native
-  sealed trait `AES-CFB` extends Algorithm
+  sealed trait `AES-CFB`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-CFB`: `AES-CFB` = "AES-CFB".asInstanceOf[`AES-CFB`]
   
   @js.native
-  sealed trait `AES-CTR` extends Algorithm
+  sealed trait `AES-CTR`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-CTR`: `AES-CTR` = "AES-CTR".asInstanceOf[`AES-CTR`]
   
   @js.native
-  sealed trait `AES-ECB` extends Algorithm
+  sealed trait `AES-ECB`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-ECB`: `AES-ECB` = "AES-ECB".asInstanceOf[`AES-ECB`]
   
   @js.native
-  sealed trait `AES-GCM` extends Algorithm
+  sealed trait `AES-GCM`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
   
   @js.native
-  sealed trait `AES-OFB` extends Algorithm
+  sealed trait `AES-OFB`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `AES-OFB`: `AES-OFB` = "AES-OFB".asInstanceOf[`AES-OFB`]
   
   @js.native
-  sealed trait `DES-CBC` extends Algorithm
+  sealed trait `DES-CBC`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
   
   @js.native
-  sealed trait `DES-ECB` extends Algorithm
+  sealed trait `DES-ECB`
+    extends StObject
+       with Algorithm
   @scala.inline
   def `DES-ECB`: `DES-ECB` = "DES-ECB".asInstanceOf[`DES-ECB`]
   
   @js.native
   sealed trait NONE
-    extends _EncryptionScheme
+    extends StObject
+       with _EncryptionScheme
        with _SignatureScheme
   @scala.inline
   def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait RAW extends _EncryptionScheme
+  sealed trait RAW
+    extends StObject
+       with _EncryptionScheme
   @scala.inline
   def RAW: RAW = "RAW".asInstanceOf[RAW]
   
   @js.native
-  sealed trait `RSA-OAEP` extends _EncryptionScheme
+  sealed trait `RSA-OAEP`
+    extends StObject
+       with _EncryptionScheme
   @scala.inline
   def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
   
   @js.native
-  sealed trait `RSAES-PKCS1-V1_5` extends _EncryptionScheme
+  sealed trait `RSAES-PKCS1-V1_5`
+    extends StObject
+       with _EncryptionScheme
   @scala.inline
   def `RSAES-PKCS1-V1_5`: `RSAES-PKCS1-V1_5` = "RSAES-PKCS1-V1_5".asInstanceOf[`RSAES-PKCS1-V1_5`]
   
@@ -94,7 +120,9 @@ object nodeForgeStrings {
   def RSAPublicKey: RSAPublicKey = "RSAPublicKey".asInstanceOf[RSAPublicKey]
   
   @js.native
-  sealed trait `RSASSA-PKCS1-V1_5` extends _SignatureScheme
+  sealed trait `RSASSA-PKCS1-V1_5`
+    extends StObject
+       with _SignatureScheme
   @scala.inline
   def `RSASSA-PKCS1-V1_5`: `RSASSA-PKCS1-V1_5` = "RSASSA-PKCS1-V1_5".asInstanceOf[`RSASSA-PKCS1-V1_5`]
   
@@ -135,12 +163,15 @@ object nodeForgeStrings {
   
   @js.native
   sealed trait md5
-    extends typings.nodeForge.mod.hmac.Algorithm
+    extends StObject
+       with typings.nodeForge.mod.hmac.Algorithm
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
-  sealed trait raw_ extends Encoding
+  sealed trait raw_
+    extends StObject
+       with Encoding
   @scala.inline
   def raw_ : raw_ = "raw".asInstanceOf[raw_]
   
@@ -151,7 +182,8 @@ object nodeForgeStrings {
   
   @js.native
   sealed trait sha1
-    extends typings.nodeForge.mod.hmac.Algorithm
+    extends StObject
+       with typings.nodeForge.mod.hmac.Algorithm
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
@@ -162,7 +194,8 @@ object nodeForgeStrings {
   
   @js.native
   sealed trait sha256
-    extends typings.nodeForge.mod.hmac.Algorithm
+    extends StObject
+       with typings.nodeForge.mod.hmac.Algorithm
   @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
@@ -177,7 +210,9 @@ object nodeForgeStrings {
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
   
   @js.native
-  sealed trait utf8 extends Encoding
+  sealed trait utf8
+    extends StObject
+       with Encoding
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

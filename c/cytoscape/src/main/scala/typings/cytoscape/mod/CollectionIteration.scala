@@ -3,7 +3,6 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait CollectionIteration[TOut, TIn]
-  extends /**
+  extends StObject
+     with /**
   * Get an element at a particular index in the collection.
   *
   * @param index The index of the element to get.
@@ -93,9 +93,9 @@ trait CollectionIteration[TOut, TIn]
     *            Use negative numbers to select from the end of an array.
     */
   def slice(): this.type = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def slice(start: Double): this.type = js.native
   def slice(start: Double, end: Double): this.type = js.native
+  def slice(start: Unit, end: Double): this.type = js.native
   
   /**
     * Get the collection as an array, maintaining the order of the elements.

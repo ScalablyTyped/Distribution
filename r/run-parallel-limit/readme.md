@@ -10,9 +10,9 @@ Run an array of functions in parallel, but limit the number of tasks executing a
 | ------------------ | :-------------: |
 | Full name          | run-parallel-limit |
 | Keywords           | parallel, async, function, callback, asynchronous, run, array, run parallel, limit, max, queue, run parallel limit, max tasks, tasks |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 5055279 |
+| # releases         | 1 |
+| # dependents       | 35 |
+| # downloads        | 8659250 |
 | # stars            | 2 |
 
 ## Links

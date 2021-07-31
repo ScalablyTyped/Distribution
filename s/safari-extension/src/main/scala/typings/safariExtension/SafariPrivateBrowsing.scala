@@ -2,13 +2,11 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafariPrivateBrowsing extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object SafariPrivateBrowsing {
   

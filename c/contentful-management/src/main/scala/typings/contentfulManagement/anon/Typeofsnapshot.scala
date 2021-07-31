@@ -7,15 +7,13 @@ import typings.contentfulManagement.snapshotMod.Snapshot
 import typings.contentfulManagement.snapshotMod.SnapshotProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofsnapshot extends StObject {
   
-  def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T] = js.native
+  def wrapSnapshot[T](_http: AxiosInstance, data: SnapshotProps[T]): Snapshot[T]
   
-  def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]] = js.native
+  def wrapSnapshotCollection[T](http: AxiosInstance, data: CollectionProp[SnapshotProps[T]]): Collection[Snapshot[T], SnapshotProps[T]]
 }
 object Typeofsnapshot {
   

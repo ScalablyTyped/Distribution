@@ -6,15 +6,13 @@ import typings.kafkaNode.anon.ControllerId
 import typings.kafkaNode.anon.Isr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterMetadataResponse extends StObject {
   
-  var clusterMetadata: ControllerId = js.native
+  var clusterMetadata: ControllerId
   
-  var metadata: StringDictionary[NumberDictionary[Isr]] = js.native
+  var metadata: StringDictionary[NumberDictionary[Isr]]
 }
 object ClusterMetadataResponse {
   

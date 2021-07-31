@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileBase extends StObject {
   
-  var file_id: String = js.native
+  var file_id: String
   
-  var file_size: js.UndefOr[Double] = js.native
+  var file_size: js.UndefOr[Double] = js.undefined
 }
 object FileBase {
   

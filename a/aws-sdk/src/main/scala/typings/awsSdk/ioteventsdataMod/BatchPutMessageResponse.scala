@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutMessageResponse extends StObject {
   
   /**
     * A list of any errors encountered when sending the messages.
     */
-  var BatchPutMessageErrorEntries: js.UndefOr[typings.awsSdk.ioteventsdataMod.BatchPutMessageErrorEntries] = js.native
+  var BatchPutMessageErrorEntries: js.UndefOr[typings.awsSdk.ioteventsdataMod.BatchPutMessageErrorEntries] = js.undefined
 }
 object BatchPutMessageResponse {
   

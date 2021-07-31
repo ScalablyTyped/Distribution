@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a typified enumeration through components. */
-@js.native
-trait XComponentEnumeration extends XEnumeration {
+trait XComponentEnumeration
+  extends StObject
+     with XEnumeration {
   
   /**
     * @returns the next component of this enumeration.
     * @throws NoSuchElementException if no more elements exist.
     */
-  def nextComponent(): XComponent = js.native
+  def nextComponent(): XComponent
 }
 object XComponentEnumeration {
   

@@ -11,10 +11,13 @@ import typings.typescript.mod.LanguageServiceHost
 import typings.typescript.mod.OutputFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tscacheMod {
+  
+  @JSImport("rollup-plugin-typescript2/dist/tscache", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rollup-plugin-typescript2/dist/tscache", "TsCache")
   @js.native
@@ -92,36 +95,30 @@ object tscacheMod {
     def walkTree_false(cb: js.Function1[/* id */ String, Unit | `false`]): Unit = js.native
   }
   
-  @JSImport("rollup-plugin-typescript2/dist/tscache", "convertDiagnostic")
-  @js.native
-  def convertDiagnostic(`type`: String, data: js.Array[Diagnostic]): js.Array[IDiagnostics] = js.native
+  @scala.inline
+  def convertDiagnostic(`type`: String, data: js.Array[Diagnostic]): js.Array[IDiagnostics] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDiagnostic")(`type`.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[IDiagnostics]]
   
-  @JSImport("rollup-plugin-typescript2/dist/tscache", "convertEmitOutput")
-  @js.native
-  def convertEmitOutput(output: EmitOutput): ICode = js.native
-  @JSImport("rollup-plugin-typescript2/dist/tscache", "convertEmitOutput")
-  @js.native
-  def convertEmitOutput(output: EmitOutput, references: js.Array[String]): ICode = js.native
+  @scala.inline
+  def convertEmitOutput(output: EmitOutput): ICode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertEmitOutput")(output.asInstanceOf[js.Any]).asInstanceOf[ICode]
+  @scala.inline
+  def convertEmitOutput(output: EmitOutput, references: js.Array[String]): ICode = (^.asInstanceOf[js.Dynamic].applyDynamic("convertEmitOutput")(output.asInstanceOf[js.Any], references.asInstanceOf[js.Any])).asInstanceOf[ICode]
   
-  @JSImport("rollup-plugin-typescript2/dist/tscache", "getAllReferences")
-  @js.native
-  def getAllReferences(importer: String, snapshot: js.UndefOr[scala.Nothing], options: CompilerOptions): js.Array[String] = js.native
-  @JSImport("rollup-plugin-typescript2/dist/tscache", "getAllReferences")
-  @js.native
-  def getAllReferences(importer: String, snapshot: IScriptSnapshot, options: CompilerOptions): js.Array[String] = js.native
+  @scala.inline
+  def getAllReferences(importer: String, snapshot: Unit, options: CompilerOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllReferences")(importer.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getAllReferences(importer: String, snapshot: IScriptSnapshot, options: CompilerOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllReferences")(importer.asInstanceOf[js.Any], snapshot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait ICode extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var dts: js.UndefOr[OutputFile] = js.native
+    var dts: js.UndefOr[OutputFile] = js.undefined
     
-    var dtsmap: js.UndefOr[OutputFile] = js.native
+    var dtsmap: js.UndefOr[OutputFile] = js.undefined
     
-    var map: js.UndefOr[String] = js.native
+    var map: js.UndefOr[String] = js.undefined
     
-    var references: js.UndefOr[js.Array[String]] = js.native
+    var references: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ICode {
     
@@ -166,20 +163,19 @@ object tscacheMod {
     }
   }
   
-  @js.native
   trait IDiagnostics extends StObject {
     
-    var category: DiagnosticCategory = js.native
+    var category: DiagnosticCategory
     
-    var code: Double = js.native
+    var code: Double
     
-    var fileLine: js.UndefOr[String] = js.native
+    var fileLine: js.UndefOr[String] = js.undefined
     
-    var flatMessage: String = js.native
+    var flatMessage: String
     
-    var formatted: String = js.native
+    var formatted: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IDiagnostics {
     

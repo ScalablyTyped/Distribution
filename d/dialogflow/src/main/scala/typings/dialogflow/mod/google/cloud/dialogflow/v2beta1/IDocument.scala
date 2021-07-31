@@ -4,33 +4,31 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.Document.Knowledge
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Document. */
-@js.native
 trait IDocument extends StObject {
   
   /** Document content */
-  var content: js.UndefOr[String | Null] = js.native
+  var content: js.UndefOr[String | Null] = js.undefined
   
   /** Document contentUri */
-  var contentUri: js.UndefOr[String | Null] = js.native
+  var contentUri: js.UndefOr[String | Null] = js.undefined
   
   /** Document displayName */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /** Document knowledgeTypes */
-  var knowledgeTypes: js.UndefOr[js.Array[KnowledgeType] | Null] = js.native
+  var knowledgeTypes: js.UndefOr[js.Array[KnowledgeType] | Null] = js.undefined
   
   /** Document mimeType */
-  var mimeType: js.UndefOr[String | Null] = js.native
+  var mimeType: js.UndefOr[String | Null] = js.undefined
   
   /** Document name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Document rawContent */
-  var rawContent: js.UndefOr[Uint8Array | String | Null] = js.native
+  var rawContent: js.UndefOr[Uint8Array | String | Null] = js.undefined
 }
 object IDocument {
   

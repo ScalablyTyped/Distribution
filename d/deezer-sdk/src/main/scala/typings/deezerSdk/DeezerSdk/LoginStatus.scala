@@ -3,18 +3,16 @@ package typings.deezerSdk.DeezerSdk
 import typings.deezerSdk.anon.Expire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/getloginstatus | DZ.getLoginStatus}
   */
-@js.native
 trait LoginStatus extends StObject {
   
-  var authResponse: Expire = js.native
+  var authResponse: Expire
   
-  var status: ConnectionStatus = js.native
+  var status: ConnectionStatus
 }
 object LoginStatus {
   

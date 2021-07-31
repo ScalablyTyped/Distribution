@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.msk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterEncryptionInfoEncryptionInTransit extends StObject {
   
   /**
     * Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS`.
     */
-  var clientBroker: js.UndefOr[String] = js.native
+  var clientBroker: js.UndefOr[String] = js.undefined
   
   /**
     * Whether data communication among broker nodes is encrypted. Default value: `true`.
     */
-  var inCluster: js.UndefOr[Boolean] = js.native
+  var inCluster: js.UndefOr[Boolean] = js.undefined
 }
 object ClusterEncryptionInfoEncryptionInTransit {
   

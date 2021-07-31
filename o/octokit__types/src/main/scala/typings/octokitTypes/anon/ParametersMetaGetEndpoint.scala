@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.MetaGetResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMetaGetEndpoint extends StObject {
   
-  var parameters: MetaGetEndpoint = js.native
+  var parameters: MetaGetEndpoint
   
-  var request: MetaGetRequestOptions = js.native
+  var request: MetaGetRequestOptions
   
-  var response: OctokitResponse[MetaGetResponseData] = js.native
+  var response: OctokitResponse[MetaGetResponseData]
 }
 object ParametersMetaGetEndpoint {
   

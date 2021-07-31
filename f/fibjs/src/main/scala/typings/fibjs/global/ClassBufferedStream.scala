@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_BufferedStream")
 @js.native
 class ClassBufferedStream protected ()
-  extends typings.fibjs.ClassBufferedStream {
+  extends StObject
+     with typings.fibjs.ClassBufferedStream {
   /**
     * 
     * @brief BufferedStream 构造函数

@@ -4,7 +4,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiLineStringMod {
@@ -19,7 +18,7 @@ object multiLineStringMod {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[Coordinate] | Double | typings.ol.lineStringMod.default],
-      opt_layout: js.UndefOr[scala.Nothing],
+      opt_layout: Unit,
       opt_ends: js.Array[Double]
     ) = this()
     def this(
@@ -53,9 +52,9 @@ object multiLineStringMod {
       * LineStrings.
       */
     def getCoordinateAtM(m: Double): Coordinate = js.native
-    def getCoordinateAtM(m: Double, opt_extrapolate: js.UndefOr[scala.Nothing], opt_interpolate: Boolean): Coordinate = js.native
     def getCoordinateAtM(m: Double, opt_extrapolate: Boolean): Coordinate = js.native
     def getCoordinateAtM(m: Double, opt_extrapolate: Boolean, opt_interpolate: Boolean): Coordinate = js.native
+    def getCoordinateAtM(m: Double, opt_extrapolate: Unit, opt_interpolate: Boolean): Coordinate = js.native
     
     def getEnds(): js.Array[Double] = js.native
     

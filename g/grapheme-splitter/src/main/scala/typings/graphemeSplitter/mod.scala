@@ -3,26 +3,39 @@ package typings.graphemeSplitter
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("grapheme-splitter", JSImport.Namespace)
   @js.native
-  class ^ () extends GraphemeSplitter
+  class ^ ()
+    extends StObject
+       with GraphemeSplitter {
+    
+    /** count the number of grapheme clusters in a string */
+    /* CompleteClass */
+    override def countGraphemes(s: String): Double = js.native
+    
+    /** iterate the string to an iterable iterator of grapheme clusters */
+    /* CompleteClass */
+    override def iterateGraphemes(s: String): IterableIterator[String] = js.native
+    
+    /** split the string to an array of grapheme clusters */
+    /* CompleteClass */
+    override def splitGraphemes(s: String): js.Array[String] = js.native
+  }
   
-  @js.native
   trait GraphemeSplitter extends StObject {
     
     /** count the number of grapheme clusters in a string */
-    def countGraphemes(s: String): Double = js.native
+    def countGraphemes(s: String): Double
     
     /** iterate the string to an iterable iterator of grapheme clusters */
-    def iterateGraphemes(s: String): IterableIterator[String] = js.native
+    def iterateGraphemes(s: String): IterableIterator[String]
     
     /** split the string to an array of grapheme clusters */
-    def splitGraphemes(s: String): js.Array[String] = js.native
+    def splitGraphemes(s: String): js.Array[String]
   }
   object GraphemeSplitter {
     

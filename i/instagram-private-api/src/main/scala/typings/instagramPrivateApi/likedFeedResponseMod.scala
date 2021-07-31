@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object likedFeedResponseMod {
   
-  @js.native
   trait LikedFeedResponseCandidatesItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object LikedFeedResponseCandidatesItem {
     
@@ -38,36 +36,35 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseCaption extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_translation: js.UndefOr[Boolean] = js.native
+    var has_translation: js.UndefOr[Boolean] = js.undefined
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: LikedFeedResponseUser = js.native
+    var user: LikedFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object LikedFeedResponseCaption {
     
@@ -142,16 +139,15 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object LikedFeedResponseFriendshipStatus {
     
@@ -178,10 +174,9 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[LikedFeedResponseCandidatesItem] = js.native
+    var candidates: js.Array[LikedFeedResponseCandidatesItem]
   }
   object LikedFeedResponseImageVersions2 {
     
@@ -202,16 +197,15 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseInItem extends StObject {
     
-    var duration_in_video_in_sec: Null = js.native
+    var duration_in_video_in_sec: Null
     
-    var position: js.Array[Double | String] = js.native
+    var position: js.Array[Double | String]
     
-    var start_time_in_video_in_sec: Null = js.native
+    var start_time_in_video_in_sec: Null
     
-    var user: LikedFeedResponseUser = js.native
+    var user: LikedFeedResponseUser
   }
   object LikedFeedResponseInItem {
     
@@ -246,76 +240,75 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseItemsItem extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: LikedFeedResponseCaption = js.native
+    var caption: LikedFeedResponseCaption
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double | String = js.native
+    var device_timestamp: Double | String
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_liked: Boolean = js.native
+    var has_liked: Boolean
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: LikedFeedResponseImageVersions2 = js.native
+    var image_versions2: LikedFeedResponseImageVersions2
     
-    var inline_composer_display_condition: String = js.native
+    var inline_composer_display_condition: String
     
-    var inline_composer_imp_trigger_time: Double = js.native
+    var inline_composer_imp_trigger_time: Double
     
-    var lat: js.UndefOr[Double] = js.native
+    var lat: js.UndefOr[Double] = js.undefined
     
-    var like_count: Double = js.native
+    var like_count: Double
     
-    var lng: js.UndefOr[Double] = js.native
+    var lng: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[LikedFeedResponseLocation] = js.native
+    var location: js.UndefOr[LikedFeedResponseLocation] = js.undefined
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var next_max_id: js.UndefOr[String] = js.native
+    var next_max_id: js.UndefOr[String] = js.undefined
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[LikedFeedResponsePreviewCommentsItem] = js.native
+    var preview_comments: js.Array[LikedFeedResponsePreviewCommentsItem]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: LikedFeedResponseUser = js.native
+    var user: LikedFeedResponseUser
     
-    var usertags: js.UndefOr[LikedFeedResponseUsertags] = js.native
+    var usertags: js.UndefOr[LikedFeedResponseUsertags] = js.undefined
   }
   object LikedFeedResponseItemsItem {
     
@@ -480,26 +473,25 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var facebook_places_id: Double = js.native
+    var facebook_places_id: Double
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var short_name: String = js.native
+    var short_name: String
   }
   object LikedFeedResponseLocation {
     
@@ -551,38 +543,37 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponsePreviewCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: LikedFeedResponseUser = js.native
+    var user: LikedFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object LikedFeedResponsePreviewCommentsItem {
     
@@ -659,20 +650,19 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseRootObject extends StObject {
     
-    var auto_load_more_enabled: Boolean = js.native
+    var auto_load_more_enabled: Boolean
     
-    var items: js.Array[LikedFeedResponseItemsItem] = js.native
+    var items: js.Array[LikedFeedResponseItemsItem]
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var next_max_id: String | Double = js.native
+    var next_max_id: String | Double
     
-    var num_results: Double = js.native
+    var num_results: Double
     
-    var status: String = js.native
+    var status: String
   }
   object LikedFeedResponseRootObject {
     
@@ -715,34 +705,33 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseUser extends StObject {
     
-    var can_see_primary_country_in_settings: js.UndefOr[Boolean] = js.native
+    var can_see_primary_country_in_settings: js.UndefOr[Boolean] = js.undefined
     
-    var friendship_status: js.UndefOr[LikedFeedResponseFriendshipStatus] = js.native
+    var friendship_status: js.UndefOr[LikedFeedResponseFriendshipStatus] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_favorite: js.UndefOr[Boolean] = js.native
+    var is_favorite: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LikedFeedResponseUser {
     
@@ -824,10 +813,9 @@ object likedFeedResponseMod {
     }
   }
   
-  @js.native
   trait LikedFeedResponseUsertags extends StObject {
     
-    var in: js.Array[LikedFeedResponseInItem] = js.native
+    var in: js.Array[LikedFeedResponseInItem]
   }
   object LikedFeedResponseUsertags {
     

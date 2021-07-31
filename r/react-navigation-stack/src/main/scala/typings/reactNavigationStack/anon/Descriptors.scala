@@ -5,25 +5,23 @@ import typings.reactNavigation.mod.NavigationRoute
 import typings.reactNavigationStack.vendorTypesMod.StackDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Descriptors extends StObject {
   
-  var closingRouteKeys: js.Array[String] = js.native
+  var closingRouteKeys: js.Array[String]
   
-  var descriptors: StackDescriptorMap = js.native
+  var descriptors: StackDescriptorMap
   
-  var openingRouteKeys: js.Array[String] = js.native
+  var openingRouteKeys: js.Array[String]
   
-  var previousDescriptors: StackDescriptorMap = js.native
+  var previousDescriptors: StackDescriptorMap
   
-  var previousRoutes: js.Array[NavigationRoute[NavigationParams]] = js.native
+  var previousRoutes: js.Array[NavigationRoute[NavigationParams]]
   
-  var replacingRouteKeys: js.Array[String] = js.native
+  var replacingRouteKeys: js.Array[String]
   
-  var routes: js.Array[NavigationRoute[NavigationParams]] = js.native
+  var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 object Descriptors {
   

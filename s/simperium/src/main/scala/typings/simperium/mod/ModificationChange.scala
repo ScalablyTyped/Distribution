@@ -3,34 +3,34 @@ package typings.simperium.mod
 import typings.simperium.simperiumStrings.M
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModificationChange[T] extends Change[T] {
+trait ModificationChange[T]
+  extends StObject
+     with Change[T] {
   
-  var ccid: String = js.native
+  var ccid: String
   
-  var d: js.UndefOr[T] = js.native
+  var d: js.UndefOr[T] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var o: M = js.native
+  var o: M
   
-  var sv: js.UndefOr[Double] = js.native
+  var sv: js.UndefOr[Double] = js.undefined
   
-  var v: JSONDiff[T] = js.native
+  var v: JSONDiff[T]
 }
 object ModificationChange {
   
   @scala.inline
-  def apply[T](ccid: String, id: String, o: M, v: JSONDiff[T]): ModificationChange[T] = {
-    val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = o.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+  def apply[T](ccid: String, id: String, v: JSONDiff[T]): ModificationChange[T] = {
+    val __obj = js.Dynamic.literal(ccid = ccid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], o = "M", v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModificationChange[T]]
   }
   
   @scala.inline
-  implicit class ModificationChangeMutableBuilder[Self <: ModificationChange[_], T] (val x: Self with ModificationChange[T]) extends AnyVal {
+  implicit class ModificationChangeMutableBuilder[Self <: ModificationChange[?], T] (val x: Self & ModificationChange[T]) extends AnyVal {
     
     @scala.inline
     def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])

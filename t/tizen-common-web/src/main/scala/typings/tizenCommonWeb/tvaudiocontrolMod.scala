@@ -22,7 +22,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.UP
 import typings.tizenCommonWeb.tizenCommonWebStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tvaudiocontrolMod {
@@ -34,67 +33,97 @@ object tvaudiocontrolMod {
   object AudioBeepType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AudioBeepType with String] = js.native
+    def apply(value: String): js.UndefOr[AudioBeepType & String] = js.native
     
     @js.native
-    sealed trait BACK extends AudioBeepType
-    /* "BACK" */ val BACK: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.BACK with String = js.native
+    sealed trait BACK
+      extends StObject
+         with AudioBeepType
+    /* "BACK" */ val BACK: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.BACK & String = js.native
     
     @js.native
-    sealed trait CANCEL extends AudioBeepType
-    /* "CANCEL" */ val CANCEL: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.CANCEL with String = js.native
+    sealed trait CANCEL
+      extends StObject
+         with AudioBeepType
+    /* "CANCEL" */ val CANCEL: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.CANCEL & String = js.native
     
     @js.native
-    sealed trait DOWN extends AudioBeepType
-    /* "DOWN" */ val DOWN: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.DOWN with String = js.native
+    sealed trait DOWN
+      extends StObject
+         with AudioBeepType
+    /* "DOWN" */ val DOWN: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.DOWN & String = js.native
     
     @js.native
-    sealed trait KEYPAD extends AudioBeepType
-    /* "KEYPAD" */ val KEYPAD: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD with String = js.native
+    sealed trait KEYPAD
+      extends StObject
+         with AudioBeepType
+    /* "KEYPAD" */ val KEYPAD: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD & String = js.native
     
     @js.native
-    sealed trait KEYPAD_DEL extends AudioBeepType
-    /* "KEYPAD_DEL" */ val KEYPAD_DEL: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD_DEL with String = js.native
+    sealed trait KEYPAD_DEL
+      extends StObject
+         with AudioBeepType
+    /* "KEYPAD_DEL" */ val KEYPAD_DEL: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD_DEL & String = js.native
     
     @js.native
-    sealed trait KEYPAD_ENTER extends AudioBeepType
-    /* "KEYPAD_ENTER" */ val KEYPAD_ENTER: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD_ENTER with String = js.native
+    sealed trait KEYPAD_ENTER
+      extends StObject
+         with AudioBeepType
+    /* "KEYPAD_ENTER" */ val KEYPAD_ENTER: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.KEYPAD_ENTER & String = js.native
     
     @js.native
-    sealed trait LEFT extends AudioBeepType
-    /* "LEFT" */ val LEFT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.LEFT with String = js.native
+    sealed trait LEFT
+      extends StObject
+         with AudioBeepType
+    /* "LEFT" */ val LEFT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.LEFT & String = js.native
     
     @js.native
-    sealed trait MOVE extends AudioBeepType
-    /* "MOVE" */ val MOVE: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.MOVE with String = js.native
+    sealed trait MOVE
+      extends StObject
+         with AudioBeepType
+    /* "MOVE" */ val MOVE: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.MOVE & String = js.native
     
     @js.native
-    sealed trait PAGE_LEFT extends AudioBeepType
-    /* "PAGE_LEFT" */ val PAGE_LEFT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PAGE_LEFT with String = js.native
+    sealed trait PAGE_LEFT
+      extends StObject
+         with AudioBeepType
+    /* "PAGE_LEFT" */ val PAGE_LEFT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PAGE_LEFT & String = js.native
     
     @js.native
-    sealed trait PAGE_RIGHT extends AudioBeepType
-    /* "PAGE_RIGHT" */ val PAGE_RIGHT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PAGE_RIGHT with String = js.native
+    sealed trait PAGE_RIGHT
+      extends StObject
+         with AudioBeepType
+    /* "PAGE_RIGHT" */ val PAGE_RIGHT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PAGE_RIGHT & String = js.native
     
     @js.native
-    sealed trait PREPARING extends AudioBeepType
-    /* "PREPARING" */ val PREPARING: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PREPARING with String = js.native
+    sealed trait PREPARING
+      extends StObject
+         with AudioBeepType
+    /* "PREPARING" */ val PREPARING: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.PREPARING & String = js.native
     
     @js.native
-    sealed trait RIGHT extends AudioBeepType
-    /* "RIGHT" */ val RIGHT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.RIGHT with String = js.native
+    sealed trait RIGHT
+      extends StObject
+         with AudioBeepType
+    /* "RIGHT" */ val RIGHT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.RIGHT & String = js.native
     
     @js.native
-    sealed trait SELECT extends AudioBeepType
-    /* "SELECT" */ val SELECT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.SELECT with String = js.native
+    sealed trait SELECT
+      extends StObject
+         with AudioBeepType
+    /* "SELECT" */ val SELECT: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.SELECT & String = js.native
     
     @js.native
-    sealed trait UP extends AudioBeepType
-    /* "UP" */ val UP: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.UP with String = js.native
+    sealed trait UP
+      extends StObject
+         with AudioBeepType
+    /* "UP" */ val UP: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.UP & String = js.native
     
     @js.native
-    sealed trait WARNING extends AudioBeepType
-    /* "WARNING" */ val WARNING: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.WARNING with String = js.native
+    sealed trait WARNING
+      extends StObject
+         with AudioBeepType
+    /* "WARNING" */ val WARNING: typings.tizenCommonWeb.tvaudiocontrolMod.AudioBeepType.WARNING & String = js.native
   }
   
   @js.native
@@ -104,27 +133,37 @@ object tvaudiocontrolMod {
   object AudioOutputMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AudioOutputMode with String] = js.native
+    def apply(value: String): js.UndefOr[AudioOutputMode & String] = js.native
     
     @js.native
-    sealed trait AAC extends AudioOutputMode
-    /* "AAC" */ val AAC: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.AAC with String = js.native
+    sealed trait AAC
+      extends StObject
+         with AudioOutputMode
+    /* "AAC" */ val AAC: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.AAC & String = js.native
     
     @js.native
-    sealed trait DOLBY extends AudioOutputMode
-    /* "DOLBY" */ val DOLBY: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DOLBY with String = js.native
+    sealed trait DOLBY
+      extends StObject
+         with AudioOutputMode
+    /* "DOLBY" */ val DOLBY: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DOLBY & String = js.native
     
     @js.native
-    sealed trait DOLBY_DIGITAL_PLUS extends AudioOutputMode
-    /* "DOLBY_DIGITAL_PLUS" */ val DOLBY_DIGITAL_PLUS: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DOLBY_DIGITAL_PLUS with String = js.native
+    sealed trait DOLBY_DIGITAL_PLUS
+      extends StObject
+         with AudioOutputMode
+    /* "DOLBY_DIGITAL_PLUS" */ val DOLBY_DIGITAL_PLUS: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DOLBY_DIGITAL_PLUS & String = js.native
     
     @js.native
-    sealed trait DTS extends AudioOutputMode
-    /* "DTS" */ val DTS: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DTS with String = js.native
+    sealed trait DTS
+      extends StObject
+         with AudioOutputMode
+    /* "DTS" */ val DTS: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.DTS & String = js.native
     
     @js.native
-    sealed trait PCM extends AudioOutputMode
-    /* "PCM" */ val PCM: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.PCM with String = js.native
+    sealed trait PCM
+      extends StObject
+         with AudioOutputMode
+    /* "PCM" */ val PCM: typings.tizenCommonWeb.tvaudiocontrolMod.AudioOutputMode.PCM & String = js.native
   }
   
   @js.native

@@ -2,14 +2,12 @@ package typings.semanticUiAccordion.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.Accordion.SelectorSettings._Impl, 'trigger'> */
-@js.native
 trait PickImpltrigger extends StObject {
   
-  var trigger: String = js.native
+  var trigger: String
 }
 object PickImpltrigger {
   

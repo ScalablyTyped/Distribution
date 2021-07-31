@@ -3,15 +3,13 @@ package typings.puppeteer.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tracing extends StObject {
   
-  def start(options: TracingStartOptions): js.Promise[Unit] = js.native
+  def start(options: TracingStartOptions): js.Promise[Unit]
   
-  def stop(): js.Promise[Buffer] = js.native
+  def stop(): js.Promise[Buffer]
 }
 object Tracing {
   

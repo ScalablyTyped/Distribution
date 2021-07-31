@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewBroomPointSaveInfo...
   */
-@js.native
 trait ITableViewBroomPointSaveInfo extends StObject {
   
   /**
     * List of fields in the table.
     */
-  var qFields: js.Array[String] = js.native
+  var qFields: js.Array[String]
   
   /**
     * Information about the position of the broom point.
     */
-  var qPos: IPoint = js.native
+  var qPos: IPoint
   
   /**
     * Name of the table.
     */
-  var qTable: String = js.native
+  var qTable: String
 }
 object ITableViewBroomPointSaveInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMetricPolicyInput extends StObject {
   
   /**
     * The name of the container that is associated with the metric policy that you want to delete.
     */
-  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName = js.native
+  var ContainerName: typings.awsSdk.mediastoreMod.ContainerName
 }
 object DeleteMetricPolicyInput {
   

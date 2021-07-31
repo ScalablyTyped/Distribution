@@ -2,14 +2,12 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A path-matching rule for a URL. If matched, will use the specified
   * BackendService to handle the traffic arriving at this URL.
   */
-@js.native
 trait SchemaPathRule extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaPathRule extends StObject {
     * path matcher does not include any text after the first ? or #, and those
     * chars are not allowed here.
     */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The full or partial URL of the backend service resource to which traffic
@@ -30,7 +28,7 @@ trait SchemaPathRule extends StObject {
     * service must not be specified. Only one of urlRedirect, service or
     * routeAction.weightedBackendService must be set.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaPathRule {
   

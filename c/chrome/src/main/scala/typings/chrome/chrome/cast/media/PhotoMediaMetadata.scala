@@ -3,34 +3,32 @@ package typings.chrome.chrome.cast.media
 import typings.chrome.chrome.cast.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhotoMediaMetadata extends StObject {
   
-  var artist: String = js.native
+  var artist: String
   
-  var creationDateTime: String = js.native
+  var creationDateTime: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var location: String = js.native
+  var location: String
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var metadataType: MetadataType = js.native
+  var metadataType: MetadataType
   
-  var title: String = js.native
+  var title: String
   
   /** @deprecated. Use metadataType instead. */
-  var `type`: MetadataType = js.native
+  var `type`: MetadataType
   
-  var width: Double = js.native
+  var width: Double
 }
 object PhotoMediaMetadata {
   

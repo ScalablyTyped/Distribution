@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveHeldAccountsResponse extends StObject {
   
   /** A list of statuses for deleted accounts. Results have the same order as the request. */
-  var statuses: js.UndefOr[js.Array[Status]] = js.native
+  var statuses: js.UndefOr[js.Array[Status]] = js.undefined
 }
 object RemoveHeldAccountsResponse {
   

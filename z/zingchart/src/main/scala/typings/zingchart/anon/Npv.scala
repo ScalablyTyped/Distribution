@@ -2,22 +2,20 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Npv extends StObject {
   
-  var npv: js.UndefOr[Decimals] = js.native
+  var npv: js.UndefOr[Decimals] = js.undefined
   
-  var title: js.UndefOr[Fontfamily] = js.native
+  var title: js.UndefOr[Fontfamily] = js.undefined
   
-  var value: js.UndefOr[Fontfamily] = js.native
+  var value: js.UndefOr[Fontfamily] = js.undefined
   
   /**
     * To set the visibility of the object. true | false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Npv {
   

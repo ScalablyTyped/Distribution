@@ -1,28 +1,26 @@
 package typings.swaggerSchemaOfficial.mod
 
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`implicit`
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuth2ImplicitSecurity
-  extends BaseOAuthSecurity
+  extends StObject
+     with BaseOAuthSecurity
      with Security {
   
-  var authorizationUrl: String = js.native
+  var authorizationUrl: String
   
   @JSName("flow")
-  var flow_OAuth2ImplicitSecurity: `implicit` = js.native
+  var flow_OAuth2ImplicitSecurity: `implicit`
 }
 object OAuth2ImplicitSecurity {
   
   @scala.inline
-  def apply(authorizationUrl: String, flow: `implicit`, `type`: oauth2): OAuth2ImplicitSecurity = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(authorizationUrl: String): OAuth2ImplicitSecurity = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "implicit")
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2ImplicitSecurity]
   }
   

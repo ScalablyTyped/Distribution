@@ -3,25 +3,23 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskSpecBase extends StObject {
   
-  var ForceUpdate: js.UndefOr[Double] = js.native
+  var ForceUpdate: js.UndefOr[Double] = js.undefined
   
-  var LogDriver: js.UndefOr[Options] = js.native
+  var LogDriver: js.UndefOr[Options] = js.undefined
   
-  var Networks: js.UndefOr[js.Array[NetworkAttachmentConfig]] = js.native
+  var Networks: js.UndefOr[js.Array[NetworkAttachmentConfig]] = js.undefined
   
-  var Placement: js.UndefOr[typings.dockerode.mod.Placement] = js.native
+  var Placement: js.UndefOr[typings.dockerode.mod.Placement] = js.undefined
   
-  var Resources: js.UndefOr[ResourceRequirements] = js.native
+  var Resources: js.UndefOr[ResourceRequirements] = js.undefined
   
-  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.native
+  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.undefined
   
-  var Runtime: js.UndefOr[String] = js.native
+  var Runtime: js.UndefOr[String] = js.undefined
 }
 object TaskSpecBase {
   

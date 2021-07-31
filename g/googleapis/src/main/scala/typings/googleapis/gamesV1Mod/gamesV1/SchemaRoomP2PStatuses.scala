@@ -2,25 +2,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an update on the status of peers in a room.
   */
-@js.native
 trait SchemaRoomP2PStatuses extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomP2PStatuses.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The updates for the peers.
     */
-  var updates: js.UndefOr[js.Array[SchemaRoomP2PStatus]] = js.native
+  var updates: js.UndefOr[js.Array[SchemaRoomP2PStatus]] = js.undefined
 }
 object SchemaRoomP2PStatuses {
   

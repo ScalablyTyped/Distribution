@@ -2,10 +2,8 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewZoneChangeAccessor extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait IViewZoneChangeAccessor extends StObject {
     * @param zone Zone to create
     * @return A unique identifier to the view zone.
     */
-  def addZone(zone: IViewZone): String = js.native
+  def addZone(zone: IViewZone): String
   
   /**
     * Change a zone's position.
     * The editor will rescan the `afterLineNumber` and `afterColumn` properties of a view zone.
     */
-  def layoutZone(id: String): Unit = js.native
+  def layoutZone(id: String): Unit
   
   /**
     * Remove a zone
     * @param id A unique identifier to the view zone, as returned by the `addZone` call.
     */
-  def removeZone(id: String): Unit = js.native
+  def removeZone(id: String): Unit
 }
 object IViewZoneChangeAccessor {
   

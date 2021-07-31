@@ -2,39 +2,37 @@ package typings.w3cImageCapture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackSettings extends StObject {
   
-  var brightness: Double = js.native
+  var brightness: Double
   
-  var colorTemperature: Double = js.native
+  var colorTemperature: Double
   
-  var contrast: Double = js.native
+  var contrast: Double
   
-  var exposureCompensation: Double = js.native
+  var exposureCompensation: Double
   
-  var exposureMode: MeteringMode = js.native
+  var exposureMode: MeteringMode
   
-  var focusDistance: Double = js.native
+  var focusDistance: Double
   
-  var focusMode: MeteringMode = js.native
+  var focusMode: MeteringMode
   
-  var iso: Double = js.native
+  var iso: Double
   
-  var pointsOfInterest: js.Array[Point2D] = js.native
+  var pointsOfInterest: js.Array[Point2D]
   
-  var saturation: Double = js.native
+  var saturation: Double
   
-  var sharpness: Double = js.native
+  var sharpness: Double
   
-  var torch: Boolean = js.native
+  var torch: Boolean
   
-  var whiteBalanceMode: MeteringMode = js.native
+  var whiteBalanceMode: MeteringMode
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object MediaTrackSettings {
   

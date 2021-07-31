@@ -2,16 +2,14 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTunnelResponse extends StObject {
   
   /**
     * The tunnel being described.
     */
-  var tunnel: js.UndefOr[Tunnel] = js.native
+  var tunnel: js.UndefOr[Tunnel] = js.undefined
 }
 object DescribeTunnelResponse {
   

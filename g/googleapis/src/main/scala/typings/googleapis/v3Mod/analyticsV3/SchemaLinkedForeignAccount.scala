@@ -2,68 +2,66 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics Remarketing Audience Foreign Link.
   */
-@js.native
 trait SchemaLinkedForeignAccount extends StObject {
   
   /**
     * Account ID to which this linked foreign account belongs.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean indicating whether this is eligible for search.
     */
-  var eligibleForSearch: js.UndefOr[Boolean] = js.native
+  var eligibleForSearch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Entity ad account link ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Internal ID for the web property to which this linked foreign account
     * belongs.
     */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for linked foreign account.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The foreign account ID. For example the an Google Ads `linkedAccountId`
     * has the following format XXX-XXX-XXXX.
     */
-  var linkedAccountId: js.UndefOr[String] = js.native
+  var linkedAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Remarketing audience ID to which this linked foreign account belongs.
     */
-  var remarketingAudienceId: js.UndefOr[String] = js.native
+  var remarketingAudienceId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of this foreign account link.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the foreign account. For example, `ADWORDS_LINKS`,
     * `DBM_LINKS`, `MCC_LINKS` or `OPTIMIZE`.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Web property ID of the form UA-XXXXX-YY to which this linked foreign
     * account belongs.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object SchemaLinkedForeignAccount {
   

@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MetricTarget defines the target value, average value, or average utilization of a specific metric
   */
-@js.native
 trait MetricTarget extends StObject {
   
   /**
     * averageUtilization is the target value of the average of the resource metric across all relevant pods, represented as a percentage of the requested value of the resource for the pods. Currently only valid for Resource metric source type
     */
-  var averageUtilization: js.UndefOr[Input[Double]] = js.native
+  var averageUtilization: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * averageValue is the target value of the average of the metric across all relevant pods (as a quantity)
     */
-  var averageValue: js.UndefOr[Input[String]] = js.native
+  var averageValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * type represents whether the metric type is Utilization, Value, or AverageValue
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
   
   /**
     * value is the target value of the metric (as a quantity).
     */
-  var value: js.UndefOr[Input[String]] = js.native
+  var value: js.UndefOr[Input[String]] = js.undefined
 }
 object MetricTarget {
   

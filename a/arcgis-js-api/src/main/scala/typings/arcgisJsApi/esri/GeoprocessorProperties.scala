@@ -2,46 +2,46 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoprocessorProperties extends TaskProperties {
+trait GeoprocessorProperties
+  extends StObject
+     with TaskProperties {
   
   /**
     * The spatial reference of the output geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * ProcessExtent, if specified, will only process features that overlap this extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#processExtent)
     */
-  var processExtent: js.UndefOr[ExtentProperties] = js.native
+  var processExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The spatial reference that the model will use to perform geometry operations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#processSpatialReference)
     */
-  var processSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var processSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * If `true`, m-values will be included in the results if the features have m-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#returnM)
     */
-  var returnM: js.UndefOr[Boolean] = js.native
+  var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, z-values will be included in the results if the features have z-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#returnZ)
     */
-  var returnZ: js.UndefOr[Boolean] = js.native
+  var returnZ: js.UndefOr[Boolean] = js.undefined
 }
 object GeoprocessorProperties {
   

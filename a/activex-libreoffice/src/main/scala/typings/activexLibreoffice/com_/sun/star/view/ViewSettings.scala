@@ -7,27 +7,27 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the settings of the controller of an office document. */
-@js.native
-trait ViewSettings extends XPropertySet {
+trait ViewSettings
+  extends StObject
+     with XPropertySet {
   
   /** If this property is `TRUE` , the horizontal ruler is displayed. */
-  var ShowHoriRuler: Boolean = js.native
+  var ShowHoriRuler: Boolean
   
   /** If this property is `TRUE` , the horizontal scroll bar is displayed. */
-  var ShowHoriScrollBar: Boolean = js.native
+  var ShowHoriScrollBar: Boolean
   
   /** If this property is `TRUE` , the vertical ruler is displayed. */
-  var ShowVertRuler: Boolean = js.native
+  var ShowVertRuler: Boolean
   
   /** If this property is `TRUE` , the vertical scroll bar is displayed. */
-  var ShowVertScrollBar: Boolean = js.native
+  var ShowVertScrollBar: Boolean
   
   /** specifies the zoom-value in percent. */
-  var ZoomValue: Double = js.native
+  var ZoomValue: Double
 }
 object ViewSettings {
   

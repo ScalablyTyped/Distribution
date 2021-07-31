@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,9 +72,8 @@ object TabPage {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.create")
-  @js.native
-  def create(model: IModel): TabPage = js.native
+  @scala.inline
+  def create(model: IModel): TabPage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TabPage]
   
   /**
     * Creates and returns a new TabPage instance in the SDK and on the server.
@@ -83,9 +81,8 @@ object TabPage {
     * of the parent TabContainer element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.createIn")
-  @js.native
-  def createIn(container: TabContainer): TabPage = js.native
+  @scala.inline
+  def createIn(container: TabContainer): TabPage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[TabPage]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TabPage.structureTypeName")

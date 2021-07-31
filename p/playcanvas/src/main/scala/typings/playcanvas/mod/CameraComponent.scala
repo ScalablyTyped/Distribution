@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -101,6 +100,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "CameraComponent")
 @js.native
 class CameraComponent protected ()
-  extends typings.playcanvas.pc.CameraComponent {
+  extends StObject
+     with typings.playcanvas.pc.CameraComponent {
   def this(system: typings.playcanvas.pc.CameraComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

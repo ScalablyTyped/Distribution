@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRouteTableResult extends StObject {
   
   /**
     * Information about the route table.
     */
-  var RouteTable: js.UndefOr[typings.awsSdk.ec2Mod.RouteTable] = js.native
+  var RouteTable: js.UndefOr[typings.awsSdk.ec2Mod.RouteTable] = js.undefined
 }
 object CreateRouteTableResult {
   

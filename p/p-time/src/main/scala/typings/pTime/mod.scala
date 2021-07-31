@@ -2,7 +2,6 @@ package typings.pTime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-time", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = js.native
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].apply(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
   
   @JSImport("p-time", JSImport.Namespace)
   @js.native
@@ -43,9 +41,8 @@ object mod {
   	@param asyncFunction - Promise-returning/async function.
   	@returns A decorated version of `asyncFunction`.
   	*/
-  @JSImport("p-time", "log")
-  @js.native
-  def log[ArgumentsType /* <: js.Array[_] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = js.native
+  @scala.inline
+  def log[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](asyncFunction: js.Function1[/* arguments */ ArgumentsType, js.Thenable[ReturnType]]): js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(asyncFunction.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, PromiseWithTime[ReturnType]]]
   
   @js.native
   trait PromiseWithTime[ValueType]

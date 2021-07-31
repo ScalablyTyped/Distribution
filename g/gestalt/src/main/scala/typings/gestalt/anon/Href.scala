@@ -8,24 +8,22 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Href extends StObject {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var label: String = js.native
+  var label: String
   
   var onClick: js.UndefOr[
     AbstractEventHandler[
       (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
       js.Object
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Href {
   
@@ -52,7 +50,7 @@ object Href {
     
     @scala.inline
     def setOnClick(
-      value: /* arg */ js.Object with (Event[
+      value: /* arg */ js.Object & (Event[
           (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
         ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))

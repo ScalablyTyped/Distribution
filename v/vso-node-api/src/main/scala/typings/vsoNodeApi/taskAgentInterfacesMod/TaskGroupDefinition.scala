@@ -2,21 +2,19 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskGroupDefinition extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var isExpanded: Boolean = js.native
+  var isExpanded: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var visibleRule: String = js.native
+  var visibleRule: String
 }
 object TaskGroupDefinition {
   

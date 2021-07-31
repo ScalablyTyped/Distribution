@@ -2,41 +2,39 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaqSummary extends StObject {
   
   /**
     * The UNIX datetime that the FAQ was added to the index.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The file type used to create the FAQ. 
     */
-  var FileFormat: js.UndefOr[FaqFileFormat] = js.native
+  var FileFormat: js.UndefOr[FaqFileFormat] = js.undefined
   
   /**
     * The unique identifier of the FAQ.
     */
-  var Id: js.UndefOr[FaqId] = js.native
+  var Id: js.UndefOr[FaqId] = js.undefined
   
   /**
     * The name that you assigned the FAQ when you created or updated the FAQ.
     */
-  var Name: js.UndefOr[FaqName] = js.native
+  var Name: js.UndefOr[FaqName] = js.undefined
   
   /**
     * The current status of the FAQ. When the status is ACTIVE the FAQ is ready for use.
     */
-  var Status: js.UndefOr[FaqStatus] = js.native
+  var Status: js.UndefOr[FaqStatus] = js.undefined
   
   /**
     * The UNIX datetime that the FAQ was last updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object FaqSummary {
   

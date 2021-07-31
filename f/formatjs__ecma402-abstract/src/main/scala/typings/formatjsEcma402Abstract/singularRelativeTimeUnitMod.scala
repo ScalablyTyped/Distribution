@@ -4,12 +4,14 @@ import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeFormattableUn
 import typings.formatjsEcma402Abstract.relativeTimeMod.RelativeTimeUnit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object singularRelativeTimeUnitMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/RelativeTimeFormat/SingularRelativeTimeUnit", "SingularRelativeTimeUnit")
+  @JSImport("@formatjs/ecma402-abstract/lib/RelativeTimeFormat/SingularRelativeTimeUnit", JSImport.Namespace)
   @js.native
-  def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def SingularRelativeTimeUnit(unit: RelativeTimeFormattableUnit): RelativeTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("SingularRelativeTimeUnit")(unit.asInstanceOf[js.Any]).asInstanceOf[RelativeTimeUnit]
 }

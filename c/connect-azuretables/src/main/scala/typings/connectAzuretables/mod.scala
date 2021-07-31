@@ -10,19 +10,21 @@ import typings.expressSession.mod.SessionOptions
 import typings.expressSession.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-azuretables", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, _, _, Query]
+      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ]
-  ): AzureTableStoreFactory = js.native
+  ): AzureTableStoreFactory = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[AzureTableStoreFactory]
+  
+  @JSImport("connect-azuretables", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait AzureTableStore extends Store {
@@ -41,10 +43,9 @@ object mod {
     def update_TOUCH(method: TOUCH, sid: String, session: SessionData, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait AzureTableStoreFactory extends StObject {
     
-    def create(options: AzureTableStoreOptions): AzureTableStore = js.native
+    def create(options: AzureTableStoreOptions): AzureTableStore
   }
   object AzureTableStoreFactory {
     
@@ -62,24 +63,23 @@ object mod {
     }
   }
   
-  @js.native
   trait AzureTableStoreOptions extends StObject {
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
-    var errorLogger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var errorLogger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
-    var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var logger: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
     // sessionTimeOut in minutes
-    var overrideCron: js.UndefOr[String] = js.native
+    var overrideCron: js.UndefOr[String] = js.undefined
     
-    var sessionTimeOut: js.UndefOr[Double] = js.native
+    var sessionTimeOut: js.UndefOr[Double] = js.undefined
     
     // cron job description
-    var storageAccount: js.UndefOr[String] = js.native
+    var storageAccount: js.UndefOr[String] = js.undefined
     
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
   }
   object AzureTableStoreOptions {
     

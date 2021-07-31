@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access the footnotes within the context (e.g. document). */
-@js.native
-trait XFootnotesSupplier extends XInterface {
+trait XFootnotesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the footnotes settings of the document. */
-  val FootnoteSettings: XPropertySet = js.native
+  val FootnoteSettings: XPropertySet
   
   /** returns a collection of footnotes. */
-  val Footnotes: XIndexAccess = js.native
+  val Footnotes: XIndexAccess
   
   /** @returns the footnotes settings of the document. */
-  def getFootnoteSettings(): XPropertySet = js.native
+  def getFootnoteSettings(): XPropertySet
   
   /** returns a collection of footnotes. */
-  def getFootnotes(): XIndexAccess = js.native
+  def getFootnotes(): XIndexAccess
 }
 object XFootnotesSupplier {
   

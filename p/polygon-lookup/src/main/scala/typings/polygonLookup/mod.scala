@@ -7,27 +7,27 @@ import typings.geojson.mod.Polygon
 import typings.rbush.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("polygon-lookup", JSImport.Namespace)
   @js.native
-  class ^ () extends PolygonLookup {
+  class ^ ()
+    extends StObject
+       with PolygonLookup {
     def this(featureCollection: FeatureCollection[Geometry, GeoJsonProperties]) = this()
   }
   
-  @js.native
   trait BBox extends StObject {
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
   }
   object BBox {
     

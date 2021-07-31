@@ -4,15 +4,13 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.TitleContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogTitleProps extends StObject {
   
-  var children: Element = js.native
+  var children: Element
   
-  var style: js.UndefOr[TitleContainer] = js.native
+  var style: js.UndefOr[TitleContainer] = js.undefined
 }
 object DialogTitleProps {
   

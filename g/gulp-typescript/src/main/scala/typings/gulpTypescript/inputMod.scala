@@ -7,25 +7,23 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {
   
-  @js.native
   trait File extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var fileNameNormalized: String = js.native
+    var fileNameNormalized: String
     
-    var fileNameOriginal: String = js.native
+    var fileNameOriginal: String
     
-    var gulp: js.UndefOr[VinylFile] = js.native
+    var gulp: js.UndefOr[VinylFile] = js.undefined
     
-    var kind: FileKind = js.native
+    var kind: FileKind
     
-    var ts: js.UndefOr[SourceFile] = js.native
+    var ts: js.UndefOr[SourceFile] = js.undefined
   }
   object File {
     
@@ -35,21 +33,21 @@ object inputMod {
       __obj.asInstanceOf[File]
     }
     
-    @JSImport("gulp-typescript/release/input", "File.equal")
+    @JSImport("gulp-typescript/release/input", "File")
     @js.native
-    def equal(a: File, b: File): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("gulp-typescript/release/input", "File.fromContent")
-    @js.native
-    def fromContent(caseSensitive: Boolean, fileName: String, content: String): File = js.native
+    @scala.inline
+    def equal(a: File, b: File): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("gulp-typescript/release/input", "File.fromGulp")
-    @js.native
-    def fromGulp(caseSensitive: Boolean, file: VinylFile): File = js.native
+    @scala.inline
+    def fromContent(caseSensitive: Boolean, fileName: String, content: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromContent")(caseSensitive.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[File]
     
-    @JSImport("gulp-typescript/release/input", "File.getChangeState")
-    @js.native
-    def getChangeState(previous: File, current: File): FileChangeState = js.native
+    @scala.inline
+    def fromGulp(caseSensitive: Boolean, file: VinylFile): File = (^.asInstanceOf[js.Dynamic].applyDynamic("fromGulp")(caseSensitive.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[File]
+    
+    @scala.inline
+    def getChangeState(previous: File, current: File): FileChangeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getChangeState")(previous.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[FileChangeState]
     
     @scala.inline
     implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
@@ -133,27 +131,37 @@ object inputMod {
   object FileChangeState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FileChangeState with Double] = js.native
+    def apply(value: Double): js.UndefOr[FileChangeState & Double] = js.native
     
     @js.native
-    sealed trait Deleted extends FileChangeState
-    /* 3 */ val Deleted: typings.gulpTypescript.inputMod.FileChangeState.Deleted with Double = js.native
+    sealed trait Deleted
+      extends StObject
+         with FileChangeState
+    /* 3 */ val Deleted: typings.gulpTypescript.inputMod.FileChangeState.Deleted & Double = js.native
     
     @js.native
-    sealed trait Equal extends FileChangeState
-    /* 1 */ val Equal: typings.gulpTypescript.inputMod.FileChangeState.Equal with Double = js.native
+    sealed trait Equal
+      extends StObject
+         with FileChangeState
+    /* 1 */ val Equal: typings.gulpTypescript.inputMod.FileChangeState.Equal & Double = js.native
     
     @js.native
-    sealed trait Modified extends FileChangeState
-    /* 2 */ val Modified: typings.gulpTypescript.inputMod.FileChangeState.Modified with Double = js.native
+    sealed trait Modified
+      extends StObject
+         with FileChangeState
+    /* 2 */ val Modified: typings.gulpTypescript.inputMod.FileChangeState.Modified & Double = js.native
     
     @js.native
-    sealed trait New extends FileChangeState
-    /* 0 */ val New: typings.gulpTypescript.inputMod.FileChangeState.New with Double = js.native
+    sealed trait New
+      extends StObject
+         with FileChangeState
+    /* 0 */ val New: typings.gulpTypescript.inputMod.FileChangeState.New & Double = js.native
     
     @js.native
-    sealed trait NotFound extends FileChangeState
-    /* 4 */ val NotFound: typings.gulpTypescript.inputMod.FileChangeState.NotFound with Double = js.native
+    sealed trait NotFound
+      extends StObject
+         with FileChangeState
+    /* 4 */ val NotFound: typings.gulpTypescript.inputMod.FileChangeState.NotFound & Double = js.native
   }
   
   @JSImport("gulp-typescript/release/input", "FileDictionary")
@@ -196,25 +204,28 @@ object inputMod {
   object FileKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FileKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[FileKind & Double] = js.native
     
     @js.native
-    sealed trait Config extends FileKind
-    /* 1 */ val Config: typings.gulpTypescript.inputMod.FileKind.Config with Double = js.native
+    sealed trait Config
+      extends StObject
+         with FileKind
+    /* 1 */ val Config: typings.gulpTypescript.inputMod.FileKind.Config & Double = js.native
     
     @js.native
-    sealed trait Source extends FileKind
-    /* 0 */ val Source: typings.gulpTypescript.inputMod.FileKind.Source with Double = js.native
+    sealed trait Source
+      extends StObject
+         with FileKind
+    /* 0 */ val Source: typings.gulpTypescript.inputMod.FileKind.Source & Double = js.native
   }
   
-  @js.native
   trait FileChange extends StObject {
     
-    var current: File = js.native
+    var current: File
     
-    var previous: File = js.native
+    var previous: File
     
-    var state: FileChangeState = js.native
+    var state: FileChangeState
   }
   object FileChange {
     

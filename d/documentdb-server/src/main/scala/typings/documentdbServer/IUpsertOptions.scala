@@ -2,18 +2,16 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a upsert operation. */
-@js.native
 trait IUpsertOptions extends StObject {
   
   /** Disables automatic generation of "id" field of the document to be upserted (if it is not provided) */
-  var disableAutomaticIdGeneration: js.UndefOr[String] = js.native
+  var disableAutomaticIdGeneration: js.UndefOr[String] = js.undefined
   
   /** Specifies indexing directives. */
-  var indexAction: js.UndefOr[String] = js.native
+  var indexAction: js.UndefOr[String] = js.undefined
 }
 object IUpsertOptions {
   

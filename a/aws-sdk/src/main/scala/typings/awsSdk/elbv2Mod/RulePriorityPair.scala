@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulePriorityPair extends StObject {
   
   /**
     * The rule priority.
     */
-  var Priority: js.UndefOr[RulePriority] = js.native
+  var Priority: js.UndefOr[RulePriority] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var RuleArn: js.UndefOr[typings.awsSdk.elbv2Mod.RuleArn] = js.native
+  var RuleArn: js.UndefOr[typings.awsSdk.elbv2Mod.RuleArn] = js.undefined
 }
 object RulePriorityPair {
   

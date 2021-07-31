@@ -3,538 +3,749 @@ package typings.reactFilepond
 import typings.reactFilepond.mod.FilteredMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFilepondStrings {
   
   @js.native
-  sealed trait allowBrowse extends FilteredMethods
+  sealed trait allowBrowse
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowBrowse: allowBrowse = "allowBrowse".asInstanceOf[allowBrowse]
   
   @js.native
-  sealed trait allowDirectoriesOnly extends FilteredMethods
+  sealed trait allowDirectoriesOnly
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowDirectoriesOnly: allowDirectoriesOnly = "allowDirectoriesOnly".asInstanceOf[allowDirectoriesOnly]
   
   @js.native
-  sealed trait allowDrop extends FilteredMethods
+  sealed trait allowDrop
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowDrop: allowDrop = "allowDrop".asInstanceOf[allowDrop]
   
   @js.native
-  sealed trait allowMultiple extends FilteredMethods
+  sealed trait allowMultiple
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowMultiple: allowMultiple = "allowMultiple".asInstanceOf[allowMultiple]
   
   @js.native
-  sealed trait allowPaste extends FilteredMethods
+  sealed trait allowPaste
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowPaste: allowPaste = "allowPaste".asInstanceOf[allowPaste]
   
   @js.native
-  sealed trait allowProcess extends FilteredMethods
+  sealed trait allowProcess
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowProcess: allowProcess = "allowProcess".asInstanceOf[allowProcess]
   
   @js.native
-  sealed trait allowReorder extends FilteredMethods
+  sealed trait allowReorder
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowReorder: allowReorder = "allowReorder".asInstanceOf[allowReorder]
   
   @js.native
-  sealed trait allowReplace extends FilteredMethods
+  sealed trait allowReplace
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowReplace: allowReplace = "allowReplace".asInstanceOf[allowReplace]
   
   @js.native
-  sealed trait allowRevert extends FilteredMethods
+  sealed trait allowRevert
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowRevert: allowRevert = "allowRevert".asInstanceOf[allowRevert]
   
   @js.native
-  sealed trait allowSyncAcceptAttribute extends FilteredMethods
+  sealed trait allowSyncAcceptAttribute
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def allowSyncAcceptAttribute: allowSyncAcceptAttribute = "allowSyncAcceptAttribute".asInstanceOf[allowSyncAcceptAttribute]
   
   @js.native
-  sealed trait appendTo extends FilteredMethods
+  sealed trait appendTo
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def appendTo: appendTo = "appendTo".asInstanceOf[appendTo]
   
   @js.native
-  sealed trait beforeAddFile extends FilteredMethods
+  sealed trait beforeAddFile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def beforeAddFile: beforeAddFile = "beforeAddFile".asInstanceOf[beforeAddFile]
   
   @js.native
-  sealed trait beforeDropFile extends FilteredMethods
+  sealed trait beforeDropFile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def beforeDropFile: beforeDropFile = "beforeDropFile".asInstanceOf[beforeDropFile]
   
   @js.native
-  sealed trait beforeRemoveFile extends FilteredMethods
+  sealed trait beforeRemoveFile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def beforeRemoveFile: beforeRemoveFile = "beforeRemoveFile".asInstanceOf[beforeRemoveFile]
   
   @js.native
-  sealed trait captureMethod extends FilteredMethods
+  sealed trait captureMethod
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def captureMethod: captureMethod = "captureMethod".asInstanceOf[captureMethod]
   
   @js.native
-  sealed trait checkValidity extends FilteredMethods
+  sealed trait checkValidity
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def checkValidity: checkValidity = "checkValidity".asInstanceOf[checkValidity]
   
   @js.native
-  sealed trait chunkForce extends FilteredMethods
+  sealed trait chunkForce
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def chunkForce: chunkForce = "chunkForce".asInstanceOf[chunkForce]
   
   @js.native
-  sealed trait chunkRetryDelays extends FilteredMethods
+  sealed trait chunkRetryDelays
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def chunkRetryDelays: chunkRetryDelays = "chunkRetryDelays".asInstanceOf[chunkRetryDelays]
   
   @js.native
-  sealed trait chunkSize extends FilteredMethods
+  sealed trait chunkSize
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def chunkSize: chunkSize = "chunkSize".asInstanceOf[chunkSize]
   
   @js.native
-  sealed trait chunkUploads extends FilteredMethods
+  sealed trait chunkUploads
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def chunkUploads: chunkUploads = "chunkUploads".asInstanceOf[chunkUploads]
   
   @js.native
-  sealed trait className extends FilteredMethods
+  sealed trait className
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def className: className = "className".asInstanceOf[className]
   
   @js.native
-  sealed trait destroy extends FilteredMethods
+  sealed trait destroy
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait disabled extends FilteredMethods
+  sealed trait disabled
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait dropOnElement extends FilteredMethods
+  sealed trait dropOnElement
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def dropOnElement: dropOnElement = "dropOnElement".asInstanceOf[dropOnElement]
   
   @js.native
-  sealed trait dropOnPage extends FilteredMethods
+  sealed trait dropOnPage
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def dropOnPage: dropOnPage = "dropOnPage".asInstanceOf[dropOnPage]
   
   @js.native
-  sealed trait dropValidation extends FilteredMethods
+  sealed trait dropValidation
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def dropValidation: dropValidation = "dropValidation".asInstanceOf[dropValidation]
   
   @js.native
-  sealed trait files extends FilteredMethods
+  sealed trait files
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def files: files = "files".asInstanceOf[files]
   
   @js.native
-  sealed trait forceRevert extends FilteredMethods
+  sealed trait forceRevert
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def forceRevert: forceRevert = "forceRevert".asInstanceOf[forceRevert]
   
   @js.native
-  sealed trait iconDone extends FilteredMethods
+  sealed trait iconDone
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def iconDone: iconDone = "iconDone".asInstanceOf[iconDone]
   
   @js.native
-  sealed trait iconProcess extends FilteredMethods
+  sealed trait iconProcess
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def iconProcess: iconProcess = "iconProcess".asInstanceOf[iconProcess]
   
   @js.native
-  sealed trait iconRemove extends FilteredMethods
+  sealed trait iconRemove
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def iconRemove: iconRemove = "iconRemove".asInstanceOf[iconRemove]
   
   @js.native
-  sealed trait iconRetry extends FilteredMethods
+  sealed trait iconRetry
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def iconRetry: iconRetry = "iconRetry".asInstanceOf[iconRetry]
   
   @js.native
-  sealed trait iconUndo extends FilteredMethods
+  sealed trait iconUndo
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def iconUndo: iconUndo = "iconUndo".asInstanceOf[iconUndo]
   
   @js.native
-  sealed trait id extends FilteredMethods
+  sealed trait id
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait ignoredFiles extends FilteredMethods
+  sealed trait ignoredFiles
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def ignoredFiles: ignoredFiles = "ignoredFiles".asInstanceOf[ignoredFiles]
   
   @js.native
-  sealed trait insertAfter extends FilteredMethods
+  sealed trait insertAfter
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def insertAfter: insertAfter = "insertAfter".asInstanceOf[insertAfter]
   
   @js.native
-  sealed trait insertBefore extends FilteredMethods
+  sealed trait insertBefore
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def insertBefore: insertBefore = "insertBefore".asInstanceOf[insertBefore]
   
   @js.native
-  sealed trait instantUpload extends FilteredMethods
+  sealed trait instantUpload
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def instantUpload: instantUpload = "instantUpload".asInstanceOf[instantUpload]
   
   @js.native
-  sealed trait isAttachedTo extends FilteredMethods
+  sealed trait isAttachedTo
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def isAttachedTo: isAttachedTo = "isAttachedTo".asInstanceOf[isAttachedTo]
   
   @js.native
-  sealed trait itemInsertInterval extends FilteredMethods
+  sealed trait itemInsertInterval
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def itemInsertInterval: itemInsertInterval = "itemInsertInterval".asInstanceOf[itemInsertInterval]
   
   @js.native
-  sealed trait itemInsertLocation extends FilteredMethods
+  sealed trait itemInsertLocation
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def itemInsertLocation: itemInsertLocation = "itemInsertLocation".asInstanceOf[itemInsertLocation]
   
   @js.native
-  sealed trait itemInsertLocationFreedom extends FilteredMethods
+  sealed trait itemInsertLocationFreedom
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def itemInsertLocationFreedom: itemInsertLocationFreedom = "itemInsertLocationFreedom".asInstanceOf[itemInsertLocationFreedom]
   
   @js.native
-  sealed trait labelButtonAbortItemLoad extends FilteredMethods
+  sealed trait labelButtonAbortItemLoad
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonAbortItemLoad: labelButtonAbortItemLoad = "labelButtonAbortItemLoad".asInstanceOf[labelButtonAbortItemLoad]
   
   @js.native
-  sealed trait labelButtonAbortItemProcessing extends FilteredMethods
+  sealed trait labelButtonAbortItemProcessing
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonAbortItemProcessing: labelButtonAbortItemProcessing = "labelButtonAbortItemProcessing".asInstanceOf[labelButtonAbortItemProcessing]
   
   @js.native
-  sealed trait labelButtonProcessItem extends FilteredMethods
+  sealed trait labelButtonProcessItem
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonProcessItem: labelButtonProcessItem = "labelButtonProcessItem".asInstanceOf[labelButtonProcessItem]
   
   @js.native
-  sealed trait labelButtonRemoveItem extends FilteredMethods
+  sealed trait labelButtonRemoveItem
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonRemoveItem: labelButtonRemoveItem = "labelButtonRemoveItem".asInstanceOf[labelButtonRemoveItem]
   
   @js.native
-  sealed trait labelButtonRetryItemLoad extends FilteredMethods
+  sealed trait labelButtonRetryItemLoad
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonRetryItemLoad: labelButtonRetryItemLoad = "labelButtonRetryItemLoad".asInstanceOf[labelButtonRetryItemLoad]
   
   @js.native
-  sealed trait labelButtonRetryItemProcessing extends FilteredMethods
+  sealed trait labelButtonRetryItemProcessing
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonRetryItemProcessing: labelButtonRetryItemProcessing = "labelButtonRetryItemProcessing".asInstanceOf[labelButtonRetryItemProcessing]
   
   @js.native
-  sealed trait labelButtonUndoItemProcessing extends FilteredMethods
+  sealed trait labelButtonUndoItemProcessing
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelButtonUndoItemProcessing: labelButtonUndoItemProcessing = "labelButtonUndoItemProcessing".asInstanceOf[labelButtonUndoItemProcessing]
   
   @js.native
-  sealed trait labelDecimalSeparator extends FilteredMethods
+  sealed trait labelDecimalSeparator
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelDecimalSeparator: labelDecimalSeparator = "labelDecimalSeparator".asInstanceOf[labelDecimalSeparator]
   
   @js.native
-  sealed trait labelFileAdded extends FilteredMethods
+  sealed trait labelFileAdded
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileAdded: labelFileAdded = "labelFileAdded".asInstanceOf[labelFileAdded]
   
   @js.native
-  sealed trait labelFileCountPlural extends FilteredMethods
+  sealed trait labelFileCountPlural
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileCountPlural: labelFileCountPlural = "labelFileCountPlural".asInstanceOf[labelFileCountPlural]
   
   @js.native
-  sealed trait labelFileCountSingular extends FilteredMethods
+  sealed trait labelFileCountSingular
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileCountSingular: labelFileCountSingular = "labelFileCountSingular".asInstanceOf[labelFileCountSingular]
   
   @js.native
-  sealed trait labelFileLoadError extends FilteredMethods
+  sealed trait labelFileLoadError
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileLoadError: labelFileLoadError = "labelFileLoadError".asInstanceOf[labelFileLoadError]
   
   @js.native
-  sealed trait labelFileLoading extends FilteredMethods
+  sealed trait labelFileLoading
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileLoading: labelFileLoading = "labelFileLoading".asInstanceOf[labelFileLoading]
   
   @js.native
-  sealed trait labelFileProcessing extends FilteredMethods
+  sealed trait labelFileProcessing
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileProcessing: labelFileProcessing = "labelFileProcessing".asInstanceOf[labelFileProcessing]
   
   @js.native
-  sealed trait labelFileProcessingAborted extends FilteredMethods
+  sealed trait labelFileProcessingAborted
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileProcessingAborted: labelFileProcessingAborted = "labelFileProcessingAborted".asInstanceOf[labelFileProcessingAborted]
   
   @js.native
-  sealed trait labelFileProcessingComplete extends FilteredMethods
+  sealed trait labelFileProcessingComplete
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileProcessingComplete: labelFileProcessingComplete = "labelFileProcessingComplete".asInstanceOf[labelFileProcessingComplete]
   
   @js.native
-  sealed trait labelFileProcessingError extends FilteredMethods
+  sealed trait labelFileProcessingError
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileProcessingError: labelFileProcessingError = "labelFileProcessingError".asInstanceOf[labelFileProcessingError]
   
   @js.native
-  sealed trait labelFileProcessingRevertError extends FilteredMethods
+  sealed trait labelFileProcessingRevertError
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileProcessingRevertError: labelFileProcessingRevertError = "labelFileProcessingRevertError".asInstanceOf[labelFileProcessingRevertError]
   
   @js.native
-  sealed trait labelFileRemoveError extends FilteredMethods
+  sealed trait labelFileRemoveError
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileRemoveError: labelFileRemoveError = "labelFileRemoveError".asInstanceOf[labelFileRemoveError]
   
   @js.native
-  sealed trait labelFileRemoved extends FilteredMethods
+  sealed trait labelFileRemoved
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileRemoved: labelFileRemoved = "labelFileRemoved".asInstanceOf[labelFileRemoved]
   
   @js.native
-  sealed trait labelFileSizeNotAvailable extends FilteredMethods
+  sealed trait labelFileSizeNotAvailable
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileSizeNotAvailable: labelFileSizeNotAvailable = "labelFileSizeNotAvailable".asInstanceOf[labelFileSizeNotAvailable]
   
   @js.native
-  sealed trait labelFileWaitingForSize extends FilteredMethods
+  sealed trait labelFileWaitingForSize
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelFileWaitingForSize: labelFileWaitingForSize = "labelFileWaitingForSize".asInstanceOf[labelFileWaitingForSize]
   
   @js.native
-  sealed trait labelIdle extends FilteredMethods
+  sealed trait labelIdle
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelIdle: labelIdle = "labelIdle".asInstanceOf[labelIdle]
   
   @js.native
-  sealed trait labelInvalidField extends FilteredMethods
+  sealed trait labelInvalidField
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelInvalidField: labelInvalidField = "labelInvalidField".asInstanceOf[labelInvalidField]
   
   @js.native
-  sealed trait labelTapToCancel extends FilteredMethods
+  sealed trait labelTapToCancel
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelTapToCancel: labelTapToCancel = "labelTapToCancel".asInstanceOf[labelTapToCancel]
   
   @js.native
-  sealed trait labelTapToRetry extends FilteredMethods
+  sealed trait labelTapToRetry
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelTapToRetry: labelTapToRetry = "labelTapToRetry".asInstanceOf[labelTapToRetry]
   
   @js.native
-  sealed trait labelTapToUndo extends FilteredMethods
+  sealed trait labelTapToUndo
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelTapToUndo: labelTapToUndo = "labelTapToUndo".asInstanceOf[labelTapToUndo]
   
   @js.native
-  sealed trait labelThousandsSeparator extends FilteredMethods
+  sealed trait labelThousandsSeparator
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def labelThousandsSeparator: labelThousandsSeparator = "labelThousandsSeparator".asInstanceOf[labelThousandsSeparator]
   
   @js.native
-  sealed trait maxFiles extends FilteredMethods
+  sealed trait maxFiles
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def maxFiles: maxFiles = "maxFiles".asInstanceOf[maxFiles]
   
   @js.native
-  sealed trait maxParallelUploads extends FilteredMethods
+  sealed trait maxParallelUploads
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def maxParallelUploads: maxParallelUploads = "maxParallelUploads".asInstanceOf[maxParallelUploads]
   
   @js.native
-  sealed trait name extends FilteredMethods
+  sealed trait name
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait off extends FilteredMethods
+  sealed trait off
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait on extends FilteredMethods
+  sealed trait on
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait onOnce extends FilteredMethods
+  sealed trait onOnce
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onOnce: onOnce = "onOnce".asInstanceOf[onOnce]
   
   @js.native
-  sealed trait onactivatefile extends FilteredMethods
+  sealed trait onactivatefile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onactivatefile: onactivatefile = "onactivatefile".asInstanceOf[onactivatefile]
   
   @js.native
-  sealed trait onaddfile extends FilteredMethods
+  sealed trait onaddfile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onaddfile: onaddfile = "onaddfile".asInstanceOf[onaddfile]
   
   @js.native
-  sealed trait onaddfileprogress extends FilteredMethods
+  sealed trait onaddfileprogress
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onaddfileprogress: onaddfileprogress = "onaddfileprogress".asInstanceOf[onaddfileprogress]
   
   @js.native
-  sealed trait onaddfilestart extends FilteredMethods
+  sealed trait onaddfilestart
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onaddfilestart: onaddfilestart = "onaddfilestart".asInstanceOf[onaddfilestart]
   
   @js.native
-  sealed trait onerror extends FilteredMethods
+  sealed trait onerror
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onerror: onerror = "onerror".asInstanceOf[onerror]
   
   @js.native
-  sealed trait oninit extends FilteredMethods
+  sealed trait oninit
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def oninit: oninit = "oninit".asInstanceOf[oninit]
   
   @js.native
-  sealed trait onpreparefile extends FilteredMethods
+  sealed trait onpreparefile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onpreparefile: onpreparefile = "onpreparefile".asInstanceOf[onpreparefile]
   
   @js.native
-  sealed trait onprocessfile extends FilteredMethods
+  sealed trait onprocessfile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfile: onprocessfile = "onprocessfile".asInstanceOf[onprocessfile]
   
   @js.native
-  sealed trait onprocessfileabort extends FilteredMethods
+  sealed trait onprocessfileabort
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfileabort: onprocessfileabort = "onprocessfileabort".asInstanceOf[onprocessfileabort]
   
   @js.native
-  sealed trait onprocessfileprogress extends FilteredMethods
+  sealed trait onprocessfileprogress
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfileprogress: onprocessfileprogress = "onprocessfileprogress".asInstanceOf[onprocessfileprogress]
   
   @js.native
-  sealed trait onprocessfilerevert extends FilteredMethods
+  sealed trait onprocessfilerevert
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfilerevert: onprocessfilerevert = "onprocessfilerevert".asInstanceOf[onprocessfilerevert]
   
   @js.native
-  sealed trait onprocessfiles extends FilteredMethods
+  sealed trait onprocessfiles
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfiles: onprocessfiles = "onprocessfiles".asInstanceOf[onprocessfiles]
   
   @js.native
-  sealed trait onprocessfilestart extends FilteredMethods
+  sealed trait onprocessfilestart
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onprocessfilestart: onprocessfilestart = "onprocessfilestart".asInstanceOf[onprocessfilestart]
   
   @js.native
-  sealed trait onremovefile extends FilteredMethods
+  sealed trait onremovefile
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onremovefile: onremovefile = "onremovefile".asInstanceOf[onremovefile]
   
   @js.native
-  sealed trait onreorderfiles extends FilteredMethods
+  sealed trait onreorderfiles
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onreorderfiles: onreorderfiles = "onreorderfiles".asInstanceOf[onreorderfiles]
   
   @js.native
-  sealed trait onupdatefiles extends FilteredMethods
+  sealed trait onupdatefiles
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onupdatefiles: onupdatefiles = "onupdatefiles".asInstanceOf[onupdatefiles]
   
   @js.native
-  sealed trait onwarning extends FilteredMethods
+  sealed trait onwarning
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def onwarning: onwarning = "onwarning".asInstanceOf[onwarning]
   
   @js.native
-  sealed trait replaceElement extends FilteredMethods
+  sealed trait replaceElement
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def replaceElement: replaceElement = "replaceElement".asInstanceOf[replaceElement]
   
   @js.native
-  sealed trait required extends FilteredMethods
+  sealed trait required
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait restoreElement extends FilteredMethods
+  sealed trait restoreElement
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def restoreElement: restoreElement = "restoreElement".asInstanceOf[restoreElement]
   
   @js.native
-  sealed trait server extends FilteredMethods
+  sealed trait server
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait setOptions extends FilteredMethods
+  sealed trait setOptions
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
   
   @js.native
-  sealed trait styleButtonProcessItemPosition extends FilteredMethods
+  sealed trait styleButtonProcessItemPosition
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleButtonProcessItemPosition: styleButtonProcessItemPosition = "styleButtonProcessItemPosition".asInstanceOf[styleButtonProcessItemPosition]
   
   @js.native
-  sealed trait styleButtonRemoveItemAlign extends FilteredMethods
+  sealed trait styleButtonRemoveItemAlign
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleButtonRemoveItemAlign: styleButtonRemoveItemAlign = "styleButtonRemoveItemAlign".asInstanceOf[styleButtonRemoveItemAlign]
   
   @js.native
-  sealed trait styleButtonRemoveItemPosition extends FilteredMethods
+  sealed trait styleButtonRemoveItemPosition
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleButtonRemoveItemPosition: styleButtonRemoveItemPosition = "styleButtonRemoveItemPosition".asInstanceOf[styleButtonRemoveItemPosition]
   
   @js.native
-  sealed trait styleItemPanelAspectRatio extends FilteredMethods
+  sealed trait styleItemPanelAspectRatio
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleItemPanelAspectRatio: styleItemPanelAspectRatio = "styleItemPanelAspectRatio".asInstanceOf[styleItemPanelAspectRatio]
   
   @js.native
-  sealed trait styleLoadIndicatorPosition extends FilteredMethods
+  sealed trait styleLoadIndicatorPosition
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleLoadIndicatorPosition: styleLoadIndicatorPosition = "styleLoadIndicatorPosition".asInstanceOf[styleLoadIndicatorPosition]
   
   @js.native
-  sealed trait stylePanelAspectRatio extends FilteredMethods
+  sealed trait stylePanelAspectRatio
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def stylePanelAspectRatio: stylePanelAspectRatio = "stylePanelAspectRatio".asInstanceOf[stylePanelAspectRatio]
   
   @js.native
-  sealed trait stylePanelLayout extends FilteredMethods
+  sealed trait stylePanelLayout
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def stylePanelLayout: stylePanelLayout = "stylePanelLayout".asInstanceOf[stylePanelLayout]
   
   @js.native
-  sealed trait styleProgressIndicatorPosition extends FilteredMethods
+  sealed trait styleProgressIndicatorPosition
+    extends StObject
+       with FilteredMethods
   @scala.inline
   def styleProgressIndicatorPosition: styleProgressIndicatorPosition = "styleProgressIndicatorPosition".asInstanceOf[styleProgressIndicatorPosition]
 }

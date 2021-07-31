@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Structs.ProcessQueue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Some or all of these Game Objects may also be part of the Scene's [Display List]{@link Phaser.GameObjects.DisplayList}, for Rendering.
   */
 @js.native
-trait UpdateList extends ProcessQueue[GameObject] {
+trait UpdateList
+  extends StObject
+     with ProcessQueue[GameObject] {
   
   /**
     * The Scene that the Update List belongs to.

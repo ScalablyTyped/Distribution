@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
   
-  @js.native
-  trait PluralForms extends /* exact */ NumberDictionary[String] {
+  trait PluralForms
+    extends StObject
+       with /* exact */ NumberDictionary[String] {
     
-    var few: js.UndefOr[String] = js.native
+    var few: js.UndefOr[String] = js.undefined
     
-    var many: js.UndefOr[String] = js.native
+    var many: js.UndefOr[String] = js.undefined
     
-    var one: js.UndefOr[String] = js.native
+    var one: js.UndefOr[String] = js.undefined
     
-    var other: String = js.native
+    var other: String
     
-    var two: js.UndefOr[String] = js.native
+    var two: js.UndefOr[String] = js.undefined
     
-    var zero: js.UndefOr[String] = js.native
+    var zero: js.UndefOr[String] = js.undefined
   }
   object PluralForms {
     
@@ -70,12 +70,13 @@ object selectMod {
     }
   }
   
-  @js.native
-  trait PluralProps extends PluralForms {
+  trait PluralProps
+    extends StObject
+       with PluralForms {
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object PluralProps {
     
@@ -99,12 +100,13 @@ object selectMod {
     }
   }
   
-  @js.native
-  trait SelectProps extends /* selectForm */ StringDictionary[String] {
+  trait SelectProps
+    extends StObject
+       with /* selectForm */ StringDictionary[String] {
     
-    var other: String = js.native
+    var other: String
     
-    var value: String = js.native
+    var value: String
   }
   object SelectProps {
     

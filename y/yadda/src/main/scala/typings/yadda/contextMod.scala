@@ -3,23 +3,29 @@ package typings.yadda
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
   @JSImport("yadda/lib/Context", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Context {
+  class ^ protected ()
+    extends StObject
+       with Context {
     def this(properties: Properties) = this()
+    
+    /* CompleteClass */
+    override def merge(other: Properties): Context = js.native
+    
+    /* CompleteClass */
+    var properties: Properties = js.native
   }
   
-  @js.native
   trait Context extends StObject {
     
-    def merge(other: Properties): Context = js.native
+    def merge(other: Properties): Context
     
-    var properties: Properties = js.native
+    var properties: Properties
   }
   object Context {
     

@@ -2,13 +2,11 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeCredentialsResult extends StObject {
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object RevokeCredentialsResult {
   

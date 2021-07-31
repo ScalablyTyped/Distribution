@@ -10,9 +10,9 @@ PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & syn
 | ------------------ | :-------------: |
 | Full name          | pngjs |
 | Keywords           | PNG, decoder, encoder, js-png, node-png, parser, png, png-js, png-parse, pngjs |
-| # releases         | 5 |
-| # dependents       | 539 |
-| # downloads        | 81103462 |
+| # releases         | 6 |
+| # dependents       | 585 |
+| # downloads        | 105701694 |
 | # stars            | 14 |
 
 ## Links

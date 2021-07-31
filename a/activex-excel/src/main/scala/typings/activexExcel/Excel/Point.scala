@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -103,49 +102,19 @@ trait Point extends StObject {
   
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): js.Any = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): js.Any = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): js.Any = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): js.Any = js.native
 }

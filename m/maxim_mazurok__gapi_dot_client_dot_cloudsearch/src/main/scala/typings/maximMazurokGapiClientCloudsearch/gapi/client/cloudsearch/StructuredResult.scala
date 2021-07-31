@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructuredResult extends StObject {
   
   /** Representation of a person */
-  var person: js.UndefOr[Person] = js.native
+  var person: js.UndefOr[Person] = js.undefined
 }
 object StructuredResult {
   

@@ -2,23 +2,21 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderUIElements extends StObject {
   
-  var renderUIElements: js.UndefOr[Boolean] = js.native
+  var renderUIElements: js.UndefOr[Boolean] = js.undefined
   
-  var rootName: js.UndefOr[Boolean] = js.native
+  var rootName: js.UndefOr[Boolean] = js.undefined
   
-  var showAttributeElementId: js.UndefOr[Boolean] = js.native
+  var showAttributeElementId: js.UndefOr[Boolean] = js.undefined
   
-  var showPriority: js.UndefOr[Boolean] = js.native
+  var showPriority: js.UndefOr[Boolean] = js.undefined
   
-  var showType: js.UndefOr[Boolean] = js.native
+  var showType: js.UndefOr[Boolean] = js.undefined
   
-  var withoutSelection: js.UndefOr[Boolean] = js.native
+  var withoutSelection: js.UndefOr[Boolean] = js.undefined
 }
 object RenderUIElements {
   

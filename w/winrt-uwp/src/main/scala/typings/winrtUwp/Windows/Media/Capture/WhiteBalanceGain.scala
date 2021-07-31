@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Capture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the red, green, and blue values of a white balance gain setting. */
-@js.native
 trait WhiteBalanceGain extends StObject {
   
   /** The blue value of a white balance gain setting. */
-  var b: Double = js.native
+  var b: Double
   
   /** The green value of a white balance gain setting. */
-  var g: Double = js.native
+  var g: Double
   
   /** The red value of a white balance gain setting. */
-  var r: Double = js.native
+  var r: Double
 }
 object WhiteBalanceGain {
   

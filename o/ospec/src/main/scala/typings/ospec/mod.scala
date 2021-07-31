@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -87,9 +86,9 @@ object mod extends Shortcut {
     def specTimeout(delay: Double): Unit = js.native
     
     /** Returns a function that records the number of times it gets called, and its arguments */
-    def spy[A /* <: js.Array[_] */](): Spy[A, js.UndefOr[scala.Nothing]] = js.native
+    def spy[A /* <: js.Array[js.Any] */](): Spy[A, Unit] = js.native
     // tslint:disable-line:no-unnecessary-generics
-    def spy[A /* <: js.Array[_] */, R](fn: js.Function1[/* args */ A, R]): Spy[A, R] = js.native
+    def spy[A /* <: js.Array[js.Any] */, R](fn: js.Function1[/* args */ A, R]): Spy[A, R] = js.native
     
     /** Amount of time (in milliseconds) to wait until bailing out of a test */
     def timeout(delay: Double): Unit = js.native
@@ -97,24 +96,23 @@ object mod extends Shortcut {
   
   type Reporter = js.Function1[/* results */ js.Array[Result], Double]
   
-  @js.native
   trait Result extends StObject {
     
-    var context: String = js.native
+    var context: String
     
-    var error: Error | Null = js.native
+    var error: Error | Null
     
-    var message: String = js.native
+    var message: String
     
-    var pass: Boolean | Null = js.native
+    var pass: Boolean | Null
     
-    var testError: Error | Null = js.native
+    var testError: Error | Null
   }
   object Result {
     
     @scala.inline
     def apply(context: String, message: String): Result = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], error = null, pass = null, testError = null)
       __obj.asInstanceOf[Result]
     }
     
@@ -148,7 +146,7 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Spy[Args /* <: js.Array[_] */, Returns] extends StObject {
+  trait Spy[Args /* <: js.Array[js.Any] */, Returns] extends StObject {
     
     def apply(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Args is not an array type */ args: Args

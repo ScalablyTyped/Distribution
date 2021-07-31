@@ -19,78 +19,76 @@ import typings.reactAliceCarousel.typesMod.RootElement
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-alice-carousel.react-alice-carousel/lib/types.Props> */
-@js.native
 trait PartialProps extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var animationEasingFunction: js.UndefOr[String] = js.native
+  var animationEasingFunction: js.UndefOr[String] = js.undefined
   
-  var animationType: js.UndefOr[slide | fadeout | AnimationType] = js.native
+  var animationType: js.UndefOr[slide | fadeout | AnimationType] = js.undefined
   
-  var autoHeight: js.UndefOr[Boolean] = js.native
+  var autoHeight: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlayControls: js.UndefOr[Boolean] = js.native
+  var autoPlayControls: js.UndefOr[Boolean] = js.undefined
   
-  var autoPlayDirection: js.UndefOr[rtl | ltr | AutoplayDirection] = js.native
+  var autoPlayDirection: js.UndefOr[rtl | ltr | AutoplayDirection] = js.undefined
   
-  var autoPlayInterval: js.UndefOr[Double] = js.native
+  var autoPlayInterval: js.UndefOr[Double] = js.undefined
   
-  var autoPlayStrategy: js.UndefOr[default | all | action | none | AutoPlayStrategy] = js.native
+  var autoPlayStrategy: js.UndefOr[default | all | action | none | AutoPlayStrategy] = js.undefined
   
-  var autoWidth: js.UndefOr[Boolean] = js.native
+  var autoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Any] = js.native
+  var children: js.UndefOr[js.Any] = js.undefined
   
-  var controlsStrategy: js.UndefOr[default | responsive | ControlsStrategy] = js.native
+  var controlsStrategy: js.UndefOr[default | responsive | ControlsStrategy] = js.undefined
   
-  var disableButtonsControls: js.UndefOr[Boolean] = js.native
+  var disableButtonsControls: js.UndefOr[Boolean] = js.undefined
   
-  var disableDotsControls: js.UndefOr[Boolean] = js.native
+  var disableDotsControls: js.UndefOr[Boolean] = js.undefined
   
-  var disableSlideInfo: js.UndefOr[Boolean] = js.native
+  var disableSlideInfo: js.UndefOr[Boolean] = js.undefined
   
-  var infinite: js.UndefOr[Boolean] = js.native
+  var infinite: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var mouseTracking: js.UndefOr[Boolean] = js.native
+  var mouseTracking: js.UndefOr[Boolean] = js.undefined
   
-  var onInitialized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  var onInitialized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
   var onResizeEvent: js.UndefOr[
     js.Function3[/* e */ Event, /* prevProps */ RootElement, /* nextProps */ RootElement, Boolean]
-  ] = js.native
+  ] = js.undefined
   
-  var onResized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  var onResized: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  var onSlideChange: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  var onSlideChange: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  var onSlideChanged: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.native
+  var onSlideChanged: js.UndefOr[js.Function1[/* e */ EventObject, Unit]] = js.undefined
   
-  var paddingLeft: js.UndefOr[Double] = js.native
+  var paddingLeft: js.UndefOr[Double] = js.undefined
   
-  var paddingRight: js.UndefOr[Double] = js.native
+  var paddingRight: js.UndefOr[Double] = js.undefined
   
-  var preservePosition: js.UndefOr[Boolean] = js.native
+  var preservePosition: js.UndefOr[Boolean] = js.undefined
   
-  var responsive: js.UndefOr[Responsive] = js.native
+  var responsive: js.UndefOr[Responsive] = js.undefined
   
-  var swipeDelta: js.UndefOr[Double] = js.native
+  var swipeDelta: js.UndefOr[Double] = js.undefined
   
-  var swipeExtraPadding: js.UndefOr[Double] = js.native
+  var swipeExtraPadding: js.UndefOr[Double] = js.undefined
   
-  var touchMoveDefaultEvents: js.UndefOr[Boolean] = js.native
+  var touchMoveDefaultEvents: js.UndefOr[Boolean] = js.undefined
   
-  var touchTracking: js.UndefOr[Boolean] = js.native
+  var touchTracking: js.UndefOr[Boolean] = js.undefined
 }
 object PartialProps {
   
@@ -206,7 +204,7 @@ object PartialProps {
     def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

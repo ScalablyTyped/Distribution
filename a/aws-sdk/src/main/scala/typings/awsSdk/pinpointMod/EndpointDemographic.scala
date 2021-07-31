@@ -2,51 +2,49 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointDemographic extends StObject {
   
   /**
     * The version of the app that's associated with the endpoint.
     */
-  var AppVersion: js.UndefOr[string] = js.native
+  var AppVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The locale of the endpoint, in the following format: the ISO 639-1 alpha-2 code, followed by an underscore (_), followed by an ISO 3166-1 alpha-2 value.
     */
-  var Locale: js.UndefOr[string] = js.native
+  var Locale: js.UndefOr[string] = js.undefined
   
   /**
     * The manufacturer of the endpoint device, such as apple or samsung.
     */
-  var Make: js.UndefOr[string] = js.native
+  var Make: js.UndefOr[string] = js.undefined
   
   /**
     * The model name or number of the endpoint device, such as iPhone or SM-G900F.
     */
-  var Model: js.UndefOr[string] = js.native
+  var Model: js.UndefOr[string] = js.undefined
   
   /**
     * The model version of the endpoint device.
     */
-  var ModelVersion: js.UndefOr[string] = js.native
+  var ModelVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The platform of the endpoint device, such as ios.
     */
-  var Platform: js.UndefOr[string] = js.native
+  var Platform: js.UndefOr[string] = js.undefined
   
   /**
     * The platform version of the endpoint device.
     */
-  var PlatformVersion: js.UndefOr[string] = js.native
+  var PlatformVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The time zone of the endpoint, specified as a tz database name value, such as America/Los_Angeles.
     */
-  var Timezone: js.UndefOr[string] = js.native
+  var Timezone: js.UndefOr[string] = js.undefined
 }
 object EndpointDemographic {
   

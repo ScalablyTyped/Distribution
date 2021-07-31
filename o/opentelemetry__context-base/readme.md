@@ -10,9 +10,9 @@ OpenTelemetry Base Context Manager
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/context-base |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats |
-| # releases         | 16 |
-| # dependents       | 7 |
-| # downloads        | 3582322 |
+| # releases         | 26 |
+| # dependents       | 8 |
+| # downloads        | 20130895 |
 | # stars            | 0 |
 
 ## Links

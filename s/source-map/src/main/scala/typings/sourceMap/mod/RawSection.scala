@@ -2,15 +2,13 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawSection extends StObject {
   
-  var map: RawSourceMap = js.native
+  var map: RawSourceMap
   
-  var offset: Position = js.native
+  var offset: Position
 }
 object RawSection {
   

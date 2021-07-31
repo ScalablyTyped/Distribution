@@ -4,24 +4,22 @@ import typings.std.ClassDecorator
 import typings.typeorm.optionsEntityOptionsMod.EntityOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityEntityMod {
   
-  @JSImport("typeorm/decorator/entity/Entity", "Entity")
+  @JSImport("typeorm/decorator/entity/Entity", JSImport.Namespace)
   @js.native
-  def Entity(): ClassDecorator = js.native
-  @JSImport("typeorm/decorator/entity/Entity", "Entity")
-  @js.native
-  def Entity(name: js.UndefOr[scala.Nothing], options: EntityOptions): ClassDecorator = js.native
-  @JSImport("typeorm/decorator/entity/Entity", "Entity")
-  @js.native
-  def Entity(name: String): ClassDecorator = js.native
-  @JSImport("typeorm/decorator/entity/Entity", "Entity")
-  @js.native
-  def Entity(name: String, options: EntityOptions): ClassDecorator = js.native
-  @JSImport("typeorm/decorator/entity/Entity", "Entity")
-  @js.native
-  def Entity(options: EntityOptions): ClassDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Entity(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")().asInstanceOf[ClassDecorator]
+  @scala.inline
+  def Entity(name: String): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  @scala.inline
+  def Entity(name: String, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
+  @scala.inline
+  def Entity(name: Unit, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
+  @scala.inline
+  def Entity(options: EntityOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

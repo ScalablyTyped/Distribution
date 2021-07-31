@@ -8,7 +8,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,24 +16,23 @@ object mod extends Shortcut {
   @js.native
   val default: LottiePlayer = js.native
   
-  @js.native
   trait AnimationConfig extends StObject {
     
-    var assetsPath: js.UndefOr[String] = js.native
+    var assetsPath: js.UndefOr[String] = js.undefined
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var container: Element = js.native
+    var container: Element
     
-    var initialSegment: js.UndefOr[AnimationSegment] = js.native
+    var initialSegment: js.UndefOr[AnimationSegment] = js.undefined
     
-    var loop: js.UndefOr[Boolean | Double] = js.native
+    var loop: js.UndefOr[Boolean | Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var renderer: js.UndefOr[svg | canvas | html] = js.native
+    var renderer: js.UndefOr[svg | canvas | html] = js.undefined
     
-    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.native
+    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.undefined
   }
   object AnimationConfig {
     
@@ -94,27 +92,11 @@ object mod extends Shortcut {
     }
   }
   
-  /* Inlined lottie-web.lottie-web.AnimationConfig & {  animationData :any | undefined} */
-  @js.native
-  trait AnimationConfigWithData extends StObject {
+  trait AnimationConfigWithData
+    extends StObject
+       with AnimationConfig {
     
-    var animationData: js.UndefOr[js.Any] = js.native
-    
-    var assetsPath: js.UndefOr[String] = js.native
-    
-    var autoplay: js.UndefOr[Boolean] = js.native
-    
-    var container: Element = js.native
-    
-    var initialSegment: js.UndefOr[AnimationSegment] = js.native
-    
-    var loop: js.UndefOr[Boolean | Double] = js.native
-    
-    var name: js.UndefOr[String] = js.native
-    
-    var renderer: js.UndefOr[svg | canvas | html] = js.native
-    
-    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.native
+    var animationData: js.UndefOr[js.Any] = js.undefined
   }
   object AnimationConfigWithData {
     
@@ -132,75 +114,14 @@ object mod extends Shortcut {
       
       @scala.inline
       def setAnimationDataUndefined: Self = StObject.set(x, "animationData", js.undefined)
-      
-      @scala.inline
-      def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
-      
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
-      
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialSegment(value: AnimationSegment): Self = StObject.set(x, "initialSegment", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialSegmentUndefined: Self = StObject.set(x, "initialSegment", js.undefined)
-      
-      @scala.inline
-      def setLoop(value: Boolean | Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      @scala.inline
-      def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
-      
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     }
   }
   
-  /* Inlined lottie-web.lottie-web.AnimationConfig & {  path :string | undefined} */
-  @js.native
-  trait AnimationConfigWithPath extends StObject {
+  trait AnimationConfigWithPath
+    extends StObject
+       with AnimationConfig {
     
-    var assetsPath: js.UndefOr[String] = js.native
-    
-    var autoplay: js.UndefOr[Boolean] = js.native
-    
-    var container: Element = js.native
-    
-    var initialSegment: js.UndefOr[AnimationSegment] = js.native
-    
-    var loop: js.UndefOr[Boolean | Double] = js.native
-    
-    var name: js.UndefOr[String] = js.native
-    
-    var path: js.UndefOr[String] = js.native
-    
-    var renderer: js.UndefOr[svg | canvas | html] = js.native
-    
-    var rendererSettings: js.UndefOr[SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object AnimationConfigWithPath {
     
@@ -214,55 +135,10 @@ object mod extends Shortcut {
     implicit class AnimationConfigWithPathMutableBuilder[Self <: AnimationConfigWithPath] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAssetsPath(value: String): Self = StObject.set(x, "assetsPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAssetsPathUndefined: Self = StObject.set(x, "assetsPath", js.undefined)
-      
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
-      
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialSegment(value: AnimationSegment): Self = StObject.set(x, "initialSegment", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialSegmentUndefined: Self = StObject.set(x, "initialSegment", js.undefined)
-      
-      @scala.inline
-      def setLoop(value: Boolean | Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      @scala.inline
       def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      @scala.inline
-      def setRenderer(value: svg | canvas | html): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRendererSettings(value: SVGRendererConfig | CanvasRendererConfig | HTMLRendererConfig): Self = StObject.set(x, "rendererSettings", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRendererSettingsUndefined: Self = StObject.set(x, "rendererSettings", js.undefined)
-      
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     }
   }
   
@@ -360,14 +236,14 @@ object mod extends Shortcut {
     def getDuration(inFrames: Boolean): Double = js.native
     
     def goToAndPlay(value: Double): Unit = js.native
-    def goToAndPlay(value: Double, isFrame: js.UndefOr[scala.Nothing], name: String): Unit = js.native
     def goToAndPlay(value: Double, isFrame: Boolean): Unit = js.native
     def goToAndPlay(value: Double, isFrame: Boolean, name: String): Unit = js.native
+    def goToAndPlay(value: Double, isFrame: Unit, name: String): Unit = js.native
     
     def goToAndStop(value: Double): Unit = js.native
-    def goToAndStop(value: Double, isFrame: js.UndefOr[scala.Nothing], name: String): Unit = js.native
     def goToAndStop(value: Double, isFrame: Boolean): Unit = js.native
     def goToAndStop(value: Double, isFrame: Boolean, name: String): Unit = js.native
+    def goToAndStop(value: Double, isFrame: Unit, name: String): Unit = js.native
     
     def hide(): Unit = js.native
     
@@ -438,12 +314,11 @@ object mod extends Shortcut {
   
   type AnimationSegment = js.Tuple2[Double, Double]
   
-  @js.native
   trait BaseRendererConfig extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var imagePreserveAspectRatio: js.UndefOr[String] = js.native
+    var imagePreserveAspectRatio: js.UndefOr[String] = js.undefined
   }
   object BaseRendererConfig {
     
@@ -470,21 +345,17 @@ object mod extends Shortcut {
     }
   }
   
-  /* Inlined lottie-web.lottie-web.BaseRendererConfig & {  clearCanvas :boolean | undefined,   context :std.CanvasRenderingContext2D | undefined,   progressiveLoad :boolean | undefined,   preserveAspectRatio :string | undefined} */
-  @js.native
-  trait CanvasRendererConfig extends StObject {
+  trait CanvasRendererConfig
+    extends StObject
+       with BaseRendererConfig {
     
-    var className: js.UndefOr[String] = js.native
+    var clearCanvas: js.UndefOr[Boolean] = js.undefined
     
-    var clearCanvas: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
     
-    var context: js.UndefOr[CanvasRenderingContext2D] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var imagePreserveAspectRatio: js.UndefOr[String] = js.native
-    
-    var preserveAspectRatio: js.UndefOr[String] = js.native
-    
-    var progressiveLoad: js.UndefOr[Boolean] = js.native
+    var progressiveLoad: js.UndefOr[Boolean] = js.undefined
   }
   object CanvasRendererConfig {
     
@@ -498,12 +369,6 @@ object mod extends Shortcut {
     implicit class CanvasRendererConfigMutableBuilder[Self <: CanvasRendererConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      @scala.inline
       def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -514,12 +379,6 @@ object mod extends Shortcut {
       
       @scala.inline
       def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
-      
-      @scala.inline
-      def setImagePreserveAspectRatio(value: String): Self = StObject.set(x, "imagePreserveAspectRatio", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setImagePreserveAspectRatioUndefined: Self = StObject.set(x, "imagePreserveAspectRatio", js.undefined)
       
       @scala.inline
       def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
@@ -535,16 +394,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait FilterSizeConfig extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var width: String = js.native
+    var width: String
     
-    var x: String = js.native
+    var x: String
     
-    var y: String = js.native
+    var y: String
   }
   object FilterSizeConfig {
     
@@ -571,15 +429,11 @@ object mod extends Shortcut {
     }
   }
   
-  /* Inlined lottie-web.lottie-web.BaseRendererConfig & {  hideOnTransparent :boolean | undefined} */
-  @js.native
-  trait HTMLRendererConfig extends StObject {
+  trait HTMLRendererConfig
+    extends StObject
+       with BaseRendererConfig {
     
-    var className: js.UndefOr[String] = js.native
-    
-    var hideOnTransparent: js.UndefOr[Boolean] = js.native
-    
-    var imagePreserveAspectRatio: js.UndefOr[String] = js.native
+    var hideOnTransparent: js.UndefOr[Boolean] = js.undefined
   }
   object HTMLRendererConfig {
     
@@ -593,22 +447,10 @@ object mod extends Shortcut {
     implicit class HTMLRendererConfigMutableBuilder[Self <: HTMLRendererConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      @scala.inline
       def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
-      
-      @scala.inline
-      def setImagePreserveAspectRatio(value: String): Self = StObject.set(x, "imagePreserveAspectRatio", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setImagePreserveAspectRatioUndefined: Self = StObject.set(x, "imagePreserveAspectRatio", js.undefined)
     }
   }
   
@@ -631,13 +473,13 @@ object mod extends Shortcut {
     def registerAnimation(element: Element, animationData: js.Any): Unit = js.native
     
     def searchAnimations(): Unit = js.native
-    def searchAnimations(animationData: js.UndefOr[scala.Nothing], standalone: js.UndefOr[scala.Nothing], renderer: String): Unit = js.native
-    def searchAnimations(animationData: js.UndefOr[scala.Nothing], standalone: Boolean): Unit = js.native
-    def searchAnimations(animationData: js.UndefOr[scala.Nothing], standalone: Boolean, renderer: String): Unit = js.native
     def searchAnimations(animationData: js.Any): Unit = js.native
-    def searchAnimations(animationData: js.Any, standalone: js.UndefOr[scala.Nothing], renderer: String): Unit = js.native
     def searchAnimations(animationData: js.Any, standalone: Boolean): Unit = js.native
     def searchAnimations(animationData: js.Any, standalone: Boolean, renderer: String): Unit = js.native
+    def searchAnimations(animationData: js.Any, standalone: Unit, renderer: String): Unit = js.native
+    def searchAnimations(animationData: Unit, standalone: Boolean): Unit = js.native
+    def searchAnimations(animationData: Unit, standalone: Boolean, renderer: String): Unit = js.native
+    def searchAnimations(animationData: Unit, standalone: Unit, renderer: String): Unit = js.native
     
     def setDirection(direction: AnimationDirection): Unit = js.native
     def setDirection(direction: AnimationDirection, name: String): Unit = js.native
@@ -654,31 +496,27 @@ object mod extends Shortcut {
     def stop(name: String): Unit = js.native
   }
   
-  /* Inlined lottie-web.lottie-web.BaseRendererConfig & {  title :string | undefined,   description :string | undefined,   preserveAspectRatio :string | undefined,   progressiveLoad :boolean | undefined,   hideOnTransparent :boolean | undefined,   viewBoxOnly :boolean | undefined,   viewBoxSize :string | undefined,   focusable :boolean | undefined,   filterSize :lottie-web.lottie-web.FilterSizeConfig | undefined} */
-  @js.native
-  trait SVGRendererConfig extends StObject {
+  trait SVGRendererConfig
+    extends StObject
+       with BaseRendererConfig {
     
-    var className: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var filterSize: js.UndefOr[FilterSizeConfig] = js.undefined
     
-    var filterSize: js.UndefOr[FilterSizeConfig] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var hideOnTransparent: js.UndefOr[Boolean] = js.undefined
     
-    var hideOnTransparent: js.UndefOr[Boolean] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
-    var imagePreserveAspectRatio: js.UndefOr[String] = js.native
+    var progressiveLoad: js.UndefOr[Boolean] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var progressiveLoad: js.UndefOr[Boolean] = js.native
+    var viewBoxOnly: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
-    
-    var viewBoxOnly: js.UndefOr[Boolean] = js.native
-    
-    var viewBoxSize: js.UndefOr[String] = js.native
+    var viewBoxSize: js.UndefOr[String] = js.undefined
   }
   object SVGRendererConfig {
     
@@ -690,12 +528,6 @@ object mod extends Shortcut {
     
     @scala.inline
     implicit class SVGRendererConfigMutableBuilder[Self <: SVGRendererConfig] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
       def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -720,12 +552,6 @@ object mod extends Shortcut {
       
       @scala.inline
       def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
-      
-      @scala.inline
-      def setImagePreserveAspectRatio(value: String): Self = StObject.set(x, "imagePreserveAspectRatio", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setImagePreserveAspectRatioUndefined: Self = StObject.set(x, "imagePreserveAspectRatio", js.undefined)
       
       @scala.inline
       def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])

@@ -8,7 +8,6 @@ import typings.html5plus.html5plusStrings.mono
 import typings.html5plus.html5plusStrings.stereo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
   */
-@js.native
 trait PlusAudioRecordOptions extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait PlusAudioRecordOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
-  var channels: js.UndefOr[mono | stereo] = js.native
+  var channels: js.UndefOr[mono | stereo] = js.undefined
   
   /**
     * 保存录音文件的路径
@@ -43,7 +41,7 @@ trait PlusAudioRecordOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
-  var filename: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.native
+  var filename: js.UndefOr[_wwwSlash | _docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   
   /**
     * 录音文件的格式
@@ -51,7 +49,7 @@ trait PlusAudioRecordOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * 录音文件的采样率
@@ -59,7 +57,7 @@ trait PlusAudioRecordOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
-  var samplerate: js.UndefOr[String] = js.native
+  var samplerate: js.UndefOr[String] = js.undefined
 }
 object PlusAudioRecordOptions {
   

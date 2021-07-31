@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apnsSandboxChannelMod {
@@ -76,6 +75,10 @@ object apnsSandboxChannelMod {
   /* static members */
   object ApnsSandboxChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ApnsSandboxChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -85,45 +88,39 @@ object apnsSandboxChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ApnsSandboxChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApnsSandboxChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApnsSandboxChannelState): ApnsSandboxChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApnsSandboxChannelState, opts: CustomResourceOptions): ApnsSandboxChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ApnsSandboxChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApnsSandboxChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApnsSandboxChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsSandboxChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApnsSandboxChannelState): ApnsSandboxChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApnsSandboxChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApnsSandboxChannelState, opts: CustomResourceOptions): ApnsSandboxChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsSandboxChannel]
     
     /**
       * Returns true if the given object is an instance of ApnsSandboxChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/apnsSandboxChannel", "ApnsSandboxChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsSandboxChannel.ApnsSandboxChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsSandboxChannel.ApnsSandboxChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/apnsSandboxChannel.ApnsSandboxChannel */ Boolean]
   }
   
-  @js.native
   trait ApnsSandboxChannelArgs extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * The ID assigned to your iOS app. To find this value, choose Certificates, IDs & Profiles, choose App IDs in the Identifiers section, and choose your app.
       */
-    val bundleId: js.UndefOr[Input[String]] = js.native
+    val bundleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The pem encoded TLS Certificate from Apple.
       */
-    val certificate: js.UndefOr[Input[String]] = js.native
+    val certificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default authentication method used for APNs Sandbox.
@@ -131,32 +128,32 @@ object apnsSandboxChannelMod {
       * You can override the default when you send a message programmatically using the Amazon Pinpoint API, the AWS CLI, or an AWS SDK.
       * If your default authentication type fails, Amazon Pinpoint doesn't attempt to use the other authentication type.
       */
-    val defaultAuthenticationMethod: js.UndefOr[Input[String]] = js.native
+    val defaultAuthenticationMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Certificate Private Key file (ie. `.key` file).
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID assigned to your Apple developer account team. This value is provided on the Membership page.
       */
-    val teamId: js.UndefOr[Input[String]] = js.native
+    val teamId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The `.p8` file that you download from your Apple developer account when you create an authentication key.
       */
-    val tokenKey: js.UndefOr[Input[String]] = js.native
+    val tokenKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID assigned to your signing key. To find this value, choose Certificates, IDs & Profiles, and choose your key in the Keys section.
       */
-    val tokenKeyId: js.UndefOr[Input[String]] = js.native
+    val tokenKeyId: js.UndefOr[Input[String]] = js.undefined
   }
   object ApnsSandboxChannelArgs {
     
@@ -222,23 +219,22 @@ object apnsSandboxChannelMod {
     }
   }
   
-  @js.native
   trait ApnsSandboxChannelState extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID assigned to your iOS app. To find this value, choose Certificates, IDs & Profiles, choose App IDs in the Identifiers section, and choose your app.
       */
-    val bundleId: js.UndefOr[Input[String]] = js.native
+    val bundleId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The pem encoded TLS Certificate from Apple.
       */
-    val certificate: js.UndefOr[Input[String]] = js.native
+    val certificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The default authentication method used for APNs Sandbox.
@@ -246,32 +242,32 @@ object apnsSandboxChannelMod {
       * You can override the default when you send a message programmatically using the Amazon Pinpoint API, the AWS CLI, or an AWS SDK.
       * If your default authentication type fails, Amazon Pinpoint doesn't attempt to use the other authentication type.
       */
-    val defaultAuthenticationMethod: js.UndefOr[Input[String]] = js.native
+    val defaultAuthenticationMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the channel is enabled or disabled. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Certificate Private Key file (ie. `.key` file).
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID assigned to your Apple developer account team. This value is provided on the Membership page.
       */
-    val teamId: js.UndefOr[Input[String]] = js.native
+    val teamId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The `.p8` file that you download from your Apple developer account when you create an authentication key.
       */
-    val tokenKey: js.UndefOr[Input[String]] = js.native
+    val tokenKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID assigned to your signing key. To find this value, choose Certificates, IDs & Profiles, and choose your key in the Keys section.
       */
-    val tokenKeyId: js.UndefOr[Input[String]] = js.native
+    val tokenKeyId: js.UndefOr[Input[String]] = js.undefined
   }
   object ApnsSandboxChannelState {
     

@@ -3,46 +3,44 @@ package typings.umbraco.umbraco.services
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Rendering options
   */
-@js.native
 trait IDialogRenderingOptions extends StObject {
   
   /*animation css class, by default set to "fade"*/
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
   /*function called when the modal is submitted*/
-  var callback: js.Function = js.native
+  var callback: js.Function
   
   /*the DOM element to inject the modal into, by default set to body*/
-  var container: js.UndefOr[HTMLElement] = js.native
+  var container: js.UndefOr[HTMLElement] = js.undefined
   
   /** 
     * It will set this value as a property on the dialog controller's scope as $scope.dialogData
     */
-  var dialogData: js.UndefOr[js.Any] = js.native
+  var dialogData: js.UndefOr[js.Any] = js.undefined
   
   /*load template in an iframe, only needed for serverside templates*/
-  var iframe: Boolean = js.native
+  var iframe: Boolean
   
   /*strips the modal from any animation and wrappers, used when you want to inject a dialog into an existing container*/
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
   /*modal css class, by default "umb-modal"*/
-  var modalClass: js.UndefOr[String] = js.native
+  var modalClass: js.UndefOr[String] = js.undefined
   
   /*show the modal instantly*/
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   /*the url of the template*/
-  var template: String = js.native
+  var template: String
   
   /*set a width on the modal, only needed for iframes*/
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IDialogRenderingOptions {
   

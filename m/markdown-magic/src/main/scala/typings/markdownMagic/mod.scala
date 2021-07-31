@@ -4,60 +4,54 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: String, config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: js.Array[String], config: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: js.Array[String], config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(path: js.Array[String], config: Configuration, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], config.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("markdown-magic", JSImport.Namespace)
   @js.native
-  def apply(path: String): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: String, config: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: String, config: Configuration): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: String, config: Configuration, callback: Callback): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: js.Array[String]): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: js.Array[String], config: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: js.Array[String], config: Configuration): Unit = js.native
-  @JSImport("markdown-magic", JSImport.Namespace)
-  @js.native
-  def apply(path: js.Array[String], config: Configuration, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* error */ js.UndefOr[Error], /* output */ js.Array[ProcessedConfig], Unit]
   
-  @js.native
   trait Configuration extends StObject {
     
     /**
       * set debug flag to true to inspect the process
       */
-    var DEBUG: js.UndefOr[Boolean] = js.native
+    var DEBUG: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Comment pattern to look for & replace inner contents. Default AUTO-GENERATED-CONTENT
       */
-    var matchWord: js.UndefOr[String] = js.native
+    var matchWord: js.UndefOr[String] = js.undefined
     
     /**
       * Change output path of new content. Default behavior is replacing the original file
       */
-    var outputDir: js.UndefOr[String] = js.native
+    var outputDir: js.UndefOr[String] = js.undefined
     
     /**
       * Custom commands to transform block contents, see transforms & custom transforms sections below.
       */
-    var transforms: js.UndefOr[StringDictionary[TransformFunction]] = js.native
+    var transforms: js.UndefOr[StringDictionary[TransformFunction]] = js.undefined
   }
   object Configuration {
     
@@ -96,17 +90,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait ProcessedConfig extends Configuration {
+  trait ProcessedConfig
+    extends StObject
+       with Configuration {
     
-    val originalPath: String = js.native
+    val originalPath: String
     
-    val outputContent: String = js.native
+    val outputContent: String
     
     @JSName("outputDir")
-    val outputDir_ProcessedConfig: String = js.native
+    val outputDir_ProcessedConfig: String
     
-    val outputFilePath: String = js.native
+    val outputFilePath: String
   }
   object ProcessedConfig {
     

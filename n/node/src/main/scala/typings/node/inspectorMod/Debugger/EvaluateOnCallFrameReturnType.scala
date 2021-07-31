@@ -4,21 +4,19 @@ import typings.node.inspectorMod.Runtime.ExceptionDetails
 import typings.node.inspectorMod.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateOnCallFrameReturnType extends StObject {
   
   /**
     * Exception details.
     */
-  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.native
+  var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
   
   /**
     * Object wrapper for the evaluation result.
     */
-  var result: RemoteObject = js.native
+  var result: RemoteObject
 }
 object EvaluateOnCallFrameReturnType {
   

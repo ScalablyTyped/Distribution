@@ -2,44 +2,42 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calls extends StObject {
   
   /** By chaining the spy with calls.all(), will return the context (the this) and arguments passed all calls **/
-  def all(): js.Array[CallInfo] = js.native
+  def all(): js.Array[CallInfo]
   
   /** By chaining the spy with calls.allArgs(), will return the arguments to all calls **/
-  def allArgs(): js.Array[_] = js.native
+  def allArgs(): js.Array[js.Any]
   
   /** By chaining the spy with calls.any(), will return false if the spy has not been called at all, and then true once at least one call happens. **/
-  def any(): Boolean = js.native
+  def any(): Boolean
   
   /** By chaining the spy with calls.argsFor(), will return the arguments passed to call number index **/
-  def argsFor(index: Double): js.Array[_] = js.native
+  def argsFor(index: Double): js.Array[js.Any]
   
   /** By chaining the spy with calls.count(), will return the number of times the spy was called **/
-  def count(): Double = js.native
+  def count(): Double
   
   /** By chaining the spy with calls.first(), will return the context (the this) and arguments for the first call **/
-  def first(): CallInfo = js.native
+  def first(): CallInfo
   
   /** By chaining the spy with calls.mostRecent(), will return the context (the this) and arguments for the most recent call **/
-  def mostRecent(): CallInfo = js.native
+  def mostRecent(): CallInfo
   
   /** By chaining the spy with calls.reset(), will clears all tracking for a spy **/
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object Calls {
   
   @scala.inline
   def apply(
     all: () => js.Array[CallInfo],
-    allArgs: () => js.Array[_],
+    allArgs: () => js.Array[js.Any],
     any: () => Boolean,
-    argsFor: Double => js.Array[_],
+    argsFor: Double => js.Array[js.Any],
     count: () => Double,
     first: () => CallInfo,
     mostRecent: () => CallInfo,
@@ -56,13 +54,13 @@ object Calls {
     def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setAllArgs(value: () => js.Array[_]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
+    def setAllArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setArgsFor(value: Double => js.Array[_]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
+    def setArgsFor(value: Double => js.Array[js.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))

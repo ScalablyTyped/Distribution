@@ -2,44 +2,42 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationBehavior extends StObject {
   
-  var Accumulate: MsoAnimAccumulate = js.native
+  var Accumulate: MsoAnimAccumulate
   
-  var Additive: MsoAnimAdditive = js.native
+  var Additive: MsoAnimAdditive
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val ColorEffect: typings.activexPowerpoint.PowerPoint.ColorEffect = js.native
+  val ColorEffect: typings.activexPowerpoint.PowerPoint.ColorEffect
   
-  val CommandEffect: typings.activexPowerpoint.PowerPoint.CommandEffect = js.native
+  val CommandEffect: typings.activexPowerpoint.PowerPoint.CommandEffect
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val FilterEffect: typings.activexPowerpoint.PowerPoint.FilterEffect = js.native
+  val FilterEffect: typings.activexPowerpoint.PowerPoint.FilterEffect
   
-  val MotionEffect: typings.activexPowerpoint.PowerPoint.MotionEffect = js.native
+  val MotionEffect: typings.activexPowerpoint.PowerPoint.MotionEffect
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.AnimationBehavior_typekey")
-  var PowerPointDotAnimationBehavior_typekey: AnimationBehavior = js.native
+  var PowerPointDotAnimationBehavior_typekey: AnimationBehavior
   
-  val PropertyEffect: typings.activexPowerpoint.PowerPoint.PropertyEffect = js.native
+  val PropertyEffect: typings.activexPowerpoint.PowerPoint.PropertyEffect
   
-  val RotationEffect: typings.activexPowerpoint.PowerPoint.RotationEffect = js.native
+  val RotationEffect: typings.activexPowerpoint.PowerPoint.RotationEffect
   
-  val ScaleEffect: typings.activexPowerpoint.PowerPoint.ScaleEffect = js.native
+  val ScaleEffect: typings.activexPowerpoint.PowerPoint.ScaleEffect
   
-  val SetEffect: typings.activexPowerpoint.PowerPoint.SetEffect = js.native
+  val SetEffect: typings.activexPowerpoint.PowerPoint.SetEffect
   
-  val Timing: typings.activexPowerpoint.PowerPoint.Timing = js.native
+  val Timing: typings.activexPowerpoint.PowerPoint.Timing
   
-  var Type: MsoAnimType = js.native
+  var Type: MsoAnimType
 }
 object AnimationBehavior {
   

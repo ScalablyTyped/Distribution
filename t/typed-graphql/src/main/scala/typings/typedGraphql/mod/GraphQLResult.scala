@@ -2,15 +2,13 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLResult extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var errors: js.UndefOr[js.Array[GraphQLError]] = js.native
+  var errors: js.UndefOr[js.Array[GraphQLError]] = js.undefined
 }
 object GraphQLResult {
   

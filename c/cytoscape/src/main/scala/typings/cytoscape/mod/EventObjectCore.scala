@@ -3,14 +3,14 @@ package typings.cytoscape.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventObjectCore extends EventObject {
+trait EventObjectCore
+  extends StObject
+     with EventObject {
   
   @JSName("target")
-  var target_EventObjectCore: Core = js.native
+  var target_EventObjectCore: Core
 }
 object EventObjectCore {
   

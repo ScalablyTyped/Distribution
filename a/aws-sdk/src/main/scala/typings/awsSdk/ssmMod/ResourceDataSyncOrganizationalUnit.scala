@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncOrganizationalUnit extends StObject {
   
   /**
     * The AWS Organization unit ID data source for the sync.
     */
-  var OrganizationalUnitId: js.UndefOr[ResourceDataSyncOrganizationalUnitId] = js.native
+  var OrganizationalUnitId: js.UndefOr[ResourceDataSyncOrganizationalUnitId] = js.undefined
 }
 object ResourceDataSyncOrganizationalUnit {
   

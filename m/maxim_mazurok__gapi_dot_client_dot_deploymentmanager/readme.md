@@ -10,9 +10,9 @@ TypeScript typings for Cloud Deployment Manager V2 API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.deploymentmanager |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 1146 |
 | # stars            | 0 |
 
 ## Links

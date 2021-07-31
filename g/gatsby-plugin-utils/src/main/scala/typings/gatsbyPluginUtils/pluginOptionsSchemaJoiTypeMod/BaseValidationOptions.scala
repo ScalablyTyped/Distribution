@@ -8,10 +8,8 @@ import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.time
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsStrings.utc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseValidationOptions extends StObject {
   
   /**
@@ -19,87 +17,87 @@ trait BaseValidationOptions extends StObject {
     *
     * @default true
     */
-  var abortEarly: js.UndefOr[Boolean] = js.native
+  var abortEarly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, allows object to contain unknown keys which are ignored.
     *
     * @default false
     */
-  var allowUnknown: js.UndefOr[Boolean] = js.native
+  var allowUnknown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, schema caching is enabled (for schemas with explicit caching rules).
     *
     * @default false
     */
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * provides an external data set to be used in references
     */
-  var context: js.UndefOr[Context] = js.native
+  var context: js.UndefOr[Context] = js.undefined
   
   /**
     * when true, attempts to cast values to the required types (e.g. a string to a number).
     *
     * @default true
     */
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the string format used when converting dates to strings in error messages and casting.
     *
     * @default 'iso'
     */
-  var dateFormat: js.UndefOr[date | iso | string | time | utc] = js.native
+  var dateFormat: js.UndefOr[date | iso | string | time | utc] = js.undefined
   
   /**
     * when true, valid results and throw errors are decorated with a debug property which includes an array of the validation steps used to generate the returned result.
     *
     * @default false
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * error formatting settings.
     */
-  var errors: js.UndefOr[ErrorFormattingOptions] = js.native
+  var errors: js.UndefOr[ErrorFormattingOptions] = js.undefined
   
   /**
     * if false, the external rules set with `any.external()` are ignored, which is required to ignore any external validations in synchronous mode (or an exception is thrown).
     *
     * @default true
     */
-  var externals: js.UndefOr[Boolean] = js.native
+  var externals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, do not apply default values.
     *
     * @default false
     */
-  var noDefaults: js.UndefOr[Boolean] = js.native
+  var noDefaults: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, inputs are shallow cloned to include non-enumerables properties.
     *
     * @default false
     */
-  var nonEnumerables: js.UndefOr[Boolean] = js.native
+  var nonEnumerables: js.UndefOr[Boolean] = js.undefined
   
   /**
     * sets the default presence requirements. Supported modes: 'optional', 'required', and 'forbidden'.
     *
     * @default 'optional'
     */
-  var presence: js.UndefOr[PresenceMode] = js.native
+  var presence: js.UndefOr[PresenceMode] = js.undefined
   
   /**
     * when true, ignores unknown keys with a function value.
     *
     * @default false
     */
-  var skipFunctions: js.UndefOr[Boolean] = js.native
+  var skipFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * remove unknown elements from objects and arrays.
@@ -109,7 +107,7 @@ trait BaseValidationOptions extends StObject {
     *
     * @default false
     */
-  var stripUnknown: js.UndefOr[Boolean | Arrays] = js.native
+  var stripUnknown: js.UndefOr[Boolean | Arrays] = js.undefined
 }
 object BaseValidationOptions {
   

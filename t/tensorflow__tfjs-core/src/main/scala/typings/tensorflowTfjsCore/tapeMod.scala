@@ -7,40 +7,40 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tapeMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/tape", "backpropagateGradients")
+  @JSImport("@tensorflow/tfjs-core/dist/tape", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def backpropagateGradients(
     tensorAccumulatedGradientMap: NumberDictionary[Tensor[Rank]],
     filteredTape: js.Array[TapeNode],
     tidy: js.Function1[/* f */ js.Function, Tensor[Rank]],
     add: js.Function2[/* a */ Tensor[Rank], /* b */ Tensor[Rank], Tensor[Rank]]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("backpropagateGradients")(tensorAccumulatedGradientMap.asInstanceOf[js.Any], filteredTape.asInstanceOf[js.Any], tidy.asInstanceOf[js.Any], add.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/tape", "getFilteredNodesXToY")
-  @js.native
-  def getFilteredNodesXToY(tape: js.Array[TapeNode], xs: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Array[TapeNode] = js.native
+  @scala.inline
+  def getFilteredNodesXToY(tape: js.Array[TapeNode], xs: js.Array[Tensor[Rank]], y: Tensor[Rank]): js.Array[TapeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFilteredNodesXToY")(tape.asInstanceOf[js.Any], xs.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[TapeNode]]
   
   type NamedGradientMap = StringDictionary[js.Function0[Tensor[Rank]]]
   
-  @js.native
   trait TapeNode extends StObject {
     
-    var gradient: js.UndefOr[js.Function1[/* dys */ js.Array[Tensor[Rank]], NamedGradientMap]] = js.native
+    var gradient: js.UndefOr[js.Function1[/* dys */ js.Array[Tensor[Rank]], NamedGradientMap]] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var inputs: NamedTensorMap = js.native
+    var inputs: NamedTensorMap
     
-    var kernelName: String = js.native
+    var kernelName: String
     
-    var outputs: js.Array[Tensor[Rank]] = js.native
+    var outputs: js.Array[Tensor[Rank]]
     
-    var saved: js.UndefOr[js.Array[Tensor[Rank]]] = js.native
+    var saved: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
   }
   object TapeNode {
     

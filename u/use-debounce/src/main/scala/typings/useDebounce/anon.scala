@@ -2,21 +2,19 @@ package typings.useDebounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EqualityFn[T] extends StObject {
     
-    var equalityFn: js.UndefOr[js.Function2[/* left */ T, /* right */ T, Boolean]] = js.native
+    var equalityFn: js.UndefOr[js.Function2[/* left */ T, /* right */ T, Boolean]] = js.undefined
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object EqualityFn {
     
@@ -27,7 +25,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EqualityFnMutableBuilder[Self <: EqualityFn[_], T] (val x: Self with EqualityFn[T]) extends AnyVal {
+    implicit class EqualityFnMutableBuilder[Self <: EqualityFn[?], T] (val x: Self & EqualityFn[T]) extends AnyVal {
       
       @scala.inline
       def setEqualityFn(value: (/* left */ T, /* right */ T) => Boolean): Self = StObject.set(x, "equalityFn", js.Any.fromFunction2(value))

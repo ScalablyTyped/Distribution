@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceClaimsSearch extends StandardParameters {
+trait ParamsResourceClaimsSearch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". Can be used to
     * restrict results by language, though we do not currently consider the
     * region.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum age of the returned search results, in days. Age is
     * determined by either claim date or review date, whichever is newer.
     */
-  var maxAgeDays: js.UndefOr[Double] = js.native
+  var maxAgeDays: js.UndefOr[Double] = js.undefined
   
   /**
     * An integer that specifies the current offset (that is, starting result
@@ -37,31 +37,31 @@ trait ParamsResourceClaimsSearch extends StandardParameters {
     * from the first matching result, and 10 means to return from the 11th
     * result.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The pagination size. We will return up to that many results. Defaults to
     * 10 if not set.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The pagination token. You may provide the `next_page_token` returned from
     * a previous List request, if any, in order to get the next page. All other
     * fields must have the same values as in the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Textual query string. Required unless `review_publisher_site_filter` is
     * specified.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * The review publisher site to filter results by, e.g. nytimes.com.
     */
-  var reviewPublisherSiteFilter: js.UndefOr[String] = js.native
+  var reviewPublisherSiteFilter: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceClaimsSearch {
   

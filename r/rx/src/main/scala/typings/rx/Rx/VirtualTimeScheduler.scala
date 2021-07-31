@@ -3,11 +3,12 @@ package typings.rx.Rx
 import typings.rx.Rx.internals.ScheduledItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VirtualTimeScheduler[TAbsolute, TRelative] extends IScheduler {
+trait VirtualTimeScheduler[TAbsolute, TRelative]
+  extends StObject
+     with IScheduler {
   
   /**
     * Adds a relative time value to an absolute time value.

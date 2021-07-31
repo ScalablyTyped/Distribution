@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.MedicationAdministration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyMedicationAdministration extends StObject {
   
-  var body: MedicationAdministration = js.native
+  var body: MedicationAdministration
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration
 }
 object BodyMedicationAdministration {
   
   @scala.inline
-  def apply(
-    body: MedicationAdministration,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.MedicationAdministration
-  ): BodyMedicationAdministration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: MedicationAdministration): BodyMedicationAdministration = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "MedicationAdministration")
     __obj.asInstanceOf[BodyMedicationAdministration]
   }
   

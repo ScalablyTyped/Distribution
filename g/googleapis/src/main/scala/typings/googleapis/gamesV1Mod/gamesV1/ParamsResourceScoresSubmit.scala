@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceScoresSubmit extends StandardParameters {
+trait ParamsResourceScoresSubmit
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The preferred language to use for strings returned by this method.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the leaderboard.
     */
-  var leaderboardId: js.UndefOr[String] = js.native
+  var leaderboardId: js.UndefOr[String] = js.undefined
   
   /**
     * The score you're submitting. The submitted score is ignored if it is
@@ -35,14 +35,14 @@ trait ParamsResourceScoresSubmit extends StandardParameters {
     * value. For time, the score represents elapsed time in milliseconds. For
     * currency, the score represents a value in micro units.
     */
-  var score: js.UndefOr[String] = js.native
+  var score: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information about the score you're submitting. Values must
     * contain no more than 64 URI-safe characters as defined by section 2.3 of
     * RFC 3986.
     */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceScoresSubmit {
   

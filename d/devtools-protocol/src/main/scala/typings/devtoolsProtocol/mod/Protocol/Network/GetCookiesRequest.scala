@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCookiesRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GetCookiesRequest extends StObject {
     * If not specified, it's assumed to be set to the list containing
     * the URLs of the page and all of its subframes.
     */
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GetCookiesRequest {
   

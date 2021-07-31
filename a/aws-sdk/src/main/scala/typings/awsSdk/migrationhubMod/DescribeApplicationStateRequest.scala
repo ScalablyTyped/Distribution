@@ -2,16 +2,14 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicationStateRequest extends StObject {
   
   /**
     * The configurationId in Application Discovery Service that uniquely identifies the grouped application.
     */
-  var ApplicationId: typings.awsSdk.migrationhubMod.ApplicationId = js.native
+  var ApplicationId: typings.awsSdk.migrationhubMod.ApplicationId
 }
 object DescribeApplicationStateRequest {
   

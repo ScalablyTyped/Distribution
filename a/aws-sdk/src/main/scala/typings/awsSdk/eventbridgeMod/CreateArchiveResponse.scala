@@ -2,31 +2,29 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateArchiveResponse extends StObject {
   
   /**
     * The ARN of the archive that was created.
     */
-  var ArchiveArn: js.UndefOr[typings.awsSdk.eventbridgeMod.ArchiveArn] = js.native
+  var ArchiveArn: js.UndefOr[typings.awsSdk.eventbridgeMod.ArchiveArn] = js.undefined
   
   /**
     * The time at which the archive was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state of the archive that was created.
     */
-  var State: js.UndefOr[ArchiveState] = js.native
+  var State: js.UndefOr[ArchiveState] = js.undefined
   
   /**
     * The reason that the archive is in the state.
     */
-  var StateReason: js.UndefOr[ArchiveStateReason] = js.native
+  var StateReason: js.UndefOr[ArchiveStateReason] = js.undefined
 }
 object CreateArchiveResponse {
   

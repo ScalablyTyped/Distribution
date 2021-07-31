@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AddChartRequest instead and specify EmbeddedObjectPosition.sheetId or
   * EmbeddedObjectPosition.newSheet.
   */
-@js.native
 trait SchemaAddSheetRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaAddSheetRequest extends StObject {
     * generated. (It is an error to specify the ID of a sheet that already
     * exists.)
     */
-  var properties: js.UndefOr[SchemaSheetProperties] = js.native
+  var properties: js.UndefOr[SchemaSheetProperties] = js.undefined
 }
 object SchemaAddSheetRequest {
   

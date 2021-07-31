@@ -6,25 +6,23 @@ import typings.popperjsCore.typesMod.Rect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adaptive extends StObject {
   
-  var adaptive: Boolean = js.native
+  var adaptive: Boolean
   
-  var gpuAcceleration: Boolean = js.native
+  var gpuAcceleration: Boolean
   
-  var offsets: Partialxnumberynumbercent = js.native
+  var offsets: Partialxnumberynumbercent
   
-  var placement: BasePlacement = js.native
+  var placement: BasePlacement
   
-  var popper: HTMLElement = js.native
+  var popper: HTMLElement
   
-  var popperRect: Rect = js.native
+  var popperRect: Rect
   
-  var position: PositioningStrategy = js.native
+  var position: PositioningStrategy
 }
 object Adaptive {
   

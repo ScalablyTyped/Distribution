@@ -3,38 +3,36 @@ package typings.awsSdkClientXrayNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSamplingTargetDocumentMod {
   
-  @js.native
   trait SamplingTargetDocument extends StObject {
     
     /**
       * <p>The percentage of matching requests to instrument, after the reservoir is exhausted.</p>
       */
-    var FixedRate: js.UndefOr[Double] = js.native
+    var FixedRate: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The number of seconds for the service to wait before getting sampling targets again.</p>
       */
-    var Interval: js.UndefOr[Double] = js.native
+    var Interval: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The number of requests per second that X-Ray allocated this service.</p>
       */
-    var ReservoirQuota: js.UndefOr[Double] = js.native
+    var ReservoirQuota: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>When the reservoir quota expires.</p>
       */
-    var ReservoirQuotaTTL: js.UndefOr[Date | String | Double] = js.native
+    var ReservoirQuotaTTL: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The name of the sampling rule.</p>
       */
-    var RuleName: js.UndefOr[String] = js.native
+    var RuleName: js.UndefOr[String] = js.undefined
   }
   object SamplingTargetDocument {
     
@@ -79,14 +77,15 @@ object typesSamplingTargetDocumentMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSamplingTargetDocument extends SamplingTargetDocument {
+  trait UnmarshalledSamplingTargetDocument
+    extends StObject
+       with SamplingTargetDocument {
     
     /**
       * <p>When the reservoir quota expires.</p>
       */
     @JSName("ReservoirQuotaTTL")
-    var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[Date] = js.native
+    var ReservoirQuotaTTL_UnmarshalledSamplingTargetDocument: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledSamplingTargetDocument {
     

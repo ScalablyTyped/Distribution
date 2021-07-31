@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for what sensor triggered the data threshold monitoring task. */
-@js.native
 trait SensorDataThresholdTriggerDetails extends StObject {
   
   /** Gets the device identifier for the device that activated the threshold trigger. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the type of sensor associated with the threshold trigger. */
-  var sensorType: SensorType = js.native
+  var sensorType: SensorType
 }
 object SensorDataThresholdTriggerDetails {
   

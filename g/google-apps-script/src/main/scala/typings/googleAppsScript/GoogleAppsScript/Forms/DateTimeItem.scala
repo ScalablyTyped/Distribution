@@ -4,7 +4,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,42 +15,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addDateTimeItem();
   *     item.setTitle('When do you want to meet?');
   */
-@js.native
 trait DateTimeItem extends StObject {
   
-  def createResponse(response: Date): ItemResponse = js.native
+  def createResponse(response: Date): ItemResponse
   
-  def duplicate(): DateTimeItem = js.native
+  def duplicate(): DateTimeItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def includesYear(): Boolean = js.native
+  def includesYear(): Boolean
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): DateTimeItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): DateTimeItem
   
-  def setHelpText(text: String): DateTimeItem = js.native
+  def setHelpText(text: String): DateTimeItem
   
-  def setIncludesYear(enableYear: Boolean): DateTimeItem = js.native
+  def setIncludesYear(enableYear: Boolean): DateTimeItem
   
-  def setPoints(points: Integer): DateTimeItem = js.native
+  def setPoints(points: Integer): DateTimeItem
   
-  def setRequired(enabled: Boolean): DateTimeItem = js.native
+  def setRequired(enabled: Boolean): DateTimeItem
   
-  def setTitle(title: String): DateTimeItem = js.native
+  def setTitle(title: String): DateTimeItem
 }
 object DateTimeItem {
   

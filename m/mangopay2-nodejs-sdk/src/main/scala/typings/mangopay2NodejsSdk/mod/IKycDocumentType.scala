@@ -7,33 +7,25 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGISTRATION_PROOF
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SHAREHOLDER_DECLARATION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IKycDocumentType extends StObject {
   
-  var AddressProof: ADDRESS_PROOF = js.native
+  var AddressProof: ADDRESS_PROOF
   
-  var ArticlesOfAssociation: ARTICLES_OF_ASSOCIATION = js.native
+  var ArticlesOfAssociation: ARTICLES_OF_ASSOCIATION
   
-  var IdentityProof: IDENTITY_PROOF = js.native
+  var IdentityProof: IDENTITY_PROOF
   
-  var RegistrationProof: REGISTRATION_PROOF = js.native
+  var RegistrationProof: REGISTRATION_PROOF
   
-  var ShareholderDeclaration: SHAREHOLDER_DECLARATION = js.native
+  var ShareholderDeclaration: SHAREHOLDER_DECLARATION
 }
 object IKycDocumentType {
   
   @scala.inline
-  def apply(
-    AddressProof: ADDRESS_PROOF,
-    ArticlesOfAssociation: ARTICLES_OF_ASSOCIATION,
-    IdentityProof: IDENTITY_PROOF,
-    RegistrationProof: REGISTRATION_PROOF,
-    ShareholderDeclaration: SHAREHOLDER_DECLARATION
-  ): IKycDocumentType = {
-    val __obj = js.Dynamic.literal(AddressProof = AddressProof.asInstanceOf[js.Any], ArticlesOfAssociation = ArticlesOfAssociation.asInstanceOf[js.Any], IdentityProof = IdentityProof.asInstanceOf[js.Any], RegistrationProof = RegistrationProof.asInstanceOf[js.Any], ShareholderDeclaration = ShareholderDeclaration.asInstanceOf[js.Any])
+  def apply(): IKycDocumentType = {
+    val __obj = js.Dynamic.literal(AddressProof = "ADDRESS_PROOF", ArticlesOfAssociation = "ARTICLES_OF_ASSOCIATION", IdentityProof = "IDENTITY_PROOF", RegistrationProof = "REGISTRATION_PROOF", ShareholderDeclaration = "SHAREHOLDER_DECLARATION")
     __obj.asInstanceOf[IKycDocumentType]
   }
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -42,12 +41,11 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SignaturePad.SignaturePadOptions * / any */ @js.native
-  trait ReactSignatureCanvasProps extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SignaturePad.SignaturePadOptions * / any */ trait ReactSignatureCanvasProps extends StObject {
     
-    var canvasProps: js.UndefOr[CanvasHTMLAttributes[HTMLCanvasElement]] = js.native
+    var canvasProps: js.UndefOr[CanvasHTMLAttributes[HTMLCanvasElement]] = js.undefined
     
-    var clearOnResize: js.UndefOr[Boolean] = js.native
+    var clearOnResize: js.UndefOr[Boolean] = js.undefined
   }
   object ReactSignatureCanvasProps {
     

@@ -5,7 +5,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeActionMod {
@@ -40,13 +39,11 @@ object swipeActionMod {
       @scala.inline
       def left_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
       
-      @JSImport("antd-mobile/lib/swipe-action", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
-      @JSImport("antd-mobile/lib/swipe-action", "default.defaultProps.onOpen")
-      @js.native
-      def onOpen(): Unit = js.native
+      @scala.inline
+      def onOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onOpen")().asInstanceOf[Unit]
       
       @JSImport("antd-mobile/lib/swipe-action", "default.defaultProps.prefixCls")
       @js.native
@@ -66,14 +63,15 @@ object swipeActionMod {
   trait SwipeAction
     extends Component[SwipeActionProps, js.Any, js.Any]
   
-  @js.native
-  trait SwipeActionProps extends SwipeActionPropsType[CSSProperties] {
+  trait SwipeActionProps
+    extends StObject
+       with SwipeActionPropsType[CSSProperties] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SwipeActionProps {
     

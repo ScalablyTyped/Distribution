@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Processes")
@@ -41,7 +40,7 @@ class ResourceProcesses protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListUserProcessesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListUserProcessesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListUserProcessesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListUserProcessesResponse] = js.native
   def list(params: ParamsResourceProcessesList): GaxiosPromise[SchemaListUserProcessesResponse] = js.native
   def list(
     params: ParamsResourceProcessesList,
@@ -83,7 +82,7 @@ class ResourceProcesses protected () extends StObject {
     */
   def listScriptProcesses(): GaxiosPromise[SchemaListScriptProcessesResponse] = js.native
   def listScriptProcesses(callback: BodyResponseCallback[SchemaListScriptProcessesResponse]): Unit = js.native
-  def listScriptProcesses(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScriptProcessesResponse] = js.native
+  def listScriptProcesses(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListScriptProcessesResponse] = js.native
   def listScriptProcesses(params: ParamsResourceProcessesListscriptprocesses): GaxiosPromise[SchemaListScriptProcessesResponse] = js.native
   def listScriptProcesses(
     params: ParamsResourceProcessesListscriptprocesses,

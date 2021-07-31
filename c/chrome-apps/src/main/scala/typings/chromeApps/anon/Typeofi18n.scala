@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.i18n.LanguageDetectionResult
 import typings.chromeApps.chrome.i18n.StringSubstitutions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

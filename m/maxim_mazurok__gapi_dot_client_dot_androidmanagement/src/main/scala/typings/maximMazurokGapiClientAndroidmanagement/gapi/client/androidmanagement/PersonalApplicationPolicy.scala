@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonalApplicationPolicy extends StObject {
   
   /** The type of installation to perform. */
-  var installType: js.UndefOr[String] = js.native
+  var installType: js.UndefOr[String] = js.undefined
   
   /** The package name of the application. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object PersonalApplicationPolicy {
   

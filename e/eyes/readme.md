@@ -12,7 +12,7 @@ a customizable value inspector
 | Keywords           | inspector, debug, inspect, print |
 | # releases         | 0 |
 | # dependents       | 169 |
-| # downloads        | 87629142 |
+| # downloads        | 86969674 |
 | # stars            | 22 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.request.mod.Response
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -37,12 +36,11 @@ object mod extends Shortcut {
     def put(url: String, options: CoreOptions): Observable_[ResponseWrapper] = js.native
   }
   
-  @js.native
   trait ResponseWrapper extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var response: Response = js.native
+    var response: Response
   }
   object ResponseWrapper {
     

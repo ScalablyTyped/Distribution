@@ -2,41 +2,39 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendEnvironment extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) for a backend environment that is part of an Amplify app. 
     */
-  var backendEnvironmentArn: BackendEnvironmentArn = js.native
+  var backendEnvironmentArn: BackendEnvironmentArn
   
   /**
     *  The creation date and time for a backend environment that is part of an Amplify app. 
     */
-  var createTime: CreateTime = js.native
+  var createTime: CreateTime
   
   /**
     *  The name of deployment artifacts. 
     */
-  var deploymentArtifacts: js.UndefOr[DeploymentArtifacts] = js.native
+  var deploymentArtifacts: js.UndefOr[DeploymentArtifacts] = js.undefined
   
   /**
     *  The name for a backend environment that is part of an Amplify app. 
     */
-  var environmentName: EnvironmentName = js.native
+  var environmentName: EnvironmentName
   
   /**
     *  The AWS CloudFormation stack name of a backend environment. 
     */
-  var stackName: js.UndefOr[StackName] = js.native
+  var stackName: js.UndefOr[StackName] = js.undefined
   
   /**
     *  The last updated date and time for a backend environment that is part of an Amplify app. 
     */
-  var updateTime: UpdateTime = js.native
+  var updateTime: UpdateTime
 }
 object BackendEnvironment {
   

@@ -3,7 +3,6 @@ package typings.rax.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,19 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // This should actually be something like `Lifecycle<P, S> | DeprecatedLifecycle<P, S>`,
 // as Rax will _not_ call the deprecated lifecycle methods if any of the new lifecycle
 // methods are present.
-@js.native
 trait ComponentLifecycle[P, S, SS] extends StObject {
   
   /**
     * Catches exceptions generated in descendant components. Unhandled exceptions will cause
     * the entire component tree to unmount.
     */
-  var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.native
+  var componentDidCatch: js.UndefOr[js.Function2[/* error */ Error, /* errorInfo */ ErrorInfo, Unit]] = js.undefined
   
   /**
     * Called immediately after a component is mounted. Setting state here will trigger re-rendering.
     */
-  var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called immediately after updating occurs. Not called for the initial render.
@@ -35,21 +33,21 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     */
   var componentDidUpdate: js.UndefOr[
     js.Function3[/* prevProps */ P, /* prevState */ S, /* snapshot */ js.UndefOr[SS], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ js.Any, Unit]] = js.native
+  var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ js.Any, Unit]] = js.undefined
   
   /**
     * Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as
     * cancelled network requests, or cleaning up any DOM elements created in `componentDidMount`.
     */
-  var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentWillUnmount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Runs before Rax applies the result of `render` to the document, and
@@ -59,7 +57,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     * Note: the presence of getSnapshotBeforeUpdate prevents any of the deprecated
     * lifecycle events from running.
     */
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ P, /* prevState */ S, SS | Null]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ P, /* prevState */ S, SS | Null]] = js.undefined
   
   /**
     * Called to determine whether the change in props and state should trigger a re-render.
@@ -73,7 +71,7 @@ trait ComponentLifecycle[P, S, SS] extends StObject {
     */
   var shouldComponentUpdate: js.UndefOr[
     js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ js.Any, Boolean]
-  ] = js.native
+  ] = js.undefined
 }
 object ComponentLifecycle {
   
@@ -84,7 +82,7 @@ object ComponentLifecycle {
   }
   
   @scala.inline
-  implicit class ComponentLifecycleMutableBuilder[Self <: ComponentLifecycle[_, _, _], P, S, SS] (val x: Self with (ComponentLifecycle[P, S, SS])) extends AnyVal {
+  implicit class ComponentLifecycleMutableBuilder[Self <: ComponentLifecycle[?, ?, ?], P, S, SS] (val x: Self & (ComponentLifecycle[P, S, SS])) extends AnyVal {
     
     @scala.inline
     def setComponentDidCatch(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "componentDidCatch", js.Any.fromFunction2(value))

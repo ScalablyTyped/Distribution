@@ -13,24 +13,23 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("http-auth", "basic")
+  @JSImport("http-auth", JSImport.Namespace)
   @js.native
-  def basic(options: BasicOptions): Basic_ = js.native
-  @JSImport("http-auth", "basic")
-  @js.native
-  def basic(options: BasicOptions, checker: BasicChecker): Basic_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("http-auth", "digest")
-  @js.native
-  def digest(options: DigestOptions): Digest_ = js.native
-  @JSImport("http-auth", "digest")
-  @js.native
-  def digest(options: DigestOptions, checker: DigestChecker): Digest_ = js.native
+  @scala.inline
+  def basic(options: BasicOptions): Basic_ = ^.asInstanceOf[js.Dynamic].applyDynamic("basic")(options.asInstanceOf[js.Any]).asInstanceOf[Basic_]
+  @scala.inline
+  def basic(options: BasicOptions, checker: BasicChecker): Basic_ = (^.asInstanceOf[js.Dynamic].applyDynamic("basic")(options.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Basic_]
+  
+  @scala.inline
+  def digest(options: DigestOptions): Digest_ = ^.asInstanceOf[js.Dynamic].applyDynamic("digest")(options.asInstanceOf[js.Any]).asInstanceOf[Digest_]
+  @scala.inline
+  def digest(options: DigestOptions, checker: DigestChecker): Digest_ = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(options.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Digest_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.httpAuth.httpAuthStrings.MD5
@@ -88,50 +87,49 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait BasicOptions extends StObject {
     
     /**
       * Content type for failed authentication page.
       * @default 'text/plain'
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * File where user details are stored.
       * - Line format is {user:pass} or {user:passHash} for basic access.
       * - Line format is {user:realm:passHash} for digest access.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * Message for failed authentication 401 page.
       * @default '401 Unauthorized'
       */
-    var msg401: js.UndefOr[String] = js.native
+    var msg401: js.UndefOr[String] = js.undefined
     
     /**
       * Message for failed authentication 407 page.
       * @default '407 Proxy authentication required
       */
-    var msg407: js.UndefOr[String] = js.native
+    var msg407: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to true, if you want to use it with http-proxy (https://github.com/http-party/node-http-proxy).
       * @default false
       */
-    var proxy: js.UndefOr[Boolean] = js.native
+    var proxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Authentication realm, by default it is 'users'.
       * @default 'users'
       */
-    var realm: js.UndefOr[String] = js.native
+    var realm: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to true, if you don't want req.user to be filled with authentication info.
       */
-    var skipUser: js.UndefOr[Boolean] = js.native
+    var skipUser: js.UndefOr[Boolean] = js.undefined
   }
   object BasicOptions {
     
@@ -188,12 +186,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BasicResult[T /* <: Boolean */] extends StObject {
     
-    var pass: js.UndefOr[T] = js.native
+    var pass: js.UndefOr[T] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object BasicResult {
     
@@ -204,7 +201,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BasicResultMutableBuilder[Self <: BasicResult[_], T /* <: Boolean */] (val x: Self with BasicResult[T]) extends AnyVal {
+    implicit class BasicResultMutableBuilder[Self <: BasicResult[?], T /* <: Boolean */] (val x: Self & BasicResult[T]) extends AnyVal {
       
       @scala.inline
       def setPass(value: T): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
@@ -228,26 +225,25 @@ object mod {
   
   type CheckedRequestListener = js.Function2[/* req */ IncomingMessageuserstring, /* res */ ServerResponse, Unit]
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var algorithm: Algorithm = js.native
+    var algorithm: Algorithm
     
-    var cnonce: js.UndefOr[String] = js.native
+    var cnonce: js.UndefOr[String] = js.undefined
     
-    var nc: js.UndefOr[String] = js.native
+    var nc: js.UndefOr[String] = js.undefined
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var qop: js.UndefOr[auth] = js.native
+    var qop: js.UndefOr[auth] = js.undefined
     
-    var realm: String = js.native
+    var realm: String
     
-    var response: String = js.native
+    var response: String
     
-    var uri: String = js.native
+    var uri: String
     
-    var username: String = js.native
+    var username: String
   }
   object ClientOptions {
     
@@ -311,47 +307,16 @@ object mod {
     Unit
   ]
   
-  /* Inlined http-auth.http-auth.BasicOptions & {  qop :http-auth.http-auth.Qop | undefined,   algorithm :http-auth.http-auth.Algorithm | undefined} */
-  @js.native
-  trait DigestOptions extends StObject {
+  trait DigestOptions
+    extends StObject
+       with BasicOptions {
     
     /**
       * Algorithm that will be used only for digest access authentication.
       * 'MD5' or 'MD5-sess' can be set.
       * @default 'MD5'
       */
-    var algorithm: js.UndefOr[Algorithm] = js.native
-    
-    /**
-      * Content type for failed authentication page.
-      * @default 'text/plain'
-      */
-    var contentType: js.UndefOr[String] = js.native
-    
-    /**
-      * File where user details are stored.
-      * - Line format is {user:pass} or {user:passHash} for basic access.
-      * - Line format is {user:realm:passHash} for digest access.
-      */
-    var file: js.UndefOr[String] = js.native
-    
-    /**
-      * Message for failed authentication 401 page.
-      * @default '401 Unauthorized'
-      */
-    var msg401: js.UndefOr[String] = js.native
-    
-    /**
-      * Message for failed authentication 407 page.
-      * @default '407 Proxy authentication required
-      */
-    var msg407: js.UndefOr[String] = js.native
-    
-    /**
-      * Set this to true, if you want to use it with http-proxy (https://github.com/http-party/node-http-proxy).
-      * @default false
-      */
-    var proxy: js.UndefOr[Boolean] = js.native
+    var algorithm: js.UndefOr[Algorithm] = js.undefined
     
     /**
       * Quality of protection that is used only for digest access authentication
@@ -359,18 +324,7 @@ object mod {
       * - 'none' this option is disabling protection.
       * @default 'auth
       */
-    var qop: js.UndefOr[Qop] = js.native
-    
-    /**
-      * Authentication realm, by default it is 'users'.
-      * @default 'users'
-      */
-    var realm: js.UndefOr[String] = js.native
-    
-    /**
-      * Set this to true, if you don't want req.user to be filled with authentication info.
-      */
-    var skipUser: js.UndefOr[Boolean] = js.native
+    var qop: js.UndefOr[Qop] = js.undefined
   }
   object DigestOptions {
     
@@ -390,64 +344,18 @@ object mod {
       def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
       @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
-      
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
-      
-      @scala.inline
-      def setMsg401(value: String): Self = StObject.set(x, "msg401", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMsg401Undefined: Self = StObject.set(x, "msg401", js.undefined)
-      
-      @scala.inline
-      def setMsg407(value: String): Self = StObject.set(x, "msg407", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMsg407Undefined: Self = StObject.set(x, "msg407", js.undefined)
-      
-      @scala.inline
-      def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
-      
-      @scala.inline
       def setQop(value: Qop): Self = StObject.set(x, "qop", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQopUndefined: Self = StObject.set(x, "qop", js.undefined)
-      
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
-      
-      @scala.inline
-      def setSkipUser(value: Boolean): Self = StObject.set(x, "skipUser", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSkipUserUndefined: Self = StObject.set(x, "skipUser", js.undefined)
     }
   }
   
-  /* Inlined http-auth.http-auth.BasicResult<T> & {  stale :true | undefined} */
-  @js.native
-  trait DigestResult[T /* <: Boolean */] extends StObject {
+  trait DigestResult[T /* <: Boolean */]
+    extends StObject
+       with BasicResult[T] {
     
-    var pass: js.UndefOr[T] = js.native
-    
-    var stale: js.UndefOr[`true`] = js.native
-    
-    var user: js.UndefOr[String] = js.native
+    var stale: js.UndefOr[`true`] = js.undefined
   }
   object DigestResult {
     
@@ -458,25 +366,13 @@ object mod {
     }
     
     @scala.inline
-    implicit class DigestResultMutableBuilder[Self <: DigestResult[_], T /* <: Boolean */] (val x: Self with DigestResult[T]) extends AnyVal {
-      
-      @scala.inline
-      def setPass(value: T): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+    implicit class DigestResultMutableBuilder[Self <: DigestResult[?], T /* <: Boolean */] (val x: Self & DigestResult[T]) extends AnyVal {
       
       @scala.inline
       def setStale(value: `true`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
-      
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   

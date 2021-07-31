@@ -2,10 +2,8 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StowBarInitially extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait StowBarInitially extends StObject {
     * // As an integer; start stowed if the viewport is 800px or less
     * Config.ui.stowBarInitially = 800;
     */
-  var stowBarInitially: Boolean | Double = js.native
+  var stowBarInitially: Boolean | Double
   
   /**
     * Determines whether certain elements within the UI bar are updated when passages are displayed. The affected
@@ -44,7 +42,7 @@ trait StowBarInitially extends StObject {
     * // If you don't need those elements to update
     * Config.ui.updateStoryElements = false;
     */
-  var updateStoryElements: Boolean = js.native
+  var updateStoryElements: Boolean
 }
 object StowBarInitially {
   

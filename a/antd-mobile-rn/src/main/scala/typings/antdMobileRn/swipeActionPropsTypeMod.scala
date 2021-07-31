@@ -3,28 +3,26 @@ package typings.antdMobileRn
 import typings.antdMobileRn.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeActionPropsTypeMod {
   
-  @js.native
   trait SwipeActionPropsType[T] extends StObject {
     
     /** whether button is disabled*/
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var left: js.UndefOr[js.Array[ClassName[T]]] = js.native
+    var left: js.UndefOr[js.Array[ClassName[T]]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var right: js.UndefOr[js.Array[ClassName[T]]] = js.native
+    var right: js.UndefOr[js.Array[ClassName[T]]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object SwipeActionPropsType {
     
@@ -35,7 +33,7 @@ object swipeActionPropsTypeMod {
     }
     
     @scala.inline
-    implicit class SwipeActionPropsTypeMutableBuilder[Self <: SwipeActionPropsType[_], T] (val x: Self with SwipeActionPropsType[T]) extends AnyVal {
+    implicit class SwipeActionPropsTypeMutableBuilder[Self <: SwipeActionPropsType[?], T] (val x: Self & SwipeActionPropsType[T]) extends AnyVal {
       
       @scala.inline
       def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])

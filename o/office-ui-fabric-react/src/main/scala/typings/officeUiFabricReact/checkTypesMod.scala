@@ -7,51 +7,49 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkTypesMod {
   
-  @js.native
   trait ICheckProps extends StObject {
     
     /**
       * @deprecated Not used
       */
-    var alwaysShowCheck: js.UndefOr[Boolean] = js.native
+    var alwaysShowCheck: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not this menu item is currently checked.
       * @defaultvalue false
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional css class to apply to the Check
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[ICheckProps]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ICheckProps]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ICheckStyleProps, ICheckStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ICheckStyleProps, ICheckStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether to use fast icon components. The icons can't be targeted by customization but are
       * still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
   }
   object ICheckProps {
     
@@ -115,7 +113,6 @@ object checkTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Check/Check.types.ICheckProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Check/Check.types.ICheckProps, 'className' | 'checked'> & {  height :string | undefined,   checkBoxHeight :string | undefined} */
-  @js.native
   trait ICheckStyleProps extends StObject {
     
     /**
@@ -123,19 +120,19 @@ object checkTypesMod {
       * @defaultvalue '18px'
       * @deprecated Use `height`
       */
-    var checkBoxHeight: js.UndefOr[String] = js.native
+    var checkBoxHeight: js.UndefOr[String] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Custom height/width for the checkbox.
       * @defaultvalue '18px'
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ICheckStyleProps {
     
@@ -177,30 +174,29 @@ object checkTypesMod {
     }
   }
   
-  @js.native
   trait ICheckStyles extends StObject {
     
     /**
       * The 'check' icon styles.
       */
-    var check: IStyle = js.native
+    var check: IStyle
     
     /**
       * Check host style
       * @deprecated Not used directly within the component. Instead, use `CheckGlobalClassNames.checkHost` from
       * `Check.styles.ts` to get the static class name to apply to the parent element of the Check.
       */
-    var checkHost: IStyle = js.native
+    var checkHost: IStyle
     
     /**
       * The 'circle' icon styles.
       */
-    var circle: IStyle = js.native
+    var circle: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ICheckStyles {
     

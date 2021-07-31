@@ -2,15 +2,13 @@ package typings.pullStream
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Last extends StObject {
     
-    var last: Boolean = js.native
+    var last: Boolean
   }
   object Last {
     

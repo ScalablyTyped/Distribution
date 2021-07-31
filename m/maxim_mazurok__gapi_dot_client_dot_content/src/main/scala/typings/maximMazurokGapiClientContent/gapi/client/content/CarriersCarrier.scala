@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CarriersCarrier extends StObject {
   
   /** The CLDR country code of the carrier (e.g., "US"). Always present. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The name of the carrier (e.g., `"UPS"`). Always present. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A list of supported services (e.g., `"ground"`) for that carrier. Contains at least one service. */
-  var services: js.UndefOr[js.Array[String]] = js.native
+  var services: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CarriersCarrier {
   

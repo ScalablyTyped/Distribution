@@ -10,9 +10,9 @@ TypeScript typings for Cloud Logging API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.logging |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 59 |
+| # downloads        | 1067 |
 | # stars            | 0 |
 
 ## Links

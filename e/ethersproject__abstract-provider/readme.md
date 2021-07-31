@@ -10,9 +10,9 @@ An Abstract Class for describing an Ethereum Provider for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/abstract-provider |
 | Keywords           | Ethereum, ethers |
-| # releases         | 33 |
-| # dependents       | 21 |
-| # downloads        | 676063 |
+| # releases         | 36 |
+| # dependents       | 25 |
+| # downloads        | 1627064 |
 | # stars            | 0 |
 
 ## Links

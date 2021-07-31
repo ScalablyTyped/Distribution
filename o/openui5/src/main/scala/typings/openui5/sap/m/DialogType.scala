@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait DialogType extends StObject
 object DialogType extends StObject {
   
   @js.native
-  sealed trait Message extends DialogType
+  sealed trait Message
+    extends StObject
+       with DialogType
   
   @js.native
-  sealed trait Standard extends DialogType
+  sealed trait Standard
+    extends StObject
+       with DialogType
 }

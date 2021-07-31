@@ -11,7 +11,6 @@ import typings.luminoDatagrid.selectionmodelMod.SelectionModel.SelectionMode
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionmodelMod {
@@ -228,20 +227,19 @@ object selectionmodelMod {
     /**
       * An options object for initializing a selection model.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The data model for the selection model.
         */
-      var dataModel: DataModel = js.native
+      var dataModel: DataModel
       
       /**
         * The selection mode for the model.
         *
         * The default is `'cell'`.
         */
-      var selectionMode: js.UndefOr[SelectionMode] = js.native
+      var selectionMode: js.UndefOr[SelectionMode] = js.undefined
     }
     object IOptions {
       
@@ -268,7 +266,6 @@ object selectionmodelMod {
     /**
       * A type alias for the select args.
       */
-    @js.native
     trait SelectArgs extends StObject {
       
       /**
@@ -276,47 +273,47 @@ object selectionmodelMod {
         *
         * This may be greater than `c2`.
         */
-      var c1: Double = js.native
+      var c1: Double
       
       /**
         * The last column of the selection.
         *
         * This may be less than `c1`.
         */
-      var c2: Double = js.native
+      var c2: Double
       
       /**
         * Which of the existing selections to clear.
         */
-      var clear: ClearMode = js.native
+      var clear: ClearMode
       
       /**
         * The column index for the cursor.
         *
         * This should be contained within the selection.
         */
-      var cursorColumn: Double = js.native
+      var cursorColumn: Double
       
       /**
         * The row index for the cursor.
         *
         * This should be contained within the selection.
         */
-      var cursorRow: Double = js.native
+      var cursorRow: Double
       
       /**
         * The first row of the selection.
         *
         * This may be greater than `r2`.
         */
-      var r1: Double = js.native
+      var r1: Double
       
       /**
         * The last row of the selection.
         *
         * This may be less than `r1`.
         */
-      var r2: Double = js.native
+      var r2: Double
     }
     object SelectArgs {
       
@@ -363,7 +360,6 @@ object selectionmodelMod {
     /**
       * A type alias for a selection in a selection model.
       */
-    @js.native
     trait Selection extends StObject {
       
       /**
@@ -371,28 +367,28 @@ object selectionmodelMod {
         *
         * This may be greater than `c2`.
         */
-      val c1: Double = js.native
+      val c1: Double
       
       /**
         * The last column of the selection.
         *
         * This may be less than `c1`.
         */
-      val c2: Double = js.native
+      val c2: Double
       
       /**
         * The first row of the selection.
         *
         * This may be greater than `r2`.
         */
-      val r1: Double = js.native
+      val r1: Double
       
       /**
         * The last row of the selection.
         *
         * This may be less than `r1`.
         */
-      val r2: Double = js.native
+      val r2: Double
     }
     object Selection {
       

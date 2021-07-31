@@ -2,19 +2,17 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for removing the association between a deal and a creative.
   */
-@js.native
 trait SchemaRemoveDealAssociationRequest extends StObject {
   
   /**
     * The association between a creative and a deal that should be removed.
     */
-  var association: js.UndefOr[SchemaCreativeDealAssociation] = js.native
+  var association: js.UndefOr[SchemaCreativeDealAssociation] = js.undefined
 }
 object SchemaRemoveDealAssociationRequest {
   

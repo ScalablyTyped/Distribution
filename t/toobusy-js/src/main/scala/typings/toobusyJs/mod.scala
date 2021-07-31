@@ -2,7 +2,6 @@ package typings.toobusyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,9 +10,12 @@ object mod {
     * Main export function.
     * @return True if node process is too busy.
     */
+  @scala.inline
+  def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
+  
   @JSImport("toobusy-js", JSImport.Namespace)
   @js.native
-  def apply(): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Sets or gets the current check interval.
@@ -22,20 +24,17 @@ object mod {
     * @param  [newInterval] New interval to set. If not provided, will return the existing interval.
     * @return               New or existing interval.
     */
-  @JSImport("toobusy-js", "interval")
-  @js.native
-  def interval(): Double = js.native
-  @JSImport("toobusy-js", "interval")
-  @js.native
-  def interval(newInterval: Double): Double = js.native
+  @scala.inline
+  def interval(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")().asInstanceOf[Double]
+  @scala.inline
+  def interval(newInterval: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("interval")(newInterval.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Returns last lag reading from last check interval.
     * @return Lag in ms.
     */
-  @JSImport("toobusy-js", "lag")
-  @js.native
-  def lag(): Double = js.native
+  @scala.inline
+  def lag(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lag")().asInstanceOf[Double]
   
   /**
     * Set or get the current max latency threshold. Default is 70ms.
@@ -48,12 +47,10 @@ object mod {
     * @param  [newLag] New maxLag (highwater) threshold.
     * @return          New or existing maxLag (highwater) threshold.
     */
-  @JSImport("toobusy-js", "maxLag")
-  @js.native
-  def maxLag(): Double = js.native
-  @JSImport("toobusy-js", "maxLag")
-  @js.native
-  def maxLag(newLag: Double): Double = js.native
+  @scala.inline
+  def maxLag(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLag")().asInstanceOf[Double]
+  @scala.inline
+  def maxLag(newLag: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxLag")(newLag.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Registers an event listener for lag events,
@@ -61,12 +58,10 @@ object mod {
     * @param fn                 Function of form onLag(value: number) => void
     * @param [threshold=maxLag] Optional minimum lag value for events to be emitted
     */
-  @JSImport("toobusy-js", "onLag")
-  @js.native
-  def onLag(fn: js.Function1[/* lag */ Double, Unit]): Unit = js.native
-  @JSImport("toobusy-js", "onLag")
-  @js.native
-  def onLag(fn: js.Function1[/* lag */ Double, Unit], threshold: Double): Unit = js.native
+  @scala.inline
+  def onLag(fn: js.Function1[/* lag */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLag")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def onLag(fn: js.Function1[/* lag */ Double, Unit], threshold: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onLag")(fn.asInstanceOf[js.Any], threshold.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Shuts down toobusy.
@@ -74,9 +69,8 @@ object mod {
     * Not necessary to call this manually, only do this if you know what you're doing. `unref()` is called
     * on toobusy's check interval, so it will never keep the server open.
     */
-  @JSImport("toobusy-js", "shutdown")
-  @js.native
-  def shutdown(): Unit = js.native
+  @scala.inline
+  def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
   
   /**
     * Set or get the smoothing factor. Default is 0.3333....
@@ -87,14 +81,11 @@ object mod {
     * @param  [newFactor] New smoothing factor.
     * @return             New or existing smoothing factor.
     */
-  @JSImport("toobusy-js", "smoothingFactor")
-  @js.native
-  def smoothingFactor(): Double = js.native
-  @JSImport("toobusy-js", "smoothingFactor")
-  @js.native
-  def smoothingFactor(newFactor: Double): Double = js.native
+  @scala.inline
+  def smoothingFactor(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("smoothingFactor")().asInstanceOf[Double]
+  @scala.inline
+  def smoothingFactor(newFactor: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("smoothingFactor")(newFactor.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("toobusy-js", "started")
-  @js.native
-  def started(): Boolean = js.native
+  @scala.inline
+  def started(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("started")().asInstanceOf[Boolean]
 }

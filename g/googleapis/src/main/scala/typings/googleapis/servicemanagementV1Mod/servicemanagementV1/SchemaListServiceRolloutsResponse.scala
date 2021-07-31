@@ -2,24 +2,22 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListServiceRollouts method.
   */
-@js.native
 trait SchemaListServiceRolloutsResponse extends StObject {
   
   /**
     * The token of the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of rollout resources.
     */
-  var rollouts: js.UndefOr[js.Array[SchemaRollout]] = js.native
+  var rollouts: js.UndefOr[js.Array[SchemaRollout]] = js.undefined
 }
 object SchemaListServiceRolloutsResponse {
   

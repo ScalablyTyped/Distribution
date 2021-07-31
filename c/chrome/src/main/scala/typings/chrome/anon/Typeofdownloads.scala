@@ -10,7 +10,6 @@ import typings.chrome.chrome.downloads.DownloadQuery
 import typings.chrome.chrome.downloads.GetFileIconOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

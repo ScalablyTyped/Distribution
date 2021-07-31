@@ -7,20 +7,23 @@ import typings.std.Console
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customConsoleMod {
   
   @JSImport("@jest/console/build/CustomConsole", JSImport.Default)
   @js.native
-  class default protected () extends CustomConsole {
+  class default protected ()
+    extends StObject
+       with CustomConsole {
     def this(stdout: WritableStream, stderr: WritableStream) = this()
     def this(stdout: WritableStream, stderr: WritableStream, formatBuffer: Formatter) = this()
   }
   
   @js.native
-  trait CustomConsole extends Console {
+  trait CustomConsole
+    extends StObject
+       with Console {
     
     var _counters: js.Any = js.native
     
@@ -50,13 +53,13 @@ object customConsoleMod {
     
     def error(firstArg: js.Any, args: js.Any*): Unit = js.native
     
-    def getBuffer(): js.UndefOr[scala.Nothing] = js.native
+    def getBuffer(): Unit = js.native
     
-    def group(title: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     def group(title: String, args: js.Any*): Unit = js.native
+    def group(title: Unit, args: js.Any*): Unit = js.native
     
-    def groupCollapsed(title: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     def groupCollapsed(title: String, args: js.Any*): Unit = js.native
+    def groupCollapsed(title: Unit, args: js.Any*): Unit = js.native
     
     def info(firstArg: js.Any, args: js.Any*): Unit = js.native
     

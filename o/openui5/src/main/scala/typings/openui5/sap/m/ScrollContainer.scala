@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScrollContainer extends Control {
+trait ScrollContainer
+  extends StObject
+     with Control {
   
   /**
     * Adds some content to the aggregation <code>content</code>.

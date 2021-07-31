@@ -2,10 +2,8 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cache extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait Cache extends StObject {
     *
     * Note that key and value can be anything including objects, array, etc.
     */
-  def get(key: js.Any): js.Any = js.native
+  def get(key: js.Any): js.Any
   
   /**
     * Add an item to the cache.
     *
     * Note that key and value can be anything including objects, array, etc.
     */
-  def set(key: js.Any, value: js.Any): Unit = js.native
+  def set(key: js.Any, value: js.Any): Unit
 }
 object Cache {
   

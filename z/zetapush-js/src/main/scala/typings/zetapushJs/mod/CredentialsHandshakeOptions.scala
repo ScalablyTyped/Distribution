@@ -2,19 +2,17 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialsHandshakeOptions extends StObject {
   
-  var authType: String = js.native
+  var authType: String
   
-  var deploymentId: String = js.native
+  var deploymentId: String
   
-  var login: String = js.native
+  var login: String
   
-  var password: String = js.native
+  var password: String
 }
 object CredentialsHandshakeOptions {
   

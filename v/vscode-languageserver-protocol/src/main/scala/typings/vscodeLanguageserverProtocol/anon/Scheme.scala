@@ -3,20 +3,20 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverProtocol.protocolMod.DocumentFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Scheme extends DocumentFilter {
+trait Scheme
+  extends StObject
+     with DocumentFilter {
   
   /** A language id, like `typescript`. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** A glob pattern, like `*.{ts,js}`. */
-  var pattern: String = js.native
+  var pattern: String
   
   /** A Uri [scheme](#Uri.scheme), like `file` or `untitled`. */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
 }
 object Scheme {
   

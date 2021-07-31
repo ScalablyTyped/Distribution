@@ -3,20 +3,18 @@ package typings.sumoLogger
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<sumo-logger.sumo-logger.PerMessageOptions> */
-  @js.native
   trait PartialPerMessageOptions extends StObject {
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Date] = js.native
+    var timestamp: js.UndefOr[Date] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object PartialPerMessageOptions {
     

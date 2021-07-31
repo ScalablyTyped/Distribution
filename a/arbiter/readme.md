@@ -12,7 +12,7 @@ A Salesforce ORM powered by jsforce
 | Keywords           | ORM, Salesforce, JSForce, Query |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 2374 |
+| # downloads        | 1526 |
 | # stars            | 0 |
 
 ## Links

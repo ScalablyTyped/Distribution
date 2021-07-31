@@ -3,23 +3,21 @@ package typings.chrome.chrome.declarativeWebRequest
 import typings.chrome.chrome.events.UrlFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestMatcher extends StObject {
   
-  var contentType: js.UndefOr[js.Array[String]] = js.native
+  var contentType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var excludeContentType: js.UndefOr[js.Array[String]] = js.native
+  var excludeContentType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var excludeResponseHeader: js.UndefOr[js.Array[HeaderFilter]] = js.native
+  var excludeResponseHeader: js.UndefOr[js.Array[HeaderFilter]] = js.undefined
   
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
-  var responseHeaders: js.UndefOr[js.Array[HeaderFilter]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[HeaderFilter]] = js.undefined
   
-  var url: js.UndefOr[UrlFilter] = js.native
+  var url: js.UndefOr[UrlFilter] = js.undefined
 }
 object RequestMatcher {
   

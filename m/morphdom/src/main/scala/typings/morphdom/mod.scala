@@ -4,44 +4,42 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("morphdom", JSImport.Namespace)
-  @js.native
-  def apply(fromNode: Node, toNode: String): Unit = js.native
-  @JSImport("morphdom", JSImport.Namespace)
-  @js.native
-  def apply(fromNode: Node, toNode: String, options: MorphDomOptions): Unit = js.native
-  @JSImport("morphdom", JSImport.Namespace)
-  @js.native
-  def apply(fromNode: Node, toNode: Node): Unit = js.native
-  @JSImport("morphdom", JSImport.Namespace)
-  @js.native
-  def apply(fromNode: Node, toNode: Node, options: MorphDomOptions): Unit = js.native
+  @scala.inline
+  def apply(fromNode: Node, toNode: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fromNode.asInstanceOf[js.Any], toNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(fromNode: Node, toNode: String, options: MorphDomOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(fromNode.asInstanceOf[js.Any], toNode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(fromNode: Node, toNode: Node): Unit = (^.asInstanceOf[js.Dynamic].apply(fromNode.asInstanceOf[js.Any], toNode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(fromNode: Node, toNode: Node, options: MorphDomOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(fromNode.asInstanceOf[js.Any], toNode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("morphdom", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait MorphDomOptions extends StObject {
     
-    var childrenOnly: js.UndefOr[Boolean] = js.native
+    var childrenOnly: js.UndefOr[Boolean] = js.undefined
     
-    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, _]] = js.native
+    var getNodeKey: js.UndefOr[js.Function1[/* node */ Node, js.Any]] = js.undefined
     
-    var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.native
+    var onBeforeElChildrenUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
-    var onBeforeElUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.native
+    var onBeforeElUpdated: js.UndefOr[js.Function2[/* fromEl */ HTMLElement, /* toEl */ HTMLElement, Boolean]] = js.undefined
     
-    var onBeforeNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.native
+    var onBeforeNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
     
-    var onBeforeNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.native
+    var onBeforeNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Boolean]] = js.undefined
     
-    var onElUpdated: js.UndefOr[js.Function1[/* el */ HTMLElement, Unit]] = js.native
+    var onElUpdated: js.UndefOr[js.Function1[/* el */ HTMLElement, Unit]] = js.undefined
     
-    var onNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.native
+    var onNodeAdded: js.UndefOr[js.Function1[/* node */ Node, Node]] = js.undefined
     
-    var onNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var onNodeDiscarded: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
   }
   object MorphDomOptions {
     
@@ -61,7 +59,7 @@ object mod {
       def setChildrenOnlyUndefined: Self = StObject.set(x, "childrenOnly", js.undefined)
       
       @scala.inline
-      def setGetNodeKey(value: /* node */ Node => _): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      def setGetNodeKey(value: /* node */ Node => js.Any): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetNodeKeyUndefined: Self = StObject.set(x, "getNodeKey", js.undefined)

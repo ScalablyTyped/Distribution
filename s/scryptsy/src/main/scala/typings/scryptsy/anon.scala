@@ -2,19 +2,17 @@ package typings.scryptsy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Current {
     

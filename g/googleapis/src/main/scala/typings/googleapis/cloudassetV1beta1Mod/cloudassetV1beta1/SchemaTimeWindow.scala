@@ -2,25 +2,23 @@ package typings.googleapis.cloudassetV1beta1Mod.cloudassetV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A time window of (start_time, end_time].
   */
-@js.native
 trait SchemaTimeWindow extends StObject {
   
   /**
     * End time of the time window (inclusive). Current timestamp if not
     * specified.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Start time of the time window (exclusive).
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeWindow {
   

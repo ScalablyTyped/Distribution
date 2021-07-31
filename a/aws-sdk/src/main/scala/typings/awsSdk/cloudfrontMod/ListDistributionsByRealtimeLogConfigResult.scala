@@ -2,13 +2,11 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDistributionsByRealtimeLogConfigResult extends StObject {
   
-  var DistributionList: js.UndefOr[typings.awsSdk.cloudfrontMod.DistributionList] = js.native
+  var DistributionList: js.UndefOr[typings.awsSdk.cloudfrontMod.DistributionList] = js.undefined
 }
 object ListDistributionsByRealtimeLogConfigResult {
   

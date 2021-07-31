@@ -2,15 +2,13 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale_ extends StObject {
   
-  var sx: Double = js.native
+  var sx: Double
   
-  var sy: Double = js.native
+  var sy: Double
 }
 object Scale_ {
   

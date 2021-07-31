@@ -4,17 +4,15 @@ import typings.activexShell.Shell32.Shell
 import typings.activexShell.Shell32.ShellFolderViewOC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Shell.Application")
-  var ShellDotApplication: Shell = js.native
+  var ShellDotApplication: Shell
   
   @JSName("Shell.FolderView")
-  var ShellDotFolderView: ShellFolderViewOC = js.native
+  var ShellDotFolderView: ShellFolderViewOC
 }
 object ActiveXObjectNameMap {
   

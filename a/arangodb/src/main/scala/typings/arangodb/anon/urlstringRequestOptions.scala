@@ -3,40 +3,38 @@ package typings.arangodb.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  url :string} & arangodb.@arangodb/request.RequestOptions */
-@js.native
 trait urlstringRequestOptions extends StObject {
   
-  var auth: js.UndefOr[Password | Bearer] = js.native
+  var auth: js.UndefOr[Password | Bearer] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var encoding: js.UndefOr[String | Null] = js.native
+  var encoding: js.UndefOr[String | Null] = js.undefined
   
-  var followRedirect: js.UndefOr[Boolean] = js.native
+  var followRedirect: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[js.Any] = js.native
+  var form: js.UndefOr[js.Any] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var headers: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
   
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
   
-  var maxRedirects: js.UndefOr[Double] = js.native
+  var maxRedirects: js.UndefOr[Double] = js.undefined
   
-  var qs: js.UndefOr[js.Object] = js.native
+  var qs: js.UndefOr[js.Object] = js.undefined
   
-  var returnBodyOnError: js.UndefOr[Boolean] = js.native
+  var returnBodyOnError: js.UndefOr[Boolean] = js.undefined
   
-  var sslProtocol: js.UndefOr[Double] = js.native
+  var sslProtocol: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var useQuerystring: js.UndefOr[Boolean] = js.native
+  var useQuerystring: js.UndefOr[Boolean] = js.undefined
 }
 object urlstringRequestOptions {
   

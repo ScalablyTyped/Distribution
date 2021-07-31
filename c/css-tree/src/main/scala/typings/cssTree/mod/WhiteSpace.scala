@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhiteSpace
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_WhiteSpace: typings.cssTree.cssTreeStrings.WhiteSpace = js.native
+  var type_WhiteSpace: typings.cssTree.cssTreeStrings.WhiteSpace
   
-  var value: String = js.native
+  var value: String
 }
 object WhiteSpace {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.WhiteSpace, value: String): WhiteSpace = {
+  def apply(value: String): WhiteSpace = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhiteSpace")
     __obj.asInstanceOf[WhiteSpace]
   }
   

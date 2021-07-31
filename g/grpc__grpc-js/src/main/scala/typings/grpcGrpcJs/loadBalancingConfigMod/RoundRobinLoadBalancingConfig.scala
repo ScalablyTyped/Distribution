@@ -3,21 +3,21 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.grpcGrpcJs.grpcGrpcJsStrings.round_robin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RoundRobinLoadBalancingConfig extends LoadBalancingConfig {
+trait RoundRobinLoadBalancingConfig
+  extends StObject
+     with LoadBalancingConfig {
   
-  var name: round_robin = js.native
+  var name: round_robin
   
-  var round_robin: RoundRobinConfig = js.native
+  var round_robin: RoundRobinConfig
 }
 object RoundRobinLoadBalancingConfig {
   
   @scala.inline
-  def apply(name: round_robin, round_robin: RoundRobinConfig): RoundRobinLoadBalancingConfig = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], round_robin = round_robin.asInstanceOf[js.Any])
+  def apply(round_robin: RoundRobinConfig): RoundRobinLoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = "round_robin", round_robin = round_robin.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoundRobinLoadBalancingConfig]
   }
   

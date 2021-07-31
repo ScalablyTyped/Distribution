@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientContent.anon.OrderId
 import typings.maximMazurokGapiClientContent.anon.OrderIdPrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

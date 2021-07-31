@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoneAssociationMod {
@@ -48,6 +47,10 @@ object zoneAssociationMod {
   /* static members */
   object ZoneAssociation {
     
+    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ZoneAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object zoneAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneAssociationState): ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): ZoneAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneAssociationState): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ZoneAssociation]
     
     /**
       * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean]
   }
   
-  @js.native
   trait ZoneAssociationArgs extends StObject {
     
     /**
       * The VPC to associate with the private hosted zone.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
     
     /**
       * The VPC's region. Defaults to the region of the AWS provider.
       */
-    val vpcRegion: js.UndefOr[Input[String]] = js.native
+    val vpcRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private hosted zone to associate.
       */
-    val zoneId: Input[String] = js.native
+    val zoneId: Input[String]
   }
   object ZoneAssociationArgs {
     
@@ -122,28 +119,27 @@ object zoneAssociationMod {
     }
   }
   
-  @js.native
   trait ZoneAssociationState extends StObject {
     
     /**
       * The account ID of the account that created the hosted zone.
       */
-    val owningAccount: js.UndefOr[Input[String]] = js.native
+    val owningAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The VPC to associate with the private hosted zone.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The VPC's region. Defaults to the region of the AWS provider.
       */
-    val vpcRegion: js.UndefOr[Input[String]] = js.native
+    val vpcRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The private hosted zone to associate.
       */
-    val zoneId: js.UndefOr[Input[String]] = js.native
+    val zoneId: js.UndefOr[Input[String]] = js.undefined
   }
   object ZoneAssociationState {
     

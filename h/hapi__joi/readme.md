@@ -10,9 +10,9 @@ Object schema validation
 | ------------------ | :-------------: |
 | Full name          | @hapi/joi |
 | Keywords           | schema, validation |
-| # releases         | 31 |
-| # dependents       | 1139 |
-| # downloads        | 174642257 |
+| # releases         | 30 |
+| # dependents       | 1096 |
+| # downloads        | 225871906 |
 | # stars            | 2 |
 
 ## Links

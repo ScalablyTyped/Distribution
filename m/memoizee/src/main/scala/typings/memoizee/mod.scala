@@ -5,61 +5,78 @@ import typings.memoizee.memoizeeBooleans.`true`
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("memoizee", JSImport.Namespace)
-  @js.native
-  def apply[F /* <: js.Function1[/* repeated */ js.Any, _] */](f: F): F with Memoized[F] = js.native
-  @JSImport("memoizee", JSImport.Namespace)
-  @js.native
-  def apply[F /* <: js.Function1[/* repeated */ js.Any, _] */](f: F, options: Options[F]): F with Memoized[F] = js.native
+  @scala.inline
+  def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F): F & Memoized[F] = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[F & Memoized[F]]
+  @scala.inline
+  def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](f: F, options: Options[F]): F & Memoized[F] = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & Memoized[F]]
   
+  @JSImport("memoizee", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Memoized[F] extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     @JSName("clear")
-    var clear_Original: F with js.Function0[Unit] = js.native
+    var clear_Original: F & js.Function0[Unit]
     
-    var delete: F = js.native
+    var delete: F
+  }
+  object Memoized {
+    
+    @scala.inline
+    def apply[F](clear: F & js.Function0[Unit], delete: F): Memoized[F] = {
+      val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Memoized[F]]
+    }
+    
+    @scala.inline
+    implicit class MemoizedMutableBuilder[Self <: Memoized[?], F] (val x: Self & Memoized[F]) extends AnyVal {
+      
+      @scala.inline
+      def setClear(value: F & js.Function0[Unit]): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDelete(value: F): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  trait Options[F /* <: js.Function1[/* repeated */ js.Any, _] */] extends StObject {
+  trait Options[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var dispose: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var dispose: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var length: js.UndefOr[Double | `false`] = js.native
+    var length: js.UndefOr[Double | `false`] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var normalizer: js.UndefOr[js.Function1[/* args */ Parameters[F], String]] = js.native
+    var normalizer: js.UndefOr[js.Function1[/* args */ Parameters[F], String]] = js.undefined
     
-    var preFetch: js.UndefOr[Double | `true`] = js.native
+    var preFetch: js.UndefOr[Double | `true`] = js.undefined
     
-    var primitive: js.UndefOr[Boolean] = js.native
+    var primitive: js.UndefOr[Boolean] = js.undefined
     
-    var promise: js.UndefOr[Boolean] = js.native
+    var promise: js.UndefOr[Boolean] = js.undefined
     
-    var resolvers: js.UndefOr[js.Array[js.Function1[/* arg */ _, _]]] = js.native
+    var resolvers: js.UndefOr[js.Array[js.Function1[/* arg */ js.Any, js.Any]]] = js.undefined
   }
   object Options {
     
     @scala.inline
-    def apply[F /* <: js.Function1[/* repeated */ js.Any, _] */](): Options[F] = {
+    def apply[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](): Options[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[F]]
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], F /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with Options[F]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], F /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & Options[F]) extends AnyVal {
       
       @scala.inline
       def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
@@ -116,13 +133,13 @@ object mod {
       def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
       
       @scala.inline
-      def setResolvers(value: js.Array[js.Function1[/* arg */ _, _]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
+      def setResolvers(value: js.Array[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
       
       @scala.inline
-      def setResolversVarargs(value: (js.Function1[js.Any, js.Any])*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
+      def setResolversVarargs(value: (js.Function1[/* arg */ js.Any, js.Any])*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
     }
   }
 }

@@ -11,8 +11,8 @@ TweenJS is a simple tweening library for use in Javascript. It was developed to 
 | Full name          | tweenjs |
 | Keywords           | createjs, tweenjs, gskinner, javascript, html5, tween, motion, ease, animate |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 19680 |
+| # dependents       | 5 |
+| # downloads        | 17200 |
 | # stars            | 1 |
 
 ## Links

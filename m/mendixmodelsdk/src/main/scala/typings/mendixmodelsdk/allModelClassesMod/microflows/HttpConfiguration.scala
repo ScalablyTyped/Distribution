@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration")
@@ -38,9 +37,8 @@ object HttpConfiguration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -51,9 +49,8 @@ object HttpConfiguration {
     *  6.0.0 to 6.5.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -64,9 +61,8 @@ object HttpConfiguration {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.createInConsumedODataServiceUnderHttpConfiguration")
-  @js.native
-  def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = js.native
+  @scala.inline
+  def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -77,9 +73,8 @@ object HttpConfiguration {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.createInRestCallActionUnderHttpConfiguration")
-  @js.native
-  def createInRestCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = js.native
+  @scala.inline
+  def createInRestCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -87,9 +82,8 @@ object HttpConfiguration {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.createInWebServiceCallActionUnderHttpConfiguration")
-  @js.native
-  def createInWebServiceCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderHttpConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.HttpConfiguration]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.HttpConfiguration.structureTypeName")

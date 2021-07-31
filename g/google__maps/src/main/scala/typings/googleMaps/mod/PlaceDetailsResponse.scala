@@ -2,24 +2,22 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceDetailsResponse extends StObject {
   
   /** contains a set of attributions about this listing which must be displayed to the user. */
-  var html_attributions: js.Array[String] = js.native
+  var html_attributions: js.Array[String]
   
   /**
     * When the Google Places service returns a status code other than `OK`, there may be an additional `error_message` field
     * within the details response object. This field contains more detailed information about the reasons behind the given status code.
     */
   /** contains the detailed information about the place requested. */
-  var result: PlaceDetailsResult = js.native
+  var result: PlaceDetailsResult
   
   /** contains metadata on the request. */
-  var status: PlaceDetailsResponseStatus = js.native
+  var status: PlaceDetailsResponseStatus
 }
 object PlaceDetailsResponse {
   

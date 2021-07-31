@@ -3,23 +3,28 @@ package typings.reResizable
 import typings.reResizable.resizerMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reResizableStrings {
   
   @js.native
-  sealed trait bottom extends Direction
+  sealed trait bottom
+    extends StObject
+       with Direction
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomLeft extends Direction
+  sealed trait bottomLeft
+    extends StObject
+       with Direction
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends Direction
+  sealed trait bottomRight
+    extends StObject
+       with Direction
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
@@ -34,7 +39,9 @@ object reResizableStrings {
   def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait left
+    extends StObject
+       with Direction
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -44,7 +51,9 @@ object reResizableStrings {
   def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait right
+    extends StObject
+       with Direction
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -54,17 +63,23 @@ object reResizableStrings {
   def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait top extends Direction
+  sealed trait top
+    extends StObject
+       with Direction
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topLeft extends Direction
+  sealed trait topLeft
+    extends StObject
+       with Direction
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends Direction
+  sealed trait topRight
+    extends StObject
+       with Direction
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   

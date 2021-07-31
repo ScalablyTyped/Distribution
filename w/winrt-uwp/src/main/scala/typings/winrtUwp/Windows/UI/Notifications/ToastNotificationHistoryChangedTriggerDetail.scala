@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the details of a toast history changed trigger. */
-@js.native
 trait ToastNotificationHistoryChangedTriggerDetail extends StObject {
   
   /** Gets a value representing the kind of change that caused the toast history changed trigger. */
-  var changeType: ToastHistoryChangedType = js.native
+  var changeType: ToastHistoryChangedType
 }
 object ToastNotificationHistoryChangedTriggerDetail {
   

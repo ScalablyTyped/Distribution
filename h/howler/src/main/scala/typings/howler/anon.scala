@@ -8,29 +8,27 @@ import typings.howler.howlerStrings.linear
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ConeInnerAngle extends StObject {
     
-    var coneInnerAngle: js.UndefOr[Double] = js.native
+    var coneInnerAngle: js.UndefOr[Double] = js.undefined
     
-    var coneOuterAngle: js.UndefOr[Double] = js.native
+    var coneOuterAngle: js.UndefOr[Double] = js.undefined
     
-    var coneOuterGain: js.UndefOr[Double] = js.native
+    var coneOuterGain: js.UndefOr[Double] = js.undefined
     
-    var distanceModel: inverse | linear = js.native
+    var distanceModel: inverse | linear
     
-    var maxDistance: Double = js.native
+    var maxDistance: Double
     
-    var panningModel: HRTF | equalpower = js.native
+    var panningModel: HRTF | equalpower
     
-    var refDistance: Double = js.native
+    var refDistance: Double
     
-    var rolloffFactor: Double = js.native
+    var rolloffFactor: Double
   }
   object ConeInnerAngle {
     
@@ -84,14 +82,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var withCredentials: js.UndefOr[`true`] = js.native
+    var withCredentials: js.UndefOr[`true`] = js.undefined
   }
   object Headers {
     

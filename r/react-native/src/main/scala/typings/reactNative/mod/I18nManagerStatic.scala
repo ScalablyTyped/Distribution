@@ -3,23 +3,21 @@ package typings.reactNative.mod
 import typings.reactNative.anon.DoLeftAndRightSwapInRTL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait I18nManagerStatic extends StObject {
   
-  def allowRTL(allowRTL: Boolean): Unit = js.native
+  def allowRTL(allowRTL: Boolean): Unit
   
-  var doLeftAndRightSwapInRTL: Boolean = js.native
+  var doLeftAndRightSwapInRTL: Boolean
   
-  def forceRTL(forceRTL: Boolean): Unit = js.native
+  def forceRTL(forceRTL: Boolean): Unit
   
-  def getConstants(): DoLeftAndRightSwapInRTL = js.native
+  def getConstants(): DoLeftAndRightSwapInRTL
   
-  var isRTL: Boolean = js.native
+  var isRTL: Boolean
   
-  def swapLeftAndRightInRTL(swapLeftAndRight: Boolean): Unit = js.native
+  def swapLeftAndRightInRTL(swapLeftAndRight: Boolean): Unit
 }
 object I18nManagerStatic {
   

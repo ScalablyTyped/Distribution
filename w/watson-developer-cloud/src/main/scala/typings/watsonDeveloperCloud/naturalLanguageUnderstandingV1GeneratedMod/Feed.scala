@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** RSS or ATOM feed found on the webpage. */
-@js.native
 trait Feed extends StObject {
   
   /** URL of the RSS or ATOM feed. */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
 }
 object Feed {
   

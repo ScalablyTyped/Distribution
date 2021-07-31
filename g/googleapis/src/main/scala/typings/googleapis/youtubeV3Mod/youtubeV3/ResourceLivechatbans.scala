@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livechatbans")
@@ -30,7 +29,7 @@ class ResourceLivechatbans protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivechatbansDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivechatbansDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,7 +59,7 @@ class ResourceLivechatbans protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(callback: BodyResponseCallback[SchemaLiveChatBan]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveChatBan] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(params: ParamsResourceLivechatbansInsert): GaxiosPromise[SchemaLiveChatBan] = js.native
   def insert(params: ParamsResourceLivechatbansInsert, callback: BodyResponseCallback[SchemaLiveChatBan]): Unit = js.native
   def insert(

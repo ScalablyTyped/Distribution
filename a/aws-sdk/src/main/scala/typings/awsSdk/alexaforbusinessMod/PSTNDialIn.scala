@@ -2,31 +2,29 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PSTNDialIn extends StObject {
   
   /**
     * The zip code.
     */
-  var CountryCode: typings.awsSdk.alexaforbusinessMod.CountryCode = js.native
+  var CountryCode: typings.awsSdk.alexaforbusinessMod.CountryCode
   
   /**
     * The delay duration before Alexa enters the conference ID with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
     */
-  var OneClickIdDelay: typings.awsSdk.alexaforbusinessMod.OneClickIdDelay = js.native
+  var OneClickIdDelay: typings.awsSdk.alexaforbusinessMod.OneClickIdDelay
   
   /**
     * The delay duration before Alexa enters the conference pin with dual-tone multi-frequency (DTMF). Each number on the dial pad corresponds to a DTMF tone, which is how we send data over the telephone network.
     */
-  var OneClickPinDelay: typings.awsSdk.alexaforbusinessMod.OneClickPinDelay = js.native
+  var OneClickPinDelay: typings.awsSdk.alexaforbusinessMod.OneClickPinDelay
   
   /**
     * The phone number to call to join the conference.
     */
-  var PhoneNumber: OutboundPhoneNumber = js.native
+  var PhoneNumber: OutboundPhoneNumber
 }
 object PSTNDialIn {
   

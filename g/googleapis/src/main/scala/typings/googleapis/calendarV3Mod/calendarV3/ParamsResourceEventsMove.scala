@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEventsMove extends StandardParameters {
+trait ParamsResourceEventsMove
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier of the source calendar where the event currently is
     * on.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * Calendar identifier of the target calendar where the event is to be moved
     * to.
     */
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
   /**
     * Event identifier.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Please use sendUpdates instead.  Whether to send
@@ -40,13 +40,13 @@ trait ParamsResourceEventsMove extends StandardParameters {
     * emails might still be sent even if you set the value to false. The
     * default is false.
     */
-  var sendNotifications: js.UndefOr[Boolean] = js.native
+  var sendNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Guests who should receive notifications about the change of the event's
     * organizer.
     */
-  var sendUpdates: js.UndefOr[String] = js.native
+  var sendUpdates: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEventsMove {
   

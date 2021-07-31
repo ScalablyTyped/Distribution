@@ -2,17 +2,15 @@ package typings.dkimSigner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FieldNames extends StObject {
     
-    var fieldNames: String = js.native
+    var fieldNames: String
     
-    var headers: String = js.native
+    var headers: String
   }
   object FieldNames {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object Key {
     

@@ -2,17 +2,15 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISavedModel extends StObject {
   
   /** SavedModel metaGraphs */
-  var metaGraphs: js.UndefOr[js.Array[IMetaGraphDef] | Null] = js.native
+  var metaGraphs: js.UndefOr[js.Array[IMetaGraphDef] | Null] = js.undefined
   
   /** SavedModel savedModelSchemaVersion */
-  var savedModelSchemaVersion: js.UndefOr[Double | String | Null] = js.native
+  var savedModelSchemaVersion: js.UndefOr[Double | String | Null] = js.undefined
 }
 object ISavedModel {
   

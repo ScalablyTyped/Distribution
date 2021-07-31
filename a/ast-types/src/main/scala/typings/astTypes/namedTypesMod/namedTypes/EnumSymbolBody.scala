@@ -4,15 +4,15 @@ import typings.astTypes.kindsMod.EnumDefaultedMemberKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumSymbolBody extends ASTNode {
+trait EnumSymbolBody
+  extends StObject
+     with ASTNode {
   
-  var members: js.Array[EnumDefaultedMemberKind] = js.native
+  var members: js.Array[EnumDefaultedMemberKind]
   
-  var `type`: typings.astTypes.astTypesStrings.EnumSymbolBody = js.native
+  var `type`: typings.astTypes.astTypesStrings.EnumSymbolBody
 }
 object EnumSymbolBody {
   

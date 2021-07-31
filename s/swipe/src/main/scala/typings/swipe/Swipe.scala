@@ -2,27 +2,25 @@ package typings.swipe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Swipe extends StObject {
   
-  def attachEvents(): Unit = js.native
+  def attachEvents(): Unit
   
-  def getNumSlides(): Double = js.native
+  def getNumSlides(): Double
   
-  def getPos(): Double = js.native
+  def getPos(): Double
   
-  def kill(): Unit = js.native
+  def kill(): Unit
   
-  def next(): Unit = js.native
+  def next(): Unit
   
-  def prev(): Unit = js.native
+  def prev(): Unit
   
-  def setup(): Unit = js.native
+  def setup(): Unit
   
-  def slide(index: Double, duration: Double): Unit = js.native
+  def slide(index: Double, duration: Double): Unit
 }
 object Swipe {
   

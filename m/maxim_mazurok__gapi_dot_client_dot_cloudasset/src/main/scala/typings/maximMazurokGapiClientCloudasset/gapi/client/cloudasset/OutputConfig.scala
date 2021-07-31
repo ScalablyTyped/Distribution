@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputConfig extends StObject {
   
   /** Destination on BigQuery. The output table stores the fields in asset proto as columns in BigQuery. */
-  var bigqueryDestination: js.UndefOr[BigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[BigQueryDestination] = js.undefined
   
   /** Destination on Cloud Storage. */
-  var gcsDestination: js.UndefOr[GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GcsDestination] = js.undefined
 }
 object OutputConfig {
   

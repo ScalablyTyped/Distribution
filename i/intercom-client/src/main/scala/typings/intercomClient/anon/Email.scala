@@ -2,17 +2,15 @@ package typings.intercomClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Email extends StObject {
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var segment_id: js.UndefOr[String] = js.native
+  var segment_id: js.UndefOr[String] = js.undefined
   
-  var tag_id: js.UndefOr[String] = js.native
+  var tag_id: js.UndefOr[String] = js.undefined
 }
 object Email {
   

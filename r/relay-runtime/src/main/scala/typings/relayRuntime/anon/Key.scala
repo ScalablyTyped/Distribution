@@ -3,15 +3,13 @@ package typings.relayRuntime.anon
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Key extends StObject {
   
-  var filters: js.UndefOr[Variables] = js.native
+  var filters: js.UndefOr[Variables] = js.undefined
   
-  var key: String = js.native
+  var key: String
 }
 object Key {
   

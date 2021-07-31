@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for UpdateInstance.
   */
-@js.native
 trait SchemaUpdateInstanceRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaUpdateInstanceRequest extends StObject {
     * any future fields in [][google.spanner.admin.instance.v1.Instance] from
     * being erased accidentally by clients that do not know about them.
     */
-  var fieldMask: js.UndefOr[String] = js.native
+  var fieldMask: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The instance to update, which must always include the instance
@@ -26,7 +24,7 @@ trait SchemaUpdateInstanceRequest extends StObject {
     * [][google.spanner.admin.instance.v1.UpdateInstanceRequest.field_mask]
     * need be included.
     */
-  var instance: js.UndefOr[SchemaInstance] = js.native
+  var instance: js.UndefOr[SchemaInstance] = js.undefined
 }
 object SchemaUpdateInstanceRequest {
   

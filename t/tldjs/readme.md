@@ -12,7 +12,7 @@ JavaScript API to work against complex domain names, subdomains and URIs.
 | Keywords           | tld, sld, domain, browser, uri, url, domain name, subdomain, public suffix |
 | # releases         | 0 |
 | # dependents       | 73 |
-| # downloads        | 1635914 |
+| # downloads        | 1946030 |
 | # stars            | 9 |
 
 ## Links

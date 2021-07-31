@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateServiceSpecificCredentialResponse extends StObject {
   
   /**
     * A structure that contains information about the newly created service-specific credential.  This is the only time that the password for this credential set is available. It cannot be recovered later. Instead, you must reset the password with ResetServiceSpecificCredential. 
     */
-  var ServiceSpecificCredential: js.UndefOr[typings.awsSdk.iamMod.ServiceSpecificCredential] = js.native
+  var ServiceSpecificCredential: js.UndefOr[typings.awsSdk.iamMod.ServiceSpecificCredential] = js.undefined
 }
 object CreateServiceSpecificCredentialResponse {
   

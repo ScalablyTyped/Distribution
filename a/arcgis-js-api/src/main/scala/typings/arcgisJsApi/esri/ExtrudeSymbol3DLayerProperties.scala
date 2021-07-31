@@ -2,39 +2,39 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtrudeSymbol3DLayerProperties extends Symbol3DLayerProperties {
+trait ExtrudeSymbol3DLayerProperties
+  extends StObject
+     with Symbol3DLayerProperties {
   
   /**
     * Indicates whether the symbol layer geometry casts shadows in the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#castShadows)
     */
-  var castShadows: js.UndefOr[Boolean] = js.native
+  var castShadows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the contour edges on polygons symbolized with ExtrudeSymbol3DLayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#edges)
     */
-  var edges: js.UndefOr[Edges3DProperties] = js.native
+  var edges: js.UndefOr[Edges3DProperties] = js.undefined
   
   /**
     * The material used to shade the extrusion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#material)
     */
-  var material: js.UndefOr[ExtrudeSymbol3DLayerMaterialProperties] = js.native
+  var material: js.UndefOr[ExtrudeSymbol3DLayerMaterialProperties] = js.undefined
   
   /**
     * The height of the extrusion in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html#size)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object ExtrudeSymbol3DLayerProperties {
   

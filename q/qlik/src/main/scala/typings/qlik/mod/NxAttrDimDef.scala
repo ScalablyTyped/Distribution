@@ -2,17 +2,15 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxAttrDimDef extends StObject {
   
-  var qDef: String = js.native
+  var qDef: String
   
-  var qLibraryId: String = js.native
+  var qLibraryId: String
   
-  var qSortBy: SortCriteria = js.native
+  var qSortBy: SortCriteria
 }
 object NxAttrDimDef {
   

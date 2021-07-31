@@ -2,68 +2,65 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object request {
   
-  /**
-    *
-    * @param options
-    * @returns
-    */
-  @JSImport("dav", "request.addressBookQuery")
+  @JSImport("dav", "request")
   @js.native
-  def addressBookQuery(options: AddressBookQueryOptions): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     *
     * @param options
     * @returns
     */
-  @JSImport("dav", "request.basic")
-  @js.native
-  def basic(options: BasicOptions): Request_ = js.native
+  @scala.inline
+  def addressBookQuery(options: AddressBookQueryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addressBookQuery")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *
     * @param options
     * @returns
     */
-  @JSImport("dav", "request.calendarQuery")
-  @js.native
-  def calendarQuery(options: CalendarQueryOptions): String = js.native
+  @scala.inline
+  def basic(options: BasicOptions): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("basic")(options.asInstanceOf[js.Any]).asInstanceOf[Request_]
   
   /**
     *
     * @param options
     * @returns
     */
-  @JSImport("dav", "request.propfind")
-  @js.native
-  def propfind(options: PropfindOptions): String = js.native
+  @scala.inline
+  def calendarQuery(options: CalendarQueryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calendarQuery")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *
     * @param options
     * @returns
     */
-  @JSImport("dav", "request.syncCollection")
-  @js.native
-  def syncCollection(options: SyncCollectionOptions): String = js.native
+  @scala.inline
+  def propfind(options: PropfindOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("propfind")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  /**
+    *
+    * @param options
+    * @returns
+    */
+  @scala.inline
+  def syncCollection(options: SyncCollectionOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("syncCollection")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait AddressBookQueryOptions extends StObject {
     
     /**
       * value for Depth header.
       */
-    var depth: js.UndefOr[String] = js.native
+    var depth: js.UndefOr[String] = js.undefined
     
     /**
       * list of props to request.
       */
-    var props: js.Array[js.Object] = js.native
+    var props: js.Array[js.Object]
   }
   object AddressBookQueryOptions {
     
@@ -90,23 +87,22 @@ object request {
     }
   }
   
-  @js.native
   trait BasicOptions extends StObject {
     
     /**
       * put request body.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * cached calendar object etag.
       */
-    var etag: String = js.native
+    var etag: String
     
     /**
       * http method.
       */
-    var method: String = js.native
+    var method: String
   }
   object BasicOptions {
     
@@ -130,28 +126,27 @@ object request {
     }
   }
   
-  @js.native
   trait CalendarQueryOptions extends StObject {
     
     /**
       * value for Depth header.
       */
-    var depth: js.UndefOr[String] = js.native
+    var depth: js.UndefOr[String] = js.undefined
     
     /**
       * list of filters to send with request.
       */
-    var filters: js.Array[js.Object] = js.native
+    var filters: js.Array[js.Object]
     
     /**
       * list of props to request.
       */
-    var props: js.Array[js.Object] = js.native
+    var props: js.Array[js.Object]
     
     /**
       * VTIMEZONE calendar object.
       */
-    var timezone: String = js.native
+    var timezone: String
   }
   object CalendarQueryOptions {
     
@@ -187,18 +182,17 @@ object request {
     }
   }
   
-  @js.native
   trait PropfindOptions extends StObject {
     
     /**
       *  value for Depth header.
       */
-    var depth: js.UndefOr[String] = js.native
+    var depth: js.UndefOr[String] = js.undefined
     
     /**
       * list of props to request.
       */
-    var props: js.Array[js.Object] = js.native
+    var props: js.Array[js.Object]
   }
   object PropfindOptions {
     
@@ -225,28 +219,27 @@ object request {
     }
   }
   
-  @js.native
   trait SyncCollectionOptions extends StObject {
     
     /**
       * option value for Depth header.
       */
-    var depth: js.UndefOr[String] = js.native
+    var depth: js.UndefOr[String] = js.undefined
     
     /**
       * list of props to request.
       */
-    var props: js.Array[js.Object] = js.native
+    var props: js.Array[js.Object]
     
     /**
       * indicates scope of the sync report request.
       */
-    var syncLevel: Double = js.native
+    var syncLevel: Double
     
     /**
       * synchronization token provided by the server.
       */
-    var syncToken: String = js.native
+    var syncToken: String
   }
   object SyncCollectionOptions {
     

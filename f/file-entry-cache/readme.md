@@ -10,9 +10,9 @@ Super simple cache for file metadata, useful for process that work o a given ser
 | ------------------ | :-------------: |
 | Full name          | file-entry-cache |
 | Keywords           | file cache, task cache files, file cache, key par, key value, cache |
-| # releases         | 5 |
-| # dependents       | 81 |
-| # downloads        | 514904346 |
+| # releases         | 1 |
+| # dependents       | 100 |
+| # downloads        | 587625880 |
 | # stars            | 1 |
 
 ## Links

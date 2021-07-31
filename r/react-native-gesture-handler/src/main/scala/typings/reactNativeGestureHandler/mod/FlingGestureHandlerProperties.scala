@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlingGestureHandlerProperties extends GestureHandlerProperties {
+trait FlingGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
-  var numberOfPointers: js.UndefOr[Double] = js.native
+  var numberOfPointers: js.UndefOr[Double] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ FlingGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ FlingGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ FlingGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ FlingGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 object FlingGestureHandlerProperties {
   

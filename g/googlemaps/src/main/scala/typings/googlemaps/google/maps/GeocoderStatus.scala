@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait GeocoderStatus extends StObject
 object GeocoderStatus extends StObject {
   
   @js.native
-  sealed trait ERROR extends GeocoderStatus
+  sealed trait ERROR
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait INVALID_REQUEST extends GeocoderStatus
+  sealed trait INVALID_REQUEST
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait OK extends GeocoderStatus
+  sealed trait OK
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait OVER_QUERY_LIMIT extends GeocoderStatus
+  sealed trait OVER_QUERY_LIMIT
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait REQUEST_DENIED extends GeocoderStatus
+  sealed trait REQUEST_DENIED
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait UNKNOWN_ERROR extends GeocoderStatus
+  sealed trait UNKNOWN_ERROR
+    extends StObject
+       with GeocoderStatus
   
   @js.native
-  sealed trait ZERO_RESULTS extends GeocoderStatus
+  sealed trait ZERO_RESULTS
+    extends StObject
+       with GeocoderStatus
 }

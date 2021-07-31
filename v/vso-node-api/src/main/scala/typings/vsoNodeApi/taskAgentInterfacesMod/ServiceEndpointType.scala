@@ -3,33 +3,31 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.vsoNodeApi.formInputInterfacesMod.InputDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEndpointType extends StObject {
   
-  var authenticationSchemes: js.Array[ServiceEndpointAuthenticationScheme] = js.native
+  var authenticationSchemes: js.Array[ServiceEndpointAuthenticationScheme]
   
-  var dataSources: js.Array[DataSource] = js.native
+  var dataSources: js.Array[DataSource]
   
-  var dependencyData: js.Array[DependencyData] = js.native
+  var dependencyData: js.Array[DependencyData]
   
-  var description: String = js.native
+  var description: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var endpointUrl: EndpointUrl = js.native
+  var endpointUrl: EndpointUrl
   
-  var helpLink: HelpLink = js.native
+  var helpLink: HelpLink
   
-  var helpMarkDown: String = js.native
+  var helpMarkDown: String
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var inputDescriptors: js.Array[InputDescriptor] = js.native
+  var inputDescriptors: js.Array[InputDescriptor]
   
-  var name: String = js.native
+  var name: String
 }
 object ServiceEndpointType {
   

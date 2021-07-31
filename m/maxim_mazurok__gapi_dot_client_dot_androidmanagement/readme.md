@@ -10,9 +10,9 @@ TypeScript typings for Android Management API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androidmanagement |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 52 |
+| # downloads        | 1111 |
 | # stars            | 0 |
 
 ## Links

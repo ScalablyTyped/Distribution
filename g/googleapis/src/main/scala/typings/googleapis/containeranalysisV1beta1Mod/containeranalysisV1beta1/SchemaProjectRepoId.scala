@@ -2,25 +2,23 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Selects a repo using a Google Cloud Platform project ID (e.g.,
   * winged-cargo-31) and a repo name within that project.
   */
-@js.native
 trait SchemaProjectRepoId extends StObject {
   
   /**
     * The ID of the project.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the repo. Leave empty for the default repo.
     */
-  var repoName: js.UndefOr[String] = js.native
+  var repoName: js.UndefOr[String] = js.undefined
 }
 object SchemaProjectRepoId {
   

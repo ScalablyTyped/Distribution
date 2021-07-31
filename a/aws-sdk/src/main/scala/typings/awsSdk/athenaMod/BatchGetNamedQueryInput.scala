@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetNamedQueryInput extends StObject {
   
   /**
     * An array of query IDs.
     */
-  var NamedQueryIds: NamedQueryIdList = js.native
+  var NamedQueryIds: NamedQueryIdList
 }
 object BatchGetNamedQueryInput {
   

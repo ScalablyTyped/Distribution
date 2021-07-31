@@ -2,26 +2,24 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIntrospectionSchemaRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The schema format: SDL or JSON.
     */
-  var format: OutputType = js.native
+  var format: OutputType
   
   /**
     * A flag that specifies whether the schema introspection should contain directives.
     */
-  var includeDirectives: js.UndefOr[BooleanValue] = js.native
+  var includeDirectives: js.UndefOr[BooleanValue] = js.undefined
 }
 object GetIntrospectionSchemaRequest {
   

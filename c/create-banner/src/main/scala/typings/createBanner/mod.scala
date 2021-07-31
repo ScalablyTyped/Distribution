@@ -18,31 +18,32 @@ import typings.createBanner.createBannerStrings.normal
 import typings.createBanner.createBannerStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("create-banner", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("create-banner", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  @JSImport("create-banner", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait BannerData
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * @default new Date().toISOString()
       */
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
     /**
       * @default new Date().getFullYear()
       */
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object BannerData {
     
@@ -70,9 +71,8 @@ object mod {
   }
   
   // @credit @sindresorhus/type-fest
-  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: Primitive */] = LiteralType | (BaseType with _empty)
+  type LiteralUnion[LiteralType /* <: BaseType */, BaseType /* <: Primitive */] = LiteralType | (BaseType & _empty)
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -84,19 +84,19 @@ object mod {
           `camel-case` | `capital-case` | `constant-case` | `dot-case` | `header-case` | `no-case` | `param-case` | `pascal-case` | `path-case` | `sentence-case` | `snake-case`, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The extra data for creating banner, will be merged into package data.
       */
-    var data: js.UndefOr[BannerData] = js.native
+    var data: js.UndefOr[BannerData] = js.undefined
     
     /**
       * The package data for creating banner.
       * If it is null, will read from the closest package.json file by default using the `read-pkg-up` package
       * @default null;
       */
-    var pkg: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+    var pkg: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
     
     /**
       * The template for creating banner.
@@ -104,7 +104,7 @@ object mod {
       * Other values will be used directly as a custom template.
       * @default 'normal'
       */
-    var template: js.UndefOr[LiteralUnion[normal | simple | `inline`, String]] = js.native
+    var template: js.UndefOr[LiteralUnion[normal | simple | `inline`, String]] = js.undefined
   }
   object Options {
     

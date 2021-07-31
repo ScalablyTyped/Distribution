@@ -10,9 +10,9 @@ A light statistical package that operates on numeric Arrays.
 | ------------------ | :-------------: |
 | Full name          | stats-lite |
 | Keywords           | stats, statistics, numbers, math, sum, mean, average, mode, median, percentile, variance, deviation |
-| # releases         | 1 |
-| # dependents       | 66 |
-| # downloads        | 2465025 |
+| # releases         | 0 |
+| # dependents       | 71 |
+| # downloads        | 2955308 |
 | # stars            | 5 |
 
 ## Links

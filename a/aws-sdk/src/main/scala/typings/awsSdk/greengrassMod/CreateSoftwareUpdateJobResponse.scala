@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSoftwareUpdateJobResponse extends StObject {
   
   /**
     * The IoT Job ARN corresponding to this update.
     */
-  var IotJobArn: js.UndefOr[string] = js.native
+  var IotJobArn: js.UndefOr[string] = js.undefined
   
   /**
     * The IoT Job Id corresponding to this update.
     */
-  var IotJobId: js.UndefOr[string] = js.native
+  var IotJobId: js.UndefOr[string] = js.undefined
   
   /**
     * The software version installed on the device or devices after the update.
     */
-  var PlatformSoftwareVersion: js.UndefOr[string] = js.native
+  var PlatformSoftwareVersion: js.UndefOr[string] = js.undefined
 }
 object CreateSoftwareUpdateJobResponse {
   

@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildRequestValidationResult extends StObject {
   
   /**
     * The message associated with the result.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The result.
     */
-  var result: ValidationResult = js.native
+  var result: ValidationResult
 }
 object BuildRequestValidationResult {
   

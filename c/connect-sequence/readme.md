@@ -12,7 +12,7 @@ A node.js module to run connect-like middlewares in sequence
 | Keywords           | node, node.js, connect, middleware, express |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 9335 |
+| # downloads        | 10953 |
 | # stars            | 1 |
 
 ## Links

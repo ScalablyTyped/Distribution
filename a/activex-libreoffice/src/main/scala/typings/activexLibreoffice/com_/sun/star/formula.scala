@@ -20,7 +20,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formula {
@@ -29,9 +28,9 @@ object formula {
     * The accessible view of a formula documents command text.
     * @since OOo 1.1.2
     */
-  @js.native
   trait AccessibleFormulaText
-    extends XAccessible
+    extends StObject
+       with XAccessible
        with XAccessibleComponent
        with XAccessibleContext
        with XAccessibleEventBroadcaster
@@ -90,9 +89,9 @@ object formula {
     * The accessible view of a formula documents visual representation.
     * @since OOo 1.1.2
     */
-  @js.native
   trait AccessibleFormulaView
-    extends XAccessible
+    extends StObject
+       with XAccessible
        with XAccessibleComponent
        with XAccessibleContext
        with XAccessibleText
@@ -172,206 +171,205 @@ object formula {
   }
   
   /** The formula properties provide access to the properties of a formula in a formula generator */
-  @js.native
   trait FormulaProperties extends StObject {
     
     /**
       * contains the alignment of the formula.
       * @see HorizontalAlignment
       */
-    var Alignment: Double = js.native
+    var Alignment: Double
     
     /**
       * contains the base font height in point the formula will be formatted in.
       *
       * All properties containing relative values are related to this value.
       */
-    var BaseFontHeight: Double = js.native
+    var BaseFontHeight: Double
     
     /**
       * contains the baselines offset in respect to the top of the formula rectangle
       * @since OOo 3.4
       */
-    var BaseLine: Double = js.native
+    var BaseLine: Double
     
     /** contains the metric value of the bottom margin of the formula. */
-    var BottomMargin: Double = js.native
+    var BottomMargin: Double
     
     /** customized name for fixed font. */
-    var CustomFontNameFixed: String = js.native
+    var CustomFontNameFixed: String
     
     /** customized name for sans serif font */
-    var CustomFontNameSans: String = js.native
+    var CustomFontNameSans: String
     
     /** customized name for serif font */
-    var CustomFontNameSerif: String = js.native
+    var CustomFontNameSerif: String
     
     /** determines if the customized fixed font is bold. */
-    var FontFixedIsBold: Boolean = js.native
+    var FontFixedIsBold: Boolean
     
     /** determines if the customized fixed font is italic. */
-    var FontFixedIsItalic: Boolean = js.native
+    var FontFixedIsItalic: Boolean
     
     /** determines if the font that is used to display functions is bold. */
-    var FontFunctionsIsBold: Boolean = js.native
+    var FontFunctionsIsBold: Boolean
     
     /** determines if the font that is used to display functions is italic. */
-    var FontFunctionsIsItalic: Boolean = js.native
+    var FontFunctionsIsItalic: Boolean
     
     /** contains the name of the font that is used to display functions contained in the formula. */
-    var FontNameFunctions: String = js.native
+    var FontNameFunctions: String
     
     /** contains the name of the font that is used to display numbers contained in the formula. */
-    var FontNameNumbers: String = js.native
+    var FontNameNumbers: String
     
     /** contains the name of the font that is used to display text contained in the formula. */
-    var FontNameText: String = js.native
+    var FontNameText: String
     
     /** contains the name of the font that is used to display variables contained in the formula. */
-    var FontNameVariables: String = js.native
+    var FontNameVariables: String
     
     /** determines if the font that is used to display numbers is bold. */
-    var FontNumbersIsBold: Boolean = js.native
+    var FontNumbersIsBold: Boolean
     
     /** determines if the font that is used to display numbers is italic. */
-    var FontNumbersIsItalic: Boolean = js.native
+    var FontNumbersIsItalic: Boolean
     
     /** determines if the customized sans serif font is bold. */
-    var FontSansIsBold: Boolean = js.native
+    var FontSansIsBold: Boolean
     
     /** determines if the customized sans serif font is italic. */
-    var FontSansIsItalic: Boolean = js.native
+    var FontSansIsItalic: Boolean
     
     /** determines if the customized serif font is bold. */
-    var FontSerifIsBold: Boolean = js.native
+    var FontSerifIsBold: Boolean
     
     /** determines if the customized serif font is italic. */
-    var FontSerifIsItalic: Boolean = js.native
+    var FontSerifIsItalic: Boolean
     
     /** determines if the font that is used to display text is bold. */
-    var FontTextIsBold: Boolean = js.native
+    var FontTextIsBold: Boolean
     
     /** determines if the font that is used to display text is italic. */
-    var FontTextIsItalic: Boolean = js.native
+    var FontTextIsItalic: Boolean
     
     /** determines if the font that is used to display variables is bold. */
-    var FontVariablesIsBold: Boolean = js.native
+    var FontVariablesIsBold: Boolean
     
     /** determines if the font that is used to display variables is italic. */
-    var FontVariablesIsItalic: Boolean = js.native
+    var FontVariablesIsItalic: Boolean
     
     /** contains the command string of the formula */
-    var Formula: String = js.native
+    var Formula: String
     
     /** decides if all brackets (even those without "left"/"right" modifier) are scaled. */
-    var IsScaleAllBrackets: Boolean = js.native
+    var IsScaleAllBrackets: Boolean
     
     /** switches into text mode. */
-    var IsTextMode: Boolean = js.native
+    var IsTextMode: Boolean
     
     /** contains the metric value of the left margin of the formula. */
-    var LeftMargin: Double = js.native
+    var LeftMargin: Double
     
     /** contains the relative distance of brackets. */
-    var RelativeBracketDistance: Double = js.native
+    var RelativeBracketDistance: Double
     
     /** contains the relative excess size of brackets. */
-    var RelativeBracketExcessSize: Double = js.native
+    var RelativeBracketExcessSize: Double
     
     /**
       * contains the relative height of the font for functions.
       *
       * The values unit is percent of the {@link com.sun.star.formula.FormulaProperties.BaseFontHeight}
       */
-    var RelativeFontHeightFunctions: Double = js.native
+    var RelativeFontHeightFunctions: Double
     
     /**
       * contains the relative height of the font for indices.
       *
       * The values unit is percent of the {@link com.sun.star.formula.FormulaProperties.BaseFontHeight}
       */
-    var RelativeFontHeightIndices: Double = js.native
+    var RelativeFontHeightIndices: Double
     
     /**
       * contains the relative height of the font for limits.
       *
       * The values unit is percent of the {@link com.sun.star.formula.FormulaProperties.BaseFontHeight}
       */
-    var RelativeFontHeightLimits: Double = js.native
+    var RelativeFontHeightLimits: Double
     
     /**
       * contains the relative height of the font for operators.
       *
       * The values unit is percent of the {@link com.sun.star.formula.FormulaProperties.BaseFontHeight}
       */
-    var RelativeFontHeightOperators: Double = js.native
+    var RelativeFontHeightOperators: Double
     
     /**
       * contains the relative height of the font for text.
       *
       * The values unit is percent of the {@link com.sun.star.formula.FormulaProperties.BaseFontHeight}
       */
-    var RelativeFontHeightText: Double = js.native
+    var RelativeFontHeightText: Double
     
     /** contains the relative excess length of a fraction bar. */
-    var RelativeFractionBarExcessLength: Double = js.native
+    var RelativeFractionBarExcessLength: Double
     
     /** contains the relative line weight of a fraction bar. */
-    var RelativeFractionBarLineWeight: Double = js.native
+    var RelativeFractionBarLineWeight: Double
     
     /** contains the relative depth of the denominator of a fraction */
-    var RelativeFractionDenominatorDepth: Double = js.native
+    var RelativeFractionDenominatorDepth: Double
     
     /** contains the relative height of the numerator of a fraction. */
-    var RelativeFractionNumeratorHeight: Double = js.native
+    var RelativeFractionNumeratorHeight: Double
     
     /** contains the relative superscript of indices. */
-    var RelativeIndexSubscript: Double = js.native
+    var RelativeIndexSubscript: Double
     
     /** contains the relative subscript of indices. */
-    var RelativeIndexSuperscript: Double = js.native
+    var RelativeIndexSuperscript: Double
     
     /** contains the relative line spacing. */
-    var RelativeLineSpacing: Double = js.native
+    var RelativeLineSpacing: Double
     
     /** contains the relative distance of lower limits. */
-    var RelativeLowerLimitDistance: Double = js.native
+    var RelativeLowerLimitDistance: Double
     
     /** contains the relative column spacing of matrices. */
-    var RelativeMatrixColumnSpacing: Double = js.native
+    var RelativeMatrixColumnSpacing: Double
     
     /** contains the relative line spacing of matrices. */
-    var RelativeMatrixLineSpacing: Double = js.native
+    var RelativeMatrixLineSpacing: Double
     
     /** contains the relative excess of operators. */
-    var RelativeOperatorExcessSize: Double = js.native
+    var RelativeOperatorExcessSize: Double
     
     /** contains the relative spacing of operators. */
-    var RelativeOperatorSpacing: Double = js.native
+    var RelativeOperatorSpacing: Double
     
     /** contains the relative root spacing */
-    var RelativeRootSpacing: Double = js.native
+    var RelativeRootSpacing: Double
     
     /** contains the relative scaling of the bracket excess. */
-    var RelativeScaleBracketExcessSize: Double = js.native
+    var RelativeScaleBracketExcessSize: Double
     
     /** contains the relative spacing. */
-    var RelativeSpacing: Double = js.native
+    var RelativeSpacing: Double
     
     /** contains the relative minimum height of the formula. */
-    var RelativeSymbolMinimumHeight: Double = js.native
+    var RelativeSymbolMinimumHeight: Double
     
     /** contains the relative primary height of symbols. */
-    var RelativeSymbolPrimaryHeight: Double = js.native
+    var RelativeSymbolPrimaryHeight: Double
     
     /** contains the relative distance of upper limits */
-    var RelativeUpperLimitDistance: Double = js.native
+    var RelativeUpperLimitDistance: Double
     
     /** contains the metric value of the right margin of the formula. */
-    var RightMargin: Double = js.native
+    var RightMargin: Double
     
     /** contains the metric value of the top margin of the formula. */
-    var TopMargin: Double = js.native
+    var TopMargin: Double
   }
   object FormulaProperties {
     
@@ -612,53 +610,52 @@ object formula {
   }
   
   /** @deprecated DeprecateddraftnWeight should be changed to float as in FontWeight.idlnItalic probably needs to have FontItalic extended by the two extra defines */
-  @js.native
   trait SymbolDescriptor extends StObject {
     
     /**
       * Specifies the character set which is supported by the font.
       * @see com.sun.star.awt.CharSet
       */
-    var nCharSet: Double = js.native
+    var nCharSet: Double
     
     /** Specifies the Unicode character of the symbol. */
-    var nCharacter: Double = js.native
+    var nCharacter: Double
     
     /**
       * Specifies the general style of the font.
       * @see com.sun.star.awt.FontFamily
       */
-    var nFamily: Double = js.native
+    var nFamily: Double
     
     /**
       * Specifies if the font is italic.
       * @see com.sun.star.awt.FontSlant The values com::sun::star::awt::FontSlant::REVERSE_OBLIQUE and com::sun::star::awt::FontSlant::REVERSE_ITALIC may not
       */
-    var nItalic: Double = js.native
+    var nItalic: Double
     
     /**
       * Specifies the pitch of the font.
       * @see com.sun.star.awt.FontPitch
       */
-    var nPitch: Double = js.native
+    var nPitch: Double
     
     /**
       * Specifies the thickness of the line.
       * @see com.sun.star.awt.FontWeight The allowed integer values correspond as follows: 0 : {@link com.sun.star.awt.FontWeight.DONTKNOW} 1 : {@link com.sun
       */
-    var nWeight: Double = js.native
+    var nWeight: Double
     
     /** The export name of the symbol. */
-    var sExportName: String = js.native
+    var sExportName: String
     
     /** Specifies the exact name of the font ("Arial", "Courier", etc.). */
-    var sFontName: String = js.native
+    var sFontName: String
     
     /** The name of the symbol. */
-    var sName: String = js.native
+    var sName: String
     
     /** Specifies the name of the symbol set to which this symbol belongs. */
-    var sSymbolSet: String = js.native
+    var sSymbolSet: String
   }
   object SymbolDescriptor {
     

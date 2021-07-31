@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getQueueMod {
   
-  @JSImport("@pulumi/aws/sqs/getQueue", "getQueue")
+  @JSImport("@pulumi/aws/sqs/getQueue", JSImport.Namespace)
   @js.native
-  def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = js.native
-  @JSImport("@pulumi/aws/sqs/getQueue", "getQueue")
-  @js.native
-  def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetQueueResult]]
+  @scala.inline
+  def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetQueueResult]]
+  
   trait GetQueueArgs extends StObject {
     
     /**
       * The name of the queue to match.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetQueueArgs {
     
@@ -51,30 +51,29 @@ object getQueueMod {
     }
   }
   
-  @js.native
   trait GetQueueResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the queue.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags for the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The URL of the queue.
       */
-    val url: String = js.native
+    val url: String
   }
   object GetQueueResult {
     

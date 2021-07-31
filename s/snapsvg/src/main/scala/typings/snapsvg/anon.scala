@@ -4,19 +4,17 @@ import typings.mina.mina.AnimationDescriptor
 import typings.snapsvg.mod.Animation_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alpha extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Alpha {
     

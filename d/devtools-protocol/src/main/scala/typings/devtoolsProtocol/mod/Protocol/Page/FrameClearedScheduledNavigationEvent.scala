@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameClearedScheduledNavigationEvent extends StObject {
   
   /**
     * Id of the frame that has cleared its scheduled navigation.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
 }
 object FrameClearedScheduledNavigationEvent {
   

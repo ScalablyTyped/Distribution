@@ -7,46 +7,46 @@ import typings.wordpressApiFetch.anon.ProtectedRaw
 import typings.wordpressApiFetch.anon.RawString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseBlock[T /* <: Context */] extends BaseResponse {
+trait BaseBlock[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var content: ProtectedRaw with (js.Object | Blockversion) = js.native
+  var content: ProtectedRaw & (js.Object | Blockversion)
   
-  var date: String = js.native
+  var date: String
   
-  var date_gmt: String = js.native
+  var date_gmt: String
   
-  var guid: Contextual[T, js.Object, js.Object] = js.native
+  var guid: Contextual[T, js.Object, js.Object]
   
-  var id: Double = js.native
+  var id: Double
   
-  var link: String = js.native
+  var link: String
   
-  var modified: String = js.native
+  var modified: String
   
-  var modified_gmt: String = js.native
+  var modified_gmt: String
   
-  var password: String = js.native
+  var password: String
   
-  var slug: String = js.native
+  var slug: String
   
-  var status: PostStatus = js.native
+  var status: PostStatus
   
-  var template: String = js.native
+  var template: String
   
-  var title: RawString | js.Array[js.Any] = js.native
+  var title: RawString | js.Array[js.Any]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseBlock {
   
   @scala.inline
   def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
-    content: ProtectedRaw with (js.Object | Blockversion),
+    content: ProtectedRaw & (js.Object | Blockversion),
     date: String,
     date_gmt: String,
     guid: Contextual[T, js.Object, js.Object],
@@ -67,10 +67,10 @@ object BaseBlock {
   }
   
   @scala.inline
-  implicit class BaseBlockMutableBuilder[Self <: BaseBlock[_], T /* <: Context */] (val x: Self with BaseBlock[T]) extends AnyVal {
+  implicit class BaseBlockMutableBuilder[Self <: BaseBlock[?], T /* <: Context */] (val x: Self & BaseBlock[T]) extends AnyVal {
     
     @scala.inline
-    def setContent(value: ProtectedRaw with (js.Object | Blockversion)): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: ProtectedRaw & (js.Object | Blockversion)): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])

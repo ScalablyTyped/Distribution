@@ -6,23 +6,21 @@ import typings.exceljs.anon.PartialFont
 import typings.exceljs.anon.PartialProtection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var alignment: PartialAlignment = js.native
+  var alignment: PartialAlignment
   
-  var border: PartialBorders = js.native
+  var border: PartialBorders
   
-  var fill: Fill = js.native
+  var fill: Fill
   
-  var font: PartialFont = js.native
+  var font: PartialFont
   
-  var numFmt: String = js.native
+  var numFmt: String
   
-  var protection: PartialProtection = js.native
+  var protection: PartialProtection
 }
 object Style {
   

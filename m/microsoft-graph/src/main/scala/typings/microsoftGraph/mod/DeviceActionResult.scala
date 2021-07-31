@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceActionResult extends StObject {
   
   // Action name
-  var actionName: js.UndefOr[NullableOption[String]] = js.native
+  var actionName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // State of the action. Possible values are: none, pending, canceled, active, done, failed, notSupported.
-  var actionState: js.UndefOr[ActionState] = js.native
+  var actionState: js.UndefOr[ActionState] = js.undefined
   
   // Time the action state was last updated
-  var lastUpdatedDateTime: js.UndefOr[String] = js.native
+  var lastUpdatedDateTime: js.UndefOr[String] = js.undefined
   
   // Time the action was initiated
-  var startDateTime: js.UndefOr[String] = js.native
+  var startDateTime: js.UndefOr[String] = js.undefined
 }
 object DeviceActionResult {
   

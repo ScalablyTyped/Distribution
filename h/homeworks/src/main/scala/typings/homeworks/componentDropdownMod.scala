@@ -5,7 +5,6 @@ import typings.angularCore.mod.Renderer2
 import typings.homeworks.managerMod.HomeworksManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentDropdownMod {
@@ -13,7 +12,7 @@ object componentDropdownMod {
   @JSImport("homeworks/lib/ng2-homeworks/src/components/dropdown/component.dropdown", "WorksDropdown")
   @js.native
   class WorksDropdown protected () extends HomeworksManager {
-    def this(renderer: Renderer2, elementRef: ElementRef[_]) = this()
+    def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
     @JSName("$dropdown")
     var $dropdown: js.Any = js.native
@@ -25,7 +24,7 @@ object componentDropdownMod {
     
     var direction: String = js.native
     
-    var dropdownChild: ElementRef[_] = js.native
+    var dropdownChild: ElementRef[js.Any] = js.native
     
     var elementRef: js.Any = js.native
     

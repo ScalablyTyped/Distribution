@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitCountdownElement extends StObject {
   
-  def start(): Unit = js.native
+  def start(): Unit
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object UIkitCountdownElement {
   

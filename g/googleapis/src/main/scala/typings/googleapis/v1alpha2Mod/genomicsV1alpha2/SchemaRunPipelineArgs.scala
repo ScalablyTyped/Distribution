@@ -3,20 +3,18 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The pipeline run arguments.
   */
-@js.native
 trait SchemaRunPipelineArgs extends StObject {
   
   /**
     * This field is deprecated. Use `labels` instead. Client-specified pipeline
     * operation identifier.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * Pipeline input arguments; keys are defined in the pipeline documentation.
@@ -24,7 +22,7 @@ trait SchemaRunPipelineArgs extends StObject {
     * If parameters with defaults are specified here, the defaults will be
     * overridden.
     */
-  var inputs: js.UndefOr[StringDictionary[String]] = js.native
+  var inputs: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * How long to keep the VM up after a failure (for example docker command
@@ -32,7 +30,7 @@ trait SchemaRunPipelineArgs extends StObject {
     * one can ssh into the VM to debug. Default is 0; maximum allowed value is
     * 1 day.
     */
-  var keepVmAliveOnFailureDuration: js.UndefOr[String] = js.native
+  var keepVmAliveOnFailureDuration: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this pipeline run. Labels will also be applied to
@@ -46,13 +44,13 @@ trait SchemaRunPipelineArgs extends StObject {
     * lowercase letter, and all following characters must be a dash, lowercase
     * letter, or digit, except the last character, which cannot be a dash.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. Logging options. Used by the service to communicate results to
     * the user.
     */
-  var logging: js.UndefOr[SchemaLoggingOptions] = js.native
+  var logging: js.UndefOr[SchemaLoggingOptions] = js.undefined
   
   /**
     * Pipeline output arguments; keys are defined in the pipeline
@@ -60,26 +58,26 @@ trait SchemaRunPipelineArgs extends StObject {
     * specified.  If parameters with defaults are specified here, the defaults
     * will be overridden.
     */
-  var outputs: js.UndefOr[StringDictionary[String]] = js.native
+  var outputs: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. The project in which to run the pipeline. The caller must have
     * WRITER access to all Google Cloud services and resources (e.g. Google
     * Compute Engine) will be used.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies resource requirements/overrides for the pipeline run.
     */
-  var resources: js.UndefOr[SchemaPipelineResources] = js.native
+  var resources: js.UndefOr[SchemaPipelineResources] = js.undefined
   
   /**
     * The Google Cloud Service Account that will be used to access data and
     * services. By default, the compute service account associated with
     * `projectId` is used.
     */
-  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
 }
 object SchemaRunPipelineArgs {
   

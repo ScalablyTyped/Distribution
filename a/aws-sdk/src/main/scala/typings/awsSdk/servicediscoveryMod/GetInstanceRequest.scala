@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceRequest extends StObject {
   
   /**
     * The ID of the instance that you want to get information about.
     */
-  var InstanceId: ResourceId = js.native
+  var InstanceId: ResourceId
   
   /**
     * The ID of the service that the instance is associated with.
     */
-  var ServiceId: ResourceId = js.native
+  var ServiceId: ResourceId
 }
 object GetInstanceRequest {
   

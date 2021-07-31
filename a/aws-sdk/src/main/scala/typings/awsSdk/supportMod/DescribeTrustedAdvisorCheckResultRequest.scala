@@ -2,21 +2,19 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTrustedAdvisorCheckResultRequest extends StObject {
   
   /**
     * The unique identifier for the Trusted Advisor check.
     */
-  var checkId: String = js.native
+  var checkId: String
   
   /**
     * The ISO 639-1 code for the language in which AWS provides support. AWS Support currently supports English ("en") and Japanese ("ja"). Language parameters must be passed explicitly for operations that take them.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object DescribeTrustedAdvisorCheckResultRequest {
   

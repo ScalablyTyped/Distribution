@@ -2,14 +2,12 @@ package typings.activexVbide.VBIDE
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReferencesEvents extends StObject {
   
   @JSName("VBIDE.ReferencesEvents_typekey")
-  var VBIDEDotReferencesEvents_typekey: ReferencesEvents = js.native
+  var VBIDEDotReferencesEvents_typekey: ReferencesEvents
 }
 object ReferencesEvents {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Country List Response
   */
-@js.native
 trait SchemaCountriesListResponse extends StObject {
   
   /**
     * Country collection.
     */
-  var countries: js.UndefOr[js.Array[SchemaCountry]] = js.native
+  var countries: js.UndefOr[js.Array[SchemaCountry]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#countriesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaCountriesListResponse {
   

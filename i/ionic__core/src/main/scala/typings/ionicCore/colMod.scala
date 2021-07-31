@@ -3,14 +3,15 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colMod {
   
   @JSImport("@ionic/core/dist/types/components/col/col", "Col")
   @js.native
-  class Col () extends ComponentInterface {
+  class Col ()
+    extends StObject
+       with ComponentInterface {
     
     var calculateOffset: js.Any = js.native
     

@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveUnknownsAndDefaults extends PluginConfig {
+trait PluginRemoveUnknownsAndDefaults
+  extends StObject
+     with PluginConfig {
   
-  var removeUnknownsAndDefaults: Boolean | js.Object = js.native
+  var removeUnknownsAndDefaults: Boolean | js.Object
 }
 object PluginRemoveUnknownsAndDefaults {
   

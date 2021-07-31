@@ -5,46 +5,44 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetVpnAttachmentFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpnAttachmentMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpnAttachment", "getVpnAttachment")
+  @JSImport("@pulumi/aws/ec2transitgateway/getVpnAttachment", JSImport.Namespace)
   @js.native
-  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpnAttachment", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpnAttachment", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpnAttachment", "getVpnAttachment")
-  @js.native
-  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpnAttachment(): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")().asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: GetVpnAttachmentArgs): js.Promise[GetVpnAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  @scala.inline
+  def getVpnAttachment(args: GetVpnAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpnAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnAttachmentResult]]
+  
   trait GetVpnAttachmentArgs extends StObject {
     
     /**
       * Configuration block(s) for filtering. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetVpnAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpnAttachmentFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match a pair on the desired Transit Gateway VPN Attachment.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway.
       */
-    val transitGatewayId: js.UndefOr[String] = js.native
+    val transitGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the EC2 VPN Connection.
       */
-    val vpnConnectionId: js.UndefOr[String] = js.native
+    val vpnConnectionId: js.UndefOr[String] = js.undefined
   }
   object GetVpnAttachmentArgs {
     
@@ -86,24 +84,23 @@ object getVpnAttachmentMod {
     }
   }
   
-  @js.native
   trait GetVpnAttachmentResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpnAttachmentFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Key-value tags for the EC2 Transit Gateway VPN Attachment
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val transitGatewayId: js.UndefOr[String] = js.native
+    val transitGatewayId: js.UndefOr[String] = js.undefined
     
-    val vpnConnectionId: js.UndefOr[String] = js.native
+    val vpnConnectionId: js.UndefOr[String] = js.undefined
   }
   object GetVpnAttachmentResult {
     

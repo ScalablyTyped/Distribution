@@ -2,15 +2,13 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BstrWorkerLabel extends StObject {
   
-  val bstrWorkerLabel: String = js.native
+  val bstrWorkerLabel: String
   
-  val dwUniqueID: Double = js.native
+  val dwUniqueID: Double
 }
 object BstrWorkerLabel {
   

@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If {@link getLocalAudioStats} is called successfully, the {@link LocalAudioStatsMap} provides the UID and {@link LocalAudioStats} of the local user.
   */
-@js.native
 trait LocalAudioStats extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait LocalAudioStats extends StObject {
     * - "1": Opus.
     * - "2": AAC.
     */
-  val CodecType: js.UndefOr[String] = js.native
+  val CodecType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the audio is muted or not.
@@ -27,19 +25,19 @@ trait LocalAudioStats extends StObject {
     * - "1": Muted.
     * - "0": Unmuted.
     */
-  val MuteState: js.UndefOr[String] = js.native
+  val MuteState: js.UndefOr[String] = js.undefined
   
   /** Energy level of the captured audio. */
-  val RecordingLevel: js.UndefOr[String] = js.native
+  val RecordingLevel: js.UndefOr[String] = js.undefined
   
   /** Sampling rate, in kHz. */
-  val SamplingRate: js.UndefOr[String] = js.native
+  val SamplingRate: js.UndefOr[String] = js.undefined
   
   /** Bitrate of the sent audio, in Kbps. */
-  val SendBitrate: js.UndefOr[String] = js.native
+  val SendBitrate: js.UndefOr[String] = js.undefined
   
   /** Energy level of the sent audio. */
-  val SendLevel: js.UndefOr[String] = js.native
+  val SendLevel: js.UndefOr[String] = js.undefined
 }
 object LocalAudioStats {
   

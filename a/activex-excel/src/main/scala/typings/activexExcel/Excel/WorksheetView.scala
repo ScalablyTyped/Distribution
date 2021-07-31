@@ -2,32 +2,32 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorksheetView extends SheetView {
+trait WorksheetView
+  extends StObject
+     with SheetView {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var DisplayFormulas: Boolean = js.native
+  var DisplayFormulas: Boolean
   
-  var DisplayGridlines: Boolean = js.native
+  var DisplayGridlines: Boolean
   
-  var DisplayHeadings: Boolean = js.native
+  var DisplayHeadings: Boolean
   
-  var DisplayOutline: Boolean = js.native
+  var DisplayOutline: Boolean
   
-  var DisplayZeros: Boolean = js.native
+  var DisplayZeros: Boolean
   
   @JSName("Excel.WorksheetView_typekey")
-  var ExcelDotWorksheetView_typekey: WorksheetView = js.native
+  var ExcelDotWorksheetView_typekey: WorksheetView
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Sheet: Worksheet = js.native
+  val Sheet: Worksheet
 }
 object WorksheetView {
   

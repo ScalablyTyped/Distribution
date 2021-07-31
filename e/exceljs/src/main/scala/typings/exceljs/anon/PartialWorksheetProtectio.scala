@@ -2,42 +2,40 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.WorksheetProtection> */
-@js.native
 trait PartialWorksheetProtectio extends StObject {
   
-  var autoFilter: js.UndefOr[Boolean] = js.native
+  var autoFilter: js.UndefOr[Boolean] = js.undefined
   
-  var deleteColumns: js.UndefOr[Boolean] = js.native
+  var deleteColumns: js.UndefOr[Boolean] = js.undefined
   
-  var deleteRows: js.UndefOr[Boolean] = js.native
+  var deleteRows: js.UndefOr[Boolean] = js.undefined
   
-  var formatCells: js.UndefOr[Boolean] = js.native
+  var formatCells: js.UndefOr[Boolean] = js.undefined
   
-  var formatColumns: js.UndefOr[Boolean] = js.native
+  var formatColumns: js.UndefOr[Boolean] = js.undefined
   
-  var formatRows: js.UndefOr[Boolean] = js.native
+  var formatRows: js.UndefOr[Boolean] = js.undefined
   
-  var insertColumns: js.UndefOr[Boolean] = js.native
+  var insertColumns: js.UndefOr[Boolean] = js.undefined
   
-  var insertHyperlinks: js.UndefOr[Boolean] = js.native
+  var insertHyperlinks: js.UndefOr[Boolean] = js.undefined
   
-  var insertRows: js.UndefOr[Boolean] = js.native
+  var insertRows: js.UndefOr[Boolean] = js.undefined
   
-  var objects: js.UndefOr[Boolean] = js.native
+  var objects: js.UndefOr[Boolean] = js.undefined
   
-  var pivotTables: js.UndefOr[Boolean] = js.native
+  var pivotTables: js.UndefOr[Boolean] = js.undefined
   
-  var scenarios: js.UndefOr[Boolean] = js.native
+  var scenarios: js.UndefOr[Boolean] = js.undefined
   
-  var selectLockedCells: js.UndefOr[Boolean] = js.native
+  var selectLockedCells: js.UndefOr[Boolean] = js.undefined
   
-  var selectUnlockedCells: js.UndefOr[Boolean] = js.native
+  var selectUnlockedCells: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object PartialWorksheetProtectio {
   

@@ -2,7 +2,6 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "SimpleTextOperation")
@@ -16,6 +15,10 @@ class SimpleTextOperation () extends StObject {
 }
 /* static members */
 object SimpleTextOperation {
+  
+  @JSImport("ot", "SimpleTextOperation")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Delete `count` many characters at the zero-based `position` in the document.
@@ -48,11 +51,9 @@ object SimpleTextOperation {
     * `SimpleTextOperation`s.
     * @param operation The op
     */
-  @JSImport("ot", "SimpleTextOperation.fromTextOperation")
-  @js.native
-  def fromTextOperation(operation: TextOperation): js.Array[SimpleTextOperation] = js.native
+  @scala.inline
+  def fromTextOperation(operation: TextOperation): js.Array[SimpleTextOperation] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTextOperation")(operation.asInstanceOf[js.Any]).asInstanceOf[js.Array[SimpleTextOperation]]
   
-  @JSImport("ot", "SimpleTextOperation.transform")
-  @js.native
-  def transform(a: SimpleTextOperation, b: SimpleTextOperation): js.Tuple2[SimpleTextOperation, SimpleTextOperation] = js.native
+  @scala.inline
+  def transform(a: SimpleTextOperation, b: SimpleTextOperation): js.Tuple2[SimpleTextOperation, SimpleTextOperation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[SimpleTextOperation, SimpleTextOperation]]
 }

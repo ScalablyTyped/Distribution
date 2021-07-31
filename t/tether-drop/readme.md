@@ -12,7 +12,7 @@ Client-side library for creating dropdowns
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 15 |
-| # downloads        | 430086 |
+| # downloads        | 455026 |
 | # stars            | 4 |
 
 ## Links

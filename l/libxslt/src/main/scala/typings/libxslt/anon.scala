@@ -4,23 +4,21 @@ import typings.libxslt.libxsltStrings.document
 import typings.libxslt.libxsltStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NoWrapParams extends StObject {
     
-    var noWrapParams: js.UndefOr[Boolean] = js.native
+    var noWrapParams: js.UndefOr[Boolean] = js.undefined
     
-    var outputFormat: string = js.native
+    var outputFormat: string
   }
   object NoWrapParams {
     
     @scala.inline
-    def apply(outputFormat: string): NoWrapParams = {
-      val __obj = js.Dynamic.literal(outputFormat = outputFormat.asInstanceOf[js.Any])
+    def apply(): NoWrapParams = {
+      val __obj = js.Dynamic.literal(outputFormat = "string")
       __obj.asInstanceOf[NoWrapParams]
     }
     
@@ -38,18 +36,17 @@ object anon {
     }
   }
   
-  @js.native
   trait OutputFormat extends StObject {
     
-    var noWrapParams: js.UndefOr[Boolean] = js.native
+    var noWrapParams: js.UndefOr[Boolean] = js.undefined
     
-    var outputFormat: document = js.native
+    var outputFormat: document
   }
   object OutputFormat {
     
     @scala.inline
-    def apply(outputFormat: document): OutputFormat = {
-      val __obj = js.Dynamic.literal(outputFormat = outputFormat.asInstanceOf[js.Any])
+    def apply(): OutputFormat = {
+      val __obj = js.Dynamic.literal(outputFormat = "document")
       __obj.asInstanceOf[OutputFormat]
     }
     

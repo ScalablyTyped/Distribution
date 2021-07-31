@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * href=&quot;https://www.envoyproxy.io/docs/envoy/latest/api-v2/api/v2/core/base.proto#envoy-api-msg-core-node&quot;
   * Node metadata of their XDS requests to loadbalancers.
   */
-@js.native
 trait SchemaMetadataFilter extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait SchemaMetadataFilter extends StObject {
     * metadata based on filterMatchCriteria  This list must not be empty and
     * can have at the most 64 entries.
     */
-  var filterLabels: js.UndefOr[js.Array[SchemaMetadataFilterLabelMatch]] = js.native
+  var filterLabels: js.UndefOr[js.Array[SchemaMetadataFilterLabelMatch]] = js.undefined
   
   /**
     * Specifies how individual filterLabel matches within the list of
@@ -39,7 +37,7 @@ trait SchemaMetadataFilter extends StObject {
     * must have a matching label in the provided metadata.  - MATCH_ALL: All
     * filterLabels must have matching labels in the provided metadata.
     */
-  var filterMatchCriteria: js.UndefOr[String] = js.native
+  var filterMatchCriteria: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadataFilter {
   

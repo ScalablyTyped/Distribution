@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalysisSchemeStatus extends StObject {
   
-  var Options: AnalysisScheme = js.native
+  var Options: AnalysisScheme
   
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object AnalysisSchemeStatus {
   

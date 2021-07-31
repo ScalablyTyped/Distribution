@@ -5,27 +5,25 @@ import typings.hoganJs.hoganJsBooleans.`true`
 import typings.hoganJs.mod.SectionTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined hogan.js.hogan.js.HoganOptions & {  asString :false} */
-  @js.native
   trait HoganOptionsasStringfalse extends StObject {
     
-    var asString: js.UndefOr[Boolean] with `false` = js.native
+    var asString: js.UndefOr[Boolean] & `false`
     
-    var delimiters: js.UndefOr[String] = js.native
+    var delimiters: js.UndefOr[String] = js.undefined
     
-    var disableLambda: js.UndefOr[Boolean] = js.native
+    var disableLambda: js.UndefOr[Boolean] = js.undefined
     
-    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.native
+    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.undefined
   }
   object HoganOptionsasStringfalse {
     
     @scala.inline
-    def apply(asString: js.UndefOr[Boolean] with `false`): HoganOptionsasStringfalse = {
+    def apply(asString: js.UndefOr[Boolean] & `false`): HoganOptionsasStringfalse = {
       val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
       __obj.asInstanceOf[HoganOptionsasStringfalse]
     }
@@ -34,7 +32,7 @@ object anon {
     implicit class HoganOptionsasStringfalseMutableBuilder[Self <: HoganOptionsasStringfalse] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsString(value: js.UndefOr[Boolean] with `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      def setAsString(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
@@ -60,21 +58,20 @@ object anon {
   }
   
   /* Inlined hogan.js.hogan.js.HoganOptions & {  asString :true} */
-  @js.native
   trait HoganOptionsasStringtrue extends StObject {
     
-    var asString: js.UndefOr[Boolean] with `true` = js.native
+    var asString: js.UndefOr[Boolean] & `true`
     
-    var delimiters: js.UndefOr[String] = js.native
+    var delimiters: js.UndefOr[String] = js.undefined
     
-    var disableLambda: js.UndefOr[Boolean] = js.native
+    var disableLambda: js.UndefOr[Boolean] = js.undefined
     
-    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.native
+    var sectionTags: js.UndefOr[js.Array[SectionTags]] = js.undefined
   }
   object HoganOptionsasStringtrue {
     
     @scala.inline
-    def apply(asString: js.UndefOr[Boolean] with `true`): HoganOptionsasStringtrue = {
+    def apply(asString: js.UndefOr[Boolean] & `true`): HoganOptionsasStringtrue = {
       val __obj = js.Dynamic.literal(asString = asString.asInstanceOf[js.Any])
       __obj.asInstanceOf[HoganOptionsasStringtrue]
     }
@@ -83,7 +80,7 @@ object anon {
     implicit class HoganOptionsasStringtrueMutableBuilder[Self <: HoganOptionsasStringtrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsString(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
+      def setAsString(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDelimiters(value: String): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])

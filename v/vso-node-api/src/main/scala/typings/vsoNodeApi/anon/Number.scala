@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Number extends StObject {
   
-  var boolean: scala.Double = js.native
+  var boolean: scala.Double
   
-  var guid: scala.Double = js.native
+  var guid: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var number: scala.Double = js.native
+  var number: scala.Double
   
-  var string: scala.Double = js.native
+  var string: scala.Double
   
-  var uri: scala.Double = js.native
+  var uri: scala.Double
 }
 object Number {
   

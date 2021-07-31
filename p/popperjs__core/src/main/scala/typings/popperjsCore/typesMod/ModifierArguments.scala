@@ -3,19 +3,17 @@ package typings.popperjsCore.typesMod
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifierArguments[Options /* <: Obj */] extends StObject {
   
-  var instance: Instance = js.native
+  var instance: Instance
   
-  var name: String = js.native
+  var name: String
   
-  var options: Partial[Options] = js.native
+  var options: Partial[Options]
   
-  var state: State = js.native
+  var state: State
 }
 object ModifierArguments {
   
@@ -26,7 +24,7 @@ object ModifierArguments {
   }
   
   @scala.inline
-  implicit class ModifierArgumentsMutableBuilder[Self <: ModifierArguments[_], Options /* <: Obj */] (val x: Self with ModifierArguments[Options]) extends AnyVal {
+  implicit class ModifierArgumentsMutableBuilder[Self <: ModifierArguments[?], Options /* <: Obj */] (val x: Self & ModifierArguments[Options]) extends AnyVal {
     
     @scala.inline
     def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])

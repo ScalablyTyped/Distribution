@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * test. Examples: {&#39;Version&#39;, &#39;1.0&#39;}, {&#39;Release
   * Track&#39;, &#39;BETA&#39;}.
   */
-@js.native
 trait SchemaClientInfoDetail extends StObject {
   
   /**
     * Required. The key of detailed client information.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The value of detailed client information.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaClientInfoDetail {
   

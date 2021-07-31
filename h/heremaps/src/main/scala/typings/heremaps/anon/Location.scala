@@ -2,21 +2,19 @@ package typings.heremaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var Location: DisplayPosition = js.native
+  var Location: DisplayPosition
   
-  var MatchLevel: String = js.native
+  var MatchLevel: String
   
-  var MatchQuality: HouseNumber = js.native
+  var MatchQuality: HouseNumber
   
-  var MatchType: String = js.native
+  var MatchType: String
   
-  var Relevance: Double = js.native
+  var Relevance: Double
 }
 object Location {
   

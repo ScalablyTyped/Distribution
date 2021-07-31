@@ -12,7 +12,7 @@ Automatic UI Color Palette Generator
 | Keywords           | color, color-palette |
 | # releases         | 0 |
 | # dependents       | 24 |
-| # downloads        | 690981 |
+| # downloads        | 702399 |
 | # stars            | 3 |
 
 ## Links

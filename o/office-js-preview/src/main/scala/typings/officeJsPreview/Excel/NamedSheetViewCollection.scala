@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait NamedSheetViewCollection extends ClientObject {
+trait NamedSheetViewCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a new sheet view with the given name.
@@ -105,7 +106,7 @@ trait NamedSheetViewCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): NamedSheetViewCollection = js.native
-  def load(options: NamedSheetViewCollectionLoadOptions with CollectionLoadOptions): NamedSheetViewCollection = js.native
+  def load(options: NamedSheetViewCollectionLoadOptions & CollectionLoadOptions): NamedSheetViewCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): NamedSheetViewCollection = js.native
   def load(propertyNames: String): NamedSheetViewCollection = js.native
   def load(propertyNames: js.Array[String]): NamedSheetViewCollection = js.native

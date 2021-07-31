@@ -2,25 +2,25 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesShrink[T] extends Generic {
+trait IndicesShrink[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var copy_settings: js.UndefOr[Boolean] = js.native
+  var copy_settings: js.UndefOr[Boolean] = js.undefined
   
-  var index: String = js.native
+  var index: String
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var target: String = js.native
+  var target: String
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object IndicesShrink {
   
@@ -31,7 +31,7 @@ object IndicesShrink {
   }
   
   @scala.inline
-  implicit class IndicesShrinkMutableBuilder[Self <: IndicesShrink[_], T] (val x: Self with IndicesShrink[T]) extends AnyVal {
+  implicit class IndicesShrinkMutableBuilder[Self <: IndicesShrink[?], T] (val x: Self & IndicesShrink[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -9,7 +9,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`64`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object status {
@@ -18,14 +17,13 @@ object status {
     * contains a list of format IDs and names which are part of the system clipboard.
     * @since OOo 2.0
     */
-  @js.native
   trait ClipboardFormats extends StObject {
     
     /** specifies a sequence of format IDs which are contained in the system clipboard. */
-    var Identifiers: SafeArray[Double] = js.native
+    var Identifiers: SafeArray[Double]
     
     /** specifies a sequence of format names which are contained in the system clipboard. */
-    var Names: SafeArray[String] = js.native
+    var Names: SafeArray[String]
   }
   object ClipboardFormats {
     
@@ -52,17 +50,16 @@ object status {
     * For example, this can be used to select a font.
     * @since OOo 2.0
     */
-  @js.native
   trait FontHeight extends StObject {
     
     /** specifies the width of the font in the measure of the destination. */
-    var Diff: Double = js.native
+    var Diff: Double
     
     /** specifies the current height of the font. */
-    var Height: Double = js.native
+    var Height: Double
     
     /** specifies the height of the font in the measure of the destination. */
-    var Prop: Double = js.native
+    var Prop: Double
   }
   object FontHeight {
     
@@ -123,17 +120,16 @@ object status {
     * describes a state of a property.
     * @since OOo 2.0
     */
-  @js.native
   trait ItemStatus extends StObject {
     
     /**
       * numerical value which describes the current state of an item.
       * @see ItemState
       */
-    var State: Double = js.native
+    var State: Double
     
     /** optional data which can be used by an implementation to send additional information. The content is dependent on the specific implementation. */
-    var aStateData: js.Any = js.native
+    var aStateData: js.Any
   }
   object ItemStatus {
     
@@ -158,14 +154,13 @@ object status {
     * specifies a left and right margin.
     * @since OOo 2.0
     */
-  @js.native
   trait LeftRightMargin extends StObject {
     
     /** specifies a left side margin in 1/100th mm. */
-    var Left: Double = js.native
+    var Left: Double
     
     /** specifies a right side margin in 1/100th mm. */
-    var Right: Double = js.native
+    var Right: Double
   }
   object LeftRightMargin {
     
@@ -190,32 +185,31 @@ object status {
     * specifies a left and right margin.
     * @since LibreOffice 5.3
     */
-  @js.native
   trait LeftRightMarginScale extends StObject {
     
     /** specifies if the automatic calculation of the first line indent occurs. */
-    var AutoFirstLine: Boolean = js.native
+    var AutoFirstLine: Boolean
     
     /** specifies a first line indent relative to TextLeft in 1/100th mm. */
-    var FirstLine: Double = js.native
+    var FirstLine: Double
     
     /** specifies a left margin in 1/100th mm. */
-    var Left: Double = js.native
+    var Left: Double
     
     /** specifies a right margin in 1/100th mm. */
-    var Right: Double = js.native
+    var Right: Double
     
     /** specifies a scale value for the first line margin in percent. */
-    var ScaleFirstLine: Double = js.native
+    var ScaleFirstLine: Double
     
     /** specifies a scale value for the left margin in percent. */
-    var ScaleLeft: Double = js.native
+    var ScaleLeft: Double
     
     /** specifies a scale value for the right margin in percent. */
-    var ScaleRight: Double = js.native
+    var ScaleRight: Double
     
     /** specifies a left text margin in 1/100th mm. */
-    var TextLeft: Double = js.native
+    var TextLeft: Double
   }
   object LeftRightMarginScale {
     
@@ -267,14 +261,13 @@ object status {
     * contains an association between a style name and a value.
     * @since OOo 2.0
     */
-  @js.native
   trait Template extends StObject {
     
     /** specifies a style name. */
-    var StyleName: String = js.native
+    var StyleName: String
     
     /** specifies a value that is bound to the style name. */
-    var Value: Double = js.native
+    var Value: Double
   }
   object Template {
     
@@ -299,14 +292,13 @@ object status {
     * specifies an upper and lower margin.
     * @since OOo 2.0
     */
-  @js.native
   trait UpperLowerMargin extends StObject {
     
     /** specifies a lower margin in 1/100th mm. */
-    var Lower: Double = js.native
+    var Lower: Double
     
     /** specifies a upper margin in 1/100th mm. */
-    var Upper: Double = js.native
+    var Upper: Double
   }
   object UpperLowerMargin {
     
@@ -331,20 +323,19 @@ object status {
     * specifies an upper and lower margin.
     * @since OOo 2.0
     */
-  @js.native
   trait UpperLowerMarginScale extends StObject {
     
     /** specifies a lower margin in 1/100th mm. */
-    var Lower: Double = js.native
+    var Lower: Double
     
     /** specifies a scale value for the lower margin. */
-    var ScaleLower: Double = js.native
+    var ScaleLower: Double
     
     /** specifies a scale value for the upper margin. */
-    var ScaleUpper: Double = js.native
+    var ScaleUpper: Double
     
     /** specifies a upper margin in 1/100th mm. */
-    var Upper: Double = js.native
+    var Upper: Double
   }
   object UpperLowerMarginScale {
     
@@ -377,20 +368,19 @@ object status {
     * For example, this can be used to select a font.
     * @since OOo 2.0
     */
-  @js.native
   trait Verb extends StObject {
     
     /** specifies the Id of the command. */
-    var VerbId: Double = js.native
+    var VerbId: Double
     
     /** specifies if the command is available for a constant object. */
-    var VerbIsConst: Boolean = js.native
+    var VerbIsConst: Boolean
     
     /** specifies if the command should be visible in a menu. */
-    var VerbIsOnMenu: Boolean = js.native
+    var VerbIsOnMenu: Boolean
     
     /** specifies the name of the command. The name is localized. */
-    var VerbName: String = js.native
+    var VerbName: String
   }
   object Verb {
     
@@ -421,11 +411,10 @@ object status {
     * describes the visibility state of a property.
     * @since OOo 2.0
     */
-  @js.native
   trait Visibility extends StObject {
     
     /** `TRUE` if the property is visible otherwise `FALSE` . */
-    var bVisible: Boolean = js.native
+    var bVisible: Boolean
   }
   object Visibility {
     

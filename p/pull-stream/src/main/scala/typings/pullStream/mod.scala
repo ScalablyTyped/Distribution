@@ -3,7 +3,6 @@ package typings.pullStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,49 +10,38 @@ object mod {
   /**
     * Pipe data through a number of `pull-stream`s
     */
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply(pullStreams: (PossibleSource[_] | PossibleSink[_] | (PossibleThrough[_, _]))*): Source[_] | Sink[_] | (Through_[_, _]) | Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[In](sink: PossibleSink[In]): Sink[In] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[InOut](source: PossibleSource[InOut], sink: PossibleSink[InOut]): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[In, Out](source: PossibleSource[In], t1: PossibleThrough[In, Out], sink: PossibleSink[Out]): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[In, Out](t1: Through_[In, Out]): Through_[In, Out] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(pullStreams: (PossibleSource[js.Any] | PossibleSink[js.Any] | (PossibleThrough[js.Any, js.Any]))*): Source[js.Any] | Sink[js.Any] | (Through_[js.Any, js.Any]) | Unit = ^.asInstanceOf[js.Dynamic].apply(pullStreams.asInstanceOf[js.Any]).asInstanceOf[Source[js.Any] | Sink[js.Any] | (Through_[js.Any, js.Any]) | Unit]
+  @scala.inline
+  def apply[In](sink: PossibleSink[In]): Sink[In] = ^.asInstanceOf[js.Dynamic].apply(sink.asInstanceOf[js.Any]).asInstanceOf[Sink[In]]
+  @scala.inline
+  def apply[InOut](source: PossibleSource[InOut], sink: PossibleSink[InOut]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[In, Out](source: PossibleSource[In], t1: PossibleThrough[In, Out], sink: PossibleSink[Out]): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[In, Out](t1: Through_[In, Out]): Through_[In, Out] = ^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any]).asInstanceOf[Through_[In, Out]]
+  @scala.inline
   def apply[In, P1, Out](
     source: PossibleSource[In],
     t1: PossibleThrough[In, P1],
     t2: PossibleThrough[P1, Out],
     sink: PossibleSink[Out]
-  ): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[In, P1, Out](t1: Through_[In, P1], t2: PossibleThrough[P1, Out]): Through_[In, Out] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[In, P1, Out](t1: Through_[In, P1], t2: PossibleThrough[P1, Out]): Through_[In, Out] = (^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Through_[In, Out]]
+  @scala.inline
   def apply[In, P1, P2, Out](
     source: PossibleSource[In],
     t1: PossibleThrough[In, P1],
     t2: PossibleThrough[P1, P2],
     t3: PossibleThrough[P2, Out],
     sink: PossibleSink[Out]
-  ): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
-  def apply[In, P1, P2, Out](t1: Through_[In, P1], t2: PossibleThrough[P1, P2], t3: PossibleThrough[P2, Out]): Through_[In, Out] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply[In, P1, P2, Out](t1: Through_[In, P1], t2: PossibleThrough[P1, P2], t3: PossibleThrough[P2, Out]): Through_[In, Out] = (^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any])).asInstanceOf[Through_[In, Out]]
+  @scala.inline
   def apply[In, P1, P2, P3, Out](
     source: PossibleSource[In],
     t1: PossibleThrough[In, P1],
@@ -61,17 +49,15 @@ object mod {
     t3: PossibleThrough[P2, P3],
     t4: PossibleThrough[P3, Out],
     sink: PossibleSink[Out]
-  ): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply[In, P1, P2, P3, Out](
     t1: Through_[In, P1],
     t2: PossibleThrough[P1, P2],
     t3: PossibleThrough[P2, P3],
     t4: PossibleThrough[P3, Out]
-  ): Through_[In, Out] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Through_[In, Out] = (^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any])).asInstanceOf[Through_[In, Out]]
+  @scala.inline
   def apply[In, P1, P2, P3, P4, Out](
     source: PossibleSource[In],
     t1: PossibleThrough[In, P1],
@@ -80,18 +66,16 @@ object mod {
     t4: PossibleThrough[P3, P4],
     t5: PossibleThrough[P4, Out],
     sink: PossibleSink[Out]
-  ): Unit = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], sink.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply[In, P1, P2, P3, P4, Out](
     t1: Through_[In, P1],
     t2: PossibleThrough[P1, P2],
     t3: PossibleThrough[P2, P3],
     t4: PossibleThrough[P3, P4],
     t5: PossibleThrough[P4, Out]
-  ): Through_[In, Out] = js.native
-  @JSImport("pull-stream", JSImport.Namespace)
-  @js.native
+  ): Through_[In, Out] = (^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any])).asInstanceOf[Through_[In, Out]]
+  @scala.inline
   def apply[In, P1, P2, P3, P4, P5, Out](
     t1: Through_[In, P1],
     t2: PossibleThrough[P1, P2],
@@ -99,7 +83,11 @@ object mod {
     t4: PossibleThrough[P3, P4],
     t5: PossibleThrough[P4, P5],
     t6: PossibleThrough[P5, Out]
-  ): Through_[In, Out] = js.native
+  ): Through_[In, Out] = (^.asInstanceOf[js.Dynamic].apply(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], t4.asInstanceOf[js.Any], t5.asInstanceOf[js.Any], t6.asInstanceOf[js.Any])).asInstanceOf[Through_[In, Out]]
+  
+  @JSImport("pull-stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pull-stream", "asyncMap")
   @js.native
@@ -195,25 +183,81 @@ object mod {
   
   type Abort = Error | Boolean | Null
   
-  type Duplex[In, Out] = DuplexSource[In] with DuplexSink[Out]
+  trait Duplex[In, Out]
+    extends StObject
+       with DuplexSource[In]
+       with DuplexSink[Out]
+  object Duplex {
+    
+    @scala.inline
+    def apply[In, Out](
+      sink: /* source */ Source[Out] => Unit,
+      source: (/* endOrError */ Abort, /* cb */ SourceCallback[In]) => Unit
+    ): Duplex[In, Out] = {
+      val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = js.Any.fromFunction2(source))
+      __obj.asInstanceOf[Duplex[In, Out]]
+    }
+  }
   
-  @js.native
   trait DuplexSink[Out] extends StObject {
     
-    def sink(source: Source[Out]): Unit = js.native
+    def sink(source: Source[Out]): Unit
     @JSName("sink")
-    var sink_Original: Sink[Out] = js.native
+    var sink_Original: Sink[Out]
+  }
+  object DuplexSink {
+    
+    @scala.inline
+    def apply[Out](sink: /* source */ Source[Out] => Unit): DuplexSink[Out] = {
+      val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink))
+      __obj.asInstanceOf[DuplexSink[Out]]
+    }
+    
+    @scala.inline
+    implicit class DuplexSinkMutableBuilder[Self <: DuplexSink[?], Out] (val x: Self & DuplexSink[Out]) extends AnyVal {
+      
+      @scala.inline
+      def setSink(value: /* source */ Source[Out] => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait DuplexSource[In] extends StObject {
     
-    def source(endOrError: Abort, cb: SourceCallback[In]): Unit = js.native
+    def source(endOrError: Abort, cb: SourceCallback[In]): Unit
     @JSName("source")
-    var source_Original: Source[In] = js.native
+    var source_Original: Source[In]
+  }
+  object DuplexSource {
+    
+    @scala.inline
+    def apply[In](source: (/* endOrError */ Abort, /* cb */ SourceCallback[In]) => Unit): DuplexSource[In] = {
+      val __obj = js.Dynamic.literal(source = js.Any.fromFunction2(source))
+      __obj.asInstanceOf[DuplexSource[In]]
+    }
+    
+    @scala.inline
+    implicit class DuplexSourceMutableBuilder[Self <: DuplexSource[?], In] (val x: Self & DuplexSource[In]) extends AnyVal {
+      
+      @scala.inline
+      def setSource(value: (/* endOrError */ Abort, /* cb */ SourceCallback[In]) => Unit): Self = StObject.set(x, "source", js.Any.fromFunction2(value))
+    }
   }
   
-  type DuplexThrough[In, Out] = DuplexSource[In] with DuplexSink[Out]
+  trait DuplexThrough[In, Out]
+    extends StObject
+       with DuplexSource[In]
+       with DuplexSink[Out]
+  object DuplexThrough {
+    
+    @scala.inline
+    def apply[In, Out](
+      sink: /* source */ Source[Out] => Unit,
+      source: (/* endOrError */ Abort, /* cb */ SourceCallback[In]) => Unit
+    ): DuplexThrough[In, Out] = {
+      val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = js.Any.fromFunction2(source))
+      __obj.asInstanceOf[DuplexThrough[In, Out]]
+    }
+  }
   
   type EndOrError = Abort
   

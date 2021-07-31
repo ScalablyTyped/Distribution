@@ -2,16 +2,14 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightNumber extends StObject {
   
   /**
     * Change the height of the subchart.
     */
-  var height: Double = js.native
+  var height: Double
 }
 object HeightNumber {
   

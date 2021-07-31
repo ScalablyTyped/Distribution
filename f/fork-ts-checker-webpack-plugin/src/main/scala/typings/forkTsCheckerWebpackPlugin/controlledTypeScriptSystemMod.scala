@@ -9,20 +9,23 @@ import typings.typescript.mod.System
 import typings.typescript.mod.WatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlledTypeScriptSystemMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledTypeScriptSystem", "createControlledTypeScriptSystem")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledTypeScriptSystem", JSImport.Namespace)
   @js.native
-  def createControlledTypeScriptSystem(typescript: Typeofts): ControlledTypeScriptSystem = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/reporter/ControlledTypeScriptSystem", "createControlledTypeScriptSystem")
-  @js.native
-  def createControlledTypeScriptSystem(typescript: Typeofts, mode: FileSystemMode): ControlledTypeScriptSystem = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createControlledTypeScriptSystem(typescript: Typeofts): ControlledTypeScriptSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any]).asInstanceOf[ControlledTypeScriptSystem]
+  @scala.inline
+  def createControlledTypeScriptSystem(typescript: Typeofts, mode: FileSystemMode): ControlledTypeScriptSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledTypeScriptSystem")(typescript.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ControlledTypeScriptSystem]
   
   @js.native
-  trait ControlledTypeScriptSystem extends System {
+  trait ControlledTypeScriptSystem
+    extends StObject
+       with System {
     
     def clearCache(): Unit = js.native
     
@@ -55,30 +58,20 @@ object controlledTypeScriptSystemMod {
     @JSName("watchDirectory")
     def watchDirectory_MControlledTypeScriptSystem(path: String, callback: DirectoryWatcherCallback): FileWatcher = js.native
     @JSName("watchDirectory")
-    def watchDirectory_MControlledTypeScriptSystem(
-      path: String,
-      callback: DirectoryWatcherCallback,
-      recursive: js.UndefOr[scala.Nothing],
-      options: WatchOptions
-    ): FileWatcher = js.native
-    @JSName("watchDirectory")
     def watchDirectory_MControlledTypeScriptSystem(path: String, callback: DirectoryWatcherCallback, recursive: Boolean): FileWatcher = js.native
     @JSName("watchDirectory")
     def watchDirectory_MControlledTypeScriptSystem(path: String, callback: DirectoryWatcherCallback, recursive: Boolean, options: WatchOptions): FileWatcher = js.native
+    @JSName("watchDirectory")
+    def watchDirectory_MControlledTypeScriptSystem(path: String, callback: DirectoryWatcherCallback, recursive: Unit, options: WatchOptions): FileWatcher = js.native
     
     @JSName("watchFile")
     def watchFile_MControlledTypeScriptSystem(path: String, callback: FileWatcherCallback): FileWatcher = js.native
     @JSName("watchFile")
-    def watchFile_MControlledTypeScriptSystem(
-      path: String,
-      callback: FileWatcherCallback,
-      pollingInterval: js.UndefOr[scala.Nothing],
-      options: WatchOptions
-    ): FileWatcher = js.native
-    @JSName("watchFile")
     def watchFile_MControlledTypeScriptSystem(path: String, callback: FileWatcherCallback, pollingInterval: Double): FileWatcher = js.native
     @JSName("watchFile")
     def watchFile_MControlledTypeScriptSystem(path: String, callback: FileWatcherCallback, pollingInterval: Double, options: WatchOptions): FileWatcher = js.native
+    @JSName("watchFile")
+    def watchFile_MControlledTypeScriptSystem(path: String, callback: FileWatcherCallback, pollingInterval: Unit, options: WatchOptions): FileWatcher = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,27 +22,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * "autoscrolling region", for a predefined period of time, this will result in repeated scroll requests to the Component until the drag Cursor resumes
   * its motion.
   */
-@js.native
-trait XAutoscroll extends XInterface {
+trait XAutoscroll
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the regions describing the autoscrolling region.
     * @returns The regions describing the autoscrolling region or border relative to the geometry of the implementing component.
     */
-  val AutoscrollRegion: js.Any = js.native
+  val AutoscrollRegion: js.Any
   
   /**
     * Notify the component to autoscroll.
     * @param cursorLocationX X location of the cursor in pixel.
     * @param cursorLocationY Y location of the cursor in pixel.
     */
-  def autoscroll(cursorLocationX: Double, cursorLocationY: Double): Unit = js.native
+  def autoscroll(cursorLocationX: Double, cursorLocationY: Double): Unit
   
   /**
     * Returns the regions describing the autoscrolling region.
     * @returns The regions describing the autoscrolling region or border relative to the geometry of the implementing component.
     */
-  def getAutoscrollRegion(): js.Any = js.native
+  def getAutoscrollRegion(): js.Any
 }
 object XAutoscroll {
   

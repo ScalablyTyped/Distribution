@@ -29,76 +29,75 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDetailsListProps
-  extends IBaseProps[IDetailsList]
+  extends StObject
+     with IBaseProps[IDetailsList]
      with IWithViewportProps {
   
   /** Accessible label describing or summarizing the list. */
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
   /** Accessible label for the grid within the list. */
-  var ariaLabelForGrid: js.UndefOr[String] = js.native
+  var ariaLabelForGrid: js.UndefOr[String] = js.undefined
   
   /** Accessible label for the list header. */
-  var ariaLabelForListHeader: js.UndefOr[String] = js.native
+  var ariaLabelForListHeader: js.UndefOr[String] = js.undefined
   
   /** Accessible label for the select all checkbox. */
-  var ariaLabelForSelectAllCheckbox: js.UndefOr[String] = js.native
+  var ariaLabelForSelectAllCheckbox: js.UndefOr[String] = js.undefined
   
   /** Accessible label for the name of the selection column. */
-  var ariaLabelForSelectionColumn: js.UndefOr[String] = js.native
+  var ariaLabelForSelectionColumn: js.UndefOr[String] = js.undefined
   
   /**
     * Props impacting the render style of cells. Since these have an impact on calculated column widths, they are
     * handled separately from normal theme styling, but they are passed to the styling system.
     */
-  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
   
   /** Accessible label for the check button. */
-  var checkButtonAriaLabel: js.UndefOr[String] = js.native
+  var checkButtonAriaLabel: js.UndefOr[String] = js.undefined
   
   /** Class name to add to the cell of a checkbox. */
-  var checkboxCellClassName: js.UndefOr[String] = js.native
+  var checkboxCellClassName: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the visibility of selection check box.
     * @defaultvalue CheckboxVisibility.onHover
     */
-  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.native
+  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
   
   /** Class name to add to the root element. */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /** Options for column reordering using drag and drop. */
-  var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.native
+  var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.undefined
   
   /** column defitions. If none are provided, default columns will be created based on the items' properties. */
-  var columns: js.UndefOr[js.Array[IColumn]] = js.native
+  var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
   
   /**
     * Whether to render in compact mode.
     * @defaultvalue false
     */
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
   /** Controls how the list contrains overflow. */
-  var constrainMode: js.UndefOr[ConstrainMode] = js.native
+  var constrainMode: js.UndefOr[ConstrainMode] = js.undefined
   
   /** Whether to disable the built-in SelectionZone, so the host component can provide its own. */
-  var disableSelectionZone: js.UndefOr[Boolean] = js.native
+  var disableSelectionZone: js.UndefOr[Boolean] = js.undefined
   
   /** Map of callback functions related to row drag and drop functionality. */
-  var dragDropEvents: js.UndefOr[IDragDropEvents] = js.native
+  var dragDropEvents: js.UndefOr[IDragDropEvents] = js.undefined
   
   /** Whether to animate updates */
-  var enableUpdateAnimations: js.UndefOr[Boolean] = js.native
+  var enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the selection zone should enter modal state on touch. */
-  var enterModalSelectionOnTouch: js.UndefOr[Boolean] = js.native
+  var enterModalSelectionOnTouch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If provided, will be the "default" item column cell value return.
@@ -111,58 +110,58 @@ trait IDetailsListProps
       /* column */ js.UndefOr[IColumn], 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback to override default group height calculation used by list virtualization. */
-  var getGroupHeight: js.UndefOr[js.Function2[/* group */ IGroup, /* groupIndex */ Double, Double]] = js.native
+  var getGroupHeight: js.UndefOr[js.Function2[/* group */ IGroup, /* groupIndex */ Double, Double]] = js.undefined
   
   /**
     * Callback to get the item key, to be used in the selection and on render.
     * Must be provided if sorting or filtering is enabled.
     */
-  var getKey: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]] = js.native
+  var getKey: js.UndefOr[js.Function2[/* item */ js.Any, /* index */ js.UndefOr[Double], String]] = js.undefined
   
   /** Callback to get the aria-describedby IDs (space-separated strings) of elements that describe the item. */
-  var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
+  var getRowAriaDescribedBy: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
   
   /** Callback to get the aria-label string for a given item. */
-  var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
+  var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
   
   /** Override properties to render groups. */
-  var groupProps: js.UndefOr[IDetailsGroupRenderProps] = js.native
+  var groupProps: js.UndefOr[IDetailsGroupRenderProps] = js.undefined
   
   /** Grouping instructions. */
-  var groups: js.UndefOr[js.Array[IGroup]] = js.native
+  var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
   
   /** Override for the indent width used for group nesting. */
-  var indentWidth: js.UndefOr[Double] = js.native
+  var indentWidth: js.UndefOr[Double] = js.undefined
   
   /** Default index to set focus to once the items have rendered and the index exists. */
-  var initialFocusedIndex: js.UndefOr[Double] = js.native
+  var initialFocusedIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the visibility of the header.
     * @defaultvalue true
     */
-  var isHeaderVisible: js.UndefOr[Boolean] = js.native
+  var isHeaderVisible: js.UndefOr[Boolean] = js.undefined
   
   /** Set this to true to indicate that the items being displayed are placeholder data. */
-  var isPlaceholderData: js.UndefOr[Boolean] = js.native
+  var isPlaceholderData: js.UndefOr[Boolean] = js.undefined
   
   /** The items to render. */
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any]
   
   /** Controls how the columns are adjusted. */
-  var layoutMode: js.UndefOr[DetailsListLayoutMode] = js.native
+  var layoutMode: js.UndefOr[DetailsListLayoutMode] = js.undefined
   
   /** Properties to pass through to the List components being rendered. */
-  var listProps: js.UndefOr[IListProps[_]] = js.native
+  var listProps: js.UndefOr[IListProps[js.Any]] = js.undefined
   
   /**
     * The minimum mouse move distance to interpret the action as drag event.
     * @defaultvalue 5
     */
-  var minimumPixelsForDrag: js.UndefOr[Double] = js.native
+  var minimumPixelsForDrag: js.UndefOr[Double] = js.undefined
   
   /**
     * Callback for when an item in the list becomes active by clicking anywhere inside the row or navigating to it
@@ -175,7 +174,7 @@ trait IDetailsListProps
       /* ev */ js.UndefOr[FocusEvent[HTMLElement]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for when the user clicks on the column header. */
   var onColumnHeaderClick: js.UndefOr[
@@ -184,7 +183,7 @@ trait IDetailsListProps
       /* column */ js.UndefOr[IColumn], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for when the user asks for a contextual menu (usually via right click) from a column header. */
   var onColumnHeaderContextMenu: js.UndefOr[
@@ -193,7 +192,7 @@ trait IDetailsListProps
       /* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback fired on column resize */
   var onColumnResize: js.UndefOr[
@@ -203,10 +202,10 @@ trait IDetailsListProps
       /* columnIndex */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for when the list has been updated. Useful for telemetry tracking externally. */
-  var onDidUpdate: js.UndefOr[js.Function1[/* detailsList */ js.UndefOr[DetailsListBase], Unit]] = js.native
+  var onDidUpdate: js.UndefOr[js.Function1[/* detailsList */ js.UndefOr[DetailsListBase], Unit]] = js.undefined
   
   /**
     * Callback for when the context menu of an item has been accessed.
@@ -219,7 +218,7 @@ trait IDetailsListProps
       /* ev */ js.UndefOr[Event], 
       Unit | Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for when a given row has been invoked (by pressing enter while it is selected.) */
   var onItemInvoked: js.UndefOr[
@@ -229,16 +228,16 @@ trait IDetailsListProps
       /* ev */ js.UndefOr[Event], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**  If provided, can be used to render a custom checkbox. */
-  var onRenderCheckbox: js.UndefOr[IRenderFunction[IDetailsListCheckboxProps]] = js.native
+  var onRenderCheckbox: js.UndefOr[IRenderFunction[IDetailsListCheckboxProps]] = js.undefined
   
   /** An override to render the details footer. */
-  var onRenderDetailsFooter: js.UndefOr[IRenderFunction[IDetailsFooterProps]] = js.native
+  var onRenderDetailsFooter: js.UndefOr[IRenderFunction[IDetailsFooterProps]] = js.undefined
   
   /** An override to render the details header. */
-  var onRenderDetailsHeader: js.UndefOr[IRenderFunction[IDetailsHeaderProps]] = js.native
+  var onRenderDetailsHeader: js.UndefOr[IRenderFunction[IDetailsHeaderProps]] = js.undefined
   
   /**
     * If provided, will be the "default" item column renderer method.
@@ -252,7 +251,7 @@ trait IDetailsListProps
       /* column */ js.UndefOr[IColumn], 
       ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** Callback for what to render when the item is missing. */
   var onRenderMissingItem: js.UndefOr[
@@ -261,19 +260,19 @@ trait IDetailsListProps
       /* rowProps */ js.UndefOr[IDetailsRowProps], 
       ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback to override the default row rendering.
     */
-  var onRenderRow: js.UndefOr[IRenderFunction[IDetailsRowProps]] = js.native
+  var onRenderRow: js.UndefOr[IRenderFunction[IDetailsRowProps]] = js.undefined
   
   /**
     * Callback for when a given row has been mounted. Useful for identifying when a row has been rendered on the page.
     */
   var onRowDidMount: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback for when a given row has been unmounted.
@@ -281,7 +280,7 @@ trait IDetailsListProps
     */
   var onRowWillUnmount: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback to determine whether the list should be rendered in full, or virtualized.
@@ -292,70 +291,70 @@ trait IDetailsListProps
     *
     * The default implementation will virtualize when this callback is not provided.
     */
-  var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[_], Boolean]] = js.native
+  var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.undefined
   
   /** Event names and corresponding callbacks that will be registered to rendered row elements. */
-  var rowElementEventMap: js.UndefOr[js.Array[Callback]] = js.native
+  var rowElementEventMap: js.UndefOr[js.Array[Callback]] = js.undefined
   
   /** Selection model to track selection state.  */
-  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
+  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
   
   /** Controls how/if the details list manages selection. Options include none, single, multiple */
-  var selectionMode: js.UndefOr[SelectionMode] = js.native
+  var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   
   /**
     * By default, selection is cleared when clicking on an empty (non-focusable) section of the screen.
     * Setting this value to true overrides that behavior and maintains selection.
     * @defaultvalue false
     **/
-  var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.native
+  var selectionPreservedOnEmptyClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional props to pass through to the SelectionZone created by default.
     */
-  var selectionZoneProps: js.UndefOr[ISelectionZoneProps] = js.native
+  var selectionZoneProps: js.UndefOr[ISelectionZoneProps] = js.undefined
   
   /** A key that uniquely identifies the given items. If provided, the selection will be reset when the key changes. */
-  var setKey: js.UndefOr[String] = js.native
+  var setKey: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the role `application` should be applied to the list.
     * @defaultvalue false
     */
-  var shouldApplyApplicationRole: js.UndefOr[Boolean] = js.native
+  var shouldApplyApplicationRole: js.UndefOr[Boolean] = js.undefined
   
   /** Custom overrides to the themed or default styles. */
-  var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]] = js.undefined
   
   /** Theme provided by a higher-order component. */
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
   /**
     * Whether to use fast icon and check components. The icons can't be targeted by customization
     * but are still customizable via class names.
     * @defaultvalue true
     */
-  var useFastIcons: js.UndefOr[Boolean] = js.native
+  var useFastIcons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to enable render page caching. This is an experimental performance optimization that is off by default.
     * @defaultvalue false
     */
-  var usePageCache: js.UndefOr[Boolean] = js.native
+  var usePageCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to re-render a row only when props changed. Might cause regression when depending on external updates.
     * @defaultvalue false
     */
-  var useReducedRowRenderer: js.UndefOr[Boolean] = js.native
+  var useReducedRowRenderer: js.UndefOr[Boolean] = js.undefined
   
   /** Viewport info, provided by the `withViewport` decorator. */
-  var viewport: js.UndefOr[IViewport] = js.native
+  var viewport: js.UndefOr[IViewport] = js.undefined
 }
 object IDetailsListProps {
   
   @scala.inline
-  def apply(items: js.Array[_]): IDetailsListProps = {
+  def apply(items: js.Array[js.Any]): IDetailsListProps = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDetailsListProps]
   }
@@ -546,7 +545,7 @@ object IDetailsListProps {
     def setIsPlaceholderDataUndefined: Self = StObject.set(x, "isPlaceholderData", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
@@ -558,7 +557,7 @@ object IDetailsListProps {
     def setLayoutModeUndefined: Self = StObject.set(x, "layoutMode", js.undefined)
     
     @scala.inline
-    def setListProps(value: IListProps[_]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+    def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
@@ -682,7 +681,7 @@ object IDetailsListProps {
     def setOnRowWillUnmountUndefined: Self = StObject.set(x, "onRowWillUnmount", js.undefined)
     
     @scala.inline
-    def setOnShouldVirtualize(value: /* props */ IListProps[_] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
+    def setOnShouldVirtualize(value: /* props */ IListProps[js.Any] => Boolean): Self = StObject.set(x, "onShouldVirtualize", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnShouldVirtualizeUndefined: Self = StObject.set(x, "onShouldVirtualize", js.undefined)

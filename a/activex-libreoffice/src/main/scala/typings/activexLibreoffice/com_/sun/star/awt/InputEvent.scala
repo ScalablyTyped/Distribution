@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Input events are delivered to listeners before they are processed normally by the source where they originated.
   * @see WindowEvent
   */
-@js.native
-trait InputEvent extends EventObject {
+trait InputEvent
+  extends StObject
+     with EventObject {
   
   /**
     * contains the modifier keys which were pressed while the event occurred.
     *
     * Zero or more constants from the {@link com.sun.star.awt.KeyModifier} group.
     */
-  var Modifiers: Double = js.native
+  var Modifiers: Double
 }
 object InputEvent {
   

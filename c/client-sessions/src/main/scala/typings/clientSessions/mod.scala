@@ -6,7 +6,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,12 +14,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : Sessions = js.native
   
-  @js.native
   trait ComputeHmacOptions extends StObject {
     
-    var signatureAlgorithm: String = js.native
+    var signatureAlgorithm: String
     
-    var signatureKey: Buffer = js.native
+    var signatureKey: Buffer
   }
   object ComputeHmacOptions {
     
@@ -41,14 +39,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DecodeResult extends StObject {
     
-    var content: js.Any = js.native
+    var content: js.Any
     
-    var createdAt: Double = js.native
+    var createdAt: Double
     
-    var duration: Double = js.native
+    var duration: Double
   }
   object DecodeResult {
     
@@ -76,40 +73,39 @@ object mod extends Shortcut {
   
   type RequestHandler = js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ NextFunction, js.Any]
   
-  @js.native
   trait SessionOptions extends StObject {
     
     /**
       * if expiresIn < activeDuration, the session will be extended by activeDuration milliseconds.
       * Default: 5 minutes
       */
-    var activeDuration: js.UndefOr[Double] = js.native
+    var activeDuration: js.UndefOr[Double] = js.undefined
     
-    var cookie: js.UndefOr[IOptions] = js.native
+    var cookie: js.UndefOr[IOptions] = js.undefined
     
     /**
       * session cookie name.
       * Default: 'session_state'
       */
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
     /**
       * how long the session will stay valid in ms.
       * Default: 24 hours
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * session accessor on the request object.
       * Default: 'session'
       */
-    var requestKey: js.UndefOr[String] = js.native
+    var requestKey: js.UndefOr[String] = js.undefined
     
     /**
       * encryption secret for the session.
       * required
       */
-    var secret: String = js.native
+    var secret: String
   }
   object SessionOptions {
     
@@ -173,9 +169,9 @@ object mod extends Shortcut {
     def decode(options: SessionOptions, encoded: String): DecodeResult = js.native
     
     def encode(options: SessionOptions, content: js.Any): String = js.native
-    def encode(options: SessionOptions, content: js.Any, duration: js.UndefOr[scala.Nothing], createdAt: Double): String = js.native
     def encode(options: SessionOptions, content: js.Any, duration: Double): String = js.native
     def encode(options: SessionOptions, content: js.Any, duration: Double, createdAt: Double): String = js.native
+    def encode(options: SessionOptions, content: js.Any, duration: Unit, createdAt: Double): String = js.native
   }
   
   type _To = Sessions

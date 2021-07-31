@@ -2,17 +2,15 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONRPCResponsePayload extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var jsonrpc: String = js.native
+  var jsonrpc: String
   
-  var result: js.Any = js.native
+  var result: js.Any
 }
 object JSONRPCResponsePayload {
   

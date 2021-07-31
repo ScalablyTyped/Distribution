@@ -3,24 +3,23 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.spacing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpacingNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
   
-  var `type`: spacing = js.native
+  var `type`: spacing
   
-  var value: String = js.native
+  var value: String
 }
 object SpacingNode {
   
   @scala.inline
-  def apply(`type`: spacing, value: String): SpacingNode = {
+  def apply(value: String): SpacingNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("spacing")
     __obj.asInstanceOf[SpacingNode]
   }
   

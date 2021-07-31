@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveHeldAccountsRequest extends StObject {
   
   /** Account IDs to identify HeldAccounts to remove. */
-  var accountIds: js.UndefOr[js.Array[String]] = js.native
+  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RemoveHeldAccountsRequest {
   

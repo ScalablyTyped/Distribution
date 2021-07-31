@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Graphics.Printing
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Arguments associated with the PrintTaskSourceRequestedHandler delegate. Provides a method for handing the content to be printed to the Print Task. */
-@js.native
 trait PrintTaskSourceRequestedArgs extends StObject {
   
   /** Gets the DateTime object that indicates the deadline for a print task source request. */
-  var deadline: Date = js.native
+  var deadline: Date
   
   /**
     * Gets a PrintTaskSourceRequestedDeferral object that provides access to a Complete method. This method indicates then the deferral is over.
     * @return Provides access to a Complete method.
     */
-  def getDeferral(): PrintTaskSourceRequestedDeferral = js.native
+  def getDeferral(): PrintTaskSourceRequestedDeferral
   
   /**
     * Informs the print task of the content to be printed.
     * @param source A pointer to the IPrintDocumentSource interface.
     */
-  def setSource(source: IPrintDocumentSource): Unit = js.native
+  def setSource(source: IPrintDocumentSource): Unit
 }
 object PrintTaskSourceRequestedArgs {
   

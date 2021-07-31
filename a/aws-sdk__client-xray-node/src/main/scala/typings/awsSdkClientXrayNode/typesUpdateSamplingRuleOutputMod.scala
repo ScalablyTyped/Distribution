@@ -5,24 +5,24 @@ import typings.awsSdkClientXrayNode.typesSamplingRuleRecordMod.UnmarshalledSampl
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateSamplingRuleOutputMod {
   
-  @js.native
-  trait UpdateSamplingRuleOutput extends OutputTypesUnion {
+  trait UpdateSamplingRuleOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The updated rule definition and metadata.</p>
       */
-    var SamplingRuleRecord: js.UndefOr[UnmarshalledSamplingRuleRecord] = js.native
+    var SamplingRuleRecord: js.UndefOr[UnmarshalledSamplingRuleRecord] = js.undefined
   }
   object UpdateSamplingRuleOutput {
     

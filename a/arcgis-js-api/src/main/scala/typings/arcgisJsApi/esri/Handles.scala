@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Handles extends Accessor {
+trait Handles
+  extends StObject
+     with Accessor {
   
   def add(handles: js.Array[WatchHandle]): Unit = js.native
   def add(handles: js.Array[WatchHandle], key: js.Any): Unit = js.native

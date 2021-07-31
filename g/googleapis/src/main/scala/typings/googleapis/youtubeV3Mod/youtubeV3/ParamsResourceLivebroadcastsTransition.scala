@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLivebroadcastsTransition extends StandardParameters {
+trait ParamsResourceLivebroadcastsTransition
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The broadcastStatus parameter identifies the state to which the broadcast
@@ -23,13 +23,13 @@ trait ParamsResourceLivebroadcastsTransition extends StandardParameters {
     * live state, the status.streamStatus must be active for the stream that
     * the broadcast is bound to.
     */
-  var broadcastStatus: js.UndefOr[String] = js.native
+  var broadcastStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies the unique ID of the broadcast that is
     * transitioning to another status.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -43,7 +43,7 @@ trait ParamsResourceLivebroadcastsTransition extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Note:
@@ -63,7 +63,7 @@ trait ParamsResourceLivebroadcastsTransition extends StandardParameters {
     * without having to provide authentication credentials for each separate
     * channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -71,7 +71,7 @@ trait ParamsResourceLivebroadcastsTransition extends StandardParameters {
     * part names that you can include in the parameter value are id, snippet,
     * contentDetails, and status.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceLivebroadcastsTransition {
   

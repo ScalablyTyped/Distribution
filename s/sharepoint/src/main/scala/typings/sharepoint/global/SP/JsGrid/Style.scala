@@ -14,13 +14,13 @@ import typings.std.HTMLElement
 import typings.std.HTMLTableCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.Style")
 @js.native
 class Style ()
-  extends typings.sharepoint.SP.JsGrid.Style
+  extends StObject
+     with typings.sharepoint.SP.JsGrid.Style
 object Style {
   
   @JSGlobal("SP.JsGrid.Style")

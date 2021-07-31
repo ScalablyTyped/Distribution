@@ -6,28 +6,26 @@ import typings.chartJs.chartJsStrings.y
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartHoverOptions extends StObject {
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var axis: js.UndefOr[x | y | xy] = js.native
+  var axis: js.UndefOr[x | y | xy] = js.undefined
   
-  var intersect: js.UndefOr[Boolean] = js.native
+  var intersect: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[InteractionMode] = js.native
+  var mode: js.UndefOr[InteractionMode] = js.undefined
   
   var onHover: js.UndefOr[
     js.ThisFunction2[
-      /* this */ typings.chartJs.mod.Chart, 
+      /* this */ Chart, 
       /* event */ MouseEvent, 
       /* activeElements */ js.Array[js.Object], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ChartHoverOptions {
   
@@ -67,10 +65,10 @@ object ChartHoverOptions {
     @scala.inline
     def setOnHover(
       value: js.ThisFunction2[
-          /* this */ typings.chartJs.mod.Chart, 
+          /* this */ Chart, 
           /* event */ MouseEvent, 
           /* activeElements */ js.Array[js.Object], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "onHover", value.asInstanceOf[js.Any])
     

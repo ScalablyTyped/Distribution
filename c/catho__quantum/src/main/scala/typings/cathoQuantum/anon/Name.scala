@@ -5,17 +5,15 @@ import typings.cathoQuantum.cathoQuantumStrings.twitter
 import typings.cathoQuantum.cathoQuantumStrings.youtube
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: js.UndefOr[facebook | twitter | youtube] = js.native
+  var name: js.UndefOr[facebook | twitter | youtube] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Name {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replica extends StObject {
   
   /**
     * The Region where the replica needs to be created.
     */
-  var RegionName: js.UndefOr[typings.awsSdk.dynamodbMod.RegionName] = js.native
+  var RegionName: js.UndefOr[typings.awsSdk.dynamodbMod.RegionName] = js.undefined
 }
 object Replica {
   

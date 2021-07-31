@@ -6,39 +6,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait heatmapGetSchemesByTagParams extends Object {
+trait heatmapGetSchemesByTagParams
+  extends StObject
+     with Object {
   
   /**
     * The basemap to pair with the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#getSchemesByTag)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * If you have a non-Esri basemap (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#getSchemesByTag)
     */
-  var basemapTheme: js.UndefOr[light | dark] = js.native
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
     * When provided, only schemes missing all the provided tags will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#getSchemesByTag)
     */
-  var excludedTags: js.UndefOr[js.Array[String]] = js.native
+  var excludedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When provided, only schemes containing all the matching tags will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-heatmap.html#getSchemesByTag)
     */
-  var includedTags: js.UndefOr[js.Array[String]] = js.native
+  var includedTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object heatmapGetSchemesByTagParams {
   

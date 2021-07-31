@@ -10,9 +10,9 @@ Small library which makes your Dialog component callable
 | ------------------ | :-------------: |
 | Full name          | react-confirm |
 | Keywords           | react, reactjs, confirm |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 13 |
-| # downloads        | 491176 |
+| # downloads        | 519609 |
 | # stars            | 0 |
 
 ## Links

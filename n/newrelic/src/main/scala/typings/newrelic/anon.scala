@@ -3,19 +3,17 @@ package typings.newrelic
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CollectPendingData extends StObject {
     
-    var collectPendingData: js.UndefOr[Boolean] = js.native
+    var collectPendingData: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var waitForIdle: js.UndefOr[Boolean] = js.native
+    var waitForIdle: js.UndefOr[Boolean] = js.undefined
   }
   object CollectPendingData {
     
@@ -48,14 +46,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ModuleName extends StObject {
     
-    var moduleName: String = js.native
+    var moduleName: String
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
-    def onRequire(): Unit = js.native
+    def onRequire(): Unit
   }
   object ModuleName {
     

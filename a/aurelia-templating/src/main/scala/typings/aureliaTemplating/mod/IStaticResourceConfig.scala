@@ -15,36 +15,34 @@ import typings.std.NamedNodeMap
 import typings.std.ShadowRootInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStaticResourceConfig extends StObject {
   
   /**
     * List of bindable properties of this custom element / custom attribute, by name or full config object
     */
-  var bindables: js.UndefOr[js.Array[String | IBindablePropertyConfig]] = js.native
+  var bindables: js.UndefOr[js.Array[String | IBindablePropertyConfig]] = js.undefined
   
   /**
     * Flag a custom element as containerless. Which will remove their render target
     */
-  var containerless: js.UndefOr[Boolean] = js.native
+  var containerless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to set default binding mode of default custom attribute view model "value" property
     */
-  var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.native
+  var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.undefined
   
   /**
     * Flags a custom attribute has dynamic options
     */
-  var hasDynamicOptions: js.UndefOr[Boolean] = js.native
+  var hasDynamicOptions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of this resource. Reccommended to explicitly set to works better with minifier
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Custom processing of the attributes on an element before the framework inspects them.
@@ -58,7 +56,7 @@ trait IStaticResourceConfig extends StObject {
       /* elementInstruction */ BehaviorInstruction, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Enables custom processing of the content that is places inside the custom element by its consumer.
@@ -75,29 +73,29 @@ trait IStaticResourceConfig extends StObject {
       /* instruction */ BehaviorInstruction, 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Options that will be used if the element is flagged with usesShadowDOM
     */
-  var shadowDOMOptions: js.UndefOr[ShadowRootInit] = js.native
+  var shadowDOMOptions: js.UndefOr[ShadowRootInit] = js.undefined
   
   /**
     * Used to tell if a custom attribute is a template controller
     */
-  var templateController: js.UndefOr[Boolean] = js.native
+  var templateController: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resource type of this class, omit equals to custom element
     */
   var `type`: js.UndefOr[
     element | attribute | valueConverter | bindingBehavior | typings.aureliaTemplating.aureliaTemplatingStrings.viewEngineHooks
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Flag if this custom element uses native shadow dom instead of emulation
     */
-  var usesShadowDOM: js.UndefOr[Boolean] = js.native
+  var usesShadowDOM: js.UndefOr[Boolean] = js.undefined
 }
 object IStaticResourceConfig {
   

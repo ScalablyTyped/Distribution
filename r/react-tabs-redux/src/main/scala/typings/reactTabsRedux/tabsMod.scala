@@ -3,7 +3,6 @@ package typings.reactTabsRedux
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -20,24 +19,23 @@ object tabsMod {
     def this(props: TabsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var activeLinkStyle: js.UndefOr[js.Object] = js.native
+    var activeLinkStyle: js.UndefOr[js.Object] = js.undefined
     
-    var disableInlineStyles: js.UndefOr[Boolean] = js.native
+    var disableInlineStyles: js.UndefOr[Boolean] = js.undefined
     
-    var handleSelect: js.UndefOr[js.Function2[/* tab */ String, /* name */ String, Unit]] = js.native
+    var handleSelect: js.UndefOr[js.Function2[/* tab */ String, /* name */ String, Unit]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* selectedTab */ String, /* name */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* selectedTab */ String, /* name */ String, Unit]] = js.undefined
     
-    var renderActiveTabContentOnly: js.UndefOr[Boolean] = js.native
+    var renderActiveTabContentOnly: js.UndefOr[Boolean] = js.undefined
     
-    var selectedTab: js.UndefOr[String] = js.native
+    var selectedTab: js.UndefOr[String] = js.undefined
     
-    var visibleTabStyle: js.UndefOr[js.Object] = js.native
+    var visibleTabStyle: js.UndefOr[js.Object] = js.undefined
   }
   object TabsProps {
     

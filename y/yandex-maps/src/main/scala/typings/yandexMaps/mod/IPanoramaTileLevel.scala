@@ -2,15 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaTileLevel extends StObject {
   
-  def getImageSize(): js.Array[Double] = js.native
+  def getImageSize(): js.Array[Double]
   
-  def getTileUrl(x: Double, y: Double): String = js.native
+  def getTileUrl(x: Double, y: Double): String
 }
 object IPanoramaTileLevel {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MembershipsDuration extends StObject {
   
   /** The date and time when the user became a continuous member across all levels. */
-  var memberSince: js.UndefOr[String] = js.native
+  var memberSince: js.UndefOr[String] = js.undefined
   
   /** The cumulative time the user has been a member across all levels in complete months (the time is rounded down to the nearest integer). */
-  var memberTotalDurationMonths: js.UndefOr[Double] = js.native
+  var memberTotalDurationMonths: js.UndefOr[Double] = js.undefined
 }
 object MembershipsDuration {
   

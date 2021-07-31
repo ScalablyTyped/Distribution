@@ -2,21 +2,19 @@ package typings.reachRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectProps[TState] extends StObject {
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var noThrow: js.UndefOr[Boolean] = js.native
+  var noThrow: js.UndefOr[Boolean] = js.undefined
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
   
-  var state: js.UndefOr[TState] = js.native
+  var state: js.UndefOr[TState] = js.undefined
   
-  var to: String = js.native
+  var to: String
 }
 object RedirectProps {
   
@@ -27,7 +25,7 @@ object RedirectProps {
   }
   
   @scala.inline
-  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps[_], TState] (val x: Self with RedirectProps[TState]) extends AnyVal {
+  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps[?], TState] (val x: Self & RedirectProps[TState]) extends AnyVal {
     
     @scala.inline
     def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])

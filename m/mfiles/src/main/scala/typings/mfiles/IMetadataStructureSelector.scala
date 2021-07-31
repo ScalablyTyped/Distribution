@@ -4,27 +4,25 @@ import typings.mfiles.MFiles.MFMetadataStructureItem
 import typings.mfiles.MFiles.MFMetadataStructureSelectorFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataStructureSelector extends StObject {
   
-  def Clone(): IMetadataStructureSelector = js.native
+  def Clone(): IMetadataStructureSelector
   
-  var Flags: MFMetadataStructureSelectorFlags = js.native
+  var Flags: MFMetadataStructureSelectorFlags
   
-  var ID: String = js.native
+  var ID: String
   
-  var Name: String = js.native
+  var Name: String
   
-  var StructureItemGUID: String = js.native
+  var StructureItemGUID: String
   
-  var StructureItemID: Double = js.native
+  var StructureItemID: Double
   
-  var StructureItemSemanticAlias: String = js.native
+  var StructureItemSemanticAlias: String
   
-  var StructureItemType: MFMetadataStructureItem = js.native
+  var StructureItemType: MFMetadataStructureItem
 }
 object IMetadataStructureSelector {
   

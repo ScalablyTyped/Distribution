@@ -17,44 +17,42 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.types.IColorPickerProps> */
-@js.native
 trait ReadonlyIColorPickerProps extends StObject {
   
-  val alphaLabel: js.UndefOr[String] = js.native
+  val alphaLabel: js.UndefOr[String] = js.undefined
   
-  val alphaSliderHidden: js.UndefOr[Boolean] = js.native
+  val alphaSliderHidden: js.UndefOr[Boolean] = js.undefined
   
-  val alphaType: js.UndefOr[alpha | transparency | none] = js.native
+  val alphaType: js.UndefOr[alpha | transparency | none] = js.undefined
   
-  val blueLabel: js.UndefOr[String] = js.native
+  val blueLabel: js.UndefOr[String] = js.undefined
   
-  val className: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.undefined
   
-  val color: IColor | String = js.native
+  val color: IColor | String
   
-  val componentRef: js.UndefOr[IRefObject[IColorPicker]] = js.native
+  val componentRef: js.UndefOr[IRefObject[IColorPicker]] = js.undefined
   
-  val greenLabel: js.UndefOr[String] = js.native
+  val greenLabel: js.UndefOr[String] = js.undefined
   
-  val hexLabel: js.UndefOr[String] = js.native
+  val hexLabel: js.UndefOr[String] = js.undefined
   
   val onChange: js.UndefOr[
     js.Function2[/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  val redLabel: js.UndefOr[String] = js.native
+  val redLabel: js.UndefOr[String] = js.undefined
   
-  val showPreview: js.UndefOr[Boolean] = js.native
+  val showPreview: js.UndefOr[Boolean] = js.undefined
   
-  val strings: js.UndefOr[IColorPickerStrings] = js.native
+  val strings: js.UndefOr[IColorPickerStrings] = js.undefined
   
-  val styles: js.UndefOr[IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]] = js.native
+  val styles: js.UndefOr[IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]] = js.undefined
   
-  val theme: js.UndefOr[ITheme] = js.native
+  val theme: js.UndefOr[ITheme] = js.undefined
 }
 object ReadonlyIColorPickerProps {
   

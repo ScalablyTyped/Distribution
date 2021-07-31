@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DriveDataRef extends StObject {
   
   /** The id for the drive file, for use with the Drive API. */
-  var driveFileId: js.UndefOr[String] = js.native
+  var driveFileId: js.UndefOr[String] = js.undefined
 }
 object DriveDataRef {
   

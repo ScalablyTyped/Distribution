@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVirtualGatewaysOutput extends StObject {
   
   /**
     * The nextToken value to include in a future ListVirtualGateways request. When the results of a ListVirtualGateways request exceed limit, you can use this value to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of existing virtual gateways for the specified service mesh.
     */
-  var virtualGateways: VirtualGatewayList = js.native
+  var virtualGateways: VirtualGatewayList
 }
 object ListVirtualGatewaysOutput {
   

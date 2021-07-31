@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XAggregation
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Factory interface to produce proxy objects.
   * @deprecated DeprecatedAggregation will no longer be supported as a high-level concept of UNO. You may still have the option to implement an UNO object consis
   */
-@js.native
-trait XProxyFactory extends XInterface {
+trait XProxyFactory
+  extends StObject
+     with XInterface {
   
   /**
     * This method creates a new proxy object that acts on behalf of the given target object. ;  The proxy delegates calls to the given target object. In
@@ -21,7 +21,7 @@ trait XProxyFactory extends XInterface {
     * @param xTarget target object
     * @returns proxy object
     */
-  def createProxy(xTarget: XInterface): XAggregation = js.native
+  def createProxy(xTarget: XInterface): XAggregation
 }
 object XProxyFactory {
   

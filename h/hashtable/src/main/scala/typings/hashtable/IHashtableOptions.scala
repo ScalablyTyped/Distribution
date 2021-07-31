@@ -2,19 +2,17 @@ package typings.hashtable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashtableOptions[TKey] extends StObject {
   
   @JSName("equals")
-  var equals_FIHashtableOptions: js.UndefOr[js.Function2[/* key1 */ TKey, /* key2 */ TKey, Boolean]] = js.native
+  var equals_FIHashtableOptions: js.UndefOr[js.Function2[/* key1 */ TKey, /* key2 */ TKey, Boolean]] = js.undefined
   
   @JSName("hashCode")
-  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, _]] = js.native
+  var hashCode_FIHashtableOptions: js.UndefOr[js.Function1[/* key */ TKey, js.Any]] = js.undefined
   
-  var replaceDuplicateKey: js.UndefOr[Boolean] = js.native
+  var replaceDuplicateKey: js.UndefOr[Boolean] = js.undefined
 }
 object IHashtableOptions {
   
@@ -25,7 +23,7 @@ object IHashtableOptions {
   }
   
   @scala.inline
-  implicit class IHashtableOptionsMutableBuilder[Self <: IHashtableOptions[_], TKey] (val x: Self with IHashtableOptions[TKey]) extends AnyVal {
+  implicit class IHashtableOptionsMutableBuilder[Self <: IHashtableOptions[?], TKey] (val x: Self & IHashtableOptions[TKey]) extends AnyVal {
     
     @scala.inline
     def setEquals_(value: (/* key1 */ TKey, /* key2 */ TKey) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
@@ -34,7 +32,7 @@ object IHashtableOptions {
     def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
     
     @scala.inline
-    def setHashCode_(value: /* key */ TKey => _): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
+    def setHashCode_(value: /* key */ TKey => js.Any): Self = StObject.set(x, "hashCode", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHashCode_Undefined: Self = StObject.set(x, "hashCode", js.undefined)

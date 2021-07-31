@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abusiveexperiencereportMod {
+  
+  @JSImport("googleapis/build/src/apis/abusiveexperiencereport", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object abusiveexperiencereportMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/abusiveexperiencereport", "abusiveexperiencereport")
-  @js.native
-  def abusiveexperiencereport(options: Options): Abusiveexperiencereport = js.native
-  @JSImport("googleapis/build/src/apis/abusiveexperiencereport", "abusiveexperiencereport")
-  @js.native
-  def abusiveexperiencereport_v1(version: v1): Abusiveexperiencereport = js.native
+  @scala.inline
+  def abusiveexperiencereport(options: Options): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(options.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
+  
+  @scala.inline
+  def abusiveexperiencereport_v1(version: v1): Abusiveexperiencereport = ^.asInstanceOf[js.Dynamic].applyDynamic("abusiveexperiencereport")(version.asInstanceOf[js.Any]).asInstanceOf[Abusiveexperiencereport]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object abusiveexperiencereportMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/abusiveexperiencereport", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/abusiveexperiencereport", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

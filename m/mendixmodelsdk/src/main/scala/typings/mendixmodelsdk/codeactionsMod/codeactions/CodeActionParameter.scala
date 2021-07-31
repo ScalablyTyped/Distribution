@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.javaactionsMod.javaactions.JavaAction
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -78,6 +77,14 @@ abstract class CodeActionParameter protected ()
   @JSName("name")
   val name_FCodeActionParameter: String = js.native
   
+  /**
+    * Returns the qualified name of this element, or
+    * null if this element is not a part of the model,
+    * or if it or one of its namespace containers does not have a
+    * valid name.
+    */
+  /* CompleteClass */
+  override val qualifiedName: String | Null = js.native
   @JSName("qualifiedName")
   def qualifiedName_MCodeActionParameter: String | Null = js.native
 }

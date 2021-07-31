@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshStatus extends StObject {
   
   /**
     * The current mesh status.
     */
-  var status: js.UndefOr[MeshStatusCode] = js.native
+  var status: js.UndefOr[MeshStatusCode] = js.undefined
 }
 object MeshStatus {
   

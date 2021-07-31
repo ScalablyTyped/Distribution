@@ -12,20 +12,19 @@ import typings.reactNativeNavigation.navigationComponentPropsMod.NavigationCompo
 import typings.reactNativeNavigation.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationComponentMod {
   
   @JSImport("react-native-navigation/lib/dist/interfaces/NavigationComponent", "NavigationComponent")
   @js.native
-  class NavigationComponent[Props, State, Snapshot] protected () extends Component[Props with NavigationComponentProps, State, Snapshot] {
-    def this(props: Props with NavigationComponentProps) = this()
+  class NavigationComponent[Props, State, Snapshot] protected () extends Component[Props & NavigationComponentProps, State, Snapshot] {
+    def this(props: Props & NavigationComponentProps) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: Props with NavigationComponentProps, context: js.Any) = this()
+    def this(props: Props & NavigationComponentProps, context: js.Any) = this()
     
     def componentDidAppear(_event: ComponentDidAppearEvent): Unit = js.native
     

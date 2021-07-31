@@ -3,99 +3,99 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object direct {
   
-  @js.native
-  trait IEvent extends IBase {
+  trait IEvent
+    extends StObject
+       with IBase {
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of code
       * @returns Object
       */
-    var getCode: js.UndefOr[js.Function0[_]] = js.native
+    var getCode: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of message
       * @returns String
       */
-    var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getMessage: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns String
       */
-    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of result
       * @returns Object
       */
-    var getResult: js.UndefOr[js.Function0[_]] = js.native
+    var getResult: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of status
       * @returns Boolean
       */
-    var getStatus: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getStatus: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of transaction
       * @returns Object
       */
-    var getTransaction: js.UndefOr[js.Function0[_]] = js.native
+    var getTransaction: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of xhr
       * @returns Object
       */
-    var getXhr: js.UndefOr[js.Function0[_]] = js.native
+    var getXhr: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value of code
       * @param code Object The new value.
       */
-    var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[js.Any], Unit]] = js.native
+    var setCode: js.UndefOr[js.Function1[/* code */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of message
       * @param message String The new value.
       */
-    var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name String The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of result
       * @param result Object The new value.
       */
-    var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[js.Any], Unit]] = js.native
+    var setResult: js.UndefOr[js.Function1[/* result */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of status
       * @param status Boolean The new value.
       */
-    var setStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Boolean], Unit]] = js.native
+    var setStatus: js.UndefOr[js.Function1[/* status */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of transaction
       * @param transaction Object The new value.
       */
-    var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTransaction: js.UndefOr[js.Function1[/* transaction */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of xhr
       * @param xhr Object The new value.
       */
-    var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[js.Any], Unit]] = js.native
+    var setXhr: js.UndefOr[js.Function1[/* xhr */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IEvent {
     
@@ -115,13 +115,13 @@ object direct {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setGetCode(value: () => _): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      def setGetCode(value: () => js.Any): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetCodeUndefined: Self = StObject.set(x, "getCode", js.undefined)
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
@@ -139,7 +139,7 @@ object direct {
       def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
       @scala.inline
-      def setGetResult(value: () => _): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+      def setGetResult(value: () => js.Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetResultUndefined: Self = StObject.set(x, "getResult", js.undefined)
@@ -151,13 +151,13 @@ object direct {
       def setGetStatusUndefined: Self = StObject.set(x, "getStatus", js.undefined)
       
       @scala.inline
-      def setGetTransaction(value: () => _): Self = StObject.set(x, "getTransaction", js.Any.fromFunction0(value))
+      def setGetTransaction(value: () => js.Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTransactionUndefined: Self = StObject.set(x, "getTransaction", js.undefined)
       
       @scala.inline
-      def setGetXhr(value: () => _): Self = StObject.set(x, "getXhr", js.Any.fromFunction0(value))
+      def setGetXhr(value: () => js.Any): Self = StObject.set(x, "getXhr", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetXhrUndefined: Self = StObject.set(x, "getXhr", js.undefined)
@@ -218,18 +218,19 @@ object direct {
     }
   }
   
-  @js.native
-  trait IExceptionEvent extends IRemotingEvent {
+  trait IExceptionEvent
+    extends StObject
+       with IRemotingEvent {
     
     /** [Method] Returns the value of error
       * @returns Object
       */
-    var getError: js.UndefOr[js.Function0[_]] = js.native
+    var getError: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of error
       * @param error Object The new value.
       */
-    var setError: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.native
+    var setError: js.UndefOr[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IExceptionEvent {
     
@@ -243,7 +244,7 @@ object direct {
     implicit class IExceptionEventMutableBuilder[Self <: IExceptionEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetError(value: () => _): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      def setGetError(value: () => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
@@ -256,14 +257,15 @@ object direct {
     }
   }
   
-  @js.native
-  trait IJsonProvider extends IProvider {
+  trait IJsonProvider
+    extends StObject
+       with IProvider {
     
     /** [Method] Create an event from a response object
       * @param response Object The XHR response object.
       * @returns Ext.direct.Event The event.
       */
-    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.native
+    var createEvent: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IEvent]] = js.undefined
   }
   object IJsonProvider {
     
@@ -284,8 +286,9 @@ object direct {
     }
   }
   
-  @js.native
-  trait IManager extends IObservable
+  trait IManager
+    extends StObject
+       with IObservable
   object IManager {
     
     @scala.inline
@@ -295,47 +298,48 @@ object direct {
     }
   }
   
-  @js.native
-  trait IPollingProvider extends IJsonProvider {
+  trait IPollingProvider
+    extends StObject
+       with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.native
+    var baseParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of baseParams
       * @returns Object
       */
-    var getBaseParams: js.UndefOr[js.Function0[_]] = js.native
+    var getBaseParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of interval
       * @returns Number
       */
-    var getInterval: js.UndefOr[js.Function0[Double]] = js.native
+    var getInterval: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of url
       * @returns String/Function
       */
-    var getUrl: js.UndefOr[js.Function0[_]] = js.native
+    var getUrl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** [Method] Sets the value of baseParams
       * @param baseParams Object The new value.
       */
-    var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of interval
       * @param interval Number The new value.
       */
-    var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.native
+    var setInterval: js.UndefOr[js.Function1[/* interval */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String/Function The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.native
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var url: js.UndefOr[js.Any] = js.native
+    var url: js.UndefOr[js.Any] = js.undefined
   }
   object IPollingProvider {
     
@@ -355,7 +359,7 @@ object direct {
       def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
       
       @scala.inline
-      def setGetBaseParams(value: () => _): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
+      def setGetBaseParams(value: () => js.Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
@@ -367,7 +371,7 @@ object direct {
       def setGetIntervalUndefined: Self = StObject.set(x, "getInterval", js.undefined)
       
       @scala.inline
-      def setGetUrl(value: () => _): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+      def setGetUrl(value: () => js.Any): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
@@ -404,31 +408,32 @@ object direct {
     }
   }
   
-  @js.native
-  trait IProvider extends IObservable {
+  trait IProvider
+    extends StObject
+       with IObservable {
     
     /** [Method] Abstract methods for subclasses to implement  */
-    var connect: js.UndefOr[js.Function0[Unit]] = js.native
+    var connect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Abstract methods for subclasses to implement  */
-    var disconnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var disconnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the value of id
       * @returns String
       */
     @JSName("getId")
-    var getId_IProvider: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getId_IProvider: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[java.lang.String] = js.native
+    var id: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns whether or not the server side is currently connected
       * @returns Boolean
       */
-    var isConnected: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isConnected: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isProvider: js.UndefOr[Boolean] = js.native
+    var isProvider: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -438,12 +443,12 @@ object direct {
     @JSName("relayEvents")
     var relayEvents_IProvider: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id String The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   }
   object IProvider {
     
@@ -506,24 +511,25 @@ object direct {
     }
   }
   
-  @js.native
-  trait IRemotingEvent extends IEvent {
+  trait IRemotingEvent
+    extends StObject
+       with IEvent {
     
     /** [Method] Returns the value of tid
       * @returns Object
       */
-    var getTid: js.UndefOr[js.Function0[_]] = js.native
+    var getTid: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Get the transaction associated with this event
       * @returns Ext.direct.Transaction The transaction
       */
     @JSName("getTransaction")
-    var getTransaction_IRemotingEvent: js.UndefOr[js.Function0[ITransaction]] = js.native
+    var getTransaction_IRemotingEvent: js.UndefOr[js.Function0[ITransaction]] = js.undefined
     
     /** [Method] Sets the value of tid
       * @param tid Object The new value.
       */
-    var setTid: js.UndefOr[js.Function1[/* tid */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTid: js.UndefOr[js.Function1[/* tid */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IRemotingEvent {
     
@@ -537,7 +543,7 @@ object direct {
     implicit class IRemotingEventMutableBuilder[Self <: IRemotingEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetTid(value: () => _): Self = StObject.set(x, "getTid", js.Any.fromFunction0(value))
+      def setGetTid(value: () => js.Any): Self = StObject.set(x, "getTid", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTidUndefined: Self = StObject.set(x, "getTid", js.undefined)
@@ -556,64 +562,65 @@ object direct {
     }
   }
   
-  @js.native
-  trait IRemotingMethod extends IBase {
+  trait IRemotingMethod
+    extends StObject
+       with IBase {
     
     /** [Method] Takes the arguments for the Direct function and splits the arguments from the scope and the callback
       * @param args Array The arguments passed to the direct call
       * @returns Object An object with 3 properties, args, callback &amp; scope.
       */
-    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], _]] = js.native
+    var getCallData: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], js.Any]] = js.undefined
     
     /** [Method] Returns the value of formHandler
       * @returns Object
       */
-    var getFormHandler: js.UndefOr[js.Function0[_]] = js.native
+    var getFormHandler: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of len
       * @returns Object
       */
-    var getLen: js.UndefOr[js.Function0[_]] = js.native
+    var getLen: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns Object
       */
-    var getName: js.UndefOr[js.Function0[_]] = js.native
+    var getName: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of ordered
       * @returns Boolean
       */
-    var getOrdered: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOrdered: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of params
       * @returns Object
       */
-    var getParams: js.UndefOr[js.Function0[_]] = js.native
+    var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of formHandler
       * @param formHandler Object The new value.
       */
-    var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.native
+    var setFormHandler: js.UndefOr[js.Function1[/* formHandler */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of len
       * @param len Object The new value.
       */
-    var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.native
+    var setLen: js.UndefOr[js.Function1[/* len */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name Object The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of ordered
       * @param ordered Boolean The new value.
       */
-    var setOrdered: js.UndefOr[js.Function1[/* ordered */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOrdered: js.UndefOr[js.Function1[/* ordered */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of params
       * @param params Object The new value.
       */
-    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IRemotingMethod {
     
@@ -627,25 +634,25 @@ object direct {
     implicit class IRemotingMethodMutableBuilder[Self <: IRemotingMethod] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetCallData(value: /* args */ js.UndefOr[Array] => _): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
+      def setGetCallData(value: /* args */ js.UndefOr[Array] => js.Any): Self = StObject.set(x, "getCallData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetCallDataUndefined: Self = StObject.set(x, "getCallData", js.undefined)
       
       @scala.inline
-      def setGetFormHandler(value: () => _): Self = StObject.set(x, "getFormHandler", js.Any.fromFunction0(value))
+      def setGetFormHandler(value: () => js.Any): Self = StObject.set(x, "getFormHandler", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFormHandlerUndefined: Self = StObject.set(x, "getFormHandler", js.undefined)
       
       @scala.inline
-      def setGetLen(value: () => _): Self = StObject.set(x, "getLen", js.Any.fromFunction0(value))
+      def setGetLen(value: () => js.Any): Self = StObject.set(x, "getLen", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLenUndefined: Self = StObject.set(x, "getLen", js.undefined)
       
       @scala.inline
-      def setGetName(value: () => _): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
@@ -657,7 +664,7 @@ object direct {
       def setGetOrderedUndefined: Self = StObject.set(x, "getOrdered", js.undefined)
       
       @scala.inline
-      def setGetParams(value: () => _): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+      def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
@@ -694,99 +701,100 @@ object direct {
     }
   }
   
-  @js.native
-  trait IRemotingProvider extends IJsonProvider {
+  trait IRemotingProvider
+    extends StObject
+       with IJsonProvider {
     
     /** [Config Option] (Object) */
-    var actions: js.UndefOr[js.Any] = js.native
+    var actions: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/Boolean) */
-    var enableBuffer: js.UndefOr[js.Any] = js.native
+    var enableBuffer: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var enableUrlEncode: js.UndefOr[java.lang.String] = js.native
+    var enableUrlEncode: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns the value of actions
       * @returns Object
       */
-    var getActions: js.UndefOr[js.Function0[_]] = js.native
+    var getActions: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of enableBuffer
       * @returns Number/Boolean
       */
-    var getEnableBuffer: js.UndefOr[js.Function0[_]] = js.native
+    var getEnableBuffer: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of enableUrlEncode
       * @returns String
       */
-    var getEnableUrlEncode: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getEnableUrlEncode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of maxRetries
       * @returns Number
       */
-    var getMaxRetries: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxRetries: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of namespace
       * @returns String/Object
       */
-    var getNamespace: js.UndefOr[js.Function0[_]] = js.native
+    var getNamespace: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of timeout
       * @returns Number
       */
-    var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+    var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of url
       * @returns String
       */
-    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var namespace: js.UndefOr[js.Any] = js.native
+    var namespace: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of actions
       * @param actions Object The new value.
       */
-    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[js.Any], Unit]] = js.native
+    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of enableBuffer
       * @param enableBuffer Number/Boolean The new value.
       */
-    var setEnableBuffer: js.UndefOr[js.Function1[/* enableBuffer */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEnableBuffer: js.UndefOr[js.Function1[/* enableBuffer */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of enableUrlEncode
       * @param enableUrlEncode String The new value.
       */
-    var setEnableUrlEncode: js.UndefOr[js.Function1[/* enableUrlEncode */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setEnableUrlEncode: js.UndefOr[js.Function1[/* enableUrlEncode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxRetries
       * @param maxRetries Number The new value.
       */
-    var setMaxRetries: js.UndefOr[js.Function1[/* maxRetries */ js.UndefOr[Double], Unit]] = js.native
+    var setMaxRetries: js.UndefOr[js.Function1[/* maxRetries */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of namespace
       * @param namespace String/Object The new value.
       */
-    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[js.Any], Unit]] = js.native
+    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of timeout
       * @param timeout Number The new value.
       */
-    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+    var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[java.lang.String] = js.native
+    var url: js.UndefOr[java.lang.String] = js.undefined
   }
   object IRemotingProvider {
     
@@ -818,13 +826,13 @@ object direct {
       def setEnableUrlEncodeUndefined: Self = StObject.set(x, "enableUrlEncode", js.undefined)
       
       @scala.inline
-      def setGetActions(value: () => _): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
+      def setGetActions(value: () => js.Any): Self = StObject.set(x, "getActions", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActionsUndefined: Self = StObject.set(x, "getActions", js.undefined)
       
       @scala.inline
-      def setGetEnableBuffer(value: () => _): Self = StObject.set(x, "getEnableBuffer", js.Any.fromFunction0(value))
+      def setGetEnableBuffer(value: () => js.Any): Self = StObject.set(x, "getEnableBuffer", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEnableBufferUndefined: Self = StObject.set(x, "getEnableBuffer", js.undefined)
@@ -842,7 +850,7 @@ object direct {
       def setGetMaxRetriesUndefined: Self = StObject.set(x, "getMaxRetries", js.undefined)
       
       @scala.inline
-      def setGetNamespace(value: () => _): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
+      def setGetNamespace(value: () => js.Any): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
@@ -927,98 +935,99 @@ object direct {
     }
   }
   
-  @js.native
-  trait ITransaction extends IBase {
+  trait ITransaction
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of action
       * @returns Object
       */
-    var getAction: js.UndefOr[js.Function0[_]] = js.native
+    var getAction: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of args
       * @returns Object
       */
-    var getArgs: js.UndefOr[js.Function0[_]] = js.native
+    var getArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of callback
       * @returns Object
       */
-    var getCallback: js.UndefOr[js.Function0[_]] = js.native
+    var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of form
       * @returns Object
       */
-    var getForm: js.UndefOr[js.Function0[_]] = js.native
+    var getForm: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of id
       * @returns Object
       */
-    var getId: js.UndefOr[js.Function0[_]] = js.native
+    var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of method
       * @returns Object
       */
-    var getMethod: js.UndefOr[js.Function0[_]] = js.native
+    var getMethod: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of provider
       * @returns Object
       */
-    var getProvider: js.UndefOr[js.Function0[_]] = js.native
+    var getProvider: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of retryCount
       * @returns Number
       */
-    var getRetryCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getRetryCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of action
       * @param action Object The new value.
       */
-    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of args
       * @param args Object The new value.
       */
-    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.native
+    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of callback
       * @param callback Object The new value.
       */
-    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.native
+    var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of form
       * @param form Object The new value.
       */
-    var setForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], Unit]] = js.native
+    var setForm: js.UndefOr[js.Function1[/* form */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of id
       * @param id Object The new value.
       */
-    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.native
+    var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of method
       * @param method Object The new value.
       */
-    var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of provider
       * @param provider Object The new value.
       */
-    var setProvider: js.UndefOr[js.Function1[/* provider */ js.UndefOr[js.Any], Unit]] = js.native
+    var setProvider: js.UndefOr[js.Function1[/* provider */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of retryCount
       * @param retryCount Number The new value.
       */
-    var setRetryCount: js.UndefOr[js.Function1[/* retryCount */ js.UndefOr[Double], Unit]] = js.native
+    var setRetryCount: js.UndefOr[js.Function1[/* retryCount */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object ITransaction {
     
@@ -1032,49 +1041,49 @@ object direct {
     implicit class ITransactionMutableBuilder[Self <: ITransaction] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetAction(value: () => _): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
+      def setGetAction(value: () => js.Any): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
       
       @scala.inline
-      def setGetArgs(value: () => _): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
       
       @scala.inline
-      def setGetCallback(value: () => _): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+      def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
       @scala.inline
-      def setGetForm(value: () => _): Self = StObject.set(x, "getForm", js.Any.fromFunction0(value))
+      def setGetForm(value: () => js.Any): Self = StObject.set(x, "getForm", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetFormUndefined: Self = StObject.set(x, "getForm", js.undefined)
       
       @scala.inline
-      def setGetId(value: () => _): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
       
       @scala.inline
-      def setGetMethod(value: () => _): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
+      def setGetMethod(value: () => js.Any): Self = StObject.set(x, "getMethod", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMethodUndefined: Self = StObject.set(x, "getMethod", js.undefined)
       
       @scala.inline
-      def setGetProvider(value: () => _): Self = StObject.set(x, "getProvider", js.Any.fromFunction0(value))
+      def setGetProvider(value: () => js.Any): Self = StObject.set(x, "getProvider", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetProviderUndefined: Self = StObject.set(x, "getProvider", js.undefined)
@@ -1141,6 +1150,5 @@ object direct {
     }
   }
   
-  @js.native
   trait Manager extends StObject
 }

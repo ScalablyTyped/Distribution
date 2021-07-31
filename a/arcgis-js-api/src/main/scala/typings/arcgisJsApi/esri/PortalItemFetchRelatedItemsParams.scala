@@ -6,25 +6,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortalItemFetchRelatedItemsParams extends Object {
+trait PortalItemFetchRelatedItemsParams
+  extends StObject
+     with Object {
   
   /**
     * The direction of the relationship.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRelatedItems)
     */
-  var direction: forward | reverse = js.native
+  var direction: forward | reverse
   
   /**
     * The type of relationship between the two items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRelatedItems)
     */
-  var relationshipType: String = js.native
+  var relationshipType: String
 }
 object PortalItemFetchRelatedItemsParams {
   

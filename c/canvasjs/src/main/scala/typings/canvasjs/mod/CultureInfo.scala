@@ -2,10 +2,8 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CultureInfo extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait CultureInfo extends StObject {
     * Default: [“Sunday”, “Monday”, “Tuesday”, “Wednesday”, “Thursday”, “Friday”, “Saturday”]
     * Example: [“domingo”, “lunes”, “martes”, “miércoles”, “jueves”, “viernes”, “sábado”]
     */
-  var days: js.UndefOr[js.Array[String]] = js.native
+  var days: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Character used to separate fractional part from the whole number.
     * Default: "."
     * Example: “.“ ”,”
     */
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Also referred to as Thousand Separator.
     * Default: “,”
     * Example: “,”, “.”
     */
-  var digitGroupSeparator: js.UndefOr[String] = js.native
+  var digitGroupSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Tool Tip for Menu Button.
     * Default: “More Options”
     * Example: “More Options”, etc
     */
-  var menuText: js.UndefOr[String] = js.native
+  var menuText: js.UndefOr[String] = js.undefined
   
   /**
     * Month Names starting from January.
     * Default: [“January”, “February”, “March”, “April”, “May”, “June”, “July”, “August”, “September”, “October”, “November”, “December”]
     * Example: [“January”, “February”, “March”, “April”, “May”, “June”, “July”, “August”, “September”, “October”, “November”, “December”]
     */
-  var months: js.UndefOr[js.Array[String]] = js.native
+  var months: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Text is shown inside the Button till v1.4
@@ -49,7 +47,7 @@ trait CultureInfo extends StObject {
     * Default: “Pan”
     * Example: “pan”, etc
     */
-  var panText: js.UndefOr[String] = js.native
+  var panText: js.UndefOr[String] = js.undefined
   
   /**
     * Text is shown inside the Button till v1.4
@@ -57,35 +55,35 @@ trait CultureInfo extends StObject {
     * Default: “Reset”
     * Example: “reset”, etc
     */
-  var resetText: js.UndefOr[String] = js.native
+  var resetText: js.UndefOr[String] = js.undefined
   
   /**
     * Set text is shown instead of Save as JPG.
     * Default: “Save as JPG”
     * Example: “save as jpg”, etc
     */
-  var saveJPGText: js.UndefOr[String] = js.native
+  var saveJPGText: js.UndefOr[String] = js.undefined
   
   /**
     * Set text is shown instead of Save as PNG.
     * Default: “Save as PNG”
     * Example: “save as png”, etc
     */
-  var savePNGText: js.UndefOr[String] = js.native
+  var savePNGText: js.UndefOr[String] = js.undefined
   
   /**
     * Short Day names starting from Sunday. Should be exactly 7 in total.
     * Default: [“Sun”, “Mon”, “Tue”, “Wed”, “Thu”, “Fri”, “Sat”]
     * Example: [“Sun”, “Mon”, “Tue”, “Wed”, “Thu”, “Fri”, “Sat”]
     */
-  var shortDays: js.UndefOr[js.Array[String]] = js.native
+  var shortDays: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Short Month Names starting from January.
     * Default: [“Jan”, “Feb”, “Mar”, “Apr”, “May”, “Jun”, “Jul”, “Aug”, “Sep”, “Oct”, “Nov”, “Dec”]
     * Example: [“Jan”, “Feb”, “Mar”, “Apr”, “May”, “Jun”, “Jul”, “Aug”, “Sep”, “Oct”, “Nov”, “Dec”]
     */
-  var shortMonths: js.UndefOr[js.Array[String]] = js.native
+  var shortMonths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Text is shown inside the Button till v1.4
@@ -93,7 +91,7 @@ trait CultureInfo extends StObject {
     * Default: "Zoom"
     * Example: “zoom”, etc
     */
-  var zoomText: js.UndefOr[String] = js.native
+  var zoomText: js.UndefOr[String] = js.undefined
 }
 object CultureInfo {
   

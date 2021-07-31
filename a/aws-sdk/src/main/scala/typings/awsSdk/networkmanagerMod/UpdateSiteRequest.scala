@@ -2,31 +2,29 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSiteRequest extends StObject {
   
   /**
     * A description of your site. Length Constraints: Maximum length of 256 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The site location:    Address: The physical address of the site.    Latitude: The latitude of the site.     Longitude: The longitude of the site.  
     */
-  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.undefined
   
   /**
     * The ID of your site.
     */
-  var SiteId: String = js.native
+  var SiteId: String
 }
 object UpdateSiteRequest {
   

@@ -4,25 +4,23 @@ import typings.openGraphScraper.openGraphScraperBooleans.`false`
 import typings.openGraphScraper.openGraphScraperBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var errorDetails: typings.std.Error = js.native
+    var errorDetails: typings.std.Error
     
-    var success: `false` = js.native
+    var success: `false`
   }
   object Error {
     
     @scala.inline
-    def apply(error: String, errorDetails: typings.std.Error, success: `false`): Error = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorDetails = errorDetails.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(error: String, errorDetails: typings.std.Error): Error = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], errorDetails = errorDetails.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[Error]
     }
     
@@ -40,16 +38,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: String = js.native
+    var width: String
   }
   object Height {
     
@@ -77,28 +74,27 @@ object anon {
     }
   }
   
-  @js.native
   trait OgDescription extends StObject {
     
-    var ogDescription: js.UndefOr[String] = js.native
+    var ogDescription: js.UndefOr[String] = js.undefined
     
-    var ogImage: js.UndefOr[Height] = js.native
+    var ogImage: js.UndefOr[Height] = js.undefined
     
-    var ogTitle: js.UndefOr[String] = js.native
+    var ogTitle: js.UndefOr[String] = js.undefined
     
-    var ogType: js.UndefOr[String] = js.native
+    var ogType: js.UndefOr[String] = js.undefined
     
-    var ogUrl: js.UndefOr[String] = js.native
+    var ogUrl: js.UndefOr[String] = js.undefined
     
-    var requestUrl: String = js.native
+    var requestUrl: String
     
-    var success: `true` = js.native
+    var success: `true`
   }
   object OgDescription {
     
     @scala.inline
-    def apply(requestUrl: String, success: `true`): OgDescription = {
-      val __obj = js.Dynamic.literal(requestUrl = requestUrl.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(requestUrl: String): OgDescription = {
+      val __obj = js.Dynamic.literal(requestUrl = requestUrl.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[OgDescription]
     }
     

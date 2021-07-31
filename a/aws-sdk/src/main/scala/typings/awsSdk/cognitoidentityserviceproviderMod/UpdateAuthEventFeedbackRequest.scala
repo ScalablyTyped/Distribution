@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAuthEventFeedbackRequest extends StObject {
   
   /**
     * The event ID.
     */
-  var EventId: EventIdType = js.native
+  var EventId: EventIdType
   
   /**
     * The feedback token.
     */
-  var FeedbackToken: TokenModelType = js.native
+  var FeedbackToken: TokenModelType
   
   /**
     * The authentication event feedback value.
     */
-  var FeedbackValue: FeedbackValueType = js.native
+  var FeedbackValue: FeedbackValueType
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user pool username.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object UpdateAuthEventFeedbackRequest {
   

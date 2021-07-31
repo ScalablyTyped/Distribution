@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFNamedValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultNamedValueStorageOperations extends StObject {
   
-  def GetNamedValues(NamedValueType: MFNamedValueType, Namespace: String): INamedValues = js.native
+  def GetNamedValues(NamedValueType: MFNamedValueType, Namespace: String): INamedValues
   
-  def RemoveNamedValues(NamedValueType: MFNamedValueType, Namespace: String, NamedValueNames: IStrings): Unit = js.native
+  def RemoveNamedValues(NamedValueType: MFNamedValueType, Namespace: String, NamedValueNames: IStrings): Unit
   
-  def SetNamedValues(NamedValueType: MFNamedValueType, Namespace: String, NamedValues: INamedValues): Unit = js.native
+  def SetNamedValues(NamedValueType: MFNamedValueType, Namespace: String, NamedValues: INamedValues): Unit
 }
 object IVaultNamedValueStorageOperations {
   

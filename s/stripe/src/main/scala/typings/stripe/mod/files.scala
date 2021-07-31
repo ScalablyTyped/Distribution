@@ -7,17 +7,17 @@ import typings.stripe.stripeStrings.pdf
 import typings.stripe.stripeStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object files {
   
-  @js.native
-  trait IFileCreationOptions extends IDataOptions {
+  trait IFileCreationOptions
+    extends StObject
+       with IDataOptions {
     
-    var file: Data = js.native
+    var file: Data
     
-    var purpose: IPurpose = js.native
+    var purpose: IPurpose
   }
   object IFileCreationOptions {
     
@@ -38,14 +38,15 @@ object files {
     }
   }
   
-  @js.native
-  trait IFileListOptions extends IListOptionsCreated {
+  trait IFileListOptions
+    extends StObject
+       with IListOptionsCreated {
     
     /**
       * The file purpose to filter queries by. If none is provided, files will not be
       * filtered by purpose.
       */
-    var purpose: IPurpose = js.native
+    var purpose: IPurpose
   }
   object IFileListOptions {
     
@@ -63,34 +64,35 @@ object files {
     }
   }
   
-  @js.native
-  trait IFileUpdate extends IResourceObject {
+  trait IFileUpdate
+    extends StObject
+       with IResourceObject {
     
-    var created: Double = js.native
+    var created: Double
     
     /**
       * Value is "file"
       */
     @JSName("object")
-    var object_IFileUpdate: file = js.native
+    var object_IFileUpdate: file
     
     /**
       * The purpose of the uploaded file. Possible values are "business_logo",
       * "dispute_evidence", "identity_document", "incorporation_article",
       * "incorporation_document".
       */
-    var purpose: IPurpose = js.native
+    var purpose: IPurpose
     
     /**
       * The size in bytes of the file object.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * The type of the file returned. Returns one of the following:
       * pdf, jpg, png.
       */
-    var `type`: pdf | jpg | png = js.native
+    var `type`: pdf | jpg | png
     
     /**
       * A read-only URL where the uploaded file can be accessed. Will be nil
@@ -98,22 +100,14 @@ object files {
       *  business_logo, dispute_evidence, incorporation_document.
       * Also nil if retrieved with the publishable API key.
       */
-    var url: String = js.native
+    var url: String
   }
   object IFileUpdate {
     
     @scala.inline
-    def apply(
-      created: Double,
-      id: String,
-      `object`: file,
-      purpose: IPurpose,
-      size: Double,
-      `type`: pdf | jpg | png,
-      url: String
-    ): IFileUpdate = {
+    def apply(created: Double, id: String, purpose: IPurpose, size: Double, `type`: pdf | jpg | png, url: String): IFileUpdate = {
       val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], purpose = purpose.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("file")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileUpdate]
     }

@@ -2,66 +2,64 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tunnel extends StObject {
   
   /**
     * The time when the tunnel was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.native
+  var createdAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * A description of the tunnel.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The destination configuration that specifies the thing name of the destination device and a service name that the local proxy uses to connect to the destination application.
     */
-  var destinationConfig: js.UndefOr[DestinationConfig] = js.native
+  var destinationConfig: js.UndefOr[DestinationConfig] = js.undefined
   
   /**
     * The connection state of the destination application.
     */
-  var destinationConnectionState: js.UndefOr[ConnectionState] = js.native
+  var destinationConnectionState: js.UndefOr[ConnectionState] = js.undefined
   
   /**
     * The last time the tunnel was updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The connection state of the source application.
     */
-  var sourceConnectionState: js.UndefOr[ConnectionState] = js.native
+  var sourceConnectionState: js.UndefOr[ConnectionState] = js.undefined
   
   /**
     * The status of a tunnel. Valid values are: Open and Closed.
     */
-  var status: js.UndefOr[TunnelStatus] = js.native
+  var status: js.UndefOr[TunnelStatus] = js.undefined
   
   /**
     * A list of tag metadata associated with the secure tunnel.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Timeout configuration for the tunnel.
     */
-  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.native
+  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of a tunnel. The tunnel ARN format is arn:aws:tunnel:&lt;region&gt;:&lt;account-id&gt;:tunnel/&lt;tunnel-id&gt; 
     */
-  var tunnelArn: js.UndefOr[TunnelArn] = js.native
+  var tunnelArn: js.UndefOr[TunnelArn] = js.undefined
   
   /**
     * A unique alpha-numeric ID that identifies a tunnel.
     */
-  var tunnelId: js.UndefOr[TunnelId] = js.native
+  var tunnelId: js.UndefOr[TunnelId] = js.undefined
 }
 object Tunnel {
   

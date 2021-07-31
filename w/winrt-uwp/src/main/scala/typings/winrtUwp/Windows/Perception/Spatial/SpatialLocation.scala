@@ -2,28 +2,26 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialLocation extends StObject {
   
-  var absoluteAngularAcceleration: js.Any = js.native
+  var absoluteAngularAcceleration: js.Any
   
   /* unmapped type */
-  var absoluteAngularVelocity: js.Any = js.native
+  var absoluteAngularVelocity: js.Any
   
   /* unmapped type */
-  var absoluteLinearAcceleration: js.Any = js.native
+  var absoluteLinearAcceleration: js.Any
   
   /* unmapped type */
-  var absoluteLinearVelocity: js.Any = js.native
+  var absoluteLinearVelocity: js.Any
   
   /* unmapped type */
-  var orientation: js.Any = js.native
+  var orientation: js.Any
   
   /* unmapped type */
-  var position: js.Any = js.native
+  var position: js.Any
 }
 object SpatialLocation {
   

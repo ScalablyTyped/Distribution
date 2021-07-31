@@ -2,7 +2,6 @@ package typings.chromeApps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AppView {
@@ -23,23 +22,22 @@ object AppView {
   /* was `typeof HTMLAppViewElement` */
   type ^ = HTMLAppViewElement
   
-  @js.native
   trait EmbedRequest extends StObject {
     
     /**
       * Allows the embedding request
       * @param url Specifies the content to be embedded.
       */
-    def allow(url: String): Unit = js.native
+    def allow(url: String): Unit
     
     /** Optional developer specified data that the app to be embedded can use when making an embedding decision. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Prevents the embedding request */
-    def deny(): Unit = js.native
+    def deny(): Unit
     
     /** The ID of the app that sent the embedding request. */
-    var embedderId: String = js.native
+    var embedderId: String
   }
   object EmbedRequest {
     

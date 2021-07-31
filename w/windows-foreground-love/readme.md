@@ -12,7 +12,7 @@ API wrapper for AllowSetForegroundWindow
 | Keywords           | - |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 379366 |
+| # downloads        | 444388 |
 | # stars            | 1 |
 
 ## Links

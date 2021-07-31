@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuotaStatus extends StObject {
   
   /** Quota consumed by this request. */
-  var consumed: js.UndefOr[Double] = js.native
+  var consumed: js.UndefOr[Double] = js.undefined
   
   /** Quota remaining after this request. */
-  var remaining: js.UndefOr[Double] = js.native
+  var remaining: js.UndefOr[Double] = js.undefined
 }
 object QuotaStatus {
   

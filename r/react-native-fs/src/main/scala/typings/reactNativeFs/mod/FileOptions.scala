@@ -2,13 +2,11 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileOptions extends StObject {
   
-  var NSFileProtectionKey: js.UndefOr[String] = js.native
+  var NSFileProtectionKey: js.UndefOr[String] = js.undefined
 }
 object FileOptions {
   

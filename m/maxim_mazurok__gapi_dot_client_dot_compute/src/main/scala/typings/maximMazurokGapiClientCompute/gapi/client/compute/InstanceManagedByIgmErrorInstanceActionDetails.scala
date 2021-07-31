@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceManagedByIgmErrorInstanceActionDetails extends StObject {
   
   /** [Output Only] Action that managed instance group was executing on the instance when the error occurred. Possible values: */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The URL of the instance. The URL can be set even if the instance has not yet been created. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Version this instance was created from, or was being created from, but the creation failed. Corresponds to one of the versions that were set on the Instance Group
     * Manager resource at the time this instance was being created.
     */
-  var version: js.UndefOr[ManagedInstanceVersion] = js.native
+  var version: js.UndefOr[ManagedInstanceVersion] = js.undefined
 }
 object InstanceManagedByIgmErrorInstanceActionDetails {
   

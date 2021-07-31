@@ -4,7 +4,6 @@ import typings.yandexMaps.mod.router.Route
 import typings.yandexMaps.mod.util.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //option.presetStorage
@@ -14,47 +13,77 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.DblClickZoom")
   @js.native
-  class DblClickZoom () extends IBehavior {
+  class DblClickZoom ()
+    extends StObject
+       with IBehavior {
     def this(options: IDblClickZoomOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
   
   @JSImport("yandex-maps", "behavior.Drag")
   @js.native
-  class Drag () extends IBehavior {
+  class Drag ()
+    extends StObject
+       with IBehavior {
     def this(options: IDragOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
   
   @JSImport("yandex-maps", "behavior.LeftMouseButtonMagnifier")
   @js.native
-  class LeftMouseButtonMagnifier () extends IBehavior {
+  class LeftMouseButtonMagnifier ()
+    extends StObject
+       with IBehavior {
     def this(options: ILeftMouseButtonMagnifierOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
   
   @JSImport("yandex-maps", "behavior.MultiTouch")
   @js.native
-  class MultiTouch () extends IBehavior {
+  class MultiTouch ()
+    extends StObject
+       with IBehavior {
     def this(options: IMultiTouchOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
   
   @JSImport("yandex-maps", "behavior.RightMouseButtonMagnifier")
   @js.native
-  class RightMouseButtonMagnifier () extends IBehavior {
+  class RightMouseButtonMagnifier ()
+    extends StObject
+       with IBehavior {
     def this(options: IRightMouseButtonMagnifierOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
   
   @JSImport("yandex-maps", "behavior.RouteEditor")
   @js.native
-  class RouteEditor () extends IBehavior {
+  class RouteEditor ()
+    extends StObject
+       with IBehavior {
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def getRoute(): Route = js.native
     
@@ -68,10 +97,15 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.Ruler")
   @js.native
-  class Ruler () extends IBehavior {
+  class Ruler ()
+    extends StObject
+       with IBehavior {
     def this(options: IRulerOptions) = this()
     
     def close(): Boolean = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def getState(): String = js.native
     
@@ -83,8 +117,13 @@ object behavior {
   
   @JSImport("yandex-maps", "behavior.ScrollZoom")
   @js.native
-  class ScrollZoom () extends IBehavior {
+  class ScrollZoom ()
+    extends StObject
+       with IBehavior {
     def this(options: IScrollZoomOptions) = this()
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def setParent(parent: IControlParent): this.type = js.native
   }
@@ -93,12 +132,13 @@ object behavior {
   @js.native
   val storage: Storage = js.native
   
-  @js.native
-  trait IDblClickZoomOptions extends IMapMarginOptions {
+  trait IDblClickZoomOptions
+    extends StObject
+       with IMapMarginOptions {
     
-    var centering: js.UndefOr[Boolean] = js.native
+    var centering: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object IDblClickZoomOptions {
     
@@ -125,18 +165,17 @@ object behavior {
     }
   }
   
-  @js.native
   trait IDragOptions extends StObject {
     
-    var actionCursor: js.UndefOr[String] = js.native
+    var actionCursor: js.UndefOr[String] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var inertia: js.UndefOr[Boolean] = js.native
+    var inertia: js.UndefOr[Boolean] = js.undefined
     
-    var inertiaDuration: js.UndefOr[Double] = js.native
+    var inertiaDuration: js.UndefOr[Double] = js.undefined
     
-    var tremor: js.UndefOr[Double] = js.native
+    var tremor: js.UndefOr[Double] = js.undefined
   }
   object IDragOptions {
     
@@ -181,14 +220,13 @@ object behavior {
     }
   }
   
-  @js.native
   trait ILeftMouseButtonMagnifierOptions extends StObject {
     
-    var actionCursor: js.UndefOr[String] = js.native
+    var actionCursor: js.UndefOr[String] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object ILeftMouseButtonMagnifierOptions {
     
@@ -221,10 +259,9 @@ object behavior {
     }
   }
   
-  @js.native
   trait IMultiTouchOptions extends StObject {
     
-    var tremor: js.UndefOr[Double] = js.native
+    var tremor: js.UndefOr[Double] = js.undefined
   }
   object IMultiTouchOptions {
     
@@ -245,12 +282,11 @@ object behavior {
     }
   }
   
-  @js.native
   trait IRightMouseButtonMagnifierOptions extends StObject {
     
-    var actionCursor: js.UndefOr[String] = js.native
+    var actionCursor: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object IRightMouseButtonMagnifierOptions {
     
@@ -277,10 +313,9 @@ object behavior {
     }
   }
   
-  @js.native
   trait IRulerOptions extends StObject {
     
-    var balloonAutoPan: js.UndefOr[Boolean] = js.native
+    var balloonAutoPan: js.UndefOr[Boolean] = js.undefined
   }
   object IRulerOptions {
     
@@ -301,12 +336,11 @@ object behavior {
     }
   }
   
-  @js.native
   trait IScrollZoomOptions extends StObject {
     
-    var maximumDelta: js.UndefOr[Double] = js.native
+    var maximumDelta: js.UndefOr[Double] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object IScrollZoomOptions {
     

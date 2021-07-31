@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewaySpecListener extends StObject {
   
   /**
     * The health check information for the listener.
     */
-  var healthCheck: js.UndefOr[Input[VirtualGatewaySpecListenerHealthCheck]] = js.native
+  var healthCheck: js.UndefOr[Input[VirtualGatewaySpecListenerHealthCheck]] = js.undefined
   
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: Input[VirtualGatewaySpecListenerPortMapping] = js.native
+  var portMapping: Input[VirtualGatewaySpecListenerPortMapping]
   
   /**
     * The Transport Layer Security (TLS) properties for the listener
     */
-  var tls: js.UndefOr[Input[VirtualGatewaySpecListenerTls]] = js.native
+  var tls: js.UndefOr[Input[VirtualGatewaySpecListenerTls]] = js.undefined
 }
 object VirtualGatewaySpecListener {
   

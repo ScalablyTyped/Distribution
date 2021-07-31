@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * channels. E.g., glibc (aka libc6) is distributed by many, at various
   * versions.
   */
-@js.native
 trait SchemaPackage extends StObject {
   
   /**
     * The various channels by which a package is distributed.
     */
-  var distribution: js.UndefOr[js.Array[SchemaDistribution]] = js.native
+  var distribution: js.UndefOr[js.Array[SchemaDistribution]] = js.undefined
   
   /**
     * Required. Immutable. The name of the package.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaPackage {
   

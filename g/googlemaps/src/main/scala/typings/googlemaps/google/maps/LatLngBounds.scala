@@ -3,7 +3,6 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.google.maps.places._LocationBias
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/coordinates#LatLngBounds Maps JavaScript API}
   */
 @js.native
-trait LatLngBounds extends _LocationBias {
+trait LatLngBounds
+  extends StObject
+     with _LocationBias {
   
   /**
     * Returns true if the given lat/lng is in this bounds.

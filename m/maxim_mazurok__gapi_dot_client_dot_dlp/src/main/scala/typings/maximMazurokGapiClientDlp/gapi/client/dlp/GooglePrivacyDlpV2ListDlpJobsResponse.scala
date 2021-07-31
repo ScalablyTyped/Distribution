@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ListDlpJobsResponse extends StObject {
   
   /** A list of DlpJobs that matches the specified filter in the request. */
-  var jobs: js.UndefOr[js.Array[GooglePrivacyDlpV2DlpJob]] = js.native
+  var jobs: js.UndefOr[js.Array[GooglePrivacyDlpV2DlpJob]] = js.undefined
   
   /** The standard List next-page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2ListDlpJobsResponse {
   

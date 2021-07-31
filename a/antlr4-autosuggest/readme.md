@@ -12,7 +12,7 @@ Autosuggest engine for ANTLR4 grammars
 | Keywords           | antl4, autosuggest, autocomplete, antlr, grammar, parser, lexer |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 6013 |
+| # downloads        | 6469 |
 | # stars            | 2 |
 
 ## Links

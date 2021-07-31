@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOn extends StObject {
   
   /**
     * The name of the add-on.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The next daily time an automatic snapshot will be created. The time shown is in HH:00 format, and in Coordinated Universal Time (UTC). The snapshot is automatically created between the time shown and up to 45 minutes after.
     */
-  var nextSnapshotTimeOfDay: js.UndefOr[TimeOfDay] = js.native
+  var nextSnapshotTimeOfDay: js.UndefOr[TimeOfDay] = js.undefined
   
   /**
     * The daily time when an automatic snapshot is created. The time shown is in HH:00 format, and in Coordinated Universal Time (UTC). The snapshot is automatically created between the time shown and up to 45 minutes after.
     */
-  var snapshotTimeOfDay: js.UndefOr[TimeOfDay] = js.native
+  var snapshotTimeOfDay: js.UndefOr[TimeOfDay] = js.undefined
   
   /**
     * The status of the add-on.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object AddOn {
   

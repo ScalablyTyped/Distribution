@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ElasticInference extends Service {
   
   @JSName("config")
-  var config_ElasticInference: ConfigBase with ClientConfiguration = js.native
+  var config_ElasticInference: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Describes the locations in which a given accelerator type or set of types is present in a given region. 

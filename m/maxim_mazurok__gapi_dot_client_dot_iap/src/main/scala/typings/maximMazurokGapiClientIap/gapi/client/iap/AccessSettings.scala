@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessSettings extends StObject {
   
   /** Configuration to allow cross-origin requests via IAP. */
-  var corsSettings: js.UndefOr[CorsSettings] = js.native
+  var corsSettings: js.UndefOr[CorsSettings] = js.undefined
   
   /** GCIP claims and endpoint configurations for 3p identity providers. */
-  var gcipSettings: js.UndefOr[GcipSettings] = js.native
+  var gcipSettings: js.UndefOr[GcipSettings] = js.undefined
   
   /** Settings to configure IAP's OAuth behavior. */
-  var oauthSettings: js.UndefOr[OAuthSettings] = js.native
+  var oauthSettings: js.UndefOr[OAuthSettings] = js.undefined
   
   /** Settings to configure Policy delegation for apps hosted in tenant projects. INTERNAL_ONLY. */
-  var policyDelegationSettings: js.UndefOr[PolicyDelegationSettings] = js.native
+  var policyDelegationSettings: js.UndefOr[PolicyDelegationSettings] = js.undefined
 }
 object AccessSettings {
   

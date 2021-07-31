@@ -2,21 +2,19 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var position: String = js.native
+  var position: String
   
-  var top: Double = js.native
+  var top: Double
   
-  var transform: js.Array[Rotate] = js.native
+  var transform: js.Array[Rotate]
   
-  var width: Double = js.native
+  var width: Double
 }
 object Position {
   

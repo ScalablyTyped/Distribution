@@ -2,66 +2,64 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationTaskStats extends StObject {
   
   /**
     * The elapsed time of the task, in milliseconds.
     */
-  var ElapsedTimeMillis: js.UndefOr[Long] = js.native
+  var ElapsedTimeMillis: js.UndefOr[Long] = js.undefined
   
   /**
     * The date the replication task was started either with a fresh start or a target reload.
     */
-  var FreshStartDate: js.UndefOr[TStamp] = js.native
+  var FreshStartDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date the replication task full load was completed.
     */
-  var FullLoadFinishDate: js.UndefOr[TStamp] = js.native
+  var FullLoadFinishDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The percent complete for the full load migration task.
     */
-  var FullLoadProgressPercent: js.UndefOr[Integer] = js.native
+  var FullLoadProgressPercent: js.UndefOr[Integer] = js.undefined
   
   /**
     * The date the replication task full load was started.
     */
-  var FullLoadStartDate: js.UndefOr[TStamp] = js.native
+  var FullLoadStartDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date the replication task was started either with a fresh start or a resume. For more information, see StartReplicationTaskType.
     */
-  var StartDate: js.UndefOr[TStamp] = js.native
+  var StartDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date the replication task was stopped.
     */
-  var StopDate: js.UndefOr[TStamp] = js.native
+  var StopDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The number of errors that have occurred during this task.
     */
-  var TablesErrored: js.UndefOr[Integer] = js.native
+  var TablesErrored: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of tables loaded for this task.
     */
-  var TablesLoaded: js.UndefOr[Integer] = js.native
+  var TablesLoaded: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of tables currently loading for this task.
     */
-  var TablesLoading: js.UndefOr[Integer] = js.native
+  var TablesLoading: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of tables queued for this task.
     */
-  var TablesQueued: js.UndefOr[Integer] = js.native
+  var TablesQueued: js.UndefOr[Integer] = js.undefined
 }
 object ReplicationTaskStats {
   

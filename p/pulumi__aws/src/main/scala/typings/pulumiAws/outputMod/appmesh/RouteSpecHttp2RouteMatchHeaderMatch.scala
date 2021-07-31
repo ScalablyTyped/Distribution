@@ -2,37 +2,35 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteMatchHeaderMatch extends StObject {
   
   /**
     * The value sent by the client must match the specified value exactly. Must be between 1 and 255 characters in length.
     */
-  var exact: js.UndefOr[String] = js.native
+  var exact: js.UndefOr[String] = js.undefined
   
   /**
     * The value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
     * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * The object that specifies the range of numbers that the value sent by the client must be included in.
     */
-  var range: js.UndefOr[RouteSpecHttp2RouteMatchHeaderMatchRange] = js.native
+  var range: js.UndefOr[RouteSpecHttp2RouteMatchHeaderMatchRange] = js.undefined
   
   /**
     * The value sent by the client must include the specified characters. Must be between 1 and 255 characters in length.
     */
-  var regex: js.UndefOr[String] = js.native
+  var regex: js.UndefOr[String] = js.undefined
   
   /**
     * The value sent by the client must end with the specified characters. Must be between 1 and 255 characters in length.
     */
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
 }
 object RouteSpecHttp2RouteMatchHeaderMatch {
   

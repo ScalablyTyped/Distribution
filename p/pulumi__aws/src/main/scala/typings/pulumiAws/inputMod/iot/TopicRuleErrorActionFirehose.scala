@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionFirehose extends StObject {
   
   /**
     * The delivery stream name.
     */
-  var deliveryStreamName: Input[String] = js.native
+  var deliveryStreamName: Input[String]
   
   /**
     * The IAM role ARN that grants access to the Amazon Kinesis Firehose stream.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
   
   /**
     * A character separator that is used to separate records written to the Firehose stream. Valid values are: '\n' (newline), '\t' (tab), '\r\n' (Windows newline), ',' (comma).
     */
-  var separator: js.UndefOr[Input[String]] = js.native
+  var separator: js.UndefOr[Input[String]] = js.undefined
 }
 object TopicRuleErrorActionFirehose {
   

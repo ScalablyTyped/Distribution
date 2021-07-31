@@ -3,21 +3,19 @@ package typings.reactJsonschemaForm.mod
 import typings.jsonSchema.mod.JSONSchema6
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorListProps extends StObject {
   
-  var errorSchema: FormValidation = js.native
+  var errorSchema: FormValidation
   
-  var errors: js.Array[AjvError] = js.native
+  var errors: js.Array[AjvError]
   
-  var formContext: js.Any = js.native
+  var formContext: js.Any
   
-  var schema: JSONSchema6 = js.native
+  var schema: JSONSchema6
   
-  var uiSchema: UiSchema = js.native
+  var uiSchema: UiSchema
 }
 object ErrorListProps {
   

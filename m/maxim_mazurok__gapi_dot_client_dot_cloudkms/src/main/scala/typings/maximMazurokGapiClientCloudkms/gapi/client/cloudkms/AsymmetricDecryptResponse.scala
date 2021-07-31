@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsymmetricDecryptResponse extends StObject {
   
   /** The decrypted data originally encrypted with the matching public key. */
-  var plaintext: js.UndefOr[String] = js.native
+  var plaintext: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A CRC32C checksum of the returned AsymmetricDecryptResponse.plaintext. An integrity check of AsymmetricDecryptResponse.plaintext can be performed by
@@ -18,14 +16,14 @@ trait AsymmetricDecryptResponse extends StObject {
     * compatibility across different languages. However, it is a non-negative integer, which will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support
     * this type. NOTE: This field is in Beta.
     */
-  var plaintextCrc32c: js.UndefOr[String] = js.native
+  var plaintextCrc32c: js.UndefOr[String] = js.undefined
   
   /**
     * Integrity verification field. A flag indicating whether AsymmetricDecryptRequest.ciphertext_crc32c was received by KeyManagementService and used for the integrity verification of
     * the ciphertext. A false value of this field indicates either that AsymmetricDecryptRequest.ciphertext_crc32c was left unset or that it was not delivered to KeyManagementService. If
     * you've set AsymmetricDecryptRequest.ciphertext_crc32c but this field is still false, discard the response and perform a limited number of retries. NOTE: This field is in Beta.
     */
-  var verifiedCiphertextCrc32c: js.UndefOr[Boolean] = js.native
+  var verifiedCiphertextCrc32c: js.UndefOr[Boolean] = js.undefined
 }
 object AsymmetricDecryptResponse {
   

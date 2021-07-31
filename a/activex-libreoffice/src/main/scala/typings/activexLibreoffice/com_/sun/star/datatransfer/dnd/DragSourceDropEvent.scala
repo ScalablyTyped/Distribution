@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.datatransfer.dnd
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,17 +12,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It contains sufficient information for the originator of the operation to provide appropriate feedback to the end user when the operation completes.
   * @see com.sun.star.datatransfer.dnd.XDragSourceListener
   */
-@js.native
-trait DragSourceDropEvent extends DragSourceEvent {
+trait DragSourceDropEvent
+  extends StObject
+     with DragSourceEvent {
   
   /**
     * The action performed by the target on the subject of the drop.
     * @see com.sun.star.datatransfer.dnd.DNDConstants
     */
-  var DropAction: Double = js.native
+  var DropAction: Double
   
   /** Indicates if the drop was successful. */
-  var DropSuccess: Boolean = js.native
+  var DropSuccess: Boolean
 }
 object DragSourceDropEvent {
   

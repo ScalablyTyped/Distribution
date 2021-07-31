@@ -4,43 +4,40 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-scrollable-anchor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-scrollable-anchor", JSImport.Default)
   @js.native
   class default ()
     extends Component[ScrollableAnchorProps, js.Object, js.Any]
   
-  @JSImport("react-scrollable-anchor", "configureAnchors")
-  @js.native
-  def configureAnchors(options: ConfigureAnchorsOptions): Unit = js.native
+  @scala.inline
+  def configureAnchors(options: ConfigureAnchorsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureAnchors")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-scrollable-anchor", "goToAnchor")
-  @js.native
-  def goToAnchor(anchorId: String): Unit = js.native
-  @JSImport("react-scrollable-anchor", "goToAnchor")
-  @js.native
-  def goToAnchor(anchorId: String, saveHashUpdate: Boolean): Unit = js.native
+  @scala.inline
+  def goToAnchor(anchorId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def goToAnchor(anchorId: String, saveHashUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("goToAnchor")(anchorId.asInstanceOf[js.Any], saveHashUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-scrollable-anchor", "goToTop")
-  @js.native
-  def goToTop(): Unit = js.native
+  @scala.inline
+  def goToTop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("goToTop")().asInstanceOf[Unit]
   
-  @JSImport("react-scrollable-anchor", "removeHash")
-  @js.native
-  def removeHash(): Unit = js.native
+  @scala.inline
+  def removeHash(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHash")().asInstanceOf[Unit]
   
-  @js.native
   trait ConfigureAnchorsOptions extends StObject {
     
-    var keepLastAnchorHash: js.UndefOr[Boolean] = js.native
+    var keepLastAnchorHash: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var scrollDuration: js.UndefOr[Double] = js.native
+    var scrollDuration: js.UndefOr[Double] = js.undefined
   }
   object ConfigureAnchorsOptions {
     
@@ -75,12 +72,11 @@ object mod {
   
   type ScrollableAnchor = Component[ScrollableAnchorProps, js.Object, js.Any]
   
-  @js.native
   trait ScrollableAnchorProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var id: String = js.native
+    var id: String
   }
   object ScrollableAnchorProps {
     

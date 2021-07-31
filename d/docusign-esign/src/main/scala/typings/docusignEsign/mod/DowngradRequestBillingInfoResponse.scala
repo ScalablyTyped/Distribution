@@ -2,13 +2,11 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DowngradRequestBillingInfoResponse extends StObject {
   
-  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.native
+  var downgradePlanInformation: js.UndefOr[DowngradePlanUpdateResponse] = js.undefined
   
   /**
     * The payment method used for the billing plan. Valid values are:
@@ -23,7 +21,7 @@ trait DowngradRequestBillingInfoResponse extends StObject {
     * - `DigitalExternal`
     * - `DirectDebit`
     */
-  var paymentMethod: js.UndefOr[String] = js.native
+  var paymentMethod: js.UndefOr[String] = js.undefined
 }
 object DowngradRequestBillingInfoResponse {
   

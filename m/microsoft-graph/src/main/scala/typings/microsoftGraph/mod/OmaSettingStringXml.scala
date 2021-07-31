@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OmaSettingStringXml extends OmaSetting {
+trait OmaSettingStringXml
+  extends StObject
+     with OmaSetting {
   
   // File name associated with the Value property (.xml).
-  var fileName: js.UndefOr[NullableOption[String]] = js.native
+  var fileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value. (UTF8 encoded byte array)
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object OmaSettingStringXml {
   

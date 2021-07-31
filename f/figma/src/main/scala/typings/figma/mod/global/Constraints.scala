@@ -2,15 +2,13 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Constraints extends StObject {
   
-  val horizontal: ConstraintType = js.native
+  val horizontal: ConstraintType
   
-  val vertical: ConstraintType = js.native
+  val vertical: ConstraintType
 }
 object Constraints {
   

@@ -2,13 +2,16 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("couchbase", "SearchFacet")
 @js.native
 class SearchFacet () extends StObject
 object SearchFacet {
+  
+  @JSImport("couchbase", "SearchFacet")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("couchbase", "SearchFacet.DateFacet")
   @js.native
@@ -28,15 +31,12 @@ object SearchFacet {
   @js.native
   class TermFacet () extends SearchFacet
   
-  @JSImport("couchbase", "SearchFacet.date")
-  @js.native
-  def date(field: String, size: Double): DateFacet = js.native
+  @scala.inline
+  def date(field: String, size: Double): DateFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DateFacet]
   
-  @JSImport("couchbase", "SearchFacet.numeric")
-  @js.native
-  def numeric(field: String, size: Double): NumericFacet = js.native
+  @scala.inline
+  def numeric(field: String, size: Double): NumericFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("numeric")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[NumericFacet]
   
-  @JSImport("couchbase", "SearchFacet.term")
-  @js.native
-  def term(field: String, size: Double): TermFacet = js.native
+  @scala.inline
+  def term(field: String, size: Double): TermFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[TermFacet]
 }

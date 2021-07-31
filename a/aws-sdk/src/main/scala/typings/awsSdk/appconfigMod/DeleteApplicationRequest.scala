@@ -2,16 +2,14 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationRequest extends StObject {
   
   /**
     * The ID of the application to delete.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
 }
 object DeleteApplicationRequest {
   

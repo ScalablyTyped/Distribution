@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragStartEventUIParam extends StObject {
   
   /**
     * Gets a reference to the helper.
     */
-  var helper: js.UndefOr[String] = js.native
+  var helper: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the data.
     */
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the offset.
     */
-  var offset: js.UndefOr[js.Any] = js.native
+  var offset: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the original position of the draggable element.
     */
-  var originalPosition: js.UndefOr[js.Any] = js.native
+  var originalPosition: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the current position of the draggable element.
     */
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
 }
 object DragStartEventUIParam {
   

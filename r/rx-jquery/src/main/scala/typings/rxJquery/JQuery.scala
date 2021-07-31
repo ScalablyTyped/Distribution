@@ -7,14 +7,13 @@ import typings.jquery.JQueryMouseEventObject
 import typings.rx.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JQuery extends StObject {
   
-  def animateAsObservable(properties: js.Any, duration: Double): Observable[_] = js.native
-  def animateAsObservable(properties: js.Any, duration: Double, easing: String): Observable[_] = js.native
+  def animateAsObservable(properties: js.Any, duration: Double): Observable[js.Any] = js.native
+  def animateAsObservable(properties: js.Any, duration: Double, easing: String): Observable[js.Any] = js.native
   
   def bindAsObservable[T /* <: BaseJQueryEventObject */](eventType: String): Observable[T] = js.native
   def bindAsObservable[T /* <: BaseJQueryEventObject */](eventType: String, eventData: js.Any): Observable[T] = js.native
@@ -32,17 +31,17 @@ trait JQuery extends StObject {
   def delegateAsObservable[T /* <: BaseJQueryEventObject */](selector: String, eventType: String): Observable[T] = js.native
   def delegateAsObservable[T /* <: BaseJQueryEventObject */](selector: String, eventType: String, eventData: js.Any): Observable[T] = js.native
   
-  def fadeInAsObservable(duration: Double): Observable[_] = js.native
-  def fadeInAsObservable(duration: Double, easing: String): Observable[_] = js.native
+  def fadeInAsObservable(duration: Double): Observable[js.Any] = js.native
+  def fadeInAsObservable(duration: Double, easing: String): Observable[js.Any] = js.native
   
-  def fadeOutAsObservable(duration: Double): Observable[_] = js.native
-  def fadeOutAsObservable(duration: Double, easing: String): Observable[_] = js.native
+  def fadeOutAsObservable(duration: Double): Observable[js.Any] = js.native
+  def fadeOutAsObservable(duration: Double, easing: String): Observable[js.Any] = js.native
   
-  def fadeToAsObservable(duration: Double, opacity: Double): Observable[_] = js.native
-  def fadeToAsObservable(duration: Double, opacity: Double, easing: String): Observable[_] = js.native
+  def fadeToAsObservable(duration: Double, opacity: Double): Observable[js.Any] = js.native
+  def fadeToAsObservable(duration: Double, opacity: Double, easing: String): Observable[js.Any] = js.native
   
-  def fadeToggleAsObservable(duration: Double): Observable[_] = js.native
-  def fadeToggleAsObservable(duration: Double, easing: String): Observable[_] = js.native
+  def fadeToggleAsObservable(duration: Double): Observable[js.Any] = js.native
+  def fadeToggleAsObservable(duration: Double, easing: String): Observable[js.Any] = js.native
   
   def focusAsObservable(): Observable[JQueryInputEventObject] = js.native
   def focusAsObservable(eventData: js.Any): Observable[JQueryInputEventObject] = js.native
@@ -86,11 +85,11 @@ trait JQuery extends StObject {
   def mouseupAsObservable(eventData: js.Any): Observable[JQueryMouseEventObject] = js.native
   
   def onAsObservable[T /* <: BaseJQueryEventObject */](events: String): Observable[T] = js.native
-  def onAsObservable[T /* <: BaseJQueryEventObject */](events: String, selector: js.UndefOr[scala.Nothing], eventData: js.Any): Observable[T] = js.native
   def onAsObservable[T /* <: BaseJQueryEventObject */](events: String, selector: String): Observable[T] = js.native
   def onAsObservable[T /* <: BaseJQueryEventObject */](events: String, selector: String, eventData: js.Any): Observable[T] = js.native
+  def onAsObservable[T /* <: BaseJQueryEventObject */](events: String, selector: Unit, eventData: js.Any): Observable[T] = js.native
   
-  def readyAsObservable(): Observable[_] = js.native
+  def readyAsObservable(): Observable[js.Any] = js.native
   
   def resizeAsObservable(): Observable[BaseJQueryEventObject] = js.native
   def resizeAsObservable(eventData: js.Any): Observable[BaseJQueryEventObject] = js.native
@@ -103,16 +102,16 @@ trait JQuery extends StObject {
   
   def showAsObservable(duration: Double): Observable[BaseJQueryEventObject] = js.native
   
-  def slideDownAsObservable(duration: Double): Observable[_] = js.native
+  def slideDownAsObservable(duration: Double): Observable[js.Any] = js.native
   
-  def slideToggleAsObservable(duration: Double): Observable[_] = js.native
+  def slideToggleAsObservable(duration: Double): Observable[js.Any] = js.native
   
-  def slideUpAsObservable(duration: Double): Observable[_] = js.native
+  def slideUpAsObservable(duration: Double): Observable[js.Any] = js.native
   
   def submitAsObservable(): Observable[BaseJQueryEventObject] = js.native
   def submitAsObservable(eventData: js.Any): Observable[BaseJQueryEventObject] = js.native
   
-  def toggleAsObservable(duration: Double): Observable[_] = js.native
+  def toggleAsObservable(duration: Double): Observable[js.Any] = js.native
   
   def unloadAsObservable(): Observable[BaseJQueryEventObject] = js.native
   def unloadAsObservable(eventData: js.Any): Observable[BaseJQueryEventObject] = js.native

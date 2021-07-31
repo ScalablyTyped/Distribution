@@ -4,19 +4,17 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResponseInformation extends StObject {
   
-  var actualUri: Uri = js.native
+  var actualUri: Uri
   
-  var headers: IMapView[String, String] = js.native
+  var headers: IMapView[String, String]
   
-  var isResumable: Boolean = js.native
+  var isResumable: Boolean
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object IResponseInformation {
   

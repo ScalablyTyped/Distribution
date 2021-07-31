@@ -4,19 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Context information in case of a {@link FilePicker} event. */
-@js.native
-trait FilePickerEvent extends EventObject {
+trait FilePickerEvent
+  extends StObject
+     with EventObject {
   
   /**
     * @param ElementId Identifies the affected element
     * @see com.sun.star.ui.dialogs.CommonFilePickerElementIds
     * @see com.sun.star.ui.dialogs.ExtendedFilePickerElementIds
     */
-  var ElementId: Double = js.native
+  var ElementId: Double
 }
 object FilePickerEvent {
   

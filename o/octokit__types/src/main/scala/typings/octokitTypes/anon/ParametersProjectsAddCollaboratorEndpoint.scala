@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.ProjectsAddCollaboratorRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersProjectsAddCollaboratorEndpoint extends StObject {
   
-  var parameters: ProjectsAddCollaboratorEndpoint = js.native
+  var parameters: ProjectsAddCollaboratorEndpoint
   
-  var request: ProjectsAddCollaboratorRequestOptions = js.native
+  var request: ProjectsAddCollaboratorRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersProjectsAddCollaboratorEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersProjectsAddCollaboratorEndpoint {
   def apply(
     parameters: ProjectsAddCollaboratorEndpoint,
     request: ProjectsAddCollaboratorRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersProjectsAddCollaboratorEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersProjectsAddCollaboratorEndpoint]
@@ -39,6 +37,6 @@ object ParametersProjectsAddCollaboratorEndpoint {
     def setRequest(value: ProjectsAddCollaboratorRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

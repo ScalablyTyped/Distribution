@@ -2,13 +2,11 @@ package typings.socketclusterClient.clientsocketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsubscribeData extends StObject {
   
-  var channel: String = js.native
+  var channel: String
 }
 object UnsubscribeData {
   

@@ -3,60 +3,53 @@ package typings.reactNativeElements.mod
 import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import typings.react.mod.ReactElement
-import typings.reactNative.mod.ModalBaseProps
-import typings.reactNative.mod.ModalPropsAndroid
-import typings.reactNative.mod.ModalPropsIOS
+import typings.reactNative.mod.ModalProps
 import typings.reactNative.mod.StyleProp
-import typings.reactNative.mod.ViewProps
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverlayProps
-  extends ViewProps
-     with ModalBaseProps
-     with ModalPropsIOS
-     with ModalPropsAndroid {
+  extends StObject
+     with ModalProps {
   
   /**
     *  Override React Native `Modal` component (usable for web-platform)
     */
-  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ModalComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Style for the backdrop
     */
-  var backdropStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var backdropStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Content of the overlay
     */
-  var children: ReactElement = js.native
+  var children: ReactElement
   
   /**
     * If to take up full screen width and height
     *
     * @default false
     */
-  var fullScreen: js.UndefOr[Boolean] = js.native
+  var fullScreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, the overlay is visible
     */
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
   /**
     * Callback when user touches the backdrop
     */
-  var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onBackdropPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Style of the actual overlay
     */
-  var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object OverlayProps {
   

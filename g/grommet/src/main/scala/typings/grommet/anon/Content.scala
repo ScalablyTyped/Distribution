@@ -6,31 +6,29 @@ import typings.grommet.utilsMod.MarginType
 import typings.grommet.utilsMod.RoundType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var border: js.UndefOr[BorderType] = js.native
+  var border: js.UndefOr[BorderType] = js.undefined
   
-  var content: js.UndefOr[Margin] = js.native
+  var content: js.UndefOr[Margin] = js.undefined
   
-  var disabled: js.UndefOr[BackgroundBorder] = js.native
+  var disabled: js.UndefOr[BackgroundBorder] = js.undefined
   
-  var error: js.UndefOr[Icon] = js.native
+  var error: js.UndefOr[Icon] = js.undefined
   
-  var focus: js.UndefOr[`6`] = js.native
+  var focus: js.UndefOr[`6`] = js.undefined
   
-  var help: js.UndefOr[ColorMargin] = js.native
+  var help: js.UndefOr[ColorMargin] = js.undefined
   
-  var info: js.UndefOr[ColorContainer] = js.native
+  var info: js.UndefOr[ColorContainer] = js.undefined
   
-  var label: js.UndefOr[TextProps] = js.native
+  var label: js.UndefOr[TextProps] = js.undefined
   
-  var margin: js.UndefOr[MarginType] = js.native
+  var margin: js.UndefOr[MarginType] = js.undefined
   
-  var round: js.UndefOr[RoundType] = js.native
+  var round: js.UndefOr[RoundType] = js.undefined
 }
 object Content {
   

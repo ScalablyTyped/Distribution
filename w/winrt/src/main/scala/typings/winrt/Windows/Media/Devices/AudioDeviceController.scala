@@ -6,11 +6,11 @@ import typings.winrt.Windows.Media.Capture.MediaStreamType
 import typings.winrt.Windows.Media.MediaProperties.IMediaEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudioDeviceController extends IAudioDeviceController
+trait AudioDeviceController
+  extends StObject
+     with IAudioDeviceController
 object AudioDeviceController {
   
   @scala.inline

@@ -3,21 +3,21 @@ package typings.thrift.mod
 import typings.node.tlsMod.TlsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerOptions[TProcessor, THandler] extends ServiceOptions[TProcessor, THandler] {
+trait ServerOptions[TProcessor, THandler]
+  extends StObject
+     with ServiceOptions[TProcessor, THandler] {
   
-  var cors: js.UndefOr[js.Array[String]] = js.native
+  var cors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var files: js.UndefOr[String] = js.native
+  var files: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var services: js.UndefOr[ServiceMap[TProcessor, THandler]] = js.native
+  var services: js.UndefOr[ServiceMap[TProcessor, THandler]] = js.undefined
   
-  var tls: js.UndefOr[TlsOptions] = js.native
+  var tls: js.UndefOr[TlsOptions] = js.undefined
 }
 object ServerOptions {
   
@@ -28,7 +28,7 @@ object ServerOptions {
   }
   
   @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions[_, _], TProcessor, THandler] (val x: Self with (ServerOptions[TProcessor, THandler])) extends AnyVal {
+  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions[?, ?], TProcessor, THandler] (val x: Self & (ServerOptions[TProcessor, THandler])) extends AnyVal {
     
     @scala.inline
     def setCors(value: js.Array[String]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])

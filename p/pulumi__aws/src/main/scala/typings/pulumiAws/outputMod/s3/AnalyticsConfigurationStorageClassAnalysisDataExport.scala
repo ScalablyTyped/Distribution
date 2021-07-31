@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsConfigurationStorageClassAnalysisDataExport extends StObject {
   
   /**
     * Specifies the destination for the exported analytics data (documented below).
     */
-  var destination: AnalyticsConfigurationStorageClassAnalysisDataExportDestination = js.native
+  var destination: AnalyticsConfigurationStorageClassAnalysisDataExportDestination
   
   /**
     * The schema version of exported analytics data. Allowed values: `V_1`. Default value: `V_1`.
     */
-  var outputSchemaVersion: js.UndefOr[String] = js.native
+  var outputSchemaVersion: js.UndefOr[String] = js.undefined
 }
 object AnalyticsConfigurationStorageClassAnalysisDataExport {
   

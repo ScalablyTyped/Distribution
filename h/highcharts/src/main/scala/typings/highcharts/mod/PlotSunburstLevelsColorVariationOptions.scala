@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSunburstLevelsColorVariationOptions extends StObject {
   
   /**
     * (Highcharts) The key of a color variation. Currently supports
     * `brightness` only.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The ending value of a color variation. The last sibling will
     * receive this value.
     */
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object PlotSunburstLevelsColorVariationOptions {
   

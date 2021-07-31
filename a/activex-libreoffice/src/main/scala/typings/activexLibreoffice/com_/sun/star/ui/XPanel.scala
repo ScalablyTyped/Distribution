@@ -3,72 +3,70 @@ package typings.activexLibreoffice.com_.sun.star.ui
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to Panel
   * @since LibreOffice 5.1
   */
-@js.native
 trait XPanel extends StObject {
   
   /** Get the panel dialog element */
-  val Dialog: XWindow = js.native
+  val Dialog: XWindow
   
   /** The panel identifier */
-  val Id: String = js.native
+  val Id: String
   
   /** Get the ordering index of the panel in the deck */
-  var OrderIndex: Double = js.native
+  var OrderIndex: Double
   
   /** Get the panel title string */
-  var Title: String = js.native
+  var Title: String
   
   /** Collapse the panel to only show its title bar */
-  def collapse(): Unit = js.native
+  def collapse(): Unit
   
   /**
     * Expand and display the panel
     * @param bCollapseOther TRUE collapse all other panels of the deckFALSE do not change other panels state
     */
-  def expand(bCollapseOther: Boolean): Unit = js.native
+  def expand(bCollapseOther: Boolean): Unit
   
   /** Get the panel dialog element */
-  def getDialog(): XWindow = js.native
+  def getDialog(): XWindow
   
   /** The panel identifier */
-  def getId(): String = js.native
+  def getId(): String
   
   /** Get the ordering index of the panel in the deck */
-  def getOrderIndex(): Double = js.native
+  def getOrderIndex(): Double
   
   /** Get the panel title string */
-  def getTitle(): String = js.native
+  def getTitle(): String
   
   /** Is the panel expanded */
-  def isExpanded(): Boolean = js.native
+  def isExpanded(): Boolean
   
   /** Move the panel one step down in the deck */
-  def moveDown(): Unit = js.native
+  def moveDown(): Unit
   
   /** Move panel as first item of the deck */
-  def moveFirst(): Unit = js.native
+  def moveFirst(): Unit
   
   /** Move panel as last item of the deck */
-  def moveLast(): Unit = js.native
+  def moveLast(): Unit
   
   /** Move panel one step up in the deck */
-  def moveUp(): Unit = js.native
+  def moveUp(): Unit
   
   /** Set the ordering index of the panel in the deck */
-  def setOrderIndex(newOrderIndex: Double): Unit = js.native
+  def setOrderIndex(newOrderIndex: Double): Unit
   
   /**
     * Set the panel title string
     * @param newTitle The new title string
     */
-  def setTitle(newTitle: String): Unit = js.native
+  def setTitle(newTitle: String): Unit
 }
 object XPanel {
   

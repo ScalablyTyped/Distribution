@@ -2,14 +2,12 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides efficient API resolving using globs, allowing you to quickly
   * find functions by name, with globs permitted.
   */
-@js.native
 trait ApiResolver extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ApiResolver extends StObject {
     * @param query Resolver-specific query, optionally suffixed with `/i` to
     *              perform case-insensitive matching.
     */
-  def enumerateMatches(query: String): js.Array[ApiResolverMatch] = js.native
+  def enumerateMatches(query: String): js.Array[ApiResolverMatch]
 }
 object ApiResolver {
   

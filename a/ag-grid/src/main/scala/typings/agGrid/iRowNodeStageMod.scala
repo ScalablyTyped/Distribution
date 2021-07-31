@@ -6,15 +6,13 @@ import typings.agGrid.clientSideRowModelMod.RowNodeTransaction
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iRowNodeStageMod {
   
-  @js.native
   trait IRowNodeStage extends StObject {
     
-    def execute(params: StageExecuteParams): js.Any = js.native
+    def execute(params: StageExecuteParams): js.Any
   }
   object IRowNodeStage {
     
@@ -32,16 +30,15 @@ object iRowNodeStageMod {
     }
   }
   
-  @js.native
   trait StageExecuteParams extends StObject {
     
-    var changedPath: js.UndefOr[ChangedPath] = js.native
+    var changedPath: js.UndefOr[ChangedPath] = js.undefined
     
-    var rowNode: RowNode = js.native
+    var rowNode: RowNode
     
-    var rowNodeOrder: js.UndefOr[StringDictionary[Double]] = js.native
+    var rowNodeOrder: js.UndefOr[StringDictionary[Double]] = js.undefined
     
-    var rowNodeTransaction: js.UndefOr[RowNodeTransaction] = js.native
+    var rowNodeTransaction: js.UndefOr[RowNodeTransaction] = js.undefined
   }
   object StageExecuteParams {
     

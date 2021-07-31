@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddConditionalFormatRuleRequest extends StObject {
   
   /** The zero-based index where the rule should be inserted. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** The rule to add. */
-  var rule: js.UndefOr[ConditionalFormatRule] = js.native
+  var rule: js.UndefOr[ConditionalFormatRule] = js.undefined
 }
 object AddConditionalFormatRuleRequest {
   

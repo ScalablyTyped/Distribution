@@ -3,81 +3,79 @@ package typings.vueMarkdown.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Emailfuzzy extends StObject {
   
-  var email_fuzzy: RegExp = js.native
+  var email_fuzzy: RegExp
   
-  var host_fuzzy_test: RegExp = js.native
+  var host_fuzzy_test: RegExp
   
-  var link_fuzzy: RegExp = js.native
+  var link_fuzzy: RegExp
   
-  var link_no_ip_fuzzy: RegExp = js.native
+  var link_no_ip_fuzzy: RegExp
   
-  var pretest: RegExp = js.native
+  var pretest: RegExp
   
-  var schema_search: RegExp = js.native
+  var schema_search: RegExp
   
-  var schema_test: RegExp = js.native
+  var schema_test: RegExp
   
-  var src_Any: String = js.native
+  var src_Any: String
   
-  var src_Cc: String = js.native
+  var src_Cc: String
   
-  var src_P: String = js.native
+  var src_P: String
   
-  var src_Z: String = js.native
+  var src_Z: String
   
-  var src_ZCc: String = js.native
+  var src_ZCc: String
   
-  var src_ZPCc: String = js.native
+  var src_ZPCc: String
   
-  var src_auth: String = js.native
+  var src_auth: String
   
-  var src_domain: String = js.native
+  var src_domain: String
   
-  var src_domain_root: String = js.native
+  var src_domain_root: String
   
-  var src_email_name: String = js.native
+  var src_email_name: String
   
-  var src_host: String = js.native
+  var src_host: String
   
-  var src_host_port_strict: String = js.native
+  var src_host_port_strict: String
   
-  var src_host_strict: String = js.native
+  var src_host_strict: String
   
-  var src_host_terminator: String = js.native
+  var src_host_terminator: String
   
-  var src_ip4: String = js.native
+  var src_ip4: String
   
-  var src_path: String = js.native
+  var src_path: String
   
-  var src_port: String = js.native
+  var src_port: String
   
-  var src_tlds: String = js.native
+  var src_tlds: String
   
-  var src_xn: String = js.native
+  var src_xn: String
   
-  var tpl_email_fuzzy: String = js.native
+  var tpl_email_fuzzy: String
   
-  var tpl_host_fuzzy: String = js.native
+  var tpl_host_fuzzy: String
   
-  var tpl_host_fuzzy_strict: String = js.native
+  var tpl_host_fuzzy_strict: String
   
-  var tpl_host_fuzzy_test: String = js.native
+  var tpl_host_fuzzy_test: String
   
-  var tpl_host_no_ip_fuzzy: String = js.native
+  var tpl_host_no_ip_fuzzy: String
   
-  var tpl_host_port_fuzzy_strict: String = js.native
+  var tpl_host_port_fuzzy_strict: String
   
-  var tpl_host_port_no_ip_fuzzy_strict: String = js.native
+  var tpl_host_port_no_ip_fuzzy_strict: String
   
-  var tpl_link_fuzzy: String = js.native
+  var tpl_link_fuzzy: String
   
-  var tpl_link_no_ip_fuzzy: String = js.native
+  var tpl_link_no_ip_fuzzy: String
 }
 object Emailfuzzy {
   

@@ -3,7 +3,6 @@ package typings.surveyKnockout.mod
 import typings.surveyKnockout.anon.Calculations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionPanelDynamicModel")
@@ -110,7 +109,22 @@ class QuestionPanelDynamicModel protected ()
     */
   var defaultValueFromLastPanel: Boolean = js.native
   
+  /* CompleteClass */
+  override def getItemIndex(item: ISurveyData): Double = js.native
+  
+  /* CompleteClass */
+  override def getPanelItemData(item: ISurveyData): js.Any = js.native
+  
   def getPlainData(options: Calculations): js.Any = js.native
+  
+  /* CompleteClass */
+  override def getRootData(): ISurveyData = js.native
+  
+  /* CompleteClass */
+  override def getSharedQuestionFromArray(name: String, panelIndex: Double): Question = js.native
+  
+  /* CompleteClass */
+  override def getSurvey(): ISurvey = js.native
   
   /**
     * Returns the type of the object as a string as it represents in the json. It should be in lowcase.
@@ -193,7 +207,7 @@ class QuestionPanelDynamicModel protected ()
   val locPanelRemoveText: LocalizableString = js.native
   
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): Unit & js.Any = js.native
   
   val locTemplateDescription: LocalizableString = js.native
   
@@ -300,7 +314,10 @@ class QuestionPanelDynamicModel protected ()
   
   def renderModeChangedCallback(): Unit = js.native
   
-  /* protected */ def runPanelsCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  /* protected */ def runPanelsCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
+  
+  /* CompleteClass */
+  override def setPanelItemData(item: ISurveyData, name: String, `val`: js.Any): js.Any = js.native
   
   /**
     * Use this property to show/hide the numbers in titles in questions inside a dynamic panel.

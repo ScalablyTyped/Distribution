@@ -2,110 +2,110 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of resources composed into a single coherent clinical statement with clinical attestation
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Composition extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Composition
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'confidentiality'.
     */
-  var _confidentiality: js.UndefOr[Element] = js.native
+  var _confidentiality: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'title'.
     */
-  var _title: js.UndefOr[Element] = js.native
+  var _title: js.UndefOr[Element] = js.undefined
   
   /**
     * Attests to accuracy of composition
     */
-  var attester: js.UndefOr[js.Array[CompositionAttester]] = js.native
+  var attester: js.UndefOr[js.Array[CompositionAttester]] = js.undefined
   
   /**
     * Who and/or what authored the composition
     */
-  var author: js.Array[Reference] = js.native
+  var author: js.Array[Reference]
   
   /**
     * Categorization of Composition
     */
-  var `class`: js.UndefOr[CodeableConcept] = js.native
+  var `class`: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * As defined by affinity domain
     */
-  var confidentiality: js.UndefOr[code] = js.native
+  var confidentiality: js.UndefOr[code] = js.undefined
   
   /**
     * Organization which maintains the composition
     */
-  var custodian: js.UndefOr[Reference] = js.native
+  var custodian: js.UndefOr[Reference] = js.undefined
   
   /**
     * Composition editing time
     */
-  var date: dateTime = js.native
+  var date: dateTime
   
   /**
     * Context of the Composition
     */
-  var encounter: js.UndefOr[Reference] = js.native
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * The clinical service(s) being documented
     */
-  var event: js.UndefOr[js.Array[CompositionEvent]] = js.native
+  var event: js.UndefOr[js.Array[CompositionEvent]] = js.undefined
   
   /**
     * Logical identifier of composition (version-independent)
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Relationships to other compositions/documents
     */
-  var relatesTo: js.UndefOr[js.Array[CompositionRelatesTo]] = js.native
+  var relatesTo: js.UndefOr[js.Array[CompositionRelatesTo]] = js.undefined
   
   /**
     * Composition is broken into sections
     */
-  var section: js.UndefOr[js.Array[CompositionSection]] = js.native
+  var section: js.UndefOr[js.Array[CompositionSection]] = js.undefined
   
   /**
     * preliminary | final | amended | entered-in-error
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Who and/or what the composition is about
     */
-  var subject: Reference = js.native
+  var subject: Reference
   
   /**
     * Human Readable name/title
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Kind of composition (LOINC if possible)
     */
-  var `type`: CodeableConcept = js.native
+  var `type`: CodeableConcept
 }
 object Composition {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1alpha", "healthcare_v1alpha.Resource$Projects$Locations$Datasets$Fhirstores$Resources$Patient")
@@ -36,7 +35,7 @@ class ResourceProjectsLocationsDatasetsFhirstoresResourcesPatient protected () e
   @JSName("get$everything")
   def get$everything(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
   @JSName("get$everything")
-  def get$everything(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def get$everything(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   @JSName("get$everything")
   def get$everything(params: ParamsResourceProjectsLocationsDatasetsFhirstoresResourcesPatientGeteverything): GaxiosPromise[SchemaHttpBody] = js.native
   @JSName("get$everything")

@@ -2,17 +2,15 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Macropicker dialog options object
   */
-@js.native
 trait IMacroPickerOptions extends StObject {
   
   /*callback function*/
-  var callback: js.Function = js.native
+  var callback: js.Function
 }
 object IMacroPickerOptions {
   

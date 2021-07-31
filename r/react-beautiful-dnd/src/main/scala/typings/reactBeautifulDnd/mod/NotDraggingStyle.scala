@@ -3,15 +3,13 @@ package typings.reactBeautifulDnd.mod
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotDraggingStyle extends StObject {
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[none] = js.native
+  var transition: js.UndefOr[none] = js.undefined
 }
 object NotDraggingStyle {
   

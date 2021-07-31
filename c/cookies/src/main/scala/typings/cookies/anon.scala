@@ -7,14 +7,19 @@ import typings.cookies.mod.Cookie
 import typings.cookies.mod.CookieAttr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* name */ String, Cookie]
+    extends StObject
+       with Instantiable1[/* name */ String, Cookie]
        with Instantiable2[/* name */ String, /* value */ String, Cookie]
-       with Instantiable3[/* name */ String, js.UndefOr[/* value */ String], /* attrs */ CookieAttr, Cookie]
+       with Instantiable3[
+          /* name */ String, 
+          (/* value */ String) | (/* value */ Unit), 
+          /* attrs */ CookieAttr, 
+          Cookie
+        ]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WafOverrideAction extends StObject {
   
   /**
     *  COUNT overrides the action specified by the individual rule within a RuleGroup . If set to NONE, the rule's action takes place.
     */
-  var Type: js.UndefOr[NonEmptyString] = js.native
+  var Type: js.UndefOr[NonEmptyString] = js.undefined
 }
 object WafOverrideAction {
   

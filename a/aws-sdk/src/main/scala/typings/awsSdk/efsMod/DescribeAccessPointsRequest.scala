@@ -2,31 +2,29 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccessPointsRequest extends StObject {
   
   /**
     * (Optional) Specifies an EFS access point to describe in the response; mutually exclusive with FileSystemId.
     */
-  var AccessPointId: js.UndefOr[typings.awsSdk.efsMod.AccessPointId] = js.native
+  var AccessPointId: js.UndefOr[typings.awsSdk.efsMod.AccessPointId] = js.undefined
   
   /**
     * (Optional) If you provide a FileSystemId, EFS returns all access points for that file system; mutually exclusive with AccessPointId.
     */
-  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.native
+  var FileSystemId: js.UndefOr[typings.awsSdk.efsMod.FileSystemId] = js.undefined
   
   /**
     * (Optional) When retrieving all access points for a file system, you can optionally specify the MaxItems parameter to limit the number of objects returned in a response. The default value is 100. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.efsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.efsMod.MaxResults] = js.undefined
   
   /**
     *  NextToken is present if the response is paginated. You can use NextMarker in the subsequent request to fetch the next page of access point descriptions.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object DescribeAccessPointsRequest {
   

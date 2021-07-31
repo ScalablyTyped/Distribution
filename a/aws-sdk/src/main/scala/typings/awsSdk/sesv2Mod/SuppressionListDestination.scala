@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuppressionListDestination extends StObject {
   
   /**
     * The type of action that you want to perform on the address. Acceptable values:   PUT: add the addresses to the suppression list. If the record already exists, it will override it with the new value.   DELETE: remove the addresses from the suppression list.  
     */
-  var SuppressionListImportAction: typings.awsSdk.sesv2Mod.SuppressionListImportAction = js.native
+  var SuppressionListImportAction: typings.awsSdk.sesv2Mod.SuppressionListImportAction
 }
 object SuppressionListDestination {
   

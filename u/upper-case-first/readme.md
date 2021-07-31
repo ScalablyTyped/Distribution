@@ -10,9 +10,9 @@ Transforms the string with the first character in upper cased
 | ------------------ | :-------------: |
 | Full name          | upper-case-first |
 | Keywords           | upper, case, first, capitalize, convert, transform |
-| # releases         | 3 |
-| # dependents       | 32 |
-| # downloads        | 68104537 |
+| # releases         | 4 |
+| # dependents       | 35 |
+| # downloads        | 80582726 |
 | # stars            | 0 |
 
 ## Links

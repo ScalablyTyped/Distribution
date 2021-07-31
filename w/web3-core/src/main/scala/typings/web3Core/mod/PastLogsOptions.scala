@@ -2,13 +2,13 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PastLogsOptions extends LogsOptions {
+trait PastLogsOptions
+  extends StObject
+     with LogsOptions {
   
-  var toBlock: js.UndefOr[BlockNumber] = js.native
+  var toBlock: js.UndefOr[BlockNumber] = js.undefined
 }
 object PastLogsOptions {
   

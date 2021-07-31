@@ -6,15 +6,40 @@ import typings.playable.previewThumbnailTypesMod.IPreviewThumbnail
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewThumbnailMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail", JSImport.Default)
   @js.native
-  class default protected () extends PreviewThumbnail {
+  class default protected ()
+    extends StObject
+       with PreviewThumbnail {
     def this(hasPreviewService: PreviewServiceIPreviewService) = this()
+    
+    /* CompleteClass */
+    var _currentFrames: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _previewService: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def setTime(time: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def showAt(second: Double): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.previewThumbnailViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -42,16 +67,17 @@ object previewThumbnailMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PreviewThumbnail extends IPreviewThumbnail {
+  trait PreviewThumbnail
+    extends StObject
+       with IPreviewThumbnail {
     
-    var _currentFrames: js.Any = js.native
+    var _currentFrames: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _previewService: js.Any = js.native
+    var _previewService: js.Any
     
-    var view: typings.playable.previewThumbnailViewMod.default = js.native
+    var view: typings.playable.previewThumbnailViewMod.default
   }
   object PreviewThumbnail {
     

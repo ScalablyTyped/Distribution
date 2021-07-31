@@ -2,17 +2,15 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICommitToTeamServerBaseOptions extends StObject {
   
-  var commitMessage: String = js.native
+  var commitMessage: String
   
-  var isWebModelerCommit: js.UndefOr[Boolean] = js.native
+  var isWebModelerCommit: js.UndefOr[Boolean] = js.undefined
   
-  var targetBranch: String = js.native
+  var targetBranch: String
 }
 object ICommitToTeamServerBaseOptions {
   

@@ -10,9 +10,9 @@ Glue layer for reactivity
 | ------------------ | :-------------: |
 | Full name          | fluids |
 | Keywords           | reactive, reactivity, glue, observable, watch |
-| # releases         | 12 |
+| # releases         | 20 |
 | # dependents       | 1 |
-| # downloads        | 434945 |
+| # downloads        | 1028794 |
 | # stars            | 0 |
 
 ## Links

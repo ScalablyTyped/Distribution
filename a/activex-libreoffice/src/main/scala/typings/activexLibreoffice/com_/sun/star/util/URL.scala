@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * are optional.
   * @see XURLTransformer
   */
-@js.native
 trait URL extends StObject {
   
   /** contains the arguments part of the {@link URL} , for example, "a=b" */
-  var Arguments: String = js.native
+  var Arguments: String
   
   /**
     * contains the string representation of the complete {@link URL} , for example, [http://www.sun.de:8080/pub/test/foo.txt?a=b#xyz]{@link
@@ -27,16 +25,16 @@ trait URL extends StObject {
     * It is used as a central input/output or input parameter for the interfaces of {@link XURLTransformer} . The usage of one of the {@link
     * XURLTransformer} function is mandatory to validate the {@link URL} . It cannot be assumed that {@link URL.Complete} represents always a valid URL!
     */
-  var Complete: String = js.native
+  var Complete: String
   
   /**
     * contains the {@link URL} without a mark and without arguments, for example, [http://www.sun.de:8080/pub/test/foo.txt]{@link
     * url="http://www.sun.de:8080/pub/test/foo.txt"}
     */
-  var Main: String = js.native
+  var Main: String
   
   /** contains the mark part of the {@link URL} , for example, "xyz" */
-  var Mark: String = js.native
+  var Mark: String
   
   /**
     * contains the last segment of the hierarchical path of the {@link URL} , for the above example, "foo.txt"
@@ -45,25 +43,25 @@ trait URL extends StObject {
     * is possible that the last segment describes a folder. If you want to be sure that a file {@link URL} that references a folder will be correctly put
     * into the {@link URL} fields you should append a "/" at the end of the hierarchical path.
     */
-  var Name: String = js.native
+  var Name: String
   
   /** contains the users password of the {@link URL} , for example, "pass" */
-  var Password: String = js.native
+  var Password: String
   
   /** contains all segments but the last one of the hierarchical path of the {@link URL} , for example, "/pub/test/" */
-  var Path: String = js.native
+  var Path: String
   
   /** contains the port at the server of the {@link URL} , for example, "8080" */
-  var Port: Double = js.native
+  var Port: Double
   
   /** contains the protocol (scheme) of the {@link URL} , for example, "http" */
-  var Protocol: String = js.native
+  var Protocol: String
   
   /** contains the server part of the {@link URL} , for example, "www.sun.de" */
-  var Server: String = js.native
+  var Server: String
   
   /** contains the user-identifier of the {@link URL} , for example, "me" */
-  var User: String = js.native
+  var User: String
 }
 object URL {
   

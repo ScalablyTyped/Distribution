@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseReelMentionsItem extends StObject {
   
-  var display_type: String = js.native
+  var display_type: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var is_hidden: Double = js.native
+  var is_hidden: Double
   
-  var is_pinned: Double = js.native
+  var is_pinned: Double
   
-  var is_sticker: Double = js.native
+  var is_sticker: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var user: ListReelMediaViewerFeedResponseUser = js.native
+  var user: ListReelMediaViewerFeedResponseUser
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var z: Double = js.native
+  var z: Double
 }
 object ListReelMediaViewerFeedResponseReelMentionsItem {
   

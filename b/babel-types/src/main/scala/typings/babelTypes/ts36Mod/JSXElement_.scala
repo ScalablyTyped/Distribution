@@ -3,26 +3,25 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.JSXElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXElement_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Immutable
      with JSX {
   
-  var children: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_] = js.native
+  var children: js.Array[JSXElement_ | JSXExpressionContainer_ | JSXText_]
   
-  var closingElement: JSXClosingElement_ = js.native
+  var closingElement: JSXClosingElement_
   
-  var openingElement: JSXOpeningElement_ = js.native
+  var openingElement: JSXOpeningElement_
   
-  var selfClosing: js.UndefOr[Boolean] = js.native
+  var selfClosing: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_JSXElement_ : JSXElement = js.native
+  var type_JSXElement_ : JSXElement
 }
 object JSXElement_ {
   
@@ -33,11 +32,10 @@ object JSXElement_ {
     end: Double,
     loc: SourceLocation,
     openingElement: JSXOpeningElement_,
-    start: Double,
-    `type`: JSXElement
+    start: Double
   ): JSXElement_ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXElement")
     __obj.asInstanceOf[JSXElement_]
   }
   

@@ -21,7 +21,6 @@ import typings.mongorito.mod.ActionTypes.UPDATE
 import typings.mongorito.mod.ActionTypes.UPDATED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -62,7 +61,7 @@ object Action {
   }
   
   @scala.inline
-  def CreateIndexAction(args: js.Array[_], `type`: CREATE_INDEX): typings.mongorito.mod.CreateIndexAction = {
+  def CreateIndexAction(args: js.Array[js.Any], `type`: CREATE_INDEX): typings.mongorito.mod.CreateIndexAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.CreateIndexAction]
@@ -76,7 +75,7 @@ object Action {
   }
   
   @scala.inline
-  def DropIndexAction(args: js.Array[_], `type`: DROP_INDEX): typings.mongorito.mod.DropIndexAction = {
+  def DropIndexAction(args: js.Array[js.Any], `type`: DROP_INDEX): typings.mongorito.mod.DropIndexAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.DropIndexAction]
@@ -97,7 +96,7 @@ object Action {
   }
   
   @scala.inline
-  def ListIndexesAction(args: js.Array[_], `type`: LIST_INDEXES): typings.mongorito.mod.ListIndexesAction = {
+  def ListIndexesAction(args: js.Array[js.Any], `type`: LIST_INDEXES): typings.mongorito.mod.ListIndexesAction = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.mongorito.mod.ListIndexesAction]

@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.ServiceDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyServiceDefinition extends StObject {
   
-  var body: ServiceDefinition = js.native
+  var body: ServiceDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition
 }
 object BodyServiceDefinition {
   
   @scala.inline
-  def apply(
-    body: ServiceDefinition,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.ServiceDefinition
-  ): BodyServiceDefinition = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: ServiceDefinition): BodyServiceDefinition = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "ServiceDefinition")
     __obj.asInstanceOf[BodyServiceDefinition]
   }
   

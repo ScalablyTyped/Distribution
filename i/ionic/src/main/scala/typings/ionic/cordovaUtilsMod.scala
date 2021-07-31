@@ -5,16 +5,17 @@ import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaUtilsMod {
   
-  @JSImport("ionic/lib/integrations/cordova/utils", "filterArgumentsForCordova")
+  @JSImport("ionic/lib/integrations/cordova/utils", JSImport.Namespace)
   @js.native
-  def filterArgumentsForCordova(metadata: CommandMetadata, options: CommandLineOptions): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionic/lib/integrations/cordova/utils", "generateOptionsForCordovaBuild")
-  @js.native
-  def generateOptionsForCordovaBuild(metadata: CommandMetadata, inputs: CommandLineInputs, options: CommandLineOptions): CommandLineOptions = js.native
+  @scala.inline
+  def filterArgumentsForCordova(metadata: CommandMetadata, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterArgumentsForCordova")(metadata.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def generateOptionsForCordovaBuild(metadata: CommandMetadata, inputs: CommandLineInputs, options: CommandLineOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("generateOptionsForCordovaBuild")(metadata.asInstanceOf[js.Any], inputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
 }

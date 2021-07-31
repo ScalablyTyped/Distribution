@@ -4,13 +4,13 @@ import typings.awsSdkClientGlacierNode.inputTypesUnionMod._InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListVaultsInputMod {
   
-  @js.native
-  trait ListVaultsInput extends _InputTypesUnion {
+  trait ListVaultsInput
+    extends StObject
+       with _InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -18,7 +18,7 @@ object typesListVaultsInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -26,28 +26,28 @@ object typesListVaultsInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The <code>AccountId</code> value is the AWS account ID. This value must match the AWS account ID associated with the credentials used to sign the request. You can either specify an AWS account ID or optionally a single '<code>-</code>' (hyphen), in which case Amazon Glacier uses the AWS account ID associated with the credentials used to sign the request. If you specify your account ID, do not include any hyphens ('-') in the ID.</p>
       */
-    var accountId: String = js.native
+    var accountId: String
     
     /**
       * <p>The maximum number of vaults to be returned. The default limit is 10. The number of vaults returned might be fewer than the specified limit, but the number of returned vaults never exceeds the limit.</p>
       */
-    var limit: js.UndefOr[String] = js.native
+    var limit: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A string used for pagination. The marker specifies the vault ARN after which the listing of vaults should begin.</p>
       */
-    var marker: js.UndefOr[String] = js.native
+    var marker: js.UndefOr[String] = js.undefined
   }
   object ListVaultsInput {
     

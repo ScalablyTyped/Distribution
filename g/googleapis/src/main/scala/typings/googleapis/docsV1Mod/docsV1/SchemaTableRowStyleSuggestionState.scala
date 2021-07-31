@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * been changed in this suggestion. For any field set to true, there is a new
   * suggested value.
   */
-@js.native
 trait SchemaTableRowStyleSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to min_row_height.
     */
-  var minRowHeightSuggested: js.UndefOr[Boolean] = js.native
+  var minRowHeightSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTableRowStyleSuggestionState {
   

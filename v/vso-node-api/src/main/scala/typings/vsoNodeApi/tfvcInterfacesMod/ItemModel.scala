@@ -2,23 +2,21 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemModel extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var contentMetadata: FileContentMetadata = js.native
+  var contentMetadata: FileContentMetadata
   
-  var isFolder: Boolean = js.native
+  var isFolder: Boolean
   
-  var isSymLink: Boolean = js.native
+  var isSymLink: Boolean
   
-  var path: String = js.native
+  var path: String
   
-  var url: String = js.native
+  var url: String
 }
 object ItemModel {
   

@@ -2,19 +2,19 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseLayoutOptions extends LayoutOptions {
+trait BaseLayoutOptions
+  extends StObject
+     with LayoutOptions {
   
-  var name: String = js.native
+  var name: String
   
   // on layoutready event
-  var ready: js.UndefOr[LayoutHandler] = js.native
+  var ready: js.UndefOr[LayoutHandler] = js.undefined
   
   // on layoutstop event
-  var stop: js.UndefOr[LayoutHandler] = js.native
+  var stop: js.UndefOr[LayoutHandler] = js.undefined
 }
 object BaseLayoutOptions {
   

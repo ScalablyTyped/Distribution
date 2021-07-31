@@ -3,7 +3,6 @@ package typings.ol
 import typings.ol.conditionMod.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragRotateMod {
@@ -18,12 +17,11 @@ object dragRotateMod {
   trait DragRotate
     extends typings.ol.pointerMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var condition: js.UndefOr[Condition] = js.native
+    var condition: js.UndefOr[Condition] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

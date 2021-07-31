@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveAssignmentRequest extends StObject {
   
   /** The new reservation ID, e.g.: `projects/myotherproject/locations/US/reservations/team2-prod` */
-  var destinationId: js.UndefOr[String] = js.native
+  var destinationId: js.UndefOr[String] = js.undefined
 }
 object MoveAssignmentRequest {
   

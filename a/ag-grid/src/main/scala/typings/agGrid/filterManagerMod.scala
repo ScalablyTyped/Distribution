@@ -8,7 +8,6 @@ import typings.agGrid.utilsMod.Promise
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterManagerMod {
@@ -141,18 +140,17 @@ object filterManagerMod {
     def QUICK_FILTER_SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUICK_FILTER_SEPARATOR")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait FilterWrapper extends StObject {
     
-    var column: Column = js.native
+    var column: Column
     
-    var compiledElement: js.Any = js.native
+    var compiledElement: js.Any
     
-    var filterPromise: Promise[IFilterComp] = js.native
+    var filterPromise: Promise[IFilterComp]
     
-    var guiPromise: ExternalPromise[HTMLElement] = js.native
+    var guiPromise: ExternalPromise[HTMLElement]
     
-    var scope: js.Any = js.native
+    var scope: js.Any
   }
   object FilterWrapper {
     

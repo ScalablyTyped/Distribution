@@ -4,7 +4,6 @@ import typings.heremaps.H.map.DomIcon.Options
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.DomIcon")
 @js.native
 class DomIcon protected ()
-  extends typings.heremaps.H.map.DomIcon {
+  extends StObject
+     with typings.heremaps.H.map.DomIcon {
   def this(element: String) = this()
   /**
     * Constructor

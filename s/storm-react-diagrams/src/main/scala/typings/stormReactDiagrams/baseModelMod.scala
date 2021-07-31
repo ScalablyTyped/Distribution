@@ -7,23 +7,22 @@ import typings.stormReactDiagrams.baseEntityMod.BaseListener
 import typings.stormReactDiagrams.diagramEngineMod.DiagramEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseModelMod {
   
   @JSImport("storm-react-diagrams/dist/src/models/BaseModel", "BaseModel")
   @js.native
-  class BaseModel[X /* <: BaseEntity[BaseListener[_]] */, T /* <: BaseModelListener */] () extends BaseEntity[T] {
+  class BaseModel[X /* <: BaseEntity[BaseListener[js.Any]] */, T /* <: BaseModelListener */] () extends BaseEntity[T] {
     def this(`type`: String) = this()
-    def this(`type`: js.UndefOr[scala.Nothing], id: String) = this()
     def this(`type`: String, id: String) = this()
+    def this(`type`: Unit, id: String) = this()
     
     def deSerialize(ob: js.Any, engine: DiagramEngine): Unit = js.native
     
     def getParent(): X = js.native
     
-    def getSelectedEntities(): js.Array[BaseModel[_, T]] = js.native
+    def getSelectedEntities(): js.Array[BaseModel[js.Any, T]] = js.native
     
     def getType(): String = js.native
     
@@ -43,15 +42,18 @@ object baseModelMod {
     var `type`: String = js.native
   }
   
-  @js.native
   trait BaseModelListener
-    extends BaseListener[js.Any] {
+    extends StObject
+       with BaseListener[js.Any] {
     
     var entityRemoved: js.UndefOr[
-        js.Function1[/* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], this.type]], Unit]
-      ] = js.native
+        js.Function1[
+          /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[js.Any]], this.type]], 
+          Unit
+        ]
+      ] = js.undefined
     
-    var selectionChanged: js.UndefOr[js.Function1[/* event */ BaseEventBaseModelBaseEnt, Unit]] = js.native
+    var selectionChanged: js.UndefOr[js.Function1[/* event */ BaseEventBaseModelBaseEnt, Unit]] = js.undefined
   }
   object BaseModelListener {
     
@@ -65,7 +67,9 @@ object baseModelMod {
     implicit class BaseModelListenerMutableBuilder[Self <: BaseModelListener] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEntityRemoved(value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]] => Unit): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
+      def setEntityRemoved(
+        value: /* event */ BaseEvent[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]] => Unit
+      ): Self = StObject.set(x, "entityRemoved", js.Any.fromFunction1(value))
       
       @scala.inline
       def setEntityRemovedUndefined: Self = StObject.set(x, "entityRemoved", js.undefined)

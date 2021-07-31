@@ -2,19 +2,17 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectObserveChange[T] extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var `object`: T = js.native
+  var `object`: T
   
-  var oldValue: js.UndefOr[js.Any] = js.native
+  var oldValue: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ObjectObserveChange {
   
@@ -27,7 +25,7 @@ object ObjectObserveChange {
   }
   
   @scala.inline
-  implicit class ObjectObserveChangeMutableBuilder[Self <: ObjectObserveChange[_], T] (val x: Self with ObjectObserveChange[T]) extends AnyVal {
+  implicit class ObjectObserveChangeMutableBuilder[Self <: ObjectObserveChange[?], T] (val x: Self & ObjectObserveChange[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

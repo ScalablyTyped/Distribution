@@ -4,7 +4,6 @@ import typings.moment.mod.Moment
 import typings.reactBigScheduler.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-big-scheduler", "SchedulerData")
@@ -36,17 +35,13 @@ class SchedulerData protected () extends StObject {
   def setResources(resources: js.Array[Resource]): Unit = js.native
   
   def setViewType(): Unit = js.native
-  def setViewType(
-    viewType: js.UndefOr[scala.Nothing],
-    showAgenda: js.UndefOr[scala.Nothing],
-    isEventPerspective: Boolean
-  ): Unit = js.native
-  def setViewType(viewType: js.UndefOr[scala.Nothing], showAgenda: Boolean): Unit = js.native
-  def setViewType(viewType: js.UndefOr[scala.Nothing], showAgenda: Boolean, isEventPerspective: Boolean): Unit = js.native
+  def setViewType(viewType: Unit, showAgenda: Boolean): Unit = js.native
+  def setViewType(viewType: Unit, showAgenda: Boolean, isEventPerspective: Boolean): Unit = js.native
+  def setViewType(viewType: Unit, showAgenda: Unit, isEventPerspective: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes): Unit = js.native
-  def setViewType(viewType: ViewTypes, showAgenda: js.UndefOr[scala.Nothing], isEventPerspective: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes, showAgenda: Boolean): Unit = js.native
   def setViewType(viewType: ViewTypes, showAgenda: Boolean, isEventPerspective: Boolean): Unit = js.native
+  def setViewType(viewType: ViewTypes, showAgenda: Unit, isEventPerspective: Boolean): Unit = js.native
   
   var startDate: String = js.native
   

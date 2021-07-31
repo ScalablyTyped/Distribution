@@ -7,7 +7,6 @@ import typings.winrtUwp.Windows.Storage.Streams.IInputStream
 import typings.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends HTTP requests and receives HTTP responses from a resource identified by a URI. */

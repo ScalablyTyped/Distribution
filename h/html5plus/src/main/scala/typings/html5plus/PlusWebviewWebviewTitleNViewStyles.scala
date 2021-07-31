@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.default
 import typings.html5plus.html5plusStrings.transparent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewTitleNViewStyles extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var autoBackButton: js.UndefOr[Boolean] = js.native
+  var autoBackButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 标题栏控件的背景颜色
@@ -36,7 +34,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏上的自定义按钮
@@ -45,7 +43,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var buttons: js.UndefOr[js.Array[PlusWebview]] = js.native
+  var buttons: js.UndefOr[js.Array[PlusWebview]] = js.undefined
   
   /**
     * 标题栏控件变化作用范围
@@ -55,7 +53,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var coverage: js.UndefOr[String] = js.native
+  var coverage: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件是否显示Home按钮
@@ -68,7 +66,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var homeButton: js.UndefOr[Boolean] = js.native
+  var homeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 内边距
@@ -77,7 +75,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var padding: js.UndefOr[String] = js.native
+  var padding: js.UndefOr[String] = js.undefined
   
   /**
     * 左内边距
@@ -86,7 +84,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `padding-left`: js.UndefOr[String] = js.native
+  var `padding-left`: js.UndefOr[String] = js.undefined
   
   /**
     * 右内边距
@@ -95,7 +93,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `padding-right`: js.UndefOr[String] = js.native
+  var `padding-right`: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件的进度条样式
@@ -106,7 +104,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.native
+  var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.undefined
   
   /**
     * 标题栏控件的底部分割线
@@ -116,7 +114,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var splitLine: js.UndefOr[PlusWebviewWebviewSplitLineStyles] = js.native
+  var splitLine: js.UndefOr[PlusWebviewWebviewSplitLineStyles] = js.undefined
   
   /**
     * 标题栏上初始自定义绘制内容
@@ -125,7 +123,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var tags: js.UndefOr[js.Array[_]] = js.native
+  var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 标题栏控件的标题文字颜色
@@ -133,7 +131,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleColor: js.UndefOr[String] = js.native
+  var titleColor: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件的标题文字超出显示区域时处理方式
@@ -144,7 +142,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleOverflow: js.UndefOr[String] = js.native
+  var titleOverflow: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件的标题文字字体大小
@@ -152,7 +150,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleSize: js.UndefOr[String] = js.native
+  var titleSize: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件的标题文字内容
@@ -161,7 +159,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleText: js.UndefOr[String] = js.native
+  var titleText: js.UndefOr[String] = js.undefined
   
   /**
     * 标题栏控件样式
@@ -179,7 +177,7 @@ trait PlusWebviewWebviewTitleNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `type`: js.UndefOr[default | transparent] = js.native
+  var `type`: js.UndefOr[default | transparent] = js.undefined
 }
 object PlusWebviewWebviewTitleNViewStyles {
   
@@ -256,7 +254,7 @@ object PlusWebviewWebviewTitleNViewStyles {
     def setSplitLineUndefined: Self = StObject.set(x, "splitLine", js.undefined)
     
     @scala.inline
-    def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)

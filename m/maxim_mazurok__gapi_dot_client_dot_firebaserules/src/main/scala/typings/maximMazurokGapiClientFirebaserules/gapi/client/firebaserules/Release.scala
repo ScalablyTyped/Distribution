@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Release extends StObject {
   
   /** Time the release was created. Output only. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name for the `Release`. `Release` names may be structured `app1/prod/v2` or flat `app1_prod_v2` which affords developers a great deal of flexibility in mapping the name to
@@ -20,13 +18,13 @@ trait Release extends StObject {
     * with the release name list filter, but in many ways the structured paths provide a clearer picture of the relationship between `Release` instances. Format:
     * `projects/{project_id}/releases/{release_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist the `Release` to be created. */
-  var rulesetName: js.UndefOr[String] = js.native
+  var rulesetName: js.UndefOr[String] = js.undefined
   
   /** Time the release was updated. Output only. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Release {
   

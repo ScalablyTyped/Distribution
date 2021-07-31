@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * makes it possible to receive events from a scripting engine.
   * @deprecated Deprecated
   */
-@js.native
-trait XEngineListener extends XEventListener {
+trait XEngineListener
+  extends StObject
+     with XEventListener {
   
   /** gets fired when the script execution has finished. */
-  def finished(Evt: FinishEngineEvent): Unit = js.native
+  def finished(Evt: FinishEngineEvent): Unit
   
   /**
     * gets fired when an interrupt occurs during the script execution.
@@ -24,10 +24,10 @@ trait XEngineListener extends XEventListener {
     * If you call the method, the execution stops. So in this situation, the stack and variable values are still available by using the appropriate {@link
     * XDebugging} methods.
     */
-  def interrupt(Evt: InterruptEngineEvent): Unit = js.native
+  def interrupt(Evt: InterruptEngineEvent): Unit
   
   /** gets fired when the script gets into execution state. */
-  def running(Evt: EventObject): Unit = js.native
+  def running(Evt: EventObject): Unit
 }
 object XEngineListener {
   

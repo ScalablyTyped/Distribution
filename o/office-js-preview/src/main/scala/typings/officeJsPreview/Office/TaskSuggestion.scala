@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,18 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
   */
-@js.native
 trait TaskSuggestion extends StObject {
   
   /**
     * Gets the users that should be assigned a suggested task.
     */
-  var assignees: js.Array[EmailUser] = js.native
+  var assignees: js.Array[EmailUser]
   
   /**
     * Gets the text of an item that was identified as a task suggestion.
     */
-  var taskString: String = js.native
+  var taskString: String
 }
 object TaskSuggestion {
   

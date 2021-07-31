@@ -3,7 +3,6 @@ package typings.cordovaSqliteStorage
 import typings.cordovaSqliteStorage.SQLitePlugin.SQLite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {

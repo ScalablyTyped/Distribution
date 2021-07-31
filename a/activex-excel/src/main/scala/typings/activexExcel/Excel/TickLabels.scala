@@ -2,50 +2,48 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickLabels extends StObject {
   
-  var Alignment: Double = js.native
+  var Alignment: Double
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Depth: Double = js.native
+  val Depth: Double
   
   @JSName("Excel.TickLabels_typekey")
-  var ExcelDotTickLabels_typekey: TickLabels = js.native
+  var ExcelDotTickLabels_typekey: TickLabels
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var MultiLevel: Boolean = js.native
+  var MultiLevel: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  var NumberFormat: String = js.native
+  var NumberFormat: String
   
-  var NumberFormatLinked: Boolean = js.native
+  var NumberFormatLinked: Boolean
   
-  var NumberFormatLocal: String = js.native
+  var NumberFormatLocal: String
   
-  var Offset: Double = js.native
+  var Offset: Double
   
-  var Orientation: XlTickLabelOrientation = js.native
+  var Orientation: XlTickLabelOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReadingOrder: Double = js.native
+  var ReadingOrder: Double
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object TickLabels {
   

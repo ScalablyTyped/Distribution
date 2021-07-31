@@ -2,61 +2,55 @@ package typings.gravatar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gravatar", "profile_url")
+  @JSImport("gravatar", JSImport.Namespace)
   @js.native
-  def profileUrl(email: String): String = js.native
-  @JSImport("gravatar", "profile_url")
-  @js.native
-  def profileUrl(email: String, options: js.UndefOr[scala.Nothing], protocol: Boolean): String = js.native
-  @JSImport("gravatar", "profile_url")
-  @js.native
-  def profileUrl(email: String, options: Options): String = js.native
-  @JSImport("gravatar", "profile_url")
-  @js.native
-  def profileUrl(email: String, options: Options, protocol: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gravatar", "url")
-  @js.native
-  def url(email: String): String = js.native
-  @JSImport("gravatar", "url")
-  @js.native
-  def url(email: String, options: js.UndefOr[scala.Nothing], protocol: Boolean): String = js.native
-  @JSImport("gravatar", "url")
-  @js.native
-  def url(email: String, options: Options): String = js.native
-  @JSImport("gravatar", "url")
-  @js.native
-  def url(email: String, options: Options, protocol: Boolean): String = js.native
+  @scala.inline
+  def profileUrl(email: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("profile_url")(email.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def profileUrl(email: String, options: Unit, protocol: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("profile_url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def profileUrl(email: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("profile_url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def profileUrl(email: String, options: Options, protocol: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("profile_url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def url(email: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(email.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def url(email: String, options: Unit, protocol: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def url(email: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def url(email: String, options: Options, protocol: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("url")(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var cdn: js.UndefOr[String] = js.native
+    var cdn: js.UndefOr[String] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var f: js.UndefOr[String] = js.native
+    var f: js.UndefOr[String] = js.undefined
     
-    var forcedefault: js.UndefOr[String] = js.native
+    var forcedefault: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var r: js.UndefOr[String] = js.native
+    var r: js.UndefOr[String] = js.undefined
     
-    var rating: js.UndefOr[String] = js.native
+    var rating: js.UndefOr[String] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object Options {
     

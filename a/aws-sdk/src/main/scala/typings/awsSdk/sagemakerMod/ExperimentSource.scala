@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExperimentSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source.
     */
-  var SourceArn: ExperimentSourceArn = js.native
+  var SourceArn: ExperimentSourceArn
   
   /**
     * The source type.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.sagemakerMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.sagemakerMod.SourceType] = js.undefined
 }
 object ExperimentSource {
   

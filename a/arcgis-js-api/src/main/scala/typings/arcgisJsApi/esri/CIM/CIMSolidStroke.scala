@@ -2,28 +2,27 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMSolidStroke
-  extends CIMStroke
+  extends StObject
+     with CIMStroke
      with CIMSymbolLayerType {
   
   /**
     * The color that is applied to the stroke.
     */
-  var color: js.UndefOr[js.Array[Double]] = js.native
+  var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMSolidStroke: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidStroke = js.native
+  var type_CIMSolidStroke: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidStroke
 }
 object CIMSolidStroke {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidStroke): CIMSolidStroke = {
+  def apply(): CIMSolidStroke = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMSolidStroke")
     __obj.asInstanceOf[CIMSolidStroke]
   }
   

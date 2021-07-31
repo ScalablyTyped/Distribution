@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminGetGithubActionsBillingG
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminGetGithubActionsBillingGheEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminGetGithubActionsBillingGheEndpoint = js.native
+  var parameters: EnterpriseAdminGetGithubActionsBillingGheEndpoint
   
-  var request: EnterpriseAdminGetGithubActionsBillingGheRequestOptions = js.native
+  var request: EnterpriseAdminGetGithubActionsBillingGheRequestOptions
   
-  var response: OctokitResponse[EnterpriseAdminGetGithubActionsBillingGheResponseData] = js.native
+  var response: OctokitResponse[EnterpriseAdminGetGithubActionsBillingGheResponseData]
 }
 object ParametersEnterpriseAdminGetGithubActionsBillingGheEndpoint {
   

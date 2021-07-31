@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceleratorConfig extends StObject {
   
   /** Count of cores of this accelerator. */
-  var coreCount: js.UndefOr[String] = js.native
+  var coreCount: js.UndefOr[String] = js.undefined
   
   /** Type of this accelerator. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AcceleratorConfig {
   

@@ -5,7 +5,6 @@ import typings.std.Event
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispatcherMod {
@@ -41,7 +40,7 @@ object dispatcherMod {
       * eventname is a DOM event name like "mouseup", "touchstart", etc. The
       * callback is simply registered to the event callback with bubbling.
       */
-    var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, _]] = js.native
+    var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, js.Any]] = js.native
     
     /* private */ def _hasNoCallbacks(): js.Any = js.native
     

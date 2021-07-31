@@ -12,10 +12,13 @@ import typings.openfin.identityMod.Identity
 import typings.openfin.openfinStrings.`channel-changed`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainMod {
+  
+  @JSImport("openfin/_v2/fdc3/main", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("openfin/_v2/fdc3/main", "AppChannel")
   @js.native
@@ -34,13 +37,13 @@ object mainMod {
   object ApplicationError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ApplicationError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ApplicationError & String] = js.native
     
-    /* "ApplicationError:LaunchError" */ val LaunchError: typings.openfin.errorsMod.ApplicationError.LaunchError with String = js.native
+    /* "ApplicationError:LaunchError" */ val LaunchError: typings.openfin.errorsMod.ApplicationError.LaunchError & String = js.native
     
-    /* "ApplicationError:LaunchTimeout" */ val LaunchTimeout: typings.openfin.errorsMod.ApplicationError.LaunchTimeout with String = js.native
+    /* "ApplicationError:LaunchTimeout" */ val LaunchTimeout: typings.openfin.errorsMod.ApplicationError.LaunchTimeout & String = js.native
     
-    /* "ApplicationError:NotFound" */ val NotFound: typings.openfin.errorsMod.ApplicationError.NotFound with String = js.native
+    /* "ApplicationError:NotFound" */ val NotFound: typings.openfin.errorsMod.ApplicationError.NotFound & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "ChannelBase")
@@ -55,9 +58,9 @@ object mainMod {
   object ChannelError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ChannelError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ChannelError & String] = js.native
     
-    /* "ChannelError:ChannelWithIdDoesNotExist" */ val ChannelWithIdDoesNotExist: typings.openfin.errorsMod.ChannelError.ChannelWithIdDoesNotExist with String = js.native
+    /* "ChannelError:ChannelWithIdDoesNotExist" */ val ChannelWithIdDoesNotExist: typings.openfin.errorsMod.ChannelError.ChannelWithIdDoesNotExist & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "ConnectionError")
@@ -65,9 +68,9 @@ object mainMod {
   object ConnectionError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ConnectionError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ConnectionError & String] = js.native
     
-    /* "ConnectionError:WindowWithIdentityNotFound" */ val WindowWithIdentityNotFound: typings.openfin.errorsMod.ConnectionError.WindowWithIdentityNotFound with String = js.native
+    /* "ConnectionError:WindowWithIdentityNotFound" */ val WindowWithIdentityNotFound: typings.openfin.errorsMod.ConnectionError.WindowWithIdentityNotFound & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "DefaultChannel")
@@ -92,27 +95,27 @@ object mainMod {
   object Intents extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.intentsMod.Intents with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.intentsMod.Intents & String] = js.native
     
-    /* "DialCall" */ val DIAL_CALL: typings.openfin.intentsMod.Intents.DIAL_CALL with String = js.native
+    /* "DialCall" */ val DIAL_CALL: typings.openfin.intentsMod.Intents.DIAL_CALL & String = js.native
     
-    /* "SaveContact" */ val SAVE_CONTACT: typings.openfin.intentsMod.Intents.SAVE_CONTACT with String = js.native
+    /* "SaveContact" */ val SAVE_CONTACT: typings.openfin.intentsMod.Intents.SAVE_CONTACT & String = js.native
     
-    /* "SaveInstrument" */ val SAVE_INSTRUMENT: typings.openfin.intentsMod.Intents.SAVE_INSTRUMENT with String = js.native
+    /* "SaveInstrument" */ val SAVE_INSTRUMENT: typings.openfin.intentsMod.Intents.SAVE_INSTRUMENT & String = js.native
     
-    /* "ShareContext" */ val SHARE_CONTEXT: typings.openfin.intentsMod.Intents.SHARE_CONTEXT with String = js.native
+    /* "ShareContext" */ val SHARE_CONTEXT: typings.openfin.intentsMod.Intents.SHARE_CONTEXT & String = js.native
     
-    /* "StartCall" */ val START_CALL: typings.openfin.intentsMod.Intents.START_CALL with String = js.native
+    /* "StartCall" */ val START_CALL: typings.openfin.intentsMod.Intents.START_CALL & String = js.native
     
-    /* "StartChat" */ val START_CHAT: typings.openfin.intentsMod.Intents.START_CHAT with String = js.native
+    /* "StartChat" */ val START_CHAT: typings.openfin.intentsMod.Intents.START_CHAT & String = js.native
     
-    /* "ViewChart" */ val VIEW_CHART: typings.openfin.intentsMod.Intents.VIEW_CHART with String = js.native
+    /* "ViewChart" */ val VIEW_CHART: typings.openfin.intentsMod.Intents.VIEW_CHART & String = js.native
     
-    /* "ViewContact" */ val VIEW_CONTACT: typings.openfin.intentsMod.Intents.VIEW_CONTACT with String = js.native
+    /* "ViewContact" */ val VIEW_CONTACT: typings.openfin.intentsMod.Intents.VIEW_CONTACT & String = js.native
     
-    /* "ViewNews" */ val VIEW_NEWS: typings.openfin.intentsMod.Intents.VIEW_NEWS with String = js.native
+    /* "ViewNews" */ val VIEW_NEWS: typings.openfin.intentsMod.Intents.VIEW_NEWS & String = js.native
     
-    /* "ViewQuote" */ val VIEW_QUOTE: typings.openfin.intentsMod.Intents.VIEW_QUOTE with String = js.native
+    /* "ViewQuote" */ val VIEW_QUOTE: typings.openfin.intentsMod.Intents.VIEW_QUOTE & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "ResolveError")
@@ -120,13 +123,13 @@ object mainMod {
   object ResolveError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ResolveError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.ResolveError & String] = js.native
     
-    /* "ResolveError:AppDoesNotHandleIntent" */ val AppDoesNotHandleIntent: typings.openfin.errorsMod.ResolveError.AppDoesNotHandleIntent with String = js.native
+    /* "ResolveError:AppDoesNotHandleIntent" */ val AppDoesNotHandleIntent: typings.openfin.errorsMod.ResolveError.AppDoesNotHandleIntent & String = js.native
     
-    /* "ResolveError:NoAppsFound" */ val NoAppsFound: typings.openfin.errorsMod.ResolveError.NoAppsFound with String = js.native
+    /* "ResolveError:NoAppsFound" */ val NoAppsFound: typings.openfin.errorsMod.ResolveError.NoAppsFound & String = js.native
     
-    /* "ResolveError:ResolverClosedOrCancelled" */ val ResolverClosedOrCancelled: typings.openfin.errorsMod.ResolveError.ResolverClosedOrCancelled with String = js.native
+    /* "ResolveError:ResolverClosedOrCancelled" */ val ResolverClosedOrCancelled: typings.openfin.errorsMod.ResolveError.ResolverClosedOrCancelled & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "SendContextError")
@@ -134,13 +137,13 @@ object mainMod {
   object SendContextError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.SendContextError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.openfin.errorsMod.SendContextError & String] = js.native
     
-    /* "SendContextError:HandlerError" */ val HandlerError: typings.openfin.errorsMod.SendContextError.HandlerError with String = js.native
+    /* "SendContextError:HandlerError" */ val HandlerError: typings.openfin.errorsMod.SendContextError.HandlerError & String = js.native
     
-    /* "SendContextError:SendIntentTimeout" */ val HandlerTimeout: typings.openfin.errorsMod.SendContextError.HandlerTimeout with String = js.native
+    /* "SendContextError:SendIntentTimeout" */ val HandlerTimeout: typings.openfin.errorsMod.SendContextError.HandlerTimeout & String = js.native
     
-    /* "SendContextError:NoHandler" */ val NoHandler: typings.openfin.errorsMod.SendContextError.NoHandler with String = js.native
+    /* "SendContextError:NoHandler" */ val NoHandler: typings.openfin.errorsMod.SendContextError.NoHandler & String = js.native
   }
   
   @JSImport("openfin/_v2/fdc3/main", "SystemChannel")
@@ -155,86 +158,68 @@ object mainMod {
     def this(transport: SystemChannelTransport) = this()
   }
   
-  @JSImport("openfin/_v2/fdc3/main", "addContextListener")
-  @js.native
-  def addContextListener(handler: js.Function1[/* context */ Context, Unit]): ContextListener = js.native
+  @scala.inline
+  def addContextListener(handler: js.Function1[/* context */ Context, Unit]): ContextListener = ^.asInstanceOf[js.Dynamic].applyDynamic("addContextListener")(handler.asInstanceOf[js.Any]).asInstanceOf[ContextListener]
   
-  @JSImport("openfin/_v2/fdc3/main", "addEventListener")
-  @js.native
-  def addEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = js.native
+  @scala.inline
+  def addEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openfin/_v2/fdc3/main", "addIntentListener")
-  @js.native
-  def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, _]): IntentListener = js.native
+  @scala.inline
+  def addIntentListener(intent: String, handler: js.Function1[/* context */ Context, js.Any]): IntentListener = (^.asInstanceOf[js.Dynamic].applyDynamic("addIntentListener")(intent.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[IntentListener]
   
-  @JSImport("openfin/_v2/fdc3/main", "broadcast")
-  @js.native
-  def broadcast(context: Context): js.Promise[Unit] = js.native
+  @scala.inline
+  def broadcast(context: Context): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcast")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("openfin/_v2/fdc3/main", "defaultChannel")
   @js.native
   val defaultChannel: typings.openfin.contextChannelsMod.DefaultChannel_ = js.native
   
-  @JSImport("openfin/_v2/fdc3/main", "findIntent")
-  @js.native
-  def findIntent(intent: String): js.Promise[AppIntent] = js.native
-  @JSImport("openfin/_v2/fdc3/main", "findIntent")
-  @js.native
-  def findIntent(intent: String, context: Context): js.Promise[AppIntent] = js.native
+  @scala.inline
+  def findIntent(intent: String): js.Promise[AppIntent] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppIntent]]
+  @scala.inline
+  def findIntent(intent: String, context: Context): js.Promise[AppIntent] = (^.asInstanceOf[js.Dynamic].applyDynamic("findIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppIntent]]
   
-  @JSImport("openfin/_v2/fdc3/main", "findIntentsByContext")
-  @js.native
-  def findIntentsByContext(context: Context): js.Promise[js.Array[AppIntent]] = js.native
+  @scala.inline
+  def findIntentsByContext(context: Context): js.Promise[js.Array[AppIntent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findIntentsByContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AppIntent]]]
   
-  @JSImport("openfin/_v2/fdc3/main", "getChannelById")
-  @js.native
-  def getChannelById(channelId: ChannelId): js.Promise[Channel] = js.native
+  @scala.inline
+  def getChannelById(channelId: ChannelId): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChannelById")(channelId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @JSImport("openfin/_v2/fdc3/main", "getCurrentChannel")
-  @js.native
-  def getCurrentChannel(): js.Promise[Channel] = js.native
-  @JSImport("openfin/_v2/fdc3/main", "getCurrentChannel")
-  @js.native
-  def getCurrentChannel(identity: Identity): js.Promise[Channel] = js.native
+  @scala.inline
+  def getCurrentChannel(): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")().asInstanceOf[js.Promise[Channel]]
+  @scala.inline
+  def getCurrentChannel(identity: Identity): js.Promise[Channel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentChannel")(identity.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Channel]]
   
-  @JSImport("openfin/_v2/fdc3/main", "getOrCreateAppChannel")
-  @js.native
-  def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = js.native
+  @scala.inline
+  def getOrCreateAppChannel(name: String): js.Promise[typings.openfin.contextChannelsMod.AppChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateAppChannel")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.openfin.contextChannelsMod.AppChannel]]
   
-  @JSImport("openfin/_v2/fdc3/main", "getSystemChannels")
-  @js.native
-  def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = js.native
+  @scala.inline
+  def getSystemChannels(): js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemChannels")().asInstanceOf[js.Promise[js.Array[typings.openfin.contextChannelsMod.SystemChannel]]]
   
-  @JSImport("openfin/_v2/fdc3/main", "open")
-  @js.native
-  def open(name: AppName): js.Promise[Unit] = js.native
-  @JSImport("openfin/_v2/fdc3/main", "open")
-  @js.native
-  def open(name: AppName, context: Context): js.Promise[Unit] = js.native
+  @scala.inline
+  def open(name: AppName): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def open(name: AppName, context: Context): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("openfin/_v2/fdc3/main", "raiseIntent")
-  @js.native
-  def raiseIntent(intent: String, context: Context): js.Promise[IntentResolution] = js.native
-  @JSImport("openfin/_v2/fdc3/main", "raiseIntent")
-  @js.native
-  def raiseIntent(intent: String, context: Context, target: AppName): js.Promise[IntentResolution] = js.native
+  @scala.inline
+  def raiseIntent(intent: String, context: Context): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
+  @scala.inline
+  def raiseIntent(intent: String, context: Context, target: AppName): js.Promise[IntentResolution] = (^.asInstanceOf[js.Dynamic].applyDynamic("raiseIntent")(intent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IntentResolution]]
   
-  @JSImport("openfin/_v2/fdc3/main", "removeEventListener")
-  @js.native
-  def removeEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = js.native
+  @scala.inline
+  def removeEventListener_channelchanged(eventType: `channel-changed`, handler: js.Function1[/* event */ ChannelChangedEvent, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait AppIntent extends StObject {
     
     /**
       * An array of applications that are associated with this intent.
       */
-    var apps: js.Array[Application] = js.native
+    var apps: js.Array[Application]
     
     /**
       * Descriptor of this intent.
       */
-    var intent: IntentMetadata = js.native
+    var intent: IntentMetadata
   }
   object AppIntent {
     
@@ -258,13 +243,14 @@ object mainMod {
     }
   }
   
-  @js.native
-  trait ContextListener extends Listener {
+  trait ContextListener
+    extends StObject
+       with Listener {
     
     /**
       * The handler for when this listener receives a context broadcast.
       */
-    def handler(context: Context): Unit = js.native
+    def handler(context: Context): Unit
     
     /**
       * Unsubscribe the listener object. We will no longer receive context messages on this handler.
@@ -272,7 +258,7 @@ object mainMod {
       * Calling this method has no effect if the listener has already been unsubscribed. To re-subscribe, call
       * [[addContextListener]] again to create a new listener object.
       */
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object ContextListener {
     
@@ -293,18 +279,19 @@ object mainMod {
     }
   }
   
-  @js.native
-  trait IntentListener extends Listener {
+  trait IntentListener
+    extends StObject
+       with Listener {
     
     /**
       * The handler for when this listener receives an intent.
       */
-    def handler(context: Context): js.Any | js.Promise[_] = js.native
+    def handler(context: Context): js.Any | js.Promise[js.Any]
     
     /**
       * The intent name that we are listening to. Is whatever is passed into [[addIntentListener]].
       */
-    var intent: String = js.native
+    var intent: String
     
     /**
       * Unsubscribe the listener object. We will no longer receive intent messages on this handler.
@@ -312,12 +299,12 @@ object mainMod {
       * Calling this method has no effect if the listener has already been unsubscribed. To re-subscribe, call
       * [[addIntentListener]] again to create a new listener object.
       */
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object IntentListener {
     
     @scala.inline
-    def apply(handler: Context => js.Any | js.Promise[_], intent: String, unsubscribe: () => Unit): IntentListener = {
+    def apply(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[IntentListener]
     }
@@ -326,7 +313,7 @@ object mainMod {
     implicit class IntentListenerMutableBuilder[Self <: IntentListener] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHandler(value: Context => js.Any | js.Promise[_]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      def setHandler(value: Context => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIntent(value: String): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
@@ -336,18 +323,17 @@ object mainMod {
     }
   }
   
-  @js.native
   trait IntentMetadata extends StObject {
     
     /**
       * The human-readable name of the intent.
       */
-    var displayName: String = js.native
+    var displayName: String
     
     /**
       * The machine readable name of the intent.
       */
-    var name: String = js.native
+    var name: String
   }
   object IntentMetadata {
     
@@ -368,7 +354,6 @@ object mainMod {
     }
   }
   
-  @js.native
   trait IntentResolution extends StObject {
     
     /**
@@ -377,17 +362,17 @@ object mainMod {
       * If the target application registered multiple listeners, this will be the first non-`undefined` value returned
       * by a listener.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The machine-readable name of the app that resolved this intent.
       */
-    var source: AppName = js.native
+    var source: AppName
     
     /**
       * For future use. Right now always the string `'1.0.0'`.
       */
-    var version: String = js.native
+    var version: String
   }
   object IntentResolution {
     
@@ -435,7 +420,7 @@ object mainMod {
     }
     
     @scala.inline
-    def IntentListener(handler: Context => js.Any | js.Promise[_], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
+    def IntentListener(handler: Context => js.Any | js.Promise[js.Any], intent: String, unsubscribe: () => Unit): typings.openfin.mainMod.IntentListener = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), intent = intent.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[typings.openfin.mainMod.IntentListener]
     }

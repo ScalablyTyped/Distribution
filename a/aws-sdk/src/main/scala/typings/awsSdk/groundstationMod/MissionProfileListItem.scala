@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MissionProfileListItem extends StObject {
   
   /**
     * ARN of a mission profile.
     */
-  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
+  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.undefined
   
   /**
     * UUID of a mission profile.
     */
-  var missionProfileId: js.UndefOr[String] = js.native
+  var missionProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a mission profile.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Region of a mission profile.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object MissionProfileListItem {
   

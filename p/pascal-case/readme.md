@@ -10,9 +10,9 @@ Transform into a string of capitalized words without separators
 | ------------------ | :-------------: |
 | Full name          | pascal-case |
 | Keywords           | pascal, case, camel, capital, convert, transform, identifier, class |
-| # releases         | 5 |
-| # dependents       | 280 |
-| # downloads        | 132682590 |
+| # releases         | 6 |
+| # dependents       | 315 |
+| # downloads        | 202076475 |
 | # stars            | 3 |
 
 ## Links

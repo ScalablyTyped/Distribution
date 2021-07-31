@@ -7,7 +7,6 @@ import typings.builderUtilRuntime.publishOptionsMod.AllPublishOptions
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -31,10 +30,10 @@ object coreMod {
     
     var buildConfigurationKey: String = js.native
     
-    def createTarget(`type`: js.UndefOr[scala.Nothing], archs: Arch*): Map[Platform, Map[Arch, js.Array[String]]] = js.native
     def createTarget(`type`: String, archs: Arch*): Map[Platform, Map[Arch, js.Array[String]]] = js.native
     def createTarget(`type`: js.Array[String], archs: Arch*): Map[Platform, Map[Arch, js.Array[String]]] = js.native
     def createTarget(`type`: Null, archs: Arch*): Map[Platform, Map[Arch, js.Array[String]]] = js.native
+    def createTarget(`type`: Unit, archs: Arch*): Map[Platform, Map[Arch, js.Array[String]]] = js.native
     
     var name: String = js.native
     
@@ -65,13 +64,11 @@ object coreMod {
     @scala.inline
     def WINDOWS_=(x: Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
-    @JSImport("app-builder-lib/out/core", "Platform.current")
-    @js.native
-    def current(): Platform = js.native
+    @scala.inline
+    def current(): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[Platform]
     
-    @JSImport("app-builder-lib/out/core", "Platform.fromString")
-    @js.native
-    def fromString(name: String): Platform = js.native
+    @scala.inline
+    def fromString(name: String): Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[Platform]
   }
   
   @JSImport("app-builder-lib/out/core", "Target")
@@ -80,11 +77,11 @@ object coreMod {
     protected def this(name: String) = this()
     protected def this(name: String, isAsyncSupported: Boolean) = this()
     
-    def build(appOutDir: String, arch: Arch): js.Promise[_] = js.native
+    def build(appOutDir: String, arch: Arch): js.Promise[js.Any] = js.native
     
-    def checkOptions(): js.Promise[_] = js.native
+    def checkOptions(): js.Promise[js.Any] = js.native
     
-    def finishBuild(): js.Promise[_] = js.native
+    def finishBuild(): js.Promise[js.Any] = js.native
     
     val isAsyncSupported: Boolean = js.native
     
@@ -95,16 +92,15 @@ object coreMod {
     val outDir: String = js.native
   }
   
-  @js.native
   trait BeforeBuildContext extends StObject {
     
-    val appDir: String = js.native
+    val appDir: String
     
-    val arch: String = js.native
+    val arch: String
     
-    val electronVersion: String = js.native
+    val electronVersion: String
     
-    val platform: Platform = js.native
+    val platform: Platform
   }
   object BeforeBuildContext {
     
@@ -151,16 +147,15 @@ object coreMod {
   
   type Publish = AllPublishOptions | SnapStoreOptions | (js.Array[AllPublishOptions | SnapStoreOptions]) | Null
   
-  @js.native
   trait SourceRepositoryInfo extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var project: String = js.native
+    var project: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var user: String = js.native
+    var user: String
   }
   object SourceRepositoryInfo {
     
@@ -195,18 +190,17 @@ object coreMod {
   
   type TargetConfigType = (js.Array[String | TargetConfiguration]) | String | TargetConfiguration | Null
   
-  @js.native
   trait TargetConfiguration extends StObject {
     
     /**
       * The arch or list of archs.
       */
-    val arch: js.UndefOr[js.Array[ArchType] | ArchType] = js.native
+    val arch: js.UndefOr[js.Array[ArchType] | ArchType] = js.undefined
     
     /**
       * The target name. e.g. `snap`.
       */
-    val target: String = js.native
+    val target: String
   }
   object TargetConfiguration {
     
@@ -233,15 +227,14 @@ object coreMod {
     }
   }
   
-  @js.native
   trait TargetSpecificOptions extends StObject {
     
     /**
       The [artifact file name template](/configuration/configuration#artifact-file-name-template).
       */
-    val artifactName: js.UndefOr[String | Null] = js.native
+    val artifactName: js.UndefOr[String | Null] = js.undefined
     
-    var publish: js.UndefOr[Publish] = js.native
+    var publish: js.UndefOr[Publish] = js.undefined
   }
   object TargetSpecificOptions {
     

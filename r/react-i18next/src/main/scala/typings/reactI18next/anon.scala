@@ -7,7 +7,6 @@ import typings.i18next.mod.i18n
 import typings.react.mod.FunctionComponentElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,19 +14,18 @@ object anon {
   @js.native
   trait Call[Props] extends StObject {
     
-    def apply(hasInitialI18nStoreInitialLanguageRest: InitialLanguage with Props): FunctionComponentElement[Props] = js.native
+    def apply(hasInitialI18nStoreInitialLanguageRest: InitialLanguage & Props): FunctionComponentElement[Props] = js.native
     
-    def getInitialProps(ctx: js.Any): js.Promise[_] = js.native
+    def getInitialProps(ctx: js.Any): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait I18n extends StObject {
     
-    var i18n: typings.i18next.mod.i18n = js.native
+    var i18n: typings.i18next.mod.i18n
     
-    var ready: Boolean = js.native
+    var ready: Boolean
     
-    var t: TFunction = js.native
+    var t: TFunction
   }
   object I18n {
     
@@ -51,10 +49,9 @@ object anon {
     }
   }
   
-  @js.native
   trait I18nI18n extends StObject {
     
-    var i18n: typings.i18next.mod.i18n = js.native
+    var i18n: typings.i18next.mod.i18n
   }
   object I18nI18n {
     
@@ -72,12 +69,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialI18nStore extends StObject {
     
-    var initialI18nStore: StringDictionary[js.Object] = js.native
+    var initialI18nStore: StringDictionary[js.Object]
     
-    var initialLanguage: String = js.native
+    var initialLanguage: String
   }
   object InitialI18nStore {
     
@@ -98,12 +94,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialLanguage extends StObject {
     
-    var initialI18nStore: Resource = js.native
+    var initialI18nStore: Resource
     
-    var initialLanguage: String = js.native
+    var initialLanguage: String
   }
   object InitialLanguage {
     
@@ -124,12 +119,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Lng extends StObject {
     
-    var i18n: typings.i18next.mod.i18n = js.native
+    var i18n: typings.i18next.mod.i18n
     
-    var lng: String = js.native
+    var lng: String
   }
   object Lng {
     
@@ -150,10 +144,9 @@ object anon {
     }
   }
   
-  @js.native
   trait WithRef extends StObject {
     
-    var withRef: js.UndefOr[Boolean] = js.native
+    var withRef: js.UndefOr[Boolean] = js.undefined
   }
   object WithRef {
     

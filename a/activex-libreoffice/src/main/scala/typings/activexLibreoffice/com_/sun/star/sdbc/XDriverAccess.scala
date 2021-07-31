@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.XDriver
   */
-@js.native
-trait XDriverAccess extends XInterface {
+trait XDriverAccess
+  extends StObject
+     with XInterface {
   
   /**
     * get a driver which accepts a given url.
@@ -22,7 +22,7 @@ trait XDriverAccess extends XInterface {
     * @see com.sun.star.sdbc.XDriver.acceptsURL
     * @throws SQLException if a database access error occurs.
     */
-  def getDriverByURL(url: String): XDriver = js.native
+  def getDriverByURL(url: String): XDriver
 }
 object XDriverAccess {
   

@@ -3,17 +3,15 @@ package typings.consola.mod
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsolaReporterArgs extends StObject {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var stderr: WritableStream = js.native
+  var stderr: WritableStream
   
-  var stdout: WritableStream = js.native
+  var stdout: WritableStream
 }
 object ConsolaReporterArgs {
   

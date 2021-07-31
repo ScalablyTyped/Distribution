@@ -2,26 +2,24 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Controls how notifications for a timeline item are presented to the user.
   */
-@js.native
 trait SchemaNotificationConfig extends StObject {
   
   /**
     * The time at which the notification should be delivered.
     */
-  var deliveryTime: js.UndefOr[String] = js.native
+  var deliveryTime: js.UndefOr[String] = js.undefined
   
   /**
     * Describes how important the notification is. Allowed values are:   -
     * DEFAULT - Notifications of default importance. A chime will be played to
     * alert users.
     */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
 }
 object SchemaNotificationConfig {
   

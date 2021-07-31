@@ -10,7 +10,6 @@ import typings.angularUiRouter.anon.Globals
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -53,16 +52,15 @@ object mod extends Shortcut {
     
     object ui {
       
-      @js.native
       trait IHrefOptions extends StObject {
         
-        var absolute: js.UndefOr[Boolean] = js.native
+        var absolute: js.UndefOr[Boolean] = js.undefined
         
-        var inherit: js.UndefOr[Boolean] = js.native
+        var inherit: js.UndefOr[Boolean] = js.undefined
         
-        var lossy: js.UndefOr[Boolean] = js.native
+        var lossy: js.UndefOr[Boolean] = js.undefined
         
-        var relative: js.UndefOr[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.native
+        var relative: js.UndefOr[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.undefined
       }
       object IHrefOptions {
         
@@ -101,10 +99,9 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IResolvedState extends StObject {
         
-        var locals: Globals = js.native
+        var locals: Globals
       }
       object IResolvedState {
         
@@ -122,74 +119,73 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IState extends StObject {
         
-        var `abstract`: js.UndefOr[Boolean] = js.native
+        var `abstract`: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Boolean (default true). If false will reload state on everytransitions. Useful for when you'd like to restore all data  to its initial state.
           */
-        var cache: js.UndefOr[Boolean] = js.native
+        var cache: js.UndefOr[Boolean] = js.undefined
         
         /**
           * String, component name
           */
-        var component: js.UndefOr[String] = js.native
+        var component: js.UndefOr[String] = js.undefined
         
         /**
           * A controller paired to the state. Function, annotated array or name as String
           */
-        var controller: js.UndefOr[Function | String | (js.Array[String | Function])] = js.native
+        var controller: js.UndefOr[Function | String | (js.Array[String | Function])] = js.undefined
         
-        var controllerAs: js.UndefOr[String] = js.native
+        var controllerAs: js.UndefOr[String] = js.undefined
         
         /**
           * Function (injectable), returns the actual controller function or string.
           */
-        var controllerProvider: js.UndefOr[Function | (js.Array[String | Function])] = js.native
+        var controllerProvider: js.UndefOr[Function | (js.Array[String | Function])] = js.undefined
         
         /**
           * Arbitrary data object, useful for custom configuration.
           */
-        var data: js.UndefOr[js.Any] = js.native
+        var data: js.UndefOr[js.Any] = js.undefined
         
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /**
           * Callback function for when a state is entered. Good way to trigger an action or dispatch an event, such as opening a dialog.
           * If minifying your scripts, make sure to explicitly annotate this function, because it won't be automatically annotated by your build tools.
           */
-        var onEnter: js.UndefOr[Function | (js.Array[String | Function])] = js.native
+        var onEnter: js.UndefOr[Function | (js.Array[String | Function])] = js.undefined
         
         /**
           * Callback functions for when a state is entered and exited. Good way to trigger an action or dispatch an event, such as opening a dialog.
           * If minifying your scripts, make sure to explicitly annotate this function, because it won't be automatically annotated by your build tools.
           */
-        var onExit: js.UndefOr[Function | (js.Array[String | Function])] = js.native
+        var onExit: js.UndefOr[Function | (js.Array[String | Function])] = js.undefined
         
         /**
           * A map which optionally configures parameters declared in the url, or defines additional non-url parameters. Only use this within a state if you are not using url. Otherwise you can specify your parameters within the url. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
           */
-        var params: js.UndefOr[js.Any] = js.native
+        var params: js.UndefOr[js.Any] = js.undefined
         
         /**
           * Specifies the parent state of this state
           */
-        var parent: js.UndefOr[String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.native
+        var parent: js.UndefOr[String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.undefined
         
         /**
           * string | function | object
           * Synchronously or asynchronously redirects Transitions to a different state/params
           */
-        var redirectTo: js.UndefOr[String | Function | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.native
+        var redirectTo: js.UndefOr[String | Function | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.undefined
         
         /**
           * Boolean (default true). If false will not re-trigger the same state just because a search/query parameter has changed. Useful for when you'd like to modify $location.search() without triggering a reload.
           */
-        var reloadOnSearch: js.UndefOr[Boolean] = js.native
+        var reloadOnSearch: js.UndefOr[Boolean] = js.undefined
         
-        var resolve: js.UndefOr[StringDictionary[js.Any]] = js.native
+        var resolve: js.UndefOr[StringDictionary[js.Any]] = js.undefined
         
         /**
           * String HTML content, or function that returns an HTML string
@@ -199,12 +195,12 @@ object mod extends Shortcut {
                   /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService, 
                   String
                 ])
-              ] = js.native
+              ] = js.undefined
         
         /**
           * Function, returns HTML content string
           */
-        var templateProvider: js.UndefOr[Function | (js.Array[String | Function])] = js.native
+        var templateProvider: js.UndefOr[Function | (js.Array[String | Function])] = js.undefined
         
         /**
           * String URL path to template file OR Function, returns URL path string
@@ -214,17 +210,17 @@ object mod extends Shortcut {
                   /* params */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService, 
                   String
                 ])
-              ] = js.native
+              ] = js.undefined
         
         /**
           * A url with optional parameters. When a state is navigated or transitioned to, the $stateParams service will be populated with any parameters that were passed.
           */
-        var url: js.UndefOr[String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher] = js.native
+        var url: js.UndefOr[String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher] = js.undefined
         
         /**
           * Use the views property to set up multiple views. If you don't need multiple views within a single state this property is not needed. Tip: remember that often nested views are more useful and powerful than multiple sibling views.
           */
-        var views: js.UndefOr[StringDictionary[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState]] = js.native
+        var views: js.UndefOr[StringDictionary[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState]] = js.undefined
       }
       object IState {
         
@@ -394,34 +390,33 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IStateOptions extends StObject {
         
         /**
           *  {boolean=true}, If true will inherit url parameters from current url.
           */
-        var inherit: js.UndefOr[Boolean] = js.native
+        var inherit: js.UndefOr[Boolean] = js.undefined
         
         /**
           * {boolean=true|string=} - If true will update the url in the location bar, if false will not. If string, must be "replace", which will update url and also replace last history record.
           */
-        var location: js.UndefOr[Boolean | String] = js.native
+        var location: js.UndefOr[Boolean | String] = js.undefined
         
         /**
           * {boolean=true}, If true will broadcast $stateChangeStart and $stateChangeSuccess events.
           */
         @JSName("notify")
-        var notify_FIStateOptions: js.UndefOr[Boolean] = js.native
+        var notify_FIStateOptions: js.UndefOr[Boolean] = js.undefined
         
         /**
           * {object=$state.$current}, When transitioning with relative path (e.g '^'), defines which state to be relative from.
           */
-        var relative: js.UndefOr[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.native
+        var relative: js.UndefOr[typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.undefined
         
         /**
           * {boolean=false|string|IState}, If true will force transition even if the state or params have not changed, aka a reload of the same state. It differs from reloadOnSearch because you'd use this when you want to force a reload when everything is the same, including search params.
           */
-        var reload: js.UndefOr[Boolean | String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.native
+        var reload: js.UndefOr[Boolean | String | typings.angularUiRouter.mod.angularAugmentingMod.ui.IState] = js.undefined
       }
       object IStateOptions {
         
@@ -469,24 +464,26 @@ object mod extends Shortcut {
       type IStateParamsService = StringDictionary[js.Any]
       
       @js.native
-      trait IStateProvider extends IServiceProvider {
+      trait IStateProvider
+        extends StObject
+           with IServiceProvider {
         
         def decorator(): js.Any = js.native
-        def decorator(
-          name: js.UndefOr[scala.Nothing],
-          decorator: js.Function2[
-                  /* state */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, 
-                  /* parent */ Function, 
-                  _
-                ]
-        ): js.Any = js.native
         def decorator(name: String): js.Any = js.native
         def decorator(
           name: String,
           decorator: js.Function2[
                   /* state */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, 
                   /* parent */ Function, 
-                  _
+                  js.Any
+                ]
+        ): js.Any = js.native
+        def decorator(
+          name: Unit,
+          decorator: js.Function2[
+                  /* state */ typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, 
+                  /* parent */ Function, 
+                  js.Any
                 ]
         ): js.Any = js.native
         
@@ -528,60 +525,60 @@ object mod extends Shortcut {
           *
           * @param options Options object.
           */
-        def go(to: String): IPromise[_] = js.native
-        def go(
-          to: String,
-          params: js.UndefOr[scala.Nothing],
-          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def go(to: String, params: js.Object): IPromise[_] = js.native
+        def go(to: String): IPromise[js.Any] = js.native
+        def go(to: String, params: js.Object): IPromise[js.Any] = js.native
         def go(
           to: String,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def go(to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
         def go(
-          to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
-          params: js.UndefOr[scala.Nothing],
+          to: String,
+          params: Unit,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def go(to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, params: js.Object): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
+        def go(to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[js.Any] = js.native
+        def go(to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, params: js.Object): IPromise[js.Any] = js.native
         def go(
           to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
+        def go(
+          to: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
+          params: Unit,
+          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
+        ): IPromise[js.Any] = js.native
         
         def href(state: String): String = js.native
-        def href(
-          state: String,
-          params: js.UndefOr[scala.Nothing],
-          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
-        ): String = js.native
         def href(state: String, params: js.Object): String = js.native
         def href(
           state: String,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
         ): String = js.native
-        def href(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): String = js.native
         def href(
-          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
-          params: js.UndefOr[scala.Nothing],
+          state: String,
+          params: Unit,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
         ): String = js.native
+        def href(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): String = js.native
         def href(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, params: js.Object): String = js.native
         def href(
           state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
         ): String = js.native
+        def href(
+          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
+          params: Unit,
+          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
+        ): String = js.native
         
         def includes(state: String): Boolean = js.native
-        def includes(state: String, params: js.UndefOr[scala.Nothing], options: js.Any): Boolean = js.native
         def includes(state: String, params: js.Object): Boolean = js.native
         def includes(state: String, params: js.Object, options: js.Any): Boolean = js.native
+        def includes(state: String, params: Unit, options: js.Any): Boolean = js.native
         
         def is(state: String): Boolean = js.native
         def is(state: String, params: js.Object): Boolean = js.native
@@ -591,52 +588,51 @@ object mod extends Shortcut {
         /** A param object, e.g. {sectionId: section.id)}, that you'd like to test against the current active state. */
         var params: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateParamsService = js.native
         
-        def reload(): IPromise[_] = js.native
-        def reload(reloadState: String): IPromise[_] = js.native
-        def reload(reloadState: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[_] = js.native
+        def reload(): IPromise[js.Any] = js.native
+        def reload(reloadState: String): IPromise[js.Any] = js.native
+        def reload(reloadState: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[js.Any] = js.native
         
         /** Currently pending transition. A promise that'll resolve or reject. */
         var transition: IPromise[js.Object] = js.native
         
-        def transitionTo(state: String): IPromise[_] = js.native
-        def transitionTo(
-          state: String,
-          params: js.UndefOr[scala.Nothing],
-          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def transitionTo(state: String, params: js.UndefOr[scala.Nothing], updateLocation: Boolean): IPromise[_] = js.native
-        def transitionTo(state: String, params: js.Object): IPromise[_] = js.native
+        def transitionTo(state: String): IPromise[js.Any] = js.native
+        def transitionTo(state: String, params: js.Object): IPromise[js.Any] = js.native
         def transitionTo(
           state: String,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def transitionTo(state: String, params: js.Object, updateLocation: Boolean): IPromise[_] = js.native
-        def transitionTo(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
+        def transitionTo(state: String, params: js.Object, updateLocation: Boolean): IPromise[js.Any] = js.native
         def transitionTo(
-          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
-          params: js.UndefOr[scala.Nothing],
+          state: String,
+          params: Unit,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
-        def transitionTo(
-          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
-          params: js.UndefOr[scala.Nothing],
-          updateLocation: Boolean
-        ): IPromise[_] = js.native
-        def transitionTo(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, params: js.Object): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
+        def transitionTo(state: String, params: Unit, updateLocation: Boolean): IPromise[js.Any] = js.native
+        def transitionTo(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState): IPromise[js.Any] = js.native
+        def transitionTo(state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState, params: js.Object): IPromise[js.Any] = js.native
         def transitionTo(
           state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
           params: js.Object,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
-        ): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
         def transitionTo(
           state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
           params: js.Object,
           updateLocation: Boolean
-        ): IPromise[_] = js.native
+        ): IPromise[js.Any] = js.native
+        def transitionTo(
+          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
+          params: Unit,
+          options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
+        ): IPromise[js.Any] = js.native
+        def transitionTo(
+          state: typings.angularUiRouter.mod.angularAugmentingMod.ui.IState,
+          params: Unit,
+          updateLocation: Boolean
+        ): IPromise[js.Any] = js.native
       }
       
-      @js.native
       trait IType extends StObject {
         
         /**
@@ -647,7 +643,7 @@ object mod extends Shortcut {
           *
           * @returns {any} Returns a custom representation of the URL parameter value.
           */
-        def decode(`val`: String, key: String): js.Any = js.native
+        def decode(`val`: String, key: String): js.Any
         
         /**
           * Encodes a custom/native type value to a string that can be embedded in a URL. Note that the return value does not need to be URL-safe (i.e. passed through encodeURIComponent()), it only needs to be a representation of val that has been coerced to a string.
@@ -657,7 +653,7 @@ object mod extends Shortcut {
           *
           * @returns {string} Returns a string representation of val that can be encoded in a URL.
           */
-        def encode(`val`: js.Any, key: String): String = js.native
+        def encode(`val`: js.Any, key: String): String
         
         /**
           * Determines whether two decoded values are equivalent.
@@ -668,7 +664,7 @@ object mod extends Shortcut {
           * @returns {boolean} Returns true if the values are equivalent/equal, otherwise false.
           */
         @JSName("equals")
-        var equals_FIType: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.native
+        var equals_FIType: js.UndefOr[js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]] = js.undefined
         
         /**
           * Detects whether a value is of a particular type. Accepts a native (decoded) value and determines whether it matches the current Type object.
@@ -678,12 +674,12 @@ object mod extends Shortcut {
           *
           * @returns {boolean} Returns true if the value matches the type, otherwise false.
           */
-        def is(`val`: js.Any, key: String): Boolean = js.native
+        def is(`val`: js.Any, key: String): Boolean
         
         /**
           * The regular expression pattern used to match values of this type when coming from a substring of a URL.
           */
-        var pattern: js.UndefOr[RegExp] = js.native
+        var pattern: js.UndefOr[RegExp] = js.undefined
       }
       object IType {
         
@@ -723,14 +719,13 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IUiViewScrollProvider extends StObject {
         
         /*
           * Reverts back to using the core $anchorScroll service for scrolling
           * based on the url anchor.
           */
-        def useAnchorScroll(): Unit = js.native
+        def useAnchorScroll(): Unit
       }
       object IUiViewScrollProvider {
         
@@ -748,12 +743,11 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait IUnfoundState extends StObject {
         
-        var options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions = js.native
+        var options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IStateOptions
         
-        var to: String = js.native
+        var to: String
       }
       object IUnfoundState {
         
@@ -780,13 +774,13 @@ object mod extends Shortcut {
         def concat(pattern: String): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher = js.native
         
         def exec(path: String): js.Object = js.native
-        def exec(path: String, search: js.UndefOr[scala.Nothing], hash: js.UndefOr[scala.Nothing], options: js.Any): js.Object = js.native
-        def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String): js.Object = js.native
-        def exec(path: String, search: js.UndefOr[scala.Nothing], hash: String, options: js.Any): js.Object = js.native
         def exec(path: String, search: js.Any): js.Object = js.native
-        def exec(path: String, search: js.Any, hash: js.UndefOr[scala.Nothing], options: js.Any): js.Object = js.native
         def exec(path: String, search: js.Any, hash: String): js.Object = js.native
         def exec(path: String, search: js.Any, hash: String, options: js.Any): js.Object = js.native
+        def exec(path: String, search: js.Any, hash: Unit, options: js.Any): js.Object = js.native
+        def exec(path: String, search: Unit, hash: String): js.Object = js.native
+        def exec(path: String, search: Unit, hash: String, options: js.Any): js.Object = js.native
+        def exec(path: String, search: Unit, hash: Unit, options: js.Any): js.Object = js.native
         
         def format(values: js.Object): String = js.native
         
@@ -866,12 +860,14 @@ object mod extends Shortcut {
         def `type`(
           name: String,
           definition: typings.angularUiRouter.mod.angularAugmentingMod.ui.IType,
-          inlineAnnotedDefinitionFn: js.Array[_]
+          inlineAnnotedDefinitionFn: js.Array[js.Any]
         ): IUrlMatcherFactory = js.native
       }
       
       @js.native
-      trait IUrlRouterProvider extends IServiceProvider {
+      trait IUrlRouterProvider
+        extends StObject
+           with IServiceProvider {
         
         /**
           * Disables (or enables) deferring location change interception.
@@ -883,20 +879,23 @@ object mod extends Shortcut {
         def deferIntercept(): Unit = js.native
         def deferIntercept(defer: Boolean): Unit = js.native
         
-        def otherwise(handler: js.Array[_]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
+        def otherwise(handler: js.Array[js.Any]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def otherwise(handler: Function): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def otherwise(path: String): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         
-        def rule(handler: js.Array[_]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
+        def rule(handler: js.Array[js.Any]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def rule(handler: Function): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         
-        def when(whenPath: String, handler: js.Array[_]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
+        def when(whenPath: String, handler: js.Array[js.Any]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: String, handler: Function): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: String, toPath: String): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
-        def when(whenPath: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher, handler: js.Array[_]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
+        def when(
+          whenPath: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher,
+          handler: js.Array[js.Any]
+        ): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher, hanlder: Function): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher, toPath: String): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
-        def when(whenPath: RegExp, handler: js.Array[_]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
+        def when(whenPath: RegExp, handler: js.Array[js.Any]): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: RegExp, handler: Function): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
         def when(whenPath: RegExp, toPath: String): typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlRouterProvider = js.native
       }
@@ -907,7 +906,7 @@ object mod extends Shortcut {
         def href(urlMatcher: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher): String = js.native
         def href(
           urlMatcher: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher,
-          params: js.UndefOr[scala.Nothing],
+          params: Unit,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
         ): String = js.native
         def href(
@@ -925,7 +924,7 @@ object mod extends Shortcut {
         def push(urlMatcher: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher): Unit = js.native
         def push(
           urlMatcher: typings.angularUiRouter.mod.angularAugmentingMod.ui.IUrlMatcher,
-          params: js.UndefOr[scala.Nothing],
+          params: Unit,
           options: typings.angularUiRouter.mod.angularAugmentingMod.ui.IHrefOptions
         ): Unit = js.native
         def push(

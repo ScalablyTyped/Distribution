@@ -14,7 +14,6 @@ import typings.grunt.grunt.util.UtilModule
 import typings.grunt.node.NodePackage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* GRUNT MODULE
@@ -26,7 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait IGrunt
-  extends IConfigComponents
+  extends StObject
+     with IConfigComponents
      with FailModule
      with ITaskComponents {
   

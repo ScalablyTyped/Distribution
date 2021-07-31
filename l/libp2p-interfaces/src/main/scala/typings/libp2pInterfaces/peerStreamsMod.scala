@@ -6,7 +6,6 @@ import typings.std.AsyncIterator
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerStreamsMod {
@@ -28,7 +27,9 @@ object peerStreamsMod {
     */
   @JSImport("libp2p-interfaces/src/pubsub/peer-streams", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PeerStreams {
+  class ^ protected ()
+    extends StObject
+       with PeerStreams {
     /**
       * @param {object} properties properties of the PeerStreams.
       * @param {PeerId} properties.id
@@ -37,14 +38,34 @@ object peerStreamsMod {
     def this(hasIdProtocol: Id) = this()
   }
   
-  @js.native
   trait DuplexIterableStream extends StObject {
     
-    def sink(source: Uint8Array): js.Promise[Uint8Array] = js.native
+    def sink(source: Uint8Array): js.Promise[Uint8Array]
     @JSName("sink")
-    var sink_Original: Sink = js.native
+    var sink_Original: Sink
     
-    def source(): AsyncIterator[Uint8Array, _, js.UndefOr[scala.Nothing]] = js.native
+    def source(): AsyncIterator[Uint8Array, js.Any, Unit]
+  }
+  object DuplexIterableStream {
+    
+    @scala.inline
+    def apply(
+      sink: /* source */ Uint8Array => js.Promise[Uint8Array],
+      source: () => AsyncIterator[Uint8Array, js.Any, Unit]
+    ): DuplexIterableStream = {
+      val __obj = js.Dynamic.literal(sink = js.Any.fromFunction1(sink), source = js.Any.fromFunction0(source))
+      __obj.asInstanceOf[DuplexIterableStream]
+    }
+    
+    @scala.inline
+    implicit class DuplexIterableStreamMutableBuilder[Self <: DuplexIterableStream] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSink(value: /* source */ Uint8Array => js.Promise[Uint8Array]): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSource(value: () => AsyncIterator[Uint8Array, js.Any, Unit]): Self = StObject.set(x, "source", js.Any.fromFunction0(value))
+    }
   }
   
   type PeerId = typings.peerId.mod.^

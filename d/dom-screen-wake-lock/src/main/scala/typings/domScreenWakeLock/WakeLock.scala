@@ -2,13 +2,11 @@ package typings.domScreenWakeLock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows a document to acquire a screen wake lock.
   */
-@js.native
 trait WakeLock extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait WakeLock extends StObject {
     *
     * @param type The type of wake lock to be requested.
     */
-  def request(`type`: WakeLockType): js.Promise[WakeLockSentinel] = js.native
+  def request(`type`: WakeLockType): js.Promise[WakeLockSentinel]
 }
 object WakeLock {
   

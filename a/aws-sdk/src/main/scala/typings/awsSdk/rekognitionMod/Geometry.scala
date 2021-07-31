@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
   /**
     * An axis-aligned coarse representation of the detected item's location on the image.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * Within the bounding box, a fine-grained polygon around the detected item.
     */
-  var Polygon: js.UndefOr[typings.awsSdk.rekognitionMod.Polygon] = js.native
+  var Polygon: js.UndefOr[typings.awsSdk.rekognitionMod.Polygon] = js.undefined
 }
 object Geometry {
   

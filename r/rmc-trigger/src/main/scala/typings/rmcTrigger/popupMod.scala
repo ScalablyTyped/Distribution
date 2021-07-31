@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupMod {
@@ -15,40 +14,39 @@ object popupMod {
     def this(props: js.Any) = this()
   }
   
-  @js.native
   trait IPopupProps extends StObject {
     
-    var align: js.UndefOr[js.Any] = js.native
+    var align: js.UndefOr[js.Any] = js.undefined
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var destroyPopupOnHide: js.UndefOr[Boolean] = js.native
+    var destroyPopupOnHide: js.UndefOr[Boolean] = js.undefined
     
-    var getClassNameFromAlign: js.UndefOr[js.Function] = js.native
+    var getClassNameFromAlign: js.UndefOr[js.Function] = js.undefined
     
-    var getRootDomNode: js.UndefOr[js.Function] = js.native
+    var getRootDomNode: js.UndefOr[js.Function] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[String] = js.native
+    var maskAnimation: js.UndefOr[String] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String | js.Object] = js.native
+    var maskTransitionName: js.UndefOr[String | js.Object] = js.undefined
     
-    var onAlign: js.UndefOr[js.Function] = js.native
+    var onAlign: js.UndefOr[js.Function] = js.undefined
     
-    var onAnimateLeave: js.UndefOr[js.Function] = js.native
+    var onAnimateLeave: js.UndefOr[js.Function] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var transitionName: js.UndefOr[String | js.Object] = js.native
+    var transitionName: js.UndefOr[String | js.Object] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IPopupProps {
     

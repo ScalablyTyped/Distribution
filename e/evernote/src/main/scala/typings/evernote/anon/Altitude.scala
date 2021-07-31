@@ -6,55 +6,53 @@ import typings.evernote.mod.Types.UserID
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Altitude extends StObject {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var applicationData: js.UndefOr[LazyMap] = js.native
+  var applicationData: js.UndefOr[LazyMap] = js.undefined
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var classifications: js.UndefOr[Map[String, String]] = js.native
+  var classifications: js.UndefOr[Map[String, String]] = js.undefined
   
-  var conflictSourceNoteGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var conflictSourceNoteGuid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var contentClass: js.UndefOr[String] = js.native
+  var contentClass: js.UndefOr[String] = js.undefined
   
-  var creatorId: js.UndefOr[UserID] = js.native
+  var creatorId: js.UndefOr[UserID] = js.undefined
   
-  var lastEditedBy: js.UndefOr[String] = js.native
+  var lastEditedBy: js.UndefOr[String] = js.undefined
   
-  var lastEditorId: js.UndefOr[UserID] = js.native
+  var lastEditorId: js.UndefOr[UserID] = js.undefined
   
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
-  var noteTitleQuality: js.UndefOr[Double] = js.native
+  var noteTitleQuality: js.UndefOr[Double] = js.undefined
   
-  var placeName: js.UndefOr[String] = js.native
+  var placeName: js.UndefOr[String] = js.undefined
   
-  var reminderDoneTime: js.UndefOr[Timestamp] = js.native
+  var reminderDoneTime: js.UndefOr[Timestamp] = js.undefined
   
-  var reminderOrder: js.UndefOr[Double] = js.native
+  var reminderOrder: js.UndefOr[Double] = js.undefined
   
-  var reminderTime: js.UndefOr[Timestamp] = js.native
+  var reminderTime: js.UndefOr[Timestamp] = js.undefined
   
-  var shareDate: js.UndefOr[Timestamp] = js.native
+  var shareDate: js.UndefOr[Timestamp] = js.undefined
   
-  var sharedWithBusiness: js.UndefOr[Boolean] = js.native
+  var sharedWithBusiness: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var sourceApplication: js.UndefOr[String] = js.native
+  var sourceApplication: js.UndefOr[String] = js.undefined
   
-  var sourceURL: js.UndefOr[String] = js.native
+  var sourceURL: js.UndefOr[String] = js.undefined
   
-  var subjectDate: js.UndefOr[Timestamp] = js.native
+  var subjectDate: js.UndefOr[Timestamp] = js.undefined
 }
 object Altitude {
   

@@ -2,44 +2,42 @@ package typings.vscodeLanguageserver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteConsole extends StObject {
   
   /**
     * The connection this remote is attached to.
     */
-  var connection: IConnection = js.native
+  var connection: IConnection
   
   /**
     * Show an error message.
     *
     * @param message The message to show.
     */
-  def error(message: String): Unit = js.native
+  def error(message: String): Unit
   
   /**
     * Show an information message.
     *
     * @param message The message to show.
     */
-  def info(message: String): Unit = js.native
+  def info(message: String): Unit
   
   /**
     * Log a message.
     *
     * @param message The message to log.
     */
-  def log(message: String): Unit = js.native
+  def log(message: String): Unit
   
   /**
     * Show a warning message.
     *
     * @param message The message to show.
     */
-  def warn(message: String): Unit = js.native
+  def warn(message: String): Unit
 }
 object RemoteConsole {
   

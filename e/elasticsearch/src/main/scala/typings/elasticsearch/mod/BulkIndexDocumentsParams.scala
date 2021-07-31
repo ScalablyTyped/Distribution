@@ -2,33 +2,33 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkIndexDocumentsParams extends GenericParams {
+trait BulkIndexDocumentsParams
+  extends StObject
+     with GenericParams {
   
-  var _source: js.UndefOr[NameList] = js.native
+  var _source: js.UndefOr[NameList] = js.undefined
   
-  var _sourceExclude: js.UndefOr[NameList] = js.native
+  var _sourceExclude: js.UndefOr[NameList] = js.undefined
   
-  var _sourceInclude: js.UndefOr[NameList] = js.native
+  var _sourceInclude: js.UndefOr[NameList] = js.undefined
   
-  var fields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var pipeline: js.UndefOr[String] = js.native
+  var pipeline: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[Refresh] = js.native
+  var refresh: js.UndefOr[Refresh] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var waitForActiveShards: js.UndefOr[String] = js.native
+  var waitForActiveShards: js.UndefOr[String] = js.undefined
 }
 object BulkIndexDocumentsParams {
   

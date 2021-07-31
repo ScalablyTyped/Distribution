@@ -12,10 +12,13 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cfb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait CFBEntryType extends StObject
@@ -24,31 +27,43 @@ object mod {
   object CFBEntryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CFBEntryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[CFBEntryType & Double] = js.native
     
     @js.native
-    sealed trait lockbytes extends CFBEntryType
-    /* 3 */ val lockbytes: typings.cfb.mod.CFBEntryType.lockbytes with Double = js.native
+    sealed trait lockbytes
+      extends StObject
+         with CFBEntryType
+    /* 3 */ val lockbytes: typings.cfb.mod.CFBEntryType.lockbytes & Double = js.native
     
     @js.native
-    sealed trait property extends CFBEntryType
-    /* 4 */ val property: typings.cfb.mod.CFBEntryType.property with Double = js.native
+    sealed trait property
+      extends StObject
+         with CFBEntryType
+    /* 4 */ val property: typings.cfb.mod.CFBEntryType.property & Double = js.native
     
     @js.native
-    sealed trait root extends CFBEntryType
-    /* 5 */ val root: typings.cfb.mod.CFBEntryType.root with Double = js.native
+    sealed trait root
+      extends StObject
+         with CFBEntryType
+    /* 5 */ val root: typings.cfb.mod.CFBEntryType.root & Double = js.native
     
     @js.native
-    sealed trait storage extends CFBEntryType
-    /* 1 */ val storage: typings.cfb.mod.CFBEntryType.storage with Double = js.native
+    sealed trait storage
+      extends StObject
+         with CFBEntryType
+    /* 1 */ val storage: typings.cfb.mod.CFBEntryType.storage & Double = js.native
     
     @js.native
-    sealed trait stream extends CFBEntryType
-    /* 2 */ val stream: typings.cfb.mod.CFBEntryType.stream with Double = js.native
+    sealed trait stream
+      extends StObject
+         with CFBEntryType
+    /* 2 */ val stream: typings.cfb.mod.CFBEntryType.stream & Double = js.native
     
     @js.native
-    sealed trait unknown extends CFBEntryType
-    /* 0 */ val unknown: typings.cfb.mod.CFBEntryType.unknown with Double = js.native
+    sealed trait unknown
+      extends StObject
+         with CFBEntryType
+    /* 0 */ val unknown: typings.cfb.mod.CFBEntryType.unknown & Double = js.native
   }
   
   @js.native
@@ -58,40 +73,37 @@ object mod {
   object CFBStorageType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CFBStorageType with Double] = js.native
+    def apply(value: Double): js.UndefOr[CFBStorageType & Double] = js.native
     
     @js.native
-    sealed trait fat extends CFBStorageType
-    /* 0 */ val fat: typings.cfb.mod.CFBStorageType.fat with Double = js.native
+    sealed trait fat
+      extends StObject
+         with CFBStorageType
+    /* 0 */ val fat: typings.cfb.mod.CFBStorageType.fat & Double = js.native
     
     @js.native
-    sealed trait minifat extends CFBStorageType
-    /* 1 */ val minifat: typings.cfb.mod.CFBStorageType.minifat with Double = js.native
+    sealed trait minifat
+      extends StObject
+         with CFBStorageType
+    /* 1 */ val minifat: typings.cfb.mod.CFBStorageType.minifat & Double = js.native
   }
   
-  @JSImport("cfb", "find")
-  @js.native
-  def find(cfb: CFBContainer, path: String): CFBEntry | Null = js.native
+  @scala.inline
+  def find(cfb: CFBContainer, path: String): CFBEntry | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(cfb.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[CFBEntry | Null]
   
-  @JSImport("cfb", "parse")
-  @js.native
-  def parse(f: CFBBlob): CFBContainer = js.native
-  @JSImport("cfb", "parse")
-  @js.native
-  def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = js.native
+  @scala.inline
+  def parse(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  @scala.inline
+  def parse(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
-  @JSImport("cfb", "read")
-  @js.native
-  def read(f: String): CFBContainer = js.native
-  @JSImport("cfb", "read")
-  @js.native
-  def read(f: String, options: CFBParsingOptions): CFBContainer = js.native
-  @JSImport("cfb", "read")
-  @js.native
-  def read(f: CFBBlob): CFBContainer = js.native
-  @JSImport("cfb", "read")
-  @js.native
-  def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = js.native
+  @scala.inline
+  def read(f: String): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  @scala.inline
+  def read(f: String, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
+  @scala.inline
+  def read(f: CFBBlob): CFBContainer = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any]).asInstanceOf[CFBContainer]
+  @scala.inline
+  def read(f: CFBBlob, options: CFBParsingOptions): CFBContainer = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(f.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CFBContainer]
   
   @JSImport("cfb", "utils")
   @js.native
@@ -101,25 +113,20 @@ object mod {
   @js.native
   val version: String = js.native
   
-  @JSImport("cfb", "write")
-  @js.native
-  def write(cfb: CFBContainer): js.Any = js.native
-  @JSImport("cfb", "write")
-  @js.native
-  def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = js.native
+  @scala.inline
+  def write(cfb: CFBContainer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def write(cfb: CFBContainer, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(cfb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cfb", "writeFile")
-  @js.native
-  def writeFile(cfb: CFBContainer, filename: String): js.Any = js.native
-  @JSImport("cfb", "writeFile")
-  @js.native
-  def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = js.native
+  @scala.inline
+  def writeFile(cfb: CFBContainer, filename: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def writeFile(cfb: CFBContainer, filename: String, options: CFBWritingOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(cfb.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait CFBAddOpts extends StObject {
     
     /** Skip existence and safety checks (best for bulk write operations) */
-    var unsafe: js.UndefOr[Boolean] = js.native
+    var unsafe: js.UndefOr[Boolean] = js.undefined
   }
   object CFBAddOpts {
     
@@ -142,14 +149,13 @@ object mod {
   
   type CFBBlob = js.Array[Double] | Uint8Array
   
-  @js.native
   trait CFBCommonOptions extends StObject {
     
     /** If true, throw errors when features are not understood */
-    var WTF: js.UndefOr[Boolean] = js.native
+    var WTF: js.UndefOr[Boolean] = js.undefined
     
     /** Data encoding */
-    var `type`: js.UndefOr[base64 | binary | buffer | file | array] = js.native
+    var `type`: js.UndefOr[base64 | binary | buffer | file | array] = js.undefined
   }
   object CFBCommonOptions {
     
@@ -176,17 +182,16 @@ object mod {
     }
   }
   
-  @js.native
   trait CFBContainer extends StObject {
     
     /* Array of entries in the same order as FullPaths */
-    var FileIndex: js.Array[CFBEntry] = js.native
+    var FileIndex: js.Array[CFBEntry]
     
     /* List of streams and storages */
-    var FullPaths: js.Array[String] = js.native
+    var FullPaths: js.Array[String]
     
     /* Raw Content, in chunks (Buffer when available, Array of bytes otherwise) */
-    var raw: js.UndefOr[Header] = js.native
+    var raw: js.UndefOr[Header] = js.undefined
   }
   object CFBContainer {
     
@@ -219,44 +224,43 @@ object mod {
     }
   }
   
-  @js.native
   trait CFBEntry extends StObject {
     
     /** Class ID represented as hex string */
-    var clsid: String = js.native
+    var clsid: String
     
     /** Red/Black Tree color: 0 = red, 1 = black */
-    var color: Double = js.native
+    var color: Double
     
     /** Raw Content (Buffer when available, Array of bytes otherwise) */
-    var content: CFBBlob = js.native
+    var content: CFBBlob
     
     /** Creation Time */
-    var ct: js.UndefOr[Date] = js.native
+    var ct: js.UndefOr[Date] = js.undefined
     
     /** Content Type (used for MAD) */
-    var ctype: js.UndefOr[String] = js.native
+    var ctype: js.UndefOr[String] = js.undefined
     
     /** Modification Time */
-    var mt: js.UndefOr[Date] = js.native
+    var mt: js.UndefOr[Date] = js.undefined
     
     /** Case-sensitive internal name */
-    var name: String = js.native
+    var name: String
     
     /** Data Size */
-    var size: Double = js.native
+    var size: Double
     
     /** Starting Sector */
-    var start: Double = js.native
+    var start: Double
     
     /** User-Defined State Bits */
-    var state: Double = js.native
+    var state: Double
     
     /** Storage location -- see CFB$StorageType */
-    var storage: js.UndefOr[String] = js.native
+    var storage: js.UndefOr[String] = js.undefined
     
     /** CFB type (salient types: stream, storage) -- see CFB$EntryType */
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object CFBEntry {
     
@@ -332,11 +336,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait CFBParsingOptions extends CFBCommonOptions {
+  trait CFBParsingOptions
+    extends StObject
+       with CFBCommonOptions {
     
     /** If true, include raw data in output */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object CFBParsingOptions {
     
@@ -369,7 +374,7 @@ object mod {
     def WarnField(hexstr: String): Unit = js.native
     def WarnField(hexstr: String, fld: String): Unit = js.native
     
-    def bconcat(bufs: js.Array[_]): js.Any = js.native
+    def bconcat(bufs: js.Array[js.Any]): js.Any = js.native
     
     def cfb_add(cfb: CFBContainer, name: String, content: js.Any): CFBEntry = js.native
     def cfb_add(cfb: CFBContainer, name: String, content: js.Any, opts: CFBAddOpts): CFBEntry = js.native
@@ -387,17 +392,18 @@ object mod {
     def prep_blob(blob: js.Any, pos: Double): CFBBlob = js.native
   }
   
-  @js.native
-  trait CFBWritingOptions extends CFBCommonOptions {
+  trait CFBWritingOptions
+    extends StObject
+       with CFBCommonOptions {
     
     /** Enable compression (ZIP only) */
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
     /** Output file type */
-    var fileType: js.UndefOr[typings.cfb.cfbStrings.cfb | zip | mad] = js.native
+    var fileType: js.UndefOr[typings.cfb.cfbStrings.cfb | zip | mad] = js.undefined
     
     /** Override default root entry name (CFB only) */
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
   }
   object CFBWritingOptions {
     

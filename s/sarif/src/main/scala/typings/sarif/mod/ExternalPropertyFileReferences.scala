@@ -2,97 +2,95 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalPropertyFileReferences extends StObject {
   
   /**
     * An array of external property files containing run.addresses arrays to be merged with the root log file.
     */
-  var addresses: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var addresses: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.artifacts arrays to be merged with the root log file.
     */
-  var artifacts: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var artifacts: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An external property file containing a run.conversion object to be merged with the root log file.
     */
-  var conversion: js.UndefOr[ExternalPropertyFileReference] = js.native
+  var conversion: js.UndefOr[ExternalPropertyFileReference] = js.undefined
   
   /**
     * An external property file containing a run.driver object to be merged with the root log file.
     */
-  var driver: js.UndefOr[ExternalPropertyFileReference] = js.native
+  var driver: js.UndefOr[ExternalPropertyFileReference] = js.undefined
   
   /**
     * An array of external property files containing run.extensions arrays to be merged with the root log file.
     */
-  var extensions: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var extensions: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An external property file containing a run.properties object to be merged with the root log file.
     */
-  var externalizedProperties: js.UndefOr[ExternalPropertyFileReference] = js.native
+  var externalizedProperties: js.UndefOr[ExternalPropertyFileReference] = js.undefined
   
   /**
     * An array of external property files containing a run.graphs object to be merged with the root log file.
     */
-  var graphs: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var graphs: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.invocations arrays to be merged with the root log file.
     */
-  var invocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var invocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.logicalLocations arrays to be merged with the root log file.
     */
-  var logicalLocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var logicalLocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.policies arrays to be merged with the root log file.
     */
-  var policies: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var policies: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the external property files.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * An array of external property files containing run.results arrays to be merged with the root log file.
     */
-  var results: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var results: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.taxonomies arrays to be merged with the root log file.
     */
-  var taxonomies: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var taxonomies: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.threadFlowLocations arrays to be merged with the root log
     * file.
     */
-  var threadFlowLocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var threadFlowLocations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.translations arrays to be merged with the root log file.
     */
-  var translations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var translations: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.requests arrays to be merged with the root log file.
     */
-  var webRequests: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var webRequests: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
   
   /**
     * An array of external property files containing run.responses arrays to be merged with the root log file.
     */
-  var webResponses: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.native
+  var webResponses: js.UndefOr[js.Array[ExternalPropertyFileReference]] = js.undefined
 }
 object ExternalPropertyFileReferences {
   

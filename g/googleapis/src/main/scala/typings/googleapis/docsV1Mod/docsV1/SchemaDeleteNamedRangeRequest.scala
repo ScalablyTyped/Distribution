@@ -2,25 +2,23 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a NamedRange.
   */
-@js.native
 trait SchemaDeleteNamedRangeRequest extends StObject {
   
   /**
     * The name of the range(s) to delete. All named ranges with the given name
     * will be deleted.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the named range to delete.
     */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
 }
 object SchemaDeleteNamedRangeRequest {
   

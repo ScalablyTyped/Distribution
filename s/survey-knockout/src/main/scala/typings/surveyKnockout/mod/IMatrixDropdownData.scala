@@ -2,47 +2,45 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMatrixDropdownData extends StObject {
   
-  var columns: js.Array[MatrixDropdownColumn] = js.native
+  var columns: js.Array[MatrixDropdownColumn]
   
-  def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
+  def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question
   
-  def createRowDetailPanel(row: MatrixDropdownRowModelBase): PanelModel = js.native
+  def createRowDetailPanel(row: MatrixDropdownRowModelBase): PanelModel
   
-  def getIsDetailPanelShowing(row: MatrixDropdownRowModelBase): Boolean = js.native
+  def getIsDetailPanelShowing(row: MatrixDropdownRowModelBase): Boolean
   
-  def getLocale(): String = js.native
+  def getLocale(): String
   
-  def getMarkdownHtml(text: String): String = js.native
+  def getMarkdownHtml(text: String): String
   
-  def getProcessedText(text: String): String = js.native
+  def getProcessedText(text: String): String
   
-  def getRowIndex(row: MatrixDropdownRowModelBase): Double = js.native
+  def getRowIndex(row: MatrixDropdownRowModelBase): Double
   
-  def getRowValue(rowIndex: Double): js.Any = js.native
+  def getRowValue(rowIndex: Double): js.Any
   
-  def getSharedQuestionByName(columnName: String, row: MatrixDropdownRowModelBase): Question = js.native
+  def getSharedQuestionByName(columnName: String, row: MatrixDropdownRowModelBase): Question
   
-  def getSurvey(): ISurvey = js.native
+  def getSurvey(): ISurvey
   
-  def hasDetailPanel(row: MatrixDropdownRowModelBase): Boolean = js.native
+  def hasDetailPanel(row: MatrixDropdownRowModelBase): Boolean
   
-  def onRowChanged(row: MatrixDropdownRowModelBase, columnName: String, newRowValue: js.Any, isDeletingValue: Boolean): Unit = js.native
+  def onRowChanged(row: MatrixDropdownRowModelBase, columnName: String, newRowValue: js.Any, isDeletingValue: Boolean): Unit
   
-  def onRowChanging(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): js.Any = js.native
+  def onRowChanging(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): js.Any
   
-  def onTotalValueChanged(): js.Any = js.native
+  def onTotalValueChanged(): js.Any
   
-  def setIsDetailPanelShowing(row: MatrixDropdownRowModelBase, `val`: Boolean): Unit = js.native
+  def setIsDetailPanelShowing(row: MatrixDropdownRowModelBase, `val`: Boolean): Unit
   
-  def validateCell(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): SurveyError = js.native
+  def validateCell(row: MatrixDropdownRowModelBase, columnName: String, rowValue: js.Any): SurveyError
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IMatrixDropdownData {
   

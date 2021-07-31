@@ -11,48 +11,46 @@ import typings.plotlyJs.plotlyJsStrings.symbol
 import typings.plotlyJs.plotlyJsStrings.vecotr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.MapboxLayers> */
-@js.native
 trait PartialMapboxLayers extends StObject {
   
-  var below: js.UndefOr[String] = js.native
+  var below: js.UndefOr[String] = js.undefined
   
-  var circle: js.UndefOr[Radius] = js.native
+  var circle: js.UndefOr[Radius] = js.undefined
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var coordinates: js.UndefOr[Double | String] = js.native
+  var coordinates: js.UndefOr[Double | String] = js.undefined
   
-  var fill: js.UndefOr[Outlinecolor] = js.native
+  var fill: js.UndefOr[Outlinecolor] = js.undefined
   
-  var line: js.UndefOr[PartialShapeLine] = js.native
+  var line: js.UndefOr[PartialShapeLine] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var source: js.UndefOr[Double | String] = js.native
+  var source: js.UndefOr[Double | String] = js.undefined
   
-  var sourceattribution: js.UndefOr[String] = js.native
+  var sourceattribution: js.UndefOr[String] = js.undefined
   
-  var sourcelayer: js.UndefOr[String] = js.native
+  var sourcelayer: js.UndefOr[String] = js.undefined
   
-  var sourcetype: js.UndefOr[geojson | vecotr | raster | image] = js.native
+  var sourcetype: js.UndefOr[geojson | vecotr | raster | image] = js.undefined
   
-  var symbol: js.UndefOr[PartialMapboxSymbol] = js.native
+  var symbol: js.UndefOr[PartialMapboxSymbol] = js.undefined
   
-  var templateitemname: js.UndefOr[String] = js.native
+  var templateitemname: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[circle | line | fill | symbol | raster] = js.native
+  var `type`: js.UndefOr[circle | line | fill | symbol | raster] = js.undefined
   
-  var visible: js.UndefOr[`true`] = js.native
+  var visible: js.UndefOr[`true`] = js.undefined
 }
 object PartialMapboxLayers {
   

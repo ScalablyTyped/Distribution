@@ -2,31 +2,29 @@ package typings.reduxFirstRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationState[TKeys, TState] extends StObject {
   
-  var hasSSR: js.UndefOr[Boolean] = js.native
+  var hasSSR: js.UndefOr[Boolean] = js.undefined
   
-  var history: Nullable[HistoryData] = js.native
+  var history: Nullable[HistoryData]
   
-  var kind: Nullable[String] = js.native
+  var kind: Nullable[String]
   
-  var pathname: String = js.native
+  var pathname: String
   
-  var payload: Payload = js.native
+  var payload: Payload
   
-  var prev: Location = js.native
+  var prev: Location
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var routesMap: RoutesMap[TKeys, TState] = js.native
+  var routesMap: RoutesMap[TKeys, TState]
   
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object LocationState {
   
@@ -44,7 +42,7 @@ object LocationState {
   }
   
   @scala.inline
-  implicit class LocationStateMutableBuilder[Self <: LocationState[_, _], TKeys, TState] (val x: Self with (LocationState[TKeys, TState])) extends AnyVal {
+  implicit class LocationStateMutableBuilder[Self <: LocationState[?, ?], TKeys, TState] (val x: Self & (LocationState[TKeys, TState])) extends AnyVal {
     
     @scala.inline
     def setHasSSR(value: Boolean): Self = StObject.set(x, "hasSSR", value.asInstanceOf[js.Any])

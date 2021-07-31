@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Services.Store
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides response data for a request to purchase an app or product that is offered by the app. */
-@js.native
 trait StorePurchaseResult extends StObject {
   
   /** Gets the error code for the purchase request, if the operation encountered an error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
   
   /** Gets the status of the purchase request. */
-  var status: StorePurchaseStatus = js.native
+  var status: StorePurchaseStatus
 }
 object StorePurchaseResult {
   

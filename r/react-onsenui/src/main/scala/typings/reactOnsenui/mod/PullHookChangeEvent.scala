@@ -5,13 +5,11 @@ import typings.reactOnsenui.reactOnsenuiStrings.initial
 import typings.reactOnsenui.reactOnsenuiStrings.preaction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullHookChangeEvent extends StObject {
   
-  var state: initial | preaction | action = js.native
+  var state: initial | preaction | action
 }
 object PullHookChangeEvent {
   

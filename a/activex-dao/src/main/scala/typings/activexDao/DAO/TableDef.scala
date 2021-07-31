@@ -3,7 +3,6 @@ package typings.activexDao.DAO
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,43 +15,33 @@ trait TableDef extends StObject {
   var Connect: String = js.native
   
   def CreateField(): Field = js.native
-  def CreateField(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Size: Double): Field = js.native
-  def CreateField(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Field = js.native
-  def CreateField(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Size: Double): Field = js.native
   def CreateField(Name: String): Field = js.native
-  def CreateField(Name: String, Type: js.UndefOr[scala.Nothing], Size: Double): Field = js.native
+  def CreateField(Name: String, Type: Unit, Size: Double): Field = js.native
   def CreateField(Name: String, Type: DataTypeEnum): Field = js.native
   def CreateField(Name: String, Type: DataTypeEnum, Size: Double): Field = js.native
+  def CreateField(Name: Unit, Type: Unit, Size: Double): Field = js.native
+  def CreateField(Name: Unit, Type: DataTypeEnum): Field = js.native
+  def CreateField(Name: Unit, Type: DataTypeEnum, Size: Double): Field = js.native
   
   def CreateIndex(): Index = js.native
   def CreateIndex(Name: String): Index = js.native
   
   def CreateProperty(): Property = js.native
-  def CreateProperty(
-    Name: js.UndefOr[scala.Nothing],
-    Type: js.UndefOr[scala.Nothing],
-    Value: js.UndefOr[scala.Nothing],
-    DDL: Boolean
-  ): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
-  def CreateProperty(
-    Name: js.UndefOr[scala.Nothing],
-    Type: DataTypeEnum,
-    Value: js.UndefOr[scala.Nothing],
-    DDL: Boolean
-  ): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
   @JSName("DAO.TableDef_typekey")
   var DAODotTableDef_typekey: TableDef = js.native
@@ -74,7 +63,7 @@ trait TableDef extends StObject {
   var Name: String = js.native
   
   def OpenRecordset(): Recordset = js.native
-  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(Type: Unit, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   

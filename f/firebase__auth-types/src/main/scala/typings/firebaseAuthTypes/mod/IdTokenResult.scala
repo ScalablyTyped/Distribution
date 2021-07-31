@@ -3,25 +3,23 @@ package typings.firebaseAuthTypes.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdTokenResult extends StObject {
   
-  var authTime: String = js.native
+  var authTime: String
   
-  var claims: StringDictionary[js.Any] = js.native
+  var claims: StringDictionary[js.Any]
   
-  var expirationTime: String = js.native
+  var expirationTime: String
   
-  var issuedAtTime: String = js.native
+  var issuedAtTime: String
   
-  var signInProvider: String | Null = js.native
+  var signInProvider: String | Null
   
-  var signInSecondFactor: String | Null = js.native
+  var signInSecondFactor: String | Null
   
-  var token: String = js.native
+  var token: String
 }
 object IdTokenResult {
   
@@ -33,7 +31,7 @@ object IdTokenResult {
     issuedAtTime: String,
     token: String
   ): IdTokenResult = {
-    val __obj = js.Dynamic.literal(authTime = authTime.asInstanceOf[js.Any], claims = claims.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], issuedAtTime = issuedAtTime.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authTime = authTime.asInstanceOf[js.Any], claims = claims.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], issuedAtTime = issuedAtTime.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], signInProvider = null, signInSecondFactor = null)
     __obj.asInstanceOf[IdTokenResult]
   }
   

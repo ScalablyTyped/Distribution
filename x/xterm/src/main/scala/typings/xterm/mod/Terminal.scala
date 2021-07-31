@@ -55,7 +55,6 @@ import typings.xterm.xtermStrings.windowsMode
 import typings.xterm.xtermStrings.wordSeparator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xterm", "Terminal")
@@ -65,7 +64,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @param options An object containing a set of options.
   */
-class Terminal () extends IDisposable {
+class Terminal ()
+  extends StObject
+     with IDisposable {
   def this(options: ITerminalOptions) = this()
   
   /**
@@ -127,6 +128,9 @@ class Terminal () extends IDisposable {
     * @param matcherId The link matcher's ID (returned after register)
     */
   def deregisterLinkMatcher(matcherId: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
   
   /**
     * The element containing the terminal.
@@ -251,7 +255,7 @@ class Terminal () extends IDisposable {
     * binary data, e.g. `pty.write(Buffer.from(data, 'binary'))`.
     * @returns an `IDisposable` to stop listening.
     */
-  def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onBinary(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a binary event fires. This is used to
     * enable non UTF-8 conformant binary messages to be sent to the backend.
@@ -268,7 +272,7 @@ class Terminal () extends IDisposable {
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
     */
-  def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onCursorMove(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for the cursor moves.
     * @returns an `IDisposable` to stop listening.
@@ -283,7 +287,7 @@ class Terminal () extends IDisposable {
     * on to the backing pty.
     * @returns an `IDisposable` to stop listening.
     */
-  def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onData(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a data event fires. This happens for
     * example when the user types or pastes into the terminal. The event value
@@ -300,7 +304,7 @@ class Terminal () extends IDisposable {
     * triggered it.
     * @returns an `IDisposable` to stop listening.
     */
-  def onKey(listener: js.Function2[/* arg1 */ DomEvent, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onKey(listener: js.Function2[/* arg1 */ DomEvent, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a key is pressed. The event value contains the
     * string that will be sent in the data event as well as the DOM event that
@@ -314,7 +318,7 @@ class Terminal () extends IDisposable {
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
     */
-  def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onLineFeed(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a line feed is added.
     * @returns an `IDisposable` to stop listening.
@@ -328,7 +332,7 @@ class Terminal () extends IDisposable {
     * to `Terminal.rows - 1`).
     * @returns an `IDisposable` to stop listening.
     */
-  def onRender(listener: js.Function2[/* arg1 */ End, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onRender(listener: js.Function2[/* arg1 */ End, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when rows are rendered. The event value
     * contains the start row and end rows of the rendered area (ranges from `0`
@@ -343,7 +347,7 @@ class Terminal () extends IDisposable {
     * contains the new size.
     * @returns an `IDisposable` to stop listening.
     */
-  def onResize(listener: js.Function2[/* arg1 */ Cols, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onResize(listener: js.Function2[/* arg1 */ Cols, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when the terminal is resized. The event value
     * contains the new size.
@@ -357,7 +361,7 @@ class Terminal () extends IDisposable {
     * new position of the viewport.
     * @returns an `IDisposable` to stop listening.
     */
-  def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onScroll(listener: js.Function2[/* arg1 */ Double, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a scroll occurs. The event value is the
     * new position of the viewport.
@@ -370,7 +374,7 @@ class Terminal () extends IDisposable {
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
     */
-  def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onSelectionChange(listener: js.Function2[/* arg1 */ Unit, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when a selection change occurs.
     * @returns an `IDisposable` to stop listening.
@@ -383,7 +387,7 @@ class Terminal () extends IDisposable {
     * The event value is the new title.
     * @returns an `IDisposable` to stop listening.
     */
-  def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, _]): IDisposable = js.native
+  def onTitleChange(listener: js.Function2[/* arg1 */ String, /* arg2 */ Unit, js.Any]): IDisposable = js.native
   /**
     * Adds an event listener for when an OSC 0 or OSC 2 title change occurs.
     * The event value is the new title.

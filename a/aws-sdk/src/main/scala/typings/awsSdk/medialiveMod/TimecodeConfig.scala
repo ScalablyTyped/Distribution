@@ -2,10 +2,8 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimecodeConfig extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait TimecodeConfig extends StObject {
   -System Clock (systemclock): Use the UTC time.
   -Start at 0 (zerobased): The time of the first frame of the event will be 00:00:00:00.
     */
-  var Source: TimecodeConfigSource = js.native
+  var Source: TimecodeConfigSource
   
   /**
     * Threshold in frames beyond which output timecode is resynchronized to the input timecode. Discrepancies below this threshold are permitted to avoid unnecessary discontinuities in the output timecode. No timecode sync when this is not specified.
     */
-  var SyncThreshold: js.UndefOr[integerMin1Max1000000] = js.native
+  var SyncThreshold: js.UndefOr[integerMin1Max1000000] = js.undefined
 }
 object TimecodeConfig {
   

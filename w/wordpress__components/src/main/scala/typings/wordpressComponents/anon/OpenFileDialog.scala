@@ -2,13 +2,11 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenFileDialog extends StObject {
   
-  def openFileDialog(): Unit = js.native
+  def openFileDialog(): Unit
 }
 object OpenFileDialog {
   

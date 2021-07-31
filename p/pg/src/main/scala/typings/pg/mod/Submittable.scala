@@ -2,13 +2,11 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Submittable extends StObject {
   
-  def submit(connection: Connection): Unit = js.native
+  def submit(connection: Connection): Unit
 }
 object Submittable {
   

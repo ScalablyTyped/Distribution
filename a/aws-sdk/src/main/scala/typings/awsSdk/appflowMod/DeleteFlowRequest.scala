@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFlowRequest extends StObject {
   
   /**
     *  The specified name of the flow. Spaces are not allowed. Use underscores (_) or hyphens (-) only. 
     */
-  var flowName: FlowName = js.native
+  var flowName: FlowName
   
   /**
     *  Indicates whether Amazon AppFlow should delete the flow, even if it is currently in use. 
     */
-  var forceDelete: js.UndefOr[Boolean] = js.native
+  var forceDelete: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteFlowRequest {
   

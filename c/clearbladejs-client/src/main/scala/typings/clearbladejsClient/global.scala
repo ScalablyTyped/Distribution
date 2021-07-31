@@ -3,7 +3,6 @@ package typings.clearbladejsClient
 import typings.clearbladejsClient.CbClient.ClearBladeGlobal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -25,13 +24,13 @@ object global {
     object MessagingQOS extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.clearbladejsClient.CbClient.MessagingQOS with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.clearbladejsClient.CbClient.MessagingQOS & Double] = js.native
       
-      /* 1 */ val MESSAGING_QOS_AT_LEAST_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_LEAST_ONCE with Double = js.native
+      /* 1 */ val MESSAGING_QOS_AT_LEAST_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_LEAST_ONCE & Double = js.native
       
-      /* 0 */ val MESSAGING_QOS_AT_MOST_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_MOST_ONCE with Double = js.native
+      /* 0 */ val MESSAGING_QOS_AT_MOST_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_AT_MOST_ONCE & Double = js.native
       
-      /* 2 */ val MESSAGING_QOS_EXACTLY_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE with Double = js.native
+      /* 2 */ val MESSAGING_QOS_EXACTLY_ONCE: typings.clearbladejsClient.CbClient.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE & Double = js.native
     }
     
     @JSGlobal("CbClient.QueryConditions")
@@ -39,21 +38,21 @@ object global {
     object QueryConditions extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QueryConditions with String] = js.native
+      def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QueryConditions & String] = js.native
       
-      /* "EQ" */ val QUERY_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_EQUAL with String = js.native
+      /* "EQ" */ val QUERY_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_EQUAL & String = js.native
       
-      /* "GT" */ val QUERY_GREATERTHAN: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_GREATERTHAN with String = js.native
+      /* "GT" */ val QUERY_GREATERTHAN: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_GREATERTHAN & String = js.native
       
-      /* "GTE" */ val QUERY_GREATERTHAN_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_GREATERTHAN_EQUAL with String = js.native
+      /* "GTE" */ val QUERY_GREATERTHAN_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_GREATERTHAN_EQUAL & String = js.native
       
-      /* "LT" */ val QUERY_LESSTHAN: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_LESSTHAN with String = js.native
+      /* "LT" */ val QUERY_LESSTHAN: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_LESSTHAN & String = js.native
       
-      /* "LTE" */ val QUERY_LESSTHAN_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_LESSTHAN_EQUAL with String = js.native
+      /* "LTE" */ val QUERY_LESSTHAN_EQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_LESSTHAN_EQUAL & String = js.native
       
-      /* "RE" */ val QUERY_MATCHES: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_MATCHES with String = js.native
+      /* "RE" */ val QUERY_MATCHES: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_MATCHES & String = js.native
       
-      /* "NEQ" */ val QUERY_NOTEQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_NOTEQUAL with String = js.native
+      /* "NEQ" */ val QUERY_NOTEQUAL: typings.clearbladejsClient.CbClient.QueryConditions.QUERY_NOTEQUAL & String = js.native
     }
     
     @JSGlobal("CbClient.QuerySortDirections")
@@ -61,11 +60,11 @@ object global {
     object QuerySortDirections extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QuerySortDirections with String] = js.native
+      def apply(value: String): js.UndefOr[typings.clearbladejsClient.CbClient.QuerySortDirections & String] = js.native
       
-      /* "ASC" */ val QUERY_SORT_ASCENDING: typings.clearbladejsClient.CbClient.QuerySortDirections.QUERY_SORT_ASCENDING with String = js.native
+      /* "ASC" */ val QUERY_SORT_ASCENDING: typings.clearbladejsClient.CbClient.QuerySortDirections.QUERY_SORT_ASCENDING & String = js.native
       
-      /* "DESC" */ val QUERY_SORT_DESCENDING: typings.clearbladejsClient.CbClient.QuerySortDirections.QUERY_SORT_DESCENDING with String = js.native
+      /* "DESC" */ val QUERY_SORT_DESCENDING: typings.clearbladejsClient.CbClient.QuerySortDirections.QUERY_SORT_DESCENDING & String = js.native
     }
   }
   

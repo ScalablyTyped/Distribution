@@ -2,19 +2,17 @@ package typings.actionsOnGoogle.apiV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartHomeV1SyncPayload extends StObject {
   
-  var agentUserId: js.UndefOr[String] = js.native
+  var agentUserId: js.UndefOr[String] = js.undefined
   
-  var debugString: js.UndefOr[String] = js.native
+  var debugString: js.UndefOr[String] = js.undefined
   
-  var devices: js.Array[SmartHomeV1SyncDevices] = js.native
+  var devices: js.Array[SmartHomeV1SyncDevices]
   
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
 }
 object SmartHomeV1SyncPayload {
   

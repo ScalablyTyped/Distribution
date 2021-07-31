@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingMaintenanceActionsMessage extends StObject {
   
   /**
     *  An optional pagination token provided by a previous DescribePendingMaintenanceActions request. If this parameter is specified, the response includes only records beyond the marker, up to a number of records specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the pending maintenance actions for the resource.
     */
-  var PendingMaintenanceActions: js.UndefOr[typings.awsSdk.neptuneMod.PendingMaintenanceActions] = js.native
+  var PendingMaintenanceActions: js.UndefOr[typings.awsSdk.neptuneMod.PendingMaintenanceActions] = js.undefined
 }
 object PendingMaintenanceActionsMessage {
   

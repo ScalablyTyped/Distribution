@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3OrderContents extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleActionsOrdersV3OrderContents extends StObject {
     * At least 1 line_item is required and at-most 50 is allowed.
     * All line items must belong to same vertical.
     */
-  var lineItems: js.UndefOr[js.Array[GoogleActionsOrdersV3LineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[GoogleActionsOrdersV3LineItem]] = js.undefined
 }
 object GoogleActionsOrdersV3OrderContents {
   

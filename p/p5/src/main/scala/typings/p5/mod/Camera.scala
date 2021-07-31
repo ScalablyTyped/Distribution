@@ -2,10 +2,8 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Camera extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Camera extends StObject {
     *   equivalent to calling camera() on a p5.Camera
     *   object.
     */
-  def camera(): Unit = js.native
+  def camera(): Unit
   
   /**
     *   Reorients the camera to look at a position in
@@ -22,7 +20,7 @@ trait Camera extends StObject {
     *   @param y y position of a point in world space
     *   @param z z position of a point in world space
     */
-  def lookAt(x: Double, y: Double, z: Double): Unit = js.native
+  def lookAt(x: Double, y: Double, z: Double): Unit
   
   /**
     *   Move camera along its local axes while maintaining
@@ -34,14 +32,14 @@ trait Camera extends StObject {
     *   @param z amount to move along camera's
     *   forward-backward axis
     */
-  def move(x: Double, y: Double, z: Double): Unit = js.native
+  def move(x: Double, y: Double, z: Double): Unit
   
   /**
     *   Sets an orthographic projection for a p5.Camera
     *   object and sets parameters for that projection
     *   according to ortho() syntax.
     */
-  def ortho(): Unit = js.native
+  def ortho(): Unit
   
   /**
     *   Panning rotates the camera view to the left and
@@ -50,14 +48,14 @@ trait Camera extends StObject {
     *   angleMode units. Greater than 0 values rotate
     *   counterclockwise (to the left).
     */
-  def pan(angle: Double): Unit = js.native
+  def pan(angle: Double): Unit
   
   /**
     *   Sets a perspective projection for a p5.Camera
     *   object and sets parameters for that projection
     *   according to perspective() syntax.
     */
-  def perspective(): Unit = js.native
+  def perspective(): Unit
   
   /**
     *   Set camera position in world-space while
@@ -66,7 +64,7 @@ trait Camera extends StObject {
     *   @param y y position of a point in world space
     *   @param z z position of a point in world space
     */
-  def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+  def setPosition(x: Double, y: Double, z: Double): Unit
   
   /**
     *   Tilting rotates the camera view up and down.
@@ -74,7 +72,7 @@ trait Camera extends StObject {
     *   angleMode units. Greater than 0 values rotate
     *   counterclockwise (to the left).
     */
-  def tilt(angle: Double): Unit = js.native
+  def tilt(angle: Double): Unit
 }
 object Camera {
   

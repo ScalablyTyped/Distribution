@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemPreviewInfo extends StObject {
   
-  var getUrl: js.UndefOr[NullableOption[String]] = js.native
+  var getUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var postParameters: js.UndefOr[NullableOption[String]] = js.native
+  var postParameters: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var postUrl: js.UndefOr[NullableOption[String]] = js.native
+  var postUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ItemPreviewInfo {
   

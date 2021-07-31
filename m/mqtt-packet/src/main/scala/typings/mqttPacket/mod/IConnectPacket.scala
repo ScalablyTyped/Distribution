@@ -11,40 +11,39 @@ import typings.mqttPacket.mqttPacketStrings.connect
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConnectPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
-  var clean: js.UndefOr[Boolean] = js.native
+  var clean: js.UndefOr[Boolean] = js.undefined
   
-  var clientId: String = js.native
+  var clientId: String
   
   @JSName("cmd")
-  var cmd_IConnectPacket: connect = js.native
+  var cmd_IConnectPacket: connect
   
-  var keepalive: js.UndefOr[Double] = js.native
+  var keepalive: js.UndefOr[Double] = js.undefined
   
-  var password: js.UndefOr[Buffer] = js.native
+  var password: js.UndefOr[Buffer] = js.undefined
   
-  var properties: js.UndefOr[AuthenticationData] = js.native
+  var properties: js.UndefOr[AuthenticationData] = js.undefined
   
-  var protocolId: js.UndefOr[MQTT | MQIsdp] = js.native
+  var protocolId: js.UndefOr[MQTT | MQIsdp] = js.undefined
   
-  var protocolVersion: js.UndefOr[`4` | `5` | `3`] = js.native
+  var protocolVersion: js.UndefOr[`4` | `5` | `3`] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var will: js.UndefOr[Payload] = js.native
+  var will: js.UndefOr[Payload] = js.undefined
 }
 object IConnectPacket {
   
   @scala.inline
-  def apply(clientId: String, cmd: connect): IConnectPacket = {
-    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = cmd.asInstanceOf[js.Any])
+  def apply(clientId: String): IConnectPacket = {
+    val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], cmd = "connect")
     __obj.asInstanceOf[IConnectPacket]
   }
   

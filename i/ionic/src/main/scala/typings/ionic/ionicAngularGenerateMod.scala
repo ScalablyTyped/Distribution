@@ -1,12 +1,16 @@
 package typings.ionic
 
+import typings.ionic.definitionsMod.IConfig
+import typings.ionic.definitionsMod.ILogger
+import typings.ionic.definitionsMod.IShell
 import typings.ionic.definitionsMod.IonicAngularGenerateOptions
+import typings.ionic.definitionsMod.IonicContext
 import typings.ionic.ionicAngularMod.IonicAngularProject
 import typings.ionic.libGenerateMod.GenerateRunner
 import typings.ionic.libGenerateMod.GenerateRunnerDeps
+import typings.ionicCliFrameworkPrompts.mod.PromptModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicAngularGenerateMod {
@@ -19,15 +23,38 @@ object ionicAngularGenerateMod {
     @JSName("e")
     val e_IonicAngularGenerateRunner: IonicAngularGenerateRunnerDeps = js.native
     
-    def getModules(context: js.Any, kind: String): js.Promise[_] = js.native
+    def getModules(context: js.Any, kind: String): js.Promise[js.Any] = js.native
     
     def tabsPrompt(): js.Promise[js.Array[String]] = js.native
   }
   
-  @js.native
-  trait IonicAngularGenerateRunnerDeps extends GenerateRunnerDeps {
+  trait IonicAngularGenerateRunnerDeps
+    extends StObject
+       with GenerateRunnerDeps {
     
     @JSName("project")
-    val project_IonicAngularGenerateRunnerDeps: IonicAngularProject = js.native
+    val project_IonicAngularGenerateRunnerDeps: IonicAngularProject
+  }
+  object IonicAngularGenerateRunnerDeps {
+    
+    @scala.inline
+    def apply(
+      config: IConfig,
+      ctx: IonicContext,
+      log: ILogger,
+      project: IonicAngularProject,
+      prompt: PromptModule,
+      shell: IShell
+    ): IonicAngularGenerateRunnerDeps = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IonicAngularGenerateRunnerDeps]
+    }
+    
+    @scala.inline
+    implicit class IonicAngularGenerateRunnerDepsMutableBuilder[Self <: IonicAngularGenerateRunnerDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setProject(value: IonicAngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    }
   }
 }

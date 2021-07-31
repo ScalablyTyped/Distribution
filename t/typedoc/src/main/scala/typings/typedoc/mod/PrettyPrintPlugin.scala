@@ -4,7 +4,6 @@ import typings.typedoc.anon.Area
 import typings.typedoc.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "PrettyPrintPlugin")

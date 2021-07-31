@@ -2,41 +2,39 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionConfiguration extends StObject {
   
   /**
     * A list of DBSecurityGroupMembership name strings used for this option.
     */
-  var DBSecurityGroupMemberships: js.UndefOr[DBSecurityGroupNameList] = js.native
+  var DBSecurityGroupMemberships: js.UndefOr[DBSecurityGroupNameList] = js.undefined
   
   /**
     * The configuration of options to include in a group.
     */
-  var OptionName: String = js.native
+  var OptionName: String
   
   /**
     * The option settings to include in an option group.
     */
-  var OptionSettings: js.UndefOr[OptionSettingsList] = js.native
+  var OptionSettings: js.UndefOr[OptionSettingsList] = js.undefined
   
   /**
     * The version for the option.
     */
-  var OptionVersion: js.UndefOr[String] = js.native
+  var OptionVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The optional port for the option.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A list of VpcSecurityGroupMembership name strings used for this option.
     */
-  var VpcSecurityGroupMemberships: js.UndefOr[VpcSecurityGroupIdList] = js.native
+  var VpcSecurityGroupMemberships: js.UndefOr[VpcSecurityGroupIdList] = js.undefined
 }
 object OptionConfiguration {
   

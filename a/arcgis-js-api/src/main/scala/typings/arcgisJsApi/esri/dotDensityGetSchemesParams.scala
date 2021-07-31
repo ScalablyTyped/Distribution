@@ -6,32 +6,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait dotDensityGetSchemesParams extends Object {
+trait dotDensityGetSchemesParams
+  extends StObject
+     with Object {
   
   /**
     * The Esri basemap to pair with the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * If you have a non-Esri basemap (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
     */
-  var basemapTheme: js.UndefOr[light | dark] = js.native
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
     * The number of colors to visualize.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-dotDensity.html#getSchemes)
     */
-  var numColors: Double = js.native
+  var numColors: Double
 }
 object dotDensityGetSchemesParams {
   

@@ -3,7 +3,6 @@ package typings.bootstrapV3Datetimepicker
 import typings.bootstrapV3Datetimepicker.mod.EventName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapV3DatetimepickerStrings {
@@ -44,17 +43,23 @@ object bootstrapV3DatetimepickerStrings {
   def dpDotchange: dpDotchange = "dp.change".asInstanceOf[dpDotchange]
   
   @js.native
-  sealed trait dpDoterror extends EventName
+  sealed trait dpDoterror
+    extends StObject
+       with EventName
   @scala.inline
   def dpDoterror: dpDoterror = "dp.error".asInstanceOf[dpDoterror]
   
   @js.native
-  sealed trait dpDothide extends EventName
+  sealed trait dpDothide
+    extends StObject
+       with EventName
   @scala.inline
   def dpDothide: dpDothide = "dp.hide".asInstanceOf[dpDothide]
   
   @js.native
-  sealed trait dpDotshow extends EventName
+  sealed trait dpDotshow
+    extends StObject
+       with EventName
   @scala.inline
   def dpDotshow: dpDotshow = "dp.show".asInstanceOf[dpDotshow]
   

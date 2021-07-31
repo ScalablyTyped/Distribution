@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyBroadcaster
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a data pilot table on a spreadsheet. */
-@js.native
 trait DataPilotTable
-  extends XDataPilotDescriptor
+  extends StObject
+     with XDataPilotDescriptor
      with XDataPilotTable
      with XModifyBroadcaster
 object DataPilotTable {

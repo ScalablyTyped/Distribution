@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SnapshotClone[T] extends Generic {
+trait SnapshotClone[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var repository: String = js.native
+  var repository: String
   
-  var snapshot: String = js.native
+  var snapshot: String
   
-  var target_snapshot: String = js.native
+  var target_snapshot: String
 }
 object SnapshotClone {
   
@@ -27,7 +27,7 @@ object SnapshotClone {
   }
   
   @scala.inline
-  implicit class SnapshotCloneMutableBuilder[Self <: SnapshotClone[_], T] (val x: Self with SnapshotClone[T]) extends AnyVal {
+  implicit class SnapshotCloneMutableBuilder[Self <: SnapshotClone[?], T] (val x: Self & SnapshotClone[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

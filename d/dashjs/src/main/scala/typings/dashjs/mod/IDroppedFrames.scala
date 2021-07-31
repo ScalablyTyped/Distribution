@@ -3,15 +3,13 @@ package typings.dashjs.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDroppedFrames extends StObject {
   
-  var droppedFrames: Double = js.native
+  var droppedFrames: Double
   
-  var time: Date = js.native
+  var time: Date
 }
 object IDroppedFrames {
   

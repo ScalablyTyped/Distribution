@@ -2,50 +2,48 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceEnvelope extends StObject {
   
-  var addDemoStamp: js.UndefOr[Boolean] = js.native
+  var addDemoStamp: js.UndefOr[Boolean] = js.undefined
   
-  var allowMultipleAttachments: js.UndefOr[Boolean] = js.native
+  var allowMultipleAttachments: js.UndefOr[Boolean] = js.undefined
   
-  var burnDefaultTabData: js.UndefOr[Boolean] = js.native
+  var burnDefaultTabData: js.UndefOr[Boolean] = js.undefined
   
   var convertPdfFields: js.UndefOr[
     /*Boolean that specifies whether to enable PDF form fields to
     get converted to DocuSign secure fields when the document is added or
     uploaded to an envelope.*/ Boolean
-  ] = js.native
+  ] = js.undefined
   
   var envelopeId: js.UndefOr[
     /*The envelope's GUID. \n\nExample: `93be49ab-afa0-4adf-933c-f752070d71ec` */ String
-  ] = js.native
+  ] = js.undefined
   
-  var envelopeType: js.UndefOr[String] = js.native
+  var envelopeType: js.UndefOr[String] = js.undefined
   
-  var includeSigsBeforeComplete: js.UndefOr[Boolean] = js.native
+  var includeSigsBeforeComplete: js.UndefOr[Boolean] = js.undefined
   
-  var isConcatMode: js.UndefOr[Boolean] = js.native
+  var isConcatMode: js.UndefOr[Boolean] = js.undefined
   
-  var isEnvelopeIDStampingEnabled: js.UndefOr[Boolean] = js.native
+  var isEnvelopeIDStampingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var pdfFormConversionFontScale100: js.UndefOr[Boolean] = js.native
+  var pdfFormConversionFontScale100: js.UndefOr[Boolean] = js.undefined
   
-  var shouldFlatten: js.UndefOr[Boolean] = js.native
+  var shouldFlatten: js.UndefOr[Boolean] = js.undefined
   
-  var showEnvelopeChanges: js.UndefOr[Boolean] = js.native
+  var showEnvelopeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var signOnline: js.UndefOr[Boolean] = js.native
+  var signOnline: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[/*The status of the item. */ String] = js.native
+  var status: js.UndefOr[/*The status of the item. */ String] = js.undefined
   
   var userId: js.UndefOr[
     /*The ID of the user to access. Generally this is the ID of the current authenticated user, but if the authenticated user is an Administrator on the account,
     `userId` can represent another user whom the Administrator is accessing. */ String
-  ] = js.native
+  ] = js.undefined
 }
 object DisplayApplianceEnvelope {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketStatisticsResponse extends StObject {
   
   /**
     * The total number of buckets.
     */
-  var bucketCount: js.UndefOr[long] = js.native
+  var bucketCount: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of buckets that are publicly accessible based on a combination of permissions settings for each bucket.
     */
-  var bucketCountByEffectivePermission: js.UndefOr[BucketCountByEffectivePermission] = js.native
+  var bucketCountByEffectivePermission: js.UndefOr[BucketCountByEffectivePermission] = js.undefined
   
   /**
     * The total number of buckets, grouped by server-side encryption type. This object also reports the total number of buckets that don't encrypt objects by default.
     */
-  var bucketCountByEncryptionType: js.UndefOr[BucketCountByEncryptionType] = js.native
+  var bucketCountByEncryptionType: js.UndefOr[BucketCountByEncryptionType] = js.undefined
   
   /**
     * The total number of buckets that are shared with another AWS account.
     */
-  var bucketCountBySharedAccessType: js.UndefOr[BucketCountBySharedAccessType] = js.native
+  var bucketCountBySharedAccessType: js.UndefOr[BucketCountBySharedAccessType] = js.undefined
   
   /**
     * The total number of objects that Amazon Macie can analyze in the buckets. These objects use a supported storage class and have a file name extension for a supported file or storage format.
     */
-  var classifiableObjectCount: js.UndefOr[long] = js.native
+  var classifiableObjectCount: js.UndefOr[long] = js.undefined
   
   /**
     * The total storage size, in bytes, of all the objects that Amazon Macie can analyze in the buckets. These objects use a supported storage class and have a file name extension for a supported file or storage format.
     */
-  var classifiableSizeInBytes: js.UndefOr[long] = js.native
+  var classifiableSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently retrieved data about the buckets from Amazon S3.
     */
-  var lastUpdated: js.UndefOr[timestampIso8601] = js.native
+  var lastUpdated: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The total number of objects in the buckets.
     */
-  var objectCount: js.UndefOr[long] = js.native
+  var objectCount: js.UndefOr[long] = js.undefined
   
   /**
     * The total storage size, in bytes, of the buckets.
     */
-  var sizeInBytes: js.UndefOr[long] = js.native
+  var sizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The total compressed storage size, in bytes, of the buckets.
     */
-  var sizeInBytesCompressed: js.UndefOr[long] = js.native
+  var sizeInBytesCompressed: js.UndefOr[long] = js.undefined
   
   /**
     * The total number of objects that Amazon Macie can't analyze in the buckets. These objects don't use a supported storage class or don't have a file name extension for a supported file or storage format.
     */
-  var unclassifiableObjectCount: js.UndefOr[ObjectLevelStatistics] = js.native
+  var unclassifiableObjectCount: js.UndefOr[ObjectLevelStatistics] = js.undefined
   
   /**
     * The total storage size, in bytes, of all the objects that Amazon Macie can't analyze in the buckets. These objects don't use a supported storage class or don't have a file name extension for a supported file or storage format.
     */
-  var unclassifiableObjectSizeInBytes: js.UndefOr[ObjectLevelStatistics] = js.native
+  var unclassifiableObjectSizeInBytes: js.UndefOr[ObjectLevelStatistics] = js.undefined
 }
 object GetBucketStatisticsResponse {
   

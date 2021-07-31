@@ -3,18 +3,16 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.panelBaseMod.PanelVisibilityState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/Panel/Panel.base.IPanelState> */
-@js.native
 trait ReadonlyIPanelState extends StObject {
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  val isFooterSticky: js.UndefOr[Boolean] = js.native
+  val isFooterSticky: js.UndefOr[Boolean] = js.undefined
   
-  val visibility: PanelVisibilityState = js.native
+  val visibility: PanelVisibilityState
 }
 object ReadonlyIPanelState {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppRequest extends StObject {
   
   /**
     * The ID of the application.
     */
-  var appId: js.UndefOr[AppId] = js.native
+  var appId: js.UndefOr[AppId] = js.undefined
   
   /**
     * The new description of the application.
     */
-  var description: js.UndefOr[AppDescription] = js.native
+  var description: js.UndefOr[AppDescription] = js.undefined
   
   /**
     * The new name of the application.
     */
-  var name: js.UndefOr[AppName] = js.native
+  var name: js.UndefOr[AppName] = js.undefined
   
   /**
     * The name of the service role in the customer's account used by AWS SMS.
     */
-  var roleName: js.UndefOr[RoleName] = js.native
+  var roleName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * The server groups in the application to update.
     */
-  var serverGroups: js.UndefOr[ServerGroups] = js.native
+  var serverGroups: js.UndefOr[ServerGroups] = js.undefined
   
   /**
     * The tags to associate with the application.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object UpdateAppRequest {
   

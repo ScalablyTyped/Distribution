@@ -10,9 +10,9 @@ Fast implementation of JSON-Patch (RFC-6902) with duplex (observe changes) capab
 | ------------------ | :-------------: |
 | Full name          | fast-json-patch |
 | Keywords           | json, patch, http, rest |
-| # releases         | 7 |
-| # dependents       | 227 |
-| # downloads        | 15870872 |
+| # releases         | 6 |
+| # dependents       | 250 |
+| # downloads        | 24279870 |
 | # stars            | 22 |
 
 ## Links

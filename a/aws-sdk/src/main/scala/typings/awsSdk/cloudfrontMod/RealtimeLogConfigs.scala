@@ -2,36 +2,34 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealtimeLogConfigs extends StObject {
   
   /**
     * A flag that indicates whether there are more real-time log configurations than are contained in this list.
     */
-  var IsTruncated: Boolean = js.native
+  var IsTruncated: Boolean
   
   /**
     * Contains the list of real-time log configurations.
     */
-  var Items: js.UndefOr[RealtimeLogConfigList] = js.native
+  var Items: js.UndefOr[RealtimeLogConfigList] = js.undefined
   
   /**
     * This parameter indicates where this list of real-time log configurations begins. This list includes real-time log configurations that occur after the marker.
     */
-  var Marker: String = js.native
+  var Marker: String
   
   /**
     * The maximum number of real-time log configurations requested.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If there are more items in the list than are in this response, this element is present. It contains the value that you should use in the Marker field of a subsequent request to continue listing real-time log configurations where you left off. 
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
 }
 object RealtimeLogConfigs {
   

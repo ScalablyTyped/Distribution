@@ -4,21 +4,19 @@ import typings.antdMobileRn.antdMobileRnStrings.large
 import typings.antdMobileRn.antdMobileRnStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activityIndicatorPropsTypeMod {
   
-  @js.native
   trait ActivityIndicatorPropTypes extends StObject {
     
-    var animating: js.UndefOr[Boolean] = js.native
+    var animating: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var toast: js.UndefOr[Boolean] = js.native
+    var toast: js.UndefOr[Boolean] = js.undefined
   }
   object ActivityIndicatorPropTypes {
     

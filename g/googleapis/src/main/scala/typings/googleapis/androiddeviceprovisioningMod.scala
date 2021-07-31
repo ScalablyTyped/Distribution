@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object androiddeviceprovisioningMod {
+  
+  @JSImport("googleapis/build/src/apis/androiddeviceprovisioning", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -47,12 +50,11 @@ object androiddeviceprovisioningMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("googleapis/build/src/apis/androiddeviceprovisioning", "androiddeviceprovisioning")
-  @js.native
-  def androiddeviceprovisioning(options: Options): Androiddeviceprovisioning = js.native
-  @JSImport("googleapis/build/src/apis/androiddeviceprovisioning", "androiddeviceprovisioning")
-  @js.native
-  def androiddeviceprovisioning_v1(version: v1): Androiddeviceprovisioning = js.native
+  @scala.inline
+  def androiddeviceprovisioning(options: Options): Androiddeviceprovisioning = ^.asInstanceOf[js.Dynamic].applyDynamic("androiddeviceprovisioning")(options.asInstanceOf[js.Any]).asInstanceOf[Androiddeviceprovisioning]
+  
+  @scala.inline
+  def androiddeviceprovisioning_v1(version: v1): Androiddeviceprovisioning = ^.asInstanceOf[js.Dynamic].applyDynamic("androiddeviceprovisioning")(version.asInstanceOf[js.Any]).asInstanceOf[Androiddeviceprovisioning]
   
   object auth extends Shortcut {
     
@@ -83,9 +85,12 @@ object androiddeviceprovisioningMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/androiddeviceprovisioning", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/androiddeviceprovisioning", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

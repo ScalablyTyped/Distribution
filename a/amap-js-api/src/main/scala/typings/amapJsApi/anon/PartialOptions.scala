@@ -4,22 +4,20 @@ import typings.amapJsApi.AMap.Bounds
 import typings.amapJsApi.AMap.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<amap-js-api.AMap.MediaLayer.Options> */
-@js.native
 trait PartialOptions extends StObject {
   
-  var bounds: js.UndefOr[Bounds] = js.native
+  var bounds: js.UndefOr[Bounds] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object PartialOptions {
   

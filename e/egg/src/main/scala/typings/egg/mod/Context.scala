@@ -12,12 +12,12 @@ import typings.urllib.mod.HttpClientResponse
 import typings.urllib.mod.RequestOptions2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Context
-  extends BaseContext
+  extends StObject
+     with BaseContext
      with /* key */ StringDictionary[js.Any] {
   
   def __(key: String, values: String*): String = js.native
@@ -174,7 +174,7 @@ trait Context
     *
     * @member {Object} Context#locals
     */
-  var locals: IApplicationLocals with IContextLocals = js.native
+  var locals: IApplicationLocals & IContextLocals = js.native
   
   /**
     * Logger for Application, wrapping app.coreLogger with context infomation

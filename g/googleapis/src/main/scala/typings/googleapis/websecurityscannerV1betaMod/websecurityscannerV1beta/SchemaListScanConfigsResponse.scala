@@ -2,25 +2,23 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListScanConfigs` method.
   */
-@js.native
 trait SchemaListScanConfigsResponse extends StObject {
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of ScanConfigs returned.
     */
-  var scanConfigs: js.UndefOr[js.Array[SchemaScanConfig]] = js.native
+  var scanConfigs: js.UndefOr[js.Array[SchemaScanConfig]] = js.undefined
 }
 object SchemaListScanConfigsResponse {
   

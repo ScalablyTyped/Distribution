@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.ItemSelectionChanged event.
   */
-@js.native
-trait ASPxClientDashboardItemSelectionChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientDashboardItemSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets currently selected elements.
     */
-  def GetCurrentSelection(): js.Array[ASPxClientDashboardItemDataAxisPointTuple] = js.native
+  def GetCurrentSelection(): js.Array[ASPxClientDashboardItemDataAxisPointTuple]
   
   /**
     * Gets the component name of the dashboard item for which the event was raised.
     */
-  var ItemName: String = js.native
+  var ItemName: String
 }
 object ASPxClientDashboardItemSelectionChangedEventArgs {
   

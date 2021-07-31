@@ -3,51 +3,49 @@ package typings.parityPoe
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parity-poe", "formatInbound")
+  @JSImport("parity-poe", JSImport.Namespace)
   @js.native
-  def formatInbound(message: POEMessage): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("parity-poe", "formatOutbound")
-  @js.native
-  def formatOutbound(message: POEMessage): Buffer = js.native
+  @scala.inline
+  def formatInbound(message: POEMessage): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatInbound")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("parity-poe", "parseInbound")
-  @js.native
-  def parseInbound(buffer: Buffer): POEMessage = js.native
+  @scala.inline
+  def formatOutbound(message: POEMessage): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("formatOutbound")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("parity-poe", "parseOutbound")
-  @js.native
-  def parseOutbound(buffer: Buffer): POEMessage = js.native
+  @scala.inline
+  def parseInbound(buffer: Buffer): POEMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInbound")(buffer.asInstanceOf[js.Any]).asInstanceOf[POEMessage]
   
-  @js.native
+  @scala.inline
+  def parseOutbound(buffer: Buffer): POEMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("parseOutbound")(buffer.asInstanceOf[js.Any]).asInstanceOf[POEMessage]
+  
   trait POEMessage extends StObject {
     
-    var canceledQuantity: js.UndefOr[Double] = js.native
+    var canceledQuantity: js.UndefOr[Double] = js.undefined
     
-    var instrument: js.UndefOr[String] = js.native
+    var instrument: js.UndefOr[String] = js.undefined
     
-    var liquidityFlag: js.UndefOr[String] = js.native
+    var liquidityFlag: js.UndefOr[String] = js.undefined
     
-    var matchNumber: js.UndefOr[Double] = js.native
+    var matchNumber: js.UndefOr[Double] = js.undefined
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var orderId: js.UndefOr[String] = js.native
+    var orderId: js.UndefOr[String] = js.undefined
     
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var side: js.UndefOr[String] = js.native
+    var side: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object POEMessage {
     

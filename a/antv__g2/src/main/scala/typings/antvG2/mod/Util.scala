@@ -3,23 +3,23 @@ package typings.antvG2.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Util extends /* other */ StringDictionary[lodashFn] {
+trait Util
+  extends StObject
+     with /* other */ StringDictionary[lodashFn] {
   
-  var each: lodashFn = js.native
+  var each: lodashFn
   
-  var isFunction: lodashFn = js.native
+  var isFunction: lodashFn
   
-  var isNumber: lodashFn = js.native
+  var isNumber: lodashFn
   
-  var isObject: lodashFn = js.native
+  var isObject: lodashFn
   
-  var isString: lodashFn = js.native
+  var isString: lodashFn
   
-  var map: lodashFn = js.native
+  var map: lodashFn
 }
 object Util {
   

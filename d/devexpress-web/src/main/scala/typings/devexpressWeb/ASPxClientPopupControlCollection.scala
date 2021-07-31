@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client collection that maintains client popup control objects.
   */
-@js.native
-trait ASPxClientPopupControlCollection extends ASPxClientControlCollection {
+trait ASPxClientPopupControlCollection
+  extends StObject
+     with ASPxClientControlCollection {
   
   /**
     * Hides all popup windows maintained by the collection.
     */
-  def HideAllWindows(): Unit = js.native
+  def HideAllWindows(): Unit
 }
 object ASPxClientPopupControlCollection {
   
@@ -28,8 +28,8 @@ object ASPxClientPopupControlCollection {
     ForEachControl: ASPxClientControlAction => Unit,
     Get: js.Any => js.Any,
     GetByName: String => js.Any,
-    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[_],
-    GetControlsByType: js.Any => js.Array[_],
+    GetControlsByPredicate: ASPxClientControlPredicate => js.Array[js.Any],
+    GetControlsByType: js.Any => js.Array[js.Any],
     HideAllWindows: () => Unit,
     ValidationCompleted: ASPxClientEvent[ASPxClientValidationCompletedEventHandler[ASPxClientControlCollection]]
   ): ASPxClientPopupControlCollection = {

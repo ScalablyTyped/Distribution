@@ -5,16 +5,14 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.autoplay
 import typings.wechatMiniprogram.wechatMiniprogramStrings.touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var current: Double = js.native
+  var current: Double
   
   /** 该 swiper-item 的标识符 */
-  var currentItemId: String = js.native
+  var currentItemId: String
   
   /**
     * 表示导致变更的原因
@@ -25,7 +23,7 @@ trait Current extends StObject {
     *
     * 最低基础库: 1.4.0
     */
-  var source: _empty | autoplay | touch = js.native
+  var source: _empty | autoplay | touch
 }
 object Current {
   

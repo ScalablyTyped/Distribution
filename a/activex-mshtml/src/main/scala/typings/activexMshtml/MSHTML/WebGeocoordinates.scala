@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGeocoordinates extends StObject {
   
   @JSName("MSHTML.WebGeocoordinates_typekey")
-  var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates = js.native
+  var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates
   
-  val accuracy: Double = js.native
+  val accuracy: Double
   
-  val altitude: js.Any = js.native
+  val altitude: js.Any
   
-  val altitudeAccuracy: js.Any = js.native
+  val altitudeAccuracy: js.Any
   
-  val heading: js.Any = js.native
+  val heading: js.Any
   
-  val latitude: Double = js.native
+  val latitude: Double
   
-  val longitude: Double = js.native
+  val longitude: Double
   
-  val speed: js.Any = js.native
+  val speed: js.Any
 }
 object WebGeocoordinates {
   

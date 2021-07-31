@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Without any output parameters, it is possible to adapt any interface if the {@link XAllListenerAdapterService} can generate an adapter.
   */
-@js.native
-trait XAllListener extends XEventListener {
+trait XAllListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called when a "vetoable event" occurs at the object.
     *
     * That happens when the listener method raises an exception, or has a return value declared.
     */
-  def approveFiring(aEvent: AllEventObject): js.Any = js.native
+  def approveFiring(aEvent: AllEventObject): js.Any
   
   /** gets called when an event occurs at the object. */
-  def firing(iaEvent: AllEventObject): Unit = js.native
+  def firing(iaEvent: AllEventObject): Unit
 }
 object XAllListener {
   

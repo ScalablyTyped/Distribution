@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents UI states and behaviors associated with the device mode (Tablet or Desktop) and input device type. */
-@js.native
 trait UIViewSettings extends StObject {
   
   /** Gets a value that indicates whether the device UI is optimized for touch input or mouse input. */
-  var userInteractionMode: UserInteractionMode = js.native
+  var userInteractionMode: UserInteractionMode
 }
 object UIViewSettings {
   

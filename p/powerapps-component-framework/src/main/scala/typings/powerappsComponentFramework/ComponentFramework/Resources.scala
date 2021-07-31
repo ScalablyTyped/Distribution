@@ -2,13 +2,11 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The resource interface of context.resources
   */
-@js.native
 trait Resources extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait Resources extends StObject {
     * @param success The success callback. Resource data is returned in base 64 encoded format.
     * @param failure The failure callback.
     */
-  def getResource(id: String, success: js.Function1[/* data */ String, Unit], failure: js.Function0[Unit]): Unit = js.native
+  def getResource(id: String, success: js.Function1[/* data */ String, Unit], failure: js.Function0[Unit]): Unit
   
   /**
     * Get the localized string for the given identifier.
     * @param id name of resource in the control manifest.
     */
-  def getString(id: String): String = js.native
+  def getString(id: String): String
 }
 object Resources {
   

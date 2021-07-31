@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response from updating developer metadata.
   */
-@js.native
 trait SchemaUpdateDeveloperMetadataResponse extends StObject {
   
   /**
     * The updated developer metadata.
     */
-  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[SchemaDeveloperMetadata]] = js.undefined
 }
 object SchemaUpdateDeveloperMetadataResponse {
   

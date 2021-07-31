@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormValidatable extends StObject {
   
-  var errorTemplate: String | js.Function = js.native
+  var errorTemplate: String | js.Function
   
-  var validateOnBlur: Boolean = js.native
+  var validateOnBlur: Boolean
   
-  var validationSummary: Boolean = js.native
+  var validationSummary: Boolean
 }
 object FormValidatable {
   

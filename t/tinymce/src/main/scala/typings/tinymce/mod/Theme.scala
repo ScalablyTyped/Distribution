@@ -2,13 +2,11 @@ package typings.tinymce.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  def renderUI(obj: js.Object): js.Object = js.native
+  def renderUI(obj: js.Object): js.Object
 }
 object Theme {
   

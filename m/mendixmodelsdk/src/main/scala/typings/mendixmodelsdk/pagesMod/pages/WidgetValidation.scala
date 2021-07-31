@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -66,9 +65,8 @@ object WidgetValidation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.create")
-  @js.native
-  def create(model: IModel): WidgetValidation = js.native
+  @scala.inline
+  def create(model: IModel): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -79,9 +77,8 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.createInAttributeWidgetUnderValidation")
-  @js.native
-  def createInAttributeWidgetUnderValidation(container: AttributeWidget): WidgetValidation = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderValidation(container: AttributeWidget): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -92,9 +89,8 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.createInReferenceSelectorUnderValidation")
-  @js.native
-  def createInReferenceSelectorUnderValidation(container: ReferenceSelector): WidgetValidation = js.native
+  @scala.inline
+  def createInReferenceSelectorUnderValidation(container: ReferenceSelector): WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[WidgetValidation]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WidgetValidation.structureTypeName")

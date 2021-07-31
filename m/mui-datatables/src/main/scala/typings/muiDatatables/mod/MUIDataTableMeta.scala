@@ -2,25 +2,23 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableMeta extends StObject {
   
-  var columnData: MUIDataTableColumnState = js.native
+  var columnData: MUIDataTableColumnState
   
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
-  var currentTableData: js.Array[MUIDataTableCurrentData] = js.native
+  var currentTableData: js.Array[MUIDataTableCurrentData]
   
-  var rowData: js.Array[_] = js.native
+  var rowData: js.Array[js.Any]
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var tableData: js.Array[MUIDataTableData] = js.native
+  var tableData: js.Array[MUIDataTableData]
   
-  var tableState: MUIDataTableState = js.native
+  var tableState: MUIDataTableState
 }
 object MUIDataTableMeta {
   
@@ -29,7 +27,7 @@ object MUIDataTableMeta {
     columnData: MUIDataTableColumnState,
     columnIndex: Double,
     currentTableData: js.Array[MUIDataTableCurrentData],
-    rowData: js.Array[_],
+    rowData: js.Array[js.Any],
     rowIndex: Double,
     tableData: js.Array[MUIDataTableData],
     tableState: MUIDataTableState
@@ -54,7 +52,7 @@ object MUIDataTableMeta {
     def setCurrentTableDataVarargs(value: MUIDataTableCurrentData*): Self = StObject.set(x, "currentTableData", js.Array(value :_*))
     
     @scala.inline
-    def setRowData(value: js.Array[_]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
+    def setRowData(value: js.Array[js.Any]): Self = StObject.set(x, "rowData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowDataVarargs(value: js.Any*): Self = StObject.set(x, "rowData", js.Array(value :_*))

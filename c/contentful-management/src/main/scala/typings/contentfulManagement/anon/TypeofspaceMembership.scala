@@ -7,15 +7,13 @@ import typings.contentfulManagement.spaceMembershipMod.SpaceMembership
 import typings.contentfulManagement.spaceMembershipMod.SpaceMembershipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofspaceMembership extends StObject {
   
-  def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership = js.native
+  def wrapSpaceMembership(http: AxiosInstance, data: SpaceMembershipProps): SpaceMembership
   
-  def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps] = js.native
+  def wrapSpaceMembershipCollection(http: AxiosInstance, data: CollectionProp[SpaceMembershipProps]): Collection[SpaceMembership, SpaceMembershipProps]
 }
 object TypeofspaceMembership {
   

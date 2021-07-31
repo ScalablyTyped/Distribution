@@ -2,22 +2,20 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDiagnostic extends StObject {
   
   /**
     * JsonPath expression on the resource that if non empty, indicates that
     * this field needs to be extracted as a diagnostic.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * Level to record this diagnostic.
     */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
 }
 object SchemaDiagnostic {
   

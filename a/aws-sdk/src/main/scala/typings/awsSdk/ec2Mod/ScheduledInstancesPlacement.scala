@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledInstancesPlacement extends StObject {
   
   /**
     * The Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the placement group.
     */
-  var GroupName: js.UndefOr[PlacementGroupName] = js.native
+  var GroupName: js.UndefOr[PlacementGroupName] = js.undefined
 }
 object ScheduledInstancesPlacement {
   

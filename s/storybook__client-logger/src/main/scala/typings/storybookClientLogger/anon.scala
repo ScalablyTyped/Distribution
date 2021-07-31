@@ -2,25 +2,23 @@ package typings.storybookClientLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    def debug(message: js.Any, rest: js.Any*): Unit = js.native
+    def debug(message: js.Any, rest: js.Any*): Unit
     
-    def error(message: js.Any, rest: js.Any*): Unit = js.native
+    def error(message: js.Any, rest: js.Any*): Unit
     
-    def info(message: js.Any, rest: js.Any*): Unit = js.native
+    def info(message: js.Any, rest: js.Any*): Unit
     
-    def log(message: js.Any, rest: js.Any*): Unit = js.native
+    def log(message: js.Any, rest: js.Any*): Unit
     
-    def trace(message: js.Any, rest: js.Any*): Unit = js.native
+    def trace(message: js.Any, rest: js.Any*): Unit
     
-    def warn(message: js.Any, rest: js.Any*): Unit = js.native
+    def warn(message: js.Any, rest: js.Any*): Unit
   }
   object Debug {
     

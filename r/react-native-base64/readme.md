@@ -10,9 +10,9 @@ Base64 encoding and decoding helping util. Created for React Native but can be u
 | ------------------ | :-------------: |
 | Full name          | react-native-base64 |
 | Keywords           | base64, encode, decode, react, native |
-| # releases         | 3 |
-| # dependents       | 7 |
-| # downloads        | 420329 |
+| # releases         | 5 |
+| # dependents       | 10 |
+| # downloads        | 781880 |
 | # stars            | 0 |
 
 ## Links

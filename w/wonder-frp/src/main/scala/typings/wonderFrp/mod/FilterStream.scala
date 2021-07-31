@@ -1,8 +1,8 @@
 package typings.wonderFrp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/commonjs", "FilterStream")
 @js.native
@@ -19,11 +19,14 @@ class FilterStream protected ()
     thisArg: js.Any
   ) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/commonjs", "FilterStream")
-@js.native
-object FilterStream extends js.Object {
+object FilterStream {
+  
+  @JSImport("wonder-frp/dist/commonjs", "FilterStream")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     source: typings.wonderFrp.streamMod.Stream,
     predicate: js.Function3[
@@ -33,6 +36,5 @@ object FilterStream extends js.Object {
       Boolean
     ],
     thisArg: js.Any
-  ): typings.wonderFrp.filterStreamMod.FilterStream = js.native
+  ): typings.wonderFrp.filterStreamMod.FilterStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.filterStreamMod.FilterStream]
 }
-

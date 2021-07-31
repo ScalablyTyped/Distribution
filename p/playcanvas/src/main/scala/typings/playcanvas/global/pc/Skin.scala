@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.Skin")
 @js.native
 class Skin protected ()
-  extends typings.playcanvas.pc.Skin {
+  extends StObject
+     with typings.playcanvas.pc.Skin {
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     ibp: js.Array[typings.playcanvas.pc.Mat4],

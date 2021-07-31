@@ -3,13 +3,11 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 import typings.jsrsasign.jsrsasign.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigIntegerParam extends StObject {
   
-  var bigint: BigInteger = js.native
+  var bigint: BigInteger
 }
 object BigIntegerParam {
   

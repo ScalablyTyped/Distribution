@@ -8,7 +8,6 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerGroupCompMod {
@@ -60,12 +59,11 @@ object headerGroupCompMod {
     def TEMPLATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IHeaderGroup extends StObject
   
-  @js.native
   trait IHeaderGroupComp
-    extends IHeaderGroup
+    extends StObject
+       with IHeaderGroup
        with IComponent[IHeaderGroupParams]
   object IHeaderGroupComp {
     
@@ -76,20 +74,19 @@ object headerGroupCompMod {
     }
   }
   
-  @js.native
   trait IHeaderGroupParams extends StObject {
     
-    var api: GridApi = js.native
+    var api: GridApi
     
-    var columnApi: ColumnApi = js.native
+    var columnApi: ColumnApi
     
-    var columnGroup: ColumnGroup = js.native
+    var columnGroup: ColumnGroup
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var displayName: String = js.native
+    var displayName: String
     
-    def setExpanded(expanded: Boolean): Unit = js.native
+    def setExpanded(expanded: Boolean): Unit
   }
   object IHeaderGroupParams {
     

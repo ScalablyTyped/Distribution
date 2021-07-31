@@ -20,7 +20,6 @@ import typings.node.urlMod.URL_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
@@ -199,9 +198,9 @@ object httpMod {
     def setNoDelay(noDelay: Boolean): Unit = js.native
     
     def setSocketKeepAlive(): Unit = js.native
-    def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
     def setSocketKeepAlive(enable: Boolean): Unit = js.native
     def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
+    def setSocketKeepAlive(enable: Unit, initialDelay: Double): Unit = js.native
   }
   
   @JSImport("http", "IncomingMessage")
@@ -346,62 +345,48 @@ object httpMod {
     def writeHead(statusCode: Double): this.type = js.native
     def writeHead(statusCode: Double, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
     def writeHead(statusCode: Double, headers: OutgoingHttpHeaders): this.type = js.native
-    def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: js.Array[OutgoingHttpHeader]): this.type = js.native
-    def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: OutgoingHttpHeaders): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: java.lang.String): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: java.lang.String, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
     def writeHead(statusCode: Double, reasonPhrase: java.lang.String, headers: OutgoingHttpHeaders): this.type = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: js.Array[OutgoingHttpHeader]): this.type = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: OutgoingHttpHeaders): this.type = js.native
     
     def writeProcessing(): Unit = js.native
   }
   
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(): Server = js.native
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(options: ServerOptions): Server = js.native
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(options: ServerOptions, requestListener: RequestListener): Server = js.native
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(requestListener: RequestListener): Server = js.native
+  @scala.inline
+  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions, requestListener: RequestListener): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], requestListener.asInstanceOf[js.Any])).asInstanceOf[Server]
+  @scala.inline
+  def createServer(requestListener: RequestListener): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  @JSImport("http", "get")
-  @js.native
-  def get(options: java.lang.String): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: java.lang.String, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: URL_): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: URL_, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(url: java.lang.String, options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
+  @scala.inline
+  def get(options: java.lang.String): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: java.lang.String, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: RequestOptions): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: URL_): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: URL_, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(url: java.lang.String, options: RequestOptions): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
   def get(
     url: java.lang.String,
     options: RequestOptions,
     callback: js.Function1[/* res */ IncomingMessage, Unit]
-  ): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(url: URL_, options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(url: URL_, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  ): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(url: URL_, options: RequestOptions): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(url: URL_, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   @JSImport("http", "globalAgent")
   @js.native
@@ -417,79 +402,68 @@ object httpMod {
   @js.native
   val maxHeaderSize: Double = js.native
   
-  @JSImport("http", "request")
-  @js.native
-  def request(options: java.lang.String): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: java.lang.String, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: URL_): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: URL_, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(url: java.lang.String, options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
+  @scala.inline
+  def request(options: java.lang.String): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: java.lang.String, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: RequestOptions): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: URL_): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: URL_, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(url: java.lang.String, options: RequestOptions): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
   def request(
     url: java.lang.String,
     options: RequestOptions,
     callback: js.Function1[/* res */ IncomingMessage, Unit]
-  ): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(url: URL_, options: RequestOptions): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(url: URL_, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  ): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(url: URL_, options: RequestOptions): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(url: URL_, options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
-  @js.native
   trait AgentOptions extends StObject {
     
     /**
       * Keep sockets around in a pool to be used by other requests in the future. Default = false
       */
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When using HTTP KeepAlive, how often to send TCP KeepAlive packets over sockets being kept alive. Default = 1000.
       * Only relevant if keepAlive is set to true.
       */
-    var keepAliveMsecs: js.UndefOr[Double] = js.native
+    var keepAliveMsecs: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of sockets to leave open in a free state. Only relevant if keepAlive is set to true. Default = 256.
       */
-    var maxFreeSockets: js.UndefOr[Double] = js.native
+    var maxFreeSockets: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of sockets to allow per host. Default for Node 0.10 is 5, default for Node 0.12 is Infinity
       */
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of sockets allowed for all hosts in total. Each request will use a new socket until the maximum is reached. Default: Infinity.
       */
-    var maxTotalSockets: js.UndefOr[Double] = js.native
+    var maxTotalSockets: js.UndefOr[Double] = js.undefined
     
     /**
       * Scheduling strategy to apply when picking the next free socket to use. Default: 'fifo'.
       */
-    var scheduling: js.UndefOr[fifo | lifo] = js.native
+    var scheduling: js.UndefOr[fifo | lifo] = js.undefined
     
     /**
       * Socket timeout in milliseconds. This will set the timeout after the socket is connected.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AgentOptions {
     
@@ -546,14 +520,13 @@ object httpMod {
     }
   }
   
-  @js.native
   trait ClientRequestArgs extends StObject {
     
-    var _defaultAgent: js.UndefOr[Agent] = js.native
+    var _defaultAgent: js.UndefOr[Agent] = js.undefined
     
-    var agent: js.UndefOr[Agent | Boolean] = js.native
+    var agent: js.UndefOr[Agent | Boolean] = js.undefined
     
-    var auth: js.UndefOr[java.lang.String | Null] = js.native
+    var auth: js.UndefOr[java.lang.String | Null] = js.undefined
     
     // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
     var createConnection: js.UndefOr[
@@ -562,38 +535,38 @@ object httpMod {
           /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
           Socket
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var defaultPort: js.UndefOr[Double | java.lang.String] = js.native
+    var defaultPort: js.UndefOr[Double | java.lang.String] = js.undefined
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var host: js.UndefOr[java.lang.String | Null] = js.native
+    var host: js.UndefOr[java.lang.String | Null] = js.undefined
     
-    var hostname: js.UndefOr[java.lang.String | Null] = js.native
+    var hostname: js.UndefOr[java.lang.String | Null] = js.undefined
     
-    var localAddress: js.UndefOr[java.lang.String] = js.native
+    var localAddress: js.UndefOr[java.lang.String] = js.undefined
     
     /**
       * @default 8192
       */
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[java.lang.String] = js.native
+    var method: js.UndefOr[java.lang.String] = js.undefined
     
-    var path: js.UndefOr[java.lang.String | Null] = js.native
+    var path: js.UndefOr[java.lang.String | Null] = js.undefined
     
-    var port: js.UndefOr[Double | java.lang.String | Null] = js.native
+    var port: js.UndefOr[Double | java.lang.String | Null] = js.undefined
     
-    var protocol: js.UndefOr[java.lang.String | Null] = js.native
+    var protocol: js.UndefOr[java.lang.String | Null] = js.undefined
     
-    var setHost: js.UndefOr[Boolean] = js.native
+    var setHost: js.UndefOr[Boolean] = js.undefined
     
-    var socketPath: js.UndefOr[java.lang.String] = js.native
+    var socketPath: js.UndefOr[java.lang.String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ClientRequestArgs {
     
@@ -764,141 +737,141 @@ object httpMod {
     
     def setTimeout(): this.type = js.native
     def setTimeout(callback: js.Function0[Unit]): this.type = js.native
-    def setTimeout(msecs: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
     def setTimeout(msecs: Double): this.type = js.native
     def setTimeout(msecs: Double, callback: js.Function0[Unit]): this.type = js.native
+    def setTimeout(msecs: Unit, callback: js.Function0[Unit]): this.type = js.native
     
     var timeout: Double = js.native
   }
   
   // incoming headers will never contain number
-  @js.native
   trait IncomingHttpHeaders
-    extends Dict[java.lang.String | js.Array[java.lang.String]] {
+    extends StObject
+       with Dict[java.lang.String | js.Array[java.lang.String]] {
     
-    var accept: js.UndefOr[java.lang.String] = js.native
+    var accept: js.UndefOr[java.lang.String] = js.undefined
     
-    var `accept-language`: js.UndefOr[java.lang.String] = js.native
+    var `accept-language`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `accept-patch`: js.UndefOr[java.lang.String] = js.native
+    var `accept-patch`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `accept-ranges`: js.UndefOr[java.lang.String] = js.native
+    var `accept-ranges`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-allow-credentials`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-allow-credentials`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-allow-headers`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-allow-headers`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-allow-methods`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-allow-methods`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-allow-origin`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-allow-origin`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-expose-headers`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-expose-headers`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-max-age`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-max-age`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-request-headers`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-request-headers`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `access-control-request-method`: js.UndefOr[java.lang.String] = js.native
+    var `access-control-request-method`: js.UndefOr[java.lang.String] = js.undefined
     
-    var age: js.UndefOr[java.lang.String] = js.native
+    var age: js.UndefOr[java.lang.String] = js.undefined
     
-    var allow: js.UndefOr[java.lang.String] = js.native
+    var allow: js.UndefOr[java.lang.String] = js.undefined
     
-    var `alt-svc`: js.UndefOr[java.lang.String] = js.native
+    var `alt-svc`: js.UndefOr[java.lang.String] = js.undefined
     
-    var authorization: js.UndefOr[java.lang.String] = js.native
+    var authorization: js.UndefOr[java.lang.String] = js.undefined
     
-    var `cache-control`: js.UndefOr[java.lang.String] = js.native
+    var `cache-control`: js.UndefOr[java.lang.String] = js.undefined
     
-    var connection: js.UndefOr[java.lang.String] = js.native
+    var connection: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-disposition`: js.UndefOr[java.lang.String] = js.native
+    var `content-disposition`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-encoding`: js.UndefOr[java.lang.String] = js.native
+    var `content-encoding`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-language`: js.UndefOr[java.lang.String] = js.native
+    var `content-language`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-length`: js.UndefOr[java.lang.String] = js.native
+    var `content-length`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-location`: js.UndefOr[java.lang.String] = js.native
+    var `content-location`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-range`: js.UndefOr[java.lang.String] = js.native
+    var `content-range`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `content-type`: js.UndefOr[java.lang.String] = js.native
+    var `content-type`: js.UndefOr[java.lang.String] = js.undefined
     
-    var cookie: js.UndefOr[java.lang.String] = js.native
+    var cookie: js.UndefOr[java.lang.String] = js.undefined
     
-    var date: js.UndefOr[java.lang.String] = js.native
+    var date: js.UndefOr[java.lang.String] = js.undefined
     
-    var expect: js.UndefOr[java.lang.String] = js.native
+    var expect: js.UndefOr[java.lang.String] = js.undefined
     
-    var expires: js.UndefOr[java.lang.String] = js.native
+    var expires: js.UndefOr[java.lang.String] = js.undefined
     
-    var forwarded: js.UndefOr[java.lang.String] = js.native
+    var forwarded: js.UndefOr[java.lang.String] = js.undefined
     
-    var from: js.UndefOr[java.lang.String] = js.native
+    var from: js.UndefOr[java.lang.String] = js.undefined
     
-    var host: js.UndefOr[java.lang.String] = js.native
+    var host: js.UndefOr[java.lang.String] = js.undefined
     
-    var `if-match`: js.UndefOr[java.lang.String] = js.native
+    var `if-match`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `if-modified-since`: js.UndefOr[java.lang.String] = js.native
+    var `if-modified-since`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `if-none-match`: js.UndefOr[java.lang.String] = js.native
+    var `if-none-match`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `if-unmodified-since`: js.UndefOr[java.lang.String] = js.native
+    var `if-unmodified-since`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `last-modified`: js.UndefOr[java.lang.String] = js.native
+    var `last-modified`: js.UndefOr[java.lang.String] = js.undefined
     
-    var location: js.UndefOr[java.lang.String] = js.native
+    var location: js.UndefOr[java.lang.String] = js.undefined
     
-    var origin: js.UndefOr[java.lang.String] = js.native
+    var origin: js.UndefOr[java.lang.String] = js.undefined
     
-    var pragma: js.UndefOr[java.lang.String] = js.native
+    var pragma: js.UndefOr[java.lang.String] = js.undefined
     
-    var `proxy-authenticate`: js.UndefOr[java.lang.String] = js.native
+    var `proxy-authenticate`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `proxy-authorization`: js.UndefOr[java.lang.String] = js.native
+    var `proxy-authorization`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `public-key-pins`: js.UndefOr[java.lang.String] = js.native
+    var `public-key-pins`: js.UndefOr[java.lang.String] = js.undefined
     
-    var range: js.UndefOr[java.lang.String] = js.native
+    var range: js.UndefOr[java.lang.String] = js.undefined
     
-    var referer: js.UndefOr[java.lang.String] = js.native
+    var referer: js.UndefOr[java.lang.String] = js.undefined
     
-    var `retry-after`: js.UndefOr[java.lang.String] = js.native
+    var `retry-after`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `sec-websocket-accept`: js.UndefOr[java.lang.String] = js.native
+    var `sec-websocket-accept`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `sec-websocket-extensions`: js.UndefOr[java.lang.String] = js.native
+    var `sec-websocket-extensions`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `sec-websocket-key`: js.UndefOr[java.lang.String] = js.native
+    var `sec-websocket-key`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `sec-websocket-protocol`: js.UndefOr[java.lang.String] = js.native
+    var `sec-websocket-protocol`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `sec-websocket-version`: js.UndefOr[java.lang.String] = js.native
+    var `sec-websocket-version`: js.UndefOr[java.lang.String] = js.undefined
     
-    var `set-cookie`: js.UndefOr[js.Array[java.lang.String]] = js.native
+    var `set-cookie`: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     
-    var `strict-transport-security`: js.UndefOr[java.lang.String] = js.native
+    var `strict-transport-security`: js.UndefOr[java.lang.String] = js.undefined
     
-    var tk: js.UndefOr[java.lang.String] = js.native
+    var tk: js.UndefOr[java.lang.String] = js.undefined
     
-    var trailer: js.UndefOr[java.lang.String] = js.native
+    var trailer: js.UndefOr[java.lang.String] = js.undefined
     
-    var `transfer-encoding`: js.UndefOr[java.lang.String] = js.native
+    var `transfer-encoding`: js.UndefOr[java.lang.String] = js.undefined
     
-    var upgrade: js.UndefOr[java.lang.String] = js.native
+    var upgrade: js.UndefOr[java.lang.String] = js.undefined
     
-    var `user-agent`: js.UndefOr[java.lang.String] = js.native
+    var `user-agent`: js.UndefOr[java.lang.String] = js.undefined
     
-    var vary: js.UndefOr[java.lang.String] = js.native
+    var vary: js.UndefOr[java.lang.String] = js.undefined
     
-    var via: js.UndefOr[java.lang.String] = js.native
+    var via: js.UndefOr[java.lang.String] = js.undefined
     
-    var warning: js.UndefOr[java.lang.String] = js.native
+    var warning: js.UndefOr[java.lang.String] = js.undefined
     
-    var `www-authenticate`: js.UndefOr[java.lang.String] = js.native
+    var `www-authenticate`: js.UndefOr[java.lang.String] = js.undefined
   }
   object IncomingHttpHeaders {
     
@@ -1288,22 +1261,21 @@ object httpMod {
     }
   }
   
-  @js.native
   trait InformationEvent extends StObject {
     
-    var headers: IncomingHttpHeaders = js.native
+    var headers: IncomingHttpHeaders
     
-    var httpVersion: java.lang.String = js.native
+    var httpVersion: java.lang.String
     
-    var httpVersionMajor: Double = js.native
+    var httpVersionMajor: Double
     
-    var httpVersionMinor: Double = js.native
+    var httpVersionMinor: Double
     
-    var rawHeaders: js.Array[java.lang.String] = js.native
+    var rawHeaders: js.Array[java.lang.String]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusMessage: java.lang.String = js.native
+    var statusMessage: java.lang.String
   }
   object InformationEvent {
     
@@ -1361,12 +1333,11 @@ object httpMod {
   // create interface RequestOptions would make the naming more clear to developers
   type RequestOptions = ClientRequestArgs
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage]] = js.native
+    var IncomingMessage: js.UndefOr[Instantiable1[/* socket */ Socket, typings.node.httpMod.IncomingMessage]] = js.undefined
     
-    var ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, typings.node.httpMod.ServerResponse]] = js.native
+    var ServerResponse: js.UndefOr[Instantiable1[/* req */ IncomingMessage, typings.node.httpMod.ServerResponse]] = js.undefined
     
     /**
       * Use an insecure HTTP parser that accepts invalid HTTP headers when true.
@@ -1374,7 +1345,7 @@ object httpMod {
       * See --insecure-http-parser for more information.
       * @default false
       */
-    var insecureHTTPParser: js.UndefOr[Boolean] = js.native
+    var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally overrides the value of
@@ -1382,7 +1353,7 @@ object httpMod {
       * the maximum length of request headers in bytes.
       * @default 8192
       */
-    var maxHeaderSize: js.UndefOr[Double] = js.native
+    var maxHeaderSize: js.UndefOr[Double] = js.undefined
   }
   object ServerOptions {
     

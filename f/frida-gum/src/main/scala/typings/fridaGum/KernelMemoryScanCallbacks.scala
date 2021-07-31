@@ -2,23 +2,21 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KernelMemoryScanCallbacks extends StObject {
   
   /**
     * Called when the memory range has been fully scanned.
     */
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
   /**
     * Called when there was a memory access error while scanning.
     *
     * @param reason Why the memory access failed.
     */
-  var onError: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
   
   /**
     * Called with each occurence that was found.
@@ -26,7 +24,7 @@ trait KernelMemoryScanCallbacks extends StObject {
     * @param address Memory address where a match was found.
     * @param size Size of this match.
     */
-  def onMatch(address: UInt64, size: Double): Unit | EnumerateAction = js.native
+  def onMatch(address: UInt64, size: Double): Unit | EnumerateAction
 }
 object KernelMemoryScanCallbacks {
   

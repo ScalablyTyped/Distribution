@@ -4,15 +4,13 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolBarRightElement extends StObject {
   
-  var actions: js.UndefOr[js.Array[Element | String]] = js.native
+  var actions: js.UndefOr[js.Array[Element | String]] = js.undefined
   
-  var menu: js.UndefOr[Labels] = js.native
+  var menu: js.UndefOr[Labels] = js.undefined
 }
 object ToolBarRightElement {
   

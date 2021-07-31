@@ -8,17 +8,15 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionEnd
 import typings.tuyaPanelKit.tuyaPanelKitStrings.transitionStart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `18`[EventName /* <: Extract[
 /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
 String] */] extends StObject {
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: EventName = js.native
+  var `type`: EventName
 }
 object `18` {
   
@@ -33,10 +31,10 @@ object `18` {
   }
   
   @scala.inline
-  implicit class `18MutableBuilder`[Self <: `18`[_], EventName /* <: Extract[
+  implicit class `18MutableBuilder`[Self <: `18`[?], EventName /* <: Extract[
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap */ transitionStart | transitionEnd | gestureStart | gestureEnd | gestureCancel, 
     String
-  ] */] (val x: Self with `18`[EventName]) extends AnyVal {
+  ] */] (val x: Self & `18`[EventName]) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

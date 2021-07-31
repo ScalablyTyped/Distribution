@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,38 +15,37 @@ object mod {
   
   type Slider = Component[SliderProps, js.Object, js.Any]
   
-  @js.native
   trait SliderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[js.Function1[/* value */ Double, js.UndefOr[String | Double]]] = js.native
+    var format: js.UndefOr[js.Function1[/* value */ Double, js.UndefOr[String | Double]]] = js.undefined
     
-    var handleLabel: js.UndefOr[String] = js.native
+    var handleLabel: js.UndefOr[String] = js.undefined
     
-    var labels: js.UndefOr[NumberDictionary[String]] = js.native
+    var labels: js.UndefOr[NumberDictionary[String]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onChangeComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChangeComplete: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onChangeStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChangeStart: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean] = js.native
+    var tooltip: js.UndefOr[Boolean] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object SliderProps {
     

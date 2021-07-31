@@ -6,17 +6,16 @@ import typings.extjs.Ext.IContainer
 import typings.extjs.Ext.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object column {
   
-  @js.native
   trait IAction
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Config Option] (String) */
-    var altText: js.UndefOr[String] = js.native
+    var altText: js.UndefOr[String] = js.undefined
     
     /** [Method] Cascades down the component container heirarchy from this component passed in the first call  calling the specified
       * @param fn Object
@@ -26,7 +25,7 @@ object column {
     @JSName("cascade")
     var cascade_IAction: js.UndefOr[
         js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IContainer]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Renderer closure iterates through items creating an element for each and tagging with an identifying class name x ac
       * @param v Object
@@ -49,7 +48,7 @@ object column {
           /* view */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Disables this ActionColumn s action at the specified index
       * @param index Number/Ext.grid.column.Action
@@ -57,7 +56,7 @@ object column {
       */
     var disableAction: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Enables this ActionColumn s action at the specified index
       * @param index Number/Ext.grid.column.Action
@@ -65,34 +64,34 @@ object column {
       */
     var enableAction: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Function) */
     @JSName("getClass")
-    var getClass_FIAction: js.UndefOr[js.Any] = js.native
+    var getClass_FIAction: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Private override because this cannot function as a Container and it has an items property which is an Array NOT a M  */
     @JSName("getRefItems")
-    var getRefItems_IAction: js.UndefOr[js.Function0[Unit]] = js.native
+    var getRefItems_IAction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Function) */
-    var getTip: js.UndefOr[js.Any] = js.native
+    var getTip: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var iconCls: js.UndefOr[String] = js.native
+    var iconCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object[]) */
     @JSName("items")
-    var items_IAction: js.UndefOr[Array] = js.native
+    var items_IAction: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var stopSelection: js.UndefOr[Boolean] = js.native
+    var stopSelection: js.UndefOr[Boolean] = js.undefined
   }
   object IAction {
     
@@ -187,18 +186,18 @@ object column {
     }
   }
   
-  @js.native
   trait IBoolean
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Config Option] (String) */
-    var falseText: js.UndefOr[String] = js.native
+    var falseText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var trueText: js.UndefOr[String] = js.native
+    var trueText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var undefinedText: js.UndefOr[String] = js.native
+    var undefinedText: js.UndefOr[String] = js.undefined
   }
   object IBoolean {
     
@@ -231,24 +230,24 @@ object column {
     }
   }
   
-  @js.native
   trait ICheckColumn
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Method] Disables this CheckColumn
       * @param silent Boolean
       */
     @JSName("onDisable")
-    var onDisable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+    var onDisable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Enables this CheckColumn
       * @param silent Boolean
       */
     @JSName("onEnable")
-    var onEnable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.native
+    var onEnable_ICheckColumn: js.UndefOr[js.Function1[/* silent */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var stopSelection: js.UndefOr[Boolean] = js.native
+    var stopSelection: js.UndefOr[Boolean] = js.undefined
   }
   object ICheckColumn {
     
@@ -281,9 +280,9 @@ object column {
     }
   }
   
-  @js.native
   trait IColumn
-    extends typings.extjs.Ext.grid.header.IContainer {
+    extends StObject
+       with typings.extjs.Ext.grid.header.IContainer {
     
     /** [Method] private Inform the header container about the resize
       * @param width Object
@@ -300,36 +299,36 @@ object column {
           /* oldHeight */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /** [Method] Sizes this Column to fit the max content width
       * @param The Ext.grid.column.Column/Number header (or index of header) to auto size.
       */
-    var autoSize: js.UndefOr[js.Function1[/* The */ js.UndefOr[js.Any], Unit]] = js.native
+    var autoSize: js.UndefOr[js.Function1[/* The */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Object[]) */
-    var columns: js.UndefOr[Array] = js.native
+    var columns: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String) */
-    var dataIndex: js.UndefOr[String] = js.native
+    var dataIndex: js.UndefOr[String] = js.undefined
     
     /** [Method] When defined this will take precedence over the renderer config  */
-    var defaultRenderer: js.UndefOr[js.Function0[Unit]] = js.native
+    var defaultRenderer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Function) */
-    var editRenderer: js.UndefOr[js.Any] = js.native
+    var editRenderer: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object/String) */
-    var editor: js.UndefOr[js.Any] = js.native
+    var editor: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var emptyCellText: js.UndefOr[String] = js.native
+    var emptyCellText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Object/String) */
-    var field: js.UndefOr[js.Any] = js.native
+    var field: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Retrieves the editing field for editing associated with this header
       * @param record Object The Model instance being edited.
@@ -337,89 +336,89 @@ object column {
       * @returns any field
       */
     var getEditor: js.UndefOr[
-        js.Function2[/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function2[/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] Returns the index of this column only if this column is a base level Column
       * @returns Number
       */
-    var getIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the parameter to sort upon when sorting this header
       * @returns String
       */
-    var getSortParam: js.UndefOr[js.Function0[String]] = js.native
+    var getSortParam: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the index of this column in the list of visible columns only if this column is a base level Column
       * @returns Number
       */
-    var getVisibleIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getVisibleIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var groupable: js.UndefOr[Boolean] = js.native
+    var groupable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** [Method] Hides this Component setting it to invisible using the configured hideMode
       * @param fromOwner Object
       * @returns Ext.Component this
       */
     @JSName("hide")
-    var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[js.Any], IComponent]] = js.native
+    var hide_IColumn: js.UndefOr[js.Function1[/* fromOwner */ js.UndefOr[js.Any], IComponent]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideable: js.UndefOr[Boolean] = js.native
+    var hideable: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Initialized the renderData to be used when rendering the renderTpl
       * @returns Object Object with keys and values that are going to be applied to the renderTpl
       */
     @JSName("initRenderData")
-    var initRenderData_IColumn: js.UndefOr[js.Function0[_]] = js.native
+    var initRenderData_IColumn: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isColumn: js.UndefOr[Boolean] = js.native
+    var isColumn: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var isHeader: js.UndefOr[Boolean] = js.native
+    var isHeader: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Determines whether the UI should be allowed to offer an option to hide this column  */
-    var isHideable: js.UndefOr[js.Function0[Unit]] = js.native
+    var isHideable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Determines whether the UI should be allowed to offer an option to lock or unlock this column  */
-    var isLockable: js.UndefOr[js.Function0[Unit]] = js.native
+    var isLockable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var lockable: js.UndefOr[Boolean] = js.native
+    var lockable: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var locked: js.UndefOr[Boolean] = js.native
+    var locked: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var menuDisabled: js.UndefOr[Boolean] = js.native
+    var menuDisabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var menuText: js.UndefOr[String] = js.native
+    var menuText: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Function/String) */
-    var renderer: js.UndefOr[js.Any] = js.native
+    var renderer: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
     @JSName("resizable")
-    var resizable_IColumn: js.UndefOr[Boolean] = js.native
+    var resizable_IColumn: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the form field to be used for editing
       * @param field Object An object representing a field to be created. If no xtype is specified a 'textfield' is assumed.
       */
-    var setEditor: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEditor: js.UndefOr[js.Function1[/* field */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the header text for this Column
       * @param text String The header to display on this Column.
       */
-    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.native
+    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Shows this Component rendering it first if autoRender or floating are true
       * @param fromOwner Object
@@ -429,25 +428,25 @@ object column {
     @JSName("show")
     var show_IColumn: js.UndefOr[
         js.Function2[/* fromOwner */ js.UndefOr[js.Any], /* fromChild */ js.UndefOr[js.Any], IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var tdCls: js.UndefOr[String] = js.native
+    var tdCls: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** [Property] (Ext.Element) */
-    var textEl: js.UndefOr[IElement] = js.native
+    var textEl: js.UndefOr[IElement] = js.undefined
     
     /** [Config Option] (String) */
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var tooltipType: js.UndefOr[String] = js.native
+    var tooltipType: js.UndefOr[String] = js.undefined
     
     /** [Property] (Ext.Element) */
-    var triggerEl: js.UndefOr[IElement] = js.native
+    var triggerEl: js.UndefOr[IElement] = js.undefined
   }
   object IColumn {
     
@@ -523,7 +522,7 @@ object column {
       def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
       @scala.inline
-      def setGetEditor(value: (/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "getEditor", js.Any.fromFunction2(value))
+      def setGetEditor(value: (/* record */ js.UndefOr[js.Any], /* defaultField */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "getEditor", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetEditorUndefined: Self = StObject.set(x, "getEditor", js.undefined)
@@ -571,7 +570,7 @@ object column {
       def setHideableUndefined: Self = StObject.set(x, "hideable", js.undefined)
       
       @scala.inline
-      def setInitRenderData(value: () => _): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
+      def setInitRenderData(value: () => js.Any): Self = StObject.set(x, "initRenderData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setInitRenderDataUndefined: Self = StObject.set(x, "initRenderData", js.undefined)
@@ -698,18 +697,18 @@ object column {
     }
   }
   
-  @js.native
   trait IDate
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Method] When defined this will take precedence over the renderer config
       * @param value Object
       */
     @JSName("defaultRenderer")
-    var defaultRenderer_IDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var defaultRenderer_IDate: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object IDate {
     
@@ -736,12 +735,12 @@ object column {
     }
   }
   
-  @js.native
   trait INumber
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object INumber {
     
@@ -762,9 +761,9 @@ object column {
     }
   }
   
-  @js.native
   trait IRowNumberer
-    extends typings.extjs.Ext.grid.column.IColumn
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn
   object IRowNumberer {
     
     @scala.inline
@@ -774,9 +773,9 @@ object column {
     }
   }
   
-  @js.native
   trait ITemplate
-    extends typings.extjs.Ext.grid.column.IColumn {
+    extends StObject
+       with typings.extjs.Ext.grid.column.IColumn {
     
     /** [Method] When defined this will take precedence over the renderer config
       * @param value Object
@@ -791,7 +790,7 @@ object column {
           /* record */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ITemplate {
     

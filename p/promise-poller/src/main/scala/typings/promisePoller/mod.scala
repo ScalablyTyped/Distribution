@@ -5,50 +5,51 @@ import typings.promisePoller.promisePollerStrings.`fixed-interval`
 import typings.promisePoller.promisePollerStrings.`linear-backoff`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("promise-poller", JSImport.Default)
+  @JSImport("promise-poller", JSImport.Namespace)
   @js.native
-  def default[T](options: PromisePollerOptions[T]): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[T](options: PromisePollerOptions[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
   trait PromisePollerOptions[T] extends StObject {
     
     /**
       * `strategy: 'linear-backoff'` --
       * The amount to increase the interval by on each poll attempt.
       */
-    var increment: js.UndefOr[Double] = js.native
+    var increment: js.UndefOr[Double] = js.undefined
     
     /**
       * `strategy: 'fixed-interval'` --
       * Time to wait ms until taskFn runs again.
       * @default 1000
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /**
       * Timeout in ms to reject taskFn's promise regardless of retries -- A
       * timeout for the entire master polling operation.
       */
-    var masterTimeout: js.UndefOr[Double] = js.native
+    var masterTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * `strategy: 'exponential-backoff'` --
       * The maximum interval amount to use
       * @default 30000
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * `strategy: 'exponential-backoff'` --
       * The minimum interval amount to use
       * @default 1000
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * ## Debugging
@@ -69,7 +70,7 @@ object mod {
       * ```
       * @example 'App Server Poller'
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * ## Progress notification
@@ -78,13 +79,13 @@ object mod {
       * remaining and the error that occurred (the value that the task promise
       * was rejected with)
       */
-    var progressCallback: js.UndefOr[js.Function2[/* retriesRemaining */ Double, /* error */ js.Any, Unit]] = js.native
+    var progressCallback: js.UndefOr[js.Function2[/* retriesRemaining */ Double, /* error */ js.Any, Unit]] = js.undefined
     
     /**
       * Number of times to attempt taskFn.
       * @default 5
       */
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
     /**
       * If the poll attempt failed, and you want to abort further polling, return
@@ -95,14 +96,14 @@ object mod {
       * @param value the resolved value when a poll succeeds
       * @default err => !!err
       */
-    var shouldContinue: js.UndefOr[js.Function2[/* reason */ js.Any, /* value */ js.UndefOr[T], Boolean]] = js.native
+    var shouldContinue: js.UndefOr[js.Function2[/* reason */ js.Any, /* value */ js.UndefOr[T], Boolean]] = js.undefined
     
     /**
       * `strategy: 'linear-backoff'` --
       * The starting value to use for the polling interval
       * @default 1000
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /**
       * ## Select polling strategy
@@ -140,7 +141,7 @@ object mod {
       *
       * @default 'fixed-interval'
       */
-    var strategy: js.UndefOr[`fixed-interval` | `linear-backoff` | `exponential-backoff`] = js.native
+    var strategy: js.UndefOr[`fixed-interval` | `linear-backoff` | `exponential-backoff`] = js.undefined
     
     /**
       * ## Basic usage
@@ -156,12 +157,12 @@ object mod {
       * be a waste of time to continue to poll. To cancel polling early, return
       * `false` from the task function instead of a promise.
       */
-    def taskFn(): T | js.Thenable[T] = js.native
+    def taskFn(): T | js.Thenable[T]
     
     /**
       * For each poll attempt, reject after this timeout has passed
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object PromisePollerOptions {
     
@@ -172,7 +173,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PromisePollerOptionsMutableBuilder[Self <: PromisePollerOptions[_], T] (val x: Self with PromisePollerOptions[T]) extends AnyVal {
+    implicit class PromisePollerOptionsMutableBuilder[Self <: PromisePollerOptions[?], T] (val x: Self & PromisePollerOptions[T]) extends AnyVal {
       
       @scala.inline
       def setIncrement(value: Double): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.jsdeferred
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,63 +36,49 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @JSGlobal("Deferred.call")
-      @js.native
-      def call(fun: js.UndefOr[scala.Nothing], args: js.Any*): Deferred = js.native
       /* static member */
-      @JSGlobal("Deferred.call")
-      @js.native
-      def call(fun: js.Function, args: js.Any*): Deferred = js.native
+      @scala.inline
+      def call(fun: js.Function, args: js.Any*): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fun.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Deferred]
+      @scala.inline
+      def call(fun: Unit, args: js.Any*): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fun.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.chain")
-      @js.native
-      def chain(args: js.Any*): Deferred = js.native
+      @scala.inline
+      def chain(args: js.Any*): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(args.asInstanceOf[js.Any]).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.connect")
-      @js.native
-      def connect(funo: js.Any, options: String): DeferredizedFunction = js.native
+      @scala.inline
+      def connect(funo: js.Any, options: String): DeferredizedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(funo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DeferredizedFunction]
       /* static member */
-      @JSGlobal("Deferred.connect")
-      @js.native
-      def connect(funo: js.Function): DeferredizedFunction = js.native
-      @JSGlobal("Deferred.connect")
-      @js.native
-      def connect(funo: js.Function, options: ConnectOption): DeferredizedFunction = js.native
+      @scala.inline
+      def connect(funo: js.Function): DeferredizedFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(funo.asInstanceOf[js.Any]).asInstanceOf[DeferredizedFunction]
+      @scala.inline
+      def connect(funo: js.Function, options: ConnectOption): DeferredizedFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(funo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DeferredizedFunction]
       
       /* static member */
-      @JSGlobal("Deferred.define")
-      @js.native
-      def define(): js.Any = js.native
-      @JSGlobal("Deferred.define")
-      @js.native
-      def define(obj: js.UndefOr[scala.Nothing], list: js.Array[String]): js.Any = js.native
-      @JSGlobal("Deferred.define")
-      @js.native
-      def define(obj: js.Any): js.Any = js.native
-      @JSGlobal("Deferred.define")
-      @js.native
-      def define(obj: js.Any, list: js.Array[String]): js.Any = js.native
+      @scala.inline
+      def define(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")().asInstanceOf[js.Any]
+      @scala.inline
+      def define(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def define(obj: js.Any, list: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(obj.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def define(obj: Unit, list: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(obj.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       /* static member */
-      @JSGlobal("Deferred.earlier")
-      @js.native
-      def earlier(dl: js.Any): Deferred = js.native
+      @scala.inline
+      def earlier(dl: js.Any): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("earlier")(dl.asInstanceOf[js.Any]).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.isDeferred")
-      @js.native
-      def isDeferred(obj: js.Any): Boolean = js.native
+      @scala.inline
+      def isDeferred(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeferred")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /* static member */
-      @JSGlobal("Deferred.loop")
-      @js.native
-      def loop(n: Double, fun: FunctionWithNumber): Deferred = js.native
+      @scala.inline
+      def loop(n: Double, fun: FunctionWithNumber): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
       /* static member */
-      @JSGlobal("Deferred.loop")
-      @js.native
-      def loop(n: Loop_, fun: FunctionWithNumber): Deferred = js.native
+      @scala.inline
+      def loop(n: Loop_, fun: FunctionWithNumber): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
       
       /* static member */
       @JSGlobal("Deferred.methods")
@@ -103,87 +88,69 @@ object mod {
       def methods_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("methods")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSGlobal("Deferred.next")
-      @js.native
-      def next(fun: js.Function): Deferred = js.native
+      @scala.inline
+      def next(fun: js.Function): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("next")(fun.asInstanceOf[js.Any]).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.parallel")
-      @js.native
-      def parallel(dl: js.Any): Deferred = js.native
+      @scala.inline
+      def parallel(dl: js.Any): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(dl.asInstanceOf[js.Any]).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.register")
-      @js.native
-      def register(name: String, fun: DeferredizedFunction): Unit = js.native
+      @scala.inline
+      def register(name: String, fun: DeferredizedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(name.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @JSGlobal("Deferred.repeat")
-      @js.native
-      def repeat(n: Double, fun: FunctionWithNumber): Deferred = js.native
+      @scala.inline
+      def repeat(n: Double, fun: FunctionWithNumber): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.retry")
-      @js.native
-      def retry(retryCount: Double, funcDeferred: DeferredizedFunctionWithNumber): Deferred = js.native
-      @JSGlobal("Deferred.retry")
-      @js.native
-      def retry(retryCount: Double, funcDeferred: DeferredizedFunctionWithNumber, options: RetryOption): Deferred = js.native
+      @scala.inline
+      def retry(retryCount: Double, funcDeferred: DeferredizedFunctionWithNumber): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(retryCount.asInstanceOf[js.Any], funcDeferred.asInstanceOf[js.Any])).asInstanceOf[Deferred]
+      @scala.inline
+      def retry(retryCount: Double, funcDeferred: DeferredizedFunctionWithNumber, options: RetryOption): Deferred = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(retryCount.asInstanceOf[js.Any], funcDeferred.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Deferred]
       
       /* static member */
-      @JSGlobal("Deferred.wait")
-      @js.native
-      def wait_(n: Double): Deferred = js.native
+      @scala.inline
+      def wait_(n: Double): Deferred = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(n.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     }
     
-    @JSGlobal("call")
-    @js.native
-    def call(fun: js.UndefOr[scala.Nothing], args: js.Any*): Deferred = js.native
-    @JSGlobal("call")
-    @js.native
-    def call(fun: js.Function, args: js.Any*): Deferred = js.native
+    @scala.inline
+    def call(fun: js.Function, args: js.Any*): Deferred = (js.Dynamic.global.applyDynamic("call")(fun.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Deferred]
+    @scala.inline
+    def call(fun: Unit, args: js.Any*): Deferred = (js.Dynamic.global.applyDynamic("call")(fun.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Deferred]
     
-    @JSGlobal("chain")
-    @js.native
-    def chain(args: js.Any*): Deferred = js.native
+    @scala.inline
+    def chain(args: js.Any*): Deferred = js.Dynamic.global.applyDynamic("chain")(args.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     
-    @JSGlobal("earlier")
-    @js.native
-    def earlier(dl: js.Any): Deferred = js.native
+    @scala.inline
+    def earlier(dl: js.Any): Deferred = js.Dynamic.global.applyDynamic("earlier")(dl.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     
-    @JSGlobal("loop")
-    @js.native
-    def loop(n: Double, fun: FunctionWithNumber): Deferred = js.native
-    @JSGlobal("loop")
-    @js.native
-    def loop(n: Loop_, fun: FunctionWithNumber): Deferred = js.native
+    @scala.inline
+    def loop(n: Double, fun: FunctionWithNumber): Deferred = (js.Dynamic.global.applyDynamic("loop")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
+    @scala.inline
+    def loop(n: Loop_, fun: FunctionWithNumber): Deferred = (js.Dynamic.global.applyDynamic("loop")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
     
-    @JSGlobal("next")
-    @js.native
-    def next(fun: js.Function): Deferred = js.native
+    @scala.inline
+    def next(fun: js.Function): Deferred = js.Dynamic.global.applyDynamic("next")(fun.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     
-    @JSGlobal("parallel")
-    @js.native
-    def parallel(dl: js.Any): Deferred = js.native
+    @scala.inline
+    def parallel(dl: js.Any): Deferred = js.Dynamic.global.applyDynamic("parallel")(dl.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     
-    @JSGlobal("repeat")
-    @js.native
-    def repeat(n: Double, fun: FunctionWithNumber): Deferred = js.native
+    @scala.inline
+    def repeat(n: Double, fun: FunctionWithNumber): Deferred = (js.Dynamic.global.applyDynamic("repeat")(n.asInstanceOf[js.Any], fun.asInstanceOf[js.Any])).asInstanceOf[Deferred]
     
-    @JSGlobal("wait")
-    @js.native
-    def wait_(n: Double): Deferred = js.native
+    @scala.inline
+    def wait_(n: Double): Deferred = js.Dynamic.global.applyDynamic("wait")(n.asInstanceOf[js.Any]).asInstanceOf[Deferred]
     
-    @js.native
     trait ConnectOption extends StObject {
       
-      var args: js.UndefOr[js.Array[_]] = js.native
+      var args: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var ng: js.UndefOr[Double] = js.native
+      var ng: js.UndefOr[Double] = js.undefined
       
-      var ok: js.UndefOr[Double] = js.native
+      var ok: js.UndefOr[Double] = js.undefined
       
-      var target: js.Any = js.native
+      var target: js.Any
     }
     object ConnectOption {
       
@@ -197,7 +164,7 @@ object mod {
       implicit class ConnectOptionMutableBuilder[Self <: ConnectOption] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -230,10 +197,9 @@ object mod {
     
     type FunctionWithNumber = js.Function2[/* i */ Double, /* o */ js.UndefOr[js.Any], js.Any]
     
-    @js.native
     trait JQueryXHR extends StObject {
       
-      def next(fun: js.Function): Deferred = js.native
+      def next(fun: js.Function): Deferred
     }
     object JQueryXHR {
       
@@ -251,14 +217,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Loop_ extends StObject {
       
-      var begin: js.UndefOr[Double] = js.native
+      var begin: js.UndefOr[Double] = js.undefined
       
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
-      var step: js.UndefOr[Double] = js.native
+      var step: js.UndefOr[Double] = js.undefined
     }
     object Loop_ {
       
@@ -291,11 +256,10 @@ object mod {
       }
     }
     
-    @js.native
     trait RetryOption extends StObject {
       
       @JSName("wait")
-      var wait_FRetryOption: Double = js.native
+      var wait_FRetryOption: Double
     }
     object RetryOption {
       

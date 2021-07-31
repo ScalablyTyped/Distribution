@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information required for a TCP uptime check request.
   */
-@js.native
 trait SchemaTcpCheck extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTcpCheck extends StObject {
     * (specified within the MonitoredResource) to construct the full URL.
     * Required.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
 }
 object SchemaTcpCheck {
   

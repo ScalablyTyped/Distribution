@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxBookmark...
   */
-@js.native
 trait INxBookmark extends StObject {
   
   /**
     * List of selections for each state.
     */
-  var qStateData: js.Array[IAlternateStateData] = js.native
+  var qStateData: js.Array[IAlternateStateData]
   
   /**
     * Time when the bookmark was created.
     */
-  var qUtcModifyTime: Double = js.native
+  var qUtcModifyTime: Double
   
   /**
     * List of the variables in the app at the time the bookmark was created.
     */
-  var qVariableItems: js.Array[IBookmarkVariableItem] = js.native
+  var qVariableItems: js.Array[IBookmarkVariableItem]
 }
 object INxBookmark {
   

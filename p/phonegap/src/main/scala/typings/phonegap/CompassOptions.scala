@@ -2,15 +2,13 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompassOptions extends StObject {
   
-  var filter: js.UndefOr[Double] = js.native
+  var filter: js.UndefOr[Double] = js.undefined
   
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
 }
 object CompassOptions {
   

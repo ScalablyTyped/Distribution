@@ -2,18 +2,16 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-progress.SemanticUI.Progress.MetadataSettings._Impl, keyof semantic-ui-progress.SemanticUI.Progress.MetadataSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplPercent extends StObject {
   
-  var percent: js.UndefOr[String] = js.native
+  var percent: js.UndefOr[String] = js.undefined
   
-  var total: js.UndefOr[String] = js.native
+  var total: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplPercent {
   

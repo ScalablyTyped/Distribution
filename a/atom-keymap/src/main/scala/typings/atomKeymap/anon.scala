@@ -4,21 +4,19 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Command extends StObject {
     
     // e.g. 'ctrl-x ctrl-s'
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var keystrokes: js.UndefOr[String] = js.native
+    var keystrokes: js.UndefOr[String] = js.undefined
     
     // e.g. 'editor:backspace'
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
   }
   object Command {
     
@@ -51,10 +49,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultTarget extends StObject {
     
-    var defaultTarget: js.UndefOr[HTMLElement] = js.native
+    var defaultTarget: js.UndefOr[HTMLElement] = js.undefined
   }
   object DefaultTarget {
     
@@ -75,12 +72,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Priority extends StObject {
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object Priority {
     
@@ -107,10 +103,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PriorityNumber extends StObject {
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object PriorityNumber {
     

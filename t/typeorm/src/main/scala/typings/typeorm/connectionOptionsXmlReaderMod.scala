@@ -3,7 +3,6 @@ package typings.typeorm
 import typings.typeorm.connectionOptionsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionOptionsXmlReaderMod {
@@ -20,6 +19,6 @@ object connectionOptionsXmlReaderMod {
     /**
       * Reads xml file contents and returns them in a promise.
       */
-    /* protected */ def readXml(path: String): js.Promise[_] = js.native
+    /* protected */ def readXml(path: String): js.Promise[js.Any] = js.native
   }
 }

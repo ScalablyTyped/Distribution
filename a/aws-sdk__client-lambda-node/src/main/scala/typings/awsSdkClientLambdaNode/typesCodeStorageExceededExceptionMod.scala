@@ -5,25 +5,24 @@ import typings.awsSdkClientLambdaNode.publishVersionExceptionsUnionMod.PublishVe
 import typings.awsSdkClientLambdaNode.updateFunctionCodeExceptionsUnionMod.UpdateFunctionCodeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCodeStorageExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CodeStorageExceededExceptionDetails> * / any */ @js.native
-  trait CodeStorageExceededException
-    extends CreateFunctionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CodeStorageExceededExceptionDetails> * / any */ trait CodeStorageExceededException
+    extends StObject
+       with CreateFunctionExceptionsUnion
        with PublishVersionExceptionsUnion
        with UpdateFunctionCodeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException
   }
   object CodeStorageExceededException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.CodeStorageExceededException): CodeStorageExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CodeStorageExceededException = {
+      val __obj = js.Dynamic.literal(name = "CodeStorageExceededException")
       __obj.asInstanceOf[CodeStorageExceededException]
     }
     
@@ -35,18 +34,17 @@ object typesCodeStorageExceededExceptionMod {
     }
   }
   
-  @js.native
   trait CodeStorageExceededExceptionDetails extends StObject {
     
     /**
       * <p>The exception type.</p>
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object CodeStorageExceededExceptionDetails {
     

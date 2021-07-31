@@ -2,28 +2,27 @@ package typings.regexpp.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quantifier
-  extends BranchNode
+  extends StObject
      with NodeBase
+     with BranchNode
      with Element {
   
-  var element: QuantifiableElement = js.native
+  var element: QuantifiableElement
   
-  var greedy: Boolean = js.native
+  var greedy: Boolean
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
   @JSName("parent")
-  var parent_Quantifier: Alternative = js.native
+  var parent_Quantifier: Alternative
   
   @JSName("type")
-  var type_Quantifier: typings.regexpp.regexppStrings.Quantifier = js.native
+  var type_Quantifier: typings.regexpp.regexppStrings.Quantifier
 }
 object Quantifier {
   
@@ -36,11 +35,10 @@ object Quantifier {
     min: Double,
     parent: Alternative,
     raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.Quantifier
+    start: Double
   ): Quantifier = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], greedy = greedy.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Quantifier")
     __obj.asInstanceOf[Quantifier]
   }
   

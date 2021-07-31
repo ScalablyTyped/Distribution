@@ -11,10 +11,8 @@ import typings.uiGrid.mod.scrollEndHandler
 import typings.uiGrid.mod.sortChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasHeightChanged[TEntity] extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait CanvasHeightChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope Grid scope
     * @param {canvasHeightChangedHandler} handler Callback
     */
-  def canvasHeightChanged(scope: IScope, handler: canvasHeightChangedHandler): Unit = js.native
+  def canvasHeightChanged(scope: IScope, handler: canvasHeightChangedHandler): Unit
   
   /**
     * The visibility of a column has changed, the column itself is passed out as a parameter of the event
@@ -31,7 +29,7 @@ trait CanvasHeightChanged[TEntity] extends StObject {
     * @param {columnVisibilityChangedHandler} callBack Will be called when the event is emited.
     *        The function passes back the GridCol that has changed
     */
-  def columnVisibilityChanged(scope: IScope, callBack: columnVisibilityChangedHandler[TEntity]): Unit = js.native
+  def columnVisibilityChanged(scope: IScope, callBack: columnVisibilityChangedHandler[TEntity]): Unit
   
   /**
     * is raised after the filter is changed.
@@ -40,14 +38,14 @@ trait CanvasHeightChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope Grid scope
     * @param {filterChangedHandler} handler Callback
     */
-  def filterChanged(scope: IScope, handler: filterChangedHandler[TEntity]): Unit = js.native
+  def filterChanged(scope: IScope, handler: filterChangedHandler[TEntity]): Unit
   
   /**
     * is raised after the cache of visible rows is changed
     * @param {ng.IScope} scope Grid scope
     * @param {rowsRenderedHandler} handler callback
     */
-  def rowsRendered(scope: IScope, handler: rowsRenderedHandler[TEntity]): Unit = js.native
+  def rowsRendered(scope: IScope, handler: rowsRenderedHandler[TEntity]): Unit
   
   /**
     * is raised after the rows that are visible change.
@@ -58,28 +56,28 @@ trait CanvasHeightChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope Grid scope
     * @param {rowsVisibleChangedHandler} handler callback
     */
-  def rowsVisibleChanged(scope: IScope, handler: rowsVisibleChangedHandler[TEntity]): Unit = js.native
+  def rowsVisibleChanged(scope: IScope, handler: rowsVisibleChangedHandler[TEntity]): Unit
   
   /**
     * is raised when scroll begins. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollBeginHandler} handler callback
     */
-  def scrollBegin(scope: IScope, handler: scrollBeginHandler): Unit = js.native
+  def scrollBegin(scope: IScope, handler: scrollBeginHandler): Unit
   
   /**
     * is raised when scroll has finished. Is throttled, so won't be raised too frequently
     * @param {ng.IScope} scope Grid scope
     * @param {scrollEndHandler} handler callback
     */
-  def scrollEnd(scope: IScope, handler: scrollEndHandler): Unit = js.native
+  def scrollEnd(scope: IScope, handler: scrollEndHandler): Unit
   
   /**
     * is raised after the sort criteria on one or more columns have changed
     * @param {ng.IScope} scope Grid scope
     * @param {sortChangedHandler} handler callback
     */
-  def sortChanged(scope: IScope, handler: sortChangedHandler[TEntity]): Unit = js.native
+  def sortChanged(scope: IScope, handler: sortChangedHandler[TEntity]): Unit
 }
 object CanvasHeightChanged {
   
@@ -99,7 +97,7 @@ object CanvasHeightChanged {
   }
   
   @scala.inline
-  implicit class CanvasHeightChangedMutableBuilder[Self <: CanvasHeightChanged[_], TEntity] (val x: Self with CanvasHeightChanged[TEntity]) extends AnyVal {
+  implicit class CanvasHeightChangedMutableBuilder[Self <: CanvasHeightChanged[?], TEntity] (val x: Self & CanvasHeightChanged[TEntity]) extends AnyVal {
     
     @scala.inline
     def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = StObject.set(x, "canvasHeightChanged", js.Any.fromFunction2(value))

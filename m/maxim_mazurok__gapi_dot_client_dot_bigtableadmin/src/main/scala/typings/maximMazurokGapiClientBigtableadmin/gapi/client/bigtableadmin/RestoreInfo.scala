@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreInfo extends StObject {
   
   /** Information about the backup used to restore the table. The backup may no longer exist. */
-  var backupInfo: js.UndefOr[BackupInfo] = js.native
+  var backupInfo: js.UndefOr[BackupInfo] = js.undefined
   
   /** The type of the restore source. */
-  var sourceType: js.UndefOr[String] = js.native
+  var sourceType: js.UndefOr[String] = js.undefined
 }
 object RestoreInfo {
   

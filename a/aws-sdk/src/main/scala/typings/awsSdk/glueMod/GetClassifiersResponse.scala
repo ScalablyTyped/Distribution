@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetClassifiersResponse extends StObject {
   
   /**
     * The requested list of classifier objects.
     */
-  var Classifiers: js.UndefOr[ClassifierList] = js.native
+  var Classifiers: js.UndefOr[ClassifierList] = js.undefined
   
   /**
     * A continuation token.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object GetClassifiersResponse {
   

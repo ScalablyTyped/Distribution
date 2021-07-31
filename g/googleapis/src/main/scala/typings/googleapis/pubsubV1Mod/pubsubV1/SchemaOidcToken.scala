@@ -2,14 +2,12 @@ package typings.googleapis.pubsubV1Mod.pubsubV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information needed for generating an [OpenID Connect
   * token](https://developers.google.com/identity/protocols/OpenIDConnect).
   */
-@js.native
 trait SchemaOidcToken extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaOidcToken extends StObject {
     * token audience here: https://tools.ietf.org/html/rfc7519#section-4.1.3
     * Note: if not specified, the Push endpoint URL will be used.
     */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account
@@ -29,7 +27,7 @@ trait SchemaOidcToken extends StObject {
     * UpdateSubscription, and ModifyPushConfig RPCs) must have the
     * iam.serviceAccounts.actAs permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaOidcToken {
   

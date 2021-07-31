@@ -22,12 +22,10 @@ import typings.menubar.menubarStrings.trayLeft
 import typings.menubar.menubarStrings.trayRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -42,12 +40,12 @@ object typesMod {
       * });
       * ```
       */
-    var browserWindow: BrowserWindowConstructorOptions = js.native
+    var browserWindow: BrowserWindowConstructorOptions
     
     /**
       * The app source directory.
       */
-    var dir: String = js.native
+    var dir: String
     
     /**
       * The png icon to use for the menubar. A good size to start with is 20x20.
@@ -55,7 +53,7 @@ object typesMod {
       * the end of the name, so icon.png and icon@2x.png and Electron will
       * automatically use your @2x version on retina screens.
       */
-    var icon: js.UndefOr[String | NativeImage_] = js.native
+    var icon: js.UndefOr[String | NativeImage_] = js.undefined
     
     /**
       * The URL to load the menubar's browserWindow with. The url can be a remote
@@ -65,7 +63,7 @@ object typesMod {
       * @default `file:// + options.dir + index.html`
       * @see https://electronjs.org/docs/api/browser-window#winloadurlurl-options
       */
-    var index: String | `false` = js.native
+    var index: String | `false`
     
     /**
       * The options passed when loading the index URL in the menubar's
@@ -74,40 +72,40 @@ object typesMod {
       * @default `{}`
       * @see https://electronjs.org/docs/api/browser-window#winloadurlurl-options
       */
-    var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.native
+    var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.undefined
     
     /**
       * Create BrowserWindow instance before it is used -- increasing resource
       * usage, but making the click on the menubar load faster.
       */
-    var preloadWindow: js.UndefOr[Boolean] = js.native
+    var preloadWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configure the visibility of the application dock icon, macOS only. Calls
       * [`app.dock.hide`](https://electronjs.org/docs/api/app#appdockhide-macos).
       */
-    var showDockIcon: js.UndefOr[Boolean] = js.native
+    var showDockIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes the window available on all OS X workspaces. Calls
       * [`setVisibleOnAllWorkspaces`](https://electronjs.org/docs/api/browser-window#winsetvisibleonallworkspacesvisible-options).
       */
-    var showOnAllWorkspaces: js.UndefOr[Boolean] = js.native
+    var showOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the window on 'right-click' event instead of regular 'click'.
       */
-    var showOnRightClick: js.UndefOr[Boolean] = js.native
+    var showOnRightClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Menubar tray icon tooltip text. Calls [`tray.setTooltip`](https://electronjs.org/docs/api/tray#traysettooltiptooltip).
       */
-    var tooltip: String = js.native
+    var tooltip: String
     
     /**
       * An electron Tray instance. If provided, `options.icon` will be ignored.
       */
-    var tray: js.UndefOr[Tray] = js.native
+    var tray: js.UndefOr[Tray] = js.undefined
     
     /**
       * Sets the window position (x and y will still override this), check
@@ -115,7 +113,7 @@ object typesMod {
       */
     var windowPosition: js.UndefOr[
         trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

@@ -9,10 +9,13 @@ import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
+  
+  @JSImport("openapi-framework/dist/src/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object METHOD_ALIASES {
     
@@ -118,119 +121,90 @@ object utilMod {
     def put_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("put")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("openapi-framework/dist/src/util", "addOperationTagToApiDoc")
-  @js.native
-  def addOperationTagToApiDoc(apiDoc: js.Any, tag: js.Any): Unit = js.native
+  @scala.inline
+  def addOperationTagToApiDoc(apiDoc: js.Any, tag: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addOperationTagToApiDoc")(apiDoc.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openapi-framework/dist/src/util", "allowsCoercionFeature")
-  @js.native
-  def allowsCoercionFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = js.native
+  @scala.inline
+  def allowsCoercionFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allowsCoercionFeature")(framework.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "allowsDefaultsFeature")
-  @js.native
-  def allowsDefaultsFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = js.native
+  @scala.inline
+  def allowsDefaultsFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allowsDefaultsFeature")(framework.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "allowsFeatures")
-  @js.native
-  def allowsFeatures(framework: IOpenAPIFramework, docs: js.Any*): Boolean = js.native
+  @scala.inline
+  def allowsFeatures(framework: IOpenAPIFramework, docs: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allowsFeatures")(framework.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "allowsResponseValidationFeature")
-  @js.native
-  def allowsResponseValidationFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = js.native
+  @scala.inline
+  def allowsResponseValidationFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allowsResponseValidationFeature")(framework.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "allowsValidationFeature")
-  @js.native
-  def allowsValidationFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = js.native
+  @scala.inline
+  def allowsValidationFeature(framework: IOpenAPIFramework, docs: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("allowsValidationFeature")(framework.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "assertRegExpAndSecurity")
-  @js.native
-  def assertRegExpAndSecurity(framework: js.Any, tuple: js.Any): Unit = js.native
+  @scala.inline
+  def assertRegExpAndSecurity(framework: js.Any, tuple: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertRegExpAndSecurity")(framework.asInstanceOf[js.Any], tuple.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("openapi-framework/dist/src/util", "byDefault")
-  @js.native
-  def byDefault(param: js.Any): Boolean = js.native
+  @scala.inline
+  def byDefault(param: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("byDefault")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "byDirectory")
-  @js.native
-  def byDirectory(el: js.Any): js.Any = js.native
+  @scala.inline
+  def byDirectory(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("byDirectory")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "byMethods")
-  @js.native
-  def byMethods(name: js.Any): Boolean = js.native
+  @scala.inline
+  def byMethods(name: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("byMethods")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "byRoute")
-  @js.native
-  def byRoute(a: js.Any, b: js.Any): Double = js.native
+  @scala.inline
+  def byRoute(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byRoute")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("openapi-framework/dist/src/util", "byString")
-  @js.native
-  def byString(el: js.Any): Boolean = js.native
+  @scala.inline
+  def byString(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("byString")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "byTag")
-  @js.native
-  def byTag(a: js.Any, b: js.Any): `1` | `-1` | `0` = js.native
+  @scala.inline
+  def byTag(a: js.Any, b: js.Any): `1` | `-1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("byTag")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `-1` | `0`]
   
-  @JSImport("openapi-framework/dist/src/util", "copy")
-  @js.native
-  def copy(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def copy(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "getAdditionalFeatures")
-  @js.native
-  def getAdditionalFeatures(framework: IOpenAPIFramework, logger: Logger, docs: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def getAdditionalFeatures(framework: IOpenAPIFramework, logger: Logger, docs: js.Any*): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAdditionalFeatures")(framework.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], docs.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("openapi-framework/dist/src/util", "getBasePathsFromServers")
-  @js.native
-  def getBasePathsFromServers(servers: js.Array[ServerObject]): js.Array[default] = js.native
+  @scala.inline
+  def getBasePathsFromServers(servers: js.Array[ServerObject]): js.Array[default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBasePathsFromServers")(servers.asInstanceOf[js.Any]).asInstanceOf[js.Array[default]]
   
-  @JSImport("openapi-framework/dist/src/util", "getMethodDoc")
-  @js.native
-  def getMethodDoc(operationHandler: js.Any): js.Any = js.native
+  @scala.inline
+  def getMethodDoc(operationHandler: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMethodDoc")(operationHandler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "getSecurityDefinitionByPath")
-  @js.native
-  def getSecurityDefinitionByPath(openapiPath: js.Any, pathSecurity: js.Any): js.Any = js.native
+  @scala.inline
+  def getSecurityDefinitionByPath(openapiPath: js.Any, pathSecurity: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityDefinitionByPath")(openapiPath.asInstanceOf[js.Any], pathSecurity.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "handleFilePath")
-  @js.native
-  def handleFilePath(filePath: js.Any): js.Any = js.native
+  @scala.inline
+  def handleFilePath(filePath: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleFilePath")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "handleYaml")
-  @js.native
-  def handleYaml(apiDoc: js.Any): js.Any = js.native
+  @scala.inline
+  def handleYaml(apiDoc: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleYaml")(apiDoc.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "injectDependencies")
-  @js.native
-  def injectDependencies(handlers: js.Any, dependencies: js.Any): js.Any = js.native
+  @scala.inline
+  def injectDependencies(handlers: js.Any, dependencies: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("injectDependencies")(handlers.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "isDynamicRoute")
-  @js.native
-  def isDynamicRoute(route: js.Any): Boolean = js.native
+  @scala.inline
+  def isDynamicRoute(route: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicRoute")(route.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("openapi-framework/dist/src/util", "resolveParameterRefs")
-  @js.native
-  def resolveParameterRefs(framework: IOpenAPIFramework, parameters: js.Any, apiDoc: js.Any): js.Any = js.native
+  @scala.inline
+  def resolveParameterRefs(framework: IOpenAPIFramework, parameters: js.Any, apiDoc: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveParameterRefs")(framework.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], apiDoc.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "resolveRequestBodyRefs")
-  @js.native
-  def resolveRequestBodyRefs(framework: IOpenAPIFramework, requestBody: js.Any, apiDoc: js.Any): js.Any = js.native
+  @scala.inline
+  def resolveRequestBodyRefs(framework: IOpenAPIFramework, requestBody: js.Any, apiDoc: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequestBodyRefs")(framework.asInstanceOf[js.Any], requestBody.asInstanceOf[js.Any], apiDoc.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "resolveResponseRefs")
-  @js.native
-  def resolveResponseRefs(framework: IOpenAPIFramework, responses: js.Any, apiDoc: js.Any, route: js.Any): js.Object = js.native
+  @scala.inline
+  def resolveResponseRefs(framework: IOpenAPIFramework, responses: js.Any, apiDoc: js.Any, route: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveResponseRefs")(framework.asInstanceOf[js.Any], responses.asInstanceOf[js.Any], apiDoc.asInstanceOf[js.Any], route.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("openapi-framework/dist/src/util", "sortApiDocTags")
-  @js.native
-  def sortApiDocTags(apiDoc: js.Any): Unit = js.native
+  @scala.inline
+  def sortApiDocTags(apiDoc: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortApiDocTags")(apiDoc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("openapi-framework/dist/src/util", "sortOperationDocTags")
-  @js.native
-  def sortOperationDocTags(operationDoc: js.Any): Unit = js.native
+  @scala.inline
+  def sortOperationDocTags(operationDoc: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sortOperationDocTags")(operationDoc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("openapi-framework/dist/src/util", "toAbsolutePath")
-  @js.native
-  def toAbsolutePath(part: js.Any): js.Any = js.native
+  @scala.inline
+  def toAbsolutePath(part: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toAbsolutePath")(part.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("openapi-framework/dist/src/util", "withNoDuplicates")
-  @js.native
-  def withNoDuplicates(arr: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def withNoDuplicates(arr: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("withNoDuplicates")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
 }

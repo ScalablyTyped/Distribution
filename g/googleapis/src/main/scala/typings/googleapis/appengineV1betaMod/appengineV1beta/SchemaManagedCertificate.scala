@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A certificate managed by App Engine.
   */
-@js.native
 trait SchemaManagedCertificate extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaManagedCertificate extends StObject {
     * certificate expires. Renewal errors can be tracked via
     * ManagementStatus.@OutputOnly
     */
-  var lastRenewalTime: js.UndefOr[String] = js.native
+  var lastRenewalTime: js.UndefOr[String] = js.undefined
   
   /**
     * Status of certificate management. Refers to the most recent certificate
     * acquisition or renewal attempt.@OutputOnly
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedCertificate {
   

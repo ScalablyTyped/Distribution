@@ -2,13 +2,11 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsBase64Options extends StObject {
   
-  var urlSafe: js.UndefOr[Boolean] = js.native
+  var urlSafe: js.UndefOr[Boolean] = js.undefined
 }
 object IsBase64Options {
   

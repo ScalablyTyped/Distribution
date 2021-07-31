@@ -2,41 +2,39 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsStats extends StObject {
   
-  def getAverageCpc(): Double = js.native
+  def getAverageCpc(): Double
   
-  def getAverageCpm(): Double = js.native
+  def getAverageCpm(): Double
   
-  def getAverageCpv(): Double = js.native
+  def getAverageCpv(): Double
   
-  def getAveragePageviews(): Double = js.native
+  def getAveragePageviews(): Double
   
-  def getAveragePosition(): Double = js.native
+  def getAveragePosition(): Double
   
-  def getAverageTimeOnSite(): Double = js.native
+  def getAverageTimeOnSite(): Double
   
-  def getBounceRage(): Double = js.native
+  def getBounceRage(): Double
   
-  def getClicks(): Double = js.native
+  def getClicks(): Double
   
-  def getConversionRate(): Double = js.native
+  def getConversionRate(): Double
   
-  def getConversions(): Double = js.native
+  def getConversions(): Double
   
-  def getCost(): Double = js.native
+  def getCost(): Double
   
-  def getCtr(): Double = js.native
+  def getCtr(): Double
   
-  def getImpressions(): Double = js.native
+  def getImpressions(): Double
   
-  def getViewRate(): Double = js.native
+  def getViewRate(): Double
   
-  def getViews(): Double = js.native
+  def getViews(): Double
 }
 object AdWordsStats {
   

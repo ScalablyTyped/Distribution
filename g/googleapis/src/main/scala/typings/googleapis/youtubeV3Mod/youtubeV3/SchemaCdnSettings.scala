@@ -2,40 +2,38 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Brief description of the live stream cdn settings.
   */
-@js.native
 trait SchemaCdnSettings extends StObject {
   
   /**
     * The format of the video stream that you are sending to Youtube.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * The frame rate of the inbound video data.
     */
-  var frameRate: js.UndefOr[String] = js.native
+  var frameRate: js.UndefOr[String] = js.undefined
   
   /**
     * The ingestionInfo object contains information that YouTube provides that
     * you need to transmit your RTMP or HTTP stream to YouTube.
     */
-  var ingestionInfo: js.UndefOr[SchemaIngestionInfo] = js.native
+  var ingestionInfo: js.UndefOr[SchemaIngestionInfo] = js.undefined
   
   /**
     * The method or protocol used to transmit the video stream.
     */
-  var ingestionType: js.UndefOr[String] = js.native
+  var ingestionType: js.UndefOr[String] = js.undefined
   
   /**
     * The resolution of the inbound video data.
     */
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
 }
 object SchemaCdnSettings {
   

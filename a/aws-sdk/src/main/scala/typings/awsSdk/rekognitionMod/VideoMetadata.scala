@@ -2,41 +2,39 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoMetadata extends StObject {
   
   /**
     * Type of compression used in the analyzed video. 
     */
-  var Codec: js.UndefOr[String] = js.native
+  var Codec: js.UndefOr[String] = js.undefined
   
   /**
     * Length of the video in milliseconds.
     */
-  var DurationMillis: js.UndefOr[ULong] = js.native
+  var DurationMillis: js.UndefOr[ULong] = js.undefined
   
   /**
     * Format of the analyzed video. Possible values are MP4, MOV and AVI. 
     */
-  var Format: js.UndefOr[String] = js.native
+  var Format: js.UndefOr[String] = js.undefined
   
   /**
     * Vertical pixel dimension of the video.
     */
-  var FrameHeight: js.UndefOr[ULong] = js.native
+  var FrameHeight: js.UndefOr[ULong] = js.undefined
   
   /**
     * Number of frames per second in the video.
     */
-  var FrameRate: js.UndefOr[Float] = js.native
+  var FrameRate: js.UndefOr[Float] = js.undefined
   
   /**
     * Horizontal pixel dimension of the video.
     */
-  var FrameWidth: js.UndefOr[ULong] = js.native
+  var FrameWidth: js.UndefOr[ULong] = js.undefined
 }
 object VideoMetadata {
   

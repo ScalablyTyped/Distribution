@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
 import typings.arcgisJsApi.arcgisJsApiStrings.road
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BingMapsLayer extends BaseTileLayer {
+trait BingMapsLayer
+  extends StObject
+     with BaseTileLayer {
   
   /**
     * Expose Bing logo url.

@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceUtilizationReport extends StObject {
   
   /** Per container information. Key: container name. */
   var containers: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[js.Any]
+  ] = js.undefined
   
   /** CPU utilization samples. */
-  var cpuTime: js.UndefOr[js.Array[CPUTime]] = js.native
+  var cpuTime: js.UndefOr[js.Array[CPUTime]] = js.undefined
   
   /** Memory utilization samples. */
-  var memoryInfo: js.UndefOr[js.Array[MemInfo]] = js.native
+  var memoryInfo: js.UndefOr[js.Array[MemInfo]] = js.undefined
 }
 object ResourceUtilizationReport {
   
@@ -37,7 +35,7 @@ object ResourceUtilizationReport {
     def setContainers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.ResourceUtilizationReport & TopLevel[js.Any]
     ): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     
     @scala.inline

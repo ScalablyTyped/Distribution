@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqsAction extends StObject {
   
   /**
     * The URL of the Amazon SQS queue.
     */
-  var queueUrl: QueueUrl = js.native
+  var queueUrl: QueueUrl
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * Specifies whether to use Base64 encoding.
     */
-  var useBase64: js.UndefOr[UseBase64] = js.native
+  var useBase64: js.UndefOr[UseBase64] = js.undefined
 }
 object SqsAction {
   

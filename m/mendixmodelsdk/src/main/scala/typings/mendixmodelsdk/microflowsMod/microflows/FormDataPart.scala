@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -61,9 +60,8 @@ object FormDataPart {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart.create")
-  @js.native
-  def create(model: IModel): FormDataPart = js.native
+  @scala.inline
+  def create(model: IModel): FormDataPart = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[FormDataPart]
   
   /**
     * Creates and returns a new FormDataPart instance in the SDK and on the server.
@@ -74,9 +72,8 @@ object FormDataPart {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart.createIn")
-  @js.native
-  def createIn(container: FormDataRequestHandling): FormDataPart = js.native
+  @scala.inline
+  def createIn(container: FormDataRequestHandling): FormDataPart = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[FormDataPart]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.FormDataPart.structureTypeName")

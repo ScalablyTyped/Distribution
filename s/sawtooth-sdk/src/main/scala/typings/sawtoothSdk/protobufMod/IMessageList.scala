@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessageList extends StObject {
   
   /** MessageList messages */
-  var messages: js.UndefOr[js.Array[IMessage] | Null] = js.native
+  var messages: js.UndefOr[js.Array[IMessage] | Null] = js.undefined
 }
 object IMessageList {
   

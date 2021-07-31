@@ -17,35 +17,33 @@ import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macOptionsMod {
   
-  @js.native
   trait DmgContent extends StObject {
     
     /**
       * The name of the file within the DMG. Defaults to basename of `path`.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The path of the file within the DMG.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[link | file | dir] = js.native
+    var `type`: js.UndefOr[link | file | dir] = js.undefined
     
     /**
       * The device-independent pixel offset from the left of the window to the **center** of the icon.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The device-independent pixel offset from the top of the window to the **center** of the icon.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object DmgContent {
     
@@ -84,61 +82,62 @@ object macOptionsMod {
     }
   }
   
-  @js.native
-  trait DmgOptions extends TargetSpecificOptions {
+  trait DmgOptions
+    extends StObject
+       with TargetSpecificOptions {
     
     /**
       * The path to background image (default: `build/background.tiff` or `build/background.png` if exists). The resolution of this file determines the resolution of the installer window.
       * If background is not specified, use `window.size`. Default locations expected background size to be 540x380.
       * @see [DMG with Retina background support](http://stackoverflow.com/a/11204769/1910191).
       */
-    var background: js.UndefOr[String | Null] = js.native
+    var background: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The background color (accepts css colors). Defaults to `#ffffff` (white) if no background image.
       */
-    var backgroundColor: js.UndefOr[String | Null] = js.native
+    var backgroundColor: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The content — to customize icon locations. The x and y coordinates refer to the position of the **center** of the icon (at 1x scale), and do not take the label into account.
       */
-    var contents: js.UndefOr[js.Array[DmgContent]] = js.native
+    var contents: js.UndefOr[js.Array[DmgContent]] = js.undefined
     
     /**
       * The disk image format. `ULFO` (lzfse-compressed image (OS X 10.11+ only)).
       * @default UDZO
       */
-    var format: js.UndefOr[UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO] = js.native
+    var format: js.UndefOr[UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO] = js.undefined
     
     /**
       * The path to DMG icon (volume icon), which will be shown when mounted, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to the application icon (`build/icon.icns`).
       */
-    var icon: js.UndefOr[String | Null] = js.native
+    var icon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The size of all the icons inside the DMG.
       * @default 80
       */
-    val iconSize: js.UndefOr[Double | Null] = js.native
+    val iconSize: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * The size of all the icon texts inside the DMG.
       * @default 12
       */
-    val iconTextSize: js.UndefOr[Double | Null] = js.native
+    val iconTextSize: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Whether to create internet-enabled disk image (when it is downloaded using a browser it will automatically decompress the image, put the application on the desktop, unmount and remove the disk image file).
       * @default false
       */
-    val internetEnabled: js.UndefOr[Boolean] = js.native
+    val internetEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to sign the DMG or not. Signing is not required and will lead to unwanted errors in combination with notarization requirements.
       * @default false
       */
-    val sign: js.UndefOr[Boolean] = js.native
+    val sign: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The title of the produced DMG, which will be shown when mounted (volume name).
@@ -146,7 +145,7 @@ object macOptionsMod {
       * Macro `${productName}`, `${version}` and `${name}` are supported.
       * @default ${productName} ${version}
       */
-    val title: js.UndefOr[String | Null] = js.native
+    val title: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The DMG window position and size. With y co-ordinates running from bottom to top.
@@ -154,13 +153,13 @@ object macOptionsMod {
       * The Finder makes sure that the window will be on the user’s display, so if you want your window at the top left of the display you could use `"x": 0, "y": 100000` as the x, y co-ordinates.
       * It is not to be possible to position the window relative to the [top left](https://github.com/electron-userland/electron-builder/issues/3990#issuecomment-512960957) or relative to the center of the user’s screen.
       */
-    var window: js.UndefOr[DmgWindow] = js.native
+    var window: js.UndefOr[DmgWindow] = js.undefined
     
     /**
       * @private
       * @default true
       */
-    var writeUpdateInfo: js.UndefOr[Boolean] = js.native
+    var writeUpdateInfo: js.UndefOr[Boolean] = js.undefined
   }
   object DmgOptions {
     
@@ -268,30 +267,29 @@ object macOptionsMod {
     }
   }
   
-  @js.native
   trait DmgWindow extends StObject {
     
     /**
       * The height. Defaults to background image height or 380.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The width. Defaults to background image width or 540.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * The X position relative to left of the screen.
       * @default 400
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The Y position relative to bottom of the screen.
       * @default 100
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object DmgWindow {
     
@@ -330,23 +328,24 @@ object macOptionsMod {
     }
   }
   
-  @js.native
-  trait MacConfiguration extends PlatformSpecificBuildOptions {
+  trait MacConfiguration
+    extends StObject
+       with PlatformSpecificBuildOptions {
     
     /**
       * Paths of any extra binaries that need to be signed.
       */
-    val binaries: js.UndefOr[js.Array[String] | Null] = js.native
+    val binaries: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The `CFBundleShortVersionString`. Do not use it unless you need to.
       */
-    val bundleShortVersion: js.UndefOr[String | Null] = js.native
+    val bundleShortVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The `CFBundleVersion`. Do not use it unless [you need to](https://github.com/electron-userland/electron-builder/issues/565#issuecomment-230678643).
       */
-    val bundleVersion: js.UndefOr[String | Null] = js.native
+    val bundleVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The application category type, as shown in the Finder via *View -> Arrange by Application Category* when viewing the Applications directory.
@@ -355,30 +354,30 @@ object macOptionsMod {
       *
       * Valid values are listed in [Apple's documentation](https://developer.apple.com/library/ios/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW8).
       */
-    val category: js.UndefOr[String | Null] = js.native
+    val category: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    val cscInstallerKeyPassword: js.UndefOr[String | Null] = js.native
+    val cscInstallerKeyPassword: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    val cscInstallerLink: js.UndefOr[String | Null] = js.native
+    val cscInstallerLink: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether a dark mode is supported. If your app does have a dark mode, you can make your app follow the system-wide dark mode setting.
       * @default false
       */
-    val darkModeSupport: js.UndefOr[Boolean] = js.native
+    val darkModeSupport: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The electron locales. By default Electron locales used as is.
       */
-    val electronLanguages: js.UndefOr[js.Array[String] | String] = js.native
+    val electronLanguages: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * The path to entitlements file for signing the app. `build/entitlements.mac.plist` will be used if exists (it is a recommended way to set).
       * MAS entitlements is specified in the [mas](/configuration/mas).
       */
-    val entitlements: js.UndefOr[String | Null] = js.native
+    val entitlements: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to child entitlements which inherit the security settings for signing frameworks and bundles of a distribution. `build/entitlements.mac.inherit.plist` will be used if exists (it is a recommended way to set).
@@ -386,104 +385,104 @@ object macOptionsMod {
       *
       * This option only applies when signing with `entitlements` provided.
       */
-    val entitlementsInherit: js.UndefOr[String | Null] = js.native
+    val entitlementsInherit: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Path to login helper entitlement file.
       * When using App Sandbox, the the `com.apple.security.inherit` key that is normally in the inherited entitlements cannot be inherited since the login helper is a standalone executable.
       * Defaults to the value provided for `entitlements`. This option only applies when signing with `entitlements` provided.
       */
-    val entitlementsLoginHelper: js.UndefOr[String | Null] = js.native
+    val entitlementsLoginHelper: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The extra entries for `Info.plist`.
       */
-    val extendInfo: js.UndefOr[js.Any] = js.native
+    val extendInfo: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Extra files to put in archive. Not applicable for `tar.*`.
       */
-    val extraDistFiles: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val extraDistFiles: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * Whether to let electron-osx-sign validate the signing or not.
       * @default false
       */
-    val gatekeeperAssess: js.UndefOr[Boolean] = js.native
+    val gatekeeperAssess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether your app has to be signed with hardened runtime.
       * @default true
       */
-    val hardenedRuntime: js.UndefOr[Boolean] = js.native
+    val hardenedRuntime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The bundle identifier to use in the application helper's plist.
       * @default ${appBundleIdentifier}.helper
       */
-    val helperBundleId: js.UndefOr[String | Null] = js.native
+    val helperBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The bundle identifier to use in the EH helper's plist.
       * @default ${appBundleIdentifier}.helper.EH
       */
-    val helperEHBundleId: js.UndefOr[String | Null] = js.native
+    val helperEHBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The bundle identifier to use in the GPU helper's plist.
       * @default ${appBundleIdentifier}.helper.GPU
       */
-    val helperGPUBundleId: js.UndefOr[String | Null] = js.native
+    val helperGPUBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The bundle identifier to use in the NP helper's plist.
       * @default ${appBundleIdentifier}.helper.NP
       */
-    val helperNPBundleId: js.UndefOr[String | Null] = js.native
+    val helperNPBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The bundle identifier to use in the Plugin helper's plist.
       * @default ${appBundleIdentifier}.helper.Plugin
       */
-    val helperPluginBundleId: js.UndefOr[String | Null] = js.native
+    val helperPluginBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The bundle identifier to use in the Renderer helper's plist.
       * @default ${appBundleIdentifier}.helper.Renderer
       */
-    val helperRendererBundleId: js.UndefOr[String | Null] = js.native
+    val helperRendererBundleId: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The name of certificate to use when signing. Consider using environment variables [CSC_LINK or CSC_NAME](/code-signing) instead of specifying this option.
       * MAS installer identity is specified in the [mas](/configuration/mas).
       */
-    val identity: js.UndefOr[String | Null] = js.native
+    val identity: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The minimum version of macOS required for the app to run. Corresponds to `LSMinimumSystemVersion`.
       */
-    val minimumSystemVersion: js.UndefOr[String | Null] = js.native
+    val minimumSystemVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to the provisioning profile to use when signing, absolute or relative to the app root.
       */
-    val provisioningProfile: js.UndefOr[String | Null] = js.native
+    val provisioningProfile: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Path of [requirements file](https://developer.apple.com/library/mac/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html) used in signing. Not applicable for MAS.
       */
-    val requirements: js.UndefOr[String | Null] = js.native
+    val requirements: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Regex or an array of regex's that signal skipping signing a file.
       */
-    val signIgnore: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val signIgnore: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * Whether to let electron-osx-sign verify the contents or not.
       * @default true
       */
-    val strictVerify: js.UndefOr[js.Array[String] | String | Boolean] = js.native
+    val strictVerify: js.UndefOr[js.Array[String] | String | Boolean] = js.undefined
     
     /**
       * The target package type: list of `default`, `dmg`, `mas`, `mas-dev`, `pkg`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`. Defaults to `default` (dmg and zip for Squirrel.Mac).
@@ -491,13 +490,13 @@ object macOptionsMod {
     @JSName("target")
     val target_MacConfiguration: js.UndefOr[
         (js.Array[MacOsTargetName | TargetConfiguration]) | MacOsTargetName | TargetConfiguration | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether to sign app for development or for distribution.
       * @default distribution
       */
-    val `type`: js.UndefOr[distribution | development | Null] = js.native
+    val `type`: js.UndefOr[distribution | development | Null] = js.undefined
   }
   object MacConfiguration {
     
@@ -827,8 +826,9 @@ object macOptionsMod {
     def zip: typings.appBuilderLib.appBuilderLibStrings.zip = "zip".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.zip]
   }
   
-  @js.native
-  trait MasConfiguration extends MacConfiguration
+  trait MasConfiguration
+    extends StObject
+       with MacConfiguration
   object MasConfiguration {
     
     @scala.inline

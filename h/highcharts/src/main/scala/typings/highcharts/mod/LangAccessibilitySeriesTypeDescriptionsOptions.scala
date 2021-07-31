@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LangAccessibilitySeriesTypeDescriptionsOptions extends StObject {
   
-  var arearange: js.UndefOr[String] = js.native
+  var arearange: js.UndefOr[String] = js.undefined
   
-  var areasplinerange: js.UndefOr[String] = js.native
+  var areasplinerange: js.UndefOr[String] = js.undefined
   
-  var boxplot: js.UndefOr[String] = js.native
+  var boxplot: js.UndefOr[String] = js.undefined
   
-  var bubble: js.UndefOr[String] = js.native
+  var bubble: js.UndefOr[String] = js.undefined
   
-  var columnrange: js.UndefOr[String] = js.native
+  var columnrange: js.UndefOr[String] = js.undefined
   
-  var errorbar: js.UndefOr[String] = js.native
+  var errorbar: js.UndefOr[String] = js.undefined
   
-  var funnel: js.UndefOr[String] = js.native
+  var funnel: js.UndefOr[String] = js.undefined
   
-  var pyramid: js.UndefOr[String] = js.native
+  var pyramid: js.UndefOr[String] = js.undefined
   
-  var waterfall: js.UndefOr[String] = js.native
+  var waterfall: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilitySeriesTypeDescriptionsOptions {
   

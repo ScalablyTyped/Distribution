@@ -2,24 +2,22 @@ package typings.firefoxWebextBrowser.browser.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object containing information about the current browser. */
-@js.native
 trait BrowserInfo extends StObject {
   
   /** The browser's build ID/date, for example '20160101'. */
-  var buildID: String = js.native
+  var buildID: String
   
   /** The name of the browser, for example 'Firefox'. */
-  var name: String = js.native
+  var name: String
   
   /** The name of the browser vendor, for example 'Mozilla'. */
-  var vendor: String = js.native
+  var vendor: String
   
   /** The browser's version, for example '42.0.0' or '0.8.1pre'. */
-  var version: String = js.native
+  var version: String
 }
 object BrowserInfo {
   

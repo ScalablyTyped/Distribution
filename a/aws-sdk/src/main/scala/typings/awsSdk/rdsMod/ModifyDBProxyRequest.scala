@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBProxyRequest extends StObject {
   
   /**
     * The new authentication settings for the DBProxy.
     */
-  var Auth: js.UndefOr[UserAuthConfigList] = js.native
+  var Auth: js.UndefOr[UserAuthConfigList] = js.undefined
   
   /**
     * The identifier for the DBProxy to modify.
     */
-  var DBProxyName: String = js.native
+  var DBProxyName: String
   
   /**
     * Whether the proxy includes detailed information about SQL statements in its logs. This information helps you to debug issues involving SQL behavior or the performance and scalability of the proxy connections. The debug information includes the text of SQL statements that you submit through the proxy. Thus, only enable this setting when needed for debugging, and only when you have security measures in place to safeguard any sensitive information that appears in the logs.
     */
-  var DebugLogging: js.UndefOr[BooleanOptional] = js.native
+  var DebugLogging: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The number of seconds that a connection to the proxy can be inactive before the proxy disconnects it. You can set this value higher or lower than the connection timeout limit for the associated database.
     */
-  var IdleClientTimeout: js.UndefOr[IntegerOptional] = js.native
+  var IdleClientTimeout: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The new identifier for the DBProxy. An identifier must begin with a letter and must contain only ASCII letters, digits, and hyphens; it can't end with a hyphen or contain two consecutive hyphens.
     */
-  var NewDBProxyName: js.UndefOr[String] = js.native
+  var NewDBProxyName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether Transport Layer Security (TLS) encryption is required for connections to the proxy. By enabling this setting, you can enforce encrypted TLS connections to the proxy, even if the associated database doesn't use TLS.
     */
-  var RequireTLS: js.UndefOr[BooleanOptional] = js.native
+  var RequireTLS: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that the proxy uses to access secrets in AWS Secrets Manager.
     */
-  var RoleArn: js.UndefOr[String] = js.native
+  var RoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The new list of security groups for the DBProxy.
     */
-  var SecurityGroups: js.UndefOr[StringList] = js.native
+  var SecurityGroups: js.UndefOr[StringList] = js.undefined
 }
 object ModifyDBProxyRequest {
   

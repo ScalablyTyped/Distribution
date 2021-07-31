@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn extends StObject {
   
   /**
     * A reference to the data element in the streaming input or the reference data source.
     */
-  var mapping: js.UndefOr[String] = js.native
+  var mapping: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the column that is created in the in-application input stream or reference table.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The type of column created in the in-application input stream or reference table.
     */
-  var sqlType: String = js.native
+  var sqlType: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn {
   

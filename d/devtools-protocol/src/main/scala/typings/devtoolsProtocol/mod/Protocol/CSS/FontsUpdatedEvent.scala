@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontsUpdatedEvent extends StObject {
   
   /**
     * The web font that has loaded.
     */
-  var font: js.UndefOr[FontFace] = js.native
+  var font: js.UndefOr[FontFace] = js.undefined
 }
 object FontsUpdatedEvent {
   

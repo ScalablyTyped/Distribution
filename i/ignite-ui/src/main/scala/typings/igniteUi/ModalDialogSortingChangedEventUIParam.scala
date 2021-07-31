@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalDialogSortingChangedEventUIParam extends StObject {
   
   /**
     * Gets the column key.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets whether column should be ascending or not. If true it should be ascending
     */
-  var isAsc: js.UndefOr[Boolean] = js.native
+  var isAsc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets a reference to the modal dialog element. This is a jQuery object.
     */
-  var modalDialogElement: js.UndefOr[String] = js.native
+  var modalDialogElement: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to GridSorting.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ModalDialogSortingChangedEventUIParam {
   

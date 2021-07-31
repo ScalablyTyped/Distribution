@@ -11,7 +11,6 @@ import typings.activexExcel.activexExcelNumbers.`6`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -43,7 +42,7 @@ trait Workbooks extends StObject {
     Filename: String,
     UpdateLinks: js.UndefOr[`0` | `3`],
     ReadOnly: js.UndefOr[Boolean],
-    Format: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`],
+    Format: js.UndefOr[`6`],
     Password: js.UndefOr[String],
     WriteResPassword: js.UndefOr[String],
     IgnoreReadOnlyRecommended: js.UndefOr[Boolean],
@@ -56,84 +55,86 @@ trait Workbooks extends StObject {
     Local: js.UndefOr[Boolean],
     CorruptLoad: js.UndefOr[XlCorruptLoad]
   ): Workbook = js.native
+  def Open(
+    Filename: String,
+    UpdateLinks: js.UndefOr[`0` | `3`],
+    ReadOnly: js.UndefOr[Boolean],
+    Format: js.UndefOr[`1` | `2` | `3` | `4` | `5`],
+    Password: js.UndefOr[String],
+    WriteResPassword: js.UndefOr[String],
+    IgnoreReadOnlyRecommended: js.UndefOr[Boolean],
+    Origin: js.UndefOr[XlPlatform],
+    Delimiter: Unit,
+    Editable: js.UndefOr[Boolean],
+    Notify: js.UndefOr[Boolean],
+    Converter: js.UndefOr[Double],
+    AddToMru: js.UndefOr[Boolean],
+    Local: js.UndefOr[Boolean],
+    CorruptLoad: js.UndefOr[XlCorruptLoad]
+  ): Workbook = js.native
   
   def OpenDatabase(Filename: String): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: js.UndefOr[scala.Nothing],
-    ImportDataAs: XlImportDataAs
-  ): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: Boolean
-  ): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: Boolean,
-    ImportDataAs: XlImportDataAs
-  ): Workbook = js.native
-  def OpenDatabase(Filename: String, CommandText: js.UndefOr[scala.Nothing], CommandType: XlCmdType): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: XlCmdType,
-    BackgroundQuery: js.UndefOr[scala.Nothing],
-    ImportDataAs: XlImportDataAs
-  ): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: XlCmdType,
-    BackgroundQuery: Boolean
-  ): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: js.UndefOr[scala.Nothing],
-    CommandType: XlCmdType,
-    BackgroundQuery: Boolean,
-    ImportDataAs: XlImportDataAs
-  ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String): Workbook = js.native
+  def OpenDatabase(Filename: String, CommandText: String, CommandType: Unit, BackgroundQuery: Boolean): Workbook = js.native
   def OpenDatabase(
     Filename: String,
     CommandText: String,
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: js.UndefOr[scala.Nothing],
+    CommandType: Unit,
+    BackgroundQuery: Boolean,
     ImportDataAs: XlImportDataAs
   ): Workbook = js.native
   def OpenDatabase(
     Filename: String,
     CommandText: String,
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: Boolean
-  ): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: String,
-    CommandType: js.UndefOr[scala.Nothing],
-    BackgroundQuery: Boolean,
+    CommandType: Unit,
+    BackgroundQuery: Unit,
     ImportDataAs: XlImportDataAs
   ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String, CommandType: XlCmdType): Workbook = js.native
-  def OpenDatabase(
-    Filename: String,
-    CommandText: String,
-    CommandType: XlCmdType,
-    BackgroundQuery: js.UndefOr[scala.Nothing],
-    ImportDataAs: XlImportDataAs
-  ): Workbook = js.native
   def OpenDatabase(Filename: String, CommandText: String, CommandType: XlCmdType, BackgroundQuery: Boolean): Workbook = js.native
   def OpenDatabase(
     Filename: String,
     CommandText: String,
     CommandType: XlCmdType,
     BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: String,
+    CommandType: XlCmdType,
+    BackgroundQuery: Unit,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(Filename: String, CommandText: Unit, CommandType: Unit, BackgroundQuery: Boolean): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: Unit,
+    CommandType: Unit,
+    BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: Unit,
+    CommandType: Unit,
+    BackgroundQuery: Unit,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(Filename: String, CommandText: Unit, CommandType: XlCmdType): Workbook = js.native
+  def OpenDatabase(Filename: String, CommandText: Unit, CommandType: XlCmdType, BackgroundQuery: Boolean): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: Unit,
+    CommandType: XlCmdType,
+    BackgroundQuery: Boolean,
+    ImportDataAs: XlImportDataAs
+  ): Workbook = js.native
+  def OpenDatabase(
+    Filename: String,
+    CommandText: Unit,
+    CommandType: XlCmdType,
+    BackgroundQuery: Unit,
     ImportDataAs: XlImportDataAs
   ): Workbook = js.native
   
@@ -144,14 +145,14 @@ trait Workbooks extends StObject {
     StartRow: Double,
     DataType: XlTextParsingType,
     TextQualifier: js.UndefOr[XlTextQualifier],
-    ConsecutiveDelimiter: js.UndefOr[scala.Nothing],
-    Tab: js.UndefOr[scala.Nothing],
-    Semicolon: js.UndefOr[scala.Nothing],
-    Comma: js.UndefOr[scala.Nothing],
-    Space: js.UndefOr[scala.Nothing],
-    Other: js.UndefOr[scala.Nothing],
-    OtherChar: js.UndefOr[scala.Nothing],
-    FieldInfo: js.UndefOr[SafeArray[_]],
+    ConsecutiveDelimiter: Unit,
+    Tab: Unit,
+    Semicolon: Unit,
+    Comma: Unit,
+    Space: Unit,
+    Other: Unit,
+    OtherChar: Unit,
+    FieldInfo: js.UndefOr[SafeArray[js.Any]],
     TextVisualLayout: js.UndefOr[js.Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
@@ -172,7 +173,7 @@ trait Workbooks extends StObject {
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[`true`],
     OtherChar: js.UndefOr[String],
-    FieldInfo: js.UndefOr[SafeArray[_]],
+    FieldInfo: js.UndefOr[SafeArray[js.Any]],
     TextVisualLayout: js.UndefOr[js.Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
@@ -193,8 +194,8 @@ trait Workbooks extends StObject {
     Comma: js.UndefOr[Boolean],
     Space: js.UndefOr[Boolean],
     Other: js.UndefOr[Boolean],
-    OtherChar: js.UndefOr[scala.Nothing],
-    FieldInfo: js.UndefOr[SafeArray[_]],
+    OtherChar: Unit,
+    FieldInfo: js.UndefOr[SafeArray[js.Any]],
     TextVisualLayout: js.UndefOr[js.Any],
     DecimalSeparator: js.UndefOr[String],
     ThousandsSeparator: js.UndefOr[String],
@@ -203,9 +204,9 @@ trait Workbooks extends StObject {
   ): Unit = js.native
   
   def OpenXML(Filename: String): Workbook = js.native
-  def OpenXML(Filename: String, Stylesheets: js.UndefOr[scala.Nothing], LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: String, LoadOption: XlXmlLoadOption): Workbook = js.native
+  def OpenXML(Filename: String, Stylesheets: Unit, LoadOption: XlXmlLoadOption): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String]): Workbook = js.native
   def OpenXML(Filename: String, Stylesheets: SafeArray[String], LoadOption: XlXmlLoadOption): Workbook = js.native
   

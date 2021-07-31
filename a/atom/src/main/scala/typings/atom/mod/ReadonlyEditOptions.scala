@@ -2,14 +2,12 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadonlyEditOptions extends StObject {
   
   /** Whether the readonly protections on the text editor should be ignored. */
-  var bypassReadOnly: js.UndefOr[Boolean] = js.native
+  var bypassReadOnly: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyEditOptions {
   

@@ -5,12 +5,12 @@ import typings.std.HTMLElement
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait _Dom[TElement]
-  extends Iterable[TElement]
+  extends StObject
+     with Iterable[TElement]
      with /* key */ NumberDictionary[TElement] {
   
   def addClass(classes: String): _Dom[TElement] = js.native

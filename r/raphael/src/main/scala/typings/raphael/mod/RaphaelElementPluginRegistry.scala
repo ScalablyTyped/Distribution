@@ -44,11 +44,9 @@ import typings.std.ReturnType
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in keyof raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]> ]: raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P] extends (args : any): any? raphael.raphael.RaphaelElementPluginMethod<TTechnology, std.Parameters<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>, std.ReturnType<raphael.raphael.RaphaelElement<TTechnology, raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology]>[P]>> : never} */
-@js.native
 trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] extends StObject {
   
   var animate: RaphaelElementPluginMethod[
@@ -71,7 +69,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var animateWith: RaphaelElementPluginMethod[
     TTechnology, 
@@ -103,7 +101,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var attr: RaphaelElementPluginMethod[
     TTechnology, 
@@ -125,7 +123,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var click: RaphaelElementPluginMethod[
     TTechnology, 
@@ -141,20 +139,20 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   @JSName("clone")
   var clone_FRaphaelElementPluginRegistry: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var data: RaphaelElementPluginMethod[
     TTechnology, 
-    Parameters[js.Function1[/* key */ String, _]], 
-    ReturnType[js.Function1[/* key */ String, _]]
-  ] = js.native
+    Parameters[js.Function1[/* key */ String, js.Any]], 
+    ReturnType[js.Function1[/* key */ String, js.Any]]
+  ]
   
   var dblclick: RaphaelElementPluginMethod[
     TTechnology, 
@@ -170,7 +168,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var drag: RaphaelElementPluginMethod[
     TTechnology, 
@@ -196,7 +194,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var getBBox: RaphaelElementPluginMethod[
     TTechnology, 
@@ -206,7 +204,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
     ReturnType[
       js.Function1[/* isWithoutTransform */ js.UndefOr[Boolean], RaphaelAxisAlignedBoundingBox]
     ]
-  ] = js.native
+  ]
   
   var glow: RaphaelElementPluginMethod[
     TTechnology, 
@@ -216,13 +214,13 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
     ReturnType[
       js.Function1[/* glow */ js.UndefOr[PartialRaphaelGlowSetting], RaphaelSet[TTechnology]]
     ]
-  ] = js.native
+  ]
   
   var hide: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var hover: RaphaelElementPluginMethod[
     TTechnology, 
@@ -244,9 +242,9 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
-  var id: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]] = js.native
+  var id: RaphaelElementPluginMethod[TTechnology, Parameters[Double], ReturnType[Double]]
   
   var insertAfter: RaphaelElementPluginMethod[
     TTechnology, 
@@ -268,7 +266,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var insertBefore: RaphaelElementPluginMethod[
     TTechnology, 
@@ -290,9 +288,9 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
-  var matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]] = js.native
+  var matrix: RaphaelElementPluginMethod[TTechnology, Parameters[RaphaelMatrix], ReturnType[RaphaelMatrix]]
   
   var mousedown: RaphaelElementPluginMethod[
     TTechnology, 
@@ -308,7 +306,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var mousemove: RaphaelElementPluginMethod[
     TTechnology, 
@@ -324,7 +322,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var mouseout: RaphaelElementPluginMethod[
     TTechnology, 
@@ -340,7 +338,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var mouseover: RaphaelElementPluginMethod[
     TTechnology, 
@@ -356,7 +354,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var mouseup: RaphaelElementPluginMethod[
     TTechnology, 
@@ -372,7 +370,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var next: js.UndefOr[
     RaphaelElementPluginMethod[
@@ -390,7 +388,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         ]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var node: RaphaelElementPluginMethod[
     TTechnology, 
@@ -400,7 +398,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
     ReturnType[
       /* import warning: importer.ImportType#apply Failed type conversion: raphael.raphael.RaphaelElementByTechnologyMap<std.SVGElement, raphael.raphael.VMLElement>[TTechnology] */ js.Any
     ]
-  ] = js.native
+  ]
   
   var onDragOver: RaphaelElementPluginMethod[
     TTechnology, 
@@ -416,19 +414,19 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var paper: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[RaphaelPaper[TTechnology]], 
     ReturnType[RaphaelPaper[TTechnology]]
-  ] = js.native
+  ]
   
   var pause: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]], 
     ReturnType[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]]
-  ] = js.native
+  ]
   
   var prev: js.UndefOr[
     RaphaelElementPluginMethod[
@@ -446,7 +444,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         ]) | Null
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var raphael: js.UndefOr[
     RaphaelElementPluginMethod[
@@ -454,21 +452,21 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
       Parameters[js.UndefOr[RaphaelStatic[SVG | VML]]], 
       ReturnType[js.UndefOr[RaphaelStatic[SVG | VML]]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var remove: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]] = js.native
+  var remove: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[Unit]], ReturnType[js.Function0[Unit]]]
   
   var removeData: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function1[/* key */ js.UndefOr[String], this.type]], 
     ReturnType[js.Function1[/* key */ js.UndefOr[String], this.type]]
-  ] = js.native
+  ]
   
   var resume: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]], 
     ReturnType[js.Function1[/* anim */ js.UndefOr[RaphaelAnimation], this.type]]
-  ] = js.native
+  ]
   
   var rotate: RaphaelElementPluginMethod[
     TTechnology, 
@@ -478,7 +476,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
     ReturnType[
       js.Function3[/* degrees */ Double, /* centerX */ Double, /* centerY */ Double, this.type]
     ]
-  ] = js.native
+  ]
   
   var scale: RaphaelElementPluginMethod[
     TTechnology, 
@@ -500,43 +498,43 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var setTime: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function2[/* animation */ RaphaelAnimation, /* value */ Double, this.type]], 
     ReturnType[js.Function2[/* animation */ RaphaelAnimation, /* value */ Double, this.type]]
-  ] = js.native
+  ]
   
   var show: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var status: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[js.Array[RaphaelAnimationStatus]]], 
     ReturnType[js.Function0[js.Array[RaphaelAnimationStatus]]]
-  ] = js.native
+  ]
   
   var stop: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function1[/* animation */ js.UndefOr[RaphaelAnimation], this.type]], 
     ReturnType[js.Function1[/* animation */ js.UndefOr[RaphaelAnimation], this.type]]
-  ] = js.native
+  ]
   
   var toBack: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var toFront: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var touchcancel: RaphaelElementPluginMethod[
     TTechnology, 
@@ -552,7 +550,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var touchend: RaphaelElementPluginMethod[
     TTechnology, 
@@ -568,7 +566,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var touchmove: RaphaelElementPluginMethod[
     TTechnology, 
@@ -584,7 +582,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var touchstart: RaphaelElementPluginMethod[
     TTechnology, 
@@ -600,21 +598,21 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
-  var transform: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]] = js.native
+  var transform: RaphaelElementPluginMethod[TTechnology, Parameters[js.Function0[String]], ReturnType[js.Function0[String]]]
   
   var translate: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function2[/* deltaX */ Double, /* deltaY */ Double, this.type]], 
     ReturnType[js.Function2[/* deltaX */ Double, /* deltaY */ Double, this.type]]
-  ] = js.native
+  ]
   
   var `type`: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[RaphaelShapeType | String], 
     ReturnType[RaphaelShapeType | String]
-  ] = js.native
+  ]
   
   var unclick: RaphaelElementPluginMethod[
     TTechnology, 
@@ -630,7 +628,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var undblclick: RaphaelElementPluginMethod[
     TTechnology, 
@@ -646,31 +644,31 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var undrag: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[js.Function0[this.type]], 
     ReturnType[js.Function0[this.type]]
-  ] = js.native
+  ]
   
   var unhover: RaphaelElementPluginMethod[
     TTechnology, 
     Parameters[
       js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+        /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+        /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
         this.type
       ]
     ], 
     ReturnType[
       js.Function2[
-        /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-        /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+        /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+        /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var unmousedown: RaphaelElementPluginMethod[
     TTechnology, 
@@ -686,7 +684,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var unmousemove: RaphaelElementPluginMethod[
     TTechnology, 
@@ -702,7 +700,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var unmouseout: RaphaelElementPluginMethod[
     TTechnology, 
@@ -718,7 +716,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var unmouseover: RaphaelElementPluginMethod[
     TTechnology, 
@@ -734,7 +732,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var unmouseup: RaphaelElementPluginMethod[
     TTechnology, 
@@ -750,7 +748,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var untouchcancel: RaphaelElementPluginMethod[
     TTechnology, 
@@ -766,7 +764,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var untouchend: RaphaelElementPluginMethod[
     TTechnology, 
@@ -782,7 +780,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var untouchmove: RaphaelElementPluginMethod[
     TTechnology, 
@@ -798,7 +796,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
   
   var untouchstart: RaphaelElementPluginMethod[
     TTechnology, 
@@ -814,7 +812,7 @@ trait RaphaelElementPluginRegistry[TTechnology /* <: RaphaelTechnology */] exten
         this.type
       ]
     ]
-  ] = js.native
+  ]
 }
 object RaphaelElementPluginRegistry {
   
@@ -921,8 +919,8 @@ object RaphaelElementPluginRegistry {
     ],
     data: RaphaelElementPluginMethod[
       TTechnology, 
-      Parameters[js.Function1[/* key */ String, _]], 
-      ReturnType[js.Function1[/* key */ String, _]]
+      Parameters[js.Function1[/* key */ String, js.Any]], 
+      ReturnType[js.Function1[/* key */ String, js.Any]]
     ],
     dblclick: RaphaelElementPluginMethod[
       TTechnology, 
@@ -1480,15 +1478,15 @@ object RaphaelElementPluginRegistry {
       TTechnology, 
       Parameters[
         js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+          /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+          /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
           RaphaelElementPluginRegistry[TTechnology]
         ]
       ], 
       ReturnType[
         js.Function2[
-          /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-          /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+          /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+          /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
           RaphaelElementPluginRegistry[TTechnology]
         ]
       ]
@@ -1690,7 +1688,7 @@ object RaphaelElementPluginRegistry {
   }
   
   @scala.inline
-  implicit class RaphaelElementPluginRegistryMutableBuilder[Self <: RaphaelElementPluginRegistry[_], TTechnology /* <: RaphaelTechnology */] (val x: Self with RaphaelElementPluginRegistry[TTechnology]) extends AnyVal {
+  implicit class RaphaelElementPluginRegistryMutableBuilder[Self <: RaphaelElementPluginRegistry[?], TTechnology /* <: RaphaelTechnology */] (val x: Self & RaphaelElementPluginRegistry[TTechnology]) extends AnyVal {
     
     @scala.inline
     def setAnimate(
@@ -1815,8 +1813,8 @@ object RaphaelElementPluginRegistry {
     def setData(
       value: RaphaelElementPluginMethod[
           TTechnology, 
-          Parameters[js.Function1[/* key */ String, _]], 
-          ReturnType[js.Function1[/* key */ String, _]]
+          Parameters[js.Function1[/* key */ String, js.Any]], 
+          ReturnType[js.Function1[/* key */ String, js.Any]]
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
@@ -2592,15 +2590,15 @@ object RaphaelElementPluginRegistry {
           TTechnology, 
           Parameters[
             js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+              /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+              /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
               RaphaelElementPluginRegistry[TTechnology]
             ]
           ], 
           ReturnType[
             js.Function2[
-              /* onHoverInHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
-              /* onHoverOutHandler */ RaphaelBasicEventHandler[_, MouseEvent], 
+              /* onHoverInHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
+              /* onHoverOutHandler */ RaphaelBasicEventHandler[js.Any, MouseEvent], 
               RaphaelElementPluginRegistry[TTechnology]
             ]
           ]

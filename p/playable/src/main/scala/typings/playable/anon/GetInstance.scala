@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.chomecastApiMockMod.CastContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstance extends StObject {
   
-  def getInstance(): CastContext = js.native
+  def getInstance(): CastContext
 }
 object GetInstance {
   

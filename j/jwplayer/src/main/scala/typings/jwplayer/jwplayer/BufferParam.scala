@@ -6,17 +6,15 @@ import typings.jwplayer.jwplayerStrings.loading
 import typings.jwplayer.jwplayerStrings.stalled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferParam extends StObject {
   
-  var newstate: String = js.native
+  var newstate: String
   
-  var oldstate: String = js.native
+  var oldstate: String
   
-  var reason: loading | complete | stalled | error = js.native
+  var reason: loading | complete | stalled | error
 }
 object BufferParam {
   

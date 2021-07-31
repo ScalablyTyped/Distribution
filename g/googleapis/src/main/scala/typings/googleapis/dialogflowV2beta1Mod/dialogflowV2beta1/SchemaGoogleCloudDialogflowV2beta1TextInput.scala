@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the natural language text to be processed.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1TextInput extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaGoogleCloudDialogflowV2beta1TextInput extends StObject {
     * for a list of the currently supported language codes. Note that queries
     * in the same session do not necessarily need to specify the same language.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The UTF-8 encoded natural language text to be processed. Text
     * length must not exceed 256 characters.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1TextInput {
   

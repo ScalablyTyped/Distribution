@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `taskHistoryRecordCollection.toJSON()`. */
-@js.native
 trait TaskHistoryRecordCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[TaskHistoryRecordData]] = js.native
+  var items: js.UndefOr[js.Array[TaskHistoryRecordData]] = js.undefined
 }
 object TaskHistoryRecordCollectionData {
   

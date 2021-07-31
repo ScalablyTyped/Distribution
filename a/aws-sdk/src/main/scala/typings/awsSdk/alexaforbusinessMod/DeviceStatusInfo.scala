@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceStatusInfo extends StObject {
   
   /**
     * The latest available information about the connection status of a device. 
     */
-  var ConnectionStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ConnectionStatus] = js.native
+  var ConnectionStatus: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ConnectionStatus] = js.undefined
   
   /**
     * The time (in epoch) when the device connection status changed.
     */
-  var ConnectionStatusUpdatedTime: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ConnectionStatusUpdatedTime] = js.native
+  var ConnectionStatusUpdatedTime: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ConnectionStatusUpdatedTime] = js.undefined
   
   /**
     * One or more device status detail descriptions.
     */
-  var DeviceStatusDetails: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatusDetails] = js.native
+  var DeviceStatusDetails: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeviceStatusDetails] = js.undefined
 }
 object DeviceStatusInfo {
   

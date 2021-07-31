@@ -2,62 +2,60 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePackageVersionsStatusRequest extends StObject {
   
   /**
     *  The name of the package with the version statuses to update. 
     */
   @JSName("package")
-  var _package: PackageName = js.native
+  var _package: PackageName
   
   /**
     *  The domain that contains the repository that contains the package versions with a status to be updated. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The package version’s expected status before it is updated. If expectedStatus is provided, the package version's status is updated only if its status at the time UpdatePackageVersionsStatus is called matches expectedStatus. 
     */
-  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.native
+  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.undefined
   
   /**
     *  A format that specifies the type of the package with the statuses to update. The valid values are:     npm     pypi     maven   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The repository that contains the package versions with the status you want to update. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
   
   /**
     *  The status you want to change the package version status to. 
     */
-  var targetStatus: PackageVersionStatus = js.native
+  var targetStatus: PackageVersionStatus
   
   /**
     *  A map of package versions and package version revisions. The map key is the package version (for example, 3.5.2), and the map value is the package version revision. 
     */
-  var versionRevisions: js.UndefOr[PackageVersionRevisionMap] = js.native
+  var versionRevisions: js.UndefOr[PackageVersionRevisionMap] = js.undefined
   
   /**
     *  An array of strings that specify the versions of the package with the statuses to update. 
     */
-  var versions: PackageVersionList = js.native
+  var versions: PackageVersionList
 }
 object UpdatePackageVersionsStatusRequest {
   

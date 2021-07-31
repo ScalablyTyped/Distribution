@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
   */
-@js.native
 trait PlusAccelerometerAcceleration extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusAccelerometerAcceleration extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */
-  var xAxis: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * y轴方向的加速度
@@ -28,7 +26,7 @@ trait PlusAccelerometerAcceleration extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */
-  var yAxis: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * z轴方向的加速度
@@ -36,7 +34,7 @@ trait PlusAccelerometerAcceleration extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/accelerometer.html](http://www.html5plus.org/doc/zh_cn/accelerometer.html)
     */
-  var zAxis: js.UndefOr[Double] = js.native
+  var zAxis: js.UndefOr[Double] = js.undefined
 }
 object PlusAccelerometerAcceleration {
   

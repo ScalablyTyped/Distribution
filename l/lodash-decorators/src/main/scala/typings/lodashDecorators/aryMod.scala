@@ -5,20 +5,20 @@ import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aryMod {
   
-  @JSImport("lodash-decorators/ary", JSImport.Default)
+  @JSImport("lodash-decorators/ary", JSImport.Namespace)
   @js.native
-  def default(args: js.Any*): MethodDecorator with PropertyDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/ary", "Ary")
-  @js.native
-  def Ary_(n: Double): LodashMethodDecorator = js.native
+  @scala.inline
+  def default(args: js.Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator & PropertyDecorator]
   
-  @JSImport("lodash-decorators/ary", "ary")
-  @js.native
-  def ary(n: Double): LodashMethodDecorator = js.native
+  @scala.inline
+  def Ary_(n: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Ary")(n.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  
+  @scala.inline
+  def ary(n: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ary")(n.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
 }

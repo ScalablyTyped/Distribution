@@ -3,13 +3,13 @@ package typings.log4js.mod
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("log4js", "Logger")
 @js.native
 class Logger ()
-  extends Instantiable2[/* dispatch */ js.Function, /* name */ String, Logger] {
+  extends StObject
+     with Instantiable2[/* dispatch */ js.Function, /* name */ String, Logger] {
   
   def _log(level: String, data: js.Any): Unit = js.native
   

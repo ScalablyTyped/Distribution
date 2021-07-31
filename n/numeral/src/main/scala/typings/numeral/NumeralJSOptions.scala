@@ -2,21 +2,19 @@ package typings.numeral
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumeralJSOptions extends StObject {
   
-  var currentLocale: String = js.native
+  var currentLocale: String
   
-  var defaultFormat: String = js.native
+  var defaultFormat: String
   
-  var nullFormat: String = js.native
+  var nullFormat: String
   
-  var scalePercentBy100: Boolean = js.native
+  var scalePercentBy100: Boolean
   
-  var zeroFormat: String = js.native
+  var zeroFormat: String
 }
 object NumeralJSOptions {
   

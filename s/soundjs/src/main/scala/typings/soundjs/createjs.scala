@@ -9,36 +9,34 @@ import typings.std.GainNode
 import typings.std.PannerNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createjs {
   
-  @js.native
   trait AbstractPlugin extends StObject {
     
     // methods
-    def create(src: String, startTime: Double, duration: Double): AbstractSoundInstance = js.native
+    def create(src: String, startTime: Double, duration: Double): AbstractSoundInstance
     
-    def getVolume(): Double = js.native
+    def getVolume(): Double
     
-    def isPreloadComplete(src: String): Boolean = js.native
+    def isPreloadComplete(src: String): Boolean
     
-    def isPreloadStarted(src: String): Boolean = js.native
+    def isPreloadStarted(src: String): Boolean
     
-    def isSupported(): Boolean = js.native
+    def isSupported(): Boolean
     
-    def preload(loader: js.Object): Unit = js.native
+    def preload(loader: js.Object): Unit
     
-    def register(loadItem: String, instances: Double): js.Object = js.native
+    def register(loadItem: String, instances: Double): js.Object
     
-    def removeAllSounds(src: String): Unit = js.native
+    def removeAllSounds(src: String): Unit
     
-    def removeSound(src: String): Unit = js.native
+    def removeSound(src: String): Unit
     
-    def setMute(value: Boolean): Boolean = js.native
+    def setMute(value: Boolean): Boolean
     
-    def setVolume(value: Double): Boolean = js.native
+    def setVolume(value: Double): Boolean
   }
   object AbstractPlugin {
     
@@ -99,7 +97,9 @@ object createjs {
   }
   
   @js.native
-  trait AbstractSoundInstance extends EventDispatcher {
+  trait AbstractSoundInstance
+    extends StObject
+       with EventDispatcher {
     
     // methods
     def destroy(): Unit = js.native
@@ -168,7 +168,9 @@ object createjs {
   }
   
   @js.native
-  trait FlashAudioLoader extends AbstractLoader {
+  trait FlashAudioLoader
+    extends StObject
+       with AbstractLoader {
     
     // properties
     var flashId: String = js.native
@@ -177,13 +179,14 @@ object createjs {
     def setFlash(flash: js.Object): Unit = js.native
   }
   
-  @js.native
-  trait FlashAudioPlugin extends AbstractPlugin {
+  trait FlashAudioPlugin
+    extends StObject
+       with AbstractPlugin {
     
     // properties
-    var flashReady: Boolean = js.native
+    var flashReady: Boolean
     
-    var showOutput: Boolean = js.native
+    var showOutput: Boolean
   }
   object FlashAudioPlugin {
     
@@ -220,31 +223,30 @@ object createjs {
   
   type FlashAudioSoundInstance = AbstractSoundInstance
   
-  @js.native
   trait FlashPlugin extends StObject {
     
     // methods
-    def create(src: String): AbstractSoundInstance = js.native
+    def create(src: String): AbstractSoundInstance
     
-    var flashReady: Boolean = js.native
+    var flashReady: Boolean
     
-    def getVolume(): Double = js.native
+    def getVolume(): Double
     
-    def isPreloadStarted(src: String): Boolean = js.native
+    def isPreloadStarted(src: String): Boolean
     
-    def preload(src: String, instance: js.Object): Unit = js.native
+    def preload(src: String, instance: js.Object): Unit
     
-    def register(src: String, instances: Double): js.Object = js.native
+    def register(src: String, instances: Double): js.Object
     
-    def removeAllSounds(): Unit = js.native
+    def removeAllSounds(): Unit
     
-    def removeSound(src: String): Unit = js.native
+    def removeSound(src: String): Unit
     
-    def setMute(value: Boolean): Boolean = js.native
+    def setMute(value: Boolean): Boolean
     
-    def setVolume(value: Double): Boolean = js.native
+    def setVolume(value: Double): Boolean
     
-    var showOutput: Boolean = js.native
+    var showOutput: Boolean
   }
   object FlashPlugin {
     
@@ -304,13 +306,14 @@ object createjs {
     }
   }
   
-  @js.native
-  trait HTMLAudioPlugin extends AbstractPlugin {
+  trait HTMLAudioPlugin
+    extends StObject
+       with AbstractPlugin {
     
     // properties
-    var defaultNumChannels: Double = js.native
+    var defaultNumChannels: Double
     
-    var enableIOS: Boolean = js.native
+    var enableIOS: Boolean
   }
   object HTMLAudioPlugin {
     
@@ -347,29 +350,27 @@ object createjs {
   
   type HTMLAudioSoundInstance = AbstractSoundInstance
   
-  @js.native
   trait HTMLAudioTagPool extends StObject
   
-  @js.native
   trait PlayPropsConfig extends StObject {
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var interrupt: String = js.native
+    var interrupt: String
     
-    var loop: Double = js.native
+    var loop: Double
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var pan: Double = js.native
+    var pan: Double
     
-    def set(props: js.Any): PlayPropsConfig = js.native
+    def set(props: js.Any): PlayPropsConfig
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var volume: Double = js.native
+    var volume: Double
   }
   object PlayPropsConfig {
     
@@ -423,20 +424,19 @@ object createjs {
   
   type Sound = EventDispatcher
   
-  @js.native
   trait SoundJS extends StObject
   
-  @js.native
   trait WebAudioLoader extends StObject
   
-  @js.native
-  trait WebAudioPlugin extends AbstractPlugin {
+  trait WebAudioPlugin
+    extends StObject
+       with AbstractPlugin {
     
-    var context: AudioContext = js.native
+    var context: AudioContext
     
-    var dynamicsCompressorNode: DynamicsCompressorNode = js.native
+    var dynamicsCompressorNode: DynamicsCompressorNode
     
-    var gainNode: GainNode = js.native
+    var gainNode: GainNode
   }
   object WebAudioPlugin {
     
@@ -476,7 +476,9 @@ object createjs {
   }
   
   @js.native
-  trait WebAudioSoundInstance extends AbstractSoundInstance {
+  trait WebAudioSoundInstance
+    extends StObject
+       with AbstractSoundInstance {
     
     var gainNode: GainNode = js.native
     

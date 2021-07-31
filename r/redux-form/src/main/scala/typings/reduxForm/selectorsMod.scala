@@ -4,7 +4,6 @@ import typings.reduxForm.mod.FormErrors
 import typings.reduxForm.reduxFormMod.GetFormState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {

@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterMetadata extends StObject {
   
   /** Required. The help text to display for the parameter. */
-  var helpText: js.UndefOr[String] = js.native
+  var helpText: js.UndefOr[String] = js.undefined
   
   /** Optional. Whether the parameter is optional. Defaults to false. */
-  var isOptional: js.UndefOr[Boolean] = js.native
+  var isOptional: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The label to display for the parameter. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the parameter. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Optional. The type of the parameter. Used for selecting input picker. */
-  var paramType: js.UndefOr[String] = js.native
+  var paramType: js.UndefOr[String] = js.undefined
   
   /** Optional. Regexes that the parameter must match. */
-  var regexes: js.UndefOr[js.Array[String]] = js.native
+  var regexes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParameterMetadata {
   

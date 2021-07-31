@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationConfigurationMod {
@@ -38,6 +37,10 @@ object organizationConfigurationMod {
   /* static members */
   object OrganizationConfiguration {
     
+    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing OrganizationConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object organizationConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState): OrganizationConfiguration = js.native
-    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): OrganizationConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationConfigurationState): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationConfigurationState, opts: CustomResourceOptions): OrganizationConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OrganizationConfiguration]
     
     /**
       * Returns true if the given object is an instance of OrganizationConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty/organizationConfiguration", "OrganizationConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/organizationConfiguration.OrganizationConfiguration */ Boolean]
   }
   
-  @js.native
   trait OrganizationConfigurationArgs extends StObject {
     
     /**
       * When this setting is enabled, all new accounts that are created in, or added to, the organization are added as a member accounts of the organization’s GuardDuty delegated administrator and GuardDuty is enabled in that AWS Region.
       */
-    val autoEnable: Input[Boolean] = js.native
+    val autoEnable: Input[Boolean]
     
     /**
       * The detector ID of the GuardDuty account.
       */
-    val detectorId: Input[String] = js.native
+    val detectorId: Input[String]
   }
   object OrganizationConfigurationArgs {
     
@@ -101,18 +98,17 @@ object organizationConfigurationMod {
     }
   }
   
-  @js.native
   trait OrganizationConfigurationState extends StObject {
     
     /**
       * When this setting is enabled, all new accounts that are created in, or added to, the organization are added as a member accounts of the organization’s GuardDuty delegated administrator and GuardDuty is enabled in that AWS Region.
       */
-    val autoEnable: js.UndefOr[Input[Boolean]] = js.native
+    val autoEnable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The detector ID of the GuardDuty account.
       */
-    val detectorId: js.UndefOr[Input[String]] = js.native
+    val detectorId: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationConfigurationState {
     

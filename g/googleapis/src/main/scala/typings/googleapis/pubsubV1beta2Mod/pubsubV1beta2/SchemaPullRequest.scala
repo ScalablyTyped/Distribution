@@ -2,20 +2,18 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `Pull` method.
   */
-@js.native
 trait SchemaPullRequest extends StObject {
   
   /**
     * The maximum number of messages returned for this request. The Pub/Sub
     * system may return fewer than the number specified.
     */
-  var maxMessages: js.UndefOr[Double] = js.native
+  var maxMessages: js.UndefOr[Double] = js.undefined
   
   /**
     * If this is specified as true the system will respond immediately even if
@@ -24,7 +22,7 @@ trait SchemaPullRequest extends StObject {
     * than returning no messages. The client may cancel the request if it does
     * not wish to wait any longer for the response.
     */
-  var returnImmediately: js.UndefOr[Boolean] = js.native
+  var returnImmediately: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPullRequest {
   

@@ -2,26 +2,24 @@ package typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ListFolders response message.
   */
-@js.native
 trait SchemaListFoldersResponse extends StObject {
   
   /**
     * A possibly paginated list of Folders that are direct descendants of the
     * specified parent resource.
     */
-  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.native
+  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
   
   /**
     * A pagination token returned from a previous call to `ListFolders` that
     * indicates from where listing should continue. This field is optional.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListFoldersResponse {
   

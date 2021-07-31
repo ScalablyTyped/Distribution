@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapTreeView control.
   */
-@js.native
-trait BootstrapClientTreeView extends ASPxClientTreeView {
+trait BootstrapClientTreeView
+  extends StObject
+     with ASPxClientTreeView {
   
   /**
     * Selects the specified node within the Tree View control on the client side.
     * @param node A BootstrapClientTreeViewNode object specifying the node to select.
     */
-  def SetSelectedNode(node: BootstrapClientTreeViewNode): Unit = js.native
+  def SetSelectedNode(node: BootstrapClientTreeViewNode): Unit
 }
 object BootstrapClientTreeView {
   

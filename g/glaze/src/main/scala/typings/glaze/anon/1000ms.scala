@@ -10,50 +10,39 @@ import typings.glaze.glazeStrings.`1s`
 import typings.glaze.glazeStrings.`75ms`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1000ms` extends StObject {
   
-  val `1000ms`: `1s` = js.native
+  val `1000ms`: `1s`
   
-  val `100ms`: Dot1s = js.native
+  val `100ms`: Dot1s
   
-  val `150ms`: Dot15s = js.native
+  val `150ms`: Dot15s
   
-  val `200ms`: Dot2s = js.native
+  val `200ms`: Dot2s
   
-  val `300ms`: Dot3s = js.native
+  val `300ms`: Dot3s
   
-  val `500ms`: Dot5s = js.native
+  val `500ms`: Dot5s
   
-  val `700ms`: Dot7s = js.native
+  val `700ms`: Dot7s
   
-  val `75ms`: typings.glaze.glazeStrings.`75ms` = js.native
+  val `75ms`: typings.glaze.glazeStrings.`75ms`
 }
 object `1000ms` {
   
   @scala.inline
-  def apply(
-    `1000ms`: `1s`,
-    `100ms`: Dot1s,
-    `150ms`: Dot15s,
-    `200ms`: Dot2s,
-    `300ms`: Dot3s,
-    `500ms`: Dot5s,
-    `700ms`: Dot7s,
-    `75ms`: `75ms`
-  ): `1000ms` = {
+  def apply(): `1000ms` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1000ms")(`1000ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("100ms")(`100ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("150ms")(`150ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("200ms")(`200ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("300ms")(`300ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("500ms")(`500ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("700ms")(`700ms`.asInstanceOf[js.Any])
-    __obj.updateDynamic("75ms")(`75ms`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1000ms")("1s")
+    __obj.updateDynamic("100ms")(".1s")
+    __obj.updateDynamic("150ms")(".15s")
+    __obj.updateDynamic("200ms")(".2s")
+    __obj.updateDynamic("300ms")(".3s")
+    __obj.updateDynamic("500ms")(".5s")
+    __obj.updateDynamic("700ms")(".7s")
+    __obj.updateDynamic("75ms")("75ms")
     __obj.asInstanceOf[`1000ms`]
   }
   

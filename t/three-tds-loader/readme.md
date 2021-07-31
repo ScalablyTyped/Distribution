@@ -12,7 +12,7 @@ NodeJS wrapper for Three.js' TDSLoader function
 | Keywords           | three, three.js, tds, 3ds, loader |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 3174 |
+| # downloads        | 3544 |
 | # stars            | 0 |
 
 ## Links

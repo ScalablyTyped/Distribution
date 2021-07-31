@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fontsize extends StObject {
   
   /**
@@ -13,70 +11,70 @@ trait Fontsize extends StObject {
     * letely opaque. Note that values require the leading 0 before the decimal point. Use with "background-color" attribute. 0.3 | 0.4 |
     *  0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#FF0
     * 000", "#0000FF"), or RGB notation (e.g., "rgb(255,0,0)", "rgb(0,0,255)"). "none" | "transparent" | "#f00" | "#f00 #00f" | "red yel
     * low" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[Double] = js.native
+  var `border-width`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the font color of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font family of the object. "Arial" | "Tahoma,Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font size of the object. 4 | "6px" | ...
     */
-  var `font-size`: js.UndefOr[String] = js.native
+  var `font-size`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font style of the object. "none" | "italic"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font weight of the object. "none" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the style applied to lines and borders of the object. "solid" | "dotted" | "dashed" | "dashdot"
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the padding around the text of the object. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the crosshair plot label text to be displayed for that series. You can provide any combination of alphanumeric characters and
     * /or ZingChart tokens. "%v widgets" | "Top Sales: %v" | "$%v" | "%v %t" | "..."
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Fontsize {
   

@@ -5,7 +5,6 @@ import typings.std.RegExp
 import typings.underscoreString.mod.underscoreAugmentingMod.UnderscoreStringStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,9 @@ object mod extends Shortcut {
   object underscoreAugmentingMod {
     
     @js.native
-    trait UnderscoreStatic extends UnderscoreStringStatic {
+    trait UnderscoreStatic
+      extends StObject
+         with UnderscoreStringStatic {
       
       var str: UnderscoreStringStatic = js.native
       
@@ -31,7 +32,9 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait UnderscoreStringStatic extends UnderscoreStringStaticExports {
+    trait UnderscoreStringStatic
+      extends StObject
+         with UnderscoreStringStaticExports {
       
       /**
         * Tests if string contains a substring.
@@ -91,7 +94,7 @@ object mod extends Shortcut {
         * ('Hello') => ['H','e','l','l','o']
         * @param str
         */
-      def chars(str: String): js.Array[_] = js.native
+      def chars(str: String): js.Array[js.Any] = js.native
       
       /**
         * Chop a string into pieces.
@@ -99,7 +102,7 @@ object mod extends Shortcut {
         * @param str String to chop
         * @param step Size of the pieces
         */
-      def chop(str: String, step: Double): js.Array[_] = js.native
+      def chop(str: String, step: Double): js.Array[js.Any] = js.native
       
       /**
         * Converts string to camelized class name.
@@ -210,7 +213,7 @@ object mod extends Shortcut {
         * ('Hello\nWorld') => ['Hello', 'World']
         * @param str
         */
-      def lines(str: String): js.Array[_] = js.native
+      def lines(str: String): js.Array[js.Any] = js.native
       
       /**
         * Right-pad a string.
@@ -279,13 +282,13 @@ object mod extends Shortcut {
         * @param tsep
         */
       def numberFormat(number: Double): String = js.native
-      def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: js.UndefOr[scala.Nothing], tsep: String): String = js.native
-      def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: String): String = js.native
-      def numberFormat(number: Double, dec: js.UndefOr[scala.Nothing], dsep: String, tsep: String): String = js.native
       def numberFormat(number: Double, dec: Double): String = js.native
-      def numberFormat(number: Double, dec: Double, dsep: js.UndefOr[scala.Nothing], tsep: String): String = js.native
       def numberFormat(number: Double, dec: Double, dsep: String): String = js.native
       def numberFormat(number: Double, dec: Double, dsep: String, tsep: String): String = js.native
+      def numberFormat(number: Double, dec: Double, dsep: Unit, tsep: String): String = js.native
+      def numberFormat(number: Double, dec: Unit, dsep: String): String = js.native
+      def numberFormat(number: Double, dec: Unit, dsep: String, tsep: String): String = js.native
+      def numberFormat(number: Double, dec: Unit, dsep: Unit, tsep: String): String = js.native
       
       /**
         * Pads a string with characters until the total string length is equal to the passed length parameter.
@@ -302,9 +305,9 @@ object mod extends Shortcut {
         * @param type
         */
       def pad(str: String, length: Double): String = js.native
-      def pad(str: String, length: Double, padStr: js.UndefOr[scala.Nothing], `type`: String): String = js.native
       def pad(str: String, length: Double, padStr: String): String = js.native
       def pad(str: String, length: Double, padStr: String, `type`: String): String = js.native
+      def pad(str: String, length: Double, padStr: Unit, `type`: String): String = js.native
       
       /**
         * Elegant version of truncate.
@@ -517,9 +520,9 @@ object mod extends Shortcut {
         * @param falseValues
         */
       def toBoolean(str: String): Boolean = js.native
-      def toBoolean(str: String, trueValues: js.UndefOr[scala.Nothing], falseValues: js.Array[_]): Boolean = js.native
-      def toBoolean(str: String, trueValues: js.Array[_]): Boolean = js.native
-      def toBoolean(str: String, trueValues: js.Array[_], falseValues: js.Array[_]): Boolean = js.native
+      def toBoolean(str: String, trueValues: js.Array[js.Any]): Boolean = js.native
+      def toBoolean(str: String, trueValues: js.Array[js.Any], falseValues: js.Array[js.Any]): Boolean = js.native
+      def toBoolean(str: String, trueValues: Unit, falseValues: js.Array[js.Any]): Boolean = js.native
       
       /**
         * Parse string to number.
@@ -541,19 +544,14 @@ object mod extends Shortcut {
         * @param lastSeparator
         * @param serial
         */
-      def toSentence(array: js.Array[_]): String = js.native
-      def toSentence(
-        array: js.Array[_],
-        separator: js.UndefOr[scala.Nothing],
-        lastSeparator: js.UndefOr[scala.Nothing],
-        serial: Boolean
-      ): String = js.native
-      def toSentence(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String): String = js.native
-      def toSentence(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String, serial: Boolean): String = js.native
-      def toSentence(array: js.Array[_], separator: String): String = js.native
-      def toSentence(array: js.Array[_], separator: String, lastSeparator: js.UndefOr[scala.Nothing], serial: Boolean): String = js.native
-      def toSentence(array: js.Array[_], separator: String, lastSeparator: String): String = js.native
-      def toSentence(array: js.Array[_], separator: String, lastSeparator: String, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[js.Any]): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: String): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: String): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: String, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: String, lastSeparator: Unit, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: String): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: String, serial: Boolean): String = js.native
+      def toSentence(array: js.Array[js.Any], separator: Unit, lastSeparator: Unit, serial: Boolean): String = js.native
       
       /**
         * The same as toSentence, but uses ', ' as default for lastSeparator.
@@ -561,10 +559,10 @@ object mod extends Shortcut {
         * @param separator
         * @param lastSeparator
         */
-      def toSentenceSerial(array: js.Array[_]): String = js.native
-      def toSentenceSerial(array: js.Array[_], separator: js.UndefOr[scala.Nothing], lastSeparator: String): String = js.native
-      def toSentenceSerial(array: js.Array[_], separator: String): String = js.native
-      def toSentenceSerial(array: js.Array[_], separator: String, lastSeparator: String): String = js.native
+      def toSentenceSerial(array: js.Array[js.Any]): String = js.native
+      def toSentenceSerial(array: js.Array[js.Any], separator: String): String = js.native
+      def toSentenceSerial(array: js.Array[js.Any], separator: String, lastSeparator: String): String = js.native
+      def toSentenceSerial(array: js.Array[js.Any], separator: Unit, lastSeparator: String): String = js.native
       
       /**
         * Trims defined characters from begining and ending of the string.

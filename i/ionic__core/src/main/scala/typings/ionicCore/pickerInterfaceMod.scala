@@ -5,21 +5,19 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerInterfaceMod {
   
-  @js.native
   trait PickerButton extends StObject {
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var handler: js.UndefOr[js.Function1[/* value */ js.Any, Boolean | Unit]] = js.native
+    var handler: js.UndefOr[js.Function1[/* value */ js.Any, Boolean | Unit]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object PickerButton {
     
@@ -61,34 +59,33 @@ object pickerInterfaceMod {
     }
   }
   
-  @js.native
   trait PickerColumn extends StObject {
     
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
-    var columnWidth: js.UndefOr[String] = js.native
+    var columnWidth: js.UndefOr[String] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.Array[PickerColumnOption] = js.native
+    var options: js.Array[PickerColumnOption]
     
-    var optionsWidth: js.UndefOr[String] = js.native
+    var optionsWidth: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var prefixWidth: js.UndefOr[String] = js.native
+    var prefixWidth: js.UndefOr[String] = js.undefined
     
-    var prevSelected: js.UndefOr[Double] = js.native
+    var prevSelected: js.UndefOr[Double] = js.undefined
     
-    var refresh: js.UndefOr[js.Function0[Unit]] = js.native
+    var refresh: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
-    var suffixWidth: js.UndefOr[String] = js.native
+    var suffixWidth: js.UndefOr[String] = js.undefined
   }
   object PickerColumn {
     
@@ -181,20 +178,19 @@ object pickerInterfaceMod {
     }
   }
   
-  @js.native
   trait PickerColumnOption extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[String] = js.native
+    var transform: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object PickerColumnOption {
     
@@ -245,30 +241,29 @@ object pickerInterfaceMod {
     }
   }
   
-  @js.native
   trait PickerOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[PickerButton]] = js.native
+    var buttons: js.UndefOr[js.Array[PickerButton]] = js.undefined
     
-    var columns: js.Array[PickerColumn] = js.native
+    var columns: js.Array[PickerColumn]
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var showBackdrop: js.UndefOr[Boolean] = js.native
+    var showBackdrop: js.UndefOr[Boolean] = js.undefined
   }
   object PickerOptions {
     

@@ -2,13 +2,11 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service that is available for use by the consumer.
   */
-@js.native
 trait SchemaGoogleApiServiceusageV1Service extends StObject {
   
   /**
@@ -17,23 +15,23 @@ trait SchemaGoogleApiServiceusageV1Service extends StObject {
     * method. These fields are present only in responses to the `GetService`
     * method.
     */
-  var config: js.UndefOr[SchemaGoogleApiServiceusageV1ServiceConfig] = js.native
+  var config: js.UndefOr[SchemaGoogleApiServiceusageV1ServiceConfig] = js.undefined
   
   /**
     * The resource name of the consumer and service.  A valid name would be: -
     * projects/123/services/serviceusage.googleapis.com
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name of the consumer.  A valid name would be: - projects/123
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the service has been enabled for use by the consumer.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleApiServiceusageV1Service {
   

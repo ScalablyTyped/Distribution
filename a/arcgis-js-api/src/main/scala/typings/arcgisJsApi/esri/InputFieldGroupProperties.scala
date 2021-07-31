@@ -4,10 +4,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.collapsed
 import typings.arcgisJsApi.arcgisJsApiStrings.expanded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputFieldGroupProperties extends StObject {
   
   /**
@@ -15,16 +13,16 @@ trait InputFieldGroupProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var initialState: js.UndefOr[expanded | collapsed] = js.native
+  var initialState: js.UndefOr[expanded | collapsed] = js.undefined
   
   /**
     * Arcade expression to determine whether this group is visible or not.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-InputFieldGroup.html#visibilityExpression)
     */
-  var visibilityExpression: js.UndefOr[String] = js.native
+  var visibilityExpression: js.UndefOr[String] = js.undefined
 }
 object InputFieldGroupProperties {
   

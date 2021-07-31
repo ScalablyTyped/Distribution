@@ -2,15 +2,13 @@ package typings.tslib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default[T] extends StObject {
     
-    var default: T = js.native
+    var default: T
   }
   object Default {
     
@@ -21,19 +19,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[_], T] (val x: Self with Default[T]) extends AnyVal {
+    implicit class DefaultMutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
       
       @scala.inline
       def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Get[T /* <: js.Object */, V] extends StObject {
     
-    def get(o: T): js.UndefOr[V] = js.native
+    def get(o: T): js.UndefOr[V]
     
-    def has(o: T): Boolean = js.native
+    def has(o: T): Boolean
   }
   object Get {
     
@@ -44,7 +41,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class GetMutableBuilder[Self <: Get[_, _], T /* <: js.Object */, V] (val x: Self with (Get[T, V])) extends AnyVal {
+    implicit class GetMutableBuilder[Self <: Get[?, ?], T /* <: js.Object */, V] (val x: Self & (Get[T, V])) extends AnyVal {
       
       @scala.inline
       def setGet(value: T => js.UndefOr[V]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
@@ -54,12 +51,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Has[T /* <: js.Object */, V] extends StObject {
     
-    def has(o: T): Boolean = js.native
+    def has(o: T): Boolean
     
-    def set(o: T, value: V): js.Any = js.native
+    def set(o: T, value: V): js.Any
   }
   object Has {
     
@@ -70,7 +66,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HasMutableBuilder[Self <: Has[_, _], T /* <: js.Object */, V] (val x: Self with (Has[T, V])) extends AnyVal {
+    implicit class HasMutableBuilder[Self <: Has[?, ?], T /* <: js.Object */, V] (val x: Self & (Has[T, V])) extends AnyVal {
       
       @scala.inline
       def setHas(value: T => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))

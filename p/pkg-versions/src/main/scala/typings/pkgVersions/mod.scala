@@ -4,7 +4,6 @@ import typings.pkgVersions.anon.Call
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,9 +20,8 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("pkg-versions", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String): js.Promise[Set[String]] = js.native
+  @scala.inline
+  def apply(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
   
   @JSImport("pkg-versions", JSImport.Namespace)
   @js.native
@@ -50,9 +48,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function pkgVersions(packageName: string): Promise<Set<string>>;
   // export = pkgVersions;
-  @JSImport("pkg-versions", "default")
-  @js.native
-  def default(packageName: String): js.Promise[Set[String]] = js.native
+  @scala.inline
+  def default(packageName: String): js.Promise[Set[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Set[String]]]
   @scala.inline
   def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

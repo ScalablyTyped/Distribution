@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveTagsFromStreamInput extends StObject {
   
   /**
     * The name of the stream.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
   
   /**
     * A list of tag keys. Each corresponding tag is removed from the stream.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object RemoveTagsFromStreamInput {
   

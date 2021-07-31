@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLDocumentCompatibleInfo extends StObject {
   
   @JSName("MSHTML.IHTMLDocumentCompatibleInfo_typekey")
-  var MSHTMLDotIHTMLDocumentCompatibleInfo_typekey: IHTMLDocumentCompatibleInfo = js.native
+  var MSHTMLDotIHTMLDocumentCompatibleInfo_typekey: IHTMLDocumentCompatibleInfo
   
-  val userAgent: String = js.native
+  val userAgent: String
   
-  val version: String = js.native
+  val version: String
 }
 object IHTMLDocumentCompatibleInfo {
   

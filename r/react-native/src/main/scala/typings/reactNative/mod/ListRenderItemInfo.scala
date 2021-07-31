@@ -3,17 +3,15 @@ package typings.reactNative.mod
 import typings.reactNative.anon.Highlight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRenderItemInfo[ItemT] extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var item: ItemT = js.native
+  var item: ItemT
   
-  var separators: Highlight = js.native
+  var separators: Highlight
 }
 object ListRenderItemInfo {
   
@@ -24,7 +22,7 @@ object ListRenderItemInfo {
   }
   
   @scala.inline
-  implicit class ListRenderItemInfoMutableBuilder[Self <: ListRenderItemInfo[_], ItemT] (val x: Self with ListRenderItemInfo[ItemT]) extends AnyVal {
+  implicit class ListRenderItemInfoMutableBuilder[Self <: ListRenderItemInfo[?], ItemT] (val x: Self & ListRenderItemInfo[ItemT]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

@@ -2,14 +2,12 @@ package typings.semanticUiEmbed.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-embed.SemanticUI.Embed.ErrorSettings._Impl, 'noURL'> */
-@js.native
 trait PickImplnoURL extends StObject {
   
-  var noURL: String = js.native
+  var noURL: String
 }
 object PickImplnoURL {
   

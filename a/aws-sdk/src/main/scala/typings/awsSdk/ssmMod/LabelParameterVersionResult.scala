@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelParameterVersionResult extends StObject {
   
   /**
     * The label does not meet the requirements. For information about parameter label requirements, see Labeling parameters in the AWS Systems Manager User Guide.
     */
-  var InvalidLabels: js.UndefOr[ParameterLabelList] = js.native
+  var InvalidLabels: js.UndefOr[ParameterLabelList] = js.undefined
   
   /**
     * The version of the parameter that has been labeled.
     */
-  var ParameterVersion: js.UndefOr[PSParameterVersion] = js.native
+  var ParameterVersion: js.UndefOr[PSParameterVersion] = js.undefined
 }
 object LabelParameterVersionResult {
   

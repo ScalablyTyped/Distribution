@@ -4,21 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(config: DotenvResult): DotenvResult = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[DotenvResult]
+  
   @JSImport("dotenv-expand", JSImport.Namespace)
   @js.native
-  def apply(config: DotenvResult): DotenvResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait DotenvResult extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var parsed: js.UndefOr[StringDictionary[String]] = js.native
+    var parsed: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object DotenvResult {
     

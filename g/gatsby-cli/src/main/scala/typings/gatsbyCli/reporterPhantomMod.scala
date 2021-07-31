@@ -3,23 +3,24 @@ package typings.gatsbyCli
 import typings.opentracing.mod.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterPhantomMod {
   
-  @JSImport("gatsby-cli/lib/reporter/reporter-phantom", "createPhantomReporter")
+  @JSImport("gatsby-cli/lib/reporter/reporter-phantom", JSImport.Namespace)
   @js.native
-  def createPhantomReporter(hasTextIdSpan: ICreatePhantomReporterArguments): IPhantomReporter = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createPhantomReporter(hasTextIdSpan: ICreatePhantomReporterArguments): IPhantomReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPhantomReporter")(hasTextIdSpan.asInstanceOf[js.Any]).asInstanceOf[IPhantomReporter]
+  
   trait ICreatePhantomReporterArguments extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var span: Span = js.native
+    var span: Span
     
-    var text: String = js.native
+    var text: String
   }
   object ICreatePhantomReporterArguments {
     
@@ -43,14 +44,13 @@ object reporterPhantomMod {
     }
   }
   
-  @js.native
   trait IPhantomReporter extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    var span: Span = js.native
+    var span: Span
     
-    def start(): Unit = js.native
+    def start(): Unit
   }
   object IPhantomReporter {
     

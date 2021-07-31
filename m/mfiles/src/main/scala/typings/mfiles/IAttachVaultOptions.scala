@@ -3,31 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFAttachVaultOptionsFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAttachVaultOptions extends StObject {
   
-  def Clone(): IAttachVaultOptions = js.native
+  def Clone(): IAttachVaultOptions
   
-  def DisableAll(): Unit = js.native
+  def DisableAll(): Unit
   
-  var DisableEventHandlers: Boolean = js.native
+  var DisableEventHandlers: Boolean
   
-  var DisableExportImportJobs: Boolean = js.native
+  var DisableExportImportJobs: Boolean
   
-  var DisableExportedDataSets: Boolean = js.native
+  var DisableExportedDataSets: Boolean
   
-  var DisableExternalObjectTypes: Boolean = js.native
+  var DisableExternalObjectTypes: Boolean
   
-  var DisableExternalSources: Boolean = js.native
+  var DisableExternalSources: Boolean
   
-  var DisableExternalUserGroups: Boolean = js.native
+  var DisableExternalUserGroups: Boolean
   
-  var Flags: MFAttachVaultOptionsFlag = js.native
+  var Flags: MFAttachVaultOptionsFlag
   
-  var UpdateAttachmentGUID: Boolean = js.native
+  var UpdateAttachmentGUID: Boolean
 }
 object IAttachVaultOptions {
   

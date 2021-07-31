@@ -3,31 +3,29 @@ package typings.reactBeautifulDnd.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableProps extends StObject {
   
-  def children(provided: DroppableProvided, snapshot: DroppableStateSnapshot): ReactElement = js.native
+  def children(provided: DroppableProvided, snapshot: DroppableStateSnapshot): ReactElement
   
-  var direction: js.UndefOr[Direction] = js.native
+  var direction: js.UndefOr[Direction] = js.undefined
   
-  var droppableId: DroppableId = js.native
+  var droppableId: DroppableId
   
-  var getContainerForClone: js.UndefOr[js.Function0[ReactElement]] = js.native
+  var getContainerForClone: js.UndefOr[js.Function0[ReactElement]] = js.undefined
   
-  var ignoreContainerClipping: js.UndefOr[Boolean] = js.native
+  var ignoreContainerClipping: js.UndefOr[Boolean] = js.undefined
   
-  var isCombineEnabled: js.UndefOr[Boolean] = js.native
+  var isCombineEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var isDropDisabled: js.UndefOr[Boolean] = js.native
+  var isDropDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[DroppableMode] = js.native
+  var mode: js.UndefOr[DroppableMode] = js.undefined
   
-  var renderClone: js.UndefOr[DraggableChildrenFn] = js.native
+  var renderClone: js.UndefOr[DraggableChildrenFn] = js.undefined
   
-  var `type`: js.UndefOr[TypeId] = js.native
+  var `type`: js.UndefOr[TypeId] = js.undefined
 }
 object DroppableProps {
   

@@ -2,15 +2,13 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rx extends StObject {
   
-  var rx: Double = js.native
+  var rx: Double
   
-  var wx: Double = js.native
+  var wx: Double
 }
 object Rx {
   

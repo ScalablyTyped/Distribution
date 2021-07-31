@@ -4,28 +4,28 @@ import typings.tuyaPanelKit.stackRouterMod.StackActionType
 import typings.tuyaPanelKit.tuyaPanelKitStrings.REPLACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PayloadSource extends StackActionType {
+trait PayloadSource
+  extends StObject
+     with StackActionType {
   
-  var payload: Params = js.native
-  
-  // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var payload: Params
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: REPLACE = js.native
+  // tslint:disable-next-line no-redundant-undefined
+  var target: js.UndefOr[String] = js.undefined
+  
+  var `type`: REPLACE
 }
 object PayloadSource {
   
   @scala.inline
-  def apply(payload: Params, `type`: REPLACE): PayloadSource = {
+  def apply(payload: Params): PayloadSource = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("REPLACE")
     __obj.asInstanceOf[PayloadSource]
   }
   

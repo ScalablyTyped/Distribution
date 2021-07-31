@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 基础模块。提供唯一 id 的创建于操作,```JavaScript,var uuid = require('uuid');,```
   */
 object uuidMod {
+  
+  @JSImport("uuid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("uuid", "DNS")
   @js.native
@@ -32,23 +35,18 @@ object uuidMod {
   @js.native
   val hostID: Double = js.native
   
-  @JSImport("uuid", "md5")
-  @js.native
-  def md5(ns: Double, name: String): ClassBuffer = js.native
+  @scala.inline
+  def md5(ns: Double, name: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("md5")(ns.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @JSImport("uuid", "node")
-  @js.native
-  def node(): ClassBuffer = js.native
+  @scala.inline
+  def node(): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("node")().asInstanceOf[ClassBuffer]
   
-  @JSImport("uuid", "random")
-  @js.native
-  def random(): ClassBuffer = js.native
+  @scala.inline
+  def random(): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[ClassBuffer]
   
-  @JSImport("uuid", "sha1")
-  @js.native
-  def sha1(ns: Double, name: String): ClassBuffer = js.native
+  @scala.inline
+  def sha1(ns: Double, name: String): ClassBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(ns.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ClassBuffer]
   
-  @JSImport("uuid", "snowflake")
-  @js.native
-  def snowflake(): ClassBuffer = js.native
+  @scala.inline
+  def snowflake(): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("snowflake")().asInstanceOf[ClassBuffer]
 }

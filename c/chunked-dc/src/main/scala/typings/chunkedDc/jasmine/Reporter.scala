@@ -2,23 +2,21 @@ package typings.chunkedDc.jasmine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reporter extends StObject {
   
-  def log(str: String): Unit = js.native
+  def log(str: String): Unit
   
-  def reportRunnerResults(runner: Runner): Unit = js.native
+  def reportRunnerResults(runner: Runner): Unit
   
-  def reportRunnerStarting(runner: Runner): Unit = js.native
+  def reportRunnerStarting(runner: Runner): Unit
   
-  def reportSpecResults(spec: Spec): Unit = js.native
+  def reportSpecResults(spec: Spec): Unit
   
-  def reportSpecStarting(spec: Spec): Unit = js.native
+  def reportSpecStarting(spec: Spec): Unit
   
-  def reportSuiteResults(suite: Suite): Unit = js.native
+  def reportSuiteResults(suite: Suite): Unit
 }
 object Reporter {
   

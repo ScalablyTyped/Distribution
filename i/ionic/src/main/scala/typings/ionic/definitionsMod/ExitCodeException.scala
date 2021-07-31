@@ -3,13 +3,13 @@ package typings.ionic.definitionsMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExitCodeException extends Error {
+trait ExitCodeException
+  extends StObject
+     with Error {
   
-  var exitCode: Double = js.native
+  var exitCode: Double
 }
 object ExitCodeException {
   

@@ -3,23 +3,23 @@ package typings.minappEnv.WXNS
 import typings.minappEnv.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRequestParam extends IAPIParam[IRequestSuccessResult] {
+trait IRequestParam
+  extends StObject
+     with IAPIParam[IRequestSuccessResult] {
   
-  var data: js.UndefOr[AnyObject | String | ArrayBuffer] = js.native
+  var data: js.UndefOr[AnyObject | String | ArrayBuffer] = js.undefined
   
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[AnyObject] = js.native
+  var header: js.UndefOr[AnyObject] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object IRequestParam {
   

@@ -2,47 +2,45 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents results of a training job. Output only.
   */
-@js.native
 trait SchemaGoogleCloudMlV1TrainingOutput extends StObject {
   
   /**
     * Details related to built-in algorithms job. Only set for built-in
     * algorithms jobs.
     */
-  var builtInAlgorithmOutput: js.UndefOr[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] = js.native
+  var builtInAlgorithmOutput: js.UndefOr[SchemaGoogleCloudMlV1BuiltInAlgorithmOutput] = js.undefined
   
   /**
     * The number of hyperparameter tuning trials that completed successfully.
     * Only set for hyperparameter tuning jobs.
     */
-  var completedTrialCount: js.UndefOr[String] = js.native
+  var completedTrialCount: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of ML units consumed by the job.
     */
-  var consumedMLUnits: js.UndefOr[Double] = js.native
+  var consumedMLUnits: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether this job is a built-in Algorithm job.
     */
-  var isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.native
+  var isBuiltInAlgorithmJob: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this job is a hyperparameter tuning job.
     */
-  var isHyperparameterTuningJob: js.UndefOr[Boolean] = js.native
+  var isHyperparameterTuningJob: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Results for individual Hyperparameter trials. Only set for hyperparameter
     * tuning jobs.
     */
-  var trials: js.UndefOr[js.Array[SchemaGoogleCloudMlV1HyperparameterOutput]] = js.native
+  var trials: js.UndefOr[js.Array[SchemaGoogleCloudMlV1HyperparameterOutput]] = js.undefined
 }
 object SchemaGoogleCloudMlV1TrainingOutput {
   

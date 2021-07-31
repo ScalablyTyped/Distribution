@@ -6,37 +6,35 @@ import typings.jui.juiStrings.single
 import typings.jui.juiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   // or vertical,
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   // or double
-  var orient: js.UndefOr[horizontal | vertical] = js.native
+  var orient: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var progress: js.UndefOr[Boolean] = js.native
+  var progress: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
   
-  var tooltip: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[single | double] = js.native
+  var `type`: js.UndefOr[single | double] = js.undefined
 }
 object Format {
   

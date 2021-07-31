@@ -4,24 +4,22 @@ import typings.awsSdkTypes.clientMod.Client
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationMod {
   
-  @js.native
   trait PaginationConfiguration extends StObject {
     
-    var client: Client[_, _, _] = js.native
+    var client: Client[js.Any, js.Any, js.Any]
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var startingToken: js.UndefOr[String] = js.native
+    var startingToken: js.UndefOr[String] = js.undefined
   }
   object PaginationConfiguration {
     
     @scala.inline
-    def apply(client: Client[_, _, _]): PaginationConfiguration = {
+    def apply(client: Client[js.Any, js.Any, js.Any]): PaginationConfiguration = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationConfiguration]
     }
@@ -30,7 +28,7 @@ object paginationMod {
     implicit class PaginationConfigurationMutableBuilder[Self <: PaginationConfiguration] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setClient(value: Client[_, _, _]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      def setClient(value: Client[js.Any, js.Any, js.Any]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])

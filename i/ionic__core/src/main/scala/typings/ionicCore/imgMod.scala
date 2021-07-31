@@ -5,14 +5,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imgMod {
   
   @JSImport("@ionic/core/dist/types/components/img/img", "Img")
   @js.native
-  class Img () extends ComponentInterface {
+  class Img ()
+    extends StObject
+       with ComponentInterface {
     
     var addIO: js.Any = js.native
     

@@ -5,32 +5,29 @@ import typings.std.PropertyDecorator
 import typings.validator.mod.validator.AlphaLocale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isAlphaMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsAlpha", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsAlpha", "IS_ALPHA")
   @js.native
   val IS_ALPHA: /* "isAlpha" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "IsAlpha")
-  @js.native
-  def IsAlpha_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: String): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "IsAlpha")
-  @js.native
-  def IsAlpha_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsAlpha_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsAlpha_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "isAlpha")
-  @js.native
-  def isAlpha(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsAlpha", "isAlpha")
-  @js.native
-  def isAlpha(value: js.Any, locale: AlphaLocale): Boolean = js.native
+  @scala.inline
+  def isAlpha(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isAlpha(value: js.Any, locale: AlphaLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlpha")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsLambdaFunctionEnvironment extends StObject {
   
   /**
     * An AwsLambdaFunctionEnvironmentError object.
     */
-  var Error: js.UndefOr[AwsLambdaFunctionEnvironmentError] = js.native
+  var Error: js.UndefOr[AwsLambdaFunctionEnvironmentError] = js.undefined
   
   /**
     * Environment variable key-value pairs.
     */
-  var Variables: js.UndefOr[FieldMap] = js.native
+  var Variables: js.UndefOr[FieldMap] = js.undefined
 }
 object AwsLambdaFunctionEnvironment {
   

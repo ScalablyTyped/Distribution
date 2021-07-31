@@ -6,11 +6,11 @@ import typings.vegaLite.srcTimeunitMod.TimeUnit
 import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldDefBase[F, B /* <: Bin */] extends BandMixins {
+trait FieldDefBase[F, B /* <: Bin */]
+  extends StObject
+     with BandMixins {
   
   /**
     * Aggregation function for the field
@@ -20,7 +20,7 @@ trait FieldDefBase[F, B /* <: Bin */] extends BandMixins {
     *
     * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
     */
-  var aggregate: js.UndefOr[Aggregate | HiddenCompositeAggregate] = js.native
+  var aggregate: js.UndefOr[Aggregate | HiddenCompositeAggregate] = js.undefined
   
   /**
     * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#params), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
@@ -33,7 +33,7 @@ trait FieldDefBase[F, B /* <: Bin */] extends BandMixins {
     *
     * __See also:__ [`bin`](https://vega.github.io/vega-lite/docs/bin.html) documentation.
     */
-  var bin: js.UndefOr[B] = js.native
+  var bin: js.UndefOr[B] = js.undefined
   
   /**
     * __Required.__ A string defining the name of the field from which to pull a data value
@@ -47,7 +47,7 @@ trait FieldDefBase[F, B /* <: Bin */] extends BandMixins {
     * See more details about escaping in the [field documentation](https://vega.github.io/vega-lite/docs/field.html).
     * 2) `field` is not required if `aggregate` is `count`.
     */
-  var field: js.UndefOr[F] = js.native
+  var field: js.UndefOr[F] = js.undefined
   
   /**
     * Time unit (e.g., `year`, `yearmonth`, `month`, `hours`) for a temporal field.
@@ -57,7 +57,7 @@ trait FieldDefBase[F, B /* <: Bin */] extends BandMixins {
     *
     * __See also:__ [`timeUnit`](https://vega.github.io/vega-lite/docs/timeunit.html) documentation.
     */
-  var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.native
+  var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.undefined
 }
 object FieldDefBase {
   
@@ -68,7 +68,7 @@ object FieldDefBase {
   }
   
   @scala.inline
-  implicit class FieldDefBaseMutableBuilder[Self <: FieldDefBase[_, _], F, B /* <: Bin */] (val x: Self with (FieldDefBase[F, B])) extends AnyVal {
+  implicit class FieldDefBaseMutableBuilder[Self <: FieldDefBase[?, ?], F, B /* <: Bin */] (val x: Self & (FieldDefBase[F, B])) extends AnyVal {
     
     @scala.inline
     def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])

@@ -8,25 +8,23 @@ import typings.reactAsync.mod.RejectedProps
 import typings.reactAsync.mod.SettledProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fulfilled extends StObject {
   
-  def Fulfilled[T](props: FulfilledProps[T]): Element = js.native
+  def Fulfilled[T](props: FulfilledProps[T]): Element
   
-  def Initial[T](props: InitialProps[T]): Element = js.native
+  def Initial[T](props: InitialProps[T]): Element
   
-  def Loading[T](props: PendingProps[T]): Element = js.native
+  def Loading[T](props: PendingProps[T]): Element
   
-  def Pending[T](props: PendingProps[T]): Element = js.native
+  def Pending[T](props: PendingProps[T]): Element
   
-  def Rejected[T](props: RejectedProps[T]): Element = js.native
+  def Rejected[T](props: RejectedProps[T]): Element
   
-  def Resolved[T](props: FulfilledProps[T]): Element = js.native
+  def Resolved[T](props: FulfilledProps[T]): Element
   
-  def Settled[T](props: SettledProps[T]): Element = js.native
+  def Settled[T](props: SettledProps[T]): Element
 }
 object Fulfilled {
   

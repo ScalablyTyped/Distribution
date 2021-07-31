@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The protocol for the ListUptimeCheckConfigs response.
   */
-@js.native
 trait SchemaListUptimeCheckConfigsResponse extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaListUptimeCheckConfigsResponse extends StObject {
     * next_page_token is passed to the subsequent List method call (in the
     * request message&#39;s page_token field).
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of uptime check configurations for the project,
     * irrespective of any pagination.
     */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The returned uptime check configurations.
     */
-  var uptimeCheckConfigs: js.UndefOr[js.Array[SchemaUptimeCheckConfig]] = js.native
+  var uptimeCheckConfigs: js.UndefOr[js.Array[SchemaUptimeCheckConfig]] = js.undefined
 }
 object SchemaListUptimeCheckConfigsResponse {
   

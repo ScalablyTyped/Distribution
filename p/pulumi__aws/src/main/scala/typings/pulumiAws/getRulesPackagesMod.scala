@@ -3,30 +3,30 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getRulesPackagesMod {
   
-  @JSImport("@pulumi/aws/inspector/getRulesPackages", "getRulesPackages")
+  @JSImport("@pulumi/aws/inspector/getRulesPackages", JSImport.Namespace)
   @js.native
-  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = js.native
-  @JSImport("@pulumi/aws/inspector/getRulesPackages", "getRulesPackages")
-  @js.native
-  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRulesPackages(): js.Promise[GetRulesPackagesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesPackages")().asInstanceOf[js.Promise[GetRulesPackagesResult]]
+  @scala.inline
+  def getRulesPackages(opts: InvokeOptions): js.Promise[GetRulesPackagesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRulesPackages")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRulesPackagesResult]]
+  
   trait GetRulesPackagesResult extends StObject {
     
     /**
       * A list of the AWS Inspector Rules Packages arns available in the AWS region.
       */
-    val arns: js.Array[String] = js.native
+    val arns: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetRulesPackagesResult {
     

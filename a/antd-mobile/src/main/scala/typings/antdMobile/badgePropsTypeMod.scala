@@ -4,23 +4,21 @@ import typings.antdMobile.antdMobileStrings.large
 import typings.antdMobile.antdMobileStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgePropsTypeMod {
   
-  @js.native
   trait BadgePropsTypes extends StObject {
     
-    var corner: js.UndefOr[Boolean] = js.native
+    var corner: js.UndefOr[Boolean] = js.undefined
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var overflowCount: js.UndefOr[Double] = js.native
+    var overflowCount: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
   }
   object BadgePropsTypes {
     

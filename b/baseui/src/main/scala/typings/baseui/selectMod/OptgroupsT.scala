@@ -3,13 +3,13 @@ package typings.baseui.selectMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptgroupsT extends /* key */ StringDictionary[Value] {
+trait OptgroupsT
+  extends StObject
+     with /* key */ StringDictionary[Value] {
   
-  var __ungrouped: Value = js.native
+  var __ungrouped: Value
 }
 object OptgroupsT {
   

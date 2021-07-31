@@ -4,20 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service specifies a footnote or an endnote in a {@link TextDocument} . */
-@js.native
 trait Footnote
-  extends XFootnote
+  extends StObject
+     with XFootnote
      with XText {
   
   /**
     * contains an internal identifier for the use as SequenceNumber property in reference fields.
     * @see com.sun.star.text.textfield.GetReference.
     */
-  var ReferenceId: Double = js.native
+  var ReferenceId: Double
 }
 object Footnote {
   

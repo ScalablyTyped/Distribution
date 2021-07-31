@@ -4,25 +4,23 @@ import typings.sketchapp.anon.Archive
 import typings.sketchapp.sketchappStrings.attributedString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSAttributedString extends StObject {
   
-  var _class: attributedString = js.native
+  var _class: attributedString
   
-  var archivedAttributedString: js.UndefOr[Archive] = js.native
+  var archivedAttributedString: js.UndefOr[Archive] = js.undefined
   
-  var attributes: js.Array[SketchMSStringAttribute] = js.native
+  var attributes: js.Array[SketchMSStringAttribute]
   
-  var string: String = js.native
+  var string: String
 }
 object SketchMSAttributedString {
   
   @scala.inline
-  def apply(_class: attributedString, attributes: js.Array[SketchMSStringAttribute], string: String): SketchMSAttributedString = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
+  def apply(attributes: js.Array[SketchMSStringAttribute], string: String): SketchMSAttributedString = {
+    val __obj = js.Dynamic.literal(_class = "attributedString", attributes = attributes.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSAttributedString]
   }
   

@@ -2,15 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommentRange extends TextRange {
+trait CommentRange
+  extends StObject
+     with TextRange {
   
-  var hasTrailingNewLine: js.UndefOr[Boolean] = js.native
+  var hasTrailingNewLine: js.UndefOr[Boolean] = js.undefined
   
-  var kind: CommentKind = js.native
+  var kind: CommentKind
 }
 object CommentRange {
   

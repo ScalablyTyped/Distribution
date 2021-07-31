@@ -3,11 +3,11 @@ package typings.extjs.Ext.dd
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDragSource extends IDDProxy {
+trait IDragSource
+  extends StObject
+     with IDDProxy {
   
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drag drop has occurr
     * @param target Ext.dd.DragDrop The drop target
@@ -21,7 +21,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action when the dragged item enters the d
     * @param target Ext.dd.DragDrop The drop target
@@ -35,7 +35,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action after the dragged item is dragged
     * @param target Ext.dd.DragDrop The drop target
@@ -49,7 +49,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action while the dragged item is over the
     * @param target Ext.dd.DragDrop The drop target
@@ -63,13 +63,13 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action after an invalid drop has occurred
     * @param e Event The event object
     * @param id String The id of the dropped element
     */
-  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String], Unit]] = js.native
+  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drop has occurred by
     * @param target Object The target DD
@@ -83,14 +83,14 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element to the location of the mousedown or click event maintaining the cursor location relative to the loc  */
   @JSName("alignElWithMouse")
-  var alignElWithMouse_IDragSource: js.UndefOr[js.Function0[Unit]] = js.native
+  var alignElWithMouse_IDragSource: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var animRepair: js.UndefOr[Boolean] = js.native
+  var animRepair: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item is dropped
     * @param target Ext.dd.DragDrop The drop target
@@ -105,7 +105,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item enters the
     * @param target Ext.dd.DragDrop The drop target
@@ -120,7 +120,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item is dragged
     * @param target Ext.dd.DragDrop The drop target
@@ -135,7 +135,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action while the dragged item is over the
     * @param target Ext.dd.DragDrop The drop target
@@ -150,7 +150,7 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action after an invalid drop has occurred
     * @param target Ext.dd.DragDrop The drop target
@@ -165,49 +165,49 @@ trait IDragSource extends IDDProxy {
       /* id */ js.UndefOr[String], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var ddGroup: js.UndefOr[String] = js.native
+  var ddGroup: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var dragData: js.UndefOr[js.Any] = js.native
+  var dragData: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var dropAllowed: js.UndefOr[String] = js.native
+  var dropAllowed: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var dropNotAllowed: js.UndefOr[String] = js.native
+  var dropNotAllowed: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the data object associated with this drag source
     * @param e Object
     * @returns Object data An object containing arbitrary data
     */
-  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], _]] = js.native
+  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Returns the drag source s underlying Ext dd StatusProxy
     * @returns Ext.dd.StatusProxy proxy The StatusProxy
     */
-  var getProxy: js.UndefOr[js.Function0[IStatusProxy]] = js.native
+  var getProxy: js.UndefOr[js.Function0[IStatusProxy]] = js.undefined
   
   /** [Method] Hides the drag source s Ext dd StatusProxy */
-  var hideProxy: js.UndefOr[js.Function0[Unit]] = js.native
+  var hideProxy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action before the initial drag event begi
     * @param data Object An object containing arbitrary data to be shared with drop targets
     * @param e Event The event object
     * @returns Boolean isValid True if the drag event is valid, else false to cancel
     */
-  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], Boolean]] = js.native
+  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event], Boolean]] = js.undefined
   
   /** [Method] An empty function by default but provided so that you can perform a custom action once the initial drag event has be
     * @param x Number The x position of the click on the dragged object
     * @param y Number The y position of the click on the dragged object
     */
-  var onStartDrag: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.native
+  var onStartDrag: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var repairHighlightColor: js.UndefOr[String] = js.native
+  var repairHighlightColor: js.UndefOr[String] = js.undefined
 }
 object IDragSource {
   
@@ -343,7 +343,7 @@ object IDragSource {
     def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
     
     @scala.inline
-    def setGetDragData(value: /* e */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    def setGetDragData(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)

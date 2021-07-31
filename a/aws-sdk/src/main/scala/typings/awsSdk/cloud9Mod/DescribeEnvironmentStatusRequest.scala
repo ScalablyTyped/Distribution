@@ -2,16 +2,14 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentStatusRequest extends StObject {
   
   /**
     * The ID of the environment to get status information about.
     */
-  var environmentId: EnvironmentId = js.native
+  var environmentId: EnvironmentId
 }
 object DescribeEnvironmentStatusRequest {
   

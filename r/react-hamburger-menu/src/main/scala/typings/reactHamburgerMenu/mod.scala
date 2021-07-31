@@ -3,7 +3,6 @@ package typings.reactHamburgerMenu
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,60 +14,59 @@ object mod {
   
   type HamburgerMenu = PureComponent[HamburgerMenuProps, js.Object, js.Any]
   
-  @js.native
   trait HamburgerMenuProps extends StObject {
     
     /**
       * The length of time it takes for the icon transitions to complete.
       * @default 0.4
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * The border radius of the lines
       * @default 0
       */
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * The color of both icons
       * @default #000
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * The height of the icon
       * @default 30
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines whether the menu is a hamburger or cross icon
       */
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
     
     /**
       * Will be invoked when the component is clicked
       */
-    def menuClicked(): Unit = js.native
+    def menuClicked(): Unit
     
     /**
       * The rotation of the icon, eg {45} would be 45deg
       * @default 0
       */
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
     /**
       * The stroke width of the lines
       * @default 2
       */
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the icon
       * @default 36
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object HamburgerMenuProps {
     

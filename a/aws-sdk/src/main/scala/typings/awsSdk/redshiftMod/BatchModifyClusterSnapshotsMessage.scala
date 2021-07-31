@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchModifyClusterSnapshotsMessage extends StObject {
   
   /**
     * A boolean value indicating whether to override an exception if the retention period has passed. 
     */
-  var Force: js.UndefOr[Boolean] = js.native
+  var Force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of days that a manual snapshot is retained. If you specify the value -1, the manual snapshot is retained indefinitely. The number must be either -1 or an integer between 1 and 3,653. If you decrease the manual snapshot retention period from its current value, existing manual snapshots that fall outside of the new retention period will return an error. If you want to suppress the errors and delete the snapshots, use the force option. 
     */
-  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
+  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A list of snapshot identifiers you want to modify.
     */
-  var SnapshotIdentifierList: typings.awsSdk.redshiftMod.SnapshotIdentifierList = js.native
+  var SnapshotIdentifierList: typings.awsSdk.redshiftMod.SnapshotIdentifierList
 }
 object BatchModifyClusterSnapshotsMessage {
   

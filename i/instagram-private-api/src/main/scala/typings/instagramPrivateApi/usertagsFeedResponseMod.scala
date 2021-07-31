@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usertagsFeedResponseMod {
   
-  @js.native
   trait UsertagsFeedResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.Array[Double] = js.native
+    var estimated_scans_sizes: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object UsertagsFeedResponseCandidatesItem {
     
@@ -46,36 +44,35 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseCaption extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_translation: js.UndefOr[Boolean] = js.native
+    var has_translation: js.UndefOr[Boolean] = js.undefined
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: UsertagsFeedResponseUser = js.native
+    var user: UsertagsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object UsertagsFeedResponseCaption {
     
@@ -150,16 +147,15 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object UsertagsFeedResponseFriendshipStatus {
     
@@ -186,10 +182,9 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[UsertagsFeedResponseCandidatesItem] = js.native
+    var candidates: js.Array[UsertagsFeedResponseCandidatesItem]
   }
   object UsertagsFeedResponseImageVersions2 {
     
@@ -210,16 +205,15 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseInItem extends StObject {
     
-    var duration_in_video_in_sec: Null = js.native
+    var duration_in_video_in_sec: Null
     
-    var position: js.Array[Double | String] = js.native
+    var position: js.Array[Double | String]
     
-    var start_time_in_video_in_sec: Null = js.native
+    var start_time_in_video_in_sec: Null
     
-    var user: UsertagsFeedResponseUser = js.native
+    var user: UsertagsFeedResponseUser
   }
   object UsertagsFeedResponseInItem {
     
@@ -254,76 +248,75 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseItemsItem extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: UsertagsFeedResponseCaption = js.native
+    var caption: UsertagsFeedResponseCaption
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_liked: Boolean = js.native
+    var has_liked: Boolean
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: UsertagsFeedResponseImageVersions2 = js.native
+    var image_versions2: UsertagsFeedResponseImageVersions2
     
-    var inline_composer_display_condition: String = js.native
+    var inline_composer_display_condition: String
     
-    var inline_composer_imp_trigger_time: Double = js.native
+    var inline_composer_imp_trigger_time: Double
     
-    var lat: js.UndefOr[Double] = js.native
+    var lat: js.UndefOr[Double] = js.undefined
     
-    var like_count: Double = js.native
+    var like_count: Double
     
-    var lng: js.UndefOr[String] = js.native
+    var lng: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[UsertagsFeedResponseLocation] = js.native
+    var location: js.UndefOr[UsertagsFeedResponseLocation] = js.undefined
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[UsertagsFeedResponsePreviewCommentsItem] = js.native
+    var preview_comments: js.Array[UsertagsFeedResponsePreviewCommentsItem]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: UsertagsFeedResponseUser = js.native
+    var user: UsertagsFeedResponseUser
     
-    var usertags: UsertagsFeedResponseUsertags = js.native
+    var usertags: UsertagsFeedResponseUsertags
   }
   object UsertagsFeedResponseItemsItem {
     
@@ -484,26 +477,25 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var facebook_places_id: Double | String = js.native
+    var facebook_places_id: Double | String
     
-    var lat: Double | String = js.native
+    var lat: Double | String
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var short_name: String = js.native
+    var short_name: String
   }
   object UsertagsFeedResponseLocation {
     
@@ -555,42 +547,41 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponsePreviewCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var has_translation: js.UndefOr[Boolean] = js.native
+    var has_translation: js.UndefOr[Boolean] = js.undefined
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var parent_comment_id: js.UndefOr[String] = js.native
+    var parent_comment_id: js.UndefOr[String] = js.undefined
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: UsertagsFeedResponseUser = js.native
+    var user: UsertagsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object UsertagsFeedResponsePreviewCommentsItem {
     
@@ -679,26 +670,25 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseRootObject extends StObject {
     
-    var auto_load_more_enabled: Boolean = js.native
+    var auto_load_more_enabled: Boolean
     
-    var items: js.Array[UsertagsFeedResponseItemsItem] = js.native
+    var items: js.Array[UsertagsFeedResponseItemsItem]
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var new_photos: js.Array[_] = js.native
+    var new_photos: js.Array[js.Any]
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var num_results: Double = js.native
+    var num_results: Double
     
-    var requires_review: Boolean = js.native
+    var requires_review: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var total_count: Double = js.native
+    var total_count: Double
   }
   object UsertagsFeedResponseRootObject {
     
@@ -707,7 +697,7 @@ object usertagsFeedResponseMod {
       auto_load_more_enabled: Boolean,
       items: js.Array[UsertagsFeedResponseItemsItem],
       more_available: Boolean,
-      new_photos: js.Array[_],
+      new_photos: js.Array[js.Any],
       next_max_id: String,
       num_results: Double,
       requires_review: Boolean,
@@ -734,7 +724,7 @@ object usertagsFeedResponseMod {
       def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNew_photos(value: js.Array[_]): Self = StObject.set(x, "new_photos", value.asInstanceOf[js.Any])
+      def setNew_photos(value: js.Array[js.Any]): Self = StObject.set(x, "new_photos", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNew_photosVarargs(value: js.Any*): Self = StObject.set(x, "new_photos", js.Array(value :_*))
@@ -756,30 +746,29 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseUser extends StObject {
     
-    var friendship_status: js.UndefOr[UsertagsFeedResponseFriendshipStatus] = js.native
+    var friendship_status: js.UndefOr[UsertagsFeedResponseFriendshipStatus] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_favorite: js.UndefOr[Boolean] = js.native
+    var is_favorite: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object UsertagsFeedResponseUser {
     
@@ -849,10 +838,9 @@ object usertagsFeedResponseMod {
     }
   }
   
-  @js.native
   trait UsertagsFeedResponseUsertags extends StObject {
     
-    var in: js.Array[UsertagsFeedResponseInItem] = js.native
+    var in: js.Array[UsertagsFeedResponseInItem]
   }
   object UsertagsFeedResponseUsertags {
     

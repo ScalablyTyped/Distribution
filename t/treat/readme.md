@@ -10,9 +10,9 @@ Themeable, statically extracted CSS-in-JS with near-zero runtime
 | ------------------ | :-------------: |
 | Full name          | treat |
 | Keywords           | - |
-| # releases         | 77 |
+| # releases         | 79 |
 | # dependents       | 7 |
-| # downloads        | 153602 |
+| # downloads        | 195869 |
 | # stars            | 0 |
 
 ## Links

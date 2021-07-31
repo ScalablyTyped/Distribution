@@ -2,7 +2,6 @@ package typings.blueprintjsTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batcherMod {
@@ -68,35 +67,31 @@ object batcherMod {
       * "current" arguments match the "batch" arguments.
       */
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T]): Unit = js.native
-    def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
-      addNewLimit: js.UndefOr[scala.Nothing],
-      removeOldLimit: js.UndefOr[scala.Nothing],
-      updateLimit: Double
-    ): Unit = js.native
-    def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
-      addNewLimit: js.UndefOr[scala.Nothing],
-      removeOldLimit: Double
-    ): Unit = js.native
-    def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
-      addNewLimit: js.UndefOr[scala.Nothing],
-      removeOldLimit: Double,
-      updateLimit: Double
-    ): Unit = js.native
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double): Unit = js.native
-    def removeOldAddNew(
-      callback: js.Function1[/* repeated */ js.Any, T],
-      addNewLimit: Double,
-      removeOldLimit: js.UndefOr[scala.Nothing],
-      updateLimit: Double
-    ): Unit = js.native
     def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Double, removeOldLimit: Double): Unit = js.native
     def removeOldAddNew(
       callback: js.Function1[/* repeated */ js.Any, T],
       addNewLimit: Double,
       removeOldLimit: Double,
+      updateLimit: Double
+    ): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: Double,
+      removeOldLimit: Unit,
+      updateLimit: Double
+    ): Unit = js.native
+    def removeOldAddNew(callback: js.Function1[/* repeated */ js.Any, T], addNewLimit: Unit, removeOldLimit: Double): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: Unit,
+      removeOldLimit: Double,
+      updateLimit: Double
+    ): Unit = js.native
+    def removeOldAddNew(
+      callback: js.Function1[/* repeated */ js.Any, T],
+      addNewLimit: Unit,
+      removeOldLimit: Unit,
       updateLimit: Double
     ): Unit = js.native
     

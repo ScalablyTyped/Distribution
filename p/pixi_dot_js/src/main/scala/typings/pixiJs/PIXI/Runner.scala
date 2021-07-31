@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,7 +49,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Runner extends StObject {
   
   /**
@@ -73,18 +71,18 @@ trait Runner extends StObject {
     * @param {any} item - The object that will be listening.
     * @return {PIXI.Runner}
     */
-  def add(item: js.Any): Runner = js.native
+  def add(item: js.Any): Runner
   
   /**
     * Check to see if the listener is already in the Runner
     * @param {any} item - The listener that you would like to check.
     */
-  def contains(item: js.Any): Unit = js.native
+  def contains(item: js.Any): Unit
   
   /**
     * Remove all references, don't use after this.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Alias for `emit`
@@ -92,14 +90,14 @@ trait Runner extends StObject {
     * @method dispatch
     * @see PIXI.Runner#emit
     */
-  def dispatch(): Unit = js.native
+  def dispatch(): Unit
   
   /**
     * Dispatch/Broadcast Runner to all listeners added to the queue.
     * @param {...any} params - optional parameters to pass to each listener
     * @return {PIXI.Runner}
     */
-  def emit(params: js.Any*): Runner = js.native
+  def emit(params: js.Any*): Runner
   
   /**
     * `true` if there are no this Runner contains no listeners
@@ -107,7 +105,7 @@ trait Runner extends StObject {
     * @member {boolean}
     * @readonly
     */
-  val empty: Boolean = js.native
+  val empty: Boolean
   
   /**
     * The name of the runner.
@@ -115,20 +113,20 @@ trait Runner extends StObject {
     * @member {string}
     * @readonly
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * Remove a single listener from the dispatch queue.
     * @param {any} item - The listenr that you would like to remove.
     * @return {PIXI.Runner}
     */
-  def remove(item: js.Any): Runner = js.native
+  def remove(item: js.Any): Runner
   
   /**
     * Remove all listeners from the Runner
     * @return {PIXI.Runner}
     */
-  def removeAll(): Runner = js.native
+  def removeAll(): Runner
   
   /**
     * Alias for `emit`
@@ -136,7 +134,7 @@ trait Runner extends StObject {
     * @method run
     * @see PIXI.Runner#emit
     */
-  def run(): Unit = js.native
+  def run(): Unit
 }
 object Runner {
   

@@ -3,14 +3,15 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonsMod {
   
   @JSImport("@ionic/core/dist/types/components/buttons/buttons", "Buttons")
   @js.native
-  class Buttons () extends ComponentInterface {
+  class Buttons ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If true, buttons will disappear when its

@@ -20,370 +20,298 @@ import typings.std.Error
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("qrcode", "create")
+  @JSImport("qrcode", JSImport.Namespace)
   @js.native
-  def create(text: String, options: QRCodeOptions): QRCode = js.native
-  @JSImport("qrcode", "create")
-  @js.native
-  def create(text: js.Array[QRCodeSegment], options: QRCodeOptions): QRCode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("qrcode", "toBuffer")
-  @js.native
-  def toBuffer(text: String): js.Promise[Buffer] = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
-  def toBuffer(text: String, callback: js.Function2[/* error */ Error, /* buffer */ Buffer, Unit]): Unit = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
-  def toBuffer(text: String, options: QRCodeToBufferOptions): js.Promise[Buffer] = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
+  @scala.inline
+  def create(text: String, options: QRCodeOptions): QRCode = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QRCode]
+  @scala.inline
+  def create(text: js.Array[QRCodeSegment], options: QRCodeOptions): QRCode = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[QRCode]
+  
+  @scala.inline
+  def toBuffer(text: String): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
+  def toBuffer(text: String, callback: js.Function2[/* error */ Error, /* buffer */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toBuffer(text: String, options: QRCodeToBufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def toBuffer(
     text: String,
     options: QRCodeToBufferOptions,
     callback: js.Function2[/* error */ Error, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
-  def toBuffer(text: js.Array[QRCodeSegment]): js.Promise[Buffer] = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toBuffer(text: js.Array[QRCodeSegment]): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def toBuffer(
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
-  def toBuffer(text: js.Array[QRCodeSegment], options: QRCodeToBufferOptions): js.Promise[Buffer] = js.native
-  @JSImport("qrcode", "toBuffer")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toBuffer(text: js.Array[QRCodeSegment], options: QRCodeToBufferOptions): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def toBuffer(
     text: js.Array[QRCodeSegment],
     options: QRCodeToBufferOptions,
     callback: js.Function2[/* error */ Error, /* buffer */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvasElement: HTMLCanvasElement, text: String): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvasElement: HTMLCanvasElement, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvasElement: HTMLCanvasElement, text: String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  @scala.inline
+  def toCanvas(canvasElement: HTMLCanvasElement, text: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toCanvas(canvasElement: HTMLCanvasElement, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvasElement: HTMLCanvasElement, text: String, options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     canvasElement: HTMLCanvasElement,
     text: String,
     options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: String): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: String, options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     canvas: js.Any,
     text: String,
     options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(canvas: js.Any, text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     canvas: js.Any,
     text: js.Array[QRCodeSegment],
     options: QRCodeRenderersOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(text: String): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(text: String, callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(text: String, options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(canvas.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(text: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toCanvas(text: String, callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(text: String, options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     text: String,
     options: QRCodeRenderersOptions,
     callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(text: js.Array[QRCodeSegment]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
-  def toCanvas(text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toCanvas")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toCanvas(text: js.Array[QRCodeSegment], options: QRCodeRenderersOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toCanvas(
     text: js.Array[QRCodeSegment],
     options: QRCodeRenderersOptions,
     callback: js.Function2[/* error */ Error, /* canvas */ HTMLCanvasElement, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toCanvas")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: String): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  @scala.inline
+  def toDataURL(canvasElement: HTMLCanvasElement, text: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: String,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: String, options: QRCodeToDataURLOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(canvasElement: HTMLCanvasElement, text: String, options: QRCodeToDataURLOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: String,
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(canvasElement: HTMLCanvasElement, text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     canvasElement: HTMLCanvasElement,
     text: js.Array[QRCodeSegment],
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: String): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: String, callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: String, options: QRCodeToDataURLOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(canvasElement.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def toDataURL(text: String, callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(text: String, options: QRCodeToDataURLOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     text: String,
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: js.Array[QRCodeSegment], callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
-  def toDataURL(text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toDataURL")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(text: js.Array[QRCodeSegment]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def toDataURL(text: js.Array[QRCodeSegment], callback: js.Function2[/* error */ Error, /* url */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toDataURL(text: js.Array[QRCodeSegment], options: QRCodeToDataURLOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toDataURL(
     text: js.Array[QRCodeSegment],
     options: QRCodeToDataURLOptions,
     callback: js.Function2[/* error */ Error, /* url */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toDataURL")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: String): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: String, options: QRCodeToFileOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
+  @scala.inline
+  def toFile(path: String, text: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toFile(path: String, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFile(path: String, text: String, options: QRCodeToFileOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toFile(
     path: String,
     text: String,
     options: QRCodeToFileOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
-  def toFile(path: String, text: js.Array[QRCodeSegment], options: QRCodeToFileOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFile(path: String, text: js.Array[QRCodeSegment]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toFile(path: String, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFile(path: String, text: js.Array[QRCodeSegment], options: QRCodeToFileOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toFile(
     path: String,
     text: js.Array[QRCodeSegment],
     options: QRCodeToFileOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: String): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: String, options: QRCodeToFileStreamOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
+  @scala.inline
+  def toFileStream(stream: Writable, text: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toFileStream(stream: Writable, text: String, callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFileStream(stream: Writable, text: String, options: QRCodeToFileStreamOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toFileStream(
     stream: Writable,
     text: String,
     options: QRCodeToFileStreamOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment]): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
-  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment], options: QRCodeToFileStreamOptions): js.Promise[_] = js.native
-  @JSImport("qrcode", "toFileStream")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment]): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment], callback: js.Function1[/* error */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toFileStream(stream: Writable, text: js.Array[QRCodeSegment], options: QRCodeToFileStreamOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
   def toFileStream(
     stream: Writable,
     text: js.Array[QRCodeSegment],
     options: QRCodeToFileStreamOptions,
     callback: js.Function1[/* error */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileStream")(stream.asInstanceOf[js.Any], text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("qrcode", "toString")
-  @js.native
-  def toString_(text: String): js.Promise[String] = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
-  def toString_(text: String, callback: js.Function2[/* error */ Error, /* string */ String, Unit]): Unit = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
-  def toString_(text: String, options: QRCodeToStringOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
+  @scala.inline
+  def toString_(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def toString_(text: String, callback: js.Function2[/* error */ Error, /* string */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toString_(text: String, options: QRCodeToStringOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toString_(
     text: String,
     options: QRCodeToStringOptions,
     callback: js.Function2[/* error */ Error, /* string */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
-  def toString_(text: js.Array[QRCodeSegment]): js.Promise[String] = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toString_(text: js.Array[QRCodeSegment]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toString_(
     text: js.Array[QRCodeSegment],
     callback: js.Function2[/* error */ Error, /* string */ String, Unit]
-  ): Unit = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
-  def toString_(text: js.Array[QRCodeSegment], options: QRCodeToStringOptions): js.Promise[String] = js.native
-  @JSImport("qrcode", "toString")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def toString_(text: js.Array[QRCodeSegment], options: QRCodeToStringOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
   def toString_(
     text: js.Array[QRCodeSegment],
     options: QRCodeToStringOptions,
     callback: js.Function2[/* error */ Error, /* string */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait QRCode extends StObject {
     
     /**
       * Error Correction Level
       */
-    var errorCorrectionLevel: Double = js.native
+    var errorCorrectionLevel: Double
     
     /**
       * Calculated Mask pattern
       */
-    var maskPattern: js.Any = js.native
+    var maskPattern: js.Any
     
     /**
       * Bitmatrix class with modules data
       */
-    var modules: js.Any = js.native
+    var modules: js.Any
     
     /**
       * Generated segments
       */
-    var segments: js.Array[QRCodeSegment] = js.native
+    var segments: js.Array[QRCodeSegment]
     
     /**
       * Calculated QR Code version
       */
-    var version: Double = js.native
+    var version: Double
   }
   object QRCode {
     
@@ -460,7 +388,6 @@ object mod {
     def quartile: typings.qrcode.qrcodeStrings.quartile = "quartile".asInstanceOf[typings.qrcode.qrcodeStrings.quartile]
   }
   
-  @js.native
   trait QRCodeOptions extends StObject {
     
     /**
@@ -468,18 +395,18 @@ object mod {
       * Possible values are low, medium, quartile, high or L, M, Q, H.
       * Default: M
       */
-    var errorCorrectionLevel: js.UndefOr[QRCodeErrorCorrectionLevel] = js.native
+    var errorCorrectionLevel: js.UndefOr[QRCodeErrorCorrectionLevel] = js.undefined
     
     /**
       * Helper function used internally to convert a kanji to its Shift JIS value.
       * Provide this function if you need support for Kanji mode.
       */
-    var toSJISFunc: js.UndefOr[js.Function1[/* codePoint */ String, Double]] = js.native
+    var toSJISFunc: js.UndefOr[js.Function1[/* codePoint */ String, Double]] = js.undefined
     
     /**
       * QR Code version. If not specified the more suitable value will be calculated.
       */
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object QRCodeOptions {
     
@@ -512,29 +439,30 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeRenderersOptions extends QRCodeOptions {
+  trait QRCodeRenderersOptions
+    extends StObject
+       with QRCodeOptions {
     
-    var color: js.UndefOr[Dark] = js.native
+    var color: js.UndefOr[Dark] = js.undefined
     
     /**
       * Define how much wide the quiet zone should be.
       * Default: 4
       */
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
     /**
       * Scale factor. A value of 1 means 1px per modules (black dots).
       * Default: 4
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Forces a specific width for the output image.
       * If width is too small to contain the qr symbol, this option will be ignored.
       * Takes precedence over scale.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object QRCodeRenderersOptions {
     
@@ -573,12 +501,11 @@ object mod {
     }
   }
   
-  @js.native
   trait QRCodeSegment extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var mode: alphanumeric | numeric | kanji | byte = js.native
+    var mode: alphanumeric | numeric | kanji | byte
   }
   object QRCodeSegment {
     
@@ -599,15 +526,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeToBufferOptions extends QRCodeRenderersOptions {
+  trait QRCodeToBufferOptions
+    extends StObject
+       with QRCodeRenderersOptions {
     
-    var rendererOpts: js.UndefOr[DeflateLevel] = js.native
+    var rendererOpts: js.UndefOr[DeflateLevel] = js.undefined
     
     /**
       * Output format. Only png supported for Buffer.
       */
-    var `type`: js.UndefOr[png] = js.native
+    var `type`: js.UndefOr[png] = js.undefined
   }
   object QRCodeToBufferOptions {
     
@@ -634,16 +562,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeToDataURLOptions extends QRCodeRenderersOptions {
+  trait QRCodeToDataURLOptions
+    extends StObject
+       with QRCodeRenderersOptions {
     
-    var rendererOpts: js.UndefOr[Quality] = js.native
+    var rendererOpts: js.UndefOr[Quality] = js.undefined
     
     /**
       * Data URI format.
       * Default: image/png
       */
-    var `type`: js.UndefOr[imageSlashpng | imageSlashjpeg | imageSlashwebp] = js.native
+    var `type`: js.UndefOr[imageSlashpng | imageSlashjpeg | imageSlashwebp] = js.undefined
   }
   object QRCodeToDataURLOptions {
     
@@ -670,16 +599,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeToFileOptions extends QRCodeRenderersOptions {
+  trait QRCodeToFileOptions
+    extends StObject
+       with QRCodeRenderersOptions {
     
-    var rendererOpts: js.UndefOr[DeflateLevel] = js.native
+    var rendererOpts: js.UndefOr[DeflateLevel] = js.undefined
     
     /**
       * Output format.
       * Default: png
       */
-    var `type`: js.UndefOr[png | svg | utf8] = js.native
+    var `type`: js.UndefOr[png | svg | utf8] = js.undefined
   }
   object QRCodeToFileOptions {
     
@@ -706,15 +636,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeToFileStreamOptions extends QRCodeRenderersOptions {
+  trait QRCodeToFileStreamOptions
+    extends StObject
+       with QRCodeRenderersOptions {
     
-    var rendererOpts: js.UndefOr[DeflateLevel] = js.native
+    var rendererOpts: js.UndefOr[DeflateLevel] = js.undefined
     
     /**
       * Output format. Only png supported for file stream
       */
-    var `type`: js.UndefOr[png] = js.native
+    var `type`: js.UndefOr[png] = js.undefined
   }
   object QRCodeToFileStreamOptions {
     
@@ -741,14 +672,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait QRCodeToStringOptions extends QRCodeRenderersOptions {
+  trait QRCodeToStringOptions
+    extends StObject
+       with QRCodeRenderersOptions {
     
     /**
       * Output format.
       * Default: utf8
       */
-    var `type`: js.UndefOr[utf8 | svg | terminal] = js.native
+    var `type`: js.UndefOr[utf8 | svg | terminal] = js.undefined
   }
   object QRCodeToStringOptions {
     

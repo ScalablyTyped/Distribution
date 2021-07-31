@@ -3,23 +3,23 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.Decorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Decorator_ extends Node {
+trait Decorator_
+  extends StObject
+     with Node {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_Decorator_ : Decorator = js.native
+  var type_Decorator_ : Decorator
 }
 object Decorator_ {
   
   @scala.inline
-  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double, `type`: Decorator): Decorator_ = {
+  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): Decorator_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Decorator")
     __obj.asInstanceOf[Decorator_]
   }
   

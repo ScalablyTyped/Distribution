@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteActionTargetResponse extends StObject {
   
   /**
     * The ARN of the custom action target that was deleted.
     */
-  var ActionTargetArn: NonEmptyString = js.native
+  var ActionTargetArn: NonEmptyString
 }
 object DeleteActionTargetResponse {
   

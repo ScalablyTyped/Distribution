@@ -3,17 +3,15 @@ package typings.three.anon
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Func extends StObject {
   
-  def func(u: Double, v: Double, dest: Vector3): Unit = js.native
+  def func(u: Double, v: Double, dest: Vector3): Unit
   
-  var slices: Double = js.native
+  var slices: Double
   
-  var stacks: Double = js.native
+  var stacks: Double
 }
 object Func {
   

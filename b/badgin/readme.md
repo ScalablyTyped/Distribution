@@ -10,9 +10,9 @@ Badgin makes it easy to subtly notify the user that there is some new activity t
 | ------------------ | :-------------: |
 | Full name          | badgin |
 | Keywords           | - |
-| # releases         | 13 |
+| # releases         | 17 |
 | # dependents       | 3 |
-| # downloads        | 1141545 |
+| # downloads        | 2914641 |
 | # stars            | 0 |
 
 ## Links

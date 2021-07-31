@@ -3,24 +3,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a request to lease WorkItems.
   */
-@js.native
 trait SchemaLeaseWorkItemResponse extends StObject {
   
   /**
     * Untranslated bag-of-bytes WorkResponse for UnifiedWorker.
     */
-  var unifiedWorkerResponse: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var unifiedWorkerResponse: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * A list of the leased WorkItems.
     */
-  var workItems: js.UndefOr[js.Array[SchemaWorkItem]] = js.native
+  var workItems: js.UndefOr[js.Array[SchemaWorkItem]] = js.undefined
 }
 object SchemaLeaseWorkItemResponse {
   

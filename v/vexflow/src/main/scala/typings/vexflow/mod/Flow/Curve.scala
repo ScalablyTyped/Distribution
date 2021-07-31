@@ -1,17 +1,34 @@
 package typings.vexflow.mod.Flow
 
+import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Cps
+import typings.vexflow.anon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Curve")
 @js.native
 class Curve protected ()
-  extends typings.vexflow.Vex.Flow.Curve {
+  extends StObject
+     with typings.vexflow.Vex.Flow.Curve {
   def this(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note) = this()
   def this(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note, options: Cps) = this()
+  
+  /* CompleteClass */
+  override def draw(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def isPartial(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def renderCurve(params: Direction): Unit = js.native
+  
+  /* CompleteClass */
+  override def setContext(context: IRenderContext): typings.vexflow.Vex.Flow.Curve = js.native
+  
+  /* CompleteClass */
+  override def setNotes(from: typings.vexflow.Vex.Flow.Note, to: typings.vexflow.Vex.Flow.Note): typings.vexflow.Vex.Flow.Curve = js.native
 }
 object Curve {
   
@@ -31,10 +48,10 @@ object Curve {
   object Position extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Curve.Position with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.vexflow.Vex.Flow.Curve.Position & Double] = js.native
     
-    /* 1 */ val NEAR_HEAD: typings.vexflow.Vex.Flow.Curve.Position.NEAR_HEAD with Double = js.native
+    /* 1 */ val NEAR_HEAD: typings.vexflow.Vex.Flow.Curve.Position.NEAR_HEAD & Double = js.native
     
-    /* 0 */ val NEAR_TOP: typings.vexflow.Vex.Flow.Curve.Position.NEAR_TOP with Double = js.native
+    /* 0 */ val NEAR_TOP: typings.vexflow.Vex.Flow.Curve.Position.NEAR_TOP & Double = js.native
   }
 }

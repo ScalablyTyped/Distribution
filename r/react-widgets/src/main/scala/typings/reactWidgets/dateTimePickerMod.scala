@@ -16,7 +16,6 @@ import typings.reactWidgets.reactWidgetsStrings.year
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimePickerMod extends Shortcut {
@@ -31,24 +30,23 @@ object dateTimePickerMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/DateTimePicker", JSImport.Namespace)
   @js.native
-  val ^ : DateTimePickerClass = js.native
+  val ^ : js.Object & DateTimePickerClass = js.native
   
   type DateTimePickerClass = ComponentClass[DateTimePickerProps, ComponentState]
   
-  @js.native
   trait DateTimePickerMessages extends StObject {
     
     /**
       * Title and screen reader text for the left arrow button.
       * @default "Select Date"
       */
-    var dateButton: js.UndefOr[String] = js.native
+    var dateButton: js.UndefOr[String] = js.undefined
     
     /**
       * Title and screen reader text for the right arrow button.
       * @default "Select Time"
       */
-    var timeButton: js.UndefOr[String] = js.native
+    var timeButton: js.UndefOr[String] = js.undefined
   }
   object DateTimePickerMessages {
     
@@ -75,9 +73,9 @@ object dateTimePickerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DateTimePickerProps
-    extends ReactWidgetsCommonDropdownProps
+    extends StObject
+       with ReactWidgetsCommonDropdownProps
        with AutoFocus {
     
     /**
@@ -85,82 +83,82 @@ object dateTimePickerMod extends Shortcut {
       * @default true
       * @deprecated Use `date` instead
       */
-    var calendar: js.UndefOr[Boolean] = js.native
+    var calendar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a css class to the input container element.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Set the culture of the DateTimePicker, passed to the configured localizer.
       */
-    var culture: js.UndefOr[String] = js.native
+    var culture: js.UndefOr[String] = js.undefined
     
     /**
       * Default current date at which the calendar opens. If none is provided, opens at today's
       * date or the value date (if any).
       * @default Date()
       */
-    var currentDate: js.UndefOr[Date] = js.native
+    var currentDate: js.UndefOr[Date] = js.undefined
     
     /**
       * Default value for current date. Useful for suggesting a date when the caldenar opens without keep forcing it once 'value' is set.
       */
-    var date: js.UndefOr[Boolean] = js.native
+    var date: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the element used to render the calendar dropdown icon.
       */
-    var dateIcon: js.UndefOr[Element] = js.native
+    var dateIcon: js.UndefOr[Element] = js.undefined
     
     /**
       * Default current date
       */
-    var defaultCurrentDate: js.UndefOr[Date] = js.native
+    var defaultCurrentDate: js.UndefOr[Date] = js.undefined
     
     /**
       * The defaultOpen prop can be used to set an
       * initialization value for uncontrolled widgets.
       */
-    var defaultOpen: js.UndefOr[Open] = js.native
+    var defaultOpen: js.UndefOr[Open] = js.undefined
     
     /**
       * Default value.
       */
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
     /**
       * The speed, in milliseconds, of the either dropdown animation.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * A string format to be used while the date input has focus. Useful for showing a simpler
       * format for inputing.
       */
-    var editFormat: js.UndefOr[String] = js.native
+    var editFormat: js.UndefOr[String] = js.undefined
     
     /**
       * The highest level view the calendar can navigate up to. This value should be higher than
       * initialView.
       */
-    var finalView: js.UndefOr[month | year | decade | century] = js.native
+    var finalView: js.UndefOr[month | year | decade | century] = js.undefined
     
     /**
       * A string format used to display the date value.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * The starting and lowest level view the calendar can navigate down to.
       */
-    var initialView: js.UndefOr[month | year | decade | century] = js.native
+    var initialView: js.UndefOr[month | year | decade | century] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying input component.
       */
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The maximum Date that can be selected. Max only limits selection, it doesn't constrain
@@ -168,13 +166,13 @@ object dateTimePickerMod extends Shortcut {
       * you can constrain values via the onChange handler.
       * @default Date(2099, 11, 31)
       */
-    var max: js.UndefOr[Date] = js.native
+    var max: js.UndefOr[Date] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[DateTimePickerMessages] = js.native
+    var messages: js.UndefOr[DateTimePickerMessages] = js.undefined
     
     /**
       * The minimum Date that can be selected. Min only limits selection, it doesn't constrain
@@ -182,17 +180,17 @@ object dateTimePickerMod extends Shortcut {
       * you can constrain values via the onChange handler.
       * @default Date(1900, 0, 1)
       */
-    var min: js.UndefOr[Date] = js.native
+    var min: js.UndefOr[Date] = js.undefined
     
     /**
       * The HTML name attribute, passed directly to the input element.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The native onBlur event, called when focus leaves the DateTimePicker entirely.
       */
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Change event Handler that is called when the value is changed. The handler is called with
@@ -201,48 +199,48 @@ object dateTimePickerMod extends Shortcut {
       */
     var onChange: js.UndefOr[
         js.Function2[/* date */ js.UndefOr[Date], /* dateStr */ js.UndefOr[String], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Change event Handler that is called when the currentDate is changed. The handler is
       * called with the currentDate object.
       */
-    var onCurrentDateChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.native
+    var onCurrentDateChange: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.undefined
     
     /**
       * The native onFocus event, called when focus enters the DateTimePicker.
       */
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * The native onKeyDown event, called preventDefault will prevent any custom behavior, included keyboard shortcuts.
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[_], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[js.Any], Unit]] = js.undefined
     
     /**
       * The native onKeyPress event, called preventDefault will stop any custom behavior.
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent[_], Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ KeyboardEvent[js.Any], Unit]] = js.undefined
     
     /**
       * This handler fires when an item has been selected from the list or calendar. It fires
       * before the onChange handler, and fires regardless of whether the value has actually
       * changed.
       */
-    var onSelect: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* date */ js.UndefOr[Date], Unit]] = js.undefined
     
     /**
       * Called when the DateTimePicker is about to open or close. onToggle should be used when
       * the open prop is set otherwise the widget will never open or close.
       */
-    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Open, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Open, Unit]] = js.undefined
     
     /**
       * Whether or not the DateTimePicker is open. When unset (undefined) the DateTimePicker will
       * handle the opening and closing internally.
       * @default false
       */
-    var open: js.UndefOr[Open] = js.native
+    var open: js.UndefOr[Open] = js.undefined
     
     /**
       * Determines how the widget parses the typed date string into a Date object. You can
@@ -250,50 +248,50 @@ object dateTimePickerMod extends Shortcut {
       * parsing yourself. When parse is unspecified and the format prop is a String parse will
       * automatically use that format as its default
       */
-    var parse: js.UndefOr[(js.Function1[/* str */ String, Date]) | js.Array[String] | String] = js.native
+    var parse: js.UndefOr[(js.Function1[/* str */ String, Date]) | js.Array[String] | String] = js.undefined
     
     /**
       * Text to display in the input when the value is empty.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * A Transition component from react-transition-group v2.
       * The provided component will be used instead of the default SlideDownTransition for fully customizable animations.
       * The transition component is also injected with a dropUp prop indicating the direction it should open.
       */
-    var popupTransition: js.UndefOr[ReactType[_] | String] = js.native
+    var popupTransition: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * The amount of minutes between each entry in the time list.
       */
-    var step: js.UndefOr[Double | Boolean] = js.native
+    var step: js.UndefOr[Double | Boolean] = js.undefined
     
     /**
       * Whether to show the time picker button.
       * @default true
       */
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A customize the rendering of times but providing a custom component.
       */
-    var timeComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var timeComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * A string format used by the time dropdown to render times.
       */
-    var timeFormat: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the element used to render the time list dropdown icon.
       */
-    var timeIcon: js.UndefOr[Element] = js.native
+    var timeIcon: js.UndefOr[Element] = js.undefined
     
     /**
       * The current selected date, should be a Date instance or null.
       */
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object DateTimePickerProps {
     
@@ -445,13 +443,13 @@ object dateTimePickerMod extends Shortcut {
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* event */ KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnKeyPress(value: /* event */ KeyboardEvent[_] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
+      def setOnKeyPress(value: /* event */ KeyboardEvent[js.Any] => Unit): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
@@ -493,7 +491,7 @@ object dateTimePickerMod extends Shortcut {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setPopupTransition(value: ReactType[_] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
+      def setPopupTransition(value: ReactType[js.Any] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopupTransitionUndefined: Self = StObject.set(x, "popupTransition", js.undefined)
@@ -508,7 +506,7 @@ object dateTimePickerMod extends Shortcut {
       def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTimeComponent(value: ReactType[_] | String): Self = StObject.set(x, "timeComponent", value.asInstanceOf[js.Any])
+      def setTimeComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "timeComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTimeComponentUndefined: Self = StObject.set(x, "timeComponent", js.undefined)
@@ -554,8 +552,8 @@ object dateTimePickerMod extends Shortcut {
     def time: typings.reactWidgets.reactWidgetsStrings.time = "time".asInstanceOf[typings.reactWidgets.reactWidgetsStrings.time]
   }
   
-  type _To = DateTimePickerClass
+  type _To = js.Object & DateTimePickerClass
   
   /* This means you don't have to write `^`, but can instead just say `dateTimePickerMod.foo` */
-  override def _to: DateTimePickerClass = ^
+  override def _to: js.Object & DateTimePickerClass = ^
 }

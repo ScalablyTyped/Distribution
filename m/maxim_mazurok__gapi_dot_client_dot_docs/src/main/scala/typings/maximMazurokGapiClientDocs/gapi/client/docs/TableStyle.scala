@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableStyle extends StObject {
   
   /** The properties of each column. Note that in Docs, tables contain rows and rows contain cells, similar to HTML. So the properties for a row can be found on the row's table_row_style. */
-  var tableColumnProperties: js.UndefOr[js.Array[TableColumnProperties]] = js.native
+  var tableColumnProperties: js.UndefOr[js.Array[TableColumnProperties]] = js.undefined
 }
 object TableStyle {
   

@@ -8,10 +8,13 @@ import typings.ionicCliFramework.configMod.BaseConfigOptions
 import typings.minimist.mod.ParsedArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libConfigMod {
+  
+  @JSImport("ionic/lib/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/config", "CONFIG_FILE")
   @js.native
@@ -34,7 +37,6 @@ object libConfigMod {
   @js.native
   val GLOBAL_OPTIONS: js.Array[CommandMetadataOption] = js.native
   
-  @JSImport("ionic/lib/config", "parseGlobalOptions")
-  @js.native
-  def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = js.native
+  @scala.inline
+  def parseGlobalOptions(pargv: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseGlobalOptions")(pargv.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
 }

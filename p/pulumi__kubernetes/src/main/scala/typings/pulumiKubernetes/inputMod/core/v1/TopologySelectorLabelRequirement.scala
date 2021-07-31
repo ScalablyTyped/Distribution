@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A topology selector requirement is a selector that matches given label. This is an alpha feature and may change in the future.
   */
-@js.native
 trait TopologySelectorLabelRequirement extends StObject {
   
   /**
     * The label key that the selector applies to.
     */
-  var key: Input[String] = js.native
+  var key: Input[String]
   
   /**
     * An array of string values. One value must match the label to be selected. Each entry in Values is ORed.
     */
-  var values: Input[js.Array[Input[String]]] = js.native
+  var values: Input[js.Array[Input[String]]]
 }
 object TopologySelectorLabelRequirement {
   

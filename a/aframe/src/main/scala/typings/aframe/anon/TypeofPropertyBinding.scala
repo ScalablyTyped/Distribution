@@ -6,12 +6,12 @@ import typings.three.propertyBindingMod.ParseTrackNameResults
 import typings.three.propertyBindingMod.PropertyBinding.Composite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofPropertyBinding
-  extends Instantiable2[/* rootNode */ js.Any, /* path */ String, PropertyBinding] {
+  extends StObject
+     with Instantiable2[/* rootNode */ js.Any, /* path */ String, PropertyBinding] {
   
   def create(root: js.Any, path: js.Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native
   def create(root: js.Any, path: js.Any, parsedPath: js.Any): typings.three.propertyBindingMod.PropertyBinding | Composite = js.native

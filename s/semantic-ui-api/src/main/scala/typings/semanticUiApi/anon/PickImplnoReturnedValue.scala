@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl, 'noReturnedValue'> */
-@js.native
 trait PickImplnoReturnedValue extends StObject {
   
-  var noReturnedValue: String = js.native
+  var noReturnedValue: String
 }
 object PickImplnoReturnedValue {
   

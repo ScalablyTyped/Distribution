@@ -2,31 +2,29 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSigningJobRequest extends StObject {
   
   /**
     * String that identifies the signing request. All calls after the first that use this token return the same response as the first call.
     */
-  var clientRequestToken: ClientRequestToken = js.native
+  var clientRequestToken: ClientRequestToken
   
   /**
     * The S3 bucket in which to save your signed object. The destination contains the name of your bucket and an optional prefix.
     */
-  var destination: Destination = js.native
+  var destination: Destination
   
   /**
     * The name of the signing profile.
     */
-  var profileName: js.UndefOr[ProfileName] = js.native
+  var profileName: js.UndefOr[ProfileName] = js.undefined
   
   /**
     * The S3 bucket that contains the object to sign or a BLOB that contains your raw code.
     */
-  var source: Source = js.native
+  var source: Source
 }
 object StartSigningJobRequest {
   

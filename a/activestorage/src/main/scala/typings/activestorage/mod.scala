@@ -5,10 +5,13 @@ import typings.std.File
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("activestorage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("activestorage", "DirectUpload")
   @js.native
@@ -25,22 +28,20 @@ object mod {
     var url: String = js.native
   }
   
-  @JSImport("activestorage", "start")
-  @js.native
-  def start(): Unit = js.native
+  @scala.inline
+  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
-  @js.native
   trait Blob extends StObject {
     
-    var byte_size: Double = js.native
+    var byte_size: Double
     
-    var checksum: String = js.native
+    var checksum: String
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var signed_id: String = js.native
+    var signed_id: String
   }
   object Blob {
     
@@ -70,12 +71,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DirectUploadDelegate extends StObject {
     
-    var directUploadWillCreateBlobWithXHR: js.UndefOr[js.Function1[/* xhr */ XMLHttpRequest, Unit]] = js.native
+    var directUploadWillCreateBlobWithXHR: js.UndefOr[js.Function1[/* xhr */ XMLHttpRequest, Unit]] = js.undefined
     
-    var directUploadWillStoreFileWithXHR: js.UndefOr[js.Function1[/* xhr */ XMLHttpRequest, Unit]] = js.native
+    var directUploadWillStoreFileWithXHR: js.UndefOr[js.Function1[/* xhr */ XMLHttpRequest, Unit]] = js.undefined
   }
   object DirectUploadDelegate {
     

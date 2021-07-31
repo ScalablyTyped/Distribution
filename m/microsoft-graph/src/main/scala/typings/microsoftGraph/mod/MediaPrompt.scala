@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaPrompt extends Prompt {
+trait MediaPrompt
+  extends StObject
+     with Prompt {
   
   // The media information
-  var mediaInfo: js.UndefOr[MediaInfo] = js.native
+  var mediaInfo: js.UndefOr[MediaInfo] = js.undefined
 }
 object MediaPrompt {
   

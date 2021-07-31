@@ -2,17 +2,15 @@ package typings.friendlyErrorsWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Messages extends StObject {
     
-    var messages: js.Array[String] = js.native
+    var messages: js.Array[String]
     
-    var notes: js.Array[String] = js.native
+    var notes: js.Array[String]
   }
   object Messages {
     

@@ -11,321 +11,263 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketmachineMod {
   
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
+  @JSImport("rsocket-core/RSocketMachine", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
+    serializers: Unit,
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
+    serializers: Unit,
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
+    serializers: Unit,
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: js.UndefOr[scala.Nothing],
+    serializers: Unit,
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
     requestHandler: Partial[Responder[D, M]]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
-    requestHandler: js.UndefOr[scala.Nothing],
+    requestHandler: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
-  def createClientMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    requestHandler: Partial[Responder[D, M]],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -333,9 +275,8 @@ object rsocketmachineMod {
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -343,11 +284,10 @@ object rsocketmachineMod {
     serializers: PayloadSerializers[D, M],
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -356,9 +296,8 @@ object rsocketmachineMod {
     requestHandler: Partial[Responder[D, M]],
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createClientMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createClientMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -368,150 +307,138 @@ object rsocketmachineMod {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createClientMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    requestHandler: Partial[Responder[D, M]],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], requestHandler.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
   
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
-    serializers: js.UndefOr[scala.Nothing],
+    serializers: Unit,
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: Unit,
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
-  def createServerMachine[D, M](
-    connection: DuplexConnection,
-    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
-    keepAliveTimeout: Double,
-    serializers: PayloadSerializers[D, M],
-    errorHandler: js.UndefOr[scala.Nothing],
-    requesterLeaseHandler: RequesterLeaseHandler,
-    responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit]
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
     keepAliveTimeout: Double,
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit],
-    requesterLeaseHandler: js.UndefOr[scala.Nothing],
+    requesterLeaseHandler: Unit,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -519,9 +446,8 @@ object rsocketmachineMod {
     serializers: PayloadSerializers[D, M],
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler
-  ): RSocketMachine[D, M] = js.native
-  @JSImport("rsocket-core/RSocketMachine", "createServerMachine")
-  @js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
   def createServerMachine[D, M](
     connection: DuplexConnection,
     connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
@@ -530,10 +456,41 @@ object rsocketmachineMod {
     errorHandler: js.Function1[/* e */ Error, Unit],
     requesterLeaseHandler: RequesterLeaseHandler,
     responderLeaseHandler: ResponderLeaseHandler
-  ): RSocketMachine[D, M] = js.native
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    errorHandler: Unit,
+    requesterLeaseHandler: Unit,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
+  @scala.inline
+  def createServerMachine[D, M](
+    connection: DuplexConnection,
+    connectionPublisher: js.Function1[/* partialSubscriber */ PartialISubscriberFrame, Unit],
+    keepAliveTimeout: Double,
+    serializers: PayloadSerializers[D, M],
+    errorHandler: Unit,
+    requesterLeaseHandler: RequesterLeaseHandler,
+    responderLeaseHandler: ResponderLeaseHandler
+  ): RSocketMachine[D, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerMachine")(connection.asInstanceOf[js.Any], connectionPublisher.asInstanceOf[js.Any], keepAliveTimeout.asInstanceOf[js.Any], serializers.asInstanceOf[js.Any], errorHandler.asInstanceOf[js.Any], requesterLeaseHandler.asInstanceOf[js.Any], responderLeaseHandler.asInstanceOf[js.Any])).asInstanceOf[RSocketMachine[D, M]]
   
   @js.native
-  trait RSocketMachine[D, M] extends ReactiveSocket[D, M] {
+  trait RSocketMachine[D, M]
+    extends StObject
+       with ReactiveSocket[D, M] {
     
     def setRequestHandler(): Unit = js.native
     def setRequestHandler(requestHandler: Partial[Responder[D, M]]): Unit = js.native

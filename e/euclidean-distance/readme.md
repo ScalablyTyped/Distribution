@@ -12,7 +12,7 @@ Calculate the Euclidean distance been two points in 2D/3D/nD space.
 | Keywords           | distance, space, 3d, 2d, math, euclid, color, Lab, L*a*b*, Delta-E, dE, visualization, browser |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 39759 |
+| # downloads        | 83332 |
 | # stars            | 6 |
 
 ## Links

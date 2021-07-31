@@ -3,21 +3,19 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.anon.PkNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storiesTypesMod {
   
   type StoryServiceInput = js.Array[StoryServiceSeenInputItems] | StoryServiceSeenInputReels
   
-  @js.native
   trait StoryServiceSeenInputItems extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: PkNumber = js.native
+    var user: PkNumber
   }
   object StoryServiceSeenInputItems {
     
@@ -41,10 +39,9 @@ object storiesTypesMod {
     }
   }
   
-  @js.native
   trait StoryServiceSeenInputReels extends StObject {
     
-    var items: js.Array[StoryServiceSeenInputItems] = js.native
+    var items: js.Array[StoryServiceSeenInputItems]
   }
   object StoryServiceSeenInputReels {
     

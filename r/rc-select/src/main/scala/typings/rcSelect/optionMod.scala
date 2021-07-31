@@ -8,7 +8,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionMod extends Shortcut {
@@ -19,31 +18,33 @@ object optionMod extends Shortcut {
   val default: OptionFC = js.native
   
   @js.native
-  trait OptionFC extends FunctionComponent[OptionProps] {
+  trait OptionFC
+    extends StObject
+       with FunctionComponent[OptionProps] {
     
     /** Legacy for check if is a Option Group */
     var isSelectOption: Boolean = js.native
   }
   
   /* Inlined parent std.Omit<rc-select.rc-select/lib/interface.OptionCoreData, 'label'> */
-  @js.native
   trait OptionProps
-    extends /** Save for customize data */
+    extends StObject
+       with /** Save for customize data */
   /* prop */ StringDictionary[js.Any] {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var value: Key = js.native
+    var value: Key
   }
   object OptionProps {
     

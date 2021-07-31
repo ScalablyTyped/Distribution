@@ -2,7 +2,6 @@ package typings.got.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,48 +9,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://github.com/sindresorhus/got#timeout
   */
-@js.native
 trait TimeoutOptions extends StObject {
   
   /**
     * Starts when `lookup` completes (or when the socket is assigned if lookup does not apply
     * to the request) and ends when the socket is connected.
     */
-  var connect: js.UndefOr[Double] = js.native
+  var connect: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when a socket is assigned and ends when the hostname has been resolved. Does not
     * apply when using a Unix domain socket.
     */
-  var lookup: js.UndefOr[Double] = js.native
+  var lookup: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when the request is initiated and ends when the response's end event fires.
     */
-  var request: js.UndefOr[Double] = js.native
+  var request: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when the request has been written to the socket and ends when the response headers
     * are received.
     */
-  var response: js.UndefOr[Double] = js.native
+  var response: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when `connect` completes and ends when the handshaking process completes (HTTPS
     * only).
     */
-  var secureConnect: js.UndefOr[Double] = js.native
+  var secureConnect: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when the socket is connected and ends with the request has been written to the
     * socket.
     */
-  var send: js.UndefOr[Double] = js.native
+  var send: js.UndefOr[Double] = js.undefined
   
   /**
     * Starts when the socket is connected. See [request.setTimeout](https://nodejs.org/api/http.html#http_request_settimeout_timeout_callback).
     */
-  var socket: js.UndefOr[Double] = js.native
+  var socket: js.UndefOr[Double] = js.undefined
 }
 object TimeoutOptions {
   

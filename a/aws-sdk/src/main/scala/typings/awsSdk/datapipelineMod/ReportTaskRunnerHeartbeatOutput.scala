@@ -2,16 +2,14 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportTaskRunnerHeartbeatOutput extends StObject {
   
   /**
     * Indicates whether the calling task runner should terminate.
     */
-  var terminate: Boolean = js.native
+  var terminate: Boolean
 }
 object ReportTaskRunnerHeartbeatOutput {
   

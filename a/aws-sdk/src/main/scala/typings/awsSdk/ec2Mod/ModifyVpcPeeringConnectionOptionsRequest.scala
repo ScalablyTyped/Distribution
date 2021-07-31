@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpcPeeringConnectionOptionsRequest extends StObject {
   
   /**
     * The VPC peering connection options for the accepter VPC.
     */
-  var AccepterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptionsRequest] = js.native
+  var AccepterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptionsRequest] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The VPC peering connection options for the requester VPC.
     */
-  var RequesterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptionsRequest] = js.native
+  var RequesterPeeringConnectionOptions: js.UndefOr[PeeringConnectionOptionsRequest] = js.undefined
   
   /**
     * The ID of the VPC peering connection.
     */
-  var VpcPeeringConnectionId: typings.awsSdk.ec2Mod.VpcPeeringConnectionId = js.native
+  var VpcPeeringConnectionId: typings.awsSdk.ec2Mod.VpcPeeringConnectionId
 }
 object ModifyVpcPeeringConnectionOptionsRequest {
   

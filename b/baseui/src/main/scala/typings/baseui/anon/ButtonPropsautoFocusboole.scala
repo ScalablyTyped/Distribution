@@ -26,48 +26,48 @@ import typings.styletronReact.mod.StyletronBase
 import typings.styletronStandard.mod.StyleObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/button.ButtonProps & {  autoFocus :boolean | undefined} */
-@js.native
 trait ButtonPropsautoFocusboole extends StObject {
   
   @JSName("$as")
-  var $as: js.UndefOr[StyletronBase] = js.native
+  var $as: js.UndefOr[StyletronBase] = js.undefined
   
   @JSName("$style")
-  var $style: js.UndefOr[StyleProp[ButtonProps]] = js.native
+  var $style: js.UndefOr[StyleProp[ButtonProps]] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var endEnhancer: js.UndefOr[ReactNode] = js.native
+  var endEnhancer: js.UndefOr[ReactNode] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var isLoading: js.UndefOr[Boolean] = js.native
+  var isLoading: js.UndefOr[Boolean] = js.undefined
   
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.native
+  var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.native
+  var onClick: js.UndefOr[
+    js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Any]
+  ] = js.undefined
   
-  var overrides: js.UndefOr[ButtonOverrides] = js.native
+  var overrides: js.UndefOr[ButtonOverrides] = js.undefined
   
-  var shape: js.UndefOr[pill | default_ | square | round | circle] = js.native
+  var shape: js.UndefOr[pill | default_ | square | round | circle] = js.undefined
   
-  var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
+  var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
   
-  var startEnhancer: js.UndefOr[ReactNode] = js.native
+  var startEnhancer: js.UndefOr[ReactNode] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[submit | reset | button] = js.native
+  var `type`: js.UndefOr[submit | reset | button] = js.undefined
 }
 object ButtonPropsautoFocusboole {
   
@@ -144,7 +144,7 @@ object ButtonPropsautoFocusboole {
     def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

@@ -2,34 +2,32 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Node in a tree of nested declarations in a file.
   * The top node is always a script or module node.
   */
-@js.native
 trait NavigationTree extends StObject {
   
   /** Present if non-empty */
-  var childItems: js.UndefOr[js.Array[NavigationTree]] = js.native
+  var childItems: js.UndefOr[js.Array[NavigationTree]] = js.undefined
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
   /** ScriptElementKindModifier separated by commas, e.g. "public,abstract" */
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var nameSpan: js.UndefOr[TextSpan] = js.native
+  var nameSpan: js.UndefOr[TextSpan] = js.undefined
   
   /**
     * Spans of the nodes that generated this declaration.
     * There will be more than one if this is the result of merging.
     */
-  var spans: js.Array[TextSpan] = js.native
+  var spans: js.Array[TextSpan]
   
   /** Name of the declaration, or a short description, e.g. "<class>". */
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object NavigationTree {
   

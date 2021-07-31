@@ -7,23 +7,23 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlPutDatafeed[T] extends Generic {
+trait MlPutDatafeed[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var datafeed_id: String = js.native
+  var datafeed_id: String
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var ignore_throttled: js.UndefOr[Boolean] = js.native
+  var ignore_throttled: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
 }
 object MlPutDatafeed {
   
@@ -34,7 +34,7 @@ object MlPutDatafeed {
   }
   
   @scala.inline
-  implicit class MlPutDatafeedMutableBuilder[Self <: MlPutDatafeed[_], T] (val x: Self with MlPutDatafeed[T]) extends AnyVal {
+  implicit class MlPutDatafeedMutableBuilder[Self <: MlPutDatafeed[?], T] (val x: Self & MlPutDatafeed[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

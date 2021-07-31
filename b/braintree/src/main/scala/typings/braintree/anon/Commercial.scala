@@ -6,49 +6,47 @@ import typings.braintree.mod.Payroll
 import typings.braintree.mod.Prepaid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commercial extends StObject {
   
-  var bin: String = js.native
+  var bin: String
   
-  var commercial: typings.braintree.mod.Commercial = js.native
+  var commercial: typings.braintree.mod.Commercial
   
-  var countryOfIssuance: String = js.native
+  var countryOfIssuance: String
   
-  var debit: typings.braintree.mod.Debit = js.native
+  var debit: typings.braintree.mod.Debit
   
-  var durbinRegulated: DurbinRegulated = js.native
+  var durbinRegulated: DurbinRegulated
   
-  var expirationMonth: String = js.native
+  var expirationMonth: String
   
-  var expirationYear: String = js.native
+  var expirationYear: String
   
-  var googleTransactionId: String = js.native
+  var googleTransactionId: String
   
-  var healthcare: HealthCare = js.native
+  var healthcare: HealthCare
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var payroll: Payroll = js.native
+  var payroll: Payroll
   
-  var prepaid: Prepaid = js.native
+  var prepaid: Prepaid
   
-  var productId: String = js.native
+  var productId: String
   
-  var sourceCardLast4: String = js.native
+  var sourceCardLast4: String
   
-  var sourceCardType: String = js.native
+  var sourceCardType: String
   
-  var sourceDescription: String = js.native
+  var sourceDescription: String
   
-  var token: String = js.native
+  var token: String
   
-  var virtualCardLast4: String = js.native
+  var virtualCardLast4: String
   
-  var virtualCardType: String = js.native
+  var virtualCardType: String
 }
 object Commercial {
   

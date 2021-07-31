@@ -5,52 +5,36 @@ import typings.std.HTMLLinkElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fg-loadcss", "loadCSS")
+  @JSImport("fg-loadcss", JSImport.Namespace)
   @js.native
-  def loadCSS(href: String): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(
-    href: String,
-    before: js.UndefOr[scala.Nothing],
-    media: js.UndefOr[scala.Nothing],
-    attributes: Record[String, String]
-  ): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(href: String, before: js.UndefOr[scala.Nothing], media: String): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(href: String, before: js.UndefOr[scala.Nothing], media: String, attributes: Record[String, String]): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(href: String, before: HTMLElement): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(
-    href: String,
-    before: HTMLElement,
-    media: js.UndefOr[scala.Nothing],
-    attributes: Record[String, String]
-  ): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(href: String, before: HTMLElement, media: String): HTMLLinkElement = js.native
-  @JSImport("fg-loadcss", "loadCSS")
-  @js.native
-  def loadCSS(href: String, before: HTMLElement, media: String, attributes: Record[String, String]): HTMLLinkElement = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def loadCSS(href: String): HTMLLinkElement = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any]).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: Unit, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: Unit, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: Unit, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: HTMLElement): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: HTMLElement, media: String): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: HTMLElement, media: String, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
+  @scala.inline
+  def loadCSS(href: String, before: HTMLElement, media: Unit, attributes: Record[String, String]): HTMLLinkElement = (^.asInstanceOf[js.Dynamic].applyDynamic("loadCSS")(href.asInstanceOf[js.Any], before.asInstanceOf[js.Any], media.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[HTMLLinkElement]
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      def onloadCSS(stylesheet: HTMLLinkElement, callback: js.Function0[Unit]): Unit = js.native
+      def onloadCSS(stylesheet: HTMLLinkElement, callback: js.Function0[Unit]): Unit
     }
     object Window {
       

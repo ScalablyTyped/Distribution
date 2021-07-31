@@ -2,99 +2,97 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Product data. After inserting, updating, or deleting a product, it may take
   * several minutes before changes take effect.
   */
-@js.native
 trait SchemaProduct extends StObject {
   
   /**
     * Additional URLs of images of the item.
     */
-  var additionalImageLinks: js.UndefOr[js.Array[String]] = js.native
+  var additionalImageLinks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Additional categories of the item (formatted as in products feed
     * specification).
     */
-  var additionalProductTypes: js.UndefOr[js.Array[String]] = js.native
+  var additionalProductTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Set to true if the item is targeted towards adults.
     */
-  var adult: js.UndefOr[Boolean] = js.native
+  var adult: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used to group items in an arbitrary way. Only for CPA%, discouraged
     * otherwise.
     */
-  var adwordsGrouping: js.UndefOr[String] = js.native
+  var adwordsGrouping: js.UndefOr[String] = js.undefined
   
   /**
     * Similar to adwords_grouping, but only works on CPC.
     */
-  var adwordsLabels: js.UndefOr[js.Array[String]] = js.native
+  var adwordsLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allows advertisers to override the item URL when the product is shown
     * within the context of Product Ads.
     */
-  var adwordsRedirect: js.UndefOr[String] = js.native
+  var adwordsRedirect: js.UndefOr[String] = js.undefined
   
   /**
     * Target age group of the item.
     */
-  var ageGroup: js.UndefOr[String] = js.native
+  var ageGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Do not use.
     */
-  var aspects: js.UndefOr[js.Array[SchemaProductAspect]] = js.native
+  var aspects: js.UndefOr[js.Array[SchemaProductAspect]] = js.undefined
   
   /**
     * Availability status of the item.
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * The day a pre-ordered product becomes available for delivery, in ISO 8601
     * format.
     */
-  var availabilityDate: js.UndefOr[String] = js.native
+  var availabilityDate: js.UndefOr[String] = js.undefined
   
   /**
     * Brand of the item.
     */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /**
     * The item&#39;s channel (online or local).
     */
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
   /**
     * Color of the item.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Condition or state of the item.
     */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /**
     * The two-letter ISO 639-1 language code for the item.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Cost of goods sold. Used for gross profit reporting.
     */
-  var costOfGoodsSold: js.UndefOr[SchemaPrice] = js.native
+  var costOfGoodsSold: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * A list of custom (merchant-provided) attributes. It can also be used for
@@ -103,78 +101,78 @@ trait SchemaProduct extends StObject {
     * &quot;regular&quot; }). This is useful for submitting attributes not
     * explicitly exposed by the API.
     */
-  var customAttributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.native
+  var customAttributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
   /**
     * A list of custom (merchant-provided) custom attribute groups.
     */
-  var customGroups: js.UndefOr[js.Array[SchemaCustomGroup]] = js.native
+  var customGroups: js.UndefOr[js.Array[SchemaCustomGroup]] = js.undefined
   
   /**
     * Custom label 0 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel0: js.UndefOr[String] = js.native
+  var customLabel0: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 1 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel1: js.UndefOr[String] = js.native
+  var customLabel1: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 2 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel2: js.UndefOr[String] = js.native
+  var customLabel2: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 3 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel3: js.UndefOr[String] = js.native
+  var customLabel3: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 4 for custom grouping of items in a Shopping campaign.
     */
-  var customLabel4: js.UndefOr[String] = js.native
+  var customLabel4: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the item.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the intended destinations for the product.
     */
-  var destinations: js.UndefOr[js.Array[SchemaProductDestination]] = js.native
+  var destinations: js.UndefOr[js.Array[SchemaProductDestination]] = js.undefined
   
   /**
     * An identifier for an item for dynamic remarketing campaigns.
     */
-  var displayAdsId: js.UndefOr[String] = js.native
+  var displayAdsId: js.UndefOr[String] = js.undefined
   
   /**
     * URL directly to your item&#39;s landing page for dynamic remarketing
     * campaigns.
     */
-  var displayAdsLink: js.UndefOr[String] = js.native
+  var displayAdsLink: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser-specified recommendations.
     */
-  var displayAdsSimilarIds: js.UndefOr[js.Array[String]] = js.native
+  var displayAdsSimilarIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Title of an item for dynamic remarketing campaigns.
     */
-  var displayAdsTitle: js.UndefOr[String] = js.native
+  var displayAdsTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Offer margin for dynamic remarketing campaigns.
     */
-  var displayAdsValue: js.UndefOr[Double] = js.native
+  var displayAdsValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The energy efficiency class as defined in EU directive 2010/30/EU.
     */
-  var energyEfficiencyClass: js.UndefOr[String] = js.native
+  var energyEfficiencyClass: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the item should expire, as specified upon insertion, in ISO
@@ -182,29 +180,29 @@ trait SchemaProduct extends StObject {
     * productstatuses as googleExpirationDate and might be earlier if
     * expirationDate is too far in the future.
     */
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
   /**
     * Target gender of the item.
     */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
   /**
     * Google&#39;s category of the item (see Google product taxonomy).
     */
-  var googleProductCategory: js.UndefOr[String] = js.native
+  var googleProductCategory: js.UndefOr[String] = js.undefined
   
   /**
     * Global Trade Item Number (GTIN) of the item.
     */
-  var gtin: js.UndefOr[String] = js.native
+  var gtin: js.UndefOr[String] = js.undefined
   
   /**
     * The REST ID of the product. Content API methods that operate on products
     * take this as their productId parameter. The REST ID for a product is of
     * the form channel:contentLanguage:targetCountry:offerId.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * False when the item does not have unique product identifiers appropriate
@@ -212,84 +210,84 @@ trait SchemaProduct extends StObject {
     * Unique Product Identifier Rules for all target countries except for
     * Canada.
     */
-  var identifierExists: js.UndefOr[Boolean] = js.native
+  var identifierExists: js.UndefOr[Boolean] = js.undefined
   
   /**
     * URL of an image of the item.
     */
-  var imageLink: js.UndefOr[String] = js.native
+  var imageLink: js.UndefOr[String] = js.undefined
   
   /**
     * Number and amount of installments to pay for an item. Brazil only.
     */
-  var installment: js.UndefOr[SchemaInstallment] = js.native
+  var installment: js.UndefOr[SchemaInstallment] = js.undefined
   
   /**
     * Whether the item is a merchant-defined bundle. A bundle is a custom
     * grouping of different products sold by a merchant for a single price.
     */
-  var isBundle: js.UndefOr[Boolean] = js.native
+  var isBundle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shared identifier for all variants of the same product.
     */
-  var itemGroupId: js.UndefOr[String] = js.native
+  var itemGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#product&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * URL directly linking to your item&#39;s page on your website.
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Loyalty points that users receive after purchasing the item. Japan only.
     */
-  var loyaltyPoints: js.UndefOr[SchemaLoyaltyPoints] = js.native
+  var loyaltyPoints: js.UndefOr[SchemaLoyaltyPoints] = js.undefined
   
   /**
     * The material of which the item is made.
     */
-  var material: js.UndefOr[String] = js.native
+  var material: js.UndefOr[String] = js.undefined
   
   /**
     * The energy efficiency class as defined in EU directive 2010/30/EU.
     */
-  var maxEnergyEfficiencyClass: js.UndefOr[String] = js.native
+  var maxEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
   
   /**
     * Maximal product handling time (in business days).
     */
-  var maxHandlingTime: js.UndefOr[String] = js.native
+  var maxHandlingTime: js.UndefOr[String] = js.undefined
   
   /**
     * The energy efficiency class as defined in EU directive 2010/30/EU.
     */
-  var minEnergyEfficiencyClass: js.UndefOr[String] = js.native
+  var minEnergyEfficiencyClass: js.UndefOr[String] = js.undefined
   
   /**
     * Minimal product handling time (in business days).
     */
-  var minHandlingTime: js.UndefOr[String] = js.native
+  var minHandlingTime: js.UndefOr[String] = js.undefined
   
   /**
     * Link to a mobile-optimized version of the landing page.
     */
-  var mobileLink: js.UndefOr[String] = js.native
+  var mobileLink: js.UndefOr[String] = js.undefined
   
   /**
     * Manufacturer Part Number (MPN) of the item.
     */
-  var mpn: js.UndefOr[String] = js.native
+  var mpn: js.UndefOr[String] = js.undefined
   
   /**
     * The number of identical products in a merchant-defined multipack.
     */
-  var multipack: js.UndefOr[String] = js.native
+  var multipack: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the item. Leading and trailing whitespaces are
@@ -298,136 +296,136 @@ trait SchemaProduct extends StObject {
     * products feed specification for details. Note: Content API methods that
     * operate on products take the REST ID of the product, not this identifier.
     */
-  var offerId: js.UndefOr[String] = js.native
+  var offerId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Whether an item is available for purchase only online.
     */
-  var onlineOnly: js.UndefOr[Boolean] = js.native
+  var onlineOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The item&#39;s pattern (e.g. polka dots).
     */
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
   /**
     * Price of the item.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Your category of the item (formatted as in products feed specification).
     */
-  var productType: js.UndefOr[String] = js.native
+  var productType: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of a promotion.
     */
-  var promotionIds: js.UndefOr[js.Array[String]] = js.native
+  var promotionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Advertised sale price of the item.
     */
-  var salePrice: js.UndefOr[SchemaPrice] = js.native
+  var salePrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Date range during which the item is on sale (see products feed
     * specification).
     */
-  var salePriceEffectiveDate: js.UndefOr[String] = js.native
+  var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of the product that is available for selling on Google.
     * Supported only for online products.
     */
-  var sellOnGoogleQuantity: js.UndefOr[String] = js.native
+  var sellOnGoogleQuantity: js.UndefOr[String] = js.undefined
   
   /**
     * Shipping rules.
     */
-  var shipping: js.UndefOr[js.Array[SchemaProductShipping]] = js.native
+  var shipping: js.UndefOr[js.Array[SchemaProductShipping]] = js.undefined
   
   /**
     * Height of the item for shipping.
     */
-  var shippingHeight: js.UndefOr[SchemaProductShippingDimension] = js.native
+  var shippingHeight: js.UndefOr[SchemaProductShippingDimension] = js.undefined
   
   /**
     * The shipping label of the product, used to group product in account-level
     * shipping rules.
     */
-  var shippingLabel: js.UndefOr[String] = js.native
+  var shippingLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Length of the item for shipping.
     */
-  var shippingLength: js.UndefOr[SchemaProductShippingDimension] = js.native
+  var shippingLength: js.UndefOr[SchemaProductShippingDimension] = js.undefined
   
   /**
     * Weight of the item for shipping.
     */
-  var shippingWeight: js.UndefOr[SchemaProductShippingWeight] = js.native
+  var shippingWeight: js.UndefOr[SchemaProductShippingWeight] = js.undefined
   
   /**
     * Width of the item for shipping.
     */
-  var shippingWidth: js.UndefOr[SchemaProductShippingDimension] = js.native
+  var shippingWidth: js.UndefOr[SchemaProductShippingDimension] = js.undefined
   
   /**
     * System in which the size is specified. Recommended for apparel items.
     */
-  var sizeSystem: js.UndefOr[String] = js.native
+  var sizeSystem: js.UndefOr[String] = js.undefined
   
   /**
     * The cut of the item. Recommended for apparel items.
     */
-  var sizeType: js.UndefOr[String] = js.native
+  var sizeType: js.UndefOr[String] = js.undefined
   
   /**
     * Size of the item.
     */
-  var sizes: js.UndefOr[js.Array[String]] = js.native
+  var sizes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The source of the offer, i.e., how the offer was created.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * The CLDR territory code for the item.
     */
-  var targetCountry: js.UndefOr[String] = js.native
+  var targetCountry: js.UndefOr[String] = js.undefined
   
   /**
     * Tax information.
     */
-  var taxes: js.UndefOr[js.Array[SchemaProductTax]] = js.native
+  var taxes: js.UndefOr[js.Array[SchemaProductTax]] = js.undefined
   
   /**
     * Title of the item.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The preference of the denominator of the unit price.
     */
-  var unitPricingBaseMeasure: js.UndefOr[SchemaProductUnitPricingBaseMeasure] = js.native
+  var unitPricingBaseMeasure: js.UndefOr[SchemaProductUnitPricingBaseMeasure] = js.undefined
   
   /**
     * The measure and dimension of an item.
     */
-  var unitPricingMeasure: js.UndefOr[SchemaProductUnitPricingMeasure] = js.native
+  var unitPricingMeasure: js.UndefOr[SchemaProductUnitPricingMeasure] = js.undefined
   
   /**
     * Deprecated. The read-only list of intended destinations which passed
     * validation.
     */
-  var validatedDestinations: js.UndefOr[js.Array[String]] = js.native
+  var validatedDestinations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Read-only warnings.
     */
-  var warnings: js.UndefOr[js.Array[SchemaError]] = js.native
+  var warnings: js.UndefOr[js.Array[SchemaError]] = js.undefined
 }
 object SchemaProduct {
   

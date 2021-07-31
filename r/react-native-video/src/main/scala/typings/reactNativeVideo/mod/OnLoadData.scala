@@ -3,29 +3,27 @@ package typings.reactNativeVideo.mod
 import typings.reactNativeVideo.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnLoadData extends StObject {
   
-  var canPlayFastForward: Boolean = js.native
+  var canPlayFastForward: Boolean
   
-  var canPlayReverse: Boolean = js.native
+  var canPlayReverse: Boolean
   
-  var canPlaySlowForward: Boolean = js.native
+  var canPlaySlowForward: Boolean
   
-  var canPlaySlowReverse: Boolean = js.native
+  var canPlaySlowReverse: Boolean
   
-  var canStepBackward: Boolean = js.native
+  var canStepBackward: Boolean
   
-  var canStepForward: Boolean = js.native
+  var canStepForward: Boolean
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var naturalSize: Height = js.native
+  var naturalSize: Height
 }
 object OnLoadData {
   

@@ -5,17 +5,15 @@ import typings.scrivito.mod.ObjSearchSingleAttribute
 import typings.scrivito.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attributes extends StObject {
     
-    var attributes: js.Array[ObjSearchSingleAttribute] = js.native
+    var attributes: js.Array[ObjSearchSingleAttribute]
     
-    var limit: Double = js.native
+    var limit: Double
   }
   object Attributes {
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Content extends StObject {
     
-    var content: js.Any = js.native
+    var content: js.Any
     
-    var name: String = js.native
+    var name: String
     
-    var obj: js.UndefOr[Obj] = js.native
+    var obj: js.UndefOr[Obj] = js.undefined
     
-    var widget: js.UndefOr[Widget] = js.native
+    var widget: js.UndefOr[Widget] = js.undefined
   }
   object Content {
     
@@ -81,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
   }
   object ContentType {
     
@@ -110,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DumpLoaded extends StObject {
     
-    var dumpLoaded: Boolean = js.native
+    var dumpLoaded: Boolean
   }
   object DumpLoaded {
     
@@ -131,12 +126,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Filename extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object Filename {
     
@@ -163,12 +157,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Hash extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object Hash {
     
@@ -195,12 +188,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IncludeObjs extends StObject {
     
-    var includeObjs: Double = js.native
+    var includeObjs: Double
     
-    var limit: Double = js.native
+    var limit: Double
   }
   object IncludeObjs {
     
@@ -221,10 +213,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -242,12 +233,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var severity: String = js.native
+    var severity: String
   }
   object Message {
     
@@ -268,12 +258,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PreloadDump extends StObject {
     
-    var preloadDump: js.Any = js.native
+    var preloadDump: js.Any
     
-    var result: Obj = js.native
+    var result: Obj
   }
   object PreloadDump {
     
@@ -294,12 +283,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
   }
   object Query {
     
@@ -326,10 +314,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Toolbar extends StObject {
     
-    var toolbar: js.Array[String] = js.native
+    var toolbar: js.Array[String]
   }
   object Toolbar {
     

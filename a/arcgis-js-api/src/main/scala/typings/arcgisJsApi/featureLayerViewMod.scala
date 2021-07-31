@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.FeatureLayerViewConstructor
 import typings.arcgisJsApi.esri.FeatureLayerViewProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureLayerViewMod extends Shortcut {
   
   @JSImport("esri/views/layers/FeatureLayerView", JSImport.Namespace)
   @js.native
-  val ^ : FeatureLayerViewConstructor = js.native
+  val ^ : js.Object & FeatureLayerViewConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/layers/FeatureLayerView", JSImport.Namespace)
@@ -23,12 +22,14 @@ object featureLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html)
     */
-  class Class () extends FeatureLayerView {
+  class Class ()
+    extends StObject
+       with FeatureLayerView {
     def this(properties: FeatureLayerViewProperties) = this()
   }
   
-  type _To = FeatureLayerViewConstructor
+  type _To = js.Object & FeatureLayerViewConstructor
   
   /* This means you don't have to write `^`, but can instead just say `featureLayerViewMod.foo` */
-  override def _to: FeatureLayerViewConstructor = ^
+  override def _to: js.Object & FeatureLayerViewConstructor = ^
 }

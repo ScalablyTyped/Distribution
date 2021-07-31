@@ -2,24 +2,22 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service account sign JWT response.
   */
-@js.native
 trait SchemaSignJwtResponse extends StObject {
   
   /**
     * The id of the key used to sign the JWT.
     */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /**
     * The signed JWT.
     */
-  var signedJwt: js.UndefOr[String] = js.native
+  var signedJwt: js.UndefOr[String] = js.undefined
 }
 object SchemaSignJwtResponse {
   

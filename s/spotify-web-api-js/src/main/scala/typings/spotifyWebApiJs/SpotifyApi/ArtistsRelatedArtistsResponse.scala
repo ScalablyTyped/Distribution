@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/artists/{id}/related-artists
   * https://developer.spotify.com/web-api/get-related-artists/
   */
-@js.native
 trait ArtistsRelatedArtistsResponse extends StObject {
   
-  var artists: js.Array[ArtistObjectFull] = js.native
+  var artists: js.Array[ArtistObjectFull]
 }
 object ArtistsRelatedArtistsResponse {
   

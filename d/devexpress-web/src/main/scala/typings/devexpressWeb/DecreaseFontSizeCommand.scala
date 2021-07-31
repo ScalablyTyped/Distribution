@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to decrease the font size of characters in a selected range to the closest smaller predefined value.
   */
-@js.native
-trait DecreaseFontSizeCommand extends CommandWithSimpleStateBase {
+trait DecreaseFontSizeCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DecreaseFontSizeCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DecreaseFontSizeCommand {
   

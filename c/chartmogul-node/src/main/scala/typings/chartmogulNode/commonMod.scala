@@ -3,23 +3,21 @@ package typings.chartmogulNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
   
-  @js.native
   trait Cursor extends StObject {
     
-    var current_page: js.UndefOr[Double] = js.native
+    var current_page: js.UndefOr[Double] = js.undefined
     
-    var has_more: js.UndefOr[Boolean] = js.native
+    var has_more: js.UndefOr[Boolean] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var per_page: js.UndefOr[Double] = js.native
+    var per_page: js.UndefOr[Double] = js.undefined
     
-    var total_pages: js.UndefOr[Double] = js.native
+    var total_pages: js.UndefOr[Double] = js.undefined
   }
   object Cursor {
     
@@ -64,12 +62,11 @@ object commonMod {
     }
   }
   
-  @js.native
   trait CursorParams extends StObject {
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var per_page: js.UndefOr[Double] = js.native
+    var per_page: js.UndefOr[Double] = js.undefined
   }
   object CursorParams {
     
@@ -96,10 +93,11 @@ object commonMod {
     }
   }
   
-  @js.native
-  trait Entries[T] extends Cursor {
+  trait Entries[T]
+    extends StObject
+       with Cursor {
     
-    var entries: js.Array[T] = js.native
+    var entries: js.Array[T]
   }
   object Entries {
     
@@ -110,7 +108,7 @@ object commonMod {
     }
     
     @scala.inline
-    implicit class EntriesMutableBuilder[Self <: Entries[_], T] (val x: Self with Entries[T]) extends AnyVal {
+    implicit class EntriesMutableBuilder[Self <: Entries[?], T] (val x: Self & Entries[T]) extends AnyVal {
       
       @scala.inline
       def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
@@ -120,12 +118,11 @@ object commonMod {
     }
   }
   
-  @js.native
   trait EntriesSummary[T] extends StObject {
     
-    var entries: js.Array[T] = js.native
+    var entries: js.Array[T]
     
-    var summary: Summary = js.native
+    var summary: Summary
   }
   object EntriesSummary {
     
@@ -136,7 +133,7 @@ object commonMod {
     }
     
     @scala.inline
-    implicit class EntriesSummaryMutableBuilder[Self <: EntriesSummary[_], T] (val x: Self with EntriesSummary[T]) extends AnyVal {
+    implicit class EntriesSummaryMutableBuilder[Self <: EntriesSummary[?], T] (val x: Self & EntriesSummary[T]) extends AnyVal {
       
       @scala.inline
       def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
@@ -153,14 +150,13 @@ object commonMod {
   
   type Strings = js.Array[String]
   
-  @js.native
   trait Summary extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var `percentage-change`: Double = js.native
+    var `percentage-change`: Double
     
-    var previous: Double = js.native
+    var previous: Double
   }
   object Summary {
     

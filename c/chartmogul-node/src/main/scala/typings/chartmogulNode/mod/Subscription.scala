@@ -5,25 +5,25 @@ import typings.chartmogulNode.commonMod.CursorParams
 import typings.chartmogulNode.commonMod.Strings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Subscription {
   
-  @JSImport("chartmogul-node", "Subscription.all")
+  @JSImport("chartmogul-node", "Subscription")
   @js.native
-  def all(config: Config, uuid: String, data: CursorParams): js.Promise[Subscriptions] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "Subscription.cancel")
-  @js.native
-  def cancel(config: Config, uuid: String, data: CancelSubscriptionParams): js.Promise[typings.chartmogulNode.mod.Subscription.Subscription] = js.native
+  @scala.inline
+  def all(config: Config, uuid: String, data: CursorParams): js.Promise[Subscriptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Subscriptions]]
   
-  @js.native
+  @scala.inline
+  def cancel(config: Config, uuid: String, data: CancelSubscriptionParams): js.Promise[typings.chartmogulNode.mod.Subscription.Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Subscription.Subscription]]
+  
   trait CancelSubscriptionParams extends StObject {
     
-    var cancellation_dates: js.UndefOr[Strings] = js.native
+    var cancellation_dates: js.UndefOr[Strings] = js.undefined
     
-    var cancelled_at: js.UndefOr[String] = js.native
+    var cancelled_at: js.UndefOr[String] = js.undefined
   }
   object CancelSubscriptionParams {
     
@@ -53,20 +53,19 @@ object Subscription {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    var cancellation_dates: Strings = js.native
+    var cancellation_dates: Strings
     
-    var customer_uuid: String = js.native
+    var customer_uuid: String
     
-    var data_source_uuid: String = js.native
+    var data_source_uuid: String
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var plan_uuid: String = js.native
+    var plan_uuid: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object Subscription {
     
@@ -109,12 +108,13 @@ object Subscription {
     }
   }
   
-  @js.native
-  trait Subscriptions extends Cursor {
+  trait Subscriptions
+    extends StObject
+       with Cursor {
     
-    var customer_uuid: js.UndefOr[String] = js.native
+    var customer_uuid: js.UndefOr[String] = js.undefined
     
-    var subscriptions: js.Array[typings.chartmogulNode.mod.Subscription.Subscription] = js.native
+    var subscriptions: js.Array[typings.chartmogulNode.mod.Subscription.Subscription]
   }
   object Subscriptions {
     

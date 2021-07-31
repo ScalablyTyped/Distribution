@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceGroupsList extends StandardParameters {
+trait ParamsResourceGroupsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The `id` parameter specifies a comma-separated list of the YouTube group
@@ -25,14 +25,14 @@ trait ParamsResourceGroupsList extends StandardParameters {
     * a value for the `id` parameter, then you must set the `mine` parameter to
     * `true`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Set
     * this parameter's value to true to retrieve all groups owned by the
     * authenticated user.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request.
@@ -46,14 +46,14 @@ trait ParamsResourceGroupsList extends StandardParameters {
     * individual channel. The account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The `pageToken` parameter identifies a specific page in the result set
     * that should be returned. In an API response, the `nextPageToken` property
     * identifies the next page that can be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceGroupsList {
   

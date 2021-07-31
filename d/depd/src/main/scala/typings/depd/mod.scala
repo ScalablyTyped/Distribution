@@ -4,14 +4,16 @@ import typings.depd.depdStrings.deprecation
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(namespace: String): Deprecate = ^.asInstanceOf[js.Dynamic].apply(namespace.asInstanceOf[js.Any]).asInstanceOf[Deprecate]
+  
   @JSImport("depd", JSImport.Namespace)
   @js.native
-  def apply(namespace: String): Deprecate = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Deprecate extends StObject {
@@ -25,22 +27,23 @@ object mod {
     def property[T /* <: js.Object */](obj: T, prop: /* keyof T */ String, message: String): Unit = js.native
   }
   
-  @js.native
-  trait DeprecationError extends Error {
+  trait DeprecationError
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_DeprecationError: typings.depd.depdStrings.DeprecationError = js.native
+    val name_DeprecationError: typings.depd.depdStrings.DeprecationError
     
-    var namespace: String = js.native
+    var namespace: String
     
     @JSName("stack")
-    var stack_DeprecationError: String = js.native
+    var stack_DeprecationError: String
   }
   object DeprecationError {
     
     @scala.inline
-    def apply(message: String, name: typings.depd.depdStrings.DeprecationError, namespace: String, stack: String): DeprecationError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    def apply(message: String, namespace: String, stack: String): DeprecationError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "DeprecationError", namespace = namespace.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeprecationError]
     }
     
@@ -62,29 +65,28 @@ object mod {
     
     object NodeJS {
       
-      @js.native
       trait Process extends StObject {
         
         @JSName("addListener")
-        def addListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type = js.native
+        def addListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type
         
         @JSName("emit")
-        def emit_deprecation(event: deprecation, code: DeprecationError): Boolean = js.native
+        def emit_deprecation(event: deprecation, code: DeprecationError): Boolean
         
         @JSName("listeners")
-        def listeners_deprecation(event: deprecation): js.Array[DeprecationError] = js.native
+        def listeners_deprecation(event: deprecation): js.Array[DeprecationError]
         
         @JSName("on")
-        def on_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type = js.native
+        def on_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type
         
         @JSName("once")
-        def once_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type = js.native
+        def once_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type
         
         @JSName("prependListener")
-        def prependListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type = js.native
+        def prependListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type
         
         @JSName("prependOnceListener")
-        def prependOnceListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type = js.native
+        def prependOnceListener_deprecation(event: deprecation, listener: js.Function1[/* deprecationError */ DeprecationError, Unit]): this.type
       }
       object Process {
         

@@ -2,29 +2,27 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a user attribute privilege.
   */
-@js.native
 trait Privilege extends StObject {
   
   /**
     * True if the user can create.
     */
-  var canCreate: Boolean = js.native
+  var canCreate: Boolean
   
   /**
     * True if the user can read.
     */
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
   /**
     * True if the user can update.
     */
-  var canUpdate: Boolean = js.native
+  var canUpdate: Boolean
 }
 object Privilege {
   

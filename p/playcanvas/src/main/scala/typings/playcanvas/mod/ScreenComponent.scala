@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ScreenComponent")
 @js.native
 class ScreenComponent protected ()
-  extends typings.playcanvas.pc.ScreenComponent {
+  extends StObject
+     with typings.playcanvas.pc.ScreenComponent {
   def this(system: typings.playcanvas.pc.ScreenComponentSystem, entity: typings.playcanvas.pc.Entity) = this()
 }

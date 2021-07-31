@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosVppApp extends MobileApp {
+trait IosVppApp
+  extends StObject
+     with MobileApp {
   
   // The store URL.
-  var appStoreUrl: js.UndefOr[NullableOption[String]] = js.native
+  var appStoreUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The applicable iOS Device Type.
-  var applicableDeviceType: js.UndefOr[NullableOption[IosDeviceType]] = js.native
+  var applicableDeviceType: js.UndefOr[NullableOption[IosDeviceType]] = js.undefined
   
   // The Identity Name.
-  var bundleId: js.UndefOr[NullableOption[String]] = js.native
+  var bundleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The supported License Type.
-  var licensingType: js.UndefOr[NullableOption[VppLicensingType]] = js.native
+  var licensingType: js.UndefOr[NullableOption[VppLicensingType]] = js.undefined
   
   // The VPP application release date and time.
-  var releaseDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var releaseDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The total number of VPP licenses.
-  var totalLicenseCount: js.UndefOr[Double] = js.native
+  var totalLicenseCount: js.UndefOr[Double] = js.undefined
   
   // The number of VPP licenses in use.
-  var usedLicenseCount: js.UndefOr[Double] = js.native
+  var usedLicenseCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible
     * values are: business, education. Possible values are: business, education.
     */
-  var vppTokenAccountType: js.UndefOr[VppTokenAccountType] = js.native
+  var vppTokenAccountType: js.UndefOr[VppTokenAccountType] = js.undefined
   
   // The Apple Id associated with the given Apple Volume Purchase Program Token.
-  var vppTokenAppleId: js.UndefOr[NullableOption[String]] = js.native
+  var vppTokenAppleId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The organization associated with the Apple Volume Purchase Program Token
-  var vppTokenOrganizationName: js.UndefOr[NullableOption[String]] = js.native
+  var vppTokenOrganizationName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IosVppApp {
   

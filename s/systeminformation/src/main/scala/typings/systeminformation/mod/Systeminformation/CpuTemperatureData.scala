@@ -2,17 +2,15 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuTemperatureData extends StObject {
   
-  var cores: js.Array[Double] = js.native
+  var cores: js.Array[Double]
   
-  var main: Double = js.native
+  var main: Double
   
-  var max: Double = js.native
+  var max: Double
 }
 object CpuTemperatureData {
   

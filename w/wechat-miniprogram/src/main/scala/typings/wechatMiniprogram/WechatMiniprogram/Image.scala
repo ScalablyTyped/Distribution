@@ -2,29 +2,27 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 图片对象
   *
   * 最低基础库： `2.7.0` */
-@js.native
 trait Image extends StObject {
   
   /** 图片的真实高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 图片加载发生错误后触发的回调函数 */
-  def onerror(args: js.Any*): js.Any = js.native
+  def onerror(args: js.Any*): js.Any
   
   /** 图片加载完成后触发的回调函数 */
-  def onload(args: js.Any*): js.Any = js.native
+  def onload(args: js.Any*): js.Any
   
   /** 图片的 URL。v2.11.0 起支持传递 base64 Data URI */
-  var src: String = js.native
+  var src: String
   
   /** 图片的真实宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object Image {
   

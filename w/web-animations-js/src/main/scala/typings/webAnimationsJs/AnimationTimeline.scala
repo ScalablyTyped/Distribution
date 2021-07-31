@@ -3,23 +3,21 @@ package typings.webAnimationsJs
 import typings.std.KeyframeEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationTimeline extends StObject {
   
-  val currentTime: Double | Null = js.native
+  val currentTime: Double | Null
   
-  def getAnimations(): js.Array[Animation] = js.native
+  def getAnimations(): js.Array[Animation]
   
-  def play(effect: KeyframeEffect): Animation = js.native
+  def play(effect: KeyframeEffect): Animation
 }
 object AnimationTimeline {
   
   @scala.inline
   def apply(getAnimations: () => js.Array[Animation], play: KeyframeEffect => Animation): AnimationTimeline = {
-    val __obj = js.Dynamic.literal(getAnimations = js.Any.fromFunction0(getAnimations), play = js.Any.fromFunction1(play))
+    val __obj = js.Dynamic.literal(getAnimations = js.Any.fromFunction0(getAnimations), play = js.Any.fromFunction1(play), currentTime = null)
     __obj.asInstanceOf[AnimationTimeline]
   }
   

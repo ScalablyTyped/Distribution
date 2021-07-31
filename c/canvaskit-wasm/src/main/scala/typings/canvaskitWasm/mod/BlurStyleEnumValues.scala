@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlurStyleEnumValues extends EmbindEnum {
+trait BlurStyleEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Inner: BlurStyle = js.native
+  var Inner: BlurStyle
   
-  var Normal: BlurStyle = js.native
+  var Normal: BlurStyle
   
-  var Outer: BlurStyle = js.native
+  var Outer: BlurStyle
   
-  var Solid: BlurStyle = js.native
+  var Solid: BlurStyle
 }
 object BlurStyleEnumValues {
   

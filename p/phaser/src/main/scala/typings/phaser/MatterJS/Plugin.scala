@@ -2,19 +2,17 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plugin extends StObject {
   
-  var `for`: js.UndefOr[String] = js.native
+  var `for`: js.UndefOr[String] = js.undefined
   
-  def install(): Unit = js.native
+  def install(): Unit
   
-  var name: String = js.native
+  var name: String
   
-  var version: String = js.native
+  var version: String
 }
 object Plugin {
   

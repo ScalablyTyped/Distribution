@@ -266,14 +266,14 @@ import typings.activexMshtml.MSHTML.textpathMethodtype
 import typings.activexMshtml.MSHTML.textpathSpacingtype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexMshtmlNumbers {
   
   @js.native
   sealed trait `-1`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with HTMLDlgFlag
        with htmlDesignMode
        with htmlLoop
@@ -282,35 +282,45 @@ object activexMshtmlNumbers {
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
-  sealed trait `-2` extends htmlDesignMode
+  sealed trait `-2`
+    extends StObject
+       with htmlDesignMode
   @scala.inline
   def `-2`: `-2` = -2.asInstanceOf[`-2`]
   
   @js.native
   sealed trait `-2147483647`
-    extends styleWidowsOrphans
+    extends StObject
+       with styleWidowsOrphans
        with styleZIndex
   @scala.inline
   def `-2147483647`: `-2147483647` = -2147483647.asInstanceOf[`-2147483647`]
   
   @js.native
-  sealed trait `-2147483648` extends _FINDTEXT_FLAGS
+  sealed trait `-2147483648`
+    extends StObject
+       with _FINDTEXT_FLAGS
   @scala.inline
   def `-2147483648`: `-2147483648` = -2147483648.asInstanceOf[`-2147483648`]
   
   @js.native
-  sealed trait `-32768` extends htmlTabIndex
+  sealed trait `-32768`
+    extends StObject
+       with htmlTabIndex
   @scala.inline
   def `-32768`: `-32768` = -32768.asInstanceOf[`-32768`]
   
   @js.native
-  sealed trait `-99999` extends htmlDirection
+  sealed trait `-99999`
+    extends StObject
+       with htmlDirection
   @scala.inline
   def `-99999`: `-99999` = -99999.asInstanceOf[`-99999`]
   
   @js.native
   sealed trait `0`
-    extends BoolValue
+    extends StObject
+       with BoolValue
        with DXGI_FORMAT
        with DomConstructor
        with HTMLAppFlag
@@ -544,7 +554,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `1`
-    extends BoolValue
+    extends StObject
+       with BoolValue
        with DXGI_FORMAT
        with DomConstructor
        with HTMLAppFlag
@@ -790,7 +801,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `10`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -820,20 +832,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `100`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `100`: `100` = 100.asInstanceOf[`100`]
   
   @js.native
-  sealed trait `10000` extends _ELEMENT_TAG_ID
+  sealed trait `10000`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `10000`: `10000` = 10000.asInstanceOf[`10000`]
   
   @js.native
   sealed trait `101`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -841,7 +857,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `102`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -849,14 +866,16 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `1024`
-    extends _BEHAVIOR_RENDER_INFO
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
        with _HTML_PAINTER
   @scala.inline
   def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   
   @js.native
   sealed trait `103`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -864,20 +883,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `104`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `104`: `104` = 104.asInstanceOf[`104`]
   
   @js.native
-  sealed trait `1048576` extends _BEHAVIOR_RENDER_INFO
+  sealed trait `1048576`
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
   @scala.inline
   def `1048576`: `1048576` = 1048576.asInstanceOf[`1048576`]
   
   @js.native
   sealed trait `105`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -885,7 +908,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `106`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -893,34 +917,40 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `107`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `107`: `107` = 107.asInstanceOf[`107`]
   
   @js.native
-  sealed trait `1073741824` extends _FINDTEXT_FLAGS
+  sealed trait `1073741824`
+    extends StObject
+       with _FINDTEXT_FLAGS
   @scala.inline
   def `1073741824`: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   
   @js.native
   sealed trait `108`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `108`: `108` = 108.asInstanceOf[`108`]
   
   @js.native
   sealed trait `109`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `109`: `109` = 109.asInstanceOf[`109`]
   
   @js.native
   sealed trait `11`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -945,69 +975,84 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `110`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `110`: `110` = 110.asInstanceOf[`110`]
   
   @js.native
   sealed trait `111`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `111`: `111` = 111.asInstanceOf[`111`]
   
   @js.native
   sealed trait `112`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `112`: `112` = 112.asInstanceOf[`112`]
   
   @js.native
   sealed trait `113`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `113`: `113` = 113.asInstanceOf[`113`]
   
   @js.native
   sealed trait `114`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `114`: `114` = 114.asInstanceOf[`114`]
   
   @js.native
   sealed trait `115`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `115`: `115` = 115.asInstanceOf[`115`]
   
   @js.native
-  sealed trait `116` extends _ELEMENT_TAG_ID
+  sealed trait `116`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `116`: `116` = 116.asInstanceOf[`116`]
   
   @js.native
-  sealed trait `117` extends _ELEMENT_TAG_ID
+  sealed trait `117`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `117`: `117` = 117.asInstanceOf[`117`]
   
   @js.native
-  sealed trait `118` extends _ELEMENT_TAG_ID
+  sealed trait `118`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `118`: `118` = 118.asInstanceOf[`118`]
   
   @js.native
-  sealed trait `119` extends _ELEMENT_TAG_ID
+  sealed trait `119`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `119`: `119` = 119.asInstanceOf[`119`]
   
   @js.native
   sealed trait `12`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1027,66 +1072,88 @@ object activexMshtmlNumbers {
   def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
-  sealed trait `120` extends _ELEMENT_TAG_ID
+  sealed trait `120`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `120`: `120` = 120.asInstanceOf[`120`]
   
   @js.native
-  sealed trait `121` extends _ELEMENT_TAG_ID
+  sealed trait `121`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `121`: `121` = 121.asInstanceOf[`121`]
   
   @js.native
-  sealed trait `122` extends _ELEMENT_TAG_ID
+  sealed trait `122`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `122`: `122` = 122.asInstanceOf[`122`]
   
   @js.native
-  sealed trait `123` extends _ELEMENT_TAG_ID
+  sealed trait `123`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `123`: `123` = 123.asInstanceOf[`123`]
   
   @js.native
-  sealed trait `124` extends _ELEMENT_TAG_ID
+  sealed trait `124`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `124`: `124` = 124.asInstanceOf[`124`]
   
   @js.native
-  sealed trait `125` extends _ELEMENT_TAG_ID
+  sealed trait `125`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `125`: `125` = 125.asInstanceOf[`125`]
   
   @js.native
-  sealed trait `12582912` extends HTMLCaptionFlag
+  sealed trait `12582912`
+    extends StObject
+       with HTMLCaptionFlag
   @scala.inline
   def `12582912`: `12582912` = 12582912.asInstanceOf[`12582912`]
   
   @js.native
-  sealed trait `126` extends _ELEMENT_TAG_ID
+  sealed trait `126`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `126`: `126` = 126.asInstanceOf[`126`]
   
   @js.native
-  sealed trait `127` extends _ELEMENT_TAG_ID
+  sealed trait `127`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `127`: `127` = 127.asInstanceOf[`127`]
   
   @js.native
   sealed trait `128`
-    extends _ELEMENT_TAG_ID
+    extends StObject
+       with _ELEMENT_TAG_ID
        with mediaType
        with styleMsTouchAction
   @scala.inline
   def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
-  sealed trait `129` extends _ELEMENT_TAG_ID
+  sealed trait `129`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `129`: `129` = 129.asInstanceOf[`129`]
   
   @js.native
   sealed trait `13`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1104,21 +1171,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `130`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `130`: `130` = 130.asInstanceOf[`130`]
   
   @js.native
   sealed trait `131`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `131`: `131` = 131.asInstanceOf[`131`]
   
   @js.native
   sealed trait `131072`
-    extends HTMLBorderStyle
+    extends StObject
+       with HTMLBorderStyle
        with HTMLMinimizeFlag
        with _FINDTEXT_FLAGS
        with _HTML_PAINTER
@@ -1127,49 +1197,65 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `132`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with _ELEMENT_TAG_ID
   @scala.inline
   def `132`: `132` = 132.asInstanceOf[`132`]
   
   @js.native
-  sealed trait `133` extends _ELEMENT_TAG_ID
+  sealed trait `133`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `133`: `133` = 133.asInstanceOf[`133`]
   
   @js.native
-  sealed trait `134` extends _ELEMENT_TAG_ID
+  sealed trait `134`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `134`: `134` = 134.asInstanceOf[`134`]
   
   @js.native
-  sealed trait `135` extends _ELEMENT_TAG_ID
+  sealed trait `135`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `135`: `135` = 135.asInstanceOf[`135`]
   
   @js.native
-  sealed trait `136` extends _ELEMENT_TAG_ID
+  sealed trait `136`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `136`: `136` = 136.asInstanceOf[`136`]
   
   @js.native
-  sealed trait `137` extends _ELEMENT_TAG_ID
+  sealed trait `137`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `137`: `137` = 137.asInstanceOf[`137`]
   
   @js.native
-  sealed trait `138` extends _ELEMENT_TAG_ID
+  sealed trait `138`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `138`: `138` = 138.asInstanceOf[`138`]
   
   @js.native
-  sealed trait `139` extends _ELEMENT_TAG_ID
+  sealed trait `139`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `139`: `139` = 139.asInstanceOf[`139`]
   
   @js.native
   sealed trait `14`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1185,58 +1271,79 @@ object activexMshtmlNumbers {
   def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
-  sealed trait `140` extends _ELEMENT_TAG_ID
+  sealed trait `140`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `140`: `140` = 140.asInstanceOf[`140`]
   
   @js.native
-  sealed trait `141` extends _ELEMENT_TAG_ID
+  sealed trait `141`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `141`: `141` = 141.asInstanceOf[`141`]
   
   @js.native
-  sealed trait `142` extends _ELEMENT_TAG_ID
+  sealed trait `142`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `142`: `142` = 142.asInstanceOf[`142`]
   
   @js.native
-  sealed trait `143` extends _ELEMENT_TAG_ID
+  sealed trait `143`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `143`: `143` = 143.asInstanceOf[`143`]
   
   @js.native
-  sealed trait `144` extends _ELEMENT_TAG_ID
+  sealed trait `144`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `144`: `144` = 144.asInstanceOf[`144`]
   
   @js.native
-  sealed trait `145` extends _ELEMENT_TAG_ID
+  sealed trait `145`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `145`: `145` = 145.asInstanceOf[`145`]
   
   @js.native
-  sealed trait `146` extends _ELEMENT_TAG_ID
+  sealed trait `146`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `146`: `146` = 146.asInstanceOf[`146`]
   
   @js.native
-  sealed trait `147` extends _ELEMENT_TAG_ID
+  sealed trait `147`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `147`: `147` = 147.asInstanceOf[`147`]
   
   @js.native
-  sealed trait `148` extends _ELEMENT_TAG_ID
+  sealed trait `148`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `148`: `148` = 148.asInstanceOf[`148`]
   
   @js.native
-  sealed trait `149` extends _ELEMENT_TAG_ID
+  sealed trait `149`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `149`: `149` = 149.asInstanceOf[`149`]
   
   @js.native
   sealed trait `15`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1252,58 +1359,79 @@ object activexMshtmlNumbers {
   def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
-  sealed trait `150` extends _ELEMENT_TAG_ID
+  sealed trait `150`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `150`: `150` = 150.asInstanceOf[`150`]
   
   @js.native
-  sealed trait `151` extends _ELEMENT_TAG_ID
+  sealed trait `151`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `151`: `151` = 151.asInstanceOf[`151`]
   
   @js.native
-  sealed trait `152` extends _ELEMENT_TAG_ID
+  sealed trait `152`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `152`: `152` = 152.asInstanceOf[`152`]
   
   @js.native
-  sealed trait `153` extends _ELEMENT_TAG_ID
+  sealed trait `153`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `153`: `153` = 153.asInstanceOf[`153`]
   
   @js.native
-  sealed trait `154` extends _ELEMENT_TAG_ID
+  sealed trait `154`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `154`: `154` = 154.asInstanceOf[`154`]
   
   @js.native
-  sealed trait `155` extends _ELEMENT_TAG_ID
+  sealed trait `155`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `155`: `155` = 155.asInstanceOf[`155`]
   
   @js.native
-  sealed trait `156` extends _ELEMENT_TAG_ID
+  sealed trait `156`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `156`: `156` = 156.asInstanceOf[`156`]
   
   @js.native
-  sealed trait `157` extends _ELEMENT_TAG_ID
+  sealed trait `157`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `157`: `157` = 157.asInstanceOf[`157`]
   
   @js.native
-  sealed trait `158` extends _ELEMENT_TAG_ID
+  sealed trait `158`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `158`: `158` = 158.asInstanceOf[`158`]
   
   @js.native
-  sealed trait `159` extends _ELEMENT_TAG_ID
+  sealed trait `159`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `159`: `159` = 159.asInstanceOf[`159`]
   
   @js.native
   sealed trait `16`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with HTMLDlgEdge
        with _ELEMENT_TAG_ID
@@ -1323,65 +1451,87 @@ object activexMshtmlNumbers {
   def `16`: `16` = 16.asInstanceOf[`16`]
   
   @js.native
-  sealed trait `160` extends _ELEMENT_TAG_ID
+  sealed trait `160`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `160`: `160` = 160.asInstanceOf[`160`]
   
   @js.native
-  sealed trait `161` extends _ELEMENT_TAG_ID
+  sealed trait `161`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `161`: `161` = 161.asInstanceOf[`161`]
   
   @js.native
-  sealed trait `162` extends _ELEMENT_TAG_ID
+  sealed trait `162`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `162`: `162` = 162.asInstanceOf[`162`]
   
   @js.native
-  sealed trait `163` extends _ELEMENT_TAG_ID
+  sealed trait `163`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `163`: `163` = 163.asInstanceOf[`163`]
   
   @js.native
   sealed trait `16384`
-    extends _BEHAVIOR_LAYOUT_MODE
+    extends StObject
+       with _BEHAVIOR_LAYOUT_MODE
        with _HTML_PAINTER
   @scala.inline
   def `16384`: `16384` = 16384.asInstanceOf[`16384`]
   
   @js.native
-  sealed trait `164` extends _ELEMENT_TAG_ID
+  sealed trait `164`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `164`: `164` = 164.asInstanceOf[`164`]
   
   @js.native
-  sealed trait `165` extends _ELEMENT_TAG_ID
+  sealed trait `165`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `165`: `165` = 165.asInstanceOf[`165`]
   
   @js.native
-  sealed trait `166` extends _ELEMENT_TAG_ID
+  sealed trait `166`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `166`: `166` = 166.asInstanceOf[`166`]
   
   @js.native
-  sealed trait `167` extends _ELEMENT_TAG_ID
+  sealed trait `167`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `167`: `167` = 167.asInstanceOf[`167`]
   
   @js.native
-  sealed trait `168` extends _ELEMENT_TAG_ID
+  sealed trait `168`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `168`: `168` = 168.asInstanceOf[`168`]
   
   @js.native
-  sealed trait `169` extends _ELEMENT_TAG_ID
+  sealed trait `169`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `169`: `169` = 169.asInstanceOf[`169`]
   
   @js.native
   sealed trait `17`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1396,58 +1546,79 @@ object activexMshtmlNumbers {
   def `17`: `17` = 17.asInstanceOf[`17`]
   
   @js.native
-  sealed trait `170` extends _ELEMENT_TAG_ID
+  sealed trait `170`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `170`: `170` = 170.asInstanceOf[`170`]
   
   @js.native
-  sealed trait `171` extends _ELEMENT_TAG_ID
+  sealed trait `171`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `171`: `171` = 171.asInstanceOf[`171`]
   
   @js.native
-  sealed trait `172` extends _ELEMENT_TAG_ID
+  sealed trait `172`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `172`: `172` = 172.asInstanceOf[`172`]
   
   @js.native
-  sealed trait `173` extends _ELEMENT_TAG_ID
+  sealed trait `173`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `173`: `173` = 173.asInstanceOf[`173`]
   
   @js.native
-  sealed trait `174` extends _ELEMENT_TAG_ID
+  sealed trait `174`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `174`: `174` = 174.asInstanceOf[`174`]
   
   @js.native
-  sealed trait `175` extends _ELEMENT_TAG_ID
+  sealed trait `175`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `175`: `175` = 175.asInstanceOf[`175`]
   
   @js.native
-  sealed trait `176` extends _ELEMENT_TAG_ID
+  sealed trait `176`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `176`: `176` = 176.asInstanceOf[`176`]
   
   @js.native
-  sealed trait `177` extends _ELEMENT_TAG_ID
+  sealed trait `177`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `177`: `177` = 177.asInstanceOf[`177`]
   
   @js.native
-  sealed trait `178` extends _ELEMENT_TAG_ID
+  sealed trait `178`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `178`: `178` = 178.asInstanceOf[`178`]
   
   @js.native
-  sealed trait `179` extends _ELEMENT_TAG_ID
+  sealed trait `179`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `179`: `179` = 179.asInstanceOf[`179`]
   
   @js.native
   sealed trait `18`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1462,58 +1633,79 @@ object activexMshtmlNumbers {
   def `18`: `18` = 18.asInstanceOf[`18`]
   
   @js.native
-  sealed trait `180` extends _ELEMENT_TAG_ID
+  sealed trait `180`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `180`: `180` = 180.asInstanceOf[`180`]
   
   @js.native
-  sealed trait `181` extends _ELEMENT_TAG_ID
+  sealed trait `181`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `181`: `181` = 181.asInstanceOf[`181`]
   
   @js.native
-  sealed trait `182` extends _ELEMENT_TAG_ID
+  sealed trait `182`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `182`: `182` = 182.asInstanceOf[`182`]
   
   @js.native
-  sealed trait `183` extends _ELEMENT_TAG_ID
+  sealed trait `183`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `183`: `183` = 183.asInstanceOf[`183`]
   
   @js.native
-  sealed trait `184` extends _ELEMENT_TAG_ID
+  sealed trait `184`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `184`: `184` = 184.asInstanceOf[`184`]
   
   @js.native
-  sealed trait `185` extends _ELEMENT_TAG_ID
+  sealed trait `185`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `185`: `185` = 185.asInstanceOf[`185`]
   
   @js.native
-  sealed trait `186` extends _ELEMENT_TAG_ID
+  sealed trait `186`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `186`: `186` = 186.asInstanceOf[`186`]
   
   @js.native
-  sealed trait `187` extends _ELEMENT_TAG_ID
+  sealed trait `187`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `187`: `187` = 187.asInstanceOf[`187`]
   
   @js.native
-  sealed trait `188` extends _ELEMENT_TAG_ID
+  sealed trait `188`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `188`: `188` = 188.asInstanceOf[`188`]
   
   @js.native
-  sealed trait `189` extends _ELEMENT_TAG_ID
+  sealed trait `189`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `189`: `189` = 189.asInstanceOf[`189`]
   
   @js.native
   sealed trait `19`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -1528,58 +1720,79 @@ object activexMshtmlNumbers {
   def `19`: `19` = 19.asInstanceOf[`19`]
   
   @js.native
-  sealed trait `190` extends _ELEMENT_TAG_ID
+  sealed trait `190`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `190`: `190` = 190.asInstanceOf[`190`]
   
   @js.native
-  sealed trait `191` extends _ELEMENT_TAG_ID
+  sealed trait `191`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `191`: `191` = 191.asInstanceOf[`191`]
   
   @js.native
-  sealed trait `192` extends _ELEMENT_TAG_ID
+  sealed trait `192`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `192`: `192` = 192.asInstanceOf[`192`]
   
   @js.native
-  sealed trait `193` extends _ELEMENT_TAG_ID
+  sealed trait `193`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `193`: `193` = 193.asInstanceOf[`193`]
   
   @js.native
-  sealed trait `194` extends _ELEMENT_TAG_ID
+  sealed trait `194`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `194`: `194` = 194.asInstanceOf[`194`]
   
   @js.native
-  sealed trait `195` extends _ELEMENT_TAG_ID
+  sealed trait `195`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `195`: `195` = 195.asInstanceOf[`195`]
   
   @js.native
-  sealed trait `196` extends _ELEMENT_TAG_ID
+  sealed trait `196`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `196`: `196` = 196.asInstanceOf[`196`]
   
   @js.native
-  sealed trait `197` extends _ELEMENT_TAG_ID
+  sealed trait `197`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `197`: `197` = 197.asInstanceOf[`197`]
   
   @js.native
-  sealed trait `198` extends _ELEMENT_TAG_ID
+  sealed trait `198`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `198`: `198` = 198.asInstanceOf[`198`]
   
   @js.native
-  sealed trait `199` extends _ELEMENT_TAG_ID
+  sealed trait `199`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `199`: `199` = 199.asInstanceOf[`199`]
   
   @js.native
   sealed trait `2`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with HTMLDlgCenter
        with _BEHAVIOR_EVENT
@@ -1799,7 +2012,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `20`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -1812,68 +2026,93 @@ object activexMshtmlNumbers {
   def `20`: `20` = 20.asInstanceOf[`20`]
   
   @js.native
-  sealed trait `200` extends _ELEMENT_TAG_ID
+  sealed trait `200`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `200`: `200` = 200.asInstanceOf[`200`]
   
   @js.native
-  sealed trait `201` extends _ELEMENT_TAG_ID
+  sealed trait `201`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `201`: `201` = 201.asInstanceOf[`201`]
   
   @js.native
-  sealed trait `202` extends _ELEMENT_TAG_ID
+  sealed trait `202`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `202`: `202` = 202.asInstanceOf[`202`]
   
   @js.native
-  sealed trait `203` extends _ELEMENT_TAG_ID
+  sealed trait `203`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `203`: `203` = 203.asInstanceOf[`203`]
   
   @js.native
-  sealed trait `204` extends _ELEMENT_TAG_ID
+  sealed trait `204`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `204`: `204` = 204.asInstanceOf[`204`]
   
   @js.native
-  sealed trait `2048` extends _BEHAVIOR_RENDER_INFO
+  sealed trait `2048`
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
   @scala.inline
   def `2048`: `2048` = 2048.asInstanceOf[`2048`]
   
   @js.native
-  sealed trait `205` extends _ELEMENT_TAG_ID
+  sealed trait `205`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `205`: `205` = 205.asInstanceOf[`205`]
   
   @js.native
-  sealed trait `206` extends _ELEMENT_TAG_ID
+  sealed trait `206`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `206`: `206` = 206.asInstanceOf[`206`]
   
   @js.native
-  sealed trait `207` extends _ELEMENT_TAG_ID
+  sealed trait `207`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `207`: `207` = 207.asInstanceOf[`207`]
   
   @js.native
-  sealed trait `208` extends _ELEMENT_TAG_ID
+  sealed trait `208`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `208`: `208` = 208.asInstanceOf[`208`]
   
   @js.native
-  sealed trait `209` extends _ELEMENT_TAG_ID
+  sealed trait `209`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `209`: `209` = 209.asInstanceOf[`209`]
   
   @js.native
-  sealed trait `2097152` extends _BEHAVIOR_RENDER_INFO
+  sealed trait `2097152`
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
   @scala.inline
   def `2097152`: `2097152` = 2097152.asInstanceOf[`2097152`]
   
   @js.native
   sealed trait `21`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -1885,33 +2124,44 @@ object activexMshtmlNumbers {
   def `21`: `21` = 21.asInstanceOf[`21`]
   
   @js.native
-  sealed trait `210` extends _ELEMENT_TAG_ID
+  sealed trait `210`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `210`: `210` = 210.asInstanceOf[`210`]
   
   @js.native
-  sealed trait `211` extends _ELEMENT_TAG_ID
+  sealed trait `211`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `211`: `211` = 211.asInstanceOf[`211`]
   
   @js.native
-  sealed trait `212` extends _ELEMENT_TAG_ID
+  sealed trait `212`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `212`: `212` = 212.asInstanceOf[`212`]
   
   @js.native
-  sealed trait `213` extends _ELEMENT_TAG_ID
+  sealed trait `213`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `213`: `213` = 213.asInstanceOf[`213`]
   
   @js.native
-  sealed trait `214` extends _ELEMENT_TAG_ID
+  sealed trait `214`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `214`: `214` = 214.asInstanceOf[`214`]
   
   @js.native
   sealed trait `2147483647`
-    extends BoolValue
+    extends StObject
+       with BoolValue
        with DomConstructor
        with HTMLAppFlag
        with HTMLBorder
@@ -2178,33 +2428,44 @@ object activexMshtmlNumbers {
   def `2147483647`: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
   @js.native
-  sealed trait `215` extends _ELEMENT_TAG_ID
+  sealed trait `215`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `215`: `215` = 215.asInstanceOf[`215`]
   
   @js.native
-  sealed trait `216` extends _ELEMENT_TAG_ID
+  sealed trait `216`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `216`: `216` = 216.asInstanceOf[`216`]
   
   @js.native
-  sealed trait `217` extends _ELEMENT_TAG_ID
+  sealed trait `217`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `217`: `217` = 217.asInstanceOf[`217`]
   
   @js.native
-  sealed trait `218` extends _ELEMENT_TAG_ID
+  sealed trait `218`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `218`: `218` = 218.asInstanceOf[`218`]
   
   @js.native
-  sealed trait `219` extends _ELEMENT_TAG_ID
+  sealed trait `219`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `219`: `219` = 219.asInstanceOf[`219`]
   
   @js.native
   sealed trait `22`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2216,33 +2477,44 @@ object activexMshtmlNumbers {
   def `22`: `22` = 22.asInstanceOf[`22`]
   
   @js.native
-  sealed trait `220` extends _ELEMENT_TAG_ID
+  sealed trait `220`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `220`: `220` = 220.asInstanceOf[`220`]
   
   @js.native
-  sealed trait `221` extends _ELEMENT_TAG_ID
+  sealed trait `221`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `221`: `221` = 221.asInstanceOf[`221`]
   
   @js.native
-  sealed trait `222` extends _ELEMENT_TAG_ID
+  sealed trait `222`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `222`: `222` = 222.asInstanceOf[`222`]
   
   @js.native
-  sealed trait `223` extends _ELEMENT_TAG_ID
+  sealed trait `223`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `223`: `223` = 223.asInstanceOf[`223`]
   
   @js.native
-  sealed trait `224` extends _ELEMENT_TAG_ID
+  sealed trait `224`
+    extends StObject
+       with _ELEMENT_TAG_ID
   @scala.inline
   def `224`: `224` = 224.asInstanceOf[`224`]
   
   @js.native
   sealed trait `23`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2255,7 +2527,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `24`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2268,7 +2541,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `25`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2280,13 +2554,16 @@ object activexMshtmlNumbers {
   def `25`: `25` = 25.asInstanceOf[`25`]
   
   @js.native
-  sealed trait `255` extends _BEHAVIOR_RENDER_INFO
+  sealed trait `255`
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
   @scala.inline
   def `255`: `255` = 255.asInstanceOf[`255`]
   
   @js.native
   sealed trait `256`
-    extends HTMLBorderStyle
+    extends StObject
+       with HTMLBorderStyle
        with _BEHAVIOR_RENDER_INFO
        with _HTML_PAINTER
        with mediaType
@@ -2295,7 +2572,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `26`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2308,7 +2586,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `262144`
-    extends HTMLBorder
+    extends StObject
+       with HTMLBorder
        with HTMLDlgBorder
        with _FINDTEXT_FLAGS
   @scala.inline
@@ -2316,7 +2595,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `27`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2328,7 +2608,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `28`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2340,7 +2621,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `29`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with htmlComponent
@@ -2352,7 +2634,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `3`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with HTMLWindowState
        with _BEHAVIOR_EVENT
@@ -2499,7 +2782,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `30`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with styleCursor
@@ -2509,7 +2793,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `31`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with styleCursor
@@ -2519,7 +2804,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `32`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _BEHAVIOR_RENDER_INFO
        with _ELEMENT_TAG_ID
@@ -2533,14 +2819,16 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `32768`
-    extends _BEHAVIOR_LAYOUT_MODE
+    extends StObject
+       with _BEHAVIOR_LAYOUT_MODE
        with _HTML_PAINTER
   @scala.inline
   def `32768`: `32768` = 32768.asInstanceOf[`32768`]
   
   @js.native
   sealed trait `33`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with styleCursor
@@ -2550,7 +2838,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `34`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with styleCursor
@@ -2560,7 +2849,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `35`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2568,7 +2858,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `36`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2576,7 +2867,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `37`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2584,20 +2876,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `38`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `38`: `38` = 38.asInstanceOf[`38`]
   
   @js.native
-  sealed trait `3840` extends _BEHAVIOR_RENDER_INFO
+  sealed trait `3840`
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
   @scala.inline
   def `3840`: `3840` = 3840.asInstanceOf[`3840`]
   
   @js.native
   sealed trait `39`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2605,7 +2901,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `4`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _BEHAVIOR_EVENT
        with _BEHAVIOR_LAYOUT_INFO
@@ -2711,7 +3008,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `40`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _BEHAVIOR_RENDER_INFO
        with _ELEMENT_TAG_ID
@@ -2720,27 +3018,32 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `4096`
-    extends _BEHAVIOR_RENDER_INFO
+    extends StObject
+       with _BEHAVIOR_RENDER_INFO
        with _HTML_PAINTER
   @scala.inline
   def `4096`: `4096` = 4096.asInstanceOf[`4096`]
   
   @js.native
   sealed trait `41`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `41`: `41` = 41.asInstanceOf[`41`]
   
   @js.native
-  sealed trait `4194304` extends HTMLBorder
+  sealed trait `4194304`
+    extends StObject
+       with HTMLBorder
   @scala.inline
   def `4194304`: `4194304` = 4194304.asInstanceOf[`4194304`]
   
   @js.native
   sealed trait `42`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2748,7 +3051,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `43`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2756,7 +3060,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `44`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2764,7 +3069,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `45`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2772,7 +3078,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `46`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2780,7 +3087,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `47`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2788,7 +3096,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `48`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2796,7 +3105,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `49`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2804,7 +3114,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `5`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _COORD_SYSTEM
        with _DISPLAY_MOVEUNIT
@@ -2867,7 +3178,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `50`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2875,20 +3187,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `51`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `51`: `51` = 51.asInstanceOf[`51`]
   
   @js.native
-  sealed trait `511` extends mediaType
+  sealed trait `511`
+    extends StObject
+       with mediaType
   @scala.inline
   def `511`: `511` = 511.asInstanceOf[`511`]
   
   @js.native
   sealed trait `512`
-    extends HTMLBorderStyle
+    extends StObject
+       with HTMLBorderStyle
        with _BEHAVIOR_RENDER_INFO
        with _HTML_PAINTER
   @scala.inline
@@ -2896,33 +3212,40 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `52`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `52`: `52` = 52.asInstanceOf[`52`]
   
   @js.native
-  sealed trait `524288` extends HTMLSysMenuFlag
+  sealed trait `524288`
+    extends StObject
+       with HTMLSysMenuFlag
   @scala.inline
   def `524288`: `524288` = 524288.asInstanceOf[`524288`]
   
   @js.native
   sealed trait `53`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `53`: `53` = 53.asInstanceOf[`53`]
   
   @js.native
-  sealed trait `536870912` extends _FINDTEXT_FLAGS
+  sealed trait `536870912`
+    extends StObject
+       with _FINDTEXT_FLAGS
   @scala.inline
   def `536870912`: `536870912` = 536870912.asInstanceOf[`536870912`]
   
   @js.native
   sealed trait `54`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2930,7 +3253,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `55`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2938,7 +3262,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `56`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2946,7 +3271,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `57`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2954,7 +3280,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `58`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2962,7 +3289,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `59`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -2970,7 +3298,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `6`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with HTMLWindowState
        with _DISPLAY_MOVEUNIT
@@ -3021,7 +3350,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `60`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3029,7 +3359,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `61`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3037,7 +3368,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `62`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3045,7 +3377,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `63`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3053,7 +3386,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `64`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with mediaType
@@ -3063,7 +3397,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `65`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3071,14 +3406,16 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `65536`
-    extends HTMLMaximizeFlag
+    extends StObject
+       with HTMLMaximizeFlag
        with _HTML_PAINTER
   @scala.inline
   def `65536`: `65536` = 65536.asInstanceOf[`65536`]
   
   @js.native
   sealed trait `66`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3086,7 +3423,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `67`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3094,7 +3432,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `68`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3102,7 +3441,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `69`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3110,7 +3450,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `7`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_CORNER
        with _ELEMENT_TAG_ID
@@ -3151,7 +3492,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `70`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3159,7 +3501,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `71`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3167,7 +3510,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `72`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3175,7 +3519,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `73`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3183,7 +3528,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `74`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3191,7 +3537,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `75`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3199,20 +3546,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `76`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `76`: `76` = 76.asInstanceOf[`76`]
   
   @js.native
-  sealed trait `768` extends HTMLBorderStyle
+  sealed trait `768`
+    extends StObject
+       with HTMLBorderStyle
   @scala.inline
   def `768`: `768` = 768.asInstanceOf[`768`]
   
   @js.native
   sealed trait `77`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3220,7 +3571,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `78`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3228,7 +3580,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `79`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3236,7 +3589,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `8`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _BEHAVIOR_RENDER_INFO
        with _ELEMENT_CORNER
@@ -3278,7 +3632,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `80`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3286,20 +3641,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `81`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `81`: `81` = 81.asInstanceOf[`81`]
   
   @js.native
-  sealed trait `8192` extends _HTML_PAINTER
+  sealed trait `8192`
+    extends StObject
+       with _HTML_PAINTER
   @scala.inline
   def `8192`: `8192` = 8192.asInstanceOf[`8192`]
   
   @js.native
   sealed trait `82`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3307,20 +3666,24 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `83`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `83`: `83` = 83.asInstanceOf[`83`]
   
   @js.native
-  sealed trait `8388608` extends HTMLBorder
+  sealed trait `8388608`
+    extends StObject
+       with HTMLBorder
   @scala.inline
   def `8388608`: `8388608` = 8388608.asInstanceOf[`8388608`]
   
   @js.native
   sealed trait `84`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3328,7 +3691,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `85`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3336,7 +3700,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `86`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3344,7 +3709,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `87`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3352,7 +3718,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `88`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3360,7 +3727,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `89`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3368,7 +3736,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `9`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
        with _MOVEUNIT_ACTION
@@ -3400,7 +3769,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `90`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3408,7 +3778,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `91`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3416,7 +3787,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `92`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3424,7 +3796,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `93`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3432,7 +3805,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `94`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3440,7 +3814,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `95`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3448,7 +3823,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `96`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3456,7 +3832,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `97`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3464,7 +3841,8 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `98`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
@@ -3472,14 +3850,17 @@ object activexMshtmlNumbers {
   
   @js.native
   sealed trait `99`
-    extends DXGI_FORMAT
+    extends StObject
+       with DXGI_FORMAT
        with DomConstructor
        with _ELEMENT_TAG_ID
   @scala.inline
   def `99`: `99` = 99.asInstanceOf[`99`]
   
   @js.native
-  sealed trait `99999` extends htmlDirection
+  sealed trait `99999`
+    extends StObject
+       with htmlDirection
   @scala.inline
   def `99999`: `99999` = 99999.asInstanceOf[`99999`]
 }

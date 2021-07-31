@@ -4,10 +4,8 @@ import typings.officeJs.officeJsStrings.olkAppointmentTimeChanged
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppointmentTimeChangedEventArgs extends StObject {
   
   /** 
@@ -15,28 +13,28 @@ trait AppointmentTimeChangedEventArgs extends StObject {
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var end: Date = js.native
+  var end: Date
   
   /** 
     * Gets the appointment start date and time. 
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var start: Date = js.native
+  var start: Date
   
   /** 
     * Gets the type of the event. See `Office.EventType` for details. 
     * 
     * [Api set: Mailbox 1.7] 
     */ 
-  var `type`: olkAppointmentTimeChanged = js.native
+  var `type`: olkAppointmentTimeChanged
 }
 object AppointmentTimeChangedEventArgs {
   
   @scala.inline
-  def apply(end: Date, start: Date, `type`: olkAppointmentTimeChanged): AppointmentTimeChangedEventArgs = {
+  def apply(end: Date, start: Date): AppointmentTimeChangedEventArgs = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("olkAppointmentTimeChanged")
     __obj.asInstanceOf[AppointmentTimeChangedEventArgs]
   }
   

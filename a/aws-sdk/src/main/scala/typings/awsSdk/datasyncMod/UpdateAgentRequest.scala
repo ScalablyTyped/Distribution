@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAgentRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the agent to update.
     */
-  var AgentArn: typings.awsSdk.datasyncMod.AgentArn = js.native
+  var AgentArn: typings.awsSdk.datasyncMod.AgentArn
   
   /**
     * The name that you want to use to configure the agent.
     */
-  var Name: js.UndefOr[TagValue] = js.native
+  var Name: js.UndefOr[TagValue] = js.undefined
 }
 object UpdateAgentRequest {
   

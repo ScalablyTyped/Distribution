@@ -1,22 +1,29 @@
 package typings.web3ProviderEngine
 
+import typings.ethereumProtocol.mod.JSONRPCErrorCallback
 import typings.ethereumProtocol.mod.JSONRPCRequestPayload
 import typings.ethereumProtocol.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("web3-provider-engine", JSImport.Namespace)
   @js.native
-  class ^ () extends Web3ProviderEngine {
+  class ^ ()
+    extends StObject
+       with Web3ProviderEngine {
     def this(options: Web3ProviderEngineOptions) = this()
+    
+    /* CompleteClass */
+    override def sendAsync(payload: JSONRPCRequestPayload, callback: JSONRPCErrorCallback): Unit = js.native
   }
   
   @js.native
-  trait Web3ProviderEngine extends Provider {
+  trait Web3ProviderEngine
+    extends StObject
+       with Provider {
     
     def addProvider(provider: js.Any): Unit = js.native
     
@@ -32,14 +39,13 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait Web3ProviderEngineOptions extends StObject {
     
-    var blockTracker: js.UndefOr[js.Any] = js.native
+    var blockTracker: js.UndefOr[js.Any] = js.undefined
     
-    var blockTrackerProvider: js.UndefOr[js.Any] = js.native
+    var blockTrackerProvider: js.UndefOr[js.Any] = js.undefined
     
-    var pollingInterval: js.UndefOr[Double] = js.native
+    var pollingInterval: js.UndefOr[Double] = js.undefined
   }
   object Web3ProviderEngineOptions {
     

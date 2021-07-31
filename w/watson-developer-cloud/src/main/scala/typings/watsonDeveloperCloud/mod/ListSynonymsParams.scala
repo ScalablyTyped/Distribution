@@ -3,40 +3,38 @@ package typings.watsonDeveloperCloud.mod
 import typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listSynonyms` operation. */
-@js.native
 trait ListSynonymsParams extends StObject {
   
   /** A token identifying the page of results to retrieve. */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /** The name of the entity. */
-  var entity: String = js.native
+  var entity: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** Whether to include the audit properties (`created` and `updated` timestamps) in the response. */
-  var include_audit: js.UndefOr[Boolean] = js.native
+  var include_audit: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to include information about the number of records returned. */
-  var include_count: js.UndefOr[Boolean] = js.native
+  var include_count: js.UndefOr[Boolean] = js.undefined
   
   /** The number of records to return in each page of results. */
-  var page_limit: js.UndefOr[Double] = js.native
+  var page_limit: js.UndefOr[Double] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The attribute by which returned entity value synonyms will be sorted. To reverse the sort order, prefix the value with a minus sign (`-`). */
-  var sort: js.UndefOr[Sort | String] = js.native
+  var sort: js.UndefOr[Sort | String] = js.undefined
   
   /** The text of the entity value. */
-  var value: String = js.native
+  var value: String
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object ListSynonymsParams {
   

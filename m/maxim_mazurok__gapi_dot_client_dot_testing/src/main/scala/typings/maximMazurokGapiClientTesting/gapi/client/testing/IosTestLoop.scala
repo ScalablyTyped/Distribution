@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosTestLoop extends StObject {
   
   /** Output only. The bundle id for the application under test. */
-  var appBundleId: js.UndefOr[String] = js.native
+  var appBundleId: js.UndefOr[String] = js.undefined
   
   /** Required. The .ipa of the application to test. */
-  var appIpa: js.UndefOr[FileReference] = js.native
+  var appIpa: js.UndefOr[FileReference] = js.undefined
   
   /** The list of scenarios that should be run during the test. Defaults to the single scenario 0 if unspecified. */
-  var scenarios: js.UndefOr[js.Array[Double]] = js.native
+  var scenarios: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object IosTestLoop {
   

@@ -4,45 +4,43 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This class manages the attributes of a discovered remote system (device) and provides the capabilities to discover remote systems as part of Project Rome. */
-@js.native
 trait RemoteSystem extends StObject {
   
   /** A list of the applications on this remote system that have registered with the Connected Devices Platform. */
-  var apps: IVectorView[RemoteSystemApp] = js.native
+  var apps: IVectorView[RemoteSystemApp]
   
   /** Gets the machine name of the given remote system. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Reports whether the RemoteSystem is capable of the given Remote System feature. */
-  def getCapabilitySupportedAsync(capabilityName: String): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def getCapabilitySupportedAsync(capabilityName: String): IPromiseWithIAsyncOperation[Boolean]
   
   /** Gets the unique string identifier for the given remote system. */
-  var id: String = js.native
+  var id: String
   
   /** Checks whether the given remote system is available through proximal connection (such as a Bluetooth or local network connection) as opposed to cloud connection. */
-  var isAvailableByProximity: Boolean = js.native
+  var isAvailableByProximity: Boolean
   
   /** Checks whether the given remote system is available through spatially proximal connection. */
-  var isAvailableBySpatialProximity: Boolean = js.native
+  var isAvailableBySpatialProximity: Boolean
   
   /** Gets a String representation of the device type of the given remote system (desktop, Xbox, ...). */
-  var kind: String = js.native
+  var kind: String
   
   /** Gets the manufacturer name of the given remote system. */
-  var manufacturerDisplayName: String = js.native
+  var manufacturerDisplayName: String
   
   /** Gets the model name of the given remote system. */
-  var modelDisplayName: String = js.native
+  var modelDisplayName: String
   
   /** Gets a value describing the OS platform that this remote system is running. */
-  var platform: RemoteSystemPlatform = js.native
+  var platform: RemoteSystemPlatform
   
   /** Gets the status of this remote system's availability. */
-  var status: RemoteSystemStatus = js.native
+  var status: RemoteSystemStatus
 }
 object RemoteSystem {
   

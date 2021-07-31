@@ -2,51 +2,49 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitContainerStateChangeRequest extends StObject {
   
   /**
     * The short name or full ARN of the cluster that hosts the container.
     */
-  var cluster: js.UndefOr[String] = js.native
+  var cluster: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the container.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * The exit code returned for the state change request.
     */
-  var exitCode: js.UndefOr[BoxedInteger] = js.native
+  var exitCode: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * The network bindings of the container.
     */
-  var networkBindings: js.UndefOr[NetworkBindings] = js.native
+  var networkBindings: js.UndefOr[NetworkBindings] = js.undefined
   
   /**
     * The reason for the state change request.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Docker container.
     */
-  var runtimeId: js.UndefOr[String] = js.native
+  var runtimeId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the state change request.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The task ID or full Amazon Resource Name (ARN) of the task that hosts the container.
     */
-  var task: js.UndefOr[String] = js.native
+  var task: js.UndefOr[String] = js.undefined
 }
 object SubmitContainerStateChangeRequest {
   

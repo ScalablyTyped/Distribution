@@ -2,31 +2,29 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceManagementErrorWithDetails extends StObject {
   
   /**
     * The error code returned when exporting the template.
     */
-  val code: js.UndefOr[String] = js.native
+  val code: js.UndefOr[String] = js.undefined
   
   /**
     * Validation error.
     */
-  val details: js.UndefOr[js.Array[ResourceManagementErrorWithDetails]] = js.native
+  val details: js.UndefOr[js.Array[ResourceManagementErrorWithDetails]] = js.undefined
   
   /**
     * The error message describing the export error.
     */
-  val message: js.UndefOr[String] = js.native
+  val message: js.UndefOr[String] = js.undefined
   
   /**
     * The target of the error.
     */
-  val target: js.UndefOr[String] = js.native
+  val target: js.UndefOr[String] = js.undefined
 }
 object ResourceManagementErrorWithDetails {
   

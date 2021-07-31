@@ -2,17 +2,17 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CameraForBoundsOptions extends CameraOptions {
+trait CameraForBoundsOptions
+  extends StObject
+     with CameraOptions {
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[PointLike] = js.native
+  var offset: js.UndefOr[PointLike] = js.undefined
   
-  var padding: js.UndefOr[Double | PaddingOptions] = js.native
+  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
 }
 object CameraForBoundsOptions {
   

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object EntityRefStep {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.EntityRefStep.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep]
   
   /**
     * Creates and returns a new EntityRefStep instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object EntityRefStep {
     *  7.11.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.EntityRefStep.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.IndirectEntityRef): typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.EntityRefStep]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.EntityRefStep.structureTypeName")

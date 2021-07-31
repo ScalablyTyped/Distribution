@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the table resides. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database in which the table resides. For Hive compatibility, this name is entirely lowercase.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * By default, UpdateTable always creates an archived version of the table before updating it. However, if skipArchive is set to true, UpdateTable does not create the archived version.
     */
-  var SkipArchive: js.UndefOr[BooleanNullable] = js.native
+  var SkipArchive: js.UndefOr[BooleanNullable] = js.undefined
   
   /**
     * An updated TableInput object to define the metadata table in the catalog.
     */
-  var TableInput: typings.awsSdk.glueMod.TableInput = js.native
+  var TableInput: typings.awsSdk.glueMod.TableInput
 }
 object UpdateTableRequest {
   

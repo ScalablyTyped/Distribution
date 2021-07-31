@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AEC extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait AEC extends StObject {
     *
     * Safari does not support this setting.
     */
-  var AEC: js.UndefOr[Boolean] = js.native
+  var AEC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marks whether to enable audio gain control.
@@ -28,7 +26,7 @@ trait AEC extends StObject {
     *
     * Safari does not support this setting.
     */
-  var AGC: js.UndefOr[Boolean] = js.native
+  var AGC: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marks whether to enable automatic noise suppression.
@@ -40,7 +38,7 @@ trait AEC extends StObject {
     * - Safari does not support this setting.
     * - Noise suppression is always enabled on Firefox. Setting `ANS` as `false` does not take effect on Firefox.
     */
-  var ANS: js.UndefOr[Boolean] = js.native
+  var ANS: js.UndefOr[Boolean] = js.undefined
 }
 object AEC {
   

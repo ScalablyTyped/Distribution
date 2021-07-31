@@ -2,7 +2,6 @@ package typings.gaeChannelApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object goog {
@@ -27,28 +26,27 @@ object goog {
       def open(handler: js.Function): Socket = js.native
     }
     
-    @js.native
     trait Socket extends StObject {
       
       /**
         * Close the socket.
         * The socket cannot be used again after calling close; the server must create a new socket.
         */
-      def close(): Unit = js.native
+      def close(): Unit
       
       /**
         * Set this property to a function that called when the socket is closed.
         * When the socket is closed, it cannot be reopened.
         * Use the open() method on a goog.appengine.Channel object to create a new socket.
         */
-      def onclose(): Unit = js.native
+      def onclose(): Unit
       
       /**
         * Set this property to a function called when an error occurs on the socket.
         * The function is passed one parameter: an error object.
         * The description field is a description of the error and the code field is an HTTP error code indicating the error.
         */
-      var onerror: js.Function = js.native
+      var onerror: js.Function
       
       /**
         * Set this to a function called when the socket receives a message.
@@ -57,12 +55,12 @@ object goog {
         * @param message
         * @param message.data
         */
-      def onmessage(message: js.Any): Unit = js.native
+      def onmessage(message: js.Any): Unit
       
       /**
         * Set this to a function called when the socket is ready to receive messages.
         */
-      def onopen(): Unit = js.native
+      def onopen(): Unit
     }
     object Socket {
       

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scheduleMod {
@@ -77,6 +76,10 @@ object scheduleMod {
   /* static members */
   object Schedule {
     
+    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Schedule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -86,74 +89,68 @@ object scheduleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Schedule = js.native
-    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Schedule = js.native
-    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ScheduleState): Schedule = js.native
-    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): Schedule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ScheduleState): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Schedule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ScheduleState, opts: CustomResourceOptions): Schedule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Schedule]
     
     /**
       * Returns true if the given object is an instance of Schedule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/schedule.Schedule */ Boolean]
   }
   
-  @js.native
   trait ScheduleArgs extends StObject {
     
     /**
       * The name or Amazon Resource Name (ARN) of the Auto Scaling group.
       */
-    val autoscalingGroupName: Input[String] = js.native
+    val autoscalingGroupName: Input[String]
     
     /**
       * The number of EC2 instances that should be running in the group. Default 0.  Set to -1 if you don't want to change the desired capacity at the scheduled time.
       */
-    val desiredCapacity: js.UndefOr[Input[Double]] = js.native
+    val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The time for this action to end, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
       * If you try to schedule your action in the past, Auto Scaling returns an error message.
       */
-    val endTime: js.UndefOr[Input[String]] = js.native
+    val endTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum size for the Auto Scaling group. Default 0.
       * Set to -1 if you don't want to change the maximum size at the scheduled time.
       */
-    val maxSize: js.UndefOr[Input[Double]] = js.native
+    val maxSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The minimum size for the Auto Scaling group. Default 0.
       * Set to -1 if you don't want to change the minimum size at the scheduled time.
       */
-    val minSize: js.UndefOr[Input[Double]] = js.native
+    val minSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The time when recurring future actions will start. Start time is specified by the user following the Unix cron syntax format.
       */
-    val recurrence: js.UndefOr[Input[String]] = js.native
+    val recurrence: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of this scaling action.
       */
-    val scheduledActionName: Input[String] = js.native
+    val scheduledActionName: Input[String]
     
     /**
       * The time for this action to start, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
       * If you try to schedule your action in the past, Auto Scaling returns an error message.
       */
-    val startTime: js.UndefOr[Input[String]] = js.native
+    val startTime: js.UndefOr[Input[String]] = js.undefined
   }
   object ScheduleArgs {
     
@@ -210,57 +207,56 @@ object scheduleMod {
     }
   }
   
-  @js.native
   trait ScheduleState extends StObject {
     
     /**
       * The ARN assigned by AWS to the autoscaling schedule.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or Amazon Resource Name (ARN) of the Auto Scaling group.
       */
-    val autoscalingGroupName: js.UndefOr[Input[String]] = js.native
+    val autoscalingGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of EC2 instances that should be running in the group. Default 0.  Set to -1 if you don't want to change the desired capacity at the scheduled time.
       */
-    val desiredCapacity: js.UndefOr[Input[Double]] = js.native
+    val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The time for this action to end, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
       * If you try to schedule your action in the past, Auto Scaling returns an error message.
       */
-    val endTime: js.UndefOr[Input[String]] = js.native
+    val endTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum size for the Auto Scaling group. Default 0.
       * Set to -1 if you don't want to change the maximum size at the scheduled time.
       */
-    val maxSize: js.UndefOr[Input[Double]] = js.native
+    val maxSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The minimum size for the Auto Scaling group. Default 0.
       * Set to -1 if you don't want to change the minimum size at the scheduled time.
       */
-    val minSize: js.UndefOr[Input[Double]] = js.native
+    val minSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The time when recurring future actions will start. Start time is specified by the user following the Unix cron syntax format.
       */
-    val recurrence: js.UndefOr[Input[String]] = js.native
+    val recurrence: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of this scaling action.
       */
-    val scheduledActionName: js.UndefOr[Input[String]] = js.native
+    val scheduledActionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time for this action to start, in "YYYY-MM-DDThh:mm:ssZ" format in UTC/GMT only (for example, 2014-06-01T00:00:00Z ).
       * If you try to schedule your action in the past, Auto Scaling returns an error message.
       */
-    val startTime: js.UndefOr[Input[String]] = js.native
+    val startTime: js.UndefOr[Input[String]] = js.undefined
   }
   object ScheduleState {
     

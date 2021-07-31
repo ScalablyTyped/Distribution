@@ -2,34 +2,32 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChromeArgOptions extends StObject {
   
   /**
     * Additional arguments to pass to the browser instance.
     * The list of Chromium flags can be found here.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether to auto-open a DevTools panel for each tab.
     * If this option is true, the headless option will be set false.
     */
-  var devtools: js.UndefOr[Boolean] = js.native
+  var devtools: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to run browser in headless mode.
     * @default true unless the devtools option is true.
     */
-  var headless: js.UndefOr[Boolean] = js.native
+  var headless: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Path to a User Data Directory.
     */
-  var userDataDir: js.UndefOr[String] = js.native
+  var userDataDir: js.UndefOr[String] = js.undefined
 }
 object ChromeArgOptions {
   

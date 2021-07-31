@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActiveReceiptRuleSetResponse extends StObject {
   
   /**
     * The metadata for the currently active receipt rule set. The metadata consists of the rule set name and a timestamp of when the rule set was created.
     */
-  var Metadata: js.UndefOr[ReceiptRuleSetMetadata] = js.native
+  var Metadata: js.UndefOr[ReceiptRuleSetMetadata] = js.undefined
   
   /**
     * The receipt rules that belong to the active rule set.
     */
-  var Rules: js.UndefOr[ReceiptRulesList] = js.native
+  var Rules: js.UndefOr[ReceiptRulesList] = js.undefined
 }
 object DescribeActiveReceiptRuleSetResponse {
   

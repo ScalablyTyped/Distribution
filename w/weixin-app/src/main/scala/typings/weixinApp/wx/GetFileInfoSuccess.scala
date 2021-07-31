@@ -2,20 +2,18 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInfoSuccess extends StObject {
   
   /** 按照传入的 digestAlgorithm 计算得出的的文件摘要 */
-  var digest: String = js.native
+  var digest: String
   
   /** 调用结果 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 文件大小，单位：B */
-  var size: Double = js.native
+  var size: Double
 }
 object GetFileInfoSuccess {
   

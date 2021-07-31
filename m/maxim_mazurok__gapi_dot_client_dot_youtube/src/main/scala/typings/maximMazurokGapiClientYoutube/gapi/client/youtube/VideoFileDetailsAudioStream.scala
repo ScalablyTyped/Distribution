@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoFileDetailsAudioStream extends StObject {
   
   /** The audio stream's bitrate, in bits per second. */
-  var bitrateBps: js.UndefOr[String] = js.native
+  var bitrateBps: js.UndefOr[String] = js.undefined
   
   /** The number of audio channels that the stream contains. */
-  var channelCount: js.UndefOr[Double] = js.native
+  var channelCount: js.UndefOr[Double] = js.undefined
   
   /** The audio codec that the stream uses. */
-  var codec: js.UndefOr[String] = js.native
+  var codec: js.UndefOr[String] = js.undefined
   
   /** A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code. */
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object VideoFileDetailsAudioStream {
   

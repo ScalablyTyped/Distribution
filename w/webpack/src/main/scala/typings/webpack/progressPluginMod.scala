@@ -4,47 +4,57 @@ import typings.webpack.webpackBooleans.`false`
 import typings.webpack.webpackBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressPluginMod {
   
-  type HandlerFunction = js.Function3[/* percentage */ Double, /* msg */ String, /* repeated */ String, Unit]
-  
-  type ProgressPluginArgument = ProgressPluginOptions | HandlerFunction
-  
   @js.native
-  trait ProgressPluginOptions extends StObject {
+  trait HandlerFunction
+    extends StObject
+       with ProgressPluginArgument {
+    
+    def apply(percentage: Double, msg: String, args: String*): Unit = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.webpack.progressPluginMod.ProgressPluginOptions
+    - typings.webpack.progressPluginMod.HandlerFunction
+  */
+  trait ProgressPluginArgument extends StObject
+  
+  trait ProgressPluginOptions
+    extends StObject
+       with ProgressPluginArgument {
     
     /**
     	 * Show active modules count and one active module in progress message
     	 */
-    var activeModules: js.UndefOr[Boolean] = js.native
+    var activeModules: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Show entries count in progress message
     	 */
-    var entries: js.UndefOr[Boolean] = js.native
+    var entries: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Function that executes for every progress step
     	 */
-    var handler: js.UndefOr[HandlerFunction] = js.native
+    var handler: js.UndefOr[HandlerFunction] = js.undefined
     
     /**
     	 * Show modules count in progress message
     	 */
-    var modules: js.UndefOr[Boolean] = js.native
+    var modules: js.UndefOr[Boolean] = js.undefined
     
     /**
     	 * Minimum modules count to start with. Only for mode=modules. Default: 500
     	 */
-    var modulesCount: js.UndefOr[Double] = js.native
+    var modulesCount: js.UndefOr[Double] = js.undefined
     
     /**
     	 * Collect profile data for progress steps. Default: false
     	 */
-    var profile: js.UndefOr[`true` | `false` | Null] = js.native
+    var profile: js.UndefOr[`true` | `false` | Null] = js.undefined
   }
   object ProgressPluginOptions {
     
@@ -70,7 +80,7 @@ object progressPluginMod {
       def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
       @scala.inline
-      def setHandler(value: (/* percentage */ Double, /* msg */ String, /* repeated */ String) => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
+      def setHandler(value: HandlerFunction): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)

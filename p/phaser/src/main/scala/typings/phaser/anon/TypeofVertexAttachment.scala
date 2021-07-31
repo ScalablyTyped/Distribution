@@ -2,14 +2,12 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofVertexAttachment extends StObject {
   
   /* static member */
-  var nextID: js.Any = js.native
+  var nextID: js.Any
 }
 object TypeofVertexAttachment {
   

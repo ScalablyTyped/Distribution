@@ -9,19 +9,17 @@ import typings.opentelemetryCore.typesMod.LogLevel
 import typings.opentelemetryResources.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BufferConfig extends StObject {
     
     /** Maximum size of a buffer. */
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
     /** Max time for a buffer can wait before being sent */
-    var bufferTimeout: js.UndefOr[Double] = js.native
+    var bufferTimeout: js.UndefOr[Double] = js.undefined
   }
   object BufferConfig {
     
@@ -48,14 +46,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SDKRegistrationConfig extends StObject {
     
     /** Context manager to register as the global context manager */
-    var contextManager: js.UndefOr[ContextManager | Null] = js.native
+    var contextManager: js.UndefOr[ContextManager | Null] = js.undefined
     
     /** Propagator to register as the global propagator */
-    var propagator: js.UndefOr[TextMapPropagator | Null] = js.native
+    var propagator: js.UndefOr[TextMapPropagator | Null] = js.undefined
   }
   object SDKRegistrationConfig {
     
@@ -88,17 +85,16 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TraceParams extends StObject {
     
     /** numberOfAttributesPerSpan is number of attributes per span */
-    var numberOfAttributesPerSpan: js.UndefOr[Double] = js.native
+    var numberOfAttributesPerSpan: js.UndefOr[Double] = js.undefined
     
     /** numberOfEventsPerSpan is number of message events per span */
-    var numberOfEventsPerSpan: js.UndefOr[Double] = js.native
+    var numberOfEventsPerSpan: js.UndefOr[Double] = js.undefined
     
     /** numberOfLinksPerSpan is number of links per span */
-    var numberOfLinksPerSpan: js.UndefOr[Double] = js.native
+    var numberOfLinksPerSpan: js.UndefOr[Double] = js.undefined
   }
   object TraceParams {
     
@@ -131,36 +127,35 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TracerConfig extends StObject {
     
     /** Bool for whether or not graceful shutdown is enabled. If disabled spans will not be exported when SIGTERM is recieved */
-    var gracefulShutdown: js.UndefOr[Boolean] = js.native
+    var gracefulShutdown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Generator of trace and span IDs
       * The default idGenerator generates random ids
       */
-    var idGenerator: js.UndefOr[IdGenerator] = js.native
+    var idGenerator: js.UndefOr[IdGenerator] = js.undefined
     
     /** level of logger.  */
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
     /**
       * User provided logger.
       */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /** Resource associated with trace telemetry  */
-    var resource: js.UndefOr[Resource] = js.native
+    var resource: js.UndefOr[Resource] = js.undefined
     
     /**
       * Sampler determines if a span should be recorded or should be a NoopSpan.
       */
-    var sampler: js.UndefOr[Sampler] = js.native
+    var sampler: js.UndefOr[Sampler] = js.undefined
     
     /** Trace Parameters */
-    var traceParams: js.UndefOr[TraceParams] = js.native
+    var traceParams: js.UndefOr[TraceParams] = js.undefined
   }
   object TracerConfig {
     

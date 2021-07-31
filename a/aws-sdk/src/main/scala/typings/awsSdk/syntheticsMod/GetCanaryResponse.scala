@@ -2,16 +2,14 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCanaryResponse extends StObject {
   
   /**
     * A strucure that contains the full information about the canary.
     */
-  var Canary: js.UndefOr[typings.awsSdk.syntheticsMod.Canary] = js.native
+  var Canary: js.UndefOr[typings.awsSdk.syntheticsMod.Canary] = js.undefined
 }
 object GetCanaryResponse {
   

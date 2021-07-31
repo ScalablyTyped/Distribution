@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRepresentativesRepresentativeinfobydivision extends StandardParameters {
+trait ParamsResourceRepresentativesRepresentativeinfobydivision
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A list of office levels to filter by. Only offices that serve at least
     * one of these levels will be returned. Divisions that don't contain a
     * matching office will not be returned.
     */
-  var levels: js.UndefOr[js.Array[String]] = js.native
+  var levels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The Open Civic Data division identifier of the division to look up.
     */
-  var ocdId: js.UndefOr[String] = js.native
+  var ocdId: js.UndefOr[String] = js.undefined
   
   /**
     * If true, information about all divisions contained in the division
@@ -35,19 +35,19 @@ trait ParamsResourceRepresentativesRepresentativeinfobydivision extends Standard
     * ocd-division/country:us/district:dc, this would also return all DC's
     * wards and ANCs.
     */
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDivisionRepresentativeInfoRequest] = js.native
+  var requestBody: js.UndefOr[SchemaDivisionRepresentativeInfoRequest] = js.undefined
   
   /**
     * A list of office roles to filter by. Only offices fulfilling one of these
     * roles will be returned. Divisions that don't contain a matching office
     * will not be returned.
     */
-  var roles: js.UndefOr[js.Array[String]] = js.native
+  var roles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceRepresentativesRepresentativeinfobydivision {
   

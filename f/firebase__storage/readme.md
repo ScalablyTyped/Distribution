@@ -10,9 +10,9 @@ This is the Cloud Storage component of the Firebase JS SDK.
 | ------------------ | :-------------: |
 | Full name          | @firebase/storage |
 | Keywords           | - |
-| # releases         | 1188 |
-| # dependents       | 17 |
-| # downloads        | 31269187 |
+| # releases         | 1364 |
+| # dependents       | 18 |
+| # downloads        | 35841749 |
 | # stars            | 0 |
 
 ## Links

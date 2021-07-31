@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /**
     * The [author information](#CommentAuthorInformation) of the comment
     */
-  var author: CommentAuthorInformation = js.native
+  var author: CommentAuthorInformation
   
   /**
     * The human-readable comment body
     */
-  var body: String | MarkdownString = js.native
+  var body: String | MarkdownString
   
   /**
     * Context value of the comment. This can be used to contribute comment specific actions.
@@ -36,23 +34,23 @@ trait Comment extends StObject {
     * ```
     * This will show action `extension.deleteComment` only for comments with `contextValue` is `editable`.
     */
-  var contextValue: js.UndefOr[String] = js.native
+  var contextValue: js.UndefOr[String] = js.undefined
   
   /**
     * Optional label describing the [Comment](#Comment)
     * Label will be rendered next to authorName if exists.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * [Comment mode](#CommentMode) of the comment
     */
-  var mode: CommentMode = js.native
+  var mode: CommentMode
   
   /**
     * Optional reactions of the [comment](#Comment)
     */
-  var reactions: js.UndefOr[js.Array[CommentReaction]] = js.native
+  var reactions: js.UndefOr[js.Array[CommentReaction]] = js.undefined
 }
 object Comment {
   

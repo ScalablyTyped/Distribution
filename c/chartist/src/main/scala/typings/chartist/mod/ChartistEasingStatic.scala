@@ -2,59 +2,57 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartistEasingStatic extends StObject {
   
-  var easeInBack: IChartistEasingDefinition = js.native
+  var easeInBack: IChartistEasingDefinition
   
-  var easeInCirc: IChartistEasingDefinition = js.native
+  var easeInCirc: IChartistEasingDefinition
   
-  var easeInCubic: IChartistEasingDefinition = js.native
+  var easeInCubic: IChartistEasingDefinition
   
-  var easeInExpo: IChartistEasingDefinition = js.native
+  var easeInExpo: IChartistEasingDefinition
   
-  var easeInOutBack: IChartistEasingDefinition = js.native
+  var easeInOutBack: IChartistEasingDefinition
   
-  var easeInOutCirc: IChartistEasingDefinition = js.native
+  var easeInOutCirc: IChartistEasingDefinition
   
-  var easeInOutCubic: IChartistEasingDefinition = js.native
+  var easeInOutCubic: IChartistEasingDefinition
   
-  var easeInOutExpo: IChartistEasingDefinition = js.native
+  var easeInOutExpo: IChartistEasingDefinition
   
-  var easeInOutQuad: IChartistEasingDefinition = js.native
+  var easeInOutQuad: IChartistEasingDefinition
   
-  var easeInOutQuart: IChartistEasingDefinition = js.native
+  var easeInOutQuart: IChartistEasingDefinition
   
-  var easeInOutQuint: IChartistEasingDefinition = js.native
+  var easeInOutQuint: IChartistEasingDefinition
   
-  var easeInOutSine: IChartistEasingDefinition = js.native
+  var easeInOutSine: IChartistEasingDefinition
   
-  var easeInQuad: IChartistEasingDefinition = js.native
+  var easeInQuad: IChartistEasingDefinition
   
-  var easeInQuart: IChartistEasingDefinition = js.native
+  var easeInQuart: IChartistEasingDefinition
   
-  var easeInQuint: IChartistEasingDefinition = js.native
+  var easeInQuint: IChartistEasingDefinition
   
-  var easeInSine: IChartistEasingDefinition = js.native
+  var easeInSine: IChartistEasingDefinition
   
-  var easeOutBack: IChartistEasingDefinition = js.native
+  var easeOutBack: IChartistEasingDefinition
   
-  var easeOutCirc: IChartistEasingDefinition = js.native
+  var easeOutCirc: IChartistEasingDefinition
   
-  var easeOutCubic: IChartistEasingDefinition = js.native
+  var easeOutCubic: IChartistEasingDefinition
   
-  var easeOutExpo: IChartistEasingDefinition = js.native
+  var easeOutExpo: IChartistEasingDefinition
   
-  var easeOutQuad: IChartistEasingDefinition = js.native
+  var easeOutQuad: IChartistEasingDefinition
   
-  var easeOutQuart: IChartistEasingDefinition = js.native
+  var easeOutQuart: IChartistEasingDefinition
   
-  var easeOutQuint: IChartistEasingDefinition = js.native
+  var easeOutQuint: IChartistEasingDefinition
   
-  var easeOutSine: IChartistEasingDefinition = js.native
+  var easeOutSine: IChartistEasingDefinition
 }
 object ChartistEasingStatic {
   

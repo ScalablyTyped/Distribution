@@ -7,7 +7,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputTextareaMod {
@@ -24,16 +23,16 @@ object inputTextareaMod {
     def this(props: InputTextareaProps, context: js.Any) = this()
   }
   
-  @js.native
   trait InputTextareaProps
-    extends HTMLProps[HTMLTextAreaElement]
+    extends StObject
+       with HTMLProps[HTMLTextAreaElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
   }
   object InputTextareaProps {
     

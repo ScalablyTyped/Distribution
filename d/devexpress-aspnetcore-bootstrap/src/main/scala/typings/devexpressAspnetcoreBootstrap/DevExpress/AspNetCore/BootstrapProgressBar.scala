@@ -2,11 +2,12 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapProgressBar extends Control {
+trait BootstrapProgressBar
+  extends StObject
+     with Control {
   
   def getCaption(): String = js.native
   
@@ -25,7 +26,7 @@ trait BootstrapProgressBar extends Control {
   def getValue(): js.Any = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
   ): this.type = js.native
   

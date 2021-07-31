@@ -2,19 +2,17 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpreceiver
-@js.native
 trait RTCRtpReceiver extends StObject {
   
-  def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
+  def getContributingSources(): js.Array[RTCRtpContributingSource]
   
   //readonly track?: MediaStreamTrack;
   //readonly transport?: RTCDtlsTransport;
   //readonly rtcpTransport?: RTCDtlsTransport;
-  def getParameters(): RTCRtpParameters = js.native
+  def getParameters(): RTCRtpParameters
 }
 object RTCRtpReceiver {
   

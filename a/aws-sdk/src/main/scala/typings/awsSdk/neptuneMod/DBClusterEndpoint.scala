@@ -2,61 +2,59 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterEndpoint extends StObject {
   
   /**
     * The type associated with a custom endpoint. One of: READER, WRITER, ANY.
     */
-  var CustomEndpointType: js.UndefOr[String] = js.native
+  var CustomEndpointType: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the endpoint.
     */
-  var DBClusterEndpointArn: js.UndefOr[String] = js.native
+  var DBClusterEndpointArn: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier associated with the endpoint. This parameter is stored as a lowercase string.
     */
-  var DBClusterEndpointIdentifier: js.UndefOr[String] = js.native
+  var DBClusterEndpointIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * A unique system-generated identifier for an endpoint. It remains the same for the whole life of the endpoint.
     */
-  var DBClusterEndpointResourceIdentifier: js.UndefOr[String] = js.native
+  var DBClusterEndpointResourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The DB cluster identifier of the DB cluster associated with the endpoint. This parameter is stored as a lowercase string.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The DNS address of the endpoint.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the endpoint. One of: READER, WRITER, CUSTOM.
     */
-  var EndpointType: js.UndefOr[String] = js.native
+  var EndpointType: js.UndefOr[String] = js.undefined
   
   /**
     * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty.
     */
-  var ExcludedMembers: js.UndefOr[StringList] = js.native
+  var ExcludedMembers: js.UndefOr[StringList] = js.undefined
   
   /**
     * List of DB instance identifiers that are part of the custom endpoint group.
     */
-  var StaticMembers: js.UndefOr[StringList] = js.native
+  var StaticMembers: js.UndefOr[StringList] = js.undefined
   
   /**
     * The current status of the endpoint. One of: creating, available, deleting, inactive, modifying. The inactive state applies to an endpoint that cannot be used for a certain kind of cluster, such as a writer endpoint for a read-only secondary cluster in a global database.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object DBClusterEndpoint {
   

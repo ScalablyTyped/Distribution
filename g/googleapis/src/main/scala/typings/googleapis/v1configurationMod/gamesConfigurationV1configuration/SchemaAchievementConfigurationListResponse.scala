@@ -2,30 +2,28 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a ListConfigurations response.
   */
-@js.native
 trait SchemaAchievementConfigurationListResponse extends StObject {
   
   /**
     * The achievement configurations.
     */
-  var items: js.UndefOr[js.Array[SchemaAchievementConfiguration]] = js.native
+  var items: js.UndefOr[js.Array[SchemaAchievementConfiguration]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#achievementConfigurationListResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination token for the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaAchievementConfigurationListResponse {
   

@@ -11,8 +11,8 @@ Require module from string
 | Full name          | require-from-string |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 337 |
-| # downloads        | 128495010 |
+| # dependents       | 376 |
+| # downloads        | 136991162 |
 | # stars            | 3 |
 
 ## Links

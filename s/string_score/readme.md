@@ -12,7 +12,7 @@ String Scoring Algorithm packaged for NodeJS
 | Keywords           | string, score, string_score |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 77786 |
+| # downloads        | 58149 |
 | # stars            | 6 |
 
 ## Links

@@ -6,24 +6,24 @@ import typings.activexLibreoffice.com_.sun.star.beans.NamedValue
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a component implementing a log handler whose output channel is the processes console.
   * @since OOo 2.3
   */
-@js.native
-trait ConsoleHandler extends XConsoleHandler {
+trait ConsoleHandler
+  extends StObject
+     with XConsoleHandler {
   
-  def create(): Unit = js.native
+  def create(): Unit
   
   /**
     * creates an instance of the log handler, using generic settings
     * @param Settings contains the initial settings for the log handler  The following settings are recognized and supported: `Encoding` - denotes the initial
     * @throws com::sun::star::lang::IllegalArgumentException if `Settings` contains arguments with names other than in the list above, or settings whose value
     */
-  def createWithSettings(Settings: SeqEquiv[NamedValue]): Unit = js.native
+  def createWithSettings(Settings: SeqEquiv[NamedValue]): Unit
 }
 object ConsoleHandler {
   

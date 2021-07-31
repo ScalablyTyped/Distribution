@@ -20,25 +20,23 @@ import typings.d3pie.d3pieStrings.value
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3pie {
   
-  @js.native
   trait ID3PieChart extends StObject {
     
-    def closeSegment(index: Unit): Unit = js.native
+    def closeSegment(index: Unit): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getOpenSegment(): js.Any = js.native
+    def getOpenSegment(): js.Any
     
-    def openSegment(index: Double): Unit = js.native
+    def openSegment(index: Double): Unit
     
-    def redraw(): Unit = js.native
+    def redraw(): Unit
     
-    def updateProp(propKey: String, value: js.Any): Unit = js.native
+    def updateProp(propKey: String, value: js.Any): Unit
   }
   object ID3PieChart {
     
@@ -79,16 +77,17 @@ object d3pie {
   }
   
   @js.native
-  trait ID3PieClass extends Instantiable2[(/* id */ HTMLElement) | (/* id */ String), /* options */ ID3PieOptions, ID3PieChart]
+  trait ID3PieClass
+    extends StObject
+       with Instantiable2[(/* id */ HTMLElement) | (/* id */ String), /* options */ ID3PieOptions, ID3PieChart]
   
-  @js.native
   trait ID3PieLabelsOptions extends StObject {
     
     var format: js.UndefOr[
         label | value | percentage | `label-value1` | `label-value2` | `label-percentage1` | `label-percentage2`
-      ] = js.native
+      ] = js.undefined
     
-    var hideWhenLessThanPercentage: js.UndefOr[Double] = js.native
+    var hideWhenLessThanPercentage: js.UndefOr[Double] = js.undefined
   }
   object ID3PieLabelsOptions {
     
@@ -117,26 +116,25 @@ object d3pie {
     }
   }
   
-  @js.native
   trait ID3PieOptions extends StObject {
     
-    var callbacks: js.UndefOr[OnClickSegment] = js.native
+    var callbacks: js.UndefOr[OnClickSegment] = js.undefined
     
-    var data: Content = js.native
+    var data: Content
     
-    var effects: js.UndefOr[HighlightLuminosity] = js.native
+    var effects: js.UndefOr[HighlightLuminosity] = js.undefined
     
-    var footer: js.UndefOr[locationleftundefinedID3P] = js.native
+    var footer: js.UndefOr[locationleftundefinedID3P] = js.undefined
     
-    var header: js.UndefOr[Location] = js.native
+    var header: js.UndefOr[Location] = js.undefined
     
-    var labels: js.UndefOr[Formatter] = js.native
+    var labels: js.UndefOr[Formatter] = js.undefined
     
-    var misc: js.UndefOr[CanvasPadding] = js.native
+    var misc: js.UndefOr[CanvasPadding] = js.undefined
     
-    var size: js.UndefOr[CanvasHeight] = js.native
+    var size: js.UndefOr[CanvasHeight] = js.undefined
     
-    var tooltips: js.UndefOr[PlaceholderParser] = js.native
+    var tooltips: js.UndefOr[PlaceholderParser] = js.undefined
   }
   object ID3PieOptions {
     
@@ -202,14 +200,13 @@ object d3pie {
     }
   }
   
-  @js.native
   trait ID3PieStyleOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
   }
   object ID3PieStyleOptions {
     
@@ -242,10 +239,11 @@ object d3pie {
     }
   }
   
-  @js.native
-  trait ID3PieTextOptions extends ID3PieStyleOptions {
+  trait ID3PieTextOptions
+    extends StObject
+       with ID3PieStyleOptions {
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ID3PieTextOptions {
     

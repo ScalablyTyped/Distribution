@@ -11,7 +11,6 @@ import typings.three.audioListenerMod.AudioListener
 import typings.three.object3DMod.Object3D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object audioMod {
@@ -47,7 +46,7 @@ object audioMod {
     /**
     	 * @default []
     	 */
-    var filters: js.Array[_] = js.native
+    var filters: js.Array[js.Any] = js.native
     
     var gain: GainNode = js.native
     
@@ -55,7 +54,7 @@ object audioMod {
     
     def getFilter(): js.Any = js.native
     
-    def getFilters(): js.Array[_] = js.native
+    def getFilters(): js.Array[js.Any] = js.native
     
     def getLoop(): Boolean = js.native
     
@@ -120,7 +119,7 @@ object audioMod {
     
     def setFilter(filter: js.Any): this.type = js.native
     
-    def setFilters(value: js.Array[_]): this.type = js.native
+    def setFilters(value: js.Array[js.Any]): this.type = js.native
     
     def setLoop(value: Boolean): this.type = js.native
     

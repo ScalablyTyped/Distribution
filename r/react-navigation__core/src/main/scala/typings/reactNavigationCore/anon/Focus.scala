@@ -4,15 +4,13 @@ import typings.reactNavigationCore.navigationBuilderContextMod.ChildActionListen
 import typings.reactNavigationCore.navigationBuilderContextMod.FocusedNavigationListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Focus extends StObject {
   
-  var action: js.Array[ChildActionListener] = js.native
+  var action: js.Array[ChildActionListener]
   
-  var focus: js.Array[FocusedNavigationListener] = js.native
+  var focus: js.Array[FocusedNavigationListener]
 }
 object Focus {
   

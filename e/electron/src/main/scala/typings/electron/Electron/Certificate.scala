@@ -2,62 +2,60 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/certificate
   /**
     * PEM encoded data
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * Fingerprint of the certificate
     */
-  var fingerprint: String = js.native
+  var fingerprint: String
   
   /**
     * Issuer principal
     */
-  var issuer: CertificatePrincipal = js.native
+  var issuer: CertificatePrincipal
   
   /**
     * Issuer certificate (if not self-signed)
     */
-  var issuerCert: Certificate = js.native
+  var issuerCert: Certificate
   
   /**
     * Issuer's Common Name
     */
-  var issuerName: String = js.native
+  var issuerName: String
   
   /**
     * Hex value represented string
     */
-  var serialNumber: String = js.native
+  var serialNumber: String
   
   /**
     * Subject principal
     */
-  var subject: CertificatePrincipal = js.native
+  var subject: CertificatePrincipal
   
   /**
     * Subject's Common Name
     */
-  var subjectName: String = js.native
+  var subjectName: String
   
   /**
     * End date of the certificate being valid in seconds
     */
-  var validExpiry: Double = js.native
+  var validExpiry: Double
   
   /**
     * Start date of the certificate being valid in seconds
     */
-  var validStart: Double = js.native
+  var validStart: Double
 }
 object Certificate {
   

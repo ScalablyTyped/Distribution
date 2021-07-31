@@ -2,21 +2,19 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information associated with the response to the operation. */
-@js.native
 trait IRequestCallbackOptions extends StObject {
   
   /** Comma delimited string containing the collection's current quota metrics (storage, number of stored procedure, triggers and UDFs) after completion of the operation. */
-  var currentCollectionSizeInMB: String = js.native
+  var currentCollectionSizeInMB: String
   
   /** Comma delimited string containing the collection's maximum quota metrics (storage, number of stored procedure, triggers and UDFs). */
-  var maxCollectionSizeInMB: String = js.native
+  var maxCollectionSizeInMB: String
   
   /** Set to true if the requested resource has not been modified compared to the provided ETag in the ifNoneMatch parameter for a read request. */
-  var notModified: Boolean = js.native
+  var notModified: Boolean
 }
 object IRequestCallbackOptions {
   

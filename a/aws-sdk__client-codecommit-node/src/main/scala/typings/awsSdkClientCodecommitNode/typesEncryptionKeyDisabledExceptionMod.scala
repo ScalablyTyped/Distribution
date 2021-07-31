@@ -33,15 +33,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionKeyDisabledExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyDisabledExceptionDetails> * / any */ @js.native
-  trait EncryptionKeyDisabledException
-    extends BatchGetRepositoriesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionKeyDisabledExceptionDetails> * / any */ trait EncryptionKeyDisabledException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion
        with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
@@ -73,15 +72,13 @@ object typesEncryptionKeyDisabledExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdateRepositoryDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException
   }
   object EncryptionKeyDisabledException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException
-    ): EncryptionKeyDisabledException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EncryptionKeyDisabledException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyDisabledException")
       __obj.asInstanceOf[EncryptionKeyDisabledException]
     }
     
@@ -95,6 +92,5 @@ object typesEncryptionKeyDisabledExceptionMod {
     }
   }
   
-  @js.native
   trait EncryptionKeyDisabledExceptionDetails extends StObject
 }

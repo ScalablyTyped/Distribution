@@ -2,23 +2,21 @@ package typings.facebookPixel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object facebook {
   
   object Pixel {
     
-    @js.native
     trait AddPaymentInfoParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object AddPaymentInfoParameters {
       
@@ -60,18 +58,17 @@ object facebook {
       }
     }
     
-    @js.native
     trait AddToCartParameters extends StObject {
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var content_type: js.UndefOr[String] = js.native
+      var content_type: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object AddToCartParameters {
       
@@ -119,18 +116,17 @@ object facebook {
       }
     }
     
-    @js.native
     trait AddToWishlistParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object AddToWishlistParameters {
       
@@ -178,16 +174,15 @@ object facebook {
       }
     }
     
-    @js.native
     trait CompleteRegistrationParameters extends StObject {
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object CompleteRegistrationParameters {
       
@@ -229,9 +224,9 @@ object facebook {
     // For Facebook Tag API using Dynamic Product Ads
     object DPA {
       
-      @js.native
       trait AddToCartParameters
-        extends typings.facebookPixel.facebook.Pixel.AddToCartParameters
+        extends StObject
+           with typings.facebookPixel.facebook.Pixel.AddToCartParameters
       object AddToCartParameters {
         
         @scala.inline
@@ -241,9 +236,9 @@ object facebook {
         }
       }
       
-      @js.native
       trait PurchaseParameters
-        extends typings.facebookPixel.facebook.Pixel.PurchaseParameters
+        extends StObject
+           with typings.facebookPixel.facebook.Pixel.PurchaseParameters
       object PurchaseParameters {
         
         @scala.inline
@@ -253,9 +248,9 @@ object facebook {
         }
       }
       
-      @js.native
       trait ViewContentParameters
-        extends typings.facebookPixel.facebook.Pixel.ViewContentParameters
+        extends StObject
+           with typings.facebookPixel.facebook.Pixel.ViewContentParameters
       object ViewContentParameters {
         
         @scala.inline
@@ -310,20 +305,19 @@ object facebook {
       def apply(eventType: String, eventName: String, parameters: ViewContentParameters): Unit = js.native
     }
     
-    @js.native
     trait InitiateCheckoutParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var num_items: js.UndefOr[Double] = js.native
+      var num_items: js.UndefOr[Double] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object InitiateCheckoutParameters {
       
@@ -377,16 +371,15 @@ object facebook {
       }
     }
     
-    @js.native
     trait LeadParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object LeadParameters {
       
@@ -425,22 +418,21 @@ object facebook {
       }
     }
     
-    @js.native
     trait PurchaseParameters extends StObject {
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var content_type: js.UndefOr[String] = js.native
+      var content_type: js.UndefOr[String] = js.undefined
       
-      var currency: String = js.native
+      var currency: String
       
-      var num_items: js.UndefOr[Double] = js.native
+      var num_items: js.UndefOr[Double] = js.undefined
       
-      var order_id: js.UndefOr[String] = js.native
+      var order_id: js.UndefOr[String] = js.undefined
       
-      var value: Double = js.native
+      var value: Double
     }
     object PurchaseParameters {
       
@@ -494,18 +486,17 @@ object facebook {
       }
     }
     
-    @js.native
     trait SearchParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var search_string: js.UndefOr[String] = js.native
+      var search_string: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object SearchParameters {
       
@@ -553,20 +544,19 @@ object facebook {
       }
     }
     
-    @js.native
     trait ViewContentParameters extends StObject {
       
-      var content_category: js.UndefOr[String] = js.native
+      var content_category: js.UndefOr[String] = js.undefined
       
-      var content_ids: js.UndefOr[js.Array[String]] = js.native
+      var content_ids: js.UndefOr[js.Array[String]] = js.undefined
       
-      var content_name: js.UndefOr[String] = js.native
+      var content_name: js.UndefOr[String] = js.undefined
       
-      var content_type: js.UndefOr[String] = js.native
+      var content_type: js.UndefOr[String] = js.undefined
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
     }
     object ViewContentParameters {
       

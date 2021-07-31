@@ -4,32 +4,32 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fastify-error", JSImport.Default)
+  @JSImport("fastify-error", JSImport.Namespace)
   @js.native
-  def default(code: String, message: String): FastifyError = js.native
-  @JSImport("fastify-error", JSImport.Default)
-  @js.native
-  def default(code: String, message: String, statusCode: js.UndefOr[scala.Nothing], Base: Error): FastifyError = js.native
-  @JSImport("fastify-error", JSImport.Default)
-  @js.native
-  def default(code: String, message: String, statusCode: Double): FastifyError = js.native
-  @JSImport("fastify-error", JSImport.Default)
-  @js.native
-  def default(code: String, message: String, statusCode: Double, Base: Error): FastifyError = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait FastifyError extends Error {
+  @scala.inline
+  def default(code: String, message: String): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  @scala.inline
+  def default(code: String, message: String, statusCode: Double): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  @scala.inline
+  def default(code: String, message: String, statusCode: Double, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  @scala.inline
+  def default(code: String, message: String, statusCode: Unit, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  
+  trait FastifyError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
-    var validation: js.UndefOr[js.Array[ValidationResult]] = js.native
+    var validation: js.UndefOr[js.Array[ValidationResult]] = js.undefined
   }
   object FastifyError {
     
@@ -62,18 +62,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidationResult extends StObject {
     
-    var dataPath: String = js.native
+    var dataPath: String
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var message: String = js.native
+    var message: String
     
-    var params: Record[String, String | js.Array[String]] = js.native
+    var params: Record[String, String | js.Array[String]]
     
-    var schemaPath: String = js.native
+    var schemaPath: String
   }
   object ValidationResult {
     

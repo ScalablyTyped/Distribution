@@ -2,14 +2,14 @@ package typings.chrome.chrome.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRedirectionResponseDetails extends WebResponseCacheDetails {
+trait WebRedirectionResponseDetails
+  extends StObject
+     with WebResponseCacheDetails {
   
   /** The new URL. */
-  var redirectUrl: String = js.native
+  var redirectUrl: String
 }
 object WebRedirectionResponseDetails {
   

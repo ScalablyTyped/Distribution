@@ -2,21 +2,19 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPRtcpParameters extends StObject {
   
-  var cname: js.UndefOr[String] = js.native
+  var cname: js.UndefOr[String] = js.undefined
   
-  var compound: js.UndefOr[Boolean] = js.native
+  var compound: js.UndefOr[Boolean] = js.undefined
   
-  var mux: js.UndefOr[Boolean] = js.native
+  var mux: js.UndefOr[Boolean] = js.undefined
   
-  var reducedSize: js.UndefOr[Boolean] = js.native
+  var reducedSize: js.UndefOr[Boolean] = js.undefined
   
-  var ssrc: js.UndefOr[Double] = js.native
+  var ssrc: js.UndefOr[Double] = js.undefined
 }
 object SDPRtcpParameters {
   

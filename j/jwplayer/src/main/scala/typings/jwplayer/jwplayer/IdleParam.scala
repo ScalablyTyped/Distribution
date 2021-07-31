@@ -5,13 +5,11 @@ import typings.jwplayer.jwplayerStrings.paused
 import typings.jwplayer.jwplayerStrings.playing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdleParam extends StObject {
   
-  var oldstate: buffering | playing | paused = js.native
+  var oldstate: buffering | playing | paused
 }
 object IdleParam {
   

@@ -4,26 +4,24 @@ import typings.imagemin.mod.Plugin
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(pluginsOrOptions: js.Array[Plugin]): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(pluginsOrOptions: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(pluginsOrOptions.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  @scala.inline
+  def apply(plugins: js.Array[Plugin], options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  @scala.inline
+  def apply(plugins: Unit, options: Options): Transform = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  
   @JSImport("gulp-imagemin", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-imagemin", JSImport.Namespace)
-  @js.native
-  def apply(pluginsOrOptions: js.Array[Plugin]): Transform = js.native
-  @JSImport("gulp-imagemin", JSImport.Namespace)
-  @js.native
-  def apply(pluginsOrOptions: Options): Transform = js.native
-  @JSImport("gulp-imagemin", JSImport.Namespace)
-  @js.native
-  def apply(plugins: js.UndefOr[scala.Nothing], options: Options): Transform = js.native
-  @JSImport("gulp-imagemin", JSImport.Namespace)
-  @js.native
-  def apply(plugins: js.Array[Plugin], options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gulp-imagemin", "gifsicle")
   @js.native
@@ -41,10 +39,9 @@ object mod {
   @js.native
   val svgo: PluginFactory[typings.imageminSvgo.mod.Options] = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

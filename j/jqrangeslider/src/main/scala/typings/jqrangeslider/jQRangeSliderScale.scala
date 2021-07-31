@@ -2,13 +2,11 @@ package typings.jqrangeslider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait jQRangeSliderScale extends StObject {
   
-  var first: js.UndefOr[js.Function2[/* min */ Double, /* max */ Double, Double]] = js.native
+  var first: js.UndefOr[js.Function2[/* min */ Double, /* max */ Double, Double]] = js.undefined
   
   // 'true' to stop scale generating ticks from a given value
   var format: js.UndefOr[
@@ -18,16 +16,16 @@ trait jQRangeSliderScale extends StObject {
       /* tickEndValue */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   // compute the next value.
-  var label: js.UndefOr[js.Function2[/* value */ js.Any, /* nextValue */ js.Any, String]] = js.native
+  var label: js.UndefOr[js.Function2[/* value */ js.Any, /* nextValue */ js.Any, String]] = js.undefined
   
   // compute the ruler first value.
-  def next(value: js.Any): js.Any = js.native
+  def next(value: js.Any): js.Any
   
   // compute displayed text for a given internal
-  var stop: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.native
+  var stop: js.UndefOr[js.Function1[/* value */ js.Any, Boolean]] = js.undefined
 }
 object jQRangeSliderScale {
   

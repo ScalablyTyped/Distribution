@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafRegexMatchSetMod {
@@ -25,7 +24,7 @@ object wafRegexMatchSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RegexMatchSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RegexMatchSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -46,6 +45,10 @@ object wafRegexMatchSetMod {
   /* static members */
   object RegexMatchSet {
     
+    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RegexMatchSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -55,42 +58,36 @@ object wafRegexMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RegexMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RegexMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexMatchSetState): RegexMatchSet = js.native
-    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): RegexMatchSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexMatchSetState): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RegexMatchSetState, opts: CustomResourceOptions): RegexMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexMatchSet]
     
     /**
       * Returns true if the given object is an instance of RegexMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/waf/regexMatchSet", "RegexMatchSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/regexMatchSet.RegexMatchSet */ Boolean]
   }
   
-  @js.native
   trait RegexMatchSetArgs extends StObject {
     
     /**
       * The name or description of the Regex Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The regular expression pattern that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings. See below.
       */
     val regexMatchTuples: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RegexMatchSetRegexMatchTuple]]]
-      ] = js.native
+      ] = js.undefined
   }
   object RegexMatchSetArgs {
     
@@ -120,25 +117,24 @@ object wafRegexMatchSetMod {
     }
   }
   
-  @js.native
   trait RegexMatchSetState extends StObject {
     
     /**
       * Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or description of the Regex Match Set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The regular expression pattern that you want AWS WAF to search for in web requests, the location in requests that you want AWS WAF to search, and other settings. See below.
       */
     val regexMatchTuples: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RegexMatchSetRegexMatchTuple]]]
-      ] = js.native
+      ] = js.undefined
   }
   object RegexMatchSetState {
     

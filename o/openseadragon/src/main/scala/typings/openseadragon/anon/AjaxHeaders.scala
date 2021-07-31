@@ -11,75 +11,73 @@ import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxHeaders extends StObject {
   
-  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var alwaysBlend: js.UndefOr[Boolean] = js.native
+  var alwaysBlend: js.UndefOr[Boolean] = js.undefined
   
-  var animationTime: js.UndefOr[Boolean] = js.native
+  var animationTime: js.UndefOr[Boolean] = js.undefined
   
-  var blendTime: js.UndefOr[Double] = js.native
+  var blendTime: js.UndefOr[Double] = js.undefined
   
-  var clip: js.UndefOr[Rect] = js.native
+  var clip: js.UndefOr[Rect] = js.undefined
   
-  var compositeOperation: js.UndefOr[String] = js.native
+  var compositeOperation: js.UndefOr[String] = js.undefined
   
-  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.native
+  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.undefined
   
-  var debugMode: js.UndefOr[Boolean] = js.native
+  var debugMode: js.UndefOr[Boolean] = js.undefined
   
-  var drawer: Drawer = js.native
+  var drawer: Drawer
   
-  var fitBounds: js.UndefOr[Rect] = js.native
+  var fitBounds: js.UndefOr[Rect] = js.undefined
   
-  var fitBoundsPlacement: js.UndefOr[Placement] = js.native
+  var fitBoundsPlacement: js.UndefOr[Placement] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var iOSDevice: js.UndefOr[Boolean] = js.native
+  var iOSDevice: js.UndefOr[Boolean] = js.undefined
   
-  var imageLoader: ImageLoader = js.native
+  var imageLoader: ImageLoader
   
-  var immediateRender: js.UndefOr[Boolean] = js.native
+  var immediateRender: js.UndefOr[Boolean] = js.undefined
   
-  var loadTilesWithAjax: js.UndefOr[Boolean] = js.native
+  var loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined
   
-  var minPixelRatio: js.UndefOr[Double] = js.native
+  var minPixelRatio: js.UndefOr[Double] = js.undefined
   
-  var minZoomImageRatio: js.UndefOr[Double] = js.native
+  var minZoomImageRatio: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
+  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.native
+  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.undefined
   
-  var source: TileSource = js.native
+  var source: TileSource
   
-  var springStiffness: js.UndefOr[Double] = js.native
+  var springStiffness: js.UndefOr[Double] = js.undefined
   
-  var tileCache: TileCache = js.native
+  var tileCache: TileCache
   
-  var viewer: Viewer = js.native
+  var viewer: Viewer
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wrapHorizontal: js.UndefOr[Boolean] = js.native
+  var wrapHorizontal: js.UndefOr[Boolean] = js.undefined
   
-  var wrapVertical: js.UndefOr[Boolean] = js.native
+  var wrapVertical: js.UndefOr[Boolean] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object AjaxHeaders {
   

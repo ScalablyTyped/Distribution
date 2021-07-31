@@ -2,36 +2,34 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectedProperties extends StObject {
   
   /**
     * The detected duration of the input file, in milliseconds.
     */
-  var DurationMillis: js.UndefOr[NullableLong] = js.native
+  var DurationMillis: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The detected file size of the input file, in bytes.
     */
-  var FileSize: js.UndefOr[NullableLong] = js.native
+  var FileSize: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The detected frame rate of the input file, in frames per second.
     */
-  var FrameRate: js.UndefOr[FloatString] = js.native
+  var FrameRate: js.UndefOr[FloatString] = js.undefined
   
   /**
     * The detected height of the input file, in pixels.
     */
-  var Height: js.UndefOr[NullableInteger] = js.native
+  var Height: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The detected width of the input file, in pixels.
     */
-  var Width: js.UndefOr[NullableInteger] = js.native
+  var Width: js.UndefOr[NullableInteger] = js.undefined
 }
 object DetectedProperties {
   

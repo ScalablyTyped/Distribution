@@ -3,36 +3,34 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHighlightObjectForTestRequest extends StObject {
   
   /**
     * The color format to get config with (default: hex).
     */
-  var colorFormat: js.UndefOr[ColorFormat] = js.native
+  var colorFormat: js.UndefOr[ColorFormat] = js.undefined
   
   /**
     * Whether to include distance info.
     */
-  var includeDistance: js.UndefOr[Boolean] = js.native
+  var includeDistance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include style info.
     */
-  var includeStyle: js.UndefOr[Boolean] = js.native
+  var includeStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Id of the node to get highlight object for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Whether to show accessibility info (default: true).
     */
-  var showAccessibilityInfo: js.UndefOr[Boolean] = js.native
+  var showAccessibilityInfo: js.UndefOr[Boolean] = js.undefined
 }
 object GetHighlightObjectForTestRequest {
   

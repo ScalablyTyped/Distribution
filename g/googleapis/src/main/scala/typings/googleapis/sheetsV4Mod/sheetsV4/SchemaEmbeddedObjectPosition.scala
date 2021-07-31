@@ -2,31 +2,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The position of an embedded object such as a chart.
   */
-@js.native
 trait SchemaEmbeddedObjectPosition extends StObject {
   
   /**
     * If true, the embedded object is put on a new sheet whose ID is chosen for
     * you. Used only when writing.
     */
-  var newSheet: js.UndefOr[Boolean] = js.native
+  var newSheet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The position at which the object is overlaid on top of a grid.
     */
-  var overlayPosition: js.UndefOr[SchemaOverlayPosition] = js.native
+  var overlayPosition: js.UndefOr[SchemaOverlayPosition] = js.undefined
   
   /**
     * The sheet this is on. Set only if the embedded object is on its own
     * sheet. Must be non-negative.
     */
-  var sheetId: js.UndefOr[Double] = js.native
+  var sheetId: js.UndefOr[Double] = js.undefined
 }
 object SchemaEmbeddedObjectPosition {
   

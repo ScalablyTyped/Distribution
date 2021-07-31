@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-@js.native
 trait PlusPaymentPaymentResult extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var channel: js.UndefOr[PlusPaymentPaymentChannel] = js.native
+  var channel: js.UndefOr[PlusPaymentPaymentChannel] = js.undefined
   
   /**
     * 交易描述信息
@@ -28,7 +26,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var description: js.UndefOr[Boolean] = js.native
+  var description: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 支付平台返回的原始数据
@@ -36,7 +34,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var rawdata: js.UndefOr[String] = js.native
+  var rawdata: js.UndefOr[String] = js.undefined
   
   /**
     * 支付操作指纹信息
@@ -44,7 +42,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /**
     * 交易编号信息
@@ -52,7 +50,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var tradeno: js.UndefOr[String] = js.native
+  var tradeno: js.UndefOr[String] = js.undefined
   
   /**
     * 查找支付交易信息地址
@@ -60,7 +58,7 @@ trait PlusPaymentPaymentResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var url: js.UndefOr[Boolean] = js.native
+  var url: js.UndefOr[Boolean] = js.undefined
 }
 object PlusPaymentPaymentResult {
   

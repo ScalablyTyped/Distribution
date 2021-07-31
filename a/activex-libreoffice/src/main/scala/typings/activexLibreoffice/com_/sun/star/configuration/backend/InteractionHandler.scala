@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.task.XInteractionRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.task.InteractionHandler
   * @since OOo 2.0
   */
-@js.native
 trait InteractionHandler
-  extends XInteractionHandler
+  extends StObject
+     with XInteractionHandler
      with XInitialization
 object InteractionHandler {
   
@@ -34,7 +33,7 @@ object InteractionHandler {
   def apply(
     acquire: () => Unit,
     handle: XInteractionRequest => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): InteractionHandler = {

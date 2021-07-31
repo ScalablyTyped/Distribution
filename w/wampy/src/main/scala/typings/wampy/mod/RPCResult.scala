@@ -2,18 +2,18 @@ package typings.wampy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RPCResult extends Args {
+trait RPCResult
+  extends StObject
+     with Args {
   
-  var options: RPCOptions = js.native
+  var options: RPCOptions
 }
 object RPCResult {
   
   @scala.inline
-  def apply(argsDict: Dict, argsList: js.Array[_], options: RPCOptions): RPCResult = {
+  def apply(argsDict: Dict, argsList: js.Array[js.Any], options: RPCOptions): RPCResult = {
     val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[RPCResult]
   }

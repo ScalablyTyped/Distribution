@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleListItem extends StObject {
   
   /**
     * The date and time the rule was created.
     */
-  var createdAt: js.UndefOr[CreatedAtDate] = js.native
+  var createdAt: js.UndefOr[CreatedAtDate] = js.undefined
   
   /**
     * The rule ARN.
     */
-  var ruleArn: js.UndefOr[RuleArn] = js.native
+  var ruleArn: js.UndefOr[RuleArn] = js.undefined
   
   /**
     * Specifies whether the rule is disabled.
     */
-  var ruleDisabled: js.UndefOr[IsDisabled] = js.native
+  var ruleDisabled: js.UndefOr[IsDisabled] = js.undefined
   
   /**
     * The name of the rule.
     */
-  var ruleName: js.UndefOr[RuleName] = js.native
+  var ruleName: js.UndefOr[RuleName] = js.undefined
   
   /**
     * The pattern for the topic names that apply.
     */
-  var topicPattern: js.UndefOr[TopicPattern] = js.native
+  var topicPattern: js.UndefOr[TopicPattern] = js.undefined
 }
 object TopicRuleListItem {
   

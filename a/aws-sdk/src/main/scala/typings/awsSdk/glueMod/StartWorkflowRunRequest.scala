@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartWorkflowRunRequest extends StObject {
   
   /**
     * The name of the workflow to start.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object StartWorkflowRunRequest {
   

@@ -5,22 +5,22 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.TouchableHighlightProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconObject extends TouchableHighlightProps {
+trait IconObject
+  extends StObject
+     with TouchableHighlightProps {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   @JSName("style")
-  var style_IconObject: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var style_IconObject: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var `type`: js.UndefOr[IconType] = js.native
+  var `type`: js.UndefOr[IconType] = js.undefined
 }
 object IconObject {
   

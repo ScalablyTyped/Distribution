@@ -2,15 +2,13 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineCriteriaStatus extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var `type`: TimelineCriteriaStatusCode = js.native
+  var `type`: TimelineCriteriaStatusCode
 }
 object TimelineCriteriaStatus {
   

@@ -15,57 +15,41 @@ import typings.plottable.plottableStrings.stepAfter
 import typings.plottable.plottableStrings.stepBefore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Basis extends StObject {
   
-  var basis: typings.plottable.plottableStrings.basis = js.native
+  var basis: typings.plottable.plottableStrings.basis
   
-  var basisClosed: typings.plottable.plottableStrings.basisClosed = js.native
+  var basisClosed: typings.plottable.plottableStrings.basisClosed
   
-  var basisOpen: typings.plottable.plottableStrings.basisOpen = js.native
+  var basisOpen: typings.plottable.plottableStrings.basisOpen
   
-  var bundle: typings.plottable.plottableStrings.bundle = js.native
+  var bundle: typings.plottable.plottableStrings.bundle
   
-  var cardinal: typings.plottable.plottableStrings.cardinal = js.native
+  var cardinal: typings.plottable.plottableStrings.cardinal
   
-  var cardinalClosed: typings.plottable.plottableStrings.cardinalClosed = js.native
+  var cardinalClosed: typings.plottable.plottableStrings.cardinalClosed
   
-  var cardinalOpen: typings.plottable.plottableStrings.cardinalOpen = js.native
+  var cardinalOpen: typings.plottable.plottableStrings.cardinalOpen
   
-  var linear: typings.plottable.plottableStrings.linear = js.native
+  var linear: typings.plottable.plottableStrings.linear
   
-  var linearClosed: typings.plottable.plottableStrings.linearClosed = js.native
+  var linearClosed: typings.plottable.plottableStrings.linearClosed
   
-  var monotone: typings.plottable.plottableStrings.monotone = js.native
+  var monotone: typings.plottable.plottableStrings.monotone
   
-  var step: typings.plottable.plottableStrings.step = js.native
+  var step: typings.plottable.plottableStrings.step
   
-  var stepAfter: typings.plottable.plottableStrings.stepAfter = js.native
+  var stepAfter: typings.plottable.plottableStrings.stepAfter
   
-  var stepBefore: typings.plottable.plottableStrings.stepBefore = js.native
+  var stepBefore: typings.plottable.plottableStrings.stepBefore
 }
 object Basis {
   
   @scala.inline
-  def apply(
-    basis: basis,
-    basisClosed: basisClosed,
-    basisOpen: basisOpen,
-    bundle: bundle,
-    cardinal: cardinal,
-    cardinalClosed: cardinalClosed,
-    cardinalOpen: cardinalOpen,
-    linear: linear,
-    linearClosed: linearClosed,
-    monotone: monotone,
-    step: step,
-    stepAfter: stepAfter,
-    stepBefore: stepBefore
-  ): Basis = {
-    val __obj = js.Dynamic.literal(basis = basis.asInstanceOf[js.Any], basisClosed = basisClosed.asInstanceOf[js.Any], basisOpen = basisOpen.asInstanceOf[js.Any], bundle = bundle.asInstanceOf[js.Any], cardinal = cardinal.asInstanceOf[js.Any], cardinalClosed = cardinalClosed.asInstanceOf[js.Any], cardinalOpen = cardinalOpen.asInstanceOf[js.Any], linear = linear.asInstanceOf[js.Any], linearClosed = linearClosed.asInstanceOf[js.Any], monotone = monotone.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], stepAfter = stepAfter.asInstanceOf[js.Any], stepBefore = stepBefore.asInstanceOf[js.Any])
+  def apply(): Basis = {
+    val __obj = js.Dynamic.literal(basis = "basis", basisClosed = "basisClosed", basisOpen = "basisOpen", bundle = "bundle", cardinal = "cardinal", cardinalClosed = "cardinalClosed", cardinalOpen = "cardinalOpen", linear = "linear", linearClosed = "linearClosed", monotone = "monotone", step = "step", stepAfter = "stepAfter", stepBefore = "stepBefore")
     __obj.asInstanceOf[Basis]
   }
   

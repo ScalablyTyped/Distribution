@@ -2,41 +2,39 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
   /**
     * Configure what animates when modal is dismissed
     */
-  var dismissModal: js.UndefOr[ModalAnimationOptions] = js.native
+  var dismissModal: js.UndefOr[ModalAnimationOptions] = js.undefined
   
   /**
     * Configure what animates when a screen is popped
     */
-  var pop: js.UndefOr[StackAnimationOptions] = js.native
+  var pop: js.UndefOr[StackAnimationOptions] = js.undefined
   
   /**
     * Configure what animates when a screen is pushed
     */
-  var push: js.UndefOr[StackAnimationOptions] = js.native
+  var push: js.UndefOr[StackAnimationOptions] = js.undefined
   
   /**
     * Configure the setRoot animation
     */
-  var setRoot: js.UndefOr[ViewAnimationOptions] = js.native
+  var setRoot: js.UndefOr[ViewAnimationOptions] = js.undefined
   
   /**
     * Configure the setStackRoot animation
     */
-  var setStackRoot: js.UndefOr[ViewAnimationOptions] = js.native
+  var setStackRoot: js.UndefOr[ViewAnimationOptions] = js.undefined
   
   /**
     * Configure what animates when modal is shown
     */
-  var showModal: js.UndefOr[ModalAnimationOptions] = js.native
+  var showModal: js.UndefOr[ModalAnimationOptions] = js.undefined
 }
 object AnimationOptions {
   

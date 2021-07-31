@@ -2,25 +2,23 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about changes in an object&#39;s parents as a result
   * of a move type event.
   */
-@js.native
 trait SchemaMove extends StObject {
   
   /**
     * The added parent(s).
     */
-  var addedParents: js.UndefOr[js.Array[SchemaParent]] = js.native
+  var addedParents: js.UndefOr[js.Array[SchemaParent]] = js.undefined
   
   /**
     * The removed parent(s).
     */
-  var removedParents: js.UndefOr[js.Array[SchemaParent]] = js.native
+  var removedParents: js.UndefOr[js.Array[SchemaParent]] = js.undefined
 }
 object SchemaMove {
   

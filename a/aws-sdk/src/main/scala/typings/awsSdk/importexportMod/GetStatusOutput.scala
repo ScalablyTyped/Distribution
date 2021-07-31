@@ -2,43 +2,41 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStatusOutput extends StObject {
   
-  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.native
+  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.undefined
   
-  var Carrier: js.UndefOr[typings.awsSdk.importexportMod.Carrier] = js.native
+  var Carrier: js.UndefOr[typings.awsSdk.importexportMod.Carrier] = js.undefined
   
-  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.native
+  var CreationDate: js.UndefOr[typings.awsSdk.importexportMod.CreationDate] = js.undefined
   
-  var CurrentManifest: js.UndefOr[typings.awsSdk.importexportMod.CurrentManifest] = js.native
+  var CurrentManifest: js.UndefOr[typings.awsSdk.importexportMod.CurrentManifest] = js.undefined
   
-  var ErrorCount: js.UndefOr[typings.awsSdk.importexportMod.ErrorCount] = js.native
+  var ErrorCount: js.UndefOr[typings.awsSdk.importexportMod.ErrorCount] = js.undefined
   
-  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.undefined
   
-  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.native
+  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.undefined
   
-  var LocationCode: js.UndefOr[typings.awsSdk.importexportMod.LocationCode] = js.native
+  var LocationCode: js.UndefOr[typings.awsSdk.importexportMod.LocationCode] = js.undefined
   
-  var LocationMessage: js.UndefOr[typings.awsSdk.importexportMod.LocationMessage] = js.native
+  var LocationMessage: js.UndefOr[typings.awsSdk.importexportMod.LocationMessage] = js.undefined
   
-  var LogBucket: js.UndefOr[typings.awsSdk.importexportMod.LogBucket] = js.native
+  var LogBucket: js.UndefOr[typings.awsSdk.importexportMod.LogBucket] = js.undefined
   
-  var LogKey: js.UndefOr[typings.awsSdk.importexportMod.LogKey] = js.native
+  var LogKey: js.UndefOr[typings.awsSdk.importexportMod.LogKey] = js.undefined
   
-  var ProgressCode: js.UndefOr[typings.awsSdk.importexportMod.ProgressCode] = js.native
+  var ProgressCode: js.UndefOr[typings.awsSdk.importexportMod.ProgressCode] = js.undefined
   
-  var ProgressMessage: js.UndefOr[typings.awsSdk.importexportMod.ProgressMessage] = js.native
+  var ProgressMessage: js.UndefOr[typings.awsSdk.importexportMod.ProgressMessage] = js.undefined
   
-  var Signature: js.UndefOr[typings.awsSdk.importexportMod.Signature] = js.native
+  var Signature: js.UndefOr[typings.awsSdk.importexportMod.Signature] = js.undefined
   
-  var SignatureFileContents: js.UndefOr[Signature] = js.native
+  var SignatureFileContents: js.UndefOr[Signature] = js.undefined
   
-  var TrackingNumber: js.UndefOr[typings.awsSdk.importexportMod.TrackingNumber] = js.native
+  var TrackingNumber: js.UndefOr[typings.awsSdk.importexportMod.TrackingNumber] = js.undefined
 }
 object GetStatusOutput {
   

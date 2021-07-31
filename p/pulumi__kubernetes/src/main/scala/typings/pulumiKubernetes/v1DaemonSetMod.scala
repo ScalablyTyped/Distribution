@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1DaemonSetMod {
@@ -28,7 +27,7 @@ object v1DaemonSetMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DaemonSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DaemonSetArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -59,6 +58,10 @@ object v1DaemonSetMod {
   /* static members */
   object DaemonSet {
     
+    @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DaemonSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,44 +70,40 @@ object v1DaemonSetMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DaemonSet = js.native
-    @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): DaemonSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DaemonSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DaemonSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): DaemonSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DaemonSet]
     
     /**
       * Returns true if the given object is an instance of DaemonSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/apps/v1/daemonSet", "DaemonSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1/daemonSet.DaemonSet */ Boolean]
   }
   
-  @js.native
   trait DaemonSetArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[appsSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[appsSlashv1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.DaemonSet]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.DaemonSet]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * The desired behavior of this daemon set. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
       */
-    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.apps.v1.DaemonSetSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.apps.v1.DaemonSetSpec]] = js.undefined
   }
   object DaemonSetArgs {
     

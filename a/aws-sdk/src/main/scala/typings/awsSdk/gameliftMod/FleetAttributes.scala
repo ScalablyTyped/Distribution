@@ -2,126 +2,124 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetAttributes extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift build resource that is deployed on instances in this fleet. In a GameLift build ARN, the resource ID matches the BuildId value.
     */
-  var BuildArn: js.UndefOr[typings.awsSdk.gameliftMod.BuildArn] = js.native
+  var BuildArn: js.UndefOr[typings.awsSdk.gameliftMod.BuildArn] = js.undefined
   
   /**
     * A unique identifier for a build.
     */
-  var BuildId: js.UndefOr[typings.awsSdk.gameliftMod.BuildId] = js.native
+  var BuildId: js.UndefOr[typings.awsSdk.gameliftMod.BuildId] = js.undefined
   
   /**
     * Indicates whether a TLS/SSL certificate was generated for the fleet. 
     */
-  var CertificateConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.CertificateConfiguration] = js.native
+  var CertificateConfiguration: js.UndefOr[typings.awsSdk.gameliftMod.CertificateConfiguration] = js.undefined
   
   /**
     * Time stamp indicating when this data object was created. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Human-readable description of the fleet.
     */
-  var Description: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift fleet ARN, the resource ID matches the FleetId value.
     */
-  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.gameliftMod.FleetArn] = js.undefined
   
   /**
     * A unique identifier for a fleet.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
     * Indicates whether the fleet uses on-demand or spot instances. A spot instance in use may be interrupted with a two-minute notification.
     */
-  var FleetType: js.UndefOr[typings.awsSdk.gameliftMod.FleetType] = js.native
+  var FleetType: js.UndefOr[typings.awsSdk.gameliftMod.FleetType] = js.undefined
   
   /**
     * A unique identifier for an AWS IAM role that manages access to your AWS services. With an instance role ARN set, any application that runs on an instance in this fleet can assume the role, including install scripts, server processes, and daemons (background processes). Create a role or look up a role's ARN from the IAM dashboard in the AWS Management Console. Learn more about using on-box credentials for your game servers at  Access external resources from a game server.
     */
-  var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.native
+  var InstanceRoleArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * EC2 instance type indicating the computing resources of each instance in the fleet, including CPU, memory, storage, and networking capacity. See Amazon EC2 Instance Types for detailed descriptions.
     */
-  var InstanceType: js.UndefOr[EC2InstanceType] = js.native
+  var InstanceType: js.UndefOr[EC2InstanceType] = js.undefined
   
   /**
     * Location of default log files. When a server process is shut down, Amazon GameLift captures and stores any log files in this location. These logs are in addition to game session logs; see more on game session logs in the Amazon GameLift Developer Guide. If no default log path for a fleet is specified, Amazon GameLift automatically uploads logs that are stored on each instance at C:\game\logs (for Windows) or /local/game/logs (for Linux). Use the Amazon GameLift console to access stored logs. 
     */
-  var LogPaths: js.UndefOr[StringList] = js.native
+  var LogPaths: js.UndefOr[StringList] = js.undefined
   
   /**
     * Names of metric groups that this fleet is included in. In Amazon CloudWatch, you can view metrics for an individual fleet or aggregated metrics for fleets that are in a fleet metric group. A fleet can be included in only one metric group at a time.
     */
-  var MetricGroups: js.UndefOr[MetricGroupList] = js.native
+  var MetricGroups: js.UndefOr[MetricGroupList] = js.undefined
   
   /**
     * A descriptive label that is associated with a fleet. Fleet names do not need to be unique.
     */
-  var Name: js.UndefOr[NonZeroAndMaxString] = js.native
+  var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * The type of game session protection to set for all new instances started in the fleet.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
     */
-  var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.native
+  var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.undefined
   
   /**
     * Operating system of the fleet's computing resources. A fleet's operating system depends on the OS specified for the build that is deployed on this fleet.
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.gameliftMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.gameliftMod.OperatingSystem] = js.undefined
   
   /**
     * Fleet policy to limit the number of game sessions an individual player can create over a span of time.
     */
-  var ResourceCreationLimitPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ResourceCreationLimitPolicy] = js.native
+  var ResourceCreationLimitPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ResourceCreationLimitPolicy] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) associated with the GameLift script resource that is deployed on instances in this fleet. In a GameLift script ARN, the resource ID matches the ScriptId value.
     */
-  var ScriptArn: js.UndefOr[typings.awsSdk.gameliftMod.ScriptArn] = js.native
+  var ScriptArn: js.UndefOr[typings.awsSdk.gameliftMod.ScriptArn] = js.undefined
   
   /**
     * A unique identifier for a Realtime script.
     */
-  var ScriptId: js.UndefOr[typings.awsSdk.gameliftMod.ScriptId] = js.native
+  var ScriptId: js.UndefOr[typings.awsSdk.gameliftMod.ScriptId] = js.undefined
   
   /**
     * Game server launch parameters specified for fleets created before 2016-08-04 (or AWS SDK v. 0.12.16). Server launch parameters for fleets created after this date are specified in the fleet's RuntimeConfiguration.
     */
-  var ServerLaunchParameters: js.UndefOr[NonZeroAndMaxString] = js.native
+  var ServerLaunchParameters: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Path to a game server executable in the fleet's build, specified for fleets created before 2016-08-04 (or AWS SDK v. 0.12.16). Server launch paths for fleets created after this date are specified in the fleet's RuntimeConfiguration.
     */
-  var ServerLaunchPath: js.UndefOr[NonZeroAndMaxString] = js.native
+  var ServerLaunchPath: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Current status of the fleet. Possible fleet statuses include the following:    NEW -- A new fleet has been defined and desired instances is set to 1.     DOWNLOADING/VALIDATING/BUILDING/ACTIVATING -- Amazon GameLift is setting up the new fleet, creating new instances with the game build or Realtime script and starting server processes.    ACTIVE -- Hosts can now accept game sessions.    ERROR -- An error occurred when downloading, validating, building, or activating the fleet.    DELETING -- Hosts are responding to a delete fleet request.    TERMINATED -- The fleet no longer exists.  
     */
-  var Status: js.UndefOr[FleetStatus] = js.native
+  var Status: js.UndefOr[FleetStatus] = js.undefined
   
   /**
     * List of fleet activity that have been suspended using StopFleetActions. This includes auto-scaling.
     */
-  var StoppedActions: js.UndefOr[FleetActionList] = js.native
+  var StoppedActions: js.UndefOr[FleetActionList] = js.undefined
   
   /**
     * Time stamp indicating when this data object was terminated. Format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var TerminationTime: js.UndefOr[Timestamp] = js.native
+  var TerminationTime: js.UndefOr[Timestamp] = js.undefined
 }
 object FleetAttributes {
   

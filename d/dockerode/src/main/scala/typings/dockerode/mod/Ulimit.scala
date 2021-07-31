@@ -2,17 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ulimit extends StObject {
   
-  var Hard: js.UndefOr[Double] = js.native
+  var Hard: js.UndefOr[Double] = js.undefined
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var Soft: js.UndefOr[Double] = js.native
+  var Soft: js.UndefOr[Double] = js.undefined
 }
 object Ulimit {
   

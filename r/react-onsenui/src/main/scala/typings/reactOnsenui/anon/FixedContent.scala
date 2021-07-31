@@ -3,25 +3,23 @@ package typings.reactOnsenui.anon
 import typings.reactOnsenui.mod.PullHookChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedContent extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var fixedContent: js.UndefOr[Boolean] = js.native
+  var fixedContent: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ PullHookChangeEvent, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ PullHookChangeEvent, Unit]] = js.undefined
   
-  var onLoad: js.UndefOr[js.Function1[/* done */ js.Function0[Unit], Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* done */ js.Function0[Unit], Unit]] = js.undefined
   
-  var onPull: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPull: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var thresholdHeight: js.UndefOr[Double] = js.native
+  var thresholdHeight: js.UndefOr[Double] = js.undefined
 }
 object FixedContent {
   

@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionDetail extends StObject {
   
   /** A change about comments was made. */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
   
   /** An object was created. */
-  var create: js.UndefOr[Create] = js.native
+  var create: js.UndefOr[Create] = js.undefined
   
   /** An object was deleted. */
-  var delete: js.UndefOr[Delete] = js.native
+  var delete: js.UndefOr[Delete] = js.undefined
   
   /** A change happened in data leak prevention status. */
-  var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.native
+  var dlpChange: js.UndefOr[DataLeakPreventionChange] = js.undefined
   
   /** An object was edited. */
-  var edit: js.UndefOr[js.Any] = js.native
+  var edit: js.UndefOr[js.Any] = js.undefined
   
   /** An object was moved. */
-  var move: js.UndefOr[Move] = js.native
+  var move: js.UndefOr[Move] = js.undefined
   
   /** The permission on an object was changed. */
-  var permissionChange: js.UndefOr[PermissionChange] = js.native
+  var permissionChange: js.UndefOr[PermissionChange] = js.undefined
   
   /** An object was referenced in an application outside of Drive/Docs. */
-  var reference: js.UndefOr[ApplicationReference] = js.native
+  var reference: js.UndefOr[ApplicationReference] = js.undefined
   
   /** An object was renamed. */
-  var rename: js.UndefOr[Rename] = js.native
+  var rename: js.UndefOr[Rename] = js.undefined
   
   /** A deleted object was restored. */
-  var restore: js.UndefOr[Restore] = js.native
+  var restore: js.UndefOr[Restore] = js.undefined
   
   /** Settings were changed. */
-  var settingsChange: js.UndefOr[SettingsChange] = js.native
+  var settingsChange: js.UndefOr[SettingsChange] = js.undefined
 }
 object ActionDetail {
   

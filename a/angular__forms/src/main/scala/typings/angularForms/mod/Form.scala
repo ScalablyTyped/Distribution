@@ -2,10 +2,8 @@ package typings.angularForms.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Form extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Form extends StObject {
     *
     * @param dir The control directive to add to the form.
     */
-  def addControl(dir: NgControl): Unit = js.native
+  def addControl(dir: NgControl): Unit
   
   /**
     * @description
@@ -22,7 +20,7 @@ trait Form extends StObject {
     *
     * @param dir: The control group directive to add.
     */
-  def addFormGroup(dir: AbstractFormGroupDirective): Unit = js.native
+  def addFormGroup(dir: AbstractFormGroupDirective): Unit
   
   /**
     * @description
@@ -30,7 +28,7 @@ trait Form extends StObject {
     *
     * @param dir: The control directive.
     */
-  def getControl(dir: NgControl): FormControl = js.native
+  def getControl(dir: NgControl): FormControl
   
   /**
     * @description
@@ -38,7 +36,7 @@ trait Form extends StObject {
     *
     * @param dir: The form group directive from which to get the `FormGroup`.
     */
-  def getFormGroup(dir: AbstractFormGroupDirective): FormGroup = js.native
+  def getFormGroup(dir: AbstractFormGroupDirective): FormGroup
   
   /**
     * @description
@@ -46,7 +44,7 @@ trait Form extends StObject {
     *
     * @param dir: The control directive to remove from the form.
     */
-  def removeControl(dir: NgControl): Unit = js.native
+  def removeControl(dir: NgControl): Unit
   
   /**
     * @description
@@ -54,7 +52,7 @@ trait Form extends StObject {
     *
     * @param dir: The control group directive to remove.
     */
-  def removeFormGroup(dir: AbstractFormGroupDirective): Unit = js.native
+  def removeFormGroup(dir: AbstractFormGroupDirective): Unit
   
   /**
     * @description
@@ -63,7 +61,7 @@ trait Form extends StObject {
     * @param dir: The control directive to update.
     * @param value: The new value for the control.
     */
-  def updateModel(dir: NgControl, value: js.Any): Unit = js.native
+  def updateModel(dir: NgControl, value: js.Any): Unit
 }
 object Form {
   

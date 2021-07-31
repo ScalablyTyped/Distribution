@@ -3,23 +3,21 @@ package typings.gapiDrive.gapi.client.drive
 import typings.gapiDrive.gapiDriveStrings.driveNumbersigngeneratedIds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdsResource extends StObject {
   
-  var ids: js.Array[String] = js.native
+  var ids: js.Array[String]
   
-  var kind: driveNumbersigngeneratedIds = js.native
+  var kind: driveNumbersigngeneratedIds
   
-  var space: String = js.native
+  var space: String
 }
 object IdsResource {
   
   @scala.inline
-  def apply(ids: js.Array[String], kind: driveNumbersigngeneratedIds, space: String): IdsResource = {
-    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], space = space.asInstanceOf[js.Any])
+  def apply(ids: js.Array[String], space: String): IdsResource = {
+    val __obj = js.Dynamic.literal(ids = ids.asInstanceOf[js.Any], kind = "drive#generatedIds", space = space.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdsResource]
   }
   

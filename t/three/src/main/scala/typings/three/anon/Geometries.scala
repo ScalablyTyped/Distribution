@@ -2,19 +2,17 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometries extends StObject {
   
-  var geometries: js.Any = js.native
+  var geometries: js.Any
   
-  var images: js.Any = js.native
+  var images: js.Any
   
-  var materials: js.Any = js.native
+  var materials: js.Any
   
-  var textures: js.Any = js.native
+  var textures: js.Any
 }
 object Geometries {
   

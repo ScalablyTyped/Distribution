@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loginMod {
@@ -74,18 +73,17 @@ object loginMod {
     type Tab = typings.antDesignPro.loginTabMod.default
   }
   
-  @js.native
   trait LoginProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[String] = js.native
+    var defaultActiveKey: js.UndefOr[String] = js.undefined
     
-    var onSubmit: js.UndefOr[js.Function2[/* error */ js.Any, /* values */ js.Any, Unit]] = js.native
+    var onSubmit: js.UndefOr[js.Function2[/* error */ js.Any, /* values */ js.Any, Unit]] = js.undefined
     
-    var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object LoginProps {
     

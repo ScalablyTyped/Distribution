@@ -2,26 +2,24 @@ package typings.apolloReportingProtobuf.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFieldStat extends StObject {
   
   /** FieldStat count */
-  var count: js.UndefOr[Double | Null] = js.native
+  var count: js.UndefOr[Double | Null] = js.undefined
   
   /** FieldStat errorsCount */
-  var errorsCount: js.UndefOr[Double | Null] = js.native
+  var errorsCount: js.UndefOr[Double | Null] = js.undefined
   
   /** FieldStat latencyCount */
-  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.native
+  var latencyCount: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** FieldStat requestsWithErrorsCount */
-  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.native
+  var requestsWithErrorsCount: js.UndefOr[Double | Null] = js.undefined
   
   /** FieldStat returnType */
-  var returnType: js.UndefOr[String | Null] = js.native
+  var returnType: js.UndefOr[String | Null] = js.undefined
 }
 object IFieldStat {
   

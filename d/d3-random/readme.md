@@ -10,9 +10,9 @@ Generate random numbers from various distributions.
 | ------------------ | :-------------: |
 | Full name          | d3-random |
 | Keywords           | d3, d3-module, random, rng |
-| # releases         | 5 |
-| # dependents       | 39 |
-| # downloads        | 31806348 |
+| # releases         | 7 |
+| # dependents       | 44 |
+| # downloads        | 37814118 |
 | # stars            | 1 |
 
 ## Links

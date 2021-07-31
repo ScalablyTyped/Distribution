@@ -3,7 +3,6 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * listing&quot; or &quot;job requisition&quot;). A job belongs to a Company,
   * which is the hiring entity responsible for the job.
   */
-@js.native
 trait SchemaJob extends StObject {
   
   /**
@@ -29,29 +27,29 @@ trait SchemaJob extends StObject {
     * other in the same job for better search experience.  The maximum number
     * of allowed characters is 500.
     */
-  var addresses: js.UndefOr[js.Array[String]] = js.native
+  var addresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. At least one field within ApplicationInfo must be specified.
     * Job application information.
     */
-  var applicationInfo: js.UndefOr[SchemaApplicationInfo] = js.native
+  var applicationInfo: js.UndefOr[SchemaApplicationInfo] = js.undefined
   
   /**
     * Output only. Display name of the company listing the job.
     */
-  var companyDisplayName: js.UndefOr[String] = js.native
+  var companyDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The resource name of the company listing the job, such as
     * &quot;projects/api-test-project/companies/foo&quot;.
     */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Job compensation information.
     */
-  var compensationInfo: js.UndefOr[SchemaCompensationInfo] = js.native
+  var compensationInfo: js.UndefOr[SchemaCompensationInfo] = js.undefined
   
   /**
     * Optional.  A map of fields to hold both filterable and non-filterable
@@ -64,24 +62,24 @@ trait SchemaJob extends StObject {
     * `string_values`, the maximum total size of `string_values` across all
     * keys is 50KB.
     */
-  var customAttributes: js.UndefOr[StringDictionary[SchemaCustomAttribute]] = js.native
+  var customAttributes: js.UndefOr[StringDictionary[SchemaCustomAttribute]] = js.undefined
   
   /**
     * Optional.  The desired education degrees for the job, such as Bachelors,
     * Masters.
     */
-  var degreeTypes: js.UndefOr[js.Array[String]] = js.native
+  var degreeTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  The department or functional area within the company with the
     * open position.  The maximum number of allowed characters is 255.
     */
-  var department: js.UndefOr[String] = js.native
+  var department: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Derived details about the job posting.
     */
-  var derivedInfo: js.UndefOr[SchemaJobDerivedInfo] = js.native
+  var derivedInfo: js.UndefOr[SchemaJobDerivedInfo] = js.undefined
   
   /**
     * Required.  The description of the job, which typically includes a
@@ -92,44 +90,44 @@ trait SchemaJob extends StObject {
     * also accepts bold, italic, ordered list, and unordered list markup tags.
     * The maximum number of allowed characters is 100,000.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The employment type(s) of a job, for example, full time or
     * part time.
     */
-  var employmentTypes: js.UndefOr[js.Array[String]] = js.native
+  var employmentTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  A description of bonus, commission, and other compensation
     * incentives associated with the job not including salary or pay.  The
     * maximum number of allowed characters is 10,000.
     */
-  var incentives: js.UndefOr[String] = js.native
+  var incentives: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The benefits included with the job.
     */
-  var jobBenefits: js.UndefOr[js.Array[String]] = js.native
+  var jobBenefits: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  The end timestamp of the job. Typically this field is used for
     * contracting engagements. Invalid timestamps are ignored.
     */
-  var jobEndTime: js.UndefOr[String] = js.native
+  var jobEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The experience level associated with the job, such as
     * &quot;Entry Level&quot;.
     */
-  var jobLevel: js.UndefOr[String] = js.native
+  var jobLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The start timestamp of the job in UTC time zone. Typically
     * this field is used for contracting engagements. Invalid timestamps are
     * ignored.
     */
-  var jobStartTime: js.UndefOr[String] = js.native
+  var jobStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The language of the posting. This field is distinct from any
@@ -141,7 +139,7 @@ trait SchemaJob extends StObject {
     * unspecified and Job.description is present, detected language code based
     * on Job.description is assigned, otherwise defaults to &#39;en_US&#39;.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required during job update.  The resource name for the job. This is
@@ -151,12 +149,12 @@ trait SchemaJob extends StObject {
     * job queries and API calls is preferred over the use of requisition_id
     * since this value is unique.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The timestamp when this job posting was created.
     */
-  var postingCreateTime: js.UndefOr[String] = js.native
+  var postingCreateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional but strongly recommended for the best service experience.  The
@@ -184,14 +182,14 @@ trait SchemaJob extends StObject {
     * updated, the job posting expires after 30 days from the job&#39;s last
     * update time. Otherwise the expiration date isn&#39;t updated.
     */
-  var postingExpireTime: js.UndefOr[String] = js.native
+  var postingExpireTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The timestamp this job posting was most recently published.
     * The default value is the time the request arrives at the server. Invalid
     * timestamps are ignored.
     */
-  var postingPublishTime: js.UndefOr[String] = js.native
+  var postingPublishTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The job PostingRegion (for example, state, country) throughout
@@ -202,17 +200,17 @@ trait SchemaJob extends StObject {
     * Job.addresses to the same location level as this field is strongly
     * recommended.
     */
-  var postingRegion: js.UndefOr[String] = js.native
+  var postingRegion: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The timestamp when this job posting was last updated.
     */
-  var postingUpdateTime: js.UndefOr[String] = js.native
+  var postingUpdateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Options for job processing.
     */
-  var processingOptions: js.UndefOr[SchemaProcessingOptions] = js.native
+  var processingOptions: js.UndefOr[SchemaProcessingOptions] = js.undefined
   
   /**
     * Optional.  A promotion value of the job, as determined by the client. The
@@ -222,7 +220,7 @@ trait SchemaJob extends StObject {
     * jobs with a promotionValue &gt;0 are returned in a FEATURED_JOB_SEARCH.
     * Default value is 0, and negative values are treated as 0.
     */
-  var promotionValue: js.UndefOr[Double] = js.native
+  var promotionValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.  A description of the qualifications required to perform the
@@ -231,7 +229,7 @@ trait SchemaJob extends StObject {
     * input, and also accepts bold, italic, ordered list, and unordered list
     * markup tags.  The maximum number of allowed characters is 10,000.
     */
-  var qualifications: js.UndefOr[String] = js.native
+  var qualifications: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The requisition ID, also referred to as the posting ID,
@@ -241,7 +239,7 @@ trait SchemaJob extends StObject {
     * [company_name], language_code and requisition_id.  The maximum number of
     * allowed characters is 255.
     */
-  var requisitionId: js.UndefOr[String] = js.native
+  var requisitionId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  A description of job responsibilities. The use of this field
@@ -250,19 +248,19 @@ trait SchemaJob extends StObject {
     * bold, italic, ordered list, and unordered list markup tags.  The maximum
     * number of allowed characters is 10,000.
     */
-  var responsibilities: js.UndefOr[String] = js.native
+  var responsibilities: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The title of the job, such as &quot;Software Engineer&quot;
     * The maximum number of allowed characters is 500.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The visibility of the job.  Defaults to
     * Visibility.ACCOUNT_ONLY if not specified.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaJob {
   

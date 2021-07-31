@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMemberSessionRequest extends StObject {
   
   /**
     * The unique identifier for the Amazon Macie resource or account that the request applies to.
     */
-  var id: string = js.native
+  var id: string
   
   /**
     * Specifies the new status for the account. Valid values are: ENABLED, resume all Amazon Macie activities for the account; and, PAUSED, suspend all Macie activities for the account.
     */
-  var status: MacieStatus = js.native
+  var status: MacieStatus
 }
 object UpdateMemberSessionRequest {
   

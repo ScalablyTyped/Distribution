@@ -1,10 +1,14 @@
 package typings.sugar
 
 import org.scalablytyped.runtime.Shortcut
+import typings.std.ArrayLike
+import typings.std.RegExpExecArray
+import typings.sugar.sugarjs.Array.Chainable
+import typings.sugar.sugarjs.Date.DateCreateOptions
 import typings.sugar.sugarjs.Object.ChainableBase
+import typings.sugar.sugarjs.SugarDefaultChainable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,11 +20,97 @@ object global {
     val ^ : typings.sugar.sugarjs.Sugar = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.Array")
+    @js.native
+    class Array[T] ()
+      extends StObject
+         with Chainable[T, typings.sugar.Array[T]] {
+      def this(obj: Double) = this()
+      def this(obj: ArrayLike[T]) = this()
+      def this(obj: Double, clone: Boolean) = this()
+      def this(obj: Unit, clone: Boolean) = this()
+      def this(obj: ArrayLike[T], clone: Boolean) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.Date")
+    @js.native
+    class Date ()
+      extends StObject
+         with typings.sugar.sugarjs.Date.Chainable[typings.sugar.Date] {
+      def this(d: java.lang.String) = this()
+      def this(d: Double) = this()
+      def this(d: typings.sugar.Date) = this()
+      def this(d: java.lang.String, options: DateCreateOptions) = this()
+      def this(d: Double, options: DateCreateOptions) = this()
+      def this(d: Unit, options: DateCreateOptions) = this()
+      def this(d: typings.sugar.Date, options: DateCreateOptions) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.Function")
+    @js.native
+    class Function ()
+      extends StObject
+         with typings.sugar.sugarjs.Function.Chainable[typings.sugar.Function] {
+      def this(raw: typings.sugar.Function) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.Number")
+    @js.native
+    class Number ()
+      extends StObject
+         with typings.sugar.sugarjs.Number.Chainable[Double] {
+      def this(raw: Double) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Sugar.Object")
     @js.native
     class Object ()
-      extends ChainableBase[js.Object] {
+      extends StObject
+         with ChainableBase[js.Object] {
       def this(raw: js.Object) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.RegExp")
+    @js.native
+    class RegExp ()
+      extends StObject
+         with typings.sugar.sugarjs.RegExp.Chainable[typings.sugar.RegExp] {
+      def this(raw: typings.sugar.RegExp) = this()
+      
+      /* CompleteClass */
+      override def addFlags(flags: java.lang.String): SugarDefaultChainable[typings.sugar.RegExp] = js.native
+      
+      /* CompleteClass */
+      override def exec(string: java.lang.String): SugarDefaultChainable[RegExpExecArray | Null] = js.native
+      
+      /* CompleteClass */
+      override def getFlags(): SugarDefaultChainable[java.lang.String] = js.native
+      
+      /* CompleteClass */
+      var raw: typings.sugar.RegExp = js.native
+      
+      /* CompleteClass */
+      override def removeFlags(flags: java.lang.String): SugarDefaultChainable[typings.sugar.RegExp] = js.native
+      
+      /* CompleteClass */
+      override def setFlags(flags: java.lang.String): SugarDefaultChainable[typings.sugar.RegExp] = js.native
+      
+      /* CompleteClass */
+      override def test(string: java.lang.String): SugarDefaultChainable[Boolean] = js.native
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSGlobal("Sugar.String")
+    @js.native
+    class String ()
+      extends StObject
+         with typings.sugar.sugarjs.String.Chainable[java.lang.String] {
+      def this(raw: java.lang.String) = this()
     }
     
     type _To = typings.sugar.sugarjs.Sugar

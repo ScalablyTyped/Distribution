@@ -4,7 +4,6 @@ import typings.std.Blob
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,8 +33,8 @@ trait SoundFile extends StObject {
     *   @return id ID of this cue, useful for
     *   removeCue(id)
     */
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _]): Double = js.native
-  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, _], value: js.Object): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any]): Double = js.native
+  def addCue(time: Double, callback: js.Function1[/* repeated */ js.Any, js.Any], value: js.Object): Double = js.native
   
   /**
     *   Return the number of channels in a sound file. For
@@ -187,76 +186,72 @@ trait SoundFile extends StObject {
     *   @return Returns a p5.SoundFile
     */
   def loadSound(path: String): SoundFile = js.native
+  def loadSound(path: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
   def loadSound(
     path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
-  ): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
     path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
-  ): SoundFile = js.native
-  def loadSound(path: String, successCallback: js.Function1[/* repeated */ js.Any, _]): SoundFile = js.native
-  def loadSound(
-    path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.UndefOr[scala.Nothing],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
     path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
+  ): SoundFile = js.native
+  def loadSound(path: String, successCallback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
+  def loadSound(
+    path: String,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
     path: String,
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
+    successCallback: Unit,
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
-  def loadSound(path: js.Array[_]): SoundFile = js.native
+  def loadSound(path: js.Array[js.Any]): SoundFile = js.native
+  def loadSound(path: js.Array[js.Any], successCallback: js.Function1[/* repeated */ js.Any, js.Any]): SoundFile = js.native
   def loadSound(
-    path: js.Array[_],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
-  ): SoundFile = js.native
-  def loadSound(
-    path: js.Array[_],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    path: js.Array[js.Any],
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
-    path: js.Array[_],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* repeated */ js.Any, _],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
-  ): SoundFile = js.native
-  def loadSound(path: js.Array[_], successCallback: js.Function1[/* repeated */ js.Any, _]): SoundFile = js.native
-  def loadSound(
-    path: js.Array[_],
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.UndefOr[scala.Nothing],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
+    path: js.Array[js.Any],
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
-    path: js.Array[_],
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    path: js.Array[js.Any],
+    successCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   def loadSound(
-    path: js.Array[_],
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _],
-    whileLoading: js.Function1[/* repeated */ js.Any, _]
+    path: js.Array[js.Any],
+    successCallback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: js.Array[js.Any],
+    successCallback: Unit,
+    errorCallback: js.Function1[/* repeated */ js.Any, js.Any],
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
+  ): SoundFile = js.native
+  def loadSound(
+    path: js.Array[js.Any],
+    successCallback: Unit,
+    errorCallback: Unit,
+    whileLoading: js.Function1[/* repeated */ js.Any, js.Any]
   ): SoundFile = js.native
   
   /**
@@ -273,147 +268,37 @@ trait SoundFile extends StObject {
     *   seconds
     */
   def loop(): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: js.UndefOr[scala.Nothing], rate: js.UndefOr[scala.Nothing], amp: Double): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueLoopStart: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: js.UndefOr[scala.Nothing], rate: Double): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double
-  ): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: js.UndefOr[scala.Nothing], rate: Double, amp: Double): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: Double,
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: js.UndefOr[scala.Nothing], rate: Double, amp: Double, cueLoopStart: Double): Unit = js.native
-  def loop(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: Double,
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
   def loop(startTime: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double
-  ): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: Double, rate: js.UndefOr[scala.Nothing], amp: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: Double, rate: js.UndefOr[scala.Nothing], amp: Double, cueLoopStart: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
   def loop(startTime: Double, rate: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def loop(startTime: Double, rate: Double, amp: js.UndefOr[scala.Nothing], cueLoopStart: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueLoopStart: Double,
-    duration: Double
-  ): Unit = js.native
   def loop(startTime: Double, rate: Double, amp: Double): Unit = js.native
-  def loop(
-    startTime: Double,
-    rate: Double,
-    amp: Double,
-    cueLoopStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
   def loop(startTime: Double, rate: Double, amp: Double, cueLoopStart: Double): Unit = js.native
   def loop(startTime: Double, rate: Double, amp: Double, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Double, amp: Double, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Double, amp: Unit, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Double, rate: Double, amp: Unit, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Double, amp: Unit, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Double, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Double, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Double, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Unit, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Unit, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Double, rate: Unit, amp: Unit, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Double, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Double, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Double, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Unit, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Unit, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Double, amp: Unit, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Double, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Double, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Double, cueLoopStart: Unit, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Unit, cueLoopStart: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Unit, cueLoopStart: Double, duration: Double): Unit = js.native
+  def loop(startTime: Unit, rate: Unit, amp: Unit, cueLoopStart: Unit, duration: Double): Unit = js.native
   
   /**
     *   Schedule an event to be called when the soundfile
@@ -424,7 +309,7 @@ trait SoundFile extends StObject {
     *   @param callback function to call when the
     *   soundfile has ended.
     */
-  def onended(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def onended(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /**
     *   Set the stereo panning of a p5.sound object to a
@@ -435,9 +320,9 @@ trait SoundFile extends StObject {
     *   seconds from now
     */
   def pan(): Unit = js.native
-  def pan(panValue: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def pan(panValue: Double): Unit = js.native
   def pan(panValue: Double, timeFromNow: Double): Unit = js.native
+  def pan(panValue: Unit, timeFromNow: Double): Unit = js.native
   
   /**
     *   Pauses a file that is currently playing. If the
@@ -465,147 +350,37 @@ trait SoundFile extends StObject {
     *   in seconds
     */
   def play(): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: js.UndefOr[scala.Nothing], rate: js.UndefOr[scala.Nothing], amp: Double): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueStart: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: js.UndefOr[scala.Nothing], rate: Double): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double
-  ): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: js.UndefOr[scala.Nothing], rate: Double, amp: Double): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: Double,
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: js.UndefOr[scala.Nothing], rate: Double, amp: Double, cueStart: Double): Unit = js.native
-  def play(
-    startTime: js.UndefOr[scala.Nothing],
-    rate: Double,
-    amp: Double,
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
   def play(startTime: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double
-  ): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: Double, rate: js.UndefOr[scala.Nothing], amp: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: Double, rate: js.UndefOr[scala.Nothing], amp: Double, cueStart: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: js.UndefOr[scala.Nothing],
-    amp: Double,
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
   def play(startTime: Double, rate: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
-  def play(startTime: Double, rate: Double, amp: js.UndefOr[scala.Nothing], cueStart: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: Double,
-    amp: js.UndefOr[scala.Nothing],
-    cueStart: Double,
-    duration: Double
-  ): Unit = js.native
   def play(startTime: Double, rate: Double, amp: Double): Unit = js.native
-  def play(
-    startTime: Double,
-    rate: Double,
-    amp: Double,
-    cueStart: js.UndefOr[scala.Nothing],
-    duration: Double
-  ): Unit = js.native
   def play(startTime: Double, rate: Double, amp: Double, cueStart: Double): Unit = js.native
   def play(startTime: Double, rate: Double, amp: Double, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Double, amp: Double, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Double, amp: Unit, cueStart: Double): Unit = js.native
+  def play(startTime: Double, rate: Double, amp: Unit, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Double, amp: Unit, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Double, cueStart: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Double, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Double, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Unit, cueStart: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Unit, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Double, rate: Unit, amp: Unit, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Double, cueStart: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Double, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Double, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Unit, cueStart: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Unit, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Double, amp: Unit, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Double, cueStart: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Double, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Double, cueStart: Unit, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Unit, cueStart: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Unit, cueStart: Double, duration: Double): Unit = js.native
+  def play(startTime: Unit, rate: Unit, amp: Unit, cueStart: Unit, duration: Double): Unit = js.native
   
   /**
     *   p5.SoundFile has two play modes: restart and
@@ -644,38 +419,34 @@ trait SoundFile extends StObject {
     *   to 200
     *   @return Array of timestamped peaks
     */
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, _]): js.Array[_] = js.native
+  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[js.Any] = js.native
+  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Double): js.Array[js.Any] = js.native
+  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Double, minThreshold: Double): js.Array[js.Any] = js.native
   def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, _],
-    initThreshold: js.UndefOr[scala.Nothing],
-    minThreshold: js.UndefOr[scala.Nothing],
-    minPeaks: Double
-  ): js.Array[_] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, _],
-    initThreshold: js.UndefOr[scala.Nothing],
-    minThreshold: Double
-  ): js.Array[_] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, _],
-    initThreshold: js.UndefOr[scala.Nothing],
-    minThreshold: Double,
-    minPeaks: Double
-  ): js.Array[_] = js.native
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, _], initThreshold: Double): js.Array[_] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, _],
-    initThreshold: Double,
-    minThreshold: js.UndefOr[scala.Nothing],
-    minPeaks: Double
-  ): js.Array[_] = js.native
-  def processPeaks(callback: js.Function1[/* repeated */ js.Any, _], initThreshold: Double, minThreshold: Double): js.Array[_] = js.native
-  def processPeaks(
-    callback: js.Function1[/* repeated */ js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     initThreshold: Double,
     minThreshold: Double,
     minPeaks: Double
-  ): js.Array[_] = js.native
+  ): js.Array[js.Any] = js.native
+  def processPeaks(
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    initThreshold: Double,
+    minThreshold: Unit,
+    minPeaks: Double
+  ): js.Array[js.Any] = js.native
+  def processPeaks(callback: js.Function1[/* repeated */ js.Any, js.Any], initThreshold: Unit, minThreshold: Double): js.Array[js.Any] = js.native
+  def processPeaks(
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    initThreshold: Unit,
+    minThreshold: Double,
+    minPeaks: Double
+  ): js.Array[js.Any] = js.native
+  def processPeaks(
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
+    initThreshold: Unit,
+    minThreshold: Unit,
+    minPeaks: Double
+  ): js.Array[js.Any] = js.native
   
   /**
     *   Set the playback rate of a sound file. Will change
@@ -723,7 +494,7 @@ trait SoundFile extends StObject {
     *   Arrays will create a stereo source. 1 will create
     *   a mono source.
     */
-  def setBuffer(buf: js.Array[_]): Unit = js.native
+  def setBuffer(buf: js.Array[js.Any]): Unit = js.native
   
   /**
     *   Set a p5.SoundFile's looping flag to true or
@@ -740,12 +511,12 @@ trait SoundFile extends StObject {
     *   @param path path to audio file
     *   @param callback Callback
     */
-  def setPath(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def setPath(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   def setVolume(volume: js.Object): Unit = js.native
-  def setVolume(volume: js.Object, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def setVolume(volume: js.Object, rampTime: Double): Unit = js.native
   def setVolume(volume: js.Object, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def setVolume(volume: js.Object, rampTime: Unit, timeFromNow: Double): Unit = js.native
   /**
     *   Multiply the output volume (amplitude) of a sound
     *   file between 0.0 (silence) and 1.0 (full volume).
@@ -763,9 +534,9 @@ trait SoundFile extends StObject {
     *   at t seconds in the future
     */
   def setVolume(volume: Double): Unit = js.native
-  def setVolume(volume: Double, rampTime: js.UndefOr[scala.Nothing], timeFromNow: Double): Unit = js.native
   def setVolume(volume: Double, rampTime: Double): Unit = js.native
   def setVolume(volume: Double, rampTime: Double, timeFromNow: Double): Unit = js.native
+  def setVolume(volume: Double, rampTime: Unit, timeFromNow: Double): Unit = js.native
   
   /**
     *   Stop soundfile playback.

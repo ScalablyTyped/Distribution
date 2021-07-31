@@ -2,35 +2,35 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BitmapTextOptions extends DrawableOptions {
+trait BitmapTextOptions
+  extends StObject
+     with DrawableOptions {
   
-  var charHeight: Double = js.native
+  var charHeight: Double
   
-  var charWidth: Double = js.native
+  var charWidth: Double
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var imageId: js.UndefOr[String] = js.native
+  var imageId: js.UndefOr[String] = js.undefined
   
-  var imageSrc: js.UndefOr[String] = js.native
+  var imageSrc: js.UndefOr[String] = js.undefined
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var scrollOffsetX: js.UndefOr[Double] = js.native
+  var scrollOffsetX: js.UndefOr[Double] = js.undefined
   
-  var scrollOffsetY: js.UndefOr[Double] = js.native
+  var scrollOffsetY: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var startY: Double = js.native
+  var startY: Double
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BitmapTextOptions {
   

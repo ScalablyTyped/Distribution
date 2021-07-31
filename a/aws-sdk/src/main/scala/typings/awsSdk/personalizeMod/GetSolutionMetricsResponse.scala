@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSolutionMetricsResponse extends StObject {
   
   /**
     * The metrics for the solution version.
     */
-  var metrics: js.UndefOr[Metrics] = js.native
+  var metrics: js.UndefOr[Metrics] = js.undefined
   
   /**
     * The same solution version ARN as specified in the request.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
 }
 object GetSolutionMetricsResponse {
   

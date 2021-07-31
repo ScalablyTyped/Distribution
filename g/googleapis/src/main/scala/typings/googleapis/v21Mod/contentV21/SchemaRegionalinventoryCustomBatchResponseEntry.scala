@@ -2,35 +2,33 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch regional inventory response.
   */
-@js.native
 trait SchemaRegionalinventoryCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#regionalinventoryCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Price and availability of the product.
     */
-  var regionalInventory: js.UndefOr[SchemaRegionalInventory] = js.native
+  var regionalInventory: js.UndefOr[SchemaRegionalInventory] = js.undefined
 }
 object SchemaRegionalinventoryCustomBatchResponseEntry {
   

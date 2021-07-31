@@ -4,15 +4,13 @@ import typings.angularCompiler.aotCompilerMod.NgAnalyzedFileWithInjectables
 import typings.angularCompiler.aotCompilerMod.NgAnalyzedModules
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzedInjectables extends StObject {
   
-  var analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables] = js.native
+  var analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables]
   
-  var analyzedModules: NgAnalyzedModules = js.native
+  var analyzedModules: NgAnalyzedModules
 }
 object AnalyzedInjectables {
   

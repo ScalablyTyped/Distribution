@@ -2,17 +2,15 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object core {
   
-  @js.native
   trait Locale extends StObject {
     
-    var months: java.lang.String = js.native
+    var months: java.lang.String
     
-    var weekdays: java.lang.String = js.native
+    var weekdays: java.lang.String
   }
   object Locale {
     

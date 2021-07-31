@@ -2,7 +2,6 @@ package typings.router5
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -15,22 +14,21 @@ object constantsMod {
   @js.native
   val errorCodes: ErrorCodes_ = js.native
   
-  @js.native
   trait Constants_ extends StObject {
     
-    var ROUTER_START: String = js.native
+    var ROUTER_START: String
     
-    var ROUTER_STOP: String = js.native
+    var ROUTER_STOP: String
     
-    var TRANSITION_CANCEL: String = js.native
+    var TRANSITION_CANCEL: String
     
-    var TRANSITION_ERROR: String = js.native
+    var TRANSITION_ERROR: String
     
-    var TRANSITION_START: String = js.native
+    var TRANSITION_START: String
     
-    var TRANSITION_SUCCESS: String = js.native
+    var TRANSITION_SUCCESS: String
     
-    var UNKNOWN_ROUTE: String = js.native
+    var UNKNOWN_ROUTE: String
   }
   object Constants_ {
     
@@ -74,26 +72,25 @@ object constantsMod {
     }
   }
   
-  @js.native
   trait ErrorCodes_ extends StObject {
     
-    var CANNOT_ACTIVATE: String = js.native
+    var CANNOT_ACTIVATE: String
     
-    var CANNOT_DEACTIVATE: String = js.native
+    var CANNOT_DEACTIVATE: String
     
-    var NO_START_PATH_OR_STATE: String = js.native
+    var NO_START_PATH_OR_STATE: String
     
-    var ROUTER_ALREADY_STARTED: String = js.native
+    var ROUTER_ALREADY_STARTED: String
     
-    var ROUTER_NOT_STARTED: String = js.native
+    var ROUTER_NOT_STARTED: String
     
-    var ROUTE_NOT_FOUND: String = js.native
+    var ROUTE_NOT_FOUND: String
     
-    var SAME_STATES: String = js.native
+    var SAME_STATES: String
     
-    var TRANSITION_CANCELLED: String = js.native
+    var TRANSITION_CANCELLED: String
     
-    var TRANSITION_ERR: String = js.native
+    var TRANSITION_ERR: String
   }
   object ErrorCodes_ {
     

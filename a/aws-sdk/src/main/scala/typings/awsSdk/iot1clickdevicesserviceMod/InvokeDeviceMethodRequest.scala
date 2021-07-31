@@ -2,26 +2,24 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvokeDeviceMethodRequest extends StObject {
   
   /**
     * The unique identifier of the device.
     */
-  var DeviceId: string = js.native
+  var DeviceId: string
   
   /**
     * The device method to invoke.
     */
-  var DeviceMethod: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.DeviceMethod] = js.native
+  var DeviceMethod: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.DeviceMethod] = js.undefined
   
   /**
     * A JSON encoded string containing the device method request parameters.
     */
-  var DeviceMethodParameters: js.UndefOr[string] = js.native
+  var DeviceMethodParameters: js.UndefOr[string] = js.undefined
 }
 object InvokeDeviceMethodRequest {
   

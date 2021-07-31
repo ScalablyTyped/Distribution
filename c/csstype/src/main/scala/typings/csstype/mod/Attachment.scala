@@ -2,7 +2,6 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.scroll
 */
 trait Attachment
-  extends _FinalBgLayer[js.Any]
+  extends StObject
      with _BackgroundAttachmentProperty
+     with _FinalBgLayer[js.Any]
      with _WebkitMaskAttachmentProperty
 object Attachment {
   

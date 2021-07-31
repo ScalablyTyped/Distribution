@@ -4,16 +4,18 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemAddonMod {
   
   object ListItemAddon {
     
+    @scala.inline
+    def apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list/types/ListItemAddon", "ListItemAddon")
     @js.native
-    def apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -83,49 +85,48 @@ object listItemAddonMod {
   }
   
   /* Inlined parent std.Omit<@react-md/icon.@react-md/icon.TextIconSpacingProps, 'icon' | 'iconAfter' | 'forceIconWrap'> */
-  @js.native
   trait ListItemAddonProps extends StObject {
     
-    var aboveClassName: js.UndefOr[String] = js.native
+    var aboveClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The addon that should be rendered.
       */
-    var addon: ReactNode | ReactElement = js.native
+    var addon: ReactNode | ReactElement
     
     /**
       * Boolean if the addon should appear after the `children`.
       */
-    var addonAfter: js.UndefOr[Boolean] = js.native
+    var addonAfter: js.UndefOr[Boolean] = js.undefined
     
-    var afterClassName: js.UndefOr[String] = js.native
+    var afterClassName: js.UndefOr[String] = js.undefined
     
-    var beforeClassName: js.UndefOr[String] = js.native
+    var beforeClassName: js.UndefOr[String] = js.undefined
     
-    var belowClassName: js.UndefOr[String] = js.native
+    var belowClassName: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the addon should be forced into a `<span>` with the class names
       * applied instead of attempting to clone into the provided icon. If the
       * `type` is set to `"media"` or `"large-media"`, this will default to `true`.
       */
-    var forceAddonWrap: js.UndefOr[Boolean] = js.native
+    var forceAddonWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The vertical position to use for the addon.
       */
-    var position: js.UndefOr[ListItemAddonPosition] = js.native
+    var position: js.UndefOr[ListItemAddonPosition] = js.undefined
     
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The addon type that is used to adjust the spacing styles.
       */
-    var `type`: js.UndefOr[ListItemAddonType] = js.native
+    var `type`: js.UndefOr[ListItemAddonType] = js.undefined
   }
   object ListItemAddonProps {
     

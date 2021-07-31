@@ -12,19 +12,17 @@ import typings.soap.anon.Text
 import typings.soap.httpMod.HttpClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type IHeaders = StringDictionary[js.Any]
   
-  @js.native
   trait IOneWayOptions extends StObject {
     
-    var emptyBody: js.UndefOr[Boolean] = js.native
+    var emptyBody: js.UndefOr[Boolean] = js.undefined
     
-    var responseCode: js.UndefOr[Double] = js.native
+    var responseCode: js.UndefOr[Double] = js.undefined
   }
   object IOneWayOptions {
     
@@ -51,32 +49,33 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IOptions extends IWsdlBaseOptions {
+  trait IOptions
+    extends StObject
+       with IWsdlBaseOptions {
     
-    var customDeserializer: js.UndefOr[js.Any] = js.native
+    var customDeserializer: js.UndefOr[js.Any] = js.undefined
     
     /** don't cache WSDL files, request them every time. */
-    var disableCache: js.UndefOr[Boolean] = js.native
+    var disableCache: js.UndefOr[Boolean] = js.undefined
     
     /** override the SOAP service's host specified in the .wsdl file. */
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
     /** set specific key instead of <pre><soap:Body></soap:Body></pre>. */
-    var envelopeKey: js.UndefOr[String] = js.native
+    var envelopeKey: js.UndefOr[String] = js.undefined
     
     /** provide your own http client that implements request(rurl, data, callback, exheaders, exoptions) */
-    var httpClient: js.UndefOr[HttpClient] = js.native
+    var httpClient: js.UndefOr[HttpClient] = js.undefined
     
     /** if your wsdl operations contains names with Async suffix, you will need to override the default promise suffix to a custom one, default: Async. */
-    var overridePromiseSuffix: js.UndefOr[String] = js.native
+    var overridePromiseSuffix: js.UndefOr[String] = js.undefined
     
     /** override the request module. */
-    var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.native
+    var request: js.UndefOr[RequestAPI[Request, CoreOptions, RequiredUriUrl]] = js.undefined
     
-    var returnSaxStream: js.UndefOr[Boolean] = js.native
+    var returnSaxStream: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[Boolean] = js.native
+    var stream: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     
@@ -145,16 +144,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ISecurity extends StObject {
     
-    var addHeaders: js.UndefOr[js.Function1[/* headers */ IHeaders, Unit]] = js.native
+    var addHeaders: js.UndefOr[js.Function1[/* headers */ IHeaders, Unit]] = js.undefined
     
-    var addOptions: js.UndefOr[js.Function1[/* options */ js.Any, Unit]] = js.native
+    var addOptions: js.UndefOr[js.Function1[/* options */ js.Any, Unit]] = js.undefined
     
-    var postProcess: js.UndefOr[js.Function2[/* xml */ js.Any, /* envelopeKey */ js.Any, String]] = js.native
+    var postProcess: js.UndefOr[js.Function2[/* xml */ js.Any, /* envelopeKey */ js.Any, String]] = js.undefined
     
-    var toXML: js.UndefOr[js.Function0[String]] = js.native
+    var toXML: js.UndefOr[js.Function0[String]] = js.undefined
   }
   object ISecurity {
     
@@ -193,26 +191,27 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IServerOptions extends IWsdlBaseOptions {
+  trait IServerOptions
+    extends StObject
+       with IWsdlBaseOptions {
     
-    var callback: js.UndefOr[js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]] = js.undefined
     
     /** A boolean for controlling chunked transfer encoding in response. Some client (such as Windows 10's MDM enrollment SOAP client) is sensitive to transfer-encoding mode and can't accept chunked response. This option let user disable chunked transfer encoding for such a client. Default to true for backward compatibility. */
-    var enableChunkedEncoding: js.UndefOr[Boolean] = js.native
+    var enableChunkedEncoding: js.UndefOr[Boolean] = js.undefined
     
-    var oneWay: js.UndefOr[IOneWayOptions] = js.native
+    var oneWay: js.UndefOr[IOneWayOptions] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var services: IServices = js.native
+    var services: IServices
     
     /** suppress the full stack trace for error messages. */
-    var suppressStack: js.UndefOr[Boolean] = js.native
+    var suppressStack: js.UndefOr[Boolean] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
-    var xml: js.UndefOr[String] = js.native
+    var xml: js.UndefOr[String] = js.undefined
   }
   object IServerOptions {
     
@@ -295,16 +294,17 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ISoapFault11 extends ISoapFault {
+  trait ISoapFault11
+    extends StObject
+       with ISoapFault {
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var faultcode: Double | String = js.native
+    var faultcode: Double | String
     
-    var faultstring: String = js.native
+    var faultstring: String
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object ISoapFault11 {
     
@@ -337,14 +337,15 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ISoapFault12 extends ISoapFault {
+  trait ISoapFault12
+    extends StObject
+       with ISoapFault {
     
-    var Code: Subcode = js.native
+    var Code: Subcode
     
-    var Reason: Text = js.native
+    var Reason: Text
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object ISoapFault12 {
     
@@ -371,10 +372,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ISoapFaultError extends StObject {
     
-    var Fault: ISoapFault = js.native
+    var Fault: ISoapFault
   }
   object ISoapFaultError {
     
@@ -402,50 +402,49 @@ object typesMod {
     js.Any
   ]
   
-  @js.native
   trait IWsdlBaseOptions extends StObject {
     
-    var attributesKey: js.UndefOr[String] = js.native
+    var attributesKey: js.UndefOr[String] = js.undefined
     
     /** escape special XML characters in SOAP message (e.g. &, >, < etc), default: true. */
-    var escapeXML: js.UndefOr[Boolean] = js.native
+    var escapeXML: js.UndefOr[Boolean] = js.undefined
     
     /** set proper headers for SOAP v1.2. */
-    var forceSoap12Headers: js.UndefOr[Boolean] = js.native
+    var forceSoap12Headers: js.UndefOr[Boolean] = js.undefined
     
-    var handleNilAsNull: js.UndefOr[Boolean] = js.native
+    var handleNilAsNull: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreBaseNameSpaces: js.UndefOr[Boolean] = js.native
+    var ignoreBaseNameSpaces: js.UndefOr[Boolean] = js.undefined
     
-    var ignoredNamespaces: js.UndefOr[Boolean | js.Array[String] | Namespaces] = js.native
+    var ignoredNamespaces: js.UndefOr[Boolean | js.Array[String] | Namespaces] = js.undefined
     
     /** provides support for nonstandard array semantics. If true, JSON arrays of the form {list: [{elem: 1}, {elem: 2}]} are marshalled into xml as <list><elem>1</elem></list> <list><elem>2</elem></list>. If false, marshalls into <list> <elem>1</elem> <elem>2</elem> </list>. Default: true. */
-    var namespaceArrayElements: js.UndefOr[Boolean] = js.native
+    var namespaceArrayElements: js.UndefOr[Boolean] = js.undefined
     
     /** if your wsdl operations contains names with non identifier characters ([^a-z$_0-9]), replace them with _. Note: if using this option, clients using wsdls with two operations like soap:method and soap-method will be overwritten. Then, use bracket notation instead (client['soap:method']()). */
-    var normalizeNames: js.UndefOr[Boolean] = js.native
+    var normalizeNames: js.UndefOr[Boolean] = js.undefined
     
-    var overrideRootElement: js.UndefOr[Namespace] = js.native
+    var overrideRootElement: js.UndefOr[Namespace] = js.undefined
     
     /** to preserve leading and trailing whitespace characters in text and cdata. */
-    var preserveWhitespace: js.UndefOr[Boolean] = js.native
+    var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /** return an Invalid XML SOAP fault on a bad request, default: false. */
-    var returnFault: js.UndefOr[Boolean] = js.native
+    var returnFault: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var useEmptyTag: js.UndefOr[Boolean] = js.native
+    var useEmptyTag: js.UndefOr[Boolean] = js.undefined
     
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
     
     /** custom HTTP headers to be sent on WSDL requests. */
-    var wsdl_headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var wsdl_headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** custom options for the request module on WSDL requests. */
-    var wsdl_options: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var wsdl_options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var xmlKey: js.UndefOr[String] = js.native
+    var xmlKey: js.UndefOr[String] = js.undefined
   }
   object IWsdlBaseOptions {
     
@@ -565,12 +564,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IXmlAttribute extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object IXmlAttribute {
     

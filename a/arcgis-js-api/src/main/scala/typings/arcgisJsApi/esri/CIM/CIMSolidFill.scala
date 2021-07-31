@@ -2,28 +2,27 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMSolidFill
-  extends CIMSymbolLayerBase
+  extends StObject
+     with CIMSymbolLayerBase
      with CIMSymbolLayerType {
   
   /**
     * The color that is applied to the fill.
     */
-  var color: js.UndefOr[js.Array[Double]] = js.native
+  var color: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMSolidFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidFill = js.native
+  var type_CIMSolidFill: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidFill
 }
 object CIMSolidFill {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMSolidFill): CIMSolidFill = {
+  def apply(): CIMSolidFill = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMSolidFill")
     __obj.asInstanceOf[CIMSolidFill]
   }
   

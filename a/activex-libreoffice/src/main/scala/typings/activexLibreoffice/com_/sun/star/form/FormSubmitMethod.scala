@@ -4,7 +4,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`0`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies how information is sent to a program invoked by submitting a form. */

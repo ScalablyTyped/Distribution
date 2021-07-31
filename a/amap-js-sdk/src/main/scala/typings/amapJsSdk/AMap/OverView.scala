@@ -2,21 +2,20 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverView
-  extends EventBindable
+  extends StObject
+     with EventBindable
      with MapControl {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def getTileLayer(): TileLayer = js.native
+  def getTileLayer(): TileLayer
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  def setTileLayer(layer: TileLayer): Unit = js.native
+  def setTileLayer(layer: TileLayer): Unit
 }
 object OverView {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedThroughputDescription extends StObject {
   
   /**
     * The date and time of the last provisioned throughput decrease for this table.
     */
-  var LastDecreaseDateTime: js.UndefOr[Date] = js.native
+  var LastDecreaseDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time of the last provisioned throughput increase for this table.
     */
-  var LastIncreaseDateTime: js.UndefOr[Date] = js.native
+  var LastIncreaseDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The number of provisioned throughput decreases for this table during this UTC calendar day. For current maximums on provisioned throughput decreases, see Service, Account, and Table Quotas in the Amazon DynamoDB Developer Guide.
     */
-  var NumberOfDecreasesToday: js.UndefOr[PositiveLongObject] = js.native
+  var NumberOfDecreasesToday: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The maximum number of strongly consistent reads consumed per second before DynamoDB returns a ThrottlingException. Eventually consistent reads require less effort than strongly consistent reads, so a setting of 50 ReadCapacityUnits per second provides 100 eventually consistent ReadCapacityUnits per second.
     */
-  var ReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.native
+  var ReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
   
   /**
     * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException.
     */
-  var WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.native
+  var WriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined
 }
 object ProvisionedThroughputDescription {
   

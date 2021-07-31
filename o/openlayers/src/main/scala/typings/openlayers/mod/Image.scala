@@ -4,7 +4,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Image")
@@ -40,7 +39,7 @@ class Image protected () extends ImageBase {
     pixelRatio: Double,
     attributions: js.Array[Attribution],
     src: String,
-    crossOrigin: js.UndefOr[scala.Nothing],
+    crossOrigin: String,
     imageLoadFunction: ImageLoadFunctionType
   ) = this()
   def this(
@@ -49,7 +48,7 @@ class Image protected () extends ImageBase {
     pixelRatio: Double,
     attributions: js.Array[Attribution],
     src: String,
-    crossOrigin: String,
+    crossOrigin: Unit,
     imageLoadFunction: ImageLoadFunctionType
   ) = this()
   

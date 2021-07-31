@@ -11,37 +11,37 @@ import typings.tanemSvgInjector.typesMod.Errback
 import typings.tanemSvgInjector.typesMod.EvalScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgInjectorMod {
   
-  @JSImport("@tanem/svg-injector/dist/svg-injector", JSImport.Default)
+  @JSImport("@tanem/svg-injector/dist/svg-injector", JSImport.Namespace)
   @js.native
-  def default(elements: Elements): Unit = js.native
-  @JSImport("@tanem/svg-injector/dist/svg-injector", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(elements: Elements): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def default(
     elements: Elements,
     hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements: OptionalArgs
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elements.asInstanceOf[js.Any], hasAfterAllAfterEachBeforeEachCacheRequestsEvalScriptsRenumerateIRIElements.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Elements = HTMLCollectionOf[Element] | NodeListOf[Element] | Element | Null
   
-  @js.native
   trait OptionalArgs extends StObject {
     
-    var afterAll: js.UndefOr[AfterAll] = js.native
+    var afterAll: js.UndefOr[AfterAll] = js.undefined
     
-    var afterEach: js.UndefOr[Errback] = js.native
+    var afterEach: js.UndefOr[Errback] = js.undefined
     
-    var beforeEach: js.UndefOr[BeforeEach] = js.native
+    var beforeEach: js.UndefOr[BeforeEach] = js.undefined
     
-    var cacheRequests: js.UndefOr[Boolean] = js.native
+    var cacheRequests: js.UndefOr[Boolean] = js.undefined
     
-    var evalScripts: js.UndefOr[EvalScripts] = js.native
+    var evalScripts: js.UndefOr[EvalScripts] = js.undefined
     
-    var renumerateIRIElements: js.UndefOr[Boolean] = js.native
+    var renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
   }
   object OptionalArgs {
     

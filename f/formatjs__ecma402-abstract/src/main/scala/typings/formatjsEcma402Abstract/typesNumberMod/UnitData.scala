@@ -3,19 +3,17 @@ package typings.formatjsEcma402Abstract.typesNumberMod
 import typings.formatjsEcma402Abstract.anon.Recordnarrowshortlongstri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitData extends StObject {
   
-  var long: LDMLPluralRuleMap[String] = js.native
+  var long: LDMLPluralRuleMap[String]
   
-  var narrow: LDMLPluralRuleMap[String] = js.native
+  var narrow: LDMLPluralRuleMap[String]
   
-  var perUnit: Recordnarrowshortlongstri = js.native
+  var perUnit: Recordnarrowshortlongstri
   
-  var short: LDMLPluralRuleMap[String] = js.native
+  var short: LDMLPluralRuleMap[String]
 }
 object UnitData {
   

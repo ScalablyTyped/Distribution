@@ -2,17 +2,15 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaggedTemplateLiteralInvocationType[Result] extends StObject {
   
-  var sql: String = js.native
+  var sql: String
   
-  var `type`: js.Symbol = js.native
+  var `type`: js.Symbol
   
-  var values: js.Array[ValueExpressionType] = js.native
+  var values: js.Array[ValueExpressionType]
 }
 object TaggedTemplateLiteralInvocationType {
   
@@ -24,7 +22,7 @@ object TaggedTemplateLiteralInvocationType {
   }
   
   @scala.inline
-  implicit class TaggedTemplateLiteralInvocationTypeMutableBuilder[Self <: TaggedTemplateLiteralInvocationType[_], Result] (val x: Self with TaggedTemplateLiteralInvocationType[Result]) extends AnyVal {
+  implicit class TaggedTemplateLiteralInvocationTypeMutableBuilder[Self <: TaggedTemplateLiteralInvocationType[?], Result] (val x: Self & TaggedTemplateLiteralInvocationType[Result]) extends AnyVal {
     
     @scala.inline
     def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])

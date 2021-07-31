@@ -2,20 +2,18 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVersionDef extends StObject {
   
   /** VersionDef badConsumers */
-  var badConsumers: js.UndefOr[js.Array[Double] | Null] = js.native
+  var badConsumers: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
   /** VersionDef minConsumer */
-  var minConsumer: js.UndefOr[Double | Null] = js.native
+  var minConsumer: js.UndefOr[Double | Null] = js.undefined
   
   /** VersionDef producer */
-  var producer: js.UndefOr[Double | Null] = js.native
+  var producer: js.UndefOr[Double | Null] = js.undefined
 }
 object IVersionDef {
   

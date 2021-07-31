@@ -2,25 +2,23 @@ package typings.googleapis.languageV1beta1Mod.languageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a mention for an entity in the text. Currently, proper noun
   * mentions are supported.
   */
-@js.native
 trait SchemaEntityMention extends StObject {
   
   /**
     * The mention text.
     */
-  var text: js.UndefOr[SchemaTextSpan] = js.native
+  var text: js.UndefOr[SchemaTextSpan] = js.undefined
   
   /**
     * The type of the entity mention.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaEntityMention {
   

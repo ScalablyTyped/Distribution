@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetachPolicy extends StObject {
   
   /**
     * Reference that identifies the object whose policy object will be detached.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * Reference that identifies the policy object.
     */
-  var PolicyReference: ObjectReference = js.native
+  var PolicyReference: ObjectReference
 }
 object BatchDetachPolicy {
   

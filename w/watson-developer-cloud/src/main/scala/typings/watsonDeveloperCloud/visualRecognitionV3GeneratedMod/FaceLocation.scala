@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The location of the bounding box around the face. */
-@js.native
 trait FaceLocation extends StObject {
   
   /** Height in pixels of face region. */
-  var height: Double = js.native
+  var height: Double
   
   /** X-position of top-left pixel of face region. */
-  var left: Double = js.native
+  var left: Double
   
   /** Y-position of top-left pixel of face region. */
-  var top: Double = js.native
+  var top: Double
   
   /** Width in pixels of face region. */
-  var width: Double = js.native
+  var width: Double
 }
 object FaceLocation {
   

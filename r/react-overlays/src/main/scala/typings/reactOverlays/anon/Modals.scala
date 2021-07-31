@@ -3,17 +3,15 @@ package typings.reactOverlays.anon
 import typings.reactOverlays.esmModalManagerMod.ModalInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Modals extends StObject {
   
-  var isOverflowing: js.UndefOr[Boolean] = js.native
+  var isOverflowing: js.UndefOr[Boolean] = js.undefined
   
-  var modals: js.Array[ModalInstance] = js.native
+  var modals: js.Array[ModalInstance]
   
-  var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.native
+  var style: js.UndefOr[PartialCSSStyleDeclaratio] = js.undefined
 }
 object Modals {
   

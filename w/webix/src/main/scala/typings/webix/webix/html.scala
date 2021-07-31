@@ -4,7 +4,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,13 +25,13 @@ trait html extends StObject {
   def denySelect(): Unit = js.native
   
   def getTextSize(text: String): SizeInfo = js.native
-  def getTextSize(text: String, css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: String, css: String): SizeInfo = js.native
   def getTextSize(text: String, css: String, width: Double): SizeInfo = js.native
+  def getTextSize(text: String, css: Unit, width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String]): SizeInfo = js.native
-  def getTextSize(text: js.Array[String], css: js.UndefOr[scala.Nothing], width: Double): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String): SizeInfo = js.native
   def getTextSize(text: js.Array[String], css: String, width: Double): SizeInfo = js.native
+  def getTextSize(text: js.Array[String], css: Unit, width: Double): SizeInfo = js.native
   
   def getValue(node: HTMLElement): String = js.native
   

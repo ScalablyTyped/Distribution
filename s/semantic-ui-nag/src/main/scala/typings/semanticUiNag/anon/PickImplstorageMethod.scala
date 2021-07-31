@@ -5,14 +5,12 @@ import typings.semanticUiNag.semanticUiNagStrings.localstorage
 import typings.semanticUiNag.semanticUiNagStrings.sessionstorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, 'storageMethod'> */
-@js.native
 trait PickImplstorageMethod extends StObject {
   
-  var storageMethod: cookie | localstorage | sessionstorage = js.native
+  var storageMethod: cookie | localstorage | sessionstorage
 }
 object PickImplstorageMethod {
   

@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpellingSuggestions extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): SpellingSuggestion = js.native
+  def Item(Index: Double): SpellingSuggestion
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SpellingErrorType: WdSpellingErrorType = js.native
+  val SpellingErrorType: WdSpellingErrorType
   
   @JSName("Word.SpellingSuggestions_typekey")
-  var WordDotSpellingSuggestions_typekey: SpellingSuggestions = js.native
+  var WordDotSpellingSuggestions_typekey: SpellingSuggestions
 }
 object SpellingSuggestions {
   

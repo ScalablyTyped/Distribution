@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsInstanceUpgradeableResponse extends StObject {
   
   /** Additional information about upgrade. */
-  var upgradeInfo: js.UndefOr[String] = js.native
+  var upgradeInfo: js.UndefOr[String] = js.undefined
   
   /** The version this instance will be upgraded to if calling the upgrade endpoint. This field will only be populated if field upgradeable is true. */
-  var upgradeVersion: js.UndefOr[String] = js.native
+  var upgradeVersion: js.UndefOr[String] = js.undefined
   
   /** If an instance is upgradeable. */
-  var upgradeable: js.UndefOr[Boolean] = js.native
+  var upgradeable: js.UndefOr[Boolean] = js.undefined
 }
 object IsInstanceUpgradeableResponse {
   

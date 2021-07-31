@@ -2,11 +2,11 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallControl extends ICallControl
+trait CallControl
+  extends StObject
+     with ICallControl
 object CallControl {
   
   @scala.inline

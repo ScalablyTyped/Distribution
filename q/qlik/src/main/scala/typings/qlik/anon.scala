@@ -10,23 +10,21 @@ import typings.qlik.qlikStrings.settings
 import typings.qlik.qlikStrings.sorting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.native
+    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.undefined
     
-    var uses: settings = js.native
+    var uses: settings
   }
   object `0` {
     
     @scala.inline
-    def apply(uses: settings): `0` = {
-      val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(uses = "settings")
       __obj.asInstanceOf[`0`]
     }
     
@@ -44,18 +42,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.UndefOr[Uses] = js.native
+    var data: js.UndefOr[Uses] = js.undefined
     
-    var dimensions: js.UndefOr[Items] = js.native
+    var dimensions: js.UndefOr[Items] = js.undefined
     
-    var measures: js.UndefOr[Max] = js.native
+    var measures: js.UndefOr[Max] = js.undefined
     
-    var settings: js.UndefOr[`0`] = js.native
+    var settings: js.UndefOr[`0`] = js.undefined
     
-    var sorting: js.UndefOr[ItemsUses] = js.native
+    var sorting: js.UndefOr[ItemsUses] = js.undefined
   }
   object Data {
     
@@ -100,18 +97,17 @@ object anon {
     }
   }
   
-  @js.native
   trait GetContent extends StObject {
     
-    def getContent(variable: String, callback: js.Function2[/* value */ Variable, /* app */ this.type, Unit]): js.Promise[_] = js.native
+    def getContent(variable: String, callback: js.Function2[/* value */ Variable, /* app */ this.type, Unit]): js.Promise[js.Any]
     
-    def setContent(variable: String, value: String): Unit = js.native
+    def setContent(variable: String, value: String): Unit
   }
   object GetContent {
     
     @scala.inline
     def apply(
-      getContent: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[_],
+      getContent: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[js.Any],
       setContent: (String, String) => Unit
     ): GetContent = {
       val __obj = js.Dynamic.literal(getContent = js.Any.fromFunction2(getContent), setContent = js.Any.fromFunction2(setContent))
@@ -122,31 +118,30 @@ object anon {
     implicit class GetContentMutableBuilder[Self <: GetContent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetContent(value: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[_]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
+      def setGetContent(value: (String, js.Function2[/* value */ Variable, GetContent, Unit]) => js.Promise[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSetContent(value: (String, String) => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.native
+    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var ref: js.UndefOr[String] = js.native
+    var ref: js.UndefOr[String] = js.undefined
     
-    var uses: dimensions = js.native
+    var uses: dimensions
   }
   object Items {
     
     @scala.inline
-    def apply(uses: dimensions): Items = {
-      val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    def apply(): Items = {
+      val __obj = js.Dynamic.literal(uses = "dimensions")
       __obj.asInstanceOf[Items]
     }
     
@@ -182,18 +177,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ItemsUses extends StObject {
     
-    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.native
+    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.undefined
     
-    var uses: sorting = js.native
+    var uses: sorting
   }
   object ItemsUses {
     
     @scala.inline
-    def apply(uses: sorting): ItemsUses = {
-      val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    def apply(): ItemsUses = {
+      val __obj = js.Dynamic.literal(uses = "sorting")
       __obj.asInstanceOf[ItemsUses]
     }
     
@@ -211,24 +205,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.native
+    var items: js.UndefOr[StringDictionary[CustomProperty]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var ref: js.UndefOr[String] = js.native
+    var ref: js.UndefOr[String] = js.undefined
     
-    var uses: measures = js.native
+    var uses: measures
   }
   object Max {
     
     @scala.inline
-    def apply(uses: measures): Max = {
-      val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    def apply(): Max = {
+      val __obj = js.Dynamic.literal(uses = "measures")
       __obj.asInstanceOf[Max]
     }
     
@@ -264,12 +257,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NoInteraction extends StObject {
     
-    var noInteraction: js.UndefOr[Boolean] = js.native
+    var noInteraction: js.UndefOr[Boolean] = js.undefined
     
-    var noSelections: js.UndefOr[Boolean] = js.native
+    var noSelections: js.UndefOr[Boolean] = js.undefined
   }
   object NoInteraction {
     
@@ -296,12 +288,11 @@ object anon {
     }
   }
   
-  @js.native
   trait QIsNum extends StObject {
     
-    var qIsNum: Boolean = js.native
+    var qIsNum: Boolean
     
-    var qString: String = js.native
+    var qString: String
   }
   object QIsNum {
     
@@ -322,16 +313,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Uses extends StObject {
     
-    var uses: data = js.native
+    var uses: data
   }
   object Uses {
     
     @scala.inline
-    def apply(uses: data): Uses = {
-      val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+    def apply(): Uses = {
+      val __obj = js.Dynamic.literal(uses = "data")
       __obj.asInstanceOf[Uses]
     }
     

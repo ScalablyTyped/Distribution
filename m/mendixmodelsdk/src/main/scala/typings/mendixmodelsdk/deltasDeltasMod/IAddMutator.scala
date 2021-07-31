@@ -3,23 +3,23 @@ package typings.mendixmodelsdk.deltasDeltasMod
 import typings.mendixmodelsdk.mendixmodelsdkStrings.ADD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAddMutator extends Mutator {
+trait IAddMutator
+  extends StObject
+     with Mutator {
   
-  var insertionIndex: js.UndefOr[Double] = js.native
+  var insertionIndex: js.UndefOr[Double] = js.undefined
   
-  var mutatorType: ADD = js.native
+  var mutatorType: ADD
   
-  var value: PrimitiveValue = js.native
+  var value: PrimitiveValue
 }
 object IAddMutator {
   
   @scala.inline
-  def apply(mutatorType: ADD, value: PrimitiveValue): IAddMutator = {
-    val __obj = js.Dynamic.literal(mutatorType = mutatorType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  def apply(value: PrimitiveValue): IAddMutator = {
+    val __obj = js.Dynamic.literal(mutatorType = "ADD", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAddMutator]
   }
   

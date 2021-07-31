@@ -2,13 +2,11 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaImagesUploadResponse extends StObject {
   
-  var image: js.UndefOr[SchemaImage] = js.native
+  var image: js.UndefOr[SchemaImage] = js.undefined
 }
 object SchemaImagesUploadResponse {
   

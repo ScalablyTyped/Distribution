@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.1", "dfareporting_v3_1.Resource$Targetingtemplates")
@@ -31,7 +30,7 @@ class ResourceTargetingtemplates protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaTargetingTemplate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def get(params: ParamsResourceTargetingtemplatesGet): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def get(
     params: ParamsResourceTargetingtemplatesGet,
@@ -64,7 +63,7 @@ class ResourceTargetingtemplates protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def insert(callback: BodyResponseCallback[SchemaTargetingTemplate]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def insert(params: ParamsResourceTargetingtemplatesInsert): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def insert(
     params: ParamsResourceTargetingtemplatesInsert,
@@ -104,7 +103,7 @@ class ResourceTargetingtemplates protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTargetingTemplatesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTargetingTemplatesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetingTemplatesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetingTemplatesListResponse] = js.native
   def list(params: ParamsResourceTargetingtemplatesList): GaxiosPromise[SchemaTargetingTemplatesListResponse] = js.native
   def list(
     params: ParamsResourceTargetingtemplatesList,
@@ -139,7 +138,7 @@ class ResourceTargetingtemplates protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def patch(callback: BodyResponseCallback[SchemaTargetingTemplate]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def patch(params: ParamsResourceTargetingtemplatesPatch): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def patch(
     params: ParamsResourceTargetingtemplatesPatch,
@@ -172,7 +171,7 @@ class ResourceTargetingtemplates protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def update(callback: BodyResponseCallback[SchemaTargetingTemplate]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def update(params: ParamsResourceTargetingtemplatesUpdate): GaxiosPromise[SchemaTargetingTemplate] = js.native
   def update(
     params: ParamsResourceTargetingtemplatesUpdate,

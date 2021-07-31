@@ -2,17 +2,15 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /** 统计用区划代码 当 mode = region 时有效 (最低基础库: 1.4.0) */
-  var code: js.Tuple3[String, String, String] = js.native
+  var code: js.Tuple3[String, String, String]
   
   /** 邮政编码 当 mode = region 时有效 (最低基础库: 1.4.0) */
-  var postcode: String = js.native
+  var postcode: String
   
   /**
     * 当 mode = selector 时, 返回当前选择的 value
@@ -23,7 +21,7 @@ trait Code extends StObject {
     *
     * 当 mode = region 时, 返回 `["广东省", "广州市", "海珠区"]`
     */
-  var value: String | js.Array[Double] | (js.Tuple3[String, String, String]) = js.native
+  var value: String | js.Array[Double] | (js.Tuple3[String, String, String])
 }
 object Code {
   

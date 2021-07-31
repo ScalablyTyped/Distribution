@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Fetch.GetResponseBodyRequest
 import typings.devtoolsProtocol.mod.Protocol.Fetch.GetResponseBodyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamsTypeReturnTypeGetResponseBodyResponse extends StObject {
   
-  var paramsType: js.Array[GetResponseBodyRequest] = js.native
+  var paramsType: js.Array[GetResponseBodyRequest]
   
-  var returnType: GetResponseBodyResponse = js.native
+  var returnType: GetResponseBodyResponse
 }
 object ParamsTypeReturnTypeGetResponseBodyResponse {
   

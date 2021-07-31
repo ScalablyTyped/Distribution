@@ -6,24 +6,22 @@ import typings.std.EventListener
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@material/grid-list.@material/grid-list/adapter.MDCGridListAdapter> */
-  @js.native
   trait PartialMDCGridListAdapter extends StObject {
     
-    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ EventListener, Unit]] = js.native
+    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ EventListener, Unit]] = js.undefined
     
-    var getNumberOfTiles: js.UndefOr[js.Function0[Double]] = js.native
+    var getNumberOfTiles: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetWidthForTileAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getOffsetWidthForTileAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ EventListener, Unit]] = js.native
+    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ EventListener, Unit]] = js.undefined
     
     var setStyleForTilesElement: js.UndefOr[
         js.Function2[
@@ -34,7 +32,7 @@ object anon {
           /* value */ String | Null, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialMDCGridListAdapter {
     
@@ -90,12 +88,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TILESELECTOR extends StObject {
     
-    var TILES_SELECTOR: String = js.native
+    var TILES_SELECTOR: String
     
-    var TILE_SELECTOR: String = js.native
+    var TILE_SELECTOR: String
   }
   object TILESELECTOR {
     

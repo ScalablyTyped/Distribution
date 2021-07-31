@@ -2,10 +2,8 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaExpansionFile extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait SchemaExpansionFile extends StObject {
     * to it: this APK does not reference another APK&#39;s Expansion File. The
     * field&#39;s value is the size of the uploaded Expansion File in bytes.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * If set this APK&#39;s Expansion File references another APK&#39;s
     * Expansion File. The file_size field will not be set.
     */
-  var referencesVersion: js.UndefOr[Double] = js.native
+  var referencesVersion: js.UndefOr[Double] = js.undefined
 }
 object SchemaExpansionFile {
   

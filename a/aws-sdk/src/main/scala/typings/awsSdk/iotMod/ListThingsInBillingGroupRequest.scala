@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThingsInBillingGroupRequest extends StObject {
   
   /**
     * The name of the billing group.
     */
-  var billingGroupName: BillingGroupName = js.native
+  var billingGroupName: BillingGroupName
   
   /**
     * The maximum number of results to return per request.
     */
-  var maxResults: js.UndefOr[RegistryMaxResults] = js.native
+  var maxResults: js.UndefOr[RegistryMaxResults] = js.undefined
   
   /**
     * To retrieve the next set of results, the nextToken value from a previous response; otherwise null to receive the first set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListThingsInBillingGroupRequest {
   

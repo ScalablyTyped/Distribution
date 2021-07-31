@@ -8,19 +8,17 @@ import typings.qlik.qlikStrings.number
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyCommon extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var show: js.UndefOr[Boolean | ShowFunction] = js.native
+  var show: js.UndefOr[Boolean | ShowFunction] = js.undefined
   
-  var `type`: js.UndefOr[string | integer | number | array | boolean | items] = js.native
+  var `type`: js.UndefOr[string | integer | number | array | boolean | items] = js.undefined
 }
 object CustomPropertyCommon {
   

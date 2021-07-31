@@ -5,16 +5,17 @@ import typings.std.RegExp
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("playable/dist/src/modules/ui/core/element-queries/utils", "forEachMatch")
+  @JSImport("playable/dist/src/modules/ui/core/element-queries/utils", JSImport.Namespace)
   @js.native
-  def forEachMatch(string: String, pattern: RegExp, callback: js.Function1[/* match */ RegExpExecArray, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("playable/dist/src/modules/ui/core/element-queries/utils", "reduce")
-  @js.native
-  def reduce(arrayLike: LengthNumber, callback: js.Function1[/* repeated */ js.Any, Unit], initialValue: js.Any): js.Any = js.native
+  @scala.inline
+  def forEachMatch(string: String, pattern: RegExp, callback: js.Function1[/* match */ RegExpExecArray, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachMatch")(string.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def reduce(arrayLike: LengthNumber, callback: js.Function1[/* repeated */ js.Any, Unit], initialValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arrayLike.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

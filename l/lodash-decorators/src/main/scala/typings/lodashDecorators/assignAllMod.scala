@@ -2,19 +2,19 @@ package typings.lodashDecorators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assignAllMod {
   
-  @JSImport("lodash-decorators/utils/assignAll", "assignAll")
+  @JSImport("lodash-decorators/utils/assignAll", JSImport.Namespace)
   @js.native
-  def assignAll[T, U](to: T, from: U): T = js.native
-  @JSImport("lodash-decorators/utils/assignAll", "assignAll")
-  @js.native
-  def assignAll[T, U](to: T, from: U, excludes: js.Array[String]): T = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/utils/assignAll", "assignProperty")
-  @js.native
-  def assignProperty[T, U](to: T, from: U, prop: String): Unit = js.native
+  @scala.inline
+  def assignAll[T, U](to: T, from: U): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def assignAll[T, U](to: T, from: U, excludes: js.Array[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("assignAll")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], excludes.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def assignProperty[T, U](to: T, from: U, prop: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assignProperty")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

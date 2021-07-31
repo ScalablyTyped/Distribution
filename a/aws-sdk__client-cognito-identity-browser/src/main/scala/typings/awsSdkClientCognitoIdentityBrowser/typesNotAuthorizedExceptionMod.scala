@@ -19,15 +19,14 @@ import typings.awsSdkClientCognitoIdentityBrowser.unlinkIdentityExceptionsUnionM
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNotAuthorizedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NotAuthorizedExceptionDetails> * / any */ @js.native
-  trait NotAuthorizedException
-    extends CreateIdentityPoolExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NotAuthorizedExceptionDetails> * / any */ trait NotAuthorizedException
+    extends StObject
+       with CreateIdentityPoolExceptionsUnion
        with DeleteIdentityPoolExceptionsUnion
        with DescribeIdentityExceptionsUnion
        with DescribeIdentityPoolExceptionsUnion
@@ -45,15 +44,13 @@ object typesNotAuthorizedExceptionMod {
        with UnlinkIdentityExceptionsUnion
        with UpdateIdentityPoolExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.NotAuthorizedException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.NotAuthorizedException
   }
   object NotAuthorizedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.NotAuthorizedException
-    ): NotAuthorizedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NotAuthorizedException = {
+      val __obj = js.Dynamic.literal(name = "NotAuthorizedException")
       __obj.asInstanceOf[NotAuthorizedException]
     }
     
@@ -67,13 +64,12 @@ object typesNotAuthorizedExceptionMod {
     }
   }
   
-  @js.native
   trait NotAuthorizedExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by a NotAuthorizedException</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object NotAuthorizedExceptionDetails {
     

@@ -4,22 +4,20 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a connection to a smart card. */
-@js.native
 trait SmartCardConnection extends StObject {
   
   /** Completes the smart card authentication challenge/response operation and frees associated system resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Asynchronously transmits the supplied application protocol data unit (APDU) command and returns the response.
     * @param command The APDU command to transmit to the smart card.
     * @return An asynchronous operation that, when completed, returns the response to the command that was transmitted.
     */
-  def transmitAsync(command: IBuffer): IPromiseWithIAsyncOperation[IBuffer] = js.native
+  def transmitAsync(command: IBuffer): IPromiseWithIAsyncOperation[IBuffer]
 }
 object SmartCardConnection {
   

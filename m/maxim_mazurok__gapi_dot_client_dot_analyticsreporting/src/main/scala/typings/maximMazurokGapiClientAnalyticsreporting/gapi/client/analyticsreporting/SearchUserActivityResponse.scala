@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchUserActivityResponse extends StObject {
   
   /** This token should be passed to [SearchUserActivityRequest](#SearchUserActivityRequest) to retrieve the next page. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * This field represents the [sampling rate](https://support.google.com/analytics/answer/2637192) for the given request and is a number between 0.0 to 1.0. See [developer
     * guide](/analytics/devguides/reporting/core/v4/basics#sampling) for details.
     */
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
   
   /** Each record represents a session (device details, duration, etc). */
-  var sessions: js.UndefOr[js.Array[UserActivitySession]] = js.native
+  var sessions: js.UndefOr[js.Array[UserActivitySession]] = js.undefined
   
   /** Total rows returned by this query (across different pages). */
-  var totalRows: js.UndefOr[Double] = js.native
+  var totalRows: js.UndefOr[Double] = js.undefined
 }
 object SearchUserActivityResponse {
   

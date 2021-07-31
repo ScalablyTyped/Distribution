@@ -3,20 +3,20 @@ package typings.stripe.mod.charges
 import typings.stripe.stripeStrings.ach_debit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAchDebitPaymentMethodDetails extends IPaymentMethodDetails {
+trait IAchDebitPaymentMethodDetails
+  extends StObject
+     with IPaymentMethodDetails {
   
-  var `type`: ach_debit = js.native
+  var `type`: ach_debit
 }
 object IAchDebitPaymentMethodDetails {
   
   @scala.inline
-  def apply(`type`: ach_debit): IAchDebitPaymentMethodDetails = {
+  def apply(): IAchDebitPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ach_debit")
     __obj.asInstanceOf[IAchDebitPaymentMethodDetails]
   }
   

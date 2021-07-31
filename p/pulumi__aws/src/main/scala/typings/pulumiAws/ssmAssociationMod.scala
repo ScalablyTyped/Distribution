@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ssmAssociationMod {
@@ -27,7 +26,7 @@ object ssmAssociationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AssociationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AssociationArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -98,6 +97,10 @@ object ssmAssociationMod {
   /* static members */
   object Association {
     
+    @JSImport("@pulumi/aws/ssm/association", "Association")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Association resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -107,90 +110,84 @@ object ssmAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Association = js.native
-    @JSImport("@pulumi/aws/ssm/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Association = js.native
-    @JSImport("@pulumi/aws/ssm/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssociationState): Association = js.native
-    @JSImport("@pulumi/aws/ssm/association", "Association.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
     
     /**
       * Returns true if the given object is an instance of Association.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/association", "Association.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean]
   }
   
-  @js.native
   trait AssociationArgs extends StObject {
     
     /**
       * The descriptive name for the association.
       */
-    val associationName: js.UndefOr[Input[String]] = js.native
+    val associationName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify the target for the association. This target is required for associations that use an `Automation` document and target resources by using rate controls.
       */
-    val automationTargetParameterName: js.UndefOr[Input[String]] = js.native
+    val automationTargetParameterName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`
       */
-    val complianceSeverity: js.UndefOr[Input[String]] = js.native
+    val complianceSeverity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The document version you want to associate with the target(s). Can be a specific version or the default version.
       */
-    val documentVersion: js.UndefOr[Input[String]] = js.native
+    val documentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The instance ID to apply an SSM document to. Use `targets` with key `InstanceIds` for document schema versions 2.0 and above.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
       */
-    val maxConcurrency: js.UndefOr[Input[String]] = js.native
+    val maxConcurrency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
       */
-    val maxErrors: js.UndefOr[Input[String]] = js.native
+    val maxErrors: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the SSM document to apply.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An output location block. Output Location is documented below.
       */
-    val outputLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]] = js.native
+    val outputLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]] = js.undefined
     
     /**
       * A block of arbitrary string parameters to pass to the SSM document.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A cron expression when the association will be applied to the target(s).
       */
-    val scheduleExpression: js.UndefOr[Input[String]] = js.native
+    val scheduleExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
       */
-    val targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]] = js.native
+    val targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]] = js.undefined
   }
   object AssociationArgs {
     
@@ -280,73 +277,72 @@ object ssmAssociationMod {
     }
   }
   
-  @js.native
   trait AssociationState extends StObject {
     
     /**
       * The ID of the SSM association.
       */
-    val associationId: js.UndefOr[Input[String]] = js.native
+    val associationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The descriptive name for the association.
       */
-    val associationName: js.UndefOr[Input[String]] = js.native
+    val associationName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify the target for the association. This target is required for associations that use an `Automation` document and target resources by using rate controls.
       */
-    val automationTargetParameterName: js.UndefOr[Input[String]] = js.native
+    val automationTargetParameterName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compliance severity for the association. Can be one of the following: `UNSPECIFIED`, `LOW`, `MEDIUM`, `HIGH` or `CRITICAL`
       */
-    val complianceSeverity: js.UndefOr[Input[String]] = js.native
+    val complianceSeverity: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The document version you want to associate with the target(s). Can be a specific version or the default version.
       */
-    val documentVersion: js.UndefOr[Input[String]] = js.native
+    val documentVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The instance ID to apply an SSM document to. Use `targets` with key `InstanceIds` for document schema versions 2.0 and above.
       */
-    val instanceId: js.UndefOr[Input[String]] = js.native
+    val instanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
       */
-    val maxConcurrency: js.UndefOr[Input[String]] = js.native
+    val maxConcurrency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of errors that are allowed before the system stops sending requests to run the association on additional targets. You can specify a number, for example 10, or a percentage of the target set, for example 10%.
       */
-    val maxErrors: js.UndefOr[Input[String]] = js.native
+    val maxErrors: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the SSM document to apply.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An output location block. Output Location is documented below.
       */
-    val outputLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]] = js.native
+    val outputLocation: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]] = js.undefined
     
     /**
       * A block of arbitrary string parameters to pass to the SSM document.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A cron expression when the association will be applied to the target(s).
       */
-    val scheduleExpression: js.UndefOr[Input[String]] = js.native
+    val scheduleExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
       */
-    val targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]] = js.native
+    val targets: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]] = js.undefined
   }
   object AssociationState {
     

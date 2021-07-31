@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociatedTargetNetwork extends StObject {
   
   /**
     * The ID of the subnet.
     */
-  var NetworkId: js.UndefOr[String] = js.native
+  var NetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The target network type.
     */
-  var NetworkType: js.UndefOr[AssociatedNetworkType] = js.native
+  var NetworkType: js.UndefOr[AssociatedNetworkType] = js.undefined
 }
 object AssociatedTargetNetwork {
   

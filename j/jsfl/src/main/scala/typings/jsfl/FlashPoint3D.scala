@@ -2,13 +2,13 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlashPoint3D extends FlashPoint {
+trait FlashPoint3D
+  extends StObject
+     with FlashPoint {
   
-  var z: Double = js.native
+  var z: Double
 }
 object FlashPoint3D {
   

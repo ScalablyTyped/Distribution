@@ -2,19 +2,17 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tracks the parent object for complex editors by exposing it as an object reference via editorState.current.entity
   * it is possible to modify this object, so should be used with care
   */
-@js.native
 trait IEditorState extends StObject {
   
-  var current: js.Any = js.native
+  var current: js.Any
   
-  var state: IState = js.native
+  var state: IState
 }
 object IEditorState {
   

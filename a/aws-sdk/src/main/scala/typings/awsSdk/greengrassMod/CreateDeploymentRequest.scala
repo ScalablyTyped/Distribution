@@ -2,36 +2,34 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeploymentRequest extends StObject {
   
   /**
     * A client token used to correlate requests and responses.
     */
-  var AmznClientToken: js.UndefOr[string] = js.native
+  var AmznClientToken: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the deployment if you wish to redeploy a previous deployment.
     */
-  var DeploymentId: js.UndefOr[string] = js.native
+  var DeploymentId: js.UndefOr[string] = js.undefined
   
   /**
     * The type of deployment. When used for ''CreateDeployment'', only ''NewDeployment'' and ''Redeployment'' are valid.
     */
-  var DeploymentType: typings.awsSdk.greengrassMod.DeploymentType = js.native
+  var DeploymentType: typings.awsSdk.greengrassMod.DeploymentType
   
   /**
     * The ID of the Greengrass group.
     */
-  var GroupId: string = js.native
+  var GroupId: string
   
   /**
     * The ID of the group version to be deployed.
     */
-  var GroupVersionId: js.UndefOr[string] = js.native
+  var GroupVersionId: js.UndefOr[string] = js.undefined
 }
 object CreateDeploymentRequest {
   

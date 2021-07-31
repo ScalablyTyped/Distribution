@@ -2,24 +2,22 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents targeting information for operating systems.
   */
-@js.native
 trait SchemaOperatingSystemTargeting extends StObject {
   
   /**
     * IDs of operating systems to be included/excluded.
     */
-  var operatingSystemCriteria: js.UndefOr[SchemaCriteriaTargeting] = js.native
+  var operatingSystemCriteria: js.UndefOr[SchemaCriteriaTargeting] = js.undefined
   
   /**
     * IDs of operating system versions to be included/excluded.
     */
-  var operatingSystemVersionCriteria: js.UndefOr[SchemaCriteriaTargeting] = js.native
+  var operatingSystemVersionCriteria: js.UndefOr[SchemaCriteriaTargeting] = js.undefined
 }
 object SchemaOperatingSystemTargeting {
   

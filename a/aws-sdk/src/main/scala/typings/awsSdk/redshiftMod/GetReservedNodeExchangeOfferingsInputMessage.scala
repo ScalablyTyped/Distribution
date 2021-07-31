@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReservedNodeExchangeOfferingsInputMessage extends StObject {
   
   /**
     * A value that indicates the starting point for the next set of ReservedNodeOfferings.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     * An integer setting the maximum number of ReservedNodeOfferings to retrieve.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A string representing the node identifier for the DC1 Reserved Node to be exchanged.
     */
-  var ReservedNodeId: String = js.native
+  var ReservedNodeId: String
 }
 object GetReservedNodeExchangeOfferingsInputMessage {
   

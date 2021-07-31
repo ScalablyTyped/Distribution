@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsDelete extends StandardParameters {
+trait ParamsResourceBeaconsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Beacon that should be deleted. A beacon name has the format
@@ -25,13 +25,13 @@ trait ParamsResourceBeaconsDelete extends StandardParameters {
     * AltBeacon. For Eddystone-EID beacons, you may use either the current EID
     * or the beacon's "stable" UID. Required.
     */
-  var beaconName: js.UndefOr[String] = js.native
+  var beaconName: js.UndefOr[String] = js.undefined
   
   /**
     * The project id of the beacon to delete. If not provided, the project that
     * is making the request is used. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBeaconsDelete {
   

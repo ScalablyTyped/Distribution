@@ -13,7 +13,6 @@ import typings.stripe.stripeStrings.blocked
 import typings.stripe.stripeStrings.issuingDotcardholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardholders {
@@ -53,81 +52,82 @@ object cardholders {
   /**
     * An Issuing Cardholder object represents an individual or business entity who is issued cards.
     */
-  @js.native
-  trait ICardholder extends IResourceObject {
+  trait ICardholder
+    extends StObject
+       with IResourceObject {
     
-    var authorization_controls: ICardholderAuthorizationControls = js.native
+    var authorization_controls: ICardholderAuthorizationControls
     
     /**
       * The cardholder’s billing address.
       */
-    var billing: AddressName = js.native
+    var billing: AddressName
     
     /**
       * Additional information about a business_entity cardholder.
       */
-    var company: ICardholderBusinessEntity = js.native
+    var company: ICardholderBusinessEntity
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The cardholder’s email address.
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * Additional information about an individual cardholder.
       */
-    var individual: ICardholderIndividual = js.native
+    var individual: ICardholderIndividual
     
     /**
       * Whether or not this cardholder is the default cardholder.
       */
-    var is_default: Boolean = js.native
+    var is_default: Boolean
     
     /**
       * Has the value true if the object exists in live mode or the value false if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format.
       */
-    var metadata: IMetadata = js.native
+    var metadata: IMetadata
     
     /**
       * The cardholder’s name. This will be printed on cards issued to them.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * String representing the object’s type. Objects of the same type share the same value.
       */
     @JSName("object")
-    var object_ICardholder: issuingDotcardholder = js.native
+    var object_ICardholder: issuingDotcardholder
     
     /**
       * The cardholder’s phone number.
       */
-    var phone_number: String = js.native
+    var phone_number: String
     
     /**
       * Information about verification requirements for the cardholder, including what information needs to be collected.
       */
-    var requirements: Pastdue = js.native
+    var requirements: Pastdue
     
     /**
       * One of active, inactive, or blocked.
       */
-    var status: CardholderStatus = js.native
+    var status: CardholderStatus
     
     /**
       * One of individual or business_entity.
       */
-    var `type`: CardholderType = js.native
+    var `type`: CardholderType
   }
   object ICardholder {
     
@@ -144,14 +144,13 @@ object cardholders {
       livemode: Boolean,
       metadata: IMetadata,
       name: String,
-      `object`: issuingDotcardholder,
       phone_number: String,
       requirements: Pastdue,
       status: CardholderStatus,
       `type`: CardholderType
     ): ICardholder = {
       val __obj = js.Dynamic.literal(authorization_controls = authorization_controls.asInstanceOf[js.Any], billing = billing.asInstanceOf[js.Any], company = company.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], individual = individual.asInstanceOf[js.Any], is_default = is_default.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any], requirements = requirements.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("issuing.cardholder")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICardholder]
     }
@@ -206,28 +205,27 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderAuthorizationControls extends StObject {
     
     /**
       * Array of strings containing categories of authorizations permitted on this card.
       */
-    var allowed_categories: js.Array[String] = js.native
+    var allowed_categories: js.Array[String]
     
     /**
       * Array of strings containing categories of authorizations to always decline on this card.
       */
-    var blocked_categories: js.Array[String] = js.native
+    var blocked_categories: js.Array[String]
     
     /**
       * Limit the spending with rules based on time intervals and categories.
       */
-    var spending_limits: js.Array[ISpendingLimit] = js.native
+    var spending_limits: js.Array[ISpendingLimit]
     
     /**
       * Currency for the amounts within spending_limits. Locked to the currency of the card.
       */
-    var spending_limits_currency: String = js.native
+    var spending_limits_currency: String
   }
   object ICardholderAuthorizationControls {
     
@@ -268,38 +266,37 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderBillingAddress extends StObject {
     
     /**
       * City/District/Suburb/Town/Village.
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * 2-letter country code.
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Address line 1 (Street address/PO Box/Company name).
       */
-    var line1: String = js.native
+    var line1: String
     
     /**
       * Address line 2 (Apartment/Suite/Unit/Building).
       */
-    var line2: js.UndefOr[String] = js.native
+    var line2: js.UndefOr[String] = js.undefined
     
     /**
       * ZIP or postal code.
       */
-    var postal_code: String = js.native
+    var postal_code: String
     
     /**
       * State/County/Province/Region.
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object ICardholderBillingAddress {
     
@@ -338,13 +335,12 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderBusinessEntity extends StObject {
     
     /**
       * Whether the company’s business ID number was provided.
       */
-    var tax_id_provided: js.UndefOr[Boolean] = js.native
+    var tax_id_provided: js.UndefOr[Boolean] = js.undefined
   }
   object ICardholderBusinessEntity {
     
@@ -365,24 +361,25 @@ object cardholders {
     }
   }
   
-  @js.native
-  trait ICardholderCreateOptions extends ICardholderUpdateOptions {
+  trait ICardholderCreateOptions
+    extends StObject
+       with ICardholderUpdateOptions {
     
     /**
       * The cardholder’s billing address.
       */
     @JSName("billing")
-    var billing_ICardholderCreateOptions: AddressICardholderBillingAddress = js.native
+    var billing_ICardholderCreateOptions: AddressICardholderBillingAddress
     
     /**
       * The cardholder’s name. This will be printed on cards issued to them.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The type of cardholder. Possible values are individual or business_entity.
       */
-    var `type`: CardholderType = js.native
+    var `type`: CardholderType
   }
   object ICardholderCreateOptions {
     
@@ -407,28 +404,27 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderIndividual extends StObject {
     
     /**
       * The date of birth of this cardholder.
       */
-    var dob: Day = js.native
+    var dob: Day
     
     /**
       * The first name of this cardholder.
       */
-    var first_name: String = js.native
+    var first_name: String
     
     /**
       * The last name of this cardholder.
       */
-    var last_name: String = js.native
+    var last_name: String
     
     /**
       * Government-issued ID document for this cardholder.
       */
-    var verification: js.UndefOr[DocumentFront] = js.native
+    var verification: js.UndefOr[DocumentFront] = js.undefined
   }
   object ICardholderIndividual {
     
@@ -458,54 +454,53 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderListOptions extends StObject {
     
     /**
       * A filter on the list based on the object created field. The value can be a string with an integer Unix timestamp, or it can be a
       * dictionary with the following options:
       */
-    var created: js.UndefOr[String | ICreated] = js.native
+    var created: js.UndefOr[String | ICreated] = js.undefined
     
     /**
       * Only return cardholders that have the given email address.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * A cursor for use in pagination. ending_before is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, starting with obj_bar, your subsequent call can include ending_before=obj_bar in order to fetch the previous page of the list.
       */
-    var ending_before: js.UndefOr[String] = js.native
+    var ending_before: js.UndefOr[String] = js.undefined
     
     /**
       * Only return the default cardholder.
       */
-    var is_default: js.UndefOr[Boolean] = js.native
+    var is_default: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A limit on the number of objects to be returned. Limit can range between 1 and 100, and the default is 10.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Only return cardholders that have the given phone number.
       */
-    var phone_number: js.UndefOr[String] = js.native
+    var phone_number: js.UndefOr[String] = js.undefined
     
     /**
       * A cursor for use in pagination. starting_after is an object ID that defines your place in the list. For instance, if you make a list request and receive 100 objects, ending with obj_foo, your subsequent call can include starting_after=obj_foo in order to fetch the next page of the list.
       */
-    var starting_after: js.UndefOr[String] = js.native
+    var starting_after: js.UndefOr[String] = js.undefined
     
     /**
       * Only return cardholders that have the given status. One of active, inactive, or blocked.
       */
-    var status: js.UndefOr[CardholderStatus] = js.native
+    var status: js.UndefOr[CardholderStatus] = js.undefined
     
     /**
       * Only return cardholders that have the given type. One of individual or business_entity.
       */
-    var `type`: js.UndefOr[CardholderType] = js.native
+    var `type`: js.UndefOr[CardholderType] = js.undefined
   }
   object ICardholderListOptions {
     
@@ -574,53 +569,52 @@ object cardholders {
     }
   }
   
-  @js.native
   trait ICardholderUpdateOptions extends StObject {
     
     /**
       * Spending rules that give you some control over how your cards can be used. Refer to our authorizations documentation for more details.
       */
-    var authorization_controls: js.UndefOr[ICardholderAuthorizationControls] = js.native
+    var authorization_controls: js.UndefOr[ICardholderAuthorizationControls] = js.undefined
     
     /**
       * The cardholder’s billing address.
       */
-    var billing: js.UndefOr[AddressICardholderBillingAddress] = js.native
+    var billing: js.UndefOr[AddressICardholderBillingAddress] = js.undefined
     
     /**
       * Additional information about a business_entity cardholder.
       */
-    var company: js.UndefOr[ICardholderBusinessEntity] = js.native
+    var company: js.UndefOr[ICardholderBusinessEntity] = js.undefined
     
     /**
       * The cardholder’s email address.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * Additional information about an individual cardholder.
       */
-    var individual: js.UndefOr[ICardholderIndividual] = js.native
+    var individual: js.UndefOr[ICardholderIndividual] = js.undefined
     
     /**
       * Specifies whether to set this as the default cardholder.
       */
-    var is_default: js.UndefOr[Boolean] = js.native
+    var is_default: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. Individual keys can be unset by posting an empty value to them. All keys can be unset by posting an empty value to metadata.
       */
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
     
     /**
       * The cardholder’s phone number.
       */
-    var phone_number: js.UndefOr[String] = js.native
+    var phone_number: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies whether to permit authorizations on this cardholder’s cards. Possible values are active or inactive.
       */
-    var status: js.UndefOr[Exclude[CardholderStatus, blocked]] = js.native
+    var status: js.UndefOr[Exclude[CardholderStatus, blocked]] = js.undefined
   }
   object ICardholderUpdateOptions {
     
@@ -692,23 +686,22 @@ object cardholders {
   /**
     * Limit the spending with rules based on time intervals and categories.
     */
-  @js.native
   trait ISpendingLimit extends StObject {
     
     /**
       * Maximum amount allowed to spend per time interval.
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * Array of strings containing categories on which to apply the spending limit. Leave this blank to limit all charges.
       */
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
     
     /**
       * The time interval with which to apply this spending limit towards. Allowed values are per_authorization, daily, weekly, monthly, yearly, or all_time.
       */
-    var interval: SpendingLimitInterval = js.native
+    var interval: SpendingLimitInterval
   }
   object ISpendingLimit {
     

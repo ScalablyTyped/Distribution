@@ -2,19 +2,17 @@ package typings.fastifyPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fastify extends StObject {
     
-    var fastify: js.UndefOr[js.Array[String]] = js.native
+    var fastify: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reply: js.UndefOr[js.Array[String]] = js.native
+    var reply: js.UndefOr[js.Array[String]] = js.undefined
     
-    var request: js.UndefOr[js.Array[String]] = js.native
+    var request: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Fastify {
     

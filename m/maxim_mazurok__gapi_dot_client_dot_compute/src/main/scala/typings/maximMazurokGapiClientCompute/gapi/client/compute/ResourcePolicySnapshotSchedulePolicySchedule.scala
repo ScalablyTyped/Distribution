@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicySnapshotSchedulePolicySchedule extends StObject {
   
-  var dailySchedule: js.UndefOr[ResourcePolicyDailyCycle] = js.native
+  var dailySchedule: js.UndefOr[ResourcePolicyDailyCycle] = js.undefined
   
-  var hourlySchedule: js.UndefOr[ResourcePolicyHourlyCycle] = js.native
+  var hourlySchedule: js.UndefOr[ResourcePolicyHourlyCycle] = js.undefined
   
-  var weeklySchedule: js.UndefOr[ResourcePolicyWeeklyCycle] = js.native
+  var weeklySchedule: js.UndefOr[ResourcePolicyWeeklyCycle] = js.undefined
 }
 object ResourcePolicySnapshotSchedulePolicySchedule {
   

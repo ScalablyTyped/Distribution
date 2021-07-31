@@ -2,24 +2,22 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A sort order associated with a specific column or row.
   */
-@js.native
 trait SchemaSortSpec extends StObject {
   
   /**
     * The dimension the sort should be applied to.
     */
-  var dimensionIndex: js.UndefOr[Double] = js.native
+  var dimensionIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The order data should be sorted.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
 }
 object SchemaSortSpec {
   

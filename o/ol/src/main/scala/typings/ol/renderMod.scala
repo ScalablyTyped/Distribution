@@ -8,46 +8,43 @@ import typings.ol.sizeMod.Size
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderMod {
   
-  @JSImport("ol/render", "getRenderPixel")
+  @JSImport("ol/render", JSImport.Namespace)
   @js.native
-  def getRenderPixel(event: default, pixel: Pixel): Pixel = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/render", "getVectorContext")
-  @js.native
-  def getVectorContext(event: default): typings.ol.immediateMod.default = js.native
+  @scala.inline
+  def getRenderPixel(event: default, pixel: Pixel): Pixel = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderPixel")(event.asInstanceOf[js.Any], pixel.asInstanceOf[js.Any])).asInstanceOf[Pixel]
   
-  @JSImport("ol/render", "renderDeclutterItems")
-  @js.native
-  def renderDeclutterItems(frameState: FrameState, declutterTree: js.Any): js.Any = js.native
+  @scala.inline
+  def getVectorContext(event: default): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
   
-  @JSImport("ol/render", "toContext")
-  @js.native
-  def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = js.native
-  @JSImport("ol/render", "toContext")
-  @js.native
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = js.native
+  @scala.inline
+  def renderDeclutterItems(frameState: FrameState, declutterTree: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclutterItems")(frameState.asInstanceOf[js.Any], declutterTree.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
+  @scala.inline
+  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.immediateMod.default]
   
   type OrderFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ FeatureLike, Double]
   
-  @js.native
   trait State extends StObject {
     
-    var context: CanvasRenderingContext2D = js.native
+    var context: CanvasRenderingContext2D
     
-    var feature: FeatureLike = js.native
+    var feature: FeatureLike
     
-    var geometry: typings.ol.simpleGeometryMod.default = js.native
+    var geometry: typings.ol.simpleGeometryMod.default
     
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
-    var resolution: Double = js.native
+    var resolution: Double
     
-    var rotation: Double = js.native
+    var rotation: Double
   }
   object State {
     
@@ -87,12 +84,11 @@ object renderMod {
     }
   }
   
-  @js.native
   trait ToContextOptions extends StObject {
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object ToContextOptions {
     

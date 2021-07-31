@@ -3,73 +3,71 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartCategoryAxisItem extends StObject {
   
-  var autoBaseUnitSteps: js.UndefOr[StockChartCategoryAxisItemAutoBaseUnitSteps] = js.native
+  var autoBaseUnitSteps: js.UndefOr[StockChartCategoryAxisItemAutoBaseUnitSteps] = js.undefined
   
-  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.native
+  var axisCrossingValue: js.UndefOr[js.Any | Date] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var baseUnit: js.UndefOr[String] = js.native
+  var baseUnit: js.UndefOr[String] = js.undefined
   
-  var baseUnitStep: js.UndefOr[js.Any] = js.native
+  var baseUnitStep: js.UndefOr[js.Any] = js.undefined
   
-  var categories: js.UndefOr[js.Any] = js.native
+  var categories: js.UndefOr[js.Any] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var crosshair: js.UndefOr[StockChartCategoryAxisItemCrosshair] = js.native
+  var crosshair: js.UndefOr[StockChartCategoryAxisItemCrosshair] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var justified: js.UndefOr[Boolean] = js.native
+  var justified: js.UndefOr[Boolean] = js.undefined
   
-  var labels: js.UndefOr[StockChartCategoryAxisItemLabels] = js.native
+  var labels: js.UndefOr[StockChartCategoryAxisItemLabels] = js.undefined
   
-  var line: js.UndefOr[StockChartCategoryAxisItemLine] = js.native
+  var line: js.UndefOr[StockChartCategoryAxisItemLine] = js.undefined
   
-  var majorGridLines: js.UndefOr[StockChartCategoryAxisItemMajorGridLines] = js.native
+  var majorGridLines: js.UndefOr[StockChartCategoryAxisItemMajorGridLines] = js.undefined
   
-  var majorTicks: js.UndefOr[StockChartCategoryAxisItemMajorTicks] = js.native
+  var majorTicks: js.UndefOr[StockChartCategoryAxisItemMajorTicks] = js.undefined
   
-  var max: js.UndefOr[js.Any] = js.native
+  var max: js.UndefOr[js.Any] = js.undefined
   
-  var maxDateGroups: js.UndefOr[Double] = js.native
+  var maxDateGroups: js.UndefOr[Double] = js.undefined
   
-  var maxDivisions: js.UndefOr[Double] = js.native
+  var maxDivisions: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[js.Any] = js.native
+  var min: js.UndefOr[js.Any] = js.undefined
   
-  var minorGridLines: js.UndefOr[StockChartCategoryAxisItemMinorGridLines] = js.native
+  var minorGridLines: js.UndefOr[StockChartCategoryAxisItemMinorGridLines] = js.undefined
   
-  var minorTicks: js.UndefOr[StockChartCategoryAxisItemMinorTicks] = js.native
+  var minorTicks: js.UndefOr[StockChartCategoryAxisItemMinorTicks] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[StockChartCategoryAxisItemNotes] = js.native
+  var notes: js.UndefOr[StockChartCategoryAxisItemNotes] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var plotBands: js.UndefOr[js.Array[StockChartCategoryAxisItemPlotBand]] = js.native
+  var plotBands: js.UndefOr[js.Array[StockChartCategoryAxisItemPlotBand]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var roundToBaseUnit: js.UndefOr[Boolean] = js.native
+  var roundToBaseUnit: js.UndefOr[Boolean] = js.undefined
   
-  var select: js.UndefOr[StockChartCategoryAxisItemSelect] = js.native
+  var select: js.UndefOr[StockChartCategoryAxisItemSelect] = js.undefined
   
-  var title: js.UndefOr[StockChartCategoryAxisItemTitle] = js.native
+  var title: js.UndefOr[StockChartCategoryAxisItemTitle] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var weekStartDay: js.UndefOr[Double] = js.native
+  var weekStartDay: js.UndefOr[Double] = js.undefined
 }
 object StockChartCategoryAxisItem {
   

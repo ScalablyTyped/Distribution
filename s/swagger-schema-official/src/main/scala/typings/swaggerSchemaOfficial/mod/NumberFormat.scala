@@ -5,22 +5,22 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.float
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NumberFormat extends SchemaFormatConstraints {
+trait NumberFormat
+  extends StObject
+     with SchemaFormatConstraints {
   
-  var format: js.UndefOr[float | double] = js.native
+  var format: js.UndefOr[float | double] = js.undefined
   
-  var `type`: number = js.native
+  var `type`: number
 }
 object NumberFormat {
   
   @scala.inline
-  def apply(`type`: number): NumberFormat = {
+  def apply(): NumberFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[NumberFormat]
   }
   

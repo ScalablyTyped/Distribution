@@ -6,28 +6,26 @@ import typings.wordpressDependencyExtractionWebpackPlugin.wordpressDependencyExt
 import typings.wordpressDependencyExtractionWebpackPlugin.wordpressDependencyExtractionWebpackPluginStrings.php
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@wordpress/dependency-extraction-webpack-plugin.@wordpress/dependency-extraction-webpack-plugin.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var combineAssets: js.UndefOr[Boolean] = js.native
+    var combineAssets: js.UndefOr[Boolean] = js.undefined
     
-    var combinedOutputFile: js.UndefOr[String | Null] = js.native
+    var combinedOutputFile: js.UndefOr[String | Null] = js.undefined
     
-    var injectPolyfill: js.UndefOr[Boolean] = js.native
+    var injectPolyfill: js.UndefOr[Boolean] = js.undefined
     
-    var outputFormat: js.UndefOr[json | php] = js.native
+    var outputFormat: js.UndefOr[json | php] = js.undefined
     
-    var requestToExternal: js.UndefOr[RequestToExternal] = js.native
+    var requestToExternal: js.UndefOr[RequestToExternal] = js.undefined
     
-    var requestToHandle: js.UndefOr[RequestToHandle] = js.native
+    var requestToHandle: js.UndefOr[RequestToHandle] = js.undefined
     
-    var useDefaults: js.UndefOr[Boolean] = js.native
+    var useDefaults: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

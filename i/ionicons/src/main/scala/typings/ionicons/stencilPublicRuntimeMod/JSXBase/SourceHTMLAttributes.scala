@@ -2,21 +2,21 @@ package typings.ionicons.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SourceHTMLAttributes[T] extends HTMLAttributes[T] {
+trait SourceHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var srcSet: js.UndefOr[String] = js.native
+  var srcSet: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SourceHTMLAttributes {
   
@@ -27,7 +27,7 @@ object SourceHTMLAttributes {
   }
   
   @scala.inline
-  implicit class SourceHTMLAttributesMutableBuilder[Self <: SourceHTMLAttributes[_], T] (val x: Self with SourceHTMLAttributes[T]) extends AnyVal {
+  implicit class SourceHTMLAttributesMutableBuilder[Self <: SourceHTMLAttributes[?], T] (val x: Self & SourceHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])

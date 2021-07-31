@@ -14,7 +14,6 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd", "Input")
@@ -40,25 +39,25 @@ object Input {
   /* was `typeof Password` */
   @JSImport("antd", "Input.Password")
   @js.native
-  def Password: ForwardRefExoticComponent[PasswordProps with RefAttributes[_]] = js.native
+  def Password: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = js.native
   @scala.inline
-  def Password_=(x: ForwardRefExoticComponent[PasswordProps with RefAttributes[_]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
+  def Password_=(x: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Password")(x.asInstanceOf[js.Any])
   
   /* static member */
   /* was `typeof Search` */
   @JSImport("antd", "Input.Search")
   @js.native
-  def Search: ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]] = js.native
+  def Search: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]] = js.native
   @scala.inline
-  def Search_=(x: ForwardRefExoticComponent[SearchProps with RefAttributes[typings.antd.inputInputMod.default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Search")(x.asInstanceOf[js.Any])
+  def Search_=(x: ForwardRefExoticComponent[SearchProps & RefAttributes[typings.antd.inputInputMod.default]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Search")(x.asInstanceOf[js.Any])
   
   /* static member */
   /* was `typeof TextArea` */
   @JSImport("antd", "Input.TextArea")
   @js.native
-  def TextArea: ForwardRefExoticComponent[TextAreaProps with RefAttributes[TextAreaRef]] = js.native
+  def TextArea: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]] = js.native
   @scala.inline
-  def TextArea_=(x: ForwardRefExoticComponent[TextAreaProps with RefAttributes[TextAreaRef]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextArea")(x.asInstanceOf[js.Any])
+  def TextArea_=(x: ForwardRefExoticComponent[TextAreaProps & RefAttributes[TextAreaRef]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextArea")(x.asInstanceOf[js.Any])
   
   /* static member */
   object defaultProps {
@@ -69,7 +68,6 @@ object Input {
   }
   
   /* static member */
-  @JSImport("antd", "Input.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(nextProps: InputProps, hasPrevValue: InputState): PartialInputState = js.native
+  @scala.inline
+  def getDerivedStateFromProps(nextProps: InputProps, hasPrevValue: InputState): PartialInputState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevValue.asInstanceOf[js.Any])).asInstanceOf[PartialInputState]
 }

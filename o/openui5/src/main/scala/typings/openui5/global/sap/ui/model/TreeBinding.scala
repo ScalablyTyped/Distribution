@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.TreeBinding")
 @js.native
 class TreeBinding protected ()
-  extends typings.openui5.sap.ui.model.TreeBinding {
+  extends StObject
+     with typings.openui5.sap.ui.model.TreeBinding {
   /**
     * Constructor for TreeBinding
     * @param oModel undefined
@@ -23,100 +23,105 @@ class TreeBinding protected ()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.Array[_]
-  ) = this()
-  def this(oModel: typings.openui5.sap.ui.model.Model, sPath: String, oContext: js.Any, aFilters: js.Array[_]) = this()
-  def this(
-    oModel: typings.openui5.sap.ui.model.Model,
-    sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.UndefOr[scala.Nothing],
-    mParameters: js.Any
+    oContext: js.Any,
+    aFilters: js.Array[js.Any]
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.Array[_],
-    mParameters: js.Any
+    oContext: Unit,
+    aFilters: js.Array[js.Any]
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
-    aFilters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[js.Any],
     mParameters: js.Any
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
-    aFilters: js.Array[_],
+    aFilters: Unit,
     mParameters: js.Any
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.UndefOr[scala.Nothing],
-    mParameters: js.UndefOr[scala.Nothing],
-    aSorters: js.Array[_]
+    oContext: Unit,
+    aFilters: js.Array[js.Any],
+    mParameters: js.Any
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.UndefOr[scala.Nothing],
-    mParameters: js.Any,
-    aSorters: js.Array[_]
-  ) = this()
-  def this(
-    oModel: typings.openui5.sap.ui.model.Model,
-    sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.Array[_],
-    mParameters: js.UndefOr[scala.Nothing],
-    aSorters: js.Array[_]
-  ) = this()
-  def this(
-    oModel: typings.openui5.sap.ui.model.Model,
-    sPath: String,
-    oContext: js.UndefOr[scala.Nothing],
-    aFilters: js.Array[_],
-    mParameters: js.Any,
-    aSorters: js.Array[_]
+    oContext: Unit,
+    aFilters: Unit,
+    mParameters: js.Any
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
-    aFilters: js.UndefOr[scala.Nothing],
-    mParameters: js.UndefOr[scala.Nothing],
-    aSorters: js.Array[_]
-  ) = this()
-  def this(
-    oModel: typings.openui5.sap.ui.model.Model,
-    sPath: String,
-    oContext: js.Any,
-    aFilters: js.UndefOr[scala.Nothing],
+    aFilters: js.Array[js.Any],
     mParameters: js.Any,
-    aSorters: js.Array[_]
+    aSorters: js.Array[js.Any]
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
-    aFilters: js.Array[_],
-    mParameters: js.UndefOr[scala.Nothing],
-    aSorters: js.Array[_]
+    aFilters: js.Array[js.Any],
+    mParameters: Unit,
+    aSorters: js.Array[js.Any]
   ) = this()
   def this(
     oModel: typings.openui5.sap.ui.model.Model,
     sPath: String,
     oContext: js.Any,
-    aFilters: js.Array[_],
+    aFilters: Unit,
     mParameters: js.Any,
-    aSorters: js.Array[_]
+    aSorters: js.Array[js.Any]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: js.Any,
+    aFilters: Unit,
+    mParameters: Unit,
+    aSorters: js.Array[js.Any]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: Unit,
+    aFilters: js.Array[js.Any],
+    mParameters: js.Any,
+    aSorters: js.Array[js.Any]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: Unit,
+    aFilters: js.Array[js.Any],
+    mParameters: Unit,
+    aSorters: js.Array[js.Any]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: Unit,
+    aFilters: Unit,
+    mParameters: js.Any,
+    aSorters: js.Array[js.Any]
+  ) = this()
+  def this(
+    oModel: typings.openui5.sap.ui.model.Model,
+    sPath: String,
+    oContext: Unit,
+    aFilters: Unit,
+    mParameters: Unit,
+    aSorters: js.Array[js.Any]
   ) = this()
 }

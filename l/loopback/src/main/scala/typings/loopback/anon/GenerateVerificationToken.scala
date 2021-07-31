@@ -2,27 +2,25 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateVerificationToken extends StObject {
   
-  var from: String = js.native
+  var from: String
   
-  def generateVerificationToken(): Unit = js.native
+  def generateVerificationToken(): Unit
   
-  var redirect: String = js.native
+  var redirect: String
   
-  var subject: String = js.native
+  var subject: String
   
-  var template: String = js.native
+  var template: String
   
-  var text: String = js.native
+  var text: String
   
-  var to: String = js.native
+  var to: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GenerateVerificationToken {
   

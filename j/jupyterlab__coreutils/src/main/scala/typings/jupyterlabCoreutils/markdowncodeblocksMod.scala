@@ -2,12 +2,15 @@ package typings.jupyterlabCoreutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markdowncodeblocksMod {
   
   object MarkdownCodeBlocks {
+    
+    @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", "MarkdownCodeBlocks")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", "MarkdownCodeBlocks.CODE_BLOCK_MARKER")
     @js.native
@@ -32,9 +35,8 @@ object markdowncodeblocksMod {
       *
       * @returns An array of MarkdownCodeBlocks.
       */
-    @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", "MarkdownCodeBlocks.findMarkdownCodeBlocks")
-    @js.native
-    def findMarkdownCodeBlocks(text: String): js.Array[MarkdownCodeBlock] = js.native
+    @scala.inline
+    def findMarkdownCodeBlocks(text: String): js.Array[MarkdownCodeBlock] = ^.asInstanceOf[js.Dynamic].applyDynamic("findMarkdownCodeBlocks")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[MarkdownCodeBlock]]
     
     /**
       * Check whether the given file extension is a markdown extension
@@ -42,8 +44,7 @@ object markdowncodeblocksMod {
       *
       * @returns true/false depending on whether this is a supported markdown extension
       */
-    @JSImport("@jupyterlab/coreutils/lib/markdowncodeblocks", "MarkdownCodeBlocks.isMarkdown")
-    @js.native
-    def isMarkdown(extension: String): Boolean = js.native
+    @scala.inline
+    def isMarkdown(`extension`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMarkdown")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

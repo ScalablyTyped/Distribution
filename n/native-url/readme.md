@@ -11,8 +11,8 @@ Brings the node url api layer to whatwg-url class
 | Full name          | native-url |
 | Keywords           | url, uri, normalization, normalisation, query, querystring, whatwg-url, parse, format, resolve, resolveObject |
 | # releases         | 17 |
-| # dependents       | 14 |
-| # downloads        | 15725078 |
+| # dependents       | 23 |
+| # downloads        | 55925577 |
 | # stars            | 0 |
 
 ## Links

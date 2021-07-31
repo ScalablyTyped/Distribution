@@ -3,17 +3,17 @@ package typings.babelPluginReactHtmlAttrs.mod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchList extends /* index */ NumberDictionary[Touch] {
+trait TouchList
+  extends StObject
+     with /* index */ NumberDictionary[Touch] {
   
-  def identifiedTouch(identifier: Double): Touch = js.native
+  def identifiedTouch(identifier: Double): Touch
   
-  def item(index: Double): Touch = js.native
+  def item(index: Double): Touch
   
-  var length: Double = js.native
+  var length: Double
 }
 object TouchList {
   

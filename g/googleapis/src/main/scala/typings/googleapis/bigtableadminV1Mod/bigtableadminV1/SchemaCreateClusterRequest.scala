@@ -2,33 +2,31 @@ package typings.googleapis.bigtableadminV1Mod.bigtableadminV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for BigtableInstanceAdmin.CreateCluster.
   */
-@js.native
 trait SchemaCreateClusterRequest extends StObject {
   
   /**
     * The cluster to be created. Fields marked `OutputOnly` must be left blank.
     */
-  var cluster: js.UndefOr[SchemaCluster] = js.native
+  var cluster: js.UndefOr[SchemaCluster] = js.undefined
   
   /**
     * The ID to be used when referring to the new cluster within its instance,
     * e.g., just `mycluster` rather than
     * `projects/myproject/instances/myinstance/clusters/mycluster`.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique name of the instance in which to create the new cluster.
     * Values are of the form
     * `projects/&lt;project&gt;/instances/&lt;instance&gt;`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateClusterRequest {
   

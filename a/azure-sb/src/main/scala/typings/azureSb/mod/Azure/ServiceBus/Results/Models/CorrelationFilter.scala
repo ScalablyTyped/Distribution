@@ -2,30 +2,28 @@ package typings.azureSb.mod.Azure.ServiceBus.Results.Models
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  ContentType :string,   CorrelationId :string,   Label :string,   Properties :string,   ReplyTo :string,   ReplyToSessionId :string,   RequiresPreprocessing :string,   SessionId :string,   To :string}> */
-@js.native
 trait CorrelationFilter extends StObject {
   
-  var ContentType: js.UndefOr[String] = js.native
+  var ContentType: js.UndefOr[String] = js.undefined
   
-  var CorrelationId: js.UndefOr[String] = js.native
+  var CorrelationId: js.UndefOr[String] = js.undefined
   
-  var Label: js.UndefOr[String] = js.native
+  var Label: js.UndefOr[String] = js.undefined
   
-  var Properties: js.UndefOr[String] = js.native
+  var Properties: js.UndefOr[String] = js.undefined
   
-  var ReplyTo: js.UndefOr[String] = js.native
+  var ReplyTo: js.UndefOr[String] = js.undefined
   
-  var ReplyToSessionId: js.UndefOr[String] = js.native
+  var ReplyToSessionId: js.UndefOr[String] = js.undefined
   
-  var RequiresPreprocessing: js.UndefOr[String] = js.native
+  var RequiresPreprocessing: js.UndefOr[String] = js.undefined
   
-  var SessionId: js.UndefOr[String] = js.native
+  var SessionId: js.UndefOr[String] = js.undefined
   
-  var To: js.UndefOr[String] = js.native
+  var To: js.UndefOr[String] = js.undefined
 }
 object CorrelationFilter {
   

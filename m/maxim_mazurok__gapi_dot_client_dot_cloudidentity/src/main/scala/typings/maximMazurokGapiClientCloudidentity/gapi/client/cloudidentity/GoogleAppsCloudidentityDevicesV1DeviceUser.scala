@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1DeviceUser extends StObject {
   
   /** Compromised State of the DeviceUser object */
-  var compromisedState: js.UndefOr[String] = js.native
+  var compromisedState: js.UndefOr[String] = js.undefined
   
   /** When the user first signed in to the device */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Most recent time when user registered with this service. */
-  var firstSyncTime: js.UndefOr[String] = js.native
+  var firstSyncTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Default locale used on device, in IETF BCP-47 format. */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Output only. Last time when user synced with policies. */
-  var lastSyncTime: js.UndefOr[String] = js.native
+  var lastSyncTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Management state of the user on the device. */
-  var managementState: js.UndefOr[String] = js.native
+  var managementState: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. [Resource name](https://cloud.google.com/apis/design/resource_names) of the DeviceUser in format: `devices/{device_id}/deviceUsers/{user_id}`, where user_id is the ID
     * of the user associated with the user session.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Password state of the DeviceUser object */
-  var passwordState: js.UndefOr[String] = js.native
+  var passwordState: js.UndefOr[String] = js.undefined
   
   /** Output only. User agent on the device for this specific user */
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
   
   /** Email address of the user registered on the device. */
-  var userEmail: js.UndefOr[String] = js.native
+  var userEmail: js.UndefOr[String] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1DeviceUser {
   

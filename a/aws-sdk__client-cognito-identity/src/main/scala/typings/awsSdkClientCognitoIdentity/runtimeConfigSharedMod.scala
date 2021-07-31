@@ -5,7 +5,6 @@ import typings.awsSdkTypes.utilMod.RegionInfo
 import typings.awsSdkTypes.utilMod.RegionInfoProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeConfigSharedMod {
@@ -37,12 +36,10 @@ object runtimeConfigSharedMod {
     @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.regionInfoProvider")
     @js.native
     def regionInfoProvider: RegionInfoProvider = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.regionInfoProvider")
-    @js.native
-    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = js.native
-    @JSImport("@aws-sdk/client-cognito-identity/types/runtimeConfig.shared", "ClientSharedValues.regionInfoProvider")
-    @js.native
-    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = js.native
+    @scala.inline
+    def regionInfoProvider(region: String): js.Promise[js.UndefOr[RegionInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
+    @scala.inline
+    def regionInfoProvider(region: String, options: js.Any): js.Promise[js.UndefOr[RegionInfo]] = (^.asInstanceOf[js.Dynamic].applyDynamic("regionInfoProvider")(region.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[RegionInfo]]]
     @scala.inline
     def regionInfoProvider_=(x: RegionInfoProvider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regionInfoProvider")(x.asInstanceOf[js.Any])
     

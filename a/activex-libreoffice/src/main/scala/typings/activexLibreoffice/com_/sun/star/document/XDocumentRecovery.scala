@@ -4,11 +4,9 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the interface to be implemented by documents who wish to participate in the document emergency-save / recovery process. */
-@js.native
 trait XDocumentRecovery extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait XDocumentRecovery extends StObject {
     * @param MediaDescriptor contains additional arguments for the load process, for instance an StatusIndicator.
     * @see MediaDescriptor
     */
-  def recoverFromFile(SourceLocation: String, SalvagedFile: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def recoverFromFile(SourceLocation: String, SalvagedFile: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit
   
   /**
     * does an emergency save of the document
@@ -37,7 +35,7 @@ trait XDocumentRecovery extends StObject {
     * @param MediaDescriptor contains additional arguments for the save process, for instance an StatusIndicator.
     * @see MediaDescriptor
     */
-  def storeToRecoveryFile(TargetLocation: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit = js.native
+  def storeToRecoveryFile(TargetLocation: String, MediaDescriptor: SeqEquiv[PropertyValue]): Unit
   
   /**
     * determines whether the document has been modified since the last call to {@link storeToRecoveryFile()} .
@@ -55,7 +53,7 @@ trait XDocumentRecovery extends StObject {
     * However, in such a case, the document might be saved more often than needed. In particular during the periodic session save, this might become a
     * problem when saving is expensive, for a single document or the sum of all open documents.
     */
-  def wasModifiedSinceLastSave(): Boolean = js.native
+  def wasModifiedSinceLastSave(): Boolean
 }
 object XDocumentRecovery {
   

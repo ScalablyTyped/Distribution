@@ -10,31 +10,29 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.ScalePullDown
 import typings.tuyaPanelKit.tuyaPanelKitStrings.none_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogProps extends StObject {
   
-  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   var motionConfig: js.UndefOr[
     MotionFadeProps | MotionPullUpProps | MotionScaleFadeInProps | MotionScalePullDownProps | MotionPushDownProps
-  ] = js.native
+  ] = js.undefined
   
-  var motionType: js.UndefOr[none_ | ScaleFadeIn | Fade | PullUp | ScalePullDown | PushDown] = js.native
+  var motionType: js.UndefOr[none_ | ScaleFadeIn | Fade | PullUp | ScalePullDown | PushDown] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var subTitleStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var subTitleStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var titleNumberOfLines: js.UndefOr[Double] = js.native
+  var titleNumberOfLines: js.UndefOr[Double] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object DialogProps {
   

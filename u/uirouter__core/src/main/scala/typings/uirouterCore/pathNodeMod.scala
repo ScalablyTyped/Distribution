@@ -9,7 +9,6 @@ import typings.uirouterCore.uirouterCoreBooleans.`false`
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathNodeMod {
@@ -68,13 +67,16 @@ object pathNodeMod {
   /* static members */
   object PathNode {
     
+    @JSImport("@uirouter/core/lib/path/pathNode", "PathNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a clone of the PathNode
       * @deprecated use instance method `node.clone()`
       */
-    @JSImport("@uirouter/core/lib/path/pathNode", "PathNode.clone")
-    @js.native
-    def clone(node: PathNode): PathNode = js.native
+    @scala.inline
+    def clone(node: PathNode): PathNode = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(node.asInstanceOf[js.Any]).asInstanceOf[PathNode]
   }
   
   type GetParamsFn = js.Function1[/* pathNode */ PathNode, js.Array[Param]]

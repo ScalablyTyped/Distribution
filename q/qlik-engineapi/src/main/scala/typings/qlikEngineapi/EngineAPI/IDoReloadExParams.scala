@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DoReloadExParams...
   */
-@js.native
 trait IDoReloadExParams extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IDoReloadExParams extends StObject {
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qDebug: js.UndefOr[Boolean] = js.native
+  var qDebug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Error handling mode
@@ -27,14 +25,14 @@ trait IDoReloadExParams extends StObject {
     *    2: for ignore; the reload of the script continues even if an error is detected in the script.
     * >> This parameter is optional.
     */
-  var qMode: js.UndefOr[Double] = js.native
+  var qMode: js.UndefOr[Double] = js.undefined
   
   /**
     * Set to true for partial reload
     * >> This parameter is optional.
     * >> The default value is false.
     */
-  var qPartial: js.UndefOr[Boolean] = js.native
+  var qPartial: js.UndefOr[Boolean] = js.undefined
 }
 object IDoReloadExParams {
   

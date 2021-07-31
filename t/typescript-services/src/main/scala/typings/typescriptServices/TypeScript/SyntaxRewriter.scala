@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxRewriter extends ISyntaxVisitor {
+trait SyntaxRewriter
+  extends StObject
+     with ISyntaxVisitor {
   
-  def visitList(list: ISyntaxList): ISyntaxList = js.native
+  def visitList(list: ISyntaxList): ISyntaxList
   
-  def visitNode(node: SyntaxNode): SyntaxNode = js.native
+  def visitNode(node: SyntaxNode): SyntaxNode
   
-  def visitNodeOrToken(node: ISyntaxNodeOrToken): ISyntaxNodeOrToken = js.native
+  def visitNodeOrToken(node: ISyntaxNodeOrToken): ISyntaxNodeOrToken
   
-  def visitSeparatedList(list: ISeparatedSyntaxList): ISeparatedSyntaxList = js.native
+  def visitSeparatedList(list: ISeparatedSyntaxList): ISeparatedSyntaxList
 }
 object SyntaxRewriter {
   

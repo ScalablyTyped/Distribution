@@ -2,19 +2,17 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A file or directory to install on the device before the test starts.
   */
-@js.native
 trait SchemaRegularFile extends StObject {
   
   /**
     * Required. The source file.
     */
-  var content: js.UndefOr[SchemaFileReference] = js.native
+  var content: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * Required. Where to put the content on the device. Must be an absolute,
@@ -32,7 +30,7 @@ trait SchemaRegularFile extends StObject {
     * Environment API&lt;/a&gt; in app and test code to access files on the
     * device in a portable way.
     */
-  var devicePath: js.UndefOr[String] = js.native
+  var devicePath: js.UndefOr[String] = js.undefined
 }
 object SchemaRegularFile {
   

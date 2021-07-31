@@ -7,7 +7,6 @@ import typings.rcMentions.optionMod.OptionProps
 import typings.react.mod.SFC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -83,8 +82,7 @@ object mod {
     }
     
     /* static member */
-    @JSImport("rc-mentions", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): PartialMentionsState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: MentionsProps, prevState: MentionsState): PartialMentionsState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialMentionsState]
   }
 }

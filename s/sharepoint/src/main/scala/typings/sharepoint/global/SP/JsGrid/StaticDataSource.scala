@@ -4,13 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.SP.JsGrid.IGridData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.JsGrid.StaticDataSource")
 @js.native
 class StaticDataSource protected ()
-  extends typings.sharepoint.SP.JsGrid.StaticDataSource {
+  extends StObject
+     with typings.sharepoint.SP.JsGrid.StaticDataSource {
   def this(jsGridData: IGridData) = this()
   def this(
     jsGridData: IGridData,
@@ -18,7 +18,7 @@ class StaticDataSource protected ()
         /* recordKey */ String, 
         /* key */ String, 
         /* dataPropMap */ StringDictionary[js.Any], 
-        _
+        js.Any
       ]
   ) = this()
 }

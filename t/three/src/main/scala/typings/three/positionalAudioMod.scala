@@ -5,7 +5,6 @@ import typings.three.audioListenerMod.AudioListener
 import typings.three.audioMod.Audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positionalAudioMod {

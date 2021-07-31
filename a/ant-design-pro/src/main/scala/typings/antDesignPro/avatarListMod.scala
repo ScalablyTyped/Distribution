@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object avatarListMod {
@@ -33,20 +32,19 @@ object avatarListMod {
   
   type AvatarList = Component[AvatarListProps, js.Any, js.Any]
   
-  @js.native
   trait AvatarListProps extends StObject {
     
-    var Item: js.UndefOr[ReactElement] = js.native
+    var Item: js.UndefOr[ReactElement] = js.undefined
     
-    var children: ReactElement | js.Array[ReactElement] = js.native
+    var children: ReactElement | js.Array[ReactElement]
     
-    var excessItemsStyle: js.UndefOr[CSSProperties] = js.native
+    var excessItemsStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[SizeType] = js.native
+    var size: js.UndefOr[SizeType] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AvatarListProps {
     

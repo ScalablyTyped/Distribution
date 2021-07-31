@@ -11,8 +11,8 @@ A small utility for creating warnings and emitting them.
 | Full name          | fastify-warning |
 | Keywords           | fastify, error, warning, utility, plugin, emit, once |
 | # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 73244 |
+| # dependents       | 4 |
+| # downloads        | 1631541 |
 | # stars            | 0 |
 
 ## Links

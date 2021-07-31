@@ -3,13 +3,13 @@ package typings.slickgrid.Slick
 import typings.slickgrid.Slick.Editors.Editor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnBeforeCellEditorDestroyEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnBeforeCellEditorDestroyEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var editor: Editor[T] = js.native
+  var editor: Editor[T]
 }
 object OnBeforeCellEditorDestroyEventArgs {
   
@@ -20,7 +20,7 @@ object OnBeforeCellEditorDestroyEventArgs {
   }
   
   @scala.inline
-  implicit class OnBeforeCellEditorDestroyEventArgsMutableBuilder[Self <: OnBeforeCellEditorDestroyEventArgs[_], T /* <: SlickData */] (val x: Self with OnBeforeCellEditorDestroyEventArgs[T]) extends AnyVal {
+  implicit class OnBeforeCellEditorDestroyEventArgsMutableBuilder[Self <: OnBeforeCellEditorDestroyEventArgs[?], T /* <: SlickData */] (val x: Self & OnBeforeCellEditorDestroyEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])

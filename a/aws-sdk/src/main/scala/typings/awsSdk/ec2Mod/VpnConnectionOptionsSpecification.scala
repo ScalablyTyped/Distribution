@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnectionOptionsSpecification extends StObject {
   
   /**
     * Indicate whether to enable acceleration for the VPN connection. Default: false 
     */
-  var EnableAcceleration: js.UndefOr[Boolean] = js.native
+  var EnableAcceleration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: 0.0.0.0/0 
     */
-  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection. Default: ::/0 
     */
-  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 CIDR on the AWS side of the VPN connection. Default: 0.0.0.0/0 
     */
-  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the AWS side of the VPN connection. Default: ::/0 
     */
-  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * Indicate whether the VPN connection uses static routes only. If you are creating a VPN connection for a device that does not support BGP, you must specify true. Use CreateVpnConnectionRoute to create a static route. Default: false 
     */
-  var StaticRoutesOnly: js.UndefOr[Boolean] = js.native
+  var StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicate whether the VPN tunnels process IPv4 or IPv6 traffic. Default: ipv4 
     */
-  var TunnelInsideIpVersion: js.UndefOr[typings.awsSdk.ec2Mod.TunnelInsideIpVersion] = js.native
+  var TunnelInsideIpVersion: js.UndefOr[typings.awsSdk.ec2Mod.TunnelInsideIpVersion] = js.undefined
   
   /**
     * The tunnel options for the VPN connection.
     */
-  var TunnelOptions: js.UndefOr[VpnTunnelOptionsSpecificationsList] = js.native
+  var TunnelOptions: js.UndefOr[VpnTunnelOptionsSpecificationsList] = js.undefined
 }
 object VpnConnectionOptionsSpecification {
   

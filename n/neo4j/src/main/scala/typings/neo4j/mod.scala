@@ -4,7 +4,6 @@ import typings.request.mod.Request
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -158,12 +157,11 @@ object mod {
     var url: String = js.native
   }
   
-  @js.native
   trait Authentication extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object Authentication {
     
@@ -184,10 +182,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangePasswordOptions extends StObject {
     
-    var password: String = js.native
+    var password: String
   }
   object ChangePasswordOptions {
     
@@ -205,12 +202,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ConstraintOptions extends StObject {
     
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
-    var property: js.UndefOr[js.Any] = js.native
+    var property: js.UndefOr[js.Any] = js.undefined
   }
   object ConstraintOptions {
     
@@ -237,18 +233,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CypherOptions extends StObject {
     
-    var commit: js.UndefOr[js.Object] = js.native
+    var commit: js.UndefOr[js.Object] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var lean: js.UndefOr[js.Object] = js.native
+    var lean: js.UndefOr[js.Object] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
   }
   object CypherOptions {
     
@@ -295,38 +290,37 @@ object mod {
   
   type DoneCallback = js.Function1[/* error */ js.Any, Unit]
   
-  @js.native
   trait GraphDatabaseOptions extends StObject {
     
     /**
       * HTTP agent.
       * @type {any}
       */
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Authentication information.
       * @type {string|Authentication}
       */
-    var auth: String | Authentication = js.native
+    var auth: String | Authentication
     
     /**
       * HTTP headers.
       * @type {Object}
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Proxy address.
       * @type {string}
       */
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     /**
       * URL connection.
       * @type {string}
       */
-    var url: String = js.native
+    var url: String
   }
   object GraphDatabaseOptions {
     
@@ -365,16 +359,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpOptions extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    var raw: js.Any = js.native
+    var raw: js.Any
   }
   object HttpOptions {
     
@@ -401,12 +394,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IndexOptions extends StObject {
     
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
-    var property: js.UndefOr[js.Any] = js.native
+    var property: js.UndefOr[js.Any] = js.undefined
   }
   object IndexOptions {
     
@@ -435,22 +427,21 @@ object mod {
   
   type ResultCallback = js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
   
-  @js.native
   trait Transaction extends StObject {
     
-    def commit(callback: DoneCallback): Unit = js.native
+    def commit(callback: DoneCallback): Unit
     
-    def cypher(options: CypherOptions, callback: ResultCallback): Request = js.native
+    def cypher(options: CypherOptions, callback: ResultCallback): Request
     
-    var expiresAt: Date = js.native
+    var expiresAt: Date
     
-    var expiresIn: Date | Double = js.native
+    var expiresIn: Date | Double
     
-    def renew(callback: DoneCallback): Unit = js.native
+    def renew(callback: DoneCallback): Unit
     
-    def rollback(callback: DoneCallback): Unit = js.native
+    def rollback(callback: DoneCallback): Unit
     
-    var state: String = js.native
+    var state: String
   }
   object Transaction {
     

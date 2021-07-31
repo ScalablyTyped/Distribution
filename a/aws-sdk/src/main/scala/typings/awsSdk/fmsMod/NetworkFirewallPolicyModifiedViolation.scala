@@ -2,26 +2,24 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkFirewallPolicyModifiedViolation extends StObject {
   
   /**
     * The policy that's currently in use in the individual account. 
     */
-  var CurrentPolicyDescription: js.UndefOr[NetworkFirewallPolicyDescription] = js.native
+  var CurrentPolicyDescription: js.UndefOr[NetworkFirewallPolicyDescription] = js.undefined
   
   /**
     * The policy that should be in use in the individual account in order to be compliant. 
     */
-  var ExpectedPolicyDescription: js.UndefOr[NetworkFirewallPolicyDescription] = js.native
+  var ExpectedPolicyDescription: js.UndefOr[NetworkFirewallPolicyDescription] = js.undefined
   
   /**
     * The ID of the AWS Network Firewall or VPC resource that's in violation.
     */
-  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.native
+  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
 }
 object NetworkFirewallPolicyModifiedViolation {
   

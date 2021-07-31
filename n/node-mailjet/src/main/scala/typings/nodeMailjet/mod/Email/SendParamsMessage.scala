@@ -2,53 +2,51 @@ package typings.nodeMailjet.mod.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendParamsMessage extends StObject {
   
-  var Attachments: js.UndefOr[js.Array[Attachment]] = js.native
+  var Attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
   
-  var Bcc: js.UndefOr[js.Array[SendParamsRecipient]] = js.native
+  var Bcc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
   
-  var Cc: js.UndefOr[js.Array[SendParamsRecipient]] = js.native
+  var Cc: js.UndefOr[js.Array[SendParamsRecipient]] = js.undefined
   
-  var CustomCampaign: js.UndefOr[String] = js.native
+  var CustomCampaign: js.UndefOr[String] = js.undefined
   
-  var CustomID: js.UndefOr[String] = js.native
+  var CustomID: js.UndefOr[String] = js.undefined
   
-  var DeduplicateCampaign: js.UndefOr[Boolean] = js.native
+  var DeduplicateCampaign: js.UndefOr[Boolean] = js.undefined
   
-  var EventPayload: js.UndefOr[String] = js.native
+  var EventPayload: js.UndefOr[String] = js.undefined
   
-  var From: typings.nodeMailjet.anon.Email = js.native
+  var From: typings.nodeMailjet.anon.Email
   
-  var HTMLPart: js.UndefOr[String] = js.native
+  var HTMLPart: js.UndefOr[String] = js.undefined
   
-  var Headers: js.UndefOr[js.Object] = js.native
+  var Headers: js.UndefOr[js.Object] = js.undefined
   
-  var InlinedAttachments: js.UndefOr[js.Array[InlinedAttachment]] = js.native
+  var InlinedAttachments: js.UndefOr[js.Array[InlinedAttachment]] = js.undefined
   
-  var MonitoringCategory: js.UndefOr[String] = js.native
+  var MonitoringCategory: js.UndefOr[String] = js.undefined
   
-  var ReplyTo: js.UndefOr[SendParamsRecipient] = js.native
+  var ReplyTo: js.UndefOr[SendParamsRecipient] = js.undefined
   
-  var Sender: js.UndefOr[typings.nodeMailjet.anon.Email] = js.native
+  var Sender: js.UndefOr[typings.nodeMailjet.anon.Email] = js.undefined
   
-  var Subject: js.UndefOr[String] = js.native
+  var Subject: js.UndefOr[String] = js.undefined
   
-  var TemplateID: js.UndefOr[Double] = js.native
+  var TemplateID: js.UndefOr[Double] = js.undefined
   
-  var TemplateLanguage: js.UndefOr[Boolean] = js.native
+  var TemplateLanguage: js.UndefOr[Boolean] = js.undefined
   
-  var TextPart: js.UndefOr[String] = js.native
+  var TextPart: js.UndefOr[String] = js.undefined
   
-  var To: js.Array[SendParamsRecipient] = js.native
+  var To: js.Array[SendParamsRecipient]
   
-  var URLTags: js.UndefOr[String] = js.native
+  var URLTags: js.UndefOr[String] = js.undefined
   
-  var Variables: js.UndefOr[js.Object] = js.native
+  var Variables: js.UndefOr[js.Object] = js.undefined
 }
 object SendParamsMessage {
   

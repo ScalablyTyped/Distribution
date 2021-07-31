@@ -2,21 +2,19 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ray extends StObject {
   
-  var checkCollisionResponse: Boolean = js.native
+  var checkCollisionResponse: Boolean
   
-  var from: Vec3 = js.native
+  var from: Vec3
   
-  def getAABB(result: RaycastResult): Unit = js.native
+  def getAABB(result: RaycastResult): Unit
   
-  var precision: Double = js.native
+  var precision: Double
   
-  var to: Vec3 = js.native
+  var to: Vec3
 }
 object Ray {
   

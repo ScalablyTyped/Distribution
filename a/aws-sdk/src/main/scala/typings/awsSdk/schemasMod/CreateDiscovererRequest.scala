@@ -2,26 +2,24 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDiscovererRequest extends StObject {
   
   /**
     * A description for the discoverer.
     */
-  var Description: js.UndefOr[stringMin0Max256] = js.native
+  var Description: js.UndefOr[stringMin0Max256] = js.undefined
   
   /**
     * The ARN of the event bus.
     */
-  var SourceArn: stringMin20Max1600 = js.native
+  var SourceArn: stringMin20Max1600
   
   /**
     * Tags associated with the resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.undefined
 }
 object CreateDiscovererRequest {
   

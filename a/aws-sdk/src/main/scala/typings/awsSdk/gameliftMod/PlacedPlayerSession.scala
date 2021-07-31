@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacedPlayerSession extends StObject {
   
   /**
     * A unique identifier for a player that is associated with this player session.
     */
-  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.native
+  var PlayerId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * A unique identifier for a player session.
     */
-  var PlayerSessionId: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionId] = js.native
+  var PlayerSessionId: js.UndefOr[typings.awsSdk.gameliftMod.PlayerSessionId] = js.undefined
 }
 object PlacedPlayerSession {
   

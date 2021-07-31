@@ -2,36 +2,34 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /**
     * Whether the user can use SSH.
     */
-  var AllowSsh: js.UndefOr[Boolean] = js.native
+  var AllowSsh: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the user can use sudo.
     */
-  var AllowSudo: js.UndefOr[Boolean] = js.native
+  var AllowSudo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for an AWS Identity and Access Management (IAM) role. For more information about IAM ARNs, see Using Identifiers.
     */
-  var IamUserArn: js.UndefOr[String] = js.native
+  var IamUserArn: js.UndefOr[String] = js.undefined
   
   /**
     * The user's permission level, which must be the following:    deny     show     deploy     manage     iam_only    For more information on the permissions associated with these levels, see Managing User Permissions 
     */
-  var Level: js.UndefOr[String] = js.native
+  var Level: js.UndefOr[String] = js.undefined
   
   /**
     * A stack ID.
     */
-  var StackId: js.UndefOr[String] = js.native
+  var StackId: js.UndefOr[String] = js.undefined
 }
 object Permission {
   

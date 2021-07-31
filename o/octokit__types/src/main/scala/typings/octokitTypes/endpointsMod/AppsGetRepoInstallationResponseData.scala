@@ -6,39 +6,37 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsGetRepoInstallationResponseData extends StObject {
   
-  var access_tokens_url: String = js.native
+  var access_tokens_url: String
   
-  var account: Avatarurl = js.native
+  var account: Avatarurl
   
-  var app_id: Double = js.native
+  var app_id: Double
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var permissions: Checks = js.native
+  var permissions: Checks
   
-  var repositories_url: String = js.native
+  var repositories_url: String
   
-  var repository_selection: all | selected = js.native
+  var repository_selection: all | selected
   
-  var single_file_name: String = js.native
+  var single_file_name: String
   
-  var target_id: Double = js.native
+  var target_id: Double
   
-  var target_type: String = js.native
+  var target_type: String
   
-  var updated_at: String = js.native
+  var updated_at: String
 }
 object AppsGetRepoInstallationResponseData {
   

@@ -2,15 +2,13 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerializationContext extends StObject {
   
-  def addClientObject(obj: ClientObject): Unit = js.native
+  def addClientObject(obj: ClientObject): Unit
   
-  def addObjectPath(path: ObjectPath): Unit = js.native
+  def addObjectPath(path: ObjectPath): Unit
 }
 object SerializationContext {
   

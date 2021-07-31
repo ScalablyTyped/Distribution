@@ -3,23 +3,21 @@ package typings.vexflow.anon
 import typings.vexflow.Vex.Flow.Fraction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beammiddleonly extends StObject {
   
-  var beam_middle_only: js.UndefOr[Boolean] = js.native
+  var beam_middle_only: js.UndefOr[Boolean] = js.undefined
   
-  var beam_rests: js.UndefOr[Boolean] = js.native
+  var beam_rests: js.UndefOr[Boolean] = js.undefined
   
-  var groups: js.UndefOr[js.Array[Fraction]] = js.native
+  var groups: js.UndefOr[js.Array[Fraction]] = js.undefined
   
-  var maintain_stem_directions: js.UndefOr[Boolean] = js.native
+  var maintain_stem_directions: js.UndefOr[Boolean] = js.undefined
   
-  var show_stemlets: js.UndefOr[Boolean] = js.native
+  var show_stemlets: js.UndefOr[Boolean] = js.undefined
   
-  var stem_direction: js.UndefOr[Double] = js.native
+  var stem_direction: js.UndefOr[Double] = js.undefined
 }
 object Beammiddleonly {
   

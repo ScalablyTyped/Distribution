@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig extends StObject {
   
   /** Optional. Level of the catalog at which events are uploaded. See https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for more details. */
-  var eventItemLevel: js.UndefOr[String] = js.native
+  var eventItemLevel: js.UndefOr[String] = js.undefined
   
   /** Optional. Level of the catalog at which predictions are made. See https://cloud.google.com/recommendations-ai/docs/catalog#catalog-levels for more details. */
-  var predictItemLevel: js.UndefOr[String] = js.native
+  var predictItemLevel: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1CatalogItemLevelConfig {
   

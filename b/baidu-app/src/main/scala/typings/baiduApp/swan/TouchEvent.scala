@@ -3,15 +3,15 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchEvent[T /* <: TouchEventType */] extends BaseEvent[T, X] {
+trait TouchEvent[T /* <: TouchEventType */]
+  extends StObject
+     with BaseEvent[T, X] {
   
-  var changedTouches: js.Array[Touch] = js.native
+  var changedTouches: js.Array[Touch]
   
-  var touches: js.Array[Touch] = js.native
+  var touches: js.Array[Touch]
 }
 object TouchEvent {
   
@@ -31,7 +31,7 @@ object TouchEvent {
   }
   
   @scala.inline
-  implicit class TouchEventMutableBuilder[Self <: TouchEvent[_], T /* <: TouchEventType */] (val x: Self with TouchEvent[T]) extends AnyVal {
+  implicit class TouchEventMutableBuilder[Self <: TouchEvent[?], T /* <: TouchEventType */] (val x: Self & TouchEvent[T]) extends AnyVal {
     
     @scala.inline
     def setChangedTouches(value: js.Array[Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])

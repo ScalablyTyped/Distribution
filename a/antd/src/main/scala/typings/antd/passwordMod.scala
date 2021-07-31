@@ -7,25 +7,25 @@ import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object passwordMod extends Shortcut {
   
   @JSImport("antd/lib/input/Password", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PasswordProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
-  trait PasswordProps extends InputProps {
+  trait PasswordProps
+    extends StObject
+       with InputProps {
     
-    val action: js.UndefOr[String] = js.native
+    val action: js.UndefOr[String] = js.undefined
     
-    var iconRender: js.UndefOr[js.Function1[/* visible */ Boolean, ReactNode]] = js.native
+    var iconRender: js.UndefOr[js.Function1[/* visible */ Boolean, ReactNode]] = js.undefined
     
-    val inputPrefixCls: js.UndefOr[String] = js.native
+    val inputPrefixCls: js.UndefOr[String] = js.undefined
     
-    var visibilityToggle: js.UndefOr[Boolean] = js.native
+    var visibilityToggle: js.UndefOr[Boolean] = js.undefined
   }
   object PasswordProps {
     
@@ -64,8 +64,8 @@ object passwordMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PasswordProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `passwordMod.foo` */
-  override def _to: ForwardRefExoticComponent[PasswordProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[PasswordProps & RefAttributes[js.Any]] = default
 }

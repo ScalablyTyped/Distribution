@@ -2,15 +2,13 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSEmailSubscriptionState extends StObject {
   
-  var emailAddress: String = js.native
+  var emailAddress: String
   
-  var emailUserId: String = js.native
+  var emailUserId: String
 }
 object OSEmailSubscriptionState {
   

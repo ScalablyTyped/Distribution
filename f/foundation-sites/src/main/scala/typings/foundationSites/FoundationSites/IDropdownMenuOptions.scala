@@ -2,31 +2,29 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDropdownMenuOptions extends StObject {
   
-  var alignment: js.UndefOr[String] = js.native
+  var alignment: js.UndefOr[String] = js.undefined
   
-  var autoclose: js.UndefOr[Boolean] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.undefined
   
-  var clickOpen: js.UndefOr[Boolean] = js.native
+  var clickOpen: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var closingTime: js.UndefOr[Double] = js.native
+  var closingTime: js.UndefOr[Double] = js.undefined
   
-  var disableHover: js.UndefOr[Boolean] = js.native
+  var disableHover: js.UndefOr[Boolean] = js.undefined
   
-  var forceFollow: js.UndefOr[Boolean] = js.native
+  var forceFollow: js.UndefOr[Boolean] = js.undefined
   
-  var hoverDelay: js.UndefOr[Double] = js.native
+  var hoverDelay: js.UndefOr[Double] = js.undefined
   
-  var rightClass: js.UndefOr[String] = js.native
+  var rightClass: js.UndefOr[String] = js.undefined
   
-  var verticalClass: js.UndefOr[String] = js.native
+  var verticalClass: js.UndefOr[String] = js.undefined
 }
 object IDropdownMenuOptions {
   

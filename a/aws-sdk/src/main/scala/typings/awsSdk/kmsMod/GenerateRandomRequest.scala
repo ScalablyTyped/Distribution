@@ -2,21 +2,19 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateRandomRequest extends StObject {
   
   /**
     * Generates the random byte string in the AWS CloudHSM cluster that is associated with the specified custom key store. To find the ID of a custom key store, use the DescribeCustomKeyStores operation.
     */
-  var CustomKeyStoreId: js.UndefOr[CustomKeyStoreIdType] = js.native
+  var CustomKeyStoreId: js.UndefOr[CustomKeyStoreIdType] = js.undefined
   
   /**
     * The length of the byte string.
     */
-  var NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.native
+  var NumberOfBytes: js.UndefOr[NumberOfBytesType] = js.undefined
 }
 object GenerateRandomRequest {
   

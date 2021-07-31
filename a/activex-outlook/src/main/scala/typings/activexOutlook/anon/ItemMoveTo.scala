@@ -2,17 +2,15 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemMoveTo extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val Item: js.Any = js.native
+  val Item: js.Any
   
-  val MoveTo: typings.activexOutlook.Outlook.Folder = js.native
+  val MoveTo: typings.activexOutlook.Outlook.Folder
 }
 object ItemMoveTo {
   

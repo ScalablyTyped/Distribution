@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTrialComponentsRequest extends StObject {
   
   /**
     * A filter that returns only components created after the specified time.
     */
-  var CreatedAfter: js.UndefOr[Timestamp] = js.native
+  var CreatedAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only components created before the specified time.
     */
-  var CreatedBefore: js.UndefOr[Timestamp] = js.native
+  var CreatedBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only components that are part of the specified experiment. If you specify ExperimentName, you can't filter by SourceArn or TrialName.
     */
-  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The maximum number of components to return in the response. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the previous call to ListTrialComponents didn't return the full set of components, the call returns a token for getting the next set of components.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The property used to sort results. The default value is CreationTime.
     */
-  var SortBy: js.UndefOr[SortTrialComponentsBy] = js.native
+  var SortBy: js.UndefOr[SortTrialComponentsBy] = js.undefined
   
   /**
     * The sort order. The default value is Descending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that returns only components that have the specified source Amazon Resource Name (ARN). If you specify SourceArn, you can't filter by ExperimentName or TrialName.
     */
-  var SourceArn: js.UndefOr[String256] = js.native
+  var SourceArn: js.UndefOr[String256] = js.undefined
   
   /**
     * A filter that returns only components that are part of the specified trial. If you specify TrialName, you can't filter by ExperimentName or SourceArn.
     */
-  var TrialName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialName: js.UndefOr[ExperimentEntityName] = js.undefined
 }
 object ListTrialComponentsRequest {
   

@@ -6,7 +6,6 @@ import typings.agGrid.originalColumnGroupChildMod.OriginalColumnGroupChild
 import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnUtilsMod {

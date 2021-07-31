@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,11 +29,17 @@ sealed trait MIPMAP_MODES extends StObject
 object MIPMAP_MODES extends StObject {
   
   @js.native
-  sealed trait OFF extends MIPMAP_MODES
+  sealed trait OFF
+    extends StObject
+       with MIPMAP_MODES
   
   @js.native
-  sealed trait ON extends MIPMAP_MODES
+  sealed trait ON
+    extends StObject
+       with MIPMAP_MODES
   
   @js.native
-  sealed trait POW2 extends MIPMAP_MODES
+  sealed trait POW2
+    extends StObject
+       with MIPMAP_MODES
 }

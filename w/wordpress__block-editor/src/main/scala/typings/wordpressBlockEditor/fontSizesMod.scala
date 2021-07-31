@@ -6,10 +6,13 @@ import typings.wordpressBlockEditor.anon.PartialEditorFontSizePick
 import typings.wordpressBlockEditor.mod.EditorFontSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontSizesMod {
+  
+  @JSImport("@wordpress/block-editor/components/font-sizes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object FontSizePicker extends Shortcut {
     
@@ -18,16 +21,15 @@ object fontSizesMod {
     val ^ : ComponentType[Props] = js.native
     
     /* Inlined std.Omit<@wordpress/components.@wordpress/components.FontSizePicker.Props, 'disableCustomFontSizes' | 'fontSizes'> */
-    @js.native
     trait Props extends StObject {
       
-      var fallbackFontSize: js.UndefOr[Double] = js.native
+      var fallbackFontSize: js.UndefOr[Double] = js.undefined
       
-      var onChange: js.Function0[Unit] = js.native
+      var onChange: js.Function0[Unit]
       
-      var value: js.UndefOr[Double] = js.native
+      var value: js.UndefOr[Double] = js.undefined
       
-      var withSlider: js.UndefOr[Boolean] = js.native
+      var withSlider: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       
@@ -69,22 +71,14 @@ object fontSizesMod {
     override def _to: ComponentType[Props] = ^
   }
   
-  @JSImport("@wordpress/block-editor/components/font-sizes", "getFontSize")
-  @js.native
-  def getFontSize(
-    fontSizes: js.Array[EditorFontSize],
-    fontSizeAttribute: js.UndefOr[scala.Nothing],
-    customFontSizeAttribute: Double
-  ): PartialEditorFontSizePick = js.native
-  @JSImport("@wordpress/block-editor/components/font-sizes", "getFontSize")
-  @js.native
-  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = js.native
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: Unit, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
   
-  @JSImport("@wordpress/block-editor/components/font-sizes", "getFontSizeClass")
-  @js.native
-  def getFontSizeClass(fontSizeSlug: String): String = js.native
+  @scala.inline
+  def getFontSizeClass(fontSizeSlug: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontSizeClass")(fontSizeSlug.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/block-editor/components/font-sizes", "withFontSizes")
-  @js.native
-  def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFontSizes")(attributeNames.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
 }

@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexTemplateRuntimeEnvironment extends StObject {
   
   /** Additional experiment flags for the job. */
-  var additionalExperiments: js.UndefOr[js.Array[String]] = js.native
+  var additionalExperiments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Additional user labels to be specified for the job. Keys and values must follow the restrictions specified in the [labeling
@@ -20,61 +18,61 @@ trait FlexTemplateRuntimeEnvironment extends StObject {
   var additionalUserLabels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Whether to enable Streaming Engine for the job. */
-  var enableStreamingEngine: js.UndefOr[Boolean] = js.native
+  var enableStreamingEngine: js.UndefOr[Boolean] = js.undefined
   
   /** Configuration for VM IPs. */
-  var ipConfiguration: js.UndefOr[String] = js.native
+  var ipConfiguration: js.UndefOr[String] = js.undefined
   
   /** Name for the Cloud KMS key for the job. Key format is: projects//locations//keyRings//cryptoKeys/ */
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
   
   /** The machine type to use for the job. Defaults to the value from the template if not specified. */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** The maximum number of Google Compute Engine instances to be made available to your pipeline during execution, from 1 to 1000. */
-  var maxWorkers: js.UndefOr[Double] = js.native
+  var maxWorkers: js.UndefOr[Double] = js.undefined
   
   /** Network to which VMs will be assigned. If empty or unspecified, the service will use the network "default". */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /** The initial number of Google Compute Engine instances for the job. */
-  var numWorkers: js.UndefOr[Double] = js.native
+  var numWorkers: js.UndefOr[Double] = js.undefined
   
   /** The email address of the service account to run the job as. */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Subnetwork to which VMs will be assigned, if desired. You can specify a subnetwork using either a complete URL or an abbreviated path. Expected to be of the form
     * "https://www.googleapis.com/compute/v1/projects/HOST_PROJECT_ID/regions/REGION/subnetworks/SUBNETWORK" or "regions/REGION/subnetworks/SUBNETWORK". If the subnetwork is located in a
     * Shared VPC network, you must use the complete URL.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /** The Cloud Storage path to use for temporary files. Must be a valid Cloud Storage URL, beginning with `gs://`. */
-  var tempLocation: js.UndefOr[String] = js.native
+  var tempLocation: js.UndefOr[String] = js.undefined
   
   /**
     * The Compute Engine region (https://cloud.google.com/compute/docs/regions-zones/regions-zones) in which worker processing should occur, e.g. "us-west1". Mutually exclusive with
     * worker_zone. If neither worker_region nor worker_zone is specified, default to the control plane's region.
     */
-  var workerRegion: js.UndefOr[String] = js.native
+  var workerRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The Compute Engine zone (https://cloud.google.com/compute/docs/regions-zones/regions-zones) in which worker processing should occur, e.g. "us-west1-a". Mutually exclusive with
     * worker_region. If neither worker_region nor worker_zone is specified, a zone in the control plane's region is chosen based on available capacity. If both `worker_zone` and `zone`
     * are set, `worker_zone` takes precedence.
     */
-  var workerZone: js.UndefOr[String] = js.native
+  var workerZone: js.UndefOr[String] = js.undefined
   
   /**
     * The Compute Engine [availability zone](https://cloud.google.com/compute/docs/regions-zones/regions-zones) for launching worker instances to run your pipeline. In the future,
     * worker_zone will take precedence.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object FlexTemplateRuntimeEnvironment {
   
@@ -100,7 +98,7 @@ object FlexTemplateRuntimeEnvironment {
     def setAdditionalUserLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.FlexTemplateRuntimeEnvironment & TopLevel[js.Any]
     ): Self = StObject.set(x, "additionalUserLabels", value.asInstanceOf[js.Any])
     
     @scala.inline

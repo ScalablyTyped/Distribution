@@ -3,10 +3,8 @@ package typings.hapiJoi.mod
 import typings.hapiJoi.hapiJoiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailOptions extends StObject {
   
   /**
@@ -14,42 +12,42 @@ trait EmailOptions extends StObject {
     *
     * @default true
     */
-  var allowUnicode: js.UndefOr[Boolean] = js.native
+  var allowUnicode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * if `true`, ignore invalid email length errors.
     *
     * @default false
     */
-  var ignoreLength: js.UndefOr[Boolean] = js.native
+  var ignoreLength: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of segments required for the domain. Be careful since some domains, such as `io`, directly allow email.
     *
     * @default 2
     */
-  var minDomainSegments: js.UndefOr[Double] = js.native
+  var minDomainSegments: js.UndefOr[Double] = js.undefined
   
   /**
     * if true, allows multiple email addresses in a single string, separated by , or the separator characters.
     *
     * @default false
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when multiple is true, overrides the default , separator. String can be a single character or multiple separator characters.
     *
     * @default ','
     */
-  var separator: js.UndefOr[String | js.Array[String]] = js.native
+  var separator: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Options for TLD (top level domain) validation. By default, the TLD must be a valid name listed on the [IANA registry](http://data.iana.org/TLD/tlds-alpha-by-domain.txt)
     *
     * @default { allow: true }
     */
-  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.native
+  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.undefined
 }
 object EmailOptions {
   

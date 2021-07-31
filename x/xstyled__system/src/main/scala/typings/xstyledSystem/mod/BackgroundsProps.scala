@@ -2,12 +2,11 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundsProps
-  extends BackgroundProps
+  extends StObject
+     with BackgroundProps
      with BackgroundColorProps[StyledSystemLength]
      with BackgroundImageProps
      with BackgroundSizeProps[StyledSystemLength]

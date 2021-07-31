@@ -3,15 +3,13 @@ package typings.wordpressComponents.anon
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fill extends StObject {
   
-  var Fill: FC[OmitPropsname] = js.native
+  var Fill: FC[OmitPropsname]
   
-  var Slot: FC[OmitPropsnameBubblesVirtually] = js.native
+  var Slot: FC[OmitPropsnameBubblesVirtually]
 }
 object Fill {
   

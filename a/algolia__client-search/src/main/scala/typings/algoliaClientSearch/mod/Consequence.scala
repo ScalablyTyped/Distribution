@@ -4,37 +4,35 @@ import typings.algoliaClientSearch.anon.ConsequenceParamsPickSear
 import typings.algoliaClientSearch.anon.ObjectID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Consequence extends StObject {
   
   /**
     * Whether the Query Rule should promote or not promoted items.
     */
-  val filterPromotes: js.UndefOr[Boolean] = js.native
+  val filterPromotes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Objects to hide from hits.
     */
-  val hide: js.UndefOr[js.Array[ObjectID]] = js.native
+  val hide: js.UndefOr[js.Array[ObjectID]] = js.undefined
   
   /**
     * Additional search parameters. Any valid search parameter is allowed.
     */
-  val params: js.UndefOr[ConsequenceParamsPickSear] = js.native
+  val params: js.UndefOr[ConsequenceParamsPickSear] = js.undefined
   
   /**
     * Objects to promote as hits.
     */
-  val promote: js.UndefOr[js.Array[ConsequencePromote]] = js.native
+  val promote: js.UndefOr[js.Array[ConsequencePromote]] = js.undefined
   
   /**
     * Custom JSON object that will be appended to the userData array in the response.
     * This object is not interpreted by the API. It is limited to 1kB of minified JSON.
     */
-  val userData: js.UndefOr[js.Any] = js.native
+  val userData: js.UndefOr[js.Any] = js.undefined
 }
 object Consequence {
   

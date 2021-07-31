@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace profiles. */
@@ -20,7 +19,9 @@ object profiles {
     * Constructs a new Function.
     * @param [properties] Properties to set
     */
-  class Function () extends IFunction {
+  class Function ()
+    extends StObject
+       with IFunction {
     def this(properties: IFunction) = this()
     
     /** Function filename. */
@@ -51,18 +52,20 @@ object profiles {
   }
   object Function {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Function instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Function instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.create")
-    @js.native
-    def create(): Function = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.create")
-    @js.native
-    def create(properties: IFunction): Function = js.native
+    @scala.inline
+    def create(): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Function]
+    @scala.inline
+    def create(properties: IFunction): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Decodes a Function message from the specified reader or buffer.
@@ -73,18 +76,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decode")
-    @js.native
-    def decode(reader: Reader): Function = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Function = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decode")
-    @js.native
-    def decode(reader: Uint8Array): Function = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Function = js.native
+    @scala.inline
+    def decode(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
+    @scala.inline
+    def decode(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Function = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Function]
     
     /**
       * Decodes a Function message from the specified reader or buffer, length delimited.
@@ -94,12 +93,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Function = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Function = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Encodes the specified Function message. Does not implicitly {@link perftools.profiles.Function.verify|verify} messages.
@@ -108,12 +105,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.encode")
-    @js.native
-    def encode(message: IFunction): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.encode")
-    @js.native
-    def encode(message: IFunction, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Function message, length delimited. Does not implicitly {@link perftools.profiles.Function.verify|verify} messages.
@@ -122,12 +117,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFunction): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFunction, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IFunction): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IFunction, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Function message from a plain object. Also converts values to their respective internal types.
@@ -135,9 +128,8 @@ object profiles {
       * @returns Function
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Function = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Function = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Function]
     
     /**
       * Creates a plain object from a Function message. Also converts values to other types if specified.
@@ -146,12 +138,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.toObject")
-    @js.native
-    def toObject(message: Function): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.toObject")
-    @js.native
-    def toObject(message: Function, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Function): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Function, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Function message.
@@ -159,9 +149,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Function.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Label. */
@@ -171,7 +160,9 @@ object profiles {
     * Constructs a new Label.
     * @param [properties] Properties to set
     */
-  class Label () extends ILabel {
+  class Label ()
+    extends StObject
+       with ILabel {
     def this(properties: ILabel) = this()
     
     /** Label key. */
@@ -198,18 +189,20 @@ object profiles {
   }
   object Label {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Label instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Label instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.create")
-    @js.native
-    def create(): Label = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.create")
-    @js.native
-    def create(properties: ILabel): Label = js.native
+    @scala.inline
+    def create(): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Label]
+    @scala.inline
+    def create(properties: ILabel): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Decodes a Label message from the specified reader or buffer.
@@ -220,18 +213,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decode")
-    @js.native
-    def decode(reader: Reader): Label = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Label = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decode")
-    @js.native
-    def decode(reader: Uint8Array): Label = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Label = js.native
+    @scala.inline
+    def decode(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
+    @scala.inline
+    def decode(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Label = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Label]
     
     /**
       * Decodes a Label message from the specified reader or buffer, length delimited.
@@ -241,12 +230,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Label = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Label = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Encodes the specified Label message. Does not implicitly {@link perftools.profiles.Label.verify|verify} messages.
@@ -255,12 +242,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.encode")
-    @js.native
-    def encode(message: ILabel): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.encode")
-    @js.native
-    def encode(message: ILabel, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Label message, length delimited. Does not implicitly {@link perftools.profiles.Label.verify|verify} messages.
@@ -269,12 +254,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILabel): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILabel, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ILabel): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ILabel, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Label message from a plain object. Also converts values to their respective internal types.
@@ -282,9 +265,8 @@ object profiles {
       * @returns Label
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Label = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Label = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Label]
     
     /**
       * Creates a plain object from a Label message. Also converts values to other types if specified.
@@ -293,12 +275,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.toObject")
-    @js.native
-    def toObject(message: Label): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.toObject")
-    @js.native
-    def toObject(message: Label, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Label): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Label, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Label message.
@@ -306,9 +286,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Label.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Line. */
@@ -318,7 +297,9 @@ object profiles {
     * Constructs a new Line.
     * @param [properties] Properties to set
     */
-  class Line () extends ILine {
+  class Line ()
+    extends StObject
+       with ILine {
     def this(properties: ILine) = this()
     
     /** Line functionId. */
@@ -337,18 +318,20 @@ object profiles {
   }
   object Line {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Line instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Line instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.create")
-    @js.native
-    def create(): Line = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.create")
-    @js.native
-    def create(properties: ILine): Line = js.native
+    @scala.inline
+    def create(): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Line]
+    @scala.inline
+    def create(properties: ILine): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Decodes a Line message from the specified reader or buffer.
@@ -359,18 +342,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decode")
-    @js.native
-    def decode(reader: Reader): Line = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Line = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decode")
-    @js.native
-    def decode(reader: Uint8Array): Line = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Line = js.native
+    @scala.inline
+    def decode(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
+    @scala.inline
+    def decode(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Line]
     
     /**
       * Decodes a Line message from the specified reader or buffer, length delimited.
@@ -380,12 +359,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Line = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Line = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Encodes the specified Line message. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
@@ -394,12 +371,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.encode")
-    @js.native
-    def encode(message: ILine): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.encode")
-    @js.native
-    def encode(message: ILine, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Line message, length delimited. Does not implicitly {@link perftools.profiles.Line.verify|verify} messages.
@@ -408,12 +383,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILine): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILine, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ILine): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ILine, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Line message from a plain object. Also converts values to their respective internal types.
@@ -421,9 +394,8 @@ object profiles {
       * @returns Line
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Line = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Line]
     
     /**
       * Creates a plain object from a Line message. Also converts values to other types if specified.
@@ -432,12 +404,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.toObject")
-    @js.native
-    def toObject(message: Line): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.toObject")
-    @js.native
-    def toObject(message: Line, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Line): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Line, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Line message.
@@ -445,9 +415,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Line.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Location. */
@@ -457,7 +426,9 @@ object profiles {
     * Constructs a new Location.
     * @param [properties] Properties to set
     */
-  class Location () extends ILocation {
+  class Location ()
+    extends StObject
+       with ILocation {
     def this(properties: ILocation) = this()
     
     /** Location address. */
@@ -488,18 +459,20 @@ object profiles {
   }
   object Location {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Location instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Location instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.create")
-    @js.native
-    def create(): Location = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.create")
-    @js.native
-    def create(properties: ILocation): Location = js.native
+    @scala.inline
+    def create(): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Location]
+    @scala.inline
+    def create(properties: ILocation): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer.
@@ -510,18 +483,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decode")
-    @js.native
-    def decode(reader: Reader): Location = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Location = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decode")
-    @js.native
-    def decode(reader: Uint8Array): Location = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Location = js.native
+    @scala.inline
+    def decode(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Location]
     
     /**
       * Decodes a Location message from the specified reader or buffer, length delimited.
@@ -531,12 +500,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Location = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Location = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Encodes the specified Location message. Does not implicitly {@link perftools.profiles.Location.verify|verify} messages.
@@ -545,12 +512,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.encode")
-    @js.native
-    def encode(message: ILocation): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.encode")
-    @js.native
-    def encode(message: ILocation, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Location message, length delimited. Does not implicitly {@link perftools.profiles.Location.verify|verify} messages.
@@ -559,12 +524,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILocation): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ILocation, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ILocation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ILocation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Location message from a plain object. Also converts values to their respective internal types.
@@ -572,9 +535,8 @@ object profiles {
       * @returns Location
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Location = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Location]
     
     /**
       * Creates a plain object from a Location message. Also converts values to other types if specified.
@@ -583,12 +545,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.toObject")
-    @js.native
-    def toObject(message: Location): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.toObject")
-    @js.native
-    def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Location): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Location, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Location message.
@@ -596,9 +556,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Location.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Mapping. */
@@ -608,7 +567,9 @@ object profiles {
     * Constructs a new Mapping.
     * @param [properties] Properties to set
     */
-  class Mapping () extends IMapping {
+  class Mapping ()
+    extends StObject
+       with IMapping {
     def this(properties: IMapping) = this()
     
     /** Mapping buildId. */
@@ -659,18 +620,20 @@ object profiles {
   }
   object Mapping {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Mapping instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Mapping instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.create")
-    @js.native
-    def create(): Mapping = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.create")
-    @js.native
-    def create(properties: IMapping): Mapping = js.native
+    @scala.inline
+    def create(): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Mapping]
+    @scala.inline
+    def create(properties: IMapping): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Decodes a Mapping message from the specified reader or buffer.
@@ -681,18 +644,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decode")
-    @js.native
-    def decode(reader: Reader): Mapping = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Mapping = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decode")
-    @js.native
-    def decode(reader: Uint8Array): Mapping = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Mapping = js.native
+    @scala.inline
+    def decode(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
+    @scala.inline
+    def decode(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Mapping = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Mapping]
     
     /**
       * Decodes a Mapping message from the specified reader or buffer, length delimited.
@@ -702,12 +661,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Mapping = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Mapping = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Encodes the specified Mapping message. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
@@ -716,12 +673,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.encode")
-    @js.native
-    def encode(message: IMapping): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.encode")
-    @js.native
-    def encode(message: IMapping, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Mapping message, length delimited. Does not implicitly {@link perftools.profiles.Mapping.verify|verify} messages.
@@ -730,12 +685,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IMapping): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IMapping, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IMapping): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IMapping, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Mapping message from a plain object. Also converts values to their respective internal types.
@@ -743,9 +696,8 @@ object profiles {
       * @returns Mapping
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Mapping = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Mapping = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Mapping]
     
     /**
       * Creates a plain object from a Mapping message. Also converts values to other types if specified.
@@ -754,12 +706,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.toObject")
-    @js.native
-    def toObject(message: Mapping): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.toObject")
-    @js.native
-    def toObject(message: Mapping, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Mapping): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Mapping, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Mapping message.
@@ -767,9 +717,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Mapping.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Profile. */
@@ -779,13 +728,15 @@ object profiles {
     * Constructs a new Profile.
     * @param [properties] Properties to set
     */
-  class Profile () extends IProfile {
+  class Profile ()
+    extends StObject
+       with IProfile {
     def this(properties: IProfile) = this()
     
     /** Profile comment. */
     @JSName("comment")
     var comment_Profile: js.Array[
-        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ] = js.native
     
     /** Profile defaultSampleType. */
@@ -844,18 +795,20 @@ object profiles {
   }
   object Profile {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Profile instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Profile instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.create")
-    @js.native
-    def create(): Profile = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.create")
-    @js.native
-    def create(properties: IProfile): Profile = js.native
+    @scala.inline
+    def create(): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Profile]
+    @scala.inline
+    def create(properties: IProfile): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Decodes a Profile message from the specified reader or buffer.
@@ -866,18 +819,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decode")
-    @js.native
-    def decode(reader: Reader): Profile = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Profile = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decode")
-    @js.native
-    def decode(reader: Uint8Array): Profile = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Profile = js.native
+    @scala.inline
+    def decode(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
+    @scala.inline
+    def decode(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Profile = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Profile]
     
     /**
       * Decodes a Profile message from the specified reader or buffer, length delimited.
@@ -887,12 +836,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Profile = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Profile = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Encodes the specified Profile message. Does not implicitly {@link perftools.profiles.Profile.verify|verify} messages.
@@ -901,12 +848,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.encode")
-    @js.native
-    def encode(message: IProfile): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.encode")
-    @js.native
-    def encode(message: IProfile, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Profile message, length delimited. Does not implicitly {@link perftools.profiles.Profile.verify|verify} messages.
@@ -915,12 +860,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IProfile): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IProfile, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IProfile): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IProfile, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Profile message from a plain object. Also converts values to their respective internal types.
@@ -928,9 +871,8 @@ object profiles {
       * @returns Profile
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Profile = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Profile = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Profile]
     
     /**
       * Creates a plain object from a Profile message. Also converts values to other types if specified.
@@ -939,12 +881,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.toObject")
-    @js.native
-    def toObject(message: Profile): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.toObject")
-    @js.native
-    def toObject(message: Profile, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Profile): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Profile, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Profile message.
@@ -952,9 +892,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Profile.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a Sample. */
@@ -964,7 +903,9 @@ object profiles {
     * Constructs a new Sample.
     * @param [properties] Properties to set
     */
-  class Sample () extends ISample {
+  class Sample ()
+    extends StObject
+       with ISample {
     def this(properties: ISample) = this()
     
     /** Sample label. */
@@ -974,7 +915,7 @@ object profiles {
     /** Sample locationId. */
     @JSName("locationId")
     var locationId_Sample: js.Array[
-        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ] = js.native
     
     /**
@@ -986,10 +927,14 @@ object profiles {
     /** Sample value. */
     @JSName("value")
     var value_Sample: js.Array[
-        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+        Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
       ] = js.native
   }
   object Sample {
+    
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new Sample instance using the specified properties.
@@ -997,12 +942,10 @@ object profiles {
       * @returns Sample instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.create")
-    @js.native
-    def create(): Sample = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.create")
-    @js.native
-    def create(properties: ISample): Sample = js.native
+    @scala.inline
+    def create(): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Sample]
+    @scala.inline
+    def create(properties: ISample): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Decodes a Sample message from the specified reader or buffer.
@@ -1013,18 +956,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decode")
-    @js.native
-    def decode(reader: Reader): Sample = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Sample = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decode")
-    @js.native
-    def decode(reader: Uint8Array): Sample = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Sample = js.native
+    @scala.inline
+    def decode(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
+    @scala.inline
+    def decode(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Sample = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Sample]
     
     /**
       * Decodes a Sample message from the specified reader or buffer, length delimited.
@@ -1034,12 +973,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Sample = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Sample = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Encodes the specified Sample message. Does not implicitly {@link perftools.profiles.Sample.verify|verify} messages.
@@ -1048,12 +985,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.encode")
-    @js.native
-    def encode(message: ISample): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.encode")
-    @js.native
-    def encode(message: ISample, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Sample message, length delimited. Does not implicitly {@link perftools.profiles.Sample.verify|verify} messages.
@@ -1062,12 +997,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ISample): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ISample, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ISample): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ISample, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Sample message from a plain object. Also converts values to their respective internal types.
@@ -1075,9 +1008,8 @@ object profiles {
       * @returns Sample
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Sample = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Sample = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Sample]
     
     /**
       * Creates a plain object from a Sample message. Also converts values to other types if specified.
@@ -1086,12 +1018,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.toObject")
-    @js.native
-    def toObject(message: Sample): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.toObject")
-    @js.native
-    def toObject(message: Sample, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Sample): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Sample, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Sample message.
@@ -1099,9 +1029,8 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.Sample.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ValueType. */
@@ -1111,7 +1040,9 @@ object profiles {
     * Constructs a new ValueType.
     * @param [properties] Properties to set
     */
-  class ValueType () extends IValueType {
+  class ValueType ()
+    extends StObject
+       with IValueType {
     def this(properties: IValueType) = this()
     
     /**
@@ -1130,18 +1061,20 @@ object profiles {
   }
   object ValueType {
     
+    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new ValueType instance using the specified properties.
       * @param [properties] Properties to set
       * @returns ValueType instance
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.create")
-    @js.native
-    def create(): ValueType = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.create")
-    @js.native
-    def create(properties: IValueType): ValueType = js.native
+    @scala.inline
+    def create(): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ValueType]
+    @scala.inline
+    def create(properties: IValueType): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Decodes a ValueType message from the specified reader or buffer.
@@ -1152,18 +1085,14 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decode")
-    @js.native
-    def decode(reader: Reader): ValueType = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): ValueType = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decode")
-    @js.native
-    def decode(reader: Uint8Array): ValueType = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): ValueType = js.native
+    @scala.inline
+    def decode(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    @scala.inline
+    def decode(reader: Reader, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
+    @scala.inline
+    def decode(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValueType]
     
     /**
       * Decodes a ValueType message from the specified reader or buffer, length delimited.
@@ -1173,12 +1102,10 @@ object profiles {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): ValueType = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): ValueType = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Encodes the specified ValueType message. Does not implicitly {@link perftools.profiles.ValueType.verify|verify} messages.
@@ -1187,12 +1114,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.encode")
-    @js.native
-    def encode(message: IValueType): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.encode")
-    @js.native
-    def encode(message: IValueType, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ValueType message, length delimited. Does not implicitly {@link perftools.profiles.ValueType.verify|verify} messages.
@@ -1201,12 +1126,10 @@ object profiles {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IValueType): Writer = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IValueType, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IValueType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IValueType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ValueType message from a plain object. Also converts values to their respective internal types.
@@ -1214,9 +1137,8 @@ object profiles {
       * @returns ValueType
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): ValueType = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ValueType]
     
     /**
       * Creates a plain object from a ValueType message. Also converts values to other types if specified.
@@ -1225,12 +1147,10 @@ object profiles {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.toObject")
-    @js.native
-    def toObject(message: ValueType): StringDictionary[js.Any] = js.native
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.toObject")
-    @js.native
-    def toObject(message: ValueType, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: ValueType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: ValueType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ValueType message.
@@ -1238,39 +1158,37 @@ object profiles {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dd-trace/protobuf/profile", "perftools.profiles.ValueType.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of a Function. */
-  @js.native
   trait IFunction extends StObject {
     
     /** Function filename */
     var filename: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Function id */
     var id: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Function name */
     var name: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Function startLine */
     var startLine: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Function systemName */
     var systemName: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object IFunction {
     
@@ -1341,28 +1259,27 @@ object profiles {
   }
   
   /** Properties of a Label. */
-  @js.native
   trait ILabel extends StObject {
     
     /** Label key */
     var key: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Label num */
     var num: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Label numUnit */
     var numUnit: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Label str */
     var str: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object ILabel {
     
@@ -1422,18 +1339,17 @@ object profiles {
   }
   
   /** Properties of a Line. */
-  @js.native
   trait ILine extends StObject {
     
     /** Line functionId */
     var functionId: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Line line */
     var line: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object ILine {
     
@@ -1471,29 +1387,28 @@ object profiles {
   }
   
   /** Properties of a Location. */
-  @js.native
   trait ILocation extends StObject {
     
     /** Location address */
     var address: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Location id */
     var id: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Location isFolded */
-    var isFolded: js.UndefOr[Boolean | Null] = js.native
+    var isFolded: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Location line */
-    var line: js.UndefOr[js.Array[ILine] | Null] = js.native
+    var line: js.UndefOr[js.Array[ILine] | Null] = js.undefined
     
     /** Location mappingId */
     var mappingId: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object ILocation {
     
@@ -1563,50 +1478,49 @@ object profiles {
   }
   
   /** Properties of a Mapping. */
-  @js.native
   trait IMapping extends StObject {
     
     /** Mapping buildId */
     var buildId: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Mapping fileOffset */
     var fileOffset: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Mapping filename */
     var filename: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Mapping hasFilenames */
-    var hasFilenames: js.UndefOr[Boolean | Null] = js.native
+    var hasFilenames: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Mapping hasFunctions */
-    var hasFunctions: js.UndefOr[Boolean | Null] = js.native
+    var hasFunctions: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Mapping hasInlineFrames */
-    var hasInlineFrames: js.UndefOr[Boolean | Null] = js.native
+    var hasInlineFrames: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Mapping hasLineNumbers */
-    var hasLineNumbers: js.UndefOr[Boolean | Null] = js.native
+    var hasLineNumbers: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Mapping id */
     var id: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Mapping memoryLimit */
     var memoryLimit: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Mapping memoryStart */
     var memoryStart: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object IMapping {
     
@@ -1724,66 +1638,65 @@ object profiles {
   }
   
   /** Properties of a Profile. */
-  @js.native
   trait IProfile extends StObject {
     
     /** Profile comment */
     var comment: js.UndefOr[
         (js.Array[
-          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile defaultSampleType */
     var defaultSampleType: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile dropFrames */
     var dropFrames: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile durationNanos */
     var durationNanos: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile function */
-    var function: js.UndefOr[js.Array[IFunction] | Null] = js.native
+    var function: js.UndefOr[js.Array[IFunction] | Null] = js.undefined
     
     /** Profile keepFrames */
     var keepFrames: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile location */
-    var location: js.UndefOr[js.Array[ILocation] | Null] = js.native
+    var location: js.UndefOr[js.Array[ILocation] | Null] = js.undefined
     
     /** Profile mapping */
-    var mapping: js.UndefOr[js.Array[IMapping] | Null] = js.native
+    var mapping: js.UndefOr[js.Array[IMapping] | Null] = js.undefined
     
     /** Profile period */
     var period: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Profile periodType */
-    var periodType: js.UndefOr[IValueType | Null] = js.native
+    var periodType: js.UndefOr[IValueType | Null] = js.undefined
     
     /** Profile sample */
-    var sample: js.UndefOr[js.Array[ISample] | Null] = js.native
+    var sample: js.UndefOr[js.Array[ISample] | Null] = js.undefined
     
     /** Profile sampleType */
-    var sampleType: js.UndefOr[js.Array[IValueType] | Null] = js.native
+    var sampleType: js.UndefOr[js.Array[IValueType] | Null] = js.undefined
     
     /** Profile stringTable */
-    var stringTable: js.UndefOr[js.Array[String] | Null] = js.native
+    var stringTable: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** Profile timeNanos */
     var timeNanos: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object IProfile {
     
@@ -1799,7 +1712,7 @@ object profiles {
       @scala.inline
       def setComment(
         value: js.Array[
-              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -1810,7 +1723,9 @@ object profiles {
       def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
       @scala.inline
-      def setCommentVarargs(value: (Double | js.Any)*): Self = StObject.set(x, "comment", js.Array(value :_*))
+      def setCommentVarargs(
+        value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
+      ): Self = StObject.set(x, "comment", js.Array(value :_*))
       
       @scala.inline
       def setDefaultSampleType(
@@ -1962,25 +1877,24 @@ object profiles {
   }
   
   /** Properties of a Sample. */
-  @js.native
   trait ISample extends StObject {
     
     /** Sample label */
-    var label: js.UndefOr[js.Array[ILabel] | Null] = js.native
+    var label: js.UndefOr[js.Array[ILabel] | Null] = js.undefined
     
     /** Sample locationId */
     var locationId: js.UndefOr[
         (js.Array[
-          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** Sample value */
     var value: js.UndefOr[
         (js.Array[
-          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+          Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
         ]) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object ISample {
     
@@ -2008,7 +1922,7 @@ object profiles {
       @scala.inline
       def setLocationId(
         value: js.Array[
-              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
       
@@ -2019,12 +1933,14 @@ object profiles {
       def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
       
       @scala.inline
-      def setLocationIdVarargs(value: (Double | js.Any)*): Self = StObject.set(x, "locationId", js.Array(value :_*))
+      def setLocationIdVarargs(
+        value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
+      ): Self = StObject.set(x, "locationId", js.Array(value :_*))
       
       @scala.inline
       def setValue(
         value: js.Array[
-              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ _)
+              Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
             ]
       ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -2035,23 +1951,24 @@ object profiles {
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       @scala.inline
-      def setValueVarargs(value: (Double | js.Any)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      def setValueVarargs(
+        value: (Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any))*
+      ): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
   /** Properties of a ValueType. */
-  @js.native
   trait IValueType extends StObject {
     
     /** ValueType type */
     var `type`: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** ValueType unit */
     var unit: js.UndefOr[
         Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object IValueType {
     

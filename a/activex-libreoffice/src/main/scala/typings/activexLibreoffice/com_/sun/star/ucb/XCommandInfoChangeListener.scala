@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandInfoChangeNotifier
   * @version 1.0
   */
-@js.native
-trait XCommandInfoChangeListener extends XEventListener {
+trait XCommandInfoChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called whenever changes of a {@link XCommandInfo} shall be propagated.
     * @param evt the event.
     */
-  def commandInfoChange(evt: CommandInfoChangeEvent): Unit = js.native
+  def commandInfoChange(evt: CommandInfoChangeEvent): Unit
 }
 object XCommandInfoChangeListener {
   

@@ -2,7 +2,6 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object identityMod {
@@ -27,10 +26,11 @@ object identityMod {
     }
   }
   
-  @js.native
-  trait GroupWindowIdentity extends Identity {
+  trait GroupWindowIdentity
+    extends StObject
+       with Identity {
     
-    var isExternalWindow: js.UndefOr[Boolean] = js.native
+    var isExternalWindow: js.UndefOr[Boolean] = js.undefined
   }
   object GroupWindowIdentity {
     
@@ -51,14 +51,13 @@ object identityMod {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
-    var entityType: js.UndefOr[js.Any] = js.native
+    var entityType: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object Identity {
     
@@ -88,12 +87,11 @@ object identityMod {
     }
   }
   
-  @js.native
   trait NamedIdentity extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object NamedIdentity {
     
@@ -114,12 +112,12 @@ object identityMod {
     }
   }
   
-  @js.native
   trait NativeIdOptional
-    extends Identity
+    extends StObject
+       with Identity
        with ExternalWindowIdentity {
     
-    var nativeId: js.UndefOr[String] = js.native
+    var nativeId: js.UndefOr[String] = js.undefined
   }
   object NativeIdOptional {
     
@@ -140,14 +138,15 @@ object identityMod {
     }
   }
   
-  @js.native
-  trait UuidOptional extends ExternalWindowIdentity {
+  trait UuidOptional
+    extends StObject
+       with ExternalWindowIdentity {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nativeId: String = js.native
+    var nativeId: String
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object UuidOptional {
     

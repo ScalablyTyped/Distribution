@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the FinancialIndicator class.
   */
-@js.native
-trait ASPxClientFinancialIndicator extends ASPxClientIndicator {
+trait ASPxClientFinancialIndicator
+  extends StObject
+     with ASPxClientIndicator {
   
   /**
     * Gets the first point of the financial indicator.
     */
-  var point1: ASPxClientFinancialIndicatorPoint = js.native
+  var point1: ASPxClientFinancialIndicatorPoint
   
   /**
     * Gets the second point of the financial indicator.
     */
-  var point2: ASPxClientFinancialIndicatorPoint = js.native
+  var point2: ASPxClientFinancialIndicatorPoint
 }
 object ASPxClientFinancialIndicator {
   

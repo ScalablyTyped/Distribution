@@ -2,17 +2,15 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete[T] extends StObject {
   
-  def complete(): Unit = js.native
+  def complete(): Unit
   
-  def fail(): Unit = js.native
+  def fail(): Unit
   
-  def success(res: T): Unit = js.native
+  def success(res: T): Unit
 }
 object Complete {
   
@@ -23,7 +21,7 @@ object Complete {
   }
   
   @scala.inline
-  implicit class CompleteMutableBuilder[Self <: Complete[_], T] (val x: Self with Complete[T]) extends AnyVal {
+  implicit class CompleteMutableBuilder[Self <: Complete[?], T] (val x: Self & Complete[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

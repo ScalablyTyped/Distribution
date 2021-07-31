@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAchievementsResetforallplayers extends StandardParameters {
+trait ParamsResourceAchievementsResetforallplayers
+  extends StObject
+     with StandardParameters {
   
   /**
     * The ID of the achievement used by this method.
     */
-  var achievementId: js.UndefOr[String] = js.native
+  var achievementId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
 }
 object ParamsResourceAchievementsResetforallplayers {
   

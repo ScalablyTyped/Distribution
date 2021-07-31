@@ -1,16 +1,14 @@
 organization := "org.scalablytyped"
 name := "unist-util-visit"
-version := "2.0.3-8ed881"
-scalaVersion := "2.13.3"
+version := "2.0.3-42de77"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "std" % "4.1-40053c",
-  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-1e36bc",
-  "org.scalablytyped" %%% "unist-util-is" % "4.0.3-470ea3",
-  "org.scalablytyped" %%% "unist-util-visit-parents" % "3.1.1-500cf5")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "std" % "4.1-044efb",
+  "org.scalablytyped" %%% "unist" % "2.0-dt-20190213Z-e6c3d0",
+  "org.scalablytyped" %%% "unist-util-is" % "4.0.3-c34565",
+  "org.scalablytyped" %%% "unist-util-visit-parents" % "3.1.1-53a966")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

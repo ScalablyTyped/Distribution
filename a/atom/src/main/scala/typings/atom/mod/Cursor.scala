@@ -11,7 +11,6 @@ import typings.atom.anon.`31`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -149,21 +148,21 @@ trait Cursor extends StObject {
   
   /** Moves the cursor down one screen row. */
   def moveDown(): Unit = js.native
-  def moveDown(rowCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveDown(rowCount: Double): Unit = js.native
   def moveDown(rowCount: Double, options: MoveToEndOfSelection): Unit = js.native
+  def moveDown(rowCount: Unit, options: MoveToEndOfSelection): Unit = js.native
   
   /** Moves the cursor left one screen column. */
   def moveLeft(): Unit = js.native
-  def moveLeft(columnCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveLeft(columnCount: Double): Unit = js.native
   def moveLeft(columnCount: Double, options: MoveToEndOfSelection): Unit = js.native
+  def moveLeft(columnCount: Unit, options: MoveToEndOfSelection): Unit = js.native
   
   /** Moves the cursor right one screen column. */
   def moveRight(): Unit = js.native
-  def moveRight(columnCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveRight(columnCount: Double): Unit = js.native
   def moveRight(columnCount: Double, options: MoveToEndOfSelection): Unit = js.native
+  def moveRight(columnCount: Unit, options: MoveToEndOfSelection): Unit = js.native
   
   /** Moves the cursor to the beginning of the buffer line. */
   def moveToBeginningOfLine(): Unit = js.native
@@ -216,9 +215,9 @@ trait Cursor extends StObject {
   // Moving the Cursor
   /** Moves the cursor up one screen row. */
   def moveUp(): Unit = js.native
-  def moveUp(rowCount: js.UndefOr[scala.Nothing], options: MoveToEndOfSelection): Unit = js.native
   def moveUp(rowCount: Double): Unit = js.native
   def moveUp(rowCount: Double, options: MoveToEndOfSelection): Unit = js.native
+  def moveUp(rowCount: Unit, options: MoveToEndOfSelection): Unit = js.native
   
   // Event Subscription
   /** Calls your callback when the cursor has been moved. */

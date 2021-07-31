@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImageVersionsRequest extends StObject {
   
   /**
     * A filter that returns only versions created on or after the specified time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only versions created on or before the specified time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the image to list the versions of.
     */
-  var ImageName: typings.awsSdk.sagemakerMod.ImageName = js.native
+  var ImageName: typings.awsSdk.sagemakerMod.ImageName
   
   /**
     * A filter that returns only versions modified on or after the specified time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only versions modified on or before the specified time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The maximum number of versions to return in the response. The default value is 10. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the previous call to ListImageVersions didn't return the full set of versions, the call returns a token for getting the next set of versions.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The property used to sort results. The default value is CREATION_TIME.
     */
-  var SortBy: js.UndefOr[ImageVersionSortBy] = js.native
+  var SortBy: js.UndefOr[ImageVersionSortBy] = js.undefined
   
   /**
     * The sort order. The default value is DESCENDING.
     */
-  var SortOrder: js.UndefOr[ImageVersionSortOrder] = js.native
+  var SortOrder: js.UndefOr[ImageVersionSortOrder] = js.undefined
 }
 object ListImageVersionsRequest {
   

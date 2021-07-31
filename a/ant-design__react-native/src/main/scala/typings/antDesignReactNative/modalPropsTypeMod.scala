@@ -3,19 +3,17 @@ package typings.antDesignReactNative
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalPropsTypeMod {
   
-  @js.native
   trait Action[T] extends StObject {
     
-    var onPress: js.UndefOr[js.Function0[Unit | js.Promise[_]]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit | js.Promise[js.Any]]] = js.undefined
     
-    var style: js.UndefOr[T | String] = js.native
+    var style: js.UndefOr[T | String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object Action {
     
@@ -26,10 +24,10 @@ object modalPropsTypeMod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], T] (val x: Self with Action[T]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       @scala.inline
-      def setOnPress(value: () => Unit | js.Promise[_]): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      def setOnPress(value: () => Unit | js.Promise[js.Any]): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
@@ -51,36 +49,35 @@ object modalPropsTypeMod {
   
   type CallbackOrActions[T] = Callback | js.Array[Action[T]]
   
-  @js.native
   trait ModalPropsType[T] extends StObject {
     
-    var animateAppear: js.UndefOr[Boolean] = js.native
+    var animateAppear: js.UndefOr[Boolean] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animationType: js.UndefOr[js.Any] = js.native
+    var animationType: js.UndefOr[js.Any] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[js.Array[Action[T]]] = js.native
+    var footer: js.UndefOr[js.Array[Action[T]]] = js.undefined
     
-    var locale: js.UndefOr[js.Object] = js.native
+    var locale: js.UndefOr[js.Object] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var operation: js.UndefOr[Boolean] = js.native
+    var operation: js.UndefOr[Boolean] = js.undefined
     
-    var popup: js.UndefOr[Boolean] = js.native
+    var popup: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ModalPropsType {
     
@@ -91,7 +88,7 @@ object modalPropsTypeMod {
     }
     
     @scala.inline
-    implicit class ModalPropsTypeMutableBuilder[Self <: ModalPropsType[_], T] (val x: Self with ModalPropsType[T]) extends AnyVal {
+    implicit class ModalPropsTypeMutableBuilder[Self <: ModalPropsType[?], T] (val x: Self & ModalPropsType[T]) extends AnyVal {
       
       @scala.inline
       def setAnimateAppear(value: Boolean): Self = StObject.set(x, "animateAppear", value.asInstanceOf[js.Any])

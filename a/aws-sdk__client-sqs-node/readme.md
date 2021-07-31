@@ -12,7 +12,7 @@ Node SDK for Amazon Simple Queue Service
 | Keywords           | - |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 14917 |
+| # downloads        | 23517 |
 | # stars            | 0 |
 
 ## Links

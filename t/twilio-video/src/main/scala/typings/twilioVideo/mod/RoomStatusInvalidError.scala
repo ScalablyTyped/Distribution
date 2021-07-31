@@ -4,7 +4,6 @@ import typings.twilioVideo.twilioVideoNumbers.`53112`
 import typings.twilioVideo.twilioVideoStrings.`Status is invalid`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "RoomStatusInvalidError")

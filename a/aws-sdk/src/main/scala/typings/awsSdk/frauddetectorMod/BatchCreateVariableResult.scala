@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateVariableResult extends StObject {
   
   /**
     * Provides the errors for the BatchCreateVariable request.
     */
-  var errors: js.UndefOr[BatchCreateVariableErrorList] = js.native
+  var errors: js.UndefOr[BatchCreateVariableErrorList] = js.undefined
 }
 object BatchCreateVariableResult {
   

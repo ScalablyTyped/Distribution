@@ -9,7 +9,6 @@ import typings.phaser.Phaser.Types.Tweens.TweenDataConfig
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tweens {
@@ -29,15 +28,18 @@ object Tweens {
   
   object Builders {
     
+    @JSGlobal("Phaser.Tweens.Builders")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Retrieves the value of the given key from an object.
       * @param source The object to retrieve the value from.
       * @param key The key to look for in the `source` object.
       * @param defaultValue The default value to return if the `key` doesn't exist or if no `source` object is provided.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetBoolean")
-    @js.native
-    def GetBoolean(source: js.Object, key: String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def GetBoolean(source: js.Object, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBoolean")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * This internal function is used to return the correct ease function for a Tween.
@@ -46,18 +48,14 @@ object Tweens {
       * @param ease The ease to find. This can be either a string from the EaseMap, or a custom function.
       * @param easeParams An optional array of ease parameters to go with the ease.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetEaseFunction")
-    @js.native
-    def GetEaseFunction(ease: String): js.Function = js.native
-    @JSGlobal("Phaser.Tweens.Builders.GetEaseFunction")
-    @js.native
-    def GetEaseFunction(ease: String, easeParams: js.Array[Double]): js.Function = js.native
-    @JSGlobal("Phaser.Tweens.Builders.GetEaseFunction")
-    @js.native
-    def GetEaseFunction(ease: js.Function): js.Function = js.native
-    @JSGlobal("Phaser.Tweens.Builders.GetEaseFunction")
-    @js.native
-    def GetEaseFunction(ease: js.Function, easeParams: js.Array[Double]): js.Function = js.native
+    @scala.inline
+    def GetEaseFunction(ease: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEaseFunction")(ease.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def GetEaseFunction(ease: String, easeParams: js.Array[Double]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEaseFunction")(ease.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    @scala.inline
+    def GetEaseFunction(ease: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEaseFunction")(ease.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def GetEaseFunction(ease: js.Function, easeParams: js.Array[Double]): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetEaseFunction")(ease.asInstanceOf[js.Any], easeParams.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Internal function used by the Tween Builder to create a function that will return
@@ -66,9 +64,8 @@ object Tweens {
       * @param key The property to get from the source.
       * @param defaultValue A default value to return should the source not have the property set.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetNewValue")
-    @js.native
-    def GetNewValue(source: js.Any, key: String, defaultValue: js.Any): js.Function = js.native
+    @scala.inline
+    def GetNewValue(source: js.Any, key: String, defaultValue: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetNewValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Internal function used by the Tween Builder to return an array of properties
@@ -77,9 +74,8 @@ object Tweens {
       * none of the direct properties are on the Reserved list.
       * @param config The configuration object of the Tween to get the properties from.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetProps")
-    @js.native
-    def GetProps(config: TweenBuilderConfig): js.Array[String] = js.native
+    @scala.inline
+    def GetProps(config: TweenBuilderConfig): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetProps")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Extracts an array of targets from a Tween configuration object.
@@ -87,9 +83,8 @@ object Tweens {
       * The targets will be looked for in a `targets` property. If it's a function, its return value will be used as the result.
       * @param config The configuration object to use.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetTargets")
-    @js.native
-    def GetTargets(config: js.Object): js.Array[_] = js.native
+    @scala.inline
+    def GetTargets(config: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTargets")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Internal function used by the Timeline Builder.
@@ -97,9 +92,8 @@ object Tweens {
       * It returns an array of all tweens in the given timeline config.
       * @param config The configuration object for the Timeline.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetTweens")
-    @js.native
-    def GetTweens(config: TimelineBuilderConfig): js.Array[typings.phaser.Phaser.Tweens.Tween] = js.native
+    @scala.inline
+    def GetTweens(config: TimelineBuilderConfig): js.Array[typings.phaser.Phaser.Tweens.Tween] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTweens")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.Phaser.Tweens.Tween]]
     
     /**
       * Returns `getActive`, `getStart` and `getEnd` functions for a TweenData based on a target property and end value.
@@ -123,37 +117,32 @@ object Tweens {
       * @param key The name of the property to modify.
       * @param propertyValue The ending value of the property, as described above.
       */
-    @JSGlobal("Phaser.Tweens.Builders.GetValueOp")
-    @js.native
-    def GetValueOp(key: String, propertyValue: js.Any): js.Function = js.native
+    @scala.inline
+    def GetValueOp(key: String, propertyValue: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValueOp")(key.asInstanceOf[js.Any], propertyValue.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @JSGlobal("Phaser.Tweens.Builders.NumberTweenBuilder")
-    @js.native
+    @scala.inline
     def NumberTweenBuilder(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       config: NumberTweenBuilderConfig,
       defaults: TweenConfigDefaults
-    ): typings.phaser.Phaser.Tweens.Tween = js.native
+    ): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("NumberTweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
     /**
       * Creates a new Number Tween.
       * @param parent The owner of the new Tween.
       * @param config Configuration for the new Tween.
       * @param defaults Tween configuration defaults.
       */
-    @JSGlobal("Phaser.Tweens.Builders.NumberTweenBuilder")
-    @js.native
+    @scala.inline
     def NumberTweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: NumberTweenBuilderConfig,
       defaults: TweenConfigDefaults
-    ): typings.phaser.Phaser.Tweens.Tween = js.native
+    ): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("NumberTweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
     
-    @JSGlobal("Phaser.Tweens.Builders.StaggerBuilder")
-    @js.native
-    def StaggerBuilder(value: js.Array[Double]): js.Function = js.native
-    @JSGlobal("Phaser.Tweens.Builders.StaggerBuilder")
-    @js.native
-    def StaggerBuilder(value: js.Array[Double], config: StaggerConfig): js.Function = js.native
+    @scala.inline
+    def StaggerBuilder(value: js.Array[Double]): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("StaggerBuilder")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def StaggerBuilder(value: js.Array[Double], config: StaggerConfig): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("StaggerBuilder")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     /**
       * Creates a Stagger function to be used by a Tween property.
       * 
@@ -189,52 +178,45 @@ object Tweens {
       * @param value The amount to stagger by, or an array containing two elements representing the min and max values to stagger between.
       * @param config A Stagger Configuration object.
       */
-    @JSGlobal("Phaser.Tweens.Builders.StaggerBuilder")
-    @js.native
-    def StaggerBuilder(value: Double): js.Function = js.native
-    @JSGlobal("Phaser.Tweens.Builders.StaggerBuilder")
-    @js.native
-    def StaggerBuilder(value: Double, config: StaggerConfig): js.Function = js.native
+    @scala.inline
+    def StaggerBuilder(value: Double): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("StaggerBuilder")(value.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    @scala.inline
+    def StaggerBuilder(value: Double, config: StaggerConfig): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("StaggerBuilder")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Builds a Timeline of Tweens based on a configuration object.
       * @param manager The Tween Manager to which the Timeline will belong.
       * @param config The configuration object for the Timeline.
       */
-    @JSGlobal("Phaser.Tweens.Builders.TimelineBuilder")
-    @js.native
-    def TimelineBuilder(manager: typings.phaser.Phaser.Tweens.TweenManager, config: TimelineBuilderConfig): typings.phaser.Phaser.Tweens.Timeline = js.native
+    @scala.inline
+    def TimelineBuilder(manager: typings.phaser.Phaser.Tweens.TweenManager, config: TimelineBuilderConfig): typings.phaser.Phaser.Tweens.Timeline = (^.asInstanceOf[js.Dynamic].applyDynamic("TimelineBuilder")(manager.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Timeline]
     
-    @JSGlobal("Phaser.Tweens.Builders.TweenBuilder")
-    @js.native
-    def TweenBuilder(parent: typings.phaser.Phaser.Tweens.Timeline, config: js.Object, defaults: TweenConfigDefaults): typings.phaser.Phaser.Tweens.Tween = js.native
-    @JSGlobal("Phaser.Tweens.Builders.TweenBuilder")
-    @js.native
+    @scala.inline
+    def TweenBuilder(parent: typings.phaser.Phaser.Tweens.Timeline, config: js.Object, defaults: TweenConfigDefaults): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("TweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
+    @scala.inline
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       config: TweenBuilderConfig,
       defaults: TweenConfigDefaults
-    ): typings.phaser.Phaser.Tweens.Tween = js.native
-    @JSGlobal("Phaser.Tweens.Builders.TweenBuilder")
-    @js.native
+    ): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("TweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
+    @scala.inline
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: js.Object,
       defaults: TweenConfigDefaults
-    ): typings.phaser.Phaser.Tweens.Tween = js.native
+    ): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("TweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
     /**
       * Creates a new Tween.
       * @param parent The owner of the new Tween.
       * @param config Configuration for the new Tween.
       * @param defaults Tween configuration defaults.
       */
-    @JSGlobal("Phaser.Tweens.Builders.TweenBuilder")
-    @js.native
+    @scala.inline
     def TweenBuilder(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       config: TweenBuilderConfig,
       defaults: TweenConfigDefaults
-    ): typings.phaser.Phaser.Tweens.Tween = js.native
+    ): typings.phaser.Phaser.Tweens.Tween = (^.asInstanceOf[js.Dynamic].applyDynamic("TweenBuilder")(parent.asInstanceOf[js.Any], config.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Tweens.Tween]
   }
   
   /**
@@ -739,7 +721,8 @@ object Tweens {
   @JSGlobal("Phaser.Tweens.Timeline")
   @js.native
   class Timeline protected ()
-    extends typings.phaser.Phaser.Tweens.Timeline {
+    extends StObject
+       with typings.phaser.Phaser.Tweens.Timeline {
     /**
       * 
       * @param manager The Tween Manager which owns this Timeline.
@@ -755,11 +738,12 @@ object Tweens {
   @JSGlobal("Phaser.Tweens.Tween")
   @js.native
   class Tween protected ()
-    extends typings.phaser.Phaser.Tweens.Tween {
+    extends StObject
+       with typings.phaser.Phaser.Tweens.Tween {
     def this(
       parent: typings.phaser.Phaser.Tweens.Timeline,
       data: js.Array[TweenDataConfig],
-      targets: js.Array[_]
+      targets: js.Array[js.Any]
     ) = this()
     /**
       * 
@@ -770,7 +754,7 @@ object Tweens {
     def this(
       parent: typings.phaser.Phaser.Tweens.TweenManager,
       data: js.Array[TweenDataConfig],
-      targets: js.Array[_]
+      targets: js.Array[js.Any]
     ) = this()
   }
   
@@ -796,8 +780,7 @@ object Tweens {
     * @param flipX Should toggleFlipX be called when yoyo or repeat happens?
     * @param flipY Should toggleFlipY be called when yoyo or repeat happens?
     */
-  @JSGlobal("Phaser.Tweens.TweenData")
-  @js.native
+  @scala.inline
   def TweenData(
     target: js.Any,
     index: integer,
@@ -814,7 +797,7 @@ object Tweens {
     repeatDelay: Double,
     flipX: Boolean,
     flipY: Boolean
-  ): TweenDataConfig = js.native
+  ): TweenDataConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("TweenData")(target.asInstanceOf[js.Any], index.asInstanceOf[js.Any], key.asInstanceOf[js.Any], getEnd.asInstanceOf[js.Any], getStart.asInstanceOf[js.Any], getActive.asInstanceOf[js.Any], ease.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], yoyo.asInstanceOf[js.Any], hold.asInstanceOf[js.Any], repeat.asInstanceOf[js.Any], repeatDelay.asInstanceOf[js.Any], flipX.asInstanceOf[js.Any], flipY.asInstanceOf[js.Any])).asInstanceOf[TweenDataConfig]
   
   /**
     * The Tween Manager is a default Scene Plugin which controls and updates Tweens and Timelines.
@@ -822,7 +805,8 @@ object Tweens {
   @JSGlobal("Phaser.Tweens.TweenManager")
   @js.native
   class TweenManager protected ()
-    extends typings.phaser.Phaser.Tweens.TweenManager {
+    extends StObject
+       with typings.phaser.Phaser.Tweens.TweenManager {
     /**
       * 
       * @param scene The Scene which owns this Tween Manager.

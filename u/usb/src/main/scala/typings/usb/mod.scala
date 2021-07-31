@@ -5,10 +5,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("usb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("usb", "BosDescriptor")
   @js.native
@@ -351,9 +354,9 @@ object mod {
       * @param transferSize
       */
     def startPoll(): Unit = js.native
-    def startPoll(nTransfers: js.UndefOr[scala.Nothing], transferSize: Double): Unit = js.native
     def startPoll(nTransfers: Double): Unit = js.native
     def startPoll(nTransfers: Double, transferSize: Double): Unit = js.native
+    def startPoll(nTransfers: Unit, transferSize: Double): Unit = js.native
     
     /**
       * Stop polling.
@@ -446,12 +449,9 @@ object mod {
       */
     def release(): Unit = js.native
     def release(callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
-    def release(
-      closeEndpoints: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]
-    ): Unit = js.native
     def release(closeEndpoints: Boolean): Unit = js.native
     def release(closeEndpoints: Boolean, callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
+    def release(closeEndpoints: Unit, callback: js.Function1[/* error */ js.UndefOr[LibUSBException], Unit]): Unit = js.native
     
     /**
       * Sets the alternate setting. It updates the `interface.endpoints` array to reflect the endpoints found in the alternate setting.
@@ -811,9 +811,17 @@ object mod {
   
   @JSImport("usb", "LibUSBException")
   @js.native
-  class LibUSBException () extends Error {
+  class LibUSBException ()
+    extends StObject
+       with Error {
     
     var errno: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("usb", "OutEndpoint")
@@ -856,25 +864,20 @@ object mod {
     def submit(buffer: Buffer): Transfer = js.native
   }
   
-  @JSImport("usb", "findByIds")
-  @js.native
-  def findByIds(vid: Double, pid: Double): Device = js.native
+  @scala.inline
+  def findByIds(vid: Double, pid: Double): Device = (^.asInstanceOf[js.Dynamic].applyDynamic("findByIds")(vid.asInstanceOf[js.Any], pid.asInstanceOf[js.Any])).asInstanceOf[Device]
   
-  @JSImport("usb", "getDeviceList")
-  @js.native
-  def getDeviceList(): js.Array[Device] = js.native
+  @scala.inline
+  def getDeviceList(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceList")().asInstanceOf[js.Array[Device]]
   
-  @JSImport("usb", "on")
-  @js.native
-  def on(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
+  @scala.inline
+  def on(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("usb", "removeListener")
-  @js.native
-  def removeListener(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = js.native
+  @scala.inline
+  def removeListener(event: String, callback: js.Function1[/* device */ Device, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("usb", "setDebugLevel")
-  @js.native
-  def setDebugLevel(level: Double): Unit = js.native
+  @scala.inline
+  def setDebugLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDebugLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait Endpoint extends EventEmitter {

@@ -10,7 +10,6 @@ import typings.atom.anon.groupingIntervalnumberund
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "TextBuffer")
@@ -508,36 +507,33 @@ class TextBuffer () extends StObject {
 /* static members */
 object TextBuffer {
   
+  @JSImport("atom", "TextBuffer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     *  Restore a TextBuffer based on an earlier state created using the
     *  TextBuffer::serialize method.
     */
-  @JSImport("atom", "TextBuffer.deserialize")
-  @js.native
-  def deserialize(params: js.Object): js.Promise[TextBuffer] = js.native
+  @scala.inline
+  def deserialize(params: js.Object): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
   
   /** Create a new buffer backed by the given file path. */
-  @JSImport("atom", "TextBuffer.load")
-  @js.native
-  def load(filePath: String): js.Promise[TextBuffer] = js.native
-  @JSImport("atom", "TextBuffer.load")
-  @js.native
-  def load(filePath: String, params: BufferLoadOptions): js.Promise[TextBuffer] = js.native
-  @JSImport("atom", "TextBuffer.load")
-  @js.native
-  def load(filePath: TextBufferFileBackend): js.Promise[TextBuffer] = js.native
-  @JSImport("atom", "TextBuffer.load")
-  @js.native
-  def load(filePath: TextBufferFileBackend, params: BufferLoadOptions): js.Promise[TextBuffer] = js.native
+  @scala.inline
+  def load(filePath: String): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
+  @scala.inline
+  def load(filePath: String, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
+  @scala.inline
+  def load(filePath: TextBufferFileBackend): js.Promise[TextBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TextBuffer]]
+  @scala.inline
+  def load(filePath: TextBufferFileBackend, params: BufferLoadOptions): js.Promise[TextBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TextBuffer]]
   
   /**
     *  Create a new buffer backed by the given file path. For better performance,
     *  use TextBuffer.load instead.
     */
-  @JSImport("atom", "TextBuffer.loadSync")
-  @js.native
-  def loadSync(filePath: String): TextBuffer = js.native
-  @JSImport("atom", "TextBuffer.loadSync")
-  @js.native
-  def loadSync(filePath: String, params: BufferLoadOptions): TextBuffer = js.native
+  @scala.inline
+  def loadSync(filePath: String): TextBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[TextBuffer]
+  @scala.inline
+  def loadSync(filePath: String, params: BufferLoadOptions): TextBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filePath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TextBuffer]
 }

@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancellingCompleted extends StObject {
   
-  var cancelling: scala.Double = js.native
+  var cancelling: scala.Double
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var queued: scala.Double = js.native
+  var queued: scala.Double
 }
 object CancellingCompleted {
   

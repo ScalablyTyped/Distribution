@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SslCerts list response.
   */
-@js.native
 trait SchemaSslCertsListResponse extends StObject {
   
   /**
     * List of client certificates for the instance.
     */
-  var items: js.UndefOr[js.Array[SchemaSslCert]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSslCert]] = js.undefined
   
   /**
     * This is always sql#sslCertsList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertsListResponse {
   

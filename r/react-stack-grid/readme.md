@@ -11,8 +11,8 @@ Pinterest like layout components for React.js
 | Full name          | react-stack-grid |
 | Keywords           | react, react-component, layout, grid, pinterest, masonry |
 | # releases         | 1 |
-| # dependents       | 8 |
-| # downloads        | 261638 |
+| # dependents       | 7 |
+| # downloads        | 233686 |
 | # stars            | 4 |
 
 ## Links

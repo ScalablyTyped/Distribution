@@ -6,36 +6,34 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackHeaderTitleProps extends StObject {
   
   /**
     * Whether title font should scale to respect Text Size accessibility settings.
     */
-  var allowFontScaling: js.UndefOr[Boolean] = js.native
+  var allowFontScaling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Content of the title element. Usually the title string.
     */
-  var children: js.UndefOr[String] = js.native
+  var children: js.UndefOr[String] = js.undefined
   
   /**
     * Callback to trigger when the size of the title element changes.
     */
-  def onLayout(e: LayoutChangeEvent): Unit = js.native
+  def onLayout(e: LayoutChangeEvent): Unit
   
   /**
     * Style object for the title element.
     */
-  var style: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.native
+  var style: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.undefined
   
   /**
     * Tint color for the header.
     */
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
 }
 object StackHeaderTitleProps {
   

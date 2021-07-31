@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [z] - The z value.
   * @param [w] - The w value.
   */
-@js.native
 trait Vec4 extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait Vec4 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def add(rhs: Vec4): Vec4 = js.native
+  def add(rhs: Vec4): Vec4
   
   /**
     * Adds two 4-dimensional vectors together and returns the result.
@@ -47,7 +45,7 @@ trait Vec4 extends StObject {
     * @param rhs - The second vector operand for the addition.
     * @returns Self for chaining.
     */
-  def add2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def add2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Copied the contents of a source 4-dimensional vector to a destination 4-dimensional vector.
@@ -61,7 +59,7 @@ trait Vec4 extends StObject {
     * @param rhs - A vector to copy to the specified vector.
     * @returns Self for chaining.
     */
-  def copy(rhs: Vec4): Vec4 = js.native
+  def copy(rhs: Vec4): Vec4
   
   /**
     * Returns the result of a dot product operation performed on the two specified 4-dimensional vectors.
@@ -73,7 +71,7 @@ trait Vec4 extends StObject {
     * @param rhs - The second 4-dimensional vector operand of the dot product.
     * @returns The result of the dot product operation.
     */
-  def dot(rhs: Vec4): Double = js.native
+  def dot(rhs: Vec4): Double
   
   /**
     * Reports whether two vectors are equal.
@@ -84,7 +82,7 @@ trait Vec4 extends StObject {
     * @param rhs - The vector to compare to the specified vector.
     * @returns True if the vectors are equal and false otherwise.
     */
-  def equals(rhs: Vec4): Boolean = js.native
+  def equals(rhs: Vec4): Boolean
   
   /**
     * Returns the magnitude of the specified 4-dimensional vector.
@@ -95,7 +93,7 @@ trait Vec4 extends StObject {
     console.log("The length of the vector is: " + len);
     * @returns The magnitude of the specified 4-dimensional vector.
     */
-  def length(): Double = js.native
+  def length(): Double
   
   /**
     * Returns the magnitude squared of the specified 4-dimensional vector.
@@ -106,7 +104,7 @@ trait Vec4 extends StObject {
     console.log("The length squared of the vector is: " + len);
     * @returns The magnitude of the specified 4-dimensional vector.
     */
-  def lengthSq(): Double = js.native
+  def lengthSq(): Double
   
   /**
     * Returns the result of a linear interpolation between two specified 4-dimensional vectors.
@@ -125,7 +123,7 @@ trait Vec4 extends StObject {
     a ray extrapolated from this line.
     * @returns Self for chaining.
     */
-  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): Vec4 = js.native
+  def lerp(lhs: Vec4, rhs: Vec4, alpha: Double): Vec4
   
   /**
     * Multiplies a 4-dimensional vector to another in place.
@@ -140,7 +138,7 @@ trait Vec4 extends StObject {
     * @param rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul(rhs: Vec4): Vec4 = js.native
+  def mul(rhs: Vec4): Vec4
   
   /**
     * Returns the result of multiplying the specified 4-dimensional vectors together.
@@ -157,7 +155,7 @@ trait Vec4 extends StObject {
     * @param rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns Self for chaining.
     */
-  def mul2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def mul2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * Returns this 4-dimensional vector converted to a unit vector in place.
@@ -171,7 +169,7 @@ trait Vec4 extends StObject {
     console.log("The result of the vector normalization is: " + v.toString());
     * @returns Self for chaining.
     */
-  def normalize(): Vec4 = js.native
+  def normalize(): Vec4
   
   /**
     * Scales each dimension of the specified 4-dimensional vector by the supplied
@@ -190,7 +188,7 @@ trait Vec4 extends StObject {
     * @param scalar - The value by which each vector component is multiplied.
     * @returns Self for chaining.
     */
-  def scale(scalar: Double): Vec4 = js.native
+  def scale(scalar: Double): Vec4
   
   /**
     * Sets the specified 4-dimensional vector to the supplied numerical values.
@@ -206,7 +204,7 @@ trait Vec4 extends StObject {
     * @param w - The value to set on the fourth component of the vector.
     * @returns Self for chaining.
     */
-  def set(x: Double, y: Double, z: Double, w: Double): Vec4 = js.native
+  def set(x: Double, y: Double, z: Double, w: Double): Vec4
   
   /**
     * Subtracts a 4-dimensional vector from another in place.
@@ -221,7 +219,7 @@ trait Vec4 extends StObject {
     * @param rhs - The vector to add to the specified vector.
     * @returns Self for chaining.
     */
-  def sub(rhs: Vec4): Vec4 = js.native
+  def sub(rhs: Vec4): Vec4
   
   /**
     * Subtracts two 4-dimensional vectors from one another and returns the result.
@@ -238,7 +236,7 @@ trait Vec4 extends StObject {
     * @param rhs - The second vector operand for the subtraction.
     * @returns Self for chaining.
     */
-  def sub2(lhs: Vec4, rhs: Vec4): Vec4 = js.native
+  def sub2(lhs: Vec4, rhs: Vec4): Vec4
   
   /**
     * The fourth component of the vector.
@@ -251,7 +249,7 @@ trait Vec4 extends StObject {
     // Set w
     vec.w = 0;
     */
-  var w: Double = js.native
+  var w: Double
   
   /**
     * The first component of the vector.
@@ -264,7 +262,7 @@ trait Vec4 extends StObject {
     // Set x
     vec.x = 0;
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The second component of the vector.
@@ -277,7 +275,7 @@ trait Vec4 extends StObject {
     // Set y
     vec.y = 0;
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * The third component of the vector.
@@ -290,7 +288,7 @@ trait Vec4 extends StObject {
     // Set z
     vec.z = 0;
     */
-  var z: Double = js.native
+  var z: Double
 }
 object Vec4 {
   

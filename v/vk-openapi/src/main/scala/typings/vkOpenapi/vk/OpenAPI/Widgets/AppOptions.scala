@@ -5,15 +5,13 @@ import typings.vkOpenapi.vkOpenapiNumbers.`2`
 import typings.vkOpenapi.vkOpenapiNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppOptions extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[`1` | `2` | `3`] = js.native
+  var mode: js.UndefOr[`1` | `2` | `3`] = js.undefined
 }
 object AppOptions {
   

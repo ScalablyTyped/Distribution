@@ -6,31 +6,29 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.webp
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEncodedResponseRequest extends StObject {
   
   /**
     * The encoding to use. (GetEncodedResponseRequestEncoding enum)
     */
-  var encoding: webp | jpeg | png = js.native
+  var encoding: webp | jpeg | png
   
   /**
     * The quality of the encoding (0-1). (defaults to 1)
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifier of the network request to get content for.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Whether to only return the size information (defaults to false).
     */
-  var sizeOnly: js.UndefOr[Boolean] = js.native
+  var sizeOnly: js.UndefOr[Boolean] = js.undefined
 }
 object GetEncodedResponseRequest {
   

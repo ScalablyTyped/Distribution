@@ -6,16 +6,15 @@ import typings.reactNative.reactNativeStrings.auto
 import typings.reactNative.reactNativeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewProps
-  extends AccessibilityProps
+  extends StObject
      with ViewPropsAndroid
      with ViewPropsIOS
      with GestureResponderHandlers
-     with Touchable {
+     with Touchable
+     with AccessibilityProps {
   
   /**
     * This defines how far a touch event can start away from the view.
@@ -27,19 +26,19 @@ trait ViewProps
     * the Z-index of sibling views always takes precedence if a touch
     * hits two overlapping views.
     */
-  var hitSlop: js.UndefOr[Insets] = js.native
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
   /**
     * Used to reference react managed views from native code.
     */
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
   /**
     * Invoked on mount and layout changes with
     *
     * {nativeEvent: { layout: {x, y, width, height}}}.
     */
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
   /**
     *
@@ -64,7 +63,7 @@ trait ViewProps
     * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
     * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
   /**
     *
@@ -72,14 +71,14 @@ trait ViewProps
     * most of which are offscreen. For this property to be effective, it must be applied to a view that contains many subviews that extend outside its bound.
     * The subviews must also have overflow: hidden, as should the containing view (or one of its superviews).
     */
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object ViewProps {
   

@@ -3,18 +3,18 @@ package typings.devexpressWeb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.ParametersSubmitted and ASPxClientReportDesigner.PreviewParametersSubmitted events.
   */
-@js.native
-trait ASPxClientParametersSubmittedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientParametersSubmittedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
-  var Parameters: StringDictionary[js.Any] = js.native
+  var Parameters: StringDictionary[js.Any]
   
-  var ParametersViewModel: js.Any = js.native
+  var ParametersViewModel: js.Any
 }
 object ASPxClientParametersSubmittedEventArgs {
   

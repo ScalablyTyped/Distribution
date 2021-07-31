@@ -18,7 +18,6 @@ import typings.winrtUwp.Windows.Storage.Search.StorageFolderQueryResult
 import typings.winrtUwp.Windows.Storage.Search.StorageItemQueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages folders and their contents and provides information about them. */
@@ -155,13 +154,13 @@ trait StorageFolder extends StObject {
     * Gets the files in the current folder.
     * @return When this method completes successfully, it returns a list of the files in the current folder. The list is of type IReadOnlyList< StorageFile >. Each file in the list is represented by a StorageFile object.
     */
-  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFilesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Gets the files in the current folder. Also gets the files from the subfolders of the current folder when the value of the query argument is something other than CommonFileQuery.DefaultQuery . Files are sorted based on the specified value from the CommonFileQuery enumeration.
     * @param query One of the enumeration values that specifies how to sort the files and determines whether the query is shallow or deep.
     * @return When this method completes successfully, it returns a flat list of files, sorted as specified by query. The list is of type IReadOnlyList< StorageFile >. Each file in the list is represented by a StorageFile object.
     */
-  def getFilesAsync(query: CommonFileQuery): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFilesAsync(query: CommonFileQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Gets an index-based range of files from the list of all files in the current folder. Also gets the files from the subfolders of the current folder when the value of the query argument is something other than CommonFileQuery.DefaultQuery . Files are sorted based on the specified value from the CommonFileQuery enumeration.
     * @param query One of the enumeration values that specifies how to sort the files and determines whether the query is shallow or deep.
@@ -169,7 +168,7 @@ trait StorageFolder extends StObject {
     * @param maxItemsToRetrieve The maximum number of files to retrieve.
     * @return When this method completes successfully, it returns a flat list of files sorted as specified by query. The list is of type IReadOnlyList< StorageFile >. Each file in the list is represented by a StorageFile object.
     */
-  def getFilesAsync(query: CommonFileQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFilesAsync(query: CommonFileQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the subfolder with the specified name from the current folder.
@@ -182,13 +181,13 @@ trait StorageFolder extends StObject {
     * Gets the subfolders in the current folder.
     * @return When this method completes successfully, it returns a list of the subfolders in the current folder. The list is of type IReadOnlyList< StorageFolder >. Each folder in the list is represented by a StorageFolder object.
     */
-  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFoldersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Gets the subfolders in the current folder. When the value of the query argument is something other than CommonFolderQuery.DefaultQuery , gets a list of virtual folders that represent containers for groups of files in the subfolders of the current folder. Files are grouped into folders based on the specified value from the CommonFolderQuery enumeration.
     * @param query One of the enumeration values that specifies how to group the files into folders and determines whether the query is shallow or deep.
     * @return When this method completes successfully, it returns a list of subfolders. When the value of the query argument is something other than CommonFolderQuery.DefaultQuery , this method returns a list of virtual folders that represent containers for groups of files in the subfolders of the current folder. (Files from the current folder are not included.) The files are grouped as specified by query. The list is of type IReadOnlyList< StorageFolder >. Each folder in the list is represented by a StorageFolder object.
     */
-  def getFoldersAsync(query: CommonFolderQuery): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFoldersAsync(query: CommonFolderQuery): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Gets an index-based range of folders from the list of all subfolders in the current folder. When the value of the query argument is something other than CommonFolderQuery.DefaultQuery , gets a list of virtual folders that represent containers for groups of files in the subfolders of the current folder. Files are grouped into folders based on the specified value from the CommonFolderQuery enumeration.
     * @param query One of the enumeration values that specifies how to group the files into folders and determines whether the query is shallow or deep.
@@ -196,7 +195,7 @@ trait StorageFolder extends StObject {
     * @param maxItemsToRetrieve The maximum number of folders to retrieve.
     * @return When this method completes successfully, it returns a list of subfolders. When the value of the query argument is something other than CommonFolderQuery.DefaultQuery , this method returns a list of virtual folders that represent containers for groups of files in the subfolders of the current folder. (Files from the current folder are not included.) The files are grouped as specified by query. The list is of type IReadOnlyList< StorageFolder >. Each folder in the list is represented by a StorageFolder object.
     */
-  def getFoldersAsync(query: CommonFolderQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getFoldersAsync(query: CommonFolderQuery, startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the indexed state of the current folder.
@@ -215,14 +214,14 @@ trait StorageFolder extends StObject {
     * Gets the files and subfolders in the current folder.
     * @return When this method completes successfully, it returns a list of the files and folders in the current folder. The list is of type IReadOnlyList< IStorageItem >. Each item in the list is represented by an IStorageItem object.
     */
-  def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getItemsAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   /**
     * Gets an index-based range of files and folders from the list of all files and subfolders in the current folder.
     * @param startIndex The zero-based index of the first item in the range to get.
     * @param maxItemsToRetrieve The maximum number of items to get.
     * @return When this method completes successfully, it returns a list of the files and subfolders in the current folder. The list is of type IReadOnlyList< IStorageItem >. Each item in the list is represented by an IStorageItem object.
     */
-  def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Gets the parent folder of the current folder.

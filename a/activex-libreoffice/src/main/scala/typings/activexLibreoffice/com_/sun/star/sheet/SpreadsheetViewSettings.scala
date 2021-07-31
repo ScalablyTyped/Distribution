@@ -8,84 +8,84 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains settings which are specific to each view of a spreadsheet */
-@js.native
-trait SpreadsheetViewSettings extends XPropertySet {
+trait SpreadsheetViewSettings
+  extends StObject
+     with XPropertySet {
   
   /** specifies the color in which the cell grid is displayed. */
-  var GridColor: Color = js.native
+  var GridColor: Color
   
   /** enables the column and row headers of the view. */
-  var HasColumnRowHeaders: Boolean = js.native
+  var HasColumnRowHeaders: Boolean
   
   /** enables the horizontal scroll bar of the view. */
-  var HasHorizontalScrollBar: Boolean = js.native
+  var HasHorizontalScrollBar: Boolean
   
   /** enables the sheet tabs of the view. */
-  var HasSheetTabs: Boolean = js.native
+  var HasSheetTabs: Boolean
   
   /** enables the vertical scroll bar of the view. */
-  var HasVerticalScrollBar: Boolean = js.native
+  var HasVerticalScrollBar: Boolean
   
   /** disables the display of marks from online spelling. */
-  var HideSpellMarks: Boolean = js.native
+  var HideSpellMarks: Boolean
   
   /** enables the display of outline symbols. */
-  var IsOutlineSymbolsSet: Boolean = js.native
+  var IsOutlineSymbolsSet: Boolean
   
   /** controls whether strings, values, and formulas are displayed in different colors. */
-  var IsValueHighlightingEnabled: Boolean = js.native
+  var IsValueHighlightingEnabled: Boolean
   
   /** enables display of anchor symbols when drawing objects are selected. */
-  var ShowAnchor: Boolean = js.native
+  var ShowAnchor: Boolean
   
   /**
     * enables the display of charts in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowCharts: Double = js.native
+  var ShowCharts: Double
   
   /**
     * enables the display of drawing objects in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowDrawing: Double = js.native
+  var ShowDrawing: Double
   
   /** controls whether formulas are displayed instead of their results. */
-  var ShowFormulas: Boolean = js.native
+  var ShowFormulas: Boolean
   
   /** enables the display of the cell grid. */
-  var ShowGrid: Boolean = js.native
+  var ShowGrid: Boolean
   
   /** enables display of help lines when moving drawing objects. */
-  var ShowHelpLines: Boolean = js.native
+  var ShowHelpLines: Boolean
   
   /** controls whether a marker is shown for notes in cells. */
-  var ShowNotes: Boolean = js.native
+  var ShowNotes: Boolean
   
   /**
     * enables display of embedded objects in the view.
     * @see SpreadsheetViewObjectsMode
     */
-  var ShowObjects: Double = js.native
+  var ShowObjects: Double
   
   /** enables display of page breaks. */
-  var ShowPageBreaks: Boolean = js.native
+  var ShowPageBreaks: Boolean
   
   /** enables display of zero-values. */
-  var ShowZeroValues: Boolean = js.native
+  var ShowZeroValues: Boolean
   
   /**
     * This property defines the zoom type for the document.
     * @see com.sun.star.view.DocumentZoomType
     */
-  var ZoomType: Double = js.native
+  var ZoomType: Double
   
   /** Defines the zoom value to use. Valid only if the ZoomType is set to {@link com.sun.star.view.DocumentZoomType.BY_VALUE} . */
-  var ZoomValue: Double = js.native
+  var ZoomValue: Double
 }
 object SpreadsheetViewSettings {
   

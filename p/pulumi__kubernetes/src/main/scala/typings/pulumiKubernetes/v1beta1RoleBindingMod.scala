@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1RoleBindingMod {
@@ -28,7 +27,7 @@ object v1beta1RoleBindingMod {
       */
     def this(name: String) = this()
     def this(name: String, args: RoleBindingArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: RoleBindingArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -59,6 +58,10 @@ object v1beta1RoleBindingMod {
   /* static members */
   object RoleBinding {
     
+    @JSImport("@pulumi/kubernetes/rbac/v1beta1/roleBinding", "RoleBinding")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RoleBinding resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,49 +70,45 @@ object v1beta1RoleBindingMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/roleBinding", "RoleBinding.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RoleBinding = js.native
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/roleBinding", "RoleBinding.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): RoleBinding = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleBinding]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): RoleBinding = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleBinding]
     
     /**
       * Returns true if the given object is an instance of RoleBinding.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/rbac/v1beta1/roleBinding", "RoleBinding.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/roleBinding.RoleBinding */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/roleBinding.RoleBinding */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1beta1/roleBinding.RoleBinding */ Boolean]
   }
   
-  @js.native
   trait RoleBindingArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]] = js.native
+    val apiVersion: js.UndefOr[Input[rbacDotauthorizationDotk8sDotioSlashv1beta1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBinding]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.RoleBinding]] = js.undefined
     
     /**
       * Standard object's metadata.
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * RoleRef can reference a Role in the current namespace or a ClusterRole in the global namespace. If the RoleRef cannot be resolved, the Authorizer must return an error.
       */
-    val roleRef: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef] = js.native
+    val roleRef: Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.RoleRef]
     
     /**
       * Subjects holds references to the objects the role applies to.
       */
-    val subjects: js.UndefOr[Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]]]] = js.native
+    val subjects: js.UndefOr[Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1beta1.Subject]]]] = js.undefined
   }
   object RoleBindingArgs {
     

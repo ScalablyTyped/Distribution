@@ -5,19 +5,17 @@ import typings.jointjs.mod.dia.Cell
 import typings.jointjs.mod.dia.Paper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Graph extends StObject {
     
-    var graph: typings.jointjs.mod.dia.Graph = js.native
+    var graph: typings.jointjs.mod.dia.Graph
     
-    var model: Collection[Cell] = js.native
+    var model: Collection[Cell]
     
-    var paper: Paper = js.native
+    var paper: Paper
   }
   object Graph {
     

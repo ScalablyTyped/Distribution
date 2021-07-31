@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelSnippet extends StObject {
   
   /** The country of the channel. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The custom url of the channel. */
-  var customUrl: js.UndefOr[String] = js.native
+  var customUrl: js.UndefOr[String] = js.undefined
   
   /** The language of the channel's default title and description. */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /** The description of the channel. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Localized title and description, read-only. */
-  var localized: js.UndefOr[ChannelLocalization] = js.native
+  var localized: js.UndefOr[ChannelLocalization] = js.undefined
   
   /** The date and time that the channel was created. The value is specified in < a href="//www.w3.org/TR/NOTE-datetime">ISO 8601 format. */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * A map of thumbnail images associated with the channel. For each object in the map, the key is the name of the thumbnail image, and the value is an object that contains other
@@ -33,10 +31,10 @@ trait ChannelSnippet extends StObject {
     * be available in the https domain, which is how the URLs appear in API responses. After that time, you might see broken images in your application if it tries to load YouTube images
     * from the http domain. Thumbnail images might be empty for newly created channels and might take up to one day to populate.
     */
-  var thumbnails: js.UndefOr[ThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   
   /** The channel's title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ChannelSnippet {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationPresignedUrlResponse extends StObject {
   
   /**
     * The URL of the extension.
     */
-  var AuthorizedUrl: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.AuthorizedUrl] = js.native
+  var AuthorizedUrl: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.AuthorizedUrl] = js.undefined
 }
 object CreateApplicationPresignedUrlResponse {
   

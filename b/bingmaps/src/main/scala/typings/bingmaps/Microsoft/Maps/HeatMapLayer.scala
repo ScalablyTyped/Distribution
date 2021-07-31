@@ -2,50 +2,50 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatMapLayer extends IDataLayer {
+trait HeatMapLayer
+  extends StObject
+     with IDataLayer {
   
   /** Disposes the heat map layer. */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Gets a boolean indicating if the heat map layer is visible or not.
     * @returns A boolean indicating if the heat map layer is visible or not.
     */
-  def getVisible(): Boolean = js.native
+  def getVisible(): Boolean
   
   /** 
     * @deprecated
     * Hides the heat map layer.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Specifies the locations to use when generating the heat map.
     * @param locations Set of locations.
     */
-  def setLocations(locations: js.Array[Location | Pushpin]): Unit = js.native
+  def setLocations(locations: js.Array[Location | Pushpin]): Unit
   
   /**
     * Sets the options to use with the heat map layer.
     * @param options Set of heat map layer options.
     */
-  def setOptions(options: IHeatMapLayerOptions): Unit = js.native
+  def setOptions(options: IHeatMapLayerOptions): Unit
   
   /**
     * Sets the visibility of the heat map layer.
     * @param visible A boolean indicating if the heat map layer is visible or not.
     */
-  def setVisible(visible: Boolean): Unit = js.native
+  def setVisible(visible: Boolean): Unit
   
   /** 
     * @deprecated
     * Shows the heat map layer.
     */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object HeatMapLayer {
   

@@ -9,15 +9,15 @@ import typings.lazyJs.lazyJsBooleans.`true`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LazyJS {
   
-  @js.native
-  trait ArrayLike[T] extends /* index */ NumberDictionary[T] {
+  trait ArrayLike[T]
+    extends StObject
+       with /* index */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object ArrayLike {
     
@@ -28,7 +28,7 @@ object LazyJS {
     }
     
     @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[_], T] (val x: Self with ArrayLike[T]) extends AnyVal {
+    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -36,7 +36,9 @@ object LazyJS {
   }
   
   @js.native
-  trait ArrayLikeSequence[T] extends Sequence[T] {
+  trait ArrayLikeSequence[T]
+    extends StObject
+       with Sequence[T] {
     
     @JSName("first")
     def first_ArrayLikeSequence(): ArrayLikeSequence[T] = js.native
@@ -59,14 +61,13 @@ object LazyJS {
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   object ArrayLikeSequence
   
-  @js.native
   trait AsyncHandle[T] extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def onComplete(callback: Callback): Unit = js.native
+    def onComplete(callback: Callback): Unit
     
-    def onError(callback: ErrorCallback): Unit = js.native
+    def onError(callback: ErrorCallback): Unit
   }
   object AsyncHandle {
     
@@ -77,7 +78,7 @@ object LazyJS {
     }
     
     @scala.inline
-    implicit class AsyncHandleMutableBuilder[Self <: AsyncHandle[_], T] (val x: Self with AsyncHandle[T]) extends AnyVal {
+    implicit class AsyncHandleMutableBuilder[Self <: AsyncHandle[?], T] (val x: Self & AsyncHandle[T]) extends AnyVal {
       
       @scala.inline
       def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
@@ -91,7 +92,9 @@ object LazyJS {
   }
   
   @js.native
-  trait AsyncSequence[T] extends SequenceBase[T] {
+  trait AsyncSequence[T]
+    extends StObject
+       with SequenceBase[T] {
     
     def each(callback: ValueCallback[T]): AsyncHandle[T] = js.native
   }
@@ -106,7 +109,8 @@ object LazyJS {
   
   @js.native
   trait GeneratedSequence[T]
-    extends Sequence[T]
+    extends StObject
+       with Sequence[T]
        with Instantiable2[/* generatorFn */ GeneratorCallback[T], /* length */ Double, GeneratedSequence[T]] {
     
     def length(): Double = js.native
@@ -118,7 +122,9 @@ object LazyJS {
   
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   @js.native
-  trait Iterator[T] extends Instantiable1[/* sequence */ Sequence[T], Iterator[T]] {
+  trait Iterator[T]
+    extends StObject
+       with Instantiable1[/* sequence */ Sequence[T], Iterator[T]] {
     
     def current(): T = js.native
     
@@ -129,8 +135,8 @@ object LazyJS {
   trait LazyStatic extends StObject {
     
     def apply(value: String): StringLikeSequence = js.native
-    def apply(value: js.Any): ObjectLikeSequence[_] = js.native
-    def apply(value: js.Array[_]): ArrayLikeSequence[_] = js.native
+    def apply(value: js.Any): ObjectLikeSequence[js.Any] = js.native
+    def apply(value: js.Array[js.Any]): ArrayLikeSequence[js.Any] = js.native
     
     def generate[T](generatorFn: GeneratorCallback[T]): GeneratedSequence[T] = js.native
     def generate[T](generatorFn: GeneratorCallback[T], length: Double): GeneratedSequence[T] = js.native
@@ -160,7 +166,9 @@ object LazyJS {
   type NumberCallback[T] = js.Function1[/* value */ T, Double]
   
   @js.native
-  trait ObjectLikeSequence[T] extends Sequence[T] {
+  trait ObjectLikeSequence[T]
+    extends StObject
+       with Sequence[T] {
     
     def assign(other: js.Any): ObjectLikeSequence[T] = js.native
     
@@ -195,10 +203,12 @@ object LazyJS {
   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   object ObjectLikeSequence
   
-  type PushFront[TailT /* <: js.Array[_] */, FrontT] = js.Any
+  type PushFront[TailT /* <: js.Array[js.Any] */, FrontT] = js.Any
   
   @js.native
-  trait Sequence[T] extends SequenceBase[T] {
+  trait Sequence[T]
+    extends StObject
+       with SequenceBase[T] {
     
     def each(eachFn: ValueCallback[T]): Sequence[T] = js.native
   }
@@ -206,7 +216,9 @@ object LazyJS {
   object Sequence
   
   @js.native
-  trait SequenceBase[T] extends SequenceBaser[T] {
+  trait SequenceBase[T]
+    extends StObject
+       with SequenceBaser[T] {
     
     def first(): js.Any = js.native
     def first(count: Double): Sequence[T] = js.native
@@ -282,7 +294,7 @@ object LazyJS {
     def none(): Boolean = js.native
     def none(valueFn: TestCallback[T, String | Double]): Boolean = js.native
     
-    def pluck(propertyName: String): Sequence[_] = js.native
+    def pluck(propertyName: String): Sequence[js.Any] = js.native
     
     def reduce[U](aggregatorFn: MemoCallback[T, U]): U = js.native
     def reduce[U](aggregatorFn: MemoCallback[T, U], memo: U): U = js.native
@@ -302,7 +314,7 @@ object LazyJS {
     def some(predicateFn: TestCallback[T, String | Double]): Boolean = js.native
     
     def sort(): Sequence[T] = js.native
-    def sort(sortFn: js.UndefOr[scala.Nothing], descending: Boolean): Sequence[T] = js.native
+    def sort(sortFn: Unit, descending: Boolean): Sequence[T] = js.native
     def sort(sortFn: CompareCallback): Sequence[T] = js.native
     def sort(sortFn: CompareCallback, descending: Boolean): Sequence[T] = js.native
     
@@ -336,7 +348,9 @@ object LazyJS {
   }
   
   @js.native
-  trait StringLikeSequence extends SequenceBaser[String] {
+  trait StringLikeSequence
+    extends StObject
+       with SequenceBaser[String] {
     
     def charAt(index: Double): String = js.native
     
@@ -379,7 +393,7 @@ object LazyJS {
   
   type TestCallback[T, U] = js.Function2[/* value */ T, /* index */ U, Boolean]
   
-  type Tuple[ElementT, LengthT /* <: Double */, OutputT /* <: js.Array[_] */] = /* import warning: importer.ImportType#apply Failed type conversion: lazy.js.anon.1<ElementT, OutputT>[// LengthT is not compile-time constant
+  type Tuple[ElementT, LengthT /* <: Double */, OutputT /* <: js.Array[js.Any] */] = /* import warning: importer.ImportType#apply Failed type conversion: lazy.js.anon.1<ElementT, OutputT>[// LengthT is not compile-time constant
   number extends LengthT ? 0 : LengthT extends 0 ? 1 : OutputT['length'] extends LengthT ? 2 : 3] */ js.Any
   
   type ValueCallback[T] = js.Function1[/* value */ T, Unit]

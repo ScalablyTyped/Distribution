@@ -9,45 +9,45 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Count[T] extends Generic {
+trait Count[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var analyze_wildcard: js.UndefOr[Boolean] = js.native
+  var analyze_wildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var default_operator: js.UndefOr[AND | OR] = js.native
+  var default_operator: js.UndefOr[AND | OR] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var ignore_throttled: js.UndefOr[Boolean] = js.native
+  var ignore_throttled: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var min_score: js.UndefOr[Double] = js.native
+  var min_score: js.UndefOr[Double] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var routing: js.UndefOr[String | js.Array[String]] = js.native
+  var routing: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var terminate_after: js.UndefOr[Double] = js.native
+  var terminate_after: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object Count {
   
@@ -58,7 +58,7 @@ object Count {
   }
   
   @scala.inline
-  implicit class CountMutableBuilder[Self <: Count[_], T] (val x: Self with Count[T]) extends AnyVal {
+  implicit class CountMutableBuilder[Self <: Count[?], T] (val x: Self & Count[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

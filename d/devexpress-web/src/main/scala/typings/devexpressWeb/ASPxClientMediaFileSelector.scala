@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the area that is used within the Html Editor's media dialogs.
   */
-@js.native
-trait ASPxClientMediaFileSelector extends ASPxClientControl {
+trait ASPxClientMediaFileSelector
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns a URL text from the URL text box in Html Editor's media dialogs.
     */
-  def GetUrl(): String = js.native
+  def GetUrl(): String
   
   /**
     * Sets a URL text in the Html Editor's media dialogs.
     * @param url A string value that is the Url text.
     */
-  def SetUrl(url: String): Unit = js.native
+  def SetUrl(url: String): Unit
 }
 object ASPxClientMediaFileSelector {
   

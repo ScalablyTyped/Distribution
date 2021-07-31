@@ -5,29 +5,27 @@ import typings.devextreme.mod.DevExpress.events.event
 import typings.devextreme.mod.DevExpress.ui.dxLookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReachedLeft extends StObject {
   
-  var component: js.UndefOr[dxLookup] = js.native
+  var component: js.UndefOr[dxLookup] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var reachedBottom: js.UndefOr[Boolean] = js.native
+  var reachedBottom: js.UndefOr[Boolean] = js.undefined
   
-  var reachedLeft: js.UndefOr[Boolean] = js.native
+  var reachedLeft: js.UndefOr[Boolean] = js.undefined
   
-  var reachedRight: js.UndefOr[Boolean] = js.native
+  var reachedRight: js.UndefOr[Boolean] = js.undefined
   
-  var reachedTop: js.UndefOr[Boolean] = js.native
+  var reachedTop: js.UndefOr[Boolean] = js.undefined
   
-  var scrollOffset: js.UndefOr[js.Any] = js.native
+  var scrollOffset: js.UndefOr[js.Any] = js.undefined
 }
 object ReachedLeft {
   

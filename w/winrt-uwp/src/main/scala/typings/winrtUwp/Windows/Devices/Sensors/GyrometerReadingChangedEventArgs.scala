@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the gyrometer reading–changed event. */
-@js.native
 trait GyrometerReadingChangedEventArgs extends StObject {
   
   /** Gets the current gyrometer reading. */
-  var reading: GyrometerReading = js.native
+  var reading: GyrometerReading
 }
 object GyrometerReadingChangedEventArgs {
   

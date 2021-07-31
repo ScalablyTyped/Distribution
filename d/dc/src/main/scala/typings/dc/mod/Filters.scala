@@ -2,19 +2,17 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filters extends StObject {
   
-  def HierarchyFilter(path: String): Filter = js.native
+  def HierarchyFilter(path: String): Filter
   
-  def RangedFilter(low: Double, high: Double): Filter = js.native
+  def RangedFilter(low: Double, high: Double): Filter
   
-  def RangedTwoDimensionalFilter(arr: js.Array[js.Array[Double]]): Filter = js.native
+  def RangedTwoDimensionalFilter(arr: js.Array[js.Array[Double]]): Filter
   
-  def TwoDimensionalFilter(filter: js.Array[Double]): Filter = js.native
+  def TwoDimensionalFilter(filter: js.Array[Double]): Filter
 }
 object Filters {
   

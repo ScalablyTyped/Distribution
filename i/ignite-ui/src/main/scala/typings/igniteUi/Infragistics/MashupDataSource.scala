@@ -3,7 +3,6 @@ package typings.igniteUi.Infragistics
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,7 +27,7 @@ trait MashupDataSource extends StObject {
   /**
     * Returns a list of all transaction objects that are either pending, or have been committed in the data source.
     */
-  def allTransactions(): js.Array[_] = js.native
+  def allTransactions(): js.Array[js.Any] = js.native
   
   /**
     * Analyzes the dataSource setting to automatically determine the type of the data source. Returns the data source type. See settings.type
@@ -79,7 +78,7 @@ trait MashupDataSource extends StObject {
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted data, i.e. the dataView
     */
-  def dataView(): js.Array[_] = js.native
+  def dataView(): js.Array[js.Any] = js.native
   
   /**
     * Deletes a row from the data source.
@@ -128,7 +127,7 @@ trait MashupDataSource extends StObject {
     * @param fields an array of fields that will be searched.
     */
   def filterByText(expression: String): Unit = js.native
-  def filterByText(expression: String, fields: js.Array[_]): Unit = js.native
+  def filterByText(expression: String, fields: js.Array[js.Any]): Unit = js.native
   
   /**
     * Gets/sets a list of filtering settings
@@ -141,7 +140,7 @@ trait MashupDataSource extends StObject {
   /**
     * Returns filtered data if local filtering is applied. If filtering is not applied OR type of filtering is remote returns undefined.
     */
-  def filteredData(): js.Array[_] = js.native
+  def filteredData(): js.Array[js.Any] = js.native
   
   /**
     * Returns a record by a specified key (requires that primaryKey is set in the settings)
@@ -151,9 +150,9 @@ trait MashupDataSource extends StObject {
     * @param objPath Not used in $.ig.DataSource
     */
   def findRecordByKey(key: js.Object): js.Object = js.native
-  def findRecordByKey(key: js.Object, ds: js.UndefOr[scala.Nothing], objPath: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String): js.Object = js.native
   def findRecordByKey(key: js.Object, ds: String, objPath: String): js.Object = js.native
+  def findRecordByKey(key: js.Object, ds: Unit, objPath: String): js.Object = js.native
   
   /**
     * Gets a cell value from the record by the specified fieldName. If there's a mapper defined for the field, the resolved by the mapper value will be returned.
@@ -173,12 +172,12 @@ trait MashupDataSource extends StObject {
   /**
     * Returns collection of data and non-data(grouped) records. Flat representation of hierarchical data
     */
-  def groupByData(): js.Array[_] = js.native
+  def groupByData(): js.Array[js.Any] = js.native
   
   /**
     * Returns the current normalized/transformed and paged/filtered/sorted group-by data
     */
-  def groupByDataView(): js.Array[_] = js.native
+  def groupByDataView(): js.Array[js.Any] = js.native
   
   /**
     * Gets / sets if the response from the server contains a property which specifies the total number of records in the server-side backend
@@ -210,7 +209,7 @@ trait MashupDataSource extends StObject {
     * @param exprs array of sorting expressions. If not set check expressions defined in sorting settings
     */
   def isGroupByApplied(): Boolean = js.native
-  def isGroupByApplied(exprs: js.Array[_]): Boolean = js.native
+  def isGroupByApplied(exprs: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Check whether the specified gorupby record is collapsed
@@ -270,7 +269,7 @@ trait MashupDataSource extends StObject {
   /**
     * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source
     */
-  def pendingTransactions(): js.Array[_] = js.native
+  def pendingTransactions(): js.Array[js.Any] = js.native
   
   /**
     * Gets /sets the page index that should be persisted. For now ONLY when filtering is applied and call explicitly DataBind.
@@ -338,9 +337,9 @@ trait MashupDataSource extends StObject {
     * @param t type of the data source. See settings.type
     */
   def schema(): Unit = js.native
-  def schema(s: js.UndefOr[scala.Nothing], t: String): Unit = js.native
   def schema(s: js.Object): Unit = js.native
   def schema(s: js.Object, t: String): Unit = js.native
+  def schema(s: Unit, t: String): Unit = js.native
   
   /**
     * Sets a cell value for the cell denoted by rowId and colId. Creates a transaction for the update operation and returns it
@@ -397,9 +396,9 @@ trait MashupDataSource extends StObject {
     * @param dsObj data source object - usually contains information about data records and metadata(holds info about summaries)
     */
   def summariesResponse(): js.Object = js.native
-  def summariesResponse(key: js.UndefOr[scala.Nothing], dsObj: js.Object): js.Object = js.native
   def summariesResponse(key: String): js.Object = js.native
   def summariesResponse(key: String, dsObj: js.Object): js.Object = js.native
+  def summariesResponse(key: Unit, dsObj: js.Object): js.Object = js.native
   
   /**
     * Gets/sets a list of summaries settings.
@@ -442,41 +441,21 @@ trait MashupDataSource extends StObject {
     * @param context
     */
   def totalRecordsCount(): Double = js.native
-  def totalRecordsCount(
-    count: js.UndefOr[scala.Nothing],
-    key: js.UndefOr[scala.Nothing],
-    dsObj: js.UndefOr[scala.Nothing],
-    context: js.Object
-  ): Double = js.native
-  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], dsObj: js.Object): Double = js.native
-  def totalRecordsCount(
-    count: js.UndefOr[scala.Nothing],
-    key: js.UndefOr[scala.Nothing],
-    dsObj: js.Object,
-    context: js.Object
-  ): Double = js.native
-  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object): Double = js.native
-  def totalRecordsCount(
-    count: js.UndefOr[scala.Nothing],
-    key: js.Object,
-    dsObj: js.UndefOr[scala.Nothing],
-    context: js.Object
-  ): Double = js.native
-  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object, dsObj: js.Object): Double = js.native
-  def totalRecordsCount(count: js.UndefOr[scala.Nothing], key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
   def totalRecordsCount(count: Double): Double = js.native
-  def totalRecordsCount(
-    count: Double,
-    key: js.UndefOr[scala.Nothing],
-    dsObj: js.UndefOr[scala.Nothing],
-    context: js.Object
-  ): Double = js.native
-  def totalRecordsCount(count: Double, key: js.UndefOr[scala.Nothing], dsObj: js.Object): Double = js.native
-  def totalRecordsCount(count: Double, key: js.UndefOr[scala.Nothing], dsObj: js.Object, context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object): Double = js.native
-  def totalRecordsCount(count: Double, key: js.Object, dsObj: js.UndefOr[scala.Nothing], context: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object): Double = js.native
   def totalRecordsCount(count: Double, key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: js.Object, dsObj: Unit, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: Unit, dsObj: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: Unit, dsObj: js.Object, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Double, key: Unit, dsObj: Unit, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: js.Object, dsObj: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: js.Object, dsObj: js.Object, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: js.Object, dsObj: Unit, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: Unit, dsObj: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: Unit, dsObj: js.Object, context: js.Object): Double = js.native
+  def totalRecordsCount(count: Unit, key: Unit, dsObj: Unit, context: js.Object): Double = js.native
   
   /**
     * Returns the accumulated transaction log as a string. The purpose of this is to be passed to URLs or used conveniently
@@ -514,5 +493,5 @@ trait MashupDataSource extends StObject {
   /**
     * Returns collection of data and non-data(grouped) records. Returns only visible records(children of collapsed grouped records are not included in the collection)
     */
-  def visibleGroupByData(): js.Array[_] = js.native
+  def visibleGroupByData(): js.Array[js.Any] = js.native
 }

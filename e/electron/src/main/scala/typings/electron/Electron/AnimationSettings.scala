@@ -2,29 +2,27 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationSettings extends StObject {
   
   /**
     * Determines whether the user desires reduced motion based on platform APIs.
     */
-  var prefersReducedMotion: Boolean = js.native
+  var prefersReducedMotion: Boolean
   
   /**
     * Determines on a per-platform basis whether scroll animations (e.g. produced by
     * home/end key) should be enabled.
     */
-  var scrollAnimationsEnabledBySystem: Boolean = js.native
+  var scrollAnimationsEnabledBySystem: Boolean
   
   /**
     * Returns true if rich animations should be rendered. Looks at session type (e.g.
     * remote desktop) and accessibility settings to give guidance for heavy
     * animations.
     */
-  var shouldRenderRichAnimation: Boolean = js.native
+  var shouldRenderRichAnimation: Boolean
 }
 object AnimationSettings {
   

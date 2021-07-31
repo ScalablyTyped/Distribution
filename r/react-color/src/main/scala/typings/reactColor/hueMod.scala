@@ -9,7 +9,6 @@ import typings.reactColor.reactColorStrings.vertical
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hueMod {
@@ -23,10 +22,11 @@ object hueMod {
   trait Hue
     extends Component[HueProps, js.Object, js.Any]
   
-  @js.native
-  trait HueProps extends CustomPickerProps[Hue] {
+  trait HueProps
+    extends StObject
+       with CustomPickerProps[Hue] {
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
   }
   object HueProps {
     

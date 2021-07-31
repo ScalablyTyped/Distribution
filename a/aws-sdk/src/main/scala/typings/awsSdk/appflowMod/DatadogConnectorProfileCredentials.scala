@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatadogConnectorProfileCredentials extends StObject {
   
   /**
     *  A unique alphanumeric identifier used to authenticate a user, developer, or calling program to your API. 
     */
-  var apiKey: ApiKey = js.native
+  var apiKey: ApiKey
   
   /**
     *  Application keys, in conjunction with your API key, give you full access to Datadog’s programmatic API. Application keys are associated with the user account that created them. The application key is used to log all requests made to the API. 
     */
-  var applicationKey: ApplicationKey = js.native
+  var applicationKey: ApplicationKey
 }
 object DatadogConnectorProfileCredentials {
   

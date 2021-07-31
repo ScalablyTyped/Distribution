@@ -11,21 +11,19 @@ import typings.baseui.baseuiStrings.moveUp
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatefulContainerProps[T] extends StObject {
   
-  var children: js.UndefOr[js.Function1[/* args */ T, ReactNode]] = js.native
+  var children: js.UndefOr[js.Function1[/* args */ T, ReactNode]] = js.undefined
   
-  var initialState: js.UndefOr[ContainerState] = js.native
+  var initialState: js.UndefOr[ContainerState] = js.undefined
   
-  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.native
+  var onChange: js.UndefOr[typings.baseui.datepickerMod.onChange] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
   
-  var stateReducer: js.UndefOr[StateReducer] = js.native
+  var stateReducer: js.UndefOr[StateReducer] = js.undefined
 }
 object StatefulContainerProps {
   
@@ -36,7 +34,7 @@ object StatefulContainerProps {
   }
   
   @scala.inline
-  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps[_], T] (val x: Self with StatefulContainerProps[T]) extends AnyVal {
+  implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps[?], T] (val x: Self & StatefulContainerProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: /* args */ T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

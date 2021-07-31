@@ -3,20 +3,18 @@ package typings.googleapis.loggingV2Mod.loggingV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An individual entry in a log.
   */
-@js.native
 trait SchemaLogEntry extends StObject {
   
   /**
     * Optional. Information about the HTTP request associated with this log
     * entry, if applicable.
     */
-  var httpRequest: js.UndefOr[SchemaHttpRequest] = js.native
+  var httpRequest: js.UndefOr[SchemaHttpRequest] = js.undefined
   
   /**
     * Optional. A unique identifier for the log entry. If you provide a value,
@@ -26,19 +24,19 @@ trait SchemaLogEntry extends StObject {
     * unique identifier. The insert_id is also used to order log entries that
     * have the same timestamp value.
     */
-  var insertId: js.UndefOr[String] = js.native
+  var insertId: js.UndefOr[String] = js.undefined
   
   /**
     * The log entry payload, represented as a structure that is expressed as a
     * JSON object.
     */
-  var jsonPayload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var jsonPayload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. A set of user-defined (key, value) data that provides
     * additional information about the log entry.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. The resource name of the log to which this log entry belongs:
@@ -59,7 +57,7 @@ trait SchemaLogEntry extends StObject {
     * the log entry will not show the leading slash and filtering for a log
     * name with a leading slash will never return any results.
     */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Output only. Additional metadata about the monitored
@@ -71,24 +69,24 @@ trait SchemaLogEntry extends StObject {
     * Stackdriver system labels that were present in the metadata.systemLabels
     * field will no longer be available in the LogEntry.
     */
-  var metadata: js.UndefOr[SchemaMonitoredResourceMetadata] = js.native
+  var metadata: js.UndefOr[SchemaMonitoredResourceMetadata] = js.undefined
   
   /**
     * Optional. Information about an operation associated with the log entry,
     * if applicable.
     */
-  var operation: js.UndefOr[SchemaLogEntryOperation] = js.native
+  var operation: js.UndefOr[SchemaLogEntryOperation] = js.undefined
   
   /**
     * The log entry payload, represented as a protocol buffer. Some Google
     * Cloud Platform services use this field for their log entry payloads.
     */
-  var protoPayload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var protoPayload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. The time the log entry was received by Logging.
     */
-  var receiveTimestamp: js.UndefOr[String] = js.native
+  var receiveTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The primary monitored resource associated with this log
@@ -96,19 +94,19 @@ trait SchemaLogEntry extends StObject {
     * associated with the monitored resource designating the particular
     * database that reported the error.
     */
-  var resource: js.UndefOr[SchemaMonitoredResource] = js.native
+  var resource: js.UndefOr[SchemaMonitoredResource] = js.undefined
   
   /**
     * Optional. The severity of the log entry. The default value is
     * LogSeverity.DEFAULT.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Source code location information associated with the log entry,
     * if any.
     */
-  var sourceLocation: js.UndefOr[SchemaLogEntrySourceLocation] = js.native
+  var sourceLocation: js.UndefOr[SchemaLogEntrySourceLocation] = js.undefined
   
   /**
     * Optional. The span ID within the trace associated with the log entry.For
@@ -116,12 +114,12 @@ trait SchemaLogEntry extends StObject {
     * 16-character hexadecimal encoding of an 8-byte array, such as
     * &lt;code&gt;&quot;000000000000004a&quot;&lt;/code&gt;.
     */
-  var spanId: js.UndefOr[String] = js.native
+  var spanId: js.UndefOr[String] = js.undefined
   
   /**
     * The log entry payload, represented as a Unicode string (UTF-8).
     */
-  var textPayload: js.UndefOr[String] = js.native
+  var textPayload: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The time the event described by the log entry occurred. This
@@ -135,7 +133,7 @@ trait SchemaLogEntry extends StObject {
     * not be available when calling entries.list, but those log entries can
     * still be exported with LogSinks.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Resource name of the trace associated with the log entry, if
@@ -143,7 +141,7 @@ trait SchemaLogEntry extends StObject {
     * relative to //tracing.googleapis.com. Example:
     * projects/my-projectid/traces/06796866738c859f2f19b7cfb3214824
     */
-  var trace: js.UndefOr[String] = js.native
+  var trace: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The sampling decision of the trace associated with the log
@@ -153,7 +151,7 @@ trait SchemaLogEntry extends StObject {
     * decision was unknown at the time. A non-sampled trace value is still
     * useful as a request correlation identifier. The default is False.
     */
-  var traceSampled: js.UndefOr[Boolean] = js.native
+  var traceSampled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLogEntry {
   

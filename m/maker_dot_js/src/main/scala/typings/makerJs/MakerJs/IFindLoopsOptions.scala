@@ -2,19 +2,19 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to model.findLoops.
   */
-@js.native
-trait IFindLoopsOptions extends IPointMatchOptions {
+trait IFindLoopsOptions
+  extends StObject
+     with IPointMatchOptions {
   
   /**
     * Flag to remove looped paths from the original model.
     */
-  var removeFromOriginal: js.UndefOr[Boolean] = js.native
+  var removeFromOriginal: js.UndefOr[Boolean] = js.undefined
 }
 object IFindLoopsOptions {
   

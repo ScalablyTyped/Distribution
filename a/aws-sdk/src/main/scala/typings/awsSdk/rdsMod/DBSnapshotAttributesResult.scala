@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBSnapshotAttributesResult extends StObject {
   
   /**
     * The list of attributes and values for the manual DB snapshot.
     */
-  var DBSnapshotAttributes: js.UndefOr[DBSnapshotAttributeList] = js.native
+  var DBSnapshotAttributes: js.UndefOr[DBSnapshotAttributeList] = js.undefined
   
   /**
     * The identifier of the manual DB snapshot that the attributes apply to.
     */
-  var DBSnapshotIdentifier: js.UndefOr[String] = js.native
+  var DBSnapshotIdentifier: js.UndefOr[String] = js.undefined
 }
 object DBSnapshotAttributesResult {
   

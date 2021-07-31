@@ -2,61 +2,59 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendEmailRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to use when sending the email.
     */
-  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.native
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
   /**
     * An object that contains the body of the message. You can send either a Simple message Raw message or a template Message.
     */
-  var Content: EmailContent = js.native
+  var Content: EmailContent
   
   /**
     * An object that contains the recipients of the email message.
     */
-  var Destination: js.UndefOr[typings.awsSdk.sesv2Mod.Destination] = js.native
+  var Destination: js.UndefOr[typings.awsSdk.sesv2Mod.Destination] = js.undefined
   
   /**
     * A list of tags, in the form of name/value pairs, to apply to an email that you send using the SendEmail operation. Tags correspond to characteristics of the email that you define, so that you can publish email sending events. 
     */
-  var EmailTags: js.UndefOr[MessageTagList] = js.native
+  var EmailTags: js.UndefOr[MessageTagList] = js.undefined
   
   /**
     * The address that you want bounce and complaint notifications to be sent to.
     */
-  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FeedbackForwardingEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to use the email address specified in the FeedbackForwardingEmailAddress parameter. For example, if the owner of example.com (which has ARN arn:aws:ses:us-east-1:123456789012:identity/example.com) attaches a policy to it that authorizes you to use feedback@example.com, then you would specify the FeedbackForwardingEmailAddressIdentityArn to be arn:aws:ses:us-east-1:123456789012:identity/example.com, and the FeedbackForwardingEmailAddress to be feedback@example.com. For more information about sending authorization, see the Amazon SES Developer Guide.
     */
-  var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.native
+  var FeedbackForwardingEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The email address that you want to use as the "From" address for the email. The address that you specify has to be verified. 
     */
-  var FromEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to use the email address specified in the FromEmailAddress parameter. For example, if the owner of example.com (which has ARN arn:aws:ses:us-east-1:123456789012:identity/example.com) attaches a policy to it that authorizes you to use sender@example.com, then you would specify the FromEmailAddressIdentityArn to be arn:aws:ses:us-east-1:123456789012:identity/example.com, and the FromEmailAddress to be sender@example.com. For more information about sending authorization, see the Amazon SES Developer Guide. For Raw emails, the FromEmailAddressIdentityArn value overrides the X-SES-SOURCE-ARN and X-SES-FROM-ARN headers specified in raw email message content.
     */
-  var FromEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.native
+  var FromEmailAddressIdentityArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * An object used to specify a list or topic to which an email belongs, which will be used when a contact chooses to unsubscribe.
     */
-  var ListManagementOptions: js.UndefOr[typings.awsSdk.sesv2Mod.ListManagementOptions] = js.native
+  var ListManagementOptions: js.UndefOr[typings.awsSdk.sesv2Mod.ListManagementOptions] = js.undefined
   
   /**
     * The "Reply-to" email addresses for the message. When the recipient replies to the message, each Reply-to address receives the reply.
     */
-  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.native
+  var ReplyToAddresses: js.UndefOr[EmailAddressList] = js.undefined
 }
 object SendEmailRequest {
   

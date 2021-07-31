@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditKeyEventArgs extends EventArgs {
+trait EditKeyEventArgs
+  extends StObject
+     with EventArgs {
   
-  val htmlEvent: js.Any = js.native
+  val htmlEvent: js.Any
 }
 object EditKeyEventArgs {
   

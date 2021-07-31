@@ -2,16 +2,15 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspenseConfig
-  extends typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TimeoutConfig {
+  extends StObject
+     with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.TimeoutConfig {
   
-  var busyDelayMs: js.UndefOr[Double] = js.native
+  var busyDelayMs: js.UndefOr[Double] = js.undefined
   
-  var busyMinDurationMs: js.UndefOr[Double] = js.native
+  var busyMinDurationMs: js.UndefOr[Double] = js.undefined
 }
 object SuspenseConfig {
   

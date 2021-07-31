@@ -8,10 +8,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gatsby-link", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gatsby-link", JSImport.Default)
   @js.native
@@ -22,42 +25,38 @@ object mod {
   @js.native
   val navigate: NavigateFn = js.native
   
-  @JSImport("gatsby-link", "navigateTo")
-  @js.native
-  def navigateTo(to: String): Unit = js.native
+  @scala.inline
+  def navigateTo(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-link", "push")
-  @js.native
-  def push(to: String): Unit = js.native
+  @scala.inline
+  def push(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-link", "replace")
-  @js.native
-  def replace(to: String): Unit = js.native
+  @scala.inline
+  def replace(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("gatsby-link", "withAssetPrefix")
-  @js.native
-  def withAssetPrefix(path: String): String = js.native
+  @scala.inline
+  def withAssetPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAssetPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("gatsby-link", "withPrefix")
-  @js.native
-  def withPrefix(path: String): String = js.native
+  @scala.inline
+  def withPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type GatsbyLink[TState] = Component[GatsbyLinkProps[TState], js.Any, js.Any]
   
-  @js.native
-  trait GatsbyLinkProps[TState] extends LinkProps[TState] {
+  trait GatsbyLinkProps[TState]
+    extends StObject
+       with LinkProps[TState] {
     
     /** A class to apply when this Link is active */
-    var activeClassName: js.UndefOr[String] = js.native
+    var activeClassName: js.UndefOr[String] = js.undefined
     
     /** Inline styles for when this Link is active */
-    var activeStyle: js.UndefOr[js.Object] = js.native
+    var activeStyle: js.UndefOr[js.Object] = js.undefined
     
     @JSName("onClick")
-    var onClick_GatsbyLinkProps: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], Unit]] = js.native
+    var onClick_GatsbyLinkProps: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], Unit]] = js.undefined
     
     /** Class the link as highlighted if there is a partial match via a the `to` being prefixed to the current url */
-    var partiallyActive: js.UndefOr[Boolean] = js.native
+    var partiallyActive: js.UndefOr[Boolean] = js.undefined
   }
   object GatsbyLinkProps {
     
@@ -68,7 +67,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GatsbyLinkPropsMutableBuilder[Self <: GatsbyLinkProps[_], TState] (val x: Self with GatsbyLinkProps[TState]) extends AnyVal {
+    implicit class GatsbyLinkPropsMutableBuilder[Self <: GatsbyLinkProps[?], TState] (val x: Self & GatsbyLinkProps[TState]) extends AnyVal {
       
       @scala.inline
       def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])

@@ -12,7 +12,7 @@ Get metadata on the default editor or a specific editor
 | Keywords           | env, editor, environment, variable, default, editors, main, user, meta, metadata, info, name, binary, path, sublime, atom, vscode, webstorm, textmate, vim, neovim, intellij, nano, emacs |
 | # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 2836138 |
+| # downloads        | 5061585 |
 | # stars            | 0 |
 
 ## Links

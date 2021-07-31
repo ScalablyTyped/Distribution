@@ -7,29 +7,29 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postProcessingPassMod {
   
   @JSImport("ol/webgl/PostProcessingPass", JSImport.Default)
   @js.native
-  class default protected () extends WebGLPostProcessingPass {
+  class default protected ()
+    extends StObject
+       with WebGLPostProcessingPass {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var fragmentShader: js.UndefOr[String] = js.native
+    var fragmentShader: js.UndefOr[String] = js.undefined
     
-    var scaleRatio: js.UndefOr[Double] = js.native
+    var scaleRatio: js.UndefOr[Double] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
     
-    var vertexShader: js.UndefOr[String] = js.native
+    var vertexShader: js.UndefOr[String] = js.undefined
     
-    var webGlContext: WebGLRenderingContext = js.native
+    var webGlContext: WebGLRenderingContext
   }
   object Options {
     

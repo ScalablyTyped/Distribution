@@ -4,7 +4,6 @@ import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,9 +14,9 @@ trait PivotTable extends StObject {
   val ActiveFilters_Original: PivotFilters = js.native
   
   def AddDataField(Field: js.Any): PivotField = js.native
-  def AddDataField(Field: js.Any, Caption: js.UndefOr[scala.Nothing], Function: js.Any): PivotField = js.native
   def AddDataField(Field: js.Any, Caption: js.Any): PivotField = js.native
   def AddDataField(Field: js.Any, Caption: js.Any, Function: js.Any): PivotField = js.native
+  def AddDataField(Field: js.Any, Caption: Unit, Function: js.Any): PivotField = js.native
   
   def AddFields(
     RowFields: js.UndefOr[String | SafeArray[String]],
@@ -92,65 +91,32 @@ trait PivotTable extends StObject {
   def ConvertToFormulas(ConvertFilters: Boolean): Unit = js.native
   
   def CreateCubeFile(File: String): String = js.native
+  def CreateCubeFile(File: String, Measures: Unit, Levels: Unit, Members: Unit, Properties: Boolean): String = js.native
+  def CreateCubeFile(File: String, Measures: Unit, Levels: Unit, Members: SafeArray[SafeArray[String]]): String = js.native
   def CreateCubeFile(
     File: String,
-    Measures: js.UndefOr[scala.Nothing],
-    Levels: js.UndefOr[scala.Nothing],
-    Members: js.UndefOr[scala.Nothing],
-    Properties: Boolean
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: js.UndefOr[scala.Nothing],
-    Levels: js.UndefOr[scala.Nothing],
-    Members: SafeArray[SafeArray[String]]
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: js.UndefOr[scala.Nothing],
-    Levels: js.UndefOr[scala.Nothing],
+    Measures: Unit,
+    Levels: Unit,
     Members: SafeArray[SafeArray[String]],
     Properties: Boolean
   ): String = js.native
-  def CreateCubeFile(File: String, Measures: js.UndefOr[scala.Nothing], Levels: SafeArray[String]): String = js.native
+  def CreateCubeFile(File: String, Measures: Unit, Levels: SafeArray[String]): String = js.native
+  def CreateCubeFile(File: String, Measures: Unit, Levels: SafeArray[String], Members: Unit, Properties: Boolean): String = js.native
+  def CreateCubeFile(File: String, Measures: Unit, Levels: SafeArray[String], Members: SafeArray[SafeArray[String]]): String = js.native
   def CreateCubeFile(
     File: String,
-    Measures: js.UndefOr[scala.Nothing],
-    Levels: SafeArray[String],
-    Members: js.UndefOr[scala.Nothing],
-    Properties: Boolean
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: js.UndefOr[scala.Nothing],
-    Levels: SafeArray[String],
-    Members: SafeArray[SafeArray[String]]
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: js.UndefOr[scala.Nothing],
+    Measures: Unit,
     Levels: SafeArray[String],
     Members: SafeArray[SafeArray[String]],
     Properties: Boolean
   ): String = js.native
   def CreateCubeFile(File: String, Measures: SafeArray[String]): String = js.native
+  def CreateCubeFile(File: String, Measures: SafeArray[String], Levels: Unit, Members: Unit, Properties: Boolean): String = js.native
+  def CreateCubeFile(File: String, Measures: SafeArray[String], Levels: Unit, Members: SafeArray[SafeArray[String]]): String = js.native
   def CreateCubeFile(
     File: String,
     Measures: SafeArray[String],
-    Levels: js.UndefOr[scala.Nothing],
-    Members: js.UndefOr[scala.Nothing],
-    Properties: Boolean
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: SafeArray[String],
-    Levels: js.UndefOr[scala.Nothing],
-    Members: SafeArray[SafeArray[String]]
-  ): String = js.native
-  def CreateCubeFile(
-    File: String,
-    Measures: SafeArray[String],
-    Levels: js.UndefOr[scala.Nothing],
+    Levels: Unit,
     Members: SafeArray[SafeArray[String]],
     Properties: Boolean
   ): String = js.native
@@ -159,7 +125,7 @@ trait PivotTable extends StObject {
     File: String,
     Measures: SafeArray[String],
     Levels: SafeArray[String],
-    Members: js.UndefOr[scala.Nothing],
+    Members: Unit,
     Properties: Boolean
   ): String = js.native
   def CreateCubeFile(
@@ -385,7 +351,7 @@ trait PivotTable extends StObject {
   
   /** @param Mode [Mode=0] */
   def PivotSelect(Name: String): Unit = js.native
-  def PivotSelect(Name: String, Mode: js.UndefOr[scala.Nothing], UseStandardName: Boolean): Unit = js.native
+  def PivotSelect(Name: String, Mode: Unit, UseStandardName: Boolean): Unit = js.native
   def PivotSelect(Name: String, Mode: XlPTSelectionMode): Unit = js.native
   def PivotSelect(Name: String, Mode: XlPTSelectionMode, UseStandardName: Boolean): Unit = js.native
   
@@ -404,7 +370,7 @@ trait PivotTable extends StObject {
     SaveData: js.UndefOr[Boolean],
     HasAutoFormat: js.UndefOr[Boolean],
     AutoPage: js.UndefOr[PivotTableWizardAutoPage[TSourceType]],
-    Reserved: js.UndefOr[scala.Nothing],
+    Reserved: Unit,
     BackgroundQuery: js.UndefOr[Boolean],
     OptimizeCache: js.UndefOr[Boolean],
     PageFieldOrder: js.UndefOr[XlOrder],

@@ -9,29 +9,27 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaceMod {
   
-  @js.native
   trait PluginInfo extends StObject {
     
-    var installTime: Date = js.native
+    var installTime: Date
     
-    var kind: PluginKind = js.native
+    var kind: PluginKind
     
-    var lastUsedTime: Date = js.native
+    var lastUsedTime: Date
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var serverURL: String = js.native
+    var serverURL: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PluginInfo {
     
@@ -101,20 +99,19 @@ object workspaceMod {
   
   type PulumiFn = js.Function0[js.Promise[(Record[String, js.Any]) | Unit]]
   
-  @js.native
   trait StackSummary extends StObject {
     
-    var current: Boolean = js.native
+    var current: Boolean
     
-    var lastUpdate: js.UndefOr[String] = js.native
+    var lastUpdate: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var resourceCount: js.UndefOr[Double] = js.native
+    var resourceCount: js.UndefOr[Double] = js.undefined
     
-    var updateInProgress: Boolean = js.native
+    var updateInProgress: Boolean
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object StackSummary {
     
@@ -156,10 +153,9 @@ object workspaceMod {
     }
   }
   
-  @js.native
   trait WhoAmIResult extends StObject {
     
-    var user: String = js.native
+    var user: String
   }
   object WhoAmIResult {
     
@@ -286,13 +282,13 @@ object workspaceMod {
       * @param kind he kind of plugin e.g. "resource"
       */
     def removePlugin(): js.Promise[Unit] = js.native
-    def removePlugin(name: js.UndefOr[scala.Nothing], versionRange: js.UndefOr[scala.Nothing], kind: String): js.Promise[Unit] = js.native
-    def removePlugin(name: js.UndefOr[scala.Nothing], versionRange: String): js.Promise[Unit] = js.native
-    def removePlugin(name: js.UndefOr[scala.Nothing], versionRange: String, kind: String): js.Promise[Unit] = js.native
     def removePlugin(name: String): js.Promise[Unit] = js.native
-    def removePlugin(name: String, versionRange: js.UndefOr[scala.Nothing], kind: String): js.Promise[Unit] = js.native
     def removePlugin(name: String, versionRange: String): js.Promise[Unit] = js.native
     def removePlugin(name: String, versionRange: String, kind: String): js.Promise[Unit] = js.native
+    def removePlugin(name: String, versionRange: Unit, kind: String): js.Promise[Unit] = js.native
+    def removePlugin(name: Unit, versionRange: String): js.Promise[Unit] = js.native
+    def removePlugin(name: Unit, versionRange: String, kind: String): js.Promise[Unit] = js.native
+    def removePlugin(name: Unit, versionRange: Unit, kind: String): js.Promise[Unit] = js.native
     
     /**
       * Deletes the stack and all associated configuration and history.

@@ -2,66 +2,64 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotTaskDetail extends StObject {
   
   /**
     * The description of the snapshot.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the disk in the snapshot, in GiB.
     */
-  var DiskImageSize: js.UndefOr[Double] = js.native
+  var DiskImageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the snapshot is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The format of the disk image from which the snapshot is created.
     */
-  var Format: js.UndefOr[String] = js.native
+  var Format: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to create the encrypted snapshot.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of completion for the import snapshot task.
     */
-  var Progress: js.UndefOr[String] = js.native
+  var Progress: js.UndefOr[String] = js.undefined
   
   /**
     * The snapshot ID of the disk being imported.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * A brief status for the import snapshot task.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * A detailed status message for the import snapshot task.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the disk image from which the snapshot is created.
     */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon S3 bucket for the disk image.
     */
-  var UserBucket: js.UndefOr[UserBucketDetails] = js.native
+  var UserBucket: js.UndefOr[UserBucketDetails] = js.undefined
 }
 object SnapshotTaskDetail {
   

@@ -8,28 +8,26 @@ import typings.nodePgMigrate.viewsTypesMod.DropView
 import typings.nodePgMigrate.viewsTypesMod.RenameView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsMod {
   
-  @JSImport("node-pg-migrate/dist/operations/views", "alterView")
+  @JSImport("node-pg-migrate/dist/operations/views", JSImport.Namespace)
   @js.native
-  def alterView(mOptions: MigrationOptions): AlterView = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/views", "alterViewColumn")
-  @js.native
-  def alterViewColumn(mOptions: MigrationOptions): AlterViewColumn = js.native
+  @scala.inline
+  def alterView(mOptions: MigrationOptions): AlterView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterView]
   
-  @JSImport("node-pg-migrate/dist/operations/views", "createView")
-  @js.native
-  def createView(mOptions: MigrationOptions): CreateView = js.native
+  @scala.inline
+  def alterViewColumn(mOptions: MigrationOptions): AlterViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("alterViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterViewColumn]
   
-  @JSImport("node-pg-migrate/dist/operations/views", "dropView")
-  @js.native
-  def dropView(mOptions: MigrationOptions): DropView = js.native
+  @scala.inline
+  def createView(mOptions: MigrationOptions): CreateView = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateView]
   
-  @JSImport("node-pg-migrate/dist/operations/views", "renameView")
-  @js.native
-  def renameView(mOptions: MigrationOptions): RenameView = js.native
+  @scala.inline
+  def dropView(mOptions: MigrationOptions): DropView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropView]
+  
+  @scala.inline
+  def renameView(mOptions: MigrationOptions): RenameView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameView]
 }

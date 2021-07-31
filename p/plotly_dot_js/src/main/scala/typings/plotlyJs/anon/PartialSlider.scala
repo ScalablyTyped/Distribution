@@ -12,54 +12,52 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Slider> */
-@js.native
 trait PartialSlider extends StObject {
   
-  var active: js.UndefOr[Double] = js.native
+  var active: js.UndefOr[Double] = js.undefined
   
-  var activebgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var activebgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bordercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var currentvalue: js.UndefOr[Font] = js.native
+  var currentvalue: js.UndefOr[Font] = js.undefined
   
-  var font: js.UndefOr[typings.plotlyJs.mod.Font] = js.native
+  var font: js.UndefOr[typings.plotlyJs.mod.Font] = js.undefined
   
-  var len: js.UndefOr[Double] = js.native
+  var len: js.UndefOr[Double] = js.undefined
   
-  var lenmode: js.UndefOr[fraction | pixels] = js.native
+  var lenmode: js.UndefOr[fraction | pixels] = js.undefined
   
-  var minorticklen: js.UndefOr[Double] = js.native
+  var minorticklen: js.UndefOr[Double] = js.undefined
   
-  var pad: js.UndefOr[PartialPadding] = js.native
+  var pad: js.UndefOr[PartialPadding] = js.undefined
   
-  var steps: js.UndefOr[js.Array[PartialSliderStep]] = js.native
+  var steps: js.UndefOr[js.Array[PartialSliderStep]] = js.undefined
   
-  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var ticklen: js.UndefOr[Double] = js.native
+  var ticklen: js.UndefOr[Double] = js.undefined
   
-  var tickwidth: js.UndefOr[Double] = js.native
+  var tickwidth: js.UndefOr[Double] = js.undefined
   
-  var transition: js.UndefOr[Transition] = js.native
+  var transition: js.UndefOr[Transition] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
 }
 object PartialSlider {
   

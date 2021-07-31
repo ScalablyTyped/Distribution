@@ -4,33 +4,31 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaEncodingProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents data about the chat message transport. */
-@js.native
 trait ChatMessageTransportConfiguration extends StObject {
   
   /** Gets the extended properties of the transport. */
-  var extendedProperties: IMapView[String, _] = js.native
+  var extendedProperties: IMapView[String, js.Any]
   
   /** Gets the maximum attachment limit for a message on the transport. */
-  var maxAttachmentCount: Double = js.native
+  var maxAttachmentCount: Double
   
   /** Gets the maximum size of an attachment for the transport. */
-  var maxMessageSizeInKilobytes: Double = js.native
+  var maxMessageSizeInKilobytes: Double
   
   /** Gets the maximum number of recipients for the transport. */
-  var maxRecipientCount: Double = js.native
+  var maxRecipientCount: Double
   
   /** Gets the supported video encoding format for the transport. */
-  var supportedVideoFormat: MediaEncodingProfile = js.native
+  var supportedVideoFormat: MediaEncodingProfile
 }
 object ChatMessageTransportConfiguration {
   
   @scala.inline
   def apply(
-    extendedProperties: IMapView[String, _],
+    extendedProperties: IMapView[String, js.Any],
     maxAttachmentCount: Double,
     maxMessageSizeInKilobytes: Double,
     maxRecipientCount: Double,
@@ -44,7 +42,7 @@ object ChatMessageTransportConfiguration {
   implicit class ChatMessageTransportConfigurationMutableBuilder[Self <: ChatMessageTransportConfiguration] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtendedProperties(value: IMapView[String, _]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    def setExtendedProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])

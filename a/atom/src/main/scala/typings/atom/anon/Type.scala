@@ -4,20 +4,20 @@ import typings.atom.atomStrings.separator
 import typings.atom.mod.ContextMenuOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Type extends ContextMenuOptions {
+trait Type
+  extends StObject
+     with ContextMenuOptions {
   
-  var `type`: separator = js.native
+  var `type`: separator
 }
 object Type {
   
   @scala.inline
-  def apply(`type`: separator): Type = {
+  def apply(): Type = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("separator")
     __obj.asInstanceOf[Type]
   }
   

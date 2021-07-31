@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBuiltInVariableResponse extends StObject {
   
   /** List of created built-in variables. */
-  var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.native
+  var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.undefined
 }
 object CreateBuiltInVariableResponse {
   

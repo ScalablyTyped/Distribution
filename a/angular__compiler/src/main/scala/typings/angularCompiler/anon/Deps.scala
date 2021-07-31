@@ -2,23 +2,21 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deps extends StObject {
   
-  var deps: js.UndefOr[js.Array[js.Object] | Null] = js.native
+  var deps: js.UndefOr[js.Array[js.Object] | Null] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var useClass: js.UndefOr[typings.angularCompiler.coreMod.Type] = js.native
+  var useClass: js.UndefOr[typings.angularCompiler.coreMod.Type] = js.undefined
   
-  var useExisting: js.UndefOr[js.Any] = js.native
+  var useExisting: js.UndefOr[js.Any] = js.undefined
   
-  var useFactory: js.UndefOr[js.Function | Null] = js.native
+  var useFactory: js.UndefOr[js.Function | Null] = js.undefined
   
-  var useValue: js.UndefOr[js.Any] = js.native
+  var useValue: js.UndefOr[js.Any] = js.undefined
 }
 object Deps {
   

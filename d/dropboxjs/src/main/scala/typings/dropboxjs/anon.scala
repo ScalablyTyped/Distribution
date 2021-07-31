@@ -2,15 +2,13 @@ package typings.dropboxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancelable extends StObject {
     
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
   }
   object Cancelable {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var port: Double = js.native
+    var port: Double
     
-    var tls: js.UndefOr[js.Object] = js.native
+    var tls: js.UndefOr[js.Object] = js.undefined
   }
   object Port {
     
@@ -57,12 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ReceiverPath extends StObject {
     
-    var receiverPath: String = js.native
+    var receiverPath: String
     
-    var scope: String = js.native
+    var scope: String
   }
   object ReceiverPath {
     
@@ -83,16 +79,15 @@ object anon {
     }
   }
   
-  @js.native
   trait RedirectFile extends StObject {
     
-    var redirectFile: String = js.native
+    var redirectFile: String
     
-    var redirectUrl: String = js.native
+    var redirectUrl: String
     
-    var rememberUser: Boolean = js.native
+    var rememberUser: Boolean
     
-    var scope: String = js.native
+    var scope: String
   }
   object RedirectFile {
     
@@ -119,12 +114,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RememberUser extends StObject {
     
-    var rememberUser: Boolean = js.native
+    var rememberUser: Boolean
     
-    var scope: String = js.native
+    var scope: String
   }
   object RememberUser {
     
@@ -145,10 +139,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var scope: String = js.native
+    var scope: String
   }
   object Scope {
     

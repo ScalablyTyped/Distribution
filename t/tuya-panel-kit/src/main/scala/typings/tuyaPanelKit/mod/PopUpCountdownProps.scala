@@ -6,43 +6,43 @@ import typings.reactNative.mod.ViewStyle
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopUpCountdownProps extends PopupProps {
+trait PopUpCountdownProps
+  extends StObject
+     with PopupProps {
   
-  var _onDataChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.native
+  var _onDataChange: js.UndefOr[js.Function1[/* date */ Date, Unit]] = js.undefined
   
-  var countdownWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var countdownWrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var hourPickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var hourPickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var hourText: js.UndefOr[String] = js.native
+  var hourText: js.UndefOr[String] = js.undefined
   
-  var hourUnitStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var hourUnitStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minutePickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var minutePickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var minuteText: js.UndefOr[String] = js.native
+  var minuteText: js.UndefOr[String] = js.undefined
   
-  var minuteUnitStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var minuteUnitStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function1[/* data */ js.UndefOr[valueChangeProps], Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* data */ js.UndefOr[valueChangeProps], Unit]] = js.undefined
   
-  var onlyone: js.UndefOr[Boolean] = js.native
+  var onlyone: js.UndefOr[Boolean] = js.undefined
   
-  var pickerFontColor: js.UndefOr[String] = js.native
+  var pickerFontColor: js.UndefOr[String] = js.undefined
   
-  var pickerUnitColor: js.UndefOr[String] = js.native
+  var pickerUnitColor: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var value: Double = js.native
+  var value: Double
 }
 object PopUpCountdownProps {
   

@@ -4,15 +4,16 @@ import typings.baconjs.eventMod.End
 import typings.baconjs.transformMod.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapendMod {
   
-  @JSImport("baconjs/types/mapend", JSImport.Default)
+  @JSImport("baconjs/types/mapend", JSImport.Namespace)
   @js.native
-  def default[V](f: V): Transformer[V, V] = js.native
-  @JSImport("baconjs/types/mapend", JSImport.Default)
-  @js.native
-  def default[V](f: js.Function1[/* end */ End, V]): Transformer[V, V] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[V](f: V): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
+  @scala.inline
+  def default[V](f: js.Function1[/* end */ End, V]): Transformer[V, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(f.asInstanceOf[js.Any]).asInstanceOf[Transformer[V, V]]
 }

@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalDocServiceErrorDetails extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var authenticationUrl: js.UndefOr[String] = js.native
+  var authenticationUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A code associated with the error condition.
     */
-  var errorCode: js.UndefOr[String] = js.native
+  var errorCode: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
 }
 object ExternalDocServiceErrorDetails {
   

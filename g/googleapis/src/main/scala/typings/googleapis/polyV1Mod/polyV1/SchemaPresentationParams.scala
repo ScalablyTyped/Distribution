@@ -2,14 +2,12 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hints for displaying the asset, based on information available when the
   * asset was uploaded.
   */
-@js.native
 trait SchemaPresentationParams extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaPresentationParams extends StObject {
     * asset.  This is represented as a six-digit hexademical triplet specifying
     * the RGB components of the background color, e.g. #FF0000 for Red.
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * The materials&#39; diffuse/albedo color. This does not apply to vertex
     * colors or texture maps.
     */
-  var colorSpace: js.UndefOr[String] = js.native
+  var colorSpace: js.UndefOr[String] = js.undefined
   
   /**
     * A rotation that should be applied to the object root to make it upright.
@@ -42,7 +40,7 @@ trait SchemaPresentationParams extends StObject {
     * preview, which is just a camera position setting and is *not* reflected
     * in this rotation.  Please note: this is applicable only to the gLTF.
     */
-  var orientingRotation: js.UndefOr[SchemaQuaternion] = js.native
+  var orientingRotation: js.UndefOr[SchemaQuaternion] = js.undefined
 }
 object SchemaPresentationParams {
   

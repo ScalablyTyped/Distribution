@@ -3,15 +3,13 @@ package typings.ngCordova.ngCordova
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoPosition extends StObject {
   
-  var coords: IGeoCoordinates = js.native
+  var coords: IGeoCoordinates
   
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object IGeoPosition {
   

@@ -10,9 +10,9 @@ styled API for emotion
 | ------------------ | :-------------: |
 | Full name          | @emotion/styled |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 1470 |
-| # downloads        | 96780433 |
+| # releases         | 32 |
+| # dependents       | 1618 |
+| # downloads        | 109057854 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,13 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasAction extends StObject {
   
-  var data: js.Array[CanvasAction | Double | String] = js.native
+  var data: js.Array[CanvasAction | Double | String]
   
-  var method: String = js.native
+  var method: String
 }
 object CanvasAction {
   

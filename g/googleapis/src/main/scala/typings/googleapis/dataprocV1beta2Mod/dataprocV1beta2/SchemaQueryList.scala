@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of queries to run on a cluster.
   */
-@js.native
 trait SchemaQueryList extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaQueryList extends StObject {
     * &quot;query1&quot;,       &quot;query2&quot;, &quot;query3;query4&quot;,
     * ]   } }
     */
-  var queries: js.UndefOr[js.Array[String]] = js.native
+  var queries: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaQueryList {
   

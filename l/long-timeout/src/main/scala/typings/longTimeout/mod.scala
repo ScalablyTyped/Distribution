@@ -2,10 +2,13 @@ package typings.longTimeout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("long-timeout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("long-timeout", "Timeout")
   @js.native
@@ -29,23 +32,23 @@ object mod {
     var unreffed: Boolean = js.native
   }
   
-  @JSImport("long-timeout", "clearInterval")
-  @js.native
-  def clearInterval(timer: Interval): Unit = js.native
+  @scala.inline
+  def clearInterval(timer: Interval): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("long-timeout", "clearTimeout")
-  @js.native
-  def clearTimeout(timer: Timeout): Unit = js.native
+  @scala.inline
+  def clearTimeout(timer: Timeout): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("long-timeout", "setInterval")
-  @js.native
-  def setInterval(listener: Listener, ms: Double): Interval = js.native
+  @scala.inline
+  def setInterval(listener: Listener, ms: Double): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Interval]
   
-  @JSImport("long-timeout", "setTimeout")
-  @js.native
-  def setTimeout(listener: Listener, ms: Double): Timeout = js.native
+  @scala.inline
+  def setTimeout(listener: Listener, ms: Double): Timeout = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(listener.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[Timeout]
   
   type Interval = Timeout
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
 }

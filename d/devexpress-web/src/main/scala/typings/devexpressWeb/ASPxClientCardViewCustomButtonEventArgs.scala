@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.CustomButtonClick event.
   */
-@js.native
-trait ASPxClientCardViewCustomButtonEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientCardViewCustomButtonEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the value which identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
   
   /**
     * Gets the value which identifies the card whose custom button has been clicked.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientCardViewCustomButtonEventArgs {
   

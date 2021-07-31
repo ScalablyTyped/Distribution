@@ -12,74 +12,72 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleDatePickerInputShape extends StObject {
   
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
-  var block: js.UndefOr[Boolean] = js.native
+  var block: js.UndefOr[Boolean] = js.undefined
   
-  var customCloseIcon: js.UndefOr[ReactNode] = js.native
+  var customCloseIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var customInputIcon: js.UndefOr[ReactNode] = js.native
+  var customInputIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var displayValue: js.UndefOr[String] = js.native
+  var displayValue: js.UndefOr[String] = js.undefined
   
-  var focused: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var inputIconPosition: js.UndefOr[IconPositionShape] = js.native
+  var inputIconPosition: js.UndefOr[IconPositionShape] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isRTL: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   
-  var noBorder: js.UndefOr[Boolean] = js.native
+  var noBorder: js.UndefOr[Boolean] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.undefined
   
-  var onClearDate: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+  var onClearDate: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownShiftTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownShiftTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var openDirection: js.UndefOr[OpenDirectionShape] = js.native
+  var openDirection: js.UndefOr[OpenDirectionShape] = js.undefined
   
   // i18n
-  var phrases: js.UndefOr[SingleDatePickerInputPhrases] = js.native
+  var phrases: js.UndefOr[SingleDatePickerInputPhrases] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var regular: js.UndefOr[Boolean] = js.native
+  var regular: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var screenReaderMessage: js.UndefOr[String] = js.native
+  var screenReaderMessage: js.UndefOr[String] = js.undefined
   
-  var showCaret: js.UndefOr[Boolean] = js.native
+  var showCaret: js.UndefOr[Boolean] = js.undefined
   
-  var showClearDate: js.UndefOr[Boolean] = js.native
+  var showClearDate: js.UndefOr[Boolean] = js.undefined
   
-  var showDefaultInputIcon: js.UndefOr[Boolean] = js.native
+  var showDefaultInputIcon: js.UndefOr[Boolean] = js.undefined
   
-  var small: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.undefined
   
-  var verticalSpacing: js.UndefOr[Double] = js.native
+  var verticalSpacing: js.UndefOr[Double] = js.undefined
 }
 object SingleDatePickerInputShape {
   

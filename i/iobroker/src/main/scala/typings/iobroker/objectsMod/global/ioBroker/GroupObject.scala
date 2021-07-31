@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.group
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_GroupObject: GroupCommon = js.native
+  var common_GroupObject: GroupCommon
   
   @JSName("type")
-  var type_GroupObject: group = js.native
+  var type_GroupObject: group
 }
 object GroupObject {
   
   @scala.inline
-  def apply(_id: String, common: GroupCommon, native: Record[String, _], `type`: group): GroupObject = {
+  def apply(_id: String, common: GroupCommon, native: Record[String, js.Any]): GroupObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[GroupObject]
   }
   

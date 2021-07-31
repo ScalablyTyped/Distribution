@@ -2,26 +2,24 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateLinkRequest extends StObject {
   
   /**
     * The ID of the device.
     */
-  var DeviceId: String = js.native
+  var DeviceId: String
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The ID of the link.
     */
-  var LinkId: String = js.native
+  var LinkId: String
 }
 object AssociateLinkRequest {
   

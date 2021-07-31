@@ -10,9 +10,9 @@ Regular expression for matching IP addresses (IPv4 & IPv6)
 | ------------------ | :-------------: |
 | Full name          | ip-regex |
 | Keywords           | ip, ipv6, ipv4, regex, regexp, re, match, test, find, text, pattern, internet, protocol, address, validate |
-| # releases         | 4 |
-| # dependents       | 114 |
-| # downloads        | 437372992 |
+| # releases         | 2 |
+| # dependents       | 135 |
+| # downloads        | 490435567 |
 | # stars            | 5 |
 
 ## Links

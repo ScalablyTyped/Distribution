@@ -5,66 +5,64 @@ import typings.screeps.screepsStrings.left
 import typings.screeps.screepsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTextStyle extends StObject {
   
   /**
     * Text align, either center, left, or right. Default is center.
     */
-  var align: js.UndefOr[center | left | right] = js.native
+  var align: js.UndefOr[center | left | right] = js.undefined
   
   /**
     * Background color in the following format: #ffffff (hex triplet). Default is undefined (no background). When background is enabled, text vertical align is set to middle (default is baseline).
     */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * Background rectangle padding, default is 2.
     */
-  var backgroundPadding: js.UndefOr[Double] = js.native
+  var backgroundPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * Font color in the following format: #ffffff (hex triplet). Default is #ffffff.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The font family, default is sans-serif
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The font size in game coordinates, default is 10
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The font style ('normal', 'italic' or 'oblique')
     */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The font variant ('normal' or 'small-caps')
     */
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
   /**
     * Opacity value, default is 0.5.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Stroke color in the following format: #ffffff (hex triplet). Default is undefined (no stroke).
     */
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
   
   /**
     * Stroke width, default is 0.15.
     */
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object MapTextStyle {
   

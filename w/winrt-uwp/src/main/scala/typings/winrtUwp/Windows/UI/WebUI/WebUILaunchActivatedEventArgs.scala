@@ -5,36 +5,34 @@ import typings.winrtUwp.Windows.ApplicationModel.Activation.ApplicationExecution
 import typings.winrtUwp.Windows.ApplicationModel.Activation.SplashScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides event information when an app is launched. */
-@js.native
 trait WebUILaunchActivatedEventArgs extends StObject {
   
   /** Gets the app activated operation. */
-  var activatedOperation: ActivatedOperation = js.native
+  var activatedOperation: ActivatedOperation
   
   /** Gets the arguments that are passed to the app during its launch activation. */
-  var arguments: String = js.native
+  var arguments: String
   
   /** Gets the identifier for the currently shown app view. */
-  var currentlyShownApplicationViewId: Double = js.native
+  var currentlyShownApplicationViewId: Double
   
   /** Gets the activation type. */
-  var kind: ActivationKind = js.native
+  var kind: ActivationKind
   
   /** (Applies to Windows only) Gets an indication about whether a pre-launch has been activated. */
-  var prelaunchActivated: Boolean = js.native
+  var prelaunchActivated: Boolean
   
   /** Gets the execution state of the app before this activation. */
-  var previousExecutionState: ApplicationExecutionState = js.native
+  var previousExecutionState: ApplicationExecutionState
   
   /** Gets the splash screen object that provides information about the transition from the splash screen to the activated app. */
-  var splashScreen: SplashScreen = js.native
+  var splashScreen: SplashScreen
   
   /** Gets the ID of the source that was invoked to launch the application. */
-  var tileId: String = js.native
+  var tileId: String
 }
 object WebUILaunchActivatedEventArgs {
   

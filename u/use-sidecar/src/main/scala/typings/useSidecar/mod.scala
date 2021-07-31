@@ -19,61 +19,50 @@ import typings.useSidecar.typesMod.SideCarMediumOptions
 import typings.useSidecar.typesMod.SideMedium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-sidecar", "createMedium")
+  @JSImport("use-sidecar", JSImport.Namespace)
   @js.native
-  def createMedium[T](): SideMedium[T] = js.native
-  @JSImport("use-sidecar", "createMedium")
-  @js.native
-  def createMedium[T](defaults: T): SideMedium[T] = js.native
-  @JSImport("use-sidecar", "createMedium")
-  @js.native
-  def createMedium[T](defaults: T, middleware: MiddlewareCallback[T]): SideMedium[T] = js.native
-  @JSImport("use-sidecar", "createMedium")
-  @js.native
-  def createMedium[T](defaults: js.UndefOr[scala.Nothing], middleware: MiddlewareCallback[T]): SideMedium[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("use-sidecar", "createSidecarMedium")
-  @js.native
-  def createSidecarMedium(): ReadonlySideCarMedium = js.native
-  @JSImport("use-sidecar", "createSidecarMedium")
-  @js.native
-  def createSidecarMedium(options: SideCarMediumOptions): ReadonlySideCarMedium = js.native
+  @scala.inline
+  def createMedium[T](): SideMedium[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")().asInstanceOf[SideMedium[T]]
+  @scala.inline
+  def createMedium[T](defaults: T): SideMedium[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")(defaults.asInstanceOf[js.Any]).asInstanceOf[SideMedium[T]]
+  @scala.inline
+  def createMedium[T](defaults: T, middleware: MiddlewareCallback[T]): SideMedium[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")(defaults.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[SideMedium[T]]
+  @scala.inline
+  def createMedium[T](defaults: Unit, middleware: MiddlewareCallback[T]): SideMedium[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMedium")(defaults.asInstanceOf[js.Any], middleware.asInstanceOf[js.Any])).asInstanceOf[SideMedium[T]]
   
-  @JSImport("use-sidecar", "exportSidecar")
-  @js.native
-  def exportSidecar[T](medium: SideCarMedium, exported: ComponentType[T]): SideCarComponent[T] = js.native
+  @scala.inline
+  def createSidecarMedium(): ReadonlySideCarMedium = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")().asInstanceOf[ReadonlySideCarMedium]
+  @scala.inline
+  def createSidecarMedium(options: SideCarMediumOptions): ReadonlySideCarMedium = ^.asInstanceOf[js.Dynamic].applyDynamic("createSidecarMedium")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlySideCarMedium]
   
-  @JSImport("use-sidecar", "renderCar")
-  @js.native
-  def renderCar[T /* <: js.Array[_] */, K](WrappedComponent: RenderPropComponent[T, K], defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = js.native
-  @JSImport("use-sidecar", "renderCar")
-  @js.native
-  def renderCar[T /* <: js.Array[_] */, K](
+  @scala.inline
+  def exportSidecar[T](medium: SideCarMedium, exported: ComponentType[T]): SideCarComponent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("exportSidecar")(medium.asInstanceOf[js.Any], exported.asInstanceOf[js.Any])).asInstanceOf[SideCarComponent[T]]
+  
+  @scala.inline
+  def renderCar[T /* <: js.Array[js.Any] */, K](WrappedComponent: RenderPropComponent[T, K], defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
+  @scala.inline
+  def renderCar[T /* <: js.Array[js.Any] */, K](
     WrappedComponent: RenderPropComponent[T, K],
     defaults: js.Function1[/* props */ K, T],
     options: Options
-  ): js.Function1[/* props */ CombinedProps[T, K], Element] = js.native
+  ): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
   
-  @JSImport("use-sidecar", "setConfig")
-  @js.native
-  def setConfig(conf: PartialIConfig): Unit = js.native
+  @scala.inline
+  def setConfig(conf: PartialIConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(conf.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("use-sidecar", "sidecar")
-  @js.native
-  def sidecar[T](importer: Importer[T]): FunctionComponent[T with SideCarHOC] = js.native
-  @JSImport("use-sidecar", "sidecar")
-  @js.native
-  def sidecar[T](importer: Importer[T], errorComponent: ReactNode): FunctionComponent[T with SideCarHOC] = js.native
+  @scala.inline
+  def sidecar[T](importer: Importer[T]): FunctionComponent[T & SideCarHOC] = ^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[T & SideCarHOC]]
+  @scala.inline
+  def sidecar[T](importer: Importer[T], errorComponent: ReactNode): FunctionComponent[T & SideCarHOC] = (^.asInstanceOf[js.Dynamic].applyDynamic("sidecar")(importer.asInstanceOf[js.Any], errorComponent.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[T & SideCarHOC]]
   
-  @JSImport("use-sidecar", "useSidecar")
-  @js.native
-  def useSidecar[T](importer: Importer[T]): js.Tuple2[ComponentType[T] | Null, Error | Null] = js.native
-  @JSImport("use-sidecar", "useSidecar")
-  @js.native
-  def useSidecar[T](importer: Importer[T], effect: SideMedium[_]): js.Tuple2[ComponentType[T] | Null, Error | Null] = js.native
+  @scala.inline
+  def useSidecar[T](importer: Importer[T]): js.Tuple2[ComponentType[T] | Null, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[ComponentType[T] | Null, Error | Null]]
+  @scala.inline
+  def useSidecar[T](importer: Importer[T], effect: SideMedium[js.Any]): js.Tuple2[ComponentType[T] | Null, Error | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSidecar")(importer.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ComponentType[T] | Null, Error | Null]]
 }

@@ -2,15 +2,13 @@ package typings.socketclusterClient.clientsocketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseData extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var reason: String = js.native
+  var reason: String
 }
 object CloseData {
   

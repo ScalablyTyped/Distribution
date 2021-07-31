@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalculateCustomSummary extends StObject {
   
-  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ TotalValue, _]] = js.native
+  var calculateCustomSummary: js.UndefOr[js.Function1[/* options */ TotalValue, js.Any]] = js.undefined
   
-  var groupItems: js.UndefOr[js.Array[AlignByColumn]] = js.native
+  var groupItems: js.UndefOr[js.Array[AlignByColumn]] = js.undefined
   
-  var recalculateWhileEditing: js.UndefOr[Boolean] = js.native
+  var recalculateWhileEditing: js.UndefOr[Boolean] = js.undefined
   
-  var skipEmptyValues: js.UndefOr[Boolean] = js.native
+  var skipEmptyValues: js.UndefOr[Boolean] = js.undefined
   
-  var texts: js.UndefOr[Avg] = js.native
+  var texts: js.UndefOr[Avg] = js.undefined
   
-  var totalItems: js.UndefOr[js.Array[Alignment]] = js.native
+  var totalItems: js.UndefOr[js.Array[Alignment]] = js.undefined
 }
 object CalculateCustomSummary {
   
@@ -32,7 +30,7 @@ object CalculateCustomSummary {
   implicit class CalculateCustomSummaryMutableBuilder[Self <: CalculateCustomSummary] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCalculateCustomSummary(value: /* options */ TotalValue => _): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
+    def setCalculateCustomSummary(value: /* options */ TotalValue => js.Any): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCalculateCustomSummaryUndefined: Self = StObject.set(x, "calculateCustomSummary", js.undefined)

@@ -2,17 +2,15 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Small extends StObject {
   
-  var large: js.UndefOr[Pad] = js.native
+  var large: js.UndefOr[Pad] = js.undefined
   
-  var medium: js.UndefOr[Pad] = js.native
+  var medium: js.UndefOr[Pad] = js.undefined
   
-  var small: js.UndefOr[Pad] = js.native
+  var small: js.UndefOr[Pad] = js.undefined
 }
 object Small {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var ResourceArn: FleetArn = js.native
+  var ResourceArn: FleetArn
   
   /**
     * The tags to add to the resource. A tag is a key-value pair.
     */
-  var Tags: TagMap = js.native
+  var Tags: TagMap
 }
 object TagResourceRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserHierarchyGroupRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The name of the user hierarchy group. Must not be more than 100 characters.
     */
-  var Name: HierarchyGroupName = js.native
+  var Name: HierarchyGroupName
   
   /**
     * The identifier for the parent hierarchy group. The user hierarchy is created at level one if the parent group ID is null.
     */
-  var ParentGroupId: js.UndefOr[HierarchyGroupId] = js.native
+  var ParentGroupId: js.UndefOr[HierarchyGroupId] = js.undefined
 }
 object CreateUserHierarchyGroupRequest {
   

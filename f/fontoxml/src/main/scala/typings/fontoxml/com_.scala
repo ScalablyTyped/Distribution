@@ -2,23 +2,21 @@ package typings.fontoxml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object com_ {
   
   object fontoxml {
     
-    @js.native
     trait IFontoMessageEventData extends StObject {
       
-      var command: String = js.native
+      var command: String
       
-      var metadata: js.Any = js.native
+      var metadata: js.Any
       
-      var scope: IInvocator = js.native
+      var scope: IInvocator
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object IFontoMessageEventData {
       
@@ -46,29 +44,28 @@ object com_ {
       }
     }
     
-    @js.native
     trait IInvocator extends StObject {
       
       //Allow/disallow auto-save functionality.
-      var autosave: js.UndefOr[Boolean] = js.native
+      var autosave: js.UndefOr[Boolean] = js.undefined
       
       //The base URL where the CMS endpoints are exposed.
-      var cmsBaseUrl: String = js.native
+      var cmsBaseUrl: String
       
       //The document id's of the documents to load from the CMS.
-      var documentIds: js.Array[String] = js.native
+      var documentIds: js.Array[String]
       
       //The edit session token to use for accessing the CMS endpoints.
-      var editSessionToken: String = js.native
+      var editSessionToken: String
       
       //If set to a positive integer, enable the Heartbeat API to send every x seconds.
-      var heartbeat: js.UndefOr[Double] = js.native
+      var heartbeat: js.UndefOr[Double] = js.undefined
       
       //User information.
-      var user: js.UndefOr[IUserInfo] = js.native
+      var user: js.UndefOr[IUserInfo] = js.undefined
       
       //Workflow information.
-      var workflow: js.UndefOr[IWorkflowInfo] = js.native
+      var workflow: js.UndefOr[IWorkflowInfo] = js.undefined
     }
     object IInvocator {
       
@@ -119,10 +116,11 @@ object com_ {
       }
     }
     
-    @js.native
-    trait IUserInfo extends IWorkflowInfo {
+    trait IUserInfo
+      extends StObject
+         with IWorkflowInfo {
       
-      var roleId: String = js.native
+      var roleId: String
     }
     object IUserInfo {
       
@@ -140,12 +138,11 @@ object com_ {
       }
     }
     
-    @js.native
     trait IWorkflowInfo extends StObject {
       
-      var displayName: String = js.native
+      var displayName: String
       
-      var id: String = js.native
+      var id: String
     }
     object IWorkflowInfo {
       

@@ -30,7 +30,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMenuMod {
@@ -74,7 +73,9 @@ object menuMenuMod {
   }
   
   @js.native
-  trait MenuComponent extends ComponentClass[MenuProps, ComponentState] {
+  trait MenuComponent
+    extends StObject
+       with ComponentClass[MenuProps, ComponentState] {
     
     var Header: ComponentClass[MenuHeaderProps, ComponentState] = js.native
     
@@ -83,9 +84,9 @@ object menuMenuMod {
     var Menu: StatelessComponent[MenuMenuProps] = js.native
   }
   
-  @js.native
   trait MenuProps
-    extends StrictMenuProps
+    extends StObject
+       with StrictMenuProps
        with /* key */ StringDictionary[js.Any]
   object MenuProps {
     
@@ -96,53 +97,52 @@ object menuMenuMod {
     }
   }
   
-  @js.native
   trait StrictMenuProps extends StObject {
     
     /** Index of the currently active item. */
-    var activeIndex: js.UndefOr[Double | String] = js.native
+    var activeIndex: js.UndefOr[Double | String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A menu may be attached to other content segments. */
-    var attached: js.UndefOr[Boolean | bottom | top] = js.native
+    var attached: js.UndefOr[Boolean | bottom | top] = js.undefined
     
     /** A menu item or menu can have no borders. */
-    var borderless: js.UndefOr[Boolean] = js.native
+    var borderless: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Additional colors can be specified. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** A menu can take up only the space necessary to fit its content. */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Initial activeIndex value. */
-    var defaultActiveIndex: js.UndefOr[Double | String] = js.native
+    var defaultActiveIndex: js.UndefOr[Double | String] = js.undefined
     
     /** A menu can be fixed to a side of its context. */
-    var fixed: js.UndefOr[left | right | bottom | top] = js.native
+    var fixed: js.UndefOr[left | right | bottom | top] = js.undefined
     
     /** A menu can be floated. */
-    var floated: js.UndefOr[Boolean | right] = js.native
+    var floated: js.UndefOr[Boolean | right] = js.undefined
     
     /** A vertical menu may take the size of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** A menu may have labeled icons. */
-    var icon: js.UndefOr[Boolean | labeled] = js.native
+    var icon: js.UndefOr[Boolean | labeled] = js.undefined
     
     /** A menu may have its colors inverted to show greater contrast. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand array of props for Menu. */
-    var items: js.UndefOr[SemanticShorthandCollection[MenuItemProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[MenuItemProps]] = js.undefined
     
     /**
       * onClick handler for MenuItem. Mutually exclusive with children.
@@ -156,34 +156,34 @@ object menuMenuMod {
           /* data */ MenuItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A pagination menu is specially formatted to present links to pages of content. */
-    var pagination: js.UndefOr[Boolean] = js.native
+    var pagination: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can point to show its relationship to nearby content. */
-    var pointing: js.UndefOr[Boolean] = js.native
+    var pointing: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can adjust its appearance to de-emphasize its contents. */
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | huge | massive] = js.undefined
     
     /** A menu can stack at mobile resolutions. */
-    var stackable: js.UndefOr[Boolean] = js.native
+    var stackable: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can be formatted to show tabs of information. */
-    var tabular: js.UndefOr[Boolean | right] = js.native
+    var tabular: js.UndefOr[Boolean | right] = js.undefined
     
     /** A menu can be formatted for text content. */
-    var text: js.UndefOr[Boolean] = js.native
+    var text: js.UndefOr[Boolean] = js.undefined
     
     /** A vertical menu displays elements vertically. */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /** A menu can have its items divided evenly. */
-    var widths: js.UndefOr[SemanticWIDTHS] = js.native
+    var widths: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictMenuProps {
     

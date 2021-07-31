@@ -9,10 +9,13 @@ import typings.firebaseDatabase.queryMod.Query
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testAccessMod {
+  
+  @JSImport("@firebase/database/dist/src/api/test_access", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@firebase/database/dist/src/api/test_access", "ConnectionTarget")
@@ -33,14 +36,6 @@ object testAccessMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
-      persistenceKey: String
-    ) = this()
-    def this(
-      host: String,
-      secure: Boolean,
-      namespace: String,
-      webSocketOnly: Boolean,
       nodeAdmin: Boolean,
       persistenceKey: String
     ) = this()
@@ -49,16 +44,15 @@ object testAccessMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
-      persistenceKey: js.UndefOr[scala.Nothing],
-      includeNamespaceInQueryParams: Boolean
+      nodeAdmin: Unit,
+      persistenceKey: String
     ) = this()
     def this(
       host: String,
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: js.UndefOr[scala.Nothing],
+      nodeAdmin: Boolean,
       persistenceKey: String,
       includeNamespaceInQueryParams: Boolean
     ) = this()
@@ -68,7 +62,7 @@ object testAccessMod {
       namespace: String,
       webSocketOnly: Boolean,
       nodeAdmin: Boolean,
-      persistenceKey: js.UndefOr[scala.Nothing],
+      persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
     def this(
@@ -76,8 +70,17 @@ object testAccessMod {
       secure: Boolean,
       namespace: String,
       webSocketOnly: Boolean,
-      nodeAdmin: Boolean,
+      nodeAdmin: Unit,
       persistenceKey: String,
+      includeNamespaceInQueryParams: Boolean
+    ) = this()
+    def this(
+      host: String,
+      secure: Boolean,
+      namespace: String,
+      webSocketOnly: Boolean,
+      nodeAdmin: Unit,
+      persistenceKey: Unit,
       includeNamespaceInQueryParams: Boolean
     ) = this()
   }
@@ -157,15 +160,6 @@ object testAccessMod {
   @JSImport("@firebase/database/dist/src/api/test_access", "RealTimeConnection")
   @js.native
   class RealTimeConnection protected () extends Connection {
-    def this(
-      id: String,
-      repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[scala.Nothing],
-      onMessage_ : js.Function1[/* a */ js.Object, Unit],
-      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
-      onDisconnect_ : js.Function0[Unit],
-      onKill_ : js.Function1[/* a */ String, Unit]
-    ) = this()
     /**
       * @param id - an id for this connection
       * @param repoInfo_ - the info for the endpoint to connect to
@@ -188,7 +182,16 @@ object testAccessMod {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : js.UndefOr[scala.Nothing],
+      applicationId_ : Unit,
+      onMessage_ : js.Function1[/* a */ js.Object, Unit],
+      onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
+      onDisconnect_ : js.Function0[Unit],
+      onKill_ : js.Function1[/* a */ String, Unit]
+    ) = this()
+    def this(
+      id: String,
+      repoInfo_ : RepoInfo,
+      applicationId_ : String,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -198,7 +201,7 @@ object testAccessMod {
     def this(
       id: String,
       repoInfo_ : RepoInfo,
-      applicationId_ : String,
+      applicationId_ : Unit,
       onMessage_ : js.Function1[/* a */ js.Object, Unit],
       onReady_ : js.Function2[/* a */ Double, /* b */ String, Unit],
       onDisconnect_ : js.Function0[Unit],
@@ -220,15 +223,12 @@ object testAccessMod {
     Connection
   ] = js.native
   
-  @JSImport("@firebase/database/dist/src/api/test_access", "forceRestClient")
-  @js.native
-  def forceRestClient(forceRestClient: Boolean): Unit = js.native
+  @scala.inline
+  def forceRestClient(forceRestClient: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRestClient")(forceRestClient.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/api/test_access", "hijackHash")
-  @js.native
-  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit] = js.native
+  @scala.inline
+  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("hijackHash")(newHash.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@firebase/database/dist/src/api/test_access", "queryIdentifier")
-  @js.native
-  def queryIdentifier(query: Query): String = js.native
+  @scala.inline
+  def queryIdentifier(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryIdentifier")(query.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,20 +2,18 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@blueprintjs/core.@blueprintjs/core/lib/esm/components/tag-input/tagInput.ITagInputState> */
-@js.native
 trait ReadonlyITagInputState extends StObject {
   
-  val activeIndex: Double = js.native
+  val activeIndex: Double
   
-  val inputValue: String = js.native
+  val inputValue: String
   
-  val isInputFocused: Boolean = js.native
+  val isInputFocused: Boolean
   
-  val prevInputValueProp: js.UndefOr[String] = js.native
+  val prevInputValueProp: js.UndefOr[String] = js.undefined
 }
 object ReadonlyITagInputState {
   

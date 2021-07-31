@@ -21,7 +21,6 @@ import typings.react.mod.ValidationMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configProviderMod {
@@ -29,12 +28,11 @@ object configProviderMod {
   /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>} */
   object default {
     
-    @JSImport("antd/lib/config-provider", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[ConfigProviderProps]): ReactElement | Null = js.native
-    @JSImport("antd/lib/config-provider", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[ConfigProviderProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[ConfigProviderProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[ConfigProviderProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("antd/lib/config-provider", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -82,40 +80,39 @@ object configProviderMod {
   @js.native
   val configConsumerProps: js.Array[String] = js.native
   
-  @js.native
   trait ConfigProviderProps extends StObject {
     
-    var autoInsertSpaceInButton: js.UndefOr[Boolean] = js.native
+    var autoInsertSpaceInButton: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var componentSize: js.UndefOr[SizeType] = js.native
+    var componentSize: js.UndefOr[SizeType] = js.undefined
     
-    var csp: js.UndefOr[CSPConfig] = js.native
+    var csp: js.UndefOr[CSPConfig] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.native
+    var dropdownMatchSelectWidth: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[ValidateMessages] = js.native
+    var form: js.UndefOr[ValidateMessages] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ HTMLElement, HTMLElement]] = js.undefined
     
-    var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getTargetContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var input: js.UndefOr[AutoComplete] = js.native
+    var input: js.UndefOr[AutoComplete] = js.undefined
     
-    var locale: js.UndefOr[Locale] = js.native
+    var locale: js.UndefOr[Locale] = js.undefined
     
-    var pageHeader: js.UndefOr[Ghost] = js.native
+    var pageHeader: js.UndefOr[Ghost] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.native
+    var renderEmpty: js.UndefOr[RenderEmptyHandler] = js.undefined
     
-    var space: js.UndefOr[Size] = js.native
+    var space: js.UndefOr[Size] = js.undefined
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigProviderProps {
     

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1Scheduling extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GoogleCloudMlV1Scheduling extends StObject {
     * to `7200s` (2 hours * 60 minutes / hour * 60 seconds / minute). If you submit your training job using the `gcloud` tool, you can [specify this field in a `config.yaml`
     * file](/ai-platform/training/docs/training-jobs#formatting_your_configuration_parameters). For example: ```yaml trainingInput: scheduling: maxRunningTime: 7200s ```
     */
-  var maxRunningTime: js.UndefOr[String] = js.native
+  var maxRunningTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The maximum job wait time, expressed in seconds. The field can contain up to nine fractional digits, terminated by `s`. If not specified, there is no limit to the wait
@@ -28,7 +26,7 @@ trait GoogleCloudMlV1Scheduling extends StObject {
     * using the `gcloud` tool, you can [specify this field in a `config.yaml` file](/ai-platform/training/docs/training-jobs#formatting_your_configuration_parameters). For example:
     * ```yaml trainingInput: scheduling: maxWaitTime: 3600s ```
     */
-  var maxWaitTime: js.UndefOr[String] = js.native
+  var maxWaitTime: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1Scheduling {
   

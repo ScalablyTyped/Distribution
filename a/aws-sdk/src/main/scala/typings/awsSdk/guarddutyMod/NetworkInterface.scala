@@ -2,61 +2,59 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterface extends StObject {
   
   /**
     * A list of IPv6 addresses for the EC2 instance.
     */
-  var Ipv6Addresses: js.UndefOr[typings.awsSdk.guarddutyMod.Ipv6Addresses] = js.native
+  var Ipv6Addresses: js.UndefOr[typings.awsSdk.guarddutyMod.Ipv6Addresses] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: js.UndefOr[String] = js.native
+  var NetworkInterfaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The private DNS name of the EC2 instance.
     */
-  var PrivateDnsName: js.UndefOr[String] = js.native
+  var PrivateDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The private IP address of the EC2 instance.
     */
-  var PrivateIpAddress: js.UndefOr[String] = js.native
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Other private IP address information of the EC2 instance.
     */
-  var PrivateIpAddresses: js.UndefOr[typings.awsSdk.guarddutyMod.PrivateIpAddresses] = js.native
+  var PrivateIpAddresses: js.UndefOr[typings.awsSdk.guarddutyMod.PrivateIpAddresses] = js.undefined
   
   /**
     * The public DNS name of the EC2 instance.
     */
-  var PublicDnsName: js.UndefOr[String] = js.native
+  var PublicDnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The public IP address of the EC2 instance.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
   
   /**
     * The security groups associated with the EC2 instance.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.guarddutyMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.guarddutyMod.SecurityGroups] = js.undefined
   
   /**
     * The subnet ID of the EC2 instance.
     */
-  var SubnetId: js.UndefOr[String] = js.native
+  var SubnetId: js.UndefOr[String] = js.undefined
   
   /**
     * The VPC ID of the EC2 instance.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object NetworkInterface {
   

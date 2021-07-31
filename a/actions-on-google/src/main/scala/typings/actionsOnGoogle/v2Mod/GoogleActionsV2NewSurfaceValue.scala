@@ -2,13 +2,11 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2NewSurfaceValue extends StObject {
   
-  var status: js.UndefOr[GoogleActionsV2NewSurfaceValueStatus] = js.native
+  var status: js.UndefOr[GoogleActionsV2NewSurfaceValueStatus] = js.undefined
 }
 object GoogleActionsV2NewSurfaceValue {
   

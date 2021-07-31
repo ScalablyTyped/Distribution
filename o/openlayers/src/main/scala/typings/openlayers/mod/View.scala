@@ -8,7 +8,6 @@ import typings.openlayers.mod.olx.view.FitOptions
 import typings.openlayers.mod.proj.Projection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "View")
@@ -125,13 +124,13 @@ class View () extends Object {
     * @api
     */
   def constrainResolution(): Double = js.native
-  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
-  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: Double): Double = js.native
-  def constrainResolution(resolution: js.UndefOr[scala.Nothing], opt_delta: Double, opt_direction: Double): Double = js.native
   def constrainResolution(resolution: Double): Double = js.native
-  def constrainResolution(resolution: Double, opt_delta: js.UndefOr[scala.Nothing], opt_direction: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double): Double = js.native
   def constrainResolution(resolution: Double, opt_delta: Double, opt_direction: Double): Double = js.native
+  def constrainResolution(resolution: Double, opt_delta: Unit, opt_direction: Double): Double = js.native
+  def constrainResolution(resolution: Unit, opt_delta: Double): Double = js.native
+  def constrainResolution(resolution: Unit, opt_delta: Double, opt_direction: Double): Double = js.native
+  def constrainResolution(resolution: Unit, opt_delta: Unit, opt_direction: Double): Double = js.native
   
   /**
     * Get the constrained rotation of this view.
@@ -141,9 +140,9 @@ class View () extends Object {
     * @api
     */
   def constrainRotation(): Double = js.native
-  def constrainRotation(rotation: js.UndefOr[scala.Nothing], opt_delta: Double): Double = js.native
   def constrainRotation(rotation: Double): Double = js.native
   def constrainRotation(rotation: Double, opt_delta: Double): Double = js.native
+  def constrainRotation(rotation: Unit, opt_delta: Double): Double = js.native
   
   def fit(geometryOrExtent: Extent_): Unit = js.native
   def fit(geometryOrExtent: Extent_, opt_options: FitOptions): Unit = js.native

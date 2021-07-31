@@ -2,51 +2,49 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLagRequest extends StObject {
   
   /**
     * The tags to associate with the automtically created LAGs.
     */
-  var childConnectionTags: js.UndefOr[TagList] = js.native
+  var childConnectionTags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of an existing dedicated connection to migrate to the LAG.
     */
-  var connectionId: js.UndefOr[ConnectionId] = js.native
+  var connectionId: js.UndefOr[ConnectionId] = js.undefined
   
   /**
     * The bandwidth of the individual physical dedicated connections bundled by the LAG. The possible values are 1Gbps and 10Gbps. 
     */
-  var connectionsBandwidth: Bandwidth = js.native
+  var connectionsBandwidth: Bandwidth
   
   /**
     * The name of the LAG.
     */
-  var lagName: LagName = js.native
+  var lagName: LagName
   
   /**
     * The location for the LAG.
     */
-  var location: LocationCode = js.native
+  var location: LocationCode
   
   /**
     * The number of physical dedicated connections initially provisioned and bundled by the LAG.
     */
-  var numberOfConnections: Count = js.native
+  var numberOfConnections: Count
   
   /**
     * The name of the service provider associated with the LAG.
     */
-  var providerName: js.UndefOr[ProviderName] = js.native
+  var providerName: js.UndefOr[ProviderName] = js.undefined
   
   /**
     * The tags to associate with the LAG.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateLagRequest {
   

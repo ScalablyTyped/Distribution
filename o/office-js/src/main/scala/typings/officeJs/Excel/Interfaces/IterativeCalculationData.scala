@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `iterativeCalculation.toJSON()`. */
-@js.native
 trait IterativeCalculationData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait IterativeCalculationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait IterativeCalculationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var maxChange: js.UndefOr[Double] = js.native
+  var maxChange: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait IterativeCalculationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var maxIteration: js.UndefOr[Double] = js.native
+  var maxIteration: js.UndefOr[Double] = js.undefined
 }
 object IterativeCalculationData {
   

@@ -4,10 +4,13 @@ import typings.node.Buffer
 import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("polycrc", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("polycrc", "CRC")
   @js.native
@@ -23,9 +26,8 @@ object mod {
     def print_table(): String = js.native
   }
   
-  @JSImport("polycrc", "crc")
-  @js.native
-  def crc(width: Double, poly: Double, xor_in: Double, xor_out: Double, reflect: Boolean): js.Function1[/* buffer */ Buffer, Double] = js.native
+  @scala.inline
+  def crc(width: Double, poly: Double, xor_in: Double, xor_out: Double, reflect: Boolean): js.Function1[/* buffer */ Buffer, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("crc")(width.asInstanceOf[js.Any], poly.asInstanceOf[js.Any], xor_in.asInstanceOf[js.Any], xor_out.asInstanceOf[js.Any], reflect.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* buffer */ Buffer, Double]]
   
   @JSImport("polycrc", "crc1")
   @js.native

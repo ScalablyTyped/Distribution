@@ -6,7 +6,6 @@ import typings.libp2pCrypto.mod.PublicKey
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,130 +15,117 @@ object mod {
     */
   @JSImport("peer-id", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PeerId {
+  class ^ protected ()
+    extends StObject
+       with PeerId {
     def this(id: Uint8Array) = this()
     def this(id: Uint8Array, privKey: PrivateKey) = this()
-    def this(id: Uint8Array, privKey: js.UndefOr[scala.Nothing], pubKey: PublicKey) = this()
+    def this(id: Uint8Array, privKey: Unit, pubKey: PublicKey) = this()
     def this(id: Uint8Array, privKey: PrivateKey, pubKey: PublicKey) = this()
   }
+  @JSImport("peer-id", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a new PeerId.
     * @param opts Options.
     */
-  @JSImport("peer-id", "create")
-  @js.native
-  def create(): js.Promise[PeerId] = js.native
-  @JSImport("peer-id", "create")
-  @js.native
-  def create(opts: CreateOptions): js.Promise[PeerId] = js.native
+  @scala.inline
+  def create(): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[PeerId]]
+  @scala.inline
+  def create(opts: CreateOptions): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
   /**
     * Create PeerId from base58-encoded string.
     * @param str The base58-encoded string.
     */
-  @JSImport("peer-id", "createFromB58String")
-  @js.native
-  def createFromB58String(str: String): PeerId = js.native
+  @scala.inline
+  def createFromB58String(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromB58String")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from raw bytes.
     * @param buf The raw bytes.
     */
-  @JSImport("peer-id", "createFromBytes")
-  @js.native
-  def createFromBytes(buf: Uint8Array): PeerId = js.native
+  @scala.inline
+  def createFromBytes(buf: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBytes")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
-  @JSImport("peer-id", "createFromCID")
-  @js.native
-  def createFromCID(cid: String): PeerId = js.native
-  @JSImport("peer-id", "createFromCID")
-  @js.native
-  def createFromCID(cid: js.Object): PeerId = js.native
+  @scala.inline
+  def createFromCID(cid: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  @scala.inline
+  def createFromCID(cid: js.Object): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   /**
     * Create PeerId from CID.
     * @param cid The CID.
     */
-  @JSImport("peer-id", "createFromCID")
-  @js.native
-  def createFromCID(cid: typings.cids.mod.^): PeerId = js.native
-  @JSImport("peer-id", "createFromCID")
-  @js.native
-  def createFromCID(cid: Uint8Array): PeerId = js.native
+  @scala.inline
+  def createFromCID(cid: typings.cids.mod.^): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  @scala.inline
+  def createFromCID(cid: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from hex string.
     * @param str The input hex string.
     */
-  @JSImport("peer-id", "createFromHexString")
-  @js.native
-  def createFromHexString(str: String): PeerId = js.native
+  @scala.inline
+  def createFromHexString(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from PeerId JSON formatted object.
     * @see {@link PeerId#toJSON}
     * @param json PeerId in JSON format.
     */
-  @JSImport("peer-id", "createFromJSON")
-  @js.native
-  def createFromJSON(json: JSONPeerId): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromJSON(json: JSONPeerId): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @JSImport("peer-id", "createFromPrivKey")
-  @js.native
-  def createFromPrivKey(key: String): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromPrivKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from private key.
     * @param key Private key, as Uint8Array or base64-encoded string.
     */
-  @JSImport("peer-id", "createFromPrivKey")
-  @js.native
-  def createFromPrivKey(key: Uint8Array): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromPrivKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @JSImport("peer-id", "createFromProtobuf")
-  @js.native
-  def createFromProtobuf(buf: String): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromProtobuf(buf: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from Protobuf bytes.
     * @param buf Protobuf bytes, as Uint8Array or hex-encoded string.
     */
-  @JSImport("peer-id", "createFromProtobuf")
-  @js.native
-  def createFromProtobuf(buf: Uint8Array): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromProtobuf(buf: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @JSImport("peer-id", "createFromPubKey")
-  @js.native
-  def createFromPubKey(key: String): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromPubKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from public key.
     * @param key Public key, as Uint8Array or base64-encoded string.
     */
-  @JSImport("peer-id", "createFromPubKey")
-  @js.native
-  def createFromPubKey(key: Uint8Array): js.Promise[PeerId] = js.native
+  @scala.inline
+  def createFromPubKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
   /**
     * Checks if a value is an instance of PeerId.
     * @param id The value to check.
     */
-  @JSImport("peer-id", "isPeerId")
-  @js.native
-  def isPeerId(id: js.Any): /* is peer-id.peer-id.PeerId */ Boolean = js.native
+  @scala.inline
+  def isPeerId(id: js.Any): /* is peer-id.peer-id.PeerId */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeerId")(id.asInstanceOf[js.Any]).asInstanceOf[/* is peer-id.peer-id.PeerId */ Boolean]
   
   /**
     * Options for PeerId creation.
     */
-  @js.native
   trait CreateOptions extends StObject {
     
     /**
       * The number of bits to use.
       */
-    var bits: js.UndefOr[Double] = js.native
+    var bits: js.UndefOr[Double] = js.undefined
     
     /**
       * The type of key to use.
       */
-    var keyType: js.UndefOr[KeyType] = js.native
+    var keyType: js.UndefOr[KeyType] = js.undefined
   }
   object CreateOptions {
     
@@ -169,23 +155,22 @@ object mod {
   /**
     * PeerId JSON format.
     */
-  @js.native
   trait JSONPeerId extends StObject {
     
     /**
       * String representation of PeerId.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Private key.
       */
-    var privKey: js.UndefOr[String] = js.native
+    var privKey: js.UndefOr[String] = js.undefined
     
     /**
       * Public key.
       */
-    var pubKey: js.UndefOr[String] = js.native
+    var pubKey: js.UndefOr[String] = js.undefined
   }
   object JSONPeerId {
     

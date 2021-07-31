@@ -4,37 +4,35 @@ import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUISettings extends StObject {
   
-  var animationsEnabled: Boolean = js.native
+  var animationsEnabled: Boolean
   
-  var caretBlinkRate: Double = js.native
+  var caretBlinkRate: Double
   
-  var caretBrowsingEnabled: Boolean = js.native
+  var caretBrowsingEnabled: Boolean
   
-  var caretWidth: Double = js.native
+  var caretWidth: Double
   
-  var cursorSize: Size = js.native
+  var cursorSize: Size
   
-  var doubleClickTime: Double = js.native
+  var doubleClickTime: Double
   
-  var handPreference: HandPreference = js.native
+  var handPreference: HandPreference
   
-  var messageDuration: Double = js.native
+  var messageDuration: Double
   
-  var mouseHoverTime: Double = js.native
+  var mouseHoverTime: Double
   
-  var scrollBarArrowSize: Size = js.native
+  var scrollBarArrowSize: Size
   
-  var scrollBarSize: Size = js.native
+  var scrollBarSize: Size
   
-  var scrollBarThumbBoxSize: Size = js.native
+  var scrollBarThumbBoxSize: Size
   
-  def uIElementColor(desiredElement: UIElementType): Color = js.native
+  def uIElementColor(desiredElement: UIElementType): Color
 }
 object IUISettings {
   

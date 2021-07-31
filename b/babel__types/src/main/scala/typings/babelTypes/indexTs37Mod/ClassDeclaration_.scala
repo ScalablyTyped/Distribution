@@ -3,47 +3,47 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ClassDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ClassDeclaration_
-  extends Class
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ClassDeclaration_
+  extends StObject
      with BaseNode
+     with Class
      with Declaration
      with Scopable
      with Statement {
   
-  var `abstract`: Boolean | Null = js.native
+  var `abstract`: Boolean | Null
   
-  var body: ClassBody_ = js.native
+  var body: ClassBody_
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var implements: (js.Array[TSExpressionWithTypeArguments_ | ClassImplements_]) | Null = js.native
+  var implements: (js.Array[TSExpressionWithTypeArguments_ | ClassImplements_]) | Null
   
-  var mixins: InterfaceExtends_ | Null = js.native
+  var mixins: InterfaceExtends_ | Null
   
-  var superClass: Expression | Null = js.native
+  var superClass: Expression | Null
   
-  var superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null = js.native
+  var superTypeParameters: TypeParameterInstantiation_ | TSTypeParameterInstantiation_ | Null
   
-  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_ClassDeclaration_ : ClassDeclaration = js.native
+  var type_ClassDeclaration_ : ClassDeclaration
 }
 object ClassDeclaration_ {
   
   @scala.inline
-  def apply(body: ClassBody_, id: Identifier_, `type`: ClassDeclaration): ClassDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: ClassBody_, id: Identifier_): ClassDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = null, decorators = null, end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, superClass = null, superTypeParameters = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("ClassDeclaration")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[ClassDeclaration_]
   }
   

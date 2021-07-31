@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HangulHanjaConversionDictionaries extends StObject {
   
-  var ActiveCustomDictionary: Dictionary = js.native
+  var ActiveCustomDictionary: Dictionary
   
-  def Add(FileName: String): Dictionary = js.native
+  def Add(FileName: String): Dictionary
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val BuiltinDictionary: Dictionary = js.native
+  val BuiltinDictionary: Dictionary
   
-  def ClearAll(): Unit = js.native
+  def ClearAll(): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Dictionary = js.native
+  def Item(Index: js.Any): Dictionary
   
-  val Maximum: Double = js.native
+  val Maximum: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.HangulHanjaConversionDictionaries_typekey")
-  var WordDotHangulHanjaConversionDictionaries_typekey: HangulHanjaConversionDictionaries = js.native
+  var WordDotHangulHanjaConversionDictionaries_typekey: HangulHanjaConversionDictionaries
 }
 object HangulHanjaConversionDictionaries {
   

@@ -2,19 +2,17 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  var body: Null = js.native
+  var body: Null
   
-  var headers: Null = js.native
+  var headers: Null
   
-  var statusCode: Null = js.native
+  var statusCode: Null
   
-  var warnings: Null = js.native
+  var warnings: Null
 }
 object Body {
   

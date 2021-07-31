@@ -2,11 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PullTypeAliasSymbol extends PullTypeSymbol {
+trait PullTypeAliasSymbol
+  extends StObject
+     with PullTypeSymbol {
   
   var _assignedContainer: js.Any = js.native
   
@@ -35,6 +36,9 @@ trait PullTypeAliasSymbol extends PullTypeSymbol {
   def getExportAssignedTypeSymbol(): PullTypeSymbol = js.native
   
   def getExportAssignedValueSymbol(): PullSymbol = js.native
+  
+  /* InferMemberOverrides */
+  override def getIsSpecialized(): Boolean = js.native
   
   def isUsedAsValue(): Boolean = js.native
   

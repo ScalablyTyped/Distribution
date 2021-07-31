@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDataSourceRequest extends StObject {
   
   /**
     * The unique identifier of the data source to delete.
     */
-  var Id: DataSourceId = js.native
+  var Id: DataSourceId
   
   /**
     * The unique identifier of the index associated with the data source.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
 }
 object DeleteDataSourceRequest {
   

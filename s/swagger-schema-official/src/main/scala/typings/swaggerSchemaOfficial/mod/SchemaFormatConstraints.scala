@@ -1,11 +1,7 @@
 package typings.swaggerSchemaOfficial.mod
 
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -24,23 +20,23 @@ object SchemaFormatConstraints {
   }
   
   @scala.inline
-  def IntegerFormat(`type`: integer): typings.swaggerSchemaOfficial.mod.IntegerFormat = {
+  def IntegerFormat(): typings.swaggerSchemaOfficial.mod.IntegerFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.IntegerFormat]
   }
   
   @scala.inline
-  def NumberFormat(`type`: number): typings.swaggerSchemaOfficial.mod.NumberFormat = {
+  def NumberFormat(): typings.swaggerSchemaOfficial.mod.NumberFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("number")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.NumberFormat]
   }
   
   @scala.inline
-  def StringFormat(`type`: string): typings.swaggerSchemaOfficial.mod.StringFormat = {
+  def StringFormat(): typings.swaggerSchemaOfficial.mod.StringFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[typings.swaggerSchemaOfficial.mod.StringFormat]
   }
 }

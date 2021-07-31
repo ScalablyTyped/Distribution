@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NavigationDrawer extends Widget_ {
+trait NavigationDrawer
+  extends StObject
+     with Widget_ {
   
   /** To close the navigation drawer control
     * @returns {void}
@@ -35,28 +36,27 @@ trait NavigationDrawer extends Widget_ {
 }
 object NavigationDrawer {
   
-  @js.native
   trait AjaxCompleteEventArgs extends StObject {
     
     /** URL of the content.
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Response content.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the navigation drawer model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxCompleteEventArgs {
     
@@ -101,36 +101,35 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait AjaxErrorEventArgs extends StObject {
     
     /** URL of the content.
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the navigation drawer model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Error page content.
       */
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
     /** Error code.
       */
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
     /** The corresponding error description.
       */
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxErrorEventArgs {
     
@@ -187,32 +186,31 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait AjaxSettings extends StObject {
     
     /** It specifies, whether to enable or disable asynchronous request.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the page will be cached in the web browser.
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** It specifies the type of data is send in the query string.
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /** It specifies the data as an object, will be passed in the query string.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** It specifies the type of data that you're expecting back from the response.
       */
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     /** It specifies the HTTP request type.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxSettings {
     
@@ -263,28 +261,27 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait AjaxSuccessEventArgs extends StObject {
     
     /** URL of the content.
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** Set this option to true to cancel the event.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Response content.
       */
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
     /** Instance of the navigation drawer model object.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AjaxSuccessEventArgs {
     
@@ -329,20 +326,19 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait BeforeCloseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Navigation Drawer model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCloseEventArgs {
     
@@ -375,90 +371,89 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Event triggers after the AJAX content loaded completely.
       */
-    var ajaxComplete: js.UndefOr[js.Function1[/* e */ AjaxCompleteEventArgs, Unit]] = js.native
+    var ajaxComplete: js.UndefOr[js.Function1[/* e */ AjaxCompleteEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the AJAX request failed.
       */
-    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.native
+    var ajaxError: js.UndefOr[js.Function1[/* e */ AjaxErrorEventArgs, Unit]] = js.undefined
     
     /** Specifies the ajaxSettings option to load the content to the NavigationDrawer control.
       * @Default {null}
       */
-    var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.NavigationDrawer.AjaxSettings] = js.native
+    var ajaxSettings: js.UndefOr[typings.ejWebAll.ej.NavigationDrawer.AjaxSettings] = js.undefined
     
     /** Event triggers after the AJAX content loaded successfully.
       */
-    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.native
+    var ajaxSuccess: js.UndefOr[js.Function1[/* e */ AjaxSuccessEventArgs, Unit]] = js.undefined
     
     /** Event triggers before the control gets closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.native
+    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentId for navigation drawer, where the AJAX content need to updated
       * @Default {null}
       */
-    var contentId: js.UndefOr[String] = js.native
+    var contentId: js.UndefOr[String] = js.undefined
     
     /** Sets the root class for NavigationDrawer theme. This cssClass API helps to use custom skinning option for NavigationDrawer control. By defining the root class using this API, we
       * need to include this root class in CSS.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the Direction for the control. See Direction
       * @Default {left}
       */
-    var direction: js.UndefOr[Direction | String] = js.native
+    var direction: js.UndefOr[Direction | String] = js.undefined
     
     /** Sets the listview to be enabled or not
       * @Default {false}
       */
-    var enableListView: js.UndefOr[Boolean] = js.native
+    var enableListView: js.UndefOr[Boolean] = js.undefined
     
     /** Navigation pane opened initially when isPaneOpen property is true.
       * @Default {false}
       */
-    var isPaneOpen: js.UndefOr[Boolean] = js.native
+    var isPaneOpen: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the listview items as an array of object.
       * @Default {[]}
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets all the properties of listview to render in navigation drawer
       */
-    var listViewSettings: js.UndefOr[js.Any] = js.native
+    var listViewSettings: js.UndefOr[js.Any] = js.undefined
     
     /** Event triggers when the control open.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Specifies position whether it is in fixed or relative to the page. See Position
       * @Default {normal}
       */
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
     /** Event triggers when the Swipe happens.
       */
-    var swipe: js.UndefOr[js.Function1[/* e */ SwipeEventArgs, Unit]] = js.native
+    var swipe: js.UndefOr[js.Function1[/* e */ SwipeEventArgs, Unit]] = js.undefined
     
     /** Specifies the targetId for navigation drawer
       */
-    var targetId: js.UndefOr[String] = js.native
+    var targetId: js.UndefOr[String] = js.undefined
     
     /** Sets the rendering type of the control. See Type
       * @Default {overlay}
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Specifies the width of the control
       * @Default {auto}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -532,7 +527,7 @@ object NavigationDrawer {
       def setIsPaneOpenUndefined: Self = StObject.set(x, "isPaneOpen", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -584,20 +579,19 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Navigation Drawer model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -630,20 +624,19 @@ object NavigationDrawer {
     }
   }
   
-  @js.native
   trait SwipeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Navigation Drawer model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SwipeEventArgs {
     

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMClippingPath extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait CIMClippingPath extends StObject {
     */
   var clippingType: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClippingType * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The clipping path.
     */
-  var path: js.UndefOr[ExternalReferencePolygon] = js.native
+  var path: js.UndefOr[ExternalReferencePolygon] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath
 }
 object CIMClippingPath {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath): CIMClippingPath = {
+  def apply(): CIMClippingPath = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMClippingPath")
     __obj.asInstanceOf[CIMClippingPath]
   }
   

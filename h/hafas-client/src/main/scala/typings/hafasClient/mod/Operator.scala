@@ -3,24 +3,22 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operator extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: operator = js.native
+  var `type`: operator
 }
 object Operator {
   
   @scala.inline
-  def apply(id: String, name: String, `type`: operator): Operator = {
+  def apply(id: String, name: String): Operator = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("operator")
     __obj.asInstanceOf[Operator]
   }
   

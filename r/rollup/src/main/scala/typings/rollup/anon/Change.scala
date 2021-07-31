@@ -3,19 +3,17 @@ package typings.rollup.anon
 import typings.rollup.mod.RollupWatcherEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
-  def change(id: String, change: Event): Unit = js.native
+  def change(id: String, change: Event): Unit
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def event(event: RollupWatcherEvent): Unit = js.native
+  def event(event: RollupWatcherEvent): Unit
   
-  def restart(): Unit = js.native
+  def restart(): Unit
 }
 object Change {
   

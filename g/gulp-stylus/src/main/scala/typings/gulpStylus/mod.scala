@@ -4,28 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-stylus", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-stylus", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-stylus", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var `include css`: js.UndefOr[Boolean] = js.native
+    var `include css`: js.UndefOr[Boolean] = js.undefined
     
-    var linenos: js.UndefOr[Boolean] = js.native
+    var linenos: js.UndefOr[Boolean] = js.undefined
     
-    var rawDefine: js.UndefOr[VariableDefinitions] = js.native
+    var rawDefine: js.UndefOr[VariableDefinitions] = js.undefined
   }
   object Options {
     

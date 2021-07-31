@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object Platform extends StObject {
   
   /** For use by Windows metadata. */
   @js.native
-  sealed trait windows extends Platform
+  sealed trait windows
+    extends StObject
+       with Platform
   
   /** For use by Windows Phone metadata. */
   @js.native
-  sealed trait windowsPhone extends Platform
+  sealed trait windowsPhone
+    extends StObject
+       with Platform
 }

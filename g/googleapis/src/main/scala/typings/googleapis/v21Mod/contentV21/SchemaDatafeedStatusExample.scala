@@ -2,29 +2,27 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An example occurrence for a particular error.
   */
-@js.native
 trait SchemaDatafeedStatusExample extends StObject {
   
   /**
     * The ID of the example item.
     */
-  var itemId: js.UndefOr[String] = js.native
+  var itemId: js.UndefOr[String] = js.undefined
   
   /**
     * Line number in the data feed where the example is found.
     */
-  var lineNumber: js.UndefOr[String] = js.native
+  var lineNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The problematic value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaDatafeedStatusExample {
   

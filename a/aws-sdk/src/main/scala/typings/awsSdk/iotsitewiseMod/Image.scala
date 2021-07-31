@@ -2,18 +2,16 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var file: js.UndefOr[ImageFile] = js.native
+  var file: js.UndefOr[ImageFile] = js.undefined
   
   /**
     * The ID of an existing image. Specify this parameter to keep an existing image.
     */
-  var id: js.UndefOr[ID] = js.native
+  var id: js.UndefOr[ID] = js.undefined
 }
 object Image {
   

@@ -6,7 +6,6 @@ import typings.reactColor.anon.PartialClassesHuePickerSt
 import typings.reactColor.mod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hueHueMod {
@@ -20,15 +19,16 @@ object hueHueMod {
   trait HuePicker
     extends Component[HuePickerProps, js.Object, js.Any]
   
-  @js.native
-  trait HuePickerProps extends ColorPickerProps[HuePicker] {
+  trait HuePickerProps
+    extends StObject
+       with ColorPickerProps[HuePicker] {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     @JSName("styles")
-    var styles_HuePickerProps: js.UndefOr[PartialClassesHuePickerSt] = js.native
+    var styles_HuePickerProps: js.UndefOr[PartialClassesHuePickerSt] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object HuePickerProps {
     
@@ -61,12 +61,11 @@ object hueHueMod {
     }
   }
   
-  @js.native
   trait HuePickerStylesProps extends StObject {
     
-    var hue: CSSProperties = js.native
+    var hue: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
   }
   object HuePickerStylesProps {
     

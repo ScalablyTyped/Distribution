@@ -2,15 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cell extends StObject {
   
-  var cell: Double = js.native
+  var cell: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object Cell {
   

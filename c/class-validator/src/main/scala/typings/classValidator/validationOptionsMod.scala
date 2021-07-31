@@ -3,40 +3,41 @@ package typings.classValidator
 import typings.classValidator.validationArgumentsMod.ValidationArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationOptionsMod {
   
-  @JSImport("class-validator/types/decorator/ValidationOptions", "isValidationOptions")
+  @JSImport("class-validator/types/decorator/ValidationOptions", JSImport.Namespace)
   @js.native
-  def isValidationOptions(`val`: js.Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def isValidationOptions(`val`: js.Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidationOptions")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean]
+  
   trait ValidationOptions extends StObject {
     
     /**
       * Indicates if validation must be performed always, no matter of validation groups used.
       */
-    var always: js.UndefOr[Boolean] = js.native
+    var always: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Specifies if validated value is an array and each of its items must be validated.
       */
-    var each: js.UndefOr[Boolean] = js.native
+    var each: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validation groups used for this validation.
       */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Error message to be used on validation fail.
       * Message can be either string or a function that returns a string.
       */
-    var message: js.UndefOr[String | (js.Function1[/* validationArguments */ ValidationArguments, String])] = js.native
+    var message: js.UndefOr[String | (js.Function1[/* validationArguments */ ValidationArguments, String])] = js.undefined
   }
   object ValidationOptions {
     

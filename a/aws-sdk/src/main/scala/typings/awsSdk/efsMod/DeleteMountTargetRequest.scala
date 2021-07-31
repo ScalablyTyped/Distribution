@@ -2,16 +2,14 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMountTargetRequest extends StObject {
   
   /**
     * The ID of the mount target to delete (String).
     */
-  var MountTargetId: typings.awsSdk.efsMod.MountTargetId = js.native
+  var MountTargetId: typings.awsSdk.efsMod.MountTargetId
 }
 object DeleteMountTargetRequest {
   

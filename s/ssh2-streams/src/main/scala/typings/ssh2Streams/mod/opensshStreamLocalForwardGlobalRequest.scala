@@ -2,13 +2,13 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait opensshStreamLocalForwardGlobalRequest extends _GlobalRequest {
+trait opensshStreamLocalForwardGlobalRequest
+  extends StObject
+     with _GlobalRequest {
   
-  var socketPath: String = js.native
+  var socketPath: String
 }
 object opensshStreamLocalForwardGlobalRequest {
   

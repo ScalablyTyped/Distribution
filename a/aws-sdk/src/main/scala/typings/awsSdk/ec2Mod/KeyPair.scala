@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPair extends StObject {
   
   /**
     * The SHA-1 digest of the DER encoded private key.
     */
-  var KeyFingerprint: js.UndefOr[String] = js.native
+  var KeyFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * An unencrypted PEM encoded RSA private key.
     */
-  var KeyMaterial: js.UndefOr[SensitiveUserData] = js.native
+  var KeyMaterial: js.UndefOr[SensitiveUserData] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[String] = js.native
+  var KeyName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the key pair.
     */
-  var KeyPairId: js.UndefOr[String] = js.native
+  var KeyPairId: js.UndefOr[String] = js.undefined
   
   /**
     * Any tags applied to the key pair.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object KeyPair {
   

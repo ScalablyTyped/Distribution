@@ -2,13 +2,11 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogSoftmaxAttrs extends StObject {
   
-  var axis: Double = js.native
+  var axis: Double
 }
 object LogSoftmaxAttrs {
   

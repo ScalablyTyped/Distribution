@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object is the only parameter passed to these functions and contains
   * information about the mouse event.
   */
-@js.native
-trait ToolEvent extends Event {
+trait ToolEvent
+  extends StObject
+     with Event {
   
   /** 
     * The number of times the mouse event was fired.
     */
-  var count: Double = js.native
+  var count: Double
   
   /** 
     * The difference between the current position and the last position of the
     * mouse when the event was fired. In case of the mouseup event, the
     * difference to the mousedown position is returned.
     */
-  var delta: Point = js.native
+  var delta: Point
   
   /** 
     * The position of the mouse in project coordinates when the mouse button
     * was last clicked.
     */
-  var downPoint: Point = js.native
+  var downPoint: Point
   
   /** 
     * The item at the position of the mouse (if any).
@@ -40,13 +40,13 @@ trait ToolEvent extends Event {
     * {@link CompoundPath} items, the most top level group or compound path
     * that it is contained within is returned.
     */
-  var item: Item = js.native
+  var item: Item
   
   /** 
     * The position of the mouse in project coordinates when the previous
     * event was fired.
     */
-  var lastPoint: Point = js.native
+  var lastPoint: Point
   
   /** 
     * The point in the middle between {@link #lastPoint} and
@@ -54,18 +54,18 @@ trait ToolEvent extends Event {
     * artwork based on the moving direction of the mouse, as returned by
     * {@link #delta}.
     */
-  var middlePoint: Point = js.native
+  var middlePoint: Point
   
   /** 
     * The position of the mouse in project coordinates when the event was
     * fired.
     */
-  var point: Point = js.native
+  var point: Point
   
   /** 
     * The type of tool event.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ToolEvent {
   

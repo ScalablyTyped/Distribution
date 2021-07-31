@@ -7,31 +7,33 @@ import typings.std.Array
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
   
   @JSImport("simplecrawler/queue", JSImport.Default)
   @js.native
-  class default () extends FetchQueue
+  class default ()
+    extends StObject
+       with FetchQueue
   
   @js.native
   trait FetchQueue
-    extends Array[
+    extends StObject
+       with Array[
           /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
         ] {
     
     def add(queueItem: QueueItem): Unit = js.native
-    def add(
-      queueItem: QueueItem,
-      force: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* error */ js.UndefOr[Error], /* queueItem */ js.UndefOr[QueueItem], Unit]
-    ): Unit = js.native
     def add(queueItem: QueueItem, force: Boolean): Unit = js.native
     def add(
       queueItem: QueueItem,
       force: Boolean,
+      callback: js.Function2[/* error */ js.UndefOr[Error], /* queueItem */ js.UndefOr[QueueItem], Unit]
+    ): Unit = js.native
+    def add(
+      queueItem: QueueItem,
+      force: Unit,
       callback: js.Function2[/* error */ js.UndefOr[Error], /* queueItem */ js.UndefOr[QueueItem], Unit]
     ): Unit = js.native
     
@@ -93,32 +95,31 @@ object queueMod {
     ): Unit = js.native
   }
   
-  @js.native
   trait QueueItem extends StObject {
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var fetched: Boolean = js.native
+    var fetched: Boolean
     
-    var host: String = js.native
+    var host: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var path: String = js.native
+    var path: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var referrer: String = js.native
+    var referrer: String
     
-    var stateData: ActualDataSize = js.native
+    var stateData: ActualDataSize
     
-    var status: QueueItemStatus = js.native
+    var status: QueueItemStatus
     
-    var uriPath: String = js.native
+    var uriPath: String
     
-    var url: String = js.native
+    var url: String
   }
   object QueueItem {
     

@@ -2,43 +2,42 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAtRatioPositions
-  extends CIMMarkerStrokePlacement
+  extends StObject
+     with CIMMarkerStrokePlacement
      with CIMMarkerPlacementType {
   
   /**
     * The distance from the beginning of a line that the marker will be placed.
     */
-  var beginPosition: js.UndefOr[Double] = js.native
+  var beginPosition: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance from the end of a line that the marker will be placed. The ending of a line is determined by the direction in which the line was digitized.
     */
-  var endPosition: js.UndefOr[Double] = js.native
+  var endPosition: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether only the first marker will be rotated 180 degrees.
     */
-  var flipFirst: js.UndefOr[Boolean] = js.native
+  var flipFirst: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The array of positions.
     */
-  var positionArray: js.UndefOr[js.Array[Double]] = js.native
+  var positionArray: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementAtRatioPositions: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions = js.native
+  var type_CIMMarkerPlacementAtRatioPositions: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions
 }
 object CIMMarkerPlacementAtRatioPositions {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): CIMMarkerPlacementAtRatioPositions = {
+  def apply(): CIMMarkerPlacementAtRatioPositions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAtRatioPositions")
     __obj.asInstanceOf[CIMMarkerPlacementAtRatioPositions]
   }
   

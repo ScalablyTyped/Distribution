@@ -6,81 +6,81 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTasksList extends StandardParameters {
+trait ParamsResourceTasksList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Upper bound for a task's completion date (as a RFC 3339 timestamp) to
     * filter by. Optional. The default is not to filter by completion date.
     */
-  var completedMax: js.UndefOr[String] = js.native
+  var completedMax: js.UndefOr[String] = js.undefined
   
   /**
     * Lower bound for a task's completion date (as a RFC 3339 timestamp) to
     * filter by. Optional. The default is not to filter by completion date.
     */
-  var completedMin: js.UndefOr[String] = js.native
+  var completedMin: js.UndefOr[String] = js.undefined
   
   /**
     * Upper bound for a task's due date (as a RFC 3339 timestamp) to filter by.
     * Optional. The default is not to filter by due date.
     */
-  var dueMax: js.UndefOr[String] = js.native
+  var dueMax: js.UndefOr[String] = js.undefined
   
   /**
     * Lower bound for a task's due date (as a RFC 3339 timestamp) to filter by.
     * Optional. The default is not to filter by due date.
     */
-  var dueMin: js.UndefOr[String] = js.native
+  var dueMin: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of task lists returned on one page. Optional. The default
     * is 20 (max allowed: 100).
     */
-  var maxResults: js.UndefOr[String] = js.native
+  var maxResults: js.UndefOr[String] = js.undefined
   
   /**
     * Token specifying the result page to return. Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Flag indicating whether completed tasks are returned in the result.
     * Optional. The default is True.
     */
-  var showCompleted: js.UndefOr[Boolean] = js.native
+  var showCompleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag indicating whether deleted tasks are returned in the result.
     * Optional. The default is False.
     */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag indicating whether hidden tasks are returned in the result.
     * Optional. The default is False.
     */
-  var showHidden: js.UndefOr[Boolean] = js.native
+  var showHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Task list identifier.
     */
-  var tasklist: js.UndefOr[String] = js.native
+  var tasklist: js.UndefOr[String] = js.undefined
   
   /**
     * Lower bound for a task's last modification time (as a RFC 3339 timestamp)
     * to filter by. Optional. The default is not to filter by last modification
     * time.
     */
-  var updatedMin: js.UndefOr[String] = js.native
+  var updatedMin: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTasksList {
   

@@ -2,16 +2,14 @@ package typings.pgPromise.pgSubsetMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDefaults extends StObject {
   
-  var application_name: String = js.native
+  var application_name: String
   
   // binary result mode
-  var binary: Boolean = js.native
+  var binary: Boolean
   
   // max milliseconds a client can go unused before it is removed from the pool and destroyed;
   //
@@ -20,51 +18,51 @@ trait IDefaults extends StObject {
   //  - https://github.com/vitaly-t/pg-promise/issues/703
   //
   // idleTimeoutMillis: number
-  var client_encoding: String = js.native
+  var client_encoding: String
   
   // connection string for overriding defaults
-  var connectionString: String = js.native
+  var connectionString: String
   
   // name of database to connect
-  var database: String = js.native
+  var database: String
   
-  var fallback_application_name: String = js.native
+  var fallback_application_name: String
   
   // database host. defaults to localhost
-  var host: String = js.native
+  var host: String
   
-  var keepalives: Double = js.native
+  var keepalives: Double
   
-  var keepalives_idle: Double = js.native
+  var keepalives_idle: Double
   
   // Connection pool options - see https://github.com/brianc/node-pg-pool
   // number of connections to use in connection pool
   // 0 will disable connection pooling
-  var max: Double = js.native
+  var max: Double
   
-  var parseInputDatesAsUTC: Boolean = js.native
+  var parseInputDatesAsUTC: Boolean
   
   // database user's password
-  var password: DynamicPassword = js.native
+  var password: DynamicPassword
   
   // database port
-  var port: Double = js.native
+  var port: Double
   
   // max milliseconds to wait for query to complete (client side)
-  var query_timeout: Boolean | Double = js.native
+  var query_timeout: Boolean | Double
   
   // number of rows to return at a time from a prepared statement's
   // portal. 0 will return all rows at once
-  var rows: Double = js.native
+  var rows: Double
   
-  var ssl: Boolean | ISSLConfig = js.native
+  var ssl: Boolean | ISSLConfig
   
   // max milliseconds any query using this connection will execute for before timing out in error.
   // false=unlimited
-  var statement_timeout: Boolean | Double = js.native
+  var statement_timeout: Boolean | Double
   
   // database user's name
-  var user: String = js.native
+  var user: String
 }
 object IDefaults {
   

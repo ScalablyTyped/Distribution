@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineEvent extends StObject {
   
-  def isDefaultPrevented(): Boolean = js.native
+  def isDefaultPrevented(): Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var sender: Line = js.native
+  var sender: Line
 }
 object LineEvent {
   

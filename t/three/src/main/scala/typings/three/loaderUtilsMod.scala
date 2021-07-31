@@ -3,7 +3,6 @@ package typings.three
 import typings.three.polyfillsMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderUtilsMod {
@@ -14,12 +13,14 @@ object loaderUtilsMod {
   /* static members */
   object LoaderUtils {
     
-    @JSImport("three/src/loaders/LoaderUtils", "LoaderUtils.decodeText")
+    @JSImport("three/src/loaders/LoaderUtils", "LoaderUtils")
     @js.native
-    def decodeText(array: TypedArray): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("three/src/loaders/LoaderUtils", "LoaderUtils.extractUrlBase")
-    @js.native
-    def extractUrlBase(url: String): String = js.native
+    @scala.inline
+    def decodeText(array: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeText")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def extractUrlBase(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlBase")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

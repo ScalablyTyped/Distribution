@@ -6,49 +6,47 @@ import typings.braintree.mod.Payroll
 import typings.braintree.mod.Prepaid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bin extends StObject {
   
-  var bin: String = js.native
+  var bin: String
   
-  var cardType: String = js.native
+  var cardType: String
   
-  var cardholderName: js.UndefOr[String] = js.native
+  var cardholderName: js.UndefOr[String] = js.undefined
   
-  var commercial: typings.braintree.mod.Commercial = js.native
+  var commercial: typings.braintree.mod.Commercial
   
-  var countryOfIssuance: String = js.native
+  var countryOfIssuance: String
   
-  var customerLocation: typings.braintree.mod.CustomerLocation = js.native
+  var customerLocation: typings.braintree.mod.CustomerLocation
   
-  var debit: String = js.native
+  var debit: String
   
-  var durbinRegulated: DurbinRegulated = js.native
+  var durbinRegulated: DurbinRegulated
   
-  var expirationDate: js.UndefOr[String] = js.native
+  var expirationDate: js.UndefOr[String] = js.undefined
   
-  var expirationMonth: js.UndefOr[String] = js.native
+  var expirationMonth: js.UndefOr[String] = js.undefined
   
-  var expirationYear: js.UndefOr[String] = js.native
+  var expirationYear: js.UndefOr[String] = js.undefined
   
-  var healthcare: HealthCare = js.native
+  var healthcare: HealthCare
   
-  var issuingBank: String = js.native
+  var issuingBank: String
   
-  var last4: String = js.native
+  var last4: String
   
-  var payroll: Payroll = js.native
+  var payroll: Payroll
   
-  var prepaid: Prepaid = js.native
+  var prepaid: Prepaid
   
-  var productId: String = js.native
+  var productId: String
   
-  var token: String = js.native
+  var token: String
   
-  var uniqueNumberIdentifier: String = js.native
+  var uniqueNumberIdentifier: String
 }
 object Bin {
   

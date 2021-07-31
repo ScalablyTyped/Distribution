@@ -2,15 +2,13 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsCaseSensitive extends StObject {
   
-  val isCaseSensitive: js.UndefOr[Boolean] = js.native
+  val isCaseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  val isReadonly: js.UndefOr[Boolean] = js.native
+  val isReadonly: js.UndefOr[Boolean] = js.undefined
 }
 object IsCaseSensitive {
   

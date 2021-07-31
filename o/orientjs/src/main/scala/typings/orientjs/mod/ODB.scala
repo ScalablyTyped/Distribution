@@ -8,7 +8,6 @@ import typings.orientjs.orientjsStrings.memory
 import typings.orientjs.orientjsStrings.plocal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ODB")
@@ -36,8 +35,8 @@ class ODB () extends EventEmitter {
   def create(params: js.Any): OStatement = js.native
   def create(paramtype: String, paramname: String): OStatement = js.native
   
-  def createFn(fn: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def createFn(fn: js.Function1[/* repeated */ js.Any, _], options: js.Any): js.Promise[_] = js.native
+  def createFn(fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def createFn(fn: js.Function1[/* repeated */ js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
   /**
     * Create a orient function from a plain Javascript function
     *
@@ -46,8 +45,8 @@ class ODB () extends EventEmitter {
     * @param   options  Not currently used but will be used for 'IDEMPOTENT' arg
     * @promise {Mixed}           The results of the query / command.
     */
-  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, _], options: js.Any): js.Promise[_] = js.native
+  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = js.native
+  def createFn(name: String, fn: js.Function1[/* repeated */ js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Create a query instance for this database.
@@ -66,7 +65,7 @@ class ODB () extends EventEmitter {
     */
   def createUserContext(token: js.Any): js.Any = js.native
   
-  var dataSegments: js.Array[_] = js.native
+  var dataSegments: js.Array[js.Any] = js.native
   
   /**
     * Create a delete query.

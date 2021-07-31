@@ -2,31 +2,29 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshData extends StObject {
   
   /**
     * The name of the service mesh.
     */
-  var meshName: ResourceName = js.native
+  var meshName: ResourceName
   
   /**
     * The associated metadata for the service mesh.
     */
-  var metadata: ResourceMetadata = js.native
+  var metadata: ResourceMetadata
   
   /**
     * The associated specification for the service mesh.
     */
-  var spec: MeshSpec = js.native
+  var spec: MeshSpec
   
   /**
     * The status of the service mesh.
     */
-  var status: MeshStatus = js.native
+  var status: MeshStatus
 }
 object MeshData {
   

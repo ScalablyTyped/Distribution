@@ -2,28 +2,26 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecordsOutput extends StObject {
   
-  var ChildShards: js.UndefOr[ChildShardList] = js.native
+  var ChildShards: js.UndefOr[ChildShardList] = js.undefined
   
   /**
     * The number of milliseconds the GetRecords response is from the tip of the stream, indicating how far behind current time the consumer is. A value of zero indicates that record processing is caught up, and there are no new records to process at this moment.
     */
-  var MillisBehindLatest: js.UndefOr[typings.awsSdk.kinesisMod.MillisBehindLatest] = js.native
+  var MillisBehindLatest: js.UndefOr[typings.awsSdk.kinesisMod.MillisBehindLatest] = js.undefined
   
   /**
     * The next position in the shard from which to start sequentially reading data records. If set to null, the shard has been closed and the requested iterator does not return any more data. 
     */
-  var NextShardIterator: js.UndefOr[ShardIterator] = js.native
+  var NextShardIterator: js.UndefOr[ShardIterator] = js.undefined
   
   /**
     * The data records retrieved from the shard.
     */
-  var Records: RecordList = js.native
+  var Records: RecordList
 }
 object GetRecordsOutput {
   

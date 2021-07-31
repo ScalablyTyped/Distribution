@@ -2,17 +2,17 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBody extends IAuto {
+trait IBody
+  extends StObject
+     with IAuto {
   
   /** [Method] Called before any calculation cycles to prepare for layout
     * @param ownerContext Object
     */
   @JSName("beginLayout")
-  var beginLayout_IBody: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var beginLayout_IBody: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IBody {
   

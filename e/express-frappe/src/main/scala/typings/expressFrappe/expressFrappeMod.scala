@@ -21,7 +21,6 @@ import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressFrappeMod {
@@ -35,9 +34,9 @@ object expressFrappeMod {
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def app(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def app(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
+    def app(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def app(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     def app(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("app")
     var app_Original: Express = js.native
@@ -45,24 +44,23 @@ object expressFrappeMod {
     var server: Server = js.native
   }
   
-  @js.native
   trait ExpressFrappeConfig extends StObject {
     
-    var bodyParser: js.UndefOr[Boolean | Json] = js.native
+    var bodyParser: js.UndefOr[Boolean | Json] = js.undefined
     
-    var cors: js.UndefOr[Boolean | CorsOptions] = js.native
+    var cors: js.UndefOr[Boolean | CorsOptions] = js.undefined
     
-    var errorHandler: js.UndefOr[ErrorRequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var errorHandler: js.UndefOr[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.undefined
     
-    var io: js.UndefOr[ExpressFrappeSocketIOConfig] = js.native
+    var io: js.UndefOr[ExpressFrappeSocketIOConfig] = js.undefined
     
-    var middleware: js.UndefOr[js.Array[RequestHandler[ParamsDictionary, _, _, Query]]] = js.native
+    var middleware: js.UndefOr[js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]] = js.undefined
     
-    var morgan: js.UndefOr[Boolean] = js.native
+    var morgan: js.UndefOr[Boolean] = js.undefined
     
-    var routes: js.UndefOr[js.Array[RouteConfig] | RouteConfigAlternative] = js.native
+    var routes: js.UndefOr[js.Array[RouteConfig] | RouteConfigAlternative] = js.undefined
     
-    var static: js.UndefOr[String | Options] = js.native
+    var static: js.UndefOr[String | Options] = js.undefined
   }
   object ExpressFrappeConfig {
     
@@ -89,7 +87,7 @@ object expressFrappeMod {
       
       @scala.inline
       def setErrorHandler(
-        value: (/* err */ js.Any, /* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* err */ js.Any, /* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -102,7 +100,7 @@ object expressFrappeMod {
       def setIoUndefined: Self = StObject.set(x, "io", js.undefined)
       
       @scala.inline
-      def setMiddleware(value: js.Array[RequestHandler[ParamsDictionary, _, _, Query]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+      def setMiddleware(value: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMiddlewareUndefined: Self = StObject.set(x, "middleware", js.undefined)

@@ -3,13 +3,14 @@ package typings.makerJs.global.MakerJs
 import typings.makerJs.MakerJs.IFindChainsOptions
 import typings.makerJs.MakerJs.IMeasure
 import typings.makerJs.MakerJs.IModel
+import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathArc
 import typings.makerJs.MakerJs.IPathBezierSeed
+import typings.makerJs.MakerJs.IPathMap
 import typings.makerJs.MakerJs.IPoint
 import typings.opentypeJs.mod.Font
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object models {
@@ -17,7 +18,8 @@ object models {
   @JSGlobal("MakerJs.models.BezierCurve")
   @js.native
   class BezierCurve protected ()
-    extends typings.makerJs.MakerJs.models.BezierCurve {
+    extends StObject
+       with typings.makerJs.MakerJs.models.BezierCurve {
     def this(points: js.Array[IPoint]) = this()
     def this(seed: IPathBezierSeed) = this()
     def this(points: js.Array[IPoint], accuracy: Double) = this()
@@ -30,6 +32,28 @@ object models {
     def this(origin: IPoint, controls: js.Array[IPoint], end: IPoint, accuracy: Double) = this()
     def this(origin: IPoint, control: IPoint, end: IPoint, accuracy: Double) = this()
     def this(origin: IPoint, control1: IPoint, control2: IPoint, end: IPoint, accuracy: Double) = this()
+    
+    /* CompleteClass */
+    var accuracy: Double = js.native
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_BezierCurve: IModelMap = js.native
+    
+    /* CompleteClass */
+    @JSName("origin")
+    var origin_BezierCurve: IPoint = js.native
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_BezierCurve: IPathMap = js.native
+    
+    /* CompleteClass */
+    var seed: IPathBezierSeed = js.native
+    
+    /* CompleteClass */
+    @JSName("type")
+    var type_BezierCurve: String = js.native
   }
   object BezierCurve {
     
@@ -38,22 +62,18 @@ object models {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("MakerJs.models.BezierCurve.computeLength")
-    @js.native
-    def computeLength(seed: IPathBezierSeed): Double = js.native
+    @scala.inline
+    def computeLength(seed: IPathBezierSeed): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeLength")(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSGlobal("MakerJs.models.BezierCurve.computePoint")
-    @js.native
-    def computePoint(seed: IPathBezierSeed, t: Double): IPoint = js.native
+    @scala.inline
+    def computePoint(seed: IPathBezierSeed, t: Double): IPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("computePoint")(seed.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[IPoint]
     
     /* static member */
-    @JSGlobal("MakerJs.models.BezierCurve.getBezierSeeds")
-    @js.native
-    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve): js.Array[IPathBezierSeed] = js.native
-    @JSGlobal("MakerJs.models.BezierCurve.getBezierSeeds")
-    @js.native
-    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = js.native
+    @scala.inline
+    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve): js.Array[IPathBezierSeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any]).asInstanceOf[js.Array[IPathBezierSeed]]
+    @scala.inline
+    def getBezierSeeds(curve: typings.makerJs.MakerJs.models.BezierCurve, options: IFindChainsOptions): js.Array[IPathBezierSeed] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBezierSeeds")(curve.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPathBezierSeed]]
     
     /* static member */
     @JSGlobal("MakerJs.models.BezierCurve.typeName")
@@ -66,22 +86,33 @@ object models {
   @JSGlobal("MakerJs.models.BoltCircle")
   @js.native
   class BoltCircle protected ()
-    extends typings.makerJs.MakerJs.models.BoltCircle {
+    extends StObject
+       with typings.makerJs.MakerJs.models.BoltCircle {
     def this(boltRadius: Double, holeRadius: Double, boltCount: Double) = this()
     def this(boltRadius: Double, holeRadius: Double, boltCount: Double, firstBoltAngleInDegrees: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_BoltCircle: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.BoltRectangle")
   @js.native
   class BoltRectangle protected ()
-    extends typings.makerJs.MakerJs.models.BoltRectangle {
+    extends StObject
+       with typings.makerJs.MakerJs.models.BoltRectangle {
     def this(width: Double, height: Double, holeRadius: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_BoltRectangle: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.ConnectTheDots")
   @js.native
   class ConnectTheDots protected ()
-    extends typings.makerJs.MakerJs.models.ConnectTheDots {
+    extends StObject
+       with typings.makerJs.MakerJs.models.ConnectTheDots {
     /**
       * Create a model by connecting points designated in a numeric array. The model will be 'closed' - i.e. the last point will connect to the first point.
       *
@@ -139,12 +170,17 @@ object models {
       * @param numericList String containing a list of numbers which can be delimited by spaces, commas, or anything non-numeric (Note: [exponential notation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential) is allowed).
       */
     def this(isClosed: Boolean, numericList: String) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_ConnectTheDots: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Dogbone")
   @js.native
   class Dogbone protected ()
-    extends typings.makerJs.MakerJs.models.Dogbone {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Dogbone {
     /**
       * Create a dogbone from width, height, corner radius, style, and bottomless flag.
       *
@@ -161,28 +197,32 @@ object models {
       */
     def this(width: Double, height: Double, radius: Double) = this()
     def this(width: Double, height: Double, radius: Double, style: Double) = this()
-    def this(
-      width: Double,
-      height: Double,
-      radius: Double,
-      style: js.UndefOr[scala.Nothing],
-      bottomless: Boolean
-    ) = this()
     def this(width: Double, height: Double, radius: Double, style: Double, bottomless: Boolean) = this()
+    def this(width: Double, height: Double, radius: Double, style: Unit, bottomless: Boolean) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Dogbone: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Dome")
   @js.native
   class Dome protected ()
-    extends typings.makerJs.MakerJs.models.Dome {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Dome {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, radius: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Dome: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Ellipse")
   @js.native
   class Ellipse protected ()
-    extends typings.makerJs.MakerJs.models.Ellipse {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Ellipse {
     /**
       * Class for Ellipse created with 2 radii.
       *
@@ -213,12 +253,21 @@ object models {
     def this(cx: Double, cy: Double, rx: Double, ry: Double) = this()
     def this(origin: IPoint, radiusX: Double, radiusY: Double, accuracy: Double) = this()
     def this(cx: Double, cy: Double, rx: Double, ry: Double, accuracy: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_Ellipse: IModelMap = js.native
+    
+    /* CompleteClass */
+    @JSName("origin")
+    var origin_Ellipse: IPoint = js.native
   }
   
   @JSGlobal("MakerJs.models.EllipticArc")
   @js.native
   class EllipticArc protected ()
-    extends typings.makerJs.MakerJs.models.EllipticArc {
+    extends StObject
+       with typings.makerJs.MakerJs.models.EllipticArc {
     /**
       * Class for Elliptic Arc created by distorting a circular arc.
       *
@@ -239,12 +288,17 @@ object models {
       */
     def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double) = this()
     def this(startAngle: Double, endAngle: Double, radiusX: Double, radiusY: Double, accuracy: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_EllipticArc: IModelMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Holes")
   @js.native
   class Holes protected ()
-    extends typings.makerJs.MakerJs.models.Holes {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Holes {
     /**
       * Create an array of circles of the same radius from an array of center points.
       *
@@ -263,19 +317,29 @@ object models {
       */
     def this(holeRadius: Double, points: js.Array[IPoint]) = this()
     def this(holeRadius: Double, points: js.Array[IPoint], ids: js.Array[String]) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Holes: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Oval")
   @js.native
   class Oval protected ()
-    extends typings.makerJs.MakerJs.models.Oval {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Oval {
     def this(width: Double, height: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Oval: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.OvalArc")
   @js.native
   class OvalArc protected ()
-    extends typings.makerJs.MakerJs.models.OvalArc {
+    extends StObject
+       with typings.makerJs.MakerJs.models.OvalArc {
     def this(startAngle: Double, endAngle: Double, sweepRadius: Double, slotRadius: Double) = this()
     def this(
       startAngle: Double,
@@ -289,7 +353,7 @@ object models {
       endAngle: Double,
       sweepRadius: Double,
       slotRadius: Double,
-      selfIntersect: js.UndefOr[scala.Nothing],
+      selfIntersect: Boolean,
       isolateCaps: Boolean
     ) = this()
     def this(
@@ -297,56 +361,59 @@ object models {
       endAngle: Double,
       sweepRadius: Double,
       slotRadius: Double,
-      selfIntersect: Boolean,
+      selfIntersect: Unit,
       isolateCaps: Boolean
     ) = this()
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_OvalArc: IModelMap = js.native
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_OvalArc: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Polygon")
   @js.native
   class Polygon protected ()
-    extends typings.makerJs.MakerJs.models.Polygon {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Polygon {
     def this(numberOfSides: Double, radius: Double) = this()
     def this(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double) = this()
-    def this(
-      numberOfSides: Double,
-      radius: Double,
-      firstCornerAngleInDegrees: js.UndefOr[scala.Nothing],
-      circumscribed: Boolean
-    ) = this()
     def this(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double, circumscribed: Boolean) = this()
+    def this(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Unit, circumscribed: Boolean) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Polygon: IPathMap = js.native
   }
   object Polygon {
     
-    /* static member */
-    @JSGlobal("MakerJs.models.Polygon.circumscribedRadius")
+    @JSGlobal("MakerJs.models.Polygon")
     @js.native
-    def circumscribedRadius(radius: Double, angleInRadians: Double): Double = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("MakerJs.models.Polygon.getPoints")
-    @js.native
-    def getPoints(numberOfSides: Double, radius: Double): js.Array[IPoint] = js.native
-    @JSGlobal("MakerJs.models.Polygon.getPoints")
-    @js.native
-    def getPoints(
-      numberOfSides: Double,
-      radius: Double,
-      firstCornerAngleInDegrees: js.UndefOr[scala.Nothing],
-      circumscribed: Boolean
-    ): js.Array[IPoint] = js.native
-    @JSGlobal("MakerJs.models.Polygon.getPoints")
-    @js.native
-    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double): js.Array[IPoint] = js.native
-    @JSGlobal("MakerJs.models.Polygon.getPoints")
-    @js.native
-    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double, circumscribed: Boolean): js.Array[IPoint] = js.native
+    @scala.inline
+    def circumscribedRadius(radius: Double, angleInRadians: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("circumscribedRadius")(radius.asInstanceOf[js.Any], angleInRadians.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /* static member */
+    @scala.inline
+    def getPoints(numberOfSides: Double, radius: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    @scala.inline
+    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    @scala.inline
+    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Double, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
+    @scala.inline
+    def getPoints(numberOfSides: Double, radius: Double, firstCornerAngleInDegrees: Unit, circumscribed: Boolean): js.Array[IPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPoints")(numberOfSides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], firstCornerAngleInDegrees.asInstanceOf[js.Any], circumscribed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPoint]]
   }
   
   @JSGlobal("MakerJs.models.Rectangle")
   @js.native
   class Rectangle protected ()
-    extends typings.makerJs.MakerJs.models.Rectangle {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Rectangle {
     /**
       * Create a rectangle from a measurement.
       *
@@ -398,19 +465,33 @@ object models {
       * @param height Height of the rectangle.
       */
     def this(width: Double, height: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("origin")
+    var origin_Rectangle: IPoint = js.native
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Rectangle: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Ring")
   @js.native
   class Ring protected ()
-    extends typings.makerJs.MakerJs.models.Ring {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Ring {
     def this(outerRadius: Double, innerRadius: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Ring: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.RoundRectangle")
   @js.native
   class RoundRectangle protected ()
-    extends typings.makerJs.MakerJs.models.RoundRectangle {
+    extends StObject
+       with typings.makerJs.MakerJs.models.RoundRectangle {
     /**
       * Create a round rectangle which will surround a model.
       *
@@ -437,90 +518,95 @@ object models {
       * @param radius Corner radius.
       */
     def this(width: Double, height: Double, radius: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("origin")
+    var origin_RoundRectangle: IPoint = js.native
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_RoundRectangle: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.SCurve")
   @js.native
   class SCurve protected ()
-    extends typings.makerJs.MakerJs.models.SCurve {
+    extends StObject
+       with typings.makerJs.MakerJs.models.SCurve {
     def this(width: Double, height: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_SCurve: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Slot")
   @js.native
   class Slot protected ()
-    extends typings.makerJs.MakerJs.models.Slot {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Slot {
     def this(origin: IPoint, endPoint: IPoint, radius: Double) = this()
     def this(origin: IPoint, endPoint: IPoint, radius: Double, isolateCaps: Boolean) = this()
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_Slot: IModelMap = js.native
+    
+    /* CompleteClass */
+    @JSName("origin")
+    var origin_Slot: IPoint = js.native
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Slot: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Square")
   @js.native
   class Square protected ()
-    extends typings.makerJs.MakerJs.models.Square {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Square {
     def this(side: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Square: IPathMap = js.native
   }
   
   @JSGlobal("MakerJs.models.Star")
   @js.native
   class Star protected ()
-    extends typings.makerJs.MakerJs.models.Star {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Star {
     def this(numberOfPoints: Double, outerRadius: Double) = this()
     def this(numberOfPoints: Double, outerRadius: Double, innerRadius: Double) = this()
-    def this(
-      numberOfPoints: Double,
-      outerRadius: Double,
-      innerRadius: js.UndefOr[scala.Nothing],
-      skipPoints: Double
-    ) = this()
     def this(numberOfPoints: Double, outerRadius: Double, innerRadius: Double, skipPoints: Double) = this()
+    def this(numberOfPoints: Double, outerRadius: Double, innerRadius: Unit, skipPoints: Double) = this()
+    
+    /* CompleteClass */
+    @JSName("paths")
+    var paths_Star: IPathMap = js.native
   }
   object Star {
     
-    /* static member */
-    @JSGlobal("MakerJs.models.Star.InnerRadiusRatio")
+    @JSGlobal("MakerJs.models.Star")
     @js.native
-    def InnerRadiusRatio(numberOfPoints: Double, skipPoints: Double): Double = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def InnerRadiusRatio(numberOfPoints: Double, skipPoints: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("InnerRadiusRatio")(numberOfPoints.asInstanceOf[js.Any], skipPoints.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSGlobal("MakerJs.models.Text")
   @js.native
   class Text protected ()
-    extends typings.makerJs.MakerJs.models.Text {
+    extends StObject
+       with typings.makerJs.MakerJs.models.Text {
     def this(font: Font, text: String, fontSize: Double) = this()
     def this(font: Font, text: String, fontSize: Double, combine: Boolean) = this()
-    def this(
-      font: Font,
-      text: String,
-      fontSize: Double,
-      combine: js.UndefOr[scala.Nothing],
-      centerCharacterOrigin: Boolean
-    ) = this()
     def this(font: Font, text: String, fontSize: Double, combine: Boolean, centerCharacterOrigin: Boolean) = this()
-    def this(
-      font: Font,
-      text: String,
-      fontSize: Double,
-      combine: js.UndefOr[scala.Nothing],
-      centerCharacterOrigin: js.UndefOr[scala.Nothing],
-      bezierAccuracy: Double
-    ) = this()
-    def this(
-      font: Font,
-      text: String,
-      fontSize: Double,
-      combine: js.UndefOr[scala.Nothing],
-      centerCharacterOrigin: Boolean,
-      bezierAccuracy: Double
-    ) = this()
-    def this(
-      font: Font,
-      text: String,
-      fontSize: Double,
-      combine: Boolean,
-      centerCharacterOrigin: js.UndefOr[scala.Nothing],
-      bezierAccuracy: Double
-    ) = this()
+    def this(font: Font, text: String, fontSize: Double, combine: Unit, centerCharacterOrigin: Boolean) = this()
     def this(
       font: Font,
       text: String,
@@ -529,5 +615,33 @@ object models {
       centerCharacterOrigin: Boolean,
       bezierAccuracy: Double
     ) = this()
+    def this(
+      font: Font,
+      text: String,
+      fontSize: Double,
+      combine: Boolean,
+      centerCharacterOrigin: Unit,
+      bezierAccuracy: Double
+    ) = this()
+    def this(
+      font: Font,
+      text: String,
+      fontSize: Double,
+      combine: Unit,
+      centerCharacterOrigin: Boolean,
+      bezierAccuracy: Double
+    ) = this()
+    def this(
+      font: Font,
+      text: String,
+      fontSize: Double,
+      combine: Unit,
+      centerCharacterOrigin: Unit,
+      bezierAccuracy: Double
+    ) = this()
+    
+    /* CompleteClass */
+    @JSName("models")
+    var models_Text: IModelMap = js.native
   }
 }

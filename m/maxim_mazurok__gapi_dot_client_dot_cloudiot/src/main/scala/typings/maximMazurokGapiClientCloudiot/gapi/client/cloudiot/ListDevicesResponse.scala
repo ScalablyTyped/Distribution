@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDevicesResponse extends StObject {
   
   /** The devices that match the request. */
-  var devices: js.UndefOr[js.Array[Device]] = js.native
+  var devices: js.UndefOr[js.Array[Device]] = js.undefined
   
   /** If not empty, indicates that there may be more devices that match the request; this value should be passed in a new `ListDevicesRequest`. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDevicesResponse {
   

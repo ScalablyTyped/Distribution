@@ -5,10 +5,13 @@ import typings.postcss.mod.Node
 import typings.postcss.mod.Root_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@stylable/optimizer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/optimizer", "StylableClassNameOptimizer")
   @js.native
@@ -26,7 +29,7 @@ object mod {
     extends typings.stylableOptimizer.stylableOptimizerMod.StylableOptimizer {
     def this(classNameOptimizer: typings.stylableOptimizer.classnameOptimizerMod.StylableClassNameOptimizer) = this()
     def this(
-      classNameOptimizer: js.UndefOr[scala.Nothing],
+      classNameOptimizer: Unit,
       namespaceOptimizer: typings.stylableOptimizer.namespaceOptimizerMod.StylableNamespaceOptimizer
     ) = this()
     def this(
@@ -35,27 +38,21 @@ object mod {
     ) = this()
   }
   
-  @JSImport("@stylable/optimizer", "createCommentFromNode")
-  @js.native
-  def createCommentFromNode(label: String, node: Node): js.Array[Comment_] = js.native
+  @scala.inline
+  def createCommentFromNode(label: String, node: Node): js.Array[Comment_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommentFromNode")(label.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Array[Comment_]]
   
-  @JSImport("@stylable/optimizer", "createLineByLineComment")
-  @js.native
-  def createLineByLineComment(node: Node): js.Array[Comment_] = js.native
+  @scala.inline
+  def createLineByLineComment(node: Node): js.Array[Comment_] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLineByLineComment")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Comment_]]
   
-  @JSImport("@stylable/optimizer", "removeCommentNodes")
-  @js.native
-  def removeCommentNodes(root: Root_): Unit = js.native
+  @scala.inline
+  def removeCommentNodes(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCommentNodes")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer", "removeEmptyNodes")
-  @js.native
-  def removeEmptyNodes(root: Root_): Unit = js.native
+  @scala.inline
+  def removeEmptyNodes(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmptyNodes")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer", "removeRecursiveUpIfEmpty")
-  @js.native
-  def removeRecursiveUpIfEmpty(node: Node): Unit = js.native
+  @scala.inline
+  def removeRecursiveUpIfEmpty(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRecursiveUpIfEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer", "replaceRecursiveUpIfEmpty")
-  @js.native
-  def replaceRecursiveUpIfEmpty(label: String, node: Node): Unit = js.native
+  @scala.inline
+  def replaceRecursiveUpIfEmpty(label: String, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRecursiveUpIfEmpty")(label.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

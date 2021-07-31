@@ -2,17 +2,15 @@ package typings.storybookAddons.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorySortObjectParameter extends StObject {
   
-  var locales: js.UndefOr[String] = js.native
+  var locales: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[StorySortMethod] = js.native
+  var method: js.UndefOr[StorySortMethod] = js.undefined
   
-  var order: js.UndefOr[js.Array[_]] = js.native
+  var order: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object StorySortObjectParameter {
   
@@ -38,7 +36,7 @@ object StorySortObjectParameter {
     def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setOrder(value: js.Array[_]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    def setOrder(value: js.Array[js.Any]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)

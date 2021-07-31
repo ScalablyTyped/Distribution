@@ -2,28 +2,26 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingOption extends StObject {
   
   /**
     * The shipping cost for the selected option.
     */
-  var amount: CurrencyAmount = js.native
+  var amount: CurrencyAmount
   
   /**
     * A unique ID that identifies a payer-selected shipping option.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A description that the payer sees, which helps them choose an appropriate shipping option.
     * For example, `Free Shipping`, `USPS Priority Shipping`, `Expédition prioritaire USPS`,
     * or `USPS yōuxiān fā huò`. Localize this description to the payer's locale.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * If `selected = true` is specified as part of the API request it represents the shipping
@@ -33,12 +31,12 @@ trait ShippingOption extends StObject {
     * selected during the course of checkout with PayPal. Only 1 `shippingOption` can be set
     * to `selected = true`.
     */
-  var selected: Boolean = js.native
+  var selected: Boolean
   
   /**
     * The method by which the payer wants to get their items.
     */
-  var `type`: ShippingOptionType = js.native
+  var `type`: ShippingOptionType
 }
 object ShippingOption {
   

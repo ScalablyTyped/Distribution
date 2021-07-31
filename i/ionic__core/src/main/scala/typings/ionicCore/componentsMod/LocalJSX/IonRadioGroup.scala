@@ -4,31 +4,29 @@ import typings.ionicCore.radioGroupInterfaceMod.RadioGroupChangeEventDetail
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonRadioGroup extends StObject {
   
   /**
     * If `true`, the radios can be deselected.
     */
-  var allowEmptySelection: js.UndefOr[Boolean] = js.native
+  var allowEmptySelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Emitted when the value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RadioGroupChangeEventDetail], Unit]] = js.native
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[RadioGroupChangeEventDetail], Unit]] = js.undefined
   
   /**
     * the value of the radio group.
     */
-  var value: js.UndefOr[js.Any | Null] = js.native
+  var value: js.UndefOr[js.Any | Null] = js.undefined
 }
 object IonRadioGroup {
   

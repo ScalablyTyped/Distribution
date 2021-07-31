@@ -2,21 +2,19 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPermissionRequest extends StObject {
   
   /**
     * The ARN of the permission.
     */
-  var permissionArn: String = js.native
+  var permissionArn: String
   
   /**
     * The identifier for the version of the permission.
     */
-  var permissionVersion: js.UndefOr[Integer] = js.native
+  var permissionVersion: js.UndefOr[Integer] = js.undefined
 }
 object GetPermissionRequest {
   

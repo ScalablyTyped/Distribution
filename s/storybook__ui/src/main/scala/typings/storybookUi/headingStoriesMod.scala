@@ -8,10 +8,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.anon.themeThemeundefinedchildr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headingStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -50,29 +53,23 @@ object headingStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "customBrandImage")
-  @js.native
-  def customBrandImage(): Element = js.native
+  @scala.inline
+  def customBrandImage(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("customBrandImage")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "linkAndText")
-  @js.native
-  def linkAndText(): Element = js.native
+  @scala.inline
+  def linkAndText(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("linkAndText")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "longText")
-  @js.native
-  def longText(): Element = js.native
+  @scala.inline
+  def longText(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("longText")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "menuHighlighted")
-  @js.native
-  def menuHighlighted(): Element = js.native
+  @scala.inline
+  def menuHighlighted(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("menuHighlighted")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "onlyText")
-  @js.native
-  def onlyText(): Element = js.native
+  @scala.inline
+  def onlyText(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyText")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "standard")
-  @js.native
-  def standard(): Element = js.native
+  @scala.inline
+  def standard(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("standard")().asInstanceOf[Element]
   
   object standardData {
     
@@ -87,7 +84,6 @@ object headingStoriesMod {
     def menu_=(x: js.Array[Id]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Heading.stories", "standardNoLink")
-  @js.native
-  def standardNoLink(): Element = js.native
+  @scala.inline
+  def standardNoLink(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("standardNoLink")().asInstanceOf[Element]
 }

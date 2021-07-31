@@ -14,7 +14,6 @@ import typings.std.History
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Namespace api. */
@@ -27,7 +26,9 @@ object api {
     * Constructs a new CustomHttpPattern.
     * @param [properties] Properties to set
     */
-  class CustomHttpPattern () extends ICustomHttpPattern {
+  class CustomHttpPattern ()
+    extends StObject
+       with ICustomHttpPattern {
     def this(properties: ICustomHttpPattern) = this()
     
     /** CustomHttpPattern kind. */
@@ -46,18 +47,20 @@ object api {
   }
   object CustomHttpPattern {
     
+    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new CustomHttpPattern instance using the specified properties.
       * @param [properties] Properties to set
       * @returns CustomHttpPattern instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.create")
-    @js.native
-    def create(): CustomHttpPattern = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.create")
-    @js.native
-    def create(properties: ICustomHttpPattern): CustomHttpPattern = js.native
+    @scala.inline
+    def create(): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CustomHttpPattern]
+    @scala.inline
+    def create(properties: ICustomHttpPattern): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer.
@@ -68,18 +71,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Reader): CustomHttpPattern = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): CustomHttpPattern = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Uint8Array): CustomHttpPattern = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): CustomHttpPattern = js.native
+    @scala.inline
+    def decode(reader: Reader): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Reader, length: Double): CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): CustomHttpPattern = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CustomHttpPattern]
     
     /**
       * Decodes a CustomHttpPattern message from the specified reader or buffer, length delimited.
@@ -89,12 +88,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): CustomHttpPattern = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): CustomHttpPattern = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
     /**
       * Encodes the specified CustomHttpPattern message. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -103,12 +100,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.encode")
-    @js.native
-    def encode(message: ICustomHttpPattern): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.encode")
-    @js.native
-    def encode(message: ICustomHttpPattern, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: ICustomHttpPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: ICustomHttpPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified CustomHttpPattern message, length delimited. Does not implicitly {@link google.api.CustomHttpPattern.verify|verify} messages.
@@ -117,12 +112,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICustomHttpPattern): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: ICustomHttpPattern, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: ICustomHttpPattern): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: ICustomHttpPattern, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a CustomHttpPattern message from a plain object. Also converts values to their respective internal types.
@@ -130,9 +123,8 @@ object api {
       * @returns CustomHttpPattern
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): CustomHttpPattern = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): CustomHttpPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CustomHttpPattern]
     
     /**
       * Creates a plain object from a CustomHttpPattern message. Also converts values to other types if specified.
@@ -141,12 +133,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.toObject")
-    @js.native
-    def toObject(message: CustomHttpPattern): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.toObject")
-    @js.native
-    def toObject(message: CustomHttpPattern, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: CustomHttpPattern): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: CustomHttpPattern, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a CustomHttpPattern message.
@@ -154,9 +144,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.CustomHttpPattern.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -167,31 +156,43 @@ object api {
   object FieldBehavior extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FieldBehavior with Double] = js.native
+    def apply(value: Double): js.UndefOr[FieldBehavior & Double] = js.native
     
     @js.native
-    sealed trait FIELD_BEHAVIOR_UNSPECIFIED extends FieldBehavior
-    /* 0 */ val FIELD_BEHAVIOR_UNSPECIFIED: typings.dialogflow.mod.google.api.FieldBehavior.FIELD_BEHAVIOR_UNSPECIFIED with Double = js.native
+    sealed trait FIELD_BEHAVIOR_UNSPECIFIED
+      extends StObject
+         with FieldBehavior
+    /* 0 */ val FIELD_BEHAVIOR_UNSPECIFIED: typings.dialogflow.mod.google.api.FieldBehavior.FIELD_BEHAVIOR_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait IMMUTABLE extends FieldBehavior
-    /* 5 */ val IMMUTABLE: typings.dialogflow.mod.google.api.FieldBehavior.IMMUTABLE with Double = js.native
+    sealed trait IMMUTABLE
+      extends StObject
+         with FieldBehavior
+    /* 5 */ val IMMUTABLE: typings.dialogflow.mod.google.api.FieldBehavior.IMMUTABLE & Double = js.native
     
     @js.native
-    sealed trait INPUT_ONLY extends FieldBehavior
-    /* 4 */ val INPUT_ONLY: typings.dialogflow.mod.google.api.FieldBehavior.INPUT_ONLY with Double = js.native
+    sealed trait INPUT_ONLY
+      extends StObject
+         with FieldBehavior
+    /* 4 */ val INPUT_ONLY: typings.dialogflow.mod.google.api.FieldBehavior.INPUT_ONLY & Double = js.native
     
     @js.native
-    sealed trait OPTIONAL extends FieldBehavior
-    /* 1 */ val OPTIONAL: typings.dialogflow.mod.google.api.FieldBehavior.OPTIONAL with Double = js.native
+    sealed trait OPTIONAL
+      extends StObject
+         with FieldBehavior
+    /* 1 */ val OPTIONAL: typings.dialogflow.mod.google.api.FieldBehavior.OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait OUTPUT_ONLY extends FieldBehavior
-    /* 3 */ val OUTPUT_ONLY: typings.dialogflow.mod.google.api.FieldBehavior.OUTPUT_ONLY with Double = js.native
+    sealed trait OUTPUT_ONLY
+      extends StObject
+         with FieldBehavior
+    /* 3 */ val OUTPUT_ONLY: typings.dialogflow.mod.google.api.FieldBehavior.OUTPUT_ONLY & Double = js.native
     
     @js.native
-    sealed trait REQUIRED extends FieldBehavior
-    /* 2 */ val REQUIRED: typings.dialogflow.mod.google.api.FieldBehavior.REQUIRED with Double = js.native
+    sealed trait REQUIRED
+      extends StObject
+         with FieldBehavior
+    /* 2 */ val REQUIRED: typings.dialogflow.mod.google.api.FieldBehavior.REQUIRED & Double = js.native
   }
   
   /** Represents a Http. */
@@ -201,7 +202,9 @@ object api {
     * Constructs a new Http.
     * @param [properties] Properties to set
     */
-  class Http () extends IHttp {
+  class Http ()
+    extends StObject
+       with IHttp {
     def this(properties: IHttp) = this()
     
     /** Http fullyDecodeReservedExpansion. */
@@ -220,18 +223,20 @@ object api {
   }
   object Http {
     
+    @JSImport("dialogflow/protos/protos", "google.api.Http")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Http instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Http instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.create")
-    @js.native
-    def create(): Http = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.create")
-    @js.native
-    def create(properties: IHttp): Http = js.native
+    @scala.inline
+    def create(): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Http]
+    @scala.inline
+    def create(properties: IHttp): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Http]
     
     /**
       * Decodes a Http message from the specified reader or buffer.
@@ -242,18 +247,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decode")
-    @js.native
-    def decode(reader: Reader): Http = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Http = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decode")
-    @js.native
-    def decode(reader: Uint8Array): Http = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Http = js.native
+    @scala.inline
+    def decode(reader: Reader): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Http]
+    @scala.inline
+    def decode(reader: Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Http = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Http]
     
     /**
       * Decodes a Http message from the specified reader or buffer, length delimited.
@@ -263,12 +264,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Http = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Http = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Http]
     
     /**
       * Encodes the specified Http message. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -277,12 +276,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.encode")
-    @js.native
-    def encode(message: IHttp): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.encode")
-    @js.native
-    def encode(message: IHttp, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IHttp): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IHttp, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Http message, length delimited. Does not implicitly {@link google.api.Http.verify|verify} messages.
@@ -291,12 +288,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttp): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttp, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IHttp): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IHttp, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Http message from a plain object. Also converts values to their respective internal types.
@@ -304,9 +299,8 @@ object api {
       * @returns Http
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Http = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Http = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Http]
     
     /**
       * Creates a plain object from a Http message. Also converts values to other types if specified.
@@ -315,12 +309,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.toObject")
-    @js.native
-    def toObject(message: Http): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.Http.toObject")
-    @js.native
-    def toObject(message: Http, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Http): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Http, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Http message.
@@ -328,9 +320,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.Http.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a HttpRule. */
@@ -340,7 +331,9 @@ object api {
     * Constructs a new HttpRule.
     * @param [properties] Properties to set
     */
-  class HttpRule () extends IHttpRule {
+  class HttpRule ()
+    extends StObject
+       with IHttpRule {
     def this(properties: IHttpRule) = this()
     
     /** HttpRule additionalBindings. */
@@ -390,18 +383,20 @@ object api {
   }
   object HttpRule {
     
+    @JSImport("dialogflow/protos/protos", "google.api.HttpRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new HttpRule instance using the specified properties.
       * @param [properties] Properties to set
       * @returns HttpRule instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.create")
-    @js.native
-    def create(): HttpRule = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.create")
-    @js.native
-    def create(properties: IHttpRule): HttpRule = js.native
+    @scala.inline
+    def create(): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[HttpRule]
+    @scala.inline
+    def create(properties: IHttpRule): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
     /**
       * Decodes a HttpRule message from the specified reader or buffer.
@@ -412,18 +407,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Reader): HttpRule = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): HttpRule = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Uint8Array): HttpRule = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): HttpRule = js.native
+    @scala.inline
+    def decode(reader: Reader): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
+    @scala.inline
+    def decode(reader: Reader, length: Double): HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HttpRule]
+    @scala.inline
+    def decode(reader: Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): HttpRule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[HttpRule]
     
     /**
       * Decodes a HttpRule message from the specified reader or buffer, length delimited.
@@ -433,12 +424,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): HttpRule = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): HttpRule = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
     /**
       * Encodes the specified HttpRule message. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -447,12 +436,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.encode")
-    @js.native
-    def encode(message: IHttpRule): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.encode")
-    @js.native
-    def encode(message: IHttpRule, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IHttpRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IHttpRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified HttpRule message, length delimited. Does not implicitly {@link google.api.HttpRule.verify|verify} messages.
@@ -461,12 +448,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttpRule): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IHttpRule, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IHttpRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IHttpRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a HttpRule message from a plain object. Also converts values to their respective internal types.
@@ -474,9 +459,8 @@ object api {
       * @returns HttpRule
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): HttpRule = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): HttpRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[HttpRule]
     
     /**
       * Creates a plain object from a HttpRule message. Also converts values to other types if specified.
@@ -485,12 +469,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.toObject")
-    @js.native
-    def toObject(message: HttpRule): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.toObject")
-    @js.native
-    def toObject(message: HttpRule, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: HttpRule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: HttpRule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a HttpRule message.
@@ -498,9 +480,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.HttpRule.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceDescriptor. */
@@ -510,7 +491,9 @@ object api {
     * Constructs a new ResourceDescriptor.
     * @param [properties] Properties to set
     */
-  class ResourceDescriptor () extends IResourceDescriptor {
+  class ResourceDescriptor ()
+    extends StObject
+       with IResourceDescriptor {
     def this(properties: IResourceDescriptor) = this()
     
     /** ResourceDescriptor history. */
@@ -545,6 +528,10 @@ object api {
   }
   object ResourceDescriptor {
     
+    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @js.native
     sealed trait History extends StObject
     /** History enum. */
@@ -553,22 +540,25 @@ object api {
     object History extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.dialogflow.mod.google.api.ResourceDescriptor.History with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.dialogflow.mod.google.api.ResourceDescriptor.History & Double] = js.native
       
       @js.native
       sealed trait FUTURE_MULTI_PATTERN
-        extends typings.dialogflow.mod.google.api.ResourceDescriptor.History
-      /* 2 */ val FUTURE_MULTI_PATTERN: typings.dialogflow.mod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN with Double = js.native
+        extends StObject
+           with typings.dialogflow.mod.google.api.ResourceDescriptor.History
+      /* 2 */ val FUTURE_MULTI_PATTERN: typings.dialogflow.mod.google.api.ResourceDescriptor.History.FUTURE_MULTI_PATTERN & Double = js.native
       
       @js.native
       sealed trait HISTORY_UNSPECIFIED
-        extends typings.dialogflow.mod.google.api.ResourceDescriptor.History
-      /* 0 */ val HISTORY_UNSPECIFIED: typings.dialogflow.mod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED with Double = js.native
+        extends StObject
+           with typings.dialogflow.mod.google.api.ResourceDescriptor.History
+      /* 0 */ val HISTORY_UNSPECIFIED: typings.dialogflow.mod.google.api.ResourceDescriptor.History.HISTORY_UNSPECIFIED & Double = js.native
       
       @js.native
       sealed trait ORIGINALLY_SINGLE_PATTERN
-        extends typings.dialogflow.mod.google.api.ResourceDescriptor.History
-      /* 1 */ val ORIGINALLY_SINGLE_PATTERN: typings.dialogflow.mod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN with Double = js.native
+        extends StObject
+           with typings.dialogflow.mod.google.api.ResourceDescriptor.History
+      /* 1 */ val ORIGINALLY_SINGLE_PATTERN: typings.dialogflow.mod.google.api.ResourceDescriptor.History.ORIGINALLY_SINGLE_PATTERN & Double = js.native
     }
     
     /**
@@ -577,12 +567,10 @@ object api {
       * @returns ResourceDescriptor instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.create")
-    @js.native
-    def create(): ResourceDescriptor = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.create")
-    @js.native
-    def create(properties: IResourceDescriptor): ResourceDescriptor = js.native
+    @scala.inline
+    def create(): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceDescriptor]
+    @scala.inline
+    def create(properties: IResourceDescriptor): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer.
@@ -593,18 +581,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Reader): ResourceDescriptor = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): ResourceDescriptor = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Uint8Array): ResourceDescriptor = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): ResourceDescriptor = js.native
+    @scala.inline
+    def decode(reader: Reader): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Reader, length: Double): ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): ResourceDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceDescriptor]
     
     /**
       * Decodes a ResourceDescriptor message from the specified reader or buffer, length delimited.
@@ -614,12 +598,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): ResourceDescriptor = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): ResourceDescriptor = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
     /**
       * Encodes the specified ResourceDescriptor message. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -628,12 +610,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.encode")
-    @js.native
-    def encode(message: IResourceDescriptor): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.encode")
-    @js.native
-    def encode(message: IResourceDescriptor, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IResourceDescriptor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IResourceDescriptor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ResourceDescriptor message, length delimited. Does not implicitly {@link google.api.ResourceDescriptor.verify|verify} messages.
@@ -642,12 +622,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceDescriptor): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceDescriptor, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IResourceDescriptor): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IResourceDescriptor, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ResourceDescriptor message from a plain object. Also converts values to their respective internal types.
@@ -655,9 +633,8 @@ object api {
       * @returns ResourceDescriptor
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): ResourceDescriptor = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): ResourceDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceDescriptor]
     
     /**
       * Creates a plain object from a ResourceDescriptor message. Also converts values to other types if specified.
@@ -666,12 +643,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.toObject")
-    @js.native
-    def toObject(message: ResourceDescriptor): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.toObject")
-    @js.native
-    def toObject(message: ResourceDescriptor, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: ResourceDescriptor): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: ResourceDescriptor, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ResourceDescriptor message.
@@ -679,9 +654,8 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceDescriptor.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Represents a ResourceReference. */
@@ -691,7 +665,9 @@ object api {
     * Constructs a new ResourceReference.
     * @param [properties] Properties to set
     */
-  class ResourceReference () extends IResourceReference {
+  class ResourceReference ()
+    extends StObject
+       with IResourceReference {
     def this(properties: IResourceReference) = this()
     
     /** ResourceReference childType. */
@@ -710,18 +686,20 @@ object api {
   }
   object ResourceReference {
     
+    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new ResourceReference instance using the specified properties.
       * @param [properties] Properties to set
       * @returns ResourceReference instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.create")
-    @js.native
-    def create(): ResourceReference = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.create")
-    @js.native
-    def create(properties: IResourceReference): ResourceReference = js.native
+    @scala.inline
+    def create(): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ResourceReference]
+    @scala.inline
+    def create(properties: IResourceReference): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
     /**
       * Decodes a ResourceReference message from the specified reader or buffer.
@@ -732,18 +710,14 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Reader): ResourceReference = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): ResourceReference = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Uint8Array): ResourceReference = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): ResourceReference = js.native
+    @scala.inline
+    def decode(reader: Reader): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
+    @scala.inline
+    def decode(reader: Reader, length: Double): ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceReference]
+    @scala.inline
+    def decode(reader: Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): ResourceReference = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ResourceReference]
     
     /**
       * Decodes a ResourceReference message from the specified reader or buffer, length delimited.
@@ -753,12 +727,10 @@ object api {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): ResourceReference = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): ResourceReference = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
     /**
       * Encodes the specified ResourceReference message. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -767,12 +739,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.encode")
-    @js.native
-    def encode(message: IResourceReference): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.encode")
-    @js.native
-    def encode(message: IResourceReference, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IResourceReference): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IResourceReference, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified ResourceReference message, length delimited. Does not implicitly {@link google.api.ResourceReference.verify|verify} messages.
@@ -781,12 +751,10 @@ object api {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceReference): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IResourceReference, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IResourceReference): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IResourceReference, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a ResourceReference message from a plain object. Also converts values to their respective internal types.
@@ -794,9 +762,8 @@ object api {
       * @returns ResourceReference
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): ResourceReference = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): ResourceReference = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ResourceReference]
     
     /**
       * Creates a plain object from a ResourceReference message. Also converts values to other types if specified.
@@ -805,12 +772,10 @@ object api {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.toObject")
-    @js.native
-    def toObject(message: ResourceReference): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.toObject")
-    @js.native
-    def toObject(message: ResourceReference, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: ResourceReference): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: ResourceReference, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a ResourceReference message.
@@ -818,20 +783,18 @@ object api {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.api.ResourceReference.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Properties of a CustomHttpPattern. */
-  @js.native
   trait ICustomHttpPattern extends StObject {
     
     /** CustomHttpPattern kind */
-    var kind: js.UndefOr[String | Null] = js.native
+    var kind: js.UndefOr[String | Null] = js.undefined
     
     /** CustomHttpPattern path */
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
   }
   object ICustomHttpPattern {
     
@@ -865,14 +828,13 @@ object api {
   }
   
   /** Properties of a Http. */
-  @js.native
   trait IHttp extends StObject {
     
     /** Http fullyDecodeReservedExpansion */
-    var fullyDecodeReservedExpansion: js.UndefOr[Boolean | Null] = js.native
+    var fullyDecodeReservedExpansion: js.UndefOr[Boolean | Null] = js.undefined
     
     /** Http rules */
-    var rules: js.UndefOr[js.Array[IHttpRule] | Null] = js.native
+    var rules: js.UndefOr[js.Array[IHttpRule] | Null] = js.undefined
   }
   object IHttp {
     
@@ -909,38 +871,37 @@ object api {
   }
   
   /** Properties of a HttpRule. */
-  @js.native
   trait IHttpRule extends StObject {
     
     /** HttpRule additionalBindings */
-    var additionalBindings: js.UndefOr[js.Array[IHttpRule] | Null] = js.native
+    var additionalBindings: js.UndefOr[js.Array[IHttpRule] | Null] = js.undefined
     
     /** HttpRule body */
-    var body: js.UndefOr[String | Null] = js.native
+    var body: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule custom */
-    var custom: js.UndefOr[ICustomHttpPattern | Null] = js.native
+    var custom: js.UndefOr[ICustomHttpPattern | Null] = js.undefined
     
     /** HttpRule delete */
-    var delete: js.UndefOr[String | Null] = js.native
+    var delete: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule get */
-    var get: js.UndefOr[String | Null] = js.native
+    var get: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule patch */
-    var patch: js.UndefOr[String | Null] = js.native
+    var patch: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule post */
-    var post: js.UndefOr[String | Null] = js.native
+    var post: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule put */
-    var put: js.UndefOr[String | Null] = js.native
+    var put: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule responseBody */
-    var responseBody: js.UndefOr[String | Null] = js.native
+    var responseBody: js.UndefOr[String | Null] = js.undefined
     
     /** HttpRule selector */
-    var selector: js.UndefOr[String | Null] = js.native
+    var selector: js.UndefOr[String | Null] = js.undefined
   }
   object IHttpRule {
     
@@ -1049,28 +1010,27 @@ object api {
   }
   
   /** Properties of a ResourceDescriptor. */
-  @js.native
   trait IResourceDescriptor extends StObject {
     
     /** ResourceDescriptor history */
     var history: js.UndefOr[
         History | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.api.ResourceDescriptor.History * / any */ String) | Null
-      ] = js.native
+      ] = js.undefined
     
     /** ResourceDescriptor nameField */
-    var nameField: js.UndefOr[String | Null] = js.native
+    var nameField: js.UndefOr[String | Null] = js.undefined
     
     /** ResourceDescriptor pattern */
-    var pattern: js.UndefOr[js.Array[String] | Null] = js.native
+    var pattern: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** ResourceDescriptor plural */
-    var plural: js.UndefOr[String | Null] = js.native
+    var plural: js.UndefOr[String | Null] = js.undefined
     
     /** ResourceDescriptor singular */
-    var singular: js.UndefOr[String | Null] = js.native
+    var singular: js.UndefOr[String | Null] = js.undefined
     
     /** ResourceDescriptor type */
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
   }
   object IResourceDescriptor {
     
@@ -1145,14 +1105,13 @@ object api {
   }
   
   /** Properties of a ResourceReference. */
-  @js.native
   trait IResourceReference extends StObject {
     
     /** ResourceReference childType */
-    var childType: js.UndefOr[String | Null] = js.native
+    var childType: js.UndefOr[String | Null] = js.undefined
     
     /** ResourceReference type */
-    var `type`: js.UndefOr[String | Null] = js.native
+    var `type`: js.UndefOr[String | Null] = js.undefined
   }
   object IResourceReference {
     

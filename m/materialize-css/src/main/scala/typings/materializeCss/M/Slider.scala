@@ -3,47 +3,45 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SliderOptions> * / any */ @js.native
-trait Slider extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<SliderOptions> * / any */ trait Slider extends StObject {
   
   /**
     * Index of current slide
     */
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
   /**
     * ID of the dropdown element
     */
-  var el: Element = js.native
+  var el: Element
   
   /**
     * Move to next slider
     */
-  def next(): Unit = js.native
+  def next(): Unit
   
   /**
     * ID of the dropdown element
     */
-  var options: SliderOptions = js.native
+  var options: SliderOptions
   
   /**
     * Pause slider autoslide
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /**
     * Move to prev slider
     */
-  def prev(): Unit = js.native
+  def prev(): Unit
   
   /**
     * Start slider autoslide
     */
-  def start(): Unit = js.native
+  def start(): Unit
 }
 object Slider {
   

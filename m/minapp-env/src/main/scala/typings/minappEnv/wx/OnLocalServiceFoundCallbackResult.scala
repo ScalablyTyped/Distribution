@@ -2,23 +2,21 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnLocalServiceFoundCallbackResult extends StObject {
   
   /** 服务的 ip 地址 */
-  var ip: String = js.native
+  var ip: String
   
   /** 服务的端口 */
-  var port: Double = js.native
+  var port: Double
   
   /** 服务的名称 */
-  var serviceName: String = js.native
+  var serviceName: String
   
   /** 服务的类型 */
-  var serviceType: String = js.native
+  var serviceType: String
 }
 object OnLocalServiceFoundCallbackResult {
   

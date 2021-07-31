@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePosInventory extends StandardParameters {
+trait ParamsResourcePosInventory
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Flag to simulate a request like in a live environment. If set to true,
     * dry-run mode checks the validity of the request and returns errors (if
     * any).
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the POS or inventory data provider.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPosInventoryRequest] = js.native
+  var requestBody: js.UndefOr[SchemaPosInventoryRequest] = js.undefined
   
   /**
     * The ID of the target merchant.
     */
-  var targetMerchantId: js.UndefOr[String] = js.native
+  var targetMerchantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePosInventory {
   

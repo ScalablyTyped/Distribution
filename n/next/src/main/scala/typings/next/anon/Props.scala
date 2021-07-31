@@ -3,15 +3,15 @@ package typings.next.anon
 import typings.next.mod.GetStaticPropsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Props[P] extends GetStaticPropsResult[P] {
+trait Props[P]
+  extends StObject
+     with GetStaticPropsResult[P] {
   
-  var props: P = js.native
+  var props: P
   
-  var revalidate: js.UndefOr[Double | Boolean] = js.native
+  var revalidate: js.UndefOr[Double | Boolean] = js.undefined
 }
 object Props {
   
@@ -22,7 +22,7 @@ object Props {
   }
   
   @scala.inline
-  implicit class PropsMutableBuilder[Self <: Props[_], P] (val x: Self with Props[P]) extends AnyVal {
+  implicit class PropsMutableBuilder[Self <: Props[?], P] (val x: Self & Props[P]) extends AnyVal {
     
     @scala.inline
     def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])

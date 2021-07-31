@@ -2,36 +2,34 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchyGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the hierarchy group.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * Information about the levels in the hierarchy group.
     */
-  var HierarchyPath: js.UndefOr[typings.awsSdk.connectMod.HierarchyPath] = js.native
+  var HierarchyPath: js.UndefOr[typings.awsSdk.connectMod.HierarchyPath] = js.undefined
   
   /**
     * The identifier of the hierarchy group.
     */
-  var Id: js.UndefOr[HierarchyGroupId] = js.native
+  var Id: js.UndefOr[HierarchyGroupId] = js.undefined
   
   /**
     * The identifier of the level in the hierarchy group.
     */
-  var LevelId: js.UndefOr[HierarchyLevelId] = js.native
+  var LevelId: js.UndefOr[HierarchyLevelId] = js.undefined
   
   /**
     * The name of the hierarchy group.
     */
-  var Name: js.UndefOr[HierarchyGroupName] = js.native
+  var Name: js.UndefOr[HierarchyGroupName] = js.undefined
 }
 object HierarchyGroup {
   

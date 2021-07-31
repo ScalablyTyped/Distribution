@@ -2,13 +2,11 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposReplaceAllTopicsResponseData extends StObject {
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
 }
 object ReposReplaceAllTopicsResponseData {
   

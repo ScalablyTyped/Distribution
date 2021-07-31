@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.CallExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.CallExpression]
+     with Expression {
   
-  var arguments: js.Array[Expression] = js.native
+  var arguments: js.Array[Expression]
   
-  var base: Expression = js.native
+  var base: Expression
 }
 object CallExpression {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[Expression],
-    base: Expression,
-    `type`: typings.luaparse.luaparseStrings.CallExpression
-  ): CallExpression = {
+  def apply(arguments: js.Array[Expression], base: Expression): CallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CallExpression")
     __obj.asInstanceOf[CallExpression]
   }
   

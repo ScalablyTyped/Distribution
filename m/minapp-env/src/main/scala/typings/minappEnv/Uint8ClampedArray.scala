@@ -3,7 +3,6 @@ package typings.minappEnv
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If the requested number of bytes could not be allocated an exception is raised.
   */
 @js.native
-trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
+trait Uint8ClampedArray
+  extends StObject
+     with /* index */ NumberDictionary[Double] {
   
   /**
     * The size in bytes of each element in the array.
@@ -75,9 +76,9 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * length+end.
     */
   def fill(value: Double): this.type = js.native
-  def fill(value: Double, start: js.UndefOr[scala.Nothing], end: Double): this.type = js.native
   def fill(value: Double, start: Double): this.type = js.native
   def fill(value: Double, start: Double, end: Double): this.type = js.native
+  def fill(value: Double, start: Unit, end: Double): this.type = js.native
   
   /**
     * Returns the elements of an array that meet the condition specified in a callback function.
@@ -86,9 +87,9 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * @param thisArg An object to which the this keyword can refer in the callbackfn function.
     * If thisArg is omitted, undefined is used as the this value.
     */
-  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _]): Uint8ClampedArray = js.native
+  def filter(callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any]): Uint8ClampedArray = js.native
   def filter(
-    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, _],
+    callbackfn: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, js.Any],
     thisArg: js.Any
   ): Uint8ClampedArray = js.native
   
@@ -311,9 +312,9 @@ trait Uint8ClampedArray extends /* index */ NumberDictionary[Double] {
     * @param end The end of the specified portion of the array.
     */
   def slice(): Uint8ClampedArray = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): Uint8ClampedArray = js.native
   def slice(start: Double): Uint8ClampedArray = js.native
   def slice(start: Double, end: Double): Uint8ClampedArray = js.native
+  def slice(start: Unit, end: Double): Uint8ClampedArray = js.native
   
   /**
     * Determines whether the specified callback function returns true for any element of an array.

@@ -3,39 +3,37 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ConnectionProfileFilter class defines a set of properties that are used to improve the relevance of FindConnectionProfilesAsync results. */
-@js.native
 trait ConnectionProfileFilter extends StObject {
   
   /** Gets or sets whether background data usage is restricted by this connection profile filter. */
-  var isBackgroundDataUsageRestricted: Boolean = js.native
+  var isBackgroundDataUsageRestricted: Boolean
   
   /** Indicates if connection profiles that represent currently established connections are included in query results. */
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
   /** Gets or sets whether the data limit has been exceeded under the current connection profile filter. */
-  var isOverDataLimit: Boolean = js.native
+  var isOverDataLimit: Boolean
   
   /** Gets or sets whether roaming is active in the connection profile filter. */
-  var isRoaming: Boolean = js.native
+  var isRoaming: Boolean
   
   /** Indicates if connection profiles that represent WLAN (WiFi) connections are included in query results. */
-  var isWlanConnectionProfile: Boolean = js.native
+  var isWlanConnectionProfile: Boolean
   
   /** Indicates if connection profiles that represent WWAN (mobile) connections are included in query results. */
-  var isWwanConnectionProfile: Boolean = js.native
+  var isWwanConnectionProfile: Boolean
   
   /** Defines a specific NetworkCostType value to query for. */
-  var networkCostType: NetworkCostType = js.native
+  var networkCostType: NetworkCostType
   
   /** Gets available data as raw data. */
-  var rawData: IBuffer = js.native
+  var rawData: IBuffer
   
   /** Indicates a specific network operator ID to query for. */
-  var serviceProviderGuid: String = js.native
+  var serviceProviderGuid: String
 }
 object ConnectionProfileFilter {
   

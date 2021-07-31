@@ -2,19 +2,19 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CylinderOptions extends ShapeOptions {
+trait CylinderOptions
+  extends StObject
+     with ShapeOptions {
   
   /** @default 1 */
-  val diameter: js.UndefOr[Double] = js.native
+  val diameter: js.UndefOr[Double] = js.undefined
   
-  val frontFace: js.UndefOr[Boolean | String] = js.native
+  val frontFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default 1 */
-  val length: js.UndefOr[Double] = js.native
+  val length: js.UndefOr[Double] = js.undefined
 }
 object CylinderOptions {
   

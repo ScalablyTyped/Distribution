@@ -2,32 +2,30 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageNumber extends StObject {
   
-  var Alignment: WdPageNumberAlignment = js.native
+  var Alignment: WdPageNumberAlignment
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
   @JSName("Word.PageNumber_typekey")
-  var WordDotPageNumber_typekey: PageNumber = js.native
+  var WordDotPageNumber_typekey: PageNumber
 }
 object PageNumber {
   

@@ -2,13 +2,13 @@ package typings.preloadjs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.PreloadJS")
 @js.native
 class PreloadJS ()
-  extends typings.preloadjs.createjs.PreloadJS
+  extends StObject
+     with typings.preloadjs.createjs.PreloadJS
 /* static members */
 object PreloadJS {
   

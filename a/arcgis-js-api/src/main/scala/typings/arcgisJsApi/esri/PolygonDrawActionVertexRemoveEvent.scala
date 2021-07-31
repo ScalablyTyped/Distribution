@@ -3,21 +3,19 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`vertex-remove`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolygonDrawActionVertexRemoveEvent extends StObject {
   
-  var defaultPrevented: Boolean = js.native
+  var defaultPrevented: Boolean
   
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
-  var `type`: `vertex-remove` = js.native
+  var `type`: `vertex-remove`
   
-  var vertexIndex: Double = js.native
+  var vertexIndex: Double
   
-  var vertices: js.Array[js.Array[Double]] = js.native
+  var vertices: js.Array[js.Array[Double]]
 }
 object PolygonDrawActionVertexRemoveEvent {
   
@@ -25,12 +23,11 @@ object PolygonDrawActionVertexRemoveEvent {
   def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
-    `type`: `vertex-remove`,
     vertexIndex: Double,
     vertices: js.Array[js.Array[Double]]
   ): PolygonDrawActionVertexRemoveEvent = {
     val __obj = js.Dynamic.literal(defaultPrevented = defaultPrevented.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], vertexIndex = vertexIndex.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vertex-remove")
     __obj.asInstanceOf[PolygonDrawActionVertexRemoveEvent]
   }
   

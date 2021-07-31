@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminalExitStatus extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TerminalExitStatus extends StObject {
     * - `undefined`: the user forcibly closed the terminal or a custom execution exited
     *   without providing an exit code.
     */
-  val code: js.UndefOr[Double] = js.native
+  val code: js.UndefOr[Double] = js.undefined
 }
 object TerminalExitStatus {
   

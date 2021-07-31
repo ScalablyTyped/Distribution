@@ -3,7 +3,6 @@ package typings.postmark
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -34,13 +33,21 @@ object errorsMod {
   
   @JSImport("postmark/dist/client/models/client/Errors", "PostmarkError")
   @js.native
-  class PostmarkError protected () extends Error {
+  class PostmarkError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: String, code: Double) = this()
-    def this(message: String, code: js.UndefOr[scala.Nothing], statusCode: Double) = this()
     def this(message: String, code: Double, statusCode: Double) = this()
+    def this(message: String, code: Unit, statusCode: Double) = this()
     
     var code: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     /* protected */ def setUpStackTrace(): Unit = js.native
     

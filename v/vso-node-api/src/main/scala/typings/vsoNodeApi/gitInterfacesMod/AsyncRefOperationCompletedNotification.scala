@@ -2,13 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncRefOperationCompletedNotification extends AsyncGitOperationNotification {
+trait AsyncRefOperationCompletedNotification
+  extends StObject
+     with AsyncGitOperationNotification {
   
-  var newRefName: String = js.native
+  var newRefName: String
 }
 object AsyncRefOperationCompletedNotification {
   

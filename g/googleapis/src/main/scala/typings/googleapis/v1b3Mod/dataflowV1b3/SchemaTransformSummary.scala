@@ -2,44 +2,42 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of the type, names/ids, and input/outputs for a transform.
   */
-@js.native
 trait SchemaTransformSummary extends StObject {
   
   /**
     * Transform-specific display data.
     */
-  var displayData: js.UndefOr[js.Array[SchemaDisplayData]] = js.native
+  var displayData: js.UndefOr[js.Array[SchemaDisplayData]] = js.undefined
   
   /**
     * SDK generated id of this transform instance.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * User names for all collection inputs to this transform.
     */
-  var inputCollectionName: js.UndefOr[js.Array[String]] = js.native
+  var inputCollectionName: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Type of transform.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * User provided name for this transform instance.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User  names for all collection outputs to this transform.
     */
-  var outputCollectionName: js.UndefOr[js.Array[String]] = js.native
+  var outputCollectionName: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTransformSummary {
   

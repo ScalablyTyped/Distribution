@@ -22,33 +22,34 @@ import typings.compassVerticalRhythm.compassVerticalRhythmStrings.vmin
 import typings.compassVerticalRhythm.compassVerticalRhythmStrings.vw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): VerticalRhythm = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[VerticalRhythm]
+  
   @JSImport("compass-vertical-rhythm", JSImport.Namespace)
   @js.native
-  def apply(options: Options): VerticalRhythm = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var baseFontSize: js.UndefOr[String] = js.native
+    var baseFontSize: js.UndefOr[String] = js.undefined
     
-    var baseLineHeight: js.UndefOr[Double | String] = js.native
+    var baseLineHeight: js.UndefOr[Double | String] = js.undefined
     
     var defaultRhythmBorderStyle: js.UndefOr[
         solid | none | hidden | dashed | dotted | double | groove | ridge | inset | outset
-      ] = js.native
+      ] = js.undefined
     
-    var defaultRhythmBorderWidth: js.UndefOr[String] = js.native
+    var defaultRhythmBorderWidth: js.UndefOr[String] = js.undefined
     
-    var minLinePadding: js.UndefOr[String] = js.native
+    var minLinePadding: js.UndefOr[String] = js.undefined
     
-    var rhythmUnit: js.UndefOr[Percentsign | em | ex | ch | px | rem | vw | vh | vmin] = js.native
+    var rhythmUnit: js.UndefOr[Percentsign | em | ex | ch | px | rem | vw | vh | vmin] = js.undefined
     
-    var roundToNearestHalfLine: js.UndefOr[Boolean] = js.native
+    var roundToNearestHalfLine: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -109,10 +110,10 @@ object mod {
   trait VerticalRhythm extends StObject {
     
     def adjustFontSizeTo(toSize: String): VerticalRhythmStyles = js.native
-    def adjustFontSizeTo(toSize: String, lines: js.UndefOr[scala.Nothing], fromSize: String): VerticalRhythmStyles = js.native
     def adjustFontSizeTo(toSize: String, lines: Double): VerticalRhythmStyles = js.native
     def adjustFontSizeTo(toSize: String, lines: Double, fromSize: String): VerticalRhythmStyles = js.native
     def adjustFontSizeTo(toSize: String, lines: Null, fromSize: String): VerticalRhythmStyles = js.native
+    def adjustFontSizeTo(toSize: String, lines: Unit, fromSize: String): VerticalRhythmStyles = js.native
     @JSName("adjustFontSizeTo")
     def adjustFontSizeTo_auto(toSize: String, lines: auto): VerticalRhythmStyles = js.native
     @JSName("adjustFontSizeTo")
@@ -123,21 +124,20 @@ object mod {
     def linesForFontSize(fontSize: String): Double = js.native
     
     def rhythm(): Double = js.native
-    def rhythm(lines: js.UndefOr[scala.Nothing], fontSize: js.UndefOr[scala.Nothing], offset: Double): Double = js.native
-    def rhythm(lines: js.UndefOr[scala.Nothing], fontSize: String): Double = js.native
-    def rhythm(lines: js.UndefOr[scala.Nothing], fontSize: String, offset: Double): Double = js.native
     def rhythm(lines: Double): Double = js.native
-    def rhythm(lines: Double, fontSize: js.UndefOr[scala.Nothing], offset: Double): Double = js.native
     def rhythm(lines: Double, fontSize: String): Double = js.native
     def rhythm(lines: Double, fontSize: String, offset: Double): Double = js.native
+    def rhythm(lines: Double, fontSize: Unit, offset: Double): Double = js.native
+    def rhythm(lines: Unit, fontSize: String): Double = js.native
+    def rhythm(lines: Unit, fontSize: String, offset: Double): Double = js.native
+    def rhythm(lines: Unit, fontSize: Unit, offset: Double): Double = js.native
   }
   
-  @js.native
   trait VerticalRhythmStyles extends StObject {
     
-    var fontSize: String = js.native
+    var fontSize: String
     
-    var lineHeight: String = js.native
+    var lineHeight: String
   }
   object VerticalRhythmStyles {
     

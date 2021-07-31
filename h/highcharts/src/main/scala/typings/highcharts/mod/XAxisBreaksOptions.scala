@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XAxisBreaksOptions extends StObject {
   
   /**
@@ -14,23 +12,23 @@ trait XAxisBreaksOptions extends StObject {
     * given in axis units, so for instance on a `datetime` axis, a break size
     * of 3600000 would indicate the equivalent of an hour.
     */
-  var breakSize: js.UndefOr[Double] = js.native
+  var breakSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The point where the break starts.
     */
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Defines an interval after which the break
     * appears again. By default the breaks do not repeat.
     */
-  var repeat: js.UndefOr[Double] = js.native
+  var repeat: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The point where the break ends.
     */
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object XAxisBreaksOptions {
   

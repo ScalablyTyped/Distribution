@@ -2,7 +2,6 @@ package typings.heremaps.global.H.map
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.ViewModel")
 @js.native
 class ViewModel ()
-  extends typings.heremaps.H.map.ViewModel
+  extends StObject
+     with typings.heremaps.H.map.ViewModel
 object ViewModel {
   
   /**
@@ -26,11 +26,36 @@ object ViewModel {
   @JSGlobal("H.map.ViewModel.UpdateEvent")
   @js.native
   class UpdateEvent protected ()
-    extends typings.heremaps.H.map.ViewModel.UpdateEvent {
+    extends StObject
+       with typings.heremaps.H.map.ViewModel.UpdateEvent {
     /**
       * Constructor
       * @param requested {any}
       */
     def this(requested: js.Any) = this()
+    
+    /* CompleteClass */
+    var currentTarget: js.Any = js.native
+    
+    /* CompleteClass */
+    var defaultPrevented: Boolean = js.native
+    
+    /**
+      * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
+      */
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
+    
+    /**
+      * Stops propagation for current event.
+      */
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
+    
+    /* CompleteClass */
+    var target: js.Any = js.native
+    
+    /* CompleteClass */
+    var `type`: String = js.native
   }
 }

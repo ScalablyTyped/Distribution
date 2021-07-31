@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypes extends StObject {
   
-  def Clone(): IObjectTypes = js.native
+  def Clone(): IObjectTypes
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IObjectType = js.native
+  def Item(Index: Double): IObjectType
 }
 object IObjectTypes {
   

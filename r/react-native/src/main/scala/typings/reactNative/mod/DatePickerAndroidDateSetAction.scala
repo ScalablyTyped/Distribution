@@ -3,25 +3,25 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.dateSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatePickerAndroidDateSetAction extends DatePickerAndroidOpenReturn {
+trait DatePickerAndroidDateSetAction
+  extends StObject
+     with DatePickerAndroidOpenReturn {
   
-  var action: dateSetAction = js.native
+  var action: dateSetAction
   
-  var day: Double = js.native
+  var day: Double
   
-  var month: Double = js.native
+  var month: Double
   
-  var year: Double = js.native
+  var year: Double
 }
 object DatePickerAndroidDateSetAction {
   
   @scala.inline
-  def apply(action: dateSetAction, day: Double, month: Double, year: Double): DatePickerAndroidDateSetAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
+  def apply(day: Double, month: Double, year: Double): DatePickerAndroidDateSetAction = {
+    val __obj = js.Dynamic.literal(action = "dateSetAction", day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerAndroidDateSetAction]
   }
   

@@ -2,23 +2,23 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DbCollectionOptions extends CommonOptions {
+trait DbCollectionOptions
+  extends StObject
+     with CommonOptions {
   
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
-  var readConcern: js.UndefOr[ReadConcern] = js.native
+  var readConcern: js.UndefOr[ReadConcern] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object DbCollectionOptions {
   

@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.colorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressionsMod {
+  
+  @JSImport("ol/style/expressions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait ValueTypes extends StObject
@@ -16,80 +19,82 @@ object expressionsMod {
   object ValueTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ValueTypes with Double] = js.native
+    def apply(value: Double): js.UndefOr[ValueTypes & Double] = js.native
     
     @js.native
-    sealed trait ANY extends ValueTypes
-    /* 31 */ val ANY: typings.ol.expressionsMod.ValueTypes.ANY with Double = js.native
+    sealed trait ANY
+      extends StObject
+         with ValueTypes
+    /* 31 */ val ANY: typings.ol.expressionsMod.ValueTypes.ANY & Double = js.native
     
     @js.native
-    sealed trait BOOLEAN extends ValueTypes
-    /* 8 */ val BOOLEAN: typings.ol.expressionsMod.ValueTypes.BOOLEAN with Double = js.native
+    sealed trait BOOLEAN
+      extends StObject
+         with ValueTypes
+    /* 8 */ val BOOLEAN: typings.ol.expressionsMod.ValueTypes.BOOLEAN & Double = js.native
     
     @js.native
-    sealed trait COLOR extends ValueTypes
-    /* 4 */ val COLOR: typings.ol.expressionsMod.ValueTypes.COLOR with Double = js.native
+    sealed trait COLOR
+      extends StObject
+         with ValueTypes
+    /* 4 */ val COLOR: typings.ol.expressionsMod.ValueTypes.COLOR & Double = js.native
     
     @js.native
-    sealed trait NONE extends ValueTypes
-    /* 0 */ val NONE: typings.ol.expressionsMod.ValueTypes.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with ValueTypes
+    /* 0 */ val NONE: typings.ol.expressionsMod.ValueTypes.NONE & Double = js.native
     
     @js.native
-    sealed trait NUMBER extends ValueTypes
-    /* 1 */ val NUMBER: typings.ol.expressionsMod.ValueTypes.NUMBER with Double = js.native
+    sealed trait NUMBER
+      extends StObject
+         with ValueTypes
+    /* 1 */ val NUMBER: typings.ol.expressionsMod.ValueTypes.NUMBER & Double = js.native
     
     @js.native
-    sealed trait NUMBER_ARRAY extends ValueTypes
-    /* 16 */ val NUMBER_ARRAY: typings.ol.expressionsMod.ValueTypes.NUMBER_ARRAY with Double = js.native
+    sealed trait NUMBER_ARRAY
+      extends StObject
+         with ValueTypes
+    /* 16 */ val NUMBER_ARRAY: typings.ol.expressionsMod.ValueTypes.NUMBER_ARRAY & Double = js.native
     
     @js.native
-    sealed trait STRING extends ValueTypes
-    /* 2 */ val STRING: typings.ol.expressionsMod.ValueTypes.STRING with Double = js.native
+    sealed trait STRING
+      extends StObject
+         with ValueTypes
+    /* 2 */ val STRING: typings.ol.expressionsMod.ValueTypes.STRING & Double = js.native
   }
   
-  @JSImport("ol/style/expressions", "arrayToGlsl")
-  @js.native
-  def arrayToGlsl(array: js.Array[Double]): String = js.native
+  @scala.inline
+  def arrayToGlsl(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayToGlsl")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/style/expressions", "colorToGlsl")
-  @js.native
-  def colorToGlsl(color: String): String = js.native
-  @JSImport("ol/style/expressions", "colorToGlsl")
-  @js.native
-  def colorToGlsl(color: Color): String = js.native
+  @scala.inline
+  def colorToGlsl(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def colorToGlsl(color: Color): String = ^.asInstanceOf[js.Dynamic].applyDynamic("colorToGlsl")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/style/expressions", "expressionToGlsl")
-  @js.native
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue): String = js.native
-  @JSImport("ol/style/expressions", "expressionToGlsl")
-  @js.native
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: Double): String = js.native
-  @JSImport("ol/style/expressions", "expressionToGlsl")
-  @js.native
-  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: ValueTypes): String = js.native
+  @scala.inline
+  def expressionToGlsl(context: ParsingContext, value: ExpressionValue): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def expressionToGlsl(context: ParsingContext, value: ExpressionValue, typeHint: ValueTypes): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expressionToGlsl")(context.asInstanceOf[js.Any], value.asInstanceOf[js.Any], typeHint.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/style/expressions", "getStringNumberEquivalent")
-  @js.native
-  def getStringNumberEquivalent(context: ParsingContext, string: String): Double = js.native
+  @scala.inline
+  def getStringNumberEquivalent(context: ParsingContext, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringNumberEquivalent")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/style/expressions", "getValueType")
-  @js.native
-  def getValueType(value: ExpressionValue): ValueTypes | Double = js.native
+  @scala.inline
+  def getValueType(value: ExpressionValue): ValueTypes | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueType")(value.asInstanceOf[js.Any]).asInstanceOf[ValueTypes | Double]
   
-  @JSImport("ol/style/expressions", "isTypeUnique")
-  @js.native
-  def isTypeUnique(valueType: Double): Boolean = js.native
-  @JSImport("ol/style/expressions", "isTypeUnique")
-  @js.native
-  def isTypeUnique(valueType: ValueTypes): Boolean = js.native
+  @scala.inline
+  def isTypeUnique(valueType: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isTypeUnique(valueType: ValueTypes): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeUnique")(valueType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/style/expressions", "numberToGlsl")
-  @js.native
-  def numberToGlsl(v: Double): String = js.native
+  @scala.inline
+  def numberToGlsl(v: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToGlsl")(v.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/style/expressions", "stringToGlsl")
-  @js.native
-  def stringToGlsl(context: ParsingContext, string: String): String = js.native
+  @scala.inline
+  def stringToGlsl(context: ParsingContext, string: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToGlsl")(context.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ExpressionValue = js.Array[js.Any] | Color | String | Double | Boolean
   
@@ -102,16 +107,15 @@ object expressionsMod {
     def toGlsl(p0: ParsingContext, p1: js.Array[ExpressionValue], p2: ValueTypes): String = js.native
   }
   
-  @js.native
   trait ParsingContext extends StObject {
     
-    var attributes: js.Array[String] = js.native
+    var attributes: js.Array[String]
     
-    var inFragmentShader: js.UndefOr[Boolean] = js.native
+    var inFragmentShader: js.UndefOr[Boolean] = js.undefined
     
-    var stringLiteralsMap: StringDictionary[Double] = js.native
+    var stringLiteralsMap: StringDictionary[Double]
     
-    var variables: js.Array[String] = js.native
+    var variables: js.Array[String]
   }
   object ParsingContext {
     

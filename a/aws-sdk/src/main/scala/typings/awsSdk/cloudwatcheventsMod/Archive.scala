@@ -2,51 +2,49 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Archive extends StObject {
   
   /**
     * The name of the archive.
     */
-  var ArchiveName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ArchiveName] = js.native
+  var ArchiveName: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ArchiveName] = js.undefined
   
   /**
     * The time stamp for the time that the archive was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The number of events in the archive.
     */
-  var EventCount: js.UndefOr[Long] = js.native
+  var EventCount: js.UndefOr[Long] = js.undefined
   
   /**
     * The ARN of the event bus associated with the archive. Only events from this event bus are sent to the archive.
     */
-  var EventSourceArn: js.UndefOr[Arn] = js.native
+  var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The number of days to retain events in the archive before they are deleted.
     */
-  var RetentionDays: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RetentionDays] = js.native
+  var RetentionDays: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.RetentionDays] = js.undefined
   
   /**
     * The size of the archive, in bytes.
     */
-  var SizeBytes: js.UndefOr[Long] = js.native
+  var SizeBytes: js.UndefOr[Long] = js.undefined
   
   /**
     * The current state of the archive.
     */
-  var State: js.UndefOr[ArchiveState] = js.native
+  var State: js.UndefOr[ArchiveState] = js.undefined
   
   /**
     * A description for the reason that the archive is in the current state.
     */
-  var StateReason: js.UndefOr[ArchiveStateReason] = js.native
+  var StateReason: js.UndefOr[ArchiveStateReason] = js.undefined
 }
 object Archive {
   

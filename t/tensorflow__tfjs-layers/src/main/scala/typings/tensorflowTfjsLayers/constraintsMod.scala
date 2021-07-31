@@ -7,10 +7,13 @@ import typings.tensorflowTfjsCore.serializationMod.ConfigDict
 import typings.tensorflowTfjsCore.serializationMod.ConfigDictValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constraintsMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/constraints", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/constraints", "Constraint")
   @js.native
@@ -102,26 +105,20 @@ object constraintsMod {
     val className: /* "UnitNorm" */ String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "deserializeConstraint")
-  @js.native
-  def deserializeConstraint(config: ConfigDict): Constraint = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "deserializeConstraint")
-  @js.native
-  def deserializeConstraint(config: ConfigDict, customObjects: ConfigDict): Constraint = js.native
+  @scala.inline
+  def deserializeConstraint(config: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  @scala.inline
+  def deserializeConstraint(config: ConfigDict, customObjects: ConfigDict): Constraint = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConstraint")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Constraint]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "getConstraint")
-  @js.native
-  def getConstraint(identifier: ConfigDict): Constraint = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "getConstraint")
-  @js.native
-  def getConstraint(identifier: Constraint): Constraint = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "getConstraint")
-  @js.native
-  def getConstraint(identifier: ConstraintIdentifier): Constraint = js.native
+  @scala.inline
+  def getConstraint(identifier: ConfigDict): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  @scala.inline
+  def getConstraint(identifier: Constraint): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
+  @scala.inline
+  def getConstraint(identifier: ConstraintIdentifier): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstraint")(identifier.asInstanceOf[js.Any]).asInstanceOf[Constraint]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/constraints", "serializeConstraint")
-  @js.native
-  def serializeConstraint(constraint: Constraint): ConfigDictValue = js.native
+  @scala.inline
+  def serializeConstraint(constraint: Constraint): ConfigDictValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConstraint")(constraint.asInstanceOf[js.Any]).asInstanceOf[ConfigDictValue]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.maxNorm_
@@ -132,7 +129,6 @@ object constraintsMod {
   */
   type ConstraintIdentifier = _ConstraintIdentifier | String
   
-  @js.native
   trait MaxNormArgs extends StObject {
     
     /**
@@ -149,12 +145,12 @@ object constraintsMod {
       *  to constrain the weights of each filter tensor of size
       *  `[rows, cols, inputDepth]`.
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum norm for incoming weights
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
   }
   object MaxNormArgs {
     
@@ -181,7 +177,6 @@ object constraintsMod {
     }
   }
   
-  @js.native
   trait MinMaxNormArgs extends StObject {
     
     /**
@@ -197,17 +192,17 @@ object constraintsMod {
       * to constrain the weights of each filter tensor of size
       * `[rows, cols, inputDepth]`.
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum norm for incoming weights
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum norm for incoming weights
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Rate for enforcing the constraint: weights will be rescaled to yield:
@@ -217,7 +212,7 @@ object constraintsMod {
       * weights will be rescaled at each step to slowly move
       * towards a value inside the desired interval.
       */
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
   }
   object MinMaxNormArgs {
     
@@ -256,7 +251,6 @@ object constraintsMod {
     }
   }
   
-  @js.native
   trait UnitNormArgs extends StObject {
     
     /**
@@ -273,7 +267,7 @@ object constraintsMod {
       * to constrain the weights of each filter tensor of size
       * `[rows, cols, inputDepth]`.
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object UnitNormArgs {
     

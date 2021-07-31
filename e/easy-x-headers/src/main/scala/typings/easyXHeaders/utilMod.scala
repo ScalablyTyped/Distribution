@@ -2,98 +2,75 @@ package typings.easyXHeaders
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("util", "debug")
+  @JSImport("util", JSImport.Namespace)
   @js.native
-  def debug(string: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("util", "error")
-  @js.native
-  def error(param: js.Any*): Unit = js.native
+  @scala.inline
+  def debug(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("util", "format")
-  @js.native
-  def format(format: js.Any, param: js.Any*): String = js.native
+  @scala.inline
+  def error(param: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("util", "inherits")
-  @js.native
-  def inherits(constructor: js.Any, superConstructor: js.Any): Unit = js.native
+  @scala.inline
+  def format(format: js.Any, param: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(format.asInstanceOf[js.Any], param.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, options: InspectOptions): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(
-    `object`: js.Any,
-    showHidden: js.UndefOr[scala.Nothing],
-    depth: js.UndefOr[scala.Nothing],
-    color: Boolean
-  ): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: js.UndefOr[scala.Nothing], depth: Double): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: js.UndefOr[scala.Nothing], depth: Double, color: Boolean): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: Boolean): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: Boolean, depth: js.UndefOr[scala.Nothing], color: Boolean): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: Boolean, depth: Double): String = js.native
-  @JSImport("util", "inspect")
-  @js.native
-  def inspect(`object`: js.Any, showHidden: Boolean, depth: Double, color: Boolean): String = js.native
+  @scala.inline
+  def inherits(constructor: js.Any, superConstructor: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(constructor.asInstanceOf[js.Any], superConstructor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("util", "isArray")
-  @js.native
-  def isArray(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def inspect(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, options: InspectOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Boolean, depth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Boolean, depth: Double, color: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Boolean, depth: Unit, color: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Unit, depth: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Unit, depth: Double, color: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def inspect(`object`: js.Any, showHidden: Unit, depth: Unit, color: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("inspect")(`object`.asInstanceOf[js.Any], showHidden.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("util", "isDate")
-  @js.native
-  def isDate(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("util", "isError")
-  @js.native
-  def isError(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def isDate(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("util", "isRegExp")
-  @js.native
-  def isRegExp(`object`: js.Any): Boolean = js.native
+  @scala.inline
+  def isError(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("util", "log")
-  @js.native
-  def log(string: String): Unit = js.native
+  @scala.inline
+  def isRegExp(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("util", "print")
-  @js.native
-  def print(param: js.Any*): Unit = js.native
+  @scala.inline
+  def log(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("util", "puts")
-  @js.native
-  def puts(param: js.Any*): Unit = js.native
+  @scala.inline
+  def print(param: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def puts(param: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("puts")(param.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait InspectOptions extends StObject {
     
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
-    var customInspect: js.UndefOr[Boolean] = js.native
+    var customInspect: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var showHidden: js.UndefOr[Boolean] = js.native
+    var showHidden: js.UndefOr[Boolean] = js.undefined
   }
   object InspectOptions {
     

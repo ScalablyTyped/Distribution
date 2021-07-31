@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classifier extends StObject {
   
   /**
     * A classifier for comma-separated values (CSV).
     */
-  var CsvClassifier: js.UndefOr[typings.awsSdk.glueMod.CsvClassifier] = js.native
+  var CsvClassifier: js.UndefOr[typings.awsSdk.glueMod.CsvClassifier] = js.undefined
   
   /**
     * A classifier that uses grok.
     */
-  var GrokClassifier: js.UndefOr[typings.awsSdk.glueMod.GrokClassifier] = js.native
+  var GrokClassifier: js.UndefOr[typings.awsSdk.glueMod.GrokClassifier] = js.undefined
   
   /**
     * A classifier for JSON content.
     */
-  var JsonClassifier: js.UndefOr[typings.awsSdk.glueMod.JsonClassifier] = js.native
+  var JsonClassifier: js.UndefOr[typings.awsSdk.glueMod.JsonClassifier] = js.undefined
   
   /**
     * A classifier for XML content.
     */
-  var XMLClassifier: js.UndefOr[typings.awsSdk.glueMod.XMLClassifier] = js.native
+  var XMLClassifier: js.UndefOr[typings.awsSdk.glueMod.XMLClassifier] = js.undefined
 }
 object Classifier {
   

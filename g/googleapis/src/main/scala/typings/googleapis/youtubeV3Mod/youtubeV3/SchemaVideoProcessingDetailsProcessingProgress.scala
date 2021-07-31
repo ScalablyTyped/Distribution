@@ -2,13 +2,11 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video processing progress and completion time estimate.
   */
-@js.native
 trait SchemaVideoProcessingDetailsProcessingProgress extends StObject {
   
   /**
@@ -20,20 +18,20 @@ trait SchemaVideoProcessingDetailsProcessingProgress extends StObject {
     * processed, it is possible that the calculated progress could periodically
     * decrease while YouTube processes a video.
     */
-  var partsProcessed: js.UndefOr[String] = js.native
+  var partsProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of the total number of parts that need to be processed for
     * the video. The number may be updated with more precise estimates while
     * YouTube processes the video.
     */
-  var partsTotal: js.UndefOr[String] = js.native
+  var partsTotal: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of the amount of time, in millseconds, that YouTube needs to
     * finish processing the video.
     */
-  var timeLeftMs: js.UndefOr[String] = js.native
+  var timeLeftMs: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoProcessingDetailsProcessingProgress {
   

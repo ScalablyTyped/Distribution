@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "FunctionFactory")
@@ -17,11 +16,11 @@ class FunctionFactory () extends StObject {
   
   def isAsyncFunction(name: String): Boolean = js.native
   
-  def register(name: String, func: js.Function1[/* params */ js.Array[_], _]): Unit = js.native
-  def register(name: String, func: js.Function1[/* params */ js.Array[_], _], isAsync: Boolean): Unit = js.native
+  def register(name: String, func: js.Function1[/* params */ js.Array[js.Any], js.Any]): Unit = js.native
+  def register(name: String, func: js.Function1[/* params */ js.Array[js.Any], js.Any], isAsync: Boolean): Unit = js.native
   
-  def run(name: String, params: js.Array[_]): js.Any = js.native
-  def run(name: String, params: js.Array[_], properties: HashTable[_]): js.Any = js.native
+  def run(name: String, params: js.Array[js.Any]): js.Any = js.native
+  def run(name: String, params: js.Array[js.Any], properties: HashTable[js.Any]): js.Any = js.native
   
   def unregister(name: String): Unit = js.native
 }

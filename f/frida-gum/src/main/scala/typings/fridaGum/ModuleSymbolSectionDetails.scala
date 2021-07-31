@@ -2,21 +2,19 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleSymbolSectionDetails extends StObject {
   
   /**
     * Section index, segment name (if applicable) and section name – same format as r2’s section IDs.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Section's memory protection.
     */
-  var protection: PageProtection = js.native
+  var protection: PageProtection
 }
 object ModuleSymbolSectionDetails {
   

@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DigitalGauge extends Widget_ {
+trait DigitalGauge
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -63,23 +64,33 @@ object DigitalGauge {
     
     //string
     @js.native
-    sealed trait EightCrossEightDotMatrix extends CharacterType
+    sealed trait EightCrossEightDotMatrix
+      extends StObject
+         with CharacterType
     
     //string
     @js.native
-    sealed trait EightCrossEightSquareMatrix extends CharacterType
+    sealed trait EightCrossEightSquareMatrix
+      extends StObject
+         with CharacterType
     
     //string
     @js.native
-    sealed trait FourteenSegment extends CharacterType
+    sealed trait FourteenSegment
+      extends StObject
+         with CharacterType
     
     //string
     @js.native
-    sealed trait SevenSegment extends CharacterType
+    sealed trait SevenSegment
+      extends StObject
+         with CharacterType
     
     //string
     @js.native
-    sealed trait SixteenSegment extends CharacterType
+    sealed trait SixteenSegment
+      extends StObject
+         with CharacterType
   }
   
   @js.native
@@ -90,11 +101,15 @@ object DigitalGauge {
     
     //string
     @js.native
-    sealed trait ClientSide extends ExportingMode
+    sealed trait ClientSide
+      extends StObject
+         with ExportingMode
     
     //string
     @js.native
-    sealed trait ServerSide extends ExportingMode
+    sealed trait ServerSide
+      extends StObject
+         with ExportingMode
   }
   
   @js.native
@@ -105,11 +120,15 @@ object DigitalGauge {
     
     //string
     @js.native
-    sealed trait JPG extends ExportingType
+    sealed trait JPG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait PNG extends ExportingType
+    sealed trait PNG
+      extends StObject
+         with ExportingType
   }
   
   @js.native
@@ -120,44 +139,53 @@ object DigitalGauge {
     
     //string
     @js.native
-    sealed trait Bold extends FontStyle
+    sealed trait Bold
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Normal extends FontStyle
+    sealed trait Normal
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Strikeout extends FontStyle
+    sealed trait Strikeout
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Underline extends FontStyle
+    sealed trait Underline
+      extends StObject
+         with FontStyle
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to gauge area.id - ID of the target element.    size - Width and height of the gauge.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -196,25 +224,24 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to digital gauge area.id - ID of the target element.    size - Width and height of the digital gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the digital gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -253,27 +280,26 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Specifies the name of the action URL
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
       * @Default {DigitalGauge}
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
       * @Default {client}
       */
-    var mode: js.UndefOr[ExportingMode | String] = js.native
+    var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
       * @Default {png}
       */
-    var `type`: js.UndefOr[ExportingType | String] = js.native
+    var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
   object ExportSettings {
     
@@ -312,23 +338,22 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait Frame extends StObject {
     
     /** Specifies the URL of an image to be displayed as background of the Digital gauge.
       * @Default {null}
       */
-    var backgroundImageUrl: js.UndefOr[String] = js.native
+    var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the inner width for the frame, when the background image has been set for the Digital gauge..
       * @Default {6}
       */
-    var innerWidth: js.UndefOr[Double] = js.native
+    var innerWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the outer width of the frame, when the background image has been set for the Digital gauge.
       * @Default {10}
       */
-    var outerWidth: js.UndefOr[Double] = js.native
+    var outerWidth: js.UndefOr[Double] = js.undefined
   }
   object Frame {
     
@@ -361,32 +386,31 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait InitEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InitEventArgs {
     
@@ -437,68 +461,67 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait Item extends StObject {
     
     /** Specifies the Character settings for the DigitalGauge.
       * @Default {null}
       */
-    var characterSettings: js.UndefOr[ItemsCharacterSettings] = js.native
+    var characterSettings: js.UndefOr[ItemsCharacterSettings] = js.undefined
     
     /** Enable/Disable the custom font to be applied to the text in the gauge.
       * @Default {false}
       */
-    var enableCustomFont: js.UndefOr[Boolean] = js.native
+    var enableCustomFont: js.UndefOr[Boolean] = js.undefined
     
     /** Set the specific font for the text, when the enableCustomFont is set to true
       * @Default {null}
       */
-    var font: js.UndefOr[ItemsFont] = js.native
+    var font: js.UndefOr[ItemsFont] = js.undefined
     
     /** Set the location for the text, where it needs to be placed within the gauge.
       * @Default {null}
       */
-    var position: js.UndefOr[ItemsPosition] = js.native
+    var position: js.UndefOr[ItemsPosition] = js.undefined
     
     /** Set the segment settings for the digital gauge.
       * @Default {null}
       */
-    var segmentSettings: js.UndefOr[ItemsSegmentSettings] = js.native
+    var segmentSettings: js.UndefOr[ItemsSegmentSettings] = js.undefined
     
     /** Set the value for enabling/disabling the blurring effect for the shadows of the text
       * @Default {0}
       */
-    var shadowBlur: js.UndefOr[Double] = js.native
+    var shadowBlur: js.UndefOr[Double] = js.undefined
     
     /** Specifies the color of the text shadow.
       * @Default {null}
       */
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
     
     /** Set the x offset value for the shadow of the text, indicating the location where it needs to be displayed.
       * @Default {1}
       */
-    var shadowOffsetX: js.UndefOr[Double] = js.native
+    var shadowOffsetX: js.UndefOr[Double] = js.undefined
     
     /** Set the y offset value for the shadow of the text, indicating the location where it needs to be displayed.
       * @Default {1}
       */
-    var shadowOffsetY: js.UndefOr[Double] = js.native
+    var shadowOffsetY: js.UndefOr[Double] = js.undefined
     
     /** Set the alignment of the text that is displayed within the gauge.See TextAlign
       * @Default {left}
       */
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
     /** Specifies the color of the text.
       * @Default {null}
       */
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the text value.
       * @Default {null}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Item {
     
@@ -585,32 +608,31 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ItemRenderingEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ItemRenderingEventArgs {
     
@@ -661,28 +683,27 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ItemsCharacterSettings extends StObject {
     
     /** Specifies the CharacterCount value for the DigitalGauge.
       * @Default {4}
       */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity value for the DigitalGauge.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the value for spacing between the characters
       * @Default {2}
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
     
     /** Specifies the character type for the text to be displayed.
       * @Default {ej.datavisualization.DigitalGauge.CharacterType.EightCrossEightDotMatrix}
       */
-    var `type`: js.UndefOr[CharacterType | String] = js.native
+    var `type`: js.UndefOr[CharacterType | String] = js.undefined
   }
   object ItemsCharacterSettings {
     
@@ -721,23 +742,22 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ItemsFont extends StObject {
     
     /** Set the font family value
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Set the font style for the font
       * @Default {italic}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Set the font size value
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ItemsFont {
     
@@ -770,18 +790,17 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ItemsPosition extends StObject {
     
     /** Set the horizontal location for the text, where it needs to be placed within the gauge.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Set the vertical location for the text, where it needs to be placed within the gauge.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ItemsPosition {
     
@@ -808,38 +827,37 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait ItemsSegmentSettings extends StObject {
     
     /** Set the color for the text segments.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Set the gradient for the text segments.
       * @Default {null}
       */
-    var gradient: js.UndefOr[js.Any] = js.native
+    var gradient: js.UndefOr[js.Any] = js.undefined
     
     /** Set the length for the text segments.
       * @Default {2}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Set the opacity for the text segments.
       * @Default {0}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Set the spacing for the text segments.
       * @Default {1}
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
     
     /** Set the width for the text segments.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ItemsSegmentSettings {
     
@@ -890,32 +908,31 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -966,88 +983,87 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires, on clicking the gauge.
       */
-    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var Click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Fires, on double clicking the digital gauge.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the responsiveness of the Digital gauge
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** This provides options for customizing export settings
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specifies the frame of the Digital gauge.
       * @Default {{backgroundImageUrl: null, innerWidth: 6, outerWidth: 10}}
       */
-    var frame: js.UndefOr[Frame] = js.native
+    var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specifies the height of the DigitalGauge.
       * @Default {150}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Triggers when the gauge is initialized.
       */
-    var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.native
+    var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.undefined
     
     /** Specifies the resize option of the DigitalGauge.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when the gauge item rendering.
       */
-    var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.native
+    var itemRendering: js.UndefOr[js.Function1[/* e */ ItemRenderingEventArgs, Unit]] = js.undefined
     
     /** Specifies the items for the DigitalGauge.
       * @Default {null}
       */
-    var items: js.UndefOr[js.Array[Item]] = js.native
+    var items: js.UndefOr[js.Array[Item]] = js.undefined
     
     /** Triggers when the gauge is start to load.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Specifies the matrixSegmentData for the DigitalGauge.
       */
-    var matrixSegmentData: js.UndefOr[js.Any] = js.native
+    var matrixSegmentData: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when the gauge render is completed.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires, on right clicking the digital gauge.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the segmentData for the DigitalGauge.
       */
-    var segmentData: js.UndefOr[js.Any] = js.native
+    var segmentData: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the themes for the Digital gauge. See Themes
       * @Default {flatlight}
       */
-    var themes: js.UndefOr[String] = js.native
+    var themes: js.UndefOr[String] = js.undefined
     
     /** Specifies the value to the DigitalGauge.
       * @Default {text}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
     /** Specifies the width for the Digital gauge.
       * @Default {400}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -1173,32 +1189,31 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the all the options of the items.
       */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -1249,25 +1264,24 @@ object DigitalGauge {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to digital gauge area.id - ID of the target element.    size - Width and height of the digital gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the digital gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     

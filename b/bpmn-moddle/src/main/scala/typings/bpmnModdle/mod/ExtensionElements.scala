@@ -3,19 +3,18 @@ package typings.bpmnModdle.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionElements
-  extends TypeDerived
+  extends StObject
+     with TypeDerived
      with /* key */ StringDictionary[js.Any] {
   
-  var extensionAttributeDefinition: ExtensionAttributeDefinition = js.native
+  var extensionAttributeDefinition: ExtensionAttributeDefinition
   
-  var valueRef: BaseElement = js.native
+  var valueRef: BaseElement
   
-  var values: js.Array[BaseElement] = js.native
+  var values: js.Array[BaseElement]
 }
 object ExtensionElements {
   

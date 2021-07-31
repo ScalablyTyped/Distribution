@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOpenIDConnectProvidersResponse extends StObject {
   
   /**
     * The list of IAM OIDC provider resource objects defined in the AWS account.
     */
-  var OpenIDConnectProviderList: js.UndefOr[OpenIDConnectProviderListType] = js.native
+  var OpenIDConnectProviderList: js.UndefOr[OpenIDConnectProviderListType] = js.undefined
 }
 object ListOpenIDConnectProvidersResponse {
   

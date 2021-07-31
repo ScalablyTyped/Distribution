@@ -4,10 +4,13 @@ import typings.react.mod.Component
 import typings.reactStonecutter.reactStonecutterStrings.deg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-stonecutter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-stonecutter", "CSSGrid")
   @js.native
@@ -111,33 +114,31 @@ object mod {
     def simple_=(x: LayoutFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("simple")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-stonecutter", "makeResponsive")
-  @js.native
-  def makeResponsive[T](grid: T, options: MakeResponsiveOptions): T = js.native
+  @scala.inline
+  def makeResponsive[T](grid: T, options: MakeResponsiveOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsive")(grid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("react-stonecutter", "measureItems")
-  @js.native
-  def measureItems[T](grid: T): T = js.native
-  @JSImport("react-stonecutter", "measureItems")
-  @js.native
-  def measureItems[T](grid: T, options: MeasureItemsOptions): T = js.native
+  @scala.inline
+  def measureItems[T](grid: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("measureItems")(grid.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def measureItems[T](grid: T, options: MeasureItemsOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("measureItems")(grid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type AngleUnit = deg
   
-  @js.native
-  trait CSSGridProps extends CommonGridProps {
+  trait CSSGridProps
+    extends StObject
+       with CommonGridProps {
     
     /**
       * Animation duration in ms. Required.
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * Animation easing function in CSS transition-timing-function format.
       * Some Penner easings are included for convenience.
       * Default: easings.cubicOut.
       */
-    var easing: js.UndefOr[Easing] = js.native
+    var easing: js.UndefOr[Easing] = js.undefined
   }
   object CSSGridProps {
     
@@ -161,29 +162,28 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonGridProps extends StObject {
     
     /**
       * The angle unit. Affects transform-functions such as rotate. Default: 'deg'.
       */
-    var angleUnit: js.UndefOr[AngleUnit] = js.native
+    var angleUnit: js.UndefOr[AngleUnit] = js.undefined
     
     /**
       * Width of a single column, by default in px units. Required.
       */
-    var columnWidth: Double = js.native
+    var columnWidth: Double
     
     /**
       * Number of columns. Required.
       * You can wrap the Grid component in the `makeResponsive` higher-order component to set this dynamically.
       */
-    var columns: Double = js.native
+    var columns: Double
     
     /**
       * Change the HTML tagName of the Grid element, for example to 'ul' or 'ol' for a list. Default: 'div'.
       */
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
     /**
       * These allow you to change how items animate as they appear and disappear from the grid.
@@ -191,31 +191,46 @@ object mod {
       * By default the item's scale and opacity go from 0 to 1 and back to 0 on exit
       */
     var enter: js.UndefOr[
-        js.Function3[/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any, _]
-      ] = js.native
+        js.Function3[
+          /* itemProps */ js.Array[js.Any], 
+          /* gridProps */ js.Array[js.Any], 
+          /* gridState */ js.Any, 
+          js.Any
+        ]
+      ] = js.undefined
     
     var entered: js.UndefOr[
-        js.Function3[/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any, _]
-      ] = js.native
+        js.Function3[
+          /* itemProps */ js.Array[js.Any], 
+          /* gridProps */ js.Array[js.Any], 
+          /* gridState */ js.Any, 
+          js.Any
+        ]
+      ] = js.undefined
     
     var exit: js.UndefOr[
-        js.Function3[/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any, _]
-      ] = js.native
+        js.Function3[
+          /* itemProps */ js.Array[js.Any], 
+          /* gridProps */ js.Array[js.Any], 
+          /* gridState */ js.Any, 
+          js.Any
+        ]
+      ] = js.undefined
     
     /**
       * Height of vertical space between items. Default: 0.
       */
-    var gutterHeight: js.UndefOr[Double] = js.native
+    var gutterHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Width of space between columns. Default: 0.
       */
-    var gutterWidth: js.UndefOr[Double] = js.native
+    var gutterWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Use one of the included layouts, or create your own. Defaults to a 'simple' layout with items of fixed height.
       */
-    var layout: js.UndefOr[LayoutFunction] = js.native
+    var layout: js.UndefOr[LayoutFunction] = js.undefined
     
     /**
       * The length unit used throughout.
@@ -224,14 +239,14 @@ object mod {
       * but it may not work well with the measureItems and makeResponsive higher-order components.
       * `%` does not work well due to the way CSS transforms work.
       */
-    var lengthUnit: js.UndefOr[LengthUnit] = js.native
+    var lengthUnit: js.UndefOr[LengthUnit] = js.undefined
     
     /**
       * The perspective distance used for 3D transforms.
       * If you are using a transform function like rotateX, use this to strengthen the effect.
       * Default is no perspective applied.
       */
-    var perspective: js.UndefOr[Double] = js.native
+    var perspective: js.UndefOr[Double] = js.undefined
   }
   object CommonGridProps {
     
@@ -263,19 +278,25 @@ object mod {
       def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
       @scala.inline
-      def setEnter(value: (/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any) => _): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
+      def setEnter(
+        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
+      ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
       
       @scala.inline
       def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
       @scala.inline
-      def setEntered(value: (/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any) => _): Self = StObject.set(x, "entered", js.Any.fromFunction3(value))
+      def setEntered(
+        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
+      ): Self = StObject.set(x, "entered", js.Any.fromFunction3(value))
       
       @scala.inline
       def setEnteredUndefined: Self = StObject.set(x, "entered", js.undefined)
       
       @scala.inline
-      def setExit(value: (/* itemProps */ js.Array[_], /* gridProps */ js.Array[_], /* gridState */ js.Any) => _): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
+      def setExit(
+        value: (/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], /* gridState */ js.Any) => js.Any
+      ): Self = StObject.set(x, "exit", js.Any.fromFunction3(value))
       
       @scala.inline
       def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
@@ -316,56 +337,55 @@ object mod {
   
   type Easing = String
   
-  @js.native
   trait Easings_ extends StObject {
     
-    var backIn: Easing = js.native
+    var backIn: Easing
     
-    var backInOut: Easing = js.native
+    var backInOut: Easing
     
-    var backOut: Easing = js.native
+    var backOut: Easing
     
-    var circIn: Easing = js.native
+    var circIn: Easing
     
-    var circInOut: Easing = js.native
+    var circInOut: Easing
     
-    var circOut: Easing = js.native
+    var circOut: Easing
     
-    var cubicIn: Easing = js.native
+    var cubicIn: Easing
     
-    var cubicInOut: Easing = js.native
+    var cubicInOut: Easing
     
-    var cubicOut: Easing = js.native
+    var cubicOut: Easing
     
-    var expoIn: Easing = js.native
+    var expoIn: Easing
     
-    var expoInOut: Easing = js.native
+    var expoInOut: Easing
     
-    var expoOut: Easing = js.native
+    var expoOut: Easing
     
-    var quadIn: Easing = js.native
+    var quadIn: Easing
     
-    var quadInOut: Easing = js.native
+    var quadInOut: Easing
     
-    var quadOut: Easing = js.native
+    var quadOut: Easing
     
-    var quartIn: Easing = js.native
+    var quartIn: Easing
     
-    var quartInOut: Easing = js.native
+    var quartInOut: Easing
     
-    var quartOut: Easing = js.native
+    var quartOut: Easing
     
-    var quintIn: Easing = js.native
+    var quintIn: Easing
     
-    var quintInOut: Easing = js.native
+    var quintInOut: Easing
     
-    var quintOut: Easing = js.native
+    var quintOut: Easing
     
-    var sineIn: Easing = js.native
+    var sineIn: Easing
     
-    var sineInOut: Easing = js.native
+    var sineInOut: Easing
     
-    var sineOut: Easing = js.native
+    var sineOut: Easing
   }
   object Easings_ {
     
@@ -479,23 +499,22 @@ object mod {
   
   type LayoutFunction = js.Function2[/* itemProps */ js.Array[js.Any], /* gridProps */ js.Array[js.Any], Layout_]
   
-  @js.native
   trait Layout_ extends StObject {
     
     /**
       * height of the entire grid
       */
-    var gridHeight: Double = js.native
+    var gridHeight: Double
     
     /**
       * width of the entire grid
       */
-    var gridWidth: Double = js.native
+    var gridWidth: Double
     
     /**
       * an Array of [x, y] coordinate pairs like this: [[0, 0], [20, 0], [0, 30]]
       */
-    var positions: js.Array[Coordinates] = js.native
+    var positions: js.Array[Coordinates]
   }
   object Layout_ {
     
@@ -540,7 +559,6 @@ object mod {
     def rem: typings.reactStonecutter.reactStonecutterStrings.rem = "rem".asInstanceOf[typings.reactStonecutter.reactStonecutterStrings.rem]
   }
   
-  @js.native
   trait MakeResponsiveOptions extends StObject {
     
     /**
@@ -548,17 +566,17 @@ object mod {
       * May be useful when rendering server-side in a universal app.
       * Default: 4.
       */
-    var defaultColumns: js.UndefOr[Double] = js.native
+    var defaultColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum width for the Grid in px.
       */
-    var maxWidth: Double = js.native
+    var maxWidth: Double
     
     /**
       * Minimum horizontal length between the edge of the Grid and the edge of the viewport in px. Default: 0.
       */
-    var minPadding: js.UndefOr[Double] = js.native
+    var minPadding: js.UndefOr[Double] = js.undefined
   }
   object MakeResponsiveOptions {
     
@@ -588,21 +606,20 @@ object mod {
     }
   }
   
-  @js.native
   trait MeasureItemsOptions extends StObject {
     
     /**
       * This option is passed through to the imagesLoaded library.
       * It allows you to wait for background images to load, in addition to <img> tags.
       */
-    var background: js.UndefOr[Boolean | String] = js.native
+    var background: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * If set to true, waits for images to load before measuring items and adding them to the Grid.
       * This may be necessary if you don't know the height of your images ahead of time.
       * Powered by imagesLoaded.
       */
-    var measureImages: Boolean = js.native
+    var measureImages: Boolean
   }
   object MeasureItemsOptions {
     
@@ -626,14 +643,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait SpringGridProps extends CommonGridProps {
+  trait SpringGridProps
+    extends StObject
+       with CommonGridProps {
     
     /**
       * Configuration of the React-Motion spring.
       * See the React-Motion docs for more info. Default: { stiffness: 60, damping: 14, precision: 0.1 }.
       */
-    var springConfig: js.UndefOr[js.Any] = js.native
+    var springConfig: js.UndefOr[js.Any] = js.undefined
   }
   object SpringGridProps {
     

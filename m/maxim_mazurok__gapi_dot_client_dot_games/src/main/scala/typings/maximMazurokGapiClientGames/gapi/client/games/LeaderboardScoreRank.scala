@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaderboardScoreRank extends StObject {
   
   /** The number of scores in the leaderboard as a string. */
-  var formattedNumScores: js.UndefOr[String] = js.native
+  var formattedNumScores: js.UndefOr[String] = js.undefined
   
   /** The rank in the leaderboard as a string. */
-  var formattedRank: js.UndefOr[String] = js.native
+  var formattedRank: js.UndefOr[String] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#leaderboardScoreRank`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The number of scores in the leaderboard. */
-  var numScores: js.UndefOr[String] = js.native
+  var numScores: js.UndefOr[String] = js.undefined
   
   /** The rank in the leaderboard. */
-  var rank: js.UndefOr[String] = js.native
+  var rank: js.UndefOr[String] = js.undefined
 }
 object LeaderboardScoreRank {
   

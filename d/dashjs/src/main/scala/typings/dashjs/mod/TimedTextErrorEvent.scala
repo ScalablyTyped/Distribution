@@ -5,27 +5,26 @@ import typings.dashjs.dashjsStrings.cc
 import typings.dashjs.dashjsStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimedTextErrorEvent
-  extends Event
+  extends StObject
+     with Event
      with ErrorEvent {
   
-  var error: cc = js.native
+  var error: cc
   
-  var event: Cc = js.native
+  var event: Cc
   
   @JSName("type")
-  var type_TimedTextErrorEvent: error = js.native
+  var type_TimedTextErrorEvent: error
 }
 object TimedTextErrorEvent {
   
   @scala.inline
-  def apply(error: cc, event: Cc, `type`: error): TimedTextErrorEvent = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(event: Cc): TimedTextErrorEvent = {
+    val __obj = js.Dynamic.literal(error = "cc", event = event.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[TimedTextErrorEvent]
   }
   

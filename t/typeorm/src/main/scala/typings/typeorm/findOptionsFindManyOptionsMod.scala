@@ -3,23 +3,23 @@ package typings.typeorm
 import typings.typeorm.findOptionsFindOneOptionsMod.FindOneOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findOptionsFindManyOptionsMod {
   
-  @js.native
-  trait FindManyOptions[Entity] extends FindOneOptions[Entity] {
+  trait FindManyOptions[Entity]
+    extends StObject
+       with FindOneOptions[Entity] {
     
     /**
       * Offset (paginated) where from entities should be taken.
       */
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
     /**
       * Limit (paginated) - max number of entities should be taken.
       */
-    var take: js.UndefOr[Double] = js.native
+    var take: js.UndefOr[Double] = js.undefined
   }
   object FindManyOptions {
     
@@ -30,7 +30,7 @@ object findOptionsFindManyOptionsMod {
     }
     
     @scala.inline
-    implicit class FindManyOptionsMutableBuilder[Self <: FindManyOptions[_], Entity] (val x: Self with FindManyOptions[Entity]) extends AnyVal {
+    implicit class FindManyOptionsMutableBuilder[Self <: FindManyOptions[?], Entity] (val x: Self & FindManyOptions[Entity]) extends AnyVal {
       
       @scala.inline
       def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])

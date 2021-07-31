@@ -8,7 +8,6 @@ import typings.chrome.chrome.cookies.GetAllDetails
 import typings.chrome.chrome.cookies.SetDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -25,17 +24,14 @@ object cookies {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.cookies.get")
-  @js.native
-  def get(details: Details, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = js.native
+  @scala.inline
+  def get(details: Details, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.cookies.getAll")
-  @js.native
-  def getAll(details: GetAllDetails, callback: js.Function1[/* cookies */ js.Array[Cookie], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(details: GetAllDetails, callback: js.Function1[/* cookies */ js.Array[Cookie], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.cookies.getAllCookieStores")
-  @js.native
-  def getAllCookieStores(callback: js.Function1[/* cookieStores */ js.Array[CookieStore], Unit]): Unit = js.native
+  @scala.inline
+  def getAllCookieStores(callback: js.Function1[/* cookieStores */ js.Array[CookieStore], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCookieStores")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.cookies.onChanged")
   @js.native
@@ -43,17 +39,13 @@ object cookies {
   @scala.inline
   def onChanged_=(x: CookieChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.cookies.remove")
-  @js.native
-  def remove(details: Details): Unit = js.native
-  @JSGlobal("chrome.cookies.remove")
-  @js.native
-  def remove(details: Details, callback: js.Function1[/* details */ Details, Unit]): Unit = js.native
+  @scala.inline
+  def remove(details: Details): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(details: Details, callback: js.Function1[/* details */ Details, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.cookies.set")
-  @js.native
-  def set(details: SetDetails): Unit = js.native
-  @JSGlobal("chrome.cookies.set")
-  @js.native
-  def set(details: SetDetails, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = js.native
+  @scala.inline
+  def set(details: SetDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def set(details: SetDetails, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(details.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

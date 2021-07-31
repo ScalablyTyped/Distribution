@@ -5,15 +5,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.release
 import typings.wechatMiniprogram.wechatMiniprogramStrings.trial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 小程序帐号信息 */
-@js.native
 trait MiniProgram extends StObject {
   
   /** 小程序 appId */
-  var appId: String = js.native
+  var appId: String
   
   /** 小程序版本
     *
@@ -23,12 +21,12 @@ trait MiniProgram extends StObject {
     * - 'release': 正式版;
     *
     * 最低基础库： `2.10.0` */
-  var envVersion: develop | trial | release = js.native
+  var envVersion: develop | trial | release
   
   /** 线上小程序版本号
     *
     * 最低基础库： `2.10.2` */
-  var version: String = js.native
+  var version: String
 }
 object MiniProgram {
   

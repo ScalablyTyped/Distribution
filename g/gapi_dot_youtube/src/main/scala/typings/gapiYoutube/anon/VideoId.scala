@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoId extends StObject {
   
   /**
     * The videoId parameter specifies a YouTube video ID for which the custom video thumbnail is being provided.
     */
-  var videoId: String = js.native
+  var videoId: String
 }
 object VideoId {
   

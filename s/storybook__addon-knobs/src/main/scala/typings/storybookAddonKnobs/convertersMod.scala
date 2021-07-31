@@ -2,157 +2,133 @@ package typings.storybookAddonKnobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object convertersMod {
   
   object converters {
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.jsonParse")
+    @JSImport("@storybook/addon-knobs/dist/converters", "converters")
     @js.native
-    def jsonParse(value: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.jsonStringify")
-    @js.native
-    def jsonStringify(value: js.Any): String = js.native
+    @scala.inline
+    def jsonParse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonParse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.simple")
-    @js.native
-    def simple(value: js.Any): js.Any = js.native
+    @scala.inline
+    def jsonStringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonStringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.stringifyIfSet")
-    @js.native
-    def stringifyIfSet(value: js.Any): String = js.native
+    @scala.inline
+    def simple(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("simple")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.stringifyIfTruthy")
-    @js.native
-    def stringifyIfTruthy(value: js.Any): String | Null = js.native
+    @scala.inline
+    def stringifyIfSet(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfSet")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.toArray")
-    @js.native
-    def toArray(value: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def stringifyIfTruthy(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyIfTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.toBoolean")
-    @js.native
-    def toBoolean(value: js.Any): Boolean = js.native
+    @scala.inline
+    def toArray(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.toDate")
-    @js.native
-    def toDate(value: js.Any): Double = js.native
+    @scala.inline
+    def toBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "converters.toFloat")
-    @js.native
-    def toFloat(value: js.Any): Double | Null = js.native
+    @scala.inline
+    def toDate(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDate")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def toFloat(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toFloat")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   }
   
   object deserializers {
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.array")
+    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers")
     @js.native
-    def array(value: js.Any): js.Array[_] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.boolean")
-    @js.native
-    def boolean(value: js.Any): Boolean = js.native
+    @scala.inline
+    def array(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.button")
-    @js.native
-    def button(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def boolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.checkbox")
-    @js.native
-    def checkbox(value: js.Any): js.Any = js.native
+    @scala.inline
+    def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.color")
-    @js.native
-    def color(value: js.Any): js.Any = js.native
+    @scala.inline
+    def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.date")
-    @js.native
-    def date(value: js.Any): Double = js.native
+    @scala.inline
+    def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.files")
-    @js.native
-    def files(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.number")
-    @js.native
-    def number(value: js.Any): Double | Null = js.native
+    @scala.inline
+    def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.options")
-    @js.native
-    def options(value: js.Any): js.Any = js.native
+    @scala.inline
+    def number(value: js.Any): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.radios")
-    @js.native
-    def radios(value: js.Any): js.Any = js.native
+    @scala.inline
+    def `object`(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.select")
-    @js.native
-    def select(value: js.Any): js.Any = js.native
+    @scala.inline
+    def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.text")
-    @js.native
-    def text(value: js.Any): js.Any = js.native
+    @scala.inline
+    def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "deserializers.object")
-    @js.native
-    def `object`(value: js.Any): js.Any = js.native
+    @scala.inline
+    def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object serializers {
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.array")
+    @JSImport("@storybook/addon-knobs/dist/converters", "serializers")
     @js.native
-    def array(value: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.boolean")
-    @js.native
-    def boolean(value: js.Any): String | Null = js.native
+    @scala.inline
+    def array(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.button")
-    @js.native
-    def button(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def boolean(value: js.Any): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(value.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.checkbox")
-    @js.native
-    def checkbox(value: js.Any): js.Any = js.native
+    @scala.inline
+    def button(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("button")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.color")
-    @js.native
-    def color(value: js.Any): js.Any = js.native
+    @scala.inline
+    def checkbox(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.date")
-    @js.native
-    def date(value: js.Any): Double = js.native
+    @scala.inline
+    def color(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.files")
-    @js.native
-    def files(): js.UndefOr[scala.Nothing] = js.native
+    @scala.inline
+    def date(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.number")
-    @js.native
-    def number(value: js.Any): String = js.native
+    @scala.inline
+    def files(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("files")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.options")
-    @js.native
-    def options(value: js.Any): js.Any = js.native
+    @scala.inline
+    def number(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.radios")
-    @js.native
-    def radios(value: js.Any): js.Any = js.native
+    @scala.inline
+    def `object`(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.select")
-    @js.native
-    def select(value: js.Any): js.Any = js.native
+    @scala.inline
+    def options(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.text")
-    @js.native
-    def text(value: js.Any): js.Any = js.native
+    @scala.inline
+    def radios(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("radios")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("@storybook/addon-knobs/dist/converters", "serializers.object")
-    @js.native
-    def `object`(value: js.Any): String = js.native
+    @scala.inline
+    def select(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def text(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

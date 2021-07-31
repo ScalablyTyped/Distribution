@@ -4,14 +4,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeRedirectMod {
   
   @JSImport("@ionic/core/dist/types/components/route-redirect/route-redirect", "RouteRedirect")
   @js.native
-  class RouteRedirect () extends ComponentInterface {
+  class RouteRedirect ()
+    extends StObject
+       with ComponentInterface {
     
     @JSName("connectedCallback")
     def connectedCallback_MRouteRedirect(): Unit = js.native
@@ -32,7 +33,7 @@ object routeRedirectMod {
       *
       * `ion-router` captures this event in order to update his internal registry of router rules.
       */
-    var ionRouteRedirectChanged: EventEmitter[_] = js.native
+    var ionRouteRedirectChanged: EventEmitter[js.Any] = js.native
     
     def propDidChange(): Unit = js.native
     

@@ -2,17 +2,15 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementAnimation extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var interpolation: js.UndefOr[Interpolation] = js.native
+  var interpolation: js.UndefOr[Interpolation] = js.undefined
   
-  var startDelay: js.UndefOr[Double] = js.native
+  var startDelay: js.UndefOr[Double] = js.undefined
 }
 object ElementAnimation {
   

@@ -4,35 +4,33 @@ import typings.paypalRestSdk.anon.Cancelurl
 import typings.paypalRestSdk.anon.Paymentmethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payment_ extends StObject {
   
-  val create_time: js.UndefOr[String] = js.native
+  val create_time: js.UndefOr[String] = js.undefined
   
-  var experience_profile_id: js.UndefOr[String] = js.native
+  var experience_profile_id: js.UndefOr[String] = js.undefined
   
-  val failure_reason: js.UndefOr[String] = js.native
+  val failure_reason: js.UndefOr[String] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  var intent: String = js.native
+  var intent: String
   
-  val links: js.UndefOr[js.Array[Link]] = js.native
+  val links: js.UndefOr[js.Array[Link]] = js.undefined
   
-  var note_to_payer: js.UndefOr[String] = js.native
+  var note_to_payer: js.UndefOr[String] = js.undefined
   
-  var payer: Paymentmethod = js.native
+  var payer: Paymentmethod
   
-  var redirect_urls: js.UndefOr[Cancelurl] = js.native
+  var redirect_urls: js.UndefOr[Cancelurl] = js.undefined
   
-  val state: js.UndefOr[String] = js.native
+  val state: js.UndefOr[String] = js.undefined
   
-  var transactions: js.Array[Transaction] = js.native
+  var transactions: js.Array[Transaction]
   
-  val update_time: js.UndefOr[String] = js.native
+  val update_time: js.UndefOr[String] = js.undefined
 }
 object Payment_ {
   

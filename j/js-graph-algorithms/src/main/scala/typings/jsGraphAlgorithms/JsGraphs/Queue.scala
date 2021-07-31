@@ -2,27 +2,25 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Queue[T] extends StObject {
   
-  var N: js.Any = js.native
+  var N: js.Any
   
-  def dequeue(): js.UndefOr[T] = js.native
+  def dequeue(): js.UndefOr[T]
   
-  def enqueue(item: T): Unit = js.native
+  def enqueue(item: T): Unit
   
-  var first: js.Any = js.native
+  var first: js.Any
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  var last: js.Any = js.native
+  var last: js.Any
   
-  def size(): Double = js.native
+  def size(): Double
   
-  def toArray(): js.Array[T] = js.native
+  def toArray(): js.Array[T]
 }
 object Queue {
   
@@ -42,7 +40,7 @@ object Queue {
   }
   
   @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue[_], T] (val x: Self with Queue[T]) extends AnyVal {
+  implicit class QueueMutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
     
     @scala.inline
     def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))

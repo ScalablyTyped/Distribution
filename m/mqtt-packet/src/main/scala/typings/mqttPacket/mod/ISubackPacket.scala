@@ -4,26 +4,25 @@ import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.suback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISubackPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_ISubackPacket: suback = js.native
+  var cmd_ISubackPacket: suback
   
-  var granted: js.Array[Double | js.Object] = js.native
+  var granted: js.Array[Double | js.Object]
   
-  var properties: js.UndefOr[ReasonString] = js.native
+  var properties: js.UndefOr[ReasonString] = js.undefined
 }
 object ISubackPacket {
   
   @scala.inline
-  def apply(cmd: suback, granted: js.Array[Double | js.Object]): ISubackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], granted = granted.asInstanceOf[js.Any])
+  def apply(granted: js.Array[Double | js.Object]): ISubackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "suback", granted = granted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubackPacket]
   }
   

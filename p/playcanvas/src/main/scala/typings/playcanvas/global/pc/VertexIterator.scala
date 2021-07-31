@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.VertexIterator")
 @js.native
 class VertexIterator protected ()
-  extends typings.playcanvas.pc.VertexIterator {
+  extends StObject
+     with typings.playcanvas.pc.VertexIterator {
   def this(vertexBuffer: typings.playcanvas.pc.VertexBuffer) = this()
 }

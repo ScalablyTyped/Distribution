@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.ExternalDocLinks
   * @since OOo 3.1
   */
-@js.native
 trait XExternalDocLinks
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XIndexAccess
      with XEnumerationAccess {
   
@@ -28,7 +27,7 @@ trait XExternalDocLinks
     * @param aDocName document URL (e.g. [file:///path/to/document.ods]{@link url="file:///path/to/document.ods"} )
     * @returns {@link com.sun.star.sheet.XExternalDocLink} external document link instance
     */
-  def addDocLink(aDocName: String): XExternalDocLink = js.native
+  def addDocLink(aDocName: String): XExternalDocLink
 }
 object XExternalDocLinks {
   

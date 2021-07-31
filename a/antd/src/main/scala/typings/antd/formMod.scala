@@ -13,7 +13,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod extends Shortcut {
@@ -23,7 +22,9 @@ object formMod extends Shortcut {
   val default: FormInterface = js.native
   
   @js.native
-  trait FormInterface extends InternalFormType {
+  trait FormInterface
+    extends StObject
+       with InternalFormType {
     
     var ErrorList: js.Function1[/* hasErrorsHelpOnDomErrorVisibleChange */ ErrorListProps, Element] = js.native
     
@@ -42,7 +43,7 @@ object formMod extends Shortcut {
   @js.native
   trait InternalFormType extends StObject {
     
-    def apply[Values](props: Children[Values] with FormProps[Values]): ReactElement = js.native
+    def apply[Values](props: Children[Values] & FormProps[Values]): ReactElement = js.native
   }
   
   type _To = FormInterface

@@ -11,7 +11,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,15 +65,14 @@ object mod {
   
   type RefNode = ReactInstance | HTMLElement | Null
   
-  @js.native
   trait ResizeObserverProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Trigger if element resized. Will always trigger when first time render. */
-    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* size */ Height, Unit]] = js.undefined
   }
   object ResizeObserverProps {
     
@@ -107,16 +105,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizeObserverState extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var offsetHeight: Double = js.native
+    var offsetHeight: Double
     
-    var offsetWidth: Double = js.native
+    var offsetWidth: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResizeObserverState {
     

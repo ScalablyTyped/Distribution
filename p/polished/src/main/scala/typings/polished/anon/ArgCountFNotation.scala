@@ -6,29 +6,27 @@ import typings.polished.polishedStrings.Rightparenthesis
 import typings.polished.polishedStrings.postfix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgCountFNotation extends StObject {
   
-  var argCount: `1` = js.native
+  var argCount: `1`
   
-  var f: js.UndefOr[scala.Nothing] = js.native
+  var f: Unit
   
-  var notation: postfix = js.native
+  var notation: postfix
   
-  var precedence: `0` = js.native
+  var precedence: `0`
   
-  var rightToLeft: `0` = js.native
+  var rightToLeft: `0`
   
-  var symbol: Rightparenthesis = js.native
+  var symbol: Rightparenthesis
 }
 object ArgCountFNotation {
   
   @scala.inline
-  def apply(argCount: `1`, notation: postfix, precedence: `0`, rightToLeft: `0`, symbol: Rightparenthesis): ArgCountFNotation = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(f: Unit): ArgCountFNotation = {
+    val __obj = js.Dynamic.literal(argCount = 1, f = f.asInstanceOf[js.Any], notation = "postfix", precedence = 0, rightToLeft = 0, symbol = ")")
     __obj.asInstanceOf[ArgCountFNotation]
   }
   
@@ -37,6 +35,9 @@ object ArgCountFNotation {
     
     @scala.inline
     def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setF(value: Unit): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNotation(value: postfix): Self = StObject.set(x, "notation", value.asInstanceOf[js.Any])

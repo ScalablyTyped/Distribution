@@ -6,11 +6,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.DataSourceOrder
 import typings.officeJsPreview.officeJsPreviewStrings.Descending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
-@js.native
 trait SlicerUpdateData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait SlicerUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var nameInFormula: js.UndefOr[String] = js.native
+  var nameInFormula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait SlicerUpdateData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var slicerStyle: js.UndefOr[SlicerStyleUpdateData] = js.native
+  var slicerStyle: js.UndefOr[SlicerStyleUpdateData] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.native
+  var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait SlicerUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheet: js.UndefOr[WorksheetUpdateData] = js.native
+  var worksheet: js.UndefOr[WorksheetUpdateData] = js.undefined
 }
 object SlicerUpdateData {
   

@@ -2,31 +2,29 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Downloadurl extends StObject {
   
-  var _links: Git = js.native
+  var _links: Git
   
-  var download_url: String = js.native
+  var download_url: String
   
-  var git_url: String = js.native
+  var git_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
   
-  var sha: String = js.native
+  var sha: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Downloadurl {
   

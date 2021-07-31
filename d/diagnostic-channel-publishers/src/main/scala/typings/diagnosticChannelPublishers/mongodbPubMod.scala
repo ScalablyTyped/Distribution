@@ -5,14 +5,16 @@ import typings.diagnosticChannelPublishers.anon.Command
 import typings.diagnosticChannelPublishers.anon.CommandName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/mongodb.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/mongodb.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/mongodb.pub", "mongo2")
   @js.native
@@ -26,14 +28,13 @@ object mongodbPubMod {
   @js.native
   val mongo330: IModulePatcher = js.native
   
-  @js.native
   trait IMongoData extends StObject {
     
-    var event: CommandName = js.native
+    var event: CommandName
     
-    var startedData: Command = js.native
+    var startedData: Command
     
-    var succeeded: Boolean = js.native
+    var succeeded: Boolean
   }
   object IMongoData {
     

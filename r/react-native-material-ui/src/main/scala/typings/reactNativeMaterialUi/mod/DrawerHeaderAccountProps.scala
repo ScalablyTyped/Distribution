@@ -4,19 +4,17 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNativeMaterialUi.anon.AccountContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerHeaderAccountProps extends StObject {
   
-  var accounts: js.UndefOr[js.Array[typings.reactNativeMaterialUi.anon.Avatar]] = js.native
+  var accounts: js.UndefOr[js.Array[typings.reactNativeMaterialUi.anon.Avatar]] = js.undefined
   
-  var avatar: js.UndefOr[Element] = js.native
+  var avatar: js.UndefOr[Element] = js.undefined
   
-  var footer: js.UndefOr[js.Object] = js.native
+  var footer: js.UndefOr[js.Object] = js.undefined
   
-  var style: js.UndefOr[AccountContainer] = js.native
+  var style: js.UndefOr[AccountContainer] = js.undefined
 }
 object DrawerHeaderAccountProps {
   

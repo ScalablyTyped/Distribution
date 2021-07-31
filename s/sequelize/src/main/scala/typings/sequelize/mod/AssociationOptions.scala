@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Plural
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Association class
   */
-@js.native
 trait AssociationOptions extends StObject {
   
   /**
@@ -21,21 +19,21 @@ trait AssociationOptions extends StObject {
     * same alias when eager loading and when getting assocated models. Defaults to the singularized name of
     * target
     */
-  var as: js.UndefOr[String | Plural] = js.native
+  var as: js.UndefOr[String | Plural] = js.undefined
   
   /**
     * Should on update and on delete constraints be enabled on the foreign key.
     */
-  var constraints: js.UndefOr[Boolean] = js.native
+  var constraints: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the foreign key in the target table or an object representing the type definition for the
     * foreign column (see `Sequelize.define` for syntax). When using an object, you can add a `name` property
     * to set the name of the column. Defaults to the name of source + primary key of source
     */
-  var foreignKey: js.UndefOr[String | AssociationForeignKeyOptions] = js.native
+  var foreignKey: js.UndefOr[String | AssociationForeignKeyOptions] = js.undefined
   
-  var foreignKeyConstraint: js.UndefOr[Boolean] = js.native
+  var foreignKeyConstraint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true to run before-/afterDestroy hooks when an associated model is deleted because of a cascade.
@@ -45,7 +43,7 @@ trait AssociationOptions extends StObject {
     *
     * Defaults to false
     */
-  var hooks: js.UndefOr[Boolean] = js.native
+  var hooks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * What happens when delete occurs.
@@ -54,16 +52,16 @@ trait AssociationOptions extends StObject {
     *
     * Defaults to 'SET NULL' or 'CASCADE'
     */
-  var onDelete: js.UndefOr[String] = js.native
+  var onDelete: js.UndefOr[String] = js.undefined
   
   /**
     * What happens when update occurs
     *
     * Defaults to 'CASCADE'
     */
-  var onUpdate: js.UndefOr[String] = js.native
+  var onUpdate: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[AssociationScope] = js.native
+  var scope: js.UndefOr[AssociationScope] = js.undefined
 }
 object AssociationOptions {
   

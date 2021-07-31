@@ -3,47 +3,46 @@ package typings.docxTemplates.typesMod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePars extends StObject {
   
   /**
     * Optional alt text.
     */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /**
     * Either an ArrayBuffer or a base64 string with the image data.
     */
-  var data: ArrayBuffer | String = js.native
+  var data: ArrayBuffer | String
   
   /**
     * One of '.png', '.gif', '.jpg', '.jpeg', '.svg'.
     */
-  var extension: ImageExtension = js.native
+  var `extension`: ImageExtension
   
   /**
     * Desired height of the image in centimeters.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Optional. When injecting an SVG image, a fallback non-SVG (png/jpg/gif, etc.) image can be provided. This thumbnail is used when SVG images are not supported (e.g. older versions of Word) or when the document is previewed by e.g. Windows Explorer. See usage example below.
     */
-  var thumbnail: js.UndefOr[Image] = js.native
+  var thumbnail: js.UndefOr[Image] = js.undefined
   
   /**
     * Desired width of the image in centimeters.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object ImagePars {
   
   @scala.inline
-  def apply(data: ArrayBuffer | String, extension: ImageExtension, height: Double, width: Double): ImagePars = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  def apply(data: ArrayBuffer | String, `extension`: ImageExtension, height: Double, width: Double): ImagePars = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePars]
   }
   

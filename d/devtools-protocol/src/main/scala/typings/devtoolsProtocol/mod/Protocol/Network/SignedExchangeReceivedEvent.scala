@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedExchangeReceivedEvent extends StObject {
   
   /**
     * Information about the signed exchange response.
     */
-  var info: SignedExchangeInfo = js.native
+  var info: SignedExchangeInfo
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object SignedExchangeReceivedEvent {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateExternalConnectionResult extends StObject {
   
   /**
     *  The repository associated with the removed external connection. 
     */
-  var repository: js.UndefOr[RepositoryDescription] = js.native
+  var repository: js.UndefOr[RepositoryDescription] = js.undefined
 }
 object DisassociateExternalConnectionResult {
   

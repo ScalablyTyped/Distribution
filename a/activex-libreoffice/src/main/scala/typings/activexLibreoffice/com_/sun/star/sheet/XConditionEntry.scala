@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,12 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Is extended by any conditional format entry, e.g. color scale, data bar, icon set, date formats, condition formats
   */
-@js.native
-trait XConditionEntry extends XInterface {
+trait XConditionEntry
+  extends StObject
+     with XInterface {
   
-  val Type: Double = js.native
+  val Type: Double
   
-  def getType(): Double = js.native
+  def getType(): Double
 }
 object XConditionEntry {
   

@@ -7,53 +7,51 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.UR
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesApnsmessageMod {
   
-  @js.native
   trait APNSMessage extends StObject {
     
     /**
       * The action that occurs if the user taps a push notification delivered by the campaign: OPEN_APP - Your app launches, or it becomes the foreground app if it has been sent to the background. This is the default action. DEEP_LINK - Uses deep linking features in iOS and Android to open your app and display a designated user interface within the app. URL - The default mobile browser on the user's device launches and opens a web page at the URL you specify. Possible values include: OPEN_APP | DEEP_LINK | URL
       */
-    var Action: js.UndefOr[OPEN_APP | DEEP_LINK | URL | String] = js.native
+    var Action: js.UndefOr[OPEN_APP | DEEP_LINK | URL | String] = js.undefined
     
     /**
       * Include this key when you want the system to modify the badge of your app icon. If this key is not included in the dictionary, the badge is not changed. To remove the badge, set the value of this key to 0.
       */
-    var Badge: js.UndefOr[Double] = js.native
+    var Badge: js.UndefOr[Double] = js.undefined
     
     /**
       * The message body of the notification.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * Provide this key with a string value that represents the notification's type. This value corresponds to the value in the identifier property of one of your app's registered categories.
       */
-    var Category: js.UndefOr[String] = js.native
+    var Category: js.UndefOr[String] = js.undefined
     
     /**
       * An ID that, if assigned to multiple messages, causes APNs to coalesce the messages into a single push notification instead of delivering each message individually. The value must not exceed 64 bytes. Amazon Pinpoint uses this value to set the apns-collapse-id request header when it sends the message to APNs.
       */
-    var CollapseId: js.UndefOr[String] = js.native
+    var CollapseId: js.UndefOr[String] = js.undefined
     
     /**
       * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
       */
-    var Data: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Data: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * The URL that points to a video used in the push notification.
       */
-    var MediaUrl: js.UndefOr[String] = js.native
+    var MediaUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The preferred authentication method, either "CERTIFICATE" or "TOKEN"
       */
-    var PreferredAuthenticationMethod: js.UndefOr[String] = js.native
+    var PreferredAuthenticationMethod: js.UndefOr[String] = js.undefined
     
     /**
       * The message priority. Amazon Pinpoint uses this value to set the apns-priority request header when it sends the message to APNs. Accepts the following values:
@@ -68,49 +66,49 @@ object typesApnsmessageMod {
       *
       * For more information about the apns-priority parameter, see Communicating with APNs in the APNs Local and Remote Notification Programming Guide.
       */
-    var Priority: js.UndefOr[String] = js.native
+    var Priority: js.UndefOr[String] = js.undefined
     
     /**
       * The Raw JSON formatted string to be used as the payload. This value overrides the message.
       */
-    var RawContent: js.UndefOr[String] = js.native
+    var RawContent: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates if the message should display on the users device. Silent pushes can be used for Remote Configuration and Phone Home use cases.
       */
-    var SilentPush: js.UndefOr[Boolean] = js.native
+    var SilentPush: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include this key when you want the system to play a sound. The value of this key is the name of a sound file in your app's main bundle or in the Library/Sounds folder of your app's data container. If the sound file cannot be found, or if you specify defaultfor the value, the system plays the default alert sound.
       */
-    var Sound: js.UndefOr[String] = js.native
+    var Sound: js.UndefOr[String] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     var Substitutions: js.UndefOr[
         (StringDictionary[js.Array[String] | Iterable[String]]) | (Iterable[js.Tuple2[String, js.Array[String] | Iterable[String]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Provide this key with a string value that represents the app-specific identifier for grouping notifications. If you provide a Notification Content app extension, you can use this value to group your notifications together.
       */
-    var ThreadId: js.UndefOr[String] = js.native
+    var ThreadId: js.UndefOr[String] = js.undefined
     
     /**
       * The length of time (in seconds) that APNs stores and attempts to deliver the message. If the value is 0, APNs does not store the message or attempt to deliver it more than once. Amazon Pinpoint uses this value to set the apns-expiration request header when it sends the message to APNs.
       */
-    var TimeToLive: js.UndefOr[Double] = js.native
+    var TimeToLive: js.UndefOr[Double] = js.undefined
     
     /**
       * The message title that displays above the message on the user's device.
       */
-    var Title: js.UndefOr[String] = js.native
+    var Title: js.UndefOr[String] = js.undefined
     
     /**
       * The URL to open in the user's mobile browser. Used if the value for Action is URL.
       */
-    var Url: js.UndefOr[String] = js.native
+    var Url: js.UndefOr[String] = js.undefined
   }
   object APNSMessage {
     
@@ -229,20 +227,21 @@ object typesApnsmessageMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAPNSMessage extends APNSMessage {
+  trait UnmarshalledAPNSMessage
+    extends StObject
+       with APNSMessage {
     
     /**
       * The data payload used for a silent push. This payload is added to the notifications' data.pinpoint.jsonBody' object
       */
     @JSName("Data")
-    var Data_UnmarshalledAPNSMessage: js.UndefOr[StringDictionary[String]] = js.native
+    var Data_UnmarshalledAPNSMessage: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Default message substitutions. Can be overridden by individual address substitutions.
       */
     @JSName("Substitutions")
-    var Substitutions_UnmarshalledAPNSMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var Substitutions_UnmarshalledAPNSMessage: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   }
   object UnmarshalledAPNSMessage {
     

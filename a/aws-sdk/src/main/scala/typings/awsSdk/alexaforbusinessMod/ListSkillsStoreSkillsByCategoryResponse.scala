@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSkillsStoreSkillsByCategoryResponse extends StObject {
   
   /**
     * The tokens used for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The skill store skills.
     */
-  var SkillsStoreSkills: js.UndefOr[SkillsStoreSkillList] = js.native
+  var SkillsStoreSkills: js.UndefOr[SkillsStoreSkillList] = js.undefined
 }
 object ListSkillsStoreSkillsByCategoryResponse {
   

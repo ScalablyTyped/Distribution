@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientEventarc.gapi.client.eventarc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trigger extends StObject {
   
   /** Output only. The creation time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Required. Destinations specify where the events will be sent to. Exactly one destination is supported at this time. */
-  var destination: js.UndefOr[Destination] = js.native
+  var destination: js.UndefOr[Destination] = js.undefined
   
   /**
     * Output only. This checksum is computed by the server based on the value of other fields, and may be sent only on create requests to ensure the client has an up-to-date value before
     * proceeding.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Required. The criteria by which events are filtered. Only events that match with this critera will be sent to the destinations. */
-  var matchingCriteria: js.UndefOr[js.Array[MatchingCriteria]] = js.native
+  var matchingCriteria: js.UndefOr[js.Array[MatchingCriteria]] = js.undefined
   
   /** Required. The resource name of the trigger. Must be unique within the location on the project. Format: projects/{project}/locations/{location}/triggers/{trigger} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The IAM service account email associated with the trigger. The service account represents the identity of the trigger. The principal who calls this API must have
@@ -33,16 +31,16 @@ trait Trigger extends StObject {
     * https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account for information on how to invoke authenticated Cloud Run services. In order to create Audit Log
     * triggers, the service account should also have 'eventarc.events.receiveAuditLogV1Written' permission.
     */
-  var serviceAccount: js.UndefOr[String] = js.native
+  var serviceAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. In order to deliver messages, Eventarc may configure other GCP products as transport intermediary. This field returns a reference to that transport intermediary. This
     * information can be used for debugging purposes.
     */
-  var transport: js.UndefOr[Transport] = js.native
+  var transport: js.UndefOr[Transport] = js.undefined
   
   /** Output only. The last-modified time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Trigger {
   

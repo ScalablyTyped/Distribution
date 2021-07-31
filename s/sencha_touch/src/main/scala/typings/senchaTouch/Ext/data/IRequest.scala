@@ -3,268 +3,268 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IRequest extends IBase {
+trait IRequest
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var callbackKey: js.UndefOr[String] = js.native
+  var callbackKey: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disableCaching: js.UndefOr[Boolean] = js.native
+  var disableCaching: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns the value of action
     * @returns String
     */
-  var getAction: js.UndefOr[js.Function0[String]] = js.native
+  var getAction: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of args
     * @returns Object
     */
-  var getArgs: js.UndefOr[js.Function0[_]] = js.native
+  var getArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of callback
     * @returns Object
     */
-  var getCallback: js.UndefOr[js.Function0[_]] = js.native
+  var getCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of callbackKey
     * @returns String
     */
-  var getCallbackKey: js.UndefOr[js.Function0[String]] = js.native
+  var getCallbackKey: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of directFn
     * @returns Object
     */
-  var getDirectFn: js.UndefOr[js.Function0[_]] = js.native
+  var getDirectFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of disableCaching
     * @returns Boolean
     */
-  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of headers
     * @returns Object
     */
-  var getHeaders: js.UndefOr[js.Function0[_]] = js.native
+  var getHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of jsonData
     * @returns Object
     */
-  var getJsonData: js.UndefOr[js.Function0[_]] = js.native
+  var getJsonData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
     */
-  var getMethod: js.UndefOr[js.Function0[String]] = js.native
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of operation
     * @returns Ext.data.Operation
     */
-  var getOperation: js.UndefOr[js.Function0[IOperation]] = js.native
+  var getOperation: js.UndefOr[js.Function0[IOperation]] = js.undefined
   
   /** [Method] Returns the value of params
     * @returns Object
     */
-  var getParams: js.UndefOr[js.Function0[_]] = js.native
+  var getParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of password
     * @returns String
     */
-  var getPassword: js.UndefOr[js.Function0[String]] = js.native
+  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of proxy
     * @returns Ext.data.proxy.Proxy
     */
-  var getProxy: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.proxy.IProxy]] = js.native
+  var getProxy: js.UndefOr[js.Function0[typings.senchaTouch.Ext.data.proxy.IProxy]] = js.undefined
   
   /** [Method] Returns the value of records
     * @returns Object
     */
-  var getRecords: js.UndefOr[js.Function0[_]] = js.native
+  var getRecords: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of scope
     * @returns Object
     */
-  var getScope: js.UndefOr[js.Function0[_]] = js.native
+  var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
     */
-  var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+  var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of url
     * @returns String
     */
-  var getUrl: js.UndefOr[js.Function0[String]] = js.native
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of useDefaultXhrHeader
     * @returns Object
     */
-  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[_]] = js.native
+  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of username
     * @returns String
     */
-  var getUsername: js.UndefOr[js.Function0[String]] = js.native
+  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of withCredentials
     * @returns Boolean
     */
-  var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getWithCredentials: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of xmlData
     * @returns Object
     */
-  var getXmlData: js.UndefOr[js.Function0[_]] = js.native
+  var getXmlData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Object) */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var jsonData: js.UndefOr[js.Any] = js.native
+  var jsonData: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.data.JsonP) */
-  var jsonp: js.UndefOr[IJsonP] = js.native
+  var jsonp: js.UndefOr[IJsonP] = js.undefined
   
   /** [Config Option] (String) */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.data.Operation) */
-  var operation: js.UndefOr[IOperation] = js.native
+  var operation: js.UndefOr[IOperation] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.data.proxy.Proxy) */
-  var proxy: js.UndefOr[typings.senchaTouch.Ext.data.proxy.IProxy] = js.native
+  var proxy: js.UndefOr[typings.senchaTouch.Ext.data.proxy.IProxy] = js.undefined
   
   /** [Method] Sets the value of action
     * @param action String The new value.
     */
-  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.native
+  var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of args
     * @param args Object The new value.
     */
-  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.native
+  var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of callback
     * @param callback Object The new value.
     */
-  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.native
+  var setCallback: js.UndefOr[js.Function1[/* callback */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of callbackKey
     * @param callbackKey String The new value.
     */
-  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.native
+  var setCallbackKey: js.UndefOr[js.Function1[/* callbackKey */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of directFn
     * @param directFn Object The new value.
     */
-  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of disableCaching
     * @param disableCaching Boolean The new value.
     */
-  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of headers
     * @param headers Object The new value.
     */
-  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.native
+  var setHeaders: js.UndefOr[js.Function1[/* headers */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of jsonData
     * @param jsonData Object The new value.
     */
-  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[js.Any], Unit]] = js.native
+  var setJsonData: js.UndefOr[js.Function1[/* jsonData */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
     */
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.native
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of operation
     * @param operation Ext.data.Operation The new value.
     */
-  var setOperation: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], Unit]] = js.native
+  var setOperation: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], Unit]] = js.undefined
   
   /** [Method] Sets the value of params
     * @param params Object The new value.
     */
-  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of password
     * @param password String The new value.
     */
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.native
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of proxy
     * @param proxy Ext.data.proxy.Proxy The new value.
     */
   var setProxy: js.UndefOr[
     js.Function1[/* proxy */ js.UndefOr[typings.senchaTouch.Ext.data.proxy.IProxy], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of records
     * @param records Object The new value.
     */
-  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.native
+  var setRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of scope
     * @param scope Object The new value.
     */
-  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
     */
-  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of url
     * @param url String The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of useDefaultXhrHeader
     * @param useDefaultXhrHeader Object The new value.
     */
-  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[js.Any], Unit]] = js.native
+  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of username
     * @param username String The new value.
     */
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.native
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of withCredentials
     * @param withCredentials Boolean The new value.
     */
-  var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.native
+  var setWithCredentials: js.UndefOr[js.Function1[/* withCredentials */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of xmlData
     * @param xmlData Object The new value.
     */
-  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[js.Any], Unit]] = js.native
+  var setXmlData: js.UndefOr[js.Function1[/* xmlData */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var xmlData: js.UndefOr[js.Any] = js.native
+  var xmlData: js.UndefOr[js.Any] = js.undefined
 }
 object IRequest {
   
@@ -302,13 +302,13 @@ object IRequest {
     def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
     
     @scala.inline
-    def setGetArgs(value: () => _): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    def setGetArgs(value: () => js.Any): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
     
     @scala.inline
-    def setGetCallback(value: () => _): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+    def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCallbackKey(value: () => String): Self = StObject.set(x, "getCallbackKey", js.Any.fromFunction0(value))
@@ -320,7 +320,7 @@ object IRequest {
     def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
     
     @scala.inline
-    def setGetDirectFn(value: () => _): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+    def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
@@ -332,13 +332,13 @@ object IRequest {
     def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
     @scala.inline
-    def setGetHeaders(value: () => _): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
+    def setGetHeaders(value: () => js.Any): Self = StObject.set(x, "getHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetHeadersUndefined: Self = StObject.set(x, "getHeaders", js.undefined)
     
     @scala.inline
-    def setGetJsonData(value: () => _): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
+    def setGetJsonData(value: () => js.Any): Self = StObject.set(x, "getJsonData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetJsonDataUndefined: Self = StObject.set(x, "getJsonData", js.undefined)
@@ -356,7 +356,7 @@ object IRequest {
     def setGetOperationUndefined: Self = StObject.set(x, "getOperation", js.undefined)
     
     @scala.inline
-    def setGetParams(value: () => _): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
+    def setGetParams(value: () => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
@@ -374,13 +374,13 @@ object IRequest {
     def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
     
     @scala.inline
-    def setGetRecords(value: () => _): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
+    def setGetRecords(value: () => js.Any): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetRecordsUndefined: Self = StObject.set(x, "getRecords", js.undefined)
     
     @scala.inline
-    def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
@@ -398,7 +398,7 @@ object IRequest {
     def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
     @scala.inline
-    def setGetUseDefaultXhrHeader(value: () => _): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
+    def setGetUseDefaultXhrHeader(value: () => js.Any): Self = StObject.set(x, "getUseDefaultXhrHeader", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetUseDefaultXhrHeaderUndefined: Self = StObject.set(x, "getUseDefaultXhrHeader", js.undefined)
@@ -416,7 +416,7 @@ object IRequest {
     def setGetWithCredentialsUndefined: Self = StObject.set(x, "getWithCredentials", js.undefined)
     
     @scala.inline
-    def setGetXmlData(value: () => _): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
+    def setGetXmlData(value: () => js.Any): Self = StObject.set(x, "getXmlData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetXmlDataUndefined: Self = StObject.set(x, "getXmlData", js.undefined)

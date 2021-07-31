@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Affinity is a group of affinity scheduling rules.
   */
-@js.native
 trait Affinity extends StObject {
   
   /**
     * Describes node affinity scheduling rules for the pod.
     */
-  var nodeAffinity: NodeAffinity = js.native
+  var nodeAffinity: NodeAffinity
   
   /**
     * Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone, etc. as some other pod(s)).
     */
-  var podAffinity: PodAffinity = js.native
+  var podAffinity: PodAffinity
   
   /**
     * Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node, zone, etc. as some other pod(s)).
     */
-  var podAntiAffinity: PodAntiAffinity = js.native
+  var podAntiAffinity: PodAntiAffinity
 }
 object Affinity {
   

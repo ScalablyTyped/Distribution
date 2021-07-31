@@ -2,11 +2,11 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NightwatchTestSettingScreenshots extends NightwatchTestSettingGeneric {
+trait NightwatchTestSettingScreenshots
+  extends StObject
+     with NightwatchTestSettingGeneric {
   
   /**
     * Selenium generates screenshots when command errors occur. With on_failure set to true, also generates screenshots for failing or erroring tests. These are saved on the disk.
@@ -19,7 +19,7 @@ trait NightwatchTestSettingScreenshots extends NightwatchTestSettingGeneric {
     *      "path" : ""
     * }
     */
-  var screenshots: NightwatchScreenshotOptions = js.native
+  var screenshots: NightwatchScreenshotOptions
 }
 object NightwatchTestSettingScreenshots {
   

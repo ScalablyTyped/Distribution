@@ -2,51 +2,49 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridSessionsRequest extends StObject {
   
   /**
     * Return only sessions created after this time.
     */
-  var creationTimeAfter: js.UndefOr[DateTime] = js.native
+  var creationTimeAfter: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Return only sessions created before this time.
     */
-  var creationTimeBefore: js.UndefOr[DateTime] = js.native
+  var creationTimeBefore: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Return only sessions that ended after this time.
     */
-  var endTimeAfter: js.UndefOr[DateTime] = js.native
+  var endTimeAfter: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Return only sessions that ended before this time.
     */
-  var endTimeBefore: js.UndefOr[DateTime] = js.native
+  var endTimeBefore: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Return only this many results at a time.
     */
-  var maxResult: js.UndefOr[MaxPageSize] = js.native
+  var maxResult: js.UndefOr[MaxPageSize] = js.undefined
   
   /**
     * Pagination token.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * ARN of a TestGridProject.
     */
-  var projectArn: DeviceFarmArn = js.native
+  var projectArn: DeviceFarmArn
   
   /**
     * Return only sessions in this state.
     */
-  var status: js.UndefOr[TestGridSessionStatus] = js.native
+  var status: js.UndefOr[TestGridSessionStatus] = js.undefined
 }
 object ListTestGridSessionsRequest {
   

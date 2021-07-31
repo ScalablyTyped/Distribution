@@ -2,17 +2,15 @@ package typings.scroller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EasyScroller extends StObject {
   
-  def bindEvents(): Unit = js.native
+  def bindEvents(): Unit
   
-  def reflow(): Unit = js.native
+  def reflow(): Unit
   
-  def render(): Unit = js.native
+  def render(): Unit
 }
 object EasyScroller {
   

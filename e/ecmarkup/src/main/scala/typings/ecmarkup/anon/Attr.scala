@@ -4,28 +4,28 @@ import typings.ecmarkup.ecmarkupStrings.attr
 import typings.ecmarkup.specMod.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Attr extends Warning {
+trait Attr
+  extends StObject
+     with Warning {
   
-  var attr: String = js.native
+  var attr: String
   
-  var message: String = js.native
+  var message: String
   
-  var node: typings.std.Element = js.native
+  var node: typings.std.Element
   
-  var ruleId: String = js.native
+  var ruleId: String
   
-  var `type`: attr = js.native
+  var `type`: attr
 }
 object Attr {
   
   @scala.inline
-  def apply(attr: String, message: String, node: typings.std.Element, ruleId: String, `type`: attr): Attr = {
+  def apply(attr: String, message: String, node: typings.std.Element, ruleId: String): Attr = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("attr")
     __obj.asInstanceOf[Attr]
   }
   

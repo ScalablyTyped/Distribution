@@ -3,15 +3,13 @@ package typings.reactSelect.anon
 import typings.reactSelect.accessibilityMod.ValueEventContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var context: ValueEventContext = js.native
+  var context: ValueEventContext
   
-  var event: String = js.native
+  var event: String
 }
 object Context {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("OpenPagePaperSizeDialogCommand")
 @js.native
 class OpenPagePaperSizeDialogCommand ()
-  extends typings.devexpressWeb.OpenPagePaperSizeDialogCommand
+  extends StObject
+     with typings.devexpressWeb.OpenPagePaperSizeDialogCommand {
+  
+  /**
+    * Executes the OpenPagePaperSizeDialogCommand command.
+    */
+  /* CompleteClass */
+  override def execute(): Boolean = js.native
+  
+  /**
+    * Gets information about the command's state.
+    */
+  /* CompleteClass */
+  override def getState(): typings.devexpressWeb.SimpleCommandState = js.native
+}

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of an asynchronous read operation of a GATT Characteristic or Descriptor value. */
-@js.native
 trait GattReadResult extends StObject {
   
   /** Gets the status of an asynchronous operation. */
-  var status: GattCommunicationStatus = js.native
+  var status: GattCommunicationStatus
   
   /** Gets the value read from the device. */
-  var value: IBuffer = js.native
+  var value: IBuffer
 }
 object GattReadResult {
   

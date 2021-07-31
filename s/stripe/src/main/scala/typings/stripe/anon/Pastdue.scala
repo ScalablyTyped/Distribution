@@ -5,21 +5,19 @@ import typings.stripe.stripeStrings.rejectedDotlisted
 import typings.stripe.stripeStrings.under_review
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pastdue extends StObject {
   
   /**
     * If the cardholder is disabled, this string describes why. Can be one of listed, rejected.listed, or under_review.
     */
-  var disabled_reason: listed | rejectedDotlisted | under_review = js.native
+  var disabled_reason: listed | rejectedDotlisted | under_review
   
   /**
     * If not empty, this field contains the list of fields that need to be collected in order to verify and re-enabled the cardholder.
     */
-  var past_due: js.Array[String] = js.native
+  var past_due: js.Array[String]
 }
 object Pastdue {
   

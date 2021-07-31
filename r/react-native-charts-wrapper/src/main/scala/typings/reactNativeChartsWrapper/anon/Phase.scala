@@ -2,17 +2,15 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phase extends StObject {
   
-  var lineLength: Double = js.native
+  var lineLength: Double
   
-  var phase: js.UndefOr[Double] = js.native
+  var phase: js.UndefOr[Double] = js.undefined
   
-  var spaceLength: Double = js.native
+  var spaceLength: Double
 }
 object Phase {
   

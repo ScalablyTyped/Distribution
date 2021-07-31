@@ -6,12 +6,10 @@ import typings.awsSdkClientPinpointBrowser.typesItemResponseMod.UnmarshalledItem
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventsResponseMod {
   
-  @js.native
   trait EventsResponse extends StObject {
     
     /**
@@ -19,7 +17,7 @@ object typesEventsResponseMod {
       *
       * If no item response exists, the value can also be one of the following: 202 (if the request was processed successfully) or 400 (if the payload was invalid, or required fields were missing).
       */
-    var Results: js.UndefOr[StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])] = js.native
+    var Results: js.UndefOr[StringDictionary[ItemResponse] | (Iterable[js.Tuple2[String, ItemResponse]])] = js.undefined
   }
   object EventsResponse {
     
@@ -40,8 +38,9 @@ object typesEventsResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledEventsResponse extends EventsResponse {
+  trait UnmarshalledEventsResponse
+    extends StObject
+       with EventsResponse {
     
     /**
       * A map that contains a multipart response for each endpoint. Each item in this object uses the endpoint ID as the key, and the item response as the value.
@@ -49,7 +48,7 @@ object typesEventsResponseMod {
       * If no item response exists, the value can also be one of the following: 202 (if the request was processed successfully) or 400 (if the payload was invalid, or required fields were missing).
       */
     @JSName("Results")
-    var Results_UnmarshalledEventsResponse: js.UndefOr[StringDictionary[UnmarshalledItemResponse]] = js.native
+    var Results_UnmarshalledEventsResponse: js.UndefOr[StringDictionary[UnmarshalledItemResponse]] = js.undefined
   }
   object UnmarshalledEventsResponse {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aggregates extends StObject {
   
   /**
     * The average (mean) value of the time series over a time interval window.
     */
-  var average: js.UndefOr[AggregatedDoubleValue] = js.native
+  var average: js.UndefOr[AggregatedDoubleValue] = js.undefined
   
   /**
     * The count of data points in the time series over a time interval window.
     */
-  var count: js.UndefOr[AggregatedDoubleValue] = js.native
+  var count: js.UndefOr[AggregatedDoubleValue] = js.undefined
   
   /**
     * The maximum value of the time series over a time interval window.
     */
-  var maximum: js.UndefOr[AggregatedDoubleValue] = js.native
+  var maximum: js.UndefOr[AggregatedDoubleValue] = js.undefined
   
   /**
     * The minimum value of the time series over a time interval window.
     */
-  var minimum: js.UndefOr[AggregatedDoubleValue] = js.native
+  var minimum: js.UndefOr[AggregatedDoubleValue] = js.undefined
   
   /**
     * The standard deviation of the time series over a time interval window.
     */
-  var standardDeviation: js.UndefOr[AggregatedDoubleValue] = js.native
+  var standardDeviation: js.UndefOr[AggregatedDoubleValue] = js.undefined
   
   /**
     * The sum of the time series over a time interval window.
     */
-  var sum: js.UndefOr[AggregatedDoubleValue] = js.native
+  var sum: js.UndefOr[AggregatedDoubleValue] = js.undefined
 }
 object Aggregates {
   

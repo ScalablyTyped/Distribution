@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxyTargetMod {
@@ -78,6 +77,10 @@ object proxyTargetMod {
   /* static members */
   object ProxyTarget {
     
+    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ProxyTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -87,50 +90,44 @@ object proxyTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ProxyTarget = js.native
-    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ProxyTarget = js.native
-    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyTargetState): ProxyTarget = js.native
-    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProxyTargetState, opts: CustomResourceOptions): ProxyTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyTargetState): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProxyTargetState, opts: CustomResourceOptions): ProxyTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ProxyTarget]
     
     /**
       * Returns true if the given object is an instance of ProxyTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/proxyTarget", "ProxyTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/proxyTarget.ProxyTarget */ Boolean]
   }
   
-  @js.native
   trait ProxyTargetArgs extends StObject {
     
     /**
       * DB cluster identifier.
       */
-    val dbClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DB instance identifier.
       */
-    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DB proxy.
       */
-    val dbProxyName: Input[String] = js.native
+    val dbProxyName: Input[String]
     
     /**
       * The name of the target group.
       */
-    val targetGroupName: Input[String] = js.native
+    val targetGroupName: Input[String]
   }
   object ProxyTargetArgs {
     
@@ -163,58 +160,57 @@ object proxyTargetMod {
     }
   }
   
-  @js.native
   trait ProxyTargetState extends StObject {
     
     /**
       * DB cluster identifier.
       */
-    val dbClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DB instance identifier.
       */
-    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the DB proxy.
       */
-    val dbProxyName: js.UndefOr[Input[String]] = js.native
+    val dbProxyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Hostname for the target RDS DB Instance. Only returned for `RDS_INSTANCE` type.
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Port for the target RDS DB Instance or Aurora DB Cluster.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Identifier representing the DB Instance or DB Cluster target.
       */
-    val rdsResourceId: js.UndefOr[Input[String]] = js.native
+    val rdsResourceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) for the DB instance or DB cluster. Currently not returned by the RDS API.
       */
-    val targetArn: js.UndefOr[Input[String]] = js.native
+    val targetArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the target group.
       */
-    val targetGroupName: js.UndefOr[Input[String]] = js.native
+    val targetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * DB Cluster identifier for the DB Instance target. Not returned unless manually importing an `RDS_INSTANCE` target that is part of a DB Cluster.
       */
-    val trackedClusterId: js.UndefOr[Input[String]] = js.native
+    val trackedClusterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of target. e.g. `RDS_INSTANCE` or `TRACKED_CLUSTER`
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object ProxyTargetState {
     

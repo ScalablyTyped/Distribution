@@ -2,25 +2,23 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A document footnote.
   */
-@js.native
 trait SchemaFootnote extends StObject {
   
   /**
     * The contents of the footnote.  The indexes for a footnote&#39;s content
     * begin at zero.
     */
-  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[SchemaStructuralElement]] = js.undefined
   
   /**
     * The ID of the footnote.
     */
-  var footnoteId: js.UndefOr[String] = js.native
+  var footnoteId: js.UndefOr[String] = js.undefined
 }
 object SchemaFootnote {
   

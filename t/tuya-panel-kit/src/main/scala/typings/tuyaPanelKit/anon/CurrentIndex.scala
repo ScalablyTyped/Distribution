@@ -4,21 +4,19 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentIndex extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var currentIndex: Double = js.native
+  var currentIndex: Double
   
-  var dotActiveStyle: StyleProp[ViewStyle] = js.native
+  var dotActiveStyle: StyleProp[ViewStyle]
   
-  var dotStyle: StyleProp[ViewStyle] = js.native
+  var dotStyle: StyleProp[ViewStyle]
   
-  var dotWrapperStyle: StyleProp[ViewStyle] = js.native
+  var dotWrapperStyle: StyleProp[ViewStyle]
 }
 object CurrentIndex {
   

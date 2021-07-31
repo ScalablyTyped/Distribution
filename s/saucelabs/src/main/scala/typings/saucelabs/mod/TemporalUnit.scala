@@ -3,20 +3,19 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemporalUnit
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var dateBased: js.UndefOr[Boolean] = js.native
+  var dateBased: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Duration] = js.native
+  var duration: js.UndefOr[Duration] = js.undefined
   
-  var durationEstimated: js.UndefOr[Boolean] = js.native
+  var durationEstimated: js.UndefOr[Boolean] = js.undefined
   
-  var timeBased: js.UndefOr[Boolean] = js.native
+  var timeBased: js.UndefOr[Boolean] = js.undefined
 }
 object TemporalUnit {
   

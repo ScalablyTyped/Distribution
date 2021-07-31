@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSpreadsheet
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,99 +16,99 @@ trait IgSpreadsheet
   /**
     * Invoked when an action is executed on the Spreadsheet.
     */
-  var actionExecuted: js.UndefOr[ActionExecutedEvent] = js.native
+  var actionExecuted: js.UndefOr[ActionExecutedEvent] = js.undefined
   
   /**
     * Invoked when an action is about to be executed by the Spreadsheet.
     */
-  var actionExecuting: js.UndefOr[ActionExecutingEvent] = js.native
+  var actionExecuting: js.UndefOr[ActionExecutingEvent] = js.undefined
   
   /**
     * Returns or sets the A1 format address of the current active cell within the selected worksheet.
     *
     */
-  var activeCell: js.UndefOr[String] = js.native
+  var activeCell: js.UndefOr[String] = js.undefined
   
   /**
     * Invoked when the activeCell of the Spreadsheet has changed.
     */
-  var activeCellChanged: js.UndefOr[ActiveCellChangedEvent] = js.native
+  var activeCellChanged: js.UndefOr[ActiveCellChangedEvent] = js.undefined
   
   /**
     * Invoked when the activePane of the Spreadsheet has changed.
     */
-  var activePaneChanged: js.UndefOr[ActivePaneChangedEvent] = js.native
+  var activePaneChanged: js.UndefOr[ActivePaneChangedEvent] = js.undefined
   
   /**
     * Invoked when the activeTable of the Spreadsheet has changed.
     */
-  var activeTableChanged: js.UndefOr[ActiveTableChangedEvent] = js.native
+  var activeTableChanged: js.UndefOr[ActiveTableChangedEvent] = js.undefined
   
   /**
     * Returns or sets the Worksheet from the workbook whose content should be displayed within the control.
     *
     */
-  var activeWorksheet: js.UndefOr[js.Any] = js.native
+  var activeWorksheet: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Invoked when the activeWorksheet of the Spreadsheet has changed.
     */
-  var activeWorksheetChanged: js.UndefOr[ActiveWorksheetChangedEvent] = js.native
+  var activeWorksheetChanged: js.UndefOr[ActiveWorksheetChangedEvent] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the spreadsheet allows adding worksheets.
     *
     */
-  var allowAddWorksheet: js.UndefOr[Boolean] = js.native
+  var allowAddWorksheet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the spreadsheet allows deleting worksheets.
     *
     */
-  var allowDeleteWorksheet: js.UndefOr[Boolean] = js.native
+  var allowDeleteWorksheet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating if the grid lines are displayed in the selected worksheets.
     *
     */
-  var areGridlinesVisible: js.UndefOr[Boolean] = js.native
+  var areGridlinesVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating if the row and column headers are displayed for the selected worksheets.
     *
     */
-  var areHeadersVisible: js.UndefOr[Boolean] = js.native
+  var areHeadersVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets an object with brushes for areas of the spreadsheet. The property name should be an item in the [SpreadsheetResourceId enumeration](ig.spreadsheet.SpreadsheetResourceId) and the property value a string representing a brush. These brushes override any css styling for the associated object.
     *
     */
-  var brushes: js.UndefOr[IgSpreadsheetBrushes] = js.native
+  var brushes: js.UndefOr[IgSpreadsheetBrushes] = js.undefined
   
   /**
     * Invoked when a contextmenu is being opened for the Spreadsheet.
     */
-  var contextMenuOpening: js.UndefOr[ContextMenuOpeningEvent] = js.native
+  var contextMenuOpening: js.UndefOr[ContextMenuOpeningEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet has started in-place editing of the activeCell.
     */
-  var editModeEntered: js.UndefOr[EditModeEnteredEvent] = js.native
+  var editModeEntered: js.UndefOr[EditModeEnteredEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet is about to start in-place editing of the activeCell.
     */
-  var editModeEntering: js.UndefOr[EditModeEnteringEvent] = js.native
+  var editModeEntering: js.UndefOr[EditModeEnteringEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet has ended the in-place editing of the activeCell.
     */
-  var editModeExited: js.UndefOr[EditModeExitedEvent] = js.native
+  var editModeExited: js.UndefOr[EditModeExitedEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet is about to end the in-place editing of the activeCell.
     */
-  var editModeExiting: js.UndefOr[EditModeExitingEvent] = js.native
+  var editModeExiting: js.UndefOr[EditModeExitingEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet is exiting edit mode and the new value for the activeCell is not valid based on the criteria of that cell's ig.excel.DataValidationRule.
@@ -118,12 +117,12 @@ trait IgSpreadsheet
     * showErrorMessageForInvalidValue is true, a message box will be displayed to the end user to determine what action to take. One can handle this event and specify the action that should
     * be taken using the action.Note: The validation rule will not be evaluated if edit mode is being cancelled such as when the user presses Escape to cancel edit.Note: The action will default to AcceptChange if the ShowErrorMessageForInvalidValue of the validationRule is false; otherwise it will default to ShowPrompt.Note: Like Microsoft Excel, only the validation rule of the active cell is considered even if the update is affecting other cells in the selection.
     */
-  var editModeValidationError: js.UndefOr[EditModeValidationErrorEvent] = js.native
+  var editModeValidationError: js.UndefOr[EditModeValidationErrorEvent] = js.undefined
   
   /**
     * Invoked when the Spreadsheet is performing an operation on a protected Worksheet and there is a single range that may be unlocked to allow the operation to be performed.
     */
-  var editRangePasswordNeeded: js.UndefOr[EditRangePasswordNeededEvent] = js.native
+  var editRangePasswordNeeded: js.UndefOr[EditRangePasswordNeededEvent] = js.undefined
   
   /**
     * Returns or sets an enumeration indicating the direction of the cell adjacent to the activeCell that should be activated when the enter key is pressed.
@@ -135,13 +134,13 @@ trait IgSpreadsheet
     * left  The cell to the left should be activated
     *
     */
-  var enterKeyNavigationDirection: js.UndefOr[String] = js.native
+  var enterKeyNavigationDirection: js.UndefOr[String] = js.undefined
   
   /**
     * Returns or sets the number of decimal places by which a whole number typed in during edit mode should be adjusted when isFixedDecimalEnabled is true
     *
     */
-  var fixedDecimalPlaceCount: js.UndefOr[Double] = js.native
+  var fixedDecimalPlaceCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The height of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
@@ -151,30 +150,30 @@ trait IgSpreadsheet
     * "string" The widget height can be set in pixels (px) and percentage (%).
     * "number" The widget height can be set as a number
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Invoked when a hyperlink is being followed in the Spreadsheet.
     */
-  var hyperlinkExecuting: js.UndefOr[HyperlinkExecutingEvent] = js.native
+  var hyperlinkExecuting: js.UndefOr[HyperlinkExecutingEvent] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the adjacent cell indicated by the enterKeyNavigationDirection should be navigated to when the enter key is pressed.
     *
     */
-  var isEnterKeyNavigationEnabled: js.UndefOr[Boolean] = js.native
+  var isEnterKeyNavigationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether a fixed decimal place is automatically added when a whole number is entered while in edit mode.
     *
     */
-  var isFixedDecimalEnabled: js.UndefOr[Boolean] = js.native
+  var isFixedDecimalEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating if the formula bar is displayed within the Spreadsheet.
     *
     */
-  var isFormulaBarVisible: js.UndefOr[Boolean] = js.native
+  var isFormulaBarVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the control is in "End mode".
@@ -184,7 +183,7 @@ trait IgSpreadsheet
     * mode will end automatically such as when one presses an arrow key.
     *
     */
-  var isInEndMode: js.UndefOr[Boolean] = js.native
+  var isInEndMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether the scroll lock key is toggled.
@@ -194,48 +193,48 @@ trait IgSpreadsheet
     * performing actions that consider whether the scroll lock is enabled.
     *
     */
-  var isScrollLocked: js.UndefOr[Boolean] = js.native
+  var isScrollLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Returns or sets a boolean indicating whether undo is enabled for the control.
     *
     */
-  var isUndoEnabled: js.UndefOr[Boolean] = js.native
+  var isUndoEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Returns or sets the width of the name box within the formula bar.
     *
     */
-  var nameBoxWidth: js.UndefOr[Double] = js.native
+  var nameBoxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Type="ig.excel.Worksheet[]" Returns or sets an array of the Worksheets whose tabs are selected.
     *
     */
-  var selectedWorksheets: js.UndefOr[js.Any] = js.native
+  var selectedWorksheets: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Invoked when the selection for a ig.spreadsheet.SpreadsheetPane of the Spreadsheet is changed.
     */
-  var selectionChanged: js.UndefOr[IgSpreadsheetSelectionChangedEvent] = js.native
+  var selectionChanged: js.UndefOr[IgSpreadsheetSelectionChangedEvent] = js.undefined
   
   /**
     * Returns or sets a value indicating how the selection is updated when interacting with the cells via the mouse or keyboard.
@@ -244,19 +243,19 @@ trait IgSpreadsheet
     * addToSelection  New cell ranges are added to the cellRanges without needing to hold down the ctrl key when dragging via the mouse and a range is added with the first arrow key navigation after entering the mode. One can enter the mode by pressing Shift+F8.
     *
     */
-  var selectionMode: js.UndefOr[String] = js.native
+  var selectionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Invoked when the user will be prompted with a message regarding an operation that is being performed.
     */
-  var userPromptDisplaying: js.UndefOr[UserPromptDisplayingEvent] = js.native
+  var userPromptDisplaying: js.UndefOr[UserPromptDisplayingEvent] = js.undefined
   
   /**
     * Returns or sets the position of the screen tip used to display the input message for the data validation rule associated with the active cell.
     *
     * The provided object should have numeric properties called x and y.
     */
-  var validationInputMessagePosition: js.UndefOr[js.Any] = js.native
+  var validationInputMessagePosition: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The width of the spreadsheet. It can be set as a number in pixels, string (px) or percentage (%).
@@ -266,13 +265,13 @@ trait IgSpreadsheet
     * "string" The widget width can be set in pixels (px) and percentage (%).
     * "number" The widget width can be set as a number
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Returns or sets the workbook whose information is displayed in the control.
     *
     */
-  var workbook: js.UndefOr[js.Any] = js.native
+  var workbook: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Invoked when a change has been made to the workbook that might require a save.
@@ -281,13 +280,13 @@ trait IgSpreadsheet
     * does change state on the Workbook or one of its subobjects. An example of that would be a zoom
     * type operation (e.g. changing the magnificationInNormalView).
     */
-  var workbookDirtied: js.UndefOr[WorkbookDirtiedEvent] = js.native
+  var workbookDirtied: js.UndefOr[WorkbookDirtiedEvent] = js.undefined
   
   /**
     * Returns or sets the magnification of the selected worksheets.
     *
     */
-  var zoomLevel: js.UndefOr[Double] = js.native
+  var zoomLevel: js.UndefOr[Double] = js.undefined
 }
 object IgSpreadsheet {
   

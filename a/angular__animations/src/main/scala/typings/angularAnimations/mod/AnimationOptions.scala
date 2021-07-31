@@ -3,10 +3,8 @@ package typings.angularAnimations.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait AnimationOptions extends StObject {
     * and 10 milliseconds, respectively.The default unit is milliseconds.
     * Default value is 0, meaning no delay.
     */
-  var delay: js.UndefOr[Double | String] = js.native
+  var delay: js.UndefOr[Double | String] = js.undefined
   
   /**
     * A set of developer-defined parameters that modify styling and timing
     * when an animation action starts. An array of key-value pairs, where the provided value
     * is used as a default.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object AnimationOptions {
   

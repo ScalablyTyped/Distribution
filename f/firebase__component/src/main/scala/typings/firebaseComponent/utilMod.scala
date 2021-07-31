@@ -10,126 +10,111 @@ import typings.firebaseComponent.typesMod.InstanceFactory
 import typings.firebaseComponent.typesMod.InstantiationMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("@firebase/component/dist/test/util", "getFakeApp")
+  @JSImport("@firebase/component/dist/test/util", JSImport.Namespace)
   @js.native
-  def getFakeApp(): js.Any = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeApp")
-  @js.native
-  def getFakeApp(appName: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_badtest(
-    name: badtest,
-    factory: InstanceFactory[badtest],
-    multipleInstance: js.UndefOr[scala.Nothing],
-    instantiationMode: InstantiationMode
-  ): Component[badtest] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
+  @scala.inline
+  def getFakeApp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[js.Any]
+  @scala.inline
+  def getFakeApp(appName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  @scala.inline
+  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  @scala.inline
   def getFakeComponent_badtest(
     name: badtest,
     factory: InstanceFactory[badtest],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
-  ): Component[badtest] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball]): Component[fireball] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_fireball(
-    name: fireball,
-    factory: InstanceFactory[fireball],
-    multipleInstance: js.UndefOr[scala.Nothing],
+  ): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  @scala.inline
+  def getFakeComponent_badtest(
+    name: badtest,
+    factory: InstanceFactory[badtest],
+    multipleInstance: Unit,
     instantiationMode: InstantiationMode
-  ): Component[fireball] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball], multipleInstance: Boolean): Component[fireball] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
+  ): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  
+  @scala.inline
+  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball]): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  @scala.inline
+  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball], multipleInstance: Boolean): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  @scala.inline
   def getFakeComponent_fireball(
     name: fireball,
     factory: InstanceFactory[fireball],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
-  ): Component[fireball] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket]): Component[rocket] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_rocket(
-    name: rocket,
-    factory: InstanceFactory[rocket],
-    multipleInstance: js.UndefOr[scala.Nothing],
+  ): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  @scala.inline
+  def getFakeComponent_fireball(
+    name: fireball,
+    factory: InstanceFactory[fireball],
+    multipleInstance: Unit,
     instantiationMode: InstantiationMode
-  ): Component[rocket] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket], multipleInstance: Boolean): Component[rocket] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
+  ): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  
+  @scala.inline
+  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket]): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  @scala.inline
+  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket], multipleInstance: Boolean): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  @scala.inline
   def getFakeComponent_rocket(
     name: rocket,
     factory: InstanceFactory[rocket],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
-  ): Component[rocket] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship]): Component[ship] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_ship(
-    name: ship,
-    factory: InstanceFactory[ship],
-    multipleInstance: js.UndefOr[scala.Nothing],
+  ): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  @scala.inline
+  def getFakeComponent_rocket(
+    name: rocket,
+    factory: InstanceFactory[rocket],
+    multipleInstance: Unit,
     instantiationMode: InstantiationMode
-  ): Component[ship] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship], multipleInstance: Boolean): Component[ship] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
+  ): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  
+  @scala.inline
+  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship]): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  @scala.inline
+  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship], multipleInstance: Boolean): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  @scala.inline
   def getFakeComponent_ship(
     name: ship,
     factory: InstanceFactory[ship],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
-  ): Component[ship] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_test(name: test, factory: InstanceFactory[test]): Component[test] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_test(
-    name: test,
-    factory: InstanceFactory[test],
-    multipleInstance: js.UndefOr[scala.Nothing],
+  ): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  @scala.inline
+  def getFakeComponent_ship(
+    name: ship,
+    factory: InstanceFactory[ship],
+    multipleInstance: Unit,
     instantiationMode: InstantiationMode
-  ): Component[test] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
-  def getFakeComponent_test(name: test, factory: InstanceFactory[test], multipleInstance: Boolean): Component[test] = js.native
-  @JSImport("@firebase/component/dist/test/util", "getFakeComponent")
-  @js.native
+  ): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  
+  @scala.inline
+  def getFakeComponent_test(name: test, factory: InstanceFactory[test]): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
+  @scala.inline
+  def getFakeComponent_test(name: test, factory: InstanceFactory[test], multipleInstance: Boolean): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
+  @scala.inline
   def getFakeComponent_test(
     name: test,
     factory: InstanceFactory[test],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
-  ): Component[test] = js.native
+  ): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
+  @scala.inline
+  def getFakeComponent_test(
+    name: test,
+    factory: InstanceFactory[test],
+    multipleInstance: Unit,
+    instantiationMode: InstantiationMode
+  ): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
 }

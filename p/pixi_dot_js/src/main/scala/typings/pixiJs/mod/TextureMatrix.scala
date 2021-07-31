@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "TextureMatrix")
 @js.native
 class TextureMatrix protected ()
-  extends typings.pixiJs.PIXI.TextureMatrix {
+  extends StObject
+     with typings.pixiJs.PIXI.TextureMatrix {
   def this(texture: typings.pixiJs.PIXI.Texture) = this()
   def this(texture: typings.pixiJs.PIXI.Texture, clampMargin: Double) = this()
 }

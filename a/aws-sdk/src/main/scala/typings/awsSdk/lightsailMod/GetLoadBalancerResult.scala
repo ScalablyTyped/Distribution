@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoadBalancerResult extends StObject {
   
   /**
     * An object containing information about your load balancer.
     */
-  var loadBalancer: js.UndefOr[LoadBalancer] = js.native
+  var loadBalancer: js.UndefOr[LoadBalancer] = js.undefined
 }
 object GetLoadBalancerResult {
   

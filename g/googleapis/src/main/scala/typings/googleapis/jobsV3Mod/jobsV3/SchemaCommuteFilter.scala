@@ -2,13 +2,11 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Parameters needed for commute search.
   */
-@js.native
 trait SchemaCommuteFilter extends StObject {
   
   /**
@@ -18,38 +16,38 @@ trait SchemaCommuteFilter extends StObject {
     * to `false` or is not specified, only jobs that include street level
     * addresses will be returned by commute search.
     */
-  var allowImpreciseAddresses: js.UndefOr[Boolean] = js.native
+  var allowImpreciseAddresses: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  The method of transportation for which to calculate the
     * commute time.
     */
-  var commuteMethod: js.UndefOr[String] = js.native
+  var commuteMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  The departure time used to calculate traffic impact,
     * represented as google.type.TimeOfDay in local time zone.  Currently
     * traffic model is restricted to hour level resolution.
     */
-  var departureTime: js.UndefOr[SchemaTimeOfDay] = js.native
+  var departureTime: js.UndefOr[SchemaTimeOfDay] = js.undefined
   
   /**
     * Optional.  Specifies the traffic density to use when calculating commute
     * time.
     */
-  var roadTraffic: js.UndefOr[String] = js.native
+  var roadTraffic: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The latitude and longitude of the location from which to
     * calculate the commute time.
     */
-  var startCoordinates: js.UndefOr[SchemaLatLng] = js.native
+  var startCoordinates: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * Required.  The maximum travel time in seconds. The maximum allowed value
     * is `3600s` (one hour). Format is `123s`.
     */
-  var travelDuration: js.UndefOr[String] = js.native
+  var travelDuration: js.UndefOr[String] = js.undefined
 }
 object SchemaCommuteFilter {
   

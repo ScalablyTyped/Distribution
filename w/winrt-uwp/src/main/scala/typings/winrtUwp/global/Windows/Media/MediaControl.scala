@@ -16,14 +16,14 @@ import typings.winrtUwp.winrtUwpStrings.soundlevelchanged
 import typings.winrtUwp.winrtUwpStrings.stoppressed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the object that applications register with, to receive media focus and transport control notifications. */
 @JSGlobal("Windows.Media.MediaControl")
 @js.native
 abstract class MediaControl ()
-  extends typings.winrtUwp.Windows.Media.MediaControl
+  extends StObject
+     with typings.winrtUwp.Windows.Media.MediaControl
 object MediaControl {
   
   @JSGlobal("Windows.Media.MediaControl")
@@ -31,57 +31,56 @@ object MediaControl {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_playpressed(`type`: playpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_playpressed(`type`: playpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.addEventListener")
-  @js.native
-  def addEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def addEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets or sets the path to the artwork for the album cover. */
   /* static member */
@@ -204,57 +203,56 @@ object MediaControl {
   def onstoppressed_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstoppressed")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_channeldownpressed(`type`: channeldownpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_channeluppressed(`type`: channeluppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_fastforwardpressed(`type`: fastforwardpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_nexttrackpressed(`type`: nexttrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_pausepressed(`type`: pausepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_playpausetogglepressed(`type`: playpausetogglepressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_playpressed(`type`: playpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_playpressed(`type`: playpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_previoustrackpressed(`type`: previoustrackpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_recordpressed(`type`: recordpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_rewindpressed(`type`: rewindpressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_soundlevelchanged(`type`: soundlevelchanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /* static member */
-  @JSGlobal("Windows.Media.MediaControl.removeEventListener")
-  @js.native
-  def removeEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[_]): Unit = js.native
+  @scala.inline
+  def removeEventListener_stoppressed(`type`: stoppressed, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Gets the current sound level. */
   /* static member */

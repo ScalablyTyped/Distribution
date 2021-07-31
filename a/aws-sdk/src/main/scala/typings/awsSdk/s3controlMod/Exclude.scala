@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exclude extends StObject {
   
   /**
     * A container for the S3 Storage Lens bucket excludes.
     */
-  var Buckets: js.UndefOr[typings.awsSdk.s3controlMod.Buckets] = js.native
+  var Buckets: js.UndefOr[typings.awsSdk.s3controlMod.Buckets] = js.undefined
   
   /**
     * A container for the S3 Storage Lens Region excludes.
     */
-  var Regions: js.UndefOr[typings.awsSdk.s3controlMod.Regions] = js.native
+  var Regions: js.UndefOr[typings.awsSdk.s3controlMod.Regions] = js.undefined
 }
 object Exclude {
   

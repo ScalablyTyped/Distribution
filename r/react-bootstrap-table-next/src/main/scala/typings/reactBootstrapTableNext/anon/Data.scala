@@ -2,13 +2,11 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data[T /* <: js.Object */] extends StObject {
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
 }
 object Data {
   
@@ -19,7 +17,7 @@ object Data {
   }
   
   @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[_], T /* <: js.Object */] (val x: Self with Data[T]) extends AnyVal {
+  implicit class DataMutableBuilder[Self <: Data[?], T /* <: js.Object */] (val x: Self & Data[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

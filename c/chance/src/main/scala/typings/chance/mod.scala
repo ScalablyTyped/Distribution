@@ -5,7 +5,6 @@ import typings.chance.Chance.ChanceStatic
 import typings.chance.Chance.Seed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,9 +13,13 @@ object mod extends Shortcut {
   @JSImport("chance", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.chance.Chance.Chance {
-    def this(generator: js.Function0[_]) = this()
+    extends StObject
+       with typings.chance.Chance.Chance {
+    def this(generator: js.Function0[js.Any]) = this()
     def this(seed: Seed) = this()
+    
+    /* CompleteClass */
+    var seed: Seed = js.native
   }
   @JSImport("chance", JSImport.Namespace)
   @js.native
@@ -26,16 +29,22 @@ object mod extends Shortcut {
   @JSImport("chance", "Chance")
   @js.native
   class Chance ()
-    extends typings.chance.Chance.Chance {
-    def this(generator: js.Function0[_]) = this()
+    extends StObject
+       with typings.chance.Chance.Chance {
+    def this(generator: js.Function0[js.Any]) = this()
     def this(seed: Seed) = this()
+    
+    /* CompleteClass */
+    var seed: Seed = js.native
   }
   
   @js.native
-  trait ExportedChance extends ChanceStatic {
+  trait ExportedChance
+    extends StObject
+       with ChanceStatic {
     
     def Chance(): typings.chance.Chance.Chance = js.native
-    def Chance(generator: js.Function0[_]): typings.chance.Chance.Chance = js.native
+    def Chance(generator: js.Function0[js.Any]): typings.chance.Chance.Chance = js.native
     def Chance(seed: Seed): typings.chance.Chance.Chance = js.native
     @JSName("Chance")
     var Chance_Original: ExportedChance = js.native

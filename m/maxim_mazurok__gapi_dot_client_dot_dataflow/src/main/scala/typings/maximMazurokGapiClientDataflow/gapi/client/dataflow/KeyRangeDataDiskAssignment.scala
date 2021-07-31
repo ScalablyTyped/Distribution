@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRangeDataDiskAssignment extends StObject {
   
   /**
     * The name of the data disk where data for this range is stored. This name is local to the Google Cloud Platform project and uniquely identifies the disk within that project, for
     * example "myproject-1014-104817-4c2-harness-0-disk-1".
     */
-  var dataDisk: js.UndefOr[String] = js.native
+  var dataDisk: js.UndefOr[String] = js.undefined
   
   /** The end (exclusive) of the key range. */
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
   /** The start (inclusive) of the key range. */
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object KeyRangeDataDiskAssignment {
   

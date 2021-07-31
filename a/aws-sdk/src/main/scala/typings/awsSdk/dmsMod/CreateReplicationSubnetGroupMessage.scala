@@ -2,31 +2,29 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReplicationSubnetGroupMessage extends StObject {
   
   /**
     * The description for the subnet group.
     */
-  var ReplicationSubnetGroupDescription: String = js.native
+  var ReplicationSubnetGroupDescription: String
   
   /**
     * The name for the replication subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 alphanumeric characters, periods, spaces, underscores, or hyphens. Must not be "default". Example: mySubnetgroup 
     */
-  var ReplicationSubnetGroupIdentifier: String = js.native
+  var ReplicationSubnetGroupIdentifier: String
   
   /**
     * One or more subnet IDs to be assigned to the subnet group.
     */
-  var SubnetIds: SubnetIdentifierList = js.native
+  var SubnetIds: SubnetIdentifierList
   
   /**
     * One or more tags to be assigned to the subnet group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateReplicationSubnetGroupMessage {
   

@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,12 +26,14 @@ object mod {
     * });
     * app.listen(port, () => console.log(`Example app listening on port ${port}!`));
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("server-timing-header", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("server-timing-header", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("server-timing-header", "ServerTiming")
   @js.native
@@ -169,6 +170,10 @@ object mod {
   }
   object ServerTiming {
     
+    @JSImport("server-timing-header", "ServerTiming")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Build server-timing header value by current specification
       * @param name - metric name
@@ -177,9 +182,8 @@ object mod {
       * @return — server-timing header value
       */
     /* static member */
-    @JSImport("server-timing-header", "ServerTiming.newStyle")
-    @js.native
-    def newStyle(name: String, description: String, duration: String): String = js.native
+    @scala.inline
+    def newStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("newStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Build server-timing header value by old specification
@@ -189,31 +193,29 @@ object mod {
       * @return — server-timing header value
       */
     /* static member */
-    @JSImport("server-timing-header", "ServerTiming.oldStyle")
-    @js.native
-    def oldStyle(name: String, description: String, duration: String): String = js.native
+    @scala.inline
+    def oldStyle(name: String, description: String, duration: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oldStyle")(name.asInstanceOf[js.Any], description.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**
     * object that contain metric information
     */
-  @js.native
   trait Metric extends StObject {
     
     /** metric description */
-    var description: String = js.native
+    var description: String
     
     /** time in milliseconds, if not undefined method will just return durations */
-    var duration: Double = js.native
+    var duration: Double
     
     /** start time [seconds, nanoseconds], if undefined, initialization time will be used */
-    var from: js.Tuple2[Double, Double] = js.native
+    var from: js.Tuple2[Double, Double]
     
     /** metric name */
-    var name: String = js.native
+    var name: String
     
     /**  end time [seconds, nanoseconds], if undefined, current timestamp will be used */
-    var to: js.Tuple2[Double, Double] = js.native
+    var to: js.Tuple2[Double, Double]
   }
   object Metric {
     
@@ -257,14 +259,13 @@ object mod {
   /**
     * middleware options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * should middleware send headers (may be disabled for some environments
       * @default false
       */
-    var sendHeaders: js.UndefOr[Boolean] = js.native
+    var sendHeaders: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -287,10 +288,9 @@ object mod {
   
   object expressServeStaticCoreAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      val serverTiming: ServerTiming = js.native
+      val serverTiming: ServerTiming
     }
     object Request {
       

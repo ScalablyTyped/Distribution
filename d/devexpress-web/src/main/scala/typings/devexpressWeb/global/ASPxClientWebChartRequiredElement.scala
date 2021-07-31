@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientWebChartRequiredElement")
 @js.native
 class ASPxClientWebChartRequiredElement ()
-  extends typings.devexpressWeb.ASPxClientWebChartElement
+  extends StObject
+     with typings.devexpressWeb.ASPxClientWebChartElement {
+  
+  /**
+    * Gets the chart that owns the current chart element.
+    */
+  /* CompleteClass */
+  var chart: typings.devexpressWeb.ASPxClientWebChart = js.native
+}

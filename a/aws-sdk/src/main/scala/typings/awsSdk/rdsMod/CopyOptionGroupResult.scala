@@ -2,13 +2,11 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOptionGroupResult extends StObject {
   
-  var OptionGroup: js.UndefOr[typings.awsSdk.rdsMod.OptionGroup] = js.native
+  var OptionGroup: js.UndefOr[typings.awsSdk.rdsMod.OptionGroup] = js.undefined
 }
 object CopyOptionGroupResult {
   

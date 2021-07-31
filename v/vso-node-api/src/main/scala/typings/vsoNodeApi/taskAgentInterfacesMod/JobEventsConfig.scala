@@ -2,17 +2,15 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobEventsConfig extends StObject {
   
-  var jobAssigned: JobEventConfig = js.native
+  var jobAssigned: JobEventConfig
   
-  var jobCompleted: JobEventConfig = js.native
+  var jobCompleted: JobEventConfig
   
-  var jobStarted: JobEventConfig = js.native
+  var jobStarted: JobEventConfig
 }
 object JobEventsConfig {
   

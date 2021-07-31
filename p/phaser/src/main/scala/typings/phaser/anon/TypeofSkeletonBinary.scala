@@ -7,68 +7,66 @@ import typings.phaser.spine.SpacingMode
 import typings.phaser.spine.TransformMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSkeletonBinary extends StObject {
   
   /* static member */
-  var AttachmentTypeValues: js.Array[Double] = js.native
+  var AttachmentTypeValues: js.Array[Double]
   
   /* static member */
-  var BONE_ROTATE: Double = js.native
+  var BONE_ROTATE: Double
   
   /* static member */
-  var BONE_SCALE: Double = js.native
+  var BONE_SCALE: Double
   
   /* static member */
-  var BONE_SHEAR: Double = js.native
+  var BONE_SHEAR: Double
   
   /* static member */
-  var BONE_TRANSLATE: Double = js.native
+  var BONE_TRANSLATE: Double
   
   /* static member */
-  var BlendModeValues: js.Array[BlendMode] = js.native
+  var BlendModeValues: js.Array[BlendMode]
   
   /* static member */
-  var CURVE_BEZIER: Double = js.native
+  var CURVE_BEZIER: Double
   
   /* static member */
-  var CURVE_LINEAR: Double = js.native
+  var CURVE_LINEAR: Double
   
   /* static member */
-  var CURVE_STEPPED: Double = js.native
+  var CURVE_STEPPED: Double
   
   /* static member */
-  var PATH_MIX: Double = js.native
+  var PATH_MIX: Double
   
   /* static member */
-  var PATH_POSITION: Double = js.native
+  var PATH_POSITION: Double
   
   /* static member */
-  var PATH_SPACING: Double = js.native
+  var PATH_SPACING: Double
   
   /* static member */
-  var PositionModeValues: js.Array[PositionMode] = js.native
+  var PositionModeValues: js.Array[PositionMode]
   
   /* static member */
-  var RotateModeValues: js.Array[RotateMode] = js.native
+  var RotateModeValues: js.Array[RotateMode]
   
   /* static member */
-  var SLOT_ATTACHMENT: Double = js.native
+  var SLOT_ATTACHMENT: Double
   
   /* static member */
-  var SLOT_COLOR: Double = js.native
+  var SLOT_COLOR: Double
   
   /* static member */
-  var SLOT_TWO_COLOR: Double = js.native
+  var SLOT_TWO_COLOR: Double
   
   /* static member */
-  var SpacingModeValues: js.Array[SpacingMode] = js.native
+  var SpacingModeValues: js.Array[SpacingMode]
   
   /* static member */
-  var TransformModeValues: js.Array[TransformMode] = js.native
+  var TransformModeValues: js.Array[TransformMode]
 }
 object TypeofSkeletonBinary {
   

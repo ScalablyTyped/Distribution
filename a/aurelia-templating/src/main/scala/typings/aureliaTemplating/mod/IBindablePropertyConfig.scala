@@ -9,40 +9,39 @@ import typings.aureliaTemplating.aureliaTemplatingStrings.toView
 import typings.aureliaTemplating.aureliaTemplatingStrings.twoWay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBindablePropertyConfig
-  extends // For compatibility and future extension
+  extends StObject
+     with // For compatibility and future extension
 /* key */ StringDictionary[js.Any] {
   
-  var attribute: js.UndefOr[String] = js.native
+  var attribute: js.UndefOr[String] = js.undefined
   
   /**
     * The name of a view model method to invoke when the property is updated.
     */
-  var changeHandler: js.UndefOr[String] = js.native
+  var changeHandler: js.UndefOr[String] = js.undefined
   
   /**
     * The default binding mode of the property. If given string, will use to lookup
     */
-  var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.native
+  var defaultBindingMode: js.UndefOr[bindingMode | oneTime | oneWay | twoWay | fromView | toView] = js.undefined
   
   /**
     * A default value for the property.
     */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The name of the property.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Designates the property as the default bindable property among all the other bindable properties when used in a custom attribute with multiple bindable properties.
     */
-  var primaryProperty: js.UndefOr[Boolean] = js.native
+  var primaryProperty: js.UndefOr[Boolean] = js.undefined
 }
 object IBindablePropertyConfig {
   

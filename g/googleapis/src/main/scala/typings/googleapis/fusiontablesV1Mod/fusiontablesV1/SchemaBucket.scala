@@ -2,47 +2,45 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the minimum and maximum values, the color, opacity, icon and
   * weight of a bucket within a StyleSetting.
   */
-@js.native
 trait SchemaBucket extends StObject {
   
   /**
     * Color of line or the interior of a polygon in #RRGGBB format.
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Icon name used for a point.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum value in the selected column for a row to be styled according to
     * the bucket color, opacity, icon, or weight.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum value in the selected column for a row to be styled according to
     * the bucket color, opacity, icon, or weight.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Opacity of the color: 0.0 (transparent) to 1.0 (opaque).
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of a line (in pixels).
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object SchemaBucket {
   

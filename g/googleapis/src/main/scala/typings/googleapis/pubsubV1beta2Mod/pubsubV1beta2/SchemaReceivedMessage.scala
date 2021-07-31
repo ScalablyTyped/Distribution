@@ -2,24 +2,22 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message and its corresponding acknowledgment ID.
   */
-@js.native
 trait SchemaReceivedMessage extends StObject {
   
   /**
     * This ID can be used to acknowledge the received message.
     */
-  var ackId: js.UndefOr[String] = js.native
+  var ackId: js.UndefOr[String] = js.undefined
   
   /**
     * The message.
     */
-  var message: js.UndefOr[SchemaPubsubMessage] = js.native
+  var message: js.UndefOr[SchemaPubsubMessage] = js.undefined
 }
 object SchemaReceivedMessage {
   

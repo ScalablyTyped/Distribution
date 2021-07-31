@@ -2,17 +2,15 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineItemToAdd extends StObject {
   
-  var customAttributes: js.UndefOr[js.Array[CustomAttribute]] = js.native
+  var customAttributes: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
   
-  var quantity: Double = js.native
+  var quantity: Double
   
-  var variantId: String | Double = js.native
+  var variantId: String | Double
 }
 object LineItemToAdd {
   

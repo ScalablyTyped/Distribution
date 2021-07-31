@@ -2,15 +2,13 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxAttrExprDef extends StObject {
   
-  var qExpression: String = js.native
+  var qExpression: String
   
-  var qLibraryId: String = js.native
+  var qLibraryId: String
 }
 object NxAttrExprDef {
   

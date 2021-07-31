@@ -2,17 +2,17 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CommandMetadata[I, O] extends Metadata {
+trait CommandMetadata[I, O]
+  extends StObject
+     with Metadata {
   
-  var exampleCommands: js.UndefOr[js.Array[String]] = js.native
+  var exampleCommands: js.UndefOr[js.Array[String]] = js.undefined
   
-  var inputs: js.UndefOr[js.Array[I]] = js.native
+  var inputs: js.UndefOr[js.Array[I]] = js.undefined
   
-  var options: js.UndefOr[js.Array[O]] = js.native
+  var options: js.UndefOr[js.Array[O]] = js.undefined
 }
 object CommandMetadata {
   
@@ -23,7 +23,7 @@ object CommandMetadata {
   }
   
   @scala.inline
-  implicit class CommandMetadataMutableBuilder[Self <: CommandMetadata[_, _], I, O] (val x: Self with (CommandMetadata[I, O])) extends AnyVal {
+  implicit class CommandMetadataMutableBuilder[Self <: CommandMetadata[?, ?], I, O] (val x: Self & (CommandMetadata[I, O])) extends AnyVal {
     
     @scala.inline
     def setExampleCommands(value: js.Array[String]): Self = StObject.set(x, "exampleCommands", value.asInstanceOf[js.Any])

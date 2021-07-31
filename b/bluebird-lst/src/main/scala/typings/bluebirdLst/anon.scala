@@ -2,25 +2,23 @@ package typings.bluebirdLst
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancellation extends StObject {
     
     /** Enable cancellation */
-    var cancellation: js.UndefOr[Boolean] = js.native
+    var cancellation: js.UndefOr[Boolean] = js.undefined
     
     /** Enable long stack traces */
-    var longStackTraces: js.UndefOr[Boolean] = js.native
+    var longStackTraces: js.UndefOr[Boolean] = js.undefined
     
     /** Enable monitoring */
-    var monitoring: js.UndefOr[Boolean] = js.native
+    var monitoring: js.UndefOr[Boolean] = js.undefined
     
     /** Enable warnings */
-    var warnings: js.UndefOr[Boolean | WForgottenReturn] = js.native
+    var warnings: js.UndefOr[Boolean | WForgottenReturn] = js.undefined
   }
   object Cancellation {
     
@@ -59,11 +57,10 @@ object anon {
     }
   }
   
-  @js.native
   trait WForgottenReturn extends StObject {
     
     /** Enables all warnings except forgotten return statements. */
-    var wForgottenReturn: Boolean = js.native
+    var wForgottenReturn: Boolean
   }
   object WForgottenReturn {
     

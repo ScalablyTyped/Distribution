@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_keyError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyErrorEvent extends Event {
+trait KeyErrorEvent
+  extends StObject
+     with Event {
   
-  var data: KeyError = js.native
+  var data: KeyError
   
   @JSName("type")
-  var type_KeyErrorEvent: public_keyError = js.native
+  var type_KeyErrorEvent: public_keyError
 }
 object KeyErrorEvent {
   
   @scala.inline
-  def apply(data: KeyError, `type`: public_keyError): KeyErrorEvent = {
+  def apply(data: KeyError): KeyErrorEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public_keyError")
     __obj.asInstanceOf[KeyErrorEvent]
   }
   

@@ -2,17 +2,15 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerLogs extends StObject {
   
-  var CloudWatchLogs: js.UndefOr[typings.awsSdk.kafkaMod.CloudWatchLogs] = js.native
+  var CloudWatchLogs: js.UndefOr[typings.awsSdk.kafkaMod.CloudWatchLogs] = js.undefined
   
-  var Firehose: js.UndefOr[typings.awsSdk.kafkaMod.Firehose] = js.native
+  var Firehose: js.UndefOr[typings.awsSdk.kafkaMod.Firehose] = js.undefined
   
-  var S3: js.UndefOr[typings.awsSdk.kafkaMod.S3] = js.native
+  var S3: js.UndefOr[typings.awsSdk.kafkaMod.S3] = js.undefined
 }
 object BrokerLogs {
   

@@ -2,15 +2,13 @@ package typings.datatablesNetScroller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    var scroller: ScrollerMethodsModel = js.native
+    var scroller: ScrollerMethodsModel
   }
   object Api {
     
@@ -32,12 +30,11 @@ object DataTables {
     * start: {int}, // the 0-indexed record at the top of the viewport
     * end:   {int}, // the 0-indexed record at the bottom of the viewport
     */
-  @js.native
   trait PageInfo extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object PageInfo {
     
@@ -69,25 +66,27 @@ object DataTables {
   }
   
   @js.native
-  trait ScrollerMethods extends Api {
+  trait ScrollerMethods
+    extends StObject
+       with Api {
     
     /*
       * Calculate the row number that will be found at the given pixel position
       * (y-scroll).
       */
     def pixelsToRow(pixels: Double): Double = js.native
-    def pixelsToRow(pixels: Double, intParse: js.UndefOr[scala.Nothing], virtual: Boolean): Double = js.native
     def pixelsToRow(pixels: Double, intParse: Boolean): Double = js.native
     def pixelsToRow(pixels: Double, intParse: Boolean, virtual: Boolean): Double = js.native
+    def pixelsToRow(pixels: Double, intParse: Unit, virtual: Boolean): Double = js.native
     
     /*
       * Calculate the pixel position from the top of the scrolling container for
       * a given row
       */
     def rowToPixels(rowIdx: Double): Double = js.native
-    def rowToPixels(rowIdx: Double, intParse: js.UndefOr[scala.Nothing], virtual: Boolean): Double = js.native
     def rowToPixels(rowIdx: Double, intParse: Boolean): Double = js.native
     def rowToPixels(rowIdx: Double, intParse: Boolean, virtual: Boolean): Double = js.native
+    def rowToPixels(rowIdx: Double, intParse: Unit, virtual: Boolean): Double = js.native
     
     def scrollToRow(rowIdx: Double): Api = js.native
     def scrollToRow(rowIdx: Double, animate: Boolean): Api = js.native
@@ -115,7 +114,6 @@ object DataTables {
     def scroller(): ScrollerMethods = js.native
   }
   
-  @js.native
   trait ScrollerSettings extends StObject {
     
     /*
@@ -123,36 +121,36 @@ object DataTables {
       * typically does before you reach the end of the currently loaded data set (in order to
       * allow the data to look continuous to a user scrolling through the data).
       */
-    var boundaryScale: js.UndefOr[Double] = js.native
+    var boundaryScale: js.UndefOr[Double] = js.undefined
     
     /*
       * The display buffer is what Scroller uses to calculate how many rows it should pre-fetch
       * for scrolling.
       */
-    var displayBuffer: js.UndefOr[Double] = js.native
+    var displayBuffer: js.UndefOr[Double] = js.undefined
     
     /*
       * Show (or not) the loading element in the background of the table. Note that you should
       * include the dataTables.scroller.css file for this to be displayed correctly.
       */
-    var loadingIndicator: js.UndefOr[Boolean] = js.native
+    var loadingIndicator: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Scroller will attempt to automatically calculate the height of rows for it's internal
       * calculations. However the height that is used can be overridden using this parameter.
       */
-    var rowHeight: js.UndefOr[Double | String] = js.native
+    var rowHeight: js.UndefOr[Double | String] = js.undefined
     
     /*
       * When using server-side processing, Scroller will wait a small amount of time to allow
       * the scrolling to finish before requesting more data from the server.
       */
-    var serverWait: js.UndefOr[Double] = js.native
+    var serverWait: js.UndefOr[Double] = js.undefined
     
     /*
       * Indicate if Scroller show show trace information on the console or not.
       */
-    var trace: js.UndefOr[Boolean] = js.native
+    var trace: js.UndefOr[Boolean] = js.undefined
   }
   object ScrollerSettings {
     
@@ -203,13 +201,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * Select extension options
       */
-    var scroller: js.UndefOr[Boolean | ScrollerSettings] = js.native
+    var scroller: js.UndefOr[Boolean | ScrollerSettings] = js.undefined
   }
   object Settings {
     

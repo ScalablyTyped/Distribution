@@ -5,7 +5,6 @@ import typings.antdMobile.stepsPropsTypeMod.StepsPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
@@ -43,28 +42,29 @@ object stepsMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MSteps(): Unit = js.native
     
-    var stepRefs: js.Array[_] = js.native
+    var stepRefs: js.Array[js.Any] = js.native
     
     var stepsRef: js.Any = js.native
   }
   
-  @js.native
-  trait StepsProps extends StepsPropsType {
+  trait StepsProps
+    extends StObject
+       with StepsPropsType {
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var labelPlacement: js.UndefOr[String] = js.native
+    var labelPlacement: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
   }
   object StepsProps {
     
     @scala.inline
-    def apply(children: js.Array[_]): StepsProps = {
+    def apply(children: js.Array[js.Any]): StepsProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsProps]
     }

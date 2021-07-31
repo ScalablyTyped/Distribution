@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a collection of {@link TextField} instances. */
-@js.native
 trait TextFields
-  extends XEnumerationAccess
+  extends StObject
+     with XEnumerationAccess
      with XRefreshable
 object TextFields {
   

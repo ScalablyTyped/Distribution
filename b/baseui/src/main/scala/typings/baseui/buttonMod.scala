@@ -26,25 +26,23 @@ import typings.styletronReact.mod.StyletronComponent
 import typings.styletronReact.mod.StyletronComponentInjectedProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
   
   @JSImport("baseui/button", "Button")
   @js.native
-  val Button: ForwardRefExoticComponent[PropsWithoutRef[ButtonProps] with RefAttributes[HTMLButtonElement]] = js.native
+  val Button: ForwardRefExoticComponent[PropsWithoutRef[ButtonProps] & RefAttributes[HTMLButtonElement]] = js.native
   
-  @js.native
   trait KIND extends StObject {
     
-    var minimal: typings.baseui.baseuiStrings.minimal = js.native
+    var minimal: typings.baseui.baseuiStrings.minimal
     
-    var primary: typings.baseui.baseuiStrings.primary = js.native
+    var primary: typings.baseui.baseuiStrings.primary
     
-    var secondary: typings.baseui.baseuiStrings.secondary = js.native
+    var secondary: typings.baseui.baseuiStrings.secondary
     
-    var tertiary: typings.baseui.baseuiStrings.tertiary = js.native
+    var tertiary: typings.baseui.baseuiStrings.tertiary
   }
   object KIND {
     
@@ -69,18 +67,17 @@ object buttonMod {
     }
   }
   
-  @js.native
   trait SHAPE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var circle: typings.baseui.baseuiStrings.circle = js.native
+    var circle: typings.baseui.baseuiStrings.circle
     
-    var pill: typings.baseui.baseuiStrings.pill = js.native
+    var pill: typings.baseui.baseuiStrings.pill
     
-    var round: typings.baseui.baseuiStrings.round = js.native
+    var round: typings.baseui.baseuiStrings.round
     
-    var square: typings.baseui.baseuiStrings.square = js.native
+    var square: typings.baseui.baseuiStrings.square
   }
   object SHAPE {
     
@@ -108,16 +105,15 @@ object buttonMod {
     }
   }
   
-  @js.native
   trait SIZE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var compact: typings.baseui.baseuiStrings.compact = js.native
+    var compact: typings.baseui.baseuiStrings.compact
     
-    var large: large_ = js.native
+    var large: large_
     
-    var mini: typings.baseui.baseuiStrings.mini = js.native
+    var mini: typings.baseui.baseuiStrings.mini
   }
   object SIZE {
     
@@ -162,32 +158,31 @@ object buttonMod {
   @js.native
   val StyledStartEnhancer: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait ButtonOverrides extends StObject {
     
     var BaseButton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var EndEnhancer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var LoadingSpinner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var LoadingSpinnerContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var StartEnhancer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ButtonOverrides {
     
@@ -250,36 +245,39 @@ object buttonMod {
     }
   }
   
-  @js.native
-  trait ButtonProps extends StyletronComponentInjectedProps[ButtonProps] {
+  trait ButtonProps
+    extends StObject
+       with StyletronComponentInjectedProps[ButtonProps] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var endEnhancer: js.UndefOr[ReactNode] = js.native
+    var endEnhancer: js.UndefOr[ReactNode] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var isLoading: js.UndefOr[Boolean] = js.native
+    var isLoading: js.UndefOr[Boolean] = js.undefined
     
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
-    var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.native
+    var kind: js.UndefOr[primary | secondary | tertiary | minimal] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.native
+    var onClick: js.UndefOr[
+        js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Any]
+      ] = js.undefined
     
-    var overrides: js.UndefOr[ButtonOverrides] = js.native
+    var overrides: js.UndefOr[ButtonOverrides] = js.undefined
     
-    var shape: js.UndefOr[pill | default_ | square | round | circle] = js.native
+    var shape: js.UndefOr[pill | default_ | square | round | circle] = js.undefined
     
-    var size: js.UndefOr[compact | default_ | large_ | mini] = js.native
+    var size: js.UndefOr[compact | default_ | large_ | mini] = js.undefined
     
-    var startEnhancer: js.UndefOr[ReactNode] = js.native
+    var startEnhancer: js.UndefOr[ReactNode] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[submit | reset | button] = js.native
+    var `type`: js.UndefOr[submit | reset | button] = js.undefined
   }
   object ButtonProps {
     
@@ -335,7 +333,7 @@ object buttonMod {
       def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

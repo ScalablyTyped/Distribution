@@ -2,24 +2,22 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents details collected when the visitor views a page.
   */
-@js.native
 trait SchemaPageviewData extends StObject {
   
   /**
     * The URL of the page that the visitor viewed.
     */
-  var pagePath: js.UndefOr[String] = js.native
+  var pagePath: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the page that the visitor viewed.
     */
-  var pageTitle: js.UndefOr[String] = js.native
+  var pageTitle: js.UndefOr[String] = js.undefined
 }
 object SchemaPageviewData {
   

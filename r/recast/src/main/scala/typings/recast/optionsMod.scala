@@ -5,23 +5,23 @@ import typings.recast.recastStrings.double
 import typings.recast.recastStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @JSImport("recast/lib/options", "normalize")
+  @JSImport("recast/lib/options", JSImport.Namespace)
   @js.native
-  def normalize(): NormalizedOptions = js.native
-  @JSImport("recast/lib/options", "normalize")
-  @js.native
-  def normalize(opts: Options): NormalizedOptions = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def normalize(): NormalizedOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")().asInstanceOf[NormalizedOptions]
+  @scala.inline
+  def normalize(opts: Options): NormalizedOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(opts.asInstanceOf[js.Any]).asInstanceOf[NormalizedOptions]
+  
   trait DeprecatedOptions extends StObject {
     
     /** @deprecated */
-    var esprima: js.UndefOr[js.Any] = js.native
+    var esprima: js.UndefOr[js.Any] = js.undefined
   }
   object DeprecatedOptions {
     
@@ -43,46 +43,45 @@ object optionsMod {
   }
   
   /* Inlined std.Required<ast-types.ast-types/types.Omit<recast.recast/lib/options.Options, keyof recast.recast/lib/options.DeprecatedOptions>> */
-  @js.native
   trait NormalizedOptions extends StObject {
     
-    var arrayBracketSpacing: Boolean = js.native
+    var arrayBracketSpacing: Boolean
     
-    var arrowParensAlways: Boolean = js.native
+    var arrowParensAlways: Boolean
     
-    var flowObjectCommas: Boolean = js.native
+    var flowObjectCommas: Boolean
     
-    var inputSourceMap: String = js.native
+    var inputSourceMap: String
     
-    var lineTerminator: String = js.native
+    var lineTerminator: String
     
-    var objectCurlySpacing: Boolean = js.native
+    var objectCurlySpacing: Boolean
     
-    var parser: js.Any = js.native
+    var parser: js.Any
     
-    var quote: single | double | auto = js.native
+    var quote: single | double | auto
     
-    var range: Boolean = js.native
+    var range: Boolean
     
-    var reuseWhitespace: Boolean = js.native
+    var reuseWhitespace: Boolean
     
-    var sourceFileName: String = js.native
+    var sourceFileName: String
     
-    var sourceMapName: String = js.native
+    var sourceMapName: String
     
-    var sourceRoot: String = js.native
+    var sourceRoot: String
     
-    var tabWidth: Double = js.native
+    var tabWidth: Double
     
-    var tokens: Boolean = js.native
+    var tokens: Boolean
     
-    var tolerant: Boolean = js.native
+    var tolerant: Boolean
     
-    var trailingComma: Boolean = js.native
+    var trailingComma: Boolean
     
-    var useTabs: Boolean = js.native
+    var useTabs: Boolean
     
-    var wrapColumn: Double = js.native
+    var wrapColumn: Double
   }
   object NormalizedOptions {
     
@@ -174,22 +173,23 @@ object optionsMod {
     }
   }
   
-  @js.native
-  trait Options extends DeprecatedOptions {
+  trait Options
+    extends StObject
+       with DeprecatedOptions {
     
     /**
       * Controls the printing of spaces inside array brackets.
       * See: http://eslint.org/docs/rules/array-bracket-spacing
       * @default false
       */
-    var arrayBracketSpacing: js.UndefOr[Boolean] = js.native
+    var arrayBracketSpacing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you want parenthesis to wrap single-argument arrow function
       * parameter lists, pass true for this option.
       * @default false
       */
-    var arrowParensAlways: js.UndefOr[Boolean] = js.native
+    var arrowParensAlways: js.UndefOr[Boolean] = js.undefined
     
     /**
       * There are 2 supported syntaxes (`,` and `;`) in Flow Object Types;
@@ -197,7 +197,7 @@ object optionsMod {
       * how objects are defined in JS, making it a bit more natural to write.
       * @default true
       */
-    var flowObjectCommas: js.UndefOr[Boolean] = js.native
+    var flowObjectCommas: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you provide a source map that was generated from a previous call
@@ -205,13 +205,13 @@ object optionsMod {
       * composed with the new source map.
       * @default null
       */
-    var inputSourceMap: js.UndefOr[String | Null] = js.native
+    var inputSourceMap: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Override this option to use a different line terminator, e.g. \r\n.
       * @default require("os").EOL || "\n"
       */
-    var lineTerminator: js.UndefOr[String] = js.native
+    var lineTerminator: js.UndefOr[String] = js.undefined
     
     /**
       * Controls the printing of spaces inside object literals,
@@ -219,7 +219,7 @@ object optionsMod {
       * See: http://eslint.org/docs/rules/object-curly-spacing
       * @default true
       */
-    var objectCurlySpacing: js.UndefOr[Boolean] = js.native
+    var objectCurlySpacing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you want to use a different branch of esprima, or any other module
@@ -227,7 +227,7 @@ object optionsMod {
       * recast.parse as options.parser (legacy synonym: options.esprima).
       * @default require("recast/parsers/esprima")
       */
-    var parser: js.UndefOr[js.Any] = js.native
+    var parser: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If you want to override the quotes used in string literals, specify
@@ -235,21 +235,21 @@ object optionsMod {
       * which results in the shorter literal) Otherwise, use double quotes.
       * @default null
       */
-    var quote: js.UndefOr[single | double | auto | Null] = js.native
+    var quote: js.UndefOr[single | double | auto | Null] = js.undefined
     
     /**
       * If you want esprima to generate .range information (recast only uses
       * .loc internally), pass true for this option.
       * @default false
       */
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The reprinting code leaves leading whitespace untouched unless it has
       * to reindent a line, or you pass false for this option.
       * @default true
       */
-    var reuseWhitespace: js.UndefOr[Boolean] = js.native
+    var reuseWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass a string as options.sourceFileName to recast.parse to tell the
@@ -257,7 +257,7 @@ object optionsMod {
       * source map automatically.
       * @default null
       */
-    var sourceFileName: js.UndefOr[String | Null] = js.native
+    var sourceFileName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Pass a string as options.sourceMapName to recast.print, and (provided
@@ -265,14 +265,14 @@ object optionsMod {
       * recast.print will have a .map property for the generated source map.
       * @default null
       */
-    var sourceMapName: js.UndefOr[String | Null] = js.native
+    var sourceMapName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * If provided, this option will be passed along to the source map
       * generator as a root directory for relative source file paths.
       * @default null
       */
-    var sourceRoot: js.UndefOr[String | Null] = js.native
+    var sourceRoot: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Number of spaces the pretty-printer should use per tab for
@@ -280,20 +280,20 @@ object optionsMod {
       * (quite reliably!) inferred from the original code.
       * @default 4
       */
-    var tabWidth: js.UndefOr[Double] = js.native
+    var tabWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to return an array of .tokens on the root AST node.
       * @default true
       */
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you want esprima not to throw exceptions when it encounters
       * non-fatal errors, keep this option true.
       * @default true
       */
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the printing of trailing commas in object literals, array
@@ -312,14 +312,14 @@ object optionsMod {
       *
       * @default false
       */
-    var trailingComma: js.UndefOr[Boolean] = js.native
+    var trailingComma: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you really want the pretty-printer to use tabs instead of spaces,
       * make this option true.
       * @default false
       */
-    var useTabs: js.UndefOr[Boolean] = js.native
+    var useTabs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Some of the pretty-printer code (such as that for printing function
@@ -328,7 +328,7 @@ object optionsMod {
       * there is no guarantee that line length will fit inside this limit.
       * @default 74
       */
-    var wrapColumn: js.UndefOr[Double] = js.native
+    var wrapColumn: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

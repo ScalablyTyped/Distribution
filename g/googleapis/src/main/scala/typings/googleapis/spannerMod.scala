@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spannerMod {
+  
+  @JSImport("googleapis/build/src/apis/spanner", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object spannerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/spanner", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/spanner", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object spannerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/spanner", "spanner")
-  @js.native
-  def spanner(options: Options): Spanner = js.native
-  @JSImport("googleapis/build/src/apis/spanner", "spanner")
-  @js.native
-  def spanner_v1(version: v1): Spanner = js.native
+  @scala.inline
+  def spanner(options: Options): Spanner = ^.asInstanceOf[js.Dynamic].applyDynamic("spanner")(options.asInstanceOf[js.Any]).asInstanceOf[Spanner]
+  
+  @scala.inline
+  def spanner_v1(version: v1): Spanner = ^.asInstanceOf[js.Dynamic].applyDynamic("spanner")(version.asInstanceOf[js.Any]).asInstanceOf[Spanner]
 }

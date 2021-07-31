@@ -10,9 +10,9 @@ Convert JSON to CSV
 | ------------------ | :-------------: |
 | Full name          | json2csv |
 | Keywords           | json, to, csv, export, convert, parse |
-| # releases         | 17 |
-| # dependents       | 462 |
-| # downloads        | 16298795 |
+| # releases         | 15 |
+| # dependents       | 478 |
+| # downloads        | 17698800 |
 | # stars            | 59 |
 
 ## Links

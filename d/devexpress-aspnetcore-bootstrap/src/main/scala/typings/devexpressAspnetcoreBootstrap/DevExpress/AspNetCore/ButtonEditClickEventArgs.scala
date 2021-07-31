@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonEditClickEventArgs extends ProcessingModeEventArgs {
+trait ButtonEditClickEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val buttonIndex: Double = js.native
+  val buttonIndex: Double
 }
 object ButtonEditClickEventArgs {
   

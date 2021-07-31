@@ -13,21 +13,19 @@ import typings.arcgisJsApi.arcgisJsApiStrings.rectangle
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchViewModelCreateEvent extends StObject {
   
-  var graphic: Graphic = js.native
+  var graphic: Graphic
   
-  var state: start | active | complete | cancel = js.native
+  var state: start | active | complete | cancel
   
-  var tool: point | multipoint | polyline | polygon | rectangle | circle = js.native
+  var tool: point | multipoint | polyline | polygon | rectangle | circle
   
-  var toolEventInfo: CreateToolEventInfo = js.native
+  var toolEventInfo: CreateToolEventInfo
   
-  var `type`: create = js.native
+  var `type`: create
 }
 object SketchViewModelCreateEvent {
   
@@ -36,11 +34,10 @@ object SketchViewModelCreateEvent {
     graphic: Graphic,
     state: start | active | complete | cancel,
     tool: point | multipoint | polyline | polygon | rectangle | circle,
-    toolEventInfo: CreateToolEventInfo,
-    `type`: create
+    toolEventInfo: CreateToolEventInfo
   ): SketchViewModelCreateEvent = {
     val __obj = js.Dynamic.literal(graphic = graphic.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], toolEventInfo = toolEventInfo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("create")
     __obj.asInstanceOf[SketchViewModelCreateEvent]
   }
   

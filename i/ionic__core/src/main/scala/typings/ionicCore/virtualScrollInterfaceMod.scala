@@ -3,27 +3,25 @@ package typings.ionicCore
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualScrollInterfaceMod {
   
-  @js.native
   trait Cell extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var i: Double = js.native
+    var i: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var reads: Double = js.native
+    var reads: Double
     
-    var `type`: CellType = js.native
+    var `type`: CellType
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object Cell {
     
@@ -105,18 +103,17 @@ object virtualScrollInterfaceMod {
   
   type NodeChange = Double
   
-  @js.native
   trait VirtualNode extends StObject {
     
-    var cell: Cell = js.native
+    var cell: Cell
     
-    var change: NodeChange = js.native
+    var change: NodeChange
     
-    var d: Boolean = js.native
+    var d: Boolean
     
-    var top: Double = js.native
+    var top: Double
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object VirtualNode {
     

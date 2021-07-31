@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityNotificationAttributesResponse extends StObject {
   
   /**
     * A map of Identity to IdentityNotificationAttributes.
     */
-  var NotificationAttributes: typings.awsSdk.sesMod.NotificationAttributes = js.native
+  var NotificationAttributes: typings.awsSdk.sesMod.NotificationAttributes
 }
 object GetIdentityNotificationAttributesResponse {
   

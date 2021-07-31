@@ -2,26 +2,26 @@ package typings.cannon.global.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("CANNON.Utils")
 @js.native
 class Utils ()
-  extends typings.cannon.CANNON.Utils
+  extends StObject
+     with typings.cannon.CANNON.Utils
 /* static members */
 object Utils {
   
-  @JSGlobal("CANNON.Utils.defaults")
+  @JSGlobal("CANNON.Utils")
   @js.native
-  def defaults(): js.Any = js.native
-  @JSGlobal("CANNON.Utils.defaults")
-  @js.native
-  def defaults(options: js.UndefOr[scala.Nothing], defaults: js.Any): js.Any = js.native
-  @JSGlobal("CANNON.Utils.defaults")
-  @js.native
-  def defaults(options: js.Any): js.Any = js.native
-  @JSGlobal("CANNON.Utils.defaults")
-  @js.native
-  def defaults(options: js.Any, defaults: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defaults(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[js.Any]
+  @scala.inline
+  def defaults(options: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def defaults(options: js.Any, defaults: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def defaults(options: Unit, defaults: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

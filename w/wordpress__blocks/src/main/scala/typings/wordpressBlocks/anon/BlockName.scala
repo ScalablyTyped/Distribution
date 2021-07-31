@@ -2,13 +2,11 @@ package typings.wordpressBlocks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockName extends StObject {
   
-  var blockName: String = js.native
+  var blockName: String
 }
 object BlockName {
   

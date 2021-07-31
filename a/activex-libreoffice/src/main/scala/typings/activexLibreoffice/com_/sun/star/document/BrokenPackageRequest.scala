@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Is used for interaction handle in case package is broken.
   * @since OOo 1.1.2
   */
-@js.native
-trait BrokenPackageRequest extends Exception {
+trait BrokenPackageRequest
+  extends StObject
+     with Exception {
   
   /** The name of the document that is broken */
-  var aName: String = js.native
+  var aName: String
 }
 object BrokenPackageRequest {
   

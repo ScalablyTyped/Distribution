@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHyperParameterTuningJobsResponse extends StObject {
   
   /**
     * A list of HyperParameterTuningJobSummary objects that describe the tuning jobs that the ListHyperParameterTuningJobs request returned.
     */
-  var HyperParameterTuningJobSummaries: typings.awsSdk.sagemakerMod.HyperParameterTuningJobSummaries = js.native
+  var HyperParameterTuningJobSummaries: typings.awsSdk.sagemakerMod.HyperParameterTuningJobSummaries
   
   /**
     * If the result of this ListHyperParameterTuningJobs request was truncated, the response includes a NextToken. To retrieve the next set of tuning jobs, use the token in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
 }
 object ListHyperParameterTuningJobsResponse {
   

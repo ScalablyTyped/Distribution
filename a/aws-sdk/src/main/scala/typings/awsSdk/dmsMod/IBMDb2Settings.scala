@@ -2,51 +2,49 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBMDb2Settings extends StObject {
   
   /**
     * For ongoing replication (CDC), use CurrentLSN to specify a log sequence number (LSN) where you want the replication to start.
     */
-  var CurrentLsn: js.UndefOr[String] = js.native
+  var CurrentLsn: js.UndefOr[String] = js.undefined
   
   /**
     * Database name for the endpoint.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of bytes per read, as a NUMBER value. The default is 64 KB.
     */
-  var MaxKBytesPerRead: js.UndefOr[IntegerOptional] = js.native
+  var MaxKBytesPerRead: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Endpoint connection password.
     */
-  var Password: js.UndefOr[SecretString] = js.native
+  var Password: js.UndefOr[SecretString] = js.undefined
   
   /**
     * Endpoint TCP port.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Fully qualified domain name of the endpoint.
     */
-  var ServerName: js.UndefOr[String] = js.native
+  var ServerName: js.UndefOr[String] = js.undefined
   
   /**
     * Enables ongoing replication (CDC) as a BOOLEAN value. The default is true.
     */
-  var SetDataCaptureChanges: js.UndefOr[BooleanOptional] = js.native
+  var SetDataCaptureChanges: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Endpoint connection user name.
     */
-  var Username: js.UndefOr[String] = js.native
+  var Username: js.UndefOr[String] = js.undefined
 }
 object IBMDb2Settings {
   

@@ -3,10 +3,8 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.SymbolKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait `1` extends StObject {
     * the symbol kinds from `File` to `Array` as defined in
     * the initial version of the protocol.
     */
-  var valueSet: js.UndefOr[js.Array[SymbolKind]] = js.native
+  var valueSet: js.UndefOr[js.Array[SymbolKind]] = js.undefined
 }
 object `1` {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationDescription extends StObject {
   
   /**
     * The ID of the destination.
     */
-  var DestinationId: typings.awsSdk.firehoseMod.DestinationId = js.native
+  var DestinationId: typings.awsSdk.firehoseMod.DestinationId
   
   /**
     * The destination in Amazon ES.
     */
-  var ElasticsearchDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.ElasticsearchDestinationDescription] = js.native
+  var ElasticsearchDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.ElasticsearchDestinationDescription] = js.undefined
   
   /**
     * The destination in Amazon S3.
     */
-  var ExtendedS3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationDescription] = js.native
+  var ExtendedS3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.ExtendedS3DestinationDescription] = js.undefined
   
   /**
     * Describes the specified HTTP endpoint destination.
     */
-  var HttpEndpointDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationDescription] = js.native
+  var HttpEndpointDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.HttpEndpointDestinationDescription] = js.undefined
   
   /**
     * The destination in Amazon Redshift.
     */
-  var RedshiftDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationDescription] = js.native
+  var RedshiftDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.RedshiftDestinationDescription] = js.undefined
   
   /**
     * [Deprecated] The destination in Amazon S3.
     */
-  var S3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationDescription] = js.native
+  var S3DestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.S3DestinationDescription] = js.undefined
   
   /**
     * The destination in Splunk.
     */
-  var SplunkDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.SplunkDestinationDescription] = js.native
+  var SplunkDestinationDescription: js.UndefOr[typings.awsSdk.firehoseMod.SplunkDestinationDescription] = js.undefined
 }
 object DestinationDescription {
   

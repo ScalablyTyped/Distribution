@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Steps$Perfmetricssummary")
@@ -37,7 +36,7 @@ class ResourceProjectsHistoriesExecutionsStepsPerfmetricssummary protected () ex
     */
   def create(): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(callback: BodyResponseCallback[SchemaPerfMetricsSummary]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(params: ParamsResourceProjectsHistoriesExecutionsStepsPerfmetricssummaryCreate): GaxiosPromise[SchemaPerfMetricsSummary] = js.native
   def create(
     params: ParamsResourceProjectsHistoriesExecutionsStepsPerfmetricssummaryCreate,

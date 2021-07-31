@@ -11,57 +11,53 @@ import typings.subscribeUiEvent.anon.Height
 import typings.subscribeUiEvent.anon.Remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("subscribe-ui-event", "listen")
+  @JSImport("subscribe-ui-event", JSImport.Namespace)
   @js.native
-  def listen(target: EventTarget, eventType: String, handler: EventListenerOrEventListenerObject): Remove = js.native
-  @JSImport("subscribe-ui-event", "listen")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def listen(target: EventTarget, eventType: String, handler: EventListenerOrEventListenerObject): Remove = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Remove]
+  @scala.inline
   def listen(
     target: EventTarget,
     eventType: String,
     handler: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
-  ): Remove = js.native
+  ): Remove = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Remove]
   
-  @JSImport("subscribe-ui-event", "subscribe")
-  @js.native
-  def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Subscription = js.native
-  @JSImport("subscribe-ui-event", "subscribe")
-  @js.native
-  def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T], options: SubscribeOptions): Subscription = js.native
-  @JSImport("subscribe-ui-event", "subscribe")
-  @js.native
-  def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Subscription = js.native
-  @JSImport("subscribe-ui-event", "subscribe")
-  @js.native
-  def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T], options: SubscribeOptions): Subscription = js.native
+  @scala.inline
+  def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+  @scala.inline
+  def subscribe[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T], options: SubscribeOptions): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Subscription]
   
-  @JSImport("subscribe-ui-event", "unsubscribe")
-  @js.native
-  def unsubscribe[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Unit = js.native
-  @JSImport("subscribe-ui-event", "unsubscribe")
-  @js.native
-  def unsubscribe_T_TouchEventType[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Unit = js.native
+  @scala.inline
+  def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+  @scala.inline
+  def subscribe_T_UIEventType[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T], options: SubscribeOptions): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Subscription]
   
-  @js.native
+  @scala.inline
+  def unsubscribe[T /* <: UIEventType */](eventType: T, callback: UIEventCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unsubscribe_T_TouchEventType[T /* <: TouchEventType */](eventType: T, callback: TouchEventCallback[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait ArgmentedEvent[T /* <: EventType */] extends StObject {
     
-    var mainType: String = js.native
+    var mainType: String
     
-    var resize: Height = js.native
+    var resize: Height
     
-    var scroll: Delta = js.native
+    var scroll: Delta
     
-    var subType: String = js.native
+    var subType: String
     
-    var touch: AxisIntention = js.native
+    var touch: AxisIntention
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object ArgmentedEvent {
     
@@ -73,7 +69,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ArgmentedEventMutableBuilder[Self <: ArgmentedEvent[_], T /* <: EventType */] (val x: Self with ArgmentedEvent[T]) extends AnyVal {
+    implicit class ArgmentedEventMutableBuilder[Self <: ArgmentedEvent[?], T /* <: EventType */] (val x: Self & ArgmentedEvent[T]) extends AnyVal {
       
       @scala.inline
       def setMainType(value: String): Self = StObject.set(x, "mainType", value.asInstanceOf[js.Any])
@@ -149,22 +145,21 @@ object mod {
     def visibilitychange: typings.subscribeUiEvent.subscribeUiEventStrings.visibilitychange = "visibilitychange".asInstanceOf[typings.subscribeUiEvent.subscribeUiEventStrings.visibilitychange]
   }
   
-  @js.native
   trait SubscribeOptions extends StObject {
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var enableResizeInfo: js.UndefOr[Boolean] = js.native
+    var enableResizeInfo: js.UndefOr[Boolean] = js.undefined
     
-    var enableScrollInfo: js.UndefOr[Boolean] = js.native
+    var enableScrollInfo: js.UndefOr[Boolean] = js.undefined
     
-    var enableTouchInfo: js.UndefOr[Boolean] = js.native
+    var enableTouchInfo: js.UndefOr[Boolean] = js.undefined
     
-    var eventOptions: js.UndefOr[AddEventListenerOptions] = js.native
+    var eventOptions: js.UndefOr[AddEventListenerOptions] = js.undefined
     
-    var throttleRate: js.UndefOr[Double] = js.native
+    var throttleRate: js.UndefOr[Double] = js.undefined
     
-    var useRAF: js.UndefOr[Boolean] = js.native
+    var useRAF: js.UndefOr[Boolean] = js.undefined
   }
   object SubscribeOptions {
     
@@ -221,10 +216,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Subscription {
     

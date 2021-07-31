@@ -4,33 +4,28 @@ import typings.estree.estreeStrings.module
 import typings.estree.estreeStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Program
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var body: js.Array[Directive | Statement | ModuleDeclaration] = js.native
+  var body: js.Array[Directive | Statement | ModuleDeclaration]
   
-  var comments: js.UndefOr[js.Array[Comment]] = js.native
+  var comments: js.UndefOr[js.Array[Comment]] = js.undefined
   
-  var sourceType: script | module = js.native
+  var sourceType: script | module
   
   @JSName("type")
-  var type_Program: typings.estree.estreeStrings.Program = js.native
+  var type_Program: typings.estree.estreeStrings.Program
 }
 object Program {
   
   @scala.inline
-  def apply(
-    body: js.Array[Directive | Statement | ModuleDeclaration],
-    sourceType: script | module,
-    `type`: typings.estree.estreeStrings.Program
-  ): Program = {
+  def apply(body: js.Array[Directive | Statement | ModuleDeclaration], sourceType: script | module): Program = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Program")
     __obj.asInstanceOf[Program]
   }
   

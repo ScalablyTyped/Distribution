@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Promooffer")
@@ -34,7 +33,7 @@ class ResourcePromooffer protected () extends StObject {
     */
   def accept(): GaxiosPromise[Unit] = js.native
   def accept(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def accept(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def accept(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def accept(params: ParamsResourcePromoofferAccept): GaxiosPromise[Unit] = js.native
   def accept(params: ParamsResourcePromoofferAccept, callback: BodyResponseCallback[Unit]): Unit = js.native
   def accept(
@@ -70,7 +69,7 @@ class ResourcePromooffer protected () extends StObject {
     */
   def dismiss(): GaxiosPromise[Unit] = js.native
   def dismiss(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def dismiss(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def dismiss(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourcePromoofferDismiss): GaxiosPromise[Unit] = js.native
   def dismiss(params: ParamsResourcePromoofferDismiss, callback: BodyResponseCallback[Unit]): Unit = js.native
   def dismiss(
@@ -104,7 +103,7 @@ class ResourcePromooffer protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOffers] = js.native
   def get(callback: BodyResponseCallback[SchemaOffers]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOffers] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOffers] = js.native
   def get(params: ParamsResourcePromoofferGet): GaxiosPromise[SchemaOffers] = js.native
   def get(params: ParamsResourcePromoofferGet, callback: BodyResponseCallback[SchemaOffers]): Unit = js.native
   def get(

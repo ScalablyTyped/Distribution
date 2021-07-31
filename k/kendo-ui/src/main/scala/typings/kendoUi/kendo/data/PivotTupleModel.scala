@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotTupleModel extends StObject {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var children: js.Array[PivotTupleModel] = js.native
+  var children: js.Array[PivotTupleModel]
   
-  var hasChildren: js.UndefOr[Boolean] = js.native
+  var hasChildren: js.UndefOr[Boolean] = js.undefined
   
-  var hierarchy: js.UndefOr[String] = js.native
+  var hierarchy: js.UndefOr[String] = js.undefined
   
-  var levelName: js.UndefOr[String] = js.native
+  var levelName: js.UndefOr[String] = js.undefined
   
-  var levelNum: Double = js.native
+  var levelNum: Double
   
-  var name: String = js.native
+  var name: String
 }
 object PivotTupleModel {
   

@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CcrFollowInfo extends Generic {
+trait CcrFollowInfo
+  extends StObject
+     with Generic {
   
-  var index: String | js.Array[String] = js.native
+  var index: String | js.Array[String]
 }
 object CcrFollowInfo {
   

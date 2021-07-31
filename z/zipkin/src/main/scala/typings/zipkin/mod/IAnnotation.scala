@@ -2,13 +2,11 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnnotation extends StObject {
   
-  val annotationType: String = js.native
+  val annotationType: String
 }
 object IAnnotation {
   

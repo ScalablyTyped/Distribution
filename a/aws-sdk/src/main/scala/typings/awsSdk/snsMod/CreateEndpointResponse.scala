@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateEndpointResponse extends StObject {
   
   /**
     * EndpointArn returned from CreateEndpoint action.
     */
-  var EndpointArn: js.UndefOr[String] = js.native
+  var EndpointArn: js.UndefOr[String] = js.undefined
 }
 object CreateEndpointResponse {
   

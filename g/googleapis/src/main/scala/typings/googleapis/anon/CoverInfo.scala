@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverInfo extends StObject {
   
-  var coverInfo: js.UndefOr[LeftImageOffset] = js.native
+  var coverInfo: js.UndefOr[LeftImageOffset] = js.undefined
   
-  var coverPhoto: js.UndefOr[Height] = js.native
+  var coverPhoto: js.UndefOr[Height] = js.undefined
   
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
 }
 object CoverInfo {
   

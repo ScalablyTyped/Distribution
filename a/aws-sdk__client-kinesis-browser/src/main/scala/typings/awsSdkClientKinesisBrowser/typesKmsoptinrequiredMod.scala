@@ -6,26 +6,25 @@ import typings.awsSdkClientKinesisBrowser.putRecordsExceptionsUnionMod.PutRecord
 import typings.awsSdkClientKinesisBrowser.startStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsoptinrequiredMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSOptInRequiredDetails> * / any */ @js.native
-  trait KMSOptInRequired
-    extends GetRecordsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSOptInRequiredDetails> * / any */ trait KMSOptInRequired
+    extends StObject
+       with GetRecordsExceptionsUnion
        with PutRecordExceptionsUnion
        with PutRecordsExceptionsUnion
        with StartStreamEncryptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired
   }
   object KMSOptInRequired {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired): KMSOptInRequired = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSOptInRequired = {
+      val __obj = js.Dynamic.literal(name = "KMSOptInRequired")
       __obj.asInstanceOf[KMSOptInRequired]
     }
     
@@ -37,13 +36,12 @@ object typesKmsoptinrequiredMod {
     }
   }
   
-  @js.native
   trait KMSOptInRequiredDetails extends StObject {
     
     /**
       * <p>A message that provides information about the error.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KMSOptInRequiredDetails {
     

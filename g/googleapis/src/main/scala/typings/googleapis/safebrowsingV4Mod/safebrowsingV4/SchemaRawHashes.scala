@@ -2,7 +2,6 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,21 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * support compression, or when sending non-4-byte hashes to clients that do
   * support compression.
   */
-@js.native
 trait SchemaRawHashes extends StObject {
   
   /**
     * The number of bytes for each prefix encoded below.  This field can be
     * anywhere from 4 (shortest prefix) to 32 (full SHA256 hash).
     */
-  var prefixSize: js.UndefOr[Double] = js.native
+  var prefixSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The hashes, in binary format, concatenated into one long string. Hashes
     * are sorted in lexicographic order. For JSON API users, hashes are
     * base64-encoded.
     */
-  var rawHashes: js.UndefOr[String] = js.native
+  var rawHashes: js.UndefOr[String] = js.undefined
 }
 object SchemaRawHashes {
   

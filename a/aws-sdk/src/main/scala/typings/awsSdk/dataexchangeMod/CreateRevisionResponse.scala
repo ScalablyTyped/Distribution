@@ -2,56 +2,54 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRevisionResponse extends StObject {
   
   /**
     * The ARN for the revision
     */
-  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
     * An optional comment about the revision.
     */
-  var Comment: js.UndefOr[stringMin0Max16384] = js.native
+  var Comment: js.UndefOr[stringMin0Max16384] = js.undefined
   
   /**
     * The date and time that the revision was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier for the data set associated with this revision.
     */
-  var DataSetId: js.UndefOr[Id] = js.native
+  var DataSetId: js.UndefOr[Id] = js.undefined
   
   /**
     * To publish a revision to a data set in a product, the revision must first be finalized. Finalizing a revision tells AWS Data Exchange that your changes to the assets in the revision are complete. After it's in this read-only state, you can publish the revision to your products. Finalized revisions can be published through the AWS Data Exchange console or the AWS Marketplace Catalog API, using the StartChangeSet AWS Marketplace Catalog API action. When using the API, revisions are uniquely identified by their ARN.
     */
-  var Finalized: js.UndefOr[boolean] = js.native
+  var Finalized: js.UndefOr[boolean] = js.undefined
   
   /**
     * The unique identifier for the revision.
     */
-  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
     * The revision ID of the owned revision corresponding to the entitled revision being viewed. This parameter is returned when a revision owner is viewing the entitled copy of its owned revision.
     */
-  var SourceId: js.UndefOr[Id] = js.native
+  var SourceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The tags for the revision.
     */
-  var Tags: js.UndefOr[MapOfString] = js.native
+  var Tags: js.UndefOr[MapOfString] = js.undefined
   
   /**
     * The date and time that the revision was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object CreateRevisionResponse {
   

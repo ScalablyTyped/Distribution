@@ -12,7 +12,7 @@ A stateful ui library
 | Keywords           | state,stateful,ui,ease,tween |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 2540 |
+| # downloads        | 1783 |
 | # stars            | 1 |
 
 ## Links

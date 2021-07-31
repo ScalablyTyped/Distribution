@@ -3,28 +3,27 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ReturnStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ReturnStatement_
-  extends CompletionStatement
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ReturnStatement_
+  extends StObject
      with BaseNode
+     with CompletionStatement
      with Statement
      with Terminatorless {
   
-  var argument: Expression | Null = js.native
+  var argument: Expression | Null
   
   @JSName("type")
-  var type_ReturnStatement_ : ReturnStatement = js.native
+  var type_ReturnStatement_ : ReturnStatement
 }
 object ReturnStatement_ {
   
   @scala.inline
-  def apply(`type`: ReturnStatement): ReturnStatement_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): ReturnStatement_ = {
+    val __obj = js.Dynamic.literal(argument = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[ReturnStatement_]
   }
   

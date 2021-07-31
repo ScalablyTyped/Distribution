@@ -8,7 +8,6 @@ import typings.mendixmodelsdk.projectsMod.projects.Module
 import typings.mendixmodelsdk.projectsMod.projects.ModuleDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -63,9 +62,8 @@ object DomainModel {
     * Expects one argument, the projects.IModule in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DomainModel.createIn")
-  @js.native
-  def createIn(container: IModule): DomainModel = js.native
+  @scala.inline
+  def createIn(container: IModule): DomainModel = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DomainModel]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.DomainModel.structureTypeName")

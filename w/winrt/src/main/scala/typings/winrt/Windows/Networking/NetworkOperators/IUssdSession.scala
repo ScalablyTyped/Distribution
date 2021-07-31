@@ -3,15 +3,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUssdSession extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def sendMessageAndGetReplyAsync(message: UssdMessage): IAsyncOperation[UssdReply] = js.native
+  def sendMessageAndGetReplyAsync(message: UssdMessage): IAsyncOperation[UssdReply]
 }
 object IUssdSession {
   

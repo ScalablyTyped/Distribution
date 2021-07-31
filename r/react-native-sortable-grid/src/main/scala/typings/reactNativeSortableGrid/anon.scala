@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.Animated.AnimatedInterpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DeleteModeOn extends StObject {
     
-    var deleteModeOn: Boolean = js.native
+    var deleteModeOn: Boolean
   }
   object DeleteModeOn {
     
@@ -30,10 +28,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Transform extends StObject {
     
-    var transform: js.Array[StringDictionary[AnimatedInterpolation]] = js.native
+    var transform: js.Array[StringDictionary[AnimatedInterpolation]]
   }
   object Transform {
     

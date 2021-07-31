@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.basicMod.BasicCardOptions
 import typings.actionsOnGoogle.incomingMod._IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("actions-on-google/dist/service/actionssdk", "BasicCard")

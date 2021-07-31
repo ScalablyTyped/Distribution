@@ -2,48 +2,46 @@ package typings.jqueryTimeago
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Day extends StObject {
     
-    var day: js.UndefOr[js.Any] = js.native
+    var day: js.UndefOr[js.Any] = js.undefined
     
-    var days: js.UndefOr[js.Any] = js.native
+    var days: js.UndefOr[js.Any] = js.undefined
     
-    var hour: js.UndefOr[js.Any] = js.native
+    var hour: js.UndefOr[js.Any] = js.undefined
     
-    var hours: js.UndefOr[js.Any] = js.native
+    var hours: js.UndefOr[js.Any] = js.undefined
     
-    var minute: js.UndefOr[js.Any] = js.native
+    var minute: js.UndefOr[js.Any] = js.undefined
     
-    var minutes: js.UndefOr[js.Any] = js.native
+    var minutes: js.UndefOr[js.Any] = js.undefined
     
-    var month: js.UndefOr[js.Any] = js.native
+    var month: js.UndefOr[js.Any] = js.undefined
     
-    var months: js.UndefOr[js.Any] = js.native
+    var months: js.UndefOr[js.Any] = js.undefined
     
-    var numbers: js.UndefOr[js.Array[_]] = js.native
+    var numbers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var prefixAgo: js.UndefOr[String] = js.native
+    var prefixAgo: js.UndefOr[String] = js.undefined
     
-    var prefixFromNow: js.UndefOr[String] = js.native
+    var prefixFromNow: js.UndefOr[String] = js.undefined
     
     // Those can be string or Function
-    var seconds: js.UndefOr[js.Any] = js.native
+    var seconds: js.UndefOr[js.Any] = js.undefined
     
-    var suffixAgo: js.UndefOr[String] = js.native
+    var suffixAgo: js.UndefOr[String] = js.undefined
     
-    var suffixFromNow: js.UndefOr[String] = js.native
+    var suffixFromNow: js.UndefOr[String] = js.undefined
     
-    var wordSeparator: js.UndefOr[String] = js.native
+    var wordSeparator: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[js.Any] = js.native
+    var year: js.UndefOr[js.Any] = js.undefined
     
-    var years: js.UndefOr[js.Any] = js.native
+    var years: js.UndefOr[js.Any] = js.undefined
   }
   object Day {
     
@@ -105,7 +103,7 @@ object anon {
       def setMonthsUndefined: Self = StObject.set(x, "months", js.undefined)
       
       @scala.inline
-      def setNumbers(value: js.Array[_]): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+      def setNumbers(value: js.Array[js.Any]): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)

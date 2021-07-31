@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.Encodable
 import typings.vegaTypings.vegaTypingsStrings.area
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[AreaEncodeEntry]
      with Mark {
   
-  var `type`: area = js.native
+  var `type`: area
 }
 object AreaMark {
   
   @scala.inline
-  def apply(`type`: area): AreaMark = {
+  def apply(): AreaMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("area")
     __obj.asInstanceOf[AreaMark]
   }
   

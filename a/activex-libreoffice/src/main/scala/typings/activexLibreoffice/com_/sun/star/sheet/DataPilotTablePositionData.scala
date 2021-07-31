@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPiotTableHeaderData
   * @since OOo 3.0
   */
-@js.native
 trait DataPilotTablePositionData extends StObject {
   
   /**
@@ -29,14 +27,14 @@ trait DataPilotTablePositionData extends StObject {
     * @see com.sun.star.sheet.DataPiotTableResultData
     * @see com.sun.star.sheet.DataPiotTableHeaderData
     */
-  var PositionData: js.Any = js.native
+  var PositionData: js.Any
   
   /**
     * This parameter specifies which sub-area of a DataPilot table a given cell is positioned. See {@link DataPilotTablePositionType} for how to interpret
     * the value of this parameter.
     * @see com.sun.star.sheet.DataPilotTablePositionType
     */
-  var PositionType: Double = js.native
+  var PositionType: Double
 }
 object DataPilotTablePositionData {
   

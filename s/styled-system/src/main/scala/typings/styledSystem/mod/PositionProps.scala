@@ -2,12 +2,11 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
-  extends ZIndexProps[ThemeType]
+  extends StObject
+     with ZIndexProps[ThemeType]
      with TopProps[
       ThemeType, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Top<TLengthStyledSystem> */ js.Any
@@ -33,10 +32,10 @@ trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
     */
   var position: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PositionProps {
   
@@ -47,12 +46,12 @@ object PositionProps {
   }
   
   @scala.inline
-  implicit class PositionPropsMutableBuilder[Self <: PositionProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with PositionProps[ThemeType]) extends AnyVal {
+  implicit class PositionPropsMutableBuilder[Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PositionProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setPosition(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
@@ -64,6 +63,8 @@ object PositionProps {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setPositionVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "position", js.Array(value :_*))
+    def setPositionVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any) | Null)*
+    ): Self = StObject.set(x, "position", js.Array(value :_*))
   }
 }

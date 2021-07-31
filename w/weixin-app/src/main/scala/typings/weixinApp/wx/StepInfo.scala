@@ -2,19 +2,17 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 微信运动
-@js.native
 trait StepInfo extends StObject {
   
   /** 微信运动步数 */
-  var step: Double = js.native
+  var step: Double
   
   /** 时间戳，表示数据对应的时间 */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object StepInfo {
   

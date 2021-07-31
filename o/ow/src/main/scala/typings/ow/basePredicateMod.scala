@@ -2,14 +2,16 @@ package typings.ow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePredicateMod {
   
-  @JSImport("ow/dist/source/predicates/base-predicate", "isPredicate")
+  @JSImport("ow/dist/source/predicates/base-predicate", JSImport.Namespace)
   @js.native
-  def isPredicate(value: js.Any): /* is ow.ow/dist/source/predicates/base-predicate.BasePredicate<unknown> */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isPredicate(value: js.Any): /* is ow.ow/dist/source/predicates/base-predicate.BasePredicate<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPredicate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is ow.ow/dist/source/predicates/base-predicate.BasePredicate<unknown> */ Boolean]
   
   @JSImport("ow/dist/source/predicates/base-predicate", "testSymbol")
   @js.native

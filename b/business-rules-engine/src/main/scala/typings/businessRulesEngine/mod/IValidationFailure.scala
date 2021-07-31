@@ -2,15 +2,15 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IValidationFailure extends IError {
+trait IValidationFailure
+  extends StObject
+     with IError {
   
-  var Error: IError = js.native
+  var Error: IError
   
-  var IsAsync: Boolean = js.native
+  var IsAsync: Boolean
 }
 object IValidationFailure {
   

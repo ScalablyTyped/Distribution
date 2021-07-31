@@ -31,7 +31,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -43,12 +42,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object runtime {
   
-  @js.native
   trait ConnectInfo extends StObject {
     
-    var includeTlsChannelId: js.UndefOr[Boolean] = js.native
+    var includeTlsChannelId: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ConnectInfo {
     
@@ -86,7 +84,6 @@ object runtime {
     ]
   ]
   
-  @js.native
   trait InstalledDetails extends StObject {
     
     /**
@@ -94,19 +91,19 @@ object runtime {
       * Indicates the ID of the imported shared module extension which updated. This is present only if 'reason' is 'shared_module_update'.
       * @since Chrome 29.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Optional.
       * Indicates the previous version of the extension, which has just been updated. This is present only if 'reason' is 'update'.
       */
-    var previousVersion: js.UndefOr[String] = js.native
+    var previousVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The reason that this event is being dispatched.
       * One of: "install", "update", "chrome_update", or "shared_module_update"
       */
-    var reason: String = js.native
+    var reason: String
   }
   object InstalledDetails {
     
@@ -136,11 +133,10 @@ object runtime {
     }
   }
   
-  @js.native
   trait LastError extends StObject {
     
     /** Optional. Details about the error which occurred.  */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object LastError {
     
@@ -161,123 +157,123 @@ object runtime {
     }
   }
   
-  @js.native
   trait Manifest
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     // Optional
-    var author: js.UndefOr[js.Any] = js.native
+    var author: js.UndefOr[js.Any] = js.undefined
     
-    var automation: js.UndefOr[js.Any] = js.native
+    var automation: js.UndefOr[js.Any] = js.undefined
     
-    var background: js.UndefOr[Page] = js.native
+    var background: js.UndefOr[Page] = js.undefined
     
-    var background_page: js.UndefOr[String] = js.native
+    var background_page: js.UndefOr[String] = js.undefined
     
     // Pick one (or none)
-    var browser_action: js.UndefOr[typings.chrome.chrome.runtime.ManifestAction] = js.native
+    var browser_action: js.UndefOr[typings.chrome.chrome.runtime.ManifestAction] = js.undefined
     
-    var chrome_settings_overrides: js.UndefOr[Homepage] = js.native
+    var chrome_settings_overrides: js.UndefOr[Homepage] = js.undefined
     
-    var chrome_ui_overrides: js.UndefOr[Bookmarksui] = js.native
+    var chrome_ui_overrides: js.UndefOr[Bookmarksui] = js.undefined
     
-    var chrome_url_overrides: js.UndefOr[Bookmarks] = js.native
+    var chrome_url_overrides: js.UndefOr[Bookmarks] = js.undefined
     
-    var commands: js.UndefOr[StringDictionary[Description]] = js.native
+    var commands: js.UndefOr[StringDictionary[Description]] = js.undefined
     
-    var content_capabilities: js.UndefOr[Matches] = js.native
+    var content_capabilities: js.UndefOr[Matches] = js.undefined
     
-    var content_scripts: js.UndefOr[js.Array[Allframes]] = js.native
+    var content_scripts: js.UndefOr[js.Array[Allframes]] = js.undefined
     
-    var content_security_policy: js.UndefOr[String] = js.native
+    var content_security_policy: js.UndefOr[String] = js.undefined
     
-    var converted_from_user_script: js.UndefOr[Boolean] = js.native
+    var converted_from_user_script: js.UndefOr[Boolean] = js.undefined
     
-    var copresence: js.UndefOr[js.Any] = js.native
+    var copresence: js.UndefOr[js.Any] = js.undefined
     
-    var current_locale: js.UndefOr[String] = js.native
+    var current_locale: js.UndefOr[String] = js.undefined
     
     // Recommended
-    var default_locale: js.UndefOr[String] = js.native
+    var default_locale: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var devtools_page: js.UndefOr[String] = js.native
+    var devtools_page: js.UndefOr[String] = js.undefined
     
-    var event_rules: js.UndefOr[js.Array[Actions]] = js.native
+    var event_rules: js.UndefOr[js.Array[Actions]] = js.undefined
     
-    var export: js.UndefOr[Whitelist] = js.native
+    var `export`: js.UndefOr[Whitelist] = js.undefined
     
-    var externally_connectable: js.UndefOr[Acceptstlschannelid] = js.native
+    var externally_connectable: js.UndefOr[Acceptstlschannelid] = js.undefined
     
-    var file_browser_handlers: js.UndefOr[js.Array[Defaulttitle]] = js.native
+    var file_browser_handlers: js.UndefOr[js.Array[Defaulttitle]] = js.undefined
     
-    var file_system_provider_capabilities: js.UndefOr[Configurable] = js.native
+    var file_system_provider_capabilities: js.UndefOr[Configurable] = js.undefined
     
-    var homepage_url: js.UndefOr[String] = js.native
+    var homepage_url: js.UndefOr[String] = js.undefined
     
-    var icons: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.native
+    var icons: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.undefined
     
-    var `import`: js.UndefOr[js.Array[Id]] = js.native
+    var `import`: js.UndefOr[js.Array[Id]] = js.undefined
     
-    var incognito: js.UndefOr[String] = js.native
+    var incognito: js.UndefOr[String] = js.undefined
     
-    var input_components: js.UndefOr[js.Array[Language]] = js.native
+    var input_components: js.UndefOr[js.Array[Language]] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     // Required
-    var manifest_version: Double = js.native
+    var manifest_version: Double
     
-    var minimum_chrome_version: js.UndefOr[String] = js.native
+    var minimum_chrome_version: js.UndefOr[String] = js.undefined
     
-    var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.native
+    var nacl_modules: js.UndefOr[js.Array[Mimetype]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var oauth2: js.UndefOr[Clientid] = js.native
+    var oauth2: js.UndefOr[Clientid] = js.undefined
     
-    var offline_enabled: js.UndefOr[Boolean] = js.native
+    var offline_enabled: js.UndefOr[Boolean] = js.undefined
     
-    var omnibox: js.UndefOr[Keyword] = js.native
+    var omnibox: js.UndefOr[Keyword] = js.undefined
     
-    var optional_permissions: js.UndefOr[js.Array[String]] = js.native
+    var optional_permissions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var options_page: js.UndefOr[String] = js.native
+    var options_page: js.UndefOr[String] = js.undefined
     
-    var options_ui: js.UndefOr[Chromestyle] = js.native
+    var options_ui: js.UndefOr[Chromestyle] = js.undefined
     
-    var page_action: js.UndefOr[typings.chrome.chrome.runtime.ManifestAction] = js.native
+    var page_action: js.UndefOr[typings.chrome.chrome.runtime.ManifestAction] = js.undefined
     
-    var permissions: js.UndefOr[js.Array[String]] = js.native
+    var permissions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var platforms: js.UndefOr[js.Array[Naclarch]] = js.native
+    var platforms: js.UndefOr[js.Array[Naclarch]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Path]] = js.native
+    var plugins: js.UndefOr[js.Array[Path]] = js.undefined
     
-    var requirements: js.UndefOr[`3D`] = js.native
+    var requirements: js.UndefOr[`3D`] = js.undefined
     
-    var sandbox: js.UndefOr[Contentsecuritypolicy] = js.native
+    var sandbox: js.UndefOr[Contentsecuritypolicy] = js.undefined
     
-    var short_name: js.UndefOr[String] = js.native
+    var short_name: js.UndefOr[String] = js.undefined
     
-    var signature: js.UndefOr[js.Any] = js.native
+    var signature: js.UndefOr[js.Any] = js.undefined
     
-    var spellcheck: js.UndefOr[Dictionaryformat] = js.native
+    var spellcheck: js.UndefOr[Dictionaryformat] = js.undefined
     
-    var storage: js.UndefOr[Managedschema] = js.native
+    var storage: js.UndefOr[Managedschema] = js.undefined
     
-    var system_indicator: js.UndefOr[js.Any] = js.native
+    var system_indicator: js.UndefOr[js.Any] = js.undefined
     
-    var tts_engine: js.UndefOr[Voices] = js.native
+    var tts_engine: js.UndefOr[Voices] = js.undefined
     
-    var update_url: js.UndefOr[String] = js.native
+    var update_url: js.UndefOr[String] = js.undefined
     
-    var version: String = js.native
+    var version: String
     
-    var version_name: js.UndefOr[String] = js.native
+    var version_name: js.UndefOr[String] = js.undefined
     
-    var web_accessible_resources: js.UndefOr[js.Array[String]] = js.native
+    var web_accessible_resources: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Manifest {
     
@@ -646,14 +642,13 @@ object runtime {
     }
   }
   
-  @js.native
   trait ManifestAction extends StObject {
     
-    var default_icon: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.native
+    var default_icon: js.UndefOr[typings.chrome.chrome.runtime.ManifestIcons] = js.undefined
     
-    var default_popup: js.UndefOr[String] = js.native
+    var default_popup: js.UndefOr[String] = js.undefined
     
-    var default_title: js.UndefOr[String] = js.native
+    var default_title: js.UndefOr[String] = js.undefined
   }
   object ManifestAction {
     
@@ -688,11 +683,10 @@ object runtime {
   
   type ManifestIcons = NumberDictionary[String]
   
-  @js.native
   trait MessageOptions extends StObject {
     
     /** Whether the TLS channel ID will be passed into onMessageExternal for processes that are listening for the connection event. */
-    var includeTlsChannelId: js.UndefOr[Boolean] = js.native
+    var includeTlsChannelId: js.UndefOr[Boolean] = js.undefined
   }
   object MessageOptions {
     
@@ -713,43 +707,42 @@ object runtime {
     }
   }
   
-  @js.native
   trait MessageSender extends StObject {
     
     /**
       * The frame that opened the connection. 0 for top-level frames, positive for child frames. This will only be set when tab is set.
       * @since Chrome 41.
       */
-    var frameId: js.UndefOr[Double] = js.native
+    var frameId: js.UndefOr[Double] = js.undefined
     
     /** The ID of the extension or app that opened the connection, if any. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** The name of the native application that opened the connection, if any.
       * @since Chrome 74
       */
-    var nativeApplication: js.UndefOr[String] = js.native
+    var nativeApplication: js.UndefOr[String] = js.undefined
     
     /**
       * The origin of the page or frame that opened the connection. It can vary from the url property (e.g., about:blank) or can be opaque (e.g., sandboxed iframes). This is useful for identifying if the origin can be trusted if we can't immediately tell from the URL.
       * @since Chrome 80.
       */
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
     /** The tabs.Tab which opened the connection, if any. This property will only be present when the connection was opened from a tab (including content scripts), and only if the receiver is an extension, not an app. */
-    var tab: js.UndefOr[Tab] = js.native
+    var tab: js.UndefOr[Tab] = js.undefined
     
     /**
       * The TLS channel ID of the page or frame that opened the connection, if requested by the extension or app, and if available.
       * @since Chrome 32.
       */
-    var tlsChannelId: js.UndefOr[String] = js.native
+    var tlsChannelId: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of the page or frame that opened the connection. If the sender is in an iframe, it will be iframe's URL not the URL of the page which hosts it.
       * @since Chrome 28.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object MessageSender {
     
@@ -806,26 +799,25 @@ object runtime {
     }
   }
   
-  @js.native
   trait PlatformInfo extends StObject {
     
     /**
       * The machine's processor architecture.
       * One of: "arm", "x86-32", or "x86-64"
       */
-    var arch: String = js.native
+    var arch: String
     
     /**
       * The native client architecture. This may be different from arch on some platforms.
       * One of: "arm", "x86-32", or "x86-64"
       */
-    var nacl_arch: String = js.native
+    var nacl_arch: String
     
     /**
       * The operating system chrome is running on.
       * One of: "mac", "win", "android", "cros", "linux", or "openbsd"
       */
-    var os: String = js.native
+    var os: String
   }
   object PlatformInfo {
     
@@ -849,26 +841,25 @@ object runtime {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    var name: String = js.native
-    
-    /** An object which allows the addition and removal of listeners for a Chrome event. */
-    var onDisconnect: typings.chrome.chrome.runtime.PortDisconnectEvent = js.native
+    var name: String
     
     /** An object which allows the addition and removal of listeners for a Chrome event. */
-    var onMessage: typings.chrome.chrome.runtime.PortMessageEvent = js.native
+    var onDisconnect: typings.chrome.chrome.runtime.PortDisconnectEvent
     
-    def postMessage(message: js.Any): Unit = js.native
+    /** An object which allows the addition and removal of listeners for a Chrome event. */
+    var onMessage: typings.chrome.chrome.runtime.PortMessageEvent
+    
+    def postMessage(message: js.Any): Unit
     
     /**
       * Optional.
       * This property will only be present on ports passed to onConnect/onConnectExternal listeners.
       */
-    var sender: js.UndefOr[typings.chrome.chrome.runtime.MessageSender] = js.native
+    var sender: js.UndefOr[typings.chrome.chrome.runtime.MessageSender] = js.undefined
   }
   object Port {
     
@@ -944,38 +935,37 @@ object runtime {
     js.Function1[/* details */ typings.chrome.chrome.runtime.UpdateAvailableDetails, Unit]
   ]
   
-  @js.native
   trait SearchProvider extends StObject {
     
-    var alternate_urls: js.UndefOr[js.Array[String]] = js.native
+    var alternate_urls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var favicon_url: js.UndefOr[String] = js.native
+    var favicon_url: js.UndefOr[String] = js.undefined
     
-    var image_url: js.UndefOr[String] = js.native
+    var image_url: js.UndefOr[String] = js.undefined
     
-    var image_url_post_params: js.UndefOr[String] = js.native
+    var image_url_post_params: js.UndefOr[String] = js.undefined
     
-    var instant_url: js.UndefOr[String] = js.native
+    var instant_url: js.UndefOr[String] = js.undefined
     
-    var instant_url_post_params: js.UndefOr[String] = js.native
+    var instant_url_post_params: js.UndefOr[String] = js.undefined
     
-    var is_default: js.UndefOr[Boolean] = js.native
+    var is_default: js.UndefOr[Boolean] = js.undefined
     
-    var keyword: js.UndefOr[String] = js.native
+    var keyword: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var prepopulated_id: js.UndefOr[Double] = js.native
+    var prepopulated_id: js.UndefOr[Double] = js.undefined
     
-    var search_url: String = js.native
+    var search_url: String
     
-    var search_url_post_params: js.UndefOr[String] = js.native
+    var search_url_post_params: js.UndefOr[String] = js.undefined
     
-    var suggest_url: js.UndefOr[String] = js.native
+    var suggest_url: js.UndefOr[String] = js.undefined
     
-    var suggest_url_post_params: js.UndefOr[String] = js.native
+    var suggest_url_post_params: js.UndefOr[String] = js.undefined
   }
   object SearchProvider {
     
@@ -1080,11 +1070,10 @@ object runtime {
     }
   }
   
-  @js.native
   trait UpdateAvailableDetails extends StObject {
     
     /** The version number of the available update. */
-    var version: String = js.native
+    var version: String
   }
   object UpdateAvailableDetails {
     
@@ -1102,11 +1091,10 @@ object runtime {
     }
   }
   
-  @js.native
   trait UpdateCheckDetails extends StObject {
     
     /** The version of the available update. */
-    var version: String = js.native
+    var version: String
   }
   object UpdateCheckDetails {
     

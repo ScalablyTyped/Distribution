@@ -28,65 +28,63 @@ import typings.octokitPluginRestEndpointMethods.anon.GetRestrictionsForOrg
 import typings.octokitPluginRestEndpointMethods.anon.Render
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object methodTypesMod {
   
-  @js.native
   trait RestEndpointMethods extends StObject {
     
-    var actions: AddSelectedRepoToOrgSecret = js.native
+    var actions: AddSelectedRepoToOrgSecret
     
-    var activity: CheckRepoIsStarredByAuthenticatedUser = js.native
+    var activity: CheckRepoIsStarredByAuthenticatedUser
     
-    var apps: AddRepoToInstallation = js.native
+    var apps: AddRepoToInstallation
     
-    var billing: GetGithubActionsBillingOrg = js.native
+    var billing: GetGithubActionsBillingOrg
     
-    var checks: Create = js.native
+    var checks: Create
     
-    var codeScanning: GetAlert = js.native
+    var codeScanning: GetAlert
     
-    var codesOfConduct: GetAllCodesOfConduct = js.native
+    var codesOfConduct: GetAllCodesOfConduct
     
-    var emojis: Get = js.native
+    var emojis: Get
     
-    var gists: CheckIsStarred = js.native
+    var gists: CheckIsStarred
     
-    var git: CreateBlob = js.native
+    var git: CreateBlob
     
-    var gitignore: GetAllTemplates = js.native
+    var gitignore: GetAllTemplates
     
-    var interactions: GetRestrictionsForOrg = js.native
+    var interactions: GetRestrictionsForOrg
     
-    var issues: AddAssignees = js.native
+    var issues: AddAssignees
     
-    var licenses: GetAllCommonlyUsed = js.native
+    var licenses: GetAllCommonlyUsed
     
-    var markdown: Render = js.native
+    var markdown: Render
     
-    var meta: Get209 = js.native
+    var meta: Get209
     
-    var migrations: CancelImport = js.native
+    var migrations: CancelImport
     
-    var orgs: BlockUser = js.native
+    var orgs: BlockUser
     
-    var projects: AddCollaborator = js.native
+    var projects: AddCollaborator
     
-    var pulls: CheckIfMerged = js.native
+    var pulls: CheckIfMerged
     
-    var rateLimit: Get319 = js.native
+    var rateLimit: Get319
     
-    var reactions: CreateForCommitComment = js.native
+    var reactions: CreateForCommitComment
     
-    var repos: AcceptInvitation = js.native
+    var repos: AcceptInvitation
     
-    var search: Code = js.native
+    var search: Code
     
-    var teams: AddOrUpdateMembershipForUserInOrg = js.native
+    var teams: AddOrUpdateMembershipForUserInOrg
     
-    var users: AddEmailForAuthenticated = js.native
+    var users: AddEmailForAuthenticated
   }
   object RestEndpointMethods {
     

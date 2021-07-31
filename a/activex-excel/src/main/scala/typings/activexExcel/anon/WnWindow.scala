@@ -3,13 +3,11 @@ package typings.activexExcel.anon
 import typings.activexExcel.Excel.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WnWindow extends StObject {
   
-  val Wn: Window = js.native
+  val Wn: Window
 }
 object WnWindow {
   

@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gamelift {
   
-  @js.native
   trait AliasRoutingStrategy extends StObject {
     
     /**
       * ID of the Gamelift Fleet to point the alias to.
       */
-    var fleetId: js.UndefOr[Input[String]] = js.native
+    var fleetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Message text to be used with the `TERMINAL` routing strategy.
       */
-    var message: js.UndefOr[Input[String]] = js.native
+    var message: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Type of routing strategy. e.g. `SIMPLE` or `TERMINAL`
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object AliasRoutingStrategy {
     
@@ -55,23 +53,22 @@ object gamelift {
     }
   }
   
-  @js.native
   trait BuildStorageLocation extends StObject {
     
     /**
       * Name of your S3 bucket.
       */
-    var bucket: Input[String] = js.native
+    var bucket: Input[String]
     
     /**
       * Name of the zip file containing your build files.
       */
-    var key: Input[String] = js.native
+    var key: Input[String]
     
     /**
       * ARN of the access role that allows Amazon GameLift to access your S3 bucket.
       */
-    var roleArn: Input[String] = js.native
+    var roleArn: Input[String]
   }
   object BuildStorageLocation {
     
@@ -95,28 +92,27 @@ object gamelift {
     }
   }
   
-  @js.native
   trait FleetEc2InboundPermission extends StObject {
     
     /**
       * Starting value for a range of allowed port numbers.
       */
-    var fromPort: Input[Double] = js.native
+    var fromPort: Input[Double]
     
     /**
       * Range of allowed IP addresses expressed in CIDR notation. e.g. `000.000.000.000/[subnet mask]` or `0.0.0.0/[subnet mask]`.
       */
-    var ipRange: Input[String] = js.native
+    var ipRange: Input[String]
     
     /**
       * Network communication protocol used by the fleet. e.g. `TCP` or `UDP`
       */
-    var protocol: Input[String] = js.native
+    var protocol: Input[String]
     
     /**
       * Ending value for a range of allowed port numbers. Port numbers are end-inclusive. This value must be higher than `fromPort`.
       */
-    var toPort: Input[Double] = js.native
+    var toPort: Input[Double]
   }
   object FleetEc2InboundPermission {
     
@@ -143,18 +139,17 @@ object gamelift {
     }
   }
   
-  @js.native
   trait FleetResourceCreationLimitPolicy extends StObject {
     
     /**
       * Maximum number of game sessions that an individual can create during the policy period.
       */
-    var newGameSessionsPerCreator: js.UndefOr[Input[Double]] = js.native
+    var newGameSessionsPerCreator: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Time span used in evaluating the resource creation limit policy.
       */
-    var policyPeriodInMinutes: js.UndefOr[Input[Double]] = js.native
+    var policyPeriodInMinutes: js.UndefOr[Input[Double]] = js.undefined
   }
   object FleetResourceCreationLimitPolicy {
     
@@ -181,23 +176,22 @@ object gamelift {
     }
   }
   
-  @js.native
   trait FleetRuntimeConfiguration extends StObject {
     
     /**
       * Maximum amount of time (in seconds) that a game session can remain in status `ACTIVATING`.
       */
-    var gameSessionActivationTimeoutSeconds: js.UndefOr[Input[Double]] = js.native
+    var gameSessionActivationTimeoutSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Maximum number of game sessions with status `ACTIVATING` to allow on an instance simultaneously.
       */
-    var maxConcurrentGameSessionActivations: js.UndefOr[Input[Double]] = js.native
+    var maxConcurrentGameSessionActivations: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Collection of server process configurations that describe which server processes to run on each instance in a fleet. See below.
       */
-    var serverProcesses: js.UndefOr[Input[js.Array[Input[FleetRuntimeConfigurationServerProcess]]]] = js.native
+    var serverProcesses: js.UndefOr[Input[js.Array[Input[FleetRuntimeConfigurationServerProcess]]]] = js.undefined
   }
   object FleetRuntimeConfiguration {
     
@@ -233,23 +227,22 @@ object gamelift {
     }
   }
   
-  @js.native
   trait FleetRuntimeConfigurationServerProcess extends StObject {
     
     /**
       * Number of server processes using this configuration to run concurrently on an instance.
       */
-    var concurrentExecutions: Input[Double] = js.native
+    var concurrentExecutions: Input[Double]
     
     /**
       * Location of the server executable in a game build. All game builds are installed on instances at the root : for Windows instances `C:\game`, and for Linux instances `/local/game`.
       */
-    var launchPath: Input[String] = js.native
+    var launchPath: Input[String]
     
     /**
       * Optional list of parameters to pass to the server executable on launch.
       */
-    var parameters: js.UndefOr[Input[String]] = js.native
+    var parameters: js.UndefOr[Input[String]] = js.undefined
   }
   object FleetRuntimeConfigurationServerProcess {
     
@@ -276,18 +269,17 @@ object gamelift {
     }
   }
   
-  @js.native
   trait GameSessionQueuePlayerLatencyPolicy extends StObject {
     
     /**
       * Maximum latency value that is allowed for any player.
       */
-    var maximumIndividualPlayerLatencyMilliseconds: Input[Double] = js.native
+    var maximumIndividualPlayerLatencyMilliseconds: Input[Double]
     
     /**
       * Length of time that the policy is enforced while placing a new game session. Absence of value for this attribute means that the policy is enforced until the queue times out.
       */
-    var policyDurationSeconds: js.UndefOr[Input[Double]] = js.native
+    var policyDurationSeconds: js.UndefOr[Input[Double]] = js.undefined
   }
   object GameSessionQueuePlayerLatencyPolicy {
     

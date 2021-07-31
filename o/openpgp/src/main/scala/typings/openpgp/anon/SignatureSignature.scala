@@ -2,13 +2,11 @@ package typings.openpgp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureSignature extends StObject {
   
-  var signature: typings.openpgp.mod.signature.Signature = js.native
+  var signature: typings.openpgp.mod.signature.Signature
 }
 object SignatureSignature {
   

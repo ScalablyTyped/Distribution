@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProofPrint extends StObject {
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
   
-  var `proof-print-copies`: js.UndefOr[Double] = js.native
+  var `proof-print-copies`: js.UndefOr[Double] = js.undefined
 }
 object ProofPrint {
   

@@ -2,14 +2,16 @@ package typings.v8flags
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(cb: js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("v8flags", JSImport.Namespace)
   @js.native
-  def apply(cb: js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("v8flags", "configPath")
   @js.native

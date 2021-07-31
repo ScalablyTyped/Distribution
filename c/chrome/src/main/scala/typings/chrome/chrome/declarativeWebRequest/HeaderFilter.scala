@@ -2,27 +2,25 @@ package typings.chrome.chrome.declarativeWebRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderFilter extends StObject {
   
-  var nameContains: js.UndefOr[js.Any] = js.native
+  var nameContains: js.UndefOr[js.Any] = js.undefined
   
-  var nameEquals: js.UndefOr[String] = js.native
+  var nameEquals: js.UndefOr[String] = js.undefined
   
-  var namePrefix: js.UndefOr[String] = js.native
+  var namePrefix: js.UndefOr[String] = js.undefined
   
-  var nameSuffix: js.UndefOr[String] = js.native
+  var nameSuffix: js.UndefOr[String] = js.undefined
   
-  var valueContains: js.UndefOr[js.Any] = js.native
+  var valueContains: js.UndefOr[js.Any] = js.undefined
   
-  var valueEquals: js.UndefOr[String] = js.native
+  var valueEquals: js.UndefOr[String] = js.undefined
   
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
   
-  var valueSuffix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.undefined
 }
 object HeaderFilter {
   

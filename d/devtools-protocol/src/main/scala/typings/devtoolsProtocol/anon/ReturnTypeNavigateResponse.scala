@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Page.NavigateRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.NavigateResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeNavigateResponse extends StObject {
   
-  var paramsType: js.Array[NavigateRequest] = js.native
+  var paramsType: js.Array[NavigateRequest]
   
-  var returnType: NavigateResponse = js.native
+  var returnType: NavigateResponse
 }
 object ReturnTypeNavigateResponse {
   

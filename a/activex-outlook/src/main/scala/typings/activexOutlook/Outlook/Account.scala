@@ -2,48 +2,46 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
-  val AccountType: OlAccountType = js.native
+  val AccountType: OlAccountType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val AutoDiscoverConnectionMode: OlAutoDiscoverConnectionMode = js.native
+  val AutoDiscoverConnectionMode: OlAutoDiscoverConnectionMode
   
-  val AutoDiscoverXml: String = js.native
+  val AutoDiscoverXml: String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val CurrentUser: Recipient = js.native
+  val CurrentUser: Recipient
   
-  val DeliveryStore: Store = js.native
+  val DeliveryStore: Store
   
-  val DisplayName: String = js.native
+  val DisplayName: String
   
-  val ExchangeConnectionMode: OlExchangeConnectionMode = js.native
+  val ExchangeConnectionMode: OlExchangeConnectionMode
   
-  val ExchangeMailboxServerName: String = js.native
+  val ExchangeMailboxServerName: String
   
-  val ExchangeMailboxServerVersion: String = js.native
+  val ExchangeMailboxServerVersion: String
   
-  def GetAddressEntryFromID(ID: String): AddressEntry = js.native
+  def GetAddressEntryFromID(ID: String): AddressEntry
   
-  def GetRecipientFromID(EntryID: String): Recipient = js.native
+  def GetRecipientFromID(EntryID: String): Recipient
   
   @JSName("Outlook.Account_typekey")
-  var OutlookDotAccount_typekey: Account = js.native
+  var OutlookDotAccount_typekey: Account
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val SmtpAddress: String = js.native
+  val SmtpAddress: String
   
-  val UserName: String = js.native
+  val UserName: String
 }
 object Account {
   

@@ -3,16 +3,16 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 import typings.angular.mod.IServiceProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IModalProvider extends IServiceProvider {
+trait IModalProvider
+  extends StObject
+     with IServiceProvider {
   
   /**
     * Default options all modals will use.
     */
-  var options: IModalSettings = js.native
+  var options: IModalSettings
 }
 object IModalProvider {
   

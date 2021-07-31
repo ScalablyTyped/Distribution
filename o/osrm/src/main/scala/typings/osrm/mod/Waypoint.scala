@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,27 +9,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#waypoint-object
   */
-@js.native
 trait Waypoint extends StObject {
   
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * Unique internal identifier of the segment (ephemeral, not constant over data updates)
     * This can be used on subsequent request to significantly speed up the query and to connect multiple services.
     * E.g. you can use the hint value obtained by the nearest query as hint values for route inputs.
     */
-  var hint: String = js.native
+  var hint: String
   
   /**
     * Array that contains the [longitude, latitude] pair of the snapped coordinate
     */
-  var location: Coordinate = js.native
+  var location: Coordinate
   
   /**
     * Name of the street the coordinate snapped to
     */
-  var name: String = js.native
+  var name: String
 }
 object Waypoint {
   

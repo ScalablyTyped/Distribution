@@ -2,36 +2,34 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignalExternalWorkflowExecutionDecisionAttributes extends StObject {
   
   /**
     * The data attached to the event that can be used by the decider in subsequent decision tasks.
     */
-  var control: js.UndefOr[Data] = js.native
+  var control: js.UndefOr[Data] = js.undefined
   
   /**
     *  The input data to be provided with the signal. The target workflow execution uses the signal name and input data to process the signal.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The runId of the workflow execution to be signaled.
     */
-  var runId: js.UndefOr[WorkflowRunIdOptional] = js.native
+  var runId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
   
   /**
     *  The name of the signal.The target workflow execution uses the signal name and input to process the signal.
     */
-  var signalName: SignalName = js.native
+  var signalName: SignalName
   
   /**
     *  The workflowId of the workflow execution to be signaled.
     */
-  var workflowId: WorkflowId = js.native
+  var workflowId: WorkflowId
 }
 object SignalExternalWorkflowExecutionDecisionAttributes {
   

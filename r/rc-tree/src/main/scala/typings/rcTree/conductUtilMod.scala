@@ -9,44 +9,42 @@ import typings.rcTree.rcTreeBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conductUtilMod {
   
-  @JSImport("rc-tree/es/utils/conductUtil", "conductCheck")
+  @JSImport("rc-tree/es/utils/conductUtil", JSImport.Namespace)
   @js.native
-  def conductCheck(keyList: js.Array[Key], checked: HalfCheckedKeys, keyEntities: Record[Key, DataEntity]): ConductReturnType = js.native
-  @JSImport("rc-tree/es/utils/conductUtil", "conductCheck")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def conductCheck(keyList: js.Array[Key], checked: HalfCheckedKeys, keyEntities: Record[Key, DataEntity]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  @scala.inline
   def conductCheck(
     keyList: js.Array[Key],
     checked: HalfCheckedKeys,
     keyEntities: Record[Key, DataEntity],
     getCheckDisabled: GetCheckDisabled[DataNode]
-  ): ConductReturnType = js.native
-  @JSImport("rc-tree/es/utils/conductUtil", "conductCheck")
-  @js.native
-  def conductCheck_true(keyList: js.Array[Key], checked: `true`, keyEntities: Record[Key, DataEntity]): ConductReturnType = js.native
-  @JSImport("rc-tree/es/utils/conductUtil", "conductCheck")
-  @js.native
+  ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  
+  @scala.inline
+  def conductCheck_true(keyList: js.Array[Key], checked: `true`, keyEntities: Record[Key, DataEntity]): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
+  @scala.inline
   def conductCheck_true(
     keyList: js.Array[Key],
     checked: `true`,
     keyEntities: Record[Key, DataEntity],
     getCheckDisabled: GetCheckDisabled[DataNode]
-  ): ConductReturnType = js.native
+  ): ConductReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("conductCheck")(keyList.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], keyEntities.asInstanceOf[js.Any], getCheckDisabled.asInstanceOf[js.Any])).asInstanceOf[ConductReturnType]
   
-  @JSImport("rc-tree/es/utils/conductUtil", "isCheckDisabled")
-  @js.native
-  def isCheckDisabled(node: DataNode): Boolean = js.native
+  @scala.inline
+  def isCheckDisabled(node: DataNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCheckDisabled")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait ConductReturnType extends StObject {
     
-    var checkedKeys: js.Array[Key] = js.native
+    var checkedKeys: js.Array[Key]
     
-    var halfCheckedKeys: js.Array[Key] = js.native
+    var halfCheckedKeys: js.Array[Key]
   }
   object ConductReturnType {
     

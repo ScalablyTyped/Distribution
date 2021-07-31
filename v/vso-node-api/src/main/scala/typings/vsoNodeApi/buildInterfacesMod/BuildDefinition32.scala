@@ -7,81 +7,81 @@ import typings.vsoNodeApi.distributedTaskCommonInterfacesMod.ProcessParameters
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildDefinition32 extends BuildDefinitionReference32 {
+trait BuildDefinition32
+  extends StObject
+     with BuildDefinitionReference32 {
   
   /**
     * Indicates whether badges are enabled for this definition
     */
-  var badgeEnabled: Boolean = js.native
+  var badgeEnabled: Boolean
   
-  var build: js.Array[BuildDefinitionStep] = js.native
+  var build: js.Array[BuildDefinitionStep]
   
   /**
     * The build number format
     */
-  var buildNumberFormat: String = js.native
+  var buildNumberFormat: String
   
   /**
     * The comment entered when saving the definition
     */
-  var comment: String = js.native
+  var comment: String
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
   /**
     * The description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The drop location for the definition
     */
-  var dropLocation: String = js.native
+  var dropLocation: String
   
   /**
     * The job authorization scope for builds which are queued against this definition
     */
-  var jobAuthorizationScope: BuildAuthorizationScope = js.native
+  var jobAuthorizationScope: BuildAuthorizationScope
   
   /**
     * The job cancel timeout in minutes for builds which are cancelled by user for this definition
     */
-  var jobCancelTimeoutInMinutes: Double = js.native
+  var jobCancelTimeoutInMinutes: Double
   
   /**
     * The job execution timeout in minutes for builds which are queued against this definition
     */
-  var jobTimeoutInMinutes: Double = js.native
+  var jobTimeoutInMinutes: Double
   
-  var latestBuild: Build = js.native
+  var latestBuild: Build
   
-  var latestCompletedBuild: Build = js.native
+  var latestCompletedBuild: Build
   
-  var options: js.Array[BuildOption] = js.native
+  var options: js.Array[BuildOption]
   
   /**
     * Process Parameters
     */
-  var processParameters: ProcessParameters = js.native
+  var processParameters: ProcessParameters
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * The repository
     */
-  var repository: BuildRepository = js.native
+  var repository: BuildRepository
   
-  var retentionRules: js.Array[RetentionPolicy] = js.native
+  var retentionRules: js.Array[RetentionPolicy]
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var triggers: js.Array[BuildTrigger] = js.native
+  var triggers: js.Array[BuildTrigger]
   
-  var variables: StringDictionary[BuildDefinitionVariable] = js.native
+  var variables: StringDictionary[BuildDefinitionVariable]
 }
 object BuildDefinition32 {
   
@@ -94,7 +94,7 @@ object BuildDefinition32 {
     buildNumberFormat: String,
     comment: String,
     createdDate: Date,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     description: String,
     draftOf: DefinitionReference,
     drafts: js.Array[DefinitionReference],
@@ -149,7 +149,7 @@ object BuildDefinition32 {
     def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

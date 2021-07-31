@@ -3,12 +3,13 @@ package typings.three.webXRMod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/renderers/webxr/WebXR", "XRHand")
 @js.native
-class XRHand () extends Array[XRJointSpace]
+class XRHand ()
+  extends StObject
+     with Array[XRJointSpace]
 /* static members */
 object XRHand {
   

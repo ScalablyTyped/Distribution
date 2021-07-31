@@ -12,7 +12,7 @@ MongoDB URI parser
 | Keywords           | mongodb, uri, parser |
 | # releases         | 0 |
 | # dependents       | 29 |
-| # downloads        | 5130677 |
+| # downloads        | 4753413 |
 | # stars            | 2 |
 
 ## Links

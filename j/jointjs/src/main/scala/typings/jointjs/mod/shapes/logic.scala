@@ -15,7 +15,6 @@ import typings.jointjs.mod.shapes.basic.CircleSelectors
 import typings.jointjs.mod.shapes.basic.Generic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logic {
@@ -24,7 +23,7 @@ object logic {
   @js.native
   class And () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
@@ -34,7 +33,7 @@ object logic {
   @js.native
   abstract class Gate () extends Generic {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -42,7 +41,7 @@ object logic {
   @js.native
   class Gate11 () extends Gate {
     def this(attributes: GenericAttributes[Gate11Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate11Selectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -50,7 +49,7 @@ object logic {
   @js.native
   class Gate21 () extends Gate {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -58,7 +57,7 @@ object logic {
   @js.native
   class IO () extends Gate {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -66,7 +65,7 @@ object logic {
   @js.native
   class Input () extends IO {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -74,7 +73,7 @@ object logic {
   @js.native
   class Nand () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
@@ -84,7 +83,7 @@ object logic {
   @js.native
   class Nor () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
@@ -94,7 +93,7 @@ object logic {
   @js.native
   class Not () extends Gate11 {
     def this(attributes: GenericAttributes[Gate11Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate11Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input: js.Any): Boolean = js.native
@@ -104,7 +103,7 @@ object logic {
   @js.native
   class Or () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
@@ -114,7 +113,7 @@ object logic {
   @js.native
   class Output () extends IO {
     def this(attributes: GenericAttributes[CircleSelectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[CircleSelectors], opt: StringDictionary[js.Any]) = this()
   }
   
@@ -122,7 +121,7 @@ object logic {
   @js.native
   class Repeater () extends Gate11 {
     def this(attributes: GenericAttributes[Gate11Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate11Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input: js.Any): js.Any = js.native
@@ -133,7 +132,7 @@ object logic {
   // default label props
   class Wire () extends Link {
     def this(attributes: typings.jointjs.mod.dia.Link.Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: typings.jointjs.mod.dia.Link.Attributes, opt: Options) = this()
   }
   
@@ -141,7 +140,7 @@ object logic {
   @js.native
   class Xnor () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
@@ -151,25 +150,26 @@ object logic {
   @js.native
   class Xor () extends Gate21 {
     def this(attributes: GenericAttributes[Gate21Selectors]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[Gate21Selectors], opt: StringDictionary[js.Any]) = this()
     
     def operation(input1: js.Any, input2: js.Any): Boolean = js.native
   }
   
-  @js.native
-  trait Gate11Selectors extends Selectors {
+  trait Gate11Selectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGImageAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGImageAttributes] = js.undefined
     
     @JSName(".input")
-    var Dotinput: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotinput: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName(".output")
-    var Dotoutput: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotoutput: js.UndefOr[SVGCircleAttributes] = js.undefined
     
-    var image: js.UndefOr[SVGImageAttributes] = js.native
+    var image: js.UndefOr[SVGImageAttributes] = js.undefined
   }
   object Gate11Selectors {
     
@@ -208,25 +208,26 @@ object logic {
     }
   }
   
-  @js.native
-  trait Gate21Selectors extends Selectors {
+  trait Gate21Selectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGImageAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGImageAttributes] = js.undefined
     
     @JSName(".input")
-    var Dotinput: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotinput: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName(".input1")
-    var Dotinput1: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotinput1: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName(".input2")
-    var Dotinput2: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotinput2: js.UndefOr[SVGCircleAttributes] = js.undefined
     
     @JSName(".output")
-    var Dotoutput: js.UndefOr[SVGCircleAttributes] = js.native
+    var Dotoutput: js.UndefOr[SVGCircleAttributes] = js.undefined
     
-    var image: js.UndefOr[SVGImageAttributes] = js.native
+    var image: js.UndefOr[SVGImageAttributes] = js.undefined
   }
   object Gate21Selectors {
     
@@ -277,18 +278,19 @@ object logic {
     }
   }
   
-  @js.native
-  trait GateSelectors extends Selectors {
+  trait GateSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".body")
-    var Dotbody: js.UndefOr[SVGRectAttributes] = js.native
+    var Dotbody: js.UndefOr[SVGRectAttributes] = js.undefined
     
     @JSName(".wire")
-    var Dotwire: js.UndefOr[SVGPathAttributes] = js.native
+    var Dotwire: js.UndefOr[SVGPathAttributes] = js.undefined
     
-    var circle: js.UndefOr[SVGCircleAttributes] = js.native
+    var circle: js.UndefOr[SVGCircleAttributes] = js.undefined
     
-    var text: js.UndefOr[SVGTextAttributes] = js.native
+    var text: js.UndefOr[SVGTextAttributes] = js.undefined
   }
   object GateSelectors {
     

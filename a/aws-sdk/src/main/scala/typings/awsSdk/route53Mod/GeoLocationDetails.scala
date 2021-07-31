@@ -2,41 +2,39 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoLocationDetails extends StObject {
   
   /**
     * The two-letter code for the continent.
     */
-  var ContinentCode: js.UndefOr[GeoLocationContinentCode] = js.native
+  var ContinentCode: js.UndefOr[GeoLocationContinentCode] = js.undefined
   
   /**
     * The full name of the continent.
     */
-  var ContinentName: js.UndefOr[GeoLocationContinentName] = js.native
+  var ContinentName: js.UndefOr[GeoLocationContinentName] = js.undefined
   
   /**
     * The two-letter code for the country.
     */
-  var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.native
+  var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.undefined
   
   /**
     * The name of the country.
     */
-  var CountryName: js.UndefOr[GeoLocationCountryName] = js.native
+  var CountryName: js.UndefOr[GeoLocationCountryName] = js.undefined
   
   /**
     * The code for the subdivision. Route 53 currently supports only states in the United States.
     */
-  var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.native
+  var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.undefined
   
   /**
     * The full name of the subdivision. Route 53 currently supports only states in the United States.
     */
-  var SubdivisionName: js.UndefOr[GeoLocationSubdivisionName] = js.native
+  var SubdivisionName: js.UndefOr[GeoLocationSubdivisionName] = js.undefined
 }
 object GeoLocationDetails {
   

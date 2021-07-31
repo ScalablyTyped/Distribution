@@ -3,21 +3,21 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PatternObject extends _ColorType {
+trait PatternObject
+  extends StObject
+     with _ColorType {
   
   /**
     * Animation options for the image pattern loading.
     */
-  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * Pattern options
     */
-  var pattern: PatternOptionsObject = js.native
+  var pattern: PatternOptionsObject
   
   /**
     * Optionally an index referencing which pattern to use. Highcharts adds 10
@@ -25,7 +25,7 @@ trait PatternObject extends _ColorType {
     * definitions can be pushed to this array if desired. This option is an
     * index into this array.
     */
-  var patternIndex: js.UndefOr[Double] = js.native
+  var patternIndex: js.UndefOr[Double] = js.undefined
 }
 object PatternObject {
   

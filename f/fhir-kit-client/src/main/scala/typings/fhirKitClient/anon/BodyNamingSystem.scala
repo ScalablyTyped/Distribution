@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.NamingSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyNamingSystem extends StObject {
   
-  var body: NamingSystem = js.native
+  var body: NamingSystem
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.NamingSystem = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.NamingSystem
 }
 object BodyNamingSystem {
   
   @scala.inline
-  def apply(body: NamingSystem, resourceType: typings.fhirKitClient.fhirKitClientStrings.NamingSystem): BodyNamingSystem = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: NamingSystem): BodyNamingSystem = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "NamingSystem")
     __obj.asInstanceOf[BodyNamingSystem]
   }
   

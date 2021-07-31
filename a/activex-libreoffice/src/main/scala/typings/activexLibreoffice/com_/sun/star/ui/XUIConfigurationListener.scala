@@ -5,33 +5,33 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * supplies information about changes of a user interface configuration manager.
   * @since OOo 2.0
   */
-@js.native
-trait XUIConfigurationListener extends XEventListener {
+trait XUIConfigurationListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a configuration has inserted an user interface element.
     * @param Event provides information about the element which has been inserted.
     */
-  def elementInserted(Event: ConfigurationEvent): Unit = js.native
+  def elementInserted(Event: ConfigurationEvent): Unit
   
   /**
     * is invoked when a configuration has removed an user interface element.
     * @param Event provides information about the element which has been removed.
     */
-  def elementRemoved(Event: ConfigurationEvent): Unit = js.native
+  def elementRemoved(Event: ConfigurationEvent): Unit
   
   /**
     * is invoked when a configuration has replaced an user interface element.
     * @param Event provides information about the element which has been inserted/replaced.
     */
-  def elementReplaced(Event: ConfigurationEvent): Unit = js.native
+  def elementReplaced(Event: ConfigurationEvent): Unit
 }
 object XUIConfigurationListener {
   

@@ -4,17 +4,17 @@ import typings.astTypes.kindsMod.EnumBooleanMemberKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumBooleanBody extends ASTNode {
+trait EnumBooleanBody
+  extends StObject
+     with ASTNode {
   
-  var explicitType: Boolean = js.native
+  var explicitType: Boolean
   
-  var members: js.Array[EnumBooleanMemberKind] = js.native
+  var members: js.Array[EnumBooleanMemberKind]
   
-  var `type`: typings.astTypes.astTypesStrings.EnumBooleanBody = js.native
+  var `type`: typings.astTypes.astTypesStrings.EnumBooleanBody
 }
 object EnumBooleanBody {
   

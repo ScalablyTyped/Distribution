@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemixSettings extends StObject {
   
   /**
     * Channel mapping (ChannelMapping) contains the group of fields that hold the remixing value for each channel. Units are in dB. Acceptable values are within the range from -60 (mute) through 6. A setting of 0 passes the input channel unchanged to the output channel (no attenuation or amplification).
     */
-  var ChannelMapping: js.UndefOr[typings.awsSdk.mediaconvertMod.ChannelMapping] = js.native
+  var ChannelMapping: js.UndefOr[typings.awsSdk.mediaconvertMod.ChannelMapping] = js.undefined
   
   /**
     * Specify the number of audio channels from your input that you want to use in your output. With remixing, you might combine or split the data in these channels, so the number of channels in your final output might be different.
     */
-  var ChannelsIn: js.UndefOr[integerMin1Max64] = js.native
+  var ChannelsIn: js.UndefOr[integerMin1Max64] = js.undefined
   
   /**
     * Specify the number of channels in this output after remixing. Valid values: 1, 2, 4, 6, 8... 64. (1 and even numbers to 64.)
     */
-  var ChannelsOut: js.UndefOr[integerMin1Max64] = js.native
+  var ChannelsOut: js.UndefOr[integerMin1Max64] = js.undefined
 }
 object RemixSettings {
   

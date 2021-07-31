@@ -2,21 +2,19 @@ package typings.airbnbPropTypes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Gt extends StObject {
     
-    var gt: js.UndefOr[Double] = js.native
+    var gt: js.UndefOr[Double] = js.undefined
     
-    var gte: js.UndefOr[Double] = js.native
+    var gte: js.UndefOr[Double] = js.undefined
     
-    var lt: js.UndefOr[Double] = js.native
+    var lt: js.UndefOr[Double] = js.undefined
     
-    var lte: js.UndefOr[Double] = js.native
+    var lte: js.UndefOr[Double] = js.undefined
   }
   object Gt {
     
@@ -55,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait StripHOCs extends StObject {
     
-    var stripHOCs: js.Array[String] = js.native
+    var stripHOCs: js.Array[String]
   }
   object StripHOCs {
     

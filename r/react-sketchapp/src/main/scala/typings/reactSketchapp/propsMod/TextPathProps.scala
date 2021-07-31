@@ -2,23 +2,23 @@ package typings.reactSketchapp.propsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextPathProps extends TextSpecificProps {
+trait TextPathProps
+  extends StObject
+     with TextSpecificProps {
   
-  var href: String = js.native
+  var href: String
   
-  var method: js.UndefOr[Method] = js.native
+  var method: js.UndefOr[Method] = js.undefined
   
-  var midLine: js.UndefOr[MidLine] = js.native
+  var midLine: js.UndefOr[MidLine] = js.undefined
   
-  var side: js.UndefOr[Side] = js.native
+  var side: js.UndefOr[Side] = js.undefined
   
-  var spacing: js.UndefOr[Spacing] = js.native
+  var spacing: js.UndefOr[Spacing] = js.undefined
   
-  var startOffset: js.UndefOr[StartOffset] = js.native
+  var startOffset: js.UndefOr[StartOffset] = js.undefined
 }
 object TextPathProps {
   

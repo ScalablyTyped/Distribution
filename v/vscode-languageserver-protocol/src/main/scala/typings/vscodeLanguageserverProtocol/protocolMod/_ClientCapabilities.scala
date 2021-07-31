@@ -2,31 +2,29 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _ClientCapabilities extends StObject {
   
   /**
     * Experimental client capabilities.
     */
-  var experimental: js.UndefOr[js.Object] = js.native
+  var experimental: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Text document specific client capabilities.
     */
-  var textDocument: js.UndefOr[TextDocumentClientCapabilities] = js.native
+  var textDocument: js.UndefOr[TextDocumentClientCapabilities] = js.undefined
   
   /**
     * Window specific client capabilities.
     */
-  var window: js.UndefOr[js.Object] = js.native
+  var window: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Workspace specific client capabilities.
     */
-  var workspace: js.UndefOr[WorkspaceClientCapabilities] = js.native
+  var workspace: js.UndefOr[WorkspaceClientCapabilities] = js.undefined
 }
 object _ClientCapabilities {
   

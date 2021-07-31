@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,23 +26,37 @@ sealed trait TYPES extends StObject
 object TYPES extends StObject {
   
   @js.native
-  sealed trait FLOAT extends TYPES
+  sealed trait FLOAT
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait HALF_FLOAT extends TYPES
+  sealed trait HALF_FLOAT
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait UNSIGNED_BYTE extends TYPES
+  sealed trait UNSIGNED_BYTE
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait UNSIGNED_SHORT extends TYPES
+  sealed trait UNSIGNED_SHORT
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait UNSIGNED_SHORT_4_4_4_4 extends TYPES
+  sealed trait UNSIGNED_SHORT_4_4_4_4
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait UNSIGNED_SHORT_5_5_5_1 extends TYPES
+  sealed trait UNSIGNED_SHORT_5_5_5_1
+    extends StObject
+       with TYPES
   
   @js.native
-  sealed trait UNSIGNED_SHORT_5_6_5 extends TYPES
+  sealed trait UNSIGNED_SHORT_5_6_5
+    extends StObject
+       with TYPES
 }

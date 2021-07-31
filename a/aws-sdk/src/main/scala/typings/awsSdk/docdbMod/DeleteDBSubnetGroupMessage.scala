@@ -2,16 +2,14 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBSubnetGroupMessage extends StObject {
   
   /**
     * The name of the database subnet group to delete.  You can't delete the default subnet group.  Constraints: Must match the name of an existing DBSubnetGroup. Must not be default. Example: mySubnetgroup 
     */
-  var DBSubnetGroupName: String = js.native
+  var DBSubnetGroupName: String
 }
 object DeleteDBSubnetGroupMessage {
   

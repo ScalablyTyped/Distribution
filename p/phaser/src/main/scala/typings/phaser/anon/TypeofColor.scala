@@ -3,32 +3,30 @@ package typings.phaser.anon
 import typings.phaser.spine.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofColor extends StObject {
   
   /* static member */
-  var BLUE: Color = js.native
+  var BLUE: Color
   
   /* static member */
-  var GREEN: Color = js.native
+  var GREEN: Color
   
   /* static member */
-  var MAGENTA: Color = js.native
+  var MAGENTA: Color
   
   /* static member */
-  var RED: Color = js.native
+  var RED: Color
   
   /* static member */
-  var WHITE: Color = js.native
+  var WHITE: Color
   
   /* static member */
-  def rgb888ToColor(color: Color, value: Double): Unit = js.native
+  def rgb888ToColor(color: Color, value: Double): Unit
   
   /* static member */
-  def rgba8888ToColor(color: Color, value: Double): Unit = js.native
+  def rgba8888ToColor(color: Color, value: Double): Unit
 }
 object TypeofColor {
   

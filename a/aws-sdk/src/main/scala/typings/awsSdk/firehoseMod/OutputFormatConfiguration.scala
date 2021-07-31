@@ -2,16 +2,14 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputFormatConfiguration extends StObject {
   
   /**
     * Specifies which serializer to use. You can choose either the ORC SerDe or the Parquet SerDe. If both are non-null, the server rejects the request.
     */
-  var Serializer: js.UndefOr[typings.awsSdk.firehoseMod.Serializer] = js.native
+  var Serializer: js.UndefOr[typings.awsSdk.firehoseMod.Serializer] = js.undefined
 }
 object OutputFormatConfiguration {
   

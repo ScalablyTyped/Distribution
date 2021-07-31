@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationSchemeForPolygon
-  extends Object
+  extends StObject
+     with Object
      with LocationScheme {
   
   /**
@@ -17,21 +16,21 @@ trait LocationSchemeForPolygon
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The opacity of the fill symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the fill symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-location.html#LocationSchemeForPolygon)
     */
-  var outline: LocationSchemeForPolygonOutline = js.native
+  var outline: LocationSchemeForPolygonOutline
 }
 object LocationSchemeForPolygon {
   

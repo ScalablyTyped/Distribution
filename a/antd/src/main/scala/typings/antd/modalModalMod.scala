@@ -17,7 +17,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalModalMod extends Shortcut {
@@ -30,68 +29,67 @@ object modalModalMod extends Shortcut {
   @js.native
   val destroyFns: js.Array[js.Function0[Unit]] = js.native
   
-  @js.native
   trait ModalFuncProps extends StObject {
     
-    var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.native
+    var autoFocusButton: js.UndefOr[Null | ok | cancel] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var cancelButtonProps: js.UndefOr[ButtonProps] = js.native
+    var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
-    var cancelText: js.UndefOr[ReactNode] = js.native
+    var cancelText: js.UndefOr[ReactNode] = js.undefined
     
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var direction: js.UndefOr[DirectionType] = js.native
+    var direction: js.UndefOr[DirectionType] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.native
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskStyle: js.UndefOr[CSSProperties] = js.native
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.native
+    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
     
-    var okButtonProps: js.UndefOr[ButtonProps] = js.native
+    var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
-    var okCancel: js.UndefOr[Boolean] = js.native
+    var okCancel: js.UndefOr[Boolean] = js.undefined
     
-    var okText: js.UndefOr[ReactNode] = js.native
+    var okText: js.UndefOr[ReactNode] = js.undefined
     
-    var okType: js.UndefOr[LegacyButtonType] = js.native
+    var okType: js.UndefOr[LegacyButtonType] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ModalFuncProps {
     
@@ -234,13 +232,13 @@ object modalModalMod extends Shortcut {
       def setOkTypeUndefined: Self = StObject.set(x, "okType", js.undefined)
       
       @scala.inline
-      def setOnCancel(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      def setOnCancel(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       @scala.inline
-      def setOnOk(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
+      def setOnOk(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onOk", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnOkUndefined: Self = StObject.set(x, "onOk", js.undefined)
@@ -296,19 +294,20 @@ object modalModalMod extends Shortcut {
   }
   
   @js.native
-  trait ModalInterface extends FunctionComponent[ModalProps] {
+  trait ModalInterface
+    extends StObject
+       with FunctionComponent[ModalProps] {
     
     var useModal: js.Function0[js.Tuple2[OmitModalStaticFunctionsw, ReactElement]] = js.native
   }
   
-  @js.native
   trait ModalLocale extends StObject {
     
-    var cancelText: String = js.native
+    var cancelText: String
     
-    var justOkText: String = js.native
+    var justOkText: String
     
-    var okText: String = js.native
+    var okText: String
   }
   object ModalLocale {
     
@@ -332,88 +331,87 @@ object modalModalMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ModalProps extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var cancelButtonProps: js.UndefOr[ButtonProps] = js.native
+    var cancelButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
     /** 取消按钮文字 */
-    var cancelText: js.UndefOr[ReactNode] = js.native
+    var cancelText: js.UndefOr[ReactNode] = js.undefined
     
     /** 垂直居中 */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** 是否显示右上角的关闭按钮 */
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
     /** 确定按钮 loading */
-    var confirmLoading: js.UndefOr[Boolean] = js.native
+    var confirmLoading: js.UndefOr[Boolean] = js.undefined
     
-    var destroyOnClose: js.UndefOr[Boolean] = js.native
+    var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
     /** 底部内容 */
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
     /** 强制渲染 Modal */
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.native
+    var getContainer: js.UndefOr[String | HTMLElement | getContainerFunc | `false` | Null] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
     /** 点击蒙层是否允许关闭 */
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskStyle: js.UndefOr[CSSProperties] = js.native
+    var maskStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.native
+    var modalRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
     
-    var okButtonProps: js.UndefOr[ButtonProps] = js.native
+    var okButtonProps: js.UndefOr[ButtonProps] = js.undefined
     
     /** 确认按钮文字 */
-    var okText: js.UndefOr[ReactNode] = js.native
+    var okText: js.UndefOr[ReactNode] = js.undefined
     
     /** 确认按钮类型 */
-    var okType: js.UndefOr[LegacyButtonType] = js.native
+    var okType: js.UndefOr[LegacyButtonType] = js.undefined
     
     /** 点击模态框右上角叉、取消按钮、Props.maskClosable 值为 true 时的遮罩层或键盘按下 Esc 时的回调 */
-    var onCancel: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     /** 点击确定回调 */
-    var onOk: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /** 标题 */
-    var title: js.UndefOr[ReactNode | String] = js.native
+    var title: js.UndefOr[ReactNode | String] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
     /** 对话框是否可见 */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /** 宽度 */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
     
-    var wrapClassName: js.UndefOr[String] = js.native
+    var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var wrapProps: js.UndefOr[js.Any] = js.native
+    var wrapProps: js.UndefOr[js.Any] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ModalProps {
     

@@ -2,27 +2,25 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cpu extends StObject {
   
-  var btime: String = js.native
+  var btime: String
   
-  var cpu: CpuDetail = js.native
+  var cpu: CpuDetail
   
-  var ctxt: String = js.native
+  var ctxt: String
   
-  var intr: String = js.native
+  var intr: String
   
-  var processes: String = js.native
+  var processes: String
   
-  var procs_blocked: String = js.native
+  var procs_blocked: String
   
-  var procs_running: String = js.native
+  var procs_running: String
   
-  var softirq: String = js.native
+  var softirq: String
 }
 object Cpu {
   

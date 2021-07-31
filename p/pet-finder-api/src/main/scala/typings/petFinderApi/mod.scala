@@ -2,36 +2,36 @@ package typings.petFinderApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pet-finder-api", JSImport.Namespace)
-  @js.native
-  def apply(api_key: String, api_secret: String): PetFinder = js.native
-  @JSImport("pet-finder-api", JSImport.Namespace)
-  @js.native
-  def apply(api_key: String, api_secret: String, options: js.Any): PetFinder = js.native
+  @scala.inline
+  def apply(api_key: String, api_secret: String): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
+  @scala.inline
+  def apply(api_key: String, api_secret: String, options: js.Any): PetFinder = (^.asInstanceOf[js.Dynamic].apply(api_key.asInstanceOf[js.Any], api_secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PetFinder]
   
+  @JSImport("pet-finder-api", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Contact extends StObject {
     
-    var address1: String = js.native
+    var address1: String
     
-    var address2: String = js.native
+    var address2: String
     
-    var city: String = js.native
+    var city: String
     
-    var email: String = js.native
+    var email: String
     
-    var fax: String = js.native
+    var fax: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var state: String = js.native
+    var state: String
     
-    var zip: String = js.native
+    var zip: String
   }
   object Contact {
     
@@ -79,38 +79,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Pet extends StObject {
     
-    var age: String = js.native
+    var age: String
     
-    var animal: String = js.native
+    var animal: String
     
-    var breeds: js.Array[String] = js.native
+    var breeds: js.Array[String]
     
-    var contact: Contact = js.native
+    var contact: Contact
     
-    var description: String = js.native
+    var description: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var media: js.Any = js.native
+    var media: js.Any
     
-    var mix: String = js.native
+    var mix: String
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.Array[String] = js.native
+    var options: js.Array[String]
     
-    var sex: String = js.native
+    var sex: String
     
-    var shelterId: String = js.native
+    var shelterId: String
     
-    var shelterPetId: String = js.native
+    var shelterPetId: String
     
-    var size: String = js.native
+    var size: String
     
-    var status: String = js.native
+    var status: String
   }
   object Pet {
     
@@ -192,41 +191,40 @@ object mod {
     }
   }
   
-  @js.native
   trait PetFinder extends StObject {
     
-    def findPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]): Unit = js.native
+    def findPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]): Unit
     
     def findShelter(
       location: String,
       options: js.Any,
       callback: js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def getBreedList(animal: String, callback: js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]): Unit = js.native
+    def getBreedList(animal: String, callback: js.Function2[/* err */ js.Any, /* breedArray */ js.Array[String], Unit]): Unit
     
-    def getPet(petId: Double, options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit = js.native
+    def getPet(petId: Double, options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit
     
     def getPetsInShelter(
       shelterId: String,
       options: js.Any,
       callback: js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def getRandomPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit = js.native
+    def getRandomPet(options: js.Any, callback: js.Function2[/* error */ js.Any, /* pet */ Pet, Unit]): Unit
     
     def getShelter(
       shelterId: String,
       options: js.Any,
       callback: js.Function2[/* error */ js.Any, /* shelter */ Shelter, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def getSheltersWithBreeds(
       animal: String,
       breed: String,
       options: js.Any,
       callback: js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object PetFinder {
     
@@ -278,34 +276,33 @@ object mod {
     }
   }
   
-  @js.native
   trait Shelter extends StObject {
     
-    var address1: String = js.native
+    var address1: String
     
-    var address2: String = js.native
+    var address2: String
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var email: String = js.native
+    var email: String
     
-    var fax: String = js.native
+    var fax: String
     
-    var id: String = js.native
+    var id: String
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var name: String = js.native
+    var name: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var state: String = js.native
+    var state: String
     
-    var zip: String = js.native
+    var zip: String
   }
   object Shelter {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagSettings extends StObject {
   
   /** Whether dynamic floodlight tags are enabled. */
-  var dynamicTagEnabled: js.UndefOr[Boolean] = js.native
+  var dynamicTagEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether image tags are enabled. */
-  var imageTagEnabled: js.UndefOr[Boolean] = js.native
+  var imageTagEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object TagSettings {
   

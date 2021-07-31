@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportResourcesRequest extends StObject {
   
   /**
     * The BigQuery output destination. The Cloud Healthcare Service Agent requires two IAM roles on the BigQuery location: `roles/bigquery.dataEditor` and `roles/bigquery.jobUser`. The
     * output is one BigQuery table per resource type.
     */
-  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1FhirBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1FhirBigQueryDestination] = js.undefined
   
   /**
     * The Cloud Storage output destination. The Healthcare Service Agent account requires the `roles/storage.objectAdmin` role on the Cloud Storage location. The exported outputs are
     * organized by FHIR resource types. The server creates one object per resource type. Each object contains newline delimited JSON, and each line is a FHIR resource.
     */
-  var gcsDestination: js.UndefOr[GoogleCloudHealthcareV1FhirGcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GoogleCloudHealthcareV1FhirGcsDestination] = js.undefined
 }
 object ExportResourcesRequest {
   

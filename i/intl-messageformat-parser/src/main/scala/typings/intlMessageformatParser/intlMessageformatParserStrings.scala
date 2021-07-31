@@ -3,7 +3,6 @@ package typings.intlMessageformatParser
 import typings.intlMessageformatParser.srcTypesMod._ValidPluralRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intlMessageformatParserStrings {
@@ -25,7 +24,8 @@ object intlMessageformatParserStrings {
   
   @js.native
   sealed trait few
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def few: few = "few".asInstanceOf[few]
@@ -57,35 +57,40 @@ object intlMessageformatParserStrings {
   
   @js.native
   sealed trait many
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def many: many = "many".asInstanceOf[many]
   
   @js.native
   sealed trait one
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait other
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait two
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def two: two = "two".asInstanceOf[two]
   
   @js.native
   sealed trait zero
-    extends _ValidPluralRule
+    extends StObject
+       with _ValidPluralRule
        with typings.intlMessageformatParser.typesMod._ValidPluralRule
   @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]

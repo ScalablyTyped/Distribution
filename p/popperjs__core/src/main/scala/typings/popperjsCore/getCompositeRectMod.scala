@@ -6,33 +6,28 @@ import typings.popperjsCore.typesMod.Window
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCompositeRectMod {
   
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
+  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Namespace)
   @js.native
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window, isFixed: Boolean): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element, isFixed: Boolean): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: Element, offsetParent: Window): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: Element, offsetParent: Window, isFixed: Boolean): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: Element, offsetParent: Element): Rect = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getCompositeRect", JSImport.Default)
-  @js.native
-  def default(elementOrVirtualElement: Element, offsetParent: Element, isFixed: Boolean): Rect = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: VirtualElement, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: VirtualElement, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: Element, offsetParent: Window): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: Element, offsetParent: Window, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: Element, offsetParent: Element): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any])).asInstanceOf[Rect]
+  @scala.inline
+  def default(elementOrVirtualElement: Element, offsetParent: Element, isFixed: Boolean): Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(elementOrVirtualElement.asInstanceOf[js.Any], offsetParent.asInstanceOf[js.Any], isFixed.asInstanceOf[js.Any])).asInstanceOf[Rect]
 }

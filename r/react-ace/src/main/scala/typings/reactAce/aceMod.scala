@@ -16,7 +16,6 @@ import typings.reactAce.typesMod.IMarker
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aceMod {
@@ -46,102 +45,101 @@ object aceMod {
     def propTypes_=(x: ValidationMapIAceEditorPr): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IAceEditorProps extends StObject {
     
-    var annotations: js.UndefOr[js.Array[Annotation]] = js.native
+    var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var commands: js.UndefOr[js.Array[ICommand]] = js.native
+    var commands: js.UndefOr[js.Array[ICommand]] = js.undefined
     
-    var cursorStart: js.UndefOr[Double] = js.native
+    var cursorStart: js.UndefOr[Double] = js.undefined
     
-    var debounceChangePeriod: js.UndefOr[Double] = js.native
+    var debounceChangePeriod: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var editorProps: js.UndefOr[IEditorProps] = js.native
+    var editorProps: js.UndefOr[IEditorProps] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableSnippets: js.UndefOr[Boolean] = js.native
+    var enableSnippets: js.UndefOr[Boolean] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Boolean] = js.native
+    var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardHandler: js.UndefOr[String] = js.native
+    var keyboardHandler: js.UndefOr[String] = js.undefined
     
-    var markers: js.UndefOr[js.Array[IMarker]] = js.native
+    var markers: js.UndefOr[js.Array[IMarker]] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
     /** For available modes see https://github.com/thlorenz/brace/tree/master/mode */
-    var mode: js.UndefOr[String | js.Object] = js.native
+    var mode: js.UndefOr[String | js.Object] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var navigateToFileEnd: js.UndefOr[Boolean] = js.native
+    var navigateToFileEnd: js.UndefOr[Boolean] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.native
+    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.undefined
     
-    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.native
+    var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+    var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var setOptions: js.UndefOr[IAceOptions] = js.native
+    var setOptions: js.UndefOr[IAceOptions] = js.undefined
     
-    var showGutter: js.UndefOr[Boolean] = js.native
+    var showGutter: js.UndefOr[Boolean] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Boolean] = js.native
+    var showPrintMargin: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
     /** For available themes see https://github.com/thlorenz/brace/tree/master/theme */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Boolean] = js.native
+    var wrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object IAceEditorProps {
     

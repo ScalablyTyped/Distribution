@@ -3,17 +3,15 @@ package typings.puppeteer.mod
 import typings.puppeteer.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoverageEntry extends StObject {
   
-  var ranges: js.Array[End] = js.native
+  var ranges: js.Array[End]
   
-  var text: String = js.native
+  var text: String
   
-  var url: String = js.native
+  var url: String
 }
 object CoverageEntry {
   

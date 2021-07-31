@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVirtualTimePolicyReque
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetVirtualTimePolicyResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetVirtualTimePolicyResponse extends StObject {
   
-  var paramsType: js.Array[SetVirtualTimePolicyRequest] = js.native
+  var paramsType: js.Array[SetVirtualTimePolicyRequest]
   
-  var returnType: SetVirtualTimePolicyResponse = js.native
+  var returnType: SetVirtualTimePolicyResponse
 }
 object ReturnTypeSetVirtualTimePolicyResponse {
   

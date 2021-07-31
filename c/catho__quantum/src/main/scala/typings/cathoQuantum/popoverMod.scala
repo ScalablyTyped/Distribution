@@ -13,7 +13,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -25,22 +24,21 @@ object popoverMod {
   
   type Popover = Component[PopoverProps, js.Object, js.Any]
   
-  @js.native
   trait PopoverProps extends StObject {
     
-    var children: js.Array[ReactNode] | ReactNode = js.native
+    var children: js.Array[ReactNode] | ReactNode
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placement: js.UndefOr[top | right | bottom | left] = js.native
+    var placement: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.native
+    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
     
-    var trigger: ReactNode = js.native
+    var trigger: ReactNode
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PopoverProps {
     

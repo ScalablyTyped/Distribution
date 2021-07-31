@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVpcDhcpOptionsFilter extends StObject {
   
   /**
     * The name of the field to filter.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Set of values for filtering.
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetVpcDhcpOptionsFilter {
   

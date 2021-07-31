@@ -8,14 +8,15 @@ import typings.std.MouseEvent
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("draggabilly", JSImport.Default)
   @js.native
-  class default protected () extends Draggabilly {
+  class default protected ()
+    extends StObject
+       with Draggabilly {
     def this(element: String) = this()
     def this(element: Element) = this()
     def this(element: String, options: DraggabillyOptions) = this()
@@ -101,16 +102,15 @@ object mod {
     def pointerMove: typings.draggabilly.draggabillyStrings.pointerMove = "pointerMove".asInstanceOf[typings.draggabilly.draggabillyStrings.pointerMove]
   }
   
-  @js.native
   trait DraggabillyOptions extends StObject {
     
-    var axis: js.UndefOr[x | y] = js.native
+    var axis: js.UndefOr[x | y] = js.undefined
     
-    var containment: js.UndefOr[Element | String | Boolean] = js.native
+    var containment: js.UndefOr[Element | String | Boolean] = js.undefined
     
-    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var grid: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
   }
   object DraggabillyOptions {
     
@@ -149,12 +149,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Position {
     

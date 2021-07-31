@@ -2,17 +2,15 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectionMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Array[String]] = js.native
+    var as: js.UndefOr[js.Array[String]] = js.undefined
     
-    var projection: String = js.native
+    var projection: String
   }
   object Options {
     

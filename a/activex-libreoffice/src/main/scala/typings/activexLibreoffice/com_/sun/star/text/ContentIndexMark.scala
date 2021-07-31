@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a {@link TextRange} which is explicitly marked as an index entry for a {@link ContentIndex} . */
-@js.native
-trait ContentIndexMark extends BaseIndexMark {
+trait ContentIndexMark
+  extends StObject
+     with BaseIndexMark {
   
   /** contains the level into which the index mark will be inserted into the content index. */
-  var Level: Double = js.native
+  var Level: Double
 }
 object ContentIndexMark {
   

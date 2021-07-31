@@ -3,17 +3,15 @@ package typings.openapiResponseValidator
 import typings.openapiTypes.mod.OpenAPIV3.SchemaObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Any = js.native
+    var errors: js.Any
     
-    var message: String = js.native
+    var message: String
   }
   object Errors {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Schema extends StObject {
     
-    var schema: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject = js.native
+    var schema: typings.openapiTypes.mod.OpenAPIV2.Schema | SchemaObject
   }
   object Schema {
     

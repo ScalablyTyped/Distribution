@@ -7,26 +7,24 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Boolean extends StObject {
     
-    var boolean: js.UndefOr[Cast[scala.Boolean]] = js.native
+    var boolean: js.UndefOr[Cast[scala.Boolean]] = js.undefined
     
-    var date: js.UndefOr[Cast[Date]] = js.native
+    var date: js.UndefOr[Cast[Date]] = js.undefined
     
-    var number: js.UndefOr[Cast[Double]] = js.native
+    var number: js.UndefOr[Cast[Double]] = js.undefined
     
     /**
       * Custom formatter for generic object values
       */
-    var `object`: js.UndefOr[Cast[Record[String, _]]] = js.native
+    var `object`: js.UndefOr[Cast[Record[String, js.Any]]] = js.undefined
     
-    var string: js.UndefOr[Cast[String]] = js.native
+    var string: js.UndefOr[Cast[String]] = js.undefined
   }
   object Boolean {
     
@@ -58,7 +56,7 @@ object anon {
       def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
       @scala.inline
-      def setObject(value: (Record[String, _], /* context */ CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
+      def setObject(value: (Record[String, js.Any], /* context */ CastingContext) => String): Self = StObject.set(x, "object", js.Any.fromFunction2(value))
       
       @scala.inline
       def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
@@ -71,10 +69,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Name extends _ColumnOption {
+  trait Name
+    extends StObject
+       with _ColumnOption {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     

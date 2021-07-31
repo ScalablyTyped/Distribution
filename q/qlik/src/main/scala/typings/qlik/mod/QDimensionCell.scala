@@ -2,21 +2,19 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QDimensionCell extends StObject {
   
-  var qElemNumber: Double = js.native
+  var qElemNumber: Double
   
-  var qNum: js.UndefOr[Double] = js.native
+  var qNum: js.UndefOr[Double] = js.undefined
   
-  var qState: String = js.native
+  var qState: String
   
-  var qText: String = js.native
+  var qText: String
   
-  def select(): Unit = js.native
+  def select(): Unit
 }
 object QDimensionCell {
   

@@ -11,14 +11,13 @@ import typings.vegaLite.specMod.GenericSpec
 import typings.vegaLite.specUnitMod.GenericUnitSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapMod {
   
   @JSImport("vega-lite/build/src/spec/map", "SpecMapper")
   @js.native
-  abstract class SpecMapper[P, UI /* <: GenericUnitSpec[_, _] */, LI /* <: GenericLayerSpec[_] */, UO /* <: GenericUnitSpec[_, _] */, RO /* <: RepeatSpec */, FO /* <: Field */] () extends StObject {
+  abstract class SpecMapper[P, UI /* <: GenericUnitSpec[js.Any, js.Any] */, LI /* <: GenericLayerSpec[js.Any] */, UO /* <: GenericUnitSpec[js.Any, js.Any] */, RO /* <: RepeatSpec */, FO /* <: Field */] () extends StObject {
     
     def map(spec: GenericSpec[UI, LI, RepeatSpec, Field], params: P): GenericSpec[UO, GenericLayerSpec[UO], RO, FO] = js.native
     
@@ -32,7 +31,7 @@ object mapMod {
     
     def mapLayerOrUnit(spec: LI | UI, params: P): UO | GenericLayerSpec[UO] = js.native
     
-    /* protected */ def mapRepeat(spec: RepeatSpec, params: P): GenericSpec[UO, _, RO, FO] = js.native
+    /* protected */ def mapRepeat(spec: RepeatSpec, params: P): GenericSpec[UO, js.Any, RO, FO] = js.native
     
     def mapUnit(spec: UI, params: P): UO | GenericLayerSpec[UO] = js.native
     

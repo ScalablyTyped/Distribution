@@ -2,17 +2,15 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineMessageId extends StObject {
   
-  var chatId: js.UndefOr[Double] = js.native
+  var chatId: js.UndefOr[Double] = js.undefined
   
-  var inlineMessageId: js.UndefOr[String] = js.native
+  var inlineMessageId: js.UndefOr[String] = js.undefined
   
-  var messageId: js.UndefOr[Double] = js.native
+  var messageId: js.UndefOr[Double] = js.undefined
 }
 object InlineMessageId {
   

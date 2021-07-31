@@ -10,9 +10,9 @@ A Connect-style and Karma middleware for resolving ES-module imports and exports
 | ------------------ | :-------------: |
 | Full name          | @adobe/es-modules-middleware |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 9065 |
+| # downloads        | 8326 |
 | # stars            | 0 |
 
 ## Links

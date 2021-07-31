@@ -2,48 +2,48 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IToolbar extends IContainer {
+trait IToolbar
+  extends StObject
+     with IContainer {
   
   /** [Method] Returns the value of layout
     * @returns Object/String
     */
-  var getLayout: js.UndefOr[js.Function0[_]] = js.native
+  var getLayout: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns an Ext Title component
     * @returns Ext.Title
     */
-  var getTitle: js.UndefOr[js.Function0[ITitle]] = js.native
+  var getTitle: js.UndefOr[js.Function0[ITitle]] = js.undefined
   
   /** [Method] Hides the title if it exists  */
-  var hideTitle: js.UndefOr[js.Function0[Unit]] = js.native
+  var hideTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("minHeight")
-  var minHeight_IToolbar: js.UndefOr[java.lang.String] = js.native
+  var minHeight_IToolbar: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Sets the value of minHeight
     * @param minHeight String The new value.
     */
   @JSName("setMinHeight")
-  var setMinHeight_IToolbar: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setMinHeight_IToolbar: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Use this to update the title configuration
     * @param title String/Ext.Title You can either pass a String, or a config/instance of Ext.Title.
     */
-  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Shows the title if it exists  */
-  var showTitle: js.UndefOr[js.Function0[Unit]] = js.native
+  var showTitle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Ext.Title) */
-  var title: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var titleCls: js.UndefOr[Boolean] = js.native
+  var titleCls: js.UndefOr[Boolean] = js.undefined
 }
 object IToolbar {
   
@@ -57,7 +57,7 @@ object IToolbar {
   implicit class IToolbarMutableBuilder[Self <: IToolbar] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetLayout(value: () => _): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+    def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)

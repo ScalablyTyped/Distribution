@@ -13,7 +13,6 @@ import typings.winrtUwp.winrtUwpStrings.lockscreenimagechanged
 import typings.winrtUwp.winrtUwpStrings.unlocking
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** You can create an app that acts as the lock screen, allowing greater user personalization. You can develop novel unlock gestures and animations, and also display custom information or appearances for people. */
@@ -23,17 +22,17 @@ object LockScreen {
   @js.native
   trait LockApplicationHost extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_unlocking(`type`: unlocking, listener: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs]): Unit = js.native
     
     /** Indicates the device is unlocking. */
-    def onunlocking(ev: LockScreenUnlockingEventArgs with WinRTEvent[LockApplicationHost]): Unit = js.native
+    def onunlocking(ev: LockScreenUnlockingEventArgs & WinRTEvent[LockApplicationHost]): Unit = js.native
     /** Indicates the device is unlocking. */
     @JSName("onunlocking")
     var onunlocking_Original: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_unlocking(`type`: unlocking, listener: TypedEventHandler[LockApplicationHost, LockScreenUnlockingEventArgs]): Unit = js.native
     
@@ -42,23 +41,22 @@ object LockScreen {
   }
   
   /** Represents a lock screen badge for an app. */
-  @js.native
   trait LockScreenBadge extends StObject {
     
     /** Gets the name. */
-    var automationName: String = js.native
+    var automationName: String
     
     /** Gets the glyph to display. */
-    var glyph: IRandomAccessStream = js.native
+    var glyph: IRandomAccessStream
     
     /** Launches the app corresponding to the badge. */
-    def launchApp(): Unit = js.native
+    def launchApp(): Unit
     
     /** Gets the logo to display with the badge. */
-    var logo: IRandomAccessStream = js.native
+    var logo: IRandomAccessStream
     
     /** Gets the number to display with the badge. */
-    var number: Double = js.native
+    var number: Double
   }
   object LockScreenBadge {
     
@@ -98,15 +96,15 @@ object LockScreen {
   @js.native
   trait LockScreenInfo extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def addEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def addEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def addEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def addEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     
     /** Gets the alarm icon to display. */
     var alarmIcon: IRandomAccessStream = js.native
@@ -121,46 +119,45 @@ object LockScreen {
     var lockScreenImage: IRandomAccessStream = js.native
     
     /** Indicates the alarm icon has changed. */
-    def onalarmiconchanged(ev: js.Any with WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onalarmiconchanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the alarm icon has changed. */
     @JSName("onalarmiconchanged")
-    var onalarmiconchanged_Original: TypedEventHandler[LockScreenInfo, _] = js.native
+    var onalarmiconchanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
     
     /** Indicates the badges have changed. */
-    def onbadgeschanged(ev: js.Any with WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onbadgeschanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the badges have changed. */
     @JSName("onbadgeschanged")
-    var onbadgeschanged_Original: TypedEventHandler[LockScreenInfo, _] = js.native
+    var onbadgeschanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
     
     /** Indicates the detail text has changed. */
-    def ondetailtextchanged(ev: js.Any with WinRTEvent[LockScreenInfo]): Unit = js.native
+    def ondetailtextchanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the detail text has changed. */
     @JSName("ondetailtextchanged")
-    var ondetailtextchanged_Original: TypedEventHandler[LockScreenInfo, _] = js.native
+    var ondetailtextchanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
     
     /** Indicates the lock screen image has changed. */
-    def onlockscreenimagechanged(ev: js.Any with WinRTEvent[LockScreenInfo]): Unit = js.native
+    def onlockscreenimagechanged(ev: js.Any & WinRTEvent[LockScreenInfo]): Unit = js.native
     /** Indicates the lock screen image has changed. */
     @JSName("onlockscreenimagechanged")
-    var onlockscreenimagechanged_Original: TypedEventHandler[LockScreenInfo, _] = js.native
+    var onlockscreenimagechanged_Original: TypedEventHandler[LockScreenInfo, js.Any] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def removeEventListener_alarmiconchanged(`type`: alarmiconchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def removeEventListener_badgeschanged(`type`: badgeschanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def removeEventListener_detailtextchanged(`type`: detailtextchanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, _]): Unit = js.native
+    def removeEventListener_lockscreenimagechanged(`type`: lockscreenimagechanged, listener: TypedEventHandler[LockScreenInfo, js.Any]): Unit = js.native
   }
   
   /** Represents an unlock deferral. */
-  @js.native
   trait LockScreenUnlockingDeferral extends StObject {
     
     /** Notifies the system that your deferral is complete. If your deferral takes too long to complete, your lock screen app will be terminated by the system and potentially removed as the user’s default lock app. */
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object LockScreenUnlockingDeferral {
     
@@ -179,17 +176,16 @@ object LockScreen {
   }
   
   /** Represents the lock screen unlocking events. */
-  @js.native
   trait LockScreenUnlockingEventArgs extends StObject {
     
     /** Gets the deadline by which the lock screen app must unlock the device. If your unlocking deferral takes too long, your lock screen app will be terminated by the system and potentially removed as the user’s default lock app. */
-    var deadline: Date = js.native
+    var deadline: Date
     
     /**
       * Gets a LockScreenUnlockingDeferral , which defers the unlocking of the device.
       * @return An unlock deferral.
       */
-    def getDeferral(): LockScreenUnlockingDeferral = js.native
+    def getDeferral(): LockScreenUnlockingDeferral
   }
   object LockScreenUnlockingEventArgs {
     

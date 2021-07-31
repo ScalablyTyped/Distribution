@@ -2,23 +2,22 @@ package typings.prettyTime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(time: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(time: js.Array[Double], smallest: Unit, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(time: js.Array[Double], smallest: Increment): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(time: js.Array[Double], smallest: Increment, digits: Double): String = (^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any], smallest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("pretty-time", JSImport.Namespace)
   @js.native
-  def apply(time: js.Array[Double]): String = js.native
-  @JSImport("pretty-time", JSImport.Namespace)
-  @js.native
-  def apply(time: js.Array[Double], smallest: js.UndefOr[scala.Nothing], digits: Double): String = js.native
-  @JSImport("pretty-time", JSImport.Namespace)
-  @js.native
-  def apply(time: js.Array[Double], smallest: Increment): String = js.native
-  @JSImport("pretty-time", JSImport.Namespace)
-  @js.native
-  def apply(time: js.Array[Double], smallest: Increment, digits: Double): String = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.prettyTime.prettyTimeStrings.ns

@@ -12,7 +12,7 @@ CLI for hasura.io (coming soon!)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1886 |
+| # downloads        | 6956 |
 | # stars            | 0 |
 
 ## Links

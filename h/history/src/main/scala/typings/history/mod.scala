@@ -13,83 +13,54 @@ import typings.history.createMemoryHistoryMod.MemoryHistoryBuildOptions
 import typings.history.historyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("history", "createBrowserHistory")
+  @JSImport("history", JSImport.Namespace)
   @js.native
-  def createBrowserHistory[S](): History[S] = js.native
-  @JSImport("history", "createBrowserHistory")
-  @js.native
-  def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("history", "createHashHistory")
-  @js.native
-  def createHashHistory[S](): History[S] = js.native
-  @JSImport("history", "createHashHistory")
-  @js.native
-  def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = js.native
+  @scala.inline
+  def createBrowserHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")().asInstanceOf[History[S]]
+  @scala.inline
+  def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](path: LocationDescriptor[S]): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](
-    path: LocationDescriptor[S],
-    state: S,
-    key: js.UndefOr[scala.Nothing],
-    currentLocation: Location[S]
-  ): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](
-    path: LocationDescriptor[S],
-    state: js.UndefOr[scala.Nothing],
-    key: js.UndefOr[scala.Nothing],
-    currentLocation: Location[S]
-  ): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](path: LocationDescriptor[S], state: js.UndefOr[scala.Nothing], key: LocationKey): Location[S] = js.native
-  @JSImport("history", "createLocation")
-  @js.native
-  def createLocation[S](
-    path: LocationDescriptor[S],
-    state: js.UndefOr[scala.Nothing],
-    key: LocationKey,
-    currentLocation: Location[S]
-  ): Location[S] = js.native
+  @scala.inline
+  def createHashHistory[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")().asInstanceOf[History[S]]
+  @scala.inline
+  def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashHistory")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
   
-  @JSImport("history", "createMemoryHistory")
-  @js.native
-  def createMemoryHistory[S](): MemoryHistory[S] = js.native
-  @JSImport("history", "createMemoryHistory")
-  @js.native
-  def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S]): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any]).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
+  @scala.inline
+  def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLocation")(path.asInstanceOf[js.Any], state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], currentLocation.asInstanceOf[js.Any])).asInstanceOf[Location[S]]
   
-  @JSImport("history", "createPath")
-  @js.native
-  def createPath[S](location: LocationDescriptorObject[S]): Path = js.native
+  @scala.inline
+  def createMemoryHistory[S](): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")().asInstanceOf[MemoryHistory[S]]
+  @scala.inline
+  def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryHistory")(options.asInstanceOf[js.Any]).asInstanceOf[MemoryHistory[S]]
   
-  @JSImport("history", "locationsAreEqual")
-  @js.native
-  def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = js.native
+  @scala.inline
+  def createPath[S](location: LocationDescriptorObject[S]): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(location.asInstanceOf[js.Any]).asInstanceOf[Path]
   
-  @JSImport("history", "parsePath")
-  @js.native
-  def parsePath(path: Path): Location[LocationState] = js.native
+  @scala.inline
+  def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("locationsAreEqual")(lv.asInstanceOf[js.Any], rv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parsePath(path: Path): Location[LocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[Location[LocationState]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.history.historyStrings.PUSH
@@ -174,18 +145,17 @@ object mod {
   
   type Href = typings.history.mod.History.Href
   
-  @js.native
   trait Location[S] extends StObject {
     
-    var hash: Hash = js.native
+    var hash: Hash
     
-    var key: js.UndefOr[LocationKey] = js.native
+    var key: js.UndefOr[LocationKey] = js.undefined
     
-    var pathname: Pathname = js.native
+    var pathname: Pathname
     
-    var search: Search = js.native
+    var search: Search
     
-    var state: S = js.native
+    var state: S
   }
   object Location {
     
@@ -196,7 +166,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location[_], S] (val x: Self with Location[S]) extends AnyVal {
+    implicit class LocationMutableBuilder[Self <: Location[?], S] (val x: Self & Location[S]) extends AnyVal {
       
       @scala.inline
       def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
@@ -220,18 +190,17 @@ object mod {
   
   type LocationDescriptor[S] = typings.history.mod.History.LocationDescriptor[S]
   
-  @js.native
   trait LocationDescriptorObject[S] extends StObject {
     
-    var hash: js.UndefOr[Hash] = js.native
+    var hash: js.UndefOr[Hash] = js.undefined
     
-    var key: js.UndefOr[LocationKey] = js.native
+    var key: js.UndefOr[LocationKey] = js.undefined
     
-    var pathname: js.UndefOr[Pathname] = js.native
+    var pathname: js.UndefOr[Pathname] = js.undefined
     
-    var search: js.UndefOr[Search] = js.native
+    var search: js.UndefOr[Search] = js.undefined
     
-    var state: js.UndefOr[S] = js.native
+    var state: js.UndefOr[S] = js.undefined
   }
   object LocationDescriptorObject {
     
@@ -242,7 +211,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class LocationDescriptorObjectMutableBuilder[Self <: LocationDescriptorObject[_], S] (val x: Self with LocationDescriptorObject[S]) extends AnyVal {
+    implicit class LocationDescriptorObjectMutableBuilder[Self <: LocationDescriptorObject[?], S] (val x: Self & LocationDescriptorObject[S]) extends AnyVal {
       
       @scala.inline
       def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
@@ -282,61 +251,86 @@ object mod {
   
   type LocationState = typings.history.mod.History.LocationState
   
-  @js.native
   trait Module extends StObject {
     
-    def createBrowserHistory[S](): History[S] = js.native
-    def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S] = js.native
+    def createBrowserHistory[S](): History[S]
+    def createBrowserHistory[S](options: BrowserHistoryBuildOptions): History[S]
     @JSName("createBrowserHistory")
-    var createBrowserHistory_Original: FnCall = js.native
+    var createBrowserHistory_Original: FnCall
     
-    def createHashHistory[S](): History[S] = js.native
-    def createHashHistory[S](options: HashHistoryBuildOptions): History[S] = js.native
+    def createHashHistory[S](): History[S]
+    def createHashHistory[S](options: HashHistoryBuildOptions): History[S]
     @JSName("createHashHistory")
-    var createHashHistory_Original: FnCallOptions = js.native
+    var createHashHistory_Original: FnCallOptions
     
-    def createLocation[S](path: LocationDescriptor[S]): Location[S] = js.native
-    def createLocation[S](path: LocationDescriptor[S], state: S): Location[S] = js.native
-    def createLocation[S](
-      path: LocationDescriptor[S],
-      state: S,
-      key: js.UndefOr[scala.Nothing],
-      currentLocation: Location[S]
-    ): Location[S] = js.native
-    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S] = js.native
-    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S] = js.native
-    def createLocation[S](
-      path: LocationDescriptor[S],
-      state: js.UndefOr[scala.Nothing],
-      key: js.UndefOr[scala.Nothing],
-      currentLocation: Location[S]
-    ): Location[S] = js.native
-    def createLocation[S](path: LocationDescriptor[S], state: js.UndefOr[scala.Nothing], key: LocationKey): Location[S] = js.native
-    def createLocation[S](
-      path: LocationDescriptor[S],
-      state: js.UndefOr[scala.Nothing],
-      key: LocationKey,
-      currentLocation: Location[S]
-    ): Location[S] = js.native
+    def createLocation[S](path: LocationDescriptor[S]): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: S): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: S, key: Unit, currentLocation: Location[S]): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: S, key: LocationKey, currentLocation: Location[S]): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: Unit, currentLocation: Location[S]): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey): Location[S]
+    def createLocation[S](path: LocationDescriptor[S], state: Unit, key: LocationKey, currentLocation: Location[S]): Location[S]
     @JSName("createLocation")
-    var createLocation_Original: FnCallPathStateKeyCurrentLocation = js.native
+    var createLocation_Original: FnCallPathStateKeyCurrentLocation
     
-    def createMemoryHistory[S](): MemoryHistory[S] = js.native
-    def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S] = js.native
+    def createMemoryHistory[S](): MemoryHistory[S]
+    def createMemoryHistory[S](options: MemoryHistoryBuildOptions): MemoryHistory[S]
     @JSName("createMemoryHistory")
-    var createMemoryHistory_Original: Fn0 = js.native
+    var createMemoryHistory_Original: Fn0
     
-    def createPath[S](location: LocationDescriptorObject[S]): Path = js.native
+    def createPath[S](location: LocationDescriptorObject[S]): Path
     @JSName("createPath")
-    var createPath_Original: FnCallLocation = js.native
+    var createPath_Original: FnCallLocation
     
-    def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean = js.native
+    def locationsAreEqual[S](lv: LocationDescriptor[S], rv: LocationDescriptor[S]): Boolean
     @JSName("locationsAreEqual")
-    var locationsAreEqual_Original: FnCallLvRv = js.native
+    var locationsAreEqual_Original: FnCallLvRv
     
-    def parsePath(path: Path): Location[LocationState] = js.native
+    def parsePath(path: Path): Location[LocationState]
     @JSName("parsePath")
-    var parsePath_Original: js.Function1[/* path */ Path, Location[LocationState]] = js.native
+    var parsePath_Original: js.Function1[/* path */ Path, Location[LocationState]]
+  }
+  object Module {
+    
+    @scala.inline
+    def apply(
+      createBrowserHistory: FnCall,
+      createHashHistory: FnCallOptions,
+      createLocation: FnCallPathStateKeyCurrentLocation,
+      createMemoryHistory: Fn0,
+      createPath: FnCallLocation,
+      locationsAreEqual: FnCallLvRv,
+      parsePath: /* path */ Path => Location[LocationState]
+    ): Module = {
+      val __obj = js.Dynamic.literal(createBrowserHistory = createBrowserHistory.asInstanceOf[js.Any], createHashHistory = createHashHistory.asInstanceOf[js.Any], createLocation = createLocation.asInstanceOf[js.Any], createMemoryHistory = createMemoryHistory.asInstanceOf[js.Any], createPath = createPath.asInstanceOf[js.Any], locationsAreEqual = locationsAreEqual.asInstanceOf[js.Any], parsePath = js.Any.fromFunction1(parsePath))
+      __obj.asInstanceOf[Module]
+    }
+    
+    @scala.inline
+    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCreateBrowserHistory(value: FnCall): Self = StObject.set(x, "createBrowserHistory", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateHashHistory(value: FnCallOptions): Self = StObject.set(x, "createHashHistory", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateLocation(value: FnCallPathStateKeyCurrentLocation): Self = StObject.set(x, "createLocation", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateMemoryHistory(value: Fn0): Self = StObject.set(x, "createMemoryHistory", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreatePath(value: FnCallLocation): Self = StObject.set(x, "createPath", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLocationsAreEqual(value: FnCallLvRv): Self = StObject.set(x, "locationsAreEqual", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setParsePath(value: /* path */ Path => Location[LocationState]): Self = StObject.set(x, "parsePath", js.Any.fromFunction1(value))
+    }
   }
   
   type Path = typings.history.mod.History.Path

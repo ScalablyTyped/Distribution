@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: version = js.native
+  var name: version
 }
 object Name {
   
   @scala.inline
-  def apply(name: version): Name = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): Name = {
+    val __obj = js.Dynamic.literal(name = "version")
     __obj.asInstanceOf[Name]
   }
   

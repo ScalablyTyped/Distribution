@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextMenuDeactivateEvent extends ContextMenuEvent {
+trait ContextMenuDeactivateEvent
+  extends StObject
+     with ContextMenuEvent {
   
-  var item: js.UndefOr[Element] = js.native
+  var item: js.UndefOr[Element] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ContextMenuDeactivateEvent {
   

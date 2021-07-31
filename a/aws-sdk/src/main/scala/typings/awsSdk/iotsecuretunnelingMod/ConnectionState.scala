@@ -2,21 +2,19 @@ package typings.awsSdk.iotsecuretunnelingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionState extends StObject {
   
   /**
     * The last time the connection status was updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The connection status of the tunnel. Valid values are CONNECTED and DISCONNECTED.
     */
-  var status: js.UndefOr[ConnectionStatus] = js.native
+  var status: js.UndefOr[ConnectionStatus] = js.undefined
 }
 object ConnectionState {
   

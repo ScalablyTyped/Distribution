@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Principal extends StObject {
   
   /**
     * The ARN of the principal (IAM user, role, or group).
     */
-  var PrincipalARN: js.UndefOr[typings.awsSdk.servicecatalogMod.PrincipalARN] = js.native
+  var PrincipalARN: js.UndefOr[typings.awsSdk.servicecatalogMod.PrincipalARN] = js.undefined
   
   /**
     * The principal type. The supported value is IAM.
     */
-  var PrincipalType: js.UndefOr[typings.awsSdk.servicecatalogMod.PrincipalType] = js.native
+  var PrincipalType: js.UndefOr[typings.awsSdk.servicecatalogMod.PrincipalType] = js.undefined
 }
 object Principal {
   

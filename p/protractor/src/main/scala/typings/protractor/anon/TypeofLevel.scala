@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.seleniumWebdriver.mod.logging.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofLevel extends Instantiable2[/* name */ String, /* level */ Double, Level] {
+trait TypeofLevel
+  extends StObject
+     with Instantiable2[/* name */ String, /* level */ Double, Level] {
   
   /**
     * Indicates all log messages should be recorded.

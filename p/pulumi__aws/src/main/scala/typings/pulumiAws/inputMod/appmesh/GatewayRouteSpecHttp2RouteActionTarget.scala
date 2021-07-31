@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteSpecHttp2RouteActionTarget extends StObject {
   
   /**
     * The virtual service gateway route target.
     */
-  var virtualService: Input[GatewayRouteSpecHttp2RouteActionTargetVirtualService] = js.native
+  var virtualService: Input[GatewayRouteSpecHttp2RouteActionTargetVirtualService]
 }
 object GatewayRouteSpecHttp2RouteActionTarget {
   

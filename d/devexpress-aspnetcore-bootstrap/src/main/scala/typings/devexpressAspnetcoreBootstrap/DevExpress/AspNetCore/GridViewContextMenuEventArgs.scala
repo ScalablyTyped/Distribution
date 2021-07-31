@@ -2,21 +2,21 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewContextMenuEventArgs extends EventArgs {
+trait GridViewContextMenuEventArgs
+  extends StObject
+     with EventArgs {
   
-  val htmlEvent: js.Any = js.native
+  val htmlEvent: js.Any
   
-  val index: Double = js.native
+  val index: Double
   
-  val menu: js.Any = js.native
+  val menu: js.Any
   
-  val objectType: String = js.native
+  val objectType: String
   
-  var showBrowserMenu: Boolean = js.native
+  var showBrowserMenu: Boolean
 }
 object GridViewContextMenuEventArgs {
   

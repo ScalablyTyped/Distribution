@@ -7,7 +7,6 @@ import typings.officeJs.Word.Interfaces.InlinePictureCollectionData
 import typings.officeJs.Word.Interfaces.InlinePictureCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait InlinePictureCollection extends ClientObject {
+trait InlinePictureCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -46,7 +47,7 @@ trait InlinePictureCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): InlinePictureCollection = js.native
-  def load(options: InlinePictureCollectionLoadOptions with CollectionLoadOptions): InlinePictureCollection = js.native
+  def load(options: InlinePictureCollectionLoadOptions & CollectionLoadOptions): InlinePictureCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): InlinePictureCollection = js.native
   def load(propertyNames: String): InlinePictureCollection = js.native
   def load(propertyNames: js.Array[String]): InlinePictureCollection = js.native

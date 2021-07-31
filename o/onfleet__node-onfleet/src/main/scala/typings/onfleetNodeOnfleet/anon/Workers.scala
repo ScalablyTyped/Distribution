@@ -3,13 +3,11 @@ package typings.onfleetNodeOnfleet.anon
 import typings.onfleetNodeOnfleet.workersMod.OnfleetWorker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Workers extends StObject {
   
-  var workers: js.Array[OnfleetWorker] = js.native
+  var workers: js.Array[OnfleetWorker]
 }
 object Workers {
   

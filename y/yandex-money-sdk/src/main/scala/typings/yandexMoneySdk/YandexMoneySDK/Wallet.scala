@@ -11,29 +11,27 @@ import typings.yandexMoneySdk.anon.Panfragment
 import typings.yandexMoneySdk.anon.Ts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Wallet {
   
-  @js.native
   trait AccountInfoResult extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var account_status: String = js.native
+    var account_status: String
     
-    var account_type: String = js.native
+    var account_type: String
     
-    var avatar: js.UndefOr[Ts] = js.native
+    var avatar: js.UndefOr[Ts] = js.undefined
     
-    var balance: Double = js.native
+    var balance: Double
     
-    var balance_details: js.UndefOr[Available] = js.native
+    var balance_details: js.UndefOr[Available] = js.undefined
     
-    var cards_linked: js.UndefOr[js.Array[Panfragment]] = js.native
+    var cards_linked: js.UndefOr[js.Array[Panfragment]] = js.undefined
     
-    var currency: String = js.native
+    var currency: String
   }
   object AccountInfoResult {
     
@@ -84,12 +82,11 @@ object Wallet {
     }
   }
   
-  @js.native
   trait GetAccessTokenResult extends StObject {
     
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
   }
   object GetAccessTokenResult {
     
@@ -116,16 +113,15 @@ object Wallet {
     }
   }
   
-  @js.native
   trait IncomingTransferAcceptResult extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var ext_action_uri: js.UndefOr[String] = js.native
+    var ext_action_uri: js.UndefOr[String] = js.undefined
     
-    var protection_code_attempts_available: js.UndefOr[Double] = js.native
+    var protection_code_attempts_available: js.UndefOr[Double] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object IncomingTransferAcceptResult {
     
@@ -161,12 +157,11 @@ object Wallet {
     }
   }
   
-  @js.native
   trait IncomingTransferRejectResult extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object IncomingTransferRejectResult {
     
@@ -190,54 +185,53 @@ object Wallet {
     }
   }
   
-  @js.native
   trait OperationDetailsResult extends StObject {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var amount_due: js.UndefOr[Double] = js.native
+    var amount_due: js.UndefOr[Double] = js.undefined
     
-    var answer_datetime: js.UndefOr[String] = js.native
+    var answer_datetime: js.UndefOr[String] = js.undefined
     
-    var codepro: js.UndefOr[Boolean] = js.native
+    var codepro: js.UndefOr[Boolean] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var datetime: js.UndefOr[String] = js.native
+    var datetime: js.UndefOr[String] = js.undefined
     
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
-    var digital_goods: js.UndefOr[Article] = js.native
+    var digital_goods: js.UndefOr[Article] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[String] = js.native
+    var expires: js.UndefOr[String] = js.undefined
     
-    var fee: js.UndefOr[Double] = js.native
+    var fee: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var operation_id: js.UndefOr[String] = js.native
+    var operation_id: js.UndefOr[String] = js.undefined
     
-    var pattern_id: js.UndefOr[String] = js.native
+    var pattern_id: js.UndefOr[String] = js.undefined
     
-    var protection_code: js.UndefOr[String] = js.native
+    var protection_code: js.UndefOr[String] = js.undefined
     
-    var recipient: js.UndefOr[String] = js.native
+    var recipient: js.UndefOr[String] = js.undefined
     
-    var recipient_type: js.UndefOr[String] = js.native
+    var recipient_type: js.UndefOr[String] = js.undefined
     
-    var sender: js.UndefOr[String] = js.native
+    var sender: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OperationDetailsResult {
     
@@ -390,22 +384,21 @@ object Wallet {
     }
   }
   
-  @js.native
   trait OperationHistoryOptions extends StObject {
     
-    var details: js.UndefOr[Boolean] = js.native
+    var details: js.UndefOr[Boolean] = js.undefined
     
-    var from: js.UndefOr[String | Date] = js.native
+    var from: js.UndefOr[String | Date] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var records: js.UndefOr[Double] = js.native
+    var records: js.UndefOr[Double] = js.undefined
     
-    var start_record: js.UndefOr[String] = js.native
+    var start_record: js.UndefOr[String] = js.undefined
     
-    var till: js.UndefOr[String | Date] = js.native
+    var till: js.UndefOr[String | Date] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object OperationHistoryOptions {
     
@@ -460,14 +453,13 @@ object Wallet {
     }
   }
   
-  @js.native
   trait OperationHistoryResult extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var next_record: js.UndefOr[String] = js.native
+    var next_record: js.UndefOr[String] = js.undefined
     
-    var operations: js.UndefOr[js.Array[Amount]] = js.native
+    var operations: js.UndefOr[js.Array[Amount]] = js.undefined
   }
   object OperationHistoryResult {
     
@@ -503,24 +495,23 @@ object Wallet {
     }
   }
   
-  @js.native
   trait ProcessPaymentOptions extends StObject {
     
-    var csc: js.UndefOr[String] = js.native
+    var csc: js.UndefOr[String] = js.undefined
     
-    var ext_auth_fail_uri: js.UndefOr[String] = js.native
+    var ext_auth_fail_uri: js.UndefOr[String] = js.undefined
     
-    var ext_auth_success_uri: js.UndefOr[String] = js.native
+    var ext_auth_success_uri: js.UndefOr[String] = js.undefined
     
-    var money_source: js.UndefOr[String] = js.native
+    var money_source: js.UndefOr[String] = js.undefined
     
-    var request_id: String = js.native
+    var request_id: String
     
-    var test_card: js.UndefOr[String] = js.native
+    var test_card: js.UndefOr[String] = js.undefined
     
-    var test_payment: js.UndefOr[Boolean] = js.native
+    var test_payment: js.UndefOr[Boolean] = js.undefined
     
-    var test_result: js.UndefOr[String] = js.native
+    var test_result: js.UndefOr[String] = js.undefined
   }
   object ProcessPaymentOptions {
     
@@ -580,36 +571,35 @@ object Wallet {
     }
   }
   
-  @js.native
   trait ProcessPaymentResult extends StObject {
     
-    var account_unblock_uri: js.UndefOr[String] = js.native
+    var account_unblock_uri: js.UndefOr[String] = js.undefined
     
-    var acs_params: js.UndefOr[Dictkey] = js.native
+    var acs_params: js.UndefOr[Dictkey] = js.undefined
     
-    var acs_uri: js.UndefOr[String] = js.native
+    var acs_uri: js.UndefOr[String] = js.undefined
     
-    var balance: js.UndefOr[Double] = js.native
+    var balance: js.UndefOr[Double] = js.undefined
     
-    var credit_amount: js.UndefOr[Double] = js.native
+    var credit_amount: js.UndefOr[Double] = js.undefined
     
-    var digital_goods: js.UndefOr[Article] = js.native
+    var digital_goods: js.UndefOr[Article] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var hold_for_pickup_link: js.UndefOr[String] = js.native
+    var hold_for_pickup_link: js.UndefOr[String] = js.undefined
     
-    var invoice_id: js.UndefOr[String] = js.native
+    var invoice_id: js.UndefOr[String] = js.undefined
     
-    var next_retry: js.UndefOr[Double] = js.native
+    var next_retry: js.UndefOr[Double] = js.undefined
     
-    var payee: js.UndefOr[String] = js.native
+    var payee: js.UndefOr[String] = js.undefined
     
-    var payer: js.UndefOr[String] = js.native
+    var payer: js.UndefOr[String] = js.undefined
     
-    var payment_id: js.UndefOr[String] = js.native
+    var payment_id: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object ProcessPaymentResult {
     
@@ -705,37 +695,37 @@ object Wallet {
     }
   }
   
-  @js.native
   trait RequestPaymentOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var amount_due: js.UndefOr[Double] = js.native
+    var amount_due: js.UndefOr[Double] = js.undefined
     
-    var codepro: js.UndefOr[Boolean] = js.native
+    var codepro: js.UndefOr[Boolean] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var expire_period: js.UndefOr[Double] = js.native
+    var expire_period: js.UndefOr[Double] = js.undefined
     
-    var hold_for_pickup: js.UndefOr[Boolean] = js.native
+    var hold_for_pickup: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var pattern_id: String = js.native
+    var pattern_id: String
     
-    var `phone-number`: js.UndefOr[String] = js.native
+    var `phone-number`: js.UndefOr[String] = js.undefined
     
-    var test_card: js.UndefOr[String] = js.native
+    var test_card: js.UndefOr[String] = js.undefined
     
-    var test_payment: js.UndefOr[Boolean] = js.native
+    var test_payment: js.UndefOr[Boolean] = js.undefined
     
-    var test_result: js.UndefOr[String] = js.native
+    var test_result: js.UndefOr[String] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object RequestPaymentOptions {
     
@@ -831,30 +821,29 @@ object Wallet {
     }
   }
   
-  @js.native
   trait RequestPaymentResult extends StObject {
     
-    var account_unblock_uri: js.UndefOr[String] = js.native
+    var account_unblock_uri: js.UndefOr[String] = js.undefined
     
-    var balance: js.UndefOr[Double] = js.native
+    var balance: js.UndefOr[Double] = js.undefined
     
-    var contract_amount: js.UndefOr[Double] = js.native
+    var contract_amount: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var ext_action_uri: js.UndefOr[String] = js.native
+    var ext_action_uri: js.UndefOr[String] = js.undefined
     
-    var money_source: js.UndefOr[Cards] = js.native
+    var money_source: js.UndefOr[Cards] = js.undefined
     
-    var protection_code: js.UndefOr[String] = js.native
+    var protection_code: js.UndefOr[String] = js.undefined
     
-    var recipient_account_status: js.UndefOr[String] = js.native
+    var recipient_account_status: js.UndefOr[String] = js.undefined
     
-    var recipient_account_type: js.UndefOr[String] = js.native
+    var recipient_account_type: js.UndefOr[String] = js.undefined
     
-    var request_id: js.UndefOr[String] = js.native
+    var request_id: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object RequestPaymentResult {
     
@@ -932,14 +921,13 @@ object Wallet {
     }
   }
   
-  @js.native
   trait SendAuthenticatedRequestParams extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object SendAuthenticatedRequestParams {
     

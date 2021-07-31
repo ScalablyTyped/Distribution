@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConnectivityTestsResponse extends StObject {
   
   /** Page token to fetch the next set of Connectivity Tests. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of Connectivity Tests. */
-  var resources: js.UndefOr[js.Array[ConnectivityTest]] = js.native
+  var resources: js.UndefOr[js.Array[ConnectivityTest]] = js.undefined
   
   /** Locations that could not be reached (when querying all locations with `-`). */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListConnectivityTestsResponse {
   

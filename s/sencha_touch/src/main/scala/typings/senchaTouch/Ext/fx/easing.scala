@@ -3,33 +3,33 @@ package typings.senchaTouch.Ext.fx
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easing {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of startTime
       * @returns Number
       */
-    var getStartTime: js.UndefOr[js.Function0[Double]] = js.native
+    var getStartTime: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of startValue
       * @returns Number
       */
-    var getStartValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getStartValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of startTime
       * @param startTime Number The new value.
       */
-    var setStartTime: js.UndefOr[js.Function1[/* startTime */ js.UndefOr[Double], Unit]] = js.native
+    var setStartTime: js.UndefOr[js.Function1[/* startTime */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of startValue
       * @param startValue Number The new value.
       */
-    var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[Double], Unit]] = js.native
+    var setStartValue: js.UndefOr[js.Function1[/* startValue */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -68,38 +68,39 @@ object easing {
     }
   }
   
-  @js.native
-  trait IBounce extends IAbstract {
+  trait IBounce
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of acceleration
       * @returns Number
       */
-    var getAcceleration: js.UndefOr[js.Function0[Double]] = js.native
+    var getAcceleration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of springTension
       * @returns Number
       */
-    var getSpringTension: js.UndefOr[js.Function0[Double]] = js.native
+    var getSpringTension: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of startVelocity
       * @returns Number
       */
-    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.native
+    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of acceleration
       * @param acceleration Number The new value.
       */
-    var setAcceleration: js.UndefOr[js.Function1[/* acceleration */ js.UndefOr[Double], Unit]] = js.native
+    var setAcceleration: js.UndefOr[js.Function1[/* acceleration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of springTension
       * @param springTension Number The new value.
       */
-    var setSpringTension: js.UndefOr[js.Function1[/* springTension */ js.UndefOr[Double], Unit]] = js.native
+    var setSpringTension: js.UndefOr[js.Function1[/* springTension */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of startVelocity
       * @param startVelocity Number The new value.
       */
-    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.native
+    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IBounce {
     
@@ -150,80 +151,81 @@ object easing {
     }
   }
   
-  @js.native
-  trait IBoundMomentum extends IAbstract {
+  trait IBoundMomentum
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (Object) */
-    var bounce: js.UndefOr[js.Any] = js.native
+    var bounce: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of bounce
       * @returns Object
       */
-    var getBounce: js.UndefOr[js.Function0[_]] = js.native
+    var getBounce: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of maxMomentumValue
       * @returns Number
       */
-    var getMaxMomentumValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of minMomentumValue
       * @returns Number
       */
-    var getMinMomentumValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getMinMomentumValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of minVelocity
       * @returns Number
       */
-    var getMinVelocity: js.UndefOr[js.Function0[Double]] = js.native
+    var getMinVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of momentum
       * @returns Object
       */
-    var getMomentum: js.UndefOr[js.Function0[_]] = js.native
+    var getMomentum: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of startVelocity
       * @returns Number
       */
-    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.native
+    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Config Option] (Number) */
-    var minVelocity: js.UndefOr[Double] = js.native
+    var minVelocity: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var momentum: js.UndefOr[js.Any] = js.native
+    var momentum: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of bounce
       * @param bounce Object The new value.
       */
-    var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBounce: js.UndefOr[js.Function1[/* bounce */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxMomentumValue
       * @param maxMomentumValue Number The new value.
       */
-    var setMaxMomentumValue: js.UndefOr[js.Function1[/* maxMomentumValue */ js.UndefOr[Double], Unit]] = js.native
+    var setMaxMomentumValue: js.UndefOr[js.Function1[/* maxMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of minMomentumValue
       * @param minMomentumValue Number The new value.
       */
-    var setMinMomentumValue: js.UndefOr[js.Function1[/* minMomentumValue */ js.UndefOr[Double], Unit]] = js.native
+    var setMinMomentumValue: js.UndefOr[js.Function1[/* minMomentumValue */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of minVelocity
       * @param minVelocity Number The new value.
       */
-    var setMinVelocity: js.UndefOr[js.Function1[/* minVelocity */ js.UndefOr[Double], Unit]] = js.native
+    var setMinVelocity: js.UndefOr[js.Function1[/* minVelocity */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of momentum
       * @param momentum Object The new value.
       */
-    var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMomentum: js.UndefOr[js.Function1[/* momentum */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of startVelocity
       * @param startVelocity Number The new value.
       */
-    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.native
+    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var startVelocity: js.UndefOr[Double] = js.native
+    var startVelocity: js.UndefOr[Double] = js.undefined
   }
   object IBoundMomentum {
     
@@ -243,7 +245,7 @@ object easing {
       def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
       @scala.inline
-      def setGetBounce(value: () => _): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
+      def setGetBounce(value: () => js.Any): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBounceUndefined: Self = StObject.set(x, "getBounce", js.undefined)
@@ -267,7 +269,7 @@ object easing {
       def setGetMinVelocityUndefined: Self = StObject.set(x, "getMinVelocity", js.undefined)
       
       @scala.inline
-      def setGetMomentum(value: () => _): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
+      def setGetMomentum(value: () => js.Any): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMomentumUndefined: Self = StObject.set(x, "getMomentum", js.undefined)
@@ -334,18 +336,19 @@ object easing {
     }
   }
   
-  @js.native
-  trait IEaseIn extends ILinear {
+  trait IEaseIn
+    extends StObject
+       with ILinear {
     
     /** [Method] Returns the value of exponent
       * @returns Number
       */
-    var getExponent: js.UndefOr[js.Function0[Double]] = js.native
+    var getExponent: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of exponent
       * @param exponent Number The new value.
       */
-    var setExponent: js.UndefOr[js.Function1[/* exponent */ js.UndefOr[Double], Unit]] = js.native
+    var setExponent: js.UndefOr[js.Function1[/* exponent */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IEaseIn {
     
@@ -372,18 +375,19 @@ object easing {
     }
   }
   
-  @js.native
-  trait IEaseOut extends ILinear {
+  trait IEaseOut
+    extends StObject
+       with ILinear {
     
     /** [Method] Returns the value of exponent
       * @returns Number
       */
-    var getExponent: js.UndefOr[js.Function0[Double]] = js.native
+    var getExponent: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of exponent
       * @param exponent Number The new value.
       */
-    var setExponent: js.UndefOr[js.Function1[/* exponent */ js.UndefOr[Double], Unit]] = js.native
+    var setExponent: js.UndefOr[js.Function1[/* exponent */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IEaseOut {
     
@@ -410,28 +414,29 @@ object easing {
     }
   }
   
-  @js.native
-  trait ILinear extends IAbstract {
+  trait ILinear
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of duration
       * @returns Number
       */
-    var getDuration: js.UndefOr[js.Function0[Double]] = js.native
+    var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of endValue
       * @returns Number
       */
-    var getEndValue: js.UndefOr[js.Function0[Double]] = js.native
+    var getEndValue: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of duration
       * @param duration Number The new value.
       */
-    var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
+    var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of endValue
       * @param endValue Number The new value.
       */
-    var setEndValue: js.UndefOr[js.Function1[/* endValue */ js.UndefOr[Double], Unit]] = js.native
+    var setEndValue: js.UndefOr[js.Function1[/* endValue */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object ILinear {
     
@@ -470,38 +475,39 @@ object easing {
     }
   }
   
-  @js.native
-  trait IMomentum extends IAbstract {
+  trait IMomentum
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of acceleration
       * @returns Number
       */
-    var getAcceleration: js.UndefOr[js.Function0[Double]] = js.native
+    var getAcceleration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of friction
       * @returns Number
       */
-    var getFriction: js.UndefOr[js.Function0[Double]] = js.native
+    var getFriction: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of startVelocity
       * @returns Number
       */
-    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.native
+    var getStartVelocity: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Sets the value of acceleration
       * @param acceleration Number The new value.
       */
-    var setAcceleration: js.UndefOr[js.Function1[/* acceleration */ js.UndefOr[Double], Unit]] = js.native
+    var setAcceleration: js.UndefOr[js.Function1[/* acceleration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of friction
       * @param friction Number The new value.
       */
-    var setFriction: js.UndefOr[js.Function1[/* friction */ js.UndefOr[Double], Unit]] = js.native
+    var setFriction: js.UndefOr[js.Function1[/* friction */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of startVelocity
       * @param startVelocity Number The new value.
       */
-    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.native
+    var setStartVelocity: js.UndefOr[js.Function1[/* startVelocity */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IMomentum {
     

@@ -3,13 +3,11 @@ package typings.googleapis.betaMod.computeBeta
 import typings.googleapis.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A metadata key/value entry.
   */
-@js.native
 trait SchemaMetadata extends StObject {
   
   /**
@@ -21,18 +19,18 @@ trait SchemaMetadata extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make a get() request to retrieve the resource.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Array of key/value pairs. The total size of all keys and values must be
     * less than 512 KB.
     */
-  var items: js.UndefOr[js.Array[Key]] = js.native
+  var items: js.UndefOr[js.Array[Key]] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#metadata for metadata.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadata {
   

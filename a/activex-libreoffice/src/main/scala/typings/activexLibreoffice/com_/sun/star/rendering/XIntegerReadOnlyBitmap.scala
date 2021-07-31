@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.geometry.RealSize2D
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,15 +20,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * complicated. When reading data, one has to check for both {@link VolatileContentDestroyedException} and mismatching {@link IntegerBitmapLayout} return
   * values. If either of them occurs, the whole bitmap read operation should be repeated, if you need consistent information.
   */
-@js.native
-trait XIntegerReadOnlyBitmap extends XBitmap {
+trait XIntegerReadOnlyBitmap
+  extends StObject
+     with XBitmap {
   
   /**
     * Query the memory layout for this bitmap.
     *
     * Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
     */
-  val MemoryLayout: IntegerBitmapLayout = js.native
+  val MemoryLayout: IntegerBitmapLayout
   
   /**
     * Query the raw data of this bitmap.
@@ -45,14 +45,14 @@ trait XIntegerReadOnlyBitmap extends XBitmap {
     * @throws VolatileContentDestroyedException if the bitmap is volatile, and the content has been destroyed by the system.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if parts of the given rectangle are outside the permissible bitmap area.
     */
-  def getData(bitmapLayout: js.Array[IntegerBitmapLayout], rect: IntegerRectangle2D): SafeArray[Double] = js.native
+  def getData(bitmapLayout: js.Array[IntegerBitmapLayout], rect: IntegerRectangle2D): SafeArray[Double]
   
   /**
     * Query the memory layout for this bitmap.
     *
     * Please note that for volatile bitmaps, the memory layout might change between subsequent calls.
     */
-  def getMemoryLayout(): IntegerBitmapLayout = js.native
+  def getMemoryLayout(): IntegerBitmapLayout
   
   /**
     * Get a single pixel of the bitmap, returning its color value.
@@ -67,7 +67,7 @@ trait XIntegerReadOnlyBitmap extends XBitmap {
     * @throws VolatileContentDestroyedException if the bitmap is volatile, and the content has been destroyed by the system.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given position is outside the permissible bitmap area.
     */
-  def getPixel(bitmapLayout: js.Array[IntegerBitmapLayout], pos: IntegerPoint2D): SafeArray[Double] = js.native
+  def getPixel(bitmapLayout: js.Array[IntegerBitmapLayout], pos: IntegerPoint2D): SafeArray[Double]
 }
 object XIntegerReadOnlyBitmap {
   

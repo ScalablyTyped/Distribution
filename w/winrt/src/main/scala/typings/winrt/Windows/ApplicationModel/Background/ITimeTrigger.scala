@@ -2,15 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITimeTrigger extends IBackgroundTrigger {
+trait ITimeTrigger
+  extends StObject
+     with IBackgroundTrigger {
   
-  var freshnessTime: Double = js.native
+  var freshnessTime: Double
   
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
 }
 object ITimeTrigger {
   

@@ -9,37 +9,34 @@ import typings.pino.mod.LoggerOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): HttpLogger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Unit, stream: DestinationStream): HttpLogger = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Options): HttpLogger = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Options, stream: DestinationStream): HttpLogger = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(stream: DestinationStream): HttpLogger = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[HttpLogger]
+  
   @JSImport("pino-http", JSImport.Namespace)
   @js.native
-  def apply(): HttpLogger = js.native
-  @JSImport("pino-http", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], stream: DestinationStream): HttpLogger = js.native
-  @JSImport("pino-http", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): HttpLogger = js.native
-  @JSImport("pino-http", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, stream: DestinationStream): HttpLogger = js.native
-  @JSImport("pino-http", JSImport.Namespace)
-  @js.native
-  def apply(stream: DestinationStream): HttpLogger = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("pino-http", "startTime")
   @js.native
   val startTime: js.Symbol = js.native
   
-  @js.native
   trait AutoLoggingOptions extends StObject {
     
-    var getPath: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.UndefOr[String]]] = js.native
+    var getPath: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.UndefOr[String]]] = js.undefined
     
-    var ignorePaths: js.UndefOr[js.Array[String]] = js.native
+    var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AutoLoggingOptions {
     
@@ -69,16 +66,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomAttributeKeys extends StObject {
     
-    var err: js.UndefOr[String] = js.native
+    var err: js.UndefOr[String] = js.undefined
     
-    var req: js.UndefOr[String] = js.native
+    var req: js.UndefOr[String] = js.undefined
     
-    var res: js.UndefOr[String] = js.native
+    var res: js.UndefOr[String] = js.undefined
     
-    var responseTime: js.UndefOr[String] = js.native
+    var responseTime: js.UndefOr[String] = js.undefined
   }
   object CustomAttributeKeys {
     
@@ -126,30 +122,31 @@ object mod {
     *
     * See https://github.com/pinojs/pino-http#pinohttpopts-stream
     */
-  @js.native
-  trait Options extends LoggerOptions {
+  trait Options
+    extends StObject
+       with LoggerOptions {
     
-    var autoLogging: js.UndefOr[Boolean | AutoLoggingOptions] = js.native
+    var autoLogging: js.UndefOr[Boolean | AutoLoggingOptions] = js.undefined
     
-    var customAttributeKeys: js.UndefOr[CustomAttributeKeys] = js.native
+    var customAttributeKeys: js.UndefOr[CustomAttributeKeys] = js.undefined
     
-    var customErrorMessage: js.UndefOr[js.Function2[/* error */ Error, /* res */ ServerResponse, String]] = js.native
+    var customErrorMessage: js.UndefOr[js.Function2[/* error */ Error, /* res */ ServerResponse, String]] = js.undefined
     
-    var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.native
+    var customLogLevel: js.UndefOr[js.Function2[/* res */ ServerResponse, /* error */ Error, Level]] = js.undefined
     
-    var customSuccessMessage: js.UndefOr[js.Function1[/* res */ ServerResponse, String]] = js.native
+    var customSuccessMessage: js.UndefOr[js.Function1[/* res */ ServerResponse, String]] = js.undefined
     
-    var genReqId: js.UndefOr[GenReqId] = js.native
+    var genReqId: js.UndefOr[GenReqId] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var reqCustomProps: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.Object]] = js.native
+    var reqCustomProps: js.UndefOr[js.Function1[/* req */ IncomingMessage, js.Object]] = js.undefined
     
-    var stream: js.UndefOr[DestinationStream] = js.native
+    var stream: js.UndefOr[DestinationStream] = js.undefined
     
-    var useLevel: js.UndefOr[Level] = js.native
+    var useLevel: js.UndefOr[Level] = js.undefined
     
-    var wrapSerializers: js.UndefOr[Boolean] = js.native
+    var wrapSerializers: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -235,12 +232,11 @@ object mod {
   /* augmented module */
   object httpAugmentingMod {
     
-    @js.native
     trait IncomingMessage extends StObject {
       
-      var id: ReqId = js.native
+      var id: ReqId
       
-      var log: Logger = js.native
+      var log: Logger
     }
     object IncomingMessage {
       
@@ -264,10 +260,9 @@ object mod {
     @js.native
     trait OutgoingMessage extends StObject
     
-    @js.native
     trait ServerResponse extends StObject {
       
-      var err: js.UndefOr[Error] = js.native
+      var err: js.UndefOr[Error] = js.undefined
     }
     object ServerResponse {
       

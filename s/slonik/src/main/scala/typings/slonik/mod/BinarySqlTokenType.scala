@@ -3,15 +3,15 @@ package typings.slonik.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinarySqlTokenType extends _SqlTokenType {
+trait BinarySqlTokenType
+  extends StObject
+     with _SqlTokenType {
   
-  var data: Buffer = js.native
+  var data: Buffer
   
-  var `type`: js.Symbol = js.native
+  var `type`: js.Symbol
 }
 object BinarySqlTokenType {
   

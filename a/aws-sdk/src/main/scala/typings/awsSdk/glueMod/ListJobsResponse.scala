@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /**
     * The names of all jobs in the account, or the jobs with the specified tags.
     */
-  var JobNames: js.UndefOr[JobNameList] = js.native
+  var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
     * A continuation token, if the returned list does not contain the last metric available.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 object ListJobsResponse {
   

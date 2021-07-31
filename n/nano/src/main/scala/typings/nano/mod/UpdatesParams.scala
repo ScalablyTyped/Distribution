@@ -5,20 +5,18 @@ import typings.nano.nanoStrings.eventsource
 import typings.nano.nanoStrings.longpoll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
-@js.native
 trait UpdatesParams extends StObject {
   
-  var feed: longpoll | continuous | eventsource = js.native
+  var feed: longpoll | continuous | eventsource
   
-  var heartbeat: Boolean = js.native
+  var heartbeat: Boolean
   
-  var since: String = js.native
+  var since: String
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object UpdatesParams {
   

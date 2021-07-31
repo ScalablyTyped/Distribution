@@ -3,20 +3,18 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoDataResultSet extends StObject {
   
   /** Copyright information for the GeoData API. */
-  var Copyright: String = js.native
+  var Copyright: String
   
   /** The location provided in the query that generated this result. */
-  var location: String | Location = js.native
+  var location: String | Location
   
   /** Results of the boundary data. */
-  var results: js.Array[IGeoDataResult] = js.native
+  var results: js.Array[IGeoDataResult]
 }
 object IGeoDataResultSet {
   

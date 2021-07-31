@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthRequirement extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait AuthRequirement extends StObject {
     * accept JWTs with the following audience "https://library-example.googleapis.com/google.example.library.v1.LibraryService". Example: audiences:
     * bookstore_android.apps.googleusercontent.com, bookstore_web.apps.googleusercontent.com
     */
-  var audiences: js.UndefOr[String] = js.native
+  var audiences: js.UndefOr[String] = js.undefined
   
   /** id from authentication provider. Example: provider_id: bookstore_auth */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
 }
 object AuthRequirement {
   

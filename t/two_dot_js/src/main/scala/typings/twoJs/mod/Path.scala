@@ -3,12 +3,13 @@ package typings.twoJs.mod
 import typings.twoJs.mod.Utils.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("two.js", "Path")
 @js.native
-class Path protected () extends Object {
+class Path protected ()
+  extends StObject
+     with Object {
   def this(vertices: js.Array[Vector], closed: Boolean, curved: Boolean) = this()
   def this(vertices: js.Array[Vector], closed: Boolean, curved: Boolean, manual: Boolean) = this()
   
@@ -69,8 +70,11 @@ class Path protected () extends Object {
 }
 object Path {
   
-  /* static member */
-  @JSImport("two.js", "Path.MakeObservable")
+  @JSImport("two.js", "Path")
   @js.native
-  def MakeObservable(obj: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def MakeObservable(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("MakeObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

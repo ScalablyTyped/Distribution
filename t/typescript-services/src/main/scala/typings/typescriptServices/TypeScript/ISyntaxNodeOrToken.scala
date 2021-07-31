@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyntaxNodeOrToken extends ISyntaxElement {
+trait ISyntaxNodeOrToken
+  extends StObject
+     with ISyntaxElement {
   
-  def accept(visitor: ISyntaxVisitor): js.Any = js.native
+  def accept(visitor: ISyntaxVisitor): js.Any
   
-  def withLeadingTrivia(leadingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
+  def withLeadingTrivia(leadingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken
   
-  def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
+  def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken
 }
 object ISyntaxNodeOrToken {
   

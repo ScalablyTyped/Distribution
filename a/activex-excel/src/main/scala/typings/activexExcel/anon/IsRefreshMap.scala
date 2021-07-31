@@ -4,17 +4,15 @@ import typings.activexExcel.Excel.XlXmlImportResult
 import typings.activexExcel.Excel.XmlMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsRefreshMap extends StObject {
   
-  val IsRefresh: Boolean = js.native
+  val IsRefresh: Boolean
   
-  val Map: XmlMap = js.native
+  val Map: XmlMap
   
-  val Result: XlXmlImportResult = js.native
+  val Result: XlXmlImportResult
 }
 object IsRefreshMap {
   

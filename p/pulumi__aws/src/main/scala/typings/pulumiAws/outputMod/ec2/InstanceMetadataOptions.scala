@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceMetadataOptions extends StObject {
   
   /**
     * Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
     */
-  var httpEndpoint: String = js.native
+  var httpEndpoint: String
   
   /**
     * The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
     */
-  var httpPutResponseHopLimit: Double = js.native
+  var httpPutResponseHopLimit: Double
   
   /**
     * Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
     */
-  var httpTokens: String = js.native
+  var httpTokens: String
 }
 object InstanceMetadataOptions {
   

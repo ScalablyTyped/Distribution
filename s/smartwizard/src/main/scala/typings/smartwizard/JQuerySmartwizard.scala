@@ -3,25 +3,23 @@ package typings.smartwizard
 import typings.jquery.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQuerySmartwizard {
   
-  @js.native
   trait AnchorSettings extends StObject {
     
-    var anchorClickable: js.UndefOr[Boolean] = js.native
+    var anchorClickable: js.UndefOr[Boolean] = js.undefined
     
-    var enableAllAnchors: js.UndefOr[Boolean] = js.native
+    var enableAllAnchors: js.UndefOr[Boolean] = js.undefined
     
-    var enableAnchorOnDoneStep: js.UndefOr[Boolean] = js.native
+    var enableAnchorOnDoneStep: js.UndefOr[Boolean] = js.undefined
     
-    var markAllPreviousStepsAsDone: js.UndefOr[Boolean] = js.native
+    var markAllPreviousStepsAsDone: js.UndefOr[Boolean] = js.undefined
     
-    var markDoneStep: js.UndefOr[Boolean] = js.native
+    var markDoneStep: js.UndefOr[Boolean] = js.undefined
     
-    var removeDoneStepOnNavigateBack: js.UndefOr[Boolean] = js.native
+    var removeDoneStepOnNavigateBack: js.UndefOr[Boolean] = js.undefined
   }
   object AnchorSettings {
     
@@ -72,12 +70,11 @@ object JQuerySmartwizard {
     }
   }
   
-  @js.native
   trait Lang extends StObject {
     
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
   }
   object Lang {
     
@@ -104,46 +101,45 @@ object JQuerySmartwizard {
     }
   }
   
-  @js.native
   trait SmartWizardOptions extends StObject {
     
-    var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.native
+    var ajaxSettings: js.UndefOr[JQueryAjaxSettings] = js.undefined
     
-    var anchorSettings: js.UndefOr[AnchorSettings] = js.native
+    var anchorSettings: js.UndefOr[AnchorSettings] = js.undefined
     
-    var autoAdjustHeight: js.UndefOr[Boolean] = js.native
+    var autoAdjustHeight: js.UndefOr[Boolean] = js.undefined
     
-    var backButtonSupport: js.UndefOr[Boolean] = js.native
+    var backButtonSupport: js.UndefOr[Boolean] = js.undefined
     
-    var contentCache: js.UndefOr[Boolean] = js.native
+    var contentCache: js.UndefOr[Boolean] = js.undefined
     
-    var contentURL: js.UndefOr[Null | String] = js.native
+    var contentURL: js.UndefOr[Null | String] = js.undefined
     
-    var cycleSteps: js.UndefOr[Boolean] = js.native
+    var cycleSteps: js.UndefOr[Boolean] = js.undefined
     
-    var disabledSteps: js.UndefOr[js.Array[Double]] = js.native
+    var disabledSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var errorSteps: js.UndefOr[js.Array[Double]] = js.native
+    var errorSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var hiddenSteps: js.UndefOr[js.Array[Double]] = js.native
+    var hiddenSteps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var keyNavigation: js.UndefOr[Boolean] = js.native
+    var keyNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var lang: js.UndefOr[Lang] = js.native
+    var lang: js.UndefOr[Lang] = js.undefined
     
-    var selected: js.UndefOr[Double] = js.native
+    var selected: js.UndefOr[Double] = js.undefined
     
-    var showStepURLhash: js.UndefOr[Boolean] = js.native
+    var showStepURLhash: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.native
+    var toolbarSettings: js.UndefOr[ToolbarSettings] = js.undefined
     
-    var transitionEffect: js.UndefOr[TransitionEffect] = js.native
+    var transitionEffect: js.UndefOr[TransitionEffect] = js.undefined
     
-    var transitionSpeed: js.UndefOr[String | Double] = js.native
+    var transitionSpeed: js.UndefOr[String | Double] = js.undefined
     
-    var useURLhash: js.UndefOr[Boolean] = js.native
+    var useURLhash: js.UndefOr[Boolean] = js.undefined
   }
   object SmartWizardOptions {
     
@@ -320,18 +316,17 @@ object JQuerySmartwizard {
     def top: typings.smartwizard.smartwizardStrings.top = "top".asInstanceOf[typings.smartwizard.smartwizardStrings.top]
   }
   
-  @js.native
   trait ToolbarSettings extends StObject {
     
-    var showNextButton: js.UndefOr[Boolean] = js.native
+    var showNextButton: js.UndefOr[Boolean] = js.undefined
     
-    var showPreviousButton: js.UndefOr[Boolean] = js.native
+    var showPreviousButton: js.UndefOr[Boolean] = js.undefined
     
-    var toolbarButtonPosition: js.UndefOr[ToolbarButtonPosition] = js.native
+    var toolbarButtonPosition: js.UndefOr[ToolbarButtonPosition] = js.undefined
     
-    var toolbarExtraButtons: js.UndefOr[js.Array[JQuery]] = js.native
+    var toolbarExtraButtons: js.UndefOr[js.Array[JQuery]] = js.undefined
     
-    var toolbarPosition: js.UndefOr[ToolbarPosition] = js.native
+    var toolbarPosition: js.UndefOr[ToolbarPosition] = js.undefined
   }
   object ToolbarSettings {
     

@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Real extends StObject {
   
-  var imag: Double = js.native
+  var imag: Double
   
-  var real: Double = js.native
+  var real: Double
 }
 object Real {
   

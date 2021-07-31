@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "DisplayObject")
 @js.native
 class DisplayObject ()
-  extends typings.pixiJs.PIXI.DisplayObject
+  extends StObject
+     with typings.pixiJs.PIXI.DisplayObject
 object DisplayObject {
+  
+  @JSImport("pixi.js", "DisplayObject")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Mixes all enumerable properties and methods from a source object to DisplayObject.
@@ -26,7 +30,6 @@ object DisplayObject {
     * @param {object} source - The source of properties and methods to mix in.
     */
   /* static member */
-  @JSImport("pixi.js", "DisplayObject.mixin")
-  @js.native
-  def mixin(source: js.Any): Unit = js.native
+  @scala.inline
+  def mixin(source: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

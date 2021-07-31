@@ -3,10 +3,13 @@ package typings.validator
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchesMod {
+  
+  @JSImport("validator/lib/matches", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Check if string matches the pattern.
@@ -14,18 +17,15 @@ object matchesMod {
     * @param pattern - `'foo'`
     * @param [modifiers] - `'i'`
     */
-  @JSImport("validator/lib/matches", JSImport.Default)
-  @js.native
-  def default(str: String, pattern: String): Boolean = js.native
-  @JSImport("validator/lib/matches", JSImport.Default)
-  @js.native
-  def default(str: String, pattern: String, modifiers: String): Boolean = js.native
+  @scala.inline
+  def default(str: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def default(str: String, pattern: String, modifiers: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   /**
     * Check if string matches the pattern.
     *
     * @param pattern - `/foo/i`
     */
-  @JSImport("validator/lib/matches", JSImport.Default)
-  @js.native
-  def default(str: String, pattern: RegExp): Boolean = js.native
+  @scala.inline
+  def default(str: String, pattern: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

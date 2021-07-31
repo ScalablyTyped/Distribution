@@ -2,22 +2,20 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeartifact {
   
-  @js.native
   trait RepositoryExternalConnections extends StObject {
     
     /**
       * The name of the external connection associated with a repository.
       */
-    var externalConnectionName: String = js.native
+    var externalConnectionName: String
     
-    var packageFormat: String = js.native
+    var packageFormat: String
     
-    var status: String = js.native
+    var status: String
   }
   object RepositoryExternalConnections {
     
@@ -41,13 +39,12 @@ object codeartifact {
     }
   }
   
-  @js.native
   trait RepositoryUpstream extends StObject {
     
     /**
       * The name of an upstream repository.
       */
-    var repositoryName: String = js.native
+    var repositoryName: String
   }
   object RepositoryUpstream {
     

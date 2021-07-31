@@ -12,7 +12,7 @@ Load environment variables from .env, .env.local, .env.production, etc. when run
 | Keywords           | dotenv, yarn, npm run |
 | # releases         | 2 |
 | # dependents       | 5 |
-| # downloads        | 341084 |
+| # downloads        | 471966 |
 | # stars            | 0 |
 
 ## Links

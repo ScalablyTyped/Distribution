@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.MaximumCorner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "BoxGeometry")
@@ -13,27 +12,25 @@ class BoxGeometry protected () extends Packable {
 }
 object BoxGeometry {
   
-  /* static member */
-  @JSImport("cesium", "BoxGeometry.createGeometry")
+  @JSImport("cesium", "BoxGeometry")
   @js.native
-  def createGeometry(boxGeometry: BoxGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "BoxGeometry.fromDimensions")
-  @js.native
-  def fromDimensions(): Unit = js.native
+  @scala.inline
+  def createGeometry(boxGeometry: BoxGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(boxGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @JSImport("cesium", "BoxGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): BoxGeometry = js.native
-  @JSImport("cesium", "BoxGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: BoxGeometry): BoxGeometry = js.native
-  @JSImport("cesium", "BoxGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): BoxGeometry = js.native
-  @JSImport("cesium", "BoxGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: BoxGeometry): BoxGeometry = js.native
+  @scala.inline
+  def fromDimensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDimensions")().asInstanceOf[Unit]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[BoxGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): BoxGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[BoxGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: BoxGeometry): BoxGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoxGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: BoxGeometry): BoxGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[BoxGeometry]
 }

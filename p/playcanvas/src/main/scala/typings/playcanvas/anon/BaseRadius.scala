@@ -2,21 +2,19 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseRadius extends StObject {
   
-  var baseRadius: js.UndefOr[Double] = js.native
+  var baseRadius: js.UndefOr[Double] = js.undefined
   
-  var capSegments: js.UndefOr[Double] = js.native
+  var capSegments: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var heightSegments: js.UndefOr[Double] = js.native
+  var heightSegments: js.UndefOr[Double] = js.undefined
   
-  var peakRadius: js.UndefOr[Double] = js.native
+  var peakRadius: js.UndefOr[Double] = js.undefined
 }
 object BaseRadius {
   

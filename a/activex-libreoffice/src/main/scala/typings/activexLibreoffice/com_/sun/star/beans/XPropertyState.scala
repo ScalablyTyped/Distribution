@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a value is available or voidthe value is stored in the object itself, or if a default value is to be usedand if the value cannot be determined, due to
   * ambiguity (multi selection with multiple values).
   */
-@js.native
-trait XPropertyState extends XInterface {
+trait XPropertyState
+  extends StObject
+     with XInterface {
   
   /**
     * @param aPropertyName specifies the name of the property.
@@ -26,21 +26,21 @@ trait XPropertyState extends XInterface {
     * @throws UnknownPropertyException if the property does not exist.
     * @throws com::sun::star::lang::WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception
     */
-  def getPropertyDefault(aPropertyName: String): js.Any = js.native
+  def getPropertyDefault(aPropertyName: String): js.Any
   
   /**
     * @param PropertyName specifies the name of the property.
     * @returns the state of the property.
     * @throws UnknownPropertyException if the property does not exist.
     */
-  def getPropertyState(PropertyName: String): PropertyState = js.native
+  def getPropertyState(PropertyName: String): PropertyState
   
   /**
     * @param aPropertyName contains the sequence of property names.
     * @returns a sequence of the states of the properties which are specified by their names.  The order of the states is correlating to the order of the given
     * @throws UnknownPropertyException if one property does not exist.
     */
-  def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
   
   /**
     * Sets the property to default value.
@@ -50,7 +50,7 @@ trait XPropertyState extends XInterface {
     * @param PropertyName specifies the name of the property.
     * @throws UnknownPropertyException if the property does not exist.
     */
-  def setPropertyToDefault(PropertyName: String): Unit = js.native
+  def setPropertyToDefault(PropertyName: String): Unit
 }
 object XPropertyState {
   

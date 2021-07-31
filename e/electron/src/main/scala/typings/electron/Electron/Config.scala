@@ -2,26 +2,24 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Config extends StObject {
   
   /**
     * The URL associated with the PAC file.
     */
-  var pacScript: js.UndefOr[String] = js.native
+  var pacScript: js.UndefOr[String] = js.undefined
   
   /**
     * Rules indicating which URLs should bypass the proxy settings.
     */
-  var proxyBypassRules: js.UndefOr[String] = js.native
+  var proxyBypassRules: js.UndefOr[String] = js.undefined
   
   /**
     * Rules indicating which proxies to use.
     */
-  var proxyRules: js.UndefOr[String] = js.native
+  var proxyRules: js.UndefOr[String] = js.undefined
 }
 object Config {
   

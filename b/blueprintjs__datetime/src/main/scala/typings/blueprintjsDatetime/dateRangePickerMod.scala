@@ -10,7 +10,6 @@ import typings.blueprintjsDatetime.shortcutsMod.IDateRangeShortcut
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateRangePickerMod {
@@ -109,9 +108,9 @@ object dateRangePickerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDateRangePickerProps
-    extends IDatePickerBaseProps
+    extends StObject
+       with IDatePickerBaseProps
        with IProps {
     
     /**
@@ -120,7 +119,7 @@ object dateRangePickerMod {
       * If `false`, clicking a selected date will clear the selection.
       * @default false
       */
-    var allowSingleDayRange: js.UndefOr[Boolean] = js.native
+    var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The date-range boundary that the next click should modify.
@@ -128,20 +127,20 @@ object dateRangePickerMod {
       * In that case, the two boundary dates will be auto-swapped to keep them in chronological order.
       * If `undefined`, the picker will revert to its default selection behavior.
       */
-    var boundaryToModify: js.UndefOr[Boundary] = js.native
+    var boundaryToModify: js.UndefOr[Boundary] = js.undefined
     
     /**
       * Whether displayed months in the calendar are contiguous.
       * If false, each side of the calendar can move independently to non-contiguous months.
       * @default true
       */
-    var contiguousCalendarMonths: js.UndefOr[Boolean] = js.native
+    var contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial `DateRange` the calendar will display as selected.
       * This should not be set if `value` is set.
       */
-    var defaultValue: js.UndefOr[DateRange] = js.native
+    var defaultValue: js.UndefOr[DateRange] = js.undefined
     
     /**
       * Called when the user selects a day.
@@ -149,7 +148,7 @@ object dateRangePickerMod {
       * If a start date is selected but not an end date, it will pass `[selectedDate, null]`.
       * If both a start and end date are selected, it will pass `[startDate, endDate]`.
       */
-    var onChange: js.UndefOr[js.Function1[/* selectedDates */ DateRange, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* selectedDates */ DateRange, Unit]] = js.undefined
     
     /**
       * Called when the user changes the hovered date range, either from mouseenter or mouseleave.
@@ -163,18 +162,18 @@ object dateRangePickerMod {
           /* hoveredBoundary */ Boundary, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the `shortcuts` props is enabled and the user changes the shortcut.
       */
-    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.native
+    var onShortcutChange: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.undefined
     
     /**
       * The currently selected shortcut.
       * If this prop is provided, the component acts in a controlled manner.
       */
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether shortcuts to quickly select a range of dates are displayed or not.
@@ -183,19 +182,19 @@ object dateRangePickerMod {
       * If an array is provided, the custom shortcuts will be displayed.
       * @default true
       */
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.undefined
     
     /**
       * Whether to show only a single month calendar.
       * @default false
       */
-    var singleMonthOnly: js.UndefOr[Boolean] = js.native
+    var singleMonthOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The currently selected `DateRange`.
       * If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[DateRange] = js.native
+    var value: js.UndefOr[DateRange] = js.undefined
   }
   object IDateRangePickerProps {
     
@@ -281,20 +280,19 @@ object dateRangePickerMod {
     }
   }
   
-  @js.native
   trait IDateRangePickerState extends StObject {
     
-    var hoverValue: js.UndefOr[DateRange] = js.native
+    var hoverValue: js.UndefOr[DateRange] = js.undefined
     
-    var leftView: js.UndefOr[MonthAndYear] = js.native
+    var leftView: js.UndefOr[MonthAndYear] = js.undefined
     
-    var rightView: js.UndefOr[MonthAndYear] = js.native
+    var rightView: js.UndefOr[MonthAndYear] = js.undefined
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var time: js.UndefOr[DateRange] = js.native
+    var time: js.UndefOr[DateRange] = js.undefined
     
-    var value: js.UndefOr[DateRange] = js.native
+    var value: js.UndefOr[DateRange] = js.undefined
   }
   object IDateRangePickerState {
     

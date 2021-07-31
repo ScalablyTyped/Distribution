@@ -5,7 +5,6 @@ import typings.reactLatexNext.anon.PartialLatexProps
 import typings.reactLatexNext.typesMod.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object latexMod {
@@ -31,14 +30,13 @@ object latexMod {
   trait Latex
     extends Component[LatexProps, js.Object, js.Any]
   
-  @js.native
   trait LatexProps extends StObject {
     
-    var children: String = js.native
+    var children: String
     
-    var delimiters: js.UndefOr[js.Array[Delimiter]] = js.native
+    var delimiters: js.UndefOr[js.Array[Delimiter]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object LatexProps {
     

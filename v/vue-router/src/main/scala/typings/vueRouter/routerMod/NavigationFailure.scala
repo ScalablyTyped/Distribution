@@ -3,17 +3,17 @@ package typings.vueRouter.routerMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationFailure extends Error {
+trait NavigationFailure
+  extends StObject
+     with Error {
   
-  var from: Route = js.native
+  var from: Route
   
-  var to: Route = js.native
+  var to: Route
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object NavigationFailure {
   

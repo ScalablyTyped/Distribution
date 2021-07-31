@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Vpntunnels")
@@ -32,7 +31,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaVpnTunnelAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceVpntunnelsAggregatedlist): GaxiosPromise[SchemaVpnTunnelAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceVpntunnelsAggregatedlist,
@@ -69,7 +68,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpntunnelsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceVpntunnelsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -101,7 +100,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(callback: BodyResponseCallback[SchemaVpnTunnel]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnel] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(params: ParamsResourceVpntunnelsGet): GaxiosPromise[SchemaVpnTunnel] = js.native
   def get(params: ParamsResourceVpntunnelsGet, callback: BodyResponseCallback[SchemaVpnTunnel]): Unit = js.native
   def get(
@@ -134,7 +133,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpntunnelsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceVpntunnelsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -169,7 +168,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(callback: BodyResponseCallback[SchemaVpnTunnelList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVpnTunnelList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(params: ParamsResourceVpntunnelsList): GaxiosPromise[SchemaVpnTunnelList] = js.native
   def list(params: ParamsResourceVpntunnelsList, callback: BodyResponseCallback[SchemaVpnTunnelList]): Unit = js.native
   def list(
@@ -203,7 +202,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceVpntunnelsSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceVpntunnelsSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -235,7 +234,7 @@ class ResourceVpntunnels protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceVpntunnelsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceVpntunnelsTestiampermissions,

@@ -14,7 +14,6 @@ import typings.node.streamMod.Stream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,21 +45,20 @@ object mod {
   	execa('echo', ['unicorns']).stdout.pipe(process.stdout);
   	```
   	*/
+  @scala.inline
+  def apply(file: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def apply(file: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def apply(file: String, arguments: js.Array[String], options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def apply(file: String, arguments: Unit, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def apply(file: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  
   @JSImport("execa", JSImport.Namespace)
   @js.native
-  def apply(file: String): ExecaChildProcess[String] = js.native
-  @JSImport("execa", JSImport.Namespace)
-  @js.native
-  def apply(file: String, arguments: js.UndefOr[scala.Nothing], options: Options[Null | String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", JSImport.Namespace)
-  @js.native
-  def apply(file: String, arguments: js.Array[String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", JSImport.Namespace)
-  @js.native
-  def apply(file: String, arguments: js.Array[String], options: Options[Null | String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", JSImport.Namespace)
-  @js.native
-  def apply(file: String, options: Options[Null | String]): ExecaChildProcess[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Same as `execa()` except both file and arguments are specified in a single `command` string. For example, `execa('echo', ['unicorns'])` is the same as `execa.command('echo unicorns')`.
@@ -78,24 +76,20 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("execa", "command")
-  @js.native
-  def command(command: String): ExecaChildProcess[String] = js.native
-  @JSImport("execa", "command")
-  @js.native
-  def command(command: String, options: Options[Null | String]): ExecaChildProcess[String] = js.native
+  @scala.inline
+  def command(command: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def command(command: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
   
   /**
   	Same as `execa.command()` but synchronous.
   	@param command - The program/script to execute and its arguments.
   	@returns A result `Object` with `stdout` and `stderr` properties.
   	*/
-  @JSImport("execa", "commandSync")
-  @js.native
-  def commandSync(command: String): ExecaSyncReturnValue[String] = js.native
-  @JSImport("execa", "commandSync")
-  @js.native
-  def commandSync(command: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
+  @scala.inline
+  def commandSync(command: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
+  @scala.inline
+  def commandSync(command: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("commandSync")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
   
   /**
   	Execute a Node.js script as a child process.
@@ -107,27 +101,20 @@ object mod {
   	@param arguments - Arguments to pass to `scriptPath` on execution.
   	@returns A [`child_process` instance](https://nodejs.org/api/child_process.html#child_process_class_childprocess), which is enhanced to also be a `Promise` for a result `Object` with `stdout` and `stderr` properties.
   	*/
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String): ExecaChildProcess[String] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, arguments: js.UndefOr[scala.Nothing], options: NodeOptions[String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, arguments: js.UndefOr[scala.Nothing], options: Options[Null]): ExecaChildProcess[Buffer] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, arguments: js.Array[String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, arguments: js.Array[String], options: NodeOptions[String]): ExecaChildProcess[String] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, arguments: js.Array[String], options: Options[Null]): ExecaChildProcess[Buffer] = js.native
-  @JSImport("execa", "node")
-  @js.native
-  def node(scriptPath: String, options: Options[Null | String]): ExecaChildProcess[String] = js.native
+  @scala.inline
+  def node(scriptPath: String): ExecaChildProcess[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def node(scriptPath: String, arguments: js.Array[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def node(scriptPath: String, arguments: js.Array[String], options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def node(scriptPath: String, arguments: js.Array[String], options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
+  @scala.inline
+  def node(scriptPath: String, arguments: Unit, options: NodeOptions[String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
+  @scala.inline
+  def node(scriptPath: String, arguments: Unit, options: Options[Null]): ExecaChildProcess[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[Buffer]]
+  @scala.inline
+  def node(scriptPath: String, options: Options[Null | String]): ExecaChildProcess[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaChildProcess[String]]
   
   /**
   	Execute a file synchronously.
@@ -136,42 +123,36 @@ object mod {
   	@param arguments - Arguments to pass to `file` on execution.
   	@returns A result `Object` with `stdout` and `stderr` properties.
   	*/
-  @JSImport("execa", "sync")
-  @js.native
-  def sync(file: String): ExecaSyncReturnValue[String] = js.native
-  @JSImport("execa", "sync")
-  @js.native
-  def sync(file: String, arguments: js.UndefOr[scala.Nothing], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
-  @JSImport("execa", "sync")
-  @js.native
-  def sync(file: String, arguments: js.Array[String]): ExecaSyncReturnValue[String] = js.native
-  @JSImport("execa", "sync")
-  @js.native
-  def sync(file: String, arguments: js.Array[String], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
-  @JSImport("execa", "sync")
-  @js.native
-  def sync(file: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = js.native
+  @scala.inline
+  def sync(file: String): ExecaSyncReturnValue[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any]).asInstanceOf[ExecaSyncReturnValue[String]]
+  @scala.inline
+  def sync(file: String, arguments: js.Array[String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  @scala.inline
+  def sync(file: String, arguments: js.Array[String], options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  @scala.inline
+  def sync(file: String, arguments: Unit, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
+  @scala.inline
+  def sync(file: String, options: SyncOptions[Null | String]): ExecaSyncReturnValue[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ExecaSyncReturnValue[String]]
   
-  @js.native
   trait CommonOptions[EncodingType] extends StObject {
     
     /**
     		Add an `.all` property on the promise and the resolved value. The property contains the output of the process with `stdout` and `stderr` interleaved.
     		@default false
     		*/
-    val all: js.UndefOr[Boolean] = js.native
+    val all: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Explicitly set the value of `argv[0]` sent to the child process. This will be set to `command` or `file` if not specified.
     		*/
-    val argv0: js.UndefOr[String] = js.native
+    val argv0: js.UndefOr[String] = js.undefined
     
     /**
     		Buffer the output from the spawned process. When set to `false`, you must read the output of `stdout` and `stderr` (or `all` if the `all` option is `true`). Otherwise the returned promise will not be resolved/rejected.
     		If the spawned process fails, `error.stdout`, `error.stderr`, and `error.all` will contain the buffered data.
     		@default true
     		*/
-    val buffer: js.UndefOr[Boolean] = js.native
+    val buffer: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Kill the spawned process when the parent process exits unless either:
@@ -179,31 +160,31 @@ object mod {
     			- the parent process is terminated abruptly, for example, with `SIGKILL` as opposed to `SIGTERM` or a normal exit
     		@default true
     		*/
-    val cleanup: js.UndefOr[Boolean] = js.native
+    val cleanup: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Current working directory of the child process.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
     
     /**
     		Prepare child to run independently of its parent process. Specific behavior [depends on the platform](https://nodejs.org/api/child_process.html#child_process_options_detached).
     		@default false
     		*/
-    val detached: js.UndefOr[Boolean] = js.native
+    val detached: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Specify the character encoding used to decode the `stdout` and `stderr` output. If set to `null`, then `stdout` and `stderr` will be a `Buffer` instead of a string.
     		@default 'utf8'
     		*/
-    val encoding: js.UndefOr[EncodingType] = js.native
+    val encoding: js.UndefOr[EncodingType] = js.undefined
     
     /**
     		Environment key-value pairs. Extends automatically from `process.env`. Set `extendEnv` to `false` if you don't want this.
     		@default process.env
     		*/
-    val env: js.UndefOr[ProcessEnv] = js.native
+    val env: js.UndefOr[ProcessEnv] = js.undefined
     
     /**
     		Path to the Node.js executable to use in child processes.
@@ -212,49 +193,49 @@ object mod {
     		For example, this can be used together with [`get-node`](https://github.com/ehmicky/get-node) to run a specific Node.js version in a child process.
     		@default process.execPath
     		*/
-    val execPath: js.UndefOr[String] = js.native
+    val execPath: js.UndefOr[String] = js.undefined
     
     /**
     		Set to `false` if you don't want to extend the environment variables when providing the `env` property.
     		@default true
     		*/
-    val extendEnv: js.UndefOr[Boolean] = js.native
+    val extendEnv: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Sets the group identity of the process.
     		*/
-    val gid: js.UndefOr[Double] = js.native
+    val gid: js.UndefOr[Double] = js.undefined
     
     /**
     		Signal value to be used when the spawned process will be killed.
     		@default 'SIGTERM'
     		*/
-    val killSignal: js.UndefOr[String | Double] = js.native
+    val killSignal: js.UndefOr[String | Double] = js.undefined
     
     /**
     		Preferred path to find locally installed binaries in (use with `preferLocal`).
     		@default process.cwd()
     		*/
-    val localDir: js.UndefOr[String] = js.native
+    val localDir: js.UndefOr[String] = js.undefined
     
     /**
     		Largest amount of data in bytes allowed on `stdout` or `stderr`. Default: 100 MB.
     		@default 100_000_000
     		*/
-    val maxBuffer: js.UndefOr[Double] = js.native
+    val maxBuffer: js.UndefOr[Double] = js.undefined
     
     /**
     		Prefer locally installed binaries when looking for a binary to execute.
     		If you `$ npm install foo`, you can then `execa('foo')`.
     		@default false
     		*/
-    val preferLocal: js.UndefOr[Boolean] = js.native
+    val preferLocal: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Setting this to `false` resolves the promise with the error instead of rejecting it.
     		@default true
     		*/
-    val reject: js.UndefOr[Boolean] = js.native
+    val reject: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Specify the kind of serialization used for sending messages between processes when using the `stdio: 'ipc'` option or `execa.node()`:
@@ -264,7 +245,7 @@ object mod {
     		[More info.](https://nodejs.org/api/child_process.html#child_process_advanced_serialization)
     		@default 'json'
     		*/
-    val serialization: js.UndefOr[json | advanced] = js.native
+    val serialization: js.UndefOr[json | advanced] = js.undefined
     
     /**
     		If `true`, runs `command` inside of a shell. Uses `/bin/sh` on UNIX and `cmd.exe` on Windows. A different shell can be specified as a string. The shell should understand the `-c` switch on UNIX or `/d /s /c` on Windows.
@@ -274,60 +255,60 @@ object mod {
     		- unsafe, potentially allowing command injection.
     		@default false
     		*/
-    val shell: js.UndefOr[Boolean | String] = js.native
+    val shell: js.UndefOr[Boolean | String] = js.undefined
     
     /**
     		Same options as [`stdio`](https://nodejs.org/dist/latest-v6.x/docs/api/child_process.html#child_process_options_stdio).
     		@default 'pipe'
     		*/
-    val stderr: js.UndefOr[StdioOption] = js.native
+    val stderr: js.UndefOr[StdioOption] = js.undefined
     
     /**
     		Same options as [`stdio`](https://nodejs.org/dist/latest-v6.x/docs/api/child_process.html#child_process_options_stdio).
     		@default 'pipe'
     		*/
-    val stdin: js.UndefOr[StdioOption] = js.native
+    val stdin: js.UndefOr[StdioOption] = js.undefined
     
     /**
     		Child's [stdio](https://nodejs.org/api/child_process.html#child_process_options_stdio) configuration.
     		@default 'pipe'
     		*/
-    val stdio: js.UndefOr[pipe | ignore | inherit | js.Array[StdioOption]] = js.native
+    val stdio: js.UndefOr[pipe | ignore | inherit | js.Array[StdioOption]] = js.undefined
     
     /**
     		Same options as [`stdio`](https://nodejs.org/dist/latest-v6.x/docs/api/child_process.html#child_process_options_stdio).
     		@default 'pipe'
     		*/
-    val stdout: js.UndefOr[StdioOption] = js.native
+    val stdout: js.UndefOr[StdioOption] = js.undefined
     
     /**
     		Strip the final [newline character](https://en.wikipedia.org/wiki/Newline) from the output.
     		@default true
     		*/
-    val stripFinalNewline: js.UndefOr[Boolean] = js.native
+    val stripFinalNewline: js.UndefOr[Boolean] = js.undefined
     
     /**
     		If `timeout` is greater than `0`, the parent will send the signal identified by the `killSignal` property (the default is `SIGTERM`) if the child runs longer than `timeout` milliseconds.
     		@default 0
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
     
     /**
     		Sets the user identity of the process.
     		*/
-    val uid: js.UndefOr[Double] = js.native
+    val uid: js.UndefOr[Double] = js.undefined
     
     /**
     		On Windows, do not create a new console window. Please note this also prevents `CTRL-C` [from working](https://github.com/nodejs/node/issues/29837) on Windows.
     		@default true
     		*/
-    val windowsHide: js.UndefOr[Boolean] = js.native
+    val windowsHide: js.UndefOr[Boolean] = js.undefined
     
     /**
     		If `true`, no quoting or escaping of arguments is done on Windows. Ignored on other platforms. This is set to `true` automatically when the `shell` option is `true`.
     		@default false
     		*/
-    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+    val windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
   }
   object CommonOptions {
     
@@ -338,7 +319,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions[_], EncodingType] (val x: Self with CommonOptions[EncodingType]) extends AnyVal {
+    implicit class CommonOptionsMutableBuilder[Self <: CommonOptions[?], EncodingType] (val x: Self & CommonOptions[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
@@ -507,7 +488,41 @@ object mod {
     }
   }
   
-  type ExecaChildProcess[StdoutErrorType] = ChildProcess with ExecaChildPromise[StdoutErrorType] with js.Promise[ExecaReturnValue[StdoutErrorType]]
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - js.Thenable because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - js.Promise because Inheritance from two classes. Inlined `then`, `then`, executor, `catch` */ @js.native
+  trait ExecaChildProcess[StdoutErrorType]
+    extends ChildProcess
+       with ExecaChildPromise[StdoutErrorType] {
+    
+    def `catch`[B](onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] = js.native
+    
+    val executor: js.Function2[
+        js.Function1[
+          ExecaReturnValue[StdoutErrorType] | js.Thenable[ExecaReturnValue[StdoutErrorType]], 
+          ?
+        ], 
+        js.Function1[Any, ?], 
+        ?
+      ] = js.native
+    
+    /* InferMemberOverrides */
+    override def kill(): Boolean & Unit = js.native
+    
+    def `then`[B](
+      onFulfilled: js.Function1[ExecaReturnValue[StdoutErrorType], B | js.Thenable[B]],
+      onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+    ): js.Promise[B] = js.native
+    def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] = js.native
+  }
   
   @js.native
   trait ExecaChildPromise[StdoutErrorType] extends StObject {
@@ -534,13 +549,14 @@ object mod {
     		Same as the original [`child_process#kill()`](https://nodejs.org/api/child_process.html#child_process_subprocess_kill_signal), except if `signal` is `SIGTERM` (the default value) and the child process is not terminated after 5 seconds, force it by sending `SIGKILL`.
     		*/
     def kill(): Unit = js.native
-    def kill(signal: js.UndefOr[scala.Nothing], options: KillOptions): Unit = js.native
     def kill(signal: String): Unit = js.native
     def kill(signal: String, options: KillOptions): Unit = js.native
+    def kill(signal: Unit, options: KillOptions): Unit = js.native
   }
   
-  @js.native
-  trait ExecaError[StdoutErrorType] extends ExecaSyncError[StdoutErrorType] {
+  trait ExecaError[StdoutErrorType]
+    extends StObject
+       with ExecaSyncError[StdoutErrorType] {
     
     /**
     		The output of the process with `stdout` and `stderr` interleaved.
@@ -548,12 +564,12 @@ object mod {
     		- the `all` option is `false` (default value)
     		- `execa.sync()` was used
     		*/
-    var all: js.UndefOr[StdoutErrorType] = js.native
+    var all: js.UndefOr[StdoutErrorType] = js.undefined
     
     /**
     		Whether the process was canceled.
     		*/
-    var isCanceled: Boolean = js.native
+    var isCanceled: Boolean
   }
   object ExecaError {
     
@@ -576,7 +592,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExecaErrorMutableBuilder[Self <: ExecaError[_], StdoutErrorType] (val x: Self with ExecaError[StdoutErrorType]) extends AnyVal {
+    implicit class ExecaErrorMutableBuilder[Self <: ExecaError[?], StdoutErrorType] (val x: Self & ExecaError[StdoutErrorType]) extends AnyVal {
       
       @scala.inline
       def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
@@ -589,55 +605,54 @@ object mod {
     }
   }
   
-  @js.native
   trait ExecaReturnBase[StdoutStderrType] extends StObject {
     
     /**
     		The file and arguments that were run.
     		*/
-    var command: String = js.native
+    var command: String
     
     /**
     		The numeric exit code of the process that was run.
     		*/
-    var exitCode: Double = js.native
+    var exitCode: Double
     
     /**
     		Whether the process failed to run.
     		*/
-    var failed: Boolean = js.native
+    var failed: Boolean
     
     /**
     		Whether the process was killed.
     		*/
-    var killed: Boolean = js.native
+    var killed: Boolean
     
     /**
     		The name of the signal that was used to terminate the process. For example, `SIGFPE`.
     		If a signal terminated the process, this property is defined and included in the error message. Otherwise it is `undefined`.
     		*/
-    var signal: js.UndefOr[String] = js.native
+    var signal: js.UndefOr[String] = js.undefined
     
     /**
     		A human-friendly description of the signal that was used to terminate the process. For example, `Floating point arithmetic error`.
     		If a signal terminated the process, this property is defined and included in the error message. Otherwise it is `undefined`. It is also `undefined` when the signal is very uncommon which should seldomly happen.
     		*/
-    var signalDescription: js.UndefOr[String] = js.native
+    var signalDescription: js.UndefOr[String] = js.undefined
     
     /**
     		The output of the process on stderr.
     		*/
-    var stderr: StdoutStderrType = js.native
+    var stderr: StdoutStderrType
     
     /**
     		The output of the process on stdout.
     		*/
-    var stdout: StdoutStderrType = js.native
+    var stdout: StdoutStderrType
     
     /**
     		Whether the process timed out.
     		*/
-    var timedOut: Boolean = js.native
+    var timedOut: Boolean
   }
   object ExecaReturnBase {
     
@@ -656,7 +671,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExecaReturnBaseMutableBuilder[Self <: ExecaReturnBase[_], StdoutStderrType] (val x: Self with ExecaReturnBase[StdoutStderrType]) extends AnyVal {
+    implicit class ExecaReturnBaseMutableBuilder[Self <: ExecaReturnBase[?], StdoutStderrType] (val x: Self & ExecaReturnBase[StdoutStderrType]) extends AnyVal {
       
       @scala.inline
       def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
@@ -702,8 +717,9 @@ object mod {
   	- being canceled
   	- there's not enough memory or there are already too many child processes
   	*/
-  @js.native
-  trait ExecaReturnValue[StdoutErrorType] extends ExecaReturnBase[StdoutErrorType] {
+  trait ExecaReturnValue[StdoutErrorType]
+    extends StObject
+       with ExecaReturnBase[StdoutErrorType] {
     
     /**
     		The output of the process with `stdout` and `stderr` interleaved.
@@ -711,12 +727,12 @@ object mod {
     		- the `all` option is `false` (default value)
     		- `execa.sync()` was used
     		*/
-    var all: js.UndefOr[StdoutErrorType] = js.native
+    var all: js.UndefOr[StdoutErrorType] = js.undefined
     
     /**
     		Whether the process was canceled.
     		*/
-    var isCanceled: Boolean = js.native
+    var isCanceled: Boolean
   }
   object ExecaReturnValue {
     
@@ -736,7 +752,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExecaReturnValueMutableBuilder[Self <: ExecaReturnValue[_], StdoutErrorType] (val x: Self with ExecaReturnValue[StdoutErrorType]) extends AnyVal {
+    implicit class ExecaReturnValueMutableBuilder[Self <: ExecaReturnValue[?], StdoutErrorType] (val x: Self & ExecaReturnValue[StdoutErrorType]) extends AnyVal {
       
       @scala.inline
       def setAll(value: StdoutErrorType): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
@@ -749,21 +765,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ExecaSyncError[StdoutErrorType]
-    extends Error
+    extends StObject
+       with Error
        with ExecaReturnBase[StdoutErrorType] {
     
     /**
     		Original error message. This is the same as the `message` property except it includes neither the child process stdout/stderr nor some additional information added by Execa.
     		This is `undefined` unless the child process exited due to an `error` event or a timeout.
     		*/
-    var originalMessage: js.UndefOr[String] = js.native
+    var originalMessage: js.UndefOr[String] = js.undefined
     
     /**
     		This is the same as the `message` property except it does not include the child process stdout/stderr.
     		*/
-    var shortMessage: String = js.native
+    var shortMessage: String
   }
   object ExecaSyncError {
     
@@ -785,7 +801,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExecaSyncErrorMutableBuilder[Self <: ExecaSyncError[_], StdoutErrorType] (val x: Self with ExecaSyncError[StdoutErrorType]) extends AnyVal {
+    implicit class ExecaSyncErrorMutableBuilder[Self <: ExecaSyncError[?], StdoutErrorType] (val x: Self & ExecaSyncError[StdoutErrorType]) extends AnyVal {
       
       @scala.inline
       def setOriginalMessage(value: String): Self = StObject.set(x, "originalMessage", value.asInstanceOf[js.Any])
@@ -800,7 +816,6 @@ object mod {
   
   type ExecaSyncReturnValue[StdoutErrorType] = ExecaReturnBase[StdoutErrorType]
   
-  @js.native
   trait KillOptions extends StObject {
     
     /**
@@ -808,7 +823,7 @@ object mod {
     		Can be disabled with `false`.
     		@default 5000
     		*/
-    var forceKillAfterTimeout: js.UndefOr[Double | `false`] = js.native
+    var forceKillAfterTimeout: js.UndefOr[Double | `false`] = js.undefined
   }
   object KillOptions {
     
@@ -829,20 +844,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait NodeOptions[EncodingType] extends Options[EncodingType] {
+  trait NodeOptions[EncodingType]
+    extends StObject
+       with Options[EncodingType] {
     
     /**
     		List of [CLI options](https://nodejs.org/api/cli.html#cli_options) passed to the Node.js executable.
     		@default process.execArgv
     		*/
-    val nodeOptions: js.UndefOr[js.Array[String]] = js.native
+    val nodeOptions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
     		The Node.js executable to use.
     		@default process.execPath
     		*/
-    val nodePath: js.UndefOr[String] = js.native
+    val nodePath: js.UndefOr[String] = js.undefined
   }
   object NodeOptions {
     
@@ -853,7 +869,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[_], EncodingType] (val x: Self with NodeOptions[EncodingType]) extends AnyVal {
+    implicit class NodeOptionsMutableBuilder[Self <: NodeOptions[?], EncodingType] (val x: Self & NodeOptions[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setNodeOptions(value: js.Array[String]): Self = StObject.set(x, "nodeOptions", value.asInstanceOf[js.Any])
@@ -872,13 +888,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options[EncodingType] extends CommonOptions[EncodingType] {
+  trait Options[EncodingType]
+    extends StObject
+       with CommonOptions[EncodingType] {
     
     /**
     		Write some input to the `stdin` of your binary.
     		*/
-    val input: js.UndefOr[String | Buffer | Readable] = js.native
+    val input: js.UndefOr[String | Buffer | Readable] = js.undefined
   }
   object Options {
     
@@ -889,7 +906,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], EncodingType] (val x: Self with Options[EncodingType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], EncodingType] (val x: Self & Options[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setInput(value: String | Buffer | Readable): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
@@ -906,17 +923,18 @@ object mod {
     - typings.execa.execaStrings.inherit
     - typings.node.streamMod.Stream
     - scala.Double
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type StdioOption = js.UndefOr[_StdioOption | Stream | Double]
   
-  @js.native
-  trait SyncOptions[EncodingType] extends CommonOptions[EncodingType] {
+  trait SyncOptions[EncodingType]
+    extends StObject
+       with CommonOptions[EncodingType] {
     
     /**
     		Write some input to the `stdin` of your binary.
     		*/
-    val input: js.UndefOr[String | Buffer] = js.native
+    val input: js.UndefOr[String | Buffer] = js.undefined
   }
   object SyncOptions {
     
@@ -927,7 +945,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SyncOptionsMutableBuilder[Self <: SyncOptions[_], EncodingType] (val x: Self with SyncOptions[EncodingType]) extends AnyVal {
+    implicit class SyncOptionsMutableBuilder[Self <: SyncOptions[?], EncodingType] (val x: Self & SyncOptions[EncodingType]) extends AnyVal {
       
       @scala.inline
       def setInput(value: String | Buffer): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])

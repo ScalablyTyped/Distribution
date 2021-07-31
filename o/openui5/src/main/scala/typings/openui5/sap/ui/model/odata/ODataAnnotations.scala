@@ -4,11 +4,12 @@ import typings.jquery.JQueryPromise
 import typings.openui5.sap.ui.base.EventProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ODataAnnotations extends EventProvider {
+trait ODataAnnotations
+  extends StObject
+     with EventProvider {
   
   /**
     * Adds either one URL or an array of URLs to be loaded and parsed. The result will be merged into the
@@ -18,8 +19,8 @@ trait ODataAnnotations extends EventProvider {
     *        least one failed to load. The argument is an object containing the annotations object,
     * success (an array        of sucessfully loaded URLs), fail (an array ob of failed URLs).
     */
-  def addUrl(vUrl: String): JQueryPromise[_] = js.native
-  def addUrl(vUrl: js.Array[String]): JQueryPromise[_] = js.native
+  def addUrl(vUrl: String): JQueryPromise[js.Any] = js.native
+  def addUrl(vUrl: js.Array[String]): JQueryPromise[js.Any] = js.native
   
   /**
     * Attach event-handler <code>fnFunction</code> to the 'failed' event of this

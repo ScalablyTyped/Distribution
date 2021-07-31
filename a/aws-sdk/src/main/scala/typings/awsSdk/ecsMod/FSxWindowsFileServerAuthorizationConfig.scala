@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FSxWindowsFileServerAuthorizationConfig extends StObject {
   
   /**
     * The authorization credential option to use. The authorization credential options can be provided using either the AWS Secrets Manager ARN or the AWS Systems Manager ARN. The ARNs refer to the stored credentials.  options:     ARN of an AWS Secrets Manager secret.    ARN of an AWS Systems Manager parameter.  
     */
-  var credentialsParameter: String = js.native
+  var credentialsParameter: String
   
   /**
     * A fully qualified domain name hosted by an AWS Directory Service Managed Microsoft AD (Active Directory) or self-hosted EC2 AD.
     */
-  var domain: String = js.native
+  var domain: String
 }
 object FSxWindowsFileServerAuthorizationConfig {
   

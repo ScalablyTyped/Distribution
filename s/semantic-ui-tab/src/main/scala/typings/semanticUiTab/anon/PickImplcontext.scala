@@ -4,14 +4,12 @@ import typings.semanticUiTab.JQuery
 import typings.semanticUiTab.semanticUiTabBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'context'> */
-@js.native
 trait PickImplcontext extends StObject {
   
-  var context: `false` | String | JQuery = js.native
+  var context: `false` | String | JQuery
 }
 object PickImplcontext {
   

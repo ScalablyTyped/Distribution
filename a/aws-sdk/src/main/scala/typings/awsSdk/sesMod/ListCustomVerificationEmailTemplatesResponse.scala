@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCustomVerificationEmailTemplatesResponse extends StObject {
   
   /**
     * A list of the custom verification email templates that exist in your account.
     */
-  var CustomVerificationEmailTemplates: js.UndefOr[typings.awsSdk.sesMod.CustomVerificationEmailTemplates] = js.native
+  var CustomVerificationEmailTemplates: js.UndefOr[typings.awsSdk.sesMod.CustomVerificationEmailTemplates] = js.undefined
   
   /**
     * A token indicating that there are additional custom verification email templates available to be listed. Pass this token to a subsequent call to ListTemplates to retrieve the next 50 custom verification email templates.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.undefined
 }
 object ListCustomVerificationEmailTemplatesResponse {
   

@@ -3,7 +3,6 @@ package typings.winjs.global.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
   **/
 class TimePicker ()
-  extends typings.winjs.WinJS.UI.TimePicker {
+  extends StObject
+     with typings.winjs.WinJS.UI.TimePicker {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
 }
 object TimePicker {
@@ -34,12 +34,10 @@ object TimePicker {
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   /* static member */
-  @JSGlobal("WinJS.UI.TimePicker.getInformation")
-  @js.native
-  def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = js.native
-  @JSGlobal("WinJS.UI.TimePicker.getInformation")
-  @js.native
-  def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = js.native
+  @scala.inline
+  def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Indicates that the object is compatibile with declarative processing.

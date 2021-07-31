@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   * @see WebDAVDocumentContent
   */
-@js.native
-trait PostCommandArgument2 extends PostCommandArgument {
+trait PostCommandArgument2
+  extends StObject
+     with PostCommandArgument {
   
   /** The media type (mime type) for the data to post. */
-  var MediaType: String = js.native
+  var MediaType: String
   
   /** The URL of the referrer. */
-  var Referer: String = js.native
+  var Referer: String
 }
 object PostCommandArgument2 {
   

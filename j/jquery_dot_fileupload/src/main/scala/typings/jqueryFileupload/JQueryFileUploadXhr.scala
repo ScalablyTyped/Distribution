@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryFileUploadXhr extends StObject {
   
-  var errorThrown: js.Any = js.native
+  var errorThrown: js.Any
   
-  var headers: StringDictionary[js.Any] = js.native
+  var headers: StringDictionary[js.Any]
   
-  var jqXHR: JQueryXHR = js.native
+  var jqXHR: JQueryXHR
   
-  var result: js.Any = js.native
+  var result: js.Any
   
-  var textStatus: String = js.native
+  var textStatus: String
 }
 object JQueryFileUploadXhr {
   

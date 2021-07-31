@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,18 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [direction] - The direction of the ray. The constructor takes a reference of this parameter.
   * Defaults to a direction down the world negative Z axis (0, 0, -1).
   */
-@js.native
 trait Ray extends StObject {
   
   /**
     * The direction of the ray.
     */
-  var direction: Vec3 = js.native
+  var direction: Vec3
   
   /**
     * The starting point of the ray.
     */
-  var origin: Vec3 = js.native
+  var origin: Vec3
   
   /**
     * Sets origin and direction to the supplied vector values.
@@ -37,7 +35,7 @@ trait Ray extends StObject {
     * @param direction - The direction of the ray.
     * @returns Self for chaining.
     */
-  def set(origin: Vec3, direction: Vec3): Ray = js.native
+  def set(origin: Vec3, direction: Vec3): Ray
 }
 object Ray {
   

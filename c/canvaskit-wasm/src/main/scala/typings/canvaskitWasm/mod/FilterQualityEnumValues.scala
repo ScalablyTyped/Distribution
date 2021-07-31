@@ -2,19 +2,19 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterQualityEnumValues extends EmbindEnum {
+trait FilterQualityEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var High: FilterQuality = js.native
+  var High: FilterQuality
   
-  var Low: FilterQuality = js.native
+  var Low: FilterQuality
   
-  var Medium: FilterQuality = js.native
+  var Medium: FilterQuality
   
-  var None: FilterQuality = js.native
+  var None: FilterQuality
 }
 object FilterQualityEnumValues {
   

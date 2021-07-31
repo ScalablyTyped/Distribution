@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachToIndexRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the directory where the object and index exist.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * A reference to the index that you are attaching the object to.
     */
-  var IndexReference: ObjectReference = js.native
+  var IndexReference: ObjectReference
   
   /**
     * A reference to the object that you are attaching to the index.
     */
-  var TargetReference: ObjectReference = js.native
+  var TargetReference: ObjectReference
 }
 object AttachToIndexRequest {
   

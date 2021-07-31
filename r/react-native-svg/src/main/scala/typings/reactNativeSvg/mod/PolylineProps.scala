@@ -2,15 +2,15 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolylineProps extends CommonPathProps {
+trait PolylineProps
+  extends StObject
+     with CommonPathProps {
   
-  var opacity: js.UndefOr[NumberProp] = js.native
+  var opacity: js.UndefOr[NumberProp] = js.undefined
   
-  var points: js.UndefOr[String | js.Array[NumberProp]] = js.native
+  var points: js.UndefOr[String | js.Array[NumberProp]] = js.undefined
 }
 object PolylineProps {
   

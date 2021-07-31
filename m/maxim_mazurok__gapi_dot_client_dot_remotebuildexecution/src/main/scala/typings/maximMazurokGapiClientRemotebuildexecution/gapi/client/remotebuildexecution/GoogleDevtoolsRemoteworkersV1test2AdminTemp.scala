@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2AdminTemp extends StObject {
   
   /** The argument to the admin action; see `Command` for semantics. */
-  var arg: js.UndefOr[String] = js.native
+  var arg: js.UndefOr[String] = js.undefined
   
   /** The admin action; see `Command` for legal values. */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2AdminTemp {
   

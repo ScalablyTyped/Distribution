@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebSocketCreatedEvent extends StObject {
   
   /**
     * Request initiator.
     */
-  var initiator: js.UndefOr[Initiator] = js.native
+  var initiator: js.UndefOr[Initiator] = js.undefined
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * WebSocket request URL.
     */
-  var url: String = js.native
+  var url: String
 }
 object WebSocketCreatedEvent {
   

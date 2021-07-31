@@ -11,10 +11,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.rounded
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetParametersProperties extends StObject {
   
   /**
@@ -22,35 +20,35 @@ trait OffsetParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html#bevelRatio)
     */
-  var bevelRatio: js.UndefOr[Double] = js.native
+  var bevelRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * The array of geometries to be offset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html#geometries)
     */
-  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.native
+  var geometries: js.UndefOr[js.Array[GeometryProperties]] = js.undefined
   
   /**
     * Specifies the planar distance for constructing an offset based on the input geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html#offsetDistance)
     */
-  var offsetDistance: js.UndefOr[Double] = js.native
+  var offsetDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * Options that determine how the ends intersect.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html#offsetHow)
     */
-  var offsetHow: js.UndefOr[bevelled | mitered | rounded] = js.native
+  var offsetHow: js.UndefOr[bevelled | mitered | rounded] = js.undefined
   
   /**
     * The offset distance unit.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-OffsetParameters.html#offsetUnit)
     */
-  var offsetUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.native
+  var offsetUnit: js.UndefOr[feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards] = js.undefined
 }
 object OffsetParametersProperties {
   

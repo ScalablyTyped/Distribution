@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAggregateIdFormatResult extends StObject {
   
   /**
     * Information about each resource's ID format.
     */
-  var Statuses: js.UndefOr[IdFormatList] = js.native
+  var Statuses: js.UndefOr[IdFormatList] = js.undefined
   
   /**
     * Indicates whether all resource types in the Region are configured to use longer IDs. This value is only true if all users are configured to use longer IDs for all resources types in the Region.
     */
-  var UseLongIdsAggregated: js.UndefOr[Boolean] = js.native
+  var UseLongIdsAggregated: js.UndefOr[Boolean] = js.undefined
 }
 object DescribeAggregateIdFormatResult {
   

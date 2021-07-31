@@ -2,15 +2,13 @@ package typings.reactSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsFocused extends StObject {
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
   
-  var size: Double = js.native
+  var size: Double
 }
 object IsFocused {
   

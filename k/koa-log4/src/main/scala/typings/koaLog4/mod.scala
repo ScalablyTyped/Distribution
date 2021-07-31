@@ -13,65 +13,59 @@ import typings.log4js.mod.LoggingEvent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("koa-log4", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("koa-log4", "Logger")
   @js.native
   class Logger ()
     extends typings.log4js.mod.Logger
   
-  @JSImport("koa-log4", "addLayout")
-  @js.native
-  def addLayout(name: String, config: js.Function1[/* a */ js.Any, js.Function1[/* logEvent */ LoggingEvent, _]]): Unit = js.native
+  @scala.inline
+  def addLayout(
+    name: String,
+    config: js.Function1[/* a */ js.Any, js.Function1[/* logEvent */ LoggingEvent, js.Any]]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addLayout")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("koa-log4", "configure")
-  @js.native
-  def configure(config: Configuration): Log4js = js.native
-  @JSImport("koa-log4", "configure")
-  @js.native
-  def configure(filename: String): Log4js = js.native
+  @scala.inline
+  def configure(config: Configuration): Log4js = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Log4js]
+  @scala.inline
+  def configure(filename: String): Log4js = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(filename.asInstanceOf[js.Any]).asInstanceOf[Log4js]
   
-  @JSImport("koa-log4", "connectLogger")
-  @js.native
-  def connectLogger(logger: typings.log4js.mod.Logger, options: Context): js.Any = js.native
+  @scala.inline
+  def connectLogger(logger: typings.log4js.mod.Logger, options: Context): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("connectLogger")(logger.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("koa-log4", "getLogger")
-  @js.native
-  def getLogger(): typings.log4js.mod.Logger = js.native
-  @JSImport("koa-log4", "getLogger")
-  @js.native
-  def getLogger(category: String): typings.log4js.mod.Logger = js.native
+  @scala.inline
+  def getLogger(): typings.log4js.mod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[typings.log4js.mod.Logger]
+  @scala.inline
+  def getLogger(category: String): typings.log4js.mod.Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(category.asInstanceOf[js.Any]).asInstanceOf[typings.log4js.mod.Logger]
   
-  @JSImport("koa-log4", "koaLogger")
-  @js.native
-  def koaLogger(logger4js: typings.log4js.mod.Logger): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-log4", "koaLogger")
-  @js.native
-  def koaLogger(logger4js: typings.log4js.mod.Logger, optionsOrFormat: String): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-log4", "koaLogger")
-  @js.native
-  def koaLogger(logger4js: typings.log4js.mod.Logger, optionsOrFormat: Options): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def koaLogger(logger4js: typings.log4js.mod.Logger): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("koaLogger")(logger4js.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def koaLogger(logger4js: typings.log4js.mod.Logger, optionsOrFormat: String): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("koaLogger")(logger4js.asInstanceOf[js.Any], optionsOrFormat.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def koaLogger(logger4js: typings.log4js.mod.Logger, optionsOrFormat: Options): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("koaLogger")(logger4js.asInstanceOf[js.Any], optionsOrFormat.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-log4", "levels")
   @js.native
   val levels: Levels_ = js.native
   
-  @JSImport("koa-log4", "shutdown")
-  @js.native
-  def shutdown(): Unit | Null = js.native
-  @JSImport("koa-log4", "shutdown")
-  @js.native
-  def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = js.native
+  @scala.inline
+  def shutdown(): Unit | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit | Null]
+  @scala.inline
+  def shutdown(cb: js.Function1[/* error */ Error, Unit]): Unit | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit | Null]
   
-  @js.native
   trait Options extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[Level | auto] = js.native
+    var level: js.UndefOr[Level | auto] = js.undefined
   }
   object Options {
     

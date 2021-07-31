@@ -2,20 +2,18 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the PullBatch method.
   */
-@js.native
 trait SchemaPullBatchRequest extends StObject {
   
   /**
     * The maximum number of PubsubEvents returned for this request. The Pub/Sub
     * system may return fewer than the number of events specified.
     */
-  var maxEvents: js.UndefOr[Double] = js.native
+  var maxEvents: js.UndefOr[Double] = js.undefined
   
   /**
     * If this is specified as true the system will respond immediately even if
@@ -24,12 +22,12 @@ trait SchemaPullBatchRequest extends StObject {
     * than returning no messages. The client may cancel the request if it does
     * not wish to wait any longer for the response.
     */
-  var returnImmediately: js.UndefOr[Boolean] = js.native
+  var returnImmediately: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The subscription from which messages should be pulled.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
 }
 object SchemaPullBatchRequest {
   

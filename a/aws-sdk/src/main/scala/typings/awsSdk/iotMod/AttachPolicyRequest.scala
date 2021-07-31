@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachPolicyRequest extends StObject {
   
   /**
     * The name of the policy to attach.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
   
   /**
     * The identity to which the policy is attached.
     */
-  var target: PolicyTarget = js.native
+  var target: PolicyTarget
 }
 object AttachPolicyRequest {
   

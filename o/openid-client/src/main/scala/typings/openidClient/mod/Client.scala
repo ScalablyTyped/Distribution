@@ -9,16 +9,16 @@ import typings.openidClient.anon.Body
 import typings.openidClient.anon.DPoP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openid-client", "Client")
 @js.native
 class Client protected ()
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   def this(metadata: ClientMetadata) = this()
   def this(metadata: ClientMetadata, jwks: JSONWebKeySet) = this()
-  def this(metadata: ClientMetadata, jwks: js.UndefOr[scala.Nothing], options: ClientOptions) = this()
+  def this(metadata: ClientMetadata, jwks: Unit, options: ClientOptions) = this()
   def this(metadata: ClientMetadata, jwks: JSONWebKeySet, options: ClientOptions) = this()
   
   /**
@@ -28,24 +28,6 @@ class Client protected ()
   def authorizationUrl(): String = js.native
   def authorizationUrl(parameters: AuthorizationParameters): String = js.native
   
-  def callback(redirectUri: js.UndefOr[scala.Nothing], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: js.UndefOr[scala.Nothing],
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OpenIDCallbackChecks
-  ): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OpenIDCallbackChecks,
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
   /**
     * Performs the callback for Authorization Server's authorization response.
     * @param redirectUri redirect_uri used for the authorization request
@@ -54,15 +36,19 @@ class Client protected ()
     * @param extras add extra parameters to the Token Endpoint Request and/or Client Authentication JWT Assertion
     */
   def callback(redirectUri: String, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def callback(
-    redirectUri: String,
-    parameters: CallbackParamsType,
-    checks: js.UndefOr[scala.Nothing],
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: String, parameters: CallbackParamsType, checks: Unit, extras: CallbackExtras): js.Promise[TokenSet] = js.native
   def callback(redirectUri: String, parameters: CallbackParamsType, checks: OpenIDCallbackChecks): js.Promise[TokenSet] = js.native
   def callback(
     redirectUri: String,
+    parameters: CallbackParamsType,
+    checks: OpenIDCallbackChecks,
+    extras: CallbackExtras
+  ): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: Unit, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: Unit, parameters: CallbackParamsType, checks: Unit, extras: CallbackExtras): js.Promise[TokenSet] = js.native
+  def callback(redirectUri: Unit, parameters: CallbackParamsType, checks: OpenIDCallbackChecks): js.Promise[TokenSet] = js.native
+  def callback(
+    redirectUri: Unit,
     parameters: CallbackParamsType,
     checks: OpenIDCallbackChecks,
     extras: CallbackExtras
@@ -87,7 +73,7 @@ class Client protected ()
     * for subsequent Device Access Token Request polling.
     */
   def deviceAuthorization(): js.Promise[DeviceFlowHandle[Client]] = js.native
-  def deviceAuthorization(parameters: js.UndefOr[scala.Nothing], extras: DeviceAuthorizationExtras): js.Promise[DeviceFlowHandle[Client]] = js.native
+  def deviceAuthorization(parameters: Unit, extras: DeviceAuthorizationExtras): js.Promise[DeviceFlowHandle[Client]] = js.native
   def deviceAuthorization(parameters: DeviceAuthorizationParameters): js.Promise[DeviceFlowHandle[Client]] = js.native
   def deviceAuthorization(parameters: DeviceAuthorizationParameters, extras: DeviceAuthorizationExtras): js.Promise[DeviceFlowHandle[Client]] = js.native
   
@@ -108,31 +94,14 @@ class Client protected ()
     * Introspects a token at the Authorization Server's introspection_endpoint.
     */
   def introspect(token: String): js.Promise[IntrospectionResponse] = js.native
-  def introspect(token: String, tokenTypeHint: js.UndefOr[TokenTypeHint], extras: IntrospectExtras): js.Promise[IntrospectionResponse] = js.native
+  def introspect(token: String, tokenTypeHint: Unit, extras: IntrospectExtras): js.Promise[IntrospectionResponse] = js.native
   def introspect(token: String, tokenTypeHint: TokenTypeHint): js.Promise[IntrospectionResponse] = js.native
+  def introspect(token: String, tokenTypeHint: TokenTypeHint, extras: IntrospectExtras): js.Promise[IntrospectionResponse] = js.native
   
   var issuer: Issuer[this.type] = js.native
   
   var metadata: ClientMetadata = js.native
   
-  def oauthCallback(redirectUri: js.UndefOr[scala.Nothing], parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: js.UndefOr[scala.Nothing],
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OAuthCallbackChecks
-  ): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: js.UndefOr[scala.Nothing],
-    parameters: CallbackParamsType,
-    checks: OAuthCallbackChecks,
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
   /**
     * Pure OAuth 2.0 version of callback().
     * @param redirectUri redirect_uri used for the authorization request
@@ -141,15 +110,19 @@ class Client protected ()
     * @param extras add extra parameters to the Token Endpoint Request and/or Client Authentication JWT Assertion
     */
   def oauthCallback(redirectUri: String, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
-  def oauthCallback(
-    redirectUri: String,
-    parameters: CallbackParamsType,
-    checks: js.UndefOr[scala.Nothing],
-    extras: CallbackExtras
-  ): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: String, parameters: CallbackParamsType, checks: Unit, extras: CallbackExtras): js.Promise[TokenSet] = js.native
   def oauthCallback(redirectUri: String, parameters: CallbackParamsType, checks: OAuthCallbackChecks): js.Promise[TokenSet] = js.native
   def oauthCallback(
     redirectUri: String,
+    parameters: CallbackParamsType,
+    checks: OAuthCallbackChecks,
+    extras: CallbackExtras
+  ): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: Unit, parameters: CallbackParamsType): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: Unit, parameters: CallbackParamsType, checks: Unit, extras: CallbackExtras): js.Promise[TokenSet] = js.native
+  def oauthCallback(redirectUri: Unit, parameters: CallbackParamsType, checks: OAuthCallbackChecks): js.Promise[TokenSet] = js.native
+  def oauthCallback(
+    redirectUri: Unit,
     parameters: CallbackParamsType,
     checks: OAuthCallbackChecks,
     extras: CallbackExtras
@@ -193,9 +166,10 @@ class Client protected ()
   /**
     * Revokes a token at the Authorization Server's revocation_endpoint.
     */
-  def revoke(token: String): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def revoke(token: String, tokenTypeHint: js.UndefOr[TokenTypeHint], extras: RevokeExtras): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def revoke(token: String): js.Promise[Unit] = js.native
+  def revoke(token: String, tokenTypeHint: Unit, extras: RevokeExtras): js.Promise[Unit] = js.native
+  def revoke(token: String, tokenTypeHint: TokenTypeHint): js.Promise[Unit] = js.native
+  def revoke(token: String, tokenTypeHint: TokenTypeHint, extras: RevokeExtras): js.Promise[Unit] = js.native
   
   var static: js.Any = js.native
   
@@ -220,28 +194,24 @@ object Client {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("openid-client", "Client.fromUri")
-  @js.native
-  def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = js.native
-  @JSImport("openid-client", "Client.fromUri")
-  @js.native
+  @scala.inline
+  def fromUri(registrationClientUri: String, registrationAccessToken: String): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  @scala.inline
   def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
-    jwks: js.UndefOr[scala.Nothing],
+    jwks: Unit,
     clientOptions: ClientOptions
-  ): js.Promise[Client] = js.native
-  @JSImport("openid-client", "Client.fromUri")
-  @js.native
-  def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = js.native
-  @JSImport("openid-client", "Client.fromUri")
-  @js.native
+  ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any], clientOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  @scala.inline
+  def fromUri(registrationClientUri: String, registrationAccessToken: String, jwks: JSONWebKeySet): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  @scala.inline
   def fromUri(
     registrationClientUri: String,
     registrationAccessToken: String,
     jwks: JSONWebKeySet,
     clientOptions: ClientOptions
-  ): js.Promise[Client] = js.native
+  ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUri")(registrationClientUri.asInstanceOf[js.Any], registrationAccessToken.asInstanceOf[js.Any], jwks.asInstanceOf[js.Any], clientOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
   
   @JSImport("openid-client", "Client.issuer")
   @js.native
@@ -249,10 +219,8 @@ object Client {
   @scala.inline
   def issuer_=(x: Issuer[Client]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issuer")(x.asInstanceOf[js.Any])
   
-  @JSImport("openid-client", "Client.register")
-  @js.native
-  def register(metadata: js.Object): js.Promise[Client] = js.native
-  @JSImport("openid-client", "Client.register")
-  @js.native
-  def register(metadata: js.Object, other: RegisterOther with ClientOptions): js.Promise[Client] = js.native
+  @scala.inline
+  def register(metadata: js.Object): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+  @scala.inline
+  def register(metadata: js.Object, other: RegisterOther & ClientOptions): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(metadata.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
 }

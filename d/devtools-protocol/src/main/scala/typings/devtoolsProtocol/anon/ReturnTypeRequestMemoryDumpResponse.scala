@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Tracing.RequestMemoryDumpRequest
 import typings.devtoolsProtocol.mod.Protocol.Tracing.RequestMemoryDumpResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRequestMemoryDumpResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[RequestMemoryDumpRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[RequestMemoryDumpRequest]]
   
-  var returnType: RequestMemoryDumpResponse = js.native
+  var returnType: RequestMemoryDumpResponse
 }
 object ReturnTypeRequestMemoryDumpResponse {
   

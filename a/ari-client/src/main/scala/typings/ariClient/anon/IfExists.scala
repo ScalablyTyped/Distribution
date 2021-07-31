@@ -2,27 +2,25 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfExists extends StObject {
   
-  var beep: js.UndefOr[Boolean] = js.native
+  var beep: js.UndefOr[Boolean] = js.undefined
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var format: String = js.native
+  var format: String
   
-  var ifExists: js.UndefOr[String] = js.native
+  var ifExists: js.UndefOr[String] = js.undefined
   
-  var maxDurationSeconds: js.UndefOr[Double] = js.native
+  var maxDurationSeconds: js.UndefOr[Double] = js.undefined
   
-  var maxSilenceSeconds: js.UndefOr[Double] = js.native
+  var maxSilenceSeconds: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var terminateOn: js.UndefOr[String] = js.native
+  var terminateOn: js.UndefOr[String] = js.undefined
 }
 object IfExists {
   

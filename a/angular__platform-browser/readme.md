@@ -10,9 +10,9 @@ Angular - library for using Angular in a web browser
 | ------------------ | :-------------: |
 | Full name          | @angular/platform-browser |
 | Keywords           | - |
-| # releases         | 208 |
-| # dependents       | 7563 |
-| # downloads        | 74327634 |
+| # releases         | 212 |
+| # dependents       | 7767 |
+| # downloads        | 79459566 |
 | # stars            | 7 |
 
 ## Links

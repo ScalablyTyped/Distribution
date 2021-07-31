@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TelemetryMetadata extends StObject {
   
   /**
     * The count of messages that the agent sends to the Amazon Inspector service.
     */
-  var count: Long = js.native
+  var count: Long
   
   /**
     * The data size of messages that the agent sends to the Amazon Inspector service.
     */
-  var dataSize: js.UndefOr[Long] = js.native
+  var dataSize: js.UndefOr[Long] = js.undefined
   
   /**
     * A specific type of behavioral data that is collected by the agent.
     */
-  var messageType: MessageType = js.native
+  var messageType: MessageType
 }
 object TelemetryMetadata {
   

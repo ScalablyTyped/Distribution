@@ -5,33 +5,31 @@ import typings.long.mod.Long
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UninterpretedOption. */
-@js.native
 trait IUninterpretedOption extends StObject {
   
   /** UninterpretedOption aggregateValue */
-  var aggregateValue: js.UndefOr[String | Null] = js.native
+  var aggregateValue: js.UndefOr[String | Null] = js.undefined
   
   /** UninterpretedOption doubleValue */
-  var doubleValue: js.UndefOr[Double | Null] = js.native
+  var doubleValue: js.UndefOr[Double | Null] = js.undefined
   
   /** UninterpretedOption identifierValue */
-  var identifierValue: js.UndefOr[String | Null] = js.native
+  var identifierValue: js.UndefOr[String | Null] = js.undefined
   
   /** UninterpretedOption name */
-  var name: js.UndefOr[js.Array[INamePart] | Null] = js.native
+  var name: js.UndefOr[js.Array[INamePart] | Null] = js.undefined
   
   /** UninterpretedOption negativeIntValue */
-  var negativeIntValue: js.UndefOr[Double | Long | String | Null] = js.native
+  var negativeIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
   
   /** UninterpretedOption positiveIntValue */
-  var positiveIntValue: js.UndefOr[Double | Long | String | Null] = js.native
+  var positiveIntValue: js.UndefOr[Double | Long | String | Null] = js.undefined
   
   /** UninterpretedOption stringValue */
-  var stringValue: js.UndefOr[Uint8Array | String | Null] = js.native
+  var stringValue: js.UndefOr[Uint8Array | String | Null] = js.undefined
 }
 object IUninterpretedOption {
   

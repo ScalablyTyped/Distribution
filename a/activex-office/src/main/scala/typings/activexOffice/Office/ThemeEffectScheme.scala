@@ -2,22 +2,20 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeEffectScheme extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Load(FileName: String): Unit = js.native
+  def Load(FileName: String): Unit
   
   @JSName("Office.ThemeEffectScheme_typekey")
-  var OfficeDotThemeEffectScheme_typekey: ThemeEffectScheme = js.native
+  var OfficeDotThemeEffectScheme_typekey: ThemeEffectScheme
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object ThemeEffectScheme {
   

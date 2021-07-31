@@ -2,15 +2,13 @@ package typings.kefir.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Leading extends StObject {
   
-  var leading: js.UndefOr[Boolean] = js.native
+  var leading: js.UndefOr[Boolean] = js.undefined
   
-  var trailing: js.UndefOr[Boolean] = js.native
+  var trailing: js.UndefOr[Boolean] = js.undefined
 }
 object Leading {
   

@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Highestline extends StObject {
   
-  var highest_line: Double = js.native
+  var highest_line: Double
   
-  var lowest_line: Double = js.native
+  var lowest_line: Double
   
-  var y_bottom: Double = js.native
+  var y_bottom: Double
   
-  var y_top: Double = js.native
+  var y_top: Double
 }
 object Highestline {
   

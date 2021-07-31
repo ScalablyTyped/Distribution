@@ -43,11 +43,12 @@ import typings.std.HTMLLIElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlaceSearch extends EventEmitter {
+trait PlaceSearch
+  extends StObject
+     with EventEmitter {
   
   /**
     * 清除搜索结果
@@ -109,7 +110,7 @@ trait PlaceSearch extends EventEmitter {
   ): Unit = js.native
   def searchInBounds(
     keyword: String,
-    bounds: Polygon[_],
+    bounds: Polygon[js.Any],
     callback: js.Function2[/* status */ SearchStatus, /* result */ String | SearchResult, Unit]
   ): Unit = js.native
   
@@ -171,43 +172,42 @@ trait PlaceSearch extends EventEmitter {
 }
 object PlaceSearch {
   
-  @js.native
   trait Cinema extends StObject {
     
     /**
       * 信息来源
       */
-    var deep_src: String = js.native
+    var deep_src: String
     
     /**
       * 简介
       */
-    var intro: String = js.native
+    var intro: String
     
     /**
       * 非规范格式的营业时间
       */
-    var opentime: String = js.native
+    var opentime: String
     
     /**
       * 规范格式的营业时间
       */
-    var opentime_GDF: String = js.native
+    var opentime_GDF: String
     
     /**
       * 停车场设施
       */
-    var parking: String = js.native
+    var parking: String
     
     /**
       * 图片信息列表
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 综合评分
       */
-    var rating: String = js.native
+    var rating: String
   }
   object Cinema {
     
@@ -254,28 +254,27 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait CityInfo extends StObject {
     
     /**
       * 行政区编码
       */
-    var adcode: String = js.native
+    var adcode: String
     
     /**
       * 城市编码
       */
-    var citycode: String = js.native
+    var citycode: String
     
     /**
       * 该城市的建议结果数目
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * 建议城市名称
       */
-    var name: String = js.native
+    var name: String
   }
   object CityInfo {
     
@@ -302,103 +301,102 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Dining extends StObject {
     
     /**
       * 餐厅特色
       */
-    var addition: String = js.native
+    var addition: String
     
     /**
       * 氛围
       */
-    var atmosphere: String = js.native
+    var atmosphere: String
     
     /**
       * 人均消费
       */
-    var cost: String = js.native
+    var cost: String
     
     /**
       * 单数据源的评分
       */
-    var cp_rating: String = js.native
+    var cp_rating: String
     
     /**
       * 菜系
       */
-    var cuisines: String = js.native
+    var cuisines: String
     
     /**
       * 信息来源
       */
-    var deep_src: String = js.native
+    var deep_src: String
     
     /**
       * 环境评分
       */
-    var environment_rating: String = js.native
+    var environment_rating: String
     
     /**
       * 简介
       */
-    var intro: String = js.native
+    var intro: String
     
     /**
       * 非规范格式的营业时间
       */
-    var opentime: String = js.native
+    var opentime: String
     
     /**
       * 规范格式的营业时间
       */
-    var opentime_GDF: String = js.native
+    var opentime_GDF: String
     
     /**
       * 订餐APP URL
       */
-    var ordering_app_url: String = js.native
+    var ordering_app_url: String
     
     /**
       * 订餐wap链接
       */
-    var ordering_wap_url: String = js.native
+    var ordering_wap_url: String
     
     /**
       * 订餐web链接
       */
-    var ordering_web_url: String = js.native
+    var ordering_web_url: String
     
     /**
       * 图片信息列表
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 综合评分
       */
-    var rating: String = js.native
+    var rating: String
     
     /**
       * 特色菜
       */
-    var recommend: String = js.native
+    var recommend: String
     
     /**
       * 服务评分
       */
-    var service_rating: String = js.native
+    var service_rating: String
     
     /**
       * 标签
       */
-    var tag: String = js.native
+    var tag: String
     
     /**
       * 口味评分
       */
-    var taste_rating: String = js.native
+    var taste_rating: String
   }
   object Dining {
     
@@ -493,48 +491,47 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Discount extends StObject {
     
     /**
       * 优惠详情
       */
-    var detail: String = js.native
+    var detail: String
     
     /**
       * 结束时间
       */
-    var end_time: String = js.native
+    var end_time: String
     
     /**
       * 图片信息列表
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 来源标识
       */
-    var provider: String = js.native
+    var provider: String
     
     /**
       * 已卖出数量
       */
-    var sold_num: Double = js.native
+    var sold_num: Double
     
     /**
       * 开始时间
       */
-    var start_time: String = js.native
+    var start_time: String
     
     /**
       * 优惠标题
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * 来源url
       */
-    var url: String = js.native
+    var url: String
   }
   object Discount {
     
@@ -585,51 +582,50 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait EventMap extends StObject {
     
-    var complete: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete, SearchResult] = js.native
+    var complete: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.complete, SearchResult]
     
-    var error: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error, Info] = js.native
+    var error: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.error, Info]
     
     var infoWindowClick: Event_[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.infoWindowClick, 
         SelectChangeEventDataeven
-      ] = js.native
+      ]
     
     var listElementClick: SelectChangeEvent[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.listElementClick, 
         MouseEvent
-      ] = js.native
+      ]
     
     // typo in source code
     var listElementDetroyed: Event_[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.listElementDetroyed, 
         SelectChangeEventData
-      ] = js.native
+      ]
     
     var markerClick: SelectChangeEvent[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.markerClick, 
-        MapsEvent[click, Marker[_]]
-      ] = js.native
+        MapsEvent[click, Marker[js.Any]]
+      ]
     
     var markerDestoryed: Event_[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.markerDestoryed, 
         SelectChangeEventData
-      ] = js.native
+      ]
     
     // internal
     var renderComplete: Event_[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.renderComplete, 
         ListElements
-      ] = js.native
+      ]
     
     var selectChanged: Event_[
         typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.selectChanged, 
         LastSelected
-      ] = js.native
+      ]
     
-    var willClear: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.willClear, Data] = js.native
+    var willClear: Event_[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.willClear, Data]
   }
   object EventMap {
     
@@ -640,7 +636,7 @@ object PlaceSearch {
       infoWindowClick: Event_[infoWindowClick, SelectChangeEventDataeven],
       listElementClick: SelectChangeEvent[listElementClick, MouseEvent],
       listElementDetroyed: Event_[listElementDetroyed, SelectChangeEventData],
-      markerClick: SelectChangeEvent[markerClick, MapsEvent[click, Marker[_]]],
+      markerClick: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]],
       markerDestoryed: Event_[markerDestoryed, SelectChangeEventData],
       renderComplete: Event_[renderComplete, ListElements],
       selectChanged: Event_[selectChanged, LastSelected],
@@ -669,7 +665,7 @@ object PlaceSearch {
       def setListElementDetroyed(value: Event_[listElementDetroyed, SelectChangeEventData]): Self = StObject.set(x, "listElementDetroyed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[_]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
+      def setMarkerClick(value: SelectChangeEvent[markerClick, MapsEvent[click, Marker[js.Any]]]): Self = StObject.set(x, "markerClick", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarkerDestoryed(value: Event_[markerDestoryed, SelectChangeEventData]): Self = StObject.set(x, "markerDestoryed", value.asInstanceOf[js.Any])
@@ -685,88 +681,87 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Groupbuy extends StObject {
     
     /**
       * 团购总量
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * 团购详情
       */
-    var detail: String = js.native
+    var detail: String
     
     /**
       * 折扣
       */
-    var discount: Double = js.native
+    var discount: Double
     
     /**
       * 团购结束时间
       */
-    var etime: String = js.native
+    var etime: String
     
     /**
       * 折扣价
       */
-    var groupbuy_price: Double = js.native
+    var groupbuy_price: Double
     
     /**
       * 原价
       */
-    var original_price: Double = js.native
+    var original_price: Double
     
     /**
       * 图片信息
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 来源标识
       */
-    var provider: String = js.native
+    var provider: String
     
     /**
       * 已卖出数量
       */
-    var sold_num: Double = js.native
+    var sold_num: Double
     
     /**
       * 团购开始时间
       */
-    var stime: String = js.native
+    var stime: String
     
     /**
       * 取票地址
       */
-    var ticket_address: String = js.native
+    var ticket_address: String
     
     /**
       * 取票电话
       */
-    var ticket_tel: String = js.native
+    var ticket_tel: String
     
     /**
       * 团购标题
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * 团购分类
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * 团购分类代码
       */
-    var type_code: String = js.native
+    var type_code: String
     
     /**
       * 来源url
       */
-    var url: String = js.native
+    var url: String
   }
   object Groupbuy {
     
@@ -850,68 +845,67 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Hotel extends StObject {
     
     /**
       * 特色服务
       */
-    var addition: String = js.native
+    var addition: String
     
     /**
       * 信息来源
       */
-    var deep_src: String = js.native
+    var deep_src: String
     
     /**
       * 环境评分
       */
-    var environment_rating: String = js.native
+    var environment_rating: String
     
     /**
       * 设施评分
       */
-    var faci_rating: String = js.native
+    var faci_rating: String
     
     /**
       * 卫生评分
       */
-    var health_rating: String = js.native
+    var health_rating: String
     
     /**
       * 简介
       */
-    var intro: String = js.native
+    var intro: String
     
     /**
       * 最低房价
       */
-    var lowest_price: String = js.native
+    var lowest_price: String
     
     /**
       * 图片信息列表
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 综合评分
       */
-    var rating: String = js.native
+    var rating: String
     
     /**
       * 服务评分
       */
-    var service_rating: String = js.native
+    var service_rating: String
     
     /**
       * 星级
       */
-    var star: String = js.native
+    var star: String
     
     /**
       * 交通提示
       */
-    var traffic: String = js.native
+    var traffic: String
   }
   object Hotel {
     
@@ -978,80 +972,79 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 是否自动调整地图视野使绘制的Marker点都处于视口的可见范围
       */
-    var autoFitView: js.UndefOr[Boolean] = js.native
+    var autoFitView: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否按照层级展示子POI数据
       * children=1，展示子节点POI数据，children=0，不展示子节点数据
       */
-    var children: js.UndefOr[Double] = js.native
+    var children: js.UndefOr[Double] = js.undefined
     
     /**
       * 兴趣点城市
       */
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
     /**
       * 是否强制限制在设置的城市内搜索
       */
-    var citylimit: js.UndefOr[Boolean] = js.native
+    var citylimit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否返回详细信息
       * base返回基本地址信息；all返回基本+详细信息
       */
-    var extensions: js.UndefOr[base | all] = js.native
+    var extensions: js.UndefOr[base | all] = js.undefined
     
     /**
       * 检索语言类型
       */
-    var lang: js.UndefOr[Lang] = js.native
+    var lang: js.UndefOr[Lang] = js.undefined
     
     /**
       * Map对象
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
     /**
       * 页码
       */
-    var pageIndex: js.UndefOr[Double] = js.native
+    var pageIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * 单页显示结果条数
       */
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
     /**
       * 结果列表的HTML容器id或容器元素
       */
-    var panel: js.UndefOr[String | HTMLElement] = js.native
+    var panel: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var rankBy: js.UndefOr[String] = js.native
+    var rankBy: js.UndefOr[String] = js.undefined
     
     // internal
-    var renderEngine: js.UndefOr[String] = js.native
+    var renderEngine: js.UndefOr[String] = js.undefined
     
     /**
       * 绘制的UI风格
       */
-    var renderStyle: js.UndefOr[newpc | default] = js.native
+    var renderStyle: js.UndefOr[newpc | default] = js.undefined
     
     /**
       * 是否在地图上显示周边搜索的圆或者范围搜索的多边形
       */
-    var showCover: js.UndefOr[Boolean] = js.native
+    var showCover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 兴趣点类别，多个类别用“|”分割
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -1158,47 +1151,46 @@ object PlaceSearch {
   
   type Poi = PoiBase | PoiExt
   
-  @js.native
   trait PoiBase extends StObject {
     
     /**
       * 地址
       */
-    var address: String = js.native
+    var address: String
     
-    var children: js.UndefOr[js.Array[_]] = js.native
+    var children: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * 离中心点距离
       */
-    var distance: Double = js.native
+    var distance: Double
     
     /**
       * 全局唯一ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 兴趣点经纬度
       */
-    var location: LngLat | Null = js.native
+    var location: LngLat | Null
     
     /**
       * 名称
       */
-    var name: String = js.native
+    var name: String
     
-    var shopinfo: String = js.native
+    var shopinfo: String
     
     /**
       * 电话
       */
-    var tel: String = js.native
+    var tel: String
     
     /**
       * 兴趣点类型
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object PoiBase {
     
@@ -1212,7 +1204,7 @@ object PlaceSearch {
       tel: String,
       `type`: String
     ): PoiBase = {
-      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shopinfo = shopinfo.asInstanceOf[js.Any], tel = tel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shopinfo = shopinfo.asInstanceOf[js.Any], tel = tel.asInstanceOf[js.Any], location = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PoiBase]
     }
@@ -1224,7 +1216,7 @@ object PlaceSearch {
       def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -1258,31 +1250,30 @@ object PlaceSearch {
     }
   }
   
-  type PoiExt = Adcode with PoiBase with (Indoordata | Indoormap) with (typings.amapJsApiPlaceSearch.anon.Cinema | Deeptype | typings.amapJsApiPlaceSearch.anon.Scenic | typings.amapJsApiPlaceSearch.anon.Hotel)
+  type PoiExt = Adcode & PoiBase & (Indoordata | Indoormap) & (typings.amapJsApiPlaceSearch.anon.Cinema | Deeptype | typings.amapJsApiPlaceSearch.anon.Scenic | typings.amapJsApiPlaceSearch.anon.Hotel)
   
-  @js.native
   trait PoiList extends StObject {
     
     /**
       * 查询结果总数
       */
-    var count: Double = js.native
+    var count: Double
     
     // PlaceSearchPoiBase[] | PlaceSearchPoiExt[];
     /**
       * 页码
       */
-    var pageIndex: Double = js.native
+    var pageIndex: Double
     
     /**
       * 单页结果数
       */
-    var pageSize: Double = js.native
+    var pageSize: Double
     
     /**
       * Poi列表
       */
-    var pois: js.Array[Poi] = js.native
+    var pois: js.Array[Poi]
   }
   object PoiList {
     
@@ -1312,18 +1303,17 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait PoiPhoto extends StObject {
     
     /**
       * 图片名称
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * 图片url
       */
-    var url: String = js.native
+    var url: String
   }
   object PoiPhoto {
     
@@ -1344,73 +1334,72 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait Scenic extends StObject {
     
     /**
       * 信息来源
       */
-    var deep_src: String = js.native
+    var deep_src: String
     
     /**
       * 简介
       */
-    var intro: String = js.native
+    var intro: String
     
     /**
       * 景区国标级别
       */
-    var level: String = js.native
+    var level: String
     
     /**
       * 非规范格式的营业时间
       */
-    var opentime: String = js.native
+    var opentime: String
     
     /**
       * 规范格式的营业时间
       */
-    var opentime_GDF: String = js.native
+    var opentime_GDF: String
     
     /**
       * wap购票链接
       */
-    var ordering_wap_url: String = js.native
+    var ordering_wap_url: String
     
     /**
       * web购票链接
       */
-    var ordering_web_url: String = js.native
+    var ordering_web_url: String
     
     /**
       * 图片信息列表
       */
-    var photos: js.Array[PoiPhoto] = js.native
+    var photos: js.Array[PoiPhoto]
     
     /**
       * 门票价格
       */
-    var price: String = js.native
+    var price: String
     
     /**
       * 综合评分
       */
-    var rating: String = js.native
+    var rating: String
     
     /**
       * 推荐景点
       */
-    var recommend: String = js.native
+    var recommend: String
     
     /**
       * 适合游玩的季节
       */
-    var season: String = js.native
+    var season: String
     
     /**
       * 景区主题
       */
-    var theme: String = js.native
+    var theme: String
   }
   object Scenic {
     
@@ -1481,28 +1470,27 @@ object PlaceSearch {
     }
   }
   
-  @js.native
   trait SearchResult extends StObject {
     
     /**
       * 城市建议列表
       */
-    var cityList: js.UndefOr[js.Array[CityInfo]] = js.native
+    var cityList: js.UndefOr[js.Array[CityInfo]] = js.undefined
     
     /**
       * 成功状态说明
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * 建议关键字列表
       */
-    var keywordList: js.UndefOr[js.Array[String]] = js.native
+    var keywordList: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * 兴趣点列表
       */
-    var poiList: PoiList = js.native
+    var poiList: PoiList
   }
   object SearchResult {
     
@@ -1559,40 +1547,39 @@ object PlaceSearch {
     def no_data: typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.no_data]
   }
   
-  type SelectChangeEvent[N /* <: String */, E] = Event_[N, SelectChangeEventData with Event[E]]
+  type SelectChangeEvent[N /* <: String */, E] = Event_[N, SelectChangeEventData & Event[E]]
   
-  @js.native
   trait SelectChangeEventData extends StObject {
     
     /**
       * 当前选中的POI的信息
       */
-    var data: js.Array[Poi] = js.native
+    var data: js.Array[Poi]
     
     /**
       * 当前选中的POI的ID
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * 索引
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * 当前选中的POI在结果面板中对应的列表项
       */
-    var listElement: HTMLLIElement = js.native
+    var listElement: HTMLLIElement
     
     /**
       * 当前选中的POI对应的在地图中的Marker对象
       */
-    var marker: Marker[_] = js.native
+    var marker: Marker[js.Any]
   }
   object SelectChangeEventData {
     
     @scala.inline
-    def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[_]): SelectChangeEventData = {
+    def apply(data: js.Array[Poi], id: String, index: Double, listElement: HTMLLIElement, marker: Marker[js.Any]): SelectChangeEventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectChangeEventData]
     }
@@ -1616,7 +1603,7 @@ object PlaceSearch {
       def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMarker(value: Marker[_]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+      def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
   }
 }

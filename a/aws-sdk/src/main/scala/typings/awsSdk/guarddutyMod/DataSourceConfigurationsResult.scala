@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceConfigurationsResult extends StObject {
   
   /**
     * An object that contains information on the status of CloudTrail as a data source.
     */
-  var CloudTrail: CloudTrailConfigurationResult = js.native
+  var CloudTrail: CloudTrailConfigurationResult
   
   /**
     * An object that contains information on the status of DNS logs as a data source.
     */
-  var DNSLogs: DNSLogsConfigurationResult = js.native
+  var DNSLogs: DNSLogsConfigurationResult
   
   /**
     * An object that contains information on the status of VPC flow logs as a data source.
     */
-  var FlowLogs: FlowLogsConfigurationResult = js.native
+  var FlowLogs: FlowLogsConfigurationResult
   
   /**
     * An object that contains information on the status of S3 Data event logs as a data source.
     */
-  var S3Logs: S3LogsConfigurationResult = js.native
+  var S3Logs: S3LogsConfigurationResult
 }
 object DataSourceConfigurationsResult {
   

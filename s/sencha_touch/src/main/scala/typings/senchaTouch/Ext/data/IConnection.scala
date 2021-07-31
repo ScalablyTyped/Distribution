@@ -4,118 +4,118 @@ import typings.senchaTouch.Ext.mixin.IObservable
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IConnection extends IObservable {
+trait IConnection
+  extends StObject
+     with IObservable {
   
   /** [Method] Aborts any outstanding request
     * @param request Object Defaults to the last request.
     */
-  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.native
+  var abort: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Aborts all outstanding requests  */
-  var abortAll: js.UndefOr[js.Function0[Unit]] = js.native
+  var abortAll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultHeaders: js.UndefOr[js.Any] = js.native
+  var defaultHeaders: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var defaultXhrHeader: js.UndefOr[String] = js.native
+  var defaultXhrHeader: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disableCaching: js.UndefOr[Boolean] = js.native
+  var disableCaching: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var disableCachingParam: js.UndefOr[String] = js.native
+  var disableCachingParam: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var extraParams: js.UndefOr[js.Any] = js.native
+  var extraParams: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of async
     * @returns Boolean
     */
-  var getAsync: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAsync: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of autoAbort
     * @returns Boolean
     */
-  var getAutoAbort: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAutoAbort: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of defaultHeaders
     * @returns Object
     */
-  var getDefaultHeaders: js.UndefOr[js.Function0[_]] = js.native
+  var getDefaultHeaders: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of defaultPostHeader
     * @returns String
     */
-  var getDefaultPostHeader: js.UndefOr[js.Function0[String]] = js.native
+  var getDefaultPostHeader: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of defaultXhrHeader
     * @returns String
     */
-  var getDefaultXhrHeader: js.UndefOr[js.Function0[String]] = js.native
+  var getDefaultXhrHeader: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of disableCaching
     * @returns Boolean
     */
-  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getDisableCaching: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of disableCachingParam
     * @returns String
     */
-  var getDisableCachingParam: js.UndefOr[js.Function0[String]] = js.native
+  var getDisableCachingParam: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of extraParams
     * @returns Object
     */
-  var getExtraParams: js.UndefOr[js.Function0[_]] = js.native
+  var getExtraParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
     */
-  var getMethod: js.UndefOr[js.Function0[String]] = js.native
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of password
     * @returns String
     */
-  var getPassword: js.UndefOr[js.Function0[String]] = js.native
+  var getPassword: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
     */
-  var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+  var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of url
     * @returns String
     */
-  var getUrl: js.UndefOr[js.Function0[String]] = js.native
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of useDefaultHeader
     * @returns Boolean
     */
-  var getUseDefaultHeader: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseDefaultHeader: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of useDefaultXhrHeader
     * @returns Boolean
     */
-  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getUseDefaultXhrHeader: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of username
     * @returns String
     */
-  var getUsername: js.UndefOr[js.Function0[String]] = js.native
+  var getUsername: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Determines whether this object has a request outstanding
     * @param request Object The request to check.
     * @returns Boolean True if there is an outstanding request.
     */
-  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.native
+  var isLoading: js.UndefOr[js.Function1[/* request */ js.UndefOr[js.Any], Boolean]] = js.undefined
   
   /** [Config Option] (String) */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** [Method] Checks if the response status was successful
     * @param status Number The status code.
@@ -123,8 +123,8 @@ trait IConnection extends IObservable {
     * @returns Object An object containing success/status state.
     */
   var parseStatus: js.UndefOr[
-    js.Function2[/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest], _]
-  ] = js.native
+    js.Function2[/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest], js.Any]
+  ] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -134,58 +134,58 @@ trait IConnection extends IObservable {
   @JSName("relayEvents")
   var relayEvents_IConnection: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sends an HTTP request to a remote server
     * @param options Object An object which may contain the following properties: (The options object may also contain any other property which might be needed to perform post-processing in a callback because it is passed to callback functions.)
     * @returns Object/null The request object. This may be used to cancel the request.
     */
-  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], _]] = js.native
+  var request: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Sets the value of async
     * @param async Boolean The new value.
     */
-  var setAsync: js.UndefOr[js.Function1[/* async */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAsync: js.UndefOr[js.Function1[/* async */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of autoAbort
     * @param autoAbort Boolean The new value.
     */
-  var setAutoAbort: js.UndefOr[js.Function1[/* autoAbort */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAutoAbort: js.UndefOr[js.Function1[/* autoAbort */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultHeaders
     * @param defaultHeaders Object The new value.
     */
-  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDefaultHeaders: js.UndefOr[js.Function1[/* defaultHeaders */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultPostHeader
     * @param defaultPostHeader String The new value.
     */
-  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[String], Unit]] = js.native
+  var setDefaultPostHeader: js.UndefOr[js.Function1[/* defaultPostHeader */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultXhrHeader
     * @param defaultXhrHeader String The new value.
     */
-  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[String], Unit]] = js.native
+  var setDefaultXhrHeader: js.UndefOr[js.Function1[/* defaultXhrHeader */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of disableCaching
     * @param disableCaching Boolean The new value.
     */
-  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisableCaching: js.UndefOr[js.Function1[/* disableCaching */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of disableCachingParam
     * @param disableCachingParam String The new value.
     */
-  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[String], Unit]] = js.native
+  var setDisableCachingParam: js.UndefOr[js.Function1[/* disableCachingParam */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of extraParams
     * @param extraParams Object The new value.
     */
-  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.native
+  var setExtraParams: js.UndefOr[js.Function1[/* extraParams */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
     */
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.native
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets various options such as the url params for the request
     * @param options Object The initial options.
@@ -193,41 +193,41 @@ trait IConnection extends IObservable {
     * @returns Object The params for the request.
     */
   var setOptions: js.UndefOr[
-    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   /** [Method] Sets the value of password
     * @param password String The new value.
     */
-  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.native
+  var setPassword: js.UndefOr[js.Function1[/* password */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
     */
-  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of url
     * @param url String The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of useDefaultHeader
     * @param useDefaultHeader Boolean The new value.
     */
-  var setUseDefaultHeader: js.UndefOr[js.Function1[/* useDefaultHeader */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseDefaultHeader: js.UndefOr[js.Function1[/* useDefaultHeader */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of useDefaultXhrHeader
     * @param useDefaultXhrHeader Boolean The new value.
     */
-  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.native
+  var setUseDefaultXhrHeader: js.UndefOr[js.Function1[/* useDefaultXhrHeader */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of username
     * @param username String The new value.
     */
-  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.native
+  var setUsername: js.UndefOr[js.Function1[/* username */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** [Method] Uploads a form using a hidden iframe
     * @param form String/HTMLElement/Ext.Element The form to upload.
@@ -243,13 +243,13 @@ trait IConnection extends IObservable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useDefaultXhrHeader: js.UndefOr[Boolean] = js.native
+  var useDefaultXhrHeader: js.UndefOr[Boolean] = js.undefined
 }
 object IConnection {
   
@@ -317,7 +317,7 @@ object IConnection {
     def setGetAutoAbortUndefined: Self = StObject.set(x, "getAutoAbort", js.undefined)
     
     @scala.inline
-    def setGetDefaultHeaders(value: () => _): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
+    def setGetDefaultHeaders(value: () => js.Any): Self = StObject.set(x, "getDefaultHeaders", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDefaultHeadersUndefined: Self = StObject.set(x, "getDefaultHeaders", js.undefined)
@@ -347,7 +347,7 @@ object IConnection {
     def setGetDisableCachingUndefined: Self = StObject.set(x, "getDisableCaching", js.undefined)
     
     @scala.inline
-    def setGetExtraParams(value: () => _): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
+    def setGetExtraParams(value: () => js.Any): Self = StObject.set(x, "getExtraParams", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetExtraParamsUndefined: Self = StObject.set(x, "getExtraParams", js.undefined)
@@ -407,7 +407,7 @@ object IConnection {
     def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => _): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
+    def setParseStatus(value: (/* status */ js.UndefOr[Double], /* xhr */ js.UndefOr[XMLHttpRequest]) => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction2(value))
     
     @scala.inline
     def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
@@ -419,7 +419,7 @@ object IConnection {
     def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
     
     @scala.inline
-    def setRequest(value: /* options */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
@@ -479,7 +479,7 @@ object IConnection {
     def setSetMethodUndefined: Self = StObject.set(x, "setMethod", js.undefined)
     
     @scala.inline
-    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)

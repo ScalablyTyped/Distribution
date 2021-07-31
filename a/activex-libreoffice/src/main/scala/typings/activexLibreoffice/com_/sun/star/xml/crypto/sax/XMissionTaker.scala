@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to control a mission.
   */
-@js.native
-trait XMissionTaker extends XInterface {
+trait XMissionTaker
+  extends StObject
+     with XInterface {
   
   /**
     * Forces a mission to make an end.
     * @returns `TRUE` if the mission is completed successfully, `FALSE` otherwise.
     */
-  def endMission(): Boolean = js.native
+  def endMission(): Boolean
 }
 object XMissionTaker {
   

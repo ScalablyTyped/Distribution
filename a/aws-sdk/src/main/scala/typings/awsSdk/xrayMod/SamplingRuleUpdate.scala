@@ -2,71 +2,69 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingRuleUpdate extends StObject {
   
   /**
     * Matches attributes derived from the request.
     */
-  var Attributes: js.UndefOr[AttributeMap] = js.native
+  var Attributes: js.UndefOr[AttributeMap] = js.undefined
   
   /**
     * The percentage of matching requests to instrument, after the reservoir is exhausted.
     */
-  var FixedRate: js.UndefOr[NullableDouble] = js.native
+  var FixedRate: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Matches the HTTP method of a request.
     */
-  var HTTPMethod: js.UndefOr[typings.awsSdk.xrayMod.HTTPMethod] = js.native
+  var HTTPMethod: js.UndefOr[typings.awsSdk.xrayMod.HTTPMethod] = js.undefined
   
   /**
     * Matches the hostname from a request URL.
     */
-  var Host: js.UndefOr[typings.awsSdk.xrayMod.Host] = js.native
+  var Host: js.UndefOr[typings.awsSdk.xrayMod.Host] = js.undefined
   
   /**
     * The priority of the sampling rule.
     */
-  var Priority: js.UndefOr[NullableInteger] = js.native
+  var Priority: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
     */
-  var ReservoirSize: js.UndefOr[NullableInteger] = js.native
+  var ReservoirSize: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * Matches the ARN of the AWS resource on which the service runs.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.xrayMod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.xrayMod.ResourceARN] = js.undefined
   
   /**
     * The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.
     */
-  var RuleARN: js.UndefOr[String] = js.native
+  var RuleARN: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the sampling rule. Specify a rule by either name or ARN, but not both.
     */
-  var RuleName: js.UndefOr[typings.awsSdk.xrayMod.RuleName] = js.native
+  var RuleName: js.UndefOr[typings.awsSdk.xrayMod.RuleName] = js.undefined
   
   /**
     * Matches the name that the service uses to identify itself in segments.
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.xrayMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.xrayMod.ServiceName] = js.undefined
   
   /**
     * Matches the origin that the service uses to identify its type in segments.
     */
-  var ServiceType: js.UndefOr[typings.awsSdk.xrayMod.ServiceType] = js.native
+  var ServiceType: js.UndefOr[typings.awsSdk.xrayMod.ServiceType] = js.undefined
   
   /**
     * Matches the path from a request URL.
     */
-  var URLPath: js.UndefOr[typings.awsSdk.xrayMod.URLPath] = js.native
+  var URLPath: js.UndefOr[typings.awsSdk.xrayMod.URLPath] = js.undefined
 }
 object SamplingRuleUpdate {
   

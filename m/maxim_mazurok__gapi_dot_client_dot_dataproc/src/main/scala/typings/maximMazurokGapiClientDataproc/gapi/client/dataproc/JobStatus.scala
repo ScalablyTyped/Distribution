@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatus extends StObject {
   
   /** Optional. Output only. Job state details, such as an error description if the state is ERROR. */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /** Output only. A state message specifying the overall job state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The time when this state was entered. */
-  var stateStartTime: js.UndefOr[String] = js.native
+  var stateStartTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Additional state information, which includes status reported by the agent. */
-  var substate: js.UndefOr[String] = js.native
+  var substate: js.UndefOr[String] = js.undefined
 }
 object JobStatus {
   

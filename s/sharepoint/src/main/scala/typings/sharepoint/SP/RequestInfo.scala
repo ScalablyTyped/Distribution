@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestInfo extends StObject {
   
-  var binaryStringRequestBody: js.UndefOr[Boolean] = js.native
+  var binaryStringRequestBody: js.UndefOr[Boolean] = js.undefined
   
   /** Currently need fix to get ginary response. Details: http:// techmikael.blogspot.ru/2013/07/how-to-copy-files-between-sites-using.html */
-  var binaryStringResponseBody: js.UndefOr[Boolean] = js.native
+  var binaryStringResponseBody: js.UndefOr[Boolean] = js.undefined
   
   /** Can be string or bytearray depending on binaryStringRequestBody field */
-  var body: js.UndefOr[String | Uint8Array] = js.native
+  var body: js.UndefOr[String | Uint8Array] = js.undefined
   
   var error: js.UndefOr[
     js.Function3[
@@ -25,19 +23,19 @@ trait RequestInfo extends StObject {
       /* statusText */ String, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[js.Any] = js.native
+  var state: js.UndefOr[js.Any] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* response */ ResponseInfo, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* response */ ResponseInfo, Unit]] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object RequestInfo {
   

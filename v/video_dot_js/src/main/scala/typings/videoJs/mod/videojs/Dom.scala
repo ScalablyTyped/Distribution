@@ -23,7 +23,6 @@ import typings.videoJs.videoJsStrings.select
 import typings.videoJs.videoJsStrings.textarea
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -108,41 +107,21 @@ trait Dom extends StObject {
   def blockTextSelection(): Unit = js.native
   
   def createEl(): Element = js.native
-  def createEl(
-    tagName: js.UndefOr[scala.Nothing],
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
-  def createEl(
-    tagName: js.UndefOr[scala.Nothing],
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.Any,
-    content: js.Any
-  ): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any): Element = js.native
-  def createEl(
-    tagName: js.UndefOr[scala.Nothing],
-    properties: js.Any,
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any): Element = js.native
-  def createEl(tagName: js.UndefOr[scala.Nothing], properties: js.Any, attributes: js.Any, content: js.Any): Element = js.native
   def createEl(tagName: String): Element = js.native
-  def createEl(
-    tagName: String,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): Element = js.native
-  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any): Element = js.native
-  def createEl(tagName: String, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any): Element = js.native
-  def createEl(tagName: String, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any): Element = js.native
   def createEl(tagName: String, properties: js.Any, attributes: js.Any, content: js.Any): Element = js.native
+  def createEl(tagName: String, properties: js.Any, attributes: Unit, content: js.Any): Element = js.native
+  def createEl(tagName: String, properties: Unit, attributes: js.Any): Element = js.native
+  def createEl(tagName: String, properties: Unit, attributes: js.Any, content: js.Any): Element = js.native
+  def createEl(tagName: String, properties: Unit, attributes: Unit, content: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any, attributes: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any, attributes: js.Any, content: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: js.Any, attributes: Unit, content: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: Unit, attributes: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: Unit, attributes: js.Any, content: js.Any): Element = js.native
+  def createEl(tagName: Unit, properties: Unit, attributes: Unit, content: js.Any): Element = js.native
   /**
     * Creates an element and applies properties.
     *
@@ -163,150 +142,115 @@ trait Dom extends StObject {
   @JSName("createEl")
   def createEl_canvas(tagName: canvas): HTMLCanvasElement = js.native
   @JSName("createEl")
-  def createEl_canvas(
-    tagName: canvas,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLCanvasElement = js.native
-  @JSName("createEl")
-  def createEl_canvas(tagName: canvas, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLCanvasElement = js.native
-  @JSName("createEl")
-  def createEl_canvas(tagName: canvas, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLCanvasElement = js.native
-  @JSName("createEl")
   def createEl_canvas(tagName: canvas, properties: js.Any): HTMLCanvasElement = js.native
-  @JSName("createEl")
-  def createEl_canvas(tagName: canvas, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLCanvasElement = js.native
   @JSName("createEl")
   def createEl_canvas(tagName: canvas, properties: js.Any, attributes: js.Any): HTMLCanvasElement = js.native
   @JSName("createEl")
   def createEl_canvas(tagName: canvas, properties: js.Any, attributes: js.Any, content: js.Any): HTMLCanvasElement = js.native
   @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: js.Any, attributes: Unit, content: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: Unit, attributes: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: Unit, attributes: js.Any, content: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
+  def createEl_canvas(tagName: canvas, properties: Unit, attributes: Unit, content: js.Any): HTMLCanvasElement = js.native
+  @JSName("createEl")
   def createEl_form(tagName: form): HTMLFormElement = js.native
   @JSName("createEl")
-  def createEl_form(
-    tagName: form,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLFormElement = js.native
-  @JSName("createEl")
-  def createEl_form(tagName: form, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLFormElement = js.native
-  @JSName("createEl")
-  def createEl_form(tagName: form, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLFormElement = js.native
-  @JSName("createEl")
   def createEl_form(tagName: form, properties: js.Any): HTMLFormElement = js.native
-  @JSName("createEl")
-  def createEl_form(tagName: form, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLFormElement = js.native
   @JSName("createEl")
   def createEl_form(tagName: form, properties: js.Any, attributes: js.Any): HTMLFormElement = js.native
   @JSName("createEl")
   def createEl_form(tagName: form, properties: js.Any, attributes: js.Any, content: js.Any): HTMLFormElement = js.native
   @JSName("createEl")
+  def createEl_form(tagName: form, properties: js.Any, attributes: Unit, content: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: Unit, attributes: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: Unit, attributes: js.Any, content: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
+  def createEl_form(tagName: form, properties: Unit, attributes: Unit, content: js.Any): HTMLFormElement = js.native
+  @JSName("createEl")
   def createEl_img(tagName: img): HTMLImageElement = js.native
   @JSName("createEl")
-  def createEl_img(
-    tagName: img,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLImageElement = js.native
-  @JSName("createEl")
-  def createEl_img(tagName: img, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLImageElement = js.native
-  @JSName("createEl")
-  def createEl_img(tagName: img, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLImageElement = js.native
-  @JSName("createEl")
   def createEl_img(tagName: img, properties: js.Any): HTMLImageElement = js.native
-  @JSName("createEl")
-  def createEl_img(tagName: img, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLImageElement = js.native
   @JSName("createEl")
   def createEl_img(tagName: img, properties: js.Any, attributes: js.Any): HTMLImageElement = js.native
   @JSName("createEl")
   def createEl_img(tagName: img, properties: js.Any, attributes: js.Any, content: js.Any): HTMLImageElement = js.native
   @JSName("createEl")
+  def createEl_img(tagName: img, properties: js.Any, attributes: Unit, content: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: Unit, attributes: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: Unit, attributes: js.Any, content: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
+  def createEl_img(tagName: img, properties: Unit, attributes: Unit, content: js.Any): HTMLImageElement = js.native
+  @JSName("createEl")
   def createEl_input(tagName: input): HTMLInputElement = js.native
   @JSName("createEl")
-  def createEl_input(
-    tagName: input,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLInputElement = js.native
-  @JSName("createEl")
-  def createEl_input(tagName: input, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLInputElement = js.native
-  @JSName("createEl")
-  def createEl_input(tagName: input, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLInputElement = js.native
-  @JSName("createEl")
   def createEl_input(tagName: input, properties: js.Any): HTMLInputElement = js.native
-  @JSName("createEl")
-  def createEl_input(tagName: input, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLInputElement = js.native
   @JSName("createEl")
   def createEl_input(tagName: input, properties: js.Any, attributes: js.Any): HTMLInputElement = js.native
   @JSName("createEl")
   def createEl_input(tagName: input, properties: js.Any, attributes: js.Any, content: js.Any): HTMLInputElement = js.native
   @JSName("createEl")
+  def createEl_input(tagName: input, properties: js.Any, attributes: Unit, content: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: Unit, attributes: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: Unit, attributes: js.Any, content: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
+  def createEl_input(tagName: input, properties: Unit, attributes: Unit, content: js.Any): HTMLInputElement = js.native
+  @JSName("createEl")
   def createEl_option(tagName: option): HTMLOptionElement = js.native
   @JSName("createEl")
-  def createEl_option(
-    tagName: option,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLOptionElement = js.native
-  @JSName("createEl")
-  def createEl_option(tagName: option, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLOptionElement = js.native
-  @JSName("createEl")
-  def createEl_option(tagName: option, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLOptionElement = js.native
-  @JSName("createEl")
   def createEl_option(tagName: option, properties: js.Any): HTMLOptionElement = js.native
-  @JSName("createEl")
-  def createEl_option(tagName: option, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLOptionElement = js.native
   @JSName("createEl")
   def createEl_option(tagName: option, properties: js.Any, attributes: js.Any): HTMLOptionElement = js.native
   @JSName("createEl")
   def createEl_option(tagName: option, properties: js.Any, attributes: js.Any, content: js.Any): HTMLOptionElement = js.native
   @JSName("createEl")
+  def createEl_option(tagName: option, properties: js.Any, attributes: Unit, content: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: Unit, attributes: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: Unit, attributes: js.Any, content: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
+  def createEl_option(tagName: option, properties: Unit, attributes: Unit, content: js.Any): HTMLOptionElement = js.native
+  @JSName("createEl")
   def createEl_select(tagName: select): HTMLSelectElement = js.native
   @JSName("createEl")
-  def createEl_select(
-    tagName: select,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLSelectElement = js.native
-  @JSName("createEl")
-  def createEl_select(tagName: select, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLSelectElement = js.native
-  @JSName("createEl")
-  def createEl_select(tagName: select, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLSelectElement = js.native
-  @JSName("createEl")
   def createEl_select(tagName: select, properties: js.Any): HTMLSelectElement = js.native
-  @JSName("createEl")
-  def createEl_select(tagName: select, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLSelectElement = js.native
   @JSName("createEl")
   def createEl_select(tagName: select, properties: js.Any, attributes: js.Any): HTMLSelectElement = js.native
   @JSName("createEl")
   def createEl_select(tagName: select, properties: js.Any, attributes: js.Any, content: js.Any): HTMLSelectElement = js.native
   @JSName("createEl")
+  def createEl_select(tagName: select, properties: js.Any, attributes: Unit, content: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: Unit, attributes: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: Unit, attributes: js.Any, content: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
+  def createEl_select(tagName: select, properties: Unit, attributes: Unit, content: js.Any): HTMLSelectElement = js.native
+  @JSName("createEl")
   def createEl_textarea(tagName: textarea): HTMLTextAreaElement = js.native
   @JSName("createEl")
-  def createEl_textarea(
-    tagName: textarea,
-    properties: js.UndefOr[scala.Nothing],
-    attributes: js.UndefOr[scala.Nothing],
-    content: js.Any
-  ): HTMLTextAreaElement = js.native
-  @JSName("createEl")
-  def createEl_textarea(tagName: textarea, properties: js.UndefOr[scala.Nothing], attributes: js.Any): HTMLTextAreaElement = js.native
-  @JSName("createEl")
-  def createEl_textarea(tagName: textarea, properties: js.UndefOr[scala.Nothing], attributes: js.Any, content: js.Any): HTMLTextAreaElement = js.native
-  @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any): HTMLTextAreaElement = js.native
-  @JSName("createEl")
-  def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.UndefOr[scala.Nothing], content: js.Any): HTMLTextAreaElement = js.native
   @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.Any): HTMLTextAreaElement = js.native
   @JSName("createEl")
   def createEl_textarea(tagName: textarea, properties: js.Any, attributes: js.Any, content: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: js.Any, attributes: Unit, content: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: Unit, attributes: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: Unit, attributes: js.Any, content: js.Any): HTMLTextAreaElement = js.native
+  @JSName("createEl")
+  def createEl_textarea(tagName: textarea, properties: Unit, attributes: Unit, content: js.Any): HTMLTextAreaElement = js.native
   
   /**
     * Empties the contents of an element.
@@ -425,7 +369,7 @@ trait Dom extends StObject {
     *
     */
   def insertContent(el: Element, content: String): Element = js.native
-  def insertContent(el: Element, content: js.Function0[_]): Element = js.native
+  def insertContent(el: Element, content: js.Function0[js.Any]): Element = js.native
   def insertContent(el: Element, content: Element): Element = js.native
   
   /**
@@ -598,18 +542,17 @@ object Dom {
   /**
     * x and y coordinates for a dom element or mouse pointer
     */
-  @js.native
   trait Coordinates extends StObject {
     
     /**
       * x coordinate in pixels
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * y coordinate in pixels
       */
-    var y: Double = js.native
+    var y: Double
   }
   object Coordinates {
     
@@ -633,18 +576,17 @@ object Dom {
   /**
     * The postion of a DOM element on the page.
     */
-  @js.native
   trait Position extends StObject {
     
     /**
       * Pixels to the left
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * Pixels on top
       */
-    var top: Double = js.native
+    var top: Double
   }
   object Position {
     

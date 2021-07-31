@@ -5,15 +5,13 @@ import typings.babelWalk.mod.NodeType
 import typings.babelWalk.mod.SimpleFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `160`[TState] extends StObject {
   
-  var enter: js.UndefOr[SimpleFunction[ThrowStatement, TState]] = js.native
+  var enter: js.UndefOr[SimpleFunction[ThrowStatement, TState]] = js.undefined
   
-  var exit: js.UndefOr[SimpleFunction[ThrowStatement, TState]] = js.native
+  var exit: js.UndefOr[SimpleFunction[ThrowStatement, TState]] = js.undefined
 }
 object `160` {
   
@@ -24,7 +22,7 @@ object `160` {
   }
   
   @scala.inline
-  implicit class `160MutableBuilder`[Self <: `160`[_], TState] (val x: Self with `160`[TState]) extends AnyVal {
+  implicit class `160MutableBuilder`[Self <: `160`[?], TState] (val x: Self & `160`[TState]) extends AnyVal {
     
     @scala.inline
     def setEnter(value: (/* node */ NodeType[ThrowStatement], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))

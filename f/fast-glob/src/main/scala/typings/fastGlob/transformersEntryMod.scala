@@ -3,25 +3,34 @@ package typings.fastGlob
 import typings.fastGlob.typesMod.EntryTransformerFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformersEntryMod {
   
   @JSImport("fast-glob/out/providers/transformers/entry", JSImport.Default)
   @js.native
-  class default protected () extends EntryTransformer {
+  class default protected ()
+    extends StObject
+       with EntryTransformer {
     def this(_settings: typings.fastGlob.settingsMod.default) = this()
-  }
-  
-  @js.native
-  trait EntryTransformer extends StObject {
     
-    val _settings: js.Any = js.native
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
     
+    /* CompleteClass */
     var _transform: js.Any = js.native
     
-    def getTransformer(): EntryTransformerFunction = js.native
+    /* CompleteClass */
+    override def getTransformer(): EntryTransformerFunction = js.native
+  }
+  
+  trait EntryTransformer extends StObject {
+    
+    val _settings: js.Any
+    
+    var _transform: js.Any
+    
+    def getTransformer(): EntryTransformerFunction
   }
   object EntryTransformer {
     

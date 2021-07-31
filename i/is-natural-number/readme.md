@@ -11,8 +11,8 @@ Check if a value is a natural number
 | Full name          | is-natural-number |
 | Keywords           | number, natural, check, int, integer, math, mathematics, range, browser, client-side |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 88205554 |
+| # dependents       | 13 |
+| # downloads        | 139998676 |
 | # stars            | 2 |
 
 ## Links

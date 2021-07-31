@@ -14,16 +14,14 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerTypesMod {
   
-  @js.native
   trait IColorPicker extends StObject {
     
     /** The currently selected color. */
-    var color: IColor = js.native
+    var color: IColor
   }
   object IColorPicker {
     
@@ -41,7 +39,6 @@ object colorPickerTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerProps extends StObject {
     
     /**
@@ -49,13 +46,13 @@ object colorPickerTypesMod {
       * @defaultvalue Alpha
       * @deprecated Use `strings`
       */
-    var alphaLabel: js.UndefOr[String] = js.native
+    var alphaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to hide the alpha (or transparency) slider and text field.
       * @deprecated Use `alphaType: 'none'`
       */
-    var alphaSliderHidden: js.UndefOr[Boolean] = js.native
+    var alphaSliderHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * `alpha` (the default) means display a slider and text field for editing alpha values.
@@ -67,43 +64,43 @@ object colorPickerTypesMod {
       *
       * @defaultvalue 'alpha'
       */
-    var alphaType: js.UndefOr[alpha | transparency | none] = js.native
+    var alphaType: js.UndefOr[alpha | transparency | none] = js.undefined
     
     /**
       * Label for the blue text field.
       * @defaultvalue Blue
       * @deprecated Use `strings`
       */
-    var blueLabel: js.UndefOr[String] = js.native
+    var blueLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Additional CSS class(es) to apply to the ColorPicker.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Object or CSS-compatible string to describe the color.
       */
-    var color: IColor | String = js.native
+    var color: IColor | String
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IColorPicker]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IColorPicker]] = js.undefined
     
     /**
       * Label for the green text field.
       * @defaultvalue Green
       * @deprecated Use `strings`
       */
-    var greenLabel: js.UndefOr[String] = js.native
+    var greenLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the hex text field.
       * @defaultvalue Hex
       * @deprecated Use `strings`
       */
-    var hexLabel: js.UndefOr[String] = js.native
+    var hexLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Callback for when the user changes the color.
@@ -111,35 +108,35 @@ object colorPickerTypesMod {
       */
     var onChange: js.UndefOr[
         js.Function2[/* ev */ SyntheticEvent[HTMLElement, Event], /* color */ IColor, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Label for the red text field.
       * @defaultvalue Red
       * @deprecated Use `strings`
       */
-    var redLabel: js.UndefOr[String] = js.native
+    var redLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to show color preview box.
       * @defaultvalue false
       */
-    var showPreview: js.UndefOr[Boolean] = js.native
+    var showPreview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Labels for elements within the ColorPicker. Defaults are provided in English only.
       */
-    var strings: js.UndefOr[IColorPickerStrings] = js.native
+    var strings: js.UndefOr[IColorPickerStrings] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IColorPickerStyleProps, IColorPickerStyles]] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IColorPickerProps {
     
@@ -247,7 +244,6 @@ object colorPickerTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerStrings extends StObject {
     
     /**
@@ -255,68 +251,68 @@ object colorPickerTypesMod {
       * Also used as the aria label for the alpha slider if `alphaAriaLabel` is not provided.
       * @defaultvalue Alpha
       */
-    var alpha: js.UndefOr[String] = js.native
+    var alpha: js.UndefOr[String] = js.undefined
     
     /**
       * Customized aria-label for the alpha slider.
       */
-    var alphaAriaLabel: js.UndefOr[String] = js.native
+    var alphaAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the blue text field.
       * @defaultvalue Blue
       */
-    var blue: js.UndefOr[String] = js.native
+    var blue: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the green text field.
       * @defaultvalue Green
       */
-    var green: js.UndefOr[String] = js.native
+    var green: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the hex text field.
       * @defaultvalue Hex
       */
-    var hex: js.UndefOr[String] = js.native
+    var hex: js.UndefOr[String] = js.undefined
     
     /**
       * Aria label for the hue slider.
       * @deprecated Use `hueAriaLabel`
       */
-    var hue: js.UndefOr[String] = js.native
+    var hue: js.UndefOr[String] = js.undefined
     
     /**
       * Aria label for the hue slider.
       * @defaultvalue Hue
       */
-    var hueAriaLabel: js.UndefOr[String] = js.native
+    var hueAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the red text field.
       * @defaultvalue Red
       */
-    var red: js.UndefOr[String] = js.native
+    var red: js.UndefOr[String] = js.undefined
     
     /**
       * Accessible label for the root of the color picker region.
       * The string should contain a placeholder `{0}` for the currently selected color.
       * @defaultvalue `'Color picker, {0} selected.'`
       */
-    var rootAriaLabelFormat: js.UndefOr[String] = js.native
+    var rootAriaLabelFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Detailed description for how to use the color rectangle. Moving the thumb horizontally adjusts
       * saturation and moving it vertically adjusts value (essentially, brightness).
       * @defaultvalue 'Use left and right arrow keys to set saturation. Use up and down arrow keys to set brightness.'
       */
-    var svAriaDescription: js.UndefOr[String] = js.native
+    var svAriaDescription: js.UndefOr[String] = js.undefined
     
     /**
       * Aria label for the color rectangle, which adjusts saturation and value (brightness).
       * @defaultvalue 'Saturation and brightness'
       */
-    var svAriaLabel: js.UndefOr[String] = js.native
+    var svAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Format string for the current values of the color rectangle.
@@ -324,18 +320,18 @@ object colorPickerTypesMod {
       * `{0}` for saturation and `{1}` for value/brightness.
       * @defaultvalue `'Saturation {0} brightness {1}'`
       */
-    var svAriaValueFormat: js.UndefOr[String] = js.native
+    var svAriaValueFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the transparency text field.
       * @defaultvalue Transparency
       */
-    var transparency: js.UndefOr[String] = js.native
+    var transparency: js.UndefOr[String] = js.undefined
     
     /**
       * Customized aria-label for the transparency slider.
       */
-    var transparencyAriaLabel: js.UndefOr[String] = js.native
+    var transparencyAriaLabel: js.UndefOr[String] = js.undefined
   }
   object IColorPickerStrings {
     
@@ -435,14 +431,13 @@ object colorPickerTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.types.IColorPickerProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.types.IColorPickerProps, 'className' | 'alphaType'> */
-  @js.native
   trait IColorPickerStyleProps extends StObject {
     
-    var alphaType: js.UndefOr[alpha | transparency | none] = js.native
+    var alphaType: js.UndefOr[alpha | transparency | none] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IColorPickerStyleProps {
     
@@ -472,68 +467,67 @@ object colorPickerTypesMod {
     }
   }
   
-  @js.native
   trait IColorPickerStyles extends StObject {
     
     /**
       * Style set for the panel element that contains the color rectangle
       */
-    var colorRectangle: js.UndefOr[IStyle] = js.native
+    var colorRectangle: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Color Square
       */
-    var colorSquare: js.UndefOr[IStyle] = js.native
+    var colorSquare: js.UndefOr[IStyle] = js.undefined
     
     /**
       * flexContainer
       */
-    var flexContainer: js.UndefOr[IStyle] = js.native
+    var flexContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * flexPreviewBox
       */
-    var flexPreviewBox: js.UndefOr[IStyle] = js.native
+    var flexPreviewBox: js.UndefOr[IStyle] = js.undefined
     
     /**
       * flexSlider
       */
-    var flexSlider: js.UndefOr[IStyle] = js.native
+    var flexSlider: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for each text field input.
       */
-    var input: js.UndefOr[IStyle] = js.native
+    var input: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the panel element that contains the color rectangle, color sliders and inputs .
       */
-    var panel: js.UndefOr[IStyle] = js.native
+    var panel: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the root element.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the table element that contains the color sliders and inputs.
       */
-    var table: js.UndefOr[IStyle] = js.native
+    var table: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the table cell that contains the alpha or transparency label.
       */
-    var tableAlphaCell: js.UndefOr[IStyle] = js.native
+    var tableAlphaCell: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the table header that contains the labels.
       */
-    var tableHeader: js.UndefOr[IStyle] = js.native
+    var tableHeader: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the table cell that contains the hex label.
       */
-    var tableHexCell: js.UndefOr[IStyle] = js.native
+    var tableHexCell: js.UndefOr[IStyle] = js.undefined
   }
   object IColorPickerStyles {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /**
     * The AWS account ID of the member account.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.securityhubMod.AccountId] = js.undefined
   
   /**
     * The email address of the member account.
     */
-  var Email: js.UndefOr[NonEmptyString] = js.native
+  var Email: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A timestamp for the date and time when the invitation was sent to the member account.
     */
-  var InvitedAt: js.UndefOr[Timestamp] = js.native
+  var InvitedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The AWS account ID of the Security Hub master account associated with this member account.
     */
-  var MasterId: js.UndefOr[NonEmptyString] = js.native
+  var MasterId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the relationship between the member account and its master account.  The status can have one of the following values:    CREATED - Indicates that the master account added the member account, but has not yet invited the member account.    INVITED - Indicates that the master account invited the member account. The member account has not yet responded to the invitation.    ASSOCIATED - Indicates that the member account accepted the invitation.    REMOVED - Indicates that the master account disassociated the member account.    RESIGNED - Indicates that the member account disassociated themselves from the master account.    DELETED - Indicates that the master account deleted the member account.  
     */
-  var MemberStatus: js.UndefOr[NonEmptyString] = js.native
+  var MemberStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The timestamp for the date and time when the member account was updated.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object Member {
   

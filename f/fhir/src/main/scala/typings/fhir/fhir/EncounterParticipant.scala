@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of participants involved in the encounter
   */
-@js.native
-trait EncounterParticipant extends BackboneElement {
+trait EncounterParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Persons involved in the encounter other than the patient
     */
-  var individual: js.UndefOr[Reference] = js.native
+  var individual: js.UndefOr[Reference] = js.undefined
   
   /**
     * Period of time during the encounter that the participant participated
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Role of participant in encounter
     */
-  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object EncounterParticipant {
   

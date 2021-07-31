@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetOuterHTMLRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetOuterHTMLResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetOuterHTMLResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetOuterHTMLRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetOuterHTMLRequest]]
   
-  var returnType: GetOuterHTMLResponse = js.native
+  var returnType: GetOuterHTMLResponse
 }
 object ReturnTypeGetOuterHTMLResponse {
   

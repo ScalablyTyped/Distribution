@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1p1alpha1GcsDestination extends StObject {
   
   /** Required. The format of the gcs destination. Only "text/csv" and "application/json" are supported. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** Required. The output uri of destination file. */
-  var outputUri: js.UndefOr[String] = js.native
+  var outputUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1p1alpha1GcsDestination {
   

@@ -11,8 +11,8 @@ The lodash method `_.memoize` exported as a module.
 | Full name          | lodash.memoize |
 | Keywords           | lodash-modularized, memoize |
 | # releases         | 0 |
-| # dependents       | 330 |
-| # downloads        | 350327426 |
+| # dependents       | 359 |
+| # downloads        | 443015795 |
 | # stars            | 1 |
 
 ## Links

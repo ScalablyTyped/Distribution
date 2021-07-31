@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /**
@@ -18,16 +16,16 @@ trait Source extends StObject {
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The codec to use to decode data read from the source. */
   var codec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Setting this value to true hints to the framework that the source doesn't need splitting, and using SourceSplitRequest on it would yield SOURCE_SPLIT_OUTCOME_USE_CURRENT. E.g. a
@@ -36,20 +34,20 @@ trait Source extends StObject {
     * overview of the splitting process. This field is meaningful only in the Source objects populated by the user (e.g. when filling in a DerivedSource). Source objects supplied by the
     * framework to the user don't have this field populated.
     */
-  var doesNotNeedSplitting: js.UndefOr[Boolean] = js.native
+  var doesNotNeedSplitting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optionally, metadata for this source can be supplied right away, avoiding a SourceGetMetadataOperation roundtrip (see SourceOperationRequest). This field is meaningful only in the
     * Source objects populated by the user (e.g. when filling in a DerivedSource). Source objects supplied by the framework to the user don't have this field populated.
     */
-  var metadata: js.UndefOr[SourceMetadata] = js.native
+  var metadata: js.UndefOr[SourceMetadata] = js.undefined
   
   /** The source to read from, plus its parameters. */
   var spec: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Source {
   
@@ -67,7 +65,7 @@ object Source {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
@@ -78,14 +76,14 @@ object Source {
     def setBaseSpecsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any])*
     ): Self = StObject.set(x, "baseSpecs", js.Array(value :_*))
     
     @scala.inline
     def setCodec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
     ): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -107,7 +105,7 @@ object Source {
     def setSpec(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.Source & TopLevel[js.Any]
     ): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     @scala.inline

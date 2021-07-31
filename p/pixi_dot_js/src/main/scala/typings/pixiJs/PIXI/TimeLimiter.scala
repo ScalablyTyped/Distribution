@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,19 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait TimeLimiter extends StObject {
   
   /**
     * Checks to see if another item can be uploaded. This should only be called once per item.
     * @return {boolean} If the item is allowed to be uploaded.
     */
-  def allowedToUpload(): Boolean = js.native
+  def allowedToUpload(): Boolean
   
   /**
     * Resets any counting properties to start fresh on a new frame.
     */
-  def beginFrame(): Unit = js.native
+  def beginFrame(): Unit
 }
 object TimeLimiter {
   

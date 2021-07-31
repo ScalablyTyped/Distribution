@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.alb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerDefaultActionForwardTargetGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var arn: String = js.native
+  var arn: String
   
   /**
     * The weight. The range is 0 to 999.
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object ListenerDefaultActionForwardTargetGroup {
   

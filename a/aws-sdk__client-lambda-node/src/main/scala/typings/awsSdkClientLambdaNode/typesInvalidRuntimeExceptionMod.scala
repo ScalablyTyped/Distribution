@@ -4,24 +4,23 @@ import typings.awsSdkClientLambdaNode.invokeAsyncExceptionsUnionMod.InvokeAsyncE
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRuntimeExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRuntimeExceptionDetails> * / any */ @js.native
-  trait InvalidRuntimeException
-    extends InvokeAsyncExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRuntimeExceptionDetails> * / any */ trait InvalidRuntimeException
+    extends StObject
+       with InvokeAsyncExceptionsUnion
        with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRuntimeException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRuntimeException
   }
   object InvalidRuntimeException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRuntimeException): InvalidRuntimeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRuntimeException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRuntimeException")
       __obj.asInstanceOf[InvalidRuntimeException]
     }
     
@@ -33,18 +32,17 @@ object typesInvalidRuntimeExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRuntimeExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object InvalidRuntimeExceptionDetails {
     

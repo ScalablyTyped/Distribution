@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDatasetGroupRequest extends StObject {
   
   /**
     * The ARN of the dataset group to delete.
     */
-  var datasetGroupArn: Arn = js.native
+  var datasetGroupArn: Arn
 }
 object DeleteDatasetGroupRequest {
   

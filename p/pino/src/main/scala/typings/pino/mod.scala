@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.WritableStream
 import typings.node.eventsMod.EventEmitter
-import typings.node.eventsMod.EventEmitterOptions
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.pino.anon.AsObject
@@ -17,12 +16,10 @@ import typings.pinoStdSerializers.anon.Res
 import typings.pinoStdSerializers.mod.CustomErrorSerializer
 import typings.pinoStdSerializers.mod.CustomRequestSerializer
 import typings.pinoStdSerializers.mod.CustomResponseSerializer
-import typings.sonicBoom.mod.^
 import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,24 +29,24 @@ object mod {
     * relative protocol is enabled. Default: process.stdout
     * @returns a new logger instance.
     */
-  @JSImport("pino", JSImport.Namespace)
-  @js.native
-  def apply(): Logger = js.native
-  @JSImport("pino", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrStream: DestinationStream): Logger = js.native
-  @JSImport("pino", JSImport.Namespace)
-  @js.native
-  def apply(optionsOrStream: LoggerOptions): Logger = js.native
+  @scala.inline
+  def apply(): Logger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Logger]
+  @scala.inline
+  def apply(optionsOrStream: DestinationStream): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  @scala.inline
+  def apply(optionsOrStream: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].apply(optionsOrStream.asInstanceOf[js.Any]).asInstanceOf[Logger]
   /**
     * @param [options]: an options object
     * @param [stream]: a writable stream where the logs will be written. It can also receive some log-line metadata, if the
     * relative protocol is enabled. Default: process.stdout
     * @returns a new logger instance.
     */
+  @scala.inline
+  def apply(options: LoggerOptions, stream: DestinationStream): Logger = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Logger]
+  
   @JSImport("pino", JSImport.Namespace)
   @js.native
-  def apply(options: LoggerOptions, stream: DestinationStream): Logger = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Holds the current log format version (as output in the v property of each log record).
@@ -65,24 +62,18 @@ object mod {
     *                writing performance it is strongly recommended to use `pino.destination` to create the destination stream.
     * @returns A Sonic-Boom  stream to be used as destination for the pino function
     */
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(): ^ = js.native
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(dest: String): ^ = js.native
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(dest: Double): ^ = js.native
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(dest: WritableStream): ^ = js.native
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(dest: DestinationObjectOptions): ^ = js.native
-  @JSImport("pino", "destination")
-  @js.native
-  def destination(dest: DestinationStream): ^ = js.native
+  @scala.inline
+  def destination(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")().asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def destination(dest: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def destination(dest: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def destination(dest: WritableStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def destination(dest: DestinationObjectOptions): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def destination(dest: DestinationStream): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("destination")(dest.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
   
   /**
     * Create an extreme mode destination. This yields an additional 60% performance boost.
@@ -90,15 +81,33 @@ object mod {
     * @param [fileDescriptor]: File path or numerical file descriptor, by default 1
     * @returns A Sonic-Boom  stream to be used as destination for the pino function
     */
-  @JSImport("pino", "extreme")
-  @js.native
-  def extreme(): ^ = js.native
-  @JSImport("pino", "extreme")
-  @js.native
-  def extreme(fileDescriptor: String): ^ = js.native
-  @JSImport("pino", "extreme")
-  @js.native
-  def extreme(fileDescriptor: Double): ^ = js.native
+  @scala.inline
+  def extreme(): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")().asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def extreme(fileDescriptor: String): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  @scala.inline
+  def extreme(fileDescriptor: Double): typings.sonicBoom.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("extreme")(fileDescriptor.asInstanceOf[js.Any]).asInstanceOf[typings.sonicBoom.mod.^]
+  
+  /**
+    * The pino.final method can be used to acquire a final logger instance that synchronously flushes on every write.
+    * @param [logger]: pino logger that serves as reference for the final logger
+    * @returns Final, synchronous logger
+    */
+  @scala.inline
+  def `final`(logger: Logger): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("final")(logger.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  /**
+    * The pino.final method can be used to create an exit listener function.
+    * This listener function can be supplied to process exit events.
+    * The exit listener function will call the handler with
+    * @param [logger]: pino logger that serves as reference for the final logger
+    * @param [handler]: Function that will be called by the handler returned from this function
+    * @returns Exit listener function that can be supplied to process exit events and will call the supplied handler function
+    */
+  @scala.inline
+  def `final`(
+    logger: Logger,
+    handler: js.Function3[/* error */ Error, /* finalLogger */ Logger, /* repeated */ js.Any, Unit]
+  ): js.Function2[/* error */ Error | Null, /* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("final")(logger.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* error */ Error | Null, /* repeated */ js.Any, Unit]]
   
   @JSImport("pino", "levels")
   @js.native
@@ -122,9 +131,8 @@ object mod {
     /**
       * Serializes an Error object.
       */
-    @JSImport("pino", "stdSerializers.err")
-    @js.native
-    def err(err: Error): typings.pinoStdSerializers.mod.SerializedError = js.native
+    @scala.inline
+    def err(err: Error): typings.pinoStdSerializers.mod.SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedError]
     @scala.inline
     def err_=(x: js.Function1[/* err */ Error, typings.pinoStdSerializers.mod.SerializedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
@@ -153,9 +161,8 @@ object mod {
       * @param req The request to serialize
       * @return An object
       */
-    @JSImport("pino", "stdSerializers.mapHttpRequest")
-    @js.native
-    def mapHttpRequest(req: IncomingMessage): Req = js.native
+    @scala.inline
+    def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
     @scala.inline
     def mapHttpRequest_=(x: js.Function1[/* req */ IncomingMessage, Req]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpRequest")(x.asInstanceOf[js.Any])
     
@@ -184,9 +191,8 @@ object mod {
       * @param res The response to serialize.
       * @return An object.
       */
-    @JSImport("pino", "stdSerializers.mapHttpResponse")
-    @js.native
-    def mapHttpResponse(res: ServerResponse): Res = js.native
+    @scala.inline
+    def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
     @scala.inline
     def mapHttpResponse_=(x: js.Function1[/* res */ ServerResponse, Res]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapHttpResponse")(x.asInstanceOf[js.Any])
     
@@ -199,9 +205,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `request` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @JSImport("pino", "stdSerializers.req")
-    @js.native
-    def req(req: IncomingMessage): typings.pinoStdSerializers.mod.SerializedRequest = js.native
+    @scala.inline
+    def req(req: IncomingMessage): typings.pinoStdSerializers.mod.SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedRequest]
     @scala.inline
     def req_=(x: js.Function1[/* req */ IncomingMessage, typings.pinoStdSerializers.mod.SerializedRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
@@ -214,9 +219,8 @@ object mod {
     /**
       * Generates a JSONifiable object from the HTTP `response` object passed to the `createServer` callback of Node's HTTP server.
       */
-    @JSImport("pino", "stdSerializers.res")
-    @js.native
-    def res(res: ServerResponse): typings.pinoStdSerializers.mod.SerializedResponse = js.native
+    @scala.inline
+    def res(res: ServerResponse): typings.pinoStdSerializers.mod.SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedResponse]
     @scala.inline
     def res_=(x: js.Function1[/* res */ ServerResponse, typings.pinoStdSerializers.mod.SerializedResponse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
     
@@ -240,9 +244,8 @@ object mod {
       * error object. Returns the new (or updated) error object.
       * @return A new error serializer.
       */
-    @JSImport("pino", "stdSerializers.wrapErrorSerializer")
-    @js.native
-    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, _]] = js.native
+    @scala.inline
+    def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
     @scala.inline
     def wrapErrorSerializer_=(
       x: js.Function1[
@@ -271,9 +274,8 @@ object mod {
       * request object. Returns the new (or updated) request object.
       * @return A new error serializer.
       */
-    @JSImport("pino", "stdSerializers.wrapRequestSerializer")
-    @js.native
-    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, _]] = js.native
+    @scala.inline
+    def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
     @scala.inline
     def wrapRequestSerializer_=(
       x: js.Function1[
@@ -302,9 +304,8 @@ object mod {
       * response object. Returns the new (or updated) response object.
       * @return A new error serializer.
       */
-    @JSImport("pino", "stdSerializers.wrapResponseSerializer")
-    @js.native
-    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, _]] = js.native
+    @scala.inline
+    def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
     @scala.inline
     def wrapResponseSerializer_=(
       x: js.Function1[
@@ -329,9 +330,8 @@ object mod {
     /**
       * The default time function for Pino. Returns a string like `,"time":1493426328206`.
       */
-    @JSImport("pino", "stdTimeFunctions.epochTime")
-    @js.native
-    def epochTime(): String = js.native
+    @scala.inline
+    def epochTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("epochTime")().asInstanceOf[String]
     /**
       * The default time function for Pino. Returns a string like `,"time":1493426328206`.
       */
@@ -345,9 +345,8 @@ object mod {
     /*
       * Returns ISO 8601-formatted time in UTC
       */
-    @JSImport("pino", "stdTimeFunctions.isoTime")
-    @js.native
-    def isoTime(): String = js.native
+    @scala.inline
+    def isoTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoTime")().asInstanceOf[String]
     /*
       * Returns ISO 8601-formatted time in UTC
       */
@@ -361,9 +360,8 @@ object mod {
     /**
       * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
       */
-    @JSImport("pino", "stdTimeFunctions.nullTime")
-    @js.native
-    def nullTime(): String = js.native
+    @scala.inline
+    def nullTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("nullTime")().asInstanceOf[String]
     /**
       * Returns an empty string. This function is used when the `timestamp` option is set to `false`.
       */
@@ -377,9 +375,8 @@ object mod {
     /*
       * Returns the seconds since Unix epoch
       */
-    @JSImport("pino", "stdTimeFunctions.unixTime")
-    @js.native
-    def unixTime(): String = js.native
+    @scala.inline
+    def unixTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unixTime")().asInstanceOf[String]
     /*
       * Returns the seconds since Unix epoch
       */
@@ -547,7 +544,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def debug(msg: String, args: js.Any*): Unit = js.native
-    def debug[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -559,6 +555,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def debug[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def debug[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -581,7 +578,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def error(msg: String, args: js.Any*): Unit = js.native
-    def error[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -593,6 +589,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def error[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def error[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -615,7 +612,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def fatal(msg: String, args: js.Any*): Unit = js.native
-    def fatal[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -627,6 +623,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def fatal[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def fatal[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -654,7 +651,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def info(msg: String, args: js.Any*): Unit = js.native
-    def info[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -666,6 +662,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def info[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def info[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -740,12 +737,12 @@ object mod {
       * Noop function.
       */
     def silent(msg: String, args: js.Any*): Unit = js.native
-    def silent[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Noop function.
       */
     def silent[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def silent[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Noop function.
       */
@@ -762,7 +759,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def trace(msg: String, args: js.Any*): Unit = js.native
-    def trace[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -774,6 +770,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def trace[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def trace[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -811,7 +808,6 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def warn(msg: String, args: js.Any*): Unit = js.native
-    def warn[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     /**
       * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
@@ -823,6 +819,7 @@ object mod {
       * @param ...args: format string values when `msg` is a format string
       */
     def warn[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def warn[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
     /**
       * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
       * If more args follows `msg`, these will be used to format `msg` using `util.format`.
@@ -837,13 +834,13 @@ object mod {
   }
   
   // TODO replace `any` with `unknown` when TypeScript version >= 3.0
-  @js.native
   trait Bindings
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var level: js.UndefOr[Level | String] = js.native
+    var level: js.UndefOr[Level | String] = js.undefined
     
-    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.native
+    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.undefined
   }
   object Bindings {
     
@@ -874,16 +871,15 @@ object mod {
     * Equivalent of SonicBoom constructor options object
     */
   // TODO: use SonicBoom constructor options interface when available
-  @js.native
   trait DestinationObjectOptions extends StObject {
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[String | Double] = js.native
+    var fd: js.UndefOr[String | Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
   }
   object DestinationObjectOptions {
     
@@ -922,10 +918,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DestinationStream extends StObject {
     
-    def write(msg: String): Unit = js.native
+    def write(msg: String): Unit
   }
   object DestinationStream {
     
@@ -981,18 +976,17 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait LevelMapping extends StObject {
     
     /**
       * Returns the mappings of level internal level numbers to their string representations.
       */
-    var labels: NumberDictionary[String] = js.native
+    var labels: NumberDictionary[String]
     
     /**
       * Returns the mappings of level names to their respective internal number representation.
       */
-    var values: StringDictionary[Double] = js.native
+    var values: StringDictionary[Double]
   }
   object LevelMapping {
     
@@ -1060,7 +1054,6 @@ object mod {
     * to `messages` and `bindings` in the `logEvent` object. This allows  us to ensure a consistent format for all
     * values between server and client.
     */
-  @js.native
   trait LogEvent extends StObject {
     
     /**
@@ -1070,29 +1063,29 @@ object mod {
       * hold `[{a: 1}, {b: 2}]` and the `messages` array would be `[{c: 3}]`. The `bindings` are ordered according to
       * their position in the child logger hierarchy, with the lowest index being the top of the hierarchy.
       */
-    var bindings: js.Array[Bindings] = js.native
+    var bindings: js.Array[Bindings]
     
     /**
       * Holds the `label` (for instance `info`), and the corresponding numerical `value` (for instance `30`).
       * This could be important in cases where client side level values and labels differ from server side.
       */
-    var level: Label = js.native
+    var level: Label
     
     /**
       * All arguments passed to logger method, (for instance `logger.info('a', 'b', 'c')` would result in `messages`
       * array `['a', 'b', 'c']`).
       */
-    var messages: js.Array[_] = js.native
+    var messages: js.Array[js.Any]
     
     /**
       * Unix epoch timestamp in milliseconds, the time is taken from the moment the logger method is called.
       */
-    var ts: Double = js.native
+    var ts: Double
   }
   object LogEvent {
     
     @scala.inline
-    def apply(bindings: js.Array[Bindings], level: Label, messages: js.Array[_], ts: Double): LogEvent = {
+    def apply(bindings: js.Array[Bindings], level: Label, messages: js.Array[js.Any], ts: Double): LogEvent = {
       val __obj = js.Dynamic.literal(bindings = bindings.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], ts = ts.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogEvent]
     }
@@ -1110,7 +1103,7 @@ object mod {
       def setLevel(value: Label): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessages(value: js.Array[_]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      def setMessages(value: js.Array[js.Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMessagesVarargs(value: js.Any*): Self = StObject.set(x, "messages", js.Array(value :_*))
@@ -1124,409 +1117,51 @@ object mod {
   trait LogFn extends StObject {
     
     def apply(msg: String, args: js.Any*): Unit = js.native
-    def apply[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
     /* tslint:disable:no-unnecessary-generics */
     def apply[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
+    def apply[T /* <: js.Object */](obj: T, msg: Unit, args: js.Any*): Unit = js.native
   }
   
-  /* Inlined pino.pino.BaseLogger & {[key: string] : pino.pino.LogFn} */
-  @js.native
-  trait Logger extends /* key */ StringDictionary[LogFn] {
-    
-    /**
-      * Holds the current log format version (as output in the v property of each log record).
-      */
-    val LOG_VERSION: Double = js.native
-    
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    /**
-      * Returns an object containing all the current bindings, cloned from the ones passed in via logger.child().
-      */
-    def bindings(): Bindings = js.native
-    
-    /**
-      * Creates a child logger, setting all key-value pairs in `bindings` as properties in the log lines. All serializers will be applied to the given pair.
-      * Child loggers use the same output stream as the parent and inherit the current log level of the parent at the time they are spawned.
-      * From v2.x.x the log level of a child is mutable (whereas in v1.x.x it was immutable), and can be set independently of the parent.
-      * If a `level` property is present in the object passed to `child` it will override the child logger level.
-      *
-      * @param bindings: an object of key-value pairs to include in log lines as properties.
-      * @returns a child logger instance.
-      */
-    def child(bindings: Bindings): Logger = js.native
-    
-    /**
-      * Define additional logging levels.
-      */
-    var customLevels: StringDictionary[Double] = js.native
-    
-    /**
-      * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def debug(msg: String, args: js.Any*): Unit = js.native
-    def debug[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def debug[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'debug'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("debug")
-    var debug_Original: LogFn = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    
-    /**
-      * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def error(msg: String, args: js.Any*): Unit = js.native
-    def error[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def error[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'error'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("error")
-    var error_Original: LogFn = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    /**
-      * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def fatal(msg: String, args: js.Any*): Unit = js.native
-    def fatal[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def fatal[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'fatal'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("fatal")
-    var fatal_Original: LogFn = js.native
-    
-    /**
-      * Flushes the content of the buffer in extreme mode. It has no effect if extreme mode is not enabled.
-      */
-    def flush(): Unit = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
-    /**
-      * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def info(msg: String, args: js.Any*): Unit = js.native
-    def info[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def info[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'info'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("info")
-    var info_Original: LogFn = js.native
-    
-    def isLevelEnabled(level: String): Boolean = js.native
-    /**
-      * A utility method for determining if a given log level will write to the destination.
-      */
-    def isLevelEnabled(level: LevelWithSilent): Boolean = js.native
-    
-    /**
-      * Set this property to the desired logging level. In order of priority, available levels are:
-      *
-      * - 'fatal'
-      * - 'error'
-      * - 'warn'
-      * - 'info'
-      * - 'debug'
-      * - 'trace'
-      *
-      * The logging level is a __minimum__ level. For instance if `logger.level` is `'info'` then all `'fatal'`, `'error'`, `'warn'`,
-      * and `'info'` logs will be enabled.
-      *
-      * You can pass `'silent'` to disable logging.
-      */
-    var level: LevelWithSilent | String = js.native
-    
-    /**
-      * Returns the integer value for the logger instance's logging level.
-      */
-    var levelVal: Double = js.native
-    
-    var levels: LevelMapping = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /**
-      * Registers a listener function that is triggered when the level is changed.
-      * Note: When browserified, this functionality will only be available if the `events` module has been required elsewhere
-      * (e.g. if you're using streams in the browser). This allows for a trade-off between bundle size and functionality.
-      *
-      * @param event: only ever fires the `'level-change'` event
-      * @param listener: The listener is passed four arguments: `levelLabel`, `levelValue`, `previousLevelLabel`, `previousLevelValue`.
-      */
-    @JSName("on")
-    def on_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    /**
-      * Exposes the current version of Pino.
-      */
-    val pino: String = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_levelchange(event: `level-change`, listener: LevelChangeEventListener): this.type = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
-    
-    /**
-      * Noop function.
-      */
-    def silent(msg: String, args: js.Any*): Unit = js.native
-    def silent[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Noop function.
-      */
-    def silent[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Noop function.
-      */
-    @JSName("silent")
-    var silent_Original: LogFn = js.native
-    
-    /**
-      * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def trace(msg: String, args: js.Any*): Unit = js.native
-    def trace[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def trace[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'trace'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("trace")
-    var trace_Original: LogFn = js.native
-    
-    /**
-      * Outputs the level as a string instead of integer.
-      */
-    var useLevelLabels: Boolean = js.native
-    
-    /**
-      * Use only defined `customLevels` and omit Pino's levels.
-      */
-    var useOnlyCustomLevels: Boolean = js.native
-    
-    /**
-      * Exposes the Pino package version. Also available on the exported pino function.
-      */
-    val version: String = js.native
-    
-    /**
-      * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def warn(msg: String, args: js.Any*): Unit = js.native
-    def warn[T /* <: js.Object */](obj: T, msg: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-    /* tslint:disable:no-unnecessary-generics */
-    /**
-      * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    def warn[T /* <: js.Object */](obj: T, msg: String, args: js.Any*): Unit = js.native
-    /**
-      * Log at `'warn'` level the given msg. If the first argument is an object, all its properties will be included in the JSON line.
-      * If more args follows `msg`, these will be used to format `msg` using `util.format`.
-      *
-      * @typeParam T: the interface of the object being serialized. Default is object.
-      * @param obj: object to be serialized
-      * @param msg: the log message to write
-      * @param ...args: format string values when `msg` is a format string
-      */
-    @JSName("warn")
-    var warn_Original: LogFn = js.native
-  }
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @js.native
+  trait Logger extends BaseLogger
   
-  @js.native
   trait LoggerOptions extends StObject {
     
     /**
       * key-value object added as child logger to each log line. If set to null the base child logger is not added
       */
-    var base: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+    var base: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
     
     /**
       * Browser only, see http://getpino.io/#/docs/browser.
       */
-    var browser: js.UndefOr[AsObject] = js.native
+    var browser: js.UndefOr[AsObject] = js.undefined
     
     /**
       * (DEPRECATED, use `levelKey`) Changes the property `level` to any string value you pass in. Default: 'level'
       */
-    var changeLevelName: js.UndefOr[String] = js.native
+    var changeLevelName: js.UndefOr[String] = js.undefined
     
     /**
       * Use this option to define additional logging levels.
       * The keys of the object correspond the namespace of the log level, and the values should be the numerical value of the level.
       */
-    var customLevels: js.UndefOr[StringDictionary[Double]] = js.native
+    var customLevels: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /**
       * Enables logging. Default: `true`.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object containing functions for formatting the shape of the log lines.
@@ -1534,51 +1169,51 @@ object mod {
       * These functions allow for full customization of the resulting log lines.
       * For example, they can be used to change the level key name or to enrich the default metadata.
       */
-    var formatters: js.UndefOr[typings.pino.anon.Bindings] = js.native
+    var formatters: js.UndefOr[typings.pino.anon.Bindings] = js.undefined
     
     /**
       * An object mapping to hook functions. Hook functions allow for customizing internal logger operations.
       * Hook functions must be synchronous functions.
       */
-    var hooks: js.UndefOr[LogMethod] = js.native
+    var hooks: js.UndefOr[LogMethod] = js.undefined
     
     /**
       * One of the supported levels or `silent` to disable logging. Any other value defines a custom level and
       * requires supplying a level value via `levelVal`. Default: 'info'.
       */
-    var level: js.UndefOr[LevelWithSilent | String] = js.native
+    var level: js.UndefOr[LevelWithSilent | String] = js.undefined
     
     /**
       * Changes the property `level` to any string value you pass in. Default: 'level'
       */
-    var levelKey: js.UndefOr[String] = js.native
+    var levelKey: js.UndefOr[String] = js.undefined
     
     /**
       * When defining a custom log level via level, set to an integer value to define the new level. Default: `undefined`.
       */
-    var levelVal: js.UndefOr[Double] = js.native
+    var levelVal: js.UndefOr[Double] = js.undefined
     
     /**
       * The string key for the 'message' in the JSON object. Default: "msg".
       */
-    var messageKey: js.UndefOr[String] = js.native
+    var messageKey: js.UndefOr[String] = js.undefined
     
     /**
       * If provided, the `mixin` function is called each time one of the active logging methods
       * is called. The function must synchronously return an object. The properties of the
       * returned object will be added to the logged JSON.
       */
-    var mixin: js.UndefOr[MixinFn] = js.native
+    var mixin: js.UndefOr[MixinFn] = js.undefined
     
     /**
       * The name of the logger. Default: `undefined`.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The string key to place any logged object under.
       */
-    var nestedKey: js.UndefOr[String] = js.native
+    var nestedKey: js.UndefOr[String] = js.undefined
     
     /**
       * This function will be invoked during process shutdown when `extreme` is set to `true`. If you do not specify
@@ -1586,19 +1221,19 @@ object mod {
       * If you do specify a function, it is up to you to terminate the process; you must perform only synchronous
       * operations at this point. See http://getpino.io/#/docs/extreme for more detail.
       */
-    var onTerminated: js.UndefOr[js.Function2[/* eventName */ String, /* err */ js.Any, Unit]] = js.native
+    var onTerminated: js.UndefOr[js.Function2[/* eventName */ String, /* err */ js.Any, Unit]] = js.undefined
     
     /**
       * Allows to optionally define which prettifier module to use.
       */
     // TODO: use type definitions from 'pino-pretty' when available.
-    var prettifier: js.UndefOr[js.Any] = js.native
+    var prettifier: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Enables pino.pretty. This is intended for non-production configurations. This may be set to a configuration
       * object as outlined in http://getpino.io/#/docs/API?id=pretty. Default: `false`.
       */
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.native
+    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
     
     /**
       * As an array, the redact option specifies paths that should have their values redacted from any log output.
@@ -1611,19 +1246,19 @@ object mod {
       *      censor (String): Optional. A value to overwrite key which are to be redacted. Default: '[Redacted]'
       *      remove (Boolean): Optional. Instead of censoring the value, remove both the key and the value. Default: false
       */
-    var redact: js.UndefOr[js.Array[String] | redactOptions] = js.native
+    var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
     
     /**
       * Avoid error causes by circular references in the object tree. Default: `true`.
       */
-    var safe: js.UndefOr[Boolean] = js.native
+    var safe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * an object containing functions for custom serialization of objects.
       * These functions should return an JSONifiable object and they should never throw. When logging an object,
       * each top-level property matching the exact key of a serializer will be serialized using the defined serializer.
       */
-    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.native
+    var serializers: js.UndefOr[StringDictionary[SerializerFn]] = js.undefined
     
     /**
       * Enables or disables the inclusion of a timestamp in the log message. If a function is supplied, it must
@@ -1631,19 +1266,19 @@ object mod {
       * See stdTimeFunctions for a set of available functions for passing in as a value for this option.
       * Caution: any sort of formatted time will significantly slow down Pino's performance.
       */
-    var timestamp: js.UndefOr[TimeFn | Boolean] = js.native
+    var timestamp: js.UndefOr[TimeFn | Boolean] = js.undefined
     
     /**
       * Outputs the level as a string instead of integer. Default: `false`.
       */
-    var useLevelLabels: js.UndefOr[Boolean] = js.native
+    var useLevelLabels: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this option to only use defined `customLevels` and omit Pino's levels.
       * Logger's default `level` must be changed to a value in `customLevels` in order to use `useOnlyCustomLevels`
       * Warning: this option may not be supported by downstream transports.
       */
-    var useOnlyCustomLevels: js.UndefOr[Boolean] = js.native
+    var useOnlyCustomLevels: js.UndefOr[Boolean] = js.undefined
   }
   object LoggerOptions {
     
@@ -1807,64 +1442,63 @@ object mod {
   
   type MixinFn = js.Function0[js.Object]
   
-  @js.native
   trait PrettyOptions extends StObject {
     
     /**
       * If set to true, will add color information to the formatted output message. Default: `false`.
       */
-    var colorize: js.UndefOr[Boolean] = js.native
+    var colorize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appends carriage return and line feed, instead of just a line feed, to the formatted log line.
       */
-    var crlf: js.UndefOr[Boolean] = js.native
+    var crlf: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Define the log keys that are associated with error like objects. Default: ["err", "error"]
       */
-    var errorLikeObjectKeys: js.UndefOr[js.Array[String]] = js.native
+    var errorLikeObjectKeys: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       *  When formatting an error object, display this list of properties.
       *  The list should be a comma separated list of properties. Default: ''
       */
-    var errorProps: js.UndefOr[String] = js.native
+    var errorProps: js.UndefOr[String] = js.undefined
     
     /**
       * Ignore one or several keys. Example: "time,hostname"
       */
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, it will print the name of the log level as the first field in the log line. Default: `false`.
       */
-    var levelFirst: js.UndefOr[Boolean] = js.native
+    var levelFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Format output of message, e.g. {level} - {pid} will output message: INFO - 1123 Default: `false`.
       */
-    var messageFormat: js.UndefOr[`false` | String] = js.native
+    var messageFormat: js.UndefOr[`false` | String] = js.undefined
     
     /**
       * The key in the JSON object to use as the highlighted message. Default: "msg".
       */
-    var messageKey: js.UndefOr[String] = js.native
+    var messageKey: js.UndefOr[String] = js.undefined
     
     /**
       * Specify a search pattern according to {@link http://jmespath.org|jmespath}
       */
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
     
     /**
       * Suppress warning on first synchronous flushing.
       */
-    var suppressFlushSyncWarning: js.UndefOr[Boolean] = js.native
+    var suppressFlushSyncWarning: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key in the JSON object to use for timestamp display. Default: "time".
       */
-    var timestampKey: js.UndefOr[String] = js.native
+    var timestampKey: js.UndefOr[String] = js.undefined
     
     /**
       * Translate the epoch time value into a human readable date and time string.
@@ -1872,7 +1506,7 @@ object mod {
       * The default format is yyyy-mm-dd HH:MM:ss.l o in UTC.
       * For a list of available pattern letters see the {@link https://www.npmjs.com/package/dateformat|dateformat documentation}.
       */
-    var translateTime: js.UndefOr[Boolean | String] = js.native
+    var translateTime: js.UndefOr[Boolean | String] = js.undefined
   }
   object PrettyOptions {
     
@@ -1974,37 +1608,13 @@ object mod {
   
   type WriteFn = js.Function1[/* o */ js.Object, Unit]
   
-  /**
-    * The pino.final method can be used to acquire a final logger instance that synchronously flushes on every write.
-    * @param [logger]: pino logger that serves as reference for the final logger
-    * @returns Final, synchronous logger
-    */
-  @JSImport("pino", "final")
-  @js.native
-  def `final`(logger: Logger): Logger = js.native
-  /**
-    * The pino.final method can be used to create an exit listener function.
-    * This listener function can be supplied to process exit events.
-    * The exit listener function will call the handler with
-    * @param [logger]: pino logger that serves as reference for the final logger
-    * @param [handler]: Function that will be called by the handler returned from this function
-    * @returns Exit listener function that can be supplied to process exit events and will call the supplied handler function
-    */
-  @JSImport("pino", "final")
-  @js.native
-  def `final`(
-    logger: Logger,
-    handler: js.Function3[/* error */ Error, /* finalLogger */ Logger, /* repeated */ js.Any, Unit]
-  ): js.Function2[/* error */ Error | Null, /* repeated */ js.Any, Unit] = js.native
-  
-  @js.native
   trait redactOptions extends StObject {
     
-    var censor: js.UndefOr[String | (js.Function1[/* v */ js.Any, _])] = js.native
+    var censor: js.UndefOr[String | (js.Function1[/* v */ js.Any, js.Any])] = js.undefined
     
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
     
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
   }
   object redactOptions {
     
@@ -2018,10 +1628,10 @@ object mod {
     implicit class redactOptionsMutableBuilder[Self <: redactOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCensor(value: String | (js.Function1[/* v */ js.Any, _])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
+      def setCensor(value: String | (js.Function1[/* v */ js.Any, js.Any])): Self = StObject.set(x, "censor", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCensorFunction1(value: /* v */ js.Any => _): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
+      def setCensorFunction1(value: /* v */ js.Any => js.Any): Self = StObject.set(x, "censor", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCensorUndefined: Self = StObject.set(x, "censor", js.undefined)

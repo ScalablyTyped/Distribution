@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.bullet_list_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait BulletListOpenToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait BulletListOpenToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_BulletListOpenToken: bullet_list_open = js.native
+  var type_BulletListOpenToken: bullet_list_open
 }
 object BulletListOpenToken {
   
   @scala.inline
-  def apply(level: Double, `type`: bullet_list_open): BulletListOpenToken = {
+  def apply(level: Double): BulletListOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bullet_list_open")
     __obj.asInstanceOf[BulletListOpenToken]
   }
   

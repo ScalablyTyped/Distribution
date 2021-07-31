@@ -3,39 +3,37 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationOptions extends StObject {
   
-  var allowHideAfter: js.UndefOr[Double] = js.native
+  var allowHideAfter: js.UndefOr[Double] = js.undefined
   
-  var animation: js.UndefOr[js.Any | Boolean] = js.native
+  var animation: js.UndefOr[js.Any | Boolean] = js.undefined
   
-  var appendTo: js.UndefOr[String | JQuery] = js.native
+  var appendTo: js.UndefOr[String | JQuery] = js.undefined
   
-  var autoHideAfter: js.UndefOr[Double] = js.native
+  var autoHideAfter: js.UndefOr[Double] = js.undefined
   
-  var button: js.UndefOr[Boolean] = js.native
+  var button: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hide: js.UndefOr[js.Function1[/* e */ NotificationHideEvent, Unit]] = js.native
+  var hide: js.UndefOr[js.Function1[/* e */ NotificationHideEvent, Unit]] = js.undefined
   
-  var hideOnClick: js.UndefOr[Boolean] = js.native
+  var hideOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var position: js.UndefOr[NotificationPosition] = js.native
+  var position: js.UndefOr[NotificationPosition] = js.undefined
   
-  var show: js.UndefOr[js.Function1[/* e */ NotificationShowEvent, Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* e */ NotificationShowEvent, Unit]] = js.undefined
   
-  var stacking: js.UndefOr[String] = js.native
+  var stacking: js.UndefOr[String] = js.undefined
   
-  var templates: js.UndefOr[js.Array[NotificationTemplate]] = js.native
+  var templates: js.UndefOr[js.Array[NotificationTemplate]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object NotificationOptions {
   

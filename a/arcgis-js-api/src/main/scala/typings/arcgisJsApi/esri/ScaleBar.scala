@@ -7,11 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import typings.arcgisJsApi.arcgisJsApiStrings.ruler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleBar extends Widget_ {
+trait ScaleBar
+  extends StObject
+     with Widget_ {
   
   /**
     * The style for the scale bar.

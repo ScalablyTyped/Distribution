@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFacesResponse extends StObject {
   
   /**
     * An array of faces that matched the input face, along with the confidence in the match.
     */
-  var FaceMatches: js.UndefOr[FaceMatchList] = js.native
+  var FaceMatches: js.UndefOr[FaceMatchList] = js.undefined
   
   /**
     * Version number of the face detection model associated with the input collection (CollectionId).
     */
-  var FaceModelVersion: js.UndefOr[String] = js.native
+  var FaceModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the face that was searched for matches in a collection.
     */
-  var SearchedFaceId: js.UndefOr[FaceId] = js.native
+  var SearchedFaceId: js.UndefOr[FaceId] = js.undefined
 }
 object SearchFacesResponse {
   

@@ -8,11 +8,12 @@ import typings.googlemaps.google.maps.Data.StylingFunction
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Data extends MVCObject {
+trait Data
+  extends StObject
+     with MVCObject {
   
   def add(feature: Feature): Feature = js.native
   def add(feature: FeatureOptions): Feature = js.native
@@ -38,11 +39,7 @@ trait Data extends MVCObject {
   def getStyle(): StylingFunction | StyleOptions = js.native
   
   def loadGeoJson(url: String): Unit = js.native
-  def loadGeoJson(
-    url: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* features */ js.Array[Feature], Unit]
-  ): Unit = js.native
+  def loadGeoJson(url: String, options: Unit, callback: js.Function1[/* features */ js.Array[Feature], Unit]): Unit = js.native
   def loadGeoJson(url: String, options: GeoJsonOptions): Unit = js.native
   def loadGeoJson(
     url: String,
@@ -75,10 +72,9 @@ trait Data extends MVCObject {
 }
 object Data {
   
-  @js.native
   trait AddFeatureEvent extends StObject {
     
-    var feature: Feature = js.native
+    var feature: Feature
   }
   object AddFeatureEvent {
     
@@ -96,20 +92,19 @@ object Data {
     }
   }
   
-  @js.native
   trait DataOptions extends StObject {
     
-    var controlPosition: js.UndefOr[ControlPosition] = js.native
+    var controlPosition: js.UndefOr[ControlPosition] = js.undefined
     
-    var controls: js.UndefOr[js.Array[DrawingMode] | Null] = js.native
+    var controls: js.UndefOr[js.Array[DrawingMode] | Null] = js.undefined
     
-    var drawingMode: js.UndefOr[DrawingMode | Null] = js.native
+    var drawingMode: js.UndefOr[DrawingMode | Null] = js.undefined
     
-    var featureFactory: js.UndefOr[js.Function1[/* geometry */ Geometry, Feature]] = js.native
+    var featureFactory: js.UndefOr[js.Function1[/* geometry */ Geometry, Feature]] = js.undefined
     
-    var map: js.UndefOr[Map[Element]] = js.native
+    var map: js.UndefOr[Map[Element]] = js.undefined
     
-    var style: js.UndefOr[StylingFunction | StyleOptions] = js.native
+    var style: js.UndefOr[StylingFunction | StyleOptions] = js.undefined
   }
   object DataOptions {
     
@@ -194,14 +189,13 @@ object Data {
     def toGeoJson(callback: js.Function1[/* feature */ js.Object, Unit]): Unit = js.native
   }
   
-  @js.native
   trait FeatureOptions extends StObject {
     
-    var geometry: js.UndefOr[Geometry | LatLng | LatLngLiteral] = js.native
+    var geometry: js.UndefOr[Geometry | LatLng | LatLngLiteral] = js.undefined
     
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
-    var properties: js.UndefOr[js.Object] = js.native
+    var properties: js.UndefOr[js.Object] = js.undefined
   }
   object FeatureOptions {
     
@@ -234,10 +228,9 @@ object Data {
     }
   }
   
-  @js.native
   trait GeoJsonOptions extends StObject {
     
-    var idPropertyName: js.UndefOr[String] = js.native
+    var idPropertyName: js.UndefOr[String] = js.undefined
   }
   object GeoJsonOptions {
     
@@ -258,12 +251,11 @@ object Data {
     }
   }
   
-  @js.native
   trait Geometry extends StObject {
     
-    def forEachLatLng(callback: js.Function1[/* latLng */ LatLng, Unit]): Unit = js.native
+    def forEachLatLng(callback: js.Function1[/* latLng */ LatLng, Unit]): Unit
     
-    def getType(): String = js.native
+    def getType(): String
   }
   object Geometry {
     
@@ -284,14 +276,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait GeometryCollection extends Geometry {
+  trait GeometryCollection
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[Geometry] = js.native
+    def getArray(): js.Array[Geometry]
     
-    def getAt(n: Double): Geometry = js.native
+    def getAt(n: Double): Geometry
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object GeometryCollection {
     
@@ -321,14 +314,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait LineString extends Geometry {
+  trait LineString
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[LatLng] = js.native
+    def getArray(): js.Array[LatLng]
     
-    def getAt(n: Double): LatLng = js.native
+    def getAt(n: Double): LatLng
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object LineString {
     
@@ -358,14 +352,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait LinearRing extends Geometry {
+  trait LinearRing
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[LatLng] = js.native
+    def getArray(): js.Array[LatLng]
     
-    def getAt(n: Double): LatLng = js.native
+    def getAt(n: Double): LatLng
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object LinearRing {
     
@@ -396,11 +391,11 @@ object Data {
   }
   
   // tslint:disable-next-line:no-unnecessary-qualifier
-  @js.native
   trait MouseEvent
-    extends typings.googlemaps.google.maps.MouseEvent {
+    extends StObject
+       with typings.googlemaps.google.maps.MouseEvent {
     
-    var feature: Feature = js.native
+    var feature: Feature
   }
   object MouseEvent {
     
@@ -418,14 +413,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait MultiLineString extends Geometry {
+  trait MultiLineString
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[LineString] = js.native
+    def getArray(): js.Array[LineString]
     
-    def getAt(n: Double): LineString = js.native
+    def getAt(n: Double): LineString
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object MultiLineString {
     
@@ -455,14 +451,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait MultiPoint extends Geometry {
+  trait MultiPoint
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[LatLng] = js.native
+    def getArray(): js.Array[LatLng]
     
-    def getAt(n: Double): LatLng = js.native
+    def getAt(n: Double): LatLng
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object MultiPoint {
     
@@ -492,14 +489,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait MultiPolygon extends Geometry {
+  trait MultiPolygon
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[typings.googlemaps.google.maps.Data.Polygon] = js.native
+    def getArray(): js.Array[typings.googlemaps.google.maps.Data.Polygon]
     
-    def getAt(n: Double): typings.googlemaps.google.maps.Data.Polygon = js.native
+    def getAt(n: Double): typings.googlemaps.google.maps.Data.Polygon
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object MultiPolygon {
     
@@ -529,10 +527,11 @@ object Data {
     }
   }
   
-  @js.native
-  trait Point extends Geometry {
+  trait Point
+    extends StObject
+       with Geometry {
     
-    def get(): LatLng = js.native
+    def get(): LatLng
   }
   object Point {
     
@@ -554,14 +553,15 @@ object Data {
     }
   }
   
-  @js.native
-  trait Polygon extends Geometry {
+  trait Polygon
+    extends StObject
+       with Geometry {
     
-    def getArray(): js.Array[LinearRing] = js.native
+    def getArray(): js.Array[LinearRing]
     
-    def getAt(n: Double): LinearRing = js.native
+    def getAt(n: Double): LinearRing
     
-    def getLength(): Double = js.native
+    def getLength(): Double
   }
   object Polygon {
     
@@ -591,10 +591,9 @@ object Data {
     }
   }
   
-  @js.native
   trait RemoveFeatureEvent extends StObject {
     
-    var feature: Feature = js.native
+    var feature: Feature
   }
   object RemoveFeatureEvent {
     
@@ -612,14 +611,13 @@ object Data {
     }
   }
   
-  @js.native
   trait RemovePropertyEvent extends StObject {
     
-    var feature: Feature = js.native
+    var feature: Feature
     
-    var name: String = js.native
+    var name: String
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
   }
   object RemovePropertyEvent {
     
@@ -643,14 +641,13 @@ object Data {
     }
   }
   
-  @js.native
   trait SetGeometryEvent extends StObject {
     
-    var feature: Feature = js.native
+    var feature: Feature
     
-    var newGeometry: Geometry = js.native
+    var newGeometry: Geometry
     
-    var oldGeometry: Geometry = js.native
+    var oldGeometry: Geometry
   }
   object SetGeometryEvent {
     
@@ -674,16 +671,15 @@ object Data {
     }
   }
   
-  @js.native
   trait SetPropertyEvent extends StObject {
     
-    var feature: Feature = js.native
+    var feature: Feature
     
-    var name: String = js.native
+    var name: String
     
-    var newValue: js.Any = js.native
+    var newValue: js.Any
     
-    var oldValue: js.Any = js.native
+    var oldValue: js.Any
   }
   object SetPropertyEvent {
     
@@ -710,37 +706,36 @@ object Data {
     }
   }
   
-  @js.native
   trait StyleOptions extends StObject {
     
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     // tslint:disable-next-line:no-unnecessary-qualifier
-    var icon: js.UndefOr[String | Icon | Symbol] = js.native
+    var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
     
-    var shape: js.UndefOr[MarkerShape] = js.native
+    var shape: js.UndefOr[MarkerShape] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
-    var strokeWeight: js.UndefOr[Double] = js.native
+    var strokeWeight: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object StyleOptions {
     

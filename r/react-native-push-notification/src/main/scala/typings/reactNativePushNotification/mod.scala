@@ -23,7 +23,6 @@ import typings.reactNativePushNotification.reactNativePushNotificationStrings.we
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -259,24 +258,23 @@ object mod extends Shortcut {
     var userInteraction: Boolean = js.native
   }
   
-  @js.native
   trait PushNotificationOptions extends StObject {
     
-    var onAction: js.UndefOr[js.Function1[/* notification */ PushNotification, Unit]] = js.native
+    var onAction: js.UndefOr[js.Function1[/* notification */ PushNotification, Unit]] = js.undefined
     
-    var onNotification: js.UndefOr[js.Function1[/* notification */ PushNotification, Unit]] = js.native
+    var onNotification: js.UndefOr[js.Function1[/* notification */ PushNotification, Unit]] = js.undefined
     
-    var onRegister: js.UndefOr[js.Function1[/* token */ Os, Unit]] = js.native
+    var onRegister: js.UndefOr[js.Function1[/* token */ Os, Unit]] = js.undefined
     
-    var onRegistrationError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+    var onRegistrationError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
     
-    var onRemoteFetch: js.UndefOr[js.Function1[/* notificationData */ js.Any, Unit]] = js.native
+    var onRemoteFetch: js.UndefOr[js.Function1[/* notificationData */ js.Any, Unit]] = js.undefined
     
-    var permissions: js.UndefOr[PushNotificationPermissions] = js.native
+    var permissions: js.UndefOr[PushNotificationPermissions] = js.undefined
     
-    var popInitialNotification: js.UndefOr[Boolean] = js.native
+    var popInitialNotification: js.UndefOr[Boolean] = js.undefined
     
-    var requestPermissions: js.UndefOr[Boolean] = js.native
+    var requestPermissions: js.UndefOr[Boolean] = js.undefined
   }
   object PushNotificationOptions {
     
@@ -339,14 +337,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PushNotificationPermissions extends StObject {
     
-    var alert: js.UndefOr[Boolean] = js.native
+    var alert: js.UndefOr[Boolean] = js.undefined
     
-    var badge: js.UndefOr[Boolean] = js.native
+    var badge: js.UndefOr[Boolean] = js.undefined
     
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
   }
   object PushNotificationPermissions {
     

@@ -2,29 +2,27 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclCodecs extends StObject {
   
-  var arrayBuffer: SjclArrayBufferCodec = js.native
+  var arrayBuffer: SjclArrayBufferCodec
   
-  var base32: SjclCodec[String] = js.native
+  var base32: SjclCodec[String]
   
-  var base32hex: SjclCodec[String] = js.native
+  var base32hex: SjclCodec[String]
   
-  var base64: SjclCodec[String] = js.native
+  var base64: SjclCodec[String]
   
-  var base64url: SjclCodec[String] = js.native
+  var base64url: SjclCodec[String]
   
-  var bytes: SjclCodec[js.Array[Double]] = js.native
+  var bytes: SjclCodec[js.Array[Double]]
   
-  var hex: SjclCodec[String] = js.native
+  var hex: SjclCodec[String]
   
-  var utf8String: SjclCodec[String] = js.native
+  var utf8String: SjclCodec[String]
   
-  var z85: SjclCodec[String] = js.native
+  var z85: SjclCodec[String]
 }
 object SjclCodecs {
   

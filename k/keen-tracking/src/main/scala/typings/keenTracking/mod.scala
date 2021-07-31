@@ -5,23 +5,29 @@ import typings.keenTracking.anon.Created
 import typings.keenTracking.anon.ProjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("keen-tracking", JSImport.Default)
   @js.native
-  class default protected () extends KeenTracking {
+  class default protected ()
+    extends StObject
+       with KeenTracking {
     def this(options: ProjectId) = this()
+    
+    /* CompleteClass */
+    override def recordEvent(collectionName: String, event: js.Object): js.Promise[Created] = js.native
+    
+    /* CompleteClass */
+    override def recordEvents(events: StringDictionary[js.Array[js.Object]]): js.Promise[StringDictionary[js.Array[Boolean]]] = js.native
   }
   
-  @js.native
   trait KeenTracking extends StObject {
     
-    def recordEvent(collectionName: String, event: js.Object): js.Promise[Created] = js.native
+    def recordEvent(collectionName: String, event: js.Object): js.Promise[Created]
     
-    def recordEvents(events: StringDictionary[js.Array[js.Object]]): js.Promise[StringDictionary[js.Array[Boolean]]] = js.native
+    def recordEvents(events: StringDictionary[js.Array[js.Object]]): js.Promise[StringDictionary[js.Array[Boolean]]]
   }
   object KeenTracking {
     

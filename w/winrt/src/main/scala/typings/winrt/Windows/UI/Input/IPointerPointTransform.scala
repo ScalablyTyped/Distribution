@@ -5,17 +5,15 @@ import typings.winrt.Windows.Foundation.Rect
 import typings.winrt.anon.OutPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerPointTransform extends StObject {
   
-  var inverse: IPointerPointTransform = js.native
+  var inverse: IPointerPointTransform
   
-  def transformBounds(rect: Rect): Rect = js.native
+  def transformBounds(rect: Rect): Rect
   
-  def tryTransform(inPoint: Point): OutPoint = js.native
+  def tryTransform(inPoint: Point): OutPoint
 }
 object IPointerPointTransform {
   

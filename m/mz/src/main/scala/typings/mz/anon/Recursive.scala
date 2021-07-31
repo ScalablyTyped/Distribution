@@ -3,23 +3,21 @@ package typings.mz.anon
 import typings.mz.mzStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recursive extends StObject {
   
-  var encoding: buffer = js.native
+  var encoding: buffer
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
 }
 object Recursive {
   
   @scala.inline
-  def apply(encoding: buffer): Recursive = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+  def apply(): Recursive = {
+    val __obj = js.Dynamic.literal(encoding = "buffer")
     __obj.asInstanceOf[Recursive]
   }
   

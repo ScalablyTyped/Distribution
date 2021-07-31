@@ -2,21 +2,19 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait datapointFormat extends StObject {
   
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
-  var number: Boolean = js.native
+  var number: Boolean
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var x: js.UndefOr[Boolean] = js.native
+  var x: js.UndefOr[Boolean] = js.undefined
   
-  var y: js.UndefOr[Boolean] = js.native
+  var y: js.UndefOr[Boolean] = js.undefined
 }
 object datapointFormat {
   

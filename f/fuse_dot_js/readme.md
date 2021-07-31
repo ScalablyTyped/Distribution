@@ -10,9 +10,9 @@ Lightweight fuzzy-search
 | ------------------ | :-------------: |
 | Full name          | fuse.js |
 | Keywords           | fuzzy, search, bitap |
-| # releases         | 63 |
-| # dependents       | 687 |
-| # downloads        | 90321333 |
+| # releases         | 66 |
+| # dependents       | 701 |
+| # downloads        | 96487004 |
 | # stars            | 25 |
 
 ## Links

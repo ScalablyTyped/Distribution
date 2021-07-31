@@ -4,26 +4,25 @@ import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.unsubscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUnsubscribePacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IUnsubscribePacket: unsubscribe = js.native
+  var cmd_IUnsubscribePacket: unsubscribe
   
-  var properties: js.UndefOr[ReasonString] = js.native
+  var properties: js.UndefOr[ReasonString] = js.undefined
   
-  var unsubscriptions: js.Array[String] = js.native
+  var unsubscriptions: js.Array[String]
 }
 object IUnsubscribePacket {
   
   @scala.inline
-  def apply(cmd: unsubscribe, unsubscriptions: js.Array[String]): IUnsubscribePacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
+  def apply(unsubscriptions: js.Array[String]): IUnsubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "unsubscribe", unsubscriptions = unsubscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUnsubscribePacket]
   }
   

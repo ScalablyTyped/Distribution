@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnCompassChangeCallbackResult extends StObject {
   
   /** 精度
     *
     * 最低基础库： `2.4.0` */
-  var accuracy: Double | String = js.native
+  var accuracy: Double | String
   
   /** 面对的方向度数 */
-  var direction: Double = js.native
+  var direction: Double
 }
 object OnCompassChangeCallbackResult {
   

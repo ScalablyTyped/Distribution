@@ -3,18 +3,21 @@ package typings.vkOpenapi
 import typings.vkOpenapi.vk.OpenAPI.NumericBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vkOpenapiNumbers {
   
   @js.native
-  sealed trait `0` extends NumericBoolean
+  sealed trait `0`
+    extends StObject
+       with NumericBoolean
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
-  sealed trait `1` extends NumericBoolean
+  sealed trait `1`
+    extends StObject
+       with NumericBoolean
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * provider can be created and registered at the UCB.
   * @see XContentProviderProxyFactory
   */
-@js.native
 trait ContentProviderProxy
-  extends XContentProviderSupplier
+  extends StObject
+     with XContentProviderSupplier
      with XContentProvider
      with XParameterizedContentProvider
 object ContentProviderProxy {

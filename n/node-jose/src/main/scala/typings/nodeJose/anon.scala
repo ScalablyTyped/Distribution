@@ -7,21 +7,19 @@ import typings.nodeJose.nodeJoseStrings.flattened
 import typings.nodeJose.nodeJoseStrings.general
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alg extends StObject {
     
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var fields: js.UndefOr[js.Object] = js.native
+    var fields: js.UndefOr[js.Object] = js.undefined
     
-    var format: js.UndefOr[compact | flattened] = js.native
+    var format: js.UndefOr[compact | flattened] = js.undefined
   }
   object Alg {
     
@@ -60,14 +58,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Algorithms extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowEmbeddedKey: js.UndefOr[Boolean] = js.native
+    var allowEmbeddedKey: js.UndefOr[Boolean] = js.undefined
     
-    var handlers: js.UndefOr[js.Any] = js.native
+    var handlers: js.UndefOr[js.Any] = js.undefined
   }
   object Algorithms {
     
@@ -103,10 +100,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AllowEmbeddedKey extends StObject {
     
-    var allowEmbeddedKey: js.UndefOr[Boolean] = js.native
+    var allowEmbeddedKey: js.UndefOr[Boolean] = js.undefined
   }
   object AllowEmbeddedKey {
     
@@ -127,18 +123,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentAlg extends StObject {
     
-    var contentAlg: js.UndefOr[String] = js.native
+    var contentAlg: js.UndefOr[String] = js.undefined
     
-    var fields: js.UndefOr[js.Object] = js.native
+    var fields: js.UndefOr[js.Object] = js.undefined
     
-    var format: js.UndefOr[general | compact | flattened] = js.native
+    var format: js.UndefOr[general | compact | flattened] = js.undefined
     
-    var protect: js.UndefOr[String | js.Array[String]] = js.native
+    var protect: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var zip: js.UndefOr[Boolean | DEF] = js.native
+    var zip: js.UndefOr[Boolean | DEF] = js.undefined
   }
   object ContentAlg {
     
@@ -186,10 +181,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Exp extends StObject {
     
-    var exp: Boolean | typings.nodeJose.mod.JWS.Exp = js.native
+    var exp: Boolean | typings.nodeJose.mod.JWS.Exp
   }
   object Exp {
     
@@ -208,16 +202,15 @@ object anon {
   }
   
   /* Inlined std.Partial<node-jose.node-jose.JWK.KeyStoreGetOptions> */
-  @js.native
   trait PartialKeyStoreGetOptions extends StObject {
     
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
-    var kid: js.UndefOr[String] = js.native
+    var kid: js.UndefOr[String] = js.undefined
     
-    var kty: js.UndefOr[String] = js.native
+    var kty: js.UndefOr[String] = js.undefined
     
-    var use: js.UndefOr[KeyUse] = js.native
+    var use: js.UndefOr[KeyUse] = js.undefined
   }
   object PartialKeyStoreGetOptions {
     

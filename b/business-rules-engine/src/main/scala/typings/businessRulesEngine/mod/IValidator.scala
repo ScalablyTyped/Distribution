@@ -3,17 +3,15 @@ package typings.businessRulesEngine.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidator extends StObject {
   
-  var Error: IError = js.native
+  var Error: IError
   
-  def Validate(context: js.Any): IValidationFailure = js.native
+  def Validate(context: js.Any): IValidationFailure
   
-  def ValidateAsync(context: js.Any): Promise[IValidationFailure] = js.native
+  def ValidateAsync(context: js.Any): Promise[IValidationFailure]
 }
 object IValidator {
   

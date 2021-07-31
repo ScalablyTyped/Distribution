@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A bookmark is a {@link TextContent} , which is like a jump target or a label. */
-@js.native
 trait Bookmark
-  extends TextContent
+  extends StObject
+     with TextContent
      with XNamed
 object Bookmark {
   

@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the properties of a TableCell.
   */
-@js.native
 trait SchemaUpdateTableCellPropertiesRequest extends StObject {
   
   /**
@@ -20,24 +18,24 @@ trait SchemaUpdateTableCellPropertiesRequest extends StObject {
     * reset a property to its default value, include its field name in the
     * field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the table.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The table cell properties to update.
     */
-  var tableCellProperties: js.UndefOr[SchemaTableCellProperties] = js.native
+  var tableCellProperties: js.UndefOr[SchemaTableCellProperties] = js.undefined
   
   /**
     * The table range representing the subset of the table to which the updates
     * are applied. If a table range is not specified, the updates will apply to
     * the entire table.
     */
-  var tableRange: js.UndefOr[SchemaTableRange] = js.native
+  var tableRange: js.UndefOr[SchemaTableRange] = js.undefined
 }
 object SchemaUpdateTableCellPropertiesRequest {
   

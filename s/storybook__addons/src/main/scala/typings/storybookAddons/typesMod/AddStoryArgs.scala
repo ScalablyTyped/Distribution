@@ -2,21 +2,19 @@ package typings.storybookAddons.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddStoryArgs[StoryFnReturnType] extends StObject {
   
-  var id: StoryId = js.native
+  var id: StoryId
   
-  var kind: StoryKind = js.native
+  var kind: StoryKind
   
-  var name: StoryName = js.native
+  var name: StoryName
   
-  var parameters: Parameters = js.native
+  var parameters: Parameters
   
-  var storyFn: StoryFn[StoryFnReturnType] = js.native
+  var storyFn: StoryFn[StoryFnReturnType]
 }
 object AddStoryArgs {
   
@@ -33,7 +31,7 @@ object AddStoryArgs {
   }
   
   @scala.inline
-  implicit class AddStoryArgsMutableBuilder[Self <: AddStoryArgs[_], StoryFnReturnType] (val x: Self with AddStoryArgs[StoryFnReturnType]) extends AnyVal {
+  implicit class AddStoryArgsMutableBuilder[Self <: AddStoryArgs[?], StoryFnReturnType] (val x: Self & AddStoryArgs[StoryFnReturnType]) extends AnyVal {
     
     @scala.inline
     def setId(value: StoryId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

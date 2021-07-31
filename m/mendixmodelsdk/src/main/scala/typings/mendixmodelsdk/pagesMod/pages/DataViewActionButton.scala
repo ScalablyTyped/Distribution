@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,9 +43,8 @@ object DataViewActionButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton.create")
-  @js.native
-  def create(model: IModel): DataViewActionButton = js.native
+  @scala.inline
+  def create(model: IModel): DataViewActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DataViewActionButton]
   
   /**
     * Creates and returns a new DataViewActionButton instance in the SDK and on the server.
@@ -57,9 +55,8 @@ object DataViewActionButton {
     *  6.0.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): DataViewActionButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): DataViewActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[DataViewActionButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DataViewActionButton.structureTypeName")

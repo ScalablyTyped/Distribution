@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTDataSourceSettingsRestSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,32 +15,32 @@ trait RESTDataSourceSettingsRestSettings
   /**
     * Specifies a custom function to serialize content sent to the server. It should accept a single object or an array of objects and return a string. If not specified, JSON.stringify() will be used.
     */
-  var contentSerializer: js.UndefOr[js.Function] = js.native
+  var contentSerializer: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Specifies the content type of the request
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Settings for create requests
     */
-  var create: js.UndefOr[RESTDataSourceSettingsRestSettingsCreate] = js.native
+  var create: js.UndefOr[RESTDataSourceSettingsRestSettingsCreate] = js.undefined
   
   /**
     * Specifies whether the ids of the removed resources are send through the request URI
     */
-  var encodeRemoveInRequestUri: js.UndefOr[Boolean] = js.native
+  var encodeRemoveInRequestUri: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Settings for remove requests
     */
-  var remove: js.UndefOr[RESTDataSourceSettingsRestSettingsRemove] = js.native
+  var remove: js.UndefOr[RESTDataSourceSettingsRestSettingsRemove] = js.undefined
   
   /**
     * Settings for update requests
     */
-  var update: js.UndefOr[RESTDataSourceSettingsRestSettingsUpdate] = js.native
+  var update: js.UndefOr[RESTDataSourceSettingsRestSettingsUpdate] = js.undefined
 }
 object RESTDataSourceSettingsRestSettings {
   

@@ -3,24 +3,23 @@ package typings.mocha.mod
 import typings.mocha.Mocha.Suite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaces {
   
-  @JSImport("mocha", "interfaces.bdd")
+  @JSImport("mocha", "interfaces")
   @js.native
-  def bdd(suite: Suite): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mocha", "interfaces.exports")
-  @js.native
-  def exports(suite: Suite): Unit = js.native
+  @scala.inline
+  def bdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mocha", "interfaces.qunit")
-  @js.native
-  def qunit(suite: Suite): Unit = js.native
+  @scala.inline
+  def exports(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exports")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mocha", "interfaces.tdd")
-  @js.native
-  def tdd(suite: Suite): Unit = js.native
+  @scala.inline
+  def qunit(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("qunit")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def tdd(suite: Suite): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tdd")(suite.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

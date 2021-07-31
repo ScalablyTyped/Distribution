@@ -2,22 +2,20 @@ package typings.nodeXlsx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Array[js.Array[_]] = js.native
+    var data: js.Array[js.Array[js.Any]]
     
-    var name: String = js.native
+    var name: String
   }
   object Data {
     
     @scala.inline
-    def apply(data: js.Array[js.Array[_]], name: String): Data = {
+    def apply(data: js.Array[js.Array[js.Any]], name: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
@@ -26,7 +24,7 @@ object anon {
     implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -36,19 +34,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var data: js.Array[js.Array[_]] = js.native
+    var data: js.Array[js.Array[js.Any]]
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Name {
     
     @scala.inline
-    def apply(data: js.Array[js.Array[_]], name: String): Name = {
+    def apply(data: js.Array[js.Array[js.Any]], name: String): Name = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
@@ -57,7 +54,7 @@ object anon {
     implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "data", js.Array(value :_*))

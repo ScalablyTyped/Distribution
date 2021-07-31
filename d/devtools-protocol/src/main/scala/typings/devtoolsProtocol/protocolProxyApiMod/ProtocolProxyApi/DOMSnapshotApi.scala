@@ -6,10 +6,8 @@ import typings.devtoolsProtocol.mod.Protocol.DOMSnapshot.GetSnapshotRequest
 import typings.devtoolsProtocol.mod.Protocol.DOMSnapshot.GetSnapshotResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMSnapshotApi extends StObject {
   
   /**
@@ -18,17 +16,17 @@ trait DOMSnapshotApi extends StObject {
     * white-listed computed style information for the nodes. Shadow DOM in the returned DOM tree is
     * flattened.
     */
-  def captureSnapshot(params: CaptureSnapshotRequest): js.Promise[CaptureSnapshotResponse] = js.native
+  def captureSnapshot(params: CaptureSnapshotRequest): js.Promise[CaptureSnapshotResponse]
   
   /**
     * Disables DOM snapshot agent for the given page.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables DOM snapshot agent for the given page.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Returns a document snapshot, including the full DOM tree of the root node (including iframes,
@@ -36,7 +34,7 @@ trait DOMSnapshotApi extends StObject {
     * white-listed computed style information for the nodes. Shadow DOM in the returned DOM tree is
     * flattened.
     */
-  def getSnapshot(params: GetSnapshotRequest): js.Promise[GetSnapshotResponse] = js.native
+  def getSnapshot(params: GetSnapshotRequest): js.Promise[GetSnapshotResponse]
 }
 object DOMSnapshotApi {
   

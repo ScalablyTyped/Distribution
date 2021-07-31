@@ -3,25 +3,23 @@ package typings.jsoneditor.mod
 import typings.jsoneditor.jsoneditorStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var click: js.UndefOr[js.Function0[Unit]] = js.native
+  var click: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var submenu: js.UndefOr[js.Array[MenuItem]] = js.native
+  var submenu: js.UndefOr[js.Array[MenuItem]] = js.undefined
   
-  var submenuTitle: js.UndefOr[String] = js.native
+  var submenuTitle: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: js.UndefOr[separator] = js.native
+  var `type`: js.UndefOr[separator] = js.undefined
 }
 object MenuItem {
   

@@ -2,15 +2,13 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightNumber extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: js.Any = js.native
+  var width: js.Any
 }
 object HeightNumber {
   

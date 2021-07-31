@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a container of parameters, typically used for a prepared statement. */
-@js.native
-trait XParametersSupplier extends XInterface {
+trait XParametersSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of parameters.
     * @returns the parameters
     */
-  val Parameters: XIndexAccess = js.native
+  val Parameters: XIndexAccess
   
   /**
     * returns the container of parameters.
     * @returns the parameters
     */
-  def getParameters(): XIndexAccess = js.native
+  def getParameters(): XIndexAccess
 }
 object XParametersSupplier {
   

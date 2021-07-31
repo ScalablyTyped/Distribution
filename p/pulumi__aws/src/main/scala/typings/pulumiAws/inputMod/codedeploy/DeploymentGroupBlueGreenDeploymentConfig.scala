@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.codedeploy
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupBlueGreenDeploymentConfig extends StObject {
   
   /**
     * Information about the action to take when newly provisioned instances are ready to receive traffic in a blue/green deployment (documented below).
     */
-  var deploymentReadyOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]] = js.native
+  var deploymentReadyOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOption]] = js.undefined
   
   /**
     * Information about how instances are provisioned for a replacement environment in a blue/green deployment (documented below).
     */
-  var greenFleetProvisioningOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption]] = js.native
+  var greenFleetProvisioningOption: js.UndefOr[Input[DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption]] = js.undefined
   
   /**
     * Information about whether to terminate instances in the original fleet during a blue/green deployment (documented below).
@@ -26,7 +24,7 @@ trait DeploymentGroupBlueGreenDeploymentConfig extends StObject {
     Input[
       DeploymentGroupBlueGreenDeploymentConfigTerminateBlueInstancesOnDeploymentSuccess
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object DeploymentGroupBlueGreenDeploymentConfig {
   

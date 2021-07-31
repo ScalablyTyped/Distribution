@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CorridorGeometry")
@@ -12,22 +11,21 @@ class CorridorGeometry protected () extends Packable {
 }
 object CorridorGeometry {
   
-  /* static member */
-  @JSImport("cesium", "CorridorGeometry.createGeometry")
+  @JSImport("cesium", "CorridorGeometry")
   @js.native
-  def createGeometry(corridorGeometry: CorridorGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "CorridorGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): CorridorGeometry = js.native
-  @JSImport("cesium", "CorridorGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: CorridorGeometry): CorridorGeometry = js.native
-  @JSImport("cesium", "CorridorGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): CorridorGeometry = js.native
-  @JSImport("cesium", "CorridorGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorGeometry): CorridorGeometry = js.native
+  @scala.inline
+  def createGeometry(corridorGeometry: CorridorGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(corridorGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): CorridorGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CorridorGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: CorridorGeometry): CorridorGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CorridorGeometry]
 }

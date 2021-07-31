@@ -2,21 +2,19 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseHandlerOptions extends StObject {
   
-  var dragDelay: Double = js.native
+  var dragDelay: Double
   
-  var dragEnabled: Boolean = js.native
+  var dragEnabled: Boolean
   
-  var focusTimeout: Double = js.native
+  var focusTimeout: Double
   
-  var scrollSpeed: Double = js.native
+  var scrollSpeed: Double
   
-  var tooltipFollowsMouse: Boolean = js.native
+  var tooltipFollowsMouse: Boolean
 }
 object MouseHandlerOptions {
   

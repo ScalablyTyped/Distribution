@@ -2,21 +2,21 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TcpEndpointAddress extends SocketEndpointAddress {
+trait TcpEndpointAddress
+  extends StObject
+     with SocketEndpointAddress {
   
   /**
     * IP address.
     */
-  var ip: String = js.native
+  var ip: String
   
   /**
     * Port.
     */
-  var port: Double = js.native
+  var port: Double
 }
 object TcpEndpointAddress {
   

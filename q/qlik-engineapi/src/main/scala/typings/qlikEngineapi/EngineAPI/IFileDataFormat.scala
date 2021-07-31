@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FileDataFormat...
   */
-@js.native
 trait IFileDataFormat extends StObject {
   
   /**
     * Character set used in the file.
     */
-  var qCodePage: Double = js.native
+  var qCodePage: Double
   
   /**
     * String that marks the beginning of the comment line.
@@ -22,32 +20,32 @@ trait IFileDataFormat extends StObject {
     * The engine ignores the commented lines during the data load.
     * This property is only used for delimited files.
     */
-  var qComment: String = js.native
+  var qComment: String
   
   /**
     * Information about the delimiter.
     * This property is used for delimited files.
     */
-  var qDelimiter: IDelimiterInfo = js.native
+  var qDelimiter: IDelimiterInfo
   
   /**
     * Positions of the field breaks in the table.
     * This property is used for fixed record data files.
     */
-  var qFixedWidthDelimiters: String = js.native
+  var qFixedWidthDelimiters: String
   
   /**
     * Size of the header.
     * Example: If the header size is 2, the first two rows in the file are considered as header and not as data.
     * The header can contain the field names.
     */
-  var qHeaderSize: Double = js.native
+  var qHeaderSize: Double
   
   /**
     * Is set to true, the end-of-file character is not taken into account during reload.
     * This property is used for delimited files and fixed record data files.
     */
-  var qIgnoreEOF: Boolean = js.native
+  var qIgnoreEOF: Boolean
   
   /**
     * One of:
@@ -56,7 +54,7 @@ trait IFileDataFormat extends StObject {
     * - no labels
     * - explicit labels (for DIFfiles)
     */
-  var qLabel: String = js.native
+  var qLabel: String
   
   /**
     * One of:
@@ -67,25 +65,25 @@ trait IFileDataFormat extends StObject {
     * are the first and last non blank characters of a field value.)
     * This property is used for delimited files.
     */
-  var qQuote: String = js.native
+  var qQuote: String
   
   /**
     * Record length.
     * Each record (row of data) contains a number of columns with a fixed field size.
     * This property is used for fixed record data files.
     */
-  var qRecordSize: Double = js.native
+  var qRecordSize: Double
   
   /**
     * Number of spaces that one tab character represents in the table file.
     * This property is used for fixed record data files.
     */
-  var qTabSize: Double = js.native
+  var qTabSize: Double
   
   /**
     * Type of the file.
     */
-  var qType: FileDataFormatType = js.native
+  var qType: FileDataFormatType
 }
 object IFileDataFormat {
   

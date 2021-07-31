@@ -2,36 +2,34 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setSubTapp()
-@js.native
 trait SubTappConfig extends StObject {
   
-  var boldText: js.UndefOr[Boolean] = js.native
+  var boldText: js.UndefOr[Boolean] = js.undefined
   
-  var buttonName: String = js.native
+  var buttonName: String
   
-  var callbackURL: js.UndefOr[js.Function1[/* result */ js.Any, _]] = js.native
+  var callbackURL: js.UndefOr[js.Function1[/* result */ js.Any, js.Any]] = js.undefined
   
-  var color: String = js.native
+  var color: String
   
-  var colorText: js.UndefOr[String] = js.native
+  var colorText: js.UndefOr[String] = js.undefined
   
-  var icon: String = js.native
+  var icon: String
   
-  var isExclusiveView: js.UndefOr[Boolean] = js.native
+  var isExclusiveView: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var replaceParent: js.UndefOr[Boolean] = js.native
+  var replaceParent: js.UndefOr[Boolean] = js.undefined
   
-  var sortID: Double = js.native
+  var sortID: Double
   
-  var tappID: Double = js.native
+  var tappID: Double
   
-  var url: String = js.native
+  var url: String
 }
 object SubTappConfig {
   
@@ -62,7 +60,7 @@ object SubTappConfig {
     def setButtonName(value: String): Self = StObject.set(x, "buttonName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCallbackURL(value: /* result */ js.Any => _): Self = StObject.set(x, "callbackURL", js.Any.fromFunction1(value))
+    def setCallbackURL(value: /* result */ js.Any => js.Any): Self = StObject.set(x, "callbackURL", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)

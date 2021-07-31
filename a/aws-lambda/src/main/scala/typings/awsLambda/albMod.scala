@@ -6,41 +6,39 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object albMod {
   
   type ALBCallback = Callback[ALBResult]
   
-  @js.native
   trait ALBEvent extends StObject {
     
-    var body: String | Null = js.native
+    var body: String | Null
     
     // URL encoded
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var isBase64Encoded: Boolean = js.native
+    var isBase64Encoded: Boolean
     
     // URL encoded
-    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.native
+    var queryStringParameters: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var requestContext: ALBEventRequestContext = js.native
+    var requestContext: ALBEventRequestContext
   }
   object ALBEvent {
     
     @scala.inline
     def apply(httpMethod: String, isBase64Encoded: Boolean, path: String, requestContext: ALBEventRequestContext): ALBEvent = {
-      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], isBase64Encoded = isBase64Encoded.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], body = null)
       __obj.asInstanceOf[ALBEvent]
     }
     
@@ -91,10 +89,9 @@ object albMod {
     }
   }
   
-  @js.native
   trait ALBEventRequestContext extends StObject {
     
-    var elb: TargetGroupArn = js.native
+    var elb: TargetGroupArn
   }
   object ALBEventRequestContext {
     
@@ -114,20 +111,19 @@ object albMod {
   
   type ALBHandler = Handler[ALBEvent, ALBResult]
   
-  @js.native
   trait ALBResult extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.native
+    var headers: js.UndefOr[StringDictionary[Boolean | Double | String]] = js.undefined
     
-    var isBase64Encoded: js.UndefOr[Boolean] = js.native
+    var isBase64Encoded: js.UndefOr[Boolean] = js.undefined
     
-    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[Boolean | Double | String]]] = js.native
+    var multiValueHeaders: js.UndefOr[StringDictionary[js.Array[Boolean | Double | String]]] = js.undefined
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusDescription: js.UndefOr[String] = js.native
+    var statusDescription: js.UndefOr[String] = js.undefined
   }
   object ALBResult {
     

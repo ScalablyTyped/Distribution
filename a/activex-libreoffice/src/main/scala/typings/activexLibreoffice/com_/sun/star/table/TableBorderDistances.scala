@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.table
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * In a structure which is used for setting, these flags determine if the corresponding distance should be set or if the old value should be kept.
   */
-@js.native
 trait TableBorderDistances extends StObject {
   
   /** contains the distance between the bottom lines and other contents. */
-  var BottomDistance: Double = js.native
+  var BottomDistance: Double
   
   /** specifies whether the value of TableBorder::BottomDistance is used. */
-  var IsBottomDistanceValid: Boolean = js.native
+  var IsBottomDistanceValid: Boolean
   
   /** specifies whether the value of TableBorder::LeftDistance is used. */
-  var IsLeftDistanceValid: Boolean = js.native
+  var IsLeftDistanceValid: Boolean
   
   /** specifies whether the value of TableBorder::RightDistance is used. */
-  var IsRightDistanceValid: Boolean = js.native
+  var IsRightDistanceValid: Boolean
   
   /** specifies whether the value of TableBorder::TopDistance is used. */
-  var IsTopDistanceValid: Boolean = js.native
+  var IsTopDistanceValid: Boolean
   
   /** contains the distance between the left lines and other contents. */
-  var LeftDistance: Double = js.native
+  var LeftDistance: Double
   
   /** contains the distance between the right lines and other contents. */
-  var RightDistance: Double = js.native
+  var RightDistance: Double
   
   /** contains the distance between the top lines and other contents. */
-  var TopDistance: Double = js.native
+  var TopDistance: Double
 }
 object TableBorderDistances {
   

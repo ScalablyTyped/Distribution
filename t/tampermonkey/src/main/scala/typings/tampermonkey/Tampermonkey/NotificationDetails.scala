@@ -1,9 +1,7 @@
 package typings.tampermonkey.Tampermonkey
 
-import typings.tampermonkey.tampermonkeyBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,8 +12,8 @@ trait NotificationDetails extends StObject
 object NotificationDetails {
   
   @scala.inline
-  def HighlightNotification(highlight: `true`): typings.tampermonkey.Tampermonkey.HighlightNotification = {
-    val __obj = js.Dynamic.literal(highlight = highlight.asInstanceOf[js.Any])
+  def HighlightNotification(text: Unit): typings.tampermonkey.Tampermonkey.HighlightNotification = {
+    val __obj = js.Dynamic.literal(highlight = true, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tampermonkey.Tampermonkey.HighlightNotification]
   }
   

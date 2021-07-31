@@ -2,28 +2,26 @@ package typings.cssSelectorParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("css-selector-parser/lib/utils", "escapeIdentifier")
+  @JSImport("css-selector-parser/lib/utils", JSImport.Namespace)
   @js.native
-  def escapeIdentifier(s: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("css-selector-parser/lib/utils", "escapeStr")
-  @js.native
-  def escapeStr(s: String): String = js.native
+  @scala.inline
+  def escapeIdentifier(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("css-selector-parser/lib/utils", "isHex")
-  @js.native
-  def isHex(c: String): Boolean = js.native
+  @scala.inline
+  def escapeStr(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStr")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("css-selector-parser/lib/utils", "isIdent")
-  @js.native
-  def isIdent(c: String): Boolean = js.native
+  @scala.inline
+  def isHex(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("css-selector-parser/lib/utils", "isIdentStart")
-  @js.native
-  def isIdentStart(c: String): Boolean = js.native
+  @scala.inline
+  def isIdent(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdent")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIdentStart(c: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentStart")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

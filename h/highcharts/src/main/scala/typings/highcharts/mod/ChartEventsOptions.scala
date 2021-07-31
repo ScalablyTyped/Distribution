@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartEventsOptions extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait ChartEventsOptions extends StObject {
     * passed to the `addSeries` method. Returning false prevents the series
     * from being added.
     */
-  var addSeries: js.UndefOr[ChartAddSeriesCallbackFunction] = js.native
+  var addSeries: js.UndefOr[ChartAddSeriesCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires after a chart is printed
     * through the context menu item or the `Chart.print` method.
     */
-  var afterPrint: js.UndefOr[ExportingAfterPrintCallbackFunction] = js.native
+  var afterPrint: js.UndefOr[ExportingAfterPrintCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires before a chart is printed
     * through the context menu item or the `Chart.print` method.
     */
-  var beforePrint: js.UndefOr[ExportingBeforePrintCallbackFunction] = js.native
+  var beforePrint: js.UndefOr[ExportingBeforePrintCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when clicking on the plot
@@ -43,7 +41,7 @@ trait ChartEventsOptions extends StObject {
     * axis is milliseconds since 1970-01-01 00:00:00. (see online documentation
     * for example)
     */
-  var click: js.UndefOr[ChartClickCallbackFunction] = js.native
+  var click: js.UndefOr[ChartClickCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Fires when a drilldown point is clicked, before
@@ -66,25 +64,25 @@ trait ChartEventsOptions extends StObject {
     *
     * - `seriesOptions`: Options for the new series.
     */
-  var drilldown: js.UndefOr[DrilldownCallbackFunction] = js.native
+  var drilldown: js.UndefOr[DrilldownCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Fires when drilling up from a drilldown series.
     */
-  var drillup: js.UndefOr[DrillupCallbackFunction] = js.native
+  var drillup: js.UndefOr[DrillupCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highmaps) In a chart with multiple drilldown series, this
     * event fires after all the series have been drilled up.
     */
-  var drillupall: js.UndefOr[DrillupAllCallbackFunction] = js.native
+  var drillupall: js.UndefOr[DrillupAllCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback that fires while
     * exporting data. This allows the modification of data rows before
     * processed into the final format.
     */
-  var exportData: js.UndefOr[ExportDataCallbackFunction] = js.native
+  var exportData: js.UndefOr[ExportDataCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is finished
@@ -95,7 +93,7 @@ trait ChartEventsOptions extends StObject {
     * There is also a second parameter to the chart constructor where a
     * callback function can be passed to be executed on chart.load.
     */
-  var load: js.UndefOr[ChartLoadCallbackFunction] = js.native
+  var load: js.UndefOr[ChartLoadCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when the chart is redrawn,
@@ -103,14 +101,14 @@ trait ChartEventsOptions extends StObject {
     * is modified with the `redraw` option set to `true`. One parameter,
     * `event`, is passed to the function, containing common event information.
     */
-  var redraw: js.UndefOr[ChartRedrawCallbackFunction] = js.native
+  var redraw: js.UndefOr[ChartRedrawCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires after initial load of the
     * chart (directly after the `load` event), and after each redraw (directly
     * after the `redraw` event).
     */
-  var render: js.UndefOr[ChartRenderCallbackFunction] = js.native
+  var render: js.UndefOr[ChartRenderCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Fires when an area of the chart
@@ -126,7 +124,7 @@ trait ChartEventsOptions extends StObject {
     * `event.yAxis[0]`. Remember the unit of a datetime axis is milliseconds
     * since 1970-01-01 00:00:00. (see online documentation for example)
     */
-  var selection: js.UndefOr[ChartSelectionCallbackFunction] = js.native
+  var selection: js.UndefOr[ChartSelectionCallbackFunction] = js.undefined
 }
 object ChartEventsOptions {
   

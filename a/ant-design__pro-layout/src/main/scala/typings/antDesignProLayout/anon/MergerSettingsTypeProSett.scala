@@ -9,46 +9,44 @@ import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antd.menuContextMod.MenuTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @ant-design/pro-layout.@ant-design/pro-layout/lib/SettingDrawer.MergerSettingsType<@ant-design/pro-layout.@ant-design/pro-layout/lib/defaultSettings.ProSettings> */
-@js.native
 trait MergerSettingsTypeProSett extends StObject {
   
-  var colorWeak: js.UndefOr[Boolean] = js.native
+  var colorWeak: js.UndefOr[Boolean] = js.undefined
   
-  var contentWidth: js.UndefOr[ContentWidth] = js.native
+  var contentWidth: js.UndefOr[ContentWidth] = js.undefined
   
-  var fixSiderbar: js.UndefOr[Boolean] = js.native
+  var fixSiderbar: js.UndefOr[Boolean] = js.undefined
   
-  var fixedHeader: js.UndefOr[Boolean] = js.native
+  var fixedHeader: js.UndefOr[Boolean] = js.undefined
   
-  var footerRender: js.UndefOr[`false`] = js.native
+  var footerRender: js.UndefOr[`false`] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.native
+  var headerHeight: js.UndefOr[Double] = js.undefined
   
-  var headerRender: js.UndefOr[`false`] = js.native
+  var headerRender: js.UndefOr[`false`] = js.undefined
   
-  var headerTheme: js.UndefOr[MenuTheme] = js.native
+  var headerTheme: js.UndefOr[MenuTheme] = js.undefined
   
-  var iconfontUrl: js.UndefOr[String] = js.native
+  var iconfontUrl: js.UndefOr[String] = js.undefined
   
-  var layout: js.UndefOr[side | top | mix] = js.native
+  var layout: js.UndefOr[side | top | mix] = js.undefined
   
-  var menu: js.UndefOr[DefaultOpenAll] = js.native
+  var menu: js.UndefOr[DefaultOpenAll] = js.undefined
   
-  var menuHeaderRender: js.UndefOr[`false`] = js.native
+  var menuHeaderRender: js.UndefOr[`false`] = js.undefined
   
-  var menuRender: js.UndefOr[`false`] = js.native
+  var menuRender: js.UndefOr[`false`] = js.undefined
   
-  var navTheme: js.UndefOr[MenuTheme | realDark] = js.native
+  var navTheme: js.UndefOr[MenuTheme | realDark] = js.undefined
   
-  var primaryColor: js.UndefOr[String] = js.native
+  var primaryColor: js.UndefOr[String] = js.undefined
   
-  var splitMenus: js.UndefOr[Boolean] = js.native
+  var splitMenus: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String | `false`] = js.native
+  var title: js.UndefOr[String | `false`] = js.undefined
 }
 object MergerSettingsTypeProSett {
   

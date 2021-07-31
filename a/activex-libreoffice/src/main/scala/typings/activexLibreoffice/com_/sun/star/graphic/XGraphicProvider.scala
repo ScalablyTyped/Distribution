@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface acts as the main interface to handle graphic content. It is used to load graphics, store graphics and to get information about unloaded
   * graphics
   */
-@js.native
-trait XGraphicProvider extends XInterface {
+trait XGraphicProvider
+  extends StObject
+     with XInterface {
   
   /**
     * Calling this method returns a {@link XGraphic} interface that holds the graphic content after loading the graphic
@@ -24,7 +24,7 @@ trait XGraphicProvider extends XInterface {
     * @see XGraphic
     * @see com.sun.star.beans.PropertyValues
     */
-  def queryGraphic(MediaProperties: PropertyValues): XGraphic = js.native
+  def queryGraphic(MediaProperties: PropertyValues): XGraphic
   
   /**
     * Calling this method returns a {@link com.sun.star.beans.XPropertySet} interface that gives access to the properties of the unloaded graphic
@@ -36,7 +36,7 @@ trait XGraphicProvider extends XInterface {
     * @see GraphicDescriptor
     * @see com.sun.star.beans.PropertyValues
     */
-  def queryGraphicDescriptor(MediaProperties: PropertyValues): XPropertySet = js.native
+  def queryGraphicDescriptor(MediaProperties: PropertyValues): XPropertySet
   
   /**
     * Store the graphic content, represented through the {@link XGraphic} interface at the specified location
@@ -46,7 +46,7 @@ trait XGraphicProvider extends XInterface {
     * @see MediaProperties
     * @see com.sun.star.beans.PropertyValues
     */
-  def storeGraphic(Graphic: XGraphic, MediaProperties: PropertyValues): Unit = js.native
+  def storeGraphic(Graphic: XGraphic, MediaProperties: PropertyValues): Unit
 }
 object XGraphicProvider {
   

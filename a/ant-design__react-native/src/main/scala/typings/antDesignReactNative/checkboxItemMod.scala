@@ -9,7 +9,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxItemMod {
@@ -27,14 +26,14 @@ object checkboxItemMod {
     def handleClick(): Unit = js.native
   }
   
-  @js.native
   trait CheckboxItemProps
-    extends CheckboxItemPropsType
+    extends StObject
+       with CheckboxItemPropsType
        with WithThemeStyles[CheckboxStyle] {
     
-    var checkboxStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var checkboxStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CheckboxItemProps {
     

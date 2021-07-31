@@ -1,26 +1,23 @@
 package typings.storybookUi.anon
 
+import typings.storybookApi.modulesStoriesMod.ViewMode
 import typings.storybookUi.containerMod.Bounds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @storybook/ui.@storybook/ui/dist/components/layout/container.BasePanelRenderProps & {  hidden :boolean} */
-@js.native
 trait BasePanelRenderPropshidde extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var isFullscreen: js.UndefOr[Boolean] = js.native
+  var isFullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var position: Bounds = js.native
+  var position: Bounds
   
-  var viewMode: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-  ] = js.native
+  var viewMode: js.UndefOr[ViewMode & js.UndefOr[String]] = js.undefined
 }
 object BasePanelRenderPropshidde {
   
@@ -49,9 +46,7 @@ object BasePanelRenderPropshidde {
     def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setViewMode(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-    ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)

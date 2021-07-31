@@ -7,10 +7,8 @@ import typings.muiDatatables.muiDatatablesStrings.none
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableColumnOptions extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait MUIDataTableColumnOptions extends StObject {
       /* updateValue */ js.Function1[/* value */ String, Unit], 
       String | ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Similar to and performing better than `customBodyRender`, however with the following caveats:
@@ -37,23 +35,23 @@ trait MUIDataTableColumnOptions extends StObject {
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/large-data-set/index.js)
     */
-  var customBodyRenderLite: js.UndefOr[js.Function2[/* dataIndex */ Double, /* rowIndex */ Double, String | ReactNode]] = js.native
+  var customBodyRenderLite: js.UndefOr[js.Function2[/* dataIndex */ Double, /* rowIndex */ Double, String | ReactNode]] = js.undefined
   
   /**
     * These options only affect the filter chips that display after filter are selected.
     * To modify the filters themselves, see filterOptions.
     */
-  var customFilterListOptions: js.UndefOr[MUIDataTableCustomFilterListOptions] = js.native
+  var customFilterListOptions: js.UndefOr[MUIDataTableCustomFilterListOptions] = js.undefined
   
   /** @deprecated use customFilterListOptions.render */
-  var customFilterListRender: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.native
+  var customFilterListRender: js.UndefOr[js.Function1[/* value */ js.Any, String]] = js.undefined
   
   /**
     * Function that returns a string or React component.
     * Used for creating a custom header to a column.
     * This method only affects the display in the table's header, other areas of the table (such as the View Columns popover), will use the column's label.
     */
-  var customHeadLabelRender: js.UndefOr[js.Function2[/* dataIndex */ Double, /* rowIndex */ Double, String | ReactNode]] = js.native
+  var customHeadLabelRender: js.UndefOr[js.Function2[/* dataIndex */ Double, /* rowIndex */ Double, String | ReactNode]] = js.undefined
   
   /** Function that returns a string or React component. Used as display for column header. */
   var customHeadRender: js.UndefOr[
@@ -63,7 +61,7 @@ trait MUIDataTableColumnOptions extends StObject {
       /* sortOrder */ MUISortOptions, 
       String | ReactNode
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Display the column.
@@ -74,75 +72,75 @@ trait MUIDataTableColumnOptions extends StObject {
     *
     * @default true
     */
-  var display: js.UndefOr[Display] = js.native
+  var display: js.UndefOr[Display] = js.undefined
   
   /**
     * Display column in the CSV download file.
     * @default true
     */
-  var download: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Determines if the column can be dragged.
     * The draggableColumns.enabled option must also be true.
     * @default true
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This denote whether the column has data or not.
     * For use with intentionally empty columns.
     * @default false
     */
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Display column in filter list
     * @default true
     */
-  var filter: js.UndefOr[Boolean] = js.native
+  var filter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filter value list.
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/column-filters/index.js)
     */
-  var filterList: js.UndefOr[js.Array[String]] = js.native
+  var filterList: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * These options affect the filter display and functionality from the filter dialog.
     * To modify the filter chip that display after selecting filters, see customFilterListOptions
     */
-  var filterOptions: js.UndefOr[MUIDataTableFilterOptions] = js.native
+  var filterOptions: js.UndefOr[MUIDataTableFilterOptions] = js.undefined
   
   /**
     * Choice of filtering view. Takes priority over global filterType option.
     * Use 'custom' is you are supplying your own rendering via filterOptions.
     * @default dropdown
     */
-  var filterType: js.UndefOr[FilterType] = js.native
+  var filterType: js.UndefOr[FilterType] = js.undefined
   
   /** Display hint icon with string as tooltip on hover. */
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
   /**
     * Display column when printing.
     * @default true
     */
-  var print: js.UndefOr[Boolean] = js.native
+  var print: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Exclude/include column from search results.
     * @default true
     */
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is called for each header cell and allows you to return custom props for the header cell based on its data.
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-styling/index.js)
     */
-  var setCellHeaderProps: js.UndefOr[js.Function1[/* columnMeta */ MUIDataTableCustomHeadRenderer, js.Object]] = js.native
+  var setCellHeaderProps: js.UndefOr[js.Function1[/* columnMeta */ MUIDataTableCustomHeadRenderer, js.Object]] = js.undefined
   
   /**
     * Is called for each cell and allows to you return custom props for this cell based on its data.
@@ -151,13 +149,13 @@ trait MUIDataTableColumnOptions extends StObject {
     */
   var setCellProps: js.UndefOr[
     js.Function3[/* cellValue */ String, /* rowIndex */ Double, /* columnIndex */ Double, js.Object]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Enable/disable sorting on column.
     * @default true
     */
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Custom sort function for the column. Takes in an order string and returns a function that compares the two column values.
@@ -170,7 +168,7 @@ trait MUIDataTableColumnOptions extends StObject {
       /* order */ asc | desc, 
       js.Function2[/* obj1 */ DataAny, /* obj2 */ DataAny, Double]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Causes the first click on a column to sort by desc rather than asc.
@@ -179,10 +177,10 @@ trait MUIDataTableColumnOptions extends StObject {
     *
     * @default false
     */
-  var sortDescFirst: js.UndefOr[Boolean] = js.native
+  var sortDescFirst: js.UndefOr[Boolean] = js.undefined
   
   /** @deprecated use `sortOrder` instead */
-  var sortDirection: js.UndefOr[asc | desc | none] = js.native
+  var sortDirection: js.UndefOr[asc | desc | none] = js.undefined
   
   /**
     * Allows for a third click on a column header to undo any sorting on the column.
@@ -191,13 +189,13 @@ trait MUIDataTableColumnOptions extends StObject {
     *
     * @default false
     */
-  var sortThirdClickReset: js.UndefOr[Boolean] = js.native
+  var sortThirdClickReset: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow user to toggle column visibility through 'View Column' list.
     * @default true
     */
-  var viewColumns: js.UndefOr[Boolean] = js.native
+  var viewColumns: js.UndefOr[Boolean] = js.undefined
 }
 object MUIDataTableColumnOptions {
   

@@ -2,7 +2,6 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,7 @@ trait It extends StObject {
     * @param timeout The timeout for an async function test
     */
   def apply(name: String): Unit = js.native
-  def apply(name: String, fn: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
+  def apply(name: String, fn: Unit, timeout: Double): Unit = js.native
   def apply(name: String, fn: ProvidesCallback): Unit = js.native
   def apply(name: String, fn: ProvidesCallback, timeout: Double): Unit = js.native
   

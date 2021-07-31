@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyHapgRequest extends StObject {
   
   /**
     * The ARN of the high-availability partition group to modify.
     */
-  var HapgArn: typings.awsSdk.cloudhsmMod.HapgArn = js.native
+  var HapgArn: typings.awsSdk.cloudhsmMod.HapgArn
   
   /**
     * The new label for the high-availability partition group.
     */
-  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.native
+  var Label: js.UndefOr[typings.awsSdk.cloudhsmMod.Label] = js.undefined
   
   /**
     * The list of partition serial numbers to make members of the high-availability partition group.
     */
-  var PartitionSerialList: js.UndefOr[typings.awsSdk.cloudhsmMod.PartitionSerialList] = js.native
+  var PartitionSerialList: js.UndefOr[typings.awsSdk.cloudhsmMod.PartitionSerialList] = js.undefined
 }
 object ModifyHapgRequest {
   

@@ -3,19 +3,17 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.anon.Probability
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait logoClassifyResponse extends StObject {
   
-  var log_id: Double = js.native
+  var log_id: Double
   
   // 识别结果数，标识返回结果数目。
-  var result: js.Array[Probability] = js.native
+  var result: js.Array[Probability]
   
   //     唯一的log id，用于问题定位。
-  var result_num: Double = js.native
+  var result_num: Double
 }
 object logoClassifyResponse {
   

@@ -6,10 +6,8 @@ import typings.chromeApps.chrome.instanceID.TokenParams
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofinstanceID extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait TypeofinstanceID extends StObject {
     * @param callback Function called when the deletion completes.
     *                 The instance identifier was revoked successfully if runtime.lastError is not set.
     */
-  def deleteID(callback: js.Function0[Unit]): Unit = js.native
+  def deleteID(callback: js.Function0[Unit]): Unit
   
   /**
     * Revokes a granted token.
@@ -25,7 +23,7 @@ trait TypeofinstanceID extends StObject {
     * @param callback Function called when the token deletion completes.
     *                 The token was revoked successfully if runtime.lastError is not set.
     */
-  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit = js.native
+  def deleteToken(deleteTokenParams: DeleteTokenParams, callback: js.Function0[Unit]): Unit
   
   /**
     * Retrieves the time when the InstanceID has been generated.
@@ -35,7 +33,7 @@ trait TypeofinstanceID extends StObject {
     *                 Provides `creationTime` (double)
     *                  > The time when the Instance ID has been generated, represented in milliseconds since the epoch.
     */
-  def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit = js.native
+  def getCreationTime(callback: js.Function1[/* creationTime */ integer, Unit]): Unit
   
   /**
     * Retrieves an identifier for the app instance.
@@ -46,17 +44,17 @@ trait TypeofinstanceID extends StObject {
     *                 It should check runtime.lastError for error when instanceID is empty.
     *                 Will be provided with instanceID: An Instance ID assigned to the app instance.
     */
-  def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit = js.native
+  def getID(callback: js.Function1[/* instanceId */ String, Unit]): Unit
   
   /**
     * Return a token that allows the authorized entity to access the service defined by scope.
     * @param getTokenParams Parameters for getToken.
     * @param callback Function called when the retrieval completes. It should check runtime.lastError for error when token is empty.
     */
-  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit = js.native
+  def getToken(getTokenParams: TokenParams, callback: js.Function1[/* token */ String, Unit]): Unit
   
   /** Fired when all the granted tokens need to be refreshed. */
-  val onTokenRefresh: Event[js.Function0[Unit]] = js.native
+  val onTokenRefresh: Event[js.Function0[Unit]]
 }
 object TypeofinstanceID {
   

@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLChildNodeSuggestions extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): XMLChildNodeSuggestion = js.native
+  def Item(Index: js.Any): XMLChildNodeSuggestion
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.XMLChildNodeSuggestions_typekey")
-  var WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions = js.native
+  var WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions
 }
 object XMLChildNodeSuggestions {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationChartMod {
@@ -22,18 +21,17 @@ object organizationChartMod {
     def this(props: OrganizationChartProps, context: js.Any) = this()
   }
   
-  @js.native
   trait OrganizationChartNodeData extends StObject {
     
-    var children: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.native
+    var children: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
   }
   object OrganizationChartNodeData {
     
@@ -81,28 +79,27 @@ object organizationChartMod {
     }
   }
   
-  @js.native
   trait OrganizationChartProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var nodeTemplate: js.UndefOr[js.Function1[/* node */ OrganizationChartNodeData, ReactNode]] = js.native
+    var nodeTemplate: js.UndefOr[js.Function1[/* node */ OrganizationChartNodeData, ReactNode]] = js.undefined
     
-    var onNodeSelect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.native
+    var onNodeSelect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
     
-    var onNodeUnselect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.native
+    var onNodeUnselect: js.UndefOr[js.Function1[/* e */ Node, Unit]] = js.undefined
     
-    var selection: js.UndefOr[js.Any] = js.native
+    var selection: js.UndefOr[js.Any] = js.undefined
     
-    var selectionChange: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var selectionChange: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.native
+    var selectionMode: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.native
+    var value: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
   }
   object OrganizationChartProps {
     

@@ -2,18 +2,21 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.AccessRequests")
 @js.native
 class AccessRequests ()
-  extends typings.sharepoint.SP.AccessRequests
+  extends StObject
+     with typings.sharepoint.SP.AccessRequests
 object AccessRequests {
   
-  /* static member */
-  @JSGlobal("SP.AccessRequests.changeRequestStatus")
+  @JSGlobal("SP.AccessRequests")
   @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
   def changeRequestStatus(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     itemId: Double,
@@ -21,14 +24,13 @@ object AccessRequests {
     convStr: String,
     permType: String,
     permissionLevel: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeRequestStatus")(context.asInstanceOf[js.Any], itemId.asInstanceOf[js.Any], newStatus.asInstanceOf[js.Any], convStr.asInstanceOf[js.Any], permType.asInstanceOf[js.Any], permissionLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.AccessRequests.changeRequestStatusBulk")
-  @js.native
+  @scala.inline
   def changeRequestStatusBulk(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     requestIds: js.Array[Double],
     newStatus: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeRequestStatusBulk")(context.asInstanceOf[js.Any], requestIds.asInstanceOf[js.Any], newStatus.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

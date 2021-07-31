@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayAccessLogSettings extends StObject {
   
   /**
     * The ARN of the CloudWatch Logs log group that receives the access logs.
     */
-  var DestinationArn: js.UndefOr[NonEmptyString] = js.native
+  var DestinationArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A single-line format of the access logs of data, as specified by selected $context variables. The format must include at least $context.requestId.
     */
-  var Format: js.UndefOr[NonEmptyString] = js.native
+  var Format: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsApiGatewayAccessLogSettings {
   

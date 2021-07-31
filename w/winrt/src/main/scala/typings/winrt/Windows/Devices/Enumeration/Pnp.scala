@@ -6,7 +6,6 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pnp {
@@ -18,38 +17,47 @@ object Pnp {
   object PnpObjectType extends StObject {
     
     @js.native
-    sealed trait device extends PnpObjectType
+    sealed trait device
+      extends StObject
+         with PnpObjectType
     
     @js.native
-    sealed trait deviceContainer extends PnpObjectType
+    sealed trait deviceContainer
+      extends StObject
+         with PnpObjectType
     
     @js.native
-    sealed trait deviceInterface extends PnpObjectType
+    sealed trait deviceInterface
+      extends StObject
+         with PnpObjectType
     
     @js.native
-    sealed trait deviceInterfaceClass extends PnpObjectType
+    sealed trait deviceInterfaceClass
+      extends StObject
+         with PnpObjectType
     
     @js.native
-    sealed trait unknown extends PnpObjectType
+    sealed trait unknown
+      extends StObject
+         with PnpObjectType
   }
   
-  @js.native
   trait IPnpObject extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var properties: IMapView[String, _] = js.native
+    var properties: IMapView[String, js.Any]
     
-    var `type`: PnpObjectType = js.native
+    var `type`: PnpObjectType
     
-    def update(updateInfo: PnpObjectUpdate): Unit = js.native
+    def update(updateInfo: PnpObjectUpdate): Unit
   }
   object IPnpObject {
     
     @scala.inline
     def apply(
       id: String,
-      properties: IMapView[String, _],
+      properties: IMapView[String, js.Any],
       `type`: PnpObjectType,
       update: PnpObjectUpdate => Unit
     ): IPnpObject = {
@@ -65,7 +73,7 @@ object Pnp {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
@@ -87,19 +95,18 @@ object Pnp {
     def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IAsyncOperation[PnpObjectCollection] = js.native
   }
   
-  @js.native
   trait IPnpObjectUpdate extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var properties: IMapView[String, _] = js.native
+    var properties: IMapView[String, js.Any]
     
-    var `type`: PnpObjectType = js.native
+    var `type`: PnpObjectType
   }
   object IPnpObjectUpdate {
     
     @scala.inline
-    def apply(id: String, properties: IMapView[String, _], `type`: PnpObjectType): IPnpObjectUpdate = {
+    def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): IPnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPnpObjectUpdate]
@@ -112,31 +119,30 @@ object Pnp {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProperties(value: IMapView[String, _]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setType(value: PnpObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IPnpObjectWatcher extends StObject {
     
-    var onadded: js.Any = js.native
+    var onadded: js.Any
     
-    var onenumerationcompleted: js.Any = js.native
+    var onenumerationcompleted: js.Any
     
-    var onremoved: js.Any = js.native
+    var onremoved: js.Any
     
-    var onstopped: js.Any = js.native
+    var onstopped: js.Any
     
-    var onupdated: js.Any = js.native
+    var onupdated: js.Any
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    var status: DeviceWatcherStatus = js.native
+    var status: DeviceWatcherStatus
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object IPnpObjectWatcher {
     
@@ -184,14 +190,15 @@ object Pnp {
     }
   }
   
-  @js.native
-  trait PnpObject extends IPnpObject
+  trait PnpObject
+    extends StObject
+       with IPnpObject
   object PnpObject {
     
     @scala.inline
     def apply(
       id: String,
-      properties: IMapView[String, _],
+      properties: IMapView[String, js.Any],
       `type`: PnpObjectType,
       update: PnpObjectUpdate => Unit
     ): PnpObject = {
@@ -202,22 +209,26 @@ object Pnp {
   }
   
   @js.native
-  trait PnpObjectCollection extends IVectorView[PnpObject]
+  trait PnpObjectCollection
+    extends StObject
+       with IVectorView[PnpObject]
   
-  @js.native
-  trait PnpObjectUpdate extends IPnpObjectUpdate
+  trait PnpObjectUpdate
+    extends StObject
+       with IPnpObjectUpdate
   object PnpObjectUpdate {
     
     @scala.inline
-    def apply(id: String, properties: IMapView[String, _], `type`: PnpObjectType): PnpObjectUpdate = {
+    def apply(id: String, properties: IMapView[String, js.Any], `type`: PnpObjectType): PnpObjectUpdate = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PnpObjectUpdate]
     }
   }
   
-  @js.native
-  trait PnpObjectWatcher extends IPnpObjectWatcher
+  trait PnpObjectWatcher
+    extends StObject
+       with IPnpObjectWatcher
   object PnpObjectWatcher {
     
     @scala.inline

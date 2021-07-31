@@ -2,21 +2,19 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HomeDirectoryMapEntry extends StObject {
   
   /**
     * Represents an entry and a target for HomeDirectoryMappings.
     */
-  var Entry: MapEntry = js.native
+  var Entry: MapEntry
   
   /**
     * Represents the map target that is used in a HomeDirectorymapEntry.
     */
-  var Target: MapTarget = js.native
+  var Target: MapTarget
 }
 object HomeDirectoryMapEntry {
   

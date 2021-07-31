@@ -13,43 +13,47 @@ import typings.reactFoundation.reactFoundationStrings.large
 import typings.reactFoundation.reactFoundationStrings.medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
+  @JSImport("react-foundation/utils", JSImport.Namespace)
   @js.native
-  trait FlexboxPropTypes extends GeneralPropTypes {
+  val ^ : js.Any = js.native
+  
+  trait FlexboxPropTypes
+    extends StObject
+       with GeneralPropTypes {
     
-    var alignX: js.UndefOr[HorizontalAlignments] = js.native
+    var alignX: js.UndefOr[HorizontalAlignments] = js.undefined
     
-    var alignY: js.UndefOr[VerticalAlignments] = js.native
+    var alignY: js.UndefOr[VerticalAlignments] = js.undefined
     
-    var centerAlign: js.UndefOr[Boolean] = js.native
+    var centerAlign: js.UndefOr[Boolean] = js.undefined
     
-    var flexChild: js.UndefOr[SpaceControls] = js.native
+    var flexChild: js.UndefOr[SpaceControls] = js.undefined
     
-    var flexContainer: js.UndefOr[Boolean] = js.native
+    var flexContainer: js.UndefOr[Boolean] = js.undefined
     
-    var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.native
+    var flexDirCol: js.UndefOr[ExtendedBreakpoints] = js.undefined
     
-    var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.native
+    var flexDirColRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
     
-    var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.native
+    var flexDirRow: js.UndefOr[ExtendedBreakpoints] = js.undefined
     
-    var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.native
+    var flexDirRowRev: js.UndefOr[ExtendedBreakpoints] = js.undefined
     
-    var flexOrder: js.UndefOr[Double] = js.native
+    var flexOrder: js.UndefOr[Double] = js.undefined
     
-    var flexOrderLarge: js.UndefOr[Double] = js.native
+    var flexOrderLarge: js.UndefOr[Double] = js.undefined
     
-    var flexOrderMedium: js.UndefOr[Double] = js.native
+    var flexOrderMedium: js.UndefOr[Double] = js.undefined
     
-    var flexOrderSmall: js.UndefOr[Double] = js.native
+    var flexOrderSmall: js.UndefOr[Double] = js.undefined
     
-    var selfAlignX: js.UndefOr[HorizontalAlignments] = js.native
+    var selfAlignX: js.UndefOr[HorizontalAlignments] = js.undefined
     
-    var selfAlignY: js.UndefOr[VerticalAlignments] = js.native
+    var selfAlignY: js.UndefOr[VerticalAlignments] = js.undefined
   }
   object FlexboxPropTypes {
     
@@ -251,32 +255,33 @@ object utilsMod {
     }
   }
   
-  @js.native
-  trait GeneralPropTypes extends ClassNameProps {
+  trait GeneralPropTypes
+    extends StObject
+       with ClassNameProps {
     
-    var float: js.UndefOr[FloatTypes] = js.native
+    var float: js.UndefOr[FloatTypes] = js.undefined
     
-    var hideFor: js.UndefOr[medium | large] = js.native
+    var hideFor: js.UndefOr[medium | large] = js.undefined
     
-    var hideOnlyFor: js.UndefOr[Breakpoints] = js.native
+    var hideOnlyFor: js.UndefOr[Breakpoints] = js.undefined
     
-    var isClearfix: js.UndefOr[Boolean] = js.native
+    var isClearfix: js.UndefOr[Boolean] = js.undefined
     
-    var isHidden: js.UndefOr[Boolean] = js.native
+    var isHidden: js.UndefOr[Boolean] = js.undefined
     
-    var isInvisible: js.UndefOr[Boolean] = js.native
+    var isInvisible: js.UndefOr[Boolean] = js.undefined
     
-    var showFor: js.UndefOr[Breakpoints] = js.native
+    var showFor: js.UndefOr[Breakpoints] = js.undefined
     
-    var showForLandscape: js.UndefOr[Boolean] = js.native
+    var showForLandscape: js.UndefOr[Boolean] = js.undefined
     
-    var showForPortrait: js.UndefOr[Boolean] = js.native
+    var showForPortrait: js.UndefOr[Boolean] = js.undefined
     
-    var showForSr: js.UndefOr[Boolean] = js.native
+    var showForSr: js.UndefOr[Boolean] = js.undefined
     
-    var showOnFocus: js.UndefOr[Boolean] = js.native
+    var showOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var showOnlyFor: js.UndefOr[Breakpoints] = js.native
+    var showOnlyFor: js.UndefOr[Breakpoints] = js.undefined
   }
   object GeneralPropTypes {
     
@@ -440,57 +445,44 @@ object utilsMod {
     }
   }
   
-  @JSImport("react-foundation/utils", "addBreakpoint")
-  @js.native
-  def addBreakpoint(prop: String, size: String): String = js.native
+  @scala.inline
+  def addBreakpoint(prop: String, size: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addBreakpoint")(prop.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("react-foundation/utils", "createClassName")
-  @js.native
-  def createClassName(args: js.Any*): String = js.native
+  @scala.inline
+  def createClassName(args: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createClassName")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-foundation/utils", "flexboxClassNames")
-  @js.native
-  def flexboxClassNames(props: FlexboxPropTypes): StringDictionary[js.UndefOr[Boolean]] = js.native
+  @scala.inline
+  def flexboxClassNames(props: FlexboxPropTypes): StringDictionary[js.UndefOr[Boolean]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flexboxClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.UndefOr[Boolean]]]
   
-  @JSImport("react-foundation/utils", "generalClassNames")
-  @js.native
-  def generalClassNames(props: GeneralPropTypes): Clearfix = js.native
+  @scala.inline
+  def generalClassNames(props: GeneralPropTypes): Clearfix = ^.asInstanceOf[js.Dynamic].applyDynamic("generalClassNames")(props.asInstanceOf[js.Any]).asInstanceOf[Clearfix]
   
-  @JSImport("react-foundation/utils", "isDefined")
-  @js.native
-  def isDefined(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isDefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-foundation/utils", "objectKeys")
-  @js.native
-  def objectKeys(`object`: js.Object): js.Array[String] = js.native
+  @scala.inline
+  def objectKeys(`object`: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectKeys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("react-foundation/utils", "objectValues")
-  @js.native
-  def objectValues(`object`: js.Object): js.Array[_] = js.native
+  @scala.inline
+  def objectValues(`object`: js.Object): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("react-foundation/utils", "removeProps")
-  @js.native
-  def removeProps(`object`: js.Object, remove: js.Array[String]): js.Object = js.native
+  @scala.inline
+  def removeProps(`object`: js.Object, remove: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("removeProps")(`object`.asInstanceOf[js.Any], remove.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("react-foundation/utils", "setDirection")
-  @js.native
-  def setDirection(): String = js.native
-  @JSImport("react-foundation/utils", "setDirection")
-  @js.native
-  def setDirection(isVertical: js.UndefOr[scala.Nothing], gutters: String): String = js.native
-  @JSImport("react-foundation/utils", "setDirection")
-  @js.native
-  def setDirection(isVertical: Boolean): String = js.native
-  @JSImport("react-foundation/utils", "setDirection")
-  @js.native
-  def setDirection(isVertical: Boolean, gutters: String): String = js.native
+  @scala.inline
+  def setDirection(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")().asInstanceOf[String]
+  @scala.inline
+  def setDirection(isVertical: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def setDirection(isVertical: Boolean, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def setDirection(isVertical: Unit, gutters: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setDirection")(isVertical.asInstanceOf[js.Any], gutters.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait ClassNameProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var noDefaultClassName: js.UndefOr[String] = js.native
+    var noDefaultClassName: js.UndefOr[String] = js.undefined
   }
   object ClassNameProps {
     

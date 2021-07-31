@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see WindowAttribute
   * @see WindowAttribute.SYSTEMDEPENDENT
   */
-@js.native
-trait XSystemDependentMenuPeer extends XInterface {
+trait XSystemDependentMenuPeer
+  extends StObject
+     with XInterface {
   
   /**
     * returns a system-specific window handle.
@@ -23,7 +23,7 @@ trait XSystemDependentMenuPeer extends XInterface {
     * @param SystemType one constant out of the constant group {@link com.sun.star.lang.SystemDependent} .
     * @returns a system-specific handle to a menu or 0 if the menu is not in the same process.  You must check the machine ID and the process ID. ;  WIN32: Retu
     */
-  def getMenuHandle(ProcessId: SeqEquiv[Double], SystemType: Double): js.Any = js.native
+  def getMenuHandle(ProcessId: SeqEquiv[Double], SystemType: Double): js.Any
 }
 object XSystemDependentMenuPeer {
   

@@ -20,7 +20,6 @@ import typings.stripe.mod.invoices.IInvoiceUpcomingOptions
 import typings.stripe.mod.invoices.IInvoiceUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Invoices")

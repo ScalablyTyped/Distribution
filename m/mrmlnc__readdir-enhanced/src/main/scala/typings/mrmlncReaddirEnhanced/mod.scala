@@ -6,125 +6,108 @@ import typings.node.fsMod.Stats
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(root: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(root: String, callback: CallbackString): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(root: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(root: String, options: Options, callback: CallbackString): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("@mrmlnc/readdir-enhanced", JSImport.Namespace)
   @js.native
-  def apply(root: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", JSImport.Namespace)
-  @js.native
-  def apply(root: String, callback: CallbackString): Unit = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", JSImport.Namespace)
-  @js.native
-  def apply(root: String, options: Options): js.Promise[js.Array[String]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", JSImport.Namespace)
-  @js.native
-  def apply(root: String, options: Options, callback: CallbackString): Unit = js.native
+  val ^ : js.Any = js.native
   
   object async {
     
-    @JSImport("@mrmlnc/readdir-enhanced", "async")
-    @js.native
-    def apply(root: String): js.Promise[js.Array[String]] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async")
-    @js.native
-    def apply(root: String, callback: CallbackString): Unit = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async")
-    @js.native
-    def apply(root: String, options: Options): js.Promise[js.Array[String]] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async")
-    @js.native
-    def apply(root: String, options: Options, callback: CallbackString): Unit = js.native
+    @scala.inline
+    def apply(root: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def apply(root: String, callback: CallbackString): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(root: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+    @scala.inline
+    def apply(root: String, options: Options, callback: CallbackString): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@mrmlnc/readdir-enhanced", "async.stat")
+    @JSImport("@mrmlnc/readdir-enhanced", "async")
     @js.native
-    def stat(root: String): js.Promise[js.Array[Entry]] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async.stat")
-    @js.native
-    def stat(root: String, callback: CallbackEntry): Unit = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async.stat")
-    @js.native
-    def stat(root: String, options: Options): js.Promise[js.Array[Entry]] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "async.stat")
-    @js.native
-    def stat(root: String, options: Options, callback: CallbackEntry): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def stat(root: String): js.Promise[js.Array[Entry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Entry]]]
+    @scala.inline
+    def stat(root: String, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def stat(root: String, options: Options): js.Promise[js.Array[Entry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Entry]]]
+    @scala.inline
+    def stat(root: String, options: Options, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirAsyncStat")
-  @js.native
-  def readdirAsyncStat(root: String): js.Promise[js.Array[Entry]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirAsyncStat")
-  @js.native
-  def readdirAsyncStat(root: String, callback: CallbackEntry): Unit = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirAsyncStat")
-  @js.native
-  def readdirAsyncStat(root: String, options: Options): js.Promise[js.Array[Entry]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirAsyncStat")
-  @js.native
-  def readdirAsyncStat(root: String, options: Options, callback: CallbackEntry): Unit = js.native
+  @scala.inline
+  def readdirAsyncStat(root: String): js.Promise[js.Array[Entry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Entry]]]
+  @scala.inline
+  def readdirAsyncStat(root: String, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readdirAsyncStat(root: String, options: Options): js.Promise[js.Array[Entry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Entry]]]
+  @scala.inline
+  def readdirAsyncStat(root: String, options: Options, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirAsyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirStreamStat")
-  @js.native
-  def readdirStreamStat(root: String): ReadableStream = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirStreamStat")
-  @js.native
-  def readdirStreamStat(root: String, options: Options): ReadableStream = js.native
+  @scala.inline
+  def readdirStreamStat(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def readdirStreamStat(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirStreamStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirSyncStat")
-  @js.native
-  def readdirSyncStat(root: String): js.Array[Entry] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "readdirSyncStat")
-  @js.native
-  def readdirSyncStat(root: String, options: Options): js.Array[Entry] = js.native
+  @scala.inline
+  def readdirSyncStat(root: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSyncStat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
+  @scala.inline
+  def readdirSyncStat(root: String, options: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSyncStat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
-  @JSImport("@mrmlnc/readdir-enhanced", "stat")
-  @js.native
-  def stat(root: String): js.Promise[js.Array[Entry]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "stat")
-  @js.native
-  def stat(root: String, callback: CallbackEntry): Unit = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "stat")
-  @js.native
-  def stat(root: String, options: Options): js.Promise[js.Array[Entry]] = js.native
-  @JSImport("@mrmlnc/readdir-enhanced", "stat")
-  @js.native
-  def stat(root: String, options: Options, callback: CallbackEntry): Unit = js.native
+  @scala.inline
+  def stat(root: String): js.Promise[js.Array[Entry]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Entry]]]
+  @scala.inline
+  def stat(root: String, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def stat(root: String, options: Options): js.Promise[js.Array[Entry]] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Entry]]]
+  @scala.inline
+  def stat(root: String, options: Options, callback: CallbackEntry): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object stream {
     
-    @JSImport("@mrmlnc/readdir-enhanced", "stream")
-    @js.native
-    def apply(root: String): ReadableStream = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "stream")
-    @js.native
-    def apply(root: String, options: Options): ReadableStream = js.native
+    @scala.inline
+    def apply(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+    @scala.inline
+    def apply(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
     
-    @JSImport("@mrmlnc/readdir-enhanced", "stream.stat")
+    @JSImport("@mrmlnc/readdir-enhanced", "stream")
     @js.native
-    def stat(root: String): ReadableStream = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "stream.stat")
-    @js.native
-    def stat(root: String, options: Options): ReadableStream = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def stat(root: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+    @scala.inline
+    def stat(root: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   }
   
   object sync {
     
-    @JSImport("@mrmlnc/readdir-enhanced", "sync")
-    @js.native
-    def apply(root: String): js.Array[String] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "sync")
-    @js.native
-    def apply(root: String, options: Options): js.Array[String] = js.native
+    @scala.inline
+    def apply(root: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def apply(root: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSImport("@mrmlnc/readdir-enhanced", "sync.stat")
+    @JSImport("@mrmlnc/readdir-enhanced", "sync")
     @js.native
-    def stat(root: String): js.Array[Entry] = js.native
-    @JSImport("@mrmlnc/readdir-enhanced", "sync.stat")
-    @js.native
-    def stat(root: String, options: Options): js.Array[Entry] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def stat(root: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
+    @scala.inline
+    def stat(root: String, options: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("stat")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   }
   
   type Callback[T] = js.Function2[/* err */ ErrnoException, /* result */ T, Unit]
@@ -141,14 +124,13 @@ object mod {
     var path: String = js.native
   }
   
-  @js.native
   trait FileSystem extends StObject {
     
-    var lstat: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[Stats], Unit]] = js.native
+    var lstat: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[Stats], Unit]] = js.undefined
     
-    var readdir: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[js.Array[String]], Unit]] = js.native
+    var readdir: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[js.Array[String]], Unit]] = js.undefined
     
-    var stat: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[Stats], Unit]] = js.native
+    var stat: js.UndefOr[js.Function2[/* path */ String, /* callback */ Callback[Stats], Unit]] = js.undefined
   }
   object FileSystem {
     
@@ -183,18 +165,17 @@ object mod {
   
   type FilterFunction = js.Function1[/* stat */ Entry, Boolean]
   
-  @js.native
   trait Options extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var deep: js.UndefOr[Boolean | Double | RegExp | FilterFunction] = js.native
+    var deep: js.UndefOr[Boolean | Double | RegExp | FilterFunction] = js.undefined
     
-    var filter: js.UndefOr[String | RegExp | FilterFunction] = js.native
+    var filter: js.UndefOr[String | RegExp | FilterFunction] = js.undefined
     
-    var fs: js.UndefOr[FileSystem] = js.native
+    var fs: js.UndefOr[FileSystem] = js.undefined
     
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Options {
     

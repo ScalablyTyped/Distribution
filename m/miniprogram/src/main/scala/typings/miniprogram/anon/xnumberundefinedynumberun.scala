@@ -3,34 +3,32 @@ package typings.miniprogram.anon
 import typings.miniprogram.AsyncCallbackFailObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  x :number | undefined,   y :number | undefined,   width :number | undefined,   height :number | undefined,   destWidth :number | undefined,   destHeight :number | undefined,   fileType :string | undefined,   quality :number | undefined} & miniprogram.AsyncCallback<{  filePath :string}> */
-@js.native
 trait xnumberundefinedynumberun extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var destHeight: js.UndefOr[Double] = js.native
+  var destHeight: js.UndefOr[Double] = js.undefined
   
-  var destWidth: js.UndefOr[Double] = js.native
+  var destWidth: js.UndefOr[Double] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ FilePath, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ FilePath, Unit]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object xnumberundefinedynumberun {
   

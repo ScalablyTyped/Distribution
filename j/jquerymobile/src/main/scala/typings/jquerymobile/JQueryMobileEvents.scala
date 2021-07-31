@@ -2,71 +2,69 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryMobileEvents extends StObject {
   
-  var orientationchange: js.Any = js.native
+  var orientationchange: js.Any
   
-  var pagebeforechange: js.Any = js.native
+  var pagebeforechange: js.Any
   
-  var pagebeforecreate: js.Any = js.native
+  var pagebeforecreate: js.Any
   
-  var pagebeforehide: js.Any = js.native
+  var pagebeforehide: js.Any
   
-  var pagebeforeload: js.Any = js.native
+  var pagebeforeload: js.Any
   
-  var pagebeforeshow: js.Any = js.native
+  var pagebeforeshow: js.Any
   
-  var pagechange: js.Any = js.native
+  var pagechange: js.Any
   
-  var pagechangefailed: js.Any = js.native
+  var pagechangefailed: js.Any
   
-  var pagecreate: js.Any = js.native
+  var pagecreate: js.Any
   
-  var pagehide: js.Any = js.native
+  var pagehide: js.Any
   
-  var pageinit: js.Any = js.native
+  var pageinit: js.Any
   
-  var pageload: js.Any = js.native
+  var pageload: js.Any
   
-  var pageloadfailed: js.Any = js.native
+  var pageloadfailed: js.Any
   
-  var pageremove: js.Any = js.native
+  var pageremove: js.Any
   
-  var pageshow: js.Any = js.native
+  var pageshow: js.Any
   
-  var scrollstart: js.Any = js.native
+  var scrollstart: js.Any
   
-  var scrollstop: js.Any = js.native
+  var scrollstop: js.Any
   
-  var swipe: js.Any = js.native
+  var swipe: js.Any
   
-  var swipeleft: js.Any = js.native
+  var swipeleft: js.Any
   
-  var swiperight: js.Any = js.native
+  var swiperight: js.Any
   
-  var tap: js.Any = js.native
+  var tap: js.Any
   
-  var taphold: js.Any = js.native
+  var taphold: js.Any
   
-  var updatelayout: js.Any = js.native
+  var updatelayout: js.Any
   
-  var vclick: js.Any = js.native
+  var vclick: js.Any
   
-  var vmousecancel: js.Any = js.native
+  var vmousecancel: js.Any
   
-  var vmousedown: js.Any = js.native
+  var vmousedown: js.Any
   
-  var vmousemove: js.Any = js.native
+  var vmousemove: js.Any
   
-  var vmouseout: js.Any = js.native
+  var vmouseout: js.Any
   
-  var vmouseover: js.Any = js.native
+  var vmouseover: js.Any
   
-  var vmouseup: js.Any = js.native
+  var vmouseup: js.Any
 }
 object JQueryMobileEvents {
   

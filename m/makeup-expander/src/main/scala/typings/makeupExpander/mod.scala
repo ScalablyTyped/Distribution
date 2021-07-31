@@ -3,40 +3,70 @@ package typings.makeupExpander
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("makeup-expander", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Expander {
+  class ^ protected ()
+    extends StObject
+       with Expander {
     def this(el: HTMLElement) = this()
     def this(el: HTMLElement, selectedOptions: Options) = this()
-  }
-  
-  @js.native
-  trait Expander extends StObject {
     
-    def collapse(): Unit = js.native
+    /* CompleteClass */
+    override def collapse(): Unit = js.native
     
+    /* CompleteClass */
     var collapseOnClickOut: Boolean = js.native
     
+    /* CompleteClass */
     var collapseOnFocusOut: Boolean = js.native
     
+    /* CompleteClass */
     var collapseOnMouseOut: Boolean = js.native
     
-    def expand(isKeyboard: Boolean): Unit = js.native
+    /* CompleteClass */
+    override def expand(isKeyboard: Boolean): Unit = js.native
     
+    /* CompleteClass */
     var expandOnClick: Boolean = js.native
     
+    /* CompleteClass */
     var expandOnFocus: Boolean = js.native
     
+    /* CompleteClass */
     var expandOnHover: Boolean = js.native
     
-    def isExpanded(): Boolean = js.native
+    /* CompleteClass */
+    override def isExpanded(): Boolean = js.native
     
-    def toggle(): Unit = js.native
+    /* CompleteClass */
+    override def toggle(): Unit = js.native
+  }
+  
+  trait Expander extends StObject {
+    
+    def collapse(): Unit
+    
+    var collapseOnClickOut: Boolean
+    
+    var collapseOnFocusOut: Boolean
+    
+    var collapseOnMouseOut: Boolean
+    
+    def expand(isKeyboard: Boolean): Unit
+    
+    var expandOnClick: Boolean
+    
+    var expandOnFocus: Boolean
+    
+    var expandOnHover: Boolean
+    
+    def isExpanded(): Boolean
+    
+    def toggle(): Unit
   }
   object Expander {
     
@@ -92,32 +122,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoCollapse: js.UndefOr[Boolean] = js.native
+    var autoCollapse: js.UndefOr[Boolean] = js.undefined
     
-    var collapseOnClickOut: js.UndefOr[Boolean] = js.native
+    var collapseOnClickOut: js.UndefOr[Boolean] = js.undefined
     
-    var collapseOnFocusOut: js.UndefOr[Boolean] = js.native
+    var collapseOnFocusOut: js.UndefOr[Boolean] = js.undefined
     
-    var collapseOnMouseOut: js.UndefOr[Boolean] = js.native
+    var collapseOnMouseOut: js.UndefOr[Boolean] = js.undefined
     
-    var contentSelector: js.UndefOr[String] = js.native
+    var contentSelector: js.UndefOr[String] = js.undefined
     
-    var expandOnClick: js.UndefOr[Boolean] = js.native
+    var expandOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var expandOnFocus: js.UndefOr[Boolean] = js.native
+    var expandOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var expandOnHover: js.UndefOr[Boolean] = js.native
+    var expandOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var expandedClass: js.UndefOr[String] = js.native
+    var expandedClass: js.UndefOr[String] = js.undefined
     
-    var focusManagement: js.UndefOr[String | Null] = js.native
+    var focusManagement: js.UndefOr[String | Null] = js.undefined
     
-    var hostSelector: js.UndefOr[String] = js.native
+    var hostSelector: js.UndefOr[String] = js.undefined
     
-    var simulateSpacebarClick: js.UndefOr[Boolean] = js.native
+    var simulateSpacebarClick: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

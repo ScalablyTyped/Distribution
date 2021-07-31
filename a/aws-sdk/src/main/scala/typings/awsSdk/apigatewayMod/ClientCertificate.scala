@@ -2,41 +2,39 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientCertificate extends StObject {
   
   /**
     * The identifier of the client certificate.
     */
-  var clientCertificateId: js.UndefOr[String] = js.native
+  var clientCertificateId: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the client certificate was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the client certificate.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the client certificate will expire.
     */
-  var expirationDate: js.UndefOr[Timestamp] = js.native
+  var expirationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The PEM-encoded public key of the client certificate, which can be used to configure certificate authentication in the integration endpoint .
     */
-  var pemEncodedCertificate: js.UndefOr[String] = js.native
+  var pemEncodedCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
 }
 object ClientCertificate {
   

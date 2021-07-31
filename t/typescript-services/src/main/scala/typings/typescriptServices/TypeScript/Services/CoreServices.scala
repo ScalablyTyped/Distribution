@@ -5,23 +5,21 @@ import typings.typescriptServices.TypeScript.IPreProcessedFileInfo
 import typings.typescriptServices.TypeScript.IScriptSnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoreServices extends StObject {
   
-  def collectGarbage(): Unit = js.native
+  def collectGarbage(): Unit
   
-  def dumpMemory(): String = js.native
+  def dumpMemory(): String
   
-  def getDefaultCompilationSettings(): CompilationSettings = js.native
+  def getDefaultCompilationSettings(): CompilationSettings
   
-  def getMemoryInfo(): js.Array[_] = js.native
+  def getMemoryInfo(): js.Array[js.Any]
   
-  def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): IPreProcessedFileInfo = js.native
+  def getPreProcessedFileInfo(fileName: String, sourceText: IScriptSnapshot): IPreProcessedFileInfo
   
-  var host: ICoreServicesHost = js.native
+  var host: ICoreServicesHost
 }
 object CoreServices {
   
@@ -30,7 +28,7 @@ object CoreServices {
     collectGarbage: () => Unit,
     dumpMemory: () => String,
     getDefaultCompilationSettings: () => CompilationSettings,
-    getMemoryInfo: () => js.Array[_],
+    getMemoryInfo: () => js.Array[js.Any],
     getPreProcessedFileInfo: (String, IScriptSnapshot) => IPreProcessedFileInfo,
     host: ICoreServicesHost
   ): CoreServices = {
@@ -51,7 +49,7 @@ object CoreServices {
     def setGetDefaultCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetMemoryInfo(value: () => js.Array[_]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
+    def setGetMemoryInfo(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => IPreProcessedFileInfo): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))

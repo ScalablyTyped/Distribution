@@ -9,16 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of all charts based on data in a table.
   * @see com.sun.star.table.TableChart
   */
-@js.native
 trait TableCharts
-  extends XTableCharts
+  extends StObject
+     with XTableCharts
      with XIndexAccess
      with XEnumerationAccess
 object TableCharts {

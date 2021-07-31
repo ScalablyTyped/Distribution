@@ -3,15 +3,13 @@ package typings.googleCloudKms.mod.v1
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRing extends StObject {
   
-  var createTime: AsObject = js.native
+  var createTime: AsObject
   
-  var name: String = js.native
+  var name: String
 }
 object KeyRing {
   

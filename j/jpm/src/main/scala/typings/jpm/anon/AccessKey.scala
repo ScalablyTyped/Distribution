@@ -3,27 +3,25 @@ package typings.jpm.anon
 import typings.jpm.contextMenuMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessKey extends StObject {
   
-  var accessKey: js.UndefOr[String] = js.native
+  var accessKey: js.UndefOr[String] = js.undefined
   
-  var contentScript: js.UndefOr[String] = js.native
+  var contentScript: js.UndefOr[String] = js.undefined
   
-  var contentScriptFile: js.UndefOr[String] = js.native
+  var contentScriptFile: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[Context | js.Array[Context]] = js.native
+  var context: js.UndefOr[Context | js.Array[Context]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var onMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], _]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* message */ js.UndefOr[js.Any], js.Any]] = js.undefined
 }
 object AccessKey {
   
@@ -79,7 +77,7 @@ object AccessKey {
     def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnMessage(value: /* message */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    def setOnMessage(value: /* message */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)

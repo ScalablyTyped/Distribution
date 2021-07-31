@@ -4,11 +4,12 @@ import typings.kurentoClient.anon.EventEndOfStream
 import typings.kurentoClient.kurentoClientStrings.EndOfStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PlayerEndpoint extends UriEndpoint {
+trait PlayerEndpoint
+  extends StObject
+     with UriEndpoint {
   
   var mediaPipeline: MediaPipeline = js.native
   

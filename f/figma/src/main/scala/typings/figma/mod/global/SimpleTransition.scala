@@ -4,17 +4,17 @@ import typings.figma.figmaStrings.DISSOLVE
 import typings.figma.figmaStrings.SMART_ANIMATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleTransition extends Transition {
+trait SimpleTransition
+  extends StObject
+     with Transition {
   
-  val duration: Double = js.native
+  val duration: Double
   
-  val easing: Easing = js.native
+  val easing: Easing
   
-  val `type`: DISSOLVE | SMART_ANIMATE = js.native
+  val `type`: DISSOLVE | SMART_ANIMATE
 }
 object SimpleTransition {
   

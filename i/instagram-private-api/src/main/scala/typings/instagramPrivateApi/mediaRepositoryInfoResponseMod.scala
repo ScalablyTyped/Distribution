@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryInfoResponseMod {
   
-  @js.native
   trait MediaEditResponseRootObject extends StObject {
     
-    var media: MediaInfoResponseItemsItem = js.native
+    var media: MediaInfoResponseItemsItem
     
-    var status: String = js.native
+    var status: String
   }
   object MediaEditResponseRootObject {
     
@@ -33,14 +31,13 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseCandidatesItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaInfoResponseCandidatesItem {
     
@@ -64,34 +61,33 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseCaption extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaInfoResponseUser = js.native
+    var user: MediaInfoResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaInfoResponseCaption {
     
@@ -160,16 +156,15 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object MediaInfoResponseFriendshipStatus {
     
@@ -196,10 +191,9 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[MediaInfoResponseCandidatesItem] = js.native
+    var candidates: js.Array[MediaInfoResponseCandidatesItem]
   }
   object MediaInfoResponseImageVersions2 {
     
@@ -220,68 +214,67 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseItemsItem extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: MediaInfoResponseCaption = js.native
+    var caption: MediaInfoResponseCaption
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_liked: Boolean = js.native
+    var has_liked: Boolean
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: MediaInfoResponseImageVersions2 = js.native
+    var image_versions2: MediaInfoResponseImageVersions2
     
-    var inline_composer_display_condition: String = js.native
+    var inline_composer_display_condition: String
     
-    var inline_composer_imp_trigger_time: Double = js.native
+    var inline_composer_imp_trigger_time: Double
     
-    var like_count: Double = js.native
+    var like_count: Double
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[_] = js.native
+    var preview_comments: js.Array[js.Any]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var top_likers: js.Array[_] = js.native
+    var top_likers: js.Array[js.Any]
     
-    var user: MediaInfoResponseUser = js.native
+    var user: MediaInfoResponseUser
   }
   object MediaInfoResponseItemsItem {
     
@@ -313,9 +306,9 @@ object mediaRepositoryInfoResponseMod {
       original_width: Double,
       photo_of_you: Boolean,
       pk: String,
-      preview_comments: js.Array[_],
+      preview_comments: js.Array[js.Any],
       taken_at: Double,
-      top_likers: js.Array[_],
+      top_likers: js.Array[js.Any],
       user: MediaInfoResponseUser
     ): MediaInfoResponseItemsItem = {
       val __obj = js.Dynamic.literal(can_view_more_preview_comments = can_view_more_preview_comments.asInstanceOf[js.Any], can_viewer_reshare = can_viewer_reshare.asInstanceOf[js.Any], can_viewer_save = can_viewer_save.asInstanceOf[js.Any], caption = caption.asInstanceOf[js.Any], caption_is_edited = caption_is_edited.asInstanceOf[js.Any], client_cache_key = client_cache_key.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], comment_count = comment_count.asInstanceOf[js.Any], comment_likes_enabled = comment_likes_enabled.asInstanceOf[js.Any], comment_threading_enabled = comment_threading_enabled.asInstanceOf[js.Any], device_timestamp = device_timestamp.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], has_liked = has_liked.asInstanceOf[js.Any], has_more_comments = has_more_comments.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image_versions2 = image_versions2.asInstanceOf[js.Any], inline_composer_display_condition = inline_composer_display_condition.asInstanceOf[js.Any], inline_composer_imp_trigger_time = inline_composer_imp_trigger_time.asInstanceOf[js.Any], like_count = like_count.asInstanceOf[js.Any], max_num_visible_preview_comments = max_num_visible_preview_comments.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], organic_tracking_token = organic_tracking_token.asInstanceOf[js.Any], original_height = original_height.asInstanceOf[js.Any], original_width = original_width.asInstanceOf[js.Any], photo_of_you = photo_of_you.asInstanceOf[js.Any], pk = pk.asInstanceOf[js.Any], preview_comments = preview_comments.asInstanceOf[js.Any], taken_at = taken_at.asInstanceOf[js.Any], top_likers = top_likers.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
@@ -404,7 +397,7 @@ object mediaRepositoryInfoResponseMod {
       def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
@@ -413,7 +406,7 @@ object mediaRepositoryInfoResponseMod {
       def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTop_likers(value: js.Array[_]): Self = StObject.set(x, "top_likers", value.asInstanceOf[js.Any])
+      def setTop_likers(value: js.Array[js.Any]): Self = StObject.set(x, "top_likers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTop_likersVarargs(value: js.Any*): Self = StObject.set(x, "top_likers", js.Array(value :_*))
@@ -423,18 +416,17 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseRootObject extends StObject {
     
-    var auto_load_more_enabled: Boolean = js.native
+    var auto_load_more_enabled: Boolean
     
-    var items: js.Array[MediaInfoResponseItemsItem] = js.native
+    var items: js.Array[MediaInfoResponseItemsItem]
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var num_results: Double = js.native
+    var num_results: Double
     
-    var status: String = js.native
+    var status: String
   }
   object MediaInfoResponseRootObject {
     
@@ -473,30 +465,29 @@ object mediaRepositoryInfoResponseMod {
     }
   }
   
-  @js.native
   trait MediaInfoResponseUser extends StObject {
     
-    var friendship_status: MediaInfoResponseFriendshipStatus = js.native
+    var friendship_status: MediaInfoResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_favorite: Boolean = js.native
+    var is_favorite: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: Boolean = js.native
+    var is_unpublished: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object MediaInfoResponseUser {
     

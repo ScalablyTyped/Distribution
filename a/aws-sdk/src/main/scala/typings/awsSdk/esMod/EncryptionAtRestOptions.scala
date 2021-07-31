@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionAtRestOptions extends StObject {
   
   /**
     * Specifies the option to enable Encryption At Rest.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Specifies the KMS Key ID for Encryption At Rest options.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.esMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.esMod.KmsKeyId] = js.undefined
 }
 object EncryptionAtRestOptions {
   

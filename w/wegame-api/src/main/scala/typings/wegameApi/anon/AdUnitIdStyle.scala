@@ -3,21 +3,19 @@ package typings.wegameApi.anon
 import typings.wegameApi.wx.types.AdStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdUnitIdStyle extends StObject {
   
   /**
     * 广告单元 id
     */
-  var adUnitId: String = js.native
+  var adUnitId: String
   
   /**
     * banner 广告组件的样式
     */
-  var style: AdStyle = js.native
+  var style: AdStyle
 }
 object AdUnitIdStyle {
   

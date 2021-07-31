@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the format of an email message. */
@@ -11,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object EmailMessageBodyKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind & Double] = js.native
   
-  /* 0 */ val html: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.html with Double = js.native
+  /* 0 */ val html: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.html & Double = js.native
   
-  /* 1 */ val plainText: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.plainText with Double = js.native
+  /* 1 */ val plainText: typings.winrtUwp.Windows.ApplicationModel.Email.EmailMessageBodyKind.plainText & Double = js.native
 }

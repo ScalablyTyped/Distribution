@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationExceptionResourceKey extends StObject {
   
   /**
     * The ID of the resource (for example., sg-xxxxxx).
     */
-  var ResourceId: js.UndefOr[StringWithCharLimit1024] = js.native
+  var ResourceId: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
     * The type of a resource.
     */
-  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.native
+  var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object RemediationExceptionResourceKey {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopApplicationRequest extends StObject {
   
   /**
     * Name of the running application to stop.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsMod.ApplicationName
 }
 object StopApplicationRequest {
   

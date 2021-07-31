@@ -2,25 +2,23 @@ package typings.googleapis.fileV1beta1Mod.fileV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * File share configuration for the instance.
   */
-@js.native
 trait SchemaFileShareConfig extends StObject {
   
   /**
     * File share capacity in gigabytes (GB). Cloud Filestore defines 1 GB as
     * 1024^3 bytes.
     */
-  var capacityGb: js.UndefOr[String] = js.native
+  var capacityGb: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the file share (must be 16 characters or less).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaFileShareConfig {
   

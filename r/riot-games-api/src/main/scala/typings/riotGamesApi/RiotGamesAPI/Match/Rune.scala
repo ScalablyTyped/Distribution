@@ -2,15 +2,13 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rune extends StObject {
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var runeId: Double = js.native
+  var runeId: Double
 }
 object Rune {
   

@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.circle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[CircleLayout] = js.native
+  var layout: js.UndefOr[CircleLayout] = js.undefined
   
-  var paint: js.UndefOr[CirclePaint] = js.native
+  var paint: js.UndefOr[CirclePaint] = js.undefined
   
-  var `type`: circle = js.native
+  var `type`: circle
 }
 object CircleLayer {
   
   @scala.inline
-  def apply(id: String, `type`: circle): CircleLayer = {
+  def apply(id: String): CircleLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("circle")
     __obj.asInstanceOf[CircleLayer]
   }
   

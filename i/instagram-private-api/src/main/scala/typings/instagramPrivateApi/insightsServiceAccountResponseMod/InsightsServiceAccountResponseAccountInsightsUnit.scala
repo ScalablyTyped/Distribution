@@ -2,59 +2,57 @@ package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServiceAccountResponseAccountInsightsUnit extends StObject {
   
-  var account_actions_graph: InsightsServiceAccountResponseAccountActionsGraph = js.native
+  var account_actions_graph: InsightsServiceAccountResponseAccountActionsGraph
   
-  var account_discovery_graph: InsightsServiceAccountResponseAccountDiscoveryGraph = js.native
+  var account_discovery_graph: InsightsServiceAccountResponseAccountDiscoveryGraph
   
-  var aymt_instagram_account_insights_channel: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel = js.native
+  var aymt_instagram_account_insights_channel: InsightsServiceAccountResponseAymtInstagramAccountInsightsChannel
   
-  var call_metric_count: Double = js.native
+  var call_metric_count: Double
   
-  var call_metric_delta: Double = js.native
+  var call_metric_delta: Double
   
-  var email_metric_count: Double = js.native
+  var email_metric_count: Double
   
-  var email_metric_delta: Double = js.native
+  var email_metric_delta: Double
   
-  var get_direction_metric_count: Double = js.native
+  var get_direction_metric_count: Double
   
-  var get_direction_metric_delta: Double = js.native
+  var get_direction_metric_delta: Double
   
-  var graph: InsightsServiceAccountResponseGraph = js.native
+  var graph: InsightsServiceAccountResponseGraph
   
-  var hashtags_impressions: InsightsServiceAccountResponseHashtagsImpressions = js.native
+  var hashtags_impressions: InsightsServiceAccountResponseHashtagsImpressions
   
-  var hashtags_reach: InsightsServiceAccountResponseHashtagsReach = js.native
+  var hashtags_reach: InsightsServiceAccountResponseHashtagsReach
   
-  var impressions_metric_count: Double = js.native
+  var impressions_metric_count: Double
   
-  var impressions_metric_delta: Double = js.native
+  var impressions_metric_delta: Double
   
-  var last_week_impressions: Double = js.native
+  var last_week_impressions: Double
   
-  var metric_graph: InsightsServiceAccountResponseMetricGraph = js.native
+  var metric_graph: InsightsServiceAccountResponseMetricGraph
   
-  var profile_visits_metric_count: Double = js.native
+  var profile_visits_metric_count: Double
   
-  var profile_visits_metric_delta: Double = js.native
+  var profile_visits_metric_delta: Double
   
-  var reach_metric_count: Double = js.native
+  var reach_metric_count: Double
   
-  var reach_metric_delta: Double = js.native
+  var reach_metric_delta: Double
   
-  var text_metric_count: Double = js.native
+  var text_metric_count: Double
   
-  var text_metric_delta: Double = js.native
+  var text_metric_delta: Double
   
-  var website_visits_metric_count: Double = js.native
+  var website_visits_metric_count: Double
   
-  var website_visits_metric_delta: Double = js.native
+  var website_visits_metric_delta: Double
 }
 object InsightsServiceAccountResponseAccountInsightsUnit {
   

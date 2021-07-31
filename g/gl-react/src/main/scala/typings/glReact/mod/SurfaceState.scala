@@ -2,17 +2,15 @@ package typings.glReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SurfaceState extends StObject {
   
-  var debug: Boolean = js.native
+  var debug: Boolean
   
-  var ready: Boolean = js.native
+  var ready: Boolean
   
-  var rebootId: Double = js.native
+  var rebootId: Double
 }
 object SurfaceState {
   

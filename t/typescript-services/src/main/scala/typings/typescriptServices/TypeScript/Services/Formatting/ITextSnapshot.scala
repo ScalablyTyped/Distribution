@@ -3,19 +3,17 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 import typings.typescriptServices.TypeScript.TextSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextSnapshot extends StObject {
   
-  def getLineFromLineNumber(lineNumber: Double): ITextSnapshotLine = js.native
+  def getLineFromLineNumber(lineNumber: Double): ITextSnapshotLine
   
-  def getLineFromPosition(position: Double): ITextSnapshotLine = js.native
+  def getLineFromPosition(position: Double): ITextSnapshotLine
   
-  def getLineNumberFromPosition(position: Double): Double = js.native
+  def getLineNumberFromPosition(position: Double): Double
   
-  def getText(span: TextSpan): String = js.native
+  def getText(span: TextSpan): String
 }
 object ITextSnapshot {
   

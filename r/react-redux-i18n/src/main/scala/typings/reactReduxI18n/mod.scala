@@ -11,7 +11,6 @@ import typings.redux.mod.Reducer
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,43 +61,35 @@ object mod {
     def this(props: TranslateProps, context: js.Any) = this()
   }
   
-  @JSImport("react-redux-i18n", "i18nReducer")
-  @js.native
-  def i18nReducer(): Reducer[I18nState, AnyAction] = js.native
-  @JSImport("react-redux-i18n", "i18nReducer")
-  @js.native
-  def i18nReducer(state: js.UndefOr[scala.Nothing], options: js.Any): Reducer[I18nState, AnyAction] = js.native
-  @JSImport("react-redux-i18n", "i18nReducer")
-  @js.native
-  def i18nReducer(state: js.Any): Reducer[I18nState, AnyAction] = js.native
-  @JSImport("react-redux-i18n", "i18nReducer")
-  @js.native
-  def i18nReducer(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = js.native
+  @scala.inline
+  def i18nReducer(): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")().asInstanceOf[Reducer[I18nState, AnyAction]]
+  @scala.inline
+  def i18nReducer(state: js.Any): Reducer[I18nState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any]).asInstanceOf[Reducer[I18nState, AnyAction]]
+  @scala.inline
+  def i18nReducer(state: js.Any, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
+  @scala.inline
+  def i18nReducer(state: Unit, options: js.Any): Reducer[I18nState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("i18nReducer")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reducer[I18nState, AnyAction]]
   
-  @JSImport("react-redux-i18n", "loadTranslations")
-  @js.native
-  def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[_] = js.native
+  @scala.inline
+  def loadTranslations(translationsObject: TranslationObjects): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTranslations")(translationsObject.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
   
-  @JSImport("react-redux-i18n", "setLocale")
-  @js.native
-  def setLocale(locale: String): DispatchCallback[_] = js.native
+  @scala.inline
+  def setLocale(locale: String): DispatchCallback[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[DispatchCallback[js.Any]]
   
-  @JSImport("react-redux-i18n", "syncTranslationWithStore")
-  @js.native
-  def syncTranslationWithStore(store: Store[_, AnyAction]): Unit = js.native
+  @scala.inline
+  def syncTranslationWithStore(store: Store[js.Any, AnyAction]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("syncTranslationWithStore")(store.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type DispatchCallback[S /* <: Action[_] */] = js.Function2[
+  type DispatchCallback[S /* <: Action[js.Any] */] = js.Function2[
     /* dispatch */ js.UndefOr[Dispatch[S]], 
     /* getState */ js.UndefOr[js.Function0[S]], 
     js.Any
   ]
   
-  @js.native
   trait I18nState extends StObject {
     
-    var locale: String = js.native
+    var locale: String
     
-    var translations: TranslationObjects = js.native
+    var translations: TranslationObjects
   }
   object I18nState {
     
@@ -119,22 +110,21 @@ object mod {
     }
   }
   
-  @js.native
   trait LocalizeProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dangerousHTML: js.UndefOr[Boolean] = js.native
+    var dangerousHTML: js.UndefOr[Boolean] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[_]] = js.native
+    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var value: String | Double | js.Object = js.native
+    var value: String | Double | js.Object
   }
   object LocalizeProps {
     
@@ -178,7 +168,7 @@ object mod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setTag(value: ReactType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
@@ -192,19 +182,19 @@ object mod {
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias react-redux-i18n.react-redux-i18n.SubTranslationObject */ js.Object
   ])
   
-  @js.native
   trait TranslateProps
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dangerousHTML: js.UndefOr[Boolean] = js.native
+    var dangerousHTML: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tag: js.UndefOr[ReactType[_]] = js.native
+    var tag: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object TranslateProps {
     
@@ -236,7 +226,7 @@ object mod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setTag(value: ReactType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ReactType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

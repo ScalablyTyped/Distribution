@@ -13,7 +13,6 @@ import typings.std.HTMLInputElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatingFilterMod {
@@ -123,13 +122,14 @@ object floatingFilterMod {
           IFloatingFilterParams[SerializedTextFilter, BaseFloatingFilterChange[SerializedTextFilter]]
         ]
   
-  @js.native
-  trait BaseFloatingFilterChange[M] extends FloatingFilterChange {
+  trait BaseFloatingFilterChange[M]
+    extends StObject
+       with FloatingFilterChange {
     
     @JSName("apply")
-    var apply: Boolean = js.native
+    var apply: Boolean
     
-    var model: M = js.native
+    var model: M
   }
   object BaseFloatingFilterChange {
     
@@ -140,7 +140,7 @@ object floatingFilterMod {
     }
     
     @scala.inline
-    implicit class BaseFloatingFilterChangeMutableBuilder[Self <: BaseFloatingFilterChange[_], M] (val x: Self with BaseFloatingFilterChange[M]) extends AnyVal {
+    implicit class BaseFloatingFilterChangeMutableBuilder[Self <: BaseFloatingFilterChange[?], M] (val x: Self & BaseFloatingFilterChange[M]) extends AnyVal {
       
       @scala.inline
       def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
@@ -150,7 +150,6 @@ object floatingFilterMod {
     }
   }
   
-  @js.native
   trait FloatingFilterChange extends StObject
   
   @js.native
@@ -162,7 +161,8 @@ object floatingFilterMod {
   
   @js.native
   trait IFloatingFilterComp[M, F /* <: FloatingFilterChange */, P /* <: IFloatingFilterParams[M, F] */]
-    extends IFloatingFilter[M, F, P]
+    extends StObject
+       with IFloatingFilter[M, F, P]
        with IComponent[P]
   
   @js.native

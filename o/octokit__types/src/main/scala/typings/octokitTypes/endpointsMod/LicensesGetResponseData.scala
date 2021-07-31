@@ -2,37 +2,35 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicensesGetResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var conditions: js.Array[String] = js.native
+  var conditions: js.Array[String]
   
-  var description: String = js.native
+  var description: String
   
-  var featured: Boolean = js.native
+  var featured: Boolean
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var implementation: String = js.native
+  var implementation: String
   
-  var key: String = js.native
+  var key: String
   
-  var limitations: js.Array[String] = js.native
+  var limitations: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var permissions: js.Array[String] = js.native
+  var permissions: js.Array[String]
   
-  var spdx_id: String = js.native
+  var spdx_id: String
   
-  var url: String = js.native
+  var url: String
 }
 object LicensesGetResponseData {
   

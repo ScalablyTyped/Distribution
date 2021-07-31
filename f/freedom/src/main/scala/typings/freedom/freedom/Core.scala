@@ -2,24 +2,22 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // See |Core_unprivileged| in |core.unprivileged.js|
-@js.native
 trait Core extends StObject {
   
   // Given an ChannelEndpointIdentifier for a channel, create a proxy event
   // interface for it.
-  def bindChannel(channelIdentifier: String): js.Promise[Channel] = js.native
+  def bindChannel(channelIdentifier: String): js.Promise[Channel]
   
   // Create a new channel which which to communicate between modules.
-  def createChannel(): js.Promise[ChannelSpecifier] = js.native
+  def createChannel(): js.Promise[ChannelSpecifier]
   
   // Returns the list of identifiers describing the dependency path.
-  def getId(): js.Promise[js.Array[String]] = js.native
+  def getId(): js.Promise[js.Array[String]]
   
-  def getLogger(tag: String): js.Promise[Logger] = js.native
+  def getLogger(tag: String): js.Promise[Logger]
 }
 object Core {
   

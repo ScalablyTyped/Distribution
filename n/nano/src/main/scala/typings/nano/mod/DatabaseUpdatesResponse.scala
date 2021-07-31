@@ -2,19 +2,17 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
-@js.native
 trait DatabaseUpdatesResponse extends StObject {
   
   // The last sequence ID reported.
-  var last_seq: String = js.native
+  var last_seq: String
   
   // An array of database events. For longpoll and continuous modes, the entire response is the contents of the
   // results array.
-  var results: js.Array[DatabaseUpdatesResultItem] = js.native
+  var results: js.Array[DatabaseUpdatesResultItem]
 }
 object DatabaseUpdatesResponse {
   

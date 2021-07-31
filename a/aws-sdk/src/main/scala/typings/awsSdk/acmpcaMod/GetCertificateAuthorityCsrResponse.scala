@@ -2,16 +2,14 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificateAuthorityCsrResponse extends StObject {
   
   /**
     * The base64 PEM-encoded certificate signing request (CSR) for your private CA certificate.
     */
-  var Csr: js.UndefOr[CsrBody] = js.native
+  var Csr: js.UndefOr[CsrBody] = js.undefined
 }
 object GetCertificateAuthorityCsrResponse {
   

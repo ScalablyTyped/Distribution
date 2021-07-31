@@ -3,23 +3,21 @@ package typings.typeorm
 import typings.typeorm.commonEntityTargetMod.EntityTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsEntityRepositoryMetadataArgsMod {
   
-  @js.native
   trait EntityRepositoryMetadataArgs extends StObject {
     
     /**
       * Entity managed by this custom repository.
       */
-    val entity: js.UndefOr[EntityTarget[_]] = js.native
+    val entity: js.UndefOr[EntityTarget[js.Any]] = js.undefined
     
     /**
       * Constructor of the custom entity repository.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object EntityRepositoryMetadataArgs {
     
@@ -33,7 +31,7 @@ object metadataArgsEntityRepositoryMetadataArgsMod {
     implicit class EntityRepositoryMetadataArgsMutableBuilder[Self <: EntityRepositoryMetadataArgs] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEntity(value: EntityTarget[_]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      def setEntity(value: EntityTarget[js.Any]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)

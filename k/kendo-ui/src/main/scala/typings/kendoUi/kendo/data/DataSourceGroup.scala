@@ -2,27 +2,27 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSourceGroup extends DataSourceItemOrGroup {
+trait DataSourceGroup
+  extends StObject
+     with DataSourceItemOrGroup {
   
-  var aggregates: js.Array[_] = js.native
+  var aggregates: js.Array[js.Any]
   
-  var field: String = js.native
+  var field: String
   
-  var hasSubgroups: Boolean = js.native
+  var hasSubgroups: Boolean
   
-  var items: js.Array[DataSourceItemOrGroup] = js.native
+  var items: js.Array[DataSourceItemOrGroup]
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object DataSourceGroup {
   
   @scala.inline
   def apply(
-    aggregates: js.Array[_],
+    aggregates: js.Array[js.Any],
     field: String,
     hasSubgroups: Boolean,
     items: js.Array[DataSourceItemOrGroup],
@@ -36,7 +36,7 @@ object DataSourceGroup {
   implicit class DataSourceGroupMutableBuilder[Self <: DataSourceGroup] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAggregates(value: js.Array[_]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    def setAggregates(value: js.Array[js.Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAggregatesVarargs(value: js.Any*): Self = StObject.set(x, "aggregates", js.Array(value :_*))

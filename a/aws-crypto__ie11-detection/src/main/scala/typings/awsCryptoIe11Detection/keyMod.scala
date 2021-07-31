@@ -2,21 +2,19 @@ package typings.awsCryptoIe11Detection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyMod {
   
-  @js.native
   trait Key extends StObject {
     
-    val algorithm: String = js.native
+    val algorithm: String
     
-    val extractable: Boolean = js.native
+    val extractable: Boolean
     
-    val keyUsage: js.Array[String] = js.native
+    val keyUsage: js.Array[String]
     
-    val `type`: String = js.native
+    val `type`: String
   }
   object Key {
     

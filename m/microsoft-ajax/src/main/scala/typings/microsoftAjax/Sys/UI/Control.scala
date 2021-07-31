@@ -4,14 +4,14 @@ import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides the base class for all all ASP.NET AJAX client controls.
   */
-@js.native
-trait Control extends Component {
+trait Control
+  extends StObject
+     with Component {
   
   //#endregion
   //#region Methods
@@ -21,7 +21,7 @@ trait Control extends Component {
     * @param className
     *          A string that contains the name of the CSS class to add.
     */
-  def addCssClass(className: String): Unit = js.native
+  def addCssClass(className: String): Unit
   
   //#endregion
   //#region Properties
@@ -29,7 +29,7 @@ trait Control extends Component {
     * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
     * @return The DOM element that the current Control object is associated with.
     */
-  def get_element(): HTMLElement = js.native
+  def get_element(): HTMLElement
   
   /**
     * Called when an event is raised by the raiseBubbleEvent method.
@@ -45,7 +45,7 @@ trait Control extends Component {
     * @return
     *      false in all cases.
     */
-  def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+  def onBubbleEvent(source: js.Any, args: js.Any): Boolean
   
   /**
     * Calls the onBubbleEvent method of the parent control.
@@ -60,7 +60,7 @@ trait Control extends Component {
     * @param args
     *          The event arguments.
     */
-  def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+  def raiseBubbleEvent(source: js.Any, args: js.Any): Unit
   
   /**
     * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
@@ -69,14 +69,14 @@ trait Control extends Component {
     * @param className
     *          A string that contains the name of the CSS class to remove.
     */
-  def removeCssClass(className: String): Unit = js.native
+  def removeCssClass(className: String): Unit
   
   /**
     * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
     * @param className
     *          A string that contains the name of the CSS class to toggle.
     */
-  def toggleCssClass(className: String): Unit = js.native
+  def toggleCssClass(className: String): Unit
 }
 object Control {
   

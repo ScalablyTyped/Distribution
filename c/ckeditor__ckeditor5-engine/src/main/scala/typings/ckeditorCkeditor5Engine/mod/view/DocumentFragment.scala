@@ -4,7 +4,6 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/documentfragment
@@ -38,7 +37,7 @@ class DocumentFragment protected () extends StObject {
   val isEmpty: Boolean = js.native
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Iterator[Node, _, js.UndefOr[scala.Nothing]]] = js.native
+  var iterator: js.Function0[Iterator[Node, js.Any, Unit]] = js.native
   
   val parent: Null = js.native
   

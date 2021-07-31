@@ -2,46 +2,44 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A condition to be met.
   */
-@js.native
 trait SchemaCondition extends StObject {
   
   /**
     * Trusted attributes supplied by the IAM system.
     */
-  var iam: js.UndefOr[String] = js.native
+  var iam: js.UndefOr[String] = js.undefined
   
   /**
     * An operator to apply the subject with.
     */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
   
   /**
     * Trusted attributes discharged by the service.
     */
-  var svc: js.UndefOr[String] = js.native
+  var svc: js.UndefOr[String] = js.undefined
   
   /**
     * Trusted attributes supplied by any service that owns resources and uses
     * the IAM system for access control.
     */
-  var sys: js.UndefOr[String] = js.native
+  var sys: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED. Use &#39;values&#39; instead.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * The objects of the condition. This is mutually exclusive with
     * &#39;value&#39;.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCondition {
   

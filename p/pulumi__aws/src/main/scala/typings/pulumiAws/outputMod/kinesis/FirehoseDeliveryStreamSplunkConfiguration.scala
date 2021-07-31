@@ -2,51 +2,49 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamSplunkConfiguration extends StObject {
   
   /**
     * The CloudWatch Logging Options for the delivery stream. More details are given below.
     */
-  var cloudwatchLoggingOptions: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions = js.native
+  var cloudwatchLoggingOptions: FirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions
   
   /**
     * The amount of time, in seconds between 180 and 600, that Kinesis Firehose waits to receive an acknowledgment from Splunk after it sends it data.
     */
-  var hecAcknowledgmentTimeout: js.UndefOr[Double] = js.native
+  var hecAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The HTTP Event Collector (HEC) endpoint to which Kinesis Firehose sends your data.
     */
-  var hecEndpoint: String = js.native
+  var hecEndpoint: String
   
   /**
     * The HEC endpoint type. Valid values are `Raw` or `Event`. The default value is `Raw`.
     */
-  var hecEndpointType: js.UndefOr[String] = js.native
+  var hecEndpointType: js.UndefOr[String] = js.undefined
   
   /**
     * The GUID that you obtain from your Splunk cluster when you create a new HEC endpoint.
     */
-  var hecToken: String = js.native
+  var hecToken: String
   
   /**
     * The data processing configuration.  More details are given below.
     */
-  var processingConfiguration: js.UndefOr[FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration] = js.native
+  var processingConfiguration: js.UndefOr[FirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration] = js.undefined
   
   /**
     * After an initial failure to deliver to Splunk, the total amount of time, in seconds between 0 to 7200, during which Firehose re-attempts delivery (including the first attempt).  After this time has elapsed, the failed documents are written to Amazon S3.  The default value is 300s.  There will be no retry if the value is 0.
     */
-  var retryDuration: js.UndefOr[Double] = js.native
+  var retryDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.
     */
-  var s3BackupMode: js.UndefOr[String] = js.native
+  var s3BackupMode: js.UndefOr[String] = js.undefined
 }
 object FirehoseDeliveryStreamSplunkConfiguration {
   

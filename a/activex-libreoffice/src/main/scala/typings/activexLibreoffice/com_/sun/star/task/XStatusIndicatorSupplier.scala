@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link XStatusIndicatorFactory} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XStatusIndicatorSupplier extends XInterface {
+trait XStatusIndicatorSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * use {@link XStatusIndicatorFactory.createStatusIndicator()} instead of this
     * @deprecated Deprecated
     */
-  val StatusIndicator: XStatusIndicator = js.native
+  val StatusIndicator: XStatusIndicator
   
   /**
     * use {@link XStatusIndicatorFactory.createStatusIndicator()} instead of this
     * @deprecated Deprecated
     */
-  def getStatusIndicator(): XStatusIndicator = js.native
+  def getStatusIndicator(): XStatusIndicator
 }
 object XStatusIndicatorSupplier {
   

@@ -2,7 +2,6 @@ package typings.webcola.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Block")
@@ -24,7 +23,6 @@ object Block {
   @scala.inline
   def createSplitBlock_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
   
-  @JSImport("webcola", "Block.split")
-  @js.native
-  def split(c: typings.webcola.vpscMod.Constraint): js.Array[typings.webcola.vpscMod.Block] = js.native
+  @scala.inline
+  def split(c: typings.webcola.vpscMod.Constraint): js.Array[typings.webcola.vpscMod.Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.webcola.vpscMod.Block]]
 }

@@ -14,7 +14,6 @@ import typings.hapiInert.hapiInertStrings.simple
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,13 +22,12 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[OptionalRegistrationOptions] = js.native
   
-  @js.native
   trait DirectoryHandlerRouteObject extends StObject {
     
     /**
       * defaultExtension - optional string, appended to file requests if the requested file is not found. Defaults to no extension.
       */
-    var defaultExtension: js.UndefOr[String] = js.native
+    var defaultExtension: js.UndefOr[String] = js.undefined
     
     /**
       * etagMethod - specifies the method used to calculate the ETag header response. Available values:
@@ -37,25 +35,25 @@ object mod extends Shortcut {
       *  * 'simple' - Hex encoded size and modification date, suitable when files are stored on a single server.
       *  * false - Disable ETag computation.
       */
-    var etagMethod: js.UndefOr[hash | simple | `false`] = js.native
+    var etagMethod: js.UndefOr[hash | simple | `false`] = js.undefined
     
     /**
       * index - optional boolean|string|string[], determines if an index file will be served if found in the folder when requesting a directory.
       * The given string or strings specify the name(s) of the index file to look for. If true, looks for 'index.html'.
       * Any falsy value disables index file lookup. Defaults to true.
       */
-    var index: js.UndefOr[Boolean | String | js.Array[String]] = js.native
+    var index: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
     
     /**
       * listing - optional boolean, determines if directory listing is generated when a directory is requested without an index document. Defaults to false.
       */
-    var listing: js.UndefOr[Boolean] = js.native
+    var listing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * lookupCompressed - optional boolean, instructs the file processor to look for the same filename with the '.gz' suffix for a pre-compressed
       * version of the file to serve if the request supports content encoding. Defaults to false.
       */
-    var lookupCompressed: js.UndefOr[Boolean] = js.native
+    var lookupCompressed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * path - (required) the directory root path (relative paths are resolved based on the route files configuration). Value can be:
@@ -64,19 +62,19 @@ object mod extends Shortcut {
       * * a function with the signature function(request) which returns the path string or an array of path strings.
       *   If the function returns an error, the error is passed back to the client in the response.
       */
-    var path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error]) = js.native
+    var path: String | js.Array[String] | (RequestHandler[String | js.Array[String] | Error])
     
     /**
       * redirectToSlash - optional boolean, determines if requests for a directory without a trailing slash are redirected to the same path with the missing slash.
       * Useful for ensuring relative links inside the response are resolved correctly.
       * Disabled when the server config router.stripTrailingSlash is true.Defaults to false.
       */
-    var redirectToSlash: js.UndefOr[Boolean] = js.native
+    var redirectToSlash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * showHidden - optional boolean, determines if hidden files will be shown and served. Defaults to false.
       */
-    var showHidden: js.UndefOr[Boolean] = js.native
+    var showHidden: js.UndefOr[Boolean] = js.undefined
   }
   object DirectoryHandlerRouteObject {
     
@@ -145,13 +143,14 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait FileHandlerRouteObject extends ReplyFileHandlerOptions {
+  trait FileHandlerRouteObject
+    extends StObject
+       with ReplyFileHandlerOptions {
     
     /**
       * path - a path string or function as described above (required).
       */
-    var path: String | RequestHandler[String] = js.native
+    var path: String | RequestHandler[String]
   }
   object FileHandlerRouteObject {
     
@@ -176,13 +175,12 @@ object mod extends Shortcut {
     * inert accepts the following registration options
     * @see {@link https://github.com/hapijs/inert#registration-options}
     */
-  @js.native
   trait OptionalRegistrationOptions extends StObject {
     
     /**
       * sets the maximum number of file etag hash values stored in the etags cache. Defaults to 10000.
       */
-    var etagsCacheMaxSize: js.UndefOr[Double] = js.native
+    var etagsCacheMaxSize: js.UndefOr[Double] = js.undefined
   }
   object OptionalRegistrationOptions {
     
@@ -203,19 +201,18 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ReplyFileHandlerOptions extends StObject {
     
     /**
       * confine - serve file relative to this directory and returns 403 Forbidden if the path resolves outside the confine directory.
       * Defaults to true which uses the relativeTo route option as the confine. Set to false to disable this security feature.
       */
-    var confine: js.UndefOr[Boolean | String] = js.native
+    var confine: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * end - offset in file to stop reading from. If not set, will read to end of file.
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /**
       * etagMethod - specifies the method used to calculate the ETag header response. Available values:
@@ -223,22 +220,22 @@ object mod extends Shortcut {
       *  * 'simple' - Hex encoded size and modification date, suitable when files are stored on a single server.
       *  * false - Disable ETag computation.
       */
-    var etagMethod: js.UndefOr[hash | simple | `false`] = js.native
+    var etagMethod: js.UndefOr[hash | simple | `false`] = js.undefined
     
     /**
       * filename - an optional filename to specify if sending a 'Content-Disposition' header, defaults to the basename of path
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * lookupCompressed - if true, looks for for a pre-compressed version of the file with the same filename with an extension, depending on the accepted encoding. Defaults to false.
       */
-    var lookupCompressed: js.UndefOr[Boolean] = js.native
+    var lookupCompressed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * lookupMap - an object which maps content encoding to expected file name extension. Defaults to `{ gzip: '.gz' }.
       */
-    var lookupMap: js.UndefOr[StringDictionary[String]] = js.native
+    var lookupMap: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * mode - specifies whether to include the 'Content-Disposition' header with the response. Available values:
@@ -246,12 +243,12 @@ object mod extends Shortcut {
       *  * 'attachment'
       *  *'inline'
       */
-    var mode: js.UndefOr[`false` | attachment | `inline`] = js.native
+    var mode: js.UndefOr[`false` | attachment | `inline`] = js.undefined
     
     /**
       * start - offset in file to reading from, defaults to 0.
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object ReplyFileHandlerOptions {
     
@@ -324,7 +321,6 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait HandlerDecorations extends StObject {
       
       /**
@@ -339,7 +335,7 @@ object mod extends Shortcut {
         * The directory handler is an object with the following options:
         * @see {@link https://github.com/hapijs/inert#the-directory-handler}
         */
-      var directory: js.UndefOr[DirectoryHandlerRouteObject] = js.native
+      var directory: js.UndefOr[DirectoryHandlerRouteObject] = js.undefined
       
       /**
         * The file handler
@@ -350,9 +346,9 @@ object mod extends Shortcut {
         *  * an object with one or more of the following options @see IFileHandler
         * @see {@link https://github.com/hapijs/inert#the-file-handler}
         */
-      var file: js.UndefOr[String | RequestHandler[String] | FileHandlerRouteObject] = js.native
+      var file: js.UndefOr[String | RequestHandler[String] | FileHandlerRouteObject] = js.undefined
       
-      var files: js.UndefOr[RelativeTo] = js.native
+      var files: js.UndefOr[RelativeTo] = js.undefined
     }
     object HandlerDecorations {
       

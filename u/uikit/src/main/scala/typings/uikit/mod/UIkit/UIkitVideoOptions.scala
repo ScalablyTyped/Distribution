@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitVideoOptions extends StObject {
   
-  var automute: js.UndefOr[Boolean] = js.native
+  var automute: js.UndefOr[Boolean] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean | String] = js.native
+  var autoplay: js.UndefOr[Boolean | String] = js.undefined
 }
 object UIkitVideoOptions {
   

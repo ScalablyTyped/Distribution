@@ -5,7 +5,6 @@ import typings.jsrsasign.jsrsasignStrings.utc
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param params associative array of parameters (ex. {'str': '130430235959Z'})
   */
 @js.native
-trait DERAbstractTime extends ASN1Object {
+trait DERAbstractTime
+  extends StObject
+     with ASN1Object {
   
   @JSName("formatDate")
   /* private */ def formatDate_gen(dateObject: Date, `type`: gen, withMillis: Boolean): String = js.native

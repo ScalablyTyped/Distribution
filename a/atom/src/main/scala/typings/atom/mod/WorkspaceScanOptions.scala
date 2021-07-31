@@ -2,23 +2,21 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceScanOptions extends StObject {
   
   /** The number of lines before the matched line to include in the results object. */
-  var leadingContextLineCount: js.UndefOr[Double] = js.native
+  var leadingContextLineCount: js.UndefOr[Double] = js.undefined
   
   /** A function to be periodically called with the number of paths searched. */
-  var onPathsSearched: js.UndefOr[js.Function1[/* pathsSearched */ Double, Unit]] = js.native
+  var onPathsSearched: js.UndefOr[js.Function1[/* pathsSearched */ Double, Unit]] = js.undefined
   
   /** An array of glob patterns to search within. */
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The number of lines after the matched line to include in the results object. */
-  var trailingContextLineCount: js.UndefOr[Double] = js.native
+  var trailingContextLineCount: js.UndefOr[Double] = js.undefined
 }
 object WorkspaceScanOptions {
   

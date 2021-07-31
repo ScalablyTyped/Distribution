@@ -2,36 +2,34 @@ package typings.stripe.mod.resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebHookGenerateTestHeaderStringOptions extends StObject {
   
   /**
     * JSON stringified payload object, containing the 'id' and 'object' parameters
     */
-  var payload: js.UndefOr[String] = js.native
+  var payload: js.UndefOr[String] = js.undefined
   
   /**
     * Version of API to hit. Defaults to 'v1'.
     */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
   
   /**
     * Stripe webhook secret 'whsec_...'
     */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
   /**
     * Computed webhook signature
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
   
   /**
     * Timestamp of the header. Defaults to Date.now()
     */
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
 }
 object IWebHookGenerateTestHeaderStringOptions {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jwt extends StObject {
   
   /** The compact encoding of a JWS, which is always three base64 encoded strings joined by periods. For details, see: https://tools.ietf.org/html/rfc7515.html#section-3.1 */
-  var compactJwt: js.UndefOr[String] = js.native
+  var compactJwt: js.UndefOr[String] = js.undefined
 }
 object Jwt {
   

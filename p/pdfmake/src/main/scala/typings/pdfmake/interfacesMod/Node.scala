@@ -3,47 +3,45 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.anon.HorizontalRatio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  var canvas: js.UndefOr[CanvasElement] = js.native
+  var canvas: js.UndefOr[CanvasElement] = js.undefined
   
-  var columns: js.UndefOr[js.Array[Column]] = js.native
+  var columns: js.UndefOr[js.Array[Column]] = js.undefined
   
-  var headlineLevel: js.UndefOr[Double] = js.native
+  var headlineLevel: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var ol: js.UndefOr[js.Array[OrderedListElement]] = js.native
+  var ol: js.UndefOr[js.Array[OrderedListElement]] = js.undefined
   
-  var pageBreak: js.UndefOr[PageBreak] = js.native
+  var pageBreak: js.UndefOr[PageBreak] = js.undefined
   
-  var pageNumbers: js.Array[Double] = js.native
+  var pageNumbers: js.Array[Double]
   
-  var pageOrientation: js.UndefOr[PageOrientation] = js.native
+  var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
   
-  var pages: Double = js.native
+  var pages: Double
   
-  var qr: js.UndefOr[String] = js.native
+  var qr: js.UndefOr[String] = js.undefined
   
-  var stack: Boolean = js.native
+  var stack: Boolean
   
-  var startPosition: HorizontalRatio = js.native
+  var startPosition: HorizontalRatio
   
-  var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
   
-  var svg: js.UndefOr[String] = js.native
+  var svg: js.UndefOr[String] = js.undefined
   
-  var table: js.UndefOr[Table] = js.native
+  var table: js.UndefOr[Table] = js.undefined
   
-  var text: js.UndefOr[Content] = js.native
+  var text: js.UndefOr[Content] = js.undefined
   
-  var ul: js.UndefOr[js.Array[UnorderedListElement]] = js.native
+  var ul: js.UndefOr[js.Array[UnorderedListElement]] = js.undefined
 }
 object Node {
   

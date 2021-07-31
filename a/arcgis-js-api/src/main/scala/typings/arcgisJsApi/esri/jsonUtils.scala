@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait jsonUtils extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait jsonUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-jsonUtils.html#fromJSON)
     */
-  def fromJSON(json: js.Any): Geometry_ = js.native
+  def fromJSON(json: js.Any): Geometry_
   
   /**
     * Returns the type for a given geometry in the JSON format used by the ArcGIS platform.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-jsonUtils.html#getJsonType)
     */
-  def getJsonType(geometry: Geometry_): String = js.native
+  def getJsonType(geometry: Geometry_): String
 }
 object jsonUtils {
   

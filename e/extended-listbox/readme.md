@@ -12,7 +12,7 @@ A simple to use javascript component as powerful alternative to the HTML <select
 | Keywords           | listbox, select, multiselect, form, input, ui |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 5238 |
+| # downloads        | 5974 |
 | # stars            | 0 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can contain multiple deals. A deal contains the terms and targeting
   * information that is used for serving.
   */
-@js.native
 trait SchemaDeal extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDeal extends StObject {
     * granularity of a second. A value is not required for Private Auction
     * deals or Preferred Deals.
     */
-  var availableEndTime: js.UndefOr[String] = js.native
+  var availableEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional proposed flight start time of the deal. This will generally be
@@ -26,19 +24,19 @@ trait SchemaDeal extends StObject {
     * seconds boundary. Any time specified with more granularity (e.g., in
     * milliseconds) will be truncated towards the start of time in seconds.
     */
-  var availableStartTime: js.UndefOr[String] = js.native
+  var availableStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * Buyer private data (hidden from seller).
     */
-  var buyerPrivateData: js.UndefOr[SchemaPrivateData] = js.native
+  var buyerPrivateData: js.UndefOr[SchemaPrivateData] = js.undefined
   
   /**
     * The product ID from which this deal was created.  Note: This field may be
     * set only when creating the resource. Modifying this field while updating
     * the resource will result in an error.
     */
-  var createProductId: js.UndefOr[String] = js.native
+  var createProductId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional revision number of the product that the deal was created from.
@@ -48,117 +46,117 @@ trait SchemaDeal extends StObject {
     * resource. Modifying this field while updating the resource will result in
     * an error.
     */
-  var createProductRevision: js.UndefOr[String] = js.native
+  var createProductRevision: js.UndefOr[String] = js.undefined
   
   /**
     * The time of the deal creation. @OutputOnly
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the creative pre-approval policy. @OutputOnly
     */
-  var creativePreApprovalPolicy: js.UndefOr[String] = js.native
+  var creativePreApprovalPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Restricitions about the creatives associated with the deal (i.e., size)
     * This is available for Programmatic Guaranteed/Preferred Deals in Ad
     * Manager. @OutputOnly
     */
-  var creativeRestrictions: js.UndefOr[SchemaCreativeRestrictions] = js.native
+  var creativeRestrictions: js.UndefOr[SchemaCreativeRestrictions] = js.undefined
   
   /**
     * Specifies whether the creative is safeFrame compatible. @OutputOnly
     */
-  var creativeSafeFrameCompatibility: js.UndefOr[String] = js.native
+  var creativeSafeFrameCompatibility: js.UndefOr[String] = js.undefined
   
   /**
     * A unique deal ID for the deal (server-assigned). @OutputOnly
     */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the serving status of this deal. @OutputOnly
     */
-  var dealServingMetadata: js.UndefOr[SchemaDealServingMetadata] = js.native
+  var dealServingMetadata: js.UndefOr[SchemaDealServingMetadata] = js.undefined
   
   /**
     * The negotiable terms of the deal.
     */
-  var dealTerms: js.UndefOr[SchemaDealTerms] = js.native
+  var dealTerms: js.UndefOr[SchemaDealTerms] = js.undefined
   
   /**
     * The set of fields around delivery control that are interesting for a
     * buyer to see but are non-negotiable. These are set by the publisher.
     */
-  var deliveryControl: js.UndefOr[SchemaDeliveryControl] = js.native
+  var deliveryControl: js.UndefOr[SchemaDeliveryControl] = js.undefined
   
   /**
     * Description for the deal terms.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the deal.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The external deal ID assigned to this deal once the deal is finalized.
     * This is the deal ID that shows up in serving/reporting etc. @OutputOnly
     */
-  var externalDealId: js.UndefOr[String] = js.native
+  var externalDealId: js.UndefOr[String] = js.undefined
   
   /**
     * True, if the buyside inventory setup is complete for this deal.
     * @OutputOnly
     */
-  var isSetupComplete: js.UndefOr[Boolean] = js.native
+  var isSetupComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the creative source for programmatic deals. PUBLISHER means
     * creative is provided by seller and ADVERTISER means creative is provided
     * by buyer. @OutputOnly
     */
-  var programmaticCreativeSource: js.UndefOr[String] = js.native
+  var programmaticCreativeSource: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the proposal that this deal is part of. @OutputOnly
     */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
   
   /**
     * Seller contact information for the deal. @OutputOnly
     */
-  var sellerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.native
+  var sellerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.undefined
   
   /**
     * The syndication product associated with the deal.  Note: This field may
     * be set only when creating the resource. Modifying this field while
     * updating the resource will result in an error.
     */
-  var syndicationProduct: js.UndefOr[String] = js.native
+  var syndicationProduct: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the subset of inventory targeted by the deal. @OutputOnly
     */
-  var targeting: js.UndefOr[SchemaMarketplaceTargeting] = js.native
+  var targeting: js.UndefOr[SchemaMarketplaceTargeting] = js.undefined
   
   /**
     * The shared targeting visible to buyers and sellers. Each shared targeting
     * entity is AND&#39;d together.
     */
-  var targetingCriterion: js.UndefOr[js.Array[SchemaTargetingCriteria]] = js.native
+  var targetingCriterion: js.UndefOr[js.Array[SchemaTargetingCriteria]] = js.undefined
   
   /**
     * The time when the deal was last updated. @OutputOnly
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The web property code for the seller copied over from the product.
     */
-  var webPropertyCode: js.UndefOr[String] = js.native
+  var webPropertyCode: js.UndefOr[String] = js.undefined
 }
 object SchemaDeal {
   

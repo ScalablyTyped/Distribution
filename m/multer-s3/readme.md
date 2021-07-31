@@ -10,9 +10,9 @@ Streaming multer storage engine for AWS S3
 | ------------------ | :-------------: |
 | Full name          | multer-s3 |
 | Keywords           | multer, s3, amazon, aws |
-| # releases         | 3 |
-| # dependents       | 53 |
-| # downloads        | 2575024 |
+| # releases         | 0 |
+| # dependents       | 57 |
+| # downloads        | 3242662 |
 | # stars            | 20 |
 
 ## Links

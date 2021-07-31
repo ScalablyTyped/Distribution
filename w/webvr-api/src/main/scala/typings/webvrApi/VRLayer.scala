@@ -4,17 +4,15 @@ import typings.std.Float32Array
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VRLayer extends StObject {
   
-  var leftBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.native
+  var leftBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.undefined
   
-  var rightBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.native
+  var rightBounds: js.UndefOr[js.Array[Double] | Float32Array | Null] = js.undefined
   
-  var source: js.UndefOr[HTMLCanvasElement | Null] = js.native
+  var source: js.UndefOr[HTMLCanvasElement | Null] = js.undefined
 }
 object VRLayer {
   

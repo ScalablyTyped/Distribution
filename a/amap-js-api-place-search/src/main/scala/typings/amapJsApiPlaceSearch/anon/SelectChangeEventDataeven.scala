@@ -8,43 +8,41 @@ import typings.std.HTMLLIElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined amap-js-api-place-search.AMap.PlaceSearch.SelectChangeEventData & {  event :std.MouseEvent,   infoWindow :amap-js-api.AMap.InfoWindow<any>,   infoWindowContentDom :std.HTMLDivElement} */
-@js.native
 trait SelectChangeEventDataeven extends StObject {
   
   /**
     * 当前选中的POI的信息
     */
-  var data: js.Array[Poi] = js.native
+  var data: js.Array[Poi]
   
-  var event: MouseEvent = js.native
+  var event: MouseEvent
   
   /**
     * 当前选中的POI的ID
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * 索引
     */
-  var index: Double = js.native
+  var index: Double
   
-  var infoWindow: InfoWindow[_] = js.native
+  var infoWindow: InfoWindow[js.Any]
   
-  var infoWindowContentDom: HTMLDivElement = js.native
+  var infoWindowContentDom: HTMLDivElement
   
   /**
     * 当前选中的POI在结果面板中对应的列表项
     */
-  var listElement: HTMLLIElement = js.native
+  var listElement: HTMLLIElement
   
   /**
     * 当前选中的POI对应的在地图中的Marker对象
     */
-  var marker: Marker[_] = js.native
+  var marker: Marker[js.Any]
 }
 object SelectChangeEventDataeven {
   
@@ -54,10 +52,10 @@ object SelectChangeEventDataeven {
     event: MouseEvent,
     id: String,
     index: Double,
-    infoWindow: InfoWindow[_],
+    infoWindow: InfoWindow[js.Any],
     infoWindowContentDom: HTMLDivElement,
     listElement: HTMLLIElement,
-    marker: Marker[_]
+    marker: Marker[js.Any]
   ): SelectChangeEventDataeven = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], infoWindow = infoWindow.asInstanceOf[js.Any], infoWindowContentDom = infoWindowContentDom.asInstanceOf[js.Any], listElement = listElement.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectChangeEventDataeven]
@@ -82,7 +80,7 @@ object SelectChangeEventDataeven {
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInfoWindow(value: InfoWindow[_]): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
+    def setInfoWindow(value: InfoWindow[js.Any]): Self = StObject.set(x, "infoWindow", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInfoWindowContentDom(value: HTMLDivElement): Self = StObject.set(x, "infoWindowContentDom", value.asInstanceOf[js.Any])
@@ -91,6 +89,6 @@ object SelectChangeEventDataeven {
     def setListElement(value: HTMLLIElement): Self = StObject.set(x, "listElement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMarker(value: Marker[_]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    def setMarker(value: Marker[js.Any]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

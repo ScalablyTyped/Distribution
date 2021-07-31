@@ -9,9 +9,9 @@
 | ------------------ | :-------------: |
 | Full name          | vec3 |
 | Keywords           | point |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 84321 |
+| # releases         | 5 |
+| # dependents       | 27 |
+| # downloads        | 110184 |
 | # stars            | 0 |
 
 ## Links

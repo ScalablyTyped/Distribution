@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBestEffortCoverageResponse extends StObject {
   
   /**
     * Coverage data for the current isolate.
     */
-  var result: js.Array[ScriptCoverage] = js.native
+  var result: js.Array[ScriptCoverage]
 }
 object GetBestEffortCoverageResponse {
   

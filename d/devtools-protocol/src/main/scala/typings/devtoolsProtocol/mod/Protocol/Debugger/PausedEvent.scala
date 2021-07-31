@@ -15,46 +15,44 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PausedEvent extends StObject {
   
   /**
     * Never present, will be removed.
     */
-  var asyncCallStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncCallStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * Async stack trace, if any.
     */
-  var asyncStackTrace: js.UndefOr[StackTrace] = js.native
+  var asyncStackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Async stack trace, if any.
     */
-  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.native
+  var asyncStackTraceId: js.UndefOr[StackTraceId] = js.undefined
   
   /**
     * Call stack the virtual machine stopped on.
     */
-  var callFrames: js.Array[CallFrame] = js.native
+  var callFrames: js.Array[CallFrame]
   
   /**
     * Object containing break-specific auxiliary properties.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Hit breakpoints IDs
     */
-  var hitBreakpoints: js.UndefOr[js.Array[String]] = js.native
+  var hitBreakpoints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Pause reason. (PausedEventReason enum)
     */
-  var reason: ambiguous | assert | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR = js.native
+  var reason: ambiguous | assert | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
 }
 object PausedEvent {
   

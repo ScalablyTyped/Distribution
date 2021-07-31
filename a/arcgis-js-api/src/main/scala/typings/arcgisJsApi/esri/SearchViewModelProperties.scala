@@ -2,123 +2,123 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchViewModelProperties extends GoToProperties {
+trait SearchViewModelProperties
+  extends StObject
+     with GoToProperties {
   
   /**
     * The selected source's index.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#activeSourceIndex)
     */
-  var activeSourceIndex: js.UndefOr[Double] = js.native
+  var activeSourceIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * String value used as a hint for input text when searching on multiple sources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#allPlaceholder)
     */
-  var allPlaceholder: js.UndefOr[String] = js.native
+  var allPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether to automatically select and zoom to the first geocoded result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#autoSelect)
     */
-  var autoSelect: js.UndefOr[Boolean] = js.native
+  var autoSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The default [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSymbol)
     */
-  var defaultSymbol: js.UndefOr[SymbolProperties] = js.native
+  var defaultSymbol: js.UndefOr[SymbolProperties] = js.undefined
   
   /**
     * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#includeDefaultSources)
     */
-  var includeDefaultSources: js.UndefOr[Boolean | js.Function] = js.native
+  var includeDefaultSources: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Indicates whether location services are enabled within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#locationEnabled)
     */
-  var locationEnabled: js.UndefOr[Boolean] = js.native
+  var locationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum character length of the search text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#maxInputLength)
     */
-  var maxInputLength: js.UndefOr[Double] = js.native
+  var maxInputLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of results returned by the widget if not specified by the source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#maxResults)
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of suggestions returned by the widget if not specified by the source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#maxSuggestions)
     */
-  var maxSuggestions: js.UndefOr[Double] = js.native
+  var maxSuggestions: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum number of characters needed for the search if not specified by the source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#minSuggestCharacters)
     */
-  var minSuggestCharacters: js.UndefOr[Double] = js.native
+  var minSuggestCharacters: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to display the [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) on feature click.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A customized [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for the selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * It is possible to search a specified portal instance's [locator services](http://enterprise.arcgis.com/en/portal/latest/administer/windows/configure-portal-to-geocode-addresses.htm) Use this property to set this [ArcGIS Portal](https://enterprise.arcgis.com/en/portal/) instance to search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#portal)
     */
-  var portal: js.UndefOr[PortalProperties] = js.native
+  var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
     * Indicates if the [resultGraphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#resultGraphic) will display at the location of the selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#resultGraphicEnabled)
     */
-  var resultGraphicEnabled: js.UndefOr[Boolean] = js.native
+  var resultGraphicEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to display the option to search all sources.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#searchAllEnabled)
     */
-  var searchAllEnabled: js.UndefOr[Boolean] = js.native
+  var searchAllEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the search box input text string.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#searchTerm)
     */
-  var searchTerm: js.UndefOr[String] = js.native
+  var searchTerm: js.UndefOr[String] = js.undefined
   
   /**
     * The Search widget may be used to search features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html).
@@ -127,28 +127,28 @@ trait SearchViewModelProperties extends GoToProperties {
     */
   var sources: js.UndefOr[
     CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The millisecond delay after keyup and before making a [suggest](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#suggest) network request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#suggestionDelay)
     */
-  var suggestionDelay: js.UndefOr[Double] = js.native
+  var suggestionDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable suggestions for the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#suggestionsEnabled)
     */
-  var suggestionsEnabled: js.UndefOr[Boolean] = js.native
+  var suggestionsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object SearchViewModelProperties {
   

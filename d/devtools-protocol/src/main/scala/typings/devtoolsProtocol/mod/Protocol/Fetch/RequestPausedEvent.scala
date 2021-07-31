@@ -7,52 +7,50 @@ import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPausedEvent extends StObject {
   
   /**
     * The id of the frame that initiated the request.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * If the intercepted request had a corresponding Network.requestWillBeSent event fired for it,
     * then this networkId will be the same as the requestId present in the requestWillBeSent event.
     */
-  var networkId: js.UndefOr[RequestId] = js.native
+  var networkId: js.UndefOr[RequestId] = js.undefined
   
   /**
     * The details of the request.
     */
-  var request: Request = js.native
+  var request: Request
   
   /**
     * Each request the page makes will have a unique id.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * How the requested resource will be used.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
   
   /**
     * Response error if intercepted at response stage.
     */
-  var responseErrorReason: js.UndefOr[ErrorReason] = js.native
+  var responseErrorReason: js.UndefOr[ErrorReason] = js.undefined
   
   /**
     * Response headers if intercepted at the response stage.
     */
-  var responseHeaders: js.UndefOr[js.Array[HeaderEntry]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[HeaderEntry]] = js.undefined
   
   /**
     * Response code if intercepted at response stage.
     */
-  var responseStatusCode: js.UndefOr[integer] = js.native
+  var responseStatusCode: js.UndefOr[integer] = js.undefined
 }
 object RequestPausedEvent {
   

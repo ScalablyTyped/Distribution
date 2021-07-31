@@ -2,91 +2,89 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Api extends StObject {
   
   /**
     * The URI of the API, of the form {api-id}.execute-api.{region}.amazonaws.com. The stage name is typically appended to this URI to form a complete path to a deployed API stage.
     */
-  var ApiEndpoint: js.UndefOr[string] = js.native
+  var ApiEndpoint: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether an API is managed by API Gateway. You can't update or delete a managed API by using API Gateway. A managed API can be deleted only through the tooling or service that created it.
     */
-  var ApiGatewayManaged: js.UndefOr[boolean] = js.native
+  var ApiGatewayManaged: js.UndefOr[boolean] = js.undefined
   
   /**
     * The API ID.
     */
-  var ApiId: js.UndefOr[Id] = js.native
+  var ApiId: js.UndefOr[Id] = js.undefined
   
   /**
     * An API key selection expression. Supported only for WebSocket APIs. See API Key Selection Expressions.
     */
-  var ApiKeySelectionExpression: js.UndefOr[SelectionExpression] = js.native
+  var ApiKeySelectionExpression: js.UndefOr[SelectionExpression] = js.undefined
   
   /**
     * A CORS configuration. Supported only for HTTP APIs.
     */
-  var CorsConfiguration: js.UndefOr[Cors] = js.native
+  var CorsConfiguration: js.UndefOr[Cors] = js.undefined
   
   /**
     * The timestamp when the API was created.
     */
-  var CreatedDate: js.UndefOr[timestampIso8601] = js.native
+  var CreatedDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The description of the API.
     */
-  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.native
+  var Description: js.UndefOr[StringWithLengthBetween0And1024] = js.undefined
   
   /**
     * Specifies whether clients can invoke your API by using the default execute-api endpoint. By default, clients can invoke your API with the default https://{api_id}.execute-api.{region}.amazonaws.com endpoint. To require that clients use a custom domain name to invoke your API, disable the default endpoint.
     */
-  var DisableExecuteApiEndpoint: js.UndefOr[boolean] = js.native
+  var DisableExecuteApiEndpoint: js.UndefOr[boolean] = js.undefined
   
   /**
     * Avoid validating models when creating a deployment. Supported only for WebSocket APIs.
     */
-  var DisableSchemaValidation: js.UndefOr[boolean] = js.native
+  var DisableSchemaValidation: js.UndefOr[boolean] = js.undefined
   
   /**
     * The validation information during API import. This may include particular properties of your OpenAPI definition which are ignored during import. Supported only for HTTP APIs.
     */
-  var ImportInfo: js.UndefOr[listOfString] = js.native
+  var ImportInfo: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The name of the API.
     */
-  var Name: StringWithLengthBetween1And128 = js.native
+  var Name: StringWithLengthBetween1And128
   
   /**
     * The API protocol.
     */
-  var ProtocolType: typings.awsSdk.apigatewayv2Mod.ProtocolType = js.native
+  var ProtocolType: typings.awsSdk.apigatewayv2Mod.ProtocolType
   
   /**
     * The route selection expression for the API. For HTTP APIs, the routeSelectionExpression must be ${request.method} ${request.path}. If not provided, this will be the default for HTTP APIs. This property is required for WebSocket APIs.
     */
-  var RouteSelectionExpression: SelectionExpression = js.native
+  var RouteSelectionExpression: SelectionExpression
   
   /**
     * A collection of tags associated with the API.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
   
   /**
     * A version identifier for the API.
     */
-  var Version: js.UndefOr[StringWithLengthBetween1And64] = js.native
+  var Version: js.UndefOr[StringWithLengthBetween1And64] = js.undefined
   
   /**
     * The warning messages reported when failonwarnings is turned on during API import.
     */
-  var Warnings: js.UndefOr[listOfString] = js.native
+  var Warnings: js.UndefOr[listOfString] = js.undefined
 }
 object Api {
   

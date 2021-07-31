@@ -24,172 +24,172 @@ import typings.stripe.stripeStrings.secret
 import typings.stripe.stripeStrings.succeeded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPaymentIntent extends IResourceObject {
+trait IPaymentIntent
+  extends StObject
+     with IResourceObject {
   
   /**
     * The amount in cents that is to be collected from this PaymentIntent.
     */
-  var amount: Double = js.native
+  var amount: Double
   
   /**
     * The amount that can be captured with from this PaymentIntent (in cents).
     */
-  var amount_capturable: Double = js.native
+  var amount_capturable: Double
   
   /**
     * The amount that was collected from this PaymentIntent (in cents).
     */
-  var amount_received: Double = js.native
+  var amount_received: Double
   
   /**
     * ID of the Connect application that created the PaymentIntent. [Expandable]
     */
-  var application: js.UndefOr[String | IApplication | Null] = js.native
+  var application: js.UndefOr[String | IApplication | Null] = js.undefined
   
   /**
     * A fee in cents that will be applied to the invoice and transferred to the application owner's Stripe account.
     */
-  var application_fee_amount: js.UndefOr[Double | Null] = js.native
+  var application_fee_amount: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Populated when `status` is `canceled`, this is the time at which the PaymentIntent was canceled.
     * Measured in seconds since the Unix epoch.
     */
-  var canceled_at: Double | Null = js.native
+  var canceled_at: Double | Null
   
   /**
     * User-given reason for cancellation of this PaymentIntent.
     */
-  var cancellation_reason: PaymentIntentUserProvidedCancellationReason | PaymentIntentStripeProvidedCancellationReason | Null = js.native
+  var cancellation_reason: PaymentIntentUserProvidedCancellationReason | PaymentIntentStripeProvidedCancellationReason | Null
   
   /**
     * Capture method of this PaymentIntent.
     */
-  var capture_method: automatic | manual = js.native
+  var capture_method: automatic | manual
   
   /**
     * Charges that were created by this PaymentIntent, if any.
     */
-  var charges: IList[ICharge] = js.native
+  var charges: IList[ICharge]
   
   /**
     * The client secret of this PaymentIntent. Used for client-side retrieval using a publishable key. Please refer to dynamic authentication guide on how client_secret should be handled.
     */
-  var client_secret: String = js.native
+  var client_secret: String
   
   /**
     * Confirmation method of this PaymentIntent.
     */
-  var confirmation_method: secret | publishable = js.native
+  var confirmation_method: secret | publishable
   
   /**
     * Time at which the object was created. Measured in seconds since the Unix epoch.
     */
-  var created: Double = js.native
+  var created: Double
   
   /**
     * Three-letter ISO currency code, in lowercase. Must be a supported currency.
     */
-  var currency: String = js.native
+  var currency: String
   
   /**
     * ID of the Customer this PaymentIntent is for if one exists. [Expandable]
     */
-  var customer: String | ICustomer | Null = js.native
+  var customer: String | ICustomer | Null
   
   /**
     * An arbitrary string attached to the object. Often useful for displaying to users.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The payment error encountered in the previous PaymentIntent confirmation.
     */
-  var last_payment_error: IStripeError | Null = js.native
+  var last_payment_error: IStripeError | Null
   
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
-  var metadata: IMetadata = js.native
+  var metadata: IMetadata
   
   /**
     * If present, this property tells you what actions you need to take in order for your customer to fulfill a payment using the provided source.
     */
-  var next_action: IPaymentIntentNextActionUseStripeSdk | IPaymentIntentNextActionRedirectToUrl = js.native
+  var next_action: IPaymentIntentNextActionUseStripeSdk | IPaymentIntentNextActionRedirectToUrl
   
   /**
     * Value is "payment_intent".
     */
   @JSName("object")
-  var object_IPaymentIntent: payment_intent = js.native
+  var object_IPaymentIntent: payment_intent
   
   /**
     * The account (if any) for which the funds of the PaymentIntent are intended. See the PaymentIntents Connect usage guide for details. [Expandable]
     */
-  var on_behalf_of: js.UndefOr[String | Null] = js.native
+  var on_behalf_of: js.UndefOr[String | Null] = js.undefined
   
   /**
     * ID of the payment method used in this PaymentIntent. [Expandable]
     */
-  var payment_method: js.UndefOr[String | Null] = js.native
+  var payment_method: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Payment-method-specific configuration for this PaymentIntent.
     */
-  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.native
+  var payment_method_options: js.UndefOr[IPaymentMethodOptions] = js.undefined
   
   /**
     * The list of payment method types (e.g. card) that this PaymentIntent is allowed to use.
     */
-  var payment_method_types: js.Array[PaymentIntentPaymentMethodType] = js.native
+  var payment_method_types: js.Array[PaymentIntentPaymentMethodType]
   
   /**
     * Email address that the receipt for the resulting payment will be sent to.
     */
-  var receipt_email: String | Null = js.native
+  var receipt_email: String | Null
   
   /**
     * ID of the review associated with this PaymentIntent, if any. [Expandable]
     */
-  var review: js.UndefOr[String | IReview | Null] = js.native
+  var review: js.UndefOr[String | IReview | Null] = js.undefined
   
   /*
     * Indicates that you intend to make future payments with this PaymentIntent’s payment method.
     */
-  var setup_future_usage: PaymentIntentFutureUsageType | Null = js.native
+  var setup_future_usage: PaymentIntentFutureUsageType | Null
   
   /**
     * Shipping information for this PaymentIntent.
     */
-  var shipping: js.UndefOr[IShippingInformation | Null] = js.native
+  var shipping: js.UndefOr[IShippingInformation | Null] = js.undefined
   
   /**
     * ID of the source used in this PaymentIntent. [Expandable]
     */
-  var source: String | IStripeSource | Null = js.native
+  var source: String | IStripeSource | Null
   
   /**
     * Extra information about a PaymentIntent. This will appear on your customer’s statement when this PaymentIntent succeeds in creating a charge.
     */
-  var statement_descriptor: String | Null = js.native
+  var statement_descriptor: String | Null
   
   /**
     * The several states the PaymentIntent goes through until it it either canceled or succeeds.
     */
-  var status: requires_payment_method | requires_confirmation | requires_action | processing | requires_capture | canceled | succeeded = js.native
+  var status: requires_payment_method | requires_confirmation | requires_action | processing | requires_capture | canceled | succeeded
   
   /**
     * The data with which to automatically create a Transfer when the payment is finalized.
     */
-  var transfer_data: IPaymentIntentTransferData | Null = js.native
+  var transfer_data: IPaymentIntentTransferData | Null
   
   /**
     * A string that identifies the resulting payment as part of a group.
     */
-  var transfer_group: String | Null = js.native
+  var transfer_group: String | Null
 }
 object IPaymentIntent {
   
@@ -208,12 +208,11 @@ object IPaymentIntent {
     livemode: Boolean,
     metadata: IMetadata,
     next_action: IPaymentIntentNextActionUseStripeSdk | IPaymentIntentNextActionRedirectToUrl,
-    `object`: payment_intent,
     payment_method_types: js.Array[PaymentIntentPaymentMethodType],
     status: requires_payment_method | requires_confirmation | requires_action | processing | requires_capture | canceled | succeeded
   ): IPaymentIntent = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_capturable = amount_capturable.asInstanceOf[js.Any], amount_received = amount_received.asInstanceOf[js.Any], capture_method = capture_method.asInstanceOf[js.Any], charges = charges.asInstanceOf[js.Any], client_secret = client_secret.asInstanceOf[js.Any], confirmation_method = confirmation_method.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], next_action = next_action.asInstanceOf[js.Any], payment_method_types = payment_method_types.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], canceled_at = null, cancellation_reason = null, customer = null, last_payment_error = null, receipt_email = null, setup_future_usage = null, source = null, statement_descriptor = null, transfer_data = null, transfer_group = null)
+    __obj.updateDynamic("object")("payment_intent")
     __obj.asInstanceOf[IPaymentIntent]
   }
   

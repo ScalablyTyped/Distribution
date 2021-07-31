@@ -3,7 +3,6 @@ package typings.opentracing
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracerMod {
@@ -106,7 +105,6 @@ object tracerMod {
     def startSpan(name: String, options: SpanOptions): typings.opentracing.spanMod.default = js.native
   }
   
-  @js.native
   trait SpanOptions extends StObject {
     
     /**
@@ -114,20 +112,20 @@ object tracerMod {
       * span will be the child of (per REFERENCE_CHILD_OF). If specified,
       * `references` must be unspecified.
       */
-    var childOf: js.UndefOr[typings.opentracing.spanMod.default | typings.opentracing.spanContextMod.default] = js.native
+    var childOf: js.UndefOr[typings.opentracing.spanMod.default | typings.opentracing.spanContextMod.default] = js.undefined
     
     /**
       * an array of Reference instances, each pointing to a causal parent
       * SpanContext. If specified, `fields.childOf` must be unspecified.
       */
-    var references: js.UndefOr[js.Array[typings.opentracing.referenceMod.default]] = js.native
+    var references: js.UndefOr[js.Array[typings.opentracing.referenceMod.default]] = js.undefined
     
     /**
       * a manually specified start time for the created Span object. The time
       * should be specified in milliseconds as Unix timestamp. Decimal value are
       * supported to represent time values with sub-millisecond accuracy.
       */
-    var startTime: js.UndefOr[Double] = js.native
+    var startTime: js.UndefOr[Double] = js.undefined
     
     /**
       * set of key-value pairs which will be set as tags on the newly created
@@ -135,7 +133,7 @@ object tracerMod {
       * efficiency reasons (the caller should not modify this object after
       * calling startSpan).
       */
-    var tags: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var tags: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object SpanOptions {
     

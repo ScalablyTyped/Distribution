@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownToggleMod {
@@ -18,21 +17,22 @@ object dropdownToggleMod {
   trait DropdownToggle
     extends Component[DropdownToggleProps, js.Object, js.Any]
   
-  @js.native
-  trait DropdownToggleProps extends HTMLProps[DropdownToggle] {
+  trait DropdownToggleProps
+    extends StObject
+       with HTMLProps[DropdownToggle] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsRole: js.UndefOr[String] = js.native
+    var bsRole: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[String] = js.native
+    var bsSize: js.UndefOr[String] = js.undefined
     
     // Added since v0.30.0
-    var bsStyle: js.UndefOr[String | Null] = js.native
+    var bsStyle: js.UndefOr[String | Null] = js.undefined
     
-    var noCaret: js.UndefOr[Boolean] = js.native
+    var noCaret: js.UndefOr[Boolean] = js.undefined
     
-    var useAnchor: js.UndefOr[Boolean] = js.native
+    var useAnchor: js.UndefOr[Boolean] = js.undefined
   }
   object DropdownToggleProps {
     

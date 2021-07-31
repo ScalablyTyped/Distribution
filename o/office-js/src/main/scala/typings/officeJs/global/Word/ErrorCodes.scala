@@ -2,7 +2,6 @@ package typings.officeJs.global.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Word.ErrorCodes")
@@ -10,19 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorCodes extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Word.ErrorCodes with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Word.ErrorCodes & String] = js.native
   
-  /* "AccessDenied" */ val accessDenied: typings.officeJs.Word.ErrorCodes.accessDenied with String = js.native
+  /* "AccessDenied" */ val accessDenied: typings.officeJs.Word.ErrorCodes.accessDenied & String = js.native
   
-  /* "GeneralException" */ val generalException: typings.officeJs.Word.ErrorCodes.generalException with String = js.native
+  /* "GeneralException" */ val generalException: typings.officeJs.Word.ErrorCodes.generalException & String = js.native
   
-  /* "InvalidArgument" */ val invalidArgument: typings.officeJs.Word.ErrorCodes.invalidArgument with String = js.native
+  /* "InvalidArgument" */ val invalidArgument: typings.officeJs.Word.ErrorCodes.invalidArgument & String = js.native
   
-  /* "ItemNotFound" */ val itemNotFound: typings.officeJs.Word.ErrorCodes.itemNotFound with String = js.native
+  /* "ItemNotFound" */ val itemNotFound: typings.officeJs.Word.ErrorCodes.itemNotFound & String = js.native
   
-  /* "NotImplemented" */ val notImplemented: typings.officeJs.Word.ErrorCodes.notImplemented with String = js.native
+  /* "NotImplemented" */ val notImplemented: typings.officeJs.Word.ErrorCodes.notImplemented & String = js.native
   
-  /* "SearchDialogIsOpen" */ val searchDialogIsOpen: typings.officeJs.Word.ErrorCodes.searchDialogIsOpen with String = js.native
+  /* "SearchDialogIsOpen" */ val searchDialogIsOpen: typings.officeJs.Word.ErrorCodes.searchDialogIsOpen & String = js.native
   
-  /* "SearchStringInvalidOrTooLong" */ val searchStringInvalidOrTooLong: typings.officeJs.Word.ErrorCodes.searchStringInvalidOrTooLong with String = js.native
+  /* "SearchStringInvalidOrTooLong" */ val searchStringInvalidOrTooLong: typings.officeJs.Word.ErrorCodes.searchStringInvalidOrTooLong & String = js.native
 }

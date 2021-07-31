@@ -3,14 +3,12 @@ package typings.semanticUiDropdown.anon
 import typings.semanticUiDropdown.semanticUiDropdownBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.Dropdown.KeySettings._Impl, 'delimiter'> */
-@js.native
 trait PickImpldelimiter extends StObject {
   
-  var delimiter: Double | `false` = js.native
+  var delimiter: Double | `false`
 }
 object PickImpldelimiter {
   

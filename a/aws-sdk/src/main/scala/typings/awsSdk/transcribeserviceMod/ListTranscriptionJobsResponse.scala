@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTranscriptionJobsResponse extends StObject {
   
   /**
     * The ListTranscriptionJobs operation returns a page of jobs at a time. The maximum size of the page is set by the MaxResults parameter. If there are more jobs in the list than the page size, Amazon Transcribe returns the NextPage token. Include the token in the next request to the ListTranscriptionJobs operation to return in the next page of jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * The requested status of the jobs returned.
     */
-  var Status: js.UndefOr[TranscriptionJobStatus] = js.native
+  var Status: js.UndefOr[TranscriptionJobStatus] = js.undefined
   
   /**
     * A list of objects containing summary information for a transcription job.
     */
-  var TranscriptionJobSummaries: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobSummaries] = js.native
+  var TranscriptionJobSummaries: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobSummaries] = js.undefined
 }
 object ListTranscriptionJobsResponse {
   

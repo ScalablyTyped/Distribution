@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10CustomConfiguration extends DeviceConfiguration {
+trait Windows10CustomConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // OMA settings. This collection can contain a maximum of 1000 elements.
-  var omaSettings: js.UndefOr[NullableOption[js.Array[OmaSetting]]] = js.native
+  var omaSettings: js.UndefOr[NullableOption[js.Array[OmaSetting]]] = js.undefined
 }
 object Windows10CustomConfiguration {
   

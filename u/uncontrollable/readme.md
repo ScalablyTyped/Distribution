@@ -11,8 +11,8 @@ Wrap a controlled react component, to allow specific prop/handler pairs to be un
 | Full name          | uncontrollable |
 | Keywords           | uncontrolled-component, react-component, input, controlled, uncontrolled, form |
 | # releases         | 11 |
-| # dependents       | 256 |
-| # downloads        | 36287257 |
+| # dependents       | 270 |
+| # downloads        | 40276527 |
 | # stars            | 0 |
 
 ## Links

@@ -5,34 +5,33 @@ import typings.speedtestNet.speedtestNetStrings.result
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
-  var download: DownloadUploadData = js.native
+  var download: DownloadUploadData
   
-  var interface: InterfaceData = js.native
+  var interface: InterfaceData
   
-  var isp: String = js.native
+  var isp: String
   
-  var packetLoss: Double = js.native
+  var packetLoss: Double
   
-  var ping: PingData = js.native
+  var ping: PingData
   
-  var result: Id = js.native
+  var result: Id
   
-  var server: ServerData = js.native
+  var server: ServerData
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_ResultEvent: result = js.native
+  var type_ResultEvent: result
   
-  var upload: DownloadUploadData = js.native
+  var upload: DownloadUploadData
 }
 object ResultEvent {
   
@@ -46,11 +45,10 @@ object ResultEvent {
     result: Id,
     server: ServerData,
     timestamp: Date,
-    `type`: result,
     upload: DownloadUploadData
   ): ResultEvent = {
     val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], interface = interface.asInstanceOf[js.Any], isp = isp.asInstanceOf[js.Any], packetLoss = packetLoss.asInstanceOf[js.Any], ping = ping.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], upload = upload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("result")
     __obj.asInstanceOf[ResultEvent]
   }
   

@@ -5,25 +5,23 @@ import typings.pulumiAws.inputMod.ec2.GetSecurityGroupsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSecurityGroupsMod {
   
-  @JSImport("@pulumi/aws/ec2/getSecurityGroups", "getSecurityGroups")
+  @JSImport("@pulumi/aws/ec2/getSecurityGroups", JSImport.Namespace)
   @js.native
-  def getSecurityGroups(): js.Promise[GetSecurityGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroups", "getSecurityGroups")
-  @js.native
-  def getSecurityGroups(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroups", "getSecurityGroups")
-  @js.native
-  def getSecurityGroups(args: GetSecurityGroupsArgs): js.Promise[GetSecurityGroupsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSecurityGroups", "getSecurityGroups")
-  @js.native
-  def getSecurityGroups(args: GetSecurityGroupsArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSecurityGroups(): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")().asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  @scala.inline
+  def getSecurityGroups(args: Unit, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  @scala.inline
+  def getSecurityGroups(args: GetSecurityGroupsArgs): js.Promise[GetSecurityGroupsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  @scala.inline
+  def getSecurityGroups(args: GetSecurityGroupsArgs, opts: InvokeOptions): js.Promise[GetSecurityGroupsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityGroups")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecurityGroupsResult]]
+  
   trait GetSecurityGroupsArgs extends StObject {
     
     /**
@@ -31,13 +29,13 @@ object getSecurityGroupsMod {
       * several valid keys, for a full reference, check out
       * [describe-security-groups in the AWS CLI reference][1].
       */
-    val filters: js.UndefOr[js.Array[GetSecurityGroupsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSecurityGroupsFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match for
       * desired security groups.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetSecurityGroupsArgs {
     
@@ -67,28 +65,27 @@ object getSecurityGroupsMod {
     }
   }
   
-  @js.native
   trait GetSecurityGroupsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSecurityGroupsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * IDs of the matches security groups.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The VPC IDs of the matched security groups. The data source's tag or filter *will span VPCs*
       * unless the `vpc-id` filter is also used.
       */
-    val vpcIds: js.Array[String] = js.native
+    val vpcIds: js.Array[String]
   }
   object GetSecurityGroupsResult {
     

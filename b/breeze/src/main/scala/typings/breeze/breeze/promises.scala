@@ -2,20 +2,18 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Promises interface used by Breeze.  Usually implemented by Q (https://github.com/kriskowal/q) or angular.$q using breeze.config.setQ(impl) */
 object promises {
   
-  @js.native
   trait IDeferred[T] extends StObject {
     
-    var promise: js.Promise[T] = js.native
+    var promise: js.Promise[T]
     
-    def reject(reason: js.Any): Unit = js.native
+    def reject(reason: js.Any): Unit
     
-    def resolve(value: T): Unit = js.native
+    def resolve(value: T): Unit
   }
   object IDeferred {
     
@@ -26,7 +24,7 @@ object promises {
     }
     
     @scala.inline
-    implicit class IDeferredMutableBuilder[Self <: IDeferred[_], T] (val x: Self with IDeferred[T]) extends AnyVal {
+    implicit class IDeferredMutableBuilder[Self <: IDeferred[?], T] (val x: Self & IDeferred[T]) extends AnyVal {
       
       @scala.inline
       def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
@@ -44,8 +42,8 @@ object promises {
     
     def defer[T](): IDeferred[T] = js.native
     
-    def reject(): js.Promise[_] = js.native
-    def reject(reason: js.Any): js.Promise[_] = js.native
+    def reject(): js.Promise[js.Any] = js.native
+    def reject(reason: js.Any): js.Promise[js.Any] = js.native
     
     def resolve[T](`object`: T): js.Promise[T] = js.native
     def resolve[T](`object`: js.Promise[T]): js.Promise[T] = js.native

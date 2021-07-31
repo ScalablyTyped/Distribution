@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputChannelMapping extends StObject {
   
   /**
     * List of input channels
     */
-  var InputChannels: js.UndefOr[listOfIntegerMinNegative60Max6] = js.native
+  var InputChannels: js.UndefOr[listOfIntegerMinNegative60Max6] = js.undefined
 }
 object OutputChannelMapping {
   

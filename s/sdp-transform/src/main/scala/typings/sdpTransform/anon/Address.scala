@@ -2,23 +2,21 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var ipVer: Double = js.native
+  var ipVer: Double
   
-  var netType: String = js.native
+  var netType: String
   
-  var sessionId: String | Double = js.native
+  var sessionId: String | Double
   
-  var sessionVersion: Double = js.native
+  var sessionVersion: Double
   
-  var username: String = js.native
+  var username: String
 }
 object Address {
   

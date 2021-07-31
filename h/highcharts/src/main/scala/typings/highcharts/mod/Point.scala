@@ -4,7 +4,6 @@ import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.highchartsStrings._empty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Point")
@@ -171,7 +170,7 @@ class Point () extends StObject {
     *
     * @return Transformed options.
     */
-  def optionsToObject(options: PointOptionsType): Dictionary[_] = js.native
+  def optionsToObject(options: PointOptionsType): Dictionary[js.Any] = js.native
   
   /**
     * The percentage for points in a stacked series or pies.
@@ -203,11 +202,11 @@ class Point () extends StObject {
     *        configuration.
     */
   def remove(): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def remove(redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def remove(redraw: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: Boolean): Unit = js.native
   def remove(redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def remove(redraw: Unit, animation: Boolean): Unit = js.native
+  def remove(redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
   /**
     * Toggle the selection status of a point.
@@ -227,9 +226,9 @@ class Point () extends StObject {
     * @fires Highcharts.Point#unselect
     */
   def select(): Unit = js.native
-  def select(selected: js.UndefOr[scala.Nothing], accumulate: Boolean): Unit = js.native
   def select(selected: Boolean): Unit = js.native
   def select(selected: Boolean, accumulate: Boolean): Unit = js.native
+  def select(selected: Unit, accumulate: Boolean): Unit = js.native
   
   /**
     * Whether the point is selected or not.
@@ -273,7 +272,7 @@ class Point () extends StObject {
     * @fires Highcharts.Point#afterSetState
     */
   def setState(): Unit = js.native
-  def setState(state: js.UndefOr[scala.Nothing], move: Boolean): Unit = js.native
+  def setState(state: Unit, move: Boolean): Unit = js.native
   def setState(state: _empty): Unit = js.native
   def setState(state: _empty, move: Boolean): Unit = js.native
   def setState(state: PointStateValue): Unit = js.native
@@ -332,11 +331,11 @@ class Point () extends StObject {
     * @fires Highcharts.Point#update
     */
   def update(options: PointOptionsType): Unit = js.native
-  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: Boolean): Unit = js.native
-  def update(options: PointOptionsType, redraw: js.UndefOr[scala.Nothing], animation: PartialAnimationOptionsOb): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: Boolean): Unit = js.native
   def update(options: PointOptionsType, redraw: Boolean, animation: PartialAnimationOptionsOb): Unit = js.native
+  def update(options: PointOptionsType, redraw: Unit, animation: Boolean): Unit = js.native
+  def update(options: PointOptionsType, redraw: Unit, animation: PartialAnimationOptionsOb): Unit = js.native
   
   /**
     * Heatmap series only. The value of the point, resulting in a color

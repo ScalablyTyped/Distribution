@@ -11,7 +11,7 @@ Typings are for version 0.14
 | Keywords           | react, react-addon |
 | # releases         | 0 |
 | # dependents       | 142 |
-| # downloads        | 21171143 |
+| # downloads        | 21407348 |
 | # stars            | 3 |
 
 ## Links

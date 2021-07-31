@@ -5,15 +5,13 @@ import typings.opentelemetryResources.configMod.ResourceDetectionConfigWithLogge
 import typings.opentelemetryResources.resourceMod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Detector extends StObject {
     
-    def detect(config: ResourceDetectionConfigWithLogger): js.Promise[Resource] = js.native
+    def detect(config: ResourceDetectionConfigWithLogger): js.Promise[Resource]
   }
   object Detector {
     

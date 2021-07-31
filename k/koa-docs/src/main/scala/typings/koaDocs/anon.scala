@@ -3,23 +3,21 @@ package typings.koaDocs
 import typings.koaJoiRouter.mod.Spec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Description extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var extendedDescription: js.UndefOr[String] = js.native
+    var extendedDescription: js.UndefOr[String] = js.undefined
     
-    var groupName: String = js.native
+    var groupName: String
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var routes: js.Array[Spec] = js.native
+    var routes: js.Array[Spec]
   }
   object Description {
     

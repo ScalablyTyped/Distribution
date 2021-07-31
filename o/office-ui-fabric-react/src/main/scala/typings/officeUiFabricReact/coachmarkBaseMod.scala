@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coachmarkBaseMod {
@@ -115,81 +114,80 @@ object coachmarkBaseMod {
     def defaultProps_=(x: PartialICoachmarkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ICoachmarkState extends StObject {
     
     /**
       * ARIA alert text to read aloud with Narrator once the Coachmark is mounted
       */
-    var alertText: js.UndefOr[String] = js.native
+    var alertText: js.UndefOr[String] = js.undefined
     
     /**
       * The bottom position of the beak
       */
-    var beakBottom: js.UndefOr[String] = js.native
+    var beakBottom: js.UndefOr[String] = js.undefined
     
     /**
       * The left position of the beak
       */
-    var beakLeft: js.UndefOr[String] = js.native
+    var beakLeft: js.UndefOr[String] = js.undefined
     
     /**
       * The right position of the beak
       */
-    var beakRight: js.UndefOr[String] = js.native
+    var beakRight: js.UndefOr[String] = js.undefined
     
     /**
       * The right position of the beak
       */
-    var beakTop: js.UndefOr[String] = js.native
+    var beakTop: js.UndefOr[String] = js.undefined
     
     /**
       * Cached width and height of _entityInnerHostElement
       */
-    var entityInnerHostRect: IEntityRect = js.native
+    var entityInnerHostRect: IEntityRect
     
     /**
       * Enables/Disables the beacon that radiates
       * from the center of the coachmark.
       */
-    var isBeaconAnimating: Boolean = js.native
+    var isBeaconAnimating: Boolean
     
     /**
       * Is the Coachmark currently collapsed into
       * a tear drop shape
       */
-    var isCollapsed: Boolean = js.native
+    var isCollapsed: Boolean
     
     /**
       * Is the Coachmark done measuring the hosted entity
       */
-    var isMeasured: Boolean = js.native
+    var isMeasured: Boolean
     
     /**
       * Is the teaching bubble currently retreiving the
       * original dimensions of the hosted entity.
       */
-    var isMeasuring: Boolean = js.native
+    var isMeasuring: Boolean
     
     /**
       * Is the mouse in proximity of the default target element
       */
-    var isMouseInProximity: Boolean = js.native
+    var isMouseInProximity: Boolean
     
     /**
       * Alignment edge of callout in relation to target
       */
-    var targetAlignment: js.UndefOr[RectangleEdge] = js.native
+    var targetAlignment: js.UndefOr[RectangleEdge] = js.undefined
     
     /**
       * Position of Coachmark/TeachingBubble in relation to target
       */
-    var targetPosition: js.UndefOr[RectangleEdge] = js.native
+    var targetPosition: js.UndefOr[RectangleEdge] = js.undefined
     
     /**
       * Transform origin of teaching bubble callout
       */
-    var transformOrigin: js.UndefOr[String] = js.native
+    var transformOrigin: js.UndefOr[String] = js.undefined
   }
   object ICoachmarkState {
     
@@ -277,12 +275,11 @@ object coachmarkBaseMod {
     }
   }
   
-  @js.native
   trait IEntityRect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IEntityRect {
     

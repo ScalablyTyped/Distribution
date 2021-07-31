@@ -12,25 +12,23 @@ import typings.mapnik.mapnikStrings.webp
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Areathreshold extends StObject {
     
-    var area_threshold: js.UndefOr[Double] = js.native
+    var area_threshold: js.UndefOr[Double] = js.undefined
     
-    var fill_type: js.UndefOr[Double] = js.native
+    var fill_type: js.UndefOr[Double] = js.undefined
     
-    var multi_polygon_union: js.UndefOr[Boolean] = js.native
+    var multi_polygon_union: js.UndefOr[Boolean] = js.undefined
     
-    var process_all_rings: js.UndefOr[Boolean] = js.native
+    var process_all_rings: js.UndefOr[Boolean] = js.undefined
     
-    var simplify_distance: js.UndefOr[Double] = js.native
+    var simplify_distance: js.UndefOr[Double] = js.undefined
     
-    var strictly_simple: js.UndefOr[Boolean] = js.native
+    var strictly_simple: js.UndefOr[Boolean] = js.undefined
   }
   object Areathreshold {
     
@@ -81,40 +79,39 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
-    var area_threshold: js.UndefOr[Double] = js.native
+    var area_threshold: js.UndefOr[Double] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
-    var fill_type: js.UndefOr[Double] = js.native
+    var fill_type: js.UndefOr[Double] = js.undefined
     
-    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.native
+    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.undefined
     
-    var max_extent: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var max_extent: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var multi_polygon_union: js.UndefOr[Boolean] = js.native
+    var multi_polygon_union: js.UndefOr[Boolean] = js.undefined
     
-    var offset_x: js.UndefOr[Double] = js.native
+    var offset_x: js.UndefOr[Double] = js.undefined
     
-    var offset_y: js.UndefOr[Double] = js.native
+    var offset_y: js.UndefOr[Double] = js.undefined
     
-    var process_all_rings: js.UndefOr[Boolean] = js.native
+    var process_all_rings: js.UndefOr[Boolean] = js.undefined
     
-    var reencode: js.UndefOr[Boolean] = js.native
+    var reencode: js.UndefOr[Boolean] = js.undefined
     
-    var scale_denominator: js.UndefOr[Double] = js.native
+    var scale_denominator: js.UndefOr[Double] = js.undefined
     
-    var scale_factor: js.UndefOr[Double] = js.native
+    var scale_factor: js.UndefOr[Double] = js.undefined
     
-    var scaling_method: js.UndefOr[String] = js.native
+    var scaling_method: js.UndefOr[String] = js.undefined
     
-    var simplify_distance: js.UndefOr[Double] = js.native
+    var simplify_distance: js.UndefOr[Double] = js.undefined
     
-    var strictly_simple: js.UndefOr[Boolean] = js.native
+    var strictly_simple: js.UndefOr[Boolean] = js.undefined
     
-    var threading_mode: js.UndefOr[String] = js.native
+    var threading_mode: js.UndefOr[String] = js.undefined
   }
   object Callback {
     
@@ -225,14 +222,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Compression extends StObject {
     
-    var compression: js.UndefOr[Double] = js.native
+    var compression: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var strategy: js.UndefOr[FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT] = js.native
+    var strategy: js.UndefOr[FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT] = js.undefined
   }
   object Compression {
     
@@ -265,38 +261,37 @@ object anon {
     }
   }
   
-  @js.native
   trait Filltype extends StObject {
     
-    var area_threshold: js.UndefOr[Double] = js.native
+    var area_threshold: js.UndefOr[Double] = js.undefined
     
-    var fill_type: js.UndefOr[Double] = js.native
+    var fill_type: js.UndefOr[Double] = js.undefined
     
-    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.native
+    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.undefined
     
-    var max_extent: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var max_extent: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var multi_polygon_union: js.UndefOr[Boolean] = js.native
+    var multi_polygon_union: js.UndefOr[Boolean] = js.undefined
     
-    var offset_x: js.UndefOr[Double] = js.native
+    var offset_x: js.UndefOr[Double] = js.undefined
     
-    var offset_y: js.UndefOr[Double] = js.native
+    var offset_y: js.UndefOr[Double] = js.undefined
     
-    var process_all_rings: js.UndefOr[Boolean] = js.native
+    var process_all_rings: js.UndefOr[Boolean] = js.undefined
     
-    var reencode: js.UndefOr[Boolean] = js.native
+    var reencode: js.UndefOr[Boolean] = js.undefined
     
-    var scale_denominator: js.UndefOr[Double] = js.native
+    var scale_denominator: js.UndefOr[Double] = js.undefined
     
-    var scale_factor: js.UndefOr[Double] = js.native
+    var scale_factor: js.UndefOr[Double] = js.undefined
     
-    var scaling_method: js.UndefOr[String] = js.native
+    var scaling_method: js.UndefOr[String] = js.undefined
     
-    var simplify_distance: js.UndefOr[Double] = js.native
+    var simplify_distance: js.UndefOr[Double] = js.undefined
     
-    var strictly_simple: js.UndefOr[Boolean] = js.native
+    var strictly_simple: js.UndefOr[Boolean] = js.undefined
     
-    var threading_mode: js.UndefOr[String] = js.native
+    var threading_mode: js.UndefOr[String] = js.undefined
   }
   object Filltype {
     
@@ -401,12 +396,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Imageformat extends StObject {
     
-    var image_format: js.UndefOr[String] = js.native
+    var image_format: js.UndefOr[String] = js.undefined
     
-    var image_scaling: js.UndefOr[String] = js.native
+    var image_scaling: js.UndefOr[String] = js.undefined
   }
   object Imageformat {
     
@@ -433,12 +427,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Imagescaling extends StObject {
     
-    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.native
+    var image_format: js.UndefOr[webp | jpeg | png | tiff] = js.undefined
     
-    var image_scaling: js.UndefOr[String] = js.native
+    var image_scaling: js.UndefOr[String] = js.undefined
   }
   object Imagescaling {
     
@@ -465,12 +458,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Layer extends StObject {
     
-    var layer: js.UndefOr[String] = js.native
+    var layer: js.UndefOr[String] = js.undefined
     
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object Layer {
     
@@ -497,12 +489,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Upgrade extends StObject {
     
-    var upgrade: js.UndefOr[Boolean] = js.native
+    var upgrade: js.UndefOr[Boolean] = js.undefined
     
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object Upgrade {
     

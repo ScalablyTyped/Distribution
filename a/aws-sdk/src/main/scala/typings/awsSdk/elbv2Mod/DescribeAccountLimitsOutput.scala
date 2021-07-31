@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountLimitsOutput extends StObject {
   
   /**
     * Information about the limits.
     */
-  var Limits: js.UndefOr[typings.awsSdk.elbv2Mod.Limits] = js.native
+  var Limits: js.UndefOr[typings.awsSdk.elbv2Mod.Limits] = js.undefined
   
   /**
     * If there are additional results, this is the marker for the next set of results. Otherwise, this is null.
     */
-  var NextMarker: js.UndefOr[Marker] = js.native
+  var NextMarker: js.UndefOr[Marker] = js.undefined
 }
 object DescribeAccountLimitsOutput {
   

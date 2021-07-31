@@ -2,61 +2,59 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * A range of values within which the parameter can be set.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * The conditions under which changes to this parameter can be applied. For example, requires-reboot indicates that a new value for this parameter will only take effect if a node is rebooted.
     */
-  var ChangeType: js.UndefOr[typings.awsSdk.daxMod.ChangeType] = js.native
+  var ChangeType: js.UndefOr[typings.awsSdk.daxMod.ChangeType] = js.undefined
   
   /**
     * The data type of the parameter. For example, integer:
     */
-  var DataType: js.UndefOr[String] = js.native
+  var DataType: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the parameter
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the customer is allowed to modify the parameter.
     */
-  var IsModifiable: js.UndefOr[typings.awsSdk.daxMod.IsModifiable] = js.native
+  var IsModifiable: js.UndefOr[typings.awsSdk.daxMod.IsModifiable] = js.undefined
   
   /**
     * A list of node types, and specific parameter values for each node.
     */
-  var NodeTypeSpecificValues: js.UndefOr[NodeTypeSpecificValueList] = js.native
+  var NodeTypeSpecificValues: js.UndefOr[NodeTypeSpecificValueList] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: js.UndefOr[String] = js.native
+  var ParameterName: js.UndefOr[String] = js.undefined
   
   /**
     * Determines whether the parameter can be applied to any nodes, or only nodes of a particular type.
     */
-  var ParameterType: js.UndefOr[typings.awsSdk.daxMod.ParameterType] = js.native
+  var ParameterType: js.UndefOr[typings.awsSdk.daxMod.ParameterType] = js.undefined
   
   /**
     * The value for the parameter.
     */
-  var ParameterValue: js.UndefOr[String] = js.native
+  var ParameterValue: js.UndefOr[String] = js.undefined
   
   /**
     * How the parameter is defined. For example, system denotes a system-defined parameter.
     */
-  var Source: js.UndefOr[String] = js.native
+  var Source: js.UndefOr[String] = js.undefined
 }
 object Parameter {
   

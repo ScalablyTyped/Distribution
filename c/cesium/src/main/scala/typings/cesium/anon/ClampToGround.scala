@@ -2,27 +2,25 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClampToGround extends StObject {
   
-  var clampToGround: js.UndefOr[Boolean] = js.native
+  var clampToGround: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var fill: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var markerColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var markerColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var markerSize: js.UndefOr[Double] = js.native
+  var markerSize: js.UndefOr[Double] = js.undefined
   
-  var markerSymbol: js.UndefOr[String] = js.native
+  var markerSymbol: js.UndefOr[String] = js.undefined
   
-  var sourceUri: js.UndefOr[String] = js.native
+  var sourceUri: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var stroke: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object ClampToGround {
   

@@ -17,7 +17,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributionMod {
@@ -214,6 +213,10 @@ object distributionMod {
   /* static members */
   object Distribution {
     
+    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Distribution resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -223,42 +226,36 @@ object distributionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Distribution = js.native
-    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Distribution = js.native
-    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DistributionState): Distribution = js.native
-    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): Distribution = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DistributionState): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DistributionState, opts: CustomResourceOptions): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Distribution]
     
     /**
       * Returns true if the given object is an instance of Distribution.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudfront/distribution.Distribution */ Boolean]
   }
   
-  @js.native
   trait DistributionArgs extends StObject {
     
     /**
       * Extra CNAMEs (alternate domain names), if any, for
       * this distribution.
       */
-    val aliases: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val aliases: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Any comments you want to include about the
       * distribution.
       */
-    val comment: js.UndefOr[Input[String]] = js.native
+    val comment: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more custom error response elements (multiples allowed).
@@ -267,44 +264,44 @@ object distributionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The default cache behavior for this distribution (maximum
       * one).
       */
-    val defaultCacheBehavior: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior] = js.native
+    val defaultCacheBehavior: Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]
     
     /**
       * The object that you want CloudFront to
       * return (for example, index.html) when an end user requests the root URL.
       */
-    val defaultRootObject: js.UndefOr[Input[String]] = js.native
+    val defaultRootObject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the distribution is enabled to accept end
       * user requests for content.
       */
-    val enabled: Input[Boolean] = js.native
+    val enabled: Input[Boolean]
     
     /**
       * The maximum HTTP version to support on the
       * distribution. Allowed values are `http1.1` and `http2`. The default is
       * `http2`.
       */
-    val httpVersion: js.UndefOr[Input[String]] = js.native
+    val httpVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the IPv6 is enabled for the distribution.
       */
-    val isIpv6Enabled: js.UndefOr[Input[Boolean]] = js.native
+    val isIpv6Enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The logging
       * configuration that controls how logs are written
       * to your distribution (maximum one).
       */
-    val loggingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]] = js.native
+    val loggingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]] = js.undefined
     
     /**
       * An ordered list of cache behaviors
@@ -315,7 +312,7 @@ object distributionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more originGroup for this
@@ -323,51 +320,51 @@ object distributionMod {
       */
     val originGroups: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more origins for this
       * distribution (multiples allowed).
       */
-    val origins: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]] = js.native
+    val origins: Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]
     
     /**
       * The price class for this distribution. One of
       * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
       */
-    val priceClass: js.UndefOr[Input[String]] = js.native
+    val priceClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The restriction
       * configuration for this distribution (maximum one).
       */
-    val restrictions: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions] = js.native
+    val restrictions: Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]
     
     /**
       * Disables the distribution instead of
       * deleting it when destroying the resource. If this is set,
       * the distribution needs to be deleted manually afterwards. Default: `false`.
       */
-    val retainOnDelete: js.UndefOr[Input[Boolean]] = js.native
+    val retainOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The SSL
       * configuration for this distribution (maximum
       * one).
       */
-    val viewerCertificate: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate] = js.native
+    val viewerCertificate: Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]
     
     /**
       * If enabled, the resource will wait for
       * the distribution status to change from `InProgress` to `Deployed`. Setting
       * this to`false` will skip the process. Default: `true`.
       */
-    val waitForDeployment: js.UndefOr[Input[Boolean]] = js.native
+    val waitForDeployment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A unique identifier that specifies the AWS WAF web ACL,
@@ -378,7 +375,7 @@ object distributionMod {
       * The WAF Web ACL must exist in the WAF Global (CloudFront) region and the
       * credentials configuring this argument must have `waf:GetWebACL` permissions assigned.
       */
-    val webAclId: js.UndefOr[Input[String]] = js.native
+    val webAclId: js.UndefOr[Input[String]] = js.undefined
   }
   object DistributionArgs {
     
@@ -521,31 +518,30 @@ object distributionMod {
     }
   }
   
-  @js.native
   trait DistributionState extends StObject {
     
     /**
       * Extra CNAMEs (alternate domain names), if any, for
       * this distribution.
       */
-    val aliases: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val aliases: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN (Amazon Resource Name) for the distribution. For example: `arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5`, where `123456789012` is your AWS account ID.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Internal value used by CloudFront to allow future
       * updates to the distribution configuration.
       */
-    val callerReference: js.UndefOr[Input[String]] = js.native
+    val callerReference: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Any comments you want to include about the
       * distribution.
       */
-    val comment: js.UndefOr[Input[String]] = js.native
+    val comment: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more custom error response elements (multiples allowed).
@@ -554,74 +550,74 @@ object distributionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionCustomErrorResponse]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The default cache behavior for this distribution (maximum
       * one).
       */
-    val defaultCacheBehavior: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]] = js.native
+    val defaultCacheBehavior: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionDefaultCacheBehavior]] = js.undefined
     
     /**
       * The object that you want CloudFront to
       * return (for example, index.html) when an end user requests the root URL.
       */
-    val defaultRootObject: js.UndefOr[Input[String]] = js.native
+    val defaultRootObject: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS domain name of either the S3 bucket, or
       * web site of your custom origin.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the distribution is enabled to accept end
       * user requests for content.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The current version of the distribution's information. For example:
       * `E2QWRUHAPOMQZL`.
       */
-    val etag: js.UndefOr[Input[String]] = js.native
+    val etag: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The CloudFront Route 53 zone ID that can be used to
       * route an [Alias Resource Record Set](http://docs.aws.amazon.com/Route53/latest/APIReference/CreateAliasRRSAPI.html) to. This attribute is simply an
       * alias for the zone ID `Z2FDTNDATAQYW2`.
       */
-    val hostedZoneId: js.UndefOr[Input[String]] = js.native
+    val hostedZoneId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum HTTP version to support on the
       * distribution. Allowed values are `http1.1` and `http2`. The default is
       * `http2`.
       */
-    val httpVersion: js.UndefOr[Input[String]] = js.native
+    val httpVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of invalidation batches
       * currently in progress.
       */
-    val inProgressValidationBatches: js.UndefOr[Input[Double]] = js.native
+    val inProgressValidationBatches: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Whether the IPv6 is enabled for the distribution.
       */
-    val isIpv6Enabled: js.UndefOr[Input[Boolean]] = js.native
+    val isIpv6Enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The date and time the distribution was last modified.
       */
-    val lastModifiedTime: js.UndefOr[Input[String]] = js.native
+    val lastModifiedTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The logging
       * configuration that controls how logs are written
       * to your distribution (maximum one).
       */
-    val loggingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]] = js.native
+    val loggingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionLoggingConfig]] = js.undefined
     
     /**
       * An ordered list of cache behaviors
@@ -632,7 +628,7 @@ object distributionMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrderedCacheBehavior]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more originGroup for this
@@ -640,44 +636,44 @@ object distributionMod {
       */
     val originGroups: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOriginGroup]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * One or more origins for this
       * distribution (multiples allowed).
       */
-    val origins: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]] = js.native
+    val origins: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionOrigin]]]] = js.undefined
     
     /**
       * The price class for this distribution. One of
       * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
       */
-    val priceClass: js.UndefOr[Input[String]] = js.native
+    val priceClass: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The restriction
       * configuration for this distribution (maximum one).
       */
-    val restrictions: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]] = js.native
+    val restrictions: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionRestrictions]] = js.undefined
     
     /**
       * Disables the distribution instead of
       * deleting it when destroying the resource. If this is set,
       * the distribution needs to be deleted manually afterwards. Default: `false`.
       */
-    val retainOnDelete: js.UndefOr[Input[Boolean]] = js.native
+    val retainOnDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The current status of the distribution. `Deployed` if the
       * distribution's information is fully propagated throughout the Amazon
       * CloudFront system.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * List of AWS account IDs (or `self`) that you want to allow to create signed URLs for private content.
@@ -685,21 +681,21 @@ object distributionMod {
       */
     val trustedSigners: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudfront.DistributionTrustedSigner]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The SSL
       * configuration for this distribution (maximum
       * one).
       */
-    val viewerCertificate: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]] = js.native
+    val viewerCertificate: js.UndefOr[Input[typings.pulumiAws.inputMod.cloudfront.DistributionViewerCertificate]] = js.undefined
     
     /**
       * If enabled, the resource will wait for
       * the distribution status to change from `InProgress` to `Deployed`. Setting
       * this to`false` will skip the process. Default: `true`.
       */
-    val waitForDeployment: js.UndefOr[Input[Boolean]] = js.native
+    val waitForDeployment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A unique identifier that specifies the AWS WAF web ACL,
@@ -710,7 +706,7 @@ object distributionMod {
       * The WAF Web ACL must exist in the WAF Global (CloudFront) region and the
       * credentials configuring this argument must have `waf:GetWebACL` permissions assigned.
       */
-    val webAclId: js.UndefOr[Input[String]] = js.native
+    val webAclId: js.UndefOr[Input[String]] = js.undefined
   }
   object DistributionState {
     

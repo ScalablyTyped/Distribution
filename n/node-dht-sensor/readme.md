@@ -11,8 +11,8 @@ Reads data from DHT sensors on Raspberry Pi
 | Full name          | node-dht-sensor |
 | Keywords           | DHT, DHT11, DHT22, AM2302, sensor, temperature, humidity, raspberry, raspberry pi, rpi |
 | # releases         | 10 |
-| # dependents       | 24 |
-| # downloads        | 28184 |
+| # dependents       | 26 |
+| # downloads        | 29387 |
 | # stars            | 11 |
 
 ## Links

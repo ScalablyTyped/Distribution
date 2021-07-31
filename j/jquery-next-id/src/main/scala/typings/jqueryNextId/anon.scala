@@ -2,17 +2,15 @@ package typings.jqueryNextId
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Prefix extends StObject {
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var separator: String = js.native
+    var separator: String
   }
   object Prefix {
     

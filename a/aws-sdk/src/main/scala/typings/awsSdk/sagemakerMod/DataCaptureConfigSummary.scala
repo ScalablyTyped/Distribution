@@ -2,36 +2,34 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataCaptureConfigSummary extends StObject {
   
   /**
     * 
     */
-  var CaptureStatus: typings.awsSdk.sagemakerMod.CaptureStatus = js.native
+  var CaptureStatus: typings.awsSdk.sagemakerMod.CaptureStatus
   
   /**
     * 
     */
-  var CurrentSamplingPercentage: SamplingPercentage = js.native
+  var CurrentSamplingPercentage: SamplingPercentage
   
   /**
     * 
     */
-  var DestinationS3Uri: typings.awsSdk.sagemakerMod.DestinationS3Uri = js.native
+  var DestinationS3Uri: typings.awsSdk.sagemakerMod.DestinationS3Uri
   
   /**
     * 
     */
-  var EnableCapture: typings.awsSdk.sagemakerMod.EnableCapture = js.native
+  var EnableCapture: typings.awsSdk.sagemakerMod.EnableCapture
   
   /**
     * 
     */
-  var KmsKeyId: typings.awsSdk.sagemakerMod.KmsKeyId = js.native
+  var KmsKeyId: typings.awsSdk.sagemakerMod.KmsKeyId
 }
 object DataCaptureConfigSummary {
   

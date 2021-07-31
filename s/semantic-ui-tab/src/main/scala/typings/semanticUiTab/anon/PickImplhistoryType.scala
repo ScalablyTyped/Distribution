@@ -4,14 +4,12 @@ import typings.semanticUiTab.semanticUiTabStrings.hash
 import typings.semanticUiTab.semanticUiTabStrings.state
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'historyType'> */
-@js.native
 trait PickImplhistoryType extends StObject {
   
-  var historyType: hash | state = js.native
+  var historyType: hash | state
 }
 object PickImplhistoryType {
   

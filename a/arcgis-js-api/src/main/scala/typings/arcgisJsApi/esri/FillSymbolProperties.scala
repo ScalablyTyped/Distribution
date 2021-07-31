@@ -4,25 +4,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`picture-fill`
 import typings.arcgisJsApi.arcgisJsApiStrings.`simple-fill`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FillSymbolProperties extends SymbolProperties {
+trait FillSymbolProperties
+  extends StObject
+     with SymbolProperties {
   
   /**
     * The outline of the polygon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#outline)
     */
-  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol.html#type)
     */
-  var `type`: js.UndefOr[`simple-fill` | `picture-fill`] = js.native
+  var `type`: js.UndefOr[`simple-fill` | `picture-fill`] = js.undefined
 }
 object FillSymbolProperties {
   

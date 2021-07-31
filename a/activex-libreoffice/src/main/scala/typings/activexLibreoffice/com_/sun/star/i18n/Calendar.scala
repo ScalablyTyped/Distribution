@@ -3,29 +3,27 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A calendar as returned in a sequence by {@link XLocaleData.getAllCalendars()} .
   * @see XLocaleData for links to DTD of XML locale data files.
   */
-@js.native
 trait Calendar extends StObject {
   
-  var Days: SafeArray[CalendarItem] = js.native
+  var Days: SafeArray[CalendarItem]
   
-  var Default: Boolean = js.native
+  var Default: Boolean
   
-  var Eras: SafeArray[CalendarItem] = js.native
+  var Eras: SafeArray[CalendarItem]
   
-  var MinimumNumberOfDaysForFirstWeek: Double = js.native
+  var MinimumNumberOfDaysForFirstWeek: Double
   
-  var Months: SafeArray[CalendarItem] = js.native
+  var Months: SafeArray[CalendarItem]
   
-  var Name: String = js.native
+  var Name: String
   
-  var StartOfWeek: String = js.native
+  var StartOfWeek: String
 }
 object Calendar {
   

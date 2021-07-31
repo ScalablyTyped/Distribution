@@ -7,37 +7,34 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domUtilsMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", "elementIsOrContains")
+  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", JSImport.Namespace)
   @js.native
-  def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function */](method: T): T = js.native
+  @scala.inline
+  def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", "throttleEvent")
-  @js.native
-  def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = js.native
+  @scala.inline
+  def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", "throttleReactEventCallback")
-  @js.native
-  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, _]): js.Function1[/* event2 */ E, Unit] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/domUtils", "throttleReactEventCallback")
-  @js.native
+  @scala.inline
+  def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
+  
+  @scala.inline
+  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+  @scala.inline
   def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
-    callback: js.Function2[/* event */ E, /* repeated */ js.Any, _],
+    callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any],
     options: IThrottledReactEventOptions
-  ): js.Function1[/* event2 */ E, Unit] = js.native
+  ): js.Function1[/* event2 */ E, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
   
-  @js.native
   trait IThrottledReactEventOptions extends StObject {
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
   }
   object IThrottledReactEventOptions {
     

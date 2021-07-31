@@ -2,21 +2,19 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutInsightSelectorsResponse extends StObject {
   
   /**
     * A JSON string that contains the insight types you want to log on a trail. In this release, only ApiCallRateInsight is supported as an insight type.
     */
-  var InsightSelectors: js.UndefOr[typings.awsSdk.cloudtrailMod.InsightSelectors] = js.native
+  var InsightSelectors: js.UndefOr[typings.awsSdk.cloudtrailMod.InsightSelectors] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of a trail for which you want to change or add Insights selectors.
     */
-  var TrailARN: js.UndefOr[String] = js.native
+  var TrailARN: js.UndefOr[String] = js.undefined
 }
 object PutInsightSelectorsResponse {
   

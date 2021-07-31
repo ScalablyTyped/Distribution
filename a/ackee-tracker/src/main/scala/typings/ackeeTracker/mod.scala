@@ -7,31 +7,30 @@ import typings.ackeeTracker.anon.Stop
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ackee-tracker", "attributes")
+  @JSImport("ackee-tracker", JSImport.Namespace)
   @js.native
-  def attributes(): DefaultData = js.native
-  @JSImport("ackee-tracker", "attributes")
-  @js.native
-  def attributes_false(detailed: `false`): DefaultData = js.native
-  @JSImport("ackee-tracker", "attributes")
-  @js.native
-  def attributes_true(detailed: `true`): DefaultData with DetailedData = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ackee-tracker", "create")
-  @js.native
-  def create(server: ServerDetails): AckeeInstance = js.native
-  @JSImport("ackee-tracker", "create")
-  @js.native
-  def create(server: ServerDetails, options: TrackingOptions): AckeeInstance = js.native
+  @scala.inline
+  def attributes(): DefaultData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")().asInstanceOf[DefaultData]
   
-  @JSImport("ackee-tracker", "detect")
-  @js.native
-  def detect(): Unit = js.native
+  @scala.inline
+  def attributes_false(detailed: `false`): DefaultData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(detailed.asInstanceOf[js.Any]).asInstanceOf[DefaultData]
+  
+  @scala.inline
+  def attributes_true(detailed: `true`): DefaultData & DetailedData = ^.asInstanceOf[js.Dynamic].applyDynamic("attributes")(detailed.asInstanceOf[js.Any]).asInstanceOf[DefaultData & DetailedData]
+  
+  @scala.inline
+  def create(server: ServerDetails): AckeeInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any]).asInstanceOf[AckeeInstance]
+  @scala.inline
+  def create(server: ServerDetails, options: TrackingOptions): AckeeInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AckeeInstance]
+  
+  @scala.inline
+  def detect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[Unit]
   
   @js.native
   trait AckeeInstance extends StObject {
@@ -40,12 +39,11 @@ object mod {
     def record(attrs: ReturnType[FnCall]): Stop = js.native
   }
   
-  @js.native
   trait DefaultData extends StObject {
     
-    var siteLocation: String = js.native
+    var siteLocation: String
     
-    var siteReferrer: String = js.native
+    var siteReferrer: String
   }
   object DefaultData {
     
@@ -66,32 +64,31 @@ object mod {
     }
   }
   
-  @js.native
   trait DetailedData extends StObject {
     
-    var browserHeight: Double = js.native
+    var browserHeight: Double
     
-    var browserName: String | Null = js.native
+    var browserName: String | Null
     
-    var browserVersion: String | Null = js.native
+    var browserVersion: String | Null
     
-    var browserWidth: Double = js.native
+    var browserWidth: Double
     
-    var deviceManufacturer: String | Null = js.native
+    var deviceManufacturer: String | Null
     
-    var deviceName: String | Null = js.native
+    var deviceName: String | Null
     
-    var osName: String | Null = js.native
+    var osName: String | Null
     
-    var osVersion: String | Null = js.native
+    var osVersion: String | Null
     
-    var screenColorDepth: Double = js.native
+    var screenColorDepth: Double
     
-    var screenHeight: Double = js.native
+    var screenHeight: Double
     
-    var screenWidth: Double = js.native
+    var screenWidth: Double
     
-    var siteLanguage: String = js.native
+    var siteLanguage: String
   }
   object DetailedData {
     
@@ -104,7 +101,7 @@ object mod {
       screenWidth: Double,
       siteLanguage: String
     ): DetailedData = {
-      val __obj = js.Dynamic.literal(browserHeight = browserHeight.asInstanceOf[js.Any], browserWidth = browserWidth.asInstanceOf[js.Any], screenColorDepth = screenColorDepth.asInstanceOf[js.Any], screenHeight = screenHeight.asInstanceOf[js.Any], screenWidth = screenWidth.asInstanceOf[js.Any], siteLanguage = siteLanguage.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(browserHeight = browserHeight.asInstanceOf[js.Any], browserWidth = browserWidth.asInstanceOf[js.Any], screenColorDepth = screenColorDepth.asInstanceOf[js.Any], screenHeight = screenHeight.asInstanceOf[js.Any], screenWidth = screenWidth.asInstanceOf[js.Any], siteLanguage = siteLanguage.asInstanceOf[js.Any], browserName = null, browserVersion = null, deviceManufacturer = null, deviceName = null, osName = null, osVersion = null)
       __obj.asInstanceOf[DetailedData]
     }
     
@@ -167,12 +164,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerDetails extends StObject {
     
-    var domainId: String = js.native
+    var domainId: String
     
-    var server: String = js.native
+    var server: String
   }
   object ServerDetails {
     
@@ -193,18 +189,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TrackingOptions extends StObject {
     
     /**
       * Defaults to `false`
       */
-    var detailed: js.UndefOr[Boolean] = js.native
+    var detailed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defaults to `true`
       */
-    var ignoreLocalhost: js.UndefOr[Boolean] = js.native
+    var ignoreLocalhost: js.UndefOr[Boolean] = js.undefined
   }
   object TrackingOptions {
     

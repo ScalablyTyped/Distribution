@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupAssetsRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait GroupAssetsRequest extends StObject {
     * asset was present at both the start and the end of the time period defined by compare_duration and reference_time. If compare_duration is not specified, then the only possible
     * state_change is "UNUSED", which will be the state_change set for all assets present at read_time. If this field is set then `state_change` must be a specified field in `group_by`.
     */
-  var compareDuration: js.UndefOr[String] = js.native
+  var compareDuration: js.UndefOr[String] = js.undefined
   
   /**
     * Expression that defines the filter to apply across assets. The expression is a list of zero or more restrictions combined via logical operators `AND` and `OR`. Parentheses are
@@ -34,7 +32,7 @@ trait GroupAssetsRequest extends StObject {
     * filter string. Use a partial match on the empty string to filter based on a property existing: `resource_properties.my_property : ""` Use a negated partial match on the empty string
     * to filter based on a property not existing: `-resource_properties.my_property : ""`
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Expression that defines what assets fields to use for grouping. The string value should follow SQL syntax: comma separated list of fields. For example:
@@ -43,19 +41,19 @@ trait GroupAssetsRequest extends StObject {
     * security_center_properties.resource_parent * security_center_properties.resource_parent_display_name The following fields are supported when compare_duration is set: *
     * security_center_properties.resource_type * security_center_properties.resource_project_display_name * security_center_properties.resource_parent_display_name
     */
-  var groupBy: js.UndefOr[String] = js.native
+  var groupBy: js.UndefOr[String] = js.undefined
   
   /** The maximum number of results to return in a single response. Default is 10, minimum is 1, maximum is 1000. */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The value returned by the last `GroupAssetsResponse`; indicates that this is a continuation of a prior `GroupAssets` call, and that the system should return the next page of data. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Time used as a reference point when filtering assets. The filter is limited to assets existing at the supplied time and their values are those at that specific time. Absence of this
     * field will default to the API's version of NOW.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object GroupAssetsRequest {
   

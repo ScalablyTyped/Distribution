@@ -2,18 +2,16 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryUsageDetails extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/memory-usage-details
-  var count: Double = js.native
+  var count: Double
   
-  var liveSize: Double = js.native
+  var liveSize: Double
   
-  var size: Double = js.native
+  var size: Double
 }
 object MemoryUsageDetails {
   

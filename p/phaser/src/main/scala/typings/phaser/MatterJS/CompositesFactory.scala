@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositesFactory extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait CompositesFactory extends StObject {
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
-  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -38,7 +36,7 @@ trait CompositesFactory extends StObject {
     xOffsetB: Double,
     yOffsetB: Double,
     options: js.Any
-  ): CompositeType = js.native
+  ): CompositeType
   
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
@@ -50,7 +48,7 @@ trait CompositesFactory extends StObject {
     * @param {object} options
     * @return {composite} The composite containing objects meshed together with constraints
     */
-  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType = js.native
+  def mesh(composite: CompositeType, columns: Double, rows: Double, crossBrace: Boolean, options: js.Any): CompositeType
   
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
@@ -62,7 +60,7 @@ trait CompositesFactory extends StObject {
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
-  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
@@ -85,7 +83,7 @@ trait CompositesFactory extends StObject {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType
   
   /**
     * Creates a simple soft body like object.
@@ -113,7 +111,7 @@ trait CompositesFactory extends StObject {
     particleRadius: Double,
     particleOptions: js.Any,
     constraintOptions: js.Any
-  ): CompositeType = js.native
+  ): CompositeType
   
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
@@ -136,7 +134,7 @@ trait CompositesFactory extends StObject {
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = js.native
+  ): CompositeType
 }
 object CompositesFactory {
   

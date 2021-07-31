@@ -3,15 +3,13 @@ package typings.gestalt.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableHeaderProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var sticky: js.UndefOr[Boolean] = js.native
+  var sticky: js.UndefOr[Boolean] = js.undefined
 }
 object TableHeaderProps {
   

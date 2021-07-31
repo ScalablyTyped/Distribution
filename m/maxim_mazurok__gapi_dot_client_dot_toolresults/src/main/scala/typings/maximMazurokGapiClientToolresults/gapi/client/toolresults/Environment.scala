@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /** Output only. The time when the Environment status was set to complete. This value will be set automatically when state transitions to COMPLETE. */
-  var completionTime: js.UndefOr[Timestamp] = js.native
+  var completionTime: js.UndefOr[Timestamp] = js.undefined
   
   /** Output only. The time when the Environment was created. */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Dimension values describing the environment. Dimension values always consist of "Model", "Version", "Locale", and "Orientation". - In response: always set - In create request:
     * always set - In update request: never set
     */
-  var dimensionValue: js.UndefOr[js.Array[EnvironmentDimensionValueEntry]] = js.native
+  var dimensionValue: js.UndefOr[js.Array[EnvironmentDimensionValueEntry]] = js.undefined
   
   /** A short human-readable name to display in the UI. Maximum of 100 characters. For example: Nexus 5, API 27. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. An Environment id. */
-  var environmentId: js.UndefOr[String] = js.native
+  var environmentId: js.UndefOr[String] = js.undefined
   
   /** Merged result of the environment. */
-  var environmentResult: js.UndefOr[MergedResult] = js.native
+  var environmentResult: js.UndefOr[MergedResult] = js.undefined
   
   /** Output only. An Execution id. */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** Output only. A History id. */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** Output only. A Project id. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** The location where output files are stored in the user bucket. */
-  var resultsStorage: js.UndefOr[ResultsStorage] = js.native
+  var resultsStorage: js.UndefOr[ResultsStorage] = js.undefined
   
   /** Output only. Summaries of shards. Only one shard will present unless sharding feature is enabled in TestExecutionService. */
-  var shardSummaries: js.UndefOr[js.Array[ShardSummary]] = js.native
+  var shardSummaries: js.UndefOr[js.Array[ShardSummary]] = js.undefined
 }
 object Environment {
   

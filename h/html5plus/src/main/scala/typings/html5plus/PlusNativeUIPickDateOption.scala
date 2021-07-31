@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIPickDateOption extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * 日期选择对话框可选择的最大日期
@@ -29,7 +27,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var maxDate: js.UndefOr[Date] = js.native
+  var maxDate: js.UndefOr[Date] = js.undefined
   
   /**
     * 日期选择对话框可选择的最小日期
@@ -37,7 +35,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var minDate: js.UndefOr[Date] = js.native
+  var minDate: js.UndefOr[Date] = js.undefined
   
   /**
     * 时间选择对话框弹出指示区域
@@ -46,7 +44,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var popover: js.UndefOr[js.Any] = js.native
+  var popover: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 日期选择对话框显示的标题
@@ -54,7 +52,7 @@ trait PlusNativeUIPickDateOption extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PlusNativeUIPickDateOption {
   

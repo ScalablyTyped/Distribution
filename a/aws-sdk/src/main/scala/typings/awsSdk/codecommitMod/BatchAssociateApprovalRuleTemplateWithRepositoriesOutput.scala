@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAssociateApprovalRuleTemplateWithRepositoriesOutput extends StObject {
   
   /**
     * A list of names of the repositories that have been associated with the template.
     */
-  var associatedRepositoryNames: RepositoryNameList = js.native
+  var associatedRepositoryNames: RepositoryNameList
   
   /**
     * A list of any errors that might have occurred while attempting to create the association between the template and the repositories.
     */
-  var errors: BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList = js.native
+  var errors: BatchAssociateApprovalRuleTemplateWithRepositoriesErrorsList
 }
 object BatchAssociateApprovalRuleTemplateWithRepositoriesOutput {
   

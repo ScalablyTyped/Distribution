@@ -2,16 +2,14 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAnalyzerResponse extends StObject {
   
   /**
     * An AnalyzerSummary object that contains information about the analyzer.
     */
-  var analyzer: AnalyzerSummary = js.native
+  var analyzer: AnalyzerSummary
 }
 object GetAnalyzerResponse {
   

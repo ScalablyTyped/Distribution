@@ -2,12 +2,11 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardProperties[TLength]
-  extends StandardLonghandProperties[TLength]
+  extends StObject
+     with StandardLonghandProperties[TLength]
      with StandardShorthandProperties[TLength]
 object StandardProperties {
   

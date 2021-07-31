@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GqlQueryParameter extends StObject {
   
   /** A query cursor. Query cursors are returned in query result batches. */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /** A value parameter. */
-  var value: js.UndefOr[Value] = js.native
+  var value: js.UndefOr[Value] = js.undefined
 }
 object GqlQueryParameter {
   

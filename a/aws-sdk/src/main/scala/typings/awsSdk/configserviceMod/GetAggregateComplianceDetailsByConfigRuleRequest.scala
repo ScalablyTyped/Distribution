@@ -2,46 +2,44 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAggregateComplianceDetailsByConfigRuleRequest extends StObject {
   
   /**
     * The 12-digit account ID of the source account.
     */
-  var AccountId: typings.awsSdk.configserviceMod.AccountId = js.native
+  var AccountId: typings.awsSdk.configserviceMod.AccountId
   
   /**
     * The source region from where the data is aggregated.
     */
-  var AwsRegion: typings.awsSdk.configserviceMod.AwsRegion = js.native
+  var AwsRegion: typings.awsSdk.configserviceMod.AwsRegion
   
   /**
     * The resource compliance status.  For the GetAggregateComplianceDetailsByConfigRuleRequest data type, AWS Config supports only the COMPLIANT and NON_COMPLIANT. AWS Config does not support the NOT_APPLICABLE and INSUFFICIENT_DATA values. 
     */
-  var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.native
+  var ComplianceType: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceType] = js.undefined
   
   /**
     * The name of the AWS Config rule for which you want compliance information.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The name of the configuration aggregator.
     */
-  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName = js.native
+  var ConfigurationAggregatorName: typings.awsSdk.configserviceMod.ConfigurationAggregatorName
   
   /**
     * The maximum number of evaluation results returned on each page. The default is 50. You cannot specify a number greater than 100. If you specify 0, AWS Config uses the default.
     */
-  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.configserviceMod.Limit] = js.undefined
   
   /**
     * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.configserviceMod.NextToken] = js.undefined
 }
 object GetAggregateComplianceDetailsByConfigRuleRequest {
   

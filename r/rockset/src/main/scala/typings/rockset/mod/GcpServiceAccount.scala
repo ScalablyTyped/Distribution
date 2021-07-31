@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GcpServiceAccount extends StObject {
   
   // Contents of JSON Service Account key file
-  var service_account_key_file_json: String = js.native
+  var service_account_key_file_json: String
 }
 object GcpServiceAccount {
   

@@ -2,21 +2,19 @@ package typings.monacoEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fragment extends StObject {
   
-  var authority: js.UndefOr[String] = js.native
+  var authority: js.UndefOr[String] = js.undefined
   
-  var fragment: js.UndefOr[String] = js.native
+  var fragment: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var scheme: String = js.native
+  var scheme: String
 }
 object Fragment {
   

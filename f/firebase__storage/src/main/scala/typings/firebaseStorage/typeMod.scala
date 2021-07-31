@@ -2,39 +2,34 @@ package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeMod {
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isFunction")
+  @JSImport("@firebase/storage/dist/src/implementation/type", JSImport.Namespace)
   @js.native
-  def isFunction(p: js.Any): /* is std.Function */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isJustDef")
-  @js.native
-  def isJustDef[T](): Boolean = js.native
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isJustDef")
-  @js.native
-  def isJustDef[T](p: T): Boolean = js.native
+  @scala.inline
+  def isFunction(p: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(p.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isNativeBlob")
-  @js.native
-  def isNativeBlob(p: js.Any): /* is std.Blob */ Boolean = js.native
+  @scala.inline
+  def isJustDef[T](): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJustDef")().asInstanceOf[Boolean]
+  @scala.inline
+  def isJustDef[T](p: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJustDef")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isNativeBlobDefined")
-  @js.native
-  def isNativeBlobDefined(): Boolean = js.native
+  @scala.inline
+  def isNativeBlob(p: js.Any): /* is std.Blob */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNativeBlob")(p.asInstanceOf[js.Any]).asInstanceOf[/* is std.Blob */ Boolean]
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isNonArrayObject")
-  @js.native
-  def isNonArrayObject(p: js.Any): Boolean = js.native
+  @scala.inline
+  def isNativeBlobDefined(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNativeBlobDefined")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "isString")
-  @js.native
-  def isString(p: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isNonArrayObject(p: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNonArrayObject")(p.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/storage/dist/src/implementation/type", "validateNumber")
-  @js.native
-  def validateNumber(argument: String, minValue: Double, maxValue: Double, value: Double): Unit = js.native
+  @scala.inline
+  def isString(p: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(p.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
+  @scala.inline
+  def validateNumber(argument: String, minValue: Double, maxValue: Double, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateNumber")(argument.asInstanceOf[js.Any], minValue.asInstanceOf[js.Any], maxValue.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

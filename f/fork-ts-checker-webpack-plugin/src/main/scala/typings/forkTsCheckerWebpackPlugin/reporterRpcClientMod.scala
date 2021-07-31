@@ -6,27 +6,29 @@ import typings.forkTsCheckerWebpackPlugin.reporterReporterMod.Reporter
 import typings.forkTsCheckerWebpackPlugin.rpcMessageChannelMod.RpcMessageChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reporterRpcClientMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/reporter-rpc/ReporterRpcClient", "composeReporterRpcClients")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/reporter-rpc/ReporterRpcClient", JSImport.Namespace)
   @js.native
-  def composeReporterRpcClients(clients: js.Array[ReporterRpcClient]): ReporterRpcClient = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/reporter-rpc/ReporterRpcClient", "createReporterRpcClient")
-  @js.native
-  def createReporterRpcClient[TConfiguration /* <: js.Object */](channel: RpcMessageChannel, configuration: TConfiguration): ReporterRpcClient = js.native
+  @scala.inline
+  def composeReporterRpcClients(clients: js.Array[ReporterRpcClient]): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("composeReporterRpcClients")(clients.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
   
-  @js.native
-  trait ReporterRpcClient extends Reporter {
+  @scala.inline
+  def createReporterRpcClient[TConfiguration /* <: js.Object */](channel: RpcMessageChannel, configuration: TConfiguration): ReporterRpcClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createReporterRpcClient")(channel.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[ReporterRpcClient]
+  
+  trait ReporterRpcClient
+    extends StObject
+       with Reporter {
     
-    def connect(): js.Promise[Unit] = js.native
+    def connect(): js.Promise[Unit]
     
-    def disconnect(): js.Promise[Unit] = js.native
+    def disconnect(): js.Promise[Unit]
     
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
   }
   object ReporterRpcClient {
     

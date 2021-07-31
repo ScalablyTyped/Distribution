@@ -4,46 +4,44 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildDefinitionRevision extends StObject {
   
   /**
     * The change type (add, edit, delete).
     */
-  var changeType: AuditAction = js.native
+  var changeType: AuditAction
   
   /**
     * The identity of the person or process that changed the definition.
     */
-  var changedBy: IdentityRef = js.native
+  var changedBy: IdentityRef
   
   /**
     * The date and time that the definition was changed.
     */
-  var changedDate: Date = js.native
+  var changedDate: Date
   
   /**
     * The comment associated with the change.
     */
-  var comment: String = js.native
+  var comment: String
   
   /**
     * A link to the definition at this revision.
     */
-  var definitionUrl: String = js.native
+  var definitionUrl: String
   
   /**
     * The name of the definition.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The revision number.
     */
-  var revision: Double = js.native
+  var revision: Double
 }
 object BuildDefinitionRevision {
   

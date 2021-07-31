@@ -6,52 +6,52 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesList extends StandardParameters {
+trait ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A tool results execution ID.
     */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /**
     * A tool results history ID.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * The default page size is 500 samples, and the maximum size is 5000. If
     * the page_size is greater than 5000, the effective page size will be 5000
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional, the next_page_token returned in the previous response
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The cloud project
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * A sample series id
     */
-  var sampleSeriesId: js.UndefOr[String] = js.native
+  var sampleSeriesId: js.UndefOr[String] = js.undefined
   
   /**
     * A tool results step ID.
     */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsHistoriesExecutionsStepsPerfsampleseriesSamplesList {
   

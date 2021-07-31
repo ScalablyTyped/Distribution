@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This ServiceWorker API interface provides an interface for registering and listing sync registrations. */
-@js.native
 trait SyncManager extends StObject {
   
-  def getTags(): js.Promise[js.Array[java.lang.String]] = js.native
+  def getTags(): js.Promise[js.Array[java.lang.String]]
   
-  def register(tag: java.lang.String): js.Promise[Unit] = js.native
+  def register(tag: java.lang.String): js.Promise[Unit]
 }
 object SyncManager {
   

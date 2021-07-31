@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioChannelInput extends StObject {
   
   /** Required. The zero-based index of the channel in the input file. */
-  var channel: js.UndefOr[Double] = js.native
+  var channel: js.UndefOr[Double] = js.undefined
   
   /** Audio volume control in dB. Negative values decrease volume, positive values increase. The default is 0. */
-  var gainDb: js.UndefOr[Double] = js.native
+  var gainDb: js.UndefOr[Double] = js.undefined
   
   /** Required. The `Input.key` that identifies the input file. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Required. The zero-based index of the track in the input file. */
-  var track: js.UndefOr[Double] = js.native
+  var track: js.UndefOr[Double] = js.undefined
 }
 object AudioChannelInput {
   

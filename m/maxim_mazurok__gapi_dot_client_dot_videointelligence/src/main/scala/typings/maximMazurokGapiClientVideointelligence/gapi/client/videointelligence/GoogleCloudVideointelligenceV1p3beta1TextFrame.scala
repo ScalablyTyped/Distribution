@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1TextFrame extends StObject {
   
   /** Bounding polygon of the detected text for this frame. */
-  var rotatedBoundingBox: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly] = js.native
+  var rotatedBoundingBox: js.UndefOr[GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly] = js.undefined
   
   /** Timestamp of this frame. */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1TextFrame {
   

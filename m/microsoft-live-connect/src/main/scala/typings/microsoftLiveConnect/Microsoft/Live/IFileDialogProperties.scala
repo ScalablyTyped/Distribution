@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.fileDialog method.
   */
-@js.native
 trait IFileDialogProperties extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait IFileDialogProperties extends StObject {
     * "grey", or "transparent".
     * @default "white"
     */
-  var lightbox: js.UndefOr[String] = js.native
+  var lightbox: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of SkyDrive file picker to display. Specify "open"
     * to display the download version of the file picker. Specify "save"
     * to display the upload version of the file picker.
     */
-  var mode: String = js.native
+  var mode: String
   
   /**
     * Specify only if the mode property is set to "open". Specifies how
@@ -31,7 +29,7 @@ trait IFileDialogProperties extends StObject {
     * single file. Specify "multi" for multiple files.
     * @default "single"
     */
-  var select: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.undefined
 }
 object IFileDialogProperties {
   

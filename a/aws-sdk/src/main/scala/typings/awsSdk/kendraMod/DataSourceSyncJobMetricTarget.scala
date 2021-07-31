@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSyncJobMetricTarget extends StObject {
   
   /**
     * The ID of the data source that is running the sync job.
     */
-  var DataSourceId: typings.awsSdk.kendraMod.DataSourceId = js.native
+  var DataSourceId: typings.awsSdk.kendraMod.DataSourceId
   
   /**
     * The ID of the sync job that is running on the data source.
     */
-  var DataSourceSyncJobId: typings.awsSdk.kendraMod.DataSourceSyncJobId = js.native
+  var DataSourceSyncJobId: typings.awsSdk.kendraMod.DataSourceSyncJobId
 }
 object DataSourceSyncJobMetricTarget {
   

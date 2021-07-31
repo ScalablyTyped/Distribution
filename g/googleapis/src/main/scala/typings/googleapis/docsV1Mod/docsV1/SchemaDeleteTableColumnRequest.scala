@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a column from a table.
   */
-@js.native
 trait SchemaDeleteTableColumnRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaDeleteTableColumnRequest extends StObject {
     * If no columns remain in the table after this deletion, the whole table is
     * deleted.
     */
-  var tableCellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var tableCellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
 }
 object SchemaDeleteTableColumnRequest {
   

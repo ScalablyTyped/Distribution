@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Unlike the {@link XFrameLoader} interface, this loading will be synchronous.
   * @see XFrameLoader
   */
-@js.native
-trait XSynchronousFrameLoader extends XInterface {
+trait XSynchronousFrameLoader
+  extends StObject
+     with XInterface {
   
   /**
     * cancels the loading process.
@@ -25,7 +25,7 @@ trait XSynchronousFrameLoader extends XInterface {
     * thread the loader thread only. Method {@link XSynchronousFrameLoader.load()} must return `FALSE` then and caller of this method {@link
     * XSynchronousFrameLoader.cancel()} already knows the state ...
     */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * starts the loading of the specified resource into the specified {@link Frame} .
@@ -33,7 +33,7 @@ trait XSynchronousFrameLoader extends XInterface {
     * @param Frame the target frame which should contain the new loaded component
     * @returns `TRUE` if loading is successfully ; `FALSE` otherwise
     */
-  def load(Descriptor: SeqEquiv[PropertyValue], Frame: XFrame): Boolean = js.native
+  def load(Descriptor: SeqEquiv[PropertyValue], Frame: XFrame): Boolean
 }
 object XSynchronousFrameLoader {
   

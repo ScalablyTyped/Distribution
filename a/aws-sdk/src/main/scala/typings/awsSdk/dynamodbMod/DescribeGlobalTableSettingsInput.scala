@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGlobalTableSettingsInput extends StObject {
   
   /**
     * The name of the global table to describe.
     */
-  var GlobalTableName: TableName = js.native
+  var GlobalTableName: TableName
 }
 object DescribeGlobalTableSettingsInput {
   

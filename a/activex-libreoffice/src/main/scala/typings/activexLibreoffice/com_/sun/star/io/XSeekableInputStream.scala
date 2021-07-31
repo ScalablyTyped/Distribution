@@ -4,13 +4,12 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface can be used to represent a seekable input stream. */
-@js.native
 trait XSeekableInputStream
-  extends XInputStream
+  extends StObject
+     with XInputStream
      with XSeekable
 object XSeekableInputStream {
   

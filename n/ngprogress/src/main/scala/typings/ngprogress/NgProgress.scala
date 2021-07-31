@@ -2,29 +2,27 @@ package typings.ngprogress
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NgProgress {
   
-  @js.native
   trait INgProgress extends StObject {
     
-    def color(color: String): Unit = js.native
+    def color(color: String): Unit
     
-    def complete(): Unit = js.native
+    def complete(): Unit
     
-    def height(height: String): Unit = js.native
+    def height(height: String): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def set(value: Double): Unit = js.native
+    def set(value: Double): Unit
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def status(): Double = js.native
+    def status(): Double
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object INgProgress {
     
@@ -72,10 +70,9 @@ object NgProgress {
     }
   }
   
-  @js.native
   trait INgProgressFactory extends StObject {
     
-    def createInstance(): INgProgress = js.native
+    def createInstance(): INgProgress
   }
   object INgProgressFactory {
     

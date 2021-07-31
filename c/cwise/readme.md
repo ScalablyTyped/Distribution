@@ -12,7 +12,7 @@ Component-wise operations on ndarrays
 | Keywords           | scijs, ndarray, component, scientific, computing, volume, image, array, typed, array, scalar, math, linear, algebra, signal, operation, scan, map, reduce, cache, arithmetic |
 | # releases         | 0 |
 | # dependents       | 61 |
-| # downloads        | 4046766 |
+| # downloads        | 3429552 |
 | # stars            | 2 |
 
 ## Links

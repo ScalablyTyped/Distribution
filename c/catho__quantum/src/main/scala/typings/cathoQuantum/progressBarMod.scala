@@ -7,7 +7,6 @@ import typings.cathoQuantum.cathoQuantumStrings.secondary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
@@ -19,22 +18,21 @@ object progressBarMod {
   
   type ProgressBar = Component[ProgressBarProps, js.Object, js.Any]
   
-  @js.native
   trait ProgressBarProps extends StObject {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var progressPercent: js.UndefOr[Double] = js.native
+    var progressPercent: js.UndefOr[Double] = js.undefined
     
-    var progressText: js.UndefOr[Double] = js.native
+    var progressText: js.UndefOr[Double] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | secondary] = js.native
+    var skin: js.UndefOr[neutral | primary | secondary] = js.undefined
     
-    var theme: js.UndefOr[`12`] = js.native
+    var theme: js.UndefOr[`12`] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object ProgressBarProps {
     

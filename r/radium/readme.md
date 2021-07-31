@@ -11,8 +11,8 @@ A set of tools to manage inline styles on React elements
 | Full name          | radium |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 357 |
-| # downloads        | 5796593 |
+| # dependents       | 359 |
+| # downloads        | 5168919 |
 | # stars            | 19 |
 
 ## Links

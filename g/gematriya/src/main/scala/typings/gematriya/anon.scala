@@ -2,19 +2,17 @@ package typings.gematriya
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Geresh extends StObject {
     
-    var geresh: js.UndefOr[Boolean] = js.native
+    var geresh: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var punctuate: js.UndefOr[Boolean] = js.native
+    var punctuate: js.UndefOr[Boolean] = js.undefined
   }
   object Geresh {
     
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Order extends StObject {
     
-    var order: js.UndefOr[Boolean] = js.native
+    var order: js.UndefOr[Boolean] = js.undefined
   }
   object Order {
     

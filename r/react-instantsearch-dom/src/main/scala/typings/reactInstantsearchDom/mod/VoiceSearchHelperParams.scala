@@ -2,19 +2,17 @@ package typings.reactInstantsearchDom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceSearchHelperParams extends StObject {
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  def onQueryChange(query: String): Unit = js.native
+  def onQueryChange(query: String): Unit
   
-  def onStateChange(): Unit = js.native
+  def onStateChange(): Unit
   
-  var searchAsYouSpeak: Boolean = js.native
+  var searchAsYouSpeak: Boolean
 }
 object VoiceSearchHelperParams {
   

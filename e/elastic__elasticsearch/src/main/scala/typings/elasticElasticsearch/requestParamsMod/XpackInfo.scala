@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XpackInfo extends Generic {
+trait XpackInfo
+  extends StObject
+     with Generic {
   
-  var accept_enterprise: js.UndefOr[Boolean] = js.native
+  var accept_enterprise: js.UndefOr[Boolean] = js.undefined
   
-  var categories: js.UndefOr[String | js.Array[String]] = js.native
+  var categories: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object XpackInfo {
   

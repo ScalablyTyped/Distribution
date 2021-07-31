@@ -2,25 +2,23 @@ package typings.xmldsigjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Algorithm extends StObject {
     
-    var Algorithm: String = js.native
+    var Algorithm: String
     
-    var Encoding: String = js.native
+    var Encoding: String
     
-    var Id: String = js.native
+    var Id: String
     
-    var MimeType: String = js.native
+    var MimeType: String
     
-    var Type: String = js.native
+    var Type: String
     
-    var URI: String = js.native
+    var URI: String
   }
   object Algorithm {
     
@@ -53,96 +51,95 @@ object anon {
     }
   }
   
-  @js.native
   trait CanonicalizationMethod extends StObject {
     
-    var CanonicalizationMethod: String = js.native
+    var CanonicalizationMethod: String
     
-    var DSAKeyValue: String = js.native
+    var DSAKeyValue: String
     
-    var DigestMethod: String = js.native
+    var DigestMethod: String
     
-    var DigestValue: String = js.native
+    var DigestValue: String
     
-    var DomainParameters: String = js.native
+    var DomainParameters: String
     
-    var ECDSAKeyValue: String = js.native
+    var ECDSAKeyValue: String
     
-    var EncryptedKey: String = js.native
+    var EncryptedKey: String
     
-    var Exponent: String = js.native
+    var Exponent: String
     
-    var HMACOutputLength: String = js.native
+    var HMACOutputLength: String
     
-    var KeyInfo: String = js.native
+    var KeyInfo: String
     
-    var KeyName: String = js.native
+    var KeyName: String
     
-    var KeyValue: String = js.native
+    var KeyValue: String
     
-    var Manifest: String = js.native
+    var Manifest: String
     
-    var MaskGenerationFunction: String = js.native
+    var MaskGenerationFunction: String
     
-    var MgmtData: String = js.native
+    var MgmtData: String
     
-    var Modulus: String = js.native
+    var Modulus: String
     
-    var NamedCurve: String = js.native
+    var NamedCurve: String
     
-    var Object: String = js.native
+    var Object: String
     
-    var PGPData: String = js.native
+    var PGPData: String
     
-    var PublicKey: String = js.native
+    var PublicKey: String
     
-    var RSAKeyValue: String = js.native
+    var RSAKeyValue: String
     
-    var RSAPSSParams: String = js.native
+    var RSAPSSParams: String
     
-    var Reference: String = js.native
+    var Reference: String
     
-    var RetrievalMethod: String = js.native
+    var RetrievalMethod: String
     
-    var SPKIData: String = js.native
+    var SPKIData: String
     
-    var SPKIexp: String = js.native
+    var SPKIexp: String
     
-    var SaltLength: String = js.native
+    var SaltLength: String
     
-    var Signature: String = js.native
+    var Signature: String
     
-    var SignatureMethod: String = js.native
+    var SignatureMethod: String
     
-    var SignatureValue: String = js.native
+    var SignatureValue: String
     
-    var SignedInfo: String = js.native
+    var SignedInfo: String
     
-    var Transform: String = js.native
+    var Transform: String
     
-    var Transforms: String = js.native
+    var Transforms: String
     
-    var X: String = js.native
+    var X: String
     
-    var X509CRL: String = js.native
+    var X509CRL: String
     
-    var X509Certificate: String = js.native
+    var X509Certificate: String
     
-    var X509Data: String = js.native
+    var X509Data: String
     
-    var X509IssuerName: String = js.native
+    var X509IssuerName: String
     
-    var X509IssuerSerial: String = js.native
+    var X509IssuerSerial: String
     
-    var X509SKI: String = js.native
+    var X509SKI: String
     
-    var X509SerialNumber: String = js.native
+    var X509SerialNumber: String
     
-    var X509SubjectName: String = js.native
+    var X509SubjectName: String
     
-    var XPath: String = js.native
+    var XPath: String
     
-    var Y: String = js.native
+    var Y: String
   }
   object CanonicalizationMethod {
     
@@ -334,10 +331,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Manifest extends StObject {
     
-    var Manifest: String = js.native
+    var Manifest: String
   }
   object Manifest {
     
@@ -355,10 +351,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -376,28 +371,27 @@ object anon {
     }
   }
   
-  @js.native
   trait XmlDecryptionTransform extends StObject {
     
-    var XmlDecryptionTransform: String = js.native
+    var XmlDecryptionTransform: String
     
-    var XmlDsigBase64Transform: String = js.native
+    var XmlDsigBase64Transform: String
     
-    var XmlDsigC14NTransform: String = js.native
+    var XmlDsigC14NTransform: String
     
-    var XmlDsigC14NWithCommentsTransform: String = js.native
+    var XmlDsigC14NWithCommentsTransform: String
     
-    var XmlDsigEnvelopedSignatureTransform: String = js.native
+    var XmlDsigEnvelopedSignatureTransform: String
     
-    var XmlDsigExcC14NTransform: String = js.native
+    var XmlDsigExcC14NTransform: String
     
-    var XmlDsigExcC14NWithCommentsTransform: String = js.native
+    var XmlDsigExcC14NWithCommentsTransform: String
     
-    var XmlDsigXPathTransform: String = js.native
+    var XmlDsigXPathTransform: String
     
-    var XmlDsigXsltTransform: String = js.native
+    var XmlDsigXsltTransform: String
     
-    var XmlLicenseTransform: String = js.native
+    var XmlLicenseTransform: String
   }
   object XmlDecryptionTransform {
     

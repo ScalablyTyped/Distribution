@@ -3,45 +3,43 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /** Input only. Android specific options for messages sent through [FCM connection server](https://goo.gl/4GLdUl). */
-  var android: js.UndefOr[AndroidConfig] = js.native
+  var android: js.UndefOr[AndroidConfig] = js.undefined
   
   /** Input only. [Apple Push Notification Service](https://goo.gl/MXRTPa) specific options. */
-  var apns: js.UndefOr[ApnsConfig] = js.native
+  var apns: js.UndefOr[ApnsConfig] = js.undefined
   
   /** Condition to send a message to, e.g. "'foo' in topics && 'bar' in topics". */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /** Input only. Arbitrary key/value payload. The key should not be a reserved word ("from", "message_type", or any word starting with "google" or "gcm"). */
   var data: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Input only. Template for FCM SDK feature options to use across all platforms. */
-  var fcmOptions: js.UndefOr[FcmOptions] = js.native
+  var fcmOptions: js.UndefOr[FcmOptions] = js.undefined
   
   /** Output Only. The identifier of the message sent, in the format of `projects/∗/messages/{message_id}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Input only. Basic notification template to use across all platforms. */
-  var notification: js.UndefOr[Notification] = js.native
+  var notification: js.UndefOr[Notification] = js.undefined
   
   /** Registration token to send a message to. */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /** Topic name to send a message to, e.g. "weather". Note: "/topics/" prefix should not be provided. */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
   
   /** Input only. [Webpush protocol](https://tools.ietf.org/html/rfc8030) options. */
-  var webpush: js.UndefOr[WebpushConfig] = js.native
+  var webpush: js.UndefOr[WebpushConfig] = js.undefined
 }
 object Message {
   
@@ -76,7 +74,7 @@ object Message {
     def setData(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFcm.maximMazurokGapiClientFcmStrings.Message & TopLevel[js.Any]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline

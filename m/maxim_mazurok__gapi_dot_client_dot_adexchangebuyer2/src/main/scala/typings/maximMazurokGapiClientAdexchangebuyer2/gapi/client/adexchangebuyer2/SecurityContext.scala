@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityContext extends StObject {
   
   /** The security types in this context. */
-  var securities: js.UndefOr[js.Array[String]] = js.native
+  var securities: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SecurityContext {
   

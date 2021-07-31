@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature extends StObject {
   
   /** A list of acceptable values. Only effective when the policy is `RESTRICTED`. */
-  var allowedValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The policy of the feature. */
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaFeaturePolicyFeature {
   

@@ -4,15 +4,16 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decompressMod {
   
+  @scala.inline
+  def apply(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def apply(buffer: Buffer, outputSize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  
   @JSImport("brotli/decompress", JSImport.Namespace)
   @js.native
-  def apply(buffer: Buffer): Uint8Array = js.native
-  @JSImport("brotli/decompress", JSImport.Namespace)
-  @js.native
-  def apply(buffer: Buffer, outputSize: Double): Uint8Array = js.native
+  val ^ : js.Any = js.native
 }

@@ -14,20 +14,24 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorMod {
+  
+  @JSImport("rc-select/lib/interface/generator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-select/lib/interface/generator", "INTERNAL_PROPS_MARK")
   @js.native
   val INTERNAL_PROPS_MARK: /* "RC_SELECT_INTERNAL_PROPS_MARK" */ String = js.native
   
-  @JSImport("rc-select/lib/interface/generator", "RefSelectFunc")
-  @js.native
+  @scala.inline
   def RefSelectFunc[OptionsType /* <: js.Array[js.Object] */, ValueType](Component: RefForwardingComponent[RefSelectProps, SelectProps[OptionsType, ValueType]]): ForwardRefExoticComponent[
-    (PropsWithoutRef[SelectProps[OptionsType, ValueType]]) with RefAttributes[RefSelectProps]
-  ] = js.native
+    (PropsWithoutRef[SelectProps[OptionsType, ValueType]]) & RefAttributes[RefSelectProps]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelectFunc")(Component.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[
+    (PropsWithoutRef[SelectProps[OptionsType, ValueType]]) & RefAttributes[RefSelectProps]
+  ]]
   
   @js.native
   trait CustomTagProps extends StObject {
@@ -46,10 +50,11 @@ object generatorMod {
   
   type DefaultValueType = RawValueType | (js.Array[LabelValueType | RawValueType]) | LabelValueType
   
-  @js.native
-  trait DisplayLabelValueType extends LabelValueType {
+  trait DisplayLabelValueType
+    extends StObject
+       with LabelValueType {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
   }
   object DisplayLabelValueType {
     
@@ -85,14 +90,13 @@ object generatorMod {
   
   type Key = String | Double
   
-  @js.native
   trait LabelValueType extends StObject {
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[RawValueType] = js.native
+    var value: js.UndefOr[RawValueType] = js.undefined
   }
   object LabelValueType {
     

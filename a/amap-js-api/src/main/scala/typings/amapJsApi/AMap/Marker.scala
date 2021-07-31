@@ -24,11 +24,12 @@ import typings.amapJsApi.anon.PassedPath
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Marker[ExtraData] extends Overlay[ExtraData] {
+trait Marker[ExtraData]
+  extends StObject
+     with Overlay[ExtraData] {
   
   /**
     * 获取锚点
@@ -120,12 +121,6 @@ trait Marker[ExtraData] extends Overlay[ExtraData] {
     * @param circleable 是否循环
     */
   def moveAlong(path: js.Array[LngLat], speed: Double): Unit = js.native
-  def moveAlong(
-    path: js.Array[LngLat],
-    speed: Double,
-    timingFunction: js.UndefOr[scala.Nothing],
-    circleable: Boolean
-  ): Unit = js.native
   def moveAlong(path: js.Array[LngLat], speed: Double, timingFunction: js.Function1[/* t */ Double, Double]): Unit = js.native
   def moveAlong(
     path: js.Array[LngLat],
@@ -133,6 +128,7 @@ trait Marker[ExtraData] extends Overlay[ExtraData] {
     timingFunction: js.Function1[/* t */ Double, Double],
     circleable: Boolean
   ): Unit = js.native
+  def moveAlong(path: js.Array[LngLat], speed: Double, timingFunction: Unit, circleable: Boolean): Unit = js.native
   
   /**
     * 以给定速度移动点标记到指定位置
@@ -305,42 +301,41 @@ object Marker {
     def `top-right`: typings.amapJsApi.amapJsApiStrings.`top-right` = "top-right".asInstanceOf[typings.amapJsApi.amapJsApiStrings.`top-right`]
   }
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, I] = js.native
+    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, I]
     
-    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I] = js.native
+    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I]
     
-    var dragend: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragend, I] = js.native
+    var dragend: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragend, I]
     
-    var dragging: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragging, I] = js.native
+    var dragging: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragging, I]
     
-    var dragstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragstart, I] = js.native
+    var dragstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.dragstart, I]
     
-    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I] = js.native
+    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I]
     
-    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, I] = js.native
+    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, I]
     
-    var mouseout: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseout, I] = js.native
+    var mouseout: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseout, I]
     
-    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I] = js.native
+    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I]
     
-    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I] = js.native
+    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I]
     
-    var movealong: Event_[typings.amapJsApi.amapJsApiStrings.movealong, js.UndefOr[scala.Nothing]] = js.native
+    var movealong: Event_[typings.amapJsApi.amapJsApiStrings.movealong, Unit]
     
-    var moveend: Event_[typings.amapJsApi.amapJsApiStrings.moveend, js.UndefOr[scala.Nothing]] = js.native
+    var moveend: Event_[typings.amapJsApi.amapJsApiStrings.moveend, Unit]
     
-    var moving: Event_[typings.amapJsApi.amapJsApiStrings.moving, PassedPath] = js.native
+    var moving: Event_[typings.amapJsApi.amapJsApiStrings.moving, PassedPath]
     
-    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, I] = js.native
+    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, I]
     
-    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, I] = js.native
+    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, I]
     
-    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, I] = js.native
+    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, I]
     
-    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I] = js.native
+    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I]
   }
   object EventMap {
     
@@ -356,8 +351,8 @@ object Marker {
       mouseout: MapsEvent[mouseout, I],
       mouseover: MapsEvent[mouseover, I],
       mouseup: MapsEvent[mouseup, I],
-      movealong: Event_[movealong, js.UndefOr[scala.Nothing]],
-      moveend: Event_[moveend, js.UndefOr[scala.Nothing]],
+      movealong: Event_[movealong, Unit],
+      moveend: Event_[moveend, Unit],
       moving: Event_[moving, PassedPath],
       rightclick: MapsEvent[rightclick, I],
       touchend: MapsEvent[touchend, I],
@@ -369,7 +364,7 @@ object Marker {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setClick(value: MapsEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
@@ -402,10 +397,10 @@ object Marker {
       def setMouseup(value: MapsEvent[mouseup, I]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMovealong(value: Event_[movealong, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "movealong", value.asInstanceOf[js.Any])
+      def setMovealong(value: Event_[movealong, Unit]): Self = StObject.set(x, "movealong", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMoveend(value: Event_[moveend, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
+      def setMoveend(value: Event_[moveend, Unit]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMoving(value: Event_[moving, PassedPath]): Self = StObject.set(x, "moving", value.asInstanceOf[js.Any])
@@ -424,14 +419,13 @@ object Marker {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[LabelDirection] = js.native
+    var direction: js.UndefOr[LabelDirection] = js.undefined
     
-    var offset: js.UndefOr[Pixel] = js.native
+    var offset: js.UndefOr[Pixel] = js.undefined
   }
   object Label {
     
@@ -490,96 +484,96 @@ object Marker {
     def top: typings.amapJsApi.amapJsApiStrings.top = "top".asInstanceOf[typings.amapJsApi.amapJsApiStrings.top]
   }
   
-  @js.native
   trait Options[ExtraData]
-    extends typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
+    extends StObject
+       with typings.amapJsApi.AMap.Overlay.Options[ExtraData] {
     
     /**
       * 标记锚点
       */
-    var anchor: js.UndefOr[Anchor] = js.native
+    var anchor: js.UndefOr[Anchor] = js.undefined
     
     /**
       * 点标记的旋转角度
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /**
       * 点标记的动画效果
       */
-    var animation: js.UndefOr[AnimationName] = js.native
+    var animation: js.UndefOr[AnimationName] = js.undefined
     
     /**
       * 是否自动旋转
       */
-    var autoRotation: js.UndefOr[Boolean] = js.native
+    var autoRotation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 点标记显示内容
       */
-    var content: js.UndefOr[String | HTMLElement] = js.native
+    var content: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * 需在点标记中显示的图标
       */
-    var icon: js.UndefOr[String | Icon] = js.native
+    var icon: js.UndefOr[String | Icon] = js.undefined
     
     /**
       * 文本标注
       */
-    var label: js.UndefOr[Label] = js.native
+    var label: js.UndefOr[Label] = js.undefined
     
     /**
       * 点标记显示位置偏移量
       */
-    var offset: js.UndefOr[Pixel] = js.native
+    var offset: js.UndefOr[Pixel] = js.undefined
     
     /**
       * 点标记在地图上显示的位置
       */
-    var position: js.UndefOr[LocationValue] = js.native
+    var position: js.UndefOr[LocationValue] = js.undefined
     
     /**
       * 拖拽点标记时是否开启点标记离开地图的效果
       */
-    var raiseOnDrag: js.UndefOr[Boolean] = js.native
+    var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 点标记阴影
       */
-    var shadow: js.UndefOr[Icon | String] = js.native
+    var shadow: js.UndefOr[Icon | String] = js.undefined
     
     /**
       * 可点击区域
       */
-    var shape: js.UndefOr[MarkerShape] = js.native
+    var shape: js.UndefOr[MarkerShape] = js.undefined
     
     /**
       * 鼠标滑过点标记时的文字提示
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * 鼠标点击时marker是否置顶
       */
-    var topWhenClick: js.UndefOr[Boolean] = js.native
+    var topWhenClick: js.UndefOr[Boolean] = js.undefined
     
-    var topWhenMouseOver: js.UndefOr[Boolean] = js.native
+    var topWhenMouseOver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 点标记是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 点标记的叠加顺序
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
     // internal
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     
@@ -590,7 +584,7 @@ object Marker {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], ExtraData] (val x: Self with Options[ExtraData]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       @scala.inline
       def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])

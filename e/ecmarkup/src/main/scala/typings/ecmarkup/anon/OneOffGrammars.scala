@@ -2,15 +2,13 @@ package typings.ecmarkup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OneOffGrammars extends StObject {
   
-  var grammar: typings.grammarkdown.mod.Grammar = js.native
+  var grammar: typings.grammarkdown.mod.Grammar
   
-  var oneOffGrammars: js.Array[GrammarEle] = js.native
+  var oneOffGrammars: js.Array[GrammarEle]
 }
 object OneOffGrammars {
   

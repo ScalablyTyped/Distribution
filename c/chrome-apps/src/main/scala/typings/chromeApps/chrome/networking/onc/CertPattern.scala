@@ -2,33 +2,31 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertPattern extends StObject {
   
   /**
     * List of URIs to which the user can be directed in case
     * no certificates that match this pattern are found.
     */
-  var EnrollmentURI: js.UndefOr[js.Array[String]] = js.native
+  var EnrollmentURI: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set, pattern against which X.509 issuer settings should be matched.
     */
-  var Issuer: js.UndefOr[IssuerSubjectPattern] = js.native
+  var Issuer: js.UndefOr[IssuerSubjectPattern] = js.undefined
   
   /**
     * List of certificate issuer CA certificates.
     * A certificate must be signed by one of them in order to match this pattern.
     */
-  var IssuerCARef: js.UndefOr[js.Array[String]] = js.native
+  var IssuerCARef: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set, pattern against which X.509 subject settings should be matched.
     */
-  var IssuerSubjectPattern: js.UndefOr[typings.chromeApps.chrome.networking.onc.IssuerSubjectPattern] = js.native
+  var IssuerSubjectPattern: js.UndefOr[typings.chromeApps.chrome.networking.onc.IssuerSubjectPattern] = js.undefined
 }
 object CertPattern {
   

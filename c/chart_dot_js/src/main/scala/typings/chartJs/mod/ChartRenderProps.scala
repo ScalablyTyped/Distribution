@@ -2,17 +2,15 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartRenderProps extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[Easing] = js.native
+  var easing: js.UndefOr[Easing] = js.undefined
   
-  var `lazy`: js.UndefOr[Boolean] = js.native
+  var `lazy`: js.UndefOr[Boolean] = js.undefined
 }
 object ChartRenderProps {
   

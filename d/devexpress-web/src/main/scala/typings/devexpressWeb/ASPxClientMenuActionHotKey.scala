@@ -2,15 +2,13 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientMenuActionHotKey extends StObject {
   
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
-  var keyCode: Double = js.native
+  var keyCode: Double
 }
 object ASPxClientMenuActionHotKey {
   

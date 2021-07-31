@@ -3,29 +3,29 @@ package typings.sequencify
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sequencify", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: TaskMap */](tasks: T, names: js.Array[/* keyof T */ String], results: js.Array[/* keyof T */ String]): Unit = js.native
-  @JSImport("sequencify", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[T /* <: TaskMap */](tasks: T, names: js.Array[/* keyof T */ String], results: js.Array[/* keyof T */ String]): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], names.asInstanceOf[js.Any], results.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply[T /* <: TaskMap */](
     tasks: T,
     names: js.Array[/* keyof T */ String],
     results: js.Array[/* keyof T */ String],
     nest: js.Array[String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(tasks.asInstanceOf[js.Any], names.asInstanceOf[js.Any], results.asInstanceOf[js.Any], nest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("sequencify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Task extends StObject {
     
-    var dep: js.Array[String] = js.native
+    var dep: js.Array[String]
     
-    var name: String = js.native
+    var name: String
   }
   object Task {
     

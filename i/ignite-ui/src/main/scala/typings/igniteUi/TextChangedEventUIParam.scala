@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextChangedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the old text.
     */
-  var oldText: js.UndefOr[String] = js.native
+  var oldText: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the editor.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the new text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object TextChangedEventUIParam {
   

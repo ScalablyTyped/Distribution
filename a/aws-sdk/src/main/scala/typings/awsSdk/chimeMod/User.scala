@@ -2,76 +2,74 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: js.UndefOr[String] = js.native
+  var AccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The Alexa for Business metadata.
     */
-  var AlexaForBusinessMetadata: js.UndefOr[typings.awsSdk.chimeMod.AlexaForBusinessMetadata] = js.native
+  var AlexaForBusinessMetadata: js.UndefOr[typings.awsSdk.chimeMod.AlexaForBusinessMetadata] = js.undefined
   
   /**
     * The display name of the user.
     */
-  var DisplayName: js.UndefOr[SensitiveString] = js.native
+  var DisplayName: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * Date and time when the user is invited to the Amazon Chime account, in ISO 8601 format.
     */
-  var InvitedOn: js.UndefOr[Iso8601Timestamp] = js.native
+  var InvitedOn: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The license type for the user.
     */
-  var LicenseType: js.UndefOr[License] = js.native
+  var LicenseType: js.UndefOr[License] = js.undefined
   
   /**
     * The user's personal meeting PIN.
     */
-  var PersonalPIN: js.UndefOr[String] = js.native
+  var PersonalPIN: js.UndefOr[String] = js.undefined
   
   /**
     * The primary email address of the user.
     */
-  var PrimaryEmail: js.UndefOr[EmailAddress] = js.native
+  var PrimaryEmail: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The primary phone number associated with the user.
     */
-  var PrimaryProvisionedNumber: js.UndefOr[SensitiveString] = js.native
+  var PrimaryProvisionedNumber: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * Date and time when the user is registered, in ISO 8601 format.
     */
-  var RegisteredOn: js.UndefOr[Iso8601Timestamp] = js.native
+  var RegisteredOn: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The user ID.
     */
-  var UserId: String = js.native
+  var UserId: String
   
   /**
     * The user invite status.
     */
-  var UserInvitationStatus: js.UndefOr[InviteStatus] = js.native
+  var UserInvitationStatus: js.UndefOr[InviteStatus] = js.undefined
   
   /**
     * The user registration status.
     */
-  var UserRegistrationStatus: js.UndefOr[RegistrationStatus] = js.native
+  var UserRegistrationStatus: js.UndefOr[RegistrationStatus] = js.undefined
   
   /**
     * The user type.
     */
-  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.native
+  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.undefined
 }
 object User {
   

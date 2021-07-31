@@ -3,17 +3,15 @@ package typings.bip174.interfacesMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalXpub extends StObject {
   
-  var extendedPubkey: Buffer = js.native
+  var extendedPubkey: Buffer
   
-  var masterFingerprint: Buffer = js.native
+  var masterFingerprint: Buffer
   
-  var path: String = js.native
+  var path: String
 }
 object GlobalXpub {
   

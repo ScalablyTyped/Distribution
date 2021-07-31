@@ -7,19 +7,20 @@ import typings.beautify.beautifyStrings.json
 import typings.beautify.beautifyStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(content: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("beautify", JSImport.Namespace)
   @js.native
-  def apply(content: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var format: css | json | js_ | html | xml = js.native
+    var format: css | json | js_ | html | xml
   }
   object Options {
     

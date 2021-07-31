@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Base")
@@ -23,21 +22,21 @@ class Base () extends StObject {
   
   /* protected */ def copyCssClasses(dest: js.Any, source: js.Any): Unit = js.native
   
-  def createArrayCoreHandler(propertiesHash: js.Any, name: String): js.Array[_] = js.native
+  def createArrayCoreHandler(propertiesHash: js.Any, name: String): js.Array[js.Any] = js.native
   
   def createCustomLocalizableObj(name: String): Unit = js.native
   
-  /* protected */ def createItemValues(name: String): js.Array[_] = js.native
+  /* protected */ def createItemValues(name: String): js.Array[js.Any] = js.native
   
   /* protected */ def createLocalizableString(name: String, owner: ILocalizableOwner): LocalizableString = js.native
   /* protected */ def createLocalizableString(name: String, owner: ILocalizableOwner, useMarkDown: Boolean): LocalizableString = js.native
   
-  /* protected */ def createNewArray(name: String): js.Array[_] = js.native
-  /* protected */ def createNewArray(name: String, onPush: js.UndefOr[scala.Nothing], onRemove: js.Any): js.Array[_] = js.native
-  /* protected */ def createNewArray(name: String, onPush: js.Any): js.Array[_] = js.native
-  /* protected */ def createNewArray(name: String, onPush: js.Any, onRemove: js.Any): js.Array[_] = js.native
+  /* protected */ def createNewArray(name: String): js.Array[js.Any] = js.native
+  /* protected */ def createNewArray(name: String, onPush: js.Any): js.Array[js.Any] = js.native
+  /* protected */ def createNewArray(name: String, onPush: js.Any, onRemove: js.Any): js.Array[js.Any] = js.native
+  /* protected */ def createNewArray(name: String, onPush: Unit, onRemove: js.Any): js.Array[js.Any] = js.native
   
-  /* protected */ def createNewArrayCore(name: String): js.Array[_] = js.native
+  /* protected */ def createNewArrayCore(name: String): js.Array[js.Any] = js.native
   
   def endLoadingFromJson(): Unit = js.native
   
@@ -118,7 +117,7 @@ class Base () extends StObject {
     * options.oldValue - old value
     * options.newValue - new value
     */
-  var onItemValuePropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  var onItemValuePropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ js.Any, js.Any], js.Any] = js.native
   
   /**
     * Event that raise on property change of the sender object
@@ -127,20 +126,14 @@ class Base () extends StObject {
     * options.oldValue - old value. Please note, it equals to options.newValue if property is an array
     * options.newValue - new value.
     */
-  var onPropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  var onPropertyChanged: Event[js.Function2[/* sender */ this.type, /* options */ js.Any, js.Any], js.Any] = js.native
   
   /* protected */ def onPropertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
   
   def onPropertyValueChangedCallback(name: String, oldValue: js.Any, newValue: js.Any, sender: Base, arrayChanges: ArrayChanges): Unit = js.native
   
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any): Unit = js.native
-  /* protected */ def propertyValueChanged(
-    name: String,
-    oldValue: js.Any,
-    newValue: js.Any,
-    arrayChanges: js.UndefOr[scala.Nothing],
-    target: Base
-  ): Unit = js.native
+  /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: Unit, target: Base): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: ArrayChanges): Unit = js.native
   /* protected */ def propertyValueChanged(name: String, oldValue: js.Any, newValue: js.Any, arrayChanges: ArrayChanges, target: Base): Unit = js.native
   
@@ -162,7 +155,7 @@ class Base () extends StObject {
   def registerFunctionOnPropertyValueChanged(name: String, func: js.Any): Unit = js.native
   def registerFunctionOnPropertyValueChanged(name: String, func: js.Any, key: String): Unit = js.native
   
-  /* protected */ def setArray(name: String, src: js.Array[_], dest: js.Array[_], isItemValues: Boolean, onPush: js.Any): Unit = js.native
+  /* protected */ def setArray(name: String, src: js.Array[js.Any], dest: js.Array[js.Any], isItemValues: Boolean, onPush: js.Any): Unit = js.native
   
   def setLocalizableStringText(name: String, value: String): Unit = js.native
   
@@ -218,18 +211,14 @@ object Base {
   @scala.inline
   def commentPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("commentPrefix")(x.asInstanceOf[js.Any])
   
-  @JSImport("survey-knockout", "Base.createItemValue")
-  @js.native
-  def createItemValue(item: js.Any): js.Any = js.native
-  @JSImport("survey-knockout", "Base.createItemValue")
-  @js.native
-  def createItemValue(item: js.Any, `type`: String): js.Any = js.native
+  @scala.inline
+  def createItemValue(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createItemValue(item: js.Any, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("survey-knockout", "Base.isSurveyElement")
-  @js.native
-  def isSurveyElement(`val`: js.Any): Boolean = js.native
+  @scala.inline
+  def isSurveyElement(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurveyElement")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("survey-knockout", "Base.itemValueLocStrChanged")
-  @js.native
-  def itemValueLocStrChanged(arr: js.Array[_]): Unit = js.native
+  @scala.inline
+  def itemValueLocStrChanged(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("itemValueLocStrChanged")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

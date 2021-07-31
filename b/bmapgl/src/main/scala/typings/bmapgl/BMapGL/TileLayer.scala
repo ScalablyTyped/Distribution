@@ -2,19 +2,17 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileLayer extends StObject {
   
-  def getCopyright(): Copyright = js.native
+  def getCopyright(): Copyright
   
-  def getTilesUrl(tileCoord: Pixel, zoom: Double): String = js.native
+  def getTilesUrl(tileCoord: Pixel, zoom: Double): String
   
-  def isTransparentPng(): Boolean = js.native
+  def isTransparentPng(): Boolean
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object TileLayer {
   

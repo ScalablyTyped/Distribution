@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,27 +10,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait ParticleRenderer extends StObject {
   
   /**
     * Destroys the ParticleRenderer.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Renders the particle container object.
     *
     * @param {PIXI.ParticleContainer} container - The container to render using this ParticleRenderer
     */
-  def render(container: ParticleContainer): Unit = js.native
+  def render(container: ParticleContainer): Unit
   
   /**
     * The default shader that is used if a sprite doesn't have a more specific one.
     *
     * @member {PIXI.Shader} PIXI.ParticleRenderer#shader
     */
-  var shader: Shader = js.native
+  var shader: Shader
   
   /**
     * The WebGL state in which this renderer will work.
@@ -39,7 +37,7 @@ trait ParticleRenderer extends StObject {
     * @member {PIXI.State} PIXI.ParticleRenderer#state
     * @readonly
     */
-  val state: State = js.native
+  val state: State
   
   /**
     * Uploads the position.
@@ -58,7 +56,7 @@ trait ParticleRenderer extends StObject {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Uploads the rotation.
@@ -77,7 +75,7 @@ trait ParticleRenderer extends StObject {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Uploads the tint.
@@ -96,7 +94,7 @@ trait ParticleRenderer extends StObject {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Uploads the Uvs
@@ -115,7 +113,7 @@ trait ParticleRenderer extends StObject {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Uploads the vertices.
@@ -134,7 +132,7 @@ trait ParticleRenderer extends StObject {
     array: js.Array[Double],
     stride: Double,
     offset: Double
-  ): Unit = js.native
+  ): Unit
 }
 object ParticleRenderer {
   

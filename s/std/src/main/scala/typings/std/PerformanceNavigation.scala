@@ -2,26 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done. */
-@js.native
 trait PerformanceNavigation extends StObject {
   
-  val TYPE_BACK_FORWARD: Double = js.native
+  val TYPE_BACK_FORWARD: Double
   
-  val TYPE_NAVIGATE: Double = js.native
+  val TYPE_NAVIGATE: Double
   
-  val TYPE_RELOAD: Double = js.native
+  val TYPE_RELOAD: Double
   
-  val TYPE_RESERVED: Double = js.native
+  val TYPE_RESERVED: Double
   
-  val redirectCount: Double = js.native
+  val redirectCount: Double
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object PerformanceNavigation {
   

@@ -2,25 +2,23 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var fullHeight: Double = js.native
+  var fullHeight: Double
   
-  var fullWidth: Double = js.native
+  var fullWidth: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Enabled {
   

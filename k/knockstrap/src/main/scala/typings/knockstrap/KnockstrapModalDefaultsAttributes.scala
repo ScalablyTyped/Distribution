@@ -2,13 +2,11 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapModalDefaultsAttributes extends StObject {
   
-  var role: String = js.native
+  var role: String
 }
 object KnockstrapModalDefaultsAttributes {
   

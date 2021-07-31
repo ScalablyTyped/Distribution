@@ -2,15 +2,13 @@ package typings.fsExtra.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferString extends StObject {
   
-  var buffer: String = js.native
+  var buffer: String
   
-  var bytesWritten: Double = js.native
+  var bytesWritten: Double
 }
 object BufferString {
   

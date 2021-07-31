@@ -2,13 +2,11 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionStorage extends StObject {
   
-  var sessionStorage: Boolean = js.native
+  var sessionStorage: Boolean
 }
 object SessionStorage {
   

@@ -2,18 +2,16 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // language/ast.js
-@js.native
 trait Location extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object Location {
   

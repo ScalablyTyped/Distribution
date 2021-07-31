@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SafariExtensionSettings
-  extends SafariEventTarget
+  extends StObject
+     with SafariEventTarget
      with /* index */ NumberDictionary[js.Any]
      with /* index */ StringDictionary[js.Any] {
   

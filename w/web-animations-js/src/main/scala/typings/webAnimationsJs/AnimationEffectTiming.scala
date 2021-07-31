@@ -2,29 +2,27 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEffectTiming extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var direction: js.UndefOr[AnimationEffectTimingPlaybackDirection] = js.native
+  var direction: js.UndefOr[AnimationEffectTimingPlaybackDirection] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var endDelay: js.UndefOr[Double] = js.native
+  var endDelay: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[AnimationEffectTimingFillMode] = js.native
+  var fill: js.UndefOr[AnimationEffectTimingFillMode] = js.undefined
   
-  var iterationStart: js.UndefOr[Double] = js.native
+  var iterationStart: js.UndefOr[Double] = js.undefined
   
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
-  var playbackRate: js.UndefOr[Double] = js.native
+  var playbackRate: js.UndefOr[Double] = js.undefined
 }
 object AnimationEffectTiming {
   

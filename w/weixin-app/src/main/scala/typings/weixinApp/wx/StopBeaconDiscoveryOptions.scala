@@ -2,21 +2,20 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBeaconDiscoveryOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   @JSName("complete")
-  var complete_StopBeaconDiscoveryOptions: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete_StopBeaconDiscoveryOptions: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("fail")
-  var fail_StopBeaconDiscoveryOptions: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail_StopBeaconDiscoveryOptions: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("success")
-  var success_StopBeaconDiscoveryOptions: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.native
+  var success_StopBeaconDiscoveryOptions: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.undefined
 }
 object StopBeaconDiscoveryOptions {
   

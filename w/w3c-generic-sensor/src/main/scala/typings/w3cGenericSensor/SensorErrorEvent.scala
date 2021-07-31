@@ -4,11 +4,12 @@ import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SensorErrorEvent extends Event {
+trait SensorErrorEvent
+  extends StObject
+     with Event {
   
   val error: Error = js.native
 }

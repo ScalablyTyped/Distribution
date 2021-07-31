@@ -10,8 +10,8 @@ Fast and reliable CSV parser based on PapaParse
 | Full name          | babyparse |
 | Keywords           | csv, parse, parsing, parser, delimited, text, data, auto-detect, comma, tab, stream |
 | # releases         | 0 |
-| # dependents       | 86 |
-| # downloads        | 2803056 |
+| # dependents       | 89 |
+| # downloads        | 3249520 |
 | # stars            | 9 |
 
 ## Links

@@ -5,48 +5,79 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gatewayRegistryMod {
   
   @JSImport("react-gateway/GatewayRegistry", JSImport.Namespace)
   @js.native
-  class ^ () extends GatewayRegistry
-  
-  @js.native
-  trait GatewayRegistry extends StObject {
+  class ^ ()
+    extends StObject
+       with GatewayRegistry {
     
+    /* CompleteClass */
     var _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]] = js.native
     
-    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, _]) | Null]] = js.native
+    /* CompleteClass */
+    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]] = js.native
     
+    /* CompleteClass */
     var _currentId: Double = js.native
     
-    def _renderContainer(name: String): Unit = js.native
+    /* CompleteClass */
+    override def _renderContainer(name: String): Unit = js.native
     
-    def addChild(name: String, gatewayId: String, child: ReactNode): Unit = js.native
+    /* CompleteClass */
+    override def addChild(name: String, gatewayId: String, child: ReactNode): Unit = js.native
     
-    def addContainer(name: String, container: Component[js.Object, js.Object, _]): Unit = js.native
+    /* CompleteClass */
+    override def addContainer(name: String, container: Component[js.Object, js.Object, js.Any]): Unit = js.native
     
-    def clearChild(name: String, gatewayId: String): Unit = js.native
+    /* CompleteClass */
+    override def clearChild(name: String, gatewayId: String): Unit = js.native
     
-    def register(name: String, child: ReactNode): String = js.native
+    /* CompleteClass */
+    override def register(name: String, child: ReactNode): String = js.native
     
-    def removeContainer(name: String): Unit = js.native
+    /* CompleteClass */
+    override def removeContainer(name: String): Unit = js.native
     
-    def unregister(name: String, gatewayId: String): Unit = js.native
+    /* CompleteClass */
+    override def unregister(name: String, gatewayId: String): Unit = js.native
+  }
+  
+  trait GatewayRegistry extends StObject {
+    
+    var _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]
+    
+    var _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]
+    
+    var _currentId: Double
+    
+    def _renderContainer(name: String): Unit
+    
+    def addChild(name: String, gatewayId: String, child: ReactNode): Unit
+    
+    def addContainer(name: String, container: Component[js.Object, js.Object, js.Any]): Unit
+    
+    def clearChild(name: String, gatewayId: String): Unit
+    
+    def register(name: String, child: ReactNode): String
+    
+    def removeContainer(name: String): Unit
+    
+    def unregister(name: String, gatewayId: String): Unit
   }
   object GatewayRegistry {
     
     @scala.inline
     def apply(
       _children: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]],
-      _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, _]) | Null]],
+      _containers: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]],
       _currentId: Double,
       _renderContainer: String => Unit,
       addChild: (String, String, ReactNode) => Unit,
-      addContainer: (String, Component[js.Object, js.Object, _]) => Unit,
+      addContainer: (String, Component[js.Object, js.Object, js.Any]) => Unit,
       clearChild: (String, String) => Unit,
       register: (String, ReactNode) => String,
       removeContainer: String => Unit,
@@ -63,7 +94,7 @@ object gatewayRegistryMod {
       def setAddChild(value: (String, String, ReactNode) => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setAddContainer(value: (String, Component[js.Object, js.Object, _]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
+      def setAddContainer(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "addContainer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setClearChild(value: (String, String) => Unit): Self = StObject.set(x, "clearChild", js.Any.fromFunction2(value))
@@ -81,7 +112,7 @@ object gatewayRegistryMod {
       def set_children(value: StringDictionary[js.UndefOr[StringDictionary[ReactNode]]]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, _]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
+      def set_containers(value: StringDictionary[js.UndefOr[(Component[js.Object, js.Object, js.Any]) | Null]]): Self = StObject.set(x, "_containers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_currentId(value: Double): Self = StObject.set(x, "_currentId", value.asInstanceOf[js.Any])

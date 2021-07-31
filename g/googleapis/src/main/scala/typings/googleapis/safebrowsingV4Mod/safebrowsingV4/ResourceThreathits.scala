@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/safebrowsing/v4", "safebrowsing_v4.Resource$Threathits")
@@ -31,7 +30,7 @@ class ResourceThreathits protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaEmpty] = js.native
   def create(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceThreathitsCreate): GaxiosPromise[SchemaEmpty] = js.native
   def create(params: ParamsResourceThreathitsCreate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def create(

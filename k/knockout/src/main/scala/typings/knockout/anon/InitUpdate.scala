@@ -5,22 +5,24 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitUpdate extends StObject {
   
-  def init(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[_]], allBindings: AllBindings): Unit = js.native
+  def init(
+    element: HTMLElement,
+    valueAccessor: js.Function0[MaybeSubscribable[js.Any]],
+    allBindings: AllBindings
+  ): Unit
   
-  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[_]]): Unit = js.native
+  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[js.Any]]): Unit
 }
 object InitUpdate {
   
   @scala.inline
   def apply(
-    init: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit,
-    update: (HTMLElement, js.Function0[MaybeSubscribable[_]]) => Unit
+    init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit,
+    update: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit
   ): InitUpdate = {
     val __obj = js.Dynamic.literal(init = js.Any.fromFunction3(init), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[InitUpdate]
@@ -30,9 +32,9 @@ object InitUpdate {
   implicit class InitUpdateMutableBuilder[Self <: InitUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[_]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

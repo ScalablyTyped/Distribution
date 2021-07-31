@@ -5,7 +5,6 @@ import typings.std.ArrayLike
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object randomMod {
@@ -96,9 +95,9 @@ object randomMod {
       * @param end the ending slice index (defaults to `source.length`)
       */
     def pick[T](source: ArrayLike[T]): T = js.native
-    def pick[T](source: ArrayLike[T], begin: js.UndefOr[scala.Nothing], end: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double): T = js.native
     def pick[T](source: ArrayLike[T], begin: Double, end: Double): T = js.native
+    def pick[T](source: ArrayLike[T], begin: Unit, end: Double): T = js.native
     
     /**
       * Returns a floating-point value within [min, max) or [min, max]

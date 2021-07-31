@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterAdvertisedIpRange extends StObject {
   
   /** User-specified description for the IP range. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The IP range to advertise. The value must be a CIDR-formatted string. */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
 }
 object RouterAdvertisedIpRange {
   

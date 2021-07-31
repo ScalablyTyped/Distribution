@@ -2,32 +2,30 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The placeholder information that uniquely identifies a placeholder shape.
   */
-@js.native
 trait SchemaPlaceholder extends StObject {
   
   /**
     * The index of the placeholder. If the same placeholder types are present
     * in the same page, they would have different index values.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The object ID of this shape&#39;s parent placeholder. If unset, the
     * parent placeholder shape does not exist, so the shape does not inherit
     * properties from any other shape.
     */
-  var parentObjectId: js.UndefOr[String] = js.native
+  var parentObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the placeholder.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaPlaceholder {
   

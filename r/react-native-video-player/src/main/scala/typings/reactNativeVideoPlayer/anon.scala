@@ -6,47 +6,45 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ControlButton extends StObject {
     
-    var controlButton: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var controlButton: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var controlIcon: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var controlIcon: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var controls: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var controls: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var playArrow: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var playArrow: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var playButton: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var playButton: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var playControl: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var playControl: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var playIcon: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var playIcon: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var seekBar: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBar: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var seekBarBackground: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBarBackground: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var seekBarFullWidth: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBarFullWidth: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var seekBarKnob: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBarKnob: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var seekBarKnobSeeking: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBarKnobSeeking: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var seekBarProgress: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var seekBarProgress: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var thumbnail: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var thumbnail: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var video: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var video: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var videoWrapper: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var videoWrapper: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var wrapper: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var wrapper: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object ControlButton {
     
@@ -214,14 +212,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MainVer extends StObject {
     
-    var mainVer: js.UndefOr[Double] = js.native
+    var mainVer: js.UndefOr[Double] = js.undefined
     
-    var patchVer: js.UndefOr[Double] = js.native
+    var patchVer: js.UndefOr[Double] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object MainVer {
     

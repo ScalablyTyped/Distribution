@@ -5,31 +5,29 @@ import typings.pulumiPulumi.automationConfigMod.ConfigMap
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSummary extends StObject {
   
-  var Deployment: js.UndefOr[RawJSON] = js.native
+  var Deployment: js.UndefOr[RawJSON] = js.undefined
   
-  var config: ConfigMap = js.native
+  var config: ConfigMap
   
-  var endTime: Date = js.native
+  var endTime: Date
   
-  var environment: StringDictionary[String] = js.native
+  var environment: StringDictionary[String]
   
-  var kind: UpdateKind = js.native
+  var kind: UpdateKind
   
-  var message: String = js.native
+  var message: String
   
-  var resourceChanges: js.UndefOr[OpMap] = js.native
+  var resourceChanges: js.UndefOr[OpMap] = js.undefined
   
-  var result: UpdateResult = js.native
+  var result: UpdateResult
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var version: Double = js.native
+  var version: Double
 }
 object UpdateSummary {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateResourceSharePermissionResponse extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the request succeeded.
     */
-  var returnValue: js.UndefOr[Boolean] = js.native
+  var returnValue: js.UndefOr[Boolean] = js.undefined
 }
 object DisassociateResourceSharePermissionResponse {
   

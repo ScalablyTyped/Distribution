@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object CaptureUse extends StObject {
   
   /** The capture device does not have a primary use. */
   @js.native
-  sealed trait none extends CaptureUse
+  sealed trait none
+    extends StObject
+       with CaptureUse
   
   /** The capture device is used primarily for photos. */
   @js.native
-  sealed trait photo extends CaptureUse
+  sealed trait photo
+    extends StObject
+       with CaptureUse
   
   /** The capture device is used primarily for video. */
   @js.native
-  sealed trait video extends CaptureUse
+  sealed trait video
+    extends StObject
+       with CaptureUse
 }

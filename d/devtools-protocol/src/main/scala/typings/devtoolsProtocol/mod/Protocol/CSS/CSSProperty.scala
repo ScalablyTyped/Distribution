@@ -2,51 +2,49 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSProperty extends StObject {
   
   /**
     * Whether the property is disabled by the user (present for source-based properties only).
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the property is implicit (implies `false` if absent).
     */
-  var `implicit`: js.UndefOr[Boolean] = js.native
+  var `implicit`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the property has "!important" annotation (implies `false` if absent).
     */
-  var important: js.UndefOr[Boolean] = js.native
+  var important: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Whether the property is understood by the browser (implies `true` if absent).
     */
-  var parsedOk: js.UndefOr[Boolean] = js.native
+  var parsedOk: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The entire property range in the enclosing style declaration (if available).
     */
-  var range: js.UndefOr[SourceRange] = js.native
+  var range: js.UndefOr[SourceRange] = js.undefined
   
   /**
     * The full property text as specified in the style.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The property value.
     */
-  var value: String = js.native
+  var value: String
 }
 object CSSProperty {
   

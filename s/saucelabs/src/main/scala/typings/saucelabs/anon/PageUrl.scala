@@ -2,13 +2,11 @@ package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageUrl extends StObject {
   
-  var pageUrl: js.UndefOr[String] = js.native
+  var pageUrl: js.UndefOr[String] = js.undefined
 }
 object PageUrl {
   

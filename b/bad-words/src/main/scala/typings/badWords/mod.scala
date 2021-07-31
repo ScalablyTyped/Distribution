@@ -3,29 +3,44 @@ package typings.badWords
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bad-words", JSImport.Namespace)
   @js.native
-  class ^ () extends BadWordsFilter {
+  class ^ ()
+    extends StObject
+       with BadWordsFilter {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def addWords(words: String*): Unit = js.native
+    
+    /* CompleteClass */
+    override def clean(text: String): String = js.native
+    
+    /* CompleteClass */
+    override def isProfane(text: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def removeWords(words: String*): Unit = js.native
+    
+    /* CompleteClass */
+    override def replaceWord(text: String): String = js.native
   }
   
-  @js.native
   trait BadWordsFilter extends StObject {
     
-    def addWords(words: String*): Unit = js.native
+    def addWords(words: String*): Unit
     
-    def clean(text: String): String = js.native
+    def clean(text: String): String
     
-    def isProfane(text: String): Boolean = js.native
+    def isProfane(text: String): Boolean
     
-    def removeWords(words: String*): Unit = js.native
+    def removeWords(words: String*): Unit
     
-    def replaceWord(text: String): String = js.native
+    def replaceWord(text: String): String
   }
   object BadWordsFilter {
     
@@ -61,22 +76,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var emptyList: js.UndefOr[Boolean] = js.native
+    var emptyList: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var list: js.UndefOr[js.Array[String]] = js.native
+    var list: js.UndefOr[js.Array[String]] = js.undefined
     
-    var placeHolder: js.UndefOr[String] = js.native
+    var placeHolder: js.UndefOr[String] = js.undefined
     
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
     
-    var replaceRegex: js.UndefOr[RegExp] = js.native
+    var replaceRegex: js.UndefOr[RegExp] = js.undefined
     
-    var splitRegex: js.UndefOr[RegExp] = js.native
+    var splitRegex: js.UndefOr[RegExp] = js.undefined
   }
   object Options {
     

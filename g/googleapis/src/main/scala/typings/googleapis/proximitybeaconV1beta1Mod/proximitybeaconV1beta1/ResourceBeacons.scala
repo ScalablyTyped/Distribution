@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/proximitybeacon/v1beta1", "proximitybeacon_v1beta1.Resource$Beacons")
@@ -35,7 +34,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def activate(): GaxiosPromise[SchemaEmpty] = js.native
   def activate(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def activate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def activate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def activate(params: ParamsResourceBeaconsActivate): GaxiosPromise[SchemaEmpty] = js.native
   def activate(params: ParamsResourceBeaconsActivate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def activate(
@@ -76,7 +75,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def deactivate(): GaxiosPromise[SchemaEmpty] = js.native
   def deactivate(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def deactivate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def deactivate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def deactivate(params: ParamsResourceBeaconsDeactivate): GaxiosPromise[SchemaEmpty] = js.native
   def deactivate(params: ParamsResourceBeaconsDeactivate, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def deactivate(
@@ -112,7 +111,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def decommission(): GaxiosPromise[SchemaEmpty] = js.native
   def decommission(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def decommission(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def decommission(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def decommission(params: ParamsResourceBeaconsDecommission): GaxiosPromise[SchemaEmpty] = js.native
   def decommission(params: ParamsResourceBeaconsDecommission, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def decommission(
@@ -148,7 +147,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBeaconsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceBeaconsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -189,7 +188,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBeacon] = js.native
   def get(callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
   def get(params: ParamsResourceBeaconsGet): GaxiosPromise[SchemaBeacon] = js.native
   def get(params: ParamsResourceBeaconsGet, callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
   def get(
@@ -226,7 +225,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListBeaconsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBeaconsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBeaconsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListBeaconsResponse] = js.native
   def list(params: ParamsResourceBeaconsList): GaxiosPromise[SchemaListBeaconsResponse] = js.native
   def list(params: ParamsResourceBeaconsList, callback: BodyResponseCallback[SchemaListBeaconsResponse]): Unit = js.native
   def list(
@@ -261,7 +260,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def register(): GaxiosPromise[SchemaBeacon] = js.native
   def register(callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
-  def register(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
+  def register(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
   def register(params: ParamsResourceBeaconsRegister): GaxiosPromise[SchemaBeacon] = js.native
   def register(params: ParamsResourceBeaconsRegister, callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
   def register(
@@ -301,7 +300,7 @@ class ResourceBeacons protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaBeacon] = js.native
   def update(callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBeacon] = js.native
   def update(params: ParamsResourceBeaconsUpdate): GaxiosPromise[SchemaBeacon] = js.native
   def update(params: ParamsResourceBeaconsUpdate, callback: BodyResponseCallback[SchemaBeacon]): Unit = js.native
   def update(

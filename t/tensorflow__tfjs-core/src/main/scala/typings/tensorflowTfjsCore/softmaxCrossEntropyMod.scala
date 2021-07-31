@@ -6,212 +6,77 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.lossOpsUtilsMod.Reduction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object softmaxCrossEntropyMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", JSImport.Namespace)
   @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T | TensorLike, logits: T | TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T | TensorLike, logits: T | TensorLike, weights: Unit, labelSmoothing: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: T,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T, weights: js.UndefOr[TensorLike], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: T,
-    weights: js.UndefOr[TensorLike],
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
+    weights: Unit,
     labelSmoothing: Double,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: T,
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
+    weights: Unit,
+    labelSmoothing: Unit,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T | TensorLike, logits: T | TensorLike, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
     weights: Tensor[Rank],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T, weights: Tensor[Rank], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T, weights: Tensor[Rank], labelSmoothing: Double, reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: T, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: js.UndefOr[TensorLike], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: TensorLike,
-    weights: Tensor[Rank],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: Tensor[Rank], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: T,
-    logits: TensorLike,
-    weights: Tensor[Rank],
-    labelSmoothing: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T, logits: TensorLike, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: T): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: T,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: js.UndefOr[TensorLike], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: T,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: T,
-    weights: Tensor[Rank],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: Tensor[Rank], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: T,
-    weights: Tensor[Rank],
-    labelSmoothing: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: T, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: TensorLike,
-    weights: js.UndefOr[TensorLike],
     labelSmoothing: Double
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: TensorLike,
-    weights: js.UndefOr[TensorLike],
-    labelSmoothing: Double,
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: TensorLike,
-    weights: Tensor[Rank],
-    labelSmoothing: js.UndefOr[scala.Nothing],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: Tensor[Rank], labelSmoothing: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    onehotLabels: TensorLike,
-    logits: TensorLike,
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
     weights: Tensor[Rank],
     labelSmoothing: Double,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/softmax_cross_entropy", "softmaxCrossEntropy")
-  @js.native
-  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: TensorLike, logits: TensorLike, weights: TensorLike): O = js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
+    weights: Tensor[Rank],
+    labelSmoothing: Unit,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T | TensorLike, logits: T | TensorLike, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](onehotLabels: T | TensorLike, logits: T | TensorLike, weights: TensorLike, labelSmoothing: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
+    weights: TensorLike,
+    labelSmoothing: Double,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    onehotLabels: T | TensorLike,
+    logits: T | TensorLike,
+    weights: TensorLike,
+    labelSmoothing: Unit,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
 }

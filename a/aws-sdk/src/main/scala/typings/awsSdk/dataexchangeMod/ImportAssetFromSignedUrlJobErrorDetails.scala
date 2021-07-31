@@ -2,13 +2,11 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportAssetFromSignedUrlJobErrorDetails extends StObject {
   
-  var AssetName: typings.awsSdk.dataexchangeMod.AssetName = js.native
+  var AssetName: typings.awsSdk.dataexchangeMod.AssetName
 }
 object ImportAssetFromSignedUrlJobErrorDetails {
   

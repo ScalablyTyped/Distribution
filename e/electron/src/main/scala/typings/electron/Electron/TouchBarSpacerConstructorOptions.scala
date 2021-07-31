@@ -5,16 +5,14 @@ import typings.electron.electronStrings.large
 import typings.electron.electronStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarSpacerConstructorOptions extends StObject {
   
   /**
     * Size of spacer, possible values are:
     */
-  var size: js.UndefOr[small | large | flexible] = js.native
+  var size: js.UndefOr[small | large | flexible] = js.undefined
 }
 object TouchBarSpacerConstructorOptions {
   

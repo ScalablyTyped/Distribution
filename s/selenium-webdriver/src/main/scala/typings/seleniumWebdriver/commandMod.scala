@@ -2,7 +2,6 @@ package typings.seleniumWebdriver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandMod {
@@ -81,244 +80,243 @@ object commandMod {
       * @return {!Promise<?>} A promise that will be fulfilled with
       *     the command result.
       */
-    def execute(command: Command): js.Promise[_] = js.native
+    def execute(command: Command): js.Promise[js.Any] = js.native
   }
   
   @JSImport("selenium-webdriver/lib/command", "Name")
   @js.native
   val Name: ICommandName = js.native
   
-  @js.native
   trait ICommandName extends StObject {
     
-    var ACCEPT_ALERT: String = js.native
+    var ACCEPT_ALERT: String
     
-    var ACTIONS: String = js.native
+    var ACTIONS: String
     
-    var ADD_COOKIE: String = js.native
+    var ADD_COOKIE: String
     
-    var CLEAR_ACTIONS: String = js.native
+    var CLEAR_ACTIONS: String
     
-    var CLEAR_APP_CACHE: String = js.native
+    var CLEAR_APP_CACHE: String
     
-    var CLEAR_ELEMENT: String = js.native
+    var CLEAR_ELEMENT: String
     
-    var CLEAR_LOCAL_STORAGE: String = js.native
+    var CLEAR_LOCAL_STORAGE: String
     
-    var CLEAR_SESSION_STORAGE: String = js.native
+    var CLEAR_SESSION_STORAGE: String
     
     // These belong to the Advanced user interactions - an element is
     // optional for these commands.
-    var CLICK: String = js.native
+    var CLICK: String
     
-    var CLICK_ELEMENT: String = js.native
+    var CLICK_ELEMENT: String
     
-    var CLOSE: String = js.native
+    var CLOSE: String
     
-    var DELETE_ALL_COOKIES: String = js.native
+    var DELETE_ALL_COOKIES: String
     
-    var DELETE_COOKIE: String = js.native
+    var DELETE_COOKIE: String
     
-    var DESCRIBE_SESSION: String = js.native
+    var DESCRIBE_SESSION: String
     
-    var DISMISS_ALERT: String = js.native
+    var DISMISS_ALERT: String
     
-    var DOUBLE_CLICK: String = js.native
+    var DOUBLE_CLICK: String
     
-    var ELEMENT_EQUALS: String = js.native
+    var ELEMENT_EQUALS: String
     
-    var EXECUTE_ASYNC_SCRIPT: String = js.native
+    var EXECUTE_ASYNC_SCRIPT: String
     
-    var EXECUTE_SCRIPT: String = js.native
+    var EXECUTE_SCRIPT: String
     
-    var EXECUTE_SQL: String = js.native
+    var EXECUTE_SQL: String
     
-    var FIND_CHILD_ELEMENT: String = js.native
+    var FIND_CHILD_ELEMENT: String
     
-    var FIND_CHILD_ELEMENTS: String = js.native
+    var FIND_CHILD_ELEMENTS: String
     
-    var FIND_ELEMENT: String = js.native
+    var FIND_ELEMENT: String
     
-    var FIND_ELEMENTS: String = js.native
+    var FIND_ELEMENTS: String
     
-    var GET: String = js.native
+    var GET: String
     
-    var GET_ACTIVE_ELEMENT: String = js.native
+    var GET_ACTIVE_ELEMENT: String
     
-    var GET_ALERT_TEXT: String = js.native
+    var GET_ALERT_TEXT: String
     
-    var GET_ALL_COOKIES: String = js.native
+    var GET_ALL_COOKIES: String
     
-    var GET_APP_CACHE: String = js.native
+    var GET_APP_CACHE: String
     
-    var GET_APP_CACHE_STATUS: String = js.native
+    var GET_APP_CACHE_STATUS: String
     
-    var GET_AVAILABLE_LOG_TYPES: String = js.native
+    var GET_AVAILABLE_LOG_TYPES: String
     
-    var GET_COOKIE: String = js.native
+    var GET_COOKIE: String
     
-    var GET_CURRENT_URL: String = js.native
+    var GET_CURRENT_URL: String
     
-    var GET_CURRENT_WINDOW_HANDLE: String = js.native
+    var GET_CURRENT_WINDOW_HANDLE: String
     
-    var GET_ELEMENT_ATTRIBUTE: String = js.native
+    var GET_ELEMENT_ATTRIBUTE: String
     
-    var GET_ELEMENT_LOCATION: String = js.native
+    var GET_ELEMENT_LOCATION: String
     
-    var GET_ELEMENT_LOCATION_IN_VIEW: String = js.native
+    var GET_ELEMENT_LOCATION_IN_VIEW: String
     
-    var GET_ELEMENT_SIZE: String = js.native
+    var GET_ELEMENT_SIZE: String
     
-    var GET_ELEMENT_TAG_NAME: String = js.native
+    var GET_ELEMENT_TAG_NAME: String
     
-    var GET_ELEMENT_TEXT: String = js.native
+    var GET_ELEMENT_TEXT: String
     
-    var GET_ELEMENT_VALUE_OF_CSS_PROPERTY: String = js.native
+    var GET_ELEMENT_VALUE_OF_CSS_PROPERTY: String
     
-    var GET_LOCAL_STORAGE_ITEM: String = js.native
+    var GET_LOCAL_STORAGE_ITEM: String
     
-    var GET_LOCAL_STORAGE_KEYS: String = js.native
+    var GET_LOCAL_STORAGE_KEYS: String
     
-    var GET_LOCAL_STORAGE_SIZE: String = js.native
+    var GET_LOCAL_STORAGE_SIZE: String
     
-    var GET_LOCATION: String = js.native
+    var GET_LOCATION: String
     
-    var GET_LOG: String = js.native
+    var GET_LOG: String
     
-    var GET_PAGE_SOURCE: String = js.native
+    var GET_PAGE_SOURCE: String
     
-    var GET_SCREEN_ORIENTATION: String = js.native
+    var GET_SCREEN_ORIENTATION: String
     
-    var GET_SERVER_STATUS: String = js.native
+    var GET_SERVER_STATUS: String
     
-    var GET_SESSIONS: String = js.native
+    var GET_SESSIONS: String
     
-    var GET_SESSION_LOGS: String = js.native
+    var GET_SESSION_LOGS: String
     
-    var GET_SESSION_STORAGE_ITEM: String = js.native
+    var GET_SESSION_STORAGE_ITEM: String
     
-    var GET_SESSION_STORAGE_KEYS: String = js.native
+    var GET_SESSION_STORAGE_KEYS: String
     
-    var GET_SESSION_STORAGE_SIZE: String = js.native
+    var GET_SESSION_STORAGE_SIZE: String
     
-    var GET_TITLE: String = js.native
+    var GET_TITLE: String
     
-    var GET_WINDOW_HANDLES: String = js.native
+    var GET_WINDOW_HANDLES: String
     
-    var GET_WINDOW_POSITION: String = js.native
+    var GET_WINDOW_POSITION: String
     
-    var GET_WINDOW_SIZE: String = js.native
+    var GET_WINDOW_SIZE: String
     
-    var GO_BACK: String = js.native
+    var GO_BACK: String
     
-    var GO_FORWARD: String = js.native
+    var GO_FORWARD: String
     
-    var IMPLICITLY_WAIT: String = js.native
+    var IMPLICITLY_WAIT: String
     
-    var IS_BROWSER_ONLINE: String = js.native
+    var IS_BROWSER_ONLINE: String
     
-    var IS_ELEMENT_DISPLAYED: String = js.native
+    var IS_ELEMENT_DISPLAYED: String
     
-    var IS_ELEMENT_ENABLED: String = js.native
+    var IS_ELEMENT_ENABLED: String
     
-    var IS_ELEMENT_SELECTED: String = js.native
+    var IS_ELEMENT_SELECTED: String
     
-    var LEGACY_ACTION_CLICK: String = js.native
+    var LEGACY_ACTION_CLICK: String
     
-    var LEGACY_ACTION_DOUBLE_CLICK: String = js.native
+    var LEGACY_ACTION_DOUBLE_CLICK: String
     
-    var LEGACY_ACTION_MOUSE_DOWN: String = js.native
+    var LEGACY_ACTION_MOUSE_DOWN: String
     
-    var LEGACY_ACTION_MOUSE_MOVE: String = js.native
+    var LEGACY_ACTION_MOUSE_MOVE: String
     
-    var LEGACY_ACTION_MOUSE_UP: String = js.native
+    var LEGACY_ACTION_MOUSE_UP: String
     
-    var LEGACY_ACTION_SEND_KEYS: String = js.native
+    var LEGACY_ACTION_SEND_KEYS: String
     
-    var LEGACY_ACTION_TOUCH_DOUBLE_TAP: String = js.native
+    var LEGACY_ACTION_TOUCH_DOUBLE_TAP: String
     
-    var LEGACY_ACTION_TOUCH_DOWN: String = js.native
+    var LEGACY_ACTION_TOUCH_DOWN: String
     
-    var LEGACY_ACTION_TOUCH_FLICK: String = js.native
+    var LEGACY_ACTION_TOUCH_FLICK: String
     
-    var LEGACY_ACTION_TOUCH_LONG_PRESS: String = js.native
+    var LEGACY_ACTION_TOUCH_LONG_PRESS: String
     
-    var LEGACY_ACTION_TOUCH_MOVE: String = js.native
+    var LEGACY_ACTION_TOUCH_MOVE: String
     
-    var LEGACY_ACTION_TOUCH_SCROLL: String = js.native
+    var LEGACY_ACTION_TOUCH_SCROLL: String
     
-    var LEGACY_ACTION_TOUCH_SINGLE_TAP: String = js.native
+    var LEGACY_ACTION_TOUCH_SINGLE_TAP: String
     
-    var LEGACY_ACTION_TOUCH_UP: String = js.native
+    var LEGACY_ACTION_TOUCH_UP: String
     
-    var MAXIMIZE_WINDOW: String = js.native
+    var MAXIMIZE_WINDOW: String
     
-    var MOUSE_DOWN: String = js.native
+    var MOUSE_DOWN: String
     
-    var MOUSE_UP: String = js.native
+    var MOUSE_UP: String
     
-    var MOVE_TO: String = js.native
+    var MOVE_TO: String
     
-    var NEW_SESSION: String = js.native
+    var NEW_SESSION: String
     
-    var QUIT: String = js.native
+    var QUIT: String
     
-    var REFRESH: String = js.native
+    var REFRESH: String
     
-    var REMOVE_LOCAL_STORAGE_ITEM: String = js.native
+    var REMOVE_LOCAL_STORAGE_ITEM: String
     
-    var REMOVE_SESSION_STORAGE_ITEM: String = js.native
+    var REMOVE_SESSION_STORAGE_ITEM: String
     
-    var SCREENSHOT: String = js.native
+    var SCREENSHOT: String
     
-    var SEND_KEYS_TO_ACTIVE_ELEMENT: String = js.native
+    var SEND_KEYS_TO_ACTIVE_ELEMENT: String
     
-    var SEND_KEYS_TO_ELEMENT: String = js.native
+    var SEND_KEYS_TO_ELEMENT: String
     
-    var SET_ALERT_TEXT: String = js.native
+    var SET_ALERT_TEXT: String
     
-    var SET_BROWSER_ONLINE: String = js.native
+    var SET_BROWSER_ONLINE: String
     
-    var SET_LOCAL_STORAGE_ITEM: String = js.native
+    var SET_LOCAL_STORAGE_ITEM: String
     
-    var SET_LOCATION: String = js.native
+    var SET_LOCATION: String
     
-    var SET_SCREEN_ORIENTATION: String = js.native
+    var SET_SCREEN_ORIENTATION: String
     
-    var SET_SCRIPT_TIMEOUT: String = js.native
+    var SET_SCRIPT_TIMEOUT: String
     
-    var SET_SESSION_STORAGE_ITEM: String = js.native
+    var SET_SESSION_STORAGE_ITEM: String
     
-    var SET_TIMEOUT: String = js.native
+    var SET_TIMEOUT: String
     
-    var SET_WINDOW_POSITION: String = js.native
+    var SET_WINDOW_POSITION: String
     
-    var SET_WINDOW_SIZE: String = js.native
+    var SET_WINDOW_SIZE: String
     
-    var SUBMIT_ELEMENT: String = js.native
+    var SUBMIT_ELEMENT: String
     
-    var SWITCH_TO_FRAME: String = js.native
+    var SWITCH_TO_FRAME: String
     
-    var SWITCH_TO_WINDOW: String = js.native
+    var SWITCH_TO_WINDOW: String
     
-    var TOUCH_DOUBLE_TAP: String = js.native
+    var TOUCH_DOUBLE_TAP: String
     
-    var TOUCH_DOWN: String = js.native
+    var TOUCH_DOWN: String
     
-    var TOUCH_FLICK: String = js.native
+    var TOUCH_FLICK: String
     
-    var TOUCH_LONG_PRESS: String = js.native
+    var TOUCH_LONG_PRESS: String
     
-    var TOUCH_MOVE: String = js.native
+    var TOUCH_MOVE: String
     
-    var TOUCH_SCROLL: String = js.native
+    var TOUCH_SCROLL: String
     
     // These belong to the Advanced Touch API
-    var TOUCH_SINGLE_TAP: String = js.native
+    var TOUCH_SINGLE_TAP: String
     
-    var TOUCH_UP: String = js.native
+    var TOUCH_UP: String
     
-    var UPLOAD_FILE: String = js.native
+    var UPLOAD_FILE: String
   }
   object ICommandName {
     

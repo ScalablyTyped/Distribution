@@ -2,21 +2,19 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsRequest extends StObject {
   
   /**
     * The ID of the file system whose tags you want to delete (String).
     */
-  var FileSystemId: typings.awsSdk.efsMod.FileSystemId = js.native
+  var FileSystemId: typings.awsSdk.efsMod.FileSystemId
   
   /**
     * A list of tag keys to delete.
     */
-  var TagKeys: typings.awsSdk.efsMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.efsMod.TagKeys
 }
 object DeleteTagsRequest {
   

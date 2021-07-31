@@ -3,7 +3,6 @@ package typings.storybookComponents
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object descriptionMod {
@@ -12,10 +11,9 @@ object descriptionMod {
   @js.native
   val Description: FunctionComponent[DescriptionProps] = js.native
   
-  @js.native
   trait DescriptionProps extends StObject {
     
-    var markdown: String = js.native
+    var markdown: String
   }
   object DescriptionProps {
     

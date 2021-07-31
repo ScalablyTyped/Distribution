@@ -2,10 +2,13 @@ package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object langsMod {
+  
+  @JSImport("app-builder-lib/out/util/langs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/util/langs", "bundledLanguages")
   @js.native
@@ -1127,7 +1130,6 @@ object langsMod {
   @js.native
   val lcid: js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/langs", "toLangWithRegion")
-  @js.native
-  def toLangWithRegion(lang: String): String = js.native
+  @scala.inline
+  def toLangWithRegion(lang: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLangWithRegion")(lang.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -3,11 +3,11 @@ package typings.miniprogram
 import typings.miniprogram.anon.AuthCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAuthCodeArgs extends AsyncCallback[AuthCode] {
+trait GetAuthCodeArgs
+  extends StObject
+     with AsyncCallback[AuthCode] {
   
   /**
     * The scope of auth, there are 12 types:
@@ -22,7 +22,7 @@ trait GetAuthCodeArgs extends AsyncCallback[AuthCode] {
     * `auth_base`,
     * `auth_user`.
     */
-  var scopes: String | js.Array[String] = js.native
+  var scopes: String | js.Array[String]
 }
 object GetAuthCodeArgs {
   

@@ -6,7 +6,6 @@ import typings.std.WebGLContextEvent
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,27 +21,28 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait AbstractMaskSystem extends System {
+  trait AbstractMaskSystem
+    extends StObject
+       with System {
     
     /**
       * gets count of masks of certain type
       * @returns {number}
       */
-    def getStackLength(): Double = js.native
+    def getStackLength(): Double
     
     /**
       * The mask stack
       * @member {PIXI.MaskData[]} PIXI.systems.AbstractMaskSystem#maskStack
       */
-    var maskStack: js.Array[MaskData] = js.native
+    var maskStack: js.Array[MaskData]
     
     /**
       * Changes the mask stack that is used by this System.
       *
       * @param {PIXI.MaskData[]} maskStack - The mask stack
       */
-    def setMaskStack(maskStack: js.Array[MaskData]): Unit = js.native
+    def setMaskStack(maskStack: js.Array[MaskData]): Unit
   }
   object AbstractMaskSystem {
     
@@ -82,8 +82,9 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait BatchSystem extends System {
+  trait BatchSystem
+    extends StObject
+       with System {
     
     /**
       * Assigns batch locations to textures in array based on boundTextures state.
@@ -100,7 +101,7 @@ object systems {
       boundTextures: js.Array[BaseTexture],
       batchId: Double,
       maxTextures: Double
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Handy function for batch renderers: copies bound textures in first maxTextures locations to array
@@ -109,39 +110,39 @@ object systems {
       * @param {PIXI.BaseTexture[]} - arr copy destination
       * @param {number} maxTextures - number of copied elements
       */
-    def copyBoundTextures(arr: js.Array[BaseTexture], maxTextures: Double): Unit = js.native
+    def copyBoundTextures(arr: js.Array[BaseTexture], maxTextures: Double): Unit
     
     /**
       * The currently active ObjectRenderer.
       *
       * @member {PIXI.ObjectRenderer} PIXI.systems.BatchSystem#currentRenderer
       */
-    var currentRenderer: ObjectRenderer = js.native
+    var currentRenderer: ObjectRenderer
     
     /**
       * An empty renderer.
       *
       * @member {PIXI.ObjectRenderer} PIXI.systems.BatchSystem#emptyRenderer
       */
-    var emptyRenderer: ObjectRenderer = js.native
+    var emptyRenderer: ObjectRenderer
     
     /**
       * This should be called if you wish to do some custom rendering
       * It will basically render anything that may be batched up such as sprites
       */
-    def flush(): Unit = js.native
+    def flush(): Unit
     
     /**
       * Reset the system to an empty renderer
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * Changes the current renderer to the one given in parameter
       *
       * @param {PIXI.ObjectRenderer} objectRenderer - The object renderer to use.
       */
-    def setObjectRenderer(objectRenderer: ObjectRenderer): Unit = js.native
+    def setObjectRenderer(objectRenderer: ObjectRenderer): Unit
   }
   object BatchSystem {
     
@@ -194,14 +195,15 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait ContextSystem extends System {
+  trait ContextSystem
+    extends StObject
+       with System {
     
     /**
       * Handle the context change event
       * @param {WebGLRenderingContext} gl - new webgl context
       */
-    def contextChange(gl: WebGLRenderingContext): Unit = js.native
+    def contextChange(gl: WebGLRenderingContext): Unit
     
     /**
       * Helper class to create a WebGL Context
@@ -211,7 +213,7 @@ object systems {
       * @see https://developer.mozilla.org/en/docs/Web/API/HTMLCanvasElement/getContext
       * @return {WebGLRenderingContext} the WebGL context
       */
-    def createContext(canvas: HTMLCanvasElement, options: js.Any): WebGLRenderingContext = js.native
+    def createContext(canvas: HTMLCanvasElement, options: js.Any): WebGLRenderingContext
     
     /**
       * Extensions being used
@@ -224,14 +226,14 @@ object systems {
       * @property {OES_vertex_array_object} vertexArrayObject - WebGL v1 extension
       * @property {EXT_texture_filter_anisotropic} anisotropicFiltering - WebGL v1 and v2 extension
       */
-    val extensions: AnisotropicFiltering = js.native
+    val extensions: AnisotropicFiltering
     
     /**
       * Auto-populate the extensions
       *
       * @protected
       */
-    /* protected */ def getExtensions(): Unit = js.native
+    /* protected */ def getExtensions(): Unit
     
     /**
       * Handles a lost webgl context
@@ -239,14 +241,14 @@ object systems {
       * @protected
       * @param {WebGLContextEvent} event - The context lost event.
       */
-    /* protected */ def handleContextLost(event: WebGLContextEvent): Unit = js.native
+    /* protected */ def handleContextLost(event: WebGLContextEvent): Unit
     
     /**
       * Handles a restored webgl context
       *
       * @protected
       */
-    /* protected */ def handleContextRestored(): Unit = js.native
+    /* protected */ def handleContextRestored(): Unit
     
     /**
       * Initialize the context
@@ -254,7 +256,7 @@ object systems {
       * @protected
       * @param {WebGLRenderingContext} gl - WebGL context
       */
-    /* protected */ def initFromContext(gl: WebGLRenderingContext): Unit = js.native
+    /* protected */ def initFromContext(gl: WebGLRenderingContext): Unit
     
     /**
       * Initialize from context options
@@ -263,21 +265,21 @@ object systems {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
       * @param {object} options - context attributes
       */
-    /* protected */ def initFromOptions(options: js.Any): Unit = js.native
+    /* protected */ def initFromOptions(options: js.Any): Unit
     
     /**
       * `true` if the context is lost
       * @member {boolean}
       * @readonly
       */
-    val isLost: Boolean = js.native
+    val isLost: Boolean
     
     /**
       * Handle the post-render runner event
       *
       * @protected
       */
-    /* protected */ def postrender(): Unit = js.native
+    /* protected */ def postrender(): Unit
     
     /**
       * Validate context
@@ -285,14 +287,14 @@ object systems {
       * @protected
       * @param {WebGLRenderingContext} gl - Render context
       */
-    /* protected */ def validateContext(gl: WebGLRenderingContext): Unit = js.native
+    /* protected */ def validateContext(gl: WebGLRenderingContext): Unit
     
     /**
       * Either 1 or 2 to reflect the WebGL version being used
       * @member {number} PIXI.systems.ContextSystem#webGLVersion
       * @readonly
       */
-    val webGLVersion: Double = js.native
+    val webGLVersion: Double
   }
   object ContextSystem {
     
@@ -366,7 +368,9 @@ object systems {
     * @extends PIXI.System
     */
   @js.native
-  trait FilterSystem extends System {
+  trait FilterSystem
+    extends StObject
+       with System {
     
     /**
       * Active state
@@ -409,7 +413,7 @@ object systems {
       * @member {Object[]} PIXI.systems.FilterSystem#defaultFilterStack
       * @readonly
       */
-    val defaultFilterStack: js.Array[_] = js.native
+    val defaultFilterStack: js.Array[js.Any] = js.native
     
     /**
       * Empties the texture pool.
@@ -431,7 +435,7 @@ object systems {
       * @returns {PIXI.RenderTexture}
       */
     def getFilterTexture(): RenderTexture = js.native
-    def getFilterTexture(input: js.UndefOr[scala.Nothing], resolution: Double): RenderTexture = js.native
+    def getFilterTexture(input: Unit, resolution: Double): RenderTexture = js.native
     def getFilterTexture(input: RenderTexture): RenderTexture = js.native
     def getFilterTexture(input: RenderTexture, resolution: Double): RenderTexture = js.native
     
@@ -502,7 +506,7 @@ object systems {
       * a pool for storing filter states, save us creating new ones each tick
       * @member {Object[]} PIXI.systems.FilterSystem#statePool
       */
-    var statePool: js.Array[_] = js.native
+    var statePool: js.Array[js.Any] = js.native
     
     /**
       * Temporary rect for maths
@@ -533,7 +537,9 @@ object systems {
     * @memberof PIXI.systems
     */
   @js.native
-  trait FramebufferSystem extends System {
+  trait FramebufferSystem
+    extends StObject
+       with System {
     
     /**
       * Bind a framebuffer
@@ -557,15 +563,11 @@ object systems {
       * @param {PIXI.Rectangle} [destPixels] - dest rectangle in pixels, assumed to be the same as sourcePixels
       */
     def blit(): Unit = js.native
-    def blit(
-      framebuffer: js.UndefOr[scala.Nothing],
-      sourcePixels: js.UndefOr[scala.Nothing],
-      destPixels: Rectangle
-    ): Unit = js.native
-    def blit(framebuffer: js.UndefOr[scala.Nothing], sourcePixels: Rectangle): Unit = js.native
-    def blit(framebuffer: js.UndefOr[scala.Nothing], sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
+    def blit(framebuffer: Unit, sourcePixels: Unit, destPixels: Rectangle): Unit = js.native
+    def blit(framebuffer: Unit, sourcePixels: Rectangle): Unit = js.native
+    def blit(framebuffer: Unit, sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
     def blit(framebuffer: Framebuffer): Unit = js.native
-    def blit(framebuffer: Framebuffer, sourcePixels: js.UndefOr[scala.Nothing], destPixels: Rectangle): Unit = js.native
+    def blit(framebuffer: Framebuffer, sourcePixels: Unit, destPixels: Rectangle): Unit = js.native
     def blit(framebuffer: Framebuffer, sourcePixels: Rectangle): Unit = js.native
     def blit(framebuffer: Framebuffer, sourcePixels: Rectangle, destPixels: Rectangle): Unit = js.native
     
@@ -683,7 +685,9 @@ object systems {
     * @memberof PIXI.systems
     */
   @js.native
-  trait GeometrySystem extends System {
+  trait GeometrySystem
+    extends StObject
+       with System {
     
     /**
       * Activate vertex array object
@@ -755,18 +759,13 @@ object systems {
       * @param {Number} [instanceCount] - the number of instances of the set of elements to execute
       */
     def draw(`type`: Double): Unit = js.native
-    def draw(
-      `type`: Double,
-      size: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      instanceCount: Double
-    ): Unit = js.native
-    def draw(`type`: Double, size: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
-    def draw(`type`: Double, size: js.UndefOr[scala.Nothing], start: Double, instanceCount: Double): Unit = js.native
     def draw(`type`: Double, size: Double): Unit = js.native
-    def draw(`type`: Double, size: Double, start: js.UndefOr[scala.Nothing], instanceCount: Double): Unit = js.native
     def draw(`type`: Double, size: Double, start: Double): Unit = js.native
     def draw(`type`: Double, size: Double, start: Double, instanceCount: Double): Unit = js.native
+    def draw(`type`: Double, size: Double, start: Unit, instanceCount: Double): Unit = js.native
+    def draw(`type`: Double, size: Unit, start: Double): Unit = js.native
+    def draw(`type`: Double, size: Unit, start: Double, instanceCount: Double): Unit = js.native
+    def draw(`type`: Double, size: Unit, start: Unit, instanceCount: Double): Unit = js.native
     
     /**
       * Takes a geometry and program and generates a unique signature for them.
@@ -842,7 +841,9 @@ object systems {
     * @memberof PIXI.systems
     */
   @js.native
-  trait MaskSystem extends System {
+  trait MaskSystem
+    extends StObject
+       with System {
     
     /**
       * Current index of alpha mask pool
@@ -926,8 +927,9 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait ProjectionSystem extends System {
+  trait ProjectionSystem
+    extends StObject
+       with System {
     
     /**
       * Updates the projection matrix based on a projection frame (which is a rectangle)
@@ -937,49 +939,49 @@ object systems {
       * @param {Number} resolution - Resolution
       * @param {boolean} root - If is root
       */
-    def calculateProjection(destinationFrame: Rectangle, sourceFrame: Rectangle, resolution: Double, root: Boolean): Unit = js.native
+    def calculateProjection(destinationFrame: Rectangle, sourceFrame: Rectangle, resolution: Double, root: Boolean): Unit
     
     /**
       * Default destination frame
       * @member {PIXI.Rectangle} PIXI.systems.ProjectionSystem#defaultFrame
       * @readonly
       */
-    val defaultFrame: Rectangle = js.native
+    val defaultFrame: Rectangle
     
     /**
       * Destination frame
       * @member {PIXI.Rectangle} PIXI.systems.ProjectionSystem#destinationFrame
       * @readonly
       */
-    val destinationFrame: Rectangle = js.native
+    val destinationFrame: Rectangle
     
     /**
       * Project matrix
       * @member {PIXI.Matrix} PIXI.systems.ProjectionSystem#projectionMatrix
       * @readonly
       */
-    val projectionMatrix: Matrix = js.native
+    val projectionMatrix: Matrix
     
     /**
       * Sets the transform of the active render target to the given matrix
       *
       * @param {PIXI.Matrix} matrix - The transformation matrix
       */
-    def setTransform(matrix: Matrix): Unit = js.native
+    def setTransform(matrix: Matrix): Unit
     
     /**
       * Source frame
       * @member {PIXI.Rectangle} PIXI.systems.ProjectionSystem#sourceFrame
       * @readonly
       */
-    val sourceFrame: Rectangle = js.native
+    val sourceFrame: Rectangle
     
     /**
       * A transform that will be appended to the projection matrix
       * if null, nothing will be applied
       * @member {PIXI.Matrix} PIXI.systems.ProjectionSystem#transform
       */
-    var transform: Matrix = js.native
+    var transform: Matrix
     
     /**
       * Updates the projection matrix based on a projection frame (which is a rectangle).
@@ -991,7 +993,7 @@ object systems {
       * @param {Number} resolution - Resolution
       * @param {boolean} root - If is root
       */
-    def update(destinationFrame: Rectangle, sourceFrame: Rectangle, resolution: Double, root: Boolean): Unit = js.native
+    def update(destinationFrame: Rectangle, sourceFrame: Rectangle, resolution: Double, root: Boolean): Unit
   }
   object ProjectionSystem {
     
@@ -1051,7 +1053,9 @@ object systems {
     * @memberof PIXI.systems
     */
   @js.native
-  trait RenderTextureSystem extends System {
+  trait RenderTextureSystem
+    extends StObject
+       with System {
     
     /**
       * Bind the current render texture
@@ -1061,15 +1065,11 @@ object systems {
       * @param {PIXI.Rectangle} [destinationFrame] - part of renderTexture, by default it has the same size as sourceFrame
       */
     def bind(): Unit = js.native
-    def bind(
-      renderTexture: js.UndefOr[scala.Nothing],
-      sourceFrame: js.UndefOr[scala.Nothing],
-      destinationFrame: Rectangle
-    ): Unit = js.native
-    def bind(renderTexture: js.UndefOr[scala.Nothing], sourceFrame: Rectangle): Unit = js.native
-    def bind(renderTexture: js.UndefOr[scala.Nothing], sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
+    def bind(renderTexture: Unit, sourceFrame: Unit, destinationFrame: Rectangle): Unit = js.native
+    def bind(renderTexture: Unit, sourceFrame: Rectangle): Unit = js.native
+    def bind(renderTexture: Unit, sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
     def bind(renderTexture: RenderTexture): Unit = js.native
-    def bind(renderTexture: RenderTexture, sourceFrame: js.UndefOr[scala.Nothing], destinationFrame: Rectangle): Unit = js.native
+    def bind(renderTexture: RenderTexture, sourceFrame: Unit, destinationFrame: Rectangle): Unit = js.native
     def bind(renderTexture: RenderTexture, sourceFrame: Rectangle): Unit = js.native
     def bind(renderTexture: RenderTexture, sourceFrame: Rectangle, destinationFrame: Rectangle): Unit = js.native
     
@@ -1082,9 +1082,9 @@ object systems {
       * @return {PIXI.Renderer} Returns itself.
       */
     def clear(): Renderer = js.native
-    def clear(clearColor: js.UndefOr[scala.Nothing], mask: BUFFER_BITS): Renderer = js.native
     def clear(clearColor: js.Array[Double]): Renderer = js.native
     def clear(clearColor: js.Array[Double], mask: BUFFER_BITS): Renderer = js.native
+    def clear(clearColor: Unit, mask: BUFFER_BITS): Renderer = js.native
     
     /**
       * The clear background color as rgba
@@ -1133,20 +1133,21 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait ScissorSystem extends System {
+  trait ScissorSystem
+    extends StObject
+       with System {
     
     /**
       * Pops scissor mask. MaskData is already removed from stack
       */
-    def pop(): Unit = js.native
+    def pop(): Unit
     
     /**
       * Applies the Mask and adds it to the current stencil stack. @alvin
       *
       * @param {PIXI.MaskData} maskData - The mask data
       */
-    def push(maskData: MaskData): Unit = js.native
+    def push(maskData: MaskData): Unit
   }
   object ScissorSystem {
     
@@ -1175,7 +1176,9 @@ object systems {
     * @extends PIXI.System
     */
   @js.native
-  trait ShaderSystem extends System {
+  trait ShaderSystem
+    extends StObject
+       with System {
     
     /**
       * Changes the current shader to the one given in parameter
@@ -1231,15 +1234,16 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait StateSystem extends System {
+  trait StateSystem
+    extends StObject
+       with System {
     
     /**
       * Whether current blend equation is different
       * @member {boolean} PIXI.systems.StateSystem#_blendEq
       * @protected
       */
-    var _blendEq: Boolean = js.native
+    var _blendEq: Boolean
     
     /**
       * Blend mode
@@ -1247,103 +1251,103 @@ object systems {
       * @default PIXI.BLEND_MODES.NONE
       * @readonly
       */
-    val blendMode: Double = js.native
+    val blendMode: Double
     
     /**
       * Collection of check calls
       * @member {function[]} PIXI.systems.StateSystem#checks
       * @readonly
       */
-    val checks: js.Array[js.Function1[/* repeated */ _, _]] = js.native
+    val checks: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]
     
     /**
       * Default WebGL State
       * @member {PIXI.State} PIXI.systems.StateSystem#defaultState
       * @readonly
       */
-    val defaultState: State = js.native
+    val defaultState: State
     
     /**
       * Sets the state, when previous state is unknown
       *
       * @param {*} state - The state to set
       */
-    def forceState(state: js.Any): Unit = js.native
+    def forceState(state: js.Any): Unit
     
     /**
       * GL context
       * @member {WebGLRenderingContext} PIXI.systems.StateSystem#gl
       * @readonly
       */
-    val gl: WebGLRenderingContext = js.native
+    val gl: WebGLRenderingContext
     
     /**
       * Collection of calls
       * @member {function[]} PIXI.systems.StateSystem#map
       * @readonly
       */
-    val map: js.Array[js.Function1[/* repeated */ _, _]] = js.native
+    val map: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]
     
     /**
       * Polygon offset
       * @member {number} PIXI.systems.StateSystem#polygonOffset
       * @readonly
       */
-    val polygonOffset: Double = js.native
+    val polygonOffset: Double
     
     /**
       * Resets all the logic and disables the vaos
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * Sets the current state
       *
       * @param {*} state - The state to set.
       */
-    def set(state: js.Any): Unit = js.native
+    def set(state: js.Any): Unit
     
     /**
       * Enables or disabled blending.
       *
       * @param {boolean} value - Turn on or off webgl blending.
       */
-    def setBlend(value: Boolean): Unit = js.native
+    def setBlend(value: Boolean): Unit
     
     /**
       * Sets the blend mode.
       *
       * @param {number} value - The blend mode to set to.
       */
-    def setBlendMode(value: Double): Unit = js.native
+    def setBlendMode(value: Double): Unit
     
     /**
       * Sets whether to enable or disable cull face.
       *
       * @param {boolean} value - Turn on or off webgl cull face.
       */
-    def setCullFace(value: Boolean): Unit = js.native
+    def setCullFace(value: Boolean): Unit
     
     /**
       * Sets whether to enable or disable depth test.
       *
       * @param {boolean} value - Turn on or off webgl depth testing.
       */
-    def setDepthTest(value: Boolean): Unit = js.native
+    def setDepthTest(value: Boolean): Unit
     
     /**
       * Sets the gl front face.
       *
       * @param {boolean} value - true is clockwise and false is counter-clockwise
       */
-    def setFrontFace(value: Boolean): Unit = js.native
+    def setFrontFace(value: Boolean): Unit
     
     /**
       * Enables or disable polygon offset fill
       *
       * @param {boolean} value - Turn on or off webgl polygon offset testing.
       */
-    def setOffset(value: Boolean): Unit = js.native
+    def setOffset(value: Boolean): Unit
     
     /**
       * Sets the polygon offset.
@@ -1351,14 +1355,14 @@ object systems {
       * @param {number} value - the polygon offset
       * @param {number} scale - the polygon offset scale
       */
-    def setPolygonOffset(value: Double, scale: Double): Unit = js.native
+    def setPolygonOffset(value: Double, scale: Double): Unit
     
     /**
       * State ID
       * @member {number} PIXI.systems.StateSystem#stateId
       * @readonly
       */
-    val stateId: Double = js.native
+    val stateId: Double
     
     /**
       * checks to see which updates should be checked based on which settings have been activated.
@@ -1369,7 +1373,7 @@ object systems {
       * @param {Function} func - the checking function to add or remove
       * @param {boolean} value - should the check function be added or removed.
       */
-    def updateCheck(func: js.Function1[/* repeated */ js.Any, _], value: Boolean): Unit = js.native
+    def updateCheck(func: js.Function1[/* repeated */ js.Any, js.Any], value: Boolean): Unit
   }
   object StateSystem {
     
@@ -1377,12 +1381,12 @@ object systems {
     def apply(
       _blendEq: Boolean,
       blendMode: Double,
-      checks: js.Array[js.Function1[/* repeated */ _, _]],
+      checks: js.Array[js.Function1[/* repeated */ js.Any, js.Any]],
       defaultState: State,
       destroy: () => Unit,
       forceState: js.Any => Unit,
       gl: WebGLRenderingContext,
-      map: js.Array[js.Function1[/* repeated */ _, _]],
+      map: js.Array[js.Function1[/* repeated */ js.Any, js.Any]],
       polygonOffset: Double,
       renderer: Renderer,
       reset: () => Unit,
@@ -1395,7 +1399,7 @@ object systems {
       setOffset: Boolean => Unit,
       setPolygonOffset: (Double, Double) => Unit,
       stateId: Double,
-      updateCheck: (js.Function1[/* repeated */ js.Any, _], Boolean) => Unit
+      updateCheck: (js.Function1[/* repeated */ js.Any, js.Any], Boolean) => Unit
     ): StateSystem = {
       val __obj = js.Dynamic.literal(_blendEq = _blendEq.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], checks = checks.asInstanceOf[js.Any], defaultState = defaultState.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), forceState = js.Any.fromFunction1(forceState), gl = gl.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], polygonOffset = polygonOffset.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction1(set), setBlend = js.Any.fromFunction1(setBlend), setBlendMode = js.Any.fromFunction1(setBlendMode), setCullFace = js.Any.fromFunction1(setCullFace), setDepthTest = js.Any.fromFunction1(setDepthTest), setFrontFace = js.Any.fromFunction1(setFrontFace), setOffset = js.Any.fromFunction1(setOffset), setPolygonOffset = js.Any.fromFunction2(setPolygonOffset), stateId = stateId.asInstanceOf[js.Any], updateCheck = js.Any.fromFunction2(updateCheck))
       __obj.asInstanceOf[StateSystem]
@@ -1408,10 +1412,10 @@ object systems {
       def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChecks(value: js.Array[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+      def setChecks(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setChecksVarargs(value: (js.Function1[js.Any, js.Any])*): Self = StObject.set(x, "checks", js.Array(value :_*))
+      def setChecksVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "checks", js.Array(value :_*))
       
       @scala.inline
       def setDefaultState(value: State): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
@@ -1423,10 +1427,10 @@ object systems {
       def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMap(value: js.Array[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      def setMap(value: js.Array[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMapVarargs(value: (js.Function1[js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
+      def setMapVarargs(value: (js.Function1[/* repeated */ js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
       
       @scala.inline
       def setPolygonOffset(value: Double): Self = StObject.set(x, "polygonOffset", value.asInstanceOf[js.Any])
@@ -1462,7 +1466,7 @@ object systems {
       def setStateId(value: Double): Self = StObject.set(x, "stateId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setUpdateCheck(value: (js.Function1[/* repeated */ js.Any, _], Boolean) => Unit): Self = StObject.set(x, "updateCheck", js.Any.fromFunction2(value))
+      def setUpdateCheck(value: (js.Function1[/* repeated */ js.Any, js.Any], Boolean) => Unit): Self = StObject.set(x, "updateCheck", js.Any.fromFunction2(value))
       
       @scala.inline
       def set_blendEq(value: Boolean): Self = StObject.set(x, "_blendEq", value.asInstanceOf[js.Any])
@@ -1476,22 +1480,23 @@ object systems {
     * @extends PIXI.System
     * @memberof PIXI.systems
     */
-  @js.native
-  trait StencilSystem extends System {
+  trait StencilSystem
+    extends StObject
+       with System {
     
     /**
       * Pops stencil mask. MaskData is already removed from stack
       *
       * @param {PIXI.DisplayObject} maskObject - object of popped mask data
       */
-    def pop(maskObject: DisplayObject): Unit = js.native
+    def pop(maskObject: DisplayObject): Unit
     
     /**
       * Applies the Mask and adds it to the current stencil stack.
       *
       * @param {PIXI.MaskData} maskData - The mask data
       */
-    def push(maskData: MaskData): Unit = js.native
+    def push(maskData: MaskData): Unit
   }
   object StencilSystem {
     
@@ -1520,62 +1525,63 @@ object systems {
     * @memberof PIXI.systems
     * @extends PIXI.System
     */
-  @js.native
-  trait TextureGCSystem extends System {
+  trait TextureGCSystem
+    extends StObject
+       with System {
     
     /**
       * Check count
       * @member {number} PIXI.systems.TextureGCSystem#checkCount
       * @readonly
       */
-    val checkCount: Double = js.native
+    val checkCount: Double
     
     /**
       * Maximum number of item to check
       * @member {number} PIXI.systems.TextureGCSystem#checkCountMax
       * @see PIXI.settings.GC_MAX_CHECK_COUNT
       */
-    var checkCountMax: Double = js.native
+    var checkCountMax: Double
     
     /**
       * Count
       * @member {number} PIXI.systems.TextureGCSystem#count
       * @readonly
       */
-    val count: Double = js.native
+    val count: Double
     
     /**
       * Maximum idle time, in seconds
       * @member {number} PIXI.systems.TextureGCSystem#maxIdle
       * @see PIXI.settings.GC_MAX_IDLE
       */
-    var maxIdle: Double = js.native
+    var maxIdle: Double
     
     /**
       * Current garabage collection mode
       * @member {PIXI.GC_MODES} PIXI.systems.TextureGCSystem#mode
       * @see PIXI.settings.GC_MODE
       */
-    var mode: GC_MODES = js.native
+    var mode: GC_MODES
     
     /**
       * Checks to see when the last time a texture was used
       * if the texture has not been used for a specified amount of time it will be removed from the GPU
       */
-    def postrender(): Unit = js.native
+    def postrender(): Unit
     
     /**
       * Checks to see when the last time a texture was used
       * if the texture has not been used for a specified amount of time it will be removed from the GPU
       */
-    def run(): Unit = js.native
+    def run(): Unit
     
     /**
       * Removes all the textures within the specified displayObject and its children from the GPU
       *
       * @param {PIXI.DisplayObject} displayObject - the displayObject to remove the textures from.
       */
-    def unload(displayObject: DisplayObject): Unit = js.native
+    def unload(displayObject: DisplayObject): Unit
   }
   object TextureGCSystem {
     
@@ -1633,7 +1639,9 @@ object systems {
     * @memberof PIXI.systems
     */
   @js.native
-  trait TextureSystem extends System {
+  trait TextureSystem
+    extends StObject
+       with System {
     
     def bind(texture_ : BaseTexture): Unit = js.native
     def bind(texture_ : BaseTexture, location: Double): Unit = js.native

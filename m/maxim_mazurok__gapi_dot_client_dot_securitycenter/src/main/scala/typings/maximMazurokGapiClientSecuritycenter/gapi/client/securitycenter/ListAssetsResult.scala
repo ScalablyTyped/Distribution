@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssetsResult extends StObject {
   
   /** Asset matching the search request. */
-  var asset: js.UndefOr[Asset] = js.native
+  var asset: js.UndefOr[Asset] = js.undefined
   
   /** State change of the asset between the points in time. */
-  var stateChange: js.UndefOr[String] = js.native
+  var stateChange: js.UndefOr[String] = js.undefined
 }
 object ListAssetsResult {
   

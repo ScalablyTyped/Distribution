@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersFooters extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: WdHeaderFooterIndex): HeaderFooter = js.native
+  def Item(Index: WdHeaderFooterIndex): HeaderFooter
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.HeadersFooters_typekey")
-  var WordDotHeadersFooters_typekey: HeadersFooters = js.native
+  var WordDotHeadersFooters_typekey: HeadersFooters
 }
 object HeadersFooters {
   

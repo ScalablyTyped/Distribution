@@ -110,7 +110,6 @@ import typings.semanticUiSidebar.semanticUiSidebarStrings.verbose
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -163,59 +162,64 @@ object SemanticUI {
       * Hides sidebar
       */
     def apply(behavior: hide): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
+    def apply(behavior: setting, name: closable, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: defaultTransition, value: Unit): DefaultTransitionSettings = js.native
     def apply(behavior: setting, name: defaultTransition, value: DefaultTransitionSettings): JQuery = js.native
-    def apply(behavior: setting, name: delaySetup, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: delaySetup, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: dimPage, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: delaySetup, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: dimPage, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: dimPage, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
     def apply(behavior: setting, name: easing, value: String): JQuery = js.native
+    def apply(behavior: setting, name: easing, value: Unit): String = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: exclusive, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: exclusive, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: mobileTransition, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: exclusive, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: mobileTransition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: mobileTransition, value: Unit): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onChange, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onChange, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onChange, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHidden, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: regExp, value: Unit): RegExpSettings = js.native
     def apply(behavior: setting, name: regExp, value: RegExpSettings): JQuery = js.native
-    def apply(behavior: setting, name: returnScroll, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: returnScroll, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: scrollLock, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: returnScroll, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: scrollLock, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: scrollLock, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
-    def apply(behavior: setting, name: useLegacy, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
+    def apply(behavior: setting, name: transition, value: Unit): String = js.native
     def apply(behavior: setting, name: useLegacy, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: useLegacy, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: useLegacy, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: SidebarSettings): JQuery = js.native
     /**
       * Shows sidebar
@@ -233,63 +237,62 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'animating'
           */
-        var animating: String = js.native
+        var animating: String
         
         /**
           * @default 'bottom'
           */
-        var bottom: String = js.native
+        var bottom: String
         
         /**
           * @default 'dimmed'
           */
-        var dimmed: String = js.native
+        var dimmed: String
         
         /**
           * @default 'ios'
           */
-        var ios: String = js.native
+        var ios: String
         
         /**
           * @default 'left'
           */
-        var left: String = js.native
+        var left: String
         
         /**
           * @default 'pushable'
           */
-        var pushable: String = js.native
+        var pushable: String
         
         /**
           * @default 'pushed'
           */
-        var pushed: String = js.native
+        var pushed: String
         
         /**
           * @default 'right'
           */
-        var right: String = js.native
+        var right: String
         
         /**
           * @default 'top'
           */
-        var top: String = js.native
+        var top: String
         
         /**
           * @default 'visible'
           */
-        var visible: String = js.native
+        var visible: String
       }
       object Impl {
         
@@ -349,7 +352,7 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplactive | PickImplanimating | PickImpldimmed | PickImplios | PickImplpushable | PickImplpushed | PickImplright | PickImpltop | PickImplleft | PickImplbottom | PickImplvisible) with PartialPickImplkeyofImplActive
+      type Param = (PickImplactive | PickImplanimating | PickImpldimmed | PickImplios | PickImplpushable | PickImplpushed | PickImplright | PickImpltop | PickImplleft | PickImplbottom | PickImplvisible) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
@@ -357,28 +360,27 @@ object SemanticUI {
       
       object ComputerSettings {
         
-        @js.native
         trait Impl extends StObject {
           
           /**
             * @default 'overlay'
             */
-          var bottom: String = js.native
+          var bottom: String
           
           /**
             * @default 'uncover'
             */
-          var left: String = js.native
+          var left: String
           
           /**
             * @default 'uncover'
             */
-          var right: String = js.native
+          var right: String
           
           /**
             * @default 'overlay'
             */
-          var top: String = js.native
+          var top: String
         }
         object Impl {
           
@@ -405,16 +407,15 @@ object SemanticUI {
           }
         }
         
-        type Param = (PickImplleft | PickImplright | PickImpltop | PickImplbottom) with PartialPickImplkeyofImplBottom
+        type Param = (PickImplleft | PickImplright | PickImpltop | PickImplbottom) & PartialPickImplkeyofImplBottom
       }
       type ComputerSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings.Param
       
-      @js.native
       trait Impl extends StObject {
         
-        var computer: ComputerSettings = js.native
+        var computer: ComputerSettings
         
-        var mobile: MobileSettings = js.native
+        var mobile: MobileSettings
       }
       object Impl {
         
@@ -437,28 +438,27 @@ object SemanticUI {
       
       object MobileSettings {
         
-        @js.native
         trait Impl extends StObject {
           
           /**
             * @default 'overlay'
             */
-          var bottom: String = js.native
+          var bottom: String
           
           /**
             * @default 'uncover'
             */
-          var left: String = js.native
+          var left: String
           
           /**
             * @default 'uncover'
             */
-          var right: String = js.native
+          var right: String
           
           /**
             * @default 'overlay'
             */
-          var top: String = js.native
+          var top: String
         }
         object Impl {
           
@@ -485,43 +485,42 @@ object SemanticUI {
           }
         }
         
-        type Param = (PickImplleft | PickImplright | PickImpltop | PickImplbottom) with PartialPickImplkeyofImplBottom
+        type Param = (PickImplleft | PickImplright | PickImpltop | PickImplbottom) & PartialPickImplkeyofImplBottom
       }
       type MobileSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.MobileSettings.Param
       
-      type Param = (PickImplcomputer | PickImplmobile) with PartialPickImplkeyofImplComputer
+      type Param = (PickImplcomputer | PickImplmobile) & PartialPickImplkeyofImplComputer
     }
     type DefaultTransitionSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'Had to move sidebar. For optimal performance make sure sidebar and pusher are direct children of your body tag'
           */
-        var movedSidebar: String = js.native
+        var movedSidebar: String
         
         /**
           * @default 'There were no elements that matched the specified selector'
           */
-        var notFound: String = js.native
+        var notFound: String
         
         /**
           * @default 'The overlay setting is no longer supported, use animation: overlay'
           */
-        var overlay: String = js.native
+        var overlay: String
         
         /**
           * @default 'Had to add pusher element. For optimal performance make sure body content is inside a pusher element'
           */
-        var pusher: String = js.native
+        var pusher: String
       }
       object Impl {
         
@@ -551,24 +550,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplmethod | PickImplpusher | PickImplmovedSidebar | PickImploverlay | PickImplnotFound) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplmethod | PickImplpusher | PickImplmovedSidebar | PickImploverlay | PickImplnotFound) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.ErrorSettings.Param
     
     object RegExpSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default /(iPad|iPhone|iPod)/g
           */
-        var ios: RegExp = js.native
+        var ios: RegExp
         
         /**
           * @default /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/g
           */
-        var mobile: RegExp = js.native
+        var mobile: RegExp
       }
       object Impl {
         
@@ -589,34 +587,33 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpliosIos | PickImplmobileMobile) with PartialPickImplkeyofImplIos
+      type Param = (PickImpliosIos | PickImplmobileMobile) & PartialPickImplkeyofImplIos
     }
     type RegExpSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.RegExpSettings.Param
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.fixed'
           */
-        var fixed: String = js.native
+        var fixed: String
         
         /**
           * @default 'script, link, style, .ui.modal, .ui.dimmer, .ui.nag, .ui.fixed'
           */
-        var omitted: String = js.native
+        var omitted: String
         
         /**
           * @default '.pusher'
           */
-        var pusher: String = js.native
+        var pusher: String
         
         /**
           * @default '.ui.sidebar'
           */
-        var sidebar: String = js.native
+        var sidebar: String
       }
       object Impl {
         
@@ -643,26 +640,25 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplfixed | PickImplomitted | PickImplpusher | PickImplsidebar) with PartialPickImplkeyofImplFixed
+      type Param = (PickImplfixed | PickImplomitted | PickImplpusher | PickImplsidebar) & PartialPickImplkeyofImplFixed
     }
     type SelectorSettings = typings.semanticUiSidebar.SemanticUI.Sidebar.SelectorSettings.Param
   }
   
   object SidebarSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       // endregion
       // region DOM Settings
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Whether sidebar can be closed by clicking on page
         *
         * @default true
         */
-      var closable: Boolean = js.native
+      var closable: Boolean
       
       // region Behavior
       /**
@@ -670,70 +666,70 @@ object SemanticUI {
         *
         * @default 'body'
         */
-      var context: String | JQuery = js.native
+      var context: String | JQuery
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Default transitions for each direction and screen size, used with transition: auto
         */
-      var defaultTransition: DefaultTransitionSettings = js.native
+      var defaultTransition: DefaultTransitionSettings
       
       /**
         * When sidebar is initialized without the proper HTML, using this option will defer creation of DOM to use requestAnimationFrame.
         *
         * @default false
         */
-      var delaySetup: Boolean = js.native
+      var delaySetup: Boolean
       
       /**
         * Whether to dim page contents when sidebar is visible
         *
         * @default true
         */
-      var dimPage: Boolean = js.native
+      var dimPage: Boolean
       
       /**
         * Duration of sidebar animation when using legacy Javascript animation
         *
         * @default 500
         */
-      var duration: Double = js.native
+      var duration: Double
       
       /**
         * Easing to use when using legacy Javascript animation
         *
         * @default 'easeInOutQuint'
         */
-      var easing: String = js.native
+      var easing: String
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether multiple sidebars can be open at once
         *
         * @default false
         */
-      var exclusive: Boolean = js.native
+      var exclusive: Boolean
       
       /**
         * Named transition to use when animating when detecting mobile device. Defaults to 'auto' which selects transition from defaultTransition based on direction.
         *
         * @default 'auto'
         */
-      var mobileTransition: String = js.native
+      var mobileTransition: String
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -741,62 +737,62 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Is called when a sidebar begins to hide or show
         */
-      def onChange(): Unit = js.native
+      def onChange(): Unit
       
       /**
         * Is called after a sidebar has finished animating out.
         */
-      def onHidden(): Unit = js.native
+      def onHidden(): Unit
       
       /**
         * Is called before a sidebar begins to animate out.
         */
-      def onHide(): Unit = js.native
+      def onHide(): Unit
       
       /**
         * Is called when a sidebar has finished animating in.
         */
-      def onShow(): Unit = js.native
+      def onShow(): Unit
       
       // endregion
       // region Callbacks
       /**
         * Is called when a sidebar begins animating in.
         */
-      def onVisible(): Unit = js.native
+      def onVisible(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
-      var regExp: RegExpSettings = js.native
+      var regExp: RegExpSettings
       
       /**
         * Whether to return to original scroll position when sidebar is hidden, automatically occurs with transition: scale
         *
         * @default false
         */
-      var returnScroll: Boolean = js.native
+      var returnScroll: Boolean
       
       /**
         * Whether to lock page scroll when sidebar is visible
         *
         * @default false
         */
-      var scrollLock: Boolean = js.native
+      var scrollLock: Boolean
       
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       // endregion
       // region Animation
@@ -805,19 +801,19 @@ object SemanticUI {
         *
         * @default 'auto'
         */
-      var transition: String = js.native
+      var transition: String
       
       /**
         * Whether Javascript animations should be used. Defaults to false. Setting to auto will use legacy animations only for browsers that do not support CSS transforms
         *
         * @default false
         */
-      var useLegacy: auto | Boolean = js.native
+      var useLegacy: auto | Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -945,7 +941,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplcontext | PickImplexclusive | PickImplclosable | PickImpldimPage | PickImplscrollLock | PickImplreturnScroll | PickImpldelaySetup | PickImpltransition | PickImplmobileTransition | PickImpldefaultTransition | PickImpluseLegacy | PickImplduration | PickImpleasing | PickImplonVisible | PickImplonShow | PickImplonChange | PickImplonHide | PickImplonHidden | PickImplclassName | PickImplregExp | PickImplselector | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplcontext | PickImplexclusive | PickImplclosable | PickImpldimPage | PickImplscrollLock | PickImplreturnScroll | PickImpldelaySetup | PickImpltransition | PickImplmobileTransition | PickImpldefaultTransition | PickImpluseLegacy | PickImplduration | PickImpleasing | PickImplonVisible | PickImplonShow | PickImplonChange | PickImplonHide | PickImplonHidden | PickImplclassName | PickImplregExp | PickImplselector | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/sidebar.html#/settings}

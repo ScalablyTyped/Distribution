@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,15 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDiagram
   * @see XChartData
   */
-@js.native
-trait XChartDocument extends XModel {
+trait XChartDocument
+  extends StObject
+     with XModel {
   
   /**
     * @returns the properties of the background area of the chart document.  The area's extent is equal to the document size. If you want to access properties o
     * @see ChartArea
     * @see X3DDisplay
     */
-  val Area: XPropertySet = js.native
+  val Area: XPropertySet
   
   /**
     * @returns the data of the chart.  The returned object supports interface {@link XChartDataArray} which can be used to access the concrete data.  Since OOo
@@ -37,31 +37,31 @@ trait XChartDocument extends XModel {
     * @see XComplexDescriptionAccess
     * @see XDateCategories
     */
-  val Data: XChartData = js.native
+  val Data: XChartData
   
   /**
     * @returns the diagram of the chart document.
     * @see Diagram
     */
-  var Diagram: XDiagram = js.native
+  var Diagram: XDiagram
   
   /**
     * @returns the shape of the legend of the chart document.
     * @see ChartLegend
     */
-  val Legend: XShape = js.native
+  val Legend: XShape
   
   /**
     * @returns the shape of the subtitle of the chart document.  Usually the subtitle is smaller than the main title by default. And it is most commonly placed
     * @see ChartTitle
     */
-  val SubTitle: XShape = js.native
+  val SubTitle: XShape
   
   /**
     * @returns the shape of the main title of the chart document.
     * @see ChartTitle
     */
-  val Title: XShape = js.native
+  val Title: XShape
   
   /**
     * attaches data to the chart.
@@ -80,14 +80,14 @@ trait XChartDocument extends XModel {
     * @see XComplexDescriptionAccess
     * @see XDateCategories
     */
-  def attachData(xData: XChartData): Unit = js.native
+  def attachData(xData: XChartData): Unit
   
   /**
     * @returns the properties of the background area of the chart document.  The area's extent is equal to the document size. If you want to access properties o
     * @see ChartArea
     * @see X3DDisplay
     */
-  def getArea(): XPropertySet = js.native
+  def getArea(): XPropertySet
   
   /**
     * @returns the data of the chart.  The returned object supports interface {@link XChartDataArray} which can be used to access the concrete data.  Since OOo
@@ -96,31 +96,31 @@ trait XChartDocument extends XModel {
     * @see XComplexDescriptionAccess
     * @see XDateCategories
     */
-  def getData(): XChartData = js.native
+  def getData(): XChartData
   
   /**
     * @returns the diagram of the chart document.
     * @see Diagram
     */
-  def getDiagram(): XDiagram = js.native
+  def getDiagram(): XDiagram
   
   /**
     * @returns the shape of the legend of the chart document.
     * @see ChartLegend
     */
-  def getLegend(): XShape = js.native
+  def getLegend(): XShape
   
   /**
     * @returns the shape of the subtitle of the chart document.  Usually the subtitle is smaller than the main title by default. And it is most commonly placed
     * @see ChartTitle
     */
-  def getSubTitle(): XShape = js.native
+  def getSubTitle(): XShape
   
   /**
     * @returns the shape of the main title of the chart document.
     * @see ChartTitle
     */
-  def getTitle(): XShape = js.native
+  def getTitle(): XShape
   
   /**
     * sets the diagram for the chart document.
@@ -128,7 +128,7 @@ trait XChartDocument extends XModel {
     * Setting a new diagram implicitly disposes the previous diagram.
     * @param xDiagram the new diagram that should be set for the chart. To create such a diagram component, you can use the {@link com.sun.star.lang.XMultiSer
     */
-  def setDiagram(xDiagram: XDiagram): Unit = js.native
+  def setDiagram(xDiagram: XDiagram): Unit
 }
 object XChartDocument {
   

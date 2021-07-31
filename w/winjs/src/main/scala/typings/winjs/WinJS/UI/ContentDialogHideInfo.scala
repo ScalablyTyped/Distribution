@@ -2,19 +2,17 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data associated with hiding a dialog.
   **/
-@js.native
 trait ContentDialogHideInfo extends StObject {
   
   /***
     * The dialog's dismissal result. May be 'primary', 'secondary', 'none', or whatever custom value was passed to hide.
     **/
-  var result: String = js.native
+  var result: String
 }
 object ContentDialogHideInfo {
   

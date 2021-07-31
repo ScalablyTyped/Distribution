@@ -2,13 +2,11 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the propertyChanged event.
   */
-@js.native
 trait INotifyPropertyChange extends StObject {
   
   //#region Events
@@ -17,14 +15,14 @@ trait INotifyPropertyChange extends StObject {
     * @param handler
     *       The name of the event handler for the propertyChanged event.
     */
-  def add_propertyChanged(handler: js.Function): Unit = js.native
+  def add_propertyChanged(handler: js.Function): Unit
   
   /**
     * Occurs when a component property is set to a new value.
     * @param handler
     *       The name of the event handler for the propertyChanged event.
     */
-  def remove_propertyChanged(handler: js.Function): Unit = js.native
+  def remove_propertyChanged(handler: js.Function): Unit
 }
 object INotifyPropertyChange {
   

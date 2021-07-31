@@ -3,26 +3,24 @@ package typings.materialIconButton
 import typings.materialIconButton.typesMod.MDCIconButtonToggleEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCIconButtonToggleAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /** Returns the given attribute value on the root element. */
-    def getAttr(attrName: String): String | Null = js.native
+    def getAttr(attrName: String): String | Null
     
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
-    def notifyChange(evtData: MDCIconButtonToggleEventDetail): Unit = js.native
+    def notifyChange(evtData: MDCIconButtonToggleEventDetail): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def setAttr(attrName: String, attrValue: String): Unit = js.native
+    def setAttr(attrName: String, attrValue: String): Unit
   }
   object MDCIconButtonToggleAdapter {
     

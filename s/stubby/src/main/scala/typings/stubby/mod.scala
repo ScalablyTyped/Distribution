@@ -7,7 +7,6 @@ import typings.node.tlsMod.TlsOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -48,10 +47,9 @@ object mod {
     var tlsPortal: typings.node.tlsMod.Server = js.native
   }
   
-  @js.native
   trait Endpoint extends StObject {
     
-    def matches(request: StubbyRequest): StubbyRequest | Null = js.native
+    def matches(request: StubbyRequest): StubbyRequest | Null
   }
   object Endpoint {
     
@@ -92,34 +90,33 @@ object mod {
     def update(id: String, data: StubbyData, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   }
   
-  @js.native
   trait StubbyCommonOptions extends StObject {
     
     /** additional options to pass to the underlying tls server */
-    var _httpsOptions: js.UndefOr[TlsOptions] = js.native
+    var _httpsOptions: js.UndefOr[TlsOptions] = js.undefined
     
     /** port number to run the admin portal */
-    var admin: js.UndefOr[Double] = js.native
+    var admin: js.UndefOr[Double] = js.undefined
     
     /** JavaScript Object/Array containing endpoint data */
-    var data: js.UndefOr[StubbyData | js.Array[StubbyData]] = js.native
+    var data: js.UndefOr[StubbyData | js.Array[StubbyData]] = js.undefined
     
-    var datadir: js.UndefOr[String] = js.native
+    var datadir: js.UndefOr[String] = js.undefined
     
     /** address/hostname at which to run stubby */
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
     /** defaults to `true`. Pass in `false` to have console output (if available) */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     /** port number to run the stubs portal */
-    var stubs: js.UndefOr[Double] = js.native
+    var stubs: js.UndefOr[Double] = js.undefined
     
     /** port number to run the stubs portal over https */
-    var tls: js.UndefOr[Double] = js.native
+    var tls: js.UndefOr[Double] = js.undefined
     
     /** filename to monitor and load as stubby's data when changes occur */
-    var watch: js.UndefOr[String] = js.native
+    var watch: js.UndefOr[String] = js.undefined
   }
   object StubbyCommonOptions {
     
@@ -191,14 +188,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StubbyData extends StObject {
     
     /**
       * This object is used to match an incoming request to stubby against the
       * available endpoints that have been configured.
       */
-    var request: StubbyRequest = js.native
+    var request: StubbyRequest
     
     /**
       * Assuming a match has been made against the given `request` object, data from
@@ -213,7 +209,7 @@ object mod {
       * portion of the endpoint will be used to assemble a request to the url
       * given as the `response`.
       */
-    var response: js.UndefOr[String | StubbyResponse | (js.Array[String | StubbyResponse])] = js.native
+    var response: js.UndefOr[String | StubbyResponse | (js.Array[String | StubbyResponse])] = js.undefined
   }
   object StubbyData {
     
@@ -305,7 +301,6 @@ object mod {
     }
   }
   
-  @js.native
   trait StubbyRequest extends StObject {
     
     /**
@@ -316,7 +311,7 @@ object mod {
       *   for matching.
       * - allows you to split up stubby data across multiple files
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * - values are full-fledged **regular expressions**
@@ -324,7 +319,7 @@ object mod {
       * - case-insensitive matching of header names.
       * - a hashmap of header/value pairs similar to `query`.
       */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * - not used if `post` or `file` are present.
@@ -332,7 +327,7 @@ object mod {
       * - allows you to specify a JSON string that will be deeply compared with a
       *   JSON request
       */
-    var json: js.UndefOr[String] = js.native
+    var json: js.UndefOr[String] = js.undefined
     
     /**
       * - defaults to `GET`.
@@ -346,14 +341,14 @@ object mod {
       *   - etc.
       * - it can also be an array of values.
       */
-    var method: js.UndefOr[StubbyMethod | js.Array[StubbyMethod]] = js.native
+    var method: js.UndefOr[StubbyMethod | js.Array[StubbyMethod]] = js.undefined
     
     /**
       * - is a full-fledged **regular expression**
       * - if omitted, any post data is ignored.
       * - the body contents of the server request, such as form data.
       */
-    var post: js.UndefOr[String] = js.native
+    var post: js.UndefOr[String] = js.undefined
     
     /**
       * - values are full-fledged **regular expressions**
@@ -367,7 +362,7 @@ object mod {
       * **NOTE**: repeated querystring keys (often array representations) will
       * have their values converted to a comma-separated list.
       */
-    var query: js.UndefOr[StringDictionary[String]] = js.native
+    var query: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * - is a full-fledged **regular expression**
@@ -380,7 +375,7 @@ object mod {
       * - no checking is done for URI-encoding compliance.
       *   - If it's invalid, it won't ever trigger a match.
       */
-    var url: String = js.native
+    var url: String
   }
   object StubbyRequest {
     
@@ -437,39 +432,38 @@ object mod {
     }
   }
   
-  @js.native
   trait StubbyResponse extends StObject {
     
     /**
       * - contents of the response body
       * - defaults to an empty content body
       */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /**
       * - similar to `request.file`, but the contents of the file are used as the
       *   `body`.
       */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * - similar to `request.headers` except that these are sent back to the
       *   client.
       */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * - time to wait, in milliseconds, before sending back the response
       * - good for testing timeouts, or slow connections
       */
-    var latency: js.UndefOr[Double] = js.native
+    var latency: js.UndefOr[Double] = js.undefined
     
     /**
       * - the HTTP status code of the response.
       * - integer or integer-like string.
       * - defaults to `200`.
       */
-    var status: js.UndefOr[Double | String] = js.native
+    var status: js.UndefOr[Double | String] = js.undefined
   }
   object StubbyResponse {
     
@@ -514,17 +508,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StubbyWithKeyCertOptions
-    extends StubbyCommonOptions
+    extends StObject
+       with StubbyCommonOptions
        with StubbyOptions {
     
     // tslint:disable-line:ban-types
     /** certificate file contents (in PEM format) */
-    var cert: String | Buffer | (js.Array[String | Buffer]) = js.native
+    var cert: String | Buffer | (js.Array[String | Buffer])
     
     /** keyfile contents (in PEM format) */
-    var key: String | Buffer | (js.Array[Buffer | js.Object]) = js.native
+    var key: String | Buffer | (js.Array[Buffer | js.Object])
   }
   object StubbyWithKeyCertOptions {
     
@@ -554,13 +548,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StubbyWithPfxOptions
-    extends StubbyCommonOptions
+    extends StObject
+       with StubbyCommonOptions
        with StubbyOptions {
     
     /** pfx file contents (mutually exclusive with key/cert options) */
-    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.native
+    var pfx: js.UndefOr[String | Buffer | (js.Array[String | Buffer | js.Object])] = js.undefined
   }
   object StubbyWithPfxOptions {
     

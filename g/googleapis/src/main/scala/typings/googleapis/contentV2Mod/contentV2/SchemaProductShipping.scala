@@ -2,50 +2,48 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductShipping extends StObject {
   
   /**
     * The CLDR territory code of the country to which an item will ship.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The location where the shipping is applicable, represented by a location
     * group name.
     */
-  var locationGroupName: js.UndefOr[String] = js.native
+  var locationGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The numeric ID of a location that the shipping rate applies to as defined
     * in the AdWords API.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code range that the shipping rate applies to, represented by a
     * postal code, a postal code prefix followed by a * wildcard, a range
     * between two postal codes or two postal code prefixes of equal length.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Fixed shipping price, represented as a number.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The geographic region to which a shipping rate applies.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * A free-form description of the service class or delivery speed.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaProductShipping {
   

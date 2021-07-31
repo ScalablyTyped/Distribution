@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Networking.Proximity
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a message that's received from a subscription. */
-@js.native
 trait ProximityMessage extends StObject {
   
   /** Gets the binary data of the message. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
   /** Gets the message data as text. */
-  var dataAsString: String = js.native
+  var dataAsString: String
   
   /** Gets the type of the message. */
-  var messageType: String = js.native
+  var messageType: String
   
   /** Gets the subscription ID of the message. */
-  var subscriptionId: Double = js.native
+  var subscriptionId: Double
 }
 object ProximityMessage {
   

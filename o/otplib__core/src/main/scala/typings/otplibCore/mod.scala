@@ -21,10 +21,13 @@ import typings.std.Pick
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@otplib/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@otplib/core", "Authenticator")
   @js.native
@@ -59,13 +62,13 @@ object mod {
   object HashAlgorithms extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.HashAlgorithms with String] = js.native
+    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.HashAlgorithms & String] = js.native
     
-    /* "sha1" */ val SHA1: typings.otplibCore.utilsMod.HashAlgorithms.SHA1 with String = js.native
+    /* "sha1" */ val SHA1: typings.otplibCore.utilsMod.HashAlgorithms.SHA1 & String = js.native
     
-    /* "sha256" */ val SHA256: typings.otplibCore.utilsMod.HashAlgorithms.SHA256 with String = js.native
+    /* "sha256" */ val SHA256: typings.otplibCore.utilsMod.HashAlgorithms.SHA256 & String = js.native
     
-    /* "sha512" */ val SHA512: typings.otplibCore.utilsMod.HashAlgorithms.SHA512 with String = js.native
+    /* "sha512" */ val SHA512: typings.otplibCore.utilsMod.HashAlgorithms.SHA512 & String = js.native
   }
   
   @JSImport("@otplib/core", "KEY_ENCODINGS")
@@ -77,17 +80,17 @@ object mod {
   object KeyEncodings extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.KeyEncodings with String] = js.native
+    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.KeyEncodings & String] = js.native
     
-    /* "ascii" */ val ASCII: typings.otplibCore.utilsMod.KeyEncodings.ASCII with String = js.native
+    /* "ascii" */ val ASCII: typings.otplibCore.utilsMod.KeyEncodings.ASCII & String = js.native
     
-    /* "base64" */ val BASE64: typings.otplibCore.utilsMod.KeyEncodings.BASE64 with String = js.native
+    /* "base64" */ val BASE64: typings.otplibCore.utilsMod.KeyEncodings.BASE64 & String = js.native
     
-    /* "hex" */ val HEX: typings.otplibCore.utilsMod.KeyEncodings.HEX with String = js.native
+    /* "hex" */ val HEX: typings.otplibCore.utilsMod.KeyEncodings.HEX & String = js.native
     
-    /* "latin1" */ val LATIN1: typings.otplibCore.utilsMod.KeyEncodings.LATIN1 with String = js.native
+    /* "latin1" */ val LATIN1: typings.otplibCore.utilsMod.KeyEncodings.LATIN1 & String = js.native
     
-    /* "utf8" */ val UTF8: typings.otplibCore.utilsMod.KeyEncodings.UTF8 with String = js.native
+    /* "utf8" */ val UTF8: typings.otplibCore.utilsMod.KeyEncodings.UTF8 & String = js.native
   }
   
   @JSImport("@otplib/core", "OTP")
@@ -111,11 +114,11 @@ object mod {
   object Strategy extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.Strategy with String] = js.native
+    def apply(value: String): js.UndefOr[typings.otplibCore.utilsMod.Strategy & String] = js.native
     
-    /* "hotp" */ val HOTP: typings.otplibCore.utilsMod.Strategy.HOTP with String = js.native
+    /* "hotp" */ val HOTP: typings.otplibCore.utilsMod.Strategy.HOTP & String = js.native
     
-    /* "totp" */ val TOTP: typings.otplibCore.utilsMod.Strategy.TOTP with String = js.native
+    /* "totp" */ val TOTP: typings.otplibCore.utilsMod.Strategy.TOTP & String = js.native
   }
   
   @JSImport("@otplib/core", "TOTP")
@@ -130,154 +133,124 @@ object mod {
     def this(defaultOptions: Partial[T]) = this()
   }
   
-  @JSImport("@otplib/core", "authenticatorCheckWithWindow")
-  @js.native
-  def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = js.native
+  @scala.inline
+  def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @JSImport("@otplib/core", "authenticatorDecoder")
-  @js.native
-  def authenticatorDecoder[T /* <: AuthenticatorOptions_[_] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
+  @scala.inline
+  def authenticatorDecoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDecoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
+  ]]
   
-  @JSImport("@otplib/core", "authenticatorDefaultOptions")
-  @js.native
-  def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[_] */](): Partial[T] = js.native
+  @scala.inline
+  def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @JSImport("@otplib/core", "authenticatorEncoder")
-  @js.native
-  def authenticatorEncoder[T /* <: AuthenticatorOptions_[_] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
+  @scala.inline
+  def authenticatorEncoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorEncoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+    /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
+  ]]
   
-  @JSImport("@otplib/core", "authenticatorGenerateSecret")
-  @js.native
-  def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = js.native
+  @scala.inline
+  def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorGenerateSecret")(numberOfBytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Base32SecretKey]
   
-  @JSImport("@otplib/core", "authenticatorOptionValidator")
-  @js.native
-  def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[_] */](options: Partial[T]): Unit = js.native
+  @scala.inline
+  def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptionValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@otplib/core", "authenticatorOptions")
-  @js.native
-  def authenticatorOptions[T /* <: AuthenticatorOptions_[_] */](opt: Partial[T]): T = js.native
+  @scala.inline
+  def authenticatorOptions[T /* <: AuthenticatorOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@otplib/core", "authenticatorToken")
-  @js.native
-  def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = js.native
+  @scala.inline
+  def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@otplib/core", "createDigestPlaceholder")
   @js.native
   val createDigestPlaceholder: CreateDigest[HexString] = js.native
   
-  @JSImport("@otplib/core", "hotpCheck")
-  @js.native
-  def hotpCheck[T /* <: HOTPOptions_[_] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = js.native
+  @scala.inline
+  def hotpCheck[T /* <: HOTPOptions_[js.Any] */](token: String, secret: SecretKey, counter: Double, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@otplib/core", "hotpCounter")
-  @js.native
-  def hotpCounter(counter: Double): HexString = js.native
+  @scala.inline
+  def hotpCounter(counter: Double): HexString = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpCounter")(counter.asInstanceOf[js.Any]).asInstanceOf[HexString]
   
   @JSImport("@otplib/core", "hotpCreateHmacKey")
   @js.native
   val hotpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  @JSImport("@otplib/core", "hotpDefaultOptions")
-  @js.native
-  def hotpDefaultOptions[T /* <: HOTPOptions_[_] */](): Partial[T] = js.native
+  @scala.inline
+  def hotpDefaultOptions[T /* <: HOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @JSImport("@otplib/core", "hotpDigestToToken")
-  @js.native
-  def hotpDigestToToken(hexDigest: HexString, digits: Double): String = js.native
+  @scala.inline
+  def hotpDigestToToken(hexDigest: HexString, digits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpDigestToToken")(hexDigest.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "hotpKeyuri")
-  @js.native
-  def hotpKeyuri[T /* <: HOTPOptions_[_] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = js.native
+  @scala.inline
+  def hotpKeyuri[T /* <: HOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "hotpOptions")
-  @js.native
-  def hotpOptions[T /* <: HOTPOptions_[_] */](opt: Partial[T]): T = js.native
+  @scala.inline
+  def hotpOptions[T /* <: HOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@otplib/core", "hotpOptionsValidator")
-  @js.native
-  def hotpOptionsValidator[T /* <: HOTPOptions_[_] */](options: Partial[T]): Unit = js.native
+  @scala.inline
+  def hotpOptionsValidator[T /* <: HOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hotpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@otplib/core", "hotpToken")
-  @js.native
-  def hotpToken[T /* <: HOTPOptions_[_] */](secret: SecretKey, counter: Double, options: T): String = js.native
+  @scala.inline
+  def hotpToken[T /* <: HOTPOptions_[js.Any] */](secret: SecretKey, counter: Double, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hotpToken")(secret.asInstanceOf[js.Any], counter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "isTokenValid")
-  @js.native
-  def isTokenValid(value: String): Boolean = js.native
+  @scala.inline
+  def isTokenValid(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenValid")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@otplib/core", "keyuri")
-  @js.native
-  def keyuri(options: KeyURIOptions): String = js.native
+  @scala.inline
+  def keyuri(options: KeyURIOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyuri")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "objectValues")
-  @js.native
-  def objectValues[T](value: T): js.Array[String] = js.native
+  @scala.inline
+  def objectValues[T](value: T): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectValues")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@otplib/core", "padStart")
-  @js.native
-  def padStart(value: String, maxLength: Double, fillString: String): String = js.native
+  @scala.inline
+  def padStart(value: String, maxLength: Double, fillString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padStart")(value.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], fillString.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "totpCheck")
-  @js.native
-  def totpCheck[T /* <: TOTPOptions_[_] */](token: String, secret: SecretKey, options: T): Boolean = js.native
+  @scala.inline
+  def totpCheck[T /* <: TOTPOptions_[js.Any] */](token: String, secret: SecretKey, options: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheck")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@otplib/core", "totpCheckByEpoch")
-  @js.native
-  def totpCheckByEpoch[T /* <: TOTPOptions_[String] */](epochs: js.Array[Double], token: String, secret: SecretKey, options: T): Double | Null = js.native
+  @scala.inline
+  def totpCheckByEpoch[T /* <: TOTPOptions_[String] */](epochs: js.Array[Double], token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckByEpoch")(epochs.asInstanceOf[js.Any], token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @JSImport("@otplib/core", "totpCheckWithWindow")
-  @js.native
-  def totpCheckWithWindow[T /* <: TOTPOptions_[String] */](token: String, secret: SecretKey, options: T): Double | Null = js.native
+  @scala.inline
+  def totpCheckWithWindow[T /* <: TOTPOptions_[String] */](token: String, secret: SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @JSImport("@otplib/core", "totpCounter")
-  @js.native
-  def totpCounter(epoch: Double, step: Double): Double = js.native
+  @scala.inline
+  def totpCounter(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpCounter")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("@otplib/core", "totpCreateHmacKey")
   @js.native
   val totpCreateHmacKey: CreateHmacKey[HexString] = js.native
   
-  @JSImport("@otplib/core", "totpDefaultOptions")
-  @js.native
-  def totpDefaultOptions[T /* <: TOTPOptions_[_] */](): Partial[T] = js.native
+  @scala.inline
+  def totpDefaultOptions[T /* <: TOTPOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("totpDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @JSImport("@otplib/core", "totpEpochAvailable")
-  @js.native
-  def totpEpochAvailable(epoch: Double, step: Double, win: js.Tuple2[Double, Double]): EpochAvailable = js.native
-  @JSImport("@otplib/core", "totpEpochAvailable")
-  @js.native
-  def totpEpochAvailable(epoch: Double, step: Double, win: Double): EpochAvailable = js.native
+  @scala.inline
+  def totpEpochAvailable(epoch: Double, step: Double, win: js.Tuple2[Double, Double]): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
+  @scala.inline
+  def totpEpochAvailable(epoch: Double, step: Double, win: Double): EpochAvailable = (^.asInstanceOf[js.Dynamic].applyDynamic("totpEpochAvailable")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any], win.asInstanceOf[js.Any])).asInstanceOf[EpochAvailable]
   
-  @JSImport("@otplib/core", "totpKeyuri")
-  @js.native
-  def totpKeyuri[T /* <: TOTPOptions_[_] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = js.native
+  @scala.inline
+  def totpKeyuri[T /* <: TOTPOptions_[js.Any] */](accountName: String, issuer: String, secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpKeyuri")(accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "totpOptions")
-  @js.native
-  def totpOptions[T /* <: TOTPOptions_[_] */](opt: Partial[T]): T = js.native
+  @scala.inline
+  def totpOptions[T /* <: TOTPOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@otplib/core", "totpOptionsValidator")
-  @js.native
-  def totpOptionsValidator[T /* <: TOTPOptions_[_] */](options: Partial[T]): Unit = js.native
+  @scala.inline
+  def totpOptionsValidator[T /* <: TOTPOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("totpOptionsValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@otplib/core", "totpPadSecret")
-  @js.native
-  def totpPadSecret(secret: String, encoding: KeyEncodings, minLength: Double): String = js.native
+  @scala.inline
+  def totpPadSecret(secret: String, encoding: KeyEncodings, minLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpPadSecret")(secret.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], minLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@otplib/core", "totpTimeRemaining")
-  @js.native
-  def totpTimeRemaining(epoch: Double, step: Double): Double = js.native
+  @scala.inline
+  def totpTimeRemaining(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeRemaining")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@otplib/core", "totpTimeUsed")
-  @js.native
-  def totpTimeUsed(epoch: Double, step: Double): Double = js.native
+  @scala.inline
+  def totpTimeUsed(epoch: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("totpTimeUsed")(epoch.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@otplib/core", "totpToken")
-  @js.native
-  def totpToken[T /* <: TOTPOptions_[_] */](secret: SecretKey, options: T): String = js.native
+  @scala.inline
+  def totpToken[T /* <: TOTPOptions_[js.Any] */](secret: SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("totpToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

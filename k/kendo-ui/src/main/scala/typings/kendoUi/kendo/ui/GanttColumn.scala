@@ -2,45 +2,43 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttColumn extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var columns: js.UndefOr[js.Any] = js.native
+  var columns: js.UndefOr[js.Any] = js.undefined
   
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var editor: js.UndefOr[js.Function] = js.native
+  var editor: js.UndefOr[js.Function] = js.undefined
   
-  var expandable: js.UndefOr[Boolean] = js.native
+  var expandable: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | GanttColumnFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | GanttColumnFilterable] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var headerAttributes: js.UndefOr[js.Any] = js.native
+  var headerAttributes: js.UndefOr[js.Any] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
-  var minScreenWidth: js.UndefOr[Double] = js.native
+  var minScreenWidth: js.UndefOr[Double] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | GanttColumnSortable] = js.native
+  var sortable: js.UndefOr[Boolean | GanttColumnSortable] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object GanttColumn {
   

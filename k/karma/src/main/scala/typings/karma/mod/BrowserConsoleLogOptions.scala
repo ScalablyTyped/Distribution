@@ -7,10 +7,8 @@ import typings.karma.karmaStrings.log_
 import typings.karma.karmaStrings.warn_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserConsoleLogOptions extends StObject {
   
   /**
@@ -18,16 +16,16 @@ trait BrowserConsoleLogOptions extends StObject {
     * log type in lower-case, log type in uppercase, and log message, respectively.
     * This format will only effect the output file
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /** the desired log-level, where level log always is logged */
-  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.native
+  var level: js.UndefOr[log_ | error_ | warn_ | info_ | debug_] = js.undefined
   
   /** output-path of the output-file */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** if the log should be written in the terminal, or not */
-  var terminal: js.UndefOr[Boolean] = js.native
+  var terminal: js.UndefOr[Boolean] = js.undefined
 }
 object BrowserConsoleLogOptions {
   

@@ -4,12 +4,14 @@ import typings.react.mod.MutableRefObject
 import typings.useCallbackRef.typesMod.ReactRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeRefMod {
   
-  @JSImport("use-callback-ref/dist/es5/mergeRef", "mergeRefs")
+  @JSImport("use-callback-ref/dist/es5/mergeRef", JSImport.Namespace)
   @js.native
-  def mergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def mergeRefs[T](refs: js.Array[ReactRef[T]]): MutableRefObject[T | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeRefs")(refs.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T | Null]]
 }

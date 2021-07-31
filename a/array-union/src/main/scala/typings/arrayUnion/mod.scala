@@ -2,12 +2,14 @@ package typings.arrayUnion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */](arguments: ArgumentsType*): ArgumentsType = ^.asInstanceOf[js.Dynamic].apply(arguments.asInstanceOf[js.Any]).asInstanceOf[ArgumentsType]
+  
   @JSImport("array-union", JSImport.Namespace)
   @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */](arguments: ArgumentsType*): ArgumentsType = js.native
+  val ^ : js.Any = js.native
 }

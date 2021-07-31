@@ -4,19 +4,17 @@ import typings.googleapis.anon.MysqlExportOptions
 import typings.googleapis.anon.SelectQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance export context.
   */
-@js.native
 trait SchemaExportContext extends StObject {
   
   /**
     * Options for exporting data as CSV.
     */
-  var csvExportOptions: js.UndefOr[SelectQuery] = js.native
+  var csvExportOptions: js.UndefOr[SelectQuery] = js.undefined
   
   /**
     * Databases to be exported. MySQL instances: If fileType is SQL and no
@@ -28,23 +26,23 @@ trait SchemaExportContext extends StObject {
     * CSV, this database must match the database used in the
     * csvExportOptions.selectQuery property.
     */
-  var databases: js.UndefOr[js.Array[String]] = js.native
+  var databases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The file type for the specified uri. SQL: The file contains SQL
     * statements. CSV: The file contains CSV data.
     */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#exportContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Options for exporting data as SQL statements.
     */
-  var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.native
+  var sqlExportOptions: js.UndefOr[MysqlExportOptions] = js.undefined
   
   /**
     * The path to the file in Google Cloud Storage where the export will be
@@ -53,7 +51,7 @@ trait SchemaExportContext extends StObject {
     * fileType is SQL and the filename ends with .gz, the contents are
     * compressed.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaExportContext {
   

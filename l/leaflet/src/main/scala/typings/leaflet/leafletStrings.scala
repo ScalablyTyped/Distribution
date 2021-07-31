@@ -7,7 +7,6 @@ import typings.leaflet.mod.LineCapShape
 import typings.leaflet.mod.LineJoinShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletStrings {
@@ -18,7 +17,9 @@ object leafletStrings {
   def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait auto extends Direction
+  sealed trait auto
+    extends StObject
+       with Direction
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -33,32 +34,44 @@ object leafletStrings {
   def baselayerchange: baselayerchange = "baselayerchange".asInstanceOf[baselayerchange]
   
   @js.native
-  sealed trait bevel extends LineJoinShape
+  sealed trait bevel
+    extends StObject
+       with LineJoinShape
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait bottom extends Direction
+  sealed trait bottom
+    extends StObject
+       with Direction
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomleft extends ControlPosition
+  sealed trait bottomleft
+    extends StObject
+       with ControlPosition
   @scala.inline
   def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
   
   @js.native
-  sealed trait bottomright extends ControlPosition
+  sealed trait bottomright
+    extends StObject
+       with ControlPosition
   @scala.inline
   def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   
   @js.native
-  sealed trait butt extends LineCapShape
+  sealed trait butt
+    extends StObject
+       with LineCapShape
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait center extends Direction
+  sealed trait center
+    extends StObject
+       with Direction
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -103,13 +116,16 @@ object leafletStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait evenodd extends FillRule
+  sealed trait evenodd
+    extends StObject
+       with FillRule
   @scala.inline
   def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait inherit
-    extends FillRule
+    extends StObject
+       with FillRule
        with LineCapShape
        with LineJoinShape
   @scala.inline
@@ -141,7 +157,9 @@ object leafletStrings {
   def layerremove: layerremove = "layerremove".asInstanceOf[layerremove]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait left
+    extends StObject
+       with Direction
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -166,7 +184,9 @@ object leafletStrings {
   def locationfound: locationfound = "locationfound".asInstanceOf[locationfound]
   
   @js.native
-  sealed trait miter extends LineJoinShape
+  sealed trait miter
+    extends StObject
+       with LineJoinShape
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
@@ -211,7 +231,9 @@ object leafletStrings {
   def movestart: movestart = "movestart".asInstanceOf[movestart]
   
   @js.native
-  sealed trait nonzero extends FillRule
+  sealed trait nonzero
+    extends StObject
+       with FillRule
   @scala.inline
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
@@ -256,19 +278,24 @@ object leafletStrings {
   def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait right
+    extends StObject
+       with Direction
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait round
-    extends LineCapShape
+    extends StObject
+       with LineCapShape
        with LineJoinShape
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait square extends LineCapShape
+  sealed trait square
+    extends StObject
+       with LineCapShape
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
@@ -303,17 +330,23 @@ object leafletStrings {
   def tooltipopen: tooltipopen = "tooltipopen".asInstanceOf[tooltipopen]
   
   @js.native
-  sealed trait top extends Direction
+  sealed trait top
+    extends StObject
+       with Direction
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topleft extends ControlPosition
+  sealed trait topleft
+    extends StObject
+       with ControlPosition
   @scala.inline
   def topleft: topleft = "topleft".asInstanceOf[topleft]
   
   @js.native
-  sealed trait topright extends ControlPosition
+  sealed trait topright
+    extends StObject
+       with ControlPosition
   @scala.inline
   def topright: topright = "topright".asInstanceOf[topright]
   

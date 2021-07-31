@@ -6,44 +6,44 @@ import typings.uifabricUtilities.selectionTypesMod.IObjectWithKey
 import typings.uifabricUtilities.selectionTypesMod.ISelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.officeUiFabricReact.detailsRowTypesMod.IDetailsItemProps because var conflicts: indentWidth, selectionMode, viewport. Inlined columns, groupNestingDepth, selection, checkboxVisibility, cellStyleProps, rowWidth */ @js.native
-trait IDetailsGroupDividerProps extends IGroupDividerProps {
+- typings.officeUiFabricReact.detailsRowTypesMod.IDetailsItemProps because var conflicts: indentWidth, selectionMode, viewport. Inlined columns, groupNestingDepth, selection, checkboxVisibility, cellStyleProps, rowWidth */ trait IDetailsGroupDividerProps
+  extends StObject
+     with IGroupDividerProps {
   
   /**
     * Rules for rendering column cells.
     */
-  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+  var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
   
   /**
     * Checkbox visibility
     */
-  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.native
+  var checkboxVisibility: js.UndefOr[CheckboxVisibility] = js.undefined
   
   /**
     * Column metadata
     */
-  var columns: js.UndefOr[js.Array[IColumn]] = js.native
+  var columns: js.UndefOr[js.Array[IColumn]] = js.undefined
   
   /**
     * Nesting depth of a grouping
     */
-  var groupNestingDepth: js.UndefOr[Double] = js.native
+  var groupNestingDepth: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum width of the row.
     *
     * @defaultvalue 0
     */
-  var rowWidth: js.UndefOr[Double] = js.native
+  var rowWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Selection from utilities
     */
-  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
+  var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.undefined
 }
 object IDetailsGroupDividerProps {
   

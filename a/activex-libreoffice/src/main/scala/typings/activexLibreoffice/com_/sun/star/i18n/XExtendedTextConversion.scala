@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and converted string.
   * @since OOo 2.0
   */
-@js.native
-trait XExtendedTextConversion extends XTextConversion {
+trait XExtendedTextConversion
+  extends StObject
+     with XTextConversion {
   
   /**
     * The functionality of this method is same as {@link com.sun.star.i18n.XTextConversion.getConversion()} , except an additional output parameter rOffset.
@@ -36,7 +36,7 @@ trait XExtendedTextConversion extends XTextConversion {
     nTextConversionType: Double,
     nTextConversionOptions: Double,
     rOffset: js.Array[SeqEquiv[Double]]
-  ): String = js.native
+  ): String
 }
 object XExtendedTextConversion {
   

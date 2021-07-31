@@ -3,21 +3,19 @@ package typings.activexLibreoffice.com_.sun.star.xml.crypto.sax
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XAttributeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A struct to keep a startElement/endElement SAX event. */
-@js.native
 trait ElementStackItem extends StObject {
   
   /** the name of the element */
-  var elementName: String = js.native
+  var elementName: String
   
   /** whether it is a startElement event */
-  var isStartElementEvent: Boolean = js.native
+  var isStartElementEvent: Boolean
   
   /** attribute list for a startElement event */
-  var xAttributes: XAttributeList = js.native
+  var xAttributes: XAttributeList
 }
 object ElementStackItem {
   

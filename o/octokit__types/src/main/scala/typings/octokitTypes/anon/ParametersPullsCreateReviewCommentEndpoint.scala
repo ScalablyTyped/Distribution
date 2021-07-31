@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.PullsCreateReviewCommentResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersPullsCreateReviewCommentEndpoint extends StObject {
   
-  var parameters: PullsCreateReviewCommentEndpoint = js.native
+  var parameters: PullsCreateReviewCommentEndpoint
   
-  var request: PullsCreateReviewCommentRequestOptions = js.native
+  var request: PullsCreateReviewCommentRequestOptions
   
-  var response: OctokitResponse[PullsCreateReviewCommentResponseData] = js.native
+  var response: OctokitResponse[PullsCreateReviewCommentResponseData]
 }
 object ParametersPullsCreateReviewCommentEndpoint {
   

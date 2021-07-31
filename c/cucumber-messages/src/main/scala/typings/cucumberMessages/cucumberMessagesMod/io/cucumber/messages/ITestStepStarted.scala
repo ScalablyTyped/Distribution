@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestStepStarted. */
-@js.native
 trait ITestStepStarted extends StObject {
   
   /** TestStepStarted testCaseStartedId */
-  var testCaseStartedId: js.UndefOr[String | Null] = js.native
+  var testCaseStartedId: js.UndefOr[String | Null] = js.undefined
   
   /** TestStepStarted testStepId */
-  var testStepId: js.UndefOr[String | Null] = js.native
+  var testStepId: js.UndefOr[String | Null] = js.undefined
   
   /** TestStepStarted timestamp */
-  var timestamp: js.UndefOr[ITimestamp | Null] = js.native
+  var timestamp: js.UndefOr[ITimestamp | Null] = js.undefined
 }
 object ITestStepStarted {
   

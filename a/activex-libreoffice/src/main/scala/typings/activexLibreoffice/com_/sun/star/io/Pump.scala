@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.io
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,9 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A thread will be created that reads from the input stream and writes the data to the connected output stream. Data will not be buffered by this
   * service.
   */
-@js.native
 trait Pump
-  extends XActiveDataSource
+  extends StObject
+     with XActiveDataSource
      with XActiveDataSink
      with XActiveDataControl
 object Pump {

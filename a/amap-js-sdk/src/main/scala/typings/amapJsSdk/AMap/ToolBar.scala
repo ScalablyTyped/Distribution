@@ -3,33 +3,32 @@ package typings.amapJsSdk.AMap
 import typings.amapJsSdk.anon.Lat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolBar
-  extends EventBindable
+  extends StObject
+     with EventBindable
      with MapControl {
   
-  def doLocation(): Unit = js.native
+  def doLocation(): Unit
   
-  def getLocation(): Lat = js.native
+  def getLocation(): Lat
   
-  def getOffset(): Pixel = js.native
+  def getOffset(): Pixel
   
-  def hideDirection(): Unit = js.native
+  def hideDirection(): Unit
   
-  def hideLocation(): Unit = js.native
+  def hideLocation(): Unit
   
-  def hideRuler(): Unit = js.native
+  def hideRuler(): Unit
   
-  def setOffset(offset: Pixel): Unit = js.native
+  def setOffset(offset: Pixel): Unit
   
-  def showDirection(): Unit = js.native
+  def showDirection(): Unit
   
-  def showLocation(): Unit = js.native
+  def showLocation(): Unit
   
-  def showRuler(): Unit = js.native
+  def showRuler(): Unit
 }
 object ToolBar {
   

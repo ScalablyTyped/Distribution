@@ -10,9 +10,9 @@ jsreport extension adding support for storing rendering outputs for later use
 | ------------------ | :-------------: |
 | Full name          | jsreport-reports |
 | Keywords           | jsreport |
-| # releases         | 6 |
+| # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 124256 |
+| # downloads        | 96303 |
 | # stars            | 0 |
 
 ## Links

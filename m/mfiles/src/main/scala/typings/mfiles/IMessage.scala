@@ -6,49 +6,47 @@ import typings.mfiles.mfilesNumbers.`3`
 import typings.mfiles.mfilesNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessage extends StObject {
   
-  var button1_enabled: js.UndefOr[Boolean] = js.native
+  var button1_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var button1_title: js.UndefOr[String] = js.native
+  var button1_title: js.UndefOr[String] = js.undefined
   
-  var button2_enabled: js.UndefOr[Boolean] = js.native
+  var button2_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var button2_title: js.UndefOr[String] = js.native
+  var button2_title: js.UndefOr[String] = js.undefined
   
-  var button3_enabled: js.UndefOr[Boolean] = js.native
+  var button3_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var button3_title: js.UndefOr[String] = js.native
+  var button3_title: js.UndefOr[String] = js.undefined
   
-  var button4_enabled: js.UndefOr[Boolean] = js.native
+  var button4_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var button4_title: js.UndefOr[String] = js.native
+  var button4_title: js.UndefOr[String] = js.undefined
   
-  var cancelButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.native
+  var cancelButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var checkbox_checked: js.UndefOr[Boolean] = js.native
+  var checkbox_checked: js.UndefOr[Boolean] = js.undefined
   
-  var checkbox_enabled: js.UndefOr[Boolean] = js.native
+  var checkbox_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var checkbox_title: js.UndefOr[String] = js.native
+  var checkbox_title: js.UndefOr[String] = js.undefined
   
-  var defaultButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.native
+  var defaultButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var timeOut: js.UndefOr[Double] = js.native
+  var timeOut: js.UndefOr[Double] = js.undefined
   
-  var timeOutButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.native
+  var timeOutButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
   
-  var timeout_deactivateOnFocusChange: js.UndefOr[Boolean] = js.native
+  var timeout_deactivateOnFocusChange: js.UndefOr[Boolean] = js.undefined
 }
 object IMessage {
   

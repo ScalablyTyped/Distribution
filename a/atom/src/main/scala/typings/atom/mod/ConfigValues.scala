@@ -38,12 +38,11 @@ import typings.atom.atomStrings.undecided
 import typings.atom.atomStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigValues
-  extends // tslint:disable-next-line:no-any
+  extends StObject
+     with // tslint:disable-next-line:no-any
 /* key */ StringDictionary[js.Any] {
   
   /**
@@ -51,39 +50,39 @@ trait ConfigValues
     *  increasing this value to a non-zero number (e.g. 100).
     */
   @JSName("autocomplete-plus.autoActivationDelay")
-  var `autocomplete-plusDotautoActivationDelay`: Double = js.native
+  var `autocomplete-plusDotautoActivationDelay`: Double
   
   /**
     *  If enabled, typing `backspace` will show the suggestion list if suggestions
     *  are available. If disabled, suggestions will not be shown while backspacing.
     */
   @JSName("autocomplete-plus.backspaceTriggersAutocomplete")
-  var `autocomplete-plusDotbackspaceTriggersAutocomplete`: Boolean = js.native
+  var `autocomplete-plusDotbackspaceTriggersAutocomplete`: Boolean
   
   /** Don't use the built-in provider for these selector(s). */
   @JSName("autocomplete-plus.builtinProviderBlacklist")
-  var `autocomplete-plusDotbuiltinProviderBlacklist`: String = js.native
+  var `autocomplete-plusDotbuiltinProviderBlacklist`: String
   
   /**
     *  You should use the key(s) indicated here to confirm a suggestion from the
     *  suggestion list and have it inserted into the file.
     */
   @JSName("autocomplete-plus.confirmCompletion")
-  var `autocomplete-plusDotconfirmCompletion`: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`) = js.native
+  var `autocomplete-plusDotconfirmCompletion`: tab | enter | (`tab and enter`) | (`tab alwaysComma enter when suggestion explicitly selected`)
   
   /**
     *  Completing a suggestion consumes text following the cursor matching the
     *  suffix of the chosen suggestion.
     */
   @JSName("autocomplete-plus.consumeSuffix")
-  var `autocomplete-plusDotconsumeSuffix`: Boolean = js.native
+  var `autocomplete-plusDotconsumeSuffix`: Boolean
   
   /**
     *  If you're having trouble with autocomplete, you may consider falling back
     *  to the Symbol provider and filing an issue.
     */
   @JSName("autocomplete-plus.defaultProvider")
-  var `autocomplete-plusDotdefaultProvider`: Subsequence | Symbol = js.native
+  var `autocomplete-plusDotdefaultProvider`: Subsequence | Symbol
   
   /**
     *  Suggestions will show as you type if this preference is enabled. If it is
@@ -91,14 +90,14 @@ trait ConfigValues
     *  'autocomplete-plus:activate' (shown below).
     */
   @JSName("autocomplete-plus.enableAutoActivation")
-  var `autocomplete-plusDotenableAutoActivation`: Boolean = js.native
+  var `autocomplete-plusDotenableAutoActivation`: Boolean
   
   /**
     *  If enabled, automatically insert suggestion on manual activation with
     *  'autocomplete-plus:activate' when there is only one match.
     */
   @JSName("autocomplete-plus.enableAutoConfirmSingleSuggestion")
-  var `autocomplete-plusDotenableAutoConfirmSingleSuggestion`: Boolean = js.native
+  var `autocomplete-plusDotenableAutoConfirmSingleSuggestion`: Boolean
   
   /**
     *  The package comes with a built-in provider that will provide suggestions
@@ -107,11 +106,11 @@ trait ConfigValues
     *  To stop using the built-in provider, disable this option.
     */
   @JSName("autocomplete-plus.enableBuiltinProvider")
-  var `autocomplete-plusDotenableBuiltinProvider`: Boolean = js.native
+  var `autocomplete-plusDotenableBuiltinProvider`: Boolean
   
   /** Identifies non-latin alphabet characters as letters. */
   @JSName("autocomplete-plus.enableExtendedUnicodeSupport")
-  var `autocomplete-plusDotenableExtendedUnicodeSupport`: Boolean = js.native
+  var `autocomplete-plusDotenableExtendedUnicodeSupport`: Boolean
   
   /**
     *  Suggestions will not be provided for files matching this list, e.g. *.md
@@ -119,7 +118,7 @@ trait ConfigValues
     *  as a separator, e.g. ["*.md", "*.txt"] (both Markdown and text files).
     */
   @JSName("autocomplete-plus.fileBlacklist")
-  var `autocomplete-plusDotfileBlacklist`: js.Array[String] = js.native
+  var `autocomplete-plusDotfileBlacklist`: js.Array[String]
   
   /**
     *  For grammars with no registered provider(s), the default provider will
@@ -127,116 +126,116 @@ trait ConfigValues
     *  currently editing.
     */
   @JSName("autocomplete-plus.includeCompletionsFromAllBuffers")
-  var `autocomplete-plusDotincludeCompletionsFromAllBuffers`: Boolean = js.native
+  var `autocomplete-plusDotincludeCompletionsFromAllBuffers`: Boolean
   
   /** The suggestion list will only show this many suggestions. */
   @JSName("autocomplete-plus.maxVisibleSuggestions")
-  var `autocomplete-plusDotmaxVisibleSuggestions`: Double = js.native
+  var `autocomplete-plusDotmaxVisibleSuggestions`: Double
   
   /**
     *  Only autocomplete when you've typed at least this many characters.
     *  Note: May not affect external providers.
     */
   @JSName("autocomplete-plus.minimumWordLength")
-  var `autocomplete-plusDotminimumWordLength`: Double = js.native
+  var `autocomplete-plusDotminimumWordLength`: Double
   
   /** Suggestions will not be provided for scopes matching this list. */
   @JSName("autocomplete-plus.scopeBlacklist")
-  var `autocomplete-plusDotscopeBlacklist`: js.Array[String] = js.native
+  var `autocomplete-plusDotscopeBlacklist`: js.Array[String]
   
   /**
     *  Should similar suggestions be removed from the list? If so how to determine
     *  they are similar.
     */
   @JSName("autocomplete-plus.similarSuggestionRemoval")
-  var `autocomplete-plusDotsimilarSuggestionRemoval`: none | textOrSnippet = js.native
+  var `autocomplete-plusDotsimilarSuggestionRemoval`: none | textOrSnippet
   
   /**
     *  Fuzzy searching is performed if this is disabled; if it is enabled, suggestions
     *  must begin with the prefix from the current word.
     */
   @JSName("autocomplete-plus.strictMatching")
-  var `autocomplete-plusDotstrictMatching`: Boolean = js.native
+  var `autocomplete-plusDotstrictMatching`: Boolean
   
   /**
     *  With 'Cursor' the suggestion list appears at the cursor's position.
     *  With 'Word' it appears at the beginning of the word that's being completed.
     */
   @JSName("autocomplete-plus.suggestionListFollows")
-  var `autocomplete-plusDotsuggestionListFollows`: Word | typings.atom.atomStrings.Cursor = js.native
+  var `autocomplete-plusDotsuggestionListFollows`: Word | typings.atom.atomStrings.Cursor
   
   /** Don't auto-activate when any of these classes are present in the editor. */
   @JSName("autocomplete-plus.suppressActivationForEditorClasses")
-  var `autocomplete-plusDotsuppressActivationForEditorClasses`: js.Array[String] = js.native
+  var `autocomplete-plusDotsuppressActivationForEditorClasses`: js.Array[String]
   
   /**
     *  -EXPERIMENTAL- Prefers runs of consecutive characters, acronyms and start
     *  of words.
     */
   @JSName("autocomplete-plus.useAlternateScoring")
-  var `autocomplete-plusDotuseAlternateScoring`: Boolean = js.native
+  var `autocomplete-plusDotuseAlternateScoring`: Boolean
   
   /**
     *  Disable this if you want to bind your own keystrokes to move around the
     *  suggestion list. You will also need to add definitions to your keymap.
     */
   @JSName("autocomplete-plus.useCoreMovementCommands")
-  var `autocomplete-plusDotuseCoreMovementCommands`: Boolean = js.native
+  var `autocomplete-plusDotuseCoreMovementCommands`: Boolean
   
   /** Gives words near the cursor position a higher score than those far away. */
   @JSName("autocomplete-plus.useLocalityBonus")
-  var `autocomplete-plusDotuseLocalityBonus`: Boolean = js.native
+  var `autocomplete-plusDotuseLocalityBonus`: Boolean
   
   /**
     *  Allow items to be previewed without adding them to a pane permanently, such as
     *  when single clicking files in the tree view.
     */
   @JSName("core.allowPendingPaneItems")
-  var coreDotallowPendingPaneItems: Boolean = js.native
+  var coreDotallowPendingPaneItems: Boolean
   
   /**
     *  Trigger the system's beep sound when certain actions cannot be executed or
     *  there are no results.
     */
   @JSName("core.audioBeep")
-  var coreDotaudioBeep: Boolean = js.native
+  var coreDotaudioBeep: Boolean
   
   /** Automatically update Atom when a new release is available. */
   @JSName("core.automaticallyUpdate")
-  var coreDotautomaticallyUpdate: Boolean = js.native
+  var coreDotautomaticallyUpdate: Boolean
   
   /** Close corresponding editors when a file is deleted outside Atom. */
   @JSName("core.closeDeletedFileTabs")
-  var coreDotcloseDeletedFileTabs: Boolean = js.native
+  var coreDotcloseDeletedFileTabs: Boolean
   
   /**
     *  When a window with no open tabs or panes is given the 'Close Tab' command,
     *  close that window.
     */
   @JSName("core.closeEmptyWindows")
-  var coreDotcloseEmptyWindows: Boolean = js.native
+  var coreDotcloseEmptyWindows: Boolean
   
   /**
     * Specify whether Atom should use the operating system's color profile (recommended)
     * or an alternative color profile.
     */
   @JSName("core.colorProfile")
-  var coreDotcolorProfile: default | srgb = js.native
+  var coreDotcolorProfile: default | srgb
   
   /**
     *  Associates scope names (e.g. "source.coffee") with arrays of file extensions
     *  and file names (e.g. ["Cakefile", ".coffee2"]).
     */
   @JSName("core.customFileTypes")
-  var coreDotcustomFileTypes: StringDictionary[js.Array[String]] = js.native
+  var coreDotcustomFileTypes: StringDictionary[js.Array[String]]
   
   /** When the last tab of a pane is closed, remove that pane as well. */
   @JSName("core.destroyEmptyPanes")
-  var coreDotdestroyEmptyPanes: Boolean = js.native
+  var coreDotdestroyEmptyPanes: Boolean
   
   /** List of names of installed packages which are not loaded at startup. */
   @JSName("core.disabledPackages")
-  var coreDotdisabledPackages: js.Array[String] = js.native
+  var coreDotdisabledPackages: js.Array[String]
   
   /**
     *  Files and directories ignored by the current project's VCS system will be ignored
@@ -246,11 +245,11 @@ trait ConfigValues
     *  folders.
     */
   @JSName("core.excludeVcsIgnoredPaths")
-  var coreDotexcludeVcsIgnoredPaths: Boolean = js.native
+  var coreDotexcludeVcsIgnoredPaths: Boolean
   
   /** Default character set encoding to use when reading and writing files. */
   @JSName("core.fileEncoding")
-  var coreDotfileEncoding: FileEncoding = js.native
+  var coreDotfileEncoding: FileEncoding
   
   /**
     *  Choose the underlying implementation used to watch for filesystem changes. Emulating
@@ -258,14 +257,14 @@ trait ConfigValues
     *  prevent crashes or freezes.
     */
   @JSName("core.fileSystemWatcher")
-  var coreDotfileSystemWatcher: native | experimental | poll | atom = js.native
+  var coreDotfileSystemWatcher: native | experimental | poll | atom
   
   /**
     *  Follow symbolic links when searching files and when opening files with the fuzzy
     *  finder.
     */
   @JSName("core.followSymlinks")
-  var coreDotfollowSymlinks: Boolean = js.native
+  var coreDotfollowSymlinks: Boolean
   
   /**
     *  List of glob patterns. Files and directories matching these patterns will be
@@ -273,7 +272,7 @@ trait ConfigValues
     *  packages might have additional config settings for ignoring names.
     */
   @JSName("core.ignoredNames")
-  var coreDotignoredNames: js.Array[String] = js.native
+  var coreDotignoredNames: js.Array[String]
   
   /**
     *  When checked opens an untitled editor when loading a blank environment (such as
@@ -282,11 +281,11 @@ trait ConfigValues
     *  This setting has no effect when restoring a previous state.
     */
   @JSName("core.openEmptyEditorOnStart")
-  var coreDotopenEmptyEditorOnStart: Boolean = js.native
+  var coreDotopenEmptyEditorOnStart: Boolean
   
   /** How many recent projects to show in the Reopen Project menu. */
   @JSName("core.reopenProjectMenuCount")
-  var coreDotreopenProjectMenuCount: Double = js.native
+  var coreDotreopenProjectMenuCount: Double
   
   /**
     *  When selected 'no', a blank environment is loaded. When selected 'yes' and Atom
@@ -296,76 +295,76 @@ trait ConfigValues
     *  how Atom is started.
     */
   @JSName("core.restorePreviousWindowsOnStart")
-  var coreDotrestorePreviousWindowsOnStart: no | yes | always = js.native
+  var coreDotrestorePreviousWindowsOnStart: no | yes | always
   
   /**
     *  Allow usage statistics and exception reports to be sent to the Atom team to help
     *  improve the product.
     */
   @JSName("core.telemetryConsent")
-  var coreDottelemetryConsent: limited | no | undecided = js.native
+  var coreDottelemetryConsent: limited | no | undecided
   
   /** Names of UI and syntax themes which will be used when Atom starts. */
   @JSName("core.themes")
-  var coreDotthemes: js.Array[String] = js.native
+  var coreDotthemes: js.Array[String]
   
   /** Use detected proxy settings when calling the `apm` command-line tool. */
   @JSName("core.useProxySettingsWhenCallingApm")
-  var coreDotuseProxySettingsWhenCallingApm: Boolean = js.native
+  var coreDotuseProxySettingsWhenCallingApm: Boolean
   
   /** Use the new Tree-sitter parsing system for supported languages. */
   @JSName("core.useTreeSitterParsers")
-  var coreDotuseTreeSitterParsers: Boolean = js.native
+  var coreDotuseTreeSitterParsers: Boolean
   
   /** List of names of installed packages which are not automatically updated. */
   @JSName("core.versionPinnedPackages")
-  var coreDotversionPinnedPackages: js.Array[String] = js.native
+  var coreDotversionPinnedPackages: js.Array[String]
   
   /** Warn before opening files larger than this number of megabytes. */
   @JSName("core.warnOnLargeFileLimit")
-  var coreDotwarnOnLargeFileLimit: Double = js.native
+  var coreDotwarnOnLargeFileLimit: Double
   
   /** Skip over tab-length runs of leading whitespace when moving the cursor. */
   @JSName("editor.atomicSoftTabs")
-  var editorDotatomicSoftTabs: Boolean = js.native
+  var editorDotatomicSoftTabs: Boolean
   
   /** Automatically indent the cursor when inserting a newline. */
   @JSName("editor.autoIndent")
-  var editorDotautoIndent: Boolean = js.native
+  var editorDotautoIndent: Boolean
   
   /** Automatically indent pasted text based on the indentation of the previous line. */
   @JSName("editor.autoIndentOnPaste")
-  var editorDotautoIndentOnPaste: Boolean = js.native
+  var editorDotautoIndentOnPaste: Boolean
   
   @JSName("editor.commentEnd")
-  var editorDotcommentEnd: String | Null = js.native
+  var editorDotcommentEnd: String | Null
   
   @JSName("editor.commentStart")
-  var editorDotcommentStart: String | Null = js.native
+  var editorDotcommentStart: String | Null
   
   /**
     *  Show confirmation dialog when checking out the HEAD revision and discarding
     *  changes to current file since last commit.
     */
   @JSName("editor.confirmCheckoutHeadRevision")
-  var editorDotconfirmCheckoutHeadRevision: Boolean = js.native
+  var editorDotconfirmCheckoutHeadRevision: Boolean
   
   @JSName("editor.decreaseIndentPattern")
-  var editorDotdecreaseIndentPattern: String | Null = js.native
+  var editorDotdecreaseIndentPattern: String | Null
   
   @JSName("editor.foldEndPattern")
-  var editorDotfoldEndPattern: String | Null = js.native
+  var editorDotfoldEndPattern: String | Null
   
   /** The name of the font family used for editor text. */
   @JSName("editor.fontFamily")
-  var editorDotfontFamily: String = js.native
+  var editorDotfontFamily: String
   
   /** Height in pixels of editor text. */
   @JSName("editor.fontSize")
-  var editorDotfontSize: Double = js.native
+  var editorDotfontSize: Double
   
   @JSName("editor.increaseIndentPattern")
-  var editorDotincreaseIndentPattern: String | Null = js.native
+  var editorDotincreaseIndentPattern: String | Null
   
   /**
     *  A hash of characters Atom will use to render whitespace characters. Keys are
@@ -373,53 +372,53 @@ trait ConfigValues
     *  turn off individual whitespace character types).
     */
   @JSName("editor.invisibles")
-  var editorDotinvisibles: Invisibles = js.native
+  var editorDotinvisibles: Invisibles
   
   /** Height of editor lines, as a multiplier of font size. */
   @JSName("editor.lineHeight")
-  var editorDotlineHeight: String | Double = js.native
+  var editorDotlineHeight: String | Double
   
   /**
     * Defines the maximum width of the editor window before soft wrapping is enforced,
     * in number of characters.
     */
   @JSName("editor.maxScreenLineLength")
-  var editorDotmaxScreenLineLength: Double = js.native
+  var editorDotmaxScreenLineLength: Double
   
   /** A string of non-word characters to define word boundaries. */
   @JSName("editor.nonWordCharacters")
-  var editorDotnonWordCharacters: String = js.native
+  var editorDotnonWordCharacters: String
   
   /**
     *  Identifies the length of a line which is used when wrapping text with the
     *  `Soft Wrap At Preferred Line Length` setting enabled, in number of characters.
     */
   @JSName("editor.preferredLineLength")
-  var editorDotpreferredLineLength: Double = js.native
+  var editorDotpreferredLineLength: Double
   
   /** Allow the editor to be scrolled past the end of the last line. */
   @JSName("editor.scrollPastEnd")
-  var editorDotscrollPastEnd: Boolean = js.native
+  var editorDotscrollPastEnd: Boolean
   
   /** Determines how fast the editor scrolls when using a mouse or trackpad. */
   @JSName("editor.scrollSensitivity")
-  var editorDotscrollSensitivity: Double = js.native
+  var editorDotscrollSensitivity: Double
   
   /** Show cursor while there is a selection. */
   @JSName("editor.showCursorOnSelection")
-  var editorDotshowCursorOnSelection: Boolean = js.native
+  var editorDotshowCursorOnSelection: Boolean
   
   /** Show indentation indicators in the editor. */
   @JSName("editor.showIndentGuide")
-  var editorDotshowIndentGuide: Boolean = js.native
+  var editorDotshowIndentGuide: Boolean
   
   /** Render placeholders for invisible characters, such as tabs, spaces and newlines. */
   @JSName("editor.showInvisibles")
-  var editorDotshowInvisibles: Boolean = js.native
+  var editorDotshowInvisibles: Boolean
   
   /** Show line numbers in the editor's gutter. */
   @JSName("editor.showLineNumbers")
-  var editorDotshowLineNumbers: Boolean = js.native
+  var editorDotshowLineNumbers: Boolean
   
   /**
     *  If the `Tab Type` config setting is set to "auto" and autodetection of tab type
@@ -427,7 +426,7 @@ trait ConfigValues
     *  or a hard tab will be inserted when the Tab key is pressed.
     */
   @JSName("editor.softTabs")
-  var editorDotsoftTabs: Boolean = js.native
+  var editorDotsoftTabs: Boolean
   
   /**
     *  Wraps lines that exceed the width of the window. When `Soft Wrap At Preferred
@@ -435,7 +434,7 @@ trait ConfigValues
     *  `Preferred Line Length` setting.
     */
   @JSName("editor.softWrap")
-  var editorDotsoftWrap: Boolean = js.native
+  var editorDotsoftWrap: Boolean
   
   /**
     *  Instead of wrapping lines to the window's width, wrap lines to the number of
@@ -446,18 +445,18 @@ trait ConfigValues
     *  the `wrap-guide` package.
     */
   @JSName("editor.softWrapAtPreferredLineLength")
-  var editorDotsoftWrapAtPreferredLineLength: Boolean = js.native
+  var editorDotsoftWrapAtPreferredLineLength: Boolean
   
   /**
     *  When soft wrap is enabled, defines length of additional indentation applied to
     *  wrapped lines, in number of characters.
     */
   @JSName("editor.softWrapHangingIndent")
-  var editorDotsoftWrapHangingIndent: Double = js.native
+  var editorDotsoftWrapHangingIndent: Double
   
   /** Number of spaces used to represent a tab. */
   @JSName("editor.tabLength")
-  var editorDottabLength: Double = js.native
+  var editorDottabLength: Double
   
   /**
     *  Determine character inserted when Tab key is pressed. Possible values: "auto",
@@ -468,90 +467,90 @@ trait ConfigValues
     *  auto-detection fails.
     */
   @JSName("editor.tabType")
-  var editorDottabType: auto | soft | hard = js.native
+  var editorDottabType: auto | soft | hard
   
   /**
     *  Time interval in milliseconds within which text editing operations will be
     *  grouped together in the undo history.
     */
   @JSName("editor.undoGroupingInterval")
-  var editorDotundoGroupingInterval: Double = js.native
+  var editorDotundoGroupingInterval: Double
   
   /**
     *  Change the editor font size when pressing the Ctrl key and scrolling the mouse
     *  up/down.
     */
   @JSName("editor.zoomFontWhenCtrlScrolling")
-  var editorDotzoomFontWhenCtrlScrolling: Boolean = js.native
+  var editorDotzoomFontWhenCtrlScrolling: Boolean
   
   /** Disabled providers. */
   @JSName("linter.disabledProviders")
-  var linterDotdisabledProviders: js.Array[String] = js.native
+  var linterDotdisabledProviders: js.Array[String]
   
   /** Ignore files matching this Glob. */
   @JSName("linter.ignoreGlob")
-  var linterDotignoreGlob: String = js.native
+  var linterDotignoreGlob: String
   
   /**
     *  Lint files while typing, without the need to save (only for supported
     *  providers).
     */
   @JSName("linter.lintOnChange")
-  var linterDotlintOnChange: Boolean = js.native
+  var linterDotlintOnChange: Boolean
   
   /** Interval at which linting is done as you type (in ms). */
   @JSName("linter.lintOnChangeInterval")
-  var linterDotlintOnChangeInterval: Double = js.native
+  var linterDotlintOnChangeInterval: Double
   
   /** Lint files automatically when they are opened. */
   @JSName("linter.lintOnOpen")
-  var linterDotlintOnOpen: Boolean = js.native
+  var linterDotlintOnOpen: Boolean
   
   /** Lint tabs while they are still in preview status. */
   @JSName("linter.lintPreviewTabs")
-  var linterDotlintPreviewTabs: Boolean = js.native
+  var linterDotlintPreviewTabs: Boolean
   
   /**
     *  Format for the cursor position status bar element, where %L is the line
     *  number and %C is the column number.
     */
   @JSName("status-bar.cursorPositionFormat")
-  var `status-barDotcursorPositionFormat`: String = js.native
+  var `status-barDotcursorPositionFormat`: String
   
   /** Fit the status-bar to the window's full-width. */
   @JSName("status-bar.fullWidth")
-  var `status-barDotfullWidth`: Boolean = js.native
+  var `status-barDotfullWidth`: Boolean
   
   /** Show status bar at the bottom of the workspace. */
   @JSName("status-bar.isVisible")
-  var `status-barDotisVisible`: Boolean = js.native
+  var `status-barDotisVisible`: Boolean
   
   /**
     *  Format for the selection count status bar element, where %L is the line
     *  count and %C is the character count.
     */
   @JSName("status-bar.selectionCountFormat")
-  var `status-barDotselectionCountFormat`: String = js.native
+  var `status-barDotselectionCountFormat`: String
   
   /** Fit the tool-bar to the window's full-width. - default: true */
   @JSName("tool-bar.fullWidth")
-  var `tool-barDotfullWidth`: Boolean = js.native
+  var `tool-barDotfullWidth`: Boolean
   
   /** Icon size. - default: "24px" */
   @JSName("tool-bar.iconSize")
-  var `tool-barDoticonSize`: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px` = js.native
+  var `tool-barDoticonSize`: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
   
   /** Position of tool-bar. - default: "Top"  */
   @JSName("tool-bar.position")
-  var `tool-barDotposition`: Top | Right | Bottom | Left = js.native
+  var `tool-barDotposition`: Top | Right | Bottom | Left
   
   /** On MacOS, show seven first tool-bar buttons in the TouchBar. - default: true */
   @JSName("tool-bar.useTouchBar")
-  var `tool-barDotuseTouchBar`: String = js.native
+  var `tool-barDotuseTouchBar`: String
   
   /** Make tool-bar visible. - default: true */
   @JSName("tool-bar.visible")
-  var `tool-barDotvisible`: Boolean = js.native
+  var `tool-barDotvisible`: Boolean
 }
 object ConfigValues {
   
@@ -729,6 +728,11 @@ object ConfigValues {
     __obj.updateDynamic("tool-bar.position")(`tool-barDotposition`.asInstanceOf[js.Any])
     __obj.updateDynamic("tool-bar.useTouchBar")(`tool-barDotuseTouchBar`.asInstanceOf[js.Any])
     __obj.updateDynamic("tool-bar.visible")(`tool-barDotvisible`.asInstanceOf[js.Any])
+    __obj.updateDynamic("editor.commentEnd")(null)
+    __obj.updateDynamic("editor.commentStart")(null)
+    __obj.updateDynamic("editor.decreaseIndentPattern")(null)
+    __obj.updateDynamic("editor.foldEndPattern")(null)
+    __obj.updateDynamic("editor.increaseIndentPattern")(null)
     __obj.asInstanceOf[ConfigValues]
   }
   

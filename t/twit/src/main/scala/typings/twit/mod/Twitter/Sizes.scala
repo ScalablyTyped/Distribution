@@ -2,19 +2,17 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sizes extends StObject {
   
-  var large: Size = js.native
+  var large: Size
   
-  var medium: Size = js.native
+  var medium: Size
   
-  var small: Size = js.native
+  var small: Size
   
-  var thumb: Size = js.native
+  var thumb: Size
 }
 object Sizes {
   

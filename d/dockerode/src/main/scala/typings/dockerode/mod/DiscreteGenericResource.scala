@@ -2,15 +2,15 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiscreteGenericResource extends GenericResource {
+trait DiscreteGenericResource
+  extends StObject
+     with GenericResource {
   
-  var Kind: js.UndefOr[String] = js.native
+  var Kind: js.UndefOr[String] = js.undefined
   
-  var Value: js.UndefOr[Double] = js.native
+  var Value: js.UndefOr[Double] = js.undefined
 }
 object DiscreteGenericResource {
   

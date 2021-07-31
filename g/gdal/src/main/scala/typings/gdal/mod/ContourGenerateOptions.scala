@@ -2,27 +2,25 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContourGenerateOptions extends StObject {
   
-  var dst: Layer = js.native
+  var dst: Layer
   
-  var elevField: js.UndefOr[Double] = js.native
+  var elevField: js.UndefOr[Double] = js.undefined
   
-  var fixedLevels: js.UndefOr[js.Array[Double]] = js.native
+  var fixedLevels: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var idField: js.UndefOr[Double] = js.native
+  var idField: js.UndefOr[Double] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var nodata: js.UndefOr[Double] = js.native
+  var nodata: js.UndefOr[Double] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var src: RasterBand = js.native
+  var src: RasterBand
 }
 object ContourGenerateOptions {
   

@@ -2,15 +2,13 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabelsViewColumns extends StObject {
   
-  var title: String = js.native
+  var title: String
   
-  var titleAria: String = js.native
+  var titleAria: String
 }
 object MUIDataTableTextLabelsViewColumns {
   

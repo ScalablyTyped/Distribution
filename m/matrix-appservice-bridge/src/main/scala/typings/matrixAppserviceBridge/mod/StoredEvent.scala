@@ -4,7 +4,6 @@ import typings.matrixAppserviceBridge.eventMod.StoredEventDoc
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "StoredEvent")
@@ -25,17 +24,20 @@ class StoredEvent protected ()
     eventId: String,
     remoteRoomId: String,
     remoteEventId: String,
-    _extras: Record[String, _]
+    _extras: Record[String, js.Any]
   ) = this()
 }
 /* static members */
 object StoredEvent {
   
+  @JSImport("matrix-appservice-bridge", "StoredEvent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Set data about this event from a serialized data object.
     * @param data The serialized data
     */
-  @JSImport("matrix-appservice-bridge", "StoredEvent.deserialize")
-  @js.native
-  def deserialize(data: StoredEventDoc): typings.matrixAppserviceBridge.eventMod.StoredEvent = js.native
+  @scala.inline
+  def deserialize(data: StoredEventDoc): typings.matrixAppserviceBridge.eventMod.StoredEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any]).asInstanceOf[typings.matrixAppserviceBridge.eventMod.StoredEvent]
 }

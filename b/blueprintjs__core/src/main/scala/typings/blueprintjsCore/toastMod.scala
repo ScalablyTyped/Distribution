@@ -10,7 +10,6 @@ import typings.blueprintjsIcons.iconNameMod.IconName
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -61,9 +60,9 @@ object toastMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IToastProps
-    extends IProps
+    extends StObject
+       with IProps
        with IIntentProps {
     
     /**
@@ -72,26 +71,26 @@ object toastMod {
       * cannot have its own intent color that might conflict with the toast's intent). Omit this
       * prop to omit the action button.
       */
-    var action: js.UndefOr[IActionProps with ILinkProps] = js.native
+    var action: js.UndefOr[IActionProps & ILinkProps] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render before the message. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /** Message to display in the body of the toast. */
-    var message: ReactNode = js.native
+    var message: ReactNode
     
     /**
       * Callback invoked when the toast is dismissed, either by the user or by the timeout.
       * The value of the argument indicates whether the toast was closed because the timeout expired.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* didTimeoutExpire */ Boolean, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* didTimeoutExpire */ Boolean, Unit]] = js.undefined
     
     /**
       * Milliseconds to wait before automatically dismissing toast.
       * Providing a value less than or equal to 0 will disable the timeout (this is discouraged).
       * @default 5000
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object IToastProps {
     
@@ -105,7 +104,7 @@ object toastMod {
     implicit class IToastPropsMutableBuilder[Self <: IToastProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAction(value: IActionProps with ILinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      def setAction(value: IActionProps & ILinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setActionUndefined: Self = StObject.set(x, "action", js.undefined)

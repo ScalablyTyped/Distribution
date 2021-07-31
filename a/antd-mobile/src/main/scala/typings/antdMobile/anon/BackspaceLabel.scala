@@ -2,17 +2,15 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackspaceLabel extends StObject {
   
-  var backspaceLabel: String = js.native
+  var backspaceLabel: String
   
-  var cancelKeyboardLabel: String = js.native
+  var cancelKeyboardLabel: String
   
-  var confirmLabel: String = js.native
+  var confirmLabel: String
 }
 object BackspaceLabel {
   

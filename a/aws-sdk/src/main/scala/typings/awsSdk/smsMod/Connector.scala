@@ -2,61 +2,59 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connector extends StObject {
   
   /**
     * The time the connector was associated.
     */
-  var associatedOn: js.UndefOr[Timestamp] = js.native
+  var associatedOn: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The capabilities of the connector.
     */
-  var capabilityList: js.UndefOr[ConnectorCapabilityList] = js.native
+  var capabilityList: js.UndefOr[ConnectorCapabilityList] = js.undefined
   
   /**
     * The ID of the connector.
     */
-  var connectorId: js.UndefOr[ConnectorId] = js.native
+  var connectorId: js.UndefOr[ConnectorId] = js.undefined
   
   /**
     * The IP address of the connector.
     */
-  var ipAddress: js.UndefOr[IpAddress] = js.native
+  var ipAddress: js.UndefOr[IpAddress] = js.undefined
   
   /**
     * The MAC address of the connector.
     */
-  var macAddress: js.UndefOr[MacAddress] = js.native
+  var macAddress: js.UndefOr[MacAddress] = js.undefined
   
   /**
     * The status of the connector.
     */
-  var status: js.UndefOr[ConnectorStatus] = js.native
+  var status: js.UndefOr[ConnectorStatus] = js.undefined
   
   /**
     * The connector version.
     */
-  var version: js.UndefOr[ConnectorVersion] = js.native
+  var version: js.UndefOr[ConnectorVersion] = js.undefined
   
   /**
     * The ID of the VM manager.
     */
-  var vmManagerId: js.UndefOr[VmManagerId] = js.native
+  var vmManagerId: js.UndefOr[VmManagerId] = js.undefined
   
   /**
     * The name of the VM manager.
     */
-  var vmManagerName: js.UndefOr[VmManagerName] = js.native
+  var vmManagerName: js.UndefOr[VmManagerName] = js.undefined
   
   /**
     * The VM management product.
     */
-  var vmManagerType: js.UndefOr[VmManagerType] = js.native
+  var vmManagerType: js.UndefOr[VmManagerType] = js.undefined
 }
 object Connector {
   

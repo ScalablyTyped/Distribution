@@ -5,17 +5,15 @@ import typings.grommet.utilsMod.BorderType
 import typings.grommet.utilsMod.PadType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[BorderType] = js.native
+  var border: js.UndefOr[BorderType] = js.undefined
   
-  var pad: js.UndefOr[PadType] = js.native
+  var pad: js.UndefOr[PadType] = js.undefined
 }
 object Background {
   

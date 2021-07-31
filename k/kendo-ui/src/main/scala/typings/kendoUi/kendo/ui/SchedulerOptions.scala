@@ -4,117 +4,115 @@ import typings.kendoUi.kendo.data.SchedulerDataSource
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchedulerOptions extends StObject {
   
-  var add: js.UndefOr[js.Function1[/* e */ SchedulerAddEvent, Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* e */ SchedulerAddEvent, Unit]] = js.undefined
   
-  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.native
+  var allDayEventTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var allDaySlot: js.UndefOr[Boolean] = js.native
+  var allDaySlot: js.UndefOr[Boolean] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ SchedulerCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ SchedulerCancelEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ SchedulerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SchedulerChangeEvent, Unit]] = js.undefined
   
-  var currentTimeMarker: js.UndefOr[Boolean | SchedulerCurrentTimeMarker] = js.native
+  var currentTimeMarker: js.UndefOr[Boolean | SchedulerCurrentTimeMarker] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ SchedulerDataBindingEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ SchedulerDataBindingEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ SchedulerDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ SchedulerDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | SchedulerDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | SchedulerDataSource] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var dateHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ SchedulerEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ SchedulerEditEvent, Unit]] = js.undefined
   
-  var editable: js.UndefOr[Boolean | SchedulerEditable] = js.native
+  var editable: js.UndefOr[Boolean | SchedulerEditable] = js.undefined
   
-  var endTime: js.UndefOr[Date] = js.native
+  var endTime: js.UndefOr[Date] = js.undefined
   
-  var eventTemplate: js.UndefOr[String | js.Function] = js.native
+  var eventTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var footer: js.UndefOr[Boolean | SchedulerFooter] = js.native
+  var footer: js.UndefOr[Boolean | SchedulerFooter] = js.undefined
   
-  var group: js.UndefOr[SchedulerGroup] = js.native
+  var group: js.UndefOr[SchedulerGroup] = js.undefined
   
-  var groupHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var groupHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var majorTick: js.UndefOr[Double] = js.native
+  var majorTick: js.UndefOr[Double] = js.undefined
   
-  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var majorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var max: js.UndefOr[Date] = js.native
+  var max: js.UndefOr[Date] = js.undefined
   
-  var messages: js.UndefOr[SchedulerMessages] = js.native
+  var messages: js.UndefOr[SchedulerMessages] = js.undefined
   
-  var min: js.UndefOr[Date] = js.native
+  var min: js.UndefOr[Date] = js.undefined
   
-  var minorTickCount: js.UndefOr[Double] = js.native
+  var minorTickCount: js.UndefOr[Double] = js.undefined
   
-  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var minorTimeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var mobile: js.UndefOr[Boolean | String] = js.native
+  var mobile: js.UndefOr[Boolean | String] = js.undefined
   
-  var move: js.UndefOr[js.Function1[/* e */ SchedulerMoveEvent, Unit]] = js.native
+  var move: js.UndefOr[js.Function1[/* e */ SchedulerMoveEvent, Unit]] = js.undefined
   
-  var moveEnd: js.UndefOr[js.Function1[/* e */ SchedulerMoveEndEvent, Unit]] = js.native
+  var moveEnd: js.UndefOr[js.Function1[/* e */ SchedulerMoveEndEvent, Unit]] = js.undefined
   
-  var moveStart: js.UndefOr[js.Function1[/* e */ SchedulerMoveStartEvent, Unit]] = js.native
+  var moveStart: js.UndefOr[js.Function1[/* e */ SchedulerMoveStartEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ SchedulerNavigateEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ SchedulerNavigateEvent, Unit]] = js.undefined
   
-  var pdf: js.UndefOr[SchedulerPdf] = js.native
+  var pdf: js.UndefOr[SchedulerPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ SchedulerPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ SchedulerPdfExportEvent, Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ SchedulerRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ SchedulerRemoveEvent, Unit]] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ SchedulerResizeEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ SchedulerResizeEvent, Unit]] = js.undefined
   
-  var resizeEnd: js.UndefOr[js.Function1[/* e */ SchedulerResizeEndEvent, Unit]] = js.native
+  var resizeEnd: js.UndefOr[js.Function1[/* e */ SchedulerResizeEndEvent, Unit]] = js.undefined
   
-  var resizeStart: js.UndefOr[js.Function1[/* e */ SchedulerResizeStartEvent, Unit]] = js.native
+  var resizeStart: js.UndefOr[js.Function1[/* e */ SchedulerResizeStartEvent, Unit]] = js.undefined
   
-  var resources: js.UndefOr[js.Array[SchedulerResource]] = js.native
+  var resources: js.UndefOr[js.Array[SchedulerResource]] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ SchedulerSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ SchedulerSaveEvent, Unit]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var showWorkHours: js.UndefOr[Boolean] = js.native
+  var showWorkHours: js.UndefOr[Boolean] = js.undefined
   
-  var snap: js.UndefOr[Boolean] = js.native
+  var snap: js.UndefOr[Boolean] = js.undefined
   
-  var startTime: js.UndefOr[Date] = js.native
+  var startTime: js.UndefOr[Date] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[SchedulerToolbarItem]] = js.native
+  var toolbar: js.UndefOr[js.Array[SchedulerToolbarItem]] = js.undefined
   
-  var views: js.UndefOr[js.Array[SchedulerView]] = js.native
+  var views: js.UndefOr[js.Array[SchedulerView]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
   
-  var workDayEnd: js.UndefOr[Date] = js.native
+  var workDayEnd: js.UndefOr[Date] = js.undefined
   
-  var workDayStart: js.UndefOr[Date] = js.native
+  var workDayStart: js.UndefOr[Date] = js.undefined
   
-  var workWeekEnd: js.UndefOr[Double] = js.native
+  var workWeekEnd: js.UndefOr[Double] = js.undefined
   
-  var workWeekStart: js.UndefOr[Double] = js.native
+  var workWeekStart: js.UndefOr[Double] = js.undefined
 }
 object SchedulerOptions {
   

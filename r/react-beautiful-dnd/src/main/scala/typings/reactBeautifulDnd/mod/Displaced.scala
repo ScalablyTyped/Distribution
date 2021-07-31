@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Displaced extends StObject {
   
-  var backwards: DisplacementGroups = js.native
+  var backwards: DisplacementGroups
   
-  var forwards: DisplacementGroups = js.native
+  var forwards: DisplacementGroups
 }
 object Displaced {
   

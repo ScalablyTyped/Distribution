@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvertiserGeneralConfig extends StObject {
   
   /**
@@ -16,20 +14,20 @@ trait AdvertiserGeneralConfig extends StObject {
     * : Norwegian Krone * `NZD` : New Zealand Dollar * `PEN` : Peruvian Nuevo Sol * `PLN` : Polish Zloty * `RON` : New Romanian Leu * `RUB` : Russian Ruble * `SEK` : Swedish Krona * `TRY`
     * : Turkish Lira * `TWD` : New Taiwan Dollar * `USD` : US Dollar * `ZAR` : South African Rand
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The domain URL of the advertiser's primary website. The system will send this information to publishers that require website URL to associate a campaign with an
     * advertiser. Provide a URL with no path or query string, beginning with `http:` or `https:`. For example, http://www.example.com
     */
-  var domainUrl: js.UndefOr[String] = js.native
+  var domainUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The standard TZ database name of the advertiser's time zone. For example, `America/New_York`. See more at: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
     * For CM360 hybrid advertisers, the time zone is the same as that of the associated CM360 account; for third-party only advertisers, the time zone is the same as that of the parent
     * partner.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object AdvertiserGeneralConfig {
   

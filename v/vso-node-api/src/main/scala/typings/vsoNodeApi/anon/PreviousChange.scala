@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviousChange extends StObject {
   
-  var firstParent: scala.Double = js.native
+  var firstParent: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var previousChange: scala.Double = js.native
+  var previousChange: scala.Double
 }
 object PreviousChange {
   

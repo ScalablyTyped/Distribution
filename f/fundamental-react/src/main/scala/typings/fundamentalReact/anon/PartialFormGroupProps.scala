@@ -2,14 +2,12 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Forms/FormGroup.FormGroupProps> */
-@js.native
 trait PartialFormGroupProps extends StObject {
   
-  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
 }
 object PartialFormGroupProps {
   

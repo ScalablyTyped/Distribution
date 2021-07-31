@@ -4,13 +4,13 @@ import typings.scrollmagic.scrollmagicStrings.shift
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShiftEvent extends Event[shift] {
+trait ShiftEvent
+  extends StObject
+     with Event[shift] {
   
-  val reason: String = js.native
+  val reason: String
 }
 object ShiftEvent {
   
@@ -21,11 +21,10 @@ object ShiftEvent {
     reason: String,
     target: Scene,
     timeStamp: Date,
-    timestamp: Date,
-    `type`: shift
+    timestamp: Date
   ): ShiftEvent = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("shift")
     __obj.asInstanceOf[ShiftEvent]
   }
   

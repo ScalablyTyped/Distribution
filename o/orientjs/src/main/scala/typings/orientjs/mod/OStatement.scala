@@ -2,12 +2,12 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OStatement
-  extends OQuery[js.Any] {
+  extends StObject
+     with OQuery[js.Any] {
   
   def add(property: String, value: js.Any): OStatement = js.native
   
@@ -27,9 +27,9 @@ trait OStatement
   def content(param: js.Any): OStatement = js.native
   
   def create(): OStatement = js.native
-  def create(paramtype: js.UndefOr[scala.Nothing], paramname: String): OStatement = js.native
   def create(paramtype: String): OStatement = js.native
   def create(paramtype: String, paramname: String): OStatement = js.native
+  def create(paramtype: Unit, paramname: String): OStatement = js.native
   
   def delete(): OStatement = js.native
   def delete(param: String): OStatement = js.native
@@ -48,9 +48,9 @@ trait OStatement
   def `if`(condition: OSqlExpression, statements: js.Array[OStatement]): OStatement = js.native
   
   def increment(): OStatement = js.native
-  def increment(property: js.UndefOr[scala.Nothing], value: js.Any): OStatement = js.native
   def increment(property: String): OStatement = js.native
   def increment(property: String, value: js.Any): OStatement = js.native
+  def increment(property: Unit, value: js.Any): OStatement = js.native
   
   def insert(): OStatement = js.native
   def insert(param: String): OStatement = js.native
@@ -70,13 +70,6 @@ trait OStatement
   def lucene(property: js.Any, luceneQuery: String): OStatement = js.native
   
   def near(latitudeProperty: String, longitudeProperty: String, longitude: Double): OStatement = js.native
-  def near(
-    latitudeProperty: String,
-    longitudeProperty: String,
-    longitude: Double,
-    latitude: js.UndefOr[scala.Nothing],
-    maxDistanceInKms: Double
-  ): OStatement = js.native
   def near(latitudeProperty: String, longitudeProperty: String, longitude: Double, latitude: Double): OStatement = js.native
   def near(
     latitudeProperty: String,
@@ -85,14 +78,14 @@ trait OStatement
     latitude: Double,
     maxDistanceInKms: Double
   ): OStatement = js.native
-  def near(latitudeProperty: String, longitudeProperty: Double, longitude: Double): OStatement = js.native
   def near(
     latitudeProperty: String,
-    longitudeProperty: Double,
+    longitudeProperty: String,
     longitude: Double,
-    latitude: js.UndefOr[scala.Nothing],
+    latitude: Unit,
     maxDistanceInKms: Double
   ): OStatement = js.native
+  def near(latitudeProperty: String, longitudeProperty: Double, longitude: Double): OStatement = js.native
   def near(latitudeProperty: String, longitudeProperty: Double, longitude: Double, latitude: Double): OStatement = js.native
   def near(
     latitudeProperty: String,
@@ -101,14 +94,14 @@ trait OStatement
     latitude: Double,
     maxDistanceInKms: Double
   ): OStatement = js.native
-  def near(latitudeProperty: js.Any, longitudeProperty: String, longitude: Double): OStatement = js.native
   def near(
-    latitudeProperty: js.Any,
-    longitudeProperty: String,
+    latitudeProperty: String,
+    longitudeProperty: Double,
     longitude: Double,
-    latitude: js.UndefOr[scala.Nothing],
+    latitude: Unit,
     maxDistanceInKms: Double
   ): OStatement = js.native
+  def near(latitudeProperty: js.Any, longitudeProperty: String, longitude: Double): OStatement = js.native
   def near(latitudeProperty: js.Any, longitudeProperty: String, longitude: Double, latitude: Double): OStatement = js.native
   def near(
     latitudeProperty: js.Any,
@@ -117,20 +110,27 @@ trait OStatement
     latitude: Double,
     maxDistanceInKms: Double
   ): OStatement = js.native
-  def near(latitudeProperty: js.Any, longitudeProperty: Double, longitude: Double): OStatement = js.native
   def near(
     latitudeProperty: js.Any,
-    longitudeProperty: Double,
+    longitudeProperty: String,
     longitude: Double,
-    latitude: js.UndefOr[scala.Nothing],
+    latitude: Unit,
     maxDistanceInKms: Double
   ): OStatement = js.native
+  def near(latitudeProperty: js.Any, longitudeProperty: Double, longitude: Double): OStatement = js.native
   def near(latitudeProperty: js.Any, longitudeProperty: Double, longitude: Double, latitude: Double): OStatement = js.native
   def near(
     latitudeProperty: js.Any,
     longitudeProperty: Double,
     longitude: Double,
     latitude: Double,
+    maxDistanceInKms: Double
+  ): OStatement = js.native
+  def near(
+    latitudeProperty: js.Any,
+    longitudeProperty: Double,
+    longitude: Double,
+    latitude: Unit,
     maxDistanceInKms: Double
   ): OStatement = js.native
   
@@ -182,17 +182,13 @@ trait OStatement
   def update(param: js.Array[String]): OStatement = js.native
   
   def upsert(): OStatement = js.native
-  def upsert(
-    condition: js.UndefOr[scala.Nothing],
-    params: js.UndefOr[scala.Nothing],
-    comparisonOperator: String
-  ): OStatement = js.native
-  def upsert(condition: js.UndefOr[scala.Nothing], params: js.Any): OStatement = js.native
-  def upsert(condition: js.UndefOr[scala.Nothing], params: js.Any, comparisonOperator: String): OStatement = js.native
   def upsert(condition: js.Any): OStatement = js.native
-  def upsert(condition: js.Any, params: js.UndefOr[scala.Nothing], comparisonOperator: String): OStatement = js.native
   def upsert(condition: js.Any, params: js.Any): OStatement = js.native
   def upsert(condition: js.Any, params: js.Any, comparisonOperator: String): OStatement = js.native
+  def upsert(condition: js.Any, params: Unit, comparisonOperator: String): OStatement = js.native
+  def upsert(condition: Unit, params: js.Any): OStatement = js.native
+  def upsert(condition: Unit, params: js.Any, comparisonOperator: String): OStatement = js.native
+  def upsert(condition: Unit, params: Unit, comparisonOperator: String): OStatement = js.native
   
   def wait(waitLimit: Double): OStatement = js.native
   

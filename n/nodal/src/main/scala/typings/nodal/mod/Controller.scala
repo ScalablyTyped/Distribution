@@ -3,7 +3,6 @@ package typings.nodal.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "Controller")
@@ -44,8 +43,8 @@ class Controller protected ()
     */
   def notImplemented(msg: String, details: js.Any): Boolean = js.native
   
-  def respond(data: js.Array[_]): Boolean = js.native
-  def respond(data: js.Array[_], arrInterface: js.Array[String]): Boolean = js.native
+  def respond(data: js.Array[js.Any]): Boolean = js.native
+  def respond(data: js.Array[js.Any], arrInterface: js.Array[String]): Boolean = js.native
   def respond(data: js.Object): Boolean = js.native
   def respond(data: js.Object, arrInterface: js.Array[String]): Boolean = js.native
   def respond(data: Model): Boolean = js.native

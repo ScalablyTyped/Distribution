@@ -7,7 +7,6 @@ import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.chromeApps.chromeAppsStrings.win_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -22,11 +21,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object signedInDevices {
   
-  @js.native
   trait DeviceInfo extends StObject {
     
     /** Version of chrome running in this device. */
-    var chromeVersion: String = js.native
+    var chromeVersion: String
     
     /**
       * Unique Id for this device.
@@ -34,19 +32,19 @@ object signedInDevices {
       * This id cannot be used to refer to the same device from
       * another device or extension.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Name of the device.
       * This name is usually set by the user when setting up a device.
       */
-    var name: String = js.native
+    var name: String
     
     /** The OS of the device. */
-    var os: OS = js.native
+    var os: OS
     
     /** Device type */
-    var `type`: DeviceType = js.native
+    var `type`: DeviceType
   }
   object DeviceInfo {
     

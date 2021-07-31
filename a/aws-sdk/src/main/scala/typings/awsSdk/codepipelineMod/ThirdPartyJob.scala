@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThirdPartyJob extends StObject {
   
   /**
     * The clientToken portion of the clientId and clientToken pair used to verify that the calling entity is allowed access to the job and its details.
     */
-  var clientId: js.UndefOr[ClientId] = js.native
+  var clientId: js.UndefOr[ClientId] = js.undefined
   
   /**
     * The identifier used to identify the job in AWS CodePipeline.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
 }
 object ThirdPartyJob {
   

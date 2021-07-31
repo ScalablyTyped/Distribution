@@ -4,10 +4,13 @@ import typings.d3Time.mod.CountableTimeInterval
 import typings.plottable.tickGeneratorsMod.ITickGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scales {
+  
+  @JSImport("plottable", "Scales")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable", "Scales.Category")
   @js.native
@@ -21,13 +24,15 @@ object Scales {
   /* static members */
   object Category {
     
-    @JSImport("plottable", "Scales.Category._convertToPlottableInnerPadding")
+    @JSImport("plottable", "Scales.Category")
     @js.native
-    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable", "Scales.Category._convertToPlottableOuterPadding")
-    @js.native
-    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
+    @scala.inline
+    def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableInnerPadding")(d3InnerPadding.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_convertToPlottableOuterPadding")(d3OuterPadding.asInstanceOf[js.Any], d3InnerPadding.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable", "Scales.Color")
@@ -63,9 +68,8 @@ object Scales {
     @scala.inline
     def _MAXIMUM_COLORS_FROM_CSS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_MAXIMUM_COLORS_FROM_CSS")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable", "Scales.Color._getPlottableColors")
-    @js.native
-    def _getPlottableColors(): js.Any = js.native
+    @scala.inline
+    def _getPlottableColors(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_getPlottableColors")().asInstanceOf[js.Any]
     
     @JSImport("plottable", "Scales.Color._plottableColorCache")
     @js.native
@@ -73,9 +77,8 @@ object Scales {
     @scala.inline
     def _plottableColorCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_plottableColorCache")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable", "Scales.Color.invalidateColorCache")
-    @js.native
-    def invalidateColorCache(): Unit = js.native
+    @scala.inline
+    def invalidateColorCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateColorCache")().asInstanceOf[Unit]
   }
   
   @JSImport("plottable", "Scales.InterpolatedColor")
@@ -170,13 +173,15 @@ object Scales {
   
   object TickGenerators {
     
-    @JSImport("plottable", "Scales.TickGenerators.integerTickGenerator")
+    @JSImport("plottable", "Scales.TickGenerators")
     @js.native
-    def integerTickGenerator(): ITickGenerator[Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable", "Scales.TickGenerators.intervalTickGenerator")
-    @js.native
-    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = js.native
+    @scala.inline
+    def integerTickGenerator(): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("integerTickGenerator")().asInstanceOf[ITickGenerator[Double]]
+    
+    @scala.inline
+    def intervalTickGenerator(interval: Double): ITickGenerator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("intervalTickGenerator")(interval.asInstanceOf[js.Any]).asInstanceOf[ITickGenerator[Double]]
   }
   
   @JSImport("plottable", "Scales.Time")
@@ -191,16 +196,18 @@ object Scales {
   /* static members */
   object Time {
     
+    @JSImport("plottable", "Scales.Time")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
-    @JSImport("plottable", "Scales.Time.timeIntervalToD3Time")
-    @js.native
-    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = js.native
+    @scala.inline
+    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
   
-  @JSImport("plottable", "Scales.isTransformable")
-  @js.native
-  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = js.native
+  @scala.inline
+  def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransformable")(scale.asInstanceOf[js.Any]).asInstanceOf[/* is plottable.plottable/build/src/scales.ITransformableScale */ Boolean]
 }

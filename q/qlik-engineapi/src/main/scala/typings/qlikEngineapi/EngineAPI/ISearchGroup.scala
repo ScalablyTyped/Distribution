@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchGroup...
   */
-@js.native
 trait ISearchGroup extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait ISearchGroup extends StObject {
     * -  2 for GenericObjectsType: the type of the group is a generic object.
     *      This group contains search matches that are related to generic objects in the app.
     */
-  var qGroupType: SearchObjectsGroupType = js.native
+  var qGroupType: SearchObjectsGroupType
   
   /**
     * Identifier of the search group.
     */
-  var qId: Double = js.native
+  var qId: Double
   
   /**
     * List of items in the search group.
@@ -35,18 +33,18 @@ trait ISearchGroup extends StObject {
     * to
     * the value of SearchGroupOptions.qOffset + SearchGroupOptions.qCount
     */
-  var qItems: js.Array[ISearchGroupItem] = js.native
+  var qItems: js.Array[ISearchGroupItem]
   
   /**
     * Indexes of the search terms that are included in the group.
     * These search terms are related to the list of terms defined in SearchResult.qSearchTerms.
     */
-  var qSearchTermsMatched: js.Array[Double] = js.native
+  var qSearchTermsMatched: js.Array[Double]
   
   /**
     * Total number of distinct items in the search group.
     */
-  var qTotalNumberOfItems: Double = js.native
+  var qTotalNumberOfItems: Double
 }
 object ISearchGroup {
   

@@ -4,17 +4,15 @@ import typings.d3pie.d3pieStrings.curved
 import typings.d3pie.d3pieStrings.straight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[curved | straight] = js.native
+  var style: js.UndefOr[curved | straight] = js.undefined
 }
 object Enabled {
   

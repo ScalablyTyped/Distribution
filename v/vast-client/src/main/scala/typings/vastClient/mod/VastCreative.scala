@@ -2,29 +2,27 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastCreative extends StObject {
   
-  var adId: String | Null = js.native
+  var adId: String | Null
   
-  var apiFramework: String | Null = js.native
+  var apiFramework: String | Null
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var sequence: String | Double | Null = js.native
+  var sequence: String | Double | Null
   
-  var trackingEvents: VastTrackingEvents = js.native
+  var trackingEvents: VastTrackingEvents
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object VastCreative {
   
   @scala.inline
   def apply(trackingEvents: VastTrackingEvents, `type`: String): VastCreative = {
-    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(trackingEvents = trackingEvents.asInstanceOf[js.Any], adId = null, apiFramework = null, id = null, sequence = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastCreative]
   }

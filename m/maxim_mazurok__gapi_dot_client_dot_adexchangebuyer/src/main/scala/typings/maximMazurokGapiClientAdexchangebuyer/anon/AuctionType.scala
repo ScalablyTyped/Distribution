@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAdexchangebuyer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuctionType extends StObject {
   
   /** Only set when contextType=AUCTION_TYPE. Represents the auction types this restriction applies to. */
-  var auctionType: js.UndefOr[js.Array[String]] = js.native
+  var auctionType: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The type of context (e.g., location, platform, auction type, SSL-ness). */
-  var contextType: js.UndefOr[String] = js.native
+  var contextType: js.UndefOr[String] = js.undefined
   
   /**
     * Only set when contextType=LOCATION. Represents the geo criterias this restriction applies to. Impressions are considered to match a context if either the user location or
     * publisher location matches a given geoCriteriaId.
     */
-  var geoCriteriaId: js.UndefOr[js.Array[Double]] = js.native
+  var geoCriteriaId: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Only set when contextType=PLATFORM. Represents the platforms this restriction applies to. */
-  var platform: js.UndefOr[js.Array[String]] = js.native
+  var platform: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AuctionType {
   

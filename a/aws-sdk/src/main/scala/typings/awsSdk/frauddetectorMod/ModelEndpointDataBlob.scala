@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelEndpointDataBlob extends StObject {
   
   /**
     * The byte buffer of the Amazon SageMaker model endpoint input data blob.
     */
-  var byteBuffer: js.UndefOr[blob] = js.native
+  var byteBuffer: js.UndefOr[blob] = js.undefined
   
   /**
     * The content type of the Amazon SageMaker model endpoint input data blob. 
     */
-  var contentType: js.UndefOr[typings.awsSdk.frauddetectorMod.contentType] = js.native
+  var contentType: js.UndefOr[typings.awsSdk.frauddetectorMod.contentType] = js.undefined
 }
 object ModelEndpointDataBlob {
   

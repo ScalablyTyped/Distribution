@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /** The Jobs for a given company. The maximum number of items returned is based on the limit field provided in the request. */
-  var jobs: js.UndefOr[js.Array[Job]] = js.native
+  var jobs: js.UndefOr[js.Array[Job]] = js.undefined
   
   /** Additional information for the API invocation, such as the request tracking id. */
-  var metadata: js.UndefOr[ResponseMetadata] = js.native
+  var metadata: js.UndefOr[ResponseMetadata] = js.undefined
   
   /** A token to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListJobsResponse {
   

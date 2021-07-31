@@ -5,21 +5,19 @@ import typings.xterm.xtermNumbers.`1`
 import typings.xterm.xtermNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUnicodeVersionProvider extends StObject {
   
   /**
     * String indicating the Unicode version provided.
     */
-  val version: String = js.native
+  val version: String
   
   /**
     * Unicode version dependent wcwidth implementation.
     */
-  def wcwidth(codepoint: Double): `0` | `1` | `2` = js.native
+  def wcwidth(codepoint: Double): `0` | `1` | `2`
 }
 object IUnicodeVersionProvider {
   

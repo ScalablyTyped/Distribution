@@ -1,13 +1,10 @@
 package typings.slocket
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Shortcut
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,15 +27,19 @@ object mod extends Shortcut {
     def release(sync: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait Slocket
-    extends EventEmitter
-       with Instantiable1[/* lockFile */ String, Slocket]
-       with Instantiable2[
-          /* lockFile */ String, 
-          /* cb */ js.Function2[/* error */ Error | Null, /* lock */ Lock, Unit], 
-          Slocket
-        ] {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined  */ @js.native
+  trait Slocket extends EventEmitter {
     
     def apply(lockFile: String): Slocket = js.native
     def apply(lockFile: String, cb: js.Function2[/* error */ Error | Null, /* lock */ Lock, Unit]): Slocket = js.native
@@ -47,16 +48,13 @@ object mod extends Shortcut {
     def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[Lock | TResult] = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Lock, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Lock, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
   }
   
   type _To = Slocket

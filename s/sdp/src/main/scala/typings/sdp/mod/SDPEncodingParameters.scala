@@ -4,19 +4,17 @@ import typings.sdp.anon.Mechanism
 import typings.sdp.anon.Ssrc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPEncodingParameters extends StObject {
   
-  var codecPayloadType: js.UndefOr[Double] = js.native
+  var codecPayloadType: js.UndefOr[Double] = js.undefined
   
-  var fec: js.UndefOr[Mechanism] = js.native
+  var fec: js.UndefOr[Mechanism] = js.undefined
   
-  var rtx: js.UndefOr[Ssrc] = js.native
+  var rtx: js.UndefOr[Ssrc] = js.undefined
   
-  var ssrc: Double = js.native
+  var ssrc: Double
 }
 object SDPEncodingParameters {
   

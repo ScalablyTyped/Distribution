@@ -14,7 +14,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -66,9 +65,8 @@ object Header {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.create")
-  @js.native
-  def create(model: IModel): Header = js.native
+  @scala.inline
+  def create(model: IModel): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -79,9 +77,8 @@ object Header {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): Header = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -92,9 +89,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): Header = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -105,9 +101,8 @@ object Header {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): Header = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -118,9 +113,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): Header = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -131,9 +125,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): Header = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -144,9 +137,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): Header = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -157,9 +149,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): Header = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -170,9 +161,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): Header = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -183,9 +173,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): Header = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -196,9 +185,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): Header = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -209,9 +197,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): Header = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -222,9 +209,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): Header = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -235,9 +221,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): Header = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -248,9 +233,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): Header = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -261,9 +245,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): Header = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -274,9 +257,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): Header = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -287,9 +269,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): Header = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -300,9 +281,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): Header = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -313,9 +293,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): Header = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -326,9 +305,8 @@ object Header {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): Header = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -339,9 +317,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): Header = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -352,9 +329,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): Header = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -365,9 +341,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): Header = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -378,9 +353,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): Header = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -391,9 +365,8 @@ object Header {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): Header = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -404,9 +377,8 @@ object Header {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): Header = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -417,9 +389,8 @@ object Header {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): Header = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -430,9 +401,8 @@ object Header {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): Header = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -443,9 +413,8 @@ object Header {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): Header = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -456,9 +425,8 @@ object Header {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): Header = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -469,9 +437,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): Header = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -482,9 +449,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): Header = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -495,9 +461,8 @@ object Header {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): Header = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -508,9 +473,8 @@ object Header {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): Header = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -521,9 +485,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): Header = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -534,9 +497,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): Header = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -547,9 +509,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): Header = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -560,9 +521,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): Header = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -573,9 +533,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): Header = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -586,9 +545,8 @@ object Header {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): Header = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -599,9 +557,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): Header = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -612,9 +569,8 @@ object Header {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): Header = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -625,9 +581,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): Header = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -638,9 +593,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): Header = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -651,9 +605,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): Header = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -664,9 +617,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): Header = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -677,9 +629,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): Header = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -690,9 +641,8 @@ object Header {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): Header = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -703,9 +653,8 @@ object Header {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): Header = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -716,9 +665,8 @@ object Header {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): Header = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /**
     * Creates and returns a new Header instance in the SDK and on the server.
@@ -729,9 +677,8 @@ object Header {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): Header = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): Header = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[Header]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Header.structureTypeName")

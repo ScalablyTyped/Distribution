@@ -3,13 +3,11 @@ package typings.reactTable.anon
 import typings.reactTable.mod.IdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdIdType[D /* <: js.Object */] extends StObject {
   
-  var id: IdType[D] = js.native
+  var id: IdType[D]
 }
 object IdIdType {
   
@@ -20,7 +18,7 @@ object IdIdType {
   }
   
   @scala.inline
-  implicit class IdIdTypeMutableBuilder[Self <: IdIdType[_], D /* <: js.Object */] (val x: Self with IdIdType[D]) extends AnyVal {
+  implicit class IdIdTypeMutableBuilder[Self <: IdIdType[?], D /* <: js.Object */] (val x: Self & IdIdType[D]) extends AnyVal {
     
     @scala.inline
     def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

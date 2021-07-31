@@ -2,21 +2,19 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeOptions extends StObject {
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var legalNodes: js.Array[String] = js.native
+  var legalNodes: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var topLevel: js.UndefOr[Boolean] = js.native
+  var topLevel: js.UndefOr[Boolean] = js.undefined
 }
 object NodeOptions {
   

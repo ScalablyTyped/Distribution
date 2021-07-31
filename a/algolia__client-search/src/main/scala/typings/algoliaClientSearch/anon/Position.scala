@@ -3,21 +3,21 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.ConsequencePromote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Position extends ConsequencePromote {
+trait Position
+  extends StObject
+     with ConsequencePromote {
   
   /**
     * Unique identifier of the object to promote.
     */
-  val objectID: String = js.native
+  val objectID: String
   
   /**
     * Promoted rank for the object (zero-based).
     */
-  val position: Double = js.native
+  val position: Double
 }
 object Position {
   

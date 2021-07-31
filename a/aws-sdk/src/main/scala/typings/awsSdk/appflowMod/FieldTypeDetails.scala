@@ -2,26 +2,24 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldTypeDetails extends StObject {
   
   /**
     *  The type of field, such as string, integer, date, and so on. 
     */
-  var fieldType: FieldType = js.native
+  var fieldType: FieldType
   
   /**
     *  The list of operators supported by a field. 
     */
-  var filterOperators: FilterOperatorList = js.native
+  var filterOperators: FilterOperatorList
   
   /**
     *  The list of values that a field can contain. For example, a Boolean fieldType can have two values: "true" and "false". 
     */
-  var supportedValues: js.UndefOr[SupportedValueList] = js.native
+  var supportedValues: js.UndefOr[SupportedValueList] = js.undefined
 }
 object FieldTypeDetails {
   

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.textBuffer.mod.global.TextBuffer.Structures.TextChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Events {
   
-  @js.native
   trait BufferChanged extends StObject {
     
     /** Range of the new text. */
-    var newRange: Range = js.native
+    var newRange: Range
     
     /** String containing the text that was inserted. */
-    var newText: String = js.native
+    var newText: String
     
     /** Range of the old text. */
-    var oldRange: Range = js.native
+    var oldRange: Range
     
     /** String containing the text that was replaced. */
-    var oldText: String = js.native
+    var oldText: String
   }
   object BufferChanged {
     
@@ -53,11 +51,10 @@ object Events {
     }
   }
   
-  @js.native
   trait BufferChanging extends StObject {
     
     /** Range of the old text. */
-    var oldRange: Range = js.native
+    var oldRange: Range
   }
   object BufferChanging {
     
@@ -75,10 +72,9 @@ object Events {
     }
   }
   
-  @js.native
   trait BufferStoppedChanging extends StObject {
     
-    var changes: js.Array[TextChange] = js.native
+    var changes: js.Array[TextChange]
   }
   object BufferStoppedChanging {
     
@@ -99,17 +95,16 @@ object Events {
     }
   }
   
-  @js.native
   trait BufferWatchError extends StObject {
     
     /** The error object. */
-    var error: Error = js.native
+    var error: Error
     
     /**
       *  Call this function to indicate you have handled the error.
       *  The error will not be thrown if this function is called.
       */
-    def handle(): Unit = js.native
+    def handle(): Unit
   }
   object BufferWatchError {
     
@@ -130,62 +125,61 @@ object Events {
     }
   }
   
-  @js.native
   trait DisplayMarkerChanged extends StObject {
     
     /** Boolean indicating whether the marker had a tail before the change. */
-    var hadTail: Boolean = js.native
+    var hadTail: Boolean
     
     /** Boolean indicating whether the marker now has a tail */
-    var hasTail: Boolean = js.native
+    var hasTail: Boolean
     
     /** Boolean indicating whether the marker is now valid. */
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
     /** Point representing the new head buffer position. */
-    var newHeadBufferPosition: Point = js.native
+    var newHeadBufferPosition: Point
     
     /** Point representing the new head screen position. */
-    var newHeadScreenPosition: Point = js.native
+    var newHeadScreenPosition: Point
     
     /**
       *  Object containing the marker's custom properties after the change.
       *  @deprecated
       */
-    var newProperties: js.Object = js.native
+    var newProperties: js.Object
     
     /** Point representing the new tail buffer position. */
-    var newTailBufferPosition: Point = js.native
+    var newTailBufferPosition: Point
     
     /** Point representing the new tail screen position. */
-    var newTailScreenPosition: Point = js.native
+    var newTailScreenPosition: Point
     
     /** Point representing the former head buffer position. */
-    var oldHeadBufferPosition: Point = js.native
+    var oldHeadBufferPosition: Point
     
     /** Point representing the former head screen position. */
-    var oldHeadScreenPosition: Point = js.native
+    var oldHeadScreenPosition: Point
     
     /**
       *  Object containing the marker's custom properties before the change.
       *  @deprecated
       */
-    var oldProperties: js.Object = js.native
+    var oldProperties: js.Object
     
     // Point representing the former tail buffer position. */
-    var oldTailBufferPosition: Point = js.native
+    var oldTailBufferPosition: Point
     
     /** Point representing the former tail screen position. */
-    var oldTailScreenPosition: Point = js.native
+    var oldTailScreenPosition: Point
     
     /**
       *  Boolean indicating whether this change was caused by a textual change to the
       *  buffer or whether the marker was manipulated directly via its public API.
       */
-    var textChanged: Boolean = js.native
+    var textChanged: Boolean
     
     /** Boolean indicating whether the marker was valid before the change. */
-    var wasValid: Boolean = js.native
+    var wasValid: Boolean
   }
   object DisplayMarkerChanged {
     
@@ -261,11 +255,10 @@ object Events {
     }
   }
   
-  @js.native
   trait FileSaved extends StObject {
     
     /** The path to which the buffer was saved. */
-    var path: String = js.native
+    var path: String
   }
   object FileSaved {
     
@@ -283,51 +276,50 @@ object Events {
     }
   }
   
-  @js.native
   trait MarkerChanged extends StObject {
     
     /** Boolean indicating whether the marker had a tail before the change. */
-    var hadTail: Boolean = js.native
+    var hadTail: Boolean
     
     /** Boolean indicating whether the marker now has a tail. */
-    var hasTail: Boolean = js.native
+    var hasTail: Boolean
     
     /** Boolean indicating whether the marker is now valid. */
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
     /** Point representing the new head position. */
-    var newHeadPosition: Point = js.native
+    var newHeadPosition: Point
     
     /**
       *  Object containing the marker's custom properties after the change.
       *  @deprecated
       */
-    var newProperties: js.Object = js.native
+    var newProperties: js.Object
     
     /** Point representing the new tail position. */
-    var newTailPosition: Point = js.native
+    var newTailPosition: Point
     
     /** Point representing the former head position. */
-    var oldHeadPosition: Point = js.native
+    var oldHeadPosition: Point
     
     /**
       *  Object containing the marker's custom properties before the change.
       *  @deprecated
       */
-    var oldProperties: js.Object = js.native
+    var oldProperties: js.Object
     
     /** Point representing the former tail position. */
-    var oldTailPosition: Point = js.native
+    var oldTailPosition: Point
     
     /**
       *  Boolean indicating whether this change was caused by a textual
       *  change to the buffer or whether the marker was manipulated directly
       *  via its public API.
       */
-    var textChanged: Boolean = js.native
+    var textChanged: Boolean
     
     /** Boolean indicating whether the marker was valid before the change. */
-    var wasValid: Boolean = js.native
+    var wasValid: Boolean
   }
   object MarkerChanged {
     

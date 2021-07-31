@@ -7,7 +7,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -22,8 +21,9 @@ object WebForms {
     * Used by the beginRequest event of the PageRequestManager class to pass argument information to event handlers.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb384003(v=vs.100).aspx}
     */
-  @js.native
-  trait BeginRequestEventArgs extends EventArgs {
+  trait BeginRequestEventArgs
+    extends StObject
+       with EventArgs {
     
     //#endregion
     //#region Properties
@@ -32,20 +32,20 @@ object WebForms {
       * @readonly
       * @return An HTML DOM element.
       */
-    def get_postBackElement(): HTMLElement = js.native
+    def get_postBackElement(): HTMLElement
     
     /**
       * Gets the request object that represents the current postback.
       * @return An instance of the Sys.Net.WebRequest class.
       */
-    def get_request(): WebRequest = js.native
+    def get_request(): WebRequest
     
     /**
       * Gets a list of UniqueID values for UpdatePanel controls that should re-render their content, as requested by the client.
       * Server-side processing might update additional UpdatePanel controls.
       * @return An array of UniqueID values for UpdatePanel controls.
       */
-    def get_updatePanelsToUpdate(): js.Array[String] = js.native
+    def get_updatePanelsToUpdate(): js.Array[String]
   }
   object BeginRequestEventArgs {
     
@@ -78,8 +78,9 @@ object WebForms {
     * Used by the endRequest event of the PageRequestManager class to pass argument information to event handlers.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397499.aspx}
     */
-  @js.native
-  trait EndRequestEventArgs extends EventArgs {
+  trait EndRequestEventArgs
+    extends StObject
+       with EventArgs {
     
     //#endregion
     //#region Properties
@@ -88,26 +89,26 @@ object WebForms {
       * The JavaScript Error object exposes several properties that define the error. The Microsoft Ajax Library provides additional functions for the Error object.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): js.Any
     
     /**
       * Gets the Error object.
       * @return A base ECMAScript (JavaScript) Error object.
       */
-    def get_error(): Error = js.native
+    def get_error(): Error
     
     /**
       * Get or sets a value that indicates whether the error has been handled.
       * Use this property to determine whether an asynchronous postback error has already been handled. If it has not and if you want to take action on the error, you can set the error as handled.
       * @return true if the error has been handled; otherwise false.
       */
-    def get_errorHandled(): Boolean = js.native
+    def get_errorHandled(): Boolean
     
     /**
       * Gets a response object that is represented by the Sys.Net.WebRequestExecutor class.
       * @return A response object that is represented by the WebRequestExecutor class.
       */
-    def get_response(): WebRequestExecutor = js.native
+    def get_response(): WebRequestExecutor
     
     /**
       * Get or sets a value that indicates whether the error has been handled.
@@ -115,7 +116,7 @@ object WebForms {
       * @param value
       *         true or false.
       */
-    def set_errorHandled(value: Boolean): Unit = js.native
+    def set_errorHandled(value: Boolean): Unit
   }
   object EndRequestEventArgs {
     
@@ -157,8 +158,9 @@ object WebForms {
     * This class contains private members that support the client-script infrastructure and are not intended to be used directly from your code. Names of private members begin with an underscore ( _ ).
     * @see {@link http://msdn.microsoft.com/en-us/library/bb311030(v=vs.100).aspx}
     */
-  @js.native
-  trait InitializeRequestEventArgs extends EventArgs {
+  trait InitializeRequestEventArgs
+    extends StObject
+       with EventArgs {
     
     //#endregion
     //#region Properties
@@ -166,20 +168,20 @@ object WebForms {
       * Gets the postback element that initiated the asynchronous postback.
       * @return An HTML DOM element.
       */
-    def get_postBackElement(): HTMLElement = js.native
+    def get_postBackElement(): HTMLElement
     
     /**
       * Gets the request object that represents the current postback.
       * @return A request object that is represented by the Sys.Net.WebRequestExecutor class.
       */
-    def get_request(): WebRequestExecutor = js.native
+    def get_request(): WebRequestExecutor
     
     /**
       * Gets or sets a list of UniqueID values for UpdatePanel controls that should re-render their content, as requested by the client.
       * The returned array can be modified by a client event handler to add or remove UpdatePanel controls that should re-render their content dynamically. Server processing can also modify the array.
       * @return An array of UniqueID values for UpdatePanel controls.
       */
-    def get_updatePanelsToUpdate(): js.Array[String] = js.native
+    def get_updatePanelsToUpdate(): js.Array[String]
   }
   object InitializeRequestEventArgs {
     
@@ -212,8 +214,9 @@ object WebForms {
     * Used by the pageLoaded event of the PageRequestManager class to send event data that represents the UpdatePanel controls that were updated and created in the most recent postback.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397476(v=vs.100).aspx}
     */
-  @js.native
-  trait PageLoadedEventArgs extends EventArgs {
+  trait PageLoadedEventArgs
+    extends StObject
+       with EventArgs {
     
     //#endregion
     //#region Properties
@@ -225,7 +228,7 @@ object WebForms {
       *
       * @return A JSON data structure that contains name/value pairs that were registered as data items that use the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): js.Any
     
     /**
       * Gets an array of HTML div elements that represent UpdatePanel controls that were created when the DOM was updated during the last asynchronous postback.
@@ -233,7 +236,7 @@ object WebForms {
       * The pageLoaded event of the Sys.WebForms.PageRequestManager class uses a PageLoadedEventArgs object to return its event data.
       * @return An array of div elements that were created during the DOM manipulation that was caused by the last asynchronous postback. If no elements were created, the property returns null.
       */
-    def get_panelsCreated(): js.Array[HTMLDivElement] = js.native
+    def get_panelsCreated(): js.Array[HTMLDivElement]
     
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that were updated when the DOM was updated during the last asynchronous postback.
@@ -241,7 +244,7 @@ object WebForms {
       * The pageLoaded event of the Sys.WebForms.PageRequestManager class uses a PageLoadedEventArgs object to return its event data.
       * @return An array of <div> elements that were updated during the DOM manipulation that was the result of the last asynchronous postback. If no elements were created, the property returns null.
       */
-    def get_panelsUpdated(): js.Array[HTMLDivElement] = js.native
+    def get_panelsUpdated(): js.Array[HTMLDivElement]
   }
   object PageLoadedEventArgs {
     
@@ -274,8 +277,9 @@ object WebForms {
     * Used by the pageLoading event of the PageRequestManager class to send event data that represents the UpdatePanel controls that are being updated and deleted as a result of the most recent postback.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310960(v=vs.100).aspx}
     */
-  @js.native
-  trait PageLoadingEventArgs extends EventArgs {
+  trait PageLoadingEventArgs
+    extends StObject
+       with EventArgs {
     
     //#endregion
     //#region Properties
@@ -287,7 +291,7 @@ object WebForms {
       * The name is the unique ID of the control that is used in the control parameter of the RegisterDataItem method. The value is the dataItem parameter of the RegisterDataItem method.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): js.Any
     
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be deleted from the DOM as a result of the current asynchronous postback.
@@ -295,7 +299,7 @@ object WebForms {
       * The pageLoading event of the Sys.WebForms.PageRequestManager class uses a PageLoadingEventArgs object to return its event data.
       * @return An array of <div> elements that will be deleted from the DOM. If no elements will be deleted, the property returns null.
       */
-    def get_panelsDeleting(): js.Array[HTMLDivElement] = js.native
+    def get_panelsDeleting(): js.Array[HTMLDivElement]
     
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be updated in the DOM as a result of the current asynchronous postback.
@@ -303,7 +307,7 @@ object WebForms {
       * The pageLoading event of the Sys.WebForms.PageRequestManager class uses a PageLoadingEventArgs object to return its event data.
       * @return An array of <div> elements that will be updated in the DOM. If no elements will be updated, the property returns null.
       */
-    def get_panelsUpdating(): js.Array[HTMLDivElement] = js.native
+    def get_panelsUpdating(): js.Array[HTMLDivElement]
   }
   object PageLoadingEventArgs {
     
@@ -398,172 +402,13 @@ object WebForms {
       *                   (Optional) A string that contains the name of the validation group.
       */
     def beginAsyncPostBack(): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(updatePanelsToUpdate: js.UndefOr[scala.Nothing], eventTarget: String): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(updatePanelsToUpdate: js.UndefOr[scala.Nothing], eventTarget: String, eventArgument: String): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: String,
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: String,
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.UndefOr[scala.Nothing],
-      eventTarget: String,
-      eventArgument: String,
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
     def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String]): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: js.UndefOr[scala.Nothing],
-      eventArgument: String,
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
     def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: String): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: String,
-      eventArgument: js.UndefOr[scala.Nothing],
-      causesValidation: Boolean,
-      validationGroup: String
-    ): Unit = js.native
     def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: String, eventArgument: String): Unit = js.native
     def beginAsyncPostBack(
       updatePanelsToUpdate: js.Array[String],
       eventTarget: String,
       eventArgument: String,
-      causesValidation: js.UndefOr[scala.Nothing],
-      validationGroup: String
-    ): Unit = js.native
-    def beginAsyncPostBack(
-      updatePanelsToUpdate: js.Array[String],
-      eventTarget: String,
-      eventArgument: String,
       causesValidation: Boolean
     ): Unit = js.native
     def beginAsyncPostBack(
@@ -571,6 +416,137 @@ object WebForms {
       eventTarget: String,
       eventArgument: String,
       causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: Unit, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: String, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: Unit, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: String, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: Unit, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Unit,
       validationGroup: String
     ): Unit = js.native
     
@@ -630,7 +606,6 @@ object WebForms {
     * For information about how to handle this error condition, see Debugging and Tracing Ajax Applications Overview.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}
     */
-  @js.native
   trait PageRequestManagerParserErrorException extends StObject
   
   /**
@@ -640,7 +615,6 @@ object WebForms {
     * For an example of how to provide custom error handling during partial-page updates, see Customizing Error Handling for ASP.NET UpdatePanel Controls.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}        *
     */
-  @js.native
   trait PageRequestManagerServerErrorException extends StObject
   
   /**
@@ -650,6 +624,5 @@ object WebForms {
     * To change the interval that elapses before asynchronous postbacks time out, set the AsyncPostBackTimeout property of the ScriptManager control.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}
     */
-  @js.native
   trait PageRequestManagerTimeoutException extends StObject
 }

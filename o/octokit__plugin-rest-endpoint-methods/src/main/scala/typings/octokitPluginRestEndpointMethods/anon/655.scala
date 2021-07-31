@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `655` extends StObject {
   
-  var parameters: RequestParameters with (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[BillingGetSharedStorageBillingOrgResponseData] = js.native
+  var response: OctokitResponse[BillingGetSharedStorageBillingOrgResponseData]
 }
 object `655` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[BillingGetSharedStorageBillingOrgResponseData]
   ): `655` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `655` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[BillingGetSharedStorageBillingOrgEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

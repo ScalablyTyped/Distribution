@@ -2,71 +2,69 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeSetSummary extends StObject {
   
   /**
     * The ID of the change set.
     */
-  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.native
+  var ChangeSetId: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetId] = js.undefined
   
   /**
     * The name of the change set.
     */
-  var ChangeSetName: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetName] = js.native
+  var ChangeSetName: js.UndefOr[typings.awsSdk.cloudformationMod.ChangeSetName] = js.undefined
   
   /**
     * The start time when the change set was created, in UTC.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.cloudformationMod.CreationTime] = js.undefined
   
   /**
     * Descriptive information about the change set.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * If the change set execution status is AVAILABLE, you can execute the change set. If you can’t execute the change set, the status indicates why. For example, a change set might be in an UNAVAILABLE state because AWS CloudFormation is still creating it or in an OBSOLETE state because the stack was already updated.
     */
-  var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.native
+  var ExecutionStatus: js.UndefOr[typings.awsSdk.cloudformationMod.ExecutionStatus] = js.undefined
   
   /**
     * Specifies the current setting of IncludeNestedStacks for the change set.
     */
-  var IncludeNestedStacks: js.UndefOr[typings.awsSdk.cloudformationMod.IncludeNestedStacks] = js.native
+  var IncludeNestedStacks: js.UndefOr[typings.awsSdk.cloudformationMod.IncludeNestedStacks] = js.undefined
   
   /**
     * The parent change set ID.
     */
-  var ParentChangeSetId: js.UndefOr[ChangeSetId] = js.native
+  var ParentChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
     * The root change set ID.
     */
-  var RootChangeSetId: js.UndefOr[ChangeSetId] = js.native
+  var RootChangeSetId: js.UndefOr[ChangeSetId] = js.undefined
   
   /**
     * The ID of the stack with which the change set is associated.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
   
   /**
     * The name of the stack with which the change set is associated.
     */
-  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.native
+  var StackName: js.UndefOr[typings.awsSdk.cloudformationMod.StackName] = js.undefined
   
   /**
     * The state of the change set, such as CREATE_IN_PROGRESS, CREATE_COMPLETE, or FAILED.
     */
-  var Status: js.UndefOr[ChangeSetStatus] = js.native
+  var Status: js.UndefOr[ChangeSetStatus] = js.undefined
   
   /**
     * A description of the change set's status. For example, if your change set is in the FAILED state, AWS CloudFormation shows the error message.
     */
-  var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.native
+  var StatusReason: js.UndefOr[ChangeSetStatusReason] = js.undefined
 }
 object ChangeSetSummary {
   

@@ -4,14 +4,15 @@ import typings.ow.anon.Message
 import typings.ow.basePredicateMod.BasePredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object predicateMod {
   
   @JSImport("ow/dist/source/predicates/predicate", "Predicate")
   @js.native
-  class Predicate[T] protected () extends BasePredicate[T] {
+  class Predicate[T] protected ()
+    extends StObject
+       with BasePredicate[T] {
     def this(`type`: String) = this()
     def this(`type`: String, options: PredicateOptions) = this()
     
@@ -54,10 +55,11 @@ object predicateMod {
   @js.native
   val validatorSymbol: js.Symbol = js.native
   
-  @js.native
-  trait Context[T] extends PredicateOptions {
+  trait Context[T]
+    extends StObject
+       with PredicateOptions {
     
-    var validators: js.Array[Validator[T]] = js.native
+    var validators: js.Array[Validator[T]]
   }
   object Context {
     
@@ -68,7 +70,7 @@ object predicateMod {
     }
     
     @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[_], T] (val x: Self with Context[T]) extends AnyVal {
+    implicit class ContextMutableBuilder[Self <: Context[?], T] (val x: Self & Context[T]) extends AnyVal {
       
       @scala.inline
       def setValidators(value: js.Array[Validator[T]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
@@ -80,10 +82,9 @@ object predicateMod {
   
   type CustomValidator[T] = js.Function1[/* value */ T, Message]
   
-  @js.native
   trait PredicateOptions extends StObject {
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
   }
   object PredicateOptions {
     
@@ -108,9 +109,9 @@ object predicateMod {
   trait Validator[T] extends StObject {
     
     def message(value: T): String = js.native
-    def message(value: T, label: js.UndefOr[scala.Nothing], result: js.Any): String = js.native
     def message(value: T, label: String): String = js.native
     def message(value: T, label: String, result: js.Any): String = js.native
+    def message(value: T, label: Unit, result: js.Any): String = js.native
     
     /**
       Provide custom message used by `not` operator.

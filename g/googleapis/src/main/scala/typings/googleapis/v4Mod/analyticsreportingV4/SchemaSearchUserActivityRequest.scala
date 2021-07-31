@@ -2,14 +2,12 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to fetch User Report from Reporting API `userActivity:get`
   * call.
   */
-@js.native
 trait SchemaSearchUserActivityRequest extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaSearchUserActivityRequest extends StObject {
     * types will be returned in the response. If empty, all activies will be
     * returned.
     */
-  var activityTypes: js.UndefOr[js.Array[String]] = js.native
+  var activityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Date range for which to retrieve the user activity. If a date range is
     * not provided, the default date range is (startDate: current date - 7
     * days, endDate: current date - 1 day).
     */
-  var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  var dateRange: js.UndefOr[SchemaDateRange] = js.undefined
   
   /**
     * Page size is for paging and specifies the maximum number of returned
@@ -32,7 +30,7 @@ trait SchemaSearchUserActivityRequest extends StObject {
     * isn&#39;t specified, the request returns the default of 1000 rows per
     * page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token to get the next page of the results. Adding this to
@@ -41,14 +39,14 @@ trait SchemaSearchUserActivityRequest extends StObject {
     * response to the [SearchUserActivityRequest](#SearchUserActivityRequest)
     * request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Unique user Id to query for. Every
     * [SearchUserActivityRequest](#SearchUserActivityRequest) must contain this
     * field.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * Required. The Analytics [view
@@ -57,7 +55,7 @@ trait SchemaSearchUserActivityRequest extends StObject {
     * [SearchUserActivityRequest](#SearchUserActivityRequest) must contain the
     * `viewId`.
     */
-  var viewId: js.UndefOr[String] = js.native
+  var viewId: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchUserActivityRequest {
   

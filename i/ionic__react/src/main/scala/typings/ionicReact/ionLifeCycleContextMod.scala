@@ -4,7 +4,6 @@ import typings.ionicReact.anon.ComponentCanBeDestroyed
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionLifeCycleContextMod {
@@ -12,30 +11,74 @@ object ionLifeCycleContextMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@ionic/react/dist/types/contexts/IonLifeCycleContext", "DefaultIonLifeCycleContext")
   @js.native
-  class DefaultIonLifeCycleContext () extends ComponentCanBeDestroyed
+  class DefaultIonLifeCycleContext ()
+    extends StObject
+       with ComponentCanBeDestroyed {
+    
+    /* CompleteClass */
+    override def componentCanBeDestroyed(): Unit = js.native
+    
+    /* CompleteClass */
+    override def ionViewDidEnter(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewDidEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewDidLeave(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewDidLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewWillEnter(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewWillEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def ionViewWillLeave(): Unit = js.native
+    
+    /* CompleteClass */
+    var ionViewWillLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+    
+    /* CompleteClass */
+    override def onComponentCanBeDestroyed(callback: js.Function0[Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewDidEnter(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewDidLeave(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewWillEnter(callback: LifeCycleCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def onIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
+  }
   
   @JSImport("@ionic/react/dist/types/contexts/IonLifeCycleContext", "IonLifeCycleContext")
   @js.native
   val IonLifeCycleContext: Context[IonLifeCycleContextInterface] = js.native
   
-  @js.native
   trait IonLifeCycleContextInterface extends StObject {
     
-    def ionViewDidEnter(): Unit = js.native
+    def ionViewDidEnter(): Unit
     
-    def ionViewDidLeave(): Unit = js.native
+    def ionViewDidLeave(): Unit
     
-    def ionViewWillEnter(): Unit = js.native
+    def ionViewWillEnter(): Unit
     
-    def ionViewWillLeave(): Unit = js.native
+    def ionViewWillLeave(): Unit
     
-    def onIonViewDidEnter(callback: js.Function0[Unit]): Unit = js.native
+    def onIonViewDidEnter(callback: js.Function0[Unit]): Unit
     
-    def onIonViewDidLeave(callback: js.Function0[Unit]): Unit = js.native
+    def onIonViewDidLeave(callback: js.Function0[Unit]): Unit
     
-    def onIonViewWillEnter(callback: js.Function0[Unit]): Unit = js.native
+    def onIonViewWillEnter(callback: js.Function0[Unit]): Unit
     
-    def onIonViewWillLeave(callback: js.Function0[Unit]): Unit = js.native
+    def onIonViewWillLeave(callback: js.Function0[Unit]): Unit
   }
   object IonLifeCycleContextInterface {
     

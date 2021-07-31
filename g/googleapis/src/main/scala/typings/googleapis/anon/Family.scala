@@ -2,23 +2,21 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Family extends StObject {
   
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
-  var firmwareVersion: js.UndefOr[String] = js.native
+  var firmwareVersion: js.UndefOr[String] = js.undefined
   
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
-  var specLevel: js.UndefOr[String] = js.native
+  var specLevel: js.UndefOr[String] = js.undefined
   
-  var tpmModel: js.UndefOr[String] = js.native
+  var tpmModel: js.UndefOr[String] = js.undefined
   
-  var vendorSpecific: js.UndefOr[String] = js.native
+  var vendorSpecific: js.UndefOr[String] = js.undefined
 }
 object Family {
   

@@ -74,10 +74,13 @@ import typings.estree.mod.Node
 import typings.estree.mod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("esprima", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Syntax {
     
@@ -489,73 +492,54 @@ object mod {
     def YieldExpression_=(x: YieldExpression): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YieldExpression")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("esprima", "parseModule")
-  @js.native
-  def parseModule(input: String): Program = js.native
-  @JSImport("esprima", "parseModule")
-  @js.native
-  def parseModule(
-    input: String,
-    config: js.UndefOr[scala.Nothing],
-    delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = js.native
-  @JSImport("esprima", "parseModule")
-  @js.native
-  def parseModule(input: String, config: ParseOptions): Program = js.native
-  @JSImport("esprima", "parseModule")
-  @js.native
+  @scala.inline
+  def parseModule(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
+  @scala.inline
+  def parseModule(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  @scala.inline
+  def parseModule(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
+  @scala.inline
   def parseModule(
     input: String,
     config: ParseOptions,
     delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = js.native
+  ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseModule")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @JSImport("esprima", "parseScript")
-  @js.native
-  def parseScript(input: String): Program = js.native
-  @JSImport("esprima", "parseScript")
-  @js.native
-  def parseScript(
-    input: String,
-    config: js.UndefOr[scala.Nothing],
-    delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = js.native
-  @JSImport("esprima", "parseScript")
-  @js.native
-  def parseScript(input: String, config: ParseOptions): Program = js.native
-  @JSImport("esprima", "parseScript")
-  @js.native
+  @scala.inline
+  def parseScript(input: String): Program = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any]).asInstanceOf[Program]
+  @scala.inline
+  def parseScript(input: String, config: Unit, delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
+  @scala.inline
+  def parseScript(input: String, config: ParseOptions): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Program]
+  @scala.inline
   def parseScript(
     input: String,
     config: ParseOptions,
     delegate: js.Function2[/* node */ Node, /* meta */ js.Any, Unit]
-  ): Program = js.native
+  ): Program = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScript")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any], delegate.asInstanceOf[js.Any])).asInstanceOf[Program]
   
-  @JSImport("esprima", "tokenize")
-  @js.native
-  def tokenize(input: String): js.Array[Token] = js.native
-  @JSImport("esprima", "tokenize")
-  @js.native
-  def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = js.native
+  @scala.inline
+  def tokenize(input: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
   @JSImport("esprima", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var jsx: js.UndefOr[Boolean] = js.native
+    var jsx: js.UndefOr[Boolean] = js.undefined
     
-    var loc: js.UndefOr[Boolean] = js.native
+    var loc: js.UndefOr[Boolean] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var tokens: js.UndefOr[Boolean] = js.native
+    var tokens: js.UndefOr[Boolean] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -606,22 +590,18 @@ object mod {
     }
   }
   
-  @js.native
   trait Program
-    extends typings.estree.mod.Program {
+    extends StObject
+       with typings.estree.mod.Program {
     
-    var tokens: js.UndefOr[js.Array[Token]] = js.native
+    var tokens: js.UndefOr[js.Array[Token]] = js.undefined
   }
   object Program {
     
     @scala.inline
-    def apply(
-      body: js.Array[Directive | Statement | ModuleDeclaration],
-      sourceType: script | module,
-      `type`: typings.estree.estreeStrings.Program
-    ): Program = {
+    def apply(body: js.Array[Directive | Statement | ModuleDeclaration], sourceType: script | module): Program = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Program")
       __obj.asInstanceOf[Program]
     }
     
@@ -639,12 +619,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     
@@ -666,16 +645,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenizeOptions extends StObject {
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var loc: js.UndefOr[Boolean] = js.native
+    var loc: js.UndefOr[Boolean] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
   }
   object TokenizeOptions {
     

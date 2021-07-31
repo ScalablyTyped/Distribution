@@ -2,21 +2,19 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogOptions extends StObject {
   
-  var closeBtn: js.UndefOr[String] = js.native
+  var closeBtn: js.UndefOr[String] = js.undefined
   
-  var closeBtnText: js.UndefOr[String] = js.native
+  var closeBtnText: js.UndefOr[String] = js.undefined
   
-  var corners: js.UndefOr[Boolean] = js.native
+  var corners: js.UndefOr[Boolean] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var overlayTheme: js.UndefOr[String] = js.native
+  var overlayTheme: js.UndefOr[String] = js.undefined
 }
 object DialogOptions {
   

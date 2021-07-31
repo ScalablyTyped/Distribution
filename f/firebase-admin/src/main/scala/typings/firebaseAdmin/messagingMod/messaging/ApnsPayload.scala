@@ -3,17 +3,16 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApnsPayload
-  extends /* customData */ StringDictionary[js.Object] {
+  extends StObject
+     with /* customData */ StringDictionary[js.Object] {
   
   /**
     * The `aps` dictionary to be included in the message.
     */
-  var aps: Aps = js.native
+  var aps: Aps
 }
 object ApnsPayload {
   

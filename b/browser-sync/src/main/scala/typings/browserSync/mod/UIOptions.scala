@@ -3,17 +3,15 @@ package typings.browserSync.mod
 import typings.browserSync.anon.Port
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIOptions extends StObject {
   
   /** set the default port */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** set the default weinre port */
-  var weinre: js.UndefOr[Port] = js.native
+  var weinre: js.UndefOr[Port] = js.undefined
 }
 object UIOptions {
   

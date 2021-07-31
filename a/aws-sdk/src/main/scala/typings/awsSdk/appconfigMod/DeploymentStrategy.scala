@@ -2,51 +2,49 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentStrategy extends StObject {
   
   /**
     * Total amount of time the deployment lasted.
     */
-  var DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.native
+  var DeploymentDurationInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   
   /**
     * The description of the deployment strategy.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The amount of time AppConfig monitored for alarms before considering the deployment to be complete and no longer eligible for automatic roll back.
     */
-  var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.native
+  var FinalBakeTimeInMinutes: js.UndefOr[MinutesBetween0And24Hours] = js.undefined
   
   /**
     * The percentage of targets that received a deployed configuration during each interval.
     */
-  var GrowthFactor: js.UndefOr[Percentage] = js.native
+  var GrowthFactor: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The algorithm used to define how percentage grew over time.
     */
-  var GrowthType: js.UndefOr[typings.awsSdk.appconfigMod.GrowthType] = js.native
+  var GrowthType: js.UndefOr[typings.awsSdk.appconfigMod.GrowthType] = js.undefined
   
   /**
     * The deployment strategy ID.
     */
-  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.undefined
   
   /**
     * The name of the deployment strategy.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
   
   /**
     * Save the deployment strategy to a Systems Manager (SSM) document.
     */
-  var ReplicateTo: js.UndefOr[typings.awsSdk.appconfigMod.ReplicateTo] = js.native
+  var ReplicateTo: js.UndefOr[typings.awsSdk.appconfigMod.ReplicateTo] = js.undefined
 }
 object DeploymentStrategy {
   

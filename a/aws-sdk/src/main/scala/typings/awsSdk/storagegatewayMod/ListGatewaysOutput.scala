@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGatewaysOutput extends StObject {
   
   /**
     * An array of GatewayInfo objects.
     */
-  var Gateways: js.UndefOr[typings.awsSdk.storagegatewayMod.Gateways] = js.native
+  var Gateways: js.UndefOr[typings.awsSdk.storagegatewayMod.Gateways] = js.undefined
   
   /**
     * Use the marker in your next request to fetch the next set of gateways in the list. If there are no more gateways to list, this field does not appear in the response.
     */
-  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.storagegatewayMod.Marker] = js.undefined
 }
 object ListGatewaysOutput {
   

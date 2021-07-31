@@ -12,10 +12,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("libxmljs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("libxmljs", "Attribute")
   @js.native
@@ -40,8 +43,8 @@ object mod {
     */
   class Document () extends StObject {
     def this(version: Double) = this()
-    def this(version: js.UndefOr[scala.Nothing], encoding: String) = this()
     def this(version: Double, encoding: String) = this()
+    def this(version: Unit, encoding: String) = this()
     
     def child(idx: Double): Element | Null = js.native
     
@@ -204,122 +207,109 @@ object mod {
   @js.native
   val libxmlVersion: String = js.native
   
-  @JSImport("libxmljs", "memoryUsage")
-  @js.native
-  def memoryUsage(): Double = js.native
+  @scala.inline
+  def memoryUsage(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryUsage")().asInstanceOf[Double]
   
-  @JSImport("libxmljs", "nodeCount")
-  @js.native
-  def nodeCount(): Double = js.native
+  @scala.inline
+  def nodeCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeCount")().asInstanceOf[Double]
   
-  @JSImport("libxmljs", "parseHtml")
-  @js.native
-  def parseHtml(source: String): Document = js.native
-  @JSImport("libxmljs", "parseHtml")
-  @js.native
-  def parseHtml(source: String, options: ParserOptions): Document = js.native
+  @scala.inline
+  def parseHtml(source: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def parseHtml(source: String, options: ParserOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
-  @JSImport("libxmljs", "parseHtmlFragment")
-  @js.native
-  def parseHtmlFragment(source: String): Document = js.native
-  @JSImport("libxmljs", "parseHtmlFragment")
-  @js.native
-  def parseHtmlFragment(source: String, options: ParserOptions): Document = js.native
+  @scala.inline
+  def parseHtmlFragment(source: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def parseHtmlFragment(source: String, options: ParserOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlFragment")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
-  @JSImport("libxmljs", "parseHtmlString")
-  @js.native
-  def parseHtmlString(source: String): Document = js.native
-  @JSImport("libxmljs", "parseHtmlString")
-  @js.native
-  def parseHtmlString(source: String, options: ParserOptions): Document = js.native
+  @scala.inline
+  def parseHtmlString(source: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def parseHtmlString(source: String, options: ParserOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHtmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
-  @JSImport("libxmljs", "parseXml")
-  @js.native
-  def parseXml(source: String): Document = js.native
-  @JSImport("libxmljs", "parseXml")
-  @js.native
-  def parseXml(source: String, options: ParserOptions): Document = js.native
+  @scala.inline
+  def parseXml(source: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def parseXml(source: String, options: ParserOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
-  @JSImport("libxmljs", "parseXmlString")
-  @js.native
-  def parseXmlString(source: String): Document = js.native
-  @JSImport("libxmljs", "parseXmlString")
-  @js.native
-  def parseXmlString(source: String, options: ParserOptions): Document = js.native
+  @scala.inline
+  def parseXmlString(source: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def parseXmlString(source: String, options: ParserOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXmlString")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
   @JSImport("libxmljs", "version")
   @js.native
   val version: String = js.native
   
   // tslint:disable-next-line:strict-export-declare-modifiers
-  @js.native
   trait ParserOptions extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var basefix: js.UndefOr[Boolean] = js.native
+    var basefix: js.UndefOr[Boolean] = js.undefined
     
-    var big_lines: js.UndefOr[Boolean] = js.native
+    var big_lines: js.UndefOr[Boolean] = js.undefined
     
-    var blanks: js.UndefOr[Boolean] = js.native
+    var blanks: js.UndefOr[Boolean] = js.undefined
     
-    var cdata: js.UndefOr[Boolean] = js.native
+    var cdata: js.UndefOr[Boolean] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var dict: js.UndefOr[Boolean] = js.native
+    var dict: js.UndefOr[Boolean] = js.undefined
     
-    var doctype: js.UndefOr[Boolean] = js.native
+    var doctype: js.UndefOr[Boolean] = js.undefined
     
-    var dtdattr: js.UndefOr[js.Any] = js.native
+    var dtdattr: js.UndefOr[js.Any] = js.undefined
     
-    var dtdload: js.UndefOr[Boolean] = js.native
+    var dtdload: js.UndefOr[Boolean] = js.undefined
     
-    var dtdvalid: js.UndefOr[Boolean] = js.native
+    var dtdvalid: js.UndefOr[Boolean] = js.undefined
     
-    var errors: js.UndefOr[Boolean] = js.native
+    var errors: js.UndefOr[Boolean] = js.undefined
     
-    var huge: js.UndefOr[Boolean] = js.native
+    var huge: js.UndefOr[Boolean] = js.undefined
     
-    var ignore_enc: js.UndefOr[Boolean] = js.native
+    var ignore_enc: js.UndefOr[Boolean] = js.undefined
     
-    var implied: js.UndefOr[Boolean] = js.native
+    var implied: js.UndefOr[Boolean] = js.undefined
     
-    var net: js.UndefOr[Boolean] = js.native
+    var net: js.UndefOr[Boolean] = js.undefined
     
-    var nobasefix: js.UndefOr[Boolean] = js.native
+    var nobasefix: js.UndefOr[Boolean] = js.undefined
     
-    var noblanks: js.UndefOr[Boolean] = js.native
+    var noblanks: js.UndefOr[Boolean] = js.undefined
     
-    var nocdata: js.UndefOr[Boolean] = js.native
+    var nocdata: js.UndefOr[Boolean] = js.undefined
     
-    var nodict: js.UndefOr[Boolean] = js.native
+    var nodict: js.UndefOr[Boolean] = js.undefined
     
-    var noent: js.UndefOr[Boolean] = js.native
+    var noent: js.UndefOr[Boolean] = js.undefined
     
-    var noerror: js.UndefOr[Boolean] = js.native
+    var noerror: js.UndefOr[Boolean] = js.undefined
     
-    var nonet: js.UndefOr[Boolean] = js.native
+    var nonet: js.UndefOr[Boolean] = js.undefined
     
-    var nowarning: js.UndefOr[Boolean] = js.native
+    var nowarning: js.UndefOr[Boolean] = js.undefined
     
-    var noxincnode: js.UndefOr[Boolean] = js.native
+    var noxincnode: js.UndefOr[Boolean] = js.undefined
     
-    var nsclean: js.UndefOr[Boolean] = js.native
+    var nsclean: js.UndefOr[Boolean] = js.undefined
     
-    var old: js.UndefOr[Boolean] = js.native
+    var old: js.UndefOr[Boolean] = js.undefined
     
-    var oldsax: js.UndefOr[Boolean] = js.native
+    var oldsax: js.UndefOr[Boolean] = js.undefined
     
-    var pedantic: js.UndefOr[Boolean] = js.native
+    var pedantic: js.UndefOr[Boolean] = js.undefined
     
-    var recover: js.UndefOr[Boolean] = js.native
+    var recover: js.UndefOr[Boolean] = js.undefined
     
-    var sax1: js.UndefOr[Boolean] = js.native
+    var sax1: js.UndefOr[Boolean] = js.undefined
     
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
     
-    var xinclude: js.UndefOr[Boolean] = js.native
+    var xinclude: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -535,39 +525,38 @@ object mod {
   // tslint:disable-next-line:strict-export-declare-modifiers
   type StringMap = StringDictionary[String]
   
-  @js.native
   trait SyntaxError extends StObject {
     
-    var code: Double | Null = js.native
+    var code: Double | Null
     
     /**
       * 1-based column number, 0 if not applicable/available.
       */
-    var column: Double = js.native
+    var column: Double
     
-    var domain: Double | Null = js.native
+    var domain: Double | Null
     
-    var file: String | Null = js.native
+    var file: String | Null
     
-    var int1: Double | Null = js.native
+    var int1: Double | Null
     
-    var level: Double | Null = js.native
+    var level: Double | Null
     
-    var line: Double | Null = js.native
+    var line: Double | Null
     
-    var message: String | Null = js.native
+    var message: String | Null
     
-    var str1: Double | Null = js.native
+    var str1: Double | Null
     
-    var str2: Double | Null = js.native
+    var str2: Double | Null
     
-    var str3: Double | Null = js.native
+    var str3: Double | Null
   }
   object SyntaxError {
     
     @scala.inline
     def apply(column: Double): SyntaxError = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], code = null, domain = null, file = null, int1 = null, level = null, line = null, message = null, str1 = null, str2 = null, str3 = null)
       __obj.asInstanceOf[SyntaxError]
     }
     
@@ -639,27 +628,28 @@ object mod {
     }
   }
   
-  @js.native
-  trait ValidationError extends Error {
+  trait ValidationError
+    extends StObject
+       with Error {
     
-    var code: Double | Null = js.native
+    var code: Double | Null
     
     /**
       * 1-based column number, 0 if not applicable/available.
       */
-    var column: Double = js.native
+    var column: Double
     
-    var domain: Double | Null = js.native
+    var domain: Double | Null
     
-    var level: Double | Null = js.native
+    var level: Double | Null
     
-    var line: Double | Null = js.native
+    var line: Double | Null
   }
   object ValidationError {
     
     @scala.inline
     def apply(column: Double, message: String, name: String): ValidationError = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], code = null, domain = null, level = null, line = null)
       __obj.asInstanceOf[ValidationError]
     }
     

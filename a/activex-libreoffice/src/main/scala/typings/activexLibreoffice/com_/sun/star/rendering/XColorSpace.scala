@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All canvas interfaces standardize to sequences of IEEE doubles for color representation. As this is overly verbose when used for bitmap data, derived
   * interfaces exist, e.g. {@link XIntegerBitmapColorSpace} , which use sequences of integers for color representation.
   */
-@js.native
 trait XColorSpace extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait XColorSpace extends StObject {
     *
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
-  val ComponentTags: SafeArray[Double] = js.native
+  val ComponentTags: SafeArray[Double]
   
   /**
     * Query various optional properties from the color space.
@@ -42,19 +40,19 @@ trait XColorSpace extends StObject {
     * If this color space has an ICC color profile, the sequence contains an element named ICCProfile. Some color spaces also have properties Gamma,
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
-  val Properties: SafeArray[PropertyValue] = js.native
+  val Properties: SafeArray[PropertyValue]
   
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
     */
-  val RenderingIntent: Double = js.native
+  val RenderingIntent: Double
   
   /**
     * Query type of this color space.
     * @returns a value from the {@link ColorSpaceType} constant group.
     */
-  val Type: Double = js.native
+  val Type: Double
   
   /**
     * Convert to color of another color space.
@@ -63,7 +61,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of device colors in the target color space (e.g. `sequence<double>` or `sequence<byte>` ).
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format (e.g. if the number of compon
     */
-  def convertColorSpace(deviceColor: SeqEquiv[ColorComponent], targetColorSpace: XColorSpace): SafeArray[ColorComponent] = js.native
+  def convertColorSpace(deviceColor: SeqEquiv[ColorComponent], targetColorSpace: XColorSpace): SafeArray[ColorComponent]
   
   /**
     * Convert sRGB color with linear alpha into this color space.
@@ -73,7 +71,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent] = js.native
+  def convertFromARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent]
   
   /**
     * Convert premultiplied sRGB color with linear alpha into this color space.
@@ -83,7 +81,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromPARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent] = js.native
+  def convertFromPARGB(rgbColor: SeqEquiv[ARGBColor]): SafeArray[ColorComponent]
   
   /**
     * Convert sRGB color to a representation in this color space.
@@ -93,7 +91,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of device colors.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertFromRGB(rgbColor: SeqEquiv[RGBColor]): SafeArray[ColorComponent] = js.native
+  def convertFromRGB(rgbColor: SeqEquiv[RGBColor]): SafeArray[ColorComponent]
   
   /**
     * Convert color value in this color space to sRGB color values, with linear alpha.
@@ -103,7 +101,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of colors in the sRGB color space.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor] = js.native
+  def convertToARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor]
   
   /**
     * Convert color value in this color space to premultiplied sRGB color values, with linear alpha.
@@ -114,7 +112,7 @@ trait XColorSpace extends StObject {
     * @returns the corresponding sequence of colors in the sRGB color space.
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToPARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor] = js.native
+  def convertToPARGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[ARGBColor]
   
   /**
     * Convert color value in this color space to sRGB color values.
@@ -125,7 +123,7 @@ trait XColorSpace extends StObject {
     * @see convertToARGB()
     * @throws a {@link com.sun.star.lang.IllegalArgumentException} , if the input sequence does not match the device color format.
     */
-  def convertToRGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[RGBColor] = js.native
+  def convertToRGB(deviceColor: SeqEquiv[ColorComponent]): SafeArray[RGBColor]
   
   /**
     * Query the kind for each color component.
@@ -140,7 +138,7 @@ trait XColorSpace extends StObject {
     *
     * **Remark**: For the standard RGB color space, ComponentTags consists of three elements, containing RGB_RED, RGB_GREEN and RGB_BLUE tags, respectively
     */
-  def getComponentTags(): SafeArray[Double] = js.native
+  def getComponentTags(): SafeArray[Double]
   
   /**
     * Query various optional properties from the color space.
@@ -148,19 +146,19 @@ trait XColorSpace extends StObject {
     * If this color space has an ICC color profile, the sequence contains an element named ICCProfile. Some color spaces also have properties Gamma,
     * Whitepoint and Blackpoint. Background information for these is available [here]{@link url="http://en.wikipedia.org/wiki/Color_temperature"} .
     */
-  def getProperties(): SafeArray[PropertyValue] = js.native
+  def getProperties(): SafeArray[PropertyValue]
   
   /**
     * Query rendering intent of this color space.
     * @returns a value from the {@link RenderingIntent} constant group.
     */
-  def getRenderingIntent(): Double = js.native
+  def getRenderingIntent(): Double
   
   /**
     * Query type of this color space.
     * @returns a value from the {@link ColorSpaceType} constant group.
     */
-  def getType(): Double = js.native
+  def getType(): Double
 }
 object XColorSpace {
   

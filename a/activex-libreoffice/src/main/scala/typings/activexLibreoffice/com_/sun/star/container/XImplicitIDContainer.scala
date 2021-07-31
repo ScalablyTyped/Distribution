@@ -3,21 +3,21 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to insert and remove elements in/from a container using an implicit (unique) ID. */
-@js.native
-trait XImplicitIDContainer extends XImplicitIDReplace {
+trait XImplicitIDContainer
+  extends StObject
+     with XImplicitIDReplace {
   
   /**
     * adds a new object to the container and generates an implicit (unique) ID for this object.
     * @returns the implicit ID for the new object.
     */
-  def addWithImplicitID(aElement: js.Any): String = js.native
+  def addWithImplicitID(aElement: js.Any): String
   
   /** removes an object from the container which is specified by an implicit (unique) identifier. */
-  def removeByImplicitID(ID: String): Unit = js.native
+  def removeByImplicitID(ID: String): Unit
 }
 object XImplicitIDContainer {
   

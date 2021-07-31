@@ -2,15 +2,13 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawingLimitOptions extends StObject {
   
-  var area: js.UndefOr[Double] = js.native
+  var area: js.UndefOr[Double] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
 }
 object DrawingLimitOptions {
   

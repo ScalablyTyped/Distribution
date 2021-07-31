@@ -19,10 +19,13 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("follow-redirects", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.http.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.url.URL): node.http.ClientRequest, readonly request (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest,   IncomingMessage :new (socket : node.net.Socket): node.http.IncomingMessage,   ServerResponse :new (req : node.http.IncomingMessage): node.http.ServerResponse, readonly get (options : node.http.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.url.URL): node.http.ClientRequest, readonly get (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer (): node.http.Server, readonly createServer (requestListener : node.http.RequestListener): node.http.Server, readonly createServer (options : node.http.ServerOptions): node.http.Server, readonly createServer (options : node.http.ServerOptions, requestListener : node.http.RequestListener): node.http.Server,  readonly STATUS_CODES,   Agent :new (): node.http.Agent,  readonly maxHeaderSize :number,   ClientRequest :new (url : string): node.http.ClientRequest,   OutgoingMessage :new (): node.http.OutgoingMessage,   Server :new (): node.http.Server,   globalAgent :node.http.Agent,  readonly METHODS :std.Array<string>}, follow-redirects.follow-redirects.RedirectScheme<node.http.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
   object http {
@@ -124,9 +127,8 @@ object mod {
     @scala.inline
     def Server_=(x: Instantiable0[typings.node.httpMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "http.createServer")
-    @js.native
-    def createServer(): typings.node.httpMod.Server = js.native
+    @scala.inline
+    def createServer(): typings.node.httpMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpMod.Server]
     @JSImport("follow-redirects", "http.createServer")
     @js.native
     def createServer_Fhttp: js.Function0[typings.node.httpMod.Server] = js.native
@@ -134,24 +136,20 @@ object mod {
     @scala.inline
     def createServer_Fhttp_=(x: js.Function0[typings.node.httpMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "http.get")
-    @js.native
-    def get(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.get")
-    @js.native
+    @scala.inline
+    def get(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
     def get(
-      options: RequestOptions with FollowOptions[RequestOptions],
-      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.get")
-    @js.native
-    def get(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.get")
-    @js.native
+      options: RequestOptions & FollowOptions[RequestOptions],
+      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
+    def get(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
     def get(
       options: String,
-      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
+      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
     
     @JSImport("follow-redirects", "http.globalAgent")
     @js.native
@@ -165,24 +163,20 @@ object mod {
     @scala.inline
     def maxHeaderSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxHeaderSize")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "http.request")
-    @js.native
-    def request(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.request")
-    @js.native
+    @scala.inline
+    def request(options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
     def request(
-      options: RequestOptions with FollowOptions[RequestOptions],
-      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.request")
-    @js.native
-    def request(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
-    @JSImport("follow-redirects", "http.request")
-    @js.native
+      options: RequestOptions & FollowOptions[RequestOptions],
+      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
+    def request(options: String): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
+    @scala.inline
     def request(
       options: String,
-      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = js.native
+      callback: js.Function1[/* res */ typings.node.httpMod.IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[typings.node.httpMod.ClientRequest, typings.node.httpMod.IncomingMessage]]
   }
   
   /* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.https.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.url.URL): node.http.ClientRequest, readonly request (options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.https.RequestOptions): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.https.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.url.URL, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.https.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.url.URL): node.http.ClientRequest, readonly get (options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.https.RequestOptions): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.https.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.url.URL, options : node.https.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer (): node.https.Server, readonly createServer (requestListener : node.http.RequestListener): node.https.Server, readonly createServer (options : node.https.ServerOptions): node.https.Server, readonly createServer (options : node.https.ServerOptions, requestListener : node.http.RequestListener): node.https.Server,   Agent :new (): node.https.Agent,   Server :new (): node.https.Server,   globalAgent :node.https.Agent}, follow-redirects.follow-redirects.RedirectScheme<node.https.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
@@ -214,9 +208,8 @@ object mod {
     @scala.inline
     def Server_=(x: Instantiable0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "https.createServer")
-    @js.native
-    def createServer(): typings.node.httpsMod.Server = js.native
+    @scala.inline
+    def createServer(): typings.node.httpsMod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.node.httpsMod.Server]
     @JSImport("follow-redirects", "https.createServer")
     @js.native
     def createServer_Fhttps: js.Function0[typings.node.httpsMod.Server] = js.native
@@ -224,23 +217,19 @@ object mod {
     @scala.inline
     def createServer_Fhttps_=(x: js.Function0[typings.node.httpsMod.Server]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "https.get")
-    @js.native
+    @scala.inline
     def get(
-      options: typings.node.httpsMod.RequestOptions with FollowOptions[typings.node.httpsMod.RequestOptions]
-    ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.get")
-    @js.native
+      options: typings.node.httpsMod.RequestOptions & FollowOptions[typings.node.httpsMod.RequestOptions]
+    ): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
     def get(
-      options: typings.node.httpsMod.RequestOptions with FollowOptions[typings.node.httpsMod.RequestOptions],
-      callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.get")
-    @js.native
-    def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.get")
-    @js.native
-    def get(options: String, callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
+      options: typings.node.httpsMod.RequestOptions & FollowOptions[typings.node.httpsMod.RequestOptions],
+      callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
+    def get(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
+    def get(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
     
     @JSImport("follow-redirects", "https.globalAgent")
     @js.native
@@ -248,51 +237,47 @@ object mod {
     @scala.inline
     def globalAgent_=(x: typings.node.httpsMod.Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
     
-    @JSImport("follow-redirects", "https.request")
-    @js.native
+    @scala.inline
     def request(
-      options: typings.node.httpsMod.RequestOptions with FollowOptions[typings.node.httpsMod.RequestOptions]
-    ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.request")
-    @js.native
+      options: typings.node.httpsMod.RequestOptions & FollowOptions[typings.node.httpsMod.RequestOptions]
+    ): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
     def request(
-      options: typings.node.httpsMod.RequestOptions with FollowOptions[typings.node.httpsMod.RequestOptions],
-      callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]
-    ): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.request")
-    @js.native
-    def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
-    @JSImport("follow-redirects", "https.request")
-    @js.native
-    def request(options: String, callback: js.Function1[/* res */ IncomingMessage with FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = js.native
+      options: typings.node.httpsMod.RequestOptions & FollowOptions[typings.node.httpsMod.RequestOptions],
+      callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]
+    ): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
+    def request(options: String): RedirectableRequest[ClientRequest, IncomingMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
+    @scala.inline
+    def request(options: String, callback: js.Function1[/* res */ IncomingMessage & FollowResponse, Unit]): RedirectableRequest[ClientRequest, IncomingMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[ClientRequest, IncomingMessage]]
   }
   
-  @JSImport("follow-redirects", "wrap")
-  @js.native
-  def wrap[T /* <: StringDictionary[Scheme[_, _, _]] */](protocols: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  @scala.inline
+  def wrap[T /* <: StringDictionary[Scheme[js.Any, js.Any, js.Any]] */](protocols: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: follow-redirects.follow-redirects.WrappedScheme<T[K]>}
-    */ typings.followRedirects.followRedirectsStrings.wrap with TopLevel[T] = js.native
+    */ typings.followRedirects.followRedirectsStrings.wrap & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(protocols.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof T ]: follow-redirects.follow-redirects.WrappedScheme<T[K]>}
+    */ typings.followRedirects.followRedirectsStrings.wrap & TopLevel[T]]
   
-  @js.native
   trait FollowOptions[Options] extends StObject {
     
-    var agents: js.UndefOr[Http] = js.native
+    var agents: js.UndefOr[Http] = js.undefined
     
     var beforeRedirect: js.UndefOr[
         js.Function2[
-          /* options */ Options with FollowOptions[Options], 
+          /* options */ Options & FollowOptions[Options], 
           /* responseDetails */ ResponseDetails, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var followRedirects: js.UndefOr[Boolean] = js.native
+    var followRedirects: js.UndefOr[Boolean] = js.undefined
     
-    var maxBodyLength: js.UndefOr[Double] = js.native
+    var maxBodyLength: js.UndefOr[Double] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var trackRedirects: js.UndefOr[Boolean] = js.native
+    var trackRedirects: js.UndefOr[Boolean] = js.undefined
   }
   object FollowOptions {
     
@@ -303,7 +288,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FollowOptionsMutableBuilder[Self <: FollowOptions[_], Options] (val x: Self with FollowOptions[Options]) extends AnyVal {
+    implicit class FollowOptionsMutableBuilder[Self <: FollowOptions[?], Options] (val x: Self & FollowOptions[Options]) extends AnyVal {
       
       @scala.inline
       def setAgents(value: Http): Self = StObject.set(x, "agents", value.asInstanceOf[js.Any])
@@ -313,7 +298,7 @@ object mod {
       
       @scala.inline
       def setBeforeRedirect(
-        value: (/* options */ Options with FollowOptions[Options], /* responseDetails */ ResponseDetails) => Unit
+        value: (/* options */ Options & FollowOptions[Options], /* responseDetails */ ResponseDetails) => Unit
       ): Self = StObject.set(x, "beforeRedirect", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -345,12 +330,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FollowResponse extends StObject {
     
-    var redirects: js.Array[Redirect] = js.native
+    var redirects: js.Array[Redirect]
     
-    var responseUrl: String = js.native
+    var responseUrl: String
   }
   object FollowResponse {
     
@@ -374,16 +358,15 @@ object mod {
     }
   }
   
-  type Override[T, U] = (Pick[T, Exclude[/* keyof T */ String, /* keyof U */ String]]) with U
+  type Override[T, U] = (Pick[T, Exclude[/* keyof T */ String, /* keyof U */ String]]) & U
   
-  @js.native
   trait Redirect extends StObject {
     
-    var headers: IncomingHttpHeaders = js.native
+    var headers: IncomingHttpHeaders
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var url: String = js.native
+    var url: String
   }
   object Redirect {
     
@@ -410,21 +393,21 @@ object mod {
   @js.native
   trait RedirectScheme[Options, Request /* <: WrappableRequest */, Response] extends StObject {
     
-    def get(options: Options with FollowOptions[Options]): RedirectableRequest[Request, Response] = js.native
+    def get(options: Options & FollowOptions[Options]): RedirectableRequest[Request, Response] = js.native
     def get(
-      options: Options with FollowOptions[Options],
-      callback: js.Function1[/* res */ Response with FollowResponse, Unit]
+      options: Options & FollowOptions[Options],
+      callback: js.Function1[/* res */ Response & FollowResponse, Unit]
     ): RedirectableRequest[Request, Response] = js.native
     def get(options: String): RedirectableRequest[Request, Response] = js.native
-    def get(options: String, callback: js.Function1[/* res */ Response with FollowResponse, Unit]): RedirectableRequest[Request, Response] = js.native
+    def get(options: String, callback: js.Function1[/* res */ Response & FollowResponse, Unit]): RedirectableRequest[Request, Response] = js.native
     
-    def request(options: Options with FollowOptions[Options]): RedirectableRequest[Request, Response] = js.native
+    def request(options: Options & FollowOptions[Options]): RedirectableRequest[Request, Response] = js.native
     def request(
-      options: Options with FollowOptions[Options],
-      callback: js.Function1[/* res */ Response with FollowResponse, Unit]
+      options: Options & FollowOptions[Options],
+      callback: js.Function1[/* res */ Response & FollowResponse, Unit]
     ): RedirectableRequest[Request, Response] = js.native
     def request(options: String): RedirectableRequest[Request, Response] = js.native
-    def request(options: String, callback: js.Function1[/* res */ Response with FollowResponse, Unit]): RedirectableRequest[Request, Response] = js.native
+    def request(options: String, callback: js.Function1[/* res */ Response & FollowResponse, Unit]): RedirectableRequest[Request, Response] = js.native
   }
   
   @js.native
@@ -477,10 +460,9 @@ object mod {
     var setTimeout: /* import warning: importer.ImportType#apply Failed type conversion: Request['setTimeout'] */ js.Any = js.native
   }
   
-  @js.native
   trait ResponseDetails extends StObject {
     
-    var headers: IncomingHttpHeaders = js.native
+    var headers: IncomingHttpHeaders
   }
   object ResponseDetails {
     
@@ -502,27 +484,26 @@ object mod {
   trait Scheme[Options, Request /* <: WrappableRequest */, Response] extends StObject {
     
     def request(options: Options): Request = js.native
-    def request(options: Options, callback: js.Function1[/* res */ Response, _]): Request = js.native
+    def request(options: Options, callback: js.Function1[/* res */ Response, js.Any]): Request = js.native
   }
   
-  @js.native
   trait WrappableRequest extends StObject {
     
-    var abort: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var abort: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var flushHeaders: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var flushHeaders: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var getHeader: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var getHeader: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    def removeHeader(args: js.Any*): js.Any = js.native
+    def removeHeader(args: js.Any*): js.Any
     
-    def setHeader(args: js.Any*): js.Any = js.native
+    def setHeader(args: js.Any*): js.Any
     
-    var setNoDelay: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var setNoDelay: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var setSocketKeepAlive: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var setSocketKeepAlive: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var setTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var setTimeout: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   }
   object WrappableRequest {
     
@@ -536,19 +517,19 @@ object mod {
     implicit class WrappableRequestMutableBuilder[Self <: WrappableRequest] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAbort(value: /* repeated */ js.Any => _): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+      def setAbort(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
       
       @scala.inline
-      def setFlushHeaders(value: /* repeated */ js.Any => _): Self = StObject.set(x, "flushHeaders", js.Any.fromFunction1(value))
+      def setFlushHeaders(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "flushHeaders", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFlushHeadersUndefined: Self = StObject.set(x, "flushHeaders", js.undefined)
       
       @scala.inline
-      def setGetHeader(value: /* repeated */ js.Any => _): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
+      def setGetHeader(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
@@ -560,33 +541,32 @@ object mod {
       def setSetHeader(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "setHeader", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setSetNoDelay(value: /* repeated */ js.Any => _): Self = StObject.set(x, "setNoDelay", js.Any.fromFunction1(value))
+      def setSetNoDelay(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "setNoDelay", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetNoDelayUndefined: Self = StObject.set(x, "setNoDelay", js.undefined)
       
       @scala.inline
-      def setSetSocketKeepAlive(value: /* repeated */ js.Any => _): Self = StObject.set(x, "setSocketKeepAlive", js.Any.fromFunction1(value))
+      def setSetSocketKeepAlive(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "setSocketKeepAlive", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetSocketKeepAliveUndefined: Self = StObject.set(x, "setSocketKeepAlive", js.undefined)
       
       @scala.inline
-      def setSetTimeout(value: /* repeated */ js.Any => _): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+      def setSetTimeout(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
     }
   }
   
-  @js.native
   trait WrappableResponse extends StObject {
     
-    def destroy(): js.Any = js.native
+    def destroy(): js.Any
     
-    var headers: Location = js.native
+    var headers: Location
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object WrappableResponse {
     
@@ -613,5 +593,5 @@ object mod {
     }
   }
   
-  type WrappedScheme[T /* <: Scheme[_, _, _] */] = Override[T, RedirectScheme[js.Any, js.Any, js.Any]]
+  type WrappedScheme[T /* <: Scheme[js.Any, js.Any, js.Any] */] = Override[T, RedirectScheme[js.Any, js.Any, js.Any]]
 }

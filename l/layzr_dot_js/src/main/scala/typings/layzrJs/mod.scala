@@ -3,7 +3,6 @@ package typings.layzrJs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,12 +10,14 @@ object mod {
   /**
     * @param options Options
     */
+  @scala.inline
+  def apply(): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LayzrInstance]
+  @scala.inline
+  def apply(options: LayzrOptions): LayzrInstance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LayzrInstance]
+  
   @JSImport("layzr.js", JSImport.Namespace)
   @js.native
-  def apply(): LayzrInstance = js.native
-  @JSImport("layzr.js", JSImport.Namespace)
-  @js.native
-  def apply(options: LayzrOptions): LayzrInstance = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.layzrJs.layzrJsStrings.srcColonbefore
@@ -81,30 +82,29 @@ object mod {
     def update(): LayzrInstance = js.native
   }
   
-  @js.native
   trait LayzrOptions extends StObject {
     
     /**
       * Customize the attribute the normal resolution source is taken from.
       */
-    var normal: js.UndefOr[String] = js.native
+    var normal: js.UndefOr[String] = js.undefined
     
     /**
       * Customize the attribute the retina/high resolution source is taken from.
       */
-    var retina: js.UndefOr[String] = js.native
+    var retina: js.UndefOr[String] = js.undefined
     
     /**
       * Customize the attribute the source set is taken from.
       */
-    var srcset: js.UndefOr[String] = js.native
+    var srcset: js.UndefOr[String] = js.undefined
     
     /**
       * Adjust when images load, relative to the viewport. Positive values make images load sooner, negative values make images load later.
       *
       * Threshold is a percentage of the viewport height, identical to the CSS vh unit.
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object LayzrOptions {
     

@@ -4,35 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openapiTypes.mod.OpenAPI.Operation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OperationObject extends Operation {
+trait OperationObject
+  extends StObject
+     with Operation {
   
-  var callbacks: js.UndefOr[StringDictionary[ReferenceObject | CallbackObject]] = js.native
+  var callbacks: js.UndefOr[StringDictionary[ReferenceObject | CallbackObject]] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.native
+  var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
   
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[js.Array[ReferenceObject | ParameterObject]] = js.native
+  var parameters: js.UndefOr[js.Array[ReferenceObject | ParameterObject]] = js.undefined
   
-  var requestBody: js.UndefOr[ReferenceObject | RequestBodyObject] = js.native
+  var requestBody: js.UndefOr[ReferenceObject | RequestBodyObject] = js.undefined
   
-  var responses: js.UndefOr[ResponsesObject] = js.native
+  var responses: js.UndefOr[ResponsesObject] = js.undefined
   
-  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.native
+  var security: js.UndefOr[js.Array[SecurityRequirementObject]] = js.undefined
   
-  var servers: js.UndefOr[js.Array[ServerObject]] = js.native
+  var servers: js.UndefOr[js.Array[ServerObject]] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OperationObject {
   

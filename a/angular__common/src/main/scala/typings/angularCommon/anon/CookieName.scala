@@ -2,15 +2,13 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieName extends StObject {
   
-  var cookieName: js.UndefOr[String] = js.native
+  var cookieName: js.UndefOr[String] = js.undefined
   
-  var headerName: js.UndefOr[String] = js.native
+  var headerName: js.UndefOr[String] = js.undefined
 }
 object CookieName {
   

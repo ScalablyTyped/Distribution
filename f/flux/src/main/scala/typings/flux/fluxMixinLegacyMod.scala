@@ -1,9 +1,7 @@
 package typings.flux
 
-import typings.flux.fluxStoreMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluxMixinLegacyMod {
@@ -23,17 +21,18 @@ object fluxMixinLegacyMod {
     * updated to contain the previous foo AND the bar that was just returned. Only
     * returning bar will not delete foo.
     */
-  @JSImport("flux/lib/FluxMixinLegacy", JSImport.Namespace)
-  @js.native
-  def apply(stores: js.Array[^[_]]): js.Any = js.native
-  @JSImport("flux/lib/FluxMixinLegacy", JSImport.Namespace)
-  @js.native
-  def apply(stores: js.Array[^[_]], options: Options): js.Any = js.native
+  @scala.inline
+  def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]]): js.Any = ^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(stores: js.Array[typings.flux.fluxStoreMod.^[js.Any]], options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(stores.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("flux/lib/FluxMixinLegacy", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var withProps: js.UndefOr[Boolean] = js.native
+    var withProps: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

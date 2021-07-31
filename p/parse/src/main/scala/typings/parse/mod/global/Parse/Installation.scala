@@ -1,8 +1,8 @@
 package typings.parse.mod.global.Parse
 
+import typings.parse.mod.global.Parse.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * push notifications has an associated Installation object.
   */
 @js.native
-trait Installation[T /* <: Attributes */] extends Object[T] {
+trait Installation[T /* <: Attributes */]
+  extends StObject
+     with Object[T] {
   
   var appIdentifier: String = js.native
   
@@ -35,4 +37,9 @@ trait Installation[T /* <: Attributes */] extends Object[T] {
   var pushType: String = js.native
   
   var timeZone: js.Any = js.native
+}
+object Installation {
+  
+  @scala.inline
+  def apply: InstallationConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Installation").asInstanceOf[InstallationConstructor]
 }

@@ -6,25 +6,23 @@ import typings.astTypes.kindsMod.CommentKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block extends StObject {
   
-  var block: BlockStatementKind = js.native
+  var block: BlockStatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var finalizer: js.UndefOr[BlockStatementKind | Null] = js.native
+  var finalizer: js.UndefOr[BlockStatementKind | Null] = js.undefined
   
-  var guardedHandlers: js.UndefOr[js.Array[CatchClauseKind]] = js.native
+  var guardedHandlers: js.UndefOr[js.Array[CatchClauseKind]] = js.undefined
   
-  var handler: js.UndefOr[CatchClauseKind | Null] = js.native
+  var handler: js.UndefOr[CatchClauseKind | Null] = js.undefined
   
-  var handlers: js.UndefOr[js.Array[CatchClauseKind]] = js.native
+  var handlers: js.UndefOr[js.Array[CatchClauseKind]] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object Block {
   

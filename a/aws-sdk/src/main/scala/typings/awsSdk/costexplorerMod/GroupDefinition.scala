@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupDefinition extends StObject {
   
   /**
     * The string that represents a key for a specified group.
     */
-  var Key: js.UndefOr[GroupDefinitionKey] = js.native
+  var Key: js.UndefOr[GroupDefinitionKey] = js.undefined
   
   /**
     * The string that represents the type of group.
     */
-  var Type: js.UndefOr[GroupDefinitionType] = js.native
+  var Type: js.UndefOr[GroupDefinitionType] = js.undefined
 }
 object GroupDefinition {
   

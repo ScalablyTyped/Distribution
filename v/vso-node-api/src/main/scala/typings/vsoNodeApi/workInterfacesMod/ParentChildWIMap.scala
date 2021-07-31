@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParentChildWIMap extends StObject {
   
-  var childWorkItemIds: js.Array[Double] = js.native
+  var childWorkItemIds: js.Array[Double]
   
-  var id: Double = js.native
+  var id: Double
   
-  var title: String = js.native
+  var title: String
 }
 object ParentChildWIMap {
   

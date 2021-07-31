@@ -2,16 +2,17 @@ package typings.bitcoinjsLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lazyMod {
   
-  @JSImport("bitcoinjs-lib/types/payments/lazy", "prop")
+  @JSImport("bitcoinjs-lib/types/payments/lazy", JSImport.Namespace)
   @js.native
-  def prop(`object`: js.Object, name: String, f: js.Function0[_]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/payments/lazy", "value")
-  @js.native
-  def value[T](f: js.Function0[T]): js.Function0[T] = js.native
+  @scala.inline
+  def prop(`object`: js.Object, name: String, f: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def value[T](f: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
 }

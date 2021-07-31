@@ -19,7 +19,6 @@ import typings.axios.axiosStrings.unlink_
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,15 +32,28 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("axios", "default.Cancel")
     @js.native
-    class CancelCls () extends Cancel {
+    class CancelCls ()
+      extends StObject
+         with Cancel {
       def this(message: String) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
     }
     
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("axios", "default.CancelToken")
     @js.native
-    class CancelTokenCls protected () extends CancelToken {
+    class CancelTokenCls protected ()
+      extends StObject
+         with CancelToken {
       def this(executor: js.Function1[/* cancel */ Canceler, Unit]) = this()
+      
+      /* CompleteClass */
+      var promise: js.Promise[Cancel] = js.native
+      
+      /* CompleteClass */
+      override def throwIfRequested(): Unit = js.native
     }
     
     type _To = AxiosStatic
@@ -52,12 +64,11 @@ object mod {
   
   type AxiosAdapter = js.Function1[/* config */ AxiosRequestConfig, AxiosPromise[js.Any]]
   
-  @js.native
   trait AxiosBasicCredentials extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object AxiosBasicCredentials {
     
@@ -78,20 +89,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait AxiosError[T] extends Error {
+  trait AxiosError[T]
+    extends StObject
+       with Error {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var config: AxiosRequestConfig = js.native
+    var config: AxiosRequestConfig
     
-    var isAxiosError: Boolean = js.native
+    var isAxiosError: Boolean
     
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
-    var response: js.UndefOr[AxiosResponse[T]] = js.native
+    var response: js.UndefOr[AxiosResponse[T]] = js.undefined
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
   }
   object AxiosError {
     
@@ -108,7 +120,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AxiosErrorMutableBuilder[Self <: AxiosError[_], T] (val x: Self with AxiosError[T]) extends AnyVal {
+    implicit class AxiosErrorMutableBuilder[Self <: AxiosError[?], T] (val x: Self & AxiosError[T]) extends AnyVal {
       
       @scala.inline
       def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
@@ -142,9 +154,9 @@ object mod {
   @js.native
   trait AxiosInstance extends StObject {
     
-    def apply(config: AxiosRequestConfig): AxiosPromise[_] = js.native
-    def apply(url: String): AxiosPromise[_] = js.native
-    def apply(url: String, config: AxiosRequestConfig): AxiosPromise[_] = js.native
+    def apply(config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
+    def apply(url: String): AxiosPromise[js.Any] = js.native
+    def apply(url: String, config: AxiosRequestConfig): AxiosPromise[js.Any] = js.native
     
     var defaults: AxiosRequestConfig = js.native
     
@@ -166,19 +178,19 @@ object mod {
     def options[T, R](url: String, config: AxiosRequestConfig): js.Promise[R] = js.native
     
     def patch[T, R](url: String): js.Promise[R] = js.native
-    def patch[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
     def patch[T, R](url: String, data: js.Any): js.Promise[R] = js.native
     def patch[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
+    def patch[T, R](url: String, data: Unit, config: AxiosRequestConfig): js.Promise[R] = js.native
     
     def post[T, R](url: String): js.Promise[R] = js.native
-    def post[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
     def post[T, R](url: String, data: js.Any): js.Promise[R] = js.native
     def post[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
+    def post[T, R](url: String, data: Unit, config: AxiosRequestConfig): js.Promise[R] = js.native
     
     def put[T, R](url: String): js.Promise[R] = js.native
-    def put[T, R](url: String, data: js.UndefOr[scala.Nothing], config: AxiosRequestConfig): js.Promise[R] = js.native
     def put[T, R](url: String, data: js.Any): js.Promise[R] = js.native
     def put[T, R](url: String, data: js.Any, config: AxiosRequestConfig): js.Promise[R] = js.native
+    def put[T, R](url: String, data: Unit, config: AxiosRequestConfig): js.Promise[R] = js.native
     
     def request[T, R](config: AxiosRequestConfig): js.Promise[R] = js.native
   }
@@ -189,26 +201,25 @@ object mod {
     def eject(id: Double): Unit = js.native
     
     def use(): Double = js.native
-    def use(onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* error */ js.Any, _]): Double = js.native
     def use(onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]]): Double = js.native
     def use(
       onFulfilled: js.Function1[/* value */ V, V | js.Promise[V]],
-      onRejected: js.Function1[/* error */ js.Any, _]
+      onRejected: js.Function1[/* error */ js.Any, js.Any]
     ): Double = js.native
+    def use(onFulfilled: Unit, onRejected: js.Function1[/* error */ js.Any, js.Any]): Double = js.native
   }
   
   type AxiosPromise[T] = js.Promise[AxiosResponse[T]]
   
-  @js.native
   trait AxiosProxyConfig extends StObject {
     
-    var auth: js.UndefOr[Password] = js.native
+    var auth: js.UndefOr[Password] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
   }
   object AxiosProxyConfig {
     
@@ -241,66 +252,65 @@ object mod {
     }
   }
   
-  @js.native
   trait AxiosRequestConfig extends StObject {
     
-    var adapter: js.UndefOr[AxiosAdapter] = js.native
+    var adapter: js.UndefOr[AxiosAdapter] = js.undefined
     
-    var auth: js.UndefOr[AxiosBasicCredentials] = js.native
+    var auth: js.UndefOr[AxiosBasicCredentials] = js.undefined
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var cancelToken: js.UndefOr[CancelToken] = js.native
+    var cancelToken: js.UndefOr[CancelToken] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var decompress: js.UndefOr[Boolean] = js.native
+    var decompress: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var httpAgent: js.UndefOr[js.Any] = js.native
+    var httpAgent: js.UndefOr[js.Any] = js.undefined
     
-    var httpsAgent: js.UndefOr[js.Any] = js.native
+    var httpsAgent: js.UndefOr[js.Any] = js.undefined
     
-    var maxBodyLength: js.UndefOr[Double] = js.native
+    var maxBodyLength: js.UndefOr[Double] = js.undefined
     
-    var maxContentLength: js.UndefOr[Double] = js.native
+    var maxContentLength: js.UndefOr[Double] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[Method] = js.native
+    var method: js.UndefOr[Method] = js.undefined
     
-    var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+    var onDownloadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
     
-    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.native
+    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ js.Any, Unit]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var paramsSerializer: js.UndefOr[js.Function1[/* params */ js.Any, String]] = js.native
+    var paramsSerializer: js.UndefOr[js.Function1[/* params */ js.Any, String]] = js.undefined
     
-    var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.native
+    var proxy: js.UndefOr[AxiosProxyConfig | `false`] = js.undefined
     
-    var responseType: js.UndefOr[ResponseType] = js.native
+    var responseType: js.UndefOr[ResponseType] = js.undefined
     
-    var socketPath: js.UndefOr[String | Null] = js.native
+    var socketPath: js.UndefOr[String | Null] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var timeoutErrorMessage: js.UndefOr[String] = js.native
+    var timeoutErrorMessage: js.UndefOr[String] = js.undefined
     
-    var transformRequest: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.native
+    var transformRequest: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
     
-    var transformResponse: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.native
+    var transformResponse: js.UndefOr[AxiosTransformer | js.Array[AxiosTransformer]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var validateStatus: js.UndefOr[(js.Function1[/* status */ Double, Boolean]) | Null] = js.native
+    var validateStatus: js.UndefOr[(js.Function1[/* status */ Double, Boolean]) | Null] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
     
-    var xsrfCookieName: js.UndefOr[String] = js.native
+    var xsrfCookieName: js.UndefOr[String] = js.undefined
     
-    var xsrfHeaderName: js.UndefOr[String] = js.native
+    var xsrfHeaderName: js.UndefOr[String] = js.undefined
   }
   object AxiosRequestConfig {
     
@@ -507,20 +517,19 @@ object mod {
     }
   }
   
-  @js.native
   trait AxiosResponse[T] extends StObject {
     
-    var config: AxiosRequestConfig = js.native
+    var config: AxiosRequestConfig
     
-    var data: T = js.native
+    var data: T
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object AxiosResponse {
     
@@ -531,7 +540,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AxiosResponseMutableBuilder[Self <: AxiosResponse[_], T] (val x: Self with AxiosResponse[T]) extends AnyVal {
+    implicit class AxiosResponseMutableBuilder[Self <: AxiosResponse[?], T] (val x: Self & AxiosResponse[T]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -557,7 +566,9 @@ object mod {
   }
   
   @js.native
-  trait AxiosStatic extends AxiosInstance {
+  trait AxiosStatic
+    extends StObject
+       with AxiosInstance {
     
     var Cancel: CancelStatic = js.native
     
@@ -575,10 +586,9 @@ object mod {
   
   type AxiosTransformer = js.Function2[/* data */ js.Any, /* headers */ js.UndefOr[js.Any], js.Any]
   
-  @js.native
   trait Cancel extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Cancel {
     
@@ -598,17 +608,17 @@ object mod {
   
   @js.native
   trait CancelStatic
-    extends Instantiable0[Cancel]
+    extends StObject
+       with Instantiable0[Cancel]
        with Instantiable1[/* message */ String, Cancel]
   
-  @js.native
   trait CancelToken extends StObject {
     
-    var promise: js.Promise[Cancel] = js.native
+    var promise: js.Promise[Cancel]
     
-    var reason: js.UndefOr[Cancel] = js.native
+    var reason: js.UndefOr[Cancel] = js.undefined
     
-    def throwIfRequested(): Unit = js.native
+    def throwIfRequested(): Unit
   }
   object CancelToken {
     
@@ -635,20 +645,38 @@ object mod {
     }
   }
   
-  @js.native
   trait CancelTokenSource extends StObject {
     
-    def cancel(): Unit = js.native
-    def cancel(message: String): Unit = js.native
+    def cancel(): Unit
+    def cancel(message: String): Unit
     @JSName("cancel")
-    var cancel_Original: Canceler = js.native
+    var cancel_Original: Canceler
     
-    var token: CancelToken = js.native
+    var token: CancelToken
+  }
+  object CancelTokenSource {
+    
+    @scala.inline
+    def apply(cancel: /* message */ js.UndefOr[String] => Unit, token: CancelToken): CancelTokenSource = {
+      val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), token = token.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CancelTokenSource]
+    }
+    
+    @scala.inline
+    implicit class CancelTokenSourceMutableBuilder[Self <: CancelTokenSource] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCancel(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setToken(value: CancelToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
   trait CancelTokenStatic
-    extends Instantiable1[/* executor */ js.Function1[/* cancel */ Canceler, Unit], CancelToken] {
+    extends StObject
+       with Instantiable1[/* executor */ js.Function1[/* cancel */ Canceler, Unit], CancelToken] {
     
     def source(): CancelTokenSource = js.native
   }

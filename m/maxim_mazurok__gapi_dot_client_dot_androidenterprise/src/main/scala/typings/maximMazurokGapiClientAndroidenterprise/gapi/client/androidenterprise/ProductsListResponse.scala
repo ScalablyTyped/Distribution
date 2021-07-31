@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductsListResponse extends StObject {
   
   /** General pagination information. */
-  var pageInfo: js.UndefOr[PageInfo] = js.native
+  var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
   /** Information about a product (e.g. an app) in the Google Play store, for display to an enterprise admin. */
-  var product: js.UndefOr[js.Array[Product]] = js.native
+  var product: js.UndefOr[js.Array[Product]] = js.undefined
   
   /** Pagination information for token pagination. */
-  var tokenPagination: js.UndefOr[TokenPagination] = js.native
+  var tokenPagination: js.UndefOr[TokenPagination] = js.undefined
 }
 object ProductsListResponse {
   

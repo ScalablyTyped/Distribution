@@ -2,15 +2,15 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PortableCpuContext extends CpuContext {
+trait PortableCpuContext
+  extends StObject
+     with CpuContext {
   
-  var pc: NativePointer = js.native
+  var pc: NativePointer
   
-  var sp: NativePointer = js.native
+  var sp: NativePointer
 }
 object PortableCpuContext {
   

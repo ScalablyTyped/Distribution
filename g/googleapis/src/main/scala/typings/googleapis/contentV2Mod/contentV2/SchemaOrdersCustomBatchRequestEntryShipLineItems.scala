@@ -2,10 +2,8 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntryShipLineItems extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait SchemaOrdersCustomBatchRequestEntryShipLineItems extends StObject {
     * shipment. See shipments[].carrier in the  Orders resource representation
     * for a list of acceptable values.
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /**
     * Line items to ship.
     */
-  var lineItems: js.UndefOr[js.Array[SchemaOrderShipmentLineItemShipment]] = js.native
+  var lineItems: js.UndefOr[js.Array[SchemaOrderShipmentLineItemShipment]] = js.undefined
   
   /**
     * ID of the shipment group. Required for orders that use the orderinvoices
     * service.
     */
-  var shipmentGroupId: js.UndefOr[String] = js.native
+  var shipmentGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Please use shipmentInfo instead. The ID of the shipment.
     */
-  var shipmentId: js.UndefOr[String] = js.native
+  var shipmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Shipment information. This field is repeated because a single line item
     * can be shipped in several packages (and have several tracking IDs).
     */
-  var shipmentInfos: js.UndefOr[js.Array[SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.native
+  var shipmentInfos: js.UndefOr[js.Array[SchemaOrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]] = js.undefined
   
   /**
     * Deprecated. Please use shipmentInfo instead. The tracking ID for the
     * shipment.
     */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryShipLineItems {
   

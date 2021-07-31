@@ -3,15 +3,13 @@ package typings.libsodiumWrappers.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CryptoKX extends StObject {
   
-  var sharedRx: Uint8Array = js.native
+  var sharedRx: Uint8Array
   
-  var sharedTx: Uint8Array = js.native
+  var sharedTx: Uint8Array
 }
 object CryptoKX {
   

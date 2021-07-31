@@ -2,13 +2,11 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MGetResponse[T] extends StObject {
   
-  var docs: js.UndefOr[js.Array[GetResponse[T]]] = js.native
+  var docs: js.UndefOr[js.Array[GetResponse[T]]] = js.undefined
 }
 object MGetResponse {
   
@@ -19,7 +17,7 @@ object MGetResponse {
   }
   
   @scala.inline
-  implicit class MGetResponseMutableBuilder[Self <: MGetResponse[_], T] (val x: Self with MGetResponse[T]) extends AnyVal {
+  implicit class MGetResponseMutableBuilder[Self <: MGetResponse[?], T] (val x: Self & MGetResponse[T]) extends AnyVal {
     
     @scala.inline
     def setDocs(value: js.Array[GetResponse[T]]): Self = StObject.set(x, "docs", value.asInstanceOf[js.Any])

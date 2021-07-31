@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/tracks?ids={ids}
   * https://developer.spotify.com/web-api/get-several-tracks/
   */
-@js.native
 trait MultipleTracksResponse extends StObject {
   
-  var tracks: js.Array[TrackObjectFull] = js.native
+  var tracks: js.Array[TrackObjectFull]
 }
 object MultipleTracksResponse {
   

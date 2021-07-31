@@ -2,21 +2,19 @@ package typings.sat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SAT {
   
-  @js.native
   trait Box extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var pos: Vector = js.native
+    var pos: Vector
     
-    def toPolygon(): Polygon = js.native
+    def toPolygon(): Polygon
     
-    var w: Double = js.native
+    var w: Double
   }
   object Box {
     
@@ -43,12 +41,11 @@ object SAT {
     }
   }
   
-  @js.native
   trait Circle extends StObject {
     
-    var pos: Vector = js.native
+    var pos: Vector
     
-    var r: Double = js.native
+    var r: Double
   }
   object Circle {
     
@@ -69,36 +66,35 @@ object SAT {
     }
   }
   
-  @js.native
   trait Polygon extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var calcPoints: js.Array[Vector] = js.native
+    var calcPoints: js.Array[Vector]
     
-    var edges: js.Array[Vector] = js.native
+    var edges: js.Array[Vector]
     
-    def getAABB(): Polygon = js.native
+    def getAABB(): Polygon
     
-    def getCentroid(): Vector = js.native
+    def getCentroid(): Vector
     
-    var normals: js.Array[Vector] = js.native
+    var normals: js.Array[Vector]
     
-    var offset: Vector = js.native
+    var offset: Vector
     
-    var points: js.Array[Vector] = js.native
+    var points: js.Array[Vector]
     
-    var pos: Vector = js.native
+    var pos: Vector
     
-    def rotate(angle: Double): Polygon = js.native
+    def rotate(angle: Double): Polygon
     
-    def setAngle(angle: Double): Polygon = js.native
+    def setAngle(angle: Double): Polygon
     
-    def setOffset(offset: Vector): Polygon = js.native
+    def setOffset(offset: Vector): Polygon
     
-    def setPoints(points: js.Array[Vector]): Polygon = js.native
+    def setPoints(points: js.Array[Vector]): Polygon
     
-    def translate(x: Double, y: Double): Polygon = js.native
+    def translate(x: Double, y: Double): Polygon
   }
   object Polygon {
     
@@ -182,24 +178,23 @@ object SAT {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var a: js.Any = js.native
+    var a: js.Any
     
-    var aInB: Boolean = js.native
+    var aInB: Boolean
     
-    var b: js.Any = js.native
+    var b: js.Any
     
-    var bInA: Boolean = js.native
+    var bInA: Boolean
     
-    def clear(): Response = js.native
+    def clear(): Response
     
-    var overlap: Double = js.native
+    var overlap: Double
     
-    var overlapN: Vector = js.native
+    var overlapN: Vector
     
-    var overlapV: Vector = js.native
+    var overlapV: Vector
   }
   object Response {
     

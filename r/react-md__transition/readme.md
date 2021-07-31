@@ -10,9 +10,9 @@ A package for working with react-md to use some simple transitions.
 | ------------------ | :-------------: |
 | Full name          | @react-md/transition |
 | Keywords           | react-md, material design, react, transition, component, components, collapse |
-| # releases         | 31 |
+| # releases         | 38 |
 | # dependents       | 18 |
-| # downloads        | 9839 |
+| # downloads        | 26880 |
 | # stars            | 0 |
 
 ## Links

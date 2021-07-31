@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,13 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * group [B:D, depth 1] + [C:E] results in groups [B:E, depth 1] and [C:D,
   * depth 2].
   */
-@js.native
 trait SchemaAddDimensionGroupRequest extends StObject {
   
   /**
     * The range over which to create a group.
     */
-  var range: js.UndefOr[SchemaDimensionRange] = js.native
+  var range: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaAddDimensionGroupRequest {
   

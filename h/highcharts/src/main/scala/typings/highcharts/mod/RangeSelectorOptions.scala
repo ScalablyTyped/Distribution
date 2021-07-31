@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSelectorOptions extends StObject {
   
   /**
@@ -14,18 +12,18 @@ trait RangeSelectorOptions extends StObject {
     * on the X axis, but enabling all buttons allows for dynamically loading
     * different time ranges.
     */
-  var allButtonsEnabled: js.UndefOr[Boolean] = js.native
+  var allButtonsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Positioning for the button row.
     */
-  var buttonPosition: js.UndefOr[RangeSelectorButtonPositionOptions] = js.native
+  var buttonPosition: js.UndefOr[RangeSelectorButtonPositionOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) The space in pixels between the buttons in the range
     * selector.
     */
-  var buttonSpacing: js.UndefOr[Double] = js.native
+  var buttonSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) A collection of attributes for the buttons. The object
@@ -41,47 +39,47 @@ trait RangeSelectorOptions extends StObject {
     * `.highcharts-range-selector-buttons .highcharts-button` rule with its
     * different states.
     */
-  var buttonTheme: js.UndefOr[SVGAttributes] = js.native
+  var buttonTheme: js.UndefOr[SVGAttributes] = js.undefined
   
   /**
     * (Highstock, Gantt) An array of configuration objects for the buttons.
     *
     * Defaults to: (see online documentation for example)
     */
-  var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.native
+  var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable the range selector.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) When the rangeselector is floating, the plot area does
     * not reserve space for it. This opens for positioning anywhere on the
     * chart.
     */
-  var floating: js.UndefOr[Boolean] = js.native
+  var floating: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) The border color of the date input boxes.
     */
-  var inputBoxBorderColor: js.UndefOr[ColorString] = js.native
+  var inputBoxBorderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel height of the date input boxes.
     */
-  var inputBoxHeight: js.UndefOr[Double] = js.native
+  var inputBoxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The pixel width of the date input boxes.
     */
-  var inputBoxWidth: js.UndefOr[Double] = js.native
+  var inputBoxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The date format in the input boxes when not selected
     * for editing. Defaults to `%b %e, %Y`.
     */
-  var inputDateFormat: js.UndefOr[String] = js.native
+  var inputDateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) A custom callback function to parse values entered in
@@ -89,26 +87,26 @@ trait RangeSelectorOptions extends StObject {
     * 1970. The first argument passed is a value to parse, second is a boolean
     * indicating use of the UTC time.
     */
-  var inputDateParser: js.UndefOr[RangeSelectorParseCallbackFunction] = js.native
+  var inputDateParser: js.UndefOr[RangeSelectorParseCallbackFunction] = js.undefined
   
   /**
     * (Highstock, Gantt) The date format in the input boxes when they are
     * selected for editing. This must be a format that is recognized by
     * JavaScript Date.parse.
     */
-  var inputEditDateFormat: js.UndefOr[String] = js.native
+  var inputEditDateFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable the date input boxes. Defaults to
     * enabled when there is enough space, disabled if not (typically mobile).
     */
-  var inputEnabled: js.UndefOr[Boolean] = js.native
+  var inputEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock, Gantt) Positioning for the input boxes. Allowed properties
     * are `align`, `x` and `y`.
     */
-  var inputPosition: js.UndefOr[RangeSelectorInputPositionOptions] = js.native
+  var inputPosition: js.UndefOr[RangeSelectorInputPositionOptions] = js.undefined
   
   /**
     * (Highstock, Gantt) CSS for the HTML inputs in the range selector.
@@ -117,7 +115,7 @@ trait RangeSelectorOptions extends StObject {
     * text` rule in SVG mode, and `input.highcharts-range-selector` when
     * active.
     */
-  var inputStyle: js.UndefOr[CSSObject] = js.native
+  var inputStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highstock, Gantt) CSS styles for the labels - the Zoom, From and To
@@ -126,30 +124,30 @@ trait RangeSelectorOptions extends StObject {
     * In styled mode, the labels are styled by the `.highcharts-range-label`
     * class.
     */
-  var labelStyle: js.UndefOr[CSSObject] = js.native
+  var labelStyle: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highstock, Gantt) The index of the button to appear pre-selected.
     */
-  var selected: js.UndefOr[Double] = js.native
+  var selected: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The vertical alignment of the rangeselector box.
     * Allowed properties are `top`, `middle`, `bottom`.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highstock, Gantt) The x offset of the range selector relative to its
     * horizontal alignment within `chart.spacingLeft` and `chart.spacingRight`.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock, Gantt) The y offset of the range selector relative to its
     * horizontal alignment within `chart.spacingLeft` and `chart.spacingRight`.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object RangeSelectorOptions {
   

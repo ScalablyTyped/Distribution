@@ -3,14 +3,15 @@ package typings.devexpressWeb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxClientDocumentViewer control's ReportViewer.
   */
 @js.native
-trait ASPxClientReportViewer extends ASPxClientControl {
+trait ASPxClientReportViewer
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

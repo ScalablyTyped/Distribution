@@ -10,40 +10,45 @@ import typings.std.ReadableStream
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object normaliseInputNormaliseInputMod {
   
-  @JSImport("ipfs-core-utils/dist/src/files/normalise-input/normalise-input", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[Content /* <: Blob | AsyncIterable[Uint8Array] */](
     input: Source,
     normaliseContent: js.Function1[/* content */ ToContent, Content | js.Promise[Content]]
-  ): AsyncIterable[Directory | File[Content]] = js.native
+  ): AsyncIterable[Directory | File[Content]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Directory | File[Content]]]
   
+  @JSImport("ipfs-core-utils/dist/src/files/normalise-input/normalise-input", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Directory
-    extends Entry[js.Any] {
+    extends StObject
+       with Entry[js.Any] {
     
-    var content: js.UndefOr[scala.Nothing] = js.native
+    var content: Unit
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime] = js.native
+    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Directory {
     
     @scala.inline
-    def apply(path: String): Directory = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    def apply(content: Unit, path: String): Directory = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Directory]
     }
     
     @scala.inline
     implicit class DirectoryMutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setContent(value: Unit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
@@ -70,8 +75,8 @@ object normaliseInputNormaliseInputMod {
   object Entry {
     
     @scala.inline
-    def Directory(path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    def Directory(content: Unit, path: String): typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ipfsCoreUtils.normaliseInputNormaliseInputMod.Directory]
     }
     
@@ -82,16 +87,17 @@ object normaliseInputNormaliseInputMod {
     }
   }
   
-  @js.native
-  trait File[Content /* <: Blob | AsyncIterable[Uint8Array] */] extends Entry[Content] {
+  trait File[Content /* <: Blob | AsyncIterable[Uint8Array] */]
+    extends StObject
+       with Entry[Content] {
     
-    var content: js.UndefOr[Content] = js.native
+    var content: js.UndefOr[Content] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime] = js.native
+    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object File {
     
@@ -102,7 +108,7 @@ object normaliseInputNormaliseInputMod {
     }
     
     @scala.inline
-    implicit class FileMutableBuilder[Self <: File[_], Content /* <: Blob | AsyncIterable[Uint8Array] */] (val x: Self with File[Content]) extends AnyVal {
+    implicit class FileMutableBuilder[Self <: File[?], Content /* <: Blob | AsyncIterable[Uint8Array] */] (val x: Self & File[Content]) extends AnyVal {
       
       @scala.inline
       def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
@@ -127,18 +133,17 @@ object normaliseInputNormaliseInputMod {
     }
   }
   
-  @js.native
   trait FileInput extends StObject {
     
     var content: js.UndefOr[
         String | Blob | AsyncIterable[Uint8Array] | ArrayBufferView | ArrayBuffer | Iterable[Uint8Array] | ReadableStream[Uint8Array]
-      ] = js.native
+      ] = js.undefined
     
-    var mode: js.UndefOr[String | Double] = js.native
+    var mode: js.UndefOr[String | Double] = js.undefined
     
-    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime | Date | (js.Tuple2[Double, Double])] = js.native
+    var mtime: js.UndefOr[typings.ipfsCoreUtils.formatMtimeMod.MTime | Date | (js.Tuple2[Double, Double])] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object FileInput {
     
@@ -181,20 +186,19 @@ object normaliseInputNormaliseInputMod {
   
   type HRTime = js.Tuple2[Double, Double]
   
-  @js.native
   trait MTime extends StObject {
     
     /**
       * - the number of nanoseconds since the last full
       * second.
       */
-    var nsecs: Double = js.native
+    var nsecs: Double
     
     /**
       * - the number of seconds since (positive) or before
       * (negative) the Unix Epoch began
       */
-    var secs: Double = js.native
+    var secs: Double
   }
   object MTime {
     

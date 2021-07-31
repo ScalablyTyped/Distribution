@@ -12,35 +12,32 @@ import typings.angularCompiler.mlParserAstMod.Visitor
 import typings.angularCompiler.outputAstMod.JSDocComment_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metaMod {
   
+  @JSImport("@angular/compiler/src/render3/view/i18n/meta", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@angular/compiler/src/render3/view/i18n/meta", "I18nMetaVisitor")
   @js.native
-  class I18nMetaVisitor () extends Visitor {
+  class I18nMetaVisitor ()
+    extends StObject
+       with Visitor {
     def this(interpolationConfig: InterpolationConfig) = this()
-    def this(interpolationConfig: js.UndefOr[scala.Nothing], keepI18nAttrs: Boolean) = this()
+    def this(interpolationConfig: Unit, keepI18nAttrs: Boolean) = this()
     def this(interpolationConfig: InterpolationConfig, keepI18nAttrs: Boolean) = this()
+    def this(interpolationConfig: Unit, keepI18nAttrs: Boolean, enableI18nLegacyMessageIdFormat: Boolean) = this()
+    def this(interpolationConfig: Unit, keepI18nAttrs: Unit, enableI18nLegacyMessageIdFormat: Boolean) = this()
     def this(
-      interpolationConfig: js.UndefOr[scala.Nothing],
-      keepI18nAttrs: js.UndefOr[scala.Nothing],
-      enableI18nLegacyMessageIdFormat: Boolean
-    ) = this()
-    def this(
-      interpolationConfig: js.UndefOr[scala.Nothing],
+      interpolationConfig: InterpolationConfig,
       keepI18nAttrs: Boolean,
       enableI18nLegacyMessageIdFormat: Boolean
     ) = this()
     def this(
       interpolationConfig: InterpolationConfig,
-      keepI18nAttrs: js.UndefOr[scala.Nothing],
-      enableI18nLegacyMessageIdFormat: Boolean
-    ) = this()
-    def this(
-      interpolationConfig: InterpolationConfig,
-      keepI18nAttrs: Boolean,
+      keepI18nAttrs: Unit,
       enableI18nLegacyMessageIdFormat: Boolean
     ) = this()
     
@@ -84,42 +81,50 @@ object metaMod {
     var keepI18nAttrs: js.Any = js.native
     
     def visitAttribute(attribute: Attribute): js.Any = js.native
+    /* CompleteClass */
+    override def visitAttribute(attribute: Attribute, context: js.Any): js.Any = js.native
     
     def visitComment(comment: Comment): js.Any = js.native
+    /* CompleteClass */
+    override def visitComment(comment: Comment, context: js.Any): js.Any = js.native
     
     def visitElement(element: Element): js.Any = js.native
+    /* CompleteClass */
+    override def visitElement(element: Element, context: js.Any): js.Any = js.native
     
     def visitExpansion(expansion: Expansion): js.Any = js.native
+    /* CompleteClass */
+    override def visitExpansion(expansion: Expansion, context: js.Any): js.Any = js.native
     def visitExpansion(expansion: Expansion, currentMessage: Message): js.Any = js.native
     
     def visitExpansionCase(expansionCase: ExpansionCase): js.Any = js.native
+    /* CompleteClass */
+    override def visitExpansionCase(expansionCase: ExpansionCase, context: js.Any): js.Any = js.native
     
     def visitText(text: Text): js.Any = js.native
+    /* CompleteClass */
+    override def visitText(text: Text, context: js.Any): js.Any = js.native
   }
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/meta", "i18nMetaToJSDoc")
-  @js.native
-  def i18nMetaToJSDoc(meta: I18nMeta): JSDocComment_ | Null = js.native
+  @scala.inline
+  def i18nMetaToJSDoc(meta: I18nMeta): JSDocComment_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMetaToJSDoc")(meta.asInstanceOf[js.Any]).asInstanceOf[JSDocComment_ | Null]
   
-  @JSImport("@angular/compiler/src/render3/view/i18n/meta", "parseI18nMeta")
-  @js.native
-  def parseI18nMeta(): I18nMeta = js.native
-  @JSImport("@angular/compiler/src/render3/view/i18n/meta", "parseI18nMeta")
-  @js.native
-  def parseI18nMeta(meta: String): I18nMeta = js.native
+  @scala.inline
+  def parseI18nMeta(): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")().asInstanceOf[I18nMeta]
+  @scala.inline
+  def parseI18nMeta(meta: String): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")(meta.asInstanceOf[js.Any]).asInstanceOf[I18nMeta]
   
-  @js.native
   trait I18nMeta extends StObject {
     
-    var customId: js.UndefOr[String] = js.native
+    var customId: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var legacyIds: js.UndefOr[js.Array[String]] = js.native
+    var legacyIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var meaning: js.UndefOr[String] = js.native
+    var meaning: js.UndefOr[String] = js.undefined
   }
   object I18nMeta {
     

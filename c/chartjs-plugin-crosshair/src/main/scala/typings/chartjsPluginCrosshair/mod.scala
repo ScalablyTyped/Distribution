@@ -3,17 +3,15 @@ package typings.chartjsPluginCrosshair
 import typings.chartjsPluginCrosshair.chartjsPluginCrosshairStrings.interpolate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait CallbackOptions extends StObject {
     
-    var afterZoom: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.native
+    var afterZoom: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Unit]] = js.undefined
     
-    var beforeZoom: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Boolean]] = js.native
+    var beforeZoom: js.UndefOr[js.Function2[/* start */ Double, /* end */ Double, Boolean]] = js.undefined
   }
   object CallbackOptions {
     
@@ -40,18 +38,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CrosshairOptions extends StObject {
     
-    var callbacks: js.UndefOr[CallbackOptions] = js.native
+    var callbacks: js.UndefOr[CallbackOptions] = js.undefined
     
-    var line: js.UndefOr[LineOptions] = js.native
+    var line: js.UndefOr[LineOptions] = js.undefined
     
-    var snap: js.UndefOr[SnapOptions] = js.native
+    var snap: js.UndefOr[SnapOptions] = js.undefined
     
-    var sync: js.UndefOr[SyncOptions] = js.native
+    var sync: js.UndefOr[SyncOptions] = js.undefined
     
-    var zoom: js.UndefOr[ZoomOptions] = js.native
+    var zoom: js.UndefOr[ZoomOptions] = js.undefined
   }
   object CrosshairOptions {
     
@@ -96,14 +93,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LineOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var dashPattern: js.UndefOr[js.Array[Double]] = js.native
+    var dashPattern: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LineOptions {
     
@@ -139,10 +135,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SnapOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object SnapOptions {
     
@@ -163,14 +158,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SyncOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var group: js.UndefOr[Double] = js.native
+    var group: js.UndefOr[Double] = js.undefined
     
-    var suppressTooltips: js.UndefOr[Boolean] = js.native
+    var suppressTooltips: js.UndefOr[Boolean] = js.undefined
   }
   object SyncOptions {
     
@@ -203,18 +197,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ZoomOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var zoomButtonClass: js.UndefOr[String] = js.native
+    var zoomButtonClass: js.UndefOr[String] = js.undefined
     
-    var zoomButtonText: js.UndefOr[String] = js.native
+    var zoomButtonText: js.UndefOr[String] = js.undefined
     
-    var zoomboxBackgroundColor: js.UndefOr[String] = js.native
+    var zoomboxBackgroundColor: js.UndefOr[String] = js.undefined
     
-    var zoomboxBorderColor: js.UndefOr[String] = js.native
+    var zoomboxBorderColor: js.UndefOr[String] = js.undefined
   }
   object ZoomOptions {
     
@@ -262,10 +255,9 @@ object mod {
   /* augmented module */
   object chartJsAugmentingMod {
     
-    @js.native
     trait ChartDataSets extends StObject {
       
-      var interpolate: js.UndefOr[Boolean] = js.native
+      var interpolate: js.UndefOr[Boolean] = js.undefined
     }
     object ChartDataSets {
       
@@ -286,10 +278,9 @@ object mod {
       }
     }
     
-    @js.native
     trait ChartPluginsOptions extends StObject {
       
-      var crosshair: js.UndefOr[CrosshairOptions] = js.native
+      var crosshair: js.UndefOr[CrosshairOptions] = js.undefined
     }
     object ChartPluginsOptions {
       
@@ -310,16 +301,15 @@ object mod {
       }
     }
     
-    @js.native
     trait InteractionModeRegistry extends StObject {
       
-      var interpolate: typings.chartjsPluginCrosshair.chartjsPluginCrosshairStrings.interpolate = js.native
+      var interpolate: typings.chartjsPluginCrosshair.chartjsPluginCrosshairStrings.interpolate
     }
     object InteractionModeRegistry {
       
       @scala.inline
-      def apply(interpolate: interpolate): InteractionModeRegistry = {
-        val __obj = js.Dynamic.literal(interpolate = interpolate.asInstanceOf[js.Any])
+      def apply(): InteractionModeRegistry = {
+        val __obj = js.Dynamic.literal(interpolate = "interpolate")
         __obj.asInstanceOf[InteractionModeRegistry]
       }
       
@@ -337,10 +327,9 @@ object mod {
   // see https://github.com/Microsoft/TypeScript/issues/14080
   object global {
     
-    @js.native
     trait Chart extends StObject {
       
-      def panZoom(increment: Double): Unit = js.native
+      def panZoom(increment: Double): Unit
     }
     object Chart {
       

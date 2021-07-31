@@ -2,17 +2,15 @@ package typings.debounce
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clear extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def flush(): Unit = js.native
+    def flush(): Unit
   }
   object Clear {
     

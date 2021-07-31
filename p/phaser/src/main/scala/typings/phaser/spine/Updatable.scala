@@ -2,15 +2,13 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Updatable extends StObject {
   
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object Updatable {
   

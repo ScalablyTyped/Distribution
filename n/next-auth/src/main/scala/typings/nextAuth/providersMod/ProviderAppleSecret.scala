@@ -2,19 +2,17 @@ package typings.nextAuth.providersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderAppleSecret extends StObject {
   
-  var appleId: String = js.native
+  var appleId: String
   
-  var keyId: String = js.native
+  var keyId: String
   
-  var privateKey: String = js.native
+  var privateKey: String
   
-  var teamId: String = js.native
+  var teamId: String
 }
 object ProviderAppleSecret {
   

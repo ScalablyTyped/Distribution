@@ -10,52 +10,47 @@ import typings.std.ReturnType
 import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsdom-screenshot", "debug")
+  @JSImport("jsdom-screenshot", JSImport.Namespace)
   @js.native
-  def debug(): Unit = js.native
-  @JSImport("jsdom-screenshot", "debug")
-  @js.native
-  def debug(element: Document): Unit = js.native
-  @JSImport("jsdom-screenshot", "debug")
-  @js.native
-  def debug(element: Element): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jsdom-screenshot", "generateImage")
-  @js.native
-  def generateImage(): ReturnType[FnCall] = js.native
-  @JSImport("jsdom-screenshot", "generateImage")
-  @js.native
-  def generateImage(options: GenerateImageOptions): ReturnType[FnCall] = js.native
+  @scala.inline
+  def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
+  @scala.inline
+  def debug(element: Document): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jsdom-screenshot", "restoreDefaultOptions")
-  @js.native
-  def restoreDefaultOptions(): Unit = js.native
+  @scala.inline
+  def generateImage(): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateImage")().asInstanceOf[ReturnType[FnCall]]
+  @scala.inline
+  def generateImage(options: GenerateImageOptions): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateImage")(options.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
   
-  @JSImport("jsdom-screenshot", "setDefaultOptions")
-  @js.native
-  def setDefaultOptions(options: GenerateImageOptions): Unit = js.native
+  @scala.inline
+  def restoreDefaultOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restoreDefaultOptions")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def setDefaultOptions(options: GenerateImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait GenerateImageOptions extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var intercept: js.UndefOr[VoidFunction] = js.native
+    var intercept: js.UndefOr[VoidFunction] = js.undefined
     
-    var launch: js.UndefOr[LaunchOptions] = js.native
+    var launch: js.UndefOr[LaunchOptions] = js.undefined
     
-    var screenshot: js.UndefOr[ScreenshotOptions] = js.native
+    var screenshot: js.UndefOr[ScreenshotOptions] = js.undefined
     
-    var serve: js.UndefOr[js.Array[String]] = js.native
+    var serve: js.UndefOr[js.Array[String]] = js.undefined
     
-    var viewport: js.UndefOr[Viewport] = js.native
+    var viewport: js.UndefOr[Viewport] = js.undefined
     
-    var waitUntilNetworkIdle: js.UndefOr[Boolean] = js.native
+    var waitUntilNetworkIdle: js.UndefOr[Boolean] = js.undefined
   }
   object GenerateImageOptions {
     

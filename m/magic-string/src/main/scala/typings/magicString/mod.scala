@@ -4,14 +4,15 @@ import typings.magicString.anon.Content
 import typings.magicString.anon.PartialSourceMapOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("magic-string", JSImport.Default)
   @js.native
-  class default protected () extends MagicString {
+  class default protected ()
+    extends StObject
+       with MagicString {
     def this(str: String) = this()
     def this(str: String, options: MagicStringOptions) = this()
   }
@@ -78,12 +79,11 @@ object mod {
     var version: Double = js.native
   }
   
-  @js.native
   trait BundleOptions extends StObject {
     
-    var intro: js.UndefOr[String] = js.native
+    var intro: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object BundleOptions {
     
@@ -110,18 +110,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DecodedSourceMap extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var mappings: js.Array[js.Array[SourceMapSegment]] = js.native
+    var mappings: js.Array[js.Array[SourceMapSegment]]
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var sources: js.Array[String] = js.native
+    var sources: js.Array[String]
     
-    var sourcesContent: js.Array[String] = js.native
+    var sourcesContent: js.Array[String]
   }
   object DecodedSourceMap {
     
@@ -171,12 +170,11 @@ object mod {
   
   type ExclusionRange = js.Tuple2[Double, Double]
   
-  @js.native
   trait IndentOptions extends StObject {
     
-    var exclude: ExclusionRange | js.Array[ExclusionRange] = js.native
+    var exclude: ExclusionRange | js.Array[ExclusionRange]
     
-    var indentStart: Boolean = js.native
+    var indentStart: Boolean
   }
   object IndentOptions {
     
@@ -220,9 +218,9 @@ object mod {
     def getIndentString(): String = js.native
     
     def indent(): MagicString = js.native
-    def indent(indentStr: js.UndefOr[scala.Nothing], options: IndentOptions): MagicString = js.native
     def indent(indentStr: String): MagicString = js.native
     def indent(indentStr: String, options: IndentOptions): MagicString = js.native
+    def indent(indentStr: Unit, options: IndentOptions): MagicString = js.native
     def indent(options: IndentOptions): MagicString = js.native
     
     var indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange] = js.native
@@ -267,12 +265,11 @@ object mod {
     def trimStart(charType: String): MagicString = js.native
   }
   
-  @js.native
   trait MagicStringOptions extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange] = js.native
+    var indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange]
   }
   object MagicStringOptions {
     
@@ -296,12 +293,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OverwriteOptions extends StObject {
     
-    var contentOnly: js.UndefOr[Boolean] = js.native
+    var contentOnly: js.UndefOr[Boolean] = js.undefined
     
-    var storeName: js.UndefOr[Boolean] = js.native
+    var storeName: js.UndefOr[Boolean] = js.undefined
   }
   object OverwriteOptions {
     
@@ -328,16 +324,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceMapOptions extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var hires: Boolean = js.native
+    var hires: Boolean
     
-    var includeContent: Boolean = js.native
+    var includeContent: Boolean
     
-    var source: String = js.native
+    var source: String
   }
   object SourceMapOptions {
     

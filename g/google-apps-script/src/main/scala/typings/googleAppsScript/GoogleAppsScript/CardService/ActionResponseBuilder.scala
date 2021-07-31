@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for ActionResponse objects.
   */
-@js.native
 trait ActionResponseBuilder extends StObject {
   
-  def build(): ActionResponse = js.native
+  def build(): ActionResponse
   
-  def setNavigation(navigation: Navigation): ActionResponseBuilder = js.native
+  def setNavigation(navigation: Navigation): ActionResponseBuilder
   
-  def setNotification(notification: Notification): ActionResponseBuilder = js.native
+  def setNotification(notification: Notification): ActionResponseBuilder
   
-  def setOpenLink(openLink: OpenLink): ActionResponseBuilder = js.native
+  def setOpenLink(openLink: OpenLink): ActionResponseBuilder
   
-  def setStateChanged(stateChanged: Boolean): ActionResponseBuilder = js.native
+  def setStateChanged(stateChanged: Boolean): ActionResponseBuilder
 }
 object ActionResponseBuilder {
   

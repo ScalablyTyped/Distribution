@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConnectionResponse extends StObject {
   
   /**
     * The connection that is being deleted.
     */
-  var Connection: js.UndefOr[typings.awsSdk.dmsMod.Connection] = js.native
+  var Connection: js.UndefOr[typings.awsSdk.dmsMod.Connection] = js.undefined
 }
 object DeleteConnectionResponse {
   

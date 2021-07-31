@@ -13,18 +13,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UIMovePosition extends Object {
+trait UIMovePosition
+  extends StObject
+     with Object {
   
   /**
     * The placement index of the component(s).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * The position in the view at which to add the component.
@@ -33,7 +33,7 @@ trait UIMovePosition extends Object {
     */
   var position: js.UndefOr[
     `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
-  ] = js.native
+  ] = js.undefined
 }
 object UIMovePosition {
   

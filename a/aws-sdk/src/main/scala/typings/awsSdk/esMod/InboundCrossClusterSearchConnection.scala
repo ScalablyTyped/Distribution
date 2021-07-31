@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InboundCrossClusterSearchConnection extends StObject {
   
   /**
     * Specifies the InboundCrossClusterSearchConnectionStatus for the outbound connection.
     */
-  var ConnectionStatus: js.UndefOr[InboundCrossClusterSearchConnectionStatus] = js.native
+  var ConnectionStatus: js.UndefOr[InboundCrossClusterSearchConnectionStatus] = js.undefined
   
   /**
     * Specifies the connection id for the inbound cross-cluster search connection.
     */
-  var CrossClusterSearchConnectionId: js.UndefOr[typings.awsSdk.esMod.CrossClusterSearchConnectionId] = js.native
+  var CrossClusterSearchConnectionId: js.UndefOr[typings.awsSdk.esMod.CrossClusterSearchConnectionId] = js.undefined
   
   /**
     * Specifies the DomainInformation for the destination Elasticsearch domain.
     */
-  var DestinationDomainInfo: js.UndefOr[DomainInformation] = js.native
+  var DestinationDomainInfo: js.UndefOr[DomainInformation] = js.undefined
   
   /**
     * Specifies the DomainInformation for the source Elasticsearch domain.
     */
-  var SourceDomainInfo: js.UndefOr[DomainInformation] = js.native
+  var SourceDomainInfo: js.UndefOr[DomainInformation] = js.undefined
 }
 object InboundCrossClusterSearchConnection {
   

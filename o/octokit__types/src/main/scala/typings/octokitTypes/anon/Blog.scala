@@ -2,67 +2,65 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blog extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var blog: String = js.native
+  var blog: String
   
-  var company: String = js.native
+  var company: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var email: String = js.native
+  var email: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var followers: Double = js.native
+  var followers: Double
   
-  var following: Double = js.native
+  var following: Double
   
-  var has_organization_projects: Boolean = js.native
+  var has_organization_projects: Boolean
   
-  var has_repository_projects: Boolean = js.native
+  var has_repository_projects: Boolean
   
-  var hooks_url: String = js.native
+  var hooks_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var issues_url: String = js.native
+  var issues_url: String
   
-  var location: String = js.native
+  var location: String
   
-  var login: String = js.native
+  var login: String
   
-  var members_url: String = js.native
+  var members_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var public_gists: Double = js.native
+  var public_gists: Double
   
-  var public_members_url: String = js.native
+  var public_members_url: String
   
-  var public_repos: Double = js.native
+  var public_repos: Double
   
-  var repos_url: String = js.native
+  var repos_url: String
   
-  var twitter_username: String = js.native
+  var twitter_username: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Blog {
   

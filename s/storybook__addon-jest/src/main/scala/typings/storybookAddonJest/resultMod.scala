@@ -3,29 +3,29 @@ package typings.storybookAddonJest
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resultMod {
   
-  @JSImport("@storybook/addon-jest/dist/components/Result", JSImport.Default)
+  @JSImport("@storybook/addon-jest/dist/components/Result", JSImport.Namespace)
   @js.native
-  def default(props: ResultProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/addon-jest/dist/components/Result", "Result")
-  @js.native
-  def Result(props: ResultProps): Element = js.native
+  @scala.inline
+  def default(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
+  @scala.inline
+  def Result(props: ResultProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Result")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait ResultProps extends StObject {
     
-    var failureMessages: js.Any = js.native
+    var failureMessages: js.Any
     
-    var fullName: js.UndefOr[String] = js.native
+    var fullName: js.UndefOr[String] = js.undefined
     
-    var status: String = js.native
+    var status: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ResultProps {
     

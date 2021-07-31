@@ -8,17 +8,15 @@ import typings.libp2pNoise.mod.LengthDecoderFunction
 import typings.libp2pNoise.mod.LengthEncoderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cs1 extends StObject {
     
-    var cs1: CipherState = js.native
+    var cs1: CipherState
     
-    var cs2: CipherState = js.native
+    var cs2: CipherState
   }
   object Cs1 {
     
@@ -47,14 +45,13 @@ object anon {
   }
   
   /* Inlined std.Partial<libp2p-noise.it-length-prefixed.DecoderOptions> */
-  @js.native
   trait PartialDecoderOptions extends StObject {
     
-    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.native
+    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.undefined
     
-    var maxDataLength: js.UndefOr[Double] = js.native
+    var maxDataLength: js.UndefOr[Double] = js.undefined
     
-    var maxLengthLength: js.UndefOr[Double] = js.native
+    var maxLengthLength: js.UndefOr[Double] = js.undefined
   }
   object PartialDecoderOptions {
     
@@ -88,10 +85,9 @@ object anon {
   }
   
   /* Inlined std.Partial<{  lengthEncoder :libp2p-noise.it-length-prefixed.LengthEncoderFunction}> */
-  @js.native
   trait PartiallengthEncoderLengt extends StObject {
     
-    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.native
+    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.undefined
   }
   object PartiallengthEncoderLengt {
     
@@ -112,12 +108,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Plaintext extends StObject {
     
-    var plaintext: bytes = js.native
+    var plaintext: bytes
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Plaintext {
     

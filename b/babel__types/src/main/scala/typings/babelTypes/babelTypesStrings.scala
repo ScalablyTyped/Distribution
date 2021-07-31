@@ -3,7 +3,6 @@ package typings.babelTypes
 import typings.babelTypes.mod.CommentTypeShorthand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object babelTypesStrings {
@@ -1435,7 +1434,8 @@ object babelTypesStrings {
   
   @js.native
   sealed trait inner
-    extends CommentTypeShorthand
+    extends StObject
+       with CommentTypeShorthand
        with typings.babelTypes.indexTs37Mod.CommentTypeShorthand
   @scala.inline
   def inner: inner = "inner".asInstanceOf[inner]
@@ -1447,7 +1447,8 @@ object babelTypesStrings {
   
   @js.native
   sealed trait leading
-    extends CommentTypeShorthand
+    extends StObject
+       with CommentTypeShorthand
        with typings.babelTypes.indexTs37Mod.CommentTypeShorthand
   @scala.inline
   def leading: leading = "leading".asInstanceOf[leading]
@@ -1529,7 +1530,8 @@ object babelTypesStrings {
   
   @js.native
   sealed trait trailing
-    extends CommentTypeShorthand
+    extends StObject
+       with CommentTypeShorthand
        with typings.babelTypes.indexTs37Mod.CommentTypeShorthand
   @scala.inline
   def trailing: trailing = "trailing".asInstanceOf[trailing]

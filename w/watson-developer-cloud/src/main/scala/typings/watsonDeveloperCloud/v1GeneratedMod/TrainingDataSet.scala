@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingDataSet. */
-@js.native
 trait TrainingDataSet extends StObject {
   
   /** The collection id associated with this training data set. */
-  var collection_id: js.UndefOr[String] = js.native
+  var collection_id: js.UndefOr[String] = js.undefined
   
   /** The environment id associated with this training data set. */
-  var environment_id: js.UndefOr[String] = js.native
+  var environment_id: js.UndefOr[String] = js.undefined
   
   /** Array of training queries. */
-  var queries: js.UndefOr[js.Array[TrainingQuery]] = js.native
+  var queries: js.UndefOr[js.Array[TrainingQuery]] = js.undefined
 }
 object TrainingDataSet {
   

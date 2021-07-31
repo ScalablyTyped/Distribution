@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateRouteTableRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the internet gateway or virtual private gateway.
     */
-  var GatewayId: js.UndefOr[RouteGatewayId] = js.native
+  var GatewayId: js.UndefOr[RouteGatewayId] = js.undefined
   
   /**
     * The ID of the route table.
     */
-  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId = js.native
+  var RouteTableId: typings.awsSdk.ec2Mod.RouteTableId
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
 }
 object AssociateRouteTableRequest {
   

@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an accelerometer reading. */
-@js.native
 trait AccelerometerReading extends StObject {
   
   /** Gets the g-force acceleration along the x-axis. */
-  var accelerationX: Double = js.native
+  var accelerationX: Double
   
   /** Gets the g-force acceleration along the y-axis. */
-  var accelerationY: Double = js.native
+  var accelerationY: Double
   
   /** Gets the g-force acceleration along the z-axis. */
-  var accelerationZ: Double = js.native
+  var accelerationZ: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object AccelerometerReading {
   

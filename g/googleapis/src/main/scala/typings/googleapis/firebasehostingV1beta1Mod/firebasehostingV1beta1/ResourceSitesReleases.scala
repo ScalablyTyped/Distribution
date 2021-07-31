@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firebasehosting/v1beta1", "firebasehosting_v1beta1.Resource$Sites$Releases")
@@ -33,7 +32,7 @@ class ResourceSitesReleases protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaRelease] = js.native
   def create(callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRelease] = js.native
   def create(params: ParamsResourceSitesReleasesCreate): GaxiosPromise[SchemaRelease] = js.native
   def create(params: ParamsResourceSitesReleasesCreate, callback: BodyResponseCallback[SchemaRelease]): Unit = js.native
   def create(
@@ -64,7 +63,7 @@ class ResourceSitesReleases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListReleasesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListReleasesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(params: ParamsResourceSitesReleasesList): GaxiosPromise[SchemaListReleasesResponse] = js.native
   def list(
     params: ParamsResourceSitesReleasesList,

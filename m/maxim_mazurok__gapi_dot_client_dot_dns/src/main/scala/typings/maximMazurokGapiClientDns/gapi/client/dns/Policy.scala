@@ -2,40 +2,38 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /**
     * Sets an alternative name server for the associated networks. When specified, all DNS queries are forwarded to a name server that you choose. Names such as .internal are not
     * available when an alternative name server is specified.
     */
-  var alternativeNameServerConfig: js.UndefOr[PolicyAlternativeNameServerConfig] = js.native
+  var alternativeNameServerConfig: js.UndefOr[PolicyAlternativeNameServerConfig] = js.undefined
   
   /** A mutable string of at most 1024 characters associated with this resource for the user's convenience. Has no effect on the policy's function. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. When enabled, a virtual IP address will be allocated from each of the
     * sub-networks that are bound to this policy.
     */
-  var enableInboundForwarding: js.UndefOr[Boolean] = js.native
+  var enableInboundForwarding: js.UndefOr[Boolean] = js.undefined
   
   /** Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. */
-  var enableLogging: js.UndefOr[Boolean] = js.native
+  var enableLogging: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier for the resource; defined by the server (output only). */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** User assigned name for this policy. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** List of network names specifying networks to which this policy is applied. */
-  var networks: js.UndefOr[js.Array[PolicyNetwork]] = js.native
+  var networks: js.UndefOr[js.Array[PolicyNetwork]] = js.undefined
 }
 object Policy {
   

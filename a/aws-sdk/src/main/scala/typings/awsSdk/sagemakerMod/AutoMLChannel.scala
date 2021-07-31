@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLChannel extends StObject {
   
   /**
     * You can use Gzip or None. The default value is None.
     */
-  var CompressionType: js.UndefOr[typings.awsSdk.sagemakerMod.CompressionType] = js.native
+  var CompressionType: js.UndefOr[typings.awsSdk.sagemakerMod.CompressionType] = js.undefined
   
   /**
     * The data source.
     */
-  var DataSource: AutoMLDataSource = js.native
+  var DataSource: AutoMLDataSource
   
   /**
     * The name of the target variable in supervised learning, a.k.a. 'y'.
     */
-  var TargetAttributeName: typings.awsSdk.sagemakerMod.TargetAttributeName = js.native
+  var TargetAttributeName: typings.awsSdk.sagemakerMod.TargetAttributeName
 }
 object AutoMLChannel {
   

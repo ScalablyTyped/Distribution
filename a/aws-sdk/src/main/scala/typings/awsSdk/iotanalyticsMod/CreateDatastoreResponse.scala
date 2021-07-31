@@ -2,26 +2,24 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatastoreResponse extends StObject {
   
   /**
     * The ARN of the data store.
     */
-  var datastoreArn: js.UndefOr[DatastoreArn] = js.native
+  var datastoreArn: js.UndefOr[DatastoreArn] = js.undefined
   
   /**
     * The name of the data store.
     */
-  var datastoreName: js.UndefOr[DatastoreName] = js.native
+  var datastoreName: js.UndefOr[DatastoreName] = js.undefined
   
   /**
     * How long, in days, message data is kept for the data store.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
 }
 object CreateDatastoreResponse {
   

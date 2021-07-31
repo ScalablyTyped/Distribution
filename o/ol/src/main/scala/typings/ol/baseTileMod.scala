@@ -7,7 +7,6 @@ import typings.ol.olStrings.changeColonpreload
 import typings.ol.olStrings.changeColonuseInterimTilesOnError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseTileMod {
@@ -58,34 +57,33 @@ object baseTileMod {
     def un_changeuseInterimTilesOnError(`type`: changeColonuseInterimTilesOnError, listener: js.Function1[/* evt */ ObjectEvent, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Double] = js.native
+    var preload: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceTileMod.default] = js.native
+    var source: js.UndefOr[typings.ol.sourceTileMod.default] = js.undefined
     
-    var useInterimTilesOnError: js.UndefOr[Boolean] = js.native
+    var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

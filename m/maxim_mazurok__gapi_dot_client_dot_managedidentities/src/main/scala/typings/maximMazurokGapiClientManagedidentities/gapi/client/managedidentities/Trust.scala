@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trust extends StObject {
   
   /** Output only. The time the instance was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The last heartbeat time when the trust was known to be connected. */
-  var lastTrustHeartbeatTime: js.UndefOr[String] = js.native
+  var lastTrustHeartbeatTime: js.UndefOr[String] = js.undefined
   
   /** Optional. The trust authentication type, which decides whether the trusted side has forest/domain wide access or selective access to an approved set of resources. */
-  var selectiveAuthentication: js.UndefOr[Boolean] = js.native
+  var selectiveAuthentication: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The current state of the trust. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Additional information about the current state of the trust, if available. */
-  var stateDescription: js.UndefOr[String] = js.native
+  var stateDescription: js.UndefOr[String] = js.undefined
   
   /** Required. The target DNS server IP addresses which can resolve the remote domain involved in the trust. */
-  var targetDnsIpAddresses: js.UndefOr[js.Array[String]] = js.native
+  var targetDnsIpAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The fully qualified target domain name which will be in trust with the current domain. */
-  var targetDomainName: js.UndefOr[String] = js.native
+  var targetDomainName: js.UndefOr[String] = js.undefined
   
   /** Required. The trust direction, which decides if the current domain is trusted, trusting, or both. */
-  var trustDirection: js.UndefOr[String] = js.native
+  var trustDirection: js.UndefOr[String] = js.undefined
   
   /** Required. The trust secret used for the handshake with the target domain. This will not be stored. */
-  var trustHandshakeSecret: js.UndefOr[String] = js.native
+  var trustHandshakeSecret: js.UndefOr[String] = js.undefined
   
   /** Required. The type of trust represented by the trust resource. */
-  var trustType: js.UndefOr[String] = js.native
+  var trustType: js.UndefOr[String] = js.undefined
   
   /** Output only. The last update time. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Trust {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyFleetResult extends StObject {
   
   /**
     * Is true if the request succeeds, and an error otherwise.
     */
-  var Return: js.UndefOr[Boolean] = js.native
+  var Return: js.UndefOr[Boolean] = js.undefined
 }
 object ModifyFleetResult {
   

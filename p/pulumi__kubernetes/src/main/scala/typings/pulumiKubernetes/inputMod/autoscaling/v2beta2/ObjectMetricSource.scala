@@ -3,26 +3,24 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).
   */
-@js.native
 trait ObjectMetricSource extends StObject {
   
-  var describedObject: Input[CrossVersionObjectReference] = js.native
+  var describedObject: Input[CrossVersionObjectReference]
   
   /**
     * metric identifies the target metric by name and selector
     */
-  var metric: Input[MetricIdentifier] = js.native
+  var metric: Input[MetricIdentifier]
   
   /**
     * target specifies the target value for the given metric
     */
-  var target: Input[MetricTarget] = js.native
+  var target: Input[MetricTarget]
 }
 object ObjectMetricSource {
   

@@ -2,23 +2,21 @@ package typings.algoliaTransporter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgent extends StObject {
   
   /**
     * Mutates the current user agent ading the given user agent options.
     */
-  def add(options: UserAgentOptions): UserAgent = js.native
+  def add(options: UserAgentOptions): UserAgent
   
   /**
     * The raw value of the user agent.
     *
     * @readonly
     */
-  var value: String = js.native
+  var value: String
 }
 object UserAgent {
   

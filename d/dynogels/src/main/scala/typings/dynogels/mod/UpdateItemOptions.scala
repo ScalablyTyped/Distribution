@@ -12,33 +12,31 @@ import typings.awsSdk.dynamodbMod.ReturnValue
 import typings.awsSdk.dynamodbMod.UpdateExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateItemOptions extends StObject {
   
-  var AttributeUpdates: js.UndefOr[typings.awsSdk.dynamodbMod.AttributeUpdates] = js.native
+  var AttributeUpdates: js.UndefOr[typings.awsSdk.dynamodbMod.AttributeUpdates] = js.undefined
   
-  var ConditionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionExpression] = js.native
+  var ConditionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionExpression] = js.undefined
   
-  var ConditionalOperator: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionalOperator] = js.native
+  var ConditionalOperator: js.UndefOr[typings.awsSdk.dynamodbMod.ConditionalOperator] = js.undefined
   
-  var Expected: js.UndefOr[ExpectedAttributeMap] = js.native
+  var Expected: js.UndefOr[ExpectedAttributeMap] = js.undefined
   
-  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.native
+  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
-  var ExpressionAttributeValues: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var ExpressionAttributeValues: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.native
+  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
   
-  var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnItemCollectionMetrics] = js.native
+  var ReturnItemCollectionMetrics: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnItemCollectionMetrics] = js.undefined
   
-  var ReturnValues: js.UndefOr[ReturnValue] = js.native
+  var ReturnValues: js.UndefOr[ReturnValue] = js.undefined
   
-  var UpdateExpression: js.UndefOr[typings.awsSdk.dynamodbMod.UpdateExpression] = js.native
+  var UpdateExpression: js.UndefOr[typings.awsSdk.dynamodbMod.UpdateExpression] = js.undefined
   
-  var expected: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var expected: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object UpdateItemOptions {
   

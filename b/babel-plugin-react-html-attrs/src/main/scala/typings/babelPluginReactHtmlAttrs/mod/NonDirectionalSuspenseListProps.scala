@@ -6,12 +6,11 @@ import typings.std.Exclude
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NonDirectionalSuspenseListProps
-  extends typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListCommonProps {
+  extends StObject
+     with typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListCommonProps {
   
   /**
     * Defines the order in which the `SuspenseList` children should be revealed.
@@ -21,18 +20,18 @@ trait NonDirectionalSuspenseListProps
       typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder, 
       forwards | backwards
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The tail property is invalid when not using the `forwards` or `backwards` reveal orders.
     */
-  var tail: js.UndefOr[scala.Nothing] = js.native
+  var tail: js.UndefOr[scala.Nothing] = js.undefined
 }
 object NonDirectionalSuspenseListProps {
   
   @scala.inline
   def apply(
-    children: (ReactElement[_, String | JSXElementConstructor[_]]) | (Iterable[ReactElement[_, String | JSXElementConstructor[_]]])
+    children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
   ): NonDirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonDirectionalSuspenseListProps]

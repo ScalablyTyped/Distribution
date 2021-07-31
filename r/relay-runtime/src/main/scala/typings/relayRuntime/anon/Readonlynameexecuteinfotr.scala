@@ -4,24 +4,24 @@ import typings.relayRuntime.relayRuntimeStrings.executeDotinfo
 import typings.relayRuntime.relayStoreTypesMod.LogEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'execute.info',   transactionID :number,   info :any}> */
-@js.native
-trait Readonlynameexecuteinfotr extends LogEvent {
+trait Readonlynameexecuteinfotr
+  extends StObject
+     with LogEvent {
   
-  val info: js.Any = js.native
+  val info: js.Any
   
-  val name: executeDotinfo = js.native
+  val name: executeDotinfo
   
-  val transactionID: Double = js.native
+  val transactionID: Double
 }
 object Readonlynameexecuteinfotr {
   
   @scala.inline
-  def apply(info: js.Any, name: executeDotinfo, transactionID: Double): Readonlynameexecuteinfotr = {
-    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], transactionID = transactionID.asInstanceOf[js.Any])
+  def apply(info: js.Any, transactionID: Double): Readonlynameexecuteinfotr = {
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], name = "execute.info", transactionID = transactionID.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynameexecuteinfotr]
   }
   

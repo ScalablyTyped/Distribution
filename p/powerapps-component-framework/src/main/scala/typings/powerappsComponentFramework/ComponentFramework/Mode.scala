@@ -2,56 +2,54 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for the context.mode
   */
-@js.native
 trait Mode extends StObject {
   
   /**
     * Height in pixels allocated to the control. If it's -1, then there is no limit on height
     */
-  var allocatedHeight: Double = js.native
+  var allocatedHeight: Double
   
   /**
     * Width in pixels allocated to the control.
     */
-  var allocatedWidth: Double = js.native
+  var allocatedWidth: Double
   
   /**
     * Is the control in 'Read-only' mode.
     */
-  var isControlDisabled: Boolean = js.native
+  var isControlDisabled: Boolean
   
   /**
     * Is the control in 'Visible' mode.
     */
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
   /**
     * The defined control label
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * set control state so that it will be stored in one session
     */
-  def setControlState(state: Dictionary): Boolean = js.native
+  def setControlState(state: Dictionary): Boolean
   
   /**
     * Make the control full screen.
     * @param value True if control needs to autosize to full screen. False if control needs to autosize to allocated width.
     */
-  def setFullScreen(value: Boolean): Unit = js.native
+  def setFullScreen(value: Boolean): Unit
   
   /**
     * API to determine container sizing if control needs to react. Control will get allocatedWidth/allocatedHeight if input is 'true'
     * @param value True if controls needs to track container size, control will get allocatedWidth/allocatedHeight
     */
-  def trackContainerResize(value: Boolean): Unit = js.native
+  def trackContainerResize(value: Boolean): Unit
 }
 object Mode {
   

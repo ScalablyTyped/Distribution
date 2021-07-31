@@ -2,23 +2,23 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Font extends TypeDerived {
+trait Font
+  extends StObject
+     with TypeDerived {
   
-  var isBold: Boolean = js.native
+  var isBold: Boolean
   
-  var isItalic: Boolean = js.native
+  var isItalic: Boolean
   
-  var isStrikeThrough: Boolean = js.native
+  var isStrikeThrough: Boolean
   
-  var isUnderline: Boolean = js.native
+  var isUnderline: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
 }
 object Font {
   

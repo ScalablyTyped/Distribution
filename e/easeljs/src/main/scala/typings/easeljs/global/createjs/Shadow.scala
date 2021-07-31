@@ -2,14 +2,27 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Shadow")
 @js.native
 class Shadow protected ()
-  extends typings.easeljs.createjs.Shadow {
+  extends StObject
+     with typings.easeljs.createjs.Shadow {
   def this(color: String, offsetX: Double, offsetY: Double, blur: Double) = this()
+  
+  // properties
+  /* CompleteClass */
+  var blur: Double = js.native
+  
+  /* CompleteClass */
+  var color: String = js.native
+  
+  /* CompleteClass */
+  var offsetX: Double = js.native
+  
+  /* CompleteClass */
+  var offsetY: Double = js.native
 }
 /* static members */
 object Shadow {

@@ -5,7 +5,6 @@ import typings.googleapis.servicemanagementV1Mod.servicemanagementV1.Options
 import typings.googleapis.servicemanagementV1Mod.servicemanagementV1.Servicemanagement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

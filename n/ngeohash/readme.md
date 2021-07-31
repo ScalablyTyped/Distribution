@@ -10,9 +10,9 @@ geohash library for nodejs
 | ------------------ | :-------------: |
 | Full name          | ngeohash |
 | Keywords           | geohash, uint64, geohasher, geocode, geolocation |
-| # releases         | 4 |
-| # dependents       | 75 |
-| # downloads        | 1464796 |
+| # releases         | 0 |
+| # dependents       | 85 |
+| # downloads        | 1805941 |
 | # stars            | 8 |
 
 ## Links

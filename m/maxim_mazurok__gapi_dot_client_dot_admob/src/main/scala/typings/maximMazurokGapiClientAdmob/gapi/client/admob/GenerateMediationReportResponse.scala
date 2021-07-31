@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateMediationReportResponse extends StObject {
   
   /** Additional information about the generated report, such as warnings about the data. */
-  var footer: js.UndefOr[ReportFooter] = js.native
+  var footer: js.UndefOr[ReportFooter] = js.undefined
   
   /** Report generation settings that describes the report contents, such as the report date range and localization settings. */
-  var header: js.UndefOr[ReportHeader] = js.native
+  var header: js.UndefOr[ReportHeader] = js.undefined
   
   /** Actual report data. */
-  var row: js.UndefOr[ReportRow] = js.native
+  var row: js.UndefOr[ReportRow] = js.undefined
 }
 object GenerateMediationReportResponse {
   

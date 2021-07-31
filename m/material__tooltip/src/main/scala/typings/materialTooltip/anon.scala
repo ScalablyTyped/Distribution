@@ -8,17 +8,15 @@ import typings.materialTooltip.constantsMod.YPosition
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -40,42 +38,41 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/tooltip.@material/tooltip/adapter.MDCTooltipAdapter> */
-  @js.native
   trait PartialMDCTooltipAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ CssClasses, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ CssClasses, Unit]] = js.undefined
     
     var deregisterDocumentEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var getAnchorAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAnchorAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var getAnchorBoundingRect: js.UndefOr[js.Function0[ClientRect | Null]] = js.native
+    var getAnchorBoundingRect: js.UndefOr[js.Function0[ClientRect | Null]] = js.undefined
     
-    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var getTooltipSize: js.UndefOr[js.Function0[Height]] = js.native
+    var getTooltipSize: js.UndefOr[js.Function0[Height]] = js.undefined
     
-    var getViewportHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getViewportHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getViewportWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getViewportWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ CssClasses, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ CssClasses, Boolean]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyHidden: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyHidden: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var registerDocumentEventHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ CssClasses, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ CssClasses, Unit]] = js.undefined
     
-    var setAttribute: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttribute: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.native
+    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCTooltipAdapter {
     
@@ -180,12 +177,11 @@ object anon {
     }
   }
   
-  @js.native
   trait XPos extends StObject {
     
-    var xPos: js.UndefOr[XPosition] = js.native
+    var xPos: js.UndefOr[XPosition] = js.undefined
     
-    var yPos: js.UndefOr[YPosition] = js.native
+    var yPos: js.UndefOr[YPosition] = js.undefined
   }
   object XPos {
     

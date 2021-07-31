@@ -2,22 +2,20 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object representing query metadata extracted from query annotations.
   */
-@js.native
 trait TQueryMetadata extends StObject {
   
-  var descendants: Boolean = js.native
+  var descendants: Boolean
   
-  var isStatic: Boolean = js.native
+  var isStatic: Boolean
   
-  var predicate: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String] = js.native
+  var predicate: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]
   
-  var read: js.Any = js.native
+  var read: js.Any
 }
 object TQueryMetadata {
   
@@ -25,7 +23,7 @@ object TQueryMetadata {
   def apply(
     descendants: Boolean,
     isStatic: Boolean,
-    predicate: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String],
+    predicate: Type[js.Any] | InjectionToken[js.Any] | js.Array[String],
     read: js.Any
   ): TQueryMetadata = {
     val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any])
@@ -42,7 +40,7 @@ object TQueryMetadata {
     def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPredicate(value: typings.angularCore.mod.Type[_] | InjectionToken[_] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    def setPredicate(value: Type[js.Any] | InjectionToken[js.Any] | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))

@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "CustomWidgetCollection")
@@ -28,7 +27,7 @@ class CustomWidgetCollection () extends StObject {
   
   def getCustomWidgetByName(name: String): QuestionCustomWidget = js.native
   
-  var onCustomWidgetAdded: Event[js.Function1[/* customWidget */ QuestionCustomWidget, _], _] = js.native
+  var onCustomWidgetAdded: Event[js.Function1[/* customWidget */ QuestionCustomWidget, js.Any], js.Any] = js.native
   
   /**
     * Sets the way the custom wiget is activated. The activation types are: property ("property"), question type ("type") or new/custom question type ("customtype"). A custom wiget may support all or only some of this activation types.

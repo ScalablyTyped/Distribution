@@ -3,15 +3,15 @@ package typings.paypalRestSdk.mod.invoice
 import typings.paypalRestSdk.mod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaymentDetail extends Detail {
+trait PaymentDetail
+  extends StObject
+     with Detail {
   
-  var method: String = js.native
+  var method: String
   
-  var transaction_type: String = js.native
+  var transaction_type: String
 }
 object PaymentDetail {
   

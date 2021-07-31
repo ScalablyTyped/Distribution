@@ -2,35 +2,33 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Per resource and severity counts of fixable and total vulnerabilities.
   */
-@js.native
 trait SchemaFixableTotalByDigest extends StObject {
   
   /**
     * The number of fixable vulnerabilities associated with this resource.
     */
-  var fixableCount: js.UndefOr[String] = js.native
+  var fixableCount: js.UndefOr[String] = js.undefined
   
   /**
     * The affected resource.
     */
-  var resource: js.UndefOr[SchemaResource] = js.native
+  var resource: js.UndefOr[SchemaResource] = js.undefined
   
   /**
     * The severity for this count. SEVERITY_UNSPECIFIED indicates total across
     * all severities.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of vulnerabilities associated with this resource.
     */
-  var totalCount: js.UndefOr[String] = js.native
+  var totalCount: js.UndefOr[String] = js.undefined
 }
 object SchemaFixableTotalByDigest {
   

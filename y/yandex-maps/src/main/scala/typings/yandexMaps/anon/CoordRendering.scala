@@ -7,21 +7,19 @@ import typings.yandexMaps.yandexMapsStrings.static
 import typings.yandexMaps.yandexMapsStrings.straightPath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoordRendering extends StObject {
   
-  var coordRendering: js.UndefOr[shortestPath | straightPath] = js.native
+  var coordRendering: js.UndefOr[shortestPath | straightPath] = js.undefined
   
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
-  var pixelRendering: js.UndefOr[jumpy | static] = js.native
+  var pixelRendering: js.UndefOr[jumpy | static] = js.undefined
   
-  var projection: js.UndefOr[IProjection] = js.native
+  var projection: js.UndefOr[IProjection] = js.undefined
   
-  var simplification: js.UndefOr[Boolean] = js.native
+  var simplification: js.UndefOr[Boolean] = js.undefined
 }
 object CoordRendering {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,14 +11,17 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("fast-list", JSImport.Namespace)
   @js.native
-  class ^[T] () extends List[T]
+  class ^[T] ()
+    extends StObject
+       with List[T]
   @JSImport("fast-list", JSImport.Namespace)
   @js.native
   val ^ : FastListFactory = js.native
   
   @js.native
   trait FastListFactory
-    extends Instantiable0[List[js.Object]] {
+    extends StObject
+       with Instantiable0[List[js.Object]] {
     
     def apply[T](): List[T] = js.native
   }
@@ -75,16 +77,16 @@ object mod extends Shortcut {
     ): U = js.native
     def reduce[U, V](
       callbackfn: js.ThisFunction4[/* this */ V, /* acc */ U, /* value */ T, /* index */ Double, /* list */ this.type, U],
-      initialValue: js.UndefOr[scala.Nothing],
+      initialValue: Unit,
       thisArg: V
     ): U = js.native
     
     def shift(): js.UndefOr[T] = js.native
     
     def slice(): js.Array[T] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[T] = js.native
     def slice(start: Double): js.Array[T] = js.native
     def slice(start: Double, end: Double): js.Array[T] = js.native
+    def slice(start: Unit, end: Double): js.Array[T] = js.native
     
     def unshift(item: T): Unit = js.native
   }

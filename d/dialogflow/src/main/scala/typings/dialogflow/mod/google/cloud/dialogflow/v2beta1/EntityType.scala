@@ -10,7 +10,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an EntityType. */
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EntityType.
   * @param [properties] Properties to set
   */
-class EntityType () extends IEntityType {
+class EntityType ()
+  extends StObject
+     with IEntityType {
   def this(properties: IEntityType) = this()
   
   /** EntityType autoExpansionMode. */
@@ -55,6 +56,10 @@ class EntityType () extends IEntityType {
 }
 object EntityType {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait AutoExpansionMode extends StObject
   /** AutoExpansionMode enum. */
@@ -63,15 +68,19 @@ object EntityType {
   object AutoExpansionMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AutoExpansionMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[AutoExpansionMode & Double] = js.native
     
     @js.native
-    sealed trait AUTO_EXPANSION_MODE_DEFAULT extends AutoExpansionMode
-    /* 1 */ val AUTO_EXPANSION_MODE_DEFAULT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_DEFAULT with Double = js.native
+    sealed trait AUTO_EXPANSION_MODE_DEFAULT
+      extends StObject
+         with AutoExpansionMode
+    /* 1 */ val AUTO_EXPANSION_MODE_DEFAULT: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_DEFAULT & Double = js.native
     
     @js.native
-    sealed trait AUTO_EXPANSION_MODE_UNSPECIFIED extends AutoExpansionMode
-    /* 0 */ val AUTO_EXPANSION_MODE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_UNSPECIFIED with Double = js.native
+    sealed trait AUTO_EXPANSION_MODE_UNSPECIFIED
+      extends StObject
+         with AutoExpansionMode
+    /* 0 */ val AUTO_EXPANSION_MODE_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.AutoExpansionMode.AUTO_EXPANSION_MODE_UNSPECIFIED & Double = js.native
   }
   
   /** Represents an Entity. */
@@ -81,7 +90,9 @@ object EntityType {
     * Constructs a new Entity.
     * @param [properties] Properties to set
     */
-  class Entity () extends IEntity {
+  class Entity ()
+    extends StObject
+       with IEntity {
     def this(properties: IEntity) = this()
     
     /** Entity synonyms. */
@@ -100,18 +111,20 @@ object EntityType {
   }
   object Entity {
     
+    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Entity instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Entity instance
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.create")
-    @js.native
-    def create(): Entity = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.create")
-    @js.native
-    def create(properties: IEntity): Entity = js.native
+    @scala.inline
+    def create(): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Entity]
+    @scala.inline
+    def create(properties: IEntity): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
     /**
       * Decodes an Entity message from the specified reader or buffer.
@@ -122,18 +135,14 @@ object EntityType {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decode")
-    @js.native
-    def decode(reader: Reader): Entity = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Entity = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decode")
-    @js.native
-    def decode(reader: Uint8Array): Entity = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Entity = js.native
+    @scala.inline
+    def decode(reader: Reader): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Entity = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entity]
+    @scala.inline
+    def decode(reader: Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Entity = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entity]
     
     /**
       * Decodes an Entity message from the specified reader or buffer, length delimited.
@@ -143,12 +152,10 @@ object EntityType {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Entity = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Entity = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
     /**
       * Encodes the specified Entity message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.Entity.verify|verify} messages.
@@ -157,12 +164,10 @@ object EntityType {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.encode")
-    @js.native
-    def encode(message: IEntity): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.encode")
-    @js.native
-    def encode(message: IEntity, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IEntity): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IEntity, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Entity message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.Entity.verify|verify} messages.
@@ -171,12 +176,10 @@ object EntityType {
       * @returns Writer
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntity): Writer = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntity, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IEntity): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IEntity, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Entity message from a plain object. Also converts values to their respective internal types.
@@ -184,9 +187,8 @@ object EntityType {
       * @returns Entity
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Entity = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entity]
     
     /**
       * Creates a plain object from an Entity message. Also converts values to other types if specified.
@@ -195,12 +197,10 @@ object EntityType {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.toObject")
-    @js.native
-    def toObject(message: Entity): StringDictionary[js.Any] = js.native
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.toObject")
-    @js.native
-    def toObject(message: Entity, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Entity): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Entity, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Entity message.
@@ -208,9 +208,8 @@ object EntityType {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.Entity.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -221,23 +220,31 @@ object EntityType {
   object Kind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Kind with Double] = js.native
+    def apply(value: Double): js.UndefOr[Kind & Double] = js.native
     
     @js.native
-    sealed trait KIND_LIST extends Kind
-    /* 2 */ val KIND_LIST: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_LIST with Double = js.native
+    sealed trait KIND_LIST
+      extends StObject
+         with Kind
+    /* 2 */ val KIND_LIST: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_LIST & Double = js.native
     
     @js.native
-    sealed trait KIND_MAP extends Kind
-    /* 1 */ val KIND_MAP: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_MAP with Double = js.native
+    sealed trait KIND_MAP
+      extends StObject
+         with Kind
+    /* 1 */ val KIND_MAP: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_MAP & Double = js.native
     
     @js.native
-    sealed trait KIND_REGEXP extends Kind
-    /* 3 */ val KIND_REGEXP: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_REGEXP with Double = js.native
+    sealed trait KIND_REGEXP
+      extends StObject
+         with Kind
+    /* 3 */ val KIND_REGEXP: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_REGEXP & Double = js.native
     
     @js.native
-    sealed trait KIND_UNSPECIFIED extends Kind
-    /* 0 */ val KIND_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_UNSPECIFIED with Double = js.native
+    sealed trait KIND_UNSPECIFIED
+      extends StObject
+         with Kind
+    /* 0 */ val KIND_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.EntityType.Kind.KIND_UNSPECIFIED & Double = js.native
   }
   
   /**
@@ -246,12 +253,10 @@ object EntityType {
     * @returns EntityType instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.create")
-  @js.native
-  def create(): EntityType = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.create")
-  @js.native
-  def create(properties: IEntityType): EntityType = js.native
+  @scala.inline
+  def create(): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EntityType]
+  @scala.inline
+  def create(properties: IEntityType): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
   /**
     * Decodes an EntityType message from the specified reader or buffer.
@@ -262,18 +267,14 @@ object EntityType {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decode")
-  @js.native
-  def decode(reader: Reader): EntityType = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): EntityType = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decode")
-  @js.native
-  def decode(reader: Uint8Array): EntityType = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): EntityType = js.native
+  @scala.inline
+  def decode(reader: Reader): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
+  @scala.inline
+  def decode(reader: Reader, length: Double): EntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EntityType]
+  @scala.inline
+  def decode(reader: Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): EntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EntityType]
   
   /**
     * Decodes an EntityType message from the specified reader or buffer, length delimited.
@@ -283,12 +284,10 @@ object EntityType {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): EntityType = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): EntityType = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
   /**
     * Encodes the specified EntityType message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.verify|verify} messages.
@@ -297,12 +296,10 @@ object EntityType {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.encode")
-  @js.native
-  def encode(message: IEntityType): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.encode")
-  @js.native
-  def encode(message: IEntityType, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified EntityType message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.EntityType.verify|verify} messages.
@@ -311,12 +308,10 @@ object EntityType {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEntityType): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEntityType, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an EntityType message from a plain object. Also converts values to their respective internal types.
@@ -324,9 +319,8 @@ object EntityType {
     * @returns EntityType
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): EntityType = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): EntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EntityType]
   
   /**
     * Creates a plain object from an EntityType message. Also converts values to other types if specified.
@@ -335,12 +329,10 @@ object EntityType {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.toObject")
-  @js.native
-  def toObject(message: EntityType): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.toObject")
-  @js.native
-  def toObject(message: EntityType, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: EntityType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: EntityType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an EntityType message.
@@ -348,19 +340,17 @@ object EntityType {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.EntityType.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Entity. */
-  @js.native
   trait IEntity extends StObject {
     
     /** Entity synonyms */
-    var synonyms: js.UndefOr[js.Array[String] | Null] = js.native
+    var synonyms: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** Entity value */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object IEntity {
     

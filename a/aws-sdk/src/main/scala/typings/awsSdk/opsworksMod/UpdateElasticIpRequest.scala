@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateElasticIpRequest extends StObject {
   
   /**
     * The IP address for which you want to update the name.
     */
-  var ElasticIp: String = js.native
+  var ElasticIp: String
   
   /**
     * The new name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object UpdateElasticIpRequest {
   

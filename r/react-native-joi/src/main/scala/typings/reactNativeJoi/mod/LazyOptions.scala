@@ -2,16 +2,14 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LazyOptions extends StObject {
   
   /**
     * If true the schema generator will only be called once and the result will be cached.
     */
-  var once: js.UndefOr[Boolean] = js.native
+  var once: js.UndefOr[Boolean] = js.undefined
 }
 object LazyOptions {
   

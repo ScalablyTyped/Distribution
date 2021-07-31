@@ -2,28 +2,26 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBaiduChannelRequestMod {
   
-  @js.native
   trait BaiduChannelRequest extends StObject {
     
     /**
       * Platform credential API key from Baidu.
       */
-    var ApiKey: js.UndefOr[String] = js.native
+    var ApiKey: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Platform credential Secret key from Baidu.
       */
-    var SecretKey: js.UndefOr[String] = js.native
+    var SecretKey: js.UndefOr[String] = js.undefined
   }
   object BaiduChannelRequest {
     

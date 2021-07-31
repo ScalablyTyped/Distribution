@@ -2,12 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WatchCompilerHost[T /* <: BuilderProgram */]
-  extends ProgramHost[T]
+  extends StObject
+     with ProgramHost[T]
      with WatchHost {
   
   /** If provided, callback to invoke after every new program creation */

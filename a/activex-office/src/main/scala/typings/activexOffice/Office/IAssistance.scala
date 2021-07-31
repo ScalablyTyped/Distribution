@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,7 +29,7 @@ trait IAssistance extends StObject {
     * @param Scope [Scope='']
     */
   def ShowHelp(): Unit = js.native
-  def ShowHelp(HelpId: js.UndefOr[scala.Nothing], Scope: String): Unit = js.native
   def ShowHelp(HelpId: String): Unit = js.native
   def ShowHelp(HelpId: String, Scope: String): Unit = js.native
+  def ShowHelp(HelpId: Unit, Scope: String): Unit = js.native
 }

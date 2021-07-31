@@ -3,15 +3,15 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectionDefinition extends ItemGroupDefinition {
+trait CollectionDefinition
+  extends StObject
+     with ItemGroupDefinition {
   
-  var info: js.UndefOr[Id] = js.native
+  var info: js.UndefOr[Id] = js.undefined
   
-  var variable: js.UndefOr[js.Array[VariableDefinition]] = js.native
+  var variable: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
 }
 object CollectionDefinition {
   

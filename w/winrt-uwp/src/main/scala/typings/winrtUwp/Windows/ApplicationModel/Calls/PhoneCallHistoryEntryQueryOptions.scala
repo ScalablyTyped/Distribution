@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for querying the phone call entries. */
-@js.native
 trait PhoneCallHistoryEntryQueryOptions extends StObject {
   
   /** Gets or sets the query filter based on the type of media. */
-  var desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia = js.native
+  var desiredMedia: PhoneCallHistoryEntryQueryDesiredMedia
   
   /** Get the query filter based on the source ID of the phone call entry. */
-  var sourceIds: IVector[String] = js.native
+  var sourceIds: IVector[String]
 }
 object PhoneCallHistoryEntryQueryOptions {
   

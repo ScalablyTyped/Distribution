@@ -2,13 +2,11 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemCreateWritableOptions extends StObject {
   
-  var keepExistingData: js.UndefOr[Boolean] = js.native
+  var keepExistingData: js.UndefOr[Boolean] = js.undefined
 }
 object FileSystemCreateWritableOptions {
   

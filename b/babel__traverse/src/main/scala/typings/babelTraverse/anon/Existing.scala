@@ -10,21 +10,19 @@ import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Existing extends StObject {
   
-  var existing: Binding = js.native
+  var existing: Binding
   
-  var identifier: Identifier_ = js.native
+  var identifier: Identifier_
   
-  var kind: `var` | let | const = js.native
+  var kind: `var` | let | const
   
-  var path: NodePath[Node] = js.native
+  var path: NodePath[Node]
   
-  var scope: Scope = js.native
+  var scope: Scope
 }
 object Existing {
   

@@ -7,7 +7,6 @@ import typings.materialTabs.tabAdapterMod.MDCTabAdapter
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabIndexMod {
@@ -16,15 +15,18 @@ object tabIndexMod {
   @js.native
   class MDCTab protected ()
     extends typings.materialTabs.tabComponentMod.MDCTab {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialTabs.tabFoundationMod.MDCTabFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCTab {
     
-    @JSImport("@material/tabs/tab/index", "MDCTab.attachTo")
+    @JSImport("@material/tabs/tab/index", "MDCTab")
     @js.native
-    def attachTo(root: Element): typings.materialTabs.tabComponentMod.MDCTab = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTabs.tabComponentMod.MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTabs.tabComponentMod.MDCTab]
   }
   
   @JSImport("@material/tabs/tab/index", "MDCTabFoundation")

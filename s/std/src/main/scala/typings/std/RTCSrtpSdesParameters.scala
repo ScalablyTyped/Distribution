@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCSrtpSdesParameters extends StObject {
   
-  var cryptoSuite: js.UndefOr[java.lang.String] = js.native
+  var cryptoSuite: js.UndefOr[java.lang.String] = js.undefined
   
-  var keyParams: js.UndefOr[js.Array[RTCSrtpKeyParam]] = js.native
+  var keyParams: js.UndefOr[js.Array[RTCSrtpKeyParam]] = js.undefined
   
-  var sessionParams: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var sessionParams: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var tag: js.UndefOr[Double] = js.native
+  var tag: js.UndefOr[Double] = js.undefined
 }
 object RTCSrtpSdesParameters {
   

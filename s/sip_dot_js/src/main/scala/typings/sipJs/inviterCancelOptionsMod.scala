@@ -2,19 +2,17 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inviterCancelOptionsMod {
   
-  @js.native
   trait InviterCancelOptions extends StObject {
     
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reasonPhrase: js.UndefOr[String] = js.native
+    var reasonPhrase: js.UndefOr[String] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object InviterCancelOptions {
     

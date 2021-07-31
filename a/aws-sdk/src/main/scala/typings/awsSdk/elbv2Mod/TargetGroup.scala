@@ -2,96 +2,94 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetGroup extends StObject {
   
   /**
     * Indicates whether health checks are enabled.
     */
-  var HealthCheckEnabled: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckEnabled] = js.native
+  var HealthCheckEnabled: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckEnabled] = js.undefined
   
   /**
     * The approximate amount of time, in seconds, between health checks of an individual target.
     */
-  var HealthCheckIntervalSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckIntervalSeconds] = js.native
+  var HealthCheckIntervalSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckIntervalSeconds] = js.undefined
   
   /**
     * The destination for health checks on the targets.
     */
-  var HealthCheckPath: js.UndefOr[Path] = js.native
+  var HealthCheckPath: js.UndefOr[Path] = js.undefined
   
   /**
     * The port to use to connect with the target.
     */
-  var HealthCheckPort: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckPort] = js.native
+  var HealthCheckPort: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckPort] = js.undefined
   
   /**
     * The protocol to use to connect with the target. The GENEVE, TLS, UDP, and TCP_UDP protocols are not supported for health checks.
     */
-  var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.native
+  var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
   
   /**
     * The amount of time, in seconds, during which no response means a failed health check.
     */
-  var HealthCheckTimeoutSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckTimeoutSeconds] = js.native
+  var HealthCheckTimeoutSeconds: js.UndefOr[typings.awsSdk.elbv2Mod.HealthCheckTimeoutSeconds] = js.undefined
   
   /**
     * The number of consecutive health checks successes required before considering an unhealthy target healthy.
     */
-  var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.native
+  var HealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   
   /**
     * The Amazon Resource Names (ARN) of the load balancers that route traffic to this target group.
     */
-  var LoadBalancerArns: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArns] = js.native
+  var LoadBalancerArns: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArns] = js.undefined
   
   /**
     * The HTTP or gRPC codes to use when checking for a successful response from a target.
     */
-  var Matcher: js.UndefOr[typings.awsSdk.elbv2Mod.Matcher] = js.native
+  var Matcher: js.UndefOr[typings.awsSdk.elbv2Mod.Matcher] = js.undefined
   
   /**
     * The port on which the targets are listening. Not used if the target is a Lambda function.
     */
-  var Port: js.UndefOr[typings.awsSdk.elbv2Mod.Port] = js.native
+  var Port: js.UndefOr[typings.awsSdk.elbv2Mod.Port] = js.undefined
   
   /**
     * The protocol to use for routing traffic to the targets.
     */
-  var Protocol: js.UndefOr[ProtocolEnum] = js.native
+  var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
   
   /**
     * [HTTP/HTTPS protocol] The protocol version. The possible values are GRPC, HTTP1, and HTTP2.
     */
-  var ProtocolVersion: js.UndefOr[typings.awsSdk.elbv2Mod.ProtocolVersion] = js.native
+  var ProtocolVersion: js.UndefOr[typings.awsSdk.elbv2Mod.ProtocolVersion] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the target group.
     */
-  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.native
+  var TargetGroupArn: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupArn] = js.undefined
   
   /**
     * The name of the target group.
     */
-  var TargetGroupName: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupName] = js.native
+  var TargetGroupName: js.UndefOr[typings.awsSdk.elbv2Mod.TargetGroupName] = js.undefined
   
   /**
     * The type of target that you must specify when registering targets with this target group. The possible values are instance (register targets by instance ID), ip (register targets by IP address), or lambda (register a single Lambda function as a target).
     */
-  var TargetType: js.UndefOr[TargetTypeEnum] = js.native
+  var TargetType: js.UndefOr[TargetTypeEnum] = js.undefined
   
   /**
     * The number of consecutive health check failures required before considering the target unhealthy.
     */
-  var UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.native
+  var UnhealthyThresholdCount: js.UndefOr[HealthCheckThresholdCount] = js.undefined
   
   /**
     * The ID of the VPC for the targets.
     */
-  var VpcId: js.UndefOr[typings.awsSdk.elbv2Mod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.elbv2Mod.VpcId] = js.undefined
 }
 object TargetGroup {
   

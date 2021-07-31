@@ -7,46 +7,41 @@ import typings.ionic.definitionsMod.IShellRunOptions
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeRunMod {
+  
+  @JSImport("ionic/lib/native-run", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/native-run", "SUPPORTED_PLATFORMS")
   @js.native
   val SUPPORTED_PLATFORMS: js.Array[String] = js.native
   
-  @JSImport("ionic/lib/native-run", "checkNativeRun")
-  @js.native
-  def checkNativeRun(hasConfig: CheckNativeRunDeps): js.Promise[Unit] = js.native
+  @scala.inline
+  def checkNativeRun(hasConfig: CheckNativeRunDeps): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkNativeRun")(hasConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("ionic/lib/native-run", "createNativeRunArgs")
-  @js.native
-  def createNativeRunArgs(hasPackagePathPlatformForwardedPorts: NativeRunSchema, options: CommandLineOptions): js.Array[String] = js.native
+  @scala.inline
+  def createNativeRunArgs(hasPackagePathPlatformForwardedPorts: NativeRunSchema, options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeRunArgs")(hasPackagePathPlatformForwardedPorts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("ionic/lib/native-run", "createNativeRunListArgs")
-  @js.native
-  def createNativeRunListArgs(inputs: js.Array[String], options: CommandLineOptions): js.Array[String] = js.native
+  @scala.inline
+  def createNativeRunListArgs(inputs: js.Array[String], options: CommandLineOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNativeRunListArgs")(inputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("ionic/lib/native-run", "findNativeRun")
-  @js.native
-  def findNativeRun(): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def findNativeRun(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findNativeRun")().asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @JSImport("ionic/lib/native-run", "getNativeTargets")
-  @js.native
-  def getNativeTargets(hasLogShell: RunNativeRunDeps, platform: String): js.Promise[NativeTargetPlatform] = js.native
+  @scala.inline
+  def getNativeTargets(hasLogShell: RunNativeRunDeps, platform: String): js.Promise[NativeTargetPlatform] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNativeTargets")(hasLogShell.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NativeTargetPlatform]]
   
-  @JSImport("ionic/lib/native-run", "runNativeRun")
-  @js.native
-  def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("ionic/lib/native-run", "runNativeRun")
-  @js.native
-  def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def runNativeRun(hasConfigLogShell: RunNativeRunDeps, args: js.Array[String], options: IShellRunOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("runNativeRun")(hasConfigLogShell.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait CheckNativeRunDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
   }
   object CheckNativeRunDeps {
     
@@ -64,16 +59,15 @@ object nativeRunMod {
     }
   }
   
-  @js.native
   trait NativeDeviceTarget extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var model: String = js.native
+    var model: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var sdkVersion: String = js.native
+    var sdkVersion: String
   }
   object NativeDeviceTarget {
     
@@ -100,14 +94,13 @@ object nativeRunMod {
     }
   }
   
-  @js.native
   trait NativeRunSchema extends StObject {
     
-    var forwardedPorts: js.UndefOr[js.Array[String | Double]] = js.native
+    var forwardedPorts: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var packagePath: String = js.native
+    var packagePath: String
     
-    var platform: String = js.native
+    var platform: String
   }
   object NativeRunSchema {
     
@@ -137,12 +130,11 @@ object nativeRunMod {
     }
   }
   
-  @js.native
   trait NativeTargetPlatform extends StObject {
     
-    var devices: js.Array[NativeDeviceTarget] = js.native
+    var devices: js.Array[NativeDeviceTarget]
     
-    var virtualDevices: js.Array[NativeVirtualDeviceTarget] = js.native
+    var virtualDevices: js.Array[NativeVirtualDeviceTarget]
   }
   object NativeTargetPlatform {
     
@@ -169,16 +161,15 @@ object nativeRunMod {
     }
   }
   
-  @js.native
   trait NativeVirtualDeviceTarget extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var platform: String = js.native
+    var platform: String
     
-    var sdkVersion: String = js.native
+    var sdkVersion: String
   }
   object NativeVirtualDeviceTarget {
     
@@ -205,14 +196,13 @@ object nativeRunMod {
     }
   }
   
-  @js.native
   trait RunNativeRunDeps extends StObject {
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    val shell: IShell = js.native
+    val shell: IShell
   }
   object RunNativeRunDeps {
     

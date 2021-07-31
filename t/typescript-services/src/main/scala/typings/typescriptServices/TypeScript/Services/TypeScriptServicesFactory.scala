@@ -2,27 +2,27 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeScriptServicesFactory extends IShimFactory {
+trait TypeScriptServicesFactory
+  extends StObject
+     with IShimFactory {
   
-  var _shims: js.Any = js.native
+  var _shims: js.Any
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def createClassifier(host: IClassifierHost): Classifier = js.native
+  def createClassifier(host: IClassifierHost): Classifier
   
-  def createClassifierShim(host: IClassifierHost): ClassifierShim = js.native
+  def createClassifierShim(host: IClassifierHost): ClassifierShim
   
-  def createCoreServices(host: ICoreServicesHost): CoreServices = js.native
+  def createCoreServices(host: ICoreServicesHost): CoreServices
   
-  def createCoreServicesShim(host: ICoreServicesHost): CoreServicesShim = js.native
+  def createCoreServicesShim(host: ICoreServicesHost): CoreServicesShim
   
-  def createLanguageServiceShim(host: ILanguageServiceShimHost): ILanguageServiceShim = js.native
+  def createLanguageServiceShim(host: ILanguageServiceShimHost): ILanguageServiceShim
   
-  def createPullLanguageService(host: ILanguageServiceHost): ILanguageService = js.native
+  def createPullLanguageService(host: ILanguageServiceHost): ILanguageService
 }
 object TypeScriptServicesFactory {
   

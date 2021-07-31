@@ -2,34 +2,27 @@ package typings.regexpp.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pattern
-  extends BranchNode
-     with NodeBase {
+  extends StObject
+     with NodeBase
+     with BranchNode {
   
-  var alternatives: js.Array[Alternative] = js.native
+  var alternatives: js.Array[Alternative]
   
   @JSName("parent")
-  var parent_Pattern: RegExpLiteral | Null = js.native
+  var parent_Pattern: RegExpLiteral | Null
   
   @JSName("type")
-  var type_Pattern: typings.regexpp.regexppStrings.Pattern = js.native
+  var type_Pattern: typings.regexpp.regexppStrings.Pattern
 }
 object Pattern {
   
   @scala.inline
-  def apply(
-    alternatives: js.Array[Alternative],
-    end: Double,
-    raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.Pattern
-  ): Pattern = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(alternatives: js.Array[Alternative], end: Double, raw: String, start: Double): Pattern = {
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parent = null)
+    __obj.updateDynamic("type")("Pattern")
     __obj.asInstanceOf[Pattern]
   }
   

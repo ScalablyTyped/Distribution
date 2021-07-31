@@ -2,13 +2,13 @@ package typings.paypalPayoutsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetPayoutsItemResponse extends PayoutBatchItems {
+trait GetPayoutsItemResponse
+  extends StObject
+     with PayoutBatchItems {
   
-  var sender_batch_id: js.UndefOr[String] = js.native
+  var sender_batch_id: js.UndefOr[String] = js.undefined
 }
 object GetPayoutsItemResponse {
   

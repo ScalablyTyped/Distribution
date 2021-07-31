@@ -2,40 +2,39 @@ package typings.wordpressNux
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectorsMod {
   
-  @JSImport("@wordpress/nux/store/selectors", "areTipsEnabled")
+  @JSImport("@wordpress/nux/store/selectors", JSImport.Namespace)
   @js.native
-  def areTipsEnabled(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/nux/store/selectors", "getAssociatedGuide")
-  @js.native
-  def getAssociatedGuide(tipId: String): js.UndefOr[GuideInfo] = js.native
+  @scala.inline
+  def areTipsEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areTipsEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/nux/store/selectors", "isTipVisible")
-  @js.native
-  def isTipVisible(tipId: String): Boolean = js.native
+  @scala.inline
+  def getAssociatedGuide(tipId: String): js.UndefOr[GuideInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAssociatedGuide")(tipId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[GuideInfo]]
   
-  @js.native
+  @scala.inline
+  def isTipVisible(tipId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTipVisible")(tipId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait GuideInfo extends StObject {
     
     /**
       * The guide's currently showing tip.
       */
-    var currentTipId: js.UndefOr[String] = js.native
+    var currentTipId: js.UndefOr[String] = js.undefined
     
     /**
       * The guide's next tip to show.
       */
-    var nextTipId: js.UndefOr[String] = js.native
+    var nextTipId: js.UndefOr[String] = js.undefined
     
     /**
       * Which tips the guide contains.
       */
-    var tipIds: js.Array[String] = js.native
+    var tipIds: js.Array[String]
   }
   object GuideInfo {
     

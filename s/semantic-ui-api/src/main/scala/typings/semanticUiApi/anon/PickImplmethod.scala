@@ -9,14 +9,12 @@ import typings.semanticUiApi.semanticUiApiStrings.post
 import typings.semanticUiApi.semanticUiApiStrings.put
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'method'> */
-@js.native
 trait PickImplmethod extends StObject {
   
-  var method: post | get | put | delete | head | options | patch = js.native
+  var method: post | get | put | delete | head | options | patch
 }
 object PickImplmethod {
   

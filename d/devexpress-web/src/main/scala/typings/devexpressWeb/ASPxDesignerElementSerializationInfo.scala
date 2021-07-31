@@ -2,35 +2,33 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerElementSerializationInfo extends StObject {
   
-  var array: Boolean = js.native
+  var array: Boolean
   
-  var defaultVal: js.Any = js.native
+  var defaultVal: js.Any
   
-  var disabled: js.Any = js.native
+  var disabled: js.Any
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var editor: ASPxDesignerElementEditor = js.native
+  var editor: ASPxDesignerElementEditor
   
-  var info: js.Array[ASPxDesignerElementSerializationInfo] = js.native
+  var info: js.Array[ASPxDesignerElementSerializationInfo]
   
-  var link: Boolean = js.native
+  var link: Boolean
   
-  var modelName: String = js.native
+  var modelName: String
   
-  var propertyName: String = js.native
+  var propertyName: String
   
-  var validationRules: js.Array[_] = js.native
+  var validationRules: js.Array[js.Any]
   
-  var valuesArray: js.Array[ASPxDesignerElementEditorItem] = js.native
+  var valuesArray: js.Array[ASPxDesignerElementEditorItem]
   
-  var visible: js.Any = js.native
+  var visible: js.Any
 }
 object ASPxDesignerElementSerializationInfo {
   
@@ -45,7 +43,7 @@ object ASPxDesignerElementSerializationInfo {
     link: Boolean,
     modelName: String,
     propertyName: String,
-    validationRules: js.Array[_],
+    validationRules: js.Array[js.Any],
     valuesArray: js.Array[ASPxDesignerElementEditorItem],
     visible: js.Any
   ): ASPxDesignerElementSerializationInfo = {
@@ -87,7 +85,7 @@ object ASPxDesignerElementSerializationInfo {
     def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValidationRules(value: js.Array[_]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+    def setValidationRules(value: js.Array[js.Any]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValidationRulesVarargs(value: js.Any*): Self = StObject.set(x, "validationRules", js.Array(value :_*))

@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSession extends StObject {
   
   /**
     * Specifies if session debugging is enabled for this build.
     */
-  var sessionEnabled: js.UndefOr[WrapperBoolean] = js.native
+  var sessionEnabled: js.UndefOr[WrapperBoolean] = js.undefined
   
   /**
     * Contains the identifier of the Session Manager session used for the build. To work with the paused build, you open this session to examine, control, and resume the build.
     */
-  var sessionTarget: js.UndefOr[NonEmptyString] = js.native
+  var sessionTarget: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DebugSession {
   

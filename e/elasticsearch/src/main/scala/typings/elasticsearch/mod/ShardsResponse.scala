@@ -2,19 +2,17 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShardsResponse extends StObject {
   
-  var failed: Double = js.native
+  var failed: Double
   
-  var skipped: Double = js.native
+  var skipped: Double
   
-  var successful: Double = js.native
+  var successful: Double
   
-  var total: Double = js.native
+  var total: Double
 }
 object ShardsResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmServerAddress extends StObject {
   
   /**
     * The ID of the VM.
     */
-  var vmId: js.UndefOr[VmId] = js.native
+  var vmId: js.UndefOr[VmId] = js.undefined
   
   /**
     * The ID of the VM manager.
     */
-  var vmManagerId: js.UndefOr[VmManagerId] = js.native
+  var vmManagerId: js.UndefOr[VmManagerId] = js.undefined
 }
 object VmServerAddress {
   

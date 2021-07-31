@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IXTemplate extends ITemplate {
+trait IXTemplate
+  extends StObject
+     with ITemplate {
   
   /** [Method] Appends the result of this template to the provided output array
     * @param values Object/Array The template values. See apply.
@@ -22,7 +22,7 @@ trait IXTemplate extends ITemplate {
       /* parent */ js.UndefOr[js.Any], 
       Array
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IXTemplate {
   

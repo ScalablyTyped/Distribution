@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolDisplayPart extends StObject {
   
-  var kind: java.lang.String = js.native
+  var kind: java.lang.String
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object SymbolDisplayPart {
   

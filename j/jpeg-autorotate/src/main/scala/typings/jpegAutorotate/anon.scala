@@ -3,21 +3,19 @@ package typings.jpegAutorotate
 import typings.jpegAutorotate.mod.RotateDimensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: typings.node.Buffer = js.native
+    var buffer: typings.node.Buffer
     
-    var dimensions: RotateDimensions = js.native
+    var dimensions: RotateDimensions
     
-    var orientation: Double = js.native
+    var orientation: Double
     
-    var quality: Double = js.native
+    var quality: Double
   }
   object Buffer {
     

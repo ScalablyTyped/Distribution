@@ -2,7 +2,6 @@ package typings.jsuri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
       * @param {string} str
       */
     class Uri ()
-      extends typings.jsuri.jsuri.Uri {
+      extends StObject
+         with typings.jsuri.jsuri.Uri {
       def this(str: String) = this()
     }
   }

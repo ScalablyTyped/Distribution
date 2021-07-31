@@ -4,34 +4,32 @@ import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExternalMetricStatus indicates the current value of a global metric not associated with any Kubernetes object.
   */
-@js.native
 trait ExternalMetricStatus extends StObject {
   
   /**
     * currentAverageValue is the current value of metric averaged over autoscaled pods.
     */
-  var currentAverageValue: js.UndefOr[Input[String]] = js.native
+  var currentAverageValue: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * currentValue is the current value of the metric (as a quantity)
     */
-  var currentValue: Input[String] = js.native
+  var currentValue: Input[String]
   
   /**
     * metricName is the name of a metric used for autoscaling in metric system.
     */
-  var metricName: Input[String] = js.native
+  var metricName: Input[String]
   
   /**
     * metricSelector is used to identify a specific time series within a given metric.
     */
-  var metricSelector: js.UndefOr[Input[LabelSelector]] = js.native
+  var metricSelector: js.UndefOr[Input[LabelSelector]] = js.undefined
 }
 object ExternalMetricStatus {
   

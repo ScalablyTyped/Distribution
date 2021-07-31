@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encryptionConfigMod {
@@ -38,6 +37,10 @@ object encryptionConfigMod {
   /* static members */
   object EncryptionConfig {
     
+    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EncryptionConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object encryptionConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EncryptionConfig = js.native
-    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EncryptionConfig = js.native
-    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionConfigState): EncryptionConfig = js.native
-    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): EncryptionConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionConfigState): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EncryptionConfigState, opts: CustomResourceOptions): EncryptionConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EncryptionConfig]
     
     /**
       * Returns true if the given object is an instance of EncryptionConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/xray/encryptionConfig", "EncryptionConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/encryptionConfig.EncryptionConfig */ Boolean]
   }
   
-  @js.native
   trait EncryptionConfigArgs extends StObject {
     
     /**
       * An AWS KMS customer master key (CMK) ARN.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of encryption. Set to `KMS` to use your own key for encryption. Set to `NONE` for default encryption.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object EncryptionConfigArgs {
     
@@ -105,18 +102,17 @@ object encryptionConfigMod {
     }
   }
   
-  @js.native
   trait EncryptionConfigState extends StObject {
     
     /**
       * An AWS KMS customer master key (CMK) ARN.
       */
-    val keyId: js.UndefOr[Input[String]] = js.native
+    val keyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of encryption. Set to `KMS` to use your own key for encryption. Set to `NONE` for default encryption.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object EncryptionConfigState {
     

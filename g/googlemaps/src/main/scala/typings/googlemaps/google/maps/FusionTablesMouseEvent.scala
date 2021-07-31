@@ -2,20 +2,18 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait FusionTablesMouseEvent extends StObject {
   
-  var infoWindowHtml: js.UndefOr[String] = js.native
+  var infoWindowHtml: js.UndefOr[String] = js.undefined
   
-  var latLng: js.UndefOr[LatLng] = js.native
+  var latLng: js.UndefOr[LatLng] = js.undefined
   
-  var pixelOffset: js.UndefOr[Size] = js.native
+  var pixelOffset: js.UndefOr[Size] = js.undefined
   
-  var row: js.UndefOr[js.Object] = js.native
+  var row: js.UndefOr[js.Object] = js.undefined
 }
 object FusionTablesMouseEvent {
   

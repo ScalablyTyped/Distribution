@@ -8,7 +8,6 @@ import typings.amapJsApiHeatmap.anon.Data
 import typings.amapJsApiHeatmap.anon.DrawGridLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -78,23 +77,22 @@ object AMap {
   }
   object Heatmap {
     
-    @js.native
     trait Data extends StObject {
       
       /**
         * 权重
         */
-      var count: Double = js.native
+      var count: Double
       
       /**
         * 维度
         */
-      var lat: Double = js.native
+      var lat: Double
       
       /**
         * 经度
         */
-      var lng: Double = js.native
+      var lng: Double
     }
     object Data {
       
@@ -118,18 +116,17 @@ object AMap {
       }
     }
     
-    @js.native
     trait DataSet extends StObject {
       
       /**
         * 坐标数据集
         */
-      var data: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data] = js.native
+      var data: js.Array[typings.amapJsApiHeatmap.AMap.Heatmap.Data]
       
       /**
         * 权重的最大值
         */
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
     }
     object DataSet {
       
@@ -156,44 +153,43 @@ object AMap {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var `3d`: js.UndefOr[DrawGridLine] = js.native
+      var `3d`: js.UndefOr[DrawGridLine] = js.undefined
       
-      var blur: js.UndefOr[Double] = js.native
+      var blur: js.UndefOr[Double] = js.undefined
       
       /**
         * 热力图的渐变区间
         */
-      var gradient: js.UndefOr[StringDictionary[String]] = js.native
+      var gradient: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * 热力图透明度数组，取值范围[0,1]，0表示完全透明，1表示不透明
         * 默认：[0,1]
         */
-      var opacity: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var opacity: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
       /**
         * 热力图中单个点的半径，默认：30，单位：pixel
         */
-      var radius: js.UndefOr[Double] = js.native
+      var radius: js.UndefOr[Double] = js.undefined
       
-      var radiusUnit: js.UndefOr[String] = js.native
+      var radiusUnit: js.UndefOr[String] = js.undefined
       
-      var rejectMapMask: js.UndefOr[Boolean] = js.native
+      var rejectMapMask: js.UndefOr[Boolean] = js.undefined
       
-      var renderOnZooming: js.UndefOr[Boolean] = js.native
+      var renderOnZooming: js.UndefOr[Boolean] = js.undefined
       
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
       
-      var zIndex: js.UndefOr[Double] = js.native
+      var zIndex: js.UndefOr[Double] = js.undefined
       
       /**
         * 支持的缩放级别范围，取值范围[3-18]
         * 默认：[3,18]
         */
-      var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     }
     object Options {
       

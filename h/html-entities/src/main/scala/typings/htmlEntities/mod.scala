@@ -2,7 +2,6 @@ package typings.htmlEntities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,21 +13,21 @@ object mod {
   /* static members */
   object AllHtmlEntities {
     
-    @JSImport("html-entities", "AllHtmlEntities.decode")
+    @JSImport("html-entities", "AllHtmlEntities")
     @js.native
-    def decode(str: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("html-entities", "AllHtmlEntities.encode")
-    @js.native
-    def encode(str: String): String = js.native
+    @scala.inline
+    def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "AllHtmlEntities.encodeNonASCII")
-    @js.native
-    def encodeNonASCII(str: String): String = js.native
+    @scala.inline
+    def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "AllHtmlEntities.encodeNonUTF")
-    @js.native
-    def encodeNonUTF(str: String): String = js.native
+    @scala.inline
+    def encodeNonASCII(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonASCII")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodeNonUTF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonUTF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("html-entities", "Html4Entities")
@@ -38,21 +37,21 @@ object mod {
   /* static members */
   object Html4Entities {
     
-    @JSImport("html-entities", "Html4Entities.decode")
+    @JSImport("html-entities", "Html4Entities")
     @js.native
-    def decode(str: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("html-entities", "Html4Entities.encode")
-    @js.native
-    def encode(str: String): String = js.native
+    @scala.inline
+    def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "Html4Entities.encodeNonASCII")
-    @js.native
-    def encodeNonASCII(str: String): String = js.native
+    @scala.inline
+    def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "Html4Entities.encodeNonUTF")
-    @js.native
-    def encodeNonUTF(str: String): String = js.native
+    @scala.inline
+    def encodeNonASCII(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonASCII")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodeNonUTF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonUTF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("html-entities", "Html5Entities")
@@ -62,21 +61,21 @@ object mod {
   /* static members */
   object Html5Entities {
     
-    @JSImport("html-entities", "Html5Entities.decode")
+    @JSImport("html-entities", "Html5Entities")
     @js.native
-    def decode(str: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("html-entities", "Html5Entities.encode")
-    @js.native
-    def encode(str: String): String = js.native
+    @scala.inline
+    def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "Html5Entities.encodeNonASCII")
-    @js.native
-    def encodeNonASCII(str: String): String = js.native
+    @scala.inline
+    def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "Html5Entities.encodeNonUTF")
-    @js.native
-    def encodeNonUTF(str: String): String = js.native
+    @scala.inline
+    def encodeNonASCII(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonASCII")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodeNonUTF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonUTF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("html-entities", "XmlEntities")
@@ -86,20 +85,20 @@ object mod {
   /* static members */
   object XmlEntities {
     
-    @JSImport("html-entities", "XmlEntities.decode")
+    @JSImport("html-entities", "XmlEntities")
     @js.native
-    def decode(str: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("html-entities", "XmlEntities.encode")
-    @js.native
-    def encode(str: String): String = js.native
+    @scala.inline
+    def decode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "XmlEntities.encodeNonASCII")
-    @js.native
-    def encodeNonASCII(str: String): String = js.native
+    @scala.inline
+    def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("html-entities", "XmlEntities.encodeNonUTF")
-    @js.native
-    def encodeNonUTF(str: String): String = js.native
+    @scala.inline
+    def encodeNonASCII(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonASCII")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodeNonUTF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeNonUTF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

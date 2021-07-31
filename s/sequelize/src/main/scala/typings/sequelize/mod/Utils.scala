@@ -13,13 +13,12 @@ import typings.sequelize.anon.TypeofPromise
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Utils extends StObject {
   
-  var Promise: TypeofPromise with (Instantiable1[
+  var Promise: TypeofPromise & (Instantiable1[
     /* callback */ js.Function3[
       /* resolve */ js.Function1[
         /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
@@ -37,7 +36,7 @@ trait Utils extends StObject {
   @JSName("_")
   def _underscore(value: java.lang.String): String = js.native
   @JSName("_")
-  def _underscore[T /* <: js.Object */](value: T): Object[T] = js.native
+  def _underscore[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
   @JSName("_")
   def _underscore[T](value: List[T]): Collection[T] = js.native
   @JSName("_")
@@ -45,9 +44,9 @@ trait Utils extends StObject {
   @JSName("_")
   def _underscore_T_Collection[T](): Collection[T] = js.native
   @JSName("_")
-  def _underscore_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-  @JSName("_")
   def _underscore_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("_")
+  def _underscore_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("_")
   def _underscore_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("_")
@@ -121,23 +120,23 @@ trait Utils extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("_")
-  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with String = js.native
+  def _underscore_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
   
   def addTicks(s: java.lang.String): java.lang.String = js.native
   def addTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
   
   var and: andStatic = js.native
   
-  def argsArePrimaryKeys(args: js.Array[_], primaryKeys: js.Object): Boolean = js.native
+  def argsArePrimaryKeys(args: js.Array[js.Any], primaryKeys: js.Object): Boolean = js.native
   
   def camelize(str: java.lang.String): java.lang.String = js.native
   
-  def canTreatArrayAsAnd(arr: js.Array[_]): Boolean = js.native
+  def canTreatArrayAsAnd(arr: js.Array[js.Any]): Boolean = js.native
   
   var cast: castStatic = js.native
   
   def cloneDeep[T /* <: js.Object */](obj: T): T = js.native
-  def cloneDeep[T /* <: js.Object */](obj: T, fn: js.Function1[/* value */ T, _]): T = js.native
+  def cloneDeep[T /* <: js.Object */](obj: T, fn: js.Function1[/* value */ T, js.Any]): T = js.native
   
   var col: colStatic = js.native
   
@@ -151,8 +150,8 @@ trait Utils extends StObject {
   
   var fn: fnStatic = js.native
   
-  def format(arr: js.Array[_]): java.lang.String = js.native
-  def format(arr: js.Array[_], dialect: java.lang.String): java.lang.String = js.native
+  def format(arr: js.Array[js.Any]): java.lang.String = js.native
+  def format(arr: js.Array[js.Any], dialect: java.lang.String): java.lang.String = js.native
   
   def formatNamedParameters(sql: java.lang.String, parameters: js.Any): java.lang.String = js.native
   def formatNamedParameters(sql: java.lang.String, parameters: js.Any, dialect: java.lang.String): java.lang.String = js.native
@@ -167,9 +166,9 @@ trait Utils extends StObject {
   
   def lowercaseFirst(str: java.lang.String): java.lang.String = js.native
   
-  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[_, _, _]): T = js.native
+  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[js.Any, js.Any, js.Any]): T = js.native
   
-  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[_, _, _]): js.Object = js.native
+  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[js.Any, js.Any, js.Any]): js.Object = js.native
   
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
@@ -178,19 +177,19 @@ trait Utils extends StObject {
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
-  def mergeDefaults[TObject, TSource](`object`: TObject, source: TSource): TObject with TSource = js.native
+  def mergeDefaults[TObject, TSource](`object`: TObject, source: TSource): TObject & TSource = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
-  def mergeDefaults[TObject, TSource1, TSource2](`object`: TObject, source1: TSource1, source2: TSource2): TObject with TSource1 with TSource2 = js.native
+  def mergeDefaults[TObject, TSource1, TSource2](`object`: TObject, source1: TSource1, source2: TSource2): TObject & TSource1 & TSource2 = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
-  def mergeDefaults[TObject, TSource1, TSource2, TSource3](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3): TObject with TSource1 with TSource2 with TSource3 = js.native
+  def mergeDefaults[TObject, TSource1, TSource2, TSource3](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3): TObject & TSource1 & TSource2 & TSource3 = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
-  def mergeDefaults[TObject, TSource1, TSource2, TSource3, TSource4](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TObject with TSource1 with TSource2 with TSource3 with TSource4 = js.native
+  def mergeDefaults[TObject, TSource1, TSource2, TSource3, TSource4](`object`: TObject, source1: TSource1, source2: TSource2, source3: TSource3, source4: TSource4): TObject & TSource1 & TSource2 & TSource3 & TSource4 = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */
@@ -206,17 +205,17 @@ trait Utils extends StObject {
   def removeCommentsFromFunctionString(s: java.lang.String): java.lang.String = js.native
   
   def removeNullValuesFromHash(hash: js.Object): js.Any = js.native
-  def removeNullValuesFromHash(hash: js.Object, omitNull: js.UndefOr[scala.Nothing], options: js.Object): js.Any = js.native
   def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean): js.Any = js.native
   def removeNullValuesFromHash(hash: js.Object, omitNull: Boolean, options: js.Object): js.Any = js.native
+  def removeNullValuesFromHash(hash: js.Object, omitNull: Unit, options: js.Object): js.Any = js.native
   
   def removeTicks(s: java.lang.String): java.lang.String = js.native
   def removeTicks(s: java.lang.String, tickChar: java.lang.String): java.lang.String = js.native
   
   def singularize(s: java.lang.String): java.lang.String = js.native
   
-  def sliceArgs(args: js.Array[_]): js.Array[_] = js.native
-  def sliceArgs(args: js.Array[_], begin: Double): js.Array[_] = js.native
+  def sliceArgs(args: js.Array[js.Any]): js.Array[js.Any] = js.native
+  def sliceArgs(args: js.Array[js.Any], begin: Double): js.Array[js.Any] = js.native
   
   def spliceStr(str: java.lang.String, index: Double, count: Double, add: java.lang.String): java.lang.String = js.native
   

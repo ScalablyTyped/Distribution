@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapsEventListener extends StObject {
   
   /**
     * Removes the listener.  Equivalent to calling
     * google.maps.event.removeListener(listener).
     */
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object MapsEventListener {
   

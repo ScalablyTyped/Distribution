@@ -2,29 +2,27 @@ package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFormlyConfigExtras extends StObject {
   
-  var apiCheckInstance: js.Any = js.native
+  var apiCheckInstance: js.Any
   
-  var defaultHideDirective: String = js.native
+  var defaultHideDirective: String
   
-  var disableNgModelAttrsManipulator: Boolean = js.native
+  var disableNgModelAttrsManipulator: Boolean
   
-  var errorExistsAndShouldBeVisibleExpression: js.Any = js.native
+  var errorExistsAndShouldBeVisibleExpression: js.Any
   
-  var explicitAsync: Boolean = js.native
+  var explicitAsync: Boolean
   
-  var fieldTransform: js.Function | js.Array[js.Function] = js.native
+  var fieldTransform: js.Function | js.Array[js.Function]
   
-  var getFieldId: js.Function = js.native
+  var getFieldId: js.Function
   
-  var ngModelAttrsManipulatorPreferUnbound: Boolean = js.native
+  var ngModelAttrsManipulatorPreferUnbound: Boolean
   
-  var removeChromeAutoComplete: Boolean = js.native
+  var removeChromeAutoComplete: Boolean
 }
 object IFormlyConfigExtras {
   

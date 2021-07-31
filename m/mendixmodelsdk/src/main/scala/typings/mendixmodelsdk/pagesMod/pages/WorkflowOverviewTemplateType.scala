@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object WorkflowOverviewTemplateType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.create")
-  @js.native
-  def create(model: IModel): WorkflowOverviewTemplateType = js.native
+  @scala.inline
+  def create(model: IModel): WorkflowOverviewTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[WorkflowOverviewTemplateType]
   
   /**
     * Creates and returns a new WorkflowOverviewTemplateType instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object WorkflowOverviewTemplateType {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.createIn")
-  @js.native
-  def createIn(container: PageTemplate): WorkflowOverviewTemplateType = js.native
+  @scala.inline
+  def createIn(container: PageTemplate): WorkflowOverviewTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[WorkflowOverviewTemplateType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.WorkflowOverviewTemplateType.structureTypeName")

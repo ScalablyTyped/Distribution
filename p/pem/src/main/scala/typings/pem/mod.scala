@@ -11,178 +11,152 @@ import typings.pem.anon.Prime
 import typings.pem.anon.PublicKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pem", "config")
+  @JSImport("pem", JSImport.Namespace)
   @js.native
-  def config(options: ModuleConfiguration): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pem", "createCSR")
-  @js.native
-  def createCSR(callback: Callback[ClientKey]): Unit = js.native
-  @JSImport("pem", "createCSR")
-  @js.native
-  def createCSR(options: CSRCreationOptions, callback: Callback[ClientKey]): Unit = js.native
+  @scala.inline
+  def config(options: ModuleConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pem", "createCertificate")
-  @js.native
-  def createCertificate(callback: Callback[CertificateCreationResult]): Unit = js.native
-  @JSImport("pem", "createCertificate")
-  @js.native
-  def createCertificate(options: CertificateCreationOptions, callback: Callback[CertificateCreationResult]): Unit = js.native
+  @scala.inline
+  def createCSR(callback: Callback[ClientKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createCSR")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createCSR(options: CSRCreationOptions, callback: Callback[ClientKey]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createCSR")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "createDhparam")
-  @js.native
-  def createDhparam(callback: Callback[Dhparam]): Unit = js.native
-  @JSImport("pem", "createDhparam")
-  @js.native
-  def createDhparam(keyBitsize: Double, callback: Callback[Dhparam]): Unit = js.native
+  @scala.inline
+  def createCertificate(callback: Callback[CertificateCreationResult]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createCertificate(options: CertificateCreationOptions, callback: Callback[CertificateCreationResult]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "createPkcs12")
-  @js.native
-  def createPkcs12(key: String, certificate: String, password: String, callback: Callback[Pkcs12]): Unit = js.native
-  @JSImport("pem", "createPkcs12")
-  @js.native
+  @scala.inline
+  def createDhparam(callback: Callback[Dhparam]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createDhparam")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createDhparam(keyBitsize: Double, callback: Callback[Dhparam]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDhparam")(keyBitsize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def createPkcs12(key: String, certificate: String, password: String, callback: Callback[Pkcs12]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPkcs12")(key.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def createPkcs12(
     key: String,
     certificate: String,
     password: String,
     options: Pkcs12CreationOptions,
     callback: Callback[Pkcs12]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPkcs12")(key.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], password.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "createPrivateKey")
-  @js.native
-  def createPrivateKey(callback: Callback[Key]): Unit = js.native
-  @JSImport("pem", "createPrivateKey")
-  @js.native
-  def createPrivateKey(keyBitsize: Double, options: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = js.native
-  @JSImport("pem", "createPrivateKey")
-  @js.native
-  def createPrivateKey(optionsOrKeyBitsize: Double, callback: Callback[Key]): Unit = js.native
-  @JSImport("pem", "createPrivateKey")
-  @js.native
-  def createPrivateKey(optionsOrKeyBitsize: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = js.native
+  @scala.inline
+  def createPrivateKey(callback: Callback[Key]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def createPrivateKey(keyBitsize: Double, options: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(keyBitsize.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createPrivateKey(optionsOrKeyBitsize: Double, callback: Callback[Key]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(optionsOrKeyBitsize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createPrivateKey(optionsOrKeyBitsize: PrivateKeyCreationOptions, callback: Callback[Key]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createPrivateKey")(optionsOrKeyBitsize.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "getDhparamInfo")
-  @js.native
-  def getDhparamInfo(dh: String, callback: Callback[Prime]): Unit = js.native
+  @scala.inline
+  def getDhparamInfo(dh: String, callback: Callback[Prime]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDhparamInfo")(dh.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "getFingerprint")
-  @js.native
-  def getFingerprint(callback: Callback[Fingerprint]): Unit = js.native
-  @JSImport("pem", "getFingerprint")
-  @js.native
-  def getFingerprint(certificate: String, callback: Callback[Fingerprint]): Unit = js.native
-  @JSImport("pem", "getFingerprint")
-  @js.native
-  def getFingerprint(certificate: String, hash: HashFunction, callback: Callback[Fingerprint]): Unit = js.native
+  @scala.inline
+  def getFingerprint(callback: Callback[Fingerprint]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFingerprint")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getFingerprint(certificate: String, callback: Callback[Fingerprint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFingerprint")(certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def getFingerprint(certificate: String, hash: HashFunction, callback: Callback[Fingerprint]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFingerprint")(certificate.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "getModulus")
-  @js.native
-  def getModulus(certificate: String, callback: Callback[Modulus]): Unit = js.native
-  @JSImport("pem", "getModulus")
-  @js.native
-  def getModulus(certificate: String, password: String, callback: Callback[Modulus]): Unit = js.native
+  @scala.inline
+  def getModulus(certificate: String, callback: Callback[Modulus]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getModulus")(certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def getModulus(certificate: String, password: String, callback: Callback[Modulus]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getModulus")(certificate.asInstanceOf[js.Any], password.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "getPublicKey")
-  @js.native
-  def getPublicKey(callback: Callback[PublicKey]): Unit = js.native
-  @JSImport("pem", "getPublicKey")
-  @js.native
-  def getPublicKey(certificate: String, callback: Callback[PublicKey]): Unit = js.native
+  @scala.inline
+  def getPublicKey(callback: Callback[PublicKey]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def getPublicKey(certificate: String, callback: Callback[PublicKey]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKey")(certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "readCertificateInfo")
-  @js.native
-  def readCertificateInfo(callback: Callback[CertificateSubjectReadResult]): Unit = js.native
-  @JSImport("pem", "readCertificateInfo")
-  @js.native
-  def readCertificateInfo(certificate: String, callback: Callback[CertificateSubjectReadResult]): Unit = js.native
+  @scala.inline
+  def readCertificateInfo(callback: Callback[CertificateSubjectReadResult]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readCertificateInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def readCertificateInfo(certificate: String, callback: Callback[CertificateSubjectReadResult]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readCertificateInfo")(certificate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pem", "readPkcs12")
-  @js.native
-  def readPkcs12(bufferOrPath: String, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
-  @JSImport("pem", "readPkcs12")
-  @js.native
-  def readPkcs12(bufferOrPath: String, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
-  @JSImport("pem", "readPkcs12")
-  @js.native
-  def readPkcs12(bufferOrPath: Buffer, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
-  @JSImport("pem", "readPkcs12")
-  @js.native
-  def readPkcs12(bufferOrPath: Buffer, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = js.native
+  @scala.inline
+  def readPkcs12(bufferOrPath: String, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def readPkcs12(bufferOrPath: String, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def readPkcs12(bufferOrPath: Buffer, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def readPkcs12(bufferOrPath: Buffer, options: Pkcs12ReadOptions, callback: Callback[Pkcs12ReadResult]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readPkcs12")(bufferOrPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("pem", "verifySigningChain")
-  @js.native
-  def verifySigningChain(certificate: String, ca: js.Array[String], callback: Callback[Boolean]): Unit = js.native
+  @scala.inline
+  def verifySigningChain(certificate: String, ca: js.Array[String], callback: Callback[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifySigningChain")(certificate.asInstanceOf[js.Any], ca.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CSRCreationOptions extends StObject {
     
     /**
       * A list of subjectAltNames in the subjectAltName field
       */
-    var altNames: js.UndefOr[js.Array[String]] = js.native
+    var altNames: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       *  Optional client key to use
       */
-    var clientKey: js.UndefOr[String] = js.native
+    var clientKey: js.UndefOr[String] = js.undefined
     
-    var clientKeyPassword: js.UndefOr[String] = js.native
+    var clientKeyPassword: js.UndefOr[String] = js.undefined
     
     /**
       * CSR common name field, defaults to 'localhost'
       */
-    var commonName: js.UndefOr[String] = js.native
+    var commonName: js.UndefOr[String] = js.undefined
     
     /**
       * CSR country field
       */
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /**
       * CSR config file
       */
-    var csrConfigFile: js.UndefOr[String] = js.native
+    var csrConfigFile: js.UndefOr[String] = js.undefined
     
     /**
       * CSR email address field
       */
-    var emailAddress: js.UndefOr[String] = js.native
+    var emailAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Hash function to use, defaults to sha256
       */
-    var hash: js.UndefOr[HashFunction] = js.native
+    var hash: js.UndefOr[HashFunction] = js.undefined
     
     /**
       * If clientKey is undefined, bit size to use for generating a new key (defaults to 2048)
       */
-    var keyBitsize: js.UndefOr[Double] = js.native
+    var keyBitsize: js.UndefOr[Double] = js.undefined
     
     /**
       * CSR locality field
       */
-    var locality: js.UndefOr[String] = js.native
+    var locality: js.UndefOr[String] = js.undefined
     
     /**
       * CSR organization field
       */
-    var organization: js.UndefOr[String] = js.native
+    var organization: js.UndefOr[String] = js.undefined
     
     /**
       * CSR organizational unit field
       */
-    var organizationUnit: js.UndefOr[String] = js.native
+    var organizationUnit: js.UndefOr[String] = js.undefined
     
     /**
       * CSR state field
       */
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object CSRCreationOptions {
     
@@ -280,47 +254,48 @@ object mod {
   
   type Callback[T] = js.Function2[/* error */ js.Any, /* result */ T, js.Any]
   
-  @js.native
-  trait CertificateCreationOptions extends CSRCreationOptions {
+  trait CertificateCreationOptions
+    extends StObject
+       with CSRCreationOptions {
     
     /**
       * extension config file - with '-extensions v3_req'
       */
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
     /**
       * CSR for the certificate, if not defined a new one is generated from the provided parameters
       */
-    var csr: js.UndefOr[String] = js.native
+    var csr: js.UndefOr[String] = js.undefined
     
     /**
       * Certificate expire time in days, defaults to 365
       */
-    var days: js.UndefOr[Double] = js.native
+    var days: js.UndefOr[Double] = js.undefined
     
     /**
       * extension config file - without '-extensions v3_req'
       */
-    var extFile: js.UndefOr[String] = js.native
+    var extFile: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true and serviceKey is not defined, use clientKey for signing
       */
-    var selfSigned: js.UndefOr[Boolean] = js.native
+    var selfSigned: js.UndefOr[Boolean] = js.undefined
     
-    var serial: js.UndefOr[js.Any] = js.native
+    var serial: js.UndefOr[js.Any] = js.undefined
     
-    var serviceCertificate: js.UndefOr[js.Any] = js.native
+    var serviceCertificate: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Private key for signing the certificate, if not defined a new one is generated
       */
-    var serviceKey: js.UndefOr[String] = js.native
+    var serviceKey: js.UndefOr[String] = js.undefined
     
     /**
       * Password of the service key
       */
-    var serviceKeyPassword: js.UndefOr[String] = js.native
+    var serviceKeyPassword: js.UndefOr[String] = js.undefined
   }
   object CertificateCreationOptions {
     
@@ -389,16 +364,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificateCreationResult extends StObject {
     
-    var certificate: js.Any = js.native
+    var certificate: js.Any
     
-    var clientKey: String = js.native
+    var clientKey: String
     
-    var csr: String = js.native
+    var csr: String
     
-    var serviceKey: String = js.native
+    var serviceKey: String
   }
   object CertificateCreationResult {
     
@@ -425,22 +399,21 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificateSubjectReadResult extends StObject {
     
-    var commonName: String = js.native
+    var commonName: String
     
-    var country: String = js.native
+    var country: String
     
-    var emailAddress: String = js.native
+    var emailAddress: String
     
-    var locality: String = js.native
+    var locality: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var organizationUnit: String = js.native
+    var organizationUnit: String
     
-    var state: String = js.native
+    var state: String
   }
   object CertificateSubjectReadResult {
     
@@ -492,13 +465,12 @@ object mod {
   */
   type HashFunction = _HashFunction | String
   
-  @js.native
   trait ModuleConfiguration extends StObject {
     
     /**
       * Path to OpenSSL binaries
       */
-    var pathOpenSSL: String = js.native
+    var pathOpenSSL: String
   }
   object ModuleConfiguration {
     
@@ -516,14 +488,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Pkcs12CreationOptions extends StObject {
     
-    var certFiles: js.UndefOr[js.Array[String]] = js.native
+    var certFiles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cipher: js.UndefOr[PrivateKeyCipher] = js.native
+    var cipher: js.UndefOr[PrivateKeyCipher] = js.undefined
     
-    var clientKeyPassword: js.UndefOr[String] = js.native
+    var clientKeyPassword: js.UndefOr[String] = js.undefined
   }
   object Pkcs12CreationOptions {
     
@@ -559,12 +530,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Pkcs12ReadOptions extends StObject {
     
-    var clientKeyPassword: js.UndefOr[String] = js.native
+    var clientKeyPassword: js.UndefOr[String] = js.undefined
     
-    var p12Password: js.UndefOr[String] = js.native
+    var p12Password: js.UndefOr[String] = js.undefined
   }
   object Pkcs12ReadOptions {
     
@@ -591,14 +561,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Pkcs12ReadResult extends StObject {
     
-    var ca: js.Array[String] = js.native
+    var ca: js.Array[String]
     
-    var cert: String = js.native
+    var cert: String
     
-    var key: String = js.native
+    var key: String
   }
   object Pkcs12ReadResult {
     
@@ -639,12 +608,11 @@ object mod {
   */
   type PrivateKeyCipher = _PrivateKeyCipher | String
   
-  @js.native
   trait PrivateKeyCreationOptions extends StObject {
     
-    var cipher: PrivateKeyCipher = js.native
+    var cipher: PrivateKeyCipher
     
-    var password: String = js.native
+    var password: String
   }
   object PrivateKeyCreationOptions {
     

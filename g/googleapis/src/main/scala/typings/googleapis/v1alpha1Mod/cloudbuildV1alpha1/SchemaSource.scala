@@ -2,25 +2,23 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location of the source in a supported storage service.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
     * If provided, get the source from this location in a Cloud Source
     * Repository.
     */
-  var repoSource: js.UndefOr[SchemaRepoSource] = js.native
+  var repoSource: js.UndefOr[SchemaRepoSource] = js.undefined
   
   /**
     * If provided, get the source from this location in Google Cloud Storage.
     */
-  var storageSource: js.UndefOr[SchemaStorageSource] = js.native
+  var storageSource: js.UndefOr[SchemaStorageSource] = js.undefined
 }
 object SchemaSource {
   

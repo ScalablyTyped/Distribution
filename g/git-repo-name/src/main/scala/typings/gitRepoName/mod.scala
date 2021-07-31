@@ -3,56 +3,46 @@ package typings.gitRepoName
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[String] = js.native
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = js.native
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(options: String): js.Promise[String] = js.native
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(options: String, callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = js.native
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[String] = js.native
-  @JSImport("git-repo-name", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = js.native
+  @scala.inline
+  def apply(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(options: String, callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(options: Options, callback: js.Function2[/* err */ Error | Null, /* repoName */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("git-repo-name", "promise")
+  @JSImport("git-repo-name", JSImport.Namespace)
   @js.native
-  def promise(): js.Promise[String] = js.native
-  @JSImport("git-repo-name", "promise")
-  @js.native
-  def promise(options: String): js.Promise[String] = js.native
-  @JSImport("git-repo-name", "promise")
-  @js.native
-  def promise(options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("git-repo-name", "sync")
-  @js.native
-  def sync(): String = js.native
-  @JSImport("git-repo-name", "sync")
-  @js.native
-  def sync(options: String): String = js.native
-  @JSImport("git-repo-name", "sync")
-  @js.native
-  def sync(options: Options): String = js.native
+  @scala.inline
+  def promise(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def promise(options: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def promise(options: Options): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("promise")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def sync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String]
+  @scala.inline
+  def sync(options: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sync(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Options {
     

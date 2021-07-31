@@ -2,17 +2,17 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenedFileOffsetRequestedEventOptions extends OpenedFileRequestedEventOptions {
+trait OpenedFileOffsetRequestedEventOptions
+  extends StObject
+     with OpenedFileRequestedEventOptions {
   
   /** Number of bytes to be returned. */
-  var length: Double = js.native
+  var length: Double
   
   /** Position in the file (in bytes) to start reading from. */
-  var offset: Double = js.native
+  var offset: Double
 }
 object OpenedFileOffsetRequestedEventOptions {
   

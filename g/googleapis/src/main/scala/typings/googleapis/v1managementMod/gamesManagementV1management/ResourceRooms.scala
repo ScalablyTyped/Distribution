@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Rooms")
@@ -31,7 +30,7 @@ class ResourceRooms protected () extends StObject {
     */
   def reset(): GaxiosPromise[Unit] = js.native
   def reset(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def reset(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceRoomsReset): GaxiosPromise[Unit] = js.native
   def reset(params: ParamsResourceRoomsReset, callback: BodyResponseCallback[Unit]): Unit = js.native
   def reset(
@@ -57,7 +56,7 @@ class ResourceRooms protected () extends StObject {
     */
   def resetForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def resetForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def resetForAllPlayers(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceRoomsResetforallplayers): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceRoomsResetforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetForAllPlayers(

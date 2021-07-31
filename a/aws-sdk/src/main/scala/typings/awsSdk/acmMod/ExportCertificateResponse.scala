@@ -2,26 +2,24 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportCertificateResponse extends StObject {
   
   /**
     * The base64 PEM-encoded certificate.
     */
-  var Certificate: js.UndefOr[CertificateBody] = js.native
+  var Certificate: js.UndefOr[CertificateBody] = js.undefined
   
   /**
     * The base64 PEM-encoded certificate chain. This does not include the certificate that you are exporting.
     */
-  var CertificateChain: js.UndefOr[typings.awsSdk.acmMod.CertificateChain] = js.native
+  var CertificateChain: js.UndefOr[typings.awsSdk.acmMod.CertificateChain] = js.undefined
   
   /**
     * The encrypted private key associated with the public key in the certificate. The key is output in PKCS #8 format and is base64 PEM-encoded. 
     */
-  var PrivateKey: js.UndefOr[typings.awsSdk.acmMod.PrivateKey] = js.native
+  var PrivateKey: js.UndefOr[typings.awsSdk.acmMod.PrivateKey] = js.undefined
 }
 object ExportCertificateResponse {
   

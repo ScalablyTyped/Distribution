@@ -2,40 +2,38 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists columns (dimensions and metrics) for a particular report type.
   */
-@js.native
 trait SchemaColumns extends StObject {
   
   /**
     * List of attributes names returned by columns.
     */
-  var attributeNames: js.UndefOr[js.Array[String]] = js.native
+  var attributeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Etag of collection. This etag can be compared with the last response etag
     * to check if response has changed.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * List of columns for a report type.
     */
-  var items: js.UndefOr[js.Array[SchemaColumn]] = js.native
+  var items: js.UndefOr[js.Array[SchemaColumn]] = js.undefined
   
   /**
     * Collection type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of columns returned in the response.
     */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object SchemaColumns {
   

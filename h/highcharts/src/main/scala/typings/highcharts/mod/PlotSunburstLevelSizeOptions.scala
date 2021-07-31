@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSunburstLevelSizeOptions extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait PlotSunburstLevelSizeOptions extends StObject {
     * distributes it accross all "weighted" levels. The value relative to the
     * sum of all weights determines the width.
     */
-  var unit: js.UndefOr[OptionsUnitValue] = js.native
+  var unit: js.UndefOr[OptionsUnitValue] = js.undefined
   
   /**
     * (Highcharts) The value used for calculating the width of the ring. Its'
     * affect is determined by `levelSize.unit`.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object PlotSunburstLevelSizeOptions {
   

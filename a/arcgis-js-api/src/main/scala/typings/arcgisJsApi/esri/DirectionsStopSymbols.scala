@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsStopSymbols extends Object {
+trait DirectionsStopSymbols
+  extends StObject
+     with Object {
   
   /**
     * The first stop symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var first: js.UndefOr[Symbol] = js.native
+  var first: js.UndefOr[Symbol] = js.undefined
   
   /**
     * The last stop symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var last: js.UndefOr[Symbol] = js.native
+  var last: js.UndefOr[Symbol] = js.undefined
   
   /**
     * The middle stop symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var middle: js.UndefOr[Symbol] = js.native
+  var middle: js.UndefOr[Symbol] = js.undefined
   
   /**
     * An unlocated stop symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var unlocated: js.UndefOr[Symbol] = js.native
+  var unlocated: js.UndefOr[Symbol] = js.undefined
   
   /**
     * A waypoint stop symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#stopSymbols)
     */
-  var waypoint: js.UndefOr[Symbol] = js.native
+  var waypoint: js.UndefOr[Symbol] = js.undefined
 }
 object DirectionsStopSymbols {
   

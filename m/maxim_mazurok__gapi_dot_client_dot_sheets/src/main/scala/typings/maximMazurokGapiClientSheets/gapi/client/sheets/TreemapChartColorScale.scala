@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreemapChartColorScale extends StObject {
   
   /** The background color for cells with a color value greater than or equal to maxValue. Defaults to #109618 if not specified. */
-  var maxValueColor: js.UndefOr[Color] = js.native
+  var maxValueColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The background color for cells with a color value greater than or equal to maxValue. Defaults to #109618 if not specified. If max_value_color is also set, this field takes
     * precedence.
     */
-  var maxValueColorStyle: js.UndefOr[ColorStyle] = js.native
+  var maxValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The background color for cells with a color value at the midpoint between minValue and maxValue. Defaults to #efe6dc if not specified. */
-  var midValueColor: js.UndefOr[Color] = js.native
+  var midValueColor: js.UndefOr[Color] = js.undefined
   
   /**
     * The background color for cells with a color value at the midpoint between minValue and maxValue. Defaults to #efe6dc if not specified. If mid_value_color is also set, this field
     * takes precedence.
     */
-  var midValueColorStyle: js.UndefOr[ColorStyle] = js.native
+  var midValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The background color for cells with a color value less than or equal to minValue. Defaults to #dc3912 if not specified. */
-  var minValueColor: js.UndefOr[Color] = js.native
+  var minValueColor: js.UndefOr[Color] = js.undefined
   
   /** The background color for cells with a color value less than or equal to minValue. Defaults to #dc3912 if not specified. If min_value_color is also set, this field takes precedence. */
-  var minValueColorStyle: js.UndefOr[ColorStyle] = js.native
+  var minValueColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The background color for cells that have no color data associated with them. Defaults to #000000 if not specified. */
-  var noDataColor: js.UndefOr[Color] = js.native
+  var noDataColor: js.UndefOr[Color] = js.undefined
   
   /** The background color for cells that have no color data associated with them. Defaults to #000000 if not specified. If no_data_color is also set, this field takes precedence. */
-  var noDataColorStyle: js.UndefOr[ColorStyle] = js.native
+  var noDataColorStyle: js.UndefOr[ColorStyle] = js.undefined
 }
 object TreemapChartColorScale {
   

@@ -6,7 +6,6 @@ import typings.restify.mod.Server
 import typings.restify.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverMod {
@@ -17,7 +16,7 @@ object serverMod {
     def this(container: Container) = this()
     def this(
       container: Container,
-      opts: ServerOptions with typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
+      opts: ServerOptions & typings.inversifyRestifyUtils.interfacesMod.interfaces.ServerOptions
     ) = this()
     
     var app: js.Any = js.native

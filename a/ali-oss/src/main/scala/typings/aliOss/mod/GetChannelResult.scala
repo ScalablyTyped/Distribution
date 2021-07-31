@@ -2,23 +2,21 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetChannelResult extends StObject {
   
-  var Audio: js.UndefOr[js.Object] = js.native
+  var Audio: js.UndefOr[js.Object] = js.undefined
   
-  var ConnectedTime: js.UndefOr[String] = js.native
+  var ConnectedTime: js.UndefOr[String] = js.undefined
   
-  var RemoteAddr: js.UndefOr[String] = js.native
+  var RemoteAddr: js.UndefOr[String] = js.undefined
   
-  var Status: String = js.native
+  var Status: String
   
-  var Video: js.UndefOr[js.Object] = js.native
+  var Video: js.UndefOr[js.Object] = js.undefined
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object GetChannelResult {
   

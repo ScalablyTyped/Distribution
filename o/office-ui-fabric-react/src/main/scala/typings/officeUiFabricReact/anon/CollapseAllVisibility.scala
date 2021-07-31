@@ -3,17 +3,15 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapseAllVisibility extends StObject {
   
-  var collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility = js.native
+  var collapseAllVisibility: typings.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility
   
-  var selectAllVisibility: SelectAllVisibility = js.native
+  var selectAllVisibility: SelectAllVisibility
   
-  var useFastIcons: Boolean = js.native
+  var useFastIcons: Boolean
 }
 object CollapseAllVisibility {
   

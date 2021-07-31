@@ -2,26 +2,24 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for SubmitConfigSource method.
   */
-@js.native
 trait SchemaSubmitConfigSourceRequest extends StObject {
   
   /**
     * The source configuration for the service.
     */
-  var configSource: js.UndefOr[SchemaConfigSource] = js.native
+  var configSource: js.UndefOr[SchemaConfigSource] = js.undefined
   
   /**
     * Optional. If set, this will result in the generation of a
     * `google.api.Service` configuration based on the `ConfigSource` provided,
     * but the generated config and the sources will NOT be persisted.
     */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSubmitConfigSourceRequest {
   

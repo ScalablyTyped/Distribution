@@ -2,33 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkforceIntegration extends ChangeTrackedEntity {
+trait WorkforceIntegration
+  extends StObject
+     with ChangeTrackedEntity {
   
   // API version for the call back URL. Start with 1.
-  var apiVersion: js.UndefOr[NullableOption[Double]] = js.native
+  var apiVersion: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Name of the workforce integration.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The workforce integration encryption resource.
-  var encryption: js.UndefOr[NullableOption[WorkforceIntegrationEncryption]] = js.native
+  var encryption: js.UndefOr[NullableOption[WorkforceIntegrationEncryption]] = js.undefined
   
   // Indicates whether this workforce integration is currently active and available.
-  var isActive: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isActive: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * The Shifts entities supported for synchronous change notifications. Shifts will make a call back to the url provided on
     * client changes on those entities added here. By default, no entities are supported for change notifications. Possible
     * values are: none, shift, swapRequest, openshift, openShiftRequest, userShiftPreferences
     */
-  var supportedEntities: js.UndefOr[NullableOption[WorkforceIntegrationSupportedEntities]] = js.native
+  var supportedEntities: js.UndefOr[NullableOption[WorkforceIntegrationSupportedEntities]] = js.undefined
   
   // Workforce Integration URL for callbacks from the Shifts service.
-  var url: js.UndefOr[NullableOption[String]] = js.native
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkforceIntegration {
   

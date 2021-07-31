@@ -2,27 +2,25 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clef extends StObject {
   
-  var auto_stem: js.UndefOr[Boolean] = js.native
+  var auto_stem: js.UndefOr[Boolean] = js.undefined
   
-  var clef: js.UndefOr[String] = js.native
+  var clef: js.UndefOr[String] = js.undefined
   
-  var dots: js.UndefOr[Double] = js.native
+  var dots: js.UndefOr[Double] = js.undefined
   
-  var duration: String = js.native
+  var duration: String
   
-  var keys: js.Array[String] = js.native
+  var keys: js.Array[String]
   
-  var octave_shift: js.UndefOr[Double] = js.native
+  var octave_shift: js.UndefOr[Double] = js.undefined
   
-  var stem_direction: js.UndefOr[Double] = js.native
+  var stem_direction: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Clef {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Projects")
@@ -31,7 +30,7 @@ class ResourceProjects protected () extends StObject {
     */
   def disableXpnHost(): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnHost(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def disableXpnHost(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def disableXpnHost(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnHost(params: ParamsResourceProjectsDisablexpnhost): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnHost(params: ParamsResourceProjectsDisablexpnhost, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def disableXpnHost(
@@ -63,7 +62,7 @@ class ResourceProjects protected () extends StObject {
     */
   def disableXpnResource(): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnResource(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def disableXpnResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def disableXpnResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnResource(params: ParamsResourceProjectsDisablexpnresource): GaxiosPromise[SchemaOperation] = js.native
   def disableXpnResource(params: ParamsResourceProjectsDisablexpnresource, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def disableXpnResource(
@@ -93,7 +92,7 @@ class ResourceProjects protected () extends StObject {
     */
   def enableXpnHost(): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnHost(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def enableXpnHost(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def enableXpnHost(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnHost(params: ParamsResourceProjectsEnablexpnhost): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnHost(params: ParamsResourceProjectsEnablexpnhost, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def enableXpnHost(
@@ -126,7 +125,7 @@ class ResourceProjects protected () extends StObject {
     */
   def enableXpnResource(): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnResource(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def enableXpnResource(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def enableXpnResource(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnResource(params: ParamsResourceProjectsEnablexpnresource): GaxiosPromise[SchemaOperation] = js.native
   def enableXpnResource(params: ParamsResourceProjectsEnablexpnresource, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def enableXpnResource(
@@ -155,7 +154,7 @@ class ResourceProjects protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProject] = js.native
   def get(callback: BodyResponseCallback[SchemaProject]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
   def get(params: ParamsResourceProjectsGet): GaxiosPromise[SchemaProject] = js.native
   def get(params: ParamsResourceProjectsGet, callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def get(
@@ -185,7 +184,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getXpnHost(): GaxiosPromise[SchemaProject] = js.native
   def getXpnHost(callback: BodyResponseCallback[SchemaProject]): Unit = js.native
-  def getXpnHost(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
+  def getXpnHost(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProject] = js.native
   def getXpnHost(params: ParamsResourceProjectsGetxpnhost): GaxiosPromise[SchemaProject] = js.native
   def getXpnHost(params: ParamsResourceProjectsGetxpnhost, callback: BodyResponseCallback[SchemaProject]): Unit = js.native
   def getXpnHost(
@@ -219,7 +218,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getXpnResources(): GaxiosPromise[SchemaProjectsGetXpnResources] = js.native
   def getXpnResources(callback: BodyResponseCallback[SchemaProjectsGetXpnResources]): Unit = js.native
-  def getXpnResources(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectsGetXpnResources] = js.native
+  def getXpnResources(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectsGetXpnResources] = js.native
   def getXpnResources(params: ParamsResourceProjectsGetxpnresources): GaxiosPromise[SchemaProjectsGetXpnResources] = js.native
   def getXpnResources(
     params: ParamsResourceProjectsGetxpnresources,
@@ -257,7 +256,7 @@ class ResourceProjects protected () extends StObject {
     */
   def listXpnHosts(): GaxiosPromise[SchemaXpnHostList] = js.native
   def listXpnHosts(callback: BodyResponseCallback[SchemaXpnHostList]): Unit = js.native
-  def listXpnHosts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaXpnHostList] = js.native
+  def listXpnHosts(params: Unit, options: MethodOptions): GaxiosPromise[SchemaXpnHostList] = js.native
   def listXpnHosts(params: ParamsResourceProjectsListxpnhosts): GaxiosPromise[SchemaXpnHostList] = js.native
   def listXpnHosts(params: ParamsResourceProjectsListxpnhosts, callback: BodyResponseCallback[SchemaXpnHostList]): Unit = js.native
   def listXpnHosts(
@@ -288,7 +287,7 @@ class ResourceProjects protected () extends StObject {
     */
   def moveDisk(): GaxiosPromise[SchemaOperation] = js.native
   def moveDisk(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def moveDisk(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def moveDisk(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def moveDisk(params: ParamsResourceProjectsMovedisk): GaxiosPromise[SchemaOperation] = js.native
   def moveDisk(params: ParamsResourceProjectsMovedisk, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def moveDisk(
@@ -320,7 +319,7 @@ class ResourceProjects protected () extends StObject {
     */
   def moveInstance(): GaxiosPromise[SchemaOperation] = js.native
   def moveInstance(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def moveInstance(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def moveInstance(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def moveInstance(params: ParamsResourceProjectsMoveinstance): GaxiosPromise[SchemaOperation] = js.native
   def moveInstance(params: ParamsResourceProjectsMoveinstance, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def moveInstance(
@@ -352,7 +351,7 @@ class ResourceProjects protected () extends StObject {
     */
   def setCommonInstanceMetadata(): GaxiosPromise[SchemaOperation] = js.native
   def setCommonInstanceMetadata(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setCommonInstanceMetadata(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setCommonInstanceMetadata(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setCommonInstanceMetadata(params: ParamsResourceProjectsSetcommoninstancemetadata): GaxiosPromise[SchemaOperation] = js.native
   def setCommonInstanceMetadata(
     params: ParamsResourceProjectsSetcommoninstancemetadata,
@@ -388,7 +387,7 @@ class ResourceProjects protected () extends StObject {
     */
   def setDefaultNetworkTier(): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultNetworkTier(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setDefaultNetworkTier(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setDefaultNetworkTier(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultNetworkTier(params: ParamsResourceProjectsSetdefaultnetworktier): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultNetworkTier(
     params: ParamsResourceProjectsSetdefaultnetworktier,
@@ -424,7 +423,7 @@ class ResourceProjects protected () extends StObject {
     */
   def setDefaultServiceAccount(): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultServiceAccount(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setDefaultServiceAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setDefaultServiceAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultServiceAccount(params: ParamsResourceProjectsSetdefaultserviceaccount): GaxiosPromise[SchemaOperation] = js.native
   def setDefaultServiceAccount(
     params: ParamsResourceProjectsSetdefaultserviceaccount,
@@ -460,7 +459,7 @@ class ResourceProjects protected () extends StObject {
     */
   def setUsageExportBucket(): GaxiosPromise[SchemaOperation] = js.native
   def setUsageExportBucket(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setUsageExportBucket(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setUsageExportBucket(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setUsageExportBucket(params: ParamsResourceProjectsSetusageexportbucket): GaxiosPromise[SchemaOperation] = js.native
   def setUsageExportBucket(
     params: ParamsResourceProjectsSetusageexportbucket,

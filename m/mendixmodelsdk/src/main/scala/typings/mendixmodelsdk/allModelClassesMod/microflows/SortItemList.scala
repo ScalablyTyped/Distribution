@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList")
@@ -37,9 +36,8 @@ object SortItemList {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
   
   /**
     * Creates and returns a new SortItemList instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object SortItemList {
     * of the parent DatabaseRetrieveSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.createInDatabaseRetrieveSourceUnderSortItemList")
-  @js.native
-  def createInDatabaseRetrieveSourceUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = js.native
+  @scala.inline
+  def createInDatabaseRetrieveSourceUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
   
   /**
     * Creates and returns a new SortItemList instance in the SDK and on the server.
@@ -57,9 +54,8 @@ object SortItemList {
     * of the parent Sort element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.createInSortUnderSortItemList")
-  @js.native
-  def createInSortUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.Sort): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = js.native
+  @scala.inline
+  def createInSortUnderSortItemList(container: typings.mendixmodelsdk.microflowsMod.microflows.Sort): typings.mendixmodelsdk.microflowsMod.microflows.SortItemList = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSortUnderSortItemList")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.SortItemList]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.SortItemList.structureTypeName")

@@ -8,23 +8,21 @@ import typings.reactNativeGestureHandler.anon.Left
 import typings.reactNativeGestureHandler.anon.Right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GestureHandlerProperties extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var hitSlop: js.UndefOr[Double | Bottom | Left | Right | Height | BottomHeight] = js.native
+  var hitSlop: js.UndefOr[Double | Bottom | Left | Right | Height | BottomHeight] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.native
+  var shouldCancelWhenOutside: js.UndefOr[Boolean] = js.undefined
   
-  var simultaneousHandlers: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+  var simultaneousHandlers: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
   
-  var waitFor: js.UndefOr[Ref[_] | js.Array[Ref[_]]] = js.native
+  var waitFor: js.UndefOr[Ref[js.Any] | js.Array[Ref[js.Any]]] = js.undefined
 }
 object GestureHandlerProperties {
   
@@ -62,10 +60,10 @@ object GestureHandlerProperties {
     def setShouldCancelWhenOutsideUndefined: Self = StObject.set(x, "shouldCancelWhenOutside", js.undefined)
     
     @scala.inline
-    def setSimultaneousHandlers(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
+    def setSimultaneousHandlers(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "simultaneousHandlers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSimultaneousHandlersFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
+    def setSimultaneousHandlersFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "simultaneousHandlers", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSimultaneousHandlersNull: Self = StObject.set(x, "simultaneousHandlers", null)
@@ -77,10 +75,10 @@ object GestureHandlerProperties {
     def setSimultaneousHandlersVarargs(value: Ref[js.Any]*): Self = StObject.set(x, "simultaneousHandlers", js.Array(value :_*))
     
     @scala.inline
-    def setWaitFor(value: Ref[_] | js.Array[Ref[_]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+    def setWaitFor(value: Ref[js.Any] | js.Array[Ref[js.Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWaitForFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+    def setWaitForFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setWaitForNull: Self = StObject.set(x, "waitFor", null)

@@ -2,15 +2,13 @@ package typings.expressValidator.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckFalsy extends StObject {
   
-  var checkFalsy: js.UndefOr[Boolean] = js.native
+  var checkFalsy: js.UndefOr[Boolean] = js.undefined
   
-  var checkNull: js.UndefOr[Boolean] = js.native
+  var checkNull: js.UndefOr[Boolean] = js.undefined
 }
 object CheckFalsy {
   

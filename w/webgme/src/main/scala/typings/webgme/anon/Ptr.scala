@@ -2,15 +2,13 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ptr extends StObject {
   
-  var ptr: MetaCardRulemin1max1 = js.native
+  var ptr: MetaCardRulemin1max1
   
-  var set: MetaCardRuleminnumbermaxn = js.native
+  var set: MetaCardRuleminnumbermaxn
 }
 object Ptr {
   

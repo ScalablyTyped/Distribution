@@ -2,39 +2,36 @@ package typings.littleLoader
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("little-loader", JSImport.Namespace)
-  @js.native
-  def apply(module: String): Unit = js.native
-  @JSImport("little-loader", JSImport.Namespace)
-  @js.native
-  def apply(module: String, callback: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
-  @JSImport("little-loader", JSImport.Namespace)
-  @js.native
-  def apply(module: String, callback: js.ThisFunction1[/* this */ js.Any, /* err */ String, Unit]): Unit = js.native
-  @JSImport("little-loader", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(module: String): Unit = ^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(module: String, callback: js.ThisFunction1[/* this */ js.Any, /* err */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     module: String,
     callback: js.ThisFunction1[/* this */ js.Any, /* err */ String, Unit],
     context: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(module: String, callback: Unit, context: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(module: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(module.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("little-loader", JSImport.Namespace)
   @js.native
-  def apply(module: String, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var callback: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* err */ String, Unit]] = js.native
+    var callback: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* err */ String, Unit]] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var setup: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* script */ js.Any, Unit]] = js.native
+    var setup: js.UndefOr[js.ThisFunction1[/* this */ js.Any, /* script */ js.Any, Unit]] = js.undefined
   }
   object Options {
     

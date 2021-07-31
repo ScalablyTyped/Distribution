@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstPartyPrincipal extends StObject {
   
   /** The email address of a Google account. . */
-  var principalEmail: js.UndefOr[String] = js.native
+  var principalEmail: js.UndefOr[String] = js.undefined
   
   /** Metadata about the service that uses the service account. . */
   var serviceMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[js.Any]
+  ] = js.undefined
 }
 object FirstPartyPrincipal {
   
@@ -40,7 +38,7 @@ object FirstPartyPrincipal {
     def setServiceMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.FirstPartyPrincipal & TopLevel[js.Any]
     ): Self = StObject.set(x, "serviceMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline

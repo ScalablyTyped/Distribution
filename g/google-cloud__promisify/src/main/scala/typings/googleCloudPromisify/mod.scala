@@ -3,35 +3,31 @@ package typings.googleCloudPromisify
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@google-cloud/promisify", "callbackify")
+  @JSImport("@google-cloud/promisify", JSImport.Namespace)
   @js.native
-  def callbackify(originalMethod: CallbackMethod): CallbackMethod = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@google-cloud/promisify", "callbackifyAll")
-  @js.native
-  def callbackifyAll(Class: js.Function): Unit = js.native
-  @JSImport("@google-cloud/promisify", "callbackifyAll")
-  @js.native
-  def callbackifyAll(Class: js.Function, options: CallbackifyAllOptions): Unit = js.native
+  @scala.inline
+  def callbackify(originalMethod: CallbackMethod): CallbackMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[CallbackMethod]
   
-  @JSImport("@google-cloud/promisify", "promisify")
-  @js.native
-  def promisify(originalMethod: PromiseMethod): js.Any = js.native
-  @JSImport("@google-cloud/promisify", "promisify")
-  @js.native
-  def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): js.Any = js.native
+  @scala.inline
+  def callbackifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def callbackifyAll(Class: js.Function, options: CallbackifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callbackifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@google-cloud/promisify", "promisifyAll")
-  @js.native
-  def promisifyAll(Class: js.Function): Unit = js.native
-  @JSImport("@google-cloud/promisify", "promisifyAll")
-  @js.native
-  def promisifyAll(Class: js.Function, options: PromisifyAllOptions): Unit = js.native
+  @scala.inline
+  def promisify(originalMethod: PromiseMethod): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def promisify(originalMethod: PromiseMethod, options: PromisifyOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("promisify")(originalMethod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def promisifyAll(Class: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def promisifyAll(Class: js.Function, options: PromisifyAllOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("promisifyAll")(Class.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait CallbackMethod
@@ -40,13 +36,12 @@ object mod {
     var callbackified_ : js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait CallbackifyAllOptions extends StObject {
     
     /**
       * Array of methods to ignore when callbackifying.
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CallbackifyAllOptions {
     
@@ -77,13 +72,14 @@ object mod {
     var promisified_ : js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
-  trait PromisifyAllOptions extends PromisifyOptions {
+  trait PromisifyAllOptions
+    extends StObject
+       with PromisifyOptions {
     
     /**
       * Array of methods to ignore when promisifying.
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PromisifyAllOptions {
     
@@ -107,13 +103,12 @@ object mod {
     }
   }
   
-  @js.native
   trait PromisifyOptions extends StObject {
     
     /**
       * Resolve the promise with single arg instead of an array.
       */
-    var singular: js.UndefOr[Boolean] = js.native
+    var singular: js.UndefOr[Boolean] = js.undefined
   }
   object PromisifyOptions {
     
@@ -134,10 +129,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WithPromise extends StObject {
     
-    var Promise: js.UndefOr[PromiseConstructor] = js.native
+    var Promise: js.UndefOr[PromiseConstructor] = js.undefined
   }
   object WithPromise {
     

@@ -4,27 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("polyfill-service", "getPolyfillString")
+  @JSImport("polyfill-service", JSImport.Namespace)
   @js.native
-  def getPolyfillString(options: GetPolyfillStringOptions): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("polyfill-service", "getPolyfills")
-  @js.native
-  def getPolyfills(options: GetPolyfillsOptions): js.Promise[GetPolyfillsResponse] = js.native
+  @scala.inline
+  def getPolyfillString(options: GetPolyfillStringOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolyfillString")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("polyfill-service", "listAllPolyfills")
-  @js.native
-  def listAllPolyfills(): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getPolyfills(options: GetPolyfillsOptions): js.Promise[GetPolyfillsResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolyfills")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolyfillsResponse]]
   
-  @js.native
+  @scala.inline
+  def listAllPolyfills(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listAllPolyfills")().asInstanceOf[js.Promise[js.Array[String]]]
+  
   trait Feature extends StObject {
     
-    var flags: js.UndefOr[js.Array[PolyfillFlag]] = js.native
+    var flags: js.UndefOr[js.Array[PolyfillFlag]] = js.undefined
   }
   object Feature {
     
@@ -50,12 +49,13 @@ object mod {
   
   type Features = StringDictionary[Feature]
   
-  @js.native
-  trait GetPolyfillStringOptions extends GetPolyfillsOptions {
+  trait GetPolyfillStringOptions
+    extends StObject
+       with GetPolyfillsOptions {
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var unknown: js.UndefOr[Unknown] = js.native
+    var unknown: js.UndefOr[Unknown] = js.undefined
   }
   object GetPolyfillStringOptions {
     
@@ -82,14 +82,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GetPolyfillsOptions extends StObject {
     
-    var excludes: js.UndefOr[js.Array[String]] = js.native
+    var excludes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var features: js.UndefOr[Features] = js.native
+    var features: js.UndefOr[Features] = js.undefined
     
-    var uaString: String = js.native
+    var uaString: String
   }
   object GetPolyfillsOptions {
     
@@ -138,12 +137,11 @@ object mod {
     def gated: typings.polyfillService.polyfillServiceStrings.gated = "gated".asInstanceOf[typings.polyfillService.polyfillServiceStrings.gated]
   }
   
-  @js.native
   trait PolyfillSpec extends StObject {
     
-    var aliasOf: js.UndefOr[Set[String]] = js.native
+    var aliasOf: js.UndefOr[Set[String]] = js.undefined
     
-    var flags: Set[PolyfillFlag] = js.native
+    var flags: Set[PolyfillFlag]
   }
   object PolyfillSpec {
     

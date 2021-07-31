@@ -2,26 +2,24 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBudgetRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The budget object that you want to create.
     */
-  var Budget: typings.awsSdk.budgetsMod.Budget = js.native
+  var Budget: typings.awsSdk.budgetsMod.Budget
   
   /**
     * A notification that you want to associate with a budget. A budget can have up to five notifications, and each notification can have one SNS subscriber and up to 10 email subscribers. If you include notifications and subscribers in your CreateBudget call, AWS creates the notifications and subscribers for you.
     */
-  var NotificationsWithSubscribers: js.UndefOr[NotificationWithSubscribersList] = js.native
+  var NotificationsWithSubscribers: js.UndefOr[NotificationWithSubscribersList] = js.undefined
 }
 object CreateBudgetRequest {
   

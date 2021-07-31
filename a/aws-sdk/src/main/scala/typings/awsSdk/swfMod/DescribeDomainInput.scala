@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainInput extends StObject {
   
   /**
     * The name of the domain to describe.
     */
-  var name: DomainName = js.native
+  var name: DomainName
 }
 object DescribeDomainInput {
   

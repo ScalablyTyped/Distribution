@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricFilterMatchRecord extends StObject {
   
   /**
     * The raw event data.
     */
-  var eventMessage: js.UndefOr[EventMessage] = js.native
+  var eventMessage: js.UndefOr[EventMessage] = js.undefined
   
   /**
     * The event number.
     */
-  var eventNumber: js.UndefOr[EventNumber] = js.native
+  var eventNumber: js.UndefOr[EventNumber] = js.undefined
   
   /**
     * The values extracted from the event data by the filter.
     */
-  var extractedValues: js.UndefOr[ExtractedValues] = js.native
+  var extractedValues: js.UndefOr[ExtractedValues] = js.undefined
 }
 object MetricFilterMatchRecord {
   

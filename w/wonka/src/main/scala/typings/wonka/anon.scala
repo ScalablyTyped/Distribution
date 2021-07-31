@@ -3,21 +3,19 @@ package typings.wonka
 import typings.wonka.wonkaNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var tag: `1` = js.native
+    var tag: `1`
   }
   object `0` {
     
     @scala.inline
-    def apply(tag: `1`): `0` = {
-      val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(tag = 1)
       __obj.asInstanceOf[`0`]
     }
     
@@ -29,16 +27,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var tag: typings.wonka.wonkaNumbers.`0` = js.native
+    var tag: typings.wonka.wonkaNumbers.`0`
   }
   object Tag {
     
     @scala.inline
-    def apply(tag: typings.wonka.wonkaNumbers.`0`): Tag = {
-      val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
+    def apply(): Tag = {
+      val __obj = js.Dynamic.literal(tag = 0)
       __obj.asInstanceOf[Tag]
     }
     

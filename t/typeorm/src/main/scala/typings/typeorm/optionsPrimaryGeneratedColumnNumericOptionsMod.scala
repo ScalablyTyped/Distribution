@@ -3,39 +3,37 @@ package typings.typeorm
 import typings.typeorm.typesColumnTypesMod.PrimaryGeneratedColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsPrimaryGeneratedColumnNumericOptionsMod {
   
-  @js.native
   trait PrimaryGeneratedColumnNumericOptions extends StObject {
     
     /**
       * Column comment. Not supported by all database types.
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Column name in the database.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Column type. Must be one of the value from the ColumnTypes class.
       */
-    var `type`: js.UndefOr[PrimaryGeneratedColumnType] = js.native
+    var `type`: js.UndefOr[PrimaryGeneratedColumnType] = js.undefined
     
     /**
       * Puts UNSIGNED attribute on to numeric column. Works only for MySQL.
       */
-    var unsigned: js.UndefOr[Boolean] = js.native
+    var unsigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Puts ZEROFILL attribute on to numeric column. Works only for MySQL.
       * If you specify ZEROFILL for a numeric column, MySQL automatically adds the UNSIGNED attribute to the column
       */
-    var zerofill: js.UndefOr[Boolean] = js.native
+    var zerofill: js.UndefOr[Boolean] = js.undefined
   }
   object PrimaryGeneratedColumnNumericOptions {
     

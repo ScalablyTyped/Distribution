@@ -3,13 +3,12 @@ package typings.node.http2Mod
 import typings.node.tlsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecureClientSessionOptions
-  extends ConnectionOptions
+  extends StObject
      with ClientSessionOptions
+     with ConnectionOptions
 object SecureClientSessionOptions {
   
   @scala.inline

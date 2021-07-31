@@ -3,21 +3,19 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxForm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorOptions extends StObject {
   
-  var component: js.UndefOr[dxForm] = js.native
+  var component: js.UndefOr[dxForm] = js.undefined
   
-  var dataField: js.UndefOr[String] = js.native
+  var dataField: js.UndefOr[String] = js.undefined
   
-  var editorOptions: js.UndefOr[js.Any] = js.native
+  var editorOptions: js.UndefOr[js.Any] = js.undefined
   
-  var editorType: js.UndefOr[String] = js.native
+  var editorType: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object EditorOptions {
   

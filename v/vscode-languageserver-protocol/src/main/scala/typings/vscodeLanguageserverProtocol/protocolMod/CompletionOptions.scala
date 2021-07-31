@@ -2,11 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompletionOptions extends WorkDoneProgressOptions {
+trait CompletionOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * The list of all possible characters that commit a completion. This field can be used
@@ -18,13 +18,13 @@ trait CompletionOptions extends WorkDoneProgressOptions {
     *
     * @since 3.2.0
     */
-  var allCommitCharacters: js.UndefOr[js.Array[String]] = js.native
+  var allCommitCharacters: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The server provides support to resolve additional
     * information for a completion item.
     */
-  var resolveProvider: js.UndefOr[Boolean] = js.native
+  var resolveProvider: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Most tools trigger completion request automatically without explicitly requesting
@@ -36,7 +36,7 @@ trait CompletionOptions extends WorkDoneProgressOptions {
     * If code complete should automatically be trigger on characters not being valid inside
     * an identifier (for example `.` in JavaScript) list them in `triggerCharacters`.
     */
-  var triggerCharacters: js.UndefOr[js.Array[String]] = js.native
+  var triggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CompletionOptions {
   

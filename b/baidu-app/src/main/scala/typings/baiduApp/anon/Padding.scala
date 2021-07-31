@@ -2,16 +2,14 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
   // 要显示在可视区域内的坐标点列表，[{latitude, longitude}] 。
-  var padding: js.UndefOr[js.Array[Double]] = js.native
+  var padding: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var points: js.Array[Longitude] = js.native
+  var points: js.Array[Longitude]
 }
 object Padding {
   

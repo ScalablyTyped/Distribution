@@ -3,10 +3,13 @@ package typings.ionicCliFramework
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringMod {
+  
+  @JSImport("@ionic/cli-framework/utils/string", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/utils/string", "EMAIL_REGEX")
   @js.native
@@ -16,55 +19,41 @@ object stringMod {
   @js.native
   val URL_REGEX: RegExp = js.native
   
-  @JSImport("@ionic/cli-framework/utils/string", "enforceLF")
-  @js.native
-  def enforceLF(str: String): String = js.native
+  @scala.inline
+  def enforceLF(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLF")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/string", "isValidEmail")
-  @js.native
-  def isValidEmail(): Boolean = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "isValidEmail")
-  @js.native
-  def isValidEmail(email: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidEmail(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")().asInstanceOf[Boolean]
+  @scala.inline
+  def isValidEmail(email: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/cli-framework/utils/string", "isValidURL")
-  @js.native
-  def isValidURL(): Boolean = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "isValidURL")
-  @js.native
-  def isValidURL(url: js.Any): Boolean = js.native
+  @scala.inline
+  def isValidURL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")().asInstanceOf[Boolean]
+  @scala.inline
+  def isValidURL(url: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/cli-framework/utils/string", "slugify")
-  @js.native
-  def slugify(input: String): String = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "slugify")
-  @js.native
-  def slugify(input: String, hasSeparator: SlugifyOptions): String = js.native
+  @scala.inline
+  def slugify(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def slugify(input: String, hasSeparator: SlugifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("slugify")(input.asInstanceOf[js.Any], hasSeparator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/utils/string", "str2num")
-  @js.native
-  def str2num(value: js.Any): Double = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "str2num")
-  @js.native
-  def str2num(value: js.Any, defaultValue: Double): Double = js.native
+  @scala.inline
+  def str2num(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def str2num(value: js.Any, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2num")(value.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@ionic/cli-framework/utils/string", "strcmp")
-  @js.native
-  def strcmp(): Double = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "strcmp")
-  @js.native
-  def strcmp(a: js.UndefOr[scala.Nothing], b: String): Double = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "strcmp")
-  @js.native
-  def strcmp(a: String): Double = js.native
-  @JSImport("@ionic/cli-framework/utils/string", "strcmp")
-  @js.native
-  def strcmp(a: String, b: String): Double = js.native
+  @scala.inline
+  def strcmp(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")().asInstanceOf[Double]
+  @scala.inline
+  def strcmp(a: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def strcmp(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def strcmp(a: Unit, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait SlugifyOptions extends StObject {
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object SlugifyOptions {
     

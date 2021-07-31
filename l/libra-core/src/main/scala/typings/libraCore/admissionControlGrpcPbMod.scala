@@ -14,9 +14,9 @@ import typings.libraCore.admissionControlPbMod.SubmitTransactionResponse
 import typings.libraCore.anon.PartialCallOptions
 import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerRequest
 import typings.libraCore.getWithProofPbMod.UpdateToLatestLedgerResponse
+import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object admissionControlGrpcPbMod {
@@ -70,31 +70,54 @@ object admissionControlGrpcPbMod {
     ): ClientUnaryCall = js.native
   }
   
-  @js.native
   trait IAdmissionControlServer extends StObject {
     
     def submitTransaction(
       call: ServerUnaryCall[SubmitTransactionRequest],
       callback: sendUnaryData[SubmitTransactionResponse]
-    ): Unit = js.native
+    ): Unit
     @JSName("submitTransaction")
-    var submitTransaction_Original: handleUnaryCall[SubmitTransactionRequest, SubmitTransactionResponse] = js.native
+    var submitTransaction_Original: handleUnaryCall[SubmitTransactionRequest, SubmitTransactionResponse]
     
     def updateToLatestLedger(
       call: ServerUnaryCall[UpdateToLatestLedgerRequest],
       callback: sendUnaryData[UpdateToLatestLedgerResponse]
-    ): Unit = js.native
+    ): Unit
     @JSName("updateToLatestLedger")
-    var updateToLatestLedger_Original: handleUnaryCall[UpdateToLatestLedgerRequest, UpdateToLatestLedgerResponse] = js.native
+    var updateToLatestLedger_Original: handleUnaryCall[UpdateToLatestLedgerRequest, UpdateToLatestLedgerResponse]
+  }
+  object IAdmissionControlServer {
+    
+    @scala.inline
+    def apply(
+      submitTransaction: (/* call */ ServerUnaryCall[SubmitTransactionRequest], /* callback */ sendUnaryData[SubmitTransactionResponse]) => Unit,
+      updateToLatestLedger: (/* call */ ServerUnaryCall[UpdateToLatestLedgerRequest], /* callback */ sendUnaryData[UpdateToLatestLedgerResponse]) => Unit
+    ): IAdmissionControlServer = {
+      val __obj = js.Dynamic.literal(submitTransaction = js.Any.fromFunction2(submitTransaction), updateToLatestLedger = js.Any.fromFunction2(updateToLatestLedger))
+      __obj.asInstanceOf[IAdmissionControlServer]
+    }
+    
+    @scala.inline
+    implicit class IAdmissionControlServerMutableBuilder[Self <: IAdmissionControlServer] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSubmitTransaction(
+        value: (/* call */ ServerUnaryCall[SubmitTransactionRequest], /* callback */ sendUnaryData[SubmitTransactionResponse]) => Unit
+      ): Self = StObject.set(x, "submitTransaction", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setUpdateToLatestLedger(
+        value: (/* call */ ServerUnaryCall[UpdateToLatestLedgerRequest], /* callback */ sendUnaryData[UpdateToLatestLedgerResponse]) => Unit
+      ): Self = StObject.set(x, "updateToLatestLedger", js.Any.fromFunction2(value))
+    }
   }
   
   /* Inlined parent grpc.grpc.ServiceDefinition<grpc.grpc.UntypedServiceImplementation> */
-  @js.native
   trait IAdmissionControlService extends StObject {
     
-    var submitTransaction: IAdmissionControlServiceISubmitTransaction = js.native
+    var submitTransaction: IAdmissionControlServiceISubmitTransaction
     
-    var updateToLatestLedger: IAdmissionControlServiceIUpdateToLatestLedger = js.native
+    var updateToLatestLedger: IAdmissionControlServiceIUpdateToLatestLedger
   }
   object IAdmissionControlService {
     
@@ -118,9 +141,43 @@ object admissionControlGrpcPbMod {
     }
   }
   
-  @js.native
-  trait IAdmissionControlServiceISubmitTransaction extends MethodDefinition[SubmitTransactionRequest, SubmitTransactionResponse]
+  trait IAdmissionControlServiceISubmitTransaction
+    extends StObject
+       with MethodDefinition[SubmitTransactionRequest, SubmitTransactionResponse]
+  object IAdmissionControlServiceISubmitTransaction {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => SubmitTransactionRequest,
+      requestSerialize: SubmitTransactionRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => SubmitTransactionResponse,
+      responseSerialize: SubmitTransactionResponse => Buffer,
+      responseStream: Boolean
+    ): IAdmissionControlServiceISubmitTransaction = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IAdmissionControlServiceISubmitTransaction]
+    }
+  }
   
-  @js.native
-  trait IAdmissionControlServiceIUpdateToLatestLedger extends MethodDefinition[UpdateToLatestLedgerRequest, UpdateToLatestLedgerResponse]
+  trait IAdmissionControlServiceIUpdateToLatestLedger
+    extends StObject
+       with MethodDefinition[UpdateToLatestLedgerRequest, UpdateToLatestLedgerResponse]
+  object IAdmissionControlServiceIUpdateToLatestLedger {
+    
+    @scala.inline
+    def apply(
+      path: String,
+      requestDeserialize: /* data */ Buffer => UpdateToLatestLedgerRequest,
+      requestSerialize: UpdateToLatestLedgerRequest => Buffer,
+      requestStream: Boolean,
+      responseDeserialize: /* data */ Buffer => UpdateToLatestLedgerResponse,
+      responseSerialize: UpdateToLatestLedgerResponse => Buffer,
+      responseStream: Boolean
+    ): IAdmissionControlServiceIUpdateToLatestLedger = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], requestDeserialize = js.Any.fromFunction1(requestDeserialize), requestSerialize = js.Any.fromFunction1(requestSerialize), requestStream = requestStream.asInstanceOf[js.Any], responseDeserialize = js.Any.fromFunction1(responseDeserialize), responseSerialize = js.Any.fromFunction1(responseSerialize), responseStream = responseStream.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IAdmissionControlServiceIUpdateToLatestLedger]
+    }
+  }
 }

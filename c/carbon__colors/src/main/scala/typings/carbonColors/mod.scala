@@ -7,7 +7,6 @@ import typings.carbonColors.anon.`20`
 import typings.carbonColors.anon.`40`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -785,9 +784,12 @@ object mod {
   
   object rgba {
     
+    @scala.inline
+    def apply(hexcode: String, opacity: Double): String = (^.asInstanceOf[js.Dynamic].apply(hexcode.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("@carbon/colors", "rgba")
     @js.native
-    def apply(hexcode: String, opacity: Double): String = js.native
+    val ^ : js.Any = js.native
   }
   
   object teal {

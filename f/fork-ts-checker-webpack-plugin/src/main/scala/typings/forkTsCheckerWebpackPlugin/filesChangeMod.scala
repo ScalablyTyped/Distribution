@@ -2,10 +2,13 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filesChangeMod {
+  
+  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/FilesChange", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Computes aggregated files change based on the subsequent files changes.
@@ -13,16 +16,14 @@ object filesChangeMod {
     * @param changes List of subsequent files changes
     * @returns Files change that represents all subsequent changes as a one event
     */
-  @JSImport("fork-ts-checker-webpack-plugin/lib/reporter/FilesChange", "aggregateFilesChanges")
-  @js.native
-  def aggregateFilesChanges(changes: js.Array[FilesChange]): FilesChange = js.native
+  @scala.inline
+  def aggregateFilesChanges(changes: js.Array[FilesChange]): FilesChange = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregateFilesChanges")(changes.asInstanceOf[js.Any]).asInstanceOf[FilesChange]
   
-  @js.native
   trait FilesChange extends StObject {
     
-    var changedFiles: js.UndefOr[js.Array[String]] = js.native
+    var changedFiles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var deletedFiles: js.UndefOr[js.Array[String]] = js.native
+    var deletedFiles: js.UndefOr[js.Array[String]] = js.undefined
   }
   object FilesChange {
     

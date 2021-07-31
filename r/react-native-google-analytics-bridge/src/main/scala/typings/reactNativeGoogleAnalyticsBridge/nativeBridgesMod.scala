@@ -5,7 +5,6 @@ import typings.reactNativeGoogleAnalyticsBridge.analyticsMod.HitPayload
 import typings.reactNativeGoogleAnalyticsBridge.dataLayerEventMod.DataLayerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeBridgesMod {
@@ -22,30 +21,29 @@ object nativeBridgesMod {
   @js.native
   val TagManagerBridge: IGoogleTagManagerBridge = js.native
   
-  @js.native
   trait IGoogleAnalyticsBridge extends StObject {
     
-    def allowIDFA(trackerId: String, enabled: Boolean): Unit = js.native
+    def allowIDFA(trackerId: String, enabled: Boolean): Unit
     
-    def dispatch(): js.Promise[Boolean] = js.native
+    def dispatch(): js.Promise[Boolean]
     
-    def getClientId(trackerId: String): js.Promise[String] = js.native
+    def getClientId(trackerId: String): js.Promise[String]
     
-    def setAnonymizeIp(trackerId: String, enabled: Boolean): Unit = js.native
+    def setAnonymizeIp(trackerId: String, enabled: Boolean): Unit
     
-    def setAppName(trackerId: String, appName: String): Unit = js.native
+    def setAppName(trackerId: String, appName: String): Unit
     
-    def setAppVersion(trackerId: String, appVersion: String): Unit = js.native
+    def setAppVersion(trackerId: String, appVersion: String): Unit
     
-    def setClient(trackerId: String, clientId: String): Unit = js.native
+    def setClient(trackerId: String, clientId: String): Unit
     
-    def setCurrency(trackerId: String, currencyCode: String): Unit = js.native
+    def setCurrency(trackerId: String, currencyCode: String): Unit
     
-    def setSamplingRate(trackerId: String, sampleRate: Double): Unit = js.native
+    def setSamplingRate(trackerId: String, sampleRate: Double): Unit
     
-    def setTrackUncaughtExceptions(trackerId: String, enabled: Boolean): Unit = js.native
+    def setTrackUncaughtExceptions(trackerId: String, enabled: Boolean): Unit
     
-    def setUser(trackerId: String, userId: String): Unit = js.native
+    def setUser(trackerId: String, userId: String): Unit
     
     def trackEvent(
       trackerId: String,
@@ -54,13 +52,13 @@ object nativeBridgesMod {
       label: String,
       value: String,
       payload: HitPayload
-    ): Unit = js.native
+    ): Unit
     
-    def trackException(trackerId: String, error: String, fatal: Boolean, payload: HitPayload): Unit = js.native
+    def trackException(trackerId: String, error: String, fatal: Boolean, payload: HitPayload): Unit
     
-    def trackScreenView(trackerId: String, screenName: String, payload: HitPayload): Unit = js.native
+    def trackScreenView(trackerId: String, screenName: String, payload: HitPayload): Unit
     
-    def trackSocialInteraction(trackerId: String, network: String, action: String, targetUrl: String, payload: HitPayload): Unit = js.native
+    def trackSocialInteraction(trackerId: String, network: String, action: String, targetUrl: String, payload: HitPayload): Unit
     
     def trackTiming(
       trackerId: String,
@@ -69,7 +67,7 @@ object nativeBridgesMod {
       name: String,
       label: String,
       payload: HitPayload
-    ): Unit = js.native
+    ): Unit
   }
   object IGoogleAnalyticsBridge {
     
@@ -149,14 +147,13 @@ object nativeBridgesMod {
     }
   }
   
-  @js.native
   trait IGoogleAnalyticsSettings extends StObject {
     
-    def setDispatchInterval(intervalInSeconds: js.Any): Unit = js.native
+    def setDispatchInterval(intervalInSeconds: js.Any): Unit
     
-    def setDryRun(enabled: js.Any): Unit = js.native
+    def setDryRun(enabled: js.Any): Unit
     
-    def setOptOut(enabled: js.Any): Unit = js.native
+    def setOptOut(enabled: js.Any): Unit
   }
   object IGoogleAnalyticsSettings {
     
@@ -181,7 +178,9 @@ object nativeBridgesMod {
   }
   
   @js.native
-  trait IGoogleTagManagerBridge extends EventSubscriptionVendor {
+  trait IGoogleTagManagerBridge
+    extends StObject
+       with EventSubscriptionVendor {
     
     def booleanForKey(key: String): js.Promise[Boolean] = js.native
     

@@ -2,18 +2,18 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncValidationOptions extends ValidationOptions {
+trait AsyncValidationOptions
+  extends StObject
+     with ValidationOptions {
   
   /**
     * when true, warnings are returned alongside the value (i.e. `{ value, warning }`).
     *
     * @default false
     */
-  var warnings: js.UndefOr[Boolean] = js.native
+  var warnings: js.UndefOr[Boolean] = js.undefined
 }
 object AsyncValidationOptions {
   

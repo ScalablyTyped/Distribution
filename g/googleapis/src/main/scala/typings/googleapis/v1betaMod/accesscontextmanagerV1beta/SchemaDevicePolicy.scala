@@ -2,7 +2,6 @@ package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,40 +15,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be true for requests originating from encrypted Linux desktops and
   * encrypted Windows desktops.
   */
-@js.native
 trait SchemaDevicePolicy extends StObject {
   
   /**
     * Allowed device management levels, an empty list allows all management
     * levels.
     */
-  var allowedDeviceManagementLevels: js.UndefOr[js.Array[String]] = js.native
+  var allowedDeviceManagementLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allowed encryptions statuses, an empty list allows all statuses.
     */
-  var allowedEncryptionStatuses: js.UndefOr[js.Array[String]] = js.native
+  var allowedEncryptionStatuses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allowed OS versions, an empty list allows all types and all versions.
     */
-  var osConstraints: js.UndefOr[js.Array[SchemaOsConstraint]] = js.native
+  var osConstraints: js.UndefOr[js.Array[SchemaOsConstraint]] = js.undefined
   
   /**
     * Whether the device needs to be approved by the customer admin.
     */
-  var requireAdminApproval: js.UndefOr[Boolean] = js.native
+  var requireAdminApproval: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the device needs to be corp owned.
     */
-  var requireCorpOwned: js.UndefOr[Boolean] = js.native
+  var requireCorpOwned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not screenlock is required for the DevicePolicy to be true.
     * Defaults to `false`.
     */
-  var requireScreenlock: js.UndefOr[Boolean] = js.native
+  var requireScreenlock: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDevicePolicy {
   

@@ -7,7 +7,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
@@ -22,7 +21,7 @@ object pathMod {
     def data(): String = js.native
     def data(v: String): this.type = js.native
     
-    var dataArray: js.Array[_] = js.native
+    var dataArray: js.Array[js.Any] = js.native
     
     @JSName("data")
     var data_Original: GetSet[String, this.type] = js.native
@@ -36,12 +35,14 @@ object pathMod {
   /* static members */
   object Path {
     
-    @JSImport("konva/types/shapes/Path", "Path.calcLength")
+    @JSImport("konva/types/shapes/Path", "Path")
     @js.native
-    def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("konva/types/shapes/Path", "Path.convertEndpointToCenterParameterization")
-    @js.native
+    @scala.inline
+    def calcLength(x: js.Any, y: js.Any, cmd: js.Any, points: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("calcLength")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], cmd.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
     def convertEndpointToCenterParameterization(
       x1: js.Any,
       y1: js.Any,
@@ -52,14 +53,12 @@ object pathMod {
       rx: js.Any,
       ry: js.Any,
       psiDeg: js.Any
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertEndpointToCenterParameterization")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], fa.asInstanceOf[js.Any], fs.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], psiDeg.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @JSImport("konva/types/shapes/Path", "Path.getLineLength")
-    @js.native
-    def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = js.native
+    @scala.inline
+    def getLineLength(x1: js.Any, y1: js.Any, x2: js.Any, y2: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineLength")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnCubicBezier")
-    @js.native
+    @scala.inline
     def getPointOnCubicBezier(
       pct: js.Any,
       P1x: js.Any,
@@ -70,46 +69,32 @@ object pathMod {
       P3y: js.Any,
       P4x: js.Any,
       P4y: js.Any
-    ): X = js.native
+    ): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnCubicBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any], P4x.asInstanceOf[js.Any], P4y.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnEllipticalArc")
-    @js.native
-    def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = js.native
+    @scala.inline
+    def getPointOnEllipticalArc(cx: js.Any, cy: js.Any, rx: js.Any, ry: js.Any, theta: js.Any, psi: js.Any): XY = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnEllipticalArc")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], rx.asInstanceOf[js.Any], ry.asInstanceOf[js.Any], theta.asInstanceOf[js.Any], psi.asInstanceOf[js.Any])).asInstanceOf[XY]
     
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = js.native
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(
-      dist: js.Any,
-      P1x: js.Any,
-      P1y: js.Any,
-      P2x: js.Any,
-      P2y: js.Any,
-      fromX: js.UndefOr[scala.Nothing],
-      fromY: js.Any
-    ): js.Any = js.native
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = js.native
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnLine")
-    @js.native
-    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = js.native
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: js.Any, fromY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any], fromY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getPointOnLine(dist: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, fromX: Unit, fromY: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnLine")(dist.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], fromX.asInstanceOf[js.Any], fromY.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("konva/types/shapes/Path", "Path.getPointOnQuadraticBezier")
-    @js.native
-    def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = js.native
+    @scala.inline
+    def getPointOnQuadraticBezier(pct: js.Any, P1x: js.Any, P1y: js.Any, P2x: js.Any, P2y: js.Any, P3x: js.Any, P3y: js.Any): X = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointOnQuadraticBezier")(pct.asInstanceOf[js.Any], P1x.asInstanceOf[js.Any], P1y.asInstanceOf[js.Any], P2x.asInstanceOf[js.Any], P2y.asInstanceOf[js.Any], P3x.asInstanceOf[js.Any], P3y.asInstanceOf[js.Any])).asInstanceOf[X]
     
-    @JSImport("konva/types/shapes/Path", "Path.parsePathData")
-    @js.native
-    def parsePathData(data: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def parsePathData(data: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePathData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   }
   
-  @js.native
-  trait PathConfig extends ShapeConfig {
+  trait PathConfig
+    extends StObject
+       with ShapeConfig {
     
-    var data: String = js.native
+    var data: String
   }
   object PathConfig {
     

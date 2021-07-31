@@ -3,29 +3,28 @@ package typings.iobroker.objectsMod.global.ioBroker
 import typings.iobroker.iobrokerStrings.host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_HostObject: HostCommon = js.native
+  var common_HostObject: HostCommon
   
   @JSName("native")
-  var native_HostObject: HostNative = js.native
+  var native_HostObject: HostNative
   
   @JSName("type")
-  var type_HostObject: host = js.native
+  var type_HostObject: host
 }
 object HostObject {
   
   @scala.inline
-  def apply(_id: String, common: HostCommon, native: HostNative, `type`: host): HostObject = {
+  def apply(_id: String, common: HostCommon, native: HostNative): HostObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("host")
     __obj.asInstanceOf[HostObject]
   }
   

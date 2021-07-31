@@ -3,28 +3,29 @@ package typings.word
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fibMod {
   
+  @JSImport("word/dist/typings/codecs/DOC/fib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * [MS-DOC] 2.5.1 Fib
     */
-  @JSImport("word/dist/typings/codecs/DOC/fib", "readFib")
-  @js.native
-  def readFib(buffer: Buffer): Fib = js.native
+  @scala.inline
+  def readFib(buffer: Buffer): Fib = ^.asInstanceOf[js.Dynamic].applyDynamic("readFib")(buffer.asInstanceOf[js.Any]).asInstanceOf[Fib]
   
-  @js.native
   trait Fib extends StObject {
     
-    var base: FibBase = js.native
+    var base: FibBase
     
-    var fibRgCswNew: js.UndefOr[FibRgCswNew] = js.native
+    var fibRgCswNew: js.UndefOr[FibRgCswNew] = js.undefined
     
-    var fibRgFcLcbBlob: FibRgFcLcb = js.native
+    var fibRgFcLcbBlob: FibRgFcLcb
     
-    var fibRgLw: FibRgLw97 = js.native
+    var fibRgLw: FibRgLw97
   }
   object Fib {
     
@@ -57,7 +58,6 @@ object fibMod {
   /**
     * [MS-DOC] 2.5.2 FibBase
     */
-  @js.native
   trait FibBase extends StObject {
     
     /**
@@ -65,7 +65,7 @@ object fibMod {
       * refers. When this value is set to 1, use 1Table; when this value is set to
       * 0, use 0Table.
       */
-    var fWhichTblStm: Double = js.native
+    var fWhichTblStm: Double
     
     /**
       * nFib (2 bytes): An unsigned integer that specifies the version number of
@@ -73,7 +73,7 @@ object fibMod {
       * This value SHOULD be 0x00C1. Could possibly be 0x00C0 or 0x00C2 but should
       * be treated as if it were 0x00C1.
       */
-    var nFib: Double = js.native
+    var nFib: Double
   }
   object FibBase {
     
@@ -97,7 +97,6 @@ object fibMod {
   /**
     * [MS-DOC] 2.5.11 FibRgCswNew
     */
-  @js.native
   trait FibRgCswNew extends StObject {
     
     /**
@@ -105,7 +104,7 @@ object fibMod {
       * of the file format that is used. This value MUST be one of the following.
       * 0x00D9, 0x0101, 0x010C, 0x0112.
       */
-    var nFibNew: Double = js.native
+    var nFibNew: Double
   }
   object FibRgCswNew {
     
@@ -126,35 +125,34 @@ object fibMod {
   /**
     * [MS-DOC] 2.5.6 FibRgFcLcb97
     */
-  @js.native
   trait FibRgFcLcb extends StObject {
     
     /**
       * fcClx (4 bytes):  An unsigned integer that specifies an offset in the
       * Table Stream. A Clx begins at this offset.
       */
-    var fcClx: Double = js.native
+    var fcClx: Double
     
     /**
       * fcPlcfBtePapx (4 bytes): An unsigned integer that specifies an offset in
       * the Table Stream. A PlcBtePapx begins at the offset. fcPlcfBtePapx MUST be
       * greater than zero, and MUST be a valid offset in the Table Stream.
       */
-    var fcPlcfBtePapx: Double = js.native
+    var fcPlcfBtePapx: Double
     
     /**
       * lcbClx (4 bytes):  An unsigned integer that specifies the size, in bytes,
       * of the Clx at offset fcClx in the Table Stream. This value MUST be greater
       * than zero.
       */
-    var lcbClx: Double = js.native
+    var lcbClx: Double
     
     /**
       * lcbPlcfBtePapx (4 bytes): An unsigned integer that specifies the size, in
       * bytes, of the PlcBtePapx at offset fcPlcfBtePapx in the Table Stream.
       * lcbPlcfBteChpx MUST be greater than zero.
       */
-    var lcbPlcfBtePapx: Double = js.native
+    var lcbPlcfBtePapx: Double
   }
   object FibRgFcLcb {
     
@@ -184,52 +182,51 @@ object fibMod {
   /**
     * [MS-DOC] 2.5.4 FibRgLw97
     */
-  @js.native
   trait FibRgLw97 extends StObject {
     
     /**
       * ccpAtn (4 bytes): A signed integer that specifies the count of CPs in the
       * comment subdocument. This value MUST be zero, 1, or greater.
       */
-    var ccpAtn: Double = js.native
+    var ccpAtn: Double
     
     /**
       * ccpEdn (4 bytes): A signed integer that specifies the count of CPs in the
       * endnote subdocument. This value MUST be zero, 1, or greater.
       */
-    var ccpEdn: Double = js.native
+    var ccpEdn: Double
     
     /**
       * ccpFtn (4 bytes): A signed integer that specifies the count of CPs in the
       * footnote subdocument. This value MUST be zero, 1, or greater.
       */
-    var ccpFtn: Double = js.native
+    var ccpFtn: Double
     
     /**
       * ccpHdd (4 bytes): A signed integer that specifies the count of CPs in the
       * header subdocument. This value MUST be zero, 1, or greater.
       */
-    var ccpHdd: Double = js.native
+    var ccpHdd: Double
     
     /**
       * ccpHdrTxbx (4 bytes): A signed integer that specifies the count of CPs in
       * the textbox subdocument of the header. This value MUST be zero, 1, or
       * greater.
       */
-    var ccpHdrTxbx: Double = js.native
+    var ccpHdrTxbx: Double
     
     /**
       * ccpText (4 bytes): A signed integer that specifies the count of CPs in the
       * main document. This value MUST be zero, 1, or greater.
       */
-    var ccpText: Double = js.native
+    var ccpText: Double
     
     /**
       * ccpTxbx (4 bytes): A signed integer that specifies the count of CPs in the
       * textbox subdocument of the main document. This value MUST be zero, 1, or
       * greater.
       */
-    var ccpTxbx: Double = js.native
+    var ccpTxbx: Double
   }
   object FibRgLw97 {
     

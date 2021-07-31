@@ -2,35 +2,33 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastCompanionAd extends StObject {
   
-  var altText: String | Null = js.native
+  var altText: String | Null
   
-  var companionClickThroughURLTemplate: String | Null = js.native
+  var companionClickThroughURLTemplate: String | Null
   
-  var companionClickTrackingURLTemplate: js.UndefOr[String | Null] = js.native
+  var companionClickTrackingURLTemplate: js.UndefOr[String | Null] = js.undefined
   
-  var companionClickTrackingURLTemplates: js.Array[String] = js.native
+  var companionClickTrackingURLTemplates: js.Array[String]
   
-  var height: String = js.native
+  var height: String
   
-  var htmlResource: String | Null = js.native
+  var htmlResource: String | Null
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var iframeResource: String | Null = js.native
+  var iframeResource: String | Null
   
-  var staticResource: String | Null = js.native
+  var staticResource: String | Null
   
-  var trackingEvents: VastCompanionTrackingEvents = js.native
+  var trackingEvents: VastCompanionTrackingEvents
   
-  var `type`: String | Null = js.native
+  var `type`: String | Null
   
-  var width: String = js.native
+  var width: String
 }
 object VastCompanionAd {
   
@@ -41,7 +39,8 @@ object VastCompanionAd {
     trackingEvents: VastCompanionTrackingEvents,
     width: String
   ): VastCompanionAd = {
-    val __obj = js.Dynamic.literal(companionClickTrackingURLTemplates = companionClickTrackingURLTemplates.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(companionClickTrackingURLTemplates = companionClickTrackingURLTemplates.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], trackingEvents = trackingEvents.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], altText = null, companionClickThroughURLTemplate = null, htmlResource = null, id = null, iframeResource = null, staticResource = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[VastCompanionAd]
   }
   

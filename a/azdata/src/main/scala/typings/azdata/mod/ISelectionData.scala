@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISelectionData extends StObject {
   
-  var endColumn: Double = js.native
+  var endColumn: Double
   
-  var endLine: Double = js.native
+  var endLine: Double
   
-  var startColumn: Double = js.native
+  var startColumn: Double
   
-  var startLine: Double = js.native
+  var startLine: Double
 }
 object ISelectionData {
   

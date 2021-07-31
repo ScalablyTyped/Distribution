@@ -7,12 +7,12 @@ import typings.figma.figmaStrings.SUBTRACT
 import typings.figma.figmaStrings.UNION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BooleanOperationNode
-  extends DefaultShapeMixin
+  extends StObject
+     with DefaultShapeMixin
      with ChildrenMixin
      with CornerMixin
      with SceneNode {

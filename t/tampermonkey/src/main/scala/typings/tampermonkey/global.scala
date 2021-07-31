@@ -15,7 +15,6 @@ import typings.tampermonkey.Tampermonkey.ValueChangeListener
 import typings.tampermonkey.anon.Mimetype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -24,9 +23,8 @@ object global {
   /**
     * Adds the given style to the document and returns the injected style element.
     */
-  @JSGlobal("GM_addStyle")
-  @js.native
-  def GMAddStyle(css: String): HTMLStyleElement = js.native
+  @scala.inline
+  def GMAddStyle(css: String): HTMLStyleElement = js.Dynamic.global.applyDynamic("GM_addStyle")(css.asInstanceOf[js.Any]).asInstanceOf[HTMLStyleElement]
   
   /**
     * Adds a change listener to the storage and returns the listener ID.
@@ -36,111 +34,84 @@ object global {
     * different browser tabs to communicate with each other.
     * @param name Name of the observed variable
     */
-  @JSGlobal("GM_addValueChangeListener")
-  @js.native
-  def GMAddValueChangeListener(name: String, listener: ValueChangeListener): Double = js.native
+  @scala.inline
+  def GMAddValueChangeListener(name: String, listener: ValueChangeListener): Double = (js.Dynamic.global.applyDynamic("GM_addValueChangeListener")(name.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** Deletes 'name' from storage */
-  @JSGlobal("GM_deleteValue")
-  @js.native
-  def GMDeleteValue(name: String): Unit = js.native
+  @scala.inline
+  def GMDeleteValue(name: String): Unit = js.Dynamic.global.applyDynamic("GM_deleteValue")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Downloads a given URL to the local disk */
-  @JSGlobal("GM_download")
-  @js.native
-  def GMDownload(details: DownloadRequest): AbortHandle[Boolean] = js.native
-  @JSGlobal("GM_download")
-  @js.native
-  def GMDownload(url: String, name: String): AbortHandle[Boolean] = js.native
+  @scala.inline
+  def GMDownload(details: DownloadRequest): AbortHandle[Boolean] = js.Dynamic.global.applyDynamic("GM_download")(details.asInstanceOf[js.Any]).asInstanceOf[AbortHandle[Boolean]]
+  @scala.inline
+  def GMDownload(url: String, name: String): AbortHandle[Boolean] = (js.Dynamic.global.applyDynamic("GM_download")(url.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[AbortHandle[Boolean]]
   
   // Resources
   /** Get the content of a predefined `@resource` tag at the script header */
-  @JSGlobal("GM_getResourceText")
-  @js.native
-  def GMGetResourceText(name: String): String = js.native
+  @scala.inline
+  def GMGetResourceText(name: String): String = js.Dynamic.global.applyDynamic("GM_getResourceText")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Get the base64 encoded URI of a predefined `@resource` tag at the script
     * header
     */
-  @JSGlobal("GM_getResourceURL")
-  @js.native
-  def GMGetResourceURL(name: String): String = js.native
+  @scala.inline
+  def GMGetResourceURL(name: String): String = js.Dynamic.global.applyDynamic("GM_getResourceURL")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Gets a object that is persistent as long as this tab is open */
-  @JSGlobal("GM_getTab")
-  @js.native
-  def GMGetTab(callback: js.Function1[/* obj */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def GMGetTab(callback: js.Function1[/* obj */ js.Any, Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTab")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Gets all tab objects as a hash to communicate with other script instances */
-  @JSGlobal("GM_getTabs")
-  @js.native
-  def GMGetTabs(callback: js.Function1[/* tabsMap */ NumberDictionary[js.Any], Unit]): Unit = js.native
+  @scala.inline
+  def GMGetTabs(callback: js.Function1[/* tabsMap */ NumberDictionary[js.Any], Unit]): Unit = js.Dynamic.global.applyDynamic("GM_getTabs")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Gets the value of 'name' from storage */
-  @JSGlobal("GM_getValue")
-  @js.native
-  def GMGetValue[TValue](name: String): TValue = js.native
-  @JSGlobal("GM_getValue")
-  @js.native
-  def GMGetValue[TValue](name: String, defaultValue: TValue): TValue = js.native
+  @scala.inline
+  def GMGetValue[TValue](name: String): TValue = js.Dynamic.global.applyDynamic("GM_getValue")(name.asInstanceOf[js.Any]).asInstanceOf[TValue]
+  @scala.inline
+  def GMGetValue[TValue](name: String, defaultValue: TValue): TValue = (js.Dynamic.global.applyDynamic("GM_getValue")(name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[TValue]
   
   /** Lists all names of the storage */
-  @JSGlobal("GM_listValues")
-  @js.native
-  def GMListValues(): js.Array[String] = js.native
+  @scala.inline
+  def GMListValues(): js.Array[String] = js.Dynamic.global.applyDynamic("GM_listValues")().asInstanceOf[js.Array[String]]
   
   // Utils
   /** Log a message to the console */
-  @JSGlobal("GM_log")
-  @js.native
-  def GMLog(message: js.Any*): Unit = js.native
+  @scala.inline
+  def GMLog(message: js.Any*): Unit = js.Dynamic.global.applyDynamic("GM_log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows a HTML5 Desktop notification and/or highlight the current tab.
     * @param ondone If specified used instead of `details.ondone`
     */
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(details: NotificationDetails): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(details: NotificationDetails, ondone: NotificationOnDone): Unit = js.native
+  @scala.inline
+  def GMNotification(details: NotificationDetails): Unit = js.Dynamic.global.applyDynamic("GM_notification")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(details: NotificationDetails, ondone: NotificationOnDone): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(details.asInstanceOf[js.Any], ondone.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Shows a HTML5 Desktop notification and/or highlight the current tab.
     * @param text Text of the notification
     * @param title Notification title. If not specified the script name is used
     * @param onclick Called in case the user clicks the notification
     */
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(
-    text: String,
-    title: js.UndefOr[scala.Nothing],
-    image: js.UndefOr[scala.Nothing],
-    onclick: NotificationOnClick
-  ): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: js.UndefOr[scala.Nothing], image: String): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: js.UndefOr[scala.Nothing], image: String, onclick: NotificationOnClick): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: String): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: String, image: js.UndefOr[scala.Nothing], onclick: NotificationOnClick): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: String, image: String): Unit = js.native
-  @JSGlobal("GM_notification")
-  @js.native
-  def GMNotification(text: String, title: String, image: String, onclick: NotificationOnClick): Unit = js.native
+  @scala.inline
+  def GMNotification(text: String): Unit = js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: String): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: String, image: String): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: String, image: String, onclick: NotificationOnClick): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: String, image: Unit, onclick: NotificationOnClick): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: Unit, image: String): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: Unit, image: String, onclick: NotificationOnClick): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMNotification(text: String, title: Unit, image: Unit, onclick: NotificationOnClick): Unit = (js.Dynamic.global.applyDynamic("GM_notification")(text.asInstanceOf[js.Any], title.asInstanceOf[js.Any], image.asInstanceOf[js.Any], onclick.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Opens a new tab with this url.
@@ -158,38 +129,31 @@ object global {
     * @returns Object with the function `close`, the listener `onclosed` and a flag
     * called `closed`.
     */
-  @JSGlobal("GM_openInTab")
-  @js.native
-  def GMOpenInTab(url: String): OpenTabObject = js.native
-  @JSGlobal("GM_openInTab")
-  @js.native
-  def GMOpenInTab(url: String, options: Boolean): OpenTabObject = js.native
-  @JSGlobal("GM_openInTab")
-  @js.native
-  def GMOpenInTab(url: String, options: OpenTabOptions): OpenTabObject = js.native
+  @scala.inline
+  def GMOpenInTab(url: String): OpenTabObject = js.Dynamic.global.applyDynamic("GM_openInTab")(url.asInstanceOf[js.Any]).asInstanceOf[OpenTabObject]
+  @scala.inline
+  def GMOpenInTab(url: String, options: Boolean): OpenTabObject = (js.Dynamic.global.applyDynamic("GM_openInTab")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OpenTabObject]
+  @scala.inline
+  def GMOpenInTab(url: String, options: OpenTabOptions): OpenTabObject = (js.Dynamic.global.applyDynamic("GM_openInTab")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[OpenTabObject]
   
   // Menu commands
   /**
     * Register a menu to be displayed at the Tampermonkey menu at pages where this
     * script runs and returns a menu command ID.
     */
-  @JSGlobal("GM_registerMenuCommand")
-  @js.native
-  def GMRegisterMenuCommand(name: String, onClick: js.Function0[Unit]): Double = js.native
-  @JSGlobal("GM_registerMenuCommand")
-  @js.native
-  def GMRegisterMenuCommand(name: String, onClick: js.Function0[Unit], accessKey: String): Double = js.native
+  @scala.inline
+  def GMRegisterMenuCommand(name: String, onClick: js.Function0[Unit]): Double = (js.Dynamic.global.applyDynamic("GM_registerMenuCommand")(name.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def GMRegisterMenuCommand(name: String, onClick: js.Function0[Unit], accessKey: String): Double = (js.Dynamic.global.applyDynamic("GM_registerMenuCommand")(name.asInstanceOf[js.Any], onClick.asInstanceOf[js.Any], accessKey.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /** Removes a change listener by its ID */
-  @JSGlobal("GM_removeValueChangeListener")
-  @js.native
-  def GMRemoveValueChangeListener(listenerId: Double): Unit = js.native
+  @scala.inline
+  def GMRemoveValueChangeListener(listenerId: Double): Unit = js.Dynamic.global.applyDynamic("GM_removeValueChangeListener")(listenerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Tabs
   /** Saves the tab object to reopen it after a page unload */
-  @JSGlobal("GM_saveTab")
-  @js.native
-  def GMSaveTab(obj: js.Object): Unit = js.native
+  @scala.inline
+  def GMSaveTab(obj: js.Object): Unit = js.Dynamic.global.applyDynamic("GM_saveTab")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Copies data into the clipboard.
@@ -197,35 +161,29 @@ object global {
     * `{ type: 'text', mimetype: 'text/plain'}` or just a string expressing the
     * type ("text" or "html").
     */
-  @JSGlobal("GM_setClipboard")
-  @js.native
-  def GMSetClipboard(data: String): Unit = js.native
-  @JSGlobal("GM_setClipboard")
-  @js.native
-  def GMSetClipboard(data: String, info: String): Unit = js.native
-  @JSGlobal("GM_setClipboard")
-  @js.native
-  def GMSetClipboard(data: String, info: Mimetype): Unit = js.native
+  @scala.inline
+  def GMSetClipboard(data: String): Unit = js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def GMSetClipboard(data: String, info: String): Unit = (js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def GMSetClipboard(data: String, info: Mimetype): Unit = (js.Dynamic.global.applyDynamic("GM_setClipboard")(data.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Storage
   /** Sets the value of `name` to the storage */
-  @JSGlobal("GM_setValue")
-  @js.native
-  def GMSetValue(name: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def GMSetValue(name: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("GM_setValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Unregister a menu command that was previously registered by
     * `GM_registerMenuCommand` with the given menu command ID.
     */
-  @JSGlobal("GM_unregisterMenuCommand")
-  @js.native
-  def GMUnregisterMenuCommand(menuCommandId: Double): Unit = js.native
+  @scala.inline
+  def GMUnregisterMenuCommand(menuCommandId: Double): Unit = js.Dynamic.global.applyDynamic("GM_unregisterMenuCommand")(menuCommandId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Requests
   /** Makes an xmlHttpRequest */
-  @JSGlobal("GM_xmlhttpRequest")
-  @js.native
-  def GMXmlhttpRequest[TContext](details: Request[TContext]): AbortHandle[Unit] = js.native
+  @scala.inline
+  def GMXmlhttpRequest[TContext](details: Request[TContext]): AbortHandle[Unit] = js.Dynamic.global.applyDynamic("GM_xmlhttpRequest")(details.asInstanceOf[js.Any]).asInstanceOf[AbortHandle[Unit]]
   
   object Tampermonkey {
     
@@ -235,17 +193,17 @@ object global {
     object ReadyState extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.tampermonkey.Tampermonkey.ReadyState with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.tampermonkey.Tampermonkey.ReadyState & Double] = js.native
       
-      /* 4 */ val Done: typings.tampermonkey.Tampermonkey.ReadyState.Done with Double = js.native
+      /* 4 */ val Done: typings.tampermonkey.Tampermonkey.ReadyState.Done & Double = js.native
       
-      /* 2 */ val HeadersReceived: typings.tampermonkey.Tampermonkey.ReadyState.HeadersReceived with Double = js.native
+      /* 2 */ val HeadersReceived: typings.tampermonkey.Tampermonkey.ReadyState.HeadersReceived & Double = js.native
       
-      /* 3 */ val Loading: typings.tampermonkey.Tampermonkey.ReadyState.Loading with Double = js.native
+      /* 3 */ val Loading: typings.tampermonkey.Tampermonkey.ReadyState.Loading & Double = js.native
       
-      /* 1 */ val Opened: typings.tampermonkey.Tampermonkey.ReadyState.Opened with Double = js.native
+      /* 1 */ val Opened: typings.tampermonkey.Tampermonkey.ReadyState.Opened & Double = js.native
       
-      /* 0 */ val Unsent: typings.tampermonkey.Tampermonkey.ReadyState.Unsent with Double = js.native
+      /* 0 */ val Unsent: typings.tampermonkey.Tampermonkey.ReadyState.Unsent & Double = js.native
     }
   }
   

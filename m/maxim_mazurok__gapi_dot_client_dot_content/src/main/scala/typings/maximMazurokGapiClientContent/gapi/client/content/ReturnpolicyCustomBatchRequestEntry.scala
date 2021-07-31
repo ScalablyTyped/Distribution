@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnpolicyCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The Merchant Center account ID. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Method of the batch request entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The return policy to submit. This should be set only if the method is `insert`. */
-  var returnPolicy: js.UndefOr[ReturnPolicy] = js.native
+  var returnPolicy: js.UndefOr[ReturnPolicy] = js.undefined
   
   /** The return policy ID. This should be set only if the method is `delete` or `get`. */
-  var returnPolicyId: js.UndefOr[String] = js.native
+  var returnPolicyId: js.UndefOr[String] = js.undefined
 }
 object ReturnpolicyCustomBatchRequestEntry {
   

@@ -2,18 +2,16 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessField extends StObject {
   
   @JSName("Access.AccessField_typekey")
-  var AccessDotAccessField_typekey: AccessField = js.native
+  var AccessDotAccessField_typekey: AccessField
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object AccessField {
   

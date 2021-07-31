@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,9 +44,8 @@ object SequenceFlow {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SequenceFlow.create")
-  @js.native
-  def create(model: IModel): SequenceFlow = js.native
+  @scala.inline
+  def create(model: IModel): SequenceFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SequenceFlow]
   
   /**
     * Creates and returns a new SequenceFlow instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object SequenceFlow {
     * of the parent MicroflowBase element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SequenceFlow.createIn")
-  @js.native
-  def createIn(container: MicroflowBase): SequenceFlow = js.native
+  @scala.inline
+  def createIn(container: MicroflowBase): SequenceFlow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[SequenceFlow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.SequenceFlow.structureTypeName")

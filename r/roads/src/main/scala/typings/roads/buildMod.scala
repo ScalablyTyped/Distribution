@@ -4,14 +4,16 @@ import typings.babelify.mod.BabelifyOptions
 import typings.browserify.mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildMod {
   
-  @JSImport("roads/types/client/build", JSImport.Default)
+  @JSImport("roads/types/client/build", JSImport.Namespace)
   @js.native
-  def default(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(input_file: String, output_file: String, options: RoadsBuildOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input_file.asInstanceOf[js.Any], output_file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * @param  {boolean} [options.use_sourcemaps] Whether or not the build process should include source maps.
@@ -19,16 +21,15 @@ object buildMod {
     * @param  {Array} [options.exclude] An array of files that should not be included in the build process.
     * @param  {Object} [options.babelify] An object containing parameters to pass to the babelify transform
     */
-  @js.native
   trait RoadsBuildOptions extends StObject {
     
-    var babelifyOptions: js.UndefOr[BabelifyOptions] = js.native
+    var babelifyOptions: js.UndefOr[BabelifyOptions] = js.undefined
     
-    var browserifyOptions: js.UndefOr[Options] = js.native
+    var browserifyOptions: js.UndefOr[Options] = js.undefined
     
-    var exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object RoadsBuildOptions {
     

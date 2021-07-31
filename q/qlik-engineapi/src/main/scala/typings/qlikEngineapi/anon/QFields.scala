@@ -3,15 +3,13 @@ package typings.qlikEngineapi.anon
 import typings.qlikEngineapi.EngineAPI.IDataField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QFields extends StObject {
   
-  var qFields: js.Array[IDataField] = js.native
+  var qFields: js.Array[IDataField]
   
-  var qFormatSpec: String = js.native
+  var qFormatSpec: String
 }
 object QFields {
   

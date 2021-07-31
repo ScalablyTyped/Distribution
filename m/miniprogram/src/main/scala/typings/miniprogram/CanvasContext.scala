@@ -6,7 +6,6 @@ import typings.miniprogram.anon.xnumberundefinedynumberun
 import typings.miniprogram.anon.xnumberynumberwidthnumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -94,9 +93,9 @@ trait CanvasContext extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_canvas_canvas-context_canvascontext-draw)
     */
   def draw(): Unit = js.native
-  def draw(reserve: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
   def draw(reserve: Boolean): Unit = js.native
   def draw(reserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
+  def draw(reserve: Unit, callback: js.Function0[Unit]): Unit = js.native
   
   /**
     * Draw the image, and the image keeps the original size information.
@@ -104,9 +103,9 @@ trait CanvasContext extends StObject {
     * [Docs Link](https://miniprogram.alipay.com/docs/miniprogram/mpdev/api_ui_canvas_canvas-context_canvascontext-drawimage)
     */
   def drawImage(imageResource: String, x: Double, y: Double): Unit = js.native
-  def drawImage(imageResource: String, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
   def drawImage(imageResource: String, x: Double, y: Double, width: Double): Unit = js.native
   def drawImage(imageResource: String, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+  def drawImage(imageResource: String, x: Double, y: Double, width: Unit, height: Double): Unit = js.native
   
   /**
     * Fill the current path. The default color is black.

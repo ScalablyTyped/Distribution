@@ -2,16 +2,14 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BannerClickEventUIParam extends StObject {
   
   /**
     * Get the banner html element in the DOM.
     */
-  var bannerElement: js.UndefOr[js.Any] = js.native
+  var bannerElement: js.UndefOr[js.Any] = js.undefined
 }
 object BannerClickEventUIParam {
   

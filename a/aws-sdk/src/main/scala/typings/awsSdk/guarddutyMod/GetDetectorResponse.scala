@@ -2,46 +2,44 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDetectorResponse extends StObject {
   
   /**
     * The timestamp of when the detector was created.
     */
-  var CreatedAt: js.UndefOr[String] = js.native
+  var CreatedAt: js.UndefOr[String] = js.undefined
   
   /**
     * An object that describes which data sources are enabled for the detector.
     */
-  var DataSources: js.UndefOr[DataSourceConfigurationsResult] = js.native
+  var DataSources: js.UndefOr[DataSourceConfigurationsResult] = js.undefined
   
   /**
     * The publishing frequency of the finding.
     */
-  var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.native
+  var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.undefined
   
   /**
     * The GuardDuty service role.
     */
-  var ServiceRole: String = js.native
+  var ServiceRole: String
   
   /**
     * The detector status.
     */
-  var Status: DetectorStatus = js.native
+  var Status: DetectorStatus
   
   /**
     * The tags of the detector resource.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The last-updated timestamp for the detector.
     */
-  var UpdatedAt: js.UndefOr[String] = js.native
+  var UpdatedAt: js.UndefOr[String] = js.undefined
 }
 object GetDetectorResponse {
   

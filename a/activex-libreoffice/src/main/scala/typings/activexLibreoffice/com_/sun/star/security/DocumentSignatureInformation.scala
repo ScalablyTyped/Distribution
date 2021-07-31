@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This structure has the information about a digital signature in a document, and the status if the signature is valid.
   */
-@js.native
 trait DocumentSignatureInformation extends StObject {
   
-  var CertificateStatus: Double = js.native
+  var CertificateStatus: Double
   
-  var PartialDocumentSignature: Boolean = js.native
+  var PartialDocumentSignature: Boolean
   
-  var SignatureDate: Double = js.native
+  var SignatureDate: Double
   
-  var SignatureIsValid: Boolean = js.native
+  var SignatureIsValid: Boolean
   
-  var SignatureTime: Double = js.native
+  var SignatureTime: Double
   
-  var Signer: XCertificate = js.native
+  var Signer: XCertificate
 }
 object DocumentSignatureInformation {
   

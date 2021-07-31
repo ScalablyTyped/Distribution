@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Stepper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofStepper extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Stepper = js.native
+  def extend(proto: js.Object): Stepper
   
   /* static member */
-  var fn: Stepper = js.native
+  var fn: Stepper
 }
 object TypeofStepper {
   

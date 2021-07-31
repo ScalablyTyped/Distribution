@@ -2,35 +2,33 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdministrativeAction extends StObject {
   
-  var AdministrativeActionType: js.UndefOr[typings.awsSdk.fsxMod.AdministrativeActionType] = js.native
+  var AdministrativeActionType: js.UndefOr[typings.awsSdk.fsxMod.AdministrativeActionType] = js.undefined
   
-  var FailureDetails: js.UndefOr[AdministrativeActionFailureDetails] = js.native
+  var FailureDetails: js.UndefOr[AdministrativeActionFailureDetails] = js.undefined
   
   /**
     * Provides the percent complete of a STORAGE_OPTIMIZATION administrative action. Does not apply to any other administrative action type.
     */
-  var ProgressPercent: js.UndefOr[typings.awsSdk.fsxMod.ProgressPercent] = js.native
+  var ProgressPercent: js.UndefOr[typings.awsSdk.fsxMod.ProgressPercent] = js.undefined
   
   /**
     * Time that the administrative action request was received.
     */
-  var RequestTime: js.UndefOr[typings.awsSdk.fsxMod.RequestTime] = js.native
+  var RequestTime: js.UndefOr[typings.awsSdk.fsxMod.RequestTime] = js.undefined
   
   /**
     * Describes the status of the administrative action, as follows:    FAILED - Amazon FSx failed to process the administrative action successfully.    IN_PROGRESS - Amazon FSx is processing the administrative action.    PENDING - Amazon FSx is waiting to process the administrative action.    COMPLETED - Amazon FSx has finished processing the administrative task.    UPDATED_OPTIMIZING - For a storage capacity increase update, Amazon FSx has updated the file system with the new storage capacity, and is now performing the storage optimization process. For more information, see Managing Storage Capacity.  
     */
-  var Status: js.UndefOr[typings.awsSdk.fsxMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.fsxMod.Status] = js.undefined
   
   /**
     * Describes the target value for the administration action, provided in the UpdateFileSystem operation. Returned for FILE_SYSTEM_UPDATE administrative actions. 
     */
-  var TargetFileSystemValues: js.UndefOr[FileSystem] = js.native
+  var TargetFileSystemValues: js.UndefOr[FileSystem] = js.undefined
 }
 object AdministrativeAction {
   

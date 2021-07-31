@@ -5,25 +5,24 @@ import typings.babelTypes.babelTypesStrings.module
 import typings.babelTypes.babelTypesStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Program_
-  extends Node
+  extends StObject
+     with Node
      with Block
      with BlockParent
      with FunctionParent
      with Scopable {
   
-  var body: js.Array[Statement | ModuleDeclaration] = js.native
+  var body: js.Array[Statement | ModuleDeclaration]
   
-  var directives: js.UndefOr[js.Array[Directive_]] = js.native
+  var directives: js.UndefOr[js.Array[Directive_]] = js.undefined
   
-  var sourceType: script | module = js.native
+  var sourceType: script | module
   
   @JSName("type")
-  var type_Program_ : Program = js.native
+  var type_Program_ : Program
 }
 object Program_ {
   
@@ -33,11 +32,10 @@ object Program_ {
     end: Double,
     loc: SourceLocation,
     sourceType: script | module,
-    start: Double,
-    `type`: Program
+    start: Double
   ): Program_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Program")
     __obj.asInstanceOf[Program_]
   }
   

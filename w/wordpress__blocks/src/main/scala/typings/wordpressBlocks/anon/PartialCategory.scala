@@ -3,18 +3,16 @@ package typings.wordpressBlocks.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.Category> */
-@js.native
 trait PartialCategory extends StObject {
   
-  var icon: js.UndefOr[Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon | Null] = js.native
+  var icon: js.UndefOr[Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon | Null] = js.undefined
   
-  var slug: js.UndefOr[String] = js.native
+  var slug: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialCategory {
   

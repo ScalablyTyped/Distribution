@@ -1,24 +1,23 @@
 package typings.sparqljs.mod
 
-import typings.sparqljs.sparqljsStrings.graph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GraphReference extends GraphOrDefault {
+trait GraphReference
+  extends StObject
+     with GraphOrDefault {
   
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
-  var named: js.UndefOr[Boolean] = js.native
+  var named: js.UndefOr[Boolean] = js.undefined
 }
 object GraphReference {
   
   @scala.inline
-  def apply(`type`: graph): GraphReference = {
+  def apply(): GraphReference = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphReference]
   }
   

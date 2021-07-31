@@ -13,26 +13,24 @@ import typings.react.mod.FC
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDecoration extends StObject {
   
   var extend: js.UndefOr[
     ExtendType[
       PropsOf[
         FC[
-          AnchorProps with (Omit[
+          AnchorProps & (Omit[
             DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
             color
           ])
         ]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object TextDecoration {
   
@@ -50,7 +48,7 @@ object TextDecoration {
       value: ExtendType[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])
@@ -64,7 +62,7 @@ object TextDecoration {
       value: /* props */ ExtendProps[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])
@@ -73,7 +71,7 @@ object TextDecoration {
         ] => ExtendValue[
           PropsOf[
             FC[
-              AnchorProps with (Omit[
+              AnchorProps & (Omit[
                 DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement], 
                 color
               ])

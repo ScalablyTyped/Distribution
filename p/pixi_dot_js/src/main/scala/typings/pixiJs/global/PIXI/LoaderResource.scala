@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.LoaderResource")
 @js.native
 class LoaderResource ()
-  extends typings.pixiJs.PIXI.LoaderResource
+  extends StObject
+     with typings.pixiJs.PIXI.LoaderResource
 object LoaderResource {
   
   @JSGlobal("PIXI.LoaderResource")
@@ -33,15 +33,15 @@ object LoaderResource {
   object LOAD_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE & Double] = js.native
     
-    /* 3 */ val AUDIO: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.AUDIO with Double = js.native
+    /* 3 */ val AUDIO: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.AUDIO & Double = js.native
     
-    /* 2 */ val IMAGE: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.IMAGE with Double = js.native
+    /* 2 */ val IMAGE: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.IMAGE & Double = js.native
     
-    /* 4 */ val VIDEO: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.VIDEO with Double = js.native
+    /* 4 */ val VIDEO: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.VIDEO & Double = js.native
     
-    /* 1 */ val XHR: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.XHR with Double = js.native
+    /* 1 */ val XHR: typings.pixiJs.PIXI.LoaderResource.LOAD_TYPE.XHR & Double = js.native
   }
   
   @JSGlobal("PIXI.LoaderResource.STATUS_FLAGS")
@@ -49,15 +49,15 @@ object LoaderResource {
   object STATUS_FLAGS extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS & Double] = js.native
     
-    /* 1 << 1 */ val COMPLETE: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.COMPLETE with Double = js.native
+    /* 1 << 1 */ val COMPLETE: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.COMPLETE & Double = js.native
     
-    /* 1 << 0 */ val DATA_URL: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.DATA_URL with Double = js.native
+    /* 1 << 0 */ val DATA_URL: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.DATA_URL & Double = js.native
     
-    /* 1 << 2 */ val LOADING: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.LOADING with Double = js.native
+    /* 1 << 2 */ val LOADING: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.LOADING & Double = js.native
     
-    /* 0 */ val NONE: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.NONE with Double = js.native
+    /* 0 */ val NONE: typings.pixiJs.PIXI.LoaderResource.STATUS_FLAGS.NONE & Double = js.native
   }
   
   @JSGlobal("PIXI.LoaderResource.TYPE")
@@ -65,21 +65,21 @@ object LoaderResource {
   object TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.TYPE & Double] = js.native
     
-    /* 4 */ val AUDIO: typings.pixiJs.PIXI.LoaderResource.TYPE.AUDIO with Double = js.native
+    /* 4 */ val AUDIO: typings.pixiJs.PIXI.LoaderResource.TYPE.AUDIO & Double = js.native
     
-    /* 3 */ val IMAGE: typings.pixiJs.PIXI.LoaderResource.TYPE.IMAGE with Double = js.native
+    /* 3 */ val IMAGE: typings.pixiJs.PIXI.LoaderResource.TYPE.IMAGE & Double = js.native
     
-    /* 1 */ val JSON: typings.pixiJs.PIXI.LoaderResource.TYPE.JSON with Double = js.native
+    /* 1 */ val JSON: typings.pixiJs.PIXI.LoaderResource.TYPE.JSON & Double = js.native
     
-    /* 6 */ val TEXT: typings.pixiJs.PIXI.LoaderResource.TYPE.TEXT with Double = js.native
+    /* 6 */ val TEXT: typings.pixiJs.PIXI.LoaderResource.TYPE.TEXT & Double = js.native
     
-    /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.LoaderResource.TYPE.UNKNOWN with Double = js.native
+    /* 0 */ val UNKNOWN: typings.pixiJs.PIXI.LoaderResource.TYPE.UNKNOWN & Double = js.native
     
-    /* 5 */ val VIDEO: typings.pixiJs.PIXI.LoaderResource.TYPE.VIDEO with Double = js.native
+    /* 5 */ val VIDEO: typings.pixiJs.PIXI.LoaderResource.TYPE.VIDEO & Double = js.native
     
-    /* 2 */ val XML: typings.pixiJs.PIXI.LoaderResource.TYPE.XML with Double = js.native
+    /* 2 */ val XML: typings.pixiJs.PIXI.LoaderResource.TYPE.XML & Double = js.native
   }
   
   @JSGlobal("PIXI.LoaderResource.XHR_RESPONSE_TYPE")
@@ -87,26 +87,24 @@ object LoaderResource {
   object XHR_RESPONSE_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE with String] = js.native
+    def apply(value: String): js.UndefOr[typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE & String] = js.native
     
-    /* "blob" */ val BLOB: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.BLOB with String = js.native
+    /* "blob" */ val BLOB: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.BLOB & String = js.native
     
-    /* "arraybuffer" */ val BUFFER: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER with String = js.native
+    /* "arraybuffer" */ val BUFFER: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.BUFFER & String = js.native
     
-    /* "text" */ val DEFAULT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.DEFAULT with String = js.native
+    /* "text" */ val DEFAULT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.DEFAULT & String = js.native
     
-    /* "document" */ val DOCUMENT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.DOCUMENT with String = js.native
+    /* "document" */ val DOCUMENT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.DOCUMENT & String = js.native
     
-    /* "json" */ val JSON: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON with String = js.native
+    /* "json" */ val JSON: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.JSON & String = js.native
     
-    /* "text" */ val TEXT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.TEXT with String = js.native
+    /* "text" */ val TEXT: typings.pixiJs.PIXI.LoaderResource.XHR_RESPONSE_TYPE.TEXT & String = js.native
   }
   
-  @JSGlobal("PIXI.LoaderResource.setExtensionLoadType")
-  @js.native
-  def setExtensionLoadType(extname: String, loadType: Double): Unit = js.native
+  @scala.inline
+  def setExtensionLoadType(extname: String, loadType: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionLoadType")(extname.asInstanceOf[js.Any], loadType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("PIXI.LoaderResource.setExtensionXhrType")
-  @js.native
-  def setExtensionXhrType(extname: String, xhrType: String): Unit = js.native
+  @scala.inline
+  def setExtensionXhrType(extname: String, xhrType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtensionXhrType")(extname.asInstanceOf[js.Any], xhrType.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

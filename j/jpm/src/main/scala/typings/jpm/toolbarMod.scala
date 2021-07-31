@@ -7,7 +7,6 @@ import typings.jpm.jpmStrings.hide
 import typings.jpm.jpmStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,22 +33,22 @@ object toolbarMod {
     def off_show(event: show, handler: js.Function): Unit = js.native
     
     @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def on_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def on_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def on_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def on_show(event: show, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def once_attach(event: attach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def once_detach(event: detach, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("once")
-    def once_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def once_hide(event: hide, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     @JSName("once")
-    def once_show(event: show, handler: js.Function1[/* toolbar */ this.type, _]): Unit = js.native
+    def once_show(event: show, handler: js.Function1[/* toolbar */ this.type, js.Any]): Unit = js.native
     
     @JSName("removeListener")
     def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
@@ -62,9 +61,12 @@ object toolbarMod {
     
     var title: String = js.native
   }
-  @JSImport("sdk/ui/toolbar", "Toolbar")
-  @js.native
-  def Toolbar(options: Hidden): Toolbar = js.native
+  object Toolbar {
+    
+    @JSImport("sdk/ui/toolbar", "Toolbar")
+    @js.native
+    def apply(options: Hidden): Toolbar = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.jpm.FFAddonSDK.Frame

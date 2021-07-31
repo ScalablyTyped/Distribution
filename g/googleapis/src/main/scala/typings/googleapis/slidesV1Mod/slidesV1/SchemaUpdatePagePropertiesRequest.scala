@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the properties of a Page.
   */
-@js.native
 trait SchemaUpdatePagePropertiesRequest extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaUpdatePagePropertiesRequest extends StObject {
     * to its default value, include its field name in the field mask but leave
     * the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the page the update is applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The page properties to update.
     */
-  var pageProperties: js.UndefOr[SchemaPageProperties] = js.native
+  var pageProperties: js.UndefOr[SchemaPageProperties] = js.undefined
 }
 object SchemaUpdatePagePropertiesRequest {
   

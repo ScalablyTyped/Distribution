@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the PullBatch method.
   */
-@js.native
 trait SchemaPullBatchResponse extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaPullBatchResponse extends StObject {
     * backlog. The Pub/Sub system may return fewer than the max_events
     * requested even if there are more messages available in the backlog.
     */
-  var pullResponses: js.UndefOr[js.Array[SchemaPullResponse]] = js.native
+  var pullResponses: js.UndefOr[js.Array[SchemaPullResponse]] = js.undefined
 }
 object SchemaPullBatchResponse {
   

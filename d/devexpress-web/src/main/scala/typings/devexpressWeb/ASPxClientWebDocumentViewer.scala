@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxWebDocumentViewer class.
   */
 @js.native
-trait ASPxClientWebDocumentViewer extends ASPxClientControl {
+trait ASPxClientWebDocumentViewer
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs before the Web Document Viewer UI is initialized.
@@ -76,7 +77,7 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * Enables navigation between drill-through reports on the client-side. A Deferred Promise object.
     * @param customData Provides access to custom client data associated with a currently previewed report.
     */
-  def DrillThrough(customData: String): JQueryPromise[_] = js.native
+  def DrillThrough(customData: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Occurs each time an editing field's value changes.
@@ -91,9 +92,9 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * @param inlineResult true, to inform the browser to display a file instead of download; otherwise, false.
     */
   def ExportTo(): Unit = js.native
-  def ExportTo(format: js.UndefOr[scala.Nothing], inlineResult: Boolean): Unit = js.native
   def ExportTo(format: String): Unit = js.native
   def ExportTo(format: String, inlineResult: Boolean): Unit = js.native
+  def ExportTo(format: Unit, inlineResult: Boolean): Unit = js.native
   
   /**
     * Returns the current page's zero-based index.
@@ -130,7 +131,7 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * Opens the specified report on the Web Document Viewer's client side. Allows you to refresh preview for the loaded report. A Deferred Promise object.
     * @param url A string that specifies the report's URL.
     */
-  def OpenReport(url: String): JQueryPromise[_] = js.native
+  def OpenReport(url: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Occurs after report parameter values are reset to their default values.
@@ -152,9 +153,9 @@ trait ASPxClientWebDocumentViewer extends ASPxClientControl {
     * @param hideMessageFromUser true, to hide a message with the operation result from a user; otherwise, false.
     */
   def PerformCustomDocumentOperation(): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
-  def PerformCustomDocumentOperation(customData: js.UndefOr[scala.Nothing], hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   def PerformCustomDocumentOperation(customData: String): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   def PerformCustomDocumentOperation(customData: String, hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
+  def PerformCustomDocumentOperation(customData: Unit, hideMessageFromUser: Boolean): JQueryPromise[ASPxClientWebDocumentViewerDocumentOperationResponse] = js.native
   
   /**
     * Occurs when the left mouse button is clicked on a report document.

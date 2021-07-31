@@ -2,36 +2,34 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloneStatistics extends StObject {
   
   /**
     * Number of Requirments cloned so far.
     */
-  var clonedRequirementsCount: Double = js.native
+  var clonedRequirementsCount: Double
   
   /**
     * Number of shared steps cloned so far.
     */
-  var clonedSharedStepsCount: Double = js.native
+  var clonedSharedStepsCount: Double
   
   /**
     * Number of test cases cloned so far
     */
-  var clonedTestCasesCount: Double = js.native
+  var clonedTestCasesCount: Double
   
   /**
     * Total number of requirements to be cloned
     */
-  var totalRequirementsCount: Double = js.native
+  var totalRequirementsCount: Double
   
   /**
     * Total number of test cases to be cloned
     */
-  var totalTestCasesCount: Double = js.native
+  var totalTestCasesCount: Double
 }
 object CloneStatistics {
   

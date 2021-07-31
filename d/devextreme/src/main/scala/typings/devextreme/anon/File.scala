@@ -4,19 +4,17 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxFileManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var component: js.UndefOr[dxFileManager] = js.native
+  var component: js.UndefOr[dxFileManager] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var file: js.UndefOr[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem] = js.native
+  var file: js.UndefOr[typings.devextreme.mod.DevExpress.fileManagement.FileSystemItem] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
 }
 object File {
   

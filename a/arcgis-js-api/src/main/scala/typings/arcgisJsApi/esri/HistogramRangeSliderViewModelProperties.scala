@@ -10,25 +10,25 @@ import typings.arcgisJsApi.arcgisJsApiStrings.between
 import typings.arcgisJsApi.arcgisJsApiStrings.equal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramRangeSliderViewModelProperties extends SliderViewModelProperties {
+trait HistogramRangeSliderViewModelProperties
+  extends StObject
+     with SliderViewModelProperties {
   
   /**
     * The statistical average of the data in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#average)
     */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#bins)
     */
-  var bins: js.UndefOr[js.Array[Bin]] = js.native
+  var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
     * Determines the SQL where clause generated in [generateWhereClause()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#generateWhereClause) for filtering purposes.
@@ -37,14 +37,14 @@ trait HistogramRangeSliderViewModelProperties extends SliderViewModelProperties 
     */
   var rangeType: js.UndefOr[
     equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the standard deviation of the dataset above and below the `average`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider-HistogramRangeSliderViewModel.html#standardDeviation)
     */
-  var standardDeviation: js.UndefOr[Double] = js.native
+  var standardDeviation: js.UndefOr[Double] = js.undefined
 }
 object HistogramRangeSliderViewModelProperties {
   

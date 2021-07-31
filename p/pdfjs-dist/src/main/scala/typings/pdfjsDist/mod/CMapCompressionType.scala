@@ -2,7 +2,6 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait CMapCompressionType extends StObject
 object CMapCompressionType extends StObject {
   
   @js.native
-  sealed trait BINARY extends CMapCompressionType
+  sealed trait BINARY
+    extends StObject
+       with CMapCompressionType
   
   @js.native
-  sealed trait NONE extends CMapCompressionType
+  sealed trait NONE
+    extends StObject
+       with CMapCompressionType
   
   @js.native
-  sealed trait STREAM extends CMapCompressionType
+  sealed trait STREAM
+    extends StObject
+       with CMapCompressionType
 }

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBlobsBatchupdate extends StandardParameters {
+trait ParamsResourceBlobsBatchupdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The instance of the execution system to operate against. A server may
@@ -24,12 +24,12 @@ trait ParamsResourceBlobsBatchupdate extends StandardParameters {
     * to select between them in an implementation-defined fashion, otherwise it
     * can be omitted.
     */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest] = js.native
+  var requestBody: js.UndefOr[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequest] = js.undefined
 }
 object ParamsResourceBlobsBatchupdate {
   

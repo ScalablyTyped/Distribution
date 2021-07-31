@@ -3,15 +3,13 @@ package typings.postcssSelectorParser.mod
 import typings.postcssSelectorParser.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSource extends StObject {
   
-  var end: js.UndefOr[Column] = js.native
+  var end: js.UndefOr[Column] = js.undefined
   
-  var start: js.UndefOr[Column] = js.native
+  var start: js.UndefOr[Column] = js.undefined
 }
 object NodeSource {
   

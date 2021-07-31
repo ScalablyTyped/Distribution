@@ -5,7 +5,6 @@ import typings.phaser.MatterJS.IBodyDefinition
 import typings.phaser.MatterJS.IChamferableBodyDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.Bodies")
 @js.native
 class Bodies ()
-  extends typings.phaser.MatterJS.Bodies
+  extends StObject
+     with typings.phaser.MatterJS.Bodies
 object Bodies {
+  
+  @JSGlobal("MatterJS.Bodies")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new rigid body model with a circle hull.
@@ -33,18 +37,14 @@ object Bodies {
     * @return {body} A new circle body
     */
   /* static member */
-  @JSGlobal("MatterJS.Bodies.circle")
-  @js.native
-  def circle(x: Double, y: Double, radius: Double): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.circle")
-  @js.native
-  def circle(x: Double, y: Double, radius: Double, options: js.UndefOr[scala.Nothing], maxSides: Double): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.circle")
-  @js.native
-  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.circle")
-  @js.native
-  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = js.native
+  @scala.inline
+  def circle(x: Double, y: Double, radius: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def circle(x: Double, y: Double, radius: Double, options: Unit, maxSides: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any], maxSides.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any], maxSides.asInstanceOf[js.Any])).asInstanceOf[BodyType]
   
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices).
@@ -67,144 +67,90 @@ object Bodies {
     * @return {body}
     */
   /* static member */
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]]): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  @scala.inline
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]]): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     flagInternal: Boolean
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
-    flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     flagInternal: Boolean,
     removeCollinear: Double,
     minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
     options: IBodyDefinition
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: IBodyDefinition,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: IBodyDefinition,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: IBodyDefinition,
-    flagInternal: js.UndefOr[scala.Nothing],
-    removeCollinear: Double,
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
     options: IBodyDefinition,
     flagInternal: Boolean
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
-  def fromVertices(
-    x: Double,
-    y: Double,
-    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
-    options: IBodyDefinition,
-    flagInternal: Boolean,
-    removeCollinear: js.UndefOr[scala.Nothing],
-    minimumArea: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
@@ -212,9 +158,8 @@ object Bodies {
     options: IBodyDefinition,
     flagInternal: Boolean,
     removeCollinear: Double
-  ): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.fromVertices")
-  @js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def fromVertices(
     x: Double,
     y: Double,
@@ -223,7 +168,46 @@ object Bodies {
     flagInternal: Boolean,
     removeCollinear: Double,
     minimumArea: Double
-  ): BodyType = js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[typings.phaser.MatterJS.Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[BodyType]
   
   /**
     * Creates a new rigid body model with a regular polygon hull with the given number of sides.
@@ -238,12 +222,10 @@ object Bodies {
     * @return {body} A new regular polygon body
     */
   /* static member */
-  @JSGlobal("MatterJS.Bodies.polygon")
-  @js.native
-  def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.polygon")
-  @js.native
-  def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): BodyType = js.native
+  @scala.inline
+  def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], sides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], sides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
   
   /**
     * Creates a new rigid body model with a rectangle hull.
@@ -258,12 +240,10 @@ object Bodies {
     * @return {body} A new rectangle body
     */
   /* static member */
-  @JSGlobal("MatterJS.Bodies.rectangle")
-  @js.native
-  def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.rectangle")
-  @js.native
-  def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): BodyType = js.native
+  @scala.inline
+  def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
+  def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
   
   /**
     * Creates a new rigid body model with a trapezoid hull.
@@ -279,11 +259,9 @@ object Bodies {
     * @return {body} A new trapezoid body
     */
   /* static member */
-  @JSGlobal("MatterJS.Bodies.trapezoid")
-  @js.native
-  def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): BodyType = js.native
-  @JSGlobal("MatterJS.Bodies.trapezoid")
-  @js.native
+  @scala.inline
+  def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("trapezoid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], slope.asInstanceOf[js.Any])).asInstanceOf[BodyType]
+  @scala.inline
   def trapezoid(
     x: Double,
     y: Double,
@@ -291,5 +269,5 @@ object Bodies {
     height: Double,
     slope: Double,
     options: IChamferableBodyDefinition
-  ): BodyType = js.native
+  ): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("trapezoid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], slope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BodyType]
 }

@@ -2,31 +2,29 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BouncedRecipientInfo extends StObject {
   
   /**
     * The reason for the bounce. You must provide either this parameter or RecipientDsnFields.
     */
-  var BounceType: js.UndefOr[typings.awsSdk.sesMod.BounceType] = js.native
+  var BounceType: js.UndefOr[typings.awsSdk.sesMod.BounceType] = js.undefined
   
   /**
     * The email address of the recipient of the bounced email.
     */
-  var Recipient: Address = js.native
+  var Recipient: Address
   
   /**
     * This parameter is used only for sending authorization. It is the ARN of the identity that is associated with the sending authorization policy that permits you to receive email for the recipient of the bounced email. For more information about sending authorization, see the Amazon SES Developer Guide.
     */
-  var RecipientArn: js.UndefOr[AmazonResourceName] = js.native
+  var RecipientArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Recipient-related DSN fields, most of which would normally be filled in automatically when provided with a BounceType. You must provide either this parameter or BounceType.
     */
-  var RecipientDsnFields: js.UndefOr[typings.awsSdk.sesMod.RecipientDsnFields] = js.native
+  var RecipientDsnFields: js.UndefOr[typings.awsSdk.sesMod.RecipientDsnFields] = js.undefined
 }
 object BouncedRecipientInfo {
   

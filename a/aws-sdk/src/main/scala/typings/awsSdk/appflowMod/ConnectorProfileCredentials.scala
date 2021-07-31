@@ -2,86 +2,84 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorProfileCredentials extends StObject {
   
   /**
     *  The connector-specific credentials required when using Amplitude. 
     */
-  var Amplitude: js.UndefOr[AmplitudeConnectorProfileCredentials] = js.native
+  var Amplitude: js.UndefOr[AmplitudeConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Datadog. 
     */
-  var Datadog: js.UndefOr[DatadogConnectorProfileCredentials] = js.native
+  var Datadog: js.UndefOr[DatadogConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Dynatrace. 
     */
-  var Dynatrace: js.UndefOr[DynatraceConnectorProfileCredentials] = js.native
+  var Dynatrace: js.UndefOr[DynatraceConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Google Analytics. 
     */
-  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileCredentials] = js.native
+  var GoogleAnalytics: js.UndefOr[GoogleAnalyticsConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Infor Nexus. 
     */
-  var InforNexus: js.UndefOr[InforNexusConnectorProfileCredentials] = js.native
+  var InforNexus: js.UndefOr[InforNexusConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Marketo. 
     */
-  var Marketo: js.UndefOr[MarketoConnectorProfileCredentials] = js.native
+  var Marketo: js.UndefOr[MarketoConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Amazon Redshift. 
     */
-  var Redshift: js.UndefOr[RedshiftConnectorProfileCredentials] = js.native
+  var Redshift: js.UndefOr[RedshiftConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Salesforce. 
     */
-  var Salesforce: js.UndefOr[SalesforceConnectorProfileCredentials] = js.native
+  var Salesforce: js.UndefOr[SalesforceConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using ServiceNow. 
     */
-  var ServiceNow: js.UndefOr[ServiceNowConnectorProfileCredentials] = js.native
+  var ServiceNow: js.UndefOr[ServiceNowConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Singular. 
     */
-  var Singular: js.UndefOr[SingularConnectorProfileCredentials] = js.native
+  var Singular: js.UndefOr[SingularConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Slack. 
     */
-  var Slack: js.UndefOr[SlackConnectorProfileCredentials] = js.native
+  var Slack: js.UndefOr[SlackConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Snowflake. 
     */
-  var Snowflake: js.UndefOr[SnowflakeConnectorProfileCredentials] = js.native
+  var Snowflake: js.UndefOr[SnowflakeConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Trend Micro. 
     */
-  var Trendmicro: js.UndefOr[TrendmicroConnectorProfileCredentials] = js.native
+  var Trendmicro: js.UndefOr[TrendmicroConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Veeva. 
     */
-  var Veeva: js.UndefOr[VeevaConnectorProfileCredentials] = js.native
+  var Veeva: js.UndefOr[VeevaConnectorProfileCredentials] = js.undefined
   
   /**
     *  The connector-specific credentials required when using Zendesk. 
     */
-  var Zendesk: js.UndefOr[ZendeskConnectorProfileCredentials] = js.native
+  var Zendesk: js.UndefOr[ZendeskConnectorProfileCredentials] = js.undefined
 }
 object ConnectorProfileCredentials {
   

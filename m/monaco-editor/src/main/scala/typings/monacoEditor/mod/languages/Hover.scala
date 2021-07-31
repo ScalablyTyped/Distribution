@@ -4,23 +4,21 @@ import typings.monacoEditor.mod.IMarkdownString
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hover extends StObject {
   
   /**
     * The contents of this hover.
     */
-  var contents: js.Array[IMarkdownString] = js.native
+  var contents: js.Array[IMarkdownString]
   
   /**
     * The range to which this hover applies. When missing, the
     * editor will use the range at the current position or the
     * current position itself.
     */
-  var range: js.UndefOr[IRange] = js.native
+  var range: js.UndefOr[IRange] = js.undefined
 }
 object Hover {
   

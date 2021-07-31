@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaWafExpressionSet extends StObject {
   
   /**
@@ -14,18 +12,18 @@ trait SchemaWafExpressionSet extends StObject {
     * to avail newer set of expressions without having to change the policy. A
     * given alias name can&#39;t be used for more than one entity set.
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of available expressions.
     */
-  var expressions: js.UndefOr[js.Array[SchemaWafExpressionSetExpression]] = js.native
+  var expressions: js.UndefOr[js.Array[SchemaWafExpressionSetExpression]] = js.undefined
   
   /**
     * Google specified expression set ID. The format should be: - E.g.
     * XSS-20170329
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaWafExpressionSet {
   

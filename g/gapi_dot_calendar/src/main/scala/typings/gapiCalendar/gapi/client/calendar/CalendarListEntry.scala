@@ -5,48 +5,46 @@ import typings.gapiCalendar.anon.Notifications
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersigncalendarListEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarListEntry extends StObject {
   
   // The effective access role that the authenticated user has on the calendar. Read-only.
-  var accessRole: AccessRoleWithoutNone = js.native
+  var accessRole: AccessRoleWithoutNone
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
-  var defaultReminders: js.Array[Method] = js.native
+  var defaultReminders: js.Array[Method]
   
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+  var etag: typings.gapiCalendar.gapi.client.calendar.etag
   
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var kind: calendarNumbersigncalendarListEntry = js.native
+  var kind: calendarNumbersigncalendarListEntry
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var notificationSettings: js.UndefOr[Notifications] = js.native
+  var notificationSettings: js.UndefOr[Notifications] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var summaryOverride: js.UndefOr[String] = js.native
+  var summaryOverride: js.UndefOr[String] = js.undefined
   
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object CalendarListEntry {
   
@@ -56,10 +54,9 @@ object CalendarListEntry {
     defaultReminders: js.Array[Method],
     etag: etag,
     id: String,
-    kind: calendarNumbersigncalendarListEntry,
     summary: String
   ): CalendarListEntry = {
-    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accessRole = accessRole.asInstanceOf[js.Any], defaultReminders = defaultReminders.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "calendar#calendarListEntry", summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalendarListEntry]
   }
   

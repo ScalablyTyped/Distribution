@@ -8,7 +8,6 @@ import typings.react.mod.PureComponent
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutsMod {
@@ -42,14 +41,15 @@ object shortcutsMod {
     def defaultProps_=(x: PartialIShortcutsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IDatePickerShortcut extends IDateShortcutBase {
+  trait IDatePickerShortcut
+    extends StObject
+       with IDateShortcutBase {
     
     /**
       * Date represented by this shortcut. Note that time components of a
       * shortcut are ignored by default; set `includeTime: true` to respect them.
       */
-    var date: Date = js.native
+    var date: Date
   }
   object IDatePickerShortcut {
     
@@ -67,14 +67,15 @@ object shortcutsMod {
     }
   }
   
-  @js.native
-  trait IDateRangeShortcut extends IDateShortcutBase {
+  trait IDateRangeShortcut
+    extends StObject
+       with IDateShortcutBase {
     
     /**
       * Date range represented by this shortcut. Note that time components of a
       * shortcut are ignored by default; set `includeTime: true` to respect them.
       */
-    var dateRange: DateRange = js.native
+    var dateRange: DateRange
   }
   object IDateRangeShortcut {
     
@@ -92,7 +93,6 @@ object shortcutsMod {
     }
   }
   
-  @js.native
   trait IDateShortcutBase extends StObject {
     
     /**
@@ -102,10 +102,10 @@ object shortcutsMod {
       * and combines them with the currently selected time.
       * @default false
       */
-    var includeTime: js.UndefOr[Boolean] = js.native
+    var includeTime: js.UndefOr[Boolean] = js.undefined
     
     /** Shortcut label that appears in the list. */
-    var label: String = js.native
+    var label: String
   }
   object IDateShortcutBase {
     
@@ -129,29 +129,28 @@ object shortcutsMod {
     }
   }
   
-  @js.native
   trait IShortcutsProps extends StObject {
     
-    var allowSingleDayRange: Boolean = js.native
+    var allowSingleDayRange: Boolean
     
-    var maxDate: Date = js.native
+    var maxDate: Date
     
-    var minDate: Date = js.native
+    var minDate: Date
     
-    def onShortcutClick(shortcut: IDateRangeShortcut, index: Double): Unit = js.native
+    def onShortcutClick(shortcut: IDateRangeShortcut, index: Double): Unit
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var shortcuts: js.Array[IDateRangeShortcut] | `true` = js.native
+    var shortcuts: js.Array[IDateRangeShortcut] | `true`
     
-    var timePrecision: TimePrecision = js.native
+    var timePrecision: TimePrecision
     
     /**
       * The DatePicker component reuses this component for a single date.
       * This changes the default shortcut labels and affects which shortcuts are used.
       * @default false
       */
-    var useSingleDateShortcuts: js.UndefOr[Boolean] = js.native
+    var useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
   }
   object IShortcutsProps {
     

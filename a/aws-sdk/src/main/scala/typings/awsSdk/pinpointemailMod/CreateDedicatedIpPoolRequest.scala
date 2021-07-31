@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDedicatedIpPoolRequest extends StObject {
   
   /**
     * The name of the dedicated IP pool.
     */
-  var PoolName: typings.awsSdk.pinpointemailMod.PoolName = js.native
+  var PoolName: typings.awsSdk.pinpointemailMod.PoolName
   
   /**
     * An object that defines the tags (keys and values) that you want to associate with the pool.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDedicatedIpPoolRequest {
   

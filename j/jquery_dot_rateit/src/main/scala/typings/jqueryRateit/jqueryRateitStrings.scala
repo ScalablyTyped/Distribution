@@ -2,18 +2,21 @@ package typings.jqueryRateit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryRateitStrings {
   
   @js.native
-  sealed trait bg extends RateItMode
+  sealed trait bg
+    extends StObject
+       with RateItMode
   @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
   
   @js.native
-  sealed trait font extends RateItMode
+  sealed trait font
+    extends StObject
+       with RateItMode
   @scala.inline
   def font: font = "font".asInstanceOf[font]
   

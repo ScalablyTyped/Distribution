@@ -19,7 +19,6 @@ import typings.std.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
@@ -32,132 +31,131 @@ object optionsMod {
   @js.native
   val defaults: ParsedOptions = js.native
   
-  @js.native
   trait BaseOptions extends StObject {
     
-    var allowInput: Boolean = js.native
+    var allowInput: Boolean
     
-    var allowInvalidPreload: Boolean = js.native
+    var allowInvalidPreload: Boolean
     
-    var altFormat: String = js.native
+    var altFormat: String
     
-    var altInput: Boolean = js.native
+    var altInput: Boolean
     
-    var altInputClass: String = js.native
+    var altInputClass: String
     
-    var animate: Boolean = js.native
+    var animate: Boolean
     
-    var appendTo: HTMLElement = js.native
+    var appendTo: HTMLElement
     
-    var ariaDateFormat: String = js.native
+    var ariaDateFormat: String
     
-    var autoFillDefaultTime: Boolean = js.native
+    var autoFillDefaultTime: Boolean
     
-    var clickOpens: Boolean = js.native
+    var clickOpens: Boolean
     
-    var closeOnSelect: Boolean = js.native
+    var closeOnSelect: Boolean
     
-    var conjunction: String = js.native
+    var conjunction: String
     
-    var dateFormat: String = js.native
+    var dateFormat: String
     
-    var defaultDate: DateOption | js.Array[DateOption] = js.native
+    var defaultDate: DateOption | js.Array[DateOption]
     
-    var defaultHour: Double = js.native
+    var defaultHour: Double
     
-    var defaultMinute: Double = js.native
+    var defaultMinute: Double
     
-    var defaultSeconds: Double = js.native
+    var defaultSeconds: Double
     
-    var disable: js.Array[DateLimit[DateOption]] = js.native
+    var disable: js.Array[DateLimit[DateOption]]
     
-    var disableMobile: Boolean = js.native
+    var disableMobile: Boolean
     
-    var enable: js.Array[DateLimit[DateOption]] = js.native
+    var enable: js.Array[DateLimit[DateOption]]
     
-    var enableSeconds: Boolean = js.native
+    var enableSeconds: Boolean
     
-    var enableTime: Boolean = js.native
+    var enableTime: Boolean
     
-    def errorHandler(e: Error): Unit = js.native
+    def errorHandler(e: Error): Unit
     
-    def formatDate(date: Date, format: String, locale: Locale): String = js.native
+    def formatDate(date: Date, format: String, locale: Locale): String
     
-    def getWeek(date: Date): String | Double = js.native
+    def getWeek(date: Date): String | Double
     
-    var hourIncrement: Double = js.native
+    var hourIncrement: Double
     
-    var ignoredFocusElements: js.Array[HTMLElement] = js.native
+    var ignoredFocusElements: js.Array[HTMLElement]
     
-    var `inline`: Boolean = js.native
+    var `inline`: Boolean
     
-    var locale: key | CustomLocale = js.native
+    var locale: key | CustomLocale
     
-    var maxDate: DateOption = js.native
+    var maxDate: DateOption
     
-    var maxTime: DateOption = js.native
+    var maxTime: DateOption
     
-    var minDate: DateOption = js.native
+    var minDate: DateOption
     
-    var minTime: DateOption = js.native
+    var minTime: DateOption
     
-    var minuteIncrement: Double = js.native
+    var minuteIncrement: Double
     
-    var mode: single | multiple | range | time = js.native
+    var mode: single | multiple | range | time
     
-    var monthSelectorType: dropdown | static = js.native
+    var monthSelectorType: dropdown | static
     
-    var nextArrow: String = js.native
+    var nextArrow: String
     
-    var noCalendar: Boolean = js.native
+    var noCalendar: Boolean
     
-    var now: js.UndefOr[DateOption] = js.native
+    var now: js.UndefOr[DateOption] = js.undefined
     
-    var onChange: Hook | js.Array[Hook] = js.native
+    var onChange: Hook | js.Array[Hook]
     
-    var onClose: Hook | js.Array[Hook] = js.native
+    var onClose: Hook | js.Array[Hook]
     
-    var onDayCreate: Hook | js.Array[Hook] = js.native
+    var onDayCreate: Hook | js.Array[Hook]
     
-    var onDestroy: Hook | js.Array[Hook] = js.native
+    var onDestroy: Hook | js.Array[Hook]
     
-    var onKeyDown: Hook | js.Array[Hook] = js.native
+    var onKeyDown: Hook | js.Array[Hook]
     
-    var onMonthChange: Hook | js.Array[Hook] = js.native
+    var onMonthChange: Hook | js.Array[Hook]
     
-    var onOpen: Hook | js.Array[Hook] = js.native
+    var onOpen: Hook | js.Array[Hook]
     
-    var onParseConfig: Hook | js.Array[Hook] = js.native
+    var onParseConfig: Hook | js.Array[Hook]
     
-    var onPreCalendarPosition: Hook | js.Array[Hook] = js.native
+    var onPreCalendarPosition: Hook | js.Array[Hook]
     
-    var onReady: Hook | js.Array[Hook] = js.native
+    var onReady: Hook | js.Array[Hook]
     
-    var onValueUpdate: Hook | js.Array[Hook] = js.native
+    var onValueUpdate: Hook | js.Array[Hook]
     
-    var onYearChange: Hook | js.Array[Hook] = js.native
+    var onYearChange: Hook | js.Array[Hook]
     
-    def parseDate(date: String, format: String): Date = js.native
+    def parseDate(date: String, format: String): Date
     
-    var plugins: js.Array[Plugin[js.Object]] = js.native
+    var plugins: js.Array[Plugin[js.Object]]
     
-    var position: auto | above | below = js.native
+    var position: auto | above | below
     
-    var positionElement: Element = js.native
+    var positionElement: Element
     
-    var prevArrow: String = js.native
+    var prevArrow: String
     
-    var shorthandCurrentMonth: Boolean = js.native
+    var shorthandCurrentMonth: Boolean
     
-    var showMonths: js.UndefOr[Double] = js.native
+    var showMonths: js.UndefOr[Double] = js.undefined
     
-    var static: Boolean = js.native
+    var static: Boolean
     
-    var time_24hr: Boolean = js.native
+    var time_24hr: Boolean
     
-    var weekNumbers: Boolean = js.native
+    var weekNumbers: Boolean
     
-    var wrap: Boolean = js.native
+    var wrap: Boolean
   }
   object BaseOptions {
     
@@ -541,12 +539,11 @@ object optionsMod {
   
   type DateOption = Date | String | Double
   
-  @js.native
   trait DateRangeLimit[D] extends StObject {
     
-    var from: D = js.native
+    var from: D
     
-    var to: D = js.native
+    var to: D
   }
   object DateRangeLimit {
     
@@ -557,7 +554,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class DateRangeLimitMutableBuilder[Self <: DateRangeLimit[_], D] (val x: Self with DateRangeLimit[D]) extends AnyVal {
+    implicit class DateRangeLimitMutableBuilder[Self <: DateRangeLimit[?], D] (val x: Self & DateRangeLimit[D]) extends AnyVal {
       
       @scala.inline
       def setFrom(value: D): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
@@ -630,132 +627,131 @@ object optionsMod {
   }
   
   /* Inlined std.Partial<flatpickr.flatpickr/dist/types/options.BaseOptions> */
-  @js.native
   trait Options extends StObject {
     
-    var allowInput: js.UndefOr[Boolean] = js.native
+    var allowInput: js.UndefOr[Boolean] = js.undefined
     
-    var allowInvalidPreload: js.UndefOr[Boolean] = js.native
+    var allowInvalidPreload: js.UndefOr[Boolean] = js.undefined
     
-    var altFormat: js.UndefOr[String] = js.native
+    var altFormat: js.UndefOr[String] = js.undefined
     
-    var altInput: js.UndefOr[Boolean] = js.native
+    var altInput: js.UndefOr[Boolean] = js.undefined
     
-    var altInputClass: js.UndefOr[String] = js.native
+    var altInputClass: js.UndefOr[String] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var ariaDateFormat: js.UndefOr[String] = js.native
+    var ariaDateFormat: js.UndefOr[String] = js.undefined
     
-    var autoFillDefaultTime: js.UndefOr[Boolean] = js.native
+    var autoFillDefaultTime: js.UndefOr[Boolean] = js.undefined
     
-    var clickOpens: js.UndefOr[Boolean] = js.native
+    var clickOpens: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnSelect: js.UndefOr[Boolean] = js.native
+    var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var conjunction: js.UndefOr[String] = js.native
+    var conjunction: js.UndefOr[String] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var defaultDate: js.UndefOr[DateOption | js.Array[DateOption]] = js.native
+    var defaultDate: js.UndefOr[DateOption | js.Array[DateOption]] = js.undefined
     
-    var defaultHour: js.UndefOr[Double] = js.native
+    var defaultHour: js.UndefOr[Double] = js.undefined
     
-    var defaultMinute: js.UndefOr[Double] = js.native
+    var defaultMinute: js.UndefOr[Double] = js.undefined
     
-    var defaultSeconds: js.UndefOr[Double] = js.native
+    var defaultSeconds: js.UndefOr[Double] = js.undefined
     
-    var disable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.native
+    var disable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.undefined
     
-    var disableMobile: js.UndefOr[Boolean] = js.native
+    var disableMobile: js.UndefOr[Boolean] = js.undefined
     
-    var enable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.native
+    var enable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.undefined
     
-    var enableSeconds: js.UndefOr[Boolean] = js.native
+    var enableSeconds: js.UndefOr[Boolean] = js.undefined
     
-    var enableTime: js.UndefOr[Boolean] = js.native
+    var enableTime: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.native
+    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
-    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
+    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.undefined
     
-    var hourIncrement: js.UndefOr[Double] = js.native
+    var hourIncrement: js.UndefOr[Double] = js.undefined
     
-    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.native
+    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[key | CustomLocale] = js.native
+    var locale: js.UndefOr[key | CustomLocale] = js.undefined
     
-    var maxDate: js.UndefOr[DateOption] = js.native
+    var maxDate: js.UndefOr[DateOption] = js.undefined
     
-    var maxTime: js.UndefOr[DateOption] = js.native
+    var maxTime: js.UndefOr[DateOption] = js.undefined
     
-    var minDate: js.UndefOr[DateOption] = js.native
+    var minDate: js.UndefOr[DateOption] = js.undefined
     
-    var minTime: js.UndefOr[DateOption] = js.native
+    var minTime: js.UndefOr[DateOption] = js.undefined
     
-    var minuteIncrement: js.UndefOr[Double] = js.native
+    var minuteIncrement: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[single | multiple | range | time] = js.native
+    var mode: js.UndefOr[single | multiple | range | time] = js.undefined
     
-    var monthSelectorType: js.UndefOr[dropdown | static] = js.native
+    var monthSelectorType: js.UndefOr[dropdown | static] = js.undefined
     
-    var nextArrow: js.UndefOr[String] = js.native
+    var nextArrow: js.UndefOr[String] = js.undefined
     
-    var noCalendar: js.UndefOr[Boolean] = js.native
+    var noCalendar: js.UndefOr[Boolean] = js.undefined
     
-    var now: js.UndefOr[DateOption] = js.native
+    var now: js.UndefOr[DateOption] = js.undefined
     
-    var onChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onClose: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onClose: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onDayCreate: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onDayCreate: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onDestroy: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onDestroy: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onKeyDown: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onKeyDown: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onMonthChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onMonthChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onOpen: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onOpen: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onParseConfig: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onParseConfig: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onPreCalendarPosition: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onPreCalendarPosition: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onReady: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onReady: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onValueUpdate: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onValueUpdate: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onYearChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onYearChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.native
+    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.undefined
     
-    var position: js.UndefOr[auto | above | below] = js.native
+    var position: js.UndefOr[auto | above | below] = js.undefined
     
-    var positionElement: js.UndefOr[Element] = js.native
+    var positionElement: js.UndefOr[Element] = js.undefined
     
-    var prevArrow: js.UndefOr[String] = js.native
+    var prevArrow: js.UndefOr[String] = js.undefined
     
-    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.native
+    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.undefined
     
-    var showMonths: js.UndefOr[Double] = js.native
+    var showMonths: js.UndefOr[Double] = js.undefined
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var time_24hr: js.UndefOr[Boolean] = js.native
+    var time_24hr: js.UndefOr[Boolean] = js.undefined
     
-    var weekNumbers: js.UndefOr[Boolean] = js.native
+    var weekNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -1253,144 +1249,143 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait ParsedOptions extends StObject {
     
-    var _disable: js.Array[DateLimit[Date]] = js.native
+    var _disable: js.Array[DateLimit[Date]]
     
-    var _enable: js.Array[DateLimit[Date]] = js.native
+    var _enable: js.Array[DateLimit[Date]]
     
-    var _maxDate: js.UndefOr[Date] = js.native
+    var _maxDate: js.UndefOr[Date] = js.undefined
     
-    var _maxTime: js.UndefOr[Date] = js.native
+    var _maxTime: js.UndefOr[Date] = js.undefined
     
-    var _minDate: js.UndefOr[Date] = js.native
+    var _minDate: js.UndefOr[Date] = js.undefined
     
-    var _minTime: js.UndefOr[Date] = js.native
+    var _minTime: js.UndefOr[Date] = js.undefined
     
-    var allowInput: Boolean = js.native
+    var allowInput: Boolean
     
-    var allowInvalidPreload: Boolean = js.native
+    var allowInvalidPreload: Boolean
     
-    var altFormat: String = js.native
+    var altFormat: String
     
-    var altInput: Boolean = js.native
+    var altInput: Boolean
     
-    var altInputClass: String = js.native
+    var altInputClass: String
     
-    var animate: Boolean = js.native
+    var animate: Boolean
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var ariaDateFormat: String = js.native
+    var ariaDateFormat: String
     
-    var autoFillDefaultTime: Boolean = js.native
+    var autoFillDefaultTime: Boolean
     
-    var clickOpens: Boolean = js.native
+    var clickOpens: Boolean
     
-    var closeOnSelect: Boolean = js.native
+    var closeOnSelect: Boolean
     
-    var conjunction: String = js.native
+    var conjunction: String
     
-    var dateFormat: String = js.native
+    var dateFormat: String
     
-    var defaultDate: js.UndefOr[Date | js.Array[Date]] = js.native
+    var defaultDate: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var defaultHour: Double = js.native
+    var defaultHour: Double
     
-    var defaultMinute: Double = js.native
+    var defaultMinute: Double
     
-    var defaultSeconds: Double = js.native
+    var defaultSeconds: Double
     
-    var disable: js.Array[DateLimit[Date]] = js.native
+    var disable: js.Array[DateLimit[Date]]
     
-    var disableMobile: Boolean = js.native
+    var disableMobile: Boolean
     
-    var enable: js.Array[DateLimit[Date]] = js.native
+    var enable: js.Array[DateLimit[Date]]
     
-    var enableSeconds: Boolean = js.native
+    var enableSeconds: Boolean
     
-    var enableTime: Boolean = js.native
+    var enableTime: Boolean
     
-    def errorHandler(err: Error): Unit = js.native
+    def errorHandler(err: Error): Unit
     
-    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.native
+    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
-    def getWeek(date: Date): String | Double = js.native
+    def getWeek(date: Date): String | Double
     
-    var hourIncrement: Double = js.native
+    var hourIncrement: Double
     
-    var ignoredFocusElements: js.Array[HTMLElement] = js.native
+    var ignoredFocusElements: js.Array[HTMLElement]
     
-    var `inline`: Boolean = js.native
+    var `inline`: Boolean
     
-    var locale: key | CustomLocale = js.native
+    var locale: key | CustomLocale
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var maxTime: js.UndefOr[Date] = js.native
+    var maxTime: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var minTime: js.UndefOr[Date] = js.native
+    var minTime: js.UndefOr[Date] = js.undefined
     
-    var minuteIncrement: Double = js.native
+    var minuteIncrement: Double
     
-    var mode: single | multiple | range | time = js.native
+    var mode: single | multiple | range | time
     
-    var monthSelectorType: String = js.native
+    var monthSelectorType: String
     
-    var nextArrow: String = js.native
+    var nextArrow: String
     
-    var noCalendar: Boolean = js.native
+    var noCalendar: Boolean
     
-    var now: Date = js.native
+    var now: Date
     
-    var onChange: js.Array[Hook] = js.native
+    var onChange: js.Array[Hook]
     
-    var onClose: js.Array[Hook] = js.native
+    var onClose: js.Array[Hook]
     
-    var onDayCreate: js.Array[Hook] = js.native
+    var onDayCreate: js.Array[Hook]
     
-    var onDestroy: js.Array[Hook] = js.native
+    var onDestroy: js.Array[Hook]
     
-    var onKeyDown: js.Array[Hook] = js.native
+    var onKeyDown: js.Array[Hook]
     
-    var onMonthChange: js.Array[Hook] = js.native
+    var onMonthChange: js.Array[Hook]
     
-    var onOpen: js.Array[Hook] = js.native
+    var onOpen: js.Array[Hook]
     
-    var onParseConfig: js.Array[Hook] = js.native
+    var onParseConfig: js.Array[Hook]
     
-    var onPreCalendarPosition: js.Array[Hook] = js.native
+    var onPreCalendarPosition: js.Array[Hook]
     
-    var onReady: js.Array[Hook] = js.native
+    var onReady: js.Array[Hook]
     
-    var onValueUpdate: js.Array[Hook] = js.native
+    var onValueUpdate: js.Array[Hook]
     
-    var onYearChange: js.Array[Hook] = js.native
+    var onYearChange: js.Array[Hook]
     
-    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.native
+    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.undefined
     
-    var plugins: js.Array[Plugin[js.Object]] = js.native
+    var plugins: js.Array[Plugin[js.Object]]
     
-    var position: auto | above | below = js.native
+    var position: auto | above | below
     
-    var positionElement: js.UndefOr[HTMLElement] = js.native
+    var positionElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var prevArrow: String = js.native
+    var prevArrow: String
     
-    var shorthandCurrentMonth: Boolean = js.native
+    var shorthandCurrentMonth: Boolean
     
-    var showMonths: Double = js.native
+    var showMonths: Double
     
-    var static: Boolean = js.native
+    var static: Boolean
     
-    var time_24hr: Boolean = js.native
+    var time_24hr: Boolean
     
-    var weekNumbers: Boolean = js.native
+    var weekNumbers: Boolean
     
-    var wrap: Boolean = js.native
+    var wrap: Boolean
   }
   object ParsedOptions {
     
@@ -1762,5 +1757,5 @@ object optionsMod {
     }
   }
   
-  type Plugin[E] = js.Function1[/* fp */ Instance with E, Options]
+  type Plugin[E] = js.Function1[/* fp */ Instance & E, Options]
 }

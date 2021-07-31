@@ -4,7 +4,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.transportMod.TransportConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportManagerMod {

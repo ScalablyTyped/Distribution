@@ -2,66 +2,64 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditFinding extends StObject {
   
   /**
     * The audit check that generated this result.
     */
-  var checkName: js.UndefOr[AuditCheckName] = js.native
+  var checkName: js.UndefOr[AuditCheckName] = js.undefined
   
   /**
     * A unique identifier for this set of audit findings. This identifier is used to apply mitigation tasks to one or more sets of findings.
     */
-  var findingId: js.UndefOr[FindingId] = js.native
+  var findingId: js.UndefOr[FindingId] = js.undefined
   
   /**
     * The time the result (finding) was discovered.
     */
-  var findingTime: js.UndefOr[Timestamp] = js.native
+  var findingTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  Indicates whether the audit finding was suppressed or not during reporting. 
     */
-  var isSuppressed: js.UndefOr[IsSuppressed] = js.native
+  var isSuppressed: js.UndefOr[IsSuppressed] = js.undefined
   
   /**
     * The resource that was found to be noncompliant with the audit check.
     */
-  var nonCompliantResource: js.UndefOr[NonCompliantResource] = js.native
+  var nonCompliantResource: js.UndefOr[NonCompliantResource] = js.undefined
   
   /**
     * The reason the resource was noncompliant.
     */
-  var reasonForNonCompliance: js.UndefOr[ReasonForNonCompliance] = js.native
+  var reasonForNonCompliance: js.UndefOr[ReasonForNonCompliance] = js.undefined
   
   /**
     * A code that indicates the reason that the resource was noncompliant.
     */
-  var reasonForNonComplianceCode: js.UndefOr[ReasonForNonComplianceCode] = js.native
+  var reasonForNonComplianceCode: js.UndefOr[ReasonForNonComplianceCode] = js.undefined
   
   /**
     * The list of related resources.
     */
-  var relatedResources: js.UndefOr[RelatedResources] = js.native
+  var relatedResources: js.UndefOr[RelatedResources] = js.undefined
   
   /**
     * The severity of the result (finding).
     */
-  var severity: js.UndefOr[AuditFindingSeverity] = js.native
+  var severity: js.UndefOr[AuditFindingSeverity] = js.undefined
   
   /**
     * The ID of the audit that generated this result (finding).
     */
-  var taskId: js.UndefOr[AuditTaskId] = js.native
+  var taskId: js.UndefOr[AuditTaskId] = js.undefined
   
   /**
     * The time the audit started.
     */
-  var taskStartTime: js.UndefOr[Timestamp] = js.native
+  var taskStartTime: js.UndefOr[Timestamp] = js.undefined
 }
 object AuditFinding {
   

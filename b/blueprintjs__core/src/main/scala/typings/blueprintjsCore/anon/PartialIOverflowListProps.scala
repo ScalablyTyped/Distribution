@@ -7,34 +7,32 @@ import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/overflow-list/overflowList.IOverflowListProps<@blueprintjs/core.@blueprintjs/core/lib/esm/components/breadcrumbs/breadcrumb.IBreadcrumbProps>> */
-@js.native
 trait PartialIOverflowListProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var collapseFrom: js.UndefOr[Boundary] = js.native
+  var collapseFrom: js.UndefOr[Boundary] = js.undefined
   
-  var items: js.UndefOr[js.Array[IBreadcrumbProps]] = js.native
+  var items: js.UndefOr[js.Array[IBreadcrumbProps]] = js.undefined
   
-  var minVisibleItems: js.UndefOr[Double] = js.native
+  var minVisibleItems: js.UndefOr[Double] = js.undefined
   
-  var observeParents: js.UndefOr[Boolean] = js.native
+  var observeParents: js.UndefOr[Boolean] = js.undefined
   
-  var onOverflow: js.UndefOr[js.Function1[/* overflowItems */ js.Array[IBreadcrumbProps], Unit]] = js.native
+  var onOverflow: js.UndefOr[js.Function1[/* overflowItems */ js.Array[IBreadcrumbProps], Unit]] = js.undefined
   
-  var overflowRenderer: js.UndefOr[js.Function1[/* overflowItems */ js.Array[IBreadcrumbProps], ReactNode]] = js.native
+  var overflowRenderer: js.UndefOr[js.Function1[/* overflowItems */ js.Array[IBreadcrumbProps], ReactNode]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   var tagName: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var visibleItemRenderer: js.UndefOr[js.Function2[/* item */ IBreadcrumbProps, /* index */ Double, ReactChild]] = js.native
+  var visibleItemRenderer: js.UndefOr[js.Function2[/* item */ IBreadcrumbProps, /* index */ Double, ReactChild]] = js.undefined
 }
 object PartialIOverflowListProps {
   

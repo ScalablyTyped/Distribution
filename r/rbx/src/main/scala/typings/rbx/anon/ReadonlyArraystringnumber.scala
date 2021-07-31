@@ -4,18 +4,16 @@ import typings.std.FlatArray
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Array<string | number>> */
-@js.native
 trait ReadonlyArraystringnumber extends StObject {
   
-  val concat: js.Function1[/* repeated */ js.Array[String | Double], js.Array[String | Double]] = js.native
+  val concat: js.Function1[/* repeated */ js.Array[String | Double], js.Array[String | Double]]
   
-  val copyWithin: js.Function2[/* target */ Double, /* start */ Double, this.type] = js.native
+  val copyWithin: js.Function2[/* target */ Double, /* start */ Double, this.type]
   
-  val entries: js.Function0[IterableIterator[js.Tuple2[Double, String | Double]]] = js.native
+  val entries: js.Function0[IterableIterator[js.Tuple2[Double, String | Double]]]
   
   val every: js.Function1[
     /* predicate */ js.Function3[
@@ -25,9 +23,9 @@ trait ReadonlyArraystringnumber extends StObject {
       Boolean
     ], 
     /* is std.Array<string | number> */ Boolean
-  ] = js.native
+  ]
   
-  val fill: js.Function1[/* value */ String | Double, this.type] = js.native
+  val fill: js.Function1[/* value */ String | Double, this.type]
   
   val filter: js.Function1[
     /* predicate */ js.Function3[
@@ -37,7 +35,7 @@ trait ReadonlyArraystringnumber extends StObject {
       Boolean
     ], 
     js.Array[String | Double]
-  ] = js.native
+  ]
   
   val find: js.Function1[
     /* predicate */ js.ThisFunction3[
@@ -48,30 +46,30 @@ trait ReadonlyArraystringnumber extends StObject {
       Boolean
     ], 
     js.UndefOr[String | Double]
-  ] = js.native
+  ]
   
   val findIndex: js.Function1[
     /* predicate */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
-      _
+      js.Any
     ], 
     Double
-  ] = js.native
+  ]
   
-  val flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, typings.rbx.rbxNumbers.`1`]]] = js.native
+  val flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]]
   
   val flatMap: js.Function1[
     /* callback */ js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
+      /* this */ Unit, 
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _ | js.Array[_]
+      js.Any | js.Array[js.Any]
     ], 
-    js.Array[_]
-  ] = js.native
+    js.Array[js.Any]
+  ]
   
   val forEach: js.Function1[
     /* callbackfn */ js.Function3[
@@ -81,33 +79,33 @@ trait ReadonlyArraystringnumber extends StObject {
       Unit
     ], 
     Unit
-  ] = js.native
+  ]
   
-  val includes: js.Function1[/* searchElement */ String | Double, Boolean] = js.native
+  val includes: js.Function1[/* searchElement */ String | Double, Boolean]
   
-  val indexOf: js.Function1[/* searchElement */ String | Double, Double] = js.native
+  val indexOf: js.Function1[/* searchElement */ String | Double, Double]
   
-  val join: js.Function0[String] = js.native
+  val join: js.Function0[String]
   
-  val keys: js.Function0[IterableIterator[Double]] = js.native
+  val keys: js.Function0[IterableIterator[Double]]
   
-  val lastIndexOf: js.Function1[/* searchElement */ String | Double, Double] = js.native
+  val lastIndexOf: js.Function1[/* searchElement */ String | Double, Double]
   
-  val length: Double = js.native
+  val length: Double
   
   val map: js.Function1[
     /* callbackfn */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _
+      js.Any
     ], 
-    js.Array[_]
-  ] = js.native
+    js.Array[js.Any]
+  ]
   
-  val pop: js.Function0[js.UndefOr[String | Double]] = js.native
+  val pop: js.Function0[js.UndefOr[String | Double]]
   
-  val push: js.Function1[/* repeated */ String | Double, Double] = js.native
+  val push: js.Function1[/* repeated */ String | Double, Double]
   
   val reduce: js.Function1[
     /* callbackfn */ js.Function4[
@@ -118,7 +116,7 @@ trait ReadonlyArraystringnumber extends StObject {
       String | Double
     ], 
     String | Double
-  ] = js.native
+  ]
   
   val reduceRight: js.Function1[
     /* callbackfn */ js.Function4[
@@ -129,37 +127,37 @@ trait ReadonlyArraystringnumber extends StObject {
       String | Double
     ], 
     String | Double
-  ] = js.native
+  ]
   
-  val reverse: js.Function0[js.Array[String | Double]] = js.native
+  val reverse: js.Function0[js.Array[String | Double]]
   
-  val shift: js.Function0[js.UndefOr[String | Double]] = js.native
+  val shift: js.Function0[js.UndefOr[String | Double]]
   
-  val slice: js.Function0[js.Array[String | Double]] = js.native
+  val slice: js.Function0[js.Array[String | Double]]
   
   val some: js.Function1[
     /* predicate */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _
+      js.Any
     ], 
     Boolean
-  ] = js.native
+  ]
   
-  val sort: js.Function0[this.type] = js.native
+  val sort: js.Function0[this.type]
   
-  val splice: js.Function1[/* start */ Double, js.Array[String | Double]] = js.native
+  val splice: js.Function1[/* start */ Double, js.Array[String | Double]]
   
   @JSName("toLocaleString")
-  val toLocaleString_FReadonlyArraystringnumber: js.Function0[String] = js.native
+  val toLocaleString_FReadonlyArraystringnumber: js.Function0[String]
   
   @JSName("toString")
-  val toString_FReadonlyArraystringnumber: js.Function0[String] = js.native
+  val toString_FReadonlyArraystringnumber: js.Function0[String]
   
-  val unshift: js.Function1[/* repeated */ String | Double, Double] = js.native
+  val unshift: js.Function1[/* repeated */ String | Double, Double]
   
-  val values: js.Function0[IterableIterator[String | Double]] = js.native
+  val values: js.Function0[IterableIterator[String | Double]]
 }
 object ReadonlyArraystringnumber {
   
@@ -192,16 +190,16 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
-      _
+      js.Any
     ] => Double,
-    flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, typings.rbx.rbxNumbers.`1`]]],
+    flat: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]],
     flatMap: /* callback */ js.ThisFunction3[
-      /* this */ js.UndefOr[scala.Nothing], 
+      /* this */ Unit, 
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _ | js.Array[_]
-    ] => js.Array[_],
+      js.Any | js.Array[js.Any]
+    ] => js.Array[js.Any],
     forEach: /* callbackfn */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
@@ -218,8 +216,8 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _
-    ] => js.Array[_],
+      js.Any
+    ] => js.Array[js.Any],
     pop: () => js.UndefOr[String | Double],
     push: /* repeated */ String | Double => Double,
     reduce: /* callbackfn */ js.Function4[
@@ -243,7 +241,7 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* array */ js.Array[String | Double], 
-      _
+      js.Any
     ] => Boolean,
     sort: () => ReadonlyArraystringnumber,
     splice: /* start */ Double => js.Array[String | Double],
@@ -309,22 +307,24 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* obj */ js.Array[String | Double], 
-          _
+          js.Any
         ] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setFlat(value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[_, typings.rbx.rbxNumbers.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    def setFlat(
+      value: js.ThisFunction0[/* this */ js.Any, js.Array[FlatArray[js.Any, typings.rbx.rbxNumbers.`1`]]]
+    ): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFlatMap(
       value: /* callback */ js.ThisFunction3[
-          /* this */ js.UndefOr[scala.Nothing], 
+          /* this */ Unit, 
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          _ | js.Array[_]
-        ] => js.Array[_]
+          js.Any | js.Array[js.Any]
+        ] => js.Array[js.Any]
     ): Self = StObject.set(x, "flatMap", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -361,8 +361,8 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          _
-        ] => js.Array[_]
+          js.Any
+        ] => js.Array[js.Any]
     ): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -408,7 +408,7 @@ object ReadonlyArraystringnumber {
           /* value */ String | Double, 
           /* index */ Double, 
           /* array */ js.Array[String | Double], 
-          _
+          js.Any
         ] => Boolean
     ): Self = StObject.set(x, "some", js.Any.fromFunction1(value))
     

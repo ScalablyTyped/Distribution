@@ -10,7 +10,6 @@ import typings.openpgp.mod.packet.Signature
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "SubKey")
@@ -103,8 +102,8 @@ class SubKey () extends StObject {
     * @param primaryKey primary key used for validation
     * @returns
     */
-  def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[Unit] = js.native
+  def update(subKey: typings.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
   
   def verify(primaryKey: PublicKey, date: Date): js.Promise[keyStatus] = js.native
   /**

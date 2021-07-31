@@ -2,81 +2,79 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribedServer extends StObject {
   
   /**
     * Specifies the unique Amazon Resource Name (ARN) of the server.
     */
-  var Arn: typings.awsSdk.transferMod.Arn = js.native
+  var Arn: typings.awsSdk.transferMod.Arn
   
   /**
     * Specifies the ARN of the AWS Certificate Manager (ACM) certificate. Required when Protocols is set to FTPS.
     */
-  var Certificate: js.UndefOr[typings.awsSdk.transferMod.Certificate] = js.native
+  var Certificate: js.UndefOr[typings.awsSdk.transferMod.Certificate] = js.undefined
   
   /**
     * Specifies the virtual private cloud (VPC) endpoint settings that you configured for your server.
     */
-  var EndpointDetails: js.UndefOr[typings.awsSdk.transferMod.EndpointDetails] = js.native
+  var EndpointDetails: js.UndefOr[typings.awsSdk.transferMod.EndpointDetails] = js.undefined
   
   /**
     * Defines the type of endpoint that your server is connected to. If your server is connected to a VPC endpoint, your server isn't accessible over the public internet.
     */
-  var EndpointType: js.UndefOr[typings.awsSdk.transferMod.EndpointType] = js.native
+  var EndpointType: js.UndefOr[typings.awsSdk.transferMod.EndpointType] = js.undefined
   
   /**
     * Specifies the Base64-encoded SHA256 fingerprint of the server's host key. This value is equivalent to the output of the ssh-keygen -l -f my-new-server-key command.
     */
-  var HostKeyFingerprint: js.UndefOr[typings.awsSdk.transferMod.HostKeyFingerprint] = js.native
+  var HostKeyFingerprint: js.UndefOr[typings.awsSdk.transferMod.HostKeyFingerprint] = js.undefined
   
   /**
     * Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of a server is SERVICE_MANAGED.
     */
-  var IdentityProviderDetails: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderDetails] = js.native
+  var IdentityProviderDetails: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderDetails] = js.undefined
   
   /**
     * Specifies the mode of authentication method enabled for this service. A value of SERVICE_MANAGED means that you are using this server to store and access user credentials within the service. A value of API_GATEWAY indicates that you have integrated an API Gateway endpoint that will be invoked for authenticating your user into the service.
     */
-  var IdentityProviderType: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderType] = js.native
+  var IdentityProviderType: js.UndefOr[typings.awsSdk.transferMod.IdentityProviderType] = js.undefined
   
   /**
     * Specifies the AWS Identity and Access Management (IAM) role that allows a server to turn on Amazon CloudWatch logging for Amazon S3 events. When set, user activity can be viewed in your CloudWatch logs.
     */
-  var LoggingRole: js.UndefOr[Role] = js.native
+  var LoggingRole: js.UndefOr[Role] = js.undefined
   
   /**
     * Specifies the file transfer protocol or protocols over which your file transfer protocol client can connect to your server's endpoint. The available protocols are:    SFTP (Secure Shell (SSH) File Transfer Protocol): File transfer over SSH    FTPS (File Transfer Protocol Secure): File transfer with TLS encryption    FTP (File Transfer Protocol): Unencrypted file transfer  
     */
-  var Protocols: js.UndefOr[typings.awsSdk.transferMod.Protocols] = js.native
+  var Protocols: js.UndefOr[typings.awsSdk.transferMod.Protocols] = js.undefined
   
   /**
     * Specifies the name of the security policy that is attached to the server.
     */
-  var SecurityPolicyName: js.UndefOr[typings.awsSdk.transferMod.SecurityPolicyName] = js.native
+  var SecurityPolicyName: js.UndefOr[typings.awsSdk.transferMod.SecurityPolicyName] = js.undefined
   
   /**
     * Specifies the unique system-assigned identifier for a server that you instantiate.
     */
-  var ServerId: js.UndefOr[typings.awsSdk.transferMod.ServerId] = js.native
+  var ServerId: js.UndefOr[typings.awsSdk.transferMod.ServerId] = js.undefined
   
   /**
     * Specifies the condition of a server for the server that was described. A value of ONLINE indicates that the server can accept jobs and transfer files. A State value of OFFLINE means that the server cannot perform file transfer operations. The states of STARTING and STOPPING indicate that the server is in an intermediate state, either not fully able to respond, or not fully offline. The values of START_FAILED or STOP_FAILED can indicate an error condition.
     */
-  var State: js.UndefOr[typings.awsSdk.transferMod.State] = js.native
+  var State: js.UndefOr[typings.awsSdk.transferMod.State] = js.undefined
   
   /**
     * Specifies the key-value pairs that you can use to search for and group servers that were assigned to the server that was described.
     */
-  var Tags: js.UndefOr[typings.awsSdk.transferMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.transferMod.Tags] = js.undefined
   
   /**
     * Specifies the number of users that are assigned to a server you specified with the ServerId.
     */
-  var UserCount: js.UndefOr[typings.awsSdk.transferMod.UserCount] = js.native
+  var UserCount: js.UndefOr[typings.awsSdk.transferMod.UserCount] = js.undefined
 }
 object DescribedServer {
   

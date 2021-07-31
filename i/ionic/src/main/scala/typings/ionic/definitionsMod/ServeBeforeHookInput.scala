@@ -3,21 +3,21 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.serveColonbefore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServeBeforeHookInput extends HookInput {
+trait ServeBeforeHookInput
+  extends StObject
+     with HookInput {
   
-  val name: serveColonbefore = js.native
+  val name: serveColonbefore
   
-  val serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions = js.native
+  val serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions
 }
 object ServeBeforeHookInput {
   
   @scala.inline
-  def apply(name: serveColonbefore, serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): ServeBeforeHookInput = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
+  def apply(serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): ServeBeforeHookInput = {
+    val __obj = js.Dynamic.literal(name = "serve:before", serve = serve.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeBeforeHookInput]
   }
   

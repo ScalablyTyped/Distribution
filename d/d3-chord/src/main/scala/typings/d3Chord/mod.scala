@@ -4,55 +4,53 @@ import typings.std.Array
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-chord", "chord")
+  @JSImport("d3-chord", JSImport.Namespace)
   @js.native
-  def chord(): ChordLayout = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-chord", "chordDirected")
-  @js.native
-  def chordDirected(): ChordLayout = js.native
+  @scala.inline
+  def chord(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chord")().asInstanceOf[ChordLayout]
   
-  @JSImport("d3-chord", "chordTranspose")
-  @js.native
-  def chordTranspose(): ChordLayout = js.native
+  @scala.inline
+  def chordDirected(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordDirected")().asInstanceOf[ChordLayout]
   
-  @JSImport("d3-chord", "ribbon")
-  @js.native
-  def ribbon(): RibbonGenerator[_, Ribbon_, RibbonSubgroup] = js.native
-  @JSImport("d3-chord", "ribbon")
-  @js.native
-  def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[_, Datum, SubgroupDatum] = js.native
-  @JSImport("d3-chord", "ribbon")
-  @js.native
-  def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = js.native
+  @scala.inline
+  def chordTranspose(): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("chordTranspose")().asInstanceOf[ChordLayout]
   
-  @js.native
+  @scala.inline
+  def ribbon(): RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Ribbon_, RibbonSubgroup]]
+  
+  @scala.inline
+  def ribbon_DatumSubgroupDatum[Datum, SubgroupDatum](): RibbonGenerator[js.Any, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[js.Any, Datum, SubgroupDatum]]
+  
+  @scala.inline
+  def ribbon_ThisDatumSubgroupDatum[This, Datum, SubgroupDatum](): RibbonGenerator[This, Datum, SubgroupDatum] = ^.asInstanceOf[js.Dynamic].applyDynamic("ribbon")().asInstanceOf[RibbonGenerator[This, Datum, SubgroupDatum]]
+  
   trait ChordGroup extends StObject {
     
     /**
       * The end angle of the chord group in radians
       */
-    var endAngle: Double = js.native
+    var endAngle: Double
     
     /**
       * The node index i
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The start angle of the chord group in radians
       */
-    var startAngle: Double = js.native
+    var startAngle: Double
     
     /**
       * The total outgoing flow value for node i
       */
-    var value: Double = js.native
+    var value: Double
   }
   object ChordGroup {
     
@@ -164,28 +162,27 @@ object mod {
     def sortSubgroups(compare: Null): this.type = js.native
   }
   
-  @js.native
   trait ChordSubgroup extends StObject {
     
     /***
       * End angle of the chord subgroup in radians
       */
-    var endAngle: Double = js.native
+    var endAngle: Double
     
     /**
       * The node index i
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * Start angle of the chord subgroup in radians
       */
-    var startAngle: Double = js.native
+    var startAngle: Double
     
     /**
       * The flow value in matrix[i][j] from node i to node j
       */
-    var value: Double = js.native
+    var value: Double
   }
   object ChordSubgroup {
     
@@ -212,18 +209,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Chord_ extends StObject {
     
     /**
       * Chord subgroup constituting the source of Chord
       */
-    var source: ChordSubgroup = js.native
+    var source: ChordSubgroup
     
     /**
       * Chord subgroup constituting the Target of Chord
       */
-    var target: ChordSubgroup = js.native
+    var target: ChordSubgroup
   }
   object Chord_ {
     
@@ -245,7 +241,9 @@ object mod {
   }
   
   @js.native
-  trait Chords extends Array[Chord_] {
+  trait Chords
+    extends StObject
+       with Array[Chord_] {
     
     /**
       * An array of length n, where each group represents the combined outflow for node i,
@@ -457,23 +455,22 @@ object mod {
     def targetRadius(radius: Double): this.type = js.native
   }
   
-  @js.native
   trait RibbonSubgroup extends StObject {
     
     /**
       * End angle of the ribbon subgroup in radians
       */
-    var endAngle: Double = js.native
+    var endAngle: Double
     
     /**
       * Radius of the ribbon subgroup
       */
-    var radius: Double = js.native
+    var radius: Double
     
     /**
       * Start angle of the ribbon subgroup in radians
       */
-    var startAngle: Double = js.native
+    var startAngle: Double
   }
   object RibbonSubgroup {
     
@@ -497,18 +494,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Ribbon_ extends StObject {
     
     /**
       * Ribbon subgroup constituting the source of the Ribbon
       */
-    var source: RibbonSubgroup = js.native
+    var source: RibbonSubgroup
     
     /**
       * Ribbon subgroup constituting the target of the Ribbon
       */
-    var target: RibbonSubgroup = js.native
+    var target: RibbonSubgroup
   }
   object Ribbon_ {
     

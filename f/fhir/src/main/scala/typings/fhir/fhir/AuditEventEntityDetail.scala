@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional Information about the entity
   */
-@js.native
-trait AuditEventEntityDetail extends BackboneElement {
+trait AuditEventEntityDetail
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'value'.
     */
-  var _value: js.UndefOr[Element] = js.native
+  var _value: js.UndefOr[Element] = js.undefined
   
   /**
     * Name of the property
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Property value
     */
-  var value: base64Binary = js.native
+  var value: base64Binary
 }
 object AuditEventEntityDetail {
   

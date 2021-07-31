@@ -2,30 +2,28 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectUserObject extends StObject {
   
   /**
     * The type of custom Connect configuration being accessed.
     */
-  var configurationtype: js.UndefOr[String] = js.native
+  var configurationtype: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the custom Connect configuration being accessed.
     */
-  var connectId: js.UndefOr[String] = js.native
+  var connectId: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean value that indicates whether the custom Connect configuration is enabled or not.
     */
-  var enabled: js.UndefOr[String] = js.native
+  var enabled: js.UndefOr[String] = js.undefined
   
-  var hasAccess: js.UndefOr[String] = js.native
+  var hasAccess: js.UndefOr[String] = js.undefined
   
-  var senderSearchableItems: js.UndefOr[js.Array[String]] = js.native
+  var senderSearchableItems: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConnectUserObject {
   

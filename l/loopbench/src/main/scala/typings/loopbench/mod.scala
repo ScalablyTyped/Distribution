@@ -5,7 +5,6 @@ import typings.loopbench.loopbenchStrings.unload
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,14 @@ object mod {
   /**
     * Creates a new instance of loopbench.
     */
+  @scala.inline
+  def apply(): LoopBench = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[LoopBench]
+  @scala.inline
+  def apply(options: Options): LoopBench = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[LoopBench]
+  
   @JSImport("loopbench", JSImport.Namespace)
   @js.native
-  def apply(): LoopBench = js.native
-  @JSImport("loopbench", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): LoopBench = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Events:
@@ -110,19 +111,18 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The maximum amount of delay that is tolerated before `overLimit` becomes true,
       * and the `load` event is emitted, defaults to `42`.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The interval at which the eventLoop should be sampled, defaults to `5`.
       */
-    var sampleInterval: js.UndefOr[Double] = js.native
+    var sampleInterval: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

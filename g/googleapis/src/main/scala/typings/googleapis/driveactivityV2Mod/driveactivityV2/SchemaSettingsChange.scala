@@ -2,19 +2,17 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about settings changes.
   */
-@js.native
 trait SchemaSettingsChange extends StObject {
   
   /**
     * The set of changes made to restrictions.
     */
-  var restrictionChanges: js.UndefOr[js.Array[SchemaRestrictionChange]] = js.native
+  var restrictionChanges: js.UndefOr[js.Array[SchemaRestrictionChange]] = js.undefined
 }
 object SchemaSettingsChange {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPropertyValue extends StObject {
   
   /**
     * The quality of the asset property value. The value must be GOOD, BAD, or UNCERTAIN. You can also specify an expression.
     */
-  var quality: js.UndefOr[AssetPropertyQuality] = js.native
+  var quality: js.UndefOr[AssetPropertyQuality] = js.undefined
   
   /**
     * The timestamp associated with the asset property value. The default is the current event time.
     */
-  var timestamp: js.UndefOr[AssetPropertyTimestamp] = js.native
+  var timestamp: js.UndefOr[AssetPropertyTimestamp] = js.undefined
   
   /**
     * The value to send to an asset property.
     */
-  var value: AssetPropertyVariant = js.native
+  var value: AssetPropertyVariant
 }
 object AssetPropertyValue {
   

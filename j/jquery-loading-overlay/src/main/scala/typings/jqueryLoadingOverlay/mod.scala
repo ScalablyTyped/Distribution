@@ -3,26 +3,24 @@ package typings.jqueryLoadingOverlay
 import typings.jqueryLoadingOverlay.jqueryLoadingOverlayStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{  loadingClass :string,   overlayClass :string,   spinnerClass :string,   iconClass :string,   textClass :string,   loadingText :string}> */
-  @js.native
   trait Options extends StObject {
     
-    var iconClass: js.UndefOr[String] = js.native
+    var iconClass: js.UndefOr[String] = js.undefined
     
-    var loadingClass: js.UndefOr[String] = js.native
+    var loadingClass: js.UndefOr[String] = js.undefined
     
-    var loadingText: js.UndefOr[String] = js.native
+    var loadingText: js.UndefOr[String] = js.undefined
     
-    var overlayClass: js.UndefOr[String] = js.native
+    var overlayClass: js.UndefOr[String] = js.undefined
     
-    var spinnerClass: js.UndefOr[String] = js.native
+    var spinnerClass: js.UndefOr[String] = js.undefined
     
-    var textClass: js.UndefOr[String] = js.native
+    var textClass: js.UndefOr[String] = js.undefined
   }
   object Options {
     

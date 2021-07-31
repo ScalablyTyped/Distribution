@@ -7,21 +7,20 @@ import typings.node.nodeStrings.pipe
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonSpawnOptions
-  extends CommonOptions
+  extends StObject
+     with CommonOptions
      with MessagingOptions {
   
-  var argv0: js.UndefOr[String] = js.native
+  var argv0: js.UndefOr[String] = js.undefined
   
-  var shell: js.UndefOr[Boolean | String] = js.native
+  var shell: js.UndefOr[Boolean | String] = js.undefined
   
-  var stdio: js.UndefOr[StdioOptions] = js.native
+  var stdio: js.UndefOr[StdioOptions] = js.undefined
   
-  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.native
+  var windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
 }
 object CommonSpawnOptions {
   

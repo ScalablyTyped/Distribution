@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object licensingV1Mod {
@@ -69,7 +68,7 @@ object licensingV1Mod {
         */
       def delete(): GaxiosPromise[Unit] = js.native
       def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def delete(params: ParamsResourceLicenseassignmentsDelete): GaxiosPromise[Unit] = js.native
       def delete(params: ParamsResourceLicenseassignmentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
       def delete(
@@ -100,7 +99,7 @@ object licensingV1Mod {
         */
       def get(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def get(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def get(params: ParamsResourceLicenseassignmentsGet): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def get(
         params: ParamsResourceLicenseassignmentsGet,
@@ -134,7 +133,7 @@ object licensingV1Mod {
         */
       def insert(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def insert(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
-      def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
+      def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def insert(params: ParamsResourceLicenseassignmentsInsert): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def insert(
         params: ParamsResourceLicenseassignmentsInsert,
@@ -169,7 +168,7 @@ object licensingV1Mod {
         */
       def listForProduct(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProduct(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
-      def listForProduct(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
+      def listForProduct(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProduct(params: ParamsResourceLicenseassignmentsListforproduct): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProduct(
         params: ParamsResourceLicenseassignmentsListforproduct,
@@ -205,7 +204,7 @@ object licensingV1Mod {
         */
       def listForProductAndSku(): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProductAndSku(callback: BodyResponseCallback[SchemaLicenseAssignmentList]): Unit = js.native
-      def listForProductAndSku(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
+      def listForProductAndSku(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProductAndSku(params: ParamsResourceLicenseassignmentsListforproductandsku): GaxiosPromise[SchemaLicenseAssignmentList] = js.native
       def listForProductAndSku(
         params: ParamsResourceLicenseassignmentsListforproductandsku,
@@ -240,7 +239,7 @@ object licensingV1Mod {
         */
       def patch(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def patch(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
-      def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
+      def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def patch(params: ParamsResourceLicenseassignmentsPatch): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def patch(
         params: ParamsResourceLicenseassignmentsPatch,
@@ -275,7 +274,7 @@ object licensingV1Mod {
         */
       def update(): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def update(callback: BodyResponseCallback[SchemaLicenseAssignment]): Unit = js.native
-      def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
+      def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def update(params: ParamsResourceLicenseassignmentsUpdate): GaxiosPromise[SchemaLicenseAssignment] = js.native
       def update(
         params: ParamsResourceLicenseassignmentsUpdate,
@@ -294,16 +293,17 @@ object licensingV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -315,28 +315,29 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsDelete extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsDelete
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Name for sku
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
       /**
         * email id or unique Id of the user
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsDelete {
       
@@ -375,28 +376,29 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsGet extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Name for sku
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
       /**
         * email id or unique Id of the user
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsGet {
       
@@ -435,28 +437,29 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsInsert extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsInsert
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaLicenseAssignmentInsert] = js.native
+      var requestBody: js.UndefOr[SchemaLicenseAssignmentInsert] = js.undefined
       
       /**
         * Name for sku
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsInsert {
       
@@ -495,36 +498,37 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsListforproduct extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsListforproduct
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * CustomerId represents the customer for whom licenseassignments are
         * queried
         */
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
       /**
         * Maximum number of campaigns to return at one time. Must be positive.
         * Optional. Default value is 100.
         */
-      var maxResults: js.UndefOr[Double] = js.native
+      var maxResults: js.UndefOr[Double] = js.undefined
       
       /**
         * Token to fetch the next page.Optional. By default server will return
         * first page
         */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsListforproduct {
       
@@ -569,41 +573,42 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsListforproductandsku extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsListforproductandsku
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * CustomerId represents the customer for whom licenseassignments are
         * queried
         */
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
       /**
         * Maximum number of campaigns to return at one time. Must be positive.
         * Optional. Default value is 100.
         */
-      var maxResults: js.UndefOr[Double] = js.native
+      var maxResults: js.UndefOr[Double] = js.undefined
       
       /**
         * Token to fetch the next page.Optional. By default server will return
         * first page
         */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Name for sku
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsListforproductandsku {
       
@@ -654,33 +659,34 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsPatch extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsPatch
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.native
+      var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.undefined
       
       /**
         * Name for sku for which license would be revoked
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
       /**
         * email id or unique Id of the user
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsPatch {
       
@@ -725,33 +731,34 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceLicenseassignmentsUpdate extends StandardParameters {
+    trait ParamsResourceLicenseassignmentsUpdate
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Name for product
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.native
+      var requestBody: js.UndefOr[SchemaLicenseAssignment] = js.undefined
       
       /**
         * Name for sku for which license would be revoked
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
       /**
         * email id or unique Id of the user
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceLicenseassignmentsUpdate {
       
@@ -799,48 +806,47 @@ object licensingV1Mod {
     /**
       * Template for LiscenseAssignment Resource
       */
-    @js.native
     trait SchemaLicenseAssignment extends StObject {
       
       /**
         * ETag of the resource.
         */
-      var etags: js.UndefOr[String] = js.native
+      var etags: js.UndefOr[String] = js.undefined
       
       /**
         * Identifies the resource as a LicenseAssignment.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Id of the product.
         */
-      var productId: js.UndefOr[String] = js.native
+      var productId: js.UndefOr[String] = js.undefined
       
       /**
         * Display Name of the product.
         */
-      var productName: js.UndefOr[String] = js.native
+      var productName: js.UndefOr[String] = js.undefined
       
       /**
         * Link to this page.
         */
-      var selfLink: js.UndefOr[String] = js.native
+      var selfLink: js.UndefOr[String] = js.undefined
       
       /**
         * Id of the sku of the product.
         */
-      var skuId: js.UndefOr[String] = js.native
+      var skuId: js.UndefOr[String] = js.undefined
       
       /**
         * Display Name of the sku of the product.
         */
-      var skuName: js.UndefOr[String] = js.native
+      var skuName: js.UndefOr[String] = js.undefined
       
       /**
         * Email id of the user.
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object SchemaLicenseAssignment {
       
@@ -906,13 +912,12 @@ object licensingV1Mod {
     /**
       * Template for LicenseAssignment Insert request
       */
-    @js.native
     trait SchemaLicenseAssignmentInsert extends StObject {
       
       /**
         * Email id of the user
         */
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object SchemaLicenseAssignmentInsert {
       
@@ -936,29 +941,28 @@ object licensingV1Mod {
     /**
       * LicesnseAssignment List for a given product/sku for a customer.
       */
-    @js.native
     trait SchemaLicenseAssignmentList extends StObject {
       
       /**
         * ETag of the resource.
         */
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
       /**
         * The LicenseAssignments in this page of results.
         */
-      var items: js.UndefOr[js.Array[SchemaLicenseAssignment]] = js.native
+      var items: js.UndefOr[js.Array[SchemaLicenseAssignment]] = js.undefined
       
       /**
         * Identifies the resource as a collection of LicenseAssignments.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The continuation token, used to page through large result sets. Provide
         * this value in a subsequent request to return the next page of results.
         */
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object SchemaLicenseAssignmentList {
       
@@ -1000,46 +1004,45 @@ object licensingV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

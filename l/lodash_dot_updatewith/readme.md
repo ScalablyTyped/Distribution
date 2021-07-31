@@ -11,8 +11,8 @@ The lodash method `_.updateWith` exported as a module.
 | Full name          | lodash.updatewith |
 | Keywords           | lodash-modularized, updatewith |
 | # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 15503 |
+| # dependents       | 1 |
+| # downloads        | 24835 |
 | # stars            | 0 |
 
 ## Links

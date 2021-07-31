@@ -9,10 +9,10 @@ Public API for OpenTelemetry
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/api |
-| Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats, monitoring |
-| # releases         | 22 |
-| # dependents       | 101 |
-| # downloads        | 5065901 |
+| Keywords           | opentelemetry, nodejs, browser, tracing, profiling, stats, monitoring |
+| # releases         | 37 |
+| # dependents       | 173 |
+| # downloads        | 20287972 |
 | # stars            | 0 |
 
 ## Links

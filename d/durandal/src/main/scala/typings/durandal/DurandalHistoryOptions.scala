@@ -2,44 +2,42 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalHistoryOptions extends StObject {
   
   /**
     * Use hash change when present.
     * @default true
     */
-  var hashChange: js.UndefOr[Boolean] = js.native
+  var hashChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use push state when present.
     * @default false
     */
-  var pushState: js.UndefOr[Boolean] = js.native
+  var pushState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The url root used to extract the fragment when using push state.
     */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
   /**
     * The function that will be called back when the fragment changes.
     */
-  var routeHandler: js.UndefOr[js.Function1[/* fragment */ String, Unit]] = js.native
+  var routeHandler: js.UndefOr[js.Function1[/* fragment */ String, Unit]] = js.undefined
   
   /**
     * Prevents loading of the current url when activating history.
     * @default false
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Override default history init behavior by navigating directly to this route.
     */
-  var startRoute: js.UndefOr[String] = js.native
+  var startRoute: js.UndefOr[String] = js.undefined
 }
 object DurandalHistoryOptions {
   

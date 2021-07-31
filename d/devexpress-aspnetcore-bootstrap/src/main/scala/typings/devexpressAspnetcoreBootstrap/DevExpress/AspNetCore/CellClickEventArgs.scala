@@ -2,17 +2,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellClickEventArgs extends EventArgs {
+trait CellClickEventArgs
+  extends StObject
+     with EventArgs {
   
-  val htmlElement: js.Object = js.native
+  val htmlElement: js.Object
   
-  val interval: BootstrapTimeInterval = js.native
+  val interval: BootstrapTimeInterval
   
-  val resource: String = js.native
+  val resource: String
 }
 object CellClickEventArgs {
   

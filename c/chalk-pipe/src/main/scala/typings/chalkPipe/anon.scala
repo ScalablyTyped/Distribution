@@ -8,7 +8,6 @@ import typings.chalkPipe.chalkPipeBooleans.`false`
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -1370,5 +1369,7 @@ object anon {
   }
   
   @js.native
-  trait Typeofchalk extends Typeof
+  trait Typeofchalk
+    extends StObject
+       with Typeof
 }

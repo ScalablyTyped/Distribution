@@ -11,9 +11,9 @@ Lodash modular utilities.
 | Full name          | lodash |
 | Keywords           | modules, stdlib, util |
 | # releases         | 9 |
-| # dependents       | 85645 |
-| # downloads        | 1426185069 |
-| # stars            | 1502 |
+| # dependents       | 90530 |
+| # downloads        | 1688333821 |
+| # stars            | 1510 |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -9,37 +9,35 @@ import typings.reactVis.reactVisStrings.vertical
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchableDiscreteColorLegendProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
-  
-  // default: ''
-  var items: js.Array[Color | String | ReactChild] = js.native
-  
-  var onItemClick: js.UndefOr[RVMouseEventHandler] = js.native
-  
-  var onItemMouseEnter: js.UndefOr[RVItemEventHandler] = js.native
-  
-  var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   // default: ''
-  var onSearchChange: js.UndefOr[js.Function1[/* x */ js.Any, _]] = js.native
+  var items: js.Array[Color | String | ReactChild]
   
-  var orientation: js.UndefOr[vertical | horizontal] = js.native
+  var onItemClick: js.UndefOr[RVMouseEventHandler] = js.undefined
   
-  var searchFn: js.UndefOr[js.Function2[/* items */ js.Array[_], /* s */ String, js.Array[_]]] = js.native
+  var onItemMouseEnter: js.UndefOr[RVItemEventHandler] = js.undefined
   
-  var searchPlaceholder: js.UndefOr[String] = js.native
+  var onItemMouseLeave: js.UndefOr[RVItemEventHandler] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  // default: ''
+  var onSearchChange: js.UndefOr[js.Function1[/* x */ js.Any, js.Any]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var orientation: js.UndefOr[vertical | horizontal] = js.undefined
+  
+  var searchFn: js.UndefOr[js.Function2[/* items */ js.Array[js.Any], /* s */ String, js.Array[js.Any]]] = js.undefined
+  
+  var searchPlaceholder: js.UndefOr[String] = js.undefined
+  
+  var searchText: js.UndefOr[String] = js.undefined
+  
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SearchableDiscreteColorLegendProps {
   
@@ -93,7 +91,7 @@ object SearchableDiscreteColorLegendProps {
     def setOnItemMouseLeaveUndefined: Self = StObject.set(x, "onItemMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnSearchChange(value: /* x */ js.Any => _): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1(value))
+    def setOnSearchChange(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "onSearchChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSearchChangeUndefined: Self = StObject.set(x, "onSearchChange", js.undefined)
@@ -105,7 +103,7 @@ object SearchableDiscreteColorLegendProps {
     def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
     @scala.inline
-    def setSearchFn(value: (/* items */ js.Array[_], /* s */ String) => js.Array[_]): Self = StObject.set(x, "searchFn", js.Any.fromFunction2(value))
+    def setSearchFn(value: (/* items */ js.Array[js.Any], /* s */ String) => js.Array[js.Any]): Self = StObject.set(x, "searchFn", js.Any.fromFunction2(value))
     
     @scala.inline
     def setSearchFnUndefined: Self = StObject.set(x, "searchFn", js.undefined)

@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * changed in this suggestion. For any field set to true, the Backgound has a
   * new suggested value.
   */
-@js.native
 trait SchemaBackgroundSuggestionState extends StObject {
   
   /**
     * Indicates whether the current background color has been modified in this
     * suggestion.
     */
-  var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+  var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBackgroundSuggestionState {
   

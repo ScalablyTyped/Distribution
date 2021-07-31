@@ -2,17 +2,15 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitorInfo extends StObject {
   
-  var monitorInfo: typings.openfin.monitorMod.MonitorInfo = js.native
+  var monitorInfo: typings.openfin.monitorMod.MonitorInfo
   
-  var runtimeInfo: String = js.native
+  var runtimeInfo: String
   
-  var timeStamp: String = js.native
+  var timeStamp: String
 }
 object MonitorInfo {
   

@@ -2,19 +2,17 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message of customer&#39;s listing configuration.
   */
-@js.native
 trait SchemaCustomerListConfigurationsResponse extends StObject {
   
   /**
     * The configurations.
     */
-  var configurations: js.UndefOr[js.Array[SchemaConfiguration]] = js.native
+  var configurations: js.UndefOr[js.Array[SchemaConfiguration]] = js.undefined
 }
 object SchemaCustomerListConfigurationsResponse {
   

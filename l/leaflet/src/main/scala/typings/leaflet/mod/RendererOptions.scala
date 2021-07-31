@@ -2,15 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RendererOptions extends LayerOptions {
+trait RendererOptions
+  extends StObject
+     with LayerOptions {
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var tolerance: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[Double] = js.undefined
 }
 object RendererOptions {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait PageCollectionLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var index: js.UndefOr[Boolean] = js.native
+  var index: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var isBackground: js.UndefOr[Boolean] = js.native
+  var isBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[PageViewLoadOptions] = js.native
+  var view: js.UndefOr[PageViewLoadOptions] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait PageCollectionLoadOptions extends StObject {
     *
     * [Api set:  1.1]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object PageCollectionLoadOptions {
   

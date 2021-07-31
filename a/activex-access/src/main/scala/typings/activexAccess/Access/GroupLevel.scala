@@ -2,37 +2,97 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupLevel extends StObject {
   
   @JSName("Access.GroupLevel_typekey")
-  var AccessDotGroupLevel_typekey: GroupLevel = js.native
+  var AccessDotGroupLevel_typekey: GroupLevel
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  var ControlSource: String = js.native
+  var ControlSource: String
   
-  var GroupFooter: Boolean = js.native
+  var GroupFooter: Boolean
   
-  var GroupHeader: Boolean = js.native
+  var GroupHeader: Boolean
   
-  var GroupInterval: Double = js.native
+  var GroupInterval: Double
   
-  var GroupOn: Double = js.native
+  var GroupOn: Double
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var KeepTogether: Double = js.native
+  var KeepTogether: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Properties(Index: String): AccessProperty = js.native
-  def Properties(Index: Double): AccessProperty = js.native
+  def Properties(Index: String): AccessProperty
+  def Properties(Index: Double): AccessProperty
   @JSName("Properties")
-  val Properties_Original: Properties = js.native
+  val Properties_Original: Properties
   
-  var SortOrder: Boolean = js.native
+  var SortOrder: Boolean
+}
+object GroupLevel {
+  
+  @scala.inline
+  def apply(
+    AccessDotGroupLevel_typekey: GroupLevel,
+    Application: Application,
+    ControlSource: String,
+    GroupFooter: Boolean,
+    GroupHeader: Boolean,
+    GroupInterval: Double,
+    GroupOn: Double,
+    IsMemberSafe: Double => Boolean,
+    KeepTogether: Double,
+    Parent: js.Any,
+    Properties: Properties,
+    SortOrder: Boolean
+  ): GroupLevel = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ControlSource = ControlSource.asInstanceOf[js.Any], GroupFooter = GroupFooter.asInstanceOf[js.Any], GroupHeader = GroupHeader.asInstanceOf[js.Any], GroupInterval = GroupInterval.asInstanceOf[js.Any], GroupOn = GroupOn.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), KeepTogether = KeepTogether.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], SortOrder = SortOrder.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.GroupLevel_typekey")(AccessDotGroupLevel_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupLevel]
+  }
+  
+  @scala.inline
+  implicit class GroupLevelMutableBuilder[Self <: GroupLevel] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccessDotGroupLevel_typekey(value: GroupLevel): Self = StObject.set(x, "Access.GroupLevel_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setControlSource(value: String): Self = StObject.set(x, "ControlSource", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupFooter(value: Boolean): Self = StObject.set(x, "GroupFooter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupHeader(value: Boolean): Self = StObject.set(x, "GroupHeader", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupInterval(value: Double): Self = StObject.set(x, "GroupInterval", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupOn(value: Double): Self = StObject.set(x, "GroupOn", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setKeepTogether(value: Double): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSortOrder(value: Boolean): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+  }
 }

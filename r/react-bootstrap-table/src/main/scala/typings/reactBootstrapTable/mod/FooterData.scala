@@ -3,21 +3,19 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FooterData extends StObject {
   
   /**
     * Text alignment for the data in this footer.
     */
-  var align: js.UndefOr[DataAlignType] = js.native
+  var align: js.UndefOr[DataAlignType] = js.undefined
   
   /**
     * Index for the column that this footer belongs to
     */
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
   /**
     * Formatting function for the data in this footer. Used to be able to do things like sum the contents of this
@@ -26,12 +24,12 @@ trait FooterData extends StObject {
     * The output value from the formatter function will be used instead of the label if the formatter function is
     * defined.
     */
-  var formatter: js.UndefOr[js.Function1[/* tableData */ js.Array[_], String | Double | ReactElement]] = js.native
+  var formatter: js.UndefOr[js.Function1[/* tableData */ js.Array[js.Any], String | Double | ReactElement]] = js.undefined
   
   /**
     * Title to display for the column footer
     */
-  var label: String = js.native
+  var label: String
 }
 object FooterData {
   
@@ -54,7 +52,7 @@ object FooterData {
     def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormatter(value: /* tableData */ js.Array[_] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    def setFormatter(value: /* tableData */ js.Array[js.Any] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)

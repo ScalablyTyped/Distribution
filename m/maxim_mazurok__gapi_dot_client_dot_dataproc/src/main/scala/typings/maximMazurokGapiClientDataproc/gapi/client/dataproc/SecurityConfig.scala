@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityConfig extends StObject {
   
   /** Kerberos related configuration. */
-  var kerberosConfig: js.UndefOr[KerberosConfig] = js.native
+  var kerberosConfig: js.UndefOr[KerberosConfig] = js.undefined
 }
 object SecurityConfig {
   

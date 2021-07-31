@@ -9,23 +9,22 @@ import typings.nodeHtmlParser.commentMod.default
 import typings.nodeHtmlParser.htmlMod.KeyAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-html-parser", JSImport.Default)
+  @JSImport("node-html-parser", JSImport.Namespace)
   @js.native
-  def default(data: String): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", JSImport.Default)
-  @js.native
-  def default(data: String, options: PartialOptions): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", JSImport.Default)
-  @js.native
-  def default(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", JSImport.Default)
-  @js.native
-  def default(data: String, options: PartialOptionsnoFixtrue): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(data: String): HTMLElementvalidboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def default(data: String, options: PartialOptions): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def default(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def default(data: String, options: PartialOptionsnoFixtrue): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
   
   @JSImport("node-html-parser", "CommentNode")
   @js.native
@@ -49,13 +48,13 @@ object mod {
     def this(
       tagName: String,
       keyAttrs: KeyAttributes,
-      rawAttrs: js.UndefOr[scala.Nothing],
+      rawAttrs: String,
       parentNode: typings.nodeHtmlParser.nodeMod.default
     ) = this()
     def this(
       tagName: String,
       keyAttrs: KeyAttributes,
-      rawAttrs: String,
+      rawAttrs: Unit,
       parentNode: typings.nodeHtmlParser.nodeMod.default
     ) = this()
   }
@@ -70,13 +69,13 @@ object mod {
   object NodeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.nodeHtmlParser.typeMod.NodeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.nodeHtmlParser.typeMod.NodeType & Double] = js.native
     
-    /* 8 */ val COMMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.COMMENT_NODE with Double = js.native
+    /* 8 */ val COMMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.COMMENT_NODE & Double = js.native
     
-    /* 1 */ val ELEMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.ELEMENT_NODE with Double = js.native
+    /* 1 */ val ELEMENT_NODE: typings.nodeHtmlParser.typeMod.NodeType.ELEMENT_NODE & Double = js.native
     
-    /* 3 */ val TEXT_NODE: typings.nodeHtmlParser.typeMod.NodeType.TEXT_NODE with Double = js.native
+    /* 3 */ val TEXT_NODE: typings.nodeHtmlParser.typeMod.NodeType.TEXT_NODE & Double = js.native
   }
   
   @JSImport("node-html-parser", "TextNode")
@@ -86,23 +85,18 @@ object mod {
     def this(rawText: String) = this()
   }
   
-  @JSImport("node-html-parser", JSImport.Default)
-  @js.native
-  def default_Intersection(data: String): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
+  @scala.inline
+  def default_Intersection(data: String): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(data.asInstanceOf[js.Any]).asInstanceOf[(typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
   
-  @JSImport("node-html-parser", "parse")
-  @js.native
-  def parse(data: String): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = js.native
-  @JSImport("node-html-parser", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptionsnoFixtrue): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
-  @JSImport("node-html-parser", "parse")
-  @js.native
-  def parse_Intersection(data: String): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) with Valid = js.native
+  @scala.inline
+  def parse(data: String): HTMLElementvalidboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptions): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptionsnoFixfalse): HTMLElementvalidboolean = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HTMLElementvalidboolean]
+  @scala.inline
+  def parse(data: String, options: PartialOptionsnoFixtrue): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
+  
+  @scala.inline
+  def parse_Intersection(data: String): (typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[(typings.nodeHtmlParser.htmlMod.HTMLElement | typings.nodeHtmlParser.textMod.default) & Valid]
 }

@@ -2,46 +2,44 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerReplicationParameters extends StObject {
   
   /**
     * Indicates whether the replication job produces encrypted AMIs.
     */
-  var encrypted: js.UndefOr[Encrypted] = js.native
+  var encrypted: js.UndefOr[Encrypted] = js.undefined
   
   /**
     * The frequency of creating replication jobs for the server.
     */
-  var frequency: js.UndefOr[Frequency] = js.native
+  var frequency: js.UndefOr[Frequency] = js.undefined
   
   /**
     * The ID of the KMS key for replication jobs that produce encrypted AMIs. This value can be any of the following:   KMS key ID   KMS key alias   ARN referring to the KMS key ID   ARN referring to the KMS key alias   If encrypted is enabled but a KMS key ID is not specified, the customer's default KMS key for Amazon EBS is used.
     */
-  var kmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var kmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * The license type for creating a replication job for the server.
     */
-  var licenseType: js.UndefOr[LicenseType] = js.native
+  var licenseType: js.UndefOr[LicenseType] = js.undefined
   
   /**
     * The number of recent AMIs to keep when creating a replication job for this server.
     */
-  var numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.native
+  var numberOfRecentAmisToKeep: js.UndefOr[NumberOfRecentAmisToKeep] = js.undefined
   
   /**
     * Indicates whether to run the replication job one time.
     */
-  var runOnce: js.UndefOr[RunOnce] = js.native
+  var runOnce: js.UndefOr[RunOnce] = js.undefined
   
   /**
     * The seed time for creating a replication job for the server.
     */
-  var seedTime: js.UndefOr[Timestamp] = js.native
+  var seedTime: js.UndefOr[Timestamp] = js.undefined
 }
 object ServerReplicationParameters {
   

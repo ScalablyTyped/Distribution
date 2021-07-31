@@ -2,35 +2,33 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Terms for Programmatic Guaranteed Deals.
   */
-@js.native
 trait SchemaGuaranteedFixedPriceTerms extends StObject {
   
   /**
     * Fixed price for the specified buyer.
     */
-  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.native
+  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.undefined
   
   /**
     * Guaranteed impressions as a percentage. This is the percentage of
     * guaranteed looks that the buyer is guaranteeing to buy.
     */
-  var guaranteedImpressions: js.UndefOr[String] = js.native
+  var guaranteedImpressions: js.UndefOr[String] = js.undefined
   
   /**
     * Count of guaranteed looks. Required for deal, optional for product.
     */
-  var guaranteedLooks: js.UndefOr[String] = js.native
+  var guaranteedLooks: js.UndefOr[String] = js.undefined
   
   /**
     * Daily minimum looks for CPD deal types.
     */
-  var minimumDailyLooks: js.UndefOr[String] = js.native
+  var minimumDailyLooks: js.UndefOr[String] = js.undefined
 }
 object SchemaGuaranteedFixedPriceTerms {
   

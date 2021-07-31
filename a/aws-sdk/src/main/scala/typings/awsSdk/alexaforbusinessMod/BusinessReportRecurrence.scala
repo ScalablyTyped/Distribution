@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BusinessReportRecurrence extends StObject {
   
   /**
     * The start date.
     */
-  var StartDate: js.UndefOr[Date] = js.native
+  var StartDate: js.UndefOr[Date] = js.undefined
 }
 object BusinessReportRecurrence {
   

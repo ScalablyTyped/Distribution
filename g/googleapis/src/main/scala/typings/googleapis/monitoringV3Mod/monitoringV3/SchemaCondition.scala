@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * should open an incident. If a condition evaluates to true, it signifies
   * that something is wrong.
   */
-@js.native
 trait SchemaCondition extends StObject {
   
   /**
     * A condition that checks that a time series continues to receive new data
     * points.
     */
-  var conditionAbsent: js.UndefOr[SchemaMetricAbsence] = js.native
+  var conditionAbsent: js.UndefOr[SchemaMetricAbsence] = js.undefined
   
   /**
     * A condition that compares a time series against a threshold.
     */
-  var conditionThreshold: js.UndefOr[SchemaMetricThreshold] = js.native
+  var conditionThreshold: js.UndefOr[SchemaMetricThreshold] = js.undefined
   
   /**
     * A short name or phrase used to identify the condition in dashboards,
     * notifications, and incidents. To avoid confusion, don&#39;t use the same
     * display name for multiple conditions in the same policy.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required if the condition exists. The unique resource name for this
@@ -48,7 +46,7 @@ trait SchemaCondition extends StObject {
     * condition thresholds, durations, or trigger values. Otherwise, treat the
     * change as a new condition and let the existing condition be deleted.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaCondition {
   

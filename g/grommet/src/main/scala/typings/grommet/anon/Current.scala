@@ -3,19 +3,17 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Current extends StObject {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var current: js.UndefOr[js.Any] = js.native
+  var current: js.UndefOr[js.Any] = js.undefined
   
-  var next: js.UndefOr[js.Any] = js.native
+  var next: js.UndefOr[js.Any] = js.undefined
   
-  var previous: js.UndefOr[js.Any] = js.native
+  var previous: js.UndefOr[js.Any] = js.undefined
 }
 object Current {
   

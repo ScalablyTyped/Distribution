@@ -5,79 +5,80 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/button/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/button/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): ButtonStyles = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): ButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ButtonStyles]
+  
   trait ButtonStyles extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var defaultDisabledRaw: ViewStyle = js.native
+    var defaultDisabledRaw: ViewStyle
     
-    var defaultDisabledRawText: TextStyle = js.native
+    var defaultDisabledRawText: TextStyle
     
-    var defaultHighlight: ViewStyle = js.native
+    var defaultHighlight: ViewStyle
     
-    var defaultHighlightText: TextStyle = js.native
+    var defaultHighlightText: TextStyle
     
-    var defaultRaw: ViewStyle = js.native
+    var defaultRaw: ViewStyle
     
-    var defaultRawText: TextStyle = js.native
+    var defaultRawText: TextStyle
     
-    var ghostDisabledRaw: ViewStyle = js.native
+    var ghostDisabledRaw: ViewStyle
     
-    var ghostDisabledRawText: TextStyle = js.native
+    var ghostDisabledRawText: TextStyle
     
-    var ghostHighlight: ViewStyle = js.native
+    var ghostHighlight: ViewStyle
     
-    var ghostHighlightText: TextStyle = js.native
+    var ghostHighlightText: TextStyle
     
-    var ghostRaw: ViewStyle = js.native
+    var ghostRaw: ViewStyle
     
-    var ghostRawText: TextStyle = js.native
+    var ghostRawText: TextStyle
     
-    var indicator: ViewStyle = js.native
+    var indicator: ViewStyle
     
-    var largeRaw: ViewStyle = js.native
+    var largeRaw: ViewStyle
     
-    var largeRawText: TextStyle = js.native
+    var largeRawText: TextStyle
     
-    var primaryDisabledRaw: ViewStyle = js.native
+    var primaryDisabledRaw: ViewStyle
     
-    var primaryDisabledRawText: TextStyle = js.native
+    var primaryDisabledRawText: TextStyle
     
-    var primaryHighlight: ViewStyle = js.native
+    var primaryHighlight: ViewStyle
     
-    var primaryHighlightText: TextStyle = js.native
+    var primaryHighlightText: TextStyle
     
-    var primaryRaw: ViewStyle = js.native
+    var primaryRaw: ViewStyle
     
-    var primaryRawText: TextStyle = js.native
+    var primaryRawText: TextStyle
     
-    var smallRaw: ViewStyle = js.native
+    var smallRaw: ViewStyle
     
-    var smallRawText: TextStyle = js.native
+    var smallRawText: TextStyle
     
-    var warningDisabledRaw: ViewStyle = js.native
+    var warningDisabledRaw: ViewStyle
     
-    var warningDisabledRawText: TextStyle = js.native
+    var warningDisabledRawText: TextStyle
     
-    var warningHighlight: ViewStyle = js.native
+    var warningHighlight: ViewStyle
     
-    var warningHighlightText: TextStyle = js.native
+    var warningHighlightText: TextStyle
     
-    var warningRaw: ViewStyle = js.native
+    var warningRaw: ViewStyle
     
-    var warningRawText: TextStyle = js.native
+    var warningRawText: TextStyle
     
-    var wrapperStyle: ViewStyle = js.native
+    var wrapperStyle: ViewStyle
   }
   object ButtonStyles {
     

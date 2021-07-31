@@ -5,14 +5,15 @@ import typings.std.Error
 import typings.zookeeper.anon.Auth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("zookeeper", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Zookeeper {
+  class ^ protected ()
+    extends StObject
+       with Zookeeper {
     def this(options: ConnectionOptions) = this()
   }
   
@@ -130,18 +131,17 @@ object mod {
     var timeout: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var connect: js.UndefOr[String] = js.native
+    var connect: js.UndefOr[String] = js.undefined
     
-    var data_as_buffer: js.UndefOr[Boolean] = js.native
+    var data_as_buffer: js.UndefOr[Boolean] = js.undefined
     
-    var debug_level: js.UndefOr[Double] = js.native
+    var debug_level: js.UndefOr[Double] = js.undefined
     
-    var host_order_deterministic: js.UndefOr[Boolean] = js.native
+    var host_order_deterministic: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectionOptions {
     
@@ -186,30 +186,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Stat extends StObject {
     
-    var aversion: Double = js.native
+    var aversion: Double
     
-    var ctime: Double = js.native
+    var ctime: Double
     
-    var cversion: Double = js.native
+    var cversion: Double
     
-    var czxid: Double = js.native
+    var czxid: Double
     
-    var dataLength: Double = js.native
+    var dataLength: Double
     
-    var ephemeralOwner: String = js.native
+    var ephemeralOwner: String
     
-    var mtime: Double = js.native
+    var mtime: Double
     
-    var mzxid: Double = js.native
+    var mzxid: Double
     
-    var numChildren: Double = js.native
+    var numChildren: Double
     
-    var pzxid: Double = js.native
+    var pzxid: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object Stat {
     
@@ -270,7 +269,9 @@ object mod {
   }
   
   @js.native
-  trait Zookeeper extends Client {
+  trait Zookeeper
+    extends StObject
+       with Client {
     
     def close(): Unit = js.native
     

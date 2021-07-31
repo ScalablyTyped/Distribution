@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelTimerDecisionAttributes extends StObject {
   
   /**
     *  The unique ID of the timer to cancel.
     */
-  var timerId: TimerId = js.native
+  var timerId: TimerId
 }
 object CancelTimerDecisionAttributes {
   

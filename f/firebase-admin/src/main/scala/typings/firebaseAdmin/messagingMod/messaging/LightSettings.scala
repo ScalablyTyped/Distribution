@@ -2,26 +2,24 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LightSettings extends StObject {
   
   /**
     * Required. Sets color of the LED in `#rrggbb` or `#rrggbbaa` format.
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Required. Along with `light_on_duration`, defines the blink rate of LED flashes.
     */
-  var lightOffDurationMillis: Double = js.native
+  var lightOffDurationMillis: Double
   
   /**
     * Required. Along with `light_off_duration`, defines the blink rate of LED flashes.
     */
-  var lightOnDurationMillis: Double = js.native
+  var lightOnDurationMillis: Double
 }
 object LightSettings {
   

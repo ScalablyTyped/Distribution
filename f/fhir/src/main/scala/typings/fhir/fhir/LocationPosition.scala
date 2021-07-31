@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The absolute geographic location
   */
-@js.native
-trait LocationPosition extends BackboneElement {
+trait LocationPosition
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'altitude'.
     */
-  var _altitude: js.UndefOr[Element] = js.native
+  var _altitude: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'latitude'.
     */
-  var _latitude: js.UndefOr[Element] = js.native
+  var _latitude: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'longitude'.
     */
-  var _longitude: js.UndefOr[Element] = js.native
+  var _longitude: js.UndefOr[Element] = js.undefined
   
   /**
     * Altitude with WGS84 datum
     */
-  var altitude: js.UndefOr[decimal] = js.native
+  var altitude: js.UndefOr[decimal] = js.undefined
   
   /**
     * Latitude with WGS84 datum
     */
-  var latitude: decimal = js.native
+  var latitude: decimal
   
   /**
     * Longitude with WGS84 datum
     */
-  var longitude: decimal = js.native
+  var longitude: decimal
 }
 object LocationPosition {
   

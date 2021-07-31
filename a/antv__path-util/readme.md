@@ -10,9 +10,9 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/path-util |
 | Keywords           | util, antv, g |
-| # releases         | 13 |
-| # dependents       | 10 |
-| # downloads        | 465294 |
+| # releases         | 14 |
+| # dependents       | 13 |
+| # downloads        | 786003 |
 | # stars            | 0 |
 
 ## Links

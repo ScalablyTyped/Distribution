@@ -20,7 +20,6 @@ import typings.carbonType.anon.Mediaminwidth99rem
 import typings.carbonType.anon.Mozosxfontsmoothing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -749,16 +748,22 @@ object mod {
   
   object fontFamily {
     
+    @scala.inline
+    def apply(name: String): FontFamilyString = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[FontFamilyString]
+    
     @JSImport("@carbon/type", "fontFamily")
     @js.native
-    def apply(name: String): FontFamilyString = js.native
+    val ^ : js.Any = js.native
   }
   
   object fontWeight {
     
+    @scala.inline
+    def apply(weight: String): FontWeightNumber = ^.asInstanceOf[js.Dynamic].apply(weight.asInstanceOf[js.Any]).asInstanceOf[FontWeightNumber]
+    
     @JSImport("@carbon/type", "fontWeight")
     @js.native
-    def apply(weight: String): FontWeightNumber = js.native
+    val ^ : js.Any = js.native
   }
   
   object fontWeights {
@@ -788,9 +793,12 @@ object mod {
   
   object getTypeSize {
     
+    @scala.inline
+    def apply(step: Double): Double = ^.asInstanceOf[js.Dynamic].apply(step.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
     @JSImport("@carbon/type", "getTypeSize")
     @js.native
-    def apply(step: Double): Double = js.native
+    val ^ : js.Any = js.native
   }
   
   object heading01 {
@@ -980,9 +988,12 @@ object mod {
   
   object print {
     
+    @scala.inline
+    def apply(block: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(block.asInstanceOf[js.Any]).asInstanceOf[String]
+    
     @JSImport("@carbon/type", "print")
     @js.native
-    def apply(block: js.Object): String = js.native
+    val ^ : js.Any = js.native
   }
   
   object productiveHeading04 {

@@ -2,19 +2,17 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsRefined extends StObject {
   
-  var isRefined: Boolean = js.native
+  var isRefined: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var noRefinement: Boolean = js.native
+  var noRefinement: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object IsRefined {
   

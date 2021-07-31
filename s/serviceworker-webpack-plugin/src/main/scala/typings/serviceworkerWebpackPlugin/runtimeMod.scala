@@ -6,7 +6,6 @@ import typings.std.RegistrationOptions
 import typings.std.ServiceWorkerRegistration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeMod extends Shortcut {

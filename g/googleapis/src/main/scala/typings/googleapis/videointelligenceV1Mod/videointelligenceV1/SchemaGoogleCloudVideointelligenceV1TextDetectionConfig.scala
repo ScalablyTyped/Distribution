@@ -2,13 +2,11 @@ package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config for TEXT_DETECTION.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
     * be language code in BCP-47 format.  Automatic language detection is
     * performed if no hint is provided.
     */
-  var languageHints: js.UndefOr[js.Array[String]] = js.native
+  var languageHints: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1TextDetectionConfig {
   

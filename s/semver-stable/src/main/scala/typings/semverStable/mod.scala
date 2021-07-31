@@ -2,20 +2,20 @@ package typings.semverStable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("semver-stable", "is")
+  @JSImport("semver-stable", JSImport.Namespace)
   @js.native
-  def is(version: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("semver-stable", "max")
-  @js.native
-  def max(versions: js.Array[String]): String = js.native
+  @scala.inline
+  def is(version: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("semver-stable", "maxSatisfying")
-  @js.native
-  def maxSatisfying(versions: js.Array[String], range: String): String = js.native
+  @scala.inline
+  def max(versions: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(versions.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def maxSatisfying(versions: js.Array[String], range: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String]
 }

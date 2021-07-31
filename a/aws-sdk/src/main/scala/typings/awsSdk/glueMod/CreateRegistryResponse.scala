@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRegistryResponse extends StObject {
   
   /**
     * A description of the registry.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the newly created registry.
     */
-  var RegistryArn: js.UndefOr[GlueResourceArn] = js.native
+  var RegistryArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The tags for the registry.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateRegistryResponse {
   

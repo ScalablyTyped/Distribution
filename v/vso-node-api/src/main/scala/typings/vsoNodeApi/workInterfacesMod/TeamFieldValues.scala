@@ -2,26 +2,26 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamFieldValues extends TeamSettingsDataContractBase {
+trait TeamFieldValues
+  extends StObject
+     with TeamSettingsDataContractBase {
   
   /**
     * The default team field value
     */
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /**
     * Shallow ref to the field being used as a team field
     */
-  var field: FieldReference = js.native
+  var field: FieldReference
   
   /**
     * Collection of all valid team field values
     */
-  var values: js.Array[TeamFieldValue] = js.native
+  var values: js.Array[TeamFieldValue]
 }
 object TeamFieldValues {
   

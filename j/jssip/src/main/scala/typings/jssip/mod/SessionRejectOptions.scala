@@ -2,17 +2,15 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionRejectOptions extends StObject {
   
-  var extraHeaders: js.Array[String] = js.native
+  var extraHeaders: js.Array[String]
   
-  var reason_phrase: String = js.native
+  var reason_phrase: String
   
-  var status_code: Double = js.native
+  var status_code: Double
 }
 object SessionRejectOptions {
   

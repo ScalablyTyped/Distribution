@@ -12,7 +12,7 @@ Low-Level COPY TO and COPY FROM streams for PostgreSQL in JavaScript using
 | Keywords           | postgres, copy, in, out, stream |
 | # releases         | 11 |
 | # dependents       | 47 |
-| # downloads        | 1193854 |
+| # downloads        | 1399085 |
 | # stars            | 4 |
 
 ## Links

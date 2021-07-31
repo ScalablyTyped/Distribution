@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutersScopedList extends StObject {
   
   /** A list of routers contained in this scope. */
-  var routers: js.UndefOr[js.Array[Router]] = js.native
+  var routers: js.UndefOr[js.Array[Router]] = js.undefined
   
   /** Informational warning which replaces the list of routers when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object RoutersScopedList {
   

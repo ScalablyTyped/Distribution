@@ -2,33 +2,33 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataProperty extends IProperty {
+trait DataProperty
+  extends StObject
+     with IProperty {
   
-  var complexTypeName: String = js.native
+  var complexTypeName: String
   
-  var concurrencyMode: String = js.native
+  var concurrencyMode: String
   
-  var dataType: DataTypeSymbol = js.native
+  var dataType: DataTypeSymbol
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
   
-  var isComplexProperty: Boolean = js.native
+  var isComplexProperty: Boolean
   
-  var isInherited: Boolean = js.native
+  var isInherited: Boolean
   
-  var isNullable: Boolean = js.native
+  var isNullable: Boolean
   
-  var isPartOfKey: Boolean = js.native
+  var isPartOfKey: Boolean
   
-  var isUnmapped: Boolean = js.native
+  var isUnmapped: Boolean
   
-  var maxLength: Double = js.native
+  var maxLength: Double
   
-  var relatedNavigationProperty: NavigationProperty = js.native
+  var relatedNavigationProperty: NavigationProperty
 }
 object DataProperty {
   

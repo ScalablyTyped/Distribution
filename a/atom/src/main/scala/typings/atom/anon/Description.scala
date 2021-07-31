@@ -4,19 +4,17 @@ import typings.atom.mod.CommandEvent
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Description[TargetType /* <: EventTarget */] extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  def didDispatch(event: CommandEvent[TargetType]): Unit | js.Promise[Unit] = js.native
+  def didDispatch(event: CommandEvent[TargetType]): Unit | js.Promise[Unit]
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var hiddenInCommandPalette: js.UndefOr[Boolean] = js.native
+  var hiddenInCommandPalette: js.UndefOr[Boolean] = js.undefined
 }
 object Description {
   
@@ -27,7 +25,7 @@ object Description {
   }
   
   @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description[_], TargetType /* <: EventTarget */] (val x: Self with Description[TargetType]) extends AnyVal {
+  implicit class DescriptionMutableBuilder[Self <: Description[?], TargetType /* <: EventTarget */] (val x: Self & Description[TargetType]) extends AnyVal {
     
     @scala.inline
     def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])

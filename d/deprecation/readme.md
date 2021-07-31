@@ -11,8 +11,8 @@ Log a deprecation message with stack
 | Full name          | deprecation |
 | Keywords           | deprecate, deprecated, deprecation |
 | # releases         | 9 |
-| # dependents       | 15 |
-| # downloads        | 78890899 |
+| # dependents       | 31 |
+| # downloads        | 114163315 |
 | # stars            | 0 |
 
 ## Links

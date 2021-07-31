@@ -2,20 +2,18 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to modify the attachments of a student submission.
   */
-@js.native
 trait SchemaModifyAttachmentsRequest extends StObject {
   
   /**
     * Attachments to add. A student submission may not have more than 20
     * attachments.  Form attachments are not supported.
     */
-  var addAttachments: js.UndefOr[js.Array[SchemaAttachment]] = js.native
+  var addAttachments: js.UndefOr[js.Array[SchemaAttachment]] = js.undefined
 }
 object SchemaModifyAttachmentsRequest {
   

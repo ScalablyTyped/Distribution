@@ -2,15 +2,13 @@ package typings.reactNativeShare.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenReturn extends StObject {
   
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
-  var dismissedAction: js.UndefOr[Boolean] = js.native
+  var dismissedAction: js.UndefOr[Boolean] = js.undefined
 }
 object OpenReturn {
   

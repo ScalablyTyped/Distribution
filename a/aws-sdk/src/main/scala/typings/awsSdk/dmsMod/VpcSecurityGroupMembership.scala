@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcSecurityGroupMembership extends StObject {
   
   /**
     * The status of the VPC security group.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The VPC security group ID.
     */
-  var VpcSecurityGroupId: js.UndefOr[String] = js.native
+  var VpcSecurityGroupId: js.UndefOr[String] = js.undefined
 }
 object VpcSecurityGroupMembership {
   

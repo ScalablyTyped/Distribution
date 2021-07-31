@@ -2,17 +2,15 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var method: String = js.native
+  var method: String
   
-  var rel: String = js.native
+  var rel: String
 }
 object Link {
   

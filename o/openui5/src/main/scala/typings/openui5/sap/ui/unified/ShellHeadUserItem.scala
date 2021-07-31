@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ShellHeadUserItem extends Element {
+trait ShellHeadUserItem
+  extends StObject
+     with Element {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -55,7 +56,7 @@ trait ShellHeadUserItem extends Element {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>image</code>.An image of the user, normally an URI to a image
@@ -85,7 +86,7 @@ trait ShellHeadUserItem extends Element {
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**

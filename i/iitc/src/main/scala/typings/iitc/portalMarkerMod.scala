@@ -7,7 +7,6 @@ import typings.leaflet.mod.LatLng_
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalMarkerMod {
@@ -17,20 +16,16 @@ object portalMarkerMod {
     /**
       *  create a new marker. 'data' contain the IITC-specific entity data to be stored in the object options
       */
-    @JSGlobal("createMarker")
-    @js.native
-    def createMarker(latlng: LatLng_, data: PortalData): Portal = js.native
+    @scala.inline
+    def createMarker(latlng: LatLng_, data: PortalData): Portal = (js.Dynamic.global.applyDynamic("createMarker")(latlng.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Portal]
     
-    @JSGlobal("getMarkerStyleOptions")
-    @js.native
-    def getMarkerStyleOptions(details: PortalOptions): PathOptions = js.native
+    @scala.inline
+    def getMarkerStyleOptions(details: PortalOptions): PathOptions = js.Dynamic.global.applyDynamic("getMarkerStyleOptions")(details.asInstanceOf[js.Any]).asInstanceOf[PathOptions]
     
-    @JSGlobal("portalMarkerScale")
-    @js.native
-    def portalMarkerScale(): Double = js.native
+    @scala.inline
+    def portalMarkerScale(): Double = js.Dynamic.global.applyDynamic("portalMarkerScale")().asInstanceOf[Double]
     
-    @JSGlobal("setMarkerStyle")
-    @js.native
-    def setMarkerStyle(marker: Portal, selected: Boolean): Unit = js.native
+    @scala.inline
+    def setMarkerStyle(marker: Portal, selected: Boolean): Unit = (js.Dynamic.global.applyDynamic("setMarkerStyle")(marker.asInstanceOf[js.Any], selected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

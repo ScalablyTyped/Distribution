@@ -7,7 +7,6 @@ import typings.dashjs.dashjsStrings.text
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dashjs", "MediaInfo")
@@ -16,9 +15,9 @@ class MediaInfo () extends StObject {
   
   var KID: js.Any | Null = js.native
   
-  var accessibility: js.Array[_] | Null = js.native
+  var accessibility: js.Array[js.Any] | Null = js.native
   
-  var audioChannelConfiguration: js.Array[_] | Null = js.native
+  var audioChannelConfiguration: js.Array[js.Any] | Null = js.native
   
   var bitrateList: js.Array[Bitrate] = js.native
   

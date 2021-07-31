@@ -4,7 +4,6 @@ import typings.jpm.anon.AttachTo
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,12 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object pageModMod {
   
-  @js.native
   trait PageMod extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var include: String | (js.Array[RegExp | String]) | RegExp = js.native
+    var include: String | (js.Array[RegExp | String]) | RegExp
   }
   object PageMod {
     

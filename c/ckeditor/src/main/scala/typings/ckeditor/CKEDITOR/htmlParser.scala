@@ -6,31 +6,29 @@ import typings.ckeditor.anon.Option
 import typings.ckeditor.ckeditorBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlParser {
   
-  @js.native
   trait basicWriter extends StObject {
     
-    def attribute(attName: String, attValue: String): Unit = js.native
+    def attribute(attName: String, attValue: String): Unit
     
-    def closeTag(tagName: String): Unit = js.native
+    def closeTag(tagName: String): Unit
     
-    def comment(comment: String): Unit = js.native
+    def comment(comment: String): Unit
     
-    def getHtml(reset: Boolean): String = js.native
+    def getHtml(reset: Boolean): String
     
-    def openTag(tagName: String, attributes: StringDictionary[String]): Unit = js.native
+    def openTag(tagName: String, attributes: StringDictionary[String]): Unit
     
-    def openTagClose(tagName: String, isSelfClose: Boolean): Unit = js.native
+    def openTagClose(tagName: String, isSelfClose: Boolean): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def text(text: String): Unit = js.native
+    def text(text: String): Unit
     
-    def write(data: String): Unit = js.native
+    def write(data: String): Unit
   }
   object basicWriter {
     
@@ -83,7 +81,9 @@ object htmlParser {
   }
   
   @js.native
-  trait cdata extends node {
+  trait cdata
+    extends StObject
+       with node {
     
     var `type`: Double = js.native
     
@@ -91,7 +91,9 @@ object htmlParser {
   }
   
   @js.native
-  trait comment extends node {
+  trait comment
+    extends StObject
+       with node {
     
     def filter(filter: typings.ckeditor.CKEDITOR.htmlParser.filter): Boolean = js.native
     
@@ -112,7 +114,9 @@ object htmlParser {
   }
   
   @js.native
-  trait element extends node {
+  trait element
+    extends StObject
+       with node {
     
     def add(node: node): Unit = js.native
     def add(node: node, index: Double): Unit = js.native
@@ -135,15 +139,11 @@ object htmlParser {
     @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`]): Unit = js.native
     @JSName("forEach")
-    def forEach_false(
-      callback: js.Function1[/* node */ node, Unit | `false`],
-      `type`: js.UndefOr[scala.Nothing],
-      skipRoot: Boolean
-    ): Unit = js.native
-    @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double): Unit = js.native
     @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double, skipRoot: Boolean): Unit = js.native
+    @JSName("forEach")
+    def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Unit, skipRoot: Boolean): Unit = js.native
     
     def getFirst(condition: String): node = js.native
     def getFirst(condition: js.Function1[/* node */ node, Boolean]): node = js.native
@@ -200,22 +200,21 @@ object htmlParser {
     var textRules: filterRulesGroup = js.native
   }
   
-  @js.native
   trait filterRulesDefinition extends StObject {
     
-    var attributeNames: js.UndefOr[js.Any] = js.native
+    var attributeNames: js.UndefOr[js.Any] = js.undefined
     
-    var attributes: js.UndefOr[js.Any] = js.native
+    var attributes: js.UndefOr[js.Any] = js.undefined
     
-    var comment: js.UndefOr[js.Any] = js.native
+    var comment: js.UndefOr[js.Any] = js.undefined
     
-    var elementNames: js.UndefOr[js.Any] = js.native
+    var elementNames: js.UndefOr[js.Any] = js.undefined
     
-    var elements: js.UndefOr[js.Any] = js.native
+    var elements: js.UndefOr[js.Any] = js.undefined
     
-    var root: js.UndefOr[js.Any] = js.native
+    var root: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
   }
   object filterRulesDefinition {
     
@@ -277,7 +276,7 @@ object htmlParser {
     
     def add(rule: rule, priority: Double, options: ruleOptions): Unit = js.native
     
-    def addMany(rules: js.Array[StringDictionary[_]], priority: Double, options: ruleOptions): Unit = js.native
+    def addMany(rules: js.Array[StringDictionary[js.Any]], priority: Double, options: ruleOptions): Unit = js.native
     
     def exec(currentValue: String): node | fragment | String = js.native
     def exec(currentValue: fragment): node | fragment | String = js.native
@@ -306,22 +305,18 @@ object htmlParser {
     @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`]): Unit = js.native
     @JSName("forEach")
-    def forEach_false(
-      callback: js.Function1[/* node */ node, Unit | `false`],
-      `type`: js.UndefOr[scala.Nothing],
-      skipRoot: Boolean
-    ): Unit = js.native
-    @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double): Unit = js.native
     @JSName("forEach")
     def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Double, skipRoot: Boolean): Unit = js.native
+    @JSName("forEach")
+    def forEach_false(callback: js.Function1[/* node */ node, Unit | `false`], `type`: Unit, skipRoot: Boolean): Unit = js.native
     
     var parent: fragment = js.native
     
     val `type`: Double = js.native
     
     def writeChildrenHtml(writer: basicWriter): Unit = js.native
-    def writeChildrenHtml(writer: basicWriter, filter: js.UndefOr[scala.Nothing], filterRoot: Boolean): Unit = js.native
+    def writeChildrenHtml(writer: basicWriter, filter: Unit, filterRoot: Boolean): Unit = js.native
     def writeChildrenHtml(writer: basicWriter, filter: typings.ckeditor.CKEDITOR.htmlParser.filter): Unit = js.native
     def writeChildrenHtml(writer: basicWriter, filter: typings.ckeditor.CKEDITOR.htmlParser.filter, filterRoot: Boolean): Unit = js.native
     
@@ -351,12 +346,11 @@ object htmlParser {
   
   type rule = (js.Function1[/* value */ node | fragment | String, Boolean]) | (js.Tuple2[String, String])
   
-  @js.native
   trait ruleOptions extends StObject {
     
-    var applyToAll: js.UndefOr[Boolean] = js.native
+    var applyToAll: js.UndefOr[Boolean] = js.undefined
     
-    var excludeNestedEditable: js.UndefOr[Boolean] = js.native
+    var excludeNestedEditable: js.UndefOr[Boolean] = js.undefined
   }
   object ruleOptions {
     
@@ -384,7 +378,9 @@ object htmlParser {
   }
   
   @js.native
-  trait text extends node {
+  trait text
+    extends StObject
+       with node {
     
     def filter(filter: typings.ckeditor.CKEDITOR.htmlParser.filter): Boolean = js.native
     

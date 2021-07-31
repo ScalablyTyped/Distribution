@@ -2,41 +2,39 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoObject extends StObject {
   
   /**
     * The class (severity) of the error. A class of less than 10 indicates an informational message.
     */
-  var `class`: Double = js.native
+  var `class`: Double
   
   /**
     * The line number in the SQL batch or stored procedure that caused the error. Line numbers begin at 1; therefore, if the line number is not applicable to the message, the value of LineNumber will be 0.
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
   /**
     * The message text.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Error number
     */
-  var number: Double = js.native
+  var number: Double
   
   /**
     * The stored procedure name (if a stored procedure generated the message).
     */
-  var procName: String = js.native
+  var procName: String
   
   /**
     * The error state, used as a modifier to the error number.
     */
-  var state: js.Any = js.native
+  var state: js.Any
 }
 object InfoObject {
   

@@ -2,26 +2,24 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the list of app restrictions available to be pre-configured for
   * the product.
   */
-@js.native
 trait SchemaAppRestrictionsSchema extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#appRestrictionsSchema&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The set of restrictions that make up this schema.
     */
-  var restrictions: js.UndefOr[js.Array[SchemaAppRestrictionsSchemaRestriction]] = js.native
+  var restrictions: js.UndefOr[js.Array[SchemaAppRestrictionsSchemaRestriction]] = js.undefined
 }
 object SchemaAppRestrictionsSchema {
   

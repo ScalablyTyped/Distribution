@@ -3,7 +3,6 @@ package typings.morrisJs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object morris {
@@ -32,21 +31,22 @@ object morris {
   @js.native
   trait GridChart extends StObject {
     
-    def setData(data: js.Array[_]): Unit = js.native
-    def setData(data: js.Array[_], redraw: Boolean): Unit = js.native
+    def setData(data: js.Array[js.Any]): Unit = js.native
+    def setData(data: js.Array[js.Any], redraw: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait IAreaOptions extends ILineOptions {
+  trait IAreaOptions
+    extends StObject
+       with ILineOptions {
     
     /**  Set to true to overlay the areas on top of each other instead of stacking them.  */
-    var behaveLikeLine: js.UndefOr[Boolean] = js.native
+    var behaveLikeLine: js.UndefOr[Boolean] = js.undefined
   }
   object IAreaOptions {
     
     @scala.inline
     def apply(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       element: js.Any,
       labels: js.Array[String],
       xkey: String,
@@ -67,11 +67,12 @@ object morris {
     }
   }
   
-  @js.native
-  trait IBarOptions extends IGridChartOptions {
+  trait IBarOptions
+    extends StObject
+       with IGridChartOptions {
     
     /** Array containing colors for the series bars. */
-    var barColors: js.UndefOr[js.Array[String]] = js.native
+    var barColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Provide a function on this option to generate custom hover legends. */
     var hoverCallback: js.UndefOr[
@@ -82,16 +83,16 @@ object morris {
           /* row */ js.Any, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Set to true to draw bars stacked vertically. */
-    var stacked: js.UndefOr[Boolean] = js.native
+    var stacked: js.UndefOr[Boolean] = js.undefined
   }
   object IBarOptions {
     
     @scala.inline
     def apply(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       element: js.Any,
       labels: js.Array[String],
       xkey: String,
@@ -127,14 +128,13 @@ object morris {
     }
   }
   
-  @js.native
   trait IChartOptions extends StObject {
     
     /** The ID of (or a reference to) the element into which to insert the graph. */
-    var element: js.Any = js.native
+    var element: js.Any
     
     /** Set to true to enable automatic resizing when the containing element resizes. (default: false). */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
   }
   object IChartOptions {
     
@@ -158,14 +158,13 @@ object morris {
     }
   }
   
-  @js.native
   trait IDonutData extends StObject {
     
     /** Label of the segment of the donut chart.*/
-    var label: String = js.native
+    var label: String
     
     /** Size of the segment of the donut chart.*/
-    var value: Double = js.native
+    var value: Double
   }
   object IDonutData {
     
@@ -186,17 +185,18 @@ object morris {
     }
   }
   
-  @js.native
-  trait IDonutOptions extends IChartOptions {
+  trait IDonutOptions
+    extends StObject
+       with IChartOptions {
     
     /** An array of strings containing HTML-style hex colors for each of the donut segments. */
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The data to plot. */
-    var data: js.Array[IDonutData] = js.native
+    var data: js.Array[IDonutData]
     
     /** A function that will translate a y-value into a label for the centre of the donut. */
-    var formatter: js.UndefOr[js.Function2[/* y */ Double, /* data */ IDonutData, String]] = js.native
+    var formatter: js.UndefOr[js.Function2[/* y */ Double, /* data */ IDonutData, String]] = js.undefined
   }
   object IDonutOptions {
     
@@ -232,53 +232,54 @@ object morris {
     }
   }
   
-  @js.native
-  trait IGridChartOptions extends IChartOptions {
+  trait IGridChartOptions
+    extends StObject
+       with IChartOptions {
     
     /** Set to false to disable drawing the x and y axes. */
-    var axes: js.UndefOr[Boolean] = js.native
+    var axes: js.UndefOr[Boolean] = js.undefined
     
     /** The data to plot. This is an array of objects, containing x and y attributes as described by the xkey and ykeys options. */
-    var data: js.Array[_] = js.native
+    var data: js.Array[js.Any]
     
     /**  Set to false to disable drawing the horizontal grid lines. */
-    var grid: js.UndefOr[Boolean] = js.native
+    var grid: js.UndefOr[Boolean] = js.undefined
     
     /** Set the line color of the grid. (default: #aaa) */
-    var gridLineColor: js.UndefOr[String] = js.native
+    var gridLineColor: js.UndefOr[String] = js.undefined
     
     /** Set the stroke of the grid. (default: 0.5)*/
-    var gridStrokeWidth: js.UndefOr[Double] = js.native
+    var gridStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /**  Set the color of the axis labels (default: #888). */
-    var gridTextColor: js.UndefOr[String] = js.native
+    var gridTextColor: js.UndefOr[String] = js.undefined
     
     /** Set the font family of the axis labels (default: sans-serif). */
-    var gridTextFamily: js.UndefOr[String] = js.native
+    var gridTextFamily: js.UndefOr[String] = js.undefined
     
     /** Set the point size of the axis labels (default: 12). */
-    var gridTextSize: js.UndefOr[Double] = js.native
+    var gridTextSize: js.UndefOr[Double] = js.undefined
     
     /** Set the font weight of the axis labels (default: normal). */
-    var gridTextWeight: js.UndefOr[String] = js.native
+    var gridTextWeight: js.UndefOr[String] = js.undefined
     
     /**  Set the visibility of the hover legend (see documentation). */
-    var hideHover: js.UndefOr[Boolean | AutoAlways] = js.native
+    var hideHover: js.UndefOr[Boolean | AutoAlways] = js.undefined
     
     /** A list of strings containing labels for the data series to be plotted (corresponding to the values in the ykeys option). */
-    var labels: js.Array[String] = js.native
+    var labels: js.Array[String]
     
     /** A string containing the name of the attribute that contains X labels. */
-    var xkey: String = js.native
+    var xkey: String
     
     /** A list of strings containing names of attributes that contain Y values (one for each series of data to be plotted). */
-    var ykeys: js.Array[String] = js.native
+    var ykeys: js.Array[String]
   }
   object IGridChartOptions {
     
     @scala.inline
     def apply(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       element: js.Any,
       labels: js.Array[String],
       xkey: String,
@@ -298,7 +299,7 @@ object morris {
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
@@ -368,35 +369,36 @@ object morris {
     }
   }
   
-  @js.native
-  trait ILineOptions extends IGridChartOptions {
+  trait ILineOptions
+    extends StObject
+       with IGridChartOptions {
     
     /** Define how null and undefined values are handled (see documentation). */
-    var continuousLine: js.UndefOr[Boolean] = js.native
+    var continuousLine: js.UndefOr[Boolean] = js.undefined
     
     /** A function that accepts millisecond timestamps and formats them for display as chart labels. */
-    var dateFormat: js.UndefOr[js.Function1[/* timestamp */ Double, String]] = js.native
+    var dateFormat: js.UndefOr[js.Function1[/* timestamp */ Double, String]] = js.undefined
     
     /** Array of color values to use for the event line colors. If you list fewer colors here than you have lines in events, then the values will be cycled. */
-    var eventLineColors: js.UndefOr[js.Array[String]] = js.native
+    var eventLineColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Width, in pixels, of the event lines. */
-    var eventStrokeWidth: js.UndefOr[Double] = js.native
+    var eventStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /** A list of x-values to draw as vertical 'event' lines on the chart. */
-    var events: js.UndefOr[js.Array[String]] = js.native
+    var events: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Change the opacity of the area fill colour. Accepts values between 0.0 (for completely transparent) and 1.0 (for completely opaque). */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /** Array of color values to use for the goal line colors. If you list fewer colors here than you have lines in goals, then the values will be cycled. */
-    var goalLineColors: js.UndefOr[js.Array[String]] = js.native
+    var goalLineColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Width, in pixels, of the goal lines. */
-    var goalStrokeWidth: js.UndefOr[Double] = js.native
+    var goalStrokeWidth: js.UndefOr[Double] = js.undefined
     
     /** A list of y-values to draw as horizontal 'goal' lines on the chart. */
-    var goals: js.UndefOr[js.Array[Double]] = js.native
+    var goals: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Provide a function on this option to generate custom hover legends. */
     var hoverCallback: js.UndefOr[
@@ -407,58 +409,58 @@ object morris {
           /* row */ js.Any, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Array containing colors for the series lines/points. */
-    var lineColors: js.UndefOr[js.Array[String]] = js.native
+    var lineColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Width of the series lines, in pixels. */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** Set to false to skip time/date parsing for X values, instead treating them as an equally-spaced series. */
-    var parseTime: js.UndefOr[Boolean] = js.native
+    var parseTime: js.UndefOr[Boolean] = js.undefined
     
     /** Colors for the series points. By default uses the same values as lineColors */
-    var pointFillColors: js.UndefOr[js.Array[String]] = js.native
+    var pointFillColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Diameter of the series points, in pixels. */
-    var pointSize: js.UndefOr[Double] = js.native
+    var pointSize: js.UndefOr[Double] = js.undefined
     
     /** Colors for the outlines of the series points. (#ffffff by default). */
-    var pointStrokeColors: js.UndefOr[js.Array[String]] = js.native
+    var pointStrokeColors: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set to a string value (eg: '%') to add a label suffix all y-labels. */
-    var postUnits: js.UndefOr[String] = js.native
+    var postUnits: js.UndefOr[String] = js.undefined
     
     /** Set to a string value (eg: '$') to add a label prefix all y-labels. */
-    var preUnits: js.UndefOr[String] = js.native
+    var preUnits: js.UndefOr[String] = js.undefined
     
     /** Set to false to disable line smoothing. */
-    var smooth: js.UndefOr[Boolean] = js.native
+    var smooth: js.UndefOr[Boolean] = js.undefined
     
     /** The angle in degrees from horizontal to draw x-axis labels. */
-    var xLabelAngle: js.UndefOr[Double] = js.native
+    var xLabelAngle: js.UndefOr[Double] = js.undefined
     
     /** A function that accepts Date objects and formats them for display as x-axis labels. Overrides the default formatter chosen by the automatic labeller or the xLabels option. */
-    var xLabelFormat: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+    var xLabelFormat: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
     
     /** Sets the x axis labelling interval. By default the interval will be automatically computed. */
-    var xLabels: js.UndefOr[Interval] = js.native
+    var xLabels: js.UndefOr[Interval] = js.undefined
     
     /** A function that accepts y-values and formats them for display as y-axis labels. */
-    var yLabelFormat: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.native
+    var yLabelFormat: js.UndefOr[js.Function1[/* val */ js.Any, String]] = js.undefined
     
     /** Max. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to automatically compute and ensure that the max y-value is at least [num]. */
-    var ymax: js.UndefOr[Double | String] = js.native
+    var ymax: js.UndefOr[Double | String] = js.undefined
     
     /** Min. bound for Y-values. Alternatively, set this to 'auto' to compute automatically, or 'auto [num]' to automatically compute and ensure that the min y-value is at most [num]. */
-    var ymin: js.UndefOr[Double | String] = js.native
+    var ymin: js.UndefOr[Double | String] = js.undefined
   }
   object ILineOptions {
     
     @scala.inline
     def apply(
-      data: js.Array[_],
+      data: js.Array[js.Any],
       element: js.Any,
       labels: js.Array[String],
       xkey: String,
@@ -714,20 +716,19 @@ object morris {
     def year: typings.morrisJs.morrisJsStrings.year = "year".asInstanceOf[typings.morrisJs.morrisJsStrings.year]
   }
   
-  @js.native
   trait MorrisStatic extends StObject {
     
     /** Create an area chart. */
-    def Area(options: IAreaOptions): GridChart = js.native
+    def Area(options: IAreaOptions): GridChart
     
     /** Create a bar chart. */
-    def Bar(options: IBarOptions): GridChart = js.native
+    def Bar(options: IBarOptions): GridChart
     
     /** Create a Donut chart. */
-    def Donut(options: IDonutOptions): DonutChart = js.native
+    def Donut(options: IDonutOptions): DonutChart
     
     /** Create a line chart. */
-    def Line(options: ILineOptions): GridChart = js.native
+    def Line(options: ILineOptions): GridChart
   }
   object MorrisStatic {
     

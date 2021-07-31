@@ -2,16 +2,14 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceiveMessageResult extends StObject {
   
   /**
     * A list of messages.
     */
-  var Messages: js.UndefOr[MessageList] = js.native
+  var Messages: js.UndefOr[MessageList] = js.undefined
 }
 object ReceiveMessageResult {
   

@@ -10,9 +10,9 @@ Check if mobile browser.
 | ------------------ | :-------------: |
 | Full name          | is-mobile |
 | Keywords           | mobile, desktop, check, browser |
-| # releases         | 9 |
-| # dependents       | 102 |
-| # downloads        | 9161572 |
+| # releases         | 6 |
+| # dependents       | 148 |
+| # downloads        | 12290247 |
 | # stars            | 6 |
 
 ## Links

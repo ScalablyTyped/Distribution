@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Glossary extends StObject {
   
   /** Output only. When the glossary creation was finished. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of entries defined in the glossary. */
-  var entryCount: js.UndefOr[Double] = js.native
+  var entryCount: js.UndefOr[Double] = js.undefined
   
   /** Required. Provides examples to build the glossary from. Total glossary must not exceed 10M Unicode codepoints. */
-  var inputConfig: js.UndefOr[GlossaryInputConfig] = js.native
+  var inputConfig: js.UndefOr[GlossaryInputConfig] = js.undefined
   
   /** Used with equivalent term set glossaries. */
-  var languageCodesSet: js.UndefOr[LanguageCodesSet] = js.native
+  var languageCodesSet: js.UndefOr[LanguageCodesSet] = js.undefined
   
   /** Used with unidirectional glossaries. */
-  var languagePair: js.UndefOr[LanguageCodePair] = js.native
+  var languagePair: js.UndefOr[LanguageCodePair] = js.undefined
   
   /** Required. The resource name of the glossary. Glossary names have the form `projects/{project-number-or-id}/locations/{location-id}/glossaries/{glossary-id}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. When CreateGlossary was called. */
-  var submitTime: js.UndefOr[String] = js.native
+  var submitTime: js.UndefOr[String] = js.undefined
 }
 object Glossary {
   

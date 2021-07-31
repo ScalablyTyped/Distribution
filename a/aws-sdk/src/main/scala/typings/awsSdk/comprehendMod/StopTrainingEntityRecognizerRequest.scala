@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTrainingEntityRecognizerRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the entity recognizer currently being trained.
     */
-  var EntityRecognizerArn: typings.awsSdk.comprehendMod.EntityRecognizerArn = js.native
+  var EntityRecognizerArn: typings.awsSdk.comprehendMod.EntityRecognizerArn
 }
 object StopTrainingEntityRecognizerRequest {
   

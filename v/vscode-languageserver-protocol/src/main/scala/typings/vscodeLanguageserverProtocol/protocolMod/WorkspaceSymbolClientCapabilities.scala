@@ -3,21 +3,19 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverProtocol.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceSymbolClientCapabilities extends StObject {
   
   /**
     * Symbol request supports dynamic registration.
     */
-  var dynamicRegistration: js.UndefOr[Boolean] = js.native
+  var dynamicRegistration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specific capabilities for the `SymbolKind` in the `workspace/symbol` request.
     */
-  var symbolKind: js.UndefOr[`1`] = js.native
+  var symbolKind: js.UndefOr[`1`] = js.undefined
 }
 object WorkspaceSymbolClientCapabilities {
   

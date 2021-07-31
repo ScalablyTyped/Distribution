@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorInfo extends StObject {
   
   /**
     * Error message.
     */
-  var Message: js.UndefOr[java.lang.String] = js.native
+  var Message: js.UndefOr[java.lang.String] = js.undefined
   
   /**
     * Error type.
     */
-  var Type: js.UndefOr[IngestionErrorType] = js.native
+  var Type: js.UndefOr[IngestionErrorType] = js.undefined
 }
 object ErrorInfo {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAnnotateFilesResponse extends StObject {
   
   /** The list of file annotation responses, each response corresponding to each AnnotateFileRequest in BatchAnnotateFilesRequest. */
-  var responses: js.UndefOr[js.Array[AnnotateFileResponse]] = js.native
+  var responses: js.UndefOr[js.Array[AnnotateFileResponse]] = js.undefined
 }
 object BatchAnnotateFilesResponse {
   

@@ -6,27 +6,27 @@ import typings.vueCompilerSfc.vueCompilerSfcBooleans.`true`
 import typings.vueCompilerSfc.vueCompilerSfcStrings.style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SFCStyleBlock extends SFCBlock {
+trait SFCStyleBlock
+  extends StObject
+     with SFCBlock {
   
-  var module: js.UndefOr[String | Boolean] = js.native
+  var module: js.UndefOr[String | Boolean] = js.undefined
   
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_SFCStyleBlock: style = js.native
+  var type_SFCStyleBlock: style
   
-  var vars: js.UndefOr[String] = js.native
+  var vars: js.UndefOr[String] = js.undefined
 }
 object SFCStyleBlock {
   
   @scala.inline
-  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation, `type`: style): SFCStyleBlock = {
+  def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation): SFCStyleBlock = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("style")
     __obj.asInstanceOf[SFCStyleBlock]
   }
   

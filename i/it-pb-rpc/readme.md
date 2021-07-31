@@ -10,9 +10,9 @@ A convenience-wrapper around protocol-buffers and lp-messages functions
 | ------------------ | :-------------: |
 | Full name          | it-pb-rpc |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 12 |
 | # dependents       | 3 |
-| # downloads        | 100360 |
+| # downloads        | 263366 |
 | # stars            | 0 |
 
 ## Links

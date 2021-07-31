@@ -10,32 +10,32 @@ import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressRoutersMod {
   
-  @JSImport("express-routers/dist/express-routers", "createRouter")
+  @JSImport("express-routers/dist/express-routers", JSImport.Namespace)
   @js.native
-  def createRouter(routeConfig: js.Array[RouteConfig]): Router = js.native
-  @JSImport("express-routers/dist/express-routers", "createRouter")
-  @js.native
-  def createRouter(routeConfig: RouteConfigAlternative): Router = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createRouter(routeConfig: js.Array[RouteConfig]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
+  @scala.inline
+  def createRouter(routeConfig: RouteConfigAlternative): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createRouter")(routeConfig.asInstanceOf[js.Any]).asInstanceOf[Router]
+  
   trait RouteConfig extends StObject {
     
-    var handler: (RequestHandler[ParamsDictionary, _, _, Query]) | (js.Array[RequestHandler[ParamsDictionary, _, _, Query]]) = js.native
+    var handler: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]])
     
-    var method: RouteConfigMethod = js.native
+    var method: RouteConfigMethod
     
-    var path: String = js.native
+    var path: String
   }
   object RouteConfig {
     
     @scala.inline
     def apply(
-      handler: (RequestHandler[ParamsDictionary, _, _, Query]) | (js.Array[RequestHandler[ParamsDictionary, _, _, Query]]),
+      handler: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]),
       method: RouteConfigMethod,
       path: String
     ): RouteConfig = {
@@ -48,12 +48,12 @@ object expressRoutersMod {
       
       @scala.inline
       def setHandler(
-        value: (RequestHandler[ParamsDictionary, _, _, Query]) | (js.Array[RequestHandler[ParamsDictionary, _, _, Query]])
+        value: (RequestHandler[ParamsDictionary, js.Any, js.Any, Query]) | (js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]])
       ): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHandlerFunction3(
-        value: (/* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
       
       @scala.inline

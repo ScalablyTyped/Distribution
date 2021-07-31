@@ -3,24 +3,24 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.alter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Alter extends AST {
+trait Alter
+  extends StObject
+     with AST {
   
-  var expr: js.Any = js.native
+  var expr: js.Any
   
-  var table: From = js.native
+  var table: From
   
-  var `type`: alter = js.native
+  var `type`: alter
 }
 object Alter {
   
   @scala.inline
-  def apply(expr: js.Any, table: From, `type`: alter): Alter = {
+  def apply(expr: js.Any, table: From): Alter = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("alter")
     __obj.asInstanceOf[Alter]
   }
   

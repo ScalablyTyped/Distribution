@@ -12,7 +12,7 @@ Creates the basic interactivity for an element that expands and collapses anothe
 | Keywords           | makeup, ebay, accessibility, a11y |
 | # releases         | 16 |
 | # dependents       | 1 |
-| # downloads        | 4513 |
+| # downloads        | 4793 |
 | # stars            | 0 |
 
 ## Links

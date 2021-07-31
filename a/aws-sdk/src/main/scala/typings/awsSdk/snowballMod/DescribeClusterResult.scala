@@ -2,16 +2,14 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClusterResult extends StObject {
   
   /**
     * Information about a specific cluster, including shipping information, cluster status, and other important metadata.
     */
-  var ClusterMetadata: js.UndefOr[typings.awsSdk.snowballMod.ClusterMetadata] = js.native
+  var ClusterMetadata: js.UndefOr[typings.awsSdk.snowballMod.ClusterMetadata] = js.undefined
 }
 object DescribeClusterResult {
   

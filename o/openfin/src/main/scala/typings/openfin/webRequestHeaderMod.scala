@@ -3,19 +3,17 @@ package typings.openfin
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webRequestHeaderMod {
   
   type WebRequestHeader = StringDictionary[String]
   
-  @js.native
   trait WebRequestHeaderConfig extends StObject {
     
-    var headers: js.Array[WebRequestHeader] = js.native
+    var headers: js.Array[WebRequestHeader]
     
-    var urlPatterns: js.Array[String] = js.native
+    var urlPatterns: js.Array[String]
   }
   object WebRequestHeaderConfig {
     

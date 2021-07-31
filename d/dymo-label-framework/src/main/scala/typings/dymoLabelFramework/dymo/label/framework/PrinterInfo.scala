@@ -2,32 +2,30 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrinterInfo extends StObject {
   
   /** Indicates whether the Auto-Cut feature is supported by the printer or not. Note: The property is only defined if printerType is "TapePrinter". */
-  var isAutoCutSupported: Boolean = js.native
+  var isAutoCutSupported: Boolean
   
   /** Indicates whether the printer is connected to a computer or not. Note: Currently only returns properly for local USB-connected printers on Windows. */
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
   /** Indicates whether the printer is a local USB-connected printer or a shared network printer. Note: Currently only returns properly on Windows. */
-  var isLocal: Boolean = js.native
+  var isLocal: Boolean
   
   /** Indicates whether the printer is a "LabelWriter Twin Turbo" (has two rolls) or not. Note: The property is only defined if printerType is "LabelWriterPrinter". */
-  var isTwinTurbo: Boolean = js.native
+  var isTwinTurbo: Boolean
   
   /** Returns the printer model/driver name. */
-  var modelName: String = js.native
+  var modelName: String
   
   /** Returns the printer name (print queue name on Mac). */
-  var name: String = js.native
+  var name: String
   
   /** Returns the printer type; "LabelWriterPrinter" or "TapePrinter". */
-  var printerType: String = js.native
+  var printerType: String
 }
 object PrinterInfo {
   

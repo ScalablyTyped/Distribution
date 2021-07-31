@@ -2,22 +2,20 @@ package typings.victory.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  style :{  axis :react.react.CSSProperties | undefined,   axisLabel :react.react.CSSProperties | undefined,   grid :react.react.CSSProperties | undefined,   ticks :react.react.CSSProperties | undefined,   tickLabels :react.react.CSSProperties | undefined} | undefined} & victory.victory.ThemeBaseProps */
-@js.native
 trait styleaxisCSSPropertiesund extends StObject {
   
-  var colorScale: js.Array[String] = js.native
+  var colorScale: js.Array[String]
   
-  var height: Double = js.native
+  var height: Double
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Axis] = js.native
+  var style: js.UndefOr[Axis] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object styleaxisCSSPropertiesund {
   

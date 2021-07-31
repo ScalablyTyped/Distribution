@@ -4,13 +4,13 @@ import typings.signalsJs.isignalMod.ISignal
 import typings.signalsJs.islotMod.ISlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iprioritysignalMod {
   
-  @js.native
-  trait IPrioritySignal extends ISignal {
+  trait IPrioritySignal
+    extends StObject
+       with ISignal {
     
     /**
       * Subscribes a one-time listener for this signal.
@@ -26,7 +26,7 @@ object iprioritysignalMod {
       * @return a ISlot, which contains the Function passed as the parameter
       * @see ISlot
       */
-    def addOnceWithPriority(listener: js.Function, priority: Double): ISlot = js.native
+    def addOnceWithPriority(listener: js.Function, priority: Double): ISlot
     
     /**
       * Subscribes a listener for the signal.
@@ -40,7 +40,7 @@ object iprioritysignalMod {
       * @return a ISlot, which contains the Function passed as the parameter
       * @see ISlot
       */
-    def addWithPriority(listener: js.Function, priority: Double): ISlot = js.native
+    def addWithPriority(listener: js.Function, priority: Double): ISlot
   }
   object IPrioritySignal {
     

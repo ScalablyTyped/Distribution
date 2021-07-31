@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object admChannelMod {
@@ -48,6 +47,10 @@ object admChannelMod {
   /* static members */
   object AdmChannel {
     
+    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AdmChannel resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object admChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AdmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AdmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AdmChannelState): AdmChannel = js.native
-    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AdmChannelState, opts: CustomResourceOptions): AdmChannel = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AdmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AdmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AdmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AdmChannelState): AdmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AdmChannel]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AdmChannelState, opts: CustomResourceOptions): AdmChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AdmChannel]
     
     /**
       * Returns true if the given object is an instance of AdmChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/admChannel.AdmChannel */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/admChannel.AdmChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/admChannel.AdmChannel */ Boolean]
   }
   
-  @js.native
   trait AdmChannelArgs extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: Input[String] = js.native
+    val applicationId: Input[String]
     
     /**
       * Client ID (part of OAuth Credentials) obtained via Amazon Developer Account.
       */
-    val clientId: Input[String] = js.native
+    val clientId: Input[String]
     
     /**
       * Client Secret (part of OAuth Credentials) obtained via Amazon Developer Account.
       */
-    val clientSecret: Input[String] = js.native
+    val clientSecret: Input[String]
     
     /**
       * Specifies whether to enable the channel. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object AdmChannelArgs {
     
@@ -130,28 +127,27 @@ object admChannelMod {
     }
   }
   
-  @js.native
   trait AdmChannelState extends StObject {
     
     /**
       * The application ID.
       */
-    val applicationId: js.UndefOr[Input[String]] = js.native
+    val applicationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Client ID (part of OAuth Credentials) obtained via Amazon Developer Account.
       */
-    val clientId: js.UndefOr[Input[String]] = js.native
+    val clientId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Client Secret (part of OAuth Credentials) obtained via Amazon Developer Account.
       */
-    val clientSecret: js.UndefOr[Input[String]] = js.native
+    val clientSecret: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether to enable the channel. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object AdmChannelState {
     

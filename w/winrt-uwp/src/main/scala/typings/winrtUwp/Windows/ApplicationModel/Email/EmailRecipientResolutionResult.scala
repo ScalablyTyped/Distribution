@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Security.Cryptography.Certificates.Certificate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of an attempt to resolve an email recipient. */
-@js.native
 trait EmailRecipientResolutionResult extends StObject {
   
   /** Gets the public key for an email recipient. */
-  var publicKeys: IVectorView[Certificate] = js.native
+  var publicKeys: IVectorView[Certificate]
   
   /** Gets the state of an attempt to resolve an email recipient. */
-  var status: EmailRecipientResolutionStatus = js.native
+  var status: EmailRecipientResolutionStatus
 }
 object EmailRecipientResolutionResult {
   

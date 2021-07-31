@@ -2,25 +2,23 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing base properties of a user enrolled second factor for a
   * `CreateRequest`.
   */
-@js.native
 trait CreateMultiFactorInfoRequest extends StObject {
   
   /**
     * The optional display name for an enrolled second factor.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The type identifier of the second factor. For SMS second factors, this is `phone`.
     */
-  var factorId: String = js.native
+  var factorId: String
 }
 object CreateMultiFactorInfoRequest {
   

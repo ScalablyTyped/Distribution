@@ -3,7 +3,6 @@ package typings.asyncblockGenerators
 import typings.asyncblockGenerators.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ab {
@@ -64,22 +63,21 @@ object ab {
       def sync(options: TaskOptions): T = js.native
     }
     
-    @js.native
     trait TaskOptions extends StObject {
       
-      var dontWait: js.UndefOr[Boolean] = js.native
+      var dontWait: js.UndefOr[Boolean] = js.undefined
       
-      var firstArgIsError: js.UndefOr[Boolean] = js.native
+      var firstArgIsError: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreError: js.UndefOr[Boolean] = js.native
+      var ignoreError: js.UndefOr[Boolean] = js.undefined
       
-      var key: js.UndefOr[js.Any] = js.native
+      var key: js.UndefOr[js.Any] = js.undefined
       
-      var responseFormat: js.UndefOr[js.Array[String]] = js.native
+      var responseFormat: js.UndefOr[js.Array[String]] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
-      var timeoutIsError: js.UndefOr[Boolean] = js.native
+      var timeoutIsError: js.UndefOr[Boolean] = js.undefined
     }
     object TaskOptions {
       

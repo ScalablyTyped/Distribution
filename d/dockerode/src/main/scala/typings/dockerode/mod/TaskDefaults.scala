@@ -2,13 +2,11 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefaults extends StObject {
   
-  var LogDriver: js.UndefOr[Driver] = js.native
+  var LogDriver: js.UndefOr[Driver] = js.undefined
 }
 object TaskDefaults {
   

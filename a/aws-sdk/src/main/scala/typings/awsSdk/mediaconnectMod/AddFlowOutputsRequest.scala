@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddFlowOutputsRequest extends StObject {
   
   /**
     * The flow that you want to add outputs to.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * A list of outputs that you want to add.
     */
-  var Outputs: listOfAddOutputRequest = js.native
+  var Outputs: listOfAddOutputRequest
 }
 object AddFlowOutputsRequest {
   

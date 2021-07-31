@@ -2,23 +2,23 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabBarStyleOptions extends CommonCallbackOptions {
+trait TabBarStyleOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  tab 的背景色，HexColor
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   //  tabBar上边框的颜色， 仅支持 black/white
-  var borderStyle: String = js.native
+  var borderStyle: String
   
   //  tab 上的文字默认颜色，HexColor
-  var color: String = js.native
+  var color: String
   
   //  tab 上的文字选中时的颜色，HexColor
-  var selectedColor: String = js.native
+  var selectedColor: String
 }
 object TabBarStyleOptions {
   

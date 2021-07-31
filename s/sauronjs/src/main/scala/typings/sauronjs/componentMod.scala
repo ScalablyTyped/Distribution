@@ -4,14 +4,15 @@ import typings.std.HTMLElement
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
   
   @JSImport("sauronjs/src/core/component", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Component {
+  class ^ protected ()
+    extends StObject
+       with Component {
     def this(params: ComponentParameters) = this()
   }
   @JSImport("sauronjs/src/core/component", JSImport.Namespace)
@@ -47,7 +48,7 @@ object componentMod {
     
     def registerSubscription(
       subscriptions: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Subscription */ js.Any
         ]
     ): Unit = js.native
     
@@ -55,17 +56,16 @@ object componentMod {
     
     def subscribe(
       observables: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
         ]
     ): Unit = js.native
   }
   
-  @js.native
   trait ComponentParameters extends StObject {
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
   }
   object ComponentParameters {
     

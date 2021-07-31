@@ -5,10 +5,13 @@ import typings.react.mod.ReactNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-lazyload", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-lazyload", JSImport.Default)
   @js.native
@@ -17,48 +20,44 @@ object mod {
     def this(props: LazyLoad_) = this()
   }
   
-  @JSImport("react-lazyload", "forceCheck")
-  @js.native
-  def forceCheck(): Unit = js.native
+  @scala.inline
+  def forceCheck(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceCheck")().asInstanceOf[Unit]
   
-  @JSImport("react-lazyload", "forceVisible")
-  @js.native
-  def forceVisible(): Unit = js.native
+  @scala.inline
+  def forceVisible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceVisible")().asInstanceOf[Unit]
   
-  @JSImport("react-lazyload", "lazyload")
-  @js.native
-  def lazyload(option: js.Object): LazyLoad_ = js.native
+  @scala.inline
+  def lazyload(option: js.Object): LazyLoad_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lazyload")(option.asInstanceOf[js.Any]).asInstanceOf[LazyLoad_]
   
-  @js.native
   trait LazyLoadProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var classNamePrefix: js.UndefOr[String] = js.native
+    var classNamePrefix: js.UndefOr[String] = js.undefined
     
-    var debounce: js.UndefOr[Double | Boolean] = js.native
+    var debounce: js.UndefOr[Double | Boolean] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var offset: js.UndefOr[Double | js.Array[Double]] = js.native
+    var offset: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
-    var placeholder: js.UndefOr[ReactNode] = js.native
+    var placeholder: js.UndefOr[ReactNode] = js.undefined
     
-    var preventLoading: js.UndefOr[Boolean] = js.native
+    var preventLoading: js.UndefOr[Boolean] = js.undefined
     
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
-    var scrollContainer: js.UndefOr[String | Element] = js.native
+    var scrollContainer: js.UndefOr[String | Element] = js.undefined
     
-    var throttle: js.UndefOr[Double | Boolean] = js.native
+    var throttle: js.UndefOr[Double | Boolean] = js.undefined
     
-    var unmountIfInvisible: js.UndefOr[Boolean] = js.native
+    var unmountIfInvisible: js.UndefOr[Boolean] = js.undefined
   }
   object LazyLoadProps {
     

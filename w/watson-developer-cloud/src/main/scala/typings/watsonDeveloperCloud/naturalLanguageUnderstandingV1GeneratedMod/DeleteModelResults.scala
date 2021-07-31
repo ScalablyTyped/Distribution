@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Delete model results. */
-@js.native
 trait DeleteModelResults extends StObject {
   
   /** model_id of the deleted model. */
-  var deleted: js.UndefOr[String] = js.native
+  var deleted: js.UndefOr[String] = js.undefined
 }
 object DeleteModelResults {
   

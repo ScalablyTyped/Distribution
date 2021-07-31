@@ -2,23 +2,21 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetParameters extends StObject {
   
-  var acknowledgeAbuse: js.UndefOr[Boolean] = js.native
+  var acknowledgeAbuse: js.UndefOr[Boolean] = js.undefined
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  var updateViewedDate: js.UndefOr[Boolean] = js.native
+  var updateViewedDate: js.UndefOr[Boolean] = js.undefined
 }
 object GetParameters {
   

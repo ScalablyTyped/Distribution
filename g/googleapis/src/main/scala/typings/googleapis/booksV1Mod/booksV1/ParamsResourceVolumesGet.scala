@@ -6,51 +6,51 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVolumesGet extends StandardParameters {
+trait ParamsResourceVolumesGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ISO-3166-1 code to override the IP-based location.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to include non-comics series. Defaults to false.
     */
-  var includeNonComicsSeries: js.UndefOr[Boolean] = js.native
+  var includeNonComicsSeries: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Brand results for partner ID.
     */
-  var partner: js.UndefOr[String] = js.native
+  var partner: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict information returned to a set of selected fields.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var user_library_consistent_read: js.UndefOr[Boolean] = js.native
+  var user_library_consistent_read: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of volume to retrieve.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceVolumesGet {
   

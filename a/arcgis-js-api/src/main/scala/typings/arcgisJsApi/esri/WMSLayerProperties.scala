@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WMSLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with BlendLayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
@@ -18,154 +17,154 @@ trait WMSLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#allSublayers)
     */
-  var allSublayers: js.UndefOr[CollectionProperties[WMSSublayerProperties]] = js.native
+  var allSublayers: js.UndefOr[CollectionProperties[WMSSublayerProperties]] = js.undefined
   
   /**
     * Copyright information for the WMS service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * Use this to append different custom parameters to the WMS map requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customLayerParameters)
     */
-  var customLayerParameters: js.UndefOr[js.Any] = js.native
+  var customLayerParameters: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Use this to append custom parameters to all WMS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#customParameters)
     */
-  var customParameters: js.UndefOr[js.Any] = js.native
+  var customParameters: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Description for the WMS layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Return format of feature information (MIME type).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoFormat)
     */
-  var featureInfoFormat: js.UndefOr[String] = js.native
+  var featureInfoFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for the WMS GetFeatureInfo call.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#featureInfoUrl)
     */
-  var featureInfoUrl: js.UndefOr[String] = js.native
+  var featureInfoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * All bounding boxes defined for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#fullExtents)
     */
-  var fullExtents: js.UndefOr[js.Array[ExtentProperties]] = js.native
+  var fullExtents: js.UndefOr[js.Array[ExtentProperties]] = js.undefined
   
   /**
     * The map image format (MIME type) to request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageFormat)
     */
-  var imageFormat: js.UndefOr[String] = js.native
+  var imageFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the maximum height of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxHeight)
     */
-  var imageMaxHeight: js.UndefOr[Double] = js.native
+  var imageMaxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum width of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageMaxWidth)
     */
-  var imageMaxWidth: js.UndefOr[Double] = js.native
+  var imageMaxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the background of the image exported by the service is transparent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#imageTransparency)
     */
-  var imageTransparency: js.UndefOr[Boolean] = js.native
+  var imageTransparency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#legendEnabled)
     */
-  var legendEnabled: js.UndefOr[Boolean] = js.native
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The spatial reference of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * List of spatialReference well known ids derived from the CRS elements of the first layer in the GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#spatialReferences)
     */
-  var spatialReferences: js.UndefOr[js.Array[Double]] = js.native
+  var spatialReferences: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * A collection of [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#sublayers)
     */
-  var sublayers: js.UndefOr[CollectionProperties[WMSSublayerProperties]] = js.native
+  var sublayers: js.UndefOr[CollectionProperties[WMSSublayerProperties]] = js.undefined
   
   /**
     * The layer's time extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeExtent)
     */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
   
   /**
     * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeInfo)
     */
-  var timeInfo: js.UndefOr[TimeInfoProperties] = js.native
+  var timeInfo: js.UndefOr[TimeInfoProperties] = js.undefined
   
   /**
     * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#timeOffset)
     */
-  var timeOffset: js.UndefOr[TimeIntervalProperties] = js.native
+  var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
   
   /**
     * The URL of the WMS service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#useViewTime)
     */
-  var useViewTime: js.UndefOr[Boolean] = js.native
+  var useViewTime: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Version of the [WMS specification](http://www.opengeospatial.org/standards/wms) to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html#version)
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object WMSLayerProperties {
   

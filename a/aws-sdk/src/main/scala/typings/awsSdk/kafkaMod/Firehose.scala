@@ -2,15 +2,13 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Firehose extends StObject {
   
-  var DeliveryStream: js.UndefOr[string] = js.native
+  var DeliveryStream: js.UndefOr[string] = js.undefined
   
-  var Enabled: boolean = js.native
+  var Enabled: boolean
 }
 object Firehose {
   

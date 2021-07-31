@@ -4,13 +4,13 @@ import typings.senchaTouch.Ext.data.IModel
 import typings.senchaTouch.Ext.scroll.IView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lib {
   
-  @js.native
-  trait IComponent extends IEvented {
+  trait IComponent
+    extends StObject
+       with IEvented {
     
     /** [Method] Adds a CSS class or classes to this Component s rendered element
       * @param cls String The CSS class to add.
@@ -24,67 +24,67 @@ object lib {
           /* suffix */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var baseCls: js.UndefOr[java.lang.String] = js.native
+    var baseCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var border: js.UndefOr[js.Any] = js.native
+    var border: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var bottom: js.UndefOr[js.Any] = js.native
+    var bottom: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var cls: js.UndefOr[js.Any] = js.native
+    var cls: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var componentCls: js.UndefOr[java.lang.String] = js.native
+    var componentCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.Element/HTMLElement/String) */
-    var contentEl: js.UndefOr[js.Any] = js.native
+    var contentEl: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Disables this Component */
-    var disable: js.UndefOr[js.Function0[Unit]] = js.native
+    var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var disabledCls: js.UndefOr[java.lang.String] = js.native
+    var disabledCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var dock: js.UndefOr[java.lang.String] = js.native
+    var dock: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var docked: js.UndefOr[java.lang.String] = js.native
+    var docked: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Enables this Component */
-    var enable: js.UndefOr[js.Function0[Unit]] = js.native
+    var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var enterAnimation: js.UndefOr[js.Any] = js.native
+    var enterAnimation: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var exitAnimation: js.UndefOr[js.Any] = js.native
+    var exitAnimation: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number) */
-    var flex: js.UndefOr[Double] = js.native
+    var flex: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var floating: js.UndefOr[Boolean] = js.native
+    var floating: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var floatingCls: js.UndefOr[java.lang.String] = js.native
+    var floatingCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Prepares information on aligning this to component using alignment
       * @param component Object
@@ -92,277 +92,277 @@ object lib {
       */
     var getAlignmentInfo: js.UndefOr[
         js.Function2[/* component */ js.UndefOr[js.Any], /* alignment */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of baseCls
       * @returns String
       */
-    var getBaseCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getBaseCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of border
       * @returns Number/String
       */
-    var getBorder: js.UndefOr[js.Function0[_]] = js.native
+    var getBorder: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of bottom
       * @returns any
       */
-    var getBottom: js.UndefOr[js.Function0[_]] = js.native
+    var getBottom: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of centered
       * @returns Boolean
       */
-    var getCentered: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getCentered: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of cls
       * @returns any
       */
-    var getCls: js.UndefOr[js.Function0[_]] = js.native
+    var getCls: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of contentEl
       * @returns Ext.Element/HTMLElement/String
       */
-    var getContentEl: js.UndefOr[js.Function0[_]] = js.native
+    var getContentEl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of disabled
       * @returns Boolean
       */
-    var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of disabledCls
       * @returns String
       */
-    var getDisabledCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDisabledCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of docked
       * @returns String
       */
-    var getDocked: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDocked: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Retrieves the top level element representing this component
       * @returns Ext.dom.Element
       */
-    var getEl: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.native
+    var getEl: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.undefined
     
     /** [Method] Returns the value of enterAnimation
       * @returns String/Mixed
       */
-    var getEnterAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getEnterAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of exitAnimation
       * @returns String/Mixed
       */
-    var getExitAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getExitAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of flex
       * @returns Number
       */
-    var getFlex: js.UndefOr[js.Function0[Double]] = js.native
+    var getFlex: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of floatingCls
       * @returns String
       */
-    var getFloatingCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getFloatingCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of height
       * @returns Number/String
       */
-    var getHeight: js.UndefOr[js.Function0[_]] = js.native
+    var getHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of hidden
       * @returns Boolean
       */
-    var getHidden: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of hiddenCls
       * @returns String
       */
-    var getHiddenCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getHiddenCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of hideAnimation
       * @returns String/Mixed
       */
-    var getHideAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getHideAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of html
       * @returns String/Ext.Element/HTMLElement
       */
-    var getHtml: js.UndefOr[js.Function0[_]] = js.native
+    var getHtml: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of itemId
       * @returns String
       */
-    var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getItemId: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of left
       * @returns Number/String
       */
-    var getLeft: js.UndefOr[js.Function0[_]] = js.native
+    var getLeft: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of margin
       * @returns Number/String
       */
-    var getMargin: js.UndefOr[js.Function0[_]] = js.native
+    var getMargin: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of maxHeight
       * @returns Number/String
       */
-    var getMaxHeight: js.UndefOr[js.Function0[_]] = js.native
+    var getMaxHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of maxWidth
       * @returns Number/String
       */
-    var getMaxWidth: js.UndefOr[js.Function0[_]] = js.native
+    var getMaxWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of minHeight
       * @returns Number/String
       */
-    var getMinHeight: js.UndefOr[js.Function0[_]] = js.native
+    var getMinHeight: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of minWidth
       * @returns Number/String
       */
-    var getMinWidth: js.UndefOr[js.Function0[_]] = js.native
+    var getMinWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of padding
       * @returns Number/String
       */
-    var getPadding: js.UndefOr[js.Function0[_]] = js.native
+    var getPadding: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the parent of this component if it has one
       * @returns Ext.Component The parent of this component.
       */
-    var getParent: js.UndefOr[js.Function0[this.type]] = js.native
+    var getParent: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Returns the value of plugins
       * @returns Object/Array
       */
-    var getPlugins: js.UndefOr[js.Function0[_]] = js.native
+    var getPlugins: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of record
       * @returns Ext.data.Model
       */
-    var getRecord: js.UndefOr[js.Function0[IModel]] = js.native
+    var getRecord: js.UndefOr[js.Function0[IModel]] = js.undefined
     
     /** [Method] Returns the value of renderTo
       * @returns Ext.Element
       */
-    var getRenderTo: js.UndefOr[js.Function0[IElement]] = js.native
+    var getRenderTo: js.UndefOr[js.Function0[IElement]] = js.undefined
     
     /** [Method] Returns the value of right
       * @returns Number/String
       */
-    var getRight: js.UndefOr[js.Function0[_]] = js.native
+    var getRight: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of showAnimation
       * @returns String/Mixed
       */
-    var getShowAnimation: js.UndefOr[js.Function0[_]] = js.native
+    var getShowAnimation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the height and width of the Component
       * @returns Object The current height and width of the Component.
       */
-    var getSize: js.UndefOr[js.Function0[_]] = js.native
+    var getSize: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of style
       * @returns String/Object
       */
-    var getStyle: js.UndefOr[js.Function0[_]] = js.native
+    var getStyle: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of styleHtmlCls
       * @returns String
       */
-    var getStyleHtmlCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getStyleHtmlCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of styleHtmlContent
       * @returns Boolean
       */
-    var getStyleHtmlContent: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getStyleHtmlContent: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of top
       * @returns Number/String
       */
-    var getTop: js.UndefOr[js.Function0[_]] = js.native
+    var getTop: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of tpl
       * @returns String/String[]/Ext.Template/Ext.XTemplate[]
       */
-    var getTpl: js.UndefOr[js.Function0[_]] = js.native
+    var getTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of tplWriteMode
       * @returns String
       */
-    var getTplWriteMode: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getTplWriteMode: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of ui
       * @returns String
       */
-    var getUi: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getUi: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of width
       * @returns Number/String
       */
-    var getWidth: js.UndefOr[js.Function0[_]] = js.native
+    var getWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns this Component s xtype hierarchy as a slash delimited string
       * @returns String The xtype hierarchy string.
       */
-    var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getXTypes: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of zIndex
       * @returns Number
       */
-    var getZIndex: js.UndefOr[js.Function0[Double]] = js.native
+    var getZIndex: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns true if this component has a parent
       * @returns Boolean true if this component has a parent.
       */
-    var hasParent: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasParent: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var height: js.UndefOr[js.Any] = js.native
+    var height: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var hiddenCls: js.UndefOr[java.lang.String] = js.native
+    var hiddenCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Hides this Component optionally using an animation
       * @param animation Object/Boolean You can specify an animation here or a bool to use the hideAnimation config.
       * @returns Ext.Component
       */
-    var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.native
+    var hide: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var hideAnimation: js.UndefOr[js.Any] = js.native
+    var hideAnimation: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var hideOnMaskTap: js.UndefOr[Boolean] = js.native
+    var hideOnMaskTap: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Ext.Element/HTMLElement) */
-    var html: js.UndefOr[js.Any] = js.native
+    var html: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[java.lang.String] = js.native
+    var id: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Allows addition of behavior to the rendering phase  */
-    var initialize: js.UndefOr[js.Function0[Unit]] = js.native
+    var initialize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns true if this Component is currently disabled
       * @returns Boolean true if currently disabled.
       */
-    var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns true if this Component is currently hidden
       * @returns Boolean true if currently hidden.
       */
-    var isHidden: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isHidden: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Tests whether or not this Component is of a specific xtype
       * @param xtype String The xtype to check for this Component.
@@ -371,46 +371,46 @@ object lib {
       */
     var isXType: js.UndefOr[
         js.Function2[/* xtype */ js.UndefOr[java.lang.String], /* shallow */ js.UndefOr[Boolean], Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var itemId: js.UndefOr[java.lang.String] = js.native
+    var itemId: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var layoutOnOrientationChange: js.UndefOr[Boolean] = js.native
+    var layoutOnOrientationChange: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var left: js.UndefOr[js.Any] = js.native
+    var left: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var margin: js.UndefOr[js.Any] = js.native
+    var margin: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var maxHeight: js.UndefOr[js.Any] = js.native
+    var maxHeight: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var maxWidth: js.UndefOr[js.Any] = js.native
+    var maxWidth: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var minHeight: js.UndefOr[js.Any] = js.native
+    var minHeight: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var minWidth: js.UndefOr[js.Any] = js.native
+    var minWidth: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var monitorOrientation: js.UndefOr[Boolean] = js.native
+    var monitorOrientation: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var padding: js.UndefOr[js.Any] = js.native
+    var padding: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object/Array) */
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Ext.data.Model) */
-    var record: js.UndefOr[IModel] = js.native
+    var record: js.UndefOr[IModel] = js.undefined
     
     /** [Method] Removes the given CSS class es from this Component s rendered element
       * @param cls String The class(es) to remove.
@@ -424,10 +424,10 @@ object lib {
           /* suffix */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Ext.Element) */
-    var renderTo: js.UndefOr[IElement] = js.native
+    var renderTo: js.UndefOr[IElement] = js.undefined
     
     /** [Method] Replaces specified classes with the newly specified classes
       * @param oldCls String The class(es) to remove.
@@ -443,189 +443,189 @@ object lib {
           /* suffix */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Resets top right bottom and left configurations to null which will un float this component  */
-    var resetFloating: js.UndefOr[js.Function0[Unit]] = js.native
+    var resetFloating: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var right: js.UndefOr[js.Any] = js.native
+    var right: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean/String/Object) */
-    var scroll: js.UndefOr[js.Any] = js.native
+    var scroll: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of baseCls
       * @param baseCls String The new value.
       */
-    var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of border
       * @param border Number/String The new value.
       */
-    var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBorder: js.UndefOr[js.Function1[/* border */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of bottom
       * @param bottom Number/String The new value.
       */
-    var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBottom: js.UndefOr[js.Function1[/* bottom */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of centered
       * @param centered Boolean The new value.
       */
-    var setCentered: js.UndefOr[js.Function1[/* centered */ js.UndefOr[Boolean], Unit]] = js.native
+    var setCentered: js.UndefOr[js.Function1[/* centered */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of cls
       * @param cls String/String[] The new value.
       */
-    var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.native
+    var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of contentEl
       * @param contentEl Ext.Element/HTMLElement/String The new value.
       */
-    var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.native
+    var setContentEl: js.UndefOr[js.Function1[/* contentEl */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of disabled
       * @param disabled Boolean The new value.
       */
-    var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.native
+    var setDisabled: js.UndefOr[js.Function1[/* disabled */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of disabledCls
       * @param disabledCls String The new value.
       */
-    var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDisabledCls: js.UndefOr[js.Function1[/* disabledCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of docked
       * @param docked String The new value.
       */
-    var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDocked: js.UndefOr[js.Function1[/* docked */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of draggable
       * @param draggable Object The new value.
       */
-    var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.native
+    var setDraggable: js.UndefOr[js.Function1[/* draggable */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of enterAnimation
       * @param enterAnimation String/Mixed The new value.
       */
-    var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setEnterAnimation: js.UndefOr[js.Function1[/* enterAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of exitAnimation
       * @param exitAnimation String/Mixed The new value.
       */
-    var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setExitAnimation: js.UndefOr[js.Function1[/* exitAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of flex
       * @param flex Number The new value.
       */
-    var setFlex: js.UndefOr[js.Function1[/* flex */ js.UndefOr[Double], Unit]] = js.native
+    var setFlex: js.UndefOr[js.Function1[/* flex */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Used to update the floating state of this component
       * @param floating Boolean true if you want to float this component.
       */
-    var setFloating: js.UndefOr[js.Function1[/* floating */ js.UndefOr[Boolean], Unit]] = js.native
+    var setFloating: js.UndefOr[js.Function1[/* floating */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of floatingCls
       * @param floatingCls String The new value.
       */
-    var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setFloatingCls: js.UndefOr[js.Function1[/* floatingCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of height
       * @param height Number/String The new value.
       */
-    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHeight: js.UndefOr[js.Function1[/* height */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of hidden
       * @param hidden Boolean The new value.
       */
-    var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHidden: js.UndefOr[js.Function1[/* hidden */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of hiddenCls
       * @param hiddenCls String The new value.
       */
-    var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setHiddenCls: js.UndefOr[js.Function1[/* hiddenCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of hideAnimation
       * @param hideAnimation String/Mixed The new value.
       */
-    var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHideAnimation: js.UndefOr[js.Function1[/* hideAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of html
       * @param html String/Ext.Element/HTMLElement The new value.
       */
-    var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.native
+    var setHtml: js.UndefOr[js.Function1[/* html */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of itemId
       * @param itemId String The new value.
       */
-    var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setItemId: js.UndefOr[js.Function1[/* itemId */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of left
       * @param left Number/String The new value.
       */
-    var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.native
+    var setLeft: js.UndefOr[js.Function1[/* left */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of margin
       * @param margin Number/String The new value.
       */
-    var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMargin: js.UndefOr[js.Function1[/* margin */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxHeight
       * @param maxHeight Number/String The new value.
       */
-    var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMaxHeight: js.UndefOr[js.Function1[/* maxHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of maxWidth
       * @param maxWidth Number/String The new value.
       */
-    var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMaxWidth: js.UndefOr[js.Function1[/* maxWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of minHeight
       * @param minHeight Number/String The new value.
       */
-    var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMinHeight: js.UndefOr[js.Function1[/* minHeight */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of minWidth
       * @param minWidth Number/String The new value.
       */
-    var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMinWidth: js.UndefOr[js.Function1[/* minWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of padding
       * @param padding Number/String The new value.
       */
-    var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.native
+    var setPadding: js.UndefOr[js.Function1[/* padding */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of plugins
       * @param plugins Object/Array The new value.
       */
-    var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.native
+    var setPlugins: js.UndefOr[js.Function1[/* plugins */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of record
       * @param record Ext.data.Model The new value.
       */
-    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], Unit]] = js.undefined
     
     /** [Method] Sets the value of renderTo
       * @param renderTo Ext.Element The new value.
       */
-    var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[IElement], Unit]] = js.native
+    var setRenderTo: js.UndefOr[js.Function1[/* renderTo */ js.UndefOr[IElement], Unit]] = js.undefined
     
     /** [Method] Sets the value of right
       * @param right Number/String The new value.
       */
-    var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.native
+    var setRight: js.UndefOr[js.Function1[/* right */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] This method has moved to Ext Container  */
-    var setScrollable: js.UndefOr[js.Function0[Unit]] = js.native
+    var setScrollable: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Sets the value of showAnimation
       * @param showAnimation String/Mixed The new value.
       */
-    var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setShowAnimation: js.UndefOr[js.Function1[/* showAnimation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the size of the Component
       * @param width Number The new width for the Component.
@@ -633,61 +633,61 @@ object lib {
       */
     var setSize: js.UndefOr[
         js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of style
       * @param style String/Object The new value.
       */
-    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.native
+    var setStyle: js.UndefOr[js.Function1[/* style */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of styleHtmlCls
       * @param styleHtmlCls String The new value.
       */
-    var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setStyleHtmlCls: js.UndefOr[js.Function1[/* styleHtmlCls */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of styleHtmlContent
       * @param styleHtmlContent Boolean The new value.
       */
-    var setStyleHtmlContent: js.UndefOr[js.Function1[/* styleHtmlContent */ js.UndefOr[Boolean], Unit]] = js.native
+    var setStyleHtmlContent: js.UndefOr[js.Function1[/* styleHtmlContent */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of top
       * @param top Number/String The new value.
       */
-    var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTop: js.UndefOr[js.Function1[/* top */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of tpl
       * @param tpl String/String[]/Ext.Template/Ext.XTemplate[] The new value.
       */
-    var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTpl: js.UndefOr[js.Function1[/* tpl */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of tplWriteMode
       * @param tplWriteMode String The new value.
       */
-    var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setTplWriteMode: js.UndefOr[js.Function1[/* tplWriteMode */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of ui
       * @param ui String The new value.
       */
-    var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setUi: js.UndefOr[js.Function1[/* ui */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of width
       * @param width Number/String The new value.
       */
-    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.native
+    var setWidth: js.UndefOr[js.Function1[/* width */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of zIndex
       * @param zIndex Number The new value.
       */
-    var setZIndex: js.UndefOr[js.Function1[/* zIndex */ js.UndefOr[Double], Unit]] = js.native
+    var setZIndex: js.UndefOr[js.Function1[/* zIndex */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Shows this component optionally using an animation
       * @param animation Object/Boolean You can specify an animation here or a bool to use the showAnimation config.
       * @returns Ext.Component
       */
-    var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.native
+    var show: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Config Option] (String/Mixed) */
-    var showAnimation: js.UndefOr[js.Any] = js.native
+    var showAnimation: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Shows this component by another component
       * @param component Ext.Component The target component to show this component by.
@@ -699,31 +699,31 @@ object lib {
           /* alignment */ js.UndefOr[java.lang.String], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var stopMaskTapEvent: js.UndefOr[Boolean] = js.native
+    var stopMaskTapEvent: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var styleHtmlCls: js.UndefOr[java.lang.String] = js.native
+    var styleHtmlCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var styleHtmlContent: js.UndefOr[Boolean] = js.native
+    var styleHtmlContent: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var top: js.UndefOr[js.Any] = js.native
+    var top: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/String[]/Ext.Template/Ext.XTemplate[]) */
-    var tpl: js.UndefOr[js.Any] = js.native
+    var tpl: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var tplWriteMode: js.UndefOr[java.lang.String] = js.native
+    var tplWriteMode: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var ui: js.UndefOr[java.lang.String] = js.native
+    var ui: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Walks up the ownerCt axis looking for an ancestor Container which matches the passed simple selector
       * @param selector String The simple selector to test.
@@ -731,10 +731,10 @@ object lib {
       */
     var up: js.UndefOr[
         js.Function1[/* selector */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.IContainer]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Updates the HTML content of the Component  */
-    var update: js.UndefOr[js.Function0[Unit]] = js.native
+    var update: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Updates the styleHtmlCls configuration
       * @param newHtmlCls Object
@@ -742,16 +742,16 @@ object lib {
       */
     var updateStyleHtmlCls: js.UndefOr[
         js.Function2[/* newHtmlCls */ js.UndefOr[js.Any], /* oldHtmlCls */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var width: js.UndefOr[js.Any] = js.native
+    var width: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String[]) */
-    var xtype: js.UndefOr[java.lang.String] = js.native
+    var xtype: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IComponent {
     
@@ -905,13 +905,13 @@ object lib {
       def setGetBaseClsUndefined: Self = StObject.set(x, "getBaseCls", js.undefined)
       
       @scala.inline
-      def setGetBorder(value: () => _): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
+      def setGetBorder(value: () => js.Any): Self = StObject.set(x, "getBorder", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBorderUndefined: Self = StObject.set(x, "getBorder", js.undefined)
       
       @scala.inline
-      def setGetBottom(value: () => _): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
+      def setGetBottom(value: () => js.Any): Self = StObject.set(x, "getBottom", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBottomUndefined: Self = StObject.set(x, "getBottom", js.undefined)
@@ -923,19 +923,19 @@ object lib {
       def setGetCenteredUndefined: Self = StObject.set(x, "getCentered", js.undefined)
       
       @scala.inline
-      def setGetCls(value: () => _): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
+      def setGetCls(value: () => js.Any): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
       
       @scala.inline
-      def setGetContentEl(value: () => _): Self = StObject.set(x, "getContentEl", js.Any.fromFunction0(value))
+      def setGetContentEl(value: () => js.Any): Self = StObject.set(x, "getContentEl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetContentElUndefined: Self = StObject.set(x, "getContentEl", js.undefined)
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
@@ -965,13 +965,13 @@ object lib {
       def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
       
       @scala.inline
-      def setGetEnterAnimation(value: () => _): Self = StObject.set(x, "getEnterAnimation", js.Any.fromFunction0(value))
+      def setGetEnterAnimation(value: () => js.Any): Self = StObject.set(x, "getEnterAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetEnterAnimationUndefined: Self = StObject.set(x, "getEnterAnimation", js.undefined)
       
       @scala.inline
-      def setGetExitAnimation(value: () => _): Self = StObject.set(x, "getExitAnimation", js.Any.fromFunction0(value))
+      def setGetExitAnimation(value: () => js.Any): Self = StObject.set(x, "getExitAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetExitAnimationUndefined: Self = StObject.set(x, "getExitAnimation", js.undefined)
@@ -989,7 +989,7 @@ object lib {
       def setGetFloatingClsUndefined: Self = StObject.set(x, "getFloatingCls", js.undefined)
       
       @scala.inline
-      def setGetHeight(value: () => _): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      def setGetHeight(value: () => js.Any): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetHeightUndefined: Self = StObject.set(x, "getHeight", js.undefined)
@@ -1007,13 +1007,13 @@ object lib {
       def setGetHiddenUndefined: Self = StObject.set(x, "getHidden", js.undefined)
       
       @scala.inline
-      def setGetHideAnimation(value: () => _): Self = StObject.set(x, "getHideAnimation", js.Any.fromFunction0(value))
+      def setGetHideAnimation(value: () => js.Any): Self = StObject.set(x, "getHideAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetHideAnimationUndefined: Self = StObject.set(x, "getHideAnimation", js.undefined)
       
       @scala.inline
-      def setGetHtml(value: () => _): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
+      def setGetHtml(value: () => js.Any): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetHtmlUndefined: Self = StObject.set(x, "getHtml", js.undefined)
@@ -1025,43 +1025,43 @@ object lib {
       def setGetItemIdUndefined: Self = StObject.set(x, "getItemId", js.undefined)
       
       @scala.inline
-      def setGetLeft(value: () => _): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
+      def setGetLeft(value: () => js.Any): Self = StObject.set(x, "getLeft", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLeftUndefined: Self = StObject.set(x, "getLeft", js.undefined)
       
       @scala.inline
-      def setGetMargin(value: () => _): Self = StObject.set(x, "getMargin", js.Any.fromFunction0(value))
+      def setGetMargin(value: () => js.Any): Self = StObject.set(x, "getMargin", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMarginUndefined: Self = StObject.set(x, "getMargin", js.undefined)
       
       @scala.inline
-      def setGetMaxHeight(value: () => _): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
+      def setGetMaxHeight(value: () => js.Any): Self = StObject.set(x, "getMaxHeight", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMaxHeightUndefined: Self = StObject.set(x, "getMaxHeight", js.undefined)
       
       @scala.inline
-      def setGetMaxWidth(value: () => _): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
+      def setGetMaxWidth(value: () => js.Any): Self = StObject.set(x, "getMaxWidth", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMaxWidthUndefined: Self = StObject.set(x, "getMaxWidth", js.undefined)
       
       @scala.inline
-      def setGetMinHeight(value: () => _): Self = StObject.set(x, "getMinHeight", js.Any.fromFunction0(value))
+      def setGetMinHeight(value: () => js.Any): Self = StObject.set(x, "getMinHeight", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMinHeightUndefined: Self = StObject.set(x, "getMinHeight", js.undefined)
       
       @scala.inline
-      def setGetMinWidth(value: () => _): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
+      def setGetMinWidth(value: () => js.Any): Self = StObject.set(x, "getMinWidth", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMinWidthUndefined: Self = StObject.set(x, "getMinWidth", js.undefined)
       
       @scala.inline
-      def setGetPadding(value: () => _): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
+      def setGetPadding(value: () => js.Any): Self = StObject.set(x, "getPadding", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPaddingUndefined: Self = StObject.set(x, "getPadding", js.undefined)
@@ -1073,7 +1073,7 @@ object lib {
       def setGetParentUndefined: Self = StObject.set(x, "getParent", js.undefined)
       
       @scala.inline
-      def setGetPlugins(value: () => _): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
+      def setGetPlugins(value: () => js.Any): Self = StObject.set(x, "getPlugins", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPluginsUndefined: Self = StObject.set(x, "getPlugins", js.undefined)
@@ -1091,25 +1091,25 @@ object lib {
       def setGetRenderToUndefined: Self = StObject.set(x, "getRenderTo", js.undefined)
       
       @scala.inline
-      def setGetRight(value: () => _): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
+      def setGetRight(value: () => js.Any): Self = StObject.set(x, "getRight", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetRightUndefined: Self = StObject.set(x, "getRight", js.undefined)
       
       @scala.inline
-      def setGetShowAnimation(value: () => _): Self = StObject.set(x, "getShowAnimation", js.Any.fromFunction0(value))
+      def setGetShowAnimation(value: () => js.Any): Self = StObject.set(x, "getShowAnimation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetShowAnimationUndefined: Self = StObject.set(x, "getShowAnimation", js.undefined)
       
       @scala.inline
-      def setGetSize(value: () => _): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      def setGetSize(value: () => js.Any): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetSizeUndefined: Self = StObject.set(x, "getSize", js.undefined)
       
       @scala.inline
-      def setGetStyle(value: () => _): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+      def setGetStyle(value: () => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStyleHtmlCls(value: () => java.lang.String): Self = StObject.set(x, "getStyleHtmlCls", js.Any.fromFunction0(value))
@@ -1127,13 +1127,13 @@ object lib {
       def setGetStyleUndefined: Self = StObject.set(x, "getStyle", js.undefined)
       
       @scala.inline
-      def setGetTop(value: () => _): Self = StObject.set(x, "getTop", js.Any.fromFunction0(value))
+      def setGetTop(value: () => js.Any): Self = StObject.set(x, "getTop", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTopUndefined: Self = StObject.set(x, "getTop", js.undefined)
       
       @scala.inline
-      def setGetTpl(value: () => _): Self = StObject.set(x, "getTpl", js.Any.fromFunction0(value))
+      def setGetTpl(value: () => js.Any): Self = StObject.set(x, "getTpl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTplUndefined: Self = StObject.set(x, "getTpl", js.undefined)
@@ -1151,7 +1151,7 @@ object lib {
       def setGetUiUndefined: Self = StObject.set(x, "getUi", js.undefined)
       
       @scala.inline
-      def setGetWidth(value: () => _): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      def setGetWidth(value: () => js.Any): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetWidthUndefined: Self = StObject.set(x, "getWidth", js.undefined)
@@ -1740,12 +1740,12 @@ object lib {
     }
   }
   
-  @js.native
   trait IContainer
-    extends typings.senchaTouch.Ext.IComponent {
+    extends StObject
+       with typings.senchaTouch.Ext.IComponent {
     
     /** [Config Option] (Object/String/Number) */
-    var activeItem: js.UndefOr[js.Any] = js.native
+    var activeItem: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Adds one or more Components to this Container
       * @param newItems Object/Object[]/Ext.Component/Ext.Component[] The new items to add to the Container.
@@ -1753,13 +1753,13 @@ object lib {
       */
     var add: js.UndefOr[
         js.Function1[/* newItems */ js.UndefOr[js.Any], typings.senchaTouch.Ext.IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Adds an array of Components to this Container
       * @param items Array The array of items to add to this container.
       * @returns Array The array of items after they have been added.
       */
-    var addAll: js.UndefOr[js.Function1[/* items */ js.UndefOr[Array], Array]] = js.native
+    var addAll: js.UndefOr[js.Function1[/* items */ js.UndefOr[Array], Array]] = js.undefined
     
     /** [Method] Animates to the supplied activeItem with a specified animation
       * @param activeItem Object/Number The item or item index to make active.
@@ -1767,19 +1767,19 @@ object lib {
       */
     var animateActiveItem: js.UndefOr[
         js.Function2[/* activeItem */ js.UndefOr[js.Any], /* animation */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Changes the masked configuration when its setter is called which will convert the value into a proper object instanc
       * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask
       * @returns Object
       */
-    var applyMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], _]] = js.native
+    var applyMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Object/Boolean) */
-    var cardSwitchAnimation: js.UndefOr[js.Any] = js.native
+    var cardSwitchAnimation: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector
       * @param selector String An Ext.ComponentQuery selector.
@@ -1787,16 +1787,16 @@ object lib {
       */
     var child: js.UndefOr[
         js.Function1[/* selector */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var control: js.UndefOr[js.Any] = js.native
+    var control: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var defaultType: js.UndefOr[java.lang.String] = js.native
+    var defaultType: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String An Ext.ComponentQuery selector.
@@ -1804,23 +1804,23 @@ object lib {
       */
     var down: js.UndefOr[
         js.Function1[/* selector */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of activeItem
       * @returns Object/String/Number
       */
-    var getActiveItem: js.UndefOr[js.Function0[_]] = js.native
+    var getActiveItem: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the Component for a given index in the Container s items
       * @param index Number The index of the Component to return.
       * @returns Ext.Component The item at the specified index, if found.
       */
-    var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], typings.senchaTouch.Ext.IComponent]] = js.native
+    var getAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], typings.senchaTouch.Ext.IComponent]] = js.undefined
     
     /** [Method] Returns the value of autoDestroy
       * @returns Boolean
       */
-    var getAutoDestroy: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoDestroy: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Examines this container s items property and gets a direct child component of this container
       * @param component String/Number This parameter may be any of the following:  {String} : representing the itemId or id of the child component. {Number} : representing the position of the child component within the items property. For additional information see Ext.util.MixedCollection.get.
@@ -1828,69 +1828,69 @@ object lib {
       */
     var getComponent: js.UndefOr[
         js.Function1[/* component */ js.UndefOr[js.Any], typings.senchaTouch.Ext.IComponent]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of control
       * @returns Object
       */
-    var getControl: js.UndefOr[js.Function0[_]] = js.native
+    var getControl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of defaultType
       * @returns String
       */
-    var getDefaultType: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getDefaultType: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of defaults
       * @returns Object
       */
-    var getDefaults: js.UndefOr[js.Function0[_]] = js.native
+    var getDefaults: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Finds a docked item of this container using a reference idor an index of its location in getDockedItems
       * @param component String/Number The id or index of the component to find.
       * @returns Ext.Component/Boolean The docked component, if found.
       */
-    var getDockedComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], _]] = js.native
+    var getDockedComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Method] Returns all the Ext Component docked items in this container
       * @returns Array The docked items of this container.
       */
-    var getDockedItems: js.UndefOr[js.Function0[Array]] = js.native
+    var getDockedItems: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of hideOnMaskTap
       * @returns Boolean
       */
-    var getHideOnMaskTap: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHideOnMaskTap: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns all inner items of this container
       * @returns Array The inner items of this container.
       */
-    var getInnerItems: js.UndefOr[js.Function0[Array]] = js.native
+    var getInnerItems: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of items
       * @returns Array/Object
       */
-    var getItems: js.UndefOr[js.Function0[_]] = js.native
+    var getItems: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of masked
       * @returns Boolean/Object/Ext.Mask/Ext.LoadMask
       */
-    var getMasked: js.UndefOr[js.Function0[_]] = js.native
+    var getMasked: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of modal
       * @returns Boolean
       */
-    var getModal: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getModal: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns an the scrollable instance for this container which is a Ext scroll View class
       * @returns Ext.scroll.View The scroll view.
       */
-    var getScrollable: js.UndefOr[js.Function0[IView]] = js.native
+    var getScrollable: js.UndefOr[js.Function0[IView]] = js.undefined
     
     /** [Method] Hides this Component optionally using an animation
       * @returns Ext.Component
       */
     @JSName("hide")
-    var hide_IContainer: js.UndefOr[js.Function0[typings.senchaTouch.Ext.IComponent]] = js.native
+    var hide_IContainer: js.UndefOr[js.Function0[typings.senchaTouch.Ext.IComponent]] = js.undefined
     
     /** [Method] Adds a child Component at the given index
       * @param index Number The index to insert the Component at.
@@ -1898,27 +1898,27 @@ object lib {
       */
     var insert: js.UndefOr[
         js.Function2[/* index */ js.UndefOr[Double], /* item */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Array/Object) */
-    var items: js.UndefOr[js.Any] = js.native
+    var items: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object/String) */
-    var layout: js.UndefOr[js.Any] = js.native
+    var layout: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Convenience method which calls setMasked with a value of true to show the mask
       * @param mask Object
       */
-    var mask: js.UndefOr[js.Function1[/* mask */ js.UndefOr[js.Any], Unit]] = js.native
+    var mask: js.UndefOr[js.Function1[/* mask */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean/Object/Ext.Mask/Ext.LoadMask) */
-    var masked: js.UndefOr[js.Any] = js.native
+    var masked: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed selector
       * @param selector String Selector complying to an Ext.ComponentQuery selector.
       * @returns Array Ext.Component's which matched the selector.
       */
-    var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[/* selector */ js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Removes an item from this Container optionally destroying it
       * @param item Object The item to remove.
@@ -1931,7 +1931,7 @@ object lib {
           /* destroy */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.IComponent
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes all items currently in the Container optionally destroying them all
       * @param destroy Boolean If true, destroys each removed Component.
@@ -1944,13 +1944,13 @@ object lib {
           /* everything */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.IComponent
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes the Component at the specified index  myContainer removeAt 0 removes the first item
       * @param index Number The index of the Component to remove.
       * @returns Ext.Container this
       */
-    var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.native
+    var removeAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Method] Removes a docked item from this Container
       * @param item Object The item to remove.
@@ -1963,82 +1963,82 @@ object lib {
           /* destroy */ js.UndefOr[Boolean], 
           typings.senchaTouch.Ext.IComponent
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Removes an inner Component at the specified index  myContainer removeInnerAt 0 removes the first item of the in
       * @param index Number The index of the Component to remove.
       * @returns Ext.Container this
       */
-    var removeInnerAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.native
+    var removeInnerAt: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], this.type]] = js.undefined
     
     /** [Config Option] (Boolean/String/Object) */
-    var scrollable: js.UndefOr[js.Any] = js.native
+    var scrollable: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of activeItem
       * @param activeItem Object/String/Number The new value.
       */
-    var setActiveItem: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.native
+    var setActiveItem: js.UndefOr[js.Function1[/* activeItem */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of autoDestroy
       * @param autoDestroy Boolean The new value.
       */
-    var setAutoDestroy: js.UndefOr[js.Function1[/* autoDestroy */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoDestroy: js.UndefOr[js.Function1[/* autoDestroy */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of control
       * @param control Object The new value.
       */
-    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.native
+    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of defaultType
       * @param defaultType String The new value.
       */
-    var setDefaultType: js.UndefOr[js.Function1[/* defaultType */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setDefaultType: js.UndefOr[js.Function1[/* defaultType */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of defaults
       * @param defaults Object The new value.
       */
-    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.native
+    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of hideOnMaskTap
       * @param hideOnMaskTap Boolean The new value.
       */
-    var setHideOnMaskTap: js.UndefOr[js.Function1[/* hideOnMaskTap */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHideOnMaskTap: js.UndefOr[js.Function1[/* hideOnMaskTap */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of items
       * @param items Array/Object The new value.
       */
-    var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Any], Unit]] = js.native
+    var setItems: js.UndefOr[js.Function1[/* items */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of layout
       * @param layout Object/String The new value.
       */
-    var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.native
+    var setLayout: js.UndefOr[js.Function1[/* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of masked
       * @param masked Boolean/Object/Ext.Mask/Ext.LoadMask The new value.
       */
-    var setMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], Unit]] = js.native
+    var setMasked: js.UndefOr[js.Function1[/* masked */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of modal
       * @param modal Boolean The new value.
       */
-    var setModal: js.UndefOr[js.Function1[/* modal */ js.UndefOr[Boolean], Unit]] = js.native
+    var setModal: js.UndefOr[js.Function1[/* modal */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of scrollable
       * @param scrollable Boolean/String/Object The new value.
       * @returns Ext.scroll.View The scroll view.
       */
     @JSName("setScrollable")
-    var setScrollable_IContainer: js.UndefOr[js.Function1[/* scrollable */ js.UndefOr[js.Any], IView]] = js.native
+    var setScrollable_IContainer: js.UndefOr[js.Function1[/* scrollable */ js.UndefOr[js.Any], IView]] = js.undefined
     
     /** [Method] Shows this component optionally using an animation
       * @returns Ext.Component
       */
     @JSName("show")
-    var show_IContainer: js.UndefOr[js.Function0[typings.senchaTouch.Ext.IComponent]] = js.native
+    var show_IContainer: js.UndefOr[js.Function0[typings.senchaTouch.Ext.IComponent]] = js.undefined
     
     /** [Method] Convenience method which calls setMasked with a value of false to hide the mask */
-    var unmask: js.UndefOr[js.Function0[Unit]] = js.native
+    var unmask: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IContainer {
     
@@ -2076,7 +2076,7 @@ object lib {
       def setAnimateActiveItemUndefined: Self = StObject.set(x, "animateActiveItem", js.undefined)
       
       @scala.inline
-      def setApplyMasked(value: /* masked */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "applyMasked", js.Any.fromFunction1(value))
+      def setApplyMasked(value: /* masked */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "applyMasked", js.Any.fromFunction1(value))
       
       @scala.inline
       def setApplyMaskedUndefined: Self = StObject.set(x, "applyMasked", js.undefined)
@@ -2124,7 +2124,7 @@ object lib {
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
       @scala.inline
-      def setGetActiveItem(value: () => _): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
+      def setGetActiveItem(value: () => js.Any): Self = StObject.set(x, "getActiveItem", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetActiveItemUndefined: Self = StObject.set(x, "getActiveItem", js.undefined)
@@ -2148,7 +2148,7 @@ object lib {
       def setGetComponentUndefined: Self = StObject.set(x, "getComponent", js.undefined)
       
       @scala.inline
-      def setGetControl(value: () => _): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+      def setGetControl(value: () => js.Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetControlUndefined: Self = StObject.set(x, "getControl", js.undefined)
@@ -2160,13 +2160,13 @@ object lib {
       def setGetDefaultTypeUndefined: Self = StObject.set(x, "getDefaultType", js.undefined)
       
       @scala.inline
-      def setGetDefaults(value: () => _): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+      def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
       
       @scala.inline
-      def setGetDockedComponent(value: /* component */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
+      def setGetDockedComponent(value: /* component */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getDockedComponent", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetDockedComponentUndefined: Self = StObject.set(x, "getDockedComponent", js.undefined)
@@ -2190,13 +2190,13 @@ object lib {
       def setGetInnerItemsUndefined: Self = StObject.set(x, "getInnerItems", js.undefined)
       
       @scala.inline
-      def setGetItems(value: () => _): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+      def setGetItems(value: () => js.Any): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
       
       @scala.inline
-      def setGetMasked(value: () => _): Self = StObject.set(x, "getMasked", js.Any.fromFunction0(value))
+      def setGetMasked(value: () => js.Any): Self = StObject.set(x, "getMasked", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetMaskedUndefined: Self = StObject.set(x, "getMasked", js.undefined)
@@ -2377,48 +2377,48 @@ object lib {
     }
   }
   
-  @js.native
   trait IPanel
-    extends typings.senchaTouch.Ext.IContainer {
+    extends StObject
+       with typings.senchaTouch.Ext.IContainer {
     
     /** [Config Option] (Number/Boolean/String) */
-    var bodyBorder: js.UndefOr[js.Any] = js.native
+    var bodyBorder: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/Boolean/String) */
-    var bodyMargin: js.UndefOr[js.Any] = js.native
+    var bodyMargin: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/Boolean/String) */
-    var bodyPadding: js.UndefOr[js.Any] = js.native
+    var bodyPadding: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of bodyBorder
       * @returns Number/Boolean/String
       */
-    var getBodyBorder: js.UndefOr[js.Function0[_]] = js.native
+    var getBodyBorder: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of bodyMargin
       * @returns Number/Boolean/String
       */
-    var getBodyMargin: js.UndefOr[js.Function0[_]] = js.native
+    var getBodyMargin: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of bodyPadding
       * @returns Number/Boolean/String
       */
-    var getBodyPadding: js.UndefOr[js.Function0[_]] = js.native
+    var getBodyPadding: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of bodyBorder
       * @param bodyBorder Number/Boolean/String The new value.
       */
-    var setBodyBorder: js.UndefOr[js.Function1[/* bodyBorder */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBodyBorder: js.UndefOr[js.Function1[/* bodyBorder */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of bodyMargin
       * @param bodyMargin Number/Boolean/String The new value.
       */
-    var setBodyMargin: js.UndefOr[js.Function1[/* bodyMargin */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBodyMargin: js.UndefOr[js.Function1[/* bodyMargin */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of bodyPadding
       * @param bodyPadding Number/Boolean/String The new value.
       */
-    var setBodyPadding: js.UndefOr[js.Function1[/* bodyPadding */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBodyPadding: js.UndefOr[js.Function1[/* bodyPadding */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPanel {
     
@@ -2450,19 +2450,19 @@ object lib {
       def setBodyPaddingUndefined: Self = StObject.set(x, "bodyPadding", js.undefined)
       
       @scala.inline
-      def setGetBodyBorder(value: () => _): Self = StObject.set(x, "getBodyBorder", js.Any.fromFunction0(value))
+      def setGetBodyBorder(value: () => js.Any): Self = StObject.set(x, "getBodyBorder", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBodyBorderUndefined: Self = StObject.set(x, "getBodyBorder", js.undefined)
       
       @scala.inline
-      def setGetBodyMargin(value: () => _): Self = StObject.set(x, "getBodyMargin", js.Any.fromFunction0(value))
+      def setGetBodyMargin(value: () => js.Any): Self = StObject.set(x, "getBodyMargin", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBodyMarginUndefined: Self = StObject.set(x, "getBodyMargin", js.undefined)
       
       @scala.inline
-      def setGetBodyPadding(value: () => _): Self = StObject.set(x, "getBodyPadding", js.Any.fromFunction0(value))
+      def setGetBodyPadding(value: () => js.Any): Self = StObject.set(x, "getBodyPadding", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBodyPaddingUndefined: Self = StObject.set(x, "getBodyPadding", js.undefined)

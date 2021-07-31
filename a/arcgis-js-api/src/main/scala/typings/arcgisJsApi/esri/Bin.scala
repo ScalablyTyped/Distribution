@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bin extends Object {
+trait Bin
+  extends StObject
+     with Object {
   
   /**
     * The number of values in a dataset that are contained between the indicated `minValue` and `maxValue`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * The maximum value (or bound) of the bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
     */
-  var maxValue: Double = js.native
+  var maxValue: Double
   
   /**
     * The minimum value (or bound) of the bin.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#Bin)
     */
-  var minValue: Double = js.native
+  var minValue: Double
 }
 object Bin {
   

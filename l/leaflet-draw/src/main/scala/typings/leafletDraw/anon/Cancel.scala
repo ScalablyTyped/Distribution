@@ -3,17 +3,15 @@ package typings.leafletDraw.anon
 import typings.leafletDraw.mod.Localization.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var cancel: Action = js.native
+  var cancel: Action
   
-  var clearAll: Action = js.native
+  var clearAll: Action
   
-  var save: Action = js.native
+  var save: Action
 }
 object Cancel {
   

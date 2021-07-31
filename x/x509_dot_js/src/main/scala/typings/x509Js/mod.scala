@@ -3,43 +3,42 @@ package typings.x509Js
 import typings.x509Js.anon.CommonName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("x509.js", "info")
+  @JSImport("x509.js", JSImport.Namespace)
   @js.native
-  def info(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("x509.js", "parseCert")
-  @js.native
-  def parseCert(certificate: String): Certificate = js.native
+  @scala.inline
+  def info(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[Double]
   
-  @JSImport("x509.js", "parseKey")
-  @js.native
-  def parseKey(key: String): Key = js.native
+  @scala.inline
+  def parseCert(certificate: String): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCert")(certificate.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
-  @js.native
+  @scala.inline
+  def parseKey(key: String): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(key.asInstanceOf[js.Any]).asInstanceOf[Key]
+  
   trait Certificate extends StObject {
     
-    var altNames: js.Array[String] = js.native
+    var altNames: js.Array[String]
     
-    var issuer: CommonName = js.native
+    var issuer: CommonName
     
-    var notAfter: String = js.native
+    var notAfter: String
     
-    var notBefore: String = js.native
+    var notBefore: String
     
-    var ocspList: js.Array[String] = js.native
+    var ocspList: js.Array[String]
     
-    var publicExponent: String = js.native
+    var publicExponent: String
     
-    var publicModulus: String = js.native
+    var publicModulus: String
     
-    var serial: String = js.native
+    var serial: String
     
-    var subject: CommonName = js.native
+    var subject: CommonName
   }
   object Certificate {
     
@@ -97,12 +96,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var publicExponent: String = js.native
+    var publicExponent: String
     
-    var publicModulus: String = js.native
+    var publicModulus: String
   }
   object Key {
     

@@ -3,15 +3,13 @@ package typings.winrtUwp.anon
 import typings.winrtUwp.Windows.Devices.Usb.UsbEndpointDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedReturnValue extends StObject {
   
-  /** Receives a UsbEndpointDescriptor object. */ var parsed: UsbEndpointDescriptor = js.native
+  /** Receives a UsbEndpointDescriptor object. */ var parsed: UsbEndpointDescriptor
   
-  /** True, if the specified UsbDescriptor object is a USB endpoint descriptor. Otherwise, false. */ var returnValue: Boolean = js.native
+  /** True, if the specified UsbDescriptor object is a USB endpoint descriptor. Otherwise, false. */ var returnValue: Boolean
 }
 object ParsedReturnValue {
   

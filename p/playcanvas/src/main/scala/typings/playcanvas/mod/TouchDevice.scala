@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "TouchDevice")
 @js.native
 class TouchDevice protected ()
-  extends typings.playcanvas.pc.TouchDevice {
+  extends StObject
+     with typings.playcanvas.pc.TouchDevice {
   def this(element: Element) = this()
 }

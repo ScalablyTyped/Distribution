@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.init method.
   */
-@js.native
 trait IInitProperties extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait IInitProperties extends StObject {
     *
     * Windows Store apps using JavaScript: not needed.
     */
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
   /**
     * If set to "true", the library logs error info to the web browser
     * console and notifies your app by means of the wl.log event.
     * @default true
     */
-  var logging: js.UndefOr[Boolean] = js.native
+  var logging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains the default redirect URI to be used for OAuth
@@ -34,7 +32,7 @@ trait IInitProperties extends StObject {
     * For Windows Store apps using JavaScript, specifying this value will
     * enable the library to return the authentication token.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
   /**
     * Web apps: optional.
@@ -48,7 +46,7 @@ trait IInitProperties extends StObject {
     * You can only set response_type to "code" for web apps.
     * @default "token"
     */
-  var response_type: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.undefined
   
   /**
     * The scope values used to determine which portions of user data the
@@ -57,7 +55,7 @@ trait IInitProperties extends StObject {
     * For a single scope, use this format: scope: "wl.signin". For multiple
     * scopes, use this format: scope: ["wl.signin", "wl.basic"].
     */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Web apps: optional.
@@ -66,7 +64,7 @@ trait IInitProperties extends StObject {
     * writing a cookie on an HTTPS page.
     * @default "false"
     */
-  var secure_cookie: js.UndefOr[String] = js.native
+  var secure_cookie: js.UndefOr[String] = js.undefined
   
   /**
     * Web apps: optional.
@@ -75,7 +73,7 @@ trait IInitProperties extends StObject {
     * status from Live Connect.
     * @default true
     */
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object IInitProperties {
   

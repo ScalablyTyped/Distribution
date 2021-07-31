@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewBlurEvent extends StObject {
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var target: View = js.native
+  var target: View
 }
 object MapViewBlurEvent {
   

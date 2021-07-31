@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesForWebACLRequest extends StObject {
   
   /**
     * The type of resource to list, either an application load balancer or Amazon API Gateway.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.wafregionalMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.wafregionalMod.ResourceType] = js.undefined
   
   /**
     * The unique identifier (ID) of the web ACL for which to list the associated resources.
     */
-  var WebACLId: ResourceId = js.native
+  var WebACLId: ResourceId
 }
 object ListResourcesForWebACLRequest {
   

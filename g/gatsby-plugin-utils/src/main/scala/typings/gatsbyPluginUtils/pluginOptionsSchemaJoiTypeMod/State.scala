@@ -2,23 +2,21 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
-  var ancestors: js.UndefOr[js.Any] = js.native
+  var ancestors: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var localize: js.UndefOr[js.Function1[/* repeated */ js.Any, this.type]] = js.native
+  var localize: js.UndefOr[js.Function1[/* repeated */ js.Any, this.type]] = js.undefined
   
-  var parent: js.UndefOr[js.Any] = js.native
+  var parent: js.UndefOr[js.Any] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var reference: js.UndefOr[js.Any] = js.native
+  var reference: js.UndefOr[js.Any] = js.undefined
 }
 object State {
   

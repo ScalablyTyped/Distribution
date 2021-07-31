@@ -11,7 +11,7 @@ Facebook-style tooltip plugin for jQuery
 | Keywords           | jquery, tipsy, facebook |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 14123 |
+| # downloads        | 11205 |
 | # stars            | 1 |
 
 ## Links

@@ -8,28 +8,27 @@ import typings.awsSdkClientLambdaNode.updateFunctionCodeExceptionsUnionMod.Updat
 import typings.awsSdkClientLambdaNode.updateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPreconditionFailedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PreconditionFailedExceptionDetails> * / any */ @js.native
-  trait PreconditionFailedException
-    extends AddPermissionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PreconditionFailedExceptionDetails> * / any */ trait PreconditionFailedException
+    extends StObject
+       with AddPermissionExceptionsUnion
        with PublishVersionExceptionsUnion
        with RemovePermissionExceptionsUnion
        with UpdateAliasExceptionsUnion
        with UpdateFunctionCodeExceptionsUnion
        with UpdateFunctionConfigurationExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PreconditionFailedException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PreconditionFailedException
   }
   object PreconditionFailedException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PreconditionFailedException): PreconditionFailedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PreconditionFailedException = {
+      val __obj = js.Dynamic.literal(name = "PreconditionFailedException")
       __obj.asInstanceOf[PreconditionFailedException]
     }
     
@@ -41,18 +40,17 @@ object typesPreconditionFailedExceptionMod {
     }
   }
   
-  @js.native
   trait PreconditionFailedExceptionDetails extends StObject {
     
     /**
       * <p>The exception type.</p>
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The exception message.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object PreconditionFailedExceptionDetails {
     

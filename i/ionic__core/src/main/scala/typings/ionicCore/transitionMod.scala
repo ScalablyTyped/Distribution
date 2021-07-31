@@ -6,47 +6,44 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionMod {
   
-  @JSImport("@ionic/core/dist/types/utils/transition", "deepReady")
+  @JSImport("@ionic/core/dist/types/utils/transition", JSImport.Namespace)
   @js.native
-  def deepReady(): js.Promise[Unit] = js.native
-  @JSImport("@ionic/core/dist/types/utils/transition", "deepReady")
-  @js.native
-  def deepReady(el: js.Any): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/utils/transition", "getIonPageElement")
-  @js.native
-  def getIonPageElement(element: HTMLElement): Element = js.native
+  @scala.inline
+  def deepReady(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def deepReady(el: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepReady")(el.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@ionic/core/dist/types/utils/transition", "lifecycle")
-  @js.native
-  def lifecycle(el: js.UndefOr[scala.Nothing], eventName: String): Unit = js.native
-  @JSImport("@ionic/core/dist/types/utils/transition", "lifecycle")
-  @js.native
-  def lifecycle(el: HTMLElement, eventName: String): Unit = js.native
+  @scala.inline
+  def getIonPageElement(element: HTMLElement): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonPageElement")(element.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@ionic/core/dist/types/utils/transition", "setPageHidden")
-  @js.native
-  def setPageHidden(el: HTMLElement, hidden: Boolean): Unit = js.native
+  @scala.inline
+  def lifecycle(el: Unit, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def lifecycle(el: HTMLElement, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(el.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/utils/transition", "transition")
-  @js.native
-  def transition(opts: TransitionOptions): js.Promise[TransitionResult] = js.native
+  @scala.inline
+  def setPageHidden(el: HTMLElement, hidden: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPageHidden")(el.asInstanceOf[js.Any], hidden.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait TransitionOptions extends NavOptions {
+  @scala.inline
+  def transition(opts: TransitionOptions): js.Promise[TransitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("transition")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TransitionResult]]
+  
+  trait TransitionOptions
+    extends StObject
+       with NavOptions {
     
-    var baseEl: js.Any = js.native
+    var baseEl: js.Any
     
-    var enteringEl: HTMLElement = js.native
+    var enteringEl: HTMLElement
     
-    var leavingEl: js.UndefOr[HTMLElement] = js.native
+    var leavingEl: js.UndefOr[HTMLElement] = js.undefined
     
-    var progressCallback: js.UndefOr[js.Function1[/* ani */ js.UndefOr[Animation], Unit]] = js.native
+    var progressCallback: js.UndefOr[js.Function1[/* ani */ js.UndefOr[Animation], Unit]] = js.undefined
   }
   object TransitionOptions {
     
@@ -79,12 +76,11 @@ object transitionMod {
     }
   }
   
-  @js.native
   trait TransitionResult extends StObject {
     
-    var animation: js.UndefOr[Animation] = js.native
+    var animation: js.UndefOr[Animation] = js.undefined
     
-    var hasCompleted: Boolean = js.native
+    var hasCompleted: Boolean
   }
   object TransitionResult {
     

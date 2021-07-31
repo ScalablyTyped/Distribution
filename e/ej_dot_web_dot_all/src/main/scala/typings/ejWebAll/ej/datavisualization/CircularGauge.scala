@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CircularGauge extends Widget_ {
+trait CircularGauge
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -622,11 +623,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Inner extends CustomLabelPositionType
+    sealed trait Inner
+      extends StObject
+         with CustomLabelPositionType
     
     //string
     @js.native
-    sealed trait Outer extends CustomLabelPositionType
+    sealed trait Outer
+      extends StObject
+         with CustomLabelPositionType
   }
   
   @js.native
@@ -637,11 +642,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Clockwise extends Direction
+    sealed trait Clockwise
+      extends StObject
+         with Direction
     
     //string
     @js.native
-    sealed trait CounterClockwise extends Direction
+    sealed trait CounterClockwise
+      extends StObject
+         with Direction
   }
   
   @js.native
@@ -652,11 +661,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait ClientSide extends ExportingMode
+    sealed trait ClientSide
+      extends StObject
+         with ExportingMode
     
     //string
     @js.native
-    sealed trait ServerSide extends ExportingMode
+    sealed trait ServerSide
+      extends StObject
+         with ExportingMode
   }
   
   @js.native
@@ -667,11 +680,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait JPG extends ExportingType
+    sealed trait JPG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait PNG extends ExportingType
+    sealed trait PNG
+      extends StObject
+         with ExportingType
   }
   
   @js.native
@@ -682,11 +699,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait FullCircle extends FrameType
+    sealed trait FullCircle
+      extends StObject
+         with FrameType
     
     //string
     @js.native
-    sealed trait HalfCircle extends FrameType
+    sealed trait HalfCircle
+      extends StObject
+         with FrameType
   }
   
   @js.native
@@ -697,79 +718,117 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Circle extends IndicatorTypes
+    sealed trait Circle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Cross extends IndicatorTypes
+    sealed trait Cross
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Diamond extends IndicatorTypes
+    sealed trait Diamond
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Downarrow extends IndicatorTypes
+    sealed trait Downarrow
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait HorizontalLine extends IndicatorTypes
+    sealed trait HorizontalLine
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Image extends IndicatorTypes
+    sealed trait Image
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait InvertedTriangle extends IndicatorTypes
+    sealed trait InvertedTriangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Leftarrow extends IndicatorTypes
+    sealed trait Leftarrow
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Pentagon extends IndicatorTypes
+    sealed trait Pentagon
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Rectangle extends IndicatorTypes
+    sealed trait Rectangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Rightarrow extends IndicatorTypes
+    sealed trait Rightarrow
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait RoundedRectangle extends IndicatorTypes
+    sealed trait RoundedRectangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Star extends IndicatorTypes
+    sealed trait Star
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Text extends IndicatorTypes
+    sealed trait Text
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Trapezoid extends IndicatorTypes
+    sealed trait Trapezoid
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Triangle extends IndicatorTypes
+    sealed trait Triangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Uparrow extends IndicatorTypes
+    sealed trait Uparrow
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Verticalline extends IndicatorTypes
+    sealed trait Verticalline
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Wedge extends IndicatorTypes
+    sealed trait Wedge
+      extends StObject
+         with IndicatorTypes
   }
   
   @js.native
@@ -780,11 +839,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Major extends LabelType
+    sealed trait Major
+      extends StObject
+         with LabelType
     
     //string
     @js.native
-    sealed trait Minor extends LabelType
+    sealed trait Minor
+      extends StObject
+         with LabelType
   }
   
   @js.native
@@ -795,15 +858,21 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Center extends LegendAlignment
+    sealed trait Center
+      extends StObject
+         with LegendAlignment
     
     //string
     @js.native
-    sealed trait Far extends LegendAlignment
+    sealed trait Far
+      extends StObject
+         with LegendAlignment
     
     //string
     @js.native
-    sealed trait Near extends LegendAlignment
+    sealed trait Near
+      extends StObject
+         with LegendAlignment
   }
   
   @js.native
@@ -814,19 +883,27 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Bottom extends LegendPosition
+    sealed trait Bottom
+      extends StObject
+         with LegendPosition
     
     //string
     @js.native
-    sealed trait Left extends LegendPosition
+    sealed trait Left
+      extends StObject
+         with LegendPosition
     
     //string
     @js.native
-    sealed trait Right extends LegendPosition
+    sealed trait Right
+      extends StObject
+         with LegendPosition
     
     //string
     @js.native
-    sealed trait Top extends LegendPosition
+    sealed trait Top
+      extends StObject
+         with LegendPosition
   }
   
   @js.native
@@ -837,39 +914,57 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Circle extends LegendShape
+    sealed trait Circle
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Diamond extends LegendShape
+    sealed trait Diamond
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Ellipse extends LegendShape
+    sealed trait Ellipse
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Line extends LegendShape
+    sealed trait Line
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Pentagon extends LegendShape
+    sealed trait Pentagon
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Rectangle extends LegendShape
+    sealed trait Rectangle
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Slider extends LegendShape
+    sealed trait Slider
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Trapezoid extends LegendShape
+    sealed trait Trapezoid
+      extends StObject
+         with LegendShape
     
     //string
     @js.native
-    sealed trait Triangle extends LegendShape
+    sealed trait Triangle
+      extends StObject
+         with LegendShape
   }
   
   @js.native
@@ -880,51 +975,75 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Circle extends MarkerType
+    sealed trait Circle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Diamond extends MarkerType
+    sealed trait Diamond
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Ellipse extends MarkerType
+    sealed trait Ellipse
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Image extends MarkerType
+    sealed trait Image
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Pentagon extends MarkerType
+    sealed trait Pentagon
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Pointer extends MarkerType
+    sealed trait Pointer
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Rectangle extends MarkerType
+    sealed trait Rectangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait RoundedRectangle extends MarkerType
+    sealed trait RoundedRectangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Slider extends MarkerType
+    sealed trait Slider
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Trapezoid extends MarkerType
+    sealed trait Trapezoid
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Triangle extends MarkerType
+    sealed trait Triangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Wedge extends MarkerType
+    sealed trait Wedge
+      extends StObject
+         with MarkerType
   }
   
   @js.native
@@ -935,23 +1054,33 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Arrow extends NeedleType
+    sealed trait Arrow
+      extends StObject
+         with NeedleType
     
     //string
     @js.native
-    sealed trait Image extends NeedleType
+    sealed trait Image
+      extends StObject
+         with NeedleType
     
     //string
     @js.native
-    sealed trait Rectangle extends NeedleType
+    sealed trait Rectangle
+      extends StObject
+         with NeedleType
     
     //string
     @js.native
-    sealed trait Trapezoid extends NeedleType
+    sealed trait Trapezoid
+      extends StObject
+         with NeedleType
     
     //string
     @js.native
-    sealed trait Triangle extends NeedleType
+    sealed trait Triangle
+      extends StObject
+         with NeedleType
   }
   
   @js.native
@@ -962,19 +1091,27 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Bottom extends OuterCustomLabelPosition
+    sealed trait Bottom
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Left extends OuterCustomLabelPosition
+    sealed trait Left
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Right extends OuterCustomLabelPosition
+    sealed trait Right
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Top extends OuterCustomLabelPosition
+    sealed trait Top
+      extends StObject
+         with OuterCustomLabelPosition
   }
   
   @js.native
@@ -985,11 +1122,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Far extends Placement
+    sealed trait Far
+      extends StObject
+         with Placement
     
     //string
     @js.native
-    sealed trait Near extends Placement
+    sealed trait Near
+      extends StObject
+         with Placement
   }
   
   @js.native
@@ -1000,11 +1141,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Marker extends PointerType
+    sealed trait Marker
+      extends StObject
+         with PointerType
     
     //string
     @js.native
-    sealed trait Needle extends PointerType
+    sealed trait Needle
+      extends StObject
+         with PointerType
   }
   
   @js.native
@@ -1015,11 +1160,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Front extends RangeZOrderPlacement
+    sealed trait Front
+      extends StObject
+         with RangeZOrderPlacement
     
     //string
     @js.native
-    sealed trait Rear extends RangeZOrderPlacement
+    sealed trait Rear
+      extends StObject
+         with RangeZOrderPlacement
   }
   
   @js.native
@@ -1030,11 +1179,15 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait Back extends UnitTextPlacement
+    sealed trait Back
+      extends StObject
+         with UnitTextPlacement
     
     //string
     @js.native
-    sealed trait Front extends UnitTextPlacement
+    sealed trait Front
+      extends StObject
+         with UnitTextPlacement
   }
   
   @js.native
@@ -1045,60 +1198,77 @@ object CircularGauge {
     
     //string
     @js.native
-    sealed trait BottomCenter extends gaugePosition
+    sealed trait BottomCenter
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait BottomLeft extends gaugePosition
+    sealed trait BottomLeft
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait BottomRight extends gaugePosition
+    sealed trait BottomRight
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait Center extends gaugePosition
+    sealed trait Center
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait MiddleLeft extends gaugePosition
+    sealed trait MiddleLeft
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait MiddleRight extends gaugePosition
+    sealed trait MiddleRight
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait TopCenter extends gaugePosition
+    sealed trait TopCenter
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait TopLeft extends gaugePosition
+    sealed trait TopLeft
+      extends StObject
+         with gaugePosition
     
     //string
     @js.native
-    sealed trait TopRight extends gaugePosition
+    sealed trait TopRight
+      extends StObject
+         with gaugePosition
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to circular gauge area.id - ID of the target element.    size - Width and height of the circular gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the circular gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -1137,52 +1307,51 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawCustomLabelEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current custom label element.
       */
-    var customLabelElement: js.UndefOr[js.Any] = js.native
+    var customLabelElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the custom label.
       */
-    var customLabelIndex: js.UndefOr[Double] = js.native
+    var customLabelIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the custom label
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the custom label belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the custom label style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawCustomLabelEventArgs {
     
@@ -1263,52 +1432,51 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawIndicatorsEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current indicator element.
       */
-    var indicatorElement: js.UndefOr[js.Any] = js.native
+    var indicatorElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the indicator.
       */
-    var indicatorIndex: js.UndefOr[Double] = js.native
+    var indicatorIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the indicator
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the indicator belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the indicator style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawIndicatorsEventArgs {
     
@@ -1389,60 +1557,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawLabelsEventArgs extends StObject {
     
     /** returns the angle of the labels.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current label element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the label.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the label.
       */
-    var pointerValue: js.UndefOr[Double] = js.native
+    var pointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the startX and startY of the labels
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the label belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the label style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawLabelsEventArgs {
     
@@ -1535,40 +1702,39 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawPointerCapEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer cap.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer cap style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawPointerCapEventArgs {
     
@@ -1631,60 +1797,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawPointersEventArgs extends StObject {
     
     /** returns the angle of the pointer.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the pointer.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object DrawPointersEventArgs {
     
@@ -1777,52 +1942,51 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawRangeEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the range
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current range element.
       */
-    var rangeElement: js.UndefOr[js.Any] = js.native
+    var rangeElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the range.
       */
-    var rangeIndex: js.UndefOr[Double] = js.native
+    var rangeIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the range belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the range style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawRangeEventArgs {
     
@@ -1903,60 +2067,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait DrawTicksEventArgs extends StObject {
     
     /** returns the angle of the tick.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current tick element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the tick.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the label value of the tick.
       */
-    var pointerValue: js.UndefOr[Double] = js.native
+    var pointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the startX and startY of the ticks
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the tick belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the ticks style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DrawTicksEventArgs {
     
@@ -2049,27 +2212,26 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Specifies the name of the action URL
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
       * @Default {CircularGauge}
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
       * @Default {client}
       */
-    var mode: js.UndefOr[ExportingMode | String] = js.native
+    var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
       * @Default {png}
       */
-    var `type`: js.UndefOr[ExportingType | String] = js.native
+    var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
   object ExportSettings {
     
@@ -2108,28 +2270,27 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait Frame extends StObject {
     
     /** Specify the URL of the frame background image for circular gauge
       * @Default {null}
       */
-    var backgroundImageUrl: js.UndefOr[String] = js.native
+    var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the frameType of circular gauge. See
       * @Default {FullCircle}
       */
-    var frameType: js.UndefOr[FrameType | String] = js.native
+    var frameType: js.UndefOr[FrameType | String] = js.undefined
     
     /** Specifies the end angle for the half circular frame.
       * @Default {360}
       */
-    var halfCircleFrameEndAngle: js.UndefOr[Double] = js.native
+    var halfCircleFrameEndAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the start angle for the half circular frame.
       * @Default {180}
       */
-    var halfCircleFrameStartAngle: js.UndefOr[Double] = js.native
+    var halfCircleFrameStartAngle: js.UndefOr[Double] = js.undefined
   }
   object Frame {
     
@@ -2168,64 +2329,63 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait Legend extends StObject {
     
     /** Specifies the alignment of the legend.
       * @Default {Center. See Alignment}
       */
-    var alignment: js.UndefOr[LegendAlignment | String] = js.native
+    var alignment: js.UndefOr[LegendAlignment | String] = js.undefined
     
     /** Options for customizing the legend border.
       */
-    var border: js.UndefOr[LegendBorder] = js.native
+    var border: js.UndefOr[LegendBorder] = js.undefined
     
     /** Fill color for the legend items. By using this property, it displays all legend item shapes in same color.Legend items representing invisible ranges is displayed in gray color.
       * @Default {null}
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /** Options to customize the font used for legend item text.
       */
-    var font: js.UndefOr[LegendFont] = js.native
+    var font: js.UndefOr[LegendFont] = js.undefined
     
     /** Gap or padding between the legend items.
       * @Default {20}
       */
-    var itemPadding: js.UndefOr[Double] = js.native
+    var itemPadding: js.UndefOr[Double] = js.undefined
     
     /** Options to customize the style of legend items.
       */
-    var itemStyle: js.UndefOr[LegendItemStyle] = js.native
+    var itemStyle: js.UndefOr[LegendItemStyle] = js.undefined
     
     /** Opacity of the legend.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the circular gauge.
       * @Default {Bottom. See Position}
       */
-    var position: js.UndefOr[LegendPosition | String] = js.native
+    var position: js.UndefOr[LegendPosition | String] = js.undefined
     
     /** Shape of the legend items.
       * @Default {Circle. See Shape}
       */
-    var shape: js.UndefOr[LegendShape | String] = js.native
+    var shape: js.UndefOr[LegendShape | String] = js.undefined
     
     /** Options to customize the size of the legend.
       */
-    var size: js.UndefOr[LegendSize] = js.native
+    var size: js.UndefOr[LegendSize] = js.undefined
     
     /** Toggles the visibility of the ranges.
       * @Default {true}
       */
-    var toggleVisibility: js.UndefOr[Boolean] = js.native
+    var toggleVisibility: js.UndefOr[Boolean] = js.undefined
     
     /** Toggles the visibility of the legend.
       * @Default {false}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Legend {
     
@@ -2312,18 +2472,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendBorder extends StObject {
     
     /** Border color of the legend.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendBorder {
     
@@ -2350,33 +2509,32 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendFont extends StObject {
     
     /** Font color of the text for legend items.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Font family for legend item text.
       * @Default {Segoe UI}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Font style for legend item text.
       * @Default {Normal}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Font weight for legend item text.
       * @Default {Regular}
       */
-    var fontWeight: js.UndefOr[String] = js.native
+    var fontWeight: js.UndefOr[String] = js.undefined
     
     /** Font size for legend item text.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object LegendFont {
     
@@ -2421,24 +2579,23 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendItemClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the legend item object that is about to be rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemClickEventArgs {
     
@@ -2477,24 +2634,23 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendItemRenderEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Instance of the legend item object that is about to be rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LegendItemRenderEventArgs {
     
@@ -2533,22 +2689,21 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendItemStyle extends StObject {
     
     /** Options for customizing the border of legend items.
       */
-    var border: js.UndefOr[LegendItemStyleBorder] = js.native
+    var border: js.UndefOr[LegendItemStyleBorder] = js.undefined
     
     /** Specifies the height of the  legend item shapes.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of the  legend item shapes.
       * @Default {10}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendItemStyle {
     
@@ -2581,18 +2736,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendItemStyleBorder extends StObject {
     
     /** Border color of the legend items.
       * @Default {transparent}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Border width of the legend items.
       * @Default {1}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object LegendItemStyleBorder {
     
@@ -2619,18 +2773,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LegendSize extends StObject {
     
     /** Specify the height of the legend. Height can be specified in pixel.
       * @Default {null}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specify the width of the legend. Width can be specified in pixel.
       * @Default {null}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object LegendSize {
     
@@ -2657,32 +2810,31 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object LoadEventArgs {
     
@@ -2733,205 +2885,204 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies animationSpeed of circular gauge
       * @Default {500}
       */
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Specifies the background color of circular gauge.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromCorner value of circular gauge
       * @Default {center}
       */
-    var distanceFromCorner: js.UndefOr[Double] = js.native
+    var distanceFromCorner: js.UndefOr[Double] = js.undefined
     
     /** Fires, on double clicking the circular gauge.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Triggers while the custom labels are being drawn on the gauge.
       */
-    var drawCustomLabel: js.UndefOr[js.Function1[/* e */ DrawCustomLabelEventArgs, Unit]] = js.native
+    var drawCustomLabel: js.UndefOr[js.Function1[/* e */ DrawCustomLabelEventArgs, Unit]] = js.undefined
     
     /** Triggers while the indicators are being started to drawn on the gauge.
       */
-    var drawIndicators: js.UndefOr[js.Function1[/* e */ DrawIndicatorsEventArgs, Unit]] = js.native
+    var drawIndicators: js.UndefOr[js.Function1[/* e */ DrawIndicatorsEventArgs, Unit]] = js.undefined
     
     /** Triggers while the labels are being drawn on the gauge.
       */
-    var drawLabels: js.UndefOr[js.Function1[/* e */ DrawLabelsEventArgs, Unit]] = js.native
+    var drawLabels: js.UndefOr[js.Function1[/* e */ DrawLabelsEventArgs, Unit]] = js.undefined
     
     /** Triggers while the pointer cap is being drawn on the gauge.
       */
-    var drawPointerCap: js.UndefOr[js.Function1[/* e */ DrawPointerCapEventArgs, Unit]] = js.native
+    var drawPointerCap: js.UndefOr[js.Function1[/* e */ DrawPointerCapEventArgs, Unit]] = js.undefined
     
     /** Triggers while the pointers are being drawn on the gauge.
       */
-    var drawPointers: js.UndefOr[js.Function1[/* e */ DrawPointersEventArgs, Unit]] = js.native
+    var drawPointers: js.UndefOr[js.Function1[/* e */ DrawPointersEventArgs, Unit]] = js.undefined
     
     /** Triggers when the ranges begin to be getting drawn on the gauge.
       */
-    var drawRange: js.UndefOr[js.Function1[/* e */ DrawRangeEventArgs, Unit]] = js.native
+    var drawRange: js.UndefOr[js.Function1[/* e */ DrawRangeEventArgs, Unit]] = js.undefined
     
     /** Triggers while the ticks are being drawn on the gauge.
       */
-    var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.native
+    var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.undefined
     
     /** Specify animate value of circular gauge
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify to convert the  date object to  string, using locale settings.
       * @Default {false}
       */
-    var enableGroupSeparator: js.UndefOr[Boolean] = js.native
+    var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Controls whether circular gauge has to be responsive while resizing.
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** This provides options for customizing export settings
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specify the frame of circular gauge
       * @Default {Object}
       */
-    var frame: js.UndefOr[Frame] = js.native
+    var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specify gaugePosition value of circular gauge See GaugePosition
       * @Default {center}
       */
-    var gaugePosition: js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition | String] = js.native
+    var gaugePosition: js.UndefOr[typings.ejWebAll.ej.datavisualization.CircularGauge.gaugePosition | String] = js.undefined
     
     /** Specifies the height of circular gauge.
       * @Default {360}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the interiorGradient of circular gauge.
       * @Default {null}
       */
-    var interiorGradient: js.UndefOr[js.Any] = js.native
+    var interiorGradient: js.UndefOr[js.Any] = js.undefined
     
     /** Specify isRadialGradient value of circular gauge
       * @Default {false}
       */
-    var isRadialGradient: js.UndefOr[Boolean] = js.native
+    var isRadialGradient: js.UndefOr[Boolean] = js.undefined
     
     /** Specify isResponsive value of circular gauge
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Options to customize the legend.
       */
-    var legend: js.UndefOr[Legend] = js.native
+    var legend: js.UndefOr[Legend] = js.undefined
     
     /** Fires on clicking the legend item.
       */
-    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.native
+    var legendItemClick: js.UndefOr[js.Function1[/* e */ LegendItemClickEventArgs, Unit]] = js.undefined
     
     /** Fires before rendering the legend item. This event is fired for each legend item in CircularGauge. You can use this event to customize legend item shape or add custom text to
       * legend item.
       */
-    var legendItemRender: js.UndefOr[js.Function1[/* e */ LegendItemRenderEventArgs, Unit]] = js.native
+    var legendItemRender: js.UndefOr[js.Function1[/* e */ LegendItemRenderEventArgs, Unit]] = js.undefined
     
     /** Triggers while the gauge start to Load.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Name of the culture based on which circular gauge should be localized.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum value of circular gauge.
       * @Default {100}
       */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum value of circular gauge.
       * @Default {0}
       */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /** Triggers when the left mouse button is clicked.
       */
-    var mouseClick: js.UndefOr[js.Function1[/* e */ MouseClickEventArgs, Unit]] = js.native
+    var mouseClick: js.UndefOr[js.Function1[/* e */ MouseClickEventArgs, Unit]] = js.undefined
     
     /** Triggers when clicking and dragging the mouse pointer over the gauge pointer.
       */
-    var mouseClickMove: js.UndefOr[js.Function1[/* e */ MouseClickMoveEventArgs, Unit]] = js.native
+    var mouseClickMove: js.UndefOr[js.Function1[/* e */ MouseClickMoveEventArgs, Unit]] = js.undefined
     
     /** Triggers when the mouse click is released.
       */
-    var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.native
+    var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.undefined
     
     /** Specify outerCustomLabelPosition value of circular gauge See
       * @Default {bottom}
       */
-    var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.native
+    var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.undefined
     
     /** Specifies the radius of circular gauge.
       * @Default {180}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** Fires when mouse moving on ranges.
       */
-    var rangeMouseMove: js.UndefOr[js.Function1[/* e */ RangeMouseMoveEventArgs, Unit]] = js.native
+    var rangeMouseMove: js.UndefOr[js.Function1[/* e */ RangeMouseMoveEventArgs, Unit]] = js.undefined
     
     /** Specify range Z-order placement of circular gauge.
       * @Default {Rear}
       */
-    var rangeZOrder: js.UndefOr[RangeZOrderPlacement | String] = js.native
+    var rangeZOrder: js.UndefOr[RangeZOrderPlacement | String] = js.undefined
     
     /** Specify readonly value of circular gauge
       * @Default {true}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when the rendering of the gauge is completed.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires, on right clicking the circular gauge.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specify the pointers, ticks, labels, indicators, ranges of circular gauge
       * @Default {null}
       */
-    var scales: js.UndefOr[js.Array[Scale]] = js.native
+    var scales: js.UndefOr[js.Array[Scale]] = js.undefined
     
     /** Specify the theme of circular gauge.
       * @Default {flatlight}
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /** Specify tooltip option of circular gauge
       * @Default {object}
       */
-    var tooltip: js.UndefOr[Tooltip] = js.native
+    var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the value of circular gauge.
       * @Default {0}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of circular gauge.
       * @Default {360}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -3207,60 +3358,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait MouseClickEventArgs extends StObject {
     
     /** returns the angle of the pointer.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseClickEventArgs {
     
@@ -3353,60 +3503,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait MouseClickMoveEventArgs extends StObject {
     
     /** returns the angle of the pointer.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseClickMoveEventArgs {
     
@@ -3499,60 +3648,59 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait MouseClickUpEventArgs extends StObject {
     
     /** returns the angle of the pointer.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseClickUpEventArgs {
     
@@ -3645,24 +3793,23 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait RangeMouseMoveEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Region of ranges
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the circulargauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RangeMouseMoveEventArgs {
     
@@ -3701,32 +3848,31 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -3777,25 +3923,24 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to circular gauge area.id - ID of the target element.    size - Width and height of the circular gauge.    pageX -
       * x-coordinate of the pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the circular gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -3834,143 +3979,142 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait Scale extends StObject {
     
     /** Specify backgroundColor for the scale of circular gauge
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify border for scales of circular gauge
       * @Default {Object}
       */
-    var border: js.UndefOr[ScalesBorder] = js.native
+    var border: js.UndefOr[ScalesBorder] = js.undefined
     
     /** Specify the custom labels for the scales.
       * @Default {Array}
       */
-    var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.native
+    var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.undefined
     
     /** Specify scale direction of circular gauge. See
       * @Default {Clockwise}
       */
-    var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.native
+    var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.undefined
     
     /** Specify representing state of circular gauge
       * @Default {Array}
       */
-    var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.native
+    var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.undefined
     
     /** Specify the text values displayed in a meaningful manner alongside the ticks of circular gauge
       * @Default {Array}
       */
-    var labels: js.UndefOr[js.Array[ScalesLabel]] = js.native
+    var labels: js.UndefOr[js.Array[ScalesLabel]] = js.undefined
     
     /** Specify majorIntervalValue of circular gauge
       * @Default {10}
       */
-    var majorIntervalValue: js.UndefOr[Double] = js.native
+    var majorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specify maximum scale value of circular gauge
       * @Default {null}
       */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specify minimum scale value of circular gauge
       * @Default {null}
       */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /** Specify minorIntervalValue of circular gauge
       * @Default {2}
       */
-    var minorIntervalValue: js.UndefOr[Double] = js.native
+    var minorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specify opacity value of circular gauge
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer cap of circular gauge
       * @Default {Object}
       */
-    var pointerCap: js.UndefOr[ScalesPointerCap] = js.native
+    var pointerCap: js.UndefOr[ScalesPointerCap] = js.undefined
     
     /** Specify pointers value of circular gauge
       * @Default {Array}
       */
-    var pointers: js.UndefOr[js.Array[ScalesPointer]] = js.native
+    var pointers: js.UndefOr[js.Array[ScalesPointer]] = js.undefined
     
     /** Specify scale radius of circular gauge
       * @Default {170}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** Specify ranges value of circular gauge
       * @Default {Array}
       */
-    var ranges: js.UndefOr[js.Array[ScalesRange]] = js.native
+    var ranges: js.UndefOr[js.Array[ScalesRange]] = js.undefined
     
     /** Specify shadowOffset value of circular gauge
       * @Default {0}
       */
-    var shadowOffset: js.UndefOr[Double] = js.native
+    var shadowOffset: js.UndefOr[Double] = js.undefined
     
     /** Specify showIndicators of circular gauge
       * @Default {false}
       */
-    var showIndicators: js.UndefOr[Boolean] = js.native
+    var showIndicators: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showLabels of circular gauge
       * @Default {true}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showPointers of circular gauge
       * @Default {true}
       */
-    var showPointers: js.UndefOr[Boolean] = js.native
+    var showPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showRanges of circular gauge
       * @Default {false}
       */
-    var showRanges: js.UndefOr[Boolean] = js.native
+    var showRanges: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showScaleBar of circular gauge
       * @Default {false}
       */
-    var showScaleBar: js.UndefOr[Boolean] = js.native
+    var showScaleBar: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showTicks of circular gauge
       * @Default {true}
       */
-    var showTicks: js.UndefOr[Boolean] = js.native
+    var showTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specify scaleBar size of circular gauge
       * @Default {6}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Specify startAngle of circular gauge
       * @Default {115}
       */
-    var startAngle: js.UndefOr[Double] = js.native
+    var startAngle: js.UndefOr[Double] = js.undefined
     
     /** Specify subGauge of circular gauge
       * @Default {Array}
       */
-    var subGauges: js.UndefOr[js.Array[ScalesSubGauge]] = js.native
+    var subGauges: js.UndefOr[js.Array[ScalesSubGauge]] = js.undefined
     
     /** Specify sweepAngle of circular gauge
       * @Default {310}
       */
-    var sweepAngle: js.UndefOr[Double] = js.native
+    var sweepAngle: js.UndefOr[Double] = js.undefined
     
     /** Specify ticks of circular gauge
       * @Default {Array}
       */
-    var ticks: js.UndefOr[js.Array[ScalesTick]] = js.native
+    var ticks: js.UndefOr[js.Array[ScalesTick]] = js.undefined
   }
   object Scale {
     
@@ -4168,18 +4312,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesBorder extends StObject {
     
     /** Specify border color for scales of circular gauge
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width of circular gauge
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesBorder {
     
@@ -4206,36 +4349,35 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabel extends StObject {
     
     /** Color of the custom labels.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify font for custom labels
       * @Default {Object}
       */
-    var font: js.UndefOr[ScalesCustomLabelsFont] = js.native
+    var font: js.UndefOr[ScalesCustomLabelsFont] = js.undefined
     
     /** Specify position of custom labels
       * @Default {Object}
       */
-    var position: js.UndefOr[ScalesCustomLabelsPosition] = js.native
+    var position: js.UndefOr[ScalesCustomLabelsPosition] = js.undefined
     
     /** Specifies the position of the  custom labels. See
       * @Default {inner}
       */
-    var positionType: js.UndefOr[CustomLabelPositionType | String] = js.native
+    var positionType: js.UndefOr[CustomLabelPositionType | String] = js.undefined
     
     /** Specify angle for the rotation of the custom labels in degrees.
       * @Default {0}
       */
-    var textAngle: js.UndefOr[Double] = js.native
+    var textAngle: js.UndefOr[Double] = js.undefined
     
     /** Value of the custom labels.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ScalesCustomLabel {
     
@@ -4286,23 +4428,22 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabelsFont extends StObject {
     
     /** Specify font fontFamily for custom labels.
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify font Style for custom labels.
       * @Default {Bold}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify font size for custom labels.
       * @Default {12px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesCustomLabelsFont {
     
@@ -4335,18 +4476,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabelsPosition extends StObject {
     
     /** Specify x-axis position of label
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis  position of labels.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesCustomLabelsPosition {
     
@@ -4373,38 +4513,37 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicator extends StObject {
     
     /** Specify indicator height of circular gauge
       * @Default {15}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specify imageUrl of circular gauge
       * @Default {null}
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Specify position of circular gauge
       * @Default {Object}
       */
-    var position: js.UndefOr[ScalesIndicatorsPosition] = js.native
+    var position: js.UndefOr[ScalesIndicatorsPosition] = js.undefined
     
     /** Specify the various states of circular gauge
       * @Default {Array}
       */
-    var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.native
+    var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.undefined
     
     /** Specify indicator style of circular gauge. See
       * @Default {Circle}
       */
-    var `type`: js.UndefOr[IndicatorTypes | String] = js.native
+    var `type`: js.UndefOr[IndicatorTypes | String] = js.undefined
     
     /** Specify indicator width of circular gauge
       * @Default {15}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicator {
     
@@ -4458,18 +4597,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsPosition extends StObject {
     
     /** Specify x-axis of position of circular gauge
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis of position of circular gauge
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicatorsPosition {
     
@@ -4496,42 +4634,41 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsStateRange extends StObject {
     
     /** Specify backgroundColor for indicator of circular gauge
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify borderColor for indicator of circular gauge
       * @Default {null}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specify end value for each specified state of circular gauge
       * @Default {0}
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specify value of the font as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
       * @Default {null}
       */
-    var font: js.UndefOr[js.Any] = js.native
+    var font: js.UndefOr[js.Any] = js.undefined
     
     /** Specify start value for each specified state of circular gauge
       * @Default {0}
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specify value of the text as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specify value of the textColor as the indicator when the indicator style is set with the value &quot;text&quot; of circular gauge
       * @Default {null}
       */
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
   }
   object ScalesIndicatorsStateRange {
     
@@ -4588,62 +4725,61 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesLabel extends StObject {
     
     /** Specify the angle for the labels of circular gauge
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify labels autoAngle value of circular gauge
       * @Default {false}
       */
-    var autoAngle: js.UndefOr[Boolean] = js.native
+    var autoAngle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify label color of circular gauge
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromScale value for labels of circular gauge
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify font for labels of circular gauge
       * @Default {Object}
       */
-    var font: js.UndefOr[ScalesLabelsFont] = js.native
+    var font: js.UndefOr[ScalesLabelsFont] = js.undefined
     
     /** Specify includeFirstValue of circular gauge
       * @Default {true}
       */
-    var includeFirstValue: js.UndefOr[Boolean] = js.native
+    var includeFirstValue: js.UndefOr[Boolean] = js.undefined
     
     /** Specify opacity value for labels of circular gauge
       * @Default {null}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify label placement of circular gauge. See
       * @Default {Near}
       */
-    var placement: js.UndefOr[Placement | String] = js.native
+    var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify label Style of circular gauge. See
       * @Default {Major}
       */
-    var `type`: js.UndefOr[LabelType | String] = js.native
+    var `type`: js.UndefOr[LabelType | String] = js.undefined
     
     /** Specify unitText of circular gauge
       */
-    var unitText: js.UndefOr[String] = js.native
+    var unitText: js.UndefOr[String] = js.undefined
     
     /** Specify unitTextPosition of circular gauge. See UnitTextPosition
       * @Default {Back}
       */
-    var unitTextPosition: js.UndefOr[UnitTextPlacement | String] = js.native
+    var unitTextPosition: js.UndefOr[UnitTextPlacement | String] = js.undefined
   }
   object ScalesLabel {
     
@@ -4724,23 +4860,22 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesLabelsFont extends StObject {
     
     /** Specify font fontFamily for labels of circular gauge
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify font Style for labels of circular gauge
       * @Default {Bold}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify font size for labels of circular gauge
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesLabelsFont {
     
@@ -4773,93 +4908,92 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesPointer extends StObject {
     
     /** Specify backNeedleLength of circular gauge
       * @Default {10}
       */
-    var backNeedleLength: js.UndefOr[Double] = js.native
+    var backNeedleLength: js.UndefOr[Double] = js.undefined
     
     /** Specify backgroundColor for the pointer of circular gauge
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify the border for pointers of circular gauge
       * @Default {Object}
       */
-    var border: js.UndefOr[ScalesPointersBorder] = js.native
+    var border: js.UndefOr[ScalesPointersBorder] = js.undefined
     
     /** Specify distanceFromScale value for pointers of circular gauge
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer gradients of circular gauge
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.native
+    var gradients: js.UndefOr[js.Any] = js.undefined
     
     /** Specify pointer image of circular gauge.It is applicable for both marker as well as needle type pointers.
       * @Default {NULL}
       */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /** Specify pointer length of circular gauge
       * @Default {150}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Specify marker Style value of circular gauge. See
       * @Default {Rectangle}
       */
-    var markerType: js.UndefOr[MarkerType | String] = js.native
+    var markerType: js.UndefOr[MarkerType | String] = js.undefined
     
     /** Specify needle Style value of circular gauge. See
       * @Default {Triangle}
       */
-    var needleType: js.UndefOr[NeedleType | String] = js.native
+    var needleType: js.UndefOr[NeedleType | String] = js.undefined
     
     /** Specify opacity value for pointer of circular gauge
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer Placement value of circular gauge. See PointerPlacement
       * @Default {Near}
       */
-    var placement: js.UndefOr[Placement | String] = js.native
+    var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify pointer value text of circular gauge.
       * @Default {Object}
       */
-    var pointerValueText: js.UndefOr[ScalesPointersPointerValueText] = js.native
+    var pointerValueText: js.UndefOr[ScalesPointersPointerValueText] = js.undefined
     
     /** Specify radius value for pointer of circular gauge
       * @Default {null}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /** Specify showBackNeedle value of circular gauge
       * @Default {false}
       */
-    var showBackNeedle: js.UndefOr[Boolean] = js.native
+    var showBackNeedle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify pointer type value of circular gauge. See
       * @Default {Needle}
       */
-    var `type`: js.UndefOr[PointerType | String] = js.native
+    var `type`: js.UndefOr[PointerType | String] = js.undefined
     
     /** Specify value of the pointer of circular gauge
       * @Default {null}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer width of circular gauge
       * @Default {7}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesPointer {
     
@@ -4976,33 +5110,32 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesPointerCap extends StObject {
     
     /** Specify cap backgroundColor of circular gauge
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify cap borderColor of circular gauge
       * @Default {null}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specify pointerCap borderWidth value of circular gauge
       * @Default {3}
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /** Specify cap interiorGradient value of circular gauge
       * @Default {null}
       */
-    var interiorGradient: js.UndefOr[js.Any] = js.native
+    var interiorGradient: js.UndefOr[js.Any] = js.undefined
     
     /** Specify pointerCap Radius value of circular gauge
       * @Default {7}
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object ScalesPointerCap {
     
@@ -5047,18 +5180,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesPointersBorder extends StObject {
     
     /** Specify border color for pointer of circular gauge
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width for pointers of circular gauge
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesPointersBorder {
     
@@ -5085,43 +5217,42 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesPointersPointerValueText extends StObject {
     
     /** Specify pointer text angle of circular gauge.
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer text auto angle of circular gauge.
       * @Default {false}
       */
-    var autoAngle: js.UndefOr[Boolean] = js.native
+    var autoAngle: js.UndefOr[Boolean] = js.undefined
     
     /** Specify pointer value text color of circular gauge.
       * @Default {#8c8c8c}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text distance from pointer of circular gauge.
       * @Default {20}
       */
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     /** Specify pointer value text font option of circular gauge.
       * @Default {object}
       */
-    var font: js.UndefOr[ScalesPointersPointerValueTextFont] = js.native
+    var font: js.UndefOr[ScalesPointersPointerValueTextFont] = js.undefined
     
     /** Specify pointer value text opacity of circular gauge.
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** enable pointer value text visibility of circular gauge.
       * @Default {false}
       */
-    var showValue: js.UndefOr[Boolean] = js.native
+    var showValue: js.UndefOr[Boolean] = js.undefined
   }
   object ScalesPointersPointerValueText {
     
@@ -5178,23 +5309,22 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesPointersPointerValueTextFont extends StObject {
     
     /** Specify pointer value text font family of circular gauge.
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text font style of circular gauge.
       * @Default {Bold}
       */
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
     /** Specify pointer value text size of circular gauge.
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesPointersPointerValueTextFont {
     
@@ -5227,68 +5357,67 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesRange extends StObject {
     
     /** Specify backgroundColor for the ranges of circular gauge
       * @Default {#32b3c6}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify border for ranges of circular gauge
       * @Default {Object}
       */
-    var border: js.UndefOr[ScalesRangesBorder] = js.native
+    var border: js.UndefOr[ScalesRangesBorder] = js.undefined
     
     /** Specify distanceFromScale value for ranges of circular gauge
       * @Default {25}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify endValue for ranges of circular gauge
       * @Default {null}
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specify endWidth for ranges of circular gauge
       * @Default {10}
       */
-    var endWidth: js.UndefOr[Double] = js.native
+    var endWidth: js.UndefOr[Double] = js.undefined
     
     /** Specify range gradients of circular gauge
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.native
+    var gradients: js.UndefOr[js.Any] = js.undefined
     
     /** Specify text for the ranges of circular gauge
       * @Default {null}
       */
-    var legendText: js.UndefOr[String] = js.native
+    var legendText: js.UndefOr[String] = js.undefined
     
     /** Specify opacity value for ranges of circular gauge
       * @Default {null}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specify placement of circular gauge. See RangePlacement
       * @Default {Near}
       */
-    var placement: js.UndefOr[Placement | String] = js.native
+    var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify size of the range value of circular gauge
       * @Default {5}
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Specify startValue for ranges of circular gauge
       * @Default {null}
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specify startWidth of circular gauge
       * @Default {[Array.number] scale.ranges.startWidth = 10}
       */
-    var startWidth: js.UndefOr[Double] = js.native
+    var startWidth: js.UndefOr[Double] = js.undefined
   }
   object ScalesRange {
     
@@ -5375,18 +5504,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesRangesBorder extends StObject {
     
     /** Specify border color for ranges of circular gauge
       * @Default {#32b3c6}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify border width for ranges of circular gauge
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesRangesBorder {
     
@@ -5413,23 +5541,22 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesSubGauge extends StObject {
     
     /** Specify subGauge Height of circular gauge
       * @Default {150}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specify position for sub-gauge of circular gauge
       * @Default {Object}
       */
-    var position: js.UndefOr[ScalesSubGaugesPosition] = js.native
+    var position: js.UndefOr[ScalesSubGaugesPosition] = js.undefined
     
     /** Specify subGauge Width of circular gauge
       * @Default {150}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesSubGauge {
     
@@ -5462,18 +5589,17 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesSubGaugesPosition extends StObject {
     
     /** Specify x-axis position for sub-gauge of circular gauge
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specify y-axis position for sub-gauge of circular gauge
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesSubGaugesPosition {
     
@@ -5500,43 +5626,42 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait ScalesTick extends StObject {
     
     /** Specify the angle for the ticks of circular gauge
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specify tick color of circular gauge
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specify distanceFromScale value for ticks of circular gauge
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specify tick height of circular gauge
       * @Default {16}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specify tick placement of circular gauge. See TickPlacement
       * @Default {Near}
       */
-    var placement: js.UndefOr[Placement | String] = js.native
+    var placement: js.UndefOr[Placement | String] = js.undefined
     
     /** Specify tick Style of circular gauge. See TickType
       * @Default {Major}
       */
-    var `type`: js.UndefOr[LabelType | String] = js.native
+    var `type`: js.UndefOr[LabelType | String] = js.undefined
     
     /** Specify tick width of circular gauge
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesTick {
     
@@ -5593,23 +5718,22 @@ object CircularGauge {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
     /** enable showCustomLabelTooltip of circular gauge
       * @Default {false}
       */
-    var showCustomLabelTooltip: js.UndefOr[Boolean] = js.native
+    var showCustomLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** enable showLabelTooltip of circular gauge
       * @Default {false}
       */
-    var showLabelTooltip: js.UndefOr[Boolean] = js.native
+    var showLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify tooltip templateID of circular gauge
       * @Default {false}
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
   }
   object Tooltip {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSchemaExtensionRequest extends StObject {
   
   /**
     * The identifier of the directory whose schema extension will be canceled.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The identifier of the schema extension that will be canceled.
     */
-  var SchemaExtensionId: typings.awsSdk.directoryserviceMod.SchemaExtensionId = js.native
+  var SchemaExtensionId: typings.awsSdk.directoryserviceMod.SchemaExtensionId
 }
 object CancelSchemaExtensionRequest {
   

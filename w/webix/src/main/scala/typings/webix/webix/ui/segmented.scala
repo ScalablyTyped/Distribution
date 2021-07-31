@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait segmented extends baseview {
+trait segmented
+  extends StObject
+     with baseview {
   
   @JSName("$allowsClear")
   var $allowsClear: Boolean = js.native
@@ -64,13 +65,13 @@ trait segmented extends baseview {
   def $tooltipOut(): Unit = js.native
   
   def addOption(id: String, value: js.Any): Unit = js.native
-  def addOption(id: String, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: String, value: js.Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: String, value: js.Any, show: Unit, index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any): Unit = js.native
-  def addOption(id: Double, value: js.Any, show: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean): Unit = js.native
   def addOption(id: Double, value: js.Any, show: Boolean, index: Double): Unit = js.native
+  def addOption(id: Double, value: js.Any, show: Unit, index: Double): Unit = js.native
   
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: segmentedEventName, functor: WebixCallback, id: String): String | Double = js.native
@@ -79,7 +80,7 @@ trait segmented extends baseview {
   
   def blur(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_segmented: segmentedConfig = js.native

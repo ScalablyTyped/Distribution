@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePipelineOutput extends StObject {
   
   /**
     * The structure of the updated pipeline.
     */
-  var pipeline: js.UndefOr[PipelineDeclaration] = js.native
+  var pipeline: js.UndefOr[PipelineDeclaration] = js.undefined
 }
 object UpdatePipelineOutput {
   

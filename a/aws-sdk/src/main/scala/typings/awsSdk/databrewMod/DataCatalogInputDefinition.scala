@@ -2,31 +2,29 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataCatalogInputDefinition extends StObject {
   
   /**
     * The unique identifier of the AWS account that holds the Data Catalog that stores the data.
     */
-  var CatalogId: js.UndefOr[typings.awsSdk.databrewMod.CatalogId] = js.native
+  var CatalogId: js.UndefOr[typings.awsSdk.databrewMod.CatalogId] = js.undefined
   
   /**
     * The name of a database in the Data Catalog.
     */
-  var DatabaseName: typings.awsSdk.databrewMod.DatabaseName = js.native
+  var DatabaseName: typings.awsSdk.databrewMod.DatabaseName
   
   /**
     * The name of a database table in the Data Catalog. This table corresponds to a DataBrew dataset.
     */
-  var TableName: typings.awsSdk.databrewMod.TableName = js.native
+  var TableName: typings.awsSdk.databrewMod.TableName
   
   /**
     * An Amazon location that AWS Glue Data Catalog can use as a temporary directory.
     */
-  var TempDirectory: js.UndefOr[S3Location] = js.native
+  var TempDirectory: js.UndefOr[S3Location] = js.undefined
 }
 object DataCatalogInputDefinition {
   

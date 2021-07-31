@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of the Video.
   */
-@js.native
 trait SchemaVideoProperties extends StObject {
   
   /**
     * Whether to enable video autoplay when the page is displayed in present
     * mode. Defaults to false.
     */
-  var autoPlay: js.UndefOr[Boolean] = js.native
+  var autoPlay: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time at which to end playback, measured in seconds from the beginning
@@ -23,18 +21,18 @@ trait SchemaVideoProperties extends StObject {
     * set or if you set this to a value that exceeds the video&#39;s length,
     * the video will be played until its end.
     */
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to mute the audio during video playback. Defaults to false.
     */
-  var mute: js.UndefOr[Boolean] = js.native
+  var mute: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The outline of the video. The default outline matches the defaults for
     * new videos created in the Slides editor.
     */
-  var outline: js.UndefOr[SchemaOutline] = js.native
+  var outline: js.UndefOr[SchemaOutline] = js.undefined
   
   /**
     * The time at which to start playback, measured in seconds from the
@@ -43,7 +41,7 @@ trait SchemaVideoProperties extends StObject {
     * seconds, the video will be played from the last second. If not set, the
     * video will be played from the beginning.
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object SchemaVideoProperties {
   

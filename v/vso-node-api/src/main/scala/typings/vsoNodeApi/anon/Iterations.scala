@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Iterations extends StObject {
   
-  var iterations: scala.Double = js.native
+  var iterations: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var workItems: scala.Double = js.native
+  var workItems: scala.Double
 }
 object Iterations {
   

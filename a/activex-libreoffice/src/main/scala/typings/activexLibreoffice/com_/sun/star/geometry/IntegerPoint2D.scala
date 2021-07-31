@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This structure contains x and y integer-valued coordinates of a two-dimensional point.
   * @since OOo 2.0
   */
-@js.native
 trait IntegerPoint2D extends StObject {
   
-  var X: Double = js.native
+  var X: Double
   
-  var Y: Double = js.native
+  var Y: Double
 }
 object IntegerPoint2D {
   

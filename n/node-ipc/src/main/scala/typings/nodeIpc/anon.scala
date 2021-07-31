@@ -2,38 +2,36 @@ package typings.nodeIpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Family extends StObject {
     
     /**
       * Default: false
       */
-    var family: js.UndefOr[Boolean] = js.native
+    var family: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       */
-    var hints: js.UndefOr[Boolean] = js.native
+    var hints: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       */
-    var localAddress: js.UndefOr[Boolean] = js.native
+    var localAddress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       */
-    var localPort: js.UndefOr[Boolean] = js.native
+    var localPort: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false
       */
-    var lookup: js.UndefOr[Boolean] = js.native
+    var lookup: js.UndefOr[Boolean] = js.undefined
   }
   object Family {
     
@@ -78,14 +76,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Private extends StObject {
     
-    var `private`: js.UndefOr[String] = js.native
+    var `private`: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object Private {
     

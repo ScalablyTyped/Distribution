@@ -7,7 +7,6 @@ import typings.std.SVGElement
 import typings.testingLibraryJasmineDom.anon.NormalizeWhitespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
@@ -269,7 +268,7 @@ object jasmine {
       *
       * Solo puede ser usado con elementos `form` o `fieldset`.
       */
-    def toHaveFormValues(expectedValues: Record[String, _]): Boolean = js.native
+    def toHaveFormValues(expectedValues: Record[String, js.Any]): Boolean = js.native
     
     /**
       * @description
@@ -284,7 +283,7 @@ object jasmine {
       * Solo matchea si el elemento tiene **todas** las propiedades esperadas aplicadas.
       */
     def toHaveStyle(css: String): Boolean = js.native
-    def toHaveStyle(css: Record[String, _]): Boolean = js.native
+    def toHaveStyle(css: Record[String, js.Any]): Boolean = js.native
     
     /**
       * @description

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/accesscontextmanager/v1", "accesscontextmanager_v1.Resource$Accesspolicies$Accesslevels")
@@ -34,7 +33,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaOperation] = js.native
   def create(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def create(params: ParamsResourceAccesspoliciesAccesslevelsCreate): GaxiosPromise[SchemaOperation] = js.native
   def create(
     params: ParamsResourceAccesspoliciesAccesslevelsCreate,
@@ -68,7 +67,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAccesspoliciesAccesslevelsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceAccesspoliciesAccesslevelsDelete,
@@ -101,7 +100,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAccessLevel] = js.native
   def get(callback: BodyResponseCallback[SchemaAccessLevel]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAccessLevel] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAccessLevel] = js.native
   def get(params: ParamsResourceAccesspoliciesAccesslevelsGet): GaxiosPromise[SchemaAccessLevel] = js.native
   def get(
     params: ParamsResourceAccesspoliciesAccesslevelsGet,
@@ -136,7 +135,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAccessLevelsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAccessLevelsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAccessLevelsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAccessLevelsResponse] = js.native
   def list(params: ParamsResourceAccesspoliciesAccesslevelsList): GaxiosPromise[SchemaListAccessLevelsResponse] = js.native
   def list(
     params: ParamsResourceAccesspoliciesAccesslevelsList,
@@ -173,7 +172,7 @@ class ResourceAccesspoliciesAccesslevels protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAccesspoliciesAccesslevelsPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceAccesspoliciesAccesslevelsPatch,

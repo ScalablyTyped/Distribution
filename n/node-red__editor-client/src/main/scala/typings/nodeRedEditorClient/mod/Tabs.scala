@@ -3,13 +3,11 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.AddButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tabs extends StObject {
   
-  def create(options: AddButton): TabsInstance = js.native
+  def create(options: AddButton): TabsInstance
 }
 object Tabs {
   

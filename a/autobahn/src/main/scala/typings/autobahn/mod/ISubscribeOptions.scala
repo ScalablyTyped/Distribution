@@ -2,15 +2,13 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISubscribeOptions extends StObject {
   
-  var get_retained: js.UndefOr[Boolean] = js.native
+  var get_retained: js.UndefOr[Boolean] = js.undefined
   
-  var `match`: js.UndefOr[String] = js.native
+  var `match`: js.UndefOr[String] = js.undefined
 }
 object ISubscribeOptions {
   

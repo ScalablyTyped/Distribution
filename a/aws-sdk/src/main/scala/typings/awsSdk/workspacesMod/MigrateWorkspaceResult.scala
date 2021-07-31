@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrateWorkspaceResult extends StObject {
   
   /**
     * The original identifier of the WorkSpace that is being migrated.
     */
-  var SourceWorkspaceId: js.UndefOr[WorkspaceId] = js.native
+  var SourceWorkspaceId: js.UndefOr[WorkspaceId] = js.undefined
   
   /**
     * The new identifier of the WorkSpace that is being migrated. If the migration does not succeed, the target WorkSpace ID will not be used, and the WorkSpace will still have the original WorkSpace ID.
     */
-  var TargetWorkspaceId: js.UndefOr[WorkspaceId] = js.native
+  var TargetWorkspaceId: js.UndefOr[WorkspaceId] = js.undefined
 }
 object MigrateWorkspaceResult {
   

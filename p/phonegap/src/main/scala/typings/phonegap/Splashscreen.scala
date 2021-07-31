@@ -2,15 +2,13 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Splashscreen extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object Splashscreen {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocationSpecificSKUReservation extends StObject {
   
   /** Specifies the number of resources that are allocated. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** [Output Only] Indicates how many instances are in use. */
-  var inUseCount: js.UndefOr[String] = js.native
+  var inUseCount: js.UndefOr[String] = js.undefined
   
   /** The instance properties for the reservation. */
-  var instanceProperties: js.UndefOr[AllocationSpecificSKUAllocationReservedInstanceProperties] = js.native
+  var instanceProperties: js.UndefOr[AllocationSpecificSKUAllocationReservedInstanceProperties] = js.undefined
 }
 object AllocationSpecificSKUReservation {
   

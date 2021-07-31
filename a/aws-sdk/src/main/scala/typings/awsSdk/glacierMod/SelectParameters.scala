@@ -2,31 +2,29 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectParameters extends StObject {
   
   /**
     * The expression that is used to select the object.
     */
-  var Expression: js.UndefOr[String] = js.native
+  var Expression: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the provided expression, for example SQL.
     */
-  var ExpressionType: js.UndefOr[typings.awsSdk.glacierMod.ExpressionType] = js.native
+  var ExpressionType: js.UndefOr[typings.awsSdk.glacierMod.ExpressionType] = js.undefined
   
   /**
     * Describes the serialization format of the object.
     */
-  var InputSerialization: js.UndefOr[typings.awsSdk.glacierMod.InputSerialization] = js.native
+  var InputSerialization: js.UndefOr[typings.awsSdk.glacierMod.InputSerialization] = js.undefined
   
   /**
     * Describes how the results of the select job are serialized.
     */
-  var OutputSerialization: js.UndefOr[typings.awsSdk.glacierMod.OutputSerialization] = js.native
+  var OutputSerialization: js.UndefOr[typings.awsSdk.glacierMod.OutputSerialization] = js.undefined
 }
 object SelectParameters {
   

@@ -12,12 +12,12 @@ import typings.postcssSelectorParser.postcssSelectorParserStrings.operator
 import typings.postcssSelectorParser.postcssSelectorParserStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Attribute_
-  extends Namespace[js.UndefOr[String]] {
+  extends StObject
+     with Namespace[js.UndefOr[String]] {
   
   var attribute: String = js.native
   

@@ -6,25 +6,23 @@ import typings.reactBigCalendar.reactBigCalendarStrings.PREV
 import typings.reactBigCalendar.reactBigCalendarStrings.TODAY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigate extends StObject {
   
-  var DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE = js.native
+  var DATE: typings.reactBigCalendar.reactBigCalendarStrings.DATE
   
-  var NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT = js.native
+  var NEXT: typings.reactBigCalendar.reactBigCalendarStrings.NEXT
   
-  var PREVIOUS: PREV = js.native
+  var PREVIOUS: PREV
   
-  var TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY = js.native
+  var TODAY: typings.reactBigCalendar.reactBigCalendarStrings.TODAY
 }
 object Navigate {
   
   @scala.inline
-  def apply(DATE: DATE, NEXT: NEXT, PREVIOUS: PREV, TODAY: TODAY): Navigate = {
-    val __obj = js.Dynamic.literal(DATE = DATE.asInstanceOf[js.Any], NEXT = NEXT.asInstanceOf[js.Any], PREVIOUS = PREVIOUS.asInstanceOf[js.Any], TODAY = TODAY.asInstanceOf[js.Any])
+  def apply(): Navigate = {
+    val __obj = js.Dynamic.literal(DATE = "DATE", NEXT = "NEXT", PREVIOUS = "PREV", TODAY = "TODAY")
     __obj.asInstanceOf[Navigate]
   }
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationResponseMod {
@@ -59,6 +58,10 @@ object integrationResponseMod {
   /* static members */
   object IntegrationResponse {
     
+    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IntegrationResponse resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,60 +71,54 @@ object integrationResponseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationResponseState): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IntegrationResponseState, opts: CustomResourceOptions): IntegrationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IntegrationResponse]
     
     /**
       * Returns true if the given object is an instance of IntegrationResponse.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/integrationResponse", "IntegrationResponse.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/integrationResponse.IntegrationResponse */ Boolean]
   }
   
-  @js.native
   trait IntegrationResponseArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
       */
-    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
+    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Integration`.
       */
-    val integrationId: Input[String] = js.native
+    val integrationId: Input[String]
     
     /**
       * The integration response key.
       */
-    val integrationResponseKey: Input[String] = js.native
+    val integrationResponseKey: Input[String]
     
     /**
       * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
       */
-    val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val templateSelectionExpression: js.UndefOr[Input[String]] = js.undefined
   }
   object IntegrationResponseArgs {
     
@@ -163,38 +160,37 @@ object integrationResponseMod {
     }
   }
   
-  @js.native
   trait IntegrationResponseState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How to handle response payload content type conversions. Valid values: `CONVERT_TO_BINARY`, `CONVERT_TO_TEXT`.
       */
-    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.native
+    val contentHandlingStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier of the `aws.apigatewayv2.Integration`.
       */
-    val integrationId: js.UndefOr[Input[String]] = js.native
+    val integrationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The integration response key.
       */
-    val integrationResponseKey: js.UndefOr[Input[String]] = js.native
+    val integrationResponseKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of Velocity templates that are applied on the request payload based on the value of the Content-Type header sent by the client.
       */
-    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val responseTemplates: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The [template selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-template-selection-expressions) for the integration response.
       */
-    val templateSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val templateSelectionExpression: js.UndefOr[Input[String]] = js.undefined
   }
   object IntegrationResponseState {
     

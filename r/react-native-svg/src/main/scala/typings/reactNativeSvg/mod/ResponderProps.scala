@@ -7,13 +7,13 @@ import typings.reactNativeSvg.reactNativeSvgStrings.auto
 import typings.reactNativeSvg.reactNativeSvgStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponderProps extends GestureResponderHandlers {
+trait ResponderProps
+  extends StObject
+     with GestureResponderHandlers {
   
-  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
 }
 object ResponderProps {
   

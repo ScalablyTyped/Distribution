@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeekAnimationsRequest extends StObject {
   
   /**
     * List of animation ids to seek.
     */
-  var animations: js.Array[String] = js.native
+  var animations: js.Array[String]
   
   /**
     * Set the current time of each animation.
     */
-  var currentTime: Double = js.native
+  var currentTime: Double
 }
 object SeekAnimationsRequest {
   

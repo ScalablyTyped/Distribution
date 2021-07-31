@@ -11,13 +11,12 @@ import typings.activexLibreoffice.com_.sun.star.view.OfficeDocumentView
 import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the view of a {@link TextDocument} . */
-@js.native
 trait TextDocumentView
-  extends OfficeDocumentView
+  extends StObject
+     with OfficeDocumentView
      with XTextViewCursorSupplier
      with XPropertySet {
   
@@ -25,13 +24,13 @@ trait TextDocumentView
     * specifies if spell checking should be done while typing.
     * @since OOo 2.0
     */
-  var IsConstantSpellcheck: Boolean = js.native
+  var IsConstantSpellcheck: Boolean
   
   /**
     * specifies if the marks for misspelled text should be displayed.
     * @since OOo 2.0
     */
-  var IsHideSpellMarks: Boolean = js.native
+  var IsHideSpellMarks: Boolean
   
   /**
     * returns the number of lines in the document
@@ -41,7 +40,7 @@ trait TextDocumentView
     * Empty paragraphs are not counted.
     * @since OOo 2.0
     */
-  var LineCount: Double = js.native
+  var LineCount: Double
   
   /**
     * returns the number of pages in the document
@@ -49,7 +48,7 @@ trait TextDocumentView
     * Since the document needs to be formatted to get the result obtaining this value may take some time.
     * @since OOo 2.0
     */
-  var PageCount: Double = js.native
+  var PageCount: Double
 }
 object TextDocumentView {
   

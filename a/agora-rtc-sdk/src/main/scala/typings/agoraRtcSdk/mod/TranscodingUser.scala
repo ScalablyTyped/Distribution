@@ -2,11 +2,9 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages the user layout configuration in {@link setLiveTranscoding}. */
-@js.native
 trait TranscodingUser extends StObject {
   
   /**
@@ -17,38 +15,38 @@ trait TranscodingUser extends StObject {
     * - 0.0: Completely transparent.
     * - 1.0: Opaque.
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * The height of the video.
     *
     * Integer only. The value range is [0,10000], and the default value is 360.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** The user ID of the CDN live host. */
-  var uid: js.UndefOr[Double | String] = js.native
+  var uid: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The width of the video.
     *
     * Integer only. The value range is [0,10000], and the default value is 640.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * The position of the upper left end of the video on the horizontal axis.
     *
     * Integer only. The value range is [0,10000], and the default value is 0.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * The position of the upper left end of the video on the vertical axis.
     *
     * Integer only. The value range is [0,10000], and the default value is 0.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /**
     * The layer index of the video frame.
@@ -61,7 +59,7 @@ trait TranscodingUser extends StObject {
     * - 100: Top layer.
     *
     */
-  var zOrder: js.UndefOr[Double] = js.native
+  var zOrder: js.UndefOr[Double] = js.undefined
 }
 object TranscodingUser {
   

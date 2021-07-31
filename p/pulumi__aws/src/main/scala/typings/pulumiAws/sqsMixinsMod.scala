@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqsMixinsMod {
@@ -19,13 +18,7 @@ object sqsMixinsMod {
   class QueueEventSubscription protected () extends EventSubscription {
     def this(name: String, queue: Queue, handler: QueueEventHandler) = this()
     def this(name: String, queue: Queue, handler: QueueEventHandler, args: QueueEventSubscriptionArgs) = this()
-    def this(
-      name: String,
-      queue: Queue,
-      handler: QueueEventHandler,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions
-    ) = this()
+    def this(name: String, queue: Queue, handler: QueueEventHandler, args: Unit, opts: ComponentResourceOptions) = this()
     def this(
       name: String,
       queue: Queue,
@@ -42,10 +35,9 @@ object sqsMixinsMod {
     val queue: Queue = js.native
   }
   
-  @js.native
   trait QueueEvent extends StObject {
     
-    var Records: js.Array[QueueRecord] = js.native
+    var Records: js.Array[QueueRecord]
   }
   object QueueEvent {
     
@@ -68,7 +60,6 @@ object sqsMixinsMod {
   
   type QueueEventHandler = EventHandler[QueueEvent, Unit]
   
-  @js.native
   trait QueueEventSubscriptionArgs extends StObject {
     
     /**
@@ -78,7 +69,7 @@ object sqsMixinsMod {
       *
       * See https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html for more details.
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
   }
   object QueueEventSubscriptionArgs {
     
@@ -99,26 +90,25 @@ object sqsMixinsMod {
     }
   }
   
-  @js.native
   trait QueueRecord extends StObject {
     
-    var attributes: ApproximateFirstReceiveTimestamp = js.native
+    var attributes: ApproximateFirstReceiveTimestamp
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var body: String = js.native
+    var body: String
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventSourceARN: String = js.native
+    var eventSourceARN: String
     
-    var md5OfBody: String = js.native
+    var md5OfBody: String
     
-    var messageAttributes: Record[String, _] = js.native
+    var messageAttributes: Record[String, js.Any]
     
-    var messageId: String = js.native
+    var messageId: String
     
-    var receiptHandle: String = js.native
+    var receiptHandle: String
   }
   object QueueRecord {
     
@@ -130,7 +120,7 @@ object sqsMixinsMod {
       eventSource: String,
       eventSourceARN: String,
       md5OfBody: String,
-      messageAttributes: Record[String, _],
+      messageAttributes: Record[String, js.Any],
       messageId: String,
       receiptHandle: String
     ): QueueRecord = {
@@ -160,7 +150,7 @@ object sqsMixinsMod {
       def setMd5OfBody(value: String): Self = StObject.set(x, "md5OfBody", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessageAttributes(value: Record[String, _]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
+      def setMessageAttributes(value: Record[String, js.Any]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
@@ -181,12 +171,7 @@ object sqsMixinsMod {
         * with options to control the behavior of the subscription.
         */
       def onEvent(name: String, handler: QueueEventHandler): QueueEventSubscription = js.native
-      def onEvent(
-        name: String,
-        handler: QueueEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): QueueEventSubscription = js.native
+      def onEvent(name: String, handler: QueueEventHandler, args: Unit, opts: ComponentResourceOptions): QueueEventSubscription = js.native
       def onEvent(name: String, handler: QueueEventHandler, args: QueueEventSubscriptionArgs): QueueEventSubscription = js.native
       def onEvent(
         name: String,

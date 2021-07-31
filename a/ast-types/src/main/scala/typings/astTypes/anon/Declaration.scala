@@ -7,27 +7,25 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declaration extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declaration: DeclarationKind | Null = js.native
+  var declaration: DeclarationKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var source: js.UndefOr[LiteralKind | Null] = js.native
+  var source: js.UndefOr[LiteralKind | Null] = js.undefined
   
-  var specifiers: js.UndefOr[js.Array[ExportSpecifierKind]] = js.native
+  var specifiers: js.UndefOr[js.Array[ExportSpecifierKind]] = js.undefined
 }
 object Declaration {
   
   @scala.inline
   def apply(): Declaration = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(declaration = null)
     __obj.asInstanceOf[Declaration]
   }
   

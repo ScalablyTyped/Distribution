@@ -8,14 +8,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @js.native
 trait XboxLiveEndpointPair extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechanged(
     `type`: statechanged,
@@ -47,7 +46,7 @@ trait XboxLiveEndpointPair extends StObject {
   var localPort: String = js.native
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  def onstatechanged(ev: XboxLiveEndpointPairStateChangedEventArgs with WinRTEvent[XboxLiveEndpointPair]): Unit = js.native
+  def onstatechanged(ev: XboxLiveEndpointPairStateChangedEventArgs & WinRTEvent[XboxLiveEndpointPair]): Unit = js.native
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @JSName("onstatechanged")
   var onstatechanged_Original: TypedEventHandler[XboxLiveEndpointPair, XboxLiveEndpointPairStateChangedEventArgs] = js.native
@@ -61,7 +60,7 @@ trait XboxLiveEndpointPair extends StObject {
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   var remotePort: String = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statechanged(
     `type`: statechanged,

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ObjectInspector
   * @since OOo 2.0.3
   */
-@js.native
 trait XObjectInspectorModel extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait XObjectInspectorModel extends StObject {
     * @see XPropertyHandler.getSupportedProperties
     * @see XPropertyHandler.getSupersededProperties
     */
-  var HandlerFactories: SafeArray[_] = js.native
+  var HandlerFactories: SafeArray[js.Any]
   
   /**
     * indicates that the object inspector should have a help section.
@@ -39,7 +37,7 @@ trait XObjectInspectorModel extends StObject {
     * short texts explaining the currently selected property.
     * @since OOo 2.2
     */
-  var HasHelpSection: Boolean = js.native
+  var HasHelpSection: Boolean
   
   /**
     * determines whether the object inspector's UI should be read-only.
@@ -51,7 +49,7 @@ trait XObjectInspectorModel extends StObject {
     * @see XPropertyControl
     * @see LineDescriptor
     */
-  var IsReadOnly: Boolean = js.native
+  var IsReadOnly: Boolean
   
   /**
     * denotes the maximum number of lines of text to be reserved for the help section.
@@ -61,7 +59,7 @@ trait XObjectInspectorModel extends StObject {
     * The layout of the {@link ObjectInspector} is undefined if {@link MaxHelpTextLines} is smaller than {@link MinHelpTextLines} .
     * @since OOo 2.2
     */
-  var MaxHelpTextLines: Double = js.native
+  var MaxHelpTextLines: Double
   
   /**
     * denotes the minimum number of lines of text to be reserved for the help section.
@@ -71,7 +69,7 @@ trait XObjectInspectorModel extends StObject {
     * The layout of the {@link ObjectInspector} is undefined if {@link MinHelpTextLines} is larger than {@link MaxHelpTextLines} .
     * @since OOo 2.2
     */
-  var MinHelpTextLines: Double = js.native
+  var MinHelpTextLines: Double
   
   /**
     * describes the property categories used by the property handlers.
@@ -84,7 +82,7 @@ trait XObjectInspectorModel extends StObject {
     * @see PropertyCategoryDescriptor
     * @see LineDescriptor.Category
     */
-  def describeCategories(): SafeArray[PropertyCategoryDescriptor] = js.native
+  def describeCategories(): SafeArray[PropertyCategoryDescriptor]
   
   /**
     * retrieves an index in a global property ordering, for a given property name
@@ -102,13 +100,13 @@ trait XObjectInspectorModel extends StObject {
     * @param PropertyName the property whose global order index should be retrieved
     * @returns the global order index of PropertyName.
     */
-  def getPropertyOrderIndex(PropertyName: String): Double = js.native
+  def getPropertyOrderIndex(PropertyName: String): Double
 }
 object XObjectInspectorModel {
   
   @scala.inline
   def apply(
-    HandlerFactories: SafeArray[_],
+    HandlerFactories: SafeArray[js.Any],
     HasHelpSection: Boolean,
     IsReadOnly: Boolean,
     MaxHelpTextLines: Double,
@@ -130,7 +128,7 @@ object XObjectInspectorModel {
     def setGetPropertyOrderIndex(value: String => Double): Self = StObject.set(x, "getPropertyOrderIndex", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setHandlerFactories(value: SafeArray[_]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
+    def setHandlerFactories(value: SafeArray[js.Any]): Self = StObject.set(x, "HandlerFactories", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHasHelpSection(value: Boolean): Self = StObject.set(x, "HasHelpSection", value.asInstanceOf[js.Any])

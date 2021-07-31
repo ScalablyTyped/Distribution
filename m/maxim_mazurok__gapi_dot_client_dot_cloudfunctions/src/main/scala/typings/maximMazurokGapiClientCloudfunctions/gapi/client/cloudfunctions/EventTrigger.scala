@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTrigger extends StObject {
   
   /**
@@ -14,10 +12,10 @@ trait EventTrigger extends StObject {
     * which event occurs. For example, the Google Cloud Storage API includes the type `object`. 3. action: The action that generates the event. For example, action for a Google Cloud
     * Storage Object is 'change'. These parts are lower case.
     */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /** Specifies policy for failed executions. */
-  var failurePolicy: js.UndefOr[FailurePolicy] = js.native
+  var failurePolicy: js.UndefOr[FailurePolicy] = js.undefined
   
   /**
     * Required. The resource(s) from which to observe events, for example, `projects/_/buckets/myBucket`. Not all syntactically correct values are accepted by all services. For example:
@@ -26,13 +24,13 @@ trait EventTrigger extends StObject {
     * that matches Google Cloud Pub/Sub topics. Additionally, some services may support short names when creating an `EventTrigger`. These will always be returned in the normalized "long"
     * format. See each *service's* documentation for supported formats.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * The hostname of the service that should be observed. If no string is provided, the default service implementing the API will be used. For example, `storage.googleapis.com` is the
     * default for all event types in the `google.storage` namespace.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object EventTrigger {
   

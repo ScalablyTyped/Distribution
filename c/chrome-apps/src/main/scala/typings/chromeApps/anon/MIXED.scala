@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.normal_
 import typings.chromeApps.chromeAppsStrings.off
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MIXED extends StObject {
   
-  var MIXED: mixed = js.native
+  var MIXED: mixed
   
-  var NORMAL: normal_ = js.native
+  var NORMAL: normal_
   
-  var OFF: off = js.native
+  var OFF: off
 }
 object MIXED {
   
   @scala.inline
-  def apply(MIXED: mixed, NORMAL: normal_, OFF: off): MIXED = {
-    val __obj = js.Dynamic.literal(MIXED = MIXED.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], OFF = OFF.asInstanceOf[js.Any])
+  def apply(): MIXED = {
+    val __obj = js.Dynamic.literal(MIXED = "mixed", NORMAL = "normal", OFF = "off")
     __obj.asInstanceOf[MIXED]
   }
   

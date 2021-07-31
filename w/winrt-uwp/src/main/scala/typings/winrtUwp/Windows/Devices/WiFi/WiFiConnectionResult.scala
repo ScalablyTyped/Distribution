@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.WiFi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the results of an attempt to connect to a Wi-Fi network. */
-@js.native
 trait WiFiConnectionResult extends StObject {
   
   /** Gets the connection result value. */
-  var connectionStatus: WiFiConnectionStatus = js.native
+  var connectionStatus: WiFiConnectionStatus
 }
 object WiFiConnectionResult {
   

@@ -4,17 +4,15 @@ import typings.d3pie.d3pieStrings.inner
 import typings.d3pie.d3pieStrings.outer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Section extends StObject {
   
-  var label: String = js.native
+  var label: String
   
-  var section: outer | inner = js.native
+  var section: outer | inner
   
-  var value: Double = js.native
+  var value: Double
 }
 object Section {
   

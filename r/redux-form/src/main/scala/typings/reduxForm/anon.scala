@@ -6,7 +6,6 @@ import typings.reduxForm.mod.FormWarnings
 import typings.reduxForm.reduxFormMod.WrappedReduxFormContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -15,35 +14,29 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(form: String, data: js.Any): FormAction = js.native
-    def apply(
-      form: String,
-      data: js.Any,
-      keepDirty: js.UndefOr[scala.Nothing],
-      options: PartialInitializeOptions
-    ): FormAction = js.native
     def apply(form: String, data: js.Any, keepDirty: Boolean): FormAction = js.native
     def apply(form: String, data: js.Any, keepDirty: Boolean, options: PartialInitializeOptions): FormAction = js.native
+    def apply(form: String, data: js.Any, keepDirty: Unit, options: PartialInitializeOptions): FormAction = js.native
     def apply(form: String, data: js.Any, options: PartialInitializeOptions): FormAction = js.native
   }
   
   @js.native
   trait FnCallFormSyncWarningsWarning extends StObject {
     
-    def apply[T](form: String, syncWarnings: FormWarnings[_, T], warning: T): FormAction = js.native
+    def apply[T](form: String, syncWarnings: FormWarnings[js.Any, T], warning: T): FormAction = js.native
   }
   
   @js.native
   trait FnCallFromSyncErrorsError extends StObject {
     
-    def apply[T](from: String, syncErrors: FormErrors[_, T], error: T): FormAction = js.native
+    def apply[T](from: String, syncErrors: FormErrors[js.Any, T], error: T): FormAction = js.native
   }
   
-  @js.native
   trait Form extends StObject {
     
-    var form: String = js.native
+    var form: String
     
-    var sectionPrefix: js.UndefOr[String] = js.native
+    var sectionPrefix: js.UndefOr[String] = js.undefined
   }
   object Form {
     
@@ -68,16 +61,15 @@ object anon {
   }
   
   /* Inlined std.Partial<redux-form.redux-form/lib/actions.InitializeOptions> */
-  @js.native
   trait PartialInitializeOptions extends StObject {
     
-    var keepDirty: js.UndefOr[Boolean] = js.native
+    var keepDirty: js.UndefOr[Boolean] = js.undefined
     
-    var keepSubmitSucceeded: js.UndefOr[Boolean] = js.native
+    var keepSubmitSucceeded: js.UndefOr[Boolean] = js.undefined
     
-    var keepValues: js.UndefOr[Boolean] = js.native
+    var keepValues: js.UndefOr[Boolean] = js.undefined
     
-    var updateUnregisteredFields: js.UndefOr[Boolean] = js.native
+    var updateUnregisteredFields: js.UndefOr[Boolean] = js.undefined
   }
   object PartialInitializeOptions {
     
@@ -116,10 +108,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Props[P] extends StObject {
     
-    var props: P = js.native
+    var props: P
   }
   object Props {
     
@@ -130,17 +121,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], P] (val x: Self with Props[P]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], P] (val x: Self & Props[P]) extends AnyVal {
       
       @scala.inline
       def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ReduxForm extends StObject {
     
-    var _reduxForm: js.UndefOr[WrappedReduxFormContext] = js.native
+    var _reduxForm: js.UndefOr[WrappedReduxFormContext] = js.undefined
   }
   object ReduxForm {
     

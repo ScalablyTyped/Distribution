@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MediaQueryListEventInit extends EventInit {
+trait MediaQueryListEventInit
+  extends StObject
+     with EventInit {
   
-  var matches: js.UndefOr[scala.Boolean] = js.native
+  var matches: js.UndefOr[scala.Boolean] = js.undefined
   
-  var media: js.UndefOr[java.lang.String] = js.native
+  var media: js.UndefOr[java.lang.String] = js.undefined
 }
 object MediaQueryListEventInit {
   

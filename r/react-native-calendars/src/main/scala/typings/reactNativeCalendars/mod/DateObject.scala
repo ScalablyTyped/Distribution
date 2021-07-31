@@ -2,21 +2,19 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateObject extends StObject {
   
-  var dateString: String = js.native
+  var dateString: String
   
-  var day: Double = js.native
+  var day: Double
   
-  var month: Double = js.native
+  var month: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var year: Double = js.native
+  var year: Double
 }
 object DateObject {
   

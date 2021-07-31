@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.arcgisJsApi.arcgisJsApiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Histogram_ extends Widget_ {
+trait Histogram_
+  extends StObject
+     with Widget_ {
   
   /**
     * The statistical average of the data in the histogram.
@@ -46,9 +47,9 @@ trait Histogram_ extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#dataLineCreatedFunction)
     */
   def dataLineCreatedFunction(lineElement: js.Any): Unit = js.native
-  def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.UndefOr[scala.Nothing], index: Double): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any): Unit = js.native
   def dataLineCreatedFunction(lineElement: js.Any, labelElement: js.Any, index: Double): Unit = js.native
+  def dataLineCreatedFunction(lineElement: js.Any, labelElement: Unit, index: Double): Unit = js.native
   /**
     * Function that fires each time a data line is created.
     *
@@ -70,9 +71,9 @@ trait Histogram_ extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
   def labelFormatFunction(value: Double, `type`: String): String = js.native
   def labelFormatFunction(value: Double, `type`: String, index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format labels on the histogram.
     *

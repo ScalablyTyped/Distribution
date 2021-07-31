@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,53 +18,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For settings that affect view properties, these settings apply to subsequently created views and are saved with the document, while {@link
   * SpreadsheetViewSettings} can be used to alter a specific view that is already open.
   */
-@js.native
-trait DocumentSettings extends Settings {
+trait DocumentSettings
+  extends StObject
+     with Settings {
   
   /** specifies the color in which the cell grid is displayed. */
-  var GridColor: Color = js.native
+  var GridColor: Color
   
   /** enables the column and row headers of the view. */
-  var HasColumnRowHeaders: Boolean = js.native
+  var HasColumnRowHeaders: Boolean
   
   /** enables the sheet tabs of the view. */
-  var HasSheetTabs: Boolean = js.native
+  var HasSheetTabs: Boolean
   
   /** enables the display of outline symbols. */
-  var IsOutlineSymbolsSet: Boolean = js.native
+  var IsOutlineSymbolsSet: Boolean
   
   /** enables the synchronization of horizontal and vertical grid settings in the user interface. */
-  var IsRasterAxisSynchronized: Boolean = js.native
+  var IsRasterAxisSynchronized: Boolean
   
   /** enables the restriction of object movement and resizing of drawing objects to the raster. */
-  var IsSnapToRaster: Boolean = js.native
+  var IsSnapToRaster: Boolean
   
   /** enables the display of the drawing object raster. */
-  var RasterIsVisible: Boolean = js.native
+  var RasterIsVisible: Boolean
   
   /** specifies the distance between horizontal grid elements in 1/100 mm. */
-  var RasterResolutionX: Double = js.native
+  var RasterResolutionX: Double
   
   /** specifies the distance between vertical grid elements in 1/100 mm. */
-  var RasterResolutionY: Double = js.native
+  var RasterResolutionY: Double
   
   /** specifies the number of subdivisions between two horizontal grid elements. */
-  var RasterSubdivisionX: Double = js.native
+  var RasterSubdivisionX: Double
   
   /** specifies the number of subdivisions between two vertical grid elements. */
-  var RasterSubdivisionY: Double = js.native
+  var RasterSubdivisionY: Double
   
   /** enables the display of the cell grid. */
-  var ShowGrid: Boolean = js.native
+  var ShowGrid: Boolean
   
   /** controls whether a marker is shown for notes in cells. */
-  var ShowNotes: Boolean = js.native
+  var ShowNotes: Boolean
   
   /** enables display of page breaks. */
-  var ShowPageBreaks: Boolean = js.native
+  var ShowPageBreaks: Boolean
   
   /** enables display of zero-values. */
-  var ShowZeroValues: Boolean = js.native
+  var ShowZeroValues: Boolean
 }
 object DocumentSettings {
   

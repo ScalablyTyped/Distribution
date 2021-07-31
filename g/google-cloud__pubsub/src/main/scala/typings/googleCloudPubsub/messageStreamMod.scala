@@ -1,13 +1,14 @@
 package typings.googleCloudPubsub
 
 import typings.googleCloudPubsub.subscriberMod.Subscriber
-import typings.googleGax.mod.grpc.Metadata
+import typings.grpcGrpcJs.callMod.ServiceError
 import typings.grpcGrpcJs.callStreamMod.StatusObject
+import typings.grpcGrpcJs.constantsMod.Status
+import typings.grpcGrpcJs.metadataMod.Metadata
 import typings.node.streamMod.PassThrough
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageStreamMod {
@@ -15,12 +16,26 @@ object messageStreamMod {
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "ChannelError")
   @js.native
   class ChannelError protected ()
-    extends Error
-       with StatusObject {
+    extends StObject
+       with ServiceError {
     def this(err: Error) = this()
     
+    /* CompleteClass */
+    var code: Status = js.native
+    
+    /* CompleteClass */
+    var details: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var metadata: Metadata = js.native
     @JSName("metadata")
-    var metadata_ChannelError: Metadata = js.native
+    var metadata_ChannelError: typings.googleGax.mod.grpc.Metadata = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "MessageStream")
@@ -155,22 +170,35 @@ object messageStreamMod {
   @JSImport("@google-cloud/pubsub/build/src/message-stream", "StatusError")
   @js.native
   class StatusError protected ()
-    extends Error
-       with StatusObject {
+    extends StObject
+       with ServiceError {
     def this(status: StatusObject) = this()
     
+    /* CompleteClass */
+    var code: Status = js.native
+    
+    /* CompleteClass */
+    var details: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var metadata: Metadata = js.native
     @JSName("metadata")
-    var metadata_StatusError: Metadata = js.native
+    var metadata_StatusError: typings.googleGax.mod.grpc.Metadata = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @js.native
   trait MessageStreamOptions extends StObject {
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var maxStreams: js.UndefOr[Double] = js.native
+    var maxStreams: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object MessageStreamOptions {
     

@@ -10,14 +10,15 @@ import typings.playable.playbackEngineTypesMod.PreloadType
 import typings.std.TimeRanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object html5videoOutputMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", JSImport.Default)
   @js.native
-  class default protected () extends NativeOutput {
+  class default protected ()
+    extends StObject
+       with NativeOutput {
     def this(hasEventEmitterConfigAvailablePlaybackAdapters: AvailablePlaybackAdapters) = this()
   }
   /* static members */
@@ -41,7 +42,9 @@ object html5videoOutputMod {
   }
   
   @js.native
-  trait NativeOutput extends IVideoOutput {
+  trait NativeOutput
+    extends StObject
+       with IVideoOutput {
     
     var _adapterStrategy: js.Any = js.native
     

@@ -2,17 +2,15 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Priority[T] extends StObject {
   
-  var item: T = js.native
+  var item: T
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Priority {
   
@@ -23,7 +21,7 @@ object Priority {
   }
   
   @scala.inline
-  implicit class PriorityMutableBuilder[Self <: Priority[_], T] (val x: Self with Priority[T]) extends AnyVal {
+  implicit class PriorityMutableBuilder[Self <: Priority[?], T] (val x: Self & Priority[T]) extends AnyVal {
     
     @scala.inline
     def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])

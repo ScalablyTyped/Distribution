@@ -5,29 +5,27 @@ import typings.blueprintjsDatetime.datePickerCoreMod.IDatePickerBaseProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFormatMod {
   
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
+  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", JSImport.Namespace)
   @js.native
-  def getFormattedDateString(date: Null, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
-  @js.native
-  def getFormattedDateString(date: Null, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
-  @js.native
-  def getFormattedDateString(date: Date, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
-  @js.native
-  def getFormattedDateString(date: Date, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
-  @js.native
-  def getFormattedDateString_false(date: `false`, props: IDateFormatProps with IDatePickerBaseProps): String = js.native
-  @JSImport("@blueprintjs/datetime/lib/esm/dateFormat", "getFormattedDateString")
-  @js.native
-  def getFormattedDateString_false(date: `false`, props: IDateFormatProps with IDatePickerBaseProps, ignoreRange: Boolean): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait IDateFormatProps extends StObject {

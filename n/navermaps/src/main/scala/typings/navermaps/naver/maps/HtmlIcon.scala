@@ -3,17 +3,15 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlIcon extends StObject {
   
-  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.native
+  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   
-  var content: String | HTMLElement = js.native
+  var content: String | HTMLElement
   
-  var size: js.UndefOr[Size | SizeLiteral] = js.native
+  var size: js.UndefOr[Size | SizeLiteral] = js.undefined
 }
 object HtmlIcon {
   

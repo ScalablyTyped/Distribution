@@ -6,7 +6,6 @@ import typings.reactNativeModalPopover.anon.Children
 import typings.reactNativeModalPopover.popoverGeometryMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverControllerMod {
@@ -54,18 +53,17 @@ object popoverControllerMod {
     def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PopoverControllerRenderProps extends StObject {
     
-    def closePopover(): Unit = js.native
+    def closePopover(): Unit
     
-    def openPopover(): Unit = js.native
+    def openPopover(): Unit
     
-    var popoverAnchorRect: Rect = js.native
+    var popoverAnchorRect: Rect
     
-    var popoverVisible: Boolean = js.native
+    var popoverVisible: Boolean
     
-    def setPopoverAnchor(ref: js.Any): Unit = js.native
+    def setPopoverAnchor(ref: js.Any): Unit
   }
   object PopoverControllerRenderProps {
     
@@ -101,10 +99,9 @@ object popoverControllerMod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    def children(props: PopoverControllerRenderProps): ReactElement = js.native
+    def children(props: PopoverControllerRenderProps): ReactElement
   }
   object Props {
     
@@ -122,12 +119,11 @@ object popoverControllerMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var popoverAnchor: Rect = js.native
+    var popoverAnchor: Rect
     
-    var showPopover: Boolean = js.native
+    var showPopover: Boolean
   }
   object State {
     

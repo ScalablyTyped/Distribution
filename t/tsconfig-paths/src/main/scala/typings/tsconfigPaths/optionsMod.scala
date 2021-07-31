@@ -2,7 +2,6 @@ package typings.tsconfigPaths
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
@@ -11,10 +10,9 @@ object optionsMod {
   @js.native
   val options: Options_ = js.native
   
-  @js.native
   trait Options_ extends StObject {
     
-    var cwd: String = js.native
+    var cwd: String
   }
   object Options_ {
     

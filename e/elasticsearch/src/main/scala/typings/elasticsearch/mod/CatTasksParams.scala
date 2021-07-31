@@ -2,29 +2,29 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatTasksParams extends GenericParams {
+trait CatTasksParams
+  extends StObject
+     with GenericParams {
   
-  var actions: js.UndefOr[NameList] = js.native
+  var actions: js.UndefOr[NameList] = js.undefined
   
-  var detailed: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.undefined
   
-  var format: String = js.native
+  var format: String
   
-  var h: js.UndefOr[NameList] = js.native
+  var h: js.UndefOr[NameList] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var nodeId: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.undefined
   
-  var parentNode: js.UndefOr[String] = js.native
+  var parentNode: js.UndefOr[String] = js.undefined
   
-  var parentTask: js.UndefOr[Double] = js.native
+  var parentTask: js.UndefOr[Double] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatTasksParams {
   

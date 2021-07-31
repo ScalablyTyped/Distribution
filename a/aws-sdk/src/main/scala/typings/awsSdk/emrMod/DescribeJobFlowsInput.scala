@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobFlowsInput extends StObject {
   
   /**
     * Return only job flows created after this date and time.
     */
-  var CreatedAfter: js.UndefOr[Date] = js.native
+  var CreatedAfter: js.UndefOr[Date] = js.undefined
   
   /**
     * Return only job flows created before this date and time.
     */
-  var CreatedBefore: js.UndefOr[Date] = js.native
+  var CreatedBefore: js.UndefOr[Date] = js.undefined
   
   /**
     * Return only job flows whose job flow ID is contained in this list.
     */
-  var JobFlowIds: js.UndefOr[XmlStringList] = js.native
+  var JobFlowIds: js.UndefOr[XmlStringList] = js.undefined
   
   /**
     * Return only job flows whose state is contained in this list.
     */
-  var JobFlowStates: js.UndefOr[JobFlowExecutionStateList] = js.native
+  var JobFlowStates: js.UndefOr[JobFlowExecutionStateList] = js.undefined
 }
 object DescribeJobFlowsInput {
   

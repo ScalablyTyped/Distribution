@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IMaskFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIMaskFilter
-  extends Instantiable0[IMaskFilter]
+  extends StObject
+     with Instantiable0[IMaskFilter]
      with Instantiable1[/* options */ Channel, IMaskFilter] {
   
   /**

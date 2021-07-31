@@ -4,37 +4,35 @@ import typings.sarif.mod.Log.version
 import typings.sarif.sarifStrings.`2Dot1Dot0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
   /**
     * The URI of the JSON schema corresponding to the version.
     */
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
   /**
     * References to external property files that share data between runs.
     */
-  var inlineExternalProperties: js.UndefOr[js.Array[ExternalProperties]] = js.native
+  var inlineExternalProperties: js.UndefOr[js.Array[ExternalProperties]] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the log file.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * The set of runs contained in this log file.
     */
-  var runs: js.Array[Run] = js.native
+  var runs: js.Array[Run]
   
   /**
     * The SARIF format version of this log file.
     */
-  var version: version = js.native
+  var version: version
 }
 object Log {
   

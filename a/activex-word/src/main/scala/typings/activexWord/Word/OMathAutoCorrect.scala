@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathAutoCorrect extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Entries: OMathAutoCorrectEntries = js.native
+  val Entries: OMathAutoCorrectEntries
   
-  val Functions: OMathRecognizedFunctions = js.native
+  val Functions: OMathRecognizedFunctions
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ReplaceText: Boolean = js.native
+  var ReplaceText: Boolean
   
-  var UseOutsideOMath: Boolean = js.native
+  var UseOutsideOMath: Boolean
   
   @JSName("Word.OMathAutoCorrect_typekey")
-  var WordDotOMathAutoCorrect_typekey: OMathAutoCorrect = js.native
+  var WordDotOMathAutoCorrect_typekey: OMathAutoCorrect
 }
 object OMathAutoCorrect {
   

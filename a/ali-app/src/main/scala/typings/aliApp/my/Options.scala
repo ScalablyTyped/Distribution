@@ -2,16 +2,14 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   // 当前小程序的 query
-  var path: String = js.native
+  var path: String
   
-  var query: js.Any = js.native
+  var query: js.Any
 }
 object Options {
   

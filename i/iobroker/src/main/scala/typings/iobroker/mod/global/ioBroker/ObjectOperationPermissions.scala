@@ -2,28 +2,26 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: implement
 /** Defines access rights for a single object type */
-@js.native
 trait ObjectOperationPermissions extends StObject {
   
   /** Whether a user may create objects of this type */
-  var create: Boolean = js.native
+  var create: Boolean
   
   /** Whether a user may delete objects of this type */
-  var delete: Boolean = js.native
+  var delete: Boolean
   
   /** Whether a user may enumerate objects of this type */
-  var list: Boolean = js.native
+  var list: Boolean
   
   /** Whether a user may read objects of this type */
-  var read: Boolean = js.native
+  var read: Boolean
   
   /** Whether a user may write objects of this type */
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object ObjectOperationPermissions {
   

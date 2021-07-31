@@ -13,14 +13,15 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryUtils.mod.Dsn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseclientMod {
   
   @JSImport("@sentry/core/dist/baseclient", "BaseClient")
   @js.native
-  abstract class BaseClient[B /* <: Backend */, O /* <: Options */] protected () extends Client[O] {
+  abstract class BaseClient[B /* <: Backend */, O /* <: Options */] protected ()
+    extends StObject
+       with Client[O] {
     /**
       * Initializes this client instance.
       *
@@ -57,7 +58,7 @@ object baseclientMod {
       * @param scope
       */
     /* protected */ def _captureEvent(event: Event): js.Thenable[js.UndefOr[String]] = js.native
-    /* protected */ def _captureEvent(event: Event, hint: js.UndefOr[scala.Nothing], scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
+    /* protected */ def _captureEvent(event: Event, hint: Unit, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
     /* protected */ def _captureEvent(event: Event, hint: EventHint): js.Thenable[js.UndefOr[String]] = js.native
     /* protected */ def _captureEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[js.UndefOr[String]] = js.native
     
@@ -108,7 +109,7 @@ object baseclientMod {
       * @returns A new event with more information.
       */
     /* protected */ def _prepareEvent(event: Event): js.Thenable[Event | Null] = js.native
-    /* protected */ def _prepareEvent(event: Event, scope: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event | Null] = js.native
+    /* protected */ def _prepareEvent(event: Event, scope: Unit, hint: EventHint): js.Thenable[Event | Null] = js.native
     /* protected */ def _prepareEvent(event: Event, scope: Scope): js.Thenable[Event | Null] = js.native
     /* protected */ def _prepareEvent(event: Event, scope: Scope, hint: EventHint): js.Thenable[Event | Null] = js.native
     
@@ -131,7 +132,7 @@ object baseclientMod {
       * @returns A SyncPromise that resolves with the event or rejects in case event was/will not be send.
       */
     /* protected */ def _processEvent(event: Event): js.Thenable[Event] = js.native
-    /* protected */ def _processEvent(event: Event, hint: js.UndefOr[scala.Nothing], scope: Scope): js.Thenable[Event] = js.native
+    /* protected */ def _processEvent(event: Event, hint: Unit, scope: Scope): js.Thenable[Event] = js.native
     /* protected */ def _processEvent(event: Event, hint: EventHint): js.Thenable[Event] = js.native
     /* protected */ def _processEvent(event: Event, hint: EventHint, scope: Scope): js.Thenable[Event] = js.native
     
@@ -150,15 +151,15 @@ object baseclientMod {
     /** Updates existing session based on the provided event */
     /* protected */ def _updateSessionFromEvent(session: Session, event: Event): Unit = js.native
     
-    def captureEvent(event: Event, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureEvent(event: Event, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureEvent(event: Event, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
-    def captureException(exception: js.Any, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureException(exception: js.Any, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureException(exception: js.Any, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: Severity, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Unit, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Unit, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Severity, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
     /**

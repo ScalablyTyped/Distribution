@@ -3,58 +3,58 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILegend extends IBase {
+trait ILegend
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var boxFill: js.UndefOr[String] = js.native
+  var boxFill: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var boxStroke: js.UndefOr[String] = js.native
+  var boxStroke: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var boxStrokeWidth: js.UndefOr[String] = js.native
+  var boxStrokeWidth: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var boxZIndex: js.UndefOr[Double] = js.native
+  var boxZIndex: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Boolean) */
-  var isVertical: js.UndefOr[Boolean] = js.native
+  var isVertical: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var itemSpacing: js.UndefOr[Double] = js.native
+  var itemSpacing: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var labelFont: js.UndefOr[String] = js.native
+  var labelFont: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /** [Method] toggle
     * @param show Boolean Whether to show or hide the legend.
     */
-  var toggle: js.UndefOr[js.Function1[/* show */ js.UndefOr[Boolean], Unit]] = js.native
+  var toggle: js.UndefOr[js.Function1[/* show */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ILegend {
   

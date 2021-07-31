@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.twineSugarcube.passageMod.Passage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryMod {
@@ -14,13 +13,14 @@ object jqueryMod {
     
     object JQuery {
       
-      @js.native
-      trait PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+      trait PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+        extends StObject
+           with TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
         
         /**
           * The incoming passage object.
           */
-        var passage: Passage = js.native
+        var passage: Passage
       }
       object PassageNavigationEvent {
         
@@ -46,20 +46,21 @@ object jqueryMod {
         }
         
         @scala.inline
-        implicit class PassageNavigationEventMutableBuilder[Self <: PassageNavigationEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        implicit class PassageNavigationEventMutableBuilder[Self <: PassageNavigationEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           @scala.inline
           def setPassage(value: Passage): Self = StObject.set(x, "passage", value.asInstanceOf[js.Any])
         }
       }
       
-      @js.native
-      trait PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] extends PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
+      trait PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
+        extends StObject
+           with PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] {
         
         /**
           * The element which holds (or will be holding in case of the ':passageinit' event) the redered passage.
           */
-        var content: HTMLElement = js.native
+        var content: HTMLElement
       }
       object PassageRenderingEvent {
         
@@ -86,30 +87,29 @@ object jqueryMod {
         }
         
         @scala.inline
-        implicit class PassageRenderingEventMutableBuilder[Self <: PassageRenderingEvent[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        implicit class PassageRenderingEventMutableBuilder[Self <: PassageRenderingEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           @scala.inline
           def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         }
       }
       
-      @js.native
       trait TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget] extends StObject {
         
         @JSName(":passagedisplay")
-        var Colonpassagedisplay: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+        var Colonpassagedisplay: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
         
         @JSName(":passageend")
-        var Colonpassageend: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+        var Colonpassageend: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
         
         @JSName(":passageinit")
-        var Colonpassageinit: PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+        var Colonpassageinit: PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
         
         @JSName(":passagerender")
-        var Colonpassagerender: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+        var Colonpassagerender: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
         
         @JSName(":passagestart")
-        var Colonpassagestart: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget] = js.native
+        var Colonpassagestart: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]
       }
       object TypeToTriggeredEventMap {
         
@@ -131,7 +131,7 @@ object jqueryMod {
         }
         
         @scala.inline
-        implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[_, _, _, _], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self with (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+        implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           @scala.inline
           def setColonpassagedisplay(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagedisplay", value.asInstanceOf[js.Any])

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLinePropertiesRequest extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait UpdateLinePropertiesRequest extends StObject {
     * for listing every field. For example to update the line solid fill color, set `fields` to `"lineFill.solidFill.color"`. To reset a property to its default value, include its field
     * name in the field mask but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The line properties to update. */
-  var lineProperties: js.UndefOr[LineProperties] = js.native
+  var lineProperties: js.UndefOr[LineProperties] = js.undefined
   
   /** The object ID of the line the update is applied to. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object UpdateLinePropertiesRequest {
   

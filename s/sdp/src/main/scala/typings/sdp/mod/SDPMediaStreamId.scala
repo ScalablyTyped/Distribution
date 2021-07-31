@@ -2,15 +2,13 @@ package typings.sdp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPMediaStreamId extends StObject {
   
-  var stream: String = js.native
+  var stream: String
   
-  var track: String = js.native
+  var track: String
 }
 object SDPMediaStreamId {
   

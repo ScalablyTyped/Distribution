@@ -2,13 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPixelPointGeometry extends IPixelGeometry {
+trait IPixelPointGeometry
+  extends StObject
+     with IPixelGeometry {
   
-  def getCoordinates(): js.Array[Double] = js.native
+  def getCoordinates(): js.Array[Double]
 }
 object IPixelPointGeometry {
   

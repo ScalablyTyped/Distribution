@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimePicker extends Widget_ {
+trait TimePicker
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -46,24 +47,23 @@ trait TimePicker extends Widget_ {
 }
 object TimePicker {
   
-  @js.native
   trait BeforeChangeEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the modified time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforeChangeEventArgs {
     
@@ -102,28 +102,27 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -168,28 +167,27 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** returns true when the value changed by user interaction otherwise returns false
       */
-    var isInteraction: js.UndefOr[Boolean] = js.native
+    var isInteraction: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the modified time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -234,24 +232,23 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -290,16 +287,15 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -326,20 +322,19 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -372,24 +367,23 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait FocusInEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusInEventArgs {
     
@@ -428,24 +422,23 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait FocusOutEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the current time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object FocusOutEventArgs {
     
@@ -484,182 +477,181 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires when the time value changed in the TimePicker.
       */
-    var beforeChange: js.UndefOr[js.Function1[/* e */ BeforeChangeEventArgs, Unit]] = js.native
+    var beforeChange: js.UndefOr[js.Function1[/* e */ BeforeChangeEventArgs, Unit]] = js.undefined
     
     /** Fires when the TimePicker popup before opened.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Fires when the time value changed in the TimePicker.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires when the TimePicker popup closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Fires when create TimePicker successfully.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for the TimePicker theme, which is used to customize.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when the TimePicker is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the list of time range to be disabled.
       * @Default {{}}
       */
-    var disableTimeRanges: js.UndefOr[js.Any] = js.native
+    var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the animation behavior in TimePicker.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Save current model value to browser cookies for maintaining states. When refreshing the TimePicker control page, the model value is applied from browser cookies or HTML 5local
       * storage.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the TimePicker as right to left alignment.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When the enableStrictMode is set as true it allows the value outside of the range and also indicate with red color border, otherwise it internally changed to the min or max range
       * value based an input value.
       * @Default {false}
       */
-    var enableStrictMode: js.UndefOr[Boolean] = js.native
+    var enableStrictMode: js.UndefOr[Boolean] = js.undefined
     
     /** When this property is set to false, it disables the TimePicker control.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Fires when the TimePicker control gets focus.
       */
-    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, Unit]] = js.undefined
     
     /** Fires when the TimePicker control get lost focus.
       */
-    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, Unit]] = js.undefined
     
     /** Defines the height of the TimePicker textbox.
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the step value for increment an hour value through arrow keys or mouse scroll.
       * @Default {1}
       */
-    var hourInterval: js.UndefOr[Double] = js.native
+    var hourInterval: js.UndefOr[Double] = js.undefined
     
     /** It allows to define the characteristics of the TimePicker control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the time interval between the two adjacent time values in the popup.
       * @Default {30}
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Defines the localization info used by the TimePicker.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum time value to the TimePicker.
       * @Default {11:59:59 PM}
       */
-    var maxTime: js.UndefOr[String] = js.native
+    var maxTime: js.UndefOr[String] = js.undefined
     
     /** Sets the minimum time value to the TimePicker.
       * @Default {12:00:00 AM}
       */
-    var minTime: js.UndefOr[String] = js.native
+    var minTime: js.UndefOr[String] = js.undefined
     
     /** Sets the step value for increment the minute value through arrow keys or mouse scroll.
       * @Default {1}
       */
-    var minutesInterval: js.UndefOr[Double] = js.native
+    var minutesInterval: js.UndefOr[Double] = js.undefined
     
     /** Fires when the TimePicker popup opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** Defines the height of the TimePicker popup.
       * @Default {191px}
       */
-    var popupHeight: js.UndefOr[String | Double] = js.native
+    var popupHeight: js.UndefOr[String | Double] = js.undefined
     
     /** Defines the width of the TimePicker popup.
       * @Default {auto}
       */
-    var popupWidth: js.UndefOr[String | Double] = js.native
+    var popupWidth: js.UndefOr[String | Double] = js.undefined
     
     /** Toggles the readonly state of the TimePicker. When the widget is readOnly, it doesnâ€™t allow your input.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the step value for increment the seconds value through arrow keys or mouse scroll.
       * @Default {1}
       */
-    var secondsInterval: js.UndefOr[Double] = js.native
+    var secondsInterval: js.UndefOr[Double] = js.undefined
     
     /** Fires when the value is selected from the TimePicker dropdown list.
       */
-    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, Unit]] = js.undefined
     
     /** shows or hides the drop down button in TimePicker.
       * @Default {true}
       */
-    var showPopupButton: js.UndefOr[Boolean] = js.native
+    var showPopupButton: js.UndefOr[Boolean] = js.undefined
     
     /** TimePicker is displayed with rounded corner when this property is set to true.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the time format displayed in the TimePicker.
       * @Default {h:mm tt}
       */
-    var timeFormat: js.UndefOr[String] = js.native
+    var timeFormat: js.UndefOr[String] = js.undefined
     
     /** Set the jQuery validation error message in TimePicker.
       * @Default {null}
       */
-    var validationMessages: js.UndefOr[js.Any] = js.native
+    var validationMessages: js.UndefOr[js.Any] = js.undefined
     
     /** Set the jQuery validation rules in TimePicker.
       * @Default {null}
       */
-    var validationRules: js.UndefOr[js.Any] = js.native
+    var validationRules: js.UndefOr[js.Any] = js.undefined
     
     /** Sets a specified time value on the TimePicker.
       * @Default {null}
       */
-    var value: js.UndefOr[String | Date] = js.native
+    var value: js.UndefOr[String | Date] = js.undefined
     
     /** Specifies the water mark text to be displayed in input text.
       * @Default {select a time}
       */
-    var watermarkText: js.UndefOr[String] = js.native
+    var watermarkText: js.UndefOr[String] = js.undefined
     
     /** Defines the width of the TimePicker textbox.
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -896,20 +888,19 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -942,24 +933,23 @@ object TimePicker {
     }
   }
   
-  @js.native
   trait SelectEventArgs extends StObject {
     
     /** returns the TimePicker model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the previously selected time value
       */
-    var prevTime: js.UndefOr[String] = js.native
+    var prevTime: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the selected time value
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SelectEventArgs {
     

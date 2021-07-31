@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ShapeTextReadingOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ShapeTextReadingOrder with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.ShapeTextReadingOrder & String] = js.native
   
-  /* "LeftToRight" */ val leftToRight: typings.officeJs.Excel.ShapeTextReadingOrder.leftToRight with String = js.native
+  /* "LeftToRight" */ val leftToRight: typings.officeJs.Excel.ShapeTextReadingOrder.leftToRight & String = js.native
   
-  /* "RightToLeft" */ val rightToLeft: typings.officeJs.Excel.ShapeTextReadingOrder.rightToLeft with String = js.native
+  /* "RightToLeft" */ val rightToLeft: typings.officeJs.Excel.ShapeTextReadingOrder.rightToLeft & String = js.native
 }

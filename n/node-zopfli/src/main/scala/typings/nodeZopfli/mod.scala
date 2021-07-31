@@ -5,7 +5,6 @@ import typings.node.streamMod.Transform
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,126 +13,101 @@ object mod {
   @js.native
   class ^ () extends Transform {
     def this(format: Format) = this()
-    def this(format: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(format: Unit, options: Options) = this()
     def this(format: Format, options: Options) = this()
   }
+  @JSImport("node-zopfli", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("node-zopfli", "compress")
-  @js.native
-  def compress(input: Buffer, format: Format): js.Promise[Buffer] = js.native
+  @scala.inline
+  def compress(input: Buffer, format: Format): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "compress")
-  @js.native
-  def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
-  @JSImport("node-zopfli", "compress")
-  @js.native
-  def compress(input: Buffer, format: Format, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def compress(input: Buffer, format: Format, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def compress(input: Buffer, format: Format, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "compress")
-  @js.native
+  @scala.inline
   def compress(
     input: Buffer,
     format: Format,
     options: Options,
     cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("node-zopfli", "createDeflate")
-  @js.native
-  def createDeflate(): Zopfli = js.native
-  @JSImport("node-zopfli", "createDeflate")
-  @js.native
-  def createDeflate(options: Options): Zopfli = js.native
+  @scala.inline
+  def createDeflate(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")().asInstanceOf[Zopfli]
+  @scala.inline
+  def createDeflate(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createDeflate")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @JSImport("node-zopfli", "createGzip")
-  @js.native
-  def createGzip(): Zopfli = js.native
-  @JSImport("node-zopfli", "createGzip")
-  @js.native
-  def createGzip(options: Options): Zopfli = js.native
+  @scala.inline
+  def createGzip(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")().asInstanceOf[Zopfli]
+  @scala.inline
+  def createGzip(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createGzip")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @JSImport("node-zopfli", "createZlib")
-  @js.native
-  def createZlib(): Zopfli = js.native
-  @JSImport("node-zopfli", "createZlib")
-  @js.native
-  def createZlib(options: Options): Zopfli = js.native
+  @scala.inline
+  def createZlib(): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")().asInstanceOf[Zopfli]
+  @scala.inline
+  def createZlib(options: Options): Zopfli = ^.asInstanceOf[js.Dynamic].applyDynamic("createZlib")(options.asInstanceOf[js.Any]).asInstanceOf[Zopfli]
   
   /* static member */
-  @JSImport("node-zopfli", "deflate")
-  @js.native
-  def deflate(input: Buffer): js.Promise[Buffer] = js.native
+  @scala.inline
+  def deflate(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "deflate")
-  @js.native
-  def deflate(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
-  @JSImport("node-zopfli", "deflate")
-  @js.native
-  def deflate(input: Buffer, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def deflate(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deflate(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "deflate")
-  @js.native
-  def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def deflate(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("node-zopfli", "deflateSync")
-  @js.native
-  def deflateSync(): Buffer = js.native
-  @JSImport("node-zopfli", "deflateSync")
-  @js.native
-  def deflateSync(options: Options): Buffer = js.native
+  @scala.inline
+  def deflateSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")().asInstanceOf[Buffer]
+  @scala.inline
+  def deflateSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("deflateSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* static member */
-  @JSImport("node-zopfli", "gzip")
-  @js.native
-  def gzip(input: Buffer): js.Promise[Buffer] = js.native
+  @scala.inline
+  def gzip(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "gzip")
-  @js.native
-  def gzip(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
-  @JSImport("node-zopfli", "gzip")
-  @js.native
-  def gzip(input: Buffer, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def gzip(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def gzip(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "gzip")
-  @js.native
-  def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def gzip(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gzip")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("node-zopfli", "gzipSync")
-  @js.native
-  def gzipSync(): Buffer = js.native
-  @JSImport("node-zopfli", "gzipSync")
-  @js.native
-  def gzipSync(options: Options): Buffer = js.native
+  @scala.inline
+  def gzipSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")().asInstanceOf[Buffer]
+  @scala.inline
+  def gzipSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("gzipSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* static member */
-  @JSImport("node-zopfli", "zlib")
-  @js.native
-  def zlib(input: Buffer): js.Promise[Buffer] = js.native
+  @scala.inline
+  def zlib(input: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "zlib")
-  @js.native
-  def zlib(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
-  @JSImport("node-zopfli", "zlib")
-  @js.native
-  def zlib(input: Buffer, options: Options): js.Promise[Buffer] = js.native
+  @scala.inline
+  def zlib(input: Buffer, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def zlib(input: Buffer, options: Options): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
   /* static member */
-  @JSImport("node-zopfli", "zlib")
-  @js.native
-  def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def zlib(input: Buffer, options: Options, cb: js.Function2[/* err */ Error, /* out */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("zlib")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("node-zopfli", "zlibSync")
-  @js.native
-  def zlibSync(): Buffer = js.native
-  @JSImport("node-zopfli", "zlibSync")
-  @js.native
-  def zlibSync(options: Options): Buffer = js.native
+  @scala.inline
+  def zlibSync(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")().asInstanceOf[Buffer]
+  @scala.inline
+  def zlibSync(options: Options): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("zlibSync")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeZopfli.nodeZopfliStrings.deflate
@@ -153,37 +127,36 @@ object mod {
     def zlib: typings.nodeZopfli.nodeZopfliStrings.zlib = "zlib".asInstanceOf[typings.nodeZopfli.nodeZopfliStrings.zlib]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * If true, splits the data in multiple deflate blocks with optimal choice for the block boundaries.
       * Block splitting gives better compression.
       */
-    var blocksplitting: js.UndefOr[Boolean] = js.native
+    var blocksplitting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, chooses the optimal block split points only after doing the iterative LZ77 compression.
       * If false, chooses the block split points first, then does iterative LZ77 on each individual block.
       * Depending on the file, either first or last gives the best compression.
       */
-    var blocksplittinglast: js.UndefOr[Boolean] = js.native
+    var blocksplittinglast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum amount of blocks to split into (0 for unlimited,
       * but this can give extreme results that hurt compression on some files).
       */
-    var blocksplittingmax: js.UndefOr[Double] = js.native
+    var blocksplittingmax: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum amount of times to rerun forward and backward pass to optimize LZ77 compression cost.
       * Good values: 10, 15 for small files, 5 for files over several MB in size or it will be too slow.
       */
-    var numiterations: js.UndefOr[Double] = js.native
+    var numiterations: js.UndefOr[Double] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var verbose_more: js.UndefOr[Boolean] = js.native
+    var verbose_more: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

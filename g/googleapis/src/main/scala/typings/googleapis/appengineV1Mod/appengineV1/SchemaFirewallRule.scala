@@ -2,26 +2,24 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single firewall rule that is evaluated against incoming traffic and
   * provides an action to take on matched requests.
   */
-@js.native
 trait SchemaFirewallRule extends StObject {
   
   /**
     * The action to take on matched requests.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * An optional string description of this rule. This field has a maximum
     * length of 100 characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A positive integer between 1, Int32.MaxValue-1 that defines the order of
@@ -30,7 +28,7 @@ trait SchemaFirewallRule extends StObject {
     * when no previous rule matches. Only the action of this rule can be
     * modified by the user.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * IP address or range, defined using CIDR notation, of requests that this
@@ -43,7 +41,7 @@ trait SchemaFirewallRule extends StObject {
     * Similarly, for IPv6, 2001:db8::1/32 is accepted as the same address as
     * 2001:db8::/32.
     */
-  var sourceRange: js.UndefOr[String] = js.native
+  var sourceRange: js.UndefOr[String] = js.undefined
 }
 object SchemaFirewallRule {
   

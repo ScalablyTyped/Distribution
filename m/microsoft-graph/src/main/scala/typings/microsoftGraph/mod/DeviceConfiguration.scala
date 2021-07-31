@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceConfiguration extends Entity {
+trait DeviceConfiguration
+  extends StObject
+     with Entity {
   
   // The list of assignments for the device configuration profile.
-  var assignments: js.UndefOr[NullableOption[js.Array[DeviceConfigurationAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[DeviceConfigurationAssignment]]] = js.undefined
   
   // DateTime the object was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Admin provided description of the Device Configuration.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device Configuration Setting State Device Summary
-  var deviceSettingStateSummaries: js.UndefOr[NullableOption[js.Array[SettingStateDeviceSummary]]] = js.native
+  var deviceSettingStateSummaries: js.UndefOr[NullableOption[js.Array[SettingStateDeviceSummary]]] = js.undefined
   
   // Device Configuration devices status overview
-  var deviceStatusOverview: js.UndefOr[NullableOption[DeviceConfigurationDeviceOverview]] = js.native
+  var deviceStatusOverview: js.UndefOr[NullableOption[DeviceConfigurationDeviceOverview]] = js.undefined
   
   // Device configuration installation status by device.
-  var deviceStatuses: js.UndefOr[NullableOption[js.Array[DeviceConfigurationDeviceStatus]]] = js.native
+  var deviceStatuses: js.UndefOr[NullableOption[js.Array[DeviceConfigurationDeviceStatus]]] = js.undefined
   
   // Admin provided name of the device configuration.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // DateTime the object was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // Device Configuration users status overview
-  var userStatusOverview: js.UndefOr[NullableOption[DeviceConfigurationUserOverview]] = js.native
+  var userStatusOverview: js.UndefOr[NullableOption[DeviceConfigurationUserOverview]] = js.undefined
   
   // Device configuration installation status by user.
-  var userStatuses: js.UndefOr[NullableOption[js.Array[DeviceConfigurationUserStatus]]] = js.native
+  var userStatuses: js.UndefOr[NullableOption[js.Array[DeviceConfigurationUserStatus]]] = js.undefined
   
   // Version of the device configuration.
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DeviceConfiguration {
   

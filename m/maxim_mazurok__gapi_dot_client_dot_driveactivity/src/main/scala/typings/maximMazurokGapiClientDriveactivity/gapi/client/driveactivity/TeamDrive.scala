@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamDrive extends StObject {
   
   /** This field is deprecated; please see `Drive.name` instead. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** This field is deprecated; please see `Drive.root` instead. */
-  var root: js.UndefOr[DriveItem] = js.native
+  var root: js.UndefOr[DriveItem] = js.undefined
   
   /** This field is deprecated; please see `Drive.title` instead. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TeamDrive {
   

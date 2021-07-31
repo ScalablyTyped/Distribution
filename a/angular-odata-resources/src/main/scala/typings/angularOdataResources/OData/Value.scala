@@ -2,27 +2,25 @@ package typings.angularOdataResources.OData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  /* private */ def escapeIllegalChars(haystack: js.Any): js.Any = js.native
+  /* private */ def escapeIllegalChars(haystack: js.Any): js.Any
   
-  def execute(): String = js.native
+  def execute(): String
   
-  def executeWithType(): js.Any = js.native
+  def executeWithType(): js.Any
   
-  def executeWithUndefinedType(): js.Any = js.native
+  def executeWithUndefinedType(): js.Any
   
-  /* private */ def generateDate(date: js.Any): js.Any = js.native
+  /* private */ def generateDate(date: js.Any): js.Any
   
-  var illegalChars: js.Any = js.native
+  var illegalChars: js.Any
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Value {
   

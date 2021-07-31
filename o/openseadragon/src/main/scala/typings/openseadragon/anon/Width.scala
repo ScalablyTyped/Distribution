@@ -2,15 +2,13 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Width extends StObject {
   
-  var Height: String = js.native
+  var Height: String
   
-  var Width: String = js.native
+  var Width: String
 }
 object Width {
   

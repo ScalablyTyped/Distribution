@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountLimitsInput extends StObject {
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[typings.awsSdk.elbMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.elbMod.Marker] = js.undefined
   
   /**
     * The maximum number of results to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.elbMod.PageSize] = js.native
+  var PageSize: js.UndefOr[typings.awsSdk.elbMod.PageSize] = js.undefined
 }
 object DescribeAccountLimitsInput {
   

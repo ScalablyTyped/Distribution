@@ -2,44 +2,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VolumeMount describes a mounting of a Volume within a container.
   */
-@js.native
 trait VolumeMount extends StObject {
   
   /**
     * Path within the container at which the volume should be mounted.  Must not contain ':'.
     */
-  var mountPath: String = js.native
+  var mountPath: String
   
   /**
     * mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
     */
-  var mountPropagation: String = js.native
+  var mountPropagation: String
   
   /**
     * This must match the Name of a Volume.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).
     */
-  var subPath: String = js.native
+  var subPath: String
   
   /**
     * Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath are mutually exclusive.
     */
-  var subPathExpr: String = js.native
+  var subPathExpr: String
 }
 object VolumeMount {
   

@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *
   **/
-@js.native
 trait ICurrentUserResource extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait ICurrentUserResource extends StObject {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def changePassword(changePasswordArgs: js.Any): IPromise[IResourcePromise] = js.native
+  def changePassword(changePasswordArgs: js.Any): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -37,7 +35,7 @@ trait ICurrentUserResource extends StObject {
     * @description
     * Gets the configuration of the user membership provider which is used to configure the change password form
     */
-  def getMembershipProviderConfig(): js.Any = js.native
+  def getMembershipProviderConfig(): js.Any
 }
 object ICurrentUserResource {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,22 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface should be supported by objects which implement {@link XActiveDataSource} or {@link XActiveDataSink} .
   */
-@js.native
-trait XActiveDataControl extends XInterface {
+trait XActiveDataControl
+  extends StObject
+     with XInterface {
   
   /**
     * registers an object to receive events from this data source.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def addListener(aListener: XStreamListener): Unit = js.native
+  def addListener(aListener: XStreamListener): Unit
   
   /**
     * unregisters an object to receive events from this data source.
     *
     * It is suggested to allow multiple registration of the same listener, thus for each time a listener is added, it has to be removed.
     */
-  def removeListener(aListener: XStreamListener): Unit = js.native
+  def removeListener(aListener: XStreamListener): Unit
   
   /**
     * starts I/O.
@@ -36,14 +36,14 @@ trait XActiveDataControl extends XInterface {
     *
     * This method does not block the thread, so reading is generally not finished when the method returns.
     */
-  def start(): Unit = js.native
+  def start(): Unit
   
   /**
     * does a weak abort.
     *
     * It closes all connected resources and calls XInputStream::close() or XOutputStream::close() and fires the {@link XStreamListener.terminated()} -event.
     */
-  def terminate(): Unit = js.native
+  def terminate(): Unit
 }
 object XActiveDataControl {
   

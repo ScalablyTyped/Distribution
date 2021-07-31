@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3D` extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait `3D` extends StObject {
     *   }
     * }
     */
-  var `3D`: js.UndefOr[Features] = js.native
+  var `3D`: js.UndefOr[Features] = js.undefined
   
   /**
     * The 'plugins' requirement indicates if an app requires NPAPI to run.
@@ -40,7 +38,7 @@ trait `3D` extends StObject {
     *   }
     * }
     */
-  var plugins: js.UndefOr[Npapi] = js.native
+  var plugins: js.UndefOr[Npapi] = js.undefined
 }
 object `3D` {
   

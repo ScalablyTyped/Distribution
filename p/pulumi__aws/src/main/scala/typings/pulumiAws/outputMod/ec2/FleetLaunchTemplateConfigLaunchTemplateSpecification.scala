@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetLaunchTemplateConfigLaunchTemplateSpecification extends StObject {
   
   /**
     * ID of the launch template.
     */
-  var launchTemplateId: js.UndefOr[String] = js.native
+  var launchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the launch template.
     */
-  var launchTemplateName: js.UndefOr[String] = js.native
+  var launchTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * Version number of the launch template.
     */
-  var version: String = js.native
+  var version: String
 }
 object FleetLaunchTemplateConfigLaunchTemplateSpecification {
   

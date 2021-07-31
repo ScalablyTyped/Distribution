@@ -4,52 +4,51 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Supports random access of data in input and output streams. */
-@js.native
 trait IRandomAccessStream
-  extends IInputStream
+  extends StObject
+     with IInputStream
      with IOutputStream {
   
   /** Gets a value that indicates whether the stream can be read from. */
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
   /** Gets a value that indicates whether the stream can be written to. */
-  var canWrite: Boolean = js.native
+  var canWrite: Boolean
   
   /**
     * Creates a new instance of a IRandomAccessStream over the same resource as the current stream.
     * @return The new stream. The initial, internal position of the stream is 0.
     */
-  def cloneStream(): IRandomAccessStream = js.native
+  def cloneStream(): IRandomAccessStream
   
   /**
     * Returns an input stream at a specified location in a stream.
     * @param position The location in the stream at which to begin.
     * @return The input stream.
     */
-  def getInputStreamAt(position: Double): IInputStream = js.native
+  def getInputStreamAt(position: Double): IInputStream
   
   /**
     * Returns an output stream at a specified location in a stream.
     * @param position The location in the output stream at which to begin.
     * @return The output stream.
     */
-  def getOutputStreamAt(position: Double): IOutputStream = js.native
+  def getOutputStreamAt(position: Double): IOutputStream
   
   /** Gets the byte offset of the stream. */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Sets the position of the stream to the specified value.
     * @param position The new position of the stream.
     */
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
   /** Gets or sets the size of the random access stream. */
-  var size: Double = js.native
+  var size: Double
 }
 object IRandomAccessStream {
   

@@ -4,26 +4,26 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables a {@link SpreadsheetView} to freeze columns and rows of the view. */
-@js.native
-trait XViewFreezable extends XInterface {
+trait XViewFreezable
+  extends StObject
+     with XInterface {
   
   /**
     * freezes panes with the specified number of columns and rows.
     *
     * To freeze only horizontally, specify nRows as 0. To freeze only vertically, specify nColumns as 0.
     */
-  def freezeAtPosition(nColumns: Double, nRows: Double): Unit = js.native
+  def freezeAtPosition(nColumns: Double, nRows: Double): Unit
   
   /**
     * returns `TRUE` if the view has frozen panes.
     *
     * Only one of {@link XViewSplitable.getIsWindowSplit()} and {@link XViewFreezable.hasFrozenPanes()} can be `TRUE` .
     */
-  def hasFrozenPanes(): Boolean = js.native
+  def hasFrozenPanes(): Boolean
 }
 object XViewFreezable {
   

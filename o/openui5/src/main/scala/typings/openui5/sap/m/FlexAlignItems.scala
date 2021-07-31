@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,20 +14,32 @@ sealed trait FlexAlignItems extends StObject
 object FlexAlignItems extends StObject {
   
   @js.native
-  sealed trait Baseline extends FlexAlignItems
+  sealed trait Baseline
+    extends StObject
+       with FlexAlignItems
   
   @js.native
-  sealed trait Center extends FlexAlignItems
+  sealed trait Center
+    extends StObject
+       with FlexAlignItems
   
   @js.native
-  sealed trait End extends FlexAlignItems
+  sealed trait End
+    extends StObject
+       with FlexAlignItems
   
   @js.native
-  sealed trait Inherit extends FlexAlignItems
+  sealed trait Inherit
+    extends StObject
+       with FlexAlignItems
   
   @js.native
-  sealed trait Start extends FlexAlignItems
+  sealed trait Start
+    extends StObject
+       with FlexAlignItems
   
   @js.native
-  sealed trait Stretch extends FlexAlignItems
+  sealed trait Stretch
+    extends StObject
+       with FlexAlignItems
 }

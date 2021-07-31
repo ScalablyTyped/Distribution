@@ -1,11 +1,9 @@
 package typings.rdfLoaderCode
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rdfLoaderCode.anon.Register
 import typings.rdfLoadersRegistry.mod.Loader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecmaScriptMod extends Shortcut {
@@ -14,14 +12,18 @@ object ecmaScriptMod extends Shortcut {
   @js.native
   val ^ : EcmaScriptLoader = js.native
   
-  type EcmaScriptLoader = (Loader[_, Options]) with Register
-  
   @js.native
+  trait EcmaScriptLoader
+    extends Loader[js.Any, Options] {
+    
+    def register(registry: typings.rdfLoadersRegistry.mod.^): Unit = js.native
+  }
+  
   trait Options extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

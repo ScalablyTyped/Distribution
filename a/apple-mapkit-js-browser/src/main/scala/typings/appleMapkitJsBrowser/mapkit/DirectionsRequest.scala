@@ -4,45 +4,43 @@ import typings.appleMapkitJsBrowser.mapkit.Directions.Transport
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The requested start and end points for a route, as well as the planned mode of transportation.
   */
-@js.native
 trait DirectionsRequest extends StObject {
   
   /**
     * The arrival date for the trip.
     */
-  var arrivalDate: js.UndefOr[Date] = js.native
+  var arrivalDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The departure date for the trip.
     */
-  var departureDate: js.UndefOr[Date] = js.native
+  var departureDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The end point for routing directions.
     */
-  var destination: String | Coordinate | Place = js.native
+  var destination: String | Coordinate | Place
   
   /**
     * The start point for routing directions.
     */
-  var origin: String | Coordinate | Place = js.native
+  var origin: String | Coordinate | Place
   
   /**
     * A Boolean value that indicates whether the server should return multiple
     * routes when they are available.
     */
-  var requestsAlternateRoutes: js.UndefOr[Boolean] = js.native
+  var requestsAlternateRoutes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The mode of transportation to which directions should apply.
     */
-  var transportType: js.UndefOr[Transport] = js.native
+  var transportType: js.UndefOr[Transport] = js.undefined
 }
 object DirectionsRequest {
   

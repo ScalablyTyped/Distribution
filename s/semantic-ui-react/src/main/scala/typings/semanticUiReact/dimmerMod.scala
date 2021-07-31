@@ -8,7 +8,6 @@ import typings.semanticUiReact.dimmerDimmerMod.DimmerComponent
 import typings.semanticUiReact.dimmerDimmerMod.DimmerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dimmerMod {

@@ -2,7 +2,6 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * https://github.com/Project-OSRM/osrm-backend/blob/master/docs/http.md#intersection-object
   */
-@js.native
 trait Intersection extends StObject {
   
   /**
     * A list of bearing values (e.g. [0,90,180,270]) that are available at the intersection.
     * The bearings describe all available roads at the intersection. Values are between 0-359 (0=true north)
     */
-  var bearings: js.Array[Double] = js.native
+  var bearings: js.Array[Double]
   
   /**
     * An array of strings signifying the classes (as specified in the profile) of the road exiting the intersection.
     */
-  var classes: js.Array[String] = js.native
+  var classes: js.Array[String]
   
   /**
     * A list of entry flags, corresponding in a 1:1 relationship to the bearings.
     * A value of true indicates that the respective road could be entered on a valid route.
     * false indicates that the turn onto the respective road would violate a restriction.
     */
-  var entry: js.Array[String] = js.native
+  var entry: js.Array[String]
   
   /**
     * index into bearings/entry array. Used to calculate the bearing just before the turn.
@@ -39,25 +37,25 @@ trait Intersection extends StObject {
     * Bearings are given relative to the intersection. To get the bearing in the direction of driving, the bearing has to be rotated by a value of 180.
     * The value is not supplied for depart maneuvers.
     */
-  var in: Double = js.native
+  var in: Double
   
   /**
     * Array of Lane objects that denote the available turn lanes at the intersection.
     * If no lane information is available for an intersection, the lanes property will not be present.
     */
-  var lanes: Lane = js.native
+  var lanes: Lane
   
   /**
     * A [longitude, latitude] pair describing the location of the turn.
     */
-  var location: Coordinate = js.native
+  var location: Coordinate
   
   /**
     * index into the bearings/entry array. Used to extract the bearing just after the turn.
     * Namely, The clockwise angle from true north to the direction of travel immediately after the maneuver/passing the intersection.
     * The value is not supplied for arrive maneuvers.
     */
-  var out: Double = js.native
+  var out: Double
 }
 object Intersection {
   

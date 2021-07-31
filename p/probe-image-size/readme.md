@@ -9,10 +9,10 @@ Get image size without full download (JPG, GIF, PNG, WebP, BMP, TIFF, PSD)
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | probe-image-size |
-| Keywords           | image, size, jpg, jpeg, gif, png, webp, tiff, bmp, svg, psd |
-| # releases         | 5 |
-| # dependents       | 78 |
-| # downloads        | 16977409 |
+| Keywords           | image, size, jpg, jpeg, ico, gif, png, webp, tiff, bmp, svg, psd |
+| # releases         | 6 |
+| # dependents       | 95 |
+| # downloads        | 20893376 |
 | # stars            | 3 |
 
 ## Links

@@ -12,7 +12,7 @@ A simple decorator for deprecated methods and properties.
 | Keywords           | deprecated, decorator, typescript, babel, es7 |
 | # releases         | 0 |
 | # dependents       | 33 |
-| # downloads        | 49543759 |
+| # downloads        | 58458079 |
 | # stars            | 0 |
 
 ## Links

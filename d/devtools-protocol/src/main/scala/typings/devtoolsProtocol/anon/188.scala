@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Storage.UntrackCacheStorageForOriginRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `188` extends StObject {
   
-  var paramsType: js.Array[UntrackCacheStorageForOriginRequest] = js.native
+  var paramsType: js.Array[UntrackCacheStorageForOriginRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `188` {
   

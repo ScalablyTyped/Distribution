@@ -7,68 +7,66 @@ import typings.maximMazurokGapiClientBlogger.anon.TotalItems
 import typings.maximMazurokGapiClientBlogger.anon.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Post extends StObject {
   
   /** The author of this Post. */
-  var author: js.UndefOr[DisplayName] = js.native
+  var author: js.UndefOr[DisplayName] = js.undefined
   
   /** Data about the blog containing this Post. */
-  var blog: js.UndefOr[Id] = js.native
+  var blog: js.UndefOr[Id] = js.undefined
   
   /** The content of the Post. May contain HTML markup. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The JSON meta-data for the Post. */
-  var customMetaData: js.UndefOr[String] = js.native
+  var customMetaData: js.UndefOr[String] = js.undefined
   
   /** Etag of the resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The identifier of this Post. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Display image for the Post. */
-  var images: js.UndefOr[js.Array[Url]] = js.native
+  var images: js.UndefOr[js.Array[Url]] = js.undefined
   
   /** The kind of this entity. Always blogger#post. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The list of labels this Post was tagged with. */
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The location for geotagged posts. */
-  var location: js.UndefOr[Lat] = js.native
+  var location: js.UndefOr[Lat] = js.undefined
   
   /** RFC 3339 date-time when this Post was published. */
-  var published: js.UndefOr[String] = js.native
+  var published: js.UndefOr[String] = js.undefined
   
   /** Comment control and display setting for readers of this post. */
-  var readerComments: js.UndefOr[String] = js.native
+  var readerComments: js.UndefOr[String] = js.undefined
   
   /** The container of comments on this Post. */
-  var replies: js.UndefOr[TotalItems] = js.native
+  var replies: js.UndefOr[TotalItems] = js.undefined
   
   /** The API REST URL to fetch this resource from. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Status of the post. Only set for admin-level requests. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The title of the Post. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The title link URL, similar to atom's related link. */
-  var titleLink: js.UndefOr[String] = js.native
+  var titleLink: js.UndefOr[String] = js.undefined
   
   /** RFC 3339 date-time when this Post was last updated. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The URL where this Post is displayed. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Post {
   

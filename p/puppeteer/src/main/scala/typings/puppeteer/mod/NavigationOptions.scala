@@ -2,17 +2,17 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationOptions extends Timeoutable {
+trait NavigationOptions
+  extends StObject
+     with Timeoutable {
   
   /**
     * When to consider navigation succeeded.
     * @default load Navigation is consider when the `load` event is fired.
     */
-  var waitUntil: js.UndefOr[LoadEvent | js.Array[LoadEvent]] = js.native
+  var waitUntil: js.UndefOr[LoadEvent | js.Array[LoadEvent]] = js.undefined
 }
 object NavigationOptions {
   

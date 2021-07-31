@@ -2,10 +2,8 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExp extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait RegExp extends StObject {
     *
     * If no flags are set, the value is the empty string.
     */
-  var flags: java.lang.String = js.native
+  var flags: java.lang.String
 }
 object RegExp {
   

@@ -5,15 +5,13 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkedDateCustomStyles extends StObject {
   
-  var container: StyleProp[ViewStyle] = js.native
+  var container: StyleProp[ViewStyle]
   
-  var text: StyleProp[TextStyle] = js.native
+  var text: StyleProp[TextStyle]
 }
 object MarkedDateCustomStyles {
   

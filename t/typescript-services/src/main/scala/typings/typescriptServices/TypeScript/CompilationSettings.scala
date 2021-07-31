@@ -2,49 +2,47 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilationSettings extends StObject {
   
-  var allowAutomaticSemicolonInsertion: Boolean = js.native
+  var allowAutomaticSemicolonInsertion: Boolean
   
-  var codeGenTarget: LanguageVersion = js.native
+  var codeGenTarget: LanguageVersion
   
-  var codepage: Double = js.native
+  var codepage: Double
   
-  var createFileLog: Boolean = js.native
+  var createFileLog: Boolean
   
-  var gatherDiagnostics: Boolean = js.native
+  var gatherDiagnostics: Boolean
   
-  var generateDeclarationFiles: Boolean = js.native
+  var generateDeclarationFiles: Boolean
   
-  var mapRoot: String = js.native
+  var mapRoot: String
   
-  var mapSourceFiles: Boolean = js.native
+  var mapSourceFiles: Boolean
   
-  var moduleGenTarget: ModuleGenTarget = js.native
+  var moduleGenTarget: ModuleGenTarget
   
-  var noImplicitAny: Boolean = js.native
+  var noImplicitAny: Boolean
   
-  var noLib: Boolean = js.native
+  var noLib: Boolean
   
-  var noResolve: Boolean = js.native
+  var noResolve: Boolean
   
-  var outDirOption: String = js.native
+  var outDirOption: String
   
-  var outFileOption: String = js.native
+  var outFileOption: String
   
-  var propagateEnumConstants: Boolean = js.native
+  var propagateEnumConstants: Boolean
   
-  var removeComments: Boolean = js.native
+  var removeComments: Boolean
   
-  var sourceRoot: String = js.native
+  var sourceRoot: String
   
-  var useCaseSensitiveFileResolution: Boolean = js.native
+  var useCaseSensitiveFileResolution: Boolean
   
-  var watch: Boolean = js.native
+  var watch: Boolean
 }
 object CompilationSettings {
   

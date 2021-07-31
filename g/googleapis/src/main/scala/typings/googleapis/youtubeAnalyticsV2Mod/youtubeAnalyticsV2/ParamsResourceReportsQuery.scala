@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceReportsQuery extends StandardParameters {
+trait ParamsResourceReportsQuery
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The currency to which financial metrics should be converted. The default
@@ -23,7 +23,7 @@ trait ParamsResourceReportsQuery extends StandardParameters {
     * flag will be ignored. Responds with an error if the specified currency is
     * not recognized.", pattern: [A-Z]{3}
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of YouTube Analytics dimensions, such as `views`
@@ -33,13 +33,13 @@ trait ParamsResourceReportsQuery extends StandardParameters {
     * reports. Also see the [Dimensions](/youtube/analytics/v2/dimsmets/dims)
     * document for definitions of those dimensions." pattern: [0-9a-zA-Z,]+
     */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /**
     * The end date for fetching YouTube Analytics data. The value should be in
     * `YYYY-MM-DD` format. required: true, pattern: [0-9]{4}-[0-9]{2}-[0-9]{2}
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * A list of filters that should be applied when retrieving YouTube
@@ -53,7 +53,7 @@ trait ParamsResourceReportsQuery extends StandardParameters {
     * `video==dMH0bHeiRNg;country==IT` restricts the result set to include data
     * for the given video in Italy.",
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the YouTube channel or content owner for which you are
@@ -64,18 +64,18 @@ trait ParamsResourceReportsQuery extends StandardParameters {
     * `contentOwner==OWNER_NAME`, where `OWNER_NAME` is the CMS name   of the
     * content owner. required: true, pattern: [a-zA-Z]+==[a-zA-Z0-9_+-]+
     */
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true historical data (i.e. channel data from before the linking
     * of the channel to the content owner) will be retrieved.",
     */
-  var includeHistoricalChannelData: js.UndefOr[Boolean] = js.native
+  var includeHistoricalChannelData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of rows to include in the response.", minValue: 1
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A comma-separated list of YouTube Analytics metrics, such as `views` or
@@ -86,28 +86,28 @@ trait ParamsResourceReportsQuery extends StandardParameters {
     * document for definitions of those metrics. required: true, pattern:
     * [0-9a-zA-Z,]+
     */
-  var metrics: js.UndefOr[String] = js.native
+  var metrics: js.UndefOr[String] = js.undefined
   
   /**
     * A comma-separated list of dimensions or metrics that determine the sort
     * order for YouTube Analytics data. By default the sort order is ascending.
     * The '`-`' prefix causes descending sort order.", pattern: [-0-9a-zA-Z,]+
     */
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
   /**
     * The start date for fetching YouTube Analytics data. The value should be
     * in `YYYY-MM-DD` format. required: true, pattern:
     * "[0-9]{4}-[0-9]{2}-[0-9]{2}
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * An index of the first entity to retrieve. Use this parameter as a
     * pagination mechanism along with the max-results parameter (one-based,
     * inclusive).", minValue: 1
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceReportsQuery {
   

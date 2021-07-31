@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Social
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,8 +12,12 @@ sealed trait SocialFeedSortOrder extends StObject
 object SocialFeedSortOrder extends StObject {
   
   @js.native
-  sealed trait byCreatedTime extends SocialFeedSortOrder
+  sealed trait byCreatedTime
+    extends StObject
+       with SocialFeedSortOrder
   
   @js.native
-  sealed trait byModifiedTime extends SocialFeedSortOrder
+  sealed trait byModifiedTime
+    extends StObject
+       with SocialFeedSortOrder
 }

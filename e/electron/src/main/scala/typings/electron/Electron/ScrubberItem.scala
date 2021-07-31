@@ -2,22 +2,20 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrubberItem extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/scrubber-item
   /**
     * The image to appear in this item.
     */
-  var icon: js.UndefOr[NativeImage_] = js.native
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   
   /**
     * The text to appear in this item.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object ScrubberItem {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderCustomerMarketingRightsInfo extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait OrderCustomerMarketingRightsInfo extends StObject {
     * their most recent order, they can be subscribed to marketing emails. Customers who have chosen `denied` must not be subscribed, or must be unsubscribed if already opted-in.
     * Acceptable values are: - "`denied`" - "`granted`"
     */
-  var explicitMarketingPreference: js.UndefOr[String] = js.native
+  var explicitMarketingPreference: js.UndefOr[String] = js.undefined
   
   /** Timestamp when last time marketing preference was updated. Could be empty, if user wasn't offered a selection yet. */
-  var lastUpdatedTimestamp: js.UndefOr[String] = js.native
+  var lastUpdatedTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Email address that can be used for marketing purposes. The field may be empty even if `explicitMarketingPreference` is 'granted'. This happens when retrieving an old order from the
     * customer who deleted their account.
     */
-  var marketingEmailAddress: js.UndefOr[String] = js.native
+  var marketingEmailAddress: js.UndefOr[String] = js.undefined
 }
 object OrderCustomerMarketingRightsInfo {
   

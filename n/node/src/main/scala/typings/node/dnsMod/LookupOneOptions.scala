@@ -3,14 +3,14 @@ package typings.node.dnsMod
 import typings.node.nodeBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LookupOneOptions extends LookupOptions {
+trait LookupOneOptions
+  extends StObject
+     with LookupOptions {
   
   @JSName("all")
-  var all_LookupOneOptions: js.UndefOr[`false`] = js.native
+  var all_LookupOneOptions: js.UndefOr[`false`] = js.undefined
 }
 object LookupOneOptions {
   

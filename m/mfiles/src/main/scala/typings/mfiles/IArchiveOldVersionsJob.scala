@@ -3,35 +3,33 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFExportContentFlag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IArchiveOldVersionsJob extends StObject {
   
-  var AtLeastNDaysOlder: Double = js.native
+  var AtLeastNDaysOlder: Double
   
-  var AtLeastNVersionsOlder: Double = js.native
+  var AtLeastNVersionsOlder: Double
   
-  var CheckedInBefore: ITimestamp = js.native
+  var CheckedInBefore: ITimestamp
   
-  def Clone(): IArchiveOldVersionsJob = js.native
+  def Clone(): IArchiveOldVersionsJob
   
-  var Flags: MFExportContentFlag = js.native
+  var Flags: MFExportContentFlag
   
-  var Impersonation: IImpersonation = js.native
+  var Impersonation: IImpersonation
   
-  var MarkedForArchiving: Boolean = js.native
+  var MarkedForArchiving: Boolean
   
-  var NoVersionTag: Boolean = js.native
+  var NoVersionTag: Boolean
   
-  var TargetLocation: String = js.native
+  var TargetLocation: String
   
-  var UseAtLeastNDaysOlder: Boolean = js.native
+  var UseAtLeastNDaysOlder: Boolean
   
-  var UseAtLeastNVersionsOlder: Boolean = js.native
+  var UseAtLeastNVersionsOlder: Boolean
   
-  var UseCheckedInBefore: Boolean = js.native
+  var UseCheckedInBefore: Boolean
 }
 object IArchiveOldVersionsJob {
   

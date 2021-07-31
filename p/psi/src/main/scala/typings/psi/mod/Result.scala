@@ -2,27 +2,25 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  var analysisUTCTimestamp: String = js.native
+  var analysisUTCTimestamp: String
   
-  var captchaResult: String = js.native
+  var captchaResult: String
   
-  var id: String = js.native
+  var id: String
   
-  var kind: String = js.native
+  var kind: String
   
-  var lighthouseResult: LighthouseResult = js.native
+  var lighthouseResult: LighthouseResult
   
-  var loadingExperience: Experience = js.native
+  var loadingExperience: Experience
   
-  var originLoadingExperience: Experience = js.native
+  var originLoadingExperience: Experience
   
-  var version: Version = js.native
+  var version: Version
 }
 object Result {
   

@@ -2,8 +2,7 @@ package typings.vegaLite
 
 import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaLite.specBaseMod.BaseSpec
-import typings.vegaLite.specBaseMod.ColumnMixins
-import typings.vegaLite.specBaseMod.GenericCompositionLayout
+import typings.vegaLite.specBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specLayerMod.LayerSpec
 import typings.vegaLite.specMod.GenericSpec
@@ -11,26 +10,28 @@ import typings.vegaLite.specUnitMod.FacetedUnitSpec
 import typings.vegaLite.specUnitMod.UnitSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repeatMod {
   
-  @JSImport("vega-lite/build/src/spec/repeat", "isLayerRepeatSpec")
+  @JSImport("vega-lite/build/src/spec/repeat", JSImport.Namespace)
   @js.native
-  def isLayerRepeatSpec(spec: RepeatSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/spec/repeat", "isRepeatSpec")
-  @js.native
-  def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = js.native
+  @scala.inline
+  def isLayerRepeatSpec(spec: RepeatSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayerRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.LayerRepeatSpec */ Boolean]
   
-  @js.native
-  trait LayerRepeatMapping extends RepeatMapping {
+  @scala.inline
+  def isRepeatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/repeat.RepeatSpec */ Boolean]
+  
+  trait LayerRepeatMapping
+    extends StObject
+       with RepeatMapping {
     
     /**
       * An array of fields to be repeated as layers.
       */
-    var layer: js.Array[String] = js.native
+    var layer: js.Array[String]
   }
   object LayerRepeatMapping {
     
@@ -51,11 +52,10 @@ object repeatMod {
     }
   }
   
-  @js.native
   trait LayerRepeatSpec
-    extends GenericCompositionLayout
+    extends StObject
        with BaseSpec
-       with ColumnMixins
+       with GenericCompositionLayoutWithColumns
        with ResolveMixins
        with RepeatSpec {
     
@@ -64,12 +64,12 @@ object repeatMod {
       * 1) An array of fields to be repeated. If `"repeat"` is an array, the field can be referred to as `{"repeat": "repeat"}`. The repeated views are laid out in a wrapped row. You can set the number of columns to control the wrapping.
       * 2) An object that maps `"row"` and/or `"column"` to the listed fields to be repeated along the particular orientations. The objects `{"repeat": "row"}` and `{"repeat": "column"}` can be used to refer to the repeated field respectively.
       */
-    var repeat: LayerRepeatMapping = js.native
+    var repeat: LayerRepeatMapping
     
     /**
       * A specification of the view that gets repeated.
       */
-    var spec: LayerSpec | UnitSpec = js.native
+    var spec: LayerSpec | UnitSpec
   }
   object LayerRepeatSpec {
     
@@ -90,11 +90,10 @@ object repeatMod {
     }
   }
   
-  @js.native
   trait NonLayerRepeatSpec
-    extends GenericCompositionLayout
+    extends StObject
        with BaseSpec
-       with ColumnMixins
+       with GenericCompositionLayoutWithColumns
        with ResolveMixins
        with RepeatSpec {
     
@@ -103,12 +102,12 @@ object repeatMod {
       * 1) An array of fields to be repeated. If `"repeat"` is an array, the field can be referred to as `{"repeat": "repeat"}`. The repeated views are laid out in a wrapped row. You can set the number of columns to control the wrapping.
       * 2) An object that maps `"row"` and/or `"column"` to the listed fields to be repeated along the particular orientations. The objects `{"repeat": "row"}` and `{"repeat": "column"}` can be used to refer to the repeated field respectively.
       */
-    var repeat: js.Array[String] | RepeatMapping = js.native
+    var repeat: js.Array[String] | RepeatMapping
     
     /**
       * A specification of the view that gets repeated.
       */
-    var spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName] = js.native
+    var spec: GenericSpec[FacetedUnitSpec, LayerSpec, RepeatSpec, FieldName]
   }
   object NonLayerRepeatSpec {
     
@@ -135,18 +134,17 @@ object repeatMod {
     }
   }
   
-  @js.native
   trait RepeatMapping extends StObject {
     
     /**
       * An array of fields to be repeated horizontally.
       */
-    var column: js.UndefOr[js.Array[String]] = js.native
+    var column: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An array of fields to be repeated vertically.
       */
-    var row: js.UndefOr[js.Array[String]] = js.native
+    var row: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RepeatMapping {
     

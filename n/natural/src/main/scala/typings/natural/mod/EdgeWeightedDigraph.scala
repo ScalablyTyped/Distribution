@@ -2,17 +2,15 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeWeightedDigraph extends StObject {
   
-  def add(start: Double, end: Double, weight: Double): Unit = js.native
+  def add(start: Double, end: Double, weight: Double): Unit
   
-  def e(): Double = js.native
+  def e(): Double
   
-  def v(): Double = js.native
+  def v(): Double
 }
 object EdgeWeightedDigraph {
   

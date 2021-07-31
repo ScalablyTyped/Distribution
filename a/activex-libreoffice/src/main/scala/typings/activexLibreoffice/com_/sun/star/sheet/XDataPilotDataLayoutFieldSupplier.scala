@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotDescriptor
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
 trait XDataPilotDataLayoutFieldSupplier extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait XDataPilotDataLayoutFieldSupplier extends StObject {
     * If the field does not exist yet, it will be created. It is possible to insert this field into the rows or columns dimension by changing its {@link
     * DataPilotField.Orientation} property.
     */
-  val DataLayoutField: XDataPilotField = js.native
+  val DataLayoutField: XDataPilotField
   
   /**
     * Returns the {@link DataPilotField} used to layout multiple data fields.
@@ -31,7 +29,7 @@ trait XDataPilotDataLayoutFieldSupplier extends StObject {
     * If the field does not exist yet, it will be created. It is possible to insert this field into the rows or columns dimension by changing its {@link
     * DataPilotField.Orientation} property.
     */
-  def getDataLayoutField(): XDataPilotField = js.native
+  def getDataLayoutField(): XDataPilotField
 }
 object XDataPilotDataLayoutFieldSupplier {
   

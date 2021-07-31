@@ -7,7 +7,6 @@ import typings.std.SVGElement
 import typings.std.SVGPathElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapeMod {
@@ -21,7 +20,9 @@ object shapeMod {
     * @param [opts] - Options for path drawing.
     * @see {@link https://progressbarjs.readthedocs.io/en/latest/api/shape/#new-shapecontainer-options}
     */
-  class ^ () extends Shape {
+  class ^ ()
+    extends StObject
+       with Shape {
     def this(container: String) = this()
     def this(container: SVGPathElement) = this()
     def this(container: String, opts: PathDrawingOptions) = this()
@@ -31,7 +32,9 @@ object shapeMod {
   
   // tslint:disable-next-line no-empty-interface adds members from animation contract
   @js.native
-  trait Shape extends AnimationSupport {
+  trait Shape
+    extends StObject
+       with AnimationSupport {
     
     def destroy(): Unit = js.native
     

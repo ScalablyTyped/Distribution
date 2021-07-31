@@ -7,24 +7,19 @@ import typings.gfc.gfcStrings.buffer
 import typings.node.Buffer
 import typings.node.BufferEncoding
 import typings.node.childProcessMod.ExecException
+import typings.node.childProcessMod.ExecOptions
 import typings.node.childProcessMod.ExecSyncOptions
-import typings.node.processMod.global.NodeJS.ProcessEnv
-import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gfc", JSImport.Namespace)
-  @js.native
-  def apply(): js.Promise[Stderr] = js.native
-  @JSImport("gfc", JSImport.Namespace)
-  @js.native
-  def apply(cwd: String): js.Promise[Stderr] = js.native
-  @JSImport("gfc", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Stderr]]
+  @scala.inline
+  def apply(cwd: String): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
+  @scala.inline
   def apply(
     cwd: String,
     callback: js.Function3[
@@ -33,12 +28,10 @@ object mod {
       /* stderr */ String | Buffer, 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("gfc", JSImport.Namespace)
-  @js.native
-  def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = js.native
-  @JSImport("gfc", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(cwd: String, options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stderr]]
+  @scala.inline
   def apply(
     cwd: String,
     options: Options[ExecOptionsWithEncoding],
@@ -48,53 +41,28 @@ object mod {
       /* stderr */ String | Buffer, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stderr]]
+  
   @JSImport("gfc", JSImport.Namespace)
   @js.native
-  def apply(options: Options[ExecOptionsWithEncoding]): js.Promise[Stderr] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gfc", "sync")
-  @js.native
-  def sync(): String | Buffer = js.native
-  @JSImport("gfc", "sync")
-  @js.native
-  def sync(cwd: String): String | Buffer = js.native
-  @JSImport("gfc", "sync")
-  @js.native
-  def sync(cwd: String, options: Options[ExecSyncOptions]): String | Buffer = js.native
-  @JSImport("gfc", "sync")
-  @js.native
-  def sync(options: Options[ExecSyncOptions]): String | Buffer = js.native
+  @scala.inline
+  def sync(): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[String | Buffer]
+  @scala.inline
+  def sync(cwd: String): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def sync(cwd: String, options: Options[ExecSyncOptions]): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def sync(options: Options[ExecSyncOptions]): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
   
-  /* Inlined {  encoding :node.BufferEncoding | 'buffer' | null | undefined} & node.child_process.ExecOptions */
-  @js.native
-  trait ExecOptionsWithEncoding extends StObject {
+  trait ExecOptionsWithEncoding
+    extends StObject
+       with ExecOptions {
     
-    var cwd: js.UndefOr[String] = js.native
-    
-    var encoding: js.UndefOr[BufferEncoding | buffer | Null] = js.native
-    
-    var env: js.UndefOr[ProcessEnv] = js.native
-    
-    var gid: js.UndefOr[Double] = js.native
-    
-    var killSignal: js.UndefOr[Signals | Double] = js.native
-    
-    var maxBuffer: js.UndefOr[Double] = js.native
-    
-    var shell: js.UndefOr[String] = js.native
-    
-    /**
-      * @default 0
-      */
-    var timeout: js.UndefOr[Double] = js.native
-    
-    var uid: js.UndefOr[Double] = js.native
-    
-    /**
-      * @default true
-      */
-    var windowsHide: js.UndefOr[Boolean] = js.native
+    var encoding: js.UndefOr[BufferEncoding | buffer | Null] = js.undefined
   }
   object ExecOptionsWithEncoding {
     
@@ -108,12 +76,6 @@ object mod {
     implicit class ExecOptionsWithEncodingMutableBuilder[Self <: ExecOptionsWithEncoding] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-      
-      @scala.inline
       def setEncoding(value: BufferEncoding | buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -121,75 +83,26 @@ object mod {
       
       @scala.inline
       def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      @scala.inline
-      def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
-      
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
-      
-      @scala.inline
-      def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
-      
-      @scala.inline
-      def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
-      
-      @scala.inline
-      def setShell(value: String): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setShellUndefined: Self = StObject.set(x, "shell", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
-      
-      @scala.inline
-      def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
     }
   }
   
-  @js.native
   trait Options[TExecOptions] extends StObject {
     
-    var commit: js.UndefOr[Boolean] = js.native
+    var commit: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var exec: js.UndefOr[TExecOptions] = js.native
+    var exec: js.UndefOr[TExecOptions] = js.undefined
     
-    var file: js.UndefOr[Contents | `false`] = js.native
+    var file: js.UndefOr[Contents | `false`] = js.undefined
     
-    var forceFile: js.UndefOr[Boolean] = js.native
+    var forceFile: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var push: js.UndefOr[Boolean] = js.native
+    var push: js.UndefOr[Boolean] = js.undefined
     
-    var remote: js.UndefOr[String] = js.native
+    var remote: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -200,7 +113,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], TExecOptions] (val x: Self with Options[TExecOptions]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], TExecOptions] (val x: Self & Options[TExecOptions]) extends AnyVal {
       
       @scala.inline
       def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])

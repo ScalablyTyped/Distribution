@@ -3,16 +3,14 @@ package typings.winrtUwp.Windows.UI.Input.Inking
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InkPoint extends StObject {
   
   /** The X, Y coordinates of the InkPoint , in device-independent pixels (DIPs) relative to the upper left-hand corner of the inking area. */
-  var position: Point = js.native
+  var position: Point
   
-  var pressure: js.Any = js.native
+  var pressure: js.Any
 }
 object InkPoint {
   

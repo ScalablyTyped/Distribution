@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSubscriptionsList extends StandardParameters {
+trait ParamsResourceSubscriptionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The channelId parameter specifies a YouTube channel ID. The API will only
     * return that channel's subscriptions.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The forChannelId parameter specifies a comma-separated list of channel
     * IDs. The API response will then only contain subscriptions matching those
     * channels.
     */
-  var forChannelId: js.UndefOr[String] = js.native
+  var forChannelId: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of the YouTube
@@ -36,31 +36,31 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * subscription resource, the id property specifies the YouTube subscription
     * ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve a feed of the
     * authenticated user's subscriptions.
     */
-  var mine: js.UndefOr[Boolean] = js.native
+  var mine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve a feed of the subscribers
     * of the authenticated user in reverse chronological order (newest first).
     */
-  var myRecentSubscribers: js.UndefOr[Boolean] = js.native
+  var myRecentSubscribers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set this parameter's value to true to retrieve a feed of the subscribers
     * of the authenticated user in no particular order.
     */
-  var mySubscribers: js.UndefOr[Boolean] = js.native
+  var mySubscribers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -74,7 +74,7 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. Note:
@@ -94,20 +94,20 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * without having to provide authentication credentials for each separate
     * channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The order parameter specifies the method that will be used to sort
     * resources in the API response.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
     * should be returned. In an API response, the nextPageToken and
     * prevPageToken properties identify other pages that could be retrieved.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
@@ -118,7 +118,7 @@ trait ParamsResourceSubscriptionsList extends StandardParameters {
     * such as a display title for the subscription. If you set part=snippet,
     * the API response will also contain all of those nested properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSubscriptionsList {
   

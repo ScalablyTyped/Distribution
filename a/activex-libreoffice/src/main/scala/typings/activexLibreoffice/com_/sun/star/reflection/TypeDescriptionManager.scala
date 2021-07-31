@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,10 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.reflection.TypeDescriptionProvider
   * @see com.sun.star.reflection.XTypeDescription
   */
-@js.native
 trait TypeDescriptionManager
-  extends XSet
+  extends StObject
      with XHierarchicalNameAccess
+     with XSet
      with XComponent
      with XTypeDescriptionEnumerationAccess
 object TypeDescriptionManager {

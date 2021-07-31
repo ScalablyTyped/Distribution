@@ -2,19 +2,17 @@ package typings.ethereumjsBlockchain
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Genesis extends StObject {
     
-    var genesis: js.Any = js.native
+    var genesis: js.Any
     
-    var heads: js.Any = js.native
+    var heads: js.Any
     
-    var rawHead: js.Any = js.native
+    var rawHead: js.Any
   }
   object Genesis {
     
@@ -38,18 +36,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var keyEncoding: String = js.native
+    var keyEncoding: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.Any = js.native
+    var value: js.Any
     
-    var valueEncoding: String = js.native
+    var valueEncoding: String
   }
   object Key {
     

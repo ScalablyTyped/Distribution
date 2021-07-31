@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.BuildingSummaryStatisticsConstructor
 import typings.arcgisJsApi.esri.BuildingSummaryStatisticsProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildingSummaryStatisticsMod extends Shortcut {
   
   @JSImport("esri/layers/support/BuildingSummaryStatistics", JSImport.Namespace)
   @js.native
-  val ^ : BuildingSummaryStatisticsConstructor = js.native
+  val ^ : js.Object & BuildingSummaryStatisticsConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/layers/support/BuildingSummaryStatistics", JSImport.Namespace)
@@ -23,12 +22,22 @@ object buildingSummaryStatisticsMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingSummaryStatistics.html)
     */
-  class Class () extends BuildingSummaryStatistics {
+  class Class ()
+    extends StObject
+       with BuildingSummaryStatistics {
     def this(properties: BuildingSummaryStatisticsProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = BuildingSummaryStatisticsConstructor
+  type _To = js.Object & BuildingSummaryStatisticsConstructor
   
   /* This means you don't have to write `^`, but can instead just say `buildingSummaryStatisticsMod.foo` */
-  override def _to: BuildingSummaryStatisticsConstructor = ^
+  override def _to: js.Object & BuildingSummaryStatisticsConstructor = ^
 }

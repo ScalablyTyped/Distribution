@@ -11,7 +11,6 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcGuideMod {
@@ -22,7 +21,6 @@ object srcGuideMod {
     /* keyof vega-lite.vega-lite/build/src/legend.LegendConfig<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 75 */ js.Any
   ] = js.native
   
-  @js.native
   trait FormatMixins extends StObject {
     
     /**
@@ -37,7 +35,7 @@ object srcGuideMod {
       *
       * __Default value:__  Derived from [numberFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for number format and from [timeFormat](https://vega.github.io/vega-lite/docs/config.html#format) config for time format.
       */
-    var format: js.UndefOr[String | Dict[_]] = js.native
+    var format: js.UndefOr[String | Dict[js.Any]] = js.undefined
     
     /**
       * The format type for labels. One of `"number"`, `"time"`, or a [registered custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type).
@@ -46,14 +44,14 @@ object srcGuideMod {
       * - `"time"` for temporal fields and ordinal and nominal fields with `timeUnit`.
       * - `"number"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.
       */
-    var formatType: js.UndefOr[number | time | String] = js.native
+    var formatType: js.UndefOr[number | time | String] = js.undefined
     
     /**
       * [Vega expression](https://vega.github.io/vega/docs/expressions/) for customizing labels text.
       *
       * __Note:__ The label text and value can be assessed via the `label` and `value` properties of the axis's backing `datum` object.
       */
-    var labelExpr: js.UndefOr[String] = js.native
+    var labelExpr: js.UndefOr[String] = js.undefined
   }
   object FormatMixins {
     
@@ -67,7 +65,7 @@ object srcGuideMod {
     implicit class FormatMixinsMutableBuilder[Self <: FormatMixins] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFormat(value: String | Dict[_]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      def setFormat(value: String | Dict[js.Any]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatType(value: number | time | String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
@@ -86,9 +84,9 @@ object srcGuideMod {
     }
   }
   
-  @js.native
   trait Guide
-    extends TitleMixins
+    extends StObject
+       with TitleMixins
        with FormatMixins
   object Guide {
     
@@ -99,129 +97,139 @@ object srcGuideMod {
     }
   }
   
-  type GuideEncodingConditionalValueDef = (ValueDef[Value[ExprRef | SignalRef]]) with (ConditionValueDefMixins[Value[ExprRef | SignalRef]])
+  trait GuideEncodingConditionalValueDef
+    extends StObject
+       with ValueDef[Value[ExprRef | SignalRef]]
+       with ConditionValueDefMixins[Value[ExprRef | SignalRef]]
+  object GuideEncodingConditionalValueDef {
+    
+    @scala.inline
+    def apply(): GuideEncodingConditionalValueDef = {
+      val __obj = js.Dynamic.literal(value = null)
+      __obj.asInstanceOf[GuideEncodingConditionalValueDef]
+    }
+  }
   
   /* Inlined std.Partial<std.Record<vega-lite.vega-lite/build/src/vega.schema.VgEncodeChannel, vega-lite.vega-lite/build/src/guide.GuideEncodingConditionalValueDef>> */
-  @js.native
   trait GuideEncodingEntry extends StObject {
     
-    var align: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var align: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var angle: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var angle: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var baseline: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var baseline: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var clip: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var clip: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cornerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cornerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cornerRadiusBottomLeft: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cornerRadiusBottomLeft: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cornerRadiusBottomRight: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cornerRadiusBottomRight: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cornerRadiusTopLeft: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cornerRadiusTopLeft: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cornerRadiusTopRight: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cornerRadiusTopRight: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var cursor: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var cursor: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var defined: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var defined: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var dir: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var dir: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var dx: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var dx: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var dy: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var dy: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var ellipsis: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var ellipsis: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var endAngle: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var endAngle: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var fill: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var fill: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var fillOpacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var fillOpacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var font: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var font: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var fontSize: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var fontSize: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var fontStyle: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var fontStyle: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var fontWeight: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var fontWeight: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var height: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var height: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var href: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var href: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var innerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var innerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var interpolate: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var interpolate: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var limit: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var limit: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var opacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var opacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var orient: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var orient: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var outerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var outerRadius: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var path: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var path: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var radius: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var radius: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var scaleX: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var scaleX: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var scaleY: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var scaleY: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var shape: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var shape: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var size: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var size: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var startAngle: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var startAngle: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var stroke: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var stroke: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeCap: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeCap: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeDash: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeDash: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeDashOffset: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeDashOffset: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeForeground: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeForeground: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeJoin: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeJoin: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeMiterLimit: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeMiterLimit: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeOffset: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeOffset: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeOpacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeOpacity: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var strokeWidth: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var strokeWidth: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var tension: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var tension: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var text: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var text: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var theta: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var theta: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var tooltip: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var tooltip: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var url: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var url: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var width: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var width: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var x: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var x: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var x2: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var x2: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var xc: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var xc: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var y: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var y: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var y2: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var y2: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
     
-    var yc: js.UndefOr[GuideEncodingConditionalValueDef] = js.native
+    var yc: js.UndefOr[GuideEncodingConditionalValueDef] = js.undefined
   }
   object GuideEncodingEntry {
     
@@ -590,7 +598,6 @@ object srcGuideMod {
     }
   }
   
-  @js.native
   trait TitleMixins extends StObject {
     
     /**
@@ -604,7 +611,7 @@ object srcGuideMod {
       *
       * 2) If both field definition's `title` and axis, header, or legend `title` are defined, axis/header/legend title will be used.
       */
-    var title: js.UndefOr[Text | Null | SignalRef] = js.native
+    var title: js.UndefOr[Text | Null | SignalRef] = js.undefined
   }
   object TitleMixins {
     
@@ -631,12 +638,11 @@ object srcGuideMod {
     }
   }
   
-  @js.native
   trait VlOnlyGuideConfig extends StObject {
     
     /**
       * Set to null to disable title for the axis, legend, or header.
       */
-    var title: js.UndefOr[Null] = js.native
+    var title: js.UndefOr[Null] = js.undefined
   }
 }

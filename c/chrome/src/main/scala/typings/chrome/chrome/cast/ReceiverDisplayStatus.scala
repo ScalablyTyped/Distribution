@@ -2,15 +2,13 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReceiverDisplayStatus extends StObject {
   
-  var appImages: js.Array[Image] = js.native
+  var appImages: js.Array[Image]
   
-  var statusText: String = js.native
+  var statusText: String
 }
 object ReceiverDisplayStatus {
   

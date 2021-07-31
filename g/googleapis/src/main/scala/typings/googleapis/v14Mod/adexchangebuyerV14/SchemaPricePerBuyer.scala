@@ -2,7 +2,6 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,30 +11,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * look for a rule matching the buyer and otherwise look for a matching rule
   * where no buyer is set.
   */
-@js.native
 trait SchemaPricePerBuyer extends StObject {
   
   /**
     * Optional access type for this buyer.
     */
-  var auctionTier: js.UndefOr[String] = js.native
+  var auctionTier: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to the buyer that will get billed.
     */
-  var billedBuyer: js.UndefOr[SchemaBuyer] = js.native
+  var billedBuyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * The buyer who will pay this price. If unset, all buyers can pay this
     * price (if the advertisers match, and there&#39;s no more specific rule
     * matching the buyer).
     */
-  var buyer: js.UndefOr[SchemaBuyer] = js.native
+  var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * The specified price
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
 }
 object SchemaPricePerBuyer {
   

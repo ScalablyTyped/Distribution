@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMod {
@@ -39,16 +38,17 @@ object switchMod {
     def onClick(e: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait SwitchProps extends SwitchPropsType {
+  trait SwitchProps
+    extends StObject
+       with SwitchPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SwitchProps {
     

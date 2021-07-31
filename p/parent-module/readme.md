@@ -10,9 +10,9 @@ Get the path of the parent module
 | ------------------ | :-------------: |
 | Full name          | parent-module |
 | Keywords           | parent, module, package, caller, calling, module, path, callsites, callsite, stacktrace, stack, trace, function, file |
-| # releases         | 4 |
-| # dependents       | 74 |
-| # downloads        | 374064007 |
+| # releases         | 3 |
+| # dependents       | 109 |
+| # downloads        | 518038584 |
 | # stars            | 1 |
 
 ## Links

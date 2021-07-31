@@ -9,7 +9,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -70,7 +69,7 @@ trait ComponentDidUpdate extends StObject {
   def getRender(): Element = js.native
   
   var getSnapshotBeforeUpdate: js.UndefOr[
-    js.Function2[/* prevProps */ ReadonlyPopupPickerProps, /* prevState */ js.Any, _]
+    js.Function2[/* prevProps */ ReadonlyPopupPickerProps, /* prevState */ js.Any, js.Any]
   ] = js.native
   
   def hide(): Unit = js.native

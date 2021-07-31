@@ -5,7 +5,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textMod {
@@ -47,15 +46,16 @@ object textMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ITextProps extends IProps {
+  trait ITextProps
+    extends StObject
+       with IProps {
     
     /**
       * Indicates that this component should be truncated with an ellipsis if it overflows its container.
       * The `title` attribute will also be added when content overflows to show the full text of the children on hover.
       * @default false
       */
-    var ellipsize: js.UndefOr[Boolean] = js.native
+    var ellipsize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * HTML tag name to use for rendered element.
@@ -63,12 +63,12 @@ object textMod {
       */
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * HTML title of the element
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object ITextProps {
     
@@ -101,12 +101,11 @@ object textMod {
     }
   }
   
-  @js.native
   trait ITextState extends StObject {
     
-    var isContentOverflowing: Boolean = js.native
+    var isContentOverflowing: Boolean
     
-    var textContent: String = js.native
+    var textContent: String
   }
   object ITextState {
     

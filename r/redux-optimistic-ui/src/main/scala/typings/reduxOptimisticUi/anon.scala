@@ -2,12 +2,10 @@ package typings.reduxOptimisticUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
     /**
@@ -15,14 +13,14 @@ object anon {
       *
       * @type {number}
       */
-    var id: Double = js.native
+    var id: Double
     
     /**
       * Type, BEGIN, COMMIT or REVERT
       *
       * @type {string}
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Id {
     
@@ -44,13 +42,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Optimistic extends StObject {
     
     /**
       * Optimistic information
       */
-    var optimistic: Id = js.native
+    var optimistic: Id
   }
   object Optimistic {
     

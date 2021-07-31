@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.kendo.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Gradient extends Class {
+trait Gradient
+  extends StObject
+     with Class {
   
-  def addStop(offset: Double, color: String, opacity: Double): GradientStop = js.native
+  def addStop(offset: Double, color: String, opacity: Double): GradientStop
   
-  var options: GradientOptions = js.native
+  var options: GradientOptions
   
-  def removeStop(stop: GradientStop): Unit = js.native
+  def removeStop(stop: GradientStop): Unit
   
-  var stops: js.Any = js.native
+  var stops: js.Any
 }
 object Gradient {
   

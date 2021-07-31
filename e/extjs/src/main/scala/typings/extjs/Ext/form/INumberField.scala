@@ -2,68 +2,67 @@ package typings.extjs.Ext.form
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INumberField
-  extends typings.extjs.Ext.form.field.ISpinner {
+  extends StObject
+     with typings.extjs.Ext.form.field.ISpinner {
   
   /** [Config Option] (Boolean) */
-  var allowDecimals: js.UndefOr[Boolean] = js.native
+  var allowDecimals: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowExponential: js.UndefOr[Boolean] = js.native
+  var allowExponential: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoStripChars: js.UndefOr[Boolean] = js.native
+  var autoStripChars: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var baseChars: js.UndefOr[String] = js.native
+  var baseChars: js.UndefOr[String] = js.undefined
   
   /** [Method] Template method to do any pre blur processing  */
   @JSName("beforeBlur")
-  var beforeBlur_INumberField: js.UndefOr[js.Function0[Unit]] = js.native
+  var beforeBlur_INumberField: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var decimalPrecision: js.UndefOr[Double] = js.native
+  var decimalPrecision: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value that would be included in a standard form submit for this field
     * @returns String The value to be submitted, or null.
     */
   @JSName("getSubmitValue")
-  var getSubmitValue_INumberField: js.UndefOr[js.Function0[String]] = js.native
+  var getSubmitValue_INumberField: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var maxText: js.UndefOr[String] = js.native
+  var maxText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var minText: js.UndefOr[String] = js.native
+  var minText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var nanText: js.UndefOr[String] = js.native
+  var nanText: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var negativeText: js.UndefOr[String] = js.native
+  var negativeText: js.UndefOr[String] = js.undefined
   
   /** [Method] Replaces any existing maxValue with the new value
     * @param value Number The maximum value
     */
-  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
+  var setMaxValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Replaces any existing minValue with the new value
     * @param value Number The minimum value
     */
-  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.native
+  var setMinValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets whether the spinner down button is enabled
     * @param enabled Object
@@ -72,7 +71,7 @@ trait INumberField
   @JSName("setSpinDownEnabled")
   var setSpinDownEnabled_INumberField: js.UndefOr[
     js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets whether the spinner up button is enabled
     * @param enabled Object
@@ -81,13 +80,13 @@ trait INumberField
   @JSName("setSpinUpEnabled")
   var setSpinUpEnabled_INumberField: js.UndefOr[
     js.Function2[/* enabled */ js.UndefOr[js.Any], /* internal */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Number) */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var submitLocaleSeparator: js.UndefOr[Boolean] = js.native
+  var submitLocaleSeparator: js.UndefOr[Boolean] = js.undefined
 }
 object INumberField {
   

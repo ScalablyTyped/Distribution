@@ -2,45 +2,43 @@ package typings.winrtUwp.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes the format of an audio stream. */
-@js.native
 trait AudioEncodingProperties extends StObject {
   
   /** Gets or sets the audio bit rate. */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** Gets or sets the number of bits per audio sample. */
-  var bitsPerSample: Double = js.native
+  var bitsPerSample: Double
   
   /** Gets or sets the number of audio channels. */
-  var channelCount: Double = js.native
+  var channelCount: Double
   
   /**
     * Gets the media format user data.
     * @return Receives the media format data.
     */
-  def getFormatUserData(): js.Array[Double] = js.native
+  def getFormatUserData(): js.Array[Double]
   
   /** Gets additional format properties for the audio stream. */
-  var properties: MediaPropertySet = js.native
+  var properties: MediaPropertySet
   
   /** Gets or sets audio sampling rate. */
-  var sampleRate: Double = js.native
+  var sampleRate: Double
   
   /**
     * Sets the media format user data.
     * @param value The media data to set.
     */
-  def setFormatUserData(value: js.Array[Double]): Unit = js.native
+  def setFormatUserData(value: js.Array[Double]): Unit
   
   /** Gets or sets the subtype of the format. */
-  var subtype: String = js.native
+  var subtype: String
   
   /** Gets the format type. */
-  var `type`: String = js.native
+  var `type`: String
 }
 object AudioEncodingProperties {
   

@@ -11,11 +11,14 @@ A curated set of user interface interactions, effects, widgets, and themes built
 | Full name          | jqueryui |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 380330 |
+| # dependents       | 34 |
+| # downloads        | 406689 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/sethmcl/jquery-ui#readme)
+- [Bugs](https://github.com/sethmcl/jquery-ui/issues)
+- [Repository](https://github.com/sethmcl/jquery-ui)
 - [Npm](https://www.npmjs.com/package/jqueryui)
     
 

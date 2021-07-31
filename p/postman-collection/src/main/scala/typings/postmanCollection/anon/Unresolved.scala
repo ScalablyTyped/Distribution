@@ -2,13 +2,11 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Unresolved extends StObject {
   
-  var unresolved: Boolean = js.native
+  var unresolved: Boolean
 }
 object Unresolved {
   

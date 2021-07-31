@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeOperatingSystemsResponse extends StObject {
   
   /**
     * Contains information in response to a DescribeOperatingSystems request.
     */
-  var OperatingSystems: js.UndefOr[typings.awsSdk.opsworksMod.OperatingSystems] = js.native
+  var OperatingSystems: js.UndefOr[typings.awsSdk.opsworksMod.OperatingSystems] = js.undefined
 }
 object DescribeOperatingSystemsResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListVocabulariesRequest extends StObject {
   
   /**
     * The maximum number of vocabularies to return in the response. If there are fewer results in the list, this response contains only the actual results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.transcribeserviceMod.MaxResults] = js.undefined
   
   /**
     * When specified, the vocabularies returned in the list are limited to vocabularies whose name contains the specified string. The search is not case sensitive, ListVocabularies returns both "vocabularyname" and "VocabularyName" in the response list.
     */
-  var NameContains: js.UndefOr[VocabularyName] = js.native
+  var NameContains: js.UndefOr[VocabularyName] = js.undefined
   
   /**
     * If the result of the previous request to ListVocabularies was truncated, include the NextToken to fetch the next set of jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transcribeserviceMod.NextToken] = js.undefined
   
   /**
     * When specified, only returns vocabularies with the VocabularyState field equal to the specified state.
     */
-  var StateEquals: js.UndefOr[VocabularyState] = js.native
+  var StateEquals: js.UndefOr[VocabularyState] = js.undefined
 }
 object ListVocabulariesRequest {
   

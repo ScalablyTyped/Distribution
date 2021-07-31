@@ -5,7 +5,6 @@ import typings.std.DataTransferItemList
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataTransferMod {
@@ -20,21 +19,17 @@ object dataTransferMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.getImageItem")
-    @js.native
-    def getImageItem(items: DataTransferItemList): File | Null = js.native
+    @scala.inline
+    def getImageItem(items: DataTransferItemList): File | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageItem")(items.asInstanceOf[js.Any]).asInstanceOf[File | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.getPlainTextItem")
-    @js.native
-    def getPlainTextItem(items: DataTransferItemList): DataTransferItem | Null = js.native
+    @scala.inline
+    def getPlainTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlainTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.getRtfTextItem")
-    @js.native
-    def getRtfTextItem(items: DataTransferItemList): DataTransferItem | Null = js.native
+    @scala.inline
+    def getRtfTextItem(items: DataTransferItemList): DataTransferItem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRtfTextItem")(items.asInstanceOf[js.Any]).asInstanceOf[DataTransferItem | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.getTransferItemByType")
-    @js.native
-    def getTransferItemByType(items: DataTransferItemList, `type`: String): DataTransferItem | Null = js.native
+    @scala.inline
+    def getTransferItemByType(items: DataTransferItemList, `type`: String): DataTransferItem | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransferItemByType")(items.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DataTransferItem | Null]
     
     @JSImport("@devexpress/utils/lib/utils/data-transfer", "DataTransferUtils.isBrowserSupportExtendedClientBuffer")
     @js.native

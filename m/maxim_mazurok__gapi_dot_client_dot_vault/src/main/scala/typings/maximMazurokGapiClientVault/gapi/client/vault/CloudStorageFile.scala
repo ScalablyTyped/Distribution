@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudStorageFile extends StObject {
   
   /**
     * The cloud storage bucket name of this export file. Can be used in cloud storage JSON/XML API, but not to list the bucket contents. Instead, you can get individual export files by
     * object name.
     */
-  var bucketName: js.UndefOr[String] = js.native
+  var bucketName: js.UndefOr[String] = js.undefined
   
   /** The md5 hash of the file. */
-  var md5Hash: js.UndefOr[String] = js.native
+  var md5Hash: js.UndefOr[String] = js.undefined
   
   /** The cloud storage object name of this export file. Can be used in cloud storage JSON/XML API. */
-  var objectName: js.UndefOr[String] = js.native
+  var objectName: js.UndefOr[String] = js.undefined
   
   /** The size of the export file. */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
 }
 object CloudStorageFile {
   

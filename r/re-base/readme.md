@@ -12,7 +12,7 @@ A Relay inspired library for building React.js + Firebase applications.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 40698 |
+| # downloads        | 42060 |
 | # stars            | 22 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2", "dialogflow_v2.Resource$Projects$Agent$Intents")
@@ -30,7 +29,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def batchDelete(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def batchDelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def batchDelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(params: ParamsResourceProjectsAgentIntentsBatchdelete): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchDelete(
     params: ParamsResourceProjectsAgentIntentsBatchdelete,
@@ -64,7 +63,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(params: ParamsResourceProjectsAgentIntentsBatchupdate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def batchUpdate(
     params: ParamsResourceProjectsAgentIntentsBatchupdate,
@@ -101,7 +100,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def create(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def create(params: ParamsResourceProjectsAgentIntentsCreate): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def create(
     params: ParamsResourceProjectsAgentIntentsCreate,
@@ -134,7 +133,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaGoogleProtobufEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(params: ParamsResourceProjectsAgentIntentsDelete): GaxiosPromise[SchemaGoogleProtobufEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsAgentIntentsDelete,
@@ -168,7 +167,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def get(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def get(params: ParamsResourceProjectsAgentIntentsGet): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def get(
     params: ParamsResourceProjectsAgentIntentsGet,
@@ -204,7 +203,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2ListIntentsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
   def list(params: ParamsResourceProjectsAgentIntentsList): GaxiosPromise[SchemaGoogleCloudDialogflowV2ListIntentsResponse] = js.native
   def list(
     params: ParamsResourceProjectsAgentIntentsList,
@@ -240,7 +239,7 @@ class ResourceProjectsAgentIntents protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def patch(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2Intent]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def patch(params: ParamsResourceProjectsAgentIntentsPatch): GaxiosPromise[SchemaGoogleCloudDialogflowV2Intent] = js.native
   def patch(
     params: ParamsResourceProjectsAgentIntentsPatch,

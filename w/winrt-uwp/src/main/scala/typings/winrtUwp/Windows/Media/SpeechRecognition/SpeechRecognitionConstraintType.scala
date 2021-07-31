@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object SpeechRecognitionConstraintType extends StObject {
   
   /** A constraint based on a SRGS grammar file. See SpeechRecognitionGrammarFileConstraint . */
   @js.native
-  sealed trait grammar extends SpeechRecognitionConstraintType
+  sealed trait grammar
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a list of words or phrases. See SpeechRecognitionListConstraint . */
   @js.native
-  sealed trait list extends SpeechRecognitionConstraintType
+  sealed trait list
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a dictation topic. See SpeechRecognitionTopicConstraint . */
   @js.native
-  sealed trait topic extends SpeechRecognitionConstraintType
+  sealed trait topic
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a VCD file. See SpeechRecognitionVoiceCommandDefinitionConstraint . */
   @js.native
-  sealed trait voiceCommandDefinition extends SpeechRecognitionConstraintType
+  sealed trait voiceCommandDefinition
+    extends StObject
+       with SpeechRecognitionConstraintType
 }

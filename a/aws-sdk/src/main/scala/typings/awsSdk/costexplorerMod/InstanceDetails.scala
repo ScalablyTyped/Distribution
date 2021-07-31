@@ -2,36 +2,34 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceDetails extends StObject {
   
   /**
     * The Amazon EC2 instances that AWS recommends that you purchase.
     */
-  var EC2InstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.EC2InstanceDetails] = js.native
+  var EC2InstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.EC2InstanceDetails] = js.undefined
   
   /**
     * The Amazon ES instances that AWS recommends that you purchase.
     */
-  var ESInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ESInstanceDetails] = js.native
+  var ESInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ESInstanceDetails] = js.undefined
   
   /**
     * The ElastiCache instances that AWS recommends that you purchase.
     */
-  var ElastiCacheInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ElastiCacheInstanceDetails] = js.native
+  var ElastiCacheInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.ElastiCacheInstanceDetails] = js.undefined
   
   /**
     * The Amazon RDS instances that AWS recommends that you purchase.
     */
-  var RDSInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.RDSInstanceDetails] = js.native
+  var RDSInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.RDSInstanceDetails] = js.undefined
   
   /**
     * The Amazon Redshift instances that AWS recommends that you purchase.
     */
-  var RedshiftInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.RedshiftInstanceDetails] = js.native
+  var RedshiftInstanceDetails: js.UndefOr[typings.awsSdk.costexplorerMod.RedshiftInstanceDetails] = js.undefined
 }
 object InstanceDetails {
   

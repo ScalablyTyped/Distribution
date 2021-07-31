@@ -12,7 +12,6 @@ import typings.ethersprojectBytes.mod.BytesLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -63,9 +62,12 @@ object mod {
   /* static members */
   object Signer {
     
-    @JSImport("@ethersproject/abstract-signer", "Signer.isSigner")
+    @JSImport("@ethersproject/abstract-signer", "Signer")
     @js.native
-    def isSigner(value: js.Any): /* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isSigner(value: js.Any): /* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigner")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/abstract-signer.@ethersproject/abstract-signer.Signer */ Boolean]
   }
   
   @JSImport("@ethersproject/abstract-signer", "VoidSigner")
@@ -76,17 +78,23 @@ object mod {
     def this(address: String) = this()
     def this(address: String, provider: Provider) = this()
     
-    def _fail(message: String, operation: String): js.Promise[_] = js.native
+    def _fail(message: String, operation: String): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def _signTypedData(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): js.Promise[String] = js.native
     
     val address: String = js.native
   }
   
-  @js.native
   trait ExternallyOwnedAccount extends StObject {
     
-    val address: String = js.native
+    val address: String
     
-    val privateKey: String = js.native
+    val privateKey: String
   }
   object ExternallyOwnedAccount {
     
@@ -107,18 +115,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TypedDataDomain extends StObject {
     
-    var chainId: js.UndefOr[BigNumberish] = js.native
+    var chainId: js.UndefOr[BigNumberish] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var salt: js.UndefOr[BytesLike] = js.native
+    var salt: js.UndefOr[BytesLike] = js.undefined
     
-    var verifyingContract: js.UndefOr[String] = js.native
+    var verifyingContract: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object TypedDataDomain {
     
@@ -163,12 +170,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TypedDataField extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object TypedDataField {
     
@@ -190,16 +196,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TypedDataSigner extends StObject {
     
-    def _signTypedData(domain: TypedDataDomain, types: Record[String, js.Array[TypedDataField]], value: Record[String, _]): js.Promise[String] = js.native
+    def _signTypedData(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): js.Promise[String]
   }
   object TypedDataSigner {
     
     @scala.inline
     def apply(
-      _signTypedData: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, _]) => js.Promise[String]
+      _signTypedData: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, js.Any]) => js.Promise[String]
     ): TypedDataSigner = {
       val __obj = js.Dynamic.literal(_signTypedData = js.Any.fromFunction3(_signTypedData))
       __obj.asInstanceOf[TypedDataSigner]
@@ -210,7 +219,7 @@ object mod {
       
       @scala.inline
       def set_signTypedData(
-        value: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, _]) => js.Promise[String]
+        value: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, js.Any]) => js.Promise[String]
       ): Self = StObject.set(x, "_signTypedData", js.Any.fromFunction3(value))
     }
   }

@@ -11,8 +11,8 @@ File system walker with Readable stream interface.
 | Full name          | klaw |
 | Keywords           | walk, walker, fs, fs-extra, readable, streams |
 | # releases         | 0 |
-| # dependents       | 355 |
-| # downloads        | 185640948 |
+| # dependents       | 399 |
+| # downloads        | 210259723 |
 | # stars            | 10 |
 
 ## Links

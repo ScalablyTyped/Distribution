@@ -2,15 +2,13 @@ package typings.angularOdataResources.OData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // IResourceServiceProvider used to configure global settings
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ @js.native
-trait IResourceServiceProvider extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IServiceProvider * / any */ trait IResourceServiceProvider extends StObject {
   
-  var defaults: IResourceOptions = js.native
+  var defaults: IResourceOptions
 }
 object IResourceServiceProvider {
   

@@ -2,17 +2,15 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: js.Any = js.native
+  var center: js.Any
   
-  var farthest: js.Any = js.native
+  var farthest: js.Any
   
-  var nearest: js.Any = js.native
+  var nearest: js.Any
 }
 object Center {
   

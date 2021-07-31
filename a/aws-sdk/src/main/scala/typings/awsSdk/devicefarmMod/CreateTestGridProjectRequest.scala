@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTestGridProjectRequest extends StObject {
   
   /**
     * Human-readable description of the project.
     */
-  var description: js.UndefOr[ResourceDescription] = js.native
+  var description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * Human-readable name of the Selenium testing project.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
 }
 object CreateTestGridProjectRequest {
   

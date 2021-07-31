@@ -2,89 +2,89 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Content to create because of this mapping rule
   */
-@js.native
-trait StructureMapGroupRuleTarget extends BackboneElement {
+trait StructureMapGroupRuleTarget
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'context'.
     */
-  var _context: js.UndefOr[Element] = js.native
+  var _context: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'contextType'.
     */
-  var _contextType: js.UndefOr[Element] = js.native
+  var _contextType: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'element'.
     */
-  var _element: js.UndefOr[Element] = js.native
+  var _element: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'listMode'.
     */
-  var _listMode: js.UndefOr[js.Array[Element]] = js.native
+  var _listMode: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'listRuleId'.
     */
-  var _listRuleId: js.UndefOr[Element] = js.native
+  var _listRuleId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'transform'.
     */
-  var _transform: js.UndefOr[Element] = js.native
+  var _transform: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'variable'.
     */
-  var _variable: js.UndefOr[Element] = js.native
+  var _variable: js.UndefOr[Element] = js.undefined
   
   /**
     * Type or variable this rule applies to
     */
-  var context: js.UndefOr[id] = js.native
+  var context: js.UndefOr[id] = js.undefined
   
   /**
     * type | variable
     */
-  var contextType: js.UndefOr[code] = js.native
+  var contextType: js.UndefOr[code] = js.undefined
   
   /**
     * Field to create in the context
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * first | share | last | collate
     */
-  var listMode: js.UndefOr[js.Array[code]] = js.native
+  var listMode: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * Internal rule reference for shared list items
     */
-  var listRuleId: js.UndefOr[id] = js.native
+  var listRuleId: js.UndefOr[id] = js.undefined
   
   /**
     * Parameters to the transform
     */
-  var parameter: js.UndefOr[js.Array[StructureMapGroupRuleTargetParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[StructureMapGroupRuleTargetParameter]] = js.undefined
   
   /**
     * create | copy +
     */
-  var transform: js.UndefOr[code] = js.native
+  var transform: js.UndefOr[code] = js.undefined
   
   /**
     * Named context for field, if desired, and a field is specified
     */
-  var variable: js.UndefOr[id] = js.native
+  var variable: js.UndefOr[id] = js.undefined
 }
 object StructureMapGroupRuleTarget {
   

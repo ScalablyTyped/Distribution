@@ -3,27 +3,27 @@ package typings.facebookJsSdk.facebook
 import typings.facebookJsSdk.facebookJsSdkStrings.share
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareDialogParams extends DialogParams {
+trait ShareDialogParams
+  extends StObject
+     with DialogParams {
   
-  var hashtag: js.UndefOr[String] = js.native
+  var hashtag: js.UndefOr[String] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var method: share = js.native
+  var method: share
   
-  var mobile_iframe: js.UndefOr[Boolean] = js.native
+  var mobile_iframe: js.UndefOr[Boolean] = js.undefined
   
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
 }
 object ShareDialogParams {
   
   @scala.inline
-  def apply(href: String, method: share): ShareDialogParams = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  def apply(href: String): ShareDialogParams = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], method = "share")
     __obj.asInstanceOf[ShareDialogParams]
   }
   

@@ -2,20 +2,18 @@ package typings.nodeRedRuntime.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flow extends StObject {
   
   /** the flow identifier */
-  var id: String = js.native
+  var id: String
   
   /** a label for the flow */
-  var label: String = js.native
+  var label: String
   
   /** an array of node configuration objects */
-  var nodes: js.Array[js.Object] = js.native
+  var nodes: js.Array[js.Object]
 }
 object Flow {
   

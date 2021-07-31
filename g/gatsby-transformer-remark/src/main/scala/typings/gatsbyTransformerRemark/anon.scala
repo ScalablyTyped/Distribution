@@ -2,21 +2,19 @@ package typings.gatsbyTransformerRemark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Absolute extends StObject {
     
-    var absolute: js.UndefOr[Boolean] = js.native
+    var absolute: js.UndefOr[Boolean] = js.undefined
     
-    var heading: js.UndefOr[Null | String] = js.native
+    var heading: js.UndefOr[Null | String] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var pathToSlugField: js.UndefOr[String] = js.native
+    var pathToSlugField: js.UndefOr[String] = js.undefined
   }
   object Absolute {
     

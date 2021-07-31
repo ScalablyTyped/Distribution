@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectAttributesRequest extends StObject {
   
   /**
     * List of attribute names whose values will be retrieved.
     */
-  var AttributeNames: AttributeNameList = js.native
+  var AttributeNames: AttributeNameList
   
   /**
     * The consistency level at which to retrieve the attributes on an object.
     */
-  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.native
+  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory where the object resides.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * Reference that identifies the object whose attributes will be retrieved.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
   
   /**
     * Identifier for the facet whose attributes will be retrieved. See SchemaFacet for details.
     */
-  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet = js.native
+  var SchemaFacet: typings.awsSdk.clouddirectoryMod.SchemaFacet
 }
 object GetObjectAttributesRequest {
   

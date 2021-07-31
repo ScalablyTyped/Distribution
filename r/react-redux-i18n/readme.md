@@ -11,7 +11,7 @@ A binding library for redux to react-i18nify
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 467264 |
+| # downloads        | 415033 |
 | # stars            | 2 |
 
 ## Links

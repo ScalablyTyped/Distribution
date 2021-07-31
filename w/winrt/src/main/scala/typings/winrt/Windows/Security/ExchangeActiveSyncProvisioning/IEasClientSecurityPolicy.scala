@@ -3,31 +3,29 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEasClientSecurityPolicy extends StObject {
   
-  def applyAsync(): IAsyncOperation[EasComplianceResults] = js.native
+  def applyAsync(): IAsyncOperation[EasComplianceResults]
   
-  def checkCompliance(): EasComplianceResults = js.native
+  def checkCompliance(): EasComplianceResults
   
-  var disallowConvenienceLogon: Boolean = js.native
+  var disallowConvenienceLogon: Boolean
   
-  var maxInactivityTimeLock: Double = js.native
+  var maxInactivityTimeLock: Double
   
-  var maxPasswordFailedAttempts: Double = js.native
+  var maxPasswordFailedAttempts: Double
   
-  var minPasswordComplexCharacters: Double = js.native
+  var minPasswordComplexCharacters: Double
   
-  var minPasswordLength: Double = js.native
+  var minPasswordLength: Double
   
-  var passwordExpiration: Double = js.native
+  var passwordExpiration: Double
   
-  var passwordHistory: Double = js.native
+  var passwordHistory: Double
   
-  var requireEncryption: Boolean = js.native
+  var requireEncryption: Boolean
 }
 object IEasClientSecurityPolicy {
   

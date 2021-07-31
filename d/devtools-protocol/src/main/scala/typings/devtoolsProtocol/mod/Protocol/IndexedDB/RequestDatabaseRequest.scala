@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.IndexedDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestDatabaseRequest extends StObject {
   
   /**
     * Database name.
     */
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * Security origin.
     */
-  var securityOrigin: String = js.native
+  var securityOrigin: String
 }
 object RequestDatabaseRequest {
   

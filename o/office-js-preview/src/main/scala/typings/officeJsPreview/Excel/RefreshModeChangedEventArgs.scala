@@ -9,7 +9,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
-@js.native
 trait RefreshModeChangedEventArgs extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait RefreshModeChangedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshMode: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic = js.native
+  var refreshMode: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic
   
   /**
     *
@@ -38,7 +36,7 @@ trait RefreshModeChangedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var serviceId: Double = js.native
+  var serviceId: Double
   
   /**
     *
@@ -47,7 +45,7 @@ trait RefreshModeChangedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -56,7 +54,7 @@ trait RefreshModeChangedEventArgs extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var `type`: LinkedDataTypeRefreshModeChanged = js.native
+  var `type`: LinkedDataTypeRefreshModeChanged
 }
 object RefreshModeChangedEventArgs {
   
@@ -64,11 +62,10 @@ object RefreshModeChangedEventArgs {
   def apply(
     refreshMode: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic,
     serviceId: Double,
-    source: EventSource | Local | Remote,
-    `type`: LinkedDataTypeRefreshModeChanged
+    source: EventSource | Local | Remote
   ): RefreshModeChangedEventArgs = {
     val __obj = js.Dynamic.literal(refreshMode = refreshMode.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LinkedDataTypeRefreshModeChanged")
     __obj.asInstanceOf[RefreshModeChangedEventArgs]
   }
   

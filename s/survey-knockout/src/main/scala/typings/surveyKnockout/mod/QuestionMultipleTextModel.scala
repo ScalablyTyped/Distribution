@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -59,7 +58,7 @@ class QuestionMultipleTextModel protected () extends Question {
   /**
     * Returns the list of rendered rows.
     */
-  def getRows(): js.Array[_] = js.native
+  def getRows(): js.Array[js.Any] = js.native
   
   def getSurvey(): ISurvey = js.native
   

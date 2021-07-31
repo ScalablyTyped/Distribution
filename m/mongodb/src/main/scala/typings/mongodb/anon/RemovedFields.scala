@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mod.FieldUpdates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovedFields[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
-  var removedFields: js.Array[/* keyof TSchema */ String] = js.native
+  var removedFields: js.Array[/* keyof TSchema */ String]
   
   /**
     * This is an object with all changed fields; if they are nested,
     * the keys will be paths, e.g. 'question.answer.0.text': 'new text'
     */
-  var updatedFields: FieldUpdates[TSchema] = js.native
+  var updatedFields: FieldUpdates[TSchema]
 }
 object RemovedFields {
   
@@ -27,7 +25,7 @@ object RemovedFields {
   }
   
   @scala.inline
-  implicit class RemovedFieldsMutableBuilder[Self <: RemovedFields[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with RemovedFields[TSchema]) extends AnyVal {
+  implicit class RemovedFieldsMutableBuilder[Self <: RemovedFields[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & RemovedFields[TSchema]) extends AnyVal {
     
     @scala.inline
     def setRemovedFields(value: js.Array[/* keyof TSchema */ String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])

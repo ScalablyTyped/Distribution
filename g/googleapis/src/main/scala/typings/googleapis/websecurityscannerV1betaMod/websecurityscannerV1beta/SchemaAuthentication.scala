@@ -2,24 +2,22 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Scan authentication configuration.
   */
-@js.native
 trait SchemaAuthentication extends StObject {
   
   /**
     * Authentication using a custom account.
     */
-  var customAccount: js.UndefOr[SchemaCustomAccount] = js.native
+  var customAccount: js.UndefOr[SchemaCustomAccount] = js.undefined
   
   /**
     * Authentication using a Google account.
     */
-  var googleAccount: js.UndefOr[SchemaGoogleAccount] = js.native
+  var googleAccount: js.UndefOr[SchemaGoogleAccount] = js.undefined
 }
 object SchemaAuthentication {
   

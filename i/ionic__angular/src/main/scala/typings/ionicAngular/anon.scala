@@ -5,30 +5,54 @@ import typings.ionicCore.interfaceMod.RouterDirection
 import typings.ionicCore.navInterfaceMod.NavDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Animation extends StObject {
     
-    var animation: NavDirection = js.native
+    var animation: NavDirection
     
-    def animationBuilder(baseEl: js.Any): typings.ionicCore.animationInterfaceMod.Animation = js.native
-    def animationBuilder(baseEl: js.Any, opts: js.Any): typings.ionicCore.animationInterfaceMod.Animation = js.native
+    def animationBuilder(baseEl: js.Any): typings.ionicCore.animationInterfaceMod.Animation
+    def animationBuilder(baseEl: js.Any, opts: js.Any): typings.ionicCore.animationInterfaceMod.Animation
     @JSName("animationBuilder")
-    var animationBuilder_Original: AnimationBuilder = js.native
+    var animationBuilder_Original: AnimationBuilder
     
-    var direction: RouterDirection = js.native
+    var direction: RouterDirection
+  }
+  object Animation {
+    
+    @scala.inline
+    def apply(
+      animation: NavDirection,
+      animationBuilder: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => typings.ionicCore.animationInterfaceMod.Animation,
+      direction: RouterDirection
+    ): Animation = {
+      val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animationBuilder = js.Any.fromFunction2(animationBuilder), direction = direction.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Animation]
+    }
+    
+    @scala.inline
+    implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAnimation(value: NavDirection): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAnimationBuilder(
+        value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => typings.ionicCore.animationInterfaceMod.Animation
+      ): Self = StObject.set(x, "animationBuilder", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDirection(value: RouterDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Inputs extends StObject {
     
-    var inputs: js.UndefOr[js.Any] = js.native
+    var inputs: js.UndefOr[js.Any] = js.undefined
     
-    var methods: js.UndefOr[js.Any] = js.native
+    var methods: js.UndefOr[js.Any] = js.undefined
   }
   object Inputs {
     
@@ -55,10 +79,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Tab extends StObject {
     
-    var tab: String = js.native
+    var tab: String
   }
   object Tab {
     

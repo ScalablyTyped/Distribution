@@ -6,7 +6,6 @@ import typings.ol.projMod.TransformFunction
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object immediateMod {
@@ -35,7 +34,7 @@ object immediateMod {
       extent: Extent,
       transform: Transform,
       viewRotation: Double,
-      opt_squaredTolerance: js.UndefOr[scala.Nothing],
+      opt_squaredTolerance: Double,
       opt_userTransform: TransformFunction
     ) = this()
     def this(
@@ -44,7 +43,7 @@ object immediateMod {
       extent: Extent,
       transform: Transform,
       viewRotation: Double,
-      opt_squaredTolerance: Double,
+      opt_squaredTolerance: Unit,
       opt_userTransform: TransformFunction
     ) = this()
   }

@@ -3,46 +3,44 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataFormat extends StObject {
   
-  val AllowFillIn: Boolean = js.native
+  val AllowFillIn: Boolean
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Choices: SafeArray[String] = js.native
+  val Choices: SafeArray[String]
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  val DecimalPlaces: Double = js.native
+  val DecimalPlaces: Double
   
-  val DefaultValue: js.Any = js.native
+  val DefaultValue: js.Any
   
   @JSName("Excel.ListDataFormat_typekey")
-  var ExcelDotListDataFormat_typekey: ListDataFormat = js.native
+  var ExcelDotListDataFormat_typekey: ListDataFormat
   
-  val IsPercent: Boolean = js.native
+  val IsPercent: Boolean
   
-  val MaxCharacters: Double = js.native
+  val MaxCharacters: Double
   
-  val MaxNumber: Double | Null = js.native
+  val MaxNumber: Double | Null
   
-  val MinNumber: Double | Null = js.native
+  val MinNumber: Double | Null
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val ReadOnly: Boolean = js.native
+  val ReadOnly: Boolean
   
-  val Required: Boolean = js.native
+  val Required: Boolean
   
-  val Type: XlListDataType = js.native
+  val Type: XlListDataType
   
-  val _Default: XlListDataType = js.native
+  val _Default: XlListDataType
   
-  val lcid: Double = js.native
+  val lcid: Double
 }
 object ListDataFormat {
   
@@ -64,7 +62,7 @@ object ListDataFormat {
     _Default: XlListDataType,
     lcid: Double
   ): ListDataFormat = {
-    val __obj = js.Dynamic.literal(AllowFillIn = AllowFillIn.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Choices = Choices.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DecimalPlaces = DecimalPlaces.asInstanceOf[js.Any], DefaultValue = DefaultValue.asInstanceOf[js.Any], IsPercent = IsPercent.asInstanceOf[js.Any], MaxCharacters = MaxCharacters.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Required = Required.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AllowFillIn = AllowFillIn.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], Choices = Choices.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DecimalPlaces = DecimalPlaces.asInstanceOf[js.Any], DefaultValue = DefaultValue.asInstanceOf[js.Any], IsPercent = IsPercent.asInstanceOf[js.Any], MaxCharacters = MaxCharacters.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], ReadOnly = ReadOnly.asInstanceOf[js.Any], Required = Required.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any], lcid = lcid.asInstanceOf[js.Any], MaxNumber = null, MinNumber = null)
     __obj.updateDynamic("Excel.ListDataFormat_typekey")(ExcelDotListDataFormat_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDataFormat]
   }

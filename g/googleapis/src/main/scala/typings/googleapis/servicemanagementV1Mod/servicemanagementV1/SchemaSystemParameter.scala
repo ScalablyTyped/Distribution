@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * either an HTTP header or a URL query parameter, and if both are passed the
   * behavior is implementation-dependent.
   */
-@js.native
 trait SchemaSystemParameter extends StObject {
   
   /**
     * Define the HTTP header name to use for the parameter. It is case
     * insensitive.
     */
-  var httpHeader: js.UndefOr[String] = js.native
+  var httpHeader: js.UndefOr[String] = js.undefined
   
   /**
     * Define the name of the parameter, such as &quot;api_key&quot; . It is
     * case sensitive.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Define the URL query parameter name to use for the parameter. It is case
     * sensitive.
     */
-  var urlQueryParameter: js.UndefOr[String] = js.native
+  var urlQueryParameter: js.UndefOr[String] = js.undefined
 }
 object SchemaSystemParameter {
   

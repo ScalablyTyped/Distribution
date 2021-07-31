@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupMembershipMod {
@@ -43,6 +42,10 @@ object groupMembershipMod {
   /* static members */
   object GroupMembership {
     
+    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GroupMembership resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object groupMembershipMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GroupMembership = js.native
-    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GroupMembership = js.native
-    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupMembershipState): GroupMembership = js.native
-    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupMembershipState, opts: CustomResourceOptions): GroupMembership = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupMembershipState): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupMembershipState, opts: CustomResourceOptions): GroupMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupMembership]
     
     /**
       * Returns true if the given object is an instance of GroupMembership.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupMembership.GroupMembership */ Boolean]
   }
   
-  @js.native
   trait GroupMembershipArgs extends StObject {
     
     /**
       * The IAM Group name to attach the list of `users` to
       */
-    val group: Input[String] = js.native
+    val group: Input[String]
     
     /**
       * The name to identify the Group Membership
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IAM User names to associate with the Group
       */
-    val users: Input[js.Array[Input[String]]] = js.native
+    val users: Input[js.Array[Input[String]]]
   }
   object GroupMembershipArgs {
     
@@ -120,23 +117,22 @@ object groupMembershipMod {
     }
   }
   
-  @js.native
   trait GroupMembershipState extends StObject {
     
     /**
       * The IAM Group name to attach the list of `users` to
       */
-    val group: js.UndefOr[Input[String]] = js.native
+    val group: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to identify the Group Membership
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IAM User names to associate with the Group
       */
-    val users: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val users: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object GroupMembershipState {
     

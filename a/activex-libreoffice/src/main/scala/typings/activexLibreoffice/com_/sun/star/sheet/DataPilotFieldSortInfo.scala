@@ -2,24 +2,22 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes how to sort a single {@link DataPilotField} */
-@js.native
 trait DataPilotFieldSortInfo extends StObject {
   
   /** contains the data field to sort by if the Mode is DATA */
-  var Field: String = js.native
+  var Field: String
   
   /** `TRUE` if data are sorted in ascending order, `FALSE` if in descending order. */
-  var IsAscending: Boolean = js.native
+  var IsAscending: Boolean
   
   /**
     * contains the sort mode
     * @see com.sun.star.sheet.DataPilotFieldSortMode
     */
-  var Mode: Double = js.native
+  var Mode: Double
 }
 object DataPilotFieldSortInfo {
   

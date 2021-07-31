@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetXssMatchSetResponse extends StObject {
   
   /**
     * Information about the XssMatchSet that you specified in the GetXssMatchSet request. For more information, see the following topics:    XssMatchSet: Contains Name, XssMatchSetId, and an array of XssMatchTuple objects    XssMatchTuple: Each XssMatchTuple object contains FieldToMatch and TextTransformation     FieldToMatch: Contains Data and Type   
     */
-  var XssMatchSet: js.UndefOr[typings.awsSdk.wafMod.XssMatchSet] = js.native
+  var XssMatchSet: js.UndefOr[typings.awsSdk.wafMod.XssMatchSet] = js.undefined
 }
 object GetXssMatchSetResponse {
   

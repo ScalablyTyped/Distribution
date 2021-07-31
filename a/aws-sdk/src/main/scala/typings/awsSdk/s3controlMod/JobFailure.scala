@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobFailure extends StObject {
   
   /**
     * The failure code, if any, for the specified job.
     */
-  var FailureCode: js.UndefOr[JobFailureCode] = js.native
+  var FailureCode: js.UndefOr[JobFailureCode] = js.undefined
   
   /**
     * The failure reason, if any, for the specified job.
     */
-  var FailureReason: js.UndefOr[JobFailureReason] = js.native
+  var FailureReason: js.UndefOr[JobFailureReason] = js.undefined
 }
 object JobFailure {
   

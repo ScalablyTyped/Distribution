@@ -3,35 +3,35 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSInterfaceDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait TSInterfaceDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var body: TSInterfaceBody_ = js.native
+  var body: TSInterfaceBody_
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var `extends`: js.Array[TSExpressionWithTypeArguments_] | Null = js.native
+  var `extends`: js.Array[TSExpressionWithTypeArguments_] | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TSTypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSInterfaceDeclaration_ : TSInterfaceDeclaration = js.native
+  var type_TSInterfaceDeclaration_ : TSInterfaceDeclaration
 }
 object TSInterfaceDeclaration_ {
   
   @scala.inline
-  def apply(body: TSInterfaceBody_, id: Identifier_, `type`: TSInterfaceDeclaration): TSInterfaceDeclaration_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: TSInterfaceBody_, id: Identifier_): TSInterfaceDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], declare = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSInterfaceDeclaration")
+    __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[TSInterfaceDeclaration_]
   }
   

@@ -4,19 +4,19 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ToastErrorProps extends ToastProps {
+trait ToastErrorProps
+  extends StObject
+     with ToastProps {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
-  var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var iconfontStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object ToastErrorProps {
   

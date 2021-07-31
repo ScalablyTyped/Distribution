@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePagesList extends StandardParameters {
+trait ParamsResourcePagesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An integer that specifies the current offset (that is, starting result
@@ -24,26 +24,26 @@ trait ParamsResourcePagesList extends StandardParameters {
     * example, 0 means to return results starting from the first matching
     * result, and 10 means to return from the 11th result.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The organization for which we want to fetch markups for. For instance,
     * "site.com". Cannot be specified along with an URL.
     */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * The pagination size. We will return up to that many results. Defaults to
     * 10 if not set. Has no effect if a URL is requested.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The pagination token. You may provide the `next_page_token` returned from
     * a previous List request, if any, in order to get the next page. All other
     * fields must have the same values as in the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The URL from which to get `ClaimReview` markup. There will be at most one
@@ -51,7 +51,7 @@ trait ParamsResourcePagesList extends StandardParameters {
     * provided, we will return that URL instead. Cannot be specified along with
     * an organization.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePagesList {
   

@@ -5,7 +5,6 @@ import typings.reactNativeMaps.mod.LineJoinType
 import typings.reactNativeMaps.mod.MapTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeMapsStrings {
@@ -16,12 +15,16 @@ object reactNativeMapsStrings {
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait bevel extends LineJoinType
+  sealed trait bevel
+    extends StObject
+       with LineJoinType
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait butt extends LineCapType
+  sealed trait butt
+    extends StObject
+       with LineCapType
   @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
   
@@ -46,7 +49,9 @@ object reactNativeMapsStrings {
   def google: google = "google".asInstanceOf[google]
   
   @js.native
-  sealed trait hybrid extends MapTypes
+  sealed trait hybrid
+    extends StObject
+       with MapTypes
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
@@ -71,17 +76,23 @@ object reactNativeMapsStrings {
   def `marker-select`: `marker-select` = "marker-select".asInstanceOf[`marker-select`]
   
   @js.native
-  sealed trait miter extends LineJoinType
+  sealed trait miter
+    extends StObject
+       with LineJoinType
   @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait mutedStandard extends MapTypes
+  sealed trait mutedStandard
+    extends StObject
+       with MapTypes
   @scala.inline
   def mutedStandard: mutedStandard = "mutedStandard".asInstanceOf[mutedStandard]
   
   @js.native
-  sealed trait none extends MapTypes
+  sealed trait none
+    extends StObject
+       with MapTypes
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -92,28 +103,37 @@ object reactNativeMapsStrings {
   
   @js.native
   sealed trait round
-    extends LineCapType
+    extends StObject
+       with LineCapType
        with LineJoinType
   @scala.inline
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait satellite extends MapTypes
+  sealed trait satellite
+    extends StObject
+       with MapTypes
   @scala.inline
   def satellite: satellite = "satellite".asInstanceOf[satellite]
   
   @js.native
-  sealed trait square extends LineCapType
+  sealed trait square
+    extends StObject
+       with LineCapType
   @scala.inline
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait standard extends MapTypes
+  sealed trait standard
+    extends StObject
+       with MapTypes
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait terrain extends MapTypes
+  sealed trait terrain
+    extends StObject
+       with MapTypes
   @scala.inline
   def terrain: terrain = "terrain".asInstanceOf[terrain]
 }

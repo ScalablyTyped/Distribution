@@ -8,7 +8,6 @@ import typings.typescript.mod.FunctionDeclaration
 import typings.typescript.mod.MethodDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionMod {

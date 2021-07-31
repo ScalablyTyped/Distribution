@@ -2,15 +2,13 @@ package typings.reactNativeGestureHandler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Animated extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Animated {
     
@@ -71,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AnimatedBoolean extends StObject {
     
-    var animated: Boolean = js.native
+    var animated: Boolean
   }
   object AnimatedBoolean {
     
@@ -92,20 +88,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var horizontal: js.UndefOr[Double] = js.native
+    var horizontal: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var vertical: js.UndefOr[Double] = js.native
+    var vertical: js.UndefOr[Double] = js.undefined
   }
   object Bottom {
     
@@ -156,12 +151,11 @@ object anon {
     }
   }
   
-  @js.native
   trait BottomHeight extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
   }
   object BottomHeight {
     
@@ -182,12 +176,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Height {
     
@@ -208,16 +201,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var viewOffset: js.UndefOr[Double] = js.native
+    var viewOffset: js.UndefOr[Double] = js.undefined
     
-    var viewPosition: js.UndefOr[Double] = js.native
+    var viewPosition: js.UndefOr[Double] = js.undefined
   }
   object Index {
     
@@ -253,14 +245,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Item[ItemT] extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var item: ItemT = js.native
+    var item: ItemT
     
-    var viewPosition: js.UndefOr[Double] = js.native
+    var viewPosition: js.UndefOr[Double] = js.undefined
   }
   object Item {
     
@@ -271,7 +262,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item[_], ItemT] (val x: Self with Item[ItemT]) extends AnyVal {
+    implicit class ItemMutableBuilder[Self <: Item[?], ItemT] (val x: Self & Item[ItemT]) extends AnyVal {
       
       @scala.inline
       def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
@@ -290,12 +281,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Left {
     
@@ -316,12 +306,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Offset {
     
@@ -345,12 +334,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Right extends StObject {
     
-    var right: Double = js.native
+    var right: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Right {
     

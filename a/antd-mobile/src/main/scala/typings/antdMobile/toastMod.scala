@@ -4,7 +4,6 @@ import typings.antdMobile.anon.PartialIToastConfig
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -27,212 +26,114 @@ object toastMod {
     @scala.inline
     def SHORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORT")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile/lib/toast", "default.config")
-    @js.native
-    def config(): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.config")
-    @js.native
-    def config(conf: PartialIToastConfig): Unit = js.native
+    @scala.inline
+    def config(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[Unit]
+    @scala.inline
+    def config(conf: PartialIToastConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(conf.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.fail")
-    @js.native
-    def fail(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = js.native
+    @scala.inline
+    def fail(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Double, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Unit, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def fail(content: ReactNode, duration: Unit, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.hide")
-    @js.native
-    def hide(): Unit = js.native
+    @scala.inline
+    def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.info")
-    @js.native
-    def info(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = js.native
+    @scala.inline
+    def info(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Double, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Unit, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def info(content: ReactNode, duration: Unit, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.loading")
-    @js.native
-    def loading(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = js.native
+    @scala.inline
+    def loading(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Double, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Unit, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def loading(content: ReactNode, duration: Unit, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.offline")
-    @js.native
-    def offline(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = js.native
+    @scala.inline
+    def offline(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Double, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Unit, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def offline(content: ReactNode, duration: Unit, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.show")
-    @js.native
-    def show(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.show")
-    @js.native
-    def show(content: ReactNode, duration: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.show")
-    @js.native
-    def show(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.show")
-    @js.native
-    def show(content: ReactNode, duration: Double, mask: Boolean): Unit = js.native
+    @scala.inline
+    def show(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def show(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def show(content: ReactNode, duration: Double, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def show(content: ReactNode, duration: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(
-      content: ReactNode,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode, duration: Double): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = js.native
-    @JSImport("antd-mobile/lib/toast", "default.success")
-    @js.native
-    def success(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = js.native
+    @scala.inline
+    def success(content: ReactNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Double, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Double, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Unit, onClose: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def success(content: ReactNode, duration: Unit, onClose: Unit, mask: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait IToastConfig extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var mask: Boolean = js.native
+    var mask: Boolean
   }
   object IToastConfig {
     

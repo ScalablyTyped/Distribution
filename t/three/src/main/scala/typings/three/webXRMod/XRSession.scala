@@ -3,44 +3,42 @@ package typings.three.webXRMod
 import typings.three.anon.PlaneDetectionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRSession extends StObject {
   
-  var addEventListener: js.Function = js.native
+  var addEventListener: js.Function
   
-  def cancelAnimationFrame(id: Double): Unit = js.native
+  def cancelAnimationFrame(id: Double): Unit
   
-  def end(): js.Promise[Unit] = js.native
+  def end(): js.Promise[Unit]
   
-  var environmentBlendMode: XREnvironmentBlendMode = js.native
+  var environmentBlendMode: XREnvironmentBlendMode
   
-  var inputSources: js.Array[XRInputSource] = js.native
+  var inputSources: js.Array[XRInputSource]
   
-  var removeEventListener: js.Function = js.native
+  var removeEventListener: js.Function
   
-  var renderState: XRRenderState = js.native
+  var renderState: XRRenderState
   
-  def requestAnimationFrame(callback: XRFrameRequestCallback): Double = js.native
+  def requestAnimationFrame(callback: XRFrameRequestCallback): Double
   
   // legacy AR hit test
-  def requestHitTest(ray: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]] = js.native
+  def requestHitTest(ray: XRRay, referenceSpace: XRReferenceSpace): js.Promise[js.Array[XRHitResult]]
   
   // hit test
-  def requestHitTestSource(options: XRHitTestOptionsInit): js.Promise[XRHitTestSource] = js.native
+  def requestHitTestSource(options: XRHitTestOptionsInit): js.Promise[XRHitTestSource]
   
-  def requestHitTestSourceForTransientInput(options: XRTransientInputHitTestOptionsInit): js.Promise[XRTransientInputHitTestSource] = js.native
+  def requestHitTestSourceForTransientInput(options: XRTransientInputHitTestOptionsInit): js.Promise[XRTransientInputHitTestSource]
   
-  def requestReferenceSpace(`type`: XRReferenceSpaceType): js.Promise[XRReferenceSpace] = js.native
+  def requestReferenceSpace(`type`: XRReferenceSpaceType): js.Promise[XRReferenceSpace]
   
-  def updateRenderState(renderStateInit: XRRenderStateInit): js.Promise[Unit] = js.native
+  def updateRenderState(renderStateInit: XRRenderStateInit): js.Promise[Unit]
   
   // legacy plane detection
-  def updateWorldTrackingState(options: PlaneDetectionState): Unit = js.native
+  def updateWorldTrackingState(options: PlaneDetectionState): Unit
   
-  var visibilityState: XRVisibilityState = js.native
+  var visibilityState: XRVisibilityState
 }
 object XRSession {
   

@@ -2,17 +2,15 @@ package typings.lyricist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
-  var attribution: Double = js.native
+  var attribution: Double
   
-  var pinned_role: js.UndefOr[js.Any] = js.native
+  var pinned_role: js.UndefOr[js.Any] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object Author {
   

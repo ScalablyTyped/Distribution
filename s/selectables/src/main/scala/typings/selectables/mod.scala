@@ -4,39 +4,48 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("selectables", JSImport.Namespace)
   @js.native
-  class ^ () extends Selectables {
+  class ^ ()
+    extends StObject
+       with Selectables {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def disable(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enable(): Unit = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var elements: js.UndefOr[String] = js.native
+    var elements: js.UndefOr[String] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String | Boolean] = js.native
+    var key: js.UndefOr[String | Boolean] = js.undefined
     
-    var moreUsing: js.UndefOr[String] = js.native
+    var moreUsing: js.UndefOr[String] = js.undefined
     
-    var onDeselect: js.UndefOr[js.Function1[/* el */ Element, Unit]] = js.native
+    var onDeselect: js.UndefOr[js.Function1[/* el */ Element, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* el */ Element, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* el */ Element, Unit]] = js.undefined
     
-    var selectedClass: js.UndefOr[String] = js.native
+    var selectedClass: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var start: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var stop: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+    var stop: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
     
-    var zone: js.UndefOr[String] = js.native
+    var zone: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -111,14 +120,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Selectables extends StObject {
     
-    def disable(): Unit = js.native
+    def disable(): Unit
     
-    def enable(): Unit = js.native
+    def enable(): Unit
     
-    var options: Options = js.native
+    var options: Options
   }
   object Selectables {
     

@@ -2,35 +2,33 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderControl_ extends StObject {
   
-  def getURL(): String = js.native
+  def getURL(): String
   
   /**
     * Bind a listener to an event emitted by the geocoder control. Supported additional events are
     */
-  def on(event: String, callback: js.Function): js.Any = js.native
+  def on(event: String, callback: js.Function): js.Any
   
-  def onAdd(map: Map_): js.Any = js.native
+  def onAdd(map: Map_): js.Any
   
   /**
     * Set the map id used for geocoding.
     */
-  def setID(id: String): js.Any = js.native
+  def setID(id: String): js.Any
   
   /**
     * Set the TileJSON used for geocoding.
     */
-  def setTileJSON(tilejson: js.Any): js.Any = js.native
+  def setTileJSON(tilejson: js.Any): js.Any
   
   /**
     * Set the url used for geocoding.
     */
-  def setURL(url: String): js.Any = js.native
+  def setURL(url: String): js.Any
 }
 object GeocoderControl_ {
   

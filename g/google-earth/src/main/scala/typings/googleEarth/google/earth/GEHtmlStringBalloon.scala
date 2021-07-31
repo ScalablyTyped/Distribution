@@ -2,25 +2,25 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GEHtmlStringBalloon extends GEHtmlBalloon {
+trait GEHtmlStringBalloon
+  extends StObject
+     with GEHtmlBalloon {
   
   /**
     * You can include any HTML using the contentString property.
     * When the balloon is visible, the content specified in contentString property,
     * is inserted directly into the balloon element in the web page.
     */
-  def getContentString(): String = js.native
+  def getContentString(): String
   
   /**
     * You can include any HTML using the contentString property.
     * When the balloon is visible, the content specified in contentString property,
     * is inserted directly into the balloon element in the web page.
     */
-  def setContentString(contentString: String): Unit = js.native
+  def setContentString(contentString: String): Unit
 }
 object GEHtmlStringBalloon {
   

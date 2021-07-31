@@ -3,57 +3,55 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapSchedulerRecurrenceInfo extends StObject {
   
-  def getDayNumber(): Double = js.native
+  def getDayNumber(): Double
   
-  def getDuration(): Double = js.native
+  def getDuration(): Double
   
-  def getEnd(): Date = js.native
+  def getEnd(): Date
   
-  def getMonth(): Double = js.native
+  def getMonth(): Double
   
-  def getOccurrenceCount(): Double = js.native
+  def getOccurrenceCount(): Double
   
-  def getPeriodicity(): Double = js.native
+  def getPeriodicity(): Double
   
-  def getRange(): BootstrapSchedulerRecurrenceRange = js.native
+  def getRange(): BootstrapSchedulerRecurrenceRange
   
-  def getRecurrenceType(): BootstrapSchedulerRecurrenceType = js.native
+  def getRecurrenceType(): BootstrapSchedulerRecurrenceType
   
-  def getStart(): Date = js.native
+  def getStart(): Date
   
-  def getWeekDays(): WeekDays = js.native
+  def getWeekDays(): WeekDays
   
-  def getWeekOfMonth(): WeekOfMonth = js.native
+  def getWeekOfMonth(): WeekOfMonth
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  def setDayNumber(dayNumber: Double): Unit = js.native
+  def setDayNumber(dayNumber: Double): Unit
   
-  def setDuration(duration: Double): Unit = js.native
+  def setDuration(duration: Double): Unit
   
-  def setEnd(end: Date): Unit = js.native
+  def setEnd(end: Date): Unit
   
-  def setMonth(month: Double): Unit = js.native
+  def setMonth(month: Double): Unit
   
-  def setOccurrenceCount(occurrenceCount: Double): Unit = js.native
+  def setOccurrenceCount(occurrenceCount: Double): Unit
   
-  def setPeriodicity(periodicity: Double): Unit = js.native
+  def setPeriodicity(periodicity: Double): Unit
   
-  def setRange(range: BootstrapSchedulerRecurrenceRange): Unit = js.native
+  def setRange(range: BootstrapSchedulerRecurrenceRange): Unit
   
-  def setRecurrenceType(`type`: BootstrapSchedulerRecurrenceType): Unit = js.native
+  def setRecurrenceType(`type`: BootstrapSchedulerRecurrenceType): Unit
   
-  def setStart(start: Date): Unit = js.native
+  def setStart(start: Date): Unit
   
-  def setWeekDays(weekDays: WeekDays): Unit = js.native
+  def setWeekDays(weekDays: WeekDays): Unit
   
-  def setWeekOfMonth(weekOfMonth: WeekOfMonth): Unit = js.native
+  def setWeekOfMonth(weekOfMonth: WeekOfMonth): Unit
 }
 object BootstrapSchedulerRecurrenceInfo {
   

@@ -3,15 +3,16 @@ package typings.wonderJs
 import typings.wonderJs.entityObjectMod.EntityObject
 import typings.wonderJs.eventBinderMod.EventBinder
 import typings.wonderJs.eventNameHandlerMod.EEventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/binder/CustomEventBinder", JSImport.Namespace)
-@js.native
-object customEventBinderMod extends js.Object {
+object customEventBinderMod {
+  
+  @JSImport("wonder.js/dist/es2015/event/binder/CustomEventBinder", "CustomEventBinder")
   @js.native
   class CustomEventBinder () extends EventBinder {
+    
     def off(): Unit = js.native
     def off(eventName: String): Unit = js.native
     def off(eventName: String, handler: js.Function): Unit = js.native
@@ -22,6 +23,7 @@ object customEventBinderMod extends js.Object {
     def off(target: EntityObject, eventName: String, handler: js.Function): Unit = js.native
     def off(target: EntityObject, eventName: EEventName): Unit = js.native
     def off(target: EntityObject, eventName: EEventName, handler: js.Function): Unit = js.native
+    
     def on(eventName: String, handler: js.Function): Unit = js.native
     def on(eventName: String, handler: js.Function, priority: Double): Unit = js.native
     def on(eventName: EEventName, handler: js.Function): Unit = js.native
@@ -31,12 +33,14 @@ object customEventBinderMod extends js.Object {
     def on(target: EntityObject, eventName: EEventName, handler: js.Function): Unit = js.native
     def on(target: EntityObject, eventName: EEventName, handler: js.Function, priority: Double): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object CustomEventBinder extends js.Object {
-    def getInstance(): js.Any = js.native
+  object CustomEventBinder {
+    
+    @JSImport("wonder.js/dist/es2015/event/binder/CustomEventBinder", "CustomEventBinder")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getInstance(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[js.Any]
   }
-  
 }
-

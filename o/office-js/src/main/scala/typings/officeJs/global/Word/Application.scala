@@ -3,7 +3,6 @@ package typings.officeJs.global.Word
 import typings.officeJs.OfficeExtension.ClientRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Word.Application")
 @js.native
 class Application ()
-  extends typings.officeJs.Word.Application
+  extends StObject
+     with typings.officeJs.Word.Application {
+  
+  /** The request context associated with the object */
+  /* CompleteClass */
+  var context: ClientRequestContext = js.native
+  
+  /**
+    *  Returns a boolean value for whether the corresponding object is a null object. You must call `context.sync()` before reading the 
+    * isNullObject property.
+    */
+  /* CompleteClass */
+  var isNullObject: Boolean = js.native
+}
 object Application {
+  
+  @JSGlobal("Word.Application")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Create a new instance of Word.Application object
     */
   /* static member */
-  @JSGlobal("Word.Application.newObject")
-  @js.native
-  def newObject(context: ClientRequestContext): typings.officeJs.Word.Application = js.native
+  @scala.inline
+  def newObject(context: ClientRequestContext): typings.officeJs.Word.Application = ^.asInstanceOf[js.Dynamic].applyDynamic("newObject")(context.asInstanceOf[js.Any]).asInstanceOf[typings.officeJs.Word.Application]
 }

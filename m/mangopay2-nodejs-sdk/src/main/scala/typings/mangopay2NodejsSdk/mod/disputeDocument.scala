@@ -4,20 +4,18 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALIDATION_ASKED
 import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object disputeDocument {
   
-  @js.native
   trait CreateDisputeDocument extends StObject {
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
     /**
       * Gives the type of the KYC document
       */
-    var Type: DisputeDocumentType = js.native
+    var Type: DisputeDocumentType
   }
   object CreateDisputeDocument {
     
@@ -48,7 +46,6 @@ object disputeDocument {
     * Remember to change Status to "VALIDATION_ASKED" to submit KYC documents
     * The maximum size per page is about 7Mb (or 10Mb when base64encoded). The following formats are accepted for the documents : .pdf, .jpeg, .jpg, .gif and .png. The minimum size is 1Kb.
     */
-  @js.native
   trait CreateDisputeDocumentPage extends StObject {
     
     /**
@@ -64,7 +61,7 @@ object disputeDocument {
       * }
       * ```
       */
-    var File: String = js.native
+    var File: String
   }
   object CreateDisputeDocumentPage {
     
@@ -82,43 +79,44 @@ object disputeDocument {
     }
   }
   
-  @js.native
-  trait DisputeDocumentData extends EntityBaseData {
+  trait DisputeDocumentData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * The Id of a Dispute
       */
-    var DisputeId: String = js.native
+    var DisputeId: String
     
     /**
       * The date when the document was processed by MANGOPAY
       */
-    var ProcessedDate: Timestamp = js.native
+    var ProcessedDate: Timestamp
     
     /**
       * The message accompanying a refusal
       */
-    var RefusedReasonMessage: String = js.native
+    var RefusedReasonMessage: String
     
     /**
       * The type of reason for refusal
       */
-    var RefusedReasonType: typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType = js.native
+    var RefusedReasonType: typings.mangopay2NodejsSdk.mod.disputeDocument.RefusedReasonType
     
     /**
       * The status of this KYC/Dispute document
       */
-    var Status: DocumentStatus = js.native
+    var Status: DocumentStatus
     
     /**
       * Gives the type of the KYC document
       */
-    var Type: DisputeDocumentType = js.native
+    var Type: DisputeDocumentType
     
     /**
       * The object owner's UserId
       */
-    var UserId: String = js.native
+    var UserId: String
   }
   object DisputeDocumentData {
     
@@ -199,18 +197,17 @@ object disputeDocument {
     def USER_CORRESPONDANCE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE = "USER_CORRESPONDANCE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.USER_CORRESPONDANCE]
   }
   
-  @js.native
   trait DocumentPageConsult extends StObject {
     
     /**
       * Time in millis when the page consult will expire.
       */
-    var ExpirationDate: Timestamp = js.native
+    var ExpirationDate: Timestamp
     
     /**
       * URL where this document page can be viewed.
       */
-    var Url: String = js.native
+    var Url: String
   }
   object DocumentPageConsult {
     
@@ -291,21 +288,20 @@ object disputeDocument {
     def SPECIFIC_CASE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE = "SPECIFIC_CASE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPECIFIC_CASE]
   }
   
-  @js.native
   trait SubmitDisputeDocument extends StObject {
     
     /**
       * The status of this KYC/Dispute document
       */
-    var Status: VALIDATION_ASKED = js.native
+    var Status: VALIDATION_ASKED
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object SubmitDisputeDocument {
     
     @scala.inline
-    def apply(Status: VALIDATION_ASKED): SubmitDisputeDocument = {
-      val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
+    def apply(): SubmitDisputeDocument = {
+      val __obj = js.Dynamic.literal(Status = "VALIDATION_ASKED")
       __obj.asInstanceOf[SubmitDisputeDocument]
     }
     

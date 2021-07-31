@@ -5,21 +5,19 @@ import typings.ionic.ionicStrings.development
 import typings.ionic.ionicStrings.production
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityProfile extends StObject {
   
-  var created: String = js.native
+  var created: String
   
-  var credentials: Android = js.native
+  var credentials: Android
   
-  var name: String = js.native
+  var name: String
   
-  var tag: String = js.native
+  var tag: String
   
-  var `type`: development | production = js.native
+  var `type`: development | production
 }
 object SecurityProfile {
   

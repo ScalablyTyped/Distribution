@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuditTasksRequest extends StObject {
   
   /**
     * The end of the time period.
     */
-  var endTime: Timestamp = js.native
+  var endTime: Timestamp
   
   /**
     * The maximum number of results to return at one time. The default is 25.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The beginning of the time period. Audit information is retained for a limited time (90 days). Requesting a start time prior to what is retained results in an "InvalidRequestException".
     */
-  var startTime: Timestamp = js.native
+  var startTime: Timestamp
   
   /**
     * A filter to limit the output to audits with the specified completion status: can be one of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
     */
-  var taskStatus: js.UndefOr[AuditTaskStatus] = js.native
+  var taskStatus: js.UndefOr[AuditTaskStatus] = js.undefined
   
   /**
     * A filter to limit the output to the specified type of audit: can be one of "ON_DEMAND_AUDIT_TASK" or "SCHEDULED__AUDIT_TASK".
     */
-  var taskType: js.UndefOr[AuditTaskType] = js.native
+  var taskType: js.UndefOr[AuditTaskType] = js.undefined
 }
 object ListAuditTasksRequest {
   

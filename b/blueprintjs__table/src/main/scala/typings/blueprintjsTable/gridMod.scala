@@ -5,7 +5,6 @@ import typings.blueprintjsTable.rectMod.Rect
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridMod {
@@ -23,24 +22,12 @@ object gridMod {
       */
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double]) = this()
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double) = this()
-    def this(
-      rowHeights: js.Array[Double],
-      columnWidths: js.Array[Double],
-      bleed: js.UndefOr[scala.Nothing],
-      ghostHeight: Double
-    ) = this()
     def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Double, ghostHeight: Double) = this()
+    def this(rowHeights: js.Array[Double], columnWidths: js.Array[Double], bleed: Unit, ghostHeight: Double) = this()
     def this(
       rowHeights: js.Array[Double],
       columnWidths: js.Array[Double],
-      bleed: js.UndefOr[scala.Nothing],
-      ghostHeight: js.UndefOr[scala.Nothing],
-      ghostWidth: Double
-    ) = this()
-    def this(
-      rowHeights: js.Array[Double],
-      columnWidths: js.Array[Double],
-      bleed: js.UndefOr[scala.Nothing],
+      bleed: Double,
       ghostHeight: Double,
       ghostWidth: Double
     ) = this()
@@ -48,14 +35,21 @@ object gridMod {
       rowHeights: js.Array[Double],
       columnWidths: js.Array[Double],
       bleed: Double,
-      ghostHeight: js.UndefOr[scala.Nothing],
+      ghostHeight: Unit,
       ghostWidth: Double
     ) = this()
     def this(
       rowHeights: js.Array[Double],
       columnWidths: js.Array[Double],
-      bleed: Double,
+      bleed: Unit,
       ghostHeight: Double,
+      ghostWidth: Double
+    ) = this()
+    def this(
+      rowHeights: js.Array[Double],
+      columnWidths: js.Array[Double],
+      bleed: Unit,
+      ghostHeight: Unit,
       ghostWidth: Double
     ) = this()
     
@@ -85,9 +79,9 @@ object gridMod {
       * given `Rect` argument.
       */
     def getColumnIndicesInRect(rect: Rect): IColumnIndices = js.native
-    def getColumnIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IColumnIndices = js.native
     def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean): IColumnIndices = js.native
     def getColumnIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IColumnIndices = js.native
+    def getColumnIndicesInRect(rect: Rect, includeGhostCells: Unit, limit: Double): IColumnIndices = js.native
     
     /**
       * Returns the `Rect` with the base coordinate and width of the specified column.
@@ -132,9 +126,9 @@ object gridMod {
       * `Rect` argument.
       */
     def getRowIndicesInRect(rect: Rect): IRowIndices = js.native
-    def getRowIndicesInRect(rect: Rect, includeGhostCells: js.UndefOr[scala.Nothing], limit: Double): IRowIndices = js.native
     def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean): IRowIndices = js.native
     def getRowIndicesInRect(rect: Rect, includeGhostCells: Boolean, limit: Double): IRowIndices = js.native
+    def getRowIndicesInRect(rect: Rect, includeGhostCells: Unit, limit: Double): IRowIndices = js.native
     
     /**
       * Returns the `Rect` with the base coordinate and height of the specified row.
@@ -226,12 +220,11 @@ object gridMod {
   
   type ICellMapper[T] = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, T]
   
-  @js.native
   trait IColumnIndices extends StObject {
     
-    var columnIndexEnd: Double = js.native
+    var columnIndexEnd: Double
     
-    var columnIndexStart: Double = js.native
+    var columnIndexStart: Double
   }
   object IColumnIndices {
     
@@ -254,12 +247,11 @@ object gridMod {
   
   type IColumnMapper[T] = js.Function1[/* columnIndex */ Double, T]
   
-  @js.native
   trait IRowIndices extends StObject {
     
-    var rowIndexEnd: Double = js.native
+    var rowIndexEnd: Double
     
-    var rowIndexStart: Double = js.native
+    var rowIndexStart: Double
   }
   object IRowIndices {
     

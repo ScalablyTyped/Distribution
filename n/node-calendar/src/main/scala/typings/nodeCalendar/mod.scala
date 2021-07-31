@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -207,8 +206,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalDayError () extends Error {
+  class IllegalDayError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-calendar", "IllegalLocaleError")
@@ -217,8 +224,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalLocaleError () extends Error {
+  class IllegalLocaleError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-calendar", "IllegalMonthError")
@@ -227,8 +242,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalMonthError () extends Error {
+  class IllegalMonthError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-calendar", "IllegalTimeError")
@@ -237,8 +260,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalTimeError () extends Error {
+  class IllegalTimeError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-calendar", "IllegalWeekdayError")
@@ -247,8 +278,16 @@ object mod {
     * @param {string} message
     *  Optional custom error message.
     */
-  class IllegalWeekdayError () extends Error {
+  class IllegalWeekdayError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("node-calendar", "JANUARY")
@@ -349,13 +388,11 @@ object mod {
   @scala.inline
   def dayName_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_name")(x.asInstanceOf[js.Any])
   
-  @JSImport("node-calendar", "isleap")
-  @js.native
-  def isleap(year: Double): Boolean = js.native
+  @scala.inline
+  def isleap(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isleap")(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("node-calendar", "leapdays")
-  @js.native
-  def leapdays(y1: Double, y2: Double): Double = js.native
+  @scala.inline
+  def leapdays(y1: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("leapdays")(y1.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("node-calendar", "month_abbr")
   @js.native
@@ -371,22 +408,17 @@ object mod {
   @scala.inline
   def monthName_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("month_name")(x.asInstanceOf[js.Any])
   
-  @JSImport("node-calendar", "monthrange")
-  @js.native
-  def monthrange(year: Double, month: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def monthrange(year: Double, month: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthrange")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("node-calendar", "setlocale")
-  @js.native
-  def setlocale(): Unit = js.native
-  @JSImport("node-calendar", "setlocale")
-  @js.native
-  def setlocale(locale: String): Unit = js.native
+  @scala.inline
+  def setlocale(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")().asInstanceOf[Unit]
+  @scala.inline
+  def setlocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setlocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("node-calendar", "timegm")
-  @js.native
-  def timegm(timegmt: js.Tuple6[Double, Double, Double, Double, Double, Double]): Double = js.native
+  @scala.inline
+  def timegm(timegmt: js.Tuple6[Double, Double, Double, Double, Double, Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timegm")(timegmt.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("node-calendar", "weekday")
-  @js.native
-  def weekday(year: Double, month: Double, day: Double): Double = js.native
+  @scala.inline
+  def weekday(year: Double, month: Double, day: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("weekday")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

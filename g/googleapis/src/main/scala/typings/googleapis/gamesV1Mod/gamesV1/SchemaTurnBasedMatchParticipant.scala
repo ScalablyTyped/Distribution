@@ -2,44 +2,42 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a participant in a turn-based match.
   */
-@js.native
 trait SchemaTurnBasedMatchParticipant extends StObject {
   
   /**
     * True if this participant was auto-matched with the requesting player.
     */
-  var autoMatched: js.UndefOr[Boolean] = js.native
+  var autoMatched: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information about a player that has been anonymously auto-matched against
     * the requesting player. (Either player or autoMatchedPlayer will be set.)
     */
-  var autoMatchedPlayer: js.UndefOr[SchemaAnonymousPlayer] = js.native
+  var autoMatchedPlayer: js.UndefOr[SchemaAnonymousPlayer] = js.undefined
   
   /**
     * An identifier for the participant in the scope of the match. Cannot be
     * used to identify a player across matches or in other contexts.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#turnBasedMatchParticipant.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the player. Not populated if this player was
     * anonymously auto-matched against the requesting player. (Either player or
     * autoMatchedPlayer will be set.)
     */
-  var player: js.UndefOr[SchemaPlayer] = js.native
+  var player: js.UndefOr[SchemaPlayer] = js.undefined
   
   /**
     * The status of the participant with respect to the match. Possible values
@@ -57,7 +55,7 @@ trait SchemaTurnBasedMatchParticipant extends StObject {
     * &quot;PARTICIPANT_UNRESPONSIVE&quot; - The participant did not take their
     * turn in the allotted time.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaTurnBasedMatchParticipant {
   

@@ -12,7 +12,6 @@ import typings.officeJs.officeJsStrings.Columns
 import typings.officeJs.officeJsStrings.Rows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartCollection extends ClientObject {
+trait ChartCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Creates a new chart.
@@ -120,7 +121,7 @@ trait ChartCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ChartCollection = js.native
-  def load(options: ChartCollectionLoadOptions with CollectionLoadOptions): ChartCollection = js.native
+  def load(options: ChartCollectionLoadOptions & CollectionLoadOptions): ChartCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ChartCollection = js.native
   def load(propertyNames: String): ChartCollection = js.native
   def load(propertyNames: js.Array[String]): ChartCollection = js.native

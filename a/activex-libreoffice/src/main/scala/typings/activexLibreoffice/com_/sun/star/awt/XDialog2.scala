@@ -3,21 +3,21 @@ package typings.activexLibreoffice.com_.sun.star.awt
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Makes it possible to end a dialog and set a help id.
   * @since OOo 3.0
   */
-@js.native
-trait XDialog2 extends XDialog {
+trait XDialog2
+  extends StObject
+     with XDialog {
   
   /** hides the dialog and then causes {@link XDialog.execute()} to return with the given result value. */
-  def endDialog(Result: Double): Unit = js.native
+  def endDialog(Result: Double): Unit
   
   /** sets the help id so that the standard help button action will show the appropriate help page. */
-  def setHelpId(Id: String): Unit = js.native
+  def setHelpId(Id: String): Unit
 }
 object XDialog2 {
   

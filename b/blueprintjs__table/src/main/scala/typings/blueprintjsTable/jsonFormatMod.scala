@@ -4,7 +4,6 @@ import typings.blueprintjsTable.truncatedFormatMod.ITruncatedFormatProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonFormatMod {
@@ -40,11 +39,12 @@ object jsonFormatMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IJSONFormatProps extends ITruncatedFormatProps {
+  trait IJSONFormatProps
+    extends StObject
+       with ITruncatedFormatProps {
     
     @JSName("children")
-    var children_IJSONFormatProps: js.UndefOr[js.Any] = js.native
+    var children_IJSONFormatProps: js.UndefOr[js.Any] = js.undefined
     
     /**
       * By default, we omit stringifying native JavaScript strings since
@@ -52,13 +52,13 @@ object jsonFormatMod {
       * This behavior can be turned off by setting this boolean to `false`.
       * @default true
       */
-    var omitQuotesOnStrings: js.UndefOr[Boolean] = js.native
+    var omitQuotesOnStrings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionally specify the stringify method. Default is `JSON.stringify`
       * with 2-space indentation.
       */
-    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.native
+    var stringify: js.UndefOr[js.Function1[/* obj */ js.Any, String]] = js.undefined
   }
   object IJSONFormatProps {
     

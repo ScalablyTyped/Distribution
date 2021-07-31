@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument extends StObject {
   
   /**
     * If requested by integrator, billing address for the instrument in use
     * will be included.
     */
-  var billingAddress: js.UndefOr[GoogleTypePostalAddress] = js.native
+  var billingAddress: js.UndefOr[GoogleTypePostalAddress] = js.undefined
   
   /**
     * Google provided payment instrument.
     */
-  var instrumentToken: js.UndefOr[String] = js.native
+  var instrumentToken: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2OrdersPaymentInfoGoogleProvidedPaymentInstrument {
   

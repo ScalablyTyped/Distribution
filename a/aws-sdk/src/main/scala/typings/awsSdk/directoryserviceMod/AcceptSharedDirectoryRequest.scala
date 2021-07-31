@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptSharedDirectoryRequest extends StObject {
   
   /**
     * Identifier of the shared directory in the directory consumer account. This identifier is different for each directory owner account. 
     */
-  var SharedDirectoryId: DirectoryId = js.native
+  var SharedDirectoryId: DirectoryId
 }
 object AcceptSharedDirectoryRequest {
   

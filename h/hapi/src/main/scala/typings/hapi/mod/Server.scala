@@ -20,7 +20,6 @@ import typings.node.zlibMod.Gunzip_
 import typings.node.zlibMod.Gzip_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hapi", "Server")
@@ -140,7 +139,7 @@ class Server () extends StObject {
     `type`: request,
     property: DecorateName,
     method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, _], 
+      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
       js.Function1[/* request */ Request, DecorationMethod[Request]]
     ],
     options: Extend
@@ -153,7 +152,10 @@ class Server () extends StObject {
   def decorate_server(
     `type`: server,
     property: DecorateName,
-    method: js.Function1[/* existing */ js.Function1[/* repeated */ js.Any, _], DecorationMethod[this.type]],
+    method: js.Function1[
+      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
+      DecorationMethod[this.type]
+    ],
     options: `0`
   ): Unit = js.native
   @JSName("decorate")
@@ -165,7 +167,7 @@ class Server () extends StObject {
     `type`: toolkit,
     property: DecorateName,
     method: js.Function1[
-      /* existing */ js.Function1[/* repeated */ js.Any, _], 
+      /* existing */ js.Function1[/* repeated */ js.Any, js.Any], 
       DecorationMethod[ResponseToolkit]
     ],
     options: `0`
@@ -395,21 +397,21 @@ class Server () extends StObject {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serverlogtags-data-timestamp)
     */
   def log(tags: String): Unit = js.native
-  def log(tags: String, data: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def log(tags: String, data: String): Unit = js.native
   def log(tags: String, data: String, timestamp: Double): Unit = js.native
-  def log(tags: String, data: js.Function0[_]): Unit = js.native
-  def log(tags: String, data: js.Function0[_], timestamp: Double): Unit = js.native
+  def log(tags: String, data: js.Function0[js.Any]): Unit = js.native
+  def log(tags: String, data: js.Function0[js.Any], timestamp: Double): Unit = js.native
   def log(tags: String, data: js.Object): Unit = js.native
   def log(tags: String, data: js.Object, timestamp: Double): Unit = js.native
+  def log(tags: String, data: Unit, timestamp: Double): Unit = js.native
   def log(tags: js.Array[String]): Unit = js.native
-  def log(tags: js.Array[String], data: js.UndefOr[scala.Nothing], timestamp: Double): Unit = js.native
   def log(tags: js.Array[String], data: String): Unit = js.native
   def log(tags: js.Array[String], data: String, timestamp: Double): Unit = js.native
-  def log(tags: js.Array[String], data: js.Function0[_]): Unit = js.native
-  def log(tags: js.Array[String], data: js.Function0[_], timestamp: Double): Unit = js.native
+  def log(tags: js.Array[String], data: js.Function0[js.Any]): Unit = js.native
+  def log(tags: js.Array[String], data: js.Function0[js.Any], timestamp: Double): Unit = js.native
   def log(tags: js.Array[String], data: js.Object): Unit = js.native
   def log(tags: js.Array[String], data: js.Object, timestamp: Double): Unit = js.native
+  def log(tags: js.Array[String], data: Unit, timestamp: Double): Unit = js.native
   
   /**
     * Looks up a route configuration where:
@@ -511,11 +513,14 @@ class Server () extends StObject {
     */
   val realm: ServerRealm = js.native
   
-  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]]): js.Promise[Unit] = js.native
-  def register(plugins: js.Array[Plugin[_] | ServerRegisterPluginObject[_]], options: ServerRegisterOptions): js.Promise[Unit] = js.native
+  def register(plugins: js.Array[Plugin[js.Any] | ServerRegisterPluginObject[js.Any]]): js.Promise[Unit] = js.native
+  def register(
+    plugins: js.Array[Plugin[js.Any] | ServerRegisterPluginObject[js.Any]],
+    options: ServerRegisterOptions
+  ): js.Promise[Unit] = js.native
   /* tslint:disable-next-line:unified-signatures */
-  def register(plugins: Plugin[_]): js.Promise[Unit] = js.native
-  def register(plugins: Plugin[_], options: ServerRegisterOptions): js.Promise[Unit] = js.native
+  def register(plugins: Plugin[js.Any]): js.Promise[Unit] = js.native
+  def register(plugins: Plugin[js.Any], options: ServerRegisterOptions): js.Promise[Unit] = js.native
   /**
     * Registers a plugin where:
     * @param plugins - one or an array of:

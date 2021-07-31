@@ -3,17 +3,15 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.SharedNotebookPrivilegeLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookDescription extends StObject {
   
-  var notebookDescription: js.UndefOr[String] = js.native
+  var notebookDescription: js.UndefOr[String] = js.undefined
   
-  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.native
+  var privilege: js.UndefOr[SharedNotebookPrivilegeLevel] = js.undefined
   
-  var recommended: js.UndefOr[Boolean] = js.native
+  var recommended: js.UndefOr[Boolean] = js.undefined
 }
 object NotebookDescription {
   

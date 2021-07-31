@@ -2,14 +2,12 @@ package typings.semanticUiVisibility.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.VisibilitySettings._Impl, 'refreshOnResize'> */
-@js.native
 trait PickImplrefreshOnResize extends StObject {
   
-  var refreshOnResize: Boolean = js.native
+  var refreshOnResize: Boolean
 }
 object PickImplrefreshOnResize {
   

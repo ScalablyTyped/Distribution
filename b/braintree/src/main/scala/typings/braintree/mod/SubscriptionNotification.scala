@@ -3,18 +3,17 @@ package typings.braintree.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionNotification
-  extends BaseWebhookNotification
+  extends StObject
+     with BaseWebhookNotification
      with WebhookNotification {
   
   @JSName("kind")
-  var kind_SubscriptionNotification: SubscriptionNotificationKind = js.native
+  var kind_SubscriptionNotification: SubscriptionNotificationKind
   
-  var subscription: Subscription = js.native
+  var subscription: Subscription
 }
 object SubscriptionNotification {
   

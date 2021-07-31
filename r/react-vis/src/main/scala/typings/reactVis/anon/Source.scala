@@ -3,15 +3,13 @@ package typings.reactVis.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var source: Double | StringDictionary[js.Any] = js.native
+  var source: Double | StringDictionary[js.Any]
   
-  var target: Double | StringDictionary[js.Any] = js.native
+  var target: Double | StringDictionary[js.Any]
 }
 object Source {
   

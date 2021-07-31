@@ -8,7 +8,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,14 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#compressionoptions|`compression([options]) documentation`}
     */
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("compression", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("compression", JSImport.Namespace)
-  @js.native
-  def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The default `filter` function. This is used to construct a custom filter function that is an extension of the default function.
@@ -52,9 +53,8 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#filter-1|`.filter` documentation}
     */
-  @JSImport("compression", "filter")
-  @js.native
-  def filter(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Boolean = js.native
+  @scala.inline
+  def filter(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * A function to decide if the response should be considered for compression.
@@ -69,9 +69,9 @@ object mod {
     * compression() accepts these properties in the options object.
     * In addition to those listed below, `zlib` options may be passed in to the options object.
     */
-  @js.native
   trait CompressionOptions
-    extends /**
+    extends StObject
+       with /**
     * In addition , `zlib` options may be passed in to the options object.
     */
   /* property */ StringDictionary[js.Any] {
@@ -81,7 +81,7 @@ object mod {
       * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning| Node.js documentation}
       * @see {@link https://github.com/expressjs/compression#chunksize|chunkSize documentation}
       */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /**
       * A function to decide if the response should be considered for compression. This function is called as
@@ -94,7 +94,7 @@ object mod {
       * @see {@link https://github.com/expressjs/compression#filter|`filter` documentation}
       * @see {@link https://www.npmjs.com/package/compressible|compressible module}
       */
-    var filter: js.UndefOr[CompressionFilter] = js.native
+    var filter: js.UndefOr[CompressionFilter] = js.undefined
     
     /**
       * The level of zlib compression to apply to responses. A higher level will result in better compression, but
@@ -121,7 +121,7 @@ object mod {
       * @default zlib.constants.DEFAULT_COMPRESSION or -1
       * @see {@link https://github.com/expressjs/compression#level|`level` documentation}
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /**
       * This specifies how much memory should be allocated for the internal compression state and is an integer in
@@ -131,7 +131,7 @@ object mod {
       * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
       * @see {@link https://github.com/expressjs/compression#memlevel|`memLevel` documentation}
       */
-    var memLevel: js.UndefOr[Double] = js.native
+    var memLevel: js.UndefOr[Double] = js.undefined
     
     /**
       * This is used to tune the compression algorithm. This value only affects the compression ratio, not the
@@ -149,7 +149,7 @@ object mod {
       *
       * **Note** in the list above, `zlib` is from `zlib = require('zlib')`.
       */
-    var strategy: js.UndefOr[Double] = js.native
+    var strategy: js.UndefOr[Double] = js.undefined
     
     /**
       * The byte threshold for the response body size before compression is considered for the response, defaults to
@@ -162,13 +162,13 @@ object mod {
       * @see {@link https://www.npmjs.com/package/bytes|`bytes` module}
       * @see {@link https://github.com/expressjs/compression#threshold|`threshold` documentation}
       */
-    var threshold: js.UndefOr[Double | String] = js.native
+    var threshold: js.UndefOr[Double | String] = js.undefined
     
     /**
       * @default zlib.constants.Z_DEFAULT_WINDOWBITS or 15.
       * @see {@link http://nodejs.org/api/zlib.html#zlib_memory_usage_tuning|Node.js documentation}
       */
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object CompressionOptions {
     
@@ -232,13 +232,12 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Response extends StObject {
         
         /**
           * Forces the partially-compressed response to be flushed to the client.
           */
-        def flush(): Unit = js.native
+        def flush(): Unit
       }
       object Response {
         

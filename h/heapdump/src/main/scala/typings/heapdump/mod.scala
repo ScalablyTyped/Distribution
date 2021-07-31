@@ -3,30 +3,28 @@ package typings.heapdump
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("heapdump", "writeSnapshot")
+  @JSImport("heapdump", JSImport.Namespace)
   @js.native
-  def writeSnapshot(): Unit = js.native
-  @JSImport("heapdump", "writeSnapshot")
-  @js.native
-  def writeSnapshot(callback: js.Function2[/* err */ Error | Null, /* filename */ js.UndefOr[String], Unit]): Unit = js.native
-  @JSImport("heapdump", "writeSnapshot")
-  @js.native
-  def writeSnapshot(
-    dumpFileName: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ Error | Null, /* filename */ js.UndefOr[String], Unit]
-  ): Unit = js.native
-  @JSImport("heapdump", "writeSnapshot")
-  @js.native
-  def writeSnapshot(dumpFileName: String): Unit = js.native
-  @JSImport("heapdump", "writeSnapshot")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def writeSnapshot(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")().asInstanceOf[Unit]
+  @scala.inline
+  def writeSnapshot(callback: js.Function2[/* err */ Error | Null, /* filename */ js.UndefOr[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def writeSnapshot(dumpFileName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dumpFileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def writeSnapshot(
     dumpFileName: String,
     callback: js.Function2[/* err */ Error | Null, /* filename */ js.UndefOr[String], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dumpFileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeSnapshot(
+    dumpFileName: Unit,
+    callback: js.Function2[/* err */ Error | Null, /* filename */ js.UndefOr[String], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSnapshot")(dumpFileName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

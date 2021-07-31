@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplySchemaResponse extends StObject {
   
   /**
     * The applied schema ARN that is associated with the copied schema in the Directory. You can use this ARN to describe the schema information applied on this directory. For more information, see arns.
     */
-  var AppliedSchemaArn: js.UndefOr[Arn] = js.native
+  var AppliedSchemaArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN that is associated with the Directory. For more information, see arns.
     */
-  var DirectoryArn: js.UndefOr[Arn] = js.native
+  var DirectoryArn: js.UndefOr[Arn] = js.undefined
 }
 object ApplySchemaResponse {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoStreamMod {
@@ -25,7 +24,7 @@ object videoStreamMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VideoStreamArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VideoStreamArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -77,6 +76,10 @@ object videoStreamMod {
   /* static members */
   object VideoStream {
     
+    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VideoStream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -86,61 +89,55 @@ object videoStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VideoStream = js.native
-    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VideoStream = js.native
-    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VideoStreamState): VideoStream = js.native
-    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): VideoStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VideoStreamState): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
     
     /**
       * Returns true if the given object is an instance of VideoStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesis/videoStream", "VideoStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean]
   }
   
-  @js.native
   trait VideoStreamArgs extends StObject {
     
     /**
       * The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is `0`, indicating that the stream does not persist data.
       */
-    val dataRetentionInHours: js.UndefOr[Input[Double]] = js.native
+    val dataRetentionInHours: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the device that is writing to the stream. **In the current implementation, Kinesis Video Streams does not use this name.**
       */
-    val deviceName: js.UndefOr[Input[String]] = js.native
+    val deviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS Key Management Service (AWS KMS) key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (`aws/kinesisvideo`) is used.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml). If you choose to specify the MediaType, see [Naming Requirements](https://tools.ietf.org/html/rfc6838#section-4.2) for guidelines.
       */
-    val mediaType: js.UndefOr[Input[String]] = js.native
+    val mediaType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the
       * AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VideoStreamArgs {
     
@@ -191,54 +188,53 @@ object videoStreamMod {
     }
   }
   
-  @js.native
   trait VideoStreamState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the Stream (same as `id`)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A time stamp that indicates when the stream was created.
       */
-    val creationTime: js.UndefOr[Input[String]] = js.native
+    val creationTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of hours that you want to retain the data in the stream. Kinesis Video Streams retains the data in a data store that is associated with the stream. The default value is `0`, indicating that the stream does not persist data.
       */
-    val dataRetentionInHours: js.UndefOr[Input[Double]] = js.native
+    val dataRetentionInHours: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the device that is writing to the stream. **In the current implementation, Kinesis Video Streams does not use this name.**
       */
-    val deviceName: js.UndefOr[Input[String]] = js.native
+    val deviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS Key Management Service (AWS KMS) key that you want Kinesis Video Streams to use to encrypt stream data. If no key ID is specified, the default, Kinesis Video-managed key (`aws/kinesisvideo`) is used.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see [Media Types](http://www.iana.org/assignments/media-types/media-types.xhtml). If you choose to specify the MediaType, see [Naming Requirements](https://tools.ietf.org/html/rfc6838#section-4.2) for guidelines.
       */
-    val mediaType: js.UndefOr[Input[String]] = js.native
+    val mediaType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the
       * AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The version of the stream.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object VideoStreamState {
     

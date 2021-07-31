@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedItemDetails extends StObject {
   
   /**
     * The status code of a failed item.
     */
-  var failureCode: FailedItemErrorCode = js.native
+  var failureCode: FailedItemErrorCode
   
   /**
     * Indicates whether you can immediately retry a request for this item for a specified resource.
     */
-  var retryable: Bool = js.native
+  var retryable: Bool
 }
 object FailedItemDetails {
   

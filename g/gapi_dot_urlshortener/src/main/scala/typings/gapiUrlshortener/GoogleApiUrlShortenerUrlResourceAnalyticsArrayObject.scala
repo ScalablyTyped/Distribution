@@ -2,21 +2,19 @@ package typings.gapiUrlshortener
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject extends StObject {
   
   /**
     * Number of clicks for this top entry, e.g. for this particular country or browser.
     */
-  var count: String = js.native
+  var count: String
   
   /**
     * Label assigned to this top entry, e.g. "US" or "Chrome".
     */
-  var id: String = js.native
+  var id: String
 }
 object GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject {
   

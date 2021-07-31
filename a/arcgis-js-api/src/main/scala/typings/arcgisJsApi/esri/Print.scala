@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.complete
 import typings.arcgisJsApi.arcgisJsApiStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Print extends Widget_ {
+trait Print
+  extends StObject
+     with Widget_ {
   
   /**
     * Specify the print output file format(s) that the user can select based on the options available from the print service.

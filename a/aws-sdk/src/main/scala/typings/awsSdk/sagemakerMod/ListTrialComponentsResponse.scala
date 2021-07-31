@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTrialComponentsResponse extends StObject {
   
   /**
     * A token for getting the next set of components, if there are any.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * A list of the summaries of your trial components.
     */
-  var TrialComponentSummaries: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentSummaries] = js.native
+  var TrialComponentSummaries: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentSummaries] = js.undefined
 }
 object ListTrialComponentsResponse {
   

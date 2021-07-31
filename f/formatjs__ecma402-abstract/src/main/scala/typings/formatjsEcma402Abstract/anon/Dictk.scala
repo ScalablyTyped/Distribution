@@ -3,13 +3,13 @@ package typings.formatjsEcma402Abstract.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictk extends /* k */ StringDictionary[String] {
+trait Dictk
+  extends StObject
+     with /* k */ StringDictionary[String] {
   
-  var localeMatcher: String = js.native
+  var localeMatcher: String
 }
 object Dictk {
   

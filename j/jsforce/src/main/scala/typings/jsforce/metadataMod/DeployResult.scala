@@ -2,51 +2,49 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeployResult extends StObject {
   
-  var checkOnly: Boolean = js.native
+  var checkOnly: Boolean
   
-  var completedDate: String = js.native
+  var completedDate: String
   
-  var createdDate: String = js.native
+  var createdDate: String
   
-  var details: js.UndefOr[js.Array[js.Object]] = js.native
+  var details: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var done: Boolean = js.native
+  var done: Boolean
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var errorStatusCode: js.UndefOr[String] = js.native
+  var errorStatusCode: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var ignoreWarnings: js.UndefOr[Boolean] = js.native
+  var ignoreWarnings: js.UndefOr[Boolean] = js.undefined
   
-  var lastModifiedDate: String = js.native
+  var lastModifiedDate: String
   
-  var numberComponentErrors: Double = js.native
+  var numberComponentErrors: Double
   
-  var numberComponentsDeployed: Double = js.native
+  var numberComponentsDeployed: Double
   
-  var numberComponentsTotal: Double = js.native
+  var numberComponentsTotal: Double
   
-  var numberTestErrors: Double = js.native
+  var numberTestErrors: Double
   
-  var numberTestsCompleted: Double = js.native
+  var numberTestsCompleted: Double
   
-  var numberTestsTotal: Double = js.native
+  var numberTestsTotal: Double
   
-  var rollbackOnError: js.UndefOr[Boolean] = js.native
+  var rollbackOnError: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: String = js.native
+  var startDate: String
   
-  var status: String = js.native
+  var status: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object DeployResult {
   

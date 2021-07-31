@@ -2,25 +2,23 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Billingcycle extends StObject {
   
-  var billing_cycle: String = js.native
+  var billing_cycle: String
   
-  var free_trial_ends_on: String = js.native
+  var free_trial_ends_on: String
   
-  var next_billing_date: String = js.native
+  var next_billing_date: String
   
-  var on_free_trial: Boolean = js.native
+  var on_free_trial: Boolean
   
-  var plan: Bullets = js.native
+  var plan: Bullets
   
-  var unit_count: Double = js.native
+  var unit_count: Double
   
-  var updated_at: String = js.native
+  var updated_at: String
 }
 object Billingcycle {
   

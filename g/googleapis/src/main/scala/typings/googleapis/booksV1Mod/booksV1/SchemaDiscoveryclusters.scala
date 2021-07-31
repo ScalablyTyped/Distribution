@@ -3,20 +3,18 @@ package typings.googleapis.booksV1Mod.booksV1
 import typings.googleapis.anon.Bannerwithcontentcontainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDiscoveryclusters extends StObject {
   
-  var clusters: js.UndefOr[js.Array[Bannerwithcontentcontainer]] = js.native
+  var clusters: js.UndefOr[js.Array[Bannerwithcontentcontainer]] = js.undefined
   
   /**
     * Resorce type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var totalClusters: js.UndefOr[Double] = js.native
+  var totalClusters: js.UndefOr[Double] = js.undefined
 }
 object SchemaDiscoveryclusters {
   

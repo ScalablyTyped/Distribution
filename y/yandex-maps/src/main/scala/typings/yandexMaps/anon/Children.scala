@@ -5,17 +5,15 @@ import typings.yandexMaps.mod.IGeoObject
 import typings.yandexMaps.mod.IGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
-  var children: js.UndefOr[js.Array[IGeoObject[IGeometry]]] = js.native
+  var children: js.UndefOr[js.Array[IGeoObject[IGeometry]]] = js.undefined
   
-  var geometry: js.UndefOr[IGeometry | js.Object] = js.native
+  var geometry: js.UndefOr[IGeometry | js.Object] = js.undefined
   
-  var properties: js.UndefOr[IDataManager | js.Object] = js.native
+  var properties: js.UndefOr[IDataManager | js.Object] = js.undefined
 }
 object Children {
   

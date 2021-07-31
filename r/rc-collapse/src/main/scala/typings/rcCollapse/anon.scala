@@ -8,56 +8,54 @@ import typings.react.mod.Ref
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined rc-collapse.rc-collapse/es/interface.CollapsePanelProps & {  children :react.react.ReactNode} & react.react.RefAttributes<std.HTMLDivElement> */
-  @js.native
   trait CollapsePanelPropschildre extends StObject {
     
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapsible: js.UndefOr[CollapsibleType] = js.native
+    var collapsible: js.UndefOr[CollapsibleType] = js.undefined
     
-    var destroyInactivePanel: js.UndefOr[Boolean] = js.native
+    var destroyInactivePanel: js.UndefOr[Boolean] = js.undefined
     
-    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.native
+    var expandIcon: js.UndefOr[js.Function1[/* props */ js.Object, ReactNode]] = js.undefined
     
-    var extra: js.UndefOr[String | ReactNode] = js.native
+    var extra: js.UndefOr[String | ReactNode] = js.undefined
     
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[String | ReactNode] = js.native
+    var header: js.UndefOr[String | ReactNode] = js.undefined
     
-    var headerClass: js.UndefOr[String] = js.native
+    var headerClass: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isActive: js.UndefOr[Boolean] = js.native
+    var isActive: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[Key | Null] = js.native
+    var key: js.UndefOr[Key | Null] = js.undefined
     
-    var onItemClick: js.UndefOr[js.Function1[/* panelKey */ String | Double, Unit]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* panelKey */ String | Double, Unit]] = js.undefined
     
-    var openMotion: js.UndefOr[CSSMotionProps] = js.native
+    var openMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var panelKey: js.UndefOr[String | Double] = js.native
+    var panelKey: js.UndefOr[String | Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.native
+    var ref: js.UndefOr[Ref[HTMLDivElement]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var showArrow: js.UndefOr[Boolean] = js.native
+    var showArrow: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object CollapsePanelPropschildre {
     
@@ -207,18 +205,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ForceRender extends StObject {
     
-    var forceRender: Boolean = js.native
+    var forceRender: Boolean
     
-    var headerClass: String = js.native
+    var headerClass: String
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    def onItemClick(): Unit = js.native
+    def onItemClick(): Unit
     
-    var showArrow: Boolean = js.native
+    var showArrow: Boolean
   }
   object ForceRender {
     
@@ -255,10 +252,9 @@ object anon {
   }
   
   /* Inlined std.Partial<rc-collapse.rc-collapse/es/Collapse.CollapseState> */
-  @js.native
   trait PartialCollapseState extends StObject {
     
-    var activeKey: js.UndefOr[js.Array[Key]] = js.native
+    var activeKey: js.UndefOr[js.Array[Key]] = js.undefined
   }
   object PartialCollapseState {
     
@@ -282,11 +278,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofdefault extends StObject {
     
     /* static member */
-    var defaultProps: ForceRender = js.native
+    var defaultProps: ForceRender
   }
   object Typeofdefault {
     

@@ -4,14 +4,15 @@ import typings.alexaVoiceService.anon.Response
 import typings.std.DataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("alexa-voice-service", JSImport.Namespace)
   @js.native
-  class ^ protected () extends AVS {
+  class ^ protected ()
+    extends StObject
+       with AVS {
     def this(params: AVSParams) = this()
   }
   
@@ -22,43 +23,61 @@ object mod {
   object EventTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EventTypes with Double] = js.native
+    def apply(value: Double): js.UndefOr[EventTypes & Double] = js.native
     
     @js.native
-    sealed trait ERROR extends EventTypes
-    /* 2 */ val ERROR: typings.alexaVoiceService.mod.EventTypes.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with EventTypes
+    /* 2 */ val ERROR: typings.alexaVoiceService.mod.EventTypes.ERROR & Double = js.native
     
     @js.native
-    sealed trait LOG extends EventTypes
-    /* 4 */ val LOG: typings.alexaVoiceService.mod.EventTypes.LOG with Double = js.native
+    sealed trait LOG
+      extends StObject
+         with EventTypes
+    /* 4 */ val LOG: typings.alexaVoiceService.mod.EventTypes.LOG & Double = js.native
     
     @js.native
-    sealed trait LOGIN extends EventTypes
-    /* 5 */ val LOGIN: typings.alexaVoiceService.mod.EventTypes.LOGIN with Double = js.native
+    sealed trait LOGIN
+      extends StObject
+         with EventTypes
+    /* 5 */ val LOGIN: typings.alexaVoiceService.mod.EventTypes.LOGIN & Double = js.native
     
     @js.native
-    sealed trait LOGOUT extends EventTypes
-    /* 6 */ val LOGOUT: typings.alexaVoiceService.mod.EventTypes.LOGOUT with Double = js.native
+    sealed trait LOGOUT
+      extends StObject
+         with EventTypes
+    /* 6 */ val LOGOUT: typings.alexaVoiceService.mod.EventTypes.LOGOUT & Double = js.native
     
     @js.native
-    sealed trait RECORD_START extends EventTypes
-    /* 1 */ val RECORD_START: typings.alexaVoiceService.mod.EventTypes.RECORD_START with Double = js.native
+    sealed trait RECORD_START
+      extends StObject
+         with EventTypes
+    /* 1 */ val RECORD_START: typings.alexaVoiceService.mod.EventTypes.RECORD_START & Double = js.native
     
     @js.native
-    sealed trait RECORD_STOP extends EventTypes
-    /* 0 */ val RECORD_STOP: typings.alexaVoiceService.mod.EventTypes.RECORD_STOP with Double = js.native
+    sealed trait RECORD_STOP
+      extends StObject
+         with EventTypes
+    /* 0 */ val RECORD_STOP: typings.alexaVoiceService.mod.EventTypes.RECORD_STOP & Double = js.native
     
     @js.native
-    sealed trait REFRESH_TOKEN_SET extends EventTypes
-    /* 8 */ val REFRESH_TOKEN_SET: typings.alexaVoiceService.mod.EventTypes.REFRESH_TOKEN_SET with Double = js.native
+    sealed trait REFRESH_TOKEN_SET
+      extends StObject
+         with EventTypes
+    /* 8 */ val REFRESH_TOKEN_SET: typings.alexaVoiceService.mod.EventTypes.REFRESH_TOKEN_SET & Double = js.native
     
     @js.native
-    sealed trait TOKEN_INVALID extends EventTypes
-    /* 3 */ val TOKEN_INVALID: typings.alexaVoiceService.mod.EventTypes.TOKEN_INVALID with Double = js.native
+    sealed trait TOKEN_INVALID
+      extends StObject
+         with EventTypes
+    /* 3 */ val TOKEN_INVALID: typings.alexaVoiceService.mod.EventTypes.TOKEN_INVALID & Double = js.native
     
     @js.native
-    sealed trait TOKEN_SET extends EventTypes
-    /* 7 */ val TOKEN_SET: typings.alexaVoiceService.mod.EventTypes.TOKEN_SET with Double = js.native
+    sealed trait TOKEN_SET
+      extends StObject
+         with EventTypes
+    /* 7 */ val TOKEN_SET: typings.alexaVoiceService.mod.EventTypes.TOKEN_SET & Double = js.native
   }
   
   @JSImport("alexa-voice-service", "Player")
@@ -77,47 +96,55 @@ object mod {
     object EventTypes extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.alexaVoiceService.mod.Player.EventTypes with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.alexaVoiceService.mod.Player.EventTypes & Double] = js.native
       
       @js.native
       sealed trait DEQUE
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 7 */ val DEQUE: typings.alexaVoiceService.mod.Player.EventTypes.DEQUE with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 7 */ val DEQUE: typings.alexaVoiceService.mod.Player.EventTypes.DEQUE & Double = js.native
       
       @js.native
       sealed trait ENQUEUE
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 6 */ val ENQUEUE: typings.alexaVoiceService.mod.Player.EventTypes.ENQUEUE with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 6 */ val ENQUEUE: typings.alexaVoiceService.mod.Player.EventTypes.ENQUEUE & Double = js.native
       
       @js.native
       sealed trait ERROR
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 1 */ val ERROR: typings.alexaVoiceService.mod.Player.EventTypes.ERROR with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 1 */ val ERROR: typings.alexaVoiceService.mod.Player.EventTypes.ERROR & Double = js.native
       
       @js.native
       sealed trait LOG
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 0 */ val LOG: typings.alexaVoiceService.mod.Player.EventTypes.LOG with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 0 */ val LOG: typings.alexaVoiceService.mod.Player.EventTypes.LOG & Double = js.native
       
       @js.native
       sealed trait PAUSE
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 4 */ val PAUSE: typings.alexaVoiceService.mod.Player.EventTypes.PAUSE with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 4 */ val PAUSE: typings.alexaVoiceService.mod.Player.EventTypes.PAUSE & Double = js.native
       
       @js.native
       sealed trait PLAY
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 2 */ val PLAY: typings.alexaVoiceService.mod.Player.EventTypes.PLAY with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 2 */ val PLAY: typings.alexaVoiceService.mod.Player.EventTypes.PLAY & Double = js.native
       
       @js.native
       sealed trait REPLAY
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 3 */ val REPLAY: typings.alexaVoiceService.mod.Player.EventTypes.REPLAY with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 3 */ val REPLAY: typings.alexaVoiceService.mod.Player.EventTypes.REPLAY & Double = js.native
       
       @js.native
       sealed trait STOP
-        extends typings.alexaVoiceService.mod.Player.EventTypes
-      /* 5 */ val STOP: typings.alexaVoiceService.mod.Player.EventTypes.STOP with Double = js.native
+        extends StObject
+           with typings.alexaVoiceService.mod.Player.EventTypes
+      /* 5 */ val STOP: typings.alexaVoiceService.mod.Player.EventTypes.STOP & Double = js.native
     }
   }
   
@@ -131,7 +158,7 @@ object mod {
     
     def refreshToken(): js.Promise[TokenResponse] = js.native
     
-    def requestMic(): js.Promise[_] = js.native
+    def requestMic(): js.Promise[js.Any] = js.native
     
     def sendAudio(dataView: DataView): js.Promise[Response] = js.native
     
@@ -140,18 +167,17 @@ object mod {
     def stopRecording(): js.Promise[js.UndefOr[DataView]] = js.native
   }
   
-  @js.native
   trait AVSParams extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var deviceId: String = js.native
+    var deviceId: String
     
-    var refreshToken: String = js.native
+    var refreshToken: String
   }
   object AVSParams {
     
@@ -181,12 +207,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenResponse extends StObject {
     
-    var refreshToken: String = js.native
+    var refreshToken: String
     
-    var token: String = js.native
+    var token: String
   }
   object TokenResponse {
     

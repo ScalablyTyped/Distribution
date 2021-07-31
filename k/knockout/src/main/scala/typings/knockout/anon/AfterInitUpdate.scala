@@ -5,25 +5,27 @@ import typings.knockout.mod.MaybeSubscribable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterInitUpdate extends StObject {
   
-  var after: js.Array[String] = js.native
+  var after: js.Array[String]
   
-  def init(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[_]], allBindings: AllBindings): Unit = js.native
+  def init(
+    element: HTMLElement,
+    valueAccessor: js.Function0[MaybeSubscribable[js.Any]],
+    allBindings: AllBindings
+  ): Unit
   
-  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[_]]): Unit = js.native
+  def update(element: HTMLElement, valueAccessor: js.Function0[MaybeSubscribable[js.Any]]): Unit
 }
 object AfterInitUpdate {
   
   @scala.inline
   def apply(
     after: js.Array[String],
-    init: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit,
-    update: (HTMLElement, js.Function0[MaybeSubscribable[_]]) => Unit
+    init: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit,
+    update: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit
   ): AfterInitUpdate = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], init = js.Any.fromFunction3(init), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[AfterInitUpdate]
@@ -39,9 +41,9 @@ object AfterInitUpdate {
     def setAfterVarargs(value: String*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
-    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[_]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    def setInit(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[_]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

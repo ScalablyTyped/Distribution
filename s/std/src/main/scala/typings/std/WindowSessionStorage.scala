@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowSessionStorage extends StObject {
   
-  val sessionStorage: Storage = js.native
+  val sessionStorage: Storage
 }
 object WindowSessionStorage {
   

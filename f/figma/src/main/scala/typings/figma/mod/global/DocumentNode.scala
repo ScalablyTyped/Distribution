@@ -3,14 +3,14 @@ package typings.figma.mod.global
 import typings.figma.figmaStrings.DOCUMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////////////////////////////////////////////////////////////
 // Nodes
 @js.native
 trait DocumentNode
-  extends BaseNodeMixin
+  extends StObject
+     with BaseNodeMixin
      with BaseNode {
   
   def appendChild(child: PageNode): Unit = js.native

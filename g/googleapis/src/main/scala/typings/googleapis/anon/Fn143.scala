@@ -9,7 +9,6 @@ import typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Options
 import typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

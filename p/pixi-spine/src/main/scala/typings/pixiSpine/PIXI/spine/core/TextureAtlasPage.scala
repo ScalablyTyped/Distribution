@@ -2,29 +2,27 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextureAtlasPage extends StObject {
   
-  var baseTexture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ js.Any = js.native
+  var baseTexture: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PIXI.BaseTexture */ js.Any
   
-  var height: Double = js.native
+  var height: Double
   
-  var magFilter: TextureFilter = js.native
+  var magFilter: TextureFilter
   
-  var minFilter: TextureFilter = js.native
+  var minFilter: TextureFilter
   
-  var name: String = js.native
+  var name: String
   
-  def setFilters(): Unit = js.native
+  def setFilters(): Unit
   
-  var uWrap: TextureWrap = js.native
+  var uWrap: TextureWrap
   
-  var vWrap: TextureWrap = js.native
+  var vWrap: TextureWrap
   
-  var width: Double = js.native
+  var width: Double
 }
 object TextureAtlasPage {
   

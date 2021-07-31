@@ -2,31 +2,29 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSkillGroupRequest extends StObject {
   
   /**
     * A unique, user-specified identifier for this request that ensures idempotency. 
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The description for the skill group.
     */
-  var Description: js.UndefOr[SkillGroupDescription] = js.native
+  var Description: js.UndefOr[SkillGroupDescription] = js.undefined
   
   /**
     * The name for the skill group.
     */
-  var SkillGroupName: typings.awsSdk.alexaforbusinessMod.SkillGroupName = js.native
+  var SkillGroupName: typings.awsSdk.alexaforbusinessMod.SkillGroupName
   
   /**
     * The tags for the skill group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateSkillGroupRequest {
   

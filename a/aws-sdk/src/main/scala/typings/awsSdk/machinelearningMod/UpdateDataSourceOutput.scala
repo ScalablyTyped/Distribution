@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceOutput extends StObject {
   
   /**
     * The ID assigned to the DataSource during creation. This value should be identical to the value of the DataSourceID in the request.
     */
-  var DataSourceId: js.UndefOr[EntityId] = js.native
+  var DataSourceId: js.UndefOr[EntityId] = js.undefined
 }
 object UpdateDataSourceOutput {
   

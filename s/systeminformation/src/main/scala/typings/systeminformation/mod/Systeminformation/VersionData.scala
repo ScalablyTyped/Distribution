@@ -2,72 +2,70 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VersionData extends StObject {
   
-  var docker: js.UndefOr[String] = js.native
+  var docker: js.UndefOr[String] = js.undefined
   
-  var dotnet: js.UndefOr[String] = js.native
+  var dotnet: js.UndefOr[String] = js.undefined
   
-  var gcc: js.UndefOr[String] = js.native
+  var gcc: js.UndefOr[String] = js.undefined
   
-  var git: js.UndefOr[String] = js.native
+  var git: js.UndefOr[String] = js.undefined
   
-  var grunt: js.UndefOr[String] = js.native
+  var grunt: js.UndefOr[String] = js.undefined
   
-  var gulp: js.UndefOr[String] = js.native
+  var gulp: js.UndefOr[String] = js.undefined
   
   @JSName("java")
-  var java_ : js.UndefOr[String] = js.native
+  var java_ : js.UndefOr[String] = js.undefined
   
-  var kernel: js.UndefOr[String] = js.native
+  var kernel: js.UndefOr[String] = js.undefined
   
-  var mongodb: js.UndefOr[String] = js.native
+  var mongodb: js.UndefOr[String] = js.undefined
   
-  var mysql: js.UndefOr[String] = js.native
+  var mysql: js.UndefOr[String] = js.undefined
   
-  var nginx: js.UndefOr[String] = js.native
+  var nginx: js.UndefOr[String] = js.undefined
   
-  var node: js.UndefOr[String] = js.native
+  var node: js.UndefOr[String] = js.undefined
   
-  var npm: js.UndefOr[String] = js.native
+  var npm: js.UndefOr[String] = js.undefined
   
-  var openssl: js.UndefOr[String] = js.native
+  var openssl: js.UndefOr[String] = js.undefined
   
-  var perl: js.UndefOr[String] = js.native
+  var perl: js.UndefOr[String] = js.undefined
   
-  var php: js.UndefOr[String] = js.native
+  var php: js.UndefOr[String] = js.undefined
   
-  var pip: js.UndefOr[String] = js.native
+  var pip: js.UndefOr[String] = js.undefined
   
-  var pip3: js.UndefOr[String] = js.native
+  var pip3: js.UndefOr[String] = js.undefined
   
-  var pm2: js.UndefOr[String] = js.native
+  var pm2: js.UndefOr[String] = js.undefined
   
-  var postfix: js.UndefOr[String] = js.native
+  var postfix: js.UndefOr[String] = js.undefined
   
-  var postgresql: js.UndefOr[String] = js.native
+  var postgresql: js.UndefOr[String] = js.undefined
   
-  var python: js.UndefOr[String] = js.native
+  var python: js.UndefOr[String] = js.undefined
   
-  var python3: js.UndefOr[String] = js.native
+  var python3: js.UndefOr[String] = js.undefined
   
-  var redis: js.UndefOr[String] = js.native
+  var redis: js.UndefOr[String] = js.undefined
   
-  var systemOpenssl: js.UndefOr[String] = js.native
+  var systemOpenssl: js.UndefOr[String] = js.undefined
   
-  var systemOpensslLib: js.UndefOr[String] = js.native
+  var systemOpensslLib: js.UndefOr[String] = js.undefined
   
-  var tsc: js.UndefOr[String] = js.native
+  var tsc: js.UndefOr[String] = js.undefined
   
-  var v8: js.UndefOr[String] = js.native
+  var v8: js.UndefOr[String] = js.undefined
   
-  var virtualbox: js.UndefOr[String] = js.native
+  var virtualbox: js.UndefOr[String] = js.undefined
   
-  var yarn: js.UndefOr[String] = js.native
+  var yarn: js.UndefOr[String] = js.undefined
 }
 object VersionData {
   

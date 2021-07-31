@@ -3,13 +3,11 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.dxDiagramShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var item: js.UndefOr[dxDiagramShape] = js.native
+  var item: js.UndefOr[dxDiagramShape] = js.undefined
 }
 object Item {
   

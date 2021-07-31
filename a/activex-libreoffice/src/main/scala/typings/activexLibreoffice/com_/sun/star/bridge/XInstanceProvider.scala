@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to export UNO objects to other processes.
   * @see XBridge
   */
-@js.native
-trait XInstanceProvider extends XInterface {
+trait XInstanceProvider
+  extends StObject
+     with XInterface {
   
   /**
     * gets called, when an initial object is requested from a remote process. You may either create a new instance or return an existing object.
@@ -20,7 +20,7 @@ trait XInstanceProvider extends XInterface {
     * @returns the object associated with the name. The return value may be null in case there is no object to offer for this string. In this case, {@link XBrid
     * @throws NoSuchElementException You may throw this exception to indicate, that there is no object for this name. Due to a specification bug, this exceptio
     */
-  def getInstance(sInstanceName: String): XInterface = js.native
+  def getInstance(sInstanceName: String): XInterface
 }
 object XInstanceProvider {
   

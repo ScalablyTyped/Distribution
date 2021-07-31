@@ -3,11 +3,11 @@ package typings.stripe.mod.accounts
 import typings.stripe.stripeStrings.custom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAccountCreationOptions extends IAccountUpdateOptions {
+trait IAccountCreationOptions
+  extends StObject
+     with IAccountUpdateOptions {
   
   /**
     * The country the account holder resides in or that the business is legally
@@ -17,20 +17,20 @@ trait IAccountCreationOptions extends IAccountUpdateOptions {
     *
     * optional, default is your own country
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The type of Stripe account to create. Currently must be custom, as only Custom
     * accounts may be created via the API.
     */
-  var `type`: custom = js.native
+  var `type`: custom
 }
 object IAccountCreationOptions {
   
   @scala.inline
-  def apply(`type`: custom): IAccountCreationOptions = {
+  def apply(): IAccountCreationOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[IAccountCreationOptions]
   }
   

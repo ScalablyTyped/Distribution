@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,9 +38,8 @@ object GridDeleteButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridDeleteButton.create")
-  @js.native
-  def create(model: IModel): GridDeleteButton = js.native
+  @scala.inline
+  def create(model: IModel): GridDeleteButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridDeleteButton]
   
   /**
     * Creates and returns a new GridDeleteButton instance in the SDK and on the server.
@@ -52,9 +50,8 @@ object GridDeleteButton {
     *  6.0.0 to 7.16.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridDeleteButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): GridDeleteButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): GridDeleteButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridDeleteButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridDeleteButton.structureTypeName")

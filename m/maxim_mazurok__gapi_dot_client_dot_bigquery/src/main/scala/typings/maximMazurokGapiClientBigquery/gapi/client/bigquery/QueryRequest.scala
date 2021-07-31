@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRequest extends StObject {
   
   /** Connection properties. */
-  var connectionProperties: js.UndefOr[js.Array[ConnectionProperty]] = js.native
+  var connectionProperties: js.UndefOr[js.Array[ConnectionProperty]] = js.undefined
   
   /**
     * [Optional] Specifies the default datasetId and projectId to assume for any unqualified table names in the query. If not set, all table names in the query string must be qualified in
     * the format 'datasetId.tableId'.
     */
-  var defaultDataset: js.UndefOr[DatasetReference] = js.native
+  var defaultDataset: js.UndefOr[DatasetReference] = js.undefined
   
   /**
     * [Optional] If set to true, BigQuery doesn't run the job. Instead, if the query is valid, BigQuery returns statistics about the job such as how many bytes would be processed. If the
     * query is invalid, an error returns. The default value is false.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** The resource type of the request. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The labels associated with this job. You can use these to organize and group your jobs. Label keys and values can be no longer than 63 characters, can only contain lowercase
@@ -35,36 +33,36 @@ trait QueryRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The geographic location where the job should run. See details at https://cloud.google.com/bigquery/docs/locations#specifying_your_location. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The maximum number of rows of data to return per page of results. Setting this flag to a small value such as 1000 and then paging through results might improve
     * reliability when the query result set is large. In addition to this limit, responses are also limited to 10 MB. By default, there is no maximum row count, and only the byte limit
     * applies.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] Limits the bytes billed for this job. Queries that will have bytes billed beyond this limit will fail (without incurring a charge). If unspecified, this will be set to
     * your project default.
     */
-  var maximumBytesBilled: js.UndefOr[String] = js.native
+  var maximumBytesBilled: js.UndefOr[String] = js.undefined
   
   /** Standard SQL only. Set to POSITIONAL to use positional (?) query parameters or to NAMED to use named (@myparam) query parameters in this query. */
-  var parameterMode: js.UndefOr[String] = js.native
+  var parameterMode: js.UndefOr[String] = js.undefined
   
   /** [Deprecated] This property is deprecated. */
-  var preserveNulls: js.UndefOr[Boolean] = js.native
+  var preserveNulls: js.UndefOr[Boolean] = js.undefined
   
   /** [Required] A query string, following the BigQuery query syntax, of the query to execute. Example: "SELECT count(f1) FROM [myProjectId:myDatasetId.myTableId]". */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /** Query parameters for Standard SQL queries. */
-  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var queryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
   
   /**
     * A unique user provided identifier to ensure idempotent behavior for queries. Note that this is different from the job_id. It has the following properties: 1. It is case-sensitive,
@@ -76,26 +74,26 @@ trait QueryRequest extends StObject {
     * of the mutation if it completes successfully within the timeout. b. the running operation if it is still in progress at the end of the timeout. 5. Its lifetime is limited to 15
     * minutes. In other words, if two requests are sent with the same request_id, but more than 15 minutes apart, idempotency is not guaranteed.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] How long to wait for the query to complete, in milliseconds, before the request times out and returns. Note that this is only a timeout for the request, not the query. If
     * the query takes longer to run than the timeout value, the call returns without any results and with the 'jobComplete' flag set to false. You can call GetQueryResults() to wait for
     * the query to complete and read the results. The default value is 10000 milliseconds (10 seconds).
     */
-  var timeoutMs: js.UndefOr[Double] = js.native
+  var timeoutMs: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies whether to use BigQuery's legacy SQL dialect for this query. The default value is true. If set to false, the query will use BigQuery's standard SQL:
     * https://cloud.google.com/bigquery/sql-reference/ When useLegacySql is set to false, the value of flattenResults is ignored; query will be run as if flattenResults is false.
     */
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Whether to look for the result in the query cache. The query cache is a best-effort cache that will be flushed whenever tables in the query are modified. The default
     * value is true.
     */
-  var useQueryCache: js.UndefOr[Boolean] = js.native
+  var useQueryCache: js.UndefOr[Boolean] = js.undefined
 }
 object QueryRequest {
   
@@ -139,7 +137,7 @@ object QueryRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

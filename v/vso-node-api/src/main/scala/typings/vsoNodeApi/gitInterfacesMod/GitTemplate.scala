@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitTemplate extends StObject {
   
   /**
     * Name of the Template
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Type of the Template
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object GitTemplate {
   

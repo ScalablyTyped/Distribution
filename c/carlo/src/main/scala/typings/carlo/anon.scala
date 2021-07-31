@@ -3,28 +3,26 @@ package typings.carlo
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
     /**
       *  Response body.
       */
-    var body: Buffer = js.native
+    var body: Buffer
     
     /**
       * HTTP response headers.
       */
-    var headers: js.Object = js.native
+    var headers: js.Object
     
     /**
       * HTTP status code (200, 304, etc), defaults to 200.
       */
-    var status: Double = js.native
+    var status: Double
   }
   object Body {
     
@@ -48,28 +46,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
     /**
       * Height in pixels.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Left offset in pixels.
       */
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
     /**
       * Top offset in pixels.
       */
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
     /**
       * Width in pixels.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -108,13 +105,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
     /**
       * absolute path to the given file
       */
-    var path: String = js.native
+    var path: String
   }
   object Path {
     

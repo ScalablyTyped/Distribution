@@ -3,7 +3,6 @@ package typings.reactNativeAndroidTaskdescription
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,11 @@ object mod {
   
   type ReactNativeAndroidTaskDescription = Component[ReactNativeAndroidTaskDescriptionProps, js.Object, js.Any]
   
-  @js.native
   trait ReactNativeAndroidTaskDescriptionProps extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
   }
   object ReactNativeAndroidTaskDescriptionProps {
     

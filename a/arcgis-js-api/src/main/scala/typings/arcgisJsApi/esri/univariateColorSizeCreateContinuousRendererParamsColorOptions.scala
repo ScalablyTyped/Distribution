@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait univariateColorSizeCreateContinuousRendererParamsColorOptions extends Object {
+trait univariateColorSizeCreateContinuousRendererParamsColorOptions
+  extends StObject
+     with Object {
   
   /**
     * In authoring apps, the user may select a pre-defined color scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var colorScheme: js.UndefOr[ColorScheme] = js.native
+  var colorScheme: js.UndefOr[ColorScheme] = js.undefined
   
   /**
     * Provides options for setting a title to a field when an expression is provided instead of a field name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsColorOptionsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsColorOptionsLegendOptions] = js.undefined
   
   /**
     * Determines which values will be emphasized in the continuous ramp and the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object univariateColorSizeCreateContinuousRendererParamsColorOptions {
   

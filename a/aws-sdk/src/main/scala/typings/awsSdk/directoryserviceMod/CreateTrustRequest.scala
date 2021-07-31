@@ -2,46 +2,44 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrustRequest extends StObject {
   
   /**
     * The IP addresses of the remote DNS server associated with RemoteDomainName.
     */
-  var ConditionalForwarderIpAddrs: js.UndefOr[DnsIpAddrs] = js.native
+  var ConditionalForwarderIpAddrs: js.UndefOr[DnsIpAddrs] = js.undefined
   
   /**
     * The Directory ID of the AWS Managed Microsoft AD directory for which to establish the trust relationship.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The Fully Qualified Domain Name (FQDN) of the external domain for which to create the trust relationship.
     */
-  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName = js.native
+  var RemoteDomainName: typings.awsSdk.directoryserviceMod.RemoteDomainName
   
   /**
     * Optional parameter to enable selective authentication for the trust.
     */
-  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.native
+  var SelectiveAuth: js.UndefOr[typings.awsSdk.directoryserviceMod.SelectiveAuth] = js.undefined
   
   /**
     * The direction of the trust relationship.
     */
-  var TrustDirection: typings.awsSdk.directoryserviceMod.TrustDirection = js.native
+  var TrustDirection: typings.awsSdk.directoryserviceMod.TrustDirection
   
   /**
     * The trust password. The must be the same password that was used when creating the trust relationship on the external domain.
     */
-  var TrustPassword: typings.awsSdk.directoryserviceMod.TrustPassword = js.native
+  var TrustPassword: typings.awsSdk.directoryserviceMod.TrustPassword
   
   /**
     * The trust relationship type. Forest is the default.
     */
-  var TrustType: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustType] = js.native
+  var TrustType: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustType] = js.undefined
 }
 object CreateTrustRequest {
   

@@ -3,32 +3,30 @@ package typings.fundamentalReact.anon
 import typings.fundamentalReact.iconMod.IconGlyph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Tabs/Tab.TabProps> */
-@js.native
 trait PartialTabProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   
-  var glyph: js.UndefOr[IconGlyph] = js.native
+  var glyph: js.UndefOr[IconGlyph] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var linkProps: js.UndefOr[js.Any] = js.native
+  var linkProps: js.UndefOr[js.Any] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var tabContentProps: js.UndefOr[js.Any] = js.native
+  var tabContentProps: js.UndefOr[js.Any] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialTabProps {
   
@@ -78,7 +76,7 @@ object PartialTabProps {
     def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

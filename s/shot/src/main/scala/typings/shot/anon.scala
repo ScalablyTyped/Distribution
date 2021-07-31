@@ -4,25 +4,23 @@ import typings.shot.mod.SimulatedRequestObject
 import typings.shot.mod.SimulatedResponseObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Close extends StObject {
     
     /** whether the request will emit a close event. Defaults to undefined, meaning no close event will be emitted. */
-    var close: js.UndefOr[Boolean] = js.native
+    var close: js.UndefOr[Boolean] = js.undefined
     
     /** indicates whether the request will fire an end event. Defaults to undefined, meaning an end event will fire. */
-    var end: js.UndefOr[Boolean] = js.native
+    var end: js.UndefOr[Boolean] = js.undefined
     
     /** whether the request will emit an error event. Defaults to undefined, meaning no error event will be emitted. If set to true, the emitted error will have a message of 'Simulated'. */
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
     /** indicates whether the request payload will be split into chunks. Defaults to `undefined`, meaning payload will not be chunked. */
-    var split: js.UndefOr[Boolean] = js.native
+    var split: js.UndefOr[Boolean] = js.undefined
   }
   object Close {
     
@@ -61,14 +59,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Req extends StObject {
     
     /** the simulated request object. */
-    var req: SimulatedRequestObject = js.native
+    var req: SimulatedRequestObject
     
     /** the simulated response object. */
-    var res: SimulatedResponseObject = js.native
+    var res: SimulatedResponseObject
   }
   object Req {
     

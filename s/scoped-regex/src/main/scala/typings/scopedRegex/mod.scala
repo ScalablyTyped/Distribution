@@ -3,7 +3,6 @@ package typings.scopedRegex
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,10 @@ object mod {
   	//=> ['@sindresorhus/df']
   	```
   	*/
-  @JSImport("scoped-regex", JSImport.Namespace)
-  @js.native
-  def apply(): RegExp = js.native
-  @JSImport("scoped-regex", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RegExp = js.native
+  @scala.inline
+  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  @scala.inline
+  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
   @JSImport("scoped-regex", JSImport.Namespace)
   @js.native
@@ -40,14 +37,13 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof scopedRegex */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Only match an exact string. By default, it matches any scoped package names in a string. Useful with `RegExp#test()` to check if a string is a scoped package name.
     		@default false
     		*/
-    val exact: js.UndefOr[Boolean] = js.native
+    val exact: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

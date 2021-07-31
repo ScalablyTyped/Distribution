@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.TaskStatusResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-search.@algolia/client-search.TaskStatusResponse>> */
-@js.native
 trait ReadonlyPromiseTaskStatus extends StObject {
   
-  def `catch`[TResult](): js.Promise[TaskStatusResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[TaskStatusResponse | TResult]
   
-  def `finally`(): js.Promise[TaskStatusResponse] = js.native
+  def `finally`(): js.Promise[TaskStatusResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseTaskStatus {
   

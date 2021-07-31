@@ -2,13 +2,11 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config for LABEL_DETECTION.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig extends StObject {
   
   /**
@@ -19,28 +17,28 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig extends St
     * threshold. We will update the default threshold everytime when we release
     * a new model.
     */
-  var frameConfidenceThreshold: js.UndefOr[Double] = js.native
+  var frameConfidenceThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * What labels should be detected with LABEL_DETECTION, in addition to
     * video-level labels or segment-level labels. If unspecified, defaults to
     * `SHOT_MODE`.
     */
-  var labelDetectionMode: js.UndefOr[String] = js.native
+  var labelDetectionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Model to use for label detection. Supported values:
     * &quot;builtin/stable&quot; (the default if unset) and
     * &quot;builtin/latest&quot;.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the video has been shot from a stationary (i.e. non-moving)
     * camera. When set to true, might improve detection accuracy for moving
     * objects. Should be used with `SHOT_AND_FRAME_MODE` enabled.
     */
-  var stationaryCamera: js.UndefOr[Boolean] = js.native
+  var stationaryCamera: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The confidence threshold we perform filtering on the labels from
@@ -50,7 +48,7 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig extends St
     * follow the default threshold. We will update the default threshold
     * everytime when we release a new model.
     */
-  var videoConfidenceThreshold: js.UndefOr[Double] = js.native
+  var videoConfidenceThreshold: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1LabelDetectionConfig {
   

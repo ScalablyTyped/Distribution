@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetReportsInput extends StObject {
   
   /**
     *  An array of ARNs that identify the Report objects to return. 
     */
-  var reportArns: ReportArns = js.native
+  var reportArns: ReportArns
 }
 object BatchGetReportsInput {
   

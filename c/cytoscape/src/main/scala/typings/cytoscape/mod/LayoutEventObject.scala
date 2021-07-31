@@ -2,17 +2,17 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayoutEventObject extends AbstractEventObject {
+trait LayoutEventObject
+  extends StObject
+     with AbstractEventObject {
   
   /**
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
-  var layout: js.Any = js.native
+  var layout: js.Any
 }
 object LayoutEventObject {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionSelector extends StObject {
   
   /** When false, selects only collections that are immediate children of the `parent` specified in the containing `RunQueryRequest`. When true, selects all descendant collections. */
-  var allDescendants: js.UndefOr[Boolean] = js.native
+  var allDescendants: js.UndefOr[Boolean] = js.undefined
   
   /** The collection ID. When set, selects only collections with this ID. */
-  var collectionId: js.UndefOr[String] = js.native
+  var collectionId: js.UndefOr[String] = js.undefined
 }
 object CollectionSelector {
   

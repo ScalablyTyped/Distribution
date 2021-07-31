@@ -2,7 +2,6 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,80 +13,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that are shared to your advertiser or account, use the
   * TargetableRemarketingLists resource.
   */
-@js.native
 trait SchemaRemarketingList extends StObject {
   
   /**
     * Account ID of this remarketing list. This is a read-only, auto-generated
     * field that is only returned in GET requests.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this remarketing list is active.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Dimension value for the advertiser ID that owns this remarketing list.
     * This is a required field.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser. This is a read-only,
     * auto-generated field.
     */
-  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Remarketing list description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Remarketing list ID. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#remarketingList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Number of days that a user should remain in the remarketing list without
     * an impression. Acceptable values are 1 to 540, inclusive.
     */
-  var lifeSpan: js.UndefOr[String] = js.native
+  var lifeSpan: js.UndefOr[String] = js.undefined
   
   /**
     * Rule used to populate the remarketing list with users.
     */
-  var listPopulationRule: js.UndefOr[SchemaListPopulationRule] = js.native
+  var listPopulationRule: js.UndefOr[SchemaListPopulationRule] = js.undefined
   
   /**
     * Number of users currently in the list. This is a read-only field.
     */
-  var listSize: js.UndefOr[String] = js.native
+  var listSize: js.UndefOr[String] = js.undefined
   
   /**
     * Product from which this remarketing list was originated.
     */
-  var listSource: js.UndefOr[String] = js.native
+  var listSource: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the remarketing list. This is a required field. Must be no
     * greater than 128 characters long.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this remarketing list. This is a read-only,
     * auto-generated field that is only returned in GET requests.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaRemarketingList {
   

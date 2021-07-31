@@ -2,17 +2,15 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentNewMessageEvent extends StObject {
   
-  var message: Message = js.native
+  var message: Message
   
-  var originator: String = js.native
+  var originator: String
   
-  var request: IncomingRequest | OutgoingRequest = js.native
+  var request: IncomingRequest | OutgoingRequest
 }
 object UserAgentNewMessageEvent {
   

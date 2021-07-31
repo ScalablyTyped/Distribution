@@ -2,19 +2,17 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List Folders Response.
   */
-@js.native
 trait SchemaListFoldersResponse extends StObject {
   
   /**
     * All GTM Folders of a GTM Container.
     */
-  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.native
+  var folders: js.UndefOr[js.Array[SchemaFolder]] = js.undefined
 }
 object SchemaListFoldersResponse {
   

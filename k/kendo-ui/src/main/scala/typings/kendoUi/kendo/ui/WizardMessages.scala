@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WizardMessages extends StObject {
   
-  var done: js.UndefOr[String] = js.native
+  var done: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var of: js.UndefOr[String] = js.native
+  var of: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
-  var reset: js.UndefOr[String] = js.native
+  var reset: js.UndefOr[String] = js.undefined
   
-  var step: js.UndefOr[String] = js.native
+  var step: js.UndefOr[String] = js.undefined
 }
 object WizardMessages {
   

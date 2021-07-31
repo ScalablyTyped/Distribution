@@ -2,7 +2,6 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google IAM permission for the project and the following scope:
   * `https://www.googleapis.com/auth/cloud-platform`
   */
-@js.native
 trait SchemaAppEngineHttpQueue extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaAppEngineHttpQueue extends StObject {
     * `app_engine_routing_override` is used for all tasks in the queue, no
     * matter what the setting is for the task-level app_engine_routing.
     */
-  var appEngineRoutingOverride: js.UndefOr[SchemaAppEngineRouting] = js.native
+  var appEngineRoutingOverride: js.UndefOr[SchemaAppEngineRouting] = js.undefined
 }
 object SchemaAppEngineHttpQueue {
   

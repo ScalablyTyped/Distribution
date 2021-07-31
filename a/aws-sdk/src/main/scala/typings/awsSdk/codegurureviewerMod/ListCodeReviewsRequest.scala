@@ -2,41 +2,39 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCodeReviewsRequest extends StObject {
   
   /**
     *  The maximum number of results that are returned per call. The default is 100. 
     */
-  var MaxResults: js.UndefOr[ListCodeReviewsMaxResults] = js.native
+  var MaxResults: js.UndefOr[ListCodeReviewsMaxResults] = js.undefined
   
   /**
     *  If nextToken is returned, there are more results available. The value of nextToken is a unique pagination token for each page. Make the call again using the returned token to retrieve the next page. Keep all other arguments unchanged. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
   
   /**
     *  List of provider types for filtering that needs to be applied before displaying the result. For example, providerTypes=[GitHub] lists code reviews from GitHub. 
     */
-  var ProviderTypes: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderTypes] = js.native
+  var ProviderTypes: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderTypes] = js.undefined
   
   /**
     *  List of repository names for filtering that needs to be applied before displaying the result. 
     */
-  var RepositoryNames: js.UndefOr[typings.awsSdk.codegurureviewerMod.RepositoryNames] = js.native
+  var RepositoryNames: js.UndefOr[typings.awsSdk.codegurureviewerMod.RepositoryNames] = js.undefined
   
   /**
     *  List of states for filtering that needs to be applied before displaying the result. For example, states=[Pending] lists code reviews in the Pending state.  The valid code review states are:    Completed: The code review is complete.     Pending: The code review started and has not completed or failed.     Failed: The code review failed.     Deleting: The code review is being deleted.   
     */
-  var States: js.UndefOr[JobStates] = js.native
+  var States: js.UndefOr[JobStates] = js.undefined
   
   /**
     *  The type of code reviews to list in the response. 
     */
-  var Type: typings.awsSdk.codegurureviewerMod.Type = js.native
+  var Type: typings.awsSdk.codegurureviewerMod.Type
 }
 object ListCodeReviewsRequest {
   

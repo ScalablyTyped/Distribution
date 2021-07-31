@@ -2,19 +2,17 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DivOverlayOptions extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[PointExpression] = js.native
+  var offset: js.UndefOr[PointExpression] = js.undefined
   
-  var pane: js.UndefOr[String] = js.native
+  var pane: js.UndefOr[String] = js.undefined
   
-  var zoomAnimation: js.UndefOr[Boolean] = js.native
+  var zoomAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object DivOverlayOptions {
   

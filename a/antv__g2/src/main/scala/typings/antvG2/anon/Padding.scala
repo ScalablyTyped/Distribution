@@ -2,19 +2,17 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[X] = js.native
+  var end: js.UndefOr[X] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[X] = js.native
+  var start: js.UndefOr[X] = js.undefined
 }
 object Padding {
   

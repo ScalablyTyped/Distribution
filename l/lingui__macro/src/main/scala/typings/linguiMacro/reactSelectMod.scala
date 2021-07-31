@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSelectMod {
@@ -47,28 +46,28 @@ object reactSelectMod {
     def this(props: PluralPropsWithoutI18n, context: js.Any) = this()
   }
   
-  @js.native
   trait PluralPropsWithoutI18n
-    extends RenderProps
+    extends StObject
+       with RenderProps
        with /* exact */ StringDictionary[ReactNode] {
     
-    var few: js.UndefOr[ReactNode] = js.native
+    var few: js.UndefOr[ReactNode] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var many: js.UndefOr[ReactNode] = js.native
+    var many: js.UndefOr[ReactNode] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var one: js.UndefOr[ReactNode] = js.native
+    var one: js.UndefOr[ReactNode] = js.undefined
     
-    var other: ReactNode = js.native
+    var other: ReactNode
     
-    var two: js.UndefOr[ReactNode] = js.native
+    var two: js.UndefOr[ReactNode] = js.undefined
     
-    var value: Double | String = js.native
+    var value: Double | String
     
-    var zero: js.UndefOr[ReactNode] = js.native
+    var zero: js.UndefOr[ReactNode] = js.undefined
   }
   object PluralPropsWithoutI18n {
     
@@ -134,16 +133,16 @@ object reactSelectMod {
     }
   }
   
-  @js.native
   trait SelectPropsWithoutI18n
-    extends RenderProps
+    extends StObject
+       with RenderProps
        with /* exact */ StringDictionary[ReactNode] {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var other: ReactNode = js.native
+    var other: ReactNode
     
-    var value: String = js.native
+    var value: String
   }
   object SelectPropsWithoutI18n {
     

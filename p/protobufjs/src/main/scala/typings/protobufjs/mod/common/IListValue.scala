@@ -2,14 +2,12 @@ package typings.protobufjs.mod.common
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.ListValue message. */
-@js.native
 trait IListValue extends StObject {
   
-  var values: js.UndefOr[js.Array[IValue]] = js.native
+  var values: js.UndefOr[js.Array[IValue]] = js.undefined
 }
 object IListValue {
   

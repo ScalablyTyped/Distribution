@@ -9,24 +9,404 @@ import typings.axiosMockAdapter.axiosMockAdapterStrings.throwException
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("axios-mock-adapter", JSImport.Default)
   @js.native
-  class default protected () extends MockAdapter {
+  class default protected ()
+    extends StObject
+       with MockAdapter {
     def this(axiosInstance: AxiosInstance) = this()
     def this(axiosInstance: AxiosInstance, options: MockAdapterOptions) = this()
+    
+    /* CompleteClass */
+    override def adapter(): AxiosAdapter = js.native
+    
+    /* CompleteClass */
+    var history: StringDictionary[js.Array[AxiosRequestConfig]] = js.native
+    
+    /* CompleteClass */
+    override def onAny(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onAny")
+    var onAny_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onDelete(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onDelete")
+    var onDelete_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onGet(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onGet")
+    var onGet_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onHead(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onHead")
+    var onHead_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onList(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onList")
+    var onList_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onOptions(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onOptions")
+    var onOptions_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onPatch(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onPatch")
+    var onPatch_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onPost(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onPost")
+    var onPost_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def onPut(): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: Unit, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp, body: String): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    override def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    /* CompleteClass */
+    @JSName("onPut")
+    var onPut_Original: RequestMatcherFunc = js.native
+    
+    /* CompleteClass */
+    override def reset(): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetHandlers(): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetHistory(): Unit = js.native
+    
+    /* CompleteClass */
+    override def restore(): Unit = js.native
   }
   
   type AsymmetricHeadersMatcher = AsymmetricMatcher | HeadersMatcher
   
-  @js.native
-  trait AsymmetricMatcher extends AsymmetricRequestDataMatcher {
+  trait AsymmetricMatcher
+    extends StObject
+       with AsymmetricRequestDataMatcher {
     
-    var asymmetricMatch: js.Function = js.native
+    var asymmetricMatch: js.Function
   }
   object AsymmetricMatcher {
     
@@ -68,289 +448,306 @@ object mod {
   
   type HeadersMatcher = StringDictionary[String]
   
-  @js.native
   trait MockAdapter extends StObject {
     
-    def adapter(): AxiosAdapter = js.native
+    def adapter(): AxiosAdapter
     
-    var history: StringDictionary[js.Array[AxiosRequestConfig]] = js.native
+    var history: StringDictionary[js.Array[AxiosRequestConfig]]
     
-    def onAny(): RequestHandler = js.native
-    def onAny(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onAny(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onAny(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onAny(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onAny(matcher: String): RequestHandler = js.native
-    def onAny(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: String, body: String): RequestHandler = js.native
-    def onAny(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onAny(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: RegExp): RequestHandler = js.native
-    def onAny(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: RegExp, body: String): RequestHandler = js.native
-    def onAny(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onAny(): RequestHandler
+    def onAny(matcher: String): RequestHandler
+    def onAny(matcher: String, body: String): RequestHandler
+    def onAny(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onAny(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: Unit, body: String): RequestHandler
+    def onAny(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onAny(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: RegExp): RequestHandler
+    def onAny(matcher: RegExp, body: String): RequestHandler
+    def onAny(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onAny(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onAny")
-    var onAny_Original: RequestMatcherFunc = js.native
+    var onAny_Original: RequestMatcherFunc
     
-    def onDelete(): RequestHandler = js.native
-    def onDelete(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onDelete(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onDelete(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onDelete(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onDelete(matcher: String): RequestHandler = js.native
-    def onDelete(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: String, body: String): RequestHandler = js.native
-    def onDelete(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onDelete(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: RegExp): RequestHandler = js.native
-    def onDelete(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: RegExp, body: String): RequestHandler = js.native
-    def onDelete(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onDelete(): RequestHandler
+    def onDelete(matcher: String): RequestHandler
+    def onDelete(matcher: String, body: String): RequestHandler
+    def onDelete(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onDelete(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: Unit, body: String): RequestHandler
+    def onDelete(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onDelete(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: RegExp): RequestHandler
+    def onDelete(matcher: RegExp, body: String): RequestHandler
+    def onDelete(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onDelete(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onDelete")
-    var onDelete_Original: RequestMatcherFunc = js.native
+    var onDelete_Original: RequestMatcherFunc
     
-    def onGet(): RequestHandler = js.native
-    def onGet(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onGet(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onGet(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onGet(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onGet(matcher: String): RequestHandler = js.native
-    def onGet(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: String, body: String): RequestHandler = js.native
-    def onGet(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onGet(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: RegExp): RequestHandler = js.native
-    def onGet(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: RegExp, body: String): RequestHandler = js.native
-    def onGet(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onGet(): RequestHandler
+    def onGet(matcher: String): RequestHandler
+    def onGet(matcher: String, body: String): RequestHandler
+    def onGet(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onGet(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: Unit, body: String): RequestHandler
+    def onGet(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onGet(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: RegExp): RequestHandler
+    def onGet(matcher: RegExp, body: String): RequestHandler
+    def onGet(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onGet(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onGet")
-    var onGet_Original: RequestMatcherFunc = js.native
+    var onGet_Original: RequestMatcherFunc
     
-    def onHead(): RequestHandler = js.native
-    def onHead(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onHead(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onHead(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onHead(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onHead(matcher: String): RequestHandler = js.native
-    def onHead(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: String, body: String): RequestHandler = js.native
-    def onHead(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onHead(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: RegExp): RequestHandler = js.native
-    def onHead(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: RegExp, body: String): RequestHandler = js.native
-    def onHead(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onHead(): RequestHandler
+    def onHead(matcher: String): RequestHandler
+    def onHead(matcher: String, body: String): RequestHandler
+    def onHead(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onHead(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: Unit, body: String): RequestHandler
+    def onHead(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onHead(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: RegExp): RequestHandler
+    def onHead(matcher: RegExp, body: String): RequestHandler
+    def onHead(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onHead(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onHead")
-    var onHead_Original: RequestMatcherFunc = js.native
+    var onHead_Original: RequestMatcherFunc
     
-    def onList(): RequestHandler = js.native
-    def onList(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onList(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onList(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onList(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onList(matcher: String): RequestHandler = js.native
-    def onList(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: String, body: String): RequestHandler = js.native
-    def onList(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onList(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: RegExp): RequestHandler = js.native
-    def onList(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: RegExp, body: String): RequestHandler = js.native
-    def onList(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onList(): RequestHandler
+    def onList(matcher: String): RequestHandler
+    def onList(matcher: String, body: String): RequestHandler
+    def onList(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onList(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: Unit, body: String): RequestHandler
+    def onList(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onList(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: RegExp): RequestHandler
+    def onList(matcher: RegExp, body: String): RequestHandler
+    def onList(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onList(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onList")
-    var onList_Original: RequestMatcherFunc = js.native
+    var onList_Original: RequestMatcherFunc
     
-    def onOptions(): RequestHandler = js.native
-    def onOptions(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onOptions(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onOptions(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onOptions(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onOptions(matcher: String): RequestHandler = js.native
-    def onOptions(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: String, body: String): RequestHandler = js.native
-    def onOptions(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onOptions(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: RegExp): RequestHandler = js.native
-    def onOptions(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: RegExp, body: String): RequestHandler = js.native
-    def onOptions(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onOptions(): RequestHandler
+    def onOptions(matcher: String): RequestHandler
+    def onOptions(matcher: String, body: String): RequestHandler
+    def onOptions(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onOptions(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: Unit, body: String): RequestHandler
+    def onOptions(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onOptions(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: RegExp): RequestHandler
+    def onOptions(matcher: RegExp, body: String): RequestHandler
+    def onOptions(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onOptions(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onOptions")
-    var onOptions_Original: RequestMatcherFunc = js.native
+    var onOptions_Original: RequestMatcherFunc
     
-    def onPatch(): RequestHandler = js.native
-    def onPatch(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPatch(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onPatch(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPatch(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPatch(matcher: String): RequestHandler = js.native
-    def onPatch(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: String, body: String): RequestHandler = js.native
-    def onPatch(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPatch(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: RegExp): RequestHandler = js.native
-    def onPatch(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: RegExp, body: String): RequestHandler = js.native
-    def onPatch(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onPatch(): RequestHandler
+    def onPatch(matcher: String): RequestHandler
+    def onPatch(matcher: String, body: String): RequestHandler
+    def onPatch(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPatch(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: Unit, body: String): RequestHandler
+    def onPatch(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPatch(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: RegExp): RequestHandler
+    def onPatch(matcher: RegExp, body: String): RequestHandler
+    def onPatch(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPatch(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPatch")
-    var onPatch_Original: RequestMatcherFunc = js.native
+    var onPatch_Original: RequestMatcherFunc
     
-    def onPost(): RequestHandler = js.native
-    def onPost(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPost(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onPost(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPost(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPost(matcher: String): RequestHandler = js.native
-    def onPost(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: String, body: String): RequestHandler = js.native
-    def onPost(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPost(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: RegExp): RequestHandler = js.native
-    def onPost(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: RegExp, body: String): RequestHandler = js.native
-    def onPost(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onPost(): RequestHandler
+    def onPost(matcher: String): RequestHandler
+    def onPost(matcher: String, body: String): RequestHandler
+    def onPost(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPost(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: Unit, body: String): RequestHandler
+    def onPost(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPost(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: RegExp): RequestHandler
+    def onPost(matcher: RegExp, body: String): RequestHandler
+    def onPost(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPost(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPost")
-    var onPost_Original: RequestMatcherFunc = js.native
+    var onPost_Original: RequestMatcherFunc
     
-    def onPut(): RequestHandler = js.native
-    def onPut(
-      matcher: js.UndefOr[scala.Nothing],
-      body: js.UndefOr[scala.Nothing],
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPut(matcher: js.UndefOr[scala.Nothing], body: String): RequestHandler = js.native
-    def onPut(matcher: js.UndefOr[scala.Nothing], body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: js.UndefOr[scala.Nothing], body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPut(
-      matcher: js.UndefOr[scala.Nothing],
-      body: AsymmetricRequestDataMatcher,
-      headers: AsymmetricHeadersMatcher
-    ): RequestHandler = js.native
-    def onPut(matcher: String): RequestHandler = js.native
-    def onPut(matcher: String, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: String, body: String): RequestHandler = js.native
-    def onPut(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPut(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: RegExp): RequestHandler = js.native
-    def onPut(matcher: RegExp, body: js.UndefOr[scala.Nothing], headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: RegExp, body: String): RequestHandler = js.native
-    def onPut(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
-    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler = js.native
-    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler = js.native
+    def onPut(): RequestHandler
+    def onPut(matcher: String): RequestHandler
+    def onPut(matcher: String, body: String): RequestHandler
+    def onPut(matcher: String, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: String, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: String, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPut(matcher: String, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: Unit, body: String): RequestHandler
+    def onPut(matcher: Unit, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: Unit, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPut(matcher: Unit, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: RegExp): RequestHandler
+    def onPut(matcher: RegExp, body: String): RequestHandler
+    def onPut(matcher: RegExp, body: String, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: RegExp, body: Unit, headers: AsymmetricHeadersMatcher): RequestHandler
+    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher): RequestHandler
+    def onPut(matcher: RegExp, body: AsymmetricRequestDataMatcher, headers: AsymmetricHeadersMatcher): RequestHandler
     @JSName("onPut")
-    var onPut_Original: RequestMatcherFunc = js.native
+    var onPut_Original: RequestMatcherFunc
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def resetHandlers(): Unit = js.native
+    def resetHandlers(): Unit
     
-    def resetHistory(): Unit = js.native
+    def resetHistory(): Unit
     
-    def restore(): Unit = js.native
+    def restore(): Unit
+  }
+  object MockAdapter {
+    
+    @scala.inline
+    def apply(
+      adapter: () => AxiosAdapter,
+      history: StringDictionary[js.Array[AxiosRequestConfig]],
+      onAny: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onDelete: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onGet: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onHead: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onList: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onOptions: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPatch: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPost: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      onPut: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler,
+      reset: () => Unit,
+      resetHandlers: () => Unit,
+      resetHistory: () => Unit,
+      restore: () => Unit
+    ): MockAdapter = {
+      val __obj = js.Dynamic.literal(adapter = js.Any.fromFunction0(adapter), history = history.asInstanceOf[js.Any], onAny = js.Any.fromFunction3(onAny), onDelete = js.Any.fromFunction3(onDelete), onGet = js.Any.fromFunction3(onGet), onHead = js.Any.fromFunction3(onHead), onList = js.Any.fromFunction3(onList), onOptions = js.Any.fromFunction3(onOptions), onPatch = js.Any.fromFunction3(onPatch), onPost = js.Any.fromFunction3(onPost), onPut = js.Any.fromFunction3(onPut), reset = js.Any.fromFunction0(reset), resetHandlers = js.Any.fromFunction0(resetHandlers), resetHistory = js.Any.fromFunction0(resetHistory), restore = js.Any.fromFunction0(restore))
+      __obj.asInstanceOf[MockAdapter]
+    }
+    
+    @scala.inline
+    implicit class MockAdapterMutableBuilder[Self <: MockAdapter] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAdapter(value: () => AxiosAdapter): Self = StObject.set(x, "adapter", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setHistory(value: StringDictionary[js.Array[AxiosRequestConfig]]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOnAny(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onAny", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnDelete(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onDelete", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnGet(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onGet", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnHead(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onHead", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnList(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onList", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnOptions(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onOptions", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnPatch(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onPatch", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnPost(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onPost", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnPut(
+        value: (/* matcher */ js.UndefOr[String | RegExp], /* body */ js.UndefOr[String | AsymmetricRequestDataMatcher], /* headers */ js.UndefOr[AsymmetricHeadersMatcher]) => RequestHandler
+      ): Self = StObject.set(x, "onPut", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setResetHandlers(value: () => Unit): Self = StObject.set(x, "resetHandlers", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setResetHistory(value: () => Unit): Self = StObject.set(x, "resetHistory", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    }
   }
   
-  @js.native
   trait MockAdapterOptions extends StObject {
     
-    var delayResponse: js.UndefOr[Double] = js.native
+    var delayResponse: js.UndefOr[Double] = js.undefined
     
-    var onNoMatch: js.UndefOr[passthrough | throwException] = js.native
+    var onNoMatch: js.UndefOr[passthrough | throwException] = js.undefined
   }
   object MockAdapterOptions {
     
@@ -377,12 +774,12 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestDataMatcher
-    extends /* index */ StringDictionary[js.Any]
+    extends StObject
+       with /* index */ StringDictionary[js.Any]
        with AsymmetricRequestDataMatcher {
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object RequestDataMatcher {
     
@@ -403,45 +800,97 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestHandler extends StObject {
     
-    def abortRequest(): MockAdapter = js.native
+    def abortRequest(): MockAdapter
     
-    def abortRequestOnce(): MockAdapter = js.native
+    def abortRequestOnce(): MockAdapter
     
-    def networkError(): MockAdapter = js.native
+    def networkError(): MockAdapter
     
-    def networkErrorOnce(): MockAdapter = js.native
+    def networkErrorOnce(): MockAdapter
     
-    def passThrough(): MockAdapter = js.native
+    def passThrough(): MockAdapter
     
-    def reply[T](statusOrCallback: Double): MockAdapter = js.native
-    def reply[T](statusOrCallback: Double, data: T): MockAdapter = js.native
-    def reply[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter = js.native
-    def reply[T](statusOrCallback: Double, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter = js.native
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter = js.native
-    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
+    def reply[T](statusOrCallback: Double): MockAdapter
+    def reply[T](statusOrCallback: Double, data: T): MockAdapter
+    def reply[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter
+    def reply[T](statusOrCallback: Double, data: Unit, headers: js.Any): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter
+    def reply[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: js.Any): MockAdapter
     
-    def replyOnce[T](statusOrCallback: Double): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: Double, data: T): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: Double, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter = js.native
-    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: js.UndefOr[scala.Nothing], headers: js.Any): MockAdapter = js.native
+    def replyOnce[T](statusOrCallback: Double): MockAdapter
+    def replyOnce[T](statusOrCallback: Double, data: T): MockAdapter
+    def replyOnce[T](statusOrCallback: Double, data: T, headers: js.Any): MockAdapter
+    def replyOnce[T](statusOrCallback: Double, data: Unit, headers: js.Any): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: T, headers: js.Any): MockAdapter
+    def replyOnce[T](statusOrCallback: CallbackResponseSpecFunc, data: Unit, headers: js.Any): MockAdapter
     @JSName("replyOnce")
-    var replyOnce_Original: ResponseSpecFunc = js.native
+    var replyOnce_Original: ResponseSpecFunc
     
     @JSName("reply")
-    var reply_Original: ResponseSpecFunc = js.native
+    var reply_Original: ResponseSpecFunc
     
-    def timeout(): MockAdapter = js.native
+    def timeout(): MockAdapter
     
-    def timeoutOnce(): MockAdapter = js.native
+    def timeoutOnce(): MockAdapter
+  }
+  object RequestHandler {
+    
+    @scala.inline
+    def apply(
+      abortRequest: () => MockAdapter,
+      abortRequestOnce: () => MockAdapter,
+      networkError: () => MockAdapter,
+      networkErrorOnce: () => MockAdapter,
+      passThrough: () => MockAdapter,
+      reply: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter,
+      replyOnce: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter,
+      timeout: () => MockAdapter,
+      timeoutOnce: () => MockAdapter
+    ): RequestHandler = {
+      val __obj = js.Dynamic.literal(abortRequest = js.Any.fromFunction0(abortRequest), abortRequestOnce = js.Any.fromFunction0(abortRequestOnce), networkError = js.Any.fromFunction0(networkError), networkErrorOnce = js.Any.fromFunction0(networkErrorOnce), passThrough = js.Any.fromFunction0(passThrough), reply = js.Any.fromFunction3(reply), replyOnce = js.Any.fromFunction3(replyOnce), timeout = js.Any.fromFunction0(timeout), timeoutOnce = js.Any.fromFunction0(timeoutOnce))
+      __obj.asInstanceOf[RequestHandler]
+    }
+    
+    @scala.inline
+    implicit class RequestHandlerMutableBuilder[Self <: RequestHandler] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAbortRequest(value: () => MockAdapter): Self = StObject.set(x, "abortRequest", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setAbortRequestOnce(value: () => MockAdapter): Self = StObject.set(x, "abortRequestOnce", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setNetworkError(value: () => MockAdapter): Self = StObject.set(x, "networkError", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setNetworkErrorOnce(value: () => MockAdapter): Self = StObject.set(x, "networkErrorOnce", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setPassThrough(value: () => MockAdapter): Self = StObject.set(x, "passThrough", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setReply(
+        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
+      ): Self = StObject.set(x, "reply", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setReplyOnce(
+        value: (/* statusOrCallback */ Double | CallbackResponseSpecFunc, /* data */ js.UndefOr[js.Any], /* headers */ js.UndefOr[js.Any]) => MockAdapter
+      ): Self = StObject.set(x, "replyOnce", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setTimeout(value: () => MockAdapter): Self = StObject.set(x, "timeout", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setTimeoutOnce(value: () => MockAdapter): Self = StObject.set(x, "timeoutOnce", js.Any.fromFunction0(value))
+    }
   }
   
   type RequestMatcherFunc = js.Function3[

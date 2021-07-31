@@ -4,23 +4,21 @@ import typings.sqlite.sqlTemplateStringsMod.SQLStatement
 import typings.sqlite.sqlite3Mod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   object IMigrate {
     
-    @js.native
     trait MigrationData extends StObject {
       
-      var down: String = js.native
+      var down: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var name: String = js.native
+      var name: String
       
-      var up: String = js.native
+      var up: String
     }
     object MigrationData {
       
@@ -47,14 +45,13 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait MigrationFile extends StObject {
       
-      var filename: String = js.native
+      var filename: String
       
-      var id: Double = js.native
+      var id: Double
       
-      var name: String = js.native
+      var name: String
     }
     object MigrationFile {
       
@@ -78,30 +75,29 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait MigrationParams extends StObject {
       
       /**
         * If true, will force the migration API to rollback and re-apply the latest migration over
         * again each time when Node.js app launches.
         */
-      var force: js.UndefOr[Boolean] = js.native
+      var force: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Migration data read from migrations folder. `migrationsPath` will be ignored if this is
         * provided.
         */
-      var migrations: js.UndefOr[js.Array[MigrationData]] = js.native
+      var migrations: js.UndefOr[js.Array[MigrationData]] = js.undefined
       
       /**
         * Path to the migrations folder. Default is `path.join(process.cwd(), 'migrations')`
         */
-      var migrationsPath: js.UndefOr[String] = js.native
+      var migrationsPath: js.UndefOr[String] = js.undefined
       
       /**
         * Migrations table name. Default is 'migrations'
         */
-      var table: js.UndefOr[String] = js.native
+      var table: js.UndefOr[String] = js.undefined
     }
     object MigrationParams {
       
@@ -146,7 +142,6 @@ object interfacesMod {
   
   object ISqlite {
     
-    @js.native
     trait Config extends StObject {
       
       /**
@@ -162,7 +157,7 @@ object interfacesMod {
         * const driver = sqlite.Database
         * ```
         */
-      var driver: js.Any = js.native
+      var driver: js.Any
       
       /**
         * Valid values are filenames, ":memory:" for an anonymous in-memory
@@ -170,13 +165,13 @@ object interfacesMod {
         * Anonymous databases are not persisted and when closing the database
         * handle, their contents are lost.
         */
-      var filename: String = js.native
+      var filename: String
       
       /**
         * One or more of sqlite3.OPEN_READONLY, sqlite3.OPEN_READWRITE and
         * sqlite3.OPEN_CREATE. The default value is OPEN_READWRITE | OPEN_CREATE.
         */
-      var mode: js.UndefOr[Double] = js.native
+      var mode: js.UndefOr[Double] = js.undefined
     }
     object Config {
       
@@ -221,7 +216,6 @@ object interfacesMod {
       def trace: typings.sqlite.sqliteStrings.trace = "trace".asInstanceOf[typings.sqlite.sqliteStrings.trace]
     }
     
-    @js.native
     trait RunResult[Stmt /* <: Statement */] extends StObject {
       
       /**
@@ -230,7 +224,7 @@ object interfacesMod {
         * Only contains valid information when the query was a
         * successfully completed UPDATE or DELETE statement.
         */
-      var changes: js.UndefOr[Double] = js.native
+      var changes: js.UndefOr[Double] = js.undefined
       
       /**
         * Row id of the inserted row.
@@ -238,7 +232,7 @@ object interfacesMod {
         * Only contains valid information when the query was a successfully
         * completed INSERT statement.
         */
-      var lastID: js.UndefOr[Double] = js.native
+      var lastID: js.UndefOr[Double] = js.undefined
       
       /**
         * Statement object.
@@ -247,7 +241,7 @@ object interfacesMod {
         * automatically finalized after running for the first time.
         * Any subsequent attempts to run the statement again will fail.
         */
-      var stmt: typings.sqlite.statementMod.Statement[Stmt] = js.native
+      var stmt: typings.sqlite.statementMod.Statement[Stmt]
     }
     object RunResult {
       
@@ -258,7 +252,7 @@ object interfacesMod {
       }
       
       @scala.inline
-      implicit class RunResultMutableBuilder[Self <: RunResult[_], Stmt /* <: Statement */] (val x: Self with RunResult[Stmt]) extends AnyVal {
+      implicit class RunResultMutableBuilder[Self <: RunResult[?], Stmt /* <: Statement */] (val x: Self & RunResult[Stmt]) extends AnyVal {
         
         @scala.inline
         def setChanges(value: Double): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
@@ -277,12 +271,11 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait SqlObj extends StObject {
       
-      var params: js.UndefOr[js.Array[_]] = js.native
+      var params: js.UndefOr[js.Array[js.Any]] = js.undefined
       
-      var sql: String = js.native
+      var sql: String
     }
     object SqlObj {
       
@@ -296,7 +289,7 @@ object interfacesMod {
       implicit class SqlObjMutableBuilder[Self <: SqlObj] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)

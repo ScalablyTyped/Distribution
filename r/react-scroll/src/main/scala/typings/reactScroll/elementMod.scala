@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
@@ -17,11 +16,12 @@ object elementMod {
   
   type Element = Component[ElementProps, js.Object, js.Any]
   
-  @js.native
-  trait ElementProps extends HTMLProps[HTMLDivElement] {
+  trait ElementProps
+    extends StObject
+       with HTMLProps[HTMLDivElement] {
     
     @JSName("name")
-    var name_ElementProps: String = js.native
+    var name_ElementProps: String
   }
   object ElementProps {
     

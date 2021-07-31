@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The {@link XRowSet} interface is unique in that it is intended to be a software layer on top of an SDBC driver. Implementations of the {@link RowSet}
   * interface can be provided by anyone.
   */
-@js.native
-trait XRowSet extends XResultSet {
+trait XRowSet
+  extends StObject
+     with XResultSet {
   
   /**
     * adds the specified listener to receive the events "cursorMoved", "rowChanged", and "rowSetChanged".
     * @param listener the listener which should be registered
     */
-  def addRowSetListener(listener: XRowSetListener): Unit = js.native
+  def addRowSetListener(listener: XRowSetListener): Unit
   
   /**
     * populates a row set with data. The description of the data source and other important information for filling the row set with data.
     * @throws SQLException if a database access error occurs.
     */
-  def execute(): Unit = js.native
+  def execute(): Unit
   
   /**
     * removes the specified listener.
     * @param listener the listener which should be registered
     */
-  def removeRowSetListener(listener: XRowSetListener): Unit = js.native
+  def removeRowSetListener(listener: XRowSetListener): Unit
 }
 object XRowSet {
   

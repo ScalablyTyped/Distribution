@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApprovalRuleTemplateOutput extends StObject {
   
   /**
     * The system-generated ID of the deleted approval rule template. If the template has been previously deleted, the only response is a 200 OK.
     */
-  var approvalRuleTemplateId: ApprovalRuleTemplateId = js.native
+  var approvalRuleTemplateId: ApprovalRuleTemplateId
 }
 object DeleteApprovalRuleTemplateOutput {
   

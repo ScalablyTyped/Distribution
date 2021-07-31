@@ -12,7 +12,7 @@ Named routes for node.js. Works with express and independently
 | Keywords           | named, routes, i18n, router, reversable, express, web |
 | # releases         | 2 |
 | # dependents       | 8 |
-| # downloads        | 75139 |
+| # downloads        | 62232 |
 | # stars            | 4 |
 
 ## Links

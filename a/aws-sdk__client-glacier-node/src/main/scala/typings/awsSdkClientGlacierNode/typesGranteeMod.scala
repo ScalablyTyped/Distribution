@@ -5,38 +5,36 @@ import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.CanonicalU
 import typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.Group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGranteeMod {
   
-  @js.native
   trait Grantee extends StObject {
     
     /**
       * <p>Screen name of the grantee.</p>
       */
-    var DisplayName: js.UndefOr[String] = js.native
+    var DisplayName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Email address of the grantee.</p>
       */
-    var EmailAddress: js.UndefOr[String] = js.native
+    var EmailAddress: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The canonical user ID of the grantee.</p>
       */
-    var ID: js.UndefOr[String] = js.native
+    var ID: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Type of grantee</p>
       */
-    var Type: AmazonCustomerByEmail | CanonicalUser | Group | String = js.native
+    var Type: AmazonCustomerByEmail | CanonicalUser | Group | String
     
     /**
       * <p>URI of the grantee group.</p>
       */
-    var URI: js.UndefOr[String] = js.native
+    var URI: js.UndefOr[String] = js.undefined
   }
   object Grantee {
     

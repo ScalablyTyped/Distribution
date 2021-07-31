@@ -10,9 +10,9 @@ Components related to selecting items from a list
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/select |
 | Keywords           | palantir, blueprint, components, select, select2, query, multiselect, suggest, typeahead, ui |
-| # releases         | 30 |
-| # dependents       | 69 |
-| # downloads        | 3972721 |
+| # releases         | 29 |
+| # dependents       | 71 |
+| # downloads        | 4307817 |
 | # stars            | 0 |
 
 ## Links

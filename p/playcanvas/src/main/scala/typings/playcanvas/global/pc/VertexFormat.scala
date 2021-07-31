@@ -1,9 +1,9 @@
 package typings.playcanvas.global.pc
 
 import typings.playcanvas.anon.Components
+import typings.playcanvas.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -102,13 +102,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.VertexFormat")
 @js.native
 class VertexFormat protected ()
-  extends typings.playcanvas.pc.VertexFormat {
+  extends StObject
+     with typings.playcanvas.pc.VertexFormat {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice, description: js.Array[Components]) = this()
   def this(
     graphicsDevice: typings.playcanvas.pc.GraphicsDevice,
     description: js.Array[Components],
     vertexCount: Double
   ) = this()
+  
+  /**
+    * The vertex attribute elements.
+    */
+  /* CompleteClass */
+  var elements: js.Array[Name] = js.native
+  
+  /**
+    * Applies any changes made to the VertexFormat's properties.
+    */
+  /* CompleteClass */
+  override def update(): Unit = js.native
 }
 object VertexFormat {
   

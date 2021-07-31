@@ -7,7 +7,6 @@ import typings.synaptic.mod.Layer.gateType
 import typings.synaptic.mod.Neuron.SquashingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("synaptic", "Layer")
@@ -64,11 +63,11 @@ class Layer protected () extends StObject {
     * @param connectionType If not specified, the connection type is always Layer.connectionType.ALL_TO_ALL when connecting two different layers, and is Layer.connectionType.ONE_TO_ONE when connecting a layer to itself (ie myLayer.project(myLayer)).
     */
   def project(layer: Layer): LayerConnection = js.native
-  def project(layer: Layer, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
+  def project(layer: Layer, connectionType: Unit, weights: js.Any): LayerConnection = js.native
   def project(layer: Layer, connectionType: connectionType): LayerConnection = js.native
   def project(layer: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   def project(layer: Network): LayerConnection = js.native
-  def project(layer: Network, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
+  def project(layer: Network, connectionType: Unit, weights: js.Any): LayerConnection = js.native
   def project(layer: Network, connectionType: connectionType): LayerConnection = js.native
   def project(layer: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   
@@ -126,10 +125,13 @@ object Layer {
   }
   object LayerConnection {
     
-    /* static member */
-    @JSImport("synaptic", "Layer.LayerConnection.uid")
+    @JSImport("synaptic", "Layer.LayerConnection")
     @js.native
-    def uid(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /**
@@ -142,10 +144,13 @@ object Layer {
   /* was `typeof LayerConnection` */
   object connection {
     
-    /* static member */
-    @JSImport("synaptic", "Layer.connection.uid")
+    @JSImport("synaptic", "Layer.connection")
     @js.native
-    def uid(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   @js.native
@@ -158,28 +163,34 @@ object Layer {
   object connectionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[connectionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[connectionType & Double] = js.native
     
     /**
       * It connects every neuron from layer A, to every neuron in layer B.
       */
     @js.native
-    sealed trait ALL_TO_ALL extends connectionType
-    /* 0 */ val ALL_TO_ALL: typings.synaptic.mod.Layer.connectionType.ALL_TO_ALL with Double = js.native
+    sealed trait ALL_TO_ALL
+      extends StObject
+         with connectionType
+    /* 0 */ val ALL_TO_ALL: typings.synaptic.mod.Layer.connectionType.ALL_TO_ALL & Double = js.native
     
     /**
       * Useful only in self-connections. It connects every neuron from a layer to all the other neurons in that same layer, except with itself. If this connectionType is used in a connection between different layers, it produces the same result as ALL_TO_ALL.
       */
     @js.native
-    sealed trait ALL_TO_ELSE extends connectionType
-    /* 2 */ val ALL_TO_ELSE: typings.synaptic.mod.Layer.connectionType.ALL_TO_ELSE with Double = js.native
+    sealed trait ALL_TO_ELSE
+      extends StObject
+         with connectionType
+    /* 2 */ val ALL_TO_ELSE: typings.synaptic.mod.Layer.connectionType.ALL_TO_ELSE & Double = js.native
     
     /**
       * It connects each neuron from layer A, to one neuron in layer B. Both layers must be the same size in order to work.
       */
     @js.native
-    sealed trait ONE_TO_ONE extends connectionType
-    /* 1 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.connectionType.ONE_TO_ONE with Double = js.native
+    sealed trait ONE_TO_ONE
+      extends StObject
+         with connectionType
+    /* 1 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.connectionType.ONE_TO_ONE & Double = js.native
   }
   
   @js.native
@@ -192,38 +203,43 @@ object Layer {
   object gateType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[gateType with Double] = js.native
+    def apply(value: Double): js.UndefOr[gateType & Double] = js.native
     
     /**
       * If layer C is gating connections between layer A and B, all the neurons from C gate all the input connections to B.
       */
     @js.native
-    sealed trait INPUT extends gateType
-    /* 0 */ val INPUT: typings.synaptic.mod.Layer.gateType.INPUT with Double = js.native
+    sealed trait INPUT
+      extends StObject
+         with gateType
+    /* 0 */ val INPUT: typings.synaptic.mod.Layer.gateType.INPUT & Double = js.native
     
     /**
       * If layer C is gating connections between layer A and B, each neuron from C gates one connection from A to B. This is useful for gating self-connected layers. To use this kind of gateType, A, B and C must be the same size.
       */
     @js.native
-    sealed trait ONE_TO_ONE extends gateType
-    /* 2 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.gateType.ONE_TO_ONE with Double = js.native
+    sealed trait ONE_TO_ONE
+      extends StObject
+         with gateType
+    /* 2 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.gateType.ONE_TO_ONE & Double = js.native
     
     /**
       * If layer C is gating connections between layer A and B, all the neurons from C gate all the output connections from A.
       */
     @js.native
-    sealed trait OUTPUT extends gateType
-    /* 1 */ val OUTPUT: typings.synaptic.mod.Layer.gateType.OUTPUT with Double = js.native
+    sealed trait OUTPUT
+      extends StObject
+         with gateType
+    /* 1 */ val OUTPUT: typings.synaptic.mod.Layer.gateType.OUTPUT & Double = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var bias: js.UndefOr[Double] = js.native
+    var bias: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[js.Any] = js.native
+    var label: js.UndefOr[js.Any] = js.undefined
     
-    var squash: js.UndefOr[SquashingFunction] = js.native
+    var squash: js.UndefOr[SquashingFunction] = js.undefined
   }
   object Options {
     

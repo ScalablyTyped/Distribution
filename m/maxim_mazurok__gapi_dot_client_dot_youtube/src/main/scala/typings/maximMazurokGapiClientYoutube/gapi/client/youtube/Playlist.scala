@@ -3,39 +3,37 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Playlist extends StObject {
   
   /** The contentDetails object contains information like video count. */
-  var contentDetails: js.UndefOr[PlaylistContentDetails] = js.native
+  var contentDetails: js.UndefOr[PlaylistContentDetails] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube uses to uniquely identify the playlist. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#playlist". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Localizations for different languages */
   var localizations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The player object contains information that you would use to play the playlist in an embedded player. */
-  var player: js.UndefOr[PlaylistPlayer] = js.native
+  var player: js.UndefOr[PlaylistPlayer] = js.undefined
   
   /** The snippet object contains basic details about the playlist, such as its title and description. */
-  var snippet: js.UndefOr[PlaylistSnippet] = js.native
+  var snippet: js.UndefOr[PlaylistSnippet] = js.undefined
   
   /** The status object contains status information for the playlist. */
-  var status: js.UndefOr[PlaylistStatus] = js.native
+  var status: js.UndefOr[PlaylistStatus] = js.undefined
 }
 object Playlist {
   
@@ -76,7 +74,7 @@ object Playlist {
     def setLocalizations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.youtube.gapi.client.youtube.PlaylistLocalization}
-      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientYoutube.maximMazurokGapiClientYoutubeStrings.Playlist & TopLevel[js.Any]
     ): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     
     @scala.inline

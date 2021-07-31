@@ -2,7 +2,6 @@ package typings.ionicUtilsTerminal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,28 +18,27 @@ object mod {
   @js.native
   val TERMINAL_INFO: TerminalInfo = js.native
   
-  @js.native
   trait TerminalInfo extends StObject {
     
     /**
       * Whether this is in CI or not.
       */
-    val ci: Boolean = js.native
+    val ci: Boolean
     
     /**
       * Path to the user's shell program.
       */
-    val shell: String = js.native
+    val shell: String
     
     /**
       * Whether the terminal is an interactive TTY or not.
       */
-    val tty: Boolean = js.native
+    val tty: Boolean
     
     /**
       * Whether this is a Windows shell or not.
       */
-    val windows: Boolean = js.native
+    val windows: Boolean
   }
   object TerminalInfo {
     

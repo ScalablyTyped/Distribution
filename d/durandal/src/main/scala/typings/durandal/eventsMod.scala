@@ -3,7 +3,6 @@ package typings.durandal
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,8 @@ object eventsMod extends Shortcut {
   @JSImport("durandal/events", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends DurandalEventSupport[js.Object]
+    extends StObject
+       with DurandalEventSupport[js.Object]
   @JSImport("durandal/events", JSImport.Namespace)
   @js.native
   val ^ : DurandalEventModule = js.native

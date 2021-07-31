@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodeForge.mod.pkcs12.Bag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* key */ StringDictionary[js.UndefOr[js.Array[Bag]]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[js.Array[Bag]]] {
   
-  var friendlyName: js.UndefOr[js.Array[Bag]] = js.native
+  var friendlyName: js.UndefOr[js.Array[Bag]] = js.undefined
   
-  var localKeyId: js.UndefOr[js.Array[Bag]] = js.native
+  var localKeyId: js.UndefOr[js.Array[Bag]] = js.undefined
 }
 object Dictkey {
   

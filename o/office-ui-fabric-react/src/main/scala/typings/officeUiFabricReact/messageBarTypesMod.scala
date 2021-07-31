@@ -15,7 +15,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageBarTypesMod {
@@ -27,91 +26,103 @@ object messageBarTypesMod {
   object MessageBarType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MessageBarType with Double] = js.native
+    def apply(value: Double): js.UndefOr[MessageBarType & Double] = js.native
     
     /** Blocked styled MessageBar */
     @js.native
-    sealed trait blocked extends MessageBarType
-    /* 2 */ val blocked: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.blocked with Double = js.native
+    sealed trait blocked
+      extends StObject
+         with MessageBarType
+    /* 2 */ val blocked: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.blocked & Double = js.native
     
     /** Error styled MessageBar */
     @js.native
-    sealed trait error extends MessageBarType
-    /* 1 */ val error: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.error with Double = js.native
+    sealed trait error
+      extends StObject
+         with MessageBarType
+    /* 1 */ val error: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.error & Double = js.native
     
     /** Info styled MessageBar */
     @js.native
-    sealed trait info extends MessageBarType
-    /* 0 */ val info: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.info with Double = js.native
+    sealed trait info
+      extends StObject
+         with MessageBarType
+    /* 0 */ val info: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.info & Double = js.native
     
     /** SevereWarning styled MessageBar */
     @js.native
-    sealed trait severeWarning extends MessageBarType
-    /* 3 */ val severeWarning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.severeWarning with Double = js.native
+    sealed trait severeWarning
+      extends StObject
+         with MessageBarType
+    /* 3 */ val severeWarning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.severeWarning & Double = js.native
     
     /** Success styled MessageBar */
     @js.native
-    sealed trait success extends MessageBarType
-    /* 4 */ val success: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.success with Double = js.native
+    sealed trait success
+      extends StObject
+         with MessageBarType
+    /* 4 */ val success: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.success & Double = js.native
     
     /** Warning styled MessageBar */
     @js.native
-    sealed trait warning extends MessageBarType
-    /* 5 */ val warning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.warning with Double = js.native
+    sealed trait warning
+      extends StObject
+         with MessageBarType
+    /* 5 */ val warning: typings.officeUiFabricReact.messageBarTypesMod.MessageBarType.warning & Double = js.native
   }
   
-  @js.native
   trait IMessageBar extends StObject
   
-  @js.native
-  trait IMessageBarProps extends HTMLAttributes[HTMLElement] {
+  trait IMessageBarProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * The actions you want to show on the other side.
       */
-    var actions: js.UndefOr[Element] = js.native
+    var actions: js.UndefOr[Element] = js.undefined
     
     /**
       * A description of the message bar for the benefit of screen readers.
       * @deprecated Use native prop `aria-label` instead.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IMessageBar interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IMessageBar]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IMessageBar]] = js.undefined
     
     /**
       * Aria label on dismiss button if onDismiss is defined.
       */
-    var dismissButtonAriaLabel: js.UndefOr[String] = js.native
+    var dismissButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Custom icon prop to replace the dismiss icon.
       * If unset, default will be the Fabric Clear icon.
       */
-    var dismissIconProps: js.UndefOr[IIconProps] = js.native
+    var dismissIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Determines if the message bar is multi lined.
       * If false, and the text overflows over buttons or to another line, it is clipped.
       * @defaultvalue true
       */
-    var isMultiline: js.UndefOr[Boolean] = js.native
+    var isMultiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom icon prop to replace the message bar icon.
       * If unset, default will be the icon set by messageBarType.
       */
-    var messageBarIconProps: js.UndefOr[IIconProps] = js.native
+    var messageBarIconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * The type of MessageBar to render.
       * @defaultvalue MessageBarType.info
       */
-    var messageBarType: js.UndefOr[MessageBarType] = js.native
+    var messageBarType: js.UndefOr[MessageBarType] = js.undefined
     
     /**
       * Whether the message bar has a dismiss button and its callback.
@@ -121,24 +132,24 @@ object messageBarTypesMod {
     var onDismiss: js.UndefOr[
         js.Function1[
           /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Aria label on overflow button if truncated is defined.
       */
-    var overflowButtonAriaLabel: js.UndefOr[String] = js.native
+    var overflowButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IMessageBarStyleProps, IMessageBarStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IMessageBarStyleProps, IMessageBarStyles]] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Determines if the message bar text is truncated.
@@ -146,7 +157,7 @@ object messageBarTypesMod {
       * This prop is for single line message bars with no buttons only in a limited space scenario.
       * @defaultvalue false
       */
-    var truncated: js.UndefOr[Boolean] = js.native
+    var truncated: js.UndefOr[Boolean] = js.undefined
   }
   object IMessageBarProps {
     
@@ -211,7 +222,9 @@ object messageBarTypesMod {
       def setMessageBarTypeUndefined: Self = StObject.set(x, "messageBarType", js.undefined)
       
       @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => _): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      def setOnDismiss(
+        value: /* ev */ js.UndefOr[MouseEvent[HTMLElement | BaseButton | Button, NativeMouseEvent]] => js.Any
+      ): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
@@ -245,48 +258,47 @@ object messageBarTypesMod {
     }
   }
   
-  @js.native
   trait IMessageBarStyleProps extends StObject {
     
     /**
       * Whether the MessageBar contains any action elements.
       */
-    var actions: js.UndefOr[Boolean] = js.native
+    var actions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional CSS class(es).
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the single line MessageBar is being expanded.
       */
-    var expandSingleLine: js.UndefOr[Boolean] = js.native
+    var expandSingleLine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the MessageBar is rendered in multi line (as opposed to single line) mode.
       */
-    var isMultiline: js.UndefOr[Boolean] = js.native
+    var isMultiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type of the MessageBar.
       */
-    var messageBarType: js.UndefOr[MessageBarType] = js.native
+    var messageBarType: js.UndefOr[MessageBarType] = js.undefined
     
     /**
       * Whether the MessageBar contains a dismiss button.
       */
-    var onDismiss: js.UndefOr[Boolean] = js.native
+    var onDismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /**
       * Whether the text is truncated.
       */
-    var truncated: js.UndefOr[Boolean] = js.native
+    var truncated: js.UndefOr[Boolean] = js.undefined
   }
   object IMessageBarStyleProps {
     
@@ -346,63 +358,62 @@ object messageBarTypesMod {
     }
   }
   
-  @js.native
   trait IMessageBarStyles extends StObject {
     
     /**
       * Style set for the optional element containing the action elements.
       */
-    var actions: js.UndefOr[IStyle] = js.native
+    var actions: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the element containing the icon, text, and optional dismiss button.
       */
-    var content: js.UndefOr[IStyle] = js.native
+    var content: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the element containing the dismiss button.
       */
-    var dismissSingleLine: js.UndefOr[IStyle] = js.native
+    var dismissSingleLine: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the optional dismiss button.
       */
-    var dismissal: js.UndefOr[IStyle] = js.native
+    var dismissal: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the icon used to expand and collapse the MessageBar.
       */
-    var expand: js.UndefOr[IStyle] = js.native
+    var expand: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the element containing the expand icon.
       */
-    var expandSingleLine: js.UndefOr[IStyle] = js.native
+    var expandSingleLine: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the icon.
       */
-    var icon: js.UndefOr[IStyle] = js.native
+    var icon: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the element containing the icon.
       */
-    var iconContainer: js.UndefOr[IStyle] = js.native
+    var iconContainer: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the text.
       */
-    var innerText: js.UndefOr[IStyle] = js.native
+    var innerText: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the root element.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the element containing the text.
       */
-    var text: js.UndefOr[IStyle] = js.native
+    var text: js.UndefOr[IStyle] = js.undefined
   }
   object IMessageBarStyles {
     

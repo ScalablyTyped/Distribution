@@ -2,18 +2,16 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.HostNative> */
-@js.native
 trait PartialHostNative extends StObject {
   
-  var hardware: js.UndefOr[Cpus] = js.native
+  var hardware: js.UndefOr[Cpus] = js.undefined
   
-  var os: js.UndefOr[Arch] = js.native
+  var os: js.UndefOr[Arch] = js.undefined
   
-  var process: js.UndefOr[Env] = js.native
+  var process: js.UndefOr[Env] = js.undefined
 }
 object PartialHostNative {
   

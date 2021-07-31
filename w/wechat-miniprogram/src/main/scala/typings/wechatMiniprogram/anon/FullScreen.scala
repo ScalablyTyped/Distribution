@@ -4,15 +4,13 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.horizontal
 import typings.wechatMiniprogram.wechatMiniprogramStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullScreen extends StObject {
   
-  var direction: vertical | horizontal = js.native
+  var direction: vertical | horizontal
   
-  var fullScreen: Boolean = js.native
+  var fullScreen: Boolean
 }
 object FullScreen {
   

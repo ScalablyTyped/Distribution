@@ -3,26 +3,24 @@ package typings.cytoscape.mod
 import typings.cytoscape.mod.Css.TransitionTimingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingularAnimationOptionsBase extends StObject {
   
   /** The duration of the animation in milliseconds. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** A transition-timing-function easing style string that shapes the animation progress curve. */
-  var easing: TransitionTimingFunction = js.native
+  var easing: TransitionTimingFunction
   
   /** A position to which the elements will be animated. */
-  var position: Position = js.native
+  var position: Position
   
   /** A rendered position to which the elements will be animated. */
-  var renderedPosition: Position = js.native
+  var renderedPosition: Position
   
   /** An object containing name-value pairs of style properties to animate. */
-  var style: js.Any = js.native
+  var style: js.Any
 }
 object SingularAnimationOptionsBase {
   

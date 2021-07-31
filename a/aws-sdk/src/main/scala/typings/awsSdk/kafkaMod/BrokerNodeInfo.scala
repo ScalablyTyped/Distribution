@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerNodeInfo extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait BrokerNodeInfo extends StObject {
     The attached elastic network interface of the broker.
     
     */
-  var AttachedENIId: js.UndefOr[string] = js.native
+  var AttachedENIId: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The ID of the broker.
     
     */
-  var BrokerId: js.UndefOr[double] = js.native
+  var BrokerId: js.UndefOr[double] = js.undefined
   
   /**
     * 
     The client subnet to which this broker node belongs.
     
     */
-  var ClientSubnet: js.UndefOr[string] = js.native
+  var ClientSubnet: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The virtual private cloud (VPC) of the client.
     
     */
-  var ClientVpcIpAddress: js.UndefOr[string] = js.native
+  var ClientVpcIpAddress: js.UndefOr[string] = js.undefined
   
   /**
     * 
     Information about the version of software currently deployed on the Kafka brokers in the cluster.
     
     */
-  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.native
+  var CurrentBrokerSoftwareInfo: js.UndefOr[BrokerSoftwareInfo] = js.undefined
   
   /**
     * 
     Endpoints for accessing the broker.
     
     */
-  var Endpoints: js.UndefOr[listOfString] = js.native
+  var Endpoints: js.UndefOr[listOfString] = js.undefined
 }
 object BrokerNodeInfo {
   

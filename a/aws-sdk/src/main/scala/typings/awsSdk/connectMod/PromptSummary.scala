@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the prompt.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the prompt.
     */
-  var Id: js.UndefOr[PromptId] = js.native
+  var Id: js.UndefOr[PromptId] = js.undefined
   
   /**
     * The name of the prompt.
     */
-  var Name: js.UndefOr[PromptName] = js.native
+  var Name: js.UndefOr[PromptName] = js.undefined
 }
 object PromptSummary {
   

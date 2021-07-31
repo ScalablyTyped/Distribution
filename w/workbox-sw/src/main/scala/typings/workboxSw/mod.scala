@@ -34,7 +34,6 @@ import typings.workboxStreams.strategyMod.StreamsHandlerCallback
 import typings.workboxStreams.streamSourceMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -42,6 +41,10 @@ object mod {
   object global {
     
     object workbox {
+      
+      @JSGlobal("workbox")
+      @js.native
+      val ^ : js.Any = js.native
       
       /* was `typeof WorkboxBackgroundSync` */
       object backgroundSync {
@@ -66,6 +69,10 @@ object mod {
       /* was `typeof WorkboxBroadcastUpdate` */
       object broadcastUpdate {
         
+        @JSGlobal("workbox.broadcastUpdate")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSGlobal("workbox.broadcastUpdate.BroadcastCacheUpdate")
         @js.native
         class BroadcastCacheUpdate ()
@@ -80,9 +87,8 @@ object mod {
           def this(options: BroadcastCacheUpdateOptions) = this()
         }
         
-        @JSGlobal("workbox.broadcastUpdate.broadcastUpdate")
-        @js.native
-        def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = js.native
+        @scala.inline
+        def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
       }
       
       /* was `typeof WorkboxCacheableResponse` */
@@ -106,25 +112,25 @@ object mod {
       /* was `typeof WorkboxCore` */
       object core {
         
+        @JSGlobal("workbox.core")
+        @js.native
+        val ^ : js.Any = js.native
+        
         @JSGlobal("workbox.core.cacheNames")
         @js.native
         val cacheNames: CacheNames_ = js.native
         
-        @JSGlobal("workbox.core.clientsClaim")
-        @js.native
-        def clientsClaim(): Unit = js.native
+        @scala.inline
+        def clientsClaim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clientsClaim")().asInstanceOf[Unit]
         
-        @JSGlobal("workbox.core.registerQuotaErrorCallback")
-        @js.native
-        def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = js.native
+        @scala.inline
+        def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerQuotaErrorCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.core.setCacheNameDetails")
-        @js.native
-        def setCacheNameDetails(details: PartialCacheNameDetails): Unit = js.native
+        @scala.inline
+        def setCacheNameDetails(details: PartialCacheNameDetails): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCacheNameDetails")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.core.skipWaiting")
-        @js.native
-        def skipWaiting(): Unit = js.native
+        @scala.inline
+        def skipWaiting(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipWaiting")().asInstanceOf[Unit]
       }
       
       /* was `typeof WorkboxExpiration` */
@@ -149,39 +155,44 @@ object mod {
       /* was `typeof WorkboxGoogleAnalytics` */
       object googleAnalytics {
         
-        @JSGlobal("workbox.googleAnalytics.initialize")
+        @JSGlobal("workbox.googleAnalytics")
         @js.native
-        def initialize(): Unit = js.native
-        @JSGlobal("workbox.googleAnalytics.initialize")
-        @js.native
-        def initialize(options: InitializeOptions): Unit = js.native
+        val ^ : js.Any = js.native
+        
+        @scala.inline
+        def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+        @scala.inline
+        def initialize(options: InitializeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
-      @JSGlobal("workbox.loadModule")
-      @js.native
-      def loadModule(moduleName: String): Unit = js.native
+      @scala.inline
+      def loadModule(moduleName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModule")(moduleName.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /* was `typeof WorkboxNavigationPreload` */
       object navigationPreload {
         
-        @JSGlobal("workbox.navigationPreload.disable")
+        @JSGlobal("workbox.navigationPreload")
         @js.native
-        def disable(): Unit = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("workbox.navigationPreload.enable")
-        @js.native
-        def enable(): Unit = js.native
-        @JSGlobal("workbox.navigationPreload.enable")
-        @js.native
-        def enable(headerValue: String): Unit = js.native
+        @scala.inline
+        def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
         
-        @JSGlobal("workbox.navigationPreload.isSupported")
-        @js.native
-        def isSupported(): Boolean = js.native
+        @scala.inline
+        def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+        @scala.inline
+        def enable(headerValue: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(headerValue.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        
+        @scala.inline
+        def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
       }
       
       /* was `typeof WorkboxPrecaching` */
       object precaching {
+        
+        @JSGlobal("workbox.precaching")
+        @js.native
+        val ^ : js.Any = js.native
         
         @JSGlobal("workbox.precaching.PrecacheController")
         @js.native
@@ -190,52 +201,51 @@ object mod {
           def this(cacheName: String) = this()
         }
         
-        @JSGlobal("workbox.precaching.addPlugins")
-        @js.native
-        def addPlugins(newPlugins: js.Array[WorkboxPlugin]): Unit = js.native
+        @scala.inline
+        def addPlugins(newPlugins: js.Array[WorkboxPlugin]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPlugins")(newPlugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.precaching.addRoute")
-        @js.native
-        def addRoute(): Unit = js.native
-        @JSGlobal("workbox.precaching.addRoute")
-        @js.native
-        def addRoute(options: FetchListenerOptions): Unit = js.native
+        @scala.inline
+        def addRoute(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")().asInstanceOf[Unit]
+        @scala.inline
+        def addRoute(options: FetchListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.precaching.cleanupOutdatedCaches")
-        @js.native
-        def cleanupOutdatedCaches(): Unit = js.native
+        @scala.inline
+        def cleanupOutdatedCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupOutdatedCaches")().asInstanceOf[Unit]
         
-        @JSGlobal("workbox.precaching.getCacheKeyForURL")
-        @js.native
-        def getCacheKeyForURL(url: String): String = js.native
+        @scala.inline
+        def getCacheKeyForURL(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCacheKeyForURL")(url.asInstanceOf[js.Any]).asInstanceOf[String]
         
-        @JSGlobal("workbox.precaching.precache")
-        @js.native
-        def precache(entries: js.Array[String | PrecacheEntry]): Unit = js.native
+        @scala.inline
+        def precache(entries: js.Array[String | PrecacheEntry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precache")(entries.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.precaching.precacheAndRoute")
-        @js.native
-        def precacheAndRoute(entries: js.Array[String | PrecacheEntry]): Unit = js.native
-        @JSGlobal("workbox.precaching.precacheAndRoute")
-        @js.native
-        def precacheAndRoute(entries: js.Array[String | PrecacheEntry], options: FetchListenerOptions): Unit = js.native
+        @scala.inline
+        def precacheAndRoute(entries: js.Array[String | PrecacheEntry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precacheAndRoute")(entries.asInstanceOf[js.Any]).asInstanceOf[Unit]
+        @scala.inline
+        def precacheAndRoute(entries: js.Array[String | PrecacheEntry], options: FetchListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("precacheAndRoute")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       /* was `typeof WorkboxRangeRequests` */
       object rangeRequests {
+        
+        @JSGlobal("workbox.rangeRequests")
+        @js.native
+        val ^ : js.Any = js.native
         
         @JSGlobal("workbox.rangeRequests.Plugin")
         @js.native
         class Plugin ()
           extends typings.workboxRangeRequests.mod.Plugin
         
-        @JSGlobal("workbox.rangeRequests.createPartialResponse")
-        @js.native
-        def createPartialResponse(request: Request, originalResponse: Response): js.Promise[Response] = js.native
+        @scala.inline
+        def createPartialResponse(request: Request, originalResponse: Response): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPartialResponse")(request.asInstanceOf[js.Any], originalResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
       }
       
       /* was `typeof WorkboxRouting` */
       object routing {
+        
+        @JSGlobal("workbox.routing")
+        @js.native
+        val ^ : js.Any = js.native
         
         @JSGlobal("workbox.routing.NavigationRoute")
         @js.native
@@ -266,78 +276,67 @@ object mod {
         class Router ()
           extends typings.workboxRouting.mod.Router
         
-        @JSGlobal("workbox.routing.registerNavigationRoute")
-        @js.native
-        def registerNavigationRoute(cachedAssetUrl: String): typings.workboxRouting.navigationRouteMod.NavigationRoute = js.native
-        @JSGlobal("workbox.routing.registerNavigationRoute")
-        @js.native
-        def registerNavigationRoute(cachedAssetUrl: String, options: RegisterNavigationRouteOptions): typings.workboxRouting.navigationRouteMod.NavigationRoute = js.native
+        @scala.inline
+        def registerNavigationRoute(cachedAssetUrl: String): typings.workboxRouting.navigationRouteMod.NavigationRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.navigationRouteMod.NavigationRoute]
+        @scala.inline
+        def registerNavigationRoute(cachedAssetUrl: String, options: RegisterNavigationRouteOptions): typings.workboxRouting.navigationRouteMod.NavigationRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerNavigationRoute")(cachedAssetUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.navigationRouteMod.NavigationRoute]
         
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: String): typings.workboxRouting.routeMod.Route[Boolean] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: String, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: String, handler: RouteHandler): typings.workboxRouting.routeMod.Route[Boolean] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegExp): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegExp, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegExp, handler: RouteHandler): typings.workboxRouting.regExpRouteMod.RegExpRoute = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegisterRouteCapture): typings.workboxRouting.routeMod.Route[_] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegisterRouteCapture, handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[_] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): typings.workboxRouting.routeMod.Route[_] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: js.UndefOr[RouteHandler], method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
+        @scala.inline
+        def registerRoute(capture: String): typings.workboxRouting.routeMod.Route[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
+        @scala.inline
+        def registerRoute(capture: String, handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
+        @scala.inline
+        def registerRoute(capture: String, handler: RouteHandler): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
+        @scala.inline
+        def registerRoute(capture: String, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[Boolean]]
+        @scala.inline
+        def registerRoute(capture: RegExp): typings.workboxRouting.regExpRouteMod.RegExpRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        @scala.inline
+        def registerRoute(capture: RegExp, handler: Unit, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        @scala.inline
+        def registerRoute(capture: RegExp, handler: RouteHandler): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        @scala.inline
+        def registerRoute(capture: RegExp, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.regExpRouteMod.RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.regExpRouteMod.RegExpRoute]
+        @scala.inline
+        def registerRoute(capture: RegisterRouteCapture): typings.workboxRouting.routeMod.Route[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
+        @scala.inline
+        def registerRoute(capture: RegisterRouteCapture, handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
+        @scala.inline
+        def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
+        @scala.inline
+        def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[js.Any]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn]): typings.workboxRouting.routeMod.Route[MatchReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn], handler: Unit, method: HTTPMethod): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
+        def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
+        @scala.inline
         def registerRoute[MatchReturn](
           capture: typings.workboxRouting.routeMod.Route[MatchReturn],
-          handler: js.UndefOr[RouteHandler],
+          handler: RouteHandler,
           method: HTTPMethod
-        ): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
-        @JSGlobal("workbox.routing.registerRoute")
-        @js.native
-        def registerRoute[MatchReturn](capture: typings.workboxRouting.routeMod.Route[MatchReturn], handler: RouteHandler): typings.workboxRouting.routeMod.Route[MatchReturn] = js.native
+        ): typings.workboxRouting.routeMod.Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[typings.workboxRouting.routeMod.Route[MatchReturn]]
         
-        @JSGlobal("workbox.routing.setCatchHandler")
-        @js.native
-        def setCatchHandler(handler: RouteHandler): Unit = js.native
+        @scala.inline
+        def setCatchHandler(handler: RouteHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCatchHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
         
-        @JSGlobal("workbox.routing.setDefaultHandler")
-        @js.native
-        def setDefaultHandler(handler: RouteHandler): Unit = js.native
+        @scala.inline
+        def setDefaultHandler(handler: RouteHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
       }
       
-      @JSGlobal("workbox.setConfig")
-      @js.native
-      def setConfig(): Unit = js.native
-      @JSGlobal("workbox.setConfig")
-      @js.native
-      def setConfig(options: WorkboxOptions): Unit = js.native
+      @scala.inline
+      def setConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")().asInstanceOf[Unit]
+      @scala.inline
+      def setConfig(options: WorkboxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /* was `typeof WorkboxStrategies` */
       object strategies {
@@ -381,39 +380,36 @@ object mod {
       /* was `typeof WorkboxStreams` */
       object streams {
         
-        @JSGlobal("workbox.streams.concatenate")
+        @JSGlobal("workbox.streams")
         @js.native
-        def concatenate(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateReturn = js.native
+        val ^ : js.Any = js.native
         
-        @JSGlobal("workbox.streams.concatenateToResponse")
-        @js.native
-        def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = js.native
-        @JSGlobal("workbox.streams.concatenateToResponse")
-        @js.native
-        def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = js.native
+        @scala.inline
+        def concatenate(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateReturn]
         
-        @JSGlobal("workbox.streams.isSupported")
-        @js.native
-        def isSupported(): Boolean = js.native
+        @scala.inline
+        def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateToResponseReturn]
+        @scala.inline
+        def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[ConcatenateToResponseReturn]
         
-        @JSGlobal("workbox.streams.strategy")
-        @js.native
-        def strategy(sourceFunctions: js.Array[StreamsHandlerCallback]): RouteHandlerCallback = js.native
-        @JSGlobal("workbox.streams.strategy")
-        @js.native
-        def strategy(sourceFunctions: js.Array[StreamsHandlerCallback], headersInit: HeadersInit): RouteHandlerCallback = js.native
+        @scala.inline
+        def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+        
+        @scala.inline
+        def strategy(sourceFunctions: js.Array[StreamsHandlerCallback]): RouteHandlerCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("strategy")(sourceFunctions.asInstanceOf[js.Any]).asInstanceOf[RouteHandlerCallback]
+        @scala.inline
+        def strategy(sourceFunctions: js.Array[StreamsHandlerCallback], headersInit: HeadersInit): RouteHandlerCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("strategy")(sourceFunctions.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[RouteHandlerCallback]
       }
       
       type ModulePathCallback = js.Function2[/* moduleName */ String, /* debug */ Boolean, String]
       
-      @js.native
       trait WorkboxOptions extends StObject {
         
-        var debug: js.UndefOr[Boolean] = js.native
+        var debug: js.UndefOr[Boolean] = js.undefined
         
-        var modulePathCb: js.UndefOr[ModulePathCallback] = js.native
+        var modulePathCb: js.UndefOr[ModulePathCallback] = js.undefined
         
-        var modulePathPrefix: js.UndefOr[String] = js.native
+        var modulePathPrefix: js.UndefOr[String] = js.undefined
       }
       object WorkboxOptions {
         

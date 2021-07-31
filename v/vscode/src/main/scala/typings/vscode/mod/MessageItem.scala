@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageItem extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait MessageItem extends StObject {
     *
     * Note: this option is ignored for non-modal messages.
     */
-  var isCloseAffordance: js.UndefOr[Boolean] = js.native
+  var isCloseAffordance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A short title like 'Retry', 'Open Log' etc.
     */
-  var title: String = js.native
+  var title: String
 }
 object MessageItem {
   

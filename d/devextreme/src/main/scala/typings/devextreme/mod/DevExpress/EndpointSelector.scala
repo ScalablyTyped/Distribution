@@ -2,16 +2,14 @@ package typings.devextreme.mod.DevExpress
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointSelector extends StObject {
   
   /**
     * [descr:EndpointSelector.urlFor(key)]
     */
-  def urlFor(key: String): String = js.native
+  def urlFor(key: String): String
 }
 object EndpointSelector {
   

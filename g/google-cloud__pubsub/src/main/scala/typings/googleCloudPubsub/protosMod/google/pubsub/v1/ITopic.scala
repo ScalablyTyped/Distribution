@@ -3,24 +3,22 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Topic. */
-@js.native
 trait ITopic extends StObject {
   
   /** Topic kmsKeyName */
-  var kmsKeyName: js.UndefOr[String | Null] = js.native
+  var kmsKeyName: js.UndefOr[String | Null] = js.undefined
   
   /** Topic labels */
-  var labels: js.UndefOr[StringDictionary[String] | Null] = js.native
+  var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   
   /** Topic messageStoragePolicy */
-  var messageStoragePolicy: js.UndefOr[IMessageStoragePolicy | Null] = js.native
+  var messageStoragePolicy: js.UndefOr[IMessageStoragePolicy | Null] = js.undefined
   
   /** Topic name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object ITopic {
   

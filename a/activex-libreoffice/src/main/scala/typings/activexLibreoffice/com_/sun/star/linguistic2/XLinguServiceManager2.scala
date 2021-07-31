@@ -8,16 +8,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link LinguServiceManager} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XLinguServiceManager2
-  extends XLinguServiceManager
+  extends StObject
+     with XLinguServiceManager
      with XAvailableLocales
      with XComponent
 object XLinguServiceManager2 {

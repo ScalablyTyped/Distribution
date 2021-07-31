@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityPolicyRule extends StObject {
   
   /** The Action to preform when the client connection triggers the rule. Can currently be either "allow" or "deny()" where valid values for status are 403, 404, and 502. */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** An optional description of this resource. Provide this property when you create the resource. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** [Output only] Type of the resource. Always compute#securityPolicyRule for security policy rules */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A match condition that incoming traffic is evaluated against. If it evaluates to true, the corresponding 'action' is enforced. */
-  var `match`: js.UndefOr[SecurityPolicyRuleMatcher] = js.native
+  var `match`: js.UndefOr[SecurityPolicyRuleMatcher] = js.undefined
   
   /** If set to true, the specified action is not enforced. */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An integer indicating the priority of a rule in the list. The priority must be a positive value between 0 and 2147483647. Rules are evaluated from highest to lowest priority where 0
     * is the highest priority and 2147483647 is the lowest prority.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object SecurityPolicyRule {
   

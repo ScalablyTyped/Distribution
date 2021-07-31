@@ -2,13 +2,11 @@ package typings.braintreeWebDropIn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait dataCollectorOptions extends StObject {
   
-  var kount: js.UndefOr[Boolean] = js.native
+  var kount: js.UndefOr[Boolean] = js.undefined
 }
 object dataCollectorOptions {
   

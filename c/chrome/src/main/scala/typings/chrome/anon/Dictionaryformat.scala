@@ -2,19 +2,17 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictionaryformat extends StObject {
   
-  var dictionary_format: js.UndefOr[String] = js.native
+  var dictionary_format: js.UndefOr[String] = js.undefined
   
-  var dictionary_language: js.UndefOr[String] = js.native
+  var dictionary_language: js.UndefOr[String] = js.undefined
   
-  var dictionary_locale: js.UndefOr[String] = js.native
+  var dictionary_locale: js.UndefOr[String] = js.undefined
   
-  var dictionary_path: js.UndefOr[String] = js.native
+  var dictionary_path: js.UndefOr[String] = js.undefined
 }
 object Dictionaryformat {
   

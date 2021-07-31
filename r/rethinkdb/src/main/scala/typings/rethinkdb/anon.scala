@@ -3,7 +3,6 @@ package typings.rethinkdb
 import typings.rethinkdb.rethinkdbBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -24,10 +23,9 @@ object anon {
     var ready: `true` = js.native
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: String = js.native
+    var index: String
   }
   object Index {
     
@@ -45,10 +43,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Timeout {
     
@@ -66,10 +63,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UseOutdated extends StObject {
     
-    var useOutdated: Boolean = js.native
+    var useOutdated: Boolean
   }
   object UseOutdated {
     

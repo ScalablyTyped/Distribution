@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortMapping extends StObject {
   
   /**
     * The port number on the application.
     */
-  var applicationPort: NonSystemPort = js.native
+  var applicationPort: NonSystemPort
   
   /**
     * A Boolean indicating whether to enable this port mapping on public IP.
     */
-  var enableOnPublicIp: js.UndefOr[Boolean] = js.native
+  var enableOnPublicIp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The port number on the simulation job instance to use as a remote connection point. 
     */
-  var jobPort: Port = js.native
+  var jobPort: Port
 }
 object PortMapping {
   

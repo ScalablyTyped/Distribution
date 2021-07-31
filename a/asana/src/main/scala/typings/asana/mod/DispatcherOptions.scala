@@ -3,19 +3,17 @@ package typings.asana.mod
 import typings.asana.mod.auth.Authenticator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DispatcherOptions extends StObject {
   
-  var authenticator: js.UndefOr[Authenticator] = js.native
+  var authenticator: js.UndefOr[Authenticator] = js.undefined
   
-  var handleUnauthorized: js.UndefOr[js.Function0[Boolean | typings.bluebird.mod.^[Boolean]]] = js.native
+  var handleUnauthorized: js.UndefOr[js.Function0[Boolean | typings.bluebird.mod.^[Boolean]]] = js.undefined
   
-  var requestTimeout: js.UndefOr[String] = js.native
+  var requestTimeout: js.UndefOr[String] = js.undefined
   
-  var retryOnRateLimit: js.UndefOr[Boolean] = js.native
+  var retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
 }
 object DispatcherOptions {
   

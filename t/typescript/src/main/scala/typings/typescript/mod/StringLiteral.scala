@@ -2,12 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait StringLiteral
-  extends LiteralExpression
+  extends StObject
+     with LiteralExpression
      with Declaration
      with JsonObjectExpression
      with LiteralToken

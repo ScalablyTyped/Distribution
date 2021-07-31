@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DfpSettings extends StObject {
   
   /** Ad Manager network code for this directory site. */
-  var dfpNetworkCode: js.UndefOr[String] = js.native
+  var dfpNetworkCode: js.UndefOr[String] = js.undefined
   
   /** Ad Manager network name for this directory site. */
-  var dfpNetworkName: js.UndefOr[String] = js.native
+  var dfpNetworkName: js.UndefOr[String] = js.undefined
   
   /** Whether this directory site accepts programmatic placements. */
-  var programmaticPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var programmaticPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this directory site accepts publisher-paid tags. */
-  var pubPaidPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var pubPaidPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this directory site is available only via Publisher Portal. */
-  var publisherPortalOnly: js.UndefOr[Boolean] = js.native
+  var publisherPortalOnly: js.UndefOr[Boolean] = js.undefined
 }
 object DfpSettings {
   

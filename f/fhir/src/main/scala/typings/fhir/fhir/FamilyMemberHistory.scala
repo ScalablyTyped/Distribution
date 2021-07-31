@@ -2,205 +2,205 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about patient's relatives, relevant for patient
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait FamilyMemberHistory extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait FamilyMemberHistory
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'ageString'.
     */
-  var _ageString: js.UndefOr[Element] = js.native
+  var _ageString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'bornDate'.
     */
-  var _bornDate: js.UndefOr[Element] = js.native
+  var _bornDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'bornString'.
     */
-  var _bornString: js.UndefOr[Element] = js.native
+  var _bornString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deceasedBoolean'.
     */
-  var _deceasedBoolean: js.UndefOr[Element] = js.native
+  var _deceasedBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deceasedDate'.
     */
-  var _deceasedDate: js.UndefOr[Element] = js.native
+  var _deceasedDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deceasedString'.
     */
-  var _deceasedString: js.UndefOr[Element] = js.native
+  var _deceasedString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'estimatedAge'.
     */
-  var _estimatedAge: js.UndefOr[Element] = js.native
+  var _estimatedAge: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.native
+  var _gender: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'notDone'.
     */
-  var _notDone: js.UndefOr[Element] = js.native
+  var _notDone: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * (approximate) age
     */
-  var ageAge: js.UndefOr[Age] = js.native
+  var ageAge: js.UndefOr[Age] = js.undefined
   
   /**
     * (approximate) age
     */
-  var ageRange: js.UndefOr[Range] = js.native
+  var ageRange: js.UndefOr[Range] = js.undefined
   
   /**
     * (approximate) age
     */
-  var ageString: js.UndefOr[String] = js.native
+  var ageString: js.UndefOr[String] = js.undefined
   
   /**
     * (approximate) date of birth
     */
-  var bornDate: js.UndefOr[date] = js.native
+  var bornDate: js.UndefOr[date] = js.undefined
   
   /**
     * (approximate) date of birth
     */
-  var bornPeriod: js.UndefOr[Period] = js.native
+  var bornPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * (approximate) date of birth
     */
-  var bornString: js.UndefOr[String] = js.native
+  var bornString: js.UndefOr[String] = js.undefined
   
   /**
     * Condition that the related person had
     */
-  var condition: js.UndefOr[js.Array[FamilyMemberHistoryCondition]] = js.native
+  var condition: js.UndefOr[js.Array[FamilyMemberHistoryCondition]] = js.undefined
   
   /**
     * When history was captured/updated
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Dead? How old/when?
     */
-  var deceasedAge: js.UndefOr[Age] = js.native
+  var deceasedAge: js.UndefOr[Age] = js.undefined
   
   /**
     * Dead? How old/when?
     */
-  var deceasedBoolean: js.UndefOr[Boolean] = js.native
+  var deceasedBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Dead? How old/when?
     */
-  var deceasedDate: js.UndefOr[date] = js.native
+  var deceasedDate: js.UndefOr[date] = js.undefined
   
   /**
     * Dead? How old/when?
     */
-  var deceasedRange: js.UndefOr[Range] = js.native
+  var deceasedRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Dead? How old/when?
     */
-  var deceasedString: js.UndefOr[String] = js.native
+  var deceasedString: js.UndefOr[String] = js.undefined
   
   /**
     * Instantiates protocol or definition
     */
-  var definition: js.UndefOr[js.Array[Reference]] = js.native
+  var definition: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Age is estimated?
     */
-  var estimatedAge: js.UndefOr[Boolean] = js.native
+  var estimatedAge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.native
+  var gender: js.UndefOr[code] = js.undefined
   
   /**
     * External Id(s) for this record
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * The family member described
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The taking of a family member's history did not occur
     */
-  var notDone: js.UndefOr[Boolean] = js.native
+  var notDone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * subject-unknown | withheld | unable-to-obtain | deferred
     */
-  var notDoneReason: js.UndefOr[CodeableConcept] = js.native
+  var notDoneReason: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * General note about related person
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * Patient history is about
     */
-  var patient: Reference = js.native
+  var patient: Reference
   
   /**
     * Why was family member history performed?
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Why was family member history performed?
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Relationship to the subject
     */
-  var relationship: CodeableConcept = js.native
+  var relationship: CodeableConcept
   
   /**
     * partial | completed | entered-in-error | health-unknown
     */
-  var status: code = js.native
+  var status: code
 }
 object FamilyMemberHistory {
   

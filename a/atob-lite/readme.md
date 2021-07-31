@@ -12,7 +12,7 @@ Smallest/simplest possible means of using atob with both Node and browserify
 | Keywords           | atob, base64, isomorphic, browser, node, shared |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 70377306 |
+| # downloads        | 88290050 |
 | # stars            | 0 |
 
 ## Links

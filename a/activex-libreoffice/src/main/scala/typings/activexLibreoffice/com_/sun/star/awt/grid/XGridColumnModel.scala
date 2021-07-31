@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * If you do not need your own model implementation, you can also use the {@link DefaultGridColumnModel} .
   * @since OOo 3.3
   */
-@js.native
 trait XGridColumnModel
-  extends XComponent
+  extends StObject
+     with XComponent
      with XContainer
      with XCloneable {
   
@@ -28,13 +27,13 @@ trait XGridColumnModel
     * Returns the number of columns.
     * @returns the number of columns.
     */
-  val ColumnCount: Double = js.native
+  val ColumnCount: Double
   
   /**
     * Returns all columns of the model.
     * @returns all columns associated with the model in a sequence of {@link XGridColumn} .
     */
-  val Columns: SafeArray[XGridColumn] = js.native
+  val Columns: SafeArray[XGridColumn]
   
   /**
     * Adds a column to the model.
@@ -48,33 +47,33 @@ trait XGridColumnModel
     * @returns the index of new created column.
     * @throws com::sun::star::lang::IllegalArgumentException if the given column is not a valid element for the column container, or if it is `NULL` .
     */
-  def addColumn(column: XGridColumn): Double = js.native
+  def addColumn(column: XGridColumn): Double
   
   /**
     * creates a new column for use with the column model.
     *
     * The newly created column is not yet inserted into the column container, you need to call {@link addColumn()} after you initialized the column object.
     */
-  def createColumn(): XGridColumn = js.native
+  def createColumn(): XGridColumn
   
   /**
     * Returns a specific column.
     * @param index the position of the requested column.
     * @returns the requested column.
     */
-  def getColumn(index: Double): XGridColumn = js.native
+  def getColumn(index: Double): XGridColumn
   
   /**
     * Returns the number of columns.
     * @returns the number of columns.
     */
-  def getColumnCount(): Double = js.native
+  def getColumnCount(): Double
   
   /**
     * Returns all columns of the model.
     * @returns all columns associated with the model in a sequence of {@link XGridColumn} .
     */
-  def getColumns(): SafeArray[XGridColumn] = js.native
+  def getColumns(): SafeArray[XGridColumn]
   
   /**
     * removes a column from the model
@@ -83,7 +82,7 @@ trait XGridColumnModel
     * @param ColumnIndex denotes the index of the column to remove
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `ColumnIndex` does not denote a valid column index.
     */
-  def removeColumn(ColumnIndex: Double): Unit = js.native
+  def removeColumn(ColumnIndex: Double): Unit
   
   /**
     * Fills the model with the given number of default columns
@@ -93,7 +92,7 @@ trait XGridColumnModel
     * com.sun.star.container.XContainerListener.elementInserted()} event for each insertion.
     * @param elements the number of default columns that should be set.
     */
-  def setDefaultColumns(elements: Double): Unit = js.native
+  def setDefaultColumns(elements: Double): Unit
 }
 object XGridColumnModel {
   

@@ -13,121 +13,96 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("typedarray-pool", "clearCache")
+  @JSImport("typedarray-pool", JSImport.Namespace)
   @js.native
-  def clearCache(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typedarray-pool", "free")
-  @js.native
-  def free(array: js.Any): Unit = js.native
+  @scala.inline
+  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeArrayBuffer")
-  @js.native
-  def freeArrayBuffer(buffer: ArrayBuffer): Unit = js.native
+  @scala.inline
+  def free(array: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("free")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeBuffer")
-  @js.native
-  def freeBuffer(buffer: js.Any): Unit = js.native
+  @scala.inline
+  def freeArrayBuffer(buffer: ArrayBuffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeArrayBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeDataView")
-  @js.native
-  def freeDataView(view: DataView): Unit = js.native
+  @scala.inline
+  def freeBuffer(buffer: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeDouble")
-  @js.native
-  def freeDouble(array: Float64Array): Unit = js.native
+  @scala.inline
+  def freeDataView(view: DataView): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeDataView")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeFloat")
-  @js.native
-  def freeFloat(array: Float32Array): Unit = js.native
+  @scala.inline
+  def freeDouble(array: Float64Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeDouble")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeInt16")
-  @js.native
-  def freeInt16(array: Int16Array): Unit = js.native
+  @scala.inline
+  def freeFloat(array: Float32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeFloat")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeInt32")
-  @js.native
-  def freeInt32(array: Int32Array): Unit = js.native
+  @scala.inline
+  def freeInt16(array: Int16Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeInt16")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeInt8")
-  @js.native
-  def freeInt8(array: Int8Array): Unit = js.native
+  @scala.inline
+  def freeInt32(array: Int32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeInt32")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeUint16")
-  @js.native
-  def freeUint16(array: Uint16Array): Unit = js.native
+  @scala.inline
+  def freeInt8(array: Int8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeInt8")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeUint32")
-  @js.native
-  def freeUint32(array: Uint32Array): Unit = js.native
+  @scala.inline
+  def freeUint16(array: Uint16Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeUint16")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeUint8")
-  @js.native
-  def freeUint8(array: Uint8Array): Unit = js.native
+  @scala.inline
+  def freeUint32(array: Uint32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeUint32")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "freeUint8Clamped")
-  @js.native
-  def freeUint8Clamped(array: Uint8ClampedArray): Unit = js.native
+  @scala.inline
+  def freeUint8(array: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeUint8")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "malloc")
-  @js.native
-  def malloc(n: Double): js.Any = js.native
-  @JSImport("typedarray-pool", "malloc")
-  @js.native
-  def malloc(n: Double, dtype: DataType): js.Any = js.native
+  @scala.inline
+  def freeUint8Clamped(array: Uint8ClampedArray): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("freeUint8Clamped")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedarray-pool", "mallocArrayBuffer")
-  @js.native
-  def mallocArrayBuffer(n: Double): ArrayBuffer = js.native
+  @scala.inline
+  def malloc(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("malloc")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def malloc(n: Double, dtype: DataType): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("malloc")(n.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("typedarray-pool", "mallocBuffer")
-  @js.native
-  def mallocBuffer(n: Double): js.Any = js.native
+  @scala.inline
+  def mallocArrayBuffer(n: Double): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocArrayBuffer")(n.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("typedarray-pool", "mallocDataView")
-  @js.native
-  def mallocDataView(n: Double): DataView = js.native
+  @scala.inline
+  def mallocBuffer(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocBuffer")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("typedarray-pool", "mallocDouble")
-  @js.native
-  def mallocDouble(n: Double): Float64Array = js.native
+  @scala.inline
+  def mallocDataView(n: Double): DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocDataView")(n.asInstanceOf[js.Any]).asInstanceOf[DataView]
   
-  @JSImport("typedarray-pool", "mallocFloat")
-  @js.native
-  def mallocFloat(n: Double): Float32Array = js.native
+  @scala.inline
+  def mallocDouble(n: Double): Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocDouble")(n.asInstanceOf[js.Any]).asInstanceOf[Float64Array]
   
-  @JSImport("typedarray-pool", "mallocInt16")
-  @js.native
-  def mallocInt16(n: Double): Int16Array = js.native
+  @scala.inline
+  def mallocFloat(n: Double): Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocFloat")(n.asInstanceOf[js.Any]).asInstanceOf[Float32Array]
   
-  @JSImport("typedarray-pool", "mallocInt32")
-  @js.native
-  def mallocInt32(n: Double): Int32Array = js.native
+  @scala.inline
+  def mallocInt16(n: Double): Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocInt16")(n.asInstanceOf[js.Any]).asInstanceOf[Int16Array]
   
-  @JSImport("typedarray-pool", "mallocInt8")
-  @js.native
-  def mallocInt8(n: Double): Int8Array = js.native
+  @scala.inline
+  def mallocInt32(n: Double): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocInt32")(n.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
   
-  @JSImport("typedarray-pool", "mallocUint16")
-  @js.native
-  def mallocUint16(n: Double): Uint16Array = js.native
+  @scala.inline
+  def mallocInt8(n: Double): Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocInt8")(n.asInstanceOf[js.Any]).asInstanceOf[Int8Array]
   
-  @JSImport("typedarray-pool", "mallocUint32")
-  @js.native
-  def mallocUint32(n: Double): Uint32Array = js.native
+  @scala.inline
+  def mallocUint16(n: Double): Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocUint16")(n.asInstanceOf[js.Any]).asInstanceOf[Uint16Array]
   
-  @JSImport("typedarray-pool", "mallocUint8")
-  @js.native
-  def mallocUint8(n: Double): Uint8Array = js.native
+  @scala.inline
+  def mallocUint32(n: Double): Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocUint32")(n.asInstanceOf[js.Any]).asInstanceOf[Uint32Array]
   
-  @JSImport("typedarray-pool", "mallocUint8Clamped")
-  @js.native
-  def mallocUint8Clamped(n: Double): Uint8ClampedArray = js.native
+  @scala.inline
+  def mallocUint8(n: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocUint8")(n.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def mallocUint8Clamped(n: Double): Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("mallocUint8Clamped")(n.asInstanceOf[js.Any]).asInstanceOf[Uint8ClampedArray]
   
   /* Rewritten from type alias, can be one of: 
     - typings.typedarrayPool.typedarrayPoolStrings.uint8

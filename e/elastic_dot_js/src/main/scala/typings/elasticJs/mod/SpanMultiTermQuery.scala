@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SpanMultiTermQuery")
 @js.native
-class SpanMultiTermQuery protected () extends Query {
+class SpanMultiTermQuery protected ()
+  extends StObject
+     with Query {
   /*
     Use MultiTermQueries as a SpanQuery.
     */

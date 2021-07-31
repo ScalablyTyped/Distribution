@@ -2,7 +2,6 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventTypes {
@@ -10,33 +9,34 @@ object EventTypes {
   /**
     *    Event dispatched after login , loginWithOneTimeKey, requestOneTimeLoginKey or loginWithCode function call
     */
-  @js.native
-  trait AuthResult extends VoxImplantEvent {
+  trait AuthResult
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    Auth error code, possible values are: 301 - code for 'code' auth type was sent, 302 - key for 'onetimekey' auth type received, 401 - invalid password, 404 - invalid username, 403 - user account is frozen, 500 - internal error
       */
-    var code: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[Double] = js.undefined
     
     /**
       *    Authorized user's display name
       */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /**
       *    This parameter is used to calculate hash parameter for loginWithOneTimeKey method. AuthResult with the key dispatched after requestOneTimeLoginKey method was called
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       *    Application options
       */
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
     /**
       *    True in case of successful authorization, false - otherwise
       */
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object AuthResult {
     
@@ -81,25 +81,28 @@ object EventTypes {
   /**
     *    Event dispatched if connection to VoxImplant Cloud was closed because of network problems. See connect function
     */
-  @js.native
-  trait ConnectionClosed extends VoxImplantEvent
+  trait ConnectionClosed
+    extends StObject
+       with VoxImplantEvent
   
   /**
     *    Event dispatched after connection to VoxImplant Cloud was established successfully. See connect function
     */
-  @js.native
-  trait ConnectionEstablished extends VoxImplantEvent
+  trait ConnectionEstablished
+    extends StObject
+       with VoxImplantEvent
   
   /**
     *    Event dispatched if connection to VoxImplant Cloud couldn't be established. See connect function
     */
-  @js.native
-  trait ConnectionFailed extends VoxImplantEvent {
+  trait ConnectionFailed
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    Failure reason description
       */
-    var message: String = js.native
+    var message: String
   }
   object ConnectionFailed {
     
@@ -120,18 +123,19 @@ object EventTypes {
   /**
     *    Event dispatched when there is a new incoming call to current user
     */
-  @js.native
-  trait IncomingCall extends VoxImplantEvent {
+  trait IncomingCall
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    Incoming call instance. See VoxImplant.Call for details
       */
-    var call: Call = js.native
+    var call: Call
     
     /**
       *    Optional SIP headers received with the message
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
   }
   object IncomingCall {
     
@@ -158,13 +162,14 @@ object EventTypes {
   /**
     *    Event dispatched after user interaction with the mic access dialog.
     */
-  @js.native
-  trait MicAccessResult extends VoxImplantEvent {
+  trait MicAccessResult
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    True is access was allowed, false - otherwise
       */
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object MicAccessResult {
     
@@ -185,13 +190,14 @@ object EventTypes {
   /**
     *    Event dispatched when packet loss data received from VoxImplant servers
     */
-  @js.native
-  trait NetStatsReceived extends VoxImplantEvent {
+  trait NetStatsReceived
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    Network info object
       */
-    var stats: NetworkInfo = js.native
+    var stats: NetworkInfo
   }
   object NetStatsReceived {
     
@@ -212,19 +218,21 @@ object EventTypes {
   /**
     *    Event dispatched after sound playback was stopped. See playToneScript and stopPlayback functions
     */
-  @js.native
-  trait PlaybackFinished extends VoxImplantEvent
+  trait PlaybackFinished
+    extends StObject
+       with VoxImplantEvent
   
   /**
     *    Event dispatched after SDK was successfully initialized after init function call
     */
-  @js.native
-  trait SDKReady extends VoxImplantEvent {
+  trait SDKReady
+    extends StObject
+       with VoxImplantEvent {
     
     /**
       *    SDK version
       */
-    var version: String = js.native
+    var version: String
   }
   object SDKReady {
     
@@ -245,6 +253,7 @@ object EventTypes {
   /**
     *    Event dispatched when audio and video sources information was updated. See audioSources and videoSources for details
     */
-  @js.native
-  trait SourcesInfoUpdated extends VoxImplantEvent
+  trait SourcesInfoUpdated
+    extends StObject
+       with VoxImplantEvent
 }

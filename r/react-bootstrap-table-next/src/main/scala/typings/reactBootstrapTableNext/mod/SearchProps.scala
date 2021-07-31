@@ -3,20 +3,18 @@ package typings.reactBootstrapTableNext.mod
 import typings.reactBootstrapTableNext.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchProps[T] extends StObject {
   
-  var defaultSearch: js.UndefOr[String] = js.native
+  var defaultSearch: js.UndefOr[String] = js.undefined
   
   /* custom search method, return true if matched and false if not */
-  var onColumnMatch: js.UndefOr[js.Function1[/* searchProps */ Column[T], Boolean]] = js.native
+  var onColumnMatch: js.UndefOr[js.Function1[/* searchProps */ Column[T], Boolean]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
 }
 object SearchProps {
   
@@ -27,7 +25,7 @@ object SearchProps {
   }
   
   @scala.inline
-  implicit class SearchPropsMutableBuilder[Self <: SearchProps[_], T] (val x: Self with SearchProps[T]) extends AnyVal {
+  implicit class SearchPropsMutableBuilder[Self <: SearchProps[?], T] (val x: Self & SearchProps[T]) extends AnyVal {
     
     @scala.inline
     def setDefaultSearch(value: String): Self = StObject.set(x, "defaultSearch", value.asInstanceOf[js.Any])

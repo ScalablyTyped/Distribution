@@ -14,10 +14,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dnsMod {
+  
+  @JSImport("googleapis/build/src/apis/dns", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -116,9 +119,12 @@ object dnsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/dns", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/dns", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -162,22 +168,19 @@ object dnsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns(options: Options): Dns = js.native
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns(options: typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Options): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = js.native
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns(options: typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Options): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = js.native
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns_v1(version: v1): Dns = js.native
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns_v1beta2(version: v1beta2): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = js.native
-  @JSImport("googleapis/build/src/apis/dns", "dns")
-  @js.native
-  def dns_v2beta1(version: v2beta1): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = js.native
+  @scala.inline
+  def dns(options: Options): Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(options.asInstanceOf[js.Any]).asInstanceOf[Dns]
+  @scala.inline
+  def dns(options: typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Options): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns]
+  @scala.inline
+  def dns(options: typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Options): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns]
+  
+  @scala.inline
+  def dns_v1(version: v1): Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(version.asInstanceOf[js.Any]).asInstanceOf[Dns]
+  
+  @scala.inline
+  def dns_v1beta2(version: v1beta2): typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dnsV1beta2Mod.dnsV1beta2.Dns]
+  
+  @scala.inline
+  def dns_v2beta1(version: v2beta1): typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dnsV2beta1Mod.dnsV2beta1.Dns]
 }

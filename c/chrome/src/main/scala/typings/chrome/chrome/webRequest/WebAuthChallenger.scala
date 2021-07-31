@@ -2,15 +2,13 @@ package typings.chrome.chrome.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAuthChallenger extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object WebAuthChallenger {
   

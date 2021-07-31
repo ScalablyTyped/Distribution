@@ -3,7 +3,6 @@ package typings.firebaseFirestoreTypes.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "Blob")
@@ -19,11 +18,13 @@ class Blob protected () extends StObject {
 /* static members */
 object Blob {
   
-  @JSImport("@firebase/firestore-types", "Blob.fromBase64String")
+  @JSImport("@firebase/firestore-types", "Blob")
   @js.native
-  def fromBase64String(base64: String): Blob = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/firestore-types", "Blob.fromUint8Array")
-  @js.native
-  def fromUint8Array(array: Uint8Array): Blob = js.native
+  @scala.inline
+  def fromBase64String(base64: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  
+  @scala.inline
+  def fromUint8Array(array: Uint8Array): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[Blob]
 }

@@ -2,7 +2,6 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "DataSet")
@@ -21,8 +20,8 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject
     * @param [options] DataSet options.
     */
   def this(options: DataSetOptions) = this()
-  def this(data: js.UndefOr[scala.Nothing], options: DataSetOptions) = this()
   def this(data: js.Array[T], options: DataSetOptions) = this()
+  def this(data: Unit, options: DataSetOptions) = this()
   
   /**
     * Add one or multiple items to the DataSet.
@@ -53,7 +52,7 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends StObject
     * @param field The search term.
     * @returns Returns an unordered array containing all distinct values.
     */
-  def distinct(field: String): js.Array[_] = js.native
+  def distinct(field: String): js.Array[js.Any] = js.native
   
   /**
     * Flush queued changes.

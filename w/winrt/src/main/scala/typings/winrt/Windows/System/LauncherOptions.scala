@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.UI.ViewManagement.ViewSizePreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LauncherOptions extends ILauncherOptions
+trait LauncherOptions
+  extends StObject
+     with ILauncherOptions
 object LauncherOptions {
   
   @scala.inline

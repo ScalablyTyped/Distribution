@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationContext extends StObject {
   
   /**
     * The status of the validation.
     */
-  var status: js.UndefOr[ValidationStatus] = js.native
+  var status: js.UndefOr[ValidationStatus] = js.undefined
   
   /**
     * The status message.
     */
-  var statusMessage: js.UndefOr[ValidationStatusMessage] = js.native
+  var statusMessage: js.UndefOr[ValidationStatusMessage] = js.undefined
   
   /**
     * The ID of the validation.
     */
-  var validationId: js.UndefOr[ValidationId] = js.native
+  var validationId: js.UndefOr[ValidationId] = js.undefined
 }
 object NotificationContext {
   

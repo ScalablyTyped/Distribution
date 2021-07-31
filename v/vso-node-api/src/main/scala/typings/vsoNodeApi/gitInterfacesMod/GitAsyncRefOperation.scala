@@ -2,24 +2,22 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitAsyncRefOperation extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var detailedStatus: GitAsyncRefOperationDetail = js.native
+  var detailedStatus: GitAsyncRefOperationDetail
   
-  var parameters: GitAsyncRefOperationParameters = js.native
+  var parameters: GitAsyncRefOperationParameters
   
-  var status: GitAsyncOperationStatus = js.native
+  var status: GitAsyncOperationStatus
   
   /**
     * A URL that can be used to make further requests for status about the operation
     */
-  var url: String = js.native
+  var url: String
 }
 object GitAsyncRefOperation {
   

@@ -5,19 +5,17 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Maintain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCheckPermissionsForRepoInOrgResponseData extends StObject {
   
-  var organization: Avatarurl = js.native
+  var organization: Avatarurl
   
-  var parent: Allowmergecommit = js.native
+  var parent: Allowmergecommit
   
-  var permissions: Maintain = js.native
+  var permissions: Maintain
   
-  var source: Allowmergecommit = js.native
+  var source: Allowmergecommit
 }
 object TeamsCheckPermissionsForRepoInOrgResponseData {
   

@@ -2,25 +2,23 @@ package typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video frame level annotation results for explicit content.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame extends StObject {
   
   /**
     * Likelihood of the pornography content..
     */
-  var pornographyLikelihood: js.UndefOr[String] = js.native
+  var pornographyLikelihood: js.UndefOr[String] = js.undefined
   
   /**
     * Time-offset, relative to the beginning of the video, corresponding to the
     * video frame for this location.
     */
-  var timeOffset: js.UndefOr[String] = js.native
+  var timeOffset: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1ExplicitContentFrame {
   

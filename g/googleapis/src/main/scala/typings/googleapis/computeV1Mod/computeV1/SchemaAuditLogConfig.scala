@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,19 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &#39;DATA_WRITE&#39; logging, while exempting foo@gmail.com from DATA_READ
   * logging.
   */
-@js.native
 trait SchemaAuditLogConfig extends StObject {
   
   /**
     * Specifies the identities that do not cause logging for this type of
     * permission. Follows the same format of [Binding.members][].
     */
-  var exemptedMembers: js.UndefOr[js.Array[String]] = js.native
+  var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The log type that this config enables.
     */
-  var logType: js.UndefOr[String] = js.native
+  var logType: js.UndefOr[String] = js.undefined
 }
 object SchemaAuditLogConfig {
   

@@ -8,7 +8,6 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -71,30 +70,31 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait CellProps extends HTMLAttributes[Cell] {
+  trait CellProps
+    extends StObject
+       with HTMLAttributes[Cell] {
     
     /**
       * Optional prop that if specified on the Column will be
       * passed to the cell. It can be used to uniquely identify
       * which column is the cell is in.
       */
-    var columnKey: js.UndefOr[String | Double] = js.native
+    var columnKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Outer height of the cell.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The row index of the cell.
       */
-    var rowIndex: js.UndefOr[Double] = js.native
+    var rowIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Outer width of the cell.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CellProps {
     
@@ -133,14 +133,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ColumnGroupProps extends Props[ColumnGroup] {
+  trait ColumnGroupProps
+    extends StObject
+       with Props[ColumnGroup] {
     
     /**
       * The horizontal alignment of the table cell content.
       * 'left', 'center', 'right'
       */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /**
       * Controls if the column group is fixed when scrolling in the X
@@ -148,7 +149,7 @@ object mod {
       *
       * defaultValue: false
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The header cell for this column group. This can either be
@@ -170,7 +171,7 @@ object mod {
       * If you pass in a function, you will receive the same props
       * object as the first argument.
       */
-    var header: String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement]) = js.native
+    var header: String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
   }
   object ColumnGroupProps {
     
@@ -206,15 +207,16 @@ object mod {
   /**
     * Component that defines the attributes of table column.
     */
-  @js.native
-  trait ColumnProps extends Props[Column] {
+  trait ColumnProps
+    extends StObject
+       with Props[Column] {
     
     /**
       * The horizontal alignment of the table cell content.
       *
       * 'left'|'center'|'right'
       */
-    var align: js.UndefOr[String] = js.native
+    var align: js.UndefOr[String] = js.undefined
     
     /**
       * Whether cells in this column can be removed from document
@@ -229,7 +231,7 @@ object mod {
       *
       * defaultValue: false
       */
-    var allowCellsRecycling: js.UndefOr[Boolean] = js.native
+    var allowCellsRecycling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is the body cell that will be cloned for this
@@ -255,14 +257,14 @@ object mod {
       */
     var cell: js.UndefOr[
         String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This is used to uniquely identify the column, and is not
       * required unless you a resizing columns. This will be the
       * key given in the onColumnResizeEndCallback on the Table.
       */
-    var columnKey: js.UndefOr[String | Double] = js.native
+    var columnKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Controls if the column is fixed when scrolling in the X
@@ -270,7 +272,7 @@ object mod {
       *
       * defaultValue: false
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The grow factor relative to other columns. Same as the
@@ -279,7 +281,7 @@ object mod {
       * it proportionally according to all columns' flexGrow
       * values. Defaults to zero (no-flexing).
       */
-    var flexGrow: js.UndefOr[Double] = js.native
+    var flexGrow: js.UndefOr[Double] = js.undefined
     
     /**
       * The footer cell for this column. This can either be a
@@ -304,7 +306,7 @@ object mod {
       */
     var footer: js.UndefOr[
         String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The header cell for this column. This can either be a
@@ -327,7 +329,7 @@ object mod {
       */
     var header: js.UndefOr[
         String | ReactElement | (js.Function1[/* props */ CellProps, String | ReactElement])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether the column can be resized with the
@@ -340,24 +342,24 @@ object mod {
       * onColumnResizeEndCallback table property and render your
       * columns appropriately.
       */
-    var isResizable: js.UndefOr[Boolean] = js.native
+    var isResizable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this is a resizable column this is its maximum pixel
       * width.
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If this is a resizable column this is its minimum pixel
       * width.
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The pixel width of the column.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ColumnProps {
     
@@ -450,29 +452,30 @@ object mod {
     }
   }
   
-  @js.native
-  trait TableProps extends Props[Table] {
+  trait TableProps
+    extends StObject
+       with Props[Table] {
     
     /**
       * Pixel height of the footer.
       *
       * defaultValue: 0
       */
-    var footerHeight: js.UndefOr[Double] = js.native
+    var footerHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixel height of the column group header.
       *
       * defaultValue: 0
       */
-    var groupHeaderHeight: js.UndefOr[Double] = js.native
+    var groupHeaderHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixel height of the header.
       *
       * defaultValue: 0
       */
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixel height of table. If all rows do not fit, a
@@ -480,12 +483,12 @@ object mod {
       *
       * Either height or maxHeight must be specified.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether a column is currently being resized.
       */
-    var isColumnResizing: js.UndefOr[Boolean] = js.native
+    var isColumnResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum pixel height of table. If all rows do not fit,
@@ -493,7 +496,7 @@ object mod {
       *
       * Either height or maxHeight must be specified.
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback that is called when resizer has been released
@@ -502,7 +505,7 @@ object mod {
       * Required if the isResizable property is true on any
       * column.
       */
-    var onColumnResizeEndCallback: js.UndefOr[js.Function2[/* newColumnWidth */ Double, /* columnKey */ String, Unit]] = js.native
+    var onColumnResizeEndCallback: js.UndefOr[js.Function2[/* newColumnWidth */ Double, /* columnKey */ String, Unit]] = js.undefined
     
     /**
       * Callback that is called when rowHeightGetter returns a
@@ -510,21 +513,21 @@ object mod {
       *  is necessary because initially table estimates heights
       * of some parts of the content.
       */
-    var onContentHeightChange: js.UndefOr[js.Function1[/* newHeight */ Double, Unit]] = js.native
+    var onContentHeightChange: js.UndefOr[js.Function1[/* newHeight */ Double, Unit]] = js.undefined
     
     /**
       * Callback that is called when a row is clicked.
       */
     var onRowClick: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when a row is double clicked.
       */
     var onRowDoubleClick: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when a mouse-down event happens
@@ -532,7 +535,7 @@ object mod {
       */
     var onRowMouseDown: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when a mouse-enter event happens
@@ -540,7 +543,7 @@ object mod {
       */
     var onRowMouseEnter: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when a mouse-leave event happens
@@ -548,29 +551,29 @@ object mod {
       */
     var onRowMouseLeave: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Table, Event], /* rowIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when scrolling ends or stops with
       * new horizontal and vertical scroll values.
       */
-    var onScrollEnd: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.native
+    var onScrollEnd: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.undefined
     
     /**
       * Callback that is called when scrolling starts with
       * current horizontal and vertical scroll values.
       */
-    var onScrollStart: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.native
+    var onScrollStart: js.UndefOr[js.Function2[/* x */ Double, /* y */ Double, Unit]] = js.undefined
     
     /**
       * 'hidden'|'auto'
       */
-    var overflowX: js.UndefOr[String] = js.native
+    var overflowX: js.UndefOr[String] = js.undefined
     
     /**
       * 'hidden'|'auto'
       */
-    var overflowY: js.UndefOr[String] = js.native
+    var overflowY: js.UndefOr[String] = js.undefined
     
     /**
       * Pixel height of table's owner, this is used in a managed
@@ -587,61 +590,61 @@ object mod {
       *
       * This is used if ownerHeight < height (or maxHeight).
       */
-    var ownerHeight: js.UndefOr[Double] = js.native
+    var ownerHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * To get any additional CSS classes that should be added to
       *  a row, rowClassNameGetter(index) is called.
       */
-    var rowClassNameGetter: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+    var rowClassNameGetter: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
     
     /**
       * Pixel height of rows unless rowHeightGetter is specified
       * and returns different value.
       */
-    var rowHeight: Double = js.native
+    var rowHeight: Double
     
     /**
       * If specified, rowHeightGetter(index) is called for each
       * row and the returned value overrides rowHeight for
       * particular row.
       */
-    var rowHeightGetter: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var rowHeightGetter: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
     /**
       * Number of rows in the table.
       */
-    var rowsCount: Double = js.native
+    var rowsCount: Double
     
     /**
       * Value of horizontal scroll.
       *
       * defaultValue: 0
       */
-    var scrollLeft: js.UndefOr[Double] = js.native
+    var scrollLeft: js.UndefOr[Double] = js.undefined
     
     /**
       * Index of column to scroll to.
       */
-    var scrollToColumn: js.UndefOr[Double] = js.native
+    var scrollToColumn: js.UndefOr[Double] = js.undefined
     
     /**
       * Index of row to scroll to.
       */
-    var scrollToRow: js.UndefOr[Double] = js.native
+    var scrollToRow: js.UndefOr[Double] = js.undefined
     
     /**
       * Value of vertical scroll.
       *
       * defaultValue: 0
       */
-    var scrollTop: js.UndefOr[Double] = js.native
+    var scrollTop: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixel width of table. If all columns do not fit, a
       * horizontal scrollbar will appear.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object TableProps {
     

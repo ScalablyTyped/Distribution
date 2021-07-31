@@ -16,7 +16,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -89,9 +88,8 @@ object ReferenceSetSelector {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.create")
-  @js.native
-  def create(model: IModel): ReferenceSetSelector = js.native
+  @scala.inline
+  def create(model: IModel): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -102,9 +100,8 @@ object ReferenceSetSelector {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -115,9 +112,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -128,9 +124,8 @@ object ReferenceSetSelector {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -141,9 +136,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -154,9 +148,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -167,9 +160,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -180,9 +172,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -193,9 +184,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -206,9 +196,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -219,9 +208,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -232,9 +220,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -245,9 +232,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -258,9 +244,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -271,9 +256,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -284,9 +268,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -297,9 +280,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -310,9 +292,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -323,9 +304,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -336,9 +316,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -349,9 +328,8 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -362,9 +340,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -375,9 +352,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -388,9 +364,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -401,9 +376,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -414,9 +388,8 @@ object ReferenceSetSelector {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -427,9 +400,8 @@ object ReferenceSetSelector {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -440,9 +412,8 @@ object ReferenceSetSelector {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -453,9 +424,8 @@ object ReferenceSetSelector {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -466,9 +436,8 @@ object ReferenceSetSelector {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -479,9 +448,8 @@ object ReferenceSetSelector {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -492,9 +460,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -505,9 +472,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -518,9 +484,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -531,9 +496,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -544,9 +508,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -557,9 +520,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -570,9 +532,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -583,9 +544,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -596,9 +556,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -609,9 +568,8 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -622,9 +580,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -635,9 +592,8 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -648,9 +604,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -661,9 +616,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -674,9 +628,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -687,9 +640,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -700,9 +652,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -713,9 +664,8 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -726,9 +676,8 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -739,9 +688,8 @@ object ReferenceSetSelector {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -752,9 +700,8 @@ object ReferenceSetSelector {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): ReferenceSetSelector = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.structureTypeName")

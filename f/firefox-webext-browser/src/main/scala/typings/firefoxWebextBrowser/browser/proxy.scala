@@ -8,7 +8,6 @@ import typings.firefoxWebextBrowser.browser.webRequest._HttpHeaders
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.requestHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,59 +19,58 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object proxy {
   
-  @js.native
   trait OnRequestDetails extends StObject {
     
     /** The cookie store ID of the contextual identity. */
-    var cookieStoreId: js.UndefOr[String] = js.native
+    var cookieStoreId: js.UndefOr[String] = js.undefined
     
     /** URL of the page into which the requested resource will be loaded. */
-    var documentUrl: js.UndefOr[String] = js.native
+    var documentUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The value 0 indicates that the request happens in the main frame; a positive value indicates the ID of a subframe in which the request happens. If the document of a (sub-)frame is loaded (`type` is `main_frame` or `sub_frame`), `frameId` indicates the ID of this frame, not the ID of the outer frame. Frame IDs are unique within a tab.
       */
-    var frameId: Double = js.native
+    var frameId: Double
     
     /** Indicates if this response was fetched from disk cache. */
-    var fromCache: Boolean = js.native
+    var fromCache: Boolean
     
     /** True for private browsing requests. */
-    var incognito: js.UndefOr[Boolean] = js.native
+    var incognito: js.UndefOr[Boolean] = js.undefined
     
     /** Standard HTTP method. */
-    var method: String = js.native
+    var method: String
     
     /** URL of the resource that triggered this request. */
-    var originUrl: js.UndefOr[String] = js.native
+    var originUrl: js.UndefOr[String] = js.undefined
     
     /** ID of frame that wraps the frame which sent the request. Set to -1 if no parent frame exists. */
-    var parentFrameId: Double = js.native
+    var parentFrameId: Double
     
     /** The HTTP request headers that are going to be sent out with this request. */
-    var requestHeaders: js.UndefOr[HttpHeaders] = js.native
+    var requestHeaders: js.UndefOr[HttpHeaders] = js.undefined
     
     /**
       * The ID of the request. Request IDs are unique within a browser session. As a result, they could be used to relate different events of the same request.
       */
-    var requestId: String = js.native
+    var requestId: String
     
     /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
-    var tabId: Double = js.native
+    var tabId: Double
     
     /** Indicates if this request and its content window hierarchy is third party. */
-    var thirdParty: Boolean = js.native
+    var thirdParty: Boolean
     
     /** The time when this signal is triggered, in milliseconds since the epoch. */
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
     /** How the requested resource will be used. */
-    var `type`: ResourceType = js.native
+    var `type`: ResourceType
     
-    var url: String = js.native
+    var url: String
     
     /** Url classification if the request has been classified. */
-    var urlClassification: UrlClassification = js.native
+    var urlClassification: UrlClassification
   }
   object OnRequestDetails {
     
@@ -168,46 +166,45 @@ object proxy {
   
   /* proxy types */
   /** An object which describes proxy settings. */
-  @js.native
   trait ProxyConfig extends StObject {
     
     /** A URL to use to configure the proxy. */
-    var autoConfigUrl: js.UndefOr[String] = js.native
+    var autoConfigUrl: js.UndefOr[String] = js.undefined
     
     /** Do not prompt for authentication if password is saved. */
-    var autoLogin: js.UndefOr[Boolean] = js.native
+    var autoLogin: js.UndefOr[Boolean] = js.undefined
     
     /** The address of the ftp proxy, can include a port. */
-    var ftp: js.UndefOr[String] = js.native
+    var ftp: js.UndefOr[String] = js.undefined
     
     /** The address of the http proxy, can include a port. */
-    var http: js.UndefOr[String] = js.native
+    var http: js.UndefOr[String] = js.undefined
     
     /** Use the http proxy server for all protocols. */
-    var httpProxyAll: js.UndefOr[Boolean] = js.native
+    var httpProxyAll: js.UndefOr[Boolean] = js.undefined
     
     /** A list of hosts which should not be proxied. */
-    var passthrough: js.UndefOr[String] = js.native
+    var passthrough: js.UndefOr[String] = js.undefined
     
     /** Proxy DNS when using SOCKS v5. */
-    var proxyDNS: js.UndefOr[Boolean] = js.native
+    var proxyDNS: js.UndefOr[Boolean] = js.undefined
     
     /** The type of proxy to use. */
-    var proxyType: js.UndefOr[ProxyConfigProxyType] = js.native
+    var proxyType: js.UndefOr[ProxyConfigProxyType] = js.undefined
     
     /**
       * If true (the default value), do not use newer TLS protocol features that might have interoperability problems on the Internet. This is intended only for use with critical infrastructure like the updates, and is only available to privileged addons.
       */
-    var respectBeConservative: js.UndefOr[Boolean] = js.native
+    var respectBeConservative: js.UndefOr[Boolean] = js.undefined
     
     /** The address of the socks proxy, can include a port. */
-    var socks: js.UndefOr[String] = js.native
+    var socks: js.UndefOr[String] = js.undefined
     
     /** The version of the socks proxy. */
-    var socksVersion: js.UndefOr[Double] = js.native
+    var socksVersion: js.UndefOr[Double] = js.undefined
     
     /** The address of the ssl proxy, can include a port. */
-    var ssl: js.UndefOr[String] = js.native
+    var ssl: js.UndefOr[String] = js.undefined
   }
   object ProxyConfig {
     

@@ -8,30 +8,30 @@ import typings.iobroker.iobrokerStrings.info
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Omit<iobroker.iobroker/objects.<global>.ioBroker.OtherObject, 'common'>> */
-@js.native
-trait PartialOtherObject extends PartialObject {
+trait PartialOtherObject
+  extends StObject
+     with PartialObject {
   
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
   
-  var acl: js.UndefOr[ObjectACL] = js.native
+  var acl: js.UndefOr[ObjectACL] = js.undefined
   
-  var common: js.UndefOr[PartialOtherCommon] = js.native
+  var common: js.UndefOr[PartialOtherCommon] = js.undefined
   
-  var enums: js.UndefOr[Record[String, String]] = js.native
+  var enums: js.UndefOr[Record[String, String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
-  var native: js.UndefOr[Record[String, _]] = js.native
+  var native: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[adapter | config | info | chart] = js.native
+  var `type`: js.UndefOr[adapter | config | info | chart] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object PartialOtherObject {
   
@@ -69,7 +69,7 @@ object PartialOtherObject {
     def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setNative(value: Record[String, _]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNativeUndefined: Self = StObject.set(x, "native", js.undefined)

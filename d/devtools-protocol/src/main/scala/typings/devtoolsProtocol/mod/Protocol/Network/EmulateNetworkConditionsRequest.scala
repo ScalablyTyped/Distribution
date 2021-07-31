@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmulateNetworkConditionsRequest extends StObject {
   
   /**
     * Connection type if known.
     */
-  var connectionType: js.UndefOr[ConnectionType] = js.native
+  var connectionType: js.UndefOr[ConnectionType] = js.undefined
   
   /**
     * Maximal aggregated download throughput (bytes/sec). -1 disables download throttling.
     */
-  var downloadThroughput: Double = js.native
+  var downloadThroughput: Double
   
   /**
     * Minimum latency from request sent to response headers received (ms).
     */
-  var latency: Double = js.native
+  var latency: Double
   
   /**
     * True to emulate internet disconnection.
     */
-  var offline: Boolean = js.native
+  var offline: Boolean
   
   /**
     * Maximal aggregated upload throughput (bytes/sec).  -1 disables upload throttling.
     */
-  var uploadThroughput: Double = js.native
+  var uploadThroughput: Double
 }
 object EmulateNetworkConditionsRequest {
   

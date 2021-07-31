@@ -2,25 +2,23 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientName extends StObject {
   
-  var recipientName: String | Null = js.native
+  var recipientName: String | Null
   
-  var recipientNotes: String | Null = js.native
+  var recipientNotes: String | Null
   
-  var recipientSkipSMSNotifications: String | Null = js.native
+  var recipientSkipSMSNotifications: String | Null
   
-  var useMerchantForProxy: String | Null = js.native
+  var useMerchantForProxy: String | Null
 }
 object RecipientName {
   
   @scala.inline
   def apply(): RecipientName = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(recipientName = null, recipientNotes = null, recipientSkipSMSNotifications = null, useMerchantForProxy = null)
     __obj.asInstanceOf[RecipientName]
   }
   

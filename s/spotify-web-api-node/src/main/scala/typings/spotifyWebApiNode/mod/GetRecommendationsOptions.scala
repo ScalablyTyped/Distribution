@@ -2,103 +2,102 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecommendationsOptions
-  extends LimitOptions
+  extends StObject
+     with LimitOptions
      with MarketOptions {
   
-  var max_acousticness: js.UndefOr[Double] = js.native
+  var max_acousticness: js.UndefOr[Double] = js.undefined
   
-  var max_danceability: js.UndefOr[Double] = js.native
+  var max_danceability: js.UndefOr[Double] = js.undefined
   
-  var max_duration_ms: js.UndefOr[Double] = js.native
+  var max_duration_ms: js.UndefOr[Double] = js.undefined
   
-  var max_energy: js.UndefOr[Double] = js.native
+  var max_energy: js.UndefOr[Double] = js.undefined
   
-  var max_instrumentalness: js.UndefOr[Double] = js.native
+  var max_instrumentalness: js.UndefOr[Double] = js.undefined
   
-  var max_key: js.UndefOr[Double] = js.native
+  var max_key: js.UndefOr[Double] = js.undefined
   
-  var max_liveness: js.UndefOr[Double] = js.native
+  var max_liveness: js.UndefOr[Double] = js.undefined
   
-  var max_loudness: js.UndefOr[Double] = js.native
+  var max_loudness: js.UndefOr[Double] = js.undefined
   
-  var max_mode: js.UndefOr[Double] = js.native
+  var max_mode: js.UndefOr[Double] = js.undefined
   
-  var max_popularity: js.UndefOr[Double] = js.native
+  var max_popularity: js.UndefOr[Double] = js.undefined
   
-  var max_speechiness: js.UndefOr[Double] = js.native
+  var max_speechiness: js.UndefOr[Double] = js.undefined
   
-  var max_tempo: js.UndefOr[Double] = js.native
+  var max_tempo: js.UndefOr[Double] = js.undefined
   
-  var max_time_signature: js.UndefOr[Double] = js.native
+  var max_time_signature: js.UndefOr[Double] = js.undefined
   
-  var max_valence: js.UndefOr[Double] = js.native
+  var max_valence: js.UndefOr[Double] = js.undefined
   
-  var min_acousticness: js.UndefOr[Double] = js.native
+  var min_acousticness: js.UndefOr[Double] = js.undefined
   
-  var min_danceability: js.UndefOr[Double] = js.native
+  var min_danceability: js.UndefOr[Double] = js.undefined
   
-  var min_duration_ms: js.UndefOr[Double] = js.native
+  var min_duration_ms: js.UndefOr[Double] = js.undefined
   
-  var min_energy: js.UndefOr[Double] = js.native
+  var min_energy: js.UndefOr[Double] = js.undefined
   
-  var min_instrumentalness: js.UndefOr[Double] = js.native
+  var min_instrumentalness: js.UndefOr[Double] = js.undefined
   
-  var min_key: js.UndefOr[Double] = js.native
+  var min_key: js.UndefOr[Double] = js.undefined
   
-  var min_liveness: js.UndefOr[Double] = js.native
+  var min_liveness: js.UndefOr[Double] = js.undefined
   
-  var min_loudness: js.UndefOr[Double] = js.native
+  var min_loudness: js.UndefOr[Double] = js.undefined
   
-  var min_mode: js.UndefOr[Double] = js.native
+  var min_mode: js.UndefOr[Double] = js.undefined
   
-  var min_popularity: js.UndefOr[Double] = js.native
+  var min_popularity: js.UndefOr[Double] = js.undefined
   
-  var min_speechiness: js.UndefOr[Double] = js.native
+  var min_speechiness: js.UndefOr[Double] = js.undefined
   
-  var min_tempo: js.UndefOr[Double] = js.native
+  var min_tempo: js.UndefOr[Double] = js.undefined
   
-  var min_time_signature: js.UndefOr[Double] = js.native
+  var min_time_signature: js.UndefOr[Double] = js.undefined
   
-  var min_valence: js.UndefOr[Double] = js.native
+  var min_valence: js.UndefOr[Double] = js.undefined
   
-  var seed_artists: js.UndefOr[js.Array[String] | String] = js.native
+  var seed_artists: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var seed_genres: js.UndefOr[js.Array[String] | String] = js.native
+  var seed_genres: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var seed_tracks: js.UndefOr[js.Array[String] | String] = js.native
+  var seed_tracks: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var target_acousticness: js.UndefOr[Double] = js.native
+  var target_acousticness: js.UndefOr[Double] = js.undefined
   
-  var target_danceability: js.UndefOr[Double] = js.native
+  var target_danceability: js.UndefOr[Double] = js.undefined
   
-  var target_duration_ms: js.UndefOr[Double] = js.native
+  var target_duration_ms: js.UndefOr[Double] = js.undefined
   
-  var target_energy: js.UndefOr[Double] = js.native
+  var target_energy: js.UndefOr[Double] = js.undefined
   
-  var target_instrumentalness: js.UndefOr[Double] = js.native
+  var target_instrumentalness: js.UndefOr[Double] = js.undefined
   
-  var target_key: js.UndefOr[Double] = js.native
+  var target_key: js.UndefOr[Double] = js.undefined
   
-  var target_liveness: js.UndefOr[Double] = js.native
+  var target_liveness: js.UndefOr[Double] = js.undefined
   
-  var target_loudness: js.UndefOr[Double] = js.native
+  var target_loudness: js.UndefOr[Double] = js.undefined
   
-  var target_mode: js.UndefOr[Double] = js.native
+  var target_mode: js.UndefOr[Double] = js.undefined
   
-  var target_popularity: js.UndefOr[Double] = js.native
+  var target_popularity: js.UndefOr[Double] = js.undefined
   
-  var target_speechiness: js.UndefOr[Double] = js.native
+  var target_speechiness: js.UndefOr[Double] = js.undefined
   
-  var target_tempo: js.UndefOr[Double] = js.native
+  var target_tempo: js.UndefOr[Double] = js.undefined
   
-  var target_time_signature: js.UndefOr[Double] = js.native
+  var target_time_signature: js.UndefOr[Double] = js.undefined
   
-  var target_valence: js.UndefOr[Double] = js.native
+  var target_valence: js.UndefOr[Double] = js.undefined
 }
 object GetRecommendationsOptions {
   

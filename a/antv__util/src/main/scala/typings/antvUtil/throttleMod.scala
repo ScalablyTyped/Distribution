@@ -2,21 +2,22 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object throttleMod {
   
-  @JSImport("@antv/util/lib/throttle", JSImport.Default)
+  @JSImport("@antv/util/lib/throttle", JSImport.Namespace)
   @js.native
-  def default(func: js.Function, wait: Double, options: OptionsType): js.Function = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(func: js.Function, wait: Double, options: OptionsType): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  
   trait OptionsType extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsType {
     

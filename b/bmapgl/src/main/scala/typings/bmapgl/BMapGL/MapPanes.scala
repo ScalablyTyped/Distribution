@@ -3,25 +3,23 @@ package typings.bmapgl.BMapGL
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapPanes extends StObject {
   
-  var floatPane: js.UndefOr[HTMLElement] = js.native
+  var floatPane: js.UndefOr[HTMLElement] = js.undefined
   
-  var floatShadow: js.UndefOr[HTMLElement] = js.native
+  var floatShadow: js.UndefOr[HTMLElement] = js.undefined
   
-  var labelPane: js.UndefOr[HTMLElement] = js.native
+  var labelPane: js.UndefOr[HTMLElement] = js.undefined
   
-  var mapPane: js.UndefOr[HTMLElement] = js.native
+  var mapPane: js.UndefOr[HTMLElement] = js.undefined
   
-  var markerMouseTarget: js.UndefOr[HTMLElement] = js.native
+  var markerMouseTarget: js.UndefOr[HTMLElement] = js.undefined
   
-  var markerPane: js.UndefOr[HTMLElement] = js.native
+  var markerPane: js.UndefOr[HTMLElement] = js.undefined
   
-  var markerShadow: js.UndefOr[HTMLElement] = js.native
+  var markerShadow: js.UndefOr[HTMLElement] = js.undefined
 }
 object MapPanes {
   

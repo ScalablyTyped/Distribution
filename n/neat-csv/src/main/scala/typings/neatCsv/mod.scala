@@ -7,46 +7,46 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(input: Input): js.Promise[js.Array[Row]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Row]]]
+  @scala.inline
+  def apply(input: Input, options: Options): js.Promise[js.Array[Row]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Row]]]
+  
   @JSImport("neat-csv", JSImport.Namespace)
   @js.native
-  def apply(input: Input): js.Promise[js.Array[Row]] = js.native
-  @JSImport("neat-csv", JSImport.Namespace)
-  @js.native
-  def apply(input: Input, options: Options): js.Promise[js.Array[Row]] = js.native
+  val ^ : js.Any = js.native
   
   /** The CSV data to parse. */
   type Input = String | Buffer | Readable
   
   /** A configuration object to be passed to csv-parser. */
-  @js.native
   trait Options extends StObject {
     
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var headers: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var mapHeaders: js.UndefOr[js.Function1[/* args */ Header, String | Null]] = js.native
+    var mapHeaders: js.UndefOr[js.Function1[/* args */ Header, String | Null]] = js.undefined
     
-    var mapValues: js.UndefOr[js.Function1[/* args */ Index, _]] = js.native
+    var mapValues: js.UndefOr[js.Function1[/* args */ Index, js.Any]] = js.undefined
     
-    var maxRowBytes: js.UndefOr[Double] = js.native
+    var maxRowBytes: js.UndefOr[Double] = js.undefined
     
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
-    var quote: js.UndefOr[String] = js.native
+    var quote: js.UndefOr[String] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var skipLines: js.UndefOr[Double] = js.native
+    var skipLines: js.UndefOr[Double] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -81,7 +81,7 @@ object mod {
       def setMapHeadersUndefined: Self = StObject.set(x, "mapHeaders", js.undefined)
       
       @scala.inline
-      def setMapValues(value: /* args */ Index => _): Self = StObject.set(x, "mapValues", js.Any.fromFunction1(value))
+      def setMapValues(value: /* args */ Index => js.Any): Self = StObject.set(x, "mapValues", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMapValuesUndefined: Self = StObject.set(x, "mapValues", js.undefined)

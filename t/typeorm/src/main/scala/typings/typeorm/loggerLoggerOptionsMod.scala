@@ -10,18 +10,16 @@ import typings.typeorm.typeormStrings.schema
 import typings.typeorm.typeormStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerLoggerOptionsMod {
   
-  @js.native
   trait FileLoggerOptions extends StObject {
     
     /**
       * Specify custom path for log file, relative to application root
       */
-    var logPath: String = js.native
+    var logPath: String
   }
   object FileLoggerOptions {
     

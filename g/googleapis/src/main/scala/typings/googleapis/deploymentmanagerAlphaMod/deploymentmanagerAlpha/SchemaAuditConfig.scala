@@ -2,7 +2,6 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,22 +26,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * foo@gmail.com from DATA_READ logging, and bar@gmail.com from DATA_WRITE
   * logging.
   */
-@js.native
 trait SchemaAuditConfig extends StObject {
   
   /**
     * The configuration for logging of each type of permission.
     */
-  var auditLogConfigs: js.UndefOr[js.Array[SchemaAuditLogConfig]] = js.native
+  var auditLogConfigs: js.UndefOr[js.Array[SchemaAuditLogConfig]] = js.undefined
   
-  var exemptedMembers: js.UndefOr[js.Array[String]] = js.native
+  var exemptedMembers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies a service that will be enabled for audit logging. For example,
     * `storage.googleapis.com`, `cloudsql.googleapis.com`. `allServices` is a
     * special value that covers all services.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaAuditConfig {
   

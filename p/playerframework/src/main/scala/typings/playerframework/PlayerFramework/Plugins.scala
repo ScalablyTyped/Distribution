@@ -4,32 +4,32 @@ import typings.std.HTMLElement
 import typings.std.MediaSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plugins {
   
-  @js.native
-  trait AudioSelectorPlugin extends PluginBase {
+  trait AudioSelectorPlugin
+    extends StObject
+       with PluginBase {
     
     /**
       * Not available in phone.
       **/
-    var alignment: String = js.native
+    var alignment: String
     
     /**
       * Not available in phone.
       **/
-    var anchor: HTMLElement = js.native
+    var anchor: HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**
       * Not available in phone.
       **/
-    var placement: String = js.native
+    var placement: String
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object AudioSelectorPlugin {
     
@@ -73,12 +73,13 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait BufferingPlugin extends PluginBase {
+  trait BufferingPlugin
+    extends StObject
+       with PluginBase {
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object BufferingPlugin {
     
@@ -110,27 +111,28 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait CaptionSelectorPlugin extends PluginBase {
+  trait CaptionSelectorPlugin
+    extends StObject
+       with PluginBase {
     
     /**
       * Not available in phone.
       **/
-    var alignment: String = js.native
+    var alignment: String
     
     /**
       * Not available in phone.
       **/
-    var anchor: HTMLElement = js.native
+    var anchor: HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /**
       * Not available in phone.
       **/
-    var placement: String = js.native
+    var placement: String
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object CaptionSelectorPlugin {
     
@@ -174,16 +176,17 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait ChaptersPlugin extends PluginBase {
+  trait ChaptersPlugin
+    extends StObject
+       with PluginBase {
     
-    var autoCreateChaptersFromTextTracks: Boolean = js.native
+    var autoCreateChaptersFromTextTracks: Boolean
     
-    var autoCreateDefaultChapters: Boolean = js.native
+    var autoCreateDefaultChapters: Boolean
     
-    var defaultChapterCount: Double = js.native
+    var defaultChapterCount: Double
     
-    var visualMarkerClass: String = js.native
+    var visualMarkerClass: String
   }
   object ChaptersPlugin {
     
@@ -223,18 +226,19 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait ControlPlugin extends PluginBase {
+  trait ControlPlugin
+    extends StObject
+       with PluginBase {
     
-    def compactThresholdInInches(): Double = js.native
+    def compactThresholdInInches(): Double
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def isCompact(): Boolean = js.native
+    def isCompact(): Boolean
     
-    def orientation(): String = js.native
+    def orientation(): String
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ControlPlugin {
     
@@ -278,10 +282,11 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait DisplayRequestPlugin extends PluginBase {
+  trait DisplayRequestPlugin
+    extends StObject
+       with PluginBase {
     
-    var isRequestActive: Boolean = js.native
+    var isRequestActive: Boolean
   }
   object DisplayRequestPlugin {
     
@@ -309,12 +314,13 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait ErrorPlugin extends PluginBase {
+  trait ErrorPlugin
+    extends StObject
+       with PluginBase {
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object ErrorPlugin {
     
@@ -346,12 +352,13 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait LoaderPlugin extends PluginBase {
+  trait LoaderPlugin
+    extends StObject
+       with PluginBase {
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object LoaderPlugin {
     
@@ -383,12 +390,13 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait PlayTimeTrackingPlugin extends PluginBase {
+  trait PlayTimeTrackingPlugin
+    extends StObject
+       with PluginBase {
     
-    var playTime: Double = js.native
+    var playTime: Double
     
-    var playTimePercentage: Double = js.native
+    var playTimePercentage: Double
   }
   object PlayTimeTrackingPlugin {
     
@@ -423,47 +431,48 @@ object Plugins {
   /**
     *
     **/
-  @js.native
-  trait PlaylistPlugin extends PluginBase {
+  trait PlaylistPlugin
+    extends StObject
+       with PluginBase {
     
     /**
       *
       **/
-    var autoAdvance: Boolean = js.native
+    var autoAdvance: Boolean
     
-    def canGoToNextPlaylistItem(): Boolean = js.native
+    def canGoToNextPlaylistItem(): Boolean
     
-    def canGoToPreviousPlaylistItem(): Boolean = js.native
-    
-    /**
-      *
-      **/
-    var currentPlaylistItem: PlaylistItem = js.native
+    def canGoToPreviousPlaylistItem(): Boolean
     
     /**
       *
       **/
-    var currentPlaylistItemIndex: Double = js.native
+    var currentPlaylistItem: PlaylistItem
     
-    def goToNextPlaylistItem(): Unit = js.native
+    /**
+      *
+      **/
+    var currentPlaylistItemIndex: Double
+    
+    def goToNextPlaylistItem(): Unit
     
     // Methods
-    def goToPreviousPlaylistItem(): Unit = js.native
+    def goToPreviousPlaylistItem(): Unit
     
     /**
       *
       **/
-    var playlist: js.Array[PlaylistItem] = js.native
+    var playlist: js.Array[PlaylistItem]
     
     /**
       *
       **/
-    var skipBackThreshold: Double = js.native
+    var skipBackThreshold: Double
     
     /**
       *
       **/
-    var startupPlaylistItemIndex: Double = js.native
+    var startupPlaylistItemIndex: Double
   }
   object PlaylistPlugin {
     
@@ -530,14 +539,15 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait PositionTrackingPlugin extends PluginBase {
+  trait PositionTrackingPlugin
+    extends StObject
+       with PluginBase {
     
-    var evaluateOnForwardOnly: Boolean = js.native
+    var evaluateOnForwardOnly: Boolean
     
-    var position: Double = js.native
+    var position: Double
     
-    var positionPercentage: Double = js.native
+    var positionPercentage: Double
   }
   object PositionTrackingPlugin {
     
@@ -573,16 +583,17 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait SystemTransportControlsPlugin extends PluginBase {
+  trait SystemTransportControlsPlugin
+    extends StObject
+       with PluginBase {
     
-    var isNextTrackEnabled: Boolean = js.native
+    var isNextTrackEnabled: Boolean
     
-    var isPreviousTrackEnabled: Boolean = js.native
+    var isPreviousTrackEnabled: Boolean
     
-    var nextTrackExists: Boolean = js.native
+    var nextTrackExists: Boolean
     
-    var previousTrackExists: Boolean = js.native
+    var previousTrackExists: Boolean
   }
   object SystemTransportControlsPlugin {
     
@@ -622,10 +633,11 @@ object Plugins {
     }
   }
   
-  @js.native
-  trait TrackingPluginBase extends PluginBase {
+  trait TrackingPluginBase
+    extends StObject
+       with PluginBase {
     
-    var trackingEvents: js.Array[_] = js.native
+    var trackingEvents: js.Array[js.Any]
   }
   object TrackingPluginBase {
     
@@ -637,7 +649,7 @@ object Plugins {
       isLoaded: Boolean,
       load: () => Unit,
       mediaPlayer: MediaPlayer,
-      trackingEvents: js.Array[_],
+      trackingEvents: js.Array[js.Any],
       unload: () => Unit,
       update: MediaSource => Unit
     ): TrackingPluginBase = {
@@ -649,7 +661,7 @@ object Plugins {
     implicit class TrackingPluginBaseMutableBuilder[Self <: TrackingPluginBase] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setTrackingEvents(value: js.Array[_]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
+      def setTrackingEvents(value: js.Array[js.Any]): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrackingEventsVarargs(value: js.Any*): Self = StObject.set(x, "trackingEvents", js.Array(value :_*))

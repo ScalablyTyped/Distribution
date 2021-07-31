@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PassportData extends StObject {
   
-  var credentials: EncryptedCredentials = js.native
+  var credentials: EncryptedCredentials
   
-  var data: js.Array[EncryptedPassportElement] = js.native
+  var data: js.Array[EncryptedPassportElement]
 }
 object PassportData {
   

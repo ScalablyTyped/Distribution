@@ -7,10 +7,8 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Get extends StObject {
   
   /**
@@ -18,18 +16,33 @@ trait Get extends StObject {
     */
   def get(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /emojis']['response'] */ js.Any
-  ] = js.native
+  ]
   def get(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /emojis']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /emojis']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Lists all the emojis available to use on GitHub.
     */
   @JSName("get")
-  var get_Original: `123` = js.native
+  var get_Original: `123`
+}
+object Get {
+  
+  @scala.inline
+  def apply(get: `123`): Get = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Get]
+  }
+  
+  @scala.inline
+  implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGet(value: `123`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+  }
 }

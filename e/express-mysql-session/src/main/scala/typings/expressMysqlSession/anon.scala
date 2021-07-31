@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.expressSession.mod.SessionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -14,19 +13,18 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def apply(options: SessionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(options: SessionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   /* Inlined std.Partial<express-mysql-session.express-mysql-session.ColumnNames> */
-  @js.native
   trait PartialColumnNames extends StObject {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[String] = js.native
+    var expires: js.UndefOr[String] = js.undefined
     
-    var session_id: js.UndefOr[String] = js.native
+    var session_id: js.UndefOr[String] = js.undefined
   }
   object PartialColumnNames {
     
@@ -60,12 +58,11 @@ object anon {
   }
   
   /* Inlined std.Partial<express-mysql-session.express-mysql-session.Schema> */
-  @js.native
   trait PartialSchema extends StObject {
     
-    var columnNames: js.UndefOr[PartialColumnNames] = js.native
+    var columnNames: js.UndefOr[PartialColumnNames] = js.undefined
     
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
   }
   object PartialSchema {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Label extends StObject {
   
   /**
     * Level of confidence.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * If Label represents an object, Instances contains the bounding boxes for each instance of the detected object. Bounding boxes are returned for common object labels such as people, cars, furniture, apparel or pets.
     */
-  var Instances: js.UndefOr[typings.awsSdk.rekognitionMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.rekognitionMod.Instances] = js.undefined
   
   /**
     * The name (label) of the object or scene.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The parent labels for a label. The response includes all ancestor labels.
     */
-  var Parents: js.UndefOr[typings.awsSdk.rekognitionMod.Parents] = js.native
+  var Parents: js.UndefOr[typings.awsSdk.rekognitionMod.Parents] = js.undefined
 }
 object Label {
   

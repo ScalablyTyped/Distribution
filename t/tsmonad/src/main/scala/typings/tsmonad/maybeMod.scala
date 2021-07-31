@@ -8,10 +8,13 @@ import typings.tsmonad.monadMod.Functor
 import typings.tsmonad.monadMod.Monad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maybeMod {
+  
+  @JSImport("tsmonad/lib/src/maybe", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait MaybeType extends StObject
@@ -20,34 +23,60 @@ object maybeMod {
   object MaybeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[MaybeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[MaybeType & Double] = js.native
     
     @js.native
-    sealed trait Just extends MaybeType
-    /* 1 */ val Just: typings.tsmonad.maybeMod.MaybeType.Just with Double = js.native
+    sealed trait Just
+      extends StObject
+         with MaybeType
+    /* 1 */ val Just: typings.tsmonad.maybeMod.MaybeType.Just & Double = js.native
     
     @js.native
-    sealed trait Nothing extends MaybeType
-    /* 0 */ val Nothing: typings.tsmonad.maybeMod.MaybeType.Nothing with Double = js.native
+    sealed trait Nothing
+      extends StObject
+         with MaybeType
+    /* 0 */ val Nothing: typings.tsmonad.maybeMod.MaybeType.Nothing & Double = js.native
   }
   
   @JSImport("tsmonad/lib/src/maybe", "Maybe")
   @js.native
   class Maybe_[T] protected ()
-    extends Monad[T]
+    extends StObject
+       with Monad[T]
        with Functor[T]
        with Eq[Maybe_[T]] {
     def this(`type`: MaybeType) = this()
     def this(`type`: MaybeType, value: T) = this()
     
+    /* CompleteClass */
+    override def bind[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
+    
     def caseOf[U](patterns: MaybePatterns[T, U]): U = js.native
+    
+    /* CompleteClass */
+    override def chain[U](f: js.Function1[T, Monad[U]]): Monad[U] = js.native
     
     def defaulting(defaultValue: T): Maybe_[T] = js.native
     
     def `do`(): Maybe_[T] = js.native
     def `do`(patterns: Partial[MaybePatterns[T, Unit]]): Maybe_[T] = js.native
     
+    /* CompleteClass */
+    override def fmap[U](f: js.Function1[T, U]): Functor[U] = js.native
+    
+    /* CompleteClass */
+    override def lift[U](f: js.Function1[T, U]): Functor[U] = js.native
+    
+    /* CompleteClass */
+    override def map[U](f: js.Function1[T, U]): Functor[U] = js.native
+    
+    /* CompleteClass */
+    override def of[U](t: U): Monad[U] = js.native
+    
     var `type`: js.Any = js.native
+    
+    /* CompleteClass */
+    override def unit[U](t: U): Monad[U] = js.native
     
     var value: js.Any = js.native
     
@@ -61,48 +90,42 @@ object maybeMod {
   /* static members */
   object Maybe_ {
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.all")
+    @JSImport("tsmonad/lib/src/maybe", "Maybe")
     @js.native
-    def all(t: StringDictionary[Maybe_[_]]): Maybe_[StringDictionary[_]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.isJust")
-    @js.native
-    def isJust[T](t: Maybe_[T]): Boolean = js.native
+    @scala.inline
+    def all(t: StringDictionary[Maybe_[js.Any]]): Maybe_[StringDictionary[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[js.Any]]]
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.isNothing")
-    @js.native
-    def isNothing[T](t: Maybe_[T]): Boolean = js.native
+    @scala.inline
+    def isJust[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJust")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.just")
-    @js.native
-    def just[T](t: T): Maybe_[T] = js.native
+    @scala.inline
+    def isNothing[T](t: Maybe_[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNothing")(t.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.maybe")
-    @js.native
-    def maybe[T](): Maybe_[T] = js.native
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.maybe")
-    @js.native
-    def maybe[T](t: T): Maybe_[T] = js.native
+    @scala.inline
+    def just[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("just")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.nothing")
-    @js.native
-    def nothing[T](): Maybe_[T] = js.native
+    @scala.inline
+    def maybe[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")().asInstanceOf[Maybe_[T]]
+    @scala.inline
+    def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
     
-    @JSImport("tsmonad/lib/src/maybe", "Maybe.sequence")
-    @js.native
-    def sequence[T](t: StringDictionary[Maybe_[T]]): Maybe_[StringDictionary[T]] = js.native
+    @scala.inline
+    def nothing[T](): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("nothing")().asInstanceOf[Maybe_[T]]
+    
+    @scala.inline
+    def sequence[T](t: StringDictionary[Maybe_[T]]): Maybe_[StringDictionary[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[StringDictionary[T]]]
   }
   
-  @JSImport("tsmonad/lib/src/maybe", "maybe")
-  @js.native
-  def maybe[T](t: T): Maybe_[T] = js.native
+  @scala.inline
+  def maybe[T](t: T): Maybe_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("maybe")(t.asInstanceOf[js.Any]).asInstanceOf[Maybe_[T]]
   
-  @js.native
   trait MaybePatterns[T, U] extends StObject {
     
-    def just(t: T): U = js.native
+    def just(t: T): U
     
-    def nothing(): U = js.native
+    def nothing(): U
   }
   object MaybePatterns {
     
@@ -113,7 +136,7 @@ object maybeMod {
     }
     
     @scala.inline
-    implicit class MaybePatternsMutableBuilder[Self <: MaybePatterns[_, _], T, U] (val x: Self with (MaybePatterns[T, U])) extends AnyVal {
+    implicit class MaybePatternsMutableBuilder[Self <: MaybePatterns[?, ?], T, U] (val x: Self & (MaybePatterns[T, U])) extends AnyVal {
       
       @scala.inline
       def setJust(value: T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))
@@ -124,12 +147,11 @@ object maybeMod {
   }
   
   /* Inlined std.Partial<tsmonad.tsmonad/lib/src/maybe.MaybePatterns<T, U>> */
-  @js.native
   trait OptionalMaybePatterns[T, U] extends StObject {
     
-    var just: js.UndefOr[js.Function1[/* t */ T, U]] = js.native
+    var just: js.UndefOr[js.Function1[/* t */ T, U]] = js.undefined
     
-    var nothing: js.UndefOr[js.Function0[U]] = js.native
+    var nothing: js.UndefOr[js.Function0[U]] = js.undefined
   }
   object OptionalMaybePatterns {
     
@@ -140,7 +162,7 @@ object maybeMod {
     }
     
     @scala.inline
-    implicit class OptionalMaybePatternsMutableBuilder[Self <: OptionalMaybePatterns[_, _], T, U] (val x: Self with (OptionalMaybePatterns[T, U])) extends AnyVal {
+    implicit class OptionalMaybePatternsMutableBuilder[Self <: OptionalMaybePatterns[?, ?], T, U] (val x: Self & (OptionalMaybePatterns[T, U])) extends AnyVal {
       
       @scala.inline
       def setJust(value: /* t */ T => U): Self = StObject.set(x, "just", js.Any.fromFunction1(value))

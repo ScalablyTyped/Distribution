@@ -2,26 +2,24 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIdentityProviderConfigurationResponse extends StObject {
   
   /**
     * The SAML metadata document provided by the user’s identity provider.
     */
-  var IdentityProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.native
+  var IdentityProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.undefined
   
   /**
     * The type of identity provider.
     */
-  var IdentityProviderType: js.UndefOr[typings.awsSdk.worklinkMod.IdentityProviderType] = js.native
+  var IdentityProviderType: js.UndefOr[typings.awsSdk.worklinkMod.IdentityProviderType] = js.undefined
   
   /**
     * The SAML metadata document uploaded to the user’s identity provider.
     */
-  var ServiceProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.native
+  var ServiceProviderSamlMetadata: js.UndefOr[SamlMetadata] = js.undefined
 }
 object DescribeIdentityProviderConfigurationResponse {
   

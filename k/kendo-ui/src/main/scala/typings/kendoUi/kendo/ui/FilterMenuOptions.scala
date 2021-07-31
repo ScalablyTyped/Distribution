@@ -3,23 +3,21 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterMenuOptions extends StObject {
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var extra: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[Boolean] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[FilterMenuMessages] = js.native
+  var messages: js.UndefOr[FilterMenuMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var operators: js.UndefOr[FilterMenuOperators] = js.native
+  var operators: js.UndefOr[FilterMenuOperators] = js.undefined
 }
 object FilterMenuOptions {
   

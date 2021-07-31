@@ -4,10 +4,13 @@ import typings.ajv.mod.ErrorParameters
 import typings.schemaUtils.validationErrorMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateMod {
+  
+  @JSImport("schema-utils/declarations/validate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("schema-utils/declarations/validate", "ValidationError")
   @js.native
@@ -28,31 +31,26 @@ object validateMod {
     ) = this()
   }
   
-  @JSImport("schema-utils/declarations/validate", "validate")
-  @js.native
-  def validate(schema: Schema, options: js.Array[js.Object]): Unit = js.native
-  @JSImport("schema-utils/declarations/validate", "validate")
-  @js.native
-  def validate(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = js.native
-  @JSImport("schema-utils/declarations/validate", "validate")
-  @js.native
-  def validate(schema: Schema, options: js.Object): Unit = js.native
-  @JSImport("schema-utils/declarations/validate", "validate")
-  @js.native
-  def validate(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = js.native
+  @scala.inline
+  def validate(schema: Schema, options: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(schema: Schema, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def validate(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ErrorObject = typings.ajv.mod.ErrorObject
   
-  @js.native
   trait Extend extends StObject {
     
-    var formatExclusiveMaximum: js.UndefOr[Boolean] = js.native
+    var formatExclusiveMaximum: js.UndefOr[Boolean] = js.undefined
     
-    var formatExclusiveMinimum: js.UndefOr[Boolean] = js.native
+    var formatExclusiveMinimum: js.UndefOr[Boolean] = js.undefined
     
-    var formatMaximum: js.UndefOr[Double] = js.native
+    var formatMaximum: js.UndefOr[Double] = js.undefined
     
-    var formatMinimum: js.UndefOr[Double] = js.native
+    var formatMinimum: js.UndefOr[Double] = js.undefined
   }
   object Extend {
     
@@ -99,34 +97,13 @@ object validateMod {
   
   type PostFormatter = js.Function2[/* formattedError */ String, /* error */ SchemaUtilErrorObject, String]
   
-  type Schema = (typings.jsonSchema.mod.JSONSchema4 with Extend) | (typings.jsonSchema.mod.JSONSchema6 with Extend) | (typings.jsonSchema.mod.JSONSchema7 with Extend)
+  type Schema = (typings.jsonSchema.mod.JSONSchema4 & Extend) | (typings.jsonSchema.mod.JSONSchema6 & Extend) | (typings.jsonSchema.mod.JSONSchema7 & Extend)
   
-  /* Inlined ajv.ajv.ErrorObject & {  children :std.Array<ajv.ajv.ErrorObject> | undefined} */
-  @js.native
-  trait SchemaUtilErrorObject extends StObject {
+  trait SchemaUtilErrorObject
+    extends StObject
+       with typings.ajv.mod.ErrorObject {
     
-    var children: js.UndefOr[js.Array[typings.ajv.mod.ErrorObject]] = js.native
-    
-    var data: js.UndefOr[js.Any] = js.native
-    
-    var dataPath: String = js.native
-    
-    var keyword: String = js.native
-    
-    // Excluded if messages set to false.
-    var message: js.UndefOr[String] = js.native
-    
-    var params: ErrorParameters = js.native
-    
-    var parentSchema: js.UndefOr[js.Object] = js.native
-    
-    // Added to validation errors of propertyNames keyword schema
-    var propertyName: js.UndefOr[String] = js.native
-    
-    // These are added with the `verbose` option.
-    var schema: js.UndefOr[js.Any] = js.native
-    
-    var schemaPath: String = js.native
+    var children: js.UndefOr[js.Array[typings.ajv.mod.ErrorObject]] = js.undefined
   }
   object SchemaUtilErrorObject {
     
@@ -147,59 +124,16 @@ object validateMod {
       
       @scala.inline
       def setChildrenVarargs(value: typings.ajv.mod.ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
-      
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
-      
-      @scala.inline
-      def setParams(value: ErrorParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setParentSchema(value: js.Object): Self = StObject.set(x, "parentSchema", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setParentSchemaUndefined: Self = StObject.set(x, "parentSchema", js.undefined)
-      
-      @scala.inline
-      def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
-      
-      @scala.inline
-      def setSchema(value: js.Any): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     }
   }
   
-  @js.native
   trait ValidationErrorConfiguration extends StObject {
     
-    var baseDataPath: js.UndefOr[String] = js.native
+    var baseDataPath: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var postFormatter: js.UndefOr[PostFormatter] = js.native
+    var postFormatter: js.UndefOr[PostFormatter] = js.undefined
   }
   object ValidationErrorConfiguration {
     

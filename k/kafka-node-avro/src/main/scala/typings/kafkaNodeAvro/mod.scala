@@ -2,20 +2,21 @@ package typings.kafkaNodeAvro
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("kafka-node-avro", "init")
+  @JSImport("kafka-node-avro", JSImport.Namespace)
   @js.native
-  def init(settings: Settings): js.Promise[Kafka] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def init(settings: Settings): js.Promise[Kafka] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Kafka]]
+  
   trait Kafka extends StObject {
     
     /** Publishes message to Kafka */
-    def send(options: SendOptions): js.Promise[js.Object] = js.native
+    def send(options: SendOptions): js.Promise[js.Object]
   }
   object Kafka {
     
@@ -33,11 +34,10 @@ object mod {
     }
   }
   
-  @js.native
   trait KafkaSettings extends StObject {
     
     /** Kafka broker host name */
-    var kafkaHost: String = js.native
+    var kafkaHost: String
   }
   object KafkaSettings {
     
@@ -55,11 +55,10 @@ object mod {
     }
   }
   
-  @js.native
   trait SchemaSettings extends StObject {
     
     /** Kafka schema registry url */
-    var registry: String = js.native
+    var registry: String
   }
   object SchemaSettings {
     
@@ -77,20 +76,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SendOptions extends StObject {
     
     /** Message key */
-    var key: String = js.native
+    var key: String
     
     /**
       * Object to send to kafka.
       * It will be automatically Avro encoded if schema registry finds a valid schema for topic
       */
-    var messages: js.Object = js.native
+    var messages: js.Object
     
     /** Kafka topic name to publish message */
-    var topic: String = js.native
+    var topic: String
   }
   object SendOptions {
     
@@ -114,14 +112,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /** Kafka broker settings */
-    var kafka: KafkaSettings = js.native
+    var kafka: KafkaSettings
     
     /** Kafka schema registry settings */
-    var schema: SchemaSettings = js.native
+    var schema: SchemaSettings
   }
   object Settings {
     

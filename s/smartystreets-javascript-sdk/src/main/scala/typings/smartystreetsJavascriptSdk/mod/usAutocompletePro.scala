@@ -2,7 +2,6 @@ package typings.smartystreetsJavascriptSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usAutocompletePro {
@@ -10,30 +9,31 @@ object usAutocompletePro {
   @JSImport("smartystreets-javascript-sdk", "usAutocompletePro.Lookup")
   @js.native
   class Lookup protected ()
-    extends typings.smartystreetsJavascriptSdk.mod.core.Lookup {
+    extends StObject
+       with typings.smartystreetsJavascriptSdk.mod.core.Lookup {
     def this(search: String) = this()
     
-    var excludeStates: js.Array[_] = js.native
+    var excludeStates: js.Array[js.Any] = js.native
     
-    var includeOnlyCities: js.Array[_] = js.native
+    var includeOnlyCities: js.Array[js.Any] = js.native
     
-    var includeOnlyStates: js.Array[_] = js.native
+    var includeOnlyStates: js.Array[js.Any] = js.native
     
-    var includeOnlyZIPCodes: js.Array[_] = js.native
+    var includeOnlyZIPCodes: js.Array[js.Any] = js.native
     
     var maxResults: Double = js.native
     
-    var preferCities: js.Array[_] = js.native
+    var preferCities: js.Array[js.Any] = js.native
     
     var preferGeolocation: js.Any = js.native
     
     var preferRatio: js.Any = js.native
     
-    var preferStates: js.Array[_] = js.native
+    var preferStates: js.Array[js.Any] = js.native
     
-    var preferZIPCodes: js.Array[_] = js.native
+    var preferZIPCodes: js.Array[js.Any] = js.native
     
-    var result: js.Array[_] = js.native
+    var result: js.Array[js.Any] = js.native
     
     var search: String = js.native
     

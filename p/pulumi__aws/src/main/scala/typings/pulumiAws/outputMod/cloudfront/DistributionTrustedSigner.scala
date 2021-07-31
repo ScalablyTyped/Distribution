@@ -2,22 +2,20 @@ package typings.pulumiAws.outputMod.cloudfront
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionTrustedSigner extends StObject {
   
   /**
     * Whether the distribution is enabled to accept end
     * user requests for content.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * List of nested attributes for each trusted signer
     */
-  var items: js.Array[DistributionTrustedSignerItem] = js.native
+  var items: js.Array[DistributionTrustedSignerItem]
 }
 object DistributionTrustedSigner {
   

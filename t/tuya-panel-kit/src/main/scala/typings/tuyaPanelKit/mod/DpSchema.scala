@@ -4,65 +4,63 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.ro
 import typings.tuyaPanelKit.tuyaPanelKitStrings.rw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DpSchema extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var dptype: String = js.native
+  var dptype: String
   
-  var iconname: String = js.native
+  var iconname: String
   
-  var id: String = js.native
-  
-  /**
-    * type: 'bitmap' only
-    */
-  var label: js.UndefOr[js.Array[String]] = js.native
-  
-  /**
-    * type: 'value' only
-    */
-  var max: js.UndefOr[Double] = js.native
+  var id: String
   
   /**
     * type: 'bitmap' only
     */
-  var maxlen: js.UndefOr[Double] = js.native
+  var label: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * type: 'value' only
     */
-  var min: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var mode: rw | ro = js.native
+  /**
+    * type: 'bitmap' only
+    */
+  var maxlen: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  /**
+    * type: 'value' only
+    */
+  var min: js.UndefOr[Double] = js.undefined
+  
+  var mode: rw | ro
+  
+  var name: String
   
   /**
     * type: 'enum' only
     */
-  var range: js.UndefOr[js.Array[_]] = js.native
+  var range: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * type: 'value' only
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * type: 'value' only
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var `type`: DpType = js.native
+  var `type`: DpType
   
   /**
     * type: 'value' only
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
 }
 object DpSchema {
   
@@ -130,7 +128,7 @@ object DpSchema {
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)

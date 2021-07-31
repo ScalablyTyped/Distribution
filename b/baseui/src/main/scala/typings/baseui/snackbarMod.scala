@@ -9,10 +9,13 @@ import typings.std.HTMLButtonElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snackbarMod {
+  
+  @JSImport("baseui/snackbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("baseui/snackbar", "DURATION")
   @js.native
@@ -30,44 +33,42 @@ object snackbarMod {
   @js.native
   val SnackbarProvider: FC[SnackbarProviderPropsT] = js.native
   
-  @JSImport("baseui/snackbar", "useSnackbar")
-  @js.native
-  def useSnackbar(): Dequeue = js.native
+  @scala.inline
+  def useSnackbar(): Dequeue = ^.asInstanceOf[js.Dynamic].applyDynamic("useSnackbar")().asInstanceOf[Dequeue]
   
   type DurationT = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DURATION.infinite */ js.Any
   
   type PlacementT = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PLACEMENT.topLeft */ js.Any
   
-  @js.native
   trait SnackbarElementOverridesT extends StObject {
     
     var ActionButtonContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Content: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Message: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Spinner: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var StartEnhancerContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var WrapActionButtonContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object SnackbarElementOverridesT {
     
@@ -138,22 +139,23 @@ object snackbarMod {
     }
   }
   
-  @js.native
   trait SnackbarElementPropsT extends StObject {
     
-    var actionMessage: js.UndefOr[String] = js.native
+    var actionMessage: js.UndefOr[String] = js.undefined
     
-    var actionOnClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], _]] = js.native
+    var actionOnClick: js.UndefOr[
+        js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], js.Any]
+      ] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var overrides: js.UndefOr[SnackbarElementOverridesT] = js.native
+    var overrides: js.UndefOr[SnackbarElementOverridesT] = js.undefined
     
-    var progress: js.UndefOr[Boolean] = js.native
+    var progress: js.UndefOr[Boolean] = js.undefined
     
-    var startEnhancer: js.UndefOr[FC[Size]] = js.native
+    var startEnhancer: js.UndefOr[FC[Size]] = js.undefined
   }
   object SnackbarElementPropsT {
     
@@ -173,7 +175,7 @@ object snackbarMod {
       def setActionMessageUndefined: Self = StObject.set(x, "actionMessage", js.undefined)
       
       @scala.inline
-      def setActionOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => _): Self = StObject.set(x, "actionOnClick", js.Any.fromFunction1(value))
+      def setActionOnClick(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "actionOnClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setActionOnClickUndefined: Self = StObject.set(x, "actionOnClick", js.undefined)
@@ -207,16 +209,15 @@ object snackbarMod {
     }
   }
   
-  @js.native
   trait SnackbarProviderPropsT extends StObject {
     
-    var children: js.UndefOr[Node] = js.native
+    var children: js.UndefOr[Node] = js.undefined
     
-    var defaultDuration: js.UndefOr[DurationT] = js.native
+    var defaultDuration: js.UndefOr[DurationT] = js.undefined
     
-    var overrides: js.UndefOr[typings.baseui.anon.SnackbarElementOverridesT] = js.native
+    var overrides: js.UndefOr[typings.baseui.anon.SnackbarElementOverridesT] = js.undefined
     
-    var placement: js.UndefOr[PlacementT] = js.native
+    var placement: js.UndefOr[PlacementT] = js.undefined
   }
   object SnackbarProviderPropsT {
     

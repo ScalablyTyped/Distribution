@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Links extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var fields: scala.Double = js.native
+  var fields: scala.Double
   
-  var links: scala.Double = js.native
+  var links: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var relations: scala.Double = js.native
+  var relations: scala.Double
 }
 object Links {
   

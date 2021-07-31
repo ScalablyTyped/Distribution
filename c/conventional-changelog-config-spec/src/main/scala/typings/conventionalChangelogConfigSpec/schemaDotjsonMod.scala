@@ -5,7 +5,6 @@ import typings.conventionalChangelogConfigSpec.schemaDotjsonMod.Config.Type
 import typings.jsonSchema.mod.JSONSchema7
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaDotjsonMod extends Shortcut {
@@ -18,7 +17,6 @@ object schemaDotjsonMod extends Shortcut {
     * Describes the configuration options supported by conventional-config for
     * upstream tooling.
     */
-  @js.native
   trait Config extends StObject {
     
     /**
@@ -27,7 +25,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}"
       */
-    var commitUrlFormat: js.UndefOr[String] = js.native
+    var commitUrlFormat: js.UndefOr[String] = js.undefined
     
     /**
       * A URL representing the comparison between two git SHAs.
@@ -35,7 +33,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}"
       */
-    var compareUrlFormat: js.UndefOr[String] = js.native
+    var compareUrlFormat: js.UndefOr[String] = js.undefined
     
     /**
       * A string to be used as the main header section of the CHANGELOG.
@@ -43,7 +41,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "# Changelog\n\n"
       */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /**
       * A URL representing the issue format (allowing a different URL format to be
@@ -52,7 +50,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "{{host}}/{{owner}}/{{repository}}/issues/{{id}}"
       */
-    var issueUrlFormat: js.UndefOr[String] = js.native
+    var issueUrlFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean indicating whether or not the action being run (generating CHANGELOG,
@@ -63,7 +61,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * false
       */
-    var preMajor: js.UndefOr[Boolean] = js.native
+    var preMajor: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string to be used to format the auto-generated release commit message.
@@ -71,7 +69,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "chore(release): {{currentTag}}"
       */
-    var releaseCommitMessageFormat: js.UndefOr[String] = js.native
+    var releaseCommitMessageFormat: js.UndefOr[String] = js.undefined
     
     /**
       * An array of `type` objects representing the explicitly supported commit
@@ -89,7 +87,7 @@ object schemaDotjsonMod extends Shortcut {
       *     { "type": "test", "hidden": true }
       * ]
       */
-    var types: js.UndefOr[js.Array[Type]] = js.native
+    var types: js.UndefOr[js.Array[Type]] = js.undefined
     
     /**
       * A URL representing the a user's profile URL on GitHub, Gitlab, etc. This URL
@@ -99,7 +97,7 @@ object schemaDotjsonMod extends Shortcut {
       * @default
       * "{{host}}/{{user}}"
       */
-    var userUrlFormat: js.UndefOr[String] = js.native
+    var userUrlFormat: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -177,23 +175,22 @@ object schemaDotjsonMod extends Shortcut {
       /**
         * An object that describes a commit type's settings in the CHANGELOG.
         */
-      @js.native
       trait Base extends StObject {
         
         /**
           * Set to `true` to hide matched commit types in the CHANGELOG.
           */
-        var hidden: js.UndefOr[Boolean] = js.native
+        var hidden: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The section where the matched commit type will display in the CHANGELOG.
           */
-        var section: js.UndefOr[String] = js.native
+        var section: js.UndefOr[String] = js.undefined
         
         /**
           * A string used to match <type>s used in the Conventional Commits convention.
           */
-        var `type`: String = js.native
+        var `type`: String
       }
       object Base {
         
@@ -227,22 +224,16 @@ object schemaDotjsonMod extends Shortcut {
       /**
         * An object that describes a commit type's settings in the CHANGELOG.
         */
-      @js.native
       trait WithHidden
-        extends Base
+        extends StObject
+           with Base
            with Type {
         
         /**
           * Set to `true` to hide matched commit types in the CHANGELOG.
           */
         @JSName("hidden")
-        var hidden_WithHidden: Boolean = js.native
-      }
-      @scala.inline
-      def WithHidden(hidden: Boolean, `type`: String): typings.conventionalChangelogConfigSpec.schemaDotjsonMod.Config.Type.WithHidden = {
-        val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.conventionalChangelogConfigSpec.schemaDotjsonMod.Config.Type.WithHidden]
+        var hidden_WithHidden: Boolean
       }
       object WithHidden {
         
@@ -264,22 +255,16 @@ object schemaDotjsonMod extends Shortcut {
       /**
         * An object that describes a commit type's settings in the CHANGELOG.
         */
-      @js.native
       trait WithSection
-        extends Base
+        extends StObject
+           with Base
            with Type {
         
         /**
           * The section where the matched commit type will display in the CHANGELOG.
           */
         @JSName("section")
-        var section_WithSection: String = js.native
-      }
-      @scala.inline
-      def WithSection(section: String, `type`: String): typings.conventionalChangelogConfigSpec.schemaDotjsonMod.Config.Type.WithSection = {
-        val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-        __obj.asInstanceOf[typings.conventionalChangelogConfigSpec.schemaDotjsonMod.Config.Type.WithSection]
+        var section_WithSection: String
       }
       object WithSection {
         

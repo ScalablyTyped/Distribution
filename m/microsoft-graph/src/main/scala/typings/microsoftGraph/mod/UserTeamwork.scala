@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserTeamwork extends Entity {
+trait UserTeamwork
+  extends StObject
+     with Entity {
   
   // The apps installed in the personal scope of this user.
-  var installedApps: js.UndefOr[NullableOption[js.Array[UserScopeTeamsAppInstallation]]] = js.native
+  var installedApps: js.UndefOr[NullableOption[js.Array[UserScopeTeamsAppInstallation]]] = js.undefined
 }
 object UserTeamwork {
   

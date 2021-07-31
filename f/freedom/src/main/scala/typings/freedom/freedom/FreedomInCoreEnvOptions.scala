@@ -2,16 +2,14 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreedomInCoreEnvOptions extends StObject {
   
-  var debug: js.UndefOr[String] = js.native
+  var debug: js.UndefOr[String] = js.undefined
   
   // debug level
-  var logger: js.UndefOr[String] = js.native
+  var logger: js.UndefOr[String] = js.undefined
 }
 object FreedomInCoreEnvOptions {
   

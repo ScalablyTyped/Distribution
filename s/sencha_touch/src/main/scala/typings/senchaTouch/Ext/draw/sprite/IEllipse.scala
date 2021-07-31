@@ -2,33 +2,33 @@ package typings.senchaTouch.Ext.draw.sprite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEllipse extends IPath {
+trait IEllipse
+  extends StObject
+     with IPath {
   
   /** [Config Option] (Number) */
-  var axisRotation: js.UndefOr[Double] = js.native
+  var axisRotation: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var rx: js.UndefOr[Double] = js.native
+  var rx: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var ry: js.UndefOr[Double] = js.native
+  var ry: js.UndefOr[Double] = js.undefined
   
   /** [Method] Update the path
     * @param path Object
     * @param attr Object
     */
   @JSName("updatePath")
-  var updatePath_IEllipse: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.native
+  var updatePath_IEllipse: js.UndefOr[js.Function2[/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IEllipse {
   

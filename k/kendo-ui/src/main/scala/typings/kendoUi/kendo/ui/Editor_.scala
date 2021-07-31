@@ -9,11 +9,12 @@ import typings.std.Range
 import typings.std.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Editor_ extends Widget {
+trait Editor_
+  extends StObject
+     with Widget {
   
   var body: Element = js.native
   
@@ -37,7 +38,7 @@ trait Editor_ extends Widget {
   
   def refresh(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def selectRange(range: Range): Unit = js.native
   

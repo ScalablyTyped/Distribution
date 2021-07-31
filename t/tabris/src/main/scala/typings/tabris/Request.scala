@@ -18,6 +18,7 @@ import typings.tabris.tabrisStrings.download
 import typings.tabris.tabrisStrings.embed
 import typings.tabris.tabrisStrings.eventsource
 import typings.tabris.tabrisStrings.favicon
+import typings.tabris.tabrisStrings.fetch
 import typings.tabris.tabrisStrings.font
 import typings.tabris.tabrisStrings.form
 import typings.tabris.tabrisStrings.frame
@@ -44,35 +45,42 @@ import typings.tabris.tabrisStrings.video
 import typings.tabris.tabrisStrings.worker
 import typings.tabris.tabrisStrings.xmlhttprequest
 import typings.tabris.tabrisStrings.xslt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Request
 /**
   * Represents an HTTP Request as used by `fetch()`.
   */
-@JSGlobal("Request")
 @js.native
-class Request protected () extends js.Object {
-  def this(input: String) = this()
-  def this(input: Request) = this()
-  def this(input: String, init: RequestInit) = this()
-  def this(input: Request, init: RequestInit) = this()
-  val bodyUsed: Boolean = js.native
-  val cache: default | `force-cache` | `no-cache` | `no-store` | `only-if-cached` | reload = js.native
-  val context: audio | beacon | cspreport | download | embed | eventsource | favicon | typings.tabris.tabrisStrings.fetch | font | form | frame | hyperlink | iframe | image | imageset | `import` | internal | location | manifest | `object` | ping | plugin | prefetch | script | serviceworker | sharedworker | style | subresource | track | video | worker | xmlhttprequest | xslt = js.native
-  val credentials: include | omit | `same-origin` = js.native
-  val headers: Headers = js.native
-  val method: String = js.native
-  val mode: cors | `no-cors` | `same-origin` = js.native
-  val referrer: String = js.native
-  val url: String = js.native
+trait Request extends StObject {
+  
   def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+  
   def blob(): js.Promise[Blob] = js.native
-  def json(): js.Promise[_] = js.native
+  
+  val bodyUsed: Boolean = js.native
+  
+  val cache: default | `force-cache` | `no-cache` | `no-store` | `only-if-cached` | reload = js.native
+  
+  val context: audio | beacon | cspreport | download | embed | eventsource | favicon | fetch | font | form | frame | hyperlink | iframe | image | imageset | `import` | internal | location | manifest | `object` | ping | plugin | prefetch | script | serviceworker | sharedworker | style | subresource | track | video | worker | xmlhttprequest | xslt = js.native
+  
+  val credentials: include | omit | `same-origin` = js.native
+  
+  val headers: Headers = js.native
+  
+  def json(): js.Promise[js.Any] = js.native
   @JSName("json")
   def json_T[T](): js.Promise[T] = js.native
+  
+  val method: String = js.native
+  
+  val mode: cors | `no-cors` | `same-origin` = js.native
+  
+  val referrer: String = js.native
+  
   def text(): js.Promise[String] = js.native
+  
+  val url: String = js.native
 }
-

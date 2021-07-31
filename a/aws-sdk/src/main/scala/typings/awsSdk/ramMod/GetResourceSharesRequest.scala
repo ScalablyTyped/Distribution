@@ -2,46 +2,44 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceSharesRequest extends StObject {
   
   /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The name of the resource share.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The type of owner.
     */
-  var resourceOwner: ResourceOwner = js.native
+  var resourceOwner: ResourceOwner
   
   /**
     * The Amazon Resource Names (ARN) of the resource shares.
     */
-  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.native
+  var resourceShareArns: js.UndefOr[ResourceShareArnList] = js.undefined
   
   /**
     * The status of the resource share.
     */
-  var resourceShareStatus: js.UndefOr[ResourceShareStatus] = js.native
+  var resourceShareStatus: js.UndefOr[ResourceShareStatus] = js.undefined
   
   /**
     * One or more tag filters.
     */
-  var tagFilters: js.UndefOr[TagFilters] = js.native
+  var tagFilters: js.UndefOr[TagFilters] = js.undefined
 }
 object GetResourceSharesRequest {
   

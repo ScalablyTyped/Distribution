@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing Entity query response information. */
-@js.native
 trait QueryEntitiesResponseItem extends StObject {
   
   /** List of different evidentiary items to support the result. */
-  var evidence: js.UndefOr[js.Array[QueryEvidence]] = js.native
+  var evidence: js.UndefOr[js.Array[QueryEvidence]] = js.undefined
   
   /** Entity text content. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The type of the result entity. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryEntitiesResponseItem {
   

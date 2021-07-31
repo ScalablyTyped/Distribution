@@ -2,19 +2,17 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodesOfConductGetConductCodeResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var key: String = js.native
+  var key: String
   
-  var name: String = js.native
+  var name: String
   
-  var url: String = js.native
+  var url: String
 }
 object CodesOfConductGetConductCodeResponseData {
   

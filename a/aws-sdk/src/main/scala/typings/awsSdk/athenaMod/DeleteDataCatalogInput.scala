@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDataCatalogInput extends StObject {
   
   /**
     * The name of the data catalog to delete.
     */
-  var Name: CatalogNameString = js.native
+  var Name: CatalogNameString
 }
 object DeleteDataCatalogInput {
   

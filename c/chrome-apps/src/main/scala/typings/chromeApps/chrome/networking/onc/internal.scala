@@ -8,7 +8,6 @@ import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.chromeApps.chromeAppsStrings.unmanaged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,43 +17,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object internal {
   
-  @js.native
   trait NetworkConfigBase[M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */] extends StObject {
     
     /** For cellular networks, cellular network properties. */
-    var Cellular: js.UndefOr[CellularProperties[M] | CellularBase] = js.native
+    var Cellular: js.UndefOr[CellularProperties[M] | CellularBase] = js.undefined
     
     /** For Ethernet networks, the Ethernet network properties. */
-    var Ethernet: js.UndefOr[EthernetProperties[M] | Authentication] = js.native
+    var Ethernet: js.UndefOr[EthernetProperties[M] | Authentication] = js.undefined
     
     /** The network GUID. */
-    var GUID: js.UndefOr[String] = js.native
+    var GUID: js.UndefOr[String] = js.undefined
     
     /** The network's IP address configuration type. */
-    var IPAddressConfigType: js.UndefOr[IPConfigType | ManagedIPConfigType] = js.native
+    var IPAddressConfigType: js.UndefOr[IPConfigType | ManagedIPConfigType] = js.undefined
     
     /** A user friendly network name. */
-    var Name: js.UndefOr[String | ManagedDOMString] = js.native
+    var Name: js.UndefOr[String | ManagedDOMString] = js.undefined
     
     /** The IP configuration type for the name servers used by the network. */
-    var NameServersConfigType: js.UndefOr[IPConfigType | ManagedIPConfigType] = js.native
+    var NameServersConfigType: js.UndefOr[IPConfigType | ManagedIPConfigType] = js.undefined
     
     /** The network priority. */
-    var Priority: js.UndefOr[integer | ManagedLong] = js.native
+    var Priority: js.UndefOr[integer | ManagedLong] = js.undefined
     
     /** The network type. */
-    var Type: js.UndefOr[NetworkType] = js.native
+    var Type: js.UndefOr[NetworkType] = js.undefined
     
     /** For VPN networks, the network VPN properties. */
-    var VPN: js.UndefOr[(VPNProperties[M, Boolean | ManagedBoolean, String | ManagedDOMString]) | Type] = js.native
+    var VPN: js.UndefOr[(VPNProperties[M, Boolean | ManagedBoolean, String | ManagedDOMString]) | Type] = js.undefined
     
     /** For WiFi networks, the network WiFi properties. */
     var WiFi: js.UndefOr[
         (WiFiProperties[M, OF, Boolean | ManagedBoolean, String | ManagedDOMString, integer | ManagedLong]) | (WiFiPropertiesBase[unmanaged, String | ManagedDOMString])
-      ] = js.native
+      ] = js.undefined
     
     /** For WiMAX networks, the network WiMAX properties. */
-    var WiMAX: js.UndefOr[(WiMAXProperties[M, Boolean | ManagedBoolean]) | SignalStrength] = js.native
+    var WiMAX: js.UndefOr[(WiMAXProperties[M, Boolean | ManagedBoolean]) | SignalStrength] = js.undefined
   }
   object NetworkConfigBase {
     
@@ -65,7 +63,7 @@ object internal {
     }
     
     @scala.inline
-    implicit class NetworkConfigBaseMutableBuilder[Self <: NetworkConfigBase[_, _, _], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */] (val x: Self with (NetworkConfigBase[M, IF, OF])) extends AnyVal {
+    implicit class NetworkConfigBaseMutableBuilder[Self <: NetworkConfigBase[?, ?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */, OF /* <: ObjectFunction */] (val x: Self & (NetworkConfigBase[M, IF, OF])) extends AnyVal {
       
       @scala.inline
       def setCellular(value: CellularProperties[M] | CellularBase): Self = StObject.set(x, "Cellular", value.asInstanceOf[js.Any])

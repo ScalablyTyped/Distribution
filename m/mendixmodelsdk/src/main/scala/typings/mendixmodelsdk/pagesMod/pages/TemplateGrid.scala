@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.reportsMod.reports.ReportPane
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,8 @@ object TemplateGrid {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.create")
-  @js.native
-  def create(model: IModel): TemplateGrid = js.native
+  @scala.inline
+  def create(model: IModel): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object TemplateGrid {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): TemplateGrid = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -78,9 +75,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TemplateGrid = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -91,9 +87,8 @@ object TemplateGrid {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): TemplateGrid = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -104,9 +99,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): TemplateGrid = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -117,9 +111,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): TemplateGrid = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -130,9 +123,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): TemplateGrid = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -143,9 +135,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): TemplateGrid = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -156,9 +147,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): TemplateGrid = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -169,9 +159,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): TemplateGrid = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -182,9 +171,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): TemplateGrid = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -195,9 +183,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): TemplateGrid = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -208,9 +195,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): TemplateGrid = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -221,9 +207,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): TemplateGrid = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -234,9 +219,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): TemplateGrid = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -247,9 +231,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -260,9 +243,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -273,9 +255,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -286,9 +267,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -299,9 +279,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -312,9 +291,8 @@ object TemplateGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): TemplateGrid = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -325,9 +303,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TemplateGrid = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -338,9 +315,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TemplateGrid = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -351,9 +327,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): TemplateGrid = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -364,9 +339,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): TemplateGrid = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -377,9 +351,8 @@ object TemplateGrid {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TemplateGrid = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -390,9 +363,8 @@ object TemplateGrid {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TemplateGrid = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -403,9 +375,8 @@ object TemplateGrid {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TemplateGrid = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -416,9 +387,8 @@ object TemplateGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TemplateGrid = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -429,9 +399,8 @@ object TemplateGrid {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TemplateGrid = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -442,9 +411,8 @@ object TemplateGrid {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): TemplateGrid = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -455,9 +423,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): TemplateGrid = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -468,9 +435,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TemplateGrid = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -481,9 +447,8 @@ object TemplateGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInReportPaneUnderParameterWidget")
-  @js.native
-  def createInReportPaneUnderParameterWidget(container: ReportPane): TemplateGrid = js.native
+  @scala.inline
+  def createInReportPaneUnderParameterWidget(container: ReportPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -494,9 +459,8 @@ object TemplateGrid {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInReportPaneUnderReportWidget")
-  @js.native
-  def createInReportPaneUnderReportWidget(container: ReportPane): TemplateGrid = js.native
+  @scala.inline
+  def createInReportPaneUnderReportWidget(container: ReportPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -507,9 +471,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TemplateGrid = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -520,9 +483,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TemplateGrid = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -533,9 +495,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): TemplateGrid = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -546,9 +507,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): TemplateGrid = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -559,9 +519,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): TemplateGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -572,9 +531,8 @@ object TemplateGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TemplateGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -585,9 +543,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): TemplateGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -598,9 +555,8 @@ object TemplateGrid {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TemplateGrid = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -611,9 +567,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): TemplateGrid = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -624,9 +579,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): TemplateGrid = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -637,9 +591,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): TemplateGrid = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -650,9 +603,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): TemplateGrid = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -663,9 +615,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TemplateGrid = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -676,9 +627,8 @@ object TemplateGrid {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TemplateGrid = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -689,9 +639,8 @@ object TemplateGrid {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TemplateGrid = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -702,9 +651,8 @@ object TemplateGrid {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TemplateGrid = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /**
     * Creates and returns a new TemplateGrid instance in the SDK and on the server.
@@ -715,9 +663,8 @@ object TemplateGrid {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): TemplateGrid = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): TemplateGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[TemplateGrid]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.TemplateGrid.structureTypeName")

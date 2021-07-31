@@ -2,96 +2,94 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBatchPredictionOutput extends StObject {
   
   /**
     * The ID of the DataSource that was used to create the BatchPrediction. 
     */
-  var BatchPredictionDataSourceId: js.UndefOr[EntityId] = js.native
+  var BatchPredictionDataSourceId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * An ID assigned to the BatchPrediction at creation. This value should be identical to the value of the BatchPredictionID in the request.
     */
-  var BatchPredictionId: js.UndefOr[EntityId] = js.native
+  var BatchPredictionId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The approximate CPU time in milliseconds that Amazon Machine Learning spent processing the BatchPrediction, normalized and scaled on computation resources. ComputeTime is only available if the BatchPrediction is in the COMPLETED state.
     */
-  var ComputeTime: js.UndefOr[LongType] = js.native
+  var ComputeTime: js.UndefOr[LongType] = js.undefined
   
   /**
     * The time when the BatchPrediction was created. The time is expressed in epoch time.
     */
-  var CreatedAt: js.UndefOr[EpochTime] = js.native
+  var CreatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The AWS user account that invoked the BatchPrediction. The account type can be either an AWS root account or an AWS Identity and Access Management (IAM) user account.
     */
-  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.native
+  var CreatedByIamUser: js.UndefOr[AwsUserArn] = js.undefined
   
   /**
     * The epoch time when Amazon Machine Learning marked the BatchPrediction as COMPLETED or FAILED. FinishedAt is only available when the BatchPrediction is in the COMPLETED or FAILED state.
     */
-  var FinishedAt: js.UndefOr[EpochTime] = js.native
+  var FinishedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The location of the data file or directory in Amazon Simple Storage Service (Amazon S3).
     */
-  var InputDataLocationS3: js.UndefOr[S3Url] = js.native
+  var InputDataLocationS3: js.UndefOr[S3Url] = js.undefined
   
   /**
     * The number of invalid records that Amazon Machine Learning saw while processing the BatchPrediction.
     */
-  var InvalidRecordCount: js.UndefOr[LongType] = js.native
+  var InvalidRecordCount: js.UndefOr[LongType] = js.undefined
   
   /**
     * The time of the most recent edit to BatchPrediction. The time is expressed in epoch time.
     */
-  var LastUpdatedAt: js.UndefOr[EpochTime] = js.native
+  var LastUpdatedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * A link to the file that contains logs of the CreateBatchPrediction operation.
     */
-  var LogUri: js.UndefOr[PresignedS3Url] = js.native
+  var LogUri: js.UndefOr[PresignedS3Url] = js.undefined
   
   /**
     * The ID of the MLModel that generated predictions for the BatchPrediction request.
     */
-  var MLModelId: js.UndefOr[EntityId] = js.native
+  var MLModelId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * A description of the most recent details about processing the batch prediction request.
     */
-  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.machinelearningMod.Message] = js.undefined
   
   /**
     * A user-supplied name or description of the BatchPrediction.
     */
-  var Name: js.UndefOr[EntityName] = js.native
+  var Name: js.UndefOr[EntityName] = js.undefined
   
   /**
     * The location of an Amazon S3 bucket or directory to receive the operation results.
     */
-  var OutputUri: js.UndefOr[S3Url] = js.native
+  var OutputUri: js.UndefOr[S3Url] = js.undefined
   
   /**
     * The epoch time when Amazon Machine Learning marked the BatchPrediction as INPROGRESS. StartedAt isn't available if the BatchPrediction is in the PENDING state.
     */
-  var StartedAt: js.UndefOr[EpochTime] = js.native
+  var StartedAt: js.UndefOr[EpochTime] = js.undefined
   
   /**
     * The status of the BatchPrediction, which can be one of the following values:   PENDING - Amazon Machine Learning (Amazon ML) submitted a request to generate batch predictions.  INPROGRESS - The batch predictions are in progress.  FAILED - The request to perform a batch prediction did not run to completion. It is not usable.  COMPLETED - The batch prediction process completed successfully.  DELETED - The BatchPrediction is marked as deleted. It is not usable. 
     */
-  var Status: js.UndefOr[EntityStatus] = js.native
+  var Status: js.UndefOr[EntityStatus] = js.undefined
   
   /**
     * The number of total records that Amazon Machine Learning saw while processing the BatchPrediction.
     */
-  var TotalRecordCount: js.UndefOr[LongType] = js.native
+  var TotalRecordCount: js.UndefOr[LongType] = js.undefined
 }
 object GetBatchPredictionOutput {
   

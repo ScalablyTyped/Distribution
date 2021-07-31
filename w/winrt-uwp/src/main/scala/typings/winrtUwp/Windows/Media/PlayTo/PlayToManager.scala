@@ -7,14 +7,13 @@ import typings.winrtUwp.winrtUwpStrings.sourcerequested
 import typings.winrtUwp.winrtUwpStrings.sourceselected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to Play To capabilities. */
 @js.native
 trait PlayToManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_sourcerequested(
     `type`: sourcerequested,
@@ -27,18 +26,18 @@ trait PlayToManager extends StObject {
   var defaultSourceSelection: Boolean = js.native
   
   /** Occurs when a user requests media to stream to a Play To target device. */
-  def onsourcerequested(ev: PlayToSourceRequestedEventArgs with WinRTEvent[PlayToManager]): Unit = js.native
+  def onsourcerequested(ev: PlayToSourceRequestedEventArgs & WinRTEvent[PlayToManager]): Unit = js.native
   /** Occurs when a user requests media to stream to a Play To target device. */
   @JSName("onsourcerequested")
   var onsourcerequested_Original: TypedEventHandler[PlayToManager, PlayToSourceRequestedEventArgs] = js.native
   
   /** Occurs when a Play To source element has been selected. */
-  def onsourceselected(ev: PlayToSourceSelectedEventArgs with WinRTEvent[PlayToManager]): Unit = js.native
+  def onsourceselected(ev: PlayToSourceSelectedEventArgs & WinRTEvent[PlayToManager]): Unit = js.native
   /** Occurs when a Play To source element has been selected. */
   @JSName("onsourceselected")
   var onsourceselected_Original: TypedEventHandler[PlayToManager, PlayToSourceSelectedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_sourcerequested(
     `type`: sourcerequested,

@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementNotStatementStatementXssMatchStatement extends StObject {
   
   /**
     * The part of a web request that you want AWS WAF to inspect. See Field to Match below for details.
     */
-  var fieldToMatch: js.UndefOr[Input[WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatch]] = js.native
+  var fieldToMatch: js.UndefOr[Input[WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatch]] = js.undefined
   
   /**
     * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. See Text Transformation below for details.
@@ -21,7 +19,7 @@ trait WebAclRuleStatementNotStatementStatementXssMatchStatement extends StObject
     js.Array[
       Input[WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformation]
     ]
-  ] = js.native
+  ]
 }
 object WebAclRuleStatementNotStatementStatementXssMatchStatement {
   

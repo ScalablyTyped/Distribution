@@ -12,7 +12,7 @@ v11.x compatible interface preset for otplib
 | Keywords           | otplib-preset, node |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 580957 |
+| # downloads        | 1467044 |
 | # stars            | 0 |
 
 ## Links

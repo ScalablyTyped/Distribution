@@ -4,7 +4,6 @@ import typings.reactImageMagnifiers.mod.MouseActivation
 import typings.reactImageMagnifiers.mod.TouchActivation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactImageMagnifiersStrings {
@@ -15,17 +14,23 @@ object reactImageMagnifiersStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait click extends MouseActivation
+  sealed trait click
+    extends StObject
+       with MouseActivation
   @scala.inline
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait doubleClick extends MouseActivation
+  sealed trait doubleClick
+    extends StObject
+       with MouseActivation
   @scala.inline
   def doubleClick: doubleClick = "doubleClick".asInstanceOf[doubleClick]
   
   @js.native
-  sealed trait doubleTap extends TouchActivation
+  sealed trait doubleTap
+    extends StObject
+       with TouchActivation
   @scala.inline
   def doubleTap: doubleTap = "doubleTap".asInstanceOf[doubleTap]
   
@@ -35,7 +40,9 @@ object reactImageMagnifiersStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait longTouch extends TouchActivation
+  sealed trait longTouch
+    extends StObject
+       with TouchActivation
   @scala.inline
   def longTouch: longTouch = "longTouch".asInstanceOf[longTouch]
   
@@ -45,7 +52,9 @@ object reactImageMagnifiersStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait tap extends TouchActivation
+  sealed trait tap
+    extends StObject
+       with TouchActivation
   @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
   

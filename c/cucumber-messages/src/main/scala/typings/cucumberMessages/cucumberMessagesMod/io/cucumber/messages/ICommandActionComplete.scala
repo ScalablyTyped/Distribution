@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandActionComplete. */
-@js.native
 trait ICommandActionComplete extends StObject {
   
   /** CommandActionComplete completedId */
-  var completedId: js.UndefOr[String | Null] = js.native
+  var completedId: js.UndefOr[String | Null] = js.undefined
   
   /** CommandActionComplete snippet */
-  var snippet: js.UndefOr[String | Null] = js.native
+  var snippet: js.UndefOr[String | Null] = js.undefined
   
   /** CommandActionComplete testResult */
-  var testResult: js.UndefOr[ITestResult | Null] = js.native
+  var testResult: js.UndefOr[ITestResult | Null] = js.undefined
 }
 object ICommandActionComplete {
   

@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrackEventInit extends EventInit {
+trait TrackEventInit
+  extends StObject
+     with EventInit {
   
-  var track: js.UndefOr[TextTrack | Null] = js.native
+  var track: js.UndefOr[TextTrack | Null] = js.undefined
 }
 object TrackEventInit {
   

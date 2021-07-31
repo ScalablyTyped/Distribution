@@ -3,7 +3,6 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.LocationValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Bounds")
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param coords 由西南角，东北角经纬度组成的数组，分别是[西南角经度， 西南角纬度，东北角经度，东北角纬度]
   */
 class Bounds ()
-  extends typings.amapJsApi.AMap.Bounds {
+  extends StObject
+     with typings.amapJsApi.AMap.Bounds {
   def this(coords: js.Tuple4[Double, Double, Double, Double]) = this()
   /**
     * 地物对象的经纬度矩形范围。
@@ -29,4 +29,41 @@ class Bounds ()
     * @param northEastLat 东北角纬度
     */
   def this(southWestLng: Double, southWestLat: Double, northEastLng: Double, northEastLat: Double) = this()
+  
+  /**
+    * 指定点坐标是否在矩形范围内
+    * @param point 制定坐标
+    */
+  /* CompleteClass */
+  override def contains(point: LocationValue): Boolean = js.native
+  
+  /**
+    * 获取当前Bounds的中心点经纬度坐标
+    */
+  /* CompleteClass */
+  override def getCenter(): typings.amapJsApi.AMap.LngLat = js.native
+  
+  /**
+    * 获取东北角坐标
+    */
+  /* CompleteClass */
+  override def getNorthEast(): typings.amapJsApi.AMap.LngLat = js.native
+  
+  /**
+    * 获取西北角坐标
+    */
+  /* CompleteClass */
+  override def getNorthWest(): typings.amapJsApi.AMap.LngLat = js.native
+  
+  /**
+    * 获取东南角坐标
+    */
+  /* CompleteClass */
+  override def getSouthEast(): typings.amapJsApi.AMap.LngLat = js.native
+  
+  /**
+    * 获取西南角坐标
+    */
+  /* CompleteClass */
+  override def getSouthWest(): typings.amapJsApi.AMap.LngLat = js.native
 }

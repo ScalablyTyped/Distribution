@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatchClause
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var body: BlockStatement = js.native
+  var body: BlockStatement
   
-  var param: Pattern | Null = js.native
+  var param: Pattern | Null
   
   @JSName("type")
-  var type_CatchClause: typings.estree.estreeStrings.CatchClause = js.native
+  var type_CatchClause: typings.estree.estreeStrings.CatchClause
 }
 object CatchClause {
   
   @scala.inline
-  def apply(body: BlockStatement, `type`: typings.estree.estreeStrings.CatchClause): CatchClause = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: BlockStatement): CatchClause = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], param = null)
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[CatchClause]
   }
   

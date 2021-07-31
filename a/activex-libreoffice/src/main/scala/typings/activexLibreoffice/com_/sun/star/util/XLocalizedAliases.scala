@@ -6,40 +6,40 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the interface for binding programmatic names to aliases. Aliases can be provided in several locales for the same programmatic name. */
-@js.native
-trait XLocalizedAliases extends XInterface {
+trait XLocalizedAliases
+  extends StObject
+     with XInterface {
   
   /** registers an alias for a programmatic name. */
-  def bindAlias(programmaticName: String, locale: Locale, alias: String): Unit = js.native
+  def bindAlias(programmaticName: String, locale: Locale, alias: String): Unit
   
   /**
     * retrieves a list of all registered aliases for a certain language.
     * @param locale specifies the locale scope.
     * @returns a sequence of registered pair of alias and programmatic name.
     */
-  def listAliases(locale: Locale): SafeArray[AliasProgrammaticPair] = js.native
+  def listAliases(locale: Locale): SafeArray[AliasProgrammaticPair]
   
   /** retrieves a registered programmatic name identified by an alias. */
-  def lookupAlias(locale: Locale, Alias: String): String = js.native
+  def lookupAlias(locale: Locale, Alias: String): String
   
   /** retrieves a given alias for a programmatic name. */
-  def lookupProgrammatic(locale: Locale, programmatic: String): String = js.native
+  def lookupProgrammatic(locale: Locale, programmatic: String): String
   
   /** rebinds all aliases registered to a given {@link URL} to a new one. */
-  def rebindAliases(currentProgrammatic: String, newProgrammatic: String): Unit = js.native
+  def rebindAliases(currentProgrammatic: String, newProgrammatic: String): Unit
   
   /** renames an alias for a programmatic name. */
-  def renameAlias(locale: Locale, oldName: String, aNewName: String): Unit = js.native
+  def renameAlias(locale: Locale, oldName: String, aNewName: String): Unit
   
   /** revokes an alias for a programmatic name. */
-  def unbindAlias(locale: Locale, alias: String): Unit = js.native
+  def unbindAlias(locale: Locale, alias: String): Unit
   
   /** removes all aliases for a programmatic name. */
-  def unbindAliases(programmaticName: String): Unit = js.native
+  def unbindAliases(programmaticName: String): Unit
 }
 object XLocalizedAliases {
   

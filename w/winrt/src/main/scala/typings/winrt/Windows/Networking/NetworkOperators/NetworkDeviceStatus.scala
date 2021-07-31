@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,42 @@ sealed trait NetworkDeviceStatus extends StObject
 object NetworkDeviceStatus extends StObject {
   
   @js.native
-  sealed trait accountNotActivated extends NetworkDeviceStatus
+  sealed trait accountNotActivated
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait badSim extends NetworkDeviceStatus
+  sealed trait badSim
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceBlocked extends NetworkDeviceStatus
+  sealed trait deviceBlocked
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceHardwareFailure extends NetworkDeviceStatus
+  sealed trait deviceHardwareFailure
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceLocked extends NetworkDeviceStatus
+  sealed trait deviceLocked
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceNotReady extends NetworkDeviceStatus
+  sealed trait deviceNotReady
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceReady extends NetworkDeviceStatus
+  sealed trait deviceReady
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait simNotInserted extends NetworkDeviceStatus
+  sealed trait simNotInserted
+    extends StObject
+       with NetworkDeviceStatus
 }

@@ -6,7 +6,6 @@ import typings.openfin.wireMod.NewConnectConfig
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentMod {
@@ -15,34 +14,33 @@ object environmentMod {
   @js.native
   val notImplementedEnvErrorMsg: /* "Not implemented in this environment" */ String = js.native
   
-  @js.native
   trait Environment extends StObject {
     
-    def createChildWindow(options: js.Any): js.Promise[_] = js.native
+    def createChildWindow(options: js.Any): js.Promise[js.Any]
     
-    def getCurrentEntityIdentity(): Identity = js.native
+    def getCurrentEntityIdentity(): Identity
     
-    def getCurrentEntityType(): EntityType = js.native
+    def getCurrentEntityType(): EntityType
     
-    def getNextMessageId(): js.Any = js.native
+    def getNextMessageId(): js.Any
     
-    def getRandomId(): String = js.native
+    def getRandomId(): String
     
-    def getWebWindow(identity: Identity): Window = js.native
+    def getWebWindow(identity: Identity): Window
     
-    def isWindowExists(uuid: String, name: String): Boolean = js.native
+    def isWindowExists(uuid: String, name: String): Boolean
     
-    def raiseEvent(eventName: String, eventArgs: js.Any): Unit = js.native
+    def raiseEvent(eventName: String, eventArgs: js.Any): Unit
     
-    def retrievePort(config: NewConnectConfig): js.Promise[Double] = js.native
+    def retrievePort(config: NewConnectConfig): js.Promise[Double]
     
-    def writeToken(path: String, token: String): js.Promise[String] = js.native
+    def writeToken(path: String, token: String): js.Promise[String]
   }
   object Environment {
     
     @scala.inline
     def apply(
-      createChildWindow: js.Any => js.Promise[_],
+      createChildWindow: js.Any => js.Promise[js.Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
       getNextMessageId: () => js.Any,
@@ -61,7 +59,7 @@ object environmentMod {
     implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCreateChildWindow(value: js.Any => js.Promise[_]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
+      def setCreateChildWindow(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetCurrentEntityIdentity(value: () => Identity): Self = StObject.set(x, "getCurrentEntityIdentity", js.Any.fromFunction0(value))

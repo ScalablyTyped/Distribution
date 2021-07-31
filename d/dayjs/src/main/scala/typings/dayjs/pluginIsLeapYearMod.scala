@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.mod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginIsLeapYearMod extends Shortcut {
@@ -21,10 +20,9 @@ object pluginIsLeapYearMod extends Shortcut {
   /* augmented module */
   object dayjsAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def isLeapYear(): Boolean = js.native
+      def isLeapYear(): Boolean
     }
     object Dayjs {
       

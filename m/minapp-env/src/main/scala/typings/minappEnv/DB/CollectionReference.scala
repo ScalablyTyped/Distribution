@@ -5,11 +5,12 @@ import typings.minappEnv.Promise
 import typings.minappEnv.anon.RQIAddDocumentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionReference extends Query {
+trait CollectionReference
+  extends StObject
+     with Query {
   
   // add(options: IAddDocumentOptions): Promise<IAddResult> | void
   def add(options: OQ[IAddDocumentOptions]): Unit = js.native

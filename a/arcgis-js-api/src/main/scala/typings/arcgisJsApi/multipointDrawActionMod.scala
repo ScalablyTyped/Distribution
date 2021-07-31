@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.MultipointDrawActionConstructor
 import typings.arcgisJsApi.esri.MultipointDrawActionProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multipointDrawActionMod extends Shortcut {
   
   @JSImport("esri/views/draw/MultipointDrawAction", JSImport.Namespace)
   @js.native
-  val ^ : MultipointDrawActionConstructor = js.native
+  val ^ : js.Object & MultipointDrawActionConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/draw/MultipointDrawAction", JSImport.Namespace)
@@ -23,12 +22,14 @@ object multipointDrawActionMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-MultipointDrawAction.html)
     */
-  class Class () extends MultipointDrawAction {
+  class Class ()
+    extends StObject
+       with MultipointDrawAction {
     def this(properties: MultipointDrawActionProperties) = this()
   }
   
-  type _To = MultipointDrawActionConstructor
+  type _To = js.Object & MultipointDrawActionConstructor
   
   /* This means you don't have to write `^`, but can instead just say `multipointDrawActionMod.foo` */
-  override def _to: MultipointDrawActionConstructor = ^
+  override def _to: js.Object & MultipointDrawActionConstructor = ^
 }

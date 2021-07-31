@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,7 @@ trait ASPxClientDashboardItemData extends StObject {
     * Creates a tuple based on the specified axes names and corresponding values. An ASPxClientDashboardItemDataAxisPointTuple object representing an axis point tuple.
     * @param values An array of name-value pairs containing the axis name and corresponding values.
     */
-  def CreateTuple(values: js.Array[_ | ASPxClientDashboardItemDataAxisPoint]): ASPxClientDashboardItemDataAxisPointTuple = js.native
+  def CreateTuple(values: js.Array[ASPxClientDashboardItemDataAxisPoint | js.Any]): ASPxClientDashboardItemDataAxisPointTuple = js.native
   
   /**
     * Returns the specified data axis. A ASPxClientDashboardItemDataAxis object that contains data points corresponding to the specified value hierarchy.

@@ -11,8 +11,8 @@ Check if a path is the current working directory
 | Full name          | is-path-cwd |
 | Keywords           | path, cwd, pwd, check, filepath, file, folder |
 | # releases         | 3 |
-| # dependents       | 47 |
-| # downloads        | 458353862 |
+| # dependents       | 70 |
+| # downloads        | 517443161 |
 | # stars            | 2 |
 
 ## Links

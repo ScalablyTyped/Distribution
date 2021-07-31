@@ -2,15 +2,13 @@ package typings.node.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeTracing {
   
-  @js.native
   trait DataCollectedEventDataType extends StObject {
     
-    var value: js.Array[js.Object] = js.native
+    var value: js.Array[js.Object]
   }
   object DataCollectedEventDataType {
     
@@ -31,13 +29,12 @@ object NodeTracing {
     }
   }
   
-  @js.native
   trait GetCategoriesReturnType extends StObject {
     
     /**
       * A list of supported tracing categories.
       */
-    var categories: js.Array[String] = js.native
+    var categories: js.Array[String]
   }
   object GetCategoriesReturnType {
     
@@ -58,10 +55,9 @@ object NodeTracing {
     }
   }
   
-  @js.native
   trait StartParameterType extends StObject {
     
-    var traceConfig: TraceConfig = js.native
+    var traceConfig: TraceConfig
   }
   object StartParameterType {
     
@@ -79,18 +75,17 @@ object NodeTracing {
     }
   }
   
-  @js.native
   trait TraceConfig extends StObject {
     
     /**
       * Included category filters.
       */
-    var includedCategories: js.Array[String] = js.native
+    var includedCategories: js.Array[String]
     
     /**
       * Controls how the trace buffer stores data.
       */
-    var recordMode: js.UndefOr[String] = js.native
+    var recordMode: js.UndefOr[String] = js.undefined
   }
   object TraceConfig {
     

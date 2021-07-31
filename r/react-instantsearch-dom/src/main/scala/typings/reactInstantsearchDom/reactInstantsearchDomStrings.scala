@@ -3,7 +3,6 @@ package typings.reactInstantsearchDom
 import typings.reactInstantsearchDom.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactInstantsearchDomStrings {
@@ -14,7 +13,9 @@ object reactInstantsearchDomStrings {
   def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
-  sealed trait askingPermission extends Status
+  sealed trait askingPermission
+    extends StObject
+       with Status
   @scala.inline
   def askingPermission: askingPermission = "askingPermission".asInstanceOf[askingPermission]
   
@@ -29,17 +30,23 @@ object reactInstantsearchDomStrings {
   def `bad-grammar`: `bad-grammar` = "bad-grammar".asInstanceOf[`bad-grammar`]
   
   @js.native
-  sealed trait error extends Status
+  sealed trait error
+    extends StObject
+       with Status
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait finished extends Status
+  sealed trait finished
+    extends StObject
+       with Status
   @scala.inline
   def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
-  sealed trait initial extends Status
+  sealed trait initial
+    extends StObject
+       with Status
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   
@@ -64,7 +71,9 @@ object reactInstantsearchDomStrings {
   def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
   
   @js.native
-  sealed trait recognizing extends Status
+  sealed trait recognizing
+    extends StObject
+       with Status
   @scala.inline
   def recognizing: recognizing = "recognizing".asInstanceOf[recognizing]
   
@@ -74,7 +83,9 @@ object reactInstantsearchDomStrings {
   def `service-not-allowed`: `service-not-allowed` = "service-not-allowed".asInstanceOf[`service-not-allowed`]
   
   @js.native
-  sealed trait waiting extends Status
+  sealed trait waiting
+    extends StObject
+       with Status
   @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
 }

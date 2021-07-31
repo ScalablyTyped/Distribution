@@ -2,31 +2,29 @@ package typings.awsSdk.cloudsearchdomainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResponse extends StObject {
   
   /**
     * The requested facet information.
     */
-  var facets: js.UndefOr[Facets] = js.native
+  var facets: js.UndefOr[Facets] = js.undefined
   
   /**
     * The documents that match the search criteria.
     */
-  var hits: js.UndefOr[Hits] = js.native
+  var hits: js.UndefOr[Hits] = js.undefined
   
   /**
     * The requested field statistics information.
     */
-  var stats: js.UndefOr[Stats] = js.native
+  var stats: js.UndefOr[Stats] = js.undefined
   
   /**
     * The status information returned for the search request.
     */
-  var status: js.UndefOr[SearchStatus] = js.native
+  var status: js.UndefOr[SearchStatus] = js.undefined
 }
 object SearchResponse {
   

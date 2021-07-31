@@ -3,54 +3,52 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.
   */
-@js.native
 trait RBDVolumeSource extends StObject {
   
   /**
     * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
     */
-  var fsType: js.UndefOr[Input[String]] = js.native
+  var fsType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var image: Input[String] = js.native
+  var image: Input[String]
   
   /**
     * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var keyring: js.UndefOr[Input[String]] = js.native
+  var keyring: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * A collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var monitors: Input[js.Array[Input[String]]] = js.native
+  var monitors: Input[js.Array[Input[String]]]
   
   /**
     * The rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var pool: js.UndefOr[Input[String]] = js.native
+  var pool: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.native
+  var secretRef: js.UndefOr[Input[LocalObjectReference]] = js.undefined
   
   /**
     * The rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
     */
-  var user: js.UndefOr[Input[String]] = js.native
+  var user: js.UndefOr[Input[String]] = js.undefined
 }
 object RBDVolumeSource {
   

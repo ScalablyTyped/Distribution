@@ -2,13 +2,11 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetChannelResponse extends StObject {
   
-  var channel: js.UndefOr[Channel] = js.native
+  var channel: js.UndefOr[Channel] = js.undefined
 }
 object GetChannelResponse {
   

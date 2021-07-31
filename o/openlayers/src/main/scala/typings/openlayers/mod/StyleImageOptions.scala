@@ -2,21 +2,19 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleImageOptions extends StObject {
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var rotateWithView: Boolean = js.native
+  var rotateWithView: Boolean
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var snapToPixel: Boolean = js.native
+  var snapToPixel: Boolean
 }
 object StyleImageOptions {
   

@@ -2,23 +2,24 @@ package typings.parsePackageName
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): PackageInfo = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[PackageInfo]
+  
   @JSImport("parse-package-name", JSImport.Namespace)
   @js.native
-  def apply(path: String): PackageInfo = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait PackageInfo extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var version: String = js.native
+    var version: String
   }
   object PackageInfo {
     

@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedExchangeInfo extends StObject {
   
   /**
     * Errors occurred while handling the signed exchagne.
     */
-  var errors: js.UndefOr[js.Array[SignedExchangeError]] = js.native
+  var errors: js.UndefOr[js.Array[SignedExchangeError]] = js.undefined
   
   /**
     * Information about the signed exchange header.
     */
-  var header: js.UndefOr[SignedExchangeHeader] = js.native
+  var header: js.UndefOr[SignedExchangeHeader] = js.undefined
   
   /**
     * The outer response of signed HTTP exchange which was received from network.
     */
-  var outerResponse: Response = js.native
+  var outerResponse: Response
   
   /**
     * Security details for the signed exchange header.
     */
-  var securityDetails: js.UndefOr[SecurityDetails] = js.native
+  var securityDetails: js.UndefOr[SecurityDetails] = js.undefined
 }
 object SignedExchangeInfo {
   

@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConversionPathValue extends StObject {
   
-  var conversionPathValue: js.UndefOr[js.Array[InteractionType]] = js.native
+  var conversionPathValue: js.UndefOr[js.Array[InteractionType]] = js.undefined
   
-  var primitiveValue: js.UndefOr[String] = js.native
+  var primitiveValue: js.UndefOr[String] = js.undefined
 }
 object ConversionPathValue {
   

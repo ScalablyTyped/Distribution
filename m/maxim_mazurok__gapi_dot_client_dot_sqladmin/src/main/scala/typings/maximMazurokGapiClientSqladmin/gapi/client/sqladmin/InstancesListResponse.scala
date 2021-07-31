@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesListResponse extends StObject {
   
   /** List of database instance resources. */
-  var items: js.UndefOr[js.Array[DatabaseInstance]] = js.native
+  var items: js.UndefOr[js.Array[DatabaseInstance]] = js.undefined
   
   /** This is always *sql#instancesList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The continuation token, used to page through large result sets. Provide this value in a subsequent request to return the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of warnings that occurred while handling the request. */
-  var warnings: js.UndefOr[js.Array[ApiWarning]] = js.native
+  var warnings: js.UndefOr[js.Array[ApiWarning]] = js.undefined
 }
 object InstancesListResponse {
   

@@ -7,48 +7,48 @@ import typings.vegaTypings.utilMod.Vector6
 import typings.vegaTypings.vegaTypingsStrings.treemap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreemapTransform extends _Transforms {
+trait TreemapTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector6[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var method: js.UndefOr[TreemapMethod | SignalRef] = js.native
+  var method: js.UndefOr[TreemapMethod | SignalRef] = js.undefined
   
-  var padding: js.UndefOr[Double | SignalRef] = js.native
+  var padding: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingBottom: js.UndefOr[Double | SignalRef] = js.native
+  var paddingBottom: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingInner: js.UndefOr[Double | SignalRef] = js.native
+  var paddingInner: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingLeft: js.UndefOr[Double | SignalRef] = js.native
+  var paddingLeft: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingOuter: js.UndefOr[Double | SignalRef] = js.native
+  var paddingOuter: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingRight: js.UndefOr[Double | SignalRef] = js.native
+  var paddingRight: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var paddingTop: js.UndefOr[Double | SignalRef] = js.native
+  var paddingTop: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var ratio: js.UndefOr[Double | SignalRef] = js.native
+  var ratio: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var round: js.UndefOr[Boolean | SignalRef] = js.native
+  var round: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var size: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: treemap = js.native
+  var `type`: treemap
 }
 object TreemapTransform {
   
   @scala.inline
-  def apply(`type`: treemap): TreemapTransform = {
+  def apply(): TreemapTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("treemap")
     __obj.asInstanceOf[TreemapTransform]
   }
   

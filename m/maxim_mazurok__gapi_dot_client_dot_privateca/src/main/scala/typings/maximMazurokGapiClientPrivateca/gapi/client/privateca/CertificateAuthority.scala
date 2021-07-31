@@ -3,82 +3,80 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateAuthority extends StObject {
   
   /** Output only. URLs for accessing content published by this CA, such as the CA certificate and CRLs. */
-  var accessUrls: js.UndefOr[AccessUrls] = js.native
+  var accessUrls: js.UndefOr[AccessUrls] = js.undefined
   
   /** Output only. A structured description of this CertificateAuthority's CA certificate and its issuers. Ordered as self-to-root. */
-  var caCertificateDescriptions: js.UndefOr[js.Array[CertificateDescription]] = js.native
+  var caCertificateDescriptions: js.UndefOr[js.Array[CertificateDescription]] = js.undefined
   
   /** Optional. The CertificateAuthorityPolicy to enforce when issuing Certificates from this CertificateAuthority. */
-  var certificatePolicy: js.UndefOr[CertificateAuthorityPolicy] = js.native
+  var certificatePolicy: js.UndefOr[CertificateAuthorityPolicy] = js.undefined
   
   /** Required. Immutable. The config used to create a self-signed X.509 certificate or CSR. */
-  var config: js.UndefOr[CertificateConfig] = js.native
+  var config: js.UndefOr[CertificateConfig] = js.undefined
   
   /** Output only. The time at which this CertificateAuthority was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this CertificateAuthority will be deleted, if scheduled for deletion. */
-  var deleteTime: js.UndefOr[String] = js.native
+  var deleteTime: js.UndefOr[String] = js.undefined
   
   /**
     * Immutable. The name of a Cloud Storage bucket where this CertificateAuthority will publish content, such as the CA certificate and CRLs. This must be a bucket name, without any
     * prefixes (such as `gs://`) or suffixes (such as `.googleapis.com`). For example, to use a bucket named `my-bucket`, you would simply specify `my-bucket`. If not specified, a managed
     * bucket will be created.
     */
-  var gcsBucket: js.UndefOr[String] = js.native
+  var gcsBucket: js.UndefOr[String] = js.undefined
   
   /** Optional. The IssuingOptions to follow when issuing Certificates from this CertificateAuthority. */
-  var issuingOptions: js.UndefOr[IssuingOptions] = js.native
+  var issuingOptions: js.UndefOr[IssuingOptions] = js.undefined
   
   /**
     * Required. Immutable. Used when issuing certificates for this CertificateAuthority. If this CertificateAuthority is a self-signed CertificateAuthority, this key is also used to sign
     * the self-signed CA certificate. Otherwise, it is used to sign a CSR.
     */
-  var keySpec: js.UndefOr[KeyVersionSpec] = js.native
+  var keySpec: js.UndefOr[KeyVersionSpec] = js.undefined
   
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The desired lifetime of the CA certificate. Used to create the "not_before_time" and "not_after_time" fields inside an X.509 certificate. */
-  var lifetime: js.UndefOr[String] = js.native
+  var lifetime: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name for this CertificateAuthority in the format `projects/∗/locations/∗/certificateAuthorities/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. This CertificateAuthority's certificate chain, including the current CertificateAuthority's certificate. Ordered such that the root issuer is the final element
     * (consistent with RFC 5246). For a self-signed CA, this will only list the current CertificateAuthority's certificate.
     */
-  var pemCaCertificates: js.UndefOr[js.Array[String]] = js.native
+  var pemCaCertificates: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. The State for this CertificateAuthority. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. If this is a subordinate CertificateAuthority, this field will be set with the subordinate configuration, which describes its issuers. This may be updated, but this
     * CertificateAuthority must continue to validate.
     */
-  var subordinateConfig: js.UndefOr[SubordinateConfig] = js.native
+  var subordinateConfig: js.UndefOr[SubordinateConfig] = js.undefined
   
   /** Required. Immutable. The Tier of this CertificateAuthority. */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The Type of this CertificateAuthority. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this CertificateAuthority was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object CertificateAuthority {
   
@@ -152,7 +150,7 @@ object CertificateAuthority {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.CertificateAuthority & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

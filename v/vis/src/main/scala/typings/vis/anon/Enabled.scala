@@ -2,19 +2,17 @@ package typings.vis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var forceDirection: js.UndefOr[String | Boolean] = js.native
+  var forceDirection: js.UndefOr[String | Boolean] = js.undefined
   
-  var roundness: Double = js.native
+  var roundness: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Enabled {
   

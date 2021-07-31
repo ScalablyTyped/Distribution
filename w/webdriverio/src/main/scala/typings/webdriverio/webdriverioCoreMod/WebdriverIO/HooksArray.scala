@@ -1,76 +1,87 @@
 package typings.webdriverio.webdriverioCoreMod.WebdriverIO
 
-import typings.webdriver.WebDriver.DesiredCapabilities
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof std.Pick<webdriverio.webdriverio/webdriverio-core.WebdriverIO.HookFunctions, 'onPrepare' | 'onWorkerStart' | 'onComplete' | 'before' | 'after' | 'beforeSession' | 'afterSession'> ]: webdriverio.webdriverio/webdriverio-core.WebdriverIO.HookFunctions[K] | std.Array<webdriverio.webdriverio/webdriverio-core.WebdriverIO.HookFunctions[K]>} */
-@js.native
-trait HooksArray extends js.Object {
+trait HooksArray extends StObject {
+  
   var after: js.UndefOr[
     (js.Function3[
       /* result */ Double, 
-      /* capabilities */ DesiredCapabilities, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
       /* specs */ js.Array[String], 
       Unit
     ]) | (js.Array[
       js.UndefOr[
         js.Function3[
           /* result */ Double, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* specs */ js.Array[String], 
           Unit
         ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var afterSession: js.UndefOr[
     (js.Function3[
       /* config */ Config, 
-      /* capabilities */ DesiredCapabilities, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
       /* specs */ js.Array[String], 
       Unit
     ]) | (js.Array[
       js.UndefOr[
         js.Function3[
           /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* specs */ js.Array[String], 
           Unit
         ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var before: js.UndefOr[
-    (js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]) | (js.Array[
+    (js.Function2[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+      /* specs */ js.Array[String], 
+      Unit
+    ]) | (js.Array[
       js.UndefOr[
-        js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]
+        js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+          /* specs */ js.Array[String], 
+          Unit
+        ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var beforeSession: js.UndefOr[
     (js.Function3[
       /* config */ Config, 
-      /* capabilities */ DesiredCapabilities, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
       /* specs */ js.Array[String], 
       Unit
     ]) | (js.Array[
       js.UndefOr[
         js.Function3[
           /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* specs */ js.Array[String], 
           Unit
         ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var onComplete: js.UndefOr[
     (js.Function4[
       /* exitCode */ Double, 
       /* config */ Config, 
-      /* capabilities */ DesiredCapabilities, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
       /* results */ Results, 
       Unit
     ]) | (js.Array[
@@ -78,24 +89,38 @@ trait HooksArray extends js.Object {
         js.Function4[
           /* exitCode */ Double, 
           /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* results */ Results, 
           Unit
         ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var onPrepare: js.UndefOr[
-    (js.Function2[/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities], Unit]) | (js.Array[
+    (js.Function2[
+      /* config */ Config, 
+      /* capabilities */ js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+      ], 
+      Unit
+    ]) | (js.Array[
       js.UndefOr[
-        js.Function2[/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities], Unit]
+        js.Function2[
+          /* config */ Config, 
+          /* capabilities */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+          ], 
+          Unit
+        ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
+  
   var onWorkerStart: js.UndefOr[
     (js.Function5[
       /* cid */ String, 
-      /* caps */ DesiredCapabilities, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, 
       /* specs */ js.Array[String], 
       /* args */ Config, 
       /* execArgv */ js.Array[String], 
@@ -104,7 +129,7 @@ trait HooksArray extends js.Object {
       js.UndefOr[
         js.Function5[
           /* cid */ String, 
-          /* caps */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, 
           /* specs */ js.Array[String], 
           /* args */ Config, 
           /* execArgv */ js.Array[String], 
@@ -112,171 +137,178 @@ trait HooksArray extends js.Object {
         ]
       ]
     ])
-  ] = js.native
+  ] = js.undefined
 }
-
 object HooksArray {
+  
   @scala.inline
   def apply(): HooksArray = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HooksArray]
   }
+  
   @scala.inline
-  implicit class HooksArrayOps[Self <: HooksArray] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setAfterVarargs(
-      value: (js.UndefOr[
-          js.Function3[
-            /* result */ Double, 
-            /* capabilities */ DesiredCapabilities, 
-            /* specs */ js.Array[String], 
-            Unit
-          ]
-        ])*
-    ): Self = this.set("after", js.Array(value :_*))
-    @scala.inline
-    def setAfterFunction3(
-      value: (/* result */ Double, /* capabilities */ DesiredCapabilities, /* specs */ js.Array[String]) => Unit
-    ): Self = this.set("after", js.Any.fromFunction3(value))
+  implicit class HooksArrayMutableBuilder[Self <: HooksArray] (val x: Self) extends AnyVal {
+    
     @scala.inline
     def setAfter(
       value: (js.Function3[
           /* result */ Double, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* specs */ js.Array[String], 
           Unit
         ]) | (js.Array[
           js.UndefOr[
             js.Function3[
               /* result */ Double, 
-              /* capabilities */ DesiredCapabilities, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
               /* specs */ js.Array[String], 
               Unit
             ]
           ]
         ])
-    ): Self = this.set("after", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteAfter: Self = this.set("after", js.undefined)
+    def setAfterFunction3(
+      value: (/* result */ Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
+    ): Self = StObject.set(x, "after", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setAfterSession(
+      value: (js.Function3[
+          /* config */ Config, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+          /* specs */ js.Array[String], 
+          Unit
+        ]) | (js.Array[
+          js.UndefOr[
+            js.Function3[
+              /* config */ Config, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+              /* specs */ js.Array[String], 
+              Unit
+            ]
+          ]
+        ])
+    ): Self = StObject.set(x, "afterSession", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAfterSessionFunction3(
+      value: (/* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
+    ): Self = StObject.set(x, "afterSession", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setAfterSessionUndefined: Self = StObject.set(x, "afterSession", js.undefined)
+    
     @scala.inline
     def setAfterSessionVarargs(
       value: (js.UndefOr[
           js.Function3[
             /* config */ Config, 
-            /* capabilities */ DesiredCapabilities, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
             /* specs */ js.Array[String], 
             Unit
           ]
         ])*
-    ): Self = this.set("afterSession", js.Array(value :_*))
+    ): Self = StObject.set(x, "afterSession", js.Array(value :_*))
+    
     @scala.inline
-    def setAfterSessionFunction3(
-      value: (/* config */ Config, /* capabilities */ DesiredCapabilities, /* specs */ js.Array[String]) => Unit
-    ): Self = this.set("afterSession", js.Any.fromFunction3(value))
+    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
     @scala.inline
-    def setAfterSession(
+    def setAfterVarargs(
+      value: (js.UndefOr[
+          js.Function3[
+            /* result */ Double, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+            /* specs */ js.Array[String], 
+            Unit
+          ]
+        ])*
+    ): Self = StObject.set(x, "after", js.Array(value :_*))
+    
+    @scala.inline
+    def setBefore(
+      value: (js.Function2[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+          /* specs */ js.Array[String], 
+          Unit
+        ]) | (js.Array[
+          js.UndefOr[
+            js.Function2[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+              /* specs */ js.Array[String], 
+              Unit
+            ]
+          ]
+        ])
+    ): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBeforeFunction2(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
+    ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setBeforeSession(
       value: (js.Function3[
           /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* specs */ js.Array[String], 
           Unit
         ]) | (js.Array[
           js.UndefOr[
             js.Function3[
               /* config */ Config, 
-              /* capabilities */ DesiredCapabilities, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
               /* specs */ js.Array[String], 
               Unit
             ]
           ]
         ])
-    ): Self = this.set("afterSession", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "beforeSession", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteAfterSession: Self = this.set("afterSession", js.undefined)
+    def setBeforeSessionFunction3(
+      value: (/* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* specs */ js.Array[String]) => Unit
+    ): Self = StObject.set(x, "beforeSession", js.Any.fromFunction3(value))
+    
     @scala.inline
-    def setBeforeVarargs(
-      value: (js.UndefOr[
-          js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]
-        ])*
-    ): Self = this.set("before", js.Array(value :_*))
-    @scala.inline
-    def setBeforeFunction2(value: (/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String]) => Unit): Self = this.set("before", js.Any.fromFunction2(value))
-    @scala.inline
-    def setBefore(
-      value: (js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]) | (js.Array[
-          js.UndefOr[
-            js.Function2[/* capabilities */ DesiredCapabilities, /* specs */ js.Array[String], Unit]
-          ]
-        ])
-    ): Self = this.set("before", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBefore: Self = this.set("before", js.undefined)
+    def setBeforeSessionUndefined: Self = StObject.set(x, "beforeSession", js.undefined)
+    
     @scala.inline
     def setBeforeSessionVarargs(
       value: (js.UndefOr[
           js.Function3[
             /* config */ Config, 
-            /* capabilities */ DesiredCapabilities, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
             /* specs */ js.Array[String], 
             Unit
           ]
         ])*
-    ): Self = this.set("beforeSession", js.Array(value :_*))
+    ): Self = StObject.set(x, "beforeSession", js.Array(value :_*))
+    
     @scala.inline
-    def setBeforeSessionFunction3(
-      value: (/* config */ Config, /* capabilities */ DesiredCapabilities, /* specs */ js.Array[String]) => Unit
-    ): Self = this.set("beforeSession", js.Any.fromFunction3(value))
+    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
     @scala.inline
-    def setBeforeSession(
-      value: (js.Function3[
-          /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
-          /* specs */ js.Array[String], 
-          Unit
-        ]) | (js.Array[
-          js.UndefOr[
-            js.Function3[
-              /* config */ Config, 
-              /* capabilities */ DesiredCapabilities, 
-              /* specs */ js.Array[String], 
-              Unit
-            ]
-          ]
-        ])
-    ): Self = this.set("beforeSession", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteBeforeSession: Self = this.set("beforeSession", js.undefined)
-    @scala.inline
-    def setOnCompleteVarargs(
+    def setBeforeVarargs(
       value: (js.UndefOr[
-          js.Function4[
-            /* exitCode */ Double, 
-            /* config */ Config, 
-            /* capabilities */ DesiredCapabilities, 
-            /* results */ Results, 
+          js.Function2[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+            /* specs */ js.Array[String], 
             Unit
           ]
         ])*
-    ): Self = this.set("onComplete", js.Array(value :_*))
-    @scala.inline
-    def setOnCompleteFunction4(
-      value: (/* exitCode */ Double, /* config */ Config, /* capabilities */ DesiredCapabilities, /* results */ Results) => Unit
-    ): Self = this.set("onComplete", js.Any.fromFunction4(value))
+    ): Self = StObject.set(x, "before", js.Array(value :_*))
+    
     @scala.inline
     def setOnComplete(
       value: (js.Function4[
           /* exitCode */ Double, 
           /* config */ Config, 
-          /* capabilities */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
           /* results */ Results, 
           Unit
         ]) | (js.Array[
@@ -284,55 +316,84 @@ object HooksArray {
             js.Function4[
               /* exitCode */ Double, 
               /* config */ Config, 
-              /* capabilities */ DesiredCapabilities, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
               /* results */ Results, 
               Unit
             ]
           ]
         ])
-    ): Self = this.set("onComplete", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onComplete", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteOnComplete: Self = this.set("onComplete", js.undefined)
+    def setOnCompleteFunction4(
+      value: (/* exitCode */ Double, /* config */ Config, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, /* results */ Results) => Unit
+    ): Self = StObject.set(x, "onComplete", js.Any.fromFunction4(value))
+    
     @scala.inline
-    def setOnPrepareVarargs(
+    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    
+    @scala.inline
+    def setOnCompleteVarargs(
       value: (js.UndefOr[
-          js.Function2[/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities], Unit]
-        ])*
-    ): Self = this.set("onPrepare", js.Array(value :_*))
-    @scala.inline
-    def setOnPrepareFunction2(value: (/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities]) => Unit): Self = this.set("onPrepare", js.Any.fromFunction2(value))
-    @scala.inline
-    def setOnPrepare(
-      value: (js.Function2[/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities], Unit]) | (js.Array[
-          js.UndefOr[
-            js.Function2[/* config */ Config, /* capabilities */ js.Array[DesiredCapabilities], Unit]
-          ]
-        ])
-    ): Self = this.set("onPrepare", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteOnPrepare: Self = this.set("onPrepare", js.undefined)
-    @scala.inline
-    def setOnWorkerStartFunction5(
-      value: (/* cid */ String, /* caps */ DesiredCapabilities, /* specs */ js.Array[String], /* args */ Config, /* execArgv */ js.Array[String]) => Unit
-    ): Self = this.set("onWorkerStart", js.Any.fromFunction5(value))
-    @scala.inline
-    def setOnWorkerStartVarargs(
-      value: (js.UndefOr[
-          js.Function5[
-            /* cid */ String, 
-            /* caps */ DesiredCapabilities, 
-            /* specs */ js.Array[String], 
-            /* args */ Config, 
-            /* execArgv */ js.Array[String], 
+          js.Function4[
+            /* exitCode */ Double, 
+            /* config */ Config, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* capabilities */ js.Any, 
+            /* results */ Results, 
             Unit
           ]
         ])*
-    ): Self = this.set("onWorkerStart", js.Array(value :_*))
+    ): Self = StObject.set(x, "onComplete", js.Array(value :_*))
+    
+    @scala.inline
+    def setOnPrepare(
+      value: (js.Function2[
+          /* config */ Config, 
+          /* capabilities */ js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+          ], 
+          Unit
+        ]) | (js.Array[
+          js.UndefOr[
+            js.Function2[
+              /* config */ Config, 
+              /* capabilities */ js.Array[
+                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+              ], 
+              Unit
+            ]
+          ]
+        ])
+    ): Self = StObject.set(x, "onPrepare", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnPrepareFunction2(
+      value: (/* config */ Config, /* capabilities */ js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+        ]) => Unit
+    ): Self = StObject.set(x, "onPrepare", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
+    
+    @scala.inline
+    def setOnPrepareVarargs(
+      value: (js.UndefOr[
+          js.Function2[
+            /* config */ Config, 
+            /* capabilities */ js.Array[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
+            ], 
+            Unit
+          ]
+        ])*
+    ): Self = StObject.set(x, "onPrepare", js.Array(value :_*))
+    
     @scala.inline
     def setOnWorkerStart(
       value: (js.Function5[
           /* cid */ String, 
-          /* caps */ DesiredCapabilities, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, 
           /* specs */ js.Array[String], 
           /* args */ Config, 
           /* execArgv */ js.Array[String], 
@@ -341,7 +402,7 @@ object HooksArray {
           js.UndefOr[
             js.Function5[
               /* cid */ String, 
-              /* caps */ DesiredCapabilities, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, 
               /* specs */ js.Array[String], 
               /* args */ Config, 
               /* execArgv */ js.Array[String], 
@@ -349,10 +410,28 @@ object HooksArray {
             ]
           ]
         ])
-    ): Self = this.set("onWorkerStart", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "onWorkerStart", value.asInstanceOf[js.Any])
+    
     @scala.inline
-    def deleteOnWorkerStart: Self = this.set("onWorkerStart", js.undefined)
+    def setOnWorkerStartFunction5(
+      value: (/* cid */ String, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, /* specs */ js.Array[String], /* args */ Config, /* execArgv */ js.Array[String]) => Unit
+    ): Self = StObject.set(x, "onWorkerStart", js.Any.fromFunction5(value))
+    
+    @scala.inline
+    def setOnWorkerStartUndefined: Self = StObject.set(x, "onWorkerStart", js.undefined)
+    
+    @scala.inline
+    def setOnWorkerStartVarargs(
+      value: (js.UndefOr[
+          js.Function5[
+            /* cid */ String, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ /* caps */ js.Any, 
+            /* specs */ js.Array[String], 
+            /* args */ Config, 
+            /* execArgv */ js.Array[String], 
+            Unit
+          ]
+        ])*
+    ): Self = StObject.set(x, "onWorkerStart", js.Array(value :_*))
   }
-  
 }
-

@@ -6,15 +6,13 @@ import typings.natUpnp.mod.RawService
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var device: js.UndefOr[RawDevice] = js.native
+    var device: js.UndefOr[RawDevice] = js.undefined
   }
   object `0` {
     
@@ -35,14 +33,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ControlURL extends StObject {
     
-    var SCPDURL: String = js.native
+    var SCPDURL: String
     
-    var controlURL: String = js.native
+    var controlURL: String
     
-    var service: String = js.native
+    var service: String
   }
   object ControlURL {
     
@@ -66,10 +63,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Device extends StObject {
     
-    var device: RawDevice | js.Array[RawDevice] = js.native
+    var device: RawDevice | js.Array[RawDevice]
   }
   object Device {
     
@@ -90,12 +86,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Devices extends StObject {
     
-    var devices: js.Array[RawDevice] = js.native
+    var devices: js.Array[RawDevice]
     
-    var services: js.Array[RawService] = js.native
+    var services: js.Array[RawService]
   }
   object Devices {
     
@@ -122,11 +117,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var `@`: Xmlnsu = js.native
+    var `@`: Xmlnsu
   }
   object Dictkey {
     
@@ -145,12 +140,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Host {
     
@@ -177,12 +171,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
   }
   object Port {
     
@@ -203,10 +196,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
-    var service: RawService | js.Array[RawService] = js.native
+    var service: RawService | js.Array[RawService]
   }
   object Service {
     
@@ -227,11 +219,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Xmlnsu extends StObject {
     
     @JSName("xmlns:u")
-    var xmlnsColonu: String = js.native
+    var xmlnsColonu: String
   }
   object Xmlnsu {
     
@@ -250,10 +241,9 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
-    var `@`: js.UndefOr[Record[String, String]] = js.native
+    var `@`: js.UndefOr[Record[String, String]] = js.undefined
   }
   object _empty {
     

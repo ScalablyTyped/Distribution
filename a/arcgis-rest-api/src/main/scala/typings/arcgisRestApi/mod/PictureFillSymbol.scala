@@ -3,30 +3,29 @@ package typings.arcgisRestApi.mod
 import typings.arcgisRestApi.arcgisRestApiStrings.esriPFS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PictureFillSymbol
-  extends Symbol
+  extends StObject
+     with Symbol
      with PictureSourced {
   
-  var outline: js.UndefOr[SimpleLineSymbol] = js.native
+  var outline: js.UndefOr[SimpleLineSymbol] = js.undefined
   
   @JSName("type")
-  var type_PictureFillSymbol: esriPFS = js.native
+  var type_PictureFillSymbol: esriPFS
   
   // if outline has been specified
-  var xscale: js.UndefOr[Double] = js.native
+  var xscale: js.UndefOr[Double] = js.undefined
   
-  var yscale: js.UndefOr[Double] = js.native
+  var yscale: js.UndefOr[Double] = js.undefined
 }
 object PictureFillSymbol {
   
   @scala.inline
-  def apply(`type`: esriPFS): PictureFillSymbol = {
+  def apply(): PictureFillSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriPFS")
     __obj.asInstanceOf[PictureFillSymbol]
   }
   

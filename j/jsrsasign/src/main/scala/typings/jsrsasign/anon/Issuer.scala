@@ -7,15 +7,13 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issuer extends StObject {
   
-  var issuer: StringParam = js.native
+  var issuer: StringParam
   
-  var serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double = js.native
+  var serial: DERInteger | IntegerParam | BigIntegerParam | HexParam | Double
 }
 object Issuer {
   

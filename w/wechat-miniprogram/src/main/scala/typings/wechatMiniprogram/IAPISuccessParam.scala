@@ -2,13 +2,13 @@ package typings.wechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAPISuccessParam extends IAPICompleteParam {
+trait IAPISuccessParam
+  extends StObject
+     with IAPICompleteParam {
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object IAPISuccessParam {
   

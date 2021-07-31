@@ -2,18 +2,16 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/phone-input.Country> */
-@js.native
 trait ReadonlyCountry extends StObject {
   
-  val dialCode: String = js.native
+  val dialCode: String
   
-  val id: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any = js.native
+  val id: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any
   
-  val label: String = js.native
+  val label: String
 }
 object ReadonlyCountry {
   

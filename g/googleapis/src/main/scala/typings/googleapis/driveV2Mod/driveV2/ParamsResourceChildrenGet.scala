@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceChildrenGet extends StandardParameters {
+trait ParamsResourceChildrenGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the child.
     */
-  var childId: js.UndefOr[String] = js.native
+  var childId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var folderId: js.UndefOr[String] = js.native
+  var folderId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceChildrenGet {
   

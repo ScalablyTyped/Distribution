@@ -4,7 +4,6 @@ import typings.iitc.iitctypesMod.IITC.PortalDataDetail
 import typings.jquery.JQuery.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalDetailMod {
@@ -25,7 +24,7 @@ object portalDetailMod {
         * Request Portal details from server
         * NB: you shouldn't use it.
         */
-      def request(guid: String): Promise[_, _, _] = js.native
+      def request(guid: String): Promise[js.Any, js.Any, js.Any] = js.native
       
       def setup(): Unit = js.native
     }

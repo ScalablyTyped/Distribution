@@ -10,7 +10,6 @@ import typings.passportSaml.mod.VerifyWithoutRequest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiSamlStrategyMod {
@@ -22,15 +21,16 @@ object multiSamlStrategyMod {
     def this(config: MultiSamlConfig, verify: VerifyWithoutRequest) = this()
   }
   
-  @js.native
-  trait MultiSamlConfig extends SamlConfig {
+  trait MultiSamlConfig
+    extends StObject
+       with SamlConfig {
     
-    def getSamlOptions(req: Request_[ParamsDictionary, _, _, Query], callback: SamlOptionsCallback): Unit = js.native
+    def getSamlOptions(req: Request_[ParamsDictionary, js.Any, js.Any, Query], callback: SamlOptionsCallback): Unit
   }
   object MultiSamlConfig {
     
     @scala.inline
-    def apply(getSamlOptions: (Request_[ParamsDictionary, _, _, Query], SamlOptionsCallback) => Unit): MultiSamlConfig = {
+    def apply(getSamlOptions: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): MultiSamlConfig = {
       val __obj = js.Dynamic.literal(getSamlOptions = js.Any.fromFunction2(getSamlOptions))
       __obj.asInstanceOf[MultiSamlConfig]
     }
@@ -39,7 +39,7 @@ object multiSamlStrategyMod {
     implicit class MultiSamlConfigMutableBuilder[Self <: MultiSamlConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetSamlOptions(value: (Request_[ParamsDictionary, _, _, Query], SamlOptionsCallback) => Unit): Self = StObject.set(x, "getSamlOptions", js.Any.fromFunction2(value))
+      def setGetSamlOptions(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], SamlOptionsCallback) => Unit): Self = StObject.set(x, "getSamlOptions", js.Any.fromFunction2(value))
     }
   }
   
@@ -47,25 +47,25 @@ object multiSamlStrategyMod {
   trait MultiSamlStrategy extends Strategy {
     
     def generateServiceProviderMetadata(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       decryptionCert: String,
       signingCert: String,
       callback: js.Function2[/* err */ Error | Null, /* metadata */ js.UndefOr[String], Unit]
     ): String = js.native
     def generateServiceProviderMetadata(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       decryptionCert: String,
       signingCert: Null,
       callback: js.Function2[/* err */ Error | Null, /* metadata */ js.UndefOr[String], Unit]
     ): String = js.native
     def generateServiceProviderMetadata(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       decryptionCert: Null,
       signingCert: String,
       callback: js.Function2[/* err */ Error | Null, /* metadata */ js.UndefOr[String], Unit]
     ): String = js.native
     def generateServiceProviderMetadata(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       decryptionCert: Null,
       signingCert: Null,
       callback: js.Function2[/* err */ Error | Null, /* metadata */ js.UndefOr[String], Unit]

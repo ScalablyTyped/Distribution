@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeDefinition extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var accessControlListBase64: js.UndefOr[String] = js.native
+  var accessControlListBase64: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the document reading zones for screen reader applications.  This element can only be used if Document Accessibility is enabled for the account.
@@ -19,39 +17,39 @@ trait EnvelopeDefinition extends StObject {
     * ###### Note: This information is currently generated from the DocuSign web console by setting the reading zones when creating a template,
     * exporting the reading zone string information, and adding it here.
     */
-  var accessibility: js.UndefOr[String] = js.native
+  var accessibility: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, comments are allowed on the envelope.
     */
-  var allowComments: js.UndefOr[String] = js.native
+  var allowComments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the Document Markup feature is enabled.
     *
     * **Note**:  To use this feature, Document Markup must be enabled at both the account and envelope levels. Only Admin users can change this setting for at the account level.
     */
-  var allowMarkup: js.UndefOr[String] = js.native
+  var allowMarkup: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the recipient can redirect an envelope to a more appropriate recipient.
     */
-  var allowReassign: js.UndefOr[String] = js.native
+  var allowReassign: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, this enables the Recursive Recipients feature and allows a recipient to appear more than once in the routing order.
     */
-  var allowRecipientRecursion: js.UndefOr[String] = js.native
+  var allowRecipientRecursion: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, users can view the history of the envelope.
     */
-  var allowViewHistory: js.UndefOr[String] = js.native
+  var allowViewHistory: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. This feature has been replaced by signing groups.
     */
-  var anySigner: js.UndefOr[String] = js.native
+  var anySigner: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the envelope is queued for processing and the value of the `status` property is set to `Processing`. Additionally, GET status calls return `Processing` until completed.
@@ -61,17 +59,17 @@ trait EnvelopeDefinition extends StObject {
     * is not returned in the response. To get the `envelopeId`, use a GET envelope query by using the
     * [transactionId](https://developers.docusign.com/esign-rest-api/reference/Envelopes/Envelopes/create/#envelopeDefinition) or by checking the Connect notification.
     */
-  var asynchronous: js.UndefOr[String] = js.native
+  var asynchronous: js.UndefOr[String] = js.undefined
   
   /**
     * An array of attachment objects containing details about any envelope attachments.
     */
-  var attachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.native
+  var attachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.undefined
   
   /**
     * The URI for retrieving the envelope attachments.
     */
-  var attachmentsUri: js.UndefOr[String] = js.native
+  var attachmentsUri: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, marks all of the documents in the envelope as authoritative copies.
@@ -79,52 +77,52 @@ trait EnvelopeDefinition extends StObject {
     * **Note**: You can override this value for a specific document. For example, you can set the `authoritativeCopy` property to **true** at the envelope level,
     * but turn it off for a single document by setting the `authoritativeCopy` property for the document to **false**.
     */
-  var authoritativeCopy: js.UndefOr[String] = js.native
+  var authoritativeCopy: js.UndefOr[String] = js.undefined
   
   /**
     * The default `authoritativeCopy` setting for documents in this envelope that do not have `authoritativeCopy` set.
     * If this property is not set, each document defaults to the envelope's `authoritativeCopy`.
     */
-  var authoritativeCopyDefault: js.UndefOr[String] = js.native
+  var authoritativeCopyDefault: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, autonavigation is set for the recipient.
     *
     */
-  var autoNavigation: js.UndefOr[String] = js.native
+  var autoNavigation: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the brand, or text and formatting, to use for the envelope. To use brands, account branding must be enabled for the account.
     */
-  var brandId: js.UndefOr[String] = js.native
+  var brandId: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the `brandId` for the envelope is locked and senders cannot change the brand used for the envelope.
     */
-  var brandLock: js.UndefOr[String] = js.native
+  var brandLock: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving certificate information.
     */
-  var certificateUri: js.UndefOr[String] = js.native
+  var certificateUri: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was completed.
     */
-  var completedDateTime: js.UndefOr[String] = js.native
+  var completedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type that can be added to create envelopes from a combination of DocuSign templates and PDF forms. The basic envelope remains the same, while the Composite
     * Template adds new document and template overlays into the envelope. There can be any number of Composite Template structures in the envelope.
     */
-  var compositeTemplates: js.UndefOr[js.Array[CompositeTemplate]] = js.native
+  var compositeTemplates: js.UndefOr[js.Array[CompositeTemplate]] = js.undefined
   
-  var copyRecipientData: js.UndefOr[String] = js.native
+  var copyRecipientData: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * An optional array of strings that enables the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise
@@ -133,54 +131,54 @@ trait EnvelopeDefinition extends StObject {
   var customFields: js.UndefOr[
     /* An `accountCustomField` is an envelope custom field that you set at the account level. Applying custom fields enables account administators to group
     and manage envelopes.  */ AccountCustomFields
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URI for retrieving custom fields.
     */
-  var customFieldsUri: js.UndefOr[String] = js.native
+  var customFieldsUri: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the recipient declined the envelope.
     */
-  var declinedDateTime: js.UndefOr[String] = js.native
+  var declinedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was deleted.
     */
-  var deletedDateTime: js.UndefOr[String] = js.native
+  var deletedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was delivered to the recipient. Read only.
     */
-  var deliveredDateTime: js.UndefOr[String] = js.native
+  var deliveredDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the responsive document feature is turned off for the envelope.
     */
-  var disableResponsiveDocument: js.UndefOr[String] = js.native
+  var disableResponsiveDocument: js.UndefOr[String] = js.undefined
   
   /**
     * A complex element that contains details about the documents associated with the envelope.
     */
-  var documents: js.UndefOr[js.Array[/* A document object. */ Document]] = js.native
+  var documents: js.UndefOr[js.Array[/* A document object. */ Document]] = js.undefined
   
   /**
     * The URI for retrieving all of the documents associated with the envelope as a single PDF file.
     */
-  var documentsCombinedUri: js.UndefOr[String] = js.native
+  var documentsCombinedUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving all of the documents associated with the envelope as separate files.
     */
-  var documentsUri: js.UndefOr[String] = js.native
+  var documentsUri: js.UndefOr[String] = js.undefined
   
   /**
     * This optional element holds the body of the email message that is sent to all envelope recipients.
     *
     * Maximum Length: 10000 characters.
     */
-  var emailBlurb: js.UndefOr[String] = js.native
+  var emailBlurb: js.UndefOr[String] = js.undefined
   
   /**
     * This optional complex element enables the sender to override some envelope email setting information.
@@ -189,7 +187,7 @@ trait EnvelopeDefinition extends StObject {
     *
     * **Important Note**: The `emailSettings` information is not returned in the GET method for envelope status. Use GET /email_settings to return information about the emailSettings.
     */
-  var emailSettings: js.UndefOr[EmailSettings] = js.native
+  var emailSettings: js.UndefOr[EmailSettings] = js.undefined
   
   /**
     * The subject line of the email message that is sent to all recipients.
@@ -198,12 +196,12 @@ trait EnvelopeDefinition extends StObject {
     * [Template Email Subject Merge Fields](https://developers.docusign.com/esign-rest-api/reference/Templates/Templates/create#template-email-subject-merge-fields).
     *
     */
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the signer is allowed to print the document and sign it on paper.
     */
-  var enableWetSign: js.UndefOr[String] = js.native
+  var enableWetSign: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, signers can only view the documents on which they have tabs. Recipients that have an administrative role (Agent, Editor, or
@@ -215,26 +213,26 @@ trait EnvelopeDefinition extends StObject {
     *
     * [docviz]: /esign/restapi/Envelopes/EnvelopeDocumentVisibility
     */
-  var enforceSignerVisibility: js.UndefOr[String] = js.native
+  var enforceSignerVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * An array of attachment objects that provide information about the attachments that are associated with the envelope.
     */
-  var envelopeAttachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.native
+  var envelopeAttachments: js.UndefOr[js.Array[/* Contains information about an attachment. */ Attachment]] = js.undefined
   
   /**
     * An array containing information about the documents that are included in the envelope.
     */
   var envelopeDocuments: js.UndefOr[
     js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The envelope's GUID.
     *
     * Example: `93be49ab-afa0-4adf-933c-f752070d71ec`
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, [Envelope ID Stamping](https://support.docusign.com/en/guides/ndse-user-guide-set-advanced-document-options) is enabled.
@@ -243,116 +241,116 @@ trait EnvelopeDefinition extends StObject {
     * and becomes a permanent part of the document
     * and cannot be removed.
     */
-  var envelopeIdStamping: js.UndefOr[String] = js.native
+  var envelopeIdStamping: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var envelopeLocation: js.UndefOr[String] = js.native
+  var envelopeLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the features that are enabled for the envelope.
     */
-  var envelopeMetadata: js.UndefOr[EnvelopeMetadata] = js.native
+  var envelopeMetadata: js.UndefOr[EnvelopeMetadata] = js.undefined
   
   /**
     * The URI for retrieving the envelope or envelopes.
     */
-  var envelopeUri: js.UndefOr[String] = js.native
+  var envelopeUri: js.UndefOr[String] = js.undefined
   
   /**
     * This optional object is used to register a webhook that will receive status changes for this envelope.
     */
-  var eventNotification: js.UndefOr[/* Register a Connect webhook for a specific envelope */ EventNotification] = js.native
+  var eventNotification: js.UndefOr[/* Register a Connect webhook for a specific envelope */ EventNotification] = js.undefined
   
   /**
     * An array of `eventNotification` objects.
     */
   var eventNotifications: js.UndefOr[
     js.Array[/* Register a Connect webhook for a specific envelope */ EventNotification]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An integer specifying the number of days that a sent envelope remains active before it expires. A negative number in a response indicates that the envelope has already expired.
     */
-  var expireAfter: js.UndefOr[String] = js.native
+  var expireAfter: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the envelope is set to expire.
     */
-  var expireDateTime: js.UndefOr[String] = js.native
+  var expireDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the envelope expires (is no longer available for signing) after the specified number of days after it is sent (`sentDateTime`).
     * Set  `expireAfter` to set the number of days until an envelope expires. When **false**, the account default setting is used. If the account does
     * not have an expiration setting, the DocuSign default value of 120 days is used.
     */
-  var expireEnabled: js.UndefOr[String] = js.native
+  var expireEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * May contain an external identifier for the envelope.
     */
-  var externalEnvelopeId: js.UndefOr[String] = js.native
+  var externalEnvelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * An array of folders that the envelope belongs to.
     */
-  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.native
+  var folders: js.UndefOr[js.Array[/* This object contains details about a folder. */ Folder]] = js.undefined
   
   /**
     * When set to **true**, indicates that users have added comments to the envelope.
     */
-  var hasComments: js.UndefOr[String] = js.native
+  var hasComments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the form data associated with the envelope has changed since it was sent. If **false**, this property does not appear in the response.
     */
-  var hasFormDataChanged: js.UndefOr[String] = js.native
+  var hasFormDataChanged: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that a wave file (voice recording) is part of the envelope.
     */
-  var hasWavFile: js.UndefOr[String] = js.native
+  var hasWavFile: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var holder: js.UndefOr[String] = js.native
+  var holder: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the envelope was first sent.
     */
-  var initialSentDateTime: js.UndefOr[String] = js.native
+  var initialSentDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, indicates compliance with United States Food and Drug Administration (FDA) regulations on electronic records and electronic signatures (ERES).
     */
-  var is21CFRPart11: js.UndefOr[String] = js.native
+  var is21CFRPart11: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the envelope is a dynamic envelope.
     */
-  var isDynamicEnvelope: js.UndefOr[String] = js.native
+  var isDynamicEnvelope: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the envelope is a signature-provided envelope.
     */
-  var isSignatureProviderEnvelope: js.UndefOr[String] = js.native
+  var isSignatureProviderEnvelope: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the item was last modified.
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Provides lock information about an envelope that a user has locked.
     */
-  var lockInformation: js.UndefOr[/* This section provides information about envelope locks. */ EnvelopeLocks] = js.native
+  var lockInformation: js.UndefOr[/* This section provides information about envelope locks. */ EnvelopeLocks] = js.undefined
   
   /**
     * When set to **true**, prevents senders from changing the contents of `emailBlurb` and `emailSubject` properties for the envelope.
@@ -361,39 +359,39 @@ trait EnvelopeDefinition extends StObject {
     *
     * However, if the `messageLock` node is set to **true** and the `emailSubject` property is empty, senders and correctors are able to add a subject to the envelope.
     */
-  var messageLock: js.UndefOr[String] = js.native
+  var messageLock: js.UndefOr[String] = js.undefined
   
   /**
     * An optional complex element that specifies the notification options for the envelope.
     */
   var notification: js.UndefOr[
     /* A complex element that specifies the notification settings for the envelope. */ Notification
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The URI for retrieving notifications.
     */
-  var notificationUri: js.UndefOr[String] = js.native
+  var notificationUri: js.UndefOr[String] = js.undefined
   
   /**
     * The user's encrypted password hash.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Information about any PowerForms that are included in the envelope.
     */
-  var powerForm: js.UndefOr[/* Contains details about a PowerForm. */ PowerForm] = js.native
+  var powerForm: js.UndefOr[/* Contains details about a PowerForm. */ PowerForm] = js.undefined
   
   /**
     * The date that a purge was completed.
     */
-  var purgeCompletedDate: js.UndefOr[String] = js.native
+  var purgeCompletedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The date that a purge was requested.
     */
-  var purgeRequestDate: js.UndefOr[String] = js.native
+  var purgeRequestDate: js.UndefOr[String] = js.undefined
   
   /**
     * Initiates a purge request. Valid values are:
@@ -401,32 +399,32 @@ trait EnvelopeDefinition extends StObject {
     * * `documents_and_metadata_queued`: Places envelope documents and metadata in the purge queue.
     *
     */
-  var purgeState: js.UndefOr[String] = js.native
+  var purgeState: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the envelope recipients.
     */
-  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.native
+  var recipients: js.UndefOr[/* Envelope recipients */ EnvelopeRecipients] = js.undefined
   
   /**
     * When set to **true**, prevents senders from changing, correcting, or deleting the recipient information for the envelope.
     */
-  var recipientsLock: js.UndefOr[String] = js.native
+  var recipientsLock: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a URI for an endpoint that you can use to retrieve the recipients.
     */
-  var recipientsUri: js.UndefOr[String] = js.native
+  var recipientsUri: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the sender of the envelope.
     */
-  var sender: js.UndefOr[UserInfo] = js.native
+  var sender: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The UTC DateTime when the envelope was sent. Read only.
     */
-  var sentDateTime: js.UndefOr[String] = js.native
+  var sentDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, recipients can sign on a mobile device.
@@ -434,12 +432,12 @@ trait EnvelopeDefinition extends StObject {
     * **Note**: Only Admin users can change this setting.
     *
     */
-  var signerCanSignOnMobile: js.UndefOr[String] = js.native
+  var signerCanSignOnMobile: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the physical location where the signing takes place. It can have two enumeration values; `inPerson` and `online`. The default value is `online`.
     */
-  var signingLocation: js.UndefOr[String] = js.native
+  var signingLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the envelope status. Valid values are:
@@ -447,22 +445,22 @@ trait EnvelopeDefinition extends StObject {
     * * `sent`: The envelope has been sent to the recipients.
     * * `created`: The envelope is saved as a draft and can be modified and sent later.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The data and time that the status changed.
     */
-  var statusChangedDateTime: js.UndefOr[String] = js.native
+  var statusChangedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The DateTime that the envelope changed status (i.e. was created or sent.)
     */
-  var statusDateTime: js.UndefOr[String] = js.native
+  var statusDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the template. If a value is not provided, DocuSign generates a value.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
   /**
     * This object specifies the template recipients. Each `roleName` in the template must have a recipient assigned to it. This object is comprised of the following elements:
@@ -482,19 +480,19 @@ trait EnvelopeDefinition extends StObject {
     * * `tabs`: This property enables the tab values to be specified for matching to tabs in the template.
     *
     */
-  var templateRoles: js.UndefOr[js.Array[TemplateRole]] = js.native
+  var templateRoles: js.UndefOr[js.Array[TemplateRole]] = js.undefined
   
   /**
     * The URI for retrieving any templates associated with the envelope.
     */
-  var templatesUri: js.UndefOr[String] = js.native
+  var templatesUri: js.UndefOr[String] = js.undefined
   
   /**
     *  Used to identify an envelope. The id is a sender-generated value and is valid in the DocuSign system for 7 days. We recommend that you use a transaction ID
     * for offline signing to ensure that an envelope is not sent multiple times. You can use the `transactionId` property to determine an envelope's status
     * (i.e. was it created or not) in cases where the Internet connection was lost before the envelope status was returned.
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the disclosure is shown to recipients in accordance with the account's Electronic Record and Signature Disclosure frequency setting.
@@ -503,17 +501,17 @@ trait EnvelopeDefinition extends StObject {
     * If the `useDisclosure` property is not set, then the account's normal disclosure setting is used and the value of the `useDisclosure` property is not returned in
     * responses when getting envelope information.
     */
-  var useDisclosure: js.UndefOr[String] = js.native
+  var useDisclosure: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the envelope or template was voided.
     */
-  var voidedDateTime: js.UndefOr[String] = js.native
+  var voidedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The reason the envelope or template was voided.
     */
-  var voidedReason: js.UndefOr[String] = js.native
+  var voidedReason: js.UndefOr[String] = js.undefined
 }
 object EnvelopeDefinition {
   

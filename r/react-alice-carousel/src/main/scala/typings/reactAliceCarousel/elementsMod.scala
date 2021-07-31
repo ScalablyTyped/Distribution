@@ -18,108 +18,85 @@ import typings.std.Event
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementsMod {
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "animate")
+  @JSImport("react-alice-carousel/lib/utils/elements", JSImport.Namespace)
   @js.native
-  def animate(element: js.Any, options: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "createAutowidthTransformationSet")
-  @js.native
-  def createAutowidthTransformationSet(el: js.Any): js.Array[TransformationSetItem] = js.native
+  @scala.inline
+  def animate(element: js.Any, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "createClones")
-  @js.native
-  def createClones(props: Props): js.Any = js.native
+  @scala.inline
+  def createAutowidthTransformationSet(el: js.Any): js.Array[TransformationSetItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAutowidthTransformationSet")(el.asInstanceOf[js.Any]).asInstanceOf[js.Array[TransformationSetItem]]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "createDefaultTransformationSet")
-  @js.native
-  def createDefaultTransformationSet(children: js.Array[_], galleryWidth: Double, itemsInSlide: Double): js.Array[TransformationSetItem] = js.native
+  @scala.inline
+  def createClones(props: Props): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClones")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getAutoheightProperty")
-  @js.native
-  def getAutoheightProperty(stageComponent: Element, props: Props, state: State): js.UndefOr[Double] = js.native
+  @scala.inline
+  def createDefaultTransformationSet(children: js.Array[js.Any], galleryWidth: Double, itemsInSlide: Double): js.Array[TransformationSetItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultTransformationSet")(children.asInstanceOf[js.Any], galleryWidth.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any])).asInstanceOf[js.Array[TransformationSetItem]]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getElementCursor")
-  @js.native
-  def getElementCursor(props: Props, state: State): Double = js.native
+  @scala.inline
+  def getAutoheightProperty(stageComponent: Element, props: Props, state: State): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAutoheightProperty")(stageComponent.asInstanceOf[js.Any], props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getElementDimensions")
-  @js.native
-  def getElementDimensions(element: js.Any): Height = js.native
+  @scala.inline
+  def getElementCursor(props: Props, state: State): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementCursor")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getElementFirstChild")
-  @js.native
-  def getElementFirstChild(stageComponent: js.Any, cursor: js.Any): js.Any = js.native
+  @scala.inline
+  def getElementDimensions(element: js.Any): Height = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Height]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getItemWidth")
-  @js.native
-  def getItemWidth(galleryWidth: Double, itemsInSlide: Double): Double = js.native
+  @scala.inline
+  def getElementFirstChild(stageComponent: js.Any, cursor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementFirstChild")(stageComponent.asInstanceOf[js.Any], cursor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getItemsCount")
-  @js.native
-  def getItemsCount(props: Props): js.Any = js.native
+  @scala.inline
+  def getItemWidth(galleryWidth: Double, itemsInSlide: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemWidth")(galleryWidth.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getItemsOffset")
-  @js.native
-  def getItemsOffset(props: Props): `0` | `1` = js.native
+  @scala.inline
+  def getItemsCount(props: Props): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemsCount")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getRenderStageItemStyles")
-  @js.native
-  def getRenderStageItemStyles(i: Double, state: State): AnimationDuration | Transform = js.native
+  @scala.inline
+  def getItemsOffset(props: Props): `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemsOffset")(props.asInstanceOf[js.Any]).asInstanceOf[`0` | `1`]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getRenderStageStyles")
-  @js.native
-  def getRenderStageStyles(nextStyles: js.Any, currentStyles: Style): Style = js.native
+  @scala.inline
+  def getRenderStageItemStyles(i: Double, state: State): AnimationDuration | Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderStageItemStyles")(i.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnimationDuration | Transform]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getRenderWrapperStyles")
-  @js.native
-  def getRenderWrapperStyles(props: Props, state: State, element: js.Any): PaddingLeft = js.native
+  @scala.inline
+  def getRenderStageStyles(nextStyles: js.Any, currentStyles: Style): Style = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderStageStyles")(nextStyles.asInstanceOf[js.Any], currentStyles.asInstanceOf[js.Any])).asInstanceOf[Style]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getSlides")
-  @js.native
-  def getSlides(props: Props): js.Any = js.native
+  @scala.inline
+  def getRenderWrapperStyles(props: Props, state: State, element: js.Any): PaddingLeft = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderWrapperStyles")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[PaddingLeft]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTouchmoveTranslatePosition")
-  @js.native
-  def getTouchmoveTranslatePosition(deltaX: Double, translate3d: Double): Double = js.native
+  @scala.inline
+  def getSlides(props: Props): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSlides")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTransformMatrix")
-  @js.native
-  def getTransformMatrix(element: js.Any): RegExpMatchArray = js.native
+  @scala.inline
+  def getTouchmoveTranslatePosition(deltaX: Double, translate3d: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTouchmoveTranslatePosition")(deltaX.asInstanceOf[js.Any], translate3d.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTransitionProperty")
-  @js.native
-  def getTransitionProperty(): String = js.native
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTransitionProperty")
-  @js.native
-  def getTransitionProperty(options: Transition): String = js.native
+  @scala.inline
+  def getTransformMatrix(element: js.Any): RegExpMatchArray = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformMatrix")(element.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTranslate3dProperty")
-  @js.native
-  def getTranslate3dProperty(nextIndex: js.Any, state: PartialState): Double = js.native
+  @scala.inline
+  def getTransitionProperty(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionProperty")().asInstanceOf[String]
+  @scala.inline
+  def getTransitionProperty(options: Transition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransitionProperty")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "getTranslateXProperty")
-  @js.native
-  def getTranslateXProperty(element: js.Any): Double = js.native
+  @scala.inline
+  def getTranslate3dProperty(nextIndex: js.Any, state: PartialState): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTranslate3dProperty")(nextIndex.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "isElement")
-  @js.native
-  def isElement(element: js.Any): Boolean = js.native
+  @scala.inline
+  def getTranslateXProperty(element: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslateXProperty")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-alice-carousel/lib/utils/elements", "shouldHandleResizeEvent")
-  @js.native
-  def shouldHandleResizeEvent(e: Event): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/elements", "shouldHandleResizeEvent")
-  @js.native
-  def shouldHandleResizeEvent(e: Event, prevDimensions: js.UndefOr[scala.Nothing], nextRootComponentDimensions: RootElement): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/elements", "shouldHandleResizeEvent")
-  @js.native
-  def shouldHandleResizeEvent(e: Event, prevDimensions: RootElement): Boolean = js.native
-  @JSImport("react-alice-carousel/lib/utils/elements", "shouldHandleResizeEvent")
-  @js.native
-  def shouldHandleResizeEvent(e: Event, prevDimensions: RootElement, nextRootComponentDimensions: RootElement): Boolean = js.native
+  @scala.inline
+  def isElement(element: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def shouldHandleResizeEvent(e: Event): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldHandleResizeEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def shouldHandleResizeEvent(e: Event, prevDimensions: Unit, nextRootComponentDimensions: RootElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldHandleResizeEvent")(e.asInstanceOf[js.Any], prevDimensions.asInstanceOf[js.Any], nextRootComponentDimensions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shouldHandleResizeEvent(e: Event, prevDimensions: RootElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldHandleResizeEvent")(e.asInstanceOf[js.Any], prevDimensions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shouldHandleResizeEvent(e: Event, prevDimensions: RootElement, nextRootComponentDimensions: RootElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldHandleResizeEvent")(e.asInstanceOf[js.Any], prevDimensions.asInstanceOf[js.Any], nextRootComponentDimensions.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

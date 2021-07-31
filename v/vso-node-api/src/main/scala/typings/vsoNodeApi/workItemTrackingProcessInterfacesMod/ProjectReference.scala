@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectReference extends StObject {
   
   /**
     * Description of the project
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The ID of the project
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Name of the project
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Url of the project
     */
-  var url: String = js.native
+  var url: String
 }
 object ProjectReference {
   

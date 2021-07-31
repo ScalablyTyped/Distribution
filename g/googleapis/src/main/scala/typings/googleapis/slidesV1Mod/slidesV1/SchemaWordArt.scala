@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing word art.
   */
-@js.native
 trait SchemaWordArt extends StObject {
   
   /**
     * The text rendered as word art.
     */
-  var renderedText: js.UndefOr[String] = js.native
+  var renderedText: js.UndefOr[String] = js.undefined
 }
 object SchemaWordArt {
   

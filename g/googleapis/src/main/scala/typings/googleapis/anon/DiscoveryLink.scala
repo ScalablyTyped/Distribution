@@ -2,35 +2,33 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoveryLink extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var discoveryLink: js.UndefOr[String] = js.native
+  var discoveryLink: js.UndefOr[String] = js.undefined
   
-  var discoveryRestUrl: js.UndefOr[String] = js.native
+  var discoveryRestUrl: js.UndefOr[String] = js.undefined
   
-  var documentationLink: js.UndefOr[String] = js.native
+  var documentationLink: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[X16] = js.native
+  var icons: js.UndefOr[X16] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Array[String]] = js.native
+  var labels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DiscoveryLink {
   

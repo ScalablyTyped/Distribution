@@ -9,48 +9,46 @@ import typings.std.RegExp
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ErrorOverlayOptions extends StObject {
     
     /**
       * Path to a JS file that sets up the error overlay integration.
       */
-    var entry: js.UndefOr[String | `false`] = js.native
+    var entry: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * The error overlay module to use.
       */
-    var module: js.UndefOr[String | `false`] = js.native
+    var module: js.UndefOr[String | `false`] = js.undefined
     
     /**
       * The socket host to use (WDS only).
       */
-    var sockHost: js.UndefOr[String] = js.native
+    var sockHost: js.UndefOr[String] = js.undefined
     
     /**
       * Path to a JS file that sets up the Webpack socket integration.
       */
-    var sockIntegration: js.UndefOr[`false` | (String with _empty) | wds | whm | wps] = js.native
+    var sockIntegration: js.UndefOr[`false` | (String & _empty) | wds | whm | wps] = js.undefined
     
     /**
       * The socket path to use (WDS only).
       */
-    var sockPath: js.UndefOr[String] = js.native
+    var sockPath: js.UndefOr[String] = js.undefined
     
     /**
       * The socket port to use (WDS only).
       */
-    var sockPort: js.UndefOr[Double] = js.native
+    var sockPort: js.UndefOr[Double] = js.undefined
     
     /**
       * Uses a custom SocketJS implementation for older versions of webpack-dev-server.
       */
-    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.native
+    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.undefined
   }
   object ErrorOverlayOptions {
     
@@ -82,7 +80,7 @@ object typesMod {
       def setSockHostUndefined: Self = StObject.set(x, "sockHost", js.undefined)
       
       @scala.inline
-      def setSockIntegration(value: `false` | (String with _empty) | wds | whm | wps): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
+      def setSockIntegration(value: `false` | (String & _empty) | wds | whm | wps): Self = StObject.set(x, "sockIntegration", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSockIntegrationUndefined: Self = StObject.set(x, "sockIntegration", js.undefined)
@@ -107,43 +105,42 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NormalizedErrorOverlayOptions extends StObject {
     
     /**
       * Path to a JS file that sets up the error overlay integration.
       */
-    var entry: String | `false` = js.native
+    var entry: String | `false`
     
     /**
       * The error overlay module to use.
       */
-    var module: String | `false` = js.native
+    var module: String | `false`
     
     /**
       * The socket host to use (WDS only).
       */
-    var sockHost: js.UndefOr[String] = js.native
+    var sockHost: js.UndefOr[String] = js.undefined
     
     /**
       * Path to a JS file that sets up the Webpack socket integration.
       */
-    var sockIntegration: LiteralUnion[wds | whm | wps | `false`, String] = js.native
+    var sockIntegration: LiteralUnion[wds | whm | wps | `false`, String]
     
     /**
       * The socket path to use (WDS only).
       */
-    var sockPath: js.UndefOr[String] = js.native
+    var sockPath: js.UndefOr[String] = js.undefined
     
     /**
       * The socket port to use (WDS only).
       */
-    var sockPort: js.UndefOr[Double] = js.native
+    var sockPort: js.UndefOr[Double] = js.undefined
     
     /**
       * Uses a custom SocketJS implementation for older versions of webpack-dev-server.
       */
-    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.native
+    var useLegacyWDSSockets: js.UndefOr[Boolean] = js.undefined
   }
   object NormalizedErrorOverlayOptions {
     
@@ -196,19 +193,18 @@ object typesMod {
   }
   
   /* Inlined std.Pick<{  forceEnable :boolean | undefined,   include :string | std.RegExp | std.Array<string | std.RegExp>,   exclude :string | std.RegExp | std.Array<string | std.RegExp>}, 'include' | 'exclude' | 'forceEnable'> & @pmmmwh/react-refresh-webpack-plugin.@pmmmwh/react-refresh-webpack-plugin/types/types.OverlayOverrides */
-  @js.native
   trait NormalizedPluginOptions extends StObject {
     
-    var exclude: String | RegExp | (js.Array[String | RegExp]) = js.native
+    var exclude: String | RegExp | (js.Array[String | RegExp])
     
-    var forceEnable: js.UndefOr[Boolean] = js.native
+    var forceEnable: js.UndefOr[Boolean] = js.undefined
     
-    var include: String | RegExp | (js.Array[String | RegExp]) = js.native
+    var include: String | RegExp | (js.Array[String | RegExp])
     
     /**
       * Modifies how the error overlay integration works in the plugin.
       */
-    var overlay: `false` | NormalizedErrorOverlayOptions = js.native
+    var overlay: `false` | NormalizedErrorOverlayOptions
   }
   object NormalizedPluginOptions {
     
@@ -248,13 +244,12 @@ object typesMod {
     }
   }
   
-  @js.native
   trait OverlayOverrides extends StObject {
     
     /**
       * Modifies how the error overlay integration works in the plugin.
       */
-    var overlay: `false` | NormalizedErrorOverlayOptions = js.native
+    var overlay: `false` | NormalizedErrorOverlayOptions
   }
   object OverlayOverrides {
     
@@ -272,33 +267,32 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ReactRefreshPluginOptions extends StObject {
     
     /**
       * Disables detection of react-refresh's Babel plugin (Deprecated since v0.3.0).
       */
-    var disableRefreshCheck: js.UndefOr[Boolean] = js.native
+    var disableRefreshCheck: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Files to explicitly exclude from processing.
       */
-    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var exclude: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Enables the plugin forcefully.
       */
-    var forceEnable: js.UndefOr[Boolean] = js.native
+    var forceEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Files to explicitly include for processing.
       */
-    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var include: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Modifies how the error overlay integration works in the plugin.
       */
-    var overlay: js.UndefOr[Boolean | ErrorOverlayOptions] = js.native
+    var overlay: js.UndefOr[Boolean | ErrorOverlayOptions] = js.undefined
   }
   object ReactRefreshPluginOptions {
     

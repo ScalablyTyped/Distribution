@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,23 +15,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * control be represented as drop-down list containing all the strings.
   * @since OOo 2.0.3
   */
-@js.native
-trait XStringListControl extends XPropertyControl {
+trait XStringListControl
+  extends StObject
+     with XPropertyControl {
   
   /** gets all list entries */
-  val ListEntries: SafeArray[String] = js.native
+  val ListEntries: SafeArray[String]
   
   /** appends a new entry to the end of the list */
-  def appendListEntry(NewEntry: String): Unit = js.native
+  def appendListEntry(NewEntry: String): Unit
   
   /** clears the whole list */
-  def clearList(): Unit = js.native
+  def clearList(): Unit
   
   /** gets all list entries */
-  def getListEntries(): SafeArray[String] = js.native
+  def getListEntries(): SafeArray[String]
   
   /** prepends a new entry to the beginning of the list */
-  def prependListEntry(NewEntry: String): Unit = js.native
+  def prependListEntry(NewEntry: String): Unit
 }
 object XStringListControl {
   

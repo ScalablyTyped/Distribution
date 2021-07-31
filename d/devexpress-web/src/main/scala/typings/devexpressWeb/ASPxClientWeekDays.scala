@@ -2,64 +2,62 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains days and groups of days for use in recurrence patterns.
   */
-@js.native
 trait ASPxClientWeekDays extends StObject {
   
   /**
     * Specifies every day of the week.
     */
-  var EveryDay: Double = js.native
+  var EveryDay: Double
   
   /**
     * Specifies Friday.
     */
-  var Friday: Double = js.native
+  var Friday: Double
   
   /**
     * Specifies Monday.
     */
-  var Monday: Double = js.native
+  var Monday: Double
   
   /**
     * Specifies Saturday.
     */
-  var Saturday: Double = js.native
+  var Saturday: Double
   
   /**
     * Specifies Sunday.
     */
-  var Sunday: Double = js.native
+  var Sunday: Double
   
   /**
     * Specifies Thursday.
     */
-  var Thursday: Double = js.native
+  var Thursday: Double
   
   /**
     * Specifies Tuesday.
     */
-  var Tuesday: Double = js.native
+  var Tuesday: Double
   
   /**
     * Specifies Wednesday.
     */
-  var Wednesday: Double = js.native
+  var Wednesday: Double
   
   /**
     * Specifies Saturday and Sunday.
     */
-  var WeekendDays: Double = js.native
+  var WeekendDays: Double
   
   /**
     * Specifies work days (Monday, Tuesday, Wednesday, Thursday and Friday).
     */
-  var WorkDays: Double = js.native
+  var WorkDays: Double
 }
 object ASPxClientWeekDays {
   

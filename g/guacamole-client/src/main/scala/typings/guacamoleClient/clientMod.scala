@@ -15,7 +15,6 @@ import typings.guacamoleClient.visibleLayerMod.VisibleLayer
 import typings.guacamoleClient.webSocketTunnelMod.WebSocketTunnel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -373,14 +372,15 @@ object clientMod {
     }
     
     // DISCONNECTED
-    @js.native
-    trait ExportLayerBase extends ExportLayer {
+    trait ExportLayerBase
+      extends StObject
+         with ExportLayer {
       
-      var height: Double = js.native
+      var height: Double
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
       
-      var width: Double = js.native
+      var width: Double
     }
     object ExportLayerBase {
       
@@ -407,14 +407,13 @@ object clientMod {
       }
     }
     
-    @js.native
     trait ExportedState extends StObject {
       
-      var currentState: State = js.native
+      var currentState: State
       
-      var currentTimestamp: Double = js.native
+      var currentTimestamp: Double
       
-      var layers: NumberDictionary[ExportLayer] = js.native
+      var layers: NumberDictionary[ExportLayer]
     }
     object ExportedState {
       

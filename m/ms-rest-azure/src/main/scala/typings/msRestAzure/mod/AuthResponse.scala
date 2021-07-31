@@ -2,15 +2,13 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthResponse extends StObject {
   
-  var credentials: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials = js.native
+  var credentials: DeviceTokenCredentials | ApplicationTokenCredentials | UserTokenCredentials
   
-  var subscriptions: js.Array[LinkedSubscription] = js.native
+  var subscriptions: js.Array[LinkedSubscription]
 }
 object AuthResponse {
   

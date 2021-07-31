@@ -6,32 +6,32 @@ import typings.reactMdForm.labelLabelMod.LabelProps
 import typings.std.HTMLLabelElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object floatingLabelMod {
   
   @JSImport("@react-md/form/types/label/FloatingLabel", "FloatingLabel")
   @js.native
-  val FloatingLabel: ForwardRefExoticComponent[FloatingLabelProps with RefAttributes[HTMLLabelElement]] = js.native
+  val FloatingLabel: ForwardRefExoticComponent[FloatingLabelProps & RefAttributes[HTMLLabelElement]] = js.native
   
-  @js.native
-  trait FloatingLabelProps extends LabelProps {
+  trait FloatingLabelProps
+    extends StObject
+       with LabelProps {
     
     /**
       * Boolean if it should use the dense spec.
       */
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the label is currently floating over the text field.
       */
-    var floating: js.UndefOr[Boolean] = js.native
+    var floating: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the text input or textarea currently have a value.
       */
-    var valued: Boolean = js.native
+    var valued: Boolean
   }
   object FloatingLabelProps {
     

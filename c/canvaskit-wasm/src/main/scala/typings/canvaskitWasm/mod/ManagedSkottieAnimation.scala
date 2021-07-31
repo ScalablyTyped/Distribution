@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ManagedSkottieAnimation extends SkottieAnimation {
+trait ManagedSkottieAnimation
+  extends StObject
+     with SkottieAnimation {
   
   def getColorProps(): js.Array[js.Object] = js.native
   

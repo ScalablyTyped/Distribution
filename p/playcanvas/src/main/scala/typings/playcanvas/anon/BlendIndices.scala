@@ -2,27 +2,25 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlendIndices extends StObject {
   
-  var blendIndices: js.UndefOr[js.Array[Double]] = js.native
+  var blendIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var blendWeights: js.UndefOr[js.Array[Double]] = js.native
+  var blendWeights: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var colors: js.UndefOr[js.Array[Double]] = js.native
+  var colors: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var indices: js.UndefOr[js.Array[Double]] = js.native
+  var indices: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var normals: js.UndefOr[js.Array[Double]] = js.native
+  var normals: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var tangents: js.UndefOr[js.Array[Double]] = js.native
+  var tangents: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var uvs: js.UndefOr[js.Array[Double]] = js.native
+  var uvs: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var uvs1: js.UndefOr[js.Array[Double]] = js.native
+  var uvs1: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object BlendIndices {
   

@@ -15,10 +15,13 @@ import typings.storybookAddonKnobs.typeDefsMod.Knob
 import typings.storybookAddonKnobs.typesMod.KnobType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@storybook/addon-knobs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/addon-knobs", "ADDON_ID")
   @js.native
@@ -52,195 +55,137 @@ object mod {
   @js.native
   val SET_OPTIONS: String = js.native
   
-  @JSImport("@storybook/addon-knobs", "array")
-  @js.native
-  def array(name: String, value: ArrayTypeKnobValue): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "array")
-  @js.native
-  def array(name: String, value: ArrayTypeKnobValue, separator: js.UndefOr[scala.Nothing], groupId: String): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "array")
-  @js.native
-  def array(name: String, value: ArrayTypeKnobValue, separator: String): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "array")
-  @js.native
-  def array(name: String, value: ArrayTypeKnobValue, separator: String, groupId: String): js.Array[String] = js.native
+  @scala.inline
+  def array(name: String, value: ArrayTypeKnobValue): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def array(name: String, value: ArrayTypeKnobValue, separator: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def array(name: String, value: ArrayTypeKnobValue, separator: String, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def array(name: String, value: ArrayTypeKnobValue, separator: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@storybook/addon-knobs", "boolean")
-  @js.native
-  def boolean(name: String, value: Boolean): Boolean = js.native
-  @JSImport("@storybook/addon-knobs", "boolean")
-  @js.native
-  def boolean(name: String, value: Boolean, groupId: String): Boolean = js.native
+  @scala.inline
+  def boolean(name: String, value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def boolean(name: String, value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@storybook/addon-knobs", "button")
-  @js.native
-  def button(name: String, callback: ButtonTypeOnClickProp): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@storybook/addon-knobs", "button")
-  @js.native
-  def button(name: String, callback: ButtonTypeOnClickProp, groupId: String): js.UndefOr[scala.Nothing] = js.native
+  @scala.inline
+  def button(name: String, callback: ButtonTypeOnClickProp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def button(name: String, callback: ButtonTypeOnClickProp, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("button")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-knobs", "color")
-  @js.native
-  def color(name: String, value: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "color")
-  @js.native
-  def color(name: String, value: String, groupId: String): String = js.native
+  @scala.inline
+  def color(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def color(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@storybook/addon-knobs", "date")
-  @js.native
-  def date(name: String): Double = js.native
-  @JSImport("@storybook/addon-knobs", "date")
-  @js.native
-  def date(name: String, value: js.UndefOr[scala.Nothing], groupId: String): Double = js.native
-  @JSImport("@storybook/addon-knobs", "date")
-  @js.native
-  def date(name: String, value: Date): Double = js.native
-  @JSImport("@storybook/addon-knobs", "date")
-  @js.native
-  def date(name: String, value: Date, groupId: String): Double = js.native
+  @scala.inline
+  def date(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def date(name: String, value: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def date(name: String, value: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def date(name: String, value: Date, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@storybook/addon-knobs", "files")
-  @js.native
-  def files(name: String, accept: String): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "files")
-  @js.native
-  def files(name: String, accept: String, value: js.UndefOr[scala.Nothing], groupId: String): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "files")
-  @js.native
-  def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = js.native
-  @JSImport("@storybook/addon-knobs", "files")
-  @js.native
-  def files(name: String, accept: String, value: js.Array[String], groupId: String): js.Array[String] = js.native
+  @scala.inline
+  def files(name: String, accept: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def files(name: String, accept: String, value: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def files(name: String, accept: String, value: js.Array[String], groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def files(name: String, accept: String, value: Unit, groupId: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("files")(name.asInstanceOf[js.Any], accept.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@storybook/addon-knobs", "knob")
-  @js.native
-  def knob[T /* <: KnobType */, V](name: String, options: Knob[T]): V = js.native
+  @scala.inline
+  def knob[T /* <: KnobType */, V](name: String, options: Knob[T]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("knob")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("@storybook/addon-knobs", "number")
-  @js.native
-  def number(name: String, value: Double): Double = js.native
-  @JSImport("@storybook/addon-knobs", "number")
-  @js.native
-  def number(name: String, value: Double, options: js.UndefOr[scala.Nothing], groupId: String): Double = js.native
-  @JSImport("@storybook/addon-knobs", "number")
-  @js.native
-  def number(name: String, value: Double, options: NumberTypeKnobOptions): Double = js.native
-  @JSImport("@storybook/addon-knobs", "number")
-  @js.native
-  def number(name: String, value: Double, options: NumberTypeKnobOptions, groupId: String): Double = js.native
+  @scala.inline
+  def number(name: String, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def number(name: String, value: Double, options: Unit, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def number(name: String, value: Double, options: NumberTypeKnobOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def number(name: String, value: Double, options: NumberTypeKnobOptions, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("number")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@storybook/addon-knobs", "optionsKnob")
-  @js.native
+  @scala.inline
+  def `object`[T](name: String, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def `object`[T](name: String, value: T, groupId: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
   def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
     name: String,
     valuesObj: OptionsTypeOptionsProp[T],
     value: OptionsTypeKnobValue[T],
     optionsObj: OptionsKnobOptions
-  ): T = js.native
-  @JSImport("@storybook/addon-knobs", "optionsKnob")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsKnob")(name.asInstanceOf[js.Any], valuesObj.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionsObj.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def optionsKnob[T /* <: OptionsTypeKnobSingleValue */](
     name: String,
     valuesObj: OptionsTypeOptionsProp[T],
     value: OptionsTypeKnobValue[T],
     optionsObj: OptionsKnobOptions,
     groupId: String
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsKnob")(name.asInstanceOf[js.Any], valuesObj.asInstanceOf[js.Any], value.asInstanceOf[js.Any], optionsObj.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(
-    name: String,
-    options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]],
-    value: js.UndefOr[scala.Nothing],
-    groupId: String
-  ): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String, groupId: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double): Double = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
-  @JSImport("@storybook/addon-knobs", "radios")
-  @js.native
-  def radios_Union(name: String, options: RadiosTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
+  @scala.inline
+  def radios(name: String, options: RadiosTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Null]): Null = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(
-    name: String,
-    options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]],
-    value: js.UndefOr[scala.Nothing],
-    groupId: String
-  ): js.UndefOr[scala.Nothing] = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[String], value: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[String], value: String, groupId: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[js.Array[PropertyKey]], value: js.Array[PropertyKey]): js.Array[PropertyKey] = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
+  @scala.inline
+  def radios_Unit(name: String, options: RadiosTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("radios")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Null]): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Null]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[String], value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[String], value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[js.Array[PropertyKey]], value: js.Array[PropertyKey]): js.Array[PropertyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyKey]]
+  @scala.inline
   def select(
     name: String,
     options: SelectTypeOptionsProp[js.Array[PropertyKey]],
     value: js.Array[PropertyKey],
     groupId: String
-  ): js.Array[PropertyKey] = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean): Boolean = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean, groupId: String): Boolean = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double): Double = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = js.native
-  @JSImport("@storybook/addon-knobs", "select")
-  @js.native
-  def select_Union(name: String, options: SelectTypeOptionsProp[js.UndefOr[scala.Nothing]]): js.UndefOr[scala.Nothing] = js.native
+  ): js.Array[PropertyKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[js.Array[PropertyKey]]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Boolean], value: Boolean, groupId: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Double], value: Double, groupId: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Null], value: Null, groupId: String): Null = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Null]
+  @scala.inline
+  def select(name: String, options: SelectTypeOptionsProp[Unit], value: Unit, groupId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-knobs", "text")
-  @js.native
-  def text(name: String, value: String): String = js.native
-  @JSImport("@storybook/addon-knobs", "text")
-  @js.native
-  def text(name: String, value: String, groupId: String): String = js.native
+  @scala.inline
+  def select_Unit(name: String, options: SelectTypeOptionsProp[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@storybook/addon-knobs", "withKnobs")
-  @js.native
+  @scala.inline
+  def text(name: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def text(name: String, value: String, groupId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], groupId.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
   def withKnobs(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = js.native
-  
-  @JSImport("@storybook/addon-knobs", "object")
-  @js.native
-  def `object`[T](name: String, value: T): T = js.native
-  @JSImport("@storybook/addon-knobs", "object")
-  @js.native
-  def `object`[T](name: String, value: T, groupId: String): T = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withKnobs")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

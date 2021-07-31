@@ -2,61 +2,59 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceRecommendation extends StObject {
   
   /**
     * The AWS account ID of the instance.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The instance type of the current instance.
     */
-  var currentInstanceType: js.UndefOr[CurrentInstanceType] = js.native
+  var currentInstanceType: js.UndefOr[CurrentInstanceType] = js.undefined
   
   /**
     * The finding classification for the instance. Findings for instances include:     Underprovisioned —An instance is considered under-provisioned when at least one specification of your instance, such as CPU, memory, or network, does not meet the performance requirements of your workload. Under-provisioned instances may lead to poor application performance.     Overprovisioned —An instance is considered over-provisioned when at least one specification of your instance, such as CPU, memory, or network, can be sized down while still meeting the performance requirements of your workload, and no specification is under-provisioned. Over-provisioned instances may lead to unnecessary infrastructure cost.     Optimized —An instance is considered optimized when all specifications of your instance, such as CPU, memory, and network, meet the performance requirements of your workload and is not over provisioned. An optimized instance runs your workloads with optimal performance and infrastructure cost. For optimized resources, AWS Compute Optimizer might recommend a new generation instance type.    The values that are returned might be UNDER_PROVISIONED, OVER_PROVISIONED, or OPTIMIZED. 
     */
-  var finding: js.UndefOr[Finding] = js.native
+  var finding: js.UndefOr[Finding] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the current instance.
     */
-  var instanceArn: js.UndefOr[InstanceArn] = js.native
+  var instanceArn: js.UndefOr[InstanceArn] = js.undefined
   
   /**
     * The name of the current instance.
     */
-  var instanceName: js.UndefOr[InstanceName] = js.native
+  var instanceName: js.UndefOr[InstanceName] = js.undefined
   
   /**
     * The time stamp of when the instance recommendation was last refreshed.
     */
-  var lastRefreshTimestamp: js.UndefOr[LastRefreshTimestamp] = js.native
+  var lastRefreshTimestamp: js.UndefOr[LastRefreshTimestamp] = js.undefined
   
   /**
     * The number of days for which utilization metrics were analyzed for the instance.
     */
-  var lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.native
+  var lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined
   
   /**
     * An array of objects that describe the recommendation options for the instance.
     */
-  var recommendationOptions: js.UndefOr[RecommendationOptions] = js.native
+  var recommendationOptions: js.UndefOr[RecommendationOptions] = js.undefined
   
   /**
     * An array of objects that describe the source resource of the recommendation.
     */
-  var recommendationSources: js.UndefOr[RecommendationSources] = js.native
+  var recommendationSources: js.UndefOr[RecommendationSources] = js.undefined
   
   /**
     * An array of objects that describe the utilization metrics of the instance.
     */
-  var utilizationMetrics: js.UndefOr[UtilizationMetrics] = js.native
+  var utilizationMetrics: js.UndefOr[UtilizationMetrics] = js.undefined
 }
 object InstanceRecommendation {
   

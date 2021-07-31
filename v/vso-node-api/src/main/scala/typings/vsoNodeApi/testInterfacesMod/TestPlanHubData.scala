@@ -2,21 +2,19 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestPlanHubData extends StObject {
   
-  var selectedSuiteId: Double = js.native
+  var selectedSuiteId: Double
   
-  var testPlan: TestPlan = js.native
+  var testPlan: TestPlan
   
-  var testPoints: js.Array[TestPoint] = js.native
+  var testPoints: js.Array[TestPoint]
   
-  var testSuites: js.Array[TestSuite] = js.native
+  var testSuites: js.Array[TestSuite]
   
-  var totalTestPoints: Double = js.native
+  var totalTestPoints: Double
 }
 object TestPlanHubData {
   

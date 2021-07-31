@@ -3,17 +3,15 @@ package typings.nodeZendesk.mod.Tickets
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailCC extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var user_email: js.UndefOr[String] = js.native
+  var user_email: js.UndefOr[String] = js.undefined
   
-  var user_id: js.UndefOr[ZendeskID] = js.native
+  var user_id: js.UndefOr[ZendeskID] = js.undefined
 }
 object EmailCC {
   

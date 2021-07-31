@@ -5,7 +5,6 @@ import typings.std.RegExp
 import typings.wolfy87Eventemitter.anon.Listener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,8 @@ object mod {
   @JSImport("wolfy87-eventemitter", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter
+    extends StObject
+       with typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter
   
   type EventEmitter = typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter
   
@@ -168,7 +168,7 @@ object mod {
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
       def emitEvent(event: String): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def emitEvent(event: String, args: js.Array[_]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emitEvent(event: String, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Emits to all events that match the regular expression passed
         * When emitted, every listener attached to the event(s) will be executed.
@@ -181,7 +181,7 @@ object mod {
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
       def emitEvent(event: RegExp): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
-      def emitEvent(event: RegExp, args: js.Array[_]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def emitEvent(event: RegExp, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       
       /**
         * Takes a list of listener objects and flattens it into a list of listener functions.
@@ -450,7 +450,7 @@ object mod {
         * @param {Array} [args] Optional array of arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def trigger(event: String, args: js.Array[_]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def trigger(event: String, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
       /**
         * Emits to all events that match the regular expression passed
         * When emitted, every listener attached to the event(s) will be executed.
@@ -462,7 +462,7 @@ object mod {
         * @param {Array} [args] Optional array of arguments to be passed to each listener.
         * @return {EventEmitter} Current instance of EventEmitter for chaining.
         */
-      def trigger(event: RegExp, args: js.Array[_]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
+      def trigger(event: RegExp, args: js.Array[js.Any]): typings.wolfy87Eventemitter.mod.Wolfy87EventEmitter.EventEmitter = js.native
     }
     
     /**

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemUpdateInfo extends StObject {
   
   /**
     * The time when the update was first available. A zero value indicates that this field is not set. This field is set only if an update is available (that is, updateStatus is neither
     * UPDATE_STATUS_UNKNOWN nor UP_TO_DATE).
     */
-  var updateReceivedTime: js.UndefOr[String] = js.native
+  var updateReceivedTime: js.UndefOr[String] = js.undefined
   
   /** The status of an update: whether an update exists and what type it is. */
-  var updateStatus: js.UndefOr[String] = js.native
+  var updateStatus: js.UndefOr[String] = js.undefined
 }
 object SystemUpdateInfo {
   

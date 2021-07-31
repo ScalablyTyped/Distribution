@@ -2,13 +2,11 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareDBSourceOptions extends StObject {
   
-  var source: js.UndefOr[Boolean] = js.native
+  var source: js.UndefOr[Boolean] = js.undefined
 }
 object ShareDBSourceOptions {
   

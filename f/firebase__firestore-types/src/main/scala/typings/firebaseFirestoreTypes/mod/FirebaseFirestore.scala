@@ -4,7 +4,6 @@ import typings.firebaseFirestoreTypes.anon.Complete
 import typings.firebaseFirestoreTypes.anon.Delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/firestore-types", "FirebaseFirestore")

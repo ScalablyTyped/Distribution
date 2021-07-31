@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityMailFromDomainAttributesResponse extends StObject {
   
   /**
     * A map of identities to custom MAIL FROM attributes.
     */
-  var MailFromDomainAttributes: typings.awsSdk.sesMod.MailFromDomainAttributes = js.native
+  var MailFromDomainAttributes: typings.awsSdk.sesMod.MailFromDomainAttributes
 }
 object GetIdentityMailFromDomainAttributesResponse {
   

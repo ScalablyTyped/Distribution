@@ -19,7 +19,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,7 +38,7 @@ object mod {
     def close(): Unit = js.native
     def close(callback: js.Function0[Unit]): Unit = js.native
     
-    var connections: Set[_] = js.native
+    var connections: Set[js.Any] = js.native
     
     @JSName("emit")
     def emit_close(event: close): Boolean = js.native
@@ -49,81 +48,42 @@ object mod {
     /** Start listening on selected port and interface */
     def listen(): Server = js.native
     def listen(handle: js.Any): Server = js.native
-    def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(handle: js.Any, backlog: Double): Server = js.native
     def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(handle: js.Any, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(options: ListenOptions): Server = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String): Unit = js.native
-    def listen(path: String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String, backlog: Double): Server = js.native
     def listen(path: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(path: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(path: String, listeningListener: js.Function0[Unit]): Unit = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String, backlog: Double): Server = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: String,
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double): Server = js.native
     def listen(port: Double, backlog: Double): Server = js.native
     def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, hostname: String): Server = js.native
-    def listen(
-      port: Double,
-      hostname: String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     def listen(port: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, backlog: Double): Server = js.native
+    def listen(port: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: String): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Double): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: String, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: String, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, hostname: Unit, listeningListener: js.Function0[Unit]): Server = js.native
+    def listen(port: Unit, listeningListener: js.Function0[Unit]): Server = js.native
     @JSName("listen")
     def listen_Server(path: String): Server = js.native
     
@@ -226,18 +186,17 @@ object mod {
     def updateSecureContext(options: TlsOptions): Unit = js.native
   }
   
-  @js.native
   trait SMTPServerAddress extends StObject {
     
     /**
       * the address provided with the MAIL FROM or RCPT TO command
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * an object with additional arguments (all key names are uppercase)
       */
-    var args: js.Object = js.native
+    var args: js.Object
   }
   object SMTPServerAddress {
     
@@ -258,34 +217,33 @@ object mod {
     }
   }
   
-  @js.native
   trait SMTPServerAuthentication extends StObject {
     
     /**
       *  the OAuth2 bearer access token if 'XOAUTH2' was used as the authentication method
       */
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
     /**
       * indicates the authentication method used, 'PLAIN', 'LOGIN' or 'XOAUTH2'
       */
-    var method: PLAIN | LOGIN | XOAUTH2 = js.native
+    var method: PLAIN | LOGIN | XOAUTH2
     
     /**
       * the password if LOGIN or PLAIN was used
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * the username of the user
       */
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
     /**
       * a function for validating CRAM-MD5 challenge responses.
       * Takes the password of the user as an argument and returns true if the response matches the password
       */
-    def validatePassword(password: String): Boolean = js.native
+    def validatePassword(password: String): Boolean
   }
   object SMTPServerAuthentication {
     
@@ -324,21 +282,20 @@ object mod {
     }
   }
   
-  @js.native
   trait SMTPServerAuthenticationResponse extends StObject {
     
     /**
       * an object to return if XOAUTH2 authentication failed (do not set the error object in this case).
       * This value is serialized to JSON and base64 encoded automatically, so you can just return the object
       */
-    var data: js.UndefOr[js.Object] = js.native
+    var data: js.UndefOr[js.Object] = js.undefined
     
     /**
       * can be any value - if this is set then the user is considered logged in
       * and this value is used later with the session data to identify the user.
       * If this value is empty, then the authentication is considered failed
       */
-    var user: js.UndefOr[js.Any] = js.native
+    var user: js.UndefOr[js.Any] = js.undefined
   }
   object SMTPServerAuthenticationResponse {
     
@@ -381,18 +338,17 @@ object mod {
     var sizeExceeded: Boolean = js.native
   }
   
-  @js.native
   trait SMTPServerEnvelope extends StObject {
     
     /**
       * includes an address object or is set to false
       */
-    var mailFrom: SMTPServerAddress | `false` = js.native
+    var mailFrom: SMTPServerAddress | `false`
     
     /**
       * includes an array of address objects
       */
-    var rcptTo: js.Array[SMTPServerAddress] = js.native
+    var rcptTo: js.Array[SMTPServerAddress]
   }
   object SMTPServerEnvelope {
     
@@ -416,13 +372,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait SMTPServerOptions extends TlsOptions {
+  trait SMTPServerOptions
+    extends StObject
+       with TlsOptions {
     
     /**
       * optional boolean, if set to true allows authentication even if connection is not secured first
       */
-    var allowInsecureAuth: js.UndefOr[Boolean] = js.native
+    var allowInsecureAuth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional array of allowed authentication methods, defaults to ['PLAIN', 'LOGIN'].
@@ -432,29 +389,29 @@ object mod {
       * Authentication is only allowed in secure mode
       * (either the server is started with secure: true option or STARTTLS command is used)
       */
-    var authMethods: js.UndefOr[js.Array[String]] = js.native
+    var authMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * allow authentication, but do not require it
       */
-    var authOptional: js.UndefOr[Boolean] = js.native
+    var authOptional: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional greeting message.
       * This message is appended to the default ESMTP response.
       */
-    var banner: js.UndefOr[String] = js.native
+    var banner: js.UndefOr[String] = js.undefined
     
     /**
       * How many millisceonds to wait before disconnecting pending
       * connections once `server.close()` has been called (defaults to 30 seconds)
       */
-    var closeTimeout: js.UndefOr[ms] = js.native
+    var closeTimeout: js.UndefOr[ms] = js.undefined
     
     /**
       * optional boolean, if set to true then does not try to reverse resolve client hostname
       */
-    var disableReverseLookup: js.UndefOr[Boolean] = js.native
+    var disableReverseLookup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional array of disabled commands (see all supported commands here).
@@ -462,22 +419,22 @@ object mod {
       * use ['AUTH'] as this value.
       * If you want to allow authentication in clear text, set it to ['STARTTLS'].
       */
-    var disabledCommands: js.UndefOr[js.Array[String]] = js.native
+    var disabledCommands: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * optional boolean, if set to true then does not show 8BITMIME in features list
       */
-    var hide8BITMIME: js.UndefOr[Boolean] = js.native
+    var hide8BITMIME: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional boolean, if set to true then does not show PIPELINING in feature list
       */
-    var hidePIPELINING: js.UndefOr[Boolean] = js.native
+    var hidePIPELINING: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional boolean, if set to true then does not show SMTPUTF8 in features list
       */
-    var hideSMTPUTF8: js.UndefOr[Boolean] = js.native
+    var hideSMTPUTF8: js.UndefOr[Boolean] = js.undefined
     
     // TODO: ('AUTH' | 'STARTTLS' | 'XCLIENT' | 'XFORWARD')[];
     /**
@@ -486,35 +443,35 @@ object mod {
       * when creating integration test servers for testing the scenario
       * where you want to try STARTTLS even when it is not advertised
       */
-    var hideSTARTTLS: js.UndefOr[Boolean] = js.native
+    var hideSTARTTLS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * boolean, if set to true use LMTP protocol instead of SMTP
       */
-    var lmtp: js.UndefOr[Boolean] = js.native
+    var lmtp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional bunyan compatible logger instance.
       * If set to true then logs to console.
       * If value is not set or is false then nothing is logged
       */
-    var logger: js.UndefOr[Logger | Boolean] = js.native
+    var logger: js.UndefOr[Logger | Boolean] = js.undefined
     
     /**
       * sets the maximum number of concurrently connected clients, defaults to Infinity
       */
-    var maxClients: js.UndefOr[Double] = js.native
+    var maxClients: js.UndefOr[Double] = js.undefined
     
     /**
       * optional hostname of the server,
       * used for identifying to the client (defaults to os.hostname())
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * optional boolean, if set to true then upgrade sockets to TLS immediately after connection is established. Works with secure: true
       */
-    var needsUpgrade: js.UndefOr[Boolean] = js.native
+    var needsUpgrade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The callback to handle authentications ([see details](https://github.com/andris9/smtp-server#handling-authentication))
@@ -530,7 +487,7 @@ object mod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the callback that informs about closed client connection
@@ -541,7 +498,7 @@ object mod {
           /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The callback to handle the client connection. ([see details](https://github.com/andris9/smtp-server#validating-client-connection))
@@ -552,7 +509,7 @@ object mod {
           /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the callback to handle incoming messages ([see details](https://github.com/andris9/smtp-server#processing-incoming-message))
@@ -564,7 +521,7 @@ object mod {
           /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * the callback to validate MAIL FROM commands ([see details](https://github.com/andris9/smtp-server#validating-sender-addresses))
@@ -576,7 +533,7 @@ object mod {
           /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The callback to validate RCPT TO commands ([see details](https://github.com/andris9/smtp-server#validating-recipient-addresses))
@@ -588,7 +545,7 @@ object mod {
           /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * if true, the connection will use TLS. The default is false.
@@ -598,45 +555,45 @@ object mod {
       * If secure is true, additional tls options for tls.
       * createServer can be added directly onto this options object.
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** indicate an TLS server where TLS is handled upstream */
-    var secured: js.UndefOr[Boolean] = js.native
+    var secured: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional maximum allowed message size in bytes
       * ([see details](https://github.com/andris9/smtp-server#using-size-extension))
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * optional Map or an object of TLS options for SNI where servername is the key. Overrided by SNICallback.
       */
-    var sniOptions: js.UndefOr[StringDictionary[TlsOptions] | (Map[String, TlsOptions])] = js.native
+    var sniOptions: js.UndefOr[StringDictionary[TlsOptions] | (Map[String, TlsOptions])] = js.undefined
     
     /**
       * How many milliseconds of inactivity to allow before disconnecting the client (defaults to 1 minute)
       */
-    var socketTimeout: js.UndefOr[ms] = js.native
+    var socketTimeout: js.UndefOr[ms] = js.undefined
     
     /**
       * boolean, if set to true expects to be behind a proxy that emits a
       * [PROXY](http://www.haproxy.org/download/1.5/doc/proxy-protocol.txt) header (version 1 only)
       */
-    var useProxy: js.UndefOr[Boolean] = js.native
+    var useProxy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * boolean, if set to true, enables usage of
       * [XCLIENT](http://www.postfix.org/XCLIENT_README.html) extension to override connection properties.
       * See session.xClient (Map object) for the details provided by the client
       */
-    var useXClient: js.UndefOr[Boolean] = js.native
+    var useXClient: js.UndefOr[Boolean] = js.undefined
     
     /**
       * boolean, if set to true, enables usage of [XFORWARD](http://www.postfix.org/XFORWARD_README.html) extension.
       * See session.xForward (Map object) for the details provided by the client
       */
-    var useXForward: js.UndefOr[Boolean] = js.native
+    var useXForward: js.UndefOr[Boolean] = js.undefined
   }
   object SMTPServerOptions {
     
@@ -853,62 +810,61 @@ object mod {
     }
   }
   
-  @js.native
   trait SMTPServerSession extends StObject {
     
     /**
       * reverse resolved hostname for remoteAddress
       */
-    var clientHostname: String = js.native
+    var clientHostname: String
     
     /**
       * Envelope Object
       */
-    var envelope: SMTPServerEnvelope = js.native
+    var envelope: SMTPServerEnvelope
     
     /**
       * hostname the client provided with HELO/EHLO call
       */
-    var hostNameAppearsAs: String = js.native
+    var hostNameAppearsAs: String
     
     /**
       * random string identificator generated when the client connected
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * local IP address for the connected client
       */
-    var localAddress: String = js.native
+    var localAddress: String
     
     /**
       * local port number for the connected client
       */
-    var localPort: Double = js.native
+    var localPort: Double
     
     /**
       * the opening SMTP command (HELO/EHLO/LHLO)
       */
-    var openingCommand: String = js.native
+    var openingCommand: String
     
     /**
       * remote IP address for the connected client
       */
-    var remoteAddress: String = js.native
+    var remoteAddress: String
     
     /**
       * remote port number for the connected client
       */
-    var remotePort: Double = js.native
+    var remotePort: Double
     
     /**
       *  If true, then the connection is using TLS
       */
-    var secure: Boolean = js.native
+    var secure: Boolean
     
-    var tlsOptions: TlsOptions = js.native
+    var tlsOptions: TlsOptions
     
-    var transmissionType: String = js.native
+    var transmissionType: String
   }
   object SMTPServerSession {
     

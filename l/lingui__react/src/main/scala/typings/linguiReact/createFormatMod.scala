@@ -3,17 +3,17 @@ package typings.linguiReact
 import typings.linguiReact.renderMod.RenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createFormatMod {
   
-  @js.native
-  trait FormatPropsWithoutI18n[V, FormatOptions] extends RenderProps {
+  trait FormatPropsWithoutI18n[V, FormatOptions]
+    extends StObject
+       with RenderProps {
     
-    var format: js.UndefOr[FormatOptions] = js.native
+    var format: js.UndefOr[FormatOptions] = js.undefined
     
-    var value: V = js.native
+    var value: V
   }
   object FormatPropsWithoutI18n {
     
@@ -24,7 +24,7 @@ object createFormatMod {
     }
     
     @scala.inline
-    implicit class FormatPropsWithoutI18nMutableBuilder[Self <: FormatPropsWithoutI18n[_, _], V, FormatOptions] (val x: Self with (FormatPropsWithoutI18n[V, FormatOptions])) extends AnyVal {
+    implicit class FormatPropsWithoutI18nMutableBuilder[Self <: FormatPropsWithoutI18n[?, ?], V, FormatOptions] (val x: Self & (FormatPropsWithoutI18n[V, FormatOptions])) extends AnyVal {
       
       @scala.inline
       def setFormat(value: FormatOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])

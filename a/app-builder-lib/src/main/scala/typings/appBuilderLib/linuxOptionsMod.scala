@@ -9,20 +9,19 @@ import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linuxOptionsMod {
   
-  @js.native
   trait AppImageOptions
-    extends CommonLinuxOptions
+    extends StObject
+       with CommonLinuxOptions
        with TargetSpecificOptions {
     
     /**
       * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). Only plain text is supported.
       */
-    val license: js.UndefOr[String | Null] = js.native
+    val license: js.UndefOr[String | Null] = js.undefined
   }
   object AppImageOptions {
     
@@ -46,38 +45,37 @@ object linuxOptionsMod {
     }
   }
   
-  @js.native
   trait CommonLinuxOptions extends StObject {
     
     /**
       * The [application category](https://specifications.freedesktop.org/menu-spec/latest/apa.html#main-category-registry).
       */
-    val category: js.UndefOr[String | Null] = js.native
+    val category: js.UndefOr[String | Null] = js.undefined
     
     /**
       * As [description](/configuration/configuration#Metadata-description) from application package.json, but allows you to specify different for Linux.
       */
-    val description: js.UndefOr[String | Null] = js.native
+    val description: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The [Desktop file](https://developer.gnome.org/integration-guide/stable/desktop-files.html.en) entries (name to value).
       */
-    val desktop: js.UndefOr[js.Any | Null] = js.native
+    val desktop: js.UndefOr[js.Any | Null] = js.undefined
     
     /**
       * The executable parameters. Pass to executableName
       */
-    val executableArgs: js.UndefOr[js.Array[String] | Null] = js.native
+    val executableArgs: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The mime types in addition to specified in the file associations. Use it if you don't want to register a new mime type, but reuse existing.
       */
-    val mimeTypes: js.UndefOr[js.Array[String] | Null] = js.native
+    val mimeTypes: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The [short description](https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Description).
       */
-    val synopsis: js.UndefOr[String | Null] = js.native
+    val synopsis: js.UndefOr[String | Null] = js.undefined
   }
   object CommonLinuxOptions {
     
@@ -152,13 +150,14 @@ object linuxOptionsMod {
     }
   }
   
-  @js.native
-  trait DebOptions extends LinuxTargetSpecificOptions {
+  trait DebOptions
+    extends StObject
+       with LinuxTargetSpecificOptions {
     
     /**
       * The [Priority](https://www.debian.org/doc/debian-policy/ch-controlfields.html#s-f-Priority) attribute.
       */
-    val priority: js.UndefOr[String | Null] = js.native
+    val priority: js.UndefOr[String | Null] = js.undefined
   }
   object DebOptions {
     
@@ -182,34 +181,34 @@ object linuxOptionsMod {
     }
   }
   
-  @js.native
   trait LinuxConfiguration
-    extends PlatformSpecificBuildOptions
-       with CommonLinuxOptions {
+    extends StObject
+       with CommonLinuxOptions
+       with PlatformSpecificBuildOptions {
     
     /**
       * The executable name. Defaults to `productName`.
       * Cannot be specified per target, allowed only in the `linux`.
       */
-    val executableName: js.UndefOr[String | Null] = js.native
+    val executableName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to icon set directory or one png file, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory. The icon filename must contain the size (e.g. 32x32.png) of the icon.
       * By default will be generated automatically based on the macOS icns file.
       */
     @JSName("icon")
-    val icon_LinuxConfiguration: js.UndefOr[String] = js.native
+    val icon_LinuxConfiguration: js.UndefOr[String] = js.undefined
     
     /**
       * The maintainer. Defaults to [author](/configuration/configuration#Metadata-author).
       */
-    val maintainer: js.UndefOr[String | Null] = js.native
+    val maintainer: js.UndefOr[String | Null] = js.undefined
     
     /**
       * backward compatibility + to allow specify fpm-only category for all possible fpm targets in one place
       * @private
       */
-    val packageCategory: js.UndefOr[String | Null] = js.native
+    val packageCategory: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Target package type: list of `AppImage`, `snap`, `deb`, `rpm`, `freebsd`, `pacman`, `p5p`, `apk`, `7z`, `zip`, `tar.xz`, `tar.lz`, `tar.gz`, `tar.bz2`, `dir`.
@@ -220,12 +219,12 @@ object linuxOptionsMod {
       * @default AppImage
       */
     @JSName("target")
-    val target_LinuxConfiguration: js.UndefOr[TargetConfigType] = js.native
+    val target_LinuxConfiguration: js.UndefOr[TargetConfigType] = js.undefined
     
     /**
       * The vendor. Defaults to [author](/configuration/configuration#Metadata-author).
       */
-    val vendor: js.UndefOr[String | Null] = js.native
+    val vendor: js.UndefOr[String | Null] = js.undefined
   }
   object LinuxConfiguration {
     
@@ -294,43 +293,43 @@ object linuxOptionsMod {
     }
   }
   
-  @js.native
   trait LinuxTargetSpecificOptions
-    extends CommonLinuxOptions
+    extends StObject
+       with CommonLinuxOptions
        with TargetSpecificOptions {
     
-    val afterInstall: js.UndefOr[String | Null] = js.native
+    val afterInstall: js.UndefOr[String | Null] = js.undefined
     
-    val afterRemove: js.UndefOr[String | Null] = js.native
+    val afterRemove: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The compression type.
       * @default xz
       */
-    val compression: js.UndefOr[gz | bzip2 | xz | Null] = js.native
+    val compression: js.UndefOr[gz | bzip2 | xz | Null] = js.undefined
     
     /**
       * Package dependencies.
       */
-    val depends: js.UndefOr[js.Array[String] | Null] = js.native
+    val depends: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * *Advanced only* The [fpm](https://github.com/jordansissel/fpm/wiki#usage) options.
       *
       * Example: `["--before-install=build/deb-preinstall.sh", "--after-upgrade=build/deb-postinstall.sh"]`
       */
-    val fpm: js.UndefOr[js.Array[String] | Null] = js.native
+    val fpm: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    val icon: js.UndefOr[String] = js.native
+    val icon: js.UndefOr[String] = js.undefined
     
-    val maintainer: js.UndefOr[String | Null] = js.native
+    val maintainer: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The package category.
       */
-    val packageCategory: js.UndefOr[String | Null] = js.native
+    val packageCategory: js.UndefOr[String | Null] = js.undefined
     
-    val vendor: js.UndefOr[String | Null] = js.native
+    val vendor: js.UndefOr[String | Null] = js.undefined
   }
   object LinuxTargetSpecificOptions {
     

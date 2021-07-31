@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFirstAndThirdPartyAudiencesResponse extends StObject {
   
   /** The list of first and third party audiences. Audience size properties will not be included. This list will be absent if empty. */
-  var firstAndThirdPartyAudiences: js.UndefOr[js.Array[FirstAndThirdPartyAudience]] = js.native
+  var firstAndThirdPartyAudiences: js.UndefOr[js.Array[FirstAndThirdPartyAudience]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListFirstAndThirdPartyAudiences` method to retrieve the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListFirstAndThirdPartyAudiencesResponse {
   

@@ -5,12 +5,12 @@ import typings.arcgisJsApi.esri.content.Content
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CustomContent
-  extends Content_
+  extends StObject
+     with Content_
      with Content
      with contentContent {
   
@@ -19,7 +19,7 @@ trait CustomContent
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-CustomContent.html#creator)
     */
-  def creator(graphic: Graphic): String | HTMLElement | Widget_ | js.Promise[_] = js.native
+  def creator(graphic: Graphic): String | HTMLElement | Widget_ | js.Promise[js.Any] = js.native
   /**
     * The function that is called to create the custom content element.
     *

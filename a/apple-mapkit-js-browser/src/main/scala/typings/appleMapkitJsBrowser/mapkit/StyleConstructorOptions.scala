@@ -2,79 +2,77 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initial values of options for applying style to overlays.
   */
-@js.native
 trait StyleConstructorOptions extends StObject {
   
   /**
     * The fill color of a shape.
     */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /**
     * The opacity of the fill color.
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * A rule for determining whether a point is inside or outside a polygon.
     */
-  var fillRule: js.UndefOr[String] = js.native
+  var fillRule: js.UndefOr[String] = js.undefined
   
   /**
     * The style to use when drawing line endings.
     */
-  var lineCap: js.UndefOr[String] = js.native
+  var lineCap: js.UndefOr[String] = js.undefined
   
   /**
     * An array of line and gap lengths, used to create a dashed line.
     */
-  var lineDash: js.UndefOr[js.Array[Double]] = js.native
+  var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The number of CSS pixels to offset drawing of a line's dash pattern.
     */
-  var lineDashOffset: js.UndefOr[Double] = js.native
+  var lineDashOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The gradient to apply along the line.
     */
-  var lineGradient: LineGradient = js.native
+  var lineGradient: LineGradient
   
   /**
     * The style to use when drawing joins between line segments.
     */
-  var lineJoin: js.UndefOr[String] = js.native
+  var lineJoin: js.UndefOr[String] = js.undefined
   
   /**
     * The width of a line's stroke, in CSS pixels.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The stroke color of a line.
     */
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
     * The unit distance along the line where a stroke ends.
     */
-  var strokeEnd: js.UndefOr[Double] = js.native
+  var strokeEnd: js.UndefOr[Double] = js.undefined
   
   /**
     * The opacity of the stroke color.
     */
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The unit distance along the line where a stroke begins.
     */
-  var strokeStart: js.UndefOr[Double] = js.native
+  var strokeStart: js.UndefOr[Double] = js.undefined
 }
 object StyleConstructorOptions {
   

@@ -3,38 +3,38 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QuantileTransform extends Transform {
+trait QuantileTransform
+  extends StObject
+     with Transform {
   
   /**
     * The output field names for the probability and quantile values.
     *
     * __Default value:__ `["prob", "value"]`
     */
-  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.native
+  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.undefined
   
   /**
     * The data fields to group by. If not specified, a single group containing all data objects will be used.
     */
-  var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
   
   /**
     * An array of probabilities in the range (0, 1) for which to compute quantile values. If not specified, the *step* parameter will be used.
     */
-  var probs: js.UndefOr[js.Array[Double]] = js.native
+  var probs: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The data field for which to perform quantile estimation.
     */
-  var quantile: FieldName = js.native
+  var quantile: FieldName
   
   /**
     * A probability step size (default 0.01) for sampling quantile values. All values from one-half the step size up to 1 (exclusive) will be sampled. This parameter is only used if the *probs* parameter is not provided.
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
 }
 object QuantileTransform {
   

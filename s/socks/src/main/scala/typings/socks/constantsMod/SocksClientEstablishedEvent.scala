@@ -3,15 +3,13 @@ package typings.socks.constantsMod
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocksClientEstablishedEvent extends StObject {
   
-  var remoteHost: js.UndefOr[SocksRemoteHost] = js.native
+  var remoteHost: js.UndefOr[SocksRemoteHost] = js.undefined
   
-  var socket: Socket = js.native
+  var socket: Socket
 }
 object SocksClientEstablishedEvent {
   

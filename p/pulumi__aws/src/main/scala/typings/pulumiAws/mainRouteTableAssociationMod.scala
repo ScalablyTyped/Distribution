@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainRouteTableAssociationMod {
@@ -44,6 +43,10 @@ object mainRouteTableAssociationMod {
   /* static members */
   object MainRouteTableAssociation {
     
+    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MainRouteTableAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,41 +56,35 @@ object mainRouteTableAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MainRouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MainRouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState): MainRouteTableAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState, opts: CustomResourceOptions): MainRouteTableAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MainRouteTableAssociationState, opts: CustomResourceOptions): MainRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MainRouteTableAssociation]
     
     /**
       * Returns true if the given object is an instance of MainRouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/mainRouteTableAssociation.MainRouteTableAssociation */ Boolean]
   }
   
-  @js.native
   trait MainRouteTableAssociationArgs extends StObject {
     
     /**
       * The ID of the Route Table to set as the new
       * main route table for the target VPC
       */
-    val routeTableId: Input[String] = js.native
+    val routeTableId: Input[String]
     
     /**
       * The ID of the VPC whose main route table should be set
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object MainRouteTableAssociationArgs {
     
@@ -108,24 +105,23 @@ object mainRouteTableAssociationMod {
     }
   }
   
-  @js.native
   trait MainRouteTableAssociationState extends StObject {
     
     /**
       * Used internally, see __Notes__ below
       */
-    val originalRouteTableId: js.UndefOr[Input[String]] = js.native
+    val originalRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Route Table to set as the new
       * main route table for the target VPC
       */
-    val routeTableId: js.UndefOr[Input[String]] = js.native
+    val routeTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC whose main route table should be set
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object MainRouteTableAssociationState {
     

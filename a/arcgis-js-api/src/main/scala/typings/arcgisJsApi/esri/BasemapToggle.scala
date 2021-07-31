@@ -4,11 +4,12 @@ import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.toggle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapToggle extends Widget_ {
+trait BasemapToggle
+  extends StObject
+     with Widget_ {
   
   /**
     * The map's [basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap).

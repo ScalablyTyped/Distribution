@@ -3,24 +3,22 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistogramRangeSliderViewModelMaxChangeEvent extends StObject {
   
-  var oldValue: Double = js.native
+  var oldValue: Double
   
-  var `type`: max = js.native
+  var `type`: max
   
-  var value: Double = js.native
+  var value: Double
 }
 object HistogramRangeSliderViewModelMaxChangeEvent {
   
   @scala.inline
-  def apply(oldValue: Double, `type`: max, value: Double): HistogramRangeSliderViewModelMaxChangeEvent = {
+  def apply(oldValue: Double, value: Double): HistogramRangeSliderViewModelMaxChangeEvent = {
     val __obj = js.Dynamic.literal(oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("max")
     __obj.asInstanceOf[HistogramRangeSliderViewModelMaxChangeEvent]
   }
   

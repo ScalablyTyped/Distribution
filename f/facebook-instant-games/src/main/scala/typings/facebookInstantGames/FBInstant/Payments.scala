@@ -2,10 +2,8 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payments extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Payments extends StObject {
     * @throws INVALID_PARAM
     * @throws NETWORK_FAILURE
     */
-  def consumePurchaseAsync(purchaseToken: String): js.Promise[Unit] = js.native
+  def consumePurchaseAsync(purchaseToken: String): js.Promise[Unit]
   
   /**
     * Fetches the game's product catalog.
@@ -29,7 +27,7 @@ trait Payments extends StObject {
     * @throws PAYMENTS_NOT_INITIALIZED
     * @throws NETWORK_FAILURE
     */
-  def getCatalogAsync(): js.Promise[js.Array[Product]] = js.native
+  def getCatalogAsync(): js.Promise[js.Array[Product]]
   
   /**
     * Fetches all of the player's unconsumed purchases. As a best practice, the game should fetch the current player's purchases
@@ -41,13 +39,13 @@ trait Payments extends StObject {
     * @throws PAYMENTS_NOT_INITIALIZED
     * @throws NETWORK_FAILURE
     */
-  def getPurchasesAsync(): js.Promise[js.Array[Purchase]] = js.native
+  def getPurchasesAsync(): js.Promise[js.Array[Purchase]]
   
   /**
     * Sets a callback to be triggered when Payments operations are available.
     * @param callback The callback function to be executed when Payments are available.
     */
-  def onReady(callback: js.Function0[Unit]): Unit = js.native
+  def onReady(callback: js.Function0[Unit]): Unit
   
   /**
     * Begins the purchase flow for a specific product. Will immediately reject if called before FBInstant.startGameAsync() has resolved.
@@ -60,7 +58,7 @@ trait Payments extends StObject {
     * @throws NETWORK_FAILURE
     * @throws INVALID_OPERATION
     */
-  def purchaseAsync(purchaseConfig: PurchaseConfig): js.Promise[Purchase] = js.native
+  def purchaseAsync(purchaseConfig: PurchaseConfig): js.Promise[Purchase]
 }
 object Payments {
   

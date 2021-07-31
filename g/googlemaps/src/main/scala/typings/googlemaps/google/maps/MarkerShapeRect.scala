@@ -3,27 +3,27 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.googlemapsStrings.rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerShapeRect extends MarkerShape {
+trait MarkerShapeRect
+  extends StObject
+     with MarkerShape {
   
   /**
     * Coords is **[x1,y1,x2,y2]** where x1,y1 are the coordinates of the
     * upper-left corner of the rectangle and x2,y2 are the coordinates of the
     * lower-right coordinates of the rectangle.
     */
-  var coords: js.Tuple4[Double, Double, Double, Double] = js.native
+  var coords: js.Tuple4[Double, Double, Double, Double]
   
-  var `type`: rect = js.native
+  var `type`: rect
 }
 object MarkerShapeRect {
   
   @scala.inline
-  def apply(coords: js.Tuple4[Double, Double, Double, Double], `type`: rect): MarkerShapeRect = {
+  def apply(coords: js.Tuple4[Double, Double, Double, Double]): MarkerShapeRect = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[MarkerShapeRect]
   }
   

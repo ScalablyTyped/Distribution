@@ -2,31 +2,29 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataLakeSettings extends StObject {
   
   /**
     * A structure representing a list of up to three principal permissions entries for default create database permissions.
     */
-  var CreateDatabaseDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.native
+  var CreateDatabaseDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
   
   /**
     * A structure representing a list of up to three principal permissions entries for default create table permissions.
     */
-  var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.native
+  var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
   
   /**
     * A list of AWS Lake Formation principals. Supported principals are IAM users or IAM roles.
     */
-  var DataLakeAdmins: js.UndefOr[DataLakePrincipalList] = js.native
+  var DataLakeAdmins: js.UndefOr[DataLakePrincipalList] = js.undefined
   
   /**
     * A list of the resource-owning account IDs that the caller's account can use to share their user access details (user ARNs). The user ARNs can be logged in the resource owner's AWS CloudTrail log. You may want to specify this property when you are in a high-trust boundary, such as the same team or company. 
     */
-  var TrustedResourceOwners: js.UndefOr[typings.awsSdk.lakeformationMod.TrustedResourceOwners] = js.native
+  var TrustedResourceOwners: js.UndefOr[typings.awsSdk.lakeformationMod.TrustedResourceOwners] = js.undefined
 }
 object DataLakeSettings {
   

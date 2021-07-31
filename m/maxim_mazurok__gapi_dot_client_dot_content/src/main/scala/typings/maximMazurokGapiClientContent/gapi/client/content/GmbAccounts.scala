@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GmbAccounts extends StObject {
   
   /** The ID of the Merchant Center account. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** A list of GMB accounts which are available to the merchant. */
-  var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.native
+  var gmbAccounts: js.UndefOr[js.Array[GmbAccountsGmbAccount]] = js.undefined
 }
 object GmbAccounts {
   

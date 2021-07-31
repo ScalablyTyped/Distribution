@@ -2,19 +2,17 @@ package typings.reactNativeCalendars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var endingDay: js.UndefOr[Boolean] = js.native
+    var endingDay: js.UndefOr[Boolean] = js.undefined
     
-    var startingDay: js.UndefOr[Boolean] = js.native
+    var startingDay: js.UndefOr[Boolean] = js.undefined
   }
   object Color {
     
@@ -47,13 +45,12 @@ object anon {
     }
   }
   
-  @js.native
   trait EnableSwipeMonths extends StObject {
     
     /**
       * Enable the option to swipe between months. Default = false
       */
-    var enableSwipeMonths: js.UndefOr[Boolean] = js.native
+    var enableSwipeMonths: js.UndefOr[Boolean] = js.undefined
   }
   object EnableSwipeMonths {
     

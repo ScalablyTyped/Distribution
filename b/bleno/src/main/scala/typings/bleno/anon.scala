@@ -2,28 +2,26 @@ package typings.bleno
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofCharacteristic extends StObject {
     
     /* static member */
-    val RESULT_ATTR_NOT_LONG: Double = js.native
+    val RESULT_ATTR_NOT_LONG: Double
     
     /* static member */
-    val RESULT_INVALID_ATTRIBUTE_LENGTH: Double = js.native
+    val RESULT_INVALID_ATTRIBUTE_LENGTH: Double
     
     /* static member */
-    val RESULT_INVALID_OFFSET: Double = js.native
+    val RESULT_INVALID_OFFSET: Double
     
     /* static member */
-    val RESULT_SUCCESS: Double = js.native
+    val RESULT_SUCCESS: Double
     
     /* static member */
-    val RESULT_UNLIKELY_ERROR: Double = js.native
+    val RESULT_UNLIKELY_ERROR: Double
   }
   object TypeofCharacteristic {
     

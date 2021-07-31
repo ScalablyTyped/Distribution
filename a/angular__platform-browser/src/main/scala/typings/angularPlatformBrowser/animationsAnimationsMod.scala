@@ -21,10 +21,13 @@ import typings.angularPlatformBrowser.angularPlatformBrowserStrings.window
 import typings.angularPlatformBrowser.mod.ɵDomRendererFactory2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationsAnimationsMod {
+  
+  @JSImport("@angular/platform-browser/animations/animations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/platform-browser/animations/animations", "ANIMATION_MODULE_TYPE")
   @js.native
@@ -51,11 +54,11 @@ object animationsAnimationsMod {
     var factory: ɵAnimationRendererFactory = js.native
     
     @JSName("listen")
-    def listen_body(target: body, eventName: String, callback: js.Function1[/* event */ js.Any, _]): js.Function0[Unit] = js.native
+    def listen_body(target: body, eventName: String, callback: js.Function1[/* event */ js.Any, js.Any]): js.Function0[Unit] = js.native
     @JSName("listen")
-    def listen_document(target: document, eventName: String, callback: js.Function1[/* event */ js.Any, _]): js.Function0[Unit] = js.native
+    def listen_document(target: document, eventName: String, callback: js.Function1[/* event */ js.Any, js.Any]): js.Function0[Unit] = js.native
     @JSName("listen")
-    def listen_window(target: window, eventName: String, callback: js.Function1[/* event */ js.Any, _]): js.Function0[Unit] = js.native
+    def listen_window(target: window, eventName: String, callback: js.Function1[/* event */ js.Any, js.Any]): js.Function0[Unit] = js.native
   }
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275AnimationRendererFactory")
@@ -90,7 +93,7 @@ object animationsAnimationsMod {
     var promise: js.Any = js.native
     
     @JSName("whenRenderingDone")
-    def whenRenderingDone_MɵAnimationRendererFactory(): js.Promise[_] = js.native
+    def whenRenderingDone_MɵAnimationRendererFactory(): js.Promise[js.Any] = js.native
   }
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275BrowserAnimationBuilder")
@@ -119,17 +122,14 @@ object animationsAnimationsMod {
     def this(doc: js.Any, driver: AnimationDriver, normalizer: ɵAnimationStyleNormalizer) = this()
   }
   
-  @JSImport("@angular/platform-browser/animations/animations", "\u0275angular_packages_platform_browser_animations_animations_a")
-  @js.native
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsA(): ɵWebAnimationsDriver | ɵCssKeyframesDriver = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserAnimationsAnimationsA(): ɵWebAnimationsDriver | ɵCssKeyframesDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_a")().asInstanceOf[ɵWebAnimationsDriver | ɵCssKeyframesDriver]
   
-  @JSImport("@angular/platform-browser/animations/animations", "\u0275angular_packages_platform_browser_animations_animations_b")
-  @js.native
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsB(): ɵWebAnimationsStyleNormalizer = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserAnimationsAnimationsB(): ɵWebAnimationsStyleNormalizer = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_b")().asInstanceOf[ɵWebAnimationsStyleNormalizer]
   
-  @JSImport("@angular/platform-browser/animations/animations", "\u0275angular_packages_platform_browser_animations_animations_c")
-  @js.native
-  def ɵangularPackagesPlatformBrowserAnimationsAnimationsC(renderer: ɵDomRendererFactory2, engine: ɵAnimationEngine, zone: NgZone): ɵAnimationRendererFactory = js.native
+  @scala.inline
+  def ɵangularPackagesPlatformBrowserAnimationsAnimationsC(renderer: ɵDomRendererFactory2, engine: ɵAnimationEngine, zone: NgZone): ɵAnimationRendererFactory = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_platform_browser_animations_animations_c")(renderer.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ɵAnimationRendererFactory]
   
   @JSImport("@angular/platform-browser/animations/animations", "\u0275angular_packages_platform_browser_animations_animations_d")
   @js.native

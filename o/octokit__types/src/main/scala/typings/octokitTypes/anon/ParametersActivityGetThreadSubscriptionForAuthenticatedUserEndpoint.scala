@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActivityGetThreadSubscriptionForAuthent
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint = js.native
+  var parameters: ActivityGetThreadSubscriptionForAuthenticatedUserEndpoint
   
-  var request: ActivityGetThreadSubscriptionForAuthenticatedUserRequestOptions = js.native
+  var request: ActivityGetThreadSubscriptionForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ActivityGetThreadSubscriptionForAuthenticatedUserResponseData]
 }
 object ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint {
   

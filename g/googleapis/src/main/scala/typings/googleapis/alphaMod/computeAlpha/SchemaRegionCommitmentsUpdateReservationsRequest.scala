@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRegionCommitmentsUpdateReservationsRequest extends StObject {
   
   /**
     * List of reservations for the capacity move of VMs with accelerators and
     * local ssds.
     */
-  var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.native
+  var reservations: js.UndefOr[js.Array[SchemaReservation]] = js.undefined
 }
 object SchemaRegionCommitmentsUpdateReservationsRequest {
   

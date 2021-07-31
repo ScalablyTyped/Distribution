@@ -2,31 +2,29 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestWindowSummary extends StObject {
   
   /**
     * If the test failed, the reason why it failed.
     */
-  var Message: js.UndefOr[ErrorMessage] = js.native
+  var Message: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The status of the test. Possible status values are:    ACTIVE     CREATE_IN_PROGRESS     CREATE_FAILED   
     */
-  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.forecastserviceMod.Status] = js.undefined
   
   /**
     * The time at which the test ended.
     */
-  var TestWindowEnd: js.UndefOr[Timestamp] = js.native
+  var TestWindowEnd: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which the test began.
     */
-  var TestWindowStart: js.UndefOr[Timestamp] = js.native
+  var TestWindowStart: js.UndefOr[Timestamp] = js.undefined
 }
 object TestWindowSummary {
   

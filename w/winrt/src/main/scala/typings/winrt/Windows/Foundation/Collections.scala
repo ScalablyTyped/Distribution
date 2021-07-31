@@ -5,7 +5,6 @@ import typings.winrt.anon.Index
 import typings.winrt.anon.Items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Collections {
@@ -17,22 +16,29 @@ object Collections {
   object CollectionChange extends StObject {
     
     @js.native
-    sealed trait itemChanged extends CollectionChange
+    sealed trait itemChanged
+      extends StObject
+         with CollectionChange
     
     @js.native
-    sealed trait itemInserted extends CollectionChange
+    sealed trait itemInserted
+      extends StObject
+         with CollectionChange
     
     @js.native
-    sealed trait itemRemoved extends CollectionChange
+    sealed trait itemRemoved
+      extends StObject
+         with CollectionChange
     
     @js.native
-    sealed trait reset extends CollectionChange
+    sealed trait reset
+      extends StObject
+         with CollectionChange
   }
   
-  @js.native
   trait IIterable[T] extends StObject {
     
-    def first(): IIterator[T] = js.native
+    def first(): IIterator[T]
   }
   object IIterable {
     
@@ -43,23 +49,22 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IIterableMutableBuilder[Self <: IIterable[_], T] (val x: Self with IIterable[T]) extends AnyVal {
+    implicit class IIterableMutableBuilder[Self <: IIterable[?], T] (val x: Self & IIterable[T]) extends AnyVal {
       
       @scala.inline
       def setFirst(value: () => IIterator[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait IIterator[T] extends StObject {
     
-    var current: T = js.native
+    var current: T
     
-    def getMany(): Items[T] = js.native
+    def getMany(): Items[T]
     
-    var hasCurrent: Boolean = js.native
+    var hasCurrent: Boolean
     
-    def moveNext(): Boolean = js.native
+    def moveNext(): Boolean
   }
   object IIterator {
     
@@ -70,7 +75,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IIteratorMutableBuilder[Self <: IIterator[_], T] (val x: Self with IIterator[T]) extends AnyVal {
+    implicit class IIteratorMutableBuilder[Self <: IIterator[?], T] (val x: Self & IIterator[T]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
@@ -86,12 +91,11 @@ object Collections {
     }
   }
   
-  @js.native
   trait IKeyValuePair[K, V] extends StObject {
     
-    var key: K = js.native
+    var key: K
     
-    var value: V = js.native
+    var value: V
   }
   object IKeyValuePair {
     
@@ -102,7 +106,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IKeyValuePairMutableBuilder[Self <: IKeyValuePair[_, _], K, V] (val x: Self with (IKeyValuePair[K, V])) extends AnyVal {
+    implicit class IKeyValuePairMutableBuilder[Self <: IKeyValuePair[?, ?], K, V] (val x: Self & (IKeyValuePair[K, V])) extends AnyVal {
       
       @scala.inline
       def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -112,22 +116,23 @@ object Collections {
     }
   }
   
-  @js.native
-  trait IMap[K, V] extends IIterable[IKeyValuePair[K, V]] {
+  trait IMap[K, V]
+    extends StObject
+       with IIterable[IKeyValuePair[K, V]] {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def getView(): IMapView[K, V] = js.native
+    def getView(): IMapView[K, V]
     
-    def hasKey(key: K): Boolean = js.native
+    def hasKey(key: K): Boolean
     
-    def insert(key: K, value: V): Boolean = js.native
+    def insert(key: K, value: V): Boolean
     
-    def lookup(key: K): V = js.native
+    def lookup(key: K): V
     
-    def remove(key: K): Unit = js.native
+    def remove(key: K): Unit
     
-    var size: Double = js.native
+    var size: Double
   }
   object IMap {
     
@@ -147,7 +152,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IMapMutableBuilder[Self <: IMap[_, _], K, V] (val x: Self with (IMap[K, V])) extends AnyVal {
+    implicit class IMapMutableBuilder[Self <: IMap[?, ?], K, V] (val x: Self & (IMap[K, V])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -172,12 +177,11 @@ object Collections {
     }
   }
   
-  @js.native
   trait IMapChangedEventArgs[K] extends StObject {
     
-    var collectionChange: CollectionChange = js.native
+    var collectionChange: CollectionChange
     
-    var key: K = js.native
+    var key: K
   }
   object IMapChangedEventArgs {
     
@@ -188,7 +192,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IMapChangedEventArgsMutableBuilder[Self <: IMapChangedEventArgs[_], K] (val x: Self with IMapChangedEventArgs[K]) extends AnyVal {
+    implicit class IMapChangedEventArgsMutableBuilder[Self <: IMapChangedEventArgs[?], K] (val x: Self & IMapChangedEventArgs[K]) extends AnyVal {
       
       @scala.inline
       def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
@@ -198,16 +202,17 @@ object Collections {
     }
   }
   
-  @js.native
-  trait IMapView[K, V] extends IIterable[IKeyValuePair[K, V]] {
+  trait IMapView[K, V]
+    extends StObject
+       with IIterable[IKeyValuePair[K, V]] {
     
-    def hasKey(key: K): Boolean = js.native
+    def hasKey(key: K): Boolean
     
-    def lookup(key: K): V = js.native
+    def lookup(key: K): V
     
-    var size: Double = js.native
+    var size: Double
     
-    def split(): First[K, V] = js.native
+    def split(): First[K, V]
   }
   object IMapView {
     
@@ -224,7 +229,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IMapViewMutableBuilder[Self <: IMapView[_, _], K, V] (val x: Self with (IMapView[K, V])) extends AnyVal {
+    implicit class IMapViewMutableBuilder[Self <: IMapView[?, ?], K, V] (val x: Self & (IMapView[K, V])) extends AnyVal {
       
       @scala.inline
       def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
@@ -240,10 +245,11 @@ object Collections {
     }
   }
   
-  @js.native
-  trait IObservableMap[K, V] extends IMap[K, V] {
+  trait IObservableMap[K, V]
+    extends StObject
+       with IMap[K, V] {
     
-    var onmapchanged: js.Any = js.native
+    var onmapchanged: js.Any
   }
   object IObservableMap {
     
@@ -264,7 +270,7 @@ object Collections {
     }
     
     @scala.inline
-    implicit class IObservableMapMutableBuilder[Self <: IObservableMap[_, _], K, V] (val x: Self with (IObservableMap[K, V])) extends AnyVal {
+    implicit class IObservableMapMutableBuilder[Self <: IObservableMap[?, ?], K, V] (val x: Self & (IObservableMap[K, V])) extends AnyVal {
       
       @scala.inline
       def setOnmapchanged(value: js.Any): Self = StObject.set(x, "onmapchanged", value.asInstanceOf[js.Any])
@@ -272,14 +278,16 @@ object Collections {
   }
   
   @js.native
-  trait IObservableVector[T] extends IVector[T] {
+  trait IObservableVector[T]
+    extends StObject
+       with IVector[T] {
     
     var onvectorchanged: js.Any = js.native
   }
   
-  @js.native
   trait IPropertySet
-    extends IObservableMap[String, js.Any]
+    extends StObject
+       with IObservableMap[String, js.Any]
   object IPropertySet {
     
     @scala.inline
@@ -300,7 +308,9 @@ object Collections {
   }
   
   @js.native
-  trait IVector[T] extends IIterable[T] {
+  trait IVector[T]
+    extends StObject
+       with IIterable[T] {
     
     def append(value: T): Unit = js.native
     
@@ -343,11 +353,11 @@ object Collections {
     
     var length: Double = js.native
     
-    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[_] = js.native
+    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[js.Any] = js.native
     def map(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
       thisArg: js.Any
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = js.native
     
     def pop(): T = js.native
     
@@ -359,7 +369,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     def reduce(
@@ -368,7 +378,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ],
       initialValue: js.Any
     ): js.Any = js.native
@@ -379,7 +389,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     def reduceRight(
@@ -388,7 +398,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ],
       initialValue: js.Any
     ): js.Any = js.native
@@ -425,12 +435,11 @@ object Collections {
     def unshift(items: T*): Double = js.native
   }
   
-  @js.native
   trait IVectorChangedEventArgs extends StObject {
     
-    var collectionChange: CollectionChange = js.native
+    var collectionChange: CollectionChange
     
-    var index: Double = js.native
+    var index: Double
   }
   object IVectorChangedEventArgs {
     
@@ -452,7 +461,9 @@ object Collections {
   }
   
   @js.native
-  trait IVectorView[T] extends IIterable[T] {
+  trait IVectorView[T]
+    extends StObject
+       with IIterable[T] {
     
     def concat(items: js.Array[T]*): js.Array[T] = js.native
     
@@ -487,11 +498,11 @@ object Collections {
     
     var length: Double = js.native
     
-    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): js.Array[_] = js.native
+    def map(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): js.Array[js.Any] = js.native
     def map(
-      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+      callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
       thisArg: js.Any
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = js.native
     
     def pop(): T = js.native
     
@@ -503,7 +514,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     def reduce(
@@ -512,7 +523,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ],
       initialValue: js.Any
     ): js.Any = js.native
@@ -523,7 +534,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     def reduceRight(
@@ -532,7 +543,7 @@ object Collections {
           /* currentValue */ js.Any, 
           /* currentIndex */ Double, 
           /* array */ js.Array[T], 
-          _
+          js.Any
         ],
       initialValue: js.Any
     ): js.Any = js.native
@@ -563,8 +574,9 @@ object Collections {
   
   type MapChangedEventHandler[K, V] = js.Function2[/* sender */ IObservableMap[K, V], /* event */ IMapChangedEventArgs[K], Unit]
   
-  @js.native
-  trait PropertySet extends IPropertySet
+  trait PropertySet
+    extends StObject
+       with IPropertySet
   object PropertySet {
     
     @scala.inline
@@ -584,8 +596,9 @@ object Collections {
     }
   }
   
-  @js.native
-  trait ValueSet extends IPropertySet
+  trait ValueSet
+    extends StObject
+       with IPropertySet
   object ValueSet {
     
     @scala.inline

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Roles")
@@ -30,7 +29,7 @@ class ResourceRoles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRole] = js.native
   def get(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceRolesGet, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(
@@ -59,7 +58,7 @@ class ResourceRoles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRolesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRolesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(params: ParamsResourceRolesList): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(params: ParamsResourceRolesList, callback: BodyResponseCallback[SchemaListRolesResponse]): Unit = js.native
   def list(
@@ -90,7 +89,7 @@ class ResourceRoles protected () extends StObject {
     */
   def queryGrantableRoles(): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(callback: BodyResponseCallback[SchemaQueryGrantableRolesResponse]): Unit = js.native
-  def queryGrantableRoles(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
+  def queryGrantableRoles(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(params: ParamsResourceRolesQuerygrantableroles): GaxiosPromise[SchemaQueryGrantableRolesResponse] = js.native
   def queryGrantableRoles(
     params: ParamsResourceRolesQuerygrantableroles,

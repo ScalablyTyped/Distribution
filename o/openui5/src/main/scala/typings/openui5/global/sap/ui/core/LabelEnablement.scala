@@ -2,10 +2,13 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LabelEnablement {
+  
+  @JSGlobal("sap.ui.core.LabelEnablement")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * This function should be called on a label control to enrich it's functionality.<b>Usage:</b>The
@@ -25,18 +28,16 @@ object LabelEnablement {
     * getLabelForRendering are added.
     * @param oControl the label control which should be enriched with further label functionality.
     */
-  @JSGlobal("sap.ui.core.LabelEnablement.enrich")
-  @js.native
-  def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = js.native
+  @scala.inline
+  def enrich(oControl: typings.openui5.sap.ui.core.Control): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enrich")(oControl.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Returns an array of ids of the labels referencing the given element
     * @param oElement The element whose referencing labels should be returned
     * @returns an array of ids of the labels referencing the given element
     */
-  @JSGlobal("sap.ui.core.LabelEnablement.getReferencingLabels")
-  @js.native
-  def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = js.native
+  @scala.inline
+  def getReferencingLabels(oElement: typings.openui5.sap.ui.core.Element): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferencingLabels")(oElement.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * Returns <code>true</code> when the given control is required (property 'required') or one of its
@@ -46,9 +47,8 @@ object LabelEnablement {
     * @returns <code>true</code> when the given control is required (property 'required') or one of its
     * referencing labels, <code>false</code> otherwise
     */
-  @JSGlobal("sap.ui.core.LabelEnablement.isRequired")
-  @js.native
-  def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = js.native
+  @scala.inline
+  def isRequired(oElement: typings.openui5.sap.ui.core.Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(oElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Helper function for the label control to render the html 'for' attribute. This function should be
@@ -57,7 +57,6 @@ object LabelEnablement {
     * @param oLabel The label for which the 'for' html attribute should be written to the
     * render-output-buffer.
     */
-  @JSGlobal("sap.ui.core.LabelEnablement.writeLabelForAttribute")
-  @js.native
-  def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = js.native
+  @scala.inline
+  def writeLabelForAttribute(oRenderManager: typings.openui5.sap.ui.core.RenderManager, oLabel: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeLabelForAttribute")(oRenderManager.asInstanceOf[js.Any], oLabel.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

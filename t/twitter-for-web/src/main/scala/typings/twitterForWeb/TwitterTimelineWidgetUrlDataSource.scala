@@ -3,21 +3,21 @@ package typings.twitterForWeb
 import typings.twitterForWeb.twitterForWebStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TwitterTimelineWidgetUrlDataSource extends _TwitterTimelineWidgetDataSource {
+trait TwitterTimelineWidgetUrlDataSource
+  extends StObject
+     with _TwitterTimelineWidgetDataSource {
   
-  var sourceType: url = js.native
+  var sourceType: url
   
-  var url: String = js.native
+  var url: String
 }
 object TwitterTimelineWidgetUrlDataSource {
   
   @scala.inline
-  def apply(sourceType: url, url: String): TwitterTimelineWidgetUrlDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+  def apply(url: String): TwitterTimelineWidgetUrlDataSource = {
+    val __obj = js.Dynamic.literal(sourceType = "url", url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterTimelineWidgetUrlDataSource]
   }
   

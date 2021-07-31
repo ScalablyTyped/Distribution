@@ -11,8 +11,8 @@ Zepto is a minimalist JavaScript library for modern browsers with a largely jQue
 | Full name          | zepto |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 103 |
-| # downloads        | 5183496 |
+| # dependents       | 106 |
+| # downloads        | 5944407 |
 | # stars            | 9 |
 
 ## Links

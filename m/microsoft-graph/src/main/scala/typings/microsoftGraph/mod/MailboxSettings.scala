@@ -2,39 +2,37 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailboxSettings extends StObject {
   
   // Folder ID of an archive folder for the user.
-  var archiveFolder: js.UndefOr[NullableOption[String]] = js.native
+  var archiveFolder: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.
-  var automaticRepliesSetting: js.UndefOr[NullableOption[AutomaticRepliesSetting]] = js.native
+  var automaticRepliesSetting: js.UndefOr[NullableOption[AutomaticRepliesSetting]] = js.undefined
   
   // The date format for the user's mailbox.
-  var dateFormat: js.UndefOr[NullableOption[String]] = js.native
+  var dateFormat: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting
     * messages and meeting responses. Possible values are: sendToDelegateAndInformationToPrincipal,
     * sendToDelegateAndPrincipal, sendToDelegateOnly.
     */
-  var delegateMeetingMessageDeliveryOptions: js.UndefOr[NullableOption[DelegateMeetingMessageDeliveryOptions]] = js.native
+  var delegateMeetingMessageDeliveryOptions: js.UndefOr[NullableOption[DelegateMeetingMessageDeliveryOptions]] = js.undefined
   
   // The locale information for the user, including the preferred language and country/region.
-  var language: js.UndefOr[NullableOption[LocaleInfo]] = js.native
+  var language: js.UndefOr[NullableOption[LocaleInfo]] = js.undefined
   
   // The time format for the user's mailbox.
-  var timeFormat: js.UndefOr[NullableOption[String]] = js.native
+  var timeFormat: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The default time zone for the user's mailbox.
-  var timeZone: js.UndefOr[NullableOption[String]] = js.native
+  var timeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The days of the week and hours in a specific time zone that the user works.
-  var workingHours: js.UndefOr[NullableOption[WorkingHours]] = js.native
+  var workingHours: js.UndefOr[NullableOption[WorkingHours]] = js.undefined
 }
 object MailboxSettings {
   

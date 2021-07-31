@@ -5,12 +5,13 @@ import typings.angularCore.mod.OnDestroy
 import typings.angularRouter.anon.AnchorScrolling
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "\u0275angular_packages_router_router_o")
 @js.native
-class ɵangularPackagesRouterRouterO protected () extends OnDestroy {
+class ɵangularPackagesRouterRouterO protected ()
+  extends StObject
+     with OnDestroy {
   def this(router: Router, /** @docsNotRequired */ viewportScroller: ViewportScroller) = this()
   def this(
     router: Router,
@@ -27,6 +28,13 @@ class ɵangularPackagesRouterRouterO protected () extends OnDestroy {
   var lastId: js.Any = js.native
   
   var lastSource: js.Any = js.native
+  
+  /**
+    * A callback method that performs custom clean-up, invoked immediately
+    * before a directive, pipe, or service instance is destroyed.
+    */
+  /* CompleteClass */
+  override def ngOnDestroy(): Unit = js.native
   
   var options: js.Any = js.native
   

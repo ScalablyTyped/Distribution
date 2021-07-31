@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalTable extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the data source.
     */
-  var DataSourceArn: Arn = js.native
+  var DataSourceArn: Arn
   
   /**
     * The column schema of the table.
     */
-  var InputColumns: InputColumnList = js.native
+  var InputColumns: InputColumnList
   
   /**
     * The name of the relational table.
     */
-  var Name: RelationalTableName = js.native
+  var Name: RelationalTableName
   
   /**
     * The schema name. This name applies to certain relational database engines.
     */
-  var Schema: js.UndefOr[RelationalTableSchema] = js.native
+  var Schema: js.UndefOr[RelationalTableSchema] = js.undefined
 }
 object RelationalTable {
   

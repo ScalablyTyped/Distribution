@@ -2,14 +2,12 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, 'maxSearchDepth'> */
-@js.native
 trait PickImplmaxSearchDepth extends StObject {
   
-  var maxSearchDepth: Double = js.native
+  var maxSearchDepth: Double
 }
 object PickImplmaxSearchDepth {
   

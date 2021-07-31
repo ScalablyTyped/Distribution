@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeviceInstancesResult extends StObject {
   
   /**
     * An object that contains information about your device instances.
     */
-  var deviceInstances: js.UndefOr[DeviceInstances] = js.native
+  var deviceInstances: js.UndefOr[DeviceInstances] = js.undefined
   
   /**
     * An identifier that can be used in the next call to this operation to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListDeviceInstancesResult {
   

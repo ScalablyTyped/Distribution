@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param name - The name of the scene.
   * @param url - The url of the scene file.
   */
-@js.native
 trait SceneRegistryItem extends StObject {
   
   /**
     * The name of the scene.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The url of the scene file.
     */
-  var url: String = js.native
+  var url: String
 }
 object SceneRegistryItem {
   

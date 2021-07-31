@@ -3,35 +3,34 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeIndexer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ObjectTypeIndexer_
-  extends Flow
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ObjectTypeIndexer_
+  extends StObject
      with BaseNode
+     with Flow
      with UserWhitespacable {
   
-  var id: Identifier_ | Null = js.native
+  var id: Identifier_ | Null
   
-  var key: FlowType = js.native
+  var key: FlowType
   
-  var static: Boolean = js.native
+  var static: Boolean
   
   @JSName("type")
-  var type_ObjectTypeIndexer_ : ObjectTypeIndexer = js.native
+  var type_ObjectTypeIndexer_ : ObjectTypeIndexer
   
-  var value: FlowType = js.native
+  var value: FlowType
   
-  var variance: Variance_ | Null = js.native
+  var variance: Variance_ | Null
 }
 object ObjectTypeIndexer_ {
   
   @scala.inline
-  def apply(key: FlowType, static: Boolean, `type`: ObjectTypeIndexer, value: FlowType): ObjectTypeIndexer_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(key: FlowType, static: Boolean, value: FlowType): ObjectTypeIndexer_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    __obj.updateDynamic("type")("ObjectTypeIndexer")
     __obj.asInstanceOf[ObjectTypeIndexer_]
   }
   

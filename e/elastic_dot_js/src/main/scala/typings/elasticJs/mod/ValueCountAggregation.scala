@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "ValueCountAggregation")
 @js.native
-class ValueCountAggregation protected () extends Aggregation {
+class ValueCountAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Aggregation that counts the number of values that are extracted from the
     aggregated documents.

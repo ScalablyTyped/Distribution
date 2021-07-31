@@ -10,9 +10,9 @@ A complimentary wrapper function for use with Enzyme, when testing React compone
 | ------------------ | :-------------: |
 | Full name          | enzyme-react-intl |
 | Keywords           | enzyme-react-intl,mountWithIntl,shallowWithIntl,enzyme,react-intl |
-| # releases         | 6 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 941338 |
+| # downloads        | 922844 |
 | # stars            | 1 |
 
 ## Links

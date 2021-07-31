@@ -2,31 +2,29 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupSummary extends StObject {
   
   /**
     * The filter expression defining the parameters to include traces.
     */
-  var FilterExpression: js.UndefOr[String] = js.native
+  var FilterExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the group generated based on the GroupName.
     */
-  var GroupARN: js.UndefOr[String] = js.native
+  var GroupARN: js.UndefOr[String] = js.undefined
   
   /**
     * The unique case-sensitive name of the group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The structure containing configurations related to insights.   The InsightsEnabled boolean can be set to true to enable insights for the group or false to disable insights for the group.   The NotificationsEnabled boolean can be set to true to enable insights notifications. Notifications can only be enabled on a group with InsightsEnabled set to true.  
     */
-  var InsightsConfiguration: js.UndefOr[typings.awsSdk.xrayMod.InsightsConfiguration] = js.native
+  var InsightsConfiguration: js.UndefOr[typings.awsSdk.xrayMod.InsightsConfiguration] = js.undefined
 }
 object GroupSummary {
   

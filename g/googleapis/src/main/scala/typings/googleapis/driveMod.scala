@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driveMod {
+  
+  @JSImport("googleapis/build/src/apis/drive", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -91,9 +94,12 @@ object driveMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/drive", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/drive", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -137,16 +143,14 @@ object driveMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/drive", "drive")
-  @js.native
-  def drive(options: Options): Drive = js.native
-  @JSImport("googleapis/build/src/apis/drive", "drive")
-  @js.native
-  def drive(options: typings.googleapis.driveV3Mod.driveV3.Options): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
-  @JSImport("googleapis/build/src/apis/drive", "drive")
-  @js.native
-  def drive_v2(version: v2): Drive = js.native
-  @JSImport("googleapis/build/src/apis/drive", "drive")
-  @js.native
-  def drive_v3(version: v3): typings.googleapis.driveV3Mod.driveV3.Drive = js.native
+  @scala.inline
+  def drive(options: Options): Drive = ^.asInstanceOf[js.Dynamic].applyDynamic("drive")(options.asInstanceOf[js.Any]).asInstanceOf[Drive]
+  @scala.inline
+  def drive(options: typings.googleapis.driveV3Mod.driveV3.Options): typings.googleapis.driveV3Mod.driveV3.Drive = ^.asInstanceOf[js.Dynamic].applyDynamic("drive")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.driveV3Mod.driveV3.Drive]
+  
+  @scala.inline
+  def drive_v2(version: v2): Drive = ^.asInstanceOf[js.Dynamic].applyDynamic("drive")(version.asInstanceOf[js.Any]).asInstanceOf[Drive]
+  
+  @scala.inline
+  def drive_v3(version: v3): typings.googleapis.driveV3Mod.driveV3.Drive = ^.asInstanceOf[js.Dynamic].applyDynamic("drive")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.driveV3Mod.driveV3.Drive]
 }

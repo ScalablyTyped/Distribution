@@ -2,49 +2,47 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattingContext extends StObject {
   
-  def BlockIsOnOneLine(node: IndentationNodeContext): Boolean = js.native
+  def BlockIsOnOneLine(node: IndentationNodeContext): Boolean
   
-  def ContextNodeAllOnSameLine(): Boolean = js.native
+  def ContextNodeAllOnSameLine(): Boolean
   
-  def ContextNodeBlockIsOnOneLine(): Boolean = js.native
+  def ContextNodeBlockIsOnOneLine(): Boolean
   
-  def NextNodeAllOnSameLine(): Boolean = js.native
+  def NextNodeAllOnSameLine(): Boolean
   
-  def NextNodeBlockIsOnOneLine(): Boolean = js.native
+  def NextNodeBlockIsOnOneLine(): Boolean
   
-  def NodeIsOnOneLine(node: IndentationNodeContext): Boolean = js.native
+  def NodeIsOnOneLine(node: IndentationNodeContext): Boolean
   
-  def TokensAreOnSameLine(): Boolean = js.native
+  def TokensAreOnSameLine(): Boolean
   
-  var contextNode: IndentationNodeContext = js.native
+  var contextNode: IndentationNodeContext
   
-  var contextNodeAllOnSameLine: js.Any = js.native
+  var contextNodeAllOnSameLine: js.Any
   
-  var contextNodeBlockIsOnOneLine: js.Any = js.native
+  var contextNodeBlockIsOnOneLine: js.Any
   
-  var currentTokenParent: IndentationNodeContext = js.native
+  var currentTokenParent: IndentationNodeContext
   
-  var currentTokenSpan: TokenSpan = js.native
+  var currentTokenSpan: TokenSpan
   
-  var formattingRequestKind: FormattingRequestKind = js.native
+  var formattingRequestKind: FormattingRequestKind
   
-  var nextNodeAllOnSameLine: js.Any = js.native
+  var nextNodeAllOnSameLine: js.Any
   
-  var nextNodeBlockIsOnOneLine: js.Any = js.native
+  var nextNodeBlockIsOnOneLine: js.Any
   
-  var nextTokenParent: IndentationNodeContext = js.native
+  var nextTokenParent: IndentationNodeContext
   
-  var nextTokenSpan: TokenSpan = js.native
+  var nextTokenSpan: TokenSpan
   
-  var snapshot: js.Any = js.native
+  var snapshot: js.Any
   
-  var tokensAreOnSameLine: js.Any = js.native
+  var tokensAreOnSameLine: js.Any
   
   def updateContext(
     currentTokenSpan: TokenSpan,
@@ -52,7 +50,7 @@ trait FormattingContext extends StObject {
     nextTokenSpan: TokenSpan,
     nextTokenParent: IndentationNodeContext,
     commonParent: IndentationNodeContext
-  ): Unit = js.native
+  ): Unit
 }
 object FormattingContext {
   

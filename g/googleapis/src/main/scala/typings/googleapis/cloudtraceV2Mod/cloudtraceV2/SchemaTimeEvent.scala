@@ -2,29 +2,27 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A time-stamped annotation or message event in the Span.
   */
-@js.native
 trait SchemaTimeEvent extends StObject {
   
   /**
     * Text annotation with a set of attributes.
     */
-  var annotation: js.UndefOr[SchemaAnnotation] = js.native
+  var annotation: js.UndefOr[SchemaAnnotation] = js.undefined
   
   /**
     * An event describing a message sent/received between Spans.
     */
-  var messageEvent: js.UndefOr[SchemaMessageEvent] = js.native
+  var messageEvent: js.UndefOr[SchemaMessageEvent] = js.undefined
   
   /**
     * The timestamp indicating the time the event occurred.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object SchemaTimeEvent {
   

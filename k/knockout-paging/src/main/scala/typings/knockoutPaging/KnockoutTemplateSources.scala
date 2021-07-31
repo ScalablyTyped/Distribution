@@ -4,15 +4,13 @@ import typings.knockoutPaging.anon.InstantiableKnockoutTemplateAnonymous
 import typings.knockoutPaging.anon.InstantiableKnockoutTemplateSourcesDomElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutTemplateSources extends StObject {
   
-  var anonymousTemplate: InstantiableKnockoutTemplateAnonymous = js.native
+  var anonymousTemplate: InstantiableKnockoutTemplateAnonymous
   
-  var domElement: InstantiableKnockoutTemplateSourcesDomElement = js.native
+  var domElement: InstantiableKnockoutTemplateSourcesDomElement
 }
 object KnockoutTemplateSources {
   

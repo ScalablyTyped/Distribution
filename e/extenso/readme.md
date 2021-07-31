@@ -10,9 +10,9 @@ Escrever números por extenso.
 | ------------------ | :-------------: |
 | Full name          | extenso |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 67961 |
+| # downloads        | 121038 |
 | # stars            | 0 |
 
 ## Links

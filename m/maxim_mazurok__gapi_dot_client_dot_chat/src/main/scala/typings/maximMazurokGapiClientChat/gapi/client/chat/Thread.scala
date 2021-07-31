@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thread extends StObject {
   
   /** Resource name, in the form "spaces/∗/threads/ *". Example: spaces/AAAAMpdlehY/threads/UMxbHmzDlr4 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Thread {
   

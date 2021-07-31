@@ -2,7 +2,6 @@ package typings.jsbn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -117,9 +116,9 @@ object mod {
     
     // (protected) alternate constructor
     def fromNumber(a: Double): Unit = js.native
-    def fromNumber(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
     def fromNumber(a: Double, b: Double): Unit = js.native
     def fromNumber(a: Double, b: Double, c: Double): Unit = js.native
+    def fromNumber(a: Double, b: Unit, c: Double): Unit = js.native
     
     // (protected) convert from radix string
     def fromRadix(s: String, b: Double): Unit = js.native
@@ -265,10 +264,9 @@ object mod {
     def ZERO_=(x: BigInteger): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait RandomGenerator extends StObject {
     
-    def nextBytes(bytes: js.Array[Double]): Unit = js.native
+    def nextBytes(bytes: js.Array[Double]): Unit
   }
   object RandomGenerator {
     
@@ -286,18 +284,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Reduction extends StObject {
     
-    def convert(x: BigInteger): BigInteger = js.native
+    def convert(x: BigInteger): BigInteger
     
-    def mulTo(x: BigInteger, y: BigInteger, r: BigInteger): Unit = js.native
+    def mulTo(x: BigInteger, y: BigInteger, r: BigInteger): Unit
     
-    def reduce(x: BigInteger): Unit = js.native
+    def reduce(x: BigInteger): Unit
     
-    def revert(x: BigInteger): BigInteger = js.native
+    def revert(x: BigInteger): BigInteger
     
-    def sqrTo(x: BigInteger, r: BigInteger): Unit = js.native
+    def sqrTo(x: BigInteger, r: BigInteger): Unit
   }
   object Reduction {
     

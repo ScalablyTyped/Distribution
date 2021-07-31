@@ -2,25 +2,23 @@ package typings.sendcloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMember extends StObject {
   
-  def addListMember(mail_list_addr: String, member_addr: String, name: String, options: ListMemberAddOptions): js.Promise[ListMemberAddResposne] = js.native
+  def addListMember(mail_list_addr: String, member_addr: String, name: String, options: ListMemberAddOptions): js.Promise[ListMemberAddResposne]
   
-  def addToOtherList(sourceList: String, targetList: String): js.Promise[js.Array[ListMemberAddResposne]] = js.native
+  def addToOtherList(sourceList: String, targetList: String): js.Promise[js.Array[ListMemberAddResposne]]
   
-  var apiKey: String = js.native
+  var apiKey: String
   
-  var apiUser: String = js.native
+  var apiUser: String
   
-  def deleteListMember(mail_list_addr: String, member_addr: String): js.Promise[ListMemberDeleteResposne] = js.native
+  def deleteListMember(mail_list_addr: String, member_addr: String): js.Promise[ListMemberDeleteResposne]
   
-  def getData(url: String, data: js.Object): js.Promise[js.Object] = js.native
+  def getData(url: String, data: js.Object): js.Promise[js.Object]
   
-  def getListMember(mail_list_addr: String, options: ListMemberListOptions): js.Promise[ListMemberListResponse] = js.native
+  def getListMember(mail_list_addr: String, options: ListMemberListOptions): js.Promise[ListMemberListResponse]
 }
 object ListMember {
   

@@ -2,80 +2,63 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Validate {
   
-  @JSImport("azure", "Validate.blobNameIsValid")
+  @JSImport("azure", "Validate")
   @js.native
-  def blobNameIsValid(containerName: String, blob: String): Boolean = js.native
-  @JSImport("azure", "Validate.blobNameIsValid")
-  @js.native
-  def blobNameIsValid(containerName: String, blob: String, callback: ErrorCallback): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azure", "Validate.containerNameIsValid")
-  @js.native
-  def containerNameIsValid(containerName: String): Boolean = js.native
-  @JSImport("azure", "Validate.containerNameIsValid")
-  @js.native
-  def containerNameIsValid(containerName: String, callback: ErrorCallback): Boolean = js.native
+  @scala.inline
+  def blobNameIsValid(containerName: String, blob: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("blobNameIsValid")(containerName.asInstanceOf[js.Any], blob.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def blobNameIsValid(containerName: String, blob: String, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("blobNameIsValid")(containerName.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.isBase64Encoded")
-  @js.native
-  def isBase64Encoded(key: String): Boolean = js.native
+  @scala.inline
+  def containerNameIsValid(containerName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("containerNameIsValid")(containerName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def containerNameIsValid(containerName: String, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containerNameIsValid")(containerName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.isValidFunction")
-  @js.native
-  def isValidFunction(functionObject: js.Any, functionName: String): Unit = js.native
+  @scala.inline
+  def isBase64Encoded(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64Encoded")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.isValidHDInsightCreationObject")
-  @js.native
-  def isValidHDInsightCreationObject(clusterCreationObject: ClusterCreationOptions): Unit = js.native
-  @JSImport("azure", "Validate.isValidHDInsightCreationObject")
-  @js.native
-  def isValidHDInsightCreationObject(clusterCreationObject: ClusterCreationOptions, callback: ErrorCallback): Unit = js.native
+  @scala.inline
+  def isValidFunction(functionObject: js.Any, functionName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidFunction")(functionObject.asInstanceOf[js.Any], functionName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("azure", "Validate.isValidUri")
-  @js.native
-  def isValidUri(uri: String): Boolean = js.native
+  @scala.inline
+  def isValidHDInsightCreationObject(clusterCreationObject: ClusterCreationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHDInsightCreationObject")(clusterCreationObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def isValidHDInsightCreationObject(clusterCreationObject: ClusterCreationOptions, callback: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidHDInsightCreationObject")(clusterCreationObject.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("azure", "Validate.isValidUuid")
-  @js.native
-  def isValidUuid(uuid: String): Unit = js.native
-  @JSImport("azure", "Validate.isValidUuid")
-  @js.native
-  def isValidUuid(uuid: String, callback: ErrorCallback): Unit = js.native
+  @scala.inline
+  def isValidUri(uri: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUri")(uri.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.namespaceNameIsValid")
-  @js.native
-  def namespaceNameIsValid(name: String): Boolean = js.native
-  @JSImport("azure", "Validate.namespaceNameIsValid")
-  @js.native
-  def namespaceNameIsValid(name: String, callback: ErrorCallback): Boolean = js.native
+  @scala.inline
+  def isValidUuid(uuid: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUuid")(uuid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def isValidUuid(uuid: String, callback: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidUuid")(uuid.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("azure", "Validate.pageRangesAreValid")
-  @js.native
-  def pageRangesAreValid(rangeStart: Double, rangeEnd: Double, writeBlockSizeInBytes: Double): Boolean = js.native
-  @JSImport("azure", "Validate.pageRangesAreValid")
-  @js.native
-  def pageRangesAreValid(rangeStart: Double, rangeEnd: Double, writeBlockSizeInBytes: Double, callback: ErrorCallback): Boolean = js.native
+  @scala.inline
+  def namespaceNameIsValid(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("namespaceNameIsValid")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def namespaceNameIsValid(name: String, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("namespaceNameIsValid")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.queueNameIsValid")
-  @js.native
-  def queueNameIsValid(queueName: String): Boolean = js.native
-  @JSImport("azure", "Validate.queueNameIsValid")
-  @js.native
-  def queueNameIsValid(queueName: String, callback: ErrorCallback): Boolean = js.native
+  @scala.inline
+  def pageRangesAreValid(rangeStart: Double, rangeEnd: Double, writeBlockSizeInBytes: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pageRangesAreValid")(rangeStart.asInstanceOf[js.Any], rangeEnd.asInstanceOf[js.Any], writeBlockSizeInBytes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def pageRangesAreValid(rangeStart: Double, rangeEnd: Double, writeBlockSizeInBytes: Double, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pageRangesAreValid")(rangeStart.asInstanceOf[js.Any], rangeEnd.asInstanceOf[js.Any], writeBlockSizeInBytes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.tableNameIsValid")
-  @js.native
-  def tableNameIsValid(tableName: String): Boolean = js.native
-  @JSImport("azure", "Validate.tableNameIsValid")
-  @js.native
-  def tableNameIsValid(tableName: String, callback: ErrorCallback): Boolean = js.native
+  @scala.inline
+  def queueNameIsValid(queueName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("queueNameIsValid")(queueName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def queueNameIsValid(queueName: String, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("queueNameIsValid")(queueName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("azure", "Validate.validateArgs")
-  @js.native
-  def validateArgs(functionName: String, validationRules: js.Function): Boolean = js.native
+  @scala.inline
+  def tableNameIsValid(tableName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tableNameIsValid")(tableName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def tableNameIsValid(tableName: String, callback: ErrorCallback): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("tableNameIsValid")(tableName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def validateArgs(functionName: String, validationRules: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateArgs")(functionName.asInstanceOf[js.Any], validationRules.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

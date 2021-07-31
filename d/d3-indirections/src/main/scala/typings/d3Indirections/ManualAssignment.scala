@@ -2,19 +2,18 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Assign a resource to a manual indirection.
   */
-@js.native
 trait ManualAssignment
-  extends AssignmentBase
+  extends StObject
+     with AssignmentBase
      with Assignment {
   
   /** Unique identifier of the new resource to use. */
-  var resourceUid: String = js.native
+  var resourceUid: String
 }
 object ManualAssignment {
   

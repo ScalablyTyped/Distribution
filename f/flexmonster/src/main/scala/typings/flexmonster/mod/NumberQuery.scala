@@ -2,27 +2,25 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberQuery extends StObject {
   
-  var between: js.UndefOr[js.Array[Double]] = js.native
+  var between: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var equal: js.UndefOr[Double] = js.native
+  var equal: js.UndefOr[Double] = js.undefined
   
-  var greater: js.UndefOr[Double] = js.native
+  var greater: js.UndefOr[Double] = js.undefined
   
-  var greater_equal: js.UndefOr[Double] = js.native
+  var greater_equal: js.UndefOr[Double] = js.undefined
   
-  var less: js.UndefOr[Double] = js.native
+  var less: js.UndefOr[Double] = js.undefined
   
-  var less_equal: js.UndefOr[Double] = js.native
+  var less_equal: js.UndefOr[Double] = js.undefined
   
-  var not_between: js.UndefOr[js.Array[Double]] = js.native
+  var not_between: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var not_equal: js.UndefOr[Double] = js.native
+  var not_equal: js.UndefOr[Double] = js.undefined
 }
 object NumberQuery {
   

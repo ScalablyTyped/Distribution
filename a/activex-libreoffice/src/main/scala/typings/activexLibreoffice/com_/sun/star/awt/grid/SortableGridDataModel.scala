@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,8 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note that changing the data might result in the sort order being destroyed. If you want to ensure that the data represented by the model is still
   * sorted after your modifications, you should call {@link XSortableGridData.sortByColumn()} , again.
   */
-@js.native
-trait SortableGridDataModel extends XSortableMutableGridDataModel {
+trait SortableGridDataModel
+  extends StObject
+     with XSortableMutableGridDataModel {
   
   /**
     * creates a new instance of the `SortableGridDataModel`
@@ -40,7 +40,7 @@ trait SortableGridDataModel extends XSortableMutableGridDataModel {
     * @param DelegatorModel the data model to which read requests are delegated.
     * @throws com::sun::star::lang::IllegalArgumentException if the given `DelegatorModel` is `NULL`
     */
-  def create(DelegatorModel: XMutableGridDataModel): Unit = js.native
+  def create(DelegatorModel: XMutableGridDataModel): Unit
   
   /**
     * creates a new instance of the ScortableDefaultGridDataModel, passing a collator to be used for string comparison.
@@ -48,7 +48,7 @@ trait SortableGridDataModel extends XSortableMutableGridDataModel {
     * @param Collator is the collator to be used for string comparison
     * @throws com::sun::star::lang::IllegalArgumentException if the given `DelegatorModel` is `NULL`
     */
-  def createWithCollator(DelegatorModel: XMutableGridDataModel, Collator: XCollator): Unit = js.native
+  def createWithCollator(DelegatorModel: XMutableGridDataModel, Collator: XCollator): Unit
 }
 object SortableGridDataModel {
   
@@ -60,8 +60,8 @@ object SortableGridDataModel {
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     addGridDataListener: XGridDataListener => Unit,
-    addRow: (js.Any, SeqEquiv[_]) => Unit,
-    addRows: (SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    addRow: (js.Any, SeqEquiv[js.Any]) => Unit,
+    addRows: (SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     create: XMutableGridDataModel => Unit,
     createClone: () => XCloneable,
     createWithCollator: (XMutableGridDataModel, XCollator) => Unit,
@@ -69,10 +69,10 @@ object SortableGridDataModel {
     getCellData: (Double, Double) => js.Any,
     getCellToolTip: (Double, Double) => js.Any,
     getCurrentSortOrder: () => Pair[Double, Boolean],
-    getRowData: Double => SafeArray[_],
+    getRowData: Double => SafeArray[js.Any],
     getRowHeading: Double => js.Any,
-    insertRow: (Double, js.Any, SeqEquiv[_]) => Unit,
-    insertRows: (Double, SeqEquiv[_], SeqEquiv[SeqEquiv[_]]) => Unit,
+    insertRow: (Double, js.Any, SeqEquiv[js.Any]) => Unit,
+    insertRows: (Double, SeqEquiv[js.Any], SeqEquiv[SeqEquiv[js.Any]]) => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeAllRows: () => Unit,
@@ -83,7 +83,7 @@ object SortableGridDataModel {
     sortByColumn: (Double, Boolean) => Unit,
     updateCellData: (Double, Double, js.Any) => Unit,
     updateCellToolTip: (Double, Double, js.Any) => Unit,
-    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[_]) => Unit,
+    updateRowData: (SeqEquiv[Double], Double, SeqEquiv[js.Any]) => Unit,
     updateRowHeading: (Double, js.Any) => Unit,
     updateRowToolTip: (Double, js.Any) => Unit
   ): SortableGridDataModel = {

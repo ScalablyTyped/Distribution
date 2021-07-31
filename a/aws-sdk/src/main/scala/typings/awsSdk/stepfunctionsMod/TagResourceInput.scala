@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the Step Functions state machine or activity.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The list of tags to add to a resource. Tags may only contain Unicode letters, digits, white space, or these symbols: _ . : / = + - @.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object TagResourceInput {
   

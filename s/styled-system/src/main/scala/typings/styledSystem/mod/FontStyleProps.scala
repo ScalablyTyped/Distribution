@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait FontStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     */
   var fontStyle: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FontStyleProps {
   
@@ -30,12 +28,12 @@ object FontStyleProps {
   }
   
   @scala.inline
-  implicit class FontStylePropsMutableBuilder[Self <: FontStyleProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with FontStyleProps[ThemeType]) extends AnyVal {
+  implicit class FontStylePropsMutableBuilder[Self <: FontStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & FontStyleProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setFontStyle(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
@@ -47,6 +45,8 @@ object FontStyleProps {
     def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def setFontStyleVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
+    def setFontStyleVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontStyle */ js.Any) | Null)*
+    ): Self = StObject.set(x, "fontStyle", js.Array(value :_*))
   }
 }

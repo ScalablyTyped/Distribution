@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamPermissionsBoundary extends StObject {
   
   /**
     * The ARN of the policy used to set the permissions boundary.
     */
-  var PermissionsBoundaryArn: js.UndefOr[NonEmptyString] = js.native
+  var PermissionsBoundaryArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The usage type for the permissions boundary.
     */
-  var PermissionsBoundaryType: js.UndefOr[NonEmptyString] = js.native
+  var PermissionsBoundaryType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamPermissionsBoundary {
   

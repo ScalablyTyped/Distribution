@@ -2,31 +2,29 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedToolbarOptions extends StObject {
   
-  var disablePageZoom: js.UndefOr[Boolean] = js.native
+  var disablePageZoom: js.UndefOr[Boolean] = js.undefined
   
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
-  var hideDuringFocus: js.UndefOr[String] = js.native
+  var hideDuringFocus: js.UndefOr[String] = js.undefined
   
-  var initSelector: js.UndefOr[String] = js.native
+  var initSelector: js.UndefOr[String] = js.undefined
   
-  var supportBlacklist: js.UndefOr[js.Function] = js.native
+  var supportBlacklist: js.UndefOr[js.Function] = js.undefined
   
-  var tapToggle: js.UndefOr[Boolean] = js.native
+  var tapToggle: js.UndefOr[Boolean] = js.undefined
   
-  var tapToggleBlacklist: js.UndefOr[String] = js.native
+  var tapToggleBlacklist: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var updatePagePadding: js.UndefOr[Boolean] = js.native
+  var updatePagePadding: js.UndefOr[Boolean] = js.undefined
   
-  var visibleOnPageShow: js.UndefOr[Boolean] = js.native
+  var visibleOnPageShow: js.UndefOr[Boolean] = js.undefined
 }
 object FixedToolbarOptions {
   

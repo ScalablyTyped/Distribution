@@ -3,7 +3,6 @@ package typings.winjs.mod.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,10 +18,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/
 class HubSection ()
-  extends typings.winjs.WinJS.UI.HubSection {
+  extends StObject
+     with typings.winjs.WinJS.UI.HubSection {
   def this(element: HTMLElement) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: js.Any) = this()
+  def this(element: Unit, options: js.Any) = this()
   def this(element: HTMLElement, options: js.Any) = this()
+  
+  //#endregion Methods
+  //#region Properties
+  /**
+    * Gets the DOM element that hosts the HubSection control's content.
+    **/
+  /* CompleteClass */
+  var contentElement: HTMLElement = js.native
+  
+  //#endregion Constructors
+  //#region Methods
+  /**
+    * Releases resources held by this HubSection. Call this method when the HubSection is no longer needed. After calling this method, the HubSection becomes unusable.
+    **/
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
+  
+  /**
+    * Gets the DOM element that hosts this HubSection.
+    **/
+  /* CompleteClass */
+  var element: HTMLElement = js.native
+  
+  /**
+    * Gets or sets the header for this HubSection.
+    **/
+  /* CompleteClass */
+  var header: String = js.native
+  
+  /**
+    * Gets a value that specifies whether the header is static.
+    **/
+  /* CompleteClass */
+  var isHeaderStatic: Boolean = js.native
 }
 object HubSection {
   

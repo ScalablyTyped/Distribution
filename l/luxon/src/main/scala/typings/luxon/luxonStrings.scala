@@ -13,14 +13,14 @@ import typings.luxon.mod.UnitLength
 import typings.luxon.mod.ZoneOffsetFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object luxonStrings {
   
   @js.native
   sealed trait `2-digit`
-    extends NumberUnitLength
+    extends StObject
+       with NumberUnitLength
        with UnitLength
   @scala.inline
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
@@ -131,58 +131,79 @@ object luxonStrings {
   def TIME_WITH_SHORT_OFFSET: TIME_WITH_SHORT_OFFSET = "TIME_WITH_SHORT_OFFSET".asInstanceOf[TIME_WITH_SHORT_OFFSET]
   
   @js.native
-  sealed trait arab extends NumberingSystem
+  sealed trait arab
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def arab: arab = "arab".asInstanceOf[arab]
   
   @js.native
-  sealed trait arabext extends NumberingSystem
+  sealed trait arabext
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def arabext: arabext = "arabext".asInstanceOf[arabext]
   
   @js.native
-  sealed trait bali extends NumberingSystem
+  sealed trait bali
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def bali: bali = "bali".asInstanceOf[bali]
   
   @js.native
-  sealed trait basic extends ToISOFormat
+  sealed trait basic
+    extends StObject
+       with ToISOFormat
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait beng extends NumberingSystem
+  sealed trait beng
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def beng: beng = "beng".asInstanceOf[beng]
   
   @js.native
-  sealed trait buddhist extends CalendarSystem
+  sealed trait buddhist
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def buddhist: buddhist = "buddhist".asInstanceOf[buddhist]
   
   @js.native
-  sealed trait casual extends ConversionAccuracy
+  sealed trait casual
+    extends StObject
+       with ConversionAccuracy
   @scala.inline
   def casual: casual = "casual".asInstanceOf[casual]
   
   @js.native
-  sealed trait chinese extends CalendarSystem
+  sealed trait chinese
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def chinese: chinese = "chinese".asInstanceOf[chinese]
   
   @js.native
-  sealed trait coptic extends CalendarSystem
+  sealed trait coptic
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def coptic: coptic = "coptic".asInstanceOf[coptic]
   
   @js.native
-  sealed trait day extends DurationUnit
+  sealed trait day
+    extends StObject
+       with DurationUnit
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
   sealed trait days
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def days: days = "days".asInstanceOf[days]
@@ -198,7 +219,9 @@ object luxonStrings {
   def daysInYear: daysInYear = "daysInYear".asInstanceOf[daysInYear]
   
   @js.native
-  sealed trait deva extends NumberingSystem
+  sealed trait deva
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def deva: deva = "deva".asInstanceOf[deva]
   
@@ -223,17 +246,23 @@ object luxonStrings {
   def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait ethioaa extends CalendarSystem
+  sealed trait ethioaa
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def ethioaa: ethioaa = "ethioaa".asInstanceOf[ethioaa]
   
   @js.native
-  sealed trait ethiopic extends CalendarSystem
+  sealed trait ethiopic
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def ethiopic: ethiopic = "ethiopic".asInstanceOf[ethiopic]
   
   @js.native
-  sealed trait extended extends ToISOFormat
+  sealed trait extended
+    extends StObject
+       with ToISOFormat
   @scala.inline
   def extended: extended = "extended".asInstanceOf[extended]
   
@@ -298,7 +327,9 @@ object luxonStrings {
   def fromStringExplain: fromStringExplain = "fromStringExplain".asInstanceOf[fromStringExplain]
   
   @js.native
-  sealed trait fullwide extends NumberingSystem
+  sealed trait fullwide
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def fullwide: fullwide = "fullwide".asInstanceOf[fullwide]
   
@@ -308,42 +339,58 @@ object luxonStrings {
   def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait gregory extends CalendarSystem
+  sealed trait gregory
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def gregory: gregory = "gregory".asInstanceOf[gregory]
   
   @js.native
-  sealed trait gujr extends NumberingSystem
+  sealed trait gujr
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def gujr: gujr = "gujr".asInstanceOf[gujr]
   
   @js.native
-  sealed trait guru extends NumberingSystem
+  sealed trait guru
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def guru: guru = "guru".asInstanceOf[guru]
   
   @js.native
-  sealed trait h11 extends HourCycle
+  sealed trait h11
+    extends StObject
+       with HourCycle
   @scala.inline
   def h11: h11 = "h11".asInstanceOf[h11]
   
   @js.native
-  sealed trait h12 extends HourCycle
+  sealed trait h12
+    extends StObject
+       with HourCycle
   @scala.inline
   def h12: h12 = "h12".asInstanceOf[h12]
   
   @js.native
-  sealed trait h23 extends HourCycle
+  sealed trait h23
+    extends StObject
+       with HourCycle
   @scala.inline
   def h23: h23 = "h23".asInstanceOf[h23]
   
   @js.native
-  sealed trait h24 extends HourCycle
+  sealed trait h24
+    extends StObject
+       with HourCycle
   @scala.inline
   def h24: h24 = "h24".asInstanceOf[h24]
   
   @js.native
-  sealed trait hanidec extends NumberingSystem
+  sealed trait hanidec
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def hanidec: hanidec = "hanidec".asInstanceOf[hanidec]
   
@@ -353,24 +400,31 @@ object luxonStrings {
   def hasSame: hasSame = "hasSame".asInstanceOf[hasSame]
   
   @js.native
-  sealed trait hebrew extends CalendarSystem
+  sealed trait hebrew
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
   
   @js.native
-  sealed trait hour extends DurationUnit
+  sealed trait hour
+    extends StObject
+       with DurationUnit
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
   sealed trait hours
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait indian extends CalendarSystem
+  sealed trait indian
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def indian: indian = "indian".asInstanceOf[indian]
   
@@ -415,47 +469,65 @@ object luxonStrings {
   def isValid: isValid = "isValid".asInstanceOf[isValid]
   
   @js.native
-  sealed trait islamic extends CalendarSystem
+  sealed trait islamic
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def islamic: islamic = "islamic".asInstanceOf[islamic]
   
   @js.native
-  sealed trait islamicc extends CalendarSystem
+  sealed trait islamicc
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def islamicc: islamicc = "islamicc".asInstanceOf[islamicc]
   
   @js.native
-  sealed trait iso8601 extends CalendarSystem
+  sealed trait iso8601
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def iso8601: iso8601 = "iso8601".asInstanceOf[iso8601]
   
   @js.native
-  sealed trait japanese extends CalendarSystem
+  sealed trait japanese
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def japanese: japanese = "japanese".asInstanceOf[japanese]
   
   @js.native
-  sealed trait khmr extends NumberingSystem
+  sealed trait khmr
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def khmr: khmr = "khmr".asInstanceOf[khmr]
   
   @js.native
-  sealed trait knda extends NumberingSystem
+  sealed trait knda
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def knda: knda = "knda".asInstanceOf[knda]
   
   @js.native
-  sealed trait laoo extends NumberingSystem
+  sealed trait laoo
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def laoo: laoo = "laoo".asInstanceOf[laoo]
   
   @js.native
-  sealed trait latn extends NumberingSystem
+  sealed trait latn
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def latn: latn = "latn".asInstanceOf[latn]
   
   @js.native
-  sealed trait limb extends NumberingSystem
+  sealed trait limb
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def limb: limb = "limb".asInstanceOf[limb]
   
@@ -471,13 +543,16 @@ object luxonStrings {
   
   @js.native
   sealed trait long
-    extends StringUnitLength
+    extends StObject
+       with StringUnitLength
        with UnitLength
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait longterm extends ConversionAccuracy
+  sealed trait longterm
+    extends StObject
+       with ConversionAccuracy
   @scala.inline
   def longterm: longterm = "longterm".asInstanceOf[longterm]
   
@@ -487,12 +562,16 @@ object luxonStrings {
   def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait millisecond extends DurationUnit
+  sealed trait millisecond
+    extends StObject
+       with DurationUnit
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   
   @js.native
-  sealed trait milliseconds extends DurationUnit
+  sealed trait milliseconds
+    extends StObject
+       with DurationUnit
   @scala.inline
   def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
@@ -507,29 +586,38 @@ object luxonStrings {
   def minus: minus = "minus".asInstanceOf[minus]
   
   @js.native
-  sealed trait minute extends DurationUnit
+  sealed trait minute
+    extends StObject
+       with DurationUnit
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
   sealed trait minutes
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait mlym extends NumberingSystem
+  sealed trait mlym
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def mlym: mlym = "mlym".asInstanceOf[mlym]
   
   @js.native
-  sealed trait mong extends NumberingSystem
+  sealed trait mong
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def mong: mong = "mong".asInstanceOf[mong]
   
   @js.native
-  sealed trait month extends DurationUnit
+  sealed trait month
+    extends StObject
+       with DurationUnit
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -545,19 +633,23 @@ object luxonStrings {
   
   @js.native
   sealed trait months
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait mymr extends NumberingSystem
+  sealed trait mymr
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def mymr: mymr = "mymr".asInstanceOf[mymr]
   
   @js.native
   sealed trait narrow
-    extends StringUnitLength
+    extends StObject
+       with StringUnitLength
        with UnitLength
        with ZoneOffsetFormat
   @scala.inline
@@ -570,7 +662,8 @@ object luxonStrings {
   
   @js.native
   sealed trait numeric
-    extends NumberUnitLength
+    extends StObject
+       with NumberUnitLength
        with UnitLength
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
@@ -596,7 +689,9 @@ object luxonStrings {
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
   @js.native
-  sealed trait orya extends NumberingSystem
+  sealed trait orya
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def orya: orya = "orya".asInstanceOf[orya]
   
@@ -606,7 +701,9 @@ object luxonStrings {
   def outputCalendar: outputCalendar = "outputCalendar".asInstanceOf[outputCalendar]
   
   @js.native
-  sealed trait persian extends CalendarSystem
+  sealed trait persian
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def persian: persian = "persian".asInstanceOf[persian]
   
@@ -616,13 +713,16 @@ object luxonStrings {
   def plus: plus = "plus".asInstanceOf[plus]
   
   @js.native
-  sealed trait quarter extends DurationUnit
+  sealed trait quarter
+    extends StObject
+       with DurationUnit
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait quarters
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def quarters: quarters = "quarters".asInstanceOf[quarters]
@@ -638,18 +738,23 @@ object luxonStrings {
   def resolvedLocaleOpts: resolvedLocaleOpts = "resolvedLocaleOpts".asInstanceOf[resolvedLocaleOpts]
   
   @js.native
-  sealed trait roc extends CalendarSystem
+  sealed trait roc
+    extends StObject
+       with CalendarSystem
   @scala.inline
   def roc: roc = "roc".asInstanceOf[roc]
   
   @js.native
-  sealed trait second extends DurationUnit
+  sealed trait second
+    extends StObject
+       with DurationUnit
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait seconds
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def seconds: seconds = "seconds".asInstanceOf[seconds]
@@ -671,7 +776,8 @@ object luxonStrings {
   
   @js.native
   sealed trait short
-    extends StringUnitLength
+    extends StObject
+       with StringUnitLength
        with UnitLength
        with ZoneOffsetFormat
   @scala.inline
@@ -683,27 +789,37 @@ object luxonStrings {
   def startOf: startOf = "startOf".asInstanceOf[startOf]
   
   @js.native
-  sealed trait tamldec extends NumberingSystem
+  sealed trait tamldec
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def tamldec: tamldec = "tamldec".asInstanceOf[tamldec]
   
   @js.native
-  sealed trait techie extends ZoneOffsetFormat
+  sealed trait techie
+    extends StObject
+       with ZoneOffsetFormat
   @scala.inline
   def techie: techie = "techie".asInstanceOf[techie]
   
   @js.native
-  sealed trait telu extends NumberingSystem
+  sealed trait telu
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def telu: telu = "telu".asInstanceOf[telu]
   
   @js.native
-  sealed trait thai extends NumberingSystem
+  sealed trait thai
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def thai: thai = "thai".asInstanceOf[thai]
   
   @js.native
-  sealed trait tibt extends NumberingSystem
+  sealed trait tibt
+    extends StObject
+       with NumberingSystem
   @scala.inline
   def tibt: tibt = "tibt".asInstanceOf[tibt]
   
@@ -832,7 +948,9 @@ object luxonStrings {
   sealed trait valueOf extends StObject
   
   @js.native
-  sealed trait week extends DurationUnit
+  sealed trait week
+    extends StObject
+       with DurationUnit
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
@@ -863,7 +981,8 @@ object luxonStrings {
   
   @js.native
   sealed trait weeks
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def weeks: weeks = "weeks".asInstanceOf[weeks]
@@ -874,13 +993,16 @@ object luxonStrings {
   def weeksInWeekYear: weeksInWeekYear = "weeksInWeekYear".asInstanceOf[weeksInWeekYear]
   
   @js.native
-  sealed trait year extends DurationUnit
+  sealed trait year
+    extends StObject
+       with DurationUnit
   @scala.inline
   def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait years
-    extends DurationUnit
+    extends StObject
+       with DurationUnit
        with ToRelativeUnit
   @scala.inline
   def years: years = "years".asInstanceOf[years]

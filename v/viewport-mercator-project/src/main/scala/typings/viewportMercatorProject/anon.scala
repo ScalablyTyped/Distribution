@@ -8,25 +8,23 @@ import typings.viewportMercatorProject.mod.Padding
 import typings.viewportMercatorProject.viewportMercatorProjectBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Altitude extends StObject {
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var bearing: Double = js.native
+    var bearing: Double
     
-    var center: js.UndefOr[CoordinatesZ] = js.native
+    var center: js.UndefOr[CoordinatesZ] = js.undefined
     
-    var flipY: js.UndefOr[Boolean] = js.native
+    var flipY: js.UndefOr[Boolean] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var pitch: Double = js.native
+    var pitch: Double
   }
   object Altitude {
     
@@ -66,14 +64,15 @@ object anon {
   }
   
   /* Inlined viewport-mercator-project.viewport-mercator-project.BaseDistanceScalesInput & {  scale :number} */
-  @js.native
-  trait BaseDistanceScalesInputsc extends DistanceScalesInput {
+  trait BaseDistanceScalesInputsc
+    extends StObject
+       with DistanceScalesInput {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object BaseDistanceScalesInputsc {
     
@@ -98,14 +97,15 @@ object anon {
   }
   
   /* Inlined viewport-mercator-project.viewport-mercator-project.BaseDistanceScalesInput & {  zoom :number} */
-  @js.native
-  trait BaseDistanceScalesInputzo extends DistanceScalesInput {
+  trait BaseDistanceScalesInputzo
+    extends StObject
+       with DistanceScalesInput {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object BaseDistanceScalesInputzo {
     
@@ -130,22 +130,23 @@ object anon {
   }
   
   /* Inlined viewport-mercator-project.viewport-mercator-project.BaseHighPrecisionDistanceScalesInput & {  zoom :number} */
-  @js.native
-  trait BaseHighPrecisionDistance extends HighPrecisionDistanceScalesInput {
+  trait BaseHighPrecisionDistance
+    extends StObject
+       with HighPrecisionDistanceScalesInput {
     
-    var highPrecision: `true` = js.native
+    var highPrecision: `true`
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object BaseHighPrecisionDistance {
     
     @scala.inline
-    def apply(highPrecision: `true`, latitude: Double, longitude: Double, zoom: Double): BaseHighPrecisionDistance = {
-      val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
+    def apply(latitude: Double, longitude: Double, zoom: Double): BaseHighPrecisionDistance = {
+      val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseHighPrecisionDistance]
     }
     
@@ -167,22 +168,23 @@ object anon {
   }
   
   /* Inlined viewport-mercator-project.viewport-mercator-project.BaseHighPrecisionDistanceScalesInput & {  scale :number} */
-  @js.native
-  trait BaseHighPrecisionDistanceHighPrecision extends HighPrecisionDistanceScalesInput {
+  trait BaseHighPrecisionDistanceHighPrecision
+    extends StObject
+       with HighPrecisionDistanceScalesInput {
     
-    var highPrecision: `true` = js.native
+    var highPrecision: `true`
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object BaseHighPrecisionDistanceHighPrecision {
     
     @scala.inline
-    def apply(highPrecision: `true`, latitude: Double, longitude: Double, scale: Double): BaseHighPrecisionDistanceHighPrecision = {
-      val __obj = js.Dynamic.literal(highPrecision = highPrecision.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+    def apply(latitude: Double, longitude: Double, scale: Double): BaseHighPrecisionDistanceHighPrecision = {
+      val __obj = js.Dynamic.literal(highPrecision = true, latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseHighPrecisionDistanceHighPrecision]
     }
     
@@ -203,16 +205,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Bottom extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Bottom {
     
@@ -239,18 +240,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Bounds extends StObject {
     
-    var bounds: typings.viewportMercatorProject.mod.Bounds = js.native
+    var bounds: typings.viewportMercatorProject.mod.Bounds
     
-    var height: Double = js.native
+    var height: Double
     
-    var offset: js.UndefOr[Coordinates] = js.native
+    var offset: js.UndefOr[Coordinates] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bounds {
     
@@ -286,10 +286,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Latitude extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
   }
   object Latitude {
     
@@ -307,12 +306,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LngLat extends StObject {
     
-    var lngLat: Coordinates = js.native
+    var lngLat: Coordinates
     
-    var pos: Coordinates = js.native
+    var pos: Coordinates
   }
   object LngLat {
     
@@ -333,12 +331,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: js.UndefOr[Coordinates] = js.native
+    var offset: js.UndefOr[Coordinates] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
   }
   object Offset {
     

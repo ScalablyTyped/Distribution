@@ -2,17 +2,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RotateWithOffsetAttrs extends StObject {
   
-  var center: Double | (js.Tuple2[Double, Double]) = js.native
+  var center: Double | (js.Tuple2[Double, Double])
   
-  var fillValue: Double | (js.Tuple3[Double, Double, Double]) = js.native
+  var fillValue: Double | (js.Tuple3[Double, Double, Double])
   
-  var radians: Double = js.native
+  var radians: Double
 }
 object RotateWithOffsetAttrs {
   

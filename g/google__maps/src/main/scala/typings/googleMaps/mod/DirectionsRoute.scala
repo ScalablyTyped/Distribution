@@ -3,17 +3,15 @@ package typings.googleMaps.mod
 import typings.googleMaps.anon.Points
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionsRoute extends StObject {
   
   /** contains the viewport bounding box of the `overview_polyline`. */
-  var bounds: LatLngBounds = js.native
+  var bounds: LatLngBounds
   
   /** contains the copyrights text to be displayed for this route. You must handle and display this information yourself. */
-  var copyrights: String = js.native
+  var copyrights: String
   
   /**
     * If present, contains the total fare (that is, the total ticket costs) on this route.
@@ -22,7 +20,7 @@ trait DirectionsRoute extends StObject {
     * **Note:** The Directions API only returns fare information for requests that contain either an API key or a client ID
     * and digital signature.
     */
-  var fare: TransitFare = js.native
+  var fare: TransitFare
   
   /**
     * contains an array which contains information about a leg of the route, between two locations within the given route.
@@ -30,31 +28,31 @@ trait DirectionsRoute extends StObject {
     * (A route with no waypoints will contain exactly one leg within the `legs` array.)
     * Each leg consists of a series of `steps`.
     */
-  var legs: js.Array[RouteLeg] = js.native
+  var legs: js.Array[RouteLeg]
   
   /**
     * An array of LatLngs representing the entire course of this route. The path is simplified in order to make
     * it suitable in contexts where a small number of vertices is required (such as Static Maps API URLs).
     */
-  var overview_path: js.Array[LatLngLiteral] = js.native
+  var overview_path: js.Array[LatLngLiteral]
   
   /**
     * contains a single `points` object that holds an encoded polyline representation of the route.
     * This polyline is an approximate (smoothed) path of the resulting directions.
     */
-  var overview_polyline: Points = js.native
+  var overview_polyline: Points
   
   /** contains a short textual description for the route, suitable for naming and disambiguating the route from alternatives. */
-  var summary: String = js.native
+  var summary: String
   
   /** contains an array of warnings to be displayed when showing these directions. You must handle and display these warnings yourself. */
-  var warnings: js.Array[String] = js.native
+  var warnings: js.Array[String]
   
   /**
     * contains an array indicating the order of any waypoints in the calculated route.
     * This waypoints may be reordered if the request was passed `optimize:true` within its `waypoints` parameter.
     */
-  var waypoint_order: js.Array[Double] = js.native
+  var waypoint_order: js.Array[Double]
 }
 object DirectionsRoute {
   

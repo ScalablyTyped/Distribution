@@ -2,10 +2,8 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindParameter extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait BindParameter extends StObject {
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#oracledbconstantsbinddir
     */
-  var dir: js.UndefOr[Double] = js.native
+  var dir: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of array elements to be allocated for a PL/SQL Collection INDEX BY associative
@@ -21,7 +19,7 @@ trait BindParameter extends StObject {
     *
     * @see https://oracle.github.io/node-oracledb/doc/api.html#plsqlindexbybinds
     */
-  var maxArraySize: js.UndefOr[Double] = js.native
+  var maxArraySize: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of bytes that an OUT or IN OUT bind variable of type STRING or BUFFER can use to get data.
@@ -31,7 +29,7 @@ trait BindParameter extends StObject {
     *
     * @default 200
     */
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The node-oracledb or JavaScript data type to be bound. One of the Node-oracledb Type Constants.
@@ -39,12 +37,12 @@ trait BindParameter extends StObject {
     * With IN or IN OUT binds the type can be explicitly set with type or it will default to the type
     * of the input data value. With OUT binds, the type defaults to oracledb.STRING whenever type is not specified.
     */
-  var `type`: js.UndefOr[Double | String] = js.native
+  var `type`: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The input value or variable to be used for an IN or IN OUT bind variable.
     */
-  var `val`: js.UndefOr[js.Any] = js.native
+  var `val`: js.UndefOr[js.Any] = js.undefined
 }
 object BindParameter {
   

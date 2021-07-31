@@ -3,11 +3,12 @@ package typings.devexpressWeb
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ASPxClientChartDesigner extends ASPxClientControl {
+trait ASPxClientChartDesigner
+  extends StObject
+     with ASPxClientControl {
   
   var BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientChartDesigner]] = js.native
   

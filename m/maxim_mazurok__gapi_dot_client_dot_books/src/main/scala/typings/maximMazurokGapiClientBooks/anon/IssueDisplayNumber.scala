@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssueDisplayNumber extends StObject {
   
-  var issueDisplayNumber: js.UndefOr[String] = js.native
+  var issueDisplayNumber: js.UndefOr[String] = js.undefined
   
-  var issueOrderNumber: js.UndefOr[Double] = js.native
+  var issueOrderNumber: js.UndefOr[Double] = js.undefined
 }
 object IssueDisplayNumber {
   

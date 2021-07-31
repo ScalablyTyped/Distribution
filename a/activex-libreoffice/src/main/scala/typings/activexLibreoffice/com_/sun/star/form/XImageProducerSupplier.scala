@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.awt.XImageProducer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides the access to an image producer.
   * @see com.sun.star.awt.XImageProducer
   */
-@js.native
-trait XImageProducerSupplier extends XInterface {
+trait XImageProducerSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * accesses the image producer.
     * @returns the image producer.
     */
-  val ImageProducer: XImageProducer = js.native
+  val ImageProducer: XImageProducer
   
   /**
     * accesses the image producer.
     * @returns the image producer.
     */
-  def getImageProducer(): XImageProducer = js.native
+  def getImageProducer(): XImageProducer
 }
 object XImageProducerSupplier {
   

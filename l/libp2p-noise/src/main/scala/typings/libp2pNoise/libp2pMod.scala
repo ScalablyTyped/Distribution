@@ -6,19 +6,17 @@ import typings.node.Buffer
 import typings.peerId.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libp2pMod {
   
-  @js.native
   trait INoiseConnection extends StObject {
     
-    var remoteEarlyData: js.UndefOr[js.Function0[bytes]] = js.native
+    var remoteEarlyData: js.UndefOr[js.Function0[bytes]] = js.undefined
     
-    def secureInbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound] = js.native
+    def secureInbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound]
     
-    def secureOutbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound] = js.native
+    def secureOutbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound]
   }
   object INoiseConnection {
     
@@ -48,12 +46,11 @@ object libp2pMod {
     }
   }
   
-  @js.native
   trait KeyPair extends StObject {
     
-    var privateKey: bytes32 = js.native
+    var privateKey: bytes32
     
-    var publicKey: bytes32 = js.native
+    var publicKey: bytes32
   }
   object KeyPair {
     
@@ -74,14 +71,13 @@ object libp2pMod {
     }
   }
   
-  @js.native
   trait SecureOutbound extends StObject {
     
-    var conn: js.Any = js.native
+    var conn: js.Any
     
-    var remoteEarlyData: Buffer = js.native
+    var remoteEarlyData: Buffer
     
-    var remotePeer: ^ = js.native
+    var remotePeer: ^
   }
   object SecureOutbound {
     

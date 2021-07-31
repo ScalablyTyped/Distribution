@@ -2,39 +2,37 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template for List Users operation in Apps Directory API.
   */
-@js.native
 trait SchemaUsers extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Token used to access next page of this result.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Event that triggered this response (only used in case of Push Response)
     */
-  var trigger_event: js.UndefOr[String] = js.native
+  var trigger_event: js.UndefOr[String] = js.undefined
   
   /**
     * List of user objects.
     */
-  var users: js.UndefOr[js.Array[SchemaUser]] = js.native
+  var users: js.UndefOr[js.Array[SchemaUser]] = js.undefined
 }
 object SchemaUsers {
   

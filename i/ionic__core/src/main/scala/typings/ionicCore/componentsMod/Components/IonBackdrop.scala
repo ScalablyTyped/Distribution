@@ -2,26 +2,24 @@ package typings.ionicCore.componentsMod.Components
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonBackdrop extends StObject {
   
   /**
     * If `true`, the backdrop will stop propagation on tap.
     */
-  var stopPropagation: Boolean = js.native
+  var stopPropagation: Boolean
   
   /**
     * If `true`, the backdrop will can be clicked and will emit the `ionBackdropTap` event.
     */
-  var tappable: Boolean = js.native
+  var tappable: Boolean
   
   /**
     * If `true`, the backdrop will be visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IonBackdrop {
   

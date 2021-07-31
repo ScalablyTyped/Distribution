@@ -5,7 +5,6 @@ import typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1.Options
 import typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1.Replicapool
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

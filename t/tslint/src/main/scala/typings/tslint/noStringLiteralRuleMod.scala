@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noStringLiteralRuleMod {
@@ -28,9 +27,8 @@ object noStringLiteralRuleMod {
     @scala.inline
     def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/noStringLiteralRule", "Rule.id")
-    @js.native
-    def id(input: String): String = js.native
+    @scala.inline
+    def id(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noStringLiteralRule", "Rule.metadata")
     @js.native

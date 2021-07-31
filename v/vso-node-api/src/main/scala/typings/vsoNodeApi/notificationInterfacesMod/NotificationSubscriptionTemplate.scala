@@ -2,21 +2,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationSubscriptionTemplate extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var filter: ISubscriptionFilter = js.native
+  var filter: ISubscriptionFilter
   
-  var id: String = js.native
+  var id: String
   
-  var notificationEventInformation: NotificationEventType = js.native
+  var notificationEventInformation: NotificationEventType
   
-  var `type`: SubscriptionTemplateType = js.native
+  var `type`: SubscriptionTemplateType
 }
 object NotificationSubscriptionTemplate {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,20 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       }
   *     }
   */
-@js.native
 trait ItemResponse extends StObject {
   
-  def getFeedback(): QuizFeedback = js.native
+  def getFeedback(): QuizFeedback
   
-  def getItem(): Item = js.native
+  def getItem(): Item
   
-  def getResponse(): (js.Array[js.Array[String] | String]) | String = js.native
+  def getResponse(): (js.Array[js.Array[String] | String]) | String
   
-  def getScore(): Double = js.native
+  def getScore(): Double
   
-  def setFeedback(feedback: js.Any): ItemResponse = js.native
+  def setFeedback(feedback: js.Any): ItemResponse
   
-  def setScore(score: js.Any): ItemResponse = js.native
+  def setScore(score: js.Any): ItemResponse
 }
 object ItemResponse {
   

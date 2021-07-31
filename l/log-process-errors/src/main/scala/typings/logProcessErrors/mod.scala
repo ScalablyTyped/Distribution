@@ -9,7 +9,6 @@ import typings.logProcessErrors.logProcessErrorsStrings.tape
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,12 +18,14 @@ object mod {
     *
     * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#logprocesserrorsoptions
     */
+  @scala.inline
+  def apply(): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def apply(options: Options): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  
   @JSImport("log-process-errors", JSImport.Namespace)
   @js.native
-  def apply(): js.Function0[Unit] = js.native
-  @JSImport("log-process-errors", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Exception type.
@@ -91,7 +92,6 @@ object mod {
   /**
     * log-process-errors constructor options.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -99,35 +99,35 @@ object mod {
       *
       * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#colors
       */
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Which process should trigger `process.exit(1)`
       *
       * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#exiton
       */
-    var exitOn: js.UndefOr[js.Array[ExceptionType]] = js.native
+    var exitOn: js.UndefOr[js.Array[ExceptionType]] = js.undefined
     
     /**
       * Which log level to use for different exceptions.
       *
       * https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
       */
-    var level: js.UndefOr[PartialRecordExceptionTyp] = js.native
+    var level: js.UndefOr[PartialRecordExceptionTyp] = js.undefined
     
     /**
       * Override logger
       *
       * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#log
       */
-    var log: js.UndefOr[js.Function2[/* error */ Error, /* level */ LogLevel, js.Promise[Unit] | Unit]] = js.native
+    var log: js.UndefOr[js.Function2[/* error */ Error, /* level */ LogLevel, js.Promise[Unit] | Unit]] = js.undefined
     
     /**
       * When running tests, makes them fail if there are any process errors.
       *
       * @link https://github.com/ehmicky/log-process-errors/blob/master/docs/API.md#testing
       */
-    var testing: js.UndefOr[ava | mocha | jasmine | tape | `node-tap`] = js.native
+    var testing: js.UndefOr[ava | mocha | jasmine | tape | `node-tap`] = js.undefined
   }
   object Options {
     

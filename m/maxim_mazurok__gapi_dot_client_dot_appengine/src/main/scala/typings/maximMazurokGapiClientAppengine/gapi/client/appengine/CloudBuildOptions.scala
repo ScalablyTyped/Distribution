@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudBuildOptions extends StObject {
   
   /**
     * Path to the yaml file used in deployment, used to determine runtime configuration details.Required for flexible environment builds.See
     * https://cloud.google.com/appengine/docs/standard/python/config/appref for more details.
     */
-  var appYamlPath: js.UndefOr[String] = js.native
+  var appYamlPath: js.UndefOr[String] = js.undefined
   
   /** The Cloud Build timeout used as part of any dependent builds performed by version creation. Defaults to 10 minutes. */
-  var cloudBuildTimeout: js.UndefOr[String] = js.native
+  var cloudBuildTimeout: js.UndefOr[String] = js.undefined
 }
 object CloudBuildOptions {
   

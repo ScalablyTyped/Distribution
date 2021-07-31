@@ -10,9 +10,9 @@ Hard cache the source of modules in webpack.
 | ------------------ | :-------------: |
 | Full name          | hard-source-webpack-plugin |
 | Keywords           | webpack, disk, iterative, build, cache, plugin |
-| # releases         | 3 |
-| # dependents       | 156 |
-| # downloads        | 16100535 |
+| # releases         | 1 |
+| # dependents       | 174 |
+| # downloads        | 18969180 |
 | # stars            | 7 |
 
 ## Links

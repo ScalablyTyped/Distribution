@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssessmentReportRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment run for which you want to generate a report.
     */
-  var assessmentRunArn: Arn = js.native
+  var assessmentRunArn: Arn
   
   /**
     * Specifies the file format (html or pdf) of the assessment report that you want to generate.
     */
-  var reportFileFormat: ReportFileFormat = js.native
+  var reportFileFormat: ReportFileFormat
   
   /**
     * Specifies the type of the assessment report that you want to generate. There are two types of assessment reports: a finding report and a full report. For more information, see Assessment Reports. 
     */
-  var reportType: ReportType = js.native
+  var reportType: ReportType
 }
 object GetAssessmentReportRequest {
   

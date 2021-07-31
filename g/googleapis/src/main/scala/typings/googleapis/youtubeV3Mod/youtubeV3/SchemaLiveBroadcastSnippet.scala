@@ -2,10 +2,8 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveBroadcastSnippet extends StObject {
   
   /**
@@ -13,53 +11,53 @@ trait SchemaLiveBroadcastSnippet extends StObject {
     * only available once the broadcast&#39;s state is complete. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var actualEndTime: js.UndefOr[String] = js.native
+  var actualEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the broadcast actually started. This information
     * is only available once the broadcast&#39;s state is live. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var actualStartTime: js.UndefOr[String] = js.native
+  var actualStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify the channel that is
     * publishing the broadcast.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The broadcast&#39;s description. As with the title, you can set this
     * field by modifying the broadcast resource or by setting the description
     * field of the corresponding video resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var isDefaultBroadcast: js.UndefOr[Boolean] = js.native
+  var isDefaultBroadcast: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id of the live chat for this broadcast.
     */
-  var liveChatId: js.UndefOr[String] = js.native
+  var liveChatId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the broadcast was added to YouTube&#39;s live
     * broadcast schedule. The value is specified in ISO 8601
     * (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the broadcast is scheduled to end. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var scheduledEndTime: js.UndefOr[String] = js.native
+  var scheduledEndTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the broadcast is scheduled to start. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var scheduledStartTime: js.UndefOr[String] = js.native
+  var scheduledStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * A map of thumbnail images associated with the broadcast. For each nested
@@ -67,14 +65,14 @@ trait SchemaLiveBroadcastSnippet extends StObject {
     * the value is an object that contains other information about the
     * thumbnail.
     */
-  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.undefined
   
   /**
     * The broadcast&#39;s title. Note that the broadcast represents exactly one
     * YouTube video. You can set this field by modifying the broadcast resource
     * or by setting the title field of the corresponding video resource.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaLiveBroadcastSnippet {
   

@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playcustomappV1Mod {
@@ -82,7 +81,7 @@ object playcustomappV1Mod {
         */
       def create(): GaxiosPromise[SchemaCustomApp] = js.native
       def create(callback: BodyResponseCallback[SchemaCustomApp]): Unit = js.native
-      def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomApp] = js.native
+      def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomApp] = js.native
       def create(params: ParamsResourceAccountsCustomappsCreate): GaxiosPromise[SchemaCustomApp] = js.native
       def create(params: ParamsResourceAccountsCustomappsCreate, callback: BodyResponseCallback[SchemaCustomApp]): Unit = js.native
       def create(
@@ -98,16 +97,17 @@ object playcustomappV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -119,28 +119,29 @@ object playcustomappV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceAccountsCustomappsCreate extends StandardParameters {
+    trait ParamsResourceAccountsCustomappsCreate
+      extends StObject
+         with StandardParameters {
       
       /**
         * Developer account ID.
         */
-      var account: js.UndefOr[String] = js.native
+      var account: js.UndefOr[String] = js.undefined
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Media metadata
         */
-      var media: js.UndefOr[Body] = js.native
+      var media: js.UndefOr[Body] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaCustomApp] = js.native
+      var requestBody: js.UndefOr[SchemaCustomApp] = js.undefined
     }
     object ParamsResourceAccountsCustomappsCreate {
       
@@ -182,18 +183,17 @@ object playcustomappV1Mod {
     /**
       * This resource represents a custom app.
       */
-    @js.native
     trait SchemaCustomApp extends StObject {
       
       /**
         * Default listing language in BCP 47 format.
         */
-      var languageCode: js.UndefOr[String] = js.native
+      var languageCode: js.UndefOr[String] = js.undefined
       
       /**
         * Title for the Android app.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object SchemaCustomApp {
       
@@ -220,46 +220,45 @@ object playcustomappV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

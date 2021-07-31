@@ -2,21 +2,19 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionOverride extends StObject {
   
-  var formFactor: String = js.native
+  var formFactor: String
   
-  var isAvailableInTouch: Boolean = js.native
+  var isAvailableInTouch: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var pageId: String = js.native
+  var pageId: String
   
-  var url: js.UndefOr[maybe[String]] = js.native
+  var url: js.UndefOr[maybe[String]] = js.undefined
 }
 object ActionOverride {
   

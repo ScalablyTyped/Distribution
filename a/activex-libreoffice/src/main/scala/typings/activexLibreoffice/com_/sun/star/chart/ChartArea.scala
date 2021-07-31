@@ -24,16 +24,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.xml.UserDefinedAttributesSupplier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the area elements of a chart, e.g. the background area, the diagram wall, and the diagram floor of three-dimensional charts. */
-@js.native
 trait ChartArea
-  extends XPropertySet
+  extends StObject
      with FillProperties
      with LineProperties
      with UserDefinedAttributesSupplier
+     with XPropertySet
 object ChartArea {
   
   @scala.inline

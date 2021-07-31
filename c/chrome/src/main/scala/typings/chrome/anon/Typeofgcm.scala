@@ -6,25 +6,23 @@ import typings.chrome.chrome.gcm.MessageReceptionEvent
 import typings.chrome.chrome.gcm.OutgoingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofgcm extends StObject {
   
-  var MAX_MESSAGE_SIZE: Double = js.native
+  var MAX_MESSAGE_SIZE: Double
   
-  var onMessage: MessageReceptionEvent = js.native
+  var onMessage: MessageReceptionEvent
   
-  var onMessagesDeleted: MessageDeletionEvent = js.native
+  var onMessagesDeleted: MessageDeletionEvent
   
-  var onSendError: GcmErrorEvent = js.native
+  var onSendError: GcmErrorEvent
   
-  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = js.native
+  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit
   
-  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = js.native
+  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit
   
-  def unregister(callback: js.Function0[Unit]): Unit = js.native
+  def unregister(callback: js.Function0[Unit]): Unit
 }
 object Typeofgcm {
   

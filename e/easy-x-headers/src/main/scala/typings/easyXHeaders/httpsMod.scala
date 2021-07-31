@@ -4,7 +4,6 @@ import typings.easyXHeaders.httpMod.ClientRequest
 import typings.easyXHeaders.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpsMod {
@@ -16,23 +15,30 @@ object httpsMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("https", "Agent")
   @js.native
-  class AgentCls () extends Agent {
+  class AgentCls ()
+    extends StObject
+       with Agent {
     def this(options: RequestOptions) = this()
+    
+    /* CompleteClass */
+    var maxSockets: Double = js.native
+    
+    /* CompleteClass */
+    var requests: js.Any = js.native
+    
+    /* CompleteClass */
+    var sockets: js.Any = js.native
   }
   
-  @JSImport("https", "createServer")
-  @js.native
-  def createServer(options: ServerOptions): Server = js.native
-  @JSImport("https", "createServer")
-  @js.native
-  def createServer(options: ServerOptions, requestListener: js.Function): Server = js.native
+  @scala.inline
+  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions, requestListener: js.Function): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], requestListener.asInstanceOf[js.Any])).asInstanceOf[Server]
   
-  @JSImport("https", "get")
-  @js.native
-  def get(options: RequestOptions): ClientRequest = js.native
-  @JSImport("https", "get")
-  @js.native
-  def get(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  @scala.inline
+  def get(options: RequestOptions): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   @JSImport("https", "globalAgent")
   @js.native
@@ -40,21 +46,18 @@ object httpsMod {
   @scala.inline
   def globalAgent_=(x: Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
   
-  @JSImport("https", "request")
-  @js.native
-  def request(options: RequestOptions): ClientRequest = js.native
-  @JSImport("https", "request")
-  @js.native
-  def request(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  @scala.inline
+  def request(options: RequestOptions): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: RequestOptions, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
-  @js.native
   trait Agent extends StObject {
     
-    var maxSockets: Double = js.native
+    var maxSockets: Double
     
-    var requests: js.Any = js.native
+    var requests: js.Any
     
-    var sockets: js.Any = js.native
+    var sockets: js.Any
   }
   object Agent {
     
@@ -78,38 +81,37 @@ object httpsMod {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var agent: js.UndefOr[js.Any] = js.native
+    var agent: js.UndefOr[js.Any] = js.undefined
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.native
+    var cert: js.UndefOr[js.Any] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.native
+    var pfx: js.UndefOr[js.Any] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   }
   object RequestOptions {
     
@@ -216,32 +218,31 @@ object httpsMod {
   
   type Server = typings.easyXHeaders.tlsMod.Server
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var NPNProtocols: js.UndefOr[js.Any] = js.native
+    var NPNProtocols: js.UndefOr[js.Any] = js.undefined
     
-    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, _]] = js.native
+    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, js.Any]] = js.undefined
     
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.native
+    var cert: js.UndefOr[js.Any] = js.undefined
     
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var crl: js.UndefOr[js.Any] = js.native
+    var crl: js.UndefOr[js.Any] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[js.Any] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.native
+    var pfx: js.UndefOr[js.Any] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
-    var requestCert: js.UndefOr[Boolean] = js.native
+    var requestCert: js.UndefOr[Boolean] = js.undefined
   }
   object ServerOptions {
     
@@ -321,7 +322,7 @@ object httpsMod {
       def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
       
       @scala.inline
-      def setSNICallback(value: /* servername */ String => _): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
+      def setSNICallback(value: /* servername */ String => js.Any): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)

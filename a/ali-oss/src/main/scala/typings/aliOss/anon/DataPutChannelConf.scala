@@ -4,15 +4,13 @@ import typings.aliOss.mod.NormalSuccessResponse
 import typings.aliOss.mod.PutChannelConf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataPutChannelConf extends StObject {
   
-  var data: PutChannelConf = js.native
+  var data: PutChannelConf
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object DataPutChannelConf {
   

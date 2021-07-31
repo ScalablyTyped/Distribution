@@ -2,93 +2,91 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitQueryCommitsCriteria extends StObject {
   
   /**
     * Number of entries to skip
     */
   @JSName("$skip")
-  var $skip: Double = js.native
+  var $skip: Double
   
   /**
     * Maximum number of entries to retrieve
     */
   @JSName("$top")
-  var $top: Double = js.native
+  var $top: Double
   
   /**
     * Alias or display name of the author
     */
-  var author: String = js.native
+  var author: String
   
   /**
     * If provided, the earliest commit in the graph to search
     */
-  var compareVersion: GitVersionDescriptor = js.native
+  var compareVersion: GitVersionDescriptor
   
   /**
     * If true, don't include delete history entries
     */
-  var excludeDeletes: Boolean = js.native
+  var excludeDeletes: Boolean
   
   /**
     * If provided, a lower bound for filtering commits alphabetically
     */
-  var fromCommitId: String = js.native
+  var fromCommitId: String
   
   /**
     * If provided, only include history entries created after this date (string)
     */
-  var fromDate: String = js.native
+  var fromDate: String
   
   /**
     * What Git history mode should be used. This only applies to the search criteria when Ids = null.
     */
-  var historyMode: GitHistoryMode = js.native
+  var historyMode: GitHistoryMode
   
   /**
     * If provided, specifies the exact commit ids of the commits to fetch. May not be combined with other parameters.
     */
-  var ids: js.Array[String] = js.native
+  var ids: js.Array[String]
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
   /**
     * Whether to include linked work items
     */
-  var includeWorkItems: Boolean = js.native
+  var includeWorkItems: Boolean
   
   /**
     * Path of item to search under
     */
-  var itemPath: String = js.native
+  var itemPath: String
   
   /**
     * If provided, identifies the commit or branch to search
     */
-  var itemVersion: GitVersionDescriptor = js.native
+  var itemVersion: GitVersionDescriptor
   
   /**
     * If provided, an upper bound for filtering commits alphabetically
     */
-  var toCommitId: String = js.native
+  var toCommitId: String
   
   /**
     * If provided, only include history entries created before this date (string)
     */
-  var toDate: String = js.native
+  var toDate: String
   
   /**
     * Alias or display name of the committer
     */
-  var user: String = js.native
+  var user: String
 }
 object GitQueryCommitsCriteria {
   

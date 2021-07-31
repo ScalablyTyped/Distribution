@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object AppMemoryUsageLevel extends StObject {
   
   /** High app memory usage. */
   @js.native
-  sealed trait high extends AppMemoryUsageLevel
+  sealed trait high
+    extends StObject
+       with AppMemoryUsageLevel
   
   /** Low app memory usage. */
   @js.native
-  sealed trait low extends AppMemoryUsageLevel
+  sealed trait low
+    extends StObject
+       with AppMemoryUsageLevel
   
   /** Medium app memory usage. */
   @js.native
-  sealed trait medium extends AppMemoryUsageLevel
+  sealed trait medium
+    extends StObject
+       with AppMemoryUsageLevel
 }

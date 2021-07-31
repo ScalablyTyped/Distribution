@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the error details to describe the detailed error. It will only be included
   * when the operation finishes with some failure.
   */
-@js.native
 trait SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails extends StObject {
   
   /**
     * The number of resources that had errors.
     */
-  var errorCount: js.UndefOr[String] = js.native
+  var errorCount: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the FHIR store where resources have been imported, in the
     * format
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}/fhirStores/{fhir_store_id}`.
     */
-  var fhirStore: js.UndefOr[String] = js.native
+  var fhirStore: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of resources included in the source data. This is the
     * sum of the success and error counts.
     */
-  var inputSize: js.UndefOr[String] = js.native
+  var inputSize: js.UndefOr[String] = js.undefined
   
   /**
     * The number of resources that have been imported.
     */
-  var successCount: js.UndefOr[String] = js.native
+  var successCount: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudHealthcareV1alpha2FhirRestImportResourcesErrorDetails {
   

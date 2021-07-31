@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.accessibility
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * other four data members.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleTableModelChange extends StObject {
   
   /**
@@ -21,28 +19,28 @@ trait AccessibleTableModelChange extends StObject {
     *
     * The first column that has been changed or contains modified cells.
     */
-  var FirstColumn: Double = js.native
+  var FirstColumn: Double
   
   /**
     * The lowest index of a row that has changed.
     *
     * The first row that has been changed or that contains modified cells.
     */
-  var FirstRow: Double = js.native
+  var FirstRow: Double
   
   /**
     * The highest index of a column that has changed.
     *
     * The last column that has been changed or contains modified cells.
     */
-  var LastColumn: Double = js.native
+  var LastColumn: Double
   
   /**
     * The highest index of a row that has changed.
     *
     * The last row that has been changed or that contains modified cells.
     */
-  var LastRow: Double = js.native
+  var LastRow: Double
   
   /**
     * The type of the event as defined in {@link AccessibleTableModelChangeType} .
@@ -50,7 +48,7 @@ trait AccessibleTableModelChange extends StObject {
     * The model change either inserted or deleted one or more rows and/or columns or modified the content of a number of cells. See {@link
     * AccessibleTableModelChangeType} for details of the type of the model change.
     */
-  var Type: Double = js.native
+  var Type: Double
 }
 object AccessibleTableModelChange {
   

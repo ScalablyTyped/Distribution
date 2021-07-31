@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.mobile.ui.SplitViewOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.mobile.ui.SplitView")
 @js.native
 class SplitView protected ()
-  extends typings.kendoUi.kendo.mobile.ui.SplitView {
+  extends StObject
+     with typings.kendoUi.kendo.mobile.ui.SplitView {
   def this(element: Element) = this()
   def this(element: Element, options: SplitViewOptions) = this()
 }
@@ -21,9 +21,8 @@ object SplitView {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.mobile.ui.SplitView.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.SplitView = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.SplitView = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.SplitView]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.SplitView.fn")

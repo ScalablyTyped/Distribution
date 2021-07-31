@@ -5,10 +5,8 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventPropTypeInterface[TTarget, TEventKey] extends StObject {
   
   /**
@@ -16,24 +14,24 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends StObject {
     * - VictoryChart
     * - VictoryStack
     */
-  var childName: js.UndefOr[String] = js.native
+  var childName: js.UndefOr[String] = js.undefined
   
   /**
     * Event handlers map. Keys are standard event names (such as onClick) and values are event callbacks
     */
   var eventHandlers: StringDictionary[
     js.Function1[
-      /* event */ SyntheticEvent[_, Event], 
+      /* event */ SyntheticEvent[js.Any, Event], 
       (js.Array[EventCallbackInterface[TTarget, TEventKey]]) | (EventCallbackInterface[TTarget, TEventKey])
     ]
-  ] = js.native
+  ]
   
-  var eventKey: js.UndefOr[TEventKey] = js.native
+  var eventKey: js.UndefOr[TEventKey] = js.undefined
   
   /**
     * Targets may be any valid style namespace for a given component
     */
-  var target: TTarget = js.native
+  var target: TTarget
 }
 object EventPropTypeInterface {
   
@@ -41,7 +39,7 @@ object EventPropTypeInterface {
   def apply[TTarget, TEventKey](
     eventHandlers: StringDictionary[
       js.Function1[
-        /* event */ SyntheticEvent[_, Event], 
+        /* event */ SyntheticEvent[js.Any, Event], 
         (js.Array[EventCallbackInterface[TTarget, TEventKey]]) | (EventCallbackInterface[TTarget, TEventKey])
       ]
     ],
@@ -52,7 +50,7 @@ object EventPropTypeInterface {
   }
   
   @scala.inline
-  implicit class EventPropTypeInterfaceMutableBuilder[Self <: EventPropTypeInterface[_, _], TTarget, TEventKey] (val x: Self with (EventPropTypeInterface[TTarget, TEventKey])) extends AnyVal {
+  implicit class EventPropTypeInterfaceMutableBuilder[Self <: EventPropTypeInterface[?, ?], TTarget, TEventKey] (val x: Self & (EventPropTypeInterface[TTarget, TEventKey])) extends AnyVal {
     
     @scala.inline
     def setChildName(value: String): Self = StObject.set(x, "childName", value.asInstanceOf[js.Any])
@@ -64,7 +62,7 @@ object EventPropTypeInterface {
     def setEventHandlers(
       value: StringDictionary[
           js.Function1[
-            /* event */ SyntheticEvent[_, Event], 
+            /* event */ SyntheticEvent[js.Any, Event], 
             (js.Array[EventCallbackInterface[TTarget, TEventKey]]) | (EventCallbackInterface[TTarget, TEventKey])
           ]
         ]

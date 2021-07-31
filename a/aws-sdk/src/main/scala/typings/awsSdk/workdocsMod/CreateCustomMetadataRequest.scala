@@ -2,31 +2,29 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomMetadataRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * Custom metadata in the form of name-value pairs.
     */
-  var CustomMetadata: CustomMetadataMap = js.native
+  var CustomMetadata: CustomMetadataMap
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: ResourceIdType = js.native
+  var ResourceId: ResourceIdType
   
   /**
     * The ID of the version, if the custom metadata is being added to a document version.
     */
-  var VersionId: js.UndefOr[DocumentVersionIdType] = js.native
+  var VersionId: js.UndefOr[DocumentVersionIdType] = js.undefined
 }
 object CreateCustomMetadataRequest {
   

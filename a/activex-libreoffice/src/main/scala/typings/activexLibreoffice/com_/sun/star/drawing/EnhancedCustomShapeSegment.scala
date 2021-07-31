@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhancedCustomShapeSegment extends StObject {
   
-  var Command: Double = js.native
+  var Command: Double
   
-  var Count: Double = js.native
+  var Count: Double
 }
 object EnhancedCustomShapeSegment {
   

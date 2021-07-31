@@ -2,146 +2,144 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbSnapshotDetails extends StObject {
   
   /**
     * 
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var AvailabilityZone: js.UndefOr[NonEmptyString] = js.native
+  var AvailabilityZone: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbiResourceId: js.UndefOr[NonEmptyString] = js.native
+  var DbiResourceId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 
     */
-  var Engine: js.UndefOr[NonEmptyString] = js.native
+  var Engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var EngineVersion: js.UndefOr[NonEmptyString] = js.native
+  var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
+  var IamDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 
     */
-  var InstanceCreateTime: js.UndefOr[NonEmptyString] = js.native
+  var InstanceCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var KmsKeyId: js.UndefOr[NonEmptyString] = js.native
+  var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var LicenseModel: js.UndefOr[NonEmptyString] = js.native
+  var LicenseModel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var MasterUsername: js.UndefOr[NonEmptyString] = js.native
+  var MasterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var OptionGroupName: js.UndefOr[NonEmptyString] = js.native
+  var OptionGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var PercentProgress: js.UndefOr[Integer] = js.native
+  var PercentProgress: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.native
+  var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.undefined
   
   /**
     * 
     */
-  var SnapshotCreateTime: js.UndefOr[NonEmptyString] = js.native
+  var SnapshotCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var SnapshotType: js.UndefOr[NonEmptyString] = js.native
+  var SnapshotType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var SourceDbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var SourceDbSnapshotIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var SourceRegion: js.UndefOr[NonEmptyString] = js.native
+  var SourceRegion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Status: js.UndefOr[NonEmptyString] = js.native
+  var Status: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var StorageType: js.UndefOr[NonEmptyString] = js.native
+  var StorageType: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var TdeCredentialArn: js.UndefOr[NonEmptyString] = js.native
+  var TdeCredentialArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Timezone: js.UndefOr[NonEmptyString] = js.native
+  var Timezone: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var VpcId: js.UndefOr[NonEmptyString] = js.native
+  var VpcId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbSnapshotDetails {
   

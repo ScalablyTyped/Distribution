@@ -2,30 +2,28 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch datafeeds response.
   */
-@js.native
 trait SchemaDatafeedsCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * The requested data feed. Defined if and only if the request was
     * successful.
     */
-  var datafeed: js.UndefOr[SchemaDatafeed] = js.native
+  var datafeed: js.UndefOr[SchemaDatafeed] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
 }
 object SchemaDatafeedsCustomBatchResponseEntry {
   

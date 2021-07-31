@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateVpcCidrBlockRequest extends StObject {
   
   /**
     * The association ID for the CIDR block.
     */
-  var AssociationId: VpcCidrAssociationId = js.native
+  var AssociationId: VpcCidrAssociationId
 }
 object DisassociateVpcCidrBlockRequest {
   

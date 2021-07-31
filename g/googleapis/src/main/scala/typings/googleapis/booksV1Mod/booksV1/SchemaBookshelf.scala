@@ -2,64 +2,62 @@ package typings.googleapis.booksV1Mod.booksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBookshelf extends StObject {
   
   /**
     * Whether this bookshelf is PUBLIC or PRIVATE.
     */
-  var access: js.UndefOr[String] = js.native
+  var access: js.UndefOr[String] = js.undefined
   
   /**
     * Created time for this bookshelf (formatted UTC timestamp with millisecond
     * resolution).
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * Description of this bookshelf.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Id of this bookshelf, only unique by user.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * Resource type for bookshelf metadata.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * URL to this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Title of this bookshelf.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Last modified time of this bookshelf (formatted UTC timestamp with
     * millisecond resolution).
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * Number of volumes in this bookshelf.
     */
-  var volumeCount: js.UndefOr[Double] = js.native
+  var volumeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Last time a volume was added or removed from this bookshelf (formatted
     * UTC timestamp with millisecond resolution).
     */
-  var volumesLastUpdated: js.UndefOr[String] = js.native
+  var volumesLastUpdated: js.UndefOr[String] = js.undefined
 }
 object SchemaBookshelf {
   

@@ -10,9 +10,9 @@ Global HTTP & HTTPS tunneling
 | ------------------ | :-------------: |
 | Full name          | global-tunnel-ng |
 | Keywords           | http, https, tunnel, global |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 34 |
-| # downloads        | 9023893 |
+| # downloads        | 14051837 |
 | # stars            | 0 |
 
 ## Links

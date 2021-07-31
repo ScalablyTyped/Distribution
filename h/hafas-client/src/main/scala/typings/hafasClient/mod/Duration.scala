@@ -2,15 +2,13 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var stations: js.Array[Station | Stop | Location] = js.native
+  var stations: js.Array[Station | Stop | Location]
 }
 object Duration {
   

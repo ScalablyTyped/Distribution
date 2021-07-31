@@ -2,31 +2,29 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentAttributeValue extends StObject {
   
   /**
     * A date expressed as an ISO 8601 string.
     */
-  var DateValue: js.UndefOr[Timestamp] = js.native
+  var DateValue: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A long integer value.
     */
-  var LongValue: js.UndefOr[Long] = js.native
+  var LongValue: js.UndefOr[Long] = js.undefined
   
   /**
     * A list of strings. 
     */
-  var StringListValue: js.UndefOr[DocumentAttributeStringListValue] = js.native
+  var StringListValue: js.UndefOr[DocumentAttributeStringListValue] = js.undefined
   
   /**
     * A string, such as "department".
     */
-  var StringValue: js.UndefOr[DocumentAttributeStringValue] = js.native
+  var StringValue: js.UndefOr[DocumentAttributeStringValue] = js.undefined
 }
 object DocumentAttributeValue {
   

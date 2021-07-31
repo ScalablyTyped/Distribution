@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotesProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait NotesProperties extends StObject {
     * using this object ID will automatically create the shape. In this case, the actual shape may have different object ID. The `GetPresentation` or `GetPage` action will always return
     * the latest object ID.
     */
-  var speakerNotesObjectId: js.UndefOr[String] = js.native
+  var speakerNotesObjectId: js.UndefOr[String] = js.undefined
 }
 object NotesProperties {
   

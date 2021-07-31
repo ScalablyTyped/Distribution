@@ -2,19 +2,17 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleEffect extends StObject {
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var origin: js.UndefOr[js.Array[String]] = js.native
+  var origin: js.UndefOr[js.Array[String]] = js.undefined
   
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
 }
 object ScaleEffect {
   

@@ -2,21 +2,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomArray extends ICustomControl {
+trait ICustomArray
+  extends StObject
+     with ICustomControl {
   
-  var addTranslation: String = js.native
+  var addTranslation: String
   
-  var allowAdd: Boolean = js.native
+  var allowAdd: Boolean
   
-  var allowMove: Boolean = js.native
+  var allowMove: Boolean
   
-  var allowRemove: Boolean = js.native
+  var allowRemove: Boolean
   
-  var itemTitleRef: String = js.native
+  var itemTitleRef: String
 }
 object ICustomArray {
   

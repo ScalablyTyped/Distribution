@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FieldColumnConfig extends FieldConfig {
+trait FieldColumnConfig
+  extends StObject
+     with FieldConfig {
   
   /**
     * Controls the sort order of the column.

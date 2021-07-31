@@ -49,7 +49,6 @@ import typings.firebase.firebaseStrings.view_search_results
 import typings.firebase.mod.firebase.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,17 +74,13 @@ trait Analytics extends StObject {
     * the gtag.js reference documentation}.
     */
   def logEvent[T /* <: String */](eventName: CustomEventName[T]): Unit = js.native
-  def logEvent[T /* <: String */](
-    eventName: CustomEventName[T],
-    eventParams: js.UndefOr[scala.Nothing],
-    options: AnalyticsCallOptions
-  ): Unit = js.native
   def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: StringDictionary[js.Any]): Unit = js.native
   def logEvent[T /* <: String */](
     eventName: CustomEventName[T],
     eventParams: StringDictionary[js.Any],
     options: AnalyticsCallOptions
   ): Unit = js.native
+  def logEvent[T /* <: String */](eventName: CustomEventName[T], eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
   /**
     * Sends analytics event with given `eventParams`. This method
     * automatically associates this logged event with this Firebase web
@@ -97,7 +92,7 @@ trait Analytics extends StObject {
   @JSName("logEvent")
   def logEvent_addpaymentinfo(eventName: add_payment_info): Unit = js.native
   @JSName("logEvent")
-  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: js.UndefOr[scala.Nothing], options: AnalyticsCallOptions): Unit = js.native
+  def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Unit, options: AnalyticsCallOptions): Unit = js.native
   @JSName("logEvent")
   def logEvent_addpaymentinfo(eventName: add_payment_info, eventParams: Dictkey): Unit = js.native
   @JSName("logEvent")

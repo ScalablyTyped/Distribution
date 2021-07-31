@@ -12,7 +12,7 @@ Async queue middleware for Redux.
 | Keywords           | redux, queue, middleware, redux-middleware, flux |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 60023 |
+| # downloads        | 71734 |
 | # stars            | 0 |
 
 ## Links

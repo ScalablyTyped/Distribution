@@ -2,7 +2,6 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transport {
@@ -35,19 +34,18 @@ object transport {
       */
     def this(credentials: Credentials) = this()
     
-    def send(request: Request_, url: String): js.Promise[_] = js.native
-    def send(request: Request_, url: String, options: TransportOptions): js.Promise[_] = js.native
+    def send(request: Request_, url: String): js.Promise[js.Any] = js.native
+    def send(request: Request_, url: String, options: TransportOptions): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait TransportOptions extends StObject {
     
-    var retry: js.UndefOr[Boolean] = js.native
+    var retry: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  request sandbox.
       */
-    var sandbox: js.UndefOr[Sandbox] = js.native
+    var sandbox: js.UndefOr[Sandbox] = js.undefined
   }
   object TransportOptions {
     

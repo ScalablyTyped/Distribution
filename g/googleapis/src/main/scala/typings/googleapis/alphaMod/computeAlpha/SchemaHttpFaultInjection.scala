@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * request to the backend service. Similarly requests from clients can be
   * aborted by the Loadbalancer for a percentage of requests.
   */
-@js.native
 trait SchemaHttpFaultInjection extends StObject {
   
   /**
     * The specification for how client requests are aborted as part of fault
     * injection.
     */
-  var abort: js.UndefOr[SchemaHttpFaultAbort] = js.native
+  var abort: js.UndefOr[SchemaHttpFaultAbort] = js.undefined
   
   /**
     * The specification for how client requests are delayed as part of fault
     * injection, before being sent to a backend service.
     */
-  var delay: js.UndefOr[SchemaHttpFaultDelay] = js.native
+  var delay: js.UndefOr[SchemaHttpFaultDelay] = js.undefined
 }
 object SchemaHttpFaultInjection {
   

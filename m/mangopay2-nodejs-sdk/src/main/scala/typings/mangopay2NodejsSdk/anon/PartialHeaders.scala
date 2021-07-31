@@ -2,20 +2,18 @@ package typings.mangopay2NodejsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.Headers> */
-@js.native
 trait PartialHeaders extends StObject {
   
-  var Authorization: js.UndefOr[String] = js.native
+  var Authorization: js.UndefOr[String] = js.undefined
   
-  var `Content-Type`: js.UndefOr[String] = js.native
+  var `Content-Type`: js.UndefOr[String] = js.undefined
   
-  var `Idempotency-Key`: js.UndefOr[String] = js.native
+  var `Idempotency-Key`: js.UndefOr[String] = js.undefined
   
-  var `User-Agent`: js.UndefOr[String] = js.native
+  var `User-Agent`: js.UndefOr[String] = js.undefined
 }
 object PartialHeaders {
   

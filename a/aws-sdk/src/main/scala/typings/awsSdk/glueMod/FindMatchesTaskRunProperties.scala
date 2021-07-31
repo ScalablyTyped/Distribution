@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindMatchesTaskRunProperties extends StObject {
   
   /**
     * The job ID for the Find Matches task run.
     */
-  var JobId: js.UndefOr[HashString] = js.native
+  var JobId: js.UndefOr[HashString] = js.undefined
   
   /**
     * The name assigned to the job for the Find Matches task run.
     */
-  var JobName: js.UndefOr[NameString] = js.native
+  var JobName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The job run ID for the Find Matches task run.
     */
-  var JobRunId: js.UndefOr[HashString] = js.native
+  var JobRunId: js.UndefOr[HashString] = js.undefined
 }
 object FindMatchesTaskRunProperties {
   

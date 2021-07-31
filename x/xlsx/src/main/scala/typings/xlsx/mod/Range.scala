@@ -2,17 +2,17 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Range extends _RangeSpec {
+trait Range
+  extends StObject
+     with _RangeSpec {
   
   /** Ending cell */
-  var e: CellAddress = js.native
+  var e: CellAddress
   
   /** Starting cell */
-  var s: CellAddress = js.native
+  var s: CellAddress
 }
 object Range {
   

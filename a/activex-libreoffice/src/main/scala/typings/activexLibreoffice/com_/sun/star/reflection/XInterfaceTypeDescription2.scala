@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Uik
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,32 +14,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type supersedes {@link XInterfaceTypeDescription} , which only supported single inheritance.
   * @since OOo 2.0
   */
-@js.native
-trait XInterfaceTypeDescription2 extends XInterfaceTypeDescription {
+trait XInterfaceTypeDescription2
+  extends StObject
+     with XInterfaceTypeDescription {
   
   /**
     * Returns a sequence of all directly inherited (mandatory) base interface types.
     * @returns a sequence of all directly inherited (mandatory) base interface types, in the correct order; each element of the returned sequence will be the re
     */
-  val BaseTypes: SafeArray[XTypeDescription] = js.native
+  val BaseTypes: SafeArray[XTypeDescription]
   
   /**
     * Returns a sequence of all directly inherited optional base interface types.
     * @returns a sequence of all directly inherited optional base interface types, in the correct order; each element of the returned sequence will be the refle
     */
-  val OptionalBaseTypes: SafeArray[XTypeDescription] = js.native
+  val OptionalBaseTypes: SafeArray[XTypeDescription]
   
   /**
     * Returns a sequence of all directly inherited (mandatory) base interface types.
     * @returns a sequence of all directly inherited (mandatory) base interface types, in the correct order; each element of the returned sequence will be the re
     */
-  def getBaseTypes(): SafeArray[XTypeDescription] = js.native
+  def getBaseTypes(): SafeArray[XTypeDescription]
   
   /**
     * Returns a sequence of all directly inherited optional base interface types.
     * @returns a sequence of all directly inherited optional base interface types, in the correct order; each element of the returned sequence will be the refle
     */
-  def getOptionalBaseTypes(): SafeArray[XTypeDescription] = js.native
+  def getOptionalBaseTypes(): SafeArray[XTypeDescription]
 }
 object XInterfaceTypeDescription2 {
   

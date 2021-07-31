@@ -6,7 +6,6 @@ import typings.slideout.slideoutStrings.translate
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,7 +15,9 @@ object mod {
     */
   @JSImport("slideout", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Slideout {
+  class ^ protected ()
+    extends StObject
+       with Slideout {
     /**
       * A touch slideout navigation menu for your mobile web apps.
       * @param options Options to customize a new instance of Slideout.
@@ -61,53 +62,52 @@ object mod {
   /**
     * Options to customize a new instance of Slideout.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * The time (milliseconds) to open/close the slideout.
       * Default: 300.
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * The CSS effect to use when animating the opening and closing of the slideout.
       * Default: ease.
       */
-    var fx: js.UndefOr[String] = js.native
+    var fx: js.UndefOr[String] = js.undefined
     
     /**
       * The DOM element that contains your menu application (.slideout-menu).
       */
-    var menu: HTMLElement = js.native
+    var menu: HTMLElement
     
     /**
       *   Default: 256.
       */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /**
       * The DOM element that contains all your application content (.slideout-panel).
       */
-    var panel: HTMLElement = js.native
+    var panel: HTMLElement
     
     /**
       * The side to open the slideout.
       * Default: left.
       */
-    var side: js.UndefOr[left | right] = js.native
+    var side: js.UndefOr[left | right] = js.undefined
     
     /**
       * The number of px needed for the menu can be opened completely, otherwise it closes.
       * Default: 70.
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * Set this option to false to disable Slideout touch events.
       * Default: true.
       */
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -214,7 +214,7 @@ object mod {
       * @param listener A listener function to remove.
       */
     @JSName("off")
-    def off_translate(event: translate, listener: js.Function1[/* translateX */ Double, _]): Slideout = js.native
+    def off_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
     
     /**
       * Adds a listener to the collection for the specified event.
@@ -228,7 +228,7 @@ object mod {
       * @param listener A listener function to add.
       */
     @JSName("on")
-    def on_translate(event: translate, listener: js.Function1[/* translateX */ Double, _]): Slideout = js.native
+    def on_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
     
     /**
       * Adds a listener to the collection for the specified event that will be called only once.
@@ -242,7 +242,7 @@ object mod {
       * @param listener A listener function to add.
       */
     @JSName("once")
-    def once_translate(event: translate, listener: js.Function1[/* translateX */ Double, _]): Slideout = js.native
+    def once_translate(event: translate, listener: js.Function1[/* translateX */ Double, js.Any]): Slideout = js.native
     
     /**
       * Opens the slideout menu. It emits beforeopen and open events.

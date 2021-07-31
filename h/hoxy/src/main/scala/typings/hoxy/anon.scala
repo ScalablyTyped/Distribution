@@ -2,22 +2,20 @@ package typings.hoxy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<hoxy.hoxy.Slow> */
-  @js.native
   trait PartialSlow extends StObject {
     
-    var down: js.UndefOr[Double] = js.native
+    var down: js.UndefOr[Double] = js.undefined
     
-    var latency: js.UndefOr[Double] = js.native
+    var latency: js.UndefOr[Double] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
-    var up: js.UndefOr[Double] = js.native
+    var up: js.UndefOr[Double] = js.undefined
   }
   object PartialSlow {
     

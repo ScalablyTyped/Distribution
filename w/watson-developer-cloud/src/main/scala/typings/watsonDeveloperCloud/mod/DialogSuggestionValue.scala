@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining the message input, intents, and entities to be sent to the Watson Assistant service if the user selects the corresponding disambiguation option. */
-@js.native
 trait DialogSuggestionValue extends StObject {
   
   /** An array of entities to be sent along with the user input. */
-  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.undefined
   
   /** An input object that includes the input text. */
-  var input: js.UndefOr[MessageInput] = js.native
+  var input: js.UndefOr[MessageInput] = js.undefined
   
   /** An array of intents to be sent along with the user input. */
-  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.native
+  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.undefined
 }
 object DialogSuggestionValue {
   

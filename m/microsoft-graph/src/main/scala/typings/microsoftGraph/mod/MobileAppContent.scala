@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileAppContent extends Entity {
+trait MobileAppContent
+  extends StObject
+     with Entity {
   
   // The list of files for this app content version.
-  var files: js.UndefOr[NullableOption[js.Array[MobileAppContentFile]]] = js.native
+  var files: js.UndefOr[NullableOption[js.Array[MobileAppContentFile]]] = js.undefined
 }
 object MobileAppContent {
   

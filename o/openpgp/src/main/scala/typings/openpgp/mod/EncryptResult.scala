@@ -3,13 +3,11 @@ package typings.openpgp.mod
 import typings.openpgp.anon.AeadAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptResult extends StObject {
   
-  var sessionKey: AeadAlgorithm = js.native
+  var sessionKey: AeadAlgorithm
 }
 object EncryptResult {
   

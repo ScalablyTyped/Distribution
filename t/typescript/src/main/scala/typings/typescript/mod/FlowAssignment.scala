@@ -2,17 +2,16 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowAssignment
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
   
-  var antecedent: FlowNode = js.native
+  var antecedent: FlowNode
   
-  var node: Expression | VariableDeclaration | BindingElement = js.native
+  var node: Expression | VariableDeclaration | BindingElement
 }
 object FlowAssignment {
   

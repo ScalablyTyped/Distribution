@@ -3,21 +3,21 @@ package typings.easeljs.global.createjs
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.SpriteStage")
 @js.native
 class SpriteStage protected ()
-  extends typings.easeljs.createjs.SpriteStage {
+  extends StObject
+     with typings.easeljs.createjs.SpriteStage {
   def this(canvas: String) = this()
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: String, preserveDrawingBuffer: Boolean) = this()
   def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: Boolean) = this()
-  def this(canvas: String, preserveDrawingBuffer: js.UndefOr[scala.Nothing], antialias: Boolean) = this()
   def this(canvas: String, preserveDrawingBuffer: Boolean, antialias: Boolean) = this()
-  def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: js.UndefOr[scala.Nothing], antialias: Boolean) = this()
+  def this(canvas: String, preserveDrawingBuffer: Unit, antialias: Boolean) = this()
   def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: Boolean, antialias: Boolean) = this()
+  def this(canvas: HTMLCanvasElement, preserveDrawingBuffer: Unit, antialias: Boolean) = this()
 }
 /* static members */
 object SpriteStage {

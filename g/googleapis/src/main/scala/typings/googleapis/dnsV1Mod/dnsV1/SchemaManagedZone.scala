@@ -3,39 +3,37 @@ package typings.googleapis.dnsV1Mod.dnsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedZone extends StObject {
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var dnsName: js.UndefOr[String] = js.native
+  var dnsName: js.UndefOr[String] = js.undefined
   
-  var dnssecConfig: js.UndefOr[SchemaManagedZoneDnsSecConfig] = js.native
+  var dnssecConfig: js.UndefOr[SchemaManagedZoneDnsSecConfig] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#managedZone&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nameServerSet: js.UndefOr[String] = js.native
+  var nameServerSet: js.UndefOr[String] = js.undefined
   
-  var nameServers: js.UndefOr[js.Array[String]] = js.native
+  var nameServers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var privateVisibilityConfig: js.UndefOr[SchemaManagedZonePrivateVisibilityConfig] = js.native
+  var privateVisibilityConfig: js.UndefOr[SchemaManagedZonePrivateVisibilityConfig] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedZone {
   

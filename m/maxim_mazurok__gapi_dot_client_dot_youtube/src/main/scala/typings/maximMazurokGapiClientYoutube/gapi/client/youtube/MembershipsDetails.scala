@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MembershipsDetails extends StObject {
   
   /** Ids of all levels that the user has access to. This includes the currently active level and all other levels that are included because of a higher purchase. */
-  var accessibleLevels: js.UndefOr[js.Array[String]] = js.native
+  var accessibleLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Id of the highest level that the user has access to at the moment. */
-  var highestAccessibleLevel: js.UndefOr[String] = js.native
+  var highestAccessibleLevel: js.UndefOr[String] = js.undefined
   
   /** Display name for the highest level that the user has access to at the moment. */
-  var highestAccessibleLevelDisplayName: js.UndefOr[String] = js.native
+  var highestAccessibleLevelDisplayName: js.UndefOr[String] = js.undefined
   
   /** Data about memberships duration without taking into consideration pricing levels. */
-  var membershipsDuration: js.UndefOr[MembershipsDuration] = js.native
+  var membershipsDuration: js.UndefOr[MembershipsDuration] = js.undefined
   
   /** Data about memberships duration on particular pricing levels. */
-  var membershipsDurationAtLevels: js.UndefOr[js.Array[MembershipsDurationAtLevel]] = js.native
+  var membershipsDurationAtLevels: js.UndefOr[js.Array[MembershipsDurationAtLevel]] = js.undefined
 }
 object MembershipsDetails {
   

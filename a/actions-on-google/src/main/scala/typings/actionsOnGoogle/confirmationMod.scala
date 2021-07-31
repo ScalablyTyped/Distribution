@@ -5,7 +5,6 @@ import typings.actionsOnGoogle.helperHelperMod.SoloHelper
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2ConfirmationValueSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmationMod {

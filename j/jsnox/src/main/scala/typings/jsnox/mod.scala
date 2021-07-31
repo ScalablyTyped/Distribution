@@ -10,7 +10,6 @@ import typings.react.mod.ReactNode
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,14 +37,9 @@ object mod extends Shortcut {
       * @param children A single React node (string or ReactElement) or array of nodes.
       * Note that unlike with React itself, multiple children must be placed into an array.
       */
-    def apply[P](component: ComponentClass[P, ComponentState], children: ReactNode): ReactElement = js.native
-    def apply[P](component: ComponentClass[P, ComponentState], props: P): ReactElement = js.native
+    def apply[P](component: ComponentClass[P, ComponentState], children: P | ReactNode): ReactElement = js.native
     def apply[P](component: ComponentClass[P, ComponentState], props: P, children: ReactNode): ReactElement = js.native
-    def apply[P](
-      component: ComponentClass[P, ComponentState],
-      props: js.UndefOr[scala.Nothing],
-      children: ReactNode
-    ): ReactElement = js.native
+    def apply[P](component: ComponentClass[P, ComponentState], props: Unit, children: ReactNode): ReactElement = js.native
     /**
       * Renders an HTML element from the given spec string, with optional props
       * and children
@@ -65,7 +59,7 @@ object mod extends Shortcut {
       * Note that unlike with React itself, multiple children must be placed into an array.
       */
     def apply[P](specString: String, children: ReactNode): DOMElement[P, Element] = js.native
-    def apply[P](specString: String, props: js.UndefOr[scala.Nothing], children: ReactNode): DOMElement[P, Element] = js.native
+    def apply[P](specString: String, props: Unit, children: ReactNode): DOMElement[P, Element] = js.native
     def apply[P](specString: String, props: HTMLAttributes[js.Object]): DOMElement[P, Element] = js.native
     def apply[P](specString: String, props: HTMLAttributes[js.Object], children: ReactNode): DOMElement[P, Element] = js.native
   }

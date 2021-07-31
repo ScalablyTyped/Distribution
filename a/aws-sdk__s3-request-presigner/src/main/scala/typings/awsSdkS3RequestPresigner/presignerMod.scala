@@ -9,14 +9,15 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presignerMod {
   
   @JSImport("@aws-sdk/s3-request-presigner/dist/cjs/presigner", "S3RequestPresigner")
   @js.native
-  class S3RequestPresigner protected () extends RequestPresigner {
+  class S3RequestPresigner protected ()
+    extends StObject
+       with RequestPresigner {
     def this(options: S3RequestPresignerOptions) = this()
     
     val signer: js.Any = js.native
@@ -28,25 +29,24 @@ object presignerMod {
     * */
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type PartialBy[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) with (Partial[Pick[T, K]])
+  type PartialBy[T, K /* <: /* keyof T */ String */] = (Omit[T, K]) & (Partial[Pick[T, K]])
   
   /* Inlined @aws-sdk/s3-request-presigner.@aws-sdk/s3-request-presigner/dist/cjs/presigner.PartialBy<@aws-sdk/signature-v4.@aws-sdk/signature-v4.SignatureV4Init & @aws-sdk/signature-v4.@aws-sdk/signature-v4.SignatureV4CryptoInit, 'service' | 'uriEscapePath'> & {  signingName :string | undefined} */
-  @js.native
   trait S3RequestPresignerOptions extends StObject {
     
-    var applyChecksum: js.UndefOr[Boolean] = js.native
+    var applyChecksum: js.UndefOr[Boolean] = js.undefined
     
-    var credentials: Credentials | Provider[Credentials] = js.native
+    var credentials: Credentials | Provider[Credentials]
     
-    var region: String | Provider[String] = js.native
+    var region: String | Provider[String]
     
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
-    var sha256: js.UndefOr[HashConstructor] = js.native
+    var sha256: js.UndefOr[HashConstructor] = js.undefined
     
-    var signingName: js.UndefOr[String] = js.native
+    var signingName: js.UndefOr[String] = js.undefined
     
-    var uriEscapePath: js.UndefOr[Boolean] = js.native
+    var uriEscapePath: js.UndefOr[Boolean] = js.undefined
   }
   object S3RequestPresignerOptions {
     

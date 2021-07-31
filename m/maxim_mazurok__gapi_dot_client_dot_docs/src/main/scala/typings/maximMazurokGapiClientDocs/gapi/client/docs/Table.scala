@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /** Number of columns in the table. It is possible for a table to be non-rectangular, so some rows may have a different number of cells. */
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
   /** Number of rows in the table. */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /** The suggested deletion IDs. If empty, then there are no suggested deletions of this content. */
-  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedDeletionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The suggested insertion IDs. A Table may have multiple insertion IDs if it is a nested suggested change. If empty, then this is not a suggested insertion. */
-  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.native
+  var suggestedInsertionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The contents and style of each row. */
-  var tableRows: js.UndefOr[js.Array[TableRow]] = js.native
+  var tableRows: js.UndefOr[js.Array[TableRow]] = js.undefined
   
   /** The style of the table. */
-  var tableStyle: js.UndefOr[TableStyle] = js.native
+  var tableStyle: js.UndefOr[TableStyle] = js.undefined
 }
 object Table {
   

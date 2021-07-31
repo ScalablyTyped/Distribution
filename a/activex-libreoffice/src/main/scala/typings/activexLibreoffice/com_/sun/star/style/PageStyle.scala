@@ -19,7 +19,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,323 +27,331 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.TablePageStyle
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.activexLibreoffice.com_.sun.star.style.PageProperties because var conflicts: UserDefinedAttributes. Inlined BackColor, BackGraphicFilter, BackGraphicLocation, BackGraphicURL, BackTransparent, BorderDistance, BottomBorder, BottomBorderDistance, BottomMargin, FirstIsShared, FooterBackColor, FooterBackGraphicFilter, FooterBackGraphicLocation, FooterBackGraphicURL, FooterBackTransparent, FooterBodyDistance, FooterBorderDistance, FooterBottomBorder, FooterBottomBorderDistance, FooterDynamicSpacing, FooterHeight, FooterIsDynamicHeight, FooterIsOn, FooterIsShared, FooterLeftBorder, FooterLeftBorderDistance, FooterLeftMargin, FooterRightBorder, FooterRightBorderDistance, FooterRightMargin, FooterShadowFormat, FooterText, FooterTextLeft, FooterTextRight, FooterTopBorder, FooterTopBorderDistance, FootnoteHeight, FootnoteLineAdjust, FootnoteLineColor, FootnoteLineDistance, FootnoteLineRelativeWidth, FootnoteLineStyle, FootnoteLineTextDistance, FootnoteLineWeight, GridBaseHeight, GridColor, GridDisplay, GridLines, GridMode, GridPrint, GridRubyBelow, GridRubyHeight, HeaderBackColor, HeaderBackGraphicFilter, HeaderBackGraphicLocation, HeaderBackGraphicURL, HeaderBackTransparent, HeaderBodyDistance, HeaderBorderDistance, HeaderBottomBorder, HeaderBottomBorderDistance, HeaderDynamicSpacing, HeaderHeight, HeaderIsDynamicHeight, HeaderIsOn, HeaderIsShared, HeaderLeftBorder, HeaderLeftBorderDistance, HeaderLeftMargin, HeaderRightBorder, HeaderRightBorderDistance, HeaderRightMargin, HeaderShadowFormat, HeaderText, HeaderTextLeft, HeaderTextRight, HeaderTopBorder, HeaderTopBorderDistance, Height, IsLandscape, LeftBorder, LeftBorderDistance, LeftMargin, NumberingType, PageStyleLayout, PrinterPaperTray, RegisterModeActive, RegisterParagraphStyle, RightBorder, RightBorderDistance, RightMargin, ShadowFormat, Size, TextColumns, TopBorder, TopBorderDistance, TopMargin, Width, WritingMode */ @js.native
-trait PageStyle extends Style {
+- typings.activexLibreoffice.com_.sun.star.style.PageProperties because var conflicts: UserDefinedAttributes. Inlined BackColor, BackGraphicFilter, BackGraphicLocation, BackGraphicURL, BackTransparent, BorderDistance, BottomBorder, BottomBorderDistance, BottomMargin, FirstIsShared, FooterBackColor, FooterBackGraphicFilter, FooterBackGraphicLocation, FooterBackGraphicURL, FooterBackTransparent, FooterBodyDistance, FooterBorderDistance, FooterBottomBorder, FooterBottomBorderDistance, FooterDynamicSpacing, FooterHeight, FooterIsDynamicHeight, FooterIsOn, FooterIsShared, FooterLeftBorder, FooterLeftBorderDistance, FooterLeftMargin, FooterRightBorder, FooterRightBorderDistance, FooterRightMargin, FooterShadowFormat, FooterText, FooterTextLeft, FooterTextRight, FooterTopBorder, FooterTopBorderDistance, FootnoteHeight, FootnoteLineAdjust, FootnoteLineColor, FootnoteLineDistance, FootnoteLineRelativeWidth, FootnoteLineStyle, FootnoteLineTextDistance, FootnoteLineWeight, GridBaseHeight, GridColor, GridDisplay, GridLines, GridMode, GridPrint, GridRubyBelow, GridRubyHeight, HeaderBackColor, HeaderBackGraphicFilter, HeaderBackGraphicLocation, HeaderBackGraphicURL, HeaderBackTransparent, HeaderBodyDistance, HeaderBorderDistance, HeaderBottomBorder, HeaderBottomBorderDistance, HeaderDynamicSpacing, HeaderHeight, HeaderIsDynamicHeight, HeaderIsOn, HeaderIsShared, HeaderLeftBorder, HeaderLeftBorderDistance, HeaderLeftMargin, HeaderRightBorder, HeaderRightBorderDistance, HeaderRightMargin, HeaderShadowFormat, HeaderText, HeaderTextLeft, HeaderTextRight, HeaderTopBorder, HeaderTopBorderDistance, Height, IsLandscape, LeftBorder, LeftBorderDistance, LeftMargin, NumberingType, PageStyleLayout, PrinterPaperTray, RegisterModeActive, RegisterParagraphStyle, RightBorder, RightBorderDistance, RightMargin, ShadowFormat, Size, TextColumns, TopBorder, TopBorderDistance, TopMargin, Width, WritingMode */ trait PageStyle
+  extends StObject
+     with Style {
   
   /** contains the background color of the page. */
-  var BackColor: Color = js.native
+  var BackColor: Color
   
   /** contains the filter name of the background graphic. */
-  var BackGraphicFilter: String = js.native
+  var BackGraphicFilter: String
   
   /** determines the location of the background graphic. */
-  var BackGraphicLocation: GraphicLocation = js.native
+  var BackGraphicLocation: GraphicLocation
   
   /** contains the URL of the background graphic. */
-  var BackGraphicURL: String = js.native
+  var BackGraphicURL: String
   
   /**
     * determines if the background color is transparent.
     *
     * If this property is set to `TRUE` , {@link PageStyle.BackColor} will not be used.
     */
-  var BackTransparent: Boolean = js.native
+  var BackTransparent: Boolean
   
   /** determines the distance of all borders of the page. */
-  var BorderDistance: Double = js.native
+  var BorderDistance: Double
   
   /** determines the style of the bottom border line of the page. */
-  var BottomBorder: BorderLine = js.native
+  var BottomBorder: BorderLine
   
   /** determines the bottom border distance of the page. */
-  var BottomBorderDistance: Double = js.native
+  var BottomBorderDistance: Double
   
   /** determines the bottom margin of the page. */
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
   /**
     * determines if the header/footer content on the first page and remaining pages is the same.
     * @since LibreOffice 4.0
     */
-  var FirstIsShared: Boolean = js.native
+  var FirstIsShared: Boolean
   
   /** contains the color of the background of the footer. */
-  var FooterBackColor: Color = js.native
+  var FooterBackColor: Color
   
   /** contains the filter name of the background graphic in the footer. */
-  var FooterBackGraphicFilter: String = js.native
+  var FooterBackGraphicFilter: String
   
   /** determines the location of the background graphic in the footer. */
-  var FooterBackGraphicLocation: GraphicLocation = js.native
+  var FooterBackGraphicLocation: GraphicLocation
   
   /** contains the URL of the background graphic in the footer. */
-  var FooterBackGraphicURL: String = js.native
+  var FooterBackGraphicURL: String
   
   /** determines if the background of the footer is transparent. */
-  var FooterBackTransparent: Boolean = js.native
+  var FooterBackTransparent: Boolean
   
   /** determines the distance between the footer and the body text area. */
-  var FooterBodyDistance: Double = js.native
+  var FooterBodyDistance: Double
   
   /** contains the distance of all borders of the footer. */
-  var FooterBorderDistance: Double = js.native
+  var FooterBorderDistance: Double
   
   /** contains the style of the bottom border line of the footer. */
-  var FooterBottomBorder: BorderLine = js.native
+  var FooterBottomBorder: BorderLine
   
   /** contains the bottom border distance of the footer. */
-  var FooterBottomBorderDistance: Double = js.native
+  var FooterBottomBorderDistance: Double
   
   /** determines whether to use dynamic spacing in footer or not. */
-  var FooterDynamicSpacing: Boolean = js.native
+  var FooterDynamicSpacing: Boolean
   
   /** determines the height of the footer. */
-  var FooterHeight: Double = js.native
+  var FooterHeight: Double
   
   /** determines if the height of the footer depends on the content. */
-  var FooterIsDynamicHeight: Boolean = js.native
+  var FooterIsDynamicHeight: Boolean
   
   /** determines if a footer is used on the page. */
-  var FooterIsOn: Boolean = js.native
+  var FooterIsOn: Boolean
   
   /** determines if the footer content on left and right pages is the same. */
-  var FooterIsShared: Boolean = js.native
+  var FooterIsShared: Boolean
   
   /** contains the style of the left border line of the footer. */
-  var FooterLeftBorder: BorderLine = js.native
+  var FooterLeftBorder: BorderLine
   
   /** contains the left border distance of the footer. */
-  var FooterLeftBorderDistance: Double = js.native
+  var FooterLeftBorderDistance: Double
   
   /** determines the left margin of the footer. */
-  var FooterLeftMargin: Double = js.native
+  var FooterLeftMargin: Double
   
   /** contains the style of the right border line of the footer. */
-  var FooterRightBorder: BorderLine = js.native
+  var FooterRightBorder: BorderLine
   
   /** contains the right border distance of the footer. */
-  var FooterRightBorderDistance: Double = js.native
+  var FooterRightBorderDistance: Double
   
   /** determines the right margin of the footer. */
-  var FooterRightMargin: Double = js.native
+  var FooterRightMargin: Double
   
   /** determines the shadow of the footer. */
-  var FooterShadowFormat: ShadowFormat = js.native
+  var FooterShadowFormat: ShadowFormat
   
   /** contains the interface to the text of the footer. */
-  var FooterText: XText = js.native
+  var FooterText: XText
   
   /** contains the interface to the text of the footer of a left page. */
-  var FooterTextLeft: XText = js.native
+  var FooterTextLeft: XText
   
   /** contains the interface to the text of the footer of a right page.contains . */
-  var FooterTextRight: XText = js.native
+  var FooterTextRight: XText
   
   /** contains the style of the top border line of the footer. */
-  var FooterTopBorder: BorderLine = js.native
+  var FooterTopBorder: BorderLine
   
   /** contains the top border distance of the footer. */
-  var FooterTopBorderDistance: Double = js.native
+  var FooterTopBorderDistance: Double
   
   /** contains the maximum height of the footnote area. If set to zero then the height of the current page is used as limit. */
-  var FootnoteHeight: Double = js.native
+  var FootnoteHeight: Double
   
   /**
     * contains the adjustment of the separator line between the text and the footnote area.
     *
     * com::sun::star::text::HorizontalAdjusts.
     */
-  var FootnoteLineAdjust: Double = js.native
+  var FootnoteLineAdjust: Double
   
   /** contains the color of the separator line between the text and the footnote area. */
-  var FootnoteLineColor: Color = js.native
+  var FootnoteLineColor: Color
   
   /** contains the distance between the footnote area and the separator line between the text and the footnote area. */
-  var FootnoteLineDistance: Double = js.native
+  var FootnoteLineDistance: Double
   
   /** contains the relative width of the separator line between the text and the footnote area. */
-  var FootnoteLineRelativeWidth: Double = js.native
+  var FootnoteLineRelativeWidth: Double
   
   /**
     * contains the style of the separator line between the text and the footnote area.
     * @see com.sun.star.style.FootnoteLineStyle for the possible values.
     */
-  var FootnoteLineStyle: Double = js.native
+  var FootnoteLineStyle: Double
   
   /** contains the distance between the text and the separator line between the text and the footnote area. */
-  var FootnoteLineTextDistance: Double = js.native
+  var FootnoteLineTextDistance: Double
   
   /** contains the weight of the separator line between the text and the footnote area. */
-  var FootnoteLineWeight: Double = js.native
+  var FootnoteLineWeight: Double
   
   /** contains the height of the base text line inside the text grid */
-  var GridBaseHeight: Double = js.native
+  var GridBaseHeight: Double
   
   /** contains the display color of the text grid */
-  var GridColor: Color = js.native
+  var GridColor: Color
   
   /** determines whether the text grid lines are visible or not */
-  var GridDisplay: Boolean = js.native
+  var GridDisplay: Boolean
   
   /** contains the number of lines in the text grid */
-  var GridLines: Double = js.native
+  var GridLines: Double
   
   /** contains the mode of the text grid (none, lines, ...), as represented by {@link com.sun.star.text.TextGridMode} constants */
-  var GridMode: Double = js.native
+  var GridMode: Double
   
   /** determines whether the text grid lines are printed */
-  var GridPrint: Boolean = js.native
+  var GridPrint: Boolean
   
   /** determines whether the text grid's ruby line is located below or above the base line */
-  var GridRubyBelow: Boolean = js.native
+  var GridRubyBelow: Boolean
   
   /** contains the height of the ruby text line inside the text grid */
-  var GridRubyHeight: Double = js.native
+  var GridRubyHeight: Double
   
   /** contains the color of the background of the header. */
-  var HeaderBackColor: Color = js.native
+  var HeaderBackColor: Color
   
   /** contains the filter name of the background graphic of the header. */
-  var HeaderBackGraphicFilter: String = js.native
+  var HeaderBackGraphicFilter: String
   
   /** determines the location of the background graphic of the header. */
-  var HeaderBackGraphicLocation: GraphicLocation = js.native
+  var HeaderBackGraphicLocation: GraphicLocation
   
   /** contains the URL of the background graphic of the header. */
-  var HeaderBackGraphicURL: String = js.native
+  var HeaderBackGraphicURL: String
   
   /**
     * determines if the background color of the header is transparent.
     *
     * If this property is set to `TRUE` , {@link PageStyle.HeaderBackColor} will not be used.
     */
-  var HeaderBackTransparent: Boolean = js.native
+  var HeaderBackTransparent: Boolean
   
   /** determines the distance between the header and the body text area. */
-  var HeaderBodyDistance: Double = js.native
+  var HeaderBodyDistance: Double
   
   /** determines the distance of all borders of the header. */
-  var HeaderBorderDistance: Double = js.native
+  var HeaderBorderDistance: Double
   
   /** determines the style of the bottom border line of the header. */
-  var HeaderBottomBorder: BorderLine = js.native
+  var HeaderBottomBorder: BorderLine
   
   /** determines the bottom border distance of the header. */
-  var HeaderBottomBorderDistance: Double = js.native
+  var HeaderBottomBorderDistance: Double
   
   /** determines whether to use dynamic spacing in header or not. */
-  var HeaderDynamicSpacing: Boolean = js.native
+  var HeaderDynamicSpacing: Boolean
   
   /** contains the height of the header. */
-  var HeaderHeight: Double = js.native
+  var HeaderHeight: Double
   
   /** determines if the height of the header depends on the content. */
-  var HeaderIsDynamicHeight: Boolean = js.native
+  var HeaderIsDynamicHeight: Boolean
   
   /** determines if a header is used on the page. */
-  var HeaderIsOn: Boolean = js.native
+  var HeaderIsOn: Boolean
   
   /** determines if the header content on left and right pages is the same. */
-  var HeaderIsShared: Boolean = js.native
+  var HeaderIsShared: Boolean
   
   /** determines the style of the left border line of the header. */
-  var HeaderLeftBorder: BorderLine = js.native
+  var HeaderLeftBorder: BorderLine
   
   /** determines the left border distance of the header. */
-  var HeaderLeftBorderDistance: Double = js.native
+  var HeaderLeftBorderDistance: Double
   
   /** contains the left margin of the header. */
-  var HeaderLeftMargin: Double = js.native
+  var HeaderLeftMargin: Double
   
   /** determines the style of the right border line of the header. */
-  var HeaderRightBorder: BorderLine = js.native
+  var HeaderRightBorder: BorderLine
   
   /** determines the right border distance of the header. */
-  var HeaderRightBorderDistance: Double = js.native
+  var HeaderRightBorderDistance: Double
   
   /** contains the right margin of the header. */
-  var HeaderRightMargin: Double = js.native
+  var HeaderRightMargin: Double
   
   /** determines the shadow of the header. */
-  var HeaderShadowFormat: ShadowFormat = js.native
+  var HeaderShadowFormat: ShadowFormat
   
   /** contains the interface to the text of the header. */
-  var HeaderText: XText = js.native
+  var HeaderText: XText
   
   /** contains the interface to the text of the header of left pages. */
-  var HeaderTextLeft: XText = js.native
+  var HeaderTextLeft: XText
   
   /** contains the interface to the text of the header of right pages. */
-  var HeaderTextRight: XText = js.native
+  var HeaderTextRight: XText
   
   /** determines the style of the top border line of the header. */
-  var HeaderTopBorder: BorderLine = js.native
+  var HeaderTopBorder: BorderLine
   
   /** determines the top border distance of the header. */
-  var HeaderTopBorderDistance: Double = js.native
+  var HeaderTopBorderDistance: Double
   
   /** contains the height of the page. */
-  var Height: Double = js.native
+  var Height: Double
   
   /** determines if the page format is landscape. */
-  var IsLandscape: Boolean = js.native
+  var IsLandscape: Boolean
   
   /** determines the style of the left border line of the page. */
-  var LeftBorder: BorderLine = js.native
+  var LeftBorder: BorderLine
   
   /** determines the left border distance of the page. */
-  var LeftBorderDistance: Double = js.native
+  var LeftBorderDistance: Double
   
   /** determines the left margin of the page. */
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   /** determines the default numbering type for this page. */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
   
   /** determines the layout of the page. */
-  var PageStyleLayout: typings.activexLibreoffice.com_.sun.star.style.PageStyleLayout = js.native
+  var PageStyleLayout: typings.activexLibreoffice.com_.sun.star.style.PageStyleLayout
   
   /** contains the name of a paper tray of the selected printer. */
-  var PrinterPaperTray: String = js.native
+  var PrinterPaperTray: String
   
   /** determines if the register mode is active on that page. */
-  var RegisterModeActive: Boolean = js.native
+  var RegisterModeActive: Boolean
   
   /** contains the name of the paragraph style that is used as reference of the register mode. */
-  var RegisterParagraphStyle: String = js.native
+  var RegisterParagraphStyle: String
   
   /** determines the style of the right border line of the page. */
-  var RightBorder: BorderLine = js.native
+  var RightBorder: BorderLine
   
   /** determines the right border distance of the page. */
-  var RightBorderDistance: Double = js.native
+  var RightBorderDistance: Double
   
   /** determines the right margin of the page. */
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
   /** determines the shadow of the page. */
-  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat = js.native
+  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
   
   /** contains the paper size of the page. */
-  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  var Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** contains the column settings of the page. */
-  var TextColumns: XTextColumns = js.native
+  var TextColumns: XTextColumns
   
   /** determines the style of the top border line of the page. */
-  var TopBorder: BorderLine = js.native
+  var TopBorder: BorderLine
   
   /** determines the top border distance of the page. */
-  var TopBorderDistance: Double = js.native
+  var TopBorderDistance: Double
   
   /** determines the top margin of the page. */
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
   /** contains the width of the page. */
-  var Width: Double = js.native
+  var Width: Double
   
   /** contains the writing direction, as represented by the {@link com.sun.star.text.WritingMode2} constants */
-  var WritingMode: Double = js.native
+  var WritingMode: Double
+  
+  /**
+    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+    * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+    */
+  /* InferMemberOverrides */
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object PageStyle {
   
@@ -467,11 +474,11 @@ object PageStyle {
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getName: () => String,
     getParentStyle: () => String,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     isInUse: () => Boolean,
     isUserDefined: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -484,7 +491,7 @@ object PageStyle {
     setParentStyle: String => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): PageStyle = {
     val __obj = js.Dynamic.literal(BackColor = BackColor.asInstanceOf[js.Any], BackGraphicFilter = BackGraphicFilter.asInstanceOf[js.Any], BackGraphicLocation = BackGraphicLocation.asInstanceOf[js.Any], BackGraphicURL = BackGraphicURL.asInstanceOf[js.Any], BackTransparent = BackTransparent.asInstanceOf[js.Any], BorderDistance = BorderDistance.asInstanceOf[js.Any], BottomBorder = BottomBorder.asInstanceOf[js.Any], BottomBorderDistance = BottomBorderDistance.asInstanceOf[js.Any], BottomMargin = BottomMargin.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], FirstIsShared = FirstIsShared.asInstanceOf[js.Any], FollowStyle = FollowStyle.asInstanceOf[js.Any], FooterBackColor = FooterBackColor.asInstanceOf[js.Any], FooterBackGraphicFilter = FooterBackGraphicFilter.asInstanceOf[js.Any], FooterBackGraphicLocation = FooterBackGraphicLocation.asInstanceOf[js.Any], FooterBackGraphicURL = FooterBackGraphicURL.asInstanceOf[js.Any], FooterBackTransparent = FooterBackTransparent.asInstanceOf[js.Any], FooterBodyDistance = FooterBodyDistance.asInstanceOf[js.Any], FooterBorderDistance = FooterBorderDistance.asInstanceOf[js.Any], FooterBottomBorder = FooterBottomBorder.asInstanceOf[js.Any], FooterBottomBorderDistance = FooterBottomBorderDistance.asInstanceOf[js.Any], FooterDynamicSpacing = FooterDynamicSpacing.asInstanceOf[js.Any], FooterHeight = FooterHeight.asInstanceOf[js.Any], FooterIsDynamicHeight = FooterIsDynamicHeight.asInstanceOf[js.Any], FooterIsOn = FooterIsOn.asInstanceOf[js.Any], FooterIsShared = FooterIsShared.asInstanceOf[js.Any], FooterLeftBorder = FooterLeftBorder.asInstanceOf[js.Any], FooterLeftBorderDistance = FooterLeftBorderDistance.asInstanceOf[js.Any], FooterLeftMargin = FooterLeftMargin.asInstanceOf[js.Any], FooterRightBorder = FooterRightBorder.asInstanceOf[js.Any], FooterRightBorderDistance = FooterRightBorderDistance.asInstanceOf[js.Any], FooterRightMargin = FooterRightMargin.asInstanceOf[js.Any], FooterShadowFormat = FooterShadowFormat.asInstanceOf[js.Any], FooterText = FooterText.asInstanceOf[js.Any], FooterTextLeft = FooterTextLeft.asInstanceOf[js.Any], FooterTextRight = FooterTextRight.asInstanceOf[js.Any], FooterTopBorder = FooterTopBorder.asInstanceOf[js.Any], FooterTopBorderDistance = FooterTopBorderDistance.asInstanceOf[js.Any], FootnoteHeight = FootnoteHeight.asInstanceOf[js.Any], FootnoteLineAdjust = FootnoteLineAdjust.asInstanceOf[js.Any], FootnoteLineColor = FootnoteLineColor.asInstanceOf[js.Any], FootnoteLineDistance = FootnoteLineDistance.asInstanceOf[js.Any], FootnoteLineRelativeWidth = FootnoteLineRelativeWidth.asInstanceOf[js.Any], FootnoteLineStyle = FootnoteLineStyle.asInstanceOf[js.Any], FootnoteLineTextDistance = FootnoteLineTextDistance.asInstanceOf[js.Any], FootnoteLineWeight = FootnoteLineWeight.asInstanceOf[js.Any], GridBaseHeight = GridBaseHeight.asInstanceOf[js.Any], GridColor = GridColor.asInstanceOf[js.Any], GridDisplay = GridDisplay.asInstanceOf[js.Any], GridLines = GridLines.asInstanceOf[js.Any], GridMode = GridMode.asInstanceOf[js.Any], GridPrint = GridPrint.asInstanceOf[js.Any], GridRubyBelow = GridRubyBelow.asInstanceOf[js.Any], GridRubyHeight = GridRubyHeight.asInstanceOf[js.Any], HeaderBackColor = HeaderBackColor.asInstanceOf[js.Any], HeaderBackGraphicFilter = HeaderBackGraphicFilter.asInstanceOf[js.Any], HeaderBackGraphicLocation = HeaderBackGraphicLocation.asInstanceOf[js.Any], HeaderBackGraphicURL = HeaderBackGraphicURL.asInstanceOf[js.Any], HeaderBackTransparent = HeaderBackTransparent.asInstanceOf[js.Any], HeaderBodyDistance = HeaderBodyDistance.asInstanceOf[js.Any], HeaderBorderDistance = HeaderBorderDistance.asInstanceOf[js.Any], HeaderBottomBorder = HeaderBottomBorder.asInstanceOf[js.Any], HeaderBottomBorderDistance = HeaderBottomBorderDistance.asInstanceOf[js.Any], HeaderDynamicSpacing = HeaderDynamicSpacing.asInstanceOf[js.Any], HeaderHeight = HeaderHeight.asInstanceOf[js.Any], HeaderIsDynamicHeight = HeaderIsDynamicHeight.asInstanceOf[js.Any], HeaderIsOn = HeaderIsOn.asInstanceOf[js.Any], HeaderIsShared = HeaderIsShared.asInstanceOf[js.Any], HeaderLeftBorder = HeaderLeftBorder.asInstanceOf[js.Any], HeaderLeftBorderDistance = HeaderLeftBorderDistance.asInstanceOf[js.Any], HeaderLeftMargin = HeaderLeftMargin.asInstanceOf[js.Any], HeaderRightBorder = HeaderRightBorder.asInstanceOf[js.Any], HeaderRightBorderDistance = HeaderRightBorderDistance.asInstanceOf[js.Any], HeaderRightMargin = HeaderRightMargin.asInstanceOf[js.Any], HeaderShadowFormat = HeaderShadowFormat.asInstanceOf[js.Any], HeaderText = HeaderText.asInstanceOf[js.Any], HeaderTextLeft = HeaderTextLeft.asInstanceOf[js.Any], HeaderTextRight = HeaderTextRight.asInstanceOf[js.Any], HeaderTopBorder = HeaderTopBorder.asInstanceOf[js.Any], HeaderTopBorderDistance = HeaderTopBorderDistance.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IsAutoUpdate = IsAutoUpdate.asInstanceOf[js.Any], IsLandscape = IsLandscape.asInstanceOf[js.Any], IsPhysical = IsPhysical.asInstanceOf[js.Any], LeftBorder = LeftBorder.asInstanceOf[js.Any], LeftBorderDistance = LeftBorderDistance.asInstanceOf[js.Any], LeftMargin = LeftMargin.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberingType = NumberingType.asInstanceOf[js.Any], PageStyleLayout = PageStyleLayout.asInstanceOf[js.Any], ParaStyleConditions = ParaStyleConditions.asInstanceOf[js.Any], ParentStyle = ParentStyle.asInstanceOf[js.Any], PrinterPaperTray = PrinterPaperTray.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RegisterModeActive = RegisterModeActive.asInstanceOf[js.Any], RegisterParagraphStyle = RegisterParagraphStyle.asInstanceOf[js.Any], RightBorder = RightBorder.asInstanceOf[js.Any], RightBorderDistance = RightBorderDistance.asInstanceOf[js.Any], RightMargin = RightMargin.asInstanceOf[js.Any], ShadowFormat = ShadowFormat.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], StyleInteropGrabBag = StyleInteropGrabBag.asInstanceOf[js.Any], TextColumns = TextColumns.asInstanceOf[js.Any], TopBorder = TopBorder.asInstanceOf[js.Any], TopBorderDistance = TopBorderDistance.asInstanceOf[js.Any], TopMargin = TopMargin.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], WritingMode = WritingMode.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[PageStyle]
@@ -624,6 +631,9 @@ object PageStyle {
     
     @scala.inline
     def setFootnoteLineWeight(value: Double): Self = StObject.set(x, "FootnoteLineWeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGridBaseHeight(value: Double): Self = StObject.set(x, "GridBaseHeight", value.asInstanceOf[js.Any])

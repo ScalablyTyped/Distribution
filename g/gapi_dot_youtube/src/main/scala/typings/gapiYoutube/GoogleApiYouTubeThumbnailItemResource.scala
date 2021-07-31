@@ -2,26 +2,24 @@ package typings.gapiYoutube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubeThumbnailItemResource extends StObject {
   
   /**
     * The images height.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The images URL.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * The images width.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object GoogleApiYouTubeThumbnailItemResource {
   

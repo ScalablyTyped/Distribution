@@ -2,11 +2,12 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PositionedToken extends PositionedNodeOrToken {
+trait PositionedToken
+  extends StObject
+     with PositionedNodeOrToken {
   
   def nextToken(): PositionedToken = js.native
   def nextToken(includeSkippedTokens: Boolean): PositionedToken = js.native

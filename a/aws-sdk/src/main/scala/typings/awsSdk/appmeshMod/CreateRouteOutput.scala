@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRouteOutput extends StObject {
   
   /**
     * The full description of your mesh following the create call.
     */
-  var route: RouteData = js.native
+  var route: RouteData
 }
 object CreateRouteOutput {
   

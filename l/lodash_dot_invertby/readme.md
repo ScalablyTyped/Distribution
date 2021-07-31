@@ -12,7 +12,7 @@ The lodash method `_.invertBy` exported as a module.
 | Keywords           | lodash-modularized, invertby |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 100152 |
+| # downloads        | 91107 |
 | # stars            | 0 |
 
 ## Links

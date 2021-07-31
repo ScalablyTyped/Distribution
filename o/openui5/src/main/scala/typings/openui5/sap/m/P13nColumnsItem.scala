@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait P13nColumnsItem extends Item {
+trait P13nColumnsItem
+  extends StObject
+     with Item {
   
   /**
     * Gets current value of property <code>columnKey</code>.This property contains the unique table column

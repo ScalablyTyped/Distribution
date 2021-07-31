@@ -9,54 +9,52 @@ import typings.googleapis.anon.Primary
 import typings.googleapis.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPerson extends StObject {
   
   /**
     * A short biography for this person.
     */
-  var aboutMe: js.UndefOr[String] = js.native
+  var aboutMe: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s date of birth, represented as YYYY-MM-DD.
     */
-  var birthday: js.UndefOr[String] = js.native
+  var birthday: js.UndefOr[String] = js.undefined
   
   /**
     * The &quot;bragging rights&quot; line of this person.
     */
-  var braggingRights: js.UndefOr[String] = js.native
+  var braggingRights: js.UndefOr[String] = js.undefined
   
   /**
     * For followers who are visible, the number of people who have added this
     * person or page to a circle.
     */
-  var circledByCount: js.UndefOr[Double] = js.native
+  var circledByCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The cover photo content.
     */
-  var cover: js.UndefOr[CoverInfo] = js.native
+  var cover: js.UndefOr[CoverInfo] = js.undefined
   
   /**
     * (this field is not currently used)
     */
-  var currentLocation: js.UndefOr[String] = js.native
+  var currentLocation: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this person, which is suitable for display.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The hosted domain name for the user&#39;s Google Apps account. For
     * instance, example.com. The plus.profile.emails.read or email scope is
     * needed to get this domain name.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * A list of email addresses that this person has, including their Google
@@ -65,78 +63,78 @@ trait SchemaPerson extends StObject {
     * these email addresses, or the email scope can be used to retrieve just
     * the Google account email address.
     */
-  var emails: js.UndefOr[js.Array[Value]] = js.native
+  var emails: js.UndefOr[js.Array[Value]] = js.undefined
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s gender. Possible values include, but are not limited to,
     * the following values:   - &quot;male&quot; - Male gender.  -
     * &quot;female&quot; - Female gender.  - &quot;other&quot; - Other.
     */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this person.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The representation of the person&#39;s profile photo.
     */
-  var image: js.UndefOr[IsDefault] = js.native
+  var image: js.UndefOr[IsDefault] = js.undefined
   
   /**
     * Whether this user has signed up for Google+.
     */
-  var isPlusUser: js.UndefOr[Boolean] = js.native
+  var isPlusUser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies this resource as a person. Value: &quot;plus#person&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An object representation of the individual components of a person&#39;s
     * name.
     */
-  var name: js.UndefOr[Formatted] = js.native
+  var name: js.UndefOr[Formatted] = js.undefined
   
   /**
     * The nickname of this person.
     */
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   /**
     * Type of person within Google+. Possible values include, but are not
     * limited to, the following values:   - &quot;person&quot; - represents an
     * actual person.  - &quot;page&quot; - represents a page.
     */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /**
     * The occupation of this person.
     */
-  var occupation: js.UndefOr[String] = js.native
+  var occupation: js.UndefOr[String] = js.undefined
   
   /**
     * A list of current or past organizations with which this person is
     * associated.
     */
-  var organizations: js.UndefOr[js.Array[Department]] = js.native
+  var organizations: js.UndefOr[js.Array[Department]] = js.undefined
   
   /**
     * A list of places where this person has lived.
     */
-  var placesLived: js.UndefOr[js.Array[Primary]] = js.native
+  var placesLived: js.UndefOr[js.Array[Primary]] = js.undefined
   
   /**
     * If a Google+ Page, the number of people who have +1&#39;d this page.
     */
-  var plusOneCount: js.UndefOr[Double] = js.native
+  var plusOneCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The person&#39;s relationship status. Possible values include, but are
@@ -149,32 +147,32 @@ trait SchemaPerson extends StObject {
     * &quot;in_domestic_partnership&quot; - Person is in a domestic
     * partnership.  - &quot;in_civil_union&quot; - Person is in a civil union.
     */
-  var relationshipStatus: js.UndefOr[String] = js.native
+  var relationshipStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s skills.
     */
-  var skills: js.UndefOr[String] = js.native
+  var skills: js.UndefOr[String] = js.undefined
   
   /**
     * The brief description (tagline) of this person.
     */
-  var tagline: js.UndefOr[String] = js.native
+  var tagline: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of this person&#39;s profile.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * A list of URLs for this person.
     */
-  var urls: js.UndefOr[js.Array[LabelType]] = js.native
+  var urls: js.UndefOr[js.Array[LabelType]] = js.undefined
   
   /**
     * Whether the person or Google+ Page has been verified.
     */
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPerson {
   

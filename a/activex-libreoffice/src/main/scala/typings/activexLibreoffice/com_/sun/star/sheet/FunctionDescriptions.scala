@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All container access methods return a sequence of {@link com.sun.star.beans.PropertyValue} structs. The properties contained in the sequence are
   * collected in the service {@link FunctionDescription} .
   */
-@js.native
 trait FunctionDescriptions
-  extends XFunctionDescriptions
+  extends StObject
+     with XFunctionDescriptions
      with XNameAccess
      with XEnumerationAccess
 object FunctionDescriptions {

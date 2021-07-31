@@ -6,45 +6,43 @@ import typings.googleVisualization.googleVisualizationStrings.next
 import typings.googleVisualization.googleVisualizationStrings.prev
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOptions extends StObject {
   
-  var allowHtml: js.UndefOr[Boolean] = js.native
+  var allowHtml: js.UndefOr[Boolean] = js.undefined
   
-  var alternatingRowStyle: js.UndefOr[Boolean] = js.native
+  var alternatingRowStyle: js.UndefOr[Boolean] = js.undefined
   
-  var cssClassNames: js.UndefOr[CssClassNames] = js.native
+  var cssClassNames: js.UndefOr[CssClassNames] = js.undefined
   
-  var firstRowNumber: js.UndefOr[Double] = js.native
+  var firstRowNumber: js.UndefOr[Double] = js.undefined
   
-  var frozenColumns: js.UndefOr[Double] = js.native
+  var frozenColumns: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var pagingButtons: js.UndefOr[Double | both | prev | next | auto] = js.native
+  var pagingButtons: js.UndefOr[Double | both | prev | next | auto] = js.undefined
   
-  var rtlTable: js.UndefOr[Boolean] = js.native
+  var rtlTable: js.UndefOr[Boolean] = js.undefined
   
-  var scrollLeftStartPosition: js.UndefOr[Double] = js.native
+  var scrollLeftStartPosition: js.UndefOr[Double] = js.undefined
   
-  var showRowNumber: js.UndefOr[Boolean] = js.native
+  var showRowNumber: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var sortAscending: js.UndefOr[Boolean] = js.native
+  var sortAscending: js.UndefOr[Boolean] = js.undefined
   
-  var sortColumn: js.UndefOr[Double] = js.native
+  var sortColumn: js.UndefOr[Double] = js.undefined
   
-  var startPage: js.UndefOr[Double] = js.native
+  var startPage: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object TableOptions {
   

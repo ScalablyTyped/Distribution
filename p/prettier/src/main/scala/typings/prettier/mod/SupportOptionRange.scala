@@ -2,17 +2,15 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportOptionRange extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var step: Double = js.native
+  var step: Double
 }
 object SupportOptionRange {
   

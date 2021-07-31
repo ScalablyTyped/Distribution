@@ -12,7 +12,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,12 +45,13 @@ object mod {
   
   type Calendar = Component[Props, js.Object, js.Any]
   
-  @js.native
-  trait ChangeEvent extends DateObj {
+  trait ChangeEvent
+    extends StObject
+       with DateObj {
     
-    var iso: String = js.native
+    var iso: String
     
-    var `type`: left | up | right | down | prev | next = js.native
+    var `type`: left | up | right | down | prev | next
   }
   object ChangeEvent {
     
@@ -79,14 +79,13 @@ object mod {
     }
   }
   
-  @js.native
   trait DateObj extends StObject {
     
-    var day: Double = js.native
+    var day: Double
     
-    var month: Double = js.native
+    var month: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object DateObj {
     
@@ -110,53 +109,52 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
     /** The number of the day currently focused. Places border around the date. 0 highlights no date. */
-    var day: js.UndefOr[Double] = js.native
+    var day: js.UndefOr[Double] = js.undefined
     
     /** Default for `day`. */
-    var defaultDay: js.UndefOr[Double] = js.native
+    var defaultDay: js.UndefOr[Double] = js.undefined
     
     /** Default for `disabled`. */
-    var defaultDisabled: js.UndefOr[js.Array[String]] = js.native
+    var defaultDisabled: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Default for `month`. */
-    var defaultMonth: js.UndefOr[Double] = js.native
+    var defaultMonth: js.UndefOr[Double] = js.undefined
     
     /** Default for `previouslySelected`. */
-    var defaultPreviouslySelected: js.UndefOr[js.Array[String]] = js.native
+    var defaultPreviouslySelected: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Default for `selected`. */
-    var defaultSelected: js.UndefOr[js.Array[String]] = js.native
+    var defaultSelected: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Default for `year`. */
-    var defaultYear: js.UndefOr[Double] = js.native
+    var defaultYear: js.UndefOr[Double] = js.undefined
     
     /**
       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates provided are greyed out.
       * This does not prevent these dates being selected.
       */
-    var disabled: js.UndefOr[js.Array[String]] = js.native
+    var disabled: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Props to apply to the container. */
-    var innerProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var innerProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /** The number of the month (from 1 to 12) which the calendar should be on. */
-    var month: js.UndefOr[Double] = js.native
+    var month: js.UndefOr[Double] = js.undefined
     
     /** Function which is called when the calendar is no longer focused. */
-    var onBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[FocusEvent[HTMLDivElement]], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ js.UndefOr[FocusEvent[HTMLDivElement]], Unit]] = js.undefined
     
     /**
       * Called when the calendar is navigated. This can be triggered by the keyboard, or by clicking the navigational buttons.
       * The 'type' property indicates the the direction the calendar was navigated whereas the 'iso' property is a string of the format YYYY-MM-DD.
       */
-    var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent, Unit]] = js.undefined
     
     /** Called when the calendar receives focus. This could be from a mouse event on the container by tabbing into it. */
-    var onFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[FocusEvent[HTMLDivElement]], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ js.UndefOr[FocusEvent[HTMLDivElement]], Unit]] = js.undefined
     
     /**
       * Function called when a day is clicked on. Calls with an object that has
@@ -164,25 +162,25 @@ object mod {
       * It also has an 'iso' property, which is a string of the selected date in the
       * format YYYY-MM-DD.
       */
-    var onSelect: js.UndefOr[js.Function1[/* e */ SelectEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* e */ SelectEvent, Unit]] = js.undefined
     
     /**
       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
       * provided are given a background color.
       */
-    var previouslySelected: js.UndefOr[js.Array[String]] = js.native
+    var previouslySelected: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
       * provided are given a background color.
       */
-    var selected: js.UndefOr[js.Array[String]] = js.native
+    var selected: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Value of current day, as a string in the format 'YYYY-MM-DD'. */
-    var today: js.UndefOr[String] = js.native
+    var today: js.UndefOr[String] = js.undefined
     
     /** Year to display the calendar for. */
-    var year: js.UndefOr[Double] = js.native
+    var year: js.UndefOr[Double] = js.undefined
   }
   object Props {
     
@@ -323,10 +321,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait SelectEvent extends DateObj {
+  trait SelectEvent
+    extends StObject
+       with DateObj {
     
-    var iso: String = js.native
+    var iso: String
   }
   object SelectEvent {
     

@@ -2,52 +2,124 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListColumn extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def DataBodyRange(Address: String): Range = js.native
-  def DataBodyRange(RowIndex: Double): Range = js.native
-  def DataBodyRange(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def DataBodyRange(Address: String): Range
+  def DataBodyRange(RowIndex: Double): Range
+  def DataBodyRange(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("DataBodyRange")
-  val DataBodyRange_Original: Range = js.native
+  val DataBodyRange_Original: Range
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.ListColumn_typekey")
-  var ExcelDotListColumn_typekey: ListColumn = js.native
+  var ExcelDotListColumn_typekey: ListColumn
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val ListDataFormat: typings.activexExcel.Excel.ListDataFormat = js.native
+  val ListDataFormat: typings.activexExcel.Excel.ListDataFormat
   
-  var Name: String = js.native
+  var Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Range(Address: String): typings.activexExcel.Excel.Range = js.native
-  def Range(RowIndex: Double): typings.activexExcel.Excel.Range = js.native
-  def Range(RowIndex: Double, ColumnIndex: Double): typings.activexExcel.Excel.Range = js.native
+  def Range(Address: String): typings.activexExcel.Excel.Range
+  def Range(RowIndex: Double): typings.activexExcel.Excel.Range
+  def Range(RowIndex: Double, ColumnIndex: Double): typings.activexExcel.Excel.Range
   @JSName("Range")
-  val Range_Original: Range = js.native
+  val Range_Original: Range
   
-  val SharePointFormula: String = js.native
+  val SharePointFormula: String
   
-  def Total(Address: String): Range = js.native
-  def Total(RowIndex: Double): Range = js.native
-  def Total(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def Total(Address: String): Range
+  def Total(RowIndex: Double): Range
+  def Total(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("Total")
-  val Total_Original: Range = js.native
+  val Total_Original: Range
   
-  var TotalsCalculation: XlTotalsCalculation = js.native
+  var TotalsCalculation: XlTotalsCalculation
   
-  val XPath: typings.activexExcel.Excel.XPath = js.native
+  val XPath: typings.activexExcel.Excel.XPath
   
-  val _Default: String = js.native
+  val _Default: String
+}
+object ListColumn {
+  
+  @scala.inline
+  def apply(
+    Application: Application,
+    Creator: XlCreator,
+    DataBodyRange: Range,
+    Delete: () => Unit,
+    ExcelDotListColumn_typekey: ListColumn,
+    Index: Double,
+    ListDataFormat: ListDataFormat,
+    Name: String,
+    Parent: js.Any,
+    Range: Range,
+    SharePointFormula: String,
+    Total: Range,
+    TotalsCalculation: XlTotalsCalculation,
+    XPath: XPath,
+    _Default: String
+  ): ListColumn = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], DataBodyRange = DataBodyRange.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Index = Index.asInstanceOf[js.Any], ListDataFormat = ListDataFormat.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], SharePointFormula = SharePointFormula.asInstanceOf[js.Any], Total = Total.asInstanceOf[js.Any], TotalsCalculation = TotalsCalculation.asInstanceOf[js.Any], XPath = XPath.asInstanceOf[js.Any], _Default = _Default.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.ListColumn_typekey")(ExcelDotListColumn_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListColumn]
+  }
+  
+  @scala.inline
+  implicit class ListColumnMutableBuilder[Self <: ListColumn] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataBodyRange(value: Range): Self = StObject.set(x, "DataBodyRange", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setExcelDotListColumn_typekey(value: ListColumn): Self = StObject.set(x, "Excel.ListColumn_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListDataFormat(value: ListDataFormat): Self = StObject.set(x, "ListDataFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSharePointFormula(value: String): Self = StObject.set(x, "SharePointFormula", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTotal(value: Range): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTotalsCalculation(value: XlTotalsCalculation): Self = StObject.set(x, "TotalsCalculation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setXPath(value: XPath): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+  }
 }

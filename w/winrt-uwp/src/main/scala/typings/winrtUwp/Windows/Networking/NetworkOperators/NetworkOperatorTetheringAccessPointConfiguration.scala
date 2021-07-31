@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to configure and create a NetworkOperatorTetheringAccessPointConfiguration object that contains a specific network account ID (SSID) and specifies the passphrase used to authenticate clients trying to establish a network connection to the tethering network. */
-@js.native
 trait NetworkOperatorTetheringAccessPointConfiguration extends StObject {
   
   /** Gets or sets the passphrase used to authenticate the connection. */
-  var passphrase: String = js.native
+  var passphrase: String
   
   /** Gets or sets the network account ID. */
-  var ssid: String = js.native
+  var ssid: String
 }
 object NetworkOperatorTetheringAccessPointConfiguration {
   

@@ -4,15 +4,15 @@
 Typings are for version 0.5.2
 
 ## Library description:
-[![npm version](https://badge.fury.io/js/apollo-server-caching.svg)](https://badge.fury.io/js/apollo-server-caching) [![Build Status](https://circleci.com/gh/apollographql/apollo-server.svg?style=svg)](https://circleci.com/gh/apollographql/apollo-server)
+[![npm version](https://badge.fury.io/js/apollo-server-caching.svg)](https://badge.fury.io/js/apollo-server-caching) [![Build Status](https://circleci.com/gh/apollographql/apollo-server/tree/main.svg?style=svg)](https://circleci.com/gh/apollographql/apoll
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | apollo-server-caching |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 53 |
-| # downloads        | 45330950 |
+| # releases         | 18 |
+| # dependents       | 63 |
+| # downloads        | 54197083 |
 | # stars            | 0 |
 
 ## Links

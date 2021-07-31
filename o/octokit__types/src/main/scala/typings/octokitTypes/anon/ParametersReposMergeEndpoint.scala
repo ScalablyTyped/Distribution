@@ -8,17 +8,15 @@ import typings.octokitTypes.endpointsMod.ReposMergeResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposMergeEndpoint extends StObject {
   
-  var parameters: ReposMergeEndpoint = js.native
+  var parameters: ReposMergeEndpoint
   
-  var request: ReposMergeRequestOptions = js.native
+  var request: ReposMergeRequestOptions
   
-  var response: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data] = js.native
+  var response: OctokitResponse[ReposMergeResponseData | ReposMergeResponse404Data | ReposMergeResponse409Data]
 }
 object ParametersReposMergeEndpoint {
   

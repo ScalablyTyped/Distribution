@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteImageResponse extends StObject {
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[ImageFailureList] = js.native
+  var failures: js.UndefOr[ImageFailureList] = js.undefined
   
   /**
     * The image IDs of the deleted images.
     */
-  var imageIds: js.UndefOr[ImageIdentifierList] = js.native
+  var imageIds: js.UndefOr[ImageIdentifierList] = js.undefined
 }
 object BatchDeleteImageResponse {
   

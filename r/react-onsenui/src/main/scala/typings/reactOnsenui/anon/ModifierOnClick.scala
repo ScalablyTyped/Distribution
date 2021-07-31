@@ -5,15 +5,13 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifierOnClick extends StObject {
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[_]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
 }
 object ModifierOnClick {
   
@@ -33,7 +31,7 @@ object ModifierOnClick {
     def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     @scala.inline
-    def setOnClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

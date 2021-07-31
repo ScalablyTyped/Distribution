@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewChangingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the currently selected view.
     */
-  var currentSelectedView: js.UndefOr[String] = js.native
+  var currentSelectedView: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the newly selected view.
     */
-  var newSelectedView: js.UndefOr[String] = js.native
+  var newSelectedView: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ViewChangingEventUIParam {
   

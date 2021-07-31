@@ -17,12 +17,12 @@ import typings.std.Blob
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PortalItem
-  extends Accessor
+  extends StObject
+     with Accessor
      with Loadable
      with JSONSupport {
   
@@ -53,8 +53,8 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#addResource)
     */
-  def addResource(resource: PortalItemResource, content: Blob): js.Promise[_] = js.native
-  def addResource(resource: PortalItemResource, content: Blob, options: PortalItemAddResourceOptions): js.Promise[_] = js.native
+  def addResource(resource: PortalItemResource, content: Blob): js.Promise[js.Any] = js.native
+  def addResource(resource: PortalItemResource, content: Blob, options: PortalItemAddResourceOptions): js.Promise[js.Any] = js.native
   
   /**
     * Contains an array of objects containing proxy information for premium platform services.
@@ -96,7 +96,7 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#deleteRating)
     */
-  def deleteRating(): js.Promise[_] = js.native
+  def deleteRating(): js.Promise[js.Any] = js.native
   
   /**
     * The detailed description of the item.
@@ -117,32 +117,32 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchData)
     */
-  def fetchData(): js.Promise[_] = js.native
-  def fetchData(responseType: js.UndefOr[scala.Nothing], options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData(): js.Promise[js.Any] = js.native
+  def fetchData(responseType: Unit, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_arraybuffer(responseType: `array-buffer`): js.Promise[_] = js.native
+  def fetchData_arraybuffer(responseType: `array-buffer`): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_arraybuffer(responseType: `array-buffer`, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_arraybuffer(responseType: `array-buffer`, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_blob(responseType: blob): js.Promise[_] = js.native
+  def fetchData_blob(responseType: blob): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_blob(responseType: blob, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_blob(responseType: blob, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_document(responseType: document): js.Promise[_] = js.native
+  def fetchData_document(responseType: document): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_document(responseType: document, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_document(responseType: document, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_json(responseType: json): js.Promise[_] = js.native
+  def fetchData_json(responseType: json): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_json(responseType: json, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_json(responseType: json, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_text(responseType: text): js.Promise[_] = js.native
+  def fetchData_text(responseType: text): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_text(responseType: text, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_text(responseType: text, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_xml(responseType: xml): js.Promise[_] = js.native
+  def fetchData_xml(responseType: xml): js.Promise[js.Any] = js.native
   @JSName("fetchData")
-  def fetchData_xml(responseType: xml, options: PortalItemFetchDataOptions): js.Promise[_] = js.native
+  def fetchData_xml(responseType: xml, options: PortalItemFetchDataOptions): js.Promise[js.Any] = js.native
   
   /**
     * Returns the rating (if any) given to the item.
@@ -166,7 +166,7 @@ trait PortalItem
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchResources)
     */
   def fetchResources(): FetchResourcesResult = js.native
-  def fetchResources(params: js.UndefOr[scala.Nothing], options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
+  def fetchResources(params: Unit, options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
   def fetchResources(params: FetchResourcesParams): FetchResourcesResult = js.native
   def fetchResources(params: FetchResourcesParams, options: PortalItemFetchResourcesOptions): FetchResourcesResult = js.native
   
@@ -288,16 +288,16 @@ trait PortalItem
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeAllResources)
     */
-  def removeAllResources(): js.Promise[_] = js.native
-  def removeAllResources(options: PortalItemRemoveAllResourcesOptions): js.Promise[_] = js.native
+  def removeAllResources(): js.Promise[js.Any] = js.native
+  def removeAllResources(options: PortalItemRemoveAllResourcesOptions): js.Promise[js.Any] = js.native
   
   /**
     * Removes a [resource](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItemResource.html) from the portal item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#removeResource)
     */
-  def removeResource(resource: PortalItemResource): js.Promise[_] = js.native
-  def removeResource(resource: PortalItemResource, options: PortalItemRemoveResourceOptions): js.Promise[_] = js.native
+  def removeResource(resource: PortalItemResource): js.Promise[js.Any] = js.native
+  def removeResource(resource: PortalItemResource, options: PortalItemRemoveResourceOptions): js.Promise[js.Any] = js.native
   
   /**
     * An array of string URLs.

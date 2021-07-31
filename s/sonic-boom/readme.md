@@ -10,9 +10,9 @@ Extremely fast utf8 only stream implementation
 | ------------------ | :-------------: |
 | Full name          | sonic-boom |
 | Keywords           | stream, fs, net, fd, file, descriptor, fast |
-| # releases         | 15 |
-| # dependents       | 18 |
-| # downloads        | 23664879 |
+| # releases         | 11 |
+| # dependents       | 23 |
+| # downloads        | 33571529 |
 | # stars            | 0 |
 
 ## Links

@@ -11,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popperPopperMod extends Shortcut {
@@ -74,31 +73,32 @@ object popperPopperMod extends Shortcut {
     def `top-start`: typings.materialUiCore.materialUiCoreStrings.`top-start` = "top-start".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.`top-start`]
   }
   
-  @js.native
-  trait PopperProps extends HTMLAttributes[HTMLDivElement] {
+  trait PopperProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     var anchorEl: js.UndefOr[
         Null | HTMLElement | ReferenceObject | (js.Function1[/* element */ HTMLElement, HTMLElement])
-      ] = js.native
+      ] = js.undefined
     
     @JSName("children")
-    var children_PopperProps: ReactNode | (js.Function1[/* props */ Placement, ReactNode]) = js.native
+    var children_PopperProps: ReactNode | (js.Function1[/* props */ Placement, ReactNode])
     
-    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.native
+    var container: js.UndefOr[ReactInstance | js.Function0[ReactInstance] | Null] = js.undefined
     
-    var disablePortal: js.UndefOr[Boolean] = js.native
+    var disablePortal: js.UndefOr[Boolean] = js.undefined
     
-    var keepMounted: js.UndefOr[Boolean] = js.native
+    var keepMounted: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[js.Object] = js.native
+    var modifiers: js.UndefOr[js.Object] = js.undefined
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var placement: js.UndefOr[PopperPlacementType] = js.native
+    var placement: js.UndefOr[PopperPlacementType] = js.undefined
     
-    var popperOptions: js.UndefOr[js.Object] = js.native
+    var popperOptions: js.UndefOr[js.Object] = js.undefined
     
-    var transition: js.UndefOr[Boolean] = js.native
+    var transition: js.UndefOr[Boolean] = js.undefined
   }
   object PopperProps {
     

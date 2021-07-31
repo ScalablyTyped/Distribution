@@ -3,601 +3,599 @@ package typings.modernizr
 import typings.modernizr.modernizrBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureDetects extends StObject {
   
-  var adownload: Boolean = js.native
+  var adownload: Boolean
   
   // Documented
-  var ambientlight: Boolean = js.native
+  var ambientlight: Boolean
   
-  var animation: Boolean = js.native
+  var animation: Boolean
   
-  var apng: Boolean = js.native
+  var apng: Boolean
   
-  var appearance: Boolean = js.native
+  var appearance: Boolean
   
-  var applicationcache: Boolean = js.native
+  var applicationcache: Boolean
   
-  var arrow: Boolean = js.native
+  var arrow: Boolean
   
   // Undocumented - usually aliases or new features
-  var `atob-btoa`: Boolean = js.native
+  var `atob-btoa`: Boolean
   
-  var atobbtoa: Boolean = js.native
+  var atobbtoa: Boolean
   
-  var audio: AudioBoolean = js.native
+  var audio: AudioBoolean
   
-  var audioloop: Boolean = js.native
+  var audioloop: Boolean
   
-  var audiopreload: Boolean = js.native
+  var audiopreload: Boolean
   
-  var backdropfilter: Boolean = js.native
+  var backdropfilter: Boolean
   
-  var backgroundblendmode: Boolean = js.native
+  var backgroundblendmode: Boolean
   
-  var backgroundcliptext: Boolean = js.native
+  var backgroundcliptext: Boolean
   
-  var backgroundsize: Boolean = js.native
+  var backgroundsize: Boolean
   
-  var `battery-api`: Boolean = js.native
+  var `battery-api`: Boolean
   
-  var batteryapi: Boolean = js.native
+  var batteryapi: Boolean
   
-  var bdi: Boolean = js.native
+  var bdi: Boolean
   
-  var beacon: Boolean = js.native
+  var beacon: Boolean
   
-  var bgpositionshorthand: Boolean = js.native
+  var bgpositionshorthand: Boolean
   
-  var bgpositionxy: Boolean = js.native
+  var bgpositionxy: Boolean
   
-  var bgrepeatround: Boolean = js.native
+  var bgrepeatround: Boolean
   
-  var bgrepeatspace: Boolean = js.native
+  var bgrepeatspace: Boolean
   
-  var bgsizecover: Boolean = js.native
+  var bgsizecover: Boolean
   
-  var `blob-constructor`: Boolean = js.native
+  var `blob-constructor`: Boolean
   
-  var blobconstructor: Boolean = js.native
+  var blobconstructor: Boolean
   
-  var bloburls: Boolean = js.native
+  var bloburls: Boolean
   
-  var blobworkers: Boolean = js.native
+  var blobworkers: Boolean
   
-  var borderimage: Boolean = js.native
+  var borderimage: Boolean
   
-  var borderradius: Boolean = js.native
+  var borderradius: Boolean
   
-  var boxshadow: Boolean = js.native
+  var boxshadow: Boolean
   
-  var boxsizing: Boolean = js.native
+  var boxsizing: Boolean
   
-  var canvas: Boolean = js.native
+  var canvas: Boolean
   
-  var canvasblending: Boolean = js.native
+  var canvasblending: Boolean
   
-  var canvastext: Boolean = js.native
+  var canvastext: Boolean
   
-  var canvaswinding: Boolean = js.native
+  var canvaswinding: Boolean
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var classlist: Boolean = js.native
+  var classlist: Boolean
   
-  var contains: Boolean = js.native
+  var contains: Boolean
   
-  var contenteditable: Boolean = js.native
+  var contenteditable: Boolean
   
-  var contextmenu: Boolean = js.native
+  var contextmenu: Boolean
   
-  var cookies: Boolean = js.native
+  var cookies: Boolean
   
-  var cors: Boolean = js.native
+  var cors: Boolean
   
-  var `createelement-attrs`: Boolean = js.native
+  var `createelement-attrs`: Boolean
   
-  var createelementattrs: Boolean = js.native
+  var createelementattrs: Boolean
   
-  var crypto: Boolean = js.native
+  var crypto: Boolean
   
-  var cryptography: Boolean = js.native
+  var cryptography: Boolean
   
-  var cssall: Boolean = js.native
+  var cssall: Boolean
   
-  var cssanimations: Boolean = js.native
+  var cssanimations: Boolean
   
-  var csscalc: Boolean = js.native
+  var csscalc: Boolean
   
-  var csschunit: Boolean = js.native
+  var csschunit: Boolean
   
-  var csscolumns: `false` | CssColumnsBoolean = js.native
+  var csscolumns: `false` | CssColumnsBoolean
   
-  var cssescape: Boolean = js.native
+  var cssescape: Boolean
   
-  var cssexunit: Boolean = js.native
+  var cssexunit: Boolean
   
-  var cssfilters: Boolean = js.native
+  var cssfilters: Boolean
   
-  var cssgradients: Boolean = js.native
+  var cssgradients: Boolean
   
-  var cssgrid: Boolean = js.native
+  var cssgrid: Boolean
   
-  var cssgridlegacy: Boolean = js.native
+  var cssgridlegacy: Boolean
   
-  var csshyphens: Boolean = js.native
+  var csshyphens: Boolean
   
-  var cssinvalid: Boolean = js.native
+  var cssinvalid: Boolean
   
-  var cssmask: Boolean = js.native
+  var cssmask: Boolean
   
-  var csspointerevents: Boolean = js.native
+  var csspointerevents: Boolean
   
-  var csspositionsticky: Boolean = js.native
+  var csspositionsticky: Boolean
   
-  var csspseudoanimations: Boolean = js.native
+  var csspseudoanimations: Boolean
   
-  var csspseudotransitions: Boolean = js.native
+  var csspseudotransitions: Boolean
   
-  var cssreflections: Boolean = js.native
+  var cssreflections: Boolean
   
-  var cssremunit: Boolean = js.native
+  var cssremunit: Boolean
   
-  var cssresize: Boolean = js.native
+  var cssresize: Boolean
   
-  var cssscrollbar: Boolean = js.native
+  var cssscrollbar: Boolean
   
-  var csstransforms: Boolean = js.native
+  var csstransforms: Boolean
   
-  var csstransforms3d: Boolean = js.native
+  var csstransforms3d: Boolean
   
-  var csstransformslevel2: Boolean = js.native
+  var csstransformslevel2: Boolean
   
-  var csstransitions: Boolean = js.native
+  var csstransitions: Boolean
   
-  var cssvalid: Boolean = js.native
+  var cssvalid: Boolean
   
-  var cssvhunit: Boolean = js.native
+  var cssvhunit: Boolean
   
-  var cssvmaxunit: Boolean = js.native
+  var cssvmaxunit: Boolean
   
-  var cssvminunit: Boolean = js.native
+  var cssvminunit: Boolean
   
-  var cssvwunit: Boolean = js.native
+  var cssvwunit: Boolean
   
-  var cubicbezierrange: Boolean = js.native
+  var cubicbezierrange: Boolean
   
-  var customelements: Boolean = js.native
+  var customelements: Boolean
   
-  var customevent: Boolean = js.native
+  var customevent: Boolean
   
-  var customprotocolhandler: Boolean = js.native
+  var customprotocolhandler: Boolean
   
-  var dart: Boolean = js.native
+  var dart: Boolean
   
-  var datachannel: Boolean = js.native
+  var datachannel: Boolean
   
-  var datalistelem: Boolean = js.native
+  var datalistelem: Boolean
   
-  var dataset: Boolean = js.native
+  var dataset: Boolean
   
-  var datauri: `false` | DatauriBoolean = js.native
+  var datauri: `false` | DatauriBoolean
   
-  var dataview: Boolean = js.native
+  var dataview: Boolean
   
-  var dataworkers: Boolean = js.native
+  var dataworkers: Boolean
   
-  var details: Boolean = js.native
+  var details: Boolean
   
-  var devicemotion: Boolean = js.native
+  var devicemotion: Boolean
   
-  var deviceorientation: Boolean = js.native
+  var deviceorientation: Boolean
   
-  var directory: Boolean = js.native
+  var directory: Boolean
   
-  var `display-runin`: Boolean = js.native
+  var `display-runin`: Boolean
   
-  var `display-table`: Boolean = js.native
+  var `display-table`: Boolean
   
-  var displayrunin: Boolean = js.native
+  var displayrunin: Boolean
   
-  var displaytable: Boolean = js.native
+  var displaytable: Boolean
   
-  var documentfragment: Boolean = js.native
+  var documentfragment: Boolean
   
-  var ellipsis: Boolean = js.native
+  var ellipsis: Boolean
   
-  var emoji: Boolean = js.native
+  var emoji: Boolean
   
-  var es5: Boolean = js.native
+  var es5: Boolean
   
-  var es5array: Boolean = js.native
+  var es5array: Boolean
   
-  var es5date: Boolean = js.native
+  var es5date: Boolean
   
-  var es5function: Boolean = js.native
+  var es5function: Boolean
   
-  var es5object: Boolean = js.native
+  var es5object: Boolean
   
-  var es5string: Boolean = js.native
+  var es5string: Boolean
   
-  var es5syntax: Boolean = js.native
+  var es5syntax: Boolean
   
-  var es5undefined: Boolean = js.native
+  var es5undefined: Boolean
   
-  var es6array: Boolean = js.native
+  var es6array: Boolean
   
-  var es6collections: Boolean = js.native
+  var es6collections: Boolean
   
-  var es6math: Boolean = js.native
+  var es6math: Boolean
   
-  var es6number: Boolean = js.native
+  var es6number: Boolean
   
-  var es6object: Boolean = js.native
+  var es6object: Boolean
   
-  var es6string: Boolean = js.native
+  var es6string: Boolean
   
-  var eventlistener: Boolean = js.native
+  var eventlistener: Boolean
   
-  var eventsource: Boolean = js.native
+  var eventsource: Boolean
   
-  var exiforientation: Boolean = js.native
+  var exiforientation: Boolean
   
-  var fetch: Boolean = js.native
+  var fetch: Boolean
   
-  var fileinput: Boolean = js.native
+  var fileinput: Boolean
   
-  var fileinputdirectory: Boolean = js.native
+  var fileinputdirectory: Boolean
   
-  var filereader: Boolean = js.native
+  var filereader: Boolean
   
-  var filesystem: Boolean = js.native
+  var filesystem: Boolean
   
-  var flash: `false` | FlashBoolean = js.native
+  var flash: `false` | FlashBoolean
   
-  var flexbox: Boolean = js.native
+  var flexbox: Boolean
   
-  var flexboxlegacy: Boolean = js.native
+  var flexboxlegacy: Boolean
   
-  var flexboxtweener: Boolean = js.native
+  var flexboxtweener: Boolean
   
-  var flexwrap: Boolean = js.native
+  var flexwrap: Boolean
   
-  var fontface: Boolean = js.native
+  var fontface: Boolean
   
-  var forcetouch: Boolean = js.native
+  var forcetouch: Boolean
   
-  var formattribute: Boolean = js.native
+  var formattribute: Boolean
   
-  var formvalidation: Boolean = js.native
+  var formvalidation: Boolean
   
-  var framed: Boolean = js.native
+  var framed: Boolean
   
-  var fullscreen: Boolean = js.native
+  var fullscreen: Boolean
   
-  var gamepads: Boolean = js.native
+  var gamepads: Boolean
   
-  var generatedcontent: Boolean = js.native
+  var generatedcontent: Boolean
   
-  var generators: Boolean = js.native
+  var generators: Boolean
   
-  var geolocation: Boolean = js.native
+  var geolocation: Boolean
   
-  var getrandomvalues: Boolean = js.native
+  var getrandomvalues: Boolean
   
-  var getusermedia: Boolean = js.native
+  var getusermedia: Boolean
   
-  var hairline: Boolean = js.native
+  var hairline: Boolean
   
-  var hashchange: Boolean = js.native
+  var hashchange: Boolean
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var hiddenscroll: Boolean = js.native
+  var hiddenscroll: Boolean
   
-  var history: Boolean = js.native
+  var history: Boolean
   
-  var hovermq: Boolean = js.native
+  var hovermq: Boolean
   
-  var hsla: Boolean = js.native
+  var hsla: Boolean
   
-  var htmlimports: Boolean = js.native
+  var htmlimports: Boolean
   
-  var ie8compat: Boolean = js.native
+  var ie8compat: Boolean
   
-  var imgcrossorigin: Boolean = js.native
+  var imgcrossorigin: Boolean
   
-  var indexeddb: `false` | IndexeddbBoolean = js.native
+  var indexeddb: `false` | IndexeddbBoolean
   
-  var indexeddbblob: Boolean = js.native
+  var indexeddbblob: Boolean
   
-  var inlinesvg: Boolean = js.native
+  var inlinesvg: Boolean
   
-  var input: InputBoolean = js.native
+  var input: InputBoolean
   
-  var `input-formaction`: Boolean = js.native
+  var `input-formaction`: Boolean
   
-  var `input-formenctype`: Boolean = js.native
+  var `input-formenctype`: Boolean
   
-  var `input-formtarget`: Boolean = js.native
+  var `input-formtarget`: Boolean
   
-  var inputformaction: Boolean = js.native
+  var inputformaction: Boolean
   
-  var inputformenctype: Boolean = js.native
+  var inputformenctype: Boolean
   
-  var inputformmethod: Boolean = js.native
+  var inputformmethod: Boolean
   
-  var inputformtarget: Boolean = js.native
+  var inputformtarget: Boolean
   
-  var inputsearchevent: Boolean = js.native
+  var inputsearchevent: Boolean
   
-  var inputtypes: InputTypesBoolean = js.native
+  var inputtypes: InputTypesBoolean
   
-  var intl: Boolean = js.native
+  var intl: Boolean
   
-  var jpeg2000: Boolean = js.native
+  var jpeg2000: Boolean
   
-  var jpegxr: Boolean = js.native
+  var jpegxr: Boolean
   
-  var json: Boolean = js.native
+  var json: Boolean
   
-  var lastchild: Boolean = js.native
+  var lastchild: Boolean
   
-  var ligatures: Boolean = js.native
+  var ligatures: Boolean
   
-  var localizednumber: Boolean = js.native
+  var localizednumber: Boolean
   
-  var localstorage: Boolean = js.native
+  var localstorage: Boolean
   
-  var lowbandwidth: Boolean = js.native
+  var lowbandwidth: Boolean
   
-  var lowbattery: Boolean = js.native
+  var lowbattery: Boolean
   
-  var matchmedia: Boolean = js.native
+  var matchmedia: Boolean
   
-  var mathml: Boolean = js.native
+  var mathml: Boolean
   
-  var mediaqueries: Boolean = js.native
+  var mediaqueries: Boolean
   
-  var messagechannel: Boolean = js.native
+  var messagechannel: Boolean
   
-  var meter: Boolean = js.native
+  var meter: Boolean
   
-  var microdata: Boolean = js.native
+  var microdata: Boolean
   
-  var multiplebgs: Boolean = js.native
+  var multiplebgs: Boolean
   
-  var mutationobserver: Boolean = js.native
+  var mutationobserver: Boolean
   
-  var notification: Boolean = js.native
+  var notification: Boolean
   
-  var nthchild: Boolean = js.native
+  var nthchild: Boolean
   
-  var `object-fit`: Boolean = js.native
+  var `object-fit`: Boolean
   
-  var objectfit: Boolean = js.native
+  var objectfit: Boolean
   
-  var olreversed: Boolean = js.native
+  var olreversed: Boolean
   
-  var oninput: Boolean = js.native
+  var oninput: Boolean
   
-  var opacity: Boolean = js.native
+  var opacity: Boolean
   
-  var outputelem: Boolean = js.native
+  var outputelem: Boolean
   
-  var overflowscrolling: Boolean = js.native
+  var overflowscrolling: Boolean
   
-  var pagevisibility: Boolean = js.native
+  var pagevisibility: Boolean
   
-  var passiveeventlisteners: Boolean = js.native
+  var passiveeventlisteners: Boolean
   
-  var peerconnection: Boolean = js.native
+  var peerconnection: Boolean
   
-  var performance: Boolean = js.native
+  var performance: Boolean
   
-  var picture: Boolean = js.native
+  var picture: Boolean
   
-  var placeholder: Boolean = js.native
+  var placeholder: Boolean
   
-  var pointerevents: Boolean = js.native
+  var pointerevents: Boolean
   
-  var pointerlock: Boolean = js.native
+  var pointerlock: Boolean
   
-  var pointermq: Boolean = js.native
+  var pointermq: Boolean
   
-  var postmessage: Boolean = js.native
+  var postmessage: Boolean
   
-  var preserve3d: Boolean = js.native
+  var preserve3d: Boolean
   
-  var progressbar: Boolean = js.native
+  var progressbar: Boolean
   
-  var promises: Boolean = js.native
+  var promises: Boolean
   
-  var proximity: Boolean = js.native
+  var proximity: Boolean
   
-  var queryselector: Boolean = js.native
+  var queryselector: Boolean
   
-  var quotamanagement: Boolean = js.native
+  var quotamanagement: Boolean
   
-  var raf: Boolean = js.native
+  var raf: Boolean
   
-  var regions: Boolean = js.native
+  var regions: Boolean
   
-  var requestanimationframe: Boolean = js.native
+  var requestanimationframe: Boolean
   
-  var requestautocomplete: Boolean = js.native
+  var requestautocomplete: Boolean
   
-  var rgba: Boolean = js.native
+  var rgba: Boolean
   
-  var ruby: Boolean = js.native
+  var ruby: Boolean
   
-  var sandbox: Boolean = js.native
+  var sandbox: Boolean
   
-  var scriptasync: Boolean = js.native
+  var scriptasync: Boolean
   
-  var scriptdefer: Boolean = js.native
+  var scriptdefer: Boolean
   
-  var scrollsnappoints: Boolean = js.native
+  var scrollsnappoints: Boolean
   
-  var seamless: Boolean = js.native
+  var seamless: Boolean
   
-  var search: Boolean = js.native
+  var search: Boolean
   
-  var serviceworker: Boolean = js.native
+  var serviceworker: Boolean
   
-  var sessionstorage: Boolean = js.native
+  var sessionstorage: Boolean
   
-  var shapes: Boolean = js.native
+  var shapes: Boolean
   
-  var sharedworkers: Boolean = js.native
+  var sharedworkers: Boolean
   
-  var siblinggeneral: Boolean = js.native
+  var siblinggeneral: Boolean
   
-  var sizes: Boolean = js.native
+  var sizes: Boolean
   
-  var smil: Boolean = js.native
+  var smil: Boolean
   
-  var softhyphens: Boolean = js.native
+  var softhyphens: Boolean
   
-  var softhyphensfind: Boolean = js.native
+  var softhyphensfind: Boolean
   
-  var speechrecognition: Boolean = js.native
+  var speechrecognition: Boolean
   
-  var speechsynthesis: Boolean = js.native
+  var speechsynthesis: Boolean
   
-  var srcdoc: Boolean = js.native
+  var srcdoc: Boolean
   
-  var srcset: Boolean = js.native
+  var srcset: Boolean
   
-  var strictmode: Boolean = js.native
+  var strictmode: Boolean
   
-  var stylescoped: Boolean = js.native
+  var stylescoped: Boolean
   
-  var subpixelfont: Boolean = js.native
+  var subpixelfont: Boolean
   
-  var supports: Boolean = js.native
+  var supports: Boolean
   
-  var svg: Boolean = js.native
+  var svg: Boolean
   
-  var svgasimg: Boolean = js.native
+  var svgasimg: Boolean
   
-  var svgclippaths: Boolean = js.native
+  var svgclippaths: Boolean
   
-  var svgfilters: Boolean = js.native
+  var svgfilters: Boolean
   
-  var svgforeignobject: Boolean = js.native
+  var svgforeignobject: Boolean
   
-  var target: Boolean = js.native
+  var target: Boolean
   
-  var template: Boolean = js.native
+  var template: Boolean
   
-  var templatestrings: Boolean = js.native
+  var templatestrings: Boolean
   
-  var textalignlast: Boolean = js.native
+  var textalignlast: Boolean
   
-  var textareamaxlength: Boolean = js.native
+  var textareamaxlength: Boolean
   
-  var textshadow: Boolean = js.native
+  var textshadow: Boolean
   
-  var texttrackapi: Boolean = js.native
+  var texttrackapi: Boolean
   
-  var time: Boolean = js.native
+  var time: Boolean
   
-  var todataurljpeg: Boolean = js.native
+  var todataurljpeg: Boolean
   
-  var todataurlpng: Boolean = js.native
+  var todataurlpng: Boolean
   
-  var todataurlwebp: Boolean = js.native
+  var todataurlwebp: Boolean
   
-  var touchevents: Boolean = js.native
+  var touchevents: Boolean
   
-  var track: Boolean = js.native
+  var track: Boolean
   
-  var transferables: Boolean = js.native
+  var transferables: Boolean
   
-  var typedarrays: Boolean = js.native
+  var typedarrays: Boolean
   
-  var unicode: Boolean = js.native
+  var unicode: Boolean
   
-  var unicoderange: Boolean = js.native
+  var unicoderange: Boolean
   
-  var unknownelements: Boolean = js.native
+  var unknownelements: Boolean
   
-  var urlparser: Boolean = js.native
+  var urlparser: Boolean
   
-  var urlsearchparams: Boolean = js.native
+  var urlsearchparams: Boolean
   
-  var userdata: Boolean = js.native
+  var userdata: Boolean
   
-  var userselect: Boolean = js.native
+  var userselect: Boolean
   
-  var vibrate: Boolean = js.native
+  var vibrate: Boolean
   
-  var video: VideoBoolean = js.native
+  var video: VideoBoolean
   
-  var videoautoplay: Boolean = js.native
+  var videoautoplay: Boolean
   
-  var videocrossorigin: Boolean = js.native
+  var videocrossorigin: Boolean
   
-  var videoloop: Boolean = js.native
+  var videoloop: Boolean
   
-  var videopreload: Boolean = js.native
+  var videopreload: Boolean
   
-  var vml: Boolean = js.native
+  var vml: Boolean
   
-  var webanimations: Boolean = js.native
+  var webanimations: Boolean
   
-  var webaudio: Boolean = js.native
+  var webaudio: Boolean
   
-  var webgl: Boolean = js.native
+  var webgl: Boolean
   
-  var webglextensions: `false` | WebglextensionsBoolean = js.native
+  var webglextensions: `false` | WebglextensionsBoolean
   
-  var webintents: Boolean = js.native
+  var webintents: Boolean
   
-  var webp: `false` | WebpBoolean = js.native
+  var webp: `false` | WebpBoolean
   
-  var `webp-lossless`: Boolean = js.native
+  var `webp-lossless`: Boolean
   
-  var webpalpha: Boolean = js.native
+  var webpalpha: Boolean
   
-  var webpanimation: Boolean = js.native
+  var webpanimation: Boolean
   
-  var webplossless: Boolean = js.native
+  var webplossless: Boolean
   
-  var websockets: Boolean = js.native
+  var websockets: Boolean
   
-  var websocketsbinary: Boolean = js.native
+  var websocketsbinary: Boolean
   
-  var websqldatabase: Boolean = js.native
+  var websqldatabase: Boolean
   
-  var webworkers: Boolean = js.native
+  var webworkers: Boolean
   
-  var willchange: Boolean = js.native
+  var willchange: Boolean
   
-  var wrapflow: Boolean = js.native
+  var wrapflow: Boolean
   
-  var xdomainrequest: Boolean = js.native
+  var xdomainrequest: Boolean
   
-  var xhr2: Boolean = js.native
+  var xhr2: Boolean
   
-  var xhrresponsetype: Boolean = js.native
+  var xhrresponsetype: Boolean
   
-  var xhrresponsetypearraybuffer: Boolean = js.native
+  var xhrresponsetypearraybuffer: Boolean
   
-  var xhrresponsetypeblob: Boolean = js.native
+  var xhrresponsetypeblob: Boolean
   
-  var xhrresponsetypedocument: Boolean = js.native
+  var xhrresponsetypedocument: Boolean
   
-  var xhrresponsetypejson: Boolean = js.native
+  var xhrresponsetypejson: Boolean
   
-  var xhrresponsetypetext: Boolean = js.native
+  var xhrresponsetypetext: Boolean
 }
 object FeatureDetects {
   

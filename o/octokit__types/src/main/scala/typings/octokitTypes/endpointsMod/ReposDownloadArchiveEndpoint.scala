@@ -2,19 +2,17 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposDownloadArchiveEndpoint extends StObject {
   
-  var archive_format: String = js.native
+  var archive_format: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposDownloadArchiveEndpoint {
   

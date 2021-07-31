@@ -23,10 +23,13 @@ import typings.std.Node
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("google-maps-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("google-maps-react", "Circle")
   @js.native
@@ -40,18 +43,22 @@ object mod {
     def this(props: js.Any, context: js.Any) = this()
   }
   
-  @JSImport("google-maps-react", "GoogleApiWrapper")
-  @js.native
+  @scala.inline
   def GoogleApiWrapper(opts: GoogleApiOptionsFunc): js.Function1[
     /* ctor */ ComponentType[IProvidedProps], 
     ComponentType[Omit[IProvidedProps, IProvidedProps]]
-  ] = js.native
-  @JSImport("google-maps-react", "GoogleApiWrapper")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("GoogleApiWrapper")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ctor */ ComponentType[IProvidedProps], 
+    ComponentType[Omit[IProvidedProps, IProvidedProps]]
+  ]]
+  @scala.inline
   def GoogleApiWrapper(opts: IGoogleApiOptions): js.Function1[
     /* ctor */ ComponentType[IProvidedProps], 
     ComponentType[Omit[IProvidedProps, IProvidedProps]]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("GoogleApiWrapper")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ctor */ ComponentType[IProvidedProps], 
+    ComponentType[Omit[IProvidedProps, IProvidedProps]]
+  ]]
   
   @JSImport("google-maps-react", "InfoWindow")
   @js.native
@@ -113,10 +120,9 @@ object mod {
     def this(props: js.Any, context: js.Any) = this()
   }
   
-  @js.native
   trait GoogleAPI extends StObject {
     
-    val maps: Typeofmaps = js.native
+    val maps: Typeofmaps
   }
   object GoogleAPI {
     
@@ -136,24 +142,23 @@ object mod {
   
   type GoogleApiOptionsFunc = js.Function1[/* props */ js.Any, IGoogleApiOptions]
   
-  @js.native
   trait IGoogleApiOptions extends StObject {
     
-    var LoadingContainer: js.UndefOr[js.Any] = js.native
+    var LoadingContainer: js.UndefOr[js.Any] = js.undefined
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var client: js.UndefOr[String] = js.native
+    var client: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var libraries: js.UndefOr[js.Array[String]] = js.native
+    var libraries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object IGoogleApiOptions {
     
@@ -217,30 +222,29 @@ object mod {
   }
   
   /* Inlined parent std.Partial<googlemaps.google.maps.InfoWindowOptions> */
-  @js.native
   trait IInfoWindowProps extends StObject {
     
-    var content: js.UndefOr[String | Node] = js.native
+    var content: js.UndefOr[String | Node] = js.undefined
     
-    var disableAutoPan: js.UndefOr[Boolean] = js.native
+    var disableAutoPan: js.UndefOr[Boolean] = js.undefined
     
-    var google: Typeofgoogle = js.native
+    var google: Typeofgoogle
     
-    var map: typings.googlemaps.google.maps.Map[Element] = js.native
+    var map: typings.googlemaps.google.maps.Map[Element]
     
-    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
-    var marker: typings.googlemaps.google.maps.Marker = js.native
+    var marker: typings.googlemaps.google.maps.Marker
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var pixelOffset: js.UndefOr[Size] = js.native
+    var pixelOffset: js.UndefOr[Size] = js.undefined
     
-    var position: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IInfoWindowProps {
     
@@ -316,67 +320,68 @@ object mod {
     }
   }
   
-  @js.native
-  trait IMapProps extends MapOptions {
+  trait IMapProps
+    extends StObject
+       with MapOptions {
     
-    var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.native
+    var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
     
-    var centerAroundCurrentLocation: js.UndefOr[Boolean] = js.native
+    var centerAroundCurrentLocation: js.UndefOr[Boolean] = js.undefined
     
     @JSName("center")
-    var center_IMapProps: js.UndefOr[LatLngLiteral] = js.native
+    var center_IMapProps: js.UndefOr[LatLngLiteral] = js.undefined
     
-    var containerStyle: js.UndefOr[Style] = js.native
+    var containerStyle: js.UndefOr[Style] = js.undefined
     
-    var google: GoogleAPI = js.native
+    var google: GoogleAPI
     
-    var initialCenter: js.UndefOr[LatLngLiteral] = js.native
+    var initialCenter: js.UndefOr[LatLngLiteral] = js.undefined
     
-    var loaded: js.UndefOr[Boolean] = js.native
+    var loaded: js.UndefOr[Boolean] = js.undefined
     
-    var onBoundsChanged: js.UndefOr[mapEventHandler] = js.native
+    var onBoundsChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onCenterChanged: js.UndefOr[mapEventHandler] = js.native
+    var onCenterChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onClick: js.UndefOr[mapEventHandler] = js.native
+    var onClick: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onDblclick: js.UndefOr[mapEventHandler] = js.native
+    var onDblclick: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onDragend: js.UndefOr[mapEventHandler] = js.native
+    var onDragend: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onDragstart: js.UndefOr[mapEventHandler] = js.native
+    var onDragstart: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onHeadingChange: js.UndefOr[mapEventHandler] = js.native
+    var onHeadingChange: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onIdle: js.UndefOr[mapEventHandler] = js.native
+    var onIdle: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onMaptypeidChanged: js.UndefOr[mapEventHandler] = js.native
+    var onMaptypeidChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onMousemove: js.UndefOr[mapEventHandler] = js.native
+    var onMousemove: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onMouseout: js.UndefOr[mapEventHandler] = js.native
+    var onMouseout: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onMouseover: js.UndefOr[mapEventHandler] = js.native
+    var onMouseover: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onProjectionChanged: js.UndefOr[mapEventHandler] = js.native
+    var onProjectionChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onReady: js.UndefOr[mapEventHandler] = js.native
+    var onReady: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onRecenter: js.UndefOr[mapEventHandler] = js.native
+    var onRecenter: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onResize: js.UndefOr[mapEventHandler] = js.native
+    var onResize: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onRightclick: js.UndefOr[mapEventHandler] = js.native
+    var onRightclick: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onTilesloaded: js.UndefOr[mapEventHandler] = js.native
+    var onTilesloaded: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onTiltChanged: js.UndefOr[mapEventHandler] = js.native
+    var onTiltChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var onZoomChanged: js.UndefOr[mapEventHandler] = js.native
+    var onZoomChanged: js.UndefOr[mapEventHandler] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object IMapProps {
     
@@ -603,46 +608,45 @@ object mod {
   }
   
   /* Inlined parent std.Partial<googlemaps.google.maps.MarkerOptions> */
-  @js.native
   trait IMarkerProps extends StObject {
     
-    var anchorPoint: js.UndefOr[Point] = js.native
+    var anchorPoint: js.UndefOr[Point] = js.undefined
     
-    var animation: js.UndefOr[Animation] = js.native
+    var animation: js.UndefOr[Animation] = js.undefined
     
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
-    var crossOnDrag: js.UndefOr[Boolean] = js.native
+    var crossOnDrag: js.UndefOr[Boolean] = js.undefined
     
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String | Icon | Symbol] = js.native
+    var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
     
-    var label: js.UndefOr[String | MarkerLabel] = js.native
+    var label: js.UndefOr[String | MarkerLabel] = js.undefined
     
-    var map: js.UndefOr[typings.googlemaps.google.maps.Map[Element] | StreetViewPanorama] = js.native
+    var map: js.UndefOr[typings.googlemaps.google.maps.Map[Element] | StreetViewPanorama] = js.undefined
     
-    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var mapCenter: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
-    var onClick: js.UndefOr[markerEventHandler] = js.native
+    var onClick: js.UndefOr[markerEventHandler] = js.undefined
     
-    var onMouseover: js.UndefOr[markerEventHandler] = js.native
+    var onMouseover: js.UndefOr[markerEventHandler] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var optimized: js.UndefOr[Boolean] = js.native
+    var optimized: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[LatLng | LatLngLiteral] = js.native
+    var position: js.UndefOr[LatLng | LatLngLiteral] = js.undefined
     
-    var shape: js.UndefOr[MarkerShape] = js.native
+    var shape: js.UndefOr[MarkerShape] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IMarkerProps {
     
@@ -775,12 +779,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IProvidedProps extends StObject {
     
-    var google: GoogleAPI = js.native
+    var google: GoogleAPI
     
-    var loaded: js.UndefOr[Boolean] = js.native
+    var loaded: js.UndefOr[Boolean] = js.undefined
   }
   object IProvidedProps {
     

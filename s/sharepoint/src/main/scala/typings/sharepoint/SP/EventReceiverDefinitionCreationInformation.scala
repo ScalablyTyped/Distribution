@@ -2,39 +2,39 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventReceiverDefinitionCreationInformation extends ClientValueObject {
+trait EventReceiverDefinitionCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_eventType(): EventReceiverType = js.native
+  def get_eventType(): EventReceiverType
   
-  def get_receiverAssembly(): String = js.native
+  def get_receiverAssembly(): String
   
-  def get_receiverClass(): String = js.native
+  def get_receiverClass(): String
   
-  def get_receiverName(): String = js.native
+  def get_receiverName(): String
   
-  def get_receiverUrl(): String = js.native
+  def get_receiverUrl(): String
   
-  def get_sequenceNumber(): Double = js.native
+  def get_sequenceNumber(): Double
   
-  def get_synchronization(): EventReceiverSynchronization = js.native
+  def get_synchronization(): EventReceiverSynchronization
   
-  def set_eventType(value: EventReceiverType): Unit = js.native
+  def set_eventType(value: EventReceiverType): Unit
   
-  def set_receiverAssembly(value: String): Unit = js.native
+  def set_receiverAssembly(value: String): Unit
   
-  def set_receiverClass(value: String): Unit = js.native
+  def set_receiverClass(value: String): Unit
   
-  def set_receiverName(value: String): Unit = js.native
+  def set_receiverName(value: String): Unit
   
-  def set_receiverUrl(value: String): Unit = js.native
+  def set_receiverUrl(value: String): Unit
   
-  def set_sequenceNumber(value: Double): Unit = js.native
+  def set_sequenceNumber(value: Double): Unit
   
-  def set_synchronization(value: EventReceiverSynchronization): Unit = js.native
+  def set_synchronization(value: EventReceiverSynchronization): Unit
 }
 object EventReceiverDefinitionCreationInformation {
   

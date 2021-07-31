@@ -4,24 +4,24 @@ import typings.voximplantWebsdk.mod.ChatRoomParticipant
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when info about banned chat room participants received
   */
-@js.native
-trait ChatRoomBanList extends VoxImplantIMEvent {
+trait ChatRoomBanList
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * Participants list
     */
-  var participants: js.Array[ChatRoomParticipant] = js.native
+  var participants: js.Array[ChatRoomParticipant]
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomBanList {
   

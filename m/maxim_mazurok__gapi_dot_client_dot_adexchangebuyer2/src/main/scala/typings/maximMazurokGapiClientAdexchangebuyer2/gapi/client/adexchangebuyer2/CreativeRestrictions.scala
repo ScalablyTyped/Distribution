@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativeRestrictions extends StObject {
   
   /** The format of the environment that the creatives will be displayed in. */
-  var creativeFormat: js.UndefOr[String] = js.native
+  var creativeFormat: js.UndefOr[String] = js.undefined
   
-  var creativeSpecifications: js.UndefOr[js.Array[CreativeSpecification]] = js.native
+  var creativeSpecifications: js.UndefOr[js.Array[CreativeSpecification]] = js.undefined
   
   /** Skippable video ads allow viewers to skip ads after 5 seconds. */
-  var skippableAdType: js.UndefOr[String] = js.native
+  var skippableAdType: js.UndefOr[String] = js.undefined
 }
 object CreativeRestrictions {
   

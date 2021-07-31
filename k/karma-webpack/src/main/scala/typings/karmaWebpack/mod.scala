@@ -6,18 +6,16 @@ import typings.webpackDevMiddleware.mod.Reporter
 import typings.webpackDevMiddleware.mod.ReporterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any = js.native
+    var webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Configuration */ js.Any
     
-    var webpackMiddleware: KarmaWebpackMiddlewareOptions = js.native
+    var webpackMiddleware: KarmaWebpackMiddlewareOptions
   }
   object ConfigOptions {
     
@@ -46,40 +44,39 @@ object mod {
   // Note: karma-webpack will set publicPath for us, so it is optional here.
   // Unfortuantely, Typescript doesn't let you overload properties, so
   // the entire definition is duplicated here.
-  @js.native
   trait KarmaWebpackMiddlewareOptions extends StObject {
     
-    var error: js.UndefOr[Logger] = js.native
+    var error: js.UndefOr[Logger] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var log: js.UndefOr[Logger] = js.native
+    var log: js.UndefOr[Logger] = js.undefined
     
-    var noInfo: js.UndefOr[Boolean] = js.native
+    var noInfo: js.UndefOr[Boolean] = js.undefined
     
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var reporter: js.UndefOr[Reporter | Null] = js.native
+    var reporter: js.UndefOr[Reporter | Null] = js.undefined
     
-    var serverSideRender: js.UndefOr[Boolean] = js.native
+    var serverSideRender: js.UndefOr[Boolean] = js.undefined
     
     var stats: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.Stats */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var warn: js.UndefOr[Logger] = js.native
+    var warn: js.UndefOr[Logger] = js.undefined
     
     var watchOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Webpack.Options.WatchOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object KarmaWebpackMiddlewareOptions {
     
@@ -93,7 +90,7 @@ object mod {
     implicit class KarmaWebpackMiddlewareOptionsMutableBuilder[Self <: KarmaWebpackMiddlewareOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setError(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+      def setError(value: Logger): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
@@ -123,7 +120,7 @@ object mod {
       def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
       @scala.inline
-      def setLog(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
@@ -170,7 +167,7 @@ object mod {
       def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
       @scala.inline
-      def setWarn(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction2(value))
+      def setWarn(value: Logger): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
@@ -185,5 +182,10 @@ object mod {
     }
   }
   
-  type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+  @js.native
+  trait Logger extends StObject {
+    
+    def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def apply(message: Unit, optionalParams: js.Any*): Unit = js.native
+  }
 }

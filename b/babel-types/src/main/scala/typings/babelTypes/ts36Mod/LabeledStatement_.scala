@@ -3,34 +3,26 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.LabeledStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabeledStatement_
-  extends Node
+  extends StObject
+     with Node
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var label: Identifier_ = js.native
+  var label: Identifier_
   
   @JSName("type")
-  var type_LabeledStatement_ : LabeledStatement = js.native
+  var type_LabeledStatement_ : LabeledStatement
 }
 object LabeledStatement_ {
   
   @scala.inline
-  def apply(
-    body: Statement,
-    end: Double,
-    label: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: LabeledStatement
-  ): LabeledStatement_ = {
+  def apply(body: Statement, end: Double, label: Identifier_, loc: SourceLocation, start: Double): LabeledStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LabeledStatement")
     __obj.asInstanceOf[LabeledStatement_]
   }
   

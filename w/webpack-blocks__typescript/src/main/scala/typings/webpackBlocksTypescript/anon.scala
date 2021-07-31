@@ -2,17 +2,15 @@ package typings.webpackBlocksTypescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Modules extends StObject {
     
-    var modules: js.UndefOr[Boolean] = js.native
+    var modules: js.UndefOr[Boolean] = js.undefined
     
-    var targets: js.UndefOr[String] = js.native
+    var targets: js.UndefOr[String] = js.undefined
   }
   object Modules {
     

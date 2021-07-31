@@ -21,21 +21,23 @@ import typings.appdmg.appdmgStrings.progress
 import typings.appdmg.appdmgStrings.skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): EventEmitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[EventEmitter]
+  @scala.inline
+  def apply(options: Options): EventEmitter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  
   @JSImport("appdmg", JSImport.Namespace)
   @js.native
-  def apply(): EventEmitter = js.native
-  @JSImport("appdmg", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): EventEmitter = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait EventEmitter
-    extends typings.node.eventsMod.global.NodeJS.EventEmitter {
+    extends StObject
+       with typings.node.eventsMod.global.NodeJS.EventEmitter {
     
     @JSName("on")
     def on_error(event: error, listener: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
@@ -45,14 +47,13 @@ object mod {
     def on_progress(event: progress, listener: js.Function1[/* info */ Progress, Unit]): this.type = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var basepath: String = js.native
+    var basepath: String
     
-    var specification: Specification = js.native
+    var specification: Specification
     
-    var target: String = js.native
+    var target: String
   }
   object Options {
     
@@ -76,18 +77,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var status: ok | skip | fail = js.native
+    var status: ok | skip | fail
     
-    var title: String = js.native
+    var title: String
     
-    var total: Double = js.native
+    var total: Double
     
-    var `type`: `step-begin` | `step-end` = js.native
+    var `type`: `step-begin` | `step-end`
   }
   object Progress {
     
@@ -124,26 +124,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Specification extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var `background-color`: js.UndefOr[String] = js.native
+    var `background-color`: js.UndefOr[String] = js.undefined
     
-    var `code-sign`: js.UndefOr[SpecificationCodeSign] = js.native
+    var `code-sign`: js.UndefOr[SpecificationCodeSign] = js.undefined
     
-    var contents: js.Array[SpecificationContents] = js.native
+    var contents: js.Array[SpecificationContents]
     
-    var format: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO = js.native
+    var format: UDRW | UDRO | UDCO | UDZO | UDBZ | ULFO
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var `icon-size`: js.UndefOr[Double] = js.native
+    var `icon-size`: js.UndefOr[Double] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var window: js.UndefOr[SpecificationWindow] = js.native
+    var window: js.UndefOr[SpecificationWindow] = js.undefined
   }
   object Specification {
     
@@ -210,12 +209,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SpecificationCodeSign extends StObject {
     
-    var identifier: js.UndefOr[String] = js.native
+    var identifier: js.UndefOr[String] = js.undefined
     
-    var `signing-identity`: String = js.native
+    var `signing-identity`: String
   }
   object SpecificationCodeSign {
     
@@ -240,18 +238,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SpecificationContents extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: link | file | position = js.native
+    var `type`: link | file | position
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object SpecificationContents {
     
@@ -285,18 +282,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SpecificationOptions extends StObject {
     
-    var app: String = js.native
+    var app: String
     
-    var background: String = js.native
+    var background: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var iconSize: Double = js.native
+    var iconSize: Double
     
-    var title: String = js.native
+    var title: String
   }
   object SpecificationOptions {
     
@@ -326,12 +322,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SpecificationWindow extends StObject {
     
-    var position: js.UndefOr[X] = js.native
+    var position: js.UndefOr[X] = js.undefined
     
-    var size: js.UndefOr[Height] = js.native
+    var size: js.UndefOr[Height] = js.undefined
   }
   object SpecificationWindow {
     

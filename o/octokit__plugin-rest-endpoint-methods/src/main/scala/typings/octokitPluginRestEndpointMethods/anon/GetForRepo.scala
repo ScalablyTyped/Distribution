@@ -2,17 +2,15 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetForRepo extends StObject {
   
-  var get: `757` = js.native
+  var get: `757`
   
-  var getAllCommonlyUsed: `758` = js.native
+  var getAllCommonlyUsed: `758`
   
-  var getForRepo: `759` = js.native
+  var getForRepo: `759`
 }
 object GetForRepo {
   

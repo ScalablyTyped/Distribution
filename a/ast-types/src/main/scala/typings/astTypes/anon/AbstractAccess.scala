@@ -22,55 +22,53 @@ import typings.astTypes.kindsMod.TypeAnnotationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractAccess extends StObject {
   
-  var `abstract`: js.UndefOr[Boolean | Null] = js.native
+  var `abstract`: js.UndefOr[Boolean | Null] = js.undefined
   
-  var access: js.UndefOr[public | `private` | `protected` | Null] = js.native
+  var access: js.UndefOr[public | `private` | `protected` | Null] = js.undefined
   
-  var accessibility: js.UndefOr[public | `private` | `protected` | Null] = js.native
+  var accessibility: js.UndefOr[public | `private` | `protected` | Null] = js.undefined
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var body: BlockStatementKind = js.native
+  var body: BlockStatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.native
+  var decorators: js.UndefOr[js.Array[DecoratorKind] | Null] = js.undefined
   
-  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.native
+  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.undefined
   
-  var expression: js.UndefOr[Boolean] = js.native
+  var expression: js.UndefOr[Boolean] = js.undefined
   
-  var generator: js.UndefOr[Boolean] = js.native
+  var generator: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[IdentifierKind | Null] = js.native
+  var id: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var key: PrivateNameKind = js.native
+  var key: PrivateNameKind
   
-  var kind: js.UndefOr[get | set | method | constructor] = js.native
+  var kind: js.UndefOr[get | set | method | constructor] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var optional: js.UndefOr[Boolean | Null] = js.native
+  var optional: js.UndefOr[Boolean | Null] = js.undefined
   
-  var params: js.Array[PatternKind] = js.native
+  var params: js.Array[PatternKind]
   
-  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.native
+  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.undefined
   
-  var rest: js.UndefOr[IdentifierKind | Null] = js.native
+  var rest: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.native
+  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.undefined
   
-  var static: js.UndefOr[Boolean | Null] = js.native
+  var static: js.UndefOr[Boolean | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object AbstractAccess {
   

@@ -2,19 +2,17 @@ package typings.fileEntryCache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hash extends StObject {
     
-    val hash: js.UndefOr[String] = js.native
+    val hash: js.UndefOr[String] = js.undefined
     
-    val mtime: js.UndefOr[Double] = js.native
+    val mtime: js.UndefOr[Double] = js.undefined
     
-    val size: js.UndefOr[Double] = js.native
+    val size: js.UndefOr[Double] = js.undefined
   }
   object Hash {
     

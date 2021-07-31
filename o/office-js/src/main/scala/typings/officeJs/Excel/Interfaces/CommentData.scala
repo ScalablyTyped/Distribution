@@ -7,11 +7,9 @@ import typings.officeJs.officeJsStrings.Plain
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `comment.toJSON()`. */
-@js.native
 trait CommentData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var authorEmail: js.UndefOr[String] = js.native
+  var authorEmail: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var authorName: js.UndefOr[String] = js.native
+  var authorName: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var contentType: js.UndefOr[ContentType | Plain | Mention] = js.native
+  var contentType: js.UndefOr[ContentType | Plain | Mention] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var creationDate: js.UndefOr[Date] = js.native
+  var creationDate: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var mentions: js.UndefOr[js.Array[CommentMention]] = js.native
+  var mentions: js.UndefOr[js.Array[CommentMention]] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var replies: js.UndefOr[js.Array[CommentReplyData]] = js.native
+  var replies: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var resolved: js.UndefOr[Boolean] = js.native
+  var resolved: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait CommentData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var richContent: js.UndefOr[String] = js.native
+  var richContent: js.UndefOr[String] = js.undefined
 }
 object CommentData {
   

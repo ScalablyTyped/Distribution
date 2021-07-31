@@ -2,19 +2,17 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueValue extends StObject {
   
-  var value: typings.vegaLite.channeldefMod.Value[Null] = js.native
+  var value: typings.vegaLite.channeldefMod.Value[Null]
 }
 object ValueValue {
   
   @scala.inline
   def apply(): ValueValue = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = null)
     __obj.asInstanceOf[ValueValue]
   }
   

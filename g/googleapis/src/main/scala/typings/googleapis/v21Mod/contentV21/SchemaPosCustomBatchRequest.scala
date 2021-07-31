@@ -2,16 +2,14 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPosCustomBatchRequest extends StObject {
   
   /**
     * The request entries to be processed in the batch.
     */
-  var entries: js.UndefOr[js.Array[SchemaPosCustomBatchRequestEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaPosCustomBatchRequestEntry]] = js.undefined
 }
 object SchemaPosCustomBatchRequest {
   

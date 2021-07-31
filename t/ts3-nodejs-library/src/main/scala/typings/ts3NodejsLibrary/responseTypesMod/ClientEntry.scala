@@ -3,71 +3,71 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientEntry extends ResponseEntry {
+trait ClientEntry
+  extends StObject
+     with ResponseEntry {
   
-  var cid: String = js.native
+  var cid: String
   
-  var clid: String = js.native
+  var clid: String
   
-  var clientAway: Double = js.native
+  var clientAway: Double
   
-  var clientAwayMessage: String = js.native
+  var clientAwayMessage: String
   
-  var clientBadges: String = js.native
+  var clientBadges: String
   
-  var clientChannelGroupId: String = js.native
+  var clientChannelGroupId: String
   
-  var clientChannelGroupInheritedChannelId: Double = js.native
+  var clientChannelGroupInheritedChannelId: Double
   
-  var clientCountry: js.UndefOr[String] = js.native
+  var clientCountry: js.UndefOr[String] = js.undefined
   
-  var clientCreated: Double = js.native
+  var clientCreated: Double
   
-  var clientDatabaseId: String = js.native
+  var clientDatabaseId: String
   
-  var clientEstimatedLocation: js.UndefOr[String] = js.native
+  var clientEstimatedLocation: js.UndefOr[String] = js.undefined
   
-  var clientFlagTalking: Boolean = js.native
+  var clientFlagTalking: Boolean
   
-  var clientIdleTime: Double = js.native
+  var clientIdleTime: Double
   
-  var clientInputHardware: Boolean = js.native
+  var clientInputHardware: Boolean
   
-  var clientInputMuted: Boolean = js.native
+  var clientInputMuted: Boolean
   
-  var clientIsChannelCommander: Double = js.native
+  var clientIsChannelCommander: Double
   
-  var clientIsPrioritySpeaker: Boolean = js.native
+  var clientIsPrioritySpeaker: Boolean
   
-  var clientIsRecording: Boolean = js.native
+  var clientIsRecording: Boolean
   
-  var clientIsTalker: Boolean = js.native
+  var clientIsTalker: Boolean
   
-  var clientLastconnected: Double = js.native
+  var clientLastconnected: Double
   
-  var clientNickname: String = js.native
+  var clientNickname: String
   
-  var clientOutputHardware: Boolean = js.native
+  var clientOutputHardware: Boolean
   
-  var clientOutputMuted: Boolean = js.native
+  var clientOutputMuted: Boolean
   
-  var clientPlatform: String = js.native
+  var clientPlatform: String
   
-  var clientServergroups: js.Array[String] = js.native
+  var clientServergroups: js.Array[String]
   
-  var clientTalkPower: Double = js.native
+  var clientTalkPower: Double
   
-  var clientType: Double = js.native
+  var clientType: Double
   
-  var clientUniqueIdentifier: String = js.native
+  var clientUniqueIdentifier: String
   
-  var clientVersion: String = js.native
+  var clientVersion: String
   
-  var connectionClientIp: String = js.native
+  var connectionClientIp: String
 }
 object ClientEntry {
   

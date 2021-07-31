@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents settings for a FocusControl object. */
-@js.native
 trait FocusSettings extends StObject {
   
   /** Gets or sets a value indicating the auto focus range setting. */
-  var autoFocusRange: AutoFocusRange = js.native
+  var autoFocusRange: AutoFocusRange
   
   /** Gets or sets a value that indicates to the driver if it should disable determining a focus position when the focus search fails. */
-  var disableDriverFallback: Boolean = js.native
+  var disableDriverFallback: Boolean
   
   /** Gets or sets a value indicating the manual focus distance setting. */
-  var distance: ManualFocusDistance = js.native
+  var distance: ManualFocusDistance
   
   /** Gets or sets a value indicating the focus mode setting. */
-  var mode: FocusMode = js.native
+  var mode: FocusMode
   
   /** Gets or sets the focus value setting. */
-  var value: Double = js.native
+  var value: Double
   
   /** Gets or sets a value indicating whether the capture device should wait for focus before capturing. */
-  var waitForFocus: Boolean = js.native
+  var waitForFocus: Boolean
 }
 object FocusSettings {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.electron.Electron.Clipboard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,9 @@ object mod extends Shortcut {
   val ^ : ClipboardExtended = js.native
   
   @js.native
-  trait ClipboardExtended extends Clipboard {
+  trait ClipboardExtended
+    extends StObject
+       with Clipboard {
     
     def off(event: String): Unit = js.native
     def off(event: String, listener: js.Function0[Unit]): Unit = js.native

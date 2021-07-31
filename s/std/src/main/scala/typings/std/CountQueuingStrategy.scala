@@ -3,19 +3,18 @@ package typings.std
 import typings.std.stdNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Streams API interface provides a built-in byte length queuing strategy that can be used when constructing streams. */
-@js.native
 trait CountQueuingStrategy
-  extends QueuingStrategy[js.Any] {
+  extends StObject
+     with QueuingStrategy[js.Any] {
   
   @JSName("highWaterMark")
-  var highWaterMark_CountQueuingStrategy: Double = js.native
+  var highWaterMark_CountQueuingStrategy: Double
   
   @JSName("size")
-  def size_MCountQueuingStrategy(chunk: js.Any): `1` = js.native
+  def size_MCountQueuingStrategy(chunk: js.Any): `1`
 }
 object CountQueuingStrategy {
   

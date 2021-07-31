@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcInterfaceAttachment extends StObject {
   
   /**
     * The name of the VPC interface to use for this output.
     */
-  var VpcInterfaceName: js.UndefOr[string] = js.native
+  var VpcInterfaceName: js.UndefOr[string] = js.undefined
 }
 object VpcInterfaceAttachment {
   

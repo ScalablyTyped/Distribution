@@ -7,17 +7,15 @@ import typings.googleapis.anon.Self
 import typings.googleapis.anon.TitleUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaEvent extends StObject {
   
   /**
     * Whether anyone can invite themselves to the event (currently works for
     * Google+ events only). Optional. The default is False.
     */
-  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.native
+  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
   
   /**
     * File attachments for the event. Currently only Google Drive attachments
@@ -25,13 +23,13 @@ trait SchemaEvent extends StObject {
     * request parameter should be set to true. There can be at most 25
     * attachments per event,
     */
-  var attachments: js.UndefOr[js.Array[SchemaEventAttachment]] = js.native
+  var attachments: js.UndefOr[js.Array[SchemaEventAttachment]] = js.undefined
   
   /**
     * The attendees of the event. See the Events with attendees guide for more
     * information on scheduling events with other calendar users.
     */
-  var attendees: js.UndefOr[js.Array[SchemaEventAttendee]] = js.native
+  var attendees: js.UndefOr[js.Array[SchemaEventAttendee]] = js.undefined
   
   /**
     * Whether attendees may have been omitted from the event&#39;s
@@ -40,13 +38,13 @@ trait SchemaEvent extends StObject {
     * an event, this can be used to only update the participant&#39;s response.
     * Optional. The default is False.
     */
-  var attendeesOmitted: js.UndefOr[Boolean] = js.native
+  var attendeesOmitted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color of the event. This is an ID referring to an entry in the event
     * section of the colors definition (see the  colors endpoint). Optional.
     */
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
   /**
     * The conference-related information, such as details of a Hangouts Meet
@@ -54,79 +52,79 @@ trait SchemaEvent extends StObject {
     * To persist your changes, remember to set the conferenceDataVersion
     * request parameter to 1 for all event modification requests.
     */
-  var conferenceData: js.UndefOr[SchemaConferenceData] = js.native
+  var conferenceData: js.UndefOr[SchemaConferenceData] = js.undefined
   
   /**
     * Creation time of the event (as a RFC3339 timestamp). Read-only.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The creator of the event. Read-only.
     */
-  var creator: js.UndefOr[Self] = js.native
+  var creator: js.UndefOr[Self] = js.undefined
   
   /**
     * Description of the event. Optional.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The (exclusive) end time of the event. For a recurring event, this is the
     * end time of the first instance.
     */
-  var end: js.UndefOr[SchemaEventDateTime] = js.native
+  var end: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
     * Whether the end time is actually unspecified. An end time is still
     * provided for compatibility reasons, even if this attribute is set to
     * True. The default is False.
     */
-  var endTimeUnspecified: js.UndefOr[Boolean] = js.native
+  var endTimeUnspecified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Extended properties of the event.
     */
-  var extendedProperties: js.UndefOr[Private] = js.native
+  var extendedProperties: js.UndefOr[Private] = js.undefined
   
   /**
     * A gadget that extends this event.
     */
-  var gadget: js.UndefOr[Display] = js.native
+  var gadget: js.UndefOr[Display] = js.undefined
   
   /**
     * Whether attendees other than the organizer can invite others to the
     * event. Optional. The default is True.
     */
-  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native
+  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether attendees other than the organizer can modify the event.
     * Optional. The default is False.
     */
-  var guestsCanModify: js.UndefOr[Boolean] = js.native
+  var guestsCanModify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether attendees other than the organizer can see who the event&#39;s
     * attendees are. Optional. The default is True.
     */
-  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.native
+  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An absolute link to the Google+ hangout associated with this event.
     * Read-only.
     */
-  var hangoutLink: js.UndefOr[String] = js.native
+  var hangoutLink: js.UndefOr[String] = js.undefined
   
   /**
     * An absolute link to this event in the Google Calendar Web UI. Read-only.
     */
-  var htmlLink: js.UndefOr[String] = js.native
+  var htmlLink: js.UndefOr[String] = js.undefined
   
   /**
     * Event unique identifier as defined in RFC5545. It is used to uniquely
@@ -137,7 +135,7 @@ trait SchemaEvent extends StObject {
     * events, all occurrences of one event have different ids while they all
     * share the same icalUIDs.
     */
-  var iCalUID: js.UndefOr[String] = js.native
+  var iCalUID: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque identifier of the event. When creating new single or recurring
@@ -155,17 +153,17 @@ trait SchemaEvent extends StObject {
     * that in recurring events, all occurrences of one event have different ids
     * while they all share the same icalUIDs.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the resource (&quot;calendar#event&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Geographic location of the event as free-form text. Optional.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this is a locked event copy where no changes can be made to the
@@ -173,7 +171,7 @@ trait SchemaEvent extends StObject {
     * &quot;location&quot;, &quot;start&quot;, &quot;end&quot; or
     * &quot;recurrence&quot;. The default is False. Read-Only.
     */
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The organizer of the event. If the organizer is also an attendee, this is
@@ -181,7 +179,7 @@ trait SchemaEvent extends StObject {
     * to True. To change the organizer, use the move operation. Read-only,
     * except when importing an event.
     */
-  var organizer: js.UndefOr[Self] = js.native
+  var organizer: js.UndefOr[Self] = js.undefined
   
   /**
     * For an instance of a recurring event, this is the time at which this
@@ -190,14 +188,14 @@ trait SchemaEvent extends StObject {
     * within the recurring event series even if the instance was moved to a
     * different time. Immutable.
     */
-  var originalStartTime: js.UndefOr[SchemaEventDateTime] = js.native
+  var originalStartTime: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
     * Whether this is a private event copy where changes are not shared with
     * other copies on other calendars. Optional. Immutable. The default is
     * False.
     */
-  var privateCopy: js.UndefOr[Boolean] = js.native
+  var privateCopy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of RRULE, EXRULE, RDATE and EXDATE lines for a recurring event, as
@@ -206,36 +204,36 @@ trait SchemaEvent extends StObject {
     * end fields. This field is omitted for single events or instances of
     * recurring events.
     */
-  var recurrence: js.UndefOr[js.Array[String]] = js.native
+  var recurrence: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For an instance of a recurring event, this is the id of the recurring
     * event to which this instance belongs. Immutable.
     */
-  var recurringEventId: js.UndefOr[String] = js.native
+  var recurringEventId: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the event&#39;s reminders for the authenticated user.
     */
-  var reminders: js.UndefOr[Overrides] = js.native
+  var reminders: js.UndefOr[Overrides] = js.undefined
   
   /**
     * Sequence number as per iCalendar.
     */
-  var sequence: js.UndefOr[Double] = js.native
+  var sequence: js.UndefOr[Double] = js.undefined
   
   /**
     * Source from which the event was created. For example, a web page, an
     * email message or any document identifiable by an URL with HTTP or HTTPS
     * scheme. Can only be seen or modified by the creator of the event.
     */
-  var source: js.UndefOr[TitleUrl] = js.native
+  var source: js.UndefOr[TitleUrl] = js.undefined
   
   /**
     * The (inclusive) start time of the event. For a recurring event, this is
     * the start time of the first instance.
     */
-  var start: js.UndefOr[SchemaEventDateTime] = js.native
+  var start: js.UndefOr[SchemaEventDateTime] = js.undefined
   
   /**
     * Status of the event. Optional. Possible values are:   -
@@ -265,12 +263,12 @@ trait SchemaEvent extends StObject {
     * will leave behind a cancelled event where only the id field is guaranteed
     * to be populated.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Title of the event.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the event blocks time on the calendar. Optional. Possible values
@@ -280,12 +278,12 @@ trait SchemaEvent extends StObject {
     * on the calendar. This is equivalent to setting Show me as to Available in
     * the Calendar UI.
     */
-  var transparency: js.UndefOr[String] = js.native
+  var transparency: js.UndefOr[String] = js.undefined
   
   /**
     * Last modification time of the event (as a RFC3339 timestamp). Read-only.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /**
     * Visibility of the event. Optional. Possible values are:   -
@@ -296,7 +294,7 @@ trait SchemaEvent extends StObject {
     * view event details.  - &quot;confidential&quot; - The event is private.
     * This value is provided for compatibility reasons.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaEvent {
   

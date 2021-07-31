@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointConfigSummary extends StObject {
   
   /**
     * A timestamp that shows when the endpoint configuration was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the endpoint configuration.
     */
-  var EndpointConfigArn: typings.awsSdk.sagemakerMod.EndpointConfigArn = js.native
+  var EndpointConfigArn: typings.awsSdk.sagemakerMod.EndpointConfigArn
   
   /**
     * The name of the endpoint configuration.
     */
-  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName = js.native
+  var EndpointConfigName: typings.awsSdk.sagemakerMod.EndpointConfigName
 }
 object EndpointConfigSummary {
   

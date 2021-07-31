@@ -2,16 +2,16 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MenuShareWeibo extends ShareTimelineConfig {
+trait MenuShareWeibo
+  extends StObject
+     with ShareTimelineConfig {
   
   /**
     * 分享描述
     */
-  var desc: String = js.native
+  var desc: String
 }
 object MenuShareWeibo {
   

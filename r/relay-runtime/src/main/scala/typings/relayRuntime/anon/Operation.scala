@@ -5,15 +5,13 @@ import typings.relayRuntime.relayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Operation extends StObject {
   
-  var operation: OperationDescriptor = js.native
+  var operation: OperationDescriptor
   
-  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+  var updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
 }
 object Operation {
   

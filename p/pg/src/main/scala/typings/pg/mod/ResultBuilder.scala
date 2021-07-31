@@ -2,13 +2,13 @@ package typings.pg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResultBuilder[R /* <: QueryResultRow */] extends QueryResult[R] {
+trait ResultBuilder[R /* <: QueryResultRow */]
+  extends StObject
+     with QueryResult[R] {
   
-  def addRow(row: R): Unit = js.native
+  def addRow(row: R): Unit
 }
 object ResultBuilder {
   
@@ -26,7 +26,7 @@ object ResultBuilder {
   }
   
   @scala.inline
-  implicit class ResultBuilderMutableBuilder[Self <: ResultBuilder[_], R /* <: QueryResultRow */] (val x: Self with ResultBuilder[R]) extends AnyVal {
+  implicit class ResultBuilderMutableBuilder[Self <: ResultBuilder[?], R /* <: QueryResultRow */] (val x: Self & ResultBuilder[R]) extends AnyVal {
     
     @scala.inline
     def setAddRow(value: R => Unit): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))

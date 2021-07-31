@@ -3,7 +3,6 @@ package typings.sipJs
 import typings.sipJs.parametersMod.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uriMod {
@@ -22,33 +21,12 @@ object uriMod {
       */
     def this(scheme: String, user: String, host: String) = this()
     def this(scheme: String, user: String, host: String, port: Double) = this()
-    def this(scheme: String, user: String, host: String, port: js.UndefOr[scala.Nothing], parameters: js.Any) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
-      headers: js.Any
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: js.UndefOr[scala.Nothing],
-      parameters: js.Any,
-      headers: js.Any
-    ) = this()
-    def this(
-      scheme: String,
-      user: String,
-      host: String,
-      port: Double,
-      parameters: js.UndefOr[scala.Nothing],
-      headers: js.Any
-    ) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any) = this()
     def this(scheme: String, user: String, host: String, port: Double, parameters: js.Any, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Double, parameters: Unit, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: js.Any, headers: js.Any) = this()
+    def this(scheme: String, user: String, host: String, port: Unit, parameters: Unit, headers: js.Any) = this()
     
     /* private */ def _normal: js.Any = js.native
     

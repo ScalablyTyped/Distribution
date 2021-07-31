@@ -3,35 +3,33 @@ package typings.qiniuJs.mod
 import typings.qiniuJs.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioInfo extends StObject {
   
-  var bit_rate: String = js.native
+  var bit_rate: String
   
-  var channels: Double = js.native
+  var channels: Double
   
-  var codec_name: String = js.native
+  var codec_name: String
   
-  var codec_type: String = js.native
+  var codec_type: String
   
-  var duration: String = js.native
+  var duration: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var nb_frames: String = js.native
+  var nb_frames: String
   
-  var r_frame_rate: String = js.native
+  var r_frame_rate: String
   
-  var sample_fmt: String = js.native
+  var sample_fmt: String
   
-  var sample_rate: String = js.native
+  var sample_rate: String
   
-  var start_time: String = js.native
+  var start_time: String
   
-  var tags: Dictkey = js.native
+  var tags: Dictkey
 }
 object AudioInfo {
   

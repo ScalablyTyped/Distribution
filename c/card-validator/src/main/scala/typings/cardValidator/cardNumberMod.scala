@@ -4,30 +4,28 @@ import typings.cardValidator.anon.Name
 import typings.cardValidator.typesMod.Verification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardNumberMod {
   
-  @JSImport("card-validator/dist/card-number", "cardNumber")
+  @JSImport("card-validator/dist/card-number", JSImport.Namespace)
   @js.native
-  def cardNumber(value: String): CardNumberVerification = js.native
-  @JSImport("card-validator/dist/card-number", "cardNumber")
-  @js.native
-  def cardNumber(value: String, options: CardNumberOptions): CardNumberVerification = js.native
-  @JSImport("card-validator/dist/card-number", "cardNumber")
-  @js.native
-  def cardNumber(value: js.Any): CardNumberVerification = js.native
-  @JSImport("card-validator/dist/card-number", "cardNumber")
-  @js.native
-  def cardNumber(value: js.Any, options: CardNumberOptions): CardNumberVerification = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def cardNumber(value: String): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
+  @scala.inline
+  def cardNumber(value: String, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
+  @scala.inline
+  def cardNumber(value: js.Any): CardNumberVerification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any]).asInstanceOf[CardNumberVerification]
+  @scala.inline
+  def cardNumber(value: js.Any, options: CardNumberOptions): CardNumberVerification = (^.asInstanceOf[js.Dynamic].applyDynamic("cardNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CardNumberVerification]
+  
   trait CardNumberOptions extends StObject {
     
-    var luhnValidateUnionPay: js.UndefOr[Boolean] = js.native
+    var luhnValidateUnionPay: js.UndefOr[Boolean] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
   }
   object CardNumberOptions {
     
@@ -54,16 +52,17 @@ object cardNumberMod {
     }
   }
   
-  @js.native
-  trait CardNumberVerification extends Verification {
+  trait CardNumberVerification
+    extends StObject
+       with Verification {
     
-    var card: CreditCardType | Null = js.native
+    var card: CreditCardType | Null
   }
   object CardNumberVerification {
     
     @scala.inline
     def apply(isPotentiallyValid: Boolean, isValid: Boolean): CardNumberVerification = {
-      val __obj = js.Dynamic.literal(isPotentiallyValid = isPotentiallyValid.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isPotentiallyValid = isPotentiallyValid.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], card = null)
       __obj.asInstanceOf[CardNumberVerification]
     }
     
@@ -78,20 +77,19 @@ object cardNumberMod {
     }
   }
   
-  @js.native
   trait CreditCardType extends StObject {
     
-    var code: Name = js.native
+    var code: Name
     
-    var gaps: js.Array[Double] = js.native
+    var gaps: js.Array[Double]
     
-    var lengths: js.Array[Double] = js.native
+    var lengths: js.Array[Double]
     
-    var niceType: String = js.native
+    var niceType: String
     
-    var patterns: js.Array[js.Array[Double] | Double] = js.native
+    var patterns: js.Array[js.Array[Double] | Double]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CreditCardType {
     

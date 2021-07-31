@@ -3,39 +3,39 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when instant message received
   */
-@js.native
-trait MessageReceived extends VoxImplantIMEvent {
+trait MessageReceived
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    Message content
     */
-  var content: String = js.native
+  var content: String
   
   /**
     *    User id (of the user who sent the message)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    Message id
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     *    Resource name
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     *    User id (of the user to whom the message was sent)
     */
-  var to: String = js.native
+  var to: String
 }
 object MessageReceived {
   

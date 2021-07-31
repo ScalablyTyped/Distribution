@@ -3,25 +3,24 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSExternalModuleReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSExternalModuleReference_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var expression: StringLiteral_ = js.native
+  var expression: StringLiteral_
   
   @JSName("type")
-  var type_TSExternalModuleReference_ : TSExternalModuleReference = js.native
+  var type_TSExternalModuleReference_ : TSExternalModuleReference
 }
 object TSExternalModuleReference_ {
   
   @scala.inline
-  def apply(expression: StringLiteral_, `type`: TSExternalModuleReference): TSExternalModuleReference_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: StringLiteral_): TSExternalModuleReference_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSExternalModuleReference")
     __obj.asInstanceOf[TSExternalModuleReference_]
   }
   

@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeGroupMod {
@@ -120,6 +119,10 @@ object nodeGroupMod {
   /* static members */
   object NodeGroup {
     
+    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NodeGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -129,102 +132,96 @@ object nodeGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NodeGroup = js.native
-    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NodeGroup = js.native
-    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NodeGroupState): NodeGroup = js.native
-    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): NodeGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NodeGroupState): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NodeGroupState, opts: CustomResourceOptions): NodeGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NodeGroup]
     
     /**
       * Returns true if the given object is an instance of NodeGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/eks/nodeGroup", "NodeGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/eks/nodeGroup.NodeGroup */ Boolean]
   }
   
-  @js.native
   trait NodeGroupArgs extends StObject {
     
     /**
       * Type of Amazon Machine Image (AMI) associated with the EKS Node Group. Defaults to `AL2_x86_64`. Valid values: `AL2_x86_64`, `AL2_x86_64_GPU`, `AL2_ARM_64`. This provider will only perform drift detection if a configuration value is provided.
       */
-    val amiType: js.UndefOr[Input[String]] = js.native
+    val amiType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the EKS Cluster.
       */
-    val clusterName: Input[String] = js.native
+    val clusterName: Input[String]
     
     /**
       * Disk size in GiB for worker nodes. Defaults to `20`. This provider will only perform drift detection if a configuration value is provided.
       */
-    val diskSize: js.UndefOr[Input[Double]] = js.native
+    val diskSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Force version update if existing pods are unable to be drained due to a pod disruption budget issue.
       */
-    val forceUpdateVersion: js.UndefOr[Input[Boolean]] = js.native
+    val forceUpdateVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
       */
-    val instanceTypes: js.UndefOr[Input[String]] = js.native
+    val instanceTypes: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
       */
-    val labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration block with Launch Template settings. Detailed below.
       */
-    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]] = js.native
+    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]] = js.undefined
     
     /**
       * Name of the EKS Node Group.
       */
-    val nodeGroupName: js.UndefOr[Input[String]] = js.native
+    val nodeGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.
       */
-    val nodeRoleArn: Input[String] = js.native
+    val nodeRoleArn: Input[String]
     
     /**
       * AMI version of the EKS Node Group. Defaults to latest version for Kubernetes version.
       */
-    val releaseVersion: js.UndefOr[Input[String]] = js.native
+    val releaseVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with remote access settings. Detailed below.
       */
-    val remoteAccess: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]] = js.native
+    val remoteAccess: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]] = js.undefined
     
     /**
       * Configuration block with scaling settings. Detailed below.
       */
-    val scalingConfig: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig] = js.native
+    val scalingConfig: Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]
     
     /**
       * Identifiers of EC2 Subnets to associate with the EKS Node Group. These subnets must have the following resource tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is replaced with the name of the EKS Cluster).
       */
-    val subnetIds: Input[js.Array[Input[String]]] = js.native
+    val subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object NodeGroupArgs {
     
@@ -325,95 +322,94 @@ object nodeGroupMod {
     }
   }
   
-  @js.native
   trait NodeGroupState extends StObject {
     
     /**
       * Type of Amazon Machine Image (AMI) associated with the EKS Node Group. Defaults to `AL2_x86_64`. Valid values: `AL2_x86_64`, `AL2_x86_64_GPU`, `AL2_ARM_64`. This provider will only perform drift detection if a configuration value is provided.
       */
-    val amiType: js.UndefOr[Input[String]] = js.native
+    val amiType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the EKS Node Group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the EKS Cluster.
       */
-    val clusterName: js.UndefOr[Input[String]] = js.native
+    val clusterName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Disk size in GiB for worker nodes. Defaults to `20`. This provider will only perform drift detection if a configuration value is provided.
       */
-    val diskSize: js.UndefOr[Input[Double]] = js.native
+    val diskSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Force version update if existing pods are unable to be drained due to a pod disruption budget issue.
       */
-    val forceUpdateVersion: js.UndefOr[Input[Boolean]] = js.native
+    val forceUpdateVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set of instance types associated with the EKS Node Group. Defaults to `["t3.medium"]`. This provider will only perform drift detection if a configuration value is provided. Currently, the EKS API only accepts a single value in the set.
       */
-    val instanceTypes: js.UndefOr[Input[String]] = js.native
+    val instanceTypes: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of Kubernetes labels. Only labels that are applied with the EKS API are managed by this argument. Other Kubernetes labels applied to the EKS Node Group will not be managed.
       */
-    val labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val labels: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration block with Launch Template settings. Detailed below.
       */
-    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]] = js.native
+    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupLaunchTemplate]] = js.undefined
     
     /**
       * Name of the EKS Node Group.
       */
-    val nodeGroupName: js.UndefOr[Input[String]] = js.native
+    val nodeGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role that provides permissions for the EKS Node Group.
       */
-    val nodeRoleArn: js.UndefOr[Input[String]] = js.native
+    val nodeRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * AMI version of the EKS Node Group. Defaults to latest version for Kubernetes version.
       */
-    val releaseVersion: js.UndefOr[Input[String]] = js.native
+    val releaseVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with remote access settings. Detailed below.
       */
-    val remoteAccess: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]] = js.native
+    val remoteAccess: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupRemoteAccess]] = js.undefined
     
     /**
       * List of objects containing information about underlying resources.
       */
-    val resources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]]]] = js.native
+    val resources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.eks.NodeGroupResource]]]] = js.undefined
     
     /**
       * Configuration block with scaling settings. Detailed below.
       */
-    val scalingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]] = js.native
+    val scalingConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.eks.NodeGroupScalingConfig]] = js.undefined
     
     /**
       * Status of the EKS Node Group.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifiers of EC2 Subnets to associate with the EKS Node Group. These subnets must have the following resource tag: `kubernetes.io/cluster/CLUSTER_NAME` (where `CLUSTER_NAME` is replaced with the name of the EKS Cluster).
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object NodeGroupState {
     

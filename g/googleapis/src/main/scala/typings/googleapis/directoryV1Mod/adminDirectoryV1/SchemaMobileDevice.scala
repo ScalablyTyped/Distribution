@@ -3,217 +3,215 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 import typings.googleapis.anon.DisplayName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Mobile Device resource in Directory API.
   */
-@js.native
 trait SchemaMobileDevice extends StObject {
   
   /**
     * Adb (USB debugging) enabled or disabled on device (Read-only)
     */
-  var adbStatus: js.UndefOr[Boolean] = js.native
+  var adbStatus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of applications installed on Mobile Device
     */
-  var applications: js.UndefOr[js.Array[DisplayName]] = js.native
+  var applications: js.UndefOr[js.Array[DisplayName]] = js.undefined
   
   /**
     * Mobile Device Baseband version (Read-only)
     */
-  var basebandVersion: js.UndefOr[String] = js.native
+  var basebandVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Bootloader version (Read-only)
     */
-  var bootloaderVersion: js.UndefOr[String] = js.native
+  var bootloaderVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Brand (Read-only)
     */
-  var brand: js.UndefOr[String] = js.native
+  var brand: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Build number (Read-only)
     */
-  var buildNumber: js.UndefOr[String] = js.native
+  var buildNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The default locale used on the Mobile Device (Read-only)
     */
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Developer options enabled or disabled on device (Read-only)
     */
-  var developerOptionsStatus: js.UndefOr[Boolean] = js.native
+  var developerOptionsStatus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Mobile Device compromised status (Read-only)
     */
-  var deviceCompromisedStatus: js.UndefOr[String] = js.native
+  var deviceCompromisedStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device serial number (Read-only)
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * DevicePasswordStatus (Read-only)
     */
-  var devicePasswordStatus: js.UndefOr[String] = js.native
+  var devicePasswordStatus: js.UndefOr[String] = js.undefined
   
   /**
     * List of owner user&#39;s email addresses (Read-only)
     */
-  var email: js.UndefOr[js.Array[String]] = js.native
+  var email: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Mobile Device Encryption Status (Read-only)
     */
-  var encryptionStatus: js.UndefOr[String] = js.native
+  var encryptionStatus: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time the device was first synchronized with the policy settings
     * in the G Suite administrator control panel (Read-only)
     */
-  var firstSync: js.UndefOr[String] = js.native
+  var firstSync: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Hardware (Read-only)
     */
-  var hardware: js.UndefOr[String] = js.native
+  var hardware: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Hardware Id (Read-only)
     */
-  var hardwareId: js.UndefOr[String] = js.native
+  var hardwareId: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device IMEI number (Read-only)
     */
-  var imei: js.UndefOr[String] = js.native
+  var imei: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Kernel version (Read-only)
     */
-  var kernelVersion: js.UndefOr[String] = js.native
+  var kernelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time the device was last synchronized with the policy settings
     * in the G Suite administrator control panel (Read-only)
     */
-  var lastSync: js.UndefOr[String] = js.native
+  var lastSync: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean indicating if this account is on owner/primary profile or not
     * (Read-only)
     */
-  var managedAccountIsOnOwnerProfile: js.UndefOr[Boolean] = js.native
+  var managedAccountIsOnOwnerProfile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Mobile Device manufacturer (Read-only)
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device MEID number (Read-only)
     */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the model of the device
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * List of owner user&#39;s names (Read-only)
     */
-  var name: js.UndefOr[js.Array[String]] = js.native
+  var name: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Mobile Device mobile or network operator (if available) (Read-only)
     */
-  var networkOperator: js.UndefOr[String] = js.native
+  var networkOperator: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the mobile operating system
     */
-  var os: js.UndefOr[String] = js.native
+  var os: js.UndefOr[String] = js.undefined
   
   /**
     * List of accounts added on device (Read-only)
     */
-  var otherAccountsInfo: js.UndefOr[js.Array[String]] = js.native
+  var otherAccountsInfo: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * DMAgentPermission (Read-only)
     */
-  var privilege: js.UndefOr[String] = js.native
+  var privilege: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device release version version (Read-only)
     */
-  var releaseVersion: js.UndefOr[String] = js.native
+  var releaseVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of Mobile Device (Read-only)
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device Security patch level (Read-only)
     */
-  var securityPatchLevel: js.UndefOr[String] = js.native
+  var securityPatchLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device SSN or Serial Number (Read-only)
     */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the device (Read-only)
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Work profile supported on device (Read-only)
     */
-  var supportsWorkProfile: js.UndefOr[Boolean] = js.native
+  var supportsWorkProfile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of device (Read-only)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Unknown sources enabled or disabled on device (Read-only)
     */
-  var unknownSourcesStatus: js.UndefOr[Boolean] = js.native
+  var unknownSourcesStatus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Mobile Device user agent
     */
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
   
   /**
     * Mobile Device WiFi MAC address (Read-only)
     */
-  var wifiMacAddress: js.UndefOr[String] = js.native
+  var wifiMacAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaMobileDevice {
   

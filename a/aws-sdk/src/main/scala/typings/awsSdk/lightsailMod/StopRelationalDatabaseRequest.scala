@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopRelationalDatabaseRequest extends StObject {
   
   /**
     * The name of your database to stop.
     */
-  var relationalDatabaseName: ResourceName = js.native
+  var relationalDatabaseName: ResourceName
   
   /**
     * The name of your new database snapshot to be created before stopping your database.
     */
-  var relationalDatabaseSnapshotName: js.UndefOr[ResourceName] = js.native
+  var relationalDatabaseSnapshotName: js.UndefOr[ResourceName] = js.undefined
 }
 object StopRelationalDatabaseRequest {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ol.colorMod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object literalStyleMod {
@@ -16,35 +15,42 @@ object literalStyleMod {
   object SymbolType extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SymbolType with String] = js.native
+    def apply(value: String): js.UndefOr[SymbolType & String] = js.native
     
     @js.native
-    sealed trait CIRCLE extends SymbolType
-    /* "circle" */ val CIRCLE: typings.ol.literalStyleMod.SymbolType.CIRCLE with String = js.native
+    sealed trait CIRCLE
+      extends StObject
+         with SymbolType
+    /* "circle" */ val CIRCLE: typings.ol.literalStyleMod.SymbolType.CIRCLE & String = js.native
     
     @js.native
-    sealed trait IMAGE extends SymbolType
-    /* "image" */ val IMAGE: typings.ol.literalStyleMod.SymbolType.IMAGE with String = js.native
+    sealed trait IMAGE
+      extends StObject
+         with SymbolType
+    /* "image" */ val IMAGE: typings.ol.literalStyleMod.SymbolType.IMAGE & String = js.native
     
     @js.native
-    sealed trait SQUARE extends SymbolType
-    /* "square" */ val SQUARE: typings.ol.literalStyleMod.SymbolType.SQUARE with String = js.native
+    sealed trait SQUARE
+      extends StObject
+         with SymbolType
+    /* "square" */ val SQUARE: typings.ol.literalStyleMod.SymbolType.SQUARE & String = js.native
     
     @js.native
-    sealed trait TRIANGLE extends SymbolType
-    /* "triangle" */ val TRIANGLE: typings.ol.literalStyleMod.SymbolType.TRIANGLE with String = js.native
+    sealed trait TRIANGLE
+      extends StObject
+         with SymbolType
+    /* "triangle" */ val TRIANGLE: typings.ol.literalStyleMod.SymbolType.TRIANGLE & String = js.native
   }
   
   type ExpressionValue = typings.ol.expressionsMod.ExpressionValue
   
-  @js.native
   trait LiteralStyle extends StObject {
     
-    var filter: js.UndefOr[ExpressionValue] = js.native
+    var filter: js.UndefOr[ExpressionValue] = js.undefined
     
-    var symbol: js.UndefOr[LiteralSymbolStyle] = js.native
+    var symbol: js.UndefOr[LiteralSymbolStyle] = js.undefined
     
-    var variables: js.UndefOr[StringDictionary[Double]] = js.native
+    var variables: js.UndefOr[StringDictionary[Double]] = js.undefined
   }
   object LiteralStyle {
     
@@ -80,26 +86,25 @@ object literalStyleMod {
     }
   }
   
-  @js.native
   trait LiteralSymbolStyle extends StObject {
     
-    var color: js.UndefOr[Color | js.Array[ExpressionValue] | String] = js.native
+    var color: js.UndefOr[Color | js.Array[ExpressionValue] | String] = js.undefined
     
-    var offset: js.UndefOr[js.Array[ExpressionValue]] = js.native
+    var offset: js.UndefOr[js.Array[ExpressionValue]] = js.undefined
     
-    var opacity: js.UndefOr[ExpressionValue] = js.native
+    var opacity: js.UndefOr[ExpressionValue] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[ExpressionValue] = js.native
+    var rotation: js.UndefOr[ExpressionValue] = js.undefined
     
-    var size: ExpressionValue | js.Array[ExpressionValue] = js.native
+    var size: ExpressionValue | js.Array[ExpressionValue]
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var symbolType: SymbolType = js.native
+    var symbolType: SymbolType
     
-    var textureCoord: js.UndefOr[js.Array[ExpressionValue]] = js.native
+    var textureCoord: js.UndefOr[js.Array[ExpressionValue]] = js.undefined
   }
   object LiteralSymbolStyle {
     

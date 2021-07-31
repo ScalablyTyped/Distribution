@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPolicy extends StObject {
   
   /**
     * The number of active simulation jobs create as part of the batch that can be in an active state at the same time.  Active states include: Pending,Preparing, Running, Restarting, RunningFailed and Terminating. All other states are terminal states. 
     */
-  var maxConcurrency: js.UndefOr[MaxConcurrency] = js.native
+  var maxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
   
   /**
     * The amount of time, in seconds, to wait for the batch to complete.  If a batch times out, and there are pending requests that were failing due to an internal failure (like InternalServiceError), they will be moved to the failed list and the batch status will be Failed. If the pending requests were failing for any other reason, the failed pending requests will be moved to the failed list and the batch status will be TimedOut. 
     */
-  var timeoutInSeconds: js.UndefOr[BatchTimeoutInSeconds] = js.native
+  var timeoutInSeconds: js.UndefOr[BatchTimeoutInSeconds] = js.undefined
 }
 object BatchPolicy {
   

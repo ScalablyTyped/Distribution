@@ -4,36 +4,34 @@ import typings.aureliaDependencyInjection.mod.Container
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhanceInstruction extends StObject {
   
   /**
     * A binding context for the enhancement.
     */
-  var bindingContext: js.UndefOr[js.Object] = js.native
+  var bindingContext: js.UndefOr[js.Object] = js.undefined
   
   /**
     * The DI container to use as the root for UI enhancement.
     */
-  var container: js.UndefOr[Container] = js.native
+  var container: js.UndefOr[Container] = js.undefined
   
   /**
     * The element to enhance.
     */
-  var element: Element = js.native
+  var element: Element
   
   /**
     * A secondary binding context that can override the standard context.
     */
-  var overrideContext: js.UndefOr[js.Any] = js.native
+  var overrideContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The resources available for enhancement.
     */
-  var resources: js.UndefOr[ViewResources_] = js.native
+  var resources: js.UndefOr[ViewResources_] = js.undefined
 }
 object EnhanceInstruction {
   

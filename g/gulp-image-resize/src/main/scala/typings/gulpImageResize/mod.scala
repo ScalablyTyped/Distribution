@@ -5,54 +5,54 @@ import typings.gm.mod.GravityDirection
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-image-resize", JSImport.Namespace)
-  @js.native
-  def apply(): Transform = js.native
-  @JSImport("gulp-image-resize", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Transform = js.native
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
+  @JSImport("gulp-image-resize", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var cover: js.UndefOr[Boolean] = js.native
+    var cover: js.UndefOr[Boolean] = js.undefined
     
-    var crop: js.UndefOr[Boolean] = js.native
+    var crop: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[FilterType] = js.native
+    var filter: js.UndefOr[FilterType] = js.undefined
     
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var gravity: js.UndefOr[GravityDirection] = js.native
+    var gravity: js.UndefOr[GravityDirection] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var imageMagick: js.UndefOr[Boolean] = js.native
+    var imageMagick: js.UndefOr[Boolean] = js.undefined
     
-    var interlace: js.UndefOr[Boolean] = js.native
+    var interlace: js.UndefOr[Boolean] = js.undefined
     
-    var noProfile: js.UndefOr[Boolean] = js.native
+    var noProfile: js.UndefOr[Boolean] = js.undefined
     
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var samplingFactor: js.UndefOr[SamplingFactor] = js.native
+    var samplingFactor: js.UndefOr[SamplingFactor] = js.undefined
     
-    var sharpen: js.UndefOr[Boolean | String] = js.native
+    var sharpen: js.UndefOr[Boolean | String] = js.undefined
     
-    var upscale: js.UndefOr[Boolean] = js.native
+    var upscale: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

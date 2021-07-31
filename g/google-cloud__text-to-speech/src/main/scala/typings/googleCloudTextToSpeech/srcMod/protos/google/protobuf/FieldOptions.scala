@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FieldOptions. */
@@ -24,21 +23,23 @@ class FieldOptions ()
 }
 object FieldOptions {
   
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** CType enum. */
   @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.CType")
   @js.native
   object CType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType & Double] = js.native
     
-    /* 1 */ val CORD: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.CORD with Double = js.native
+    /* 1 */ val CORD: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.CORD & Double = js.native
     
-    /* 0 */ val STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.STRING with Double = js.native
+    /* 0 */ val STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.STRING & Double = js.native
     
-    /* 2 */ val STRING_PIECE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.STRING_PIECE with Double = js.native
+    /* 2 */ val STRING_PIECE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.CType.STRING_PIECE & Double = js.native
   }
   
   /** JSType enum. */
@@ -47,15 +48,13 @@ object FieldOptions {
   object JSType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType & Double] = js.native
     
-    /* 0 */ val JS_NORMAL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_NORMAL with Double = js.native
+    /* 0 */ val JS_NORMAL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_NORMAL & Double = js.native
     
-    /* 2 */ val JS_NUMBER: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_NUMBER with Double = js.native
+    /* 2 */ val JS_NUMBER: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_NUMBER & Double = js.native
     
-    /* 1 */ val JS_STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_STRING with Double = js.native
+    /* 1 */ val JS_STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions.JSType.JS_STRING & Double = js.native
   }
   
   /**
@@ -64,12 +63,10 @@ object FieldOptions {
     * @returns FieldOptions instance
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.create")
-  @js.native
-  def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.create")
-  @js.native
-  def create(properties: IFieldOptions): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
+  @scala.inline
+  def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
+  @scala.inline
+  def create(properties: IFieldOptions): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
   
   /**
     * Decodes a FieldOptions message from the specified reader or buffer.
@@ -80,18 +77,14 @@ object FieldOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
   
   /**
     * Decodes a FieldOptions message from the specified reader or buffer, length delimited.
@@ -101,12 +94,10 @@ object FieldOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
   
   /**
     * Encodes the specified FieldOptions message. Does not implicitly {@link google.protobuf.FieldOptions.verify|verify} messages.
@@ -115,12 +106,10 @@ object FieldOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.encode")
-  @js.native
-  def encode(message: IFieldOptions): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.encode")
-  @js.native
-  def encode(message: IFieldOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFieldOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFieldOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FieldOptions message, length delimited. Does not implicitly {@link google.protobuf.FieldOptions.verify|verify} messages.
@@ -129,12 +118,10 @@ object FieldOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldOptions): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFieldOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFieldOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FieldOptions message from a plain object. Also converts values to their respective internal types.
@@ -142,9 +129,8 @@ object FieldOptions {
     * @returns FieldOptions
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions]
   
   /**
     * Creates a plain object from a FieldOptions message. Also converts values to other types if specified.
@@ -153,15 +139,13 @@ object FieldOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.toObject")
-  @js.native
-  def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldOptions,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FieldOptions message.
@@ -169,7 +153,6 @@ object FieldOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

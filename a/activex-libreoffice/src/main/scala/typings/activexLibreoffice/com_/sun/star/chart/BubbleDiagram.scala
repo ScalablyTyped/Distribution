@@ -12,16 +12,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a service for bubble diagrams.
   * @since OOo 3.2
   */
-@js.native
 trait BubbleDiagram
-  extends Diagram
+  extends StObject
+     with Diagram
      with ChartAxisXSupplier
      with ChartTwoAxisYSupplier
      with ChartStatistics

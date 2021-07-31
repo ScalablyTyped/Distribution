@@ -2,72 +2,70 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ClientEntry> */
-@js.native
 trait PartialClientEntry extends StObject {
   
-  var cid: js.UndefOr[String] = js.native
+  var cid: js.UndefOr[String] = js.undefined
   
-  var clid: js.UndefOr[String] = js.native
+  var clid: js.UndefOr[String] = js.undefined
   
-  var clientAway: js.UndefOr[Double] = js.native
+  var clientAway: js.UndefOr[Double] = js.undefined
   
-  var clientAwayMessage: js.UndefOr[String] = js.native
+  var clientAwayMessage: js.UndefOr[String] = js.undefined
   
-  var clientBadges: js.UndefOr[String] = js.native
+  var clientBadges: js.UndefOr[String] = js.undefined
   
-  var clientChannelGroupId: js.UndefOr[String] = js.native
+  var clientChannelGroupId: js.UndefOr[String] = js.undefined
   
-  var clientChannelGroupInheritedChannelId: js.UndefOr[Double] = js.native
+  var clientChannelGroupInheritedChannelId: js.UndefOr[Double] = js.undefined
   
-  var clientCountry: js.UndefOr[String] = js.native
+  var clientCountry: js.UndefOr[String] = js.undefined
   
-  var clientCreated: js.UndefOr[Double] = js.native
+  var clientCreated: js.UndefOr[Double] = js.undefined
   
-  var clientDatabaseId: js.UndefOr[String] = js.native
+  var clientDatabaseId: js.UndefOr[String] = js.undefined
   
-  var clientEstimatedLocation: js.UndefOr[String] = js.native
+  var clientEstimatedLocation: js.UndefOr[String] = js.undefined
   
-  var clientFlagTalking: js.UndefOr[Boolean] = js.native
+  var clientFlagTalking: js.UndefOr[Boolean] = js.undefined
   
-  var clientIdleTime: js.UndefOr[Double] = js.native
+  var clientIdleTime: js.UndefOr[Double] = js.undefined
   
-  var clientInputHardware: js.UndefOr[Boolean] = js.native
+  var clientInputHardware: js.UndefOr[Boolean] = js.undefined
   
-  var clientInputMuted: js.UndefOr[Boolean] = js.native
+  var clientInputMuted: js.UndefOr[Boolean] = js.undefined
   
-  var clientIsChannelCommander: js.UndefOr[Double] = js.native
+  var clientIsChannelCommander: js.UndefOr[Double] = js.undefined
   
-  var clientIsPrioritySpeaker: js.UndefOr[Boolean] = js.native
+  var clientIsPrioritySpeaker: js.UndefOr[Boolean] = js.undefined
   
-  var clientIsRecording: js.UndefOr[Boolean] = js.native
+  var clientIsRecording: js.UndefOr[Boolean] = js.undefined
   
-  var clientIsTalker: js.UndefOr[Boolean] = js.native
+  var clientIsTalker: js.UndefOr[Boolean] = js.undefined
   
-  var clientLastconnected: js.UndefOr[Double] = js.native
+  var clientLastconnected: js.UndefOr[Double] = js.undefined
   
-  var clientNickname: js.UndefOr[String] = js.native
+  var clientNickname: js.UndefOr[String] = js.undefined
   
-  var clientOutputHardware: js.UndefOr[Boolean] = js.native
+  var clientOutputHardware: js.UndefOr[Boolean] = js.undefined
   
-  var clientOutputMuted: js.UndefOr[Boolean] = js.native
+  var clientOutputMuted: js.UndefOr[Boolean] = js.undefined
   
-  var clientPlatform: js.UndefOr[String] = js.native
+  var clientPlatform: js.UndefOr[String] = js.undefined
   
-  var clientServergroups: js.UndefOr[js.Array[String]] = js.native
+  var clientServergroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var clientTalkPower: js.UndefOr[Double] = js.native
+  var clientTalkPower: js.UndefOr[Double] = js.undefined
   
-  var clientType: js.UndefOr[Double] = js.native
+  var clientType: js.UndefOr[Double] = js.undefined
   
-  var clientUniqueIdentifier: js.UndefOr[String] = js.native
+  var clientUniqueIdentifier: js.UndefOr[String] = js.undefined
   
-  var clientVersion: js.UndefOr[String] = js.native
+  var clientVersion: js.UndefOr[String] = js.undefined
   
-  var connectionClientIp: js.UndefOr[String] = js.native
+  var connectionClientIp: js.UndefOr[String] = js.undefined
 }
 object PartialClientEntry {
   

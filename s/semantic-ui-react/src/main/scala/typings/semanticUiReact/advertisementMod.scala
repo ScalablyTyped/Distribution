@@ -5,7 +5,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.advertisementAdvertisementMod.AdvertisementProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object advertisementMod extends Shortcut {

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentManagedActionHistoryResult extends StObject {
   
   /**
     * A list of completed and failed managed actions.
     */
-  var ManagedActionHistoryItems: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ManagedActionHistoryItems] = js.native
+  var ManagedActionHistoryItems: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ManagedActionHistoryItems] = js.undefined
   
   /**
     * A pagination token that you pass to DescribeEnvironmentManagedActionHistory to get the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeEnvironmentManagedActionHistoryResult {
   

@@ -8,25 +8,25 @@ import typings.reactMdUtils.useGridListMod.GridListSize
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridListMod {
   
   @JSImport("@react-md/utils/types/layout/GridList", "GridList")
   @js.native
-  val GridList: ForwardRefExoticComponent[GridListProps with RefAttributes[HTMLDivElement]] = js.native
+  val GridList: ForwardRefExoticComponent[GridListProps & RefAttributes[HTMLDivElement]] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactMdUtils.useGridListMod.UseGridListOptions because var conflicts: className, style. Inlined disableHeight, disableWidth, cellMargin, maxCellSize, defaultSize, containerPadding */ @js.native
-  trait GridListProps extends HTMLAttributes[HTMLDivElement] {
+  - typings.reactMdUtils.useGridListMod.UseGridListOptions because var conflicts: className, style. Inlined disableHeight, disableWidth, cellMargin, maxCellSize, defaultSize, containerPadding */ trait GridListProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * An optional margin to apply to each cell as the `CELL_MARGIN_VAR` css
       * variable only when it is defined. This has to be a number string with a
       * `px`, `em`, `rem` or `%` suffix or else the grid will break.
       */
-    var cellMargin: js.UndefOr[String] = js.native
+    var cellMargin: js.UndefOr[String] = js.undefined
     
     /**
       * The children to display within the grid list. This can either be a callback
@@ -35,7 +35,7 @@ object gridListMod {
       * with the `--rmd-cell-width` css variable.
       */
     @JSName("children")
-    var children_GridListProps: ReactNode | RenderGridListChildren = js.native
+    var children_GridListProps: ReactNode | RenderGridListChildren
     
     /**
       * Boolean if the current cell sizing should automatically be cloned into each
@@ -43,7 +43,7 @@ object gridListMod {
       * list of renderable elements that accept the `style` and `className` props.
       */
     @JSName("clone")
-    var clone_FGridListProps: js.UndefOr[Boolean] = js.native
+    var clone_FGridListProps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This is _normally_ the amount of padding on the grid list item itself to
@@ -52,7 +52,7 @@ object gridListMod {
       * add borders to this component, you'll need to update the `containerPadding`
       * to be the new number.
       */
-    var containerPadding: js.UndefOr[Double] = js.native
+    var containerPadding: js.UndefOr[Double] = js.undefined
     
     /**
       * Since the `GridList` requires being fully rendered in the DOM to be able to
@@ -63,13 +63,13 @@ object gridListMod {
       * should provide this prop. Otherwise it will be: `{ cellSize; maxCellSize,
       * columns: -1 }`
       */
-    var defaultSize: js.UndefOr[GridListSize | js.Function0[GridListSize]] = js.native
+    var defaultSize: js.UndefOr[GridListSize | js.Function0[GridListSize]] = js.undefined
     
     /**
       * Boolean if the recalculation of grid sizing should not happen for height
       * changes.
       */
-    var disableHeight: js.UndefOr[Boolean] = js.native
+    var disableHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the resize observer should stop tracking width changes within
@@ -77,13 +77,13 @@ object gridListMod {
       * changes will allow for dynamic content being added to the list to not mess
       * up the grid calculation when the user is on an OS that shows scrollbars.
       */
-    var disableHeightObserver: js.UndefOr[Boolean] = js.native
+    var disableHeightObserver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the recalculation of grid sizing should not happen for width
       * changes.
       */
-    var disableWidth: js.UndefOr[Boolean] = js.native
+    var disableWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the resize observer should stop tracking width changes within
@@ -91,19 +91,19 @@ object gridListMod {
       * changes will allow for dynamic content being added to the list to not mess
       * up the grid calculation when the user is on an OS that shows scrollbars.
       */
-    var disableWidthObserver: js.UndefOr[Boolean] = js.native
+    var disableWidthObserver: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The max size that each cell can be.
       */
-    var maxCellSize: js.UndefOr[Double] = js.native
+    var maxCellSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean if each child within the `GridList` should be wrapped with the
       * `GridListCell` component.  This will only work if the `children` is not a
       * `function`.
       */
-    var wrapOnly: js.UndefOr[Boolean] = js.native
+    var wrapOnly: js.UndefOr[Boolean] = js.undefined
   }
   object GridListProps {
     

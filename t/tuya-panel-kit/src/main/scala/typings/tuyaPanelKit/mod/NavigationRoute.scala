@@ -1,23 +1,20 @@
 package typings.tuyaPanelKit.mod
 
 import typings.react.mod.ComponentType
-import typings.tuyaPanelKit.anon.NavigationAny
 import typings.tuyaPanelKit.stackTypesMod.StackNavigationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationRoute extends StObject {
   
-  var Scene: ComponentType[js.Object] = js.native
+  var Scene: ComponentType[js.Object]
   
-  var id: String = js.native
+  var id: String
   
   var screenOptions: js.UndefOr[
-    StackNavigationOptions | (js.Function1[/* props */ NavigationAny, StackNavigationOptions])
-  ] = js.native
+    StackNavigationOptions | (js.Function1[/* props */ typings.tuyaPanelKit.anon.NavigationRoute, StackNavigationOptions])
+  ] = js.undefined
 }
 object NavigationRoute {
   
@@ -37,10 +34,12 @@ object NavigationRoute {
     def setScene(value: ComponentType[js.Object]): Self = StObject.set(x, "Scene", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenOptions(value: StackNavigationOptions | (js.Function1[/* props */ NavigationAny, StackNavigationOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
+    def setScreenOptions(
+      value: StackNavigationOptions | (js.Function1[/* props */ typings.tuyaPanelKit.anon.NavigationRoute, StackNavigationOptions])
+    ): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setScreenOptionsFunction1(value: /* props */ NavigationAny => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
+    def setScreenOptionsFunction1(value: /* props */ typings.tuyaPanelKit.anon.NavigationRoute => StackNavigationOptions): Self = StObject.set(x, "screenOptions", js.Any.fromFunction1(value))
     
     @scala.inline
     def setScreenOptionsUndefined: Self = StObject.set(x, "screenOptions", js.undefined)

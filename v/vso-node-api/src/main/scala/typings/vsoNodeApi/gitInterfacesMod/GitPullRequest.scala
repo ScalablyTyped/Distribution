@@ -6,176 +6,174 @@ import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import typings.vsoNodeApi.vssinterfacesMod.ResourceRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPullRequest extends StObject {
   
   /**
     * Links to other related objects.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * A string which uniquely identifies this pull request. To generate an artifact ID for a pull request, use this template: ```vstfs:///Git/PullRequestId/{projectId}/{repositoryId}/{pullRequestId}```
     */
-  var artifactId: String = js.native
+  var artifactId: String
   
   /**
     * If set, auto-complete is enabled for this pull request and this is the identity that enabled it.
     */
-  var autoCompleteSetBy: IdentityRef = js.native
+  var autoCompleteSetBy: IdentityRef
   
   /**
     * The user who closed the pull request.
     */
-  var closedBy: IdentityRef = js.native
+  var closedBy: IdentityRef
   
   /**
     * The date when the pull request was closed (completed, abandoned, or merged externally).
     */
-  var closedDate: Date = js.native
+  var closedDate: Date
   
   /**
     * The code review ID of the pull request. Used internally.
     */
-  var codeReviewId: Double = js.native
+  var codeReviewId: Double
   
   /**
     * The commits contained in the pull request.
     */
-  var commits: js.Array[GitCommitRef] = js.native
+  var commits: js.Array[GitCommitRef]
   
   /**
     * Options which affect how the pull request will be merged when it is completed.
     */
-  var completionOptions: GitPullRequestCompletionOptions = js.native
+  var completionOptions: GitPullRequestCompletionOptions
   
   /**
     * The most recent date at which the pull request entered the queue to be completed. Used internally.
     */
-  var completionQueueTime: Date = js.native
+  var completionQueueTime: Date
   
   /**
     * The identity of the user who created the pull request.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * The date when the pull request was created.
     */
-  var creationDate: Date = js.native
+  var creationDate: Date
   
   /**
     * The description of the pull request.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * If this is a PR from a fork this will contain information about its source.
     */
-  var forkSource: GitForkRef = js.native
+  var forkSource: GitForkRef
   
   /**
     * The labels associated with the pull request.
     */
-  var labels: js.Array[WebApiTagDefinition] = js.native
+  var labels: js.Array[WebApiTagDefinition]
   
   /**
     * The commit of the most recent pull request merge. If empty, the most recent merge is in progress or was unsuccessful.
     */
-  var lastMergeCommit: GitCommitRef = js.native
+  var lastMergeCommit: GitCommitRef
   
   /**
     * The commit at the head of the source branch at the time of the last pull request merge.
     */
-  var lastMergeSourceCommit: GitCommitRef = js.native
+  var lastMergeSourceCommit: GitCommitRef
   
   /**
     * The commit at the head of the target branch at the time of the last pull request merge.
     */
-  var lastMergeTargetCommit: GitCommitRef = js.native
+  var lastMergeTargetCommit: GitCommitRef
   
   /**
     * If set, pull request merge failed for this reason.
     */
-  var mergeFailureMessage: String = js.native
+  var mergeFailureMessage: String
   
   /**
     * The type of failure (if any) of the pull request merge.
     */
-  var mergeFailureType: PullRequestMergeFailureType = js.native
+  var mergeFailureType: PullRequestMergeFailureType
   
   /**
     * The ID of the job used to run the pull request merge. Used internally.
     */
-  var mergeId: String = js.native
+  var mergeId: String
   
   /**
     * Options used when the pull request merge runs. These are separate from completion options since completion happens only once and a new merge will run every time the source branch of the pull request changes.
     */
-  var mergeOptions: GitPullRequestMergeOptions = js.native
+  var mergeOptions: GitPullRequestMergeOptions
   
   /**
     * The current status of the pull request merge.
     */
-  var mergeStatus: PullRequestAsyncStatus = js.native
+  var mergeStatus: PullRequestAsyncStatus
   
   /**
     * The ID of the pull request.
     */
-  var pullRequestId: Double = js.native
+  var pullRequestId: Double
   
   /**
     * Used internally.
     */
-  var remoteUrl: String = js.native
+  var remoteUrl: String
   
   /**
     * The repository containing the target branch of the pull request.
     */
-  var repository: GitRepository = js.native
+  var repository: GitRepository
   
   /**
     * A list of reviewers on the pull request along with the state of their votes.
     */
-  var reviewers: js.Array[IdentityRefWithVote] = js.native
+  var reviewers: js.Array[IdentityRefWithVote]
   
   /**
     * The name of the source branch of the pull request.
     */
-  var sourceRefName: String = js.native
+  var sourceRefName: String
   
   /**
     * The status of the pull request.
     */
-  var status: PullRequestStatus = js.native
+  var status: PullRequestStatus
   
   /**
     * If true, this pull request supports multiple iterations. Iteration support means individual pushes to the source branch of the pull request can be reviewed and comments left in one iteration will be tracked across future iterations.
     */
-  var supportsIterations: Boolean = js.native
+  var supportsIterations: Boolean
   
   /**
     * The name of the target branch of the pull request.
     */
-  var targetRefName: String = js.native
+  var targetRefName: String
   
   /**
     * The title of the pull request.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Used internally.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Any work item references associated with this pull request.
     */
-  var workItemRefs: js.Array[ResourceRef] = js.native
+  var workItemRefs: js.Array[ResourceRef]
 }
 object GitPullRequest {
   

@@ -4,14 +4,15 @@ import typings.ol.colorMod.Color
 import typings.ol.colorlikeMod.ColorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fillMod {
   
   @JSImport("ol/style/Fill", JSImport.Default)
   @js.native
-  class default () extends Fill {
+  class default ()
+    extends StObject
+       with Fill {
     def this(opt_options: Options) = this()
   }
   
@@ -30,10 +31,9 @@ object fillMod {
     def setColor(color: ColorLike): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var color: js.UndefOr[Color | ColorLike] = js.native
+    var color: js.UndefOr[Color | ColorLike] = js.undefined
   }
   object Options {
     

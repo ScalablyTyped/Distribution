@@ -5,26 +5,24 @@ import typings.kurentoClient.mod.ConnectionState
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'ConnectionStateChanged', {  oldState :kurento-client.kurento-client.ConnectionState,   newState :kurento-client.kurento-client.ConnectionState}> */
-@js.native
 trait EventConnectionStateChang extends StObject {
   
-  var newState: ConnectionState = js.native
+  var newState: ConnectionState
   
-  var oldState: ConnectionState = js.native
+  var oldState: ConnectionState
   
-  var source: String = js.native
+  var source: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: ConnectionStateChanged = js.native
+  var `type`: ConnectionStateChanged
 }
 object EventConnectionStateChang {
   
@@ -35,11 +33,10 @@ object EventConnectionStateChang {
     source: String,
     tags: js.Array[Tag],
     timestamp: String,
-    timestampMillis: String,
-    `type`: ConnectionStateChanged
+    timestampMillis: String
   ): EventConnectionStateChang = {
     val __obj = js.Dynamic.literal(newState = newState.asInstanceOf[js.Any], oldState = oldState.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ConnectionStateChanged")
     __obj.asInstanceOf[EventConnectionStateChang]
   }
   

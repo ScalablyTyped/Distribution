@@ -2,25 +2,23 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompiledCloudFormationTemplate extends StObject {
   
-  var compiledCloudFormationTemplate: Outputs = js.native
+  var compiledCloudFormationTemplate: Outputs
   
-  var name: String = js.native
+  var name: String
   
-  var region: String = js.native
+  var region: String
   
-  var runtime: js.UndefOr[String] = js.native
+  var runtime: js.UndefOr[String] = js.undefined
   
-  var stage: String = js.native
+  var stage: String
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var versionFunctions: Boolean = js.native
+  var versionFunctions: Boolean
 }
 object CompiledCloudFormationTemplate {
   

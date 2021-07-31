@@ -2,28 +2,26 @@ package typings.vinylFs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cwd extends StObject {
     
     /**
       * Specify the working directory the folder is relative to
       * Default is process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the mode the directory should be created with
       * Default is the process mode
       */
-    var dirMode: js.UndefOr[Double] = js.native
+    var dirMode: js.UndefOr[Double] = js.undefined
     
     /** Specify the mode the directory should be created with. Default is the process mode */
-    var mode: js.UndefOr[Double | String] = js.native
+    var mode: js.UndefOr[Double | String] = js.undefined
   }
   object Cwd {
     
@@ -56,20 +54,19 @@ object anon {
     }
   }
   
-  @js.native
   trait DirMode extends StObject {
     
     /**
       * Specify the working directory the folder is relative to
       * Default is process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the mode the directory should be created with
       * Default is the process mode
       */
-    var dirMode: js.UndefOr[Double] = js.native
+    var dirMode: js.UndefOr[Double] = js.undefined
   }
   object DirMode {
     

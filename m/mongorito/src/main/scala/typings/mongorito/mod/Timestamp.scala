@@ -2,7 +2,6 @@ package typings.mongorito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongorito", "Timestamp")
@@ -11,6 +10,10 @@ class Timestamp ()
   extends typings.mongodb.mod.Timestamp
 /* static members */
 object Timestamp {
+  
+  @JSImport("mongorito", "Timestamp")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mongorito", "Timestamp.MAX_VALUE")
   @js.native
@@ -37,28 +40,23 @@ object Timestamp {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @JSImport("mongorito", "Timestamp.fromBits")
-  @js.native
-  def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Timestamp = js.native
+  @scala.inline
+  def fromBits(lowBits: Double, highBits: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
   
   /** Returns a Timestamp represented by the given (32-bit) integer value */
-  @JSImport("mongorito", "Timestamp.fromInt")
-  @js.native
-  def fromInt(value: Double): typings.bson.mod.Timestamp = js.native
+  @scala.inline
+  def fromInt(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
   
   /** Returns a Timestamp representing the given number value, provided that it is a finite number. */
-  @JSImport("mongorito", "Timestamp.fromNumber")
-  @js.native
-  def fromNumber(value: Double): typings.bson.mod.Timestamp = js.native
+  @scala.inline
+  def fromNumber(value: Double): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
   
   /**
     * Returns a Timestamp from the given string.
     * @param opt_radix The radix in which the text is written. {default:10}
     */
-  @JSImport("mongorito", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String): typings.bson.mod.Timestamp = js.native
-  @JSImport("mongorito", "Timestamp.fromString")
-  @js.native
-  def fromString(str: String, opt_radix: Double): typings.bson.mod.Timestamp = js.native
+  @scala.inline
+  def fromString(str: String): typings.bson.mod.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Timestamp]
+  @scala.inline
+  def fromString(str: String, opt_radix: Double): typings.bson.mod.Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], opt_radix.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Timestamp]
 }

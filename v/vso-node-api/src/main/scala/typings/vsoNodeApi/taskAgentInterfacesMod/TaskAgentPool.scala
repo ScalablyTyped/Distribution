@@ -4,53 +4,53 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskAgentPool extends TaskAgentPoolReference {
+trait TaskAgentPool
+  extends StObject
+     with TaskAgentPoolReference {
   
   /**
     * Gets the administrators group for this agent pool.
     */
-  var administratorsGroup: IdentityRef = js.native
+  var administratorsGroup: IdentityRef
   
   /**
     * Gets or sets a value indicating whether or not a queue should be automatically provisioned for each project collection or not.
     */
-  var autoProvision: Boolean = js.native
+  var autoProvision: Boolean
   
   /**
     * Gets the identity who created this pool. The creator of the pool is automatically added into the administrators group for the pool on creation.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Gets the date/time of the pool creation.
     */
-  var createdOn: Date = js.native
+  var createdOn: Date
   
   /**
     * Gets the scope identifier for groups/roles which are owned by this pool.
     */
-  var groupScopeId: String = js.native
+  var groupScopeId: String
   
-  var properties: js.Any = js.native
+  var properties: js.Any
   
   /**
     * Gets a value indicating whether or not roles have been provisioned for this pool.
     */
-  var provisioned: Boolean = js.native
+  var provisioned: Boolean
   
   /**
     * Gets the service accounts group for this agent pool.
     */
-  var serviceAccountsGroup: IdentityRef = js.native
+  var serviceAccountsGroup: IdentityRef
   
   /**
     * Gets the current size of the pool.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object TaskAgentPool {
   

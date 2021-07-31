@@ -10,7 +10,6 @@ import typings.maximMazurokGapiClientOslogin.anon.Key
 import typings.maximMazurokGapiClientOslogin.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -20,17 +19,15 @@ object gapi {
     object oslogin {
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait ImportSshPublicKeyResponse extends StObject {
         
         /** Detailed information about import results. */
-        var details: js.UndefOr[String] = js.native
+        var details: js.UndefOr[String] = js.undefined
         
         /** The login profile information for the user. */
-        var loginProfile: js.UndefOr[LoginProfile] = js.native
+        var loginProfile: js.UndefOr[LoginProfile] = js.undefined
       }
       object ImportSshPublicKeyResponse {
         
@@ -57,21 +54,20 @@ object gapi {
         }
       }
       
-      @js.native
       trait LoginProfile extends StObject {
         
         /** Required. A unique user ID. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The list of POSIX accounts associated with the user. */
-        var posixAccounts: js.UndefOr[js.Array[PosixAccount]] = js.native
+        var posixAccounts: js.UndefOr[js.Array[PosixAccount]] = js.undefined
         
         /** A map from SSH public key fingerprint to the associated key object. */
         var sshPublicKeys: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-          */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[js.Any]
+              ] = js.undefined
       }
       object LoginProfile {
         
@@ -103,7 +99,7 @@ object gapi {
           def setSshPublicKeys(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: @maxim_mazurok/gapi.client.oslogin.gapi.client.oslogin.SshPublicKey}
-            */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientOslogin.maximMazurokGapiClientOsloginStrings.LoginProfile & TopLevel[js.Any]
           ): Self = StObject.set(x, "sshPublicKeys", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -111,41 +107,40 @@ object gapi {
         }
       }
       
-      @js.native
       trait PosixAccount extends StObject {
         
         /** Output only. A POSIX account identifier. */
-        var accountId: js.UndefOr[String] = js.native
+        var accountId: js.UndefOr[String] = js.undefined
         
         /** The GECOS (user information) entry for this account. */
-        var gecos: js.UndefOr[String] = js.native
+        var gecos: js.UndefOr[String] = js.undefined
         
         /** The default group ID. */
-        var gid: js.UndefOr[String] = js.native
+        var gid: js.UndefOr[String] = js.undefined
         
         /** The path to the home directory for this account. */
-        var homeDirectory: js.UndefOr[String] = js.native
+        var homeDirectory: js.UndefOr[String] = js.undefined
         
         /** Output only. The canonical resource name. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The operating system type where this account applies. */
-        var operatingSystemType: js.UndefOr[String] = js.native
+        var operatingSystemType: js.UndefOr[String] = js.undefined
         
         /** Only one POSIX account can be marked as primary. */
-        var primary: js.UndefOr[Boolean] = js.native
+        var primary: js.UndefOr[Boolean] = js.undefined
         
         /** The path to the logic shell for this account. */
-        var shell: js.UndefOr[String] = js.native
+        var shell: js.UndefOr[String] = js.undefined
         
         /** System identifier for which account the username or uid applies to. By default, the empty value is used. */
-        var systemId: js.UndefOr[String] = js.native
+        var systemId: js.UndefOr[String] = js.undefined
         
         /** The user ID. */
-        var uid: js.UndefOr[String] = js.native
+        var uid: js.UndefOr[String] = js.undefined
         
         /** The username of the POSIX account. */
-        var username: js.UndefOr[String] = js.native
+        var username: js.UndefOr[String] = js.undefined
       }
       object PosixAccount {
         
@@ -234,20 +229,19 @@ object gapi {
         def delete(request: Accesstoken): Request[js.Object] = js.native
       }
       
-      @js.native
       trait SshPublicKey extends StObject {
         
         /** An expiration time in microseconds since epoch. */
-        var expirationTimeUsec: js.UndefOr[String] = js.native
+        var expirationTimeUsec: js.UndefOr[String] = js.undefined
         
         /** Output only. The SHA-256 fingerprint of the SSH public key. */
-        var fingerprint: js.UndefOr[String] = js.native
+        var fingerprint: js.UndefOr[String] = js.undefined
         
         /** Public key text in SSH format, defined by RFC4253 section 6.6. */
-        var key: js.UndefOr[String] = js.native
+        var key: js.UndefOr[String] = js.undefined
         
         /** Output only. The canonical resource name. */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
       }
       object SshPublicKey {
         

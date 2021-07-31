@@ -7,12 +7,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.low
 import typings.arcgisJsApi.arcgisJsApiStrings.medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneViewProperties
-  extends ViewProperties
+  extends StObject
+     with ViewProperties
      with BreakpointsOwnerProperties {
   
   /**
@@ -20,91 +19,91 @@ trait SceneViewProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#alphaCompositingEnabled)
     */
-  var alphaCompositingEnabled: js.UndefOr[Boolean] = js.native
+  var alphaCompositingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The observation point from which the visible portion (or perspective) of the SceneView is determined.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#camera)
     */
-  var camera: js.UndefOr[CameraProperties] = js.native
+  var camera: js.UndefOr[CameraProperties] = js.undefined
   
   /**
     * Represents the view's center point; when setting the center you may pass a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instance or an array of numbers representing at longitude/latitude pair (`[-100.4593, 36.9014]`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#center)
     */
-  var center: js.UndefOr[PointProperties | js.Array[Double]] = js.native
+  var center: js.UndefOr[PointProperties | js.Array[Double]] = js.undefined
   
   /**
     * Represents an optional clipping area used to define the visible [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of a local scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#clippingArea)
     */
-  var clippingArea: js.UndefOr[ExtentProperties] = js.native
+  var clippingArea: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * Specifies constraints for [Camera tilt](esri-Camera.html#tilt) and altitude that may be applied to the SceneView.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
-  var constraints: js.UndefOr[SceneViewConstraintsProperties] = js.native
+  var constraints: js.UndefOr[SceneViewConstraintsProperties] = js.undefined
   
   /**
     * Specifies various properties of the environment's visualization in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var environment: js.UndefOr[SceneViewEnvironmentProperties] = js.native
+  var environment: js.UndefOr[SceneViewEnvironmentProperties] = js.undefined
   
   /**
     * The extent represents the visible portion of a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html) within the view as an instance of [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#extent)
     */
-  var extent: js.UndefOr[ExtentProperties] = js.native
+  var extent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * Options for configuring the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var highlightOptions: js.UndefOr[SceneViewHighlightOptionsProperties] = js.native
+  var highlightOptions: js.UndefOr[SceneViewHighlightOptionsProperties] = js.undefined
   
   /**
     * SceneView can draw scenes in three different quality modes: `high`, `medium` and `low`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#qualityProfile)
     */
-  var qualityProfile: js.UndefOr[low | medium | high] = js.native
+  var qualityProfile: js.UndefOr[low | medium | high] = js.undefined
   
   /**
     * Represents an approximation of the map scale at the center of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#scale)
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The viewing mode (`local` or `global`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewingMode)
     */
-  var viewingMode: js.UndefOr[global | local] = js.native
+  var viewingMode: js.UndefOr[global | local] = js.undefined
   
   /**
     * Represents the current view as a [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html) or point of observation on the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
   
   /**
     * Represents the level of detail (LOD) at the center of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#zoom)
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object SceneViewProperties {
   

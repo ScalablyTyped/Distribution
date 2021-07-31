@@ -10,9 +10,9 @@ Add padding to your views to account for notches, home indicators, status bar, a
 | ------------------ | :-------------: |
 | Full name          | react-native-safe-area-view |
 | Keywords           | react-native, iPhoneX, SafeAreaView, safe area, notch |
-| # releases         | 23 |
+| # releases         | 21 |
 | # dependents       | 80 |
-| # downloads        | 13715566 |
+| # downloads        | 12955276 |
 | # stars            | 0 |
 
 ## Links

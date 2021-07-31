@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The tag's key.
     */
-  var Key: js.UndefOr[typings.awsSdk.codedeployMod.Key] = js.native
+  var Key: js.UndefOr[typings.awsSdk.codedeployMod.Key] = js.undefined
   
   /**
     * The tag's value.
     */
-  var Value: js.UndefOr[typings.awsSdk.codedeployMod.Value] = js.native
+  var Value: js.UndefOr[typings.awsSdk.codedeployMod.Value] = js.undefined
 }
 object Tag {
   

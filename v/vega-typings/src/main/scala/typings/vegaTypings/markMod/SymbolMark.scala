@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.SymbolEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[SymbolEncodeEntry]
      with Mark {
   
-  var `type`: symbol = js.native
+  var `type`: symbol
 }
 object SymbolMark {
   
   @scala.inline
-  def apply(`type`: symbol): SymbolMark = {
+  def apply(): SymbolMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("symbol")
     __obj.asInstanceOf[SymbolMark]
   }
   

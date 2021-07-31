@@ -2,19 +2,17 @@ package typings.acmeClient.rfc8555Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountCreateRequest extends StObject {
   
-  var contact: js.UndefOr[js.Array[String]] = js.native
+  var contact: js.UndefOr[js.Array[String]] = js.undefined
   
-  var externalAccountBinding: js.UndefOr[js.Object] = js.native
+  var externalAccountBinding: js.UndefOr[js.Object] = js.undefined
   
-  var onlyReturnExisting: js.UndefOr[Boolean] = js.native
+  var onlyReturnExisting: js.UndefOr[Boolean] = js.undefined
   
-  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.native
+  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
 }
 object AccountCreateRequest {
   

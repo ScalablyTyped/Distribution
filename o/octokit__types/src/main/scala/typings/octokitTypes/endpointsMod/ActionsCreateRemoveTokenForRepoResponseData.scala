@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsCreateRemoveTokenForRepoResponseData extends StObject {
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var token: String = js.native
+  var token: String
 }
 object ActionsCreateRemoveTokenForRepoResponseData {
   

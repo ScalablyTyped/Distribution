@@ -3,22 +3,22 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtensionState extends InstalledExtensionState {
+trait ExtensionState
+  extends StObject
+     with InstalledExtensionState {
   
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * The time at which the version was last checked
     */
-  var lastVersionCheck: Date = js.native
+  var lastVersionCheck: Date
   
-  var publisherName: String = js.native
+  var publisherName: String
   
-  var version: String = js.native
+  var version: String
 }
 object ExtensionState {
   

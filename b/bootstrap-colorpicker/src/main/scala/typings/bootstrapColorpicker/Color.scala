@@ -3,66 +3,64 @@ package typings.bootstrapColorpicker
 import typings.bootstrapColorpicker.anon.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var fallbackFormat: String = js.native
+  var fallbackFormat: String
   
-  var fallbackValue: String = js.native
+  var fallbackValue: String
   
-  var hexNumberSignPrefix: Boolean = js.native
+  var hexNumberSignPrefix: Boolean
   
-  var origFormat: String = js.native
+  var origFormat: String
   
   /**
     * Set the transparency with a value between 0 and 1.
     */
-  def setAlpha(value: Double): Unit = js.native
+  def setAlpha(value: Double): Unit
   
   /**
     * Set the brightness with a value between 0 and 1.
     */
-  def setBrightness(value: Double): Unit = js.native
+  def setBrightness(value: Double): Unit
   
   /**
     * Set a new color. The value is parsed and tries to do a quess on the format.
     */
-  def setColor(value: String): Unit = js.native
+  def setColor(value: String): Unit
   
   /**
     * Set the HUE with a value between 0 and 1.
     */
-  def setHue(value: Double): Unit = js.native
+  def setHue(value: Double): Unit
   
   /**
     * Set the saturation with a value between 0 and 1.
     */
-  def setSaturation(value: Double): Unit = js.native
+  def setSaturation(value: Double): Unit
   
   /**
     * Returns a hash with HSLA values.
     */
-  def toHSL(): String = js.native
+  def toHSL(): String
   
   /**
     * Returns a string with HEX format for the current color.
     */
-  def toHex(): String = js.native
+  def toHex(): String
   
   /**
     * Returns a hash with red, green, blue and alpha.
     */
-  def toRGB(): String = js.native
+  def toRGB(): String
   
   /**
     * Returns current color as string in specified format.
     */
-  def toString(format: ColorFormat): String = js.native
+  def toString(format: ColorFormat): String
   
-  var value: A = js.native
+  var value: A
 }
 object Color {
   

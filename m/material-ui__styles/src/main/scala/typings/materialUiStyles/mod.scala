@@ -43,10 +43,13 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@material-ui/styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@material-ui/styles", "ServerStyleSheets")
   @js.native
@@ -62,105 +65,120 @@ object mod {
   @js.native
   val StylesProvider: ComponentType[StylesProviderProps] = js.native
   
-  @JSImport("@material-ui/styles", "ThemeProvider")
-  @js.native
-  def ThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = js.native
+  @scala.inline
+  def ThemeProvider[T](props: ThemeProviderProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@material-ui/styles", "createGenerateClassName")
-  @js.native
-  def createGenerateClassName(): GenerateId = js.native
-  @JSImport("@material-ui/styles", "createGenerateClassName")
-  @js.native
-  def createGenerateClassName(options: GenerateClassNameOptions): GenerateId = js.native
+  @scala.inline
+  def createGenerateClassName(): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")().asInstanceOf[GenerateId]
+  @scala.inline
+  def createGenerateClassName(options: GenerateClassNameOptions): GenerateId = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")(options.asInstanceOf[js.Any]).asInstanceOf[GenerateId]
   
-  @JSImport("@material-ui/styles", "createStyles")
-  @js.native
-  def createStyles[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = js.native
+  @scala.inline
+  def createStyles[ClassKey /* <: String */, Props /* <: js.Object */](styles: StyleRules[Props, ClassKey]): StyleRules[Props, ClassKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[StyleRules[Props, ClassKey]]
   
-  @JSImport("@material-ui/styles", "getThemeProps")
-  @js.native
-  def getThemeProps[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
+  @scala.inline
+  def getThemeProps[Theme /* <: ThemeWithProps[js.Any] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props & (ThemedProps[Theme, Name]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeProps")(params.asInstanceOf[js.Any]).asInstanceOf[Props & (ThemedProps[Theme, Name])]
   
-  @JSImport("@material-ui/styles", "jssPreset")
-  @js.native
-  def jssPreset(): JssOptions = js.native
+  @scala.inline
+  def jssPreset(): JssOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[JssOptions]
   
-  @JSImport("@material-ui/styles", "makeStyles")
-  @js.native
-  def makeStyles[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
-  @JSImport("@material-ui/styles", "makeStyles")
-  @js.native
-  def makeStyles_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = js.native
-  @JSImport("@material-ui/styles", "makeStyles")
-  @js.native
-  def makeStyles_withTheme[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = js.native
-  @JSImport("@material-ui/styles", "makeStyles")
-  @js.native
-  def makeStyles_withTheme_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = js.native
+  @scala.inline
+  def makeStyles[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(style.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]]]
   
-  @JSImport("@material-ui/styles", "mergeClasses")
-  @js.native
-  def mergeClasses(): Classes = js.native
-  @JSImport("@material-ui/styles", "mergeClasses")
-  @js.native
-  def mergeClasses(options: MergeClassesOption): Classes = js.native
+  @scala.inline
+  def makeStyles_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ Props, ClassNameMap[ClassKey]]]
   
-  @JSImport("@material-ui/styles", "styled")
-  @js.native
-  def styled[Component /* <: ElementType[_] */](Component: Component): ComponentCreator[Component] = js.native
+  @scala.inline
+  def makeStyles_withTheme[Theme, ClassKey /* <: String */](style: Styles[Theme, js.Object, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ js.UndefOr[js.Any], ClassNameMap[ClassKey]]]
   
-  @JSImport("@material-ui/styles", "useTheme")
-  @js.native
-  def useTheme[T](): T = js.native
+  @scala.inline
+  def makeStyles_withTheme_ThemeProps_ObjectClassKey_String[Theme, Props /* <: js.Object */, ClassKey /* <: String */](styles: Styles[Theme, Props, ClassKey], options: Omit[WithStylesOptions[Theme], withTheme]): js.Function1[/* props */ Props, ClassNameMap[ClassKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeStyles")(styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ Props, ClassNameMap[ClassKey]]]
   
-  @JSImport("@material-ui/styles", "withStyles")
-  @js.native
-  def withStyles[StylesType /* <: Styles[_, _, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType): PropInjector[
+  @scala.inline
+  def mergeClasses(): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")().asInstanceOf[Classes]
+  @scala.inline
+  def mergeClasses(options: MergeClassesOption): Classes = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeClasses")(options.asInstanceOf[js.Any]).asInstanceOf[Classes]
+  
+  @scala.inline
+  def styled[Component /* <: ElementType[js.Any] */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("styled")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
+  
+  @scala.inline
+  def useTheme[T](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[T]
+  
+  @scala.inline
+  def withStyles[StylesType /* <: Styles[js.Any, js.Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType): PropInjector[
     WithStyles[
       StylesType, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
-    StyledComponentProps[ClassKeyOfStyles[StylesType]] with PropsOfStyles[StylesType]
-  ] = js.native
-  @JSImport("@material-ui/styles", "withStyles")
-  @js.native
-  def withStyles[StylesType /* <: Styles[_, _, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType, options: Options): PropInjector[
+    StyledComponentProps[ClassKeyOfStyles[StylesType]] & PropsOfStyles[StylesType]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any]).asInstanceOf[PropInjector[
     WithStyles[
       StylesType, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
-    StyledComponentProps[ClassKeyOfStyles[StylesType]] with PropsOfStyles[StylesType]
-  ] = js.native
+    StyledComponentProps[ClassKeyOfStyles[StylesType]] & PropsOfStyles[StylesType]
+  ]]
+  @scala.inline
+  def withStyles[StylesType /* <: Styles[js.Any, js.Any, String] */, Options /* <: WithStylesOptions[ThemeOfStyles[StylesType]] */](style: StylesType, options: Options): PropInjector[
+    WithStyles[
+      StylesType, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKeyOfStyles[StylesType]] & PropsOfStyles[StylesType]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStyles")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropInjector[
+    WithStyles[
+      StylesType, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKeyOfStyles[StylesType]] & PropsOfStyles[StylesType]
+  ]]
   
-  @JSImport("@material-ui/styles", "withTheme")
-  @js.native
-  def withTheme[Theme](component: ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]): ComponentType[
+  @scala.inline
+  def withTheme[Theme](
+    component: ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+  ): ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState], 
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
         ComponentProps[
-          ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
-  @JSImport("@material-ui/styles", "withTheme")
-  @js.native
-  def withTheme[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
-        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
+        ComponentProps[
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+        ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
+  @scala.inline
+  def withTheme[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
   
-  @JSImport("@material-ui/styles", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
-  @JSImport("@material-ui/styles", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
+  @scala.inline
+  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")().asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
+  @scala.inline
+  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")(option.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
 }

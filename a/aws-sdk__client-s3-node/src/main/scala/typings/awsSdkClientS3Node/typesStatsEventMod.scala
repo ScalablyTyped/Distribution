@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Node.typesStatsMod.Stats
 import typings.awsSdkClientS3Node.typesStatsMod.UnmarshalledStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesStatsEventMod {
   
-  @js.native
   trait StatsEvent extends StObject {
     
     /**
       * <p>The Stats event details.</p>
       */
-    var Details: js.UndefOr[Stats] = js.native
+    var Details: js.UndefOr[Stats] = js.undefined
   }
   object StatsEvent {
     
@@ -36,14 +34,15 @@ object typesStatsEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledStatsEvent extends StatsEvent {
+  trait UnmarshalledStatsEvent
+    extends StObject
+       with StatsEvent {
     
     /**
       * <p>The Stats event details.</p>
       */
     @JSName("Details")
-    var Details_UnmarshalledStatsEvent: js.UndefOr[UnmarshalledStats] = js.native
+    var Details_UnmarshalledStatsEvent: js.UndefOr[UnmarshalledStats] = js.undefined
   }
   object UnmarshalledStatsEvent {
     

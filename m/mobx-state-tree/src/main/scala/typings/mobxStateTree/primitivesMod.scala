@@ -5,10 +5,13 @@ import typings.mobxStateTree.typeMod.IType
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object primitivesMod {
+  
+  @JSImport("mobx-state-tree/dist/types/primitives", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx-state-tree/dist/types/primitives", "DatePrimitive")
   @js.native
@@ -22,15 +25,14 @@ object primitivesMod {
   @js.native
   val integer: ISimpleType[Double] = js.native
   
-  @JSImport("mobx-state-tree/dist/types/primitives", "isPrimitiveType")
-  @js.native
+  @scala.inline
   def isPrimitiveType(
     `type`: IType[
       Boolean | Date | Double | String, 
       Boolean | Double | String, 
       Boolean | Date | Double | String
     ]
-  ): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = js.native
+  ): /* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitiveType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is mobx-state-tree.mobx-state-tree/dist/core/type/type.IType<string, string, string> */ Boolean]
   
   @JSImport("mobx-state-tree/dist/types/primitives", "nullType")
   @js.native
@@ -46,5 +48,5 @@ object primitivesMod {
   
   @JSImport("mobx-state-tree/dist/types/primitives", "undefinedType")
   @js.native
-  val undefinedType: ISimpleType[js.UndefOr[scala.Nothing]] = js.native
+  val undefinedType: ISimpleType[Unit] = js.native
 }

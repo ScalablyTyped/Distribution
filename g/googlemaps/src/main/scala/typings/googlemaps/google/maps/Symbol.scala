@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can be used as the icon of a marker, or placed on a polyline.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol Maps JavaScript API}
   */
-@js.native
 trait Symbol extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait Symbol extends StObject {
     * @default new google.maps.Point(0, 0)
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.anchor Maps JavaScript API}
     */
-  var anchor: js.UndefOr[Point] = js.native
+  var anchor: js.UndefOr[Point] = js.undefined
   
   /**
     * The symbol's fill color. All CSS3 colors are supported except for
@@ -30,14 +28,14 @@ trait Symbol extends StObject {
     * corresponding polyline.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.fillColor Maps JavaScript API}
     */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol's fill opacity.
     * @default 1
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.fillOpacity Maps JavaScript API}
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The origin of the label relative to the origin of the path, if label is
@@ -47,7 +45,7 @@ trait Symbol extends StObject {
     * @default new google.maps.Point(0, 0)
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.labelOrigin Maps JavaScript API}
     */
-  var labelOrigin: js.UndefOr[Point] = js.native
+  var labelOrigin: js.UndefOr[Point] = js.undefined
   
   /**
     * The symbol's path, which is a built-in symbol path, or a custom path
@@ -55,7 +53,7 @@ trait Symbol extends StObject {
     * {@link http://www.w3.org/TR/SVG/paths.html#PathData SVG path notation}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.path Maps JavaScript API}
     */
-  var path: SymbolPath | String = js.native
+  var path: SymbolPath | String
   
   /**
     * The angle by which to rotate the symbol, expressed clockwise in degrees.
@@ -65,7 +63,7 @@ trait Symbol extends StObject {
     * @default 0
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.rotation Maps JavaScript API}
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount by which the symbol is scaled in size. For symbol markers,
@@ -75,7 +73,7 @@ trait Symbol extends StObject {
     * size centered at the symbol's anchor.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.scale Maps JavaScript API}
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The symbol's stroke color. All CSS3 colors are supported except for
@@ -83,7 +81,7 @@ trait Symbol extends StObject {
     * symbols on a polyline, this defaults to the stroke color of the polyline.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.strokeColor Maps JavaScript API}
     */
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
     * The symbol's stroke opacity. For symbol markers, this defaults to 1. For
@@ -91,13 +89,13 @@ trait Symbol extends StObject {
     * polyline.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.strokeOpacity Maps JavaScript API}
     */
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The symbol's stroke weight. Defaults to the scale of the symbol.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/marker#Symbol.strokeWeight Maps JavaScript API}
     */
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
 }
 object Symbol {
   

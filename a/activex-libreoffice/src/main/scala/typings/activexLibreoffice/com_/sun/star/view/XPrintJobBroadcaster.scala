@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPrintJobListener
   * @since OOo 1.1.2
   */
-@js.native
-trait XPrintJobBroadcaster extends XInterface {
+trait XPrintJobBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds an {@link XPrintJobListener} to be notified about print progress. */
-  def addPrintJobListener(xListener: XPrintJobListener): Unit = js.native
+  def addPrintJobListener(xListener: XPrintJobListener): Unit
   
   /** removes an {@link XPrintJobListener} . */
-  def removePrintJobListener(xListener: XPrintJobListener): Unit = js.native
+  def removePrintJobListener(xListener: XPrintJobListener): Unit
 }
 object XPrintJobBroadcaster {
   

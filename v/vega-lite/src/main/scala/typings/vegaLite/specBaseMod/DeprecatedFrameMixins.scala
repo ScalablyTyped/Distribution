@@ -5,26 +5,24 @@ import typings.vegaLite.vegaLiteStrings.container
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeprecatedFrameMixins extends StObject {
   
   /**
     * __Deprecated:__ Please avoid using width in a unit spec that's a part of a layer spec.
     */
-  var height: js.UndefOr[Double | container | Step] = js.native
+  var height: js.UndefOr[Double | container | Step] = js.undefined
   
   /**
     * __Deprecated:__ Please avoid using width in a unit spec that's a part of a layer spec.
     */
-  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.native
+  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.undefined
   
   /**
     * __Deprecated:__ Please avoid using width in a unit spec that's a part of a layer spec.
     */
-  var width: js.UndefOr[Double | container | Step] = js.native
+  var width: js.UndefOr[Double | container | Step] = js.undefined
 }
 object DeprecatedFrameMixins {
   

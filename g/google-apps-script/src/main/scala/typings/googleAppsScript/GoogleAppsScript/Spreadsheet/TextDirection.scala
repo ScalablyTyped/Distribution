@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait TextDirection extends StObject
 object TextDirection extends StObject {
   
   @js.native
-  sealed trait LEFT_TO_RIGHT extends TextDirection
+  sealed trait LEFT_TO_RIGHT
+    extends StObject
+       with TextDirection
   
   @js.native
-  sealed trait RIGHT_TO_LEFT extends TextDirection
+  sealed trait RIGHT_TO_LEFT
+    extends StObject
+       with TextDirection
 }

@@ -2,7 +2,6 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait PageContentLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageLoadOptions] = js.native
+  var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var ink: js.UndefOr[FloatingInkLoadOptions] = js.native
+  var ink: js.UndefOr[FloatingInkLoadOptions] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var outline: js.UndefOr[OutlineLoadOptions] = js.native
+  var outline: js.UndefOr[OutlineLoadOptions] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentPage: js.UndefOr[PageLoadOptions] = js.native
+  var parentPage: js.UndefOr[PageLoadOptions] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait PageContentLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
 }
 object PageContentLoadOptions {
   

@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the counts for various email message attributes such as flagged, important, unread, and so on. */
-@js.native
 trait EmailItemCounts extends StObject {
   
   /** Gets the number of flagged email messages. */
-  var flagged: Double = js.native
+  var flagged: Double
   
   /** Gets the number of important email messages. */
-  var important: Double = js.native
+  var important: Double
   
   /** Gets the total number of email messages */
-  var total: Double = js.native
+  var total: Double
   
   /** Gets the number of unread email messages. */
-  var unread: Double = js.native
+  var unread: Double
 }
 object EmailItemCounts {
   

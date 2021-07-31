@@ -2,76 +2,74 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
     */
-  var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.native
+  var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.undefined
   
   /**
     * The configuration for the EC2 Fleet.
     */
-  var LaunchTemplateConfigs: FleetLaunchTemplateConfigListRequest = js.native
+  var LaunchTemplateConfigs: FleetLaunchTemplateConfigListRequest
   
   /**
     * Describes the configuration of On-Demand Instances in an EC2 Fleet.
     */
-  var OnDemandOptions: js.UndefOr[OnDemandOptionsRequest] = js.native
+  var OnDemandOptions: js.UndefOr[OnDemandOptionsRequest] = js.undefined
   
   /**
     * Indicates whether EC2 Fleet should replace unhealthy instances.
     */
-  var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.native
+  var ReplaceUnhealthyInstances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Describes the configuration of Spot Instances in an EC2 Fleet.
     */
-  var SpotOptions: js.UndefOr[SpotOptionsRequest] = js.native
+  var SpotOptions: js.UndefOr[SpotOptionsRequest] = js.undefined
   
   /**
     * The key-value pair for tagging the EC2 Fleet request on creation. The value for ResourceType must be fleet, otherwise the fleet request fails. To tag instances at launch, specify the tags in the launch template. For information about tagging after launch, see Tagging your resources.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The number of units to request.
     */
-  var TargetCapacitySpecification: TargetCapacitySpecificationRequest = js.native
+  var TargetCapacitySpecification: TargetCapacitySpecificationRequest
   
   /**
     * Indicates whether running instances should be terminated when the EC2 Fleet expires.
     */
-  var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.native
+  var TerminateInstancesWithExpiration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of request. The default value is maintain.    maintain - The EC2 Fleet plaees an asynchronous request for your desired capacity, and continues to maintain your desired Spot capacity by replenishing interrupted Spot Instances.    request - The EC2 Fleet places an asynchronous one-time request for your desired capacity, but does submit Spot requests in alternative capacity pools if Spot capacity is unavailable, and does not maintain Spot capacity if Spot Instances are interrupted.    instant - The EC2 Fleet places a synchronous one-time request for your desired capacity, and returns errors for any instances that could not be launched.   For more information, see EC2 Fleet request types in the Amazon Elastic Compute Cloud User Guide.
     */
-  var Type: js.UndefOr[FleetType] = js.native
+  var Type: js.UndefOr[FleetType] = js.undefined
   
   /**
     * The start date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately.
     */
-  var ValidFrom: js.UndefOr[DateTime] = js.native
+  var ValidFrom: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The end date and time of the request, in UTC format (for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new EC2 Fleet requests are placed or able to fulfill the request. If no value is specified, the request remains until you cancel it.
     */
-  var ValidUntil: js.UndefOr[DateTime] = js.native
+  var ValidUntil: js.UndefOr[DateTime] = js.undefined
 }
 object CreateFleetRequest {
   

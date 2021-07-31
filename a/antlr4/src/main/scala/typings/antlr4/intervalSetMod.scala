@@ -3,7 +3,6 @@ package typings.antlr4
 import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object intervalSetMod {
@@ -58,17 +57,13 @@ object intervalSetMod {
     
     def toIndexString(): String = js.native
     
-    def toString(
-      literalNames: js.UndefOr[scala.Nothing],
-      symbolicNames: js.UndefOr[scala.Nothing],
-      elemsAreChar: Boolean
-    ): String = js.native
-    def toString(literalNames: js.UndefOr[scala.Nothing], symbolicNames: js.Array[String]): String = js.native
-    def toString(literalNames: js.UndefOr[scala.Nothing], symbolicNames: js.Array[String], elemsAreChar: Boolean): String = js.native
     def toString(literalNames: js.Array[String]): String = js.native
-    def toString(literalNames: js.Array[String], symbolicNames: js.UndefOr[scala.Nothing], elemsAreChar: Boolean): String = js.native
     def toString(literalNames: js.Array[String], symbolicNames: js.Array[String]): String = js.native
     def toString(literalNames: js.Array[String], symbolicNames: js.Array[String], elemsAreChar: Boolean): String = js.native
+    def toString(literalNames: js.Array[String], symbolicNames: Unit, elemsAreChar: Boolean): String = js.native
+    def toString(literalNames: Unit, symbolicNames: js.Array[String]): String = js.native
+    def toString(literalNames: Unit, symbolicNames: js.Array[String], elemsAreChar: Boolean): String = js.native
+    def toString(literalNames: Unit, symbolicNames: Unit, elemsAreChar: Boolean): String = js.native
     
     def toTokenString(literalNames: js.Array[String], symbolicNames: js.Array[String]): String = js.native
   }

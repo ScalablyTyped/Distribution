@@ -2,31 +2,29 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNotificationSubscriptionRequest extends StObject {
   
   /**
     * The endpoint to receive the notifications. If the protocol is HTTPS, the endpoint is a URL that begins with https.
     */
-  var Endpoint: SubscriptionEndPointType = js.native
+  var Endpoint: SubscriptionEndPointType
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: IdType = js.native
+  var OrganizationId: IdType
   
   /**
     * The protocol to use. The supported value is https, which delivers JSON-encoded messages using HTTPS POST.
     */
-  var Protocol: SubscriptionProtocolType = js.native
+  var Protocol: SubscriptionProtocolType
   
   /**
     * The notification type.
     */
-  var SubscriptionType: typings.awsSdk.workdocsMod.SubscriptionType = js.native
+  var SubscriptionType: typings.awsSdk.workdocsMod.SubscriptionType
 }
 object CreateNotificationSubscriptionRequest {
   

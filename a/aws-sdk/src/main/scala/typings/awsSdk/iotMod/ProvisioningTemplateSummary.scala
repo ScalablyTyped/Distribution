@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningTemplateSummary extends StObject {
   
   /**
     * The date when the fleet provisioning template summary was created.
     */
-  var creationDate: js.UndefOr[DateType] = js.native
+  var creationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The description of the fleet provisioning template.
     */
-  var description: js.UndefOr[TemplateDescription] = js.native
+  var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
     * True if the fleet provision template is enabled, otherwise false.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The date when the fleet provisioning template summary was last modified.
     */
-  var lastModifiedDate: js.UndefOr[DateType] = js.native
+  var lastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The ARN of the fleet provisioning template.
     */
-  var templateArn: js.UndefOr[TemplateArn] = js.native
+  var templateArn: js.UndefOr[TemplateArn] = js.undefined
   
   /**
     * The name of the fleet provisioning template.
     */
-  var templateName: js.UndefOr[TemplateName] = js.native
+  var templateName: js.UndefOr[TemplateName] = js.undefined
 }
 object ProvisioningTemplateSummary {
   

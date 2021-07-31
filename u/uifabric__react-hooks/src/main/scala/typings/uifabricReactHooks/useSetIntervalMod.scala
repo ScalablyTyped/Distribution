@@ -2,21 +2,22 @@ package typings.uifabricReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useSetIntervalMod {
   
-  @JSImport("@uifabric/react-hooks/lib/useSetInterval", "useSetInterval")
+  @JSImport("@uifabric/react-hooks/lib/useSetInterval", JSImport.Namespace)
   @js.native
-  def useSetInterval(): UseSetIntervalReturnType = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useSetInterval(): UseSetIntervalReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetInterval")().asInstanceOf[UseSetIntervalReturnType]
+  
   trait UseSetIntervalReturnType extends StObject {
     
-    def clearInterval(id: Double): Unit = js.native
+    def clearInterval(id: Double): Unit
     
-    def setInterval(callback: js.Function0[Unit], duration: Double): Double = js.native
+    def setInterval(callback: js.Function0[Unit], duration: Double): Double
   }
   object UseSetIntervalReturnType {
     

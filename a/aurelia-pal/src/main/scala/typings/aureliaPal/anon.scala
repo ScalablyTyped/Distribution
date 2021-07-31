@@ -2,23 +2,21 @@ package typings.aureliaPal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofXMLHttpRequest extends StObject {
     
-    val DONE: Double = js.native
+    val DONE: Double
     
-    val HEADERS_RECEIVED: Double = js.native
+    val HEADERS_RECEIVED: Double
     
-    val LOADING: Double = js.native
+    val LOADING: Double
     
-    val OPENED: Double = js.native
+    val OPENED: Double
     
-    val UNSENT: Double = js.native
+    val UNSENT: Double
   }
   object TypeofXMLHttpRequest {
     

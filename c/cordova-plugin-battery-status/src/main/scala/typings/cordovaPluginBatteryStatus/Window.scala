@@ -2,7 +2,6 @@ package typings.cordovaPluginBatteryStatus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,8 +19,12 @@ trait Window extends StObject {
     * @param listener   - The function that executes when the event fires. The function is passed an BatteryStatusEvent object as a parameter.
     * @param useCapture - A Boolean indicating whether events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.
     */
-  def addEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, _]): Unit = js.native
-  def addEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, _], useCapture: Boolean): Unit = js.native
+  def addEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, js.Any]): Unit = js.native
+  def addEventListener(
+    `type`: batteryEvent,
+    listener: js.Function1[/* ev */ BatteryStatusEvent, js.Any],
+    useCapture: Boolean
+  ): Unit = js.native
   
   def onbatterycritical(`type`: BatteryStatusEvent): Unit = js.native
   
@@ -41,6 +44,10 @@ trait Window extends StObject {
     * @param callback   - The function that executes when the event fires. The function is passed an BatteryStatusEvent object as a parameter.
     * @param useCapture - A Boolean indicating whether events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.
     */
-  def removeEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, _]): Unit = js.native
-  def removeEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, _], useCapture: Boolean): Unit = js.native
+  def removeEventListener(`type`: batteryEvent, listener: js.Function1[/* ev */ BatteryStatusEvent, js.Any]): Unit = js.native
+  def removeEventListener(
+    `type`: batteryEvent,
+    listener: js.Function1[/* ev */ BatteryStatusEvent, js.Any],
+    useCapture: Boolean
+  ): Unit = js.native
 }

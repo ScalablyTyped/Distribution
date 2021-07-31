@@ -4,17 +4,17 @@ import typings.openfin.eventsBaseMod.WindowEvent
 import typings.openfin.identityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewDetached[Topic, Type] extends WindowEvent[Topic, Type] {
+trait ViewDetached[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var previousTarget: Identity = js.native
+  var previousTarget: Identity
   
-  var target: Identity = js.native
+  var target: Identity
   
-  var viewIdentity: Identity = js.native
+  var viewIdentity: Identity
 }
 object ViewDetached {
   
@@ -34,7 +34,7 @@ object ViewDetached {
   }
   
   @scala.inline
-  implicit class ViewDetachedMutableBuilder[Self <: ViewDetached[_, _], Topic, Type] (val x: Self with (ViewDetached[Topic, Type])) extends AnyVal {
+  implicit class ViewDetachedMutableBuilder[Self <: ViewDetached[?, ?], Topic, Type] (val x: Self & (ViewDetached[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setPreviousTarget(value: Identity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])

@@ -2,27 +2,27 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Location extends HistoryLocation {
+trait Location
+  extends StObject
+     with HistoryLocation {
   
-  var basename: js.UndefOr[String] = js.native
+  var basename: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[LocationOptions] = js.native
+  var options: js.UndefOr[LocationOptions] = js.undefined
   
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
   
-  var previous: js.UndefOr[Location] = js.native
+  var previous: js.UndefOr[Location] = js.undefined
   
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
-  var queue: js.UndefOr[js.Array[Location]] = js.native
+  var queue: js.UndefOr[js.Array[Location]] = js.undefined
   
-  var result: js.UndefOr[ObjectLiteral[_]] = js.native
+  var result: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
   
-  var routes: js.UndefOr[Routes] = js.native
+  var routes: js.UndefOr[Routes] = js.undefined
 }
 object Location {
   
@@ -75,7 +75,7 @@ object Location {
     def setQueueVarargs(value: Location*): Self = StObject.set(x, "queue", js.Array(value :_*))
     
     @scala.inline
-    def setResult(value: ObjectLiteral[_]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    def setResult(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResultUndefined: Self = StObject.set(x, "result", js.undefined)

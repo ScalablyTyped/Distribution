@@ -2,29 +2,27 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitterOptions extends StObject {
   
-  var collapse: js.UndefOr[js.Function1[/* e */ SplitterCollapseEvent, Unit]] = js.native
+  var collapse: js.UndefOr[js.Function1[/* e */ SplitterCollapseEvent, Unit]] = js.undefined
   
-  var contentLoad: js.UndefOr[js.Function1[/* e */ SplitterContentLoadEvent, Unit]] = js.native
+  var contentLoad: js.UndefOr[js.Function1[/* e */ SplitterContentLoadEvent, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* e */ SplitterErrorEvent, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* e */ SplitterErrorEvent, Unit]] = js.undefined
   
-  var expand: js.UndefOr[js.Function1[/* e */ SplitterExpandEvent, Unit]] = js.native
+  var expand: js.UndefOr[js.Function1[/* e */ SplitterExpandEvent, Unit]] = js.undefined
   
-  var layoutChange: js.UndefOr[js.Function1[/* e */ SplitterEvent, Unit]] = js.native
+  var layoutChange: js.UndefOr[js.Function1[/* e */ SplitterEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var panes: js.UndefOr[js.Array[SplitterPane]] = js.native
+  var panes: js.UndefOr[js.Array[SplitterPane]] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ SplitterEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ SplitterEvent, Unit]] = js.undefined
 }
 object SplitterOptions {
   

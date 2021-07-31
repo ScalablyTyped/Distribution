@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.ElevationSampler
 import typings.arcgisJsApi.esri.ElevationSamplerConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elevationSamplerMod extends Shortcut {
@@ -22,7 +21,9 @@ object elevationSamplerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-ElevationSampler.html)
     */
-  class Class () extends ElevationSampler
+  class Class ()
+    extends StObject
+       with ElevationSampler
   
   type _To = ElevationSamplerConstructor
   

@@ -3,53 +3,51 @@ package typings.materialBanner
 import typings.materialBanner.constantsMod.CloseReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCBannerAdapter extends StObject {
     
     /**
       * Adds the given class to the banner root element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * @return Returns the height of the banner content element.
       */
-    def getContentHeight(): Double = js.native
+    def getContentHeight(): Double
     
     /**
       * Broadcasts an event denoting that the banner has finished closing.
       */
-    def notifyClosed(reason: CloseReason): Unit = js.native
+    def notifyClosed(reason: CloseReason): Unit
     
     /**
       * Broadcasts an event denoting that the banner has just started closing.
       */
-    def notifyClosing(reason: CloseReason): Unit = js.native
+    def notifyClosing(reason: CloseReason): Unit
     
     /**
       * Broadcasts an event denoting that the banner has finished opening.
       */
-    def notifyOpened(): Unit = js.native
+    def notifyOpened(): Unit
     
     /**
       * Broadcasts an event denoting that the banner has just started opening.
       */
-    def notifyOpening(): Unit = js.native
+    def notifyOpening(): Unit
     
     /**
       * Removes the given class from the banner root element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /**
       * Sets a style property of the banner root element to the passed value.
       */
-    def setStyleProperty(propertyName: String, value: String): Unit = js.native
+    def setStyleProperty(propertyName: String, value: String): Unit
   }
   object MDCBannerAdapter {
     

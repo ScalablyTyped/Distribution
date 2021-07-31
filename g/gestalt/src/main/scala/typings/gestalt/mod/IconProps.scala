@@ -20,25 +20,23 @@ import typings.gestalt.gestaltStrings.watermelon
 import typings.gestalt.gestaltStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconProps extends StObject {
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
   var color: js.UndefOr[
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.native
+  ] = js.undefined
   
-  var dangerouslySetSvgPath: js.UndefOr[Path] = js.native
+  var dangerouslySetSvgPath: js.UndefOr[Path] = js.undefined
   
-  var icon: js.UndefOr[Icons] = js.native
+  var icon: js.UndefOr[Icons] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[Double | String] = js.native
+  var size: js.UndefOr[Double | String] = js.undefined
 }
 object IconProps {
   

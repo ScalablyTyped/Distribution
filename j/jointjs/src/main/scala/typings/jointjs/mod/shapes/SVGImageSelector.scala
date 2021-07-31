@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGImageAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGImageSelector extends Selectors {
+trait SVGImageSelector
+  extends StObject
+     with Selectors {
   
-  var image: js.UndefOr[SVGImageAttributes] = js.native
+  var image: js.UndefOr[SVGImageAttributes] = js.undefined
 }
 object SVGImageSelector {
   

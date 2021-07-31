@@ -2,20 +2,18 @@ package typings.postal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnvelope[T] extends StObject {
   
   /*Uses DEFAULT_CHANNEL if no channel is provided*/
-  var channel: js.UndefOr[String] = js.native
+  var channel: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[T] = js.native
+  var data: js.UndefOr[T] = js.undefined
   
-  var timeStamp: js.UndefOr[String] = js.native
+  var timeStamp: js.UndefOr[String] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object IEnvelope {
   
@@ -26,7 +24,7 @@ object IEnvelope {
   }
   
   @scala.inline
-  implicit class IEnvelopeMutableBuilder[Self <: IEnvelope[_], T] (val x: Self with IEnvelope[T]) extends AnyVal {
+  implicit class IEnvelopeMutableBuilder[Self <: IEnvelope[?], T] (val x: Self & IEnvelope[T]) extends AnyVal {
     
     @scala.inline
     def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])

@@ -2,16 +2,14 @@ package typings.domMediacaptureRecord
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofMediaRecorder extends StObject {
     
     /* static member */
-    def isTypeSupported(`type`: String): Boolean = js.native
+    def isTypeSupported(`type`: String): Boolean
   }
   object TypeofMediaRecorder {
     

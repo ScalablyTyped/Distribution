@@ -2,15 +2,13 @@ package typings.reactVirtualized.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexRange extends StObject {
   
-  var startIndex: Double = js.native
+  var startIndex: Double
   
-  var stopIndex: Double = js.native
+  var stopIndex: Double
 }
 object IndexRange {
   

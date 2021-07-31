@@ -6,15 +6,13 @@ import typings.asana.mod.resources.VersionInfo
 import typings.bluebird.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApiKey extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
   }
   object ApiKey {
     
@@ -32,18 +30,17 @@ object anon {
     }
   }
   
-  @js.native
   trait AsanaBaseUrl extends StObject {
     
-    var _cachedVersionInfo: VersionInfo = js.native
+    var _cachedVersionInfo: VersionInfo
     
-    var asanaBaseUrl: String = js.native
+    var asanaBaseUrl: String
     
-    var authenticator: ApiKey = js.native
+    var authenticator: ApiKey
     
-    var requestTimeout: Double = js.native
+    var requestTimeout: Double
     
-    var retryOnRateLimit: Boolean = js.native
+    var retryOnRateLimit: Boolean
   }
   object AsanaBaseUrl {
     
@@ -79,10 +76,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Authorization extends StObject {
     
-    var Authorization: String = js.native
+    var Authorization: String
   }
   object Authorization {
     
@@ -101,22 +97,21 @@ object anon {
   }
   
   /* Inlined asana.asana.resources.Projects.CreateParams & {  workspace :string | number} */
-  @js.native
   trait CreateParamsworkspacestri extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var due_date: js.UndefOr[String] = js.native
+    var due_date: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var team: js.UndefOr[String | Double] = js.native
+    var team: js.UndefOr[String | Double] = js.undefined
     
-    var workspace: String | Double = js.native
+    var workspace: String | Double
   }
   object CreateParamsworkspacestri {
     
@@ -171,20 +166,19 @@ object anon {
   }
   
   /* Inlined asana.asana.resources.Tasks.CreateParams & {  workspace :string} */
-  @js.native
   trait CreateParamsworkspacestriCompleted extends StObject {
     
-    var completed: js.UndefOr[Boolean] = js.native
+    var completed: js.UndefOr[Boolean] = js.undefined
     
-    var custom_fields: js.UndefOr[js.Object] = js.native
+    var custom_fields: js.UndefOr[js.Object] = js.undefined
     
-    var hearted: js.UndefOr[Boolean] = js.native
+    var hearted: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var workspace: String = js.native
+    var workspace: String
   }
   object CreateParamsworkspacestriCompleted {
     
@@ -229,12 +223,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data[T /* <: Resource */] extends StObject {
     
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
-    var next_page: js.UndefOr[NextPage] = js.native
+    var next_page: js.UndefOr[NextPage] = js.undefined
   }
   object Data {
     
@@ -245,7 +238,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], T /* <: Resource */] (val x: Self with Data[T]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], T /* <: Resource */] (val x: Self & Data[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -261,12 +254,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Gid extends StObject {
     
-    var gid: String = js.native
+    var gid: String
     
-    var name: String = js.native
+    var name: String
   }
   object Gid {
     
@@ -287,10 +279,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -311,12 +302,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object Password {
     
@@ -356,8 +346,8 @@ object anon {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchDelete(path: String): ^[_] = js.native
-    def dispatchDelete(path: String, dispatchOptions: js.Any): ^[_] = js.native
+    def dispatchDelete(path: String): ^[js.Any] = js.native
+    def dispatchDelete(path: String, dispatchOptions: js.Any): ^[js.Any] = js.native
     
     /**
       * Dispatches a GET request to the API, where the expected result is a
@@ -372,10 +362,10 @@ object anon {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGet(path: String): ^[_] = js.native
-    def dispatchGet(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): ^[_] = js.native
-    def dispatchGet(path: String, query: js.Any): ^[_] = js.native
-    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+    def dispatchGet(path: String): ^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any): ^[js.Any] = js.native
+    def dispatchGet(path: String, query: js.Any, dispatchOptions: js.Any): ^[js.Any] = js.native
+    def dispatchGet(path: String, query: Unit, dispatchOptions: js.Any): ^[js.Any] = js.native
     
     /**
       * Dispatches a GET request to the API, where the expected result is a
@@ -390,10 +380,10 @@ object anon {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchGetCollection(path: String): ^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): ^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any): ^[_] = js.native
-    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+    def dispatchGetCollection(path: String): ^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any): ^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: js.Any, dispatchOptions: js.Any): ^[js.Any] = js.native
+    def dispatchGetCollection(path: String, query: Unit, dispatchOptions: js.Any): ^[js.Any] = js.native
     
     /**
       * Dispatches a POST request to the API, where the expected response is a
@@ -408,10 +398,10 @@ object anon {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPost(path: String): ^[_] = js.native
-    def dispatchPost(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): ^[_] = js.native
-    def dispatchPost(path: String, query: js.Any): ^[_] = js.native
-    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+    def dispatchPost(path: String): ^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any): ^[js.Any] = js.native
+    def dispatchPost(path: String, query: js.Any, dispatchOptions: js.Any): ^[js.Any] = js.native
+    def dispatchPost(path: String, query: Unit, dispatchOptions: js.Any): ^[js.Any] = js.native
     
     /**
       * Dispatches a POST request to the API, where the expected response is a
@@ -426,10 +416,10 @@ object anon {
       * @param dispatchOptions?
       * @return
       */
-    def dispatchPut(path: String): ^[_] = js.native
-    def dispatchPut(path: String, query: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): ^[_] = js.native
-    def dispatchPut(path: String, query: js.Any): ^[_] = js.native
-    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): ^[_] = js.native
+    def dispatchPut(path: String): ^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any): ^[js.Any] = js.native
+    def dispatchPut(path: String, query: js.Any, dispatchOptions: js.Any): ^[js.Any] = js.native
+    def dispatchPut(path: String, query: Unit, dispatchOptions: js.Any): ^[js.Any] = js.native
     
     var followers: js.Array[Resource] = js.native
     
@@ -441,6 +431,6 @@ object anon {
     
     var notes: String = js.native
     
-    var workspace: Resource with String = js.native
+    var workspace: Resource & String = js.native
   }
 }

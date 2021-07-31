@@ -2,22 +2,20 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCustomGroup extends StObject {
   
   /**
     * The sub-attributes.
     */
-  var attributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.native
+  var attributes: js.UndefOr[js.Array[SchemaCustomAttribute]] = js.undefined
   
   /**
     * The name of the group. Underscores will be replaced by spaces upon
     * insertion.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomGroup {
   

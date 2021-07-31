@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowTemplatePlacement extends StObject {
   
   /** Optional. A selector that chooses target cluster for jobs based on metadata.The selector is evaluated at the time each job is submitted. */
-  var clusterSelector: js.UndefOr[ClusterSelector] = js.native
+  var clusterSelector: js.UndefOr[ClusterSelector] = js.undefined
   
   /** A cluster that is managed by the workflow. */
-  var managedCluster: js.UndefOr[ManagedCluster] = js.native
+  var managedCluster: js.UndefOr[ManagedCluster] = js.undefined
 }
 object WorkflowTemplatePlacement {
   

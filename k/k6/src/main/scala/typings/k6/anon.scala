@@ -6,34 +6,32 @@ import typings.k6.httpMod.RequestCookie
 import typings.k6.httpMod.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Blocked extends StObject {
     
     /** Milliseconds spent blocked before initiating request. */
-    var blocked: Double = js.native
+    var blocked: Double
     
     /** Milliseconds spent setting up TCP connection to host. */
-    var connecting: Double = js.native
+    var connecting: Double
     
     /** Total time in milliseconds. `sending+waiting+receiving` */
-    var duration: Double = js.native
+    var duration: Double
     
     /** Milliseconds spent receiving response data. */
-    var receiving: Double = js.native
+    var receiving: Double
     
     /** Milliseconds spent sending request. */
-    var sending: Double = js.native
+    var sending: Double
     
     /** Milliseconds spent handshaking TLS session with host. */
-    var tls_handshaking: Double = js.native
+    var tls_handshaking: Double
     
     /** Milliseconds spent waiting for server response (TTFB). */
-    var waiting: Double = js.native
+    var waiting: Double
   }
   object Blocked {
     
@@ -77,23 +75,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
     /** Request body. */
-    var body: String = js.native
+    var body: String
     
     /** Request cookies. */
-    var cookies: StringDictionary[js.Array[RequestCookie]] = js.native
+    var cookies: StringDictionary[js.Array[RequestCookie]]
     
     /** Request headers. */
-    var headers: StringDictionary[js.Array[String]] = js.native
+    var headers: StringDictionary[js.Array[String]]
     
     /** Request method. */
-    var method: String = js.native
+    var method: String
     
     /** Request URL. */
-    var url: String = js.native
+    var url: String
   }
   object Body {
     
@@ -129,16 +126,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields[RT /* <: js.UndefOr[ResponseType] */] extends StObject {
     
-    var fields: js.UndefOr[StringDictionary[String]] = js.native
+    var fields: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var formSelector: js.UndefOr[String] = js.native
+    var formSelector: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[RefinedParams[RT] | Null] = js.native
+    var params: js.UndefOr[RefinedParams[RT] | Null] = js.undefined
     
-    var submitSelector: js.UndefOr[String] = js.native
+    var submitSelector: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -149,7 +145,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields[_], RT /* <: js.UndefOr[ResponseType] */] (val x: Self with Fields[RT]) extends AnyVal {
+    implicit class FieldsMutableBuilder[Self <: Fields[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & Fields[RT]) extends AnyVal {
       
       @scala.inline
       def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
@@ -180,12 +176,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: String = js.native
+    var max: String
     
-    var min: String = js.native
+    var min: String
   }
   object Max {
     
@@ -206,26 +201,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Nextupdate extends StObject {
     
     /** When response will be refreshed with the CA in millisecond Unix time. */
-    var next_update: Double = js.native
+    var next_update: Double
     
     /** When response signed by responder in millisecond Unix time. */
-    var produced_at: Double = js.native
+    var produced_at: Double
     
     /** Certificate revocation reason. One of `OCSP_REASON_*` constants. */
-    var revocation_reason: String = js.native
+    var revocation_reason: String
     
     /** When certificate was revoked in millisecond Unix time. */
-    var revoked_at: Double = js.native
+    var revoked_at: Double
     
     /** Certificate status. One of `OCSP_STATUS_*` constants. */
-    var status: String = js.native
+    var status: String
     
     /** When indicated status was known correct in millisecond Unix time. */
-    var this_update: Double = js.native
+    var this_update: Double
   }
   object Nextupdate {
     
@@ -265,12 +259,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Params[RT /* <: js.UndefOr[ResponseType] */] extends StObject {
     
-    var params: js.UndefOr[RefinedParams[RT] | Null] = js.native
+    var params: js.UndefOr[RefinedParams[RT] | Null] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
   }
   object Params {
     
@@ -281,7 +274,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params[_], RT /* <: js.UndefOr[ResponseType] */] (val x: Self with Params[RT]) extends AnyVal {
+    implicit class ParamsMutableBuilder[Self <: Params[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & Params[RT]) extends AnyVal {
       
       @scala.inline
       def setParams(value: RefinedParams[RT]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
@@ -300,12 +293,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Replace extends StObject {
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Replace {
     

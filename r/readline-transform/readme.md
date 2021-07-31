@@ -12,7 +12,7 @@ Transform stream to read line-by-line and write a string
 | Keywords           | stream, transform, readline, byline |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 1475538 |
+| # downloads        | 2251294 |
 | # stars            | 0 |
 
 ## Links

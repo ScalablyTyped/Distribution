@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridResponsiveColumnSetting
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgGridResponsiveColumnSetting
     * A list of predefined classes to decide element's visibility on.
     *
     */
-  var classes: js.UndefOr[String] = js.native
+  var classes: js.UndefOr[String] = js.undefined
   
   /**
     * Column index. Can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers.
     *
     */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Column key. This is a required property in every column setting if columnIndex is not set.
     *
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * A configuration object to use for the responsive functionality. Uses the keys defined in the widget's responsiveModes object. The classes property is not used if this one is set.
     *
     */
-  var configuration: js.UndefOr[js.Any] = js.native
+  var configuration: js.UndefOr[js.Any] = js.undefined
 }
 object IgGridResponsiveColumnSetting {
   

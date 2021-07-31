@@ -7,7 +7,6 @@ import typings.vscodeJsonrpc.mod.RequestType
 import typings.vscodeJsonrpc.mod.RequestType0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {

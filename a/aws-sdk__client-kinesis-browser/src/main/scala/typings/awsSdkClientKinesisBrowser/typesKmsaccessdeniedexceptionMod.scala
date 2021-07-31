@@ -6,28 +6,25 @@ import typings.awsSdkClientKinesisBrowser.putRecordsExceptionsUnionMod.PutRecord
 import typings.awsSdkClientKinesisBrowser.startStreamEncryptionExceptionsUnionMod.StartStreamEncryptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsaccessdeniedexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSAccessDeniedExceptionDetails> * / any */ @js.native
-  trait KMSAccessDeniedException
-    extends GetRecordsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSAccessDeniedExceptionDetails> * / any */ trait KMSAccessDeniedException
+    extends StObject
+       with GetRecordsExceptionsUnion
        with PutRecordExceptionsUnion
        with PutRecordsExceptionsUnion
        with StartStreamEncryptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSAccessDeniedException = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSAccessDeniedException
   }
   object KMSAccessDeniedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSAccessDeniedException
-    ): KMSAccessDeniedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSAccessDeniedException = {
+      val __obj = js.Dynamic.literal(name = "KMSAccessDeniedException")
       __obj.asInstanceOf[KMSAccessDeniedException]
     }
     
@@ -41,13 +38,12 @@ object typesKmsaccessdeniedexceptionMod {
     }
   }
   
-  @js.native
   trait KMSAccessDeniedExceptionDetails extends StObject {
     
     /**
       * <p>A message that provides information about the error.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KMSAccessDeniedExceptionDetails {
     

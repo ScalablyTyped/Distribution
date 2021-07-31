@@ -3,37 +3,37 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BanEntry extends ResponseEntry {
+trait BanEntry
+  extends StObject
+     with ResponseEntry {
   
-  var banid: String = js.native
+  var banid: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var enforcements: Double = js.native
+  var enforcements: Double
   
-  var invokercldbid: String = js.native
+  var invokercldbid: String
   
-  var invokername: String = js.native
+  var invokername: String
   
-  var invokeruid: String = js.native
+  var invokeruid: String
   
-  var ip: String = js.native
+  var ip: String
   
-  var lastnickname: String = js.native
+  var lastnickname: String
   
-  var mytsid: String = js.native
+  var mytsid: String
   
-  var name: String = js.native
+  var name: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var uid: String = js.native
+  var uid: String
 }
 object BanEntry {
   

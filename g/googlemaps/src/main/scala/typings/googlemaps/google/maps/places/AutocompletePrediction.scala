@@ -2,33 +2,31 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutocompletePrediction extends StObject {
   
-  var description: String = js.native
+  var description: String
   
   /**
     * The distance in meters of the place from the {@link AutocompletionRequest#origin}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/places-autocomplete-service#AutocompletePrediction.distance_meters Maps JavaScript API}
     */
-  var distance_meters: js.UndefOr[Double] = js.native
+  var distance_meters: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var matched_substrings: js.Array[PredictionSubstring] = js.native
+  var matched_substrings: js.Array[PredictionSubstring]
   
-  var place_id: String = js.native
+  var place_id: String
   
-  var reference: String = js.native
+  var reference: String
   
-  var structured_formatting: AutocompleteStructuredFormatting = js.native
+  var structured_formatting: AutocompleteStructuredFormatting
   
-  var terms: js.Array[PredictionTerm] = js.native
+  var terms: js.Array[PredictionTerm]
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object AutocompletePrediction {
   

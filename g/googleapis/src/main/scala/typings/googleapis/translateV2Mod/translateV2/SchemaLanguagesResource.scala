@@ -2,10 +2,8 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLanguagesResource extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait SchemaLanguagesResource extends StObject {
     * codes including language + region identifiers are returned (e.g.
     * &#39;zh-TW&#39; and &#39;zh-CH&#39;)
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Human readable name of the language localized to the target language.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLanguagesResource {
   

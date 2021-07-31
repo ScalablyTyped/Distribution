@@ -5,17 +5,15 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.zh_CN
 import typings.wechatMiniprogram.wechatMiniprogramStrings.zh_TW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserInfoOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[GetUserInfoCompleteCallback] = js.native
+  var complete: js.UndefOr[GetUserInfoCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[GetUserInfoFailCallback] = js.native
+  var fail: js.UndefOr[GetUserInfoFailCallback] = js.undefined
   
   /** 显示用户信息的语言
     *
@@ -23,13 +21,13 @@ trait GetUserInfoOption extends StObject {
     * - 'en': 英文;
     * - 'zh_CN': 简体中文;
     * - 'zh_TW': 繁体中文; */
-  var lang: js.UndefOr[en | zh_CN | zh_TW] = js.native
+  var lang: js.UndefOr[en | zh_CN | zh_TW] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[GetUserInfoSuccessCallback] = js.native
+  var success: js.UndefOr[GetUserInfoSuccessCallback] = js.undefined
   
   /** 是否带上登录态信息。当 withCredentials 为 true 时，要求此前有调用过 wx.login 且登录态尚未过期，此时返回的数据会包含 encryptedData, iv 等敏感信息；当 withCredentials 为 false 时，不要求有登录态，返回的数据不包含 encryptedData, iv 等敏感信息。 */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object GetUserInfoOption {
   

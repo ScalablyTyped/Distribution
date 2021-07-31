@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CidrBlock extends StObject {
   
   /** cidr_block must be specified in CIDR notation. */
-  var cidrBlock: js.UndefOr[String] = js.native
+  var cidrBlock: js.UndefOr[String] = js.undefined
   
   /** display_name is an optional field for users to identify CIDR blocks. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
 }
 object CidrBlock {
   

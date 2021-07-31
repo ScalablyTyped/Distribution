@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockDeviceMapping extends StObject {
   
   /**
     * The device name that is exposed to the instance, such as /dev/sdh. For the root device, you can use the explicit device name or you can set this parameter to ROOT_DEVICE and AWS OpsWorks Stacks will provide the correct device name.
     */
-  var DeviceName: js.UndefOr[String] = js.native
+  var DeviceName: js.UndefOr[String] = js.undefined
   
   /**
     * An EBSBlockDevice that defines how to configure an Amazon EBS volume when the instance is launched.
     */
-  var Ebs: js.UndefOr[EbsBlockDevice] = js.native
+  var Ebs: js.UndefOr[EbsBlockDevice] = js.undefined
   
   /**
     * Suppresses the specified device included in the AMI's block device mapping.
     */
-  var NoDevice: js.UndefOr[String] = js.native
+  var NoDevice: js.UndefOr[String] = js.undefined
   
   /**
     * The virtual device name. For more information, see BlockDeviceMapping.
     */
-  var VirtualName: js.UndefOr[String] = js.native
+  var VirtualName: js.UndefOr[String] = js.undefined
 }
 object BlockDeviceMapping {
   

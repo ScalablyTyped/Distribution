@@ -2,12 +2,14 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object probitMod {
   
-  @JSImport("simple-statistics/src/probit", JSImport.Default)
+  @JSImport("simple-statistics/src/probit", JSImport.Namespace)
   @js.native
-  def default(p: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(p: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(p.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

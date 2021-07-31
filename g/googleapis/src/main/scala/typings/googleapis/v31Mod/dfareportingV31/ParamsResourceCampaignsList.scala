@@ -6,68 +6,68 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCampaignsList extends StandardParameters {
+trait ParamsResourceCampaignsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only campaigns whose advertisers belong to these advertiser
     * groups.
     */
-  var advertiserGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var advertiserGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only campaigns that belong to these advertisers.
     */
-  var advertiserIds: js.UndefOr[js.Array[String]] = js.native
+  var advertiserIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only archived campaigns. Don't set this field to select both
     * archived and non-archived campaigns.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only campaigns that have at least one optimization activity.
     */
-  var atLeastOneOptimizationActivity: js.UndefOr[Boolean] = js.native
+  var atLeastOneOptimizationActivity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Exclude campaigns with these IDs.
     */
-  var excludedIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only campaigns with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only campaigns that have overridden this event tag ID.
     */
-  var overriddenEventTagId: js.UndefOr[String] = js.native
+  var overriddenEventTagId: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for campaigns by name or ID. Wildcards (*) are allowed.
@@ -78,22 +78,22 @@ trait ParamsResourceCampaignsList extends StandardParameters {
     * match campaigns with name "my campaign", "campaign 2015", or simply
     * "campaign".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only campaigns that belong to this subaccount.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCampaignsList {
   

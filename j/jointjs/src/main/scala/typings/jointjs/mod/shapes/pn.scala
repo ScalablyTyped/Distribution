@@ -9,7 +9,6 @@ import typings.jointjs.mod.dia.Link.Attributes
 import typings.jointjs.mod.shapes.basic.Generic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pn {
@@ -20,7 +19,7 @@ object pn {
   class Link ()
     extends typings.jointjs.mod.dia.Link {
     def this(attributes: Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+    def this(attributes: Unit, opt: Options) = this()
     def this(attributes: Attributes, opt: Options) = this()
   }
   
@@ -28,7 +27,7 @@ object pn {
   @js.native
   class Place () extends Generic {
     def this(attributes: typings.jointjs.mod.dia.Element.Attributes) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: typings.jointjs.mod.dia.Element.Attributes, opt: StringDictionary[js.Any]) = this()
   }
   
@@ -44,7 +43,7 @@ object pn {
   @js.native
   class Transition () extends Generic {
     def this(attributes: GenericAttributes[SVGRectSelector]) = this()
-    def this(attributes: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]) = this()
+    def this(attributes: Unit, opt: StringDictionary[js.Any]) = this()
     def this(attributes: GenericAttributes[SVGRectSelector], opt: StringDictionary[js.Any]) = this()
   }
 }

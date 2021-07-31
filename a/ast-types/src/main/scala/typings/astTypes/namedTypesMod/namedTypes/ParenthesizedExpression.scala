@@ -8,24 +8,23 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Expression, 'type'> */
-@js.native
 trait ParenthesizedExpression
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with ExpressionKind
      with NodeKind
      with PrintableKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var expression: ExpressionKind = js.native
+  var expression: ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.ParenthesizedExpression = js.native
+  var `type`: typings.astTypes.astTypesStrings.ParenthesizedExpression
 }
 object ParenthesizedExpression {
   

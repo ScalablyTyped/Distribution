@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roleAliasMod {
@@ -48,6 +47,10 @@ object roleAliasMod {
   /* static members */
   object RoleAlias {
     
+    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RoleAlias resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object roleAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RoleAlias = js.native
-    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RoleAlias = js.native
-    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleAliasState): RoleAlias = js.native
-    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleAliasState, opts: CustomResourceOptions): RoleAlias = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleAliasState): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleAliasState, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
     
     /**
       * Returns true if the given object is an instance of RoleAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/roleAlias", "RoleAlias.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean]
   }
   
-  @js.native
   trait RoleAliasArgs extends StObject {
     
     /**
       * The name of the role alias.
       */
-    val alias: Input[String] = js.native
+    val alias: Input[String]
     
     /**
       * The duration of the credential, in seconds. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 900 seconds (15 minutes) to 3600 seconds (60 minutes).
       */
-    val credentialDuration: js.UndefOr[Input[Double]] = js.native
+    val credentialDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The identity of the role to which the alias refers.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
   }
   object RoleAliasArgs {
     
@@ -122,28 +119,27 @@ object roleAliasMod {
     }
   }
   
-  @js.native
   trait RoleAliasState extends StObject {
     
     /**
       * The name of the role alias.
       */
-    val alias: js.UndefOr[Input[String]] = js.native
+    val alias: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN assigned by AWS to this role alias.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The duration of the credential, in seconds. If you do not specify a value for this setting, the default maximum of one hour is applied. This setting can have a value from 900 seconds (15 minutes) to 3600 seconds (60 minutes).
       */
-    val credentialDuration: js.UndefOr[Input[Double]] = js.native
+    val credentialDuration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The identity of the role to which the alias refers.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object RoleAliasState {
     

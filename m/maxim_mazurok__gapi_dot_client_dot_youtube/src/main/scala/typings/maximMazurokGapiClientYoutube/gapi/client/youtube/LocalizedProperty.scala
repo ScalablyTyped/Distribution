@@ -2,18 +2,16 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalizedProperty extends StObject {
   
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /** The language of the default property. */
-  var defaultLanguage: js.UndefOr[LanguageTag] = js.native
+  var defaultLanguage: js.UndefOr[LanguageTag] = js.undefined
   
-  var localized: js.UndefOr[js.Array[LocalizedString]] = js.native
+  var localized: js.UndefOr[js.Array[LocalizedString]] = js.undefined
 }
 object LocalizedProperty {
   

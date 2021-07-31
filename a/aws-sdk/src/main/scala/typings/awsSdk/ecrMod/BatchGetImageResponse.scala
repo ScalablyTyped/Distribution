@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetImageResponse extends StObject {
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[ImageFailureList] = js.native
+  var failures: js.UndefOr[ImageFailureList] = js.undefined
   
   /**
     * A list of image objects corresponding to the image references in the request.
     */
-  var images: js.UndefOr[ImageList] = js.native
+  var images: js.UndefOr[ImageList] = js.undefined
 }
 object BatchGetImageResponse {
   

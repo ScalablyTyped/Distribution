@@ -2,20 +2,18 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchFor extends StObject {
   
   /*Whether to match the font size for the HTML-CSS output.*/
-  var `HTML-CSS`: js.UndefOr[Boolean] = js.native
+  var `HTML-CSS`: js.UndefOr[Boolean] = js.undefined
   
   /*Whether to match the font size for the NativeMML output.*/
-  var NativeMML: js.UndefOr[Boolean] = js.native
+  var NativeMML: js.UndefOr[Boolean] = js.undefined
   
   /*Whether to match the font size for the SVG output.*/
-  var SVG: js.UndefOr[Boolean] = js.native
+  var SVG: js.UndefOr[Boolean] = js.undefined
 }
 object MatchFor {
   

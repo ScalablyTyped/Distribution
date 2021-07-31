@@ -2,41 +2,39 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlarmHistoryItem extends StObject {
   
   /**
     * The descriptive name for the alarm.
     */
-  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.native
+  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.undefined
   
   /**
     * The type of alarm, either metric alarm or composite alarm.
     */
-  var AlarmType: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmType] = js.native
+  var AlarmType: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmType] = js.undefined
   
   /**
     * Data about the alarm, in JSON format.
     */
-  var HistoryData: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryData] = js.native
+  var HistoryData: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryData] = js.undefined
   
   /**
     * The type of alarm history item.
     */
-  var HistoryItemType: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryItemType] = js.native
+  var HistoryItemType: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryItemType] = js.undefined
   
   /**
     * A summary of the alarm history, in text format.
     */
-  var HistorySummary: js.UndefOr[typings.awsSdk.cloudwatchMod.HistorySummary] = js.native
+  var HistorySummary: js.UndefOr[typings.awsSdk.cloudwatchMod.HistorySummary] = js.undefined
   
   /**
     * The time stamp for the alarm history item.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.cloudwatchMod.Timestamp] = js.undefined
 }
 object AlarmHistoryItem {
   

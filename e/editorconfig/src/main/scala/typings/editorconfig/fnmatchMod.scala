@@ -5,17 +5,14 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fnmatchMod {
   
-  @JSImport("editorconfig/src/lib/fnmatch", JSImport.Namespace)
-  @js.native
-  def apply(target: String, pattern: String): Boolean = js.native
-  @JSImport("editorconfig/src/lib/fnmatch", JSImport.Namespace)
-  @js.native
-  def apply(target: String, pattern: String, options: IOptions): Boolean = js.native
+  @scala.inline
+  def apply(target: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(target: String, pattern: String, options: IOptions): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("editorconfig/src/lib/fnmatch", JSImport.Namespace)
   @js.native
@@ -24,7 +21,9 @@ object fnmatchMod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("editorconfig/src/lib/fnmatch", "Minimatch")
   @js.native
-  class Minimatch protected () extends IMinimatch {
+  class Minimatch protected ()
+    extends StObject
+       with IMinimatch {
     def this(pattern: String) = this()
     def this(pattern: String, options: IOptions) = this()
   }
@@ -37,22 +36,28 @@ object fnmatchMod {
   /**
     * Returns a function that tests its supplied argument, suitable for use with Array.filter
     */
-  @JSImport("editorconfig/src/lib/fnmatch", "filter")
-  @js.native
-  def filter(pattern: String): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = js.native
-  @JSImport("editorconfig/src/lib/fnmatch", "filter")
-  @js.native
-  def filter(pattern: String, options: IOptions): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = js.native
+  @scala.inline
+  def filter(pattern: String): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
+  @scala.inline
+  def filter(pattern: String, options: IOptions): js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* element */ String, /* indexed */ Double, /* array */ js.Array[String], Boolean]]
   
   /**
     * Make a regular expression object from the pattern.
     */
-  @JSImport("editorconfig/src/lib/fnmatch", "makeRe")
-  @js.native
-  def makeRe(pattern: String): RegExp = js.native
-  @JSImport("editorconfig/src/lib/fnmatch", "makeRe")
-  @js.native
-  def makeRe(pattern: String, options: IOptions): RegExp = js.native
+  @scala.inline
+  def makeRe(pattern: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  @scala.inline
+  def makeRe(pattern: String, options: IOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  
+  /**
+    * Match against the list of files, in the style of fnmatch or glob.
+    * If nothing is matched, and options.nonull is set,
+    * then return a list containing the pattern itself.
+    */
+  @scala.inline
+  def `match`(list: js.Array[String], pattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def `match`(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(list.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @js.native
   trait IMinimatch extends StObject {
@@ -147,15 +152,15 @@ object fnmatchMod {
     /**
       * A 2-dimensional array of regexp or string expressions.
       */
-    var set: js.Array[js.Array[_]] = js.native
+    var set: js.Array[js.Array[js.Any]] = js.native
   }
   
   @js.native
   trait IMinimatchStatic
-    extends Instantiable1[/* pattern */ String, IMinimatch]
+    extends StObject
+       with Instantiable1[/* pattern */ String, IMinimatch]
        with Instantiable2[/* pattern */ String, /* options */ IOptions, IMinimatch]
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
@@ -163,7 +168,7 @@ object fnmatchMod {
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow patterns to match filenames starting with a period,
@@ -171,7 +176,7 @@ object fnmatchMod {
       *
       * @default false
       */
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns from negate expressions the same as if they were not negated.
@@ -179,7 +184,7 @@ object fnmatchMod {
       *
       * @default false
       */
-    var flipNegate: js.UndefOr[Boolean] = js.native
+    var flipNegate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, then patterns without slashes will be matched against
@@ -187,21 +192,21 @@ object fnmatchMod {
       *
       * @default false
       */
-    var matchBase: js.UndefOr[Boolean] = js.native
+    var matchBase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not expand {a,b} and {1..3} brace sets.
       *
       * @default false
       */
-    var nobrace: js.UndefOr[Boolean] = js.native
+    var nobrace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Perform a case-insensitive match.
       *
       * @default false
       */
-    var nocase: js.UndefOr[Boolean] = js.native
+    var nocase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the behavior of treating #
@@ -209,28 +214,28 @@ object fnmatchMod {
       *
       * @default false
       */
-    var nocomment: js.UndefOr[Boolean] = js.native
+    var nocomment: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable "extglob" style patterns like +(a|b).
       *
       * @default false
       */
-    var noext: js.UndefOr[Boolean] = js.native
+    var noext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable ** matching against multiple folder names.
       *
       * @default false
       */
-    var noglobstar: js.UndefOr[Boolean] = js.native
+    var noglobstar: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the behavior of treating a leading ! character as negation.
       *
       * @default false
       */
-    var nonegate: js.UndefOr[Boolean] = js.native
+    var nonegate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When a match is not found by minimatch.match,
@@ -239,7 +244,7 @@ object fnmatchMod {
       *
       * @default false
       */
-    var nonull: js.UndefOr[Boolean] = js.native
+    var nonull: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     
@@ -319,16 +324,4 @@ object fnmatchMod {
       def setNonullUndefined: Self = StObject.set(x, "nonull", js.undefined)
     }
   }
-  
-  /**
-    * Match against the list of files, in the style of fnmatch or glob.
-    * If nothing is matched, and options.nonull is set,
-    * then return a list containing the pattern itself.
-    */
-  @JSImport("editorconfig/src/lib/fnmatch", "match")
-  @js.native
-  def `match`(list: js.Array[String], pattern: String): js.Array[String] = js.native
-  @JSImport("editorconfig/src/lib/fnmatch", "match")
-  @js.native
-  def `match`(list: js.Array[String], pattern: String, options: IOptions): js.Array[String] = js.native
 }

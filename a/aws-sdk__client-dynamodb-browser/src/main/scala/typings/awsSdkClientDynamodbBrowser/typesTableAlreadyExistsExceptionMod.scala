@@ -4,26 +4,23 @@ import typings.awsSdkClientDynamodbBrowser.restoreTableFromBackupExceptionsUnion
 import typings.awsSdkClientDynamodbBrowser.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTableAlreadyExistsExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableAlreadyExistsExceptionDetails> * / any */ @js.native
-  trait TableAlreadyExistsException
-    extends RestoreTableFromBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableAlreadyExistsExceptionDetails> * / any */ trait TableAlreadyExistsException
+    extends StObject
+       with RestoreTableFromBackupExceptionsUnion
        with RestoreTableToPointInTimeExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableAlreadyExistsException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableAlreadyExistsException
   }
   object TableAlreadyExistsException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableAlreadyExistsException
-    ): TableAlreadyExistsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TableAlreadyExistsException = {
+      val __obj = js.Dynamic.literal(name = "TableAlreadyExistsException")
       __obj.asInstanceOf[TableAlreadyExistsException]
     }
     
@@ -37,13 +34,12 @@ object typesTableAlreadyExistsExceptionMod {
     }
   }
   
-  @js.native
   trait TableAlreadyExistsExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object TableAlreadyExistsExceptionDetails {
     

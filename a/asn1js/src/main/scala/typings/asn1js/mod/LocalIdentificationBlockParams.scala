@@ -3,13 +3,11 @@ package typings.asn1js.mod
 import typings.asn1js.anon.LocalHexBlockParamsisCons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalIdentificationBlockParams extends StObject {
   
-  var idBlock: js.UndefOr[LocalHexBlockParamsisCons] = js.native
+  var idBlock: js.UndefOr[LocalHexBlockParamsisCons] = js.undefined
 }
 object LocalIdentificationBlockParams {
   

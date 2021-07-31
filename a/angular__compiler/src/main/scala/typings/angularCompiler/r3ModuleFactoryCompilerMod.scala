@@ -7,17 +7,19 @@ import typings.angularCompiler.outputAstMod.Expression
 import typings.angularCompiler.srcUtilMod.OutputContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object r3ModuleFactoryCompilerMod {
   
-  @JSImport("@angular/compiler/src/render3/r3_module_factory_compiler", "compileModuleFactory")
+  @JSImport("@angular/compiler/src/render3/r3_module_factory_compiler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def compileModuleFactory(
     outputCtx: OutputContext,
     module: CompileNgModuleMetadata,
     backPatchReferenceOf: js.Function1[/* module */ CompileTypeMetadata, Expression],
     resolver: CompileMetadataResolver
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileModuleFactory")(outputCtx.asInstanceOf[js.Any], module.asInstanceOf[js.Any], backPatchReferenceOf.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -7,7 +7,6 @@ import typings.convertUnits.convertUnitsStrings.Tb_
 import typings.convertUnits.convertUnitsStrings.b_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Pressure

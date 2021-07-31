@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** adds a property to determine the sort order of the column values within the index. Some database drivers may ignore this property. */
-@js.native
-trait IndexColumnDescriptor extends Descriptor {
+trait IndexColumnDescriptor
+  extends StObject
+     with Descriptor {
   
   /** is the column sorted in ascending order. */
-  var IsAscending: Boolean = js.native
+  var IsAscending: Boolean
 }
 object IndexColumnDescriptor {
   

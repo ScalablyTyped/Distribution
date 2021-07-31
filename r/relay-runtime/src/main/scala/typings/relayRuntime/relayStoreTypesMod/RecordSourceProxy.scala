@@ -3,20 +3,18 @@ package typings.relayRuntime.relayStoreTypesMod
 import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordSourceProxy extends StObject {
   
-  def create(dataID: DataID, typeName: String): RecordProxy[js.Object] = js.native
+  def create(dataID: DataID, typeName: String): RecordProxy[js.Object]
   
-  def delete(dataID: DataID): Unit = js.native
+  def delete(dataID: DataID): Unit
   
   // tslint:disable-next-line:no-unnecessary-generics
-  def get[T](dataID: DataID): js.UndefOr[RecordProxy[T] | Null] = js.native
+  def get[T](dataID: DataID): js.UndefOr[RecordProxy[T] | Null]
   
-  def getRoot(): RecordProxy[js.Object] = js.native
+  def getRoot(): RecordProxy[js.Object]
 }
 object RecordSourceProxy {
   

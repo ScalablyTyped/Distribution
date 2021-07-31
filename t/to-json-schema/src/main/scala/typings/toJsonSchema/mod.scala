@@ -11,7 +11,6 @@ import typings.toJsonSchema.anon.Mode
 import typings.toJsonSchema.toJsonSchemaBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,94 +23,96 @@ object mod {
     * @param value Any javascript value
     * @param options optional options object
     */
-  @JSImport("to-json-schema", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any): JSONSchema3or4 = js.native
-  @JSImport("to-json-schema", JSImport.Namespace)
-  @js.native
-  def apply(value: js.Any, options: Options): JSONSchema3or4 = js.native
+  @scala.inline
+  def apply(value: js.Any): JSONSchema3or4 = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[JSONSchema3or4]
+  @scala.inline
+  def apply(value: js.Any, options: Options): JSONSchema3or4 = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[JSONSchema3or4]
   
+  @JSImport("to-json-schema", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait JSONSchema3or4
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var default: js.UndefOr[JSONSchema4Type] = js.native
+    var default: js.UndefOr[JSONSchema4Type] = js.undefined
     
     @JSName("$ref")
-    var $ref: js.UndefOr[String] = js.native
+    var $ref: js.UndefOr[String] = js.undefined
     
     @JSName("$schema")
-    var $schema: js.UndefOr[JSONSchema4Version] = js.native
+    var $schema: js.UndefOr[JSONSchema4Version] = js.undefined
     
-    var additionalItems: js.UndefOr[Boolean | JSONSchema3or4] = js.native
+    var additionalItems: js.UndefOr[Boolean | JSONSchema3or4] = js.undefined
     
-    var additionalProperties: js.UndefOr[Boolean | JSONSchema3or4] = js.native
+    var additionalProperties: js.UndefOr[Boolean | JSONSchema3or4] = js.undefined
     
-    var allOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+    var allOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
     
-    var anyOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+    var anyOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
     
-    var definitions: js.UndefOr[StringDictionary[JSONSchema4]] = js.native
+    var definitions: js.UndefOr[StringDictionary[JSONSchema4]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[JSONSchema3or4 | String | js.Array[String]]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[JSONSchema3or4 | String | js.Array[String]]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** JSON Schema 3 only */
-    var disallow: js.UndefOr[String | (js.Array[String | JSONSchema3or4])] = js.native
+    var disallow: js.UndefOr[String | (js.Array[String | JSONSchema3or4])] = js.undefined
     
     /** JSON Schema 3 uses `divisibleBy` instead of `multipleOf`. */
-    var divisibleBy: js.UndefOr[Double] = js.native
+    var divisibleBy: js.UndefOr[Double] = js.undefined
     
-    var enum: js.UndefOr[js.Array[JSONSchema4Type]] = js.native
+    var `enum`: js.UndefOr[js.Array[JSONSchema4Type]] = js.undefined
     
-    var exclusiveMaximum: js.UndefOr[Boolean] = js.native
+    var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
     
-    var exclusiveMinimum: js.UndefOr[Boolean] = js.native
+    var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
     
-    var `extends`: js.UndefOr[JSONSchema3or4 | js.Array[JSONSchema3or4]] = js.native
+    var `extends`: js.UndefOr[JSONSchema3or4 | js.Array[JSONSchema3or4]] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[JSONSchema3or4 | js.Array[JSONSchema3or4]] = js.native
+    var items: js.UndefOr[JSONSchema3or4 | js.Array[JSONSchema3or4]] = js.undefined
     
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxProperties: js.UndefOr[Double] = js.native
+    var maxProperties: js.UndefOr[Double] = js.undefined
     
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
-    var minItems: js.UndefOr[Double] = js.native
+    var minItems: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var minProperties: js.UndefOr[Double] = js.native
+    var minProperties: js.UndefOr[Double] = js.undefined
     
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
-    var multipleOf: js.UndefOr[Double] = js.native
+    var multipleOf: js.UndefOr[Double] = js.undefined
     
-    var not: js.UndefOr[JSONSchema4] = js.native
+    var not: js.UndefOr[JSONSchema4] = js.undefined
     
-    var oneOf: js.UndefOr[js.Array[JSONSchema4]] = js.native
+    var oneOf: js.UndefOr[js.Array[JSONSchema4]] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var patternProperties: js.UndefOr[StringDictionary[JSONSchema3or4]] = js.native
+    var patternProperties: js.UndefOr[StringDictionary[JSONSchema3or4]] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[JSONSchema3or4]] = js.native
+    var properties: js.UndefOr[StringDictionary[JSONSchema3or4]] = js.undefined
     
-    var required: js.UndefOr[Boolean | `false` | js.Array[String]] = js.native
+    var required: js.UndefOr[Boolean | `false` | js.Array[String]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[JSONSchema4TypeName | js.Array[JSONSchema4TypeName]] = js.native
+    var `type`: js.UndefOr[JSONSchema4TypeName | js.Array[JSONSchema4TypeName]] = js.undefined
     
-    var uniqueItems: js.UndefOr[Boolean] = js.native
+    var uniqueItems: js.UndefOr[Boolean] = js.undefined
   }
   object JSONSchema3or4 {
     
@@ -378,12 +379,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var arrays: js.UndefOr[Mode] = js.native
+    var arrays: js.UndefOr[Mode] = js.undefined
     
-    var objects: js.UndefOr[AdditionalProperties] = js.native
+    var objects: js.UndefOr[AdditionalProperties] = js.undefined
     
     /**
       * By providing `postProcessFnc`, you can modify or replace generated
@@ -413,7 +413,7 @@ object mod {
           ], 
           JSONSchema3or4
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * specify `true` to make all properties required.
@@ -425,9 +425,9 @@ object mod {
       * const schema = toJsonSchema(33, {required: true});
       * // { type: "integer", "required": true }
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var strings: js.UndefOr[DetectFormat] = js.native
+    var strings: js.UndefOr[DetectFormat] = js.undefined
   }
   object Options {
     

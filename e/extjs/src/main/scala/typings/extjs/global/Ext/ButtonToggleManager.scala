@@ -4,13 +4,13 @@ import typings.extjs.Ext.IBase
 import typings.extjs.Ext.IClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.ButtonToggleManager")
 @js.native
 class ButtonToggleManager ()
-  extends typings.extjs.Ext.ButtonToggleManager
+  extends StObject
+     with typings.extjs.Ext.ButtonToggleManager
 /* static members */
 object ButtonToggleManager {
   
@@ -22,56 +22,46 @@ object ButtonToggleManager {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  @JSGlobal("Ext.ButtonToggleManager.callOverridden")
-  @js.native
-  def callOverridden(): js.Any = js.native
-  @JSGlobal("Ext.ButtonToggleManager.callOverridden")
-  @js.native
-  def callOverridden(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+  @scala.inline
+  def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  @JSGlobal("Ext.ButtonToggleManager.callParent")
-  @js.native
-  def callParent(): js.Any = js.native
-  @JSGlobal("Ext.ButtonToggleManager.callParent")
-  @js.native
-  def callParent(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+  @scala.inline
+  def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  @JSGlobal("Ext.ButtonToggleManager.callSuper")
-  @js.native
-  def callSuper(): js.Any = js.native
-  @JSGlobal("Ext.ButtonToggleManager.callSuper")
-  @js.native
-  def callSuper(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+  @scala.inline
+  def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Returns the initial configuration passed to constructor when instantiating this class
     * @param name String Name of the config option to return.
     * @returns Object/Mixed The full config object or a single config value when name parameter specified.
     */
-  @JSGlobal("Ext.ButtonToggleManager.getInitialConfig")
-  @js.native
-  def getInitialConfig(): js.Any = js.native
-  @JSGlobal("Ext.ButtonToggleManager.getInitialConfig")
-  @js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  @scala.inline
+  def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Initialize configuration for this class
     * @param config Object
     * @returns Ext.Base this
     */
-  @JSGlobal("Ext.ButtonToggleManager.initConfig")
-  @js.native
-  def initConfig(): IBase = js.native
-  @JSGlobal("Ext.ButtonToggleManager.initConfig")
-  @js.native
-  def initConfig(config: js.Any): IBase = js.native
+  @scala.inline
+  def initConfig(): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[IBase]
+  @scala.inline
+  def initConfig(config: js.Any): IBase = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IBase]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.ButtonToggleManager.self")
@@ -83,7 +73,6 @@ object ButtonToggleManager {
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
     */
-  @JSGlobal("Ext.ButtonToggleManager.statics")
-  @js.native
-  def statics(): IClass = js.native
+  @scala.inline
+  def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
 }

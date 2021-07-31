@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IcmpTypeCode extends StObject {
   
   /**
     * The ICMP code. A value of -1 means all codes for the specified ICMP type.
     */
-  var Code: js.UndefOr[Integer] = js.native
+  var Code: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ICMP type. A value of -1 means all types.
     */
-  var Type: js.UndefOr[Integer] = js.native
+  var Type: js.UndefOr[Integer] = js.undefined
 }
 object IcmpTypeCode {
   

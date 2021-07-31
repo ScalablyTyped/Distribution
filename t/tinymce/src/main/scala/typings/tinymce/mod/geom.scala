@@ -3,27 +3,25 @@ package typings.tinymce.mod
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geom {
   
-  @js.native
   trait Rect extends StObject {
     
-    def clamp(rect: Rect, clampRect: Rect, fixedSize: Boolean): Rect = js.native
+    def clamp(rect: Rect, clampRect: Rect, fixedSize: Boolean): Rect
     
-    def create(x: Double, y: Double, w: Double, h: Double): Rect = js.native
+    def create(x: Double, y: Double, w: Double, h: Double): Rect
     
-    def findBestRelativePosition(rect: Rect, targetRect: Rect, constrainRect: Rect, rels: js.Array[_]): Unit = js.native
+    def findBestRelativePosition(rect: Rect, targetRect: Rect, constrainRect: Rect, rels: js.Array[js.Any]): Unit
     
-    def fromClientRect(clientRect: ClientRect): Rect = js.native
+    def fromClientRect(clientRect: ClientRect): Rect
     
-    def inflate(rect: Rect, w: Double, h: Double): Rect = js.native
+    def inflate(rect: Rect, w: Double, h: Double): Rect
     
-    def intersect(rect: Rect, cropRect: Rect): Rect = js.native
+    def intersect(rect: Rect, cropRect: Rect): Rect
     
-    def relativePosition(rect: Rect, targetRect: Rect, rel: String): Unit = js.native
+    def relativePosition(rect: Rect, targetRect: Rect, rel: String): Unit
   }
   object Rect {
     
@@ -31,7 +29,7 @@ object geom {
     def apply(
       clamp: (Rect, Rect, Boolean) => Rect,
       create: (Double, Double, Double, Double) => Rect,
-      findBestRelativePosition: (Rect, Rect, Rect, js.Array[_]) => Unit,
+      findBestRelativePosition: (Rect, Rect, Rect, js.Array[js.Any]) => Unit,
       fromClientRect: ClientRect => Rect,
       inflate: (Rect, Double, Double) => Rect,
       intersect: (Rect, Rect) => Rect,
@@ -51,7 +49,7 @@ object geom {
       def setCreate(value: (Double, Double, Double, Double) => Rect): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
       @scala.inline
-      def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[_]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
+      def setFindBestRelativePosition(value: (Rect, Rect, Rect, js.Array[js.Any]) => Unit): Self = StObject.set(x, "findBestRelativePosition", js.Any.fromFunction4(value))
       
       @scala.inline
       def setFromClientRect(value: ClientRect => Rect): Self = StObject.set(x, "fromClientRect", js.Any.fromFunction1(value))

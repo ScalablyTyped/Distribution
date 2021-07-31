@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputProcessingConfiguration extends StObject {
   
   /**
     * The InputLambdaProcessor that is used to preprocess the records in the stream before being processed by your application code.
     */
-  var InputLambdaProcessor: typings.awsSdk.kinesisanalyticsv2Mod.InputLambdaProcessor = js.native
+  var InputLambdaProcessor: typings.awsSdk.kinesisanalyticsv2Mod.InputLambdaProcessor
 }
 object InputProcessingConfiguration {
   

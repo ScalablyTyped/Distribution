@@ -2,22 +2,20 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerInfoObject extends StObject {
   
   @JSName("InfoPath.ServerInfoObject_typekey")
-  var InfoPathDotServerInfoObject_typekey: ServerInfoObject = js.native
+  var InfoPathDotServerInfoObject_typekey: ServerInfoObject
   
-  val SharePointListUrl: String = js.native
+  val SharePointListUrl: String
   
-  val SharePointServerRootUrl: String = js.native
+  val SharePointServerRootUrl: String
   
-  val SharePointSiteCollectionUrl: String = js.native
+  val SharePointSiteCollectionUrl: String
   
-  val SharePointSiteUrl: String = js.native
+  val SharePointSiteUrl: String
 }
 object ServerInfoObject {
   

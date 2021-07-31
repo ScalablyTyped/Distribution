@@ -2,19 +2,17 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentDatatype extends StObject {
   
-  var componentDatatype: js.UndefOr[typings.cesium.mod.ComponentDatatype] = js.native
+  var componentDatatype: js.UndefOr[typings.cesium.mod.ComponentDatatype] = js.undefined
   
-  var componentsPerAttribute: js.UndefOr[Double] = js.native
+  var componentsPerAttribute: js.UndefOr[Double] = js.undefined
   
-  var normalize: js.UndefOr[Boolean] = js.native
+  var normalize: js.UndefOr[Boolean] = js.undefined
   
-  var values: js.UndefOr[js.Array[Double]] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object ComponentDatatype {
   

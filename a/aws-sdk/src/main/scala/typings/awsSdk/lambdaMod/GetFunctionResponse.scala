@@ -2,31 +2,29 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionResponse extends StObject {
   
   /**
     * The deployment package of the function or version.
     */
-  var Code: js.UndefOr[FunctionCodeLocation] = js.native
+  var Code: js.UndefOr[FunctionCodeLocation] = js.undefined
   
   /**
     * The function's reserved concurrency.
     */
-  var Concurrency: js.UndefOr[typings.awsSdk.lambdaMod.Concurrency] = js.native
+  var Concurrency: js.UndefOr[typings.awsSdk.lambdaMod.Concurrency] = js.undefined
   
   /**
     * The configuration of the function or version.
     */
-  var Configuration: js.UndefOr[FunctionConfiguration] = js.native
+  var Configuration: js.UndefOr[FunctionConfiguration] = js.undefined
   
   /**
     * The function's tags.
     */
-  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.lambdaMod.Tags] = js.undefined
 }
 object GetFunctionResponse {
   

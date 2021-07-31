@@ -2,13 +2,11 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticsearchInstanceTypeLimitsResponse extends StObject {
   
-  var LimitsByRole: js.UndefOr[typings.awsSdk.esMod.LimitsByRole] = js.native
+  var LimitsByRole: js.UndefOr[typings.awsSdk.esMod.LimitsByRole] = js.undefined
 }
 object DescribeElasticsearchInstanceTypeLimitsResponse {
   

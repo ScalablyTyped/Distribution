@@ -2,17 +2,15 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var minuteStep: Double = js.native
+  var minuteStep: Double
   
-  var mode: String = js.native
+  var mode: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object Mode {
   

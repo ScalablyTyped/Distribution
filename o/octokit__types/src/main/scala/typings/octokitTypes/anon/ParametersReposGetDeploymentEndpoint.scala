@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetDeploymentResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetDeploymentEndpoint extends StObject {
   
-  var parameters: ReposGetDeploymentEndpoint = js.native
+  var parameters: ReposGetDeploymentEndpoint
   
-  var request: ReposGetDeploymentRequestOptions = js.native
+  var request: ReposGetDeploymentRequestOptions
   
-  var response: OctokitResponse[ReposGetDeploymentResponseData] = js.native
+  var response: OctokitResponse[ReposGetDeploymentResponseData]
 }
 object ParametersReposGetDeploymentEndpoint {
   

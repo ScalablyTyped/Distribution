@@ -2,41 +2,39 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicyResponse extends StObject {
   
   /**
     * A description of the firewall policy.
     */
-  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.networkfirewallMod.Description] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the firewall policy.  If this response is for a create request that had DryRun set to TRUE, then this ARN is a placeholder that isn't attached to a valid resource. 
     */
-  var FirewallPolicyArn: ResourceArn = js.native
+  var FirewallPolicyArn: ResourceArn
   
   /**
     * The unique identifier for the firewall policy. 
     */
-  var FirewallPolicyId: ResourceId = js.native
+  var FirewallPolicyId: ResourceId
   
   /**
     * The descriptive name of the firewall policy. You can't change the name of a firewall policy after you create it.
     */
-  var FirewallPolicyName: ResourceName = js.native
+  var FirewallPolicyName: ResourceName
   
   /**
     * The current status of the firewall policy. You can retrieve this for a firewall policy by calling DescribeFirewallPolicy and providing the firewall policy's name or ARN.
     */
-  var FirewallPolicyStatus: js.UndefOr[ResourceStatus] = js.native
+  var FirewallPolicyStatus: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The key:value pairs to associate with the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object FirewallPolicyResponse {
   

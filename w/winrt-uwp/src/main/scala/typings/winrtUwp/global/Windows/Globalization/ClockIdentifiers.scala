@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the clock identifiers for the supported clocks, as static properties. */
 @JSGlobal("Windows.Globalization.ClockIdentifiers")
 @js.native
 abstract class ClockIdentifiers ()
-  extends typings.winrtUwp.Windows.Globalization.ClockIdentifiers
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.ClockIdentifiers
 object ClockIdentifiers {
   
   @JSGlobal("Windows.Globalization.ClockIdentifiers")

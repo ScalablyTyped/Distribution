@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FieldMask. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new FieldMask.
   * @param [properties] Properties to set
   */
-class FieldMask () extends IFieldMask {
+class FieldMask ()
+  extends StObject
+     with IFieldMask {
   def this(properties: IFieldMask) = this()
   
   /** FieldMask paths. */
@@ -32,18 +33,20 @@ class FieldMask () extends IFieldMask {
 }
 object FieldMask {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new FieldMask instance using the specified properties.
     * @param [properties] Properties to set
     * @returns FieldMask instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.create")
-  @js.native
-  def create(): FieldMask = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.create")
-  @js.native
-  def create(properties: IFieldMask): FieldMask = js.native
+  @scala.inline
+  def create(): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FieldMask]
+  @scala.inline
+  def create(properties: IFieldMask): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
   
   /**
     * Decodes a FieldMask message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object FieldMask {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decode")
-  @js.native
-  def decode(reader: Reader): FieldMask = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): FieldMask = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decode")
-  @js.native
-  def decode(reader: Uint8Array): FieldMask = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): FieldMask = js.native
+  @scala.inline
+  def decode(reader: Reader): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
+  @scala.inline
+  def decode(reader: Reader, length: Double): FieldMask = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldMask]
+  @scala.inline
+  def decode(reader: Uint8Array): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): FieldMask = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FieldMask]
   
   /**
     * Decodes a FieldMask message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object FieldMask {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): FieldMask = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): FieldMask = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
   
   /**
     * Encodes the specified FieldMask message. Does not implicitly {@link google.protobuf.FieldMask.verify|verify} messages.
@@ -89,12 +86,10 @@ object FieldMask {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.encode")
-  @js.native
-  def encode(message: IFieldMask): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.encode")
-  @js.native
-  def encode(message: IFieldMask, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFieldMask): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFieldMask, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FieldMask message, length delimited. Does not implicitly {@link google.protobuf.FieldMask.verify|verify} messages.
@@ -103,12 +98,10 @@ object FieldMask {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldMask): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldMask, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFieldMask): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFieldMask, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FieldMask message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object FieldMask {
     * @returns FieldMask
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): FieldMask = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): FieldMask = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FieldMask]
   
   /**
     * Creates a plain object from a FieldMask message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object FieldMask {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.toObject")
-  @js.native
-  def toObject(message: FieldMask): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.toObject")
-  @js.native
-  def toObject(message: FieldMask, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: FieldMask): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: FieldMask, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FieldMask message.
@@ -140,7 +130,6 @@ object FieldMask {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.FieldMask.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

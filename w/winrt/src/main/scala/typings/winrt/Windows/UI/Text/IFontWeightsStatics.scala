@@ -2,33 +2,31 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFontWeightsStatics extends StObject {
   
-  var black: FontWeight = js.native
+  var black: FontWeight
   
-  var bold: FontWeight = js.native
+  var bold: FontWeight
   
-  var extraBlack: FontWeight = js.native
+  var extraBlack: FontWeight
   
-  var extraBold: FontWeight = js.native
+  var extraBold: FontWeight
   
-  var extraLight: FontWeight = js.native
+  var extraLight: FontWeight
   
-  var light: FontWeight = js.native
+  var light: FontWeight
   
-  var medium: FontWeight = js.native
+  var medium: FontWeight
   
-  var normal: FontWeight = js.native
+  var normal: FontWeight
   
-  var semiBold: FontWeight = js.native
+  var semiBold: FontWeight
   
-  var semiLight: FontWeight = js.native
+  var semiLight: FontWeight
   
-  var thin: FontWeight = js.native
+  var thin: FontWeight
 }
 object IFontWeightsStatics {
   

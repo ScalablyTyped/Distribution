@@ -2,16 +2,14 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPartnerEventsRequest extends StObject {
   
   /**
     * The list of events to write to the event bus.
     */
-  var Entries: PutPartnerEventsRequestEntryList = js.native
+  var Entries: PutPartnerEventsRequestEntryList
 }
 object PutPartnerEventsRequest {
   

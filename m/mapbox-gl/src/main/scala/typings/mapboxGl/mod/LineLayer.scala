@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[LineLayout] = js.native
+  var layout: js.UndefOr[LineLayout] = js.undefined
   
-  var paint: js.UndefOr[LinePaint] = js.native
+  var paint: js.UndefOr[LinePaint] = js.undefined
   
-  var `type`: line = js.native
+  var `type`: line
 }
 object LineLayer {
   
   @scala.inline
-  def apply(id: String, `type`: line): LineLayer = {
+  def apply(id: String): LineLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[LineLayer]
   }
   

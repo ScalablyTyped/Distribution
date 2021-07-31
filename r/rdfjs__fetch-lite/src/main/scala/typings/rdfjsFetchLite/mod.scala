@@ -16,22 +16,24 @@ import typings.std.Response
 import typings.std.ResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@rdfjs/fetch-lite", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: FormatsInit): js.Promise[RdfFetchResponse[Quad]] = js.native
-  @JSImport("@rdfjs/fetch-lite", JSImport.Namespace)
-  @js.native
-  def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String, options: FactoryInit[D, OutQuad, InQuad]): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = js.native
+  @scala.inline
+  def apply(url: String, options: FormatsInit): js.Promise[RdfFetchResponse[Quad]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfFetchResponse[Quad]]]
+  @scala.inline
+  def apply[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */](url: String, options: FactoryInit[D, OutQuad, InQuad]): js.Promise[DatasetResponse[D, OutQuad, InQuad]] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetResponse[D, OutQuad, InQuad]]]
   
+  @JSImport("@rdfjs/fetch-lite", JSImport.Namespace)
   @js.native
-  trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends RdfFetchResponse[OutQuad] {
+  val ^ : js.Any = js.native
+  
+  trait DatasetResponse[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */]
+    extends StObject
+       with RdfFetchResponse[OutQuad] {
     
-    def dataset(): js.Promise[D] = js.native
+    def dataset(): js.Promise[D]
   }
   object DatasetResponse {
     
@@ -43,7 +45,7 @@ object mod {
       dataset: () => js.Promise[D],
       formData: () => js.Promise[FormData],
       headers: Headers,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       ok: Boolean,
       quadStream: () => js.Promise[Stream[OutQuad]],
       redirected: Boolean,
@@ -54,23 +56,24 @@ object mod {
       `type`: ResponseType,
       url: String
     ): DatasetResponse[D, OutQuad, InQuad] = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], dataset = js.Any.fromFunction0(dataset), formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], dataset = js.Any.fromFunction0(dataset), formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatasetResponse[D, OutQuad, InQuad]]
     }
     
     @scala.inline
-    implicit class DatasetResponseMutableBuilder[Self <: DatasetResponse[_, _, _], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self with (DatasetResponse[D, OutQuad, InQuad])) extends AnyVal {
+    implicit class DatasetResponseMutableBuilder[Self <: DatasetResponse[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self & (DatasetResponse[D, OutQuad, InQuad])) extends AnyVal {
       
       @scala.inline
       def setDataset(value: () => js.Promise[D]): Self = StObject.set(x, "dataset", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait FactoryInit[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] extends FormatsInit {
+  trait FactoryInit[D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */]
+    extends StObject
+       with FormatsInit {
     
-    var factory: DatasetCoreFactory[OutQuad, InQuad, D] = js.native
+    var factory: DatasetCoreFactory[OutQuad, InQuad, D]
   }
   object FactoryInit {
     
@@ -81,19 +84,20 @@ object mod {
     }
     
     @scala.inline
-    implicit class FactoryInitMutableBuilder[Self <: FactoryInit[_, _, _], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self with (FactoryInit[D, OutQuad, InQuad])) extends AnyVal {
+    implicit class FactoryInitMutableBuilder[Self <: FactoryInit[?, ?, ?], D /* <: DatasetCore[OutQuad, InQuad] */, OutQuad /* <: BaseQuad */, InQuad /* <: BaseQuad */] (val x: Self & (FactoryInit[D, OutQuad, InQuad])) extends AnyVal {
       
       @scala.inline
       def setFactory(value: DatasetCoreFactory[OutQuad, InQuad, D]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait FormatsInit extends RequestInit {
+  trait FormatsInit
+    extends StObject
+       with RequestInit {
     
-    var fetch: js.UndefOr[FnCall] = js.native
+    var fetch: js.UndefOr[FnCall] = js.undefined
     
-    var formats: PickparsersSinkMapEventEm = js.native
+    var formats: PickparsersSinkMapEventEm
   }
   object FormatsInit {
     
@@ -117,10 +121,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait RdfFetchResponse[Q /* <: BaseQuad */] extends Response {
+  trait RdfFetchResponse[Q /* <: BaseQuad */]
+    extends StObject
+       with Response {
     
-    def quadStream(): js.Promise[Stream[Q]] = js.native
+    def quadStream(): js.Promise[Stream[Q]]
   }
   object RdfFetchResponse {
     
@@ -131,7 +136,7 @@ object mod {
       bodyUsed: Boolean,
       formData: () => js.Promise[FormData],
       headers: Headers,
-      json: () => js.Promise[_],
+      json: () => js.Promise[js.Any],
       ok: Boolean,
       quadStream: () => js.Promise[Stream[Q]],
       redirected: Boolean,
@@ -142,13 +147,13 @@ object mod {
       `type`: ResponseType,
       url: String
     ): RdfFetchResponse[Q] = {
-      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arrayBuffer = js.Any.fromFunction0(arrayBuffer), blob = js.Any.fromFunction0(blob), bodyUsed = bodyUsed.asInstanceOf[js.Any], formData = js.Any.fromFunction0(formData), headers = headers.asInstanceOf[js.Any], json = js.Any.fromFunction0(json), ok = ok.asInstanceOf[js.Any], quadStream = js.Any.fromFunction0(quadStream), redirected = redirected.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], text = js.Any.fromFunction0(text), trailer = trailer.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RdfFetchResponse[Q]]
     }
     
     @scala.inline
-    implicit class RdfFetchResponseMutableBuilder[Self <: RdfFetchResponse[_], Q /* <: BaseQuad */] (val x: Self with RdfFetchResponse[Q]) extends AnyVal {
+    implicit class RdfFetchResponseMutableBuilder[Self <: RdfFetchResponse[?], Q /* <: BaseQuad */] (val x: Self & RdfFetchResponse[Q]) extends AnyVal {
       
       @scala.inline
       def setQuadStream(value: () => js.Promise[Stream[Q]]): Self = StObject.set(x, "quadStream", js.Any.fromFunction0(value))

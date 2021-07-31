@@ -2,15 +2,13 @@ package typings.yogaLayout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigStatic extends StObject {
   
-  def create(): YogaConfig = js.native
+  def create(): YogaConfig
   
-  def destroy(config: YogaConfig): js.Any = js.native
+  def destroy(config: YogaConfig): js.Any
 }
 object ConfigStatic {
   

@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A state-sponsored attack alert. Derived from audit logs.
   */
-@js.native
 trait SchemaStateSponsoredAttack extends StObject {
   
   /**
     * The email of the user this incident was created for.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object SchemaStateSponsoredAttack {
   

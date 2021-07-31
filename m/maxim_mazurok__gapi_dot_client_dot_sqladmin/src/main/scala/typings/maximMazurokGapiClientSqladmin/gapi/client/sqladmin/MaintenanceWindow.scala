@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindow extends StObject {
   
   /** day of week (1-7), starting on Monday. */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /** hour of day - 0 to 23. */
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
   /** This is always *sql#maintenanceWindow*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Maintenance timing setting: *canary* (Earlier) or *stable* (Later). Learn more. */
-  var updateTrack: js.UndefOr[String] = js.native
+  var updateTrack: js.UndefOr[String] = js.undefined
 }
 object MaintenanceWindow {
   

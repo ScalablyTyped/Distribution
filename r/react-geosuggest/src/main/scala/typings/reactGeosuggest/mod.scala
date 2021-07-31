@@ -11,7 +11,6 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,14 +19,13 @@ object mod {
   @js.native
   class default () extends Geosuggest
   
-  @js.native
   trait Fixture extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var location: js.UndefOr[LatLng] = js.native
+    var location: js.UndefOr[LatLng] = js.undefined
   }
   object Fixture {
     
@@ -74,84 +72,83 @@ object mod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<std.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<std.HTMLInputElement>] ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ @js.native
-  trait GeosuggestProps extends StObject {
+  - Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<std.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<std.HTMLInputElement>] ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait GeosuggestProps extends StObject {
     
-    var autoActivateFirstSuggest: js.UndefOr[Boolean] = js.native
+    var autoActivateFirstSuggest: js.UndefOr[Boolean] = js.undefined
     
-    var autoComplete: js.UndefOr[String] = js.native
+    var autoComplete: js.UndefOr[String] = js.undefined
     
-    var bounds: js.UndefOr[LatLngBounds] = js.native
+    var bounds: js.UndefOr[LatLngBounds] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String | js.Array[String]] = js.native
+    var country: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fixtures: js.UndefOr[js.Array[Fixture]] = js.native
+    var fixtures: js.UndefOr[js.Array[Fixture]] = js.undefined
     
-    var getSuggestLabel: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, String]] = js.native
+    var getSuggestLabel: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, String]] = js.undefined
     
-    var googleMaps: js.UndefOr[Typeofmaps] = js.native
+    var googleMaps: js.UndefOr[Typeofmaps] = js.undefined
     
-    var highlightMatch: js.UndefOr[Boolean] = js.native
+    var highlightMatch: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreEnter: js.UndefOr[Boolean] = js.native
+    var ignoreEnter: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreTab: js.UndefOr[Boolean] = js.native
+    var ignoreTab: js.UndefOr[Boolean] = js.undefined
     
-    var initialValue: js.UndefOr[String] = js.native
+    var initialValue: js.UndefOr[String] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.native
+    var inputClassName: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[LatLng] = js.native
+    var location: js.UndefOr[LatLng] = js.undefined
     
-    var maxFixtures: js.UndefOr[Double] = js.native
+    var maxFixtures: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var onActivateSuggest: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.native
+    var onActivateSuggest: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var onSuggestNoResults: js.UndefOr[js.Function1[/* userInput */ String, Unit]] = js.native
+    var onSuggestNoResults: js.UndefOr[js.Function1[/* userInput */ String, Unit]] = js.undefined
     
-    var onSuggestSelect: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.native
+    var onSuggestSelect: js.UndefOr[js.Function1[/* suggest */ Suggest, Unit]] = js.undefined
     
-    var onUpdateSuggests: js.UndefOr[js.Function2[/* suggests */ js.Any, /* activeSuggest */ js.Any, Unit]] = js.native
+    var onUpdateSuggests: js.UndefOr[js.Function2[/* suggests */ js.Any, /* activeSuggest */ js.Any, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var queryDelay: js.UndefOr[Double] = js.native
+    var queryDelay: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var renderSuggestItem: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, _]] = js.native
+    var renderSuggestItem: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, js.Any]] = js.undefined
     
-    var skipSuggest: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, Boolean]] = js.native
+    var skipSuggest: js.UndefOr[js.Function1[/* googleSuggest */ AutocompletePrediction, Boolean]] = js.undefined
     
-    var style: js.UndefOr[Styles] = js.native
+    var style: js.UndefOr[Styles] = js.undefined
     
-    var suggestItemActiveClassName: js.UndefOr[String] = js.native
+    var suggestItemActiveClassName: js.UndefOr[String] = js.undefined
     
-    var suggestItemClassName: js.UndefOr[String] = js.native
+    var suggestItemClassName: js.UndefOr[String] = js.undefined
     
-    var suggestsClassName: js.UndefOr[String] = js.native
+    var suggestsClassName: js.UndefOr[String] = js.undefined
     
-    var suggestsHiddenClassName: js.UndefOr[String] = js.native
+    var suggestsHiddenClassName: js.UndefOr[String] = js.undefined
     
-    var types: js.UndefOr[js.Array[QueryType]] = js.native
+    var types: js.UndefOr[js.Array[QueryType]] = js.undefined
   }
   object GeosuggestProps {
     
@@ -351,7 +348,7 @@ object mod {
       def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
       @scala.inline
-      def setRenderSuggestItem(value: /* googleSuggest */ AutocompletePrediction => _): Self = StObject.set(x, "renderSuggestItem", js.Any.fromFunction1(value))
+      def setRenderSuggestItem(value: /* googleSuggest */ AutocompletePrediction => js.Any): Self = StObject.set(x, "renderSuggestItem", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderSuggestItemUndefined: Self = StObject.set(x, "renderSuggestItem", js.undefined)
@@ -434,14 +431,13 @@ object mod {
     def geocode: typings.reactGeosuggest.reactGeosuggestStrings.geocode = "geocode".asInstanceOf[typings.reactGeosuggest.reactGeosuggestStrings.geocode]
   }
   
-  @js.native
   trait Styles extends StObject {
     
-    var input: js.UndefOr[Record[String, _]] = js.native
+    var input: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var suggestItem: js.UndefOr[Record[String, _]] = js.native
+    var suggestItem: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var suggests: js.UndefOr[Record[String, _]] = js.native
+    var suggests: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object Styles {
     
@@ -455,35 +451,34 @@ object mod {
     implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInput(value: Record[String, _]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      def setInput(value: Record[String, js.Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
       @scala.inline
-      def setSuggestItem(value: Record[String, _]): Self = StObject.set(x, "suggestItem", value.asInstanceOf[js.Any])
+      def setSuggestItem(value: Record[String, js.Any]): Self = StObject.set(x, "suggestItem", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuggestItemUndefined: Self = StObject.set(x, "suggestItem", js.undefined)
       
       @scala.inline
-      def setSuggests(value: Record[String, _]): Self = StObject.set(x, "suggests", value.asInstanceOf[js.Any])
+      def setSuggests(value: Record[String, js.Any]): Self = StObject.set(x, "suggests", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuggestsUndefined: Self = StObject.set(x, "suggests", js.undefined)
     }
   }
   
-  @js.native
   trait Suggest extends StObject {
     
-    var gmaps: js.UndefOr[GeocoderResult] = js.native
+    var gmaps: js.UndefOr[GeocoderResult] = js.undefined
     
-    var label: String = js.native
+    var label: String
     
-    var location: Lat = js.native
+    var location: Lat
     
-    var placeId: String = js.native
+    var placeId: String
   }
   object Suggest {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainStatisticsReportRequest extends StObject {
   
   /**
     * The domain that you want to obtain deliverability metrics for.
     */
-  var Domain: Identity = js.native
+  var Domain: Identity
   
   /**
     * The last day (in Unix time) that you want to obtain domain deliverability metrics for. The EndDate that you specify has to be less than or equal to 30 days after the StartDate.
     */
-  var EndDate: Timestamp = js.native
+  var EndDate: Timestamp
   
   /**
     * The first day (in Unix time) that you want to obtain domain deliverability metrics for.
     */
-  var StartDate: Timestamp = js.native
+  var StartDate: Timestamp
 }
 object GetDomainStatisticsReportRequest {
   

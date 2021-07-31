@@ -3,7 +3,6 @@ package typings.openseadragon.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullScreenApi {
@@ -12,13 +11,11 @@ object fullScreenApi {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("openseadragon", "fullScreenApi.cancelFullScreen")
-  @js.native
-  def cancelFullScreen(): Unit = js.native
+  @scala.inline
+  def cancelFullScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelFullScreen")().asInstanceOf[Unit]
   
-  @JSImport("openseadragon", "fullScreenApi.exitFullScreen")
-  @js.native
-  def exitFullScreen(): Unit = js.native
+  @scala.inline
+  def exitFullScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exitFullScreen")().asInstanceOf[Unit]
   
   @JSImport("openseadragon", "fullScreenApi.fullScreenErrorEventName")
   @js.native
@@ -32,17 +29,14 @@ object fullScreenApi {
   @scala.inline
   def fullScreenEventName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullScreenEventName")(x.asInstanceOf[js.Any])
   
-  @JSImport("openseadragon", "fullScreenApi.getFullScreenElement")
-  @js.native
-  def getFullScreenElement(): HTMLElement = js.native
+  @scala.inline
+  def getFullScreenElement(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullScreenElement")().asInstanceOf[HTMLElement]
   
-  @JSImport("openseadragon", "fullScreenApi.isFullScreen")
-  @js.native
-  def isFullScreen(): Boolean = js.native
+  @scala.inline
+  def isFullScreen(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullScreen")().asInstanceOf[Boolean]
   
-  @JSImport("openseadragon", "fullScreenApi.requestFullScreen")
-  @js.native
-  def requestFullScreen(): Unit = js.native
+  @scala.inline
+  def requestFullScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFullScreen")().asInstanceOf[Unit]
   
   @JSImport("openseadragon", "fullScreenApi.supportsFullScreen")
   @js.native

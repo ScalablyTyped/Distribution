@@ -2,45 +2,43 @@ package typings.jquerymobile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedPath extends StObject {
   
-  var authority: String = js.native
+  var authority: String
   
-  var directory: String = js.native
+  var directory: String
   
-  var domain: String = js.native
+  var domain: String
   
-  var doubleSlash: String = js.native
+  var doubleSlash: String
   
-  var filename: String = js.native
+  var filename: String
   
-  var hash: String = js.native
+  var hash: String
   
-  var host: String = js.native
+  var host: String
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var href: String = js.native
+  var href: String
   
-  var hrefNoHash: String = js.native
+  var hrefNoHash: String
   
-  var hrefNoSearch: String = js.native
+  var hrefNoSearch: String
   
-  var password: String = js.native
+  var password: String
   
-  var pathname: String = js.native
+  var pathname: String
   
-  var port: String = js.native
+  var port: String
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var search: String = js.native
+  var search: String
   
-  var username: String = js.native
+  var username: String
 }
 object ParsedPath {
   

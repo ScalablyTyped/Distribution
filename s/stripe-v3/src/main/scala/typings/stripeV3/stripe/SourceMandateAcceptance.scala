@@ -6,25 +6,23 @@ import typings.stripeV3.stripeV3Strings.online
 import typings.stripeV3.stripeV3Strings.refused
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceMandateAcceptance extends StObject {
   
-  var date: Double = js.native
+  var date: Double
   
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
-  var offline: js.UndefOr[OfflineAcceptanceMandate] = js.native
+  var offline: js.UndefOr[OfflineAcceptanceMandate] = js.undefined
   
-  var online: js.UndefOr[OnlineAcceptanceMandate] = js.native
+  var online: js.UndefOr[OnlineAcceptanceMandate] = js.undefined
   
-  var status: accepted | refused = js.native
+  var status: accepted | refused
   
-  var `type`: js.UndefOr[online | offline] = js.native
+  var `type`: js.UndefOr[online | offline] = js.undefined
   
-  var user_agent: js.UndefOr[String] = js.native
+  var user_agent: js.UndefOr[String] = js.undefined
 }
 object SourceMandateAcceptance {
   

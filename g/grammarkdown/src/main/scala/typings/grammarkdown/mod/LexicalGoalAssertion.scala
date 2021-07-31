@@ -6,7 +6,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.LexicalKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "LexicalGoalAssertion")
@@ -25,7 +24,7 @@ class LexicalGoalAssertion protected ()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
     symbol: typings.grammarkdown.nodesMod.Identifier
   ) = this()
   def this(
@@ -37,14 +36,14 @@ class LexicalGoalAssertion protected ()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
-    symbol: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
+    symbol: Unit,
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
     symbol: typings.grammarkdown.nodesMod.Identifier,
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
@@ -52,7 +51,7 @@ class LexicalGoalAssertion protected ()
     openBracketToken: typings.grammarkdown.nodesMod.Token[OpenBracketToken],
     lexicalKeyword: typings.grammarkdown.nodesMod.Token[LexicalKeyword],
     goalKeyword: typings.grammarkdown.nodesMod.Token[GoalKeyword],
-    symbol: js.UndefOr[scala.Nothing],
+    symbol: Unit,
     closeBracketToken: typings.grammarkdown.nodesMod.Token[CloseBracketToken]
   ) = this()
   def this(

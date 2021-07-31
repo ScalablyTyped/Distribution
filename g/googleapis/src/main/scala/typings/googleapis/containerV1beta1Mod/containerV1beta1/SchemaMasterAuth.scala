@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,33 +9,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Authentication can be done using HTTP basic auth or using client
   * certificates.
   */
-@js.native
 trait SchemaMasterAuth extends StObject {
   
   /**
     * [Output only] Base64-encoded public certificate used by clients to
     * authenticate to the cluster endpoint.
     */
-  var clientCertificate: js.UndefOr[String] = js.native
+  var clientCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration for client certificate authentication on the cluster. For
     * clusters before v1.12, if no configuration is specified, a client
     * certificate is issued.
     */
-  var clientCertificateConfig: js.UndefOr[SchemaClientCertificateConfig] = js.native
+  var clientCertificateConfig: js.UndefOr[SchemaClientCertificateConfig] = js.undefined
   
   /**
     * [Output only] Base64-encoded private key used by clients to authenticate
     * to the cluster endpoint.
     */
-  var clientKey: js.UndefOr[String] = js.native
+  var clientKey: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Base64-encoded public certificate that is the root of trust
     * for the cluster.
     */
-  var clusterCaCertificate: js.UndefOr[String] = js.native
+  var clusterCaCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * The password to use for HTTP basic authentication to the master endpoint.
@@ -44,14 +42,14 @@ trait SchemaMasterAuth extends StObject {
     * strong password.  If a password is provided for cluster creation,
     * username must be non-empty.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The username to use for HTTP basic authentication to the master endpoint.
     * For clusters v1.6.0 and later, basic authentication can be disabled by
     * leaving username unspecified (or setting it to the empty string).
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaMasterAuth {
   

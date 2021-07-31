@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is the main interface of a {@link SpreadsheetView} . It manages the active sheet within this view. */
-@js.native
-trait XSpreadsheetView extends XInterface {
+trait XSpreadsheetView
+  extends StObject
+     with XInterface {
   
   /** returns the sheet that is shown in the view. */
-  var ActiveSheet: XSpreadsheet = js.native
+  var ActiveSheet: XSpreadsheet
   
   /** returns the sheet that is shown in the view. */
-  def getActiveSheet(): XSpreadsheet = js.native
+  def getActiveSheet(): XSpreadsheet
   
   /** sets the sheet that is shown in the view. */
-  def setActiveSheet(xActiveSheet: XSpreadsheet): Unit = js.native
+  def setActiveSheet(xActiveSheet: XSpreadsheet): Unit
 }
 object XSpreadsheetView {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserDefinedFunction extends StObject {
   
   /**
     * The ID of the Data Catalog in which the function resides.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The Java class that contains the function code.
     */
-  var ClassName: js.UndefOr[NameString] = js.native
+  var ClassName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The time at which the function was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.native
+  var CreateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the catalog database that contains the function.
     */
-  var DatabaseName: js.UndefOr[NameString] = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The name of the function.
     */
-  var FunctionName: js.UndefOr[NameString] = js.native
+  var FunctionName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The owner of the function.
     */
-  var OwnerName: js.UndefOr[NameString] = js.native
+  var OwnerName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The owner type.
     */
-  var OwnerType: js.UndefOr[PrincipalType] = js.native
+  var OwnerType: js.UndefOr[PrincipalType] = js.undefined
   
   /**
     * The resource URIs for the function.
     */
-  var ResourceUris: js.UndefOr[ResourceUriList] = js.native
+  var ResourceUris: js.UndefOr[ResourceUriList] = js.undefined
 }
 object UserDefinedFunction {
   

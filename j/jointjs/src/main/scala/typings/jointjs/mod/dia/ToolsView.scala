@@ -6,13 +6,11 @@ import typings.jointjs.mod.mvc.ViewOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.ToolsView")
 @js.native
-class ToolsView ()
-  extends View[js.UndefOr[scala.Nothing]] {
+class ToolsView () extends View[Unit] {
   def this(opt: Options) = this()
   
   def blurTool(tool: ToolView): this.type = js.native
@@ -37,17 +35,17 @@ class ToolsView ()
 }
 object ToolsView {
   
-  @js.native
   trait Options
-    extends ViewOptions[js.UndefOr[scala.Nothing]] {
+    extends StObject
+       with ViewOptions[Unit] {
     
-    var component: js.UndefOr[Boolean] = js.native
+    var component: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
-    var relatedView: js.UndefOr[CellView] = js.native
+    var relatedView: js.UndefOr[CellView] = js.undefined
     
-    var tools: js.UndefOr[js.Array[ToolView]] = js.native
+    var tools: js.UndefOr[js.Array[ToolView]] = js.undefined
   }
   object Options {
     

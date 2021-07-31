@@ -3,47 +3,45 @@ package typings.cesium.anon
 import typings.cesium.mod.TimeIntervalCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clock extends StObject {
   
-  var clock: js.UndefOr[typings.cesium.mod.Clock] = js.native
+  var clock: js.UndefOr[typings.cesium.mod.Clock] = js.undefined
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.native
+  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
   
-  var dimensions: js.UndefOr[js.Any] = js.native
+  var dimensions: js.UndefOr[js.Any] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var layer: String = js.native
+  var layer: String
   
-  var maximumLevel: js.UndefOr[Double] = js.native
+  var maximumLevel: js.UndefOr[Double] = js.undefined
   
-  var minimumLevel: js.UndefOr[Double] = js.native
+  var minimumLevel: js.UndefOr[Double] = js.undefined
   
-  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.native
+  var rectangle: js.UndefOr[typings.cesium.mod.Rectangle] = js.undefined
   
-  var style: String = js.native
+  var style: String
   
-  var subdomains: js.UndefOr[String | js.Array[String]] = js.native
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileMatrixLabels: js.UndefOr[js.Array[_]] = js.native
+  var tileMatrixLabels: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var tileMatrixSetID: String = js.native
+  var tileMatrixSetID: String
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
   
-  var times: js.UndefOr[TimeIntervalCollection] = js.native
+  var times: js.UndefOr[TimeIntervalCollection] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Clock {
   
@@ -126,7 +124,7 @@ object Clock {
     def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
     @scala.inline
-    def setTileMatrixLabels(value: js.Array[_]): Self = StObject.set(x, "tileMatrixLabels", value.asInstanceOf[js.Any])
+    def setTileMatrixLabels(value: js.Array[js.Any]): Self = StObject.set(x, "tileMatrixLabels", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTileMatrixLabelsUndefined: Self = StObject.set(x, "tileMatrixLabels", js.undefined)

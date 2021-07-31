@@ -3,48 +3,46 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideShowSettings extends StObject {
   
-  var AdvanceMode: PpSlideShowAdvanceMode = js.native
+  var AdvanceMode: PpSlideShowAdvanceMode
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var EndingSlide: Double = js.native
+  var EndingSlide: Double
   
-  var LoopUntilStopped: MsoTriState = js.native
+  var LoopUntilStopped: MsoTriState
   
-  val NamedSlideShows: typings.activexPowerpoint.PowerPoint.NamedSlideShows = js.native
+  val NamedSlideShows: typings.activexPowerpoint.PowerPoint.NamedSlideShows
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PointerColor: ColorFormat = js.native
+  val PointerColor: ColorFormat
   
   @JSName("PowerPoint.SlideShowSettings_typekey")
-  var PowerPointDotSlideShowSettings_typekey: SlideShowSettings = js.native
+  var PowerPointDotSlideShowSettings_typekey: SlideShowSettings
   
-  var RangeType: PpSlideShowRangeType = js.native
+  var RangeType: PpSlideShowRangeType
   
-  def Run(): SlideShowWindow = js.native
+  def Run(): SlideShowWindow
   
-  var ShowMediaControls: MsoTriState = js.native
+  var ShowMediaControls: MsoTriState
   
-  var ShowPresenterView: MsoTriState = js.native
+  var ShowPresenterView: MsoTriState
   
-  var ShowScrollbar: MsoTriState = js.native
+  var ShowScrollbar: MsoTriState
   
-  var ShowType: PpSlideShowType = js.native
+  var ShowType: PpSlideShowType
   
-  var ShowWithAnimation: MsoTriState = js.native
+  var ShowWithAnimation: MsoTriState
   
-  var ShowWithNarration: MsoTriState = js.native
+  var ShowWithNarration: MsoTriState
   
-  var SlideShowName: String = js.native
+  var SlideShowName: String
   
-  var StartingSlide: Double = js.native
+  var StartingSlide: Double
 }
 object SlideShowSettings {
   

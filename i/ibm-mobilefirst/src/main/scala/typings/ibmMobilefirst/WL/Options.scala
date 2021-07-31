@@ -2,17 +2,15 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var invocationContext: js.UndefOr[js.Any] = js.native
+  var invocationContext: js.UndefOr[js.Any] = js.undefined
   
-  var onFailure: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.native
+  var onFailure: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function1[/* response */ IResponse, Unit]] = js.undefined
 }
 object Options {
   

@@ -2,11 +2,9 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "page.toJSON()". */
-@js.native
 trait PageData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var classNotebookPageSource: js.UndefOr[String] = js.native
+  var classNotebookPageSource: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var clientUrl: js.UndefOr[String] = js.native
+  var clientUrl: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var contents: js.UndefOr[js.Array[PageContentData]] = js.native
+  var contents: js.UndefOr[js.Array[PageContentData]] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkAnalysisOrNull: js.UndefOr[InkAnalysisData] = js.native
+  var inkAnalysisOrNull: js.UndefOr[InkAnalysisData] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var pageLevel: js.UndefOr[Double] = js.native
+  var pageLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait PageData extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var webUrl: js.UndefOr[String] = js.native
+  var webUrl: js.UndefOr[String] = js.undefined
 }
 object PageData {
   

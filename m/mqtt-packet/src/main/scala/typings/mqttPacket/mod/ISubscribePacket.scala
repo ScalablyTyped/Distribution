@@ -4,26 +4,25 @@ import typings.mqttPacket.anon.ReasonString
 import typings.mqttPacket.mqttPacketStrings.subscribe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISubscribePacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_ISubscribePacket: subscribe = js.native
+  var cmd_ISubscribePacket: subscribe
   
-  var properties: js.UndefOr[ReasonString] = js.native
+  var properties: js.UndefOr[ReasonString] = js.undefined
   
-  var subscriptions: js.Array[ISubscription] = js.native
+  var subscriptions: js.Array[ISubscription]
 }
 object ISubscribePacket {
   
   @scala.inline
-  def apply(cmd: subscribe, subscriptions: js.Array[ISubscription]): ISubscribePacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
+  def apply(subscriptions: js.Array[ISubscription]): ISubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "subscribe", subscriptions = subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscribePacket]
   }
   

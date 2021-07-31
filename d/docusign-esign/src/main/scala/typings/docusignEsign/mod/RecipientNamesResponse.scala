@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientNamesResponse extends StObject {
   
   /**
     * When set to **true**, the email address is used by more than one user.
     */
-  var multipleUsers: js.UndefOr[String] = js.native
+  var multipleUsers: js.UndefOr[String] = js.undefined
   
   /**
     * The names of the recipients associated with the email address.
     */
-  var recipientNames: js.UndefOr[js.Array[String]] = js.native
+  var recipientNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * When set to **true**, new names cannot be added to the email address.
     */
-  var reservedRecipientEmail: js.UndefOr[String] = js.native
+  var reservedRecipientEmail: js.UndefOr[String] = js.undefined
 }
 object RecipientNamesResponse {
   

@@ -2,20 +2,18 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for Intents.BatchDeleteIntents.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2BatchDeleteIntentsRequest extends StObject {
   
   /**
     * Required. The collection of intents to delete. Only intent `name` must be
     * filled in.
     */
-  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Intent]] = js.native
+  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Intent]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2BatchDeleteIntentsRequest {
   

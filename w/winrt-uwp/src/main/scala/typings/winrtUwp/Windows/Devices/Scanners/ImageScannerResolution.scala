@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.Scanners
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the scan resolution. */
-@js.native
 trait ImageScannerResolution extends StObject {
   
   /** The horizontal size. */
-  var dpiX: Double = js.native
+  var dpiX: Double
   
   /** The vertical size. */
-  var dpiY: Double = js.native
+  var dpiY: Double
 }
 object ImageScannerResolution {
   

@@ -3,26 +3,24 @@ package typings.nodemailer.smtpConnectionMod
 import typings.nodemailer.nodemailerBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Envelope extends StObject {
   
   /** the dsn options */
-  var dsn: js.UndefOr[DSNOptions] = js.native
+  var dsn: js.UndefOr[DSNOptions] = js.undefined
   
   /** includes an address object or is set to false */
-  var from: String | `false` = js.native
+  var from: String | `false`
   
   /** an optional value of the predicted size of the message in bytes. This value is used if the server supports the SIZE extension (RFC1870) */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /** the recipient address or an array of addresses */
-  var to: String | js.Array[String] = js.native
+  var to: String | js.Array[String]
   
   /** if true then inform the server that this message might contain bytes outside 7bit ascii range */
-  var use8BitMime: js.UndefOr[Boolean] = js.native
+  var use8BitMime: js.UndefOr[Boolean] = js.undefined
 }
 object Envelope {
   

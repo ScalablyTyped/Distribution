@@ -3,19 +3,17 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.wordpressBlocksStrings.BLOCKS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var mode: BLOCKS = js.native
+  var mode: BLOCKS
 }
 object `0` {
   
   @scala.inline
-  def apply(mode: BLOCKS): `0` = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(mode = "BLOCKS")
     __obj.asInstanceOf[`0`]
   }
   

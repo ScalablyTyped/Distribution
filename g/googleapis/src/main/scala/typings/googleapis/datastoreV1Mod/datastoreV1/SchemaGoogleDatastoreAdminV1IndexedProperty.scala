@@ -2,25 +2,23 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A property of an index.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1IndexedProperty extends StObject {
   
   /**
     * The indexed property&#39;s direction.  Must not be DIRECTION_UNSPECIFIED.
     * Required.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * The property name to index. Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1IndexedProperty {
   

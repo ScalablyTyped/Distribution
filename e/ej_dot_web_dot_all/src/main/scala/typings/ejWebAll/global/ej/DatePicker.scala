@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.DatePicker")
 @js.native
 class DatePicker protected ()
-  extends typings.ejWebAll.ej.DatePicker {
+  extends StObject
+     with typings.ejWebAll.ej.DatePicker {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,13 +27,13 @@ object DatePicker {
   object Header extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.Header with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.Header & Double] = js.native
     
-    /* 2 */ val Min: typings.ejWebAll.ej.DatePicker.Header.Min with Double = js.native
+    /* 2 */ val Min: typings.ejWebAll.ej.DatePicker.Header.Min & Double = js.native
     
-    /* 0 */ val None: typings.ejWebAll.ej.DatePicker.Header.None with Double = js.native
+    /* 0 */ val None: typings.ejWebAll.ej.DatePicker.Header.None & Double = js.native
     
-    /* 1 */ val Short: typings.ejWebAll.ej.DatePicker.Header.Short with Double = js.native
+    /* 1 */ val Short: typings.ejWebAll.ej.DatePicker.Header.Short & Double = js.native
   }
   
   @JSGlobal("ej.DatePicker.HighlightSection")
@@ -41,13 +41,13 @@ object DatePicker {
   object HighlightSection extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.HighlightSection with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.HighlightSection & Double] = js.native
     
-    /* 2 */ val None: typings.ejWebAll.ej.DatePicker.HighlightSection.None with Double = js.native
+    /* 2 */ val None: typings.ejWebAll.ej.DatePicker.HighlightSection.None & Double = js.native
     
-    /* 0 */ val Week: typings.ejWebAll.ej.DatePicker.HighlightSection.Week with Double = js.native
+    /* 0 */ val Week: typings.ejWebAll.ej.DatePicker.HighlightSection.Week & Double = js.native
     
-    /* 1 */ val WorkDays: typings.ejWebAll.ej.DatePicker.HighlightSection.WorkDays with Double = js.native
+    /* 1 */ val WorkDays: typings.ejWebAll.ej.DatePicker.HighlightSection.WorkDays & Double = js.native
   }
   
   @JSGlobal("ej.DatePicker.Level")
@@ -55,13 +55,13 @@ object DatePicker {
   object Level extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.Level with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.DatePicker.Level & Double] = js.native
     
-    /* 2 */ val Century: typings.ejWebAll.ej.DatePicker.Level.Century with Double = js.native
+    /* 2 */ val Century: typings.ejWebAll.ej.DatePicker.Level.Century & Double = js.native
     
-    /* 1 */ val Decade: typings.ejWebAll.ej.DatePicker.Level.Decade with Double = js.native
+    /* 1 */ val Decade: typings.ejWebAll.ej.DatePicker.Level.Decade & Double = js.native
     
-    /* 0 */ val Year: typings.ejWebAll.ej.DatePicker.Level.Year with Double = js.native
+    /* 0 */ val Year: typings.ejWebAll.ej.DatePicker.Level.Year & Double = js.native
   }
   
   /* static member */

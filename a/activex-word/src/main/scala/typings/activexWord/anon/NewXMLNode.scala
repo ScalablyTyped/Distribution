@@ -3,19 +3,17 @@ package typings.activexWord.anon
 import typings.activexWord.Word.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewXMLNode extends StObject {
   
-  val NewXMLNode: typings.activexWord.Word.XMLNode = js.native
+  val NewXMLNode: typings.activexWord.Word.XMLNode
   
-  val OldXMLNode: typings.activexWord.Word.XMLNode = js.native
+  val OldXMLNode: typings.activexWord.Word.XMLNode
   
-  val Reason: Double = js.native
+  val Reason: Double
   
-  val Sel: Selection = js.native
+  val Sel: Selection
 }
 object NewXMLNode {
   

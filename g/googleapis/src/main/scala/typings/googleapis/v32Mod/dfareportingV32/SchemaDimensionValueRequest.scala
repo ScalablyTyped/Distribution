@@ -2,42 +2,40 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a DimensionValuesRequest.
   */
-@js.native
 trait SchemaDimensionValueRequest extends StObject {
   
   /**
     * The name of the dimension for which values should be requested.
     */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /**
     * The end date of the date range for which to retrieve dimension values. A
     * string of the format &quot;yyyy-MM-dd&quot;.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * The list of filters by which to filter values. The filters are ANDed.
     */
-  var filters: js.UndefOr[js.Array[SchemaDimensionFilter]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaDimensionFilter]] = js.undefined
   
   /**
     * The kind of request this is, in this case
     * dfareporting#dimensionValueRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The start date of the date range for which to retrieve dimension values.
     * A string of the format &quot;yyyy-MM-dd&quot;.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object SchemaDimensionValueRequest {
   

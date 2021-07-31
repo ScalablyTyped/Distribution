@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAccessibleTableSelection extends XInterface {
+trait XAccessibleTableSelection
+  extends StObject
+     with XInterface {
   
-  def selectColumn(column: Double): Boolean = js.native
+  def selectColumn(column: Double): Boolean
   
-  def selectRow(row: Double): Boolean = js.native
+  def selectRow(row: Double): Boolean
   
-  def unselectColumn(column: Double): Boolean = js.native
+  def unselectColumn(column: Double): Boolean
   
-  def unselectRow(row: Double): Boolean = js.native
+  def unselectRow(row: Double): Boolean
 }
 object XAccessibleTableSelection {
   

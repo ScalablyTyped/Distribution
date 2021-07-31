@@ -4,26 +4,23 @@ import typings.awsSdkClientCognitoIdentityBrowser.setIdentityPoolRolesExceptions
 import typings.awsSdkClientCognitoIdentityBrowser.updateIdentityPoolExceptionsUnionMod.UpdateIdentityPoolExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesConcurrentModificationExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ConcurrentModificationExceptionDetails> * / any */ @js.native
-  trait ConcurrentModificationException
-    extends SetIdentityPoolRolesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ConcurrentModificationExceptionDetails> * / any */ trait ConcurrentModificationException
+    extends StObject
+       with SetIdentityPoolRolesExceptionsUnion
        with UpdateIdentityPoolExceptionsUnion {
     
-    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ConcurrentModificationException = js.native
+    var name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ConcurrentModificationException
   }
   object ConcurrentModificationException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.ConcurrentModificationException
-    ): ConcurrentModificationException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ConcurrentModificationException = {
+      val __obj = js.Dynamic.literal(name = "ConcurrentModificationException")
       __obj.asInstanceOf[ConcurrentModificationException]
     }
     
@@ -37,13 +34,12 @@ object typesConcurrentModificationExceptionMod {
     }
   }
   
-  @js.native
   trait ConcurrentModificationExceptionDetails extends StObject {
     
     /**
       * <p>The message returned by a ConcurrentModificationException.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ConcurrentModificationExceptionDetails {
     

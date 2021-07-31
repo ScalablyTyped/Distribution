@@ -2,15 +2,13 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issue extends StObject {
   
-  var issueType: String = js.native
+  var issueType: String
   
-  var message: String = js.native
+  var message: String
 }
 object Issue {
   

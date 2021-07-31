@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobStatusResult extends StObject {
   
   /**
     * The ID for the job whose status was updated.
     */
-  var JobId: js.UndefOr[typings.awsSdk.s3controlMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.s3controlMod.JobId] = js.undefined
   
   /**
     * The current status for the specified job.
     */
-  var Status: js.UndefOr[JobStatus] = js.native
+  var Status: js.UndefOr[JobStatus] = js.undefined
   
   /**
     * The reason that the specified job's status was updated.
     */
-  var StatusUpdateReason: js.UndefOr[JobStatusUpdateReason] = js.native
+  var StatusUpdateReason: js.UndefOr[JobStatusUpdateReason] = js.undefined
 }
 object UpdateJobStatusResult {
   

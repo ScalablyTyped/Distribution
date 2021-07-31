@@ -3,26 +3,26 @@ package typings.openapiTypes.mod.OpenAPIV3
 import typings.openapiTypes.openapiTypesStrings.http
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HttpSecurityScheme extends SecuritySchemeObject {
+trait HttpSecurityScheme
+  extends StObject
+     with SecuritySchemeObject {
   
-  var bearerFormat: js.UndefOr[String] = js.native
+  var bearerFormat: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var scheme: String = js.native
+  var scheme: String
   
-  var `type`: http = js.native
+  var `type`: http
 }
 object HttpSecurityScheme {
   
   @scala.inline
-  def apply(scheme: String, `type`: http): HttpSecurityScheme = {
+  def apply(scheme: String): HttpSecurityScheme = {
     val __obj = js.Dynamic.literal(scheme = scheme.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("http")
     __obj.asInstanceOf[HttpSecurityScheme]
   }
   

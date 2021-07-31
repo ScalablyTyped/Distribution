@@ -2,21 +2,19 @@ package typings.typedRestClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrayFormat extends StObject {
     
-    var arrayFormat: js.UndefOr[String] = js.native
+    var arrayFormat: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var shouldAllowDots: js.UndefOr[Boolean] = js.native
+    var shouldAllowDots: js.UndefOr[Boolean] = js.undefined
     
-    var shouldOnlyEncodeValues: js.UndefOr[Boolean] = js.native
+    var shouldOnlyEncodeValues: js.UndefOr[Boolean] = js.undefined
   }
   object ArrayFormat {
     

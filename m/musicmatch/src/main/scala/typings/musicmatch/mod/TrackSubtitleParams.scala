@@ -5,21 +5,19 @@ import typings.musicmatch.musicmatchStrings.lrc
 import typings.musicmatch.musicmatchStrings.stledu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackSubtitleParams extends StObject {
   
-  var f_subtitle_length: js.UndefOr[Double] = js.native
+  var f_subtitle_length: js.UndefOr[Double] = js.undefined
   
-  var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.native
+  var f_subtitle_length_max_deviation: js.UndefOr[Double] = js.undefined
   
-  var subtitle_format: js.UndefOr[lrc | dfxp | stledu] = js.native
+  var subtitle_format: js.UndefOr[lrc | dfxp | stledu] = js.undefined
   
-  var track_id: js.UndefOr[Double] = js.native
+  var track_id: js.UndefOr[Double] = js.undefined
   
-  var track_mbid: js.UndefOr[Double] = js.native
+  var track_mbid: js.UndefOr[Double] = js.undefined
 }
 object TrackSubtitleParams {
   

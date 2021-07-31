@@ -7,7 +7,6 @@ import typings.luminoDatagrid.renderermapMod.RendererMap.Values
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderermapMod {
@@ -23,7 +22,7 @@ object renderermapMod {
     */
   class RendererMap () extends StObject {
     def this(values: Values) = this()
-    def this(values: js.UndefOr[scala.Nothing], fallback: CellRenderer) = this()
+    def this(values: Unit, fallback: CellRenderer) = this()
     def this(values: Values, fallback: CellRenderer) = this()
     
     var _changed: js.Any = js.native
@@ -57,7 +56,7 @@ object renderermapMod {
       * This method always emits the `changed` signal.
       */
     def update(): Unit = js.native
-    def update(values: js.UndefOr[scala.Nothing], fallback: CellRenderer): Unit = js.native
+    def update(values: Unit, fallback: CellRenderer): Unit = js.native
     def update(values: Values): Unit = js.native
     def update(values: Values, fallback: CellRenderer): Unit = js.native
   }
@@ -72,16 +71,15 @@ object renderermapMod {
       * A type alias for a `RendererMap` values type.
       */
     /* Inlined {[ R in @lumino/datagrid.@lumino/datagrid/lib/datamodel.DataModel.CellRegion ]:? @lumino/datagrid.@lumino/datagrid/lib/renderermap.RendererMap.Resolver | @lumino/datagrid.@lumino/datagrid/lib/cellrenderer.CellRenderer | undefined} */
-    @js.native
     trait Values extends StObject {
       
-      var body: js.UndefOr[Resolver | CellRenderer] = js.native
+      var body: js.UndefOr[Resolver | CellRenderer] = js.undefined
       
-      var `column-header`: js.UndefOr[Resolver | CellRenderer] = js.native
+      var `column-header`: js.UndefOr[Resolver | CellRenderer] = js.undefined
       
-      var `corner-header`: js.UndefOr[Resolver | CellRenderer] = js.native
+      var `corner-header`: js.UndefOr[Resolver | CellRenderer] = js.undefined
       
-      var `row-header`: js.UndefOr[Resolver | CellRenderer] = js.native
+      var `row-header`: js.UndefOr[Resolver | CellRenderer] = js.undefined
     }
     object Values {
       

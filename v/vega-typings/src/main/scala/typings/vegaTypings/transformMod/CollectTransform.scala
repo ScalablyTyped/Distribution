@@ -4,22 +4,22 @@ import typings.vegaTypings.markMod.Compare
 import typings.vegaTypings.vegaTypingsStrings.collect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectTransform extends _Transforms {
+trait CollectTransform
+  extends StObject
+     with _Transforms {
   
-  var sort: Compare = js.native
+  var sort: Compare
   
-  var `type`: collect = js.native
+  var `type`: collect
 }
 object CollectTransform {
   
   @scala.inline
-  def apply(sort: Compare, `type`: collect): CollectTransform = {
+  def apply(sort: Compare): CollectTransform = {
     val __obj = js.Dynamic.literal(sort = sort.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("collect")
     __obj.asInstanceOf[CollectTransform]
   }
   

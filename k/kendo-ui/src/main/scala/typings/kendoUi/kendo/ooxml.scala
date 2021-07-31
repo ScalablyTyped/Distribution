@@ -4,13 +4,14 @@ import typings.kendoUi.JQueryPromise
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ooxml {
   
   @js.native
-  trait Workbook extends Observable {
+  trait Workbook
+    extends StObject
+       with Observable {
     
     var options: WorkbookOptions = js.native
     
@@ -18,17 +19,16 @@ object ooxml {
     
     def toDataURL(): String = js.native
     
-    def toDataURLAsync(): JQueryPromise[_] = js.native
+    def toDataURLAsync(): JQueryPromise[js.Any] = js.native
   }
   
-  @js.native
   trait WorkbookEvent extends StObject {
     
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
-    var preventDefault: js.Function = js.native
+    var preventDefault: js.Function
     
-    var sender: Workbook = js.native
+    var sender: Workbook
   }
   object WorkbookEvent {
     
@@ -52,16 +52,15 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookOptions extends StObject {
     
-    var creator: js.UndefOr[String] = js.native
+    var creator: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[Date] = js.native
+    var date: js.UndefOr[Date] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var sheets: js.UndefOr[js.Array[WorkbookSheet]] = js.native
+    var sheets: js.UndefOr[js.Array[WorkbookSheet]] = js.undefined
   }
   object WorkbookOptions {
     
@@ -103,28 +102,27 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheet extends StObject {
     
-    var columns: js.UndefOr[js.Array[WorkbookSheetColumn]] = js.native
+    var columns: js.UndefOr[js.Array[WorkbookSheetColumn]] = js.undefined
     
-    var filter: js.UndefOr[WorkbookSheetFilter] = js.native
+    var filter: js.UndefOr[WorkbookSheetFilter] = js.undefined
     
-    var freezePane: js.UndefOr[WorkbookSheetFreezePane] = js.native
+    var freezePane: js.UndefOr[WorkbookSheetFreezePane] = js.undefined
     
-    var frozenColumns: js.UndefOr[Double] = js.native
+    var frozenColumns: js.UndefOr[Double] = js.undefined
     
-    var frozenRows: js.UndefOr[Double] = js.native
+    var frozenRows: js.UndefOr[Double] = js.undefined
     
-    var mergedCells: js.UndefOr[js.Any] = js.native
+    var mergedCells: js.UndefOr[js.Any] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[js.Array[WorkbookSheetRow]] = js.native
+    var rows: js.UndefOr[js.Array[WorkbookSheetRow]] = js.undefined
     
-    var showGridLines: js.UndefOr[Boolean] = js.native
+    var showGridLines: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object WorkbookSheet {
     
@@ -205,14 +203,13 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetColumn extends StObject {
     
-    var autoWidth: js.UndefOr[Boolean] = js.native
+    var autoWidth: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetColumn {
     
@@ -245,12 +242,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetFilter extends StObject {
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetFilter {
     
@@ -277,12 +273,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetFreezePane extends StObject {
     
-    var colSplit: js.UndefOr[Double] = js.native
+    var colSplit: js.UndefOr[Double] = js.undefined
     
-    var rowSplit: js.UndefOr[Double] = js.native
+    var rowSplit: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetFreezePane {
     
@@ -309,14 +304,13 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRow extends StObject {
     
-    var cells: js.UndefOr[js.Array[WorkbookSheetRowCell]] = js.native
+    var cells: js.UndefOr[js.Array[WorkbookSheetRowCell]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetRow {
     
@@ -352,54 +346,53 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRowCell extends StObject {
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var borderBottom: js.UndefOr[WorkbookSheetRowCellBorderBottom] = js.native
+    var borderBottom: js.UndefOr[WorkbookSheetRowCellBorderBottom] = js.undefined
     
-    var borderLeft: js.UndefOr[WorkbookSheetRowCellBorderLeft] = js.native
+    var borderLeft: js.UndefOr[WorkbookSheetRowCellBorderLeft] = js.undefined
     
-    var borderRight: js.UndefOr[WorkbookSheetRowCellBorderRight] = js.native
+    var borderRight: js.UndefOr[WorkbookSheetRowCellBorderRight] = js.undefined
     
-    var borderTop: js.UndefOr[WorkbookSheetRowCellBorderTop] = js.native
+    var borderTop: js.UndefOr[WorkbookSheetRowCellBorderTop] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontName: js.UndefOr[String] = js.native
+    var fontName: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var formula: js.UndefOr[String] = js.native
+    var formula: js.UndefOr[String] = js.undefined
     
-    var hAlign: js.UndefOr[String] = js.native
+    var hAlign: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[js.Any] = js.native
+    var index: js.UndefOr[js.Any] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
     
-    var vAlign: js.UndefOr[String] = js.native
+    var vAlign: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date | Double | String | Boolean] = js.native
+    var value: js.UndefOr[Date | Double | String | Boolean] = js.undefined
     
-    var verticalAlign: js.UndefOr[String] = js.native
+    var verticalAlign: js.UndefOr[String] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object WorkbookSheetRowCell {
     
@@ -552,12 +545,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRowCellBorderBottom extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetRowCellBorderBottom {
     
@@ -584,12 +576,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRowCellBorderLeft extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetRowCellBorderLeft {
     
@@ -616,12 +607,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRowCellBorderRight extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetRowCellBorderRight {
     
@@ -648,12 +638,11 @@ object ooxml {
     }
   }
   
-  @js.native
   trait WorkbookSheetRowCellBorderTop extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object WorkbookSheetRowCellBorderTop {
     

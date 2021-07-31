@@ -7,10 +7,13 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safariMod {
+  
+  @JSImport("selenium-webdriver/safari", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/safari", "CommandExecutor")
   @js.native
@@ -32,6 +35,10 @@ object safariMod {
   /* static members */
   object Driver {
     
+    @JSImport("selenium-webdriver/safari", "Driver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Safari session.
       *
@@ -39,15 +46,12 @@ object safariMod {
       *     options for the new session.
       * @return {!Driver} A new driver instance.
       */
-    @JSImport("selenium-webdriver/safari", "Driver.createSession")
-    @js.native
-    def createSession(): Driver = js.native
-    @JSImport("selenium-webdriver/safari", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Capabilities): Driver = js.native
-    @JSImport("selenium-webdriver/safari", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options): Driver = js.native
+    @scala.inline
+    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Capabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/safari", "Options")
@@ -60,7 +64,7 @@ object safariMod {
   class Options () extends Capabilities {
     def this(other: js.Object) = this()
     def this(other: typings.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-    def this(other: Map[String, _]) = this()
+    def this(other: Map[String, js.Any]) = this()
     
     /**
       * Instruct the SafariDriver to use the Safari Technology Preview if true.
@@ -76,19 +80,15 @@ object safariMod {
   @js.native
   class Server () extends StObject
   
-  @JSImport("selenium-webdriver/safari", "cleanSession")
-  @js.native
-  def cleanSession(desiredCapabilities: Capabilities): js.Array[_] = js.native
+  @scala.inline
+  def cleanSession(desiredCapabilities: Capabilities): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanSession")(desiredCapabilities.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("selenium-webdriver/safari", "createConnectFile")
-  @js.native
-  def createConnectFile(serverUrl: String): js.Any = js.native
+  @scala.inline
+  def createConnectFile(serverUrl: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnectFile")(serverUrl.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/safari", "findSafariDriver")
-  @js.native
-  def findSafariDriver(): js.Any = js.native
+  @scala.inline
+  def findSafariDriver(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findSafariDriver")().asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/safari", "getRandomString")
-  @js.native
-  def getRandomString(): String = js.native
+  @scala.inline
+  def getRandomString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomString")().asInstanceOf[String]
 }

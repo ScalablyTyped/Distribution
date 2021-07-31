@@ -3,11 +3,12 @@ package typings.p5.mod
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Compressor extends Effect {
+trait Compressor
+  extends StObject
+     with Effect {
   
   /**
     *   Get current attack or set value w/ time ramp
@@ -18,9 +19,9 @@ trait Compressor extends Effect {
     *   change in value
     */
   def attack(): Unit = js.native
-  def attack(attack: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def attack(attack: Double): Unit = js.native
   def attack(attack: Double, time: Double): Unit = js.native
+  def attack(attack: Unit, time: Double): Unit = js.native
   
   /**
     *   The p5.Compressor is built with a Web Audio
@@ -38,9 +39,9 @@ trait Compressor extends Effect {
     *   change in value
     */
   def knee(): Unit = js.native
-  def knee(knee: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def knee(knee: Double): Unit = js.native
   def knee(knee: Double, time: Double): Unit = js.native
+  def knee(knee: Unit, time: Double): Unit = js.native
   
   /**
     *   Performs the same function as .connect, but also
@@ -65,166 +66,37 @@ trait Compressor extends Effect {
     *   0 - 1
     */
   def process(src: js.Object): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: js.UndefOr[scala.Nothing], knee: js.UndefOr[scala.Nothing], ratio: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: Double,
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: Double,
-    threshold: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: js.UndefOr[scala.Nothing],
-    ratio: Double,
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: js.UndefOr[scala.Nothing], knee: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: Double,
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: Double,
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: Double,
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: js.UndefOr[scala.Nothing], knee: Double, ratio: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: Double,
-    ratio: Double,
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: js.UndefOr[scala.Nothing], knee: Double, ratio: Double, threshold: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: js.UndefOr[scala.Nothing],
-    knee: Double,
-    ratio: Double,
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
   def process(src: js.Object, attack: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double
-  ): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: js.UndefOr[scala.Nothing],
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: Double, knee: js.UndefOr[scala.Nothing], ratio: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: js.UndefOr[scala.Nothing],
-    ratio: Double,
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: Double, knee: js.UndefOr[scala.Nothing], ratio: Double, threshold: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: js.UndefOr[scala.Nothing],
-    ratio: Double,
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: Double,
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
-  def process(src: js.Object, attack: Double, knee: Double, ratio: js.UndefOr[scala.Nothing], threshold: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: Double,
-    ratio: js.UndefOr[scala.Nothing],
-    threshold: Double,
-    release: Double
-  ): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double, ratio: Double): Unit = js.native
-  def process(
-    src: js.Object,
-    attack: Double,
-    knee: Double,
-    ratio: Double,
-    threshold: js.UndefOr[scala.Nothing],
-    release: Double
-  ): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double, ratio: Double, threshold: Double): Unit = js.native
   def process(src: js.Object, attack: Double, knee: Double, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Double, ratio: Double, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Double, ratio: Unit, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Double, ratio: Unit, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Double, ratio: Unit, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Double, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Double, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Unit, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Unit, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Double, knee: Unit, ratio: Unit, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Double, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Double, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Unit, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Unit, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Double, ratio: Unit, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Double, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Double, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Double, threshold: Unit, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Unit, threshold: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Unit, threshold: Double, release: Double): Unit = js.native
+  def process(src: js.Object, attack: Unit, knee: Unit, ratio: Unit, threshold: Unit, release: Double): Unit = js.native
   
   /**
     *   Get current ratio or set value w/ time ramp
@@ -235,9 +107,9 @@ trait Compressor extends Effect {
     *   change in value
     */
   def ratio(): Unit = js.native
-  def ratio(ratio: js.UndefOr[scala.Nothing], time: Double): Unit = js.native
   def ratio(ratio: Double): Unit = js.native
   def ratio(ratio: Double, time: Double): Unit = js.native
+  def ratio(ratio: Unit, time: Double): Unit = js.native
   
   /**
     *   Return the current reduction value

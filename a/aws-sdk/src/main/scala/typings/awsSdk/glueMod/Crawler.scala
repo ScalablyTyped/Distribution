@@ -2,101 +2,99 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crawler extends StObject {
   
   /**
     * A list of UTF-8 strings that specify the custom classifiers that are associated with the crawler.
     */
-  var Classifiers: js.UndefOr[ClassifierNameList] = js.native
+  var Classifiers: js.UndefOr[ClassifierNameList] = js.undefined
   
   /**
     * Crawler configuration information. This versioned JSON string allows users to specify aspects of a crawler's behavior. For more information, see Configuring a Crawler.
     */
-  var Configuration: js.UndefOr[CrawlerConfiguration] = js.native
+  var Configuration: js.UndefOr[CrawlerConfiguration] = js.undefined
   
   /**
     * If the crawler is running, contains the total time elapsed since the last crawl began.
     */
-  var CrawlElapsedTime: js.UndefOr[MillisecondsCount] = js.native
+  var CrawlElapsedTime: js.UndefOr[MillisecondsCount] = js.undefined
   
   /**
     * The name of the SecurityConfiguration structure to be used by this crawler.
     */
-  var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.native
+  var CrawlerSecurityConfiguration: js.UndefOr[typings.awsSdk.glueMod.CrawlerSecurityConfiguration] = js.undefined
   
   /**
     * The time that the crawler was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the database in which the crawler's output is stored.
     */
-  var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.native
+  var DatabaseName: js.UndefOr[typings.awsSdk.glueMod.DatabaseName] = js.undefined
   
   /**
     * A description of the crawler.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The status of the last crawl, and potentially error information if an error occurred.
     */
-  var LastCrawl: js.UndefOr[LastCrawlInfo] = js.native
+  var LastCrawl: js.UndefOr[LastCrawlInfo] = js.undefined
   
   /**
     * The time that the crawler was last updated.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.native
+  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the crawler.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
   
   /**
     * A policy that specifies whether to crawl the entire dataset again, or to crawl only folders that were added since the last crawler run.
     */
-  var RecrawlPolicy: js.UndefOr[typings.awsSdk.glueMod.RecrawlPolicy] = js.native
+  var RecrawlPolicy: js.UndefOr[typings.awsSdk.glueMod.RecrawlPolicy] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of an IAM role that's used to access customer resources, such as Amazon Simple Storage Service (Amazon S3) data.
     */
-  var Role: js.UndefOr[typings.awsSdk.glueMod.Role] = js.native
+  var Role: js.UndefOr[typings.awsSdk.glueMod.Role] = js.undefined
   
   /**
     * For scheduled crawlers, the schedule when the crawler runs.
     */
-  var Schedule: js.UndefOr[typings.awsSdk.glueMod.Schedule] = js.native
+  var Schedule: js.UndefOr[typings.awsSdk.glueMod.Schedule] = js.undefined
   
   /**
     * The policy that specifies update and delete behaviors for the crawler.
     */
-  var SchemaChangePolicy: js.UndefOr[typings.awsSdk.glueMod.SchemaChangePolicy] = js.native
+  var SchemaChangePolicy: js.UndefOr[typings.awsSdk.glueMod.SchemaChangePolicy] = js.undefined
   
   /**
     * Indicates whether the crawler is running, or whether a run is pending.
     */
-  var State: js.UndefOr[CrawlerState] = js.native
+  var State: js.UndefOr[CrawlerState] = js.undefined
   
   /**
     * The prefix added to the names of tables that are created.
     */
-  var TablePrefix: js.UndefOr[typings.awsSdk.glueMod.TablePrefix] = js.native
+  var TablePrefix: js.UndefOr[typings.awsSdk.glueMod.TablePrefix] = js.undefined
   
   /**
     * A collection of targets to crawl.
     */
-  var Targets: js.UndefOr[CrawlerTargets] = js.native
+  var Targets: js.UndefOr[CrawlerTargets] = js.undefined
   
   /**
     * The version of the crawler.
     */
-  var Version: js.UndefOr[VersionId] = js.native
+  var Version: js.UndefOr[VersionId] = js.undefined
 }
 object Crawler {
   

@@ -2,33 +2,31 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableListTables extends StObject {
   
-  var clustering: js.UndefOr[Clustering] = js.native
+  var clustering: js.UndefOr[Clustering] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Object] = js.native
+  var labels: js.UndefOr[js.Object] = js.undefined
   
-  var tableReference: js.UndefOr[TableReference] = js.native
+  var tableReference: js.UndefOr[TableReference] = js.undefined
   
-  var timePartitioning: js.UndefOr[TimePartitioning] = js.native
+  var timePartitioning: js.UndefOr[TimePartitioning] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[TableListTablesView] = js.native
+  var view: js.UndefOr[TableListTablesView] = js.undefined
 }
 object TableListTables {
   

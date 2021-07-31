@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,11 +25,12 @@ object mod {
   
   type GlobalStrings[T] = StringDictionary[T]
   
-  type LocalizedStrings[T] = LocalizedStringsMethods with T
+  type LocalizedStrings[T] = LocalizedStringsMethods & T
   
   @js.native
   trait LocalizedStringsFactory
-    extends Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
+    extends StObject
+       with Instantiable1[/* props */ GlobalStrings[js.Object], LocalizedStrings[js.Object]]
   
   @js.native
   trait LocalizedStringsMethods extends StObject {

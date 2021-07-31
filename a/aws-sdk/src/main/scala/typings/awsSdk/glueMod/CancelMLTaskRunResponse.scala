@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelMLTaskRunResponse extends StObject {
   
   /**
     * The status for this run.
     */
-  var Status: js.UndefOr[TaskStatusType] = js.native
+  var Status: js.UndefOr[TaskStatusType] = js.undefined
   
   /**
     * The unique identifier for the task run.
     */
-  var TaskRunId: js.UndefOr[HashString] = js.native
+  var TaskRunId: js.UndefOr[HashString] = js.undefined
   
   /**
     * The unique identifier of the machine learning transform.
     */
-  var TransformId: js.UndefOr[HashString] = js.native
+  var TransformId: js.UndefOr[HashString] = js.undefined
 }
 object CancelMLTaskRunResponse {
   

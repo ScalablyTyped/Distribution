@@ -7,21 +7,21 @@ import typings.nodeSpriteGenerator.anon.xnumberynumberImage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-sprite-generator", JSImport.Namespace)
-  @js.native
-  def apply(option: Option): Unit = js.native
-  @JSImport("node-sprite-generator", JSImport.Namespace)
-  @js.native
-  def apply(option: Option, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def apply(option: Option): Unit = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(option: Option, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-sprite-generator", "middleware")
+  @JSImport("node-sprite-generator", JSImport.Namespace)
   @js.native
-  def middleware(option: Option): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def middleware(option: Option): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(option.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.canvas
@@ -97,20 +97,19 @@ object mod {
     def stylus: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.stylus = "stylus".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.stylus]
   }
   
-  @js.native
   trait Compositor extends StObject {
     
     def readImages(
       files: js.Array[String],
       callback: js.Function2[/* error */ Error, /* images */ js.Array[Image], Unit]
-    ): Unit = js.native
+    ): Unit
     
     def render(
       layout: Layout,
       spritePath: String,
       options: CompositorOption,
       callback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Compositor {
     
@@ -166,12 +165,11 @@ object mod {
     def up: typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.up = "up".asInstanceOf[typings.nodeSpriteGenerator.nodeSpriteGeneratorStrings.up]
   }
   
-  @js.native
   trait CompositorOption extends StObject {
     
-    var compressionLevel: js.UndefOr[Double] = js.native
+    var compressionLevel: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[CompositorFilters] = js.native
+    var filter: js.UndefOr[CompositorFilters] = js.undefined
   }
   object CompositorOption {
     
@@ -198,14 +196,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Image {
     
@@ -229,14 +226,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Layout extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var images: js.Array[xnumberynumberImage] = js.native
+    var images: js.Array[xnumberynumberImage]
     
-    var width: Double = js.native
+    var width: Double
   }
   object Layout {
     
@@ -270,12 +266,11 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait LayoutOption extends StObject {
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var scaling: js.UndefOr[Double] = js.native
+    var scaling: js.UndefOr[Double] = js.undefined
   }
   object LayoutOption {
     
@@ -302,26 +297,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var compositor: js.UndefOr[BuiltinCompositors | Compositor] = js.native
+    var compositor: js.UndefOr[BuiltinCompositors | Compositor] = js.undefined
     
-    var compositorOptions: js.UndefOr[CompositorOption] = js.native
+    var compositorOptions: js.UndefOr[CompositorOption] = js.undefined
     
-    var layout: js.UndefOr[BuiltinLayouts | LayoutFunc] = js.native
+    var layout: js.UndefOr[BuiltinLayouts | LayoutFunc] = js.undefined
     
-    var layoutOptions: js.UndefOr[LayoutOption] = js.native
+    var layoutOptions: js.UndefOr[LayoutOption] = js.undefined
     
-    var spritePath: js.UndefOr[String] = js.native
+    var spritePath: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[js.Array[String]] = js.native
+    var src: js.UndefOr[js.Array[String]] = js.undefined
     
-    var stylesheet: js.UndefOr[BuiltinStylesheetFormats | StylesheetFunc | String] = js.native
+    var stylesheet: js.UndefOr[BuiltinStylesheetFormats | StylesheetFunc | String] = js.undefined
     
-    var stylesheetOptions: js.UndefOr[StylesheetOption] = js.native
+    var stylesheetOptions: js.UndefOr[StylesheetOption] = js.undefined
     
-    var stylesheetPath: js.UndefOr[String] = js.native
+    var stylesheetPath: js.UndefOr[String] = js.undefined
   }
   object Option {
     
@@ -412,16 +406,15 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait StylesheetOption extends StObject {
     
-    var nameMapping: js.UndefOr[js.Function0[String]] = js.native
+    var nameMapping: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var spritePath: js.UndefOr[String] = js.native
+    var spritePath: js.UndefOr[String] = js.undefined
   }
   object StylesheetOption {
     

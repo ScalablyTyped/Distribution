@@ -12,7 +12,6 @@ import typings.reactNativeAutocompleteInput.anon.Index
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,68 +23,69 @@ object mod {
   
   type Autocomplete[T] = Component[AutocompleteProps[T], js.Object, js.Any]
   
-  @js.native
-  trait AutocompleteProps[T] extends TextInputProps {
+  trait AutocompleteProps[T]
+    extends StObject
+       with TextInputProps {
     
     /**
       * style
       * These styles will be applied to the container which surrounds the autocomplete component.
       */
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * array
       * An array with suggestion items to be rendered in renderItem({ item, index }). Any array with length > 0 will open the suggestion list and any array with length < 1 will hide the list.
       */
-    var data: js.Array[T] = js.native
+    var data: js.Array[T]
     
     /**
       * object
       * Props to pass on to the underlying FlatList.
       */
-    var flatListProps: js.UndefOr[Partial[FlatListProps[T]]] = js.native
+    var flatListProps: js.UndefOr[Partial[FlatListProps[T]]] = js.undefined
     
     /**
       * bool
       * Set to true to hide the suggestion list.
       */
-    var hideResults: js.UndefOr[Boolean] = js.native
+    var hideResults: js.UndefOr[Boolean] = js.undefined
     
     /**
       * style
       * These styles will be applied to the container which surrounds the textInput component.
       */
-    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * function
       * keyExtractor will be called to get key for each item. It's up to you which string to return as a key.
       */
-    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ Double, String]] = js.native
+    var keyExtractor: js.UndefOr[js.Function2[/* item */ T, /* i */ Double, String]] = js.undefined
     
     /**
       * style
       * These styles will be applied to the container which surrounds the result list.
       */
-    var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var listContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * style
       * These style will be applied to the result list.
       */
-    var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
     /**
       * function
       * onShowResult will be called when the autocomplete suggestions appear or disappear.
       */
-    var onShowResult: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.native
+    var onShowResult: js.UndefOr[js.Function1[/* showResults */ Boolean, Unit]] = js.undefined
     
     /**
       * function
       * renderItem will be called to render the data objects which will be displayed in the result view below the text input.
       */
-    def renderItem(itemWithIndex: Index[T]): ReactNode = js.native
+    def renderItem(itemWithIndex: Index[T]): ReactNode
     
     /**
       * function
@@ -98,13 +98,13 @@ object mod {
           /* adjacentRowHighlighted */ js.UndefOr[Boolean], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * function
       * render custom TextInput. All props passed to this function.
       */
-    var renderTextInput: js.UndefOr[js.Function1[/* props */ TextInputProperties, ReactNode]] = js.native
+    var renderTextInput: js.UndefOr[js.Function1[/* props */ TextInputProperties, ReactNode]] = js.undefined
   }
   object AutocompleteProps {
     
@@ -115,7 +115,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AutocompletePropsMutableBuilder[Self <: AutocompleteProps[_], T] (val x: Self with AutocompleteProps[T]) extends AnyVal {
+    implicit class AutocompletePropsMutableBuilder[Self <: AutocompleteProps[?], T] (val x: Self & AutocompleteProps[T]) extends AnyVal {
       
       @scala.inline
       def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])

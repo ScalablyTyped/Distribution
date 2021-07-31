@@ -5,17 +5,15 @@ import typings.stripe.stripeStrings.other
 import typings.stripe.stripeStrings.terms_of_service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRejectReason extends StObject {
   
   /**
     * The reason for rejecting the account. May be one of "fraud",
     * "terms_of_service", or "other".
     */
-  var reason: fraud | terms_of_service | other = js.native
+  var reason: fraud | terms_of_service | other
 }
 object IRejectReason {
   

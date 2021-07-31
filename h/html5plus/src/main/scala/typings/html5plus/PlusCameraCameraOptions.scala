@@ -7,7 +7,6 @@ import typings.html5plus.html5plusStrings.`1`
 import typings.html5plus.html5plusStrings.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
   */
-@js.native
 trait PlusCameraCameraOptions extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.native
+  var filename: js.UndefOr[_docSlash | _documentsSlash | _downloadsSlash] = js.undefined
   
   /**
     * 拍照或摄像的文件格式
@@ -36,7 +34,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * 拍照或摄像默认使用的摄像头
@@ -46,7 +44,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var index: js.UndefOr[`1` | `2`] = js.native
+  var index: js.UndefOr[`1` | `2`] = js.undefined
   
   /**
     * 是否优化图片
@@ -59,7 +57,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var optimize: js.UndefOr[Boolean] = js.native
+  var optimize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 拍照或摄像界面弹出指示区域
@@ -67,7 +65,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var popover: js.UndefOr[PlusCameraPopPosition] = js.native
+  var popover: js.UndefOr[PlusCameraPopPosition] = js.undefined
   
   /**
     * 拍照或摄像使用的分辨率
@@ -75,7 +73,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
   
   /**
     * 视频长度
@@ -85,7 +83,7 @@ trait PlusCameraCameraOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/camera.html](http://www.html5plus.org/doc/zh_cn/camera.html)
     */
-  var videoMaximumDuration: js.UndefOr[Double] = js.native
+  var videoMaximumDuration: js.UndefOr[Double] = js.undefined
 }
 object PlusCameraCameraOptions {
   

@@ -5,14 +5,12 @@ import typings.formatjsEcma402Abstract.anon.Locale
 import typings.formatjsEcma402Abstract.coreMod.LocaleData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object displaynamesMod {
   
   type CurrencyCode = String
   
-  @js.native
   trait DisplayNamesData extends StObject {
     
     /**
@@ -20,13 +18,13 @@ object displaynamesMod {
       * e.g. zh-Hans-SG + "{0}（{1}）" -> 简体中文（新加坡）
       * Here {0} is replaced by language display name and {1} is replaced by region display name.
       */
-    var patterns: Locale = js.native
+    var patterns: Locale
     
     /**
       * Note that for style fields, `short` and `narrow` might not exist.
       * At runtime, the fallback order will be narrow -> short -> long.
       */
-    var types: Language = js.native
+    var types: Language
   }
   object DisplayNamesData {
     

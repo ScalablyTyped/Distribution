@@ -2,28 +2,26 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesProgressMod {
   
-  @js.native
   trait Progress extends StObject {
     
     /**
       * <p>Current number of uncompressed object bytes processed.</p>
       */
-    var BytesProcessed: js.UndefOr[Double] = js.native
+    var BytesProcessed: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Current number of bytes of records payload data returned.</p>
       */
-    var BytesReturned: js.UndefOr[Double] = js.native
+    var BytesReturned: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Current number of object bytes scanned.</p>
       */
-    var BytesScanned: js.UndefOr[Double] = js.native
+    var BytesScanned: js.UndefOr[Double] = js.undefined
   }
   object Progress {
     

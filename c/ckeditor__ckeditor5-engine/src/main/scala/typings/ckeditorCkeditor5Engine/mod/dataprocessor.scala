@@ -3,7 +3,6 @@ package typings.ckeditorCkeditor5Engine.mod
 import typings.ckeditorCkeditor5Engine.mod.model.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataprocessor {
@@ -11,27 +10,35 @@ object dataprocessor {
   // engine/dataprocessor/basichtmlwriter
   @JSImport("@ckeditor/ckeditor5-engine", "dataprocessor.BasicHtmlWriter")
   @js.native
-  class BasicHtmlWriter () extends HtmlWriter
+  class BasicHtmlWriter ()
+    extends StObject
+       with HtmlWriter {
+    
+    /* CompleteClass */
+    override def getHtml(fragment: DocumentFragment): String = js.native
+  }
   
   // engine/dataprocessor/htmldataprocessor
   @JSImport("@ckeditor/ckeditor5-engine", "dataprocessor.HtmlDataProcessor")
   @js.native
-  class HtmlDataProcessor () extends DataProcessor
+  class HtmlDataProcessor ()
+    extends StObject
+       with DataProcessor
   
   // engine/dataprocessor/xmldataprocessor
   @JSImport("@ckeditor/ckeditor5-engine", "dataprocessor.XmlDataProcessor")
   @js.native
-  class XmlDataProcessor () extends DataProcessor
+  class XmlDataProcessor ()
+    extends StObject
+       with DataProcessor
   
   // engine/dataprocessor/dataprocessor
-  @js.native
   trait DataProcessor extends StObject
   
   // engine/dataprocessor/htmlwriter
-  @js.native
   trait HtmlWriter extends StObject {
     
-    def getHtml(fragment: DocumentFragment): String = js.native
+    def getHtml(fragment: DocumentFragment): String
   }
   object HtmlWriter {
     

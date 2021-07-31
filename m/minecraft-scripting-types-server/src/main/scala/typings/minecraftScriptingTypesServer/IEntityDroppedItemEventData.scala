@@ -4,24 +4,22 @@ import typings.minecraftScriptingTypesShared.IEntity
 import typings.minecraftScriptingTypesShared.IItemStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity drops an item.
   */
-@js.native
 trait IEntityDroppedItemEventData extends StObject {
   
   /**
     * The entity who dropped the item
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
   
   /**
     * The item that was dropped
     */
-  var item_stack: IItemStack = js.native
+  var item_stack: IItemStack
 }
 object IEntityDroppedItemEventData {
   

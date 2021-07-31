@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetModelTemplateResponse extends StObject {
   
   /**
     * The template value.
     */
-  var Value: js.UndefOr[string] = js.native
+  var Value: js.UndefOr[string] = js.undefined
 }
 object GetModelTemplateResponse {
   

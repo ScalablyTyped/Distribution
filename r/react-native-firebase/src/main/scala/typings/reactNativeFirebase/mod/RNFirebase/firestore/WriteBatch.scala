@@ -4,7 +4,6 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.SetOptions
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.Types.UpdateKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

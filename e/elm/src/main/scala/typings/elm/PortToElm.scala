@@ -2,13 +2,11 @@ package typings.elm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortToElm[V] extends StObject {
   
-  def send(value: V): Unit = js.native
+  def send(value: V): Unit
 }
 object PortToElm {
   
@@ -19,7 +17,7 @@ object PortToElm {
   }
   
   @scala.inline
-  implicit class PortToElmMutableBuilder[Self <: PortToElm[_], V] (val x: Self with PortToElm[V]) extends AnyVal {
+  implicit class PortToElmMutableBuilder[Self <: PortToElm[?], V] (val x: Self & PortToElm[V]) extends AnyVal {
     
     @scala.inline
     def setSend(value: V => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))

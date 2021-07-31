@@ -3,17 +3,17 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.PullDecl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeclReferenceCompletionEntry extends CachedCompletionEntryDetails {
+trait DeclReferenceCompletionEntry
+  extends StObject
+     with CachedCompletionEntryDetails {
   
-  var decl: PullDecl = js.native
+  var decl: PullDecl
   
-  var hasBeenResolved: js.Any = js.native
+  var hasBeenResolved: js.Any
   
-  def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit = js.native
+  def resolve(`type`: String, fullSymbolName: String, docComments: String): Unit
 }
 object DeclReferenceCompletionEntry {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersCustomBatchRequestEntryRefundItemShipping extends StObject {
   
   /** The amount that is refunded. If this is not the first refund for the shipment, this should be the newly refunded amount. */
-  var amount: js.UndefOr[Price] = js.native
+  var amount: js.UndefOr[Price] = js.undefined
   
   /** If set to true, all shipping costs for the order will be refunded. If this is true, amount should not be provided and will be ignored. */
-  var fullRefund: js.UndefOr[Boolean] = js.native
+  var fullRefund: js.UndefOr[Boolean] = js.undefined
 }
 object OrdersCustomBatchRequestEntryRefundItemShipping {
   

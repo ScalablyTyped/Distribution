@@ -4,28 +4,35 @@ import typings.antvComponent.typesMod.LocationType
 import typings.antvComponent.typesMod.TooltipPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antvComponentStrings {
   
   @js.native
-  sealed trait Region extends LocationType
+  sealed trait Region
+    extends StObject
+       with LocationType
   @scala.inline
   def Region: Region = "Region".asInstanceOf[Region]
   
   @js.native
-  sealed trait auto extends TooltipPosition
+  sealed trait auto
+    extends StObject
+       with TooltipPosition
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends TooltipPosition
+  sealed trait bottom
+    extends StObject
+       with TooltipPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait circle extends LocationType
+  sealed trait circle
+    extends StObject
+       with LocationType
   @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
   
@@ -45,7 +52,9 @@ object antvComponentStrings {
   def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait left extends TooltipPosition
+  sealed trait left
+    extends StObject
+       with TooltipPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -55,22 +64,30 @@ object antvComponentStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait none extends LocationType
+  sealed trait none
+    extends StObject
+       with LocationType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait point extends LocationType
+  sealed trait point
+    extends StObject
+       with LocationType
   @scala.inline
   def point: point = "point".asInstanceOf[point]
   
   @js.native
-  sealed trait points extends LocationType
+  sealed trait points
+    extends StObject
+       with LocationType
   @scala.inline
   def points: points = "points".asInstanceOf[points]
   
   @js.native
-  sealed trait right extends TooltipPosition
+  sealed trait right
+    extends StObject
+       with TooltipPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -80,7 +97,9 @@ object antvComponentStrings {
   def tail: tail = "tail".asInstanceOf[tail]
   
   @js.native
-  sealed trait top extends TooltipPosition
+  sealed trait top
+    extends StObject
+       with TooltipPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

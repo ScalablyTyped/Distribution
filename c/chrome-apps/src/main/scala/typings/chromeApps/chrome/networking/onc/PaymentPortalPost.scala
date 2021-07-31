@@ -3,26 +3,24 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chromeAppsStrings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentPortalPost extends StObject {
   
   /** The HTTP method to use for the payment portal. */
-  var Method: POST = js.native
+  var Method: POST
   
   /** The post data to send to the payment portal. */
-  var PostData: js.UndefOr[String] = js.native
+  var PostData: js.UndefOr[String] = js.undefined
   
   /** The payment portal URL. */
-  var Url: js.UndefOr[String] = js.native
+  var Url: js.UndefOr[String] = js.undefined
 }
 object PaymentPortalPost {
   
   @scala.inline
-  def apply(Method: POST): PaymentPortalPost = {
-    val __obj = js.Dynamic.literal(Method = Method.asInstanceOf[js.Any])
+  def apply(): PaymentPortalPost = {
+    val __obj = js.Dynamic.literal(Method = "POST")
     __obj.asInstanceOf[PaymentPortalPost]
   }
   

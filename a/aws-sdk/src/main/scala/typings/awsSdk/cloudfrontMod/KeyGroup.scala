@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyGroup extends StObject {
   
   /**
     * The identifier for the key group.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * The key group configuration.
     */
-  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig = js.native
+  var KeyGroupConfig: typings.awsSdk.cloudfrontMod.KeyGroupConfig
   
   /**
     * The date and time when the key group was last modified.
     */
-  var LastModifiedTime: timestamp = js.native
+  var LastModifiedTime: timestamp
 }
 object KeyGroup {
   

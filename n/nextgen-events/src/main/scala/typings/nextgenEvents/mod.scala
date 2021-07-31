@@ -8,14 +8,18 @@ import typings.nextgenEvents.nextgenEventsNumbers.`1`
 import typings.nextgenEvents.nextgenEventsNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nextgen-events", JSImport.Namespace)
   @js.native
-  class ^ () extends NextGenEvents
+  class ^ ()
+    extends StObject
+       with NextGenEvents
+  @JSImport("nextgen-events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
   @JSImport("nextgen-events", "CONTEXT_DISABLED")
@@ -88,283 +92,192 @@ object mod {
   val defaultMaxListeners: Double = js.native
   
   /* static member */
-  @JSImport("nextgen-events", "emitCallback")
-  @js.native
-  def emitCallback(event: Event): Unit = js.native
+  @scala.inline
+  def emitCallback(event: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitCallback")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "emitEvent")
-  @js.native
-  def emitEvent(event: Event): Event = js.native
+  @scala.inline
+  def emitEvent(event: Event): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("emitEvent")(event.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /* static member */
-  @JSImport("nextgen-events", "emitToOneListener")
-  @js.native
-  def emitToOneListener(event: Event, listener: js.Any, removedListeners: js.Any): Unit = js.native
+  @scala.inline
+  def emitToOneListener(event: Event, listener: js.Any, removedListeners: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitToOneListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], removedListeners.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "filterOutCallback")
-  @js.native
-  def filterOutCallback(what: js.Any, currentElement: js.Any): Boolean = js.native
+  @scala.inline
+  def filterOutCallback(what: js.Any, currentElement: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOutCallback")(what.asInstanceOf[js.Any], currentElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("nextgen-events", "getContextScope")
-  @js.native
-  def getContextScope(context: Context, scopeName: String): Scope = js.native
+  @scala.inline
+  def getContextScope(context: Context, scopeName: String): Scope = (^.asInstanceOf[js.Dynamic].applyDynamic("getContextScope")(context.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[Scope]
   
   /* static member */
-  @JSImport("nextgen-events", "groupAddListener")
-  @js.native
-  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String): js.Any = js.native
-  @JSImport("nextgen-events", "groupAddListener")
-  @js.native
-  def groupAddListener(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): js.Any = js.native
-  @JSImport("nextgen-events", "groupAddListener")
-  @js.native
-  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): js.Any = js.native
-  @JSImport("nextgen-events", "groupAddListener")
-  @js.native
-  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): js.Any = js.native
+  @scala.inline
+  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAddListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAddListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAddListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupAddListener(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAddListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("nextgen-events", "groupDefineStates")
-  @js.native
-  def groupDefineStates(emitters: js.Array[NextGenEvents], args: js.Any*): Unit = js.native
-  
-  @JSImport("nextgen-events", "groupEmit")
-  @js.native
-  def groupEmit(emitters: js.Array[NextGenEvents], nice: js.UndefOr[scala.Nothing], args: js.Any*): Unit = js.native
-  /* static member */
-  @JSImport("nextgen-events", "groupEmit")
-  @js.native
-  def groupEmit(emitters: js.Array[NextGenEvents], nice: Double, args: js.Any*): Unit = js.native
+  @scala.inline
+  def groupDefineStates(emitters: js.Array[NextGenEvents], args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupDefineStates")(emitters.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupGlobalOnce")
-  @js.native
-  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnce")
-  @js.native
-  def groupGlobalOnce(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnce")
-  @js.native
-  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnce")
-  @js.native
-  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = js.native
+  @scala.inline
+  def groupEmit(emitters: js.Array[NextGenEvents], nice: Double, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupEmit")(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupGlobalOnceAll")
-  @js.native
-  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnceAll")
-  @js.native
-  def groupGlobalOnceAll(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnceAll")
-  @js.native
-  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = js.native
-  @JSImport("nextgen-events", "groupGlobalOnceAll")
-  @js.native
-  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = js.native
+  @scala.inline
+  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupOn")
-  @js.native
-  def groupOn(emitters: js.Array[NextGenEvents], eventName: String): js.Any = js.native
-  @JSImport("nextgen-events", "groupOn")
-  @js.native
-  def groupOn(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): js.Any = js.native
-  @JSImport("nextgen-events", "groupOn")
-  @js.native
-  def groupOn(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): js.Any = js.native
-  @JSImport("nextgen-events", "groupOn")
-  @js.native
-  def groupOn(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): js.Any = js.native
+  @scala.inline
+  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnceAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnceAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnceAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupGlobalOnceAll(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupGlobalOnceAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupOnce")
-  @js.native
-  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
-  @JSImport("nextgen-events", "groupOnce")
-  @js.native
-  def groupOnce(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): Unit = js.native
-  @JSImport("nextgen-events", "groupOnce")
-  @js.native
-  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = js.native
-  @JSImport("nextgen-events", "groupOnce")
-  @js.native
-  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = js.native
+  @scala.inline
+  def groupOn(emitters: js.Array[NextGenEvents], eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOn")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupOn(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOn")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupOn(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOn")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def groupOn(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOn")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("nextgen-events", "groupOnceFirst")
-  @js.native
-  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceFirst")
-  @js.native
-  def groupOnceFirst(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceFirst")
-  @js.native
-  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceFirst")
-  @js.native
-  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = js.native
+  @scala.inline
+  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnce(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnce")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupOnceLast")
-  @js.native
-  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceLast")
-  @js.native
-  def groupOnceLast(
-    emitters: js.Array[NextGenEvents],
-    eventName: String,
-    fn: js.UndefOr[scala.Nothing],
-    options: AddListenerOptions
-  ): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceLast")
-  @js.native
-  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = js.native
-  @JSImport("nextgen-events", "groupOnceLast")
-  @js.native
-  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = js.native
+  @scala.inline
+  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceFirst(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupRemoveAllListeners")
-  @js.native
-  def groupRemoveAllListeners(emitters: js.Array[NextGenEvents], eventName: String): Unit = js.native
+  @scala.inline
+  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceLast")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String, fn: Unit, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceLast")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String, fn: Func): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceLast")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def groupOnceLast(emitters: js.Array[NextGenEvents], eventName: String, fn: Func, options: AddListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupOnceLast")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupRemoveListener")
-  @js.native
-  def groupRemoveListener(emitters: js.Array[NextGenEvents], eventName: String, id: Double): Unit = js.native
+  @scala.inline
+  def groupRemoveAllListeners(emitters: js.Array[NextGenEvents], eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupRemoveAllListeners")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitFor")
-  @js.native
-  def groupWaitFor(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupRemoveListener(emitters: js.Array[NextGenEvents], eventName: String, id: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("groupRemoveListener")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitForAll")
-  @js.native
-  def groupWaitForAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
-  
-  @JSImport("nextgen-events", "groupWaitForEmit")
-  @js.native
-  def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: js.UndefOr[scala.Nothing], args: js.Any*): js.Promise[Unit] = js.native
-  /* static member */
-  @JSImport("nextgen-events", "groupWaitForEmit")
-  @js.native
-  def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Double, args: js.Any*): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupWaitFor(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitFor")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitForFirst")
-  @js.native
-  def groupWaitForFirst(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupWaitForAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitForFirstAll")
-  @js.native
-  def groupWaitForFirstAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Double, args: js.Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def groupWaitForEmit(emitters: js.Array[NextGenEvents], nice: Unit, args: js.Any*): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForEmit")(emitters.asInstanceOf[js.Any], nice.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitForLast")
-  @js.native
-  def groupWaitForLast(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupWaitForFirst(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForFirst")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "groupWaitForLastAll")
-  @js.native
-  def groupWaitForLastAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def groupWaitForFirstAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForFirstAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "init")
-  @js.native
-  def init(): Unit = js.native
+  @scala.inline
+  def groupWaitForLast(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForLast")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "initFrom")
-  @js.native
-  def initFrom(from: NextGenEvents): Unit = js.native
+  @scala.inline
+  def groupWaitForLastAll(emitters: js.Array[NextGenEvents], eventName: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupWaitForLastAll")(emitters.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* static member */
-  @JSImport("nextgen-events", "listenerCount")
-  @js.native
-  def listenerCount(emitter: NextGenEvents, eventName: String): Double = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "listenerWrapper")
-  @js.native
-  def listenerWrapper(listener: js.Any, event: js.Any, contextScope: String, serial: js.Any): Unit = js.native
+  @scala.inline
+  def initFrom(from: NextGenEvents): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initFrom")(from.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "mergeListeners")
-  @js.native
-  def mergeListeners(foreigners: Listeners): Unit = js.native
+  @scala.inline
+  def listenerCount(emitter: NextGenEvents, eventName: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerCount")(emitter.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("nextgen-events", "noop")
-  @js.native
-  def noop(args: js.Any*): Unit = js.native
+  @scala.inline
+  def listenerWrapper(listener: js.Any, event: js.Any, contextScope: String, serial: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("listenerWrapper")(listener.asInstanceOf[js.Any], event.asInstanceOf[js.Any], contextScope.asInstanceOf[js.Any], serial.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "processScopeQueue")
-  @js.native
-  def processScopeQueue(self: NextGenEvents, contextScope: Scope, serial: Boolean, isCompletionCallback: Boolean): Unit = js.native
+  @scala.inline
+  def mergeListeners(foreigners: Listeners): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeListeners")(foreigners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "reset")
-  @js.native
-  def reset(emitter: NextGenEvents): Unit = js.native
+  @scala.inline
+  def noop(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("nextgen-events", "share")
-  @js.native
-  def share(source: NextGenEvents, target: NextGenEvents): Unit = js.native
+  @scala.inline
+  def processScopeQueue(self: NextGenEvents, contextScope: Scope, serial: Boolean, isCompletionCallback: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processScopeQueue")(self.asInstanceOf[js.Any], contextScope.asInstanceOf[js.Any], serial.asInstanceOf[js.Any], isCompletionCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /* static member */
+  @scala.inline
+  def reset(emitter: NextGenEvents): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(emitter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* static member */
+  @scala.inline
+  def share(source: NextGenEvents, target: NextGenEvents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("share")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AddListenerOptions = Boolean | Async
   
-  @js.native
   trait Context extends StObject {
     
-    var nice: Double = js.native
+    var nice: Double
     
-    var ready: Boolean = js.native
+    var ready: Boolean
     
-    var scopes: StringDictionary[js.Any] = js.native
+    var scopes: StringDictionary[js.Any]
     
-    var serial: Boolean = js.native
+    var serial: Boolean
     
-    var status: js.Any = js.native
+    var status: js.Any
   }
   object Context {
     
@@ -394,18 +307,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ContextOptions extends StObject {
     
-    var nice: js.UndefOr[Double] = js.native
+    var nice: js.UndefOr[Double] = js.undefined
     
-    var ready: Boolean = js.native
+    var ready: Boolean
     
-    var scopes: StringDictionary[Scope] = js.native
+    var scopes: StringDictionary[Scope]
     
-    var serial: js.UndefOr[js.Any] = js.native
+    var serial: js.UndefOr[js.Any] = js.undefined
     
-    var status: js.UndefOr[js.Any] = js.native
+    var status: js.UndefOr[js.Any] = js.undefined
   }
   object ContextOptions {
     
@@ -444,22 +356,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var args: js.Any = js.native
+    var args: js.Any
     
-    def callback(interrupt: js.Any): js.Any = js.native
+    def callback(interrupt: js.Any): js.Any
     
-    var emitter: NextGenEvents = js.native
+    var emitter: NextGenEvents
     
-    var interrupt: Null = js.native
+    var interrupt: Null
     
-    var mice: Double = js.native
+    var mice: Double
     
-    var name: String = js.native
+    var name: String
     
-    var sync: Boolean = js.native
+    var sync: Boolean
   }
   object Event {
     
@@ -503,18 +414,21 @@ object mod {
     }
   }
   
-  type Func = js.Function1[/* repeated */ js.Any, js.Any]
-  
   @js.native
+  trait Func extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
+  
   trait Listeners extends StObject {
     
-    var error: js.Array[Func] = js.native
+    var error: js.Array[Func]
     
-    var interrupt: js.Array[Func] = js.native
+    var interrupt: js.Array[Func]
     
-    var newListener: js.Array[Func] = js.native
+    var newListener: js.Array[Func]
     
-    var removeListener: js.Array[Func] = js.native
+    var removeListener: js.Array[Func]
   }
   object Listeners {
     
@@ -562,9 +476,9 @@ object mod {
   trait NextGenEvents extends StObject {
     
     def addListener(eventName: String): this.type = js.native
-    def addListener(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
     def addListener(eventName: String, fn: js.Any): this.type = js.native
     def addListener(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
+    def addListener(eventName: String, fn: Unit, options: AddListenerOptions): this.type = js.native
     
     def addListenerContext(contextName: String, options: ContextOptions): this.type = js.native
     
@@ -594,14 +508,14 @@ object mod {
     def off(eventName: String, id: js.Any): this.type = js.native
     
     def on(eventName: String): this.type = js.native
-    def on(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
     def on(eventName: String, fn: js.Any): this.type = js.native
     def on(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
+    def on(eventName: String, fn: Unit, options: AddListenerOptions): this.type = js.native
     
     def once(eventName: String): this.type = js.native
-    def once(eventName: String, fn: js.UndefOr[scala.Nothing], options: AddListenerOptions): this.type = js.native
     def once(eventName: String, fn: js.Any): this.type = js.native
     def once(eventName: String, fn: js.Any, options: AddListenerOptions): this.type = js.native
+    def once(eventName: String, fn: Unit, options: AddListenerOptions): this.type = js.native
     
     def queueListenerContext(contextName: String): this.type = js.native
     
@@ -624,21 +538,20 @@ object mod {
     
     def waitForAll(eventName: String): js.Promise[this.type] = js.native
     
-    def waitForEmit(name: String, args: js.Any*): js.Promise[_] = js.native
-    def waitForEmit(nice: Double, name: String, args: js.Any*): js.Promise[_] = js.native
+    def waitForEmit(name: String, args: js.Any*): js.Promise[js.Any] = js.native
+    def waitForEmit(nice: Double, name: String, args: js.Any*): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var queue: js.Array[_] = js.native
+    var queue: js.Array[js.Any]
     
-    var ready: Boolean = js.native
+    var ready: Boolean
   }
   object Scope {
     
     @scala.inline
-    def apply(queue: js.Array[_], ready: Boolean): Scope = {
+    def apply(queue: js.Array[js.Any], ready: Boolean): Scope = {
       val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any])
       __obj.asInstanceOf[Scope]
     }
@@ -647,7 +560,7 @@ object mod {
     implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setQueue(value: js.Array[_]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      def setQueue(value: js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueueVarargs(value: js.Any*): Self = StObject.set(x, "queue", js.Array(value :_*))

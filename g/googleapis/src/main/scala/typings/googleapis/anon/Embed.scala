@@ -2,31 +2,29 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Embed extends StObject {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
-  var embed: js.UndefOr[TypeUrl] = js.native
+  var embed: js.UndefOr[TypeUrl] = js.undefined
   
-  var fullImage: js.UndefOr[HeightType] = js.native
+  var fullImage: js.UndefOr[HeightType] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[HeightType] = js.native
+  var image: js.UndefOr[HeightType] = js.undefined
   
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
-  var previewThumbnails: js.UndefOr[js.Array[Url]] = js.native
+  var previewThumbnails: js.UndefOr[js.Array[Url]] = js.undefined
   
-  var thumbnails: js.UndefOr[js.Array[DescriptionImage]] = js.native
+  var thumbnails: js.UndefOr[js.Array[DescriptionImage]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Embed {
   

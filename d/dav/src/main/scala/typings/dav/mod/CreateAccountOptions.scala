@@ -5,51 +5,49 @@ import typings.dav.davStrings.carddav
 import typings.dav.mod.transport.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAccountOptions extends StObject {
   
   /**
     * one of 'caldav' or 'carddav'. Defaults to 'caldav'.
     */
-  var accountType: js.UndefOr[caldav | carddav] = js.native
+  var accountType: js.UndefOr[caldav | carddav] = js.undefined
   
   /**
     * list of caldav filters to send with request.
     */
-  var filters: js.UndefOr[js.Array[js.Object]] = js.native
+  var filters: js.UndefOr[js.Array[js.Object]] = js.undefined
   
   /**
     *  whether or not to load dav collections.
     */
-  var loadCollections: js.UndefOr[Boolean] = js.native
+  var loadCollections: js.UndefOr[Boolean] = js.undefined
   
   /**
     * whether or not to load dav objects.
     */
-  var loadObjects: js.UndefOr[Boolean] = js.native
+  var loadObjects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * request sandox.
     */
-  var sandbox: js.UndefOr[Sandbox | js.Object] = js.native
+  var sandbox: js.UndefOr[Sandbox | js.Object] = js.undefined
   
   /**
     *  some url for server (needn't be base url).
     */
-  var server: String = js.native
+  var server: String
   
   /**
     * VTIMEZONE calendar object.
     */
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
   /**
     * request sender.
     */
-  var xhr: js.UndefOr[Transport] = js.native
+  var xhr: js.UndefOr[Transport] = js.undefined
 }
 object CreateAccountOptions {
   

@@ -4,21 +4,19 @@ import typings.mongodb.anon.IdAny
 import typings.mongodb.anon.Ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertOneWriteOpResult[TSchema /* <: IdAny */] extends StObject {
   
-  var connection: js.Any = js.native
+  var connection: js.Any
   
-  var insertedCount: scala.Double = js.native
+  var insertedCount: scala.Double
   
-  var insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any = js.native
+  var insertedId: /* import warning: importer.ImportType#apply Failed type conversion: TSchema['_id'] */ js.Any
   
-  var ops: js.Array[TSchema] = js.native
+  var ops: js.Array[TSchema]
   
-  var result: Ok = js.native
+  var result: Ok
 }
 object InsertOneWriteOpResult {
   
@@ -35,7 +33,7 @@ object InsertOneWriteOpResult {
   }
   
   @scala.inline
-  implicit class InsertOneWriteOpResultMutableBuilder[Self <: InsertOneWriteOpResult[_], TSchema /* <: IdAny */] (val x: Self with InsertOneWriteOpResult[TSchema]) extends AnyVal {
+  implicit class InsertOneWriteOpResultMutableBuilder[Self <: InsertOneWriteOpResult[?], TSchema /* <: IdAny */] (val x: Self & InsertOneWriteOpResult[TSchema]) extends AnyVal {
     
     @scala.inline
     def setConnection(value: js.Any): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

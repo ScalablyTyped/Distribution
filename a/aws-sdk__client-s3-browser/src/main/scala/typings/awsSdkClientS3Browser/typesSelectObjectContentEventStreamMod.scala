@@ -12,38 +12,36 @@ import typings.awsSdkClientS3Browser.typesStatsEventMod.StatsEvent
 import typings.awsSdkClientS3Browser.typesStatsEventMod.UnmarshalledStatsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSelectObjectContentEventStreamMod {
   
-  @js.native
   trait SelectObjectContentEventStream extends StObject {
     
     /**
       * <p>The Continuation Event.</p>
       */
-    var Cont: js.UndefOr[ContinuationEvent] = js.native
+    var Cont: js.UndefOr[ContinuationEvent] = js.undefined
     
     /**
       * <p>The End Event.</p>
       */
-    var End: js.UndefOr[EndEvent] = js.native
+    var End: js.UndefOr[EndEvent] = js.undefined
     
     /**
       * <p>The Progress Event.</p>
       */
-    var Progress: js.UndefOr[ProgressEvent] = js.native
+    var Progress: js.UndefOr[ProgressEvent] = js.undefined
     
     /**
       * <p>The Records Event.</p>
       */
-    var Records: js.UndefOr[RecordsEvent] = js.native
+    var Records: js.UndefOr[RecordsEvent] = js.undefined
     
     /**
       * <p>The Stats Event.</p>
       */
-    var Stats: js.UndefOr[StatsEvent] = js.native
+    var Stats: js.UndefOr[StatsEvent] = js.undefined
   }
   object SelectObjectContentEventStream {
     
@@ -88,38 +86,39 @@ object typesSelectObjectContentEventStreamMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSelectObjectContentEventStream extends SelectObjectContentEventStream {
+  trait UnmarshalledSelectObjectContentEventStream
+    extends StObject
+       with SelectObjectContentEventStream {
     
     /**
       * <p>The Continuation Event.</p>
       */
     @JSName("Cont")
-    var Cont_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledContinuationEvent] = js.native
+    var Cont_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledContinuationEvent] = js.undefined
     
     /**
       * <p>The End Event.</p>
       */
     @JSName("End")
-    var End_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledEndEvent] = js.native
+    var End_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledEndEvent] = js.undefined
     
     /**
       * <p>The Progress Event.</p>
       */
     @JSName("Progress")
-    var Progress_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledProgressEvent] = js.native
+    var Progress_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledProgressEvent] = js.undefined
     
     /**
       * <p>The Records Event.</p>
       */
     @JSName("Records")
-    var Records_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledRecordsEvent] = js.native
+    var Records_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledRecordsEvent] = js.undefined
     
     /**
       * <p>The Stats Event.</p>
       */
     @JSName("Stats")
-    var Stats_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledStatsEvent] = js.native
+    var Stats_UnmarshalledSelectObjectContentEventStream: js.UndefOr[UnmarshalledStatsEvent] = js.undefined
   }
   object UnmarshalledSelectObjectContentEventStream {
     

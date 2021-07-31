@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PadV2Attrs extends StObject {
   
-  var constantValue: Double = js.native
+  var constantValue: Double
   
-  var paddings: js.Array[js.Tuple2[Double, Double]] = js.native
+  var paddings: js.Array[js.Tuple2[Double, Double]]
 }
 object PadV2Attrs {
   

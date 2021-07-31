@@ -6,18 +6,18 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ownerDocumentMod {
   
-  @JSImport("react-overlays/cjs/ownerDocument", JSImport.Default)
+  @JSImport("react-overlays/cjs/ownerDocument", JSImport.Namespace)
   @js.native
-  def default(): Document = js.native
-  @JSImport("react-overlays/cjs/ownerDocument", JSImport.Default)
-  @js.native
-  def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Document = js.native
-  @JSImport("react-overlays/cjs/ownerDocument", JSImport.Default)
-  @js.native
-  def default(componentOrElement: Element): Document = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Document]
+  @scala.inline
+  def default(componentOrElement: ComponentClass[js.Object, ComponentState]): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
+  @scala.inline
+  def default(componentOrElement: Element): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(componentOrElement.asInstanceOf[js.Any]).asInstanceOf[Document]
 }

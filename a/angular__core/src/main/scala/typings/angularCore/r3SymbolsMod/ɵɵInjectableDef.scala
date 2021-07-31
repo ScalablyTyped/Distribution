@@ -5,7 +5,6 @@ import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,7 +14,7 @@ trait ɵɵInjectableDef[T] extends StObject {
     * Factory method to execute to create an instance of the injectable.
     */
   def factory(): T = js.native
-  def factory(t: Type[_]): T = js.native
+  def factory(t: Type[js.Any]): T = js.native
   
   /**
     * Specifies that the given type belongs to a particular injector:
@@ -25,7 +24,7 @@ trait ɵɵInjectableDef[T] extends StObject {
     * - `null`, does not belong to any injector. Must be explicitly listed in the injector
     *   `providers`.
     */
-  var providedIn: InjectorType[_] | root | platform | any | Null = js.native
+  var providedIn: InjectorType[js.Any] | root | platform | any | Null = js.native
   
   /**
     * The token to which this definition belongs.

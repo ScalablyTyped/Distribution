@@ -2,16 +2,14 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUrlMapsValidateRequest extends StObject {
   
   /**
     * Content of the UrlMap to be validated.
     */
-  var resource: js.UndefOr[SchemaUrlMap] = js.native
+  var resource: js.UndefOr[SchemaUrlMap] = js.undefined
 }
 object SchemaUrlMapsValidateRequest {
   

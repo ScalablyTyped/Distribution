@@ -10,17 +10,15 @@ import typings.leafletDraw.anon.TooltipText
 import typings.leafletDraw.anon.TooltipTextString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Localization {
   
-  @js.native
   trait Action extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var title: String = js.native
+    var title: String
   }
   object Action {
     
@@ -41,12 +39,11 @@ object Localization {
     }
   }
   
-  @js.native
   trait Draw extends StObject {
     
-    var handlers: DrawHandlers = js.native
+    var handlers: DrawHandlers
     
-    var toolbar: typings.leafletDraw.mod.Localization.DrawToolbar = js.native
+    var toolbar: typings.leafletDraw.mod.Localization.DrawToolbar
   }
   object Draw {
     
@@ -67,22 +64,21 @@ object Localization {
     }
   }
   
-  @js.native
   trait DrawHandlers extends StObject {
     
-    var circle: Radius = js.native
+    var circle: Radius
     
-    var circlemarker: typings.leafletDraw.anon.Tooltip = js.native
+    var circlemarker: typings.leafletDraw.anon.Tooltip
     
-    var marker: typings.leafletDraw.anon.Tooltip = js.native
+    var marker: typings.leafletDraw.anon.Tooltip
     
-    var polygon: TooltipCont = js.native
+    var polygon: TooltipCont
     
-    var polyline: Error = js.native
+    var polyline: Error
     
-    var rectangle: typings.leafletDraw.anon.Tooltip = js.native
+    var rectangle: typings.leafletDraw.anon.Tooltip
     
-    var simpleshape: TooltipEnd = js.native
+    var simpleshape: TooltipEnd
   }
   object DrawHandlers {
     
@@ -126,12 +122,11 @@ object Localization {
     }
   }
   
-  @js.native
   trait DrawLocal extends StObject {
     
-    var draw: typings.leafletDraw.mod.Localization.Draw = js.native
+    var draw: typings.leafletDraw.mod.Localization.Draw
     
-    var edit: typings.leafletDraw.mod.Localization.Edit = js.native
+    var edit: typings.leafletDraw.mod.Localization.Edit
   }
   object DrawLocal {
     
@@ -152,16 +147,15 @@ object Localization {
     }
   }
   
-  @js.native
   trait DrawToolbar extends StObject {
     
-    var actions: Action = js.native
+    var actions: Action
     
-    var buttons: Circle = js.native
+    var buttons: Circle
     
-    var finish: Action = js.native
+    var finish: Action
     
-    var undo: Action = js.native
+    var undo: Action
   }
   object DrawToolbar {
     
@@ -188,12 +182,11 @@ object Localization {
     }
   }
   
-  @js.native
   trait Edit extends StObject {
     
-    var handlers: EditHandlers = js.native
+    var handlers: EditHandlers
     
-    var toolbar: typings.leafletDraw.mod.Localization.EditToolbar = js.native
+    var toolbar: typings.leafletDraw.mod.Localization.EditToolbar
   }
   object Edit {
     
@@ -214,12 +207,11 @@ object Localization {
     }
   }
   
-  @js.native
   trait EditHandlers extends StObject {
     
-    var edit: TooltipText = js.native
+    var edit: TooltipText
     
-    var remove: TooltipTextString = js.native
+    var remove: TooltipTextString
   }
   object EditHandlers {
     
@@ -240,12 +232,11 @@ object Localization {
     }
   }
   
-  @js.native
   trait EditToolbar extends StObject {
     
-    var actions: Cancel = js.native
+    var actions: Cancel
     
-    var buttons: typings.leafletDraw.anon.Edit = js.native
+    var buttons: typings.leafletDraw.anon.Edit
   }
   object EditToolbar {
     
@@ -266,14 +257,13 @@ object Localization {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
-    var cont: js.UndefOr[String] = js.native
+    var cont: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
   }
   object Tooltip {
     

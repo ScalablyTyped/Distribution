@@ -2,15 +2,13 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamMember extends StObject {
   
-  var identity: IdentityRef = js.native
+  var identity: IdentityRef
   
-  var isTeamAdmin: Boolean = js.native
+  var isTeamAdmin: Boolean
 }
 object TeamMember {
   

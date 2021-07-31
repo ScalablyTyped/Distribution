@@ -2,17 +2,15 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesConfigurationType extends StObject {
   
   /**
     * <p>An array of rules. You can specify up to 25 rules per identity provider.</p>
     *          <p>Rules are evaluated in order. The first one to match specifies the role.</p>
     */
-  var Rules: js.UndefOr[js.Array[MappingRule]] = js.native
+  var Rules: js.UndefOr[js.Array[MappingRule]] = js.undefined
 }
 object RulesConfigurationType {
   
@@ -22,9 +20,12 @@ object RulesConfigurationType {
     __obj.asInstanceOf[RulesConfigurationType]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RulesConfigurationType.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "RulesConfigurationType")
   @js.native
-  def filterSensitiveLog(obj: RulesConfigurationType): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: RulesConfigurationType): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class RulesConfigurationTypeMutableBuilder[Self <: RulesConfigurationType] (val x: Self) extends AnyVal {

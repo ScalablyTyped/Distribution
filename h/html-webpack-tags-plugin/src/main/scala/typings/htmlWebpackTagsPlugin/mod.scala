@@ -3,15 +3,22 @@ package typings.htmlWebpackTagsPlugin
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("html-webpack-tags-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends HtmlWebpackTagsPlugin {
+  class ^ ()
+    extends StObject
+       with HtmlWebpackTagsPlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
+    ): Unit = js.native
   }
   
   type AddHashFunction = js.Function2[/* assetPath */ String, /* hash */ String, String]
@@ -20,16 +27,17 @@ object mod {
   
   type AttributesObject = StringDictionary[String | Boolean | Double]
   
-  @js.native
-  trait BaseTagOptions extends CommonOptions {
+  trait BaseTagOptions
+    extends StObject
+       with CommonOptions {
     
-    var glob: js.UndefOr[String] = js.native
+    var glob: js.UndefOr[String] = js.undefined
     
-    var globFlatten: js.UndefOr[Boolean] = js.native
+    var globFlatten: js.UndefOr[Boolean] = js.undefined
     
-    var globPath: js.UndefOr[String] = js.native
+    var globPath: js.UndefOr[String] = js.undefined
     
-    var sourcePath: js.UndefOr[String] = js.native
+    var sourcePath: js.UndefOr[String] = js.undefined
   }
   object BaseTagOptions {
     
@@ -68,22 +76,21 @@ object mod {
     }
   }
   
-  @js.native
   trait CommonOptions extends StObject {
     
-    var addHash: js.UndefOr[AddHashFunction] = js.native
+    var addHash: js.UndefOr[AddHashFunction] = js.undefined
     
-    var addPublicPath: js.UndefOr[AddPublicPathFunction] = js.native
+    var addPublicPath: js.UndefOr[AddPublicPathFunction] = js.undefined
     
-    var append: js.UndefOr[Boolean] = js.native
+    var append: js.UndefOr[Boolean] = js.undefined
     
-    var hash: js.UndefOr[Boolean | String | AddHashFunction] = js.native
+    var hash: js.UndefOr[Boolean | String | AddHashFunction] = js.undefined
     
-    var publicPath: js.UndefOr[Boolean | String | AddPublicPathFunction] = js.native
+    var publicPath: js.UndefOr[Boolean | String | AddPublicPathFunction] = js.undefined
     
-    var useHash: js.UndefOr[Boolean] = js.native
+    var useHash: js.UndefOr[Boolean] = js.undefined
     
-    var usePublicPath: js.UndefOr[Boolean] = js.native
+    var usePublicPath: js.UndefOr[Boolean] = js.undefined
   }
   object CommonOptions {
     
@@ -146,12 +153,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ExternalObject extends StObject {
     
-    var packageName: String = js.native
+    var packageName: String
     
-    var variableName: String = js.native
+    var variableName: String
   }
   object ExternalObject {
     
@@ -172,13 +178,12 @@ object mod {
     }
   }
   
-  @js.native
   trait HtmlWebpackTagsPlugin extends StObject {
     
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object HtmlWebpackTagsPlugin {
     
@@ -200,12 +205,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait LinkTagOptions extends BaseTagOptions {
+  trait LinkTagOptions
+    extends StObject
+       with BaseTagOptions {
     
-    var attributes: js.UndefOr[AttributesObject] = js.native
+    var attributes: js.UndefOr[AttributesObject] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object LinkTagOptions {
     
@@ -229,10 +235,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MaybeLinkTagOptions extends LinkTagOptions {
+  trait MaybeLinkTagOptions
+    extends StObject
+       with LinkTagOptions {
     
-    var `type`: js.UndefOr[TypeString] = js.native
+    var `type`: js.UndefOr[TypeString] = js.undefined
   }
   object MaybeLinkTagOptions {
     
@@ -253,10 +260,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MaybeScriptTagOptions extends ScriptTagOptions {
+  trait MaybeScriptTagOptions
+    extends StObject
+       with ScriptTagOptions {
     
-    var `type`: js.UndefOr[TypeString] = js.native
+    var `type`: js.UndefOr[TypeString] = js.undefined
   }
   object MaybeScriptTagOptions {
     
@@ -277,12 +285,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait MetaTagOptions extends BaseTagOptions {
+  trait MetaTagOptions
+    extends StObject
+       with BaseTagOptions {
     
-    var attributes: AttributesObject = js.native
+    var attributes: AttributesObject
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object MetaTagOptions {
     
@@ -306,26 +315,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends CommonOptions {
+  trait Options
+    extends StObject
+       with CommonOptions {
     
-    var cssExtensions: js.UndefOr[String | js.Array[String]] = js.native
+    var cssExtensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var jsExtensions: js.UndefOr[String | js.Array[String]] = js.native
+    var jsExtensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var links: js.UndefOr[String | LinkTagOptions | (js.Array[String | LinkTagOptions])] = js.native
+    var links: js.UndefOr[String | LinkTagOptions | (js.Array[String | LinkTagOptions])] = js.undefined
     
-    var metas: js.UndefOr[String | MetaTagOptions | (js.Array[String | MetaTagOptions])] = js.native
+    var metas: js.UndefOr[String | MetaTagOptions | (js.Array[String | MetaTagOptions])] = js.undefined
     
-    var prependExternals: js.UndefOr[Boolean] = js.native
+    var prependExternals: js.UndefOr[Boolean] = js.undefined
     
-    var scripts: js.UndefOr[String | ScriptTagOptions | (js.Array[String | ScriptTagOptions])] = js.native
+    var scripts: js.UndefOr[String | ScriptTagOptions | (js.Array[String | ScriptTagOptions])] = js.undefined
     
     var tags: js.UndefOr[
         String | MaybeLinkTagOptions | MaybeScriptTagOptions | (js.Array[String | MaybeLinkTagOptions | MaybeScriptTagOptions])
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -411,14 +421,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ScriptTagOptions extends BaseTagOptions {
+  trait ScriptTagOptions
+    extends StObject
+       with BaseTagOptions {
     
-    var attributes: js.UndefOr[AttributesObject] = js.native
+    var attributes: js.UndefOr[AttributesObject] = js.undefined
     
-    var external: js.UndefOr[ExternalObject] = js.native
+    var external: js.UndefOr[ExternalObject] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object ScriptTagOptions {
     

@@ -2,30 +2,28 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Filter Clause to be used in a segment definition, can be wither a metric or
   * a dimension filter.
   */
-@js.native
 trait SchemaSegmentFilterClause extends StObject {
   
   /**
     * Dimension Filter for the segment definition.
     */
-  var dimensionFilter: js.UndefOr[SchemaSegmentDimensionFilter] = js.native
+  var dimensionFilter: js.UndefOr[SchemaSegmentDimensionFilter] = js.undefined
   
   /**
     * Metric Filter for the segment definition.
     */
-  var metricFilter: js.UndefOr[SchemaSegmentMetricFilter] = js.native
+  var metricFilter: js.UndefOr[SchemaSegmentMetricFilter] = js.undefined
   
   /**
     * Matches the complement (`!`) of the filter.
     */
-  var not: js.UndefOr[Boolean] = js.native
+  var not: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSegmentFilterClause {
   

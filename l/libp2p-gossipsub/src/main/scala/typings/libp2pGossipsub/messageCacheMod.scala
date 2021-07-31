@@ -6,7 +6,6 @@ import typings.std.Map
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageCacheMod {
@@ -86,12 +85,11 @@ object messageCacheMod {
     def shift(): Unit = js.native
   }
   
-  @js.native
   trait CacheEntry extends StObject {
     
-    var msgID: Uint8Array = js.native
+    var msgID: Uint8Array
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
   }
   object CacheEntry {
     

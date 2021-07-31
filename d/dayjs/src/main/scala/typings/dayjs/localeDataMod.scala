@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeDataMod extends Shortcut {
@@ -21,10 +20,9 @@ object localeDataMod extends Shortcut {
   /* augmented module */
   object dayjsEsmAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def localeData(): InstanceLocaleDataReturn = js.native
+      def localeData(): InstanceLocaleDataReturn
     }
     object Dayjs {
       
@@ -50,13 +48,13 @@ object localeDataMod extends Shortcut {
       def longDateFormat(format: String): String = js.native
       
       def meridiem(): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double, isLower: Boolean): String = js.native
       def meridiem(hour: Double): String = js.native
-      def meridiem(hour: Double, minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
       def meridiem(hour: Double, minute: Double): String = js.native
       def meridiem(hour: Double, minute: Double, isLower: Boolean): String = js.native
+      def meridiem(hour: Double, minute: Unit, isLower: Boolean): String = js.native
+      def meridiem(hour: Unit, minute: Double): String = js.native
+      def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
+      def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
       
       def months(): MonthNames = js.native
       
@@ -77,13 +75,13 @@ object localeDataMod extends Shortcut {
       def longDateFormat(format: String): String = js.native
       
       def meridiem(): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double): String = js.native
-      def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double, isLower: Boolean): String = js.native
       def meridiem(hour: Double): String = js.native
-      def meridiem(hour: Double, minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
       def meridiem(hour: Double, minute: Double): String = js.native
       def meridiem(hour: Double, minute: Double, isLower: Boolean): String = js.native
+      def meridiem(hour: Double, minute: Unit, isLower: Boolean): String = js.native
+      def meridiem(hour: Unit, minute: Double): String = js.native
+      def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
+      def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
       
       def months(): MonthNames = js.native
       def months(instance: Dayjs): MonthNames = js.native

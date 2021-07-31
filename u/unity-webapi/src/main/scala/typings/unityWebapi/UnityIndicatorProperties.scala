@@ -3,19 +3,17 @@ package typings.unityWebapi
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnityIndicatorProperties extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var iconURI: String = js.native
+  var iconURI: String
   
-  var onIndicatorActivated: js.Function = js.native
+  var onIndicatorActivated: js.Function
   
-  var time: Date = js.native
+  var time: Date
 }
 object UnityIndicatorProperties {
   

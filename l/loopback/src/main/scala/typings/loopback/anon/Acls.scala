@@ -4,23 +4,21 @@ import typings.loopback.loopbackStrings.DENY
 import typings.loopback.mod.ACL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acls extends StObject {
   
-  var acls: js.Array[ACL] = js.native
+  var acls: js.Array[ACL]
   
-  var defaultPermission: DENY = js.native
+  var defaultPermission: DENY
   
-  var http: Path = js.native
+  var http: Path
 }
 object Acls {
   
   @scala.inline
-  def apply(acls: js.Array[ACL], defaultPermission: DENY, http: Path): Acls = {
-    val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], defaultPermission = defaultPermission.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any])
+  def apply(acls: js.Array[ACL], http: Path): Acls = {
+    val __obj = js.Dynamic.literal(acls = acls.asInstanceOf[js.Any], defaultPermission = "DENY", http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Acls]
   }
   

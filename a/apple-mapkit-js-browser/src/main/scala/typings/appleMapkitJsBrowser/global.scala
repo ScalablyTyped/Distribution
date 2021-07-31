@@ -3,6 +3,10 @@ package typings.appleMapkitJsBrowser
 import typings.appleMapkitJsBrowser.mapkit.AnnotationConstructorOptions
 import typings.appleMapkitJsBrowser.mapkit.CameraZoomRangeConstructorOptions
 import typings.appleMapkitJsBrowser.mapkit.DirectionsConstructorOptions
+import typings.appleMapkitJsBrowser.mapkit.DirectionsRequest
+import typings.appleMapkitJsBrowser.mapkit.DirectionsResponse
+import typings.appleMapkitJsBrowser.mapkit.EtaRequestOptions
+import typings.appleMapkitJsBrowser.mapkit.EtaResponse
 import typings.appleMapkitJsBrowser.mapkit.GeoJSONDelegate
 import typings.appleMapkitJsBrowser.mapkit.GeocoderConstructorOptions
 import typings.appleMapkitJsBrowser.mapkit.ImageAnnotationConstructorOptions
@@ -25,7 +29,6 @@ import typings.std.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -42,7 +45,8 @@ object global {
     @JSGlobal("mapkit.Annotation")
     @js.native
     class Annotation protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.Annotation {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Annotation {
       /**
         * Creates a new annotation given its location and initialization options.
         *
@@ -119,7 +123,8 @@ object global {
     @JSGlobal("mapkit.BoundingRegion")
     @js.native
     class BoundingRegion protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.BoundingRegion {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.BoundingRegion {
       /**
         * Creates a rectangular bounding region defined by the latitude and
         * longitude coordinates of the rectangle's northeast and southwest corners.
@@ -130,6 +135,42 @@ object global {
         * @param westLongitude The west longitude of the bounding region.
         */
       def this(northLatitude: Double, eastLongitude: Double, southLatitude: Double, westLongitude: Double) = this()
+      
+      /**
+        * Returns a copy of the calling bounding region.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.BoundingRegion = js.native
+      
+      /**
+        * The east longitude of the bounding region.
+        */
+      /* CompleteClass */
+      var eastLongitude: Double = js.native
+      
+      /**
+        * The north latitude of the bounding region.
+        */
+      /* CompleteClass */
+      var northLatitude: Double = js.native
+      
+      /**
+        * The south latitude of the bounding region.
+        */
+      /* CompleteClass */
+      var southLatitude: Double = js.native
+      
+      /**
+        * Returns the coordinate region that corresponds to the calling bounding region.
+        */
+      /* CompleteClass */
+      override def toCoordinateRegion(): typings.appleMapkitJsBrowser.mapkit.CoordinateRegion = js.native
+      
+      /**
+        * The west longitude of the bounding region.
+        */
+      /* CompleteClass */
+      var westLongitude: Double = js.native
     }
     
     /**
@@ -138,7 +179,8 @@ object global {
     @JSGlobal("mapkit.CameraZoomRange")
     @js.native
     class CameraZoomRange protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.CameraZoomRange {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.CameraZoomRange {
       def this(minCameraDistance: Double) = this()
       /**
         * Describes the minimum and maximum camera distance in meters.
@@ -146,6 +188,18 @@ object global {
       def this(minCameraDistance: CameraZoomRangeConstructorOptions) = this()
       def this(minCameraDistance: Double, maxCameraDistance: Double) = this()
       def this(minCameraDistance: CameraZoomRangeConstructorOptions, maxCameraDistance: Double) = this()
+      
+      /**
+        * The maximum allowed distance of the camera from the center of the map in meters.
+        */
+      /* CompleteClass */
+      var maxCameraDistance: Double = js.native
+      
+      /**
+        * The minimum allowed distance of the camera from the center of the map in meters.
+        */
+      /* CompleteClass */
+      var minCameraDistance: Double = js.native
     }
     
     /**
@@ -155,7 +209,8 @@ object global {
     @JSGlobal("mapkit.CircleOverlay")
     @js.native
     class CircleOverlay protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.CircleOverlay {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.CircleOverlay {
       /**
         * Creates a circle overlay with a center coordinate, radius, and style options.
         *
@@ -179,11 +234,48 @@ object global {
     @JSGlobal("mapkit.Coordinate")
     @js.native
     class Coordinate protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.Coordinate {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Coordinate {
       /**
         * Creates a coordinate object with the specified latitude and longitude.
         */
       def this(latitude: Double, longitude: Double) = this()
+      
+      /**
+        * Returns a copy of the coordinate.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.Coordinate = js.native
+      
+      /**
+        * Returns a Boolean value indicating whether two coordinates are equal.
+        */
+      /* CompleteClass */
+      override def equals(anotherCoordinate: typings.appleMapkitJsBrowser.mapkit.Coordinate): Boolean = js.native
+      
+      /**
+        * The latitude in degrees.
+        */
+      /* CompleteClass */
+      var latitude: Double = js.native
+      
+      /**
+        * The longitude in degrees.
+        */
+      /* CompleteClass */
+      var longitude: Double = js.native
+      
+      /**
+        * Returns the map point that corresponds to the coordinate.
+        */
+      /* CompleteClass */
+      override def toMapPoint(): typings.appleMapkitJsBrowser.mapkit.MapPoint = js.native
+      
+      /**
+        * Returns the unwrapped map point that corresponds to the coordinate.
+        */
+      /* CompleteClass */
+      override def toUnwrappedMapPoint(): typings.appleMapkitJsBrowser.mapkit.MapPoint = js.native
     }
     
     /**
@@ -193,7 +285,8 @@ object global {
     @JSGlobal("mapkit.CoordinateRegion")
     @js.native
     class CoordinateRegion protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.CoordinateRegion {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.CoordinateRegion {
       /**
         * Creates A rectangular geographic region centered around a latitude and
         * longitude coordinate.
@@ -206,6 +299,48 @@ object global {
         center: typings.appleMapkitJsBrowser.mapkit.Coordinate,
         span: typings.appleMapkitJsBrowser.mapkit.CoordinateSpan
       ) = this()
+      
+      /**
+        * The center point of the region.
+        */
+      /* CompleteClass */
+      var center: typings.appleMapkitJsBrowser.mapkit.Coordinate = js.native
+      
+      /**
+        * Returns a copy of the calling coordinate region.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.CoordinateRegion = js.native
+      
+      /**
+        * Returns a Boolean value indicating whether two regions are equal.
+        */
+      /* CompleteClass */
+      override def equals(anotherRegion: typings.appleMapkitJsBrowser.mapkit.CoordinateRegion): Boolean = js.native
+      
+      /**
+        * The distance provided in meters or the longest distance derived from the center point to the region’s bounding box.
+        */
+      /* CompleteClass */
+      override val radius: Double = js.native
+      
+      /**
+        * The horizontal and vertical span representing the amount of map to display.
+        */
+      /* CompleteClass */
+      var span: typings.appleMapkitJsBrowser.mapkit.CoordinateSpan = js.native
+      
+      /**
+        * Returns the bounding region that corresponds to the calling coordinate region.
+        */
+      /* CompleteClass */
+      override def toBoundingRegion(): typings.appleMapkitJsBrowser.mapkit.BoundingRegion = js.native
+      
+      /**
+        * Returns the map rectangle that corresponds to the calling coordinate region.
+        */
+      /* CompleteClass */
+      override def toMapRect(): typings.appleMapkitJsBrowser.mapkit.MapRect = js.native
     }
     
     /**
@@ -214,7 +349,8 @@ object global {
     @JSGlobal("mapkit.CoordinateSpan")
     @js.native
     class CoordinateSpan protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.CoordinateSpan {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.CoordinateSpan {
       /**
         * Creates a new coordinate span object with the specified latitude and
         * longitude deltas.
@@ -225,6 +361,32 @@ object global {
         * degrees) to display for the map region.
         */
       def this(latitudeDelta: Double, longitudeDelta: Double) = this()
+      
+      /**
+        * Returns a copy of the coordinate span.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.CoordinateSpan = js.native
+      
+      /**
+        * Returns a Boolean value that indicates whether two spans are equal.
+        */
+      /* CompleteClass */
+      override def equals(anotherSpan: typings.appleMapkitJsBrowser.mapkit.CoordinateSpan): Boolean = js.native
+      
+      /**
+        * The amount of north-to-south distance (measured in degrees) to display on
+        * the map.
+        */
+      /* CompleteClass */
+      var latitudeDelta: Double = js.native
+      
+      /**
+        * The amount of east-to-west distance (measured in degrees) to display for
+        * the map region.
+        */
+      /* CompleteClass */
+      var longitudeDelta: Double = js.native
     }
     
     /**
@@ -239,8 +401,46 @@ object global {
       * This parameter is optional.
       */
     class Directions ()
-      extends typings.appleMapkitJsBrowser.mapkit.Directions {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Directions {
       def this(options: DirectionsConstructorOptions) = this()
+      
+      /**
+        * Cancels a previous request for route directions.
+        *
+        * @param id The ID returned by a call to route.
+        */
+      /* CompleteClass */
+      override def cancel(id: Double): Boolean = js.native
+      
+      /**
+        * Retrieves estimated arrival times to up to 10 destinations from a single starting point.
+        *
+        * @param request An EtaRequestOptions object that specifies details for the server to provide estimated arrival times at one or more destinations.
+        * @param callback A callback function that receives the estimated time response object, returned asynchronously.
+        * @return A request ID, which you can pass to cancel to abort a pending request.
+        */
+      /* CompleteClass */
+      override def eta(
+        request: EtaRequestOptions,
+        callback: js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]
+      ): Double = js.native
+      
+      /**
+        * Retrieves directions and estimated travel time for the specified start
+        * and end points.
+        *
+        * @param request DirectionsRequest object that specifies details for the
+        * directions you want to retrieve.
+        * @param callback A callback function that receives the directions,
+        * returned asynchronously.
+        * @return A request ID, which you can pass to cancel to abort a pending request.
+        */
+      /* CompleteClass */
+      override def route(
+        request: DirectionsRequest,
+        callback: js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]
+      ): Double = js.native
     }
     object Directions {
       
@@ -252,11 +452,11 @@ object global {
       object Transport extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[typings.appleMapkitJsBrowser.mapkit.Directions.Transport with Double] = js.native
+        def apply(value: Double): js.UndefOr[typings.appleMapkitJsBrowser.mapkit.Directions.Transport & Double] = js.native
         
-        /* 0 */ val Automobile: typings.appleMapkitJsBrowser.mapkit.Directions.Transport.Automobile with Double = js.native
+        /* 0 */ val Automobile: typings.appleMapkitJsBrowser.mapkit.Directions.Transport.Automobile & Double = js.native
         
-        /* 1 */ val Walking: typings.appleMapkitJsBrowser.mapkit.Directions.Transport.Walking with Double = js.native
+        /* 1 */ val Walking: typings.appleMapkitJsBrowser.mapkit.Directions.Transport.Walking & Double = js.native
       }
     }
     
@@ -298,7 +498,8 @@ object global {
       * properties.
       */
     class Geocoder ()
-      extends typings.appleMapkitJsBrowser.mapkit.Geocoder {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Geocoder {
       def this(options: GeocoderConstructorOptions) = this()
     }
     
@@ -308,7 +509,8 @@ object global {
     @JSGlobal("mapkit.ImageAnnotation")
     @js.native
     class ImageAnnotation protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.Annotation {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Annotation {
       /**
         * Initializes an image annotation with a URL to its image and a coordinate.
         */
@@ -329,8 +531,27 @@ object global {
       * @param options A JavaScript object with unit distance values as keys with matched CSS colors.
       */
     class LineGradient ()
-      extends typings.appleMapkitJsBrowser.mapkit.LineGradient {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.LineGradient {
       def this(options: js.Object) = this()
+      
+      /**
+        * Adds a color transition point to the gradient.
+        *
+        * @param offset The unit distance at which to add the color.
+        * @param color The CSS color at the transition point.
+        */
+      /* CompleteClass */
+      override def addColorStop(offset: Double, color: String): Unit = js.native
+      
+      /**
+        * Adds a color transition at the index point in the list of points within a polyline.
+        *
+        * @param index A valid index into a polyline’s points.
+        * @param color The CSS color at the index point.
+        */
+      /* CompleteClass */
+      override def addColorStopAtIndex(index: Double, color: String): Unit = js.native
     }
     
     /**
@@ -339,7 +560,8 @@ object global {
     @JSGlobal("mapkit.Map")
     @js.native
     class Map protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.Map {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Map {
       /**
         * Creates a map that you embed on a webpage, and initializes its display
         * properties and other options.
@@ -451,7 +673,8 @@ object global {
     @JSGlobal("mapkit.MapPoint")
     @js.native
     class MapPoint protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.MapPoint {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.MapPoint {
       /**
         * Initializes a MapPoint object.
         *
@@ -459,6 +682,39 @@ object global {
         * @param  The point along the north-south axis of the map projection.
         */
       def this(x: Double, y: Double) = this()
+      
+      /**
+        * Returns a copy of a map point.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.MapPoint = js.native
+      
+      /**
+        * Indicates whether two map points are equal.
+        *
+        * @param anotherPoint A map point to use for comparison.
+        */
+      /* CompleteClass */
+      override def equals(anotherPoint: typings.appleMapkitJsBrowser.mapkit.MapPoint): Boolean = js.native
+      
+      /**
+        * Returns a coordinate containing the latitude and longitude corresponding
+        * to a map point.
+        */
+      /* CompleteClass */
+      override def toCoordinate(): typings.appleMapkitJsBrowser.mapkit.Coordinate = js.native
+      
+      /**
+        * The location of the point along the x-axis of the map.
+        */
+      /* CompleteClass */
+      var x: Double = js.native
+      
+      /**
+        * The location of the point along the y-axis of the map.
+        */
+      /* CompleteClass */
+      var y: Double = js.native
     }
     
     /**
@@ -467,7 +723,8 @@ object global {
     @JSGlobal("mapkit.MapRect")
     @js.native
     class MapRect protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.MapRect {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.MapRect {
       /**
         * Initializes a MapRect object.
         *
@@ -479,6 +736,81 @@ object global {
         * axis of the map projection.
         */
       def this(x: Double, y: Double, width: Double, height: Double) = this()
+      
+      /**
+        * Returns a copy of a map rectangle.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.MapRect = js.native
+      
+      /**
+        * Indicates whether two map rectangles are equal.
+        *
+        * @param anotherRect The map rectangle to equate to.
+        */
+      /* CompleteClass */
+      override def equals(anotherRect: typings.appleMapkitJsBrowser.mapkit.MapRect): Boolean = js.native
+      
+      /**
+        * The maximum x-axis value of a rectangle.
+        */
+      /* CompleteClass */
+      var maxX: Double = js.native
+      
+      /**
+        * The maximum y-axis value of a rectangle.
+        */
+      /* CompleteClass */
+      var maxY: Double = js.native
+      
+      /**
+        * The mid-point along the x-axis of a rectangle.
+        */
+      /* CompleteClass */
+      var midX: Double = js.native
+      
+      /**
+        * The mid-point along the y-axis of a rectangle.
+        */
+      /* CompleteClass */
+      var midY: Double = js.native
+      
+      /**
+        * The minimum x-axis value of a rectangle.
+        */
+      /* CompleteClass */
+      var minX: Double = js.native
+      
+      /**
+        * The minimum y-axis value of a rectangle.
+        */
+      /* CompleteClass */
+      var minY: Double = js.native
+      
+      /**
+        * The origin point of a rectangle.
+        */
+      /* CompleteClass */
+      var origin: typings.appleMapkitJsBrowser.mapkit.MapPoint = js.native
+      
+      /**
+        * @param scaleFactor The scale factor.
+        * @param scaleCenter The center map point for scaling.
+        */
+      /* CompleteClass */
+      override def scale(scaleFactor: Double, scaleCenter: typings.appleMapkitJsBrowser.mapkit.MapPoint): typings.appleMapkitJsBrowser.mapkit.MapRect = js.native
+      
+      /**
+        * The width and height of a rectangle, starting from the origin point.
+        */
+      /* CompleteClass */
+      var size: typings.appleMapkitJsBrowser.mapkit.MapSize = js.native
+      
+      /**
+        * Returns the region that corresponds to a map rectangle.
+        */
+      /* CompleteClass */
+      override def toCoordinateRegion(): typings.appleMapkitJsBrowser.mapkit.CoordinateRegion = js.native
     }
     
     /**
@@ -488,7 +820,8 @@ object global {
     @JSGlobal("mapkit.MapSize")
     @js.native
     class MapSize protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.MapSize {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.MapSize {
       /**
         * Initializes a MapSize object.
         *
@@ -498,6 +831,32 @@ object global {
         * north-south axis of the map projection.
         */
       def this(width: Double, height: Double) = this()
+      
+      /**
+        * Returns a copy of a map size.
+        */
+      /* CompleteClass */
+      override def copy(): typings.appleMapkitJsBrowser.mapkit.MapSize = js.native
+      
+      /**
+        * Indicates whether two map sizes are equal.
+        *
+        * @param anotherSize The map size to equate to.
+        */
+      /* CompleteClass */
+      override def equals(anotherSize: typings.appleMapkitJsBrowser.mapkit.MapSize): Boolean = js.native
+      
+      /**
+        * The height value, in map point units.
+        */
+      /* CompleteClass */
+      var height: Double = js.native
+      
+      /**
+        * The width value, in map point units.
+        */
+      /* CompleteClass */
+      var width: Double = js.native
     }
     
     /**
@@ -506,7 +865,8 @@ object global {
     @JSGlobal("mapkit.MarkerAnnotation")
     @js.native
     class MarkerAnnotation protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.MarkerAnnotation {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.MarkerAnnotation {
       /**
         * Creates a marker annotation at the coordinate location with provided options.
         *
@@ -526,7 +886,8 @@ object global {
     @JSGlobal("mapkit.Overlay")
     @js.native
     abstract class Overlay ()
-      extends typings.appleMapkitJsBrowser.mapkit.Overlay
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Overlay
     
     /**
       * The values that define content padding within the map view frame.
@@ -546,28 +907,48 @@ object global {
       * the left edge.
       */
     class Padding ()
-      extends typings.appleMapkitJsBrowser.mapkit.Padding {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Padding {
       def this(options: PaddingConstructorOptions) = this()
       def this(top: Double) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: Double) = this()
       def this(top: Double, right: Double) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: Double) = this()
-      def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: Double) = this()
+      def this(top: Unit, right: Double) = this()
       def this(top: Double, right: Double, bottom: Double) = this()
-      def this(
-        top: js.UndefOr[scala.Nothing],
-        right: js.UndefOr[scala.Nothing],
-        bottom: js.UndefOr[scala.Nothing],
-        left: Double
-      ) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: js.UndefOr[scala.Nothing], bottom: Double, left: Double) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: js.UndefOr[scala.Nothing], left: Double) = this()
-      def this(top: js.UndefOr[scala.Nothing], right: Double, bottom: Double, left: Double) = this()
-      def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: js.UndefOr[scala.Nothing], left: Double) = this()
-      def this(top: Double, right: js.UndefOr[scala.Nothing], bottom: Double, left: Double) = this()
-      def this(top: Double, right: Double, bottom: js.UndefOr[scala.Nothing], left: Double) = this()
+      def this(top: Double, right: Unit, bottom: Double) = this()
+      def this(top: Unit, right: Double, bottom: Double) = this()
+      def this(top: Unit, right: Unit, bottom: Double) = this()
       def this(top: Double, right: Double, bottom: Double, left: Double) = this()
+      def this(top: Double, right: Double, bottom: Unit, left: Double) = this()
+      def this(top: Double, right: Unit, bottom: Double, left: Double) = this()
+      def this(top: Double, right: Unit, bottom: Unit, left: Double) = this()
+      def this(top: Unit, right: Double, bottom: Double, left: Double) = this()
+      def this(top: Unit, right: Double, bottom: Unit, left: Double) = this()
+      def this(top: Unit, right: Unit, bottom: Double, left: Double) = this()
+      def this(top: Unit, right: Unit, bottom: Unit, left: Double) = this()
+      
+      /**
+        * The amount of padding, in CSS pixels, to inset the map from the bottom edge.
+        */
+      /* CompleteClass */
+      var bottom: Double = js.native
+      
+      /**
+        * The amount of padding, in CSS pixels, to inset the map from the left edge.
+        */
+      /* CompleteClass */
+      var left: Double = js.native
+      
+      /**
+        * The amount of padding, in CSS pixels, to inset the map from the right edge.
+        */
+      /* CompleteClass */
+      var right: Double = js.native
+      
+      /**
+        * The amount of padding, in CSS pixels, to inset the map from the top edge.
+        */
+      /* CompleteClass */
+      var top: Double = js.native
     }
     
     /**
@@ -578,87 +959,87 @@ object global {
     object PointOfInterestCategory extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory & Double] = js.native
       
-      /* 3 */ val ATM: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.ATM with Double = js.native
+      /* 3 */ val ATM: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.ATM & Double = js.native
       
-      /* 0 */ val Airport: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Airport with Double = js.native
+      /* 0 */ val Airport: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Airport & Double = js.native
       
-      /* 1 */ val AmusementPark: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.AmusementPark with Double = js.native
+      /* 1 */ val AmusementPark: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.AmusementPark & Double = js.native
       
-      /* 2 */ val Aquarium: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Aquarium with Double = js.native
+      /* 2 */ val Aquarium: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Aquarium & Double = js.native
       
-      /* 4 */ val Bakery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Bakery with Double = js.native
+      /* 4 */ val Bakery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Bakery & Double = js.native
       
-      /* 5 */ val Bank: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Bank with Double = js.native
+      /* 5 */ val Bank: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Bank & Double = js.native
       
-      /* 6 */ val Beach: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Beach with Double = js.native
+      /* 6 */ val Beach: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Beach & Double = js.native
       
-      /* 7 */ val Brewery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Brewery with Double = js.native
+      /* 7 */ val Brewery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Brewery & Double = js.native
       
-      /* 8 */ val Cafe: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Cafe with Double = js.native
+      /* 8 */ val Cafe: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Cafe & Double = js.native
       
-      /* 9 */ val Campground: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Campground with Double = js.native
+      /* 9 */ val Campground: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Campground & Double = js.native
       
-      /* 10 */ val CarRental: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.CarRental with Double = js.native
+      /* 10 */ val CarRental: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.CarRental & Double = js.native
       
-      /* 11 */ val EVCharger: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.EVCharger with Double = js.native
+      /* 11 */ val EVCharger: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.EVCharger & Double = js.native
       
-      /* 12 */ val FireStation: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FireStation with Double = js.native
+      /* 12 */ val FireStation: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FireStation & Double = js.native
       
-      /* 13 */ val FitnessCenter: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FitnessCenter with Double = js.native
+      /* 13 */ val FitnessCenter: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FitnessCenter & Double = js.native
       
-      /* 14 */ val FoodMarket: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FoodMarket with Double = js.native
+      /* 14 */ val FoodMarket: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.FoodMarket & Double = js.native
       
-      /* 15 */ val GasStation: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.GasStation with Double = js.native
+      /* 15 */ val GasStation: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.GasStation & Double = js.native
       
-      /* 16 */ val Hospital: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Hospital with Double = js.native
+      /* 16 */ val Hospital: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Hospital & Double = js.native
       
-      /* 17 */ val Hotel: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Hotel with Double = js.native
+      /* 17 */ val Hotel: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Hotel & Double = js.native
       
-      /* 18 */ val Laundry: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Laundry with Double = js.native
+      /* 18 */ val Laundry: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Laundry & Double = js.native
       
-      /* 19 */ val Library: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Library with Double = js.native
+      /* 19 */ val Library: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Library & Double = js.native
       
-      /* 20 */ val Marina: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Marina with Double = js.native
+      /* 20 */ val Marina: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Marina & Double = js.native
       
-      /* 21 */ val MovieTheater: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.MovieTheater with Double = js.native
+      /* 21 */ val MovieTheater: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.MovieTheater & Double = js.native
       
-      /* 22 */ val Museum: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Museum with Double = js.native
+      /* 22 */ val Museum: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Museum & Double = js.native
       
-      /* 23 */ val NationalPark: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.NationalPark with Double = js.native
+      /* 23 */ val NationalPark: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.NationalPark & Double = js.native
       
-      /* 24 */ val Nightlife: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Nightlife with Double = js.native
+      /* 24 */ val Nightlife: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Nightlife & Double = js.native
       
-      /* 25 */ val Park: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Park with Double = js.native
+      /* 25 */ val Park: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Park & Double = js.native
       
-      /* 26 */ val Parking: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Parking with Double = js.native
+      /* 26 */ val Parking: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Parking & Double = js.native
       
-      /* 27 */ val Pharmacy: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Pharmacy with Double = js.native
+      /* 27 */ val Pharmacy: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Pharmacy & Double = js.native
       
-      /* 28 */ val Police: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Police with Double = js.native
+      /* 28 */ val Police: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Police & Double = js.native
       
-      /* 29 */ val PostOffice: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.PostOffice with Double = js.native
+      /* 29 */ val PostOffice: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.PostOffice & Double = js.native
       
-      /* 30 */ val PublicTransport: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.PublicTransport with Double = js.native
+      /* 30 */ val PublicTransport: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.PublicTransport & Double = js.native
       
-      /* 31 */ val Restaurant: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Restaurant with Double = js.native
+      /* 31 */ val Restaurant: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Restaurant & Double = js.native
       
-      /* 32 */ val Restroom: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Restroom with Double = js.native
+      /* 32 */ val Restroom: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Restroom & Double = js.native
       
-      /* 33 */ val School: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.School with Double = js.native
+      /* 33 */ val School: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.School & Double = js.native
       
-      /* 34 */ val Stadium: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Stadium with Double = js.native
+      /* 34 */ val Stadium: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Stadium & Double = js.native
       
-      /* 35 */ val Store: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Store with Double = js.native
+      /* 35 */ val Store: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Store & Double = js.native
       
-      /* 36 */ val Theater: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Theater with Double = js.native
+      /* 36 */ val Theater: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Theater & Double = js.native
       
-      /* 37 */ val University: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.University with Double = js.native
+      /* 37 */ val University: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.University & Double = js.native
       
-      /* 38 */ val Winery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Winery with Double = js.native
+      /* 38 */ val Winery: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Winery & Double = js.native
       
-      /* 39 */ val Zoo: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Zoo with Double = js.native
+      /* 39 */ val Zoo: typings.appleMapkitJsBrowser.mapkit.PointOfInterestCategory.Zoo & Double = js.native
     }
     
     /**
@@ -667,16 +1048,33 @@ object global {
     @JSGlobal("mapkit.PointOfInterestFilter")
     @js.native
     class PointOfInterestFilter ()
-      extends typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter {
+      
+      /**
+        * Returns a Boolean value that indicates whether the filter excludes the provided point of interest category.
+        */
+      /* CompleteClass */
+      override def excludesCategory(category: PointOfInterestCategory): Boolean = js.native
+      
+      /**
+        * Returns a Boolean value that indicates whether the filter includes the provided point of interest category.
+        */
+      /* CompleteClass */
+      override def includesCategory(category: PointOfInterestCategory): Boolean = js.native
+    }
     object PointOfInterestFilter {
+      
+      @JSGlobal("mapkit.PointOfInterestFilter")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a point of interest filter that excludes categories from a list that you provide.
         */
       /* static member */
-      @JSGlobal("mapkit.PointOfInterestFilter.excluding")
-      @js.native
-      def excluding(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = js.native
+      @scala.inline
+      def excluding(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("excluding")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
       
       /**
         * A filter that excludes all point of interest categories.
@@ -698,9 +1096,8 @@ object global {
         * Creates a point of interest filter that includes categories from a list that you provide.
         */
       /* static member */
-      @JSGlobal("mapkit.PointOfInterestFilter.including")
-      @js.native
-      def including(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = js.native
+      @scala.inline
+      def including(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("including")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
     }
     
     /**
@@ -714,7 +1111,8 @@ object global {
       * @param options Options that you may provide when you create a points of interest search.
       */
     class PointsOfInterestSearch ()
-      extends typings.appleMapkitJsBrowser.mapkit.PointsOfInterestSearch {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.PointsOfInterestSearch {
       def this(options: PointsOfInterestSearchOptions) = this()
     }
     
@@ -724,7 +1122,8 @@ object global {
     @JSGlobal("mapkit.PolygonOverlay")
     @js.native
     class PolygonOverlay protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.PolygonOverlay {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.PolygonOverlay {
       /**
         * Creates a polygon overlay with an array of points and style options.
         *
@@ -744,7 +1143,8 @@ object global {
     @JSGlobal("mapkit.PolylineOverlay")
     @js.native
     class PolylineOverlay protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.PolylineOverlay {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.PolylineOverlay {
       /**
         * Creates a polyline overlay with coordinate points and style options.
         *
@@ -767,7 +1167,8 @@ object global {
       * @param options Options that you may provide when creating a search object.
       */
     class Search ()
-      extends typings.appleMapkitJsBrowser.mapkit.Search {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Search {
       def this(options: SearchConstructorOptions) = this()
     }
     
@@ -781,8 +1182,87 @@ object global {
       * Creates and initializes a style object.
       */
     class Style ()
-      extends typings.appleMapkitJsBrowser.mapkit.Style {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.Style {
       def this(options: StyleConstructorOptions) = this()
+      
+      /**
+        * The fill color of a shape.
+        */
+      /* CompleteClass */
+      var fillColor: String = js.native
+      
+      /**
+        * The opacity of the fill color.
+        */
+      /* CompleteClass */
+      var fillOpacity: Double = js.native
+      
+      /**
+        * A rule for determining whether a point is inside or outside a polygon.
+        */
+      /* CompleteClass */
+      var fillRule: String = js.native
+      
+      /**
+        * The style to use when drawing line endings.
+        */
+      /* CompleteClass */
+      var lineCap: String = js.native
+      
+      /**
+        * An array of line and gap lengths, used to create a dashed line.
+        */
+      /* CompleteClass */
+      var lineDash: js.Array[Double] = js.native
+      
+      /**
+        * The number of CSS pixels to offset drawing of a line's dash pattern.
+        */
+      /* CompleteClass */
+      var lineDashOffset: Double = js.native
+      
+      /**
+        * The gradient to apply along the line.
+        */
+      /* CompleteClass */
+      var lineGradient: typings.appleMapkitJsBrowser.mapkit.LineGradient = js.native
+      
+      /**
+        * The style to use when drawing joins between line segments.
+        */
+      /* CompleteClass */
+      var lineJoin: String = js.native
+      
+      /**
+        * The width of a line's stroke, in CSS pixels.
+        */
+      /* CompleteClass */
+      var lineWidth: Double = js.native
+      
+      /**
+        * The stroke color of a line.
+        */
+      /* CompleteClass */
+      var strokeColor: String = js.native
+      
+      /**
+        * The unit distance along the line where a stroke ends.
+        */
+      /* CompleteClass */
+      var strokeEnd: Double = js.native
+      
+      /**
+        * The opacity of the stroke color.
+        */
+      /* CompleteClass */
+      var strokeOpacity: Double = js.native
+      
+      /**
+        * The unit distance along the line where a stroke begins.
+        */
+      /* CompleteClass */
+      var strokeStart: Double = js.native
     }
     
     /**
@@ -791,7 +1271,8 @@ object global {
     @JSGlobal("mapkit.TileOverlay")
     @js.native
     class TileOverlay protected ()
-      extends typings.appleMapkitJsBrowser.mapkit.TileOverlay {
+      extends StObject
+         with typings.appleMapkitJsBrowser.mapkit.TileOverlay {
       /**
         * Creates a tile overlay with a URL template and style options.
         */
@@ -799,6 +1280,44 @@ object global {
       def this(urlTemplate: URLTemplateCallback) = this()
       def this(urlTemplate: String, options: TileOverlayConstructorOptions) = this()
       def this(urlTemplate: URLTemplateCallback, options: TileOverlayConstructorOptions) = this()
+      
+      /**
+        * Custom data used to populate the URL template.
+        */
+      /* CompleteClass */
+      var data: js.Object = js.native
+      
+      /**
+        * Maximum zoom level of the overlay.
+        */
+      /* CompleteClass */
+      var maximumZ: Double = js.native
+      
+      /**
+        * Minimum zoom level of the overlay.
+        */
+      /* CompleteClass */
+      var minimumZ: Double = js.native
+      
+      /**
+        * Opacity level of the overlay.
+        */
+      /* CompleteClass */
+      var opacity: Double = js.native
+      
+      /**
+        * Reloads the tile overlay for the displayed map region with the latest
+        * data values.
+        */
+      /* CompleteClass */
+      override def reload(): Unit = js.native
+      
+      /**
+        * A string, or callback function that returns a string, with a URL that
+        * provides the requested tile.
+        */
+      /* CompleteClass */
+      var urlTemplate: String | URLTemplateCallback = js.native
     }
     
     /**
@@ -809,19 +1328,17 @@ object global {
       * Event as its sole argument.
       * @param thisObject An object set as the this keyword on the listener function.
       */
-    @JSGlobal("mapkit.addEventListener")
-    @js.native
+    @scala.inline
     def addEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit]
-    ): Unit = js.native
-    @JSGlobal("mapkit.addEventListener")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def addEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit],
       thisObject: T
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], thisObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The build string.
@@ -837,31 +1354,24 @@ object global {
       * @param callback A callback function that is required if you provide a URL
       * for the data parameter, and optional otherwise.
       */
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: String): ItemCollection | Error = js.native
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | Error = js.native
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | Error = js.native
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: js.Object): ItemCollection | Error = js.native
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | Error = js.native
-    @JSGlobal("mapkit.importGeoJSON")
-    @js.native
-    def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | Error = js.native
+    @scala.inline
+    def importGeoJSON(data: String): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
+    @scala.inline
+    def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    @scala.inline
+    def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    @scala.inline
+    def importGeoJSON(data: js.Object): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
+    @scala.inline
+    def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    @scala.inline
+    def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
     
     /**
       * Initialize a mapkit object by providing an authorization callback and language.
       */
-    @JSGlobal("mapkit.init")
-    @js.native
-    def init(options: MapKitInitOptions): Unit = js.native
+    @scala.inline
+    def init(options: MapKitInitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * A language ID indicating the selected language.
@@ -887,19 +1397,17 @@ object global {
       * @param listener The callback function to remove.
       * @param thisObject An object set as the this keyword on the listener function.
       */
-    @JSGlobal("mapkit.removeEventListener")
-    @js.native
+    @scala.inline
     def removeEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit]
-    ): Unit = js.native
-    @JSGlobal("mapkit.removeEventListener")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def removeEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit],
       thisObject: T
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], thisObject.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The version of MapKit JS.

@@ -2,13 +2,11 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NullEvent extends StObject {
   
-  var `type`: typings.xstate.typesMod.ActionTypes.NullEvent = js.native
+  var `type`: typings.xstate.typesMod.ActionTypes.NullEvent
 }
 object NullEvent {
   

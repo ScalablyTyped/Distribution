@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Fill extends js.Object {
+trait Fill extends StObject {
   
   /**
     * Color filled in this element.
@@ -15,7 +14,7 @@ trait Fill extends js.Object {
     * '#000'
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.fill
     */
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
   /**
     * Width of stroke.
@@ -23,7 +22,7 @@ trait Fill extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.lineWidth
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of shadow.
@@ -33,7 +32,7 @@ trait Fill extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * color of shadow.
@@ -43,7 +42,7 @@ trait Fill extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowColor
     */
-  var shadowColor: js.UndefOr[Double] = js.native
+  var shadowColor: js.UndefOr[Double] = js.undefined
   
   /**
     * X offset of shadow.
@@ -53,7 +52,7 @@ trait Fill extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Y offset of shadow.
@@ -63,7 +62,7 @@ trait Fill extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Color of stroke.
@@ -71,7 +70,7 @@ trait Fill extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_bezierCurve.style.stroke
     */
-  var stroke: js.UndefOr[String] = js.native
+  var stroke: js.UndefOr[String] = js.undefined
 }
 object Fill {
   
@@ -82,60 +81,48 @@ object Fill {
   }
   
   @scala.inline
-  implicit class FillOps[Self <: Fill] (val x: Self) extends AnyVal {
+  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFill(value: String): Self = this.set("fill", value.asInstanceOf[js.Any])
+    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     @scala.inline
-    def deleteFill: Self = this.set("fill", js.undefined)
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineWidth(value: Double): Self = this.set("lineWidth", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deleteLineWidth: Self = this.set("lineWidth", js.undefined)
+    def setShadowColor(value: Double): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: Double): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
-    
-    @scala.inline
-    def setStroke(value: String): Self = this.set("stroke", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteStroke: Self = this.set("stroke", js.undefined)
+    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

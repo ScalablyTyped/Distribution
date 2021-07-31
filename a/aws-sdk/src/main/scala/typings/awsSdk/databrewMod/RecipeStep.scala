@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipeStep extends StObject {
   
   /**
     * The particular action to be performed in the recipe step.
     */
-  var Action: RecipeAction = js.native
+  var Action: RecipeAction
   
   /**
     * One or more conditions that must be met, in order for the recipe step to succeed.  All of the conditions in the array must be met. In other words, all of the conditions must be combined using a logical AND operation. 
     */
-  var ConditionExpressions: js.UndefOr[ConditionExpressionList] = js.native
+  var ConditionExpressions: js.UndefOr[ConditionExpressionList] = js.undefined
 }
 object RecipeStep {
   

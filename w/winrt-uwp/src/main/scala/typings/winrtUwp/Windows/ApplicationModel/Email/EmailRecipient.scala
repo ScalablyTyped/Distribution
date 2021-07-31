@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email recipient. */
-@js.native
 trait EmailRecipient extends StObject {
   
   /** Gets or sets the address of the email recipient. */
-  var address: String = js.native
+  var address: String
   
   /** Gets or sets the name of the email recipient. */
-  var name: String = js.native
+  var name: String
 }
 object EmailRecipient {
   

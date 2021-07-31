@@ -10,9 +10,9 @@ Polyfill for the dialog element
 | ------------------ | :-------------: |
 | Full name          | dialog-polyfill |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 116 |
-| # downloads        | 2538259 |
+| # releases         | 8 |
+| # dependents       | 123 |
+| # downloads        | 2947270 |
 | # stars            | 4 |
 
 ## Links

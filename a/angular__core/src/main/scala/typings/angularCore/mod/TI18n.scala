@@ -2,13 +2,11 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Store information for the i18n translation block.
   */
-@js.native
 trait TI18n extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait TI18n extends StObject {
     *
     * NOTE: The ICU anchors are filled in with ICU Update OpCode.
     */
-  var create: I18nCreateOpCodes = js.native
+  var create: I18nCreateOpCodes
   
   /**
     * A set of OpCodes which will be executed on each change detection to determine if any changes to
     * DOM are required.
     */
-  var update: I18nUpdateOpCodes = js.native
+  var update: I18nUpdateOpCodes
 }
 object TI18n {
   

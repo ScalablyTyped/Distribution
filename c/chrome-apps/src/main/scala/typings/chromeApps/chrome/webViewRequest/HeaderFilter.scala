@@ -2,35 +2,33 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderFilter extends StObject {
   
   /** Matches if the header name contains all of the specified strings. */
-  var nameContains: js.UndefOr[String | js.Array[String]] = js.native
+  var nameContains: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Matches if the header name is equal to the specified string. */
-  var nameEquals: js.UndefOr[String] = js.native
+  var nameEquals: js.UndefOr[String] = js.undefined
   
   /** Matches if the header name starts with the specified string. */
-  var namePrefix: js.UndefOr[String] = js.native
+  var namePrefix: js.UndefOr[String] = js.undefined
   
   /** Matches if the header name ends with the specified string. */
-  var nameSuffix: js.UndefOr[String] = js.native
+  var nameSuffix: js.UndefOr[String] = js.undefined
   
   /** Matches if the header value contains all of the specified strings. */
-  var valueContains: js.UndefOr[String | js.Array[String]] = js.native
+  var valueContains: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** Matches if the header value is equal to the specified string. */
-  var valueEquals: js.UndefOr[String] = js.native
+  var valueEquals: js.UndefOr[String] = js.undefined
   
   /** Matches if the header value starts with the specified string. */
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
   
   /** Matches if the header value ends with the specified string. */
-  var valueSuffix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.undefined
 }
 object HeaderFilter {
   

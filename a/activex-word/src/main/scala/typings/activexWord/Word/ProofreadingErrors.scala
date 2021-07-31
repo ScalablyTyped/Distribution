@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProofreadingErrors extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: Double): Range = js.native
+  def Item(Index: Double): Range
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: WdProofreadingErrorType = js.native
+  val Type: WdProofreadingErrorType
   
   @JSName("Word.ProofreadingErrors_typekey")
-  var WordDotProofreadingErrors_typekey: ProofreadingErrors = js.native
+  var WordDotProofreadingErrors_typekey: ProofreadingErrors
 }
 object ProofreadingErrors {
   

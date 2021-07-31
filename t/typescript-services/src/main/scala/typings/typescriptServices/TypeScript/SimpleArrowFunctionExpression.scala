@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleArrowFunctionExpression extends AST {
+trait SimpleArrowFunctionExpression
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var expression: AST = js.native
+  var expression: AST
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
 }
 object SimpleArrowFunctionExpression {
   

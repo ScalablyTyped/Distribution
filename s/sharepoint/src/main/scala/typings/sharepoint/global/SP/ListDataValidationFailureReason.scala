@@ -2,7 +2,6 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.ListDataValidationFailureReason")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListDataValidationFailureReason extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.sharepoint.SP.ListDataValidationFailureReason with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.sharepoint.SP.ListDataValidationFailureReason & Double] = js.native
   
-  /* 0 */ val dataFailure: typings.sharepoint.SP.ListDataValidationFailureReason.dataFailure with Double = js.native
+  /* 0 */ val dataFailure: typings.sharepoint.SP.ListDataValidationFailureReason.dataFailure & Double = js.native
   
-  /* 1 */ val formulaError: typings.sharepoint.SP.ListDataValidationFailureReason.formulaError with Double = js.native
+  /* 1 */ val formulaError: typings.sharepoint.SP.ListDataValidationFailureReason.formulaError & Double = js.native
 }

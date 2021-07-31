@@ -2,15 +2,13 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdStartedParam extends StObject {
   
-  var creativetype: String = js.native
+  var creativetype: String
   
-  var tag: String = js.native
+  var tag: String
 }
 object AdStartedParam {
   

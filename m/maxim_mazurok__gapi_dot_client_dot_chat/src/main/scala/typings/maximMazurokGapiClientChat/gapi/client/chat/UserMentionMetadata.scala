@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserMentionMetadata extends StObject {
   
   /** The type of user mention. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The user mentioned. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object UserMentionMetadata {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v1beta1aMod.pubsubV1beta1a
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A subscription resource.
   */
-@js.native
 trait SchemaSubscription extends StObject {
   
   /**
@@ -28,23 +26,23 @@ trait SchemaSubscription extends StObject {
     * subscriber has not yet Acked or Nacked), the Pub/Sub system will not
     * deliver that message to another pull subscriber (on a best-effort basis).
     */
-  var ackDeadlineSeconds: js.UndefOr[Double] = js.native
+  var ackDeadlineSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of the subscription.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If push delivery is used with this subscription, this field is used to
     * configure it.
     */
-  var pushConfig: js.UndefOr[SchemaPushConfig] = js.native
+  var pushConfig: js.UndefOr[SchemaPushConfig] = js.undefined
   
   /**
     * The name of the topic from which this subscription is receiving messages.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaSubscription {
   

@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ReportToolbarClientSideEvents.ItemValueChanged event.
   */
-@js.native
-trait ASPxClientToolbarItemValueChangedEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientToolbarItemValueChangedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Provides access to the toolbar's value editor on the client.
     */
-  var editor: ASPxClientControl = js.native
+  var editor: ASPxClientControl
   
   /**
     * Gets the menu item object related to the event.
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
 }
 object ASPxClientToolbarItemValueChangedEventArgs {
   

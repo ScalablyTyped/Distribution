@@ -9,7 +9,6 @@ import typings.blueprintjsCore.propsMod.IIntentProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
@@ -45,22 +44,22 @@ object tooltipMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITooltipProps
-    extends IPopoverSharedProps
+    extends StObject
+       with IPopoverSharedProps
        with IIntentProps {
     
     /**
       * The content that will be displayed inside of the tooltip.
       */
-    var content: Element | String = js.native
+    var content: Element | String
     
     /**
       * The kind of hover interaction that triggers the display of the tooltip.
       * Tooltips do not support click interactions.
       * @default PopoverInteractionKind.HOVER_TARGET_ONLY
       */
-    var interactionKind: js.UndefOr[hover | `hover-target`] = js.native
+    var interactionKind: js.UndefOr[hover | `hover-target`] = js.undefined
   }
   object ITooltipProps {
     

@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingContentUpdate extends StObject {
   
   // Date and time the pending binary operation was queued in UTC time. Read-only.
-  var queuedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var queuedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PendingContentUpdate {
   

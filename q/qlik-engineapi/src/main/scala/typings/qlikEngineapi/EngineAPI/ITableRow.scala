@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableRow...
   */
-@js.native
 trait ITableRow extends StObject {
   
   /**
     * Array of field values [{qText, qIsNumeric, qNumber},..]
     */
-  var vqValue: js.Array[IFieldValue] = js.native
+  var vqValue: js.Array[IFieldValue]
 }
 object ITableRow {
   

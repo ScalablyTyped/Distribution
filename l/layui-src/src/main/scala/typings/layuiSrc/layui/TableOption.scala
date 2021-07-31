@@ -11,23 +11,21 @@ import typings.layuiSrc.layuiSrcStrings.sm
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOption extends StObject {
   
-  var autoSort: js.UndefOr[Boolean] = js.native
+  var autoSort: js.UndefOr[Boolean] = js.undefined
   
-  var cellMinWidth: js.UndefOr[Double] = js.native
+  var cellMinWidth: js.UndefOr[Double] = js.undefined
   
-  var cols: js.UndefOr[js.Array[js.Array[TableColumnOption]]] = js.native
+  var cols: js.UndefOr[js.Array[js.Array[TableColumnOption]]] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var defaultToolbar: js.UndefOr[js.Array[String | Icon]] = js.native
+  var defaultToolbar: js.UndefOr[js.Array[String | Icon]] = js.undefined
   
   var done: js.UndefOr[
     js.Function3[
@@ -36,57 +34,57 @@ trait TableOption extends StObject {
       /* count */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   // 基础参数
-  var elem: js.UndefOr[String | HTMLElement] = js.native
+  var elem: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var even: js.UndefOr[Boolean] = js.native
+  var even: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var initSort: js.UndefOr[Field] = js.native
+  var initSort: js.UndefOr[Field] = js.undefined
   
   // PageOptions时排除jump和elem
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var limits: js.UndefOr[js.Array[Double]] = js.native
+  var limits: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
   // 异步数据接口
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[Boolean | PageOptions] = js.native
+  var page: js.UndefOr[Boolean | PageOptions] = js.undefined
   
-  var parseData: js.UndefOr[js.Function1[/* res */ js.Object, TableResponse]] = js.native
+  var parseData: js.UndefOr[js.Function1[/* res */ js.Object, TableResponse]] = js.undefined
   
-  var request: js.UndefOr[TableRequestRename] = js.native
+  var request: js.UndefOr[TableRequestRename] = js.undefined
   
-  var response: js.UndefOr[TableResponseRename] = js.native
+  var response: js.UndefOr[TableResponseRename] = js.undefined
   
-  var size: js.UndefOr[sm | lg] = js.native
+  var size: js.UndefOr[sm | lg] = js.undefined
   
-  var skin: js.UndefOr[line | row | nob] = js.native
+  var skin: js.UndefOr[line | row | nob] = js.undefined
   
-  var text: js.UndefOr[None] = js.native
+  var text: js.UndefOr[None] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var toolbar: js.UndefOr[String | HTMLElement | Boolean] = js.native
+  var toolbar: js.UndefOr[String | HTMLElement | Boolean] = js.undefined
   
-  var totalRow: js.UndefOr[Boolean] = js.native
+  var totalRow: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String | Null] = js.native
+  var url: js.UndefOr[String | Null] = js.undefined
   
-  var where: js.UndefOr[js.Object | Null] = js.native
+  var where: js.UndefOr[js.Object | Null] = js.undefined
   
   // 'full-100'
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object TableOption {
   

@@ -17,7 +17,6 @@ import typings.reactstrap.reactstrapStrings.static
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
@@ -29,64 +28,64 @@ object modalMod {
   
   type Modal = Component[ModalProps, js.Object, js.Any]
   
-  @js.native
   trait ModalProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backdrop: js.UndefOr[Boolean | static] = js.native
+    var backdrop: js.UndefOr[Boolean | static] = js.undefined
     
-    var backdropClassName: js.UndefOr[String] = js.native
+    var backdropClassName: js.UndefOr[String] = js.undefined
     
-    var backdropTransition: js.UndefOr[FadeProps] = js.native
+    var backdropTransition: js.UndefOr[FadeProps] = js.undefined
     
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String | HTMLElement | RefObject[HTMLElement]] = js.native
+    var container: js.UndefOr[String | HTMLElement | RefObject[HTMLElement]] = js.undefined
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var external: js.UndefOr[ReactNode] = js.native
+    var external: js.UndefOr[ReactNode] = js.undefined
     
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var labelledBy: js.UndefOr[String] = js.native
+    var labelledBy: js.UndefOr[String] = js.undefined
     
-    var modalClassName: js.UndefOr[String] = js.native
+    var modalClassName: js.UndefOr[String] = js.undefined
     
-    var modalTransition: js.UndefOr[FadeProps] = js.native
+    var modalTransition: js.UndefOr[FadeProps] = js.undefined
     
-    var onClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var returnFocusAfterClose: js.UndefOr[Boolean] = js.native
+    var returnFocusAfterClose: js.UndefOr[Boolean] = js.undefined
     
-    var scrollable: js.UndefOr[Boolean] = js.native
+    var scrollable: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var toggle: js.UndefOr[KeyboardEventHandler[_] | MouseEventHandler[_]] = js.native
+    var toggle: js.UndefOr[KeyboardEventHandler[js.Any] | MouseEventHandler[js.Any]] = js.undefined
     
-    var unmountOnClose: js.UndefOr[Boolean] = js.native
+    var unmountOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var wrapClassName: js.UndefOr[String] = js.native
+    var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var zIndex: js.UndefOr[Double | String] = js.native
+    var zIndex: js.UndefOr[Double | String] = js.undefined
   }
   object ModalProps {
     
@@ -244,7 +243,7 @@ object modalMod {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setToggle(value: KeyboardEvent[_] | (MouseEvent[_, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      def setToggle(value: KeyboardEvent[js.Any] | (MouseEvent[js.Any, NativeMouseEvent]) => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)

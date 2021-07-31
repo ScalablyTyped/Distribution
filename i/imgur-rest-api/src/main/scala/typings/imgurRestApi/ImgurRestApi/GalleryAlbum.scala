@@ -2,25 +2,25 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GalleryAlbum extends GalleryItem {
+trait GalleryAlbum
+  extends StObject
+     with GalleryItem {
   
-  var cover: String = js.native
+  var cover: String
   
-  var cover_height: Double = js.native
+  var cover_height: Double
   
-  var cover_width: Double = js.native
+  var cover_width: Double
   
-  var images: js.Array[Image] = js.native
+  var images: js.Array[Image]
   
-  var images_count: Double = js.native
+  var images_count: Double
   
-  var layout: String = js.native
+  var layout: String
   
-  var privacy: String = js.native
+  var privacy: String
 }
 object GalleryAlbum {
   

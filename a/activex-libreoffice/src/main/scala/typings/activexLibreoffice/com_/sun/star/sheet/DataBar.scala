@@ -5,42 +5,42 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataBar extends XConditionEntry {
+trait DataBar
+  extends StObject
+     with XConditionEntry {
   
-  var AxisColor: Color = js.native
+  var AxisColor: Color
   
   /** See {@link com.sun.star.sheet.DataBarAxis} for possible values */
-  var AxisPosition: Double = js.native
+  var AxisPosition: Double
   
-  var Color: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  var Color: typings.activexLibreoffice.com_.sun.star.util.Color
   
-  var DataBarEntries: SafeArray[XDataBarEntry] = js.native
+  var DataBarEntries: SafeArray[XDataBarEntry]
   
   /**
     * Maximum databar length in percent of cell width.
     *
     * Allowed values are (0, 1000) but larger than MinimumLength.
     */
-  var MaximumLength: Double = js.native
+  var MaximumLength: Double
   
   /**
     * Minimum databar length in percent of cell width.
     *
     * Allowed values are [0, 100) but smaller than MaximumLength.
     */
-  var MinimumLength: Double = js.native
+  var MinimumLength: Double
   
-  var NegativeColor: Color = js.native
+  var NegativeColor: Color
   
-  var ShowValue: Boolean = js.native
+  var ShowValue: Boolean
   
-  var UseGradient: Boolean = js.native
+  var UseGradient: Boolean
   
-  var UseNegativeColor: Boolean = js.native
+  var UseNegativeColor: Boolean
 }
 object DataBar {
   

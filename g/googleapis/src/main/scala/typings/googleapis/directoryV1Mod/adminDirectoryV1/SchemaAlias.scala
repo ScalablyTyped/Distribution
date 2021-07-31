@@ -2,40 +2,38 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Alias object in Directory API.
   */
-@js.native
 trait SchemaAlias extends StObject {
   
   /**
     * A alias email
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Unique id of the group (Read-only) Unique id of the user (Read-only)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Group&#39;s primary email (Read-only) User&#39;s primary email
     * (Read-only)
     */
-  var primaryEmail: js.UndefOr[String] = js.native
+  var primaryEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaAlias {
   

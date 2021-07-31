@@ -10,9 +10,9 @@ construct pipes of streams of events
 | ------------------ | :-------------: |
 | Full name          | event-stream |
 | Keywords           | stream, map, flatmap, filter, split, join, merge, replace |
-| # releases         | 5 |
-| # dependents       | 1551 |
-| # downloads        | 86859534 |
+| # releases         | 0 |
+| # dependents       | 1569 |
+| # downloads        | 96391451 |
 | # stars            | 102 |
 
 ## Links

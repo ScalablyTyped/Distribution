@@ -2,26 +2,24 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewFrame extends StObject {
   
   /**
     * The number of columns to include in the view frame, beginning with the StartColumnIndex value and ignoring any columns in the HiddenColumns list.
     */
-  var ColumnRange: js.UndefOr[typings.awsSdk.databrewMod.ColumnRange] = js.native
+  var ColumnRange: js.UndefOr[typings.awsSdk.databrewMod.ColumnRange] = js.undefined
   
   /**
     * A list of columns to hide in the view frame.
     */
-  var HiddenColumns: js.UndefOr[HiddenColumnList] = js.native
+  var HiddenColumns: js.UndefOr[HiddenColumnList] = js.undefined
   
   /**
     * The starting index for the range of columns to return in the view frame.
     */
-  var StartColumnIndex: typings.awsSdk.databrewMod.StartColumnIndex = js.native
+  var StartColumnIndex: typings.awsSdk.databrewMod.StartColumnIndex
 }
 object ViewFrame {
   

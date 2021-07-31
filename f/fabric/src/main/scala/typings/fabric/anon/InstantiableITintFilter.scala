@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.ITintFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableITintFilter
-  extends Instantiable0[ITintFilter]
+  extends StObject
+     with Instantiable0[ITintFilter]
      with Instantiable1[/* options */ Opacity, ITintFilter] {
   
   /**

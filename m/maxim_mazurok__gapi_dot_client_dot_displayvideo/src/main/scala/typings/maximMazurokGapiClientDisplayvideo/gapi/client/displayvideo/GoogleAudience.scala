@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAudience extends StObject {
   
   /** Output only. The display name of the Google audience. . */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the Google audience. Assigned by the system. */
-  var googleAudienceId: js.UndefOr[String] = js.native
+  var googleAudienceId: js.UndefOr[String] = js.undefined
   
   /** Output only. The type of Google audience. . */
-  var googleAudienceType: js.UndefOr[String] = js.native
+  var googleAudienceType: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the google audience. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleAudience {
   

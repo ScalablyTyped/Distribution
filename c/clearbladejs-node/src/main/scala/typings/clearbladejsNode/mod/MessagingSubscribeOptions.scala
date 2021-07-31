@@ -2,15 +2,13 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingSubscribeOptions extends StObject {
   
-  var qos: js.UndefOr[MessagingQOS] = js.native
+  var qos: js.UndefOr[MessagingQOS] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object MessagingSubscribeOptions {
   

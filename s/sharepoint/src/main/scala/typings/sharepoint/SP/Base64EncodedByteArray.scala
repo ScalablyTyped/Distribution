@@ -2,21 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base64EncodedByteArray extends StObject {
   
-  def append(b: js.Any): Unit = js.native
+  def append(b: js.Any): Unit
   
-  def getByteAt(index: Double): js.Any = js.native
+  def getByteAt(index: Double): js.Any
   
-  def get_length(): Double = js.native
+  def get_length(): Double
   
-  def setByteAt(index: Double, b: js.Any): Unit = js.native
+  def setByteAt(index: Double, b: js.Any): Unit
   
-  def toBase64String(): String = js.native
+  def toBase64String(): String
 }
 object Base64EncodedByteArray {
   

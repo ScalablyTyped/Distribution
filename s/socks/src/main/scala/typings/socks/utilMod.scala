@@ -7,19 +7,30 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
+  
+  @JSImport("socks/typings/common/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Error wrapper for SocksClient
     */
   @JSImport("socks/typings/common/util", "SocksClientError")
   @js.native
-  class SocksClientError protected () extends Error {
+  class SocksClientError protected ()
+    extends StObject
+       with Error {
     def this(message: String, options: SocksClientChainOptions) = this()
     def this(message: String, options: SocksClientOptions) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var options: SocksClientOptions | SocksClientChainOptions = js.native
   }
@@ -28,9 +39,8 @@ object utilMod {
     * Shuffles a given array.
     * @param array The array to shuffle.
     */
-  @JSImport("socks/typings/common/util", "shuffleArray")
-  @js.native
-  def shuffleArray(array: js.Array[_]): Unit = js.native
+  @scala.inline
+  def shuffleArray(array: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffleArray")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) with (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]:? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
+  type RequireOnlyOne[T, Keys /* <: /* keyof T */ String */] = (Pick[T, Exclude[/* keyof T */ String, Keys]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in Keys ]:? std.Required<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
 }

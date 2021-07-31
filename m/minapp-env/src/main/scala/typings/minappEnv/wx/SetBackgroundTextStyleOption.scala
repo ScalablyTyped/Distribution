@@ -4,27 +4,25 @@ import typings.minappEnv.minappEnvStrings.dark
 import typings.minappEnv.minappEnvStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBackgroundTextStyleOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetBackgroundTextStyleCompleteCallback] = js.native
+  var complete: js.UndefOr[SetBackgroundTextStyleCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetBackgroundTextStyleFailCallback] = js.native
+  var fail: js.UndefOr[SetBackgroundTextStyleFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetBackgroundTextStyleSuccessCallback] = js.native
+  var success: js.UndefOr[SetBackgroundTextStyleSuccessCallback] = js.undefined
   
   /** 下拉背景字体、loading 图的样式。
     *
     * 可选值：
     * - 'dark': dark 样式;
     * - 'light': light 样式; */
-  var textStyle: dark | light = js.native
+  var textStyle: dark | light
 }
 object SetBackgroundTextStyleOption {
   

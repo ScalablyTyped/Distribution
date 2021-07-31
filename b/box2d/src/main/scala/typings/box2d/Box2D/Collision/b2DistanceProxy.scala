@@ -4,10 +4,8 @@ import typings.box2d.Box2D.Collision.Shapes.b2Shape
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2DistanceProxy extends StObject {
   
   /**
@@ -15,48 +13,48 @@ trait b2DistanceProxy extends StObject {
     * @param d Direction to look for the supporting vertex.
     * @return Supporting vertex index.
     **/
-  def GetSupport(d: b2Vec2): Double = js.native
+  def GetSupport(d: b2Vec2): Double
   
   /**
     * Get the supporting vertex in the given direction.
     * @param d Direction to look for the supporting vertex.
     * @return Supporting vertex.
     **/
-  def GetSupportVertex(d: b2Vec2): b2Vec2 = js.native
+  def GetSupportVertex(d: b2Vec2): b2Vec2
   
   /**
     * Get a vertex by index.  Used by b2Distance.
     * @param index Vetex's index.
     * @return Vertex at the given index.
     **/
-  def GetVertex(index: Double): b2Vec2 = js.native
+  def GetVertex(index: Double): b2Vec2
   
   /**
     * Get the vertex count.
     * @return The number of vertices. (m_vertices.length)
     **/
-  def GetVertexCount(): Double = js.native
+  def GetVertexCount(): Double
   
   /**
     * Initialize the proxy using the given shape. The shape must remain in scope while the proxy is in use.
     * @param shape Shape to initialize the distance proxy.
     **/
-  def Set(shape: b2Shape): Unit = js.native
+  def Set(shape: b2Shape): Unit
   
   /**
     * Count
     **/
-  var m_count: Double = js.native
+  var m_count: Double
   
   /**
     * Radius
     **/
-  var m_radius: Double = js.native
+  var m_radius: Double
   
   /**
     * Verticies
     **/
-  var m_vertices: js.Array[b2Vec2] = js.native
+  var m_vertices: js.Array[b2Vec2]
 }
 object b2DistanceProxy {
   

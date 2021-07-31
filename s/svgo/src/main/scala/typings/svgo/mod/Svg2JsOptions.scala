@@ -2,29 +2,27 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Svg2JsOptions extends StObject {
   
   /** @default true */
-  var lowercase: js.UndefOr[Boolean] = js.native
+  var lowercase: js.UndefOr[Boolean] = js.undefined
   
   /** @default true */
-  var normalize: js.UndefOr[Boolean] = js.native
+  var normalize: js.UndefOr[Boolean] = js.undefined
   
   /** @default true */
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
   
   /** @default true */
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /** @default false */
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
   /** @default true */
-  var xmlns: js.UndefOr[Boolean] = js.native
+  var xmlns: js.UndefOr[Boolean] = js.undefined
 }
 object Svg2JsOptions {
   

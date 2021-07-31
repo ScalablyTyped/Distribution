@@ -8,16 +8,15 @@ import typings.backboneMarionette.mod.Behavior
 import typings.backboneMarionette.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictindex
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior] = js.native
+    var behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]
   }
   object Dictindex {
     
@@ -36,17 +35,18 @@ object anon {
   }
   
   @js.native
-  trait Instantiable[TView /* <: View[TModel] */, TModel /* <: Model[_, ModelSetOptions, js.Object] */]
-    extends Instantiable1[/* args (repeated) */ js.Any, TView]
+  trait Instantiable[TView /* <: View[TModel] */, TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, TView]
   
   @js.native
-  trait InstantiableView[TModel /* <: Model[_, ModelSetOptions, js.Object] */]
-    extends Instantiable1[/* args (repeated) */ js.Any, typings.backbone.mod.View[TModel]]
+  trait InstantiableView[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, typings.backbone.mod.View[TModel]]
   
-  @js.native
   trait PreventRender extends StObject {
     
-    var preventRender: Boolean = js.native
+    var preventRender: Boolean
   }
   object PreventRender {
     

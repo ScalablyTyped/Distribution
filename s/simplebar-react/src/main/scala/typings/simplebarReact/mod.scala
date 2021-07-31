@@ -5,7 +5,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,13 @@ object mod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
-  trait Props extends HTMLAttributes[HTMLElement] {
+  trait Props
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
     
-    var scrollableNodeProps: js.UndefOr[js.Object] = js.native
+    var scrollableNodeProps: js.UndefOr[js.Object] = js.undefined
   }
   object Props {
     

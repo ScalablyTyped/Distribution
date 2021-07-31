@@ -8,7 +8,6 @@ import typings.mockjs.mockjsStrings.upper
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -56,32 +55,68 @@ object mod {
   type B = Boolean
   
   // Interface for global namespace 'Mockjs'
-  @js.native
   trait Mockjs extends StObject {
     
-    var Random: MockjsRandom = js.native
+    var Random: MockjsRandom
     
-    def mock(rurl: S, rtype: S, template: js.Any): Mockjs = js.native
-    def mock(rurl: S, template: js.Any): Mockjs = js.native
-    def mock(rurl: RegExp, rtype: S, template: js.Any): Mockjs = js.native
-    def mock(rurl: RegExp, template: js.Any): Mockjs = js.native
-    def mock(template: js.Any): js.Any = js.native
+    def mock(rurl: S, rtype: S, template: js.Any): Mockjs
+    def mock(rurl: S, template: js.Any): Mockjs
+    def mock(rurl: RegExp, rtype: S, template: js.Any): Mockjs
+    def mock(rurl: RegExp, template: js.Any): Mockjs
+    def mock(template: js.Any): js.Any
     @JSName("mock")
-    var mock_Original: MockjsMock = js.native
+    var mock_Original: MockjsMock
     
-    def setup(settings: MockjsSetupSettings): Unit = js.native
+    def setup(settings: MockjsSetupSettings): Unit
     @JSName("setup")
-    var setup_Original: MockjsSetup = js.native
+    var setup_Original: MockjsSetup
     
-    def toJSONSchema(template: js.Any): MockjsToJSONSchemaRs = js.native
+    def toJSONSchema(template: js.Any): MockjsToJSONSchemaRs
     @JSName("toJSONSchema")
-    var toJSONSchema_Original: MockjsToJSONSchema = js.native
+    var toJSONSchema_Original: MockjsToJSONSchema
     
-    def valid(template: js.Any, data: js.Any): js.Array[MockjsValidRsItem] = js.native
+    def valid(template: js.Any, data: js.Any): js.Array[MockjsValidRsItem]
     @JSName("valid")
-    var valid_Original: MockjsValid = js.native
+    var valid_Original: MockjsValid
     
-    var version: Double = js.native
+    var version: Double
+  }
+  object Mockjs {
+    
+    @scala.inline
+    def apply(
+      Random: MockjsRandom,
+      mock: MockjsMock,
+      setup: /* settings */ MockjsSetupSettings => Unit,
+      toJSONSchema: /* template */ js.Any => MockjsToJSONSchemaRs,
+      valid: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem],
+      version: Double
+    ): Mockjs = {
+      val __obj = js.Dynamic.literal(Random = Random.asInstanceOf[js.Any], mock = mock.asInstanceOf[js.Any], setup = js.Any.fromFunction1(setup), toJSONSchema = js.Any.fromFunction1(toJSONSchema), valid = js.Any.fromFunction2(valid), version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Mockjs]
+    }
+    
+    @scala.inline
+    implicit class MockjsMutableBuilder[Self <: Mockjs] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMock(value: MockjsMock): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRandom(value: MockjsRandom): Self = StObject.set(x, "Random", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSetup(value: /* settings */ MockjsSetupSettings => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setToJSONSchema(value: /* template */ js.Any => MockjsToJSONSchemaRs): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setValid(value: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem]): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
   // Mockjs.mock()
@@ -100,7 +135,7 @@ object mod {
   // see https://github.com/nuysoft/Mock/wiki/Mock.Random
   @js.native
   trait MockjsRandom
-    extends MockjsRandomExtendOption
+    extends StObject
        with MockjsRandomBasic
        with MockjsRandomDate
        with MockjsRandomImage
@@ -110,7 +145,8 @@ object mod {
        with MockjsRandomMiscellaneous
        with MockjsRandomName
        with MockjsRandomText
-       with MockjsRandomWeb {
+       with MockjsRandomWeb
+       with MockjsRandomExtendOption {
     
     // Random.extend
     def extend(extendOption: MockjsRandomExtendOption): MockjsRandom = js.native
@@ -163,83 +199,77 @@ object mod {
     
     // Random.float
     def float(): N = js.native
-    def float(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      dmin: js.UndefOr[scala.Nothing],
-      dmax: N
-    ): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dmin: N): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dmin: N, dmax: N): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: N): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: N, dmin: js.UndefOr[scala.Nothing], dmax: N): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: N, dmin: N): N = js.native
-    def float(min: js.UndefOr[scala.Nothing], max: N, dmin: N, dmax: N): N = js.native
+    def float(min: Unit, max: Unit, dmin: Unit, dmax: N): N = js.native
+    def float(min: Unit, max: Unit, dmin: N): N = js.native
+    def float(min: Unit, max: Unit, dmin: N, dmax: N): N = js.native
+    def float(min: Unit, max: N): N = js.native
+    def float(min: Unit, max: N, dmin: Unit, dmax: N): N = js.native
+    def float(min: Unit, max: N, dmin: N): N = js.native
+    def float(min: Unit, max: N, dmin: N, dmax: N): N = js.native
     def float(min: N): N = js.native
-    def float(min: N, max: js.UndefOr[scala.Nothing], dmin: js.UndefOr[scala.Nothing], dmax: N): N = js.native
-    def float(min: N, max: js.UndefOr[scala.Nothing], dmin: N): N = js.native
-    def float(min: N, max: js.UndefOr[scala.Nothing], dmin: N, dmax: N): N = js.native
+    def float(min: N, max: Unit, dmin: Unit, dmax: N): N = js.native
+    def float(min: N, max: Unit, dmin: N): N = js.native
+    def float(min: N, max: Unit, dmin: N, dmax: N): N = js.native
     def float(min: N, max: N): N = js.native
-    def float(min: N, max: N, dmin: js.UndefOr[scala.Nothing], dmax: N): N = js.native
+    def float(min: N, max: N, dmin: Unit, dmax: N): N = js.native
     def float(min: N, max: N, dmin: N): N = js.native
     def float(min: N, max: N, dmin: N, dmax: N): N = js.native
     
     // Random.integer
     def integer(): N = js.native
-    def integer(min: js.UndefOr[scala.Nothing], max: N): N = js.native
+    def integer(min: Unit, max: N): N = js.native
     def integer(min: N): N = js.native
     def integer(min: N, max: N): N = js.native
     
     // Random.natural
     def natural(): N = js.native
-    def natural(min: js.UndefOr[scala.Nothing], max: N): N = js.native
+    def natural(min: Unit, max: N): N = js.native
     def natural(min: N): N = js.native
     def natural(min: N, max: N): N = js.native
     
     // Random.range
     def range(): N = js.native
-    def range(start: js.UndefOr[scala.Nothing], stop: js.UndefOr[scala.Nothing], step: N): N = js.native
-    def range(start: js.UndefOr[scala.Nothing], stop: N): N = js.native
-    def range(start: js.UndefOr[scala.Nothing], stop: N, step: N): N = js.native
+    def range(start: Unit, stop: Unit, step: N): N = js.native
+    def range(start: Unit, stop: N): N = js.native
+    def range(start: Unit, stop: N, step: N): N = js.native
     def range(start: N): N = js.native
-    def range(start: N, stop: js.UndefOr[scala.Nothing], step: N): N = js.native
+    def range(start: N, stop: Unit, step: N): N = js.native
     def range(start: N, stop: N): N = js.native
     def range(start: N, stop: N, step: N): N = js.native
     
     // Random.string
     def string(): S = js.native
-    def string(pool: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], max: N): S = js.native
-    def string(pool: js.UndefOr[scala.Nothing], min: N): S = js.native
-    def string(pool: js.UndefOr[scala.Nothing], min: N, max: N): S = js.native
+    def string(pool: Unit, min: Unit, max: N): S = js.native
+    def string(pool: Unit, min: N): S = js.native
+    def string(pool: Unit, min: N, max: N): S = js.native
     def string(pool: N): S = js.native
-    def string(pool: N, min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def string(pool: N, min: Unit, max: N): S = js.native
     def string(pool: N, min: N): S = js.native
     def string(pool: N, min: N, max: N): S = js.native
     def string(pool: S): S = js.native
-    def string(pool: S, min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def string(pool: S, min: Unit, max: N): S = js.native
     def string(pool: S, min: N): S = js.native
     def string(pool: S, min: N, max: N): S = js.native
   }
   
   // Mockjs.Random - Color
   // see https://github.com/nuysoft/Mock/wiki/Color
-  @js.native
   trait MockjsRandomColor extends StObject {
     
     // Random.color
-    def color(): S = js.native
+    def color(): S
     
     // Random.hex
-    def hex(): S = js.native
+    def hex(): S
     
     // Random.hsl
-    def hsl(): S = js.native
+    def hsl(): S
     
     // Random.rgb
-    def rgb(): S = js.native
+    def rgb(): S
     
     // Random.rgba
-    def rgba(): S = js.native
+    def rgba(): S
   }
   object MockjsRandomColor {
     
@@ -296,23 +326,22 @@ object mod {
   
   // Mockjs.Random - Helper
   // see https://github.com/nuysoft/Mock/wiki/Helper
-  @js.native
   trait MockjsRandomHelper extends StObject {
     
     // Random.capitalize
-    def capitalize(word: S): S = js.native
+    def capitalize(word: S): S
     
     // Random.lower
-    def lower(str: S): S = js.native
+    def lower(str: S): S
     
     // Random.pick
-    def pick(arr: js.Array[_]): js.Any = js.native
+    def pick(arr: js.Array[js.Any]): js.Any
     
     // Random.shuffle
-    def shuffle(arr: js.Array[_]): js.Array[_] = js.native
+    def shuffle(arr: js.Array[js.Any]): js.Array[js.Any]
     
     // Random.upper
-    def upper(str: S): S = js.native
+    def upper(str: S): S
   }
   object MockjsRandomHelper {
     
@@ -320,8 +349,8 @@ object mod {
     def apply(
       capitalize: S => S,
       lower: S => S,
-      pick: js.Array[_] => js.Any,
-      shuffle: js.Array[_] => js.Array[_],
+      pick: js.Array[js.Any] => js.Any,
+      shuffle: js.Array[js.Any] => js.Array[js.Any],
       upper: S => S
     ): MockjsRandomHelper = {
       val __obj = js.Dynamic.literal(capitalize = js.Any.fromFunction1(capitalize), lower = js.Any.fromFunction1(lower), pick = js.Any.fromFunction1(pick), shuffle = js.Any.fromFunction1(shuffle), upper = js.Any.fromFunction1(upper))
@@ -338,10 +367,10 @@ object mod {
       def setLower(value: S => S): Self = StObject.set(x, "lower", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setPick(value: js.Array[_] => js.Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
+      def setPick(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setShuffle(value: js.Array[_] => js.Array[_]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
+      def setShuffle(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUpper(value: S => S): Self = StObject.set(x, "upper", js.Any.fromFunction1(value))
@@ -353,188 +382,55 @@ object mod {
     
     // Random.dataImage
     def dataImage(): S = js.native
-    def dataImage(size: js.UndefOr[scala.Nothing], text: S): S = js.native
+    def dataImage(size: Unit, text: S): S = js.native
     def dataImage(size: S): S = js.native
     def dataImage(size: S, text: S): S = js.native
     
     // Random.image
     def image(): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: S
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: S,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: js.UndefOr[scala.Nothing], foreground: S): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: RandomImageFormatString
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: js.UndefOr[scala.Nothing], foreground: S, format: S): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: S,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString
-    ): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S, foreground: js.UndefOr[scala.Nothing], format: S): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: S,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S, foreground: S): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: S,
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S, foreground: S, format: RandomImageFormatString): S = js.native
-    def image(
-      size: js.UndefOr[scala.Nothing],
-      background: S,
-      foreground: S,
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S, foreground: S, format: S): S = js.native
-    def image(size: js.UndefOr[scala.Nothing], background: S, foreground: S, format: S, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: Unit, format: Unit, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: Unit, format: RandomImageFormatString): S = js.native
+    def image(size: Unit, background: Unit, foreground: Unit, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: Unit, format: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: Unit, format: S, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: S, format: Unit, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: S, format: RandomImageFormatString): S = js.native
+    def image(size: Unit, background: Unit, foreground: S, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: S, format: S): S = js.native
+    def image(size: Unit, background: Unit, foreground: S, format: S, text: S): S = js.native
+    def image(size: Unit, background: S): S = js.native
+    def image(size: Unit, background: S, foreground: Unit, format: Unit, text: S): S = js.native
+    def image(size: Unit, background: S, foreground: Unit, format: RandomImageFormatString): S = js.native
+    def image(size: Unit, background: S, foreground: Unit, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: Unit, background: S, foreground: Unit, format: S): S = js.native
+    def image(size: Unit, background: S, foreground: Unit, format: S, text: S): S = js.native
+    def image(size: Unit, background: S, foreground: S): S = js.native
+    def image(size: Unit, background: S, foreground: S, format: Unit, text: S): S = js.native
+    def image(size: Unit, background: S, foreground: S, format: RandomImageFormatString): S = js.native
+    def image(size: Unit, background: S, foreground: S, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: Unit, background: S, foreground: S, format: S): S = js.native
+    def image(size: Unit, background: S, foreground: S, format: S, text: S): S = js.native
     def image(size: S): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString
-    ): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: S, background: js.UndefOr[scala.Nothing], foreground: js.UndefOr[scala.Nothing], format: S): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: js.UndefOr[scala.Nothing],
-      format: S,
-      text: S
-    ): S = js.native
-    def image(size: S, background: js.UndefOr[scala.Nothing], foreground: S): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(size: S, background: js.UndefOr[scala.Nothing], foreground: S, format: RandomImageFormatString): S = js.native
-    def image(
-      size: S,
-      background: js.UndefOr[scala.Nothing],
-      foreground: S,
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: S, background: js.UndefOr[scala.Nothing], foreground: S, format: S): S = js.native
-    def image(size: S, background: js.UndefOr[scala.Nothing], foreground: S, format: S, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: Unit, format: Unit, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: Unit, format: RandomImageFormatString): S = js.native
+    def image(size: S, background: Unit, foreground: Unit, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: Unit, format: S): S = js.native
+    def image(size: S, background: Unit, foreground: Unit, format: S, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: S): S = js.native
+    def image(size: S, background: Unit, foreground: S, format: Unit, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: S, format: RandomImageFormatString): S = js.native
+    def image(size: S, background: Unit, foreground: S, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: S, background: Unit, foreground: S, format: S): S = js.native
+    def image(size: S, background: Unit, foreground: S, format: S, text: S): S = js.native
     def image(size: S, background: S): S = js.native
-    def image(
-      size: S,
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: js.UndefOr[scala.Nothing],
-      text: S
-    ): S = js.native
-    def image(size: S, background: S, foreground: js.UndefOr[scala.Nothing], format: RandomImageFormatString): S = js.native
-    def image(
-      size: S,
-      background: S,
-      foreground: js.UndefOr[scala.Nothing],
-      format: RandomImageFormatString,
-      text: S
-    ): S = js.native
-    def image(size: S, background: S, foreground: js.UndefOr[scala.Nothing], format: S): S = js.native
-    def image(size: S, background: S, foreground: js.UndefOr[scala.Nothing], format: S, text: S): S = js.native
+    def image(size: S, background: S, foreground: Unit, format: Unit, text: S): S = js.native
+    def image(size: S, background: S, foreground: Unit, format: RandomImageFormatString): S = js.native
+    def image(size: S, background: S, foreground: Unit, format: RandomImageFormatString, text: S): S = js.native
+    def image(size: S, background: S, foreground: Unit, format: S): S = js.native
+    def image(size: S, background: S, foreground: Unit, format: S, text: S): S = js.native
     def image(size: S, background: S, foreground: S): S = js.native
-    def image(size: S, background: S, foreground: S, format: js.UndefOr[scala.Nothing], text: S): S = js.native
+    def image(size: S, background: S, foreground: S, format: Unit, text: S): S = js.native
     def image(size: S, background: S, foreground: S, format: RandomImageFormatString): S = js.native
     def image(size: S, background: S, foreground: S, format: RandomImageFormatString, text: S): S = js.native
     def image(size: S, background: S, foreground: S, format: S): S = js.native
@@ -589,57 +485,57 @@ object mod {
     
     // Random.cparagraph
     def cparagraph(): S = js.native
-    def cparagraph(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def cparagraph(min: Unit, max: N): S = js.native
     def cparagraph(min: N): S = js.native
     def cparagraph(min: N, max: N): S = js.native
     
     // Random.csentence
     def csentence(): S = js.native
-    def csentence(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def csentence(min: Unit, max: N): S = js.native
     def csentence(min: N): S = js.native
     def csentence(min: N, max: N): S = js.native
     
     // Random.ctitle
     def ctitle(): S = js.native
-    def ctitle(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def ctitle(min: Unit, max: N): S = js.native
     def ctitle(min: N): S = js.native
     def ctitle(min: N, max: N): S = js.native
     
     // Random.cword
     def cword(): S = js.native
-    def cword(pool: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], max: N): S = js.native
-    def cword(pool: js.UndefOr[scala.Nothing], min: N): S = js.native
-    def cword(pool: js.UndefOr[scala.Nothing], min: N, max: N): S = js.native
+    def cword(pool: Unit, min: Unit, max: N): S = js.native
+    def cword(pool: Unit, min: N): S = js.native
+    def cword(pool: Unit, min: N, max: N): S = js.native
     def cword(pool: N): S = js.native
-    def cword(pool: N, min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def cword(pool: N, min: Unit, max: N): S = js.native
     def cword(pool: N, min: N): S = js.native
     def cword(pool: N, min: N, max: N): S = js.native
     def cword(pool: S): S = js.native
-    def cword(pool: S, min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def cword(pool: S, min: Unit, max: N): S = js.native
     def cword(pool: S, min: N): S = js.native
     def cword(pool: S, min: N, max: N): S = js.native
     
     // Random.paragraph
     def paragraph(): S = js.native
-    def paragraph(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def paragraph(min: Unit, max: N): S = js.native
     def paragraph(min: N): S = js.native
     def paragraph(min: N, max: N): S = js.native
     
     // Random.sentence
     def sentence(): S = js.native
-    def sentence(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def sentence(min: Unit, max: N): S = js.native
     def sentence(min: N): S = js.native
     def sentence(min: N, max: N): S = js.native
     
     // Random.title
     def title(): S = js.native
-    def title(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def title(min: Unit, max: N): S = js.native
     def title(min: N): S = js.native
     def title(min: N, max: N): S = js.native
     
     // Random.word
     def word(): S = js.native
-    def word(min: js.UndefOr[scala.Nothing], max: N): S = js.native
+    def word(min: Unit, max: N): S = js.native
     def word(min: N): S = js.native
     def word(min: N, max: N): S = js.native
   }
@@ -665,7 +561,7 @@ object mod {
     
     // Random.url
     def url(): S = js.native
-    def url(protocol: js.UndefOr[scala.Nothing], host: S): S = js.native
+    def url(protocol: Unit, host: S): S = js.native
     def url(protocol: S): S = js.native
     def url(protocol: S, host: S): S = js.native
   }
@@ -674,10 +570,9 @@ object mod {
   // see https://github.com/nuysoft/Mock/wiki/Mock.setup()
   type MockjsSetup = js.Function1[/* settings */ MockjsSetupSettings, Unit]
   
-  @js.native
   trait MockjsSetupSettings extends StObject {
     
-    var timeout: js.UndefOr[Double | S] = js.native
+    var timeout: js.UndefOr[Double | S] = js.undefined
   }
   object MockjsSetupSettings {
     
@@ -702,22 +597,21 @@ object mod {
   // see https://github.com/nuysoft/Mock/wiki/Mock.toJSONSchema()
   type MockjsToJSONSchema = js.Function1[/* template */ js.Any, MockjsToJSONSchemaRs]
   
-  @js.native
   trait MockjsToJSONSchemaRs extends StObject {
     
-    var items: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.native
+    var items: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.undefined
     
-    var name: js.UndefOr[S] = js.native
+    var name: js.UndefOr[S] = js.undefined
     
-    var path: js.Array[S] = js.native
+    var path: js.Array[S]
     
-    var properties: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.native
+    var properties: js.UndefOr[js.Array[MockjsToJSONSchemaRs]] = js.undefined
     
-    var rule: js.Object = js.native
+    var rule: js.Object
     
-    var template: js.Any = js.native
+    var template: js.Any
     
-    var `type`: S = js.native
+    var `type`: S
   }
   object MockjsToJSONSchemaRs {
     
@@ -776,20 +670,19 @@ object mod {
   // see https://github.com/nuysoft/Mock/wiki/Mock.valid()
   type MockjsValid = js.Function2[/* template */ js.Any, /* data */ js.Any, js.Array[MockjsValidRsItem]]
   
-  @js.native
   trait MockjsValidRsItem extends StObject {
     
-    var action: S = js.native
+    var action: S
     
-    var actual: S = js.native
+    var actual: S
     
-    var expected: S = js.native
+    var expected: S
     
-    var message: S = js.native
+    var message: S
     
-    var path: js.Array[S] = js.native
+    var path: js.Array[S]
     
-    var `type`: S = js.native
+    var `type`: S
   }
   object MockjsValidRsItem {
     

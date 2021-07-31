@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,11 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * snapshot is observably immutable. i.e. the same calls with the same parameters will return
   * the same values.
   */
-@js.native
 trait IScriptSnapshot extends StObject {
   
   /** Releases all resources held by this script snapshot */
-  var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+  var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Gets the TextChangeRange that describe how the text changed between this text and
@@ -23,13 +21,13 @@ trait IScriptSnapshot extends StObject {
     * change range cannot be determined.  However, in that case, incremental parsing will
     * not happen and the entire document will be re - parsed.
     */
-  def getChangeRange(oldSnapshot: IScriptSnapshot): js.UndefOr[TextChangeRange] = js.native
+  def getChangeRange(oldSnapshot: IScriptSnapshot): js.UndefOr[TextChangeRange]
   
   /** Gets the length of this script snapshot. */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /** Gets a portion of the script snapshot specified by [start, end). */
-  def getText(start: Double, end: Double): java.lang.String = js.native
+  def getText(start: Double, end: Double): java.lang.String
 }
 object IScriptSnapshot {
   

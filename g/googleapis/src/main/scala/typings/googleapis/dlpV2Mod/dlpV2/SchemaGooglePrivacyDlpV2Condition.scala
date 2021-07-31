@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,23 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of &#39;HH:mm:ss&#39;.  If we fail to compare do to type mismatch, a
   * warning will be given and the condition will evaluate to false.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Condition extends StObject {
   
   /**
     * Field within the record this condition is evaluated against. [required]
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
   
   /**
     * Operator used to compare the field or infoType to the value. [required]
     */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * Value to compare against. [Required, except for `EXISTS` tests.]
     */
-  var value: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var value: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Condition {
   

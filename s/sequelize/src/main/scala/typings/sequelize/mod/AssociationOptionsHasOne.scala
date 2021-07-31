@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Association class hasOne method
   */
-@js.native
-trait AssociationOptionsHasOne extends AssociationOptions {
+trait AssociationOptionsHasOne
+  extends StObject
+     with AssociationOptions {
   
   /**
     * A string or a data type to represent the identifier in the table
     */
-  var keyType: js.UndefOr[DataTypeAbstract] = js.native
+  var keyType: js.UndefOr[DataTypeAbstract] = js.undefined
 }
 object AssociationOptionsHasOne {
   

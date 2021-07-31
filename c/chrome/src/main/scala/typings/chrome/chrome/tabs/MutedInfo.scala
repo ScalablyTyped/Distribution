@@ -2,20 +2,18 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutedInfo extends StObject {
   
   /**
     * Optional.
     * The ID of the extension that changed the muted state. Not set if an extension was not the reason the muted state last changed.
     */
-  var extensionId: js.UndefOr[String] = js.native
+  var extensionId: js.UndefOr[String] = js.undefined
   
   /** Whether the tab is prevented from playing sound (but hasn't necessarily recently produced sound). Equivalent to whether the muted audio indicator is showing. */
-  var muted: Boolean = js.native
+  var muted: Boolean
   
   /**
     * Optional.
@@ -24,7 +22,7 @@ trait MutedInfo extends StObject {
     * "capture": Tab capture started, forcing a muted state change.
     * "extension": An extension, identified by the extensionId field, set the muted state.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object MutedInfo {
   

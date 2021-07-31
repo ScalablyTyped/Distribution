@@ -2,39 +2,37 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountAddress extends StObject {
   
   /**
     * CLDR country code (e.g. &quot;US&quot;).
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * City, town or commune. May also include dependent localities or
     * sublocalities (e.g. neighborhoods or suburbs).
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Postal code or ZIP (e.g. &quot;94043&quot;).
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Top-level administrative subdivision of the country. For example, a state
     * like California (&quot;CA&quot;) or a province like Quebec
     * (&quot;QC&quot;).
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Street-level part of the address.
     */
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountAddress {
   

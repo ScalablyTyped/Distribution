@@ -2,92 +2,74 @@ package typings.rcEasyui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object domHelper {
   
-  @JSImport("rc-easyui", "domHelper.addClass")
+  @JSImport("rc-easyui", "domHelper")
   @js.native
-  def addClass(e: js.Any, t: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-easyui", "domHelper.bind")
-  @js.native
-  def bind(e: js.Any, t: js.Any, n: js.Any): Unit = js.native
+  @scala.inline
+  def addClass(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.closest")
-  @js.native
-  def closest(e: js.Any, t: js.Any): js.Any = js.native
+  @scala.inline
+  def bind(e: js.Any, t: js.Any, n: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.getElement")
-  @js.native
-  def getElement(e: js.Any): js.Any = js.native
+  @scala.inline
+  def closest(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.getScrollLeft")
-  @js.native
-  def getScrollLeft(): js.Any = js.native
+  @scala.inline
+  def getElement(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.getScrollTop")
-  @js.native
-  def getScrollTop(): js.Any = js.native
+  @scala.inline
+  def getScrollLeft(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollLeft")().asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.getViewport")
-  @js.native
-  def getViewport(): js.Any = js.native
+  @scala.inline
+  def getScrollTop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollTop")().asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.hasClass")
-  @js.native
-  def hasClass(e: js.Any, t: js.Any): js.Any = js.native
+  @scala.inline
+  def getViewport(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getViewport")().asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.isAutoSize")
-  @js.native
-  def isAutoSize(e: js.Any): js.Any = js.native
+  @scala.inline
+  def hasClass(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.isChild")
-  @js.native
-  def isChild(e: js.Any, t: js.Any): js.Any = js.native
+  @scala.inline
+  def isAutoSize(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAutoSize")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.nextGuid")
-  @js.native
-  def nextGuid(): js.Any = js.native
+  @scala.inline
+  def isChild(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isChild")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.offset")
-  @js.native
-  def offset(e: js.Any): js.Any = js.native
+  @scala.inline
+  def nextGuid(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("nextGuid")().asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.outerHeight")
-  @js.native
-  def outerHeight(e: js.Any, t: js.Any): js.Any = js.native
+  @scala.inline
+  def offset(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.outerWidth")
-  @js.native
-  def outerWidth(e: js.Any, t: js.Any): js.Any = js.native
+  @scala.inline
+  def outerHeight(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.position")
-  @js.native
-  def position(e: js.Any): js.Any = js.native
+  @scala.inline
+  def outerWidth(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("outerWidth")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.removeClass")
-  @js.native
-  def removeClass(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def position(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("position")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "domHelper.scrollTo")
-  @js.native
-  def scrollTo(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def removeClass(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.slideDown")
-  @js.native
-  def slideDown(e: js.Any): Unit = js.native
+  @scala.inline
+  def scrollTo(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollTo")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.slideUp")
-  @js.native
-  def slideUp(e: js.Any): Unit = js.native
+  @scala.inline
+  def slideDown(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("slideDown")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.toStyleValue")
-  @js.native
-  def toStyleValue(e: js.Any): js.Any = js.native
+  @scala.inline
+  def slideUp(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("slideUp")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "domHelper.unbind")
-  @js.native
-  def unbind(e: js.Any, t: js.Any, n: js.Any): Unit = js.native
+  @scala.inline
+  def toStyleValue(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toStyleValue")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def unbind(e: js.Any, t: js.Any, n: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

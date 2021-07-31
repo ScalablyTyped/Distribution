@@ -2,47 +2,45 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecursiveHierarchy extends StObject {
   
   /**
     * Get the property holding the node ID of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getNodeIDProperty(): js.Any = js.native
+  def getNodeIDProperty(): js.Any
   
   /**
     * Get the property holding the level of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getNodeLevelProperty(): js.Any = js.native
+  def getNodeLevelProperty(): js.Any
   
   /**
     * Get the property holding the value that is structurally organized by thehierarchy
     * @returns The DataJS object representing this property
     */
-  def getNodeValueProperty(): js.Any = js.native
+  def getNodeValueProperty(): js.Any
   
   /**
     * Get the property holding the parent node ID of the hierarchy node
     * @returns The DataJS object representing this property
     */
-  def getParentNodeIDProperty(): js.Any = js.native
+  def getParentNodeIDProperty(): js.Any
   
   /**
     * Get indicator if this is a leveled hierarchy
     * @returns False
     */
-  def isLeveledHierarchy(): Boolean = js.native
+  def isLeveledHierarchy(): Boolean
   
   /**
     * Get indicator if this is a recursive hierarchy
     * @returns True
     */
-  def isRecursiveHierarchy(): Boolean = js.native
+  def isRecursiveHierarchy(): Boolean
 }
 object RecursiveHierarchy {
   

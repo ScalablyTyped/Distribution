@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "DecayScoreFunction")
 @js.native
-class DecayScoreFunction protected () extends ScoreFunction {
+class DecayScoreFunction protected ()
+  extends StObject
+     with ScoreFunction {
   /*
     Score a document with a function that decays depending on the distance
     of a numeric field value of the document from given origin.

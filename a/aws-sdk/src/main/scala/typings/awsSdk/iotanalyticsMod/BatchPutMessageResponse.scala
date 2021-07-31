@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPutMessageResponse extends StObject {
   
   /**
     * A list of any errors encountered when sending the messages to the channel.
     */
-  var batchPutMessageErrorEntries: js.UndefOr[BatchPutMessageErrorEntries] = js.native
+  var batchPutMessageErrorEntries: js.UndefOr[BatchPutMessageErrorEntries] = js.undefined
 }
 object BatchPutMessageResponse {
   

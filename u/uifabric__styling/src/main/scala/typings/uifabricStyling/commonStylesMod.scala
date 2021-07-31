@@ -2,10 +2,13 @@ package typings.uifabricStyling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonStylesMod {
+  
+  @JSImport("@uifabric/styling/lib/styles/CommonStyles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@uifabric/styling/lib/styles/CommonStyles", "EdgeChromiumHighContrastSelector")
   @js.native
@@ -71,11 +74,9 @@ object commonStylesMod {
   @js.native
   val ScreenWidthMinXXXLarge: /* 1920 */ Double = js.native
   
-  @JSImport("@uifabric/styling/lib/styles/CommonStyles", "getEdgeChromiumNoHighContrastAdjustSelector")
-  @js.native
-  def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = js.native
+  @scala.inline
+  def getEdgeChromiumNoHighContrastAdjustSelector(): typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("getEdgeChromiumNoHighContrastAdjustSelector")().asInstanceOf[typings.uifabricStyling.anon.EdgeChromiumHighContrastSelector]
   
-  @JSImport("@uifabric/styling/lib/styles/CommonStyles", "getScreenSelector")
-  @js.native
-  def getScreenSelector(min: Double, max: Double): String = js.native
+  @scala.inline
+  def getScreenSelector(min: Double, max: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSelector")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[String]
 }

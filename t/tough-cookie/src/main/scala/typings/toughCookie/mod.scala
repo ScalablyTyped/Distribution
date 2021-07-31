@@ -13,10 +13,13 @@ import typings.toughCookie.toughCookieStrings.Infinity
 import typings.toughCookie.toughCookieStrings.`-Infinity`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("tough-cookie", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tough-cookie", "Cookie")
   @js.native
@@ -84,24 +87,23 @@ object mod {
   /* static members */
   object Cookie {
     
-    @JSImport("tough-cookie", "Cookie.fromJSON")
+    @JSImport("tough-cookie", "Cookie")
     @js.native
-    def fromJSON(strOrObj: String): Cookie | Null = js.native
-    @JSImport("tough-cookie", "Cookie.fromJSON")
-    @js.native
-    def fromJSON(strOrObj: js.Object): Cookie | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tough-cookie", "Cookie.parse")
-    @js.native
-    def parse(cookieString: String): js.UndefOr[Cookie] = js.native
-    @JSImport("tough-cookie", "Cookie.parse")
-    @js.native
-    def parse(cookieString: String, options: ParseOptions): js.UndefOr[Cookie] = js.native
+    @scala.inline
+    def fromJSON(strOrObj: String): Cookie | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(strOrObj.asInstanceOf[js.Any]).asInstanceOf[Cookie | Null]
+    @scala.inline
+    def fromJSON(strOrObj: js.Object): Cookie | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(strOrObj.asInstanceOf[js.Any]).asInstanceOf[Cookie | Null]
     
-    @js.native
+    @scala.inline
+    def parse(cookieString: String): js.UndefOr[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Cookie]]
+    @scala.inline
+    def parse(cookieString: String, options: ParseOptions): js.UndefOr[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Cookie]]
+    
     trait ParseOptions extends StObject {
       
-      var loose: js.UndefOr[Boolean] = js.native
+      var loose: js.UndefOr[Boolean] = js.undefined
     }
     object ParseOptions {
       
@@ -122,38 +124,37 @@ object mod {
       }
     }
     
-    @js.native
     trait Properties extends StObject {
       
-      var creation: js.UndefOr[Date] = js.native
+      var creation: js.UndefOr[Date] = js.undefined
       
-      var creationIndex: js.UndefOr[Double] = js.native
+      var creationIndex: js.UndefOr[Double] = js.undefined
       
-      var domain: js.UndefOr[String] = js.native
+      var domain: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Date] = js.native
+      var expires: js.UndefOr[Date] = js.undefined
       
-      var extensions: js.UndefOr[js.Array[String]] = js.native
+      var extensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var hostOnly: js.UndefOr[Boolean] = js.native
+      var hostOnly: js.UndefOr[Boolean] = js.undefined
       
-      var httpOnly: js.UndefOr[Boolean] = js.native
+      var httpOnly: js.UndefOr[Boolean] = js.undefined
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var lastAccessed: js.UndefOr[Date] = js.native
+      var lastAccessed: js.UndefOr[Date] = js.undefined
       
-      var maxAge: js.UndefOr[Double | Infinity | `-Infinity`] = js.native
+      var maxAge: js.UndefOr[Double | Infinity | `-Infinity`] = js.undefined
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var pathIsDefault: js.UndefOr[Boolean] = js.native
+      var pathIsDefault: js.UndefOr[Boolean] = js.undefined
       
-      var sameSite: js.UndefOr[String] = js.native
+      var sameSite: js.UndefOr[String] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object Properties {
       
@@ -268,7 +269,7 @@ object mod {
   @js.native
   class CookieJar () extends StObject {
     def this(store: Store) = this()
-    def this(store: js.UndefOr[scala.Nothing], options: Options) = this()
+    def this(store: Unit, options: Options) = this()
     def this(store: Store, options: Options) = this()
     
     def clone(cb: js.Function2[/* err */ Error | Null, /* newJar */ this.type, Unit]): Unit = js.native
@@ -361,68 +362,58 @@ object mod {
   /* static members */
   object CookieJar {
     
-    @JSImport("tough-cookie", "CookieJar.deserialize")
+    @JSImport("tough-cookie", "CookieJar")
     @js.native
-    def deserialize(serialized: String): js.Promise[CookieJar] = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
-    def deserialize(serialized: String, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
-    def deserialize(serialized: String, store: Store): js.Promise[CookieJar] = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deserialize(serialized: String): js.Promise[CookieJar] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CookieJar]]
+    @scala.inline
+    def deserialize(serialized: String, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deserialize(serialized: String, store: Store): js.Promise[CookieJar] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CookieJar]]
+    @scala.inline
     def deserialize(
       serialized: String,
       store: Store,
       cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]
-    ): Unit = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
-    def deserialize(serialized: Serialized): js.Promise[CookieJar] = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
-    def deserialize(serialized: Serialized, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
-    def deserialize(serialized: Serialized, store: Store): js.Promise[CookieJar] = js.native
-    @JSImport("tough-cookie", "CookieJar.deserialize")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deserialize(serialized: Serialized): js.Promise[CookieJar] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CookieJar]]
+    @scala.inline
+    def deserialize(serialized: Serialized, cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deserialize(serialized: Serialized, store: Store): js.Promise[CookieJar] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CookieJar]]
+    @scala.inline
     def deserialize(
       serialized: Serialized,
       store: Store,
       cb: js.Function2[/* err */ Error | Null, /* object */ this.type, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("tough-cookie", "CookieJar.deserializeSync")
-    @js.native
-    def deserializeSync(serialized: String): CookieJar = js.native
-    @JSImport("tough-cookie", "CookieJar.deserializeSync")
-    @js.native
-    def deserializeSync(serialized: String, store: Store): CookieJar = js.native
-    @JSImport("tough-cookie", "CookieJar.deserializeSync")
-    @js.native
-    def deserializeSync(serialized: Serialized): CookieJar = js.native
-    @JSImport("tough-cookie", "CookieJar.deserializeSync")
-    @js.native
-    def deserializeSync(serialized: Serialized, store: Store): CookieJar = js.native
+    @scala.inline
+    def deserializeSync(serialized: String): CookieJar = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSync")(serialized.asInstanceOf[js.Any]).asInstanceOf[CookieJar]
+    @scala.inline
+    def deserializeSync(serialized: String, store: Store): CookieJar = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSync")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[CookieJar]
+    @scala.inline
+    def deserializeSync(serialized: Serialized): CookieJar = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSync")(serialized.asInstanceOf[js.Any]).asInstanceOf[CookieJar]
+    @scala.inline
+    def deserializeSync(serialized: Serialized, store: Store): CookieJar = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeSync")(serialized.asInstanceOf[js.Any], store.asInstanceOf[js.Any])).asInstanceOf[CookieJar]
     
-    @JSImport("tough-cookie", "CookieJar.fromJSON")
-    @js.native
-    def fromJSON(string: String): CookieJar = js.native
+    @scala.inline
+    def fromJSON(string: String): CookieJar = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(string.asInstanceOf[js.Any]).asInstanceOf[CookieJar]
     
-    @js.native
     trait GetCookiesOptions extends StObject {
       
-      var allPaths: js.UndefOr[Boolean] = js.native
+      var allPaths: js.UndefOr[Boolean] = js.undefined
       
-      var expire: js.UndefOr[Boolean] = js.native
+      var expire: js.UndefOr[Boolean] = js.undefined
       
-      var http: js.UndefOr[Boolean] = js.native
+      var http: js.UndefOr[Boolean] = js.undefined
       
-      var now: js.UndefOr[Date] = js.native
+      var now: js.UndefOr[Date] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
     }
     object GetCookiesOptions {
       
@@ -467,16 +458,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var allowSpecialUseDomain: js.UndefOr[Boolean] = js.native
+      var allowSpecialUseDomain: js.UndefOr[Boolean] = js.undefined
       
-      var looseMode: js.UndefOr[Boolean] = js.native
+      var looseMode: js.UndefOr[Boolean] = js.undefined
       
-      var prefixSecurity: js.UndefOr[String] = js.native
+      var prefixSecurity: js.UndefOr[String] = js.undefined
       
-      var rejectPublicSuffixes: js.UndefOr[Boolean] = js.native
+      var rejectPublicSuffixes: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -515,16 +505,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Serialized extends StObject {
       
-      var cookies: js.Array[typings.toughCookie.mod.Cookie.Serialized] = js.native
+      var cookies: js.Array[typings.toughCookie.mod.Cookie.Serialized]
       
-      var rejectPublicSuffixes: Boolean = js.native
+      var rejectPublicSuffixes: Boolean
       
-      var storeType: String = js.native
+      var storeType: String
       
-      var version: String = js.native
+      var version: String
     }
     object Serialized {
       
@@ -559,16 +548,15 @@ object mod {
       }
     }
     
-    @js.native
     trait SetCookieOptions extends StObject {
       
-      var http: js.UndefOr[Boolean] = js.native
+      var http: js.UndefOr[Boolean] = js.undefined
       
-      var ignoreError: js.UndefOr[Boolean] = js.native
+      var ignoreError: js.UndefOr[Boolean] = js.undefined
       
-      var now: js.UndefOr[Date] = js.native
+      var now: js.UndefOr[Date] = js.undefined
       
-      var secure: js.UndefOr[Boolean] = js.native
+      var secure: js.UndefOr[Boolean] = js.undefined
     }
     object SetCookieOptions {
       
@@ -659,62 +647,47 @@ object mod {
     def updateCookie(oldCookie: Cookie, newCookie: Cookie, cb: js.Function1[/* err */ Error | Null, Unit]): Unit = js.native
   }
   
-  @JSImport("tough-cookie", "canonicalDomain")
-  @js.native
-  def canonicalDomain(str: String): String = js.native
+  @scala.inline
+  def canonicalDomain(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("canonicalDomain")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("tough-cookie", "cookieCompare")
-  @js.native
-  def cookieCompare(a: Cookie, b: Cookie): Double = js.native
+  @scala.inline
+  def cookieCompare(a: Cookie, b: Cookie): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cookieCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("tough-cookie", "defaultPath")
-  @js.native
-  def defaultPath(path: String): String = js.native
+  @scala.inline
+  def defaultPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("tough-cookie", "domainMatch")
-  @js.native
-  def domainMatch(str: String, domStr: String): Boolean = js.native
-  @JSImport("tough-cookie", "domainMatch")
-  @js.native
-  def domainMatch(str: String, domStr: String, canonicalize: Boolean): Boolean = js.native
+  @scala.inline
+  def domainMatch(str: String, domStr: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("domainMatch")(str.asInstanceOf[js.Any], domStr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def domainMatch(str: String, domStr: String, canonicalize: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("domainMatch")(str.asInstanceOf[js.Any], domStr.asInstanceOf[js.Any], canonicalize.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tough-cookie", "formatDate")
-  @js.native
-  def formatDate(date: Date): String = js.native
+  @scala.inline
+  def formatDate(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("tough-cookie", "fromJSON")
-  @js.native
-  def fromJSON(string: String): Cookie = js.native
+  @scala.inline
+  def fromJSON(string: String): Cookie = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(string.asInstanceOf[js.Any]).asInstanceOf[Cookie]
   
-  @JSImport("tough-cookie", "getPublicSuffix")
-  @js.native
-  def getPublicSuffix(hostname: String): String | Null = js.native
+  @scala.inline
+  def getPublicSuffix(hostname: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicSuffix")(hostname.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("tough-cookie", "parse")
-  @js.native
-  def parse(cookieString: String): js.UndefOr[Cookie] = js.native
-  @JSImport("tough-cookie", "parse")
-  @js.native
-  def parse(cookieString: String, options: ParseOptions): js.UndefOr[Cookie] = js.native
+  @scala.inline
+  def parse(cookieString: String): js.UndefOr[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Cookie]]
+  @scala.inline
+  def parse(cookieString: String, options: ParseOptions): js.UndefOr[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cookieString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Cookie]]
   
-  @JSImport("tough-cookie", "parseDate")
-  @js.native
-  def parseDate(string: String): Date = js.native
+  @scala.inline
+  def parseDate(string: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(string.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("tough-cookie", "pathMatch")
-  @js.native
-  def pathMatch(reqPath: String, cookiePath: String): Boolean = js.native
+  @scala.inline
+  def pathMatch(reqPath: String, cookiePath: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pathMatch")(reqPath.asInstanceOf[js.Any], cookiePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tough-cookie", "permuteDomain")
-  @js.native
-  def permuteDomain(domain: String): js.Array[String] = js.native
-  @JSImport("tough-cookie", "permuteDomain")
-  @js.native
-  def permuteDomain(domain: String, allowSpecialUseDomain: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def permuteDomain(domain: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("permuteDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def permuteDomain(domain: String, allowSpecialUseDomain: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("permuteDomain")(domain.asInstanceOf[js.Any], allowSpecialUseDomain.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("tough-cookie", "permutePath")
-  @js.native
-  def permutePath(path: String): js.Array[String] = js.native
+  @scala.inline
+  def permutePath(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("permutePath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("tough-cookie", "version")
   @js.native

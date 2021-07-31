@@ -5,12 +5,14 @@ import typings.node.streamMod.Readable
 import typings.node.urlMod.UrlWithStringQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpsMod {
   
-  @JSImport("get-uri/dist/https", JSImport.Default)
+  @JSImport("get-uri/dist/https", JSImport.Namespace)
   @js.native
-  def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
 }

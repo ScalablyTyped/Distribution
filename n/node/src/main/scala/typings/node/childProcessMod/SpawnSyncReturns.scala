@@ -4,36 +4,34 @@ import typings.node.processMod.global.NodeJS.Signals
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpawnSyncReturns[T] extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var output: js.Array[String] = js.native
+  var output: js.Array[String]
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var signal: Signals | Null = js.native
+  var signal: Signals | Null
   
-  var status: Double | Null = js.native
+  var status: Double | Null
   
-  var stderr: T = js.native
+  var stderr: T
   
-  var stdout: T = js.native
+  var stdout: T
 }
 object SpawnSyncReturns {
   
   @scala.inline
   def apply[T](output: js.Array[String], pid: Double, stderr: T, stdout: T): SpawnSyncReturns[T] = {
-    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], stderr = stderr.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any], signal = null, status = null)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
   
   @scala.inline
-  implicit class SpawnSyncReturnsMutableBuilder[Self <: SpawnSyncReturns[_], T] (val x: Self with SpawnSyncReturns[T]) extends AnyVal {
+  implicit class SpawnSyncReturnsMutableBuilder[Self <: SpawnSyncReturns[?], T] (val x: Self & SpawnSyncReturns[T]) extends AnyVal {
     
     @scala.inline
     def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

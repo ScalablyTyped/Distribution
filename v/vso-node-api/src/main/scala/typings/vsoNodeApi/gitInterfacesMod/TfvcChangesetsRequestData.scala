@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcChangesetsRequestData extends StObject {
   
   /**
     * List of changeset Ids.
     */
-  var changesetIds: js.Array[Double] = js.native
+  var changesetIds: js.Array[Double]
   
   /**
     * Length of the comment.
     */
-  var commentLength: Double = js.native
+  var commentLength: Double
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
 }
 object TfvcChangesetsRequestData {
   

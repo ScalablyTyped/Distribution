@@ -12,7 +12,7 @@ Non-blocking chunked Base64 encoding
 | Keywords           | async, asynchronous, non-blocking, base64, encode, decode |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 83350 |
+| # downloads        | 105072 |
 | # stars            | 4 |
 
 ## Links

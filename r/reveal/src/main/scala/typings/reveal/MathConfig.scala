@@ -2,18 +2,16 @@ package typings.reveal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/hakimel/reveal.js/#mathjax
-@js.native
 trait MathConfig extends StObject {
   
   // Obtained from the socket.io server
-  var config: String = js.native
+  var config: String
   
   // Obtained from the socket.io server. Gives this (the master) control of the presentation
-  var mathjax: String = js.native
+  var mathjax: String
 }
 object MathConfig {
   

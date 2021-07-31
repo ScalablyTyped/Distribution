@@ -10,9 +10,9 @@ Typings are for version 3.0.2
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-ssr |
 | Keywords           | vue |
-| # releases         | 46 |
+| # releases         | 53 |
 | # dependents       | 4 |
-| # downloads        | 1038256 |
+| # downloads        | 7890810 |
 | # stars            | 0 |
 
 ## Links

@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.ConditionSettings")
@@ -50,9 +49,8 @@ object ConditionSettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.ConditionSettings.create")
-  @js.native
-  def create(model: IModel): ConditionSettings = js.native
+  @scala.inline
+  def create(model: IModel): ConditionSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConditionSettings]
   
   /**
     * Creates and returns a new ConditionSettings instance in the SDK and on the server.
@@ -60,9 +58,8 @@ object ConditionSettings {
     * of the parent TableRow element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.ConditionSettings.createIn")
-  @js.native
-  def createIn(container: TableRow): ConditionSettings = js.native
+  @scala.inline
+  def createIn(container: TableRow): ConditionSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionSettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/documenttemplates", "documenttemplates.ConditionSettings.structureTypeName")

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerFromArcGISServerUrlParams extends Object {
+trait LayerFromArcGISServerUrlParams
+  extends StObject
+     with Object {
   
   /**
     * Set any of the layer's properties here for constructing the layer instance (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
     */
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The ArcGIS Server URL used to create the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#fromArcGISServerUrl)
     */
-  var url: String = js.native
+  var url: String
 }
 object LayerFromArcGISServerUrlParams {
   

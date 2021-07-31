@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TaskRequested event. */
-@js.native
 trait Print3DTaskRequestedEventArgs extends StObject {
   
   /** Gets the 3D print job request associated with the Print3DManager . */
-  var request: Print3DTaskRequest = js.native
+  var request: Print3DTaskRequest
 }
 object Print3DTaskRequestedEventArgs {
   

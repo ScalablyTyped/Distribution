@@ -5,13 +5,15 @@ import typings.std.Omit
 import typings.wordpressCompose.wordpressComposeStrings.setTimeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withSafeTimeoutMod {
   
-  // prettier-ignore
-  @JSImport("@wordpress/compose/higher-order/with-safe-timeout", JSImport.Default)
+  @JSImport("@wordpress/compose/higher-order/with-safe-timeout", JSImport.Namespace)
   @js.native
-  def default[T /* <: ComponentType[_] */](component: T): ComponentType[Omit[_, setTimeout]] = js.native
+  val ^ : js.Any = js.native
+  
+  // prettier-ignore
+  @scala.inline
+  def default[T /* <: ComponentType[js.Any] */](component: T): ComponentType[Omit[js.Any, setTimeout]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Omit[js.Any, setTimeout]]]
 }

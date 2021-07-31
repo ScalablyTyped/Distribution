@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,14 +29,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *           .build();
   *     }
   */
-@js.native
 trait GetSchemaResponse extends StObject {
   
-  def build(): js.Any = js.native
+  def build(): js.Any
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setFields(fields: Fields): GetSchemaResponse = js.native
+  def setFields(fields: Fields): GetSchemaResponse
 }
 object GetSchemaResponse {
   

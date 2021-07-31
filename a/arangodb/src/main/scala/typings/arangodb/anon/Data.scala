@@ -3,15 +3,13 @@ package typings.arangodb.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var headers: StringDictionary[js.UndefOr[String]] = js.native
+  var headers: StringDictionary[js.UndefOr[String]]
 }
 object Data {
   

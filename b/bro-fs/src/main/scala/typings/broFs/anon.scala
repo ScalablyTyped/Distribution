@@ -6,22 +6,20 @@ import typings.broFs.broFsStrings.File
 import typings.broFs.mod.TextType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `type`: Blob = js.native
+    var `type`: Blob
   }
   object `0` {
     
     @scala.inline
-    def apply(`type`: Blob): `0` = {
+    def apply(): `0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Blob")
       __obj.asInstanceOf[`0`]
     }
     
@@ -33,17 +31,16 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var `type`: File = js.native
+    var `type`: File
   }
   object `1` {
     
     @scala.inline
-    def apply(`type`: File): `1` = {
+    def apply(): `1` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("File")
       __obj.asInstanceOf[`1`]
     }
     
@@ -55,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
-    var `type`: js.UndefOr[TextType] = js.native
+    var `type`: js.UndefOr[TextType] = js.undefined
   }
   object `2` {
     
@@ -79,10 +75,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Create extends StObject {
     
-    var create: js.UndefOr[Boolean] = js.native
+    var create: js.UndefOr[Boolean] = js.undefined
   }
   object Create {
     
@@ -103,10 +98,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Deep extends StObject {
     
-    var deep: js.UndefOr[Boolean] = js.native
+    var deep: js.UndefOr[Boolean] = js.undefined
   }
   object Deep {
     
@@ -127,17 +121,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: ArrayBuffer = js.native
+    var `type`: ArrayBuffer
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: ArrayBuffer): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("ArrayBuffer")
       __obj.asInstanceOf[Type]
     }
     

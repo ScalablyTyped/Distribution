@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Devices.Enumeration.Pnp.PnpObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var items: js.Array[PnpObject] = js.native
+  var items: js.Array[PnpObject]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object `4` {
   

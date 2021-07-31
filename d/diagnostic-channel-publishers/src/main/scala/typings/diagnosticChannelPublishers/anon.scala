@@ -3,22 +3,20 @@ package typings.diagnosticChannelPublishers
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var text: String = js.native
+    var text: String
   }
   object Args {
     
     @scala.inline
-    def apply(args: js.Array[_], text: String): Args = {
+    def apply(args: js.Array[js.Any], text: String): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
@@ -27,7 +25,7 @@ object anon {
     implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -37,14 +35,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Command extends StObject {
     
-    var command: js.UndefOr[js.Any] = js.native
+    var command: js.UndefOr[js.Any] = js.undefined
     
-    var databaseName: js.UndefOr[String] = js.native
+    var databaseName: js.UndefOr[String] = js.undefined
     
-    var time: Date = js.native
+    var time: Date
   }
   object Command {
     
@@ -74,16 +71,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CommandName extends StObject {
     
-    var commandName: js.UndefOr[String] = js.native
+    var commandName: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var failure: js.UndefOr[String] = js.native
+    var failure: js.UndefOr[String] = js.undefined
     
-    var reply: js.UndefOr[js.Any] = js.native
+    var reply: js.UndefOr[js.Any] = js.undefined
   }
   object CommandName {
     
@@ -122,10 +118,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: js.UndefOr[Host] = js.native
+    var config: js.UndefOr[Host] = js.undefined
   }
   object Config {
     
@@ -146,12 +141,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var _connection: js.UndefOr[Config] = js.native
+    var _connection: js.UndefOr[Config] = js.undefined
     
-    var sql: js.UndefOr[String] = js.native
+    var sql: js.UndefOr[String] = js.undefined
   }
   object Connection {
     
@@ -178,14 +172,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
   }
   object Host {
     
@@ -218,14 +211,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Plan extends StObject {
     
-    var plan: js.UndefOr[String] = js.native
+    var plan: js.UndefOr[String] = js.undefined
     
-    var preparable: js.UndefOr[Args] = js.native
+    var preparable: js.UndefOr[Args] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Plan {
     
@@ -258,12 +250,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: String = js.native
+    var port: String
   }
   object Port {
     

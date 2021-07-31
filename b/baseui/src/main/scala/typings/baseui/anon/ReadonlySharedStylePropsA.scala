@@ -8,27 +8,25 @@ import typings.baseui.baseuiStrings.toast
 import typings.baseui.baseuiStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<baseui.baseui/toast.SharedStylePropsArg> */
-@js.native
 trait ReadonlySharedStylePropsA extends StObject {
   
   @JSName("$closeable")
-  val $closeable: js.UndefOr[Boolean] = js.native
+  val $closeable: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isRendered")
-  val $isRendered: js.UndefOr[Boolean] = js.native
+  val $isRendered: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isVisible")
-  val $isVisible: js.UndefOr[Boolean] = js.native
+  val $isVisible: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$kind")
-  val $kind: js.UndefOr[info | positive | warning | negative] = js.native
+  val $kind: js.UndefOr[info | positive | warning | negative] = js.undefined
   
   @JSName("$type")
-  val $type: js.UndefOr[`inline` | toast] = js.native
+  val $type: js.UndefOr[`inline` | toast] = js.undefined
 }
 object ReadonlySharedStylePropsA {
   

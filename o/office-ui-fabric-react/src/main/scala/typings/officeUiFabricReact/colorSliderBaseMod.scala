@@ -8,7 +8,6 @@ import typings.officeUiFabricReact.colorSliderTypesMod.IColorSliderProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorSliderBaseMod {
@@ -43,6 +42,10 @@ object colorSliderBaseMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MColorSliderBase(): Unit = js.native
+    
+    /** Current value of the slider. */
+    /* CompleteClass */
+    var value: Double = js.native
   }
   /* static members */
   object ColorSliderBase {
@@ -58,10 +61,9 @@ object colorSliderBaseMod {
     def defaultProps_=(x: PartialIColorSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IColorSliderState extends StObject {
     
-    var currentValue: Double = js.native
+    var currentValue: Double
   }
   object IColorSliderState {
     

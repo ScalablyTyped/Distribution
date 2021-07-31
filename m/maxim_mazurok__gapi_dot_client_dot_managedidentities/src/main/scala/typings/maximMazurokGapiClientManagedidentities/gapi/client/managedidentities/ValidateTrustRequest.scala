@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateTrustRequest extends StObject {
   
   /** Required. The domain trust to validate trust state for. */
-  var trust: js.UndefOr[Trust] = js.native
+  var trust: js.UndefOr[Trust] = js.undefined
 }
 object ValidateTrustRequest {
   

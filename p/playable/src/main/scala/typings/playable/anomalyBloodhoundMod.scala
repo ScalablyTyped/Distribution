@@ -7,15 +7,58 @@ import typings.playable.anon.EndTS
 import typings.playable.anon.Engine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anomalyBloodhoundMod {
   
   @JSImport("playable/dist/src/modules/anomaly-bloodhound/anomaly-bloodhound", JSImport.Default)
   @js.native
-  class default protected () extends AnomalyBloodhound {
+  class default protected ()
+    extends StObject
+       with AnomalyBloodhound {
     def this(hasEngineEventEmitter: Engine) = this()
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _callback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _processStateChange: js.Any = js.native
+    
+    /* CompleteClass */
+    var _timeoutMap: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def isDelayedReportExist(`type`: IReportType): Boolean = js.native
+    
+    /* CompleteClass */
+    override def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit = js.native
+    
+    /* CompleteClass */
+    override def setAnomalyCallback(callback: js.Function1[/* anomalyData */ js.Any, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def startDelayedReport(`type`: IReportType, reason: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def stopAllDelayedReports(): Unit = js.native
+    
+    /* CompleteClass */
+    override def stopDelayedReport(`type`: IReportType): Unit = js.native
   }
   /* static members */
   object default {
@@ -45,36 +88,35 @@ object anomalyBloodhoundMod {
   @js.native
   val REPORT_REASONS: IReportReasons = js.native
   
-  @js.native
   trait AnomalyBloodhound extends StObject {
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _callback: js.Any = js.native
+    var _callback: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _processStateChange: js.Any = js.native
+    var _processStateChange: js.Any
     
-    var _timeoutMap: js.Any = js.native
+    var _timeoutMap: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def isDelayedReportExist(`type`: IReportType): Boolean = js.native
+    def isDelayedReportExist(`type`: IReportType): Boolean
     
-    def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit = js.native
+    def reportDebugInfo(hasReasonStartTSEndTS: EndTS): Unit
     
-    def setAnomalyCallback(callback: js.Function1[/* anomalyData */ js.Any, Unit]): Unit = js.native
+    def setAnomalyCallback(callback: js.Function1[/* anomalyData */ js.Any, Unit]): Unit
     
-    def startDelayedReport(`type`: IReportType, reason: String): Unit = js.native
+    def startDelayedReport(`type`: IReportType, reason: String): Unit
     
-    def stopAllDelayedReports(): Unit = js.native
+    def stopAllDelayedReports(): Unit
     
-    def stopDelayedReport(`type`: IReportType): Unit = js.native
+    def stopDelayedReport(`type`: IReportType): Unit
   }
   object AnomalyBloodhound {
     

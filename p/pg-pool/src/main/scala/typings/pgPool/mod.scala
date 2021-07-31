@@ -12,7 +12,6 @@ import typings.pgPool.pgPoolStrings.remove
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,16 +20,17 @@ object mod {
   @js.native
   class ^[T /* <: typings.pg.mod.Client */] () extends Pool[T] {
     def this(config: Config[T]) = this()
-    def this(config: js.UndefOr[scala.Nothing], client: ClientLikeCtr[T]) = this()
+    def this(config: Unit, client: ClientLikeCtr[T]) = this()
     def this(config: Config[T], client: ClientLikeCtr[T]) = this()
   }
   
   type ClientLikeCtr[T /* <: Client */] = Instantiable1[/* config */ js.UndefOr[String | ClientConfig], T]
   
-  @js.native
-  trait Config[T /* <: Client */] extends PoolConfig {
+  trait Config[T /* <: Client */]
+    extends StObject
+       with PoolConfig {
     
-    var Client: js.UndefOr[ClientLikeCtr[T]] = js.native
+    var Client: js.UndefOr[ClientLikeCtr[T]] = js.undefined
   }
   object Config {
     
@@ -41,7 +41,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], T /* <: Client */] (val x: Self with Config[T]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], T /* <: Client */] (val x: Self & Config[T]) extends AnyVal {
       
       @scala.inline
       def setClient(value: ClientLikeCtr[T]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
@@ -58,12 +58,12 @@ object mod {
     val Client: ClientLikeCtr[T] = js.native
     
     @JSName("on")
-    def on_acquire(event: acquire, listener: js.Function1[/* client */ T with PoolClient, Unit]): this.type = js.native
+    def on_acquire(event: acquire, listener: js.Function1[/* client */ T & PoolClient, Unit]): this.type = js.native
     @JSName("on")
-    def on_connect(event: connect, listener: js.Function1[/* client */ T with PoolClient, Unit]): this.type = js.native
+    def on_connect(event: connect, listener: js.Function1[/* client */ T & PoolClient, Unit]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: js.Function2[/* err */ Error, /* client */ T with PoolClient, Unit]): this.type = js.native
+    def on_error(event: error, listener: js.Function2[/* err */ Error, /* client */ T & PoolClient, Unit]): this.type = js.native
     @JSName("on")
-    def on_remove(event: remove, listener: js.Function1[/* client */ T with PoolClient, Unit]): this.type = js.native
+    def on_remove(event: remove, listener: js.Function1[/* client */ T & PoolClient, Unit]): this.type = js.native
   }
 }

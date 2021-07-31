@@ -14,7 +14,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webfontsV1Mod {
@@ -43,7 +42,7 @@ object webfontsV1Mod {
         */
       def list(): GaxiosPromise[SchemaWebfontList] = js.native
       def list(callback: BodyResponseCallback[SchemaWebfontList]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWebfontList] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWebfontList] = js.native
       def list(params: ParamsResourceWebfontsList): GaxiosPromise[SchemaWebfontList] = js.native
       def list(params: ParamsResourceWebfontsList, callback: BodyResponseCallback[SchemaWebfontList]): Unit = js.native
       def list(
@@ -87,16 +86,17 @@ object webfontsV1Mod {
       var webfonts: ResourceWebfonts = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -108,18 +108,19 @@ object webfontsV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceWebfontsList extends StandardParameters {
+    trait ParamsResourceWebfontsList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Enables sorting of the list
         */
-      var sort: js.UndefOr[String] = js.native
+      var sort: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceWebfontsList {
       
@@ -146,50 +147,49 @@ object webfontsV1Mod {
       }
     }
     
-    @js.native
     trait SchemaWebfont extends StObject {
       
       /**
         * The category of the font.
         */
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
       /**
         * The name of the font.
         */
-      var family: js.UndefOr[String] = js.native
+      var family: js.UndefOr[String] = js.undefined
       
       /**
         * The font files (with all supported scripts) for each one of the available
         * variants, as a key : value map.
         */
-      var files: js.UndefOr[StringDictionary[String]] = js.native
+      var files: js.UndefOr[StringDictionary[String]] = js.undefined
       
       /**
         * This kind represents a webfont object in the webfonts service.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The date (format &quot;yyyy-MM-dd&quot;) the font was modified for the
         * last time.
         */
-      var lastModified: js.UndefOr[String] = js.native
+      var lastModified: js.UndefOr[String] = js.undefined
       
       /**
         * The scripts supported by the font.
         */
-      var subsets: js.UndefOr[js.Array[String]] = js.native
+      var subsets: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The available variants for the font.
         */
-      var variants: js.UndefOr[js.Array[String]] = js.native
+      var variants: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * The font version.
         */
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
     }
     object SchemaWebfont {
       
@@ -258,18 +258,17 @@ object webfontsV1Mod {
       }
     }
     
-    @js.native
     trait SchemaWebfontList extends StObject {
       
       /**
         * The list of fonts currently served by the Google Fonts API.
         */
-      var items: js.UndefOr[js.Array[SchemaWebfont]] = js.native
+      var items: js.UndefOr[js.Array[SchemaWebfont]] = js.undefined
       
       /**
         * This kind represents a list of webfont objects in the webfonts service.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SchemaWebfontList {
       
@@ -299,46 +298,45 @@ object webfontsV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

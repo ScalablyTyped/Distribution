@@ -2,22 +2,20 @@ package typings.googleAppsScript.GoogleAppsScript.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of enums used by StaticMap.
   */
-@js.native
 trait StaticMapEnums extends StObject {
   
-  var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any = js.native
+  var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any
   
-  var Format: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Format */ js.Any = js.native
+  var Format: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Format */ js.Any
   
-  var MarkerSize: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MarkerSize */ js.Any = js.native
+  var MarkerSize: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MarkerSize */ js.Any
   
-  var Type: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type */ js.Any = js.native
+  var Type: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Type */ js.Any
 }
 object StaticMapEnums {
   

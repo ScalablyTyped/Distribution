@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1SubjectAccessReviewMod {
@@ -28,7 +27,7 @@ object v1SubjectAccessReviewMod {
       */
     def this(name: String) = this()
     def this(name: String, args: SubjectAccessReviewArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SubjectAccessReviewArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object v1SubjectAccessReviewMod {
   /* static members */
   object SubjectAccessReview {
     
+    @JSImport("@pulumi/kubernetes/authorization/v1/subjectAccessReview", "SubjectAccessReview")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SubjectAccessReview resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -64,41 +67,37 @@ object v1SubjectAccessReviewMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1/subjectAccessReview", "SubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SubjectAccessReview = js.native
-    @JSImport("@pulumi/kubernetes/authorization/v1/subjectAccessReview", "SubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): SubjectAccessReview = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SubjectAccessReview]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): SubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SubjectAccessReview]
     
     /**
       * Returns true if the given object is an instance of SubjectAccessReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1/subjectAccessReview", "SubjectAccessReview.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean]
   }
   
-  @js.native
   trait SubjectAccessReviewArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[authorizationDotk8sDotioSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[authorizationDotk8sDotioSlashv1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.SubjectAccessReview]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.SubjectAccessReview]] = js.undefined
     
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Spec holds information about the request being evaluated
       */
-    val spec: Input[typings.pulumiKubernetes.inputMod.authorization.v1.SubjectAccessReviewSpec] = js.native
+    val spec: Input[typings.pulumiKubernetes.inputMod.authorization.v1.SubjectAccessReviewSpec]
   }
   object SubjectAccessReviewArgs {
     

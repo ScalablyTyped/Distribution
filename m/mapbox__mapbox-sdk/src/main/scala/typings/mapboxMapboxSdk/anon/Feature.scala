@@ -3,17 +3,15 @@ package typings.mapboxMapboxSdk.anon
 import typings.mapboxMapboxSdk.datasetsMod.DataSetsFeature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feature extends StObject {
   
-  var datasetId: String = js.native
+  var datasetId: String
   
-  var feature: DataSetsFeature = js.native
+  var feature: DataSetsFeature
   
-  var featureId: String = js.native
+  var featureId: String
 }
 object Feature {
   

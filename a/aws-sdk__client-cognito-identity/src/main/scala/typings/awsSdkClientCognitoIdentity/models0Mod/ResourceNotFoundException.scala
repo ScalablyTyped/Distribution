@@ -6,40 +6,38 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceNotFoundException
-  extends SmithyException
+  extends StObject
+     with SmithyException
      with MetadataBearer {
   
   @JSName("$fault")
-  var $fault_ResourceNotFoundException: client = js.native
+  var $fault_ResourceNotFoundException: client
   
   /**
     * <p>The message returned by a ResourceNotFoundException.</p>
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_ResourceNotFoundException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceNotFoundException = js.native
+  var name_ResourceNotFoundException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceNotFoundException
 }
 object ResourceNotFoundException {
   
   @scala.inline
-  def apply(
-    $fault: client,
-    $metadata: ResponseMetadata,
-    name: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.ResourceNotFoundException
-  ): ResourceNotFoundException = {
-    val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], $metadata = $metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply($metadata: ResponseMetadata): ResourceNotFoundException = {
+    val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "ResourceNotFoundException")
     __obj.asInstanceOf[ResourceNotFoundException]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ResourceNotFoundException.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "ResourceNotFoundException")
   @js.native
-  def filterSensitiveLog(obj: ResourceNotFoundException): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: ResourceNotFoundException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class ResourceNotFoundExceptionMutableBuilder[Self <: ResourceNotFoundException] (val x: Self) extends AnyVal {

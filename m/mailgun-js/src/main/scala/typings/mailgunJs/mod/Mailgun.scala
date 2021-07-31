@@ -10,7 +10,6 @@ import typings.mailgunJs.mod.validation.ValidationOptionsPrivate
 import typings.mailgunJs.mod.validation.ValidationOptionsPublic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait Mailgun extends StObject {
   
   var Attachment: Instantiable1[/* params */ AttachmentParams, typings.mailgunJs.mod.Attachment] = js.native
   
-  def delete(resource: String): js.Promise[_] = js.native
+  def delete(resource: String): js.Promise[js.Any] = js.native
   def delete(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def delete(resource: String, data: js.Any): js.Promise[_] = js.native
+  def delete(resource: String, data: js.Any): js.Promise[js.Any] = js.native
   def delete(
     resource: String,
     data: js.Any,
@@ -30,10 +29,10 @@ trait Mailgun extends StObject {
   var delete_Original: MailgunRequest = js.native
   
   // Generic requests
-  def get(resource: String): js.Promise[_] = js.native
+  def get(resource: String): js.Promise[js.Any] = js.native
   // Generic requests
   def get(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def get(resource: String, data: js.Any): js.Promise[_] = js.native
+  def get(resource: String, data: js.Any): js.Promise[js.Any] = js.native
   // Generic requests
   def get(
     resource: String,
@@ -51,9 +50,9 @@ trait Mailgun extends StObject {
   def parse(addressList: js.Array[String]): js.Promise[ParseResponse] = js.native
   def parse(addressList: js.Array[String], callback: ValidationCallback): js.Promise[ParseResponse] = js.native
   
-  def post(resource: String): js.Promise[_] = js.native
+  def post(resource: String): js.Promise[js.Any] = js.native
   def post(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def post(resource: String, data: js.Any): js.Promise[_] = js.native
+  def post(resource: String, data: js.Any): js.Promise[js.Any] = js.native
   def post(
     resource: String,
     data: js.Any,
@@ -62,9 +61,9 @@ trait Mailgun extends StObject {
   @JSName("post")
   var post_Original: MailgunRequest = js.native
   
-  def put(resource: String): js.Promise[_] = js.native
+  def put(resource: String): js.Promise[js.Any] = js.native
   def put(resource: String, callback: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
-  def put(resource: String, data: js.Any): js.Promise[_] = js.native
+  def put(resource: String, data: js.Any): js.Promise[js.Any] = js.native
   def put(
     resource: String,
     data: js.Any,

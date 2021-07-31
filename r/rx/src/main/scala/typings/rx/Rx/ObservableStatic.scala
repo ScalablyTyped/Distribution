@@ -8,7 +8,6 @@ import typings.std.Error
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -356,18 +355,18 @@ trait ObservableStatic extends StObject {
   def from[T, TResult](
     array: ArrayOrIterable[T],
     mapFn: js.Function2[/* value */ T, /* index */ Double, TResult],
-    thisArg: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): Observable[TResult] = js.native
-  def from[T, TResult](
-    array: ArrayOrIterable[T],
-    mapFn: js.Function2[/* value */ T, /* index */ Double, TResult],
     thisArg: js.Any
   ): Observable[TResult] = js.native
   def from[T, TResult](
     array: ArrayOrIterable[T],
     mapFn: js.Function2[/* value */ T, /* index */ Double, TResult],
     thisArg: js.Any,
+    scheduler: IScheduler
+  ): Observable[TResult] = js.native
+  def from[T, TResult](
+    array: ArrayOrIterable[T],
+    mapFn: js.Function2[/* value */ T, /* index */ Double, TResult],
+    thisArg: Unit,
     scheduler: IScheduler
   ): Observable[TResult] = js.native
   
@@ -397,19 +396,21 @@ trait ObservableStatic extends StObject {
     * @param {Function} [selector] A selector which takes the arguments from the callback to produce a single item to yield on next.
     * @returns {Function} A function, when executed with the required parameters minus the callback, produces an Observable sequence with a single value of the arguments to the callback as an array.
     */
-  def fromCallback[TResult, T1](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, _], _]): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def fromCallback[TResult, T1](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, _], _],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, js.Any], js.Any]
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def fromCallback[TResult, T1](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, _], _],
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, js.Any], js.Any],
     context: js.Any
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def fromCallback[TResult, T1](
-    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, _], _],
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, js.Any], js.Any],
     context: js.Any,
+    selector: js.Function
+  ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
+  def fromCallback[TResult, T1](
+    func: js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* result */ TResult, js.Any], js.Any],
+    context: Unit,
     selector: js.Function
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   /**
@@ -421,20 +422,40 @@ trait ObservableStatic extends StObject {
     * @returns {Function} A function, when executed with the required parameters minus the callback, produces an Observable sequence with a single value of the arguments to the callback as an array.
     */
   def fromCallback[TResult, T1, T2](
-    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* callback */ js.Function1[/* result */ TResult, _], _]
+    func: js.Function3[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ]
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   def fromCallback[TResult, T1, T2](
-    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* callback */ js.Function1[/* result */ TResult, _], _],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
-  def fromCallback[TResult, T1, T2](
-    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* callback */ js.Function1[/* result */ TResult, _], _],
+    func: js.Function3[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
     context: js.Any
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   def fromCallback[TResult, T1, T2](
-    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* callback */ js.Function1[/* result */ TResult, _], _],
+    func: js.Function3[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
+  def fromCallback[TResult, T1, T2](
+    func: js.Function3[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   /**
@@ -450,8 +471,8 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   def fromCallback[TResult, T1, T2, T3](
@@ -459,19 +480,8 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
-  def fromCallback[TResult, T1, T2, T3](
-    func: js.Function4[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
@@ -480,10 +490,21 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
+  def fromCallback[TResult, T1, T2, T3](
+    func: js.Function4[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   /**
@@ -500,8 +521,8 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   def fromCallback[TResult, T1, T2, T3, T4](
@@ -510,20 +531,8 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4](
-    func: js.Function5[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
@@ -533,10 +542,22 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4](
+    func: js.Function5[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   /**
@@ -554,8 +575,8 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ T1, 
@@ -572,28 +593,8 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function5[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    Observable[TResult]
-  ] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4, T5](
-    func: js.Function6[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function5[
@@ -611,10 +612,30 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function5[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    Observable[TResult]
+  ] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4, T5](
+    func: js.Function6[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function5[
     /* arg1 */ T1, 
@@ -640,8 +661,8 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function6[
     /* arg1 */ T1, 
@@ -660,30 +681,8 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function6[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    Observable[TResult]
-  ] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4, T5, T6](
-    func: js.Function7[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function6[
@@ -703,10 +702,32 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function6[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    Observable[TResult]
+  ] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4, T5, T6](
+    func: js.Function7[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function6[
     /* arg1 */ T1, 
@@ -734,8 +755,8 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function7[
     /* arg1 */ T1, 
@@ -756,32 +777,8 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function7[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    Observable[TResult]
-  ] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7](
-    func: js.Function8[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function7[
@@ -803,10 +800,34 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function7[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    Observable[TResult]
+  ] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7](
+    func: js.Function8[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function7[
     /* arg1 */ T1, 
@@ -836,8 +857,8 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function8[
     /* arg1 */ T1, 
@@ -860,34 +881,8 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function8[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    /* arg8 */ T8, 
-    Observable[TResult]
-  ] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8](
-    func: js.Function9[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* arg8 */ T8, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function8[
@@ -911,10 +906,36 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function8[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    /* arg8 */ T8, 
+    Observable[TResult]
+  ] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8](
+    func: js.Function9[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* arg8 */ T8, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function8[
     /* arg1 */ T1, 
@@ -946,8 +967,8 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function9[
     /* arg1 */ T1, 
@@ -972,36 +993,8 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function9[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    /* arg8 */ T8, 
-    /* arg9 */ T9, 
-    Observable[TResult]
-  ] = js.native
-  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8, T9](
-    func: js.Function10[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* arg8 */ T8, 
-      /* arg9 */ T9, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function9[
@@ -1027,10 +1020,38 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function1[/* result */ TResult, _], 
-      _
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function9[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    /* arg8 */ T8, 
+    /* arg9 */ T9, 
+    Observable[TResult]
+  ] = js.native
+  def fromCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    func: js.Function10[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* arg8 */ T8, 
+      /* arg9 */ T9, 
+      /* callback */ js.Function1[/* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function9[
     /* arg1 */ T1, 
@@ -1053,7 +1074,7 @@ trait ObservableStatic extends StObject {
     * @returns {Observable} An observable sequence of events from the specified element and the specified event.
     */
   def fromEvent[T](element: Off, eventName: String): Observable[T] = js.native
-  def fromEvent[T](element: Off, eventName: String, selector: js.Function1[/* arguments */ js.Array[_], T]): Observable[T] = js.native
+  def fromEvent[T](element: Off, eventName: String, selector: js.Function1[/* arguments */ js.Array[js.Any], T]): Observable[T] = js.native
   /**
     * Creates an observable sequence by adding an event listener to the matching DOMElement or each item in the NodeList.
     * @param {Object} element The DOMElement or NodeList to attach a listener.
@@ -1062,7 +1083,11 @@ trait ObservableStatic extends StObject {
     * @returns {Observable} An observable sequence of events from the specified element and the specified event.
     */
   def fromEvent[T](element: EventTarget, eventName: String): Observable[T] = js.native
-  def fromEvent[T](element: EventTarget, eventName: String, selector: js.Function1[/* arguments */ js.Array[_], T]): Observable[T] = js.native
+  def fromEvent[T](
+    element: EventTarget,
+    eventName: String,
+    selector: js.Function1[/* arguments */ js.Array[js.Any], T]
+  ): Observable[T] = js.native
   
   /**
     * Creates an observable sequence from an event emitter via an addHandler/removeHandler pair.
@@ -1078,7 +1103,7 @@ trait ObservableStatic extends StObject {
   def fromEventPattern[T](
     addHandler: js.Function1[/* handler */ js.Function, Unit],
     removeHandler: js.Function1[/* handler */ js.Function, Unit],
-    selector: js.Function1[/* arguments */ js.Array[_], T]
+    selector: js.Function1[/* arguments */ js.Array[js.Any], T]
   ): Observable[T] = js.native
   
   /**
@@ -1089,9 +1114,9 @@ trait ObservableStatic extends StObject {
     * @returns {Function} An async function which when applied, returns an observable sequence with the callback arguments as an array.
     */
   def fromNodeCallback[TResult](func: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
-  def fromNodeCallback[TResult](func: js.Function, context: js.UndefOr[scala.Nothing], selector: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
   def fromNodeCallback[TResult](func: js.Function, context: js.Any): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
   def fromNodeCallback[TResult](func: js.Function, context: js.Any, selector: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
+  def fromNodeCallback[TResult](func: js.Function, context: Unit, selector: js.Function): js.Function1[/* repeated */ js.Any, Observable[TResult]] = js.native
   /**
     * Converts a Node.js callback style function to an observable sequence.  This must be in function (err, ...) format.
     * @param {Function} func The function to call
@@ -1102,34 +1127,34 @@ trait ObservableStatic extends StObject {
   def fromNodeCallback[TResult, T1](
     func: js.Function2[
       /* arg1 */ T1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def fromNodeCallback[TResult, T1](
     func: js.Function2[
       /* arg1 */ T1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
-  def fromNodeCallback[TResult, T1](
-    func: js.Function2[
-      /* arg1 */ T1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def fromNodeCallback[TResult, T1](
     func: js.Function2[
       /* arg1 */ T1, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
+  def fromNodeCallback[TResult, T1](
+    func: js.Function2[
+      /* arg1 */ T1, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   /**
@@ -1143,26 +1168,16 @@ trait ObservableStatic extends StObject {
     func: js.Function3[
       /* arg1 */ T1, 
       /* arg2 */ T2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   def fromNodeCallback[TResult, T1, T2](
     func: js.Function3[
       /* arg1 */ T1, 
       /* arg2 */ T2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
-  def fromNodeCallback[TResult, T1, T2](
-    func: js.Function3[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
@@ -1170,10 +1185,20 @@ trait ObservableStatic extends StObject {
     func: js.Function3[
       /* arg1 */ T1, 
       /* arg2 */ T2, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
+  def fromNodeCallback[TResult, T1, T2](
+    func: js.Function3[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   /**
@@ -1188,8 +1213,8 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   def fromNodeCallback[TResult, T1, T2, T3](
@@ -1197,19 +1222,8 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3](
-    func: js.Function4[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
@@ -1218,10 +1232,21 @@ trait ObservableStatic extends StObject {
       /* arg1 */ T1, 
       /* arg2 */ T2, 
       /* arg3 */ T3, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3](
+    func: js.Function4[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   /**
@@ -1237,8 +1262,8 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   def fromNodeCallback[TResult, T1, T2, T3, T4](
@@ -1247,20 +1272,8 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4](
-    func: js.Function5[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
@@ -1270,10 +1283,22 @@ trait ObservableStatic extends StObject {
       /* arg2 */ T2, 
       /* arg3 */ T3, 
       /* arg4 */ T4, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4](
+    func: js.Function5[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   /**
@@ -1290,8 +1315,8 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function5[
     /* arg1 */ T1, 
@@ -1308,28 +1333,8 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function5[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    Observable[TResult]
-  ] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4, T5](
-    func: js.Function6[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function5[
@@ -1347,10 +1352,30 @@ trait ObservableStatic extends StObject {
       /* arg3 */ T3, 
       /* arg4 */ T4, 
       /* arg5 */ T5, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function5[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    Observable[TResult]
+  ] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4, T5](
+    func: js.Function6[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function5[
     /* arg1 */ T1, 
@@ -1375,8 +1400,8 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function6[
     /* arg1 */ T1, 
@@ -1395,30 +1420,8 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function6[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    Observable[TResult]
-  ] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6](
-    func: js.Function7[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function6[
@@ -1438,10 +1441,32 @@ trait ObservableStatic extends StObject {
       /* arg4 */ T4, 
       /* arg5 */ T5, 
       /* arg6 */ T6, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function6[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    Observable[TResult]
+  ] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6](
+    func: js.Function7[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function6[
     /* arg1 */ T1, 
@@ -1468,8 +1493,8 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function7[
     /* arg1 */ T1, 
@@ -1490,32 +1515,8 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function7[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    Observable[TResult]
-  ] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7](
-    func: js.Function8[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function7[
@@ -1537,10 +1538,34 @@ trait ObservableStatic extends StObject {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ T7, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function7[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    Observable[TResult]
+  ] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7](
+    func: js.Function8[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function7[
     /* arg1 */ T1, 
@@ -1569,8 +1594,8 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function8[
     /* arg1 */ T1, 
@@ -1593,34 +1618,8 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function8[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    /* arg8 */ T8, 
-    Observable[TResult]
-  ] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8](
-    func: js.Function9[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* arg8 */ T8, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function8[
@@ -1644,10 +1643,36 @@ trait ObservableStatic extends StObject {
       /* arg6 */ T6, 
       /* arg7 */ T7, 
       /* arg8 */ T8, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function8[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    /* arg8 */ T8, 
+    Observable[TResult]
+  ] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8](
+    func: js.Function9[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* arg8 */ T8, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function8[
     /* arg1 */ T1, 
@@ -1678,8 +1703,8 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ]
   ): js.Function9[
     /* arg1 */ T1, 
@@ -1704,36 +1729,8 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
-    ],
-    context: js.UndefOr[scala.Nothing],
-    selector: js.Function
-  ): js.Function9[
-    /* arg1 */ T1, 
-    /* arg2 */ T2, 
-    /* arg3 */ T3, 
-    /* arg4 */ T4, 
-    /* arg5 */ T5, 
-    /* arg6 */ T6, 
-    /* arg7 */ T7, 
-    /* arg8 */ T8, 
-    /* arg9 */ T9, 
-    Observable[TResult]
-  ] = js.native
-  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8, T9](
-    func: js.Function10[
-      /* arg1 */ T1, 
-      /* arg2 */ T2, 
-      /* arg3 */ T3, 
-      /* arg4 */ T4, 
-      /* arg5 */ T5, 
-      /* arg6 */ T6, 
-      /* arg7 */ T7, 
-      /* arg8 */ T8, 
-      /* arg9 */ T9, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any
   ): js.Function9[
@@ -1759,10 +1756,38 @@ trait ObservableStatic extends StObject {
       /* arg7 */ T7, 
       /* arg8 */ T8, 
       /* arg9 */ T9, 
-      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, _], 
-      _
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
     ],
     context: js.Any,
+    selector: js.Function
+  ): js.Function9[
+    /* arg1 */ T1, 
+    /* arg2 */ T2, 
+    /* arg3 */ T3, 
+    /* arg4 */ T4, 
+    /* arg5 */ T5, 
+    /* arg6 */ T6, 
+    /* arg7 */ T7, 
+    /* arg8 */ T8, 
+    /* arg9 */ T9, 
+    Observable[TResult]
+  ] = js.native
+  def fromNodeCallback[TResult, T1, T2, T3, T4, T5, T6, T7, T8, T9](
+    func: js.Function10[
+      /* arg1 */ T1, 
+      /* arg2 */ T2, 
+      /* arg3 */ T3, 
+      /* arg4 */ T4, 
+      /* arg5 */ T5, 
+      /* arg6 */ T6, 
+      /* arg7 */ T7, 
+      /* arg8 */ T8, 
+      /* arg9 */ T9, 
+      /* callback */ js.Function2[/* err */ js.Any, /* result */ TResult, js.Any], 
+      js.Any
+    ],
+    context: Unit,
     selector: js.Function
   ): js.Function9[
     /* arg1 */ T1, 
@@ -2012,7 +2037,7 @@ trait ObservableStatic extends StObject {
     */
   def ofObjectChanges[T](obj: T): Observable[ObjectObserveChange[T]] = js.native
   
-  def ofWithScheduler[T](scheduler: js.UndefOr[scala.Nothing], values: T*): Observable[T] = js.native
+  def ofWithScheduler[T](scheduler: Unit, values: T*): Observable[T] = js.native
   /**
     *  This method creates a new Observable instance with a variable number of arguments, regardless of number or type of the arguments.
     * @param {Scheduler} scheduler A scheduler to use for scheduling the arguments.
@@ -2084,7 +2109,6 @@ trait ObservableStatic extends StObject {
     * @returns {Observable} An observable sequence that repeats the given element the specified number of times.
     */
   def repeat[T](value: T): Observable[T] = js.native
-  def repeat[T](value: T, repeatCount: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Double): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Double, scheduler: IScheduler): Observable[T] = js.native
   def repeat[T](value: T, repeatCount: Unit): Observable[T] = js.native
@@ -2120,7 +2144,7 @@ trait ObservableStatic extends StObject {
     * * Multiple subscriptions to the resulting sequence can observe the function's result.
     */
   def start[T](func: js.Function0[T]): Observable[T] = js.native
-  def start[T](func: js.Function0[T], scheduler: js.UndefOr[scala.Nothing], context: js.Any): Observable[T] = js.native
+  def start[T](func: js.Function0[T], scheduler: Unit, context: js.Any): Observable[T] = js.native
   def start[T](func: js.Function0[T], scheduler: IScheduler): Observable[T] = js.native
   def start[T](func: js.Function0[T], scheduler: IScheduler, context: js.Any): Observable[T] = js.native
   
@@ -2175,9 +2199,9 @@ trait ObservableStatic extends StObject {
     * @returns {Function} Asynchronous function.
     */
   def toAsync[TResult](func: js.Function0[TResult]): js.Function0[Observable[TResult]] = js.native
-  def toAsync[TResult](func: js.Function0[TResult], context: js.UndefOr[scala.Nothing], scheduler: IScheduler): js.Function0[Observable[TResult]] = js.native
   def toAsync[TResult](func: js.Function0[TResult], context: js.Any): js.Function0[Observable[TResult]] = js.native
   def toAsync[TResult](func: js.Function0[TResult], context: js.Any, scheduler: IScheduler): js.Function0[Observable[TResult]] = js.native
+  def toAsync[TResult](func: js.Function0[TResult], context: Unit, scheduler: IScheduler): js.Function0[Observable[TResult]] = js.native
   /**
     * Converts the function into an asynchronous function. Each invocation of the resulting asynchronous function causes an invocation of the original synchronous function on the specified scheduler.
     * @param {Function} function Function to convert to an asynchronous function.
@@ -2186,13 +2210,9 @@ trait ObservableStatic extends StObject {
     * @returns {Function} Asynchronous function.
     */
   def toAsync[T1, TResult](func: js.Function1[/* arg1 */ T1, TResult]): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
-  def toAsync[T1, TResult](
-    func: js.Function1[/* arg1 */ T1, TResult],
-    context: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def toAsync[T1, TResult](func: js.Function1[/* arg1 */ T1, TResult], context: js.Any): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   def toAsync[T1, TResult](func: js.Function1[/* arg1 */ T1, TResult], context: js.Any, scheduler: IScheduler): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
+  def toAsync[T1, TResult](func: js.Function1[/* arg1 */ T1, TResult], context: Unit, scheduler: IScheduler): js.Function1[/* arg1 */ T1, Observable[TResult]] = js.native
   /**
     * Converts the function into an asynchronous function. Each invocation of the resulting asynchronous function causes an invocation of the original synchronous function on the specified scheduler.
     * @param {Function} function Function to convert to an asynchronous function.
@@ -2201,13 +2221,9 @@ trait ObservableStatic extends StObject {
     * @returns {Function} Asynchronous function.
     */
   def toAsync[T1, T2, TResult](func: js.Function2[/* arg1 */ T1, /* arg2 */ T2, TResult]): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
-  def toAsync[T1, T2, TResult](
-    func: js.Function2[/* arg1 */ T1, /* arg2 */ T2, TResult],
-    context: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   def toAsync[T1, T2, TResult](func: js.Function2[/* arg1 */ T1, /* arg2 */ T2, TResult], context: js.Any): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   def toAsync[T1, T2, TResult](func: js.Function2[/* arg1 */ T1, /* arg2 */ T2, TResult], context: js.Any, scheduler: IScheduler): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
+  def toAsync[T1, T2, TResult](func: js.Function2[/* arg1 */ T1, /* arg2 */ T2, TResult], context: Unit, scheduler: IScheduler): js.Function2[/* arg1 */ T1, /* arg2 */ T2, Observable[TResult]] = js.native
   /**
     * Converts the function into an asynchronous function. Each invocation of the resulting asynchronous function causes an invocation of the original synchronous function on the specified scheduler.
     * @param {Function} function Function to convert to an asynchronous function.
@@ -2216,15 +2232,15 @@ trait ObservableStatic extends StObject {
     * @returns {Function} Asynchronous function.
     */
   def toAsync[T1, T2, T3, TResult](func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, TResult]): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
-  def toAsync[T1, T2, T3, TResult](
-    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, TResult],
-    context: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, TResult](func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, TResult], context: js.Any): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, TResult](
     func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, TResult],
     context: js.Any,
+    scheduler: IScheduler
+  ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
+  def toAsync[T1, T2, T3, TResult](
+    func: js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, TResult],
+    context: Unit,
     scheduler: IScheduler
   ): js.Function3[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, Observable[TResult]] = js.native
   /**
@@ -2237,16 +2253,16 @@ trait ObservableStatic extends StObject {
   def toAsync[T1, T2, T3, T4, TResult](func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, TResult]): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, T4, TResult](
     func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, TResult],
-    context: js.UndefOr[scala.Nothing],
-    scheduler: IScheduler
-  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
-  def toAsync[T1, T2, T3, T4, TResult](
-    func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, TResult],
     context: js.Any
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   def toAsync[T1, T2, T3, T4, TResult](
     func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, TResult],
     context: js.Any,
+    scheduler: IScheduler
+  ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
+  def toAsync[T1, T2, T3, T4, TResult](
+    func: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, TResult],
+    context: Unit,
     scheduler: IScheduler
   ): js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* arg4 */ T4, Observable[TResult]] = js.native
   
@@ -2256,7 +2272,7 @@ trait ObservableStatic extends StObject {
     * @param {Function} observableFactory Factory function to obtain an observable sequence that depends on the obtained resource.
     * @returns {Observable} An observable sequence whose lifetime controls the lifetime of the dependent resource object.
     */
-  def using[TSource, TResource /* <: IDisposable */](
+  def `using`[TSource, TResource /* <: IDisposable */](
     resourceFactory: js.Function0[TResource],
     observableFactory: js.Function1[/* resource */ TResource, Observable[TSource]]
   ): Observable[TSource] = js.native

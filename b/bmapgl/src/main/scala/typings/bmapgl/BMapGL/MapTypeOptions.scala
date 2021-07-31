@@ -2,21 +2,19 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeOptions extends StObject {
   
-  var errorImageUrl: js.UndefOr[String] = js.native
+  var errorImageUrl: js.UndefOr[String] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var textColor: js.UndefOr[Double] = js.native
+  var textColor: js.UndefOr[Double] = js.undefined
   
-  var tips: js.UndefOr[String] = js.native
+  var tips: js.UndefOr[String] = js.undefined
 }
 object MapTypeOptions {
   

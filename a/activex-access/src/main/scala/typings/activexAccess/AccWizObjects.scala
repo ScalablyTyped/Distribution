@@ -39,7 +39,6 @@ import typings.activexStdole.stdole.OLE_COLOR
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AccWizObjects {
@@ -48,20 +47,19 @@ object AccWizObjects {
     
     type FieldListDragOverArgNames = js.Tuple6[SourceCtlName, SourceFieldList, SourceRow, State, X, Y]
     
-    @js.native
     trait FieldListDragOverParameter extends StObject {
       
-      val SourceCtlName: String = js.native
+      val SourceCtlName: String
       
-      val SourceFieldList: Double = js.native
+      val SourceFieldList: Double
       
-      val SourceRow: Double = js.native
+      val SourceRow: Double
       
-      val State: Double = js.native
+      val State: Double
       
-      val X: Double = js.native
+      val X: Double
       
-      val Y: Double = js.native
+      val Y: Double
     }
     object FieldListDragOverParameter {
       
@@ -103,20 +101,19 @@ object AccWizObjects {
     
     type FieldListFldListDragDropArgNames = js.Tuple6[SourceCtlName, SourceFieldList, SourceRow, TargetCtlName, TargetFieldList, TargetRow]
     
-    @js.native
     trait FieldListFldListDragDropParameter extends StObject {
       
-      val SourceCtlName: String = js.native
+      val SourceCtlName: String
       
-      val SourceFieldList: Double = js.native
+      val SourceFieldList: Double
       
-      val SourceRow: Double = js.native
+      val SourceRow: Double
       
-      val TargetCtlName: String = js.native
+      val TargetCtlName: String
       
-      val TargetFieldList: Double = js.native
+      val TargetFieldList: Double
       
-      val TargetRow: Double = js.native
+      val TargetRow: Double
     }
     object FieldListFldListDragDropParameter {
       
@@ -158,22 +155,21 @@ object AccWizObjects {
     
     type FieldListFldListDragOverArgNames = js.Tuple7[SourceCtlName, SourceFieldList, SourceRow, TargetCtlName, TargetFieldList, TargetRow, State]
     
-    @js.native
     trait FieldListFldListDragOverParameter extends StObject {
       
-      val SourceCtlName: String = js.native
+      val SourceCtlName: String
       
-      val SourceFieldList: Double = js.native
+      val SourceFieldList: Double
       
-      val SourceRow: Double = js.native
+      val SourceRow: Double
       
-      val State: Double = js.native
+      val State: Double
       
-      val TargetCtlName: String = js.native
+      val TargetCtlName: String
       
-      val TargetFieldList: Double = js.native
+      val TargetFieldList: Double
       
-      val TargetRow: Double = js.native
+      val TargetRow: Double
     }
     object FieldListFldListDragOverParameter {
       
@@ -219,11 +215,10 @@ object AccWizObjects {
   }
   
   /** Field List Control */
-  @js.native
   trait FieldList extends StObject {
     
     @JSName("AccWizObjects.FieldList_typekey")
-    var AccWizObjectsDotFieldList_typekey: FieldList = js.native
+    var AccWizObjectsDotFieldList_typekey: FieldList
     
     def AddFieldList(
       bstrCaption: String,
@@ -234,7 +229,7 @@ object AccWizObjects {
       nMultiSelectType: Double,
       cCols: Double,
       fShowPictures: Boolean
-    ): Unit = js.native
+    ): Unit
     
     def AddJoinLine(
       IFieldList: Double,
@@ -242,37 +237,37 @@ object AccWizObjects {
       iForeignFieldList: Double,
       iForeignField: Double,
       lAttribs: Double
-    ): Unit = js.native
+    ): Unit
     
-    def DeleteFieldList(IFieldList: Double): Unit = js.native
+    def DeleteFieldList(IFieldList: Double): Unit
     
-    def DeleteJoinLine(IJoinLine: Double): Unit = js.native
+    def DeleteJoinLine(IJoinLine: Double): Unit
     
-    val FieldListCount: Double = js.native
+    val FieldListCount: Double
     
-    def FieldLists(IFieldList: Double): js.Any = js.native
+    def FieldLists(IFieldList: Double): js.Any
     
-    var HScrollPos: Double = js.native
+    var HScrollPos: Double
     
-    val JoinLineCount: Double = js.native
+    val JoinLineCount: Double
     
-    def JoinLines(IJoinLine: Double): js.Any = js.native
+    def JoinLines(IJoinLine: Double): js.Any
     
-    var PersistentHighlight: Boolean = js.native
+    var PersistentHighlight: Boolean
     
-    var Picture: IPictureDisp = js.native
+    var Picture: IPictureDisp
     
-    var PictureCols: Double = js.native
+    var PictureCols: Double
     
-    var PictureRows: Double = js.native
+    var PictureRows: Double
     
-    var ScrollBars: Double = js.native
+    var ScrollBars: Double
     
-    var SelectedFieldListIndex: Double = js.native
+    var SelectedFieldListIndex: Double
     
-    def SetCursor(nCursorID: Double): Unit = js.native
+    def SetCursor(nCursorID: Double): Unit
     
-    var VScrollPos: Double = js.native
+    var VScrollPos: Double
   }
   object FieldList {
     
@@ -362,71 +357,70 @@ object AccWizObjects {
   }
   
   /** ImexGrid Control */
-  @js.native
   trait ImexGrid extends StObject {
     
     @JSName("AccWizObjects.ImexGrid_typekey")
-    var AccWizObjectsDotImexGrid_typekey: ImexGrid = js.native
+    var AccWizObjectsDotImexGrid_typekey: ImexGrid
     
-    def AddColumn(ColumnCaption: String, ColumnWidth: Double, Index: Double): Unit = js.native
+    def AddColumn(ColumnCaption: String, ColumnWidth: Double, Index: Double): Unit
     
-    def AddRow(RowText: String, Index: Double): Unit = js.native
+    def AddRow(RowText: String, Index: Double): Unit
     
-    var AllowColumnSizing: Boolean = js.native
+    var AllowColumnSizing: Boolean
     
-    var BackColor: OLE_COLOR = js.native
+    var BackColor: OLE_COLOR
     
-    def CalcBestColumns(): Unit = js.native
+    def CalcBestColumns(): Unit
     
-    var Caption: String = js.native
+    var Caption: String
     
-    def ClearColumns(): Unit = js.native
+    def ClearColumns(): Unit
     
-    def ClearRows(): Unit = js.native
+    def ClearRows(): Unit
     
-    var ColumnClickBehavior: Double = js.native
+    var ColumnClickBehavior: Double
     
-    val ColumnCount: Double = js.native
+    val ColumnCount: Double
     
-    var ColumnState: js.Any = js.native
+    var ColumnState: js.Any
     
-    def Columns(ColumnNumber: Double): js.Any = js.native
+    def Columns(ColumnNumber: Double): js.Any
     
-    def DeleteColumn(Index: Double): Unit = js.native
+    def DeleteColumn(Index: Double): Unit
     
-    def DeleteRow(Index: Double): Unit = js.native
+    def DeleteRow(Index: Double): Unit
     
-    var Delimiters: String = js.native
+    var Delimiters: String
     
-    var DrawTextLogicalOrder: Boolean = js.native
+    var DrawTextLogicalOrder: Boolean
     
-    var FirstRowNumber: Double = js.native
+    var FirstRowNumber: Double
     
-    var Font: IFontDisp = js.native
+    var Font: IFontDisp
     
-    var GridBackColor: OLE_COLOR = js.native
+    var GridBackColor: OLE_COLOR
     
-    var GridFont: IFontDisp = js.native
+    var GridFont: IFontDisp
     
-    var GridHeader: Double = js.native
+    var GridHeader: Double
     
-    var Painting: Boolean = js.native
+    var Painting: Boolean
     
-    def Refresh(): Unit = js.native
+    def Refresh(): Unit
     
-    def ResetHScrollPos(): Unit = js.native
+    def ResetHScrollPos(): Unit
     
-    def ResetVScrollPos(): Unit = js.native
+    def ResetVScrollPos(): Unit
     
-    val RowCount: Double = js.native
+    val RowCount: Double
     
-    def RowText(RowNumber: Double): String = js.native
+    def RowText(RowNumber: Double): String
     
-    var ShowColLines: Boolean = js.native
+    var ShowColLines: Boolean
     
-    var ShowRowHeaders: Boolean = js.native
+    var ShowRowHeaders: Boolean
     
-    var StringDelimiters: String = js.native
+    var StringDelimiters: String
   }
   object ImexGrid {
     
@@ -665,12 +659,11 @@ object AccWizObjects {
     def WIZ_CSIDL_TEMPLATES: `21` = 21.asInstanceOf[`21`]
   }
   
-  @js.native
   trait WIZ_FILETIME extends StObject {
     
-    val dwHighDateTime: Double = js.native
+    val dwHighDateTime: Double
     
-    val dwLowDateTime: Double = js.native
+    val dwLowDateTime: Double
   }
   object WIZ_FILETIME {
     
@@ -741,28 +734,27 @@ object AccWizObjects {
     def WIZ_SW_NORMAL: `5` = 5.asInstanceOf[`5`]
   }
   
-  @js.native
   trait WIZ_WIN32_FIND_DATA extends StObject {
     
-    val cAlternate: SafeArray[Double] = js.native
+    val cAlternate: SafeArray[Double]
     
-    val cFileName: SafeArray[Double] = js.native
+    val cFileName: SafeArray[Double]
     
-    val dwFileAttributes: Double = js.native
+    val dwFileAttributes: Double
     
-    val dwReserved0: Double = js.native
+    val dwReserved0: Double
     
-    val dwReserved1: Double = js.native
+    val dwReserved1: Double
     
-    val ftCreationTime: WIZ_FILETIME = js.native
+    val ftCreationTime: WIZ_FILETIME
     
-    val ftLastAccessTime: WIZ_FILETIME = js.native
+    val ftLastAccessTime: WIZ_FILETIME
     
-    val ftLastWriteTime: WIZ_FILETIME = js.native
+    val ftLastWriteTime: WIZ_FILETIME
     
-    val nFileSizeHigh: Double = js.native
+    val nFileSizeHigh: Double
     
-    val nFileSizeLow: Double = js.native
+    val nFileSizeLow: Double
   }
   object WIZ_WIN32_FIND_DATA {
     
@@ -819,65 +811,64 @@ object AccWizObjects {
   }
   
   /** WizShellLinkA Class */
-  @js.native
   trait WizShellLinkA extends StObject {
     
     @JSName("AccWizObjects.WizShellLinkA_typekey")
-    var AccWizObjectsDotWizShellLinkA_typekey: WizShellLinkA = js.native
+    var AccWizObjectsDotWizShellLinkA_typekey: WizShellLinkA
     
     /** GetArguments */
-    def GetArguments(pszArgs: String, cchMaxPath: Double): Unit = js.native
+    def GetArguments(pszArgs: String, cchMaxPath: Double): Unit
     
     /** GetDescription */
-    def GetDescription(pszName: String, cchMaxName: Double): Unit = js.native
+    def GetDescription(pszName: String, cchMaxName: Double): Unit
     
     /** GetHotkey */
-    def GetHotkey(pwHotkey: Double): Unit = js.native
+    def GetHotkey(pwHotkey: Double): Unit
     
     /** GetIDList */
-    def GetIDList(ppidl: WIZ_CSIDL_FLAGS): Unit = js.native
+    def GetIDList(ppidl: WIZ_CSIDL_FLAGS): Unit
     
     /** GetIconLocation */
-    def GetIconLocation(pszIconPath: String, cchIconPath: Double, piIcon: Double): Unit = js.native
+    def GetIconLocation(pszIconPath: String, cchIconPath: Double, piIcon: Double): Unit
     
     /** GetPath */
-    def GetPath(pszFile: String, cchMaxPath: Double, pfd: WIZ_WIN32_FIND_DATA, fflags: Double): Unit = js.native
+    def GetPath(pszFile: String, cchMaxPath: Double, pfd: WIZ_WIN32_FIND_DATA, fflags: Double): Unit
     
     /** GetShowCmd */
-    def GetShowCmd(piShowCmd: WIZ_SW_FLAGS): Unit = js.native
+    def GetShowCmd(piShowCmd: WIZ_SW_FLAGS): Unit
     
     /** GetWorkingDirectory */
-    def GetWorkingDirectory(pszDir: String, cchMaxPath: Double): Unit = js.native
+    def GetWorkingDirectory(pszDir: String, cchMaxPath: Double): Unit
     
     /** Resolve */
-    def Resolve(hWnd: Double, fflags: Double): Unit = js.native
+    def Resolve(hWnd: Double, fflags: Double): Unit
     
     /** SetArguments */
-    def SetArguments(pszArgs: String): Unit = js.native
+    def SetArguments(pszArgs: String): Unit
     
     /** SetDescription */
-    def SetDescription(pszName: String): Unit = js.native
+    def SetDescription(pszName: String): Unit
     
     /** SetHotkey */
-    def SetHotkey(wHotkey: Double): Unit = js.native
+    def SetHotkey(wHotkey: Double): Unit
     
     /** SetIDList */
-    def SetIDList(pidl: WIZ_CSIDL_FLAGS): Unit = js.native
+    def SetIDList(pidl: WIZ_CSIDL_FLAGS): Unit
     
     /** SetIconLocation */
-    def SetIconLocation(pszIconPath: String, iIcon: Double): Unit = js.native
+    def SetIconLocation(pszIconPath: String, iIcon: Double): Unit
     
     /** SetPath */
-    def SetPath(pszFile: String): Unit = js.native
+    def SetPath(pszFile: String): Unit
     
     /** SetRelativePath */
-    def SetRelativePath(pszPathRel: String, dwReserved: Double): Unit = js.native
+    def SetRelativePath(pszPathRel: String, dwReserved: Double): Unit
     
     /** SetShowCmd */
-    def SetShowCmd(iShowCmd: WIZ_SW_FLAGS): Unit = js.native
+    def SetShowCmd(iShowCmd: WIZ_SW_FLAGS): Unit
     
     /** SetWorkingDirectory */
-    def SetWorkingDirectory(pszDir: String): Unit = js.native
+    def SetWorkingDirectory(pszDir: String): Unit
   }
   object WizShellLinkA {
     

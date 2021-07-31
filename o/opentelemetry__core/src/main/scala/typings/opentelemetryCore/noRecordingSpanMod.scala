@@ -4,7 +4,6 @@ import typings.opentelemetryApi.mod.NoopSpan
 import typings.opentelemetryApi.spanContextMod.SpanContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noRecordingSpanMod {

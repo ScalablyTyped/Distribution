@@ -7,15 +7,13 @@ import typings.relayRuntime.relayRuntimeStrings.missing
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingState extends StObject {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var status: aborted | complete | error_ | missing = js.native
+  var status: aborted | complete | error_ | missing
 }
 object LoadingState {
   

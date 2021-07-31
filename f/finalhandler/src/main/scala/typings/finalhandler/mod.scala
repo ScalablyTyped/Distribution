@@ -4,26 +4,26 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("finalhandler", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, res: ServerResponse): js.Function1[/* err */ js.Any, Unit] = js.native
-  @JSImport("finalhandler", JSImport.Namespace)
-  @js.native
-  def apply(req: IncomingMessage, res: ServerResponse, options: Options): js.Function1[/* err */ js.Any, Unit] = js.native
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse): js.Function1[/* err */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.Any, Unit]]
+  @scala.inline
+  def apply(req: IncomingMessage, res: ServerResponse, options: Options): js.Function1[/* err */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].apply(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* err */ js.Any, Unit]]
   
+  @JSImport("finalhandler", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
     var onerror: js.UndefOr[
         js.Function3[/* err */ js.Any, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

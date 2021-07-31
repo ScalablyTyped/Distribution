@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.groupHeaderTypesMod.IGroupHeaderProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupHeaderBaseMod {
@@ -46,17 +45,15 @@ object groupHeaderBaseMod {
     @scala.inline
     def defaultProps_=(x: IGroupHeaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupHeader.base", "GroupHeaderBase.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: IGroupHeaderProps, previousState: IGroupHeaderState): IGroupHeaderState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IGroupHeaderProps, previousState: IGroupHeaderState): IGroupHeaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupHeaderState]
   }
   
-  @js.native
   trait IGroupHeaderState extends StObject {
     
-    var isCollapsed: Boolean = js.native
+    var isCollapsed: Boolean
     
-    var isLoadingVisible: Boolean = js.native
+    var isLoadingVisible: Boolean
   }
   object IGroupHeaderState {
     

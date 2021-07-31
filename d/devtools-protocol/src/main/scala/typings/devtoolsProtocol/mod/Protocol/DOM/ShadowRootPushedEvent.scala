@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShadowRootPushedEvent extends StObject {
   
   /**
     * Host element id.
     */
-  var hostId: NodeId = js.native
+  var hostId: NodeId
   
   /**
     * Shadow root.
     */
-  var root: Node = js.native
+  var root: Node
 }
 object ShadowRootPushedEvent {
   

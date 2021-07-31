@@ -2,15 +2,13 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
-  var loadTransaction: Boolean = js.native
+  var loadTransaction: Boolean
   
-  var store: js.Any = js.native
+  var store: js.Any
 }
 object ServerOptions {
   

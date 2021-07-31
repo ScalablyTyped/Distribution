@@ -5,7 +5,6 @@ import typings.angularStrap.anon.Hide
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -36,12 +35,11 @@ object datepicker {
     def updateDisabledDates(dateRanges: js.Array[IDatepickerDateRange]): Unit = js.native
   }
   
-  @js.native
   trait IDatepickerDateRange extends StObject {
     
-    var end: Date = js.native
+    var end: Date
     
-    var start: Date = js.native
+    var start: Date
   }
   object IDatepickerDateRange {
     
@@ -62,62 +60,61 @@ object datepicker {
     }
   }
   
-  @js.native
   trait IDatepickerOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var autoclose: js.UndefOr[Boolean] = js.native
+    var autoclose: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var dateType: js.UndefOr[String] = js.native
+    var dateType: js.UndefOr[String] = js.undefined
     
-    var daysOfWeekDisabled: js.UndefOr[String] = js.native
+    var daysOfWeekDisabled: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[IDatepickerDateRange]] = js.native
+    var disabledDates: js.UndefOr[js.Array[IDatepickerDateRange]] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var iconLeft: js.UndefOr[String] = js.native
+    var iconLeft: js.UndefOr[String] = js.undefined
     
-    var iconRight: js.UndefOr[String] = js.native
+    var iconRight: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var minView: js.UndefOr[Double] = js.native
+    var minView: js.UndefOr[Double] = js.undefined
     
-    var modelDateFormat: js.UndefOr[String] = js.native
+    var modelDateFormat: js.UndefOr[String] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* datepicker */ IDatepicker, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var startDate: js.UndefOr[Date] = js.native
+    var startDate: js.UndefOr[Date] = js.undefined
     
-    var startView: js.UndefOr[Double] = js.native
+    var startView: js.UndefOr[Double] = js.undefined
     
-    var startWeek: js.UndefOr[Double] = js.native
+    var startWeek: js.UndefOr[Double] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var timezone: js.UndefOr[String] = js.native
+    var timezone: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var useNative: js.UndefOr[Boolean] = js.native
+    var useNative: js.UndefOr[Boolean] = js.undefined
   }
   object IDatepickerOptions {
     
@@ -297,10 +294,9 @@ object datepicker {
     }
   }
   
-  @js.native
   trait IDatepickerProvider extends StObject {
     
-    var defaults: IDatepickerOptions = js.native
+    var defaults: IDatepickerOptions
   }
   object IDatepickerProvider {
     

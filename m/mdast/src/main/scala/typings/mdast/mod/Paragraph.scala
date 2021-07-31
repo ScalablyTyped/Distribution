@@ -3,26 +3,25 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.paragraph
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Paragraph
-  extends Parent
+  extends StObject
+     with Parent
      with BlockContent {
   
   @JSName("children")
-  var children_Paragraph: js.Array[PhrasingContent] = js.native
+  var children_Paragraph: js.Array[PhrasingContent]
   
   @JSName("type")
-  var type_Paragraph: paragraph = js.native
+  var type_Paragraph: paragraph
 }
 object Paragraph {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], `type`: paragraph): Paragraph = {
+  def apply(children: js.Array[PhrasingContent]): Paragraph = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("paragraph")
     __obj.asInstanceOf[Paragraph]
   }
   

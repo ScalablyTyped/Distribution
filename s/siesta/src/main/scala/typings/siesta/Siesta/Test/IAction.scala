@@ -2,16 +2,14 @@ package typings.siesta.Siesta.Test
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @abstract
   */
-@js.native
 trait IAction extends StObject {
   
-  var desc: js.UndefOr[String] = js.native
+  var desc: js.UndefOr[String] = js.undefined
 }
 object IAction {
   

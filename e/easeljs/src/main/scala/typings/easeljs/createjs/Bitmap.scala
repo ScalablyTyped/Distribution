@@ -5,11 +5,12 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Bitmap extends DisplayObject {
+trait Bitmap
+  extends StObject
+     with DisplayObject {
   
   // properties
   var image: HTMLImageElement | HTMLCanvasElement | HTMLVideoElement = js.native

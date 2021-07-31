@@ -2,25 +2,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the client address when setting up a room.
   */
-@js.native
 trait SchemaRoomClientAddress extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomClientAddress.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The XMPP address of the client on the Google Games XMPP network.
     */
-  var xmppAddress: js.UndefOr[String] = js.native
+  var xmppAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaRoomClientAddress {
   

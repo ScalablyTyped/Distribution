@@ -2,17 +2,15 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response[R] extends StObject {
   
-  var data: R = js.native
+  var data: R
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusText: String = js.native
+  var statusText: String
 }
 object Response {
   
@@ -23,7 +21,7 @@ object Response {
   }
   
   @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[_], R] (val x: Self with Response[R]) extends AnyVal {
+  implicit class ResponseMutableBuilder[Self <: Response[?], R] (val x: Self & Response[R]) extends AnyVal {
     
     @scala.inline
     def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

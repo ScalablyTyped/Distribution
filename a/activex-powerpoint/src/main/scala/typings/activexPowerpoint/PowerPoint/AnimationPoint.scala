@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationPoint extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Formula: String = js.native
+  var Formula: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.AnimationPoint_typekey")
-  var PowerPointDotAnimationPoint_typekey: AnimationPoint = js.native
+  var PowerPointDotAnimationPoint_typekey: AnimationPoint
   
-  var Time: Double = js.native
+  var Time: Double
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object AnimationPoint {
   

@@ -2,7 +2,6 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait SheetSizeBehaviour extends StObject
 object SheetSizeBehaviour extends StObject {
   
   @js.native
-  sealed trait ATLEAST extends SheetSizeBehaviour
+  sealed trait ATLEAST
+    extends StObject
+       with SheetSizeBehaviour
   
   @js.native
-  sealed trait ATMOST extends SheetSizeBehaviour
+  sealed trait ATMOST
+    extends StObject
+       with SheetSizeBehaviour
   
   @js.native
-  sealed trait AUTOMATIC extends SheetSizeBehaviour
+  sealed trait AUTOMATIC
+    extends StObject
+       with SheetSizeBehaviour
   
   @js.native
-  sealed trait EXACTLY extends SheetSizeBehaviour
+  sealed trait EXACTLY
+    extends StObject
+       with SheetSizeBehaviour
   
   @js.native
-  sealed trait RANGE extends SheetSizeBehaviour
+  sealed trait RANGE
+    extends StObject
+       with SheetSizeBehaviour
 }

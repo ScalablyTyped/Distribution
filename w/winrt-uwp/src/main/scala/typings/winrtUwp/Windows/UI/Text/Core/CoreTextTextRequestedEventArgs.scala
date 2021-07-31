@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the TextRequested event. */
-@js.native
 trait CoreTextTextRequestedEventArgs extends StObject {
   
   /** Gets information about a TextRequested event. */
-  var request: CoreTextTextRequest = js.native
+  var request: CoreTextTextRequest
 }
 object CoreTextTextRequestedEventArgs {
   

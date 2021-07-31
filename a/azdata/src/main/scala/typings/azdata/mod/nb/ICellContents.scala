@@ -3,21 +3,19 @@ package typings.azdata.mod.nb
 import typings.azdata.anon.Azdatacellguid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICellContents extends StObject {
   
-  var cell_type: CellType = js.native
+  var cell_type: CellType
   
-  var execution_count: js.UndefOr[Double] = js.native
+  var execution_count: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[Azdatacellguid] = js.native
+  var metadata: js.UndefOr[Azdatacellguid] = js.undefined
   
-  var outputs: js.UndefOr[js.Array[ICellOutput]] = js.native
+  var outputs: js.UndefOr[js.Array[ICellOutput]] = js.undefined
   
-  var source: String | js.Array[String] = js.native
+  var source: String | js.Array[String]
 }
 object ICellContents {
   

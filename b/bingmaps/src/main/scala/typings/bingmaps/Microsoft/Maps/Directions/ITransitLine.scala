@@ -2,35 +2,33 @@ package typings.bingmaps.Microsoft.Maps.Directions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransitLine extends StObject {
   
   /** The short name for the transit line. */
-  var abbreviatedName: String = js.native
+  var abbreviatedName: String
   
   /** The ID of the agency that owns the transit line. */
-  var agencyId: Double = js.native
+  var agencyId: Double
   
   /** The name of the agency that owns the transit line. */
-  var agencyName: String = js.native
+  var agencyName: String
   
   /** The URL of the website of the agency that owns the transit line. */
-  var agencyUrl: String = js.native
+  var agencyUrl: String
   
   /** Phone number for the transit agency. */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
   /** Information about the provider of this transit line data. */
-  var providerInfo: String = js.native
+  var providerInfo: String
   
   /** The uri for the transit agencies website. */
-  var uri: String = js.native
+  var uri: String
   
   /** The full name of this transit line. */
-  var verboseName: String = js.native
+  var verboseName: String
 }
 object ITransitLine {
   

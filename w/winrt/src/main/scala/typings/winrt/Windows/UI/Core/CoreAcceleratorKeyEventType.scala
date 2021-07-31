@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait CoreAcceleratorKeyEventType extends StObject
 object CoreAcceleratorKeyEventType extends StObject {
   
   @js.native
-  sealed trait character extends CoreAcceleratorKeyEventType
+  sealed trait character
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait deadCharacter extends CoreAcceleratorKeyEventType
+  sealed trait deadCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait keyDown extends CoreAcceleratorKeyEventType
+  sealed trait keyDown
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait keyUp extends CoreAcceleratorKeyEventType
+  sealed trait keyUp
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemCharacter extends CoreAcceleratorKeyEventType
+  sealed trait systemCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemDeadCharacter extends CoreAcceleratorKeyEventType
+  sealed trait systemDeadCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemKeyDown extends CoreAcceleratorKeyEventType
+  sealed trait systemKeyDown
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait systemKeyUp extends CoreAcceleratorKeyEventType
+  sealed trait systemKeyUp
+    extends StObject
+       with CoreAcceleratorKeyEventType
   
   @js.native
-  sealed trait unicodeCharacter extends CoreAcceleratorKeyEventType
+  sealed trait unicodeCharacter
+    extends StObject
+       with CoreAcceleratorKeyEventType
 }

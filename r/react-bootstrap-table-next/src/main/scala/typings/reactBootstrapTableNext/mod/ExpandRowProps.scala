@@ -7,27 +7,25 @@ import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.right
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandRowProps[T, K] extends StObject {
   
   var className: js.UndefOr[
     String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])
-  ] = js.native
+  ] = js.undefined
   
-  var expandByColumnOnly: js.UndefOr[Boolean] = js.native
+  var expandByColumnOnly: js.UndefOr[Boolean] = js.undefined
   
-  var expandColumnPosition: js.UndefOr[left | right] = js.native
+  var expandColumnPosition: js.UndefOr[left | right] = js.undefined
   
-  var expandColumnRenderer: js.UndefOr[js.Function1[/* props */ ExpandColumnRendererProps, Element]] = js.native
+  var expandColumnRenderer: js.UndefOr[js.Function1[/* props */ ExpandColumnRendererProps, Element]] = js.undefined
   
-  var expandHeaderColumnRenderer: js.UndefOr[js.Function1[/* props */ ExpandHeaderColumnRenderer, Element]] = js.native
+  var expandHeaderColumnRenderer: js.UndefOr[js.Function1[/* props */ ExpandHeaderColumnRenderer, Element]] = js.undefined
   
-  var expanded: js.UndefOr[js.Array[K]] = js.native
+  var expanded: js.UndefOr[js.Array[K]] = js.undefined
   
-  var nonExpandable: js.UndefOr[js.Array[K]] = js.native
+  var nonExpandable: js.UndefOr[js.Array[K]] = js.undefined
   
   var onExpand: js.UndefOr[
     js.Function4[
@@ -37,7 +35,7 @@ trait ExpandRowProps[T, K] extends StObject {
       /* e */ SyntheticEvent[typings.std.Element, Event], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onExpandAll: js.UndefOr[
     js.Function3[
@@ -46,13 +44,13 @@ trait ExpandRowProps[T, K] extends StObject {
       /* e */ SyntheticEvent[typings.std.Element, Event], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onlyOneExpanding: js.UndefOr[Boolean] = js.native
+  var onlyOneExpanding: js.UndefOr[Boolean] = js.undefined
   
-  def renderer(row: T, rowIndex: Double): Element = js.native
+  def renderer(row: T, rowIndex: Double): Element
   
-  var showExpandColumn: js.UndefOr[Boolean] = js.native
+  var showExpandColumn: js.UndefOr[Boolean] = js.undefined
 }
 object ExpandRowProps {
   
@@ -63,7 +61,7 @@ object ExpandRowProps {
   }
   
   @scala.inline
-  implicit class ExpandRowPropsMutableBuilder[Self <: ExpandRowProps[_, _], T, K] (val x: Self with (ExpandRowProps[T, K])) extends AnyVal {
+  implicit class ExpandRowPropsMutableBuilder[Self <: ExpandRowProps[?, ?], T, K] (val x: Self & (ExpandRowProps[T, K])) extends AnyVal {
     
     @scala.inline
     def setClassName(value: String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

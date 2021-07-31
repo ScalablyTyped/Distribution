@@ -6,33 +6,32 @@ import typings.aliApp.aliAppStrings.right
 import typings.aliApp.anon.InputValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** message对齐方式，可用枚举left/center/right，iOS ‘center’, android ‘left’ */
-  var align: js.UndefOr[left | center | right | String] = js.native
+  var align: js.UndefOr[left | center | right | String] = js.undefined
   
   /** 确认按钮文字，默认‘取消’ */
-  var cancelButtonText: String = js.native
+  var cancelButtonText: String
   
   /** prompt框文本，默认‘请输入内容’ */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** 确认按钮文字，默认‘确定’ */
-  var okButtonText: String = js.native
+  var okButtonText: String
   
   /** 输入框内的提示文案 */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   @JSName("success")
-  def success_MPromptOptions(result: InputValue): Unit = js.native
+  def success_MPromptOptions(result: InputValue): Unit
   
   /** prompt框标题 */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PromptOptions {
   

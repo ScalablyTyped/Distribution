@@ -3,35 +3,27 @@ package typings.regexpp.astMod
 import typings.regexpp.regexppStrings.any
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyCharacterSet
-  extends CharacterSet
-     with NodeBase {
+  extends StObject
+     with NodeBase
+     with CharacterSet {
   
-  var kind: any = js.native
+  var kind: any
   
   @JSName("parent")
-  var parent_AnyCharacterSet: Alternative | Quantifier = js.native
+  var parent_AnyCharacterSet: Alternative | Quantifier
   
   @JSName("type")
-  var type_AnyCharacterSet: typings.regexpp.regexppStrings.CharacterSet = js.native
+  var type_AnyCharacterSet: typings.regexpp.regexppStrings.CharacterSet
 }
 object AnyCharacterSet {
   
   @scala.inline
-  def apply(
-    end: Double,
-    kind: any,
-    parent: Alternative | Quantifier,
-    raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.CharacterSet
-  ): AnyCharacterSet = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): AnyCharacterSet = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[AnyCharacterSet]
   }
   

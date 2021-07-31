@@ -6,7 +6,6 @@ import typings.jqueryMaskmoney.jqueryMaskmoneyStrings.mask
 import typings.jqueryMaskmoney.jqueryMaskmoneyStrings.unmasked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

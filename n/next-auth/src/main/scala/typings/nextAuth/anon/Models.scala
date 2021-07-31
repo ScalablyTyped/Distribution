@@ -2,13 +2,11 @@ package typings.nextAuth.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Models extends StObject {
   
-  var models: js.UndefOr[Account] = js.native
+  var models: js.UndefOr[Account] = js.undefined
 }
 object Models {
   

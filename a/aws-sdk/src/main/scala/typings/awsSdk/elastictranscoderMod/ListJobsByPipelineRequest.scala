@@ -2,26 +2,24 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsByPipelineRequest extends StObject {
   
   /**
     *  To list jobs in chronological order by the date and time that they were submitted, enter true. To list jobs in reverse chronological order, enter false. 
     */
-  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.native
+  var Ascending: js.UndefOr[typings.awsSdk.elastictranscoderMod.Ascending] = js.undefined
   
   /**
     *  When Elastic Transcoder returns more than one page of results, use pageToken in subsequent GET requests to get each successive page of results. 
     */
-  var PageToken: js.UndefOr[Id] = js.native
+  var PageToken: js.UndefOr[Id] = js.undefined
   
   /**
     * The ID of the pipeline for which you want to get job information.
     */
-  var PipelineId: Id = js.native
+  var PipelineId: Id
 }
 object ListJobsByPipelineRequest {
   

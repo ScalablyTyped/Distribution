@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTextDetectionFilters extends StObject {
   
   /**
     * Filter focusing on a certain area of the frame. Uses a BoundingBox object to set the region of the screen.
     */
-  var RegionsOfInterest: js.UndefOr[typings.awsSdk.rekognitionMod.RegionsOfInterest] = js.native
+  var RegionsOfInterest: js.UndefOr[typings.awsSdk.rekognitionMod.RegionsOfInterest] = js.undefined
   
   /**
     * Filters focusing on qualities of the text, such as confidence or size.
     */
-  var WordFilter: js.UndefOr[DetectionFilter] = js.native
+  var WordFilter: js.UndefOr[DetectionFilter] = js.undefined
 }
 object StartTextDetectionFilters {
   

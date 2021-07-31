@@ -7,72 +7,72 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeVectorIcons.iconMod.IconButtonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconProps extends IconButtonProps {
+trait IconProps
+  extends StObject
+     with IconButtonProps {
   
   /**
     * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * FontAwesome5 brands icon set
     *
     * @default false
     */
-  var brand: js.UndefOr[Boolean] = js.native
+  var brand: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add styling to container holding icon
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styles for the Icon when disabled
     */
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /*
     * Extra props supplied to Icon Component from react-native-vector-icons.
     */
-  var iconProps: js.UndefOr[typings.reactNativeVectorIcons.iconMod.IconProps] = js.native
+  var iconProps: js.UndefOr[typings.reactNativeVectorIcons.iconMod.IconProps] = js.undefined
   
   /**
     * Adds box shadow to button
     *
     * @default false
     */
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Reverses color scheme
     *
     * @default false
     */
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify reverse icon color
     *
     * @default 'white'
     */
-  var reverseColor: js.UndefOr[String] = js.native
+  var reverseColor: js.UndefOr[String] = js.undefined
   
   /**
     * FontAwesome5 solid style
     *
     * @default false
     */
-  var solid: js.UndefOr[Boolean] = js.native
+  var solid: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type (defaults to material, options are material-community, zocial, font-awesome, octicon, ionicon, foundation, evilicon, simple-line-icon, or entypo)
     * @default 'material'
     */
-  var `type`: js.UndefOr[IconType] = js.native
+  var `type`: js.UndefOr[IconType] = js.undefined
 }
 object IconProps {
   

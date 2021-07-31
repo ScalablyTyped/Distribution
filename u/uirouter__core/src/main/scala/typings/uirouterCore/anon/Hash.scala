@@ -2,19 +2,17 @@ package typings.uirouterCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hash extends StObject {
   
-  var hash: js.Any = js.native
+  var hash: js.Any
   
-  var path: js.Any = js.native
+  var path: js.Any
   
-  var search: js.Any = js.native
+  var search: js.Any
   
-  var url: String = js.native
+  var url: String
 }
 object Hash {
   

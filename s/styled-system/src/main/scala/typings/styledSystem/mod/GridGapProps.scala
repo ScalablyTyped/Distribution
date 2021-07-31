@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait GridGapProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends 
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
     */
-  var gridGap: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var gridGap: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object GridGapProps {
   
@@ -27,7 +25,7 @@ object GridGapProps {
   }
   
   @scala.inline
-  implicit class GridGapPropsMutableBuilder[Self <: GridGapProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (GridGapProps[ThemeType, TVal])) extends AnyVal {
+  implicit class GridGapPropsMutableBuilder[Self <: GridGapProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (GridGapProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setGridGap(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])

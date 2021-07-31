@@ -351,7 +351,6 @@ import typings.googleapis.youtubeV3Mod.youtubeV3.Youtube
 import typings.googleapis.youtubereportingV1Mod.youtubereportingV1.Youtubereporting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apisMod {

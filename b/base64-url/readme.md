@@ -11,8 +11,8 @@ Base64 encode, decode, escape and unescape for URL applications
 | Full name          | base64-url |
 | Keywords           | base64, base64url |
 | # releases         | 5 |
-| # dependents       | 128 |
-| # downloads        | 13989175 |
+| # dependents       | 138 |
+| # downloads        | 15171434 |
 | # stars            | 12 |
 
 ## Links

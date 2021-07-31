@@ -2,41 +2,39 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainValidation extends StObject {
   
   /**
     * A fully qualified domain name (FQDN) in the certificate. For example, www.example.com or example.com. 
     */
-  var DomainName: DomainNameString = js.native
+  var DomainName: DomainNameString
   
   /**
     * Contains the CNAME record that you add to your DNS database for domain validation. For more information, see Use DNS to Validate Domain Ownership. Note: The CNAME information that you need does not include the name of your domain. If you include&#x2028; your domain name in the DNS database CNAME record, validation fails.&#x2028; For example, if the name is "_a79865eb4cd1a6ab990a45779b4e0b96.yourdomain.com", only "_a79865eb4cd1a6ab990a45779b4e0b96" must be used.
     */
-  var ResourceRecord: js.UndefOr[typings.awsSdk.acmMod.ResourceRecord] = js.native
+  var ResourceRecord: js.UndefOr[typings.awsSdk.acmMod.ResourceRecord] = js.undefined
   
   /**
     * The domain name that ACM used to send domain validation emails.
     */
-  var ValidationDomain: js.UndefOr[DomainNameString] = js.native
+  var ValidationDomain: js.UndefOr[DomainNameString] = js.undefined
   
   /**
     * A list of email addresses that ACM used to send domain validation emails.
     */
-  var ValidationEmails: js.UndefOr[ValidationEmailList] = js.native
+  var ValidationEmails: js.UndefOr[ValidationEmailList] = js.undefined
   
   /**
     * Specifies the domain validation method.
     */
-  var ValidationMethod: js.UndefOr[typings.awsSdk.acmMod.ValidationMethod] = js.native
+  var ValidationMethod: js.UndefOr[typings.awsSdk.acmMod.ValidationMethod] = js.undefined
   
   /**
     * The validation status of the domain name. This can be one of the following values:    PENDING_VALIDATION     SUCCESS    FAILED  
     */
-  var ValidationStatus: js.UndefOr[DomainStatus] = js.native
+  var ValidationStatus: js.UndefOr[DomainStatus] = js.undefined
 }
 object DomainValidation {
   

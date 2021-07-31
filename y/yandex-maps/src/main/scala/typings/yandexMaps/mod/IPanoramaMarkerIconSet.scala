@@ -2,25 +2,23 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaMarkerIconSet extends StObject {
   
-  var default: IPanoramaMarkerIcon | Null = js.native
+  var default: IPanoramaMarkerIcon | Null
   
-  var expanded: IPanoramaMarkerIcon | Null = js.native
+  var expanded: IPanoramaMarkerIcon | Null
   
-  var expandedHovered: IPanoramaMarkerIcon | Null = js.native
+  var expandedHovered: IPanoramaMarkerIcon | Null
   
-  var hovered: IPanoramaMarkerIcon | Null = js.native
+  var hovered: IPanoramaMarkerIcon | Null
 }
 object IPanoramaMarkerIconSet {
   
   @scala.inline
   def apply(): IPanoramaMarkerIconSet = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(default = null, expanded = null, expandedHovered = null, hovered = null)
     __obj.asInstanceOf[IPanoramaMarkerIconSet]
   }
   

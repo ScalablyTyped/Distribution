@@ -2,32 +2,31 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CandleStickDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig
      with LineScatterCandleRadarConfig {
   
-  var barSpace: js.UndefOr[Double] = js.native
+  var barSpace: js.UndefOr[Double] = js.undefined
   
-  var decreasingColor: js.UndefOr[Color] = js.native
+  var decreasingColor: js.UndefOr[Color] = js.undefined
   
-  var decreasingPaintStyle: js.UndefOr[CandleStickPaintStyle] = js.native
+  var decreasingPaintStyle: js.UndefOr[CandleStickPaintStyle] = js.undefined
   
-  var increasingColor: js.UndefOr[Color] = js.native
+  var increasingColor: js.UndefOr[Color] = js.undefined
   
-  var increasingPaintStyle: js.UndefOr[CandleStickPaintStyle] = js.native
+  var increasingPaintStyle: js.UndefOr[CandleStickPaintStyle] = js.undefined
   
-  var neutralColor: js.UndefOr[Color] = js.native
+  var neutralColor: js.UndefOr[Color] = js.undefined
   
-  var shadowColor: js.UndefOr[Color] = js.native
+  var shadowColor: js.UndefOr[Color] = js.undefined
   
-  var shadowColorSameAsCandle: js.UndefOr[Boolean] = js.native
+  var shadowColorSameAsCandle: js.UndefOr[Boolean] = js.undefined
   
-  var shadowWidth: js.UndefOr[Double] = js.native
+  var shadowWidth: js.UndefOr[Double] = js.undefined
 }
 object CandleStickDatasetConfig {
   

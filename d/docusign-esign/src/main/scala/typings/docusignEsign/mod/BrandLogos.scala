@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandLogos extends StObject {
   
   /**
     * The URI for the logo that the brand uses in the header of email messages.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the brand's primary logo.
     */
-  var primary: js.UndefOr[String] = js.native
+  var primary: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the brand's secondary logo.
     */
-  var secondary: js.UndefOr[String] = js.native
+  var secondary: js.UndefOr[String] = js.undefined
 }
 object BrandLogos {
   

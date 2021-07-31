@@ -3,20 +3,18 @@ package typings.miniprogram
 import typings.miniprogram.anon.AppId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchQuery extends StObject {
   
-  var path: String = js.native
+  var path: String
   
   /**
     * Current Mini Program query, parsed from the query field in the startup parameter
     */
-  var query: js.Any = js.native
+  var query: js.Any
   
-  var referrerInfo: js.UndefOr[AppId] = js.native
+  var referrerInfo: js.UndefOr[AppId] = js.undefined
 }
 object LaunchQuery {
   

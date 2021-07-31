@@ -3,66 +3,64 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamHttpEndpointConfiguration extends StObject {
   
   /**
     * The access key required for Kinesis Firehose to authenticate with the HTTP endpoint selected as the destination.
     */
-  var accessKey: js.UndefOr[Input[String]] = js.native
+  var accessKey: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Buffer incoming data for the specified period of time, in seconds, before delivering it to the destination. The default value is 300 (5 minutes).
     */
-  var bufferingInterval: js.UndefOr[Input[Double]] = js.native
+  var bufferingInterval: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Buffer incoming data to the specified size, in MBs, before delivering it to the destination. The default value is 5.
     */
-  var bufferingSize: js.UndefOr[Input[Double]] = js.native
+  var bufferingSize: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * The CloudWatch Logging Options for the delivery stream. More details are given below.
     */
-  var cloudwatchLoggingOptions: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions]] = js.native
+  var cloudwatchLoggingOptions: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions]] = js.undefined
   
   /**
     * The HTTP endpoint name.
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The data processing configuration.  More details are given below.
     */
-  var processingConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration]] = js.native
+  var processingConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration]] = js.undefined
   
   /**
     * The request configuration.  More details are given below.
     */
-  var requestConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration]] = js.native
+  var requestConfiguration: js.UndefOr[Input[FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration]] = js.undefined
   
   /**
     * Total amount of seconds Firehose spends on retries. This duration starts after the initial attempt fails, It does not include the time periods during which Firehose waits for acknowledgment from the specified destination after each attempt. Valid values between `0` and `7200`. Default is `300`.
     */
-  var retryDuration: js.UndefOr[Input[Double]] = js.native
+  var retryDuration: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Kinesis Data Firehose uses this IAM role for all the permissions that the delivery stream needs. The pattern needs to be `arn:.*`.
     */
-  var roleArn: js.UndefOr[Input[String]] = js.native
+  var roleArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Defines how documents should be delivered to Amazon S3.  Valid values are `FailedEventsOnly` and `AllEvents`.  Default value is `FailedEventsOnly`.
     */
-  var s3BackupMode: js.UndefOr[Input[String]] = js.native
+  var s3BackupMode: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The HTTP endpoint URL to which Kinesis Firehose sends your data.
     */
-  var url: Input[String] = js.native
+  var url: Input[String]
 }
 object FirehoseDeliveryStreamHttpEndpointConfiguration {
   

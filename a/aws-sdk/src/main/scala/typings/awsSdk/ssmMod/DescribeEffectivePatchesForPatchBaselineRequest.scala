@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEffectivePatchesForPatchBaselineRequest extends StObject {
   
   /**
     * The ID of the patch baseline to retrieve the effective patches for.
     */
-  var BaselineId: typings.awsSdk.ssmMod.BaselineId = js.native
+  var BaselineId: typings.awsSdk.ssmMod.BaselineId
   
   /**
     * The maximum number of patches to return (per page).
     */
-  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.native
+  var MaxResults: js.UndefOr[PatchBaselineMaxResults] = js.undefined
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object DescribeEffectivePatchesForPatchBaselineRequest {
   

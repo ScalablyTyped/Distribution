@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketAnalyticsConfigurationOutput extends StObject {
   
   /**
     * The configuration and any analyses for the analytics filter.
     */
-  var AnalyticsConfiguration: js.UndefOr[typings.awsSdk.s3Mod.AnalyticsConfiguration] = js.native
+  var AnalyticsConfiguration: js.UndefOr[typings.awsSdk.s3Mod.AnalyticsConfiguration] = js.undefined
 }
 object GetBucketAnalyticsConfigurationOutput {
   

@@ -2,16 +2,14 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /**
   				 * The name or name factory for the runtime chunks
   				 */
-  var name: js.UndefOr[String | js.Function] = js.native
+  var name: js.UndefOr[String | js.Function] = js.undefined
 }
 object Name {
   

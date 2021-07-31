@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SessionAffinityConfig represents the configurations of session affinity.
   */
-@js.native
 trait SessionAffinityConfig extends StObject {
   
   /**
     * clientIP contains the configurations of Client IP based session affinity.
     */
-  var clientIP: ClientIPConfig = js.native
+  var clientIP: ClientIPConfig
 }
 object SessionAffinityConfig {
   

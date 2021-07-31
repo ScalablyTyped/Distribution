@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -11,26 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the only parameter passed to these functions and contains information about
   * the keyboard event.
   */
-@js.native
-trait KeyEvent extends Event {
+trait KeyEvent
+  extends StObject
+     with Event {
   
   /** 
     * The character representation of the key that caused this key event,
     * taking into account the current key-modifiers (e.g. shift, control,
     * caps-lock, etc.)
     */
-  var character: String = js.native
+  var character: String
   
   /** 
     * The key that caused this key event, either as a lower-case character or
     * special key descriptor.
     */
-  var key: String = js.native
+  var key: String
   
   /** 
     * The type of mouse event.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object KeyEvent {
   

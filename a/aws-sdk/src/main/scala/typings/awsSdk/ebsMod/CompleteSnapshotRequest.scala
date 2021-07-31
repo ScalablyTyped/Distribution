@@ -2,36 +2,34 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteSnapshotRequest extends StObject {
   
   /**
     * The number of blocks that were written to the snapshot.
     */
-  var ChangedBlocksCount: typings.awsSdk.ebsMod.ChangedBlocksCount = js.native
+  var ChangedBlocksCount: typings.awsSdk.ebsMod.ChangedBlocksCount
   
   /**
     * An aggregated Base-64 SHA256 checksum based on the checksums of each written block. To generate the aggregated checksum using the linear aggregation method, arrange the checksums for each written block in ascending order of their block index, concatenate them to form a single string, and then generate the checksum on the entire string using the SHA256 algorithm.
     */
-  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.native
+  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.undefined
   
   /**
     * The aggregation method used to generate the checksum. Currently, the only supported aggregation method is LINEAR.
     */
-  var ChecksumAggregationMethod: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAggregationMethod] = js.native
+  var ChecksumAggregationMethod: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAggregationMethod] = js.undefined
   
   /**
     * The algorithm used to generate the checksum. Currently, the only supported algorithm is SHA256.
     */
-  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.native
+  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.undefined
   
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId = js.native
+  var SnapshotId: typings.awsSdk.ebsMod.SnapshotId
 }
 object CompleteSnapshotRequest {
   

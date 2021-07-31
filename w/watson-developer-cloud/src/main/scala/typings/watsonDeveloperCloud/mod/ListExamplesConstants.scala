@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listExamples` operation. */
@@ -16,14 +15,18 @@ object ListExamplesConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait TEXT extends Sort
-    /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.TEXT with String = js.native
+    sealed trait TEXT
+      extends StObject
+         with Sort
+    /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.TEXT & String = js.native
     
     @js.native
-    sealed trait UPDATED extends Sort
-    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.UPDATED with String = js.native
+    sealed trait UPDATED
+      extends StObject
+         with Sort
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.UPDATED & String = js.native
   }
 }

@@ -13,30 +13,30 @@ import typings.leaflet.mod.Polyline_
 import typings.leaflet.mod.Rectangle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DrawEvents {
   
-  @js.native
-  trait Created extends LeafletEvent {
+  trait Created
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of layer this is. One of: polyline, polygon, rectangle, circle, marker.
       */
-    var layerType: String = js.native
+    var layerType: String
     
     /**
       * Layer that was just created.
       */
     @JSName("layer")
-    var layer_Created: Circle_[_] | CircleMarker_[_] | Marker_[_] | Polygon_[_] | (Polyline_[LineString | MultiLineString, _]) | Rectangle_[_] = js.native
+    var layer_Created: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any]
   }
   object Created {
     
     @scala.inline
     def apply(
-      layer: Circle_[_] | CircleMarker_[_] | Marker_[_] | Polygon_[_] | (Polyline_[LineString | MultiLineString, _]) | Rectangle_[_],
+      layer: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any],
       layerType: String,
       propagatedFrom: js.Any,
       sourceTarget: js.Any,
@@ -53,7 +53,7 @@ object DrawEvents {
       
       @scala.inline
       def setLayer(
-        value: Circle_[_] | CircleMarker_[_] | Marker_[_] | Polygon_[_] | (Polyline_[LineString | MultiLineString, _]) | Rectangle_[_]
+        value: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any]
       ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -61,13 +61,14 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait DeleteStart extends LeafletEvent {
+  trait DeleteStart
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of edit this is. One of: remove
       */
-    var handler: String = js.native
+    var handler: String
   }
   object DeleteStart {
     
@@ -93,13 +94,14 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait DeleteStop extends LeafletEvent {
+  trait DeleteStop
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of edit this is. One of: remove
       */
-    var handler: String = js.native
+    var handler: String
   }
   object DeleteStop {
     
@@ -128,20 +130,21 @@ object DrawEvents {
   /**
     * Triggered when layers have been removed (and saved) from the FeatureGroup.
     */
-  @js.native
-  trait Deleted extends LeafletEvent {
+  trait Deleted
+    extends StObject
+       with LeafletEvent {
     
     /**
       * List of all layers just removed from the map.
       */
-    var layers: LayerGroup_[_] = js.native
+    var layers: LayerGroup_[js.Any]
   }
   object Deleted {
     
     @scala.inline
     def apply(
       layer: js.Any,
-      layers: LayerGroup_[_],
+      layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
       sourceTarget: js.Any,
       target: js.Any,
@@ -156,17 +159,18 @@ object DrawEvents {
     implicit class DeletedMutableBuilder[Self <: Deleted] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLayers(value: LayerGroup_[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DrawStart extends LeafletEvent {
+  trait DrawStart
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of layer this is. One of: polyline, polygon, rectangle, circle, marker
       */
-    var layerType: String = js.native
+    var layerType: String
   }
   object DrawStart {
     
@@ -192,13 +196,14 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait DrawStop extends LeafletEvent {
+  trait DrawStop
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of layer this is. One of: polyline, polygon, rectangle, circle, marker
       */
-    var layerType: String = js.native
+    var layerType: String
   }
   object DrawStop {
     
@@ -224,20 +229,21 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait DrawVertex extends LeafletEvent {
+  trait DrawVertex
+    extends StObject
+       with LeafletEvent {
     
     /**
       * List of all layers just being added from the map.
       */
-    var layers: LayerGroup_[_] = js.native
+    var layers: LayerGroup_[js.Any]
   }
   object DrawVertex {
     
     @scala.inline
     def apply(
       layer: js.Any,
-      layers: LayerGroup_[_],
+      layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
       sourceTarget: js.Any,
       target: js.Any,
@@ -252,18 +258,19 @@ object DrawEvents {
     implicit class DrawVertexMutableBuilder[Self <: DrawVertex] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLayers(value: LayerGroup_[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait EditMove extends LeafletEvent {
+  trait EditMove
+    extends StObject
+       with LeafletEvent {
     
     /**
       * Layer that was just moved.
       */
     @JSName("layer")
-    var layer_EditMove: Layer = js.native
+    var layer_EditMove: Layer
   }
   object EditMove {
     
@@ -282,14 +289,15 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait EditResize extends LeafletEvent {
+  trait EditResize
+    extends StObject
+       with LeafletEvent {
     
     /**
       * Layer that was just resized.
       */
     @JSName("layer")
-    var layer_EditResize: Layer = js.native
+    var layer_EditResize: Layer
   }
   object EditResize {
     
@@ -308,13 +316,14 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait EditStart extends LeafletEvent {
+  trait EditStart
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of edit this is. One of: edit
       */
-    var handler: String = js.native
+    var handler: String
   }
   object EditStart {
     
@@ -340,13 +349,14 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait EditStop extends LeafletEvent {
+  trait EditStop
+    extends StObject
+       with LeafletEvent {
     
     /**
       * The type of edit this is. One of: edit
       */
-    var handler: String = js.native
+    var handler: String
   }
   object EditStop {
     
@@ -372,23 +382,24 @@ object DrawEvents {
     }
   }
   
-  @js.native
-  trait EditVertex extends LeafletEvent {
+  trait EditVertex
+    extends StObject
+       with LeafletEvent {
     
     /**
       * List of all layers just being edited from the map.
       */
-    var layers: LayerGroup_[_] = js.native
+    var layers: LayerGroup_[js.Any]
     
-    var poly: (Polyline_[LineString | MultiLineString, _]) | Polygon_[_] = js.native
+    var poly: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]
   }
   object EditVertex {
     
     @scala.inline
     def apply(
       layer: js.Any,
-      layers: LayerGroup_[_],
-      poly: (Polyline_[LineString | MultiLineString, _]) | Polygon_[_],
+      layers: LayerGroup_[js.Any],
+      poly: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any],
       propagatedFrom: js.Any,
       sourceTarget: js.Any,
       target: js.Any,
@@ -403,27 +414,28 @@ object DrawEvents {
     implicit class EditVertexMutableBuilder[Self <: EditVertex] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLayers(value: LayerGroup_[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPoly(value: (Polyline_[LineString | MultiLineString, _]) | Polygon_[_]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      def setPoly(value: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait Edited extends LeafletEvent {
+  trait Edited
+    extends StObject
+       with LeafletEvent {
     
     /**
       * List of all layers just edited on the map.
       */
-    var layers: LayerGroup_[_] = js.native
+    var layers: LayerGroup_[js.Any]
   }
   object Edited {
     
     @scala.inline
     def apply(
       layer: js.Any,
-      layers: LayerGroup_[_],
+      layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
       sourceTarget: js.Any,
       target: js.Any,
@@ -438,7 +450,7 @@ object DrawEvents {
     implicit class EditedMutableBuilder[Self <: Edited] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLayers(value: LayerGroup_[_]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   

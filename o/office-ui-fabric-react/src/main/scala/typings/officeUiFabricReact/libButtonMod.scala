@@ -8,10 +8,13 @@ import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import typings.officeUiFabricReact.splitButtonClassNamesMod.ISplitButtonClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libButtonMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Button", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/Button", "ActionButton")
   @js.native
@@ -57,21 +60,21 @@ object libButtonMod {
   object ButtonType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ButtonType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ButtonType & Double] = js.native
     
-    /* 6 */ val default: typings.officeUiFabricReact.buttonTypesMod.ButtonType.default with Double = js.native
+    /* 6 */ val default: typings.officeUiFabricReact.buttonTypesMod.ButtonType.default & Double = js.native
     
-    /* 4 */ val command: typings.officeUiFabricReact.buttonTypesMod.ButtonType.command with Double = js.native
+    /* 4 */ val command: typings.officeUiFabricReact.buttonTypesMod.ButtonType.command & Double = js.native
     
-    /* 3 */ val compound: typings.officeUiFabricReact.buttonTypesMod.ButtonType.compound with Double = js.native
+    /* 3 */ val compound: typings.officeUiFabricReact.buttonTypesMod.ButtonType.compound & Double = js.native
     
-    /* 2 */ val hero: typings.officeUiFabricReact.buttonTypesMod.ButtonType.hero with Double = js.native
+    /* 2 */ val hero: typings.officeUiFabricReact.buttonTypesMod.ButtonType.hero & Double = js.native
     
-    /* 5 */ val icon: typings.officeUiFabricReact.buttonTypesMod.ButtonType.icon with Double = js.native
+    /* 5 */ val icon: typings.officeUiFabricReact.buttonTypesMod.ButtonType.icon & Double = js.native
     
-    /* 0 */ val normal: typings.officeUiFabricReact.buttonTypesMod.ButtonType.normal with Double = js.native
+    /* 0 */ val normal: typings.officeUiFabricReact.buttonTypesMod.ButtonType.normal & Double = js.native
     
-    /* 1 */ val primary: typings.officeUiFabricReact.buttonTypesMod.ButtonType.primary with Double = js.native
+    /* 1 */ val primary: typings.officeUiFabricReact.buttonTypesMod.ButtonType.primary & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "CommandBarButton")
@@ -124,11 +127,11 @@ object libButtonMod {
   object ElementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ElementType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.buttonTypesMod.ElementType & Double] = js.native
     
-    /* 1 */ val anchor: typings.officeUiFabricReact.buttonTypesMod.ElementType.anchor with Double = js.native
+    /* 1 */ val anchor: typings.officeUiFabricReact.buttonTypesMod.ElementType.anchor & Double = js.native
     
-    /* 0 */ val button: typings.officeUiFabricReact.buttonTypesMod.ElementType.button with Double = js.native
+    /* 0 */ val button: typings.officeUiFabricReact.buttonTypesMod.ElementType.button & Double = js.native
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "IconButton")
@@ -167,16 +170,14 @@ object libButtonMod {
     def this(props: IButtonProps, context: js.Any) = this()
   }
   
-  @JSImport("office-ui-fabric-react/lib/Button", "getSplitButtonClassNames")
-  @js.native
-  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = js.native
-  @JSImport("office-ui-fabric-react/lib/Button", "getSplitButtonClassNames")
-  @js.native
+  @scala.inline
+  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
+  @scala.inline
   def getSplitButtonClassNames(
     styles: IButtonStyles,
     disabled: Boolean,
     expanded: Boolean,
     checked: Boolean,
     primaryDisabled: Boolean
-  ): ISplitButtonClassNames = js.native
+  ): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any], primaryDisabled.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
 }

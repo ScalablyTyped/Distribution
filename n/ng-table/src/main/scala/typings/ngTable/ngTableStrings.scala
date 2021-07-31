@@ -5,37 +5,44 @@ import typings.ngTable.groupingFuncMod.GroupSort
 import typings.ngTable.sortingMod.SortDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableStrings {
   
   @js.native
-  sealed trait _empty extends GroupSort
+  sealed trait _empty
+    extends StObject
+       with GroupSort
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait asc
-    extends GroupSort
+    extends StObject
+       with GroupSort
        with SortDirection
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
   sealed trait desc
-    extends GroupSort
+    extends StObject
+       with GroupSort
        with SortDirection
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait horizontal extends FilterLayout
+  sealed trait horizontal
+    extends StObject
+       with FilterLayout
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait stack extends FilterLayout
+  sealed trait stack
+    extends StObject
+       with FilterLayout
   @scala.inline
   def stack: stack = "stack".asInstanceOf[stack]
 }

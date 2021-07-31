@@ -7,7 +7,6 @@ import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object productinfoMod {
@@ -19,23 +18,27 @@ object productinfoMod {
   object ProductInfoConfigKey extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductInfoConfigKey with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProductInfoConfigKey & Double] = js.native
     
     /**
       * Data service configuration, it can be set as string type with numbers
       * @since 2.3
       */
     @js.native
-    sealed trait CONFIG_KEY_DATA_SERVICE extends ProductInfoConfigKey
-    /* 0 */ val CONFIG_KEY_DATA_SERVICE: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_DATA_SERVICE with Double = js.native
+    sealed trait CONFIG_KEY_DATA_SERVICE
+      extends StObject
+         with ProductInfoConfigKey
+    /* 0 */ val CONFIG_KEY_DATA_SERVICE: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_DATA_SERVICE & Double = js.native
     
     /**
       * Service country, readonly
       * @since 2.3
       */
     @js.native
-    sealed trait CONFIG_KEY_SERVICE_COUNTRY extends ProductInfoConfigKey
-    /* 1 */ val CONFIG_KEY_SERVICE_COUNTRY: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_SERVICE_COUNTRY with Double = js.native
+    sealed trait CONFIG_KEY_SERVICE_COUNTRY
+      extends StObject
+         with ProductInfoConfigKey
+    /* 1 */ val CONFIG_KEY_SERVICE_COUNTRY: typings.tizenTvWebapis.productinfoMod.ProductInfoConfigKey.CONFIG_KEY_SERVICE_COUNTRY & Double = js.native
   }
   
   @js.native
@@ -45,23 +48,27 @@ object productinfoMod {
   object ProductInfoNoGlass3dSupport extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductInfoNoGlass3dSupport with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProductInfoNoGlass3dSupport & Double] = js.native
     
     /**
       * Glasses-free 3D is not supported
       * @since 2.3
       */
     @js.native
-    sealed trait NO_GLASS_3D_NOT_SUPPORTED extends ProductInfoNoGlass3dSupport
-    /* 0 */ val NO_GLASS_3D_NOT_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_NOT_SUPPORTED with Double = js.native
+    sealed trait NO_GLASS_3D_NOT_SUPPORTED
+      extends StObject
+         with ProductInfoNoGlass3dSupport
+    /* 0 */ val NO_GLASS_3D_NOT_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_NOT_SUPPORTED & Double = js.native
     
     /**
       * @descEng Glasses-free 3D is supported
       * @since 2.3
       */
     @js.native
-    sealed trait NO_GLASS_3D_SUPPORTED extends ProductInfoNoGlass3dSupport
-    /* 1 */ val NO_GLASS_3D_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_SUPPORTED with Double = js.native
+    sealed trait NO_GLASS_3D_SUPPORTED
+      extends StObject
+         with ProductInfoNoGlass3dSupport
+    /* 1 */ val NO_GLASS_3D_SUPPORTED: typings.tizenTvWebapis.productinfoMod.ProductInfoNoGlass3dSupport.NO_GLASS_3D_SUPPORTED & Double = js.native
   }
   
   @js.native
@@ -71,31 +78,37 @@ object productinfoMod {
   object ProductInfoSiServerType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProductInfoSiServerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProductInfoSiServerType & Double] = js.native
     
     /**
       * Developing server
       * @since 2.3
       */
     @js.native
-    sealed trait SI_TYPE_DEVELOPING_SERVER extends ProductInfoSiServerType
-    /* 2 */ val SI_TYPE_DEVELOPING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPING_SERVER with Double = js.native
+    sealed trait SI_TYPE_DEVELOPING_SERVER
+      extends StObject
+         with ProductInfoSiServerType
+    /* 2 */ val SI_TYPE_DEVELOPING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPING_SERVER & Double = js.native
     
     /**
       * Development server
       * @since 2.3
       */
     @js.native
-    sealed trait SI_TYPE_DEVELOPMENT_SERVER extends ProductInfoSiServerType
-    /* 1 */ val SI_TYPE_DEVELOPMENT_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPMENT_SERVER with Double = js.native
+    sealed trait SI_TYPE_DEVELOPMENT_SERVER
+      extends StObject
+         with ProductInfoSiServerType
+    /* 1 */ val SI_TYPE_DEVELOPMENT_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_DEVELOPMENT_SERVER & Double = js.native
     
     /**
       * Operating server
       * @since 2.3
       */
     @js.native
-    sealed trait SI_TYPE_OPERATIING_SERVER extends ProductInfoSiServerType
-    /* 0 */ val SI_TYPE_OPERATIING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_OPERATIING_SERVER with Double = js.native
+    sealed trait SI_TYPE_OPERATIING_SERVER
+      extends StObject
+         with ProductInfoSiServerType
+    /* 0 */ val SI_TYPE_OPERATIING_SERVER: typings.tizenTvWebapis.productinfoMod.ProductInfoSiServerType.SI_TYPE_OPERATIING_SERVER & Double = js.native
   }
   
   type ProductInfoConfigChangeCallback = js.Function1[/* key */ ProductInfoConfigKey, Unit]
@@ -352,12 +365,7 @@ object productinfoMod {
       * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
       */
     def setSystemConfig(key: ProductInfoConfigKey, value: String): Unit = js.native
-    def setSystemConfig(
-      key: ProductInfoConfigKey,
-      value: String,
-      onsuccess: js.UndefOr[scala.Nothing],
-      onerror: ErrorCallback
-    ): Unit = js.native
+    def setSystemConfig(key: ProductInfoConfigKey, value: String, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def setSystemConfig(key: ProductInfoConfigKey, value: String, onsuccess: SuccessCallback): Unit = js.native
     def setSystemConfig(key: ProductInfoConfigKey, value: String, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   }

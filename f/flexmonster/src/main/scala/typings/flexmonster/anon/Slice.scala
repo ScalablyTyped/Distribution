@@ -2,13 +2,11 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slice extends StObject {
   
-  var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.native
+  var slice: js.UndefOr[typings.flexmonster.mod.Slice] = js.undefined
 }
 object Slice {
   

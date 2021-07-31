@@ -2,13 +2,11 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Team Drives to search
   */
-@js.native
 trait SchemaTeamDriveInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTeamDriveInfo extends StObject {
     * href=&quot;https://developers.google.com/drive&quot;&gt;Drive
     * API&lt;/a&gt;.
     */
-  var teamDriveIds: js.UndefOr[js.Array[String]] = js.native
+  var teamDriveIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTeamDriveInfo {
   

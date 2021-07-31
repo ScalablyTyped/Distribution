@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource extends StObject {
   
-  var referenceId: String = js.native
+  var referenceId: String
   
   /**
     * Describes the format of the data in the streaming source, and how each data element maps to corresponding columns created in the in-application stream.
     */
-  var referenceSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema = js.native
+  var referenceSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema
   
   /**
     * Identifies the S3 bucket and object that contains the reference data.
     */
-  var s3ReferenceDataSource: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource = js.native
+  var s3ReferenceDataSource: ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource
   
   /**
     * The name of the in-application table to create.
     */
-  var tableName: String = js.native
+  var tableName: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource {
   

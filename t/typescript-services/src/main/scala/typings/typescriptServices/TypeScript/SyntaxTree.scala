@@ -2,43 +2,41 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyntaxTree extends StObject {
   
-  var _allDiagnostics: js.Any = js.native
+  var _allDiagnostics: js.Any
   
-  var _fileName: js.Any = js.native
+  var _fileName: js.Any
   
-  var _isDeclaration: js.Any = js.native
+  var _isDeclaration: js.Any
   
-  var _lineMap: js.Any = js.native
+  var _lineMap: js.Any
   
-  var _parseOptions: js.Any = js.native
+  var _parseOptions: js.Any
   
-  var _parserDiagnostics: js.Any = js.native
+  var _parserDiagnostics: js.Any
   
-  var _sourceUnit: js.Any = js.native
+  var _sourceUnit: js.Any
   
-  /* private */ def computeDiagnostics(): js.Any = js.native
+  /* private */ def computeDiagnostics(): js.Any
   
-  def diagnostics(): js.Array[Diagnostic] = js.native
+  def diagnostics(): js.Array[Diagnostic]
   
-  def fileName(): String = js.native
+  def fileName(): String
   
-  def isDeclaration(): Boolean = js.native
+  def isDeclaration(): Boolean
   
-  def lineMap(): LineMap = js.native
+  def lineMap(): LineMap
   
-  def parseOptions(): ParseOptions = js.native
+  def parseOptions(): ParseOptions
   
-  def sourceUnit(): SourceUnitSyntax = js.native
+  def sourceUnit(): SourceUnitSyntax
   
-  def structuralEquals(tree: SyntaxTree): Boolean = js.native
+  def structuralEquals(tree: SyntaxTree): Boolean
   
-  def toJSON(key: js.Any): js.Any = js.native
+  def toJSON(key: js.Any): js.Any
 }
 object SyntaxTree {
   

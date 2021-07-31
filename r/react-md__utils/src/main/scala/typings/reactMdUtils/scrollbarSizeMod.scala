@@ -2,27 +2,25 @@ package typings.reactMdUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollbarSizeMod {
   
-  @JSImport("@react-md/utils/types/layout/scrollbarSize", "reset")
+  @JSImport("@react-md/utils/types/layout/scrollbarSize", JSImport.Namespace)
   @js.native
-  def reset(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/layout/scrollbarSize", "scrollbarSize")
-  @js.native
-  def scrollbarSize(): Double = js.native
-  @JSImport("@react-md/utils/types/layout/scrollbarSize", "scrollbarSize")
-  @js.native
-  def scrollbarSize(`type`: js.UndefOr[scala.Nothing], forced: Boolean): Double = js.native
-  @JSImport("@react-md/utils/types/layout/scrollbarSize", "scrollbarSize")
-  @js.native
-  def scrollbarSize(`type`: SizingType): Double = js.native
-  @JSImport("@react-md/utils/types/layout/scrollbarSize", "scrollbarSize")
-  @js.native
-  def scrollbarSize(`type`: SizingType, forced: Boolean): Double = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def scrollbarSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")().asInstanceOf[Double]
+  @scala.inline
+  def scrollbarSize(`type`: Unit, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def scrollbarSize(`type`: SizingType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def scrollbarSize(`type`: SizingType, forced: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollbarSize")(`type`.asInstanceOf[js.Any], forced.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdUtils.reactMdUtilsStrings.height

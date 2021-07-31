@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTableRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which to create the Table. If none is supplied, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The catalog database in which to create the new table. For Hive compatibility, this name is entirely lowercase.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A list of partition indexes, PartitionIndex structures, to create in the table.
     */
-  var PartitionIndexes: js.UndefOr[PartitionIndexList] = js.native
+  var PartitionIndexes: js.UndefOr[PartitionIndexList] = js.undefined
   
   /**
     * The TableInput object that defines the metadata table to create in the catalog.
     */
-  var TableInput: typings.awsSdk.glueMod.TableInput = js.native
+  var TableInput: typings.awsSdk.glueMod.TableInput
 }
 object CreateTableRequest {
   

@@ -5,17 +5,15 @@ import typings.hapi.hapiStrings.default
 import typings.hapi.hapiStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Otherwise extends StObject {
   
-  var otherwise: js.UndefOr[String] = js.native
+  var otherwise: js.UndefOr[String] = js.undefined
   
-  var privacy: js.UndefOr[default | public | `private`] = js.native
+  var privacy: js.UndefOr[default | public | `private`] = js.undefined
   
-  var statuses: js.UndefOr[js.Array[Double]] = js.native
+  var statuses: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Otherwise {
   

@@ -2,21 +2,19 @@ package typings.jqueryTruncateHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TruncateOptions extends StObject {
   
-  var ellipsis: js.UndefOr[String] = js.native
+  var ellipsis: js.UndefOr[String] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var noBreaks: js.UndefOr[Boolean] = js.native
+  var noBreaks: js.UndefOr[Boolean] = js.undefined
   
-  var stripTags: js.UndefOr[Boolean] = js.native
+  var stripTags: js.UndefOr[Boolean] = js.undefined
   
-  var words: js.UndefOr[Boolean] = js.native
+  var words: js.UndefOr[Boolean] = js.undefined
 }
 object TruncateOptions {
   

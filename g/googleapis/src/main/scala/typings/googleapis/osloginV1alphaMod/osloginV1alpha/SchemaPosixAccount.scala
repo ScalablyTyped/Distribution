@@ -2,65 +2,63 @@ package typings.googleapis.osloginV1alphaMod.osloginV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The POSIX account information associated with a Google account.
   */
-@js.native
 trait SchemaPosixAccount extends StObject {
   
   /**
     * Output only. A POSIX account identifier.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The GECOS (user information) entry for this account.
     */
-  var gecos: js.UndefOr[String] = js.native
+  var gecos: js.UndefOr[String] = js.undefined
   
   /**
     * The default group ID.
     */
-  var gid: js.UndefOr[String] = js.native
+  var gid: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the home directory for this account.
     */
-  var homeDirectory: js.UndefOr[String] = js.native
+  var homeDirectory: js.UndefOr[String] = js.undefined
   
   /**
     * The operating system type where this account applies.
     */
-  var operatingSystemType: js.UndefOr[String] = js.native
+  var operatingSystemType: js.UndefOr[String] = js.undefined
   
   /**
     * Only one POSIX account can be marked as primary.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path to the logic shell for this account.
     */
-  var shell: js.UndefOr[String] = js.native
+  var shell: js.UndefOr[String] = js.undefined
   
   /**
     * System identifier for which account the username or uid applies to. By
     * default, the empty value is used.
     */
-  var systemId: js.UndefOr[String] = js.native
+  var systemId: js.UndefOr[String] = js.undefined
   
   /**
     * The user ID.
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
   
   /**
     * The username of the POSIX account.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaPosixAccount {
   

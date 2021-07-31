@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRecipeVersionRequest extends StObject {
   
   /**
     * The name of the recipe to be deleted.
     */
-  var Name: RecipeName = js.native
+  var Name: RecipeName
   
   /**
     * The version of the recipe to be deleted.
     */
-  var RecipeVersion: typings.awsSdk.databrewMod.RecipeVersion = js.native
+  var RecipeVersion: typings.awsSdk.databrewMod.RecipeVersion
 }
 object DeleteRecipeVersionRequest {
   

@@ -2,19 +2,17 @@ package typings.sketchapp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSAttributes extends StObject {
   
-  var MSAttributedStringColorAttribute: SketchMSColor = js.native
+  var MSAttributedStringColorAttribute: SketchMSColor
   
-  var MSAttributedStringFontAttribute: SketchMSFontAttribute = js.native
+  var MSAttributedStringFontAttribute: SketchMSFontAttribute
   
-  var kerning: Double = js.native
+  var kerning: Double
   
-  var paragraphStyle: SketchMSParagraphStyle = js.native
+  var paragraphStyle: SketchMSParagraphStyle
 }
 object SketchMSAttributes {
   

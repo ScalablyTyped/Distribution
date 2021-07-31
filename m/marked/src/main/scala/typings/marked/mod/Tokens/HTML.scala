@@ -4,26 +4,26 @@ import typings.marked.markedStrings.html
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HTML extends Token {
+trait HTML
+  extends StObject
+     with Token {
   
-  var pre: Boolean = js.native
+  var pre: Boolean
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: html = js.native
+  var `type`: html
 }
 object HTML {
   
   @scala.inline
-  def apply(pre: Boolean, raw: String, text: String, `type`: html): HTML = {
+  def apply(pre: Boolean, raw: String, text: String): HTML = {
     val __obj = js.Dynamic.literal(pre = pre.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("html")
     __obj.asInstanceOf[HTML]
   }
   

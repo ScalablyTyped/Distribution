@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutResourcePolicyResponse extends StObject {
   
   /**
     * The ARN of the secret retrieved by the resource-based policy.
     */
-  var ARN: js.UndefOr[SecretARNType] = js.native
+  var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
     * The friendly name of the secret that the retrieved by the resource-based policy.
     */
-  var Name: js.UndefOr[NameType] = js.native
+  var Name: js.UndefOr[NameType] = js.undefined
 }
 object PutResourcePolicyResponse {
   

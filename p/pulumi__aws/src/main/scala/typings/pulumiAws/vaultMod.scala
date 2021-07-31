@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vaultMod {
@@ -25,7 +24,7 @@ object vaultMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VaultArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object vaultMod {
   /* static members */
   object Vault {
     
+    @JSImport("@pulumi/aws/backup/vault", "Vault")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Vault resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,45 +68,39 @@ object vaultMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/backup/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Vault = js.native
-    @JSImport("@pulumi/aws/backup/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Vault = js.native
-    @JSImport("@pulumi/aws/backup/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState): Vault = js.native
-    @JSImport("@pulumi/aws/backup/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
     
     /**
       * Returns true if the given object is an instance of Vault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/backup/vault", "Vault.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vault.Vault */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vault.Vault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vault.Vault */ Boolean]
   }
   
-  @js.native
   trait VaultArgs extends StObject {
     
     /**
       * The server-side encryption key that is used to protect your backups.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the backup vault to create.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Metadata that you can assign to help organize the resources that you create.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VaultArgs {
     
@@ -136,33 +133,32 @@ object vaultMod {
     }
   }
   
-  @js.native
   trait VaultState extends StObject {
     
     /**
       * The ARN of the vault.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The server-side encryption key that is used to protect your backups.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the backup vault to create.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of recovery points that are stored in a backup vault.
       */
-    val recoveryPoints: js.UndefOr[Input[Double]] = js.native
+    val recoveryPoints: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Metadata that you can assign to help organize the resources that you create.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VaultState {
     

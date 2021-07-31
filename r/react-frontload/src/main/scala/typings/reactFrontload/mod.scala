@@ -6,10 +6,13 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-frontload", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-frontload", "Frontload")
@@ -23,28 +26,23 @@ object mod {
   @js.native
   val Frontload: ComponentClass[FrontloadProps, ComponentState] = js.native
   
-  @JSImport("react-frontload", "frontloadConnect")
-  @js.native
-  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]]): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
-  @JSImport("react-frontload", "frontloadConnect")
-  @js.native
-  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]], options: FrontloadConnectOptions): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = js.native
+  @scala.inline
+  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]]): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
+  @scala.inline
+  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]], options: FrontloadConnectOptions): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
   
-  @JSImport("react-frontload", "frontloadServerRender")
-  @js.native
-  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String]): js.Promise[String] = js.native
-  @JSImport("react-frontload", "frontloadServerRender")
-  @js.native
-  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String], withLogging: Boolean): js.Promise[String] = js.native
+  @scala.inline
+  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String], withLogging: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any], withLogging.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait FrontloadConnectOptions extends StObject {
     
-    var noServerRender: js.UndefOr[Boolean] = js.native
+    var noServerRender: js.UndefOr[Boolean] = js.undefined
     
-    var onMount: js.UndefOr[Boolean] = js.native
+    var onMount: js.UndefOr[Boolean] = js.undefined
     
-    var onUpdate: js.UndefOr[Boolean] = js.native
+    var onUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object FrontloadConnectOptions {
     
@@ -77,10 +75,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FrontloadProps extends StObject {
     
-    var noServerRender: js.UndefOr[Boolean] = js.native
+    var noServerRender: js.UndefOr[Boolean] = js.undefined
   }
   object FrontloadProps {
     

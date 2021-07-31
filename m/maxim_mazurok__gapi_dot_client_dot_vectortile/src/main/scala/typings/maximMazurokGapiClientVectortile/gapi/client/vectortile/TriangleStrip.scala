@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriangleStrip extends StObject {
   
   /** Index into the vertex_offset array representing the next vertex in the triangle strip. */
-  var vertexIndices: js.UndefOr[js.Array[Double]] = js.native
+  var vertexIndices: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object TriangleStrip {
   

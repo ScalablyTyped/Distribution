@@ -2,22 +2,20 @@ package typings.semanticUiSidebar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl, keyof semantic-ui-sidebar.SemanticUI.Sidebar.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplMethod extends StObject {
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var movedSidebar: js.UndefOr[String] = js.native
+  var movedSidebar: js.UndefOr[String] = js.undefined
   
-  var notFound: js.UndefOr[String] = js.native
+  var notFound: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[String] = js.native
+  var overlay: js.UndefOr[String] = js.undefined
   
-  var pusher: js.UndefOr[String] = js.native
+  var pusher: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplMethod {
   

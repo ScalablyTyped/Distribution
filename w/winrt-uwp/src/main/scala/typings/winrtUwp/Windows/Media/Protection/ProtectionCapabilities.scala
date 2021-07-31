@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.Media.Protection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProtectionCapabilities extends StObject {
   
-  var isTypeSupported: js.Any = js.native
+  var isTypeSupported: js.Any
 }
 object ProtectionCapabilities {
   

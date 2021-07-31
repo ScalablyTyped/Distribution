@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.markdownIt.libMod.MarkdownIt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserBlockMod {
   
   @JSImport("markdown-it/lib/parser_block", JSImport.Namespace)
   @js.native
-  class ^ () extends ParserBlock
-  
-  @js.native
-  trait ParserBlock extends StObject {
+  class ^ ()
+    extends StObject
+       with ParserBlock {
     
+    /* CompleteClass */
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
@@ -27,17 +26,46 @@ object parserBlockMod {
     /**
       * Process input string and push block tokens into `outTokens`
       */
-    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
+    /* CompleteClass */
+    override def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
     
     /**
       * [[Ruler]] instance. Keep configuration of block rules.
       */
+    /* CompleteClass */
     var ruler: typings.markdownIt.rulerMod.^[RuleBlock] = js.native
     
     /**
       * Generate tokens for input range
       */
-    def tokenize(state: typings.markdownIt.stateBlockMod.^, startLine: Double, endLine: Double): Unit = js.native
+    /* CompleteClass */
+    override def tokenize(state: typings.markdownIt.stateBlockMod.^, startLine: Double, endLine: Double): Unit = js.native
+  }
+  
+  trait ParserBlock extends StObject {
+    
+    var State: Instantiable4[
+        /* src */ String, 
+        /* md */ MarkdownIt, 
+        /* env */ js.Any, 
+        /* tokens */ js.Array[typings.markdownIt.tokenMod.^], 
+        typings.markdownIt.stateBlockMod.^
+      ]
+    
+    /**
+      * Process input string and push block tokens into `outTokens`
+      */
+    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
+    
+    /**
+      * [[Ruler]] instance. Keep configuration of block rules.
+      */
+    var ruler: typings.markdownIt.rulerMod.^[RuleBlock]
+    
+    /**
+      * Generate tokens for input range
+      */
+    def tokenize(state: typings.markdownIt.stateBlockMod.^, startLine: Double, endLine: Double): Unit
   }
   object ParserBlock {
     

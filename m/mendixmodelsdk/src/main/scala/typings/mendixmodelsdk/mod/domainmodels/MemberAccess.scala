@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "domainmodels.MemberAccess")
@@ -37,9 +36,8 @@ object MemberAccess {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.MemberAccess.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess]
   
   /**
     * Creates and returns a new MemberAccess instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object MemberAccess {
     * of the parent AccessRule element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "domainmodels.MemberAccess.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.AccessRule): typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccess]
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.MemberAccess.structureTypeName")

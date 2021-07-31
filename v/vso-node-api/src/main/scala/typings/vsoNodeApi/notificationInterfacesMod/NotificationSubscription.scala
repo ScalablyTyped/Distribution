@@ -5,101 +5,99 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationSubscription extends StObject {
   
   /**
     * Links to related resources, APIs, and views for the subscription.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Admin-managed settings for the subscription. Only applies when the subscriber is a group.
     */
-  var adminSettings: SubscriptionAdminSettings = js.native
+  var adminSettings: SubscriptionAdminSettings
   
   /**
     * Channel for delivering notifications triggered by the subscription.
     */
-  var channel: ISubscriptionChannel = js.native
+  var channel: ISubscriptionChannel
   
   /**
     * Description of the subscription. Typically describes filter criteria which helps identity the subscription.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Diagnostics for this subscription.
     */
-  var diagnostics: SubscriptionDiagnostics = js.native
+  var diagnostics: SubscriptionDiagnostics
   
   /**
     * Any extra properties like detailed description for different contexts, user/group contexts
     */
-  var extendedProperties: StringDictionary[String] = js.native
+  var extendedProperties: StringDictionary[String]
   
   /**
     * Matching criteria for the subscription. ExpressionFilter
     */
-  var filter: ISubscriptionFilter = js.native
+  var filter: ISubscriptionFilter
   
   /**
     * Read-only indicators that further describe the subscription.
     */
-  var flags: SubscriptionFlags = js.native
+  var flags: SubscriptionFlags
   
   /**
     * Subscription identifier.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * User that last modified (or created) the subscription.
     */
-  var lastModifiedBy: IdentityRef = js.native
+  var lastModifiedBy: IdentityRef
   
   /**
     * Date when the subscription was last modified. If the subscription has not been updated since it was created, this value will indicate when the subscription was created.
     */
-  var modifiedDate: Date = js.native
+  var modifiedDate: Date
   
   /**
     * The permissions the user have for this subscriptions.
     */
-  var permissions: SubscriptionPermissions = js.native
+  var permissions: SubscriptionPermissions
   
   /**
     * The container in which events must be published from in order to be matched by the subscription. If empty, the scope is the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
     */
-  var scope: SubscriptionScope = js.native
+  var scope: SubscriptionScope
   
   /**
     * Status of the subscription. Typically indicates whether the subscription is enabled or not.
     */
-  var status: SubscriptionStatus = js.native
+  var status: SubscriptionStatus
   
   /**
     * Message that provides more details about the status of the subscription.
     */
-  var statusMessage: String = js.native
+  var statusMessage: String
   
   /**
     * User or group that will receive notifications for events matching the subscription's filter criteria.
     */
-  var subscriber: IdentityRef = js.native
+  var subscriber: IdentityRef
   
   /**
     * REST API URL of the subscriotion.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * User-managed settings for the subscription. Only applies when the subscriber is a group. Typically used to indicate whether the calling user is opted in or out of a group subscription.
     */
-  var userSettings: SubscriptionUserSettings = js.native
+  var userSettings: SubscriptionUserSettings
 }
 object NotificationSubscription {
   

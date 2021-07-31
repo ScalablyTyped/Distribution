@@ -2,7 +2,6 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("itunesconnectanalytics", "AnalyticsQuery")
@@ -19,11 +18,13 @@ class AnalyticsQuery protected () extends StObject {
 /* static members */
 object AnalyticsQuery {
   
-  @JSImport("itunesconnectanalytics", "AnalyticsQuery.metrics")
+  @JSImport("itunesconnectanalytics", "AnalyticsQuery")
   @js.native
-  def metrics(appId: String, config: QueryConfig): AnalyticsQuery = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("itunesconnectanalytics", "AnalyticsQuery.sources")
-  @js.native
-  def sources(appId: String, config: QueryConfig): AnalyticsQuery = js.native
+  @scala.inline
+  def metrics(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
+  
+  @scala.inline
+  def sources(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("sources")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
 }

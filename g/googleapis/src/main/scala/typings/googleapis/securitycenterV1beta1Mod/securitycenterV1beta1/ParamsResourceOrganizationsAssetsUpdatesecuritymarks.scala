@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsAssetsUpdatesecuritymarks extends StandardParameters {
+trait ParamsResourceOrganizationsAssetsUpdatesecuritymarks
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The relative resource name of the SecurityMarks. See:
@@ -23,22 +23,22 @@ trait ParamsResourceOrganizationsAssetsUpdatesecuritymarks extends StandardParam
     * Examples: "organizations/123/assets/456/securityMarks"
     * "organizations/123/sources/456/findings/789/securityMarks".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSecurityMarks] = js.native
+  var requestBody: js.UndefOr[SchemaSecurityMarks] = js.undefined
   
   /**
     * The time at which the updated SecurityMarks take effect.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The FieldMask to use when updating the security marks resource.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsAssetsUpdatesecuritymarks {
   

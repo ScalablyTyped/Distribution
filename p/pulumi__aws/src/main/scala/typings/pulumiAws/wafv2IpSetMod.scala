@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wafv2IpSetMod {
@@ -66,6 +65,10 @@ object wafv2IpSetMod {
   /* static members */
   object IpSet {
     
+    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing IpSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,60 +78,54 @@ object wafv2IpSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): IpSet = js.native
-    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): IpSet = js.native
-    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState): IpSet = js.native
-    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IpSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: IpSetState, opts: CustomResourceOptions): IpSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IpSet]
     
     /**
       * Returns true if the given object is an instance of IpSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/wafv2/ipSet", "IpSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/ipSet.IpSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/ipSet.IpSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/ipSet.IpSet */ Boolean]
   }
   
-  @js.native
   trait IpSetArgs extends StObject {
     
     /**
       * Contains an array of strings that specify one or more IP addresses or blocks of IP addresses in Classless Inter-Domain Routing (CIDR) notation. AWS WAF supports all address ranges for IP versions IPv4 and IPv6.
       */
-    val addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A friendly description of the IP set.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify IPV4 or IPV6. Valid values are `IPV4` or `IPV6`.
       */
-    val ipAddressVersion: Input[String] = js.native
+    val ipAddressVersion: Input[String]
     
     /**
       * A friendly name of the IP set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the Region US East (N. Virginia).
       */
-    val scope: Input[String] = js.native
+    val scope: Input[String]
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IpSetArgs {
     
@@ -176,45 +173,44 @@ object wafv2IpSetMod {
     }
   }
   
-  @js.native
   trait IpSetState extends StObject {
     
     /**
       * Contains an array of strings that specify one or more IP addresses or blocks of IP addresses in Classless Inter-Domain Routing (CIDR) notation. AWS WAF supports all address ranges for IP versions IPv4 and IPv6.
       */
-    val addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val addresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) that identifies the cluster.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly description of the IP set.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify IPV4 or IPV6. Valid values are `IPV4` or `IPV6`.
       */
-    val ipAddressVersion: js.UndefOr[Input[String]] = js.native
+    val ipAddressVersion: js.UndefOr[Input[String]] = js.undefined
     
-    val lockToken: js.UndefOr[Input[String]] = js.native
+    val lockToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the IP set.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are `CLOUDFRONT` or `REGIONAL`. To work with CloudFront, you must also specify the Region US East (N. Virginia).
       */
-    val scope: js.UndefOr[Input[String]] = js.native
+    val scope: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object IpSetState {
     

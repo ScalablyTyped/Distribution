@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionFilterClause extends StObject {
   
   /** The repeated set of filters. They are logically combined based on the operator specified. */
-  var filters: js.UndefOr[js.Array[DimensionFilter]] = js.native
+  var filters: js.UndefOr[js.Array[DimensionFilter]] = js.undefined
   
   /** The operator for combining multiple dimension filters. If unspecified, it is treated as an `OR`. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object DimensionFilterClause {
   

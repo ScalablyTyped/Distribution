@@ -6,18 +6,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.lastOfMany
 import typings.arcgisJsApi.arcgisJsApiStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudReturnFilterProperties extends PointCloudFilterProperties {
+trait PointCloudReturnFilterProperties
+  extends StObject
+     with PointCloudFilterProperties {
   
   /**
     * An array of return types used to filter points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
     */
-  var includedReturns: js.UndefOr[js.Array[firstOfMany | last | lastOfMany | single]] = js.native
+  var includedReturns: js.UndefOr[js.Array[firstOfMany | last | lastOfMany | single]] = js.undefined
 }
 object PointCloudReturnFilterProperties {
   

@@ -2,23 +2,21 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailTemplates extends StObject {
   
-  var enrollAccount: EmailFields = js.native
+  var enrollAccount: EmailFields
   
-  var from: String = js.native
+  var from: String
   
-  var headers: js.UndefOr[Header] = js.native
+  var headers: js.UndefOr[Header] = js.undefined
   
-  var resetPassword: EmailFields = js.native
+  var resetPassword: EmailFields
   
-  var siteName: String = js.native
+  var siteName: String
   
-  var verifyEmail: EmailFields = js.native
+  var verifyEmail: EmailFields
 }
 object EmailTemplates {
   

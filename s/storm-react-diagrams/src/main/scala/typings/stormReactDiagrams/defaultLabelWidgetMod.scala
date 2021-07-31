@@ -5,7 +5,6 @@ import typings.stormReactDiagrams.baseWidgetMod.BaseWidgetProps
 import typings.stormReactDiagrams.defaultLabelModelMod.DefaultLabelModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultLabelWidgetMod {
@@ -17,10 +16,11 @@ object defaultLabelWidgetMod {
     def this(props: js.Any) = this()
   }
   
-  @js.native
-  trait DefaultLabelWidgetProps extends BaseWidgetProps {
+  trait DefaultLabelWidgetProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var model: DefaultLabelModel = js.native
+    var model: DefaultLabelModel
   }
   object DefaultLabelWidgetProps {
     

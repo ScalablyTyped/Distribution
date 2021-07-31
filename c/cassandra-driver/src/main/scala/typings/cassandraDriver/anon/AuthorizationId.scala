@@ -2,17 +2,15 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationId extends StObject {
   
-  var authorizationId: js.UndefOr[String] = js.native
+  var authorizationId: js.UndefOr[String] = js.undefined
   
-  var hostNameResolver: js.UndefOr[js.Function] = js.native
+  var hostNameResolver: js.UndefOr[js.Function] = js.undefined
   
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object AuthorizationId {
   

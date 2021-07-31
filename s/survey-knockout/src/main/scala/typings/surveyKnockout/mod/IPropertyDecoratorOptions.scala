@@ -3,17 +3,15 @@ package typings.surveyKnockout.mod
 import typings.surveyKnockout.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyDecoratorOptions extends StObject {
   
-  var defaultSource: js.UndefOr[String] = js.native
+  var defaultSource: js.UndefOr[String] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var localizable: js.UndefOr[Name | Boolean] = js.native
+  var localizable: js.UndefOr[Name | Boolean] = js.undefined
 }
 object IPropertyDecoratorOptions {
   

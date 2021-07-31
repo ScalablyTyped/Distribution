@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.chart2.data.XDataSource
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers tooling to interpret different data sources in a structural and chart-type-dependent way. */
-@js.native
-trait XDataInterpreter extends XInterface {
+trait XDataInterpreter
+  extends StObject
+     with XInterface {
   
   /**
     * Interprets the given data.
@@ -20,23 +20,23 @@ trait XDataInterpreter extends XInterface {
     * @param aArguments Arguments that tell the template how to slice the given range. The properties should be defined in a separate service.  For standard p
     * @param aSeriesToReUse use all the data series given here for the result before creating new ones.
     */
-  def interpretDataSource(xSource: XDataSource, aArguments: SeqEquiv[PropertyValue], aSeriesToReUse: SeqEquiv[XDataSeries]): InterpretedData = js.native
+  def interpretDataSource(xSource: XDataSource, aArguments: SeqEquiv[PropertyValue], aSeriesToReUse: SeqEquiv[XDataSeries]): InterpretedData
   
   /**
     * parses the given data and states, if a {@link reinterpretDataSeries()} call can be done without data loss.
     * @returns `TRUE` , if the data given in `aInterpretedData` has a similar structure than the one required is used as output of the data interpreter.
     */
-  def isDataCompatible(aInterpretedData: InterpretedData): Boolean = js.native
+  def isDataCompatible(aInterpretedData: InterpretedData): Boolean
   
   /**
     * Try to reverse the operation done in {@link interpretDataSource()} .
     *
     * In case `aInterpretedData` is the result of {@link interpretDataSource()} ( `xSource` ), the result of this method should be `xSource` .
     */
-  def mergeInterpretedData(aInterpretedData: InterpretedData): XDataSource = js.native
+  def mergeInterpretedData(aInterpretedData: InterpretedData): XDataSource
   
   /** Re-interprets the data given in `aInterpretedData` while keeping the number of data series and the categories. */
-  def reinterpretDataSeries(aInterpretedData: InterpretedData): InterpretedData = js.native
+  def reinterpretDataSeries(aInterpretedData: InterpretedData): InterpretedData
 }
 object XDataInterpreter {
   

@@ -3,21 +3,19 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPasswordCredential extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
   
-  var resource: String = js.native
+  var resource: String
   
-  def retrievePassword(): Unit = js.native
+  def retrievePassword(): Unit
   
-  var userName: String = js.native
+  var userName: String
 }
 object IPasswordCredential {
   

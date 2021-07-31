@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Arguments to delete operations.
   */
-@js.native
 trait SchemaDelete extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaDelete extends StObject {
     * idempotent. The transaction will succeed even if some or all rows do not
     * exist.
     */
-  var keySet: js.UndefOr[SchemaKeySet] = js.native
+  var keySet: js.UndefOr[SchemaKeySet] = js.undefined
   
   /**
     * Required. The table whose rows will be deleted.
     */
-  var table: js.UndefOr[String] = js.native
+  var table: js.UndefOr[String] = js.undefined
 }
 object SchemaDelete {
   

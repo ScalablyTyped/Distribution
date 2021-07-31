@@ -2,61 +2,59 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoBranchCreationConfig extends StObject {
   
   /**
     *  The basic authorization credentials for the autocreated branch. 
     */
-  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.native
+  var basicAuthCredentials: js.UndefOr[BasicAuthCredentials] = js.undefined
   
   /**
     *  The build specification (build spec) for the autocreated branch. 
     */
-  var buildSpec: js.UndefOr[BuildSpec] = js.native
+  var buildSpec: js.UndefOr[BuildSpec] = js.undefined
   
   /**
     *  Enables auto building for the autocreated branch. 
     */
-  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.native
+  var enableAutoBuild: js.UndefOr[EnableAutoBuild] = js.undefined
   
   /**
     *  Enables basic authorization for the autocreated branch. 
     */
-  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.native
+  var enableBasicAuth: js.UndefOr[EnableBasicAuth] = js.undefined
   
   /**
     * Enables performance mode for the branch. Performance mode optimizes for faster hosting performance by keeping content cached at the edge for a longer interval. When performance mode is enabled, hosting configuration or code changes can take up to 10 minutes to roll out. 
     */
-  var enablePerformanceMode: js.UndefOr[EnablePerformanceMode] = js.native
+  var enablePerformanceMode: js.UndefOr[EnablePerformanceMode] = js.undefined
   
   /**
     *  Enables pull request previews for the autocreated branch. 
     */
-  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.native
+  var enablePullRequestPreview: js.UndefOr[EnablePullRequestPreview] = js.undefined
   
   /**
     *  The environment variables for the autocreated branch. 
     */
-  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.native
+  var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
     *  The framework for the autocreated branch. 
     */
-  var framework: js.UndefOr[Framework] = js.native
+  var framework: js.UndefOr[Framework] = js.undefined
   
   /**
     *  The Amplify environment name for the pull request. 
     */
-  var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.native
+  var pullRequestEnvironmentName: js.UndefOr[PullRequestEnvironmentName] = js.undefined
   
   /**
     *  Describes the current stage for the autocreated branch. 
     */
-  var stage: js.UndefOr[Stage] = js.native
+  var stage: js.UndefOr[Stage] = js.undefined
 }
 object AutoBranchCreationConfig {
   

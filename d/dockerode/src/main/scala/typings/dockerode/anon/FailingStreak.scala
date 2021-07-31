@@ -2,17 +2,15 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailingStreak extends StObject {
   
-  var FailingStreak: Double = js.native
+  var FailingStreak: Double
   
-  var Log: js.Array[End] = js.native
+  var Log: js.Array[End]
   
-  var Status: String = js.native
+  var Status: String
 }
 object FailingStreak {
   

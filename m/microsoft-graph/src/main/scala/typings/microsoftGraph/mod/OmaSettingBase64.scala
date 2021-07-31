@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OmaSettingBase64 extends OmaSetting {
+trait OmaSettingBase64
+  extends StObject
+     with OmaSetting {
   
   // File name associated with the Value property (.cer
-  var fileName: js.UndefOr[NullableOption[String]] = js.native
+  var fileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Value. (Base64 encoded string)
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object OmaSettingBase64 {
   

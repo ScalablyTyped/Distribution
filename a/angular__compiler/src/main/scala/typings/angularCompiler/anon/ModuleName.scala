@@ -4,23 +4,21 @@ import typings.angularCompiler.srcSummaryResolverMod.Summary
 import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleName extends StObject {
   
-  var importAs: js.Array[ImportAs] = js.native
+  var importAs: js.Array[ImportAs]
   
-  var moduleName: String | Null = js.native
+  var moduleName: String | Null
   
-  var summaries: js.Array[Summary[StaticSymbol]] = js.native
+  var summaries: js.Array[Summary[StaticSymbol]]
 }
 object ModuleName {
   
   @scala.inline
   def apply(importAs: js.Array[ImportAs], summaries: js.Array[Summary[StaticSymbol]]): ModuleName = {
-    val __obj = js.Dynamic.literal(importAs = importAs.asInstanceOf[js.Any], summaries = summaries.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(importAs = importAs.asInstanceOf[js.Any], summaries = summaries.asInstanceOf[js.Any], moduleName = null)
     __obj.asInstanceOf[ModuleName]
   }
   

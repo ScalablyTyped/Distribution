@@ -6,138 +6,108 @@ import typings.nodemailer.nodemailerStrings.B
 import typings.nodemailer.nodemailerStrings.Q
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mimeFuncsMod {
   
-  @JSImport("nodemailer/lib/mime-funcs", "buildHeaderParam")
+  @JSImport("nodemailer/lib/mime-funcs", JSImport.Namespace)
   @js.native
-  def buildHeaderParam(key: String, data: String): js.Array[ParsedHeaderParam] = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "buildHeaderParam")
-  @js.native
-  def buildHeaderParam(key: String, data: String, maxLength: Double): js.Array[ParsedHeaderParam] = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "buildHeaderParam")
-  @js.native
-  def buildHeaderParam(key: String, data: Buffer): js.Array[ParsedHeaderParam] = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "buildHeaderParam")
-  @js.native
-  def buildHeaderParam(key: String, data: Buffer, maxLength: Double): js.Array[ParsedHeaderParam] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("nodemailer/lib/mime-funcs", "buildHeaderValue")
-  @js.native
-  def buildHeaderValue(structured: HeaderValue): String = js.native
+  @scala.inline
+  def buildHeaderParam(key: String, data: String): js.Array[ParsedHeaderParam] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHeaderParam")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedHeaderParam]]
+  @scala.inline
+  def buildHeaderParam(key: String, data: String, maxLength: Double): js.Array[ParsedHeaderParam] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHeaderParam")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedHeaderParam]]
+  @scala.inline
+  def buildHeaderParam(key: String, data: Buffer): js.Array[ParsedHeaderParam] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHeaderParam")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedHeaderParam]]
+  @scala.inline
+  def buildHeaderParam(key: String, data: Buffer, maxLength: Double): js.Array[ParsedHeaderParam] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHeaderParam")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedHeaderParam]]
   
-  @JSImport("nodemailer/lib/mime-funcs", "detectExtension")
-  @js.native
-  def detectExtension(mimeType: String): String = js.native
+  @scala.inline
+  def buildHeaderValue(structured: HeaderValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildHeaderValue")(structured.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "detectMimeType")
-  @js.native
-  def detectMimeType(extension: String): String = js.native
+  @scala.inline
+  def detectExtension(mimeType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectExtension")(mimeType.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "encodeURICharComponent")
-  @js.native
-  def encodeURICharComponent(chr: String): String = js.native
+  @scala.inline
+  def detectMimeType(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectMimeType")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord(data: String): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord(data: String, mimeWordEncoding: js.UndefOr[scala.Nothing], maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord(data: Buffer): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord(data: Buffer, mimeWordEncoding: js.UndefOr[scala.Nothing], maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_B(data: String, mimeWordEncoding: B): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_B(data: String, mimeWordEncoding: B, maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_B(data: Buffer, mimeWordEncoding: B): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_B(data: Buffer, mimeWordEncoding: B, maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_Q(data: String, mimeWordEncoding: Q): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_Q(data: String, mimeWordEncoding: Q, maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_Q(data: Buffer, mimeWordEncoding: Q): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWord")
-  @js.native
-  def encodeWord_Q(data: Buffer, mimeWordEncoding: Q, maxLength: Double): String = js.native
+  @scala.inline
+  def encodeURICharComponent(chr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeURICharComponent")(chr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords(value: String): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords(value: String, mimeWordEncoding: js.UndefOr[scala.Nothing], maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords_B(value: String, mimeWordEncoding: B): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords_B(value: String, mimeWordEncoding: B, maxLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords_Q(value: String, mimeWordEncoding: Q): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "encodeWords")
-  @js.native
-  def encodeWords_Q(value: String, mimeWordEncoding: Q, maxLength: Double): String = js.native
+  @scala.inline
+  def encodeWord(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeWord(data: String, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord(data: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeWord(data: Buffer, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "foldLines")
-  @js.native
-  def foldLines(str: String): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "foldLines")
-  @js.native
-  def foldLines(str: String, lineLength: js.UndefOr[scala.Nothing], afterSpace: Boolean): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "foldLines")
-  @js.native
-  def foldLines(str: String, lineLength: Double): String = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "foldLines")
-  @js.native
-  def foldLines(str: String, lineLength: Double, afterSpace: Boolean): String = js.native
+  @scala.inline
+  def encodeWord_B(data: String, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_B(data: String, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_B(data: Buffer, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_B(data: Buffer, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "hasLongerLines")
-  @js.native
-  def hasLongerLines(str: String, lineLength: Double): Boolean = js.native
+  @scala.inline
+  def encodeWord_Q(data: String, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_Q(data: String, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_Q(data: Buffer, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWord_Q(data: Buffer, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWord")(data.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "isPlainText")
-  @js.native
-  def isPlainText(value: String): Boolean = js.native
+  @scala.inline
+  def encodeWords(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encodeWords(value: String, mimeWordEncoding: Unit, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "parseHeaderValue")
-  @js.native
-  def parseHeaderValue(str: String): ParsedHeaderValue = js.native
+  @scala.inline
+  def encodeWords_B(value: String, mimeWordEncoding: B): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWords_B(value: String, mimeWordEncoding: B, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "safeEncodeURIComponent")
-  @js.native
-  def safeEncodeURIComponent(str: String): String = js.native
+  @scala.inline
+  def encodeWords_Q(value: String, mimeWordEncoding: Q): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def encodeWords_Q(value: String, mimeWordEncoding: Q, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeWords")(value.asInstanceOf[js.Any], mimeWordEncoding.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("nodemailer/lib/mime-funcs", "splitMimeEncodedString")
-  @js.native
-  def splitMimeEncodedString(str: String): js.Array[String] = js.native
-  @JSImport("nodemailer/lib/mime-funcs", "splitMimeEncodedString")
-  @js.native
-  def splitMimeEncodedString(str: String, maxlen: Double): js.Array[String] = js.native
+  @scala.inline
+  def foldLines(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def foldLines(str: String, lineLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def foldLines(str: String, lineLength: Double, afterSpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], afterSpace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def foldLines(str: String, lineLength: Unit, afterSpace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("foldLines")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any], afterSpace.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def hasLongerLines(str: String, lineLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLongerLines")(str.asInstanceOf[js.Any], lineLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPlainText(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainText")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parseHeaderValue(str: String): ParsedHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeaderValue")(str.asInstanceOf[js.Any]).asInstanceOf[ParsedHeaderValue]
+  
+  @scala.inline
+  def safeEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def splitMimeEncodedString(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMimeEncodedString")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def splitMimeEncodedString(str: String, maxlen: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitMimeEncodedString")(str.asInstanceOf[js.Any], maxlen.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait HeaderValue extends StObject {
     
-    var params: js.UndefOr[StringDictionary[String]] = js.native
+    var params: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object HeaderValue {
     
@@ -161,12 +131,11 @@ object mimeFuncsMod {
     }
   }
   
-  @js.native
   trait ParsedHeaderParam extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object ParsedHeaderParam {
     
@@ -187,11 +156,12 @@ object mimeFuncsMod {
     }
   }
   
-  @js.native
-  trait ParsedHeaderValue extends HeaderValue {
+  trait ParsedHeaderValue
+    extends StObject
+       with HeaderValue {
     
     @JSName("params")
-    var params_ParsedHeaderValue: StringDictionary[String] = js.native
+    var params_ParsedHeaderValue: StringDictionary[String]
   }
   object ParsedHeaderValue {
     

@@ -2,13 +2,13 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinearSpringOptions extends SpringOptions {
+trait LinearSpringOptions
+  extends StObject
+     with SpringOptions {
   
-  var restLength: js.UndefOr[Double] = js.native
+  var restLength: js.UndefOr[Double] = js.undefined
 }
 object LinearSpringOptions {
   

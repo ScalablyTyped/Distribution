@@ -5,28 +5,26 @@ import typings.awsSdkClientKinesisBrowser.typesRecordMod.UnmarshalledRecord
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSubscribeToShardEventMod {
   
-  @js.native
   trait SubscribeToShardEvent extends StObject {
     
     /**
       * <p>Use this as <code>StartingSequenceNumber</code> in the next call to <a>SubscribeToShard</a>.</p>
       */
-    var ContinuationSequenceNumber: String = js.native
+    var ContinuationSequenceNumber: String
     
     /**
       * <p>The number of milliseconds the read records are from the tip of the stream, indicating how far behind current time the consumer is. A value of zero indicates that record processing is caught up, and there are no new records to process at this moment.</p>
       */
-    var MillisBehindLatest: Double = js.native
+    var MillisBehindLatest: Double
     
     /**
       * <p/>
       */
-    var Records: js.Array[Record] | Iterable[Record] = js.native
+    var Records: js.Array[Record] | Iterable[Record]
   }
   object SubscribeToShardEvent {
     
@@ -57,14 +55,15 @@ object typesSubscribeToShardEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSubscribeToShardEvent extends SubscribeToShardEvent {
+  trait UnmarshalledSubscribeToShardEvent
+    extends StObject
+       with SubscribeToShardEvent {
     
     /**
       * <p/>
       */
     @JSName("Records")
-    var Records_UnmarshalledSubscribeToShardEvent: js.Array[UnmarshalledRecord] = js.native
+    var Records_UnmarshalledSubscribeToShardEvent: js.Array[UnmarshalledRecord]
   }
   object UnmarshalledSubscribeToShardEvent {
     

@@ -2,19 +2,17 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelOpenFailureInfo extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var reason: String = js.native
+  var reason: String
   
-  var reasonCode: Double = js.native
+  var reasonCode: Double
   
-  var recipient: Double = js.native
+  var recipient: Double
 }
 object ChannelOpenFailureInfo {
   

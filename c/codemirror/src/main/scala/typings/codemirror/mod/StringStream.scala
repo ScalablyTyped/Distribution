@@ -1,9 +1,9 @@
 package typings.codemirror.mod
 
+import typings.codemirror.mod.^
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -69,9 +69,9 @@ trait StringStream extends StObject {
     * expression, the returned value will be the array returned by match, in case you need to extract matched groups.
     */
   def `match`(pattern: String): Boolean = js.native
-  def `match`(pattern: String, consume: js.UndefOr[scala.Nothing], caseFold: Boolean): Boolean = js.native
   def `match`(pattern: String, consume: Boolean): Boolean = js.native
   def `match`(pattern: String, consume: Boolean, caseFold: Boolean): Boolean = js.native
+  def `match`(pattern: String, consume: Unit, caseFold: Boolean): Boolean = js.native
   def `match`(pattern: RegExp): js.Array[String] = js.native
   def `match`(pattern: RegExp, consume: Boolean): js.Array[String] = js.native
   
@@ -122,4 +122,9 @@ trait StringStream extends StObject {
     * Number of spaces per tab character.
     */
   var tabSize: Double = js.native
+}
+object StringStream {
+  
+  @scala.inline
+  def apply: StringStreamConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("StringStream").asInstanceOf[StringStreamConstructor]
 }

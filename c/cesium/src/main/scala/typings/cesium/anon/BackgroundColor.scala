@@ -6,53 +6,51 @@ import typings.cesium.mod.Property
 import typings.cesium.mod.VerticalOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: js.UndefOr[Property] = js.native
+  var backgroundColor: js.UndefOr[Property] = js.undefined
   
-  var backgroundPadding: js.UndefOr[Property] = js.native
+  var backgroundPadding: js.UndefOr[Property] = js.undefined
   
-  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.native
+  var disableDepthTestDistance: js.UndefOr[Property | Double] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition | Property] = js.native
+  var distanceDisplayCondition: js.UndefOr[typings.cesium.mod.DistanceDisplayCondition | Property] = js.undefined
   
-  var eyeOffset: js.UndefOr[Property] = js.native
+  var eyeOffset: js.UndefOr[Property] = js.undefined
   
-  var fillColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var fillColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var heightReference: js.UndefOr[Property] = js.native
+  var heightReference: js.UndefOr[Property] = js.undefined
   
-  var horizontalOrigin: js.UndefOr[Property] = js.native
+  var horizontalOrigin: js.UndefOr[Property] = js.undefined
   
-  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var outlineColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var outlineWidth: js.UndefOr[Double] = js.native
+  var outlineWidth: js.UndefOr[Double] = js.undefined
   
-  var pixelOffset: js.UndefOr[Cartesian2 | Property] = js.native
+  var pixelOffset: js.UndefOr[Cartesian2 | Property] = js.undefined
   
-  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[Property] = js.undefined
   
-  var scale: js.UndefOr[Property] = js.native
+  var scale: js.UndefOr[Property] = js.undefined
   
-  var scaleByDistance: js.UndefOr[Property] = js.native
+  var scaleByDistance: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
   
-  var showBackground: js.UndefOr[Property] = js.native
+  var showBackground: js.UndefOr[Property] = js.undefined
   
-  var style: js.UndefOr[LabelStyle | Property] = js.native
+  var style: js.UndefOr[LabelStyle | Property] = js.undefined
   
-  var text: js.UndefOr[Property | String] = js.native
+  var text: js.UndefOr[Property | String] = js.undefined
   
-  var translucencyByDistance: js.UndefOr[Property] = js.native
+  var translucencyByDistance: js.UndefOr[Property] = js.undefined
   
-  var verticalOrigin: js.UndefOr[VerticalOrigin | Property] = js.native
+  var verticalOrigin: js.UndefOr[VerticalOrigin | Property] = js.undefined
 }
 object BackgroundColor {
   

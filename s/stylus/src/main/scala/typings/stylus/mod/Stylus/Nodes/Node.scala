@@ -3,59 +3,57 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
   /**
     *  Default coercion throws.
     */
-  def coerce(other: Node): Node = js.native
+  def coerce(other: Node): Node
   
-  var column: Double = js.native
+  var column: Double
   
   /**
     * Nodes by default evaluate to themselves.
     */
-  def eval(): Node = js.native
+  def eval(): Node
   
-  var filename: java.lang.String = js.native
+  var filename: java.lang.String
   
-  var first: Node = js.native
+  var first: Node
   
-  var hash: java.lang.String = js.native
+  var hash: java.lang.String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var nodeName: java.lang.String = js.native
+  var nodeName: java.lang.String
   
   /**
     * Operate on `right` with the given `op`.
     */
-  def operate(op: java.lang.String, right: Node): Node = js.native
+  def operate(op: java.lang.String, right: Node): Node
   
   /**
     * Return false if `op` is generally not coerced.
     */
-  def shouldCoerce(op: java.lang.String): scala.Boolean = js.native
+  def shouldCoerce(op: java.lang.String): scala.Boolean
   
   /**
     * Return true.
     */
   // tslint:disable-next-line no-unnecessary-qualifier
-  def toBoolean(): Boolean = js.native
+  def toBoolean(): Boolean
   
   /**
     * Return the expression, or wrap this node in an expression.
     */
-  def toExpression(): Expression = js.native
+  def toExpression(): Expression
   
   /**
     * Return a JSON representation of this node.
     */
-  def toJSON(): Column = js.native
+  def toJSON(): Column
 }
 object Node {
   

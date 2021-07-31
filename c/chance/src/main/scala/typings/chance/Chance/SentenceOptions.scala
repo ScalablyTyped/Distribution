@@ -7,15 +7,13 @@ import typings.chance.chanceStrings.Questionmark
 import typings.chance.chanceStrings.Semicolon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SentenceOptions extends StObject {
   
-  var punctuation: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean = js.native
+  var punctuation: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean
   
-  var words: Double = js.native
+  var words: Double
 }
 object SentenceOptions {
   

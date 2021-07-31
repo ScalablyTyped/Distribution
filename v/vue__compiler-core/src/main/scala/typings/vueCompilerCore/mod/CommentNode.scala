@@ -3,25 +3,24 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentNode
-  extends TemplateChildNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with TemplateChildNode {
   
-  var content: String = js.native
+  var content: String
   
   @JSName("type")
-  var type_CommentNode: `3` = js.native
+  var type_CommentNode: `3`
 }
 object CommentNode {
   
   @scala.inline
-  def apply(content: String, loc: SourceLocation, `type`: `3`): CommentNode = {
+  def apply(content: String, loc: SourceLocation): CommentNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(3)
     __obj.asInstanceOf[CommentNode]
   }
   

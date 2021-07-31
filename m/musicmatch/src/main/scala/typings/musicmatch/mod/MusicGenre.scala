@@ -2,21 +2,19 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MusicGenre extends StObject {
   
-  var music_genre_id: Double = js.native
+  var music_genre_id: Double
   
-  var music_genre_name: String = js.native
+  var music_genre_name: String
   
-  var music_genre_name_extended: String = js.native
+  var music_genre_name_extended: String
   
-  var music_genre_parent_id: Double = js.native
+  var music_genre_parent_id: Double
   
-  var music_genre_vanity: String = js.native
+  var music_genre_vanity: String
 }
 object MusicGenre {
   

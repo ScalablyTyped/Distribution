@@ -4,29 +4,27 @@ import typings.mfiles.MFiles.MFACLEnforcingMode
 import typings.mfiles.MFiles.MFObjectOperationFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISetPropertiesParams extends StObject {
   
-  var AccessControlListEnforcingMode: MFACLEnforcingMode = js.native
+  var AccessControlListEnforcingMode: MFACLEnforcingMode
   
-  var AccessControlListProvidedForEnforcing: IAccessControlList = js.native
+  var AccessControlListProvidedForEnforcing: IAccessControlList
   
-  var AllowModifyingCheckedInObject: Boolean = js.native
+  var AllowModifyingCheckedInObject: Boolean
   
-  def Clone(): ISetPropertiesParams = js.native
+  def Clone(): ISetPropertiesParams
   
-  var FailIfNotLatestCheckedInVersion: Boolean = js.native
+  var FailIfNotLatestCheckedInVersion: Boolean
   
-  var FullSet: Boolean = js.native
+  var FullSet: Boolean
   
-  var ObjVer: IObjVer = js.native
+  var ObjVer: IObjVer
   
-  var PropertyValuesToRemove: IIDs = js.native
+  var PropertyValuesToRemove: IIDs
   
-  var PropertyValuesToSet: IPropertyValues = js.native
+  var PropertyValuesToSet: IPropertyValues
   
   def SetWithPermissions(
     ObjVer: IObjVer,
@@ -38,7 +36,7 @@ trait ISetPropertiesParams extends StObject {
     ObjectOperationFlags: MFObjectOperationFlags,
     AccessControlListEnforcingMode: MFACLEnforcingMode,
     AccessControlListProvidedForEnforcing: IAccessControlList
-  ): Unit = js.native
+  ): Unit
 }
 object ISetPropertiesParams {
   

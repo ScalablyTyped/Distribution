@@ -4,7 +4,6 @@ import typings.powerappsComponentFramework.anon.Accuracy
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,33 +14,32 @@ object DeviceApi {
   /**
     * Interface of input argument 'options' in context.device.captureImage
     */
-  @js.native
   trait CaptureImageOptions extends StObject {
     
     /**
       * Indicates whether to edit the image before saving.
       */
-    var allowEdit: Boolean = js.native
+    var allowEdit: Boolean
     
     /**
       * Height of the image to capture.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Indicates whether to capture image using the front camera of the device.
       */
-    var preferFrontCamera: Boolean = js.native
+    var preferFrontCamera: Boolean
     
     /**
       * Quality of the image file in percentage.
       */
-    var quality: Double = js.native
+    var quality: Double
     
     /**
       * Width of the image to capture.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CaptureImageOptions {
     
@@ -74,23 +72,22 @@ object DeviceApi {
   /**
     * Interface of input argument 'pickupFileOption' in context.device.pickupFile
     */
-  @js.native
   trait PickFileOptions extends StObject {
     
     /**
       * Image file types to select. Valid values are "audio", "video", or "image".
       */
-    var accept: String = js.native
+    var accept: String
     
     /**
       * Indicates whether to allow selecting multiple files.
       */
-    var allowMultipleFiles: Boolean = js.native
+    var allowMultipleFiles: Boolean
     
     /**
       * Maximum size of the files(s) to be selected.
       */
-    var maximumAllowedFileSize: Double = js.native
+    var maximumAllowedFileSize: Double
   }
   object PickFileOptions {
     
@@ -117,18 +114,17 @@ object DeviceApi {
   /**
     * Interface of return geological information in context.device.getCurrentPosition
     */
-  @js.native
   trait Position extends StObject {
     
     /**
       * Contains a set of geographic coordinates along with associated accuracy as well as a set of other optional attributes such as altitude and speed.
       */
-    var coords: Accuracy = js.native
+    var coords: Accuracy
     
     /**
       * Represents the time when the object was acquired and is represented as DOMTimeStamp.
       */
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object Position {
     

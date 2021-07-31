@@ -2,40 +2,35 @@ package typings.sentryUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object supportsMod {
   
-  @JSImport("@sentry/utils/dist/supports", "supportsDOMError")
+  @JSImport("@sentry/utils/dist/supports", JSImport.Namespace)
   @js.native
-  def supportsDOMError(): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/utils/dist/supports", "supportsDOMException")
-  @js.native
-  def supportsDOMException(): Boolean = js.native
+  @scala.inline
+  def supportsDOMError(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsDOMError")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsErrorEvent")
-  @js.native
-  def supportsErrorEvent(): Boolean = js.native
+  @scala.inline
+  def supportsDOMException(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsDOMException")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsFetch")
-  @js.native
-  def supportsFetch(): Boolean = js.native
+  @scala.inline
+  def supportsErrorEvent(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsErrorEvent")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsHistory")
-  @js.native
-  def supportsHistory(): Boolean = js.native
+  @scala.inline
+  def supportsFetch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsFetch")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsNativeFetch")
-  @js.native
-  def supportsNativeFetch(): Boolean = js.native
+  @scala.inline
+  def supportsHistory(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsHistory")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsReferrerPolicy")
-  @js.native
-  def supportsReferrerPolicy(): Boolean = js.native
+  @scala.inline
+  def supportsNativeFetch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsNativeFetch")().asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/supports", "supportsReportingObserver")
-  @js.native
-  def supportsReportingObserver(): Boolean = js.native
+  @scala.inline
+  def supportsReferrerPolicy(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsReferrerPolicy")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def supportsReportingObserver(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsReportingObserver")().asInstanceOf[Boolean]
 }

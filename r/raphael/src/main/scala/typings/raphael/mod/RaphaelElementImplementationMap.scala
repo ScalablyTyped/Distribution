@@ -8,29 +8,27 @@ import typings.std.SVGRectElement
 import typings.std.SVGTextElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelElementImplementationMap extends StObject {
   
   /** The elements that implement the {@link RaphaelPaper.circle} shape. */
-  var circle: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement] = js.native
+  var circle: RaphaelElementByTechnologyMap[SVGCircleElement, VMLCircleElement]
   
   /** The elements that implement the {@link RaphaelPaper.ellipse} shape. */
-  var ellipse: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement] = js.native
+  var ellipse: RaphaelElementByTechnologyMap[SVGEllipseElement, VMLEllipseElement]
   
   /** The elements that implement the {@link RaphaelPaper.image} shape. */
-  var image: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement] = js.native
+  var image: RaphaelElementByTechnologyMap[SVGImageElement, VMLImageElement]
   
   /** The elements that implement the {@link RaphaelPaper.path} shape. */
-  var path: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement] = js.native
+  var path: RaphaelElementByTechnologyMap[SVGPathElement, VMLPathElement]
   
   /** The elements that implement the {@link RaphaelPaper.rect} shape. */
-  var rect: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement] = js.native
+  var rect: RaphaelElementByTechnologyMap[SVGRectElement, VMLRectElement]
   
   /** The elements that implement the {@link RaphaelPaper.text} shape. */
-  var text: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement] = js.native
+  var text: RaphaelElementByTechnologyMap[SVGTextElement, VMLTextElement]
 }
 object RaphaelElementImplementationMap {
   

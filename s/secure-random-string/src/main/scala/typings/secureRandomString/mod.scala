@@ -3,32 +3,30 @@ package typings.secureRandomString
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(cb: Callback): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(options: Options, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("secure-random-string", JSImport.Namespace)
   @js.native
-  def apply(): String = js.native
-  @JSImport("secure-random-string", JSImport.Namespace)
-  @js.native
-  def apply(cb: Callback): Unit = js.native
-  @JSImport("secure-random-string", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String = js.native
-  @JSImport("secure-random-string", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, cb: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var alphanumeric: js.UndefOr[Boolean] = js.native
+    var alphanumeric: js.UndefOr[Boolean] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

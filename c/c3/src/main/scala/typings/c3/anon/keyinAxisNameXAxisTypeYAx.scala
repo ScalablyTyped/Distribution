@@ -4,18 +4,16 @@ import typings.c3.mod.XAxisType
 import typings.c3.mod.YAxisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in c3.c3.AxisName ]:? c3.c3.XAxisType | c3.c3.YAxisType} */
-@js.native
 trait keyinAxisNameXAxisTypeYAx extends StObject {
   
-  var x: js.UndefOr[XAxisType | YAxisType] = js.native
+  var x: js.UndefOr[XAxisType | YAxisType] = js.undefined
   
-  var y: js.UndefOr[XAxisType | YAxisType] = js.native
+  var y: js.UndefOr[XAxisType | YAxisType] = js.undefined
   
-  var y2: js.UndefOr[XAxisType | YAxisType] = js.native
+  var y2: js.UndefOr[XAxisType | YAxisType] = js.undefined
 }
 object keyinAxisNameXAxisTypeYAx {
   

@@ -2,28 +2,26 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCarriersCarrier extends StObject {
   
   /**
     * The CLDR country code of the carrier (e.g., &quot;US&quot;). Always
     * present.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the carrier (e.g., &quot;UPS&quot;). Always present.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of supported services (e.g., &quot;ground&quot;) for that carrier.
     * Contains at least one service.
     */
-  var services: js.UndefOr[js.Array[String]] = js.native
+  var services: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCarriersCarrier {
   

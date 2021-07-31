@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DhcpConfiguration extends StObject {
   
   /**
     * The name of a DHCP option.
     */
-  var Key: js.UndefOr[String] = js.native
+  var Key: js.UndefOr[String] = js.undefined
   
   /**
     * One or more values for the DHCP option.
     */
-  var Values: js.UndefOr[DhcpConfigurationValueList] = js.native
+  var Values: js.UndefOr[DhcpConfigurationValueList] = js.undefined
 }
 object DhcpConfiguration {
   

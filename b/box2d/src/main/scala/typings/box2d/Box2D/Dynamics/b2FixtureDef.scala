@@ -3,46 +3,44 @@ package typings.box2d.Box2D.Dynamics
 import typings.box2d.Box2D.Collision.Shapes.b2Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2FixtureDef extends StObject {
   
   /**
     * The density, usually in kg/m^2.
     **/
-  var density: Double = js.native
+  var density: Double
   
   /**
     * Contact filtering data.
     **/
-  var filter: b2FilterData = js.native
+  var filter: b2FilterData
   
   /**
     * The friction coefficient, usually in the range [0,1].
     **/
-  var friction: Double = js.native
+  var friction: Double
   
   /**
     * A sensor shape collects contact information but never generates a collision response.
     **/
-  var isSensor: Boolean = js.native
+  var isSensor: Boolean
   
   /**
     * The restitution (elasticity) usually in the range [0,1].
     **/
-  var restitution: Double = js.native
+  var restitution: Double
   
   /**
     * The shape, this must be set. The shape will be cloned, so you can create the shape on the stack.
     **/
-  var shape: b2Shape = js.native
+  var shape: b2Shape
   
   /**
     * Use this to store application specific fixture data.
     **/
-  var userData: js.Any = js.native
+  var userData: js.Any
 }
 object b2FixtureDef {
   

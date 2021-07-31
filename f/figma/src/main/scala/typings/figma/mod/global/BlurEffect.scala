@@ -4,17 +4,17 @@ import typings.figma.figmaStrings.BACKGROUND_BLUR
 import typings.figma.figmaStrings.LAYER_BLUR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlurEffect extends Effect {
+trait BlurEffect
+  extends StObject
+     with Effect {
   
-  val radius: Double = js.native
+  val radius: Double
   
-  val `type`: LAYER_BLUR | BACKGROUND_BLUR = js.native
+  val `type`: LAYER_BLUR | BACKGROUND_BLUR
   
-  val visible: Boolean = js.native
+  val visible: Boolean
 }
 object BlurEffect {
   

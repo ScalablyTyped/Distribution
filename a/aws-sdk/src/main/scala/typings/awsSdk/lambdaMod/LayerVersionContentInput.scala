@@ -2,31 +2,29 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerVersionContentInput extends StObject {
   
   /**
     * The Amazon S3 bucket of the layer archive.
     */
-  var S3Bucket: js.UndefOr[typings.awsSdk.lambdaMod.S3Bucket] = js.native
+  var S3Bucket: js.UndefOr[typings.awsSdk.lambdaMod.S3Bucket] = js.undefined
   
   /**
     * The Amazon S3 key of the layer archive.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.lambdaMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.lambdaMod.S3Key] = js.undefined
   
   /**
     * For versioned objects, the version of the layer archive object to use.
     */
-  var S3ObjectVersion: js.UndefOr[typings.awsSdk.lambdaMod.S3ObjectVersion] = js.native
+  var S3ObjectVersion: js.UndefOr[typings.awsSdk.lambdaMod.S3ObjectVersion] = js.undefined
   
   /**
     * The base64-encoded contents of the layer archive. AWS SDK and AWS CLI clients handle the encoding for you.
     */
-  var ZipFile: js.UndefOr[_Blob] = js.native
+  var ZipFile: js.UndefOr[_Blob] = js.undefined
 }
 object LayerVersionContentInput {
   

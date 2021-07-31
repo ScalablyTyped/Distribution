@@ -10,7 +10,6 @@ import typings.three.webGLProgramMod.WebGLProgram
 import typings.three.webGLPropertiesMod.WebGLProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLRenderListsMod {
@@ -85,26 +84,25 @@ object webGLRenderListsMod {
     def get(scene: Scene, camera: Camera): WebGLRenderList = js.native
   }
   
-  @js.native
   trait RenderItem extends StObject {
     
-    var geometry: BufferGeometry | Null = js.native
+    var geometry: BufferGeometry | Null
     
-    var group: Group | Null = js.native
+    var group: Group | Null
     
-    var groupOrder: Double = js.native
+    var groupOrder: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var material: Material = js.native
+    var material: Material
     
-    var `object`: Object3D = js.native
+    var `object`: Object3D
     
-    var program: WebGLProgram = js.native
+    var program: WebGLProgram
     
-    var renderOrder: Double = js.native
+    var renderOrder: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object RenderItem {
     
@@ -118,7 +116,7 @@ object webGLRenderListsMod {
       renderOrder: Double,
       z: Double
     ): RenderItem = {
-      val __obj = js.Dynamic.literal(groupOrder = groupOrder.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], material = material.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], renderOrder = renderOrder.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(groupOrder = groupOrder.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], material = material.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], renderOrder = renderOrder.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any], geometry = null, group = null)
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderItem]
     }
@@ -161,6 +159,5 @@ object webGLRenderListsMod {
     }
   }
   
-  @js.native
   trait RenderTarget extends StObject
 }

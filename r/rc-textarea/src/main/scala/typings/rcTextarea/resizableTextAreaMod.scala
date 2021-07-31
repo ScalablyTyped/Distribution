@@ -8,7 +8,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizableTextAreaMod {
@@ -26,21 +25,26 @@ object resizableTextAreaMod {
   object RESIZE_STATUS extends StObject {
     
     @js.native
-    sealed trait NONE extends RESIZE_STATUS
+    sealed trait NONE
+      extends StObject
+         with RESIZE_STATUS
     
     @js.native
-    sealed trait RESIZED extends RESIZE_STATUS
+    sealed trait RESIZED
+      extends StObject
+         with RESIZE_STATUS
     
     @js.native
-    sealed trait RESIZING extends RESIZE_STATUS
+    sealed trait RESIZING
+      extends StObject
+         with RESIZE_STATUS
   }
   
-  @js.native
   trait AutoSizeType extends StObject {
     
-    var maxRows: js.UndefOr[Double] = js.native
+    var maxRows: js.UndefOr[Double] = js.undefined
     
-    var minRows: js.UndefOr[Double] = js.native
+    var minRows: js.UndefOr[Double] = js.undefined
   }
   object AutoSizeType {
     
@@ -99,13 +103,12 @@ object resizableTextAreaMod {
     var textArea: HTMLTextAreaElement = js.native
   }
   
-  @js.native
   trait TextAreaState extends StObject {
     
     /** We need add process style to disable scroll first and then add back to avoid unexpected scrollbar  */
-    var resizeStatus: js.UndefOr[RESIZE_STATUS] = js.native
+    var resizeStatus: js.UndefOr[RESIZE_STATUS] = js.undefined
     
-    var textareaStyles: js.UndefOr[CSSProperties] = js.native
+    var textareaStyles: js.UndefOr[CSSProperties] = js.undefined
   }
   object TextAreaState {
     

@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaConferenceSolutionKey extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaConferenceSolutionKey extends StObject {
     * Hangouts for G Suite users (http://hangouts.google.com) -
     * &quot;hangoutsMeet&quot; for Hangouts Meet (http://meet.google.com)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaConferenceSolutionKey {
   

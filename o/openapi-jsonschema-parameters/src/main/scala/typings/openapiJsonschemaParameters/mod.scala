@@ -4,29 +4,30 @@ import typings.openapiTypes.mod.IJsonSchema
 import typings.openapiTypes.mod.OpenAPI.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("openapi-jsonschema-parameters", "convertParametersToJSONSchema")
+  @JSImport("openapi-jsonschema-parameters", JSImport.Namespace)
   @js.native
-  def convertParametersToJSONSchema(parameters: Parameters): OpenAPIParametersAsJSONSchema = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def convertParametersToJSONSchema(parameters: Parameters): OpenAPIParametersAsJSONSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("convertParametersToJSONSchema")(parameters.asInstanceOf[js.Any]).asInstanceOf[OpenAPIParametersAsJSONSchema]
+  
   trait OpenAPIParametersAsJSONSchema extends StObject {
     
-    var body: js.UndefOr[IJsonSchema] = js.native
+    var body: js.UndefOr[IJsonSchema] = js.undefined
     
-    var cookie: js.UndefOr[IJsonSchema] = js.native
+    var cookie: js.UndefOr[IJsonSchema] = js.undefined
     
-    var formData: js.UndefOr[IJsonSchema] = js.native
+    var formData: js.UndefOr[IJsonSchema] = js.undefined
     
-    var headers: js.UndefOr[IJsonSchema] = js.native
+    var headers: js.UndefOr[IJsonSchema] = js.undefined
     
-    var path: js.UndefOr[IJsonSchema] = js.native
+    var path: js.UndefOr[IJsonSchema] = js.undefined
     
-    var query: js.UndefOr[IJsonSchema] = js.native
+    var query: js.UndefOr[IJsonSchema] = js.undefined
   }
   object OpenAPIParametersAsJSONSchema {
     

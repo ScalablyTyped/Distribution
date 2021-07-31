@@ -8,25 +8,24 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketVersioningOutputMod {
   
-  @js.native
   trait GetBucketVersioningOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>Specifies whether MFA delete is enabled in the bucket versioning configuration. This element is only returned if the bucket has been configured with MFA delete. If the bucket has never been so configured, this element is not returned.</p>
       */
-    var MFADelete: js.UndefOr[Enabled | Disabled | String] = js.native
+    var MFADelete: js.UndefOr[Enabled | Disabled | String] = js.undefined
     
     /**
       * <p>The versioning state of the bucket.</p>
       */
-    var Status: js.UndefOr[Enabled | Suspended | String] = js.native
+    var Status: js.UndefOr[Enabled | Suspended | String] = js.undefined
   }
   object GetBucketVersioningOutput {
     

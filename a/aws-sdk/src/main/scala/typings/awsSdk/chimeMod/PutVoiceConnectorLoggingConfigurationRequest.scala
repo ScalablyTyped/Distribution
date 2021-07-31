@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorLoggingConfigurationRequest extends StObject {
   
   /**
     * The logging configuration details to add.
     */
-  var LoggingConfiguration: typings.awsSdk.chimeMod.LoggingConfiguration = js.native
+  var LoggingConfiguration: typings.awsSdk.chimeMod.LoggingConfiguration
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString = js.native
+  var VoiceConnectorId: NonEmptyString
 }
 object PutVoiceConnectorLoggingConfigurationRequest {
   

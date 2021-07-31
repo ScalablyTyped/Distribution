@@ -11,18 +11,17 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
   object default {
     
-    @JSImport("antd/lib/list", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply[T](
-      hasPaginationPrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest: ListProps[T]
-    ): Element = js.native
+      hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest: ListProps[T]
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/list", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -82,12 +81,11 @@ object listMod {
     def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
   }
   
-  @js.native
   trait ListConsumerProps extends StObject {
     
-    var grid: js.UndefOr[js.Any] = js.native
+    var grid: js.UndefOr[js.Any] = js.undefined
     
-    var itemLayout: js.UndefOr[String] = js.native
+    var itemLayout: js.UndefOr[String] = js.undefined
   }
   object ListConsumerProps {
     
@@ -114,24 +112,23 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListGridType extends StObject {
     
-    var column: js.UndefOr[ColumnCount] = js.native
+    var column: js.UndefOr[ColumnCount] = js.undefined
     
-    var gutter: js.UndefOr[Double] = js.native
+    var gutter: js.UndefOr[Double] = js.undefined
     
-    var lg: js.UndefOr[ColumnCount] = js.native
+    var lg: js.UndefOr[ColumnCount] = js.undefined
     
-    var md: js.UndefOr[ColumnCount] = js.native
+    var md: js.UndefOr[ColumnCount] = js.undefined
     
-    var sm: js.UndefOr[ColumnCount] = js.native
+    var sm: js.UndefOr[ColumnCount] = js.undefined
     
-    var xl: js.UndefOr[ColumnCount] = js.native
+    var xl: js.UndefOr[ColumnCount] = js.undefined
     
-    var xs: js.UndefOr[ColumnCount] = js.native
+    var xs: js.UndefOr[ColumnCount] = js.undefined
     
-    var xxl: js.UndefOr[ColumnCount] = js.native
+    var xxl: js.UndefOr[ColumnCount] = js.undefined
   }
   object ListGridType {
     
@@ -208,10 +205,9 @@ object listMod {
     def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
   }
   
-  @js.native
   trait ListLocale extends StObject {
     
-    var emptyText: ReactNode | js.Function0[ReactNode] = js.native
+    var emptyText: ReactNode | js.Function0[ReactNode]
   }
   object ListLocale {
     
@@ -235,48 +231,47 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListProps[T] extends StObject {
     
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataSource: js.UndefOr[js.Array[T]] = js.native
+    var dataSource: js.UndefOr[js.Array[T]] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
-    var grid: js.UndefOr[ListGridType] = js.native
+    var grid: js.UndefOr[ListGridType] = js.undefined
     
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemLayout: js.UndefOr[ListItemLayout] = js.native
+    var itemLayout: js.UndefOr[ListItemLayout] = js.undefined
     
-    var loadMore: js.UndefOr[ReactNode] = js.native
+    var loadMore: js.UndefOr[ReactNode] = js.undefined
     
-    var loading: js.UndefOr[Boolean | SpinProps] = js.native
+    var loading: js.UndefOr[Boolean | SpinProps] = js.undefined
     
-    var locale: js.UndefOr[ListLocale] = js.native
+    var locale: js.UndefOr[ListLocale] = js.undefined
     
-    var pagination: js.UndefOr[PaginationConfig | `false`] = js.native
+    var pagination: js.UndefOr[PaginationConfig | `false`] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var renderItem: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, ReactNode]] = js.native
+    var renderItem: js.UndefOr[js.Function2[/* item */ T, /* index */ Double, ReactNode]] = js.undefined
     
-    var rowKey: js.UndefOr[(js.Function1[/* item */ T, String]) | String] = js.native
+    var rowKey: js.UndefOr[(js.Function1[/* item */ T, String]) | String] = js.undefined
     
-    var size: js.UndefOr[ListSize] = js.native
+    var size: js.UndefOr[ListSize] = js.undefined
     
-    var split: js.UndefOr[Boolean] = js.native
+    var split: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object ListProps {
     
@@ -287,7 +282,7 @@ object listMod {
     }
     
     @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps[_], T] (val x: Self with ListProps[T]) extends AnyVal {
+    implicit class ListPropsMutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
       
       @scala.inline
       def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])

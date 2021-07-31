@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubtitleOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The horizontal alignment of the
     * subtitle. Can be one of "left", "center" and "right".
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When the subtitle is floating,
     * the plot area will not move to make space for it.
     */
-  var floating: js.UndefOr[Boolean] = js.native
+  var floating: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the title.
@@ -26,38 +24,38 @@ trait SubtitleOptions extends StObject {
     * In styled mode, the subtitle style is given in the `.highcharts-subtitle`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The subtitle of the chart.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the text.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of the
     * title. Can be one of `"top"`, `"middle"` and `"bottom"`. When middle, the
     * subtitle behaves as floating.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Adjustment made to the subtitle
     * width, normally to reserve space for the exporting burger menu.
     */
-  var widthAdjust: js.UndefOr[Double] = js.native
+  var widthAdjust: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position of the subtitle
     * relative to the alignment within `chart.spacingLeft` and
     * `chart.spacingRight`.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position of the subtitle
@@ -65,7 +63,7 @@ trait SubtitleOptions extends StObject {
     * `chart.spacingBottom`. By default the subtitle is laid out below the
     * title unless the title is floating.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object SubtitleOptions {
   

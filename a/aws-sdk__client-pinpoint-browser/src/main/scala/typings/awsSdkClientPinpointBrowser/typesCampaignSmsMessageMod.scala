@@ -4,28 +4,26 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.PR
 import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.TRANSACTIONAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCampaignSmsMessageMod {
   
-  @js.native
   trait CampaignSmsMessage extends StObject {
     
     /**
       * The SMS text body.
       */
-    var Body: js.UndefOr[String] = js.native
+    var Body: js.UndefOr[String] = js.undefined
     
     /**
       * Is this is a transactional SMS message, otherwise a promotional message.
       */
-    var MessageType: js.UndefOr[TRANSACTIONAL | PROMOTIONAL | String] = js.native
+    var MessageType: js.UndefOr[TRANSACTIONAL | PROMOTIONAL | String] = js.undefined
     
     /**
       * Sender ID of sent message.
       */
-    var SenderId: js.UndefOr[String] = js.native
+    var SenderId: js.UndefOr[String] = js.undefined
   }
   object CampaignSmsMessage {
     

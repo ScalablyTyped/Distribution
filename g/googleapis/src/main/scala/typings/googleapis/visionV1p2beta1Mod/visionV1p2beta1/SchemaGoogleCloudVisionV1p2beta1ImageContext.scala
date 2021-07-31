@@ -2,19 +2,17 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Image context and/or feature-specific parameters.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1ImageContext extends StObject {
   
   /**
     * Parameters for crop hints annotation request.
     */
-  var cropHintsParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1CropHintsParams] = js.native
+  var cropHintsParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1CropHintsParams] = js.undefined
   
   /**
     * List of languages to use for TEXT_DETECTION. In most cases, an empty
@@ -26,22 +24,22 @@ trait SchemaGoogleCloudVisionV1p2beta1ImageContext extends StObject {
     * detection returns an error if one or more of the specified languages is
     * not one of the [supported languages](/vision/docs/languages).
     */
-  var languageHints: js.UndefOr[js.Array[String]] = js.native
+  var languageHints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Not used.
     */
-  var latLongRect: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1LatLongRect] = js.native
+  var latLongRect: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1LatLongRect] = js.undefined
   
   /**
     * Parameters for product search.
     */
-  var productSearchParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1ProductSearchParams] = js.native
+  var productSearchParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1ProductSearchParams] = js.undefined
   
   /**
     * Parameters for web detection.
     */
-  var webDetectionParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1WebDetectionParams] = js.native
+  var webDetectionParams: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1WebDetectionParams] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1ImageContext {
   

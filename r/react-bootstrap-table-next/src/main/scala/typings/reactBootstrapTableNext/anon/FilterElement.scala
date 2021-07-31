@@ -3,15 +3,13 @@ package typings.reactBootstrapTableNext.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterElement extends StObject {
   
-  var filterElement: Element = js.native
+  var filterElement: Element
   
-  var sortElement: Element = js.native
+  var sortElement: Element
 }
 object FilterElement {
   

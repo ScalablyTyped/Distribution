@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flight extends StObject {
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Rate or cost of this flight. */
-  var rateOrCost: js.UndefOr[String] = js.native
+  var rateOrCost: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /** Units of this flight. */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object Flight {
   

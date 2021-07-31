@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkRecipientsSummaryResponse extends StObject {
   
   /**
     * A complex type containing information about the bulk recipients in the response.
     */
-  var bulkRecipients: js.UndefOr[js.Array[BulkRecipient]] = js.native
+  var bulkRecipients: js.UndefOr[js.Array[BulkRecipient]] = js.undefined
   
   /**
     * The number of items returned in this response.
     */
-  var bulkRecipientsCount: js.UndefOr[String] = js.native
+  var bulkRecipientsCount: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var bulkRecipientsUri: js.UndefOr[String] = js.native
+  var bulkRecipientsUri: js.UndefOr[String] = js.undefined
   
   /**
     * Array or errors.
@@ -30,7 +28,7 @@ trait BulkRecipientsSummaryResponse extends StObject {
     js.Array[
       /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BulkRecipientsSummaryResponse {
   

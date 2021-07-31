@@ -2,44 +2,42 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for communication with an SMTP service.
   */
-@js.native
 trait SchemaSmtpMsa extends StObject {
   
   /**
     * The hostname of the SMTP service. Required.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The password that will be used for authentication with the SMTP service.
     * This is a write-only field that can be specified in requests to create or
     * update SendAs settings; it is never populated in responses.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The port of the SMTP service. Required.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * The protocol that will be used to secure communication with the SMTP
     * service. Required.
     */
-  var securityMode: js.UndefOr[String] = js.native
+  var securityMode: js.UndefOr[String] = js.undefined
   
   /**
     * The username that will be used for authentication with the SMTP service.
     * This is a write-only field that can be specified in requests to create or
     * update SendAs settings; it is never populated in responses.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaSmtpMsa {
   

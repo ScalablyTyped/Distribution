@@ -2,19 +2,17 @@ package typings.momentLocalesWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IgnoreInvalidLocales extends StObject {
     
     /** Ignore invalid or unsupported locales in `localesToKeep`. */
-    var ignoreInvalidLocales: js.UndefOr[Boolean] = js.native
+    var ignoreInvalidLocales: js.UndefOr[Boolean] = js.undefined
     
     /** An array of locales to keep bundled (other locales are removed). */
-    var localesToKeep: js.UndefOr[js.Array[String]] = js.native
+    var localesToKeep: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IgnoreInvalidLocales {
     

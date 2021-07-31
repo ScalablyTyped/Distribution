@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestTaskOnHeadersReceivedCallbackResult extends StObject {
   
   /** 开发者服务器返回的 HTTP Response Header */
-  var header: js.Object = js.native
+  var header: js.Object
 }
 object RequestTaskOnHeadersReceivedCallbackResult {
   

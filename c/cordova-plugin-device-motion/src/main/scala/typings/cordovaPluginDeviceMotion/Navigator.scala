@@ -2,10 +2,8 @@ package typings.cordovaPluginDeviceMotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Navigator extends StObject {
     * that detects the change (delta) in movement relative to the current device orientation,
     * in three dimensions along the x, y, and z axis.
     */
-  var accelerometer: Accelerometer = js.native
+  var accelerometer: Accelerometer
 }
 object Navigator {
   

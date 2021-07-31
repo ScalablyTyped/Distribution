@@ -2,24 +2,23 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TrustedServers {
   
-  @JSImport("cesium", "TrustedServers.add")
+  @JSImport("cesium", "TrustedServers")
   @js.native
-  def add(host: String, port: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "TrustedServers.clear")
-  @js.native
-  def clear(): Unit = js.native
+  @scala.inline
+  def add(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cesium", "TrustedServers.contains")
-  @js.native
-  def contains(contains: String): Boolean = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("cesium", "TrustedServers.remove")
-  @js.native
-  def remove(host: String, port: Double): Unit = js.native
+  @scala.inline
+  def contains(contains: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(contains.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def remove(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

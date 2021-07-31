@@ -2,17 +2,15 @@ package typings.vueTemplateCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorWithRange extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var msg: String = js.native
+  var msg: String
   
-  var start: Double = js.native
+  var start: Double
 }
 object ErrorWithRange {
   

@@ -2,27 +2,25 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options associated with a read feed or query operation. */
-@js.native
 trait IFeedOptions extends StObject {
   
   /** Opaque token for continuing the enumeration. */
-  var continuation: js.UndefOr[String] = js.native
+  var continuation: js.UndefOr[String] = js.undefined
   
   /** Allow order by with low precision (only for queryDocuments(), sortBy() and sortByDescending()) */
-  var enableLowPrecisionOrderBy: js.UndefOr[Boolean] = js.native
+  var enableLowPrecisionOrderBy: js.UndefOr[Boolean] = js.undefined
   
   /** Allow scan on the queries which couldn't be served as indexing was opted out on the requested paths (only for queryDocuments() and queryAttachments()) */
-  var enableScan: js.UndefOr[Boolean] = js.native
+  var enableScan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Max number of items to be returned in the enumeration operation.
     * Value is 100 by default
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
 }
 object IFeedOptions {
   

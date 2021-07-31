@@ -5,29 +5,28 @@ import typings.vegaTypings.vegaTypingsBooleans.`false`
 import typings.vegaTypings.vegaTypingsStrings.log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogScale
-  extends ContinuousScale
+  extends StObject
+     with ContinuousScale
      with Scale {
   
-  var base: js.UndefOr[Double | SignalRef] = js.native
+  var base: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.native
+  var nice: js.UndefOr[Boolean | Double | SignalRef] = js.undefined
   
   @JSName("type")
-  var type_LogScale: log = js.native
+  var type_LogScale: log
   
-  var zero: js.UndefOr[`false`] = js.native
+  var zero: js.UndefOr[`false`] = js.undefined
 }
 object LogScale {
   
   @scala.inline
-  def apply(name: String, `type`: log): LogScale = {
+  def apply(name: String): LogScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogScale]
   }
   

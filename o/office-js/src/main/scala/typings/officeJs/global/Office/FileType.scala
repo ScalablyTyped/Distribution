@@ -2,7 +2,6 @@ package typings.officeJs.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object FileType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJs.Office.FileType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJs.Office.FileType & Double] = js.native
   
-  /* 1 */ val Compressed: typings.officeJs.Office.FileType.Compressed with Double = js.native
+  /* 1 */ val Compressed: typings.officeJs.Office.FileType.Compressed & Double = js.native
   
-  /* 2 */ val Pdf: typings.officeJs.Office.FileType.Pdf with Double = js.native
+  /* 2 */ val Pdf: typings.officeJs.Office.FileType.Pdf & Double = js.native
   
-  /* 0 */ val Text: typings.officeJs.Office.FileType.Text with Double = js.native
+  /* 0 */ val Text: typings.officeJs.Office.FileType.Text & Double = js.native
 }

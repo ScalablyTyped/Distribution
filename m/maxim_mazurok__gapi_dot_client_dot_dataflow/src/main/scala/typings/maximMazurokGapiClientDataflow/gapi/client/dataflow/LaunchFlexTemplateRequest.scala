@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchFlexTemplateRequest extends StObject {
   
   /** Required. Parameter to launch a job form Flex Template. */
-  var launchParameter: js.UndefOr[LaunchFlexTemplateParameter] = js.native
+  var launchParameter: js.UndefOr[LaunchFlexTemplateParameter] = js.undefined
   
   /** If true, the request is validated but not actually executed. Defaults to false. */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object LaunchFlexTemplateRequest {
   

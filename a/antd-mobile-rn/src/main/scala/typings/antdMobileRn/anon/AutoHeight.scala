@@ -4,37 +4,35 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHeight extends StObject {
   
-  var autoHeight: Boolean = js.native
+  var autoHeight: Boolean
   
-  var clear: Boolean = js.native
+  var clear: Boolean
   
-  var count: Double = js.native
+  var count: Double
   
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var keyboardType: String = js.native
+  var keyboardType: String
   
-  var last: Boolean = js.native
+  var last: Boolean
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onErrorClick(): Unit = js.native
+  def onErrorClick(): Unit
   
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
-  var rows: Double = js.native
+  var rows: Double
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object AutoHeight {
   
@@ -52,7 +50,7 @@ object AutoHeight {
     onErrorClick: () => Unit,
     onFocus: () => Unit,
     rows: Double,
-    styles: StringDictionary[RegisteredStyle[_]]
+    styles: StringDictionary[RegisteredStyle[js.Any]]
   ): AutoHeight = {
     val __obj = js.Dynamic.literal(autoHeight = autoHeight.asInstanceOf[js.Any], clear = clear.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], editable = editable.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], keyboardType = keyboardType.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], onBlur = js.Any.fromFunction0(onBlur), onChange = js.Any.fromFunction0(onChange), onErrorClick = js.Any.fromFunction0(onErrorClick), onFocus = js.Any.fromFunction0(onFocus), rows = rows.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoHeight]
@@ -98,6 +96,6 @@ object AutoHeight {
     def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

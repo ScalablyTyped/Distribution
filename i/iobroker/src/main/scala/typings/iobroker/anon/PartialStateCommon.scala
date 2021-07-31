@@ -6,54 +6,52 @@ import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.StateCommon> */
-@js.native
 trait PartialStateCommon extends StObject {
   
-  var alias: js.UndefOr[Read] = js.native
+  var alias: js.UndefOr[Read] = js.undefined
   
-  var custom: js.UndefOr[Record[String, _]] = js.native
+  var custom: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `def`: js.UndefOr[js.Any] = js.native
+  var `def`: js.UndefOr[js.Any] = js.undefined
   
-  var defAck: js.UndefOr[Boolean] = js.native
+  var defAck: js.UndefOr[Boolean] = js.undefined
   
-  var desc: js.UndefOr[StringOrTranslated] = js.native
+  var desc: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var history: js.UndefOr[js.Any] = js.native
+  var history: js.UndefOr[js.Any] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[StringOrTranslated] = js.native
+  var name: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var smartName: js.UndefOr[String | langinLanguagesstringsmar] = js.native
+  var smartName: js.UndefOr[String | langinLanguagesstringsmar] = js.undefined
   
-  var states: js.UndefOr[(Record[String, String]) | String] = js.native
+  var states: js.UndefOr[(Record[String, String]) | String] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[CommonType] = js.native
+  var `type`: js.UndefOr[CommonType] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var workingID: js.UndefOr[String] = js.native
+  var workingID: js.UndefOr[String] = js.undefined
   
-  var write: js.UndefOr[Boolean] = js.native
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object PartialStateCommon {
   
@@ -73,7 +71,7 @@ object PartialStateCommon {
     def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     @scala.inline
-    def setCustom(value: Record[String, _]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Record[String, js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

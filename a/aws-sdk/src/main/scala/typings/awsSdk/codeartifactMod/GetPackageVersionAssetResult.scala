@@ -2,31 +2,29 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPackageVersionAssetResult extends StObject {
   
   /**
     *  The binary file, or asset, that is downloaded.
     */
-  var asset: js.UndefOr[Asset] = js.native
+  var asset: js.UndefOr[Asset] = js.undefined
   
   /**
     *  The name of the asset that is downloaded. 
     */
-  var assetName: js.UndefOr[AssetName] = js.native
+  var assetName: js.UndefOr[AssetName] = js.undefined
   
   /**
     *  A string that contains the package version (for example, 3.5.2). 
     */
-  var packageVersion: js.UndefOr[PackageVersion] = js.native
+  var packageVersion: js.UndefOr[PackageVersion] = js.undefined
   
   /**
     *  The name of the package version revision that contains the downloaded asset. 
     */
-  var packageVersionRevision: js.UndefOr[PackageVersionRevision] = js.native
+  var packageVersionRevision: js.UndefOr[PackageVersionRevision] = js.undefined
 }
 object GetPackageVersionAssetResult {
   

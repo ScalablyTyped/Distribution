@@ -2,21 +2,19 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamKeysResponse extends StObject {
   
   /**
     * If there are more stream keys than maxResults, use nextToken in the request to get the next set.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * List of stream keys.
     */
-  var streamKeys: StreamKeyList = js.native
+  var streamKeys: StreamKeyList
 }
 object ListStreamKeysResponse {
   

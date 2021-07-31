@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICLSIDs extends StObject {
   
-  val PreviewerCtrl: String = js.native
+  val PreviewerCtrl: String
   
-  val ShellListingCtrl: String = js.native
+  val ShellListingCtrl: String
 }
 object ICLSIDs {
   

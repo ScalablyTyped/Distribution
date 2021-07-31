@@ -2,19 +2,52 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TrunkInstance extends InstanceResource {
+trait TrunkInstance
+  extends StObject
+     with InstanceResource {
   
-  var credentialLists: CredentialListResource = js.native
+  var credentialLists: CredentialListResource
   
-  var ipAccessControlLists: IPAccessControlListResource = js.native
+  var ipAccessControlLists: IPAccessControlListResource
   
-  var originationUrls: OriginationURLResource = js.native
+  var originationUrls: OriginationURLResource
   
-  def phoneNumbers(resourceSid: String): PhoneNumberInstance = js.native
+  def phoneNumbers(resourceSid: String): PhoneNumberInstance
   @JSName("phoneNumbers")
-  var phoneNumbers_Original: PhoneNumberResource = js.native
+  var phoneNumbers_Original: PhoneNumberResource
+}
+object TrunkInstance {
+  
+  @scala.inline
+  def apply(
+    credentialLists: CredentialListResource,
+    delete: RestMethod,
+    get: RestMethod,
+    ipAccessControlLists: IPAccessControlListResource,
+    originationUrls: OriginationURLResource,
+    phoneNumbers: /* resourceSid */ String => PhoneNumberInstance,
+    post: RestMethod,
+    update: RestMethod
+  ): TrunkInstance = {
+    val __obj = js.Dynamic.literal(credentialLists = credentialLists.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], ipAccessControlLists = ipAccessControlLists.asInstanceOf[js.Any], originationUrls = originationUrls.asInstanceOf[js.Any], phoneNumbers = js.Any.fromFunction1(phoneNumbers), post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TrunkInstance]
+  }
+  
+  @scala.inline
+  implicit class TrunkInstanceMutableBuilder[Self <: TrunkInstance] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCredentialLists(value: CredentialListResource): Self = StObject.set(x, "credentialLists", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIpAccessControlLists(value: IPAccessControlListResource): Self = StObject.set(x, "ipAccessControlLists", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOriginationUrls(value: OriginationURLResource): Self = StObject.set(x, "originationUrls", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPhoneNumbers(value: /* resourceSid */ String => PhoneNumberInstance): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction1(value))
+  }
 }

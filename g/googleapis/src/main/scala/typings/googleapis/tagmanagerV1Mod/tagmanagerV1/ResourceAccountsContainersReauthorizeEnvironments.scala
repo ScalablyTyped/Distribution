@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v1", "tagmanager_v1.Resource$Accounts$Containers$Reauthorize_environments")
@@ -33,7 +32,7 @@ class ResourceAccountsContainersReauthorizeEnvironments protected () extends StO
     */
   def update(): GaxiosPromise[SchemaEnvironment] = js.native
   def update(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def update(params: ParamsResourceAccountsContainersReauthorizeEnvironmentsUpdate): GaxiosPromise[SchemaEnvironment] = js.native
   def update(
     params: ParamsResourceAccountsContainersReauthorizeEnvironmentsUpdate,

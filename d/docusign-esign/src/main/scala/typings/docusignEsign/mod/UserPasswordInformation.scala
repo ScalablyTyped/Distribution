@@ -2,33 +2,31 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPasswordInformation extends StObject {
   
   /**
     * The user's current password to be changed.
     */
-  var currentPassword: js.UndefOr[String] = js.native
+  var currentPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The user's email address for the associated account.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * A complex element containing up to four Question/Answer pairs for forgotten password information.
     */
   var forgottenPasswordInfo: js.UndefOr[
     /* A complex element that has up to four Question/Answer pairs for forgotten password information. */ ForgottenPasswordInformation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The user's new password.
     */
-  var newPassword: js.UndefOr[String] = js.native
+  var newPassword: js.UndefOr[String] = js.undefined
 }
 object UserPasswordInformation {
   

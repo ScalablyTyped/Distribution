@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopRunResult extends StObject {
   
   /**
     * The run that was stopped.
     */
-  var run: js.UndefOr[Run] = js.native
+  var run: js.UndefOr[Run] = js.undefined
 }
 object StopRunResult {
   

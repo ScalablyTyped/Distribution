@@ -2,15 +2,13 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataState extends StObject {
   
-  def getState(): js.Any = js.native
+  def getState(): js.Any
   
-  def setState(state: js.Any): Unit = js.native
+  def setState(state: js.Any): Unit
 }
 object DataState {
   

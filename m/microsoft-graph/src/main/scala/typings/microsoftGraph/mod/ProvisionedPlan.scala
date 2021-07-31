@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedPlan extends StObject {
   
   // For example, 'Enabled'.
-  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.native
+  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For example, 'Success'.
-  var provisioningStatus: js.UndefOr[NullableOption[String]] = js.native
+  var provisioningStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the service; for example, 'AccessControlS2S'
-  var service: js.UndefOr[NullableOption[String]] = js.native
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ProvisionedPlan {
   

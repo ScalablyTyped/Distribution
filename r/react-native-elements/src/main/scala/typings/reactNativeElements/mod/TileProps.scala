@@ -9,108 +9,106 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.anon.PartialImageProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileProps extends StObject {
   
   /**
     * Specify a different component as the Image component
     * @default React Native BackgroundImage component
     */
-  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var ImageComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Number passed to control opacity on press
     *
     * @default 0.2
     */
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Text inside the tile when tile is featured
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * Styling for the caption
     */
-  var captionStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var captionStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * @default none	object (style)	Styling for the outer tile container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for bottom container when not featured tile
     */
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Changes the look of the tile
     */
-  var featured: js.UndefOr[Boolean] = js.native
+  var featured: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Height for the tile
     *
     * @default Device Width * 0.8
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Icon Component Props
     */
-  var icon: js.UndefOr[IconObject] = js.native
+  var icon: js.UndefOr[IconObject] = js.undefined
   
   /**
     * Styling for the outer icon container
     */
-  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var iconContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Styling for the image
     */
-  var imageContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var imageContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[PartialImageProps] = js.native
+  var imageProps: js.UndefOr[PartialImageProps] = js.undefined
   
   /**
     * Source for the image
     */
-  var imageSrc: ImageURISource | String | Double = js.native
+  var imageSrc: ImageURISource | String | Double
   
   /**
     * @default none	function (event)	Function to call when tile is pressed
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Styling for overlay
     */
-  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var overlayContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Text inside the tile
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Styling for the title
     */
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Width for the tile
     *
     * @default Device Width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TileProps {
   

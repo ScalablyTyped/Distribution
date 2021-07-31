@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response to a SourceSplitRequest.
   */
-@js.native
 trait SchemaSourceSplitResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaSourceSplitResponse extends StObject {
     * which the source was split. Otherwise this field is ignored. This list
     * can be empty, which means the source represents an empty input.
     */
-  var bundles: js.UndefOr[js.Array[SchemaDerivedSource]] = js.native
+  var bundles: js.UndefOr[js.Array[SchemaDerivedSource]] = js.undefined
   
   /**
     * Indicates whether splitting happened and produced a list of bundles. If
@@ -25,12 +23,12 @@ trait SchemaSourceSplitResponse extends StObject {
     * this case. If this is SPLITTING_HAPPENED, then &quot;bundles&quot;
     * contains a list of bundles into which the source was split.
     */
-  var outcome: js.UndefOr[String] = js.native
+  var outcome: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED in favor of bundles.
     */
-  var shards: js.UndefOr[js.Array[SchemaSourceSplitShard]] = js.native
+  var shards: js.UndefOr[js.Array[SchemaSourceSplitShard]] = js.undefined
 }
 object SchemaSourceSplitResponse {
   

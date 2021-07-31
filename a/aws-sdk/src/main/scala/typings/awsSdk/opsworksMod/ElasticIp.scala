@@ -2,36 +2,34 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticIp extends StObject {
   
   /**
     * The domain.
     */
-  var Domain: js.UndefOr[String] = js.native
+  var Domain: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance that the address is attached to.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The IP address.
     */
-  var Ip: js.UndefOr[String] = js.native
+  var Ip: js.UndefOr[String] = js.undefined
   
   /**
     * The name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS region. For more information, see Regions and Endpoints.
     */
-  var Region: js.UndefOr[String] = js.native
+  var Region: js.UndefOr[String] = js.undefined
 }
 object ElasticIp {
   

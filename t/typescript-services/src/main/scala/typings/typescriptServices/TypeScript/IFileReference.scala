@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileReference extends ILineAndCharacter {
+trait IFileReference
+  extends StObject
+     with ILineAndCharacter {
   
-  var isResident: Boolean = js.native
+  var isResident: Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  var path: String = js.native
+  var path: String
   
-  var position: Double = js.native
+  var position: Double
 }
 object IFileReference {
   

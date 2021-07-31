@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetCommitsOutput extends StObject {
   
   /**
     * An array of commit data type objects, each of which contains information about a specified commit.
     */
-  var commits: js.UndefOr[CommitObjectsList] = js.native
+  var commits: js.UndefOr[CommitObjectsList] = js.undefined
   
   /**
     * Returns any commit IDs for which information could not be found. For example, if one of the commit IDs was a shortened SHA ID or that commit was not found in the specified repository, the ID returns an error object with more information.
     */
-  var errors: js.UndefOr[BatchGetCommitsErrorsList] = js.native
+  var errors: js.UndefOr[BatchGetCommitsErrorsList] = js.undefined
 }
 object BatchGetCommitsOutput {
   

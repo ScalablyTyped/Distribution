@@ -12,7 +12,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeStyleIndexNativeMod {
@@ -75,24 +74,23 @@ object badgeStyleIndexNativeMod {
     def wrap_=(x: FlexDirectionString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IBadgeStyle extends StObject {
     
-    var dot: ViewStyle = js.native
+    var dot: ViewStyle
     
-    var dotSizelarge: ViewStyle = js.native
+    var dotSizelarge: ViewStyle
     
-    var text: TextStyle = js.native
+    var text: TextStyle
     
-    var textCorner: ViewStyle = js.native
+    var textCorner: ViewStyle
     
-    var textCornerWrap: ViewStyle = js.native
+    var textCornerWrap: ViewStyle
     
-    var textCornerlarge: ViewStyle = js.native
+    var textCornerlarge: ViewStyle
     
-    var textDom: ViewStyle = js.native
+    var textDom: ViewStyle
     
-    var wrap: ViewStyle = js.native
+    var wrap: ViewStyle
   }
   object IBadgeStyle {
     

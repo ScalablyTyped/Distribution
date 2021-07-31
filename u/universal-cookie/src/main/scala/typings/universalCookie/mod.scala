@@ -4,52 +4,52 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("universal-cookie", JSImport.Default)
   @js.native
-  class default () extends Cookies {
+  class default ()
+    extends StObject
+       with Cookies {
     def this(cookieHeader: String) = this()
     def this(cookieHeader: CookiesByName) = this()
   }
   
   type ChangeListenerCallback = js.Function3[/* name */ String, /* value */ String | js.Object, /* options */ CookieOpts, Unit]
   
-  @js.native
   trait CookieOpts extends StObject {
     
     /**
       * domain for the cookie (sub.domain.com or .allsubdomains.com)
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * absolute expiration date for the cookie
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * Is only the server can access the cookie?
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * relative max age of the cookie from when the client receives it in second
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * cookie path, use / as the path if you want your cookie to be accessible on all pages
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Is only accessible through HTTPS?
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOpts {
     
@@ -156,13 +156,12 @@ object mod {
   
   type CookiesByName = StringDictionary[String]
   
-  @js.native
   trait GetOpts extends StObject {
     
     /**
       * do not convert the cookie into an object no matter what
       */
-    var doNotParse: Boolean = js.native
+    var doNotParse: Boolean
   }
   object GetOpts {
     

@@ -1,11 +1,18 @@
 package typings.sharepoint.global.Microsoft.SharePoint.Client.Search
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sharepoint.IEnumerator
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection
+import typings.sharepoint.Microsoft.SharePoint.Client.Search.WebControls.ControlMessage
 import typings.sharepoint.SP.ClientContext
 import typings.sharepoint.SP.ClientObject
+import typings.sharepoint.SP.Guid
+import typings.sharepoint.SP.SerializationContext
+import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Query {
@@ -14,14 +21,16 @@ object Query {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQuery")
   @js.native
   class KeywordQuery protected ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQuery {
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQuery {
     def this(context: ClientContext) = this()
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames")
   @js.native
   class KeywordQueryObjectPropertyNames ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames
   object KeywordQueryObjectPropertyNames {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryObjectPropertyNames")
@@ -71,12 +80,14 @@ object Query {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties")
   @js.native
   class KeywordQueryProperties ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryProperties
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames")
   @js.native
   class KeywordQueryPropertyNames ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames
   object KeywordQueryPropertyNames {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Query.KeywordQueryPropertyNames")
@@ -126,23 +137,107 @@ object Query {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion")
   @js.native
   class PersonalResultSuggestion ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_highlightedTitle(): String = js.native
+    
+    /* CompleteClass */
+    override def get_isBestBet(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_title(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_url(): String = js.native
+    
+    /* CompleteClass */
+    override def set_highlightedTitle(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_isBestBet(value: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_title(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_url(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.PopularQuery")
   @js.native
   class PopularQuery ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PopularQuery
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PopularQuery {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_LCID(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_clickCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_queryCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_queryText(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_LCID(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_clickCount(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_queryCount(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_queryText(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   /**Contains information common to all types of search queries.*/
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.Query")
   @js.native
   class Query ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames")
   @js.native
   class QueryObjectPropertyNames ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames
   object QueryObjectPropertyNames {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryObjectPropertyNames")
@@ -167,12 +262,15 @@ object Query {
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPersonalizationData")
   @js.native
-  class QueryPersonalizationData () extends ClientObject
+  class QueryPersonalizationData ()
+    extends StObject
+       with ClientObject
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames")
   @js.native
   class QueryPropertyNames ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames
   object QueryPropertyNames {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyNames")
@@ -463,7 +561,54 @@ object Query {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue")
   @js.native
   class QueryPropertyValue ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValue {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_boolVal(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_intVal(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_queryPropertyValueTypeIndex(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_strArray(): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def get_strVal(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_boolVal(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_intVal(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_queryPropertyValueTypeIndex(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_strArray(value: js.Array[String]): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def set_strVal(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType")
   @js.native
@@ -471,36 +616,107 @@ object Query {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType with Double
+        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType & Double
       ] = js.native
     
-    /* 3 */ val booleanType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.booleanType with Double = js.native
+    /* 3 */ val booleanType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.booleanType & Double = js.native
     
-    /* 2 */ val int32TYpe: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.int32TYpe with Double = js.native
+    /* 2 */ val int32TYpe: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.int32TYpe & Double = js.native
     
-    /* 0 */ val none: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.none with Double = js.native
+    /* 0 */ val none: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.none & Double = js.native
     
-    /* 4 */ val stringArrayType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringArrayType with Double = js.native
+    /* 4 */ val stringArrayType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringArrayType & Double = js.native
     
-    /* 1 */ val stringType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringType with Double = js.native
+    /* 1 */ val stringType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.stringType & Double = js.native
     
-    /* 5 */ val unSupportedType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.unSupportedType with Double = js.native
+    /* 5 */ val unSupportedType: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryPropertyValueType.unSupportedType & Double = js.native
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery")
   @js.native
   class QuerySuggestionQuery ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_isPersonal(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_query(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_isPersonal(value: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_query(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QuerySuggestionResults")
   @js.native
   class QuerySuggestionResults ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionResults
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionResults {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_peopleNames(): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def get_personalResults(): js.Array[
+        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion
+      ] = js.native
+    
+    /* CompleteClass */
+    override def get_queries(): js.Array[typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery] = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_peopleNames(value: js.Array[String]): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_personalResults(
+      value: js.Array[
+          typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.PersonalResultSuggestion
+        ]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_queries(value: js.Array[typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QuerySuggestionQuery]): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
   @js.native
   class QueryUtility ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryUtility
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.QueryUtility
   object QueryUtility {
     
     @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
@@ -558,14 +774,50 @@ object Query {
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.RankingLabeling")
   @js.native
   class RankingLabeling protected ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.RankingLabeling {
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.RankingLabeling {
     def this(context: ClientContext) = this()
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRule")
   @js.native
   class ReorderingRule ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRule
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRule {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_boost(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_matchType(): ReorderingRuleMatchType = js.native
+    
+    /* CompleteClass */
+    override def get_matchValue(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_boost(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_matchType(value: ReorderingRuleMatchType): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_matchValue(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType")
   @js.native
@@ -573,50 +825,186 @@ object Query {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType with Double
+        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType & Double
       ] = js.native
     
-    /* 5 */ val contentTypeIs: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.contentTypeIs with Double = js.native
+    /* 5 */ val contentTypeIs: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.contentTypeIs & Double = js.native
     
-    /* 6 */ val fileExtensionMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.fileExtensionMatches with Double = js.native
+    /* 6 */ val fileExtensionMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.fileExtensionMatches & Double = js.native
     
-    /* 8 */ val manualCondition: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.manualCondition with Double = js.native
+    /* 8 */ val manualCondition: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.manualCondition & Double = js.native
     
-    /* 0 */ val resultContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultContainsKeyword with Double = js.native
+    /* 0 */ val resultContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultContainsKeyword & Double = js.native
     
-    /* 7 */ val resultHasTag: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultHasTag with Double = js.native
+    /* 7 */ val resultHasTag: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.resultHasTag & Double = js.native
     
-    /* 1 */ val titleContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleContainsKeyword with Double = js.native
+    /* 1 */ val titleContainsKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleContainsKeyword & Double = js.native
     
-    /* 2 */ val titleMatchesKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleMatchesKeyword with Double = js.native
+    /* 2 */ val titleMatchesKeyword: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.titleMatchesKeyword & Double = js.native
     
-    /* 4 */ val urlExactlyMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlExactlyMatches with Double = js.native
+    /* 4 */ val urlExactlyMatches: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlExactlyMatches & Double = js.native
     
-    /* 3 */ val urlStartsWith: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlStartsWith with Double = js.native
+    /* 3 */ val urlStartsWith: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType.urlStartsWith & Double = js.native
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ResultTable")
   @js.native
   class ResultTable ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_groupTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_itemTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_properties(): StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def get_queryId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryRuleId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_resultRows(): js.Array[StringDictionary[js.Any]] = js.native
+    
+    /* CompleteClass */
+    override def get_resultTitle(): String = js.native
+    
+    /* CompleteClass */
+    override def get_resultTitleUrl(): String = js.native
+    
+    /* CompleteClass */
+    override def get_rowCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_tableType(): String = js.native
+    
+    /* CompleteClass */
+    override def get_totalRows(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_totalRowsIncludingDuplicates(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def initPropertiesFromJson(parentNode: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ResultTableCollection")
   @js.native
   class ResultTableCollection ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getEnumerator(): IEnumerator[typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable] = js.native
+    
+    /* CompleteClass */
+    override def get_count(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_elapsedTime(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_item(index: Double): typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable = js.native
+    
+    /* CompleteClass */
+    override def get_properties(): StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def get_queryErrors(): StringDictionary[ControlMessage] = js.native
+    
+    /* CompleteClass */
+    override def get_queryId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_spellingSuggestion(): String = js.native
+    
+    /* CompleteClass */
+    override def get_triggeredRules(): js.Array[Guid] = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def initPropertiesFromJson(parentNode: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_elapsedTime(value: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   /**Executes queries against a search server.*/
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.SearchExecutor")
   @js.native
   class SearchExecutor protected ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SearchExecutor {
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SearchExecutor {
     def this(context: ClientContext) = this()
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.Sort")
   @js.native
   class Sort ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Sort
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Sort {
+    
+    /* CompleteClass */
+    override def customFromJson(obj: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def customWriteToXml(writer: XmlWriter, serializationContext: SerializationContext): Boolean = js.native
+    
+    /* CompleteClass */
+    override def fromJson(obj: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_direction(): SortDirection = js.native
+    
+    /* CompleteClass */
+    override def get_property(): String = js.native
+    
+    /* CompleteClass */
+    override def get_typeId(): String = js.native
+    
+    /* CompleteClass */
+    override def set_direction(value: SortDirection): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_property(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeToXml(writer: XmlWriter, serializationContext: SerializationContext): Unit = js.native
+  }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.SortDirection")
   @js.native
@@ -624,20 +1012,24 @@ object Query {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection with Double
+        typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection & Double
       ] = js.native
     
-    /* 0 */ val ascending: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.ascending with Double = js.native
+    /* 0 */ val ascending: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.ascending & Double = js.native
     
-    /* 1 */ val descending: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.descending with Double = js.native
+    /* 1 */ val descending: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.descending & Double = js.native
     
-    /* 2 */ val fqlFormula: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.fqlFormula with Double = js.native
+    /* 2 */ val fqlFormula: typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.SortDirection.fqlFormula & Double = js.native
   }
   
   @JSGlobal("Microsoft.SharePoint.Client.Search.Query.StringCollection")
   @js.native
   class StringCollection protected ()
-    extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.StringCollection {
+    extends StObject
+       with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.StringCollection {
     def this(context: ClientContext) = this()
+    
+    /* CompleteClass */
+    override def getEnumerator(): IEnumerator[String] = js.native
   }
 }

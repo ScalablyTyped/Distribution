@@ -2,16 +2,14 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteComponentRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the component build version to delete. 
     */
-  var componentBuildVersionArn: ComponentBuildVersionArn = js.native
+  var componentBuildVersionArn: ComponentBuildVersionArn
 }
 object DeleteComponentRequest {
   

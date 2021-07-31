@@ -2,25 +2,23 @@ package typings.googleapis.fusiontablesV2Mod.fusiontablesV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a PointStyle within a StyleSetting
   */
-@js.native
 trait SchemaPointStyle extends StObject {
   
   /**
     * Name of the icon. Use values defined in
     * http://www.google.com/fusiontables/DataSource?dsrcid=308519
     */
-  var iconName: js.UndefOr[String] = js.native
+  var iconName: js.UndefOr[String] = js.undefined
   
   /**
     * Column or a bucket value from which the icon name is to be determined.
     */
-  var iconStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var iconStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
 }
 object SchemaPointStyle {
   

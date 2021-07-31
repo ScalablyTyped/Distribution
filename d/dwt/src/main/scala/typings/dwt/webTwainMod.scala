@@ -10,25 +10,23 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTBorderStyle
 import typings.dwt.webTwainViewerMod.WebTwainViewer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainMod {
   
-  @js.native
   trait Addon extends StObject {
     
-    var BarcodeReader: typings.dwt.addonBarcodeReaderMod.BarcodeReader = js.native
+    var BarcodeReader: typings.dwt.addonBarcodeReaderMod.BarcodeReader
     
-    var Camera: typings.dwt.addonCameraMod.Camera = js.native
+    var Camera: typings.dwt.addonCameraMod.Camera
     
-    var OCR: typings.dwt.addonOCRMod.OCR = js.native
+    var OCR: typings.dwt.addonOCRMod.OCR
     
-    var OCRPro: typings.dwt.addonOCRProMod.OCRPro = js.native
+    var OCRPro: typings.dwt.addonOCRProMod.OCRPro
     
-    var PDF: typings.dwt.addonPDFMod.PDF = js.native
+    var PDF: typings.dwt.addonPDFMod.PDF
     
-    var Webcam: typings.dwt.addonWebcamMod.Webcam = js.native
+    var Webcam: typings.dwt.addonWebcamMod.Webcam
   }
   object Addon {
     
@@ -62,7 +60,9 @@ object webTwainMod {
   }
   
   @js.native
-  trait WebTwain extends WebTwainViewer {
+  trait WebTwain
+    extends StObject
+       with WebTwainViewer {
     
     /**
       * Addons to WebTwain instances.

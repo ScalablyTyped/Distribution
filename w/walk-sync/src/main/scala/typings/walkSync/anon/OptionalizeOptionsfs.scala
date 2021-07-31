@@ -4,24 +4,22 @@ import typings.minimatch.mod.IMinimatch
 import typings.minimatch.mod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined walk-sync.walk-sync.Optionalize<walk-sync.walk-sync.Options, 'fs'> */
-@js.native
 trait OptionalizeOptionsfs extends StObject {
   
-  var directories: js.UndefOr[Boolean] = js.native
+  var directories: js.UndefOr[Boolean] = js.undefined
   
-  var fs: js.UndefOr[TypeoffsNode] = js.native
+  var fs: js.UndefOr[TypeoffsNode] = js.undefined
   
-  var globOptions: js.UndefOr[IOptions] = js.native
+  var globOptions: js.UndefOr[IOptions] = js.undefined
   
-  var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.native
+  var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
   
-  var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.native
+  var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
   
-  var includeBasePath: js.UndefOr[Boolean] = js.native
+  var includeBasePath: js.UndefOr[Boolean] = js.undefined
 }
 object OptionalizeOptionsfs {
   

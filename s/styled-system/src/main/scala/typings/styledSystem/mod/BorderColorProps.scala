@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait BorderColorProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)
     */
-  var borderBottomColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderBottomColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-color shorthand CSS property sets the color of all sides of an element's border.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)
     */
-  var borderColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-left-color CSS property sets the color of an element's left border. It can also be set with the shorthand CSS properties border-color or border-left.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color)
     */
-  var borderLeftColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderLeftColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-right-color CSS property sets the color of an element's right border. It can also be set with the shorthand CSS properties border-color or border-right.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)
     */
-  var borderRightColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderRightColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-top-color CSS property sets the color of an element's top border. It can also be set with the shorthand CSS properties border-color or border-top.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)
     */
-  var borderTopColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderTopColor: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderColorProps {
   
@@ -52,7 +50,7 @@ object BorderColorProps {
   }
   
   @scala.inline
-  implicit class BorderColorPropsMutableBuilder[Self <: BorderColorProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderColorProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderColorPropsMutableBuilder[Self <: BorderColorProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderColorProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderBottomColor(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.simperium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ghost[T] extends StObject {
   
-  var data: T = js.native
+  var data: T
   
-  var key: EntityId = js.native
+  var key: EntityId
   
-  var version: Double = js.native
+  var version: Double
 }
 object Ghost {
   
@@ -23,7 +21,7 @@ object Ghost {
   }
   
   @scala.inline
-  implicit class GhostMutableBuilder[Self <: Ghost[_], T] (val x: Self with Ghost[T]) extends AnyVal {
+  implicit class GhostMutableBuilder[Self <: Ghost[?], T] (val x: Self & Ghost[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

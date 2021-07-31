@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPrice extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var beginQuantity: js.UndefOr[String] = js.native
+  var beginQuantity: js.UndefOr[String] = js.undefined
   
-  var endQuantity: js.UndefOr[String] = js.native
+  var endQuantity: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var unitPrice: js.UndefOr[String] = js.native
+  var unitPrice: js.UndefOr[String] = js.undefined
 }
 object BillingPrice {
   

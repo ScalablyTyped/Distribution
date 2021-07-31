@@ -7,28 +7,28 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTableReplacerows extends StandardParameters {
+trait ParamsResourceTableReplacerows
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The delimiter used to separate cell values. This can only consist of a
     * single character. Default is ,.
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * The encoding of the content. Default is UTF-8. Use 'auto-detect' if you
     * are unsure of the encoding.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * The index of the line up to which data will be imported. Default is to
@@ -36,7 +36,7 @@ trait ParamsResourceTableReplacerows extends StandardParameters {
     * end of the file; the imported content will exclude the last endLine
     * lines.
     */
-  var endLine: js.UndefOr[Double] = js.native
+  var endLine: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the imported CSV must have the same number of column values for
@@ -44,23 +44,23 @@ trait ParamsResourceTableReplacerows extends StandardParameters {
     * number of columns. If false, rows with fewer column values will be padded
     * with empty values. Default is true.
     */
-  var isStrict: js.UndefOr[Boolean] = js.native
+  var isStrict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * The index of the first line from which to start importing, inclusive.
     * Default is 0.
     */
-  var startLine: js.UndefOr[Double] = js.native
+  var startLine: js.UndefOr[Double] = js.undefined
   
   /**
     * Table whose rows will be replaced.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTableReplacerows {
   

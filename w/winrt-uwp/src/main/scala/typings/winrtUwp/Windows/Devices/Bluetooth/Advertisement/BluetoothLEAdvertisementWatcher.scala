@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.received
 import typings.winrtUwp.winrtUwpStrings.stopped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object to receive Bluetooth Low Energy (LE) advertisements. */
 @js.native
 trait BluetoothLEAdvertisementWatcher extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_received(
     `type`: received,
@@ -43,20 +42,18 @@ trait BluetoothLEAdvertisementWatcher extends StObject {
   var minSamplingInterval: Double = js.native
   
   /** Notification for new Bluetooth LE advertisement events received. */
-  def onreceived(ev: BluetoothLEAdvertisementReceivedEventArgs with WinRTEvent[BluetoothLEAdvertisementWatcher]): Unit = js.native
+  def onreceived(ev: BluetoothLEAdvertisementReceivedEventArgs & WinRTEvent[BluetoothLEAdvertisementWatcher]): Unit = js.native
   /** Notification for new Bluetooth LE advertisement events received. */
   @JSName("onreceived")
   var onreceived_Original: TypedEventHandler[BluetoothLEAdvertisementWatcher, BluetoothLEAdvertisementReceivedEventArgs] = js.native
   
   /** Notification to the app that the Bluetooth LE scanning for advertisements has been cancelled or aborted either by the app or due to an error. */
-  def onstopped(
-    ev: BluetoothLEAdvertisementWatcherStoppedEventArgs with WinRTEvent[BluetoothLEAdvertisementWatcher]
-  ): Unit = js.native
+  def onstopped(ev: BluetoothLEAdvertisementWatcherStoppedEventArgs & WinRTEvent[BluetoothLEAdvertisementWatcher]): Unit = js.native
   /** Notification to the app that the Bluetooth LE scanning for advertisements has been cancelled or aborted either by the app or due to an error. */
   @JSName("onstopped")
   var onstopped_Original: TypedEventHandler[BluetoothLEAdvertisementWatcher, BluetoothLEAdvertisementWatcherStoppedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_received(
     `type`: received,

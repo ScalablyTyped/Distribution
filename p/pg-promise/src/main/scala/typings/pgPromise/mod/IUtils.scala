@@ -4,7 +4,6 @@ import typings.pgPromise.anon.IgnoreErrors
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // General-purpose functions
@@ -19,14 +18,14 @@ trait IUtils extends StObject {
   def enumSql(dir: String): js.Any = js.native
   def enumSql(
     dir: String,
-    options: js.UndefOr[scala.Nothing],
-    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, _]
+    options: Unit,
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, js.Any]
   ): js.Any = js.native
   def enumSql(dir: String, options: IgnoreErrors): js.Any = js.native
   def enumSql(
     dir: String,
     options: IgnoreErrors,
-    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, _]
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, js.Any]
   ): js.Any = js.native
   
   def taskArgs[T](args: IArguments): ITaskArguments[T] = js.native

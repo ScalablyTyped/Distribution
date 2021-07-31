@@ -2,40 +2,38 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoPathEditorObject extends StObject {
   
-  def CloseDocument(): Unit = js.native
+  def CloseDocument(): Unit
   
-  var DataConnectionBaseUrl: String = js.native
+  var DataConnectionBaseUrl: String
   
-  def FlushDocument(): Unit = js.native
+  def FlushDocument(): Unit
   
-  var Host: js.Any = js.native
+  var Host: js.Any
   
-  var HostName: String = js.native
+  var HostName: String
   
   @JSName("InfoPath.InfoPathEditorObject_typekey")
-  var InfoPathDotInfoPathEditorObject_typekey: InfoPathEditorObject = js.native
+  var InfoPathDotInfoPathEditorObject_typekey: InfoPathEditorObject
   
-  def Load(bstrURL: String): Unit = js.native
+  def Load(bstrURL: String): Unit
   
-  def LoadFromStream(punkStream: js.Any): Unit = js.native
+  def LoadFromStream(punkStream: js.Any): Unit
   
-  def NewFromSolution(bstrSolutionURI: String): Unit = js.native
+  def NewFromSolution(bstrSolutionURI: String): Unit
   
-  def NewFromSolutionWithData(bstrURLXSN: String, punkStream: js.Any, dwBehavior: Double): Unit = js.native
+  def NewFromSolutionWithData(bstrURLXSN: String, punkStream: js.Any, dwBehavior: Double): Unit
   
-  def SetInitEventHandler(handler: IInitEventHandler): Unit = js.native
+  def SetInitEventHandler(handler: IInitEventHandler): Unit
   
-  def SetNotifyHostEventHandler(pHandler: INotifyHostEventHandler): Unit = js.native
+  def SetNotifyHostEventHandler(pHandler: INotifyHostEventHandler): Unit
   
-  def SetSubmitToHostEventHandler(pHandler: ISubmitToHostEventHandler): Unit = js.native
+  def SetSubmitToHostEventHandler(pHandler: ISubmitToHostEventHandler): Unit
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
 }
 object InfoPathEditorObject {
   

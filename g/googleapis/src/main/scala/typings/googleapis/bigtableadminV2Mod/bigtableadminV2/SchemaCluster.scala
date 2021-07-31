@@ -2,21 +2,19 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resizable group of nodes in a particular cloud location, capable of
   * serving all Tables in the parent Instance.
   */
-@js.native
 trait SchemaCluster extends StObject {
   
   /**
     * (`CreationOnly`) The type of storage used by this cluster to serve its
     * parent instance&#39;s tables, unless explicitly overridden.
     */
-  var defaultStorageType: js.UndefOr[String] = js.native
+  var defaultStorageType: js.UndefOr[String] = js.undefined
   
   /**
     * (`CreationOnly`) The location where this cluster&#39;s nodes and storage
@@ -24,24 +22,24 @@ trait SchemaCluster extends StObject {
     * possible to this cluster. Currently only zones are supported, so values
     * should be of the form `projects/&lt;project&gt;/locations/&lt;zone&gt;`.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * (`OutputOnly`) The unique name of the cluster. Values are of the form
     * `projects/&lt;project&gt;/instances/&lt;instance&gt;/clusters/a-z*`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The number of nodes allocated to this cluster. More nodes enable higher
     * throughput and more consistent performance.
     */
-  var serveNodes: js.UndefOr[Double] = js.native
+  var serveNodes: js.UndefOr[Double] = js.undefined
   
   /**
     * (`OutputOnly`) The current state of the cluster.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaCluster {
   

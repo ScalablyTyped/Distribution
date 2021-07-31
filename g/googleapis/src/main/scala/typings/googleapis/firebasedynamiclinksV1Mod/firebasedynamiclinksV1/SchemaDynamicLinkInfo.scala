@@ -2,32 +2,30 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a Dynamic Link.
   */
-@js.native
 trait SchemaDynamicLinkInfo extends StObject {
   
   /**
     * Parameters used for tracking. See all tracking parameters in the
     * [documentation](https://firebase.google.com/docs/dynamic-links/create-manually).
     */
-  var analyticsInfo: js.UndefOr[SchemaAnalyticsInfo] = js.native
+  var analyticsInfo: js.UndefOr[SchemaAnalyticsInfo] = js.undefined
   
   /**
     * Android related information. See Android related parameters in the
     * [documentation](https://firebase.google.com/docs/dynamic-links/create-manually).
     */
-  var androidInfo: js.UndefOr[SchemaAndroidInfo] = js.native
+  var androidInfo: js.UndefOr[SchemaAndroidInfo] = js.undefined
   
   /**
     * Desktop related information. See desktop related parameters in the
     * [documentation](https://firebase.google.com/docs/dynamic-links/create-manually).
     */
-  var desktopInfo: js.UndefOr[SchemaDesktopInfo] = js.native
+  var desktopInfo: js.UndefOr[SchemaDesktopInfo] = js.undefined
   
   /**
     * E.g. https://maps.app.goo.gl, https://maps.page.link, https://g.co/maps
@@ -35,7 +33,7 @@ trait SchemaDynamicLinkInfo extends StObject {
     * j/c/g/firebase/dynamiclinks/uri/DdlDomain.java  Will fallback to
     * dynamic_link_domain is this field is missing
     */
-  var domainUriPrefix: js.UndefOr[String] = js.native
+  var domainUriPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Dynamic Links domain that the project owns, e.g. abcd.app.goo.gl [Learn
@@ -43,13 +41,13 @@ trait SchemaDynamicLinkInfo extends StObject {
     * how to set up Dynamic Link domain associated with your Firebase project.
     * Required if missing domain_uri_prefix.
     */
-  var dynamicLinkDomain: js.UndefOr[String] = js.native
+  var dynamicLinkDomain: js.UndefOr[String] = js.undefined
   
   /**
     * iOS related information. See iOS related parameters in the
     * [documentation](https://firebase.google.com/docs/dynamic-links/create-manually).
     */
-  var iosInfo: js.UndefOr[SchemaIosInfo] = js.native
+  var iosInfo: js.UndefOr[SchemaIosInfo] = js.undefined
   
   /**
     * The link your app will open, You can specify any URL your app can handle.
@@ -58,18 +56,18 @@ trait SchemaDynamicLinkInfo extends StObject {
     * [documentation](https://firebase.google.com/docs/dynamic-links/create-manually).
     * Required.
     */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /**
     * Information of navigation behavior of a Firebase Dynamic Links.
     */
-  var navigationInfo: js.UndefOr[SchemaNavigationInfo] = js.native
+  var navigationInfo: js.UndefOr[SchemaNavigationInfo] = js.undefined
   
   /**
     * Parameters for social meta tag params. Used to set meta tag data for link
     * previews on social sites.
     */
-  var socialMetaTagInfo: js.UndefOr[SchemaSocialMetaTagInfo] = js.native
+  var socialMetaTagInfo: js.UndefOr[SchemaSocialMetaTagInfo] = js.undefined
 }
 object SchemaDynamicLinkInfo {
   

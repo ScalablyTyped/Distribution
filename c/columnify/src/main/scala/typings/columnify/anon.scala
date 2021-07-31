@@ -2,18 +2,16 @@ package typings.columnify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<columnify.columnify.Options, 'minWidth' | 'maxWidth'> */
-  @js.native
   trait PickOptionsminWidthmaxWid extends StObject {
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
   }
   object PickOptionsminWidthmaxWid {
     

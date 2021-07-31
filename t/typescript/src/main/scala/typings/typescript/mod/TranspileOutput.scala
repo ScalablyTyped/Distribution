@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranspileOutput extends StObject {
   
-  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   
-  var outputText: java.lang.String = js.native
+  var outputText: java.lang.String
   
-  var sourceMapText: js.UndefOr[java.lang.String] = js.native
+  var sourceMapText: js.UndefOr[java.lang.String] = js.undefined
 }
 object TranspileOutput {
   

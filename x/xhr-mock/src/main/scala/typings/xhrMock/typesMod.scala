@@ -5,17 +5,15 @@ import typings.xhrMock.mockHeadersMod.MockHeaders
 import typings.xhrMock.mockRequestMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ErrorCallbackEvent extends StObject {
     
-    var err: Error = js.native
+    var err: Error
     
-    var req: default = js.native
+    var req: default
   }
   object ErrorCallbackEvent {
     
@@ -46,16 +44,15 @@ object typesMod {
     ]
   ]
   
-  @js.native
   trait MockObject extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[MockHeaders] = js.native
+    var headers: js.UndefOr[MockHeaders] = js.undefined
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object MockObject {
     

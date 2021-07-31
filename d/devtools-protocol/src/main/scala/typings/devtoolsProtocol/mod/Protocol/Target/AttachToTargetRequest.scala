@@ -2,10 +2,8 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachToTargetRequest extends StObject {
   
   /**
@@ -13,9 +11,9 @@ trait AttachToTargetRequest extends StObject {
     * We plan to make this the default, deprecate non-flattened mode,
     * and eventually retire it. See crbug.com/991325.
     */
-  var flatten: js.UndefOr[Boolean] = js.native
+  var flatten: js.UndefOr[Boolean] = js.undefined
   
-  var targetId: TargetID = js.native
+  var targetId: TargetID
 }
 object AttachToTargetRequest {
   

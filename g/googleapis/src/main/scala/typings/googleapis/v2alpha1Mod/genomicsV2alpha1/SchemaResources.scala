@@ -2,37 +2,35 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The system resources for the pipeline run.  At least one zone or region
   * must be specified or the pipeline run will fail.
   */
-@js.native
 trait SchemaResources extends StObject {
   
   /**
     * The project ID to allocate resources in.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of regions allowed for VM allocation. If set, the `zones` field
     * must not be set.
     */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The virtual machine specification.
     */
-  var virtualMachine: js.UndefOr[SchemaVirtualMachine] = js.native
+  var virtualMachine: js.UndefOr[SchemaVirtualMachine] = js.undefined
   
   /**
     * The list of zones allowed for VM allocation. If set, the `regions` field
     * must not be set.
     */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaResources {
   

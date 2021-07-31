@@ -2,17 +2,15 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMouse extends StObject {
   
-  var useMouse: js.UndefOr[Boolean] = js.native
+  var useMouse: js.UndefOr[Boolean] = js.undefined
   
-  var useTouch: js.UndefOr[Boolean] = js.native
+  var useTouch: js.UndefOr[Boolean] = js.undefined
   
-  var useXr: js.UndefOr[Boolean] = js.native
+  var useXr: js.UndefOr[Boolean] = js.undefined
 }
 object UseMouse {
   

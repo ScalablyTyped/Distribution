@@ -13,7 +13,6 @@ import typings.loopback.loopbackStrings.WRITE
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -83,6 +82,10 @@ class ACL protected () extends PersistedModel {
 }
 object ACL {
   
+  @JSImport("loopback", "ACL")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the request has the permission to access.
     * @options {any} context See below.
@@ -95,9 +98,8 @@ object ACL {
     * @param {() => void} callback Callback functio
     */
   /* static member */
-  @JSImport("loopback", "ACL.checkAccessForContext")
-  @js.native
-  def checkAccessForContext(context: AccessType, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def checkAccessForContext(context: AccessType, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForContext")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Check if the given access token can invoke the method
@@ -110,15 +112,14 @@ object ACL {
     * @param {boolean} allowed is the request allow
     */
   /* static member */
-  @JSImport("loopback", "ACL.checkAccessForToken")
-  @js.native
+  @scala.inline
   def checkAccessForToken(
     token: AccessToken,
     model: String,
     modelId: js.Any,
     method: String,
     callback: js.Function2[/* err */ String | Error, /* allowed */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAccessForToken")(token.asInstanceOf[js.Any], model.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], method.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Check if the given principal is allowed to access the model/property
@@ -132,8 +133,7 @@ object ACL {
     * @param {AccessRequest} result The access permissio
     */
   /* static member */
-  @JSImport("loopback", "ACL.checkPermission")
-  @js.native
+  @scala.inline
   def checkPermission(
     principalType: String,
     principalId: String,
@@ -141,7 +141,7 @@ object ACL {
     property: String,
     accessType: String,
     callback: js.Function2[/* err */ String | Error, /* result */ AccessRequest, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPermission")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], model.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Calculate the matching score for the given rule and request
@@ -150,9 +150,8 @@ object ACL {
     * @returns {number}
     */
   /* static member */
-  @JSImport("loopback", "ACL.getMatchingScore")
-  @js.native
-  def getMatchingScore(rule: ACL, req: AccessRequest): Double = js.native
+  @scala.inline
+  def getMatchingScore(rule: ACL, req: AccessRequest): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatchingScore")(rule.asInstanceOf[js.Any], req.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Check if the given principal is mapped to the role
@@ -162,18 +161,14 @@ object ACL {
     * @param {() => void} cb Callback functio
     */
   /* static member */
-  @JSImport("loopback", "ACL.isMappedToRole")
-  @js.native
-  def isMappedToRole(principalType: String, principalId: String, role: String, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("loopback", "ACL.isMappedToRole")
-  @js.native
-  def isMappedToRole(principalType: String, principalId: String, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("loopback", "ACL.isMappedToRole")
-  @js.native
-  def isMappedToRole(principalType: String, principalId: js.Any, role: String, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("loopback", "ACL.isMappedToRole")
-  @js.native
-  def isMappedToRole(principalType: String, principalId: js.Any, role: js.Any, cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def isMappedToRole(principalType: String, principalId: String, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isMappedToRole(principalType: String, principalId: String, role: js.Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isMappedToRole(principalType: String, principalId: js.Any, role: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def isMappedToRole(principalType: String, principalId: js.Any, role: js.Any, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isMappedToRole")(principalType.asInstanceOf[js.Any], principalId.asInstanceOf[js.Any], role.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Resolve a principal by type/id
@@ -182,10 +177,8 @@ object ACL {
     * @param {() => void} cb Callback function
     */
   /* static member */
-  @JSImport("loopback", "ACL.resolvePrincipal")
-  @js.native
-  def resolvePrincipal(`type`: String, id: String, cb: js.Function0[Unit]): Unit = js.native
-  @JSImport("loopback", "ACL.resolvePrincipal")
-  @js.native
-  def resolvePrincipal(`type`: String, id: Double, cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def resolvePrincipal(`type`: String, id: String, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePrincipal")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resolvePrincipal(`type`: String, id: Double, cb: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePrincipal")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

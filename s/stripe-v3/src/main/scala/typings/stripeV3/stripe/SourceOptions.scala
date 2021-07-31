@@ -11,39 +11,37 @@ import typings.stripeV3.stripeV3Strings.reusable
 import typings.stripeV3.stripeV3Strings.single_use
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceOptions extends StObject {
   
-  var amount: js.UndefOr[Double] = js.native
+  var amount: js.UndefOr[Double] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.native
+  var flow: js.UndefOr[redirect | receiver | code_verification | none] = js.undefined
   
-  var mandate: js.UndefOr[SourceMandate] = js.native
+  var mandate: js.UndefOr[SourceMandate] = js.undefined
   
-  var metadata: js.UndefOr[js.Object] = js.native
+  var metadata: js.UndefOr[js.Object] = js.undefined
   
-  var owner: js.UndefOr[OwnerInfo] = js.native
+  var owner: js.UndefOr[OwnerInfo] = js.undefined
   
-  var redirect: js.UndefOr[Returnurl] = js.native
+  var redirect: js.UndefOr[Returnurl] = js.undefined
   
-  var sepa_debit: js.UndefOr[Iban] = js.native
+  var sepa_debit: js.UndefOr[Iban] = js.undefined
   
-  var sofort: js.UndefOr[Country] = js.native
+  var sofort: js.UndefOr[Country] = js.undefined
   
-  var statement_descriptor: js.UndefOr[String] = js.native
+  var statement_descriptor: js.UndefOr[String] = js.undefined
   
-  var three_d_secure: js.UndefOr[typings.stripeV3.anon.Card] = js.native
+  var three_d_secure: js.UndefOr[typings.stripeV3.anon.Card] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var usage: js.UndefOr[reusable | single_use] = js.native
+  var usage: js.UndefOr[reusable | single_use] = js.undefined
 }
 object SourceOptions {
   

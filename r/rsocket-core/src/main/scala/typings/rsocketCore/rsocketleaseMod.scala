@@ -6,7 +6,6 @@ import typings.rsocketTypes.reactiveSocketTypesMod.LeaseFrame
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketleaseMod {
@@ -46,18 +45,33 @@ object rsocketleaseMod {
   @JSImport("rsocket-core/RSocketLease", "RequesterLeaseHandler")
   @js.native
   class RequesterLeaseHandler protected ()
-    extends LeaseHandler
+    extends StObject
+       with LeaseHandler
        with Disposable {
     def this(leaseReceiver: js.Function1[/* flowable */ Flowable[Lease], Unit]) = this()
     
     def availability(): Double = js.native
     
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def errorMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def isDisposed(): Boolean = js.native
+    
     def receive(frame: LeaseFrame): Unit = js.native
+    
+    /* CompleteClass */
+    override def use(): Boolean = js.native
   }
   
   @JSImport("rsocket-core/RSocketLease", "ResponderLeaseHandler")
   @js.native
-  class ResponderLeaseHandler protected () extends LeaseHandler {
+  class ResponderLeaseHandler protected ()
+    extends StObject
+       with LeaseHandler {
     def this(leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]]) = this()
     def this(
       leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]],
@@ -65,7 +79,7 @@ object rsocketleaseMod {
     ) = this()
     def this(
       leaseSender: js.Function1[/* leaseStats */ js.UndefOr[LeaseStats], Flowable[Lease]],
-      stats: js.UndefOr[scala.Nothing],
+      stats: Unit,
       errorConsumer: js.Function1[/* e */ Error, Unit]
     ) = this()
     def this(
@@ -74,15 +88,20 @@ object rsocketleaseMod {
       errorConsumer: js.Function1[/* e */ Error, Unit]
     ) = this()
     
+    /* CompleteClass */
+    override def errorMessage(): String = js.native
+    
     def send(send: js.Function1[/* lease */ Lease, Unit]): Disposable = js.native
+    
+    /* CompleteClass */
+    override def use(): Boolean = js.native
   }
   
-  @js.native
   trait Disposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    def isDisposed(): Boolean = js.native
+    def isDisposed(): Boolean
   }
   object Disposable {
     
@@ -121,12 +140,11 @@ object rsocketleaseMod {
     def Terminate: typings.rsocketCore.rsocketCoreStrings.Terminate = "Terminate".asInstanceOf[typings.rsocketCore.rsocketCoreStrings.Terminate]
   }
   
-  @js.native
   trait LeaseHandler extends StObject {
     
-    def errorMessage(): String = js.native
+    def errorMessage(): String
     
-    def use(): Boolean = js.native
+    def use(): Boolean
   }
   object LeaseHandler {
     
@@ -147,10 +165,9 @@ object rsocketleaseMod {
     }
   }
   
-  @js.native
   trait LeaseStats extends StObject {
     
-    def onEvent(event: EventType): Unit = js.native
+    def onEvent(event: EventType): Unit
   }
   object LeaseStats {
     

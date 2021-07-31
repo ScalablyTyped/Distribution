@@ -6,137 +6,135 @@ import typings.kendoUi.kendoUiStrings.incell
 import typings.kendoUi.kendoUiStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridOptions extends StObject {
   
-  var allowCopy: js.UndefOr[Boolean | GridAllowCopy] = js.native
+  var allowCopy: js.UndefOr[Boolean | GridAllowCopy] = js.undefined
   
-  var altRowTemplate: js.UndefOr[String | js.Function] = js.native
+  var altRowTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var beforeEdit: js.UndefOr[js.Function1[/* e */ GridBeforeEditEvent, Unit]] = js.native
+  var beforeEdit: js.UndefOr[js.Function1[/* e */ GridBeforeEditEvent, Unit]] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ GridCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ GridCancelEvent, Unit]] = js.undefined
   
-  var cellClose: js.UndefOr[js.Function1[/* e */ GridCellCloseEvent, Unit]] = js.native
+  var cellClose: js.UndefOr[js.Function1[/* e */ GridCellCloseEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ GridChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ GridChangeEvent, Unit]] = js.undefined
   
-  var columnHide: js.UndefOr[js.Function1[/* e */ GridColumnHideEvent, Unit]] = js.native
+  var columnHide: js.UndefOr[js.Function1[/* e */ GridColumnHideEvent, Unit]] = js.undefined
   
-  var columnLock: js.UndefOr[js.Function1[/* e */ GridColumnLockEvent, Unit]] = js.native
+  var columnLock: js.UndefOr[js.Function1[/* e */ GridColumnLockEvent, Unit]] = js.undefined
   
-  var columnMenu: js.UndefOr[Boolean | GridColumnMenu] = js.native
+  var columnMenu: js.UndefOr[Boolean | GridColumnMenu] = js.undefined
   
-  var columnMenuInit: js.UndefOr[js.Function1[/* e */ GridColumnMenuInitEvent, Unit]] = js.native
+  var columnMenuInit: js.UndefOr[js.Function1[/* e */ GridColumnMenuInitEvent, Unit]] = js.undefined
   
-  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ GridColumnMenuOpenEvent, Unit]] = js.native
+  var columnMenuOpen: js.UndefOr[js.Function1[/* e */ GridColumnMenuOpenEvent, Unit]] = js.undefined
   
-  var columnReorder: js.UndefOr[js.Function1[/* e */ GridColumnReorderEvent, Unit]] = js.native
+  var columnReorder: js.UndefOr[js.Function1[/* e */ GridColumnReorderEvent, Unit]] = js.undefined
   
-  var columnResize: js.UndefOr[js.Function1[/* e */ GridColumnResizeEvent, Unit]] = js.native
+  var columnResize: js.UndefOr[js.Function1[/* e */ GridColumnResizeEvent, Unit]] = js.undefined
   
-  var columnResizeHandleWidth: js.UndefOr[Double] = js.native
+  var columnResizeHandleWidth: js.UndefOr[Double] = js.undefined
   
-  var columnShow: js.UndefOr[js.Function1[/* e */ GridColumnShowEvent, Unit]] = js.native
+  var columnShow: js.UndefOr[js.Function1[/* e */ GridColumnShowEvent, Unit]] = js.undefined
   
-  var columnStick: js.UndefOr[js.Function1[/* e */ GridColumnStickEvent, Unit]] = js.native
+  var columnStick: js.UndefOr[js.Function1[/* e */ GridColumnStickEvent, Unit]] = js.undefined
   
-  var columnUnlock: js.UndefOr[js.Function1[/* e */ GridColumnUnlockEvent, Unit]] = js.native
+  var columnUnlock: js.UndefOr[js.Function1[/* e */ GridColumnUnlockEvent, Unit]] = js.undefined
   
-  var columnUnstick: js.UndefOr[js.Function1[/* e */ GridColumnUnstickEvent, Unit]] = js.native
+  var columnUnstick: js.UndefOr[js.Function1[/* e */ GridColumnUnstickEvent, Unit]] = js.undefined
   
-  var columns: js.UndefOr[js.Array[GridColumn]] = js.native
+  var columns: js.UndefOr[js.Array[GridColumn]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ GridDataBindingEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ GridDataBindingEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ GridDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ GridDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var detailCollapse: js.UndefOr[js.Function1[/* e */ GridDetailCollapseEvent, Unit]] = js.native
+  var detailCollapse: js.UndefOr[js.Function1[/* e */ GridDetailCollapseEvent, Unit]] = js.undefined
   
-  var detailExpand: js.UndefOr[js.Function1[/* e */ GridDetailExpandEvent, Unit]] = js.native
+  var detailExpand: js.UndefOr[js.Function1[/* e */ GridDetailExpandEvent, Unit]] = js.undefined
   
-  var detailInit: js.UndefOr[js.Function1[/* e */ GridDetailInitEvent, Unit]] = js.native
+  var detailInit: js.UndefOr[js.Function1[/* e */ GridDetailInitEvent, Unit]] = js.undefined
   
-  var detailTemplate: js.UndefOr[String | js.Function] = js.native
+  var detailTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ GridEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ GridEditEvent, Unit]] = js.undefined
   
-  var editable: js.UndefOr[Boolean | `inline` | incell | popup | GridEditable] = js.native
+  var editable: js.UndefOr[Boolean | `inline` | incell | popup | GridEditable] = js.undefined
   
-  var excel: js.UndefOr[GridExcel] = js.native
+  var excel: js.UndefOr[GridExcel] = js.undefined
   
-  var excelExport: js.UndefOr[js.Function1[/* e */ GridExcelExportEvent, Unit]] = js.native
+  var excelExport: js.UndefOr[js.Function1[/* e */ GridExcelExportEvent, Unit]] = js.undefined
   
-  var filter: js.UndefOr[js.Function1[/* e */ GridFilterEvent, Unit]] = js.native
+  var filter: js.UndefOr[js.Function1[/* e */ GridFilterEvent, Unit]] = js.undefined
   
-  var filterMenuInit: js.UndefOr[js.Function1[/* e */ GridFilterMenuInitEvent, Unit]] = js.native
+  var filterMenuInit: js.UndefOr[js.Function1[/* e */ GridFilterMenuInitEvent, Unit]] = js.undefined
   
-  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ GridFilterMenuOpenEvent, Unit]] = js.native
+  var filterMenuOpen: js.UndefOr[js.Function1[/* e */ GridFilterMenuOpenEvent, Unit]] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | GridFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | GridFilterable] = js.undefined
   
-  var group: js.UndefOr[js.Function1[/* e */ GridGroupEvent, Unit]] = js.native
+  var group: js.UndefOr[js.Function1[/* e */ GridGroupEvent, Unit]] = js.undefined
   
-  var groupCollapse: js.UndefOr[js.Function1[/* e */ GridGroupCollapseEvent, Unit]] = js.native
+  var groupCollapse: js.UndefOr[js.Function1[/* e */ GridGroupCollapseEvent, Unit]] = js.undefined
   
-  var groupExpand: js.UndefOr[js.Function1[/* e */ GridGroupExpandEvent, Unit]] = js.native
+  var groupExpand: js.UndefOr[js.Function1[/* e */ GridGroupExpandEvent, Unit]] = js.undefined
   
-  var groupable: js.UndefOr[Boolean | GridGroupable] = js.native
+  var groupable: js.UndefOr[Boolean | GridGroupable] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var messages: js.UndefOr[GridMessages] = js.native
+  var messages: js.UndefOr[GridMessages] = js.undefined
   
-  var mobile: js.UndefOr[Boolean | String] = js.native
+  var mobile: js.UndefOr[Boolean | String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ GridNavigateEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ GridNavigateEvent, Unit]] = js.undefined
   
-  var noRecords: js.UndefOr[Boolean | GridNoRecords] = js.native
+  var noRecords: js.UndefOr[Boolean | GridNoRecords] = js.undefined
   
-  var page: js.UndefOr[js.Function1[/* e */ GridPageEvent, Unit]] = js.native
+  var page: js.UndefOr[js.Function1[/* e */ GridPageEvent, Unit]] = js.undefined
   
-  var pageable: js.UndefOr[Boolean | GridPageable] = js.native
+  var pageable: js.UndefOr[Boolean | GridPageable] = js.undefined
   
-  var pdf: js.UndefOr[GridPdf] = js.native
+  var pdf: js.UndefOr[GridPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ GridPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ GridPdfExportEvent, Unit]] = js.undefined
   
-  var persistSelection: js.UndefOr[Boolean] = js.native
+  var persistSelection: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ GridRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ GridRemoveEvent, Unit]] = js.undefined
   
-  var reorderable: js.UndefOr[Boolean] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var rowTemplate: js.UndefOr[String | js.Function] = js.native
+  var rowTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ GridSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ GridSaveEvent, Unit]] = js.undefined
   
-  var saveChanges: js.UndefOr[js.Function1[/* e */ GridSaveChangesEvent, Unit]] = js.native
+  var saveChanges: js.UndefOr[js.Function1[/* e */ GridSaveChangesEvent, Unit]] = js.undefined
   
-  var scrollable: js.UndefOr[Boolean | GridScrollable] = js.native
+  var scrollable: js.UndefOr[Boolean | GridScrollable] = js.undefined
   
-  var search: js.UndefOr[GridSearch] = js.native
+  var search: js.UndefOr[GridSearch] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | String] = js.native
+  var selectable: js.UndefOr[Boolean | String] = js.undefined
   
-  var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, Unit]] = js.native
+  var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, Unit]] = js.undefined
   
-  var sortable: js.UndefOr[Boolean | GridSortable] = js.native
+  var sortable: js.UndefOr[Boolean | GridSortable] = js.undefined
   
-  var toolbar: js.UndefOr[String | js.Function | (js.Array[String | GridToolbarItem])] = js.native
+  var toolbar: js.UndefOr[String | js.Function | (js.Array[String | GridToolbarItem])] = js.undefined
 }
 object GridOptions {
   

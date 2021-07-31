@@ -3,21 +3,20 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var path: String = js.native
+  var path: String
   
   // 文件/目录路径
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
   // 是否递归,默认false
   @JSName("success")
-  var success_StatOptions: js.UndefOr[js.Function1[/* res */ Stats, Unit]] = js.native
+  var success_StatOptions: js.UndefOr[js.Function1[/* res */ Stats, Unit]] = js.undefined
 }
 object StatOptions {
   

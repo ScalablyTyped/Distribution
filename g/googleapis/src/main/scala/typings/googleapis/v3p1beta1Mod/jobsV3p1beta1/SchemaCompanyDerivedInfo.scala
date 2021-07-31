@@ -2,20 +2,18 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Derived details about the company.
   */
-@js.native
 trait SchemaCompanyDerivedInfo extends StObject {
   
   /**
     * A structured headquarters location of the company, resolved from
     * Company.hq_location if provided.
     */
-  var headquartersLocation: js.UndefOr[SchemaLocation] = js.native
+  var headquartersLocation: js.UndefOr[SchemaLocation] = js.undefined
 }
 object SchemaCompanyDerivedInfo {
   

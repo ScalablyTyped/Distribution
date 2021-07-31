@@ -4,17 +4,17 @@ import typings.ajv.ajvBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AjvErrors {
   
-  @js.native
-  trait MissingRefError extends Error {
+  trait MissingRefError
+    extends StObject
+       with Error {
     
-    var missingRef: String = js.native
+    var missingRef: String
     
-    var missingSchema: String = js.native
+    var missingSchema: String
   }
   object MissingRefError {
     
@@ -35,20 +35,21 @@ object AjvErrors {
     }
   }
   
-  @js.native
-  trait ValidationError extends Error {
+  trait ValidationError
+    extends StObject
+       with Error {
     
-    var ajv: `true` = js.native
+    var ajv: `true`
     
-    var errors: js.Array[ErrorObject] = js.native
+    var errors: js.Array[ErrorObject]
     
-    var validation: `true` = js.native
+    var validation: `true`
   }
   object ValidationError {
     
     @scala.inline
-    def apply(ajv: `true`, errors: js.Array[ErrorObject], message: String, name: String, validation: `true`): typings.ajv.mod.AjvErrors.ValidationError = {
-      val __obj = js.Dynamic.literal(ajv = ajv.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any])
+    def apply(errors: js.Array[ErrorObject], message: String, name: String): typings.ajv.mod.AjvErrors.ValidationError = {
+      val __obj = js.Dynamic.literal(ajv = true, errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], validation = true)
       __obj.asInstanceOf[typings.ajv.mod.AjvErrors.ValidationError]
     }
     

@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRunnerOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IRunnerOptions extends StObject {
     * @type number
     * @default 1000 / 60
     */
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
   
   /**
     * A `Boolean` that specifies if the runner should use a fixed timestep (otherwise it is variable).
@@ -28,7 +26,7 @@ trait IRunnerOptions extends StObject {
     * @type boolean
     * @default false
     */
-  var isFixed: js.UndefOr[Boolean] = js.native
+  var isFixed: js.UndefOr[Boolean] = js.undefined
 }
 object IRunnerOptions {
   

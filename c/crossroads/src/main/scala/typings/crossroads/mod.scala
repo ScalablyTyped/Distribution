@@ -7,7 +7,6 @@ import typings.signals.mod.SignalBinding
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,7 +27,8 @@ object mod extends Shortcut {
     * @author Miller Medeiros
     */
   class bypassed ()
-    extends Signal[js.Any]
+    extends StObject
+       with Signal[js.Any]
   
   /**
     * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
@@ -42,7 +42,8 @@ object mod extends Shortcut {
     * @author Miller Medeiros
     */
   class routed ()
-    extends Signal[js.Any]
+    extends StObject
+       with Signal[js.Any]
   
   object CrossroadsJs {
     
@@ -66,14 +67,14 @@ object mod extends Shortcut {
         * @param priority Route execution priority.
         */
       def addRoute(pattern: js.Any): Route = js.native
-      def addRoute(pattern: js.Any, handler: js.UndefOr[scala.Nothing], priority: Double): Route = js.native
       def addRoute(pattern: js.Any, handler: js.Function): Route = js.native
       def addRoute(pattern: js.Any, handler: js.Function, priority: Double): Route = js.native
+      def addRoute(pattern: js.Any, handler: Unit, priority: Double): Route = js.native
       
       /**
         * Signal dispatched every time that crossroads.parse can't find a Route that matches the request. Useful for debuging and error handling.
         */
-      var bypassed: Signal[_] = js.native
+      var bypassed: Signal[js.Any] = js.native
       
       /**
         * Create a new independent Router instance.
@@ -138,7 +139,7 @@ object mod extends Shortcut {
       /**
         * Signal dispatched every time that crossroads.parse find a Route that matches the request. Useful for debuging and for executing tasks that should happen at each routing.
         */
-      var routed: Signal[_] = js.native
+      var routed: Signal[js.Any] = js.native
       
       /**
         * Set if crossroads should typecast route paths. Default value is false (IMPORTANT: on v0.5.0 it was true by default).
@@ -161,10 +162,10 @@ object mod extends Shortcut {
         * @param listenercontext Context on which listener will be executed (object that should represent the `this` variable inside listener function).
         * @param priority The priority level of the event listener. Listeners with higher priority will be executed before listeners with lower priority. Listeners with same priority level will be executed at the same order as they were added. (default = 0)
         */
-      def add(listener: js.Function): SignalBinding[_] = js.native
-      def add(listener: js.Function, listenerContext: js.UndefOr[scala.Nothing], priority: Number): SignalBinding[_] = js.native
-      def add(listener: js.Function, listenerContext: js.Any): SignalBinding[_] = js.native
-      def add(listener: js.Function, listenerContext: js.Any, priority: Number): SignalBinding[_] = js.native
+      def add(listener: js.Function): SignalBinding[js.Any] = js.native
+      def add(listener: js.Function, listenerContext: js.Any): SignalBinding[js.Any] = js.native
+      def add(listener: js.Function, listenerContext: js.Any, priority: Number): SignalBinding[js.Any] = js.native
+      def add(listener: js.Function, listenerContext: Unit, priority: Number): SignalBinding[js.Any] = js.native
       
       /**
         * Remove route from crossroads and destroy it, releasing memory.
@@ -186,7 +187,7 @@ object mod extends Shortcut {
         */
       def `match`(request: js.Any): Boolean = js.native
       
-      var matched: Signal[_] = js.native
+      var matched: Signal[js.Any] = js.native
       
       /**
         * Object used to configure parameters/segments validation rules.
@@ -196,7 +197,7 @@ object mod extends Shortcut {
       /**
         * Signal dispatched every time a request "leaves" the route.
         */
-      var switched: Signal[_] = js.native
+      var switched: Signal[js.Any] = js.native
     }
   }
   

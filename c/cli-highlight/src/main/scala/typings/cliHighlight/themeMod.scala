@@ -2,34 +2,32 @@ package typings.cliHighlight
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
+  
+  @JSImport("cli-highlight/dist/theme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cli-highlight/dist/theme", "DEFAULT_THEME")
   @js.native
   val DEFAULT_THEME: Theme = js.native
   
-  @JSImport("cli-highlight/dist/theme", "fromJson")
-  @js.native
-  def fromJson(json: JsonTheme): Theme = js.native
+  @scala.inline
+  def fromJson(json: JsonTheme): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @JSImport("cli-highlight/dist/theme", "parse")
-  @js.native
-  def parse(json: String): Theme = js.native
+  @scala.inline
+  def parse(json: String): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @JSImport("cli-highlight/dist/theme", "plain")
-  @js.native
-  def plain(codePart: String): String = js.native
+  @scala.inline
+  def plain(codePart: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plain")(codePart.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cli-highlight/dist/theme", "stringify")
-  @js.native
-  def stringify(theme: Theme): String = js.native
+  @scala.inline
+  def stringify(theme: Theme): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(theme.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("cli-highlight/dist/theme", "toJson")
-  @js.native
-  def toJson(theme: Theme): JsonTheme = js.native
+  @scala.inline
+  def toJson(theme: Theme): JsonTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(theme.asInstanceOf[js.Any]).asInstanceOf[JsonTheme]
   
   type JsonTheme = Tokens[Style | js.Array[Style]]
   
@@ -139,14 +137,14 @@ object themeMod {
     def yellow: typings.cliHighlight.cliHighlightStrings.yellow = "yellow".asInstanceOf[typings.cliHighlight.cliHighlightStrings.yellow]
   }
   
-  @js.native
   trait Theme
-    extends Tokens[js.Function1[/* codePart */ String, String]] {
+    extends StObject
+       with Tokens[js.Function1[/* codePart */ String, String]] {
     
     /**
       * things not matched by any token
       */
-    var default: js.UndefOr[js.Function1[/* codePart */ String, String]] = js.native
+    var default: js.UndefOr[js.Function1[/* codePart */ String, String]] = js.undefined
   }
   object Theme {
     
@@ -167,213 +165,212 @@ object themeMod {
     }
   }
   
-  @js.native
   trait Tokens[T] extends StObject {
     
     /**
       * added or changed line in a diff
       */
-    var addition: js.UndefOr[T] = js.native
+    var addition: js.UndefOr[T] = js.undefined
     
     /**
       * name of an attribute with no language defined semantics (keys in JSON, setting names in .ini), also sub-attribute within another highlighted object, like XML tag
       */
-    var attr: js.UndefOr[T] = js.native
+    var attr: js.UndefOr[T] = js.undefined
     
     /**
       * name of an attribute followed by a structured value part, like CSS properties
       */
-    var attribute: js.UndefOr[T] = js.native
+    var attribute: js.UndefOr[T] = js.undefined
     
     /**
       * built-in or library object (constant, class, function)
       */
-    var built_in: js.UndefOr[T] = js.native
+    var built_in: js.UndefOr[T] = js.undefined
     
     /**
       * s-expression name from the language standard library
       */
-    var `builtin-name`: js.UndefOr[T] = js.native
+    var `builtin-name`: js.UndefOr[T] = js.undefined
     
     /**
       * list item bullet in text markup
       */
-    var bullet: js.UndefOr[T] = js.native
+    var bullet: js.UndefOr[T] = js.undefined
     
     /**
       * class or class-level declaration (interfaces, traits, modules, etc)
       */
-    var `class`: js.UndefOr[T] = js.native
+    var `class`: js.UndefOr[T] = js.undefined
     
     /**
       * code block in text markup
       */
-    var code: js.UndefOr[T] = js.native
+    var code: js.UndefOr[T] = js.undefined
     
     /**
       * comment
       */
-    var comment: js.UndefOr[T] = js.native
+    var comment: js.UndefOr[T] = js.undefined
     
     /**
       * deleted line in a diff
       */
-    var deletion: js.UndefOr[T] = js.native
+    var deletion: js.UndefOr[T] = js.undefined
     
     /**
       * documentation markup within comments
       */
-    var doctag: js.UndefOr[T] = js.native
+    var doctag: js.UndefOr[T] = js.undefined
     
     /**
       * emphasis in text markup
       */
-    var emphasis: js.UndefOr[T] = js.native
+    var emphasis: js.UndefOr[T] = js.undefined
     
     /**
       * mathematical formula in text markup
       */
-    var formula: js.UndefOr[T] = js.native
+    var formula: js.UndefOr[T] = js.undefined
     
     /**
       * function or method declaration
       */
-    var function: js.UndefOr[T] = js.native
+    var function: js.UndefOr[T] = js.undefined
     
     /**
       * keyword in a regular Algol-style language
       */
-    var keyword: js.UndefOr[T] = js.native
+    var keyword: js.UndefOr[T] = js.undefined
     
     /**
       * hyperlink in text markup
       */
-    var link: js.UndefOr[T] = js.native
+    var link: js.UndefOr[T] = js.undefined
     
     /**
       * special identifier for a built-in value ("true", "false", "null")
       */
-    var literal: js.UndefOr[T] = js.native
+    var literal: js.UndefOr[T] = js.undefined
     
     /**
       * flags, modifiers, annotations, processing instructions, preprocessor directive, etc
       */
-    var meta: js.UndefOr[T] = js.native
+    var meta: js.UndefOr[T] = js.undefined
     
     /**
       * keyword or built-in within meta construct
       */
-    var `meta-keyword`: js.UndefOr[T] = js.native
+    var `meta-keyword`: js.UndefOr[T] = js.undefined
     
     /**
       * string within meta construct
       */
-    var `meta-string`: js.UndefOr[T] = js.native
+    var `meta-string`: js.UndefOr[T] = js.undefined
     
     /**
       * name of an XML tag, the first word in an s-expression
       */
-    var name: js.UndefOr[T] = js.native
+    var name: js.UndefOr[T] = js.undefined
     
     /**
       * number, including units and modifiers, if any.
       */
-    var number: js.UndefOr[T] = js.native
+    var number: js.UndefOr[T] = js.undefined
     
     /**
       * block of function arguments (parameters) at the place of declaration
       */
-    var params: js.UndefOr[T] = js.native
+    var params: js.UndefOr[T] = js.undefined
     
     /**
       * quotation in text markup
       */
-    var quote: js.UndefOr[T] = js.native
+    var quote: js.UndefOr[T] = js.undefined
     
     /**
       * literal regular expression
       */
-    var regexp: js.UndefOr[T] = js.native
+    var regexp: js.UndefOr[T] = js.undefined
     
     /**
       * heading of a section in a config file, heading in text markup
       */
-    var section: js.UndefOr[T] = js.native
+    var section: js.UndefOr[T] = js.undefined
     
     /**
       * [attr] selector in CSS
       */
-    var `selector-attr`: js.UndefOr[T] = js.native
+    var `selector-attr`: js.UndefOr[T] = js.undefined
     
     /**
       * .class selector in CSS
       */
-    var `selector-class`: js.UndefOr[T] = js.native
+    var `selector-class`: js.UndefOr[T] = js.undefined
     
     /**
       * #id selector in CSS
       */
-    var `selector-id`: js.UndefOr[T] = js.native
+    var `selector-id`: js.UndefOr[T] = js.undefined
     
     /**
       * :pseudo selector in CSS
       */
-    var `selector-pseudo`: js.UndefOr[T] = js.native
+    var `selector-pseudo`: js.UndefOr[T] = js.undefined
     
     /**
       * tag selector in CSS
       */
-    var `selector-tag`: js.UndefOr[T] = js.native
+    var `selector-tag`: js.UndefOr[T] = js.undefined
     
     /**
       * literal string, character
       */
-    var string: js.UndefOr[T] = js.native
+    var string: js.UndefOr[T] = js.undefined
     
     /**
       * strong emphasis in text markup
       */
-    var strong: js.UndefOr[T] = js.native
+    var strong: js.UndefOr[T] = js.undefined
     
     /**
       * parsed section inside a literal string
       */
-    var subst: js.UndefOr[T] = js.native
+    var subst: js.UndefOr[T] = js.undefined
     
     /**
       * symbolic constant, interned string, goto label
       */
-    var symbol: js.UndefOr[T] = js.native
+    var symbol: js.UndefOr[T] = js.undefined
     
     /**
       * XML/HTML tag
       */
-    var tag: js.UndefOr[T] = js.native
+    var tag: js.UndefOr[T] = js.undefined
     
     /**
       * tag of a template language
       */
-    var `template-tag`: js.UndefOr[T] = js.native
+    var `template-tag`: js.UndefOr[T] = js.undefined
     
     /**
       * variable in a template language
       */
-    var `template-variable`: js.UndefOr[T] = js.native
+    var `template-variable`: js.UndefOr[T] = js.undefined
     
     /**
       * name of a class or a function at the place of declaration
       */
-    var title: js.UndefOr[T] = js.native
+    var title: js.UndefOr[T] = js.undefined
     
     /**
       * user-defined type in a language with first-class syntactically significant types, like Haskell
       */
-    var `type`: js.UndefOr[T] = js.native
+    var `type`: js.UndefOr[T] = js.undefined
     
     /**
       * variable in a config or a template file, environment var expansion in a script
       */
-    var variable: js.UndefOr[T] = js.native
+    var variable: js.UndefOr[T] = js.undefined
   }
   object Tokens {
     
@@ -384,7 +381,7 @@ object themeMod {
     }
     
     @scala.inline
-    implicit class TokensMutableBuilder[Self <: Tokens[_], T] (val x: Self with Tokens[T]) extends AnyVal {
+    implicit class TokensMutableBuilder[Self <: Tokens[?], T] (val x: Self & Tokens[T]) extends AnyVal {
       
       @scala.inline
       def setAddition(value: T): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])

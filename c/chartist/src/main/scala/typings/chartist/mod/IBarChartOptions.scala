@@ -4,47 +4,47 @@ import typings.chartist.chartistStrings.accumulate
 import typings.chartist.chartistStrings.overlap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBarChartOptions extends IChartOptions {
+trait IBarChartOptions
+  extends StObject
+     with IChartOptions {
   
-  var axisX: js.UndefOr[IBarChartAxis] = js.native
+  var axisX: js.UndefOr[IBarChartAxis] = js.undefined
   
-  var axisY: js.UndefOr[IBarChartAxis] = js.native
+  var axisY: js.UndefOr[IBarChartAxis] = js.undefined
   
-  var chartPadding: js.UndefOr[IChartPadding] = js.native
+  var chartPadding: js.UndefOr[IChartPadding] = js.undefined
   
   /**
     * Override the class names that are used to generate the SVG structure of the chart
     */
-  var classNames: js.UndefOr[IBarChartClasses] = js.native
+  var classNames: js.UndefOr[IBarChartClasses] = js.undefined
   
-  var distributeSeries: js.UndefOr[Boolean] = js.native
+  var distributeSeries: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var high: js.UndefOr[Double] = js.native
+  var high: js.UndefOr[Double] = js.undefined
   
-  var horizontalBars: js.UndefOr[Boolean] = js.native
+  var horizontalBars: js.UndefOr[Boolean] = js.undefined
   
-  var low: js.UndefOr[Double] = js.native
+  var low: js.UndefOr[Double] = js.undefined
   
-  var onlyInteger: js.UndefOr[Boolean] = js.native
+  var onlyInteger: js.UndefOr[Boolean] = js.undefined
   
-  var seriesBarDistance: js.UndefOr[Double] = js.native
+  var seriesBarDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * If set to true this property will cause the series bars to be stacked and form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
     */
-  var stackBars: js.UndefOr[Boolean] = js.native
+  var stackBars: js.UndefOr[Boolean] = js.undefined
   
-  var stackMode: js.UndefOr[overlap | accumulate] = js.native
+  var stackMode: js.UndefOr[overlap | accumulate] = js.undefined
   
-  var ticks: js.UndefOr[js.Array[String | Double]] = js.native
+  var ticks: js.UndefOr[js.Array[String | Double]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object IBarChartOptions {
   

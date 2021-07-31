@@ -2,18 +2,16 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCheckTokenEndpoint extends StObject {
   
   /**
     * The OAuth access token used to authenticate to the GitHub API.
     */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
-  var client_id: String = js.native
+  var client_id: String
 }
 object AppsCheckTokenEndpoint {
   

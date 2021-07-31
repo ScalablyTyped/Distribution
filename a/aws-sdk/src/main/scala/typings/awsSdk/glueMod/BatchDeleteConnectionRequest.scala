@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteConnectionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog in which the connections reside. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * A list of names of the connections to delete.
     */
-  var ConnectionNameList: DeleteConnectionNameList = js.native
+  var ConnectionNameList: DeleteConnectionNameList
 }
 object BatchDeleteConnectionRequest {
   

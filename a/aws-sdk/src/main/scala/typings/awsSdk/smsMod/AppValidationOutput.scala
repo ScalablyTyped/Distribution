@@ -2,16 +2,14 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppValidationOutput extends StObject {
   
   /**
     * Output from using SSM to validate the application.
     */
-  var ssmOutput: js.UndefOr[SSMOutput] = js.native
+  var ssmOutput: js.UndefOr[SSMOutput] = js.undefined
 }
 object AppValidationOutput {
   

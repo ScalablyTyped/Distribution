@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetItemOutput extends StObject {
   
   /**
     * The capacity units consumed by the GetItem operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. ConsumedCapacity is only returned if the ReturnConsumedCapacity parameter was specified. For more information, see Read/Write Capacity Mode in the Amazon DynamoDB Developer Guide.
     */
-  var ConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ConsumedCapacity] = js.native
+  var ConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ConsumedCapacity] = js.undefined
   
   /**
     * A map of attribute names to AttributeValue objects, as specified by ProjectionExpression.
     */
-  var Item: js.UndefOr[AttributeMap] = js.native
+  var Item: js.UndefOr[AttributeMap] = js.undefined
 }
 object GetItemOutput {
   

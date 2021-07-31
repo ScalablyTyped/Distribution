@@ -4,11 +4,9 @@ import typings.chromeApps.chrome.double
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A filter of a cookie in HTTP Responses. */
-@js.native
 trait FilterResponseCookie extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait FilterResponseCookie extends StObject {
     * lifetime is calculated from either 'max-age' or 'expires' cookie attributes. If both
     * are specified, 'max-age' is used to calculate the cookie lifetime.
     */
-  var ageLowerBound: js.UndefOr[integer] = js.native
+  var ageLowerBound: js.UndefOr[integer] = js.undefined
   
   /**
     * Inclusive upper bound on the cookie lifetime (specified in seconds after current time).
@@ -28,37 +26,37 @@ trait FilterResponseCookie extends StObject {
     * from either 'max-age' or 'expires' cookie attributes. If both are specified, 'max-age'
     * is used to calculate the cookie lifetime.
     */
-  var ageUpperBound: js.UndefOr[integer] = js.native
+  var ageUpperBound: js.UndefOr[integer] = js.undefined
   
   /** Value of the Domain cookie attribute. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** Value of the Expires cookie attribute. */
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
   /** Existence of the HttpOnly cookie attribute */
-  var httpOnly: js.UndefOr[String] = js.native
+  var httpOnly: js.UndefOr[String] = js.undefined
   
   /** Value of the Max-Age cookie attribute */
-  var maxAge: js.UndefOr[double] = js.native
+  var maxAge: js.UndefOr[double] = js.undefined
   
   /** Name of a cookie. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Value of the Path cookie attribute. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Existence of the Secure cookie attribute. */
-  var secure: js.UndefOr[String] = js.native
+  var secure: js.UndefOr[String] = js.undefined
   
   /**
     * Filters session cookies.
     * Session cookies have no lifetime specified in any of 'max-age' or 'expires' attributes.
     */
-  var sessionCookie: js.UndefOr[Boolean] = js.native
+  var sessionCookie: js.UndefOr[Boolean] = js.undefined
   
   /** Value of a cookie, may be padded in double-quotes. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object FilterResponseCookie {
   

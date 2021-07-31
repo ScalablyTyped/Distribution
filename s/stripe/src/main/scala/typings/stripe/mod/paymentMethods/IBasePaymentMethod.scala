@@ -7,36 +7,36 @@ import typings.stripe.mod.customers.ICustomer
 import typings.stripe.stripeStrings.payment_method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBasePaymentMethod extends IResourceObject {
+trait IBasePaymentMethod
+  extends StObject
+     with IResourceObject {
   
   /** Billing information associated with the PaymentMethod that may be used or required by particular types of payment methods. */
-  var billing_details: Null | Email = js.native
+  var billing_details: Null | Email
   
   /** Time at which the object was created. Measured in seconds since the Unix epoch. */
-  var created: Double = js.native
+  var created: Double
   
   /** The ID of the Customer to which this PaymentMethod is saved. This will not be set when the PaymentMethod has not been saved to a Customer. [Expandable] */
-  var customer: String | ICustomer | Null = js.native
+  var customer: String | ICustomer | Null
   
   /** Has the value true if the object exists in live mode or the value false if the object exists in test mode. */
-  var livemode: Boolean = js.native
+  var livemode: Boolean
   
   /** Set of key-value pairs that you can attach to an object. This can be useful for storing additional information about the object in a structured format. */
-  var metadata: IMetadata = js.native
+  var metadata: IMetadata
   
   @JSName("object")
-  var object_IBasePaymentMethod: payment_method = js.native
+  var object_IBasePaymentMethod: payment_method
 }
 object IBasePaymentMethod {
   
   @scala.inline
-  def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata, `object`: payment_method): IBasePaymentMethod = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+  def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata): IBasePaymentMethod = {
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
+    __obj.updateDynamic("object")("payment_method")
     __obj.asInstanceOf[IBasePaymentMethod]
   }
   

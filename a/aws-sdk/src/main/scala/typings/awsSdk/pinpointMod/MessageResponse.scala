@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageResponse extends StObject {
   
   /**
     * The unique identifier for the application that was used to send the message.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * A map that contains a multipart response for each address that the message was sent to. In the map, the endpoint ID is the key and the result is the value.
     */
-  var EndpointResult: js.UndefOr[MapOfEndpointMessageResult] = js.native
+  var EndpointResult: js.UndefOr[MapOfEndpointMessageResult] = js.undefined
   
   /**
     * The identifier for the original request that the message was delivered for.
     */
-  var RequestId: js.UndefOr[string] = js.native
+  var RequestId: js.UndefOr[string] = js.undefined
   
   /**
     * A map that contains a multipart response for each address (email address, phone number, or push notification token) that the message was sent to. In the map, the address is the key and the result is the value.
     */
-  var Result: js.UndefOr[MapOfMessageResult] = js.native
+  var Result: js.UndefOr[MapOfMessageResult] = js.undefined
 }
 object MessageResponse {
   

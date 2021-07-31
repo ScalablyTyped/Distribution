@@ -3,25 +3,23 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.mod.NotificationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buttons extends StObject {
   
-  var buttons: js.UndefOr[js.Array[Class]] = js.native
+  var buttons: js.UndefOr[js.Array[Class]] = js.undefined
   
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[NotificationType] = js.native
+  var `type`: js.UndefOr[NotificationType] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Buttons {
   

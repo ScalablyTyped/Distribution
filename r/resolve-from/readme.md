@@ -11,8 +11,8 @@ Resolve the path of a module like `require.resolve()` but from a given path
 | Full name          | resolve-from |
 | Keywords           | require, resolve, path, module, from, like, import |
 | # releases         | 2 |
-| # dependents       | 536 |
-| # downloads        | 1241052082 |
+| # dependents       | 624 |
+| # downloads        | 1580189658 |
 | # stars            | 6 |
 
 ## Links

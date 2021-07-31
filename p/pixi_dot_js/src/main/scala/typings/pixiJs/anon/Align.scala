@@ -4,69 +4,67 @@ import typings.std.CanvasGradient
 import typings.std.CanvasPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var breakWords: js.UndefOr[Boolean] = js.native
+  var breakWords: js.UndefOr[Boolean] = js.undefined
   
-  var dropShadow: js.UndefOr[Boolean] = js.native
+  var dropShadow: js.UndefOr[Boolean] = js.undefined
   
-  var dropShadowAlpha: js.UndefOr[Double] = js.native
+  var dropShadowAlpha: js.UndefOr[Double] = js.undefined
   
-  var dropShadowAngle: js.UndefOr[Double] = js.native
+  var dropShadowAngle: js.UndefOr[Double] = js.undefined
   
-  var dropShadowBlur: js.UndefOr[Double] = js.native
+  var dropShadowBlur: js.UndefOr[Double] = js.undefined
   
-  var dropShadowColor: js.UndefOr[String | Double] = js.native
+  var dropShadowColor: js.UndefOr[String | Double] = js.undefined
   
-  var dropShadowDistance: js.UndefOr[Double] = js.native
+  var dropShadowDistance: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern] = js.native
+  var fill: js.UndefOr[String | (js.Array[Double | String]) | Double | CanvasGradient | CanvasPattern] = js.undefined
   
-  var fillGradientStops: js.UndefOr[js.Array[Double]] = js.native
+  var fillGradientStops: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var fillGradientType: js.UndefOr[Double] = js.native
+  var fillGradientType: js.UndefOr[Double] = js.undefined
   
-  var fontFamily: js.UndefOr[String | js.Array[String]] = js.native
+  var fontFamily: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fontSize: js.UndefOr[Double | String] = js.native
+  var fontSize: js.UndefOr[Double | String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
-  var leading: js.UndefOr[Double] = js.native
+  var leading: js.UndefOr[Double] = js.undefined
   
-  var letterSpacing: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.undefined
   
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
-  var lineJoin: js.UndefOr[String] = js.native
+  var lineJoin: js.UndefOr[String] = js.undefined
   
-  var miterLimit: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[String | Double] = js.native
+  var stroke: js.UndefOr[String | Double] = js.undefined
   
-  var strokeThickness: js.UndefOr[Double] = js.native
+  var strokeThickness: js.UndefOr[Double] = js.undefined
   
-  var textBaseline: js.UndefOr[String] = js.native
+  var textBaseline: js.UndefOr[String] = js.undefined
   
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
-  var whiteSpace: js.UndefOr[String] = js.native
+  var whiteSpace: js.UndefOr[String] = js.undefined
   
-  var wordWrap: js.UndefOr[Boolean] = js.native
+  var wordWrap: js.UndefOr[Boolean] = js.undefined
   
-  var wordWrapWidth: js.UndefOr[Double] = js.native
+  var wordWrapWidth: js.UndefOr[Double] = js.undefined
 }
 object Align {
   

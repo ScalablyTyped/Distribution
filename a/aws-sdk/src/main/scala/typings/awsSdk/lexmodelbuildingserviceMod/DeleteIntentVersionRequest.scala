@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIntentVersionRequest extends StObject {
   
   /**
     * The name of the intent.
     */
-  var name: IntentName = js.native
+  var name: IntentName
   
   /**
     * The version of the intent to delete. You cannot delete the $LATEST version of the intent. To delete the $LATEST version, use the DeleteIntent operation.
     */
-  var version: NumericalVersion = js.native
+  var version: NumericalVersion
 }
 object DeleteIntentVersionRequest {
   

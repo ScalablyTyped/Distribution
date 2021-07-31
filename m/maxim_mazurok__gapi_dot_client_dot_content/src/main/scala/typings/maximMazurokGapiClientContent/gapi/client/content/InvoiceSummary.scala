@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvoiceSummary extends StObject {
   
   /** Summary of the total amounts of the additional charges. */
-  var additionalChargeSummaries: js.UndefOr[js.Array[InvoiceSummaryAdditionalChargeSummary]] = js.native
+  var additionalChargeSummaries: js.UndefOr[js.Array[InvoiceSummaryAdditionalChargeSummary]] = js.undefined
   
   /** [required] Total price for the product. */
-  var productTotal: js.UndefOr[Amount] = js.native
+  var productTotal: js.UndefOr[Amount] = js.undefined
 }
 object InvoiceSummary {
   

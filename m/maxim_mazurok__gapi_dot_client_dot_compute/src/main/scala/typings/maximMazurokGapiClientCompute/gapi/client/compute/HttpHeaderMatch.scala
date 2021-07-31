@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpHeaderMatch extends StObject {
   
   /**
     * The value should exactly match contents of exactMatch.
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var exactMatch: js.UndefOr[String] = js.native
+  var exactMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the HTTP header to match.
@@ -22,26 +20,26 @@ trait HttpHeaderMatch extends StObject {
     * supported. The following transport-level headers cannot be used in header matching rules: `:authority`, `:method`, `:path`, `:scheme`, `user-agent`, `accept-encoding`,
     * `content-encoding`, `grpc-accept-encoding`, `grpc-encoding`, `grpc-previous-rpc-attempts`, `grpc-tags-bin`, `grpc-timeout` and `grpc-trace-bin.
     */
-  var headerName: js.UndefOr[String] = js.native
+  var headerName: js.UndefOr[String] = js.undefined
   
   /**
     * If set to false, the headerMatch is considered a match if the match criteria above are met. If set to true, the headerMatch is considered a match if the match criteria above are NOT
     * met.
     * The default setting is false.
     */
-  var invertMatch: js.UndefOr[Boolean] = js.native
+  var invertMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the header must start with the contents of prefixMatch.
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var prefixMatch: js.UndefOr[String] = js.native
+  var prefixMatch: js.UndefOr[String] = js.undefined
   
   /**
     * A header with the contents of headerName must exist. The match takes place whether or not the request's header has a value.
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var presentMatch: js.UndefOr[Boolean] = js.native
+  var presentMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The header value must be an integer and its value must be in the range specified in rangeMatch. If the header does not contain an integer, number or is empty, the match fails.
@@ -53,7 +51,7 @@ trait HttpHeaderMatch extends StObject {
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     * Note that rangeMatch is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL.
     */
-  var rangeMatch: js.UndefOr[Int64RangeMatch] = js.native
+  var rangeMatch: js.UndefOr[Int64RangeMatch] = js.undefined
   
   /**
     * The value of the header must match the regular expression specified in regexMatch. For regular expression grammar, please see:  en.cppreference.com/w/cpp/regex/ecmascript
@@ -62,13 +60,13 @@ trait HttpHeaderMatch extends StObject {
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     * Note that regexMatch only applies to Loadbalancers that have their loadBalancingScheme set to INTERNAL_SELF_MANAGED.
     */
-  var regexMatch: js.UndefOr[String] = js.native
+  var regexMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the header must end with the contents of suffixMatch.
     * Only one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var suffixMatch: js.UndefOr[String] = js.native
+  var suffixMatch: js.UndefOr[String] = js.undefined
 }
 object HttpHeaderMatch {
   

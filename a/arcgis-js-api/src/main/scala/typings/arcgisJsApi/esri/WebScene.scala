@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.failed
 import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebScene
-  extends Map
+  extends StObject
+     with Map
      with corePromise {
   
   /**
@@ -67,7 +67,7 @@ trait WebScene
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#load)
     */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /**
     * Loads all the externally loadable resources associated with the webscene.
@@ -155,6 +155,6 @@ trait WebScene
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
-  def updateFrom(view: SceneView): js.Promise[_] = js.native
-  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): js.Promise[_] = js.native
+  def updateFrom(view: SceneView): js.Promise[js.Any] = js.native
+  def updateFrom(view: SceneView, options: WebSceneUpdateFromOptions): js.Promise[js.Any] = js.native
 }

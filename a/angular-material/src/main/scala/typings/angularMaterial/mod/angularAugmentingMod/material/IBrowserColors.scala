@@ -2,17 +2,15 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBrowserColors extends StObject {
   
-  var hue: String = js.native
+  var hue: String
   
-  var palette: String = js.native
+  var palette: String
   
-  var theme: String = js.native
+  var theme: String
 }
 object IBrowserColors {
   

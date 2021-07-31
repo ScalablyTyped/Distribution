@@ -2,21 +2,19 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderResult extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var addressComponents: AddressComponent = js.native
+  var addressComponents: AddressComponent
   
-  var business: String = js.native
+  var business: String
   
-  var point: Point = js.native
+  var point: Point
   
-  var surroundingPoi: js.Array[LocalResultPoi] = js.native
+  var surroundingPoi: js.Array[LocalResultPoi]
 }
 object GeocoderResult {
   

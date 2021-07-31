@@ -3,7 +3,6 @@ package typings.progress
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
     */
   @JSImport("progress", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ProgressBar {
+  class ^ protected ()
+    extends StObject
+       with ProgressBar {
     def this(format: String, options: ProgressBarOptions) = this()
     /**
       * Initialize a `ProgressBar` with the given `fmt` string and `options` or
@@ -77,9 +78,9 @@ object mod {
       * "tick" the progress bar with optional `len` and optional `tokens`.
       */
     def tick(): Unit = js.native
-    def tick(count: js.UndefOr[scala.Nothing], tokens: js.Any): Unit = js.native
     def tick(count: Double): Unit = js.native
     def tick(count: Double, tokens: js.Any): Unit = js.native
+    def tick(count: Unit, tokens: js.Any): Unit = js.native
     def tick(tokens: js.Any): Unit = js.native
     
     /**
@@ -106,58 +107,57 @@ object mod {
   /**
     * These are keys in the options object you can pass to the progress bar along with total as seen in the example above.
     */
-  @js.native
   trait ProgressBarOptions extends StObject {
     
     /**
       * Optional function to call when the progress bar completes.
       */
-    var callback: js.UndefOr[js.Function] = js.native
+    var callback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Option to clear the bar on completion defaulting to false.
       */
-    var clear: js.UndefOr[Boolean] = js.native
+    var clear: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Completion character defaulting to "=".
       */
-    var complete: js.UndefOr[String] = js.native
+    var complete: js.UndefOr[String] = js.undefined
     
     /**
       * current completed index
       */
-    var curr: js.UndefOr[Double] = js.native
+    var curr: js.UndefOr[Double] = js.undefined
     
     /**
       * head character defaulting to complete character
       */
-    var head: js.UndefOr[String] = js.native
+    var head: js.UndefOr[String] = js.undefined
     
     /**
       * Incomplete character defaulting to "-".
       */
-    var incomplete: js.UndefOr[String] = js.native
+    var incomplete: js.UndefOr[String] = js.undefined
     
     /**
       * minimum time between updates in milliseconds defaulting to 16
       */
-    var renderThrottle: js.UndefOr[Double] = js.native
+    var renderThrottle: js.UndefOr[Double] = js.undefined
     
     /**
       * The output stream defaulting to stderr.
       */
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * Total number of ticks to complete.
       */
-    var total: Double = js.native
+    var total: Double
     
     /**
       * The displayed width of the progress bar defaulting to total.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ProgressBarOptions {
     

@@ -2,17 +2,15 @@ package typings.smartFoxServer.SFS2X.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageRecipientMode extends StObject {
   
   /** @type {number} Returns the selected recipient mode. */
-  var mode: Double = js.native
+  var mode: Double
   
   /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
-  var target: js.Any = js.native
+  var target: js.Any
 }
 object MessageRecipientMode {
   

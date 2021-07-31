@@ -14,16 +14,14 @@ import typings.realm.Realm.Object
 import typings.realm.Realm.Services.MongoDB.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Filter extends StObject {
     
     /** A filter document */
-    var filter: typings.realm.Realm.Services.MongoDB.Filter = js.native
+    var filter: typings.realm.Realm.Services.MongoDB.Filter
   }
   object Filter {
     
@@ -41,11 +39,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Id[IdType] extends StObject {
     
     /** The id of the document. */
-    var _id: IdType = js.native
+    var _id: IdType
   }
   object Id {
     
@@ -56,25 +53,24 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[_], IdType] (val x: Self with Id[IdType]) extends AnyVal {
+    implicit class IdMutableBuilder[Self <: Id[?], IdType] (val x: Self & Id[IdType]) extends AnyVal {
       
       @scala.inline
       def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait Ids[T /* <: Document[_] */] extends StObject {
+  trait Ids[T /* <: Document[js.Any] */] extends StObject {
     
     /** List of ids to watch */
     var ids: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-      ] = js.native
+      ]
   }
   object Ids {
     
     @scala.inline
-    def apply[T /* <: Document[_] */](
+    def apply[T /* <: Document[js.Any] */](
       ids: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
         ]
@@ -84,7 +80,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdsMutableBuilder[Self <: Ids[_], T /* <: Document[_] */] (val x: Self with Ids[T]) extends AnyVal {
+    implicit class IdsMutableBuilder[Self <: Ids[?], T /* <: Document[js.Any] */] (val x: Self & Ids[T]) extends AnyVal {
       
       @scala.inline
       def setIds(
@@ -100,13 +96,13 @@ object anon {
   
   @js.native
   trait Instantiable[T /* <: Object */]
-    extends Instantiable1[/* arg (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* arg (repeated) */ js.Any, T]
   
   /* Inlined std.Omit<realm.Realm.Services.MongoDB.DocumentNamespace, 'coll'> */
-  @js.native
   trait OmitDocumentNamespacecoll extends StObject {
     
-    var db: String = js.native
+    var db: String
   }
   object OmitDocumentNamespacecoll {
     
@@ -124,7 +120,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofCredentials extends StObject {
     
     /**
@@ -133,7 +128,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def anonymous(): Credentials[AnonymousPayload] = js.native
+    def anonymous(): Credentials[AnonymousPayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [Apple ID Provider](https://docs.mongodb.com/realm/authentication/apple/).
@@ -142,7 +137,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def apple(idToken: String): Credentials[ApplePayload] = js.native
+    def apple(idToken: String): Credentials[ApplePayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [Email/Password Provider](https://docs.mongodb.com/realm/authentication/email-password/).
@@ -153,7 +148,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def emailPassword(email: String, password: String): Credentials[EmailPasswordPayload] = js.native
+    def emailPassword(email: String, password: String): Credentials[EmailPasswordPayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [Facebook Provider](https://docs.mongodb.com/realm/authentication/facebook/).
@@ -162,7 +157,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def facebook(accessToken: String): Credentials[FacebookPayload] = js.native
+    def facebook(accessToken: String): Credentials[FacebookPayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [Custom Function Provider](https://docs.mongodb.com/realm/authentication/custom-function/).
@@ -171,7 +166,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def function[PayloadType /* <: FunctionPayload */](payload: PayloadType): Credentials[PayloadType] = js.native
+    def function[PayloadType /* <: FunctionPayload */](payload: PayloadType): Credentials[PayloadType]
     
     /**
       * Factory for `Credentials` which authenticate using the [Google Provider](https://docs.mongodb.com/realm/authentication/google/).
@@ -180,7 +175,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def google(authCode: String): Credentials[GooglePayload] = js.native
+    def google(authCode: String): Credentials[GooglePayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [Custom JWT Provider](https://docs.mongodb.com/realm/authentication/custom-jwt/).
@@ -189,7 +184,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def jwt(token: String): Credentials[JWTPayload] = js.native
+    def jwt(token: String): Credentials[JWTPayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [API Key Provider](https://docs.mongodb.com/realm/authentication/api-key/).
@@ -200,7 +195,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def serverApiKey(key: String): Credentials[ApiKeyPayload] = js.native
+    def serverApiKey(key: String): Credentials[ApiKeyPayload]
     
     /**
       * Factory for `Credentials` which authenticate using the [API Key Provider](https://docs.mongodb.com/realm/authentication/api-key/).
@@ -211,7 +206,7 @@ object anon {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    def userApiKey(key: String): Credentials[ApiKeyPayload] = js.native
+    def userApiKey(key: String): Credentials[ApiKeyPayload]
   }
   object TypeofCredentials {
     

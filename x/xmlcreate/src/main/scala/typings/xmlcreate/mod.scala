@@ -20,10 +20,13 @@ import typings.xmlcreate.xmlEntityRefMod.IXmlEntityRefOptions
 import typings.xmlcreate.xmlProcInstMod.IXmlProcInstOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("xmlcreate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xmlcreate", "XmlAttribute")
   @js.native
@@ -143,10 +146,8 @@ object mod {
     def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }
   
-  @JSImport("xmlcreate", "document")
-  @js.native
-  def document(): typings.xmlcreate.xmlDocumentMod.default = js.native
-  @JSImport("xmlcreate", "document")
-  @js.native
-  def document(options: IXmlDocumentOptions): typings.xmlcreate.xmlDocumentMod.default = js.native
+  @scala.inline
+  def document(): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")().asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
+  @scala.inline
+  def document(options: IXmlDocumentOptions): typings.xmlcreate.xmlDocumentMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("document")(options.asInstanceOf[js.Any]).asInstanceOf[typings.xmlcreate.xmlDocumentMod.default]
 }

@@ -3,25 +3,24 @@ package typings.aliApp.my
 import typings.aliApp.anon.Fail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRiskIdentificationOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 需要进行风险识别的文本内容
     */
-  var content: String = js.native
+  var content: String
   
   @JSName("success")
-  var success_TextRiskIdentificationOptions: js.UndefOr[js.Function1[/* res */ Fail, Unit]] = js.native
+  var success_TextRiskIdentificationOptions: js.UndefOr[js.Function1[/* res */ Fail, Unit]] = js.undefined
   
   /**
     * 识别类型：keyword 表示关键词、0 表示广告、1表示涉政、2表示涉黄、3表示低俗辱骂
     */
-  var `type`: js.Array[TextRiskIdentificationType] = js.native
+  var `type`: js.Array[TextRiskIdentificationType]
 }
 object TextRiskIdentificationOptions {
   

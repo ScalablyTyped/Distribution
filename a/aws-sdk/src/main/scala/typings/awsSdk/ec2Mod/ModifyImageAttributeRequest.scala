@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyImageAttributeRequest extends StObject {
   
   /**
     * The name of the attribute to modify. The valid values are description, launchPermission, and productCodes.
     */
-  var Attribute: js.UndefOr[String] = js.native
+  var Attribute: js.UndefOr[String] = js.undefined
   
   /**
     * A new description for the AMI.
     */
-  var Description: js.UndefOr[AttributeValue] = js.native
+  var Description: js.UndefOr[AttributeValue] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: typings.awsSdk.ec2Mod.ImageId = js.native
+  var ImageId: typings.awsSdk.ec2Mod.ImageId
   
   /**
     * A new launch permission for the AMI.
     */
-  var LaunchPermission: js.UndefOr[LaunchPermissionModifications] = js.native
+  var LaunchPermission: js.UndefOr[LaunchPermissionModifications] = js.undefined
   
   /**
     * The operation type. This parameter can be used only when the Attribute parameter is launchPermission.
     */
-  var OperationType: js.UndefOr[typings.awsSdk.ec2Mod.OperationType] = js.native
+  var OperationType: js.UndefOr[typings.awsSdk.ec2Mod.OperationType] = js.undefined
   
   /**
     * The DevPay product codes. After you add a product code to an AMI, it can't be removed.
     */
-  var ProductCodes: js.UndefOr[ProductCodeStringList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeStringList] = js.undefined
   
   /**
     * The user groups. This parameter can be used only when the Attribute parameter is launchPermission.
     */
-  var UserGroups: js.UndefOr[UserGroupStringList] = js.native
+  var UserGroups: js.UndefOr[UserGroupStringList] = js.undefined
   
   /**
     * The AWS account IDs. This parameter can be used only when the Attribute parameter is launchPermission.
     */
-  var UserIds: js.UndefOr[UserIdStringList] = js.native
+  var UserIds: js.UndefOr[UserIdStringList] = js.undefined
   
   /**
     * The value of the attribute being modified. This parameter can be used only when the Attribute parameter is description or productCodes.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object ModifyImageAttributeRequest {
   

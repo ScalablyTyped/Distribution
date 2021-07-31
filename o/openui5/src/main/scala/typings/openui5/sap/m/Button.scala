@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Button extends Control {
+trait Button
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaDescribedBy into the association <code>ariaDescribedBy</code>.
@@ -103,13 +104,13 @@ trait Button extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaDescribedBy</code>.
     */
-  def getAriaDescribedBy(): js.Array[_] = js.native
+  def getAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>enabled</code>.Boolean property to enable the control (default
@@ -181,13 +182,13 @@ trait Button extends Control {
     * Removes all the controls in the association named <code>ariaDescribedBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaDescribedBy(): js.Array[_] = js.native
+  def removeAllAriaDescribedBy(): js.Array[js.Any] = js.native
   
   /**
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   def removeAriaDescribedBy(vAriaDescribedBy: js.Any): js.Any = js.native
   /**

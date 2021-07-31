@@ -5,30 +5,30 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.countpattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CountPatternTransform extends _Transforms {
+trait CountPatternTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var `case`: js.UndefOr[String | SignalRef] = js.native
+  var `case`: js.UndefOr[String | SignalRef] = js.undefined
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var pattern: js.UndefOr[String | SignalRef] = js.native
+  var pattern: js.UndefOr[String | SignalRef] = js.undefined
   
-  var stopwords: js.UndefOr[String | SignalRef] = js.native
+  var stopwords: js.UndefOr[String | SignalRef] = js.undefined
   
-  var `type`: countpattern = js.native
+  var `type`: countpattern
 }
 object CountPatternTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: countpattern): CountPatternTransform = {
+  def apply(field: FieldRef): CountPatternTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("countpattern")
     __obj.asInstanceOf[CountPatternTransform]
   }
   

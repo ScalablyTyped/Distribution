@@ -3,36 +3,34 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the information about an axis value.
   */
-@js.native
 trait ASPxClientAxisValue extends StObject {
   
   /**
     * Gets the axis value, if the axis scale type is date-time.
     */
-  var dateTimeValue: Date = js.native
+  var dateTimeValue: Date
   
   /**
     * Gets the axis value, if the axis scale type is numerical.
     */
-  var numericalValue: Double = js.native
+  var numericalValue: Double
   
   /**
     * Gets the axis value, if the axis scale type is qualitative.
     */
-  var qualitativeValue: String = js.native
+  var qualitativeValue: String
   
   /**
     * Gets the axis scale type.
     */
-  var scaleType: String = js.native
+  var scaleType: String
   
-  var timeSpanValue: js.Any = js.native
+  var timeSpanValue: js.Any
 }
 object ASPxClientAxisValue {
   

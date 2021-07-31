@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersOrderUpdateAction extends StObject {
   
   /**
     * Button label and link.
     */
-  var button: js.UndefOr[GoogleActionsV2UiElementsButton] = js.native
+  var button: js.UndefOr[GoogleActionsV2UiElementsButton] = js.undefined
   
   /**
     * Type of action.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderUpdateActionType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersOrderUpdateActionType] = js.undefined
 }
 object GoogleActionsV2OrdersOrderUpdateAction {
   

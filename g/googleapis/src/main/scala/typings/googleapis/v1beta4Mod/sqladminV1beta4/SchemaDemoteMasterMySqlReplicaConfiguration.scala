@@ -2,46 +2,44 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Read-replica configuration specific to MySQL databases.
   */
-@js.native
 trait SchemaDemoteMasterMySqlReplicaConfiguration extends StObject {
   
   /**
     * PEM representation of the trusted CA&#39;s x509 certificate.
     */
-  var caCertificate: js.UndefOr[String] = js.native
+  var caCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * PEM representation of the slave&#39;s x509 certificate.
     */
-  var clientCertificate: js.UndefOr[String] = js.native
+  var clientCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * PEM representation of the slave&#39;s private key. The corresponsing
     * public key is encoded in the client&#39;s certificate. The format of the
     * slave&#39;s private key can be either PKCS #1 or PKCS #8.
     */
-  var clientKey: js.UndefOr[String] = js.native
+  var clientKey: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#demoteMasterMysqlReplicaConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The password for the replication connection.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The username for the replication connection.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaDemoteMasterMySqlReplicaConfiguration {
   

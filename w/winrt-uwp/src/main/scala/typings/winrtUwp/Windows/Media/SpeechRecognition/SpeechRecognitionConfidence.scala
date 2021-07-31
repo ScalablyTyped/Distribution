@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object SpeechRecognitionConfidence extends StObject {
   
   /** The confidence level is high. */
   @js.native
-  sealed trait high extends SpeechRecognitionConfidence
+  sealed trait high
+    extends StObject
+       with SpeechRecognitionConfidence
   
   /** The confidence level is low. */
   @js.native
-  sealed trait low extends SpeechRecognitionConfidence
+  sealed trait low
+    extends StObject
+       with SpeechRecognitionConfidence
   
   /** The confidence level is medium. */
   @js.native
-  sealed trait medium extends SpeechRecognitionConfidence
+  sealed trait medium
+    extends StObject
+       with SpeechRecognitionConfidence
   
   /** The spoken phrase was not matched to any phrase in any active grammar. */
   @js.native
-  sealed trait rejected extends SpeechRecognitionConfidence
+  sealed trait rejected
+    extends StObject
+       with SpeechRecognitionConfidence
 }

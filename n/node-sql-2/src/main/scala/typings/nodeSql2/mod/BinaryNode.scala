@@ -2,15 +2,13 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryNode extends StObject {
   
-  def and(node: BinaryNode): BinaryNode = js.native
+  def and(node: BinaryNode): BinaryNode
   
-  def or(node: BinaryNode): BinaryNode = js.native
+  def or(node: BinaryNode): BinaryNode
 }
 object BinaryNode {
   

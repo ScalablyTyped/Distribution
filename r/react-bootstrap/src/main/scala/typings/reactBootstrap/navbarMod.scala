@@ -10,7 +10,6 @@ import typings.react.mod.ReactType
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navbarMod {
@@ -115,14 +114,15 @@ object navbarMod {
   trait NavbarForm
     extends Component[NavbarFormProps, js.Object, js.Any]
   
-  @js.native
-  trait NavbarFormProps extends HTMLProps[NavbarForm] {
+  trait NavbarFormProps
+    extends StObject
+       with HTMLProps[NavbarForm] {
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var pullLeft: js.UndefOr[Boolean] = js.native
+    var pullLeft: js.UndefOr[Boolean] = js.undefined
     
-    var pullRight: js.UndefOr[Boolean] = js.native
+    var pullRight: js.UndefOr[Boolean] = js.undefined
   }
   object NavbarFormProps {
     
@@ -136,7 +136,7 @@ object navbarMod {
     implicit class NavbarFormPropsMutableBuilder[Self <: NavbarFormProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
@@ -162,14 +162,15 @@ object navbarMod {
   /**
     * the classes below aren't present in lib/
     */
-  @js.native
-  trait NavbarLinkProps extends HTMLProps[NavbarLink] {
+  trait NavbarLinkProps
+    extends StObject
+       with HTMLProps[NavbarLink] {
     
     @JSName("href")
-    var href_NavbarLinkProps: String = js.native
+    var href_NavbarLinkProps: String
     
     @JSName("onClick")
-    var onClick_NavbarLinkProps: js.UndefOr[MouseEventHandler[_]] = js.native
+    var onClick_NavbarLinkProps: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   }
   object NavbarLinkProps {
     
@@ -186,47 +187,48 @@ object navbarMod {
       def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
   
-  @js.native
-  trait NavbarProps extends HTMLProps[Navbar] {
+  trait NavbarProps
+    extends StObject
+       with HTMLProps[Navbar] {
     
-    var brand: js.UndefOr[js.Any] = js.native
-    
-    // TODO: Add more specific type
-    var bsSize: js.UndefOr[Sizes] = js.native
-    
-    var bsStyle: js.UndefOr[String] = js.native
-    
-    var collapseOnSelect: js.UndefOr[Boolean] = js.native
-    
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
-    
-    var defaultNavExpanded: js.UndefOr[Boolean] = js.native
-    
-    var expanded: js.UndefOr[Boolean] = js.native
-    
-    var fixedBottom: js.UndefOr[Boolean] = js.native
-    
-    var fixedTop: js.UndefOr[Boolean] = js.native
-    
-    var fluid: js.UndefOr[Boolean] = js.native
-    
-    var inverse: js.UndefOr[Boolean] = js.native
-    
-    var onToggle: js.UndefOr[js.Function] = js.native
-    
-    var staticTop: js.UndefOr[Boolean] = js.native
-    
-    var toggleButton: js.UndefOr[js.Any] = js.native
+    var brand: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var toggleNavKey: js.UndefOr[String | Double] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
+    
+    var bsStyle: js.UndefOr[String] = js.undefined
+    
+    var collapseOnSelect: js.UndefOr[Boolean] = js.undefined
+    
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
+    
+    var defaultNavExpanded: js.UndefOr[Boolean] = js.undefined
+    
+    var expanded: js.UndefOr[Boolean] = js.undefined
+    
+    var fixedBottom: js.UndefOr[Boolean] = js.undefined
+    
+    var fixedTop: js.UndefOr[Boolean] = js.undefined
+    
+    var fluid: js.UndefOr[Boolean] = js.undefined
+    
+    var inverse: js.UndefOr[Boolean] = js.undefined
+    
+    var onToggle: js.UndefOr[js.Function] = js.undefined
+    
+    var staticTop: js.UndefOr[Boolean] = js.undefined
+    
+    var toggleButton: js.UndefOr[js.Any] = js.undefined
+    
+    // TODO: Add more specific type
+    var toggleNavKey: js.UndefOr[String | Double] = js.undefined
   }
   object NavbarProps {
     
@@ -264,7 +266,7 @@ object navbarMod {
       def setCollapseOnSelectUndefined: Self = StObject.set(x, "collapseOnSelect", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
@@ -335,10 +337,11 @@ object navbarMod {
   trait NavbarText
     extends Component[NavbarTextProps, js.Object, js.Any]
   
-  @js.native
-  trait NavbarTextProps extends HTMLProps[NavbarText] {
+  trait NavbarTextProps
+    extends StObject
+       with HTMLProps[NavbarText] {
     
-    var pullRight: js.UndefOr[Boolean] = js.native
+    var pullRight: js.UndefOr[Boolean] = js.undefined
   }
   object NavbarTextProps {
     

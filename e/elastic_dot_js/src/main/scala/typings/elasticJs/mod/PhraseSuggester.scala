@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "PhraseSuggester")
 @js.native
-class PhraseSuggester protected () extends Suggest {
+class PhraseSuggester protected ()
+  extends StObject
+     with Suggest {
   /*
     A suggester that suggests entire corrected phrases.
     */

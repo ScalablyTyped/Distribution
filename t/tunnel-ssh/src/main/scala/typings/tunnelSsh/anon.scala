@@ -2,23 +2,21 @@ package typings.tunnelSsh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cipher extends StObject {
     
-    var cipher: js.UndefOr[js.Array[String]] = js.native
+    var cipher: js.UndefOr[js.Array[String]] = js.undefined
     
-    var compress: js.UndefOr[js.Array[String]] = js.native
+    var compress: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hmac: js.UndefOr[js.Array[String]] = js.native
+    var hmac: js.UndefOr[js.Array[String]] = js.undefined
     
-    var key: js.UndefOr[js.Array[String]] = js.native
+    var key: js.UndefOr[js.Array[String]] = js.undefined
     
-    var serverHostKey: js.UndefOr[js.Array[String]] = js.native
+    var serverHostKey: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Cipher {
     

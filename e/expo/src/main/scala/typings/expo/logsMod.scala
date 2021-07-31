@@ -2,16 +2,17 @@ package typings.expo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logsMod {
   
-  @JSImport("expo/build/logs/Logs", "disableExpoCliLogging")
+  @JSImport("expo/build/logs/Logs", JSImport.Namespace)
   @js.native
-  def disableExpoCliLogging(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("expo/build/logs/Logs", "enableExpoCliLogging")
-  @js.native
-  def enableExpoCliLogging(): Unit = js.native
+  @scala.inline
+  def disableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableExpoCliLogging")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def enableExpoCliLogging(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableExpoCliLogging")().asInstanceOf[Unit]
 }

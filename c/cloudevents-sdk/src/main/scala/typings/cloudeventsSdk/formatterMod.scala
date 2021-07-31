@@ -2,21 +2,28 @@ package typings.cloudeventsSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {
   
   @JSImport("cloudevents-sdk/lib/formats/json/formatter", JSImport.Default)
   @js.native
-  class default () extends JSONFormatter
+  class default ()
+    extends StObject
+       with JSONFormatter {
+    
+    /* CompleteClass */
+    override def format(payload: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toString(payload: js.Any): String = js.native
+  }
   
-  @js.native
   trait JSONFormatter extends StObject {
     
-    def format(payload: js.Any): js.Any = js.native
+    def format(payload: js.Any): js.Any
     
-    def toString(payload: js.Any): String = js.native
+    def toString(payload: js.Any): String
   }
   object JSONFormatter {
     

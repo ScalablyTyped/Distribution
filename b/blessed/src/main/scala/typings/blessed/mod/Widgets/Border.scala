@@ -4,35 +4,33 @@ import typings.blessed.blessedStrings.bg
 import typings.blessed.blessedStrings.line
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Border extends StObject {
   
   /**
     * Border foreground and background, must be numbers (-1 for default).
     */
-  var bg: js.UndefOr[Double] = js.native
+  var bg: js.UndefOr[Double] = js.undefined
   
   /**
     * Border attributes.
     */
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
   /**
     * Character to use if bg type, default is space.
     */
-  var ch: js.UndefOr[String] = js.native
+  var ch: js.UndefOr[String] = js.undefined
   
-  var fg: js.UndefOr[Double] = js.native
+  var fg: js.UndefOr[Double] = js.undefined
   
   /**
     * Type of border (line or bg). bg by default.
     */
-  var `type`: js.UndefOr[line | bg] = js.native
+  var `type`: js.UndefOr[line | bg] = js.undefined
   
-  var underline: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[String] = js.undefined
 }
 object Border {
   

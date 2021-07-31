@@ -10,9 +10,9 @@ TypeScript typings for Google Search Console API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.searchconsole |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 40 |
 | # dependents       | 1 |
-| # downloads        | 113 |
+| # downloads        | 2729 |
 | # stars            | 0 |
 
 ## Links

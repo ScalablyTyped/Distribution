@@ -2,16 +2,14 @@ package typings.phonon.Phonon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*** Options ***/
-@js.native
 trait PhononOptions extends StObject {
   
-  var i18n: js.UndefOr[PhononI18nOptions | Null] = js.native
+  var i18n: js.UndefOr[PhononI18nOptions | Null] = js.undefined
   
-  var navigator: js.UndefOr[PhononNavigatorOptions] = js.native
+  var navigator: js.UndefOr[PhononNavigatorOptions] = js.undefined
 }
 object PhononOptions {
   

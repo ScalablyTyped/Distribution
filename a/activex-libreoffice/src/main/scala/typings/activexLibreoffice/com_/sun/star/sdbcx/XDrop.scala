@@ -4,26 +4,26 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides methods to remove an element of its container and to drop it from the related database. */
-@js.native
-trait XDrop extends XInterface {
+trait XDrop
+  extends StObject
+     with XInterface {
   
   /**
     * drops an object of the related container identified by its position.
     * @param index the position of the element to be dropped
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def dropByIndex(index: Double): Unit = js.native
+  def dropByIndex(index: Double): Unit
   
   /**
     * drops an object of the related container identified by its name.
     * @param elementName the name of the element to be dropped
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def dropByName(elementName: String): Unit = js.native
+  def dropByName(elementName: String): Unit
 }
 object XDrop {
   

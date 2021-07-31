@@ -2,14 +2,12 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  withTheme :boolean}> */
-@js.native
 trait PartialwithThemeboolean extends StObject {
   
-  var withTheme: js.UndefOr[Boolean] = js.native
+  var withTheme: js.UndefOr[Boolean] = js.undefined
 }
 object PartialwithThemeboolean {
   

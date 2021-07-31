@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchImportFindingsResponse extends StObject {
   
   /**
     * The number of findings that failed to import.
     */
-  var FailedCount: Integer = js.native
+  var FailedCount: Integer
   
   /**
     * The list of findings that failed to import.
     */
-  var FailedFindings: js.UndefOr[ImportFindingsErrorList] = js.native
+  var FailedFindings: js.UndefOr[ImportFindingsErrorList] = js.undefined
   
   /**
     * The number of findings that were successfully imported.
     */
-  var SuccessCount: Integer = js.native
+  var SuccessCount: Integer
 }
 object BatchImportFindingsResponse {
   

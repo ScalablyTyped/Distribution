@@ -14,15 +14,14 @@ import typings.lodash.mod.String
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashPartialRight extends StObject {
   
-  def apply(func: js.Function1[/* repeated */ js.Any, _]): LodashPartialRight27x1 = js.native
-  def apply(func: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): js.Function1[/* repeated */ js.Any, _] = js.native
-  def apply(func: __, args: js.Array[_]): LodashPartialRight27x2 = js.native
+  def apply(func: js.Function1[/* repeated */ js.Any, js.Any]): LodashPartialRight27x1 = js.native
+  def apply(func: js.Function1[/* repeated */ js.Any, js.Any], args: js.Array[js.Any]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
+  def apply(func: __, args: js.Array[js.Any]): LodashPartialRight27x2 = js.native
   def apply[T1](func: __, arg1: js.Tuple2[T1, __]): LodashPartialRight2x2[T1] = js.native
   def apply[T1](func: __, arg1: js.Tuple4[T1, __, __, __]): LodashPartialRight12x2[T1] = js.native
   def apply[T2](func: __, arg2: js.Tuple3[T2, __, __]): LodashPartialRight13x2[T2] = js.native
@@ -41,16 +40,16 @@ trait LodashPartialRight extends StObject {
   
   def placeholder(): String = js.native
   def placeholder(value: java.lang.String): String = js.native
-  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
+  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
   def placeholder[T](value: List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-  @JSName("placeholder")
   def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("placeholder")
   def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("placeholder")
@@ -124,5 +123,5 @@ trait LodashPartialRight extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with String = js.native
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & String = js.native
 }

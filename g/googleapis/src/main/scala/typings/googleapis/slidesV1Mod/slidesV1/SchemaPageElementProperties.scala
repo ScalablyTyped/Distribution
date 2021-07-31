@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * PageElement, the API may modify the values of both `size` and `transform`,
   * but the visual size will be unchanged.
   */
-@js.native
 trait SchemaPageElementProperties extends StObject {
   
   /**
     * The object ID of the page where the element is located.
     */
-  var pageObjectId: js.UndefOr[String] = js.native
+  var pageObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the element.
     */
-  var size: js.UndefOr[SchemaSize] = js.native
+  var size: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The transform for the element.
     */
-  var transform: js.UndefOr[SchemaAffineTransform] = js.native
+  var transform: js.UndefOr[SchemaAffineTransform] = js.undefined
 }
 object SchemaPageElementProperties {
   

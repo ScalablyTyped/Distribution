@@ -2,61 +2,59 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStreamProcessorResponse extends StObject {
   
   /**
     * Date and time the stream processor was created
     */
-  var CreationTimestamp: js.UndefOr[DateTime] = js.native
+  var CreationTimestamp: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Kinesis video stream that provides the source streaming video.
     */
-  var Input: js.UndefOr[StreamProcessorInput] = js.native
+  var Input: js.UndefOr[StreamProcessorInput] = js.undefined
   
   /**
     * The time, in Unix format, the stream processor was last updated. For example, when the stream processor moves from a running state to a failed state, or when the user starts or stops the stream processor.
     */
-  var LastUpdateTimestamp: js.UndefOr[DateTime] = js.native
+  var LastUpdateTimestamp: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Name of the stream processor. 
     */
-  var Name: js.UndefOr[StreamProcessorName] = js.native
+  var Name: js.UndefOr[StreamProcessorName] = js.undefined
   
   /**
     * Kinesis data stream to which Amazon Rekognition Video puts the analysis results.
     */
-  var Output: js.UndefOr[StreamProcessorOutput] = js.native
+  var Output: js.UndefOr[StreamProcessorOutput] = js.undefined
   
   /**
     * ARN of the IAM role that allows access to the stream processor.
     */
-  var RoleArn: js.UndefOr[typings.awsSdk.rekognitionMod.RoleArn] = js.native
+  var RoleArn: js.UndefOr[typings.awsSdk.rekognitionMod.RoleArn] = js.undefined
   
   /**
     * Face recognition input parameters that are being used by the stream processor. Includes the collection to use for face recognition and the face attributes to detect.
     */
-  var Settings: js.UndefOr[StreamProcessorSettings] = js.native
+  var Settings: js.UndefOr[StreamProcessorSettings] = js.undefined
   
   /**
     * Current status of the stream processor.
     */
-  var Status: js.UndefOr[StreamProcessorStatus] = js.native
+  var Status: js.UndefOr[StreamProcessorStatus] = js.undefined
   
   /**
     * Detailed status message about the stream processor.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * ARN of the stream processor.
     */
-  var StreamProcessorArn: js.UndefOr[typings.awsSdk.rekognitionMod.StreamProcessorArn] = js.native
+  var StreamProcessorArn: js.UndefOr[typings.awsSdk.rekognitionMod.StreamProcessorArn] = js.undefined
 }
 object DescribeStreamProcessorResponse {
   

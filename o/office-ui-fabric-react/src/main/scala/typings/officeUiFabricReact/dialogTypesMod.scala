@@ -21,17 +21,15 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogTypesMod {
   
-  @js.native
   trait IDialog extends StObject
   
-  @js.native
   trait IDialogProps
-    extends ClassAttributes[DialogBase]
+    extends StObject
+       with ClassAttributes[DialogBase]
        with IWithResponsiveModeState
        with IAccessiblePopupProps {
     
@@ -39,63 +37,63 @@ object dialogTypesMod {
       * Optional id for aria-DescribedBy
       * @deprecated Pass through via `modalProps.subtitleAriaId` instead.
       */
-    var ariaDescribedById: js.UndefOr[String] = js.native
+    var ariaDescribedById: js.UndefOr[String] = js.undefined
     
     /**
       * Optional id for aria-LabelledBy
       * @deprecated Pass through via `modalProps.titleAriaId` instead.
       */
-    var ariaLabelledById: js.UndefOr[String] = js.native
+    var ariaLabelledById: js.UndefOr[String] = js.undefined
     
     /**
       * Optional class name to be added to the root class
       * @deprecated Pass through via `modalProps.className` instead
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IDialog interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       * @deprecated Unused, returns no value
       */
-    var componentRef: js.UndefOr[IRefObject[IDialog]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDialog]] = js.undefined
     
     /**
       * Optional override for container class
       * @deprecated Pass through via `modalProps.className` instead
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Optional override content class
       * @deprecated Pass through via `dialogContentProps` instead as `className`.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Props to be passed through to Dialog Content
       */
-    var dialogContentProps: js.UndefOr[IDialogContentProps] = js.native
+    var dialogContentProps: js.UndefOr[IDialogContentProps] = js.undefined
     
     /**
       * Whether the dialog is hidden.
       * @defaultvalue true
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dialog can be light dismissed by clicking outside the dialog (on the overlay).
       * @defaultvalue false
       * @deprecated Pass through via `modalProps` instead
       */
-    var isBlocking: js.UndefOr[Boolean] = js.native
+    var isBlocking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the overlay is dark themed.
       * @defaultvalue true
       * @deprecated Pass through via `modalProps` instead
       */
-    var isDarkOverlay: js.UndefOr[Boolean] = js.native
+    var isDarkOverlay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the dialog is displayed.
@@ -103,85 +101,85 @@ object dialogTypesMod {
       * @defaultvalue false
       * @deprecated Use `hidden` instead
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the maximum width for the dialog. It limits the width property to be larger
       * than the value specified in max-width.
       */
-    var maxWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var maxWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Sets the minimum width of the dialog. It limits the width property to be not
       * smaller than the value specified in min-width.
       */
-    var minWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.native
+    var minWidth: js.UndefOr[ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Props to be passed through to Modal
       */
-    var modalProps: js.UndefOr[IModalProps] = js.native
+    var modalProps: js.UndefOr[IModalProps] = js.undefined
     
     /**
       * A callback function for when the Dialog is dismissed from the close button or light dismiss.
       * Can also be specified separately in content and modal.
       */
     var onDismiss: js.UndefOr[
-        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], _]
-      ] = js.native
+        js.Function1[/* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]], js.Any]
+      ] = js.undefined
     
     /**
       * A callback function which is called after the Dialog is dismissed and the animation is complete.
       * @deprecated Pass through via `modalProps` instead
       */
-    var onDismissed: js.UndefOr[js.Function0[_]] = js.native
+    var onDismissed: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /**
       * A callback function for when the Dialog content is mounted on the overlay layer
       * @deprecated Pass through via `modalProps.layerProps` instead
       */
-    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerDidMount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Deprecated at 0.81.2, use `onLayerDidMount` instead.
       * @deprecated Use `onLayerDidMount` instead.
       */
-    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles]] = js.undefined
     
     /**
       * The subtext to display in the dialog.
       * @deprecated Pass through via `dialogContentProps` instead.
       */
-    var subText: js.UndefOr[String] = js.native
+    var subText: js.UndefOr[String] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The title text to display at the top of the dialog.
       * @deprecated Pass through via `dialogContentProps` instead.
       */
-    var title: js.UndefOr[String | Element] = js.native
+    var title: js.UndefOr[String | Element] = js.undefined
     
     /**
       * Other top buttons that will show up next to the close button
       * @deprecated Pass through via `dialogContentProps` instead.
       */
-    var topButtonsProps: js.UndefOr[js.Array[IButtonProps]] = js.native
+    var topButtonsProps: js.UndefOr[js.Array[IButtonProps]] = js.undefined
     
     /**
       * The type of Dialog to display.
       * @defaultvalue DialogType.normal
       * @deprecated Pass through via `dialogContentProps` instead.
       */
-    var `type`: js.UndefOr[DialogType] = js.native
+    var `type`: js.UndefOr[DialogType] = js.undefined
   }
   object IDialogProps {
     
@@ -282,13 +280,13 @@ object dialogTypesMod {
       def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
       
       @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => _): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
       @scala.inline
-      def setOnDismissed(value: () => _): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
@@ -349,48 +347,47 @@ object dialogTypesMod {
     }
   }
   
-  @js.native
   trait IDialogStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional override for container class
       * @deprecated Pass through via `modalProps.className` instead.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Optional override content class
       * @deprecated Pass through via `dialogContentProps` instead as `className`.
       */
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Default max-width for the dialog box.
       * @defaultvalue '340px'
       */
-    var dialogDefaultMaxWidth: js.UndefOr[String | ICSSRule | ICSSPixelUnitRule] = js.native
+    var dialogDefaultMaxWidth: js.UndefOr[String | ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Default min-width for the dialog box.
       * @defaultvalue '288px'
       */
-    var dialogDefaultMinWidth: js.UndefOr[String | ICSSRule | ICSSPixelUnitRule] = js.native
+    var dialogDefaultMinWidth: js.UndefOr[String | ICSSRule | ICSSPixelUnitRule] = js.undefined
     
     /**
       * Whether the dialog is hidden.
       * @defaultvalue false
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDialogStyleProps {
     
@@ -444,15 +441,14 @@ object dialogTypesMod {
     }
   }
   
-  @js.native
   trait IDialogStyles extends StObject {
     
-    var main: IStyle = js.native
+    var main: IStyle
     
     /**
       * Style for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDialogStyles {
     

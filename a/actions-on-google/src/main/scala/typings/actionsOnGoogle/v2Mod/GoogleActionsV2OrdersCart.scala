@@ -3,49 +3,47 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersCart extends StObject {
   
   /**
     * Extension to the cart based on the type of order.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * Optional id for this cart. Included as part of the
     * Cart returned back to the integrator at confirmation time.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The good(s) or service(s) the user is ordering. There must be at least
     * one line item.
     */
-  var lineItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.undefined
   
   /**
     * Merchant for the cart, if different from the caller.
     */
-  var merchant: js.UndefOr[GoogleActionsV2OrdersMerchant] = js.native
+  var merchant: js.UndefOr[GoogleActionsV2OrdersMerchant] = js.undefined
   
   /**
     * Notes about this cart.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Adjustments entered by the user, e.g. gratuity.
     */
-  var otherItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.native
+  var otherItems: js.UndefOr[js.Array[GoogleActionsV2OrdersLineItem]] = js.undefined
   
   /**
     * Optional. Promotional coupons added to the cart. Eligible promotions will
     * be sent back as discount line items in proposed order.
     */
-  var promotions: js.UndefOr[js.Array[GoogleActionsV2OrdersPromotion]] = js.native
+  var promotions: js.UndefOr[js.Array[GoogleActionsV2OrdersPromotion]] = js.undefined
 }
 object GoogleActionsV2OrdersCart {
   
@@ -59,7 +57,7 @@ object GoogleActionsV2OrdersCart {
   implicit class GoogleActionsV2OrdersCartMutableBuilder[Self <: GoogleActionsV2OrdersCart] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)

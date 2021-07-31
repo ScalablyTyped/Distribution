@@ -2,23 +2,21 @@ package typings.mjmlReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderProps extends StObject {
   
-  var border: js.UndefOr[String] = js.native
+  var border: js.UndefOr[String] = js.undefined
   
-  var borderBottom: js.UndefOr[String] = js.native
+  var borderBottom: js.UndefOr[String] = js.undefined
   
-  var borderLeft: js.UndefOr[String] = js.native
+  var borderLeft: js.UndefOr[String] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double] = js.native
+  var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var borderRight: js.UndefOr[String] = js.native
+  var borderRight: js.UndefOr[String] = js.undefined
   
-  var borderTop: js.UndefOr[String] = js.native
+  var borderTop: js.UndefOr[String] = js.undefined
 }
 object BorderProps {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchyStructureUpdate extends StObject {
   
   /**
     * The update for level five.
     */
-  var LevelFive: js.UndefOr[HierarchyLevelUpdate] = js.native
+  var LevelFive: js.UndefOr[HierarchyLevelUpdate] = js.undefined
   
   /**
     * The update for level four.
     */
-  var LevelFour: js.UndefOr[HierarchyLevelUpdate] = js.native
+  var LevelFour: js.UndefOr[HierarchyLevelUpdate] = js.undefined
   
   /**
     * The update for level one.
     */
-  var LevelOne: js.UndefOr[HierarchyLevelUpdate] = js.native
+  var LevelOne: js.UndefOr[HierarchyLevelUpdate] = js.undefined
   
   /**
     * The update for level three.
     */
-  var LevelThree: js.UndefOr[HierarchyLevelUpdate] = js.native
+  var LevelThree: js.UndefOr[HierarchyLevelUpdate] = js.undefined
   
   /**
     * The update for level two.
     */
-  var LevelTwo: js.UndefOr[HierarchyLevelUpdate] = js.native
+  var LevelTwo: js.UndefOr[HierarchyLevelUpdate] = js.undefined
 }
 object HierarchyStructureUpdate {
   

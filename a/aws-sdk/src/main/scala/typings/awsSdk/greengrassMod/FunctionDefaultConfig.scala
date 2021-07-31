@@ -2,13 +2,11 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionDefaultConfig extends StObject {
   
-  var Execution: js.UndefOr[FunctionDefaultExecutionConfig] = js.native
+  var Execution: js.UndefOr[FunctionDefaultExecutionConfig] = js.undefined
 }
 object FunctionDefaultConfig {
   

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to manipulations on items.
   */
-@js.native
-trait BootstrapClientAccordionItemEventArgs extends ASPxClientProcessingModeEventArgs {
+trait BootstrapClientAccordionItemEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets an HTML object that contains the processed Accordion item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets the item object related to the event.
     */
-  var item: BootstrapClientAccordionItem = js.native
+  var item: BootstrapClientAccordionItem
 }
 object BootstrapClientAccordionItemEventArgs {
   

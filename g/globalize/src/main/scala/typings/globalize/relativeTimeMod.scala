@@ -8,19 +8,20 @@ import typings.globalize.globalizeStrings.narrow
 import typings.globalize.globalizeStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relativeTimeMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/relative-time", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/relative-time", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -35,21 +36,20 @@ object relativeTimeMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `relativeTimeMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
     
-    @js.native
     trait RelativeTimeFormatterOptions extends StObject {
       
       /**
         * eg. "short" or "narrow". Or falsy for default long form
         */
-      var form: js.UndefOr[short | narrow] = js.native
+      var form: js.UndefOr[short | narrow] = js.undefined
     }
     object RelativeTimeFormatterOptions {
       

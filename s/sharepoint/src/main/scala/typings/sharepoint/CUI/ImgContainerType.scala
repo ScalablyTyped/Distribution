@@ -2,7 +2,6 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait ImgContainerType extends StObject
 object ImgContainerType extends StObject {
   
   @js.native
-  sealed trait anchor extends ImgContainerType
+  sealed trait anchor
+    extends StObject
+       with ImgContainerType
   
   @js.native
-  sealed trait div extends ImgContainerType
+  sealed trait div
+    extends StObject
+       with ImgContainerType
   
   @js.native
-  sealed trait span extends ImgContainerType
+  sealed trait span
+    extends StObject
+       with ImgContainerType
 }

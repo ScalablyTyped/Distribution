@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google contact group membership.
   */
-@js.native
 trait SchemaContactGroupMembership extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaContactGroupMembership extends StObject {
     * ID can be custom or one of these predefined values:  *  `myContacts` *
     * `starred` *  A numerical ID for user-created groups.
     */
-  var contactGroupId: js.UndefOr[String] = js.native
+  var contactGroupId: js.UndefOr[String] = js.undefined
 }
 object SchemaContactGroupMembership {
   

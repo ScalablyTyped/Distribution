@@ -2,17 +2,15 @@ package typings.nodeRedEditorClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comms extends StObject {
   
-  def connect(): Unit = js.native
+  def connect(): Unit
   
-  def subscribe(topic: String, callback: CommSubscriber): Unit = js.native
+  def subscribe(topic: String, callback: CommSubscriber): Unit
   
-  def unsubscribe(topic: String, callback: CommSubscriber): Unit = js.native
+  def unsubscribe(topic: String, callback: CommSubscriber): Unit
 }
 object Comms {
   

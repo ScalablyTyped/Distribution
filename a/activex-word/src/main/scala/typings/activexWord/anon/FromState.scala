@@ -3,19 +3,17 @@ package typings.activexWord.anon
 import typings.activexWord.Word.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FromState extends StObject {
   
-  val Doc: Document = js.native
+  val Doc: Document
   
-  val FromState: Double = js.native
+  val FromState: Double
   
-  val Handled: Boolean = js.native
+  val Handled: Boolean
   
-  val ToState: Double = js.native
+  val ToState: Double
 }
 object FromState {
   

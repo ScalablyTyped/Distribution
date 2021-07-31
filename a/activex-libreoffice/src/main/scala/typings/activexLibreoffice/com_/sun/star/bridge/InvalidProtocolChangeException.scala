@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Indicates, that a requested property change could not be executed by the remote counterpart.
   * @see XProtocolProperties
   */
-@js.native
-trait InvalidProtocolChangeException extends Exception {
+trait InvalidProtocolChangeException
+  extends StObject
+     with Exception {
   
   /** The first invalid property. */
-  var invalidProperty: ProtocolProperty = js.native
+  var invalidProperty: ProtocolProperty
   
   /** Contains 1, if the property name is unknown to the thrower; or contains 2, if the property's value can't be accepted by the thrower. */
-  var reason: Double = js.native
+  var reason: Double
 }
 object InvalidProtocolChangeException {
   

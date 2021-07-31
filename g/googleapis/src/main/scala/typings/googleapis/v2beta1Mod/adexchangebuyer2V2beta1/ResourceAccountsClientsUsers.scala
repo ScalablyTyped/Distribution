@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients$Users")
@@ -32,7 +31,7 @@ class ResourceAccountsClientsUsers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaClientUser] = js.native
   def get(callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
   def get(params: ParamsResourceAccountsClientsUsersGet): GaxiosPromise[SchemaClientUser] = js.native
   def get(params: ParamsResourceAccountsClientsUsersGet, callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceAccountsClientsUsers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClientUsersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClientUsersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(params: ParamsResourceAccountsClientsUsersList): GaxiosPromise[SchemaListClientUsersResponse] = js.native
   def list(
     params: ParamsResourceAccountsClientsUsersList,
@@ -101,7 +100,7 @@ class ResourceAccountsClientsUsers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaClientUser] = js.native
   def update(callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClientUser] = js.native
   def update(params: ParamsResourceAccountsClientsUsersUpdate): GaxiosPromise[SchemaClientUser] = js.native
   def update(params: ParamsResourceAccountsClientsUsersUpdate, callback: BodyResponseCallback[SchemaClientUser]): Unit = js.native
   def update(

@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.resources
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires umbRequestHelper
   * @requires angularHelper
   */
-@js.native
 trait IAuthResource extends StObject {
   
   /**
@@ -38,7 +36,7 @@ trait IAuthResource extends StObject {
     * @returns {Promise} resourcePromise object
     *
     */
-  def getCurrentUser(): IPromise[IResourcePromise] = js.native
+  def getCurrentUser(): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -58,7 +56,7 @@ trait IAuthResource extends StObject {
     * @returns {Promise} resourcePromise object
     *
     */
-  def getRemainingTimeoutSeconds(): IPromise[IResourcePromise] = js.native
+  def getRemainingTimeoutSeconds(): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -78,7 +76,7 @@ trait IAuthResource extends StObject {
     * @returns {Promise} resourcePromise object
     *
     */
-  def isAuthenticated(): IPromise[IResourcePromise] = js.native
+  def isAuthenticated(): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -100,7 +98,7 @@ trait IAuthResource extends StObject {
     * @returns {Promise} resourcePromise object
     *
     */
-  def performLogin(username: String, password: String): IPromise[IResourcePromise] = js.native
+  def performLogin(username: String, password: String): IPromise[IResourcePromise]
   
   /**
     * @ngdoc method
@@ -120,7 +118,7 @@ trait IAuthResource extends StObject {
     * @returns {Promise} resourcePromise object
     *
     */
-  def performLogout(): IPromise[IResourcePromise] = js.native
+  def performLogout(): IPromise[IResourcePromise]
 }
 object IAuthResource {
   

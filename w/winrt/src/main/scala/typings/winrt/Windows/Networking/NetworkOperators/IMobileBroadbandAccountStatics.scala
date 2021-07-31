@@ -3,15 +3,13 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMobileBroadbandAccountStatics extends StObject {
   
-  var availableNetworkAccountIds: IVectorView[String] = js.native
+  var availableNetworkAccountIds: IVectorView[String]
   
-  def createFromNetworkAccountId(networkAccountId: String): MobileBroadbandAccount = js.native
+  def createFromNetworkAccountId(networkAccountId: String): MobileBroadbandAccount
 }
 object IMobileBroadbandAccountStatics {
   

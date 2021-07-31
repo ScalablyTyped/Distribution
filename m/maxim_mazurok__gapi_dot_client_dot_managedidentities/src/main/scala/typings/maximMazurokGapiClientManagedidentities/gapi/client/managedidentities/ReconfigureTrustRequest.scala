@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReconfigureTrustRequest extends StObject {
   
   /** Required. The target DNS server IP addresses to resolve the remote domain involved in the trust. */
-  var targetDnsIpAddresses: js.UndefOr[js.Array[String]] = js.native
+  var targetDnsIpAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. The fully-qualified target domain name which will be in trust with current domain. */
-  var targetDomainName: js.UndefOr[String] = js.native
+  var targetDomainName: js.UndefOr[String] = js.undefined
 }
 object ReconfigureTrustRequest {
   

@@ -9,12 +9,10 @@ import typings.stripejs.stripejsStrings.source
 import typings.stripejs.stripejsStrings.token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paymentMod {
   
-  @js.native
   trait CanMakePaymentResult extends StObject {
     
     /**
@@ -22,7 +20,7 @@ object paymentMod {
       * NOTE: using the paymentRequestButton Element is automatically cross-browser.
       * If you use this PaymentRequest object to create a paymentRequestButton Element, you don‘t need to check applePay yourself
       */
-    val applePay: Boolean = js.native
+    val applePay: Boolean
   }
   object CanMakePaymentResult {
     
@@ -40,19 +38,18 @@ object paymentMod {
     }
   }
   
-  @js.native
   trait NewShippingAddress extends StObject {
     
     /**
       * The customer's selected ShippingAddress.
       */
-    var shippingAddress: ShippingAddress = js.native
+    var shippingAddress: ShippingAddress
     
     /**
       * Calling this function with an UpdateDetails object merges your updates into the
       * current PaymentRequest object.
       */
-    def updateWith(dataToUpdate: UpdateOptions): Unit = js.native
+    def updateWith(dataToUpdate: UpdateOptions): Unit
   }
   object NewShippingAddress {
     
@@ -73,19 +70,18 @@ object paymentMod {
     }
   }
   
-  @js.native
   trait NewShippingOptions extends StObject {
     
     /**
       * The selected shipping option
       */
-    var shippingOption: ShippingOption = js.native
+    var shippingOption: ShippingOption
     
     /**
       * Calling this function with an UpdateDetails object merges your updates into the
       * current PaymentRequest object.
       */
-    def updateWith(dataToUpdate: UpdateOptions): Unit = js.native
+    def updateWith(dataToUpdate: UpdateOptions): Unit
   }
   object NewShippingOptions {
     
@@ -106,25 +102,24 @@ object paymentMod {
     }
   }
   
-  @js.native
   trait PaymentItem extends StObject {
     
     /**
       * The amount the user has to pay in the given currency
       * @see StripePaymentOptions.currency
       */
-    var amount: Double = js.native
+    var amount: Double
     
     /**
       * A text that should be shown to the user
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * Whether or not the payment should be executed immediately
       * If you might change this amount later (for example, after you have calculated shipping costs), set this to `true`
       */
-    var pending: js.UndefOr[Boolean] = js.native
+    var pending: js.UndefOr[Boolean] = js.undefined
   }
   object PaymentItem {
     
@@ -151,39 +146,40 @@ object paymentMod {
     }
   }
   
-  @js.native
-  trait StripePaymentOptions extends UpdateOptions {
+  trait StripePaymentOptions
+    extends StObject
+       with UpdateOptions {
     
     /**
       * The two letter code representing your country
       * @example 'US'
       */
-    var country: String = js.native
+    var country: String
     
     /**
       * Whether or not the form should ask for the payer's email address
       * @default false
       */
-    var requestPayerEmail: js.UndefOr[Boolean] = js.native
+    var requestPayerEmail: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the form should ask for the payer's name
       * @default false
       */
-    var requestPayerName: js.UndefOr[Boolean] = js.native
+    var requestPayerName: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the form should ask for the payer's phone number
       * @default false
       */
-    var requestPayerPhone: js.UndefOr[Boolean] = js.native
+    var requestPayerPhone: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not a shipping address should be requested
       * NOTE: Setting this to true requires `shippingOptions` to be set with at least one option!
       * @see shippingOptions
       */
-    var requestShipping: js.UndefOr[Boolean] = js.native
+    var requestShipping: js.UndefOr[Boolean] = js.undefined
   }
   object StripePaymentOptions {
     
@@ -271,7 +267,6 @@ object paymentMod {
     def update(options: UpdateOptions): Unit = js.native
   }
   
-  @js.native
   trait StripePaymentResponse extends StObject {
     
     /**
@@ -280,15 +275,15 @@ object paymentMod {
       *
       * @param status - The status that should be shown to the user
       */
-    def complete(status: completeStatus): Unit = js.native
+    def complete(status: completeStatus): Unit
     
     /**
       * The unique name of the payment handler the customer chose to authorize payment
       * @example 'basic-card'
       */
-    val methodName: String = js.native
+    val methodName: String
     
-    val payerEmail: js.UndefOr[String] = js.native
+    val payerEmail: js.UndefOr[String] = js.undefined
     
     /**
       * Information about the payer
@@ -298,29 +293,29 @@ object paymentMod {
       * @see PaymentOptions.requestPayerEmail
       * @see PaymentOptions.requestPayerPhone
       */
-    val payerName: js.UndefOr[String] = js.native
+    val payerName: js.UndefOr[String] = js.undefined
     
-    val payerPhone: js.UndefOr[String] = js.native
+    val payerPhone: js.UndefOr[String] = js.undefined
     
     /**
       * The shipping address the payer selected
       */
-    val shippingAddress: ShippingAddress = js.native
+    val shippingAddress: ShippingAddress
     
     /**
       * The shipping option the payer selected
       */
-    val shippingOption: ShippingOption = js.native
+    val shippingOption: ShippingOption
     
     /**
       * NOTE: Only available when the event type 'source' was used
       */
-    val source: js.UndefOr[js.Any] = js.native
+    val source: js.UndefOr[js.Any] = js.undefined
     
     /**
       * NOTE: Only available when the event type 'token' was used
       */
-    val token: js.UndefOr[js.Any] = js.native
+    val token: js.UndefOr[js.Any] = js.undefined
   }
   object StripePaymentResponse {
     
@@ -382,14 +377,13 @@ object paymentMod {
     }
   }
   
-  @js.native
   trait UpdateOptions extends StObject {
     
     /**
       * The currency in which the customer should be charged
       * @example 'usd'
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * An array of payment item objects
@@ -398,7 +392,7 @@ object paymentMod {
       *
       * @default []
       */
-    var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.native
+    var displayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
     
     /**
       * An array of possible shipping options
@@ -406,13 +400,13 @@ object paymentMod {
       *
       * @default []
       */
-    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.native
+    var shippingOptions: js.UndefOr[js.Array[ShippingOption]] = js.undefined
     
     /**
       * The total amount the customer has to pay
       * NOTE: This object is shown to the customer in the browser‘s payment UI
       */
-    var total: PaymentItem = js.native
+    var total: PaymentItem
   }
   object UpdateOptions {
     

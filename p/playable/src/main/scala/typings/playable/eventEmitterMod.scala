@@ -6,14 +6,15 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.eventEmitterTypesMod.IEventMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventEmitterMod {
   
   @JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Default)
   @js.native
-  class default () extends EventEmitterModule
+  class default ()
+    extends StObject
+       with EventEmitterModule
   object default {
     
     @JSImport("playable/dist/src/modules/event-emitter/event-emitter", JSImport.Default)
@@ -30,7 +31,8 @@ object eventEmitterMod {
   
   @js.native
   trait EventEmitterModule
-    extends EventEmitter[String | js.Symbol, js.Any]
+    extends StObject
+       with EventEmitter[String | js.Symbol, js.Any]
        with IEventEmitter {
     
     def bindEvents(eventsMap: js.Array[IEventMap], defaultFnContext: js.Object): js.Function0[Unit] = js.native
@@ -50,7 +52,7 @@ object eventEmitterMod {
       *   // Will be executed only one time
       * });
       */
-    def once(event: String, fn: ListenerFn[js.Array[_]]): this.type = js.native
-    def once(event: String, fn: ListenerFn[js.Array[_]], context: js.Any): this.type = js.native
+    def once(event: String, fn: ListenerFn[js.Array[js.Any]]): this.type = js.native
+    def once(event: String, fn: ListenerFn[js.Array[js.Any]], context: js.Any): this.type = js.native
   }
 }

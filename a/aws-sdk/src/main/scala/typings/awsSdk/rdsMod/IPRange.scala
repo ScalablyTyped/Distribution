@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPRange extends StObject {
   
   /**
     * Specifies the IP range.
     */
-  var CIDRIP: js.UndefOr[String] = js.native
+  var CIDRIP: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of the IP range. Status can be "authorizing", "authorized", "revoking", and "revoked".
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object IPRange {
   

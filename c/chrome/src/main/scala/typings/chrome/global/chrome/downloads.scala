@@ -10,7 +10,6 @@ import typings.chrome.chrome.downloads.DownloadQuery
 import typings.chrome.chrome.downloads.GetFileIconOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -27,42 +26,33 @@ object downloads {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.downloads.acceptDanger")
-  @js.native
-  def acceptDanger(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def acceptDanger(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("acceptDanger")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.cancel")
-  @js.native
-  def cancel(downloadId: Double): Unit = js.native
-  @JSGlobal("chrome.downloads.cancel")
-  @js.native
-  def cancel(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def cancel(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def cancel(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.download")
-  @js.native
-  def download(options: DownloadOptions): Unit = js.native
-  @JSGlobal("chrome.downloads.download")
-  @js.native
-  def download(options: DownloadOptions, callback: js.Function1[/* downloadId */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def download(options: DownloadOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def download(options: DownloadOptions, callback: js.Function1[/* downloadId */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.drag")
-  @js.native
-  def drag(downloadId: Double): Unit = js.native
+  @scala.inline
+  def drag(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.erase")
-  @js.native
-  def erase(query: DownloadQuery, callback: js.Function1[/* erasedIds */ js.Array[Double], Unit]): Unit = js.native
+  @scala.inline
+  def erase(query: DownloadQuery, callback: js.Function1[/* erasedIds */ js.Array[Double], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("erase")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.getFileIcon")
-  @js.native
-  def getFileIcon(downloadId: Double, callback: js.Function1[/* iconURL */ String, Unit]): Unit = js.native
-  @JSGlobal("chrome.downloads.getFileIcon")
-  @js.native
+  @scala.inline
+  def getFileIcon(downloadId: Double, callback: js.Function1[/* iconURL */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileIcon")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def getFileIcon(
     downloadId: Double,
     options: GetFileIconOptions,
     callback: js.Function1[/* iconURL */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileIcon")(downloadId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("chrome.downloads.onChanged")
   @js.native
@@ -88,44 +78,33 @@ object downloads {
   @scala.inline
   def onErased_=(x: DownloadErasedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onErased")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.downloads.open")
-  @js.native
-  def open(downloadId: Double): Unit = js.native
+  @scala.inline
+  def open(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.pause")
-  @js.native
-  def pause(downloadId: Double): Unit = js.native
-  @JSGlobal("chrome.downloads.pause")
-  @js.native
-  def pause(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def pause(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def pause(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("pause")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.removeFile")
-  @js.native
-  def removeFile(downloadId: Double): Unit = js.native
-  @JSGlobal("chrome.downloads.removeFile")
-  @js.native
-  def removeFile(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def removeFile(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def removeFile(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFile")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.resume")
-  @js.native
-  def resume(downloadId: Double): Unit = js.native
-  @JSGlobal("chrome.downloads.resume")
-  @js.native
-  def resume(downloadId: Double, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def resume(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def resume(downloadId: Double, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resume")(downloadId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.search")
-  @js.native
-  def search(query: DownloadQuery, callback: js.Function1[/* results */ js.Array[DownloadItem], Unit]): Unit = js.native
+  @scala.inline
+  def search(query: DownloadQuery, callback: js.Function1[/* results */ js.Array[DownloadItem], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.setShelfEnabled")
-  @js.native
-  def setShelfEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setShelfEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShelfEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.show")
-  @js.native
-  def show(downloadId: Double): Unit = js.native
+  @scala.inline
+  def show(downloadId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(downloadId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.downloads.showDefaultFolder")
-  @js.native
-  def showDefaultFolder(): Unit = js.native
+  @scala.inline
+  def showDefaultFolder(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showDefaultFolder")().asInstanceOf[Unit]
 }

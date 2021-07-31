@@ -12,7 +12,7 @@ JSON in JavaScript
 | Keywords           | cyclic, json, cycle, parsing |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 76650 |
+| # downloads        | 33313 |
 | # stars            | 0 |
 
 ## Links

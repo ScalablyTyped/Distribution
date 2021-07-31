@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLoggingOptionsResponse extends StObject {
   
   /**
     * The current settings of the AWS IoT Analytics logging options.
     */
-  var loggingOptions: js.UndefOr[LoggingOptions] = js.native
+  var loggingOptions: js.UndefOr[LoggingOptions] = js.undefined
 }
 object DescribeLoggingOptionsResponse {
   

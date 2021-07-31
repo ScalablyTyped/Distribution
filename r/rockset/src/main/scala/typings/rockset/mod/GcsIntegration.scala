@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GcsIntegration extends StObject {
   
   // credentials for an AWS key integration
-  var gcp_service_account: js.UndefOr[GcpServiceAccount] = js.native
+  var gcp_service_account: js.UndefOr[GcpServiceAccount] = js.undefined
 }
 object GcsIntegration {
   

@@ -11,8 +11,8 @@ Collision-resistant ids optimized for horizontal scaling and performance. For no
 | Full name          | cuid |
 | Keywords           | guid, id, uid, unique id, uuid |
 | # releases         | 4 |
-| # dependents       | 611 |
-| # downloads        | 18010440 |
+| # dependents       | 668 |
+| # downloads        | 23108758 |
 | # stars            | 47 |
 
 ## Links

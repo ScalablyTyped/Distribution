@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramEditableRotate extends StObject {
   
-  var fill: js.UndefOr[DiagramEditableRotateFill] = js.native
+  var fill: js.UndefOr[DiagramEditableRotateFill] = js.undefined
   
-  var stroke: js.UndefOr[DiagramEditableRotateStroke] = js.native
+  var stroke: js.UndefOr[DiagramEditableRotateStroke] = js.undefined
 }
 object DiagramEditableRotate {
   

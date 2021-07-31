@@ -3,21 +3,21 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notification {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] A simple way to show a notification
       * @param config Object An object which contains the following config options:
       */
-    var show: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var show: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Vibrates the device  */
-    var vibrate: js.UndefOr[js.Function0[Unit]] = js.native
+    var vibrate: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -44,14 +44,15 @@ object notification {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract {
+  trait ICordova
+    extends StObject
+       with IAbstract {
     
     /** [Method] Vibrates the device
       * @param time Object
       */
     @JSName("vibrate")
-    var vibrate_ICordova: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.native
+    var vibrate_ICordova: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -72,14 +73,15 @@ object notification {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract {
+  trait IPhoneGap
+    extends StObject
+       with IAbstract {
     
     /** [Method] Vibrates the device
       * @param time Object
       */
     @JSName("vibrate")
-    var vibrate_IPhoneGap: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.native
+    var vibrate_IPhoneGap: js.UndefOr[js.Function1[/* time */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -100,12 +102,13 @@ object notification {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract {
+  trait ISencha
+    extends StObject
+       with IAbstract {
     
     /** [Method] A simple way to show a notification  */
     @JSName("show")
-    var show_ISencha: js.UndefOr[js.Function0[Unit]] = js.native
+    var show_ISencha: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISencha {
     
@@ -126,12 +129,13 @@ object notification {
     }
   }
   
-  @js.native
-  trait ISimulator extends IAbstract {
+  trait ISimulator
+    extends StObject
+       with IAbstract {
     
     /** [Method] A simple way to show a notification  */
     @JSName("show")
-    var show_ISimulator: js.UndefOr[js.Function0[Unit]] = js.native
+    var show_ISimulator: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISimulator {
     

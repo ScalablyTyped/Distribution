@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.bucks.Bucks.BucksStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -18,7 +17,8 @@ object global {
       * Create bucks object.
       */
     class ^ ()
-      extends typings.bucks.Bucks.Bucks
+      extends StObject
+         with typings.bucks.Bucks.Bucks
     
     @JSGlobal("Bucks")
     @js.native

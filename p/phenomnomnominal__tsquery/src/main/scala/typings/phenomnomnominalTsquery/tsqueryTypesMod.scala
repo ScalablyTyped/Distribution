@@ -14,7 +14,6 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SyntaxKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsqueryTypesMod {
@@ -28,9 +27,9 @@ object tsqueryTypesMod {
     def apply[T /* <: Node */](ast: Node, selector: String, options: TSQueryOptions): js.Array[T] = js.native
     
     def ast(source: String): SourceFile = js.native
-    def ast(source: String, fileName: js.UndefOr[scala.Nothing], scriptKind: ScriptKind): SourceFile = js.native
     def ast(source: String, fileName: String): SourceFile = js.native
     def ast(source: String, fileName: String, scriptKind: ScriptKind): SourceFile = js.native
+    def ast(source: String, fileName: Unit, scriptKind: ScriptKind): SourceFile = js.native
     
     def map(ast: SourceFile, selector: String, nodeTransformer: TSQueryNodeTransformer): SourceFile = js.native
     def map(
@@ -100,10 +99,9 @@ object tsqueryTypesMod {
   
   type TSQueryNodeTransformer = js.Function1[/* node */ Node, js.UndefOr[Node | Null]]
   
-  @js.native
   trait TSQueryOptions extends StObject {
     
-    var visitAllChildren: js.UndefOr[Boolean] = js.native
+    var visitAllChildren: js.UndefOr[Boolean] = js.undefined
   }
   object TSQueryOptions {
     
@@ -124,16 +122,15 @@ object tsqueryTypesMod {
     }
   }
   
-  @js.native
   trait TSQueryProperties extends StObject {
     
-    var kindName: String = js.native
+    var kindName: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object TSQueryProperties {
     
@@ -166,29 +163,29 @@ object tsqueryTypesMod {
     }
   }
   
-  @js.native
   trait TSQuerySelectorNode
-    extends /* key */ StringDictionary[
+    extends StObject
+       with /* key */ StringDictionary[
           TSQuerySelectorNode | js.Array[TSQuerySelectorNode] | RegExp | Boolean | Double | String
         ] {
     
-    var index: TSQuerySelectorNode = js.native
+    var index: TSQuerySelectorNode
     
-    var left: TSQuerySelectorNode = js.native
+    var left: TSQuerySelectorNode
     
-    var name: String = js.native
+    var name: String
     
-    var operator: Equalssign | ExclamationmarkEqualssign | LessthansignEqualssign | Lessthansign | GreaterthansignEqualssign | Greaterthansign = js.native
+    var operator: Equalssign | ExclamationmarkEqualssign | LessthansignEqualssign | Lessthansign | GreaterthansignEqualssign | Greaterthansign
     
-    var right: TSQuerySelectorNode = js.native
+    var right: TSQuerySelectorNode
     
-    var selectors: js.Array[TSQuerySelectorNode] = js.native
+    var selectors: js.Array[TSQuerySelectorNode]
     
-    var subject: Boolean = js.native
+    var subject: Boolean
     
-    var `type`: TSQueryAttributeOperatorType = js.native
+    var `type`: TSQueryAttributeOperatorType
     
-    var value: TSQuerySelectorNode | RegExp | Double | String = js.native
+    var value: TSQuerySelectorNode | RegExp | Double | String
   }
   object TSQuerySelectorNode {
     

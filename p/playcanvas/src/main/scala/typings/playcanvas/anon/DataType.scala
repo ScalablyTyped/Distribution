@@ -3,27 +3,25 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.ScopeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataType extends StObject {
   
-  var dataType: Double = js.native
+  var dataType: Double
   
-  var name: String = js.native
+  var name: String
   
-  var normalize: Boolean = js.native
+  var normalize: Boolean
   
-  var numComponents: Double = js.native
+  var numComponents: Double
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var scopeId: ScopeId = js.native
+  var scopeId: ScopeId
   
-  var size: Double = js.native
+  var size: Double
   
-  var stride: Double = js.native
+  var stride: Double
 }
 object DataType {
   

@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new rectangle placed in a two-dimensional coordinate system.
   * @see https://docs.scriptable.app/rect/#-new-rect
   */
-@js.native
 trait Rect extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait Rect extends StObject {
     * The height of the rectangle.
     * @see https://docs.scriptable.app/rect/#height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * _Maximum X value._
@@ -28,7 +26,7 @@ trait Rect extends StObject {
     * The greatest x-coordinate in the rectangle.
     * @see https://docs.scriptable.app/rect/#maxx
     */
-  var maxX: Double = js.native
+  var maxX: Double
   
   /**
     * _Maximum Y value._
@@ -36,7 +34,7 @@ trait Rect extends StObject {
     * The greatest y-coordinate in the rectangle.
     * @see https://docs.scriptable.app/rect/#maxy
     */
-  var maxY: Double = js.native
+  var maxY: Double
   
   /**
     * _Minimum X value._
@@ -44,7 +42,7 @@ trait Rect extends StObject {
     * The smallest x-coordinate in the rectangle.
     * @see https://docs.scriptable.app/rect/#minx
     */
-  var minX: Double = js.native
+  var minX: Double
   
   /**
     * _Minimum Y value._
@@ -52,7 +50,7 @@ trait Rect extends StObject {
     * The smallest y-coordinate in the rectangle.
     * @see https://docs.scriptable.app/rect/#miny
     */
-  var minY: Double = js.native
+  var minY: Double
   
   /**
     * _Point that specifies the rectangles origin._
@@ -60,7 +58,7 @@ trait Rect extends StObject {
     * The x- and y-coordinate that specifies the rectangles origin as a Point structure.
     * @see https://docs.scriptable.app/rect/#origin
     */
-  var origin: Point = js.native
+  var origin: Point
   
   /**
     * _Size of the rectangle._
@@ -68,7 +66,7 @@ trait Rect extends StObject {
     * The width and height of the rectangle as a Size structure.
     * @see https://docs.scriptable.app/rect/#size
     */
-  var size: Size = js.native
+  var size: Size
   
   /**
     * _Width of rectangle._
@@ -76,7 +74,7 @@ trait Rect extends StObject {
     * The width of the rectangle.
     * @see https://docs.scriptable.app/rect/#width
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * _X value._
@@ -84,7 +82,7 @@ trait Rect extends StObject {
     * The x-coordinate of the rectangle.
     * @see https://docs.scriptable.app/rect/#x
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * _Y value._
@@ -92,7 +90,7 @@ trait Rect extends StObject {
     * The y-coordinate of the rectangle.
     * @see https://docs.scriptable.app/rect/#y
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Rect {
   

@@ -4,16 +4,14 @@ import typings.plotlyJs.mod.PlotDatum
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.PlotMouseEvent> */
-@js.native
 trait ReadonlyPlotMouseEvent extends StObject {
   
-  val event: MouseEvent = js.native
+  val event: MouseEvent
   
-  val points: js.Array[PlotDatum] = js.native
+  val points: js.Array[PlotDatum]
 }
 object ReadonlyPlotMouseEvent {
   

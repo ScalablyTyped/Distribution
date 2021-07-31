@@ -2,41 +2,39 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBSubnetGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the DB subnet group.
     */
-  var DBSubnetGroupArn: js.UndefOr[String] = js.native
+  var DBSubnetGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the description of the subnet group.
     */
-  var DBSubnetGroupDescription: js.UndefOr[String] = js.native
+  var DBSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the subnet group.
     */
-  var DBSubnetGroupName: js.UndefOr[String] = js.native
+  var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the status of the subnet group.
     */
-  var SubnetGroupStatus: js.UndefOr[String] = js.native
+  var SubnetGroupStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Detailed information about one or more subnets within a subnet group.
     */
-  var Subnets: js.UndefOr[SubnetList] = js.native
+  var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
     * Provides the virtual private cloud (VPC) ID of the subnet group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object DBSubnetGroup {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificatesRequest extends StObject {
   
   /**
     * The name for the certificate for which to return information. When omitted, the response includes all of your certificates in the AWS Region where the request is made.
     */
-  var certificateName: js.UndefOr[CertificateName] = js.native
+  var certificateName: js.UndefOr[CertificateName] = js.undefined
   
   /**
     * The status of the certificates for which to return information. For example, specify ISSUED to return only certificates with an ISSUED status. When omitted, the response includes all of your certificates in the AWS Region where the request is made, regardless of their current status.
     */
-  var certificateStatuses: js.UndefOr[CertificateStatusList] = js.native
+  var certificateStatuses: js.UndefOr[CertificateStatusList] = js.undefined
   
   /**
     * Indicates whether to include detailed information about the certificates in the response. When omitted, the response includes only the certificate names, Amazon Resource Names (ARNs), domain names, and tags.
     */
-  var includeCertificateDetails: js.UndefOr[IncludeCertificateDetails] = js.native
+  var includeCertificateDetails: js.UndefOr[IncludeCertificateDetails] = js.undefined
 }
 object GetCertificatesRequest {
   

@@ -11,8 +11,8 @@ A simple JSON file store
 | Full name          | jfs |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 474152 |
+| # dependents       | 40 |
+| # downloads        | 447205 |
 | # stars            | 1 |
 
 ## Links

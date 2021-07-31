@@ -6,73 +6,71 @@ import typings.reactAliceCarousel.typesMod.AutoplayDirection
 import typings.reactAliceCarousel.typesMod.ControlsStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveIndex extends StObject {
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var animationDuration: Double = js.native
+  var animationDuration: Double
   
-  var animationEasingFunction: String = js.native
+  var animationEasingFunction: String
   
-  var animationType: AnimationType = js.native
+  var animationType: AnimationType
   
-  var autoHeight: Boolean = js.native
+  var autoHeight: Boolean
   
-  var autoPlay: Boolean = js.native
+  var autoPlay: Boolean
   
-  var autoPlayControls: Boolean = js.native
+  var autoPlayControls: Boolean
   
-  var autoPlayDirection: AutoplayDirection = js.native
+  var autoPlayDirection: AutoplayDirection
   
-  var autoPlayInterval: Double = js.native
+  var autoPlayInterval: Double
   
-  var autoPlayStrategy: AutoPlayStrategy = js.native
+  var autoPlayStrategy: AutoPlayStrategy
   
-  var autoWidth: Boolean = js.native
+  var autoWidth: Boolean
   
-  var children: js.UndefOr[scala.Nothing] = js.native
+  var children: Unit
   
-  var controlsStrategy: ControlsStrategy = js.native
+  var controlsStrategy: ControlsStrategy
   
-  var disableButtonsControls: Boolean = js.native
+  var disableButtonsControls: Boolean
   
-  var disableDotsControls: Boolean = js.native
+  var disableDotsControls: Boolean
   
-  var disableSlideInfo: Boolean = js.native
+  var disableSlideInfo: Boolean
   
-  var infinite: Boolean = js.native
+  var infinite: Boolean
   
-  var items: js.UndefOr[scala.Nothing] = js.native
+  var items: Unit
   
-  var mouseTracking: Boolean = js.native
+  var mouseTracking: Boolean
   
-  def onInitialized(): js.UndefOr[scala.Nothing] = js.native
+  def onInitialized(): Unit
   
-  var onResizeEvent: js.UndefOr[scala.Nothing] = js.native
+  var onResizeEvent: Unit
   
-  def onResized(): js.UndefOr[scala.Nothing] = js.native
+  def onResized(): Unit
   
-  def onSlideChange(): js.UndefOr[scala.Nothing] = js.native
+  def onSlideChange(): Unit
   
-  def onSlideChanged(): js.UndefOr[scala.Nothing] = js.native
+  def onSlideChanged(): Unit
   
-  var paddingLeft: Double = js.native
+  var paddingLeft: Double
   
-  var paddingRight: Double = js.native
+  var paddingRight: Double
   
-  var responsive: js.UndefOr[scala.Nothing] = js.native
+  var responsive: Unit
   
-  var swipeDelta: Double = js.native
+  var swipeDelta: Double
   
-  var swipeExtraPadding: Double = js.native
+  var swipeExtraPadding: Double
   
-  var touchMoveDefaultEvents: Boolean = js.native
+  var touchMoveDefaultEvents: Boolean
   
-  var touchTracking: Boolean = js.native
+  var touchTracking: Boolean
 }
 object ActiveIndex {
   
@@ -89,24 +87,28 @@ object ActiveIndex {
     autoPlayInterval: Double,
     autoPlayStrategy: AutoPlayStrategy,
     autoWidth: Boolean,
+    children: Unit,
     controlsStrategy: ControlsStrategy,
     disableButtonsControls: Boolean,
     disableDotsControls: Boolean,
     disableSlideInfo: Boolean,
     infinite: Boolean,
+    items: Unit,
     mouseTracking: Boolean,
-    onInitialized: () => js.UndefOr[scala.Nothing],
-    onResized: () => js.UndefOr[scala.Nothing],
-    onSlideChange: () => js.UndefOr[scala.Nothing],
-    onSlideChanged: () => js.UndefOr[scala.Nothing],
+    onInitialized: () => Unit,
+    onResizeEvent: Unit,
+    onResized: () => Unit,
+    onSlideChange: () => Unit,
+    onSlideChanged: () => Unit,
     paddingLeft: Double,
     paddingRight: Double,
+    responsive: Unit,
     swipeDelta: Double,
     swipeExtraPadding: Double,
     touchMoveDefaultEvents: Boolean,
     touchTracking: Boolean
   ): ActiveIndex = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], animationDuration = animationDuration.asInstanceOf[js.Any], animationEasingFunction = animationEasingFunction.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoPlay = autoPlay.asInstanceOf[js.Any], autoPlayControls = autoPlayControls.asInstanceOf[js.Any], autoPlayDirection = autoPlayDirection.asInstanceOf[js.Any], autoPlayInterval = autoPlayInterval.asInstanceOf[js.Any], autoPlayStrategy = autoPlayStrategy.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], controlsStrategy = controlsStrategy.asInstanceOf[js.Any], disableButtonsControls = disableButtonsControls.asInstanceOf[js.Any], disableDotsControls = disableDotsControls.asInstanceOf[js.Any], disableSlideInfo = disableSlideInfo.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], mouseTracking = mouseTracking.asInstanceOf[js.Any], onInitialized = js.Any.fromFunction0(onInitialized), onResized = js.Any.fromFunction0(onResized), onSlideChange = js.Any.fromFunction0(onSlideChange), onSlideChanged = js.Any.fromFunction0(onSlideChanged), paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], swipeDelta = swipeDelta.asInstanceOf[js.Any], swipeExtraPadding = swipeExtraPadding.asInstanceOf[js.Any], touchMoveDefaultEvents = touchMoveDefaultEvents.asInstanceOf[js.Any], touchTracking = touchTracking.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], animationDuration = animationDuration.asInstanceOf[js.Any], animationEasingFunction = animationEasingFunction.asInstanceOf[js.Any], animationType = animationType.asInstanceOf[js.Any], autoHeight = autoHeight.asInstanceOf[js.Any], autoPlay = autoPlay.asInstanceOf[js.Any], autoPlayControls = autoPlayControls.asInstanceOf[js.Any], autoPlayDirection = autoPlayDirection.asInstanceOf[js.Any], autoPlayInterval = autoPlayInterval.asInstanceOf[js.Any], autoPlayStrategy = autoPlayStrategy.asInstanceOf[js.Any], autoWidth = autoWidth.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], controlsStrategy = controlsStrategy.asInstanceOf[js.Any], disableButtonsControls = disableButtonsControls.asInstanceOf[js.Any], disableDotsControls = disableDotsControls.asInstanceOf[js.Any], disableSlideInfo = disableSlideInfo.asInstanceOf[js.Any], infinite = infinite.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], mouseTracking = mouseTracking.asInstanceOf[js.Any], onInitialized = js.Any.fromFunction0(onInitialized), onResizeEvent = onResizeEvent.asInstanceOf[js.Any], onResized = js.Any.fromFunction0(onResized), onSlideChange = js.Any.fromFunction0(onSlideChange), onSlideChanged = js.Any.fromFunction0(onSlideChanged), paddingLeft = paddingLeft.asInstanceOf[js.Any], paddingRight = paddingRight.asInstanceOf[js.Any], responsive = responsive.asInstanceOf[js.Any], swipeDelta = swipeDelta.asInstanceOf[js.Any], swipeExtraPadding = swipeExtraPadding.asInstanceOf[js.Any], touchMoveDefaultEvents = touchMoveDefaultEvents.asInstanceOf[js.Any], touchTracking = touchTracking.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveIndex]
   }
   
@@ -147,6 +149,9 @@ object ActiveIndex {
     def setAutoWidth(value: Boolean): Self = StObject.set(x, "autoWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setControlsStrategy(value: ControlsStrategy): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -162,25 +167,34 @@ object ActiveIndex {
     def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setItems(value: Unit): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setMouseTracking(value: Boolean): Self = StObject.set(x, "mouseTracking", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnInitialized(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onInitialized", js.Any.fromFunction0(value))
+    def setOnInitialized(value: () => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnResized(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onResized", js.Any.fromFunction0(value))
+    def setOnResizeEvent(value: Unit): Self = StObject.set(x, "onResizeEvent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnSlideChange(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction0(value))
+    def setOnResized(value: () => Unit): Self = StObject.set(x, "onResized", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setOnSlideChanged(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "onSlideChanged", js.Any.fromFunction0(value))
+    def setOnSlideChange(value: () => Unit): Self = StObject.set(x, "onSlideChange", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setOnSlideChanged(value: () => Unit): Self = StObject.set(x, "onSlideChanged", js.Any.fromFunction0(value))
     
     @scala.inline
     def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResponsive(value: Unit): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSwipeDelta(value: Double): Self = StObject.set(x, "swipeDelta", value.asInstanceOf[js.Any])

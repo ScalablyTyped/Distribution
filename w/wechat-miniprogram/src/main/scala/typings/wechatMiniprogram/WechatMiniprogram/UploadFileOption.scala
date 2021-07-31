@@ -2,40 +2,38 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[UploadFileCompleteCallback] = js.native
+  var complete: js.UndefOr[UploadFileCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[UploadFileFailCallback] = js.native
+  var fail: js.UndefOr[UploadFileFailCallback] = js.undefined
   
   /** 要上传文件资源的路径 (本地路径) */
-  var filePath: String = js.native
+  var filePath: String
   
   /** HTTP 请求中其他额外的 form data */
-  var formData: js.UndefOr[IAnyObject] = js.native
+  var formData: js.UndefOr[IAnyObject] = js.undefined
   
   /** HTTP 请求 Header，Header 中不能设置 Referer */
-  var header: js.UndefOr[IAnyObject] = js.native
+  var header: js.UndefOr[IAnyObject] = js.undefined
   
   /** 文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容 */
-  var name: String = js.native
+  var name: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[UploadFileSuccessCallback] = js.native
+  var success: js.UndefOr[UploadFileSuccessCallback] = js.undefined
   
   /** 超时时间，单位为毫秒
     *
     * 最低基础库： `2.10.0` */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** 开发者服务器地址 */
-  var url: String = js.native
+  var url: String
 }
 object UploadFileOption {
   

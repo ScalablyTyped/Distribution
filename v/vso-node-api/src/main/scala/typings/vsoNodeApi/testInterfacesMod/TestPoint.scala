@@ -4,55 +4,53 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestPoint extends StObject {
   
-  var assignedTo: IdentityRef = js.native
+  var assignedTo: IdentityRef
   
-  var automated: Boolean = js.native
+  var automated: Boolean
   
-  var comment: String = js.native
+  var comment: String
   
-  var configuration: ShallowReference = js.native
+  var configuration: ShallowReference
   
-  var failureType: String = js.native
+  var failureType: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var lastResolutionStateId: Double = js.native
+  var lastResolutionStateId: Double
   
-  var lastResult: ShallowReference = js.native
+  var lastResult: ShallowReference
   
-  var lastResultDetails: LastResultDetails = js.native
+  var lastResultDetails: LastResultDetails
   
-  var lastResultState: String = js.native
+  var lastResultState: String
   
-  var lastRunBuildNumber: String = js.native
+  var lastRunBuildNumber: String
   
-  var lastTestRun: ShallowReference = js.native
+  var lastTestRun: ShallowReference
   
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var state: String = js.native
+  var state: String
   
-  var suite: ShallowReference = js.native
+  var suite: ShallowReference
   
-  var testCase: WorkItemReference = js.native
+  var testCase: WorkItemReference
   
-  var testPlan: ShallowReference = js.native
+  var testPlan: ShallowReference
   
-  var url: String = js.native
+  var url: String
   
-  var workItemProperties: js.Array[_] = js.native
+  var workItemProperties: js.Array[js.Any]
 }
 object TestPoint {
   
@@ -79,7 +77,7 @@ object TestPoint {
     testCase: WorkItemReference,
     testPlan: ShallowReference,
     url: String,
-    workItemProperties: js.Array[_]
+    workItemProperties: js.Array[js.Any]
   ): TestPoint = {
     val __obj = js.Dynamic.literal(assignedTo = assignedTo.asInstanceOf[js.Any], automated = automated.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], failureType = failureType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lastResolutionStateId = lastResolutionStateId.asInstanceOf[js.Any], lastResult = lastResult.asInstanceOf[js.Any], lastResultDetails = lastResultDetails.asInstanceOf[js.Any], lastResultState = lastResultState.asInstanceOf[js.Any], lastRunBuildNumber = lastRunBuildNumber.asInstanceOf[js.Any], lastTestRun = lastTestRun.asInstanceOf[js.Any], lastUpdatedBy = lastUpdatedBy.asInstanceOf[js.Any], lastUpdatedDate = lastUpdatedDate.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any], testCase = testCase.asInstanceOf[js.Any], testPlan = testPlan.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], workItemProperties = workItemProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestPoint]
@@ -152,7 +150,7 @@ object TestPoint {
     def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkItemProperties(value: js.Array[_]): Self = StObject.set(x, "workItemProperties", value.asInstanceOf[js.Any])
+    def setWorkItemProperties(value: js.Array[js.Any]): Self = StObject.set(x, "workItemProperties", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWorkItemPropertiesVarargs(value: js.Any*): Self = StObject.set(x, "workItemProperties", js.Array(value :_*))

@@ -11,8 +11,8 @@ A requirable version of Date.now()
 | Full name          | date-now |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 41 |
-| # downloads        | 183141110 |
+| # dependents       | 44 |
+| # downloads        | 131391741 |
 | # stars            | 3 |
 
 ## Links

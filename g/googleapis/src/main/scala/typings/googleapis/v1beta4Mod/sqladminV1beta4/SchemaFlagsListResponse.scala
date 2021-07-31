@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Flags list response.
   */
-@js.native
 trait SchemaFlagsListResponse extends StObject {
   
   /**
     * List of flags.
     */
-  var items: js.UndefOr[js.Array[SchemaFlag]] = js.native
+  var items: js.UndefOr[js.Array[SchemaFlag]] = js.undefined
   
   /**
     * This is always sql#flagsList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaFlagsListResponse {
   

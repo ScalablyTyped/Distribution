@@ -28,17 +28,15 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hide extends StObject {
     
-    var hide: Double = js.native
+    var hide: Double
     
-    var show: Double = js.native
+    var show: Double
   }
   object Hide {
     
@@ -60,20 +58,19 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/carousel.Carousel.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var pause: js.UndefOr[String | Boolean] = js.native
+    var pause: js.UndefOr[String | Boolean] = js.undefined
     
-    var slide: js.UndefOr[String | Boolean] = js.native
+    var slide: js.UndefOr[String | Boolean] = js.undefined
     
-    var touch: js.UndefOr[Boolean] = js.native
+    var touch: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     
@@ -125,42 +122,41 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/popover.Popover.Options> */
-  @js.native
   trait PartialOptionsAnimation extends StObject {
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var boundary: js.UndefOr[viewport | window | scrollParent | Element] = js.native
+    var boundary: js.UndefOr[viewport | window | scrollParent | Element] = js.undefined
     
-    var container: js.UndefOr[String | Element | `false`] = js.native
+    var container: js.UndefOr[String | Element | `false`] = js.undefined
     
-    var content: js.UndefOr[String | Element | js.Function0[Unit]] = js.native
+    var content: js.UndefOr[String | Element | js.Function0[Unit]] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var fallbackPlacement: js.UndefOr[Behavior | js.Array[Position]] = js.native
+    var fallbackPlacement: js.UndefOr[Behavior | js.Array[Position]] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double | String] = js.native
+    var offset: js.UndefOr[Double | String] = js.undefined
     
-    var placement: js.UndefOr[auto | top | bottom | left | right | js.Function0[Unit]] = js.native
+    var placement: js.UndefOr[auto | top | bottom | left | right | js.Function0[Unit]] = js.undefined
     
-    var popperConfig: js.UndefOr[PopperOptions | Null] = js.native
+    var popperConfig: js.UndefOr[PopperOptions | Null] = js.undefined
     
-    var sanitize: js.UndefOr[Boolean] = js.native
+    var sanitize: js.UndefOr[Boolean] = js.undefined
     
-    var sanitizeFn: js.UndefOr[js.Function0[Unit | Null]] = js.native
+    var sanitizeFn: js.UndefOr[js.Function0[Unit | Null]] = js.undefined
     
-    var selector: js.UndefOr[String | `false`] = js.native
+    var selector: js.UndefOr[String | `false`] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String | Element | js.Function0[Unit]] = js.native
+    var title: js.UndefOr[String | Element | js.Function0[Unit]] = js.undefined
     
-    var trigger: js.UndefOr[click | hover | focus | manual] = js.native
+    var trigger: js.UndefOr[click | hover | focus | manual] = js.undefined
     
-    var whiteList: js.UndefOr[RecordkeyofHTMLElementTag] = js.native
+    var whiteList: js.UndefOr[RecordkeyofHTMLElementTag] = js.undefined
   }
   object PartialOptionsAnimation {
     
@@ -293,16 +289,15 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/modal.Modal.Options> */
-  @js.native
   trait PartialOptionsBackdrop extends StObject {
     
-    var backdrop: js.UndefOr[static | Boolean] = js.native
+    var backdrop: js.UndefOr[static | Boolean] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
-    var show: js.UndefOr[Boolean] = js.native
+    var show: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionsBackdrop {
     
@@ -342,20 +337,19 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/dropdown.Dropdown.Options> */
-  @js.native
   trait PartialOptionsBoundary extends StObject {
     
-    var boundary: js.UndefOr[Boundary | Element] = js.native
+    var boundary: js.UndefOr[Boundary | Element] = js.undefined
     
-    var display: js.UndefOr[dynamic | static] = js.native
+    var display: js.UndefOr[dynamic | static] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var popperConfig: js.UndefOr[PopperOptions | Null] = js.native
+    var popperConfig: js.UndefOr[PopperOptions | Null] = js.undefined
     
-    var reference: js.UndefOr[toggle | parent | Element] = js.native
+    var reference: js.UndefOr[toggle | parent | Element] = js.undefined
   }
   object PartialOptionsBoundary {
     
@@ -410,14 +404,13 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/scrollspy.ScrollSpy.Options> */
-  @js.native
   trait PartialOptionsMethod extends StObject {
     
-    var method: js.UndefOr[auto | offset | position] = js.native
+    var method: js.UndefOr[auto | offset | position] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[String | Element | JQuery[HTMLElement]] = js.native
+    var target: js.UndefOr[String | Element | JQuery[HTMLElement]] = js.undefined
   }
   object PartialOptionsMethod {
     
@@ -451,12 +444,11 @@ object anon {
   }
   
   /* Inlined std.Partial<bootstrap.bootstrap/js/dist/collapse.Collapse.Options> */
-  @js.native
   trait PartialOptionsParent extends StObject {
     
-    var parent: js.UndefOr[String | Element | JQuery[HTMLElement]] = js.native
+    var parent: js.UndefOr[String | Element | JQuery[HTMLElement]] = js.undefined
     
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptionsParent {
     
@@ -484,246 +476,245 @@ object anon {
   }
   
   /* Inlined std.Record<keyof std.HTMLElementTagNameMap, std.Array<string>> */
-  @js.native
   trait RecordkeyofHTMLElementTag extends StObject {
     
-    var a: js.Array[String] = js.native
+    var a: js.Array[String]
     
-    var abbr: js.Array[String] = js.native
+    var abbr: js.Array[String]
     
-    var address: js.Array[String] = js.native
+    var address: js.Array[String]
     
-    var applet: js.Array[String] = js.native
+    var applet: js.Array[String]
     
-    var area: js.Array[String] = js.native
+    var area: js.Array[String]
     
-    var article: js.Array[String] = js.native
+    var article: js.Array[String]
     
-    var aside: js.Array[String] = js.native
+    var aside: js.Array[String]
     
-    var audio: js.Array[String] = js.native
+    var audio: js.Array[String]
     
-    var b: js.Array[String] = js.native
+    var b: js.Array[String]
     
-    var base: js.Array[String] = js.native
+    var base: js.Array[String]
     
-    var basefont: js.Array[String] = js.native
+    var basefont: js.Array[String]
     
-    var bdi: js.Array[String] = js.native
+    var bdi: js.Array[String]
     
-    var bdo: js.Array[String] = js.native
+    var bdo: js.Array[String]
     
-    var blockquote: js.Array[String] = js.native
+    var blockquote: js.Array[String]
     
-    var body: js.Array[String] = js.native
+    var body: js.Array[String]
     
-    var br: js.Array[String] = js.native
+    var br: js.Array[String]
     
-    var button: js.Array[String] = js.native
+    var button: js.Array[String]
     
-    var canvas: js.Array[String] = js.native
+    var canvas: js.Array[String]
     
-    var caption: js.Array[String] = js.native
+    var caption: js.Array[String]
     
-    var cite: js.Array[String] = js.native
+    var cite: js.Array[String]
     
-    var code: js.Array[String] = js.native
+    var code: js.Array[String]
     
-    var col: js.Array[String] = js.native
+    var col: js.Array[String]
     
-    var colgroup: js.Array[String] = js.native
+    var colgroup: js.Array[String]
     
-    var data: js.Array[String] = js.native
+    var data: js.Array[String]
     
-    var datalist: js.Array[String] = js.native
+    var datalist: js.Array[String]
     
-    var dd: js.Array[String] = js.native
+    var dd: js.Array[String]
     
-    var del: js.Array[String] = js.native
+    var del: js.Array[String]
     
-    var details: js.Array[String] = js.native
+    var details: js.Array[String]
     
-    var dfn: js.Array[String] = js.native
+    var dfn: js.Array[String]
     
-    var dialog: js.Array[String] = js.native
+    var dialog: js.Array[String]
     
-    var dir: js.Array[String] = js.native
+    var dir: js.Array[String]
     
-    var div: js.Array[String] = js.native
+    var div: js.Array[String]
     
-    var dl: js.Array[String] = js.native
+    var dl: js.Array[String]
     
-    var dt: js.Array[String] = js.native
+    var dt: js.Array[String]
     
-    var em: js.Array[String] = js.native
+    var em: js.Array[String]
     
-    var embed: js.Array[String] = js.native
+    var embed: js.Array[String]
     
-    var fieldset: js.Array[String] = js.native
+    var fieldset: js.Array[String]
     
-    var figcaption: js.Array[String] = js.native
+    var figcaption: js.Array[String]
     
-    var figure: js.Array[String] = js.native
+    var figure: js.Array[String]
     
-    var font: js.Array[String] = js.native
+    var font: js.Array[String]
     
-    var footer: js.Array[String] = js.native
+    var footer: js.Array[String]
     
-    var form: js.Array[String] = js.native
+    var form: js.Array[String]
     
-    var frame: js.Array[String] = js.native
+    var frame: js.Array[String]
     
-    var frameset: js.Array[String] = js.native
+    var frameset: js.Array[String]
     
-    var h1: js.Array[String] = js.native
+    var h1: js.Array[String]
     
-    var h2: js.Array[String] = js.native
+    var h2: js.Array[String]
     
-    var h3: js.Array[String] = js.native
+    var h3: js.Array[String]
     
-    var h4: js.Array[String] = js.native
+    var h4: js.Array[String]
     
-    var h5: js.Array[String] = js.native
+    var h5: js.Array[String]
     
-    var h6: js.Array[String] = js.native
+    var h6: js.Array[String]
     
-    var head: js.Array[String] = js.native
+    var head: js.Array[String]
     
-    var header: js.Array[String] = js.native
+    var header: js.Array[String]
     
-    var hgroup: js.Array[String] = js.native
+    var hgroup: js.Array[String]
     
-    var hr: js.Array[String] = js.native
+    var hr: js.Array[String]
     
-    var html: js.Array[String] = js.native
+    var html: js.Array[String]
     
-    var i: js.Array[String] = js.native
+    var i: js.Array[String]
     
-    var iframe: js.Array[String] = js.native
+    var iframe: js.Array[String]
     
-    var img: js.Array[String] = js.native
+    var img: js.Array[String]
     
-    var input: js.Array[String] = js.native
+    var input: js.Array[String]
     
-    var ins: js.Array[String] = js.native
+    var ins: js.Array[String]
     
-    var kbd: js.Array[String] = js.native
+    var kbd: js.Array[String]
     
-    var label: js.Array[String] = js.native
+    var label: js.Array[String]
     
-    var legend: js.Array[String] = js.native
+    var legend: js.Array[String]
     
-    var li: js.Array[String] = js.native
+    var li: js.Array[String]
     
-    var link: js.Array[String] = js.native
+    var link: js.Array[String]
     
-    var main: js.Array[String] = js.native
+    var main: js.Array[String]
     
-    var map: js.Array[String] = js.native
+    var map: js.Array[String]
     
-    var mark: js.Array[String] = js.native
+    var mark: js.Array[String]
     
-    var marquee: js.Array[String] = js.native
+    var marquee: js.Array[String]
     
-    var menu: js.Array[String] = js.native
+    var menu: js.Array[String]
     
-    var meta: js.Array[String] = js.native
+    var meta: js.Array[String]
     
-    var meter: js.Array[String] = js.native
+    var meter: js.Array[String]
     
-    var nav: js.Array[String] = js.native
+    var nav: js.Array[String]
     
-    var noscript: js.Array[String] = js.native
+    var noscript: js.Array[String]
     
-    var `object`: js.Array[String] = js.native
+    var `object`: js.Array[String]
     
-    var ol: js.Array[String] = js.native
+    var ol: js.Array[String]
     
-    var optgroup: js.Array[String] = js.native
+    var optgroup: js.Array[String]
     
-    var option: js.Array[String] = js.native
+    var option: js.Array[String]
     
-    var output: js.Array[String] = js.native
+    var output: js.Array[String]
     
-    var p: js.Array[String] = js.native
+    var p: js.Array[String]
     
-    var param: js.Array[String] = js.native
+    var param: js.Array[String]
     
-    var picture: js.Array[String] = js.native
+    var picture: js.Array[String]
     
-    var pre: js.Array[String] = js.native
+    var pre: js.Array[String]
     
-    var progress: js.Array[String] = js.native
+    var progress: js.Array[String]
     
-    var q: js.Array[String] = js.native
+    var q: js.Array[String]
     
-    var rp: js.Array[String] = js.native
+    var rp: js.Array[String]
     
-    var rt: js.Array[String] = js.native
+    var rt: js.Array[String]
     
-    var ruby: js.Array[String] = js.native
+    var ruby: js.Array[String]
     
-    var s: js.Array[String] = js.native
+    var s: js.Array[String]
     
-    var samp: js.Array[String] = js.native
+    var samp: js.Array[String]
     
-    var script: js.Array[String] = js.native
+    var script: js.Array[String]
     
-    var section: js.Array[String] = js.native
+    var section: js.Array[String]
     
-    var select: js.Array[String] = js.native
+    var select: js.Array[String]
     
-    var slot: js.Array[String] = js.native
+    var slot: js.Array[String]
     
-    var small: js.Array[String] = js.native
+    var small: js.Array[String]
     
-    var source: js.Array[String] = js.native
+    var source: js.Array[String]
     
-    var span: js.Array[String] = js.native
+    var span: js.Array[String]
     
-    var strong: js.Array[String] = js.native
+    var strong: js.Array[String]
     
-    var style: js.Array[String] = js.native
+    var style: js.Array[String]
     
-    var sub: js.Array[String] = js.native
+    var sub: js.Array[String]
     
-    var summary: js.Array[String] = js.native
+    var summary: js.Array[String]
     
-    var sup: js.Array[String] = js.native
+    var sup: js.Array[String]
     
-    var table: js.Array[String] = js.native
+    var table: js.Array[String]
     
-    var tbody: js.Array[String] = js.native
+    var tbody: js.Array[String]
     
-    var td: js.Array[String] = js.native
+    var td: js.Array[String]
     
-    var template: js.Array[String] = js.native
+    var template: js.Array[String]
     
-    var textarea: js.Array[String] = js.native
+    var textarea: js.Array[String]
     
-    var tfoot: js.Array[String] = js.native
+    var tfoot: js.Array[String]
     
-    var th: js.Array[String] = js.native
+    var th: js.Array[String]
     
-    var thead: js.Array[String] = js.native
+    var thead: js.Array[String]
     
-    var time: js.Array[String] = js.native
+    var time: js.Array[String]
     
-    var title: js.Array[String] = js.native
+    var title: js.Array[String]
     
-    var tr: js.Array[String] = js.native
+    var tr: js.Array[String]
     
-    var track: js.Array[String] = js.native
+    var track: js.Array[String]
     
-    var u: js.Array[String] = js.native
+    var u: js.Array[String]
     
-    var ul: js.Array[String] = js.native
+    var ul: js.Array[String]
     
-    var `var`: js.Array[String] = js.native
+    var `var`: js.Array[String]
     
-    var video: js.Array[String] = js.native
+    var video: js.Array[String]
     
-    var wbr: js.Array[String] = js.native
+    var wbr: js.Array[String]
   }
   object RecordkeyofHTMLElementTag {
     

@@ -3,7 +3,6 @@ package typings.cordovaPluginMedia
 import typings.std.MediaError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,19 +11,24 @@ object global {
   @JSGlobal("Media")
   @js.native
   class Media protected ()
-    extends typings.cordovaPluginMedia.Media {
+    extends StObject
+       with typings.cordovaPluginMedia.Media {
     def this(src: String, mediaSuccess: js.Function0[Unit]) = this()
-    def this(src: String, mediaSuccess: js.Function0[Unit], mediaError: js.Function1[/* error */ MediaError, _]) = this()
     def this(
       src: String,
       mediaSuccess: js.Function0[Unit],
-      mediaError: js.UndefOr[scala.Nothing],
+      mediaError: js.Function1[/* error */ MediaError, js.Any]
+    ) = this()
+    def this(
+      src: String,
+      mediaSuccess: js.Function0[Unit],
+      mediaError: js.Function1[/* error */ MediaError, js.Any],
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
     def this(
       src: String,
       mediaSuccess: js.Function0[Unit],
-      mediaError: js.Function1[/* error */ MediaError, _],
+      mediaError: Unit,
       mediaStatus: js.Function1[/* status */ Double, Unit]
     ) = this()
   }

@@ -3,31 +3,32 @@ package typings.stompit
 import typings.stompit.connectMod.ConnectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAddressInfoMod {
   
+  @scala.inline
+  def apply(args: ConnectOptions): AddressInfo = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[AddressInfo]
+  
   @JSImport("stompit/lib/connect-failover/getAddressInfo", JSImport.Namespace)
   @js.native
-  def apply(args: ConnectOptions): AddressInfo = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AddressInfo extends StObject {
     
-    var connectArgs: ConnectOptions = js.native
+    var connectArgs: ConnectOptions
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var pseudoUri: String = js.native
+    var pseudoUri: String
     
-    var transport: String = js.native
+    var transport: String
     
-    var transportPath: String = js.native
+    var transportPath: String
   }
   object AddressInfo {
     

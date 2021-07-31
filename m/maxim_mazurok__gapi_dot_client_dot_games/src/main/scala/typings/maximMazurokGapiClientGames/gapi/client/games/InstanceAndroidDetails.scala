@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAndroidDetails extends StObject {
   
   /** Flag indicating whether the anti-piracy check is enabled. */
-  var enablePiracyCheck: js.UndefOr[Boolean] = js.native
+  var enablePiracyCheck: js.UndefOr[Boolean] = js.undefined
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#instanceAndroidDetails`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Android package name which maps to Google Play URL. */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /** Indicates that this instance is the default for new installations. */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
 }
 object InstanceAndroidDetails {
   

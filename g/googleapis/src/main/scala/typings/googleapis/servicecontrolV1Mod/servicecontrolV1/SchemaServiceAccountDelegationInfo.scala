@@ -2,24 +2,22 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identity delegation history of an authenticated service account.
   */
-@js.native
 trait SchemaServiceAccountDelegationInfo extends StObject {
   
   /**
     * First party (Google) identity as the real authority.
     */
-  var firstPartyPrincipal: js.UndefOr[SchemaFirstPartyPrincipal] = js.native
+  var firstPartyPrincipal: js.UndefOr[SchemaFirstPartyPrincipal] = js.undefined
   
   /**
     * Third party identity as the real authority.
     */
-  var thirdPartyPrincipal: js.UndefOr[SchemaThirdPartyPrincipal] = js.native
+  var thirdPartyPrincipal: js.UndefOr[SchemaThirdPartyPrincipal] = js.undefined
 }
 object SchemaServiceAccountDelegationInfo {
   

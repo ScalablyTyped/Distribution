@@ -2,21 +2,19 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALL extends StObject {
   
-  var ALL: String = js.native
+  var ALL: String
   
-  var COLUMN: String = js.native
+  var COLUMN: String
   
-  var EDIT: String = js.native
+  var EDIT: String
   
-  var OPTIONS: String = js.native
+  var OPTIONS: String
   
-  var ROW: String = js.native
+  var ROW: String
 }
 object ALL {
   

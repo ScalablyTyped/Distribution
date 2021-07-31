@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The interface must be implemented for a server that can support MSAA com objects and send win32 accessible events */
-@js.native
-trait XMSAAService extends XComponent {
+trait XMSAAService
+  extends StObject
+     with XComponent {
   
   /**
     * Return com object pointer.
     * @returns A reference to the object that contains the actual accessibility information.
     * @see AccessibleContext
     */
-  def getAccObjectPtr(hWnd: Double, lParam: Double, wParam: Double): Double = js.native
+  def getAccObjectPtr(hWnd: Double, lParam: Double, wParam: Double): Double
   
-  def handleWindowOpened(i: Double): Unit = js.native
+  def handleWindowOpened(i: Double): Unit
 }
 object XMSAAService {
   

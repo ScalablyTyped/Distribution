@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessibilityOptions extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait AccessibilityOptions extends StObject {
     * consider making snapshots of the data accessible, and do the
     * announcements in batches.
     */
-  var announceNewData: js.UndefOr[AccessibilityAnnounceNewDataOptionsObject] = js.native
+  var announceNewData: js.UndefOr[AccessibilityAnnounceNewDataOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A hook for adding custom
@@ -28,7 +26,7 @@ trait AccessibilityOptions extends StObject {
     * component to the keyboardNavigation.order for the keyboard navigation to
     * be usable.
     */
-  var customComponents: js.UndefOr[js.Any] = js.native
+  var customComponents: js.UndefOr[js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text description of the chart.
@@ -45,25 +43,25 @@ trait AccessibilityOptions extends StObject {
     * `accessibility.description` option is defined, the linked description is
     * ignored, and the caption is hidden from screen reader users.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable accessibility
     * functionality for the chart.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Theme to apply to the chart when
     * Windows High Contrast Mode is detected. By default, a high contrast theme
     * matching the high contrast system system colors is used.
     */
-  var highContrastTheme: js.UndefOr[js.Any] = js.native
+  var highContrastTheme: js.UndefOr[js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for keyboard navigation.
     */
-  var keyboardNavigation: js.UndefOr[KeyboardNavigationOptionsObject] = js.native
+  var keyboardNavigation: js.UndefOr[KeyboardNavigationOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Amount of landmarks/regions to
@@ -77,7 +75,7 @@ trait AccessibilityOptions extends StObject {
     *
     * - `disabled`: No landmarks are added.
     */
-  var landmarkVerbosity: js.UndefOr[OptionsLandmarkVerbosityValue] = js.native
+  var landmarkVerbosity: js.UndefOr[OptionsLandmarkVerbosityValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Link the chart to an HTML
@@ -107,26 +105,26 @@ trait AccessibilityOptions extends StObject {
     * If you need the description to be hidden visually, use the
     * accessibility.description option.
     */
-  var linkedDescription: js.UndefOr[String | HTMLDOMElement] = js.native
+  var linkedDescription: js.UndefOr[String | HTMLDOMElement] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for descriptions of
     * individual data points.
     */
-  var point: js.UndefOr[AccessibilityPointOptions] = js.native
+  var point: js.UndefOr[AccessibilityPointOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * screen reader information sections added before and after the chart.
     */
-  var screenReaderSection: js.UndefOr[AccessibilityScreenReaderSectionOptions] = js.native
+  var screenReaderSection: js.UndefOr[AccessibilityScreenReaderSectionOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options global to
     * all data series. Individual series can also have specific accessibility
     * options set.
     */
-  var series: js.UndefOr[AccessibilitySeriesOptions] = js.native
+  var series: js.UndefOr[AccessibilitySeriesOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A text description of the chart
@@ -138,7 +136,7 @@ trait AccessibilityOptions extends StObject {
     * Highcharts will by default attempt to guess the chart type, but for more
     * complex charts it is recommended to specify this property for clarity.
     */
-  var typeDescription: js.UndefOr[String] = js.native
+  var typeDescription: js.UndefOr[String] = js.undefined
 }
 object AccessibilityOptions {
   

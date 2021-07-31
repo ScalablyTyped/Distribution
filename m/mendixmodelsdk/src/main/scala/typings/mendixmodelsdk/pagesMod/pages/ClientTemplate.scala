@@ -15,7 +15,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate")
@@ -77,9 +76,8 @@ object ClientTemplate {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.create")
-  @js.native
-  def create(model: IModel): ClientTemplate = js.native
+  @scala.inline
+  def create(model: IModel): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -87,9 +85,8 @@ object ClientTemplate {
     * of the parent Button element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInButtonUnderCaption")
-  @js.native
-  def createInButtonUnderCaption(container: Button): ClientTemplate = js.native
+  @scala.inline
+  def createInButtonUnderCaption(container: Button): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -97,9 +94,8 @@ object ClientTemplate {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInControlBarButtonUnderCaption")
-  @js.native
-  def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = js.native
+  @scala.inline
+  def createInControlBarButtonUnderCaption(container: ControlBarButton): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -110,9 +106,8 @@ object ClientTemplate {
     *  8.1.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInCustomWidgetUnderLabelTemplate")
-  @js.native
-  def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = js.native
+  @scala.inline
+  def createInCustomWidgetUnderLabelTemplate(container: CustomWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -123,9 +118,8 @@ object ClientTemplate {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDataGridUnderCaption")
-  @js.native
-  def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = js.native
+  @scala.inline
+  def createInDataGridUnderCaption(container: DataGrid): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -136,9 +130,8 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDynamicImageViewerUnderAlternativeText")
-  @js.native
-  def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderAlternativeText(container: DynamicImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -146,9 +139,8 @@ object ClientTemplate {
     * of the parent DynamicText element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInDynamicTextUnderContent")
-  @js.native
-  def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = js.native
+  @scala.inline
+  def createInDynamicTextUnderContent(container: DynamicText): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicTextUnderContent")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -156,9 +148,8 @@ object ClientTemplate {
     * of the parent GroupBox element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInGroupBoxUnderCaption")
-  @js.native
-  def createInGroupBoxUnderCaption(container: GroupBox): ClientTemplate = js.native
+  @scala.inline
+  def createInGroupBoxUnderCaption(container: GroupBox): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderCaption")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -169,9 +160,8 @@ object ClientTemplate {
     *  7.18.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInInputWidgetUnderLabelTemplate")
-  @js.native
-  def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = js.native
+  @scala.inline
+  def createInInputWidgetUnderLabelTemplate(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -182,9 +172,8 @@ object ClientTemplate {
     *  8.12.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInInputWidgetUnderScreenReaderLabel")
-  @js.native
-  def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = js.native
+  @scala.inline
+  def createInInputWidgetUnderScreenReaderLabel(container: InputWidget): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInputWidgetUnderScreenReaderLabel")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -195,9 +184,8 @@ object ClientTemplate {
     *  8.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInStaticImageViewerUnderAlternativeText")
-  @js.native
-  def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderAlternativeText(container: StaticImageViewer): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderAlternativeText")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -208,9 +196,8 @@ object ClientTemplate {
     *  8.13.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInTabPageUnderBadge")
-  @js.native
-  def createInTabPageUnderBadge(container: TabPage): ClientTemplate = js.native
+  @scala.inline
+  def createInTabPageUnderBadge(container: TabPage): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderBadge")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -221,9 +208,8 @@ object ClientTemplate {
     *  7.23.0 to 8.0.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInWidgetObjectUnderLabelTemplate")
-  @js.native
-  def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = js.native
+  @scala.inline
+  def createInWidgetObjectUnderLabelTemplate(container: WidgetObject): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetObjectUnderLabelTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /**
     * Creates and returns a new ClientTemplate instance in the SDK and on the server.
@@ -234,9 +220,8 @@ object ClientTemplate {
     *  7.23.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.createInWidgetValueUnderTextTemplate")
-  @js.native
-  def createInWidgetValueUnderTextTemplate(container: WidgetValue): ClientTemplate = js.native
+  @scala.inline
+  def createInWidgetValueUnderTextTemplate(container: WidgetValue): ClientTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderTextTemplate")(container.asInstanceOf[js.Any]).asInstanceOf[ClientTemplate]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ClientTemplate.structureTypeName")

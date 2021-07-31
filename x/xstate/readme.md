@@ -10,9 +10,9 @@ Finite State Machines and Statecharts for the Modern Web.
 | ------------------ | :-------------: |
 | Full name          | xstate |
 | Keywords           | statechart, state machine, finite state machine, finite automata, scxml, state, interpreter |
-| # releases         | 62 |
-| # dependents       | 172 |
-| # downloads        | 21403455 |
+| # releases         | 47 |
+| # dependents       | 216 |
+| # downloads        | 28813481 |
 | # stars            | 5 |
 
 ## Links

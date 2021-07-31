@@ -3,7 +3,6 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the `iam.serviceAccounts.actAs` permission for the Cloud Genomics service
   * account or the request will fail.
   */
-@js.native
 trait SchemaRunPipelineRequest extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaRunPipelineRequest extends StObject {
     * resources created while executing the operation, see the appropriate
     * resource message (for example, `VirtualMachine`).
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The description of the pipeline to run.
     */
-  var pipeline: js.UndefOr[SchemaPipeline] = js.native
+  var pipeline: js.UndefOr[SchemaPipeline] = js.undefined
 }
 object SchemaRunPipelineRequest {
   

@@ -7,7 +7,6 @@ import typings.reactNativeModal.modalMod.ModalProps
 import typings.reactNativeModal.modalMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,9 +30,8 @@ object mod {
     @scala.inline
     def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-modal", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal", "default.propTypes")
     @js.native
@@ -61,9 +59,8 @@ object mod {
     @scala.inline
     def defaultProps_=(x: AnimationInTiming): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-native-modal", "ReactNativeModal.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: ModalProps, state: State): IsVisible | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[IsVisible | Null]
     
     @JSImport("react-native-modal", "ReactNativeModal.propTypes")
     @js.native

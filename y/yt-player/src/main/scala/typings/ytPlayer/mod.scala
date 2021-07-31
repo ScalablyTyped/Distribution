@@ -11,7 +11,6 @@ import typings.ytPlayer.ytPlayerStrings.timeupdate
 import typings.ytPlayer.ytPlayerStrings.unplayable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -109,9 +108,9 @@ object mod {
       * This should be the first function called on a new Player instance.
       */
     def load(videoId: String): Unit = js.native
-    def load(videoId: String, autoplay: js.UndefOr[scala.Nothing], start: Double): Unit = js.native
     def load(videoId: String, autoplay: Boolean): Unit = js.native
     def load(videoId: String, autoplay: Boolean, start: Double): Unit = js.native
+    def load(videoId: String, autoplay: Unit, start: Double): Unit = js.native
     
     /** Mutes the player. */
     def mute(): Unit = js.native
@@ -234,55 +233,54 @@ object mod {
     var videoId: String = js.native
   }
   
-  @js.native
   trait YouTubePlayerOptions extends StObject {
     
     /**
       * This parameter indicates whether the player will show video annotations.
       * The default value is true.
       */
-    var annotations: js.UndefOr[Boolean] = js.native
+    var annotations: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter indicates whether the initial video will automatically
       * start to play when the player loads. The default value is false.
       */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter indicates whether closed captions should be shown, even if
       * the user has turned captions off. The default behavior is based on user
       * preference.
       */
-    var captions: js.UndefOr[`false` | String] = js.native
+    var captions: js.UndefOr[`false` | String] = js.undefined
     
     /**
       * This parameter indicates whether the video player controls are displayed.
       * The default value is true.
       */
-    var controls: js.UndefOr[Boolean] = js.native
+    var controls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter indicates whether the player will show a fullscreen
       * button. The default value is true.
       */
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
     /** This parameter indicates the height of the player. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * This parameter controls the hostname that videos are loaded from.
       * Set to `https://www.youtube-nocookie.com` for enhanced privacy.
       * The default value is `https://www.youtube.com`.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * This parameter indicates whether the player will respond to keyboard
       * shortcuts. The default value is true.
       */
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter lets you use a YouTube player that does not show a
@@ -290,19 +288,19 @@ object mod {
       * label will still display in the upper-right corner of a paused video
       * when the user's mouse pointer hovers over the player.
       */
-    var modestBranding: js.UndefOr[Boolean] = js.native
+    var modestBranding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter controls whether videos play inline or fullscreen in an
       * HTML5 player on iOS. The default is true.
       */
-    var playsInline: js.UndefOr[Boolean] = js.native
+    var playsInline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter indicates whether the player should show related videos
       * from other channels
       */
-    var related: js.UndefOr[Boolean] = js.native
+    var related: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This parameter causes the player to begin playing the video at the given number
@@ -311,16 +309,16 @@ object mod {
       * This means that sometimes the play head may seek to just before the requested time,
       * usually no more than around two seconds. Default is 0.
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /**
       * The time between onTimeupdate callbacks, in milliseconds. Default is
       * 1000.
       */
-    var timeupdateFrequency: js.UndefOr[Double] = js.native
+    var timeupdateFrequency: js.UndefOr[Double] = js.undefined
     
     /**  This parameter indicates the width of the player. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object YouTubePlayerOptions {
     

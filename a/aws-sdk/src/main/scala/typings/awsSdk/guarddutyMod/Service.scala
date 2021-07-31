@@ -2,61 +2,59 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Service extends StObject {
   
   /**
     * Information about the activity that is described in a finding.
     */
-  var Action: js.UndefOr[typings.awsSdk.guarddutyMod.Action] = js.native
+  var Action: js.UndefOr[typings.awsSdk.guarddutyMod.Action] = js.undefined
   
   /**
     * Indicates whether this finding is archived.
     */
-  var Archived: js.UndefOr[Boolean] = js.native
+  var Archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The total count of the occurrences of this finding type.
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     * The detector ID for the GuardDuty service.
     */
-  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.native
+  var DetectorId: js.UndefOr[typings.awsSdk.guarddutyMod.DetectorId] = js.undefined
   
   /**
     * The first-seen timestamp of the activity that prompted GuardDuty to generate this finding.
     */
-  var EventFirstSeen: js.UndefOr[String] = js.native
+  var EventFirstSeen: js.UndefOr[String] = js.undefined
   
   /**
     * The last-seen timestamp of the activity that prompted GuardDuty to generate this finding.
     */
-  var EventLastSeen: js.UndefOr[String] = js.native
+  var EventLastSeen: js.UndefOr[String] = js.undefined
   
   /**
     * An evidence object associated with the service.
     */
-  var Evidence: js.UndefOr[typings.awsSdk.guarddutyMod.Evidence] = js.native
+  var Evidence: js.UndefOr[typings.awsSdk.guarddutyMod.Evidence] = js.undefined
   
   /**
     * The resource role information for this finding.
     */
-  var ResourceRole: js.UndefOr[String] = js.native
+  var ResourceRole: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the AWS service (GuardDuty) that generated a finding.
     */
-  var ServiceName: js.UndefOr[String] = js.native
+  var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * Feedback that was submitted about the finding.
     */
-  var UserFeedback: js.UndefOr[String] = js.native
+  var UserFeedback: js.UndefOr[String] = js.undefined
 }
 object Service {
   

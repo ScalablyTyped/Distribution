@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticKeyProvider extends StObject {
   
   /**
     * Relates to DRM implementation. Sets the value of the KEYFORMAT attribute. Must be 'identity' or a reverse DNS string. May be omitted to indicate an implicit value of 'identity'.
     */
-  var KeyFormat: js.UndefOr[stringPatternIdentityAZaZ26AZaZ09163] = js.native
+  var KeyFormat: js.UndefOr[stringPatternIdentityAZaZ26AZaZ09163] = js.undefined
   
   /**
     * Relates to DRM implementation. Either a single positive integer version value or a slash delimited list of version values (1/2/3).
     */
-  var KeyFormatVersions: js.UndefOr[stringPatternDD] = js.native
+  var KeyFormatVersions: js.UndefOr[stringPatternDD] = js.undefined
   
   /**
     * Relates to DRM implementation. Use a 32-character hexidecimal string to specify Key Value (StaticKeyValue).
     */
-  var StaticKeyValue: js.UndefOr[stringPatternAZaZ0932] = js.native
+  var StaticKeyValue: js.UndefOr[stringPatternAZaZ0932] = js.undefined
   
   /**
     * Relates to DRM implementation. The location of the license server used for protecting content.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
 }
 object StaticKeyProvider {
   

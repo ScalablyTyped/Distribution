@@ -3,65 +3,55 @@ package typings.chardet
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("chardet", "detect")
+  @JSImport("chardet", JSImport.Namespace)
   @js.native
-  def detect(buf: Buffer): String | Null = js.native
-  @JSImport("chardet", "detect")
-  @js.native
-  def detect(buf: Buffer, opts: Options): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chardet", "detectAll")
-  @js.native
-  def detectAll(buf: Buffer): js.Array[Confidence] | Null = js.native
-  @JSImport("chardet", "detectAll")
-  @js.native
-  def detectAll(buf: Buffer, opts: Options): js.Array[Confidence] | Null = js.native
+  @scala.inline
+  def detect(buf: Buffer): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buf.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def detect(buf: Buffer, opts: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("chardet", "detectFile")
-  @js.native
-  def detectFile(path: String, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = js.native
-  @JSImport("chardet", "detectFile")
-  @js.native
-  def detectFile(path: String, opts: Options, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = js.native
+  @scala.inline
+  def detectAll(buf: Buffer): js.Array[Confidence] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectAll")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Array[Confidence] | Null]
+  @scala.inline
+  def detectAll(buf: Buffer, opts: Options): js.Array[Confidence] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectAll")(buf.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Confidence] | Null]
   
-  @JSImport("chardet", "detectFileAll")
-  @js.native
-  def detectFileAll(path: String, cb: js.Function2[/* err */ js.Any, /* result */ js.Array[Confidence] | Null, Unit]): Unit = js.native
-  @JSImport("chardet", "detectFileAll")
-  @js.native
+  @scala.inline
+  def detectFile(path: String, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def detectFile(path: String, opts: Options, cb: js.Function2[/* err */ js.Any, /* result */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def detectFileAll(path: String, cb: js.Function2[/* err */ js.Any, /* result */ js.Array[Confidence] | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAll")(path.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def detectFileAll(
     path: String,
     opts: Options,
     cb: js.Function2[/* err */ js.Any, /* result */ js.Array[Confidence] | Null, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAll")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("chardet", "detectFileAllSync")
-  @js.native
-  def detectFileAllSync(path: String): js.Array[Confidence] | Null = js.native
-  @JSImport("chardet", "detectFileAllSync")
-  @js.native
-  def detectFileAllSync(path: String, opts: Options): js.Array[Confidence] | Null = js.native
+  @scala.inline
+  def detectFileAllSync(path: String): js.Array[Confidence] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAllSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Confidence] | Null]
+  @scala.inline
+  def detectFileAllSync(path: String, opts: Options): js.Array[Confidence] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileAllSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[Confidence] | Null]
   
-  @JSImport("chardet", "detectFileSync")
-  @js.native
-  def detectFileSync(path: String): String | Null = js.native
-  @JSImport("chardet", "detectFileSync")
-  @js.native
-  def detectFileSync(path: String, opts: Options): String | Null = js.native
+  @scala.inline
+  def detectFileSync(path: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def detectFileSync(path: String, opts: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("detectFileSync")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @js.native
   trait Confidence extends StObject {
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Confidence {
     
@@ -88,12 +78,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var returnAllMatches: js.UndefOr[Boolean] = js.native
+    var returnAllMatches: js.UndefOr[Boolean] = js.undefined
     
-    var sampleSize: js.UndefOr[Double] = js.native
+    var sampleSize: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

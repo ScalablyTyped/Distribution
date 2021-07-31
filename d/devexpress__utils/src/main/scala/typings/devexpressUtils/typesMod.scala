@@ -2,7 +2,6 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -11,13 +10,11 @@ object typesMod {
   
   type EqualFunc[T] = js.Function2[/* a */ T, /* b */ T, Boolean]
   
-  @js.native
   trait ICloneable[T] extends StObject
   
-  @js.native
   trait IDisposable extends StObject {
     
-    def dispose(): js.Any = js.native
+    def dispose(): js.Any
   }
   object IDisposable {
     
@@ -35,13 +32,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IEquatable[T] extends StObject
   
-  @js.native
   trait ISupportConverting[T] extends StObject {
     
-    def applyConverter(converter: SimpleConverter[T]): this.type = js.native
+    def applyConverter(converter: SimpleConverter[T]): this.type
   }
   object ISupportConverting {
     
@@ -52,17 +47,16 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ISupportConvertingMutableBuilder[Self <: ISupportConverting[_], T] (val x: Self with ISupportConverting[T]) extends AnyVal {
+    implicit class ISupportConvertingMutableBuilder[Self <: ISupportConverting[?], T] (val x: Self & ISupportConverting[T]) extends AnyVal {
       
       @scala.inline
       def setApplyConverter(value: SimpleConverter[T] => ISupportConverting[T]): Self = StObject.set(x, "applyConverter", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait ISupportCopyFrom[T] extends StObject {
     
-    def copyFrom(obj: T): Unit = js.native
+    def copyFrom(obj: T): Unit
   }
   object ISupportCopyFrom {
     
@@ -73,7 +67,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class ISupportCopyFromMutableBuilder[Self <: ISupportCopyFrom[_], T] (val x: Self with ISupportCopyFrom[T]) extends AnyVal {
+    implicit class ISupportCopyFromMutableBuilder[Self <: ISupportCopyFrom[?], T] (val x: Self & ISupportCopyFrom[T]) extends AnyVal {
       
       @scala.inline
       def setCopyFrom(value: T => Unit): Self = StObject.set(x, "copyFrom", js.Any.fromFunction1(value))

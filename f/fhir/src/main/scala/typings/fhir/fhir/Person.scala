@@ -2,80 +2,80 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A generic person record
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Person extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Person
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'active'.
     */
-  var _active: js.UndefOr[Element] = js.native
+  var _active: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'birthDate'.
     */
-  var _birthDate: js.UndefOr[Element] = js.native
+  var _birthDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'gender'.
     */
-  var _gender: js.UndefOr[Element] = js.native
+  var _gender: js.UndefOr[Element] = js.undefined
   
   /**
     * This person's record is in active use
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more addresses for the person
     */
-  var address: js.UndefOr[js.Array[Address]] = js.native
+  var address: js.UndefOr[js.Array[Address]] = js.undefined
   
   /**
     * The date on which the person was born
     */
-  var birthDate: js.UndefOr[date] = js.native
+  var birthDate: js.UndefOr[date] = js.undefined
   
   /**
     * male | female | other | unknown
     */
-  var gender: js.UndefOr[code] = js.native
+  var gender: js.UndefOr[code] = js.undefined
   
   /**
     * A human identifier for this person
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Link to a resource that concerns the same actual person
     */
-  var link: js.UndefOr[js.Array[PersonLink]] = js.native
+  var link: js.UndefOr[js.Array[PersonLink]] = js.undefined
   
   /**
     * The organization that is the custodian of the person record
     */
-  var managingOrganization: js.UndefOr[Reference] = js.native
+  var managingOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
     * A name associated with the person
     */
-  var name: js.UndefOr[js.Array[HumanName]] = js.native
+  var name: js.UndefOr[js.Array[HumanName]] = js.undefined
   
   /**
     * Image of the person
     */
-  var photo: js.UndefOr[Attachment] = js.native
+  var photo: js.UndefOr[Attachment] = js.undefined
   
   /**
     * A contact detail for the person
     */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.native
+  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
 }
 object Person {
   

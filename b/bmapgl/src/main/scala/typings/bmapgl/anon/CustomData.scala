@@ -2,13 +2,11 @@ package typings.bmapgl.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomData extends StObject {
   
-  var customData: js.Any = js.native
+  var customData: js.Any
 }
 object CustomData {
   

@@ -2,20 +2,18 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON request template for setting/revoking admin status of a user in
   * Directory API.
   */
-@js.native
 trait SchemaUserMakeAdmin extends StObject {
   
   /**
     * Boolean indicating new admin status of the user
     */
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaUserMakeAdmin {
   

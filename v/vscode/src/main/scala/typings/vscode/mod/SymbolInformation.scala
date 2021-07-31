@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "SymbolInformation")
@@ -30,13 +29,7 @@ class SymbolInformation protected () extends StObject {
     */
   def this(name: String, kind: SymbolKind, containerName: String, location: Location) = this()
   def this(name: String, kind: SymbolKind, range: Range, uri: Uri) = this()
-  def this(
-    name: String,
-    kind: SymbolKind,
-    range: Range,
-    uri: js.UndefOr[scala.Nothing],
-    containerName: String
-  ) = this()
+  def this(name: String, kind: SymbolKind, range: Range, uri: Unit, containerName: String) = this()
   def this(name: String, kind: SymbolKind, range: Range, uri: Uri, containerName: String) = this()
   
   /**

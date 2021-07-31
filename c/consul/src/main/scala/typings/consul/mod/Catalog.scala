@@ -9,7 +9,6 @@ import typings.consul.mod.Catalog.Service
 import typings.consul.mod.Catalog.ServicesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -120,8 +119,9 @@ object Catalog {
   }
   object Node {
     
-    @js.native
-    trait ListOptions extends CommonOptions
+    trait ListOptions
+      extends StObject
+         with CommonOptions
     object ListOptions {
       
       @scala.inline
@@ -131,10 +131,11 @@ object Catalog {
       }
     }
     
-    @js.native
-    trait ServicesOptions extends CommonOptions {
+    trait ServicesOptions
+      extends StObject
+         with CommonOptions {
       
-      var node: String = js.native
+      var node: String
     }
     object ServicesOptions {
       
@@ -154,7 +155,9 @@ object Catalog {
   }
   
   @js.native
-  trait NodeStatic extends Instantiable1[/* consul */ Consul, Node]
+  trait NodeStatic
+    extends StObject
+       with Instantiable1[/* consul */ Consul, Node]
   
   type NodesOptions = ListOptions
   
@@ -201,8 +204,9 @@ object Catalog {
   }
   object Service {
     
-    @js.native
-    trait ListOptions extends CommonOptions
+    trait ListOptions
+      extends StObject
+         with CommonOptions
     object ListOptions {
       
       @scala.inline
@@ -212,12 +216,13 @@ object Catalog {
       }
     }
     
-    @js.native
-    trait NodesOptions extends CommonOptions {
+    trait NodesOptions
+      extends StObject
+         with CommonOptions {
       
-      var service: String = js.native
+      var service: String
       
-      var tag: js.UndefOr[String] = js.native
+      var tag: js.UndefOr[String] = js.undefined
     }
     object NodesOptions {
       
@@ -243,7 +248,9 @@ object Catalog {
   }
   
   @js.native
-  trait ServiceStatic extends Instantiable1[/* consul */ Consul, Service]
+  trait ServiceStatic
+    extends StObject
+       with Instantiable1[/* consul */ Consul, Service]
   
   type ServicesOptions = typings.consul.mod.Catalog.Service.ListOptions
 }

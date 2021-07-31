@@ -2,21 +2,19 @@ package typings.jsSchema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberConstructor extends StObject {
   
-  def above(n: Double): NumberConstructor = js.native
+  def above(n: Double): NumberConstructor
   
-  def below(n: Double): NumberConstructor = js.native
+  def below(n: Double): NumberConstructor
   
-  def max(n: Double): NumberConstructor = js.native
+  def max(n: Double): NumberConstructor
   
-  def min(n: Double): NumberConstructor = js.native
+  def min(n: Double): NumberConstructor
   
-  def step(n: Double): NumberConstructor = js.native
+  def step(n: Double): NumberConstructor
 }
 object NumberConstructor {
   

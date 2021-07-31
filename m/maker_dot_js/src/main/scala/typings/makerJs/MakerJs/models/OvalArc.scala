@@ -5,17 +5,17 @@ import typings.makerJs.MakerJs.IModelMap
 import typings.makerJs.MakerJs.IPathMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OvalArc extends IModel {
+trait OvalArc
+  extends StObject
+     with IModel {
   
   @JSName("models")
-  var models_OvalArc: IModelMap = js.native
+  var models_OvalArc: IModelMap
   
   @JSName("paths")
-  var paths_OvalArc: IPathMap = js.native
+  var paths_OvalArc: IPathMap
 }
 object OvalArc {
   

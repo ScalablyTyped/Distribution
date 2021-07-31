@@ -3,25 +3,25 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`16`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Property extends Node2 {
+trait Property
+  extends StObject
+     with Node2 {
   
-  var key: ExpressionNode = js.native
+  var key: ExpressionNode
   
   @JSName("type")
-  var type_Property: `16` = js.native
+  var type_Property: `16`
   
-  var value: JSChildNode = js.native
+  var value: JSChildNode
 }
 object Property {
   
   @scala.inline
-  def apply(key: ExpressionNode, loc: SourceLocation, `type`: `16`, value: JSChildNode): Property = {
+  def apply(key: ExpressionNode, loc: SourceLocation, value: JSChildNode): Property = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(16)
     __obj.asInstanceOf[Property]
   }
   

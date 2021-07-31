@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitytoolkitRelyingpartyVerifyCustomTokenRequest extends StObject {
   
   /** GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration. */
-  var delegatedProjectNumber: js.UndefOr[String] = js.native
+  var delegatedProjectNumber: js.UndefOr[String] = js.undefined
   
   /** Instance id token of the app. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** Whether return sts id token and refresh token instead of gitkit token. */
-  var returnSecureToken: js.UndefOr[Boolean] = js.native
+  var returnSecureToken: js.UndefOr[Boolean] = js.undefined
   
   /** The custom token to verify */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object IdentitytoolkitRelyingpartyVerifyCustomTokenRequest {
   

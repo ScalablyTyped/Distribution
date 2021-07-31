@@ -2,15 +2,13 @@ package typings.kefir.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Convert[U] extends StObject {
   
-  var convert: Boolean = js.native
+  var convert: Boolean
   
-  var error: U = js.native
+  var error: U
 }
 object Convert {
   
@@ -21,7 +19,7 @@ object Convert {
   }
   
   @scala.inline
-  implicit class ConvertMutableBuilder[Self <: Convert[_], U] (val x: Self with Convert[U]) extends AnyVal {
+  implicit class ConvertMutableBuilder[Self <: Convert[?], U] (val x: Self & Convert[U]) extends AnyVal {
     
     @scala.inline
     def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])

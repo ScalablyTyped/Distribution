@@ -3,7 +3,6 @@ package typings.nextSeo
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,26 +12,25 @@ object mod {
   class default ()
     extends Component[NextSeoProps, js.Object, js.Any]
   
-  @js.native
   trait Config extends StObject {
     
-    var canonical: js.UndefOr[String] = js.native
+    var canonical: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetAllPagesToNoIndex: js.UndefOr[Boolean] = js.native
+    var dangerouslySetAllPagesToNoIndex: js.UndefOr[Boolean] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var facebook: js.UndefOr[Facebook] = js.native
+    var facebook: js.UndefOr[Facebook] = js.undefined
     
-    var noindex: js.UndefOr[Boolean] = js.native
+    var noindex: js.UndefOr[Boolean] = js.undefined
     
-    var openGraph: js.UndefOr[OpenGraph] = js.native
+    var openGraph: js.UndefOr[OpenGraph] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleTemplate: js.UndefOr[String] = js.native
+    var titleTemplate: js.UndefOr[String] = js.undefined
     
-    var twitter: js.UndefOr[Twitter] = js.native
+    var twitter: js.UndefOr[Twitter] = js.undefined
   }
   object Config {
     
@@ -101,10 +99,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Facebook extends StObject {
     
-    var appId: js.UndefOr[Double] = js.native
+    var appId: js.UndefOr[Double] = js.undefined
   }
   object Facebook {
     
@@ -127,10 +124,9 @@ object mod {
   
   type NextSeo = Component[NextSeoProps, js.Object, js.Any]
   
-  @js.native
   trait NextSeoProps extends StObject {
     
-    var config: Config = js.native
+    var config: Config
   }
   object NextSeoProps {
     
@@ -148,32 +144,31 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenGraph extends StObject {
     
-    var article: js.UndefOr[OpenGraphArticle] = js.native
+    var article: js.UndefOr[OpenGraphArticle] = js.undefined
     
-    var book: js.UndefOr[OpenGraphBook] = js.native
+    var book: js.UndefOr[OpenGraphBook] = js.undefined
     
-    var defaultImageHeight: js.UndefOr[Double] = js.native
+    var defaultImageHeight: js.UndefOr[Double] = js.undefined
     
-    var defaultImageWidth: js.UndefOr[Double] = js.native
+    var defaultImageWidth: js.UndefOr[Double] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var images: js.UndefOr[js.Array[OpenGraphImages]] = js.native
+    var images: js.UndefOr[js.Array[OpenGraphImages]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var profile: js.UndefOr[OpenGraphProfile] = js.native
+    var profile: js.UndefOr[OpenGraphProfile] = js.undefined
     
-    var site_name: js.UndefOr[String] = js.native
+    var site_name: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object OpenGraph {
     
@@ -263,20 +258,19 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenGraphArticle extends StObject {
     
-    var authors: js.UndefOr[js.Array[String]] = js.native
+    var authors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var expirationTime: js.UndefOr[String] = js.native
+    var expirationTime: js.UndefOr[String] = js.undefined
     
-    var modifiedTime: js.UndefOr[String] = js.native
+    var modifiedTime: js.UndefOr[String] = js.undefined
     
-    var publishedTime: js.UndefOr[String] = js.native
+    var publishedTime: js.UndefOr[String] = js.undefined
     
-    var section: js.UndefOr[String] = js.native
+    var section: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OpenGraphArticle {
     
@@ -333,16 +327,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenGraphBook extends StObject {
     
-    var authors: js.UndefOr[js.Array[String]] = js.native
+    var authors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isbn: js.UndefOr[String] = js.native
+    var isbn: js.UndefOr[String] = js.undefined
     
-    var releaseDate: js.UndefOr[String] = js.native
+    var releaseDate: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object OpenGraphBook {
     
@@ -387,16 +380,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenGraphImages extends StObject {
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OpenGraphImages {
     
@@ -435,16 +427,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenGraphProfile extends StObject {
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var gender: js.UndefOr[String] = js.native
+    var gender: js.UndefOr[String] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object OpenGraphProfile {
     
@@ -483,14 +474,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Twitter extends StObject {
     
-    var cardType: js.UndefOr[String] = js.native
+    var cardType: js.UndefOr[String] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var site: js.UndefOr[String] = js.native
+    var site: js.UndefOr[String] = js.undefined
   }
   object Twitter {
     

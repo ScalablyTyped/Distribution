@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchInfo extends StObject {
   
   /** For matched detector predefined by Google. */
-  var predefinedDetector: js.UndefOr[PredefinedDetectorInfo] = js.native
+  var predefinedDetector: js.UndefOr[PredefinedDetectorInfo] = js.undefined
   
   /** For matched detector defined by administrators. */
-  var userDefinedDetector: js.UndefOr[UserDefinedDetectorInfo] = js.native
+  var userDefinedDetector: js.UndefOr[UserDefinedDetectorInfo] = js.undefined
 }
 object MatchInfo {
   

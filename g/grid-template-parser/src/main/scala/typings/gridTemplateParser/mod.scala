@@ -5,71 +5,59 @@ import typings.gridTemplateParser.anon.PartialArea
 import typings.gridTemplateParser.anon.PartialRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("grid-template-parser", "area")
+  @JSImport("grid-template-parser", JSImport.Namespace)
   @js.native
-  def area(): Area_ = js.native
-  @JSImport("grid-template-parser", "area")
-  @js.native
-  def area(rect: PartialRect): Area_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("grid-template-parser", "grid")
-  @js.native
-  def grid(template: String): Grid_ = js.native
+  @scala.inline
+  def area(): Area_ = ^.asInstanceOf[js.Dynamic].applyDynamic("area")().asInstanceOf[Area_]
+  @scala.inline
+  def area(rect: PartialRect): Area_ = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(rect.asInstanceOf[js.Any]).asInstanceOf[Area_]
   
-  @JSImport("grid-template-parser", "maxColumnEnd")
-  @js.native
-  def maxColumnEnd(grid: Grid_): Double = js.native
+  @scala.inline
+  def grid(template: String): Grid_ = ^.asInstanceOf[js.Dynamic].applyDynamic("grid")(template.asInstanceOf[js.Any]).asInstanceOf[Grid_]
   
-  @JSImport("grid-template-parser", "maxColumnStart")
-  @js.native
-  def maxColumnStart(grid: Grid_): Double = js.native
+  @scala.inline
+  def maxColumnEnd(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxColumnEnd")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "maxRowEnd")
-  @js.native
-  def maxRowEnd(grid: Grid_): Double = js.native
+  @scala.inline
+  def maxColumnStart(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxColumnStart")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "maxRowStart")
-  @js.native
-  def maxRowStart(grid: Grid_): Double = js.native
+  @scala.inline
+  def maxRowEnd(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxRowEnd")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "minColumnEnd")
-  @js.native
-  def minColumnEnd(grid: Grid_): Double = js.native
+  @scala.inline
+  def maxRowStart(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("maxRowStart")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "minColumnStart")
-  @js.native
-  def minColumnStart(grid: Grid_): Double = js.native
+  @scala.inline
+  def minColumnEnd(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minColumnEnd")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "minRowEnd")
-  @js.native
-  def minRowEnd(grid: Grid_): Double = js.native
+  @scala.inline
+  def minColumnStart(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minColumnStart")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "minRowStart")
-  @js.native
-  def minRowStart(grid: Grid_): Double = js.native
+  @scala.inline
+  def minRowEnd(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minRowEnd")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "rect")
-  @js.native
-  def rect(): Rect_ = js.native
-  @JSImport("grid-template-parser", "rect")
-  @js.native
-  def rect(area: PartialArea): Rect_ = js.native
+  @scala.inline
+  def minRowStart(grid: Grid_): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minRowStart")(grid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("grid-template-parser", "template")
-  @js.native
-  def template(grid: Grid_): String = js.native
+  @scala.inline
+  def rect(): Rect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rect")().asInstanceOf[Rect_]
+  @scala.inline
+  def rect(area: PartialArea): Rect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rect")(area.asInstanceOf[js.Any]).asInstanceOf[Rect_]
   
-  @js.native
+  @scala.inline
+  def template(grid: Grid_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(grid.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait Area_ extends StObject {
     
-    var column: Track = js.native
+    var column: Track
     
-    var row: Track = js.native
+    var row: Track
   }
   object Area_ {
     
@@ -90,14 +78,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Grid_ extends StObject {
     
-    var areas: StringDictionary[Area_] = js.native
+    var areas: StringDictionary[Area_]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Grid_ {
     
@@ -121,16 +108,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Rect_ extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Rect_ {
     
@@ -157,14 +143,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Track extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var span: Double = js.native
+    var span: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Track {
     

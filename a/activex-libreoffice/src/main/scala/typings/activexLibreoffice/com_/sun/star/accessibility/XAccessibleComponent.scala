@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,14 +33,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XAccessibleExtendedComponent
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleComponent extends XInterface {
+trait XAccessibleComponent
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the background color of this object.
     * @returns The returned color is the background color of this object or, if that is not supported, the default background color.
     */
-  val Background: Color = js.native
+  val Background: Color
   
   /**
     * Returns the bounding box of this object.
@@ -51,13 +51,13 @@ trait XAccessibleComponent extends XInterface {
     * position in screen coordinates.
     * @returns The coordinates of the returned rectangle are relative to this object's parent or relative to the screen on which this object is rendered if it h
     */
-  val Bounds: Rectangle = js.native
+  val Bounds: Rectangle
   
   /**
     * Returns the foreground color of this object.
     * @returns The returned color is the foreground color of this object or, if that is not supported, the default foreground color.
     */
-  val Foreground: Color = js.native
+  val Foreground: Color
   
   /**
     * Returns the location of the upper left corner of the object's bounding box relative to the parent.
@@ -65,7 +65,7 @@ trait XAccessibleComponent extends XInterface {
     * The coordinates of the bounding box are given relative to the parent's coordinate system.
     * @returns The coordinates of the returned position are relative to this object's parent or relative to the screen on which this object is rendered if it ha
     */
-  val Location: Point = js.native
+  val Location: Point
   
   /**
     * Returns the location of the upper left corner of the object's bounding box in screen coordinates.
@@ -74,13 +74,13 @@ trait XAccessibleComponent extends XInterface {
     * of the screen to which the object is rendered instead of being relative to the object's parent.
     * @returns The coordinates of the returned position are relative to the screen on which this object is rendered. If the object is not on any screen the retu
     */
-  val LocationOnScreen: Point = js.native
+  val LocationOnScreen: Point
   
   /**
     * Returns the size of this object's bounding box.
     * @returns The returned size is the size of this object or empty if it is not rendered on any screen.
     */
-  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /**
     * Tests whether the specified point lies within this object's bounds.
@@ -90,7 +90,7 @@ trait XAccessibleComponent extends XInterface {
     * @param Point Coordinates of the point to test. The origin of the coordinate system is the upper left corner of the object's bounding box as returned by
     * @returns Returns `TRUE` if the point lies within or on the object's bounding box and `FALSE` otherwise.
     */
-  def containsPoint(Point: Point): Boolean = js.native
+  def containsPoint(Point: Point): Boolean
   
   /**
     * Returns the {@link Accessible} child that is rendered under the given point.
@@ -100,13 +100,13 @@ trait XAccessibleComponent extends XInterface {
     * @param Point Coordinates of the test point for which to find the {@link Accessible} child. The origin of the coordinate system is the upper left corner
     * @returns If there is one child which is rendered so that its bounding box contains the test point then a reference to that object is returned. If there is
     */
-  def getAccessibleAtPoint(Point: Point): XAccessible = js.native
+  def getAccessibleAtPoint(Point: Point): XAccessible
   
   /**
     * Returns the background color of this object.
     * @returns The returned color is the background color of this object or, if that is not supported, the default background color.
     */
-  def getBackground(): Color = js.native
+  def getBackground(): Color
   
   /**
     * Returns the bounding box of this object.
@@ -116,13 +116,13 @@ trait XAccessibleComponent extends XInterface {
     * position in screen coordinates.
     * @returns The coordinates of the returned rectangle are relative to this object's parent or relative to the screen on which this object is rendered if it h
     */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
   
   /**
     * Returns the foreground color of this object.
     * @returns The returned color is the foreground color of this object or, if that is not supported, the default foreground color.
     */
-  def getForeground(): Color = js.native
+  def getForeground(): Color
   
   /**
     * Returns the location of the upper left corner of the object's bounding box relative to the parent.
@@ -130,7 +130,7 @@ trait XAccessibleComponent extends XInterface {
     * The coordinates of the bounding box are given relative to the parent's coordinate system.
     * @returns The coordinates of the returned position are relative to this object's parent or relative to the screen on which this object is rendered if it ha
     */
-  def getLocation(): Point = js.native
+  def getLocation(): Point
   
   /**
     * Returns the location of the upper left corner of the object's bounding box in screen coordinates.
@@ -139,13 +139,13 @@ trait XAccessibleComponent extends XInterface {
     * of the screen to which the object is rendered instead of being relative to the object's parent.
     * @returns The coordinates of the returned position are relative to the screen on which this object is rendered. If the object is not on any screen the retu
     */
-  def getLocationOnScreen(): Point = js.native
+  def getLocationOnScreen(): Point
   
   /**
     * Returns the size of this object's bounding box.
     * @returns The returned size is the size of this object or empty if it is not rendered on any screen.
     */
-  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /**
     * Grabs the focus to this object.
@@ -154,7 +154,7 @@ trait XAccessibleComponent extends XInterface {
     * attempt to take the focus. Nothing happens if that fails, otherwise the object has the focus. This method is called `requestFocus` in the Java
     * Accessibility API 1.4.
     */
-  def grabFocus(): Unit = js.native
+  def grabFocus(): Unit
 }
 object XAccessibleComponent {
   

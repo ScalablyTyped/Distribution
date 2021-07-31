@@ -3,7 +3,6 @@ package typings.activexOffice.Office
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,15 +38,6 @@ trait CanvasShapes extends StObject {
     SaveWithDocument: MsoTriState,
     Left: Double,
     Top: Double,
-    Width: js.UndefOr[scala.Nothing],
-    Height: Double
-  ): Shape = js.native
-  def AddPicture(
-    FileName: String,
-    LinkToFile: MsoTriState,
-    SaveWithDocument: MsoTriState,
-    Left: Double,
-    Top: Double,
     Width: Double
   ): Shape = js.native
   def AddPicture(
@@ -57,6 +47,15 @@ trait CanvasShapes extends StObject {
     Left: Double,
     Top: Double,
     Width: Double,
+    Height: Double
+  ): Shape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: MsoTriState,
+    SaveWithDocument: MsoTriState,
+    Left: Double,
+    Top: Double,
+    Width: Unit,
     Height: Double
   ): Shape = js.native
   

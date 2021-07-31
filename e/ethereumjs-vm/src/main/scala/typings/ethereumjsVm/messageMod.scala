@@ -5,14 +5,15 @@ import typings.ethereumjsVm.typesMod.PrecompileFunc
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
   @JSImport("ethereumjs-vm/dist/evm/message", JSImport.Default)
   @js.native
-  class default protected () extends Message {
+  class default protected ()
+    extends StObject
+       with Message {
     def this(opts: js.Any) = this()
   }
   

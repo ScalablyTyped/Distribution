@@ -3,38 +3,36 @@ package typings.vegaLite.srcDataMod
 import typings.vegaTypings.utilMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraticuleParams extends StObject {
   
   /**
     * Sets both the major and minor extents to the same values.
     */
-  var extent: js.UndefOr[Vector2[Vector2[Double]]] = js.native
+  var extent: js.UndefOr[Vector2[Vector2[Double]]] = js.undefined
   
   /**
     * The major extent of the graticule as a two-element array of coordinates.
     */
-  var extentMajor: js.UndefOr[Vector2[Vector2[Double]]] = js.native
+  var extentMajor: js.UndefOr[Vector2[Vector2[Double]]] = js.undefined
   
   /**
     * The minor extent of the graticule as a two-element array of coordinates.
     */
-  var extentMinor: js.UndefOr[Vector2[Vector2[Double]]] = js.native
+  var extentMinor: js.UndefOr[Vector2[Vector2[Double]]] = js.undefined
   
   /**
     * The precision of the graticule in degrees.
     *
     * __Default value:__ `2.5`
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets both the major and minor step angles to the same values.
     */
-  var step: js.UndefOr[Vector2[Double]] = js.native
+  var step: js.UndefOr[Vector2[Double]] = js.undefined
   
   /**
     * The major step angles of the graticule.
@@ -42,14 +40,14 @@ trait GraticuleParams extends StObject {
     *
     * __Default value:__ `[90, 360]`
     */
-  var stepMajor: js.UndefOr[Vector2[Double]] = js.native
+  var stepMajor: js.UndefOr[Vector2[Double]] = js.undefined
   
   /**
     * The minor step angles of the graticule.
     *
     * __Default value:__ `[10, 10]`
     */
-  var stepMinor: js.UndefOr[Vector2[Double]] = js.native
+  var stepMinor: js.UndefOr[Vector2[Double]] = js.undefined
 }
 object GraticuleParams {
   

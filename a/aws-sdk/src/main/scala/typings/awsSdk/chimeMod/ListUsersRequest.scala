@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUsersRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The maximum number of results to return in a single call. Defaults to 100.
     */
-  var MaxResults: js.UndefOr[ProfileServiceMaxResults] = js.native
+  var MaxResults: js.UndefOr[ProfileServiceMaxResults] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The user email address used to filter results. Maximum 1.
     */
-  var UserEmail: js.UndefOr[EmailAddress] = js.native
+  var UserEmail: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * The user type.
     */
-  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.native
+  var UserType: js.UndefOr[typings.awsSdk.chimeMod.UserType] = js.undefined
 }
 object ListUsersRequest {
   

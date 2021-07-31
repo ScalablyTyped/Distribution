@@ -10,9 +10,9 @@ Recursively merge values in a javascript object.
 | ------------------ | :-------------: |
 | Full name          | merge-deep |
 | Keywords           | clone, clone-deep, copy, deep, deep-clone, deep-merge, extend, key, keys, merge, merge-deep, object, objects, prop, properties, property, props, value, values |
-| # releases         | 0 |
-| # dependents       | 131 |
-| # downloads        | 123016700 |
+| # releases         | 2 |
+| # dependents       | 137 |
+| # downloads        | 147436490 |
 | # stars            | 7 |
 
 ## Links

@@ -3,10 +3,10 @@ package typings.inversify.interfacesMod.interfaces
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Newable[T]
-  extends _ServiceIdentifier[T]
+  extends StObject
      with Instantiable1[/* args (repeated) */ js.Any, T]
+     with _ServiceIdentifier[T]

@@ -6,15 +6,14 @@ import typings.mongodb.mongodbStrings.drop
 import typings.mongodb.mongodbStrings.dropDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEventOther[TSchema /* <: StringDictionary[js.Any] */]
-  extends ChangeEventBase[TSchema]
+  extends StObject
+     with ChangeEventBase[TSchema]
      with ChangeEvent[TSchema] {
   
-  var operationType: drop | dropDatabase = js.native
+  var operationType: drop | dropDatabase
 }
 object ChangeEventOther {
   
@@ -30,7 +29,7 @@ object ChangeEventOther {
   }
   
   @scala.inline
-  implicit class ChangeEventOtherMutableBuilder[Self <: ChangeEventOther[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventOther[TSchema]) extends AnyVal {
+  implicit class ChangeEventOtherMutableBuilder[Self <: ChangeEventOther[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventOther[TSchema]) extends AnyVal {
     
     @scala.inline
     def setOperationType(value: drop | dropDatabase): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])

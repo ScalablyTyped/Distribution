@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelSpotFleetRequestsErrorItem extends StObject {
   
   /**
     * The error.
     */
-  var Error: js.UndefOr[CancelSpotFleetRequestsError] = js.native
+  var Error: js.UndefOr[CancelSpotFleetRequestsError] = js.undefined
   
   /**
     * The ID of the Spot Fleet request.
     */
-  var SpotFleetRequestId: js.UndefOr[String] = js.native
+  var SpotFleetRequestId: js.UndefOr[String] = js.undefined
 }
 object CancelSpotFleetRequestsErrorItem {
   

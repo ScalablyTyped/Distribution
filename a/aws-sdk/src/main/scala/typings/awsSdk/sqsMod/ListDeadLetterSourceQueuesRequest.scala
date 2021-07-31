@@ -2,26 +2,24 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeadLetterSourceQueuesRequest extends StObject {
   
   /**
     * Maximum number of results to include in the response. Value range is 1 to 1000. You must set MaxResults to receive a value for NextToken in the response.
     */
-  var MaxResults: js.UndefOr[BoxedInteger] = js.native
+  var MaxResults: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * Pagination token to request the next set of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The URL of a dead-letter queue. Queue URLs and names are case-sensitive.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
 }
 object ListDeadLetterSourceQueuesRequest {
   

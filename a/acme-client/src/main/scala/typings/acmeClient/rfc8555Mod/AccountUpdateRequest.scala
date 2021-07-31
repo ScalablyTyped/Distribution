@@ -2,17 +2,15 @@ package typings.acmeClient.rfc8555Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountUpdateRequest extends StObject {
   
-  var contact: js.UndefOr[js.Array[String]] = js.native
+  var contact: js.UndefOr[js.Array[String]] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
-  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.native
+  var termsOfServiceAgreed: js.UndefOr[Boolean] = js.undefined
 }
 object AccountUpdateRequest {
   

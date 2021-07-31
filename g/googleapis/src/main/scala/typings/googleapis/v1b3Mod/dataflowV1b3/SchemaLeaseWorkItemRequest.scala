@@ -3,53 +3,51 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to lease WorkItems.
   */
-@js.native
 trait SchemaLeaseWorkItemRequest extends StObject {
   
   /**
     * The current timestamp at the worker.
     */
-  var currentWorkerTime: js.UndefOr[String] = js.native
+  var currentWorkerTime: js.UndefOr[String] = js.undefined
   
   /**
     * The [regional endpoint]
     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
     * contains the WorkItem&#39;s job.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The initial lease period.
     */
-  var requestedLeaseDuration: js.UndefOr[String] = js.native
+  var requestedLeaseDuration: js.UndefOr[String] = js.undefined
   
   /**
     * Untranslated bag-of-bytes WorkRequest from UnifiedWorker.
     */
-  var unifiedWorkerRequest: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var unifiedWorkerRequest: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Filter for WorkItem type.
     */
-  var workItemTypes: js.UndefOr[js.Array[String]] = js.native
+  var workItemTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Worker capabilities. WorkItems might be limited to workers with specific
     * capabilities.
     */
-  var workerCapabilities: js.UndefOr[js.Array[String]] = js.native
+  var workerCapabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Identifies the worker leasing work -- typically the ID of the virtual
     * machine running the worker.
     */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaseWorkItemRequest {
   

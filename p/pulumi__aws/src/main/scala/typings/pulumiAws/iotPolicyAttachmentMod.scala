@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iotPolicyAttachmentMod {
@@ -40,6 +39,10 @@ object iotPolicyAttachmentMod {
   /* static members */
   object PolicyAttachment {
     
+    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PolicyAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,40 +52,34 @@ object iotPolicyAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyAttachmentState): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PolicyAttachmentState, opts: CustomResourceOptions): PolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of PolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/policyAttachment.PolicyAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/policyAttachment.PolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/policyAttachment.PolicyAttachment */ Boolean]
   }
   
-  @js.native
   trait PolicyAttachmentArgs extends StObject {
     
     /**
       * The name of the policy to attach.
       */
-    val policy: Input[String | Policy] = js.native
+    val policy: Input[String | Policy]
     
     /**
       * The identity to which the policy is attached.
       */
-    val target: Input[ARN] = js.native
+    val target: Input[ARN]
   }
   object PolicyAttachmentArgs {
     
@@ -97,18 +94,17 @@ object iotPolicyAttachmentMod {
     }
   }
   
-  @js.native
   trait PolicyAttachmentState extends StObject {
     
     /**
       * The name of the policy to attach.
       */
-    val policy: js.UndefOr[Input[String | Policy]] = js.native
+    val policy: js.UndefOr[Input[String | Policy]] = js.undefined
     
     /**
       * The identity to which the policy is attached.
       */
-    val target: js.UndefOr[Input[ARN]] = js.native
+    val target: js.UndefOr[Input[ARN]] = js.undefined
   }
   object PolicyAttachmentState {
     

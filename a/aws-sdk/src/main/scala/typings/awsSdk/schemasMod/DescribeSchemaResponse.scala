@@ -2,56 +2,54 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSchemaResponse extends StObject {
   
   /**
     * The source of the schema definition.
     */
-  var Content: js.UndefOr[string] = js.native
+  var Content: js.UndefOr[string] = js.undefined
   
   /**
     * The description of the schema.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time that schema was modified.
     */
-  var LastModified: js.UndefOr[timestampIso8601] = js.native
+  var LastModified: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * The ARN of the schema.
     */
-  var SchemaArn: js.UndefOr[string] = js.native
+  var SchemaArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[string] = js.native
+  var SchemaName: js.UndefOr[string] = js.undefined
   
   /**
     * The version number of the schema
     */
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
   
   /**
     * Tags associated with the resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.schemasMod.Tags] = js.undefined
   
   /**
     * The type of the schema.
     */
-  var Type: js.UndefOr[string] = js.native
+  var Type: js.UndefOr[string] = js.undefined
   
   /**
     * The date the schema version was created.
     */
-  var VersionCreatedDate: js.UndefOr[timestampIso8601] = js.native
+  var VersionCreatedDate: js.UndefOr[timestampIso8601] = js.undefined
 }
 object DescribeSchemaResponse {
   

@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonstructures {
@@ -42,9 +41,8 @@ object jsonstructures {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "jsonstructures.JsonElement.create")
-    @js.native
-    def create(model: IModel): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = js.native
+    @scala.inline
+    def create(model: IModel): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement]
     
     /**
       * Creates and returns a new JsonElement instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object jsonstructures {
       *  6.6.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "jsonstructures.JsonElement.createInElementUnderChildren")
-    @js.native
-    def createInElementUnderChildren(container: typings.mendixmodelsdk.mappingsMod.mappings.Element): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = js.native
+    @scala.inline
+    def createInElementUnderChildren(container: typings.mendixmodelsdk.mappingsMod.mappings.Element): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement]
     
     /**
       * Creates and returns a new JsonElement instance in the SDK and on the server.
@@ -68,9 +65,8 @@ object jsonstructures {
       *  6.6.0 and higher
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "jsonstructures.JsonElement.createInJsonStructureUnderElements")
-    @js.native
-    def createInJsonStructureUnderElements(container: typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = js.native
+    @scala.inline
+    def createInJsonStructureUnderElements(container: typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonElement]
     
     /* static member */
     @JSImport("mendixmodelsdk", "jsonstructures.JsonElement.structureTypeName")
@@ -116,9 +112,8 @@ object jsonstructures {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @JSImport("mendixmodelsdk", "jsonstructures.JsonStructure.createIn")
-    @js.native
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure = js.native
+    @scala.inline
+    def createIn(container: IFolderBase): typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure]
     
     /* static member */
     @JSImport("mendixmodelsdk", "jsonstructures.JsonStructure.structureTypeName")

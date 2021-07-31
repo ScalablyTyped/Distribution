@@ -2,20 +2,18 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddScriptToEvaluateOnNewDocumentRequest extends StObject {
   
-  var source: String = js.native
+  var source: String
   
   /**
     * If specified, creates an isolated world with the given name and evaluates given script in it.
     * This world name will be used as the ExecutionContextDescription::name when the corresponding
     * event is emitted.
     */
-  var worldName: js.UndefOr[String] = js.native
+  var worldName: js.UndefOr[String] = js.undefined
 }
 object AddScriptToEvaluateOnNewDocumentRequest {
   

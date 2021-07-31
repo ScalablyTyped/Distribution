@@ -2,17 +2,15 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APIUser extends StObject {
   
-  var authToken: String = js.native
+  var authToken: String
   
-  var email: String = js.native
+  var email: String
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
 }
 object APIUser {
   

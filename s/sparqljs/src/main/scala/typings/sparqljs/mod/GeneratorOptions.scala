@@ -3,21 +3,19 @@ package typings.sparqljs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeneratorOptions extends StObject {
   
-  var allPrefixes: js.UndefOr[Boolean] = js.native
+  var allPrefixes: js.UndefOr[Boolean] = js.undefined
   
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
   
-  var newline: js.UndefOr[String] = js.native
+  var newline: js.UndefOr[String] = js.undefined
   
-  var prefixes: js.UndefOr[StringDictionary[String]] = js.native
+  var prefixes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var sparqlStar: js.UndefOr[Boolean] = js.native
+  var sparqlStar: js.UndefOr[Boolean] = js.undefined
 }
 object GeneratorOptions {
   

@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowsRequestedEventUIParam extends StObject {
   
   /**
     * Gets the next chunk index.
     */
-  var chunkIndex: js.UndefOr[Double] = js.native
+  var chunkIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the chunk size.
     */
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to igGridAppendRowsOnDemand.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the requested rows.
     */
-  var rows: js.UndefOr[js.Array[_]] = js.native
+  var rows: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object RowsRequestedEventUIParam {
   
@@ -58,7 +56,7 @@ object RowsRequestedEventUIParam {
     def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)

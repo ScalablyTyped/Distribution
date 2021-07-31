@@ -6,12 +6,14 @@ import typings.reactRelay.mod.RelayProp
 import typings.reactRelay.mod.RelayRefetchProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unwrapContainerMod {
   
-  @JSImport("relay-test-utils/lib/unwrapContainer", "unwrapContainer")
+  @JSImport("relay-test-utils/lib/unwrapContainer", JSImport.Namespace)
   @js.native
-  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def unwrapContainer[Props](ComponentClass: ComponentType[Props | RelayProp | RelayPaginationProp | RelayRefetchProp]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapContainer")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

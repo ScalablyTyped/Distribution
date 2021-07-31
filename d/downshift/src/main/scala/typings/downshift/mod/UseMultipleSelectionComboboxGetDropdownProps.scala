@@ -2,16 +2,15 @@ package typings.downshift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseMultipleSelectionComboboxGetDropdownProps
-  extends GetInputPropsOptions
+  extends StObject
+     with GetInputPropsOptions
      with GetPropsWithRefKey
      with UseMultipleSelectionGetDropdownProps {
   
-  var preventKeyAction: js.UndefOr[Boolean] = js.native
+  var preventKeyAction: js.UndefOr[Boolean] = js.undefined
 }
 object UseMultipleSelectionComboboxGetDropdownProps {
   

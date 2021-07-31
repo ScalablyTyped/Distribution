@@ -2,7 +2,6 @@ package typings.chrome.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object topSites {
   
-  @js.native
   trait MostVisitedURL extends StObject {
     
     /** The title of the page */
-    var title: String = js.native
+    var title: String
     
     /** The most visited URL. */
-    var url: String = js.native
+    var url: String
   }
   object MostVisitedURL {
     

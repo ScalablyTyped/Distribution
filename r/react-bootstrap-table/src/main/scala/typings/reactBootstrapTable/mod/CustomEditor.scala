@@ -3,16 +3,14 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends StObject {
   
   /**
     * Additional parameters to pass to the getElement function inside the props argument.
     */
-  var customEditorParameters: js.UndefOr[js.Object] = js.native
+  var customEditorParameters: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Required. Function to use to create the custom cell editor. Takes two parameters:
@@ -25,7 +23,7 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] 
       Unit
     ],
     props: CustomEditorProps[TRow, K]
-  ): ReactElement = js.native
+  ): ReactElement
 }
 object CustomEditor {
   
@@ -41,7 +39,7 @@ object CustomEditor {
   }
   
   @scala.inline
-  implicit class CustomEditorMutableBuilder[Self <: CustomEditor[_, _], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self with (CustomEditor[TRow, K])) extends AnyVal {
+  implicit class CustomEditorMutableBuilder[Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (CustomEditor[TRow, K])) extends AnyVal {
     
     @scala.inline
     def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])

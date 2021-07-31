@@ -2,19 +2,17 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchAssertionsError extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var showDiff: Boolean = js.native
+  var showDiff: Boolean
   
-  var stack: String = js.native
+  var stack: String
 }
 object NightwatchAssertionsError {
   

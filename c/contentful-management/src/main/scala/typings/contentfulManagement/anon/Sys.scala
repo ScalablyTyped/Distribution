@@ -3,13 +3,11 @@ package typings.contentfulManagement.anon
 import typings.contentfulManagement.commonTypesMod.MetaLinkProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sys extends StObject {
   
-  var sys: MetaLinkProps = js.native
+  var sys: MetaLinkProps
 }
 object Sys {
   

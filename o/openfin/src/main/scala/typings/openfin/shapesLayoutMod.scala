@@ -7,17 +7,15 @@ import typings.openfin.openfinStrings.component
 import typings.openfin.openfinStrings.row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapesLayoutMod {
   
-  @js.native
   trait Layout extends StObject {
     
-    var content: LayoutContent = js.native
+    var content: LayoutContent
     
-    var settings: ConstrainDragToContainer = js.native
+    var settings: ConstrainDragToContainer
   }
   object Layout {
     
@@ -41,19 +39,18 @@ object shapesLayoutMod {
     }
   }
   
-  @js.native
   trait LayoutColumn extends StObject {
     
-    var content: LayoutContent = js.native
+    var content: LayoutContent
     
-    var `type`: column = js.native
+    var `type`: column
   }
   object LayoutColumn {
     
     @scala.inline
-    def apply(content: LayoutContent, `type`: column): LayoutColumn = {
+    def apply(content: LayoutContent): LayoutColumn = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("column")
       __obj.asInstanceOf[LayoutColumn]
     }
     
@@ -71,21 +68,20 @@ object shapesLayoutMod {
     }
   }
   
-  @js.native
   trait LayoutComponent extends StObject {
     
-    var componentName: String = js.native
+    var componentName: String
     
-    var componentState: Title = js.native
+    var componentState: Title
     
-    var `type`: component = js.native
+    var `type`: component
   }
   object LayoutComponent {
     
     @scala.inline
-    def apply(componentName: String, componentState: Title, `type`: component): LayoutComponent = {
+    def apply(componentName: String, componentState: Title): LayoutComponent = {
       val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any], componentState = componentState.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("component")
       __obj.asInstanceOf[LayoutComponent]
     }
     
@@ -105,19 +101,18 @@ object shapesLayoutMod {
   
   type LayoutContent = js.Array[LayoutRow | LayoutColumn | LayoutComponent]
   
-  @js.native
   trait LayoutRow extends StObject {
     
-    var content: LayoutContent = js.native
+    var content: LayoutContent
     
-    var `type`: row = js.native
+    var `type`: row
   }
   object LayoutRow {
     
     @scala.inline
-    def apply(content: LayoutContent, `type`: row): LayoutRow = {
+    def apply(content: LayoutContent): LayoutRow = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("row")
       __obj.asInstanceOf[LayoutRow]
     }
     

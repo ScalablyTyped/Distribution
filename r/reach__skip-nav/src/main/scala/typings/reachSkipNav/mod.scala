@@ -7,7 +7,6 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,31 +14,30 @@ object mod {
   @JSImport("@reach/skip-nav", "SkipNavContent")
   @js.native
   class SkipNavContent protected ()
-    extends Component[SkipNavProps with HTMLProps[HTMLDivElement], js.Object, js.Any] {
-    def this(props: SkipNavProps with HTMLProps[HTMLDivElement]) = this()
+    extends Component[SkipNavProps & HTMLProps[HTMLDivElement], js.Object, js.Any] {
+    def this(props: SkipNavProps & HTMLProps[HTMLDivElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SkipNavProps with HTMLProps[HTMLDivElement], context: js.Any) = this()
+    def this(props: SkipNavProps & HTMLProps[HTMLDivElement], context: js.Any) = this()
   }
   
   @JSImport("@reach/skip-nav", "SkipNavLink")
   @js.native
   class SkipNavLink protected ()
-    extends Component[SkipNavProps with HTMLProps[HTMLAnchorElement], js.Object, js.Any] {
-    def this(props: SkipNavProps with HTMLProps[HTMLAnchorElement]) = this()
+    extends Component[SkipNavProps & HTMLProps[HTMLAnchorElement], js.Object, js.Any] {
+    def this(props: SkipNavProps & HTMLProps[HTMLAnchorElement]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: SkipNavProps with HTMLProps[HTMLAnchorElement], context: js.Any) = this()
+    def this(props: SkipNavProps & HTMLProps[HTMLAnchorElement], context: js.Any) = this()
   }
   
-  @js.native
   trait SkipNavProps extends StObject {
     
-    var children: js.UndefOr[String | ReactNode] = js.native
+    var children: js.UndefOr[String | ReactNode] = js.undefined
   }
   object SkipNavProps {
     

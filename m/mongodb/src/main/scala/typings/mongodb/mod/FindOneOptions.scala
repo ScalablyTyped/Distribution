@@ -3,21 +3,19 @@ package typings.mongodb.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOneOptions[T] extends StObject {
   
-  var awaitData: js.UndefOr[Boolean] = js.native
+  var awaitData: js.UndefOr[Boolean] = js.undefined
   
-  var batchSize: js.UndefOr[scala.Double] = js.native
+  var batchSize: js.UndefOr[scala.Double] = js.undefined
   
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @deprecated Use options.projection instead
@@ -25,50 +23,50 @@ trait FindOneOptions[T] extends StObject {
   var fields: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: boolean | number}
-    */ typings.mongodb.mongodbStrings.FindOneOptions with TopLevel[js.Any]
-  ] = js.native
+    */ typings.mongodb.mongodbStrings.FindOneOptions & TopLevel[js.Any]
+  ] = js.undefined
   
-  var hint: js.UndefOr[js.Object] = js.native
+  var hint: js.UndefOr[js.Object] = js.undefined
   
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var maxScan: js.UndefOr[scala.Double] = js.native
+  var maxScan: js.UndefOr[scala.Double] = js.undefined
   
-  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
-  var partial: js.UndefOr[Boolean] = js.native
+  var partial: js.UndefOr[Boolean] = js.undefined
   
-  var projection: js.UndefOr[SchemaMember[T, ProjectionOperators | scala.Double | Boolean | _]] = js.native
+  var projection: js.UndefOr[SchemaMember[T, ProjectionOperators | scala.Double | Boolean | js.Any]] = js.undefined
   
-  var promoteBuffers: js.UndefOr[Boolean] = js.native
+  var promoteBuffers: js.UndefOr[Boolean] = js.undefined
   
-  var promoteLongs: js.UndefOr[Boolean] = js.native
+  var promoteLongs: js.UndefOr[Boolean] = js.undefined
   
-  var promoteValues: js.UndefOr[Boolean] = js.native
+  var promoteValues: js.UndefOr[Boolean] = js.undefined
   
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var returnKey: js.UndefOr[Boolean] = js.native
+  var returnKey: js.UndefOr[Boolean] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
-  var showDiskLoc: js.UndefOr[Boolean] = js.native
+  var showDiskLoc: js.UndefOr[Boolean] = js.undefined
   
-  var skip: js.UndefOr[scala.Double] = js.native
+  var skip: js.UndefOr[scala.Double] = js.undefined
   
-  var snapshot: js.UndefOr[Boolean] = js.native
+  var snapshot: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[(js.Array[js.Tuple2[String, scala.Double]]) | SortOptionObject[T]] = js.native
+  var sort: js.UndefOr[(js.Array[js.Tuple2[String, scala.Double]]) | SortOptionObject[T]] = js.undefined
   
-  var tailable: js.UndefOr[Boolean] = js.native
+  var tailable: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Boolean] = js.native
+  var timeout: js.UndefOr[Boolean] = js.undefined
 }
 object FindOneOptions {
   
@@ -79,7 +77,7 @@ object FindOneOptions {
   }
   
   @scala.inline
-  implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions[_], T] (val x: Self with FindOneOptions[T]) extends AnyVal {
+  implicit class FindOneOptionsMutableBuilder[Self <: FindOneOptions[?], T] (val x: Self & FindOneOptions[T]) extends AnyVal {
     
     @scala.inline
     def setAwaitData(value: Boolean): Self = StObject.set(x, "awaitData", value.asInstanceOf[js.Any])
@@ -115,7 +113,7 @@ object FindOneOptions {
     def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in keyof T ]: boolean | number}
-      */ typings.mongodb.mongodbStrings.FindOneOptions with TopLevel[js.Any]
+      */ typings.mongodb.mongodbStrings.FindOneOptions & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -164,7 +162,7 @@ object FindOneOptions {
     def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
     
     @scala.inline
-    def setProjection(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | _]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    def setProjection(value: SchemaMember[T, ProjectionOperators | scala.Double | Boolean | js.Any]): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)

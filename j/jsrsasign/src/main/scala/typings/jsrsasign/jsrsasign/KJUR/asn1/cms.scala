@@ -8,7 +8,6 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,8 +53,9 @@ object cms {
     * AttributeSetValue ::= SET OF ANY
     * ```
     */
-  @js.native
-  trait Attribute extends ASN1Object
+  trait Attribute
+    extends StObject
+       with ASN1Object
   object Attribute {
     
     @scala.inline
@@ -94,14 +94,15 @@ object cms {
     * o.add(new KJUR.asn1.cms.SigningTime()); // add SigningTime attribute
     * hex = o.getEncodedHex();                // get hex encoded ASN.1 data
     */
-  @js.native
-  trait AttributeList extends ASN1Object {
+  trait AttributeList
+    extends StObject
+       with ASN1Object {
     
-    def add(item: Attribute): Unit = js.native
+    def add(item: Attribute): Unit
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def length(): Double = js.native
+    def length(): Double
   }
   object AttributeList {
     
@@ -154,10 +155,11 @@ object cms {
     * seq = new KJUR.asn1.DERSequence({array: a});
     * o = new KJUR.asn1.cms.ContentInfo({type: 'data', obj: seq});
     */
-  @js.native
-  trait ContentInfo extends ASN1Object {
+  trait ContentInfo
+    extends StObject
+       with ASN1Object {
     
-    def setContentType(params: String): Unit = js.native
+    def setContentType(params: String): Unit
   }
   object ContentInfo {
     
@@ -223,7 +225,9 @@ object cms {
     * o.isDetached = true;               // false as default
     */
   @js.native
-  trait EncapsulatedContentInfo extends ASN1Object {
+  trait EncapsulatedContentInfo
+    extends StObject
+       with ASN1Object {
     
     def setContentType(nameOrOid: String): Unit = js.native
     
@@ -253,10 +257,11 @@ object cms {
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber({cert: certPEM});
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber(certPEM); // since 1.0.3
     */
-  @js.native
-  trait IssuerAndSerialNumber extends ASN1Object {
+  trait IssuerAndSerialNumber
+    extends StObject
+       with ASN1Object {
     
-    def setByCertPEM(certPEM: String): Unit = js.native
+    def setByCertPEM(certPEM: String): Unit
   }
   object IssuerAndSerialNumber {
     
@@ -331,18 +336,19 @@ object cms {
     * sd.signerInfoList[0].sign(prvP8PEM, "SHA256withRSA");
     * hex = sd.getContentInfoEncodedHex();
     */
-  @js.native
-  trait SignedData extends ASN1Object {
+  trait SignedData
+    extends StObject
+       with ASN1Object {
     
-    def addCertificatesByPEM(certPEM: String): Unit = js.native
+    def addCertificatesByPEM(certPEM: String): Unit
     
-    def getContentInfo(): ContentInfo = js.native
+    def getContentInfo(): ContentInfo
     
-    def getContentInfoEncodedHex(): String = js.native
+    def getContentInfoEncodedHex(): String
     
-    def getPEM(): String = js.native
+    def getPEM(): String
     
-    var signerInfoList: js.Array[SignerInfo] = js.native
+    var signerInfoList: js.Array[SignerInfo]
   }
   object SignedData {
     
@@ -413,7 +419,9 @@ object cms {
     * o.sign(privteKeyParam, "SHA1withRSA");
     */
   @js.native
-  trait SignerInfo extends ASN1Object {
+  trait SignerInfo
+    extends StObject
+       with ASN1Object {
     
     def addUnsigned(attr: Attribute): Unit = js.native
     
@@ -475,10 +483,11 @@ object cms {
     * @example
     * o = new KJUR.asn1.cms.SigningCertificate({array: [certPEM]});
     */
-  @js.native
-  trait SigningCertificate extends Attribute {
+  trait SigningCertificate
+    extends StObject
+       with Attribute {
     
-    def setCerts(listPEM: js.Array[String]): Unit = js.native
+    def setCerts(listPEM: js.Array[String]): Unit
   }
   object SigningCertificate {
     
@@ -536,10 +545,11 @@ object cms {
     * o = new KJUR.asn1.cms.SigningCertificateV2({array: [certPEM],
     *                                             hashAlg: 'sha512'});
     */
-  @js.native
-  trait SigningCertificateV2 extends Attribute {
+  trait SigningCertificateV2
+    extends StObject
+       with Attribute {
     
-    def setCerts(listPEM: js.Array[String], hashAlg: String): Unit = js.native
+    def setCerts(listPEM: js.Array[String], hashAlg: String): Unit
   }
   object SigningCertificateV2 {
     

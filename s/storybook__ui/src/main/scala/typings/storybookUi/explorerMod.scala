@@ -5,7 +5,6 @@ import typings.storybookUi.sidebarTypesMod.CombinedDataset
 import typings.storybookUi.sidebarTypesMod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object explorerMod {
@@ -14,22 +13,21 @@ object explorerMod {
   @js.native
   val Explorer: FunctionComponent[ExplorerProps] = js.native
   
-  @js.native
   trait ExplorerProps extends StObject {
     
-    var dataset: CombinedDataset = js.native
+    var dataset: CombinedDataset
     
-    var isBrowsing: Boolean = js.native
+    var isBrowsing: Boolean
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
-    var selected: Selection = js.native
+    var selected: Selection
   }
   object ExplorerProps {
     
     @scala.inline
     def apply(dataset: CombinedDataset, isBrowsing: Boolean, isLoading: Boolean): ExplorerProps = {
-      val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dataset = dataset.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], selected = null)
       __obj.asInstanceOf[ExplorerProps]
     }
     

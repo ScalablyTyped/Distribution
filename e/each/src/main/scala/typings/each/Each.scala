@@ -7,7 +7,6 @@ import typings.each.eachStrings.item
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -46,7 +45,7 @@ trait Each extends StObject {
   
   def repeat(): Each = js.native
   
-  def shift(items: js.Array[_]): Unit = js.native
+  def shift(items: js.Array[js.Any]): Unit = js.native
   
   var started: Double = js.native
   
@@ -56,7 +55,7 @@ trait Each extends StObject {
   
   var total: Double = js.native
   
-  def unshift(items: js.Array[_]): Unit = js.native
+  def unshift(items: js.Array[js.Any]): Unit = js.native
   
-  def write(items: js.Array[_]): Unit = js.native
+  def write(items: js.Array[js.Any]): Unit = js.native
 }

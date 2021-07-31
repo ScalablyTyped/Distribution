@@ -4,7 +4,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleIndexNativeMod {
@@ -723,30 +722,29 @@ object styleIndexNativeMod {
     def warningButtonFill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning_button_fill")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ActionSheetStyle extends StObject {
     
-    var btn: ViewStyle = js.native
+    var btn: ViewStyle
     
-    var cancelBtn: ViewStyle = js.native
+    var cancelBtn: ViewStyle
     
-    var cancelBtnMask: ViewStyle = js.native
+    var cancelBtnMask: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: ViewStyle = js.native
+    var content: ViewStyle
     
-    var destructiveBtn: TextStyle = js.native
+    var destructiveBtn: TextStyle
     
-    var mask: ViewStyle = js.native
+    var mask: ViewStyle
     
-    var message: ViewStyle = js.native
+    var message: ViewStyle
     
-    var title: ViewStyle = js.native
+    var title: ViewStyle
     
-    var titleText: TextStyle = js.native
+    var titleText: TextStyle
     
-    var wrap: ViewStyle = js.native
+    var wrap: ViewStyle
   }
   object ActionSheetStyle {
     

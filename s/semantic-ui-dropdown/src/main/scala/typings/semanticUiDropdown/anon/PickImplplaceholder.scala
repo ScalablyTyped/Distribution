@@ -5,14 +5,12 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.auto
 import typings.semanticUiDropdown.semanticUiDropdownStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'placeholder'> */
-@js.native
 trait PickImplplaceholder extends StObject {
   
-  var placeholder: auto | value | `false` = js.native
+  var placeholder: auto | value | `false`
 }
 object PickImplplaceholder {
   

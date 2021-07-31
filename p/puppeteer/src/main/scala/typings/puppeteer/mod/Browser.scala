@@ -7,12 +7,12 @@ import typings.puppeteer.puppeteerStrings.targetcreated
 import typings.puppeteer.puppeteerStrings.targetdestroyed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Browser
-  extends EventEmitter
+  extends StObject
+     with EventEmitter
      with TargetAwaiter {
   
   /**
@@ -59,10 +59,7 @@ trait Browser
     * @param handler The callback function.
     */
   @JSName("on")
-  def on_disconnected(
-    eventName: disconnected,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def on_disconnected(eventName: disconnected, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
   def on_targetchanged(eventName: targetchanged, handler: js.Function2[/* e */ Target, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("on")
@@ -77,10 +74,7 @@ trait Browser
     * @param handler The callback function.
     */
   @JSName("once")
-  def once_disconnected(
-    eventName: disconnected,
-    handler: js.Function2[/* e */ js.UndefOr[scala.Nothing], /* repeated */ js.Any, Unit]
-  ): this.type = js.native
+  def once_disconnected(eventName: disconnected, handler: js.Function2[/* e */ Unit, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")
   def once_targetchanged(eventName: targetchanged, handler: js.Function2[/* e */ Target, /* repeated */ js.Any, Unit]): this.type = js.native
   @JSName("once")

@@ -3,7 +3,6 @@ package typings.angularCompiler.compilerMod
 import typings.angularCompiler.outputAstMod.FnParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "FunctionExpr")
@@ -19,13 +18,13 @@ class FunctionExpr protected ()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -37,36 +36,15 @@ class FunctionExpr protected ()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: Null,
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     name: String
   ) = this()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: Null,
-    sourceSpan: js.UndefOr[scala.Nothing],
-    name: String
-  ) = this()
-  def this(
-    params: js.Array[FnParam],
-    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: Null,
-    sourceSpan: Null,
+    sourceSpan: Unit,
     name: String
   ) = this()
   def this(
@@ -79,8 +57,22 @@ class FunctionExpr protected ()
   def this(
     params: js.Array[FnParam],
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    `type`: Unit,
+    sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: Unit,
+    sourceSpan: Unit,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: Unit,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     name: String
   ) = this()
   def this(
@@ -88,6 +80,13 @@ class FunctionExpr protected ()
     statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
     `type`: typings.angularCompiler.outputAstMod.Type,
     sourceSpan: Null,
+    name: String
+  ) = this()
+  def this(
+    params: js.Array[FnParam],
+    statements: js.Array[typings.angularCompiler.outputAstMod.Statement],
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    sourceSpan: Unit,
     name: String
   ) = this()
   def this(

@@ -2,21 +2,19 @@ package typings.ionicons.stencilPublicRuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueApi extends StObject {
   
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var flush: js.UndefOr[js.Function1[/* cb */ js.UndefOr[js.Function0[Unit]], Unit]] = js.native
+  var flush: js.UndefOr[js.Function1[/* cb */ js.UndefOr[js.Function0[Unit]], Unit]] = js.undefined
   
-  def read(cb: RafCallback): Unit = js.native
+  def read(cb: RafCallback): Unit
   
-  def tick(cb: RafCallback): Unit = js.native
+  def tick(cb: RafCallback): Unit
   
-  def write(cb: RafCallback): Unit = js.native
+  def write(cb: RafCallback): Unit
 }
 object QueueApi {
   

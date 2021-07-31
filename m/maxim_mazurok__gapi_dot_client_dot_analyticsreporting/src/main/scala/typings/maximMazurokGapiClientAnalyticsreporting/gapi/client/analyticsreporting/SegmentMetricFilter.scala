@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentMetricFilter extends StObject {
   
   /** The value to compare against. If the operator is `BETWEEN`, this value is treated as minimum comparison value. */
-  var comparisonValue: js.UndefOr[String] = js.native
+  var comparisonValue: js.UndefOr[String] = js.undefined
   
   /** Max comparison value is only used for `BETWEEN` operator. */
-  var maxComparisonValue: js.UndefOr[String] = js.native
+  var maxComparisonValue: js.UndefOr[String] = js.undefined
   
   /** The metric that will be filtered on. A `metricFilter` must contain a metric name. */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
   
   /** Specifies is the operation to perform to compare the metric. The default is `EQUAL`. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
   /**
     * Scope for a metric defines the level at which that metric is defined. The specified metric scope must be equal to or greater than its primary scope as defined in the data model. The
     * primary scope is defined by if the segment is selecting users or sessions.
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object SegmentMetricFilter {
   

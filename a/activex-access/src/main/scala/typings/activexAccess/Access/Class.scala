@@ -2,14 +2,12 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Class extends StObject {
   
   @JSName("Access.Class_typekey")
-  var AccessDotClass_typekey: Class = js.native
+  var AccessDotClass_typekey: Class
 }
 object Class {
   

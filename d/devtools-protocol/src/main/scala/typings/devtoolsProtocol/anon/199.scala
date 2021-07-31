@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Tethering.UnbindRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `199` extends StObject {
   
-  var paramsType: js.Array[UnbindRequest] = js.native
+  var paramsType: js.Array[UnbindRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `199` {
   

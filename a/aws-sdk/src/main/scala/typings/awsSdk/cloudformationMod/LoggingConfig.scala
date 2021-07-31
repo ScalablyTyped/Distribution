@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfig extends StObject {
   
   /**
     * The Amazon CloudWatch log group to which CloudFormation sends error logging information when invoking the type's handlers.
     */
-  var LogGroupName: typings.awsSdk.cloudformationMod.LogGroupName = js.native
+  var LogGroupName: typings.awsSdk.cloudformationMod.LogGroupName
   
   /**
     * The ARN of the role that CloudFormation should assume when sending log entries to CloudWatch logs.
     */
-  var LogRoleArn: RoleArn = js.native
+  var LogRoleArn: RoleArn
 }
 object LoggingConfig {
   

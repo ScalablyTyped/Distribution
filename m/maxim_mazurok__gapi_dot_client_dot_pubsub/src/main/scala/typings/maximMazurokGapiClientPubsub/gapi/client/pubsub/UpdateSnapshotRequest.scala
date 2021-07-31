@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSnapshotRequest extends StObject {
   
   /** Required. The updated snapshot object. */
-  var snapshot: js.UndefOr[Snapshot] = js.native
+  var snapshot: js.UndefOr[Snapshot] = js.undefined
   
   /** Required. Indicates which fields in the provided snapshot to update. Must be specified and non-empty. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateSnapshotRequest {
   

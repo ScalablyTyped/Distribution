@@ -2,19 +2,17 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendPayload extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  var `type`: LegendType = js.native
+  var `type`: LegendType
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object LegendPayload {
   

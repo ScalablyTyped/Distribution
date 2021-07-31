@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
   */
-@js.native
 trait PreferredSchedulingTerm extends StObject {
   
   /**
     * A node selector term, associated with the corresponding weight.
     */
-  var preference: Input[NodeSelectorTerm] = js.native
+  var preference: Input[NodeSelectorTerm]
   
   /**
     * Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.
     */
-  var weight: Input[Double] = js.native
+  var weight: Input[Double]
 }
 object PreferredSchedulingTerm {
   

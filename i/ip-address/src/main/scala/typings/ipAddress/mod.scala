@@ -6,7 +6,6 @@ import typings.ipAddress.anon.Typeofhelpers
 import typings.jsbn.mod.BigInteger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,6 +19,10 @@ object mod {
   /* static members */
   object Address4 {
     
+    @JSImport("ip-address", "Address4")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Converts a BigInteger to a v4 address object
       * @memberof Address4
@@ -27,9 +30,8 @@ object mod {
       * @param {BigInteger} bigInteger - a BigInteger to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address", "Address4.fromBigInteger")
-    @js.native
-    def fromBigInteger(bigInteger: BigInteger): typings.ipAddress.ipv4Mod.Address4 = js.native
+    @scala.inline
+    def fromBigInteger(bigInteger: BigInteger): typings.ipAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv4Mod.Address4]
     
     /**
       * Converts a hex string to an IPv4 address object
@@ -38,9 +40,8 @@ object mod {
       * @param {string} hex - a hex string to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address", "Address4.fromHex")
-    @js.native
-    def fromHex(hex: String): typings.ipAddress.ipv4Mod.Address4 = js.native
+    @scala.inline
+    def fromHex(hex: String): typings.ipAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv4Mod.Address4]
     
     /**
       * Converts an integer into a IPv4 address object
@@ -49,13 +50,11 @@ object mod {
       * @param {integer} integer - a number to convert
       * @returns {Address4}
       */
-    @JSImport("ip-address", "Address4.fromInteger")
-    @js.native
-    def fromInteger(integer: Double): typings.ipAddress.ipv4Mod.Address4 = js.native
+    @scala.inline
+    def fromInteger(integer: Double): typings.ipAddress.ipv4Mod.Address4 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInteger")(integer.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv4Mod.Address4]
     
-    @JSImport("ip-address", "Address4.isValid")
-    @js.native
-    def isValid(address: String): Boolean = js.native
+    @scala.inline
+    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("ip-address", "Address6")
@@ -68,6 +67,10 @@ object mod {
   /* static members */
   object Address6 {
     
+    @JSImport("ip-address", "Address6")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an IPv6-mapped address given an IPv4 address
       * @memberof Address6
@@ -79,9 +82,8 @@ object mod {
       * address.correctForm(); // '::ffff:c0a8:1'
       * address.to4in6(); // '::ffff:192.168.0.1'
       */
-    @JSImport("ip-address", "Address6.fromAddress4")
-    @js.native
-    def fromAddress4(address: String): typings.ipAddress.ipv6Mod.Address6 = js.native
+    @scala.inline
+    def fromAddress4(address: String): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     /**
       * Return an address from ip6.arpa form
@@ -93,9 +95,8 @@ object mod {
       * var address = Address6.fromArpa(e.f.f.f.3.c.2.6.f.f.f.e.6.6.8.e.1.0.6.7.9.4.e.c.0.0.0.0.1.0.0.2.ip6.arpa.)
       * address.correctForm(); // '2001:0:ce49:7601:e866:efff:62c3:fffe'
       */
-    @JSImport("ip-address", "Address6.fromArpa")
-    @js.native
-    def fromArpa(arpaFormAddress: String): typings.ipAddress.ipv6Mod.Address6 = js.native
+    @scala.inline
+    def fromArpa(arpaFormAddress: String): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     /**
       * Convert a BigInteger to a v6 address object
@@ -108,9 +109,8 @@ object mod {
       * var address = Address6.fromBigInteger(bigInteger);
       * address.correctForm(); // '::e8:d4a5:1000'
       */
-    @JSImport("ip-address", "Address6.fromBigInteger")
-    @js.native
-    def fromBigInteger(bigInteger: BigInteger): typings.ipAddress.ipv6Mod.Address6 = js.native
+    @scala.inline
+    def fromBigInteger(bigInteger: BigInteger): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     /**
       * Convert a byte array to an Address6 object
@@ -118,9 +118,8 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    @JSImport("ip-address", "Address6.fromByteArray")
-    @js.native
-    def fromByteArray(bytes: js.Array[_]): typings.ipAddress.ipv6Mod.Address6 = js.native
+    @scala.inline
+    def fromByteArray(bytes: js.Array[js.Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -132,9 +131,8 @@ object mod {
       * addressAndPort.address.correctForm(); // 'ffff::'
       * addressAndPort.port; // 8080
       */
-    @JSImport("ip-address", "Address6.fromURL")
-    @js.native
-    def fromURL(url: String): Address | Error = js.native
+    @scala.inline
+    def fromURL(url: String): Address | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Address | Error]
     
     /**
       * Convert an unsigned byte array to an Address6 object
@@ -142,13 +140,11 @@ object mod {
       * @static
       * @returns {Address6}
       */
-    @JSImport("ip-address", "Address6.fromUnsignedByteArray")
-    @js.native
-    def fromUnsignedByteArray(bytes: js.Array[_]): typings.ipAddress.ipv6Mod.Address6 = js.native
+    @scala.inline
+    def fromUnsignedByteArray(bytes: js.Array[js.Any]): typings.ipAddress.ipv6Mod.Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.ipAddress.ipv6Mod.Address6]
     
-    @JSImport("ip-address", "Address6.isValid")
-    @js.native
-    def isValid(address: String): Boolean = js.native
+    @scala.inline
+    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object v6 {

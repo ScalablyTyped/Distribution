@@ -12,7 +12,7 @@ A lightweight, battle tested, fast, CSS parser in JavaScript.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 8415 |
+| # downloads        | 11829 |
 | # stars            | 0 |
 
 ## Links

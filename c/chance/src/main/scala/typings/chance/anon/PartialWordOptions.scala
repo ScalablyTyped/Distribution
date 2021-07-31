@@ -2,18 +2,16 @@ package typings.chance.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chance.Chance.WordOptions> */
-@js.native
 trait PartialWordOptions extends StObject {
   
-  var capitalize: js.UndefOr[Boolean] = js.native
+  var capitalize: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var syllables: js.UndefOr[Double] = js.native
+  var syllables: js.UndefOr[Double] = js.undefined
 }
 object PartialWordOptions {
   

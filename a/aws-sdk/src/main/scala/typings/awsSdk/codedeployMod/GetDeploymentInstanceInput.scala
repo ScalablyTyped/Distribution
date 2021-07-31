@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeploymentInstanceInput extends StObject {
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: DeploymentId = js.native
+  var deploymentId: DeploymentId
   
   /**
     *  The unique ID of an instance in the deployment group. 
     */
-  var instanceId: InstanceId = js.native
+  var instanceId: InstanceId
 }
 object GetDeploymentInstanceInput {
   

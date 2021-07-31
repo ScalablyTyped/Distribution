@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 import typings.devtoolsProtocol.mod.Protocol.Target.TargetID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWindowForTargetRequest extends StObject {
   
   /**
     * Devtools agent host id. If called as a part of the session, associated targetId is used.
     */
-  var targetId: js.UndefOr[TargetID] = js.native
+  var targetId: js.UndefOr[TargetID] = js.undefined
 }
 object GetWindowForTargetRequest {
   

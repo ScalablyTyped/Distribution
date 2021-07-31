@@ -3,12 +3,12 @@ package typings.naverWhale.whale.webRequest
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebAuthenticationChallengeEvent
-  extends Event[
+  extends StObject
+     with Event[
       js.Function2[
         /* details */ typings.chrome.chrome.webRequest.WebAuthenticationChallengeDetails, 
         /* callback */ js.UndefOr[
@@ -26,7 +26,7 @@ trait WebAuthenticationChallengeEvent
       ], 
       Unit
     ],
-    filter: js.UndefOr[scala.Nothing],
+    filter: Unit,
     opt_extraInfoSpec: js.Array[String]
   ): Unit = js.native
   def addListener(

@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -223,7 +222,7 @@ trait Glue extends Service {
   ): Request[CheckSchemaVersionValidityResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Glue: ConfigBase with ClientConfiguration = js.native
+  var config_Glue: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a classifier in the user's account. This can be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.

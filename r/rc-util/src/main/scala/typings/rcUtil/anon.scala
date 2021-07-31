@@ -3,19 +3,17 @@ package typings.rcUtil
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterClose extends StObject {
     
-    var afterClose: js.Function = js.native
+    var afterClose: js.Function
     
-    var onClose: js.Function = js.native
+    var onClose: js.Function
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object AfterClose {
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultValue[T] extends StObject {
     
-    var defaultValue: js.UndefOr[T | js.Function0[T]] = js.native
+    var defaultValue: js.UndefOr[T | js.Function0[T]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ T, /* prevValue */ T, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ T, /* prevValue */ T, Unit]] = js.undefined
     
-    var postState: js.UndefOr[js.Function1[/* value */ T, T]] = js.native
+    var postState: js.UndefOr[js.Function1[/* value */ T, T]] = js.undefined
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object DefaultValue {
     
@@ -59,7 +56,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultValueMutableBuilder[Self <: DefaultValue[_], T] (val x: Self with DefaultValue[T]) extends AnyVal {
+    implicit class DefaultValueMutableBuilder[Self <: DefaultValue[?], T] (val x: Self & DefaultValue[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: T | js.Function0[T]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -90,16 +87,15 @@ object anon {
     }
   }
   
-  @js.native
   trait GetContainer extends StObject {
     
-    def getContainer(): HTMLElement = js.native
+    def getContainer(): HTMLElement
     
-    def getOpenCount(): Double = js.native
+    def getOpenCount(): Double
     
-    var ref: js.UndefOr[js.Function1[/* c */ js.Any, Unit]] = js.native
+    var ref: js.UndefOr[js.Function1[/* c */ js.Any, Unit]] = js.undefined
     
-    def switchScrollingEffect(): Unit = js.native
+    def switchScrollingEffect(): Unit
   }
   object GetContainer {
     
@@ -129,10 +125,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MockRestore extends StObject {
     
-    def mockRestore(): Unit = js.native
+    def mockRestore(): Unit
   }
   object MockRestore {
     
@@ -150,12 +145,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PrevProps extends StObject {
     
-    var _self: js.Any = js.native
+    var _self: js.Any
     
-    var prevProps: js.Any = js.native
+    var prevProps: js.Any
   }
   object PrevProps {
     
@@ -176,10 +170,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PrevPropsAny extends StObject {
     
-    var prevProps: js.Any = js.native
+    var prevProps: js.Any
   }
   object PrevPropsAny {
     

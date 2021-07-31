@@ -4,13 +4,13 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NoteSubGroup extends Modifier {
+trait NoteSubGroup
+  extends StObject
+     with Modifier {
   
-  def preFormat(): Unit = js.native
+  def preFormat(): Unit
 }
 object NoteSubGroup {
   

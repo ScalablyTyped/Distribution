@@ -3,15 +3,13 @@ package typings.storybookUi.anon
 import typings.storybookUi.sidebarTypesMod.StoryRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLastViewed extends StObject {
   
-  def clearLastViewed(): Unit = js.native
+  def clearLastViewed(): Unit
   
-  def getLastViewed(): js.Array[StoryRef] = js.native
+  def getLastViewed(): js.Array[StoryRef]
 }
 object GetLastViewed {
   

@@ -2,13 +2,11 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableReplica extends StObject {
   
-  var regionName: String = js.native
+  var regionName: String
 }
 object GetTableReplica {
   

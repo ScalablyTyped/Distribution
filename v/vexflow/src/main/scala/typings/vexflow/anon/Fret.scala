@@ -2,15 +2,13 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fret extends StObject {
   
-  var fret: Double = js.native
+  var fret: Double
   
-  var str: Double = js.native
+  var str: Double
 }
 object Fret {
   

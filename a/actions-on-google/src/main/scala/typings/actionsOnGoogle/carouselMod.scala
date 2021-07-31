@@ -10,7 +10,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselSelectCaro
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
@@ -27,15 +26,16 @@ object carouselMod {
   
   type CarouselArgument = OptionArgument
   
-  @js.native
-  trait CarouselOptionItem extends OptionItem {
+  trait CarouselOptionItem
+    extends StObject
+       with OptionItem {
     
     /**
       * Description text of the item.
       * @public
       */
     @JSName("description")
-    var description_CarouselOptionItem: String = js.native
+    var description_CarouselOptionItem: String
   }
   object CarouselOptionItem {
     
@@ -53,20 +53,19 @@ object carouselMod {
     }
   }
   
-  @js.native
   trait CarouselOptions extends StObject {
     
     /**
       * Sets the display options for the images in this carousel.
       * @public
       */
-    var display: js.UndefOr[GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions] = js.native
+    var display: js.UndefOr[GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions] = js.undefined
     
     /**
       * List of 2-20 items to show in this carousel. Required.
       * @public
       */
-    var items: OptionItems[CarouselOptionItem] | js.Array[GoogleActionsV2UiElementsCarouselSelectCarouselItem] = js.native
+    var items: OptionItems[CarouselOptionItem] | js.Array[GoogleActionsV2UiElementsCarouselSelectCarouselItem]
   }
   object CarouselOptions {
     

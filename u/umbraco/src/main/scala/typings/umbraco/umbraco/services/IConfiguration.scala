@@ -2,22 +2,20 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration
   */
-@js.native
 trait IConfiguration extends StObject {
   
-  var dimensions: IDimension = js.native
+  var dimensions: IDimension
   
-  var maxImageSize: Double = js.native
+  var maxImageSize: Double
   
-  var stylesheets: js.Array[String] = js.native
+  var stylesheets: js.Array[String]
   
-  var toolbar: js.Array[String] = js.native
+  var toolbar: js.Array[String]
 }
 object IConfiguration {
   

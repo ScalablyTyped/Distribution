@@ -3,16 +3,15 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with CustomRenderedComponent
      with ShadowedComponent {
   
-  var noSpacing: js.UndefOr[Boolean] = js.native
+  var noSpacing: js.UndefOr[Boolean] = js.undefined
 }
 object GridProps {
   

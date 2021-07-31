@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a container of the redline objects of the document. */
-@js.native
-trait XRedlinesSupplier extends XInterface {
+trait XRedlinesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns an enumeration access that provides access to the redline objects of the document.  The returned objects implement at least the interface {@link  */
-  val Redlines: XEnumerationAccess = js.native
+  val Redlines: XEnumerationAccess
   
   /** @returns an enumeration access that provides access to the redline objects of the document.  The returned objects implement at least the interface {@link  */
-  def getRedlines(): XEnumerationAccess = js.native
+  def getRedlines(): XEnumerationAccess
 }
 object XRedlinesSupplier {
   

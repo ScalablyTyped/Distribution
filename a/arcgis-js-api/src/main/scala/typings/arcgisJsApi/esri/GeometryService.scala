@@ -2,19 +2,20 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeometryService extends Task {
+trait GeometryService
+  extends StObject
+     with Task {
   
   /**
     * Computes the area and length for the input [polygons](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#areasAndLengths)
     */
-  def areasAndLengths(areasAndLengthsParameters: AreasAndLengthsParameters): js.Promise[_] = js.native
-  def areasAndLengths(areasAndLengthsParameters: AreasAndLengthsParameters, requestOptions: js.Any): js.Promise[_] = js.native
+  def areasAndLengths(areasAndLengthsParameters: AreasAndLengthsParameters): js.Promise[js.Any] = js.native
+  def areasAndLengths(areasAndLengthsParameters: AreasAndLengthsParameters, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * The Auto Complete operation is performed on a geometry service resource.
@@ -45,8 +46,8 @@ trait GeometryService extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#cut)
     */
-  def cut(geometries: js.Array[Geometry_], cutter: Polyline): js.Promise[_] = js.native
-  def cut(geometries: js.Array[Geometry_], cutter: Polyline, requestOptions: js.Any): js.Promise[_] = js.native
+  def cut(geometries: js.Array[Geometry_], cutter: Polyline): js.Promise[js.Any] = js.native
+  def cut(geometries: js.Array[Geometry_], cutter: Polyline, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * The densify operation is performed on a geometry service resource.
@@ -77,8 +78,8 @@ trait GeometryService extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#fromGeoCoordinateString)
     */
-  def fromGeoCoordinateString(params: GeometryServiceFromGeoCoordinateStringParams): js.Promise[_] = js.native
-  def fromGeoCoordinateString(params: GeometryServiceFromGeoCoordinateStringParams, requestOptions: js.Any): js.Promise[_] = js.native
+  def fromGeoCoordinateString(params: GeometryServiceFromGeoCoordinateStringParams): js.Promise[js.Any] = js.native
+  def fromGeoCoordinateString(params: GeometryServiceFromGeoCoordinateStringParams, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Generalizes the input geometries using the Douglas-Peucker algorithm.
@@ -109,8 +110,8 @@ trait GeometryService extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-GeometryService.html#lengths)
     */
-  def lengths(params: LengthsParameters): js.Promise[_] = js.native
-  def lengths(params: LengthsParameters, requestOptions: js.Any): js.Promise[_] = js.native
+  def lengths(params: LengthsParameters): js.Promise[js.Any] = js.native
+  def lengths(params: LengthsParameters, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Constructs the offset of the input geometries based on a planar distance.

@@ -2,29 +2,27 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents function call argument. Either remote object id <code>objectId</code>, primitive <code>value</code>, unserializable primitive value or neither of (for undefined) them should be specified.
   */
-@js.native
 trait CallArgument extends StObject {
   
   /**
     * Remote object handle.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * Primitive value which can not be JSON-stringified.
     */
-  var unserializableValue: js.UndefOr[UnserializableValue] = js.native
+  var unserializableValue: js.UndefOr[UnserializableValue] = js.undefined
   
   /**
     * Primitive value or serializable javascript object.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CallArgument {
   

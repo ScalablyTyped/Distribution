@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetHealth extends StObject {
   
   /**
     * A description of the health of the RDS Proxy target. If the State is AVAILABLE, a description is not included.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the current health State of the RDS Proxy target.
     */
-  var Reason: js.UndefOr[TargetHealthReason] = js.native
+  var Reason: js.UndefOr[TargetHealthReason] = js.undefined
   
   /**
     * The current state of the connection health lifecycle for the RDS Proxy target. The following is a typical lifecycle example for the states of an RDS Proxy target:   registering &gt; unavailable &gt; available &gt; unavailable &gt; available 
     */
-  var State: js.UndefOr[TargetState] = js.native
+  var State: js.UndefOr[TargetState] = js.undefined
 }
 object TargetHealth {
   

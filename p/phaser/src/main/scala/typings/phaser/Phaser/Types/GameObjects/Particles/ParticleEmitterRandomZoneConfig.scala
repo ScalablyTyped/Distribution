@@ -2,21 +2,19 @@ package typings.phaser.Phaser.Types.GameObjects.Particles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticleEmitterRandomZoneConfig extends StObject {
   
   /**
     * A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.RandomZone#source}.
     */
-  var source: RandomZoneSource = js.native
+  var source: RandomZoneSource
   
   /**
     * 'random'.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ParticleEmitterRandomZoneConfig {
   

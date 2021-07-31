@@ -2,22 +2,20 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionOptions extends StObject {
   
   /**
     * Whether causal consistency should be enabled on this session
     * @default true
     */
-  var causalConsistency: js.UndefOr[Boolean] = js.native
+  var causalConsistency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The default TransactionOptions to use for transactions started on this session.
     */
-  var defaultTransactionOptions: js.UndefOr[TransactionOptions] = js.native
+  var defaultTransactionOptions: js.UndefOr[TransactionOptions] = js.undefined
 }
 object SessionOptions {
   

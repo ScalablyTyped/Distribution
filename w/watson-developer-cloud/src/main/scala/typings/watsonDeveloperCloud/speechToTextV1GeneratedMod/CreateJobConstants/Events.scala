@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,21 +12,29 @@ sealed trait Events extends StObject
 object Events extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Events with String] = js.native
+  def apply(value: String): js.UndefOr[Events & String] = js.native
   
   @js.native
-  sealed trait RECOGNITIONS_COMPLETED extends Events
-  /* "recognitions.completed" */ val RECOGNITIONS_COMPLETED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED with String = js.native
+  sealed trait RECOGNITIONS_COMPLETED
+    extends StObject
+       with Events
+  /* "recognitions.completed" */ val RECOGNITIONS_COMPLETED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED & String = js.native
   
   @js.native
-  sealed trait RECOGNITIONS_COMPLETED_WITH_RESULTS extends Events
-  /* "recognitions.completed_with_results" */ val RECOGNITIONS_COMPLETED_WITH_RESULTS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED_WITH_RESULTS with String = js.native
+  sealed trait RECOGNITIONS_COMPLETED_WITH_RESULTS
+    extends StObject
+       with Events
+  /* "recognitions.completed_with_results" */ val RECOGNITIONS_COMPLETED_WITH_RESULTS: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED_WITH_RESULTS & String = js.native
   
   @js.native
-  sealed trait RECOGNITIONS_FAILED extends Events
-  /* "recognitions.failed" */ val RECOGNITIONS_FAILED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_FAILED with String = js.native
+  sealed trait RECOGNITIONS_FAILED
+    extends StObject
+       with Events
+  /* "recognitions.failed" */ val RECOGNITIONS_FAILED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_FAILED & String = js.native
   
   @js.native
-  sealed trait RECOGNITIONS_STARTED extends Events
-  /* "recognitions.started" */ val RECOGNITIONS_STARTED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_STARTED with String = js.native
+  sealed trait RECOGNITIONS_STARTED
+    extends StObject
+       with Events
+  /* "recognitions.started" */ val RECOGNITIONS_STARTED: typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_STARTED & String = js.native
 }

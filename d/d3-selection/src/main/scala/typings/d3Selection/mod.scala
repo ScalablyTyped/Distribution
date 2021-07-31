@@ -15,136 +15,118 @@ import typings.std.SVGSVGElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-selection", "create")
+  @JSImport("d3-selection", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): Selection_[
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
-    js.UndefOr[scala.Nothing], 
+    Unit, 
     Null, 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("d3-selection", "create")
-  @js.native
-  def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any, 
+    Unit, 
+    Null, 
+    Unit
+  ]]
+  @scala.inline
+  def create[NewGElement /* <: Element */](name: String): Selection_[NewGElement, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Selection_[NewGElement, Unit, Null, Unit]]
   
-  @JSImport("d3-selection", "creator")
-  @js.native
+  @scala.inline
   def creator[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */](name: K): js.ThisFunction0[
     /* this */ BaseType, 
     /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
-  ] = js.native
-  @JSImport("d3-selection", "creator")
-  @js.native
-  def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[
+    /* this */ BaseType, 
+    /* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any
+  ]]
+  @scala.inline
+  def creator[NewGElement /* <: Element */](name: String): js.ThisFunction0[/* this */ BaseType, NewGElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("creator")(name.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NewGElement]]
   
-  @JSImport("d3-selection", "local")
-  @js.native
-  def local[T](): Local_[T] = js.native
+  @scala.inline
+  def local[T](): Local_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("local")().asInstanceOf[Local_[T]]
   
-  @JSImport("d3-selection", "matcher")
-  @js.native
-  def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = js.native
+  @scala.inline
+  def matcher(selector: String): js.ThisFunction0[/* this */ BaseType, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, Boolean]]
   
-  @JSImport("d3-selection", "namespace")
-  @js.native
-  def namespace(prefixedLocal: String): NamespaceLocalObject | String = js.native
+  @scala.inline
+  def namespace(prefixedLocal: String): NamespaceLocalObject | String = ^.asInstanceOf[js.Dynamic].applyDynamic("namespace")(prefixedLocal.asInstanceOf[js.Any]).asInstanceOf[NamespaceLocalObject | String]
   
   @JSImport("d3-selection", "namespaces")
   @js.native
   val namespaces: NamespaceMap = js.native
   
-  @JSImport("d3-selection", "pointer")
-  @js.native
-  def pointer(event: js.Any): js.Tuple2[Double, Double] = js.native
-  @JSImport("d3-selection", "pointer")
-  @js.native
-  def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def pointer(event: js.Any): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def pointer(event: js.Any, target: js.Any): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointer")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("d3-selection", "pointers")
-  @js.native
-  def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-selection", "pointers")
-  @js.native
-  def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def pointers(event: js.Any): js.Array[js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
+  @scala.inline
+  def pointers(event: js.Any, target: js.Any): js.Array[js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointers")(event.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "select")
-  @js.native
-  def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+  @scala.inline
+  def select[OldDatum](node: Null): Selection_[Null, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: EnterElement): Selection_[EnterElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[EnterElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Document): Selection_[Document, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Document, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Element): Selection_[Element, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Element, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[OldDatum](node: Window): Selection_[Window, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(node.asInstanceOf[js.Any]).asInstanceOf[Selection_[Window, OldDatum, Null, Unit]]
+  @scala.inline
+  def select[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll(): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll(selector: js.UndefOr[scala.Nothing]): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll(selector: Null): Selection_[Null, js.UndefOr[scala.Nothing], Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("d3-selection", "selectAll")
-  @js.native
-  def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, _] = js.native
+  @scala.inline
+  def selectAll(): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")().asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll(selector: Null): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll(selector: Unit): Selection_[Null, Unit, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[Null, Unit, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: js.Array[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: ArrayLike[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](nodes: Iterable[GElement]): Selection_[GElement, OldDatum, Null, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(nodes.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, Null, Unit]]
+  @scala.inline
+  def selectAll[GElement /* <: BaseType */, OldDatum](selector: String): Selection_[GElement, OldDatum, HTMLElement, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectAll")(selector.asInstanceOf[js.Any]).asInstanceOf[Selection_[GElement, OldDatum, HTMLElement, js.Any]]
   
   @JSImport("d3-selection", "selection")
   @js.native
   val selection: SelectionFn = js.native
   
-  @JSImport("d3-selection", "selector")
-  @js.native
-  def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = js.native
+  @scala.inline
+  def selector[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, DescElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, DescElement]]
   
-  @JSImport("d3-selection", "selectorAll")
-  @js.native
-  def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = js.native
+  @scala.inline
+  def selectorAll[DescElement /* <: Element */](selector: String): js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAll")(selector.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction0[/* this */ BaseType, NodeListOf[DescElement]]]
   
-  @JSImport("d3-selection", "style")
-  @js.native
-  def style(node: Element, name: String): String = js.native
+  @scala.inline
+  def style(node: Element, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("d3-selection", "window")
-  @js.native
-  def window(DOMNode: Document): Window = js.native
-  @JSImport("d3-selection", "window")
-  @js.native
-  def window(DOMNode: Element): Window = js.native
-  @JSImport("d3-selection", "window")
-  @js.native
-  def window(DOMNode: Window): Window = js.native
+  @scala.inline
+  def window(DOMNode: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  @scala.inline
+  def window(DOMNode: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
+  @scala.inline
+  def window(DOMNode: Window): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("window")(DOMNode.asInstanceOf[js.Any]).asInstanceOf[Window]
   
-  @js.native
-  trait ArrayLike[T] extends /* index */ NumberDictionary[T] {
+  trait ArrayLike[T]
+    extends StObject
+       with /* index */ NumberDictionary[T] {
     
-    def item(index: Double): T | Null = js.native
+    def item(index: Double): T | Null
     
-    var length: Double = js.native
+    var length: Double
   }
   object ArrayLike {
     
@@ -155,7 +137,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[_], T] (val x: Self with ArrayLike[T]) extends AnyVal {
+    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: Double => T | Null): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
@@ -167,12 +149,11 @@ object mod {
   
   type BaseType = Element | EnterElement | Document | Window | Null
   
-  @js.native
   trait ClientPointEvent extends StObject {
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
   }
   object ClientPointEvent {
     
@@ -195,23 +176,22 @@ object mod {
   
   type ContainerElement = HTMLElement | SVGSVGElement | SVGGElement
   
-  @js.native
   trait CustomEventParameters extends StObject {
     
     /**
       * If true, the event is dispatched to ancestors in reverse tree order
       */
-    var bubbles: Boolean = js.native
+    var bubbles: Boolean
     
     /**
       * If true, event.preventDefault is allowed
       */
-    var cancelable: Boolean = js.native
+    var cancelable: Boolean
     
     /**
       * Any custom data associated with the event
       */
-    var detail: js.Any = js.native
+    var detail: js.Any
   }
   object CustomEventParameters {
     
@@ -235,20 +215,19 @@ object mod {
     }
   }
   
-  @js.native
   trait EnterElement extends StObject {
     
-    def appendChild(newChild: Node): Node = js.native
+    def appendChild(newChild: Node): Node
     
-    def insertBefore(newChild: Node, refChild: Node): Node = js.native
+    def insertBefore(newChild: Node, refChild: Node): Node
     
-    var namespaceURI: String = js.native
+    var namespaceURI: String
     
-    var ownerDocument: Document = js.native
+    var ownerDocument: Document
     
-    def querySelector(selectors: String): Element = js.native
+    def querySelector(selectors: String): Element
     
-    def querySelectorAll(selectors: String): NodeListOf[Element] = js.native
+    def querySelectorAll(selectors: String): NodeListOf[Element]
   }
   object EnterElement {
     
@@ -290,7 +269,6 @@ object mod {
   
   type KeyType = String | Double
   
-  @js.native
   trait Local_[T] extends StObject {
     
     /**
@@ -298,7 +276,7 @@ object mod {
       *
       * @param node A node element.
       */
-    def get(node: Element): js.UndefOr[T] = js.native
+    def get(node: Element): js.UndefOr[T]
     
     /**
       * Deletes the value associated with the given node. Values stored on ancestors are not affected, meaning that child nodes will still see inherited values.
@@ -307,7 +285,7 @@ object mod {
       *
       * @param node A node element.
       */
-    def remove(node: Element): Boolean = js.native
+    def remove(node: Element): Boolean
     
     /**
       * Store a value for this local variable. Calling `.get()` on children of this node will also retrieve the variable's value.
@@ -315,7 +293,7 @@ object mod {
       * @param node A node element.
       * @param value Value to store locally
       */
-    def set(node: Element, value: T): Element = js.native
+    def set(node: Element, value: T): Element
   }
   object Local_ {
     
@@ -326,7 +304,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class Local_MutableBuilder[Self <: Local_[_], T] (val x: Self with Local_[T]) extends AnyVal {
+    implicit class Local_MutableBuilder[Self <: Local_[?], T] (val x: Self & Local_[T]) extends AnyVal {
       
       @scala.inline
       def setGet(value: Element => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
@@ -339,18 +317,17 @@ object mod {
     }
   }
   
-  @js.native
   trait NamespaceLocalObject extends StObject {
     
     /**
       * Name of the local to be namespaced.
       */
-    var local: String = js.native
+    var local: String
     
     /**
       * Fully qualified namespace
       */
-    var space: String = js.native
+    var space: String
   }
   object NamespaceLocalObject {
     
@@ -373,7 +350,7 @@ object mod {
   
   type NamespaceMap = StringDictionary[String]
   
-  type SelectionFn = js.Function0[Selection_[HTMLElement, js.Any, Null, js.UndefOr[scala.Nothing]]]
+  type SelectionFn = js.Function0[Selection_[HTMLElement, js.Any, Null, Unit]]
   
   @js.native
   trait Selection_[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, PDatum] extends StObject {
@@ -600,7 +577,7 @@ object mod {
     /**
       * Delete the bound data for each element in the selection.
       */
-    def datum(value: Null): Selection_[GElement, js.UndefOr[scala.Nothing], PElement, PDatum] = js.native
+    def datum(value: Null): Selection_[GElement, Unit, PElement, PDatum] = js.native
     /**
       * Sets the element’s bound data to the specified value on all selected elements.
       * Unlike selection.data, this method does not compute a join and does not affect
@@ -814,7 +791,7 @@ object mod {
       * Returns an iterator over the selected (non-null) elements.
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[GElement, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[GElement, js.Any, Unit]] = js.native
     
     /**
       * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
@@ -823,16 +800,6 @@ object mod {
       * The "matching" logic is determined by the key function passed to `selection.data`.
       */
     def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](enter: K): Selection_[
-        GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
-        Datum, 
-        PElement, 
-        PDatum
-      ] = js.native
-    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
-      enter: K,
-      update: js.UndefOr[scala.Nothing],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
-    ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
         Datum, 
         PElement, 
@@ -856,6 +823,16 @@ object mod {
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
           js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
         ],
+      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+    ): Selection_[
+        GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
+        Datum, 
+        PElement, 
+        PDatum
+      ] = js.native
+    def join[K /* <: /* keyof d3-selection.anon.ElementTagNameMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 172 */ js.Any */, OldDatum](
+      enter: K,
+      update: Unit,
       exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[
         GElement | (/* import warning: importer.ImportType#apply Failed type conversion: d3-selection.anon.ElementTagNameMap[K] */ js.Any), 
@@ -872,11 +849,6 @@ object mod {
     def join[ChildElement /* <: BaseType */, OldDatum](enter: String): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     def join[ChildElement /* <: BaseType */, OldDatum](
       enter: String,
-      update: js.UndefOr[scala.Nothing],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
-    ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
-    def join[ChildElement /* <: BaseType */, OldDatum](
-      enter: String,
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
           js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
@@ -888,6 +860,11 @@ object mod {
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
           js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
         ],
+      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+    ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+    def join[ChildElement /* <: BaseType */, OldDatum](
+      enter: String,
+      update: Unit,
       exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     /**
@@ -907,14 +884,6 @@ object mod {
           /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
           Selection_[ChildElement, Datum, PElement, PDatum]
         ],
-      update: js.UndefOr[scala.Nothing],
-      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
-    ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
-    def join[ChildElement /* <: BaseType */, OldDatum](
-      enter: js.Function1[
-          /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
-          Selection_[ChildElement, Datum, PElement, PDatum]
-        ],
       update: js.Function1[
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
           js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
@@ -929,6 +898,14 @@ object mod {
           /* elem */ Selection_[GElement, Datum, PElement, PDatum], 
           js.UndefOr[Selection_[GElement, Datum, PElement, PDatum]]
         ],
+      exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
+    ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+    def join[ChildElement /* <: BaseType */, OldDatum](
+      enter: js.Function1[
+          /* elem */ Selection_[EnterElement, Datum, PElement, PDatum], 
+          Selection_[ChildElement, Datum, PElement, PDatum]
+        ],
+      update: Unit,
       exit: js.Function1[/* elem */ Selection_[GElement, OldDatum, PElement, PDatum], Unit]
     ): Selection_[ChildElement | GElement, Datum, PElement, PDatum] = js.native
     
@@ -1054,7 +1031,7 @@ object mod {
       * @param value A value function which is evaluated for each selected element, in order, being passed the current datum (d),
       * the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]).  A null value will clear the property.
       */
-    def property(name: String, value: ValueFn[GElement, Datum, _]): this.type = js.native
+    def property(name: String, value: ValueFn[GElement, Datum, js.Any]): this.type = js.native
     /**
       * Look up a local variable on the first node of this selection. Note that this is not equivalent to `local.get(selection.node())` in that it will not look up locals set on the parent node(s).
       *
@@ -1109,7 +1086,7 @@ object mod {
       * Create an empty sub-selection. Selection.select does not affect grouping: it preserves the existing group
       * structure and indexes.
       */
-    def select[DescElement /* <: BaseType */](selector: Null): Selection_[Null, js.UndefOr[scala.Nothing], PElement, PDatum] = js.native
+    def select[DescElement /* <: BaseType */](selector: Null): Selection_[Null, Unit, PElement, PDatum] = js.native
     /**
       * For each selected element, select the descendant element returned by the selector function.
       * If no element is returned by the selector function for the current element, the element at the
@@ -1131,17 +1108,17 @@ object mod {
       * Create an empty sub-selection. Selection.selectAll does affect grouping: The elements in the returned
       * selection are grouped by their corresponding parent node in this selection, the group at the current index will be empty.
       */
-    def selectAll(): Selection_[Null, js.UndefOr[scala.Nothing], GElement, Datum] = js.native
+    def selectAll(): Selection_[Null, Unit, GElement, Datum] = js.native
     /**
       * Create an empty sub-selection. Selection.selectAll does affect grouping: The elements in the returned
       * selection are grouped by their corresponding parent node in this selection, the group at the current index will be empty.
       */
-    def selectAll(selector: js.UndefOr[scala.Nothing]): Selection_[Null, js.UndefOr[scala.Nothing], GElement, Datum] = js.native
+    def selectAll(selector: Null): Selection_[Null, Unit, GElement, Datum] = js.native
     /**
       * Create an empty sub-selection. Selection.selectAll does affect grouping: The elements in the returned
       * selection are grouped by their corresponding parent node in this selection, the group at the current index will be empty.
       */
-    def selectAll(selector: Null): Selection_[Null, js.UndefOr[scala.Nothing], GElement, Datum] = js.native
+    def selectAll(selector: Unit): Selection_[Null, Unit, GElement, Datum] = js.native
     /**
       * For each selected element, selects the descendant elements that match the specified selector string. The elements in the returned
       * selection are grouped by their corresponding parent node in this selection. If no element matches the specified selector
@@ -1359,7 +1336,7 @@ object mod {
     def on(`type`: String, listener: Null): TransitionLike[GElement, Datum] = js.native
     def on(`type`: String, listener: ValueFn[GElement, Datum, Unit]): TransitionLike[GElement, Datum] = js.native
     
-    def selection(): Selection_[GElement, Datum, _, _] = js.native
+    def selection(): Selection_[GElement, Datum, js.Any, js.Any] = js.native
     
     def tween(name: String, tweenFn: Null): TransitionLike[GElement, Datum] = js.native
     def tween(name: String, tweenFn: ValueFn[GElement, Datum, js.Function1[/* t */ Double, Unit]]): TransitionLike[GElement, Datum] = js.native

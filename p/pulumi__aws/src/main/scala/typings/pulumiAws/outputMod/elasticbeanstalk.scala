@@ -2,33 +2,31 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticbeanstalk {
   
-  @js.native
   trait ApplicationAppversionLifecycle extends StObject {
     
     /**
       * Set to `true` to delete a version's source bundle from S3 when the application version is deleted.
       */
-    var deleteSourceFromS3: js.UndefOr[Boolean] = js.native
+    var deleteSourceFromS3: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of days to retain an application version ('max_age_in_days' and 'max_count' cannot be enabled simultaneously.).
       */
-    var maxAgeInDays: js.UndefOr[Double] = js.native
+    var maxAgeInDays: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of application versions to retain ('max_age_in_days' and 'max_count' cannot be enabled simultaneously.).
       */
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The ARN of an IAM service role under which the application version is deleted.  Elastic Beanstalk must have permission to assume this role.
       */
-    var serviceRole: String = js.native
+    var serviceRole: String
   }
   object ApplicationAppversionLifecycle {
     
@@ -64,19 +62,18 @@ object elasticbeanstalk {
     }
   }
   
-  @js.native
   trait ConfigurationTemplateSetting extends StObject {
     
     /**
       * A unique name for this Template.
       */
-    var name: String = js.native
+    var name: String
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object ConfigurationTemplateSetting {
     
@@ -106,20 +103,19 @@ object elasticbeanstalk {
     }
   }
   
-  @js.native
   trait EnvironmentAllSetting extends StObject {
     
     /**
       * A unique name for this Environment. This name is used
       * in the application URL
       */
-    var name: String = js.native
+    var name: String
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object EnvironmentAllSetting {
     
@@ -149,20 +145,19 @@ object elasticbeanstalk {
     }
   }
   
-  @js.native
   trait EnvironmentSetting extends StObject {
     
     /**
       * A unique name for this Environment. This name is used
       * in the application URL
       */
-    var name: String = js.native
+    var name: String
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var value: String = js.native
+    var value: String
   }
   object EnvironmentSetting {
     
@@ -192,28 +187,27 @@ object elasticbeanstalk {
     }
   }
   
-  @js.native
   trait GetApplicationAppversionLifecycle extends StObject {
     
     /**
       * Specifies whether delete a version's source bundle from S3 when the application version is deleted.
       */
-    var deleteSourceFromS3: Boolean = js.native
+    var deleteSourceFromS3: Boolean
     
     /**
       * The number of days to retain an application version.
       */
-    var maxAgeInDays: Double = js.native
+    var maxAgeInDays: Double
     
     /**
       * The maximum number of application versions to retain.
       */
-    var maxCount: Double = js.native
+    var maxCount: Double
     
     /**
       * The ARN of an IAM service role under which the application version is deleted.  Elastic Beanstalk must have permission to assume this role.
       */
-    var serviceRole: String = js.native
+    var serviceRole: String
   }
   object GetApplicationAppversionLifecycle {
     

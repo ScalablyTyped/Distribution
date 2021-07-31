@@ -2,18 +2,16 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Old methods available on Chromium 85 instead of the ones above.
-@js.native
 trait ChooseFileSystemEntriesOptionsAccepts extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var mimeTypes: js.UndefOr[js.Array[String]] = js.native
+  var mimeTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ChooseFileSystemEntriesOptionsAccepts {
   

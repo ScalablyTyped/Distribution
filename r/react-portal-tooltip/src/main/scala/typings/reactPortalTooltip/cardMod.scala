@@ -5,7 +5,6 @@ import typings.reactPortalTooltip.anon.ArrowStyle
 import typings.reactPortalTooltip.cardMod.Card.CardProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
@@ -35,18 +34,17 @@ object cardMod {
     */
     type Arrow = _Arrow | Null
     
-    @js.native
     trait CardProps extends StObject {
       
-      var align: js.UndefOr[Align] = js.native
+      var align: js.UndefOr[Align] = js.undefined
       
-      var arrow: js.UndefOr[Arrow] = js.native
+      var arrow: js.UndefOr[Arrow] = js.undefined
       
-      var position: js.UndefOr[Position] = js.native
+      var position: js.UndefOr[Position] = js.undefined
       
-      var style: js.UndefOr[ArrowStyle] = js.native
+      var style: js.UndefOr[ArrowStyle] = js.undefined
       
-      var useHover: js.UndefOr[Boolean] = js.native
+      var useHover: js.UndefOr[Boolean] = js.undefined
     }
     object CardProps {
       

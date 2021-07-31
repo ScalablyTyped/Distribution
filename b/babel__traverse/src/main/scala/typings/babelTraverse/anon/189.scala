@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TemplateElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `189` extends StObject {
   
-  var `type`: TemplateElement = js.native
+  var `type`: TemplateElement
 }
 object `189` {
   
   @scala.inline
-  def apply(`type`: TemplateElement): `189` = {
+  def apply(): `189` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[`189`]
   }
   

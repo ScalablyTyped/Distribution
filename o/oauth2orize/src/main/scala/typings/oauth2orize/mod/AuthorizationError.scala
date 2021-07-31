@@ -2,7 +2,6 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("oauth2orize", "AuthorizationError")
@@ -20,36 +19,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class AuthorizationError () extends OAuth2Error {
   def this(message: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: AuthorizationErrorCode) = this()
   def this(message: String, code: String) = this()
   def this(message: String, code: AuthorizationErrorCode) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], uri: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: String) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: AuthorizationErrorCode, uri: String) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: String) = this()
+  def this(message: Unit, code: String) = this()
+  def this(message: Unit, code: AuthorizationErrorCode) = this()
   def this(message: String, code: String, uri: String) = this()
+  def this(message: String, code: Unit, uri: String) = this()
   def this(message: String, code: AuthorizationErrorCode, uri: String) = this()
-  def this(
-    message: js.UndefOr[scala.Nothing],
-    code: js.UndefOr[scala.Nothing],
-    uri: js.UndefOr[scala.Nothing],
-    status: Double
-  ) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: js.UndefOr[scala.Nothing], uri: String, status: Double) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: String, uri: String, status: Double) = this()
-  def this(
-    message: js.UndefOr[scala.Nothing],
-    code: AuthorizationErrorCode,
-    uri: js.UndefOr[scala.Nothing],
-    status: Double
-  ) = this()
-  def this(message: js.UndefOr[scala.Nothing], code: AuthorizationErrorCode, uri: String, status: Double) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: js.UndefOr[scala.Nothing], status: Double) = this()
-  def this(message: String, code: js.UndefOr[scala.Nothing], uri: String, status: Double) = this()
-  def this(message: String, code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+  def this(message: Unit, code: String, uri: String) = this()
+  def this(message: Unit, code: Unit, uri: String) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: String) = this()
   def this(message: String, code: String, uri: String, status: Double) = this()
-  def this(message: String, code: AuthorizationErrorCode, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+  def this(message: String, code: String, uri: Unit, status: Double) = this()
+  def this(message: String, code: Unit, uri: String, status: Double) = this()
+  def this(message: String, code: Unit, uri: Unit, status: Double) = this()
   def this(message: String, code: AuthorizationErrorCode, uri: String, status: Double) = this()
+  def this(message: String, code: AuthorizationErrorCode, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: String, uri: String, status: Double) = this()
+  def this(message: Unit, code: String, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: String, status: Double) = this()
+  def this(message: Unit, code: Unit, uri: Unit, status: Double) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: String, status: Double) = this()
+  def this(message: Unit, code: AuthorizationErrorCode, uri: Unit, status: Double) = this()
 }

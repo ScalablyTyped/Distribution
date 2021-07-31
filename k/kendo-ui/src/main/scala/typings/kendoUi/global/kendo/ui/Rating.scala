@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.RatingOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Rating")
 @js.native
 class Rating protected ()
-  extends typings.kendoUi.kendo.ui.Rating {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Rating {
   def this(element: Element) = this()
   def this(element: Element, options: RatingOptions) = this()
 }
@@ -21,9 +21,8 @@ object Rating {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Rating.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Rating = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Rating = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Rating]
   
   /* static member */
   @JSGlobal("kendo.ui.Rating.fn")

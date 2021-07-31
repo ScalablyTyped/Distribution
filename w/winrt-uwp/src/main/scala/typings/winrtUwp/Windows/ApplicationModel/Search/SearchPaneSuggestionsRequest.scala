@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Search
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Stores suggestions and information about the request for suggestions. */
-@js.native
 trait SearchPaneSuggestionsRequest extends StObject {
   
   /**
     * Retrieves an object that lets an app respond to a request for suggestions asynchronously.
     * @return An object that lets an app signal when it has fulfilled the request for search suggestions.
     */
-  def getDeferral(): SearchPaneSuggestionsRequestDeferral = js.native
+  def getDeferral(): SearchPaneSuggestionsRequestDeferral
   
   /** Indicates whether the request for suggestions to display is canceled. */
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
   
   /** The suggestions to display in the search pane for the current query. Apps provide suggestions to display by appending them to this searchSuggestionCollection object. */
-  var searchSuggestionCollection: SearchSuggestionCollection = js.native
+  var searchSuggestionCollection: SearchSuggestionCollection
 }
 object SearchPaneSuggestionsRequest {
   

@@ -2,14 +2,14 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginSortDefsChildren extends PluginConfig {
+trait PluginSortDefsChildren
+  extends StObject
+     with PluginConfig {
   
   /** sort children of <defs> in order to improve compression */
-  var sortDefsChildren: Boolean | js.Object = js.native
+  var sortDefsChildren: Boolean | js.Object
 }
 object PluginSortDefsChildren {
   

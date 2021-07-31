@@ -2,41 +2,39 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceSummary extends StObject {
   
   /**
     *  The unique ID of a deployment. 
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     * The instance ID.
     */
-  var instanceId: js.UndefOr[InstanceId] = js.native
+  var instanceId: js.UndefOr[InstanceId] = js.undefined
   
   /**
     * Information about which environment an instance belongs to in a blue/green deployment.   BLUE: The instance is part of the original environment.   GREEN: The instance is part of the replacement environment.  
     */
-  var instanceType: js.UndefOr[InstanceType] = js.native
+  var instanceType: js.UndefOr[InstanceType] = js.undefined
   
   /**
     * A timestamp that indicates when the instance information was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A list of lifecycle events for this instance.
     */
-  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.native
+  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.undefined
   
   /**
     * The deployment status for this instance:    Pending: The deployment is pending for this instance.    In Progress: The deployment is in progress for this instance.    Succeeded: The deployment has succeeded for this instance.    Failed: The deployment has failed for this instance.    Skipped: The deployment has been skipped for this instance.    Unknown: The deployment status is unknown for this instance.  
     */
-  var status: js.UndefOr[InstanceStatus] = js.native
+  var status: js.UndefOr[InstanceStatus] = js.undefined
 }
 object InstanceSummary {
   

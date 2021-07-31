@@ -4,169 +4,136 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scrypt", "hash")
+  @JSImport("scrypt", JSImport.Namespace)
   @js.native
-  def hash(key: String, params: Params_, outputLength: Double, salt: String): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def hash(key: String, params: Params_, outputLength: Double, salt: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def hash(
     key: String,
     params: Params_,
     outputLength: Double,
     salt: String,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
-  def hash(key: String, params: Params_, outputLength: Double, salt: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hash(key: String, params: Params_, outputLength: Double, salt: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def hash(
     key: String,
     params: Params_,
     outputLength: Double,
     salt: Buffer,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
-  def hash(key: Buffer, params: Params_, outputLength: Double, salt: String): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hash(key: Buffer, params: Params_, outputLength: Double, salt: String): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def hash(
     key: Buffer,
     params: Params_,
     outputLength: Double,
     salt: String,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
-  def hash(key: Buffer, params: Params_, outputLength: Double, salt: Buffer): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "hash")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def hash(key: Buffer, params: Params_, outputLength: Double, salt: Buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def hash(
     key: Buffer,
     params: Params_,
     outputLength: Double,
     salt: Buffer,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("scrypt", "hashSync")
-  @js.native
-  def hashSync(key: String, params: Params_, outputLength: Double, salt: String): Buffer = js.native
-  @JSImport("scrypt", "hashSync")
-  @js.native
-  def hashSync(key: String, params: Params_, outputLength: Double, salt: Buffer): Buffer = js.native
-  @JSImport("scrypt", "hashSync")
-  @js.native
-  def hashSync(key: Buffer, params: Params_, outputLength: Double, salt: String): Buffer = js.native
-  @JSImport("scrypt", "hashSync")
-  @js.native
-  def hashSync(key: Buffer, params: Params_, outputLength: Double, salt: Buffer): Buffer = js.native
+  @scala.inline
+  def hashSync(key: String, params: Params_, outputLength: Double, salt: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSync")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def hashSync(key: String, params: Params_, outputLength: Double, salt: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSync")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def hashSync(key: Buffer, params: Params_, outputLength: Double, salt: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSync")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def hashSync(key: Buffer, params: Params_, outputLength: Double, salt: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("hashSync")(key.asInstanceOf[js.Any], params.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any], salt.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("scrypt", "kdf")
-  @js.native
-  def kdf(key: String, paramsObject: Params_): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "kdf")
-  @js.native
+  @scala.inline
+  def kdf(key: String, paramsObject: Params_): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def kdf(
     key: String,
     paramsObject: Params_,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("scrypt", "kdf")
-  @js.native
-  def kdf(key: Buffer, paramsObject: Params_): js.Promise[Buffer] = js.native
-  @JSImport("scrypt", "kdf")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kdf(key: Buffer, paramsObject: Params_): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  @scala.inline
   def kdf(
     key: Buffer,
     paramsObject: Params_,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kdf")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("scrypt", "kdfSync")
-  @js.native
-  def kdfSync(key: String, paramsObject: Params_): Buffer = js.native
-  @JSImport("scrypt", "kdfSync")
-  @js.native
-  def kdfSync(key: Buffer, paramsObject: Params_): Buffer = js.native
+  @scala.inline
+  def kdfSync(key: String, paramsObject: Params_): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("kdfSync")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def kdfSync(key: Buffer, paramsObject: Params_): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("kdfSync")(key.asInstanceOf[js.Any], paramsObject.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double): js.Promise[Params_] = js.native
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = js.native
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double, maxmem: js.UndefOr[scala.Nothing], maxmemfrac: Double): js.Promise[Params_] = js.native
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double, maxmem: Double): js.Promise[Params_] = js.native
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double, maxmem: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = js.native
-  @JSImport("scrypt", "params")
-  @js.native
-  def params(maxtime: Double, maxmem: Double, maxmemfrac: Double): js.Promise[Params_] = js.native
-  @JSImport("scrypt", "params")
-  @js.native
+  @scala.inline
+  def params(maxtime: Double): js.Promise[Params_] = ^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Params_]]
+  @scala.inline
+  def params(maxtime: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def params(maxtime: Double, maxmem: Double): js.Promise[Params_] = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Params_]]
+  @scala.inline
+  def params(maxtime: Double, maxmem: Double, cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def params(maxtime: Double, maxmem: Double, maxmemfrac: Double): js.Promise[Params_] = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], maxmemfrac.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Params_]]
+  @scala.inline
   def params(
     maxtime: Double,
     maxmem: Double,
     maxmemfrac: Double,
     cb: js.Function2[/* err */ Error | Null, /* obj */ Params_, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], maxmemfrac.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def params(maxtime: Double, maxmem: Unit, maxmemfrac: Double): js.Promise[Params_] = (^.asInstanceOf[js.Dynamic].applyDynamic("params")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], maxmemfrac.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Params_]]
   
-  @JSImport("scrypt", "paramsSync")
-  @js.native
-  def paramsSync(maxtime: Double): Params_ = js.native
-  @JSImport("scrypt", "paramsSync")
-  @js.native
-  def paramsSync(maxtime: Double, maxmem: js.UndefOr[scala.Nothing], maxmemfrac: Double): Params_ = js.native
-  @JSImport("scrypt", "paramsSync")
-  @js.native
-  def paramsSync(maxtime: Double, maxmem: Double): Params_ = js.native
-  @JSImport("scrypt", "paramsSync")
-  @js.native
-  def paramsSync(maxtime: Double, maxmem: Double, maxmemfrac: Double): Params_ = js.native
+  @scala.inline
+  def paramsSync(maxtime: Double): Params_ = ^.asInstanceOf[js.Dynamic].applyDynamic("paramsSync")(maxtime.asInstanceOf[js.Any]).asInstanceOf[Params_]
+  @scala.inline
+  def paramsSync(maxtime: Double, maxmem: Double): Params_ = (^.asInstanceOf[js.Dynamic].applyDynamic("paramsSync")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any])).asInstanceOf[Params_]
+  @scala.inline
+  def paramsSync(maxtime: Double, maxmem: Double, maxmemfrac: Double): Params_ = (^.asInstanceOf[js.Dynamic].applyDynamic("paramsSync")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], maxmemfrac.asInstanceOf[js.Any])).asInstanceOf[Params_]
+  @scala.inline
+  def paramsSync(maxtime: Double, maxmem: Unit, maxmemfrac: Double): Params_ = (^.asInstanceOf[js.Dynamic].applyDynamic("paramsSync")(maxtime.asInstanceOf[js.Any], maxmem.asInstanceOf[js.Any], maxmemfrac.asInstanceOf[js.Any])).asInstanceOf[Params_]
   
-  @JSImport("scrypt", "verifyKdf")
-  @js.native
-  def verifyKdf(kdf: Buffer, key: String): js.Promise[Boolean] = js.native
-  @JSImport("scrypt", "verifyKdf")
-  @js.native
-  def verifyKdf(kdf: Buffer, key: String, cb: js.Function2[/* err */ Error | Null, /* obj */ Boolean, Unit]): Unit = js.native
-  @JSImport("scrypt", "verifyKdf")
-  @js.native
-  def verifyKdf(kdf: Buffer, key: Buffer): js.Promise[Boolean] = js.native
-  @JSImport("scrypt", "verifyKdf")
-  @js.native
-  def verifyKdf(kdf: Buffer, key: Buffer, cb: js.Function2[/* err */ Error | Null, /* obj */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def verifyKdf(kdf: Buffer, key: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdf")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def verifyKdf(kdf: Buffer, key: String, cb: js.Function2[/* err */ Error | Null, /* obj */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdf")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def verifyKdf(kdf: Buffer, key: Buffer): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdf")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def verifyKdf(kdf: Buffer, key: Buffer, cb: js.Function2[/* err */ Error | Null, /* obj */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdf")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("scrypt", "verifyKdfSync")
-  @js.native
-  def verifyKdfSync(kdf: Buffer, key: String): Boolean = js.native
-  @JSImport("scrypt", "verifyKdfSync")
-  @js.native
-  def verifyKdfSync(kdf: Buffer, key: Buffer): Boolean = js.native
+  @scala.inline
+  def verifyKdfSync(kdf: Buffer, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdfSync")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def verifyKdfSync(kdf: Buffer, key: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyKdfSync")(kdf.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait Params_ extends StObject {
     
-    var N: Double = js.native
+    var N: Double
     
-    var p: Double = js.native
+    var p: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object Params_ {
     

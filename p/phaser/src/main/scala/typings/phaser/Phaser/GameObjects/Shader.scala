@@ -25,7 +25,6 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -70,7 +69,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Shader
-  extends GameObject
+  extends StObject
+     with GameObject
      with ComputedSize
      with Depth
      with GetBounds
@@ -261,9 +261,9 @@ trait Shader
     * @param flipY Does this texture need vertically flipping before rendering? This should usually be set to `true` if being fed from a buffer. Default false.
     */
   def setRenderToTexture(): this.type = js.native
-  def setRenderToTexture(key: js.UndefOr[scala.Nothing], flipY: Boolean): this.type = js.native
   def setRenderToTexture(key: String): this.type = js.native
   def setRenderToTexture(key: String, flipY: Boolean): this.type = js.native
+  def setRenderToTexture(key: Unit, flipY: Boolean): this.type = js.native
   
   /**
     * Sets a sampler2D uniform on this shader.
@@ -278,12 +278,7 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setSampler2D(uniformKey: String, textureKey: String): this.type = js.native
-  def setSampler2D(
-    uniformKey: String,
-    textureKey: String,
-    textureIndex: js.UndefOr[scala.Nothing],
-    textureData: js.Any
-  ): this.type = js.native
+  def setSampler2D(uniformKey: String, textureKey: String, textureIndex: Unit, textureData: js.Any): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer): this.type = js.native
   def setSampler2D(uniformKey: String, textureKey: String, textureIndex: integer, textureData: js.Any): this.type = js.native
   
@@ -318,7 +313,7 @@ trait Shader
     texture: WebGLTexture,
     width: integer,
     height: integer,
-    textureIndex: js.UndefOr[scala.Nothing],
+    textureIndex: Unit,
     textureData: js.Any
   ): this.type = js.native
   def setSampler2DBuffer(uniformKey: String, texture: WebGLTexture, width: integer, height: integer, textureIndex: integer): this.type = js.native
@@ -340,13 +335,13 @@ trait Shader
     * @param textureData Additional texture data.
     */
   def setShader(key: String): this.type = js.native
-  def setShader(key: String, textures: js.UndefOr[scala.Nothing], textureData: js.Any): this.type = js.native
   def setShader(key: String, textures: js.Array[String]): this.type = js.native
   def setShader(key: String, textures: js.Array[String], textureData: js.Any): this.type = js.native
+  def setShader(key: String, textures: Unit, textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader): this.type = js.native
-  def setShader(key: BaseShader, textures: js.UndefOr[scala.Nothing], textureData: js.Any): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String]): this.type = js.native
   def setShader(key: BaseShader, textures: js.Array[String], textureData: js.Any): this.type = js.native
+  def setShader(key: BaseShader, textures: Unit, textureData: js.Any): this.type = js.native
   
   /**
     * Sets a property of a uniform already present on this shader.

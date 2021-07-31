@@ -11,8 +11,8 @@ Precondition checking utilities.
 | Full name          | precond |
 | Keywords           | precondition, assert, invariant, contract, condition |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 15678864 |
+| # dependents       | 12 |
+| # downloads        | 19149498 |
 | # stars            | 1 |
 
 ## Links

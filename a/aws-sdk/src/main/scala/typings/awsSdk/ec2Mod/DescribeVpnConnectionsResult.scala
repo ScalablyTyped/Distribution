@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpnConnectionsResult extends StObject {
   
   /**
     * Information about one or more VPN connections.
     */
-  var VpnConnections: js.UndefOr[VpnConnectionList] = js.native
+  var VpnConnections: js.UndefOr[VpnConnectionList] = js.undefined
 }
 object DescribeVpnConnectionsResult {
   

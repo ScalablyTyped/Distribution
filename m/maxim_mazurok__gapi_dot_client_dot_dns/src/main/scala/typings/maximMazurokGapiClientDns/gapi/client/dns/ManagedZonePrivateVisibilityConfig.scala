@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedZonePrivateVisibilityConfig extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The list of VPC networks that can see this zone. */
-  var networks: js.UndefOr[js.Array[ManagedZonePrivateVisibilityConfigNetwork]] = js.native
+  var networks: js.UndefOr[js.Array[ManagedZonePrivateVisibilityConfigNetwork]] = js.undefined
 }
 object ManagedZonePrivateVisibilityConfig {
   

@@ -2,17 +2,15 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subflows extends StObject {
   
-  var links: js.Array[js.Object] = js.native
+  var links: js.Array[js.Object]
   
-  var nodes: js.Array[js.Object] = js.native
+  var nodes: js.Array[js.Object]
   
-  var subflows: js.Array[js.Object] = js.native
+  var subflows: js.Array[js.Object]
 }
 object Subflows {
   

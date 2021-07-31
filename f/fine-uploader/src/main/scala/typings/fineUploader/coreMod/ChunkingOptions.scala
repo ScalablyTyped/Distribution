@@ -2,23 +2,21 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkingOptions extends StObject {
   
   /**
     * concurrent Chunking options
     */
-  var concurrent: js.UndefOr[ConcurrentOptions] = js.native
+  var concurrent: js.UndefOr[ConcurrentOptions] = js.undefined
   
   /**
     * Enable or disable splitting the file separate chunks. Each chunks is sent in a separate requested
     *
     * @default `false`
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Ensure every file is uploaded in chunks, even if the file can only be split up into 1 chunk.
@@ -27,12 +25,12 @@ trait ChunkingOptions extends StObject {
     *
     * @default `false`
     */
-  var mandatory: js.UndefOr[Boolean] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ParamNamesOptions
     */
-  var paramNames: js.UndefOr[ParamNamesOptions] = js.native
+  var paramNames: js.UndefOr[ParamNamesOptions] = js.undefined
   
   /**
     * The maximum size of each chunk, in bytes
@@ -40,12 +38,12 @@ trait ChunkingOptions extends StObject {
     *
     * @default `2000000`
     */
-  var partSize: js.UndefOr[Double | js.Function] = js.native
+  var partSize: js.UndefOr[Double | js.Function] = js.undefined
   
   /**
     * SuccessOptions
     */
-  var success: js.UndefOr[SuccessOptions] = js.native
+  var success: js.UndefOr[SuccessOptions] = js.undefined
 }
 object ChunkingOptions {
   

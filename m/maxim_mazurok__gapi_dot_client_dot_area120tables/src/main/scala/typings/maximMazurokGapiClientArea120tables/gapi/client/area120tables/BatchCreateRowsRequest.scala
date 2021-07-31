@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateRowsRequest extends StObject {
   
   /** Required. The request message specifying the rows to create. A maximum of 500 rows can be created in a single batch. */
-  var requests: js.UndefOr[js.Array[CreateRowRequest]] = js.native
+  var requests: js.UndefOr[js.Array[CreateRowRequest]] = js.undefined
 }
 object BatchCreateRowsRequest {
   

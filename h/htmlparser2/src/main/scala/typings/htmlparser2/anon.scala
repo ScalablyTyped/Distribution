@@ -5,43 +5,41 @@ import typings.domhandler.mod.DomElement
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<domhandler.domhandler.DomHandler> */
-  @js.native
   trait PartialDomHandler extends StObject {
     
     var constructor: js.UndefOr[
         js.Function1[
-          /* callback */ js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], _], 
+          /* callback */ js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any], 
           js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var oncdatastart: js.UndefOr[js.Function0[Unit]] = js.native
+    var oncdatastart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onclosetag: js.UndefOr[js.Function0[Unit]] = js.native
+    var onclosetag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var oncomment: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.native
+    var oncomment: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.undefined
     
-    var oncommentend: js.UndefOr[js.Function0[Unit]] = js.native
+    var oncommentend: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onend: js.UndefOr[js.Function0[Unit]] = js.native
+    var onend: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onerror: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onerror: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var onopentag: js.UndefOr[js.Function2[/* name */ String, /* attribs */ StringDictionary[String], Unit]] = js.native
+    var onopentag: js.UndefOr[js.Function2[/* name */ String, /* attribs */ StringDictionary[String], Unit]] = js.undefined
     
-    var onparserinit: js.UndefOr[js.Function1[/* parser */ js.Any, Unit]] = js.native
+    var onparserinit: js.UndefOr[js.Function1[/* parser */ js.Any, Unit]] = js.undefined
     
-    var onprocessinginstruction: js.UndefOr[js.Function2[/* name */ String, /* data */ String, Unit]] = js.native
+    var onprocessinginstruction: js.UndefOr[js.Function2[/* name */ String, /* data */ String, Unit]] = js.undefined
     
-    var onreset: js.UndefOr[js.Function0[Unit]] = js.native
+    var onreset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ontext: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.native
+    var ontext: js.UndefOr[js.Function1[/* data */ String, Unit]] = js.undefined
   }
   object PartialDomHandler {
     
@@ -56,7 +54,7 @@ object anon {
       
       @scala.inline
       def setConstructor(
-        value: /* callback */ js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], _] => js.Any
+        value: /* callback */ js.Function2[/* error */ js.Any, /* dom */ js.Array[DomElement], js.Any] => js.Any
       ): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
       
       @scala.inline

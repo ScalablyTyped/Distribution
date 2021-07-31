@@ -2,7 +2,6 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,23 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * give different patterns than those on a phone) - Build different analysis
   * models for each device/version.
   */
-@js.native
 trait SchemaDevice extends StObject {
   
   /**
     * Manufacturer of the product/hardware.
     */
-  var manufacturer: js.UndefOr[String] = js.native
+  var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
     * End-user visible model name for the device.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * A constant representing the type of the device.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The serial number or other unique ID for the hardware. This field is
@@ -41,12 +39,12 @@ trait SchemaDevice extends StObject {
     * the data source. Only the data source creator will see the uid field in
     * clear and normal form.
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
   
   /**
     * Version string for the device hardware/software.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaDevice {
   

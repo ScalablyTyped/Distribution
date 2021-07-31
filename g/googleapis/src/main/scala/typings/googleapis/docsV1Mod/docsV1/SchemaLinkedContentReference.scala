@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to the external linked source content.
   */
-@js.native
 trait SchemaLinkedContentReference extends StObject {
   
   /**
     * A reference to the linked chart.
     */
-  var sheetsChartReference: js.UndefOr[SchemaSheetsChartReference] = js.native
+  var sheetsChartReference: js.UndefOr[SchemaSheetsChartReference] = js.undefined
 }
 object SchemaLinkedContentReference {
   

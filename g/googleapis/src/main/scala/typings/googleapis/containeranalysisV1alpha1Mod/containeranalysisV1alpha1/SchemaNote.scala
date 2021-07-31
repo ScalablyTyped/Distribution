@@ -2,94 +2,92 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a detailed description of a `Note`.
   */
-@js.native
 trait SchemaNote extends StObject {
   
   /**
     * A note describing a package hosted by various package managers.
     */
   @JSName("package")
-  var _package: js.UndefOr[SchemaPackage] = js.native
+  var _package: js.UndefOr[SchemaPackage] = js.undefined
   
   /**
     * A note describing an attestation role.
     */
-  var attestationAuthority: js.UndefOr[SchemaAttestationAuthority] = js.native
+  var attestationAuthority: js.UndefOr[SchemaAttestationAuthority] = js.undefined
   
   /**
     * A note describing a base image.
     */
-  var baseImage: js.UndefOr[SchemaBasis] = js.native
+  var baseImage: js.UndefOr[SchemaBasis] = js.undefined
   
   /**
     * Build provenance type for a verifiable build.
     */
-  var buildType: js.UndefOr[SchemaBuildType] = js.native
+  var buildType: js.UndefOr[SchemaBuildType] = js.undefined
   
   /**
     * Output only. The time this note was created. This field can be used as a
     * filter in list requests.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * A note describing something that can be deployed.
     */
-  var deployable: js.UndefOr[SchemaDeployable] = js.native
+  var deployable: js.UndefOr[SchemaDeployable] = js.undefined
   
   /**
     * A note describing a provider/analysis type.
     */
-  var discovery: js.UndefOr[SchemaDiscovery] = js.native
+  var discovery: js.UndefOr[SchemaDiscovery] = js.undefined
   
   /**
     * Time of expiration for this note, null if note does not expire.
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. This explicitly denotes which kind of note is specified.
     * This field can be used as a filter in list requests.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A detailed description of this `Note`.
     */
-  var longDescription: js.UndefOr[String] = js.native
+  var longDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the note in the form
     * &quot;providers/{provider_id}/notes/{NOTE_ID}&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * URLs associated with this note
     */
-  var relatedUrl: js.UndefOr[js.Array[SchemaRelatedUrl]] = js.native
+  var relatedUrl: js.UndefOr[js.Array[SchemaRelatedUrl]] = js.undefined
   
   /**
     * A one sentence description of this `Note`.
     */
-  var shortDescription: js.UndefOr[String] = js.native
+  var shortDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time this note was last updated. This field can be used
     * as a filter in list requests.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * A package vulnerability type of note.
     */
-  var vulnerabilityType: js.UndefOr[SchemaVulnerabilityType] = js.native
+  var vulnerabilityType: js.UndefOr[SchemaVulnerabilityType] = js.undefined
 }
 object SchemaNote {
   

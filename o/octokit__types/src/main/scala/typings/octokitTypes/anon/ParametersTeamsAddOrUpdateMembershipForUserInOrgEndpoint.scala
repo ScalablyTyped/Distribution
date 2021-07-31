@@ -7,19 +7,17 @@ import typings.octokitTypes.endpointsMod.TeamsAddOrUpdateMembershipForUserInOrgR
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsAddOrUpdateMembershipForUserInOrgEndpoint extends StObject {
   
-  var parameters: TeamsAddOrUpdateMembershipForUserInOrgEndpoint = js.native
+  var parameters: TeamsAddOrUpdateMembershipForUserInOrgEndpoint
   
-  var request: TeamsAddOrUpdateMembershipForUserInOrgRequestOptions = js.native
+  var request: TeamsAddOrUpdateMembershipForUserInOrgRequestOptions
   
   var response: OctokitResponse[
     TeamsAddOrUpdateMembershipForUserInOrgResponseData | TeamsAddOrUpdateMembershipForUserInOrgResponse422Data
-  ] = js.native
+  ]
 }
 object ParametersTeamsAddOrUpdateMembershipForUserInOrgEndpoint {
   

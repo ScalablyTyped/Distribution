@@ -11,8 +11,8 @@ High-performance 2D spatial index for rectangles (based on R*-tree with bulk loa
 | Full name          | rbush |
 | Keywords           | spatial, tree, search, rectangle, index, math |
 | # releases         | 3 |
-| # dependents       | 145 |
-| # downloads        | 15150827 |
+| # dependents       | 156 |
+| # downloads        | 18347725 |
 | # stars            | 10 |
 
 ## Links

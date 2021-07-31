@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReservationPurchaseRecommendationResponse extends StObject {
   
   /**
     * Information about this specific recommendation call, such as the time stamp for when Cost Explorer generated this recommendation.
     */
-  var Metadata: js.UndefOr[ReservationPurchaseRecommendationMetadata] = js.native
+  var Metadata: js.UndefOr[ReservationPurchaseRecommendationMetadata] = js.undefined
   
   /**
     * The pagination token for the next set of retrievable results.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * Recommendations for reservations to purchase.
     */
-  var Recommendations: js.UndefOr[ReservationPurchaseRecommendations] = js.native
+  var Recommendations: js.UndefOr[ReservationPurchaseRecommendations] = js.undefined
 }
 object GetReservationPurchaseRecommendationResponse {
   

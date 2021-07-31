@@ -3,24 +3,22 @@ package typings.xregexp.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is an element in the `XRegExpMatchChainArray` that also specifies a specific back reference.
   */
-@js.native
 trait ChainArrayElement extends StObject {
   
   /**
     * The specific backreference.
     */
-  var backref: Double | String = js.native
+  var backref: Double | String
   
   /**
     * The `RegExp` to use.
     */
-  var regexp: RegExp = js.native
+  var regexp: RegExp
 }
 object ChainArrayElement {
   

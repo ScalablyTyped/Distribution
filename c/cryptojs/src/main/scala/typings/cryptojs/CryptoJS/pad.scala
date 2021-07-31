@@ -3,19 +3,17 @@ package typings.cryptojs.CryptoJS
 import typings.cryptojs.CryptoJS.lib.WordArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pad {
   
   type AnsiX923 = IPaddingImpl
   
-  @js.native
   trait IPaddingImpl extends StObject {
     
-    def pad(data: WordArray, blockSize: Double): Unit = js.native
+    def pad(data: WordArray, blockSize: Double): Unit
     
-    def unpad(data: WordArray): Unit = js.native
+    def unpad(data: WordArray): Unit
   }
   object IPaddingImpl {
     
@@ -42,20 +40,19 @@ object pad {
   
   type NoPadding = IPaddingImpl
   
-  @js.native
   trait PadStatic extends StObject {
     
-    var AnsiX923: typings.cryptojs.CryptoJS.pad.AnsiX923 = js.native
+    var AnsiX923: typings.cryptojs.CryptoJS.pad.AnsiX923
     
-    var Iso10126: typings.cryptojs.CryptoJS.pad.Iso10126 = js.native
+    var Iso10126: typings.cryptojs.CryptoJS.pad.Iso10126
     
-    var Iso97971: typings.cryptojs.CryptoJS.pad.Iso97971 = js.native
+    var Iso97971: typings.cryptojs.CryptoJS.pad.Iso97971
     
-    var NoPadding: typings.cryptojs.CryptoJS.pad.NoPadding = js.native
+    var NoPadding: typings.cryptojs.CryptoJS.pad.NoPadding
     
-    var Pkcs7: typings.cryptojs.CryptoJS.pad.Pkcs7 = js.native
+    var Pkcs7: typings.cryptojs.CryptoJS.pad.Pkcs7
     
-    var ZeroPadding: typings.cryptojs.CryptoJS.pad.ZeroPadding = js.native
+    var ZeroPadding: typings.cryptojs.CryptoJS.pad.ZeroPadding
   }
   object PadStatic {
     

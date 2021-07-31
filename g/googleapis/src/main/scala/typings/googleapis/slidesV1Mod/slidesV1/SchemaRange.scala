@@ -2,32 +2,30 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a contiguous range of an indexed collection, such as characters
   * in text.
   */
-@js.native
 trait SchemaRange extends StObject {
   
   /**
     * The optional zero-based index of the end of the collection. Required for
     * `FIXED_RANGE` ranges.
     */
-  var endIndex: js.UndefOr[Double] = js.native
+  var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The optional zero-based index of the beginning of the collection.
     * Required for `FIXED_RANGE` and `FROM_START_INDEX` ranges.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of range.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaRange {
   

@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains relative position settings for floating objects.
   */
-@js.native
 trait FloatingObjectRelativePositionSettings extends StObject {
   
   /**
     * Gets or sets a value specifying to what element the horizontal position of a floating object is relative.
     */
-  var horizontalPositionType: FloatingObjectHorizontalPositionType = js.native
+  var horizontalPositionType: FloatingObjectHorizontalPositionType
   
   /**
     * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the FloatingObjectRelativePositionSettings.horizontalRelativePosition property
     */
-  var horizontalRelativePosition: Double = js.native
+  var horizontalRelativePosition: Double
   
   /**
     * Gets or sets a value specifying to what element the vertical position of a floating object is relative.
     */
-  var verticalPositionType: FloatingObjectVerticalPositionType = js.native
+  var verticalPositionType: FloatingObjectVerticalPositionType
   
   /**
     * Gets or sets the horizontal distance between the edge of a floating object and the element specified by the FloatingObjectRelativePositionSettings.verticalRelativePosition property
     */
-  var verticalRelativePosition: Double = js.native
+  var verticalRelativePosition: Double
 }
 object FloatingObjectRelativePositionSettings {
   

@@ -3,10 +3,8 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 import typings.gatsbyPluginUtils.gatsbyPluginUtilsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainOptions extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait DomainOptions extends StObject {
     *
     * @default true
     */
-  var allowUnicode: js.UndefOr[Boolean] = js.native
+  var allowUnicode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of segments required for the domain.
     *
     * @default 2
     */
-  var minDomainSegments: js.UndefOr[Double] = js.native
+  var minDomainSegments: js.UndefOr[Double] = js.undefined
   
   /**
     * Options for TLD (top level domain) validation. By default, the TLD must be a valid name listed on the [IANA registry](http://data.iana.org/TLD/tlds-alpha-by-domain.txt)
     *
     * @default { allow: true }
     */
-  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.native
+  var tlds: js.UndefOr[TopLevelDomainOptions | `false`] = js.undefined
 }
 object DomainOptions {
   

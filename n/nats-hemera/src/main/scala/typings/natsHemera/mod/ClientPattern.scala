@@ -3,26 +3,25 @@ package typings.natsHemera.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientPattern
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   @JSName("expectedMessages$")
-  var expectedMessages$: js.UndefOr[Double] = js.native
+  var expectedMessages$: js.UndefOr[Double] = js.undefined
   
   @JSName("maxMessages$")
-  var maxMessages$: js.UndefOr[Double] = js.native
+  var maxMessages$: js.UndefOr[Double] = js.undefined
   
   @JSName("pubsub$")
-  var pubsub$: js.UndefOr[Boolean] = js.native
+  var pubsub$: js.UndefOr[Boolean] = js.undefined
   
   @JSName("timeout$")
-  var timeout$: js.UndefOr[Double] = js.native
+  var timeout$: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object ClientPattern {
   

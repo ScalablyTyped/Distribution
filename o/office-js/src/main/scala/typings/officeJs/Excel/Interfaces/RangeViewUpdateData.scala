@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the RangeView object, for use in `rangeView.set({ ... })`. */
-@js.native
 trait RangeViewUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait RangeViewUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulas: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulas: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait RangeViewUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasLocal: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasLocal: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait RangeViewUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var formulasR1C1: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var formulasR1C1: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait RangeViewUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var numberFormat: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var numberFormat: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait RangeViewUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object RangeViewUpdateData {
   
@@ -61,10 +59,10 @@ object RangeViewUpdateData {
   implicit class RangeViewUpdateDataMutableBuilder[Self <: RangeViewUpdateData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFormulas(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
+    def setFormulas(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulas", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFormulasLocal(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
+    def setFormulasLocal(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasLocal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasLocalUndefined: Self = StObject.set(x, "formulasLocal", js.undefined)
@@ -73,7 +71,7 @@ object RangeViewUpdateData {
     def setFormulasLocalVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulasLocal", js.Array(value :_*))
     
     @scala.inline
-    def setFormulasR1C1(value: js.Array[js.Array[_]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
+    def setFormulasR1C1(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "formulasR1C1", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFormulasR1C1Undefined: Self = StObject.set(x, "formulasR1C1", js.undefined)
@@ -88,7 +86,7 @@ object RangeViewUpdateData {
     def setFormulasVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "formulas", js.Array(value :_*))
     
     @scala.inline
-    def setNumberFormat(value: js.Array[js.Array[_]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    def setNumberFormat(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
@@ -97,7 +95,7 @@ object RangeViewUpdateData {
     def setNumberFormatVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

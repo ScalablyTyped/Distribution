@@ -2,21 +2,19 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchResource extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var expiration: Double = js.native
+  var expiration: Double
   
-  var id: String = js.native
+  var id: String
   
-  var token: String = js.native
+  var token: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object WatchResource {
   

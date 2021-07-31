@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceAutocompleteRequest extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait PlaceAutocompleteRequest extends StObject {
     * For example: `components=country:us|country:pr|country:vi|country:gu|country:mp` would restrict your results
     * to places within the United States and its unincorporated organized territories.
     */
-  var components: js.UndefOr[js.Array[String]] = js.native
+  var components: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The text string on which to search. The Place Autocomplete service will return candidate matches
     * based on this string and order results based on their perceived relevance.
     */
-  var input: String = js.native
+  var input: String
   
   /**
     * The language code, indicating in which language the results should be returned, if possible.
@@ -33,10 +31,10 @@ trait PlaceAutocompleteRequest extends StObject {
     * If language is not supplied, the Place Autocomplete service will attempt to use the native language
     * of the domain from which the request is sent.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The point around which you wish to retrieve place information. */
-  var location: js.UndefOr[LatLng] = js.native
+  var location: js.UndefOr[LatLng] = js.undefined
   
   /**
     * The position, in the input term, of the last character that the service uses to match predictions.
@@ -46,30 +44,30 @@ trait PlaceAutocompleteRequest extends StObject {
     * If no `offset` is supplied, the service will use the whole term.
     * The `offset` should generally be set to the position of the text caret.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance (in meters) within which to return place results. Note that setting a radius biases results to the indicated area,
     * but may not fully restrict results to the specified area.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * A random string which identifies an autocomplete
     * [session](https://developers.google.com/places/web-service/autocomplete#session_tokens) for billing purposes.
     * If this parameter is omitted from an autocomplete request, the request is billed independently
     */
-  var sessiontoken: js.UndefOr[String] = js.native
+  var sessiontoken: js.UndefOr[String] = js.undefined
   
   /**
     * Returns only those places that are strictly within the region defined by `location` and `radius`.
     * This is a restriction, rather than a bias, meaning that results outside this region
     * will not be returned even if they match the user input.
     */
-  var strictbounds: js.UndefOr[Boolean] = js.native
+  var strictbounds: js.UndefOr[Boolean] = js.undefined
   
   /** The types of place results to return. */
-  var types: js.UndefOr[PlaceAutocompleteType] = js.native
+  var types: js.UndefOr[PlaceAutocompleteType] = js.undefined
 }
 object PlaceAutocompleteRequest {
   

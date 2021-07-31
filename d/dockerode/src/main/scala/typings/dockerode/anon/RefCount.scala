@@ -2,15 +2,13 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefCount extends StObject {
   
-  var RefCount: Double = js.native
+  var RefCount: Double
   
-  var Size: Double = js.native
+  var Size: Double
 }
 object RefCount {
   

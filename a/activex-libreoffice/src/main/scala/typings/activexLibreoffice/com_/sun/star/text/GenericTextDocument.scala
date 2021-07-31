@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.activexLibreoffice.com_.sun.star.util.XReplaceable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.frame.XModel because Already inherited
 - typings.activexLibreoffice.com_.sun.star.text.XTextDocument because var conflicts: CurrentController. Inlined getText, reformat, Text */ @js.native
 trait GenericTextDocument
-  extends OfficeDocument
+  extends StObject
+     with OfficeDocument
      with XMultiServiceFactory
      with XRefreshable
      with XTiledRenderable

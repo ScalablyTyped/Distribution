@@ -3,62 +3,60 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandButton extends StObject {
   
-  var Accelerator: String = js.native
+  var Accelerator: String
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var BackStyle: fmBackStyle = js.native
+  var BackStyle: fmBackStyle
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Font: NewFont = js.native
+  var Font: NewFont
   
-  var FontBold: Boolean = js.native
+  var FontBold: Boolean
   
-  var FontItalic: Boolean = js.native
+  var FontItalic: Boolean
   
-  var FontName: String = js.native
+  var FontName: String
   
-  var FontSize: Double = js.native
+  var FontSize: Double
   
-  var FontStrikethru: Boolean = js.native
+  var FontStrikethru: Boolean
   
-  var FontUnderline: Boolean = js.native
+  var FontUnderline: Boolean
   
-  var FontWeight: Double = js.native
+  var FontWeight: Double
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
   @JSName("MSForms.CommandButton_typekey")
-  var MSFormsDotCommandButton_typekey: CommandButton = js.native
+  var MSFormsDotCommandButton_typekey: CommandButton
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: fmMousePointer = js.native
+  var MousePointer: fmMousePointer
   
-  var Picture: StdPicture = js.native
+  var Picture: StdPicture
   
-  var PicturePosition: fmPicturePosition = js.native
+  var PicturePosition: fmPicturePosition
   
-  var TakeFocusOnClick: Boolean = js.native
+  var TakeFocusOnClick: Boolean
   
-  var Value: Boolean = js.native
+  var Value: Boolean
   
-  var WordWrap: Boolean = js.native
+  var WordWrap: Boolean
   
-  val _Font_Reserved: NewFont = js.native
+  val _Font_Reserved: NewFont
 }
 object CommandButton {
   

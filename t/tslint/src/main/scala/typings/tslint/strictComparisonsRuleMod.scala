@@ -13,7 +13,6 @@ import typings.tslint.tslintNumbers.`6`
 import typings.tslint.tslintNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strictComparisonsRuleMod {
@@ -32,13 +31,11 @@ object strictComparisonsRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/strictComparisonsRule", "Rule.INVALID_TYPES")
-    @js.native
-    def INVALID_TYPES(types1: js.Array[TypeKind], types2: js.Array[TypeKind]): String = js.native
+    @scala.inline
+    def INVALID_TYPES(types1: js.Array[TypeKind], types2: js.Array[TypeKind]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_TYPES")(types1.asInstanceOf[js.Any], types2.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/strictComparisonsRule", "Rule.INVALID_TYPE_FOR_OPERATOR")
-    @js.native
-    def INVALID_TYPE_FOR_OPERATOR(`type`: TypeKind, comparator: String): String = js.native
+    @scala.inline
+    def INVALID_TYPE_FOR_OPERATOR(`type`: TypeKind, comparator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_TYPE_FOR_OPERATOR")(`type`.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/strictComparisonsRule", "Rule.metadata")
     @js.native

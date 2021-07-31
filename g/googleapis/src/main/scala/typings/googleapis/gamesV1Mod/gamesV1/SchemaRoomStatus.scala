@@ -2,38 +2,36 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the status of a room that the player has
   * joined.
   */
-@js.native
 trait SchemaRoomStatus extends StObject {
   
   /**
     * Auto-matching status for this room. Not set if the room is not currently
     * in the automatching queue.
     */
-  var autoMatchingStatus: js.UndefOr[SchemaRoomAutoMatchStatus] = js.native
+  var autoMatchingStatus: js.UndefOr[SchemaRoomAutoMatchStatus] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomStatus.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The participants involved in the room, along with their statuses.
     * Includes participants who have left or declined invitations.
     */
-  var participants: js.UndefOr[js.Array[SchemaRoomParticipant]] = js.native
+  var participants: js.UndefOr[js.Array[SchemaRoomParticipant]] = js.undefined
   
   /**
     * Globally unique ID for a room.
     */
-  var roomId: js.UndefOr[String] = js.native
+  var roomId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the room. Possible values are:   -
@@ -45,13 +43,13 @@ trait SchemaRoomStatus extends StObject {
     * connected to each other.  - &quot;ROOM_DELETED&quot; - All joined players
     * have left.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the status for the room: an increasing counter, used by
     * the client to ignore out-of-order updates to room status.
     */
-  var statusVersion: js.UndefOr[Double] = js.native
+  var statusVersion: js.UndefOr[Double] = js.undefined
 }
 object SchemaRoomStatus {
   

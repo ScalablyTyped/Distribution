@@ -5,96 +5,94 @@ import typings.activexOffice.Office.Script
 import typings.activexOffice.Office.SmartArt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineShape extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  var AlternativeText: String = js.native
+  var AlternativeText: String
   
-  val AnchorID: Double = js.native
+  val AnchorID: Double
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  val Chart: typings.activexWord.Word.Chart = js.native
+  val Chart: typings.activexWord.Word.Chart
   
-  def ConvertToShape(): Shape = js.native
+  def ConvertToShape(): Shape
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val EditID: Double = js.native
+  val EditID: Double
   
-  val Field: typings.activexWord.Word.Field = js.native
+  val Field: typings.activexWord.Word.Field
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Glow: GlowFormat = js.native
+  val Glow: GlowFormat
   
-  val GroupItems: GroupShapes = js.native
+  val GroupItems: GroupShapes
   
-  val HasChart: MsoTriState = js.native
+  val HasChart: MsoTriState
   
-  val HasSmartArt: MsoTriState = js.native
+  val HasSmartArt: MsoTriState
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val HorizontalLineFormat: typings.activexWord.Word.HorizontalLineFormat = js.native
+  val HorizontalLineFormat: typings.activexWord.Word.HorizontalLineFormat
   
-  val Hyperlink: typings.activexWord.Word.Hyperlink = js.native
+  val Hyperlink: typings.activexWord.Word.Hyperlink
   
-  val IsPictureBullet: Boolean = js.native
+  val IsPictureBullet: Boolean
   
-  val Line: LineFormat = js.native
+  val Line: LineFormat
   
-  val LinkFormat: typings.activexWord.Word.LinkFormat = js.native
+  val LinkFormat: typings.activexWord.Word.LinkFormat
   
-  var LockAspectRatio: MsoTriState = js.native
+  var LockAspectRatio: MsoTriState
   
-  val OLEFormat: typings.activexWord.Word.OLEFormat = js.native
+  val OLEFormat: typings.activexWord.Word.OLEFormat
   
-  val OWSAnchor: Double = js.native
+  val OWSAnchor: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PictureFormat: typings.activexWord.Word.PictureFormat = js.native
+  var PictureFormat: typings.activexWord.Word.PictureFormat
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  val Reflection: ReflectionFormat = js.native
+  val Reflection: ReflectionFormat
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  var ScaleHeight: Double = js.native
+  var ScaleHeight: Double
   
-  var ScaleWidth: Double = js.native
+  var ScaleWidth: Double
   
-  val Script: typings.activexOffice.Office.Script = js.native
+  val Script: typings.activexOffice.Office.Script
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
   
-  val SmartArt: typings.activexOffice.Office.SmartArt = js.native
+  val SmartArt: typings.activexOffice.Office.SmartArt
   
-  val SoftEdge: SoftEdgeFormat = js.native
+  val SoftEdge: SoftEdgeFormat
   
-  var TextEffect: TextEffectFormat = js.native
+  var TextEffect: TextEffectFormat
   
-  var Title: String = js.native
+  var Title: String
   
-  val Type: WdInlineShapeType = js.native
+  val Type: WdInlineShapeType
   
-  var Width: Double = js.native
+  var Width: Double
   
   @JSName("Word.InlineShape_typekey")
-  var WordDotInlineShape_typekey: InlineShape = js.native
+  var WordDotInlineShape_typekey: InlineShape
 }
 object InlineShape {
   

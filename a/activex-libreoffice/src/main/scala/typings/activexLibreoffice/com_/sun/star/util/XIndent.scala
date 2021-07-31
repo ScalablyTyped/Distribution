@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows indentation of the object to be changed. */
-@js.native
-trait XIndent extends XInterface {
+trait XIndent
+  extends StObject
+     with XInterface {
   
   /** shifts the indentation by one default step to the left. */
-  def decrementIndent(): Unit = js.native
+  def decrementIndent(): Unit
   
   /** shifts the indentation by one default step to the right. */
-  def incrementIndent(): Unit = js.native
+  def incrementIndent(): Unit
 }
 object XIndent {
   

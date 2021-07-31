@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /** [Required] Describes the job configuration. */
-  var configuration: js.UndefOr[JobConfiguration] = js.native
+  var configuration: js.UndefOr[JobConfiguration] = js.undefined
   
   /** [Output-only] A hash of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Opaque ID field of the job */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Optional] Reference describing the unique-per-user name of the job. */
-  var jobReference: js.UndefOr[JobReference] = js.native
+  var jobReference: js.UndefOr[JobReference] = js.undefined
   
   /** [Output-only] The type of the resource. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** [Output-only] A URL that can be used to access this resource again. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Information about the job, including starting time and ending time of the job. */
-  var statistics: js.UndefOr[JobStatistics] = js.native
+  var statistics: js.UndefOr[JobStatistics] = js.undefined
   
   /** [Output-only] The status of this job. Examine this value when polling an asynchronous job to see if the job is complete. */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /** [Output-only] Email address of the user who ran the job. */
-  var user_email: js.UndefOr[String] = js.native
+  var user_email: js.UndefOr[String] = js.undefined
 }
 object Job {
   

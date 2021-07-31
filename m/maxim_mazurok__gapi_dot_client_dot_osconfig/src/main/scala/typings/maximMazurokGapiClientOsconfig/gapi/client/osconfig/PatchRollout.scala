@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchRollout extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait PatchRollout extends StObject {
     * the zone is completed. When that zone is completed successfully, patching begins with 10 VMs at a time in the next zone. If 10 VMs in the next zone fail to patch, the patch job
     * stops.
     */
-  var disruptionBudget: js.UndefOr[FixedOrPercent] = js.native
+  var disruptionBudget: js.UndefOr[FixedOrPercent] = js.undefined
   
   /** Mode of the patch rollout. */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object PatchRollout {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * scroll bars and spin boxes. This interface lets you access the value and its upper and lower bounds.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleValue extends XInterface {
+trait XAccessibleValue
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the value of this object as a number.
@@ -23,7 +23,7 @@ trait XAccessibleValue extends XInterface {
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  var CurrentValue: js.Any = js.native
+  var CurrentValue: js.Any
   
   /**
     * Returns the maximal value that can be represented by this object.
@@ -31,7 +31,7 @@ trait XAccessibleValue extends XInterface {
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MaximumValue: js.Any = js.native
+  val MaximumValue: js.Any
   
   /**
     * Returns the minimal value that can be represented by this object.
@@ -39,7 +39,7 @@ trait XAccessibleValue extends XInterface {
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  val MinimumValue: js.Any = js.native
+  val MinimumValue: js.Any
   
   /**
     * Returns the value of this object as a number.
@@ -47,7 +47,7 @@ trait XAccessibleValue extends XInterface {
     * The exact return type is implementation dependent. Typical types are long and double.
     * @returns Returns the current value represented by this object.
     */
-  def getCurrentValue(): js.Any = js.native
+  def getCurrentValue(): js.Any
   
   /**
     * Returns the maximal value that can be represented by this object.
@@ -55,7 +55,7 @@ trait XAccessibleValue extends XInterface {
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the maximal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMaximumValue(): js.Any = js.native
+  def getMaximumValue(): js.Any
   
   /**
     * Returns the minimal value that can be represented by this object.
@@ -63,7 +63,7 @@ trait XAccessibleValue extends XInterface {
     * The type of the returned value is implementation dependent. It does not have to be the same type as that returned by getCurrentAccessibleValue().
     * @returns Returns the minimal value in an implementation dependent type. If this object has no upper bound then an empty object is returned.
     */
-  def getMinimumValue(): js.Any = js.native
+  def getMinimumValue(): js.Any
   
   /**
     * Sets the value of this object to the given number.
@@ -74,7 +74,7 @@ trait XAccessibleValue extends XInterface {
     * @param aNumber The new value represented by this object. The set of admissible types for this argument is implementation dependent.
     * @returns Returns `TRUE` if the new value could successfully be set and `FALSE` otherwise.
     */
-  def setCurrentValue(aNumber: js.Any): Boolean = js.native
+  def setCurrentValue(aNumber: js.Any): Boolean
 }
 object XAccessibleValue {
   

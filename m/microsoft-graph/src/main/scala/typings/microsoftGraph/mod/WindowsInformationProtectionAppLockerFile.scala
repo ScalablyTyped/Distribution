@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsInformationProtectionAppLockerFile extends Entity {
+trait WindowsInformationProtectionAppLockerFile
+  extends StObject
+     with Entity {
   
   // The friendly name
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // File as a byte array
-  var file: js.UndefOr[NullableOption[Double]] = js.native
+  var file: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // SHA256 hash of the file
-  var fileHash: js.UndefOr[NullableOption[String]] = js.native
+  var fileHash: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the entity.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsInformationProtectionAppLockerFile {
   

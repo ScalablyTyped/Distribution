@@ -9,59 +9,58 @@ import typings.openfin.windowMod.WindowGroupChanged
 import typings.openfin.windowMod.WindowHiddenEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object externalWindowMod {
   
   /* Inlined openfin.openfin/_v2/api/events/base.BaseEventMap & std.Pick<openfin.openfin/_v2/api/events/window.WindowEventMapping<string, string>, 'begin-user-bounds-changing' | 'blurred' | 'bounds-changed' | 'bounds-changing' | 'closed' | 'closing' | 'disabled-movement-bounds-changed' | 'disabled-movement-bounds-changing' | 'end-user-bounds-changing' | 'focused' | 'group-changed' | 'hidden' | 'maximized' | 'minimized' | 'restored' | 'shown' | 'user-movement-disabled' | 'user-movement-enabled'> */
-  @js.native
   trait ExternalWindowEventMapping[Topic, Type]
-    extends /**
+    extends StObject
+       with /**
     * @hidden
     * Custom properties and metadata. This can be extended in specific context object.
     */
   /* key */ StringDictionary[js.Any] {
     
-    var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String] = js.native
+    var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String]
     
-    var blurred: WindowEvent[String, String] = js.native
+    var blurred: WindowEvent[String, String]
     
-    var `bounds-changed`: WindowBoundsChange[String, String] = js.native
+    var `bounds-changed`: WindowBoundsChange[String, String]
     
-    var `bounds-changing`: WindowBoundsChange[String, String] = js.native
+    var `bounds-changing`: WindowBoundsChange[String, String]
     
-    var closed: WindowEvent[String, String] = js.native
+    var closed: WindowEvent[String, String]
     
-    var closing: WindowEvent[String, String] = js.native
+    var closing: WindowEvent[String, String]
     
-    var `disabled-movement-bounds-changed`: WindowBoundsChange[String, String] = js.native
+    var `disabled-movement-bounds-changed`: WindowBoundsChange[String, String]
     
-    var `disabled-movement-bounds-changing`: WindowBoundsChange[String, String] = js.native
+    var `disabled-movement-bounds-changing`: WindowBoundsChange[String, String]
     
-    var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[String, String] = js.native
+    var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[String, String]
     
-    var focused: WindowEvent[String, String] = js.native
+    var focused: WindowEvent[String, String]
     
-    var `group-changed`: WindowGroupChanged[String, String] = js.native
+    var `group-changed`: WindowGroupChanged[String, String]
     
-    var hidden: WindowHiddenEvent[String, String] = js.native
+    var hidden: WindowHiddenEvent[String, String]
     
-    var listenerRemoved: String = js.native
+    var listenerRemoved: String
     
-    var maximized: WindowEvent[String, String] = js.native
+    var maximized: WindowEvent[String, String]
     
-    var minimized: WindowEvent[String, String] = js.native
+    var minimized: WindowEvent[String, String]
     
-    var newListener: String = js.native
+    var newListener: String
     
-    var restored: WindowEvent[String, String] = js.native
+    var restored: WindowEvent[String, String]
     
-    var shown: WindowEvent[String, String] = js.native
+    var shown: WindowEvent[String, String]
     
-    var `user-movement-disabled`: WindowEvent[String, String] = js.native
+    var `user-movement-disabled`: WindowEvent[String, String]
     
-    var `user-movement-enabled`: WindowEvent[String, String] = js.native
+    var `user-movement-enabled`: WindowEvent[String, String]
   }
   object ExternalWindowEventMapping {
     
@@ -102,7 +101,7 @@ object externalWindowMod {
     }
     
     @scala.inline
-    implicit class ExternalWindowEventMappingMutableBuilder[Self <: ExternalWindowEventMapping[_, _], Topic, Type] (val x: Self with (ExternalWindowEventMapping[Topic, Type])) extends AnyVal {
+    implicit class ExternalWindowEventMappingMutableBuilder[Self <: ExternalWindowEventMapping[?, ?], Topic, Type] (val x: Self & (ExternalWindowEventMapping[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def `setBegin-user-bounds-changing`(value: WindowBeginBoundsChangingEvent[String, String]): Self = StObject.set(x, "begin-user-bounds-changing", value.asInstanceOf[js.Any])
@@ -167,48 +166,47 @@ object externalWindowMod {
   }
   
   /* Inlined {[ Type in keyof openfin.openfin/_v2/api/events/externalWindow.ExternalWindowEventMapping<string, string> ]: openfin.openfin/_v2/api/events/externalWindow.ExternalWindowEventMapping<'external-window', Type>[Type]} */
-  @js.native
   trait ExternalWindowEvents extends StObject {
     
-    var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String] = js.native
+    var `begin-user-bounds-changing`: WindowBeginBoundsChangingEvent[String, String]
     
-    var blurred: WindowEvent[String, String] = js.native
+    var blurred: WindowEvent[String, String]
     
-    var `bounds-changed`: WindowBoundsChange[String, String] = js.native
+    var `bounds-changed`: WindowBoundsChange[String, String]
     
-    var `bounds-changing`: WindowBoundsChange[String, String] = js.native
+    var `bounds-changing`: WindowBoundsChange[String, String]
     
-    var closed: WindowEvent[String, String] = js.native
+    var closed: WindowEvent[String, String]
     
-    var closing: WindowEvent[String, String] = js.native
+    var closing: WindowEvent[String, String]
     
-    var `disabled-movement-bounds-changed`: WindowBoundsChange[String, String] = js.native
+    var `disabled-movement-bounds-changed`: WindowBoundsChange[String, String]
     
-    var `disabled-movement-bounds-changing`: WindowBoundsChange[String, String] = js.native
+    var `disabled-movement-bounds-changing`: WindowBoundsChange[String, String]
     
-    var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[String, String] = js.native
+    var `end-user-bounds-changing`: WindowEndBoundsChangingEvent[String, String]
     
-    var focused: WindowEvent[String, String] = js.native
+    var focused: WindowEvent[String, String]
     
-    var `group-changed`: WindowGroupChanged[String, String] = js.native
+    var `group-changed`: WindowGroupChanged[String, String]
     
-    var hidden: WindowHiddenEvent[String, String] = js.native
+    var hidden: WindowHiddenEvent[String, String]
     
-    var listenerRemoved: String = js.native
+    var listenerRemoved: String
     
-    var maximized: WindowEvent[String, String] = js.native
+    var maximized: WindowEvent[String, String]
     
-    var minimized: WindowEvent[String, String] = js.native
+    var minimized: WindowEvent[String, String]
     
-    var newListener: String = js.native
+    var newListener: String
     
-    var restored: WindowEvent[String, String] = js.native
+    var restored: WindowEvent[String, String]
     
-    var shown: WindowEvent[String, String] = js.native
+    var shown: WindowEvent[String, String]
     
-    var `user-movement-disabled`: WindowEvent[String, String] = js.native
+    var `user-movement-disabled`: WindowEvent[String, String]
     
-    var `user-movement-enabled`: WindowEvent[String, String] = js.native
+    var `user-movement-enabled`: WindowEvent[String, String]
   }
   object ExternalWindowEvents {
     

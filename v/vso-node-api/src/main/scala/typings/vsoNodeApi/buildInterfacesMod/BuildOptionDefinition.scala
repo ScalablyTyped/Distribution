@@ -2,36 +2,36 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildOptionDefinition extends BuildOptionDefinitionReference {
+trait BuildOptionDefinition
+  extends StObject
+     with BuildOptionDefinitionReference {
   
   /**
     * The description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The list of input groups defined for the build option.
     */
-  var groups: js.Array[BuildOptionGroupDefinition] = js.native
+  var groups: js.Array[BuildOptionGroupDefinition]
   
   /**
     * The list of inputs defined for the build option.
     */
-  var inputs: js.Array[BuildOptionInputDefinition] = js.native
+  var inputs: js.Array[BuildOptionInputDefinition]
   
   /**
     * The name of the build option.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A value that indicates the relative order in which the behavior should be applied.
     */
-  var ordinal: Double = js.native
+  var ordinal: Double
 }
 object BuildOptionDefinition {
   

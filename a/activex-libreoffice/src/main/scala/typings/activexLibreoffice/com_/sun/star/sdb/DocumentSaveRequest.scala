@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Usually thrown if someone tries to save a document which hasn't a name yet.
   * @since OOo 2.0
   */
-@js.native
-trait DocumentSaveRequest extends ClassifiedInteractionRequest {
+trait DocumentSaveRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /**
     * specifies the content where the document should save inside. Somebody handling the request could, e.g., use the content as root content to display the
     * hierarchy of the sub contents.
     */
-  var Content: XContent = js.native
+  var Content: XContent
   
   /** The default name of the document, may be empty. */
-  var Name: String = js.native
+  var Name: String
 }
 object DocumentSaveRequest {
   

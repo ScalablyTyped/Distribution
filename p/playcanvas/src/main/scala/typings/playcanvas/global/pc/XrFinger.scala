@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.XrFinger")
 @js.native
 class XrFinger protected ()
-  extends typings.playcanvas.pc.XrFinger {
+  extends StObject
+     with typings.playcanvas.pc.XrFinger {
   def this(index: Double, hand: typings.playcanvas.pc.XrHand) = this()
+  
+  /**
+    * Hand that finger relates to
+    */
+  /* CompleteClass */
+  var hand: typings.playcanvas.pc.XrHand = js.native
+  
+  /**
+    * Index of a finger, numeration is: thumb, index, middle, ring, little
+    */
+  /* CompleteClass */
+  var index: Double = js.native
+  
+  /**
+    * List of joints that relates to this finger, starting from joint closest to wrist all the way to the tip of a finger
+    */
+  /* CompleteClass */
+  var joints: js.Array[typings.playcanvas.pc.XrJoint] = js.native
+  
+  /**
+    * Tip of a finger, or null if not available
+    */
+  /* CompleteClass */
+  var tip: typings.playcanvas.pc.XrJoint | Null = js.native
 }

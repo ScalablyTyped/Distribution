@@ -2,90 +2,88 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to an image annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse extends StObject {
   
   /**
     * If present, contextual information is needed to understand where this
     * image comes from.
     */
-  var context: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext] = js.native
+  var context: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageAnnotationContext] = js.undefined
   
   /**
     * If present, crop hints have completed successfully.
     */
-  var cropHintsAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1CropHintsAnnotation] = js.native
+  var cropHintsAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1CropHintsAnnotation] = js.undefined
   
   /**
     * If set, represents the error message for the operation. Note that
     * filled-in image annotations are guaranteed to be correct, even when
     * `error` is set.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * If present, face detection has completed successfully.
     */
-  var faceAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1FaceAnnotation]] = js.native
+  var faceAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1FaceAnnotation]] = js.undefined
   
   /**
     * If present, text (OCR) detection or document (OCR) text detection has
     * completed successfully. This annotation provides the structural hierarchy
     * for the OCR detected text.
     */
-  var fullTextAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1TextAnnotation] = js.native
+  var fullTextAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1TextAnnotation] = js.undefined
   
   /**
     * If present, image properties were extracted successfully.
     */
-  var imagePropertiesAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageProperties] = js.native
+  var imagePropertiesAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ImageProperties] = js.undefined
   
   /**
     * If present, label detection has completed successfully.
     */
-  var labelAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.native
+  var labelAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.undefined
   
   /**
     * If present, landmark detection has completed successfully.
     */
-  var landmarkAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.native
+  var landmarkAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.undefined
   
   /**
     * If present, localized object detection has completed successfully. This
     * will be sorted descending by confidence score.
     */
-  var localizedObjectAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation]] = js.native
+  var localizedObjectAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1LocalizedObjectAnnotation]] = js.undefined
   
   /**
     * If present, logo detection has completed successfully.
     */
-  var logoAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.native
+  var logoAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.undefined
   
   /**
     * If present, product search has completed successfully.
     */
-  var productSearchResults: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ProductSearchResults] = js.native
+  var productSearchResults: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1ProductSearchResults] = js.undefined
   
   /**
     * If present, safe-search annotation has completed successfully.
     */
-  var safeSearchAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1SafeSearchAnnotation] = js.native
+  var safeSearchAnnotation: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1SafeSearchAnnotation] = js.undefined
   
   /**
     * If present, text (OCR) detection has completed successfully.
     */
-  var textAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.native
+  var textAnnotations: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1EntityAnnotation]] = js.undefined
   
   /**
     * If present, web detection has completed successfully.
     */
-  var webDetection: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1WebDetection] = js.native
+  var webDetection: js.UndefOr[SchemaGoogleCloudVisionV1p1beta1WebDetection] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1AnnotateImageResponse {
   

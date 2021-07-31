@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlDeleteCalendarEvent extends Generic {
+trait MlDeleteCalendarEvent
+  extends StObject
+     with Generic {
   
-  var calendar_id: String = js.native
+  var calendar_id: String
   
-  var event_id: String = js.native
+  var event_id: String
 }
 object MlDeleteCalendarEvent {
   

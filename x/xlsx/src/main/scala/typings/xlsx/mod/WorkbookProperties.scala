@@ -2,20 +2,18 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookProperties extends StObject {
   
   /** Name of Document Module in associated VBA Project */
-  var CodeName: js.UndefOr[String] = js.native
+  var CodeName: js.UndefOr[String] = js.undefined
   
   /** Worksheet Epoch (1904 if true, 1900 if false) */
-  var date1904: js.UndefOr[Boolean] = js.native
+  var date1904: js.UndefOr[Boolean] = js.undefined
   
   /** Warn or strip personally identifying info on save */
-  var filterPrivacy: js.UndefOr[Boolean] = js.native
+  var filterPrivacy: js.UndefOr[Boolean] = js.undefined
 }
 object WorkbookProperties {
   

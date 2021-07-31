@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableAutoScalingDescription extends StObject {
   
   /**
     * Represents replicas of the global table.
     */
-  var Replicas: js.UndefOr[ReplicaAutoScalingDescriptionList] = js.native
+  var Replicas: js.UndefOr[ReplicaAutoScalingDescriptionList] = js.undefined
   
   /**
     * The name of the table.
     */
-  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.native
+  var TableName: js.UndefOr[typings.awsSdk.dynamodbMod.TableName] = js.undefined
   
   /**
     * The current state of the table:    CREATING - The table is being created.    UPDATING - The table is being updated.    DELETING - The table is being deleted.    ACTIVE - The table is ready for use.  
     */
-  var TableStatus: js.UndefOr[typings.awsSdk.dynamodbMod.TableStatus] = js.native
+  var TableStatus: js.UndefOr[typings.awsSdk.dynamodbMod.TableStatus] = js.undefined
 }
 object TableAutoScalingDescription {
   

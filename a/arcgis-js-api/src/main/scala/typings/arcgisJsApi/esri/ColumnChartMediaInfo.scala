@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnChartMediaInfo
-  extends JSONSupport
+  extends StObject
+     with JSONSupport
      with MediaInfo
      with ChartMediaInfo {
   
@@ -16,7 +15,7 @@ trait ColumnChartMediaInfo
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-ColumnChartMediaInfo.html#type)
     */
-  val `type`: String = js.native
+  val `type`: String
 }
 object ColumnChartMediaInfo {
   

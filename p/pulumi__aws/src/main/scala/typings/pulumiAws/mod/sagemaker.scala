@@ -20,10 +20,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sagemaker {
+  
+  @JSImport("@pulumi/aws", "sagemaker")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "sagemaker.CodeRepository")
   @js.native
@@ -42,6 +45,10 @@ object sagemaker {
   /* static members */
   object CodeRepository {
     
+    @JSImport("@pulumi/aws", "sagemaker.CodeRepository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CodeRepository resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -51,26 +58,21 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.codeRepositoryMod.CodeRepository = js.native
-    @JSImport("@pulumi/aws", "sagemaker.CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.codeRepositoryMod.CodeRepository = js.native
-    @JSImport("@pulumi/aws", "sagemaker.CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CodeRepositoryState): typings.pulumiAws.codeRepositoryMod.CodeRepository = js.native
-    @JSImport("@pulumi/aws", "sagemaker.CodeRepository.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CodeRepositoryState, opts: CustomResourceOptions): typings.pulumiAws.codeRepositoryMod.CodeRepository = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.codeRepositoryMod.CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codeRepositoryMod.CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.codeRepositoryMod.CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codeRepositoryMod.CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CodeRepositoryState): typings.pulumiAws.codeRepositoryMod.CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codeRepositoryMod.CodeRepository]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CodeRepositoryState, opts: CustomResourceOptions): typings.pulumiAws.codeRepositoryMod.CodeRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.codeRepositoryMod.CodeRepository]
     
     /**
       * Returns true if the given object is an instance of CodeRepository.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.CodeRepository.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/codeRepository.CodeRepository */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sagemaker.Endpoint")
@@ -90,6 +92,10 @@ object sagemaker {
   /* static members */
   object Endpoint {
     
+    @JSImport("@pulumi/aws", "sagemaker.Endpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Endpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -99,26 +105,21 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.sagemakerEndpointMod.Endpoint = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.sagemakerEndpointMod.Endpoint = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState): typings.pulumiAws.sagemakerEndpointMod.Endpoint = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): typings.pulumiAws.sagemakerEndpointMod.Endpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.sagemakerEndpointMod.Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerEndpointMod.Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.sagemakerEndpointMod.Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerEndpointMod.Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState): typings.pulumiAws.sagemakerEndpointMod.Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerEndpointMod.Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): typings.pulumiAws.sagemakerEndpointMod.Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerEndpointMod.Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.Endpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpoint.Endpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/endpoint.Endpoint */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration")
@@ -138,6 +139,10 @@ object sagemaker {
   /* static members */
   object EndpointConfiguration {
     
+    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -147,26 +152,21 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointConfigurationState): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointConfigurationMod.EndpointConfiguration]
     
     /**
       * Returns true if the given object is an instance of EndpointConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.EndpointConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/endpointConfiguration.EndpointConfiguration */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sagemaker.Model")
@@ -186,6 +186,10 @@ object sagemaker {
   /* static members */
   object Model {
     
+    @JSImport("@pulumi/aws", "sagemaker.Model")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Model resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -195,26 +199,21 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.Model.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.sagemakerModelMod.Model = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.sagemakerModelMod.Model = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState): typings.pulumiAws.sagemakerModelMod.Model = js.native
-    @JSImport("@pulumi/aws", "sagemaker.Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): typings.pulumiAws.sagemakerModelMod.Model = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.sagemakerModelMod.Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerModelMod.Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.sagemakerModelMod.Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerModelMod.Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState): typings.pulumiAws.sagemakerModelMod.Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerModelMod.Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): typings.pulumiAws.sagemakerModelMod.Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sagemakerModelMod.Model]
     
     /**
       * Returns true if the given object is an instance of Model.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.Model.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sagemaker.NotebookInstance")
@@ -234,6 +233,10 @@ object sagemaker {
   /* static members */
   object NotebookInstance {
     
+    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NotebookInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -243,26 +246,21 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.notebookInstanceMod.NotebookInstance = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceMod.NotebookInstance = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceState): typings.pulumiAws.notebookInstanceMod.NotebookInstance = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceState, opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceMod.NotebookInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.notebookInstanceMod.NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceMod.NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceMod.NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceMod.NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceState): typings.pulumiAws.notebookInstanceMod.NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceMod.NotebookInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceState, opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceMod.NotebookInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceMod.NotebookInstance]
     
     /**
       * Returns true if the given object is an instance of NotebookInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstance.NotebookInstance */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration")
@@ -278,11 +276,15 @@ object sagemaker {
       */
     def this(name: String) = this()
     def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: NotebookInstanceLifecycleConfigurationArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object NotebookInstanceLifecycleConfiguration {
+    
+    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing NotebookInstanceLifecycleConfiguration resource's state with the given name, ID, and optional extra
@@ -293,37 +295,30 @@ object sagemaker {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = js.native
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: NotebookInstanceLifecycleConfigurationState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = js.native
+    ): typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.notebookInstanceLifecycleConfigurationMod.NotebookInstanceLifecycleConfiguration]
     
     /**
       * Returns true if the given object is an instance of NotebookInstanceLifecycleConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sagemaker.NotebookInstanceLifecycleConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "sagemaker.getPrebuiltEcrImage")
-  @js.native
-  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs): js.Promise[GetPrebuiltEcrImageResult] = js.native
-  @JSImport("@pulumi/aws", "sagemaker.getPrebuiltEcrImage")
-  @js.native
-  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs, opts: InvokeOptions): js.Promise[GetPrebuiltEcrImageResult] = js.native
+  @scala.inline
+  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs): js.Promise[GetPrebuiltEcrImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
+  @scala.inline
+  def getPrebuiltEcrImage(args: GetPrebuiltEcrImageArgs, opts: InvokeOptions): js.Promise[GetPrebuiltEcrImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPrebuiltEcrImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPrebuiltEcrImageResult]]
 }

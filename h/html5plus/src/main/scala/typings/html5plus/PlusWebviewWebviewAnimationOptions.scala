@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.hide
 import typings.html5plus.html5plusStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewAnimationOptions extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait PlusWebviewWebviewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var action: js.UndefOr[none | hide | close] = js.native
+  var action: js.UndefOr[none | hide | close] = js.undefined
   
   /**
     * 动画样式
@@ -38,7 +36,7 @@ trait PlusWebviewWebviewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var styles: js.UndefOr[PlusWebviewWebviewAnimationStyles] = js.native
+  var styles: js.UndefOr[PlusWebviewWebviewAnimationStyles] = js.undefined
   
   /**
     * 执行动画的窗口对象
@@ -46,7 +44,7 @@ trait PlusWebviewWebviewAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var view: js.UndefOr[PlusWebviewWebviewObject] = js.native
+  var view: js.UndefOr[PlusWebviewWebviewObject] = js.undefined
 }
 object PlusWebviewWebviewAnimationOptions {
   

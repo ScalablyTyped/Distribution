@@ -2,28 +2,26 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnWidgetOptionsMod {
   
-  @js.native
   trait ColumnOptions extends StObject {
     
     /**
       * The names of the classes to apply when sorting in chronological order.
       */
-    var columns: js.UndefOr[js.Array[String]] = js.native
+    var columns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A value indicating whether the class specified in `columns` should also be applied to the table-foot.
       */
-    var columns_tfoot: js.UndefOr[Boolean] = js.native
+    var columns_tfoot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether the class specified in `columns` should also be applied to the table-head.
       */
-    var columns_thead: js.UndefOr[Boolean] = js.native
+    var columns_thead: js.UndefOr[Boolean] = js.undefined
   }
   object ColumnOptions {
     

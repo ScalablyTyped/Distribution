@@ -3,22 +3,22 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FoldTransform extends Transform {
+trait FoldTransform
+  extends StObject
+     with Transform {
   
   /**
     * The output field names for the key and value properties produced by the fold transform.
     * __Default value:__ `["key", "value"]`
     */
-  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.native
+  var as: js.UndefOr[js.Tuple2[FieldName, FieldName]] = js.undefined
   
   /**
     * An array of data fields indicating the properties to fold.
     */
-  var fold: js.Array[FieldName] = js.native
+  var fold: js.Array[FieldName]
 }
 object FoldTransform {
   

@@ -2,60 +2,50 @@ package typings.sentryUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMod {
   
-  @JSImport("@sentry/utils/dist/is", "isDOMError")
+  @JSImport("@sentry/utils/dist/is", JSImport.Namespace)
   @js.native
-  def isDOMError(wat: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@sentry/utils/dist/is", "isDOMException")
-  @js.native
-  def isDOMException(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isDOMError(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMError")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isElement")
-  @js.native
-  def isElement(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isDOMException(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDOMException")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isError")
-  @js.native
-  def isError(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isElement(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isErrorEvent")
-  @js.native
-  def isErrorEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isError(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isEvent")
-  @js.native
-  def isEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isErrorEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrorEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isInstanceOf")
-  @js.native
-  def isInstanceOf(wat: js.Any, base: js.Any): Boolean = js.native
+  @scala.inline
+  def isEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isPlainObject")
-  @js.native
-  def isPlainObject(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isInstanceOf(wat: js.Any, base: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstanceOf")(wat.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isPrimitive")
-  @js.native
-  def isPrimitive(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isPlainObject(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isRegExp")
-  @js.native
-  def isRegExp(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isPrimitive(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isString")
-  @js.native
-  def isString(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isRegExp(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isSyntheticEvent")
-  @js.native
-  def isSyntheticEvent(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isString(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@sentry/utils/dist/is", "isThenable")
-  @js.native
-  def isThenable(wat: js.Any): Boolean = js.native
+  @scala.inline
+  def isSyntheticEvent(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyntheticEvent")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isThenable(wat: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThenable")(wat.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

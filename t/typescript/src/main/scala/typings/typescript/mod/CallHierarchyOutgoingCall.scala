@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallHierarchyOutgoingCall extends StObject {
   
-  var fromSpans: js.Array[TextSpan] = js.native
+  var fromSpans: js.Array[TextSpan]
   
-  var to: CallHierarchyItem = js.native
+  var to: CallHierarchyItem
 }
 object CallHierarchyOutgoingCall {
   

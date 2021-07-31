@@ -2,15 +2,13 @@ package typings.sparkpost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Domain extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var message: String = js.native
+  var message: String
 }
 object Domain {
   

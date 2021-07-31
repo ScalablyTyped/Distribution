@@ -2,21 +2,19 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsLocked extends StObject {
   
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
-  var user: Null | String = js.native
+  var user: Null | String
 }
 object IsLocked {
   
   @scala.inline
   def apply(isLocked: Boolean): IsLocked = {
-    val __obj = js.Dynamic.literal(isLocked = isLocked.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isLocked = isLocked.asInstanceOf[js.Any], user = null)
     __obj.asInstanceOf[IsLocked]
   }
   

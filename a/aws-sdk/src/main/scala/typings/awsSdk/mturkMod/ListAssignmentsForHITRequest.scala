@@ -2,28 +2,26 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssignmentsForHITRequest extends StObject {
   
   /**
     * The status of the assignments to return: Submitted | Approved | Rejected
     */
-  var AssignmentStatuses: js.UndefOr[AssignmentStatusList] = js.native
+  var AssignmentStatuses: js.UndefOr[AssignmentStatusList] = js.undefined
   
   /**
     * The ID of the HIT.
     */
-  var HITId: EntityId = js.native
+  var HITId: EntityId
   
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListAssignmentsForHITRequest {
   

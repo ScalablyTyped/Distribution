@@ -20,78 +20,77 @@ import typings.saucelabs.saucelabsStrings.UNKNOWN
 import typings.saucelabs.saucelabsStrings.WARNING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XCUITestReport
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var appVersionId: js.UndefOr[Double] = js.native
+  var appVersionId: js.UndefOr[Double] = js.undefined
   
-  var appVersionName: js.UndefOr[String] = js.native
+  var appVersionName: js.UndefOr[String] = js.undefined
   
-  var automationBackend: js.UndefOr[String] = js.native
+  var automationBackend: js.UndefOr[String] = js.undefined
   
-  var batchId: js.UndefOr[Id] = js.native
+  var batchId: js.UndefOr[Id] = js.undefined
   
-  var batchName: js.UndefOr[String] = js.native
+  var batchName: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var dataCenterId: js.UndefOr[Id] = js.native
+  var dataCenterId: js.UndefOr[Id] = js.undefined
   
-  var deviceDescriptor: js.UndefOr[DeviceDescriptor] = js.native
+  var deviceDescriptor: js.UndefOr[DeviceDescriptor] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[Id] = js.native
+  var id: js.UndefOr[Id] = js.undefined
   
-  var networkSpeed: js.UndefOr[FULL | GSM | HDCSD | GPRS | EDGE | UMTS | HSDPA] = js.native
+  var networkSpeed: js.UndefOr[FULL | GSM | HDCSD | GPRS | EDGE | UMTS | HSDPA] = js.undefined
   
-  var phoneNumber: js.UndefOr[PhoneNumber] = js.native
+  var phoneNumber: js.UndefOr[PhoneNumber] = js.undefined
   
-  var projectPath: js.UndefOr[Path] = js.native
+  var projectPath: js.UndefOr[Path] = js.undefined
   
-  var remoteAppFileUrl: js.UndefOr[String] = js.native
+  var remoteAppFileUrl: js.UndefOr[String] = js.undefined
   
-  var running: js.UndefOr[Boolean] = js.native
+  var running: js.UndefOr[Boolean] = js.undefined
   
-  var screenshots: js.UndefOr[js.Array[Double]] = js.native
+  var screenshots: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var sharedLinkCode: js.UndefOr[String] = js.native
+  var sharedLinkCode: js.UndefOr[String] = js.undefined
   
-  var stackTrace: js.UndefOr[String] = js.native
+  var stackTrace: js.UndefOr[String] = js.undefined
   
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.native
+  var status: js.UndefOr[UNKNOWN | SUCCESS | WARNING | FAILURE | SKIPPED | ABORTED | CANCELED] = js.undefined
   
-  var systemError: js.UndefOr[String] = js.native
+  var systemError: js.UndefOr[String] = js.undefined
   
-  var systemErrorType: js.UndefOr[String] = js.native
+  var systemErrorType: js.UndefOr[String] = js.undefined
   
-  var testCaseGroups: js.UndefOr[js.Array[TestCaseGroup]] = js.native
+  var testCaseGroups: js.UndefOr[js.Array[TestCaseGroup]] = js.undefined
   
-  var testId: js.UndefOr[Id] = js.native
+  var testId: js.UndefOr[Id] = js.undefined
   
-  var testName: js.UndefOr[String] = js.native
+  var testName: js.UndefOr[String] = js.undefined
   
-  var testResultStatus: js.UndefOr[UNDEFINED | WARNING | OK | ERROR | FAILURE | SKIPPED | ABORTED | CANCELED] = js.native
+  var testResultStatus: js.UndefOr[UNDEFINED | WARNING | OK | ERROR | FAILURE | SKIPPED | ABORTED | CANCELED] = js.undefined
   
-  var tunnelId: js.UndefOr[String] = js.native
+  var tunnelId: js.UndefOr[String] = js.undefined
   
-  var tunnelIdentifier: js.UndefOr[String] = js.native
+  var tunnelIdentifier: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var uuid: js.UndefOr[Uuid] = js.native
+  var uuid: js.UndefOr[Uuid] = js.undefined
   
-  var videoId: js.UndefOr[Id] = js.native
+  var videoId: js.UndefOr[Id] = js.undefined
   
-  var withSystemError: js.UndefOr[Boolean] = js.native
+  var withSystemError: js.UndefOr[Boolean] = js.undefined
 }
 object XCUITestReport {
   

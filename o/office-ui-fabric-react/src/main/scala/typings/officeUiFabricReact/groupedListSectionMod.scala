@@ -21,7 +21,6 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupedListSectionMod {
@@ -99,7 +98,9 @@ object groupedListSectionMod {
   }
   
   @js.native
-  trait IGroupedListSectionProps extends ClassAttributes[GroupedListSection] {
+  trait IGroupedListSectionProps
+    extends StObject
+       with ClassAttributes[GroupedListSection] {
     
     /** Whether to render in compact mode */
     var compact: js.UndefOr[Boolean] = js.native
@@ -146,20 +147,20 @@ object groupedListSectionMod {
     var headerProps: js.UndefOr[IGroupHeaderProps] = js.native
     
     /** List of items to render. */
-    var items: js.Array[_] = js.native
+    var items: js.Array[js.Any] = js.native
     
     /** Optional list props to pass to list renderer.  */
-    var listProps: js.UndefOr[IListProps[_]] = js.native
+    var listProps: js.UndefOr[IListProps[js.Any]] = js.native
     
     /** Rendering callback to render the group items. */
     def onRenderCell(): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any): ReactNode = js.native
-    def onRenderCell(nestingDepth: js.UndefOr[scala.Nothing], item: js.Any, index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double): ReactNode = js.native
-    def onRenderCell(nestingDepth: Double, item: js.UndefOr[scala.Nothing], index: Double): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: js.Any): ReactNode = js.native
     def onRenderCell(nestingDepth: Double, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Double, item: Unit, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: js.Any): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: js.Any, index: Double): ReactNode = js.native
+    def onRenderCell(nestingDepth: Unit, item: Unit, index: Double): ReactNode = js.native
     
     /** Override for rendering the group footer. */
     var onRenderGroupFooter: js.UndefOr[IRenderFunction[IGroupFooterProps]] = js.native
@@ -177,7 +178,7 @@ object groupedListSectionMod {
       * smaller lists.
       * The default implementation will virtualize when this callback is not provided.
       */
-    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[_], Boolean]] = js.native
+    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[js.Any], Boolean]] = js.native
     
     /** Optional selection model to track selection state.  */
     var selection: js.UndefOr[ISelection[IObjectWithKey]] = js.native
@@ -192,12 +193,11 @@ object groupedListSectionMod {
     var viewport: js.UndefOr[IViewport] = js.native
   }
   
-  @js.native
   trait IGroupedListSectionState extends StObject {
     
-    var isDropping: js.UndefOr[Boolean] = js.native
+    var isDropping: js.UndefOr[Boolean] = js.undefined
     
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
   }
   object IGroupedListSectionState {
     

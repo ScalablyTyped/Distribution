@@ -5,30 +5,28 @@ import typings.kurentoClient.mod.MediaType
 import typings.kurentoClient.mod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined kurento-client.kurento-client.Event<'ElementConnected', {  sink :kurento-client.kurento-client.MediaElement,   mediaType :kurento-client.kurento-client.MediaType,   sourceMediaDescription :string,   sinkMediaDescription :string}> */
-@js.native
 trait EventElementConnectedsink extends StObject {
   
-  var mediaType: MediaType = js.native
+  var mediaType: MediaType
   
-  var sink: this.type = js.native
+  var sink: this.type
   
-  var sinkMediaDescription: String = js.native
+  var sinkMediaDescription: String
   
-  var source: String = js.native
+  var source: String
   
-  var sourceMediaDescription: String = js.native
+  var sourceMediaDescription: String
   
-  var tags: js.Array[Tag] = js.native
+  var tags: js.Array[Tag]
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var timestampMillis: String = js.native
+  var timestampMillis: String
   
-  var `type`: ElementConnected = js.native
+  var `type`: ElementConnected
 }
 object EventElementConnectedsink {
   
@@ -41,11 +39,10 @@ object EventElementConnectedsink {
     sourceMediaDescription: String,
     tags: js.Array[Tag],
     timestamp: String,
-    timestampMillis: String,
-    `type`: ElementConnected
+    timestampMillis: String
   ): EventElementConnectedsink = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], sink = sink.asInstanceOf[js.Any], sinkMediaDescription = sinkMediaDescription.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceMediaDescription = sourceMediaDescription.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], timestampMillis = timestampMillis.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementConnected")
     __obj.asInstanceOf[EventElementConnectedsink]
   }
   

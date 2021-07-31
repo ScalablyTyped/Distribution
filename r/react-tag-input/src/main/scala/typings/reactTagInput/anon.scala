@@ -2,29 +2,27 @@ package typings.reactTagInput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveSuggestion extends StObject {
     
-    var activeSuggestion: js.UndefOr[String] = js.native
+    var activeSuggestion: js.UndefOr[String] = js.undefined
     
-    var remove: js.UndefOr[String] = js.native
+    var remove: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[String] = js.native
+    var selected: js.UndefOr[String] = js.undefined
     
-    var suggestions: js.UndefOr[String] = js.native
+    var suggestions: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var tagInput: js.UndefOr[String] = js.native
+    var tagInput: js.UndefOr[String] = js.undefined
     
-    var tagInputField: js.UndefOr[String] = js.native
+    var tagInputField: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[String] = js.native
+    var tags: js.UndefOr[String] = js.undefined
   }
   object ActiveSuggestion {
     
@@ -87,12 +85,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var text: String = js.native
+    var text: String
   }
   object Id {
     

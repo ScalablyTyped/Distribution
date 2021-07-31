@@ -3,7 +3,6 @@ package typings.postcssSelectorParser.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* the bits we use of postcss.Rule, copied from postcss -- so we don't need to add a dependency */

@@ -4,13 +4,13 @@ import typings.microsoftAjax.Sys.EventArgs
 import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PageRequestSucceededEventArgs extends EventArgs {
+trait PageRequestSucceededEventArgs
+  extends StObject
+     with EventArgs {
   
-  def get_executor(): WebRequestExecutor = js.native
+  def get_executor(): WebRequestExecutor
 }
 object PageRequestSucceededEventArgs {
   

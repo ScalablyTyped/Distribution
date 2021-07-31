@@ -2,41 +2,39 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Video extends StObject {
   
   // Number of audio bits per sample.
-  var audioBitsPerSample: js.UndefOr[NullableOption[Double]] = js.native
+  var audioBitsPerSample: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of audio channels.
-  var audioChannels: js.UndefOr[NullableOption[Double]] = js.native
+  var audioChannels: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Name of the audio format (AAC, MP3, etc.).
-  var audioFormat: js.UndefOr[NullableOption[String]] = js.native
+  var audioFormat: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Number of audio samples per second.
-  var audioSamplesPerSecond: js.UndefOr[NullableOption[Double]] = js.native
+  var audioSamplesPerSecond: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Bit rate of the video in bits per second.
-  var bitrate: js.UndefOr[NullableOption[Double]] = js.native
+  var bitrate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Duration of the file in milliseconds.
-  var duration: js.UndefOr[NullableOption[Double]] = js.native
+  var duration: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // 'Four character code' name of the video format.
-  var fourCC: js.UndefOr[NullableOption[String]] = js.native
+  var fourCC: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Frame rate of the video.
-  var frameRate: js.UndefOr[NullableOption[Double]] = js.native
+  var frameRate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Height of the video, in pixels.
-  var height: js.UndefOr[NullableOption[Double]] = js.native
+  var height: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Width of the video, in pixels.
-  var width: js.UndefOr[NullableOption[Double]] = js.native
+  var width: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Video {
   

@@ -9,7 +9,6 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object missingInjectableTransformMod {
@@ -87,12 +86,11 @@ object missingInjectableTransformMod {
     var visitedProviderLiterals: js.Any = js.native
   }
   
-  @js.native
   trait AnalysisFailure extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var node: Node = js.native
+    var node: Node
   }
   object AnalysisFailure {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetOutput extends StObject {
   
   /**
     * Properties for the newly created fleet.
     */
-  var FleetAttributes: js.UndefOr[typings.awsSdk.gameliftMod.FleetAttributes] = js.native
+  var FleetAttributes: js.UndefOr[typings.awsSdk.gameliftMod.FleetAttributes] = js.undefined
 }
 object CreateFleetOutput {
   

@@ -2,68 +2,66 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about a comment, such as its author and text.
   */
-@js.native
 trait SchemaCommentSnippet extends StObject {
   
   /**
     * The id of the author&#39;s YouTube channel, if any.
     */
-  var authorChannelId: js.UndefOr[js.Any] = js.native
+  var authorChannelId: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Link to the author&#39;s YouTube channel, if any.
     */
-  var authorChannelUrl: js.UndefOr[String] = js.native
+  var authorChannelUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user who posted the comment.
     */
-  var authorDisplayName: js.UndefOr[String] = js.native
+  var authorDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for the avatar of the user who posted the comment.
     */
-  var authorProfileImageUrl: js.UndefOr[String] = js.native
+  var authorProfileImageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the current viewer can rate this comment.
     */
-  var canRate: js.UndefOr[Boolean] = js.native
+  var canRate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id of the corresponding YouTube channel. In case of a channel comment
     * this is the channel the comment refers to. In case of a video comment
     * it&#39;s the video&#39;s channel.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of likes this comment has received.
     */
-  var likeCount: js.UndefOr[Double] = js.native
+  var likeCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The comment&#39;s moderation status. Will not be set if the comments were
     * requested through the id filter.
     */
-  var moderationStatus: js.UndefOr[String] = js.native
+  var moderationStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The unique id of the parent comment, only set for replies.
     */
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the comment was orignally published. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The comment&#39;s text. The format is either plain text or HTML dependent
@@ -71,7 +69,7 @@ trait SchemaCommentSnippet extends StObject {
     * from the text originally posted in that it may replace video links with
     * video titles etc.
     */
-  var textDisplay: js.UndefOr[String] = js.native
+  var textDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * The comment&#39;s original raw text as initially posted or last updated.
@@ -79,25 +77,25 @@ trait SchemaCommentSnippet extends StObject {
     * viewer, which is only guaranteed if the viewer is the comment&#39;s
     * author.
     */
-  var textOriginal: js.UndefOr[String] = js.native
+  var textOriginal: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when was last updated . The value is specified in ISO
     * 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var updatedAt: js.UndefOr[String] = js.native
+  var updatedAt: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the video the comment refers to, if any.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
   
   /**
     * The rating the viewer has given to this comment. For the time being this
     * will never return RATE_TYPE_DISLIKE and instead return RATE_TYPE_NONE.
     * This may change in the future.
     */
-  var viewerRating: js.UndefOr[String] = js.native
+  var viewerRating: js.UndefOr[String] = js.undefined
 }
 object SchemaCommentSnippet {
   

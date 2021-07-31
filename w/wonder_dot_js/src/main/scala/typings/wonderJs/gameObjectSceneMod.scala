@@ -1,27 +1,32 @@
 package typings.wonderJs
 
-import typings.wonderJs.entityObjectMod.EntityObject
 import typings.wonderJs.gameObjectMod.GameObject
 import typings.wonderJs.rendererMod.Renderer
+import typings.wonderJs.sceneMod.Scene
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/core/entityObject/scene/gameObjectScene/GameObjectScene", JSImport.Namespace)
-@js.native
-object gameObjectSceneMod extends js.Object {
+object gameObjectSceneMod {
+  
+  @JSImport("wonder.js/dist/es2015/core/entityObject/scene/gameObjectScene/GameObjectScene", "GameObjectScene")
   @js.native
-  class GameObjectScene () extends EntityObject {
-    var currentCamera: js.Any = js.native
+  class GameObjectScene () extends Scene {
+    
     def addChild(child: GameObject): GameObject = js.native
+    
+    var currentCamera: js.Any = js.native
+    
     def render(renderer: Renderer): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object GameObjectScene extends js.Object {
-    def create(): GameObjectScene = js.native
+  object GameObjectScene {
+    
+    @JSImport("wonder.js/dist/es2015/core/entityObject/scene/gameObjectScene/GameObjectScene", "GameObjectScene")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): GameObjectScene = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GameObjectScene]
   }
-  
 }
-

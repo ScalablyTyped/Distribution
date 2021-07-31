@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyVersion extends StObject {
   
   /**
     * The date and time the policy was created.
     */
-  var createDate: js.UndefOr[DateType] = js.native
+  var createDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * Specifies whether the policy version is the default.
     */
-  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.native
+  var isDefaultVersion: js.UndefOr[IsDefaultVersion] = js.undefined
   
   /**
     * The policy version ID.
     */
-  var versionId: js.UndefOr[PolicyVersionId] = js.native
+  var versionId: js.UndefOr[PolicyVersionId] = js.undefined
 }
 object PolicyVersion {
   

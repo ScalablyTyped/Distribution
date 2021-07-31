@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionQueryResponse extends StObject {
   
   /**
     * A page token that may be used to request an additional set of results, up to the number specified by `partition_count` in the PartitionQuery request. If blank, there are no more
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Partition results. Each partition is a split point that can be used by RunQuery as a starting or end point for the query results. The RunQuery requests must be made with the same
@@ -20,7 +18,7 @@ trait PartitionQueryResponse extends StObject {
     * if a PartitionQuery request returns partition cursors A and B, running the following three queries will return the entire result set of the original query: * query, end_at A *
     * query, start_at A, end_at B * query, start_at B An empty result may indicate that the query has too few results to be partitioned.
     */
-  var partitions: js.UndefOr[js.Array[Cursor]] = js.native
+  var partitions: js.UndefOr[js.Array[Cursor]] = js.undefined
 }
 object PartitionQueryResponse {
   

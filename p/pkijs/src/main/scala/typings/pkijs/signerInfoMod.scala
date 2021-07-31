@@ -3,62 +3,86 @@ package typings.pkijs
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signerInfoMod {
   
   @JSImport("pkijs/src/SignerInfo", JSImport.Default)
   @js.native
-  class default () extends SignerInfo {
+  class default ()
+    extends StObject
+       with SignerInfo {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var sid: js.Any = js.native
+    
+    /* CompleteClass */
+    var signature: OctetString = js.native
+    
+    /* CompleteClass */
+    var signatureAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+    
+    /* CompleteClass */
+    var version: Double = js.native
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/SignerInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/SignerInfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/SignerInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/SignerInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/SignerInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait SignerInfo extends StObject {
     
-    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    var digestAlgorithm: typings.pkijs.algorithmIdentifierMod.default
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var sid: js.Any = js.native
+    var sid: js.Any
     
-    var signature: OctetString = js.native
+    var signature: OctetString
     
-    var signatureAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
+    var signatureAlgorithm: typings.pkijs.algorithmIdentifierMod.default
     
-    var signedAttrs: js.UndefOr[typings.pkijs.signedAndUnsignedAttributesMod.default] = js.native
+    var signedAttrs: js.UndefOr[typings.pkijs.signedAndUnsignedAttributesMod.default] = js.undefined
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
     
-    var unsignedAttrs: js.UndefOr[typings.pkijs.signedAndUnsignedAttributesMod.default] = js.native
+    var unsignedAttrs: js.UndefOr[typings.pkijs.signedAndUnsignedAttributesMod.default] = js.undefined
     
-    var version: Double = js.native
+    var version: Double
   }
   object SignerInfo {
     

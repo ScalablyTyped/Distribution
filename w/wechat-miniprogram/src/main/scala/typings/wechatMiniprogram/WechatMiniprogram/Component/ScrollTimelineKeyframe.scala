@@ -7,18 +7,17 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.auto
 import typings.wechatMiniprogram.wechatMiniprogramStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollTimelineKeyframe
-  extends /* property */ StringDictionary[js.UndefOr[String | Double | Null]] {
+  extends StObject
+     with /* property */ StringDictionary[js.UndefOr[String | Double | Null]] {
   
-  var composite: js.UndefOr[replace | add | accumulate | auto] = js.native
+  var composite: js.UndefOr[replace | add | accumulate | auto] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double | Null] = js.native
+  var offset: js.UndefOr[Double | Null] = js.undefined
 }
 object ScrollTimelineKeyframe {
   

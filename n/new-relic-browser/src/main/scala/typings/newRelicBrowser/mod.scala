@@ -6,7 +6,6 @@ import typings.newRelicBrowser.mod.NewRelic.Browser
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -219,23 +218,22 @@ object mod extends Shortcut {
       def setName(name: String, trigger: String): BrowserInteraction = js.native
     }
     
-    @js.native
     trait EventObject extends StObject {
       
       /** End time in ms since epoch.  Defaults to same as start resulting in trace object with a duration of zero. */
-      var end: js.UndefOr[Double] = js.native
+      var end: js.UndefOr[Double] = js.undefined
       
       /** Event name */
-      var name: String = js.native
+      var name: String
       
       /** Origin of event */
-      var origin: js.UndefOr[String] = js.native
+      var origin: js.UndefOr[String] = js.undefined
       
       /** Start time in ms since epoch */
-      var start: Double = js.native
+      var start: Double
       
       /** Event type */
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object EventObject {
       

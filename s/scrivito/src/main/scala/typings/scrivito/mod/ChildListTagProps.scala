@@ -2,18 +2,16 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildListTagProps extends StObject {
   
-  var parent: js.UndefOr[Obj] = js.native
+  var parent: js.UndefOr[Obj] = js.undefined
   
   // TODO: hard to type
-  var renderChild: js.UndefOr[js.Function1[/* child */ js.Any, _]] = js.native
+  var renderChild: js.UndefOr[js.Function1[/* child */ js.Any, js.Any]] = js.undefined
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object ChildListTagProps {
   
@@ -33,7 +31,7 @@ object ChildListTagProps {
     def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def setRenderChild(value: /* child */ js.Any => _): Self = StObject.set(x, "renderChild", js.Any.fromFunction1(value))
+    def setRenderChild(value: /* child */ js.Any => js.Any): Self = StObject.set(x, "renderChild", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRenderChildUndefined: Self = StObject.set(x, "renderChild", js.undefined)

@@ -2,29 +2,27 @@ package typings.seleniumWebdriver.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyConfig extends StObject {
   
-  var ftpProxy: js.UndefOr[String] = js.native
+  var ftpProxy: js.UndefOr[String] = js.undefined
   
-  var httpProxy: js.UndefOr[String] = js.native
+  var httpProxy: js.UndefOr[String] = js.undefined
   
-  var noProxy: js.UndefOr[String] = js.native
+  var noProxy: js.UndefOr[String] = js.undefined
   
-  var proxyAutoconfigUrl: js.UndefOr[String] = js.native
+  var proxyAutoconfigUrl: js.UndefOr[String] = js.undefined
   
-  var proxyType: String = js.native
+  var proxyType: String
   
-  var socksPassword: js.UndefOr[String] = js.native
+  var socksPassword: js.UndefOr[String] = js.undefined
   
-  var socksProxy: js.UndefOr[String] = js.native
+  var socksProxy: js.UndefOr[String] = js.undefined
   
-  var socksUsername: js.UndefOr[String] = js.native
+  var socksUsername: js.UndefOr[String] = js.undefined
   
-  var sslProxy: js.UndefOr[String] = js.native
+  var sslProxy: js.UndefOr[String] = js.undefined
 }
 object ProxyConfig {
   

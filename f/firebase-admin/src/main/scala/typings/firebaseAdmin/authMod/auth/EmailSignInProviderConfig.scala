@@ -2,25 +2,23 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The email sign in configuration.
   */
-@js.native
 trait EmailSignInProviderConfig extends StObject {
   
   /**
     * Whether email provider is enabled.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Whether password is required for email sign-in. When not required,
     * email sign-in can be performed with password or via email link sign-in.
     */
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
 }
 object EmailSignInProviderConfig {
   

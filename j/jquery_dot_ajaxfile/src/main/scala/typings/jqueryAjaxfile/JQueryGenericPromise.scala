@@ -2,7 +2,6 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,17 +19,17 @@ trait JQueryGenericPromise[T] extends StObject {
   def `then`(doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit]): JQueryPromise[Unit] = js.native
   def `then`(
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit],
-    failFilter: js.UndefOr[scala.Nothing],
-    progressFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[Unit] = js.native
   def `then`(
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit],
-    failFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: js.Function1[/* repeated */ js.Any, js.Any],
+    progressFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[Unit] = js.native
   def `then`(
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, Unit],
-    failFilter: js.Function1[/* repeated */ js.Any, _],
-    progressFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: Unit,
+    progressFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[Unit] = js.native
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
@@ -43,18 +42,18 @@ trait JQueryGenericPromise[T] extends StObject {
   @JSName("then")
   def then_U[U](
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]],
-    failFilter: js.UndefOr[scala.Nothing],
-    progressFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[U] = js.native
   @JSName("then")
   def then_U[U](
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]],
-    failFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: js.Function1[/* repeated */ js.Any, js.Any],
+    progressFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[U] = js.native
   @JSName("then")
   def then_U[U](
     doneFilter: js.Function2[/* value */ js.UndefOr[T], /* repeated */ js.Any, U | JQueryPromise[U]],
-    failFilter: js.Function1[/* repeated */ js.Any, _],
-    progressFilter: js.Function1[/* repeated */ js.Any, _]
+    failFilter: Unit,
+    progressFilter: js.Function1[/* repeated */ js.Any, js.Any]
   ): JQueryPromise[U] = js.native
 }

@@ -4,18 +4,16 @@ import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentFormattingEditProvider extends StObject {
   
-  val displayName: js.UndefOr[String] = js.native
+  val displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Provide formatting edits for a whole document.
     */
-  def provideDocumentFormattingEdits(model: ITextModel, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]] = js.native
+  def provideDocumentFormattingEdits(model: ITextModel, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]]
 }
 object DocumentFormattingEditProvider {
   

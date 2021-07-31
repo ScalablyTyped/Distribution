@@ -2,46 +2,44 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserGroup extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the user group.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * Must be Redis. 
     */
-  var Engine: js.UndefOr[EngineType] = js.native
+  var Engine: js.UndefOr[EngineType] = js.undefined
   
   /**
     * A list of updates being applied to the user groups.
     */
-  var PendingChanges: js.UndefOr[UserGroupPendingChanges] = js.native
+  var PendingChanges: js.UndefOr[UserGroupPendingChanges] = js.undefined
   
   /**
     * A list of replication groups that the user group can access.
     */
-  var ReplicationGroups: js.UndefOr[UGReplicationGroupIdList] = js.native
+  var ReplicationGroups: js.UndefOr[UGReplicationGroupIdList] = js.undefined
   
   /**
     * Indicates user group status. Can be "creating", "active", "modifying", "deleting".
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the user group.
     */
-  var UserGroupId: js.UndefOr[String] = js.native
+  var UserGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of user IDs that belong to the user group.
     */
-  var UserIds: js.UndefOr[UserIdList] = js.native
+  var UserIds: js.UndefOr[UserIdList] = js.undefined
 }
 object UserGroup {
   

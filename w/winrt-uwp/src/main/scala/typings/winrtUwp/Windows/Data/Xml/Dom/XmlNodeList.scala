@@ -6,12 +6,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsIXmlNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Describes a collection of nodes. */
 @js.native
-trait XmlNodeList extends Array[IXmlNode] {
+trait XmlNodeList
+  extends StObject
+     with Array[IXmlNode] {
   
   /**
     * Returns an iterator that iterates over the items in the collection.

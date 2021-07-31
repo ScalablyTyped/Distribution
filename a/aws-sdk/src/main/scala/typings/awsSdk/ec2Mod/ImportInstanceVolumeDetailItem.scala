@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportInstanceVolumeDetailItem extends StObject {
   
   /**
     * The Availability Zone where the resulting instance will reside.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The number of bytes converted so far.
     */
-  var BytesConverted: js.UndefOr[Long] = js.native
+  var BytesConverted: js.UndefOr[Long] = js.undefined
   
   /**
     * A description of the task.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The image.
     */
-  var Image: js.UndefOr[DiskImageDescription] = js.native
+  var Image: js.UndefOr[DiskImageDescription] = js.undefined
   
   /**
     * The status of the import of this particular disk image.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The status information or errors related to the disk image.
     */
-  var StatusMessage: js.UndefOr[String] = js.native
+  var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The volume.
     */
-  var Volume: js.UndefOr[DiskImageVolumeDescription] = js.native
+  var Volume: js.UndefOr[DiskImageVolumeDescription] = js.undefined
 }
 object ImportInstanceVolumeDetailItem {
   

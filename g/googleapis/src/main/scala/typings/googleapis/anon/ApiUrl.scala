@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiUrl extends StObject {
   
-  var apiUrl: js.UndefOr[String] = js.native
+  var apiUrl: js.UndefOr[String] = js.undefined
   
-  var browserUrl: js.UndefOr[String] = js.native
+  var browserUrl: js.UndefOr[String] = js.undefined
 }
 object ApiUrl {
   

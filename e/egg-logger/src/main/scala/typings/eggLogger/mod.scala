@@ -8,7 +8,6 @@ import typings.eggLogger.eggLoggerStrings.redirect
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -68,7 +67,8 @@ object mod {
   @JSImport("egg-logger", "EggLoggers")
   @js.native
   class EggLoggers protected ()
-    extends Map[String, Logger[LoggerOptions]]
+    extends StObject
+       with Map[String, Logger[LoggerOptions]]
        with /* key */ StringDictionary[js.Any] {
     def this(options: EggLoggersOptions) = this()
     
@@ -99,7 +99,9 @@ object mod {
   
   @JSImport("egg-logger", "Logger")
   @js.native
-  class Logger[T /* <: LoggerOptions */] protected () extends Map[String, Transport[TransportOptions]] {
+  class Logger[T /* <: LoggerOptions */] protected ()
+    extends StObject
+       with Map[String, Transport[TransportOptions]] {
     def this(options: T) = this()
     
     /**
@@ -141,7 +143,7 @@ object mod {
       * @param {Array} args - log arguments
       * @param {Object} meta - log meta
       */
-    def log(level: LoggerLevel, args: js.Array[_], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[js.Any], meta: js.Object): Unit = js.native
     
     /**
       * Redirect specify level log to the other logger
@@ -191,7 +193,7 @@ object mod {
     
     var level: LoggerLevel = js.native
     
-    def log(level: LoggerLevel, args: js.Array[_], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[js.Any], meta: js.Object): Unit = js.native
     
     def reload(): Unit = js.native
     
@@ -202,10 +204,11 @@ object mod {
   @js.native
   val levels: ILoggerLevel = js.native
   
-  @js.native
-  trait ConsoleTransportOptions extends TransportOptions {
+  trait ConsoleTransportOptions
+    extends StObject
+       with TransportOptions {
     
-    var stderrLevel: js.UndefOr[String] = js.native
+    var stderrLevel: js.UndefOr[String] = js.undefined
   }
   object ConsoleTransportOptions {
     
@@ -226,24 +229,25 @@ object mod {
     }
   }
   
-  @js.native
-  trait EggLoggerOptions extends LoggerOptions {
+  trait EggLoggerOptions
+    extends StObject
+       with LoggerOptions {
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.native
+    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
     
-    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var file: String = js.native
+    var file: String
     
-    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var jsonFile: js.UndefOr[String] = js.native
+    var jsonFile: js.UndefOr[String] = js.undefined
     
-    var outputJSON: js.UndefOr[Boolean] = js.native
+    var outputJSON: js.UndefOr[Boolean] = js.undefined
   }
   object EggLoggerOptions {
     
@@ -303,37 +307,36 @@ object mod {
     }
   }
   
-  @js.native
   trait EggLoggersOptions extends StObject {
     
-    var agentLogName: String = js.native
+    var agentLogName: String
     
-    var appLogName: String = js.native
+    var appLogName: String
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
     // whether write error logger to common-error.log, `duplicate` / `redirect` / `ignore`, default to `duplicate`
-    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.native
+    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
     
-    var consoleLevel: js.UndefOr[LoggerLevel] = js.native
+    var consoleLevel: js.UndefOr[LoggerLevel] = js.undefined
     
-    var coreLogName: String = js.native
+    var coreLogName: String
     
-    var dir: String = js.native
+    var dir: String
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var errorLogName: String = js.native
+    var errorLogName: String
     
-    var level: js.UndefOr[LoggerLevel] = js.native
+    var level: js.UndefOr[LoggerLevel] = js.undefined
     
-    var outputJSON: js.UndefOr[Boolean] = js.native
+    var outputJSON: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object EggLoggersOptions {
     
@@ -422,12 +425,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait FileBufferTransportOptions extends FileTransportOptions {
+  trait FileBufferTransportOptions
+    extends StObject
+       with FileTransportOptions {
     
-    var flushInterval: js.UndefOr[Double] = js.native
+    var flushInterval: js.UndefOr[Double] = js.undefined
     
-    var maxBufferLength: js.UndefOr[Double] = js.native
+    var maxBufferLength: js.UndefOr[Double] = js.undefined
   }
   object FileBufferTransportOptions {
     
@@ -454,10 +458,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FileTransportOptions extends TransportOptions {
+  trait FileTransportOptions
+    extends StObject
+       with TransportOptions {
     
-    var file: String = js.native
+    var file: String
   }
   object FileTransportOptions {
     
@@ -475,20 +480,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ILoggerLevel extends StObject {
     
-    var ALL: Double = js.native
+    var ALL: Double
     
-    var DEBUG: Double = js.native
+    var DEBUG: Double
     
-    var ERROR: Double = js.native
+    var ERROR: Double
     
-    var INFO: Double = js.native
+    var INFO: Double
     
-    var NONE: Double = js.native
+    var NONE: Double
     
-    var WARN: Double = js.native
+    var WARN: Double
   }
   object ILoggerLevel {
     
@@ -531,16 +535,15 @@ object mod {
   */
   trait LoggerLevel extends StObject
   
-  @js.native
   trait LoggerOptions extends StObject {
     
-    var allowDebugAtProd: js.UndefOr[Boolean] = js.native
+    var allowDebugAtProd: js.UndefOr[Boolean] = js.undefined
     
-    var consoleLevel: js.UndefOr[LoggerLevel] = js.native
+    var consoleLevel: js.UndefOr[LoggerLevel] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[LoggerLevel] = js.native
+    var level: js.UndefOr[LoggerLevel] = js.undefined
   }
   object LoggerOptions {
     
@@ -579,20 +582,19 @@ object mod {
     }
   }
   
-  @js.native
   trait TransportOptions extends StObject {
     
-    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[LoggerLevel] = js.native
+    var level: js.UndefOr[LoggerLevel] = js.undefined
   }
   object TransportOptions {
     

@@ -2,15 +2,13 @@ package typings.reactSvgRadarChart
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
   }
   object ClassName {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: String = js.native
+    var color: String
   }
   object Color {
     
@@ -49,12 +46,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fill extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var fill: String = js.native
+    var fill: String
   }
   object Fill {
     
@@ -75,16 +71,15 @@ object anon {
     }
   }
   
-  @js.native
   trait FontFamily extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var textAnchor: String = js.native
+    var textAnchor: String
   }
   object FontFamily {
     

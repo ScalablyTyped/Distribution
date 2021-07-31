@@ -2,23 +2,21 @@ package typings.yogaLayout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
-  def fromJS(expose: js.Function2[/* width */ Double, /* height */ Double, _]): Unit = js.native
+  def fromJS(expose: js.Function2[/* width */ Double, /* height */ Double, js.Any]): Unit
   
-  val height: Double = js.native
+  val height: Double
   
-  val width: Double = js.native
+  val width: Double
 }
 object Size {
   
   @scala.inline
   def apply(
-    fromJS: js.Function2[/* width */ Double, /* height */ Double, _] => Unit,
+    fromJS: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit,
     height: Double,
     width: Double
   ): Size = {
@@ -30,7 +28,7 @@ object Size {
   implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, _] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
+    def setFromJS(value: js.Function2[/* width */ Double, /* height */ Double, js.Any] => Unit): Self = StObject.set(x, "fromJS", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

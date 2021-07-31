@@ -10,7 +10,6 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalContainerMod {
@@ -45,28 +44,27 @@ object modalContainerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ModalContainerProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var as: js.UndefOr[ReactType[_]] = js.native
+    var as: js.UndefOr[ReactType[js.Any]] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnBlur: js.UndefOr[Boolean] = js.native
+    var closeOnBlur: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnEsc: js.UndefOr[Boolean] = js.native
+    var closeOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var document: js.UndefOr[Document] = js.native
+    var document: js.UndefOr[Document] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement | SVGElement | ComponentType[js.Object]]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ModalContainerProps {
     
@@ -86,7 +84,7 @@ object modalContainerMod {
       def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
       @scala.inline
-      def setAs(value: ReactType[_]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      def setAs(value: ReactType[js.Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsUndefined: Self = StObject.set(x, "as", js.undefined)

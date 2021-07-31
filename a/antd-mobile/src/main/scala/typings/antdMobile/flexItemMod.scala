@@ -6,7 +6,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flexItemMod {
@@ -32,14 +31,15 @@ object flexItemMod {
   trait FlexItem
     extends Component[FlexItemProps, js.Any, js.Any]
   
-  @js.native
-  trait FlexItemProps extends FlexItemPropsType {
+  trait FlexItemProps
+    extends StObject
+       with FlexItemPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object FlexItemProps {
     

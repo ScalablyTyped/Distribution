@@ -6,12 +6,12 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.openfin.anon.HttpResponseCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OpenFinApplicationStatic
-  extends /**
+  extends StObject
+     with /**
   * Creates a new Application.
   * An object representing an application. Allows the developer to create, execute, show/close an application as well as listen to application events.
   */
@@ -23,7 +23,7 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
     ]
      with Instantiable3[
       /* options */ ApplicationOption, 
-      js.UndefOr[/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]], 
+      (/* callback */ js.Function1[/* successObj */ HttpResponseCode, Unit]) | (/* callback */ Unit), 
       /* errorCallback */ js.Function2[/* reason */ String, /* errorObj */ NetworkErrorInfo, Unit], 
       OpenFinApplication
     ] {
@@ -32,15 +32,15 @@ Instantiable1[/* options */ ApplicationOption, OpenFinApplication]
     * Launches the given Application manifest.
     */
   def createFromManifest(manifestUrl: String): Unit = js.native
-  def createFromManifest(
-    manifestUrl: String,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
-  ): Unit = js.native
   def createFromManifest(manifestUrl: String, callback: js.Function1[/* app */ OpenFinApplication, Unit]): Unit = js.native
   def createFromManifest(
     manifestUrl: String,
     callback: js.Function1[/* app */ OpenFinApplication, Unit],
+    errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
+  ): Unit = js.native
+  def createFromManifest(
+    manifestUrl: String,
+    callback: Unit,
     errorCallback: js.Function2[/* reason */ String, /* error */ ErrorInfo, Unit]
   ): Unit = js.native
   

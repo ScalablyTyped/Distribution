@@ -2,7 +2,6 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/me/following
   * https://developer.spotify.com/web-api/get-followed-artists/
   */
-@js.native
 trait UsersFollowedArtistsResponse extends StObject {
   
-  var artists: CursorBasedPagingObject[ArtistObjectFull] = js.native
+  var artists: CursorBasedPagingObject[ArtistObjectFull]
 }
 object UsersFollowedArtistsResponse {
   

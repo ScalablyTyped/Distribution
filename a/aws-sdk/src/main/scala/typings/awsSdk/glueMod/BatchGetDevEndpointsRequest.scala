@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDevEndpointsRequest extends StObject {
   
   /**
     * The list of DevEndpoint names, which might be the names returned from the ListDevEndpoint operation.
     */
-  var DevEndpointNames: typings.awsSdk.glueMod.DevEndpointNames = js.native
+  var DevEndpointNames: typings.awsSdk.glueMod.DevEndpointNames
 }
 object BatchGetDevEndpointsRequest {
   

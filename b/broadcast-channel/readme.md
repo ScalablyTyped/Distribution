@@ -10,9 +10,9 @@ A BroadcastChannel that works in New Browsers, Old Browsers, WebWorkers and Node
 | ------------------ | :-------------: |
 | Full name          | broadcast-channel |
 | Keywords           | broadcast-channel, broadcastchannel, broadcast, polyfill, localstorage, indexeddb, postMessage, crosstab, ipc, leader-election |
-| # releases         | 23 |
-| # dependents       | 32 |
-| # downloads        | 1311919 |
+| # releases         | 21 |
+| # dependents       | 33 |
+| # downloads        | 1789890 |
 | # stars            | 0 |
 
 ## Links

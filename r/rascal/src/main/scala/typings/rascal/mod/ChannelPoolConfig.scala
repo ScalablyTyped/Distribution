@@ -2,23 +2,21 @@ package typings.rascal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelPoolConfig extends StObject {
   
-  var autostart: js.UndefOr[Boolean] = js.native
+  var autostart: js.UndefOr[Boolean] = js.undefined
   
-  var evictionRunIntervalMillis: js.UndefOr[Double] = js.native
+  var evictionRunIntervalMillis: js.UndefOr[Double] = js.undefined
   
-  var idleTimeoutMillis: js.UndefOr[Double] = js.native
+  var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var testOnBorrow: js.UndefOr[Boolean] = js.native
+  var testOnBorrow: js.UndefOr[Boolean] = js.undefined
 }
 object ChannelPoolConfig {
   

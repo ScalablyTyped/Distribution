@@ -3,15 +3,37 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod {
   
   @JSImport("carbon-components/components/checkbox/checkbox", JSImport.Default)
   @js.native
-  class default protected () extends Checkbox {
+  class default protected ()
+    extends StObject
+       with Checkbox {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleBlur(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleClick(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleFocus(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _indeterminateCheckbox(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _initCheckbox(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setDisabled(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def setState(state: js.Any): Unit = js.native
   }
   object default {
     
@@ -33,15 +55,15 @@ object checkboxMod {
       @js.native
       val ^ : js.Any = js.native
       
+      @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.false")
+      @js.native
+      val `false`: String = js.native
+      
       @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.mixed")
       @js.native
       def mixed: String = js.native
       @scala.inline
       def mixed_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mixed")(x.asInstanceOf[js.Any])
-      
-      @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.false")
-      @js.native
-      val `false`: String = js.native
       
       @JSImport("carbon-components/components/checkbox/checkbox", "default.stateChangeTypes.true")
       @js.native
@@ -50,22 +72,21 @@ object checkboxMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Checkbox extends StObject {
+  - Dropped any */ trait Checkbox extends StObject {
     
-    def _handleBlur(): Unit = js.native
+    def _handleBlur(): Unit
     
-    def _handleClick(): Unit = js.native
+    def _handleClick(): Unit
     
-    def _handleFocus(): Unit = js.native
+    def _handleFocus(): Unit
     
-    def _indeterminateCheckbox(): Unit = js.native
+    def _indeterminateCheckbox(): Unit
     
-    def _initCheckbox(): Unit = js.native
+    def _initCheckbox(): Unit
     
-    def setDisabled(value: js.Any): Unit = js.native
+    def setDisabled(value: js.Any): Unit
     
-    def setState(state: js.Any): Unit = js.native
+    def setState(state: js.Any): Unit
   }
   object Checkbox {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerformanceReportList extends StObject {
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A list of performance reports relevant for the account. */
-  var performanceReport: js.UndefOr[js.Array[PerformanceReport]] = js.native
+  var performanceReport: js.UndefOr[js.Array[PerformanceReport]] = js.undefined
 }
 object PerformanceReportList {
   

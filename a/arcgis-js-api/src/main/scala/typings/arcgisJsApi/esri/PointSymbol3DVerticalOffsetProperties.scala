@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointSymbol3DVerticalOffsetProperties extends Object {
+trait PointSymbol3DVerticalOffsetProperties
+  extends StObject
+     with Object {
   
   /**
     * The maximum vertical symbol offset in world units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
-  var maxWorldLength: js.UndefOr[Double] = js.native
+  var maxWorldLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum vertical symbol offset in world units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
-  var minWorldLength: js.UndefOr[Double] = js.native
+  var minWorldLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The vertical symbol offset in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
-  var screenLength: js.UndefOr[Double] = js.native
+  var screenLength: js.UndefOr[Double] = js.undefined
 }
 object PointSymbol3DVerticalOffsetProperties {
   

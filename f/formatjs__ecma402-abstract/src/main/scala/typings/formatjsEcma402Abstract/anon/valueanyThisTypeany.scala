@@ -2,14 +2,12 @@ package typings.formatjsEcma402Abstract.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  value :any} & std.ThisType<any> */
-@js.native
 trait valueanyThisTypeany extends StObject {
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object valueanyThisTypeany {
   

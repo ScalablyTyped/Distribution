@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnInfo extends StObject {
   
   /**
     *  The name of the result set column. The name of the result set is available for columns of all data types except for arrays. 
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     *  The data type of the result set column. The data type can be a scalar or complex. Scalar data types are integers, strings, doubles, booleans, and others. Complex data types are types such as arrays, rows, and others. 
     */
-  var Type: typings.awsSdk.timestreamqueryMod.Type = js.native
+  var Type: typings.awsSdk.timestreamqueryMod.Type
 }
 object ColumnInfo {
   

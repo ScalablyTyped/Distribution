@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicsResponse extends StObject {
   
   /**
     * Token to pass along to the next ListTopics request. This element is returned if there are additional topics to retrieve.
     */
-  var NextToken: js.UndefOr[nextToken] = js.native
+  var NextToken: js.UndefOr[nextToken] = js.undefined
   
   /**
     * A list of topic ARNs.
     */
-  var Topics: js.UndefOr[TopicsList] = js.native
+  var Topics: js.UndefOr[TopicsList] = js.undefined
 }
 object ListTopicsResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchAttachTypedLink extends StObject {
   
   /**
     * A set of attributes that are associated with the typed link.
     */
-  var Attributes: AttributeNameAndValueList = js.native
+  var Attributes: AttributeNameAndValueList
   
   /**
     * Identifies the source object that the typed link will attach to.
     */
-  var SourceObjectReference: ObjectReference = js.native
+  var SourceObjectReference: ObjectReference
   
   /**
     * Identifies the target object that the typed link will attach to.
     */
-  var TargetObjectReference: ObjectReference = js.native
+  var TargetObjectReference: ObjectReference
   
   /**
     * Identifies the typed link facet that is associated with the typed link.
     */
-  var TypedLinkFacet: TypedLinkSchemaAndFacetName = js.native
+  var TypedLinkFacet: TypedLinkSchemaAndFacetName
 }
 object BatchAttachTypedLink {
   

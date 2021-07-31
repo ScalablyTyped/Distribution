@@ -2,101 +2,99 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIntentVersionResponse extends StObject {
   
   /**
     * Checksum of the intent version created.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * After the Lambda function specified in the fulfillmentActivity field fulfills the intent, Amazon Lex conveys this statement to the user. 
     */
-  var conclusionStatement: js.UndefOr[Statement] = js.native
+  var conclusionStatement: js.UndefOr[Statement] = js.undefined
   
   /**
     * If defined, the prompt that Amazon Lex uses to confirm the user's intent before fulfilling it. 
     */
-  var confirmationPrompt: js.UndefOr[Prompt] = js.native
+  var confirmationPrompt: js.UndefOr[Prompt] = js.undefined
   
   /**
     * The date that the intent was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the intent.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * If defined, Amazon Lex invokes this Lambda function for each user input.
     */
-  var dialogCodeHook: js.UndefOr[CodeHook] = js.native
+  var dialogCodeHook: js.UndefOr[CodeHook] = js.undefined
   
   /**
     * If defined, Amazon Lex uses this prompt to solicit additional user activity after the intent is fulfilled. 
     */
-  var followUpPrompt: js.UndefOr[FollowUpPrompt] = js.native
+  var followUpPrompt: js.UndefOr[FollowUpPrompt] = js.undefined
   
   /**
     *  Describes how the intent is fulfilled. 
     */
-  var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.native
+  var fulfillmentActivity: js.UndefOr[FulfillmentActivity] = js.undefined
   
   /**
     * An array of InputContext objects that lists the contexts that must be active for Amazon Lex to choose the intent in a conversation with the user.
     */
-  var inputContexts: js.UndefOr[InputContextList] = js.native
+  var inputContexts: js.UndefOr[InputContextList] = js.undefined
   
   /**
     * Configuration information, if any, for connecting an Amazon Kendra index with the AMAZON.KendraSearchIntent intent.
     */
-  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.native
+  var kendraConfiguration: js.UndefOr[KendraConfiguration] = js.undefined
   
   /**
     * The date that the intent was updated. 
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the intent.
     */
-  var name: js.UndefOr[IntentName] = js.native
+  var name: js.UndefOr[IntentName] = js.undefined
   
   /**
     * An array of OutputContext objects that lists the contexts that the intent activates when the intent is fulfilled.
     */
-  var outputContexts: js.UndefOr[OutputContextList] = js.native
+  var outputContexts: js.UndefOr[OutputContextList] = js.undefined
   
   /**
     * A unique identifier for a built-in intent.
     */
-  var parentIntentSignature: js.UndefOr[BuiltinIntentSignature] = js.native
+  var parentIntentSignature: js.UndefOr[BuiltinIntentSignature] = js.undefined
   
   /**
     * If the user answers "no" to the question defined in confirmationPrompt, Amazon Lex responds with this statement to acknowledge that the intent was canceled. 
     */
-  var rejectionStatement: js.UndefOr[Statement] = js.native
+  var rejectionStatement: js.UndefOr[Statement] = js.undefined
   
   /**
     * An array of sample utterances configured for the intent. 
     */
-  var sampleUtterances: js.UndefOr[IntentUtteranceList] = js.native
+  var sampleUtterances: js.UndefOr[IntentUtteranceList] = js.undefined
   
   /**
     * An array of slot types that defines the information required to fulfill the intent.
     */
-  var slots: js.UndefOr[SlotList] = js.native
+  var slots: js.UndefOr[SlotList] = js.undefined
   
   /**
     * The version number assigned to the new version of the intent.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object CreateIntentVersionResponse {
   

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var title: String = js.native
+  var title: String
   
-  var value: String = js.native
+  var value: String
 }
 object Scope {
   

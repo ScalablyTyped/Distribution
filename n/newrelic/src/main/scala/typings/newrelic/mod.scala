@@ -8,72 +8,58 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("newrelic", "addCustomAttribute")
+  @JSImport("newrelic", JSImport.Namespace)
   @js.native
-  def addCustomAttribute(key: String, value: String): Unit = js.native
-  @JSImport("newrelic", "addCustomAttribute")
-  @js.native
-  def addCustomAttribute(key: String, value: Boolean): Unit = js.native
-  @JSImport("newrelic", "addCustomAttribute")
-  @js.native
-  def addCustomAttribute(key: String, value: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("newrelic", "addCustomAttributes")
-  @js.native
-  def addCustomAttributes(atts: StringDictionary[String | Double | Boolean]): Unit = js.native
+  @scala.inline
+  def addCustomAttribute(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addCustomAttribute(key: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addCustomAttribute(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "addIgnoringRule")
-  @js.native
-  def addIgnoringRule(pattern: String): Unit = js.native
-  @JSImport("newrelic", "addIgnoringRule")
-  @js.native
-  def addIgnoringRule(pattern: RegExp): Unit = js.native
+  @scala.inline
+  def addCustomAttributes(atts: StringDictionary[String | Double | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttributes")(atts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "addNamingRule")
-  @js.native
-  def addNamingRule(pattern: String, name: String): Unit = js.native
-  @JSImport("newrelic", "addNamingRule")
-  @js.native
-  def addNamingRule(pattern: RegExp, name: String): Unit = js.native
+  @scala.inline
+  def addIgnoringRule(pattern: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addIgnoringRule(pattern: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "createTracer")
-  @js.native
-  def createTracer[T /* <: js.Function1[/* repeated */ js.Any, _] */](name: String, handle: T): T = js.native
+  @scala.inline
+  def addNamingRule(pattern: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addNamingRule(pattern: RegExp, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "endTransaction")
-  @js.native
-  def endTransaction(): Unit = js.native
+  @scala.inline
+  def createTracer[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, handle: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createTracer")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("newrelic", "getBrowserTimingHeader")
-  @js.native
-  def getBrowserTimingHeader(): String = js.native
+  @scala.inline
+  def endTransaction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endTransaction")().asInstanceOf[Unit]
   
-  @JSImport("newrelic", "getLinkingMetadata")
-  @js.native
-  def getLinkingMetadata(): LinkingMetadata = js.native
-  @JSImport("newrelic", "getLinkingMetadata")
-  @js.native
-  def getLinkingMetadata(omitSupportability: Boolean): LinkingMetadata = js.native
+  @scala.inline
+  def getBrowserTimingHeader(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserTimingHeader")().asInstanceOf[String]
   
-  @JSImport("newrelic", "getTraceMetadata")
-  @js.native
-  def getTraceMetadata(): TraceMetadata = js.native
+  @scala.inline
+  def getLinkingMetadata(): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")().asInstanceOf[LinkingMetadata]
+  @scala.inline
+  def getLinkingMetadata(omitSupportability: Boolean): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")(omitSupportability.asInstanceOf[js.Any]).asInstanceOf[LinkingMetadata]
   
-  @JSImport("newrelic", "getTransaction")
-  @js.native
-  def getTransaction(): TransactionHandle = js.native
+  @scala.inline
+  def getTraceMetadata(): TraceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraceMetadata")().asInstanceOf[TraceMetadata]
   
-  @JSImport("newrelic", "incrementMetric")
-  @js.native
-  def incrementMetric(name: String): Unit = js.native
-  @JSImport("newrelic", "incrementMetric")
-  @js.native
-  def incrementMetric(name: String, value: Double): Unit = js.native
+  @scala.inline
+  def getTransaction(): TransactionHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransaction")().asInstanceOf[TransactionHandle]
+  
+  @scala.inline
+  def incrementMetric(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def incrementMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("newrelic", "instrument")
   @js.native
@@ -83,9 +69,8 @@ object mod {
   @js.native
   val instrumentDatastore: Instrument_ = js.native
   
-  @JSImport("newrelic", "instrumentLoadedModule")
-  @js.native
-  def instrumentLoadedModule(moduleName: String, moduleInstance: js.Any): Boolean = js.native
+  @scala.inline
+  def instrumentLoadedModule(moduleName: String, moduleInstance: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("instrumentLoadedModule")(moduleName.asInstanceOf[js.Any], moduleInstance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("newrelic", "instrumentMessages")
   @js.native
@@ -95,107 +80,81 @@ object mod {
   @js.native
   val instrumentWebframework: Instrument_ = js.native
   
-  @JSImport("newrelic", "noticeError")
-  @js.native
-  def noticeError(error: Error): Unit = js.native
-  @JSImport("newrelic", "noticeError")
-  @js.native
-  def noticeError(error: Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = js.native
+  @scala.inline
+  def noticeError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def noticeError(error: Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "recordCustomEvent")
-  @js.native
-  def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = js.native
+  @scala.inline
+  def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordCustomEvent")(eventType.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "recordMetric")
-  @js.native
-  def recordMetric(name: String, value: Double): Unit = js.native
-  @JSImport("newrelic", "recordMetric")
-  @js.native
-  def recordMetric(name: String, value: Metric): Unit = js.native
+  @scala.inline
+  def recordMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def recordMetric(name: String, value: Metric): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "setControllerName")
-  @js.native
-  def setControllerName(name: String, action: String): Unit = js.native
+  @scala.inline
+  def setControllerName(name: String, action: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setControllerName")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "setDispatcher")
-  @js.native
-  def setDispatcher(name: String): Unit = js.native
-  @JSImport("newrelic", "setDispatcher")
-  @js.native
-  def setDispatcher(name: String, version: String): Unit = js.native
+  @scala.inline
+  def setDispatcher(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setDispatcher(name: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "setIgnoreTransaction")
-  @js.native
-  def setIgnoreTransaction(ignored: Boolean): Unit = js.native
+  @scala.inline
+  def setIgnoreTransaction(ignored: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIgnoreTransaction")(ignored.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "setLambdaHandler")
-  @js.native
-  def setLambdaHandler[T /* <: js.Function1[/* repeated */ js.Any, _] */](handler: T): T = js.native
+  @scala.inline
+  def setLambdaHandler[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handler: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setLambdaHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("newrelic", "setTransactionName")
-  @js.native
-  def setTransactionName(name: String): Unit = js.native
+  @scala.inline
+  def setTransactionName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTransactionName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "shutdown")
-  @js.native
-  def shutdown(): Unit = js.native
-  @JSImport("newrelic", "shutdown")
-  @js.native
-  def shutdown(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("newrelic", "shutdown")
-  @js.native
-  def shutdown(options: js.UndefOr[scala.Nothing], cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("newrelic", "shutdown")
-  @js.native
-  def shutdown(options: CollectPendingData): Unit = js.native
-  @JSImport("newrelic", "shutdown")
-  @js.native
-  def shutdown(options: CollectPendingData, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  @scala.inline
+  def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
+  @scala.inline
+  def shutdown(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shutdown(options: Unit, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def shutdown(options: CollectPendingData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shutdown(options: CollectPendingData, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("newrelic", "startBackgroundTransaction")
-  @js.native
-  def startBackgroundTransaction[T](name: String, group: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  @JSImport("newrelic", "startBackgroundTransaction")
-  @js.native
-  def startBackgroundTransaction[T](name: String, group: String, handle: js.Promise[T]): js.Promise[T] = js.native
-  @JSImport("newrelic", "startBackgroundTransaction")
-  @js.native
-  def startBackgroundTransaction[T](name: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  @JSImport("newrelic", "startBackgroundTransaction")
-  @js.native
-  def startBackgroundTransaction[T](name: String, handle: js.Promise[T]): js.Promise[T] = js.native
+  @scala.inline
+  def startBackgroundTransaction[T](name: String, group: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def startBackgroundTransaction[T](name: String, group: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def startBackgroundTransaction[T](name: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def startBackgroundTransaction[T](name: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("newrelic", "startSegment")
-  @js.native
-  def startSegment[T /* <: js.Thenable[_] */](name: String, record: Boolean, handler: T): T = js.native
-  @JSImport("newrelic", "startSegment")
-  @js.native
-  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, _] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = js.native
-  @JSImport("newrelic", "startSegment")
-  @js.native
-  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, _] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T], callback: C): T = js.native
+  @scala.inline
+  def startSegment[T /* <: js.Thenable[js.Any] */](name: String, record: Boolean, handler: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T], callback: C): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("newrelic", "startWebTransaction")
-  @js.native
-  def startWebTransaction[T](url: String, handle: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  @JSImport("newrelic", "startWebTransaction")
-  @js.native
-  def startWebTransaction[T](url: String, handle: js.Promise[T]): js.Promise[T] = js.native
+  @scala.inline
+  def startWebTransaction[T](url: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def startWebTransaction[T](url: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   type DistributedTraceHeaders = Record[String, js.UndefOr[Double | String | js.Array[String]]]
   
-  @js.native
   trait DistributedTracePayload extends StObject {
     
     /**
       * The base64 encoded JSON representation of the distributed trace payload.
       */
-    def httpSafe(): String = js.native
+    def httpSafe(): String
     
     /**
       * The base64 encoded JSON representation of the distributed trace payload.
       */
-    def text(): String = js.native
+    def text(): String
   }
   object DistributedTracePayload {
     
@@ -224,14 +183,13 @@ object mod {
     def apply(opts: ModuleName): Unit = js.native
   }
   
-  @js.native
   trait LinkingMetadata extends StObject {
     
     /**
       * The entity ID returned in the connect reply as entity_guid
       */
     @JSName("entity.guid")
-    var entityDotguid: js.UndefOr[String] = js.native
+    var entityDotguid: js.UndefOr[String] = js.undefined
     
     /**
       * The application name specified in the connect request as
@@ -239,32 +197,32 @@ object mod {
       * the first name
       */
     @JSName("entity.name")
-    var entityDotname: String = js.native
+    var entityDotname: String
     
     /**
       * The string "SERVICE"
       */
     @JSName("entity.type")
-    var entityDottype: String = js.native
+    var entityDottype: String
     
     /**
       * The hostname as specified in the connect request as
       * utilization.full_hostname. If utilization.full_hostname is null or empty,
       * this will be the hostname specified in the connect request as host.
       */
-    var hostname: String = js.native
+    var hostname: String
     
     /**
       * The current span ID
       */
     @JSName("span.id")
-    var spanDotid: js.UndefOr[String] = js.native
+    var spanDotid: js.UndefOr[String] = js.undefined
     
     /**
       * The current trace ID
       */
     @JSName("trace.id")
-    var traceDotid: js.UndefOr[String] = js.native
+    var traceDotid: js.UndefOr[String] = js.undefined
   }
   object LinkingMetadata {
     
@@ -308,18 +266,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Metric extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var sumOfSquares: Double = js.native
+    var sumOfSquares: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Metric {
     
@@ -349,18 +306,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TraceMetadata extends StObject {
     
     /**
       * The current span ID
       */
-    var spanId: js.UndefOr[String] = js.native
+    var spanId: js.UndefOr[String] = js.undefined
     
     /**
       * The current trace ID
       */
-    var traceId: js.UndefOr[String] = js.native
+    var traceId: js.UndefOr[String] = js.undefined
   }
   object TraceMetadata {
     
@@ -418,7 +374,7 @@ object mod {
       * End the transaction.
       */
     def end(): Unit = js.native
-    def end(callback: js.Function0[_]): Unit = js.native
+    def end(callback: js.Function0[js.Any]): Unit = js.native
     
     /**
       * Mark the transaction to be ignored.

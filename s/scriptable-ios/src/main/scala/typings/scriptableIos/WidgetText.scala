@@ -2,14 +2,12 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _Text element shown in a widget._
   * @see https://docs.scriptable.app/widgettext
   */
-@js.native
 trait WidgetText extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait WidgetText extends StObject {
     * before and after the text.
     * @see https://docs.scriptable.app/widgettext/#-centeraligntext
     */
-  def centerAlignText(): Unit = js.native
+  def centerAlignText(): Unit
   
   /**
     * _Font and text size of the text._
     * @see https://docs.scriptable.app/widgettext/#font
     */
-  var font: Font = js.native
+  var font: Font
   
   /**
     * _Left aligns the text._
@@ -38,7 +36,7 @@ trait WidgetText extends StObject {
     * after the text.
     * @see https://docs.scriptable.app/widgettext/#-leftaligntext
     */
-  def leftAlignText(): Unit = js.native
+  def leftAlignText(): Unit
   
   /**
     * _Maximum number of lines._
@@ -46,7 +44,7 @@ trait WidgetText extends StObject {
     * Maximum number of lines to display. The limit is disabled when the value is 0 or less. Defaults to 0.
     * @see https://docs.scriptable.app/widgettext/#linelimit
     */
-  var lineLimit: Double = js.native
+  var lineLimit: Double
   
   /**
     * _Minimum amount the text scales down to._
@@ -55,7 +53,7 @@ trait WidgetText extends StObject {
     * size half the size of the actual font. The scale factor should be a fraction between 0 and 1, both inclusive. Defaults to 1.
     * @see https://docs.scriptable.app/widgettext/#minimumscalefactor
     */
-  var minimumScaleFactor: Double = js.native
+  var minimumScaleFactor: Double
   
   /**
     * _Right aligns the text._
@@ -66,7 +64,7 @@ trait WidgetText extends StObject {
     * before the text.
     * @see https://docs.scriptable.app/widgettext/#-rightaligntext
     */
-  def rightAlignText(): Unit = js.native
+  def rightAlignText(): Unit
   
   /**
     * _Color of the shadow._
@@ -74,7 +72,7 @@ trait WidgetText extends StObject {
     * Sets the color of the shadow cast by the text. The `shadowRadius` property must have a value greater than zero for this property to have an effect. Defaults to black.
     * @see https://docs.scriptable.app/widgettext/#shadowcolor
     */
-  var shadowColor: Color = js.native
+  var shadowColor: Color
   
   /**
     * _Offset of the shadow._
@@ -82,7 +80,7 @@ trait WidgetText extends StObject {
     * Sets the offset of the shadow cast by the text. The `shadowRadius` property must have a value greater than zero for this property to have an effect. Defaults to (0, 0).
     * @see https://docs.scriptable.app/widgettext/#shadowoffset
     */
-  var shadowOffset: Point = js.native
+  var shadowOffset: Point
   
   /**
     * _Size of the shadow._
@@ -90,19 +88,19 @@ trait WidgetText extends StObject {
     * Sets the size of the shadow cast by the text. Defaults to 0.
     * @see https://docs.scriptable.app/widgettext/#shadowradius
     */
-  var shadowRadius: Double = js.native
+  var shadowRadius: Double
   
   /**
     * _Text to show in a widget._
     * @see https://docs.scriptable.app/widgettext/#text
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * _Color of the text._
     * @see https://docs.scriptable.app/widgettext/#textcolor
     */
-  var textColor: Color = js.native
+  var textColor: Color
   
   /**
     * _Opacity of the text._
@@ -110,7 +108,7 @@ trait WidgetText extends StObject {
     * Opacity of the text. This must be a value between 0 and 1. Defaults to 1.
     * @see https://docs.scriptable.app/widgettext/#textopacity
     */
-  var textOpacity: Double = js.native
+  var textOpacity: Double
   
   /**
     * _URL to open._
@@ -119,7 +117,7 @@ trait WidgetText extends StObject {
     * property on the widget.
     * @see https://docs.scriptable.app/widgettext/#url
     */
-  var url: String = js.native
+  var url: String
 }
 object WidgetText {
   

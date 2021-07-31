@@ -8,47 +8,45 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`4`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AUTO extends StObject {
   
   /**
     *  DHCP: Connected to wired or wireless IPv4 network through automatic IP configuration
     */
-  var AUTO: `3` = js.native
+  var AUTO: `3`
   
   /**
     * Connected to wired or wireless IPv6 network through dynamic IP configuration
     */
-  var DYNAMIC: `2` = js.native
+  var DYNAMIC: `2`
   
   /**
     * Connected to cellular network through fixed IP configuration
     */
-  var FIXED: `4` = js.native
+  var FIXED: `4`
   
   /**
     * No network IP mode configured
     */
-  var NONE: `0` = js.native
+  var NONE: `0`
   
   /**
     * Connected to wired or wireless IPv4 network through static IP configuration
     */
-  var STATIC: `1` = js.native
+  var STATIC: `1`
   
   /**
     * No wired or wireless connection
     */
-  var UNKNOWN: `5` = js.native
+  var UNKNOWN: `5`
 }
 object AUTO {
   
   @scala.inline
-  def apply(AUTO: `3`, DYNAMIC: `2`, FIXED: `4`, NONE: `0`, STATIC: `1`, UNKNOWN: `5`): AUTO = {
-    val __obj = js.Dynamic.literal(AUTO = AUTO.asInstanceOf[js.Any], DYNAMIC = DYNAMIC.asInstanceOf[js.Any], FIXED = FIXED.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], STATIC = STATIC.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any])
+  def apply(): AUTO = {
+    val __obj = js.Dynamic.literal(AUTO = 3, DYNAMIC = 2, FIXED = 4, NONE = 0, STATIC = 1, UNKNOWN = 5)
     __obj.asInstanceOf[AUTO]
   }
   

@@ -2,14 +2,12 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Tracer sends each annotation to a Recorder implementation */
-@js.native
 trait Recorder extends StObject {
   
-  def record(rec: Record): Unit = js.native
+  def record(rec: Record): Unit
 }
 object Recorder {
   

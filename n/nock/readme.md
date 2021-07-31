@@ -10,9 +10,9 @@ HTTP server mocking and expectations library for Node.js
 | ------------------ | :-------------: |
 | Full name          | nock |
 | Keywords           | - |
-| # releases         | 76 |
-| # dependents       | 420 |
-| # downloads        | 46600375 |
+| # releases         | 66 |
+| # dependents       | 450 |
+| # downloads        | 54809132 |
 | # stars            | 195 |
 
 ## Links

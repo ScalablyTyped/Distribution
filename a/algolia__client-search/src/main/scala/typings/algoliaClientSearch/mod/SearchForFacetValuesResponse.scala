@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchForFacetValuesResponse extends StObject {
   
   /**
     * The exhaustive facets count.
     */
-  var exhaustiveFacetsCount: Boolean = js.native
+  var exhaustiveFacetsCount: Boolean
   
   /**
     * The list of facet hits.
     */
-  var facetHits: js.Array[FacetHit] = js.native
+  var facetHits: js.Array[FacetHit]
   
   /**
     * The time that the API toke the process the request.
     */
-  var processingTimeMS: js.UndefOr[Double] = js.native
+  var processingTimeMS: js.UndefOr[Double] = js.undefined
 }
 object SearchForFacetValuesResponse {
   

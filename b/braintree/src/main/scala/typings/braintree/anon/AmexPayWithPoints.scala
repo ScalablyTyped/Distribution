@@ -2,17 +2,15 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmexPayWithPoints extends StObject {
   
-  var AmexPayWithPoints: IneligibleCard = js.native
+  var AmexPayWithPoints: IneligibleCard
   
-  var CardTypeIndicators: Debit = js.native
+  var CardTypeIndicators: Debit
   
-  var Dispute: Chargeback = js.native
+  var Dispute: Chargeback
 }
 object AmexPayWithPoints {
   

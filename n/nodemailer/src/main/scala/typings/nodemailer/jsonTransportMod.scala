@@ -8,26 +8,55 @@ import typings.nodemailer.sharedMod.Logger
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonTransportMod {
   
   @JSImport("nodemailer/lib/json-transport", JSImport.Namespace)
   @js.native
-  class ^ protected () extends JSONTransport {
+  class ^ protected ()
+    extends StObject
+       with JSONTransport {
     def this(options: Options) = this()
-  }
-  
-  @js.native
-  trait JSONTransport extends Transport {
     
+    /* CompleteClass */
     var logger: Logger = js.native
     
+    /* CompleteClass */
     @JSName("mailer")
     var mailer_JSONTransport: typings.nodemailer.mailerMod.^ = js.native
     
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
     var options: Options = js.native
+    
+    /* CompleteClass */
+    override def send(
+      mail: typings.nodemailer.mailMessageMod.^,
+      callback: js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var verify: (js.UndefOr[
+        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
+  }
+  
+  trait JSONTransport
+    extends StObject
+       with Transport {
+    
+    var logger: Logger
+    
+    @JSName("mailer")
+    var mailer_JSONTransport: typings.nodemailer.mailerMod.^
+    
+    var options: Options
   }
   object JSONTransport {
     
@@ -40,7 +69,7 @@ object jsonTransportMod {
       send: (typings.nodemailer.mailMessageMod.^, js.Function2[/* err */ Error | Null, /* info */ typings.nodemailer.mod.SentMessageInfo, Unit]) => Unit,
       verify: (js.UndefOr[
           js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
-        ]) with js.UndefOr[js.Function0[js.Promise[`true`]]],
+        ]) & js.UndefOr[js.Function0[js.Promise[`true`]]],
       version: String
     ): JSONTransport = {
       val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any], mailer = mailer.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], send = js.Any.fromFunction2(send), verify = verify.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
@@ -63,20 +92,20 @@ object jsonTransportMod {
   
   type MailOptions = typings.nodemailer.mailerMod.Options
   
-  @js.native
   trait Options
-    extends typings.nodemailer.mailerMod.Options
+    extends StObject
+       with typings.nodemailer.mailerMod.Options
        with TransportOptions {
     
-    var jsonTransport: `true` = js.native
+    var jsonTransport: `true`
     
-    var skipEncoding: js.UndefOr[Boolean] = js.native
+    var skipEncoding: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
     @scala.inline
-    def apply(jsonTransport: `true`): Options = {
-      val __obj = js.Dynamic.literal(jsonTransport = jsonTransport.asInstanceOf[js.Any])
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal(jsonTransport = true)
       __obj.asInstanceOf[Options]
     }
     
@@ -94,17 +123,16 @@ object jsonTransportMod {
     }
   }
   
-  @js.native
   trait SentMessageInfo extends StObject {
     
     /** an envelope object {from:‘address’, to:[‘address’]} */
-    var envelope: Envelope = js.native
+    var envelope: Envelope
     
     /** JSON string */
-    var message: String = js.native
+    var message: String
     
     /** the Message-ID header value */
-    var messageId: String = js.native
+    var messageId: String
   }
   object SentMessageInfo {
     

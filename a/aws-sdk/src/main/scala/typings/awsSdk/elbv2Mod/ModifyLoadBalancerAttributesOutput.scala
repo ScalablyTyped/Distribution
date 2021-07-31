@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyLoadBalancerAttributesOutput extends StObject {
   
   /**
     * Information about the load balancer attributes.
     */
-  var Attributes: js.UndefOr[LoadBalancerAttributes] = js.native
+  var Attributes: js.UndefOr[LoadBalancerAttributes] = js.undefined
 }
 object ModifyLoadBalancerAttributesOutput {
   

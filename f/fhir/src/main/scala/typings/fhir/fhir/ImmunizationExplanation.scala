@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Administration/non-administration reasons
   */
-@js.native
-trait ImmunizationExplanation extends BackboneElement {
+trait ImmunizationExplanation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Why immunization occurred
     */
-  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Why immunization did not occur
     */
-  var reasonNotGiven: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonNotGiven: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object ImmunizationExplanation {
   

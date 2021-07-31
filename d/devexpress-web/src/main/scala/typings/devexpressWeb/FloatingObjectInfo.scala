@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains floating objects base settings.
   */
-@js.native
 trait FloatingObjectInfo extends StObject {
   
   /**
     * Gets the parent sub-document what stores the current floating object.
     */
-  val parentSubDocument: SubDocument = js.native
+  val parentSubDocument: SubDocument
   
   /**
     * Gets the position of the floating object's anchor in the parent sub-document.
     */
-  val position: Double = js.native
+  val position: Double
 }
 object FloatingObjectInfo {
   

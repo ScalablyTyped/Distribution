@@ -2,21 +2,19 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentSessionKey extends StObject {
   
   /**
     * Gets or sets a value indicating whether or not the key value is encrypted. If this value is true, the property should be decrypted using the RSA key exchanged with the server during registration.
     */
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
   /**
     * Gets or sets the symmetric key value.
     */
-  var value: js.Array[Double] = js.native
+  var value: js.Array[Double]
 }
 object TaskAgentSessionKey {
   

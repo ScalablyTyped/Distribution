@@ -2,7 +2,6 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-index-specifications-reference.html#GUID-00C06941-6FFD-4CEB-81B6-9A7FBD577A2C
   */
-@js.native
 trait BTreeIndex extends StObject {
   
   /** Each object targets a field in the indexed documents that has a scalar JSON value. */
-  var fields: js.Array[BTreeIndexField] = js.native
+  var fields: js.Array[BTreeIndexField]
   
   /**
     * Specifies whether or not to index NULL values for the selected columns (by appending the numeric value 1 to the list of columns to index).
     *
     * @default false
     */
-  var indexNulls: js.UndefOr[Boolean] = js.native
+  var indexNulls: js.UndefOr[Boolean] = js.undefined
   
   /** Name of the index. */
-  var name: String = js.native
+  var name: String
   
   /**
     * Specifies whether or not the index is unique.
     *
     * @default false
     */
-  var unique: js.UndefOr[Boolean] = js.native
+  var unique: js.UndefOr[Boolean] = js.undefined
 }
 object BTreeIndex {
   

@@ -2,23 +2,21 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bindingsversion extends StObject {
   
-  var bindings_version: String = js.native
+  var bindings_version: String
   
-  var lang: String = js.native
+  var lang: String
   
-  var lang_version: String = js.native
+  var lang_version: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var publisher: String = js.native
+  var publisher: String
   
-  var uname: String = js.native
+  var uname: String
 }
 object Bindingsversion {
   

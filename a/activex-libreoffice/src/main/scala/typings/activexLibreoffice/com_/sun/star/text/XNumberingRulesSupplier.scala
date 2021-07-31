@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface enables the object to handle numbering rules.
   * @see com.sun.star.text.NumberingRules
   */
-@js.native
-trait XNumberingRulesSupplier extends XInterface {
+trait XNumberingRulesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of "NumberingRules" currently contained in the object. */
-  val NumberingRules: XIndexAccess = js.native
+  val NumberingRules: XIndexAccess
   
   /** @returns the collection of "NumberingRules" currently contained in the object. */
-  def getNumberingRules(): XIndexAccess = js.native
+  def getNumberingRules(): XIndexAccess
 }
 object XNumberingRulesSupplier {
   

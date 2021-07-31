@@ -4,7 +4,6 @@ import typings.minappEnv.Array
 import typings.minappEnv.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait Animation extends StObject {
   /** [Array.<Object> Animation.export()](Animation.export.md)
     *
     * 导出动画队列。**export 方法每次调用后会清掉之前的动画操作。** */
-  def export(): Array[Object] = js.native
+  def `export`(): Array[Object] = js.native
   
   def height(/** 长度值，如果传入 number 则默认使用 px，可传入其他自定义单位的长度值 */
   value: String): Animation = js.native
@@ -179,51 +178,21 @@ trait Animation extends StObject {
     *
     * 平移变换 */
   def translate(): Animation = js.native
-  def translate(
-    /** 当仅有该参数时表示在 X 轴偏移 tx，单位 px */
-  tx: js.UndefOr[scala.Nothing],
-    /** 在 Y 轴平移的距离，单位为 px */
-  ty: Double
-  ): Animation = js.native
   def translate(/** 当仅有该参数时表示在 X 轴偏移 tx，单位 px */
   tx: Double): Animation = js.native
   def translate(/** 当仅有该参数时表示在 X 轴偏移 tx，单位 px */
   tx: Double, /** 在 Y 轴平移的距离，单位为 px */
+  ty: Double): Animation = js.native
+  def translate(/** 当仅有该参数时表示在 X 轴偏移 tx，单位 px */
+  tx: Unit, /** 在 Y 轴平移的距离，单位为 px */
   ty: Double): Animation = js.native
   
   /** [[Animation](https://developers.weixin.qq.com/miniprogram/dev/api/ui/animation/Animation.html) Animation.translate3d(number tx, number ty, number tz)](Animation.translate3d.md)
     *
     * 对 xyz 坐标进行平移变换 */
   def translate3d(): Animation = js.native
-  def translate3d(
-    /** 在 X 轴平移的距离，单位为 px */
-  tx: js.UndefOr[scala.Nothing],
-    /** 在 Y 轴平移的距离，单位为 px */
-  ty: js.UndefOr[scala.Nothing],
-    /** 在 Z 轴平移的距离，单位为 px */
-  tz: Double
-  ): Animation = js.native
-  def translate3d(/** 在 X 轴平移的距离，单位为 px */
-  tx: js.UndefOr[scala.Nothing], /** 在 Y 轴平移的距离，单位为 px */
-  ty: Double): Animation = js.native
-  def translate3d(
-    /** 在 X 轴平移的距离，单位为 px */
-  tx: js.UndefOr[scala.Nothing],
-    /** 在 Y 轴平移的距离，单位为 px */
-  ty: Double,
-    /** 在 Z 轴平移的距离，单位为 px */
-  tz: Double
-  ): Animation = js.native
   def translate3d(/** 在 X 轴平移的距离，单位为 px */
   tx: Double): Animation = js.native
-  def translate3d(
-    /** 在 X 轴平移的距离，单位为 px */
-  tx: Double,
-    /** 在 Y 轴平移的距离，单位为 px */
-  ty: js.UndefOr[scala.Nothing],
-    /** 在 Z 轴平移的距离，单位为 px */
-  tz: Double
-  ): Animation = js.native
   def translate3d(/** 在 X 轴平移的距离，单位为 px */
   tx: Double, /** 在 Y 轴平移的距离，单位为 px */
   ty: Double): Animation = js.native
@@ -232,6 +201,33 @@ trait Animation extends StObject {
   tx: Double,
     /** 在 Y 轴平移的距离，单位为 px */
   ty: Double,
+    /** 在 Z 轴平移的距离，单位为 px */
+  tz: Double
+  ): Animation = js.native
+  def translate3d(
+    /** 在 X 轴平移的距离，单位为 px */
+  tx: Double,
+    /** 在 Y 轴平移的距离，单位为 px */
+  ty: Unit,
+    /** 在 Z 轴平移的距离，单位为 px */
+  tz: Double
+  ): Animation = js.native
+  def translate3d(/** 在 X 轴平移的距离，单位为 px */
+  tx: Unit, /** 在 Y 轴平移的距离，单位为 px */
+  ty: Double): Animation = js.native
+  def translate3d(
+    /** 在 X 轴平移的距离，单位为 px */
+  tx: Unit,
+    /** 在 Y 轴平移的距离，单位为 px */
+  ty: Double,
+    /** 在 Z 轴平移的距离，单位为 px */
+  tz: Double
+  ): Animation = js.native
+  def translate3d(
+    /** 在 X 轴平移的距离，单位为 px */
+  tx: Unit,
+    /** 在 Y 轴平移的距离，单位为 px */
+  ty: Unit,
     /** 在 Z 轴平移的距离，单位为 px */
   tz: Double
   ): Animation = js.native

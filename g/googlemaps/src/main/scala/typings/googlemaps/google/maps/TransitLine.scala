@@ -2,27 +2,25 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitLine extends StObject {
   
-  var agencies: js.Array[TransitAgency] = js.native
+  var agencies: js.Array[TransitAgency]
   
-  var color: String = js.native
+  var color: String
   
-  var icon: String = js.native
+  var icon: String
   
-  var name: String = js.native
+  var name: String
   
-  var short_name: String = js.native
+  var short_name: String
   
-  var text_color: String = js.native
+  var text_color: String
   
-  var url: String = js.native
+  var url: String
   
-  var vehicle: TransitVehicle = js.native
+  var vehicle: TransitVehicle
 }
 object TransitLine {
   

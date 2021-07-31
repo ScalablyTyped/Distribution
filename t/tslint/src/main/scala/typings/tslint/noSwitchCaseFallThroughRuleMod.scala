@@ -8,16 +8,14 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SyntaxKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noSwitchCaseFallThroughRuleMod {
   
   @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "NoSwitchCaseFallThroughWalker")
   @js.native
-  class NoSwitchCaseFallThroughWalker protected ()
-    extends AbstractWalker[js.UndefOr[scala.Nothing]] {
-    def this(sourceFile: SourceFile, ruleName: String, options: js.UndefOr[scala.Nothing]) = this()
+  class NoSwitchCaseFallThroughWalker protected () extends AbstractWalker[Unit] {
+    def this(sourceFile: SourceFile, ruleName: String, options: Unit) = this()
     
     var isFallThroughAllowed: js.Any = js.native
     
@@ -36,9 +34,8 @@ object noSwitchCaseFallThroughRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(keyword: SyntaxKind): String = js.native
+    @scala.inline
+    def FAILURE_STRING(keyword: SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(keyword.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noSwitchCaseFallThroughRule", "Rule.metadata")
     @js.native

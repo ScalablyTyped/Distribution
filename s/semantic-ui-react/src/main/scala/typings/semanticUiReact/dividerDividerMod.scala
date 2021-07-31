@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dividerDividerMod extends Shortcut {
@@ -16,9 +15,9 @@ object dividerDividerMod extends Shortcut {
   @js.native
   val default: StatelessComponent[DividerProps] = js.native
   
-  @js.native
   trait DividerProps
-    extends StrictDividerProps
+    extends StObject
+       with StrictDividerProps
        with /* key */ StringDictionary[js.Any]
   object DividerProps {
     
@@ -29,41 +28,40 @@ object dividerDividerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictDividerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Divider can clear the content above it. */
-    var clearing: js.UndefOr[Boolean] = js.native
+    var clearing: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Divider can be fitted without any space above or below it. */
-    var fitted: js.UndefOr[Boolean] = js.native
+    var fitted: js.UndefOr[Boolean] = js.undefined
     
     /** Divider can divide content without creating a dividing line. */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /** Divider can segment content horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** Divider can have its colours inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Divider can provide greater margins to divide sections of content. */
-    var section: js.UndefOr[Boolean] = js.native
+    var section: js.UndefOr[Boolean] = js.undefined
     
     /** Divider can segment content vertically. */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object StrictDividerProps {
     

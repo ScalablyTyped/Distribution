@@ -2,7 +2,6 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the span, consisting of either user-supplied key:value pairs, or details of
   * a message sent/received between Spans.
   */
-@js.native
 trait SchemaTimeEvents extends StObject {
   
   /**
     * The number of dropped annotations in all the included time events. If the
     * value is 0, then no annotations were dropped.
     */
-  var droppedAnnotationsCount: js.UndefOr[Double] = js.native
+  var droppedAnnotationsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of dropped message events in all the included time events. If
     * the value is 0, then no message events were dropped.
     */
-  var droppedMessageEventsCount: js.UndefOr[Double] = js.native
+  var droppedMessageEventsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * A collection of `TimeEvent`s.
     */
-  var timeEvent: js.UndefOr[js.Array[SchemaTimeEvent]] = js.native
+  var timeEvent: js.UndefOr[js.Array[SchemaTimeEvent]] = js.undefined
 }
 object SchemaTimeEvents {
   

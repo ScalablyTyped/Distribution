@@ -5,7 +5,6 @@ import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.Renderer2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainMod {
@@ -14,6 +13,6 @@ object mainMod {
   @js.native
   class WorksCheckbox protected ()
     extends typings.homeworks.componentCheckboxMod.WorksCheckbox {
-    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[_]) = this()
+    def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[js.Any]) = this()
   }
 }

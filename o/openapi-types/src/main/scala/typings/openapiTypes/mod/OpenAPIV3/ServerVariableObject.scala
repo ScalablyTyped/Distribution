@@ -2,17 +2,15 @@ package typings.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerVariableObject extends StObject {
   
-  var default: String = js.native
+  var default: String
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enum: js.UndefOr[js.Array[String]] = js.native
+  var `enum`: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ServerVariableObject {
   

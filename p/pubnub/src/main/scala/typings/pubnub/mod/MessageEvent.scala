@@ -2,31 +2,29 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageEvent extends StObject {
   
   /**
     * deprecated:
     */
-  var actualChannel: String = js.native
+  var actualChannel: String
   
-  var channel: String = js.native
+  var channel: String
   
-  var message: js.Any = js.native
+  var message: js.Any
   
-  var publisher: String = js.native
+  var publisher: String
   
   /**
     * deprecated:
     */
-  var subscribedChannel: String = js.native
+  var subscribedChannel: String
   
-  var subscription: String = js.native
+  var subscription: String
   
-  var timetoken: String = js.native
+  var timetoken: String
 }
 object MessageEvent {
   

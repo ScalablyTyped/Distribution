@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,14 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * unsetting fields will revert the style to a value matching the defaults in
   * the Docs editor.
   */
-@js.native
 trait SchemaTextStyle extends StObject {
   
   /**
     * The background color of the text. If set, the color is either an RGB
     * color or transparent, depending on the `color` field.
     */
-  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var backgroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The text&#39;s vertical offset from its normal position.  Text with
@@ -33,28 +31,28 @@ trait SchemaTextStyle extends StObject {
     * in a smaller font size, computed based on the `font_size` field. The
     * `font_size` itself is not affected by changes in this field.
     */
-  var baselineOffset: js.UndefOr[String] = js.native
+  var baselineOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the text is rendered as bold.
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of the text&#39;s font.
     */
-  var fontSize: js.UndefOr[SchemaDimension] = js.native
+  var fontSize: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The foreground color of the text. If set, the color is either an RGB
     * color or transparent, depending on the `color` field.
     */
-  var foregroundColor: js.UndefOr[SchemaOptionalColor] = js.native
+  var foregroundColor: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * Whether or not the text is italicized.
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The hyperlink destination of the text. If unset, there is no link. Links
@@ -74,22 +72,22 @@ trait SchemaTextStyle extends StObject {
     * default text styles if the preceding   text is another link) unless
     * different styles are being set in the same   request.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * Whether or not the text is in small capital letters.
     */
-  var smallCaps: js.UndefOr[Boolean] = js.native
+  var smallCaps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the text is struck through.
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the text is underlined.
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The font family and rendered weight of the text.  If an update request
@@ -100,7 +98,7 @@ trait SchemaTextStyle extends StObject {
     * must also be set with a non-empty value. Otherwise, a 400 bad request
     * error is returned.
     */
-  var weightedFontFamily: js.UndefOr[SchemaWeightedFontFamily] = js.native
+  var weightedFontFamily: js.UndefOr[SchemaWeightedFontFamily] = js.undefined
 }
 object SchemaTextStyle {
   

@@ -2,21 +2,19 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmExchangeTradeRequest extends StObject {
   
   // address hash (optional because Changelly doesn't support it)
-  var extraField: js.UndefOr[String] = js.native
+  var extraField: js.UndefOr[String] = js.undefined
   
-  var receiveAddress: String = js.native
+  var receiveAddress: String
   
   // address hash
-  var refundAddress: String = js.native
+  var refundAddress: String
   
-  var trade: ExchangeTrade = js.native
+  var trade: ExchangeTrade
 }
 object ConfirmExchangeTradeRequest {
   

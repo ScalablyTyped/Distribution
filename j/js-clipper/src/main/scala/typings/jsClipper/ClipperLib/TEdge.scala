@@ -2,57 +2,55 @@ package typings.jsClipper.ClipperLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TEdge extends StObject {
   
-  var deltaX: Double = js.native
+  var deltaX: Double
   
-  var deltaY: Double = js.native
+  var deltaY: Double
   
-  var dx: Double = js.native
+  var dx: Double
   
-  var next: TEdge = js.native
+  var next: TEdge
   
-  var nextInAEL: TEdge = js.native
+  var nextInAEL: TEdge
   
-  var nextInLML: TEdge = js.native
+  var nextInLML: TEdge
   
-  var nextInSEL: TEdge = js.native
+  var nextInSEL: TEdge
   
-  var outIdx: Double = js.native
+  var outIdx: Double
   
-  var polyType: PolyType = js.native
+  var polyType: PolyType
   
-  var prev: TEdge = js.native
+  var prev: TEdge
   
-  var prevInAEL: TEdge = js.native
+  var prevInAEL: TEdge
   
-  var prevInSEL: TEdge = js.native
+  var prevInSEL: TEdge
   
-  var side: EdgeSide = js.native
+  var side: EdgeSide
   
-  var tmpX: Double = js.native
+  var tmpX: Double
   
-  var windCnt: Double = js.native
+  var windCnt: Double
   
-  var windCnt2: Double = js.native
+  var windCnt2: Double
   
-  var windDelta: Double = js.native
+  var windDelta: Double
   
-  var xbot: Double = js.native
+  var xbot: Double
   
-  var xcurr: Double = js.native
+  var xcurr: Double
   
-  var xtop: Double = js.native
+  var xtop: Double
   
-  var ybot: Double = js.native
+  var ybot: Double
   
-  var ycurr: Double = js.native
+  var ycurr: Double
   
-  var ytop: Double = js.native
+  var ytop: Double
 }
 object TEdge {
   

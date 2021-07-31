@@ -2,29 +2,27 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeginDragPayload extends StObject {
   
-  var clientOffset: XYCoord | Null = js.native
+  var clientOffset: XYCoord | Null
   
-  var isSourcePublic: Boolean = js.native
+  var isSourcePublic: Boolean
   
-  var item: js.Any = js.native
+  var item: js.Any
   
-  var itemType: Identifier = js.native
+  var itemType: Identifier
   
-  var sourceClientOffset: XYCoord | Null = js.native
+  var sourceClientOffset: XYCoord | Null
   
-  var sourceId: Identifier = js.native
+  var sourceId: Identifier
 }
 object BeginDragPayload {
   
   @scala.inline
   def apply(isSourcePublic: Boolean, item: js.Any, itemType: Identifier, sourceId: Identifier): BeginDragPayload = {
-    val __obj = js.Dynamic.literal(isSourcePublic = isSourcePublic.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isSourcePublic = isSourcePublic.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], sourceId = sourceId.asInstanceOf[js.Any], clientOffset = null, sourceClientOffset = null)
     __obj.asInstanceOf[BeginDragPayload]
   }
   

@@ -3,21 +3,19 @@ package typings.qunitDom
 import typings.qunitDom.qunitDomBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Any extends StObject {
     
-    var any: `true` = js.native
+    var any: `true`
   }
   object Any {
     
     @scala.inline
-    def apply(any: `true`): Any = {
-      val __obj = js.Dynamic.literal(any = any.asInstanceOf[js.Any])
+    def apply(): Any = {
+      val __obj = js.Dynamic.literal(any = true)
       __obj.asInstanceOf[Any]
     }
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Inverted extends StObject {
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
   }
   object Inverted {
     

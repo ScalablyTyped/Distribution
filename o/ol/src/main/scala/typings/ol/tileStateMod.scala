@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileStateMod {
@@ -12,17 +11,17 @@ object tileStateMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TileState with Double] = js.native
+    def apply(value: Double): js.UndefOr[TileState & Double] = js.native
     
-    /* 4 */ val EMPTY: typings.ol.tileStateMod.TileState.EMPTY with Double = js.native
+    /* 4 */ val EMPTY: typings.ol.tileStateMod.TileState.EMPTY & Double = js.native
     
-    /* 3 */ val ERROR: typings.ol.tileStateMod.TileState.ERROR with Double = js.native
+    /* 3 */ val ERROR: typings.ol.tileStateMod.TileState.ERROR & Double = js.native
     
-    /* 0 */ val IDLE: typings.ol.tileStateMod.TileState.IDLE with Double = js.native
+    /* 0 */ val IDLE: typings.ol.tileStateMod.TileState.IDLE & Double = js.native
     
-    /* 2 */ val LOADED: typings.ol.tileStateMod.TileState.LOADED with Double = js.native
+    /* 2 */ val LOADED: typings.ol.tileStateMod.TileState.LOADED & Double = js.native
     
-    /* 1 */ val LOADING: typings.ol.tileStateMod.TileState.LOADING with Double = js.native
+    /* 1 */ val LOADING: typings.ol.tileStateMod.TileState.LOADING & Double = js.native
   }
   
   @js.native
@@ -32,18 +31,28 @@ object tileStateMod {
   object TileState extends StObject {
     
     @js.native
-    sealed trait EMPTY extends TileState
+    sealed trait EMPTY
+      extends StObject
+         with TileState
     
     @js.native
-    sealed trait ERROR extends TileState
+    sealed trait ERROR
+      extends StObject
+         with TileState
     
     @js.native
-    sealed trait IDLE extends TileState
+    sealed trait IDLE
+      extends StObject
+         with TileState
     
     @js.native
-    sealed trait LOADED extends TileState
+    sealed trait LOADED
+      extends StObject
+         with TileState
     
     @js.native
-    sealed trait LOADING extends TileState
+    sealed trait LOADING
+      extends StObject
+         with TileState
   }
 }

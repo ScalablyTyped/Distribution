@@ -4,38 +4,33 @@ import typings.bip32.anon.Private
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bip32Mod {
   
-  @JSImport("bip32/types/bip32", "fromBase58")
+  @JSImport("bip32/types/bip32", JSImport.Namespace)
   @js.native
-  def fromBase58(inString: String): BIP32Interface = js.native
-  @JSImport("bip32/types/bip32", "fromBase58")
-  @js.native
-  def fromBase58(inString: String, network: Network): BIP32Interface = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip32/types/bip32", "fromPrivateKey")
-  @js.native
-  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
-  @JSImport("bip32/types/bip32", "fromPrivateKey")
-  @js.native
-  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = js.native
+  @scala.inline
+  def fromBase58(inString: String): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+  @scala.inline
+  def fromBase58(inString: String, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase58")(inString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
-  @JSImport("bip32/types/bip32", "fromPublicKey")
-  @js.native
-  def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = js.native
-  @JSImport("bip32/types/bip32", "fromPublicKey")
-  @js.native
-  def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = js.native
+  @scala.inline
+  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  @scala.inline
+  def fromPrivateKey(privateKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(privateKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
-  @JSImport("bip32/types/bip32", "fromSeed")
-  @js.native
-  def fromSeed(seed: Buffer): BIP32Interface = js.native
-  @JSImport("bip32/types/bip32", "fromSeed")
-  @js.native
-  def fromSeed(seed: Buffer, network: Network): BIP32Interface = js.native
+  @scala.inline
+  def fromPublicKey(publicKey: Buffer, chainCode: Buffer): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  @scala.inline
+  def fromPublicKey(publicKey: Buffer, chainCode: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(publicKey.asInstanceOf[js.Any], chainCode.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
+  
+  @scala.inline
+  def fromSeed(seed: Buffer): BIP32Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[BIP32Interface]
+  @scala.inline
+  def fromSeed(seed: Buffer, network: Network): BIP32Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeed")(seed.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[BIP32Interface]
   
   @js.native
   trait BIP32Interface extends StObject {
@@ -80,20 +75,19 @@ object bip32Mod {
     def verify(hash: Buffer, signature: Buffer): Boolean = js.native
   }
   
-  @js.native
   trait Network extends StObject {
     
-    var bech32: js.UndefOr[String] = js.native
+    var bech32: js.UndefOr[String] = js.undefined
     
-    var bip32: Private = js.native
+    var bip32: Private
     
-    var messagePrefix: js.UndefOr[String] = js.native
+    var messagePrefix: js.UndefOr[String] = js.undefined
     
-    var pubKeyHash: js.UndefOr[Double] = js.native
+    var pubKeyHash: js.UndefOr[Double] = js.undefined
     
-    var scriptHash: js.UndefOr[Double] = js.native
+    var scriptHash: js.UndefOr[Double] = js.undefined
     
-    var wif: Double = js.native
+    var wif: Double
   }
   object Network {
     

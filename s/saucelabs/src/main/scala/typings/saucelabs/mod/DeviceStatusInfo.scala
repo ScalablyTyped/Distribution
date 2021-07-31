@@ -9,18 +9,17 @@ import typings.saucelabs.saucelabsStrings.REBOOTING
 import typings.saucelabs.saucelabsStrings.UNPLUGGED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceStatusInfo
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var deviceId: js.UndefOr[Id] = js.native
+  var deviceId: js.UndefOr[Id] = js.undefined
   
-  var poolId: js.UndefOr[Id] = js.native
+  var poolId: js.UndefOr[Id] = js.undefined
   
-  var status: js.UndefOr[AVAILABLE | IN_USE | REBOOTING | BROKEN | OFFLINE | UNPLUGGED] = js.native
+  var status: js.UndefOr[AVAILABLE | IN_USE | REBOOTING | BROKEN | OFFLINE | UNPLUGGED] = js.undefined
 }
 object DeviceStatusInfo {
   

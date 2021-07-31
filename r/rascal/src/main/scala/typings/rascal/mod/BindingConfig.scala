@@ -4,23 +4,21 @@ import typings.rascal.rascalStrings.exchange
 import typings.rascal.rascalStrings.queue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingConfig extends StObject {
   
-  var bindingKey: js.UndefOr[String] = js.native
+  var bindingKey: js.UndefOr[String] = js.undefined
   
-  var bindingKeys: js.UndefOr[js.Array[String]] = js.native
+  var bindingKeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
-  var destinationType: js.UndefOr[queue | exchange] = js.native
+  var destinationType: js.UndefOr[queue | exchange] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object BindingConfig {
   

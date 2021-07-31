@@ -11,8 +11,8 @@ A wrapper for the Pino logger that provides Bunyan's multipe destination stream 
 | Full name          | pino-multi-stream |
 | Keywords           | pino, logger |
 | # releases         | 9 |
-| # dependents       | 18 |
-| # downloads        | 1073672 |
+| # dependents       | 24 |
+| # downloads        | 1346954 |
 | # stars            | 0 |
 
 ## Links

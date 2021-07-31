@@ -11,8 +11,8 @@ Truncate a string to a specific width in the terminal
 | Full name          | cli-truncate |
 | Keywords           | truncate, ellipsis, text, limit, slice, cli, terminal, term, shell, width, ansi, string |
 | # releases         | 3 |
-| # dependents       | 135 |
-| # downloads        | 178402469 |
+| # dependents       | 142 |
+| # downloads        | 234724075 |
 | # stars            | 1 |
 
 ## Links

@@ -2,20 +2,20 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IupdownloadVoice extends BaseParams {
+trait IupdownloadVoice
+  extends StObject
+     with BaseParams {
   
   // 需要上传的音频的本地ID，由stopRecord接口获得
-  var isShowProgressTips: Double = js.native
+  var isShowProgressTips: Double
   
-  var localId: String = js.native
+  var localId: String
   
   // 默认为1，显示进度提示
   @JSName("success")
-  def success_MIupdownloadVoice(res: Resouce): Unit = js.native
+  def success_MIupdownloadVoice(res: Resouce): Unit
 }
 object IupdownloadVoice {
   

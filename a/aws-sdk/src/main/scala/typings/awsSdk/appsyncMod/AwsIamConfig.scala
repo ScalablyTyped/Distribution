@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamConfig extends StObject {
   
   /**
     * The signing region for AWS IAM authorization.
     */
-  var signingRegion: js.UndefOr[String] = js.native
+  var signingRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The signing service name for AWS IAM authorization.
     */
-  var signingServiceName: js.UndefOr[String] = js.native
+  var signingServiceName: js.UndefOr[String] = js.undefined
 }
 object AwsIamConfig {
   

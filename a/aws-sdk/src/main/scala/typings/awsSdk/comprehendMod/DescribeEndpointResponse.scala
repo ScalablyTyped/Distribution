@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointResponse extends StObject {
   
   /**
     * Describes information associated with the specific endpoint.
     */
-  var EndpointProperties: js.UndefOr[typings.awsSdk.comprehendMod.EndpointProperties] = js.native
+  var EndpointProperties: js.UndefOr[typings.awsSdk.comprehendMod.EndpointProperties] = js.undefined
 }
 object DescribeEndpointResponse {
   

@@ -2,15 +2,13 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Match extends StObject {
   
-  var `match`: String = js.native
+  var `match`: String
   
-  var options: js.Any = js.native
+  var options: js.Any
 }
 object Match {
   

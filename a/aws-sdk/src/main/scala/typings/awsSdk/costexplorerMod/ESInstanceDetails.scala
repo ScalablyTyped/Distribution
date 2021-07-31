@@ -2,36 +2,34 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ESInstanceDetails extends StObject {
   
   /**
     * Whether the recommendation is for a current-generation instance.
     */
-  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.native
+  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     * The class of instance that AWS recommends.
     */
-  var InstanceClass: js.UndefOr[GenericString] = js.native
+  var InstanceClass: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The size of instance that AWS recommends.
     */
-  var InstanceSize: js.UndefOr[GenericString] = js.native
+  var InstanceSize: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The AWS Region of the recommended reservation.
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Whether the recommended reservation is size flexible.
     */
-  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.native
+  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
 }
 object ESInstanceDetails {
   

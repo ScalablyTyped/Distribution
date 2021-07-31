@@ -4,25 +4,23 @@ import typings.std.stdStrings.`best fit`
 import typings.std.stdStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluralRulesOptions extends StObject {
   
-  var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.native
+  var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
   
-  var maximumFractionDigits: js.UndefOr[Double] = js.native
+  var maximumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var maximumSignificantDigits: js.UndefOr[Double] = js.native
+  var maximumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumFractionDigits: js.UndefOr[Double] = js.native
+  var minimumFractionDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumIntegerDigits: js.UndefOr[Double] = js.native
+  var minimumIntegerDigits: js.UndefOr[Double] = js.undefined
   
-  var minimumSignificantDigits: js.UndefOr[Double] = js.native
+  var minimumSignificantDigits: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[PluralRuleType] = js.native
+  var `type`: js.UndefOr[PluralRuleType] = js.undefined
 }
 object PluralRulesOptions {
   

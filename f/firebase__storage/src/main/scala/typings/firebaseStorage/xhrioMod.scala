@@ -7,7 +7,6 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xhrioMod {
@@ -19,19 +18,25 @@ object xhrioMod {
   object ErrorCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[ErrorCode & Double] = js.native
     
     @js.native
-    sealed trait ABORT extends ErrorCode
-    /* 2 */ val ABORT: typings.firebaseStorage.xhrioMod.ErrorCode.ABORT with Double = js.native
+    sealed trait ABORT
+      extends StObject
+         with ErrorCode
+    /* 2 */ val ABORT: typings.firebaseStorage.xhrioMod.ErrorCode.ABORT & Double = js.native
     
     @js.native
-    sealed trait NETWORK_ERROR extends ErrorCode
-    /* 1 */ val NETWORK_ERROR: typings.firebaseStorage.xhrioMod.ErrorCode.NETWORK_ERROR with Double = js.native
+    sealed trait NETWORK_ERROR
+      extends StObject
+         with ErrorCode
+    /* 1 */ val NETWORK_ERROR: typings.firebaseStorage.xhrioMod.ErrorCode.NETWORK_ERROR & Double = js.native
     
     @js.native
-    sealed trait NO_ERROR extends ErrorCode
-    /* 0 */ val NO_ERROR: typings.firebaseStorage.xhrioMod.ErrorCode.NO_ERROR with Double = js.native
+    sealed trait NO_ERROR
+      extends StObject
+         with ErrorCode
+    /* 0 */ val NO_ERROR: typings.firebaseStorage.xhrioMod.ErrorCode.NO_ERROR & Double = js.native
   }
   
   type Headers = StringDictionary[String | Double]
@@ -57,10 +62,10 @@ object xhrioMod {
     def removeUploadProgressListener(listener: js.Function1[/* p1 */ ProgressEvent[EventTarget], Unit]): Unit = js.native
     
     def send(url: String, method: String): js.Promise[XhrIo] = js.native
-    def send(url: String, method: String, body: js.UndefOr[scala.Nothing], headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: String): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: String, headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: Null, headers: Headers): js.Promise[XhrIo] = js.native
+    def send(url: String, method: String, body: Unit, headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: ArrayBufferView): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: ArrayBufferView, headers: Headers): js.Promise[XhrIo] = js.native
     def send(url: String, method: String, body: Blob): js.Promise[XhrIo] = js.native

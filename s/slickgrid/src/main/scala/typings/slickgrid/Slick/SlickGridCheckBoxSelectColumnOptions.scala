@@ -2,35 +2,35 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlickGridCheckBoxSelectColumnOptions extends PluginOptions {
+trait SlickGridCheckBoxSelectColumnOptions
+  extends StObject
+     with PluginOptions {
   
   /**
     * Column to add the checkbox to
     * @default "_checkbox_selector"
     */
-  var columnId: js.UndefOr[String] = js.native
+  var columnId: js.UndefOr[String] = js.undefined
   
   /**
     * CSS class to be added to cells in this column
     * @default null
     */
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
   /**
     * Tooltip text to display for this column
     * @default "Select/Deselect All"
     */
-  var toolTip: js.UndefOr[String] = js.native
+  var toolTip: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the column
     * @default 30
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SlickGridCheckBoxSelectColumnOptions {
   

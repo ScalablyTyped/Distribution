@@ -2,15 +2,13 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoSelectorSettings extends StObject {
   
-  var VideoSelectorPid: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelectorPid] = js.native
+  var VideoSelectorPid: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelectorPid] = js.undefined
   
-  var VideoSelectorProgramId: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelectorProgramId] = js.native
+  var VideoSelectorProgramId: js.UndefOr[typings.awsSdk.medialiveMod.VideoSelectorProgramId] = js.undefined
 }
 object VideoSelectorSettings {
   

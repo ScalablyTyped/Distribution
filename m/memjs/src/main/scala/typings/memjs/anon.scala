@@ -3,15 +3,13 @@ package typings.memjs
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Expires extends StObject {
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
   }
   object Expires {
     
@@ -32,12 +30,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Flags extends StObject {
     
-    var flags: Buffer = js.native
+    var flags: Buffer
     
-    var value: Buffer = js.native
+    var value: Buffer
   }
   object Flags {
     
@@ -58,12 +55,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Initial extends StObject {
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
   }
   object Initial {
     
@@ -90,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Log extends StObject {
     
-    def log(args: js.Any*): Unit = js.native
+    def log(args: js.Any*): Unit
   }
   object Log {
     
@@ -111,12 +106,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Success extends StObject {
     
-    var success: Boolean = js.native
+    var success: Boolean
     
-    var value: js.UndefOr[Double | Null] = js.native
+    var value: js.UndefOr[Double | Null] = js.undefined
   }
   object Success {
     

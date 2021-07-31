@@ -2,38 +2,36 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INumberFieldExpression extends StObject {
   
   /** Checks whether the value of the field is equal to the specified value */
-  def EqualTo(value: Double): IExpression = js.native
+  def EqualTo(value: Double): IExpression
   
   /** Checks whether the value of the field is greater than the specified value */
-  def GreaterThan(value: Double): IExpression = js.native
+  def GreaterThan(value: Double): IExpression
   
   /** Checks whether the value of the field is greater than or equal to the specified value */
-  def GreaterThanOrEqualTo(value: Double): IExpression = js.native
+  def GreaterThanOrEqualTo(value: Double): IExpression
   
   /** Checks whether the value of the field is equal to one of the specified values */
-  def In(arrayOfValues: js.Array[Double]): IExpression = js.native
+  def In(arrayOfValues: js.Array[Double]): IExpression
   
   /** Checks whether the value of the field was not specified by user */
-  def IsNotNull(): IExpression = js.native
+  def IsNotNull(): IExpression
   
   /** Checks whether the value of the field was specified by user */
-  def IsNull(): IExpression = js.native
+  def IsNull(): IExpression
   
   /** Checks whether the value of the field is less than the specified value */
-  def LessThan(value: Double): IExpression = js.native
+  def LessThan(value: Double): IExpression
   
   /** Checks whether the value of the field is less than or equal to the specified value */
-  def LessThanOrEqualTo(value: Double): IExpression = js.native
+  def LessThanOrEqualTo(value: Double): IExpression
   
   /** Checks whether the value of the field is not equal to the specified value */
-  def NotEqualTo(value: Double): IExpression = js.native
+  def NotEqualTo(value: Double): IExpression
 }
 object INumberFieldExpression {
   

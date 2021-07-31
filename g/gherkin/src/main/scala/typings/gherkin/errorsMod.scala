@@ -5,76 +5,181 @@ import typings.gherkin.tokenMod.default
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
   
   @JSImport("gherkin/dist/src/Errors", "AstBuilderException")
   @js.native
-  class AstBuilderException () extends GherkinException
+  class AstBuilderException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   /* static members */
   object AstBuilderException {
     
-    @JSImport("gherkin/dist/src/Errors", "AstBuilderException.create")
+    @JSImport("gherkin/dist/src/Errors", "AstBuilderException")
     @js.native
-    def create(message: String, location: ILocation): GherkinException = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(message: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(message.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "CompositeParserException")
   @js.native
-  class CompositeParserException () extends GherkinException
+  class CompositeParserException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   /* static members */
   object CompositeParserException {
     
-    @JSImport("gherkin/dist/src/Errors", "CompositeParserException.create")
+    @JSImport("gherkin/dist/src/Errors", "CompositeParserException")
     @js.native
-    def create(errors: js.Array[Error]): CompositeParserException = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(errors: js.Array[Error]): CompositeParserException = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(errors.asInstanceOf[js.Any]).asInstanceOf[CompositeParserException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "NoSuchLanguageException")
   @js.native
-  class NoSuchLanguageException () extends GherkinException
+  class NoSuchLanguageException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   /* static members */
   object NoSuchLanguageException {
     
-    @JSImport("gherkin/dist/src/Errors", "NoSuchLanguageException.create")
+    @JSImport("gherkin/dist/src/Errors", "NoSuchLanguageException")
     @js.native
-    def create(language: String, location: ILocation): GherkinException = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(language: String, location: ILocation): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(language.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "ParserException")
   @js.native
-  class ParserException () extends GherkinException
+  class ParserException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("gherkin/dist/src/Errors", "UnexpectedEOFException")
   @js.native
-  class UnexpectedEOFException () extends GherkinException
+  class UnexpectedEOFException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   /* static members */
   object UnexpectedEOFException {
     
-    @JSImport("gherkin/dist/src/Errors", "UnexpectedEOFException.create")
+    @JSImport("gherkin/dist/src/Errors", "UnexpectedEOFException")
     @js.native
-    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
   @JSImport("gherkin/dist/src/Errors", "UnexpectedTokenException")
   @js.native
-  class UnexpectedTokenException () extends GherkinException
+  class UnexpectedTokenException ()
+    extends StObject
+       with GherkinException {
+    
+    /* CompleteClass */
+    var errors: js.Array[Error] = js.native
+    
+    /* CompleteClass */
+    var location: ILocation = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   /* static members */
   object UnexpectedTokenException {
     
-    @JSImport("gherkin/dist/src/Errors", "UnexpectedTokenException.create")
+    @JSImport("gherkin/dist/src/Errors", "UnexpectedTokenException")
     @js.native
-    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(token: default, expectedTokenTypes: js.Array[String], stateComment: String): GherkinException = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(token.asInstanceOf[js.Any], expectedTokenTypes.asInstanceOf[js.Any], stateComment.asInstanceOf[js.Any])).asInstanceOf[GherkinException]
   }
   
-  @js.native
-  trait GherkinException extends Error {
+  trait GherkinException
+    extends StObject
+       with Error {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var location: ILocation = js.native
+    var location: ILocation
   }
   object GherkinException {
     

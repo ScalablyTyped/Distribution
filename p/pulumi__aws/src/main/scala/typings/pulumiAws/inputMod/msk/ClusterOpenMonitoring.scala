@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.msk
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOpenMonitoring extends StObject {
   
   /**
     * Configuration block for Prometheus settings for open monitoring. See below.
     */
-  var prometheus: Input[ClusterOpenMonitoringPrometheus] = js.native
+  var prometheus: Input[ClusterOpenMonitoringPrometheus]
 }
 object ClusterOpenMonitoring {
   

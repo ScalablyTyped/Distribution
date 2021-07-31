@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateConfigurationItemsToApplicationRequest extends StObject {
   
   /**
     * The configuration ID of an application with which items are to be associated.
     */
-  var applicationConfigurationId: ApplicationId = js.native
+  var applicationConfigurationId: ApplicationId
   
   /**
     * The ID of each configuration item to be associated with an application.
     */
-  var configurationIds: ConfigurationIdList = js.native
+  var configurationIds: ConfigurationIdList
 }
 object AssociateConfigurationItemsToApplicationRequest {
   

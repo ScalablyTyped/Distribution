@@ -4,7 +4,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.INTERSECTION
 import typings.tizenCommonWeb.tizenCommonWebStrings.UNION
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tizen-common-web/tizen", "CompositeFilter")

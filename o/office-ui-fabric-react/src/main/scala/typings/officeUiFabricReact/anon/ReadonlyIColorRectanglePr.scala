@@ -14,26 +14,24 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.types.IColorRectangleProps> */
-@js.native
 trait ReadonlyIColorRectanglePr extends StObject {
   
-  val ariaDescription: js.UndefOr[String] = js.native
+  val ariaDescription: js.UndefOr[String] = js.undefined
   
-  val ariaLabel: js.UndefOr[String] = js.native
+  val ariaLabel: js.UndefOr[String] = js.undefined
   
-  val ariaValueFormat: js.UndefOr[String] = js.native
+  val ariaValueFormat: js.UndefOr[String] = js.undefined
   
-  val className: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.undefined
   
-  val color: IColor = js.native
+  val color: IColor
   
-  val componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.native
+  val componentRef: js.UndefOr[IRefObject[IColorRectangle]] = js.undefined
   
-  val minSize: js.UndefOr[Double] = js.native
+  val minSize: js.UndefOr[Double] = js.undefined
   
   val onChange: js.UndefOr[
     js.Function2[
@@ -41,11 +39,11 @@ trait ReadonlyIColorRectanglePr extends StObject {
       /* color */ IColor, 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.native
+  val styles: js.UndefOr[IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]] = js.undefined
   
-  val theme: js.UndefOr[ITheme] = js.native
+  val theme: js.UndefOr[ITheme] = js.undefined
 }
 object ReadonlyIColorRectanglePr {
   

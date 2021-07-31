@@ -4,15 +4,15 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewportChangedEvent extends AgGridEvent {
+trait ViewportChangedEvent
+  extends StObject
+     with AgGridEvent {
   
-  var firstRow: Double = js.native
+  var firstRow: Double
   
-  var lastRow: Double = js.native
+  var lastRow: Double
 }
 object ViewportChangedEvent {
   

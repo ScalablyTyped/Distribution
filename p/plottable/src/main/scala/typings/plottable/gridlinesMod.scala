@@ -4,7 +4,6 @@ import typings.plottable.componentMod.Component
 import typings.plottable.scaleMod.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridlinesMod {
@@ -17,9 +16,9 @@ object gridlinesMod {
     * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
     */
   class Gridlines () extends Component {
-    def this(xScale: Scale[_, _]) = this()
-    def this(xScale: Null, yScale: Scale[_, _]) = this()
-    def this(xScale: Scale[_, _], yScale: Scale[_, _]) = this()
+    def this(xScale: Scale[js.Any, js.Any]) = this()
+    def this(xScale: Null, yScale: Scale[js.Any, js.Any]) = this()
+    def this(xScale: Scale[js.Any, js.Any], yScale: Scale[js.Any, js.Any]) = this()
     
     var _betweenX: js.Any = js.native
     

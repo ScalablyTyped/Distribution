@@ -4,24 +4,22 @@ import typings.node.processMod.global.NodeJS.ReadStream
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides an input and an output-stream.
   */
-@js.native
 trait StreamOptions extends StObject {
   
   /**
     * A stream to read the input from.
     */
-  var input: js.UndefOr[ReadStream] = js.native
+  var input: js.UndefOr[ReadStream] = js.undefined
   
   /**
     * A stream to write the output to.
     */
-  var output: js.UndefOr[WriteStream] = js.native
+  var output: js.UndefOr[WriteStream] = js.undefined
 }
 object StreamOptions {
   

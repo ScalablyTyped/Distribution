@@ -2,51 +2,49 @@ package typings.zepto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Android extends StObject {
     
-    var android: Boolean = js.native
+    var android: Boolean
     
-    var bb10: Boolean = js.native
+    var bb10: Boolean
     
-    var blackberry: Boolean = js.native
+    var blackberry: Boolean
     
     /**
       * Specific OS
       **/
-    var ios: Boolean = js.native
+    var ios: Boolean
     
-    var ipad: Boolean = js.native
+    var ipad: Boolean
     
     /**
       * Specific device type
       **/
-    var iphone: Boolean = js.native
+    var iphone: Boolean
     
-    var kindle: Boolean = js.native
+    var kindle: Boolean
     
     /**
       * General device type
       **/
-    var phone: Boolean = js.native
+    var phone: Boolean
     
-    var rimtabletos: Boolean = js.native
+    var rimtabletos: Boolean
     
-    var tablet: Boolean = js.native
+    var tablet: Boolean
     
-    var touchpad: Boolean = js.native
+    var touchpad: Boolean
     
     /**
       * OS version.
       **/
-    var version: String = js.native
+    var version: String
     
-    var webos: Boolean = js.native
+    var webos: Boolean
   }
   object Android {
     
@@ -114,24 +112,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Chrome extends StObject {
     
     /**
       * Specific browser
       **/
-    var chrome: Boolean = js.native
+    var chrome: Boolean
     
-    var firefox: Boolean = js.native
+    var firefox: Boolean
     
-    var playbook: Boolean = js.native
+    var playbook: Boolean
     
-    var silk: Boolean = js.native
+    var silk: Boolean
     
     /**
       * Browser version.
       **/
-    var version: String = js.native
+    var version: String
   }
   object Chrome {
     

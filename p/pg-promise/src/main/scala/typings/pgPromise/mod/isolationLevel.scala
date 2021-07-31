@@ -2,7 +2,6 @@ package typings.pgPromise.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,29 @@ sealed trait isolationLevel extends StObject
 object isolationLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[isolationLevel with Double] = js.native
+  def apply(value: Double): js.UndefOr[isolationLevel & Double] = js.native
   
   @js.native
-  sealed trait none extends isolationLevel
-  /* 0 */ val none: typings.pgPromise.mod.isolationLevel.none with Double = js.native
+  sealed trait none
+    extends StObject
+       with isolationLevel
+  /* 0 */ val none: typings.pgPromise.mod.isolationLevel.none & Double = js.native
   
   @js.native
-  sealed trait readCommitted extends isolationLevel
-  /* 3 */ val readCommitted: typings.pgPromise.mod.isolationLevel.readCommitted with Double = js.native
+  sealed trait readCommitted
+    extends StObject
+       with isolationLevel
+  /* 3 */ val readCommitted: typings.pgPromise.mod.isolationLevel.readCommitted & Double = js.native
   
   @js.native
-  sealed trait repeatableRead extends isolationLevel
-  /* 2 */ val repeatableRead: typings.pgPromise.mod.isolationLevel.repeatableRead with Double = js.native
+  sealed trait repeatableRead
+    extends StObject
+       with isolationLevel
+  /* 2 */ val repeatableRead: typings.pgPromise.mod.isolationLevel.repeatableRead & Double = js.native
   
   @js.native
-  sealed trait serializable extends isolationLevel
-  /* 1 */ val serializable: typings.pgPromise.mod.isolationLevel.serializable with Double = js.native
+  sealed trait serializable
+    extends StObject
+       with isolationLevel
+  /* 1 */ val serializable: typings.pgPromise.mod.isolationLevel.serializable & Double = js.native
 }

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Events
   * @see XEventsSupplier
   */
-@js.native
 trait EventDescriptor extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait EventDescriptor extends StObject {
     *
     * Usually this is one of the following: "None""StarBasic""JavaScript""Presentation" This list is extensible.
     */
-  var EventType: String = js.native
+  var EventType: String
   
   /** specifies the script source code */
-  var Script: String = js.native
+  var Script: String
 }
 object EventDescriptor {
   

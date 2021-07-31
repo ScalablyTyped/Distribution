@@ -3,29 +3,28 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.ObjectProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ObjectProperty_
-  extends ObjectMember
+- typings.babelTypes.mod._Node because Already inherited */ trait ObjectProperty_
+  extends StObject
      with BaseNode
+     with ObjectMember
      with Property
      with UserWhitespacable {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ = js.native
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_
   
-  var shorthand: Boolean = js.native
+  var shorthand: Boolean
   
   @JSName("type")
-  var type_ObjectProperty_ : ObjectProperty = js.native
+  var type_ObjectProperty_ : ObjectProperty
   
-  var value: Expression | PatternLike = js.native
+  var value: Expression | PatternLike
 }
 object ObjectProperty_ {
   
@@ -34,11 +33,10 @@ object ObjectProperty_ {
     computed: Boolean,
     key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     shorthand: Boolean,
-    `type`: ObjectProperty,
     value: Expression | PatternLike
   ): ObjectProperty_ = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectProperty")
     __obj.asInstanceOf[ObjectProperty_]
   }
   

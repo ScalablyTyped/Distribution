@@ -2,45 +2,43 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object representing the latitude and longitude for a point on the
   * Earth's surface.
   */
-@js.native
 trait Coordinate extends StObject {
   
   /**
     * Returns a copy of the coordinate.
     */
-  def copy(): Coordinate = js.native
+  def copy(): Coordinate
   
   /**
     * Returns a Boolean value indicating whether two coordinates are equal.
     */
-  def equals(anotherCoordinate: Coordinate): Boolean = js.native
+  def equals(anotherCoordinate: Coordinate): Boolean
   
   /**
     * The latitude in degrees.
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * The longitude in degrees.
     */
-  var longitude: Double = js.native
+  var longitude: Double
   
   /**
     * Returns the map point that corresponds to the coordinate.
     */
-  def toMapPoint(): MapPoint = js.native
+  def toMapPoint(): MapPoint
   
   /**
     * Returns the unwrapped map point that corresponds to the coordinate.
     */
-  def toUnwrappedMapPoint(): MapPoint = js.native
+  def toUnwrappedMapPoint(): MapPoint
 }
 object Coordinate {
   

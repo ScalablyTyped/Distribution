@@ -3,307 +3,305 @@ package typings.colorConvert.anon
 import typings.colorName.mod.RGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofcssKeywords extends StObject {
   
-  val aliceblue: RGB = js.native
+  val aliceblue: RGB
   
-  val antiquewhite: RGB = js.native
+  val antiquewhite: RGB
   
-  val aqua: RGB = js.native
+  val aqua: RGB
   
-  val aquamarine: RGB = js.native
+  val aquamarine: RGB
   
-  val azure: RGB = js.native
+  val azure: RGB
   
-  val beige: RGB = js.native
+  val beige: RGB
   
-  val bisque: RGB = js.native
+  val bisque: RGB
   
-  val black: RGB = js.native
+  val black: RGB
   
-  val blanchedalmond: RGB = js.native
+  val blanchedalmond: RGB
   
-  val blue: RGB = js.native
+  val blue: RGB
   
-  val blueviolet: RGB = js.native
+  val blueviolet: RGB
   
-  val brown: RGB = js.native
+  val brown: RGB
   
-  val burlywood: RGB = js.native
+  val burlywood: RGB
   
-  val cadetblue: RGB = js.native
+  val cadetblue: RGB
   
-  val chartreuse: RGB = js.native
+  val chartreuse: RGB
   
-  val chocolate: RGB = js.native
+  val chocolate: RGB
   
-  val coral: RGB = js.native
+  val coral: RGB
   
-  val cornflowerblue: RGB = js.native
+  val cornflowerblue: RGB
   
-  val cornsilk: RGB = js.native
+  val cornsilk: RGB
   
-  val crimson: RGB = js.native
+  val crimson: RGB
   
-  val cyan: RGB = js.native
+  val cyan: RGB
   
-  val darkblue: RGB = js.native
+  val darkblue: RGB
   
-  val darkcyan: RGB = js.native
+  val darkcyan: RGB
   
-  val darkgoldenrod: RGB = js.native
+  val darkgoldenrod: RGB
   
-  val darkgray: RGB = js.native
+  val darkgray: RGB
   
-  val darkgreen: RGB = js.native
+  val darkgreen: RGB
   
-  val darkgrey: RGB = js.native
+  val darkgrey: RGB
   
-  val darkkhaki: RGB = js.native
+  val darkkhaki: RGB
   
-  val darkmagenta: RGB = js.native
+  val darkmagenta: RGB
   
-  val darkolivegreen: RGB = js.native
+  val darkolivegreen: RGB
   
-  val darkorange: RGB = js.native
+  val darkorange: RGB
   
-  val darkorchid: RGB = js.native
+  val darkorchid: RGB
   
-  val darkred: RGB = js.native
+  val darkred: RGB
   
-  val darksalmon: RGB = js.native
+  val darksalmon: RGB
   
-  val darkseagreen: RGB = js.native
+  val darkseagreen: RGB
   
-  val darkslateblue: RGB = js.native
+  val darkslateblue: RGB
   
-  val darkslategray: RGB = js.native
+  val darkslategray: RGB
   
-  val darkslategrey: RGB = js.native
+  val darkslategrey: RGB
   
-  val darkturquoise: RGB = js.native
+  val darkturquoise: RGB
   
-  val darkviolet: RGB = js.native
+  val darkviolet: RGB
   
-  val deeppink: RGB = js.native
+  val deeppink: RGB
   
-  val deepskyblue: RGB = js.native
+  val deepskyblue: RGB
   
-  val dimgray: RGB = js.native
+  val dimgray: RGB
   
-  val dimgrey: RGB = js.native
+  val dimgrey: RGB
   
-  val dodgerblue: RGB = js.native
+  val dodgerblue: RGB
   
-  val firebrick: RGB = js.native
+  val firebrick: RGB
   
-  val floralwhite: RGB = js.native
+  val floralwhite: RGB
   
-  val forestgreen: RGB = js.native
+  val forestgreen: RGB
   
-  val fuchsia: RGB = js.native
+  val fuchsia: RGB
   
-  val gainsboro: RGB = js.native
+  val gainsboro: RGB
   
-  val ghostwhite: RGB = js.native
+  val ghostwhite: RGB
   
-  val gold: RGB = js.native
+  val gold: RGB
   
-  val goldenrod: RGB = js.native
+  val goldenrod: RGB
   
-  val gray: RGB = js.native
+  val gray: RGB
   
-  val green: RGB = js.native
+  val green: RGB
   
-  val greenyellow: RGB = js.native
+  val greenyellow: RGB
   
-  val grey: RGB = js.native
+  val grey: RGB
   
-  val honeydew: RGB = js.native
+  val honeydew: RGB
   
-  val hotpink: RGB = js.native
+  val hotpink: RGB
   
-  val indianred: RGB = js.native
+  val indianred: RGB
   
-  val indigo: RGB = js.native
+  val indigo: RGB
   
-  val ivory: RGB = js.native
+  val ivory: RGB
   
-  val khaki: RGB = js.native
+  val khaki: RGB
   
-  val lavender: RGB = js.native
+  val lavender: RGB
   
-  val lavenderblush: RGB = js.native
+  val lavenderblush: RGB
   
-  val lawngreen: RGB = js.native
+  val lawngreen: RGB
   
-  val lemonchiffon: RGB = js.native
+  val lemonchiffon: RGB
   
-  val lightblue: RGB = js.native
+  val lightblue: RGB
   
-  val lightcoral: RGB = js.native
+  val lightcoral: RGB
   
-  val lightcyan: RGB = js.native
+  val lightcyan: RGB
   
-  val lightgoldenrodyellow: RGB = js.native
+  val lightgoldenrodyellow: RGB
   
-  val lightgray: RGB = js.native
+  val lightgray: RGB
   
-  val lightgreen: RGB = js.native
+  val lightgreen: RGB
   
-  val lightgrey: RGB = js.native
+  val lightgrey: RGB
   
-  val lightpink: RGB = js.native
+  val lightpink: RGB
   
-  val lightsalmon: RGB = js.native
+  val lightsalmon: RGB
   
-  val lightseagreen: RGB = js.native
+  val lightseagreen: RGB
   
-  val lightskyblue: RGB = js.native
+  val lightskyblue: RGB
   
-  val lightslategray: RGB = js.native
+  val lightslategray: RGB
   
-  val lightslategrey: RGB = js.native
+  val lightslategrey: RGB
   
-  val lightsteelblue: RGB = js.native
+  val lightsteelblue: RGB
   
-  val lightyellow: RGB = js.native
+  val lightyellow: RGB
   
-  val lime: RGB = js.native
+  val lime: RGB
   
-  val limegreen: RGB = js.native
+  val limegreen: RGB
   
-  val linen: RGB = js.native
+  val linen: RGB
   
-  val magenta: RGB = js.native
+  val magenta: RGB
   
-  val maroon: RGB = js.native
+  val maroon: RGB
   
-  val mediumaquamarine: RGB = js.native
+  val mediumaquamarine: RGB
   
-  val mediumblue: RGB = js.native
+  val mediumblue: RGB
   
-  val mediumorchid: RGB = js.native
+  val mediumorchid: RGB
   
-  val mediumpurple: RGB = js.native
+  val mediumpurple: RGB
   
-  val mediumseagreen: RGB = js.native
+  val mediumseagreen: RGB
   
-  val mediumslateblue: RGB = js.native
+  val mediumslateblue: RGB
   
-  val mediumspringgreen: RGB = js.native
+  val mediumspringgreen: RGB
   
-  val mediumturquoise: RGB = js.native
+  val mediumturquoise: RGB
   
-  val mediumvioletred: RGB = js.native
+  val mediumvioletred: RGB
   
-  val midnightblue: RGB = js.native
+  val midnightblue: RGB
   
-  val mintcream: RGB = js.native
+  val mintcream: RGB
   
-  val mistyrose: RGB = js.native
+  val mistyrose: RGB
   
-  val moccasin: RGB = js.native
+  val moccasin: RGB
   
-  val navajowhite: RGB = js.native
+  val navajowhite: RGB
   
-  val navy: RGB = js.native
+  val navy: RGB
   
-  val oldlace: RGB = js.native
+  val oldlace: RGB
   
-  val olive: RGB = js.native
+  val olive: RGB
   
-  val olivedrab: RGB = js.native
+  val olivedrab: RGB
   
-  val orange: RGB = js.native
+  val orange: RGB
   
-  val orangered: RGB = js.native
+  val orangered: RGB
   
-  val orchid: RGB = js.native
+  val orchid: RGB
   
-  val palegoldenrod: RGB = js.native
+  val palegoldenrod: RGB
   
-  val palegreen: RGB = js.native
+  val palegreen: RGB
   
-  val paleturquoise: RGB = js.native
+  val paleturquoise: RGB
   
-  val palevioletred: RGB = js.native
+  val palevioletred: RGB
   
-  val papayawhip: RGB = js.native
+  val papayawhip: RGB
   
-  val peachpuff: RGB = js.native
+  val peachpuff: RGB
   
-  val peru: RGB = js.native
+  val peru: RGB
   
-  val pink: RGB = js.native
+  val pink: RGB
   
-  val plum: RGB = js.native
+  val plum: RGB
   
-  val powderblue: RGB = js.native
+  val powderblue: RGB
   
-  val purple: RGB = js.native
+  val purple: RGB
   
-  val rebeccapurple: RGB = js.native
+  val rebeccapurple: RGB
   
-  val red: RGB = js.native
+  val red: RGB
   
-  val rosybrown: RGB = js.native
+  val rosybrown: RGB
   
-  val royalblue: RGB = js.native
+  val royalblue: RGB
   
-  val saddlebrown: RGB = js.native
+  val saddlebrown: RGB
   
-  val salmon: RGB = js.native
+  val salmon: RGB
   
-  val sandybrown: RGB = js.native
+  val sandybrown: RGB
   
-  val seagreen: RGB = js.native
+  val seagreen: RGB
   
-  val seashell: RGB = js.native
+  val seashell: RGB
   
-  val sienna: RGB = js.native
+  val sienna: RGB
   
-  val silver: RGB = js.native
+  val silver: RGB
   
-  val skyblue: RGB = js.native
+  val skyblue: RGB
   
-  val slateblue: RGB = js.native
+  val slateblue: RGB
   
-  val slategray: RGB = js.native
+  val slategray: RGB
   
-  val slategrey: RGB = js.native
+  val slategrey: RGB
   
-  val snow: RGB = js.native
+  val snow: RGB
   
-  val springgreen: RGB = js.native
+  val springgreen: RGB
   
-  val steelblue: RGB = js.native
+  val steelblue: RGB
   
-  val tan: RGB = js.native
+  val tan: RGB
   
-  val teal: RGB = js.native
+  val teal: RGB
   
-  val thistle: RGB = js.native
+  val thistle: RGB
   
-  val tomato: RGB = js.native
+  val tomato: RGB
   
-  val turquoise: RGB = js.native
+  val turquoise: RGB
   
-  val violet: RGB = js.native
+  val violet: RGB
   
-  val wheat: RGB = js.native
+  val wheat: RGB
   
-  val white: RGB = js.native
+  val white: RGB
   
-  val whitesmoke: RGB = js.native
+  val whitesmoke: RGB
   
-  val yellow: RGB = js.native
+  val yellow: RGB
   
-  val yellowgreen: RGB = js.native
+  val yellowgreen: RGB
 }
 object TypeofcssKeywords {
   

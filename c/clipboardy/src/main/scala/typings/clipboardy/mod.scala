@@ -2,24 +2,23 @@ package typings.clipboardy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("clipboardy", "read")
+  @JSImport("clipboardy", JSImport.Namespace)
   @js.native
-  def read(): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("clipboardy", "readSync")
-  @js.native
-  def readSync(): String = js.native
+  @scala.inline
+  def read(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[js.Promise[String]]
   
-  @JSImport("clipboardy", "write")
-  @js.native
-  def write(text: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def readSync(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")().asInstanceOf[String]
   
-  @JSImport("clipboardy", "writeSync")
-  @js.native
-  def writeSync(text: String): Unit = js.native
+  @scala.inline
+  def write(text: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def writeSync(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

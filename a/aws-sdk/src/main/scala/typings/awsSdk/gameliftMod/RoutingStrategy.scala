@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutingStrategy extends StObject {
   
   /**
     * The unique identifier for a fleet that the alias points to. This value is the fleet ID, not the fleet ARN.
     */
-  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.native
+  var FleetId: js.UndefOr[typings.awsSdk.gameliftMod.FleetId] = js.undefined
   
   /**
     * The message text to be used with a terminal routing strategy.
     */
-  var Message: js.UndefOr[FreeText] = js.native
+  var Message: js.UndefOr[FreeText] = js.undefined
   
   /**
     * The type of routing strategy for the alias. Possible routing types include the following:    SIMPLE - The alias resolves to one specific fleet. Use this type when routing to active fleets.    TERMINAL - The alias does not resolve to a fleet but instead can be used to display a message to the user. A terminal alias throws a TerminalRoutingStrategyException with the RoutingStrategy message embedded.  
     */
-  var Type: js.UndefOr[RoutingStrategyType] = js.native
+  var Type: js.UndefOr[RoutingStrategyType] = js.undefined
 }
 object RoutingStrategy {
   

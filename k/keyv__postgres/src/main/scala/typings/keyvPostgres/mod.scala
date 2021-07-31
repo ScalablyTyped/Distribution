@@ -5,7 +5,6 @@ import typings.keyvPostgres.keyvPostgresBooleans.`false`
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,20 +22,19 @@ object mod {
     
     var namespace: js.UndefOr[String] = js.native
     
-    def set(key: String): js.Promise[_] = js.native
-    def set(key: String, value: String): js.Promise[_] = js.native
+    def set(key: String): js.Promise[js.Any] = js.native
+    def set(key: String, value: String): js.Promise[js.Any] = js.native
     
     val ttlSupport: `false` = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var keySize: js.UndefOr[Double] = js.native
+    var keySize: js.UndefOr[Double] = js.undefined
     
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Options {
     

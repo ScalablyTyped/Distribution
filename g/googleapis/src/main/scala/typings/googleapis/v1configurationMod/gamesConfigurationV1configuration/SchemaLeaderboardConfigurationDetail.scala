@@ -2,40 +2,38 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a leaderboard configuration detail.
   */
-@js.native
 trait SchemaLeaderboardConfigurationDetail extends StObject {
   
   /**
     * The icon url of this leaderboard. Writes to this field are ignored.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesConfiguration#leaderboardConfigurationDetail.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Localized strings for the leaderboard name.
     */
-  var name: js.UndefOr[SchemaLocalizedStringBundle] = js.native
+  var name: js.UndefOr[SchemaLocalizedStringBundle] = js.undefined
   
   /**
     * The score formatting for the leaderboard.
     */
-  var scoreFormat: js.UndefOr[SchemaGamesNumberFormatConfiguration] = js.native
+  var scoreFormat: js.UndefOr[SchemaGamesNumberFormatConfiguration] = js.undefined
   
   /**
     * The sort rank of this leaderboard. Writes to this field are ignored.
     */
-  var sortRank: js.UndefOr[Double] = js.native
+  var sortRank: js.UndefOr[Double] = js.undefined
 }
 object SchemaLeaderboardConfigurationDetail {
   

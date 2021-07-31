@@ -11,14 +11,13 @@ import typings.winrtUwp.winrtUwpStrings.propertychanged
 import typings.winrtUwp.winrtUwpStrings.shuffleenabledchangerequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an object that enables integrate with the system media transport controls and support for media commands. */
 @js.native
 trait SystemMediaTransportControls extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_autorepeatmodechangerequested(
     `type`: autorepeatmodechangerequested,
@@ -35,7 +34,10 @@ trait SystemMediaTransportControls extends StObject {
     listener: TypedEventHandler[SystemMediaTransportControls, PlaybackPositionChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[SystemMediaTransportControls, _]): Unit = js.native
+  def addEventListener_playbackratechangerequested(
+    `type`: playbackratechangerequested,
+    listener: TypedEventHandler[SystemMediaTransportControls, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_propertychanged(
     `type`: propertychanged,
@@ -87,41 +89,39 @@ trait SystemMediaTransportControls extends StObject {
   var isStopEnabled: Boolean = js.native
   
   /** Occurs when the user modifies the SystemMediaTransportControls auto-repeat mode. */
-  def onautorepeatmodechangerequested(ev: AutoRepeatModeChangeRequestedEventArgs with WinRTEvent[SystemMediaTransportControls]): Unit = js.native
+  def onautorepeatmodechangerequested(ev: AutoRepeatModeChangeRequestedEventArgs & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when the user modifies the SystemMediaTransportControls auto-repeat mode. */
   @JSName("onautorepeatmodechangerequested")
   var onautorepeatmodechangerequested_Original: TypedEventHandler[SystemMediaTransportControls, AutoRepeatModeChangeRequestedEventArgs] = js.native
   
   /** Occurs when a button is pressed on the SystemMediaTransportControls . */
-  def onbuttonpressed(
-    ev: SystemMediaTransportControlsButtonPressedEventArgs with WinRTEvent[SystemMediaTransportControls]
-  ): Unit = js.native
+  def onbuttonpressed(ev: SystemMediaTransportControlsButtonPressedEventArgs & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when a button is pressed on the SystemMediaTransportControls . */
   @JSName("onbuttonpressed")
   var onbuttonpressed_Original: TypedEventHandler[SystemMediaTransportControls, SystemMediaTransportControlsButtonPressedEventArgs] = js.native
   
   /** Occurs when the user modifies the playback position of the SystemMediaTransportControls . */
-  def onplaybackpositionchangerequested(ev: PlaybackPositionChangeRequestedEventArgs with WinRTEvent[SystemMediaTransportControls]): Unit = js.native
+  def onplaybackpositionchangerequested(ev: PlaybackPositionChangeRequestedEventArgs & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when the user modifies the playback position of the SystemMediaTransportControls . */
   @JSName("onplaybackpositionchangerequested")
   var onplaybackpositionchangerequested_Original: TypedEventHandler[SystemMediaTransportControls, PlaybackPositionChangeRequestedEventArgs] = js.native
   
   /** Occurs when the user modifies the SystemMediaTransportControls playback rate. */
-  def onplaybackratechangerequested(ev: js.Any with WinRTEvent[SystemMediaTransportControls]): Unit = js.native
+  def onplaybackratechangerequested(ev: js.Any & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when the user modifies the SystemMediaTransportControls playback rate. */
   @JSName("onplaybackratechangerequested")
-  var onplaybackratechangerequested_Original: TypedEventHandler[SystemMediaTransportControls, _] = js.native
+  var onplaybackratechangerequested_Original: TypedEventHandler[SystemMediaTransportControls, js.Any] = js.native
   
   /** Occurs when a property on the SystemMediaTransportControls has changed. */
   def onpropertychanged(
-    ev: SystemMediaTransportControlsPropertyChangedEventArgs with WinRTEvent[SystemMediaTransportControls]
+    ev: SystemMediaTransportControlsPropertyChangedEventArgs & WinRTEvent[SystemMediaTransportControls]
   ): Unit = js.native
   /** Occurs when a property on the SystemMediaTransportControls has changed. */
   @JSName("onpropertychanged")
   var onpropertychanged_Original: TypedEventHandler[SystemMediaTransportControls, SystemMediaTransportControlsPropertyChangedEventArgs] = js.native
   
   /** Occurs when the user modifies the SystemMediaTransportControls shuffle state. */
-  def onshuffleenabledchangerequested(ev: ShuffleEnabledChangeRequestedEventArgs with WinRTEvent[SystemMediaTransportControls]): Unit = js.native
+  def onshuffleenabledchangerequested(ev: ShuffleEnabledChangeRequestedEventArgs & WinRTEvent[SystemMediaTransportControls]): Unit = js.native
   /** Occurs when the user modifies the SystemMediaTransportControls shuffle state. */
   @JSName("onshuffleenabledchangerequested")
   var onshuffleenabledchangerequested_Original: TypedEventHandler[SystemMediaTransportControls, ShuffleEnabledChangeRequestedEventArgs] = js.native
@@ -132,7 +132,7 @@ trait SystemMediaTransportControls extends StObject {
   /** Gets the playback status of the media. */
   var playbackStatus: MediaPlaybackStatus = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_autorepeatmodechangerequested(
     `type`: autorepeatmodechangerequested,
@@ -149,7 +149,10 @@ trait SystemMediaTransportControls extends StObject {
     listener: TypedEventHandler[SystemMediaTransportControls, PlaybackPositionChangeRequestedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_playbackratechangerequested(`type`: playbackratechangerequested, listener: TypedEventHandler[SystemMediaTransportControls, _]): Unit = js.native
+  def removeEventListener_playbackratechangerequested(
+    `type`: playbackratechangerequested,
+    listener: TypedEventHandler[SystemMediaTransportControls, js.Any]
+  ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_propertychanged(
     `type`: propertychanged,

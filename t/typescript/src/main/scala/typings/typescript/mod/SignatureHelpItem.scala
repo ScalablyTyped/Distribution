@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,22 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an edit has happened, while signature help is still active, the host can ask important
   * questions like 'what parameter is the user currently contained within?'.
   */
-@js.native
 trait SignatureHelpItem extends StObject {
   
-  var documentation: js.Array[SymbolDisplayPart] = js.native
+  var documentation: js.Array[SymbolDisplayPart]
   
-  var isVariadic: Boolean = js.native
+  var isVariadic: Boolean
   
-  var parameters: js.Array[SignatureHelpParameter] = js.native
+  var parameters: js.Array[SignatureHelpParameter]
   
-  var prefixDisplayParts: js.Array[SymbolDisplayPart] = js.native
+  var prefixDisplayParts: js.Array[SymbolDisplayPart]
   
-  var separatorDisplayParts: js.Array[SymbolDisplayPart] = js.native
+  var separatorDisplayParts: js.Array[SymbolDisplayPart]
   
-  var suffixDisplayParts: js.Array[SymbolDisplayPart] = js.native
+  var suffixDisplayParts: js.Array[SymbolDisplayPart]
   
-  var tags: js.Array[JSDocTagInfo] = js.native
+  var tags: js.Array[JSDocTagInfo]
 }
 object SignatureHelpItem {
   

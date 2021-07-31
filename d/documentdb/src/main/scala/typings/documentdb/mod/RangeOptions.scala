@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeOptions extends StObject {
   
   /** The high value in the range. */
-  var high: js.Any = js.native
+  var high: js.Any
   
   /** The low value in the range. */
-  var low: js.Any = js.native
+  var low: js.Any
 }
 object RangeOptions {
   

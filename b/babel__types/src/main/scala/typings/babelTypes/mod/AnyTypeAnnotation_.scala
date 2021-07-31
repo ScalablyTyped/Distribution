@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.AnyTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait AnyTypeAnnotation_
-  extends Flow
+- typings.babelTypes.mod._Node because Already inherited */ trait AnyTypeAnnotation_
+  extends StObject
      with BaseNode
+     with Flow
      with FlowBaseAnnotation
      with FlowType {
   
   @JSName("type")
-  var type_AnyTypeAnnotation_ : AnyTypeAnnotation = js.native
+  var type_AnyTypeAnnotation_ : AnyTypeAnnotation
 }
 object AnyTypeAnnotation_ {
   
   @scala.inline
-  def apply(`type`: AnyTypeAnnotation): AnyTypeAnnotation_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): AnyTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("AnyTypeAnnotation")
     __obj.asInstanceOf[AnyTypeAnnotation_]
   }
   

@@ -2,17 +2,15 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "colunm-settings"
 //#region "other-settings"
-@js.native
 trait RendererSettings extends StObject {
   
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
-  var pageButton: js.UndefOr[String] = js.native
+  var pageButton: js.UndefOr[String] = js.undefined
 }
 object RendererSettings {
   

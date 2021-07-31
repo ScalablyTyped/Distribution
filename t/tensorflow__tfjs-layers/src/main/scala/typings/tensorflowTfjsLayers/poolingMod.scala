@@ -6,15 +6,17 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.DataFormat
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PaddingMode
 import typings.tensorflowTfjsLayers.kerasFormatCommonMod.PoolMode
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poolingMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "AveragePooling1D")
   @js.native
@@ -160,8 +162,6 @@ object poolingMod {
   @js.native
   abstract class GlobalPooling1D protected () extends Layer {
     def this(args: LayerArgs) = this()
-    
-    def computeOutputShape(inputShape: Shape): Shape = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "GlobalPooling2D")
@@ -302,136 +302,61 @@ object poolingMod {
     val strides: js.Tuple3[Double, Double, Double] = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(x: Tensor[Rank], poolSize: js.Tuple2[Double, Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: js.UndefOr[scala.Nothing],
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(
-    x: Tensor[Rank],
-    poolSize: js.Tuple2[Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: DataFormat,
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
-  def pool2d(x: Tensor[Rank], poolSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  @scala.inline
+  def pool2d(x: Tensor[Rank], poolSize: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(x: Tensor[Rank], poolSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
+    padding: Unit,
+    dataFormat: Unit,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
+    padding: Unit,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
-    padding: js.UndefOr[scala.Nothing],
+    padding: Unit,
     dataFormat: DataFormat,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     padding: PaddingMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     padding: PaddingMode,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     padding: PaddingMode,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool2d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool2d(
     x: Tensor[Rank],
     poolSize: js.Tuple2[Double, Double],
@@ -439,142 +364,121 @@ object poolingMod {
     padding: PaddingMode,
     dataFormat: DataFormat,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(x: Tensor[Rank], poolSize: js.Tuple2[Double, Double], strides: Unit, padding: PaddingMode): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: Unit,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool2d(
+    x: Tensor[Rank],
+    poolSize: js.Tuple2[Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: DataFormat,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool2d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(x: Tensor5D, poolSize: js.Tuple3[Double, Double, Double]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: DataFormat,
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: js.UndefOr[scala.Nothing],
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
-  def pool3d(
-    x: Tensor5D,
-    poolSize: js.Tuple3[Double, Double, Double],
-    strides: js.UndefOr[scala.Nothing],
-    padding: PaddingMode,
-    dataFormat: DataFormat,
-    poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  @scala.inline
+  def pool3d(x: Tensor5D, poolSize: js.Tuple3[Double, Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double]
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    padding: js.UndefOr[scala.Nothing],
-    dataFormat: js.UndefOr[scala.Nothing],
+    padding: Unit,
+    dataFormat: Unit,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    padding: js.UndefOr[scala.Nothing],
+    padding: Unit,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
-    padding: js.UndefOr[scala.Nothing],
+    padding: Unit,
     dataFormat: DataFormat,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     padding: PaddingMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     padding: PaddingMode,
-    dataFormat: js.UndefOr[scala.Nothing],
+    dataFormat: Unit,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     padding: PaddingMode,
     dataFormat: DataFormat
-  ): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/pooling", "pool3d")
-  @js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
   def pool3d(
     x: Tensor5D,
     poolSize: js.Tuple3[Double, Double, Double],
@@ -582,10 +486,65 @@ object poolingMod {
     padding: PaddingMode,
     dataFormat: DataFormat,
     poolMode: PoolMode
-  ): Tensor[Rank] = js.native
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: Unit,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: Unit,
+    dataFormat: DataFormat,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(x: Tensor5D, poolSize: js.Tuple3[Double, Double, Double], strides: Unit, padding: PaddingMode): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: Unit,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: DataFormat
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def pool3d(
+    x: Tensor5D,
+    poolSize: js.Tuple3[Double, Double, Double],
+    strides: Unit,
+    padding: PaddingMode,
+    dataFormat: DataFormat,
+    poolMode: PoolMode
+  ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("pool3d")(x.asInstanceOf[js.Any], poolSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], poolMode.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @js.native
-  trait GlobalPooling2DLayerArgs extends LayerArgs {
+  trait GlobalPooling2DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * One of `CHANNEL_LAST` (default) or `CHANNEL_FIRST`.
@@ -595,7 +554,7 @@ object poolingMod {
       * `CHANNEL_FIRST` corresponds to inputs with shape
       * `[batch, channels, height, width]`.
       */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
   }
   object GlobalPooling2DLayerArgs {
     
@@ -616,23 +575,24 @@ object poolingMod {
     }
   }
   
-  @js.native
-  trait Pooling1DLayerArgs extends LayerArgs {
+  trait Pooling1DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /** How to fill in data that's not an integer multiple of poolSize. */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
     /**
       * Size of the window to pool over, should be an integer.
       */
-    var poolSize: js.UndefOr[Double | js.Array[Double]] = js.native
+    var poolSize: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * Period at which to sample the pooled values.
       *
       * If `null`, defaults to `poolSize`.
       */
-    var strides: js.UndefOr[Double | js.Array[Double]] = js.native
+    var strides: js.UndefOr[Double | js.Array[Double]] = js.undefined
   }
   object Pooling1DLayerArgs {
     
@@ -671,14 +631,15 @@ object poolingMod {
     }
   }
   
-  @js.native
-  trait Pooling2DLayerArgs extends LayerArgs {
+  trait Pooling2DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /** The data format to use for the pooling layer. */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /** The padding type to use for the pooling layer. */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
     /**
       * Factors by which to downscale in each dimension [vertical, horizontal].
@@ -688,7 +649,7 @@ object poolingMod {
       * If only one integer is specified, the same window length
       * will be used for both dimensions.
       */
-    var poolSize: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var poolSize: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
     /**
       * The size of the stride in each dimension of the pooling window. Expects
@@ -697,7 +658,7 @@ object poolingMod {
       *
       * If `null`, defaults to `poolSize`.
       */
-    var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.native
+    var strides: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
   }
   object Pooling2DLayerArgs {
     
@@ -736,14 +697,15 @@ object poolingMod {
     }
   }
   
-  @js.native
-  trait Pooling3DLayerArgs extends LayerArgs {
+  trait Pooling3DLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /** The data format to use for the pooling layer. */
-    var dataFormat: js.UndefOr[DataFormat] = js.native
+    var dataFormat: js.UndefOr[DataFormat] = js.undefined
     
     /** The padding type to use for the pooling layer. */
-    var padding: js.UndefOr[PaddingMode] = js.native
+    var padding: js.UndefOr[PaddingMode] = js.undefined
     
     /**
       * Factors by which to downscale in each dimension [depth, height, width].
@@ -753,7 +715,7 @@ object poolingMod {
       * If only one integer is specified, the same window length
       * will be used for all dimensions.
       */
-    var poolSize: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])] = js.native
+    var poolSize: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])] = js.undefined
     
     /**
       * The size of the stride in each dimension of the pooling window. Expects
@@ -762,7 +724,7 @@ object poolingMod {
       *
       * If `null`, defaults to `poolSize`.
       */
-    var strides: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])] = js.native
+    var strides: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])] = js.undefined
   }
   object Pooling3DLayerArgs {
     

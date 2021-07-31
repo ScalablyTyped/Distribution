@@ -7,31 +7,29 @@ import typings.ionicCore.ionicCoreStrings.md
 import typings.ionicCore.ionicCoreStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonList extends StObject {
   
   /**
     * If `ion-item-sliding` are used inside the list, this method closes any open sliding item.  Returns `true` if an actual `ion-item-sliding` is closed.
     */
-  def closeSlidingItems(): js.Promise[Boolean] = js.native
+  def closeSlidingItems(): js.Promise[Boolean]
   
   /**
     * If `true`, the list will have margin around it and rounded corners.
     */
-  var inset: Boolean = js.native
+  var inset: Boolean
   
   /**
     * How the bottom border should be displayed on all items.
     */
-  var lines: js.UndefOr[full | inset | none] = js.native
+  var lines: js.UndefOr[full | inset | none] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
 }
 object IonList {
   

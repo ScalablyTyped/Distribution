@@ -12,7 +12,7 @@ The official Accedo One SDK for Node.js and browsers (previously known as AppGri
 | Keywords           | AppGrid, Accedo, Accedo One, SDK, ES6, Javascript |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3430 |
+| # downloads        | 3975 |
 | # stars            | 0 |
 
 ## Links

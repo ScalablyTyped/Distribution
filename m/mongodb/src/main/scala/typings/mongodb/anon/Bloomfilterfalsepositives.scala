@@ -2,35 +2,33 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bloomfilterfalsepositives extends StObject {
   
-  var `bloom filter false positives`: Double = js.native
+  var `bloom filter false positives`: Double
   
-  var `bloom filter hits`: Double = js.native
+  var `bloom filter hits`: Double
   
-  var `bloom filter misses`: Double = js.native
+  var `bloom filter misses`: Double
   
-  var `bloom filter pages evicted from cache`: Double = js.native
+  var `bloom filter pages evicted from cache`: Double
   
-  var `bloom filter pages read into cache`: Double = js.native
+  var `bloom filter pages read into cache`: Double
   
-  var `bloom filters in the LSM tree`: Double = js.native
+  var `bloom filters in the LSM tree`: Double
   
-  var `chunks in the LSM tree`: Double = js.native
+  var `chunks in the LSM tree`: Double
   
-  var `highest merge generation in the LSM tree`: Double = js.native
+  var `highest merge generation in the LSM tree`: Double
   
-  var `queries that could have benefited from a Bloom filter that did not exist`: Double = js.native
+  var `queries that could have benefited from a Bloom filter that did not exist`: Double
   
-  var `sleep for LSM checkpoint throttle`: Double = js.native
+  var `sleep for LSM checkpoint throttle`: Double
   
-  var `sleep for LSM merge throttle`: Double = js.native
+  var `sleep for LSM merge throttle`: Double
   
-  var `total size of bloom filters`: Double = js.native
+  var `total size of bloom filters`: Double
 }
 object Bloomfilterfalsepositives {
   

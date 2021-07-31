@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogConfig extends StObject {
   
   /** Cloud audit options. */
-  var cloudAudit: js.UndefOr[LogConfigCloudAuditOptions] = js.native
+  var cloudAudit: js.UndefOr[LogConfigCloudAuditOptions] = js.undefined
   
   /** Counter options. */
-  var counter: js.UndefOr[LogConfigCounterOptions] = js.native
+  var counter: js.UndefOr[LogConfigCounterOptions] = js.undefined
   
   /** Data access options. */
-  var dataAccess: js.UndefOr[LogConfigDataAccessOptions] = js.native
+  var dataAccess: js.UndefOr[LogConfigDataAccessOptions] = js.undefined
 }
 object LogConfig {
   

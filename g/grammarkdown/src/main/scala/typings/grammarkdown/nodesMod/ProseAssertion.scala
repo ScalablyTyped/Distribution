@@ -4,7 +4,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketGreaterThanToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "ProseAssertion")
@@ -19,12 +18,12 @@ class ProseAssertion protected ()
   def this(openBracketToken: Token[OpenBracketGreaterThanToken], fragments: js.Array[ProseFragment]) = this()
   def this(
     openBracketToken: Token[OpenBracketGreaterThanToken],
-    fragments: js.UndefOr[scala.Nothing],
+    fragments: js.Array[ProseFragment],
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketGreaterThanToken],
-    fragments: js.Array[ProseFragment],
+    fragments: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   

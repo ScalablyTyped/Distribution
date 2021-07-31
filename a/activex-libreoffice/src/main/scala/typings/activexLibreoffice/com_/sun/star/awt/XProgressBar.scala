@@ -5,34 +5,34 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and settings of a progress bar. */
-@js.native
-trait XProgressBar extends XInterface {
+trait XProgressBar
+  extends StObject
+     with XInterface {
   
   /** returns the current progress value of the progress bar. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** returns the current progress value of the progress bar. */
-  def getValue(): Double = js.native
+  def getValue(): Double
   
   /** sets the background color (RGB) of the control. */
-  def setBackgroundColor(Color: Color): Unit = js.native
+  def setBackgroundColor(Color: Color): Unit
   
   /** sets the foreground color (RGB) of the control. */
-  def setForegroundColor(Color: Color): Unit = js.native
+  def setForegroundColor(Color: Color): Unit
   
   /**
     * sets the minimum and the maximum progress value of the progress bar.
     *
     * If the minimum value is greater than the maximum value, the method exchanges the values automatically.
     */
-  def setRange(Min: Double, Max: Double): Unit = js.native
+  def setRange(Min: Double, Max: Double): Unit
   
   /** sets the progress value of the progress bar. */
-  def setValue(Value: Double): Unit = js.native
+  def setValue(Value: Double): Unit
 }
 object XProgressBar {
   

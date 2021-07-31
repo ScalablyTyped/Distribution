@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   * @extends PIXI.ObjectRenderer
   */
-@js.native
-trait TilingSpriteRenderer extends ObjectRenderer {
+trait TilingSpriteRenderer
+  extends StObject
+     with ObjectRenderer {
   
   /**
     *
     * @param {PIXI.TilingSprite} ts - tilingSprite to be rendered
     */
-  def render(ts: TilingSprite): Unit = js.native
+  def render(ts: TilingSprite): Unit
   
   /**
     * The WebGL state in which this renderer will work.
@@ -27,7 +27,7 @@ trait TilingSpriteRenderer extends ObjectRenderer {
     * @member {PIXI.State} PIXI.TilingSpriteRenderer#state
     * @readonly
     */
-  val state: State = js.native
+  val state: State
 }
 object TilingSpriteRenderer {
   

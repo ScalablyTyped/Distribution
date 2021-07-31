@@ -2,14 +2,12 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoragePlanInformation extends StObject {
   
   // Indicates whether there are higher storage quota plans available. Read-only.
-  var upgradeAvailable: js.UndefOr[NullableOption[Boolean]] = js.native
+  var upgradeAvailable: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object StoragePlanInformation {
   

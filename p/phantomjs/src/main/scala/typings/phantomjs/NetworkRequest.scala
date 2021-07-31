@@ -2,17 +2,15 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkRequest extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
   
-  def changeUrl(url: String): Unit = js.native
+  def changeUrl(url: String): Unit
   
-  def setHeader(name: String, value: String): Unit = js.native
+  def setHeader(name: String, value: String): Unit
 }
 object NetworkRequest {
   

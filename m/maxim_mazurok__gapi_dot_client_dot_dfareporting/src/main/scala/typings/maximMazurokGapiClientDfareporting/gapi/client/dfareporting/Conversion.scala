@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conversion extends StObject {
   
   /** Whether this particular request may come from a user under the age of 13, under COPPA compliance. */
-  var childDirectedTreatment: js.UndefOr[Boolean] = js.native
+  var childDirectedTreatment: js.UndefOr[Boolean] = js.undefined
   
   /** Custom floodlight variables. */
-  var customVariables: js.UndefOr[js.Array[CustomFloodlightVariable]] = js.native
+  var customVariables: js.UndefOr[js.Array[CustomFloodlightVariable]] = js.undefined
   
   /**
     * The display click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId and gclid. This or encryptedUserId or
     * encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid is a required field.
     */
-  var dclid: js.UndefOr[String] = js.native
+  var dclid: js.UndefOr[String] = js.undefined
   
   /**
     * The alphanumeric encrypted user ID. When set, encryptionInfo should also be specified. This field is mutually exclusive with encryptedUserIdCandidates[], matchId, mobileDeviceId,
     * gclid and dclid. This or encryptedUserIdCandidates[] or matchId or mobileDeviceId or gclid or dclid is a required field.
     */
-  var encryptedUserId: js.UndefOr[String] = js.native
+  var encryptedUserId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the alphanumeric encrypted user IDs. Any user ID with exposure prior to the conversion timestamp will be used in the inserted conversion. If no such user ID is found then
@@ -32,59 +30,59 @@ trait Conversion extends StObject {
     * supported by batchupdate. This field is mutually exclusive with encryptedUserId, matchId, mobileDeviceId, gclid and dclid. This or encryptedUserId or matchId or mobileDeviceId or
     * gclid or dclid is a required field.
     */
-  var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.native
+  var encryptedUserIdCandidates: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Floodlight Activity ID of this conversion. This is a required field. */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /** Floodlight Configuration ID of this conversion. This is a required field. */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * The Google click ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, mobileDeviceId and dclid. This or encryptedUserId or
     * encryptedUserIdCandidates[] or matchId or mobileDeviceId or dclid is a required field.
     */
-  var gclid: js.UndefOr[String] = js.native
+  var gclid: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#conversion". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Whether Limit Ad Tracking is enabled. When set to true, the conversion will be used for reporting but not targeting. This will prevent remarketing. */
-  var limitAdTracking: js.UndefOr[Boolean] = js.native
+  var limitAdTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The match ID field. A match ID is your own first-party identifier that has been synced with Google using the match ID feature in Floodlight. This field is mutually exclusive with
     * encryptedUserId, encryptedUserIdCandidates[],mobileDeviceId, gclid and dclid. This or encryptedUserId or encryptedUserIdCandidates[] or mobileDeviceId or gclid or dclid is a
     * required field.
     */
-  var matchId: js.UndefOr[String] = js.native
+  var matchId: js.UndefOr[String] = js.undefined
   
   /**
     * The mobile device ID. This field is mutually exclusive with encryptedUserId, encryptedUserIdCandidates[], matchId, gclid and dclid. This or encryptedUserId or
     * encryptedUserIdCandidates[] or matchId or gclid or dclid is a required field.
     */
-  var mobileDeviceId: js.UndefOr[String] = js.native
+  var mobileDeviceId: js.UndefOr[String] = js.undefined
   
   /** Whether the conversion was for a non personalized ad. */
-  var nonPersonalizedAd: js.UndefOr[Boolean] = js.native
+  var nonPersonalizedAd: js.UndefOr[Boolean] = js.undefined
   
   /** The ordinal of the conversion. Use this field to control how conversions of the same user and day are de-duplicated. This is a required field. */
-  var ordinal: js.UndefOr[String] = js.native
+  var ordinal: js.UndefOr[String] = js.undefined
   
   /** The quantity of the conversion. */
-  var quantity: js.UndefOr[String] = js.native
+  var quantity: js.UndefOr[String] = js.undefined
   
   /** The timestamp of conversion, in Unix epoch micros. This is a required field. */
-  var timestampMicros: js.UndefOr[String] = js.native
+  var timestampMicros: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this particular request may come from a user under the age of 16 (may differ by country), under compliance with the European Union's General Data Protection Regulation
     * (GDPR).
     */
-  var treatmentForUnderage: js.UndefOr[Boolean] = js.native
+  var treatmentForUnderage: js.UndefOr[Boolean] = js.undefined
   
   /** The value of the conversion. */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Conversion {
   

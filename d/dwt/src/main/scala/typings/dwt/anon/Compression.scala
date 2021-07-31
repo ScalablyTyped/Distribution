@@ -4,20 +4,18 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTTIFFCompressionType
 import typings.dwt.webTwainAcquireMod.TiffTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compression extends StObject {
   
-  var compression: js.UndefOr[EnumDWTTIFFCompressionType | Double] = js.native
+  var compression: js.UndefOr[EnumDWTTIFFCompressionType | Double] = js.undefined
   
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify Tiff custom tags.
     */
-  var tiffTags: js.UndefOr[js.Array[TiffTag]] = js.native
+  var tiffTags: js.UndefOr[js.Array[TiffTag]] = js.undefined
 }
 object Compression {
   

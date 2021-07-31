@@ -3,20 +3,18 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/swatches/Swatches.SwatchesPickerStylesProps> */
-@js.native
 trait PartialSwatchesPickerStyl extends StObject {
   
-  var body: js.UndefOr[CSSProperties] = js.native
+  var body: js.UndefOr[CSSProperties] = js.undefined
   
-  var clear: js.UndefOr[CSSProperties] = js.native
+  var clear: js.UndefOr[CSSProperties] = js.undefined
   
-  var overflow: js.UndefOr[CSSProperties] = js.native
+  var overflow: js.UndefOr[CSSProperties] = js.undefined
   
-  var picker: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialSwatchesPickerStyl {
   

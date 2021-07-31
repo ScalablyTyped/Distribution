@@ -3,14 +3,12 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Histogram result that matches HistogramSpec specified in
   * searches.
   */
-@js.native
 trait SchemaHistogramQueryResult extends StObject {
   
   /**
@@ -22,12 +20,12 @@ trait SchemaHistogramQueryResult extends StObject {
     * `non-negative`. * (for anonymous numeric bucket) range formatted as
     * `&lt;low&gt;-&lt;high&gt;`, for example, `0-1000`, `MIN-0`, and `0-MAX`.
     */
-  var histogram: js.UndefOr[StringDictionary[String]] = js.native
+  var histogram: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Requested histogram expression.
     */
-  var histogramQuery: js.UndefOr[String] = js.native
+  var histogramQuery: js.UndefOr[String] = js.undefined
 }
 object SchemaHistogramQueryResult {
   

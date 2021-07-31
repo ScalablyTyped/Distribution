@@ -7,31 +7,29 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.ScriptId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakLocation extends StObject {
   
   /**
     * Column number in the script (0-based).
     */
-  var columnNumber: js.UndefOr[integer] = js.native
+  var columnNumber: js.UndefOr[integer] = js.undefined
   
   /**
     * Line number in the script (0-based).
     */
-  var lineNumber: integer = js.native
+  var lineNumber: integer
   
   /**
     * Script identifier as reported in the `Debugger.scriptParsed`.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     *  (BreakLocationType enum)
     */
-  var `type`: js.UndefOr[debuggerStatement | call | `return`] = js.native
+  var `type`: js.UndefOr[debuggerStatement | call | `return`] = js.undefined
 }
 object BreakLocation {
   

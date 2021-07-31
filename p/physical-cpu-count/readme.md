@@ -12,7 +12,7 @@ Provides the number of physical cores
 | Keywords           | os, cpu, cpus, length, physical, logical, cores |
 | # releases         | 0 |
 | # dependents       | 39 |
-| # downloads        | 20805384 |
+| # downloads        | 25941038 |
 | # stars            | 1 |
 
 ## Links

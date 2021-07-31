@@ -2,13 +2,11 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelegateMiddleware extends StObject {
   
-  def register(endpoint: Endpoint): SimpleMiddleware = js.native
+  def register(endpoint: Endpoint): SimpleMiddleware
 }
 object DelegateMiddleware {
   

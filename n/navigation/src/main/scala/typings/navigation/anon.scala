@@ -4,19 +4,17 @@ import typings.navigation.mod.Crumb
 import typings.navigation.mod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Crumbs extends StObject {
     
-    var crumbs: js.Array[Crumb] = js.native
+    var crumbs: js.Array[Crumb]
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var state: State = js.native
+    var state: State
   }
   object Crumbs {
     

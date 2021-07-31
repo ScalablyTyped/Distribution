@@ -2,7 +2,6 @@ package typings.w3cGenericSensor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,7 +9,8 @@ object global {
   @JSGlobal("AbsoluteOrientationSensor")
   @js.native
   class AbsoluteOrientationSensor ()
-    extends typings.w3cGenericSensor.OrientationSensor {
+    extends StObject
+       with typings.w3cGenericSensor.OrientationSensor {
     def this(options: SensorOptions) = this()
   }
   
@@ -18,14 +18,16 @@ object global {
   @JSGlobal("Accelerometer")
   @js.native
   class Accelerometer ()
-    extends typings.w3cGenericSensor.Accelerometer {
+    extends StObject
+       with typings.w3cGenericSensor.Accelerometer {
     def this(options: SensorOptions) = this()
   }
   
   @JSGlobal("GravitySensor")
   @js.native
   class GravitySensor ()
-    extends typings.w3cGenericSensor.Accelerometer {
+    extends StObject
+       with typings.w3cGenericSensor.Accelerometer {
     def this(options: SensorOptions) = this()
   }
   
@@ -33,14 +35,16 @@ object global {
   @JSGlobal("Gyroscope")
   @js.native
   class Gyroscope ()
-    extends typings.w3cGenericSensor.Gyroscope {
+    extends StObject
+       with typings.w3cGenericSensor.Gyroscope {
     def this(options: SensorOptions) = this()
   }
   
   @JSGlobal("LinearAccelerationSensor")
   @js.native
   class LinearAccelerationSensor ()
-    extends typings.w3cGenericSensor.Accelerometer {
+    extends StObject
+       with typings.w3cGenericSensor.Accelerometer {
     def this(options: SensorOptions) = this()
   }
   
@@ -48,38 +52,44 @@ object global {
   @JSGlobal("Magnetometer")
   @js.native
   class Magnetometer ()
-    extends typings.w3cGenericSensor.Magnetometer {
+    extends StObject
+       with typings.w3cGenericSensor.Magnetometer {
     def this(options: SensorOptions) = this()
   }
   
   @JSGlobal("OrientationSensor")
   @js.native
   class OrientationSensor ()
-    extends typings.w3cGenericSensor.OrientationSensor
+    extends StObject
+       with typings.w3cGenericSensor.OrientationSensor
   
   @JSGlobal("RelativeOrientationSensor")
   @js.native
   class RelativeOrientationSensor ()
-    extends typings.w3cGenericSensor.OrientationSensor {
+    extends StObject
+       with typings.w3cGenericSensor.OrientationSensor {
     def this(options: SensorOptions) = this()
   }
   
   @JSGlobal("Sensor")
   @js.native
   class Sensor ()
-    extends typings.w3cGenericSensor.Sensor
+    extends StObject
+       with typings.w3cGenericSensor.Sensor
   
   @JSGlobal("SensorErrorEvent")
   @js.native
   class SensorErrorEvent protected ()
-    extends typings.w3cGenericSensor.SensorErrorEvent {
+    extends StObject
+       with typings.w3cGenericSensor.SensorErrorEvent {
     def this(`type`: String, errorEventInitDict: SensorErrorEventInit) = this()
   }
   
   @JSGlobal("UncalibratedMagnetometer")
   @js.native
   class UncalibratedMagnetometer ()
-    extends typings.w3cGenericSensor.UncalibratedMagnetometer {
+    extends StObject
+       with typings.w3cGenericSensor.UncalibratedMagnetometer {
     def this(options: SensorOptions) = this()
   }
 }

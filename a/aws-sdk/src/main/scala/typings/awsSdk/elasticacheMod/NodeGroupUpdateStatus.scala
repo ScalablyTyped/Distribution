@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeGroupUpdateStatus extends StObject {
   
   /**
     * The ID of the node group
     */
-  var NodeGroupId: js.UndefOr[String] = js.native
+  var NodeGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the service update on the node group member
     */
-  var NodeGroupMemberUpdateStatus: js.UndefOr[NodeGroupMemberUpdateStatusList] = js.native
+  var NodeGroupMemberUpdateStatus: js.UndefOr[NodeGroupMemberUpdateStatusList] = js.undefined
 }
 object NodeGroupUpdateStatus {
   

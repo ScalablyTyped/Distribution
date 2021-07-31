@@ -2,14 +2,12 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StorageSource describes the location of the source in an archive file in
   * Google Cloud Storage.
   */
-@js.native
 trait SchemaStorageSource extends StObject {
   
   /**
@@ -17,17 +15,17 @@ trait SchemaStorageSource extends StObject {
     * Requirements]
     * (https://cloud.google.com/storage/docs/bucket-naming#requirements)).
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Google Cloud Storage generation for the object.
     */
-  var generation: js.UndefOr[String] = js.native
+  var generation: js.UndefOr[String] = js.undefined
   
   /**
     * Google Cloud Storage object containing source.
     */
-  var `object`: js.UndefOr[String] = js.native
+  var `object`: js.UndefOr[String] = js.undefined
 }
 object SchemaStorageSource {
   

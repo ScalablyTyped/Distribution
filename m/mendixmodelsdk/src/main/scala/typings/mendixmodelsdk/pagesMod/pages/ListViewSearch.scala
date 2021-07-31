@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewSearch")
@@ -55,9 +54,8 @@ object ListViewSearch {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewSearch.create")
-  @js.native
-  def create(model: IModel): ListViewSearch = js.native
+  @scala.inline
+  def create(model: IModel): ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object ListViewSearch {
     * of the parent ListViewDatabaseSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewSearch.createInListViewDatabaseSourceUnderSearch")
-  @js.native
-  def createInListViewDatabaseSourceUnderSearch(container: ListViewDatabaseSource): ListViewSearch = js.native
+  @scala.inline
+  def createInListViewDatabaseSourceUnderSearch(container: ListViewDatabaseSource): ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewDatabaseSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewSearch]
   
   /**
     * Creates and returns a new ListViewSearch instance in the SDK and on the server.
@@ -75,9 +72,8 @@ object ListViewSearch {
     * of the parent ListViewXPathSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewSearch.createInListViewXPathSourceUnderSearch")
-  @js.native
-  def createInListViewXPathSourceUnderSearch(container: ListViewXPathSource): ListViewSearch = js.native
+  @scala.inline
+  def createInListViewXPathSourceUnderSearch(container: ListViewXPathSource): ListViewSearch = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewXPathSourceUnderSearch")(container.asInstanceOf[js.Any]).asInstanceOf[ListViewSearch]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ListViewSearch.structureTypeName")

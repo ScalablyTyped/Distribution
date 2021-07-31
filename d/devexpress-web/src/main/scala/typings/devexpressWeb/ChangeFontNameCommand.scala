@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the font name of characters in a selected range.
   */
-@js.native
-trait ChangeFontNameCommand extends CommandBase {
+trait ChangeFontNameCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeFontNameCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param fontName A string specifying the font name.
     */
-  def execute(fontName: String): Boolean = js.native
+  def execute(fontName: String): Boolean
   
   /**
     * Lists names of fonts available in the control.
     */
-  val fontNames: js.Array[String] = js.native
+  val fontNames: js.Array[String]
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[String] = js.native
+  def getState(): CommandState[String]
 }
 object ChangeFontNameCommand {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInvitationsResponse extends StObject {
   
   /**
     * An array of objects, one for each account whose invitation hasn't been processed. Each object identifies the account and explains why the invitation hasn't been processed for the account.
     */
-  var unprocessedAccounts: js.UndefOr[listOfUnprocessedAccount] = js.native
+  var unprocessedAccounts: js.UndefOr[listOfUnprocessedAccount] = js.undefined
 }
 object CreateInvitationsResponse {
   

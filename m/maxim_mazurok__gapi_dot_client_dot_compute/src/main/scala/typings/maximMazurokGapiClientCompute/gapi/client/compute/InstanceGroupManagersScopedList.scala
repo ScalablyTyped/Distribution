@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupManagersScopedList extends StObject {
   
   /** [Output Only] The list of managed instance groups that are contained in the specified project and zone. */
-  var instanceGroupManagers: js.UndefOr[js.Array[InstanceGroupManager]] = js.native
+  var instanceGroupManagers: js.UndefOr[js.Array[InstanceGroupManager]] = js.undefined
   
   /** [Output Only] The warning that replaces the list of managed instance groups when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object InstanceGroupManagersScopedList {
   

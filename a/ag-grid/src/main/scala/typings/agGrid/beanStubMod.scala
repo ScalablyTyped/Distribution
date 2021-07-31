@@ -7,14 +7,15 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object beanStubMod {
   
   @JSImport("ag-grid/dist/lib/context/beanStub", "BeanStub")
   @js.native
-  class BeanStub () extends IEventEmitter {
+  class BeanStub ()
+    extends StObject
+       with IEventEmitter {
     
     def addDestroyFunc(func: js.Function0[Unit]): Unit = js.native
     

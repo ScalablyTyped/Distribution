@@ -2,15 +2,13 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placeholder extends StObject {
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var regexp: String = js.native
+  var regexp: String
 }
 object Placeholder {
   

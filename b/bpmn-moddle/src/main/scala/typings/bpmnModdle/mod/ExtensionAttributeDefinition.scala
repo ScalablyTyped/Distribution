@@ -2,20 +2,20 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtensionAttributeDefinition extends TypeDerived {
+trait ExtensionAttributeDefinition
+  extends StObject
+     with TypeDerived {
   
   /**
     * @default false
     */
-  var isReference: Boolean = js.native
+  var isReference: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ExtensionAttributeDefinition {
   

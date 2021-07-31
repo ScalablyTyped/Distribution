@@ -10,9 +10,9 @@ jsreport extension adding support for storing templates
 | ------------------ | :-------------: |
 | Full name          | jsreport-templates |
 | Keywords           | jsreport |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 175934 |
+| # releases         | 7 |
+| # dependents       | 4 |
+| # downloads        | 162542 |
 | # stars            | 0 |
 
 ## Links

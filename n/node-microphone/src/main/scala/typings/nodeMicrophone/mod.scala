@@ -18,23 +18,29 @@ import typings.nodeMicrophone.nodeMicrophoneStrings.little
 import typings.nodeMicrophone.nodeMicrophoneStrings.plughwColon1Comma0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-microphone", JSImport.Namespace)
   @js.native
-  class ^ () extends Microphone {
+  class ^ ()
+    extends StObject
+       with Microphone {
     def this(options: MicrophoneOptions) = this()
+    
+    /* CompleteClass */
+    override def startRecording(): WriteStream = js.native
+    
+    /* CompleteClass */
+    override def stopRecording(): Unit = js.native
   }
   
-  @js.native
   trait Microphone extends StObject {
     
-    def startRecording(): WriteStream = js.native
+    def startRecording(): WriteStream
     
-    def stopRecording(): Unit = js.native
+    def stopRecording(): Unit
   }
   object Microphone {
     
@@ -55,22 +61,21 @@ object mod {
     }
   }
   
-  @js.native
   trait MicrophoneOptions extends StObject {
     
-    var additionalParameters: js.UndefOr[js.Any] = js.native
+    var additionalParameters: js.UndefOr[js.Any] = js.undefined
     
-    var bitwidth: js.UndefOr[`8` | `16` | `24`] = js.native
+    var bitwidth: js.UndefOr[`8` | `16` | `24`] = js.undefined
     
-    var channels: js.UndefOr[`1` | `2`] = js.native
+    var channels: js.UndefOr[`1` | `2`] = js.undefined
     
-    var device: js.UndefOr[hwColon0Comma0 | plughwColon1Comma0 | default] = js.native
+    var device: js.UndefOr[hwColon0Comma0 | plughwColon1Comma0 | default] = js.undefined
     
-    var encoding: js.UndefOr[`signed-integer` | `unsigned-integer`] = js.native
+    var encoding: js.UndefOr[`signed-integer` | `unsigned-integer`] = js.undefined
     
-    var endian: js.UndefOr[big | little] = js.native
+    var endian: js.UndefOr[big | little] = js.undefined
     
-    var rate: js.UndefOr[`8000` | `16000` | `44100`] = js.native
+    var rate: js.UndefOr[`8000` | `16000` | `44100`] = js.undefined
   }
   object MicrophoneOptions {
     

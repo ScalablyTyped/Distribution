@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DotObject {
@@ -34,14 +33,6 @@ object DotObject {
       target: String,
       obj1: js.Any,
       obj2: js.Any,
-      mods: js.UndefOr[scala.Nothing],
-      merge: Boolean
-    ): Unit = js.native
-    def copy(
-      source: String,
-      target: String,
-      obj1: js.Any,
-      obj2: js.Any,
       mods: js.Array[ModifierFunctionWrapper]
     ): Unit = js.native
     def copy(
@@ -52,6 +43,7 @@ object DotObject {
       mods: js.Array[ModifierFunctionWrapper],
       merge: Boolean
     ): Unit = js.native
+    def copy(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: Unit, merge: Boolean): Unit = js.native
     def copy(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
     def copy(
       source: String,
@@ -146,7 +138,6 @@ object DotObject {
       * @param {Boolean} merge
       */
     def move(source: String, target: String, obj: js.Any): Unit = js.native
-    def move(source: String, target: String, obj: js.Any, mods: js.UndefOr[scala.Nothing], merge: Boolean): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: js.Array[ModifierFunctionWrapper]): Unit = js.native
     def move(
       source: String,
@@ -155,6 +146,7 @@ object DotObject {
       mods: js.Array[ModifierFunctionWrapper],
       merge: Boolean
     ): Unit = js.native
+    def move(source: String, target: String, obj: js.Any, mods: Unit, merge: Boolean): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
     def move(source: String, target: String, obj: js.Any, mods: ModifierFunctionWrapper, merge: Boolean): Unit = js.native
     
@@ -253,14 +245,6 @@ object DotObject {
       target: String,
       obj1: js.Any,
       obj2: js.Any,
-      mods: js.UndefOr[scala.Nothing],
-      merge: Boolean
-    ): Unit = js.native
-    def transfer(
-      source: String,
-      target: String,
-      obj1: js.Any,
-      obj2: js.Any,
       mods: js.Array[ModifierFunctionWrapper]
     ): Unit = js.native
     def transfer(
@@ -271,6 +255,7 @@ object DotObject {
       mods: js.Array[ModifierFunctionWrapper],
       merge: Boolean
     ): Unit = js.native
+    def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: Unit, merge: Boolean): Unit = js.native
     def transfer(source: String, target: String, obj1: js.Any, obj2: js.Any, mods: ModifierFunctionWrapper): Unit = js.native
     def transfer(
       source: String,
@@ -312,19 +297,20 @@ object DotObject {
   
   @js.native
   trait DotConstructor
-    extends Dot
+    extends StObject
+       with Dot
        with Instantiable1[/* separator */ String, Dot]
        with Instantiable2[/* separator */ String, /* override */ Boolean, Dot]
        with Instantiable3[
           /* separator */ String, 
-          js.UndefOr[/* override */ Boolean], 
+          (/* override */ Boolean) | (/* override */ Unit), 
           /* useArray */ Boolean, 
           Dot
         ]
        with Instantiable4[
           /* separator */ String, 
-          js.UndefOr[/* override */ Boolean], 
-          js.UndefOr[/* useArray */ Boolean], 
+          (/* override */ Boolean) | (/* override */ Unit), 
+          (/* useArray */ Boolean) | (/* useArray */ Unit), 
           /* useBrackets */ Boolean, 
           Dot
         ]

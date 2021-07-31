@@ -6,37 +6,35 @@ import typings.tizenTvWebapis.tizenTvWebapisNumbers.`2`
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CELLULAR extends StObject {
   
   /**
     * Connected to a cellular network.
     */
-  var CELLULAR: `2` = js.native
+  var CELLULAR: `2`
   
   /**
     * No network configured
     */
-  var DISCONNECTED: `0` = js.native
+  var DISCONNECTED: `0`
   
   /**
     * Connected to an Ethernet network.
     */
-  var ETHERNET: `3` = js.native
+  var ETHERNET: `3`
   
   /**
     * Connected to a Wi-Fi network.
     */
-  var WIFI: `1` = js.native
+  var WIFI: `1`
 }
 object CELLULAR {
   
   @scala.inline
-  def apply(CELLULAR: `2`, DISCONNECTED: `0`, ETHERNET: `3`, WIFI: `1`): CELLULAR = {
-    val __obj = js.Dynamic.literal(CELLULAR = CELLULAR.asInstanceOf[js.Any], DISCONNECTED = DISCONNECTED.asInstanceOf[js.Any], ETHERNET = ETHERNET.asInstanceOf[js.Any], WIFI = WIFI.asInstanceOf[js.Any])
+  def apply(): CELLULAR = {
+    val __obj = js.Dynamic.literal(CELLULAR = 2, DISCONNECTED = 0, ETHERNET = 3, WIFI = 1)
     __obj.asInstanceOf[CELLULAR]
   }
   

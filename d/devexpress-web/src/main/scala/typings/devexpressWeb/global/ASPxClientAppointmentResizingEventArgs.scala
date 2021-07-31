@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientAppointmentResizingEventArgs")
 @js.native
 class ASPxClientAppointmentResizingEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientAppointmentResizingEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientAppointmentResizingEventArgs {
   /**
     * Initializes a new instance of the ASPxClientAppointmentResizingEventArgs class.
     * @param mouseEvent A mouse event object related to the resizing operation.
@@ -25,4 +25,34 @@ class ASPxClientAppointmentResizingEventArgs protected ()
     oldInterval: typings.devexpressWeb.ASPxClientTimeInterval,
     newInterval: typings.devexpressWeb.ASPxClientTimeInterval
   ) = this()
+  
+  /**
+    * Specifies whether or not an appointment can be resized to the new time interval.
+    */
+  /* CompleteClass */
+  var allow: Boolean = js.native
+  
+  /**
+    * Gets the resized appointment's identifier.
+    */
+  /* CompleteClass */
+  var appointmentId: String = js.native
+  
+  /**
+    * Gets a mouse event object related to the current appointment resizing operation.
+    */
+  /* CompleteClass */
+  var mouseEvent: js.Any = js.native
+  
+  /**
+    * Gets the appointment's interval after resizing.
+    */
+  /* CompleteClass */
+  var newInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
+  
+  /**
+    * Gets the appointment's interval before resizing.
+    */
+  /* CompleteClass */
+  var oldInterval: typings.devexpressWeb.ASPxClientTimeInterval = js.native
 }

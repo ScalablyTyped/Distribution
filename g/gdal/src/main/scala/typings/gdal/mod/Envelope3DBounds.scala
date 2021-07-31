@@ -2,15 +2,15 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Envelope3DBounds extends EnvelopeBounds {
+trait Envelope3DBounds
+  extends StObject
+     with EnvelopeBounds {
   
-  var maxZ: Double = js.native
+  var maxZ: Double
   
-  var minZ: Double = js.native
+  var minZ: Double
 }
 object Envelope3DBounds {
   

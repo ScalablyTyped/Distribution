@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageCarouselSelect extends StObject {
   
   /** Required. Carousel items. */
-  var items: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem]] = js.native
+  var items: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageCarouselSelectItem]] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageCarouselSelect {
   

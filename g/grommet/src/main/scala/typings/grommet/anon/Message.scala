@@ -5,17 +5,15 @@ import typings.grommet.grommetStrings.info
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var message: js.UndefOr[String | ReactNode] = js.native
+  var message: js.UndefOr[String | ReactNode] = js.undefined
   
-  var regexp: js.UndefOr[js.Object] = js.native
+  var regexp: js.UndefOr[js.Object] = js.undefined
   
-  var status: js.UndefOr[error | info] = js.native
+  var status: js.UndefOr[error | info] = js.undefined
 }
 object Message {
   

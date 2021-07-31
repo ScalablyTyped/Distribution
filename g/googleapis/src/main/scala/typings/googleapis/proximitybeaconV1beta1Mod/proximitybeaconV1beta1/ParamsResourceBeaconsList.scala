@@ -6,33 +6,33 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBeaconsList extends StandardParameters {
+trait ParamsResourceBeaconsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The maximum number of records to return for this request, up to a
     * server-defined upper limit.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A pagination token obtained from a previous request to list beacons.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The project id to list beacons under. If not present then the project
     * credential that made the request is used as the project. Optional.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Filter query string that supports the following field filters:  *
@@ -86,7 +86,7 @@ trait ParamsResourceBeaconsList extends StandardParameters {
     * URL-encoded.  Example REST request: `GET
     * /v1beta1/beacons?q=status:active%20lat:51.123%20lng:-1.095%20radius:1000`
     */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBeaconsList {
   

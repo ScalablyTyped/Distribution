@@ -2,13 +2,13 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Graphics")
 @js.native
 class Graphics ()
-  extends typings.easeljs.createjs.Graphics
+  extends StObject
+     with typings.easeljs.createjs.Graphics
 /* static members */
 object Graphics {
   
@@ -19,15 +19,52 @@ object Graphics {
   @JSGlobal("createjs.Graphics.Arc")
   @js.native
   class Arc protected ()
-    extends typings.easeljs.createjs.Graphics.Arc {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.Arc {
     def this(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var anticlockwise: Double = js.native
+    
+    /* CompleteClass */
+    var endAngle: Double = js.native
+    
+    /* CompleteClass */
+    var radius: Double = js.native
+    
+    /* CompleteClass */
+    var startAngle: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.ArcTo")
   @js.native
   class ArcTo protected ()
-    extends typings.easeljs.createjs.Graphics.ArcTo {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.ArcTo {
     def this(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double) = this()
+    
+    /* CompleteClass */
+    var radius: Double = js.native
+    
+    // properties
+    /* CompleteClass */
+    var x1: Double = js.native
+    
+    /* CompleteClass */
+    var x2: Double = js.native
+    
+    /* CompleteClass */
+    var y1: Double = js.native
+    
+    /* CompleteClass */
+    var y2: Double = js.native
   }
   
   // properties
@@ -40,31 +77,65 @@ object Graphics {
   @JSGlobal("createjs.Graphics.BeginPath")
   @js.native
   class BeginPath ()
-    extends typings.easeljs.createjs.Graphics.BeginPath
+    extends StObject
+       with typings.easeljs.createjs.Graphics.BeginPath
   
   @JSGlobal("createjs.Graphics.BezierCurveTo")
   @js.native
   class BezierCurveTo protected ()
-    extends typings.easeljs.createjs.Graphics.BezierCurveTo {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.BezierCurveTo {
     def this(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var cp1x: Double = js.native
+    
+    /* CompleteClass */
+    var cp1y: Double = js.native
+    
+    /* CompleteClass */
+    var cp2x: Double = js.native
+    
+    /* CompleteClass */
+    var cp2y: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.Circle")
   @js.native
   class Circle protected ()
-    extends typings.easeljs.createjs.Graphics.Circle {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.Circle {
     def this(x: Double, y: Double, radius: Double) = this()
+    
+    /* CompleteClass */
+    var radius: Double = js.native
+    
+    // properties
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.ClosePath")
   @js.native
   class ClosePath ()
-    extends typings.easeljs.createjs.Graphics.ClosePath
+    extends StObject
+       with typings.easeljs.createjs.Graphics.ClosePath
   
   @JSGlobal("createjs.Graphics.Fill")
   @js.native
   class Fill protected ()
-    extends typings.easeljs.createjs.Graphics.Fill {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.Fill {
     def this(style: js.Object) = this()
     def this(style: js.Object, matrix: typings.easeljs.createjs.Matrix2D) = this()
   }
@@ -72,42 +143,106 @@ object Graphics {
   @JSGlobal("createjs.Graphics.LineTo")
   @js.native
   class LineTo protected ()
-    extends typings.easeljs.createjs.Graphics.LineTo {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.LineTo {
     def this(x: Double, y: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.MoveTo")
   @js.native
   class MoveTo protected ()
-    extends typings.easeljs.createjs.Graphics.MoveTo {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.MoveTo {
     def this(x: Double, y: Double) = this()
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.PolyStar")
   @js.native
   class PolyStar protected ()
-    extends typings.easeljs.createjs.Graphics.PolyStar {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.PolyStar {
     def this(x: Double, y: Double, radius: Double, sides: Double, pointSize: Double, angle: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var angle: Double = js.native
+    
+    /* CompleteClass */
+    var pointSize: Double = js.native
+    
+    /* CompleteClass */
+    var radius: Double = js.native
+    
+    /* CompleteClass */
+    var sides: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.QuadraticCurveTo")
   @js.native
   class QuadraticCurveTo protected ()
-    extends typings.easeljs.createjs.Graphics.QuadraticCurveTo {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.QuadraticCurveTo {
     def this(cpx: Double, cpy: Double, x: Double, y: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var cpx: Double = js.native
+    
+    /* CompleteClass */
+    var cpy: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.Rect")
   @js.native
   class Rect protected ()
-    extends typings.easeljs.createjs.Graphics.Rect {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.Rect {
     def this(x: Double, y: Double, w: Double, h: Double) = this()
+    
+    /* CompleteClass */
+    var h: Double = js.native
+    
+    /* CompleteClass */
+    var w: Double = js.native
+    
+    // properties
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.RoundRect")
   @js.native
   class RoundRect protected ()
-    extends typings.easeljs.createjs.Graphics.RoundRect {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.RoundRect {
     def this(
       x: Double,
       y: Double,
@@ -118,6 +253,31 @@ object Graphics {
       radiusBR: Double,
       radiusBL: Double
     ) = this()
+    
+    /* CompleteClass */
+    var h: Double = js.native
+    
+    /* CompleteClass */
+    var radiusBL: Double = js.native
+    
+    /* CompleteClass */
+    var radiusBR: Double = js.native
+    
+    /* CompleteClass */
+    var radiusTL: Double = js.native
+    
+    /* CompleteClass */
+    var radiusTR: Double = js.native
+    
+    /* CompleteClass */
+    var w: Double = js.native
+    
+    // properties
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   // array of graphics command objects (Graphics.Fill, etc)
@@ -136,15 +296,30 @@ object Graphics {
   @JSGlobal("createjs.Graphics.Stroke")
   @js.native
   class Stroke protected ()
-    extends typings.easeljs.createjs.Graphics.Stroke {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.Stroke {
     def this(style: js.Object, ignoreScale: Boolean) = this()
   }
   
   @JSGlobal("createjs.Graphics.StrokeStyle")
   @js.native
   class StrokeStyle protected ()
-    extends typings.easeljs.createjs.Graphics.StrokeStyle {
+    extends StObject
+       with typings.easeljs.createjs.Graphics.StrokeStyle {
     def this(width: Double, caps: String, joints: Double, miterLimit: Double) = this()
+    
+    // properties
+    /* CompleteClass */
+    var caps: String = js.native
+    
+    /* CompleteClass */
+    var joints: String = js.native
+    
+    /* CompleteClass */
+    var miterLimit: Double = js.native
+    
+    /* CompleteClass */
+    var width: Double = js.native
   }
   
   @JSGlobal("createjs.Graphics.beginCmd")
@@ -153,17 +328,13 @@ object Graphics {
   @scala.inline
   def beginCmd_=(x: typings.easeljs.createjs.Graphics.BeginPath): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beginCmd")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("createjs.Graphics.getHSL")
-  @js.native
-  def getHSL(hue: Double, saturation: Double, lightness: Double): String = js.native
-  @JSGlobal("createjs.Graphics.getHSL")
-  @js.native
-  def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = js.native
+  @scala.inline
+  def getHSL(hue: Double, saturation: Double, lightness: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getHSL(hue: Double, saturation: Double, lightness: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getHSL")(hue.asInstanceOf[js.Any], saturation.asInstanceOf[js.Any], lightness.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSGlobal("createjs.Graphics.getRGB")
-  @js.native
-  def getRGB(r: Double, g: Double, b: Double): String = js.native
-  @JSGlobal("createjs.Graphics.getRGB")
-  @js.native
-  def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = js.native
+  @scala.inline
+  def getRGB(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getRGB(r: Double, g: Double, b: Double, alpha: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRGB")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[String]
 }

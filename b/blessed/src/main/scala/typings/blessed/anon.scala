@@ -2,17 +2,15 @@ package typings.blessed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bg extends StObject {
     
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
   }
   object Bg {
     
@@ -39,22 +37,21 @@ object anon {
     }
   }
   
-  @js.native
   trait BoolCount extends StObject {
     
-    var boolCount: Double = js.native
+    var boolCount: Double
     
-    var dataSize: Double = js.native
+    var dataSize: Double
     
-    var headerSize: Double = js.native
+    var headerSize: Double
     
-    var lastStrTableOffset: Double = js.native
+    var lastStrTableOffset: Double
     
-    var numCount: Double = js.native
+    var numCount: Double
     
-    var strCount: Double = js.native
+    var strCount: Double
     
-    var strTableSize: Double = js.native
+    var strTableSize: Double
   }
   object BoolCount {
     
@@ -98,22 +95,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Bools extends StObject {
     
-    var bools: js.Any = js.native
+    var bools: js.Any
     
-    var desc: String = js.native
+    var desc: String
     
-    var header: DataSize = js.native
+    var header: DataSize
     
-    var name: String = js.native
+    var name: String
     
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
-    var numbers: js.Any = js.native
+    var numbers: js.Any
     
-    var strings: js.Any = js.native
+    var strings: js.Any
   }
   object Bools {
     
@@ -160,14 +156,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ch extends StObject {
     
-    var ch: js.UndefOr[String] = js.native
+    var ch: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var track: js.UndefOr[js.Any] = js.native
+    var track: js.UndefOr[js.Any] = js.undefined
   }
   object Ch {
     
@@ -200,26 +195,25 @@ object anon {
     }
   }
   
-  @js.native
   trait DataSize extends StObject {
     
-    var boolCount: Double = js.native
+    var boolCount: Double
     
-    var dataSize: Double = js.native
+    var dataSize: Double
     
-    var extended: BoolCount = js.native
+    var extended: BoolCount
     
-    var headerSize: Double = js.native
+    var headerSize: Double
     
-    var magicNumber: Boolean = js.native
+    var magicNumber: Boolean
     
-    var namesSize: Double = js.native
+    var namesSize: Double
     
-    var numCount: Double = js.native
+    var numCount: Double
     
-    var strCount: Double = js.native
+    var strCount: Double
     
-    var strTableSize: Double = js.native
+    var strTableSize: Double
   }
   object DataSize {
     
@@ -271,12 +265,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

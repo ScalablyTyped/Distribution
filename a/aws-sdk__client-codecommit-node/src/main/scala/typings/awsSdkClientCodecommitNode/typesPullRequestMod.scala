@@ -8,58 +8,56 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestMod {
   
-  @js.native
   trait PullRequest extends StObject {
     
     /**
       * <p>The Amazon Resource Name (ARN) of the user who created the pull request.</p>
       */
-    var authorArn: js.UndefOr[String] = js.native
+    var authorArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>A unique, client-generated idempotency token that when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request will return information about the initial request that used that token.</p>
       */
-    var clientRequestToken: js.UndefOr[String] = js.native
+    var clientRequestToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The date and time the pull request was originally created, in timestamp format.</p>
       */
-    var creationDate: js.UndefOr[Date | String | Double] = js.native
+    var creationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The user-defined description of the pull request. This description can be used to clarify what should be reviewed and other details of the request.</p>
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The day and time of the last user or system activity on the pull request, in timestamp format.</p>
       */
-    var lastActivityDate: js.UndefOr[Date | String | Double] = js.native
+    var lastActivityDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The system-generated ID of the pull request. </p>
       */
-    var pullRequestId: js.UndefOr[String] = js.native
+    var pullRequestId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The status of the pull request. Pull request status can only change from <code>OPEN</code> to <code>CLOSED</code>.</p>
       */
-    var pullRequestStatus: js.UndefOr[OPEN | CLOSED | String] = js.native
+    var pullRequestStatus: js.UndefOr[OPEN | CLOSED | String] = js.undefined
     
     /**
       * <p>The targets of the pull request, including the source branch and destination branch for the pull request.</p>
       */
-    var pullRequestTargets: js.UndefOr[js.Array[PullRequestTarget] | Iterable[PullRequestTarget]] = js.native
+    var pullRequestTargets: js.UndefOr[js.Array[PullRequestTarget] | Iterable[PullRequestTarget]] = js.undefined
     
     /**
       * <p>The user-defined title of the pull request. This title is displayed in the list of pull requests to other users of the repository.</p>
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object PullRequest {
     
@@ -131,26 +129,27 @@ object typesPullRequestMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledPullRequest extends PullRequest {
+  trait UnmarshalledPullRequest
+    extends StObject
+       with PullRequest {
     
     /**
       * <p>The date and time the pull request was originally created, in timestamp format.</p>
       */
     @JSName("creationDate")
-    var creationDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.native
+    var creationDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The day and time of the last user or system activity on the pull request, in timestamp format.</p>
       */
     @JSName("lastActivityDate")
-    var lastActivityDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.native
+    var lastActivityDate_UnmarshalledPullRequest: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The targets of the pull request, including the source branch and destination branch for the pull request.</p>
       */
     @JSName("pullRequestTargets")
-    var pullRequestTargets_UnmarshalledPullRequest: js.UndefOr[js.Array[UnmarshalledPullRequestTarget]] = js.native
+    var pullRequestTargets_UnmarshalledPullRequest: js.UndefOr[js.Array[UnmarshalledPullRequestTarget]] = js.undefined
   }
   object UnmarshalledPullRequest {
     

@@ -2,15 +2,16 @@ package typings.antvUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uniqueIdMod {
   
-  @JSImport("@antv/util/lib/unique-id", JSImport.Default)
+  @JSImport("@antv/util/lib/unique-id", JSImport.Namespace)
   @js.native
-  def default(): String = js.native
-  @JSImport("@antv/util/lib/unique-id", JSImport.Default)
-  @js.native
-  def default(prefix: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  @scala.inline
+  def default(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
 }

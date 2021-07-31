@@ -11,58 +11,58 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RaisedButtonProps extends SharedEnhancedButtonProps[RaisedButton] {
+trait RaisedButtonProps
+  extends StObject
+     with SharedEnhancedButtonProps[RaisedButton] {
   
   // <EnhancedButton/> is the element that get the 'other' properties
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var buttonStyle: js.UndefOr[CSSProperties] = js.native
+  var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var disabledBackgroundColor: js.UndefOr[String] = js.native
+  var disabledBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var disabledLabelColor: js.UndefOr[String] = js.native
+  var disabledLabelColor: js.UndefOr[String] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[ReactNode] = js.native
+  var icon: js.UndefOr[ReactNode] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
-  var labelPosition: js.UndefOr[before | after] = js.native
+  var labelPosition: js.UndefOr[before | after] = js.undefined
   
-  var labelStyle: js.UndefOr[CSSProperties] = js.native
+  var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var linkButton: js.UndefOr[Boolean] = js.native
+  var linkButton: js.UndefOr[Boolean] = js.undefined
   
-  var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onMouseUp: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onMouseUp: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[TouchEventHandler[js.Object]] = js.native
+  var onTouchEnd: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
   
-  var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.native
+  var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
   
-  var overlayStyle: js.UndefOr[CSSProperties] = js.native
+  var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
-  var rippleStyle: js.UndefOr[CSSProperties] = js.native
+  var rippleStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var secondary: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.undefined
 }
 object RaisedButtonProps {
   

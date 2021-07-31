@@ -3,7 +3,6 @@ package typings.angularHttp
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlSearchParamsMod {
@@ -21,8 +20,8 @@ object urlSearchParamsMod {
   @js.native
   class URLSearchParams () extends StObject {
     def this(rawParams: String) = this()
-    def this(rawParams: js.UndefOr[scala.Nothing], queryEncoder: QueryEncoder) = this()
     def this(rawParams: String, queryEncoder: QueryEncoder) = this()
+    def this(rawParams: Unit, queryEncoder: QueryEncoder) = this()
     
     def append(param: String, `val`: String): Unit = js.native
     

@@ -6,17 +6,15 @@ import typings.twilioChat.twilioChatStrings.closed
 import typings.twilioChat.twilioChatStrings.inactive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Current extends StObject {
     
-    var current: active | inactive | closed = js.native
+    var current: active | inactive | closed
     
-    var dateUpdated: Date = js.native
+    var dateUpdated: Date
   }
   object Current {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
-    var identity: String = js.native
+    var identity: String
     
-    var user: String = js.native
+    var user: String
   }
   object Identity {
     

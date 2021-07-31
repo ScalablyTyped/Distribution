@@ -7,7 +7,6 @@ import typings.activexWord.activexWordNumbers.`-4130`
 import typings.activexWord.activexWordNumbers.`-4160`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRepositoryDescriptionInput extends StObject {
   
   /**
     * The new comment or description for the specified repository. Repository descriptions are limited to 1,000 characters.
     */
-  var repositoryDescription: js.UndefOr[RepositoryDescription] = js.native
+  var repositoryDescription: js.UndefOr[RepositoryDescription] = js.undefined
   
   /**
     * The name of the repository to set or change the comment or description for.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object UpdateRepositoryDescriptionInput {
   

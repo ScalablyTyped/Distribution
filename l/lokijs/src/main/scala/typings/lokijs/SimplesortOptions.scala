@@ -2,19 +2,17 @@ package typings.lokijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimplesortOptions extends StObject {
   
-  var desc: Boolean = js.native
+  var desc: Boolean
   
-  var disableIndexIntersect: Boolean = js.native
+  var disableIndexIntersect: Boolean
   
-  var forceIndexIntersect: Boolean = js.native
+  var forceIndexIntersect: Boolean
   
-  var useJavascriptSorting: Boolean = js.native
+  var useJavascriptSorting: Boolean
 }
 object SimplesortOptions {
   

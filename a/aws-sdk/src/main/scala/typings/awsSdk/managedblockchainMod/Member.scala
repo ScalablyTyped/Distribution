@@ -2,51 +2,49 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /**
     * The date and time that the member was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * An optional description for the member.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * Attributes relevant to a member for the blockchain framework that the Managed Blockchain network uses.
     */
-  var FrameworkAttributes: js.UndefOr[MemberFrameworkAttributes] = js.native
+  var FrameworkAttributes: js.UndefOr[MemberFrameworkAttributes] = js.undefined
   
   /**
     * The unique identifier of the member.
     */
-  var Id: js.UndefOr[ResourceIdString] = js.native
+  var Id: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * Configuration properties for logging events associated with a member.
     */
-  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.native
+  var LogPublishingConfiguration: js.UndefOr[MemberLogPublishingConfiguration] = js.undefined
   
   /**
     * The name of the member.
     */
-  var Name: js.UndefOr[NetworkMemberNameString] = js.native
+  var Name: js.UndefOr[NetworkMemberNameString] = js.undefined
   
   /**
     * The unique identifier of the network to which the member belongs.
     */
-  var NetworkId: js.UndefOr[ResourceIdString] = js.native
+  var NetworkId: js.UndefOr[ResourceIdString] = js.undefined
   
   /**
     * The status of a member.    CREATING - The AWS account is in the process of creating a member.    AVAILABLE - The member has been created and can participate in the network.    CREATE_FAILED - The AWS account attempted to create a member and creation failed.    DELETING - The member and all associated resources are in the process of being deleted. Either the AWS account that owns the member deleted it, or the member is being deleted as the result of an APPROVED PROPOSAL to remove the member.    DELETED - The member can no longer participate on the network and all associated resources are deleted. Either the AWS account that owns the member deleted it, or the member is being deleted as the result of an APPROVED PROPOSAL to remove the member.  
     */
-  var Status: js.UndefOr[MemberStatus] = js.native
+  var Status: js.UndefOr[MemberStatus] = js.undefined
 }
 object Member {
   

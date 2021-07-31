@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DownwardAPIVolumeFile represents information to create the file containing the pod field
   */
-@js.native
 trait DownwardAPIVolumeFile extends StObject {
   
   /**
     * Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.
     */
-  var fieldRef: js.UndefOr[Input[ObjectFieldSelector]] = js.native
+  var fieldRef: js.UndefOr[Input[ObjectFieldSelector]] = js.undefined
   
   /**
     * Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.
     */
-  var mode: js.UndefOr[Input[Double]] = js.native
+  var mode: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'
     */
-  var path: Input[String] = js.native
+  var path: Input[String]
   
   /**
     * Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
     */
-  var resourceFieldRef: js.UndefOr[Input[ResourceFieldSelector]] = js.native
+  var resourceFieldRef: js.UndefOr[Input[ResourceFieldSelector]] = js.undefined
 }
 object DownwardAPIVolumeFile {
   

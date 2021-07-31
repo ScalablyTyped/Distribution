@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.AdverseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeadersOptions extends StObject {
   
-  var body: AdverseEvent = js.native
+  var body: AdverseEvent
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent
 }
 object HeadersOptions {
   
   @scala.inline
-  def apply(body: AdverseEvent, resourceType: typings.fhirKitClient.fhirKitClientStrings.AdverseEvent): HeadersOptions = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: AdverseEvent): HeadersOptions = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "AdverseEvent")
     __obj.asInstanceOf[HeadersOptions]
   }
   

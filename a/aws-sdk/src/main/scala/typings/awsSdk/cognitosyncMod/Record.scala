@@ -2,41 +2,39 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Record extends StObject {
   
   /**
     * The last modified date of the client device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[Date] = js.native
+  var DeviceLastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The key for the record.
     */
-  var Key: js.UndefOr[RecordKey] = js.native
+  var Key: js.UndefOr[RecordKey] = js.undefined
   
   /**
     * The user/device that made the last change to this record.
     */
-  var LastModifiedBy: js.UndefOr[String] = js.native
+  var LastModifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date on which the record was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The server sync count for this record.
     */
-  var SyncCount: js.UndefOr[Long] = js.native
+  var SyncCount: js.UndefOr[Long] = js.undefined
   
   /**
     * The value for the record.
     */
-  var Value: js.UndefOr[RecordValue] = js.native
+  var Value: js.UndefOr[RecordValue] = js.undefined
 }
 object Record {
   

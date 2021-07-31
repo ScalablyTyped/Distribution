@@ -5,35 +5,30 @@ import typings.stormReactDiagrams.anon.X
 import typings.stormReactDiagrams.mod.DiagramEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathFindingMod {
   
   @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", JSImport.Default)
   @js.native
-  class default protected () extends PathFinding {
+  class default protected ()
+    extends StObject
+       with PathFinding {
     def this(diagramEngine: DiagramEngine) = this()
-  }
-  
-  @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", "ROUTING_SCALING_FACTOR")
-  @js.native
-  val ROUTING_SCALING_FACTOR: /* 5 */ Double = js.native
-  
-  @js.native
-  trait PathFinding extends StObject {
     
     /**
       * Taking as argument a fully unblocked walking matrix, this method
       * finds a direct path from point A to B.
       */
-    def calculateDirectPath(from: X, to: X): js.Array[js.Array[Double]] = js.native
+    /* CompleteClass */
+    override def calculateDirectPath(from: X, to: X): js.Array[js.Array[Double]] = js.native
     
     /**
       * Puts everything together: merges the paths from/to the centre of the ports,
       * with the path calculated around other elements.
       */
-    def calculateDynamicPath(
+    /* CompleteClass */
+    override def calculateDynamicPath(
       routingMatrix: js.Array[js.Array[Double]],
       start: X,
       end: X,
@@ -46,11 +41,50 @@ object pathFindingMod {
       * determine the first walkable point found in the matrix that includes
       * blocked paths.
       */
-    def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): End = js.native
+    /* CompleteClass */
+    override def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): End = js.native
     
+    /* CompleteClass */
     var diagramEngine: DiagramEngine = js.native
     
+    /* CompleteClass */
     var instance: js.Any = js.native
+  }
+  
+  @JSImport("storm-react-diagrams/dist/src/routing/PathFinding", "ROUTING_SCALING_FACTOR")
+  @js.native
+  val ROUTING_SCALING_FACTOR: /* 5 */ Double = js.native
+  
+  trait PathFinding extends StObject {
+    
+    /**
+      * Taking as argument a fully unblocked walking matrix, this method
+      * finds a direct path from point A to B.
+      */
+    def calculateDirectPath(from: X, to: X): js.Array[js.Array[Double]]
+    
+    /**
+      * Puts everything together: merges the paths from/to the centre of the ports,
+      * with the path calculated around other elements.
+      */
+    def calculateDynamicPath(
+      routingMatrix: js.Array[js.Array[Double]],
+      start: X,
+      end: X,
+      pathToStart: js.Array[js.Array[Double]],
+      pathToEnd: js.Array[js.Array[Double]]
+    ): js.Any
+    
+    /**
+      * Using @link{#calculateDirectPath}'s result as input, we here
+      * determine the first walkable point found in the matrix that includes
+      * blocked paths.
+      */
+    def calculateLinkStartEndCoords(matrix: js.Array[js.Array[Double]], path: js.Array[js.Array[Double]]): End
+    
+    var diagramEngine: DiagramEngine
+    
+    var instance: js.Any
   }
   object PathFinding {
     

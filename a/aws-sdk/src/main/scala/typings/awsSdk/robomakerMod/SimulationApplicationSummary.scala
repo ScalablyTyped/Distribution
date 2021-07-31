@@ -2,41 +2,39 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimulationApplicationSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the simulation application.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the simulation application was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.native
+  var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
   
   /**
     * The name of the simulation application.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * Information about a robot software suite (ROS distribution).
     */
-  var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.native
+  var robotSoftwareSuite: js.UndefOr[RobotSoftwareSuite] = js.undefined
   
   /**
     * Information about a simulation software suite.
     */
-  var simulationSoftwareSuite: js.UndefOr[SimulationSoftwareSuite] = js.native
+  var simulationSoftwareSuite: js.UndefOr[SimulationSoftwareSuite] = js.undefined
   
   /**
     * The version of the simulation application.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object SimulationApplicationSummary {
   

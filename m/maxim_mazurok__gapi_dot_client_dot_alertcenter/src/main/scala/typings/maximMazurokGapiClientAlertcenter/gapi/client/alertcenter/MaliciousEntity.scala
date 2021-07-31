@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaliciousEntity extends StObject {
   
   /** The header from display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The actor who triggered a gmail phishing alert. */
-  var entity: js.UndefOr[User] = js.native
+  var entity: js.UndefOr[User] = js.undefined
   
   /** The sender email address. */
-  var fromHeader: js.UndefOr[String] = js.native
+  var fromHeader: js.UndefOr[String] = js.undefined
 }
 object MaliciousEntity {
   

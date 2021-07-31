@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * on the class context. The main advantage of this is that atoms in one class may be kept to small numbers, so that bandwidth can be reduced by sending
   * the atoms only as 16 bit values. Note that it is up to the user in this case to handle overflows.
   */
-@js.native
-trait XAtomServer extends XInterface {
+trait XAtomServer
+  extends StObject
+     with XInterface {
   
   /**
     * registers or searches for a string
@@ -30,28 +30,28 @@ trait XAtomServer extends XInterface {
     * @param create if true a new atom will be created for an unknown string else the invalid atom (0) will be returned for an unknown string
     * @returns the atom for the string `description`
     */
-  def getAtom(atomClass: Double, description: String, create: Boolean): Double = js.native
+  def getAtom(atomClass: Double, description: String, create: Boolean): Double
   
   /**
     * returns the strings for an arbitrary amount of atoms of multiple classes
     * @param atoms describes which strings to return
     * @returns the strings for the requested atoms
     */
-  def getAtomDescriptions(atoms: SeqEquiv[AtomClassRequest]): SafeArray[String] = js.native
+  def getAtomDescriptions(atoms: SeqEquiv[AtomClassRequest]): SafeArray[String]
   
   /**
     * returns a whole atom class
     * @param atomClass which class to return
     * @returns the descriptions for all atoms of class `atomClass`
     */
-  def getClass(atomClass: Double): SafeArray[AtomDescription] = js.native
+  def getClass(atomClass: Double): SafeArray[AtomDescription]
   
   /**
     * returns multiple atom classes
     * @param atomClasses which classes to return
     * @returns the descriptions for all atoms of the requested classes
     */
-  def getClasses(atomClasses: SeqEquiv[Double]): SafeArray[SafeArray[AtomDescription]] = js.native
+  def getClasses(atomClasses: SeqEquiv[Double]): SafeArray[SafeArray[AtomDescription]]
   
   /**
     * returns the atoms that have been registered to a class after an already known atom
@@ -61,7 +61,7 @@ trait XAtomServer extends XInterface {
     * @param atom the last known atom
     * @returns all atom description that have been added to class `atomClass` after `atom`
     */
-  def getRecentAtoms(atomClass: Double, atom: Double): SafeArray[AtomDescription] = js.native
+  def getRecentAtoms(atomClass: Double, atom: Double): SafeArray[AtomDescription]
 }
 object XAtomServer {
   

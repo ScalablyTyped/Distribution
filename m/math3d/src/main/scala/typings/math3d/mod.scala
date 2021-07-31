@@ -6,7 +6,6 @@ import typings.math3d.anon.X
 import typings.math3d.mod.Transform.Space
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -81,45 +80,34 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("math3d", "Matrix4x4.FlipMatrix")
-    @js.native
-    def FlipMatrix(flipX: Boolean, flipY: Boolean, flipZ: Boolean): Matrix4x4 = js.native
+    @scala.inline
+    def FlipMatrix(flipX: Boolean, flipY: Boolean, flipZ: Boolean): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("FlipMatrix")(flipX.asInstanceOf[js.Any], flipY.asInstanceOf[js.Any], flipZ.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.LocalToWorldMatrix")
-    @js.native
-    def LocalToWorldMatrix(position: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = js.native
-    @JSImport("math3d", "Matrix4x4.LocalToWorldMatrix")
-    @js.native
-    def LocalToWorldMatrix(position: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = js.native
+    @scala.inline
+    def LocalToWorldMatrix(position: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("LocalToWorldMatrix")(position.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
+    @scala.inline
+    def LocalToWorldMatrix(position: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("LocalToWorldMatrix")(position.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.RotationMatrix")
-    @js.native
-    def RotationMatrix(quaternion: Quaternion): Matrix4x4 = js.native
+    @scala.inline
+    def RotationMatrix(quaternion: Quaternion): Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("RotationMatrix")(quaternion.asInstanceOf[js.Any]).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.ScaleMatrix")
-    @js.native
-    def ScaleMatrix(scale: Double): Matrix4x4 = js.native
-    @JSImport("math3d", "Matrix4x4.ScaleMatrix")
-    @js.native
-    def ScaleMatrix(scale: Vector3): Matrix4x4 = js.native
+    @scala.inline
+    def ScaleMatrix(scale: Double): Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleMatrix")(scale.asInstanceOf[js.Any]).asInstanceOf[Matrix4x4]
+    @scala.inline
+    def ScaleMatrix(scale: Vector3): Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("ScaleMatrix")(scale.asInstanceOf[js.Any]).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.TRS")
-    @js.native
-    def TRS(translation: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = js.native
-    @JSImport("math3d", "Matrix4x4.TRS")
-    @js.native
-    def TRS(translation: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = js.native
+    @scala.inline
+    def TRS(translation: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("TRS")(translation.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
+    @scala.inline
+    def TRS(translation: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("TRS")(translation.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.TranslationMatrix")
-    @js.native
-    def TranslationMatrix(translation: Vector3): Matrix4x4 = js.native
+    @scala.inline
+    def TranslationMatrix(translation: Vector3): Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("TranslationMatrix")(translation.asInstanceOf[js.Any]).asInstanceOf[Matrix4x4]
     
-    @JSImport("math3d", "Matrix4x4.WorldToLocalMatrix")
-    @js.native
-    def WorldToLocalMatrix(position: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = js.native
-    @JSImport("math3d", "Matrix4x4.WorldToLocalMatrix")
-    @js.native
-    def WorldToLocalMatrix(position: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = js.native
+    @scala.inline
+    def WorldToLocalMatrix(position: Vector3, rotation: Quaternion, scale: Double): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("WorldToLocalMatrix")(position.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
+    @scala.inline
+    def WorldToLocalMatrix(position: Vector3, rotation: Quaternion, scale: Vector3): Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("WorldToLocalMatrix")(position.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Matrix4x4]
     
     @JSImport("math3d", "Matrix4x4.identity")
     @js.native
@@ -138,25 +126,20 @@ object mod {
   @js.native
   class Quaternion () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: Unit, w: Double) = this()
+    def this(x: Double, y: Unit, z: Double, w: Double) = this()
+    def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Double, z: Double, w: Double) = this()
+    def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
     
     var angleAxis: Angle = js.native
     
@@ -193,34 +176,25 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("math3d", "Quaternion.AngleAxis")
-    @js.native
-    def AngleAxis(axis: Vector3, angle: Double): Quaternion = js.native
+    @scala.inline
+    def AngleAxis(axis: Vector3, angle: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("AngleAxis")(axis.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
     
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: js.UndefOr[scala.Nothing], y: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: Double, y: Double): Quaternion = js.native
-    @JSImport("math3d", "Quaternion.Euler")
-    @js.native
-    def Euler(x: Double, y: Double, z: Double): Quaternion = js.native
+    @scala.inline
+    def Euler(): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("Euler")().asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Double): Quaternion = ^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any]).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Double, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Double, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Double, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Unit, y: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Unit, y: Double, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+    @scala.inline
+    def Euler(x: Unit, y: Unit, z: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("Euler")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
     
     @JSImport("math3d", "Quaternion.identity")
     @js.native
@@ -239,7 +213,7 @@ object mod {
   @js.native
   class Transform () extends StObject {
     def this(position: Vector3) = this()
-    def this(position: js.UndefOr[scala.Nothing], rotation: Quaternion) = this()
+    def this(position: Unit, rotation: Quaternion) = this()
     def this(position: Vector3, rotation: Quaternion) = this()
     
     def addChild(child: Transform): Unit = js.native
@@ -289,15 +263,19 @@ object mod {
     object Space extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[Space with Double] = js.native
+      def apply(value: Double): js.UndefOr[Space & Double] = js.native
       
       @js.native
-      sealed trait Self extends Space
-      /* 0 */ val Self: typings.math3d.mod.Transform.Space.Self with Double = js.native
+      sealed trait Self
+        extends StObject
+           with Space
+      /* 0 */ val Self: typings.math3d.mod.Transform.Space.Self & Double = js.native
       
       @js.native
-      sealed trait World extends Space
-      /* 1 */ val World: typings.math3d.mod.Transform.Space.World with Double = js.native
+      sealed trait World
+        extends StObject
+           with Space
+      /* 1 */ val World: typings.math3d.mod.Transform.Space.World & Double = js.native
     }
   }
   
@@ -305,12 +283,12 @@ object mod {
   @js.native
   class Vector3 () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     
     def add(vector3: Vector3): Vector3 = js.native
     
@@ -355,9 +333,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("math3d", "Vector3.FromVector4")
-    @js.native
-    def FromVector4(vector4: Vector4): Vector3 = js.native
+    @scala.inline
+    def FromVector4(vector4: Vector4): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromVector4")(vector4.asInstanceOf[js.Any]).asInstanceOf[Vector3]
     
     @JSImport("math3d", "Vector3.back")
     @js.native
@@ -418,25 +395,20 @@ object mod {
   @js.native
   class Vector4 () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      z: js.UndefOr[scala.Nothing],
-      w: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double, w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double) = this()
-    def this(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     def this(x: Double, y: Double, z: Double, w: Double) = this()
+    def this(x: Double, y: Double, z: Unit, w: Double) = this()
+    def this(x: Double, y: Unit, z: Double, w: Double) = this()
+    def this(x: Double, y: Unit, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Double, z: Double, w: Double) = this()
+    def this(x: Unit, y: Double, z: Unit, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Double, w: Double) = this()
+    def this(x: Unit, y: Unit, z: Unit, w: Double) = this()
     
     def add(vector4: Vector4): Vector4 = js.native
     

@@ -2,13 +2,11 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsNeedRender extends StObject {
   
-  var isNeedRender: Boolean = js.native
+  var isNeedRender: Boolean
 }
 object IsNeedRender {
   

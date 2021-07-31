@@ -4,25 +4,23 @@ import typings.sentryTypes.mechanismMod.Mechanism
 import typings.sentryTypes.stacktraceMod.Stacktrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceptionMod {
   
-  @js.native
   trait Exception extends StObject {
     
-    var mechanism: js.UndefOr[Mechanism] = js.native
+    var mechanism: js.UndefOr[Mechanism] = js.undefined
     
-    var module: js.UndefOr[String] = js.native
+    var module: js.UndefOr[String] = js.undefined
     
-    var stacktrace: js.UndefOr[Stacktrace] = js.native
+    var stacktrace: js.UndefOr[Stacktrace] = js.undefined
     
-    var thread_id: js.UndefOr[Double] = js.native
+    var thread_id: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Exception {
     

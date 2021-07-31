@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * dictionaries.
   * @see com.sun.star.linguistic2.XSpellAlternatives
   */
-@js.native
-trait XSetSpellAlternatives extends XInterface {
+trait XSetSpellAlternatives
+  extends StObject
+     with XInterface {
   
   /**
     * set the list of suggestions to be returned.
     * @since OOo 3.0.1
     */
-  def setAlternatives(aAlternatives: SeqEquiv[String]): Unit = js.native
+  def setAlternatives(aAlternatives: SeqEquiv[String]): Unit
   
   /**
     * set the type of error found.
     * @see com.sun.star.linguistic2.SpellFailure
     * @since OOo 3.0.1
     */
-  def setFailureType(nFailureType: Double): Unit = js.native
+  def setFailureType(nFailureType: Double): Unit
 }
 object XSetSpellAlternatives {
   

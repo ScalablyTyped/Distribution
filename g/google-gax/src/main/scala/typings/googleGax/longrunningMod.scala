@@ -13,10 +13,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object longrunningMod {
+  
+  @JSImport("google-gax/build/src/longRunningCalls/longrunning", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("google-gax/build/src/longRunningCalls/longrunning", "Operation")
   @js.native
@@ -116,7 +119,7 @@ object longrunningMod {
       * @return {promise} - Promise that resolves on operation completion and rejects
       * on operation error.
       */
-    def promise(): js.Promise[_] = js.native
+    def promise(): js.Promise[js.Any] = js.native
     
     var response: js.UndefOr[js.Object] = js.native
     
@@ -134,17 +137,15 @@ object longrunningMod {
     def startPolling_(): Unit = js.native
   }
   
-  @JSImport("google-gax/build/src/longRunningCalls/longrunning", "operation")
-  @js.native
-  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): Operation_ = js.native
-  @JSImport("google-gax/build/src/longRunningCalls/longrunning", "operation")
-  @js.native
+  @scala.inline
+  def operation(op: LROOperation, longrunningDescriptor: LongRunningDescriptor, backoffSettings: BackoffSettings): Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any])).asInstanceOf[Operation_]
+  @scala.inline
   def operation(
     op: LROOperation,
     longrunningDescriptor: LongRunningDescriptor,
     backoffSettings: BackoffSettings,
     callOptions: CallOptions
-  ): Operation_ = js.native
+  ): Operation_ = (^.asInstanceOf[js.Dynamic].applyDynamic("operation")(op.asInstanceOf[js.Any], longrunningDescriptor.asInstanceOf[js.Any], backoffSettings.asInstanceOf[js.Any], callOptions.asInstanceOf[js.Any])).asInstanceOf[Operation_]
   
   type GetOperationCallback = js.Function4[
     /* err */ js.UndefOr[Error | Null], 

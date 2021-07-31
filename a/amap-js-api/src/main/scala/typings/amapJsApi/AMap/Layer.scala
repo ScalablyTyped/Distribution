@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Layer extends EventEmitter {
+trait Layer
+  extends StObject
+     with EventEmitter {
   
   /**
     * 图层获取DOM节点
@@ -65,13 +66,12 @@ trait Layer extends EventEmitter {
 }
 object Layer {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 所属的地图对象
       */
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
   }
   object Options {
     

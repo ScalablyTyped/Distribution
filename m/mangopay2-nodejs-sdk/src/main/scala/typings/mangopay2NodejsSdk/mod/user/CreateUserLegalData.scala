@@ -6,40 +6,38 @@ import typings.mangopay2NodejsSdk.mod.address.AddressType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.BaseUserLegalData, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserLegalData | 'PersonType'> */
-@js.native
 trait CreateUserLegalData extends StObject {
   
-  var CompanyNumber: js.UndefOr[String] = js.native
+  var CompanyNumber: js.UndefOr[String] = js.undefined
   
-  var Email: String = js.native
+  var Email: String
   
-  var HeadquartersAddress: js.UndefOr[AddressType] = js.native
+  var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
   
-  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType = js.native
+  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType
   
-  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.native
+  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.undefined
   
-  var LegalRepresentativeBirthday: Timestamp = js.native
+  var LegalRepresentativeBirthday: Timestamp
   
-  var LegalRepresentativeCountryOfResidence: CountryISO = js.native
+  var LegalRepresentativeCountryOfResidence: CountryISO
   
-  var LegalRepresentativeEmail: js.UndefOr[String] = js.native
+  var LegalRepresentativeEmail: js.UndefOr[String] = js.undefined
   
-  var LegalRepresentativeFirstName: String = js.native
+  var LegalRepresentativeFirstName: String
   
-  var LegalRepresentativeLastName: String = js.native
+  var LegalRepresentativeLastName: String
   
-  var LegalRepresentativeNationality: CountryISO = js.native
+  var LegalRepresentativeNationality: CountryISO
   
-  var Name: String = js.native
+  var Name: String
   
-  var PersonType: LEGAL = js.native
+  var PersonType: LEGAL
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object CreateUserLegalData {
   
@@ -52,10 +50,9 @@ object CreateUserLegalData {
     LegalRepresentativeFirstName: String,
     LegalRepresentativeLastName: String,
     LegalRepresentativeNationality: CountryISO,
-    Name: String,
-    PersonType: LEGAL
+    Name: String
   ): CreateUserLegalData = {
-    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], LegalPersonType = LegalPersonType.asInstanceOf[js.Any], LegalRepresentativeBirthday = LegalRepresentativeBirthday.asInstanceOf[js.Any], LegalRepresentativeCountryOfResidence = LegalRepresentativeCountryOfResidence.asInstanceOf[js.Any], LegalRepresentativeFirstName = LegalRepresentativeFirstName.asInstanceOf[js.Any], LegalRepresentativeLastName = LegalRepresentativeLastName.asInstanceOf[js.Any], LegalRepresentativeNationality = LegalRepresentativeNationality.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PersonType = "LEGAL")
     __obj.asInstanceOf[CreateUserLegalData]
   }
   

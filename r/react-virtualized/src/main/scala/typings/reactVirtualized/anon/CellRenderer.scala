@@ -11,21 +11,19 @@ import typings.reactVirtualized.reactVirtualizedNumbers.`0`
 import typings.reactVirtualized.reactVirtualizedNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellRenderer extends StObject {
   
-  var cellDataGetter: TableCellDataGetter = js.native
+  var cellDataGetter: TableCellDataGetter
   
-  var cellRenderer: TableCellRenderer = js.native
+  var cellRenderer: TableCellRenderer
   
-  var flexGrow: `0` = js.native
+  var flexGrow: `0`
   
-  var flexShrink: `1` = js.native
+  var flexShrink: `1`
   
-  var headerRenderer: TableHeaderRenderer = js.native
+  var headerRenderer: TableHeaderRenderer
 }
 object CellRenderer {
   
@@ -33,11 +31,9 @@ object CellRenderer {
   def apply(
     cellDataGetter: /* params */ TableCellDataGetterParams => js.Any,
     cellRenderer: /* props */ TableCellProps => ReactNode,
-    flexGrow: `0`,
-    flexShrink: `1`,
     headerRenderer: /* props */ TableHeaderProps => ReactNode
   ): CellRenderer = {
-    val __obj = js.Dynamic.literal(cellDataGetter = js.Any.fromFunction1(cellDataGetter), cellRenderer = js.Any.fromFunction1(cellRenderer), flexGrow = flexGrow.asInstanceOf[js.Any], flexShrink = flexShrink.asInstanceOf[js.Any], headerRenderer = js.Any.fromFunction1(headerRenderer))
+    val __obj = js.Dynamic.literal(cellDataGetter = js.Any.fromFunction1(cellDataGetter), cellRenderer = js.Any.fromFunction1(cellRenderer), flexGrow = 0, flexShrink = 1, headerRenderer = js.Any.fromFunction1(headerRenderer))
     __obj.asInstanceOf[CellRenderer]
   }
   

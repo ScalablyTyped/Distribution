@@ -12,7 +12,6 @@ import typings.node.tlsMod.TLSSocket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -179,7 +178,7 @@ trait Http2SecureServer extends Server {
   def prependOnceListener_unknownProtocol(event: unknownProtocol, listener: js.Function1[/* socket */ TLSSocket, Unit]): this.type = js.native
   
   def setTimeout(): this.type = js.native
-  def setTimeout(msec: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def setTimeout(msec: Double): this.type = js.native
   def setTimeout(msec: Double, callback: js.Function0[Unit]): this.type = js.native
+  def setTimeout(msec: Unit, callback: js.Function0[Unit]): this.type = js.native
 }

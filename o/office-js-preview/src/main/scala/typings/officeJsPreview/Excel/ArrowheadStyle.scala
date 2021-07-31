@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,20 +14,32 @@ sealed trait ArrowheadStyle extends StObject
 object ArrowheadStyle extends StObject {
   
   @js.native
-  sealed trait diamond extends ArrowheadStyle
+  sealed trait diamond
+    extends StObject
+       with ArrowheadStyle
   
   @js.native
-  sealed trait none extends ArrowheadStyle
+  sealed trait none
+    extends StObject
+       with ArrowheadStyle
   
   @js.native
-  sealed trait open extends ArrowheadStyle
+  sealed trait open
+    extends StObject
+       with ArrowheadStyle
   
   @js.native
-  sealed trait oval extends ArrowheadStyle
+  sealed trait oval
+    extends StObject
+       with ArrowheadStyle
   
   @js.native
-  sealed trait stealth extends ArrowheadStyle
+  sealed trait stealth
+    extends StObject
+       with ArrowheadStyle
   
   @js.native
-  sealed trait triangle extends ArrowheadStyle
+  sealed trait triangle
+    extends StObject
+       with ArrowheadStyle
 }

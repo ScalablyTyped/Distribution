@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait BitmapFont extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait BitmapFont extends StObject {
     * @member {object} PIXI.BitmapFont#chars
     * @readonly
     */
-  val chars: js.Any = js.native
+  val chars: js.Any
   
   /**
     * Remove references to created glyph textures.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * The name of the font face.
@@ -34,7 +32,7 @@ trait BitmapFont extends StObject {
     * @member {string} PIXI.BitmapFont#font
     * @readonly
     */
-  val font: String = js.native
+  val font: String
   
   /**
     * The line-height of the font face in pixels.
@@ -42,7 +40,7 @@ trait BitmapFont extends StObject {
     * @member {number} PIXI.BitmapFont#lineHeight
     * @readonly
     */
-  val lineHeight: Double = js.native
+  val lineHeight: Double
   
   /**
     * The size of the font face in pixels.
@@ -50,7 +48,7 @@ trait BitmapFont extends StObject {
     * @member {number} PIXI.BitmapFont#size
     * @readonly
     */
-  val size: Double = js.native
+  val size: Double
 }
 object BitmapFont {
   

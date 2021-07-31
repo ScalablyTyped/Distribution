@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Experiments")
@@ -33,7 +32,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementExperimentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementExperimentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaExperiment] = js.native
   def get(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def get(params: ParamsResourceManagementExperimentsGet): GaxiosPromise[SchemaExperiment] = js.native
   def get(params: ParamsResourceManagementExperimentsGet, callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def get(
@@ -97,7 +96,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaExperiment] = js.native
   def insert(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def insert(params: ParamsResourceManagementExperimentsInsert): GaxiosPromise[SchemaExperiment] = js.native
   def insert(
     params: ParamsResourceManagementExperimentsInsert,
@@ -133,7 +132,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaExperiments] = js.native
   def list(callback: BodyResponseCallback[SchemaExperiments]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExperiments] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiments] = js.native
   def list(params: ParamsResourceManagementExperimentsList): GaxiosPromise[SchemaExperiments] = js.native
   def list(params: ParamsResourceManagementExperimentsList, callback: BodyResponseCallback[SchemaExperiments]): Unit = js.native
   def list(
@@ -167,7 +166,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaExperiment] = js.native
   def patch(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def patch(params: ParamsResourceManagementExperimentsPatch): GaxiosPromise[SchemaExperiment] = js.native
   def patch(params: ParamsResourceManagementExperimentsPatch, callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
   def patch(
@@ -200,7 +199,7 @@ class ResourceManagementExperiments protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaExperiment] = js.native
   def update(callback: BodyResponseCallback[SchemaExperiment]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaExperiment] = js.native
   def update(params: ParamsResourceManagementExperimentsUpdate): GaxiosPromise[SchemaExperiment] = js.native
   def update(
     params: ParamsResourceManagementExperimentsUpdate,

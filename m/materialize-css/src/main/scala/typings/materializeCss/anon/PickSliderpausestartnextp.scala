@@ -2,22 +2,20 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.Slider, 'pause' | 'start' | 'next' | 'prev' | 'destroy'> */
-@js.native
 trait PickSliderpausestartnextp extends StObject {
   
-  var destroy: js.UndefOr[js.Any] = js.native
+  var destroy: js.UndefOr[js.Any] = js.undefined
   
-  var next: js.UndefOr[js.Any] = js.native
+  var next: js.UndefOr[js.Any] = js.undefined
   
-  var pause: js.UndefOr[js.Any] = js.native
+  var pause: js.UndefOr[js.Any] = js.undefined
   
-  var prev: js.UndefOr[js.Any] = js.native
+  var prev: js.UndefOr[js.Any] = js.undefined
   
-  var start: js.UndefOr[js.Any] = js.native
+  var start: js.UndefOr[js.Any] = js.undefined
 }
 object PickSliderpausestartnextp {
   

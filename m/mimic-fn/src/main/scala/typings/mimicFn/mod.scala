@@ -2,7 +2,6 @@ package typings.mimicFn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,21 +30,22 @@ object mod {
   //=> '🦄'
   ```
   */
-  @JSImport("mimic-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = js.native
-  @JSImport("mimic-fn", JSImport.Namespace)
-  @js.native
-  def apply[ArgumentsType /* <: js.Array[_] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType, options: Options): FunctionType = js.native
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
+  @scala.inline
+  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType, options: Options): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
   
+  @JSImport("mimic-fn", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Skip modifying [non-configurable properties](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor#Description) instead of throwing an error.
     		@default false
     		*/
-    val ignoreNonConfigurable: js.UndefOr[Boolean] = js.native
+    val ignoreNonConfigurable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

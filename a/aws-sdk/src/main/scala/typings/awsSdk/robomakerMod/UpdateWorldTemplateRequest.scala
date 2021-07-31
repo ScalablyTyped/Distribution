@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWorldTemplateRequest extends StObject {
   
   /**
     * The name of the template.
     */
-  var name: js.UndefOr[TemplateName] = js.native
+  var name: js.UndefOr[TemplateName] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world template to update.
     */
-  var template: Arn = js.native
+  var template: Arn
   
   /**
     * The world template body.
     */
-  var templateBody: js.UndefOr[Json] = js.native
+  var templateBody: js.UndefOr[Json] = js.undefined
   
   /**
     * The location of the world template.
     */
-  var templateLocation: js.UndefOr[TemplateLocation] = js.native
+  var templateLocation: js.UndefOr[TemplateLocation] = js.undefined
 }
 object UpdateWorldTemplateRequest {
   

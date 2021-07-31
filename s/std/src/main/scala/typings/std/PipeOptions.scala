@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipeOptions extends StObject {
   
-  var preventAbort: js.UndefOr[scala.Boolean] = js.native
+  var preventAbort: js.UndefOr[scala.Boolean] = js.undefined
   
-  var preventCancel: js.UndefOr[scala.Boolean] = js.native
+  var preventCancel: js.UndefOr[scala.Boolean] = js.undefined
   
-  var preventClose: js.UndefOr[scala.Boolean] = js.native
+  var preventClose: js.UndefOr[scala.Boolean] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object PipeOptions {
   

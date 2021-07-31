@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUsableSubnetworksResponse extends StObject {
   
   /**
     * This token allows you to get the next page of results for list requests. If the number of results is larger than `page_size`, use the `next_page_token` as a value for the query
     * parameter `page_token` in the next request. The value will become empty when there are no more pages.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of usable subnetworks in the specified network project. */
-  var subnetworks: js.UndefOr[js.Array[UsableSubnetwork]] = js.native
+  var subnetworks: js.UndefOr[js.Array[UsableSubnetwork]] = js.undefined
 }
 object ListUsableSubnetworksResponse {
   

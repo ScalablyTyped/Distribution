@@ -3,16 +3,17 @@ package typings.nodePgMigrate
 import typings.nodePgMigrate.distTypesMod.MigrationBuilderActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlMigrationMod {
   
-  @JSImport("node-pg-migrate/dist/sqlMigration", JSImport.Default)
+  @JSImport("node-pg-migrate/dist/sqlMigration", JSImport.Namespace)
   @js.native
-  def default(sqlPath: String): js.Promise[MigrationBuilderActions] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/sqlMigration", "getActions")
-  @js.native
-  def getActions(content: String): MigrationBuilderActions = js.native
+  @scala.inline
+  def default(sqlPath: String): js.Promise[MigrationBuilderActions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(sqlPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MigrationBuilderActions]]
+  
+  @scala.inline
+  def getActions(content: String): MigrationBuilderActions = ^.asInstanceOf[js.Dynamic].applyDynamic("getActions")(content.asInstanceOf[js.Any]).asInstanceOf[MigrationBuilderActions]
 }

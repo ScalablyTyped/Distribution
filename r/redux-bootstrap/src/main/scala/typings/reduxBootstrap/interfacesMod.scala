@@ -13,41 +13,39 @@ import typings.redux.mod.StoreEnhancer
 import typings.reduxBootstrap.anon.Accept
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
   object interfaces {
     
-    @js.native
     trait BoostrapOptions extends StObject {
       
-      var container: js.UndefOr[String] = js.native
+      var container: js.UndefOr[String] = js.undefined
       
       var createHistory: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.CreateHistory<History.HistoryOptions, History.History> */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var devToolsOptions: js.UndefOr[DevToolsOptions] = js.native
+      var devToolsOptions: js.UndefOr[DevToolsOptions] = js.undefined
       
-      var enhancers: js.UndefOr[js.Array[StoreEnhancer[_, js.Object]]] = js.native
+      var enhancers: js.UndefOr[js.Array[StoreEnhancer[js.Any, js.Object]]] = js.undefined
       
       var historyOptions: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify History.HistoryOptions */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var initialState: js.UndefOr[js.Any] = js.native
+      var initialState: js.UndefOr[js.Any] = js.undefined
       
-      var middlewares: js.UndefOr[js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]]] = js.native
+      var middlewares: js.UndefOr[js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]] = js.undefined
       
-      var reducers: ReducersOption = js.native
+      var reducers: ReducersOption
       
-      var render: js.UndefOr[js.Function] = js.native
+      var render: js.UndefOr[js.Function] = js.undefined
       
-      var routerProps: js.UndefOr[RouterProps] = js.native
+      var routerProps: js.UndefOr[RouterProps] = js.undefined
       
-      var routes: Element = js.native
+      var routes: Element
     }
     object BoostrapOptions {
       
@@ -81,7 +79,7 @@ object interfacesMod {
         def setDevToolsOptionsUndefined: Self = StObject.set(x, "devToolsOptions", js.undefined)
         
         @scala.inline
-        def setEnhancers(value: js.Array[StoreEnhancer[_, js.Object]]): Self = StObject.set(x, "enhancers", value.asInstanceOf[js.Any])
+        def setEnhancers(value: js.Array[StoreEnhancer[js.Any, js.Object]]): Self = StObject.set(x, "enhancers", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setEnhancersUndefined: Self = StObject.set(x, "enhancers", js.undefined)
@@ -104,7 +102,7 @@ object interfacesMod {
         def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
         
         @scala.inline
-        def setMiddlewares(value: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+        def setMiddlewares(value: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
@@ -132,21 +130,20 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait BootstrapResult extends StObject {
       
-      var history: History[LocationState] = js.native
+      var history: History[LocationState]
       
-      var output: js.Any = js.native
+      var output: js.Any
       
-      var root: Element = js.native
+      var root: Element
       
-      var store: Store[_, AnyAction] = js.native
+      var store: Store[js.Any, AnyAction]
     }
     object BootstrapResult {
       
       @scala.inline
-      def apply(history: History[LocationState], output: js.Any, root: Element, store: Store[_, AnyAction]): BootstrapResult = {
+      def apply(history: History[LocationState], output: js.Any, root: Element, store: Store[js.Any, AnyAction]): BootstrapResult = {
         val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[BootstrapResult]
       }
@@ -164,7 +161,7 @@ object interfacesMod {
         def setRoot(value: Element): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setStore(value: Store[_, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        def setStore(value: Store[js.Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     
@@ -180,10 +177,10 @@ object interfacesMod {
       extends js.Function {
       
       def apply(
-        middlewares: js.Array[Middleware[js.Object, _, Dispatch[AnyAction]]],
+        middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]],
         rootReducer: js.Object,
         initialState: js.Any
-      ): Store[_, AnyAction] = js.native
+      ): Store[js.Any, AnyAction] = js.native
     }
     
     @js.native
@@ -193,38 +190,37 @@ object interfacesMod {
       def apply(options: DevToolsOptions): Compose = js.native
     }
     
-    @js.native
     trait DevToolsOptions extends StObject {
       
-      var actionBlacklist: js.UndefOr[String | js.Array[String]] = js.native
+      var actionBlacklist: js.UndefOr[String | js.Array[String]] = js.undefined
       
-      var actionCreators: js.UndefOr[js.Array[_] | js.Object] = js.native
+      var actionCreators: js.UndefOr[js.Array[js.Any] | js.Object] = js.undefined
       
-      var actionSanitizer: js.UndefOr[js.Function] = js.native
+      var actionSanitizer: js.UndefOr[js.Function] = js.undefined
       
-      var actionWhitelist: js.UndefOr[String | js.Array[String]] = js.native
+      var actionWhitelist: js.UndefOr[String | js.Array[String]] = js.undefined
       
-      var autoPause: js.UndefOr[Boolean] = js.native
+      var autoPause: js.UndefOr[Boolean] = js.undefined
       
-      var features: js.UndefOr[js.Object] = js.native
+      var features: js.UndefOr[js.Object] = js.undefined
       
-      var latency: js.UndefOr[Double] = js.native
+      var latency: js.UndefOr[Double] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var pauseActionType: js.UndefOr[String] = js.native
+      var pauseActionType: js.UndefOr[String] = js.undefined
       
-      var predicate: js.UndefOr[js.Function] = js.native
+      var predicate: js.UndefOr[js.Function] = js.undefined
       
-      var serialize: js.UndefOr[Boolean | js.Object] = js.native
+      var serialize: js.UndefOr[Boolean | js.Object] = js.undefined
       
-      var shouldHotReload: js.UndefOr[Boolean] = js.native
+      var shouldHotReload: js.UndefOr[Boolean] = js.undefined
       
-      var shouldRecordChanges: js.UndefOr[Boolean] = js.native
+      var shouldRecordChanges: js.UndefOr[Boolean] = js.undefined
       
-      var shouldStartLocked: js.UndefOr[Boolean] = js.native
+      var shouldStartLocked: js.UndefOr[Boolean] = js.undefined
       
-      var stateSanitizer: js.UndefOr[js.Function] = js.native
+      var stateSanitizer: js.UndefOr[js.Function] = js.undefined
     }
     object DevToolsOptions {
       
@@ -247,7 +243,7 @@ object interfacesMod {
         def setActionBlacklistVarargs(value: String*): Self = StObject.set(x, "actionBlacklist", js.Array(value :_*))
         
         @scala.inline
-        def setActionCreators(value: js.Array[_] | js.Object): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+        def setActionCreators(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
@@ -338,10 +334,9 @@ object interfacesMod {
       }
     }
     
-    @js.native
     trait NodeModule extends StObject {
       
-      var hot: Accept = js.native
+      var hot: Accept
     }
     object NodeModule {
       
@@ -361,19 +356,18 @@ object interfacesMod {
     
     type ReducersOption = StringDictionary[Reducer[js.Any, AnyAction]]
     
-    @js.native
     trait RootComponentProps extends StObject {
       
-      var history: History[LocationState] = js.native
+      var history: History[LocationState]
       
-      var routes: Element = js.native
+      var routes: Element
       
-      var store: Store[_, AnyAction] = js.native
+      var store: Store[js.Any, AnyAction]
     }
     object RootComponentProps {
       
       @scala.inline
-      def apply(history: History[LocationState], routes: Element, store: Store[_, AnyAction]): RootComponentProps = {
+      def apply(history: History[LocationState], routes: Element, store: Store[js.Any, AnyAction]): RootComponentProps = {
         val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
         __obj.asInstanceOf[RootComponentProps]
       }
@@ -388,16 +382,15 @@ object interfacesMod {
         def setRoutes(value: Element): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setStore(value: Store[_, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+        def setStore(value: Store[js.Any, AnyAction]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       }
     }
     
-    @js.native
     trait RouterProps extends StObject {
       
-      var onError: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.native
+      var onError: js.UndefOr[js.Function1[/* error */ js.Any, js.Any]] = js.undefined
       
-      var onUpdate: js.UndefOr[js.Function0[_]] = js.native
+      var onUpdate: js.UndefOr[js.Function0[js.Any]] = js.undefined
     }
     object RouterProps {
       
@@ -411,13 +404,13 @@ object interfacesMod {
       implicit class RouterPropsMutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setOnError(value: /* error */ js.Any => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+        def setOnError(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
         
         @scala.inline
         def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
         
         @scala.inline
-        def setOnUpdate(value: () => _): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
+        def setOnUpdate(value: () => js.Any): Self = StObject.set(x, "onUpdate", js.Any.fromFunction0(value))
         
         @scala.inline
         def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)

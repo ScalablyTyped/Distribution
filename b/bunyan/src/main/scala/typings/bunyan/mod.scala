@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,6 +15,9 @@ object mod {
   class ^ protected () extends Logger {
     def this(options: LoggerOptions) = this()
   }
+  @JSImport("bunyan", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bunyan", "DEBUG")
   @js.native
@@ -45,7 +47,7 @@ object mod {
     def end(): Unit = js.native
     def end(record: js.Any): Unit = js.native
     
-    var records: js.Array[_] = js.native
+    var records: js.Array[js.Any] = js.native
     
     var writable: Boolean = js.native
     
@@ -68,7 +70,7 @@ object mod {
     
     var periodScope: String = js.native
     
-    var rotQueue: js.Array[_] = js.native
+    var rotQueue: js.Array[js.Any] = js.native
     
     def rotate(): Unit = js.native
     
@@ -89,9 +91,8 @@ object mod {
   @js.native
   val WARN: Double = js.native
   
-  @JSImport("bunyan", "createLogger")
-  @js.native
-  def createLogger(options: LoggerOptions): Logger = js.native
+  @scala.inline
+  def createLogger(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   /* Inlined {[ name in bunyan.bunyan.LogLevelString ]: number} */
   object levelFromName {
@@ -137,13 +138,11 @@ object mod {
     def warn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("bunyan", "resolveLevel")
-  @js.native
-  def resolveLevel(value: LogLevel): Double = js.native
+  @scala.inline
+  def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("bunyan", "safeCycles")
-  @js.native
-  def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, _] = js.native
+  @scala.inline
+  def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
   
   @JSImport("bunyan", "stdSerializers")
   @js.native
@@ -363,21 +362,21 @@ object mod {
     def warn(obj: js.Object, params: js.Any*): Unit = js.native
   }
   
-  @js.native
   trait LoggerOptions
-    extends /* custom */ StringDictionary[js.Any] {
+    extends StObject
+       with /* custom */ StringDictionary[js.Any] {
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var serializers: js.UndefOr[Serializers] = js.native
+    var serializers: js.UndefOr[Serializers] = js.undefined
     
-    var src: js.UndefOr[Boolean] = js.native
+    var src: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream] = js.native
+    var stream: js.UndefOr[WritableStream] = js.undefined
     
-    var streams: js.UndefOr[js.Array[Stream]] = js.native
+    var streams: js.UndefOr[js.Array[Stream]] = js.undefined
   }
   object LoggerOptions {
     
@@ -428,10 +427,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RingBufferOptions extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object RingBufferOptions {
     
@@ -452,14 +450,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RotatingFileStreamOptions extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var period: js.UndefOr[String] = js.native
+    var period: js.UndefOr[String] = js.undefined
   }
   object RotatingFileStreamOptions {
     
@@ -493,42 +490,67 @@ object mod {
   
   type Serializers = StringDictionary[Serializer]
   
-  @js.native
-  trait StdSerializers_ extends Serializers {
+  trait StdSerializers_
+    extends StObject
+       with Serializers {
     
-    def err(input: js.Any): js.Any = js.native
+    def err(input: js.Any): js.Any
     @JSName("err")
-    var err_Original: Serializer = js.native
+    var err_Original: Serializer
     
-    def req(input: js.Any): js.Any = js.native
+    def req(input: js.Any): js.Any
     @JSName("req")
-    var req_Original: Serializer = js.native
+    var req_Original: Serializer
     
-    def res(input: js.Any): js.Any = js.native
+    def res(input: js.Any): js.Any
     @JSName("res")
-    var res_Original: Serializer = js.native
+    var res_Original: Serializer
+  }
+  object StdSerializers_ {
+    
+    @scala.inline
+    def apply(
+      err: /* input */ js.Any => js.Any,
+      req: /* input */ js.Any => js.Any,
+      res: /* input */ js.Any => js.Any
+    ): StdSerializers_ = {
+      val __obj = js.Dynamic.literal(err = js.Any.fromFunction1(err), req = js.Any.fromFunction1(req), res = js.Any.fromFunction1(res))
+      __obj.asInstanceOf[StdSerializers_]
+    }
+    
+    @scala.inline
+    implicit class StdSerializers_MutableBuilder[Self <: StdSerializers_] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setErr(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReq(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "req", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRes(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "res", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var closeOnExit: js.UndefOr[Boolean] = js.native
+    var closeOnExit: js.UndefOr[Boolean] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var period: js.UndefOr[String] = js.native
+    var period: js.UndefOr[String] = js.undefined
     
-    var reemitErrorEvents: js.UndefOr[Boolean] = js.native
+    var reemitErrorEvents: js.UndefOr[Boolean] = js.undefined
     
-    var stream: js.UndefOr[WritableStream | Stream] = js.native
+    var stream: js.UndefOr[WritableStream | Stream] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Stream {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetPermissionRequest extends StObject {
   
   /**
     * The user is allowed to use SSH to communicate with the instance.
     */
-  var AllowSsh: js.UndefOr[Boolean] = js.native
+  var AllowSsh: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user is allowed to use sudo to elevate privileges.
     */
-  var AllowSudo: js.UndefOr[Boolean] = js.native
+  var AllowSudo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user's IAM ARN. This can also be a federated user's ARN.
     */
-  var IamUserArn: String = js.native
+  var IamUserArn: String
   
   /**
     * The user's permission level, which must be set to one of the following strings. You cannot set your own permissions level.    deny     show     deploy     manage     iam_only    For more information about the permissions associated with these levels, see Managing User Permissions.
     */
-  var Level: js.UndefOr[String] = js.native
+  var Level: js.UndefOr[String] = js.undefined
   
   /**
     * The stack ID.
     */
-  var StackId: String = js.native
+  var StackId: String
 }
 object SetPermissionRequest {
   

@@ -4,7 +4,6 @@ import typings.std.AsyncIterable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,22 +17,20 @@ object mod {
     * @param {number|string} [size=1]
     * @returns {AsyncIterable<T[]>}
     */
+  @scala.inline
+  def apply[T](source: AsyncIterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
+  @scala.inline
+  def apply[T](source: AsyncIterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  @scala.inline
+  def apply[T](source: AsyncIterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  @scala.inline
+  def apply[T](source: Iterable[T]): AsyncIterable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.Array[T]]]
+  @scala.inline
+  def apply[T](source: Iterable[T], size: String): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  @scala.inline
+  def apply[T](source: Iterable[T], size: Double): AsyncIterable[js.Array[T]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.Array[T]]]
+  
   @JSImport("it-batch/dist", JSImport.Namespace)
   @js.native
-  def apply[T](source: AsyncIterable[T]): AsyncIterable[js.Array[T]] = js.native
-  @JSImport("it-batch/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](source: AsyncIterable[T], size: String): AsyncIterable[js.Array[T]] = js.native
-  @JSImport("it-batch/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](source: AsyncIterable[T], size: Double): AsyncIterable[js.Array[T]] = js.native
-  @JSImport("it-batch/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](source: Iterable[T]): AsyncIterable[js.Array[T]] = js.native
-  @JSImport("it-batch/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](source: Iterable[T], size: String): AsyncIterable[js.Array[T]] = js.native
-  @JSImport("it-batch/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](source: Iterable[T], size: Double): AsyncIterable[js.Array[T]] = js.native
+  val ^ : js.Any = js.native
 }

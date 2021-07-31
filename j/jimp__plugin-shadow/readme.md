@@ -10,9 +10,9 @@ Creates a shadow on an image.
 | ------------------ | :-------------: |
 | Full name          | @jimp/plugin-shadow |
 | Keywords           | - |
-| # releases         | 105 |
+| # releases         | 103 |
 | # dependents       | 1 |
-| # downloads        | 8863121 |
+| # downloads        | 21687624 |
 | # stars            | 0 |
 
 ## Links

@@ -19,7 +19,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.RoundDot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait ChartLineFormat extends ClientObject {
+trait ChartLineFormat
+  extends StObject
+     with ClientObject {
   
   /**
     * Clear the line format of a chart element.

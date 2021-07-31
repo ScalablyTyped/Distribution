@@ -2,49 +2,47 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a response to the queryCompatibleFields method.
   */
-@js.native
 trait SchemaCompatibleFields extends StObject {
   
   /**
     * Contains items that are compatible to be selected for a report of type
     * &quot;CROSS_DIMENSION_REACH&quot;.
     */
-  var crossDimensionReachReportCompatibleFields: js.UndefOr[SchemaCrossDimensionReachReportCompatibleFields] = js.native
+  var crossDimensionReachReportCompatibleFields: js.UndefOr[SchemaCrossDimensionReachReportCompatibleFields] = js.undefined
   
   /**
     * Contains items that are compatible to be selected for a report of type
     * &quot;FLOODLIGHT&quot;.
     */
-  var floodlightReportCompatibleFields: js.UndefOr[SchemaFloodlightReportCompatibleFields] = js.native
+  var floodlightReportCompatibleFields: js.UndefOr[SchemaFloodlightReportCompatibleFields] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#compatibleFields.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Contains items that are compatible to be selected for a report of type
     * &quot;PATH_TO_CONVERSION&quot;.
     */
-  var pathToConversionReportCompatibleFields: js.UndefOr[SchemaPathToConversionReportCompatibleFields] = js.native
+  var pathToConversionReportCompatibleFields: js.UndefOr[SchemaPathToConversionReportCompatibleFields] = js.undefined
   
   /**
     * Contains items that are compatible to be selected for a report of type
     * &quot;REACH&quot;.
     */
-  var reachReportCompatibleFields: js.UndefOr[SchemaReachReportCompatibleFields] = js.native
+  var reachReportCompatibleFields: js.UndefOr[SchemaReachReportCompatibleFields] = js.undefined
   
   /**
     * Contains items that are compatible to be selected for a report of type
     * &quot;STANDARD&quot;.
     */
-  var reportCompatibleFields: js.UndefOr[SchemaReportCompatibleFields] = js.native
+  var reportCompatibleFields: js.UndefOr[SchemaReportCompatibleFields] = js.undefined
 }
 object SchemaCompatibleFields {
   

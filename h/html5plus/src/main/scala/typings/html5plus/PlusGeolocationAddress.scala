@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
   */
-@js.native
 trait PlusGeolocationAddress extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * 城市代码
@@ -27,7 +25,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var cityCode: js.UndefOr[String] = js.native
+  var cityCode: js.UndefOr[String] = js.undefined
   
   /**
     * 国家
@@ -35,7 +33,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * 区（县）名称
@@ -43,7 +41,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var district: js.UndefOr[String] = js.native
+  var district: js.UndefOr[String] = js.undefined
   
   /**
     * POI信息
@@ -51,7 +49,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var poiName: js.UndefOr[String] = js.native
+  var poiName: js.UndefOr[String] = js.undefined
   
   /**
     * 邮政编码
@@ -59,7 +57,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * 省份名称
@@ -67,7 +65,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var province: js.UndefOr[String] = js.native
+  var province: js.UndefOr[String] = js.undefined
   
   /**
     * 街道信息
@@ -75,7 +73,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var street: js.UndefOr[String] = js.native
+  var street: js.UndefOr[String] = js.undefined
   
   /**
     * 获取街道门牌号信息
@@ -83,7 +81,7 @@ trait PlusGeolocationAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/geolocation.html](http://www.html5plus.org/doc/zh_cn/geolocation.html)
     */
-  var streetNum: js.UndefOr[String] = js.native
+  var streetNum: js.UndefOr[String] = js.undefined
 }
 object PlusGeolocationAddress {
   

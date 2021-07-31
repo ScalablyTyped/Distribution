@@ -2,82 +2,80 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DiskType resource. (== resource_for beta.diskTypes ==) (== resource_for
   * v1.diskTypes ==)
   */
-@js.native
 trait SchemaDiskType extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined default disk size in GB.
     */
-  var defaultDiskSizeGb: js.UndefOr[String] = js.native
+  var defaultDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The deprecation status associated with this disk type.
     */
-  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.native
+  var deprecated: js.UndefOr[SchemaDeprecationStatus] = js.undefined
   
   /**
     * [Output Only] An optional description of this resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#diskType for disk
     * types.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the disk type resides. Only
     * applicable for regional resources. You must specify this field as part of
     * the HTTP request URL. It is not settable as a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An optional textual description of the valid disk size,
     * such as &quot;10GB-10TB&quot;.
     */
-  var validDiskSize: js.UndefOr[String] = js.native
+  var validDiskSize: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the zone where the disk type resides. You must
     * specify this field as part of the HTTP request URL. It is not settable as
     * a field in the request body.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaDiskType {
   

@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
@@ -25,14 +24,13 @@ object progressBarMod {
     def this(props: ProgressBarProps, context: js.Any) = this()
   }
   
-  @js.native
   trait SIZE extends StObject {
     
-    var large: large_ = js.native
+    var large: large_
     
-    var medium: medium_ = js.native
+    var medium: medium_
     
-    var small: small_ = js.native
+    var small: small_
   }
   object SIZE {
     
@@ -74,28 +72,27 @@ object progressBarMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait ProgressBarOverrides extends StObject {
     
     var Bar: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var BarContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var BarProgress: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Label: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ProgressBarOverrides {
     
@@ -150,26 +147,25 @@ object progressBarMod {
     }
   }
   
-  @js.native
   trait ProgressBarProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var getProgressLabel: js.UndefOr[js.Function2[/* value */ Double, /* successValue */ Double, ReactNode]] = js.native
+    var getProgressLabel: js.UndefOr[js.Function2[/* value */ Double, /* successValue */ Double, ReactNode]] = js.undefined
     
-    var infinite: js.UndefOr[Boolean] = js.native
+    var infinite: js.UndefOr[Boolean] = js.undefined
     
-    var overrides: js.UndefOr[ProgressBarOverrides] = js.native
+    var overrides: js.UndefOr[ProgressBarOverrides] = js.undefined
     
-    var showLabel: js.UndefOr[Boolean] = js.native
+    var showLabel: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small_ | medium_ | large_] = js.native
+    var size: js.UndefOr[small_ | medium_ | large_] = js.undefined
     
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
-    var successValue: js.UndefOr[Double] = js.native
+    var successValue: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ProgressBarProps {
     

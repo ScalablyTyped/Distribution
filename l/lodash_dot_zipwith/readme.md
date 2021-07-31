@@ -11,8 +11,8 @@ The lodash method `_.zipWith` exported as a module.
 | Full name          | lodash.zipwith |
 | Keywords           | lodash-modularized, zipwith |
 | # releases         | 0 |
-| # dependents       | 10 |
-| # downloads        | 164672 |
+| # dependents       | 11 |
+| # downloads        | 209908 |
 | # stars            | 1 |
 
 ## Links

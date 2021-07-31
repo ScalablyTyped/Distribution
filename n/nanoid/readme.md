@@ -10,9 +10,9 @@ A tiny (108 bytes), secure URL-friendly unique string ID generator
 | ------------------ | :-------------: |
 | Full name          | nanoid |
 | Keywords           | uuid, random, id, url |
-| # releases         | 36 |
-| # dependents       | 1136 |
-| # downloads        | 125704326 |
+| # releases         | 41 |
+| # dependents       | 1224 |
+| # downloads        | 149351551 |
 | # stars            | 18 |
 
 ## Links

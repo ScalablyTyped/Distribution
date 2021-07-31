@@ -2,25 +2,25 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TupleType extends GenericType {
+trait TupleType
+  extends StObject
+     with GenericType {
   
-  var combinedFlags: ElementFlags = js.native
+  var combinedFlags: ElementFlags
   
-  var elementFlags: js.Array[ElementFlags] = js.native
+  var elementFlags: js.Array[ElementFlags]
   
-  var fixedLength: Double = js.native
+  var fixedLength: Double
   
-  var hasRestElement: Boolean = js.native
+  var hasRestElement: Boolean
   
-  var labeledElementDeclarations: js.UndefOr[js.Array[NamedTupleMember | ParameterDeclaration]] = js.native
+  var labeledElementDeclarations: js.UndefOr[js.Array[NamedTupleMember | ParameterDeclaration]] = js.undefined
   
-  var minLength: Double = js.native
+  var minLength: Double
   
-  var readonly: Boolean = js.native
+  var readonly: Boolean
 }
 object TupleType {
   

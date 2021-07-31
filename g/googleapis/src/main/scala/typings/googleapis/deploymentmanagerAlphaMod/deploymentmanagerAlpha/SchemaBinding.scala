@@ -2,13 +2,11 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Associates `members` with a `role`.
   */
-@js.native
 trait SchemaBinding extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaBinding extends StObject {
     * Different bindings, including their conditions, are examined
     * independently.
     */
-  var condition: js.UndefOr[SchemaExpr] = js.native
+  var condition: js.UndefOr[SchemaExpr] = js.undefined
   
   /**
     * Specifies the identities requesting access for a Cloud Platform resource.
@@ -34,13 +32,13 @@ trait SchemaBinding extends StObject {
     * domain name that represents all the users of that domain. For example,
     * `google.com` or `example.com`.
     */
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Role that is assigned to `members`. For example, `roles/viewer`,
     * `roles/editor`, or `roles/owner`.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object SchemaBinding {
   

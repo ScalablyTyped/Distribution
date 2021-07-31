@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait List extends BaseItem {
+trait List
+  extends StObject
+     with BaseItem {
   
   // The collection of field definitions for this list.
-  var columns: js.UndefOr[NullableOption[js.Array[ColumnDefinition]]] = js.native
+  var columns: js.UndefOr[NullableOption[js.Array[ColumnDefinition]]] = js.undefined
   
   // The collection of content types present in this list.
-  var contentTypes: js.UndefOr[NullableOption[js.Array[ContentType]]] = js.native
+  var contentTypes: js.UndefOr[NullableOption[js.Array[ContentType]]] = js.undefined
   
   // The displayable title of the list.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
-  var drive: js.UndefOr[NullableOption[Drive]] = js.native
+  var drive: js.UndefOr[NullableOption[Drive]] = js.undefined
   
   // All items contained in the list.
-  var items: js.UndefOr[NullableOption[js.Array[ListItem]]] = js.native
+  var items: js.UndefOr[NullableOption[js.Array[ListItem]]] = js.undefined
   
   // Provides additional details about the list.
-  var list: js.UndefOr[NullableOption[ListInfo]] = js.native
+  var list: js.UndefOr[NullableOption[ListInfo]] = js.undefined
   
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
   // The set of subscriptions on the list.
-  var subscriptions: js.UndefOr[NullableOption[js.Array[Subscription]]] = js.native
+  var subscriptions: js.UndefOr[NullableOption[js.Array[Subscription]]] = js.undefined
   
   // If present, indicates that this is a system-managed list. Read-only.
-  var system: js.UndefOr[NullableOption[SystemFacet]] = js.native
+  var system: js.UndefOr[NullableOption[SystemFacet]] = js.undefined
 }
 object List {
   

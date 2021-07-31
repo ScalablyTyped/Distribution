@@ -5,101 +5,99 @@ import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait filemanagerConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datathrottle: js.UndefOr[Double] = js.native
+  var datathrottle: js.UndefOr[Double] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var filterMode: js.UndefOr[js.Any] = js.native
+  var filterMode: js.UndefOr[js.Any] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var handlers: js.UndefOr[js.Any] = js.native
+  var handlers: js.UndefOr[js.Any] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var legacyUploader: js.UndefOr[Boolean] = js.native
+  var legacyUploader: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var menuFilter: js.UndefOr[WebixCallback] = js.native
+  var menuFilter: js.UndefOr[WebixCallback] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var modes: js.UndefOr[js.Array[_]] = js.native
+  var modes: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var noFileCache: js.UndefOr[Boolean] = js.native
+  var noFileCache: js.UndefOr[Boolean] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.native
+  var save: js.UndefOr[js.Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var structure: js.UndefOr[js.Any] = js.native
+  var structure: js.UndefOr[js.Any] = js.undefined
   
-  var templateCreate: js.UndefOr[WebixCallback] = js.native
+  var templateCreate: js.UndefOr[WebixCallback] = js.undefined
   
-  var templateDate: js.UndefOr[WebixCallback] = js.native
+  var templateDate: js.UndefOr[WebixCallback] = js.undefined
   
-  var templateIcon: js.UndefOr[WebixCallback] = js.native
+  var templateIcon: js.UndefOr[WebixCallback] = js.undefined
   
-  var templateName: js.UndefOr[WebixCallback] = js.native
+  var templateName: js.UndefOr[WebixCallback] = js.undefined
   
-  var templateSize: js.UndefOr[WebixCallback] = js.native
+  var templateSize: js.UndefOr[WebixCallback] = js.undefined
   
-  var templateType: js.UndefOr[WebixCallback] = js.native
+  var templateType: js.UndefOr[WebixCallback] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var uploadProgress: js.UndefOr[js.Any] = js.native
+  var uploadProgress: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object filemanagerConfig {
   
@@ -137,7 +135,7 @@ object filemanagerConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -224,7 +222,7 @@ object filemanagerConfig {
     def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
     @scala.inline
-    def setMenuFilter(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "menuFilter", js.Any.fromFunction1(value))
+    def setMenuFilter(value: WebixCallback): Self = StObject.set(x, "menuFilter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMenuFilterUndefined: Self = StObject.set(x, "menuFilter", js.undefined)
@@ -248,7 +246,7 @@ object filemanagerConfig {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setModes(value: js.Array[_]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    def setModes(value: js.Array[js.Any]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
@@ -293,7 +291,7 @@ object filemanagerConfig {
     def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -323,37 +321,37 @@ object filemanagerConfig {
     def setStructureUndefined: Self = StObject.set(x, "structure", js.undefined)
     
     @scala.inline
-    def setTemplateCreate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateCreate", js.Any.fromFunction1(value))
+    def setTemplateCreate(value: WebixCallback): Self = StObject.set(x, "templateCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateCreateUndefined: Self = StObject.set(x, "templateCreate", js.undefined)
     
     @scala.inline
-    def setTemplateDate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateDate", js.Any.fromFunction1(value))
+    def setTemplateDate(value: WebixCallback): Self = StObject.set(x, "templateDate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateDateUndefined: Self = StObject.set(x, "templateDate", js.undefined)
     
     @scala.inline
-    def setTemplateIcon(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateIcon", js.Any.fromFunction1(value))
+    def setTemplateIcon(value: WebixCallback): Self = StObject.set(x, "templateIcon", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateIconUndefined: Self = StObject.set(x, "templateIcon", js.undefined)
     
     @scala.inline
-    def setTemplateName(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateName", js.Any.fromFunction1(value))
+    def setTemplateName(value: WebixCallback): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
     
     @scala.inline
-    def setTemplateSize(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateSize", js.Any.fromFunction1(value))
+    def setTemplateSize(value: WebixCallback): Self = StObject.set(x, "templateSize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateSizeUndefined: Self = StObject.set(x, "templateSize", js.undefined)
     
     @scala.inline
-    def setTemplateType(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateType", js.Any.fromFunction1(value))
+    def setTemplateType(value: WebixCallback): Self = StObject.set(x, "templateType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateTypeUndefined: Self = StObject.set(x, "templateType", js.undefined)

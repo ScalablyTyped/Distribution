@@ -2,71 +2,69 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigRuleEvaluationStatus extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Config rule.
     */
-  var ConfigRuleArn: js.UndefOr[String] = js.native
+  var ConfigRuleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS Config rule.
     */
-  var ConfigRuleId: js.UndefOr[String] = js.native
+  var ConfigRuleId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the AWS Config rule.
     */
-  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.undefined
   
   /**
     * The time that you first activated the AWS Config rule.
     */
-  var FirstActivatedTime: js.UndefOr[Date] = js.native
+  var FirstActivatedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Indicates whether AWS Config has evaluated your resources against the rule at least once.    true - AWS Config has evaluated your AWS resources against the rule at least once.    false - AWS Config has not once finished evaluating your AWS resources against the rule.  
     */
-  var FirstEvaluationStarted: js.UndefOr[Boolean] = js.native
+  var FirstEvaluationStarted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time that you last turned off the AWS Config rule.
     */
-  var LastDeactivatedTime: js.UndefOr[Date] = js.native
+  var LastDeactivatedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The error code that AWS Config returned when the rule last failed.
     */
-  var LastErrorCode: js.UndefOr[String] = js.native
+  var LastErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error message that AWS Config returned when the rule last failed.
     */
-  var LastErrorMessage: js.UndefOr[String] = js.native
+  var LastErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The time that AWS Config last failed to evaluate your AWS resources against the rule.
     */
-  var LastFailedEvaluationTime: js.UndefOr[Date] = js.native
+  var LastFailedEvaluationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time that AWS Config last failed to invoke the AWS Config rule to evaluate your AWS resources.
     */
-  var LastFailedInvocationTime: js.UndefOr[Date] = js.native
+  var LastFailedInvocationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time that AWS Config last successfully evaluated your AWS resources against the rule.
     */
-  var LastSuccessfulEvaluationTime: js.UndefOr[Date] = js.native
+  var LastSuccessfulEvaluationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time that AWS Config last successfully invoked the AWS Config rule to evaluate your AWS resources.
     */
-  var LastSuccessfulInvocationTime: js.UndefOr[Date] = js.native
+  var LastSuccessfulInvocationTime: js.UndefOr[Date] = js.undefined
 }
 object ConfigRuleEvaluationStatus {
   

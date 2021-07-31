@@ -15,21 +15,19 @@ import typings.reactNativeVideo.reactNativeVideoStrings.textSlashvtt
 import typings.reactNativeVideo.reactNativeVideoStrings.title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BufferForPlaybackAfterRebufferMs extends StObject {
     
-    var bufferForPlaybackAfterRebufferMs: js.UndefOr[Double] = js.native
+    var bufferForPlaybackAfterRebufferMs: js.UndefOr[Double] = js.undefined
     
-    var bufferForPlaybackMs: js.UndefOr[Double] = js.native
+    var bufferForPlaybackMs: js.UndefOr[Double] = js.undefined
     
-    var maxBufferMs: js.UndefOr[Double] = js.native
+    var maxBufferMs: js.UndefOr[Double] = js.undefined
     
-    var minBufferMs: js.UndefOr[Double] = js.native
+    var minBufferMs: js.UndefOr[Double] = js.undefined
   }
   object BufferForPlaybackAfterRebufferMs {
     
@@ -68,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object Headers {
     
@@ -100,14 +97,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var orientation: horizontal | landscape = js.native
+    var orientation: horizontal | landscape
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -131,16 +127,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Language extends StObject {
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: `applicationSlashx-subrip` | applicationSlashttmlPlussignxml | textSlashvtt = js.native
+    var `type`: `applicationSlashx-subrip` | applicationSlashttmlPlussignxml | textSlashvtt
     
-    var uri: String = js.native
+    var uri: String
   }
   object Language {
     
@@ -174,12 +169,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: system | disabled | title | language | index = js.native
+    var `type`: system | disabled | title | language | index
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object Type {
     
@@ -204,12 +198,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var `type`: auto | disabled | resolution | index = js.native
+    var `type`: auto | disabled | resolution | index
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object Value {
     
@@ -234,13 +227,12 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("")
-    var _empty: String = js.native
+    var _empty: String
     
-    var errorString: String = js.native
+    var errorString: String
   }
   object _empty {
     

@@ -3,7 +3,6 @@ package typings.cryptojs.CryptoJS
 import typings.cryptojs.CryptoJS.lib.BlockCipherMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mode {
@@ -19,40 +18,45 @@ object mode {
   type ECB = IBlockCipherModeImpl
   
   @js.native
-  trait IBlockCipherDecryptor extends BlockCipherMode {
+  trait IBlockCipherDecryptor
+    extends StObject
+       with BlockCipherMode {
     
     //exactly as IBlockCipherEncryptor
     def processBlock(words: js.Array[Double], offset: Double): Unit = js.native
   }
   
   @js.native
-  trait IBlockCipherEncryptor extends BlockCipherMode {
+  trait IBlockCipherEncryptor
+    extends StObject
+       with BlockCipherMode {
     
     def processBlock(words: js.Array[Double], offset: Double): Unit = js.native
   }
   
   @js.native
-  trait IBlockCipherModeImpl extends BlockCipherMode {
+  trait IBlockCipherModeImpl
+    extends StObject
+       with BlockCipherMode {
     
     var Decryptor: IBlockCipherDecryptor = js.native
     
     var Encryptor: IBlockCipherEncryptor = js.native
   }
   
-  @js.native
   trait ModeStatic extends StObject {
     
-    var CBC: typings.cryptojs.CryptoJS.mode.CBC = js.native
+    var CBC: typings.cryptojs.CryptoJS.mode.CBC
     
-    var CFB: typings.cryptojs.CryptoJS.mode.CFB = js.native
+    var CFB: typings.cryptojs.CryptoJS.mode.CFB
     
-    var CTR: typings.cryptojs.CryptoJS.mode.CTR = js.native
+    var CTR: typings.cryptojs.CryptoJS.mode.CTR
     
-    var CTRGladman: typings.cryptojs.CryptoJS.mode.CTRGladman = js.native
+    var CTRGladman: typings.cryptojs.CryptoJS.mode.CTRGladman
     
-    var ECB: typings.cryptojs.CryptoJS.mode.ECB = js.native
+    var ECB: typings.cryptojs.CryptoJS.mode.ECB
     
-    var OFB: typings.cryptojs.CryptoJS.mode.OFB = js.native
+    var OFB: typings.cryptojs.CryptoJS.mode.OFB
   }
   object ModeStatic {
     

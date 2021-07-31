@@ -2,17 +2,15 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseGroupByCellProps[D /* <: js.Object */] extends StObject {
   
-  var isAggregated: Boolean = js.native
+  var isAggregated: Boolean
   
-  var isGrouped: Boolean = js.native
+  var isGrouped: Boolean
   
-  var isPlaceholder: Boolean = js.native
+  var isPlaceholder: Boolean
 }
 object UseGroupByCellProps {
   
@@ -23,7 +21,7 @@ object UseGroupByCellProps {
   }
   
   @scala.inline
-  implicit class UseGroupByCellPropsMutableBuilder[Self <: UseGroupByCellProps[_], D /* <: js.Object */] (val x: Self with UseGroupByCellProps[D]) extends AnyVal {
+  implicit class UseGroupByCellPropsMutableBuilder[Self <: UseGroupByCellProps[?], D /* <: js.Object */] (val x: Self & UseGroupByCellProps[D]) extends AnyVal {
     
     @scala.inline
     def setIsAggregated(value: Boolean): Self = StObject.set(x, "isAggregated", value.asInstanceOf[js.Any])

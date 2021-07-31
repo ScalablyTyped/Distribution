@@ -2,10 +2,8 @@ package typings.qlikVisualizationextensions.BackendAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxValidationError extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait INxValidationError extends StObject {
     * This parameter is optional.
     * String
     */
-  var qContext: String = js.native
+  var qContext: String
   
   /**
     * Error code.
     * This parameter is always displayed in case of error.
     * Integer
     */
-  var qErrorCode: Double = js.native
+  var qErrorCode: Double
   
   /**
     * Internal information from the server.
     * This parameter is optional.
     * String
     */
-  var qExtendedMessage: String = js.native
+  var qExtendedMessage: String
 }
 object INxValidationError {
   

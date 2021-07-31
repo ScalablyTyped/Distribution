@@ -7,7 +7,6 @@ import typings.twilioSync.entityMod.SyncEntity
 import typings.twilioSync.mutatorMod.Mutator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncdocumentMod {
@@ -246,24 +245,23 @@ object syncdocumentMod {
     def value: js.Object = js.native
   }
   
-  @js.native
   trait DocumentDescriptor extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var date_expires: String = js.native
+    var date_expires: String
     
-    var date_updated: Date = js.native
+    var date_updated: Date
     
-    var last_event_id: Double = js.native
+    var last_event_id: Double
     
-    var revision: String = js.native
+    var revision: String
     
-    var sid: String = js.native
+    var sid: String
     
-    var unique_name: String = js.native
+    var unique_name: String
     
-    var url: String = js.native
+    var url: String
   }
   object DocumentDescriptor {
     
@@ -311,10 +309,9 @@ object syncdocumentMod {
     }
   }
   
-  @js.native
   trait DocumentMetadata extends StObject {
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object DocumentMetadata {
     

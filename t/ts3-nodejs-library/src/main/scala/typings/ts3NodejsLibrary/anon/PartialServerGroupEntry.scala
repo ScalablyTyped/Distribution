@@ -2,32 +2,30 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ServerGroupEntry> */
-@js.native
 trait PartialServerGroupEntry extends StObject {
   
-  var iconid: js.UndefOr[String] = js.native
+  var iconid: js.UndefOr[String] = js.undefined
   
-  var nMemberAddp: js.UndefOr[Double] = js.native
+  var nMemberAddp: js.UndefOr[Double] = js.undefined
   
-  var nMemberRemovep: js.UndefOr[Double] = js.native
+  var nMemberRemovep: js.UndefOr[Double] = js.undefined
   
-  var nModifyp: js.UndefOr[Double] = js.native
+  var nModifyp: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namemode: js.UndefOr[Double] = js.native
+  var namemode: js.UndefOr[Double] = js.undefined
   
-  var savedb: js.UndefOr[Double] = js.native
+  var savedb: js.UndefOr[Double] = js.undefined
   
-  var sgid: js.UndefOr[String] = js.native
+  var sgid: js.UndefOr[String] = js.undefined
   
-  var sortid: js.UndefOr[Double] = js.native
+  var sortid: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
 }
 object PartialServerGroupEntry {
   

@@ -2,31 +2,29 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugOptions extends StObject {
   
   /**
     * A boolean, controlling whether debug events will be emitted with text describing packet data details (default: false).
     */
-  var data: js.UndefOr[Boolean] = js.native
+  var data: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, controlling whether debug events will be emitted with text describing packet details (default: false).
     */
-  var packet: js.UndefOr[Boolean] = js.native
+  var packet: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, controlling whether debug events will be emitted with text describing packet payload details (default: false).
     */
-  var payload: js.UndefOr[Boolean] = js.native
+  var payload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A boolean, controlling whether debug events will be emitted with text describing token stream tokens (default: false).
     */
-  var token: js.UndefOr[Boolean] = js.native
+  var token: js.UndefOr[Boolean] = js.undefined
 }
 object DebugOptions {
   

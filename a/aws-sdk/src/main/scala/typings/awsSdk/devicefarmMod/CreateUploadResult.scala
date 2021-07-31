@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUploadResult extends StObject {
   
   /**
     * The newly created upload.
     */
-  var upload: js.UndefOr[Upload] = js.native
+  var upload: js.UndefOr[Upload] = js.undefined
 }
 object CreateUploadResult {
   

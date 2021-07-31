@@ -9,21 +9,19 @@ import typings.winrtUwp.Windows.Networking.Sockets.StreamSocket
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides class describing trigger details for Bluetooth triggers. */
 object Background {
   
   /** Provides information about a BluetoothLEAdvertisementPublisher trigger. */
-  @js.native
   trait BluetoothLEAdvertisementPublisherTriggerDetails extends StObject {
     
     /** Gets the error status for the trigger. */
-    var error: BluetoothError = js.native
+    var error: BluetoothError
     
     /** Gets the current status of the BluetoothLEAdvertisementPublisher . */
-    var status: BluetoothLEAdvertisementPublisherStatus = js.native
+    var status: BluetoothLEAdvertisementPublisherStatus
   }
   object BluetoothLEAdvertisementPublisherTriggerDetails {
     
@@ -45,17 +43,16 @@ object Background {
   }
   
   /** Provides information about a BluetoothLEAdvertisementWatcher trigger. */
-  @js.native
   trait BluetoothLEAdvertisementWatcherTriggerDetails extends StObject {
     
     /** Gets a collection of Bluetooth LE advertisements. */
-    var advertisements: IVectorView[BluetoothLEAdvertisementReceivedEventArgs] = js.native
+    var advertisements: IVectorView[BluetoothLEAdvertisementReceivedEventArgs]
     
     /** Gets the error status for the trigger. */
-    var error: BluetoothError = js.native
+    var error: BluetoothError
     
     /** Gets the parameters used to configure received signal strength indicator (RSSI)-based filtering. */
-    var signalStrengthFilter: BluetoothSignalStrengthFilter = js.native
+    var signalStrengthFilter: BluetoothSignalStrengthFilter
   }
   object BluetoothLEAdvertisementWatcherTriggerDetails {
     
@@ -84,14 +81,13 @@ object Background {
   }
   
   /** Provides information about the Bluetooth LE device that caused this trigger to fire. */
-  @js.native
   trait GattCharacteristicNotificationTriggerDetails extends StObject {
     
     /** Gets the GATT characteristic that changed. */
-    var characteristic: GattCharacteristic = js.native
+    var characteristic: GattCharacteristic
     
     /** Gets a byte stream containing the new value of the characteristic. */
-    var value: IBuffer = js.native
+    var value: IBuffer
   }
   object GattCharacteristicNotificationTriggerDetails {
     
@@ -113,17 +109,16 @@ object Background {
   }
   
   /** Provides information about the Bluetooth device that caused this trigger to fire. */
-  @js.native
   trait RfcommConnectionTriggerDetails extends StObject {
     
     /** Gets whether this is an incoming connection. */
-    var incoming: Boolean = js.native
+    var incoming: Boolean
     
     /** Gets the BluetoothDevice object that represents the remote device. */
-    var remoteDevice: BluetoothDevice = js.native
+    var remoteDevice: BluetoothDevice
     
     /** Gets a reference to the underlying StreamSocket of this connection. */
-    var socket: StreamSocket = js.native
+    var socket: StreamSocket
   }
   object RfcommConnectionTriggerDetails {
     
@@ -148,17 +143,16 @@ object Background {
   }
   
   /** Provides information about incoming RFCOMM connections. If an app wants the system to listen for incoming connections on behalf of an RfcommConnectionTrigger , the app must create this object and attach it to the RfcommConnectionTrigger. */
-  @js.native
   trait RfcommInboundConnectionInformation extends StObject {
     
     /** Gets or sets the service UUID that will be advertised in the SDP record. */
-    var localServiceId: RfcommServiceId = js.native
+    var localServiceId: RfcommServiceId
     
     /** Gets or sets the Bluetooth SDP record that the system will advertise on behalf of the app. */
-    var sdpRecord: IBuffer = js.native
+    var sdpRecord: IBuffer
     
     /** Gets or sets the service capabilities that will be advertised. */
-    var serviceCapabilities: BluetoothServiceCapabilities = js.native
+    var serviceCapabilities: BluetoothServiceCapabilities
   }
   object RfcommInboundConnectionInformation {
     
@@ -187,11 +181,10 @@ object Background {
   }
   
   /** Provides information for RFCOMM outbound connections. If an app wants the system to create outbound connections on its behalf, the app must create this object and attach it to the RfcommConnectionTrigger . */
-  @js.native
   trait RfcommOutboundConnectionInformation extends StObject {
     
     /** Gets or sets the service UUID of the remote service to which the system will connect on behalf of the app. */
-    var remoteServiceId: RfcommServiceId = js.native
+    var remoteServiceId: RfcommServiceId
   }
   object RfcommOutboundConnectionInformation {
     

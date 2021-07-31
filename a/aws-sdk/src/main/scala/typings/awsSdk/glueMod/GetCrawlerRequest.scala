@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCrawlerRequest extends StObject {
   
   /**
     * The name of the crawler to retrieve metadata for.
     */
-  var Name: NameString = js.native
+  var Name: NameString
 }
 object GetCrawlerRequest {
   

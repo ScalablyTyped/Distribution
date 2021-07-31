@@ -2,36 +2,34 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcRouteMetadataMatchMethod extends StObject {
   
   /**
     * The value sent by the client must match the specified value exactly.
     */
-  var exact: js.UndefOr[HeaderMatch] = js.native
+  var exact: js.UndefOr[HeaderMatch] = js.undefined
   
   /**
     * The value sent by the client must begin with the specified characters.
     */
-  var prefix: js.UndefOr[HeaderMatch] = js.native
+  var prefix: js.UndefOr[HeaderMatch] = js.undefined
   
   /**
     * An object that represents the range of values to match on.
     */
-  var range: js.UndefOr[MatchRange] = js.native
+  var range: js.UndefOr[MatchRange] = js.undefined
   
   /**
     * The value sent by the client must include the specified characters.
     */
-  var regex: js.UndefOr[HeaderMatch] = js.native
+  var regex: js.UndefOr[HeaderMatch] = js.undefined
   
   /**
     * The value sent by the client must end with the specified characters.
     */
-  var suffix: js.UndefOr[HeaderMatch] = js.native
+  var suffix: js.UndefOr[HeaderMatch] = js.undefined
 }
 object GrpcRouteMetadataMatchMethod {
   

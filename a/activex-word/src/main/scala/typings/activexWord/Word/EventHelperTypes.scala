@@ -24,7 +24,6 @@ import typings.activexWord.activexWordStrings.xaWidth
 import typings.activexWord.activexWordStrings.yaHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EventHelperTypes {
@@ -43,30 +42,29 @@ object EventHelperTypes {
     fCancel
   ]
   
-  @js.native
   trait ApplicationEPostageInsertExParameter extends StObject {
     
-    val Doc: Document = js.native
+    val Doc: Document
     
-    val bstrPaperFeed: String = js.native
+    val bstrPaperFeed: String
     
-    val bstrPrinterName: String = js.native
+    val bstrPrinterName: String
     
-    val cpDeliveryAddrEnd: Double = js.native
+    val cpDeliveryAddrEnd: Double
     
-    val cpDeliveryAddrStart: Double = js.native
+    val cpDeliveryAddrStart: Double
     
-    val cpReturnAddrEnd: Double = js.native
+    val cpReturnAddrEnd: Double
     
-    val cpReturnAddrStart: Double = js.native
+    val cpReturnAddrStart: Double
     
-    var fCancel: Boolean = js.native
+    var fCancel: Boolean
     
-    val fPrint: Boolean = js.native
+    val fPrint: Boolean
     
-    val xaWidth: Double = js.native
+    val xaWidth: Double
     
-    val yaHeight: Double = js.native
+    val yaHeight: Double
   }
   object ApplicationEPostageInsertExParameter {
     
@@ -128,24 +126,23 @@ object EventHelperTypes {
   
   type ApplicationInvokeArgNames = js.Tuple8[dispidMember, riid, lcid, wFlags, pdispparams, pvarResult, pexcepinfo, puArgErr]
   
-  @js.native
   trait ApplicationInvokeParameter extends StObject {
     
-    val dispidMember: Double = js.native
+    val dispidMember: Double
     
-    val lcid: Double = js.native
+    val lcid: Double
     
-    val pdispparams: DISPPARAMS = js.native
+    val pdispparams: DISPPARAMS
     
-    var pexcepinfo: EXCEPINFO = js.native
+    var pexcepinfo: EXCEPINFO
     
-    var puArgErr: Double = js.native
+    var puArgErr: Double
     
-    var pvarResult: js.Any = js.native
+    var pvarResult: js.Any
     
-    val riid: GUID = js.native
+    val riid: GUID
     
-    val wFlags: Double = js.native
+    val wFlags: Double
   }
   object ApplicationInvokeParameter {
     

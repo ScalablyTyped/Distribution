@@ -3,13 +3,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 import typings.googleapis.anon.Available
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud SQL instance resource.
   */
-@js.native
 trait SchemaDatabaseInstance extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaDatabaseInstance extends StObject {
     * property in the settings object to determine the database type and Second
     * or First Generation.
     */
-  var backendType: js.UndefOr[String] = js.native
+  var backendType: js.UndefOr[String] = js.undefined
   
   /**
     * Connection name of the Cloud SQL instance used in connection strings.
     */
-  var connectionName: js.UndefOr[String] = js.native
+  var connectionName: js.UndefOr[String] = js.undefined
   
   /**
     * The current disk usage of the instance in bytes. This property has been
@@ -32,7 +30,7 @@ trait SchemaDatabaseInstance extends StObject {
     * &quot;cloudsql.googleapis.com/database/disk/bytes_used&quot; metric in
     * Cloud Monitoring API instead. Please see this announcement for details.
     */
-  var currentDiskSize: js.UndefOr[String] = js.native
+  var currentDiskSize: js.UndefOr[String] = js.undefined
   
   /**
     * The database engine type and version. The databaseVersion field can not
@@ -41,31 +39,31 @@ trait SchemaDatabaseInstance extends StObject {
     * (default) or POSTGRES_11 Beta. MySQL First Generation instances:
     * MYSQL_5_6 (default) or MYSQL_5_5
     */
-  var databaseVersion: js.UndefOr[String] = js.native
+  var databaseVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Disk encryption configuration specific to an instance. Applies only to
     * Second Generation instances.
     */
-  var diskEncryptionConfiguration: js.UndefOr[SchemaDiskEncryptionConfiguration] = js.native
+  var diskEncryptionConfiguration: js.UndefOr[SchemaDiskEncryptionConfiguration] = js.undefined
   
   /**
     * Disk encryption status specific to an instance. Applies only to Second
     * Generation instances.
     */
-  var diskEncryptionStatus: js.UndefOr[SchemaDiskEncryptionStatus] = js.native
+  var diskEncryptionStatus: js.UndefOr[SchemaDiskEncryptionStatus] = js.undefined
   
   /**
     * This field is deprecated and will be removed from a future version of the
     * API. Use the settings.settingsVersion field instead.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The name and status of the failover replica. This property is applicable
     * only to Second Generation instances.
     */
-  var failoverReplica: js.UndefOr[Available] = js.native
+  var failoverReplica: js.UndefOr[Available] = js.undefined
   
   /**
     * The Compute Engine zone that the instance is currently serving from. This
@@ -73,7 +71,7 @@ trait SchemaDatabaseInstance extends StObject {
     * instance was created if the instance has failed over to its secondary
     * zone.
     */
-  var gceZone: js.UndefOr[String] = js.native
+  var gceZone: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type. This can be one of the following. CLOUD_SQL_INSTANCE:
@@ -81,50 +79,50 @@ trait SchemaDatabaseInstance extends StObject {
     * ON_PREMISES_INSTANCE: An instance running on the customer&#39;s premises.
     * READ_REPLICA_INSTANCE: A Cloud SQL instance configured as a read-replica.
     */
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The assigned IP addresses for the instance.
     */
-  var ipAddresses: js.UndefOr[js.Array[SchemaIpMapping]] = js.native
+  var ipAddresses: js.UndefOr[js.Array[SchemaIpMapping]] = js.undefined
   
   /**
     * The IPv6 address assigned to the instance. This property is applicable
     * only to First Generation instances.
     */
-  var ipv6Address: js.UndefOr[String] = js.native
+  var ipv6Address: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#instance.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the instance which will act as master in the replication
     * setup.
     */
-  var masterInstanceName: js.UndefOr[String] = js.native
+  var masterInstanceName: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum disk size of the instance in bytes.
     */
-  var maxDiskSize: js.UndefOr[String] = js.native
+  var maxDiskSize: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the Cloud SQL instance. This does not include the project ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration specific to on-premises instances.
     */
-  var onPremisesConfiguration: js.UndefOr[SchemaOnPremisesConfiguration] = js.native
+  var onPremisesConfiguration: js.UndefOr[SchemaOnPremisesConfiguration] = js.undefined
   
   /**
     * The project ID of the project containing the Cloud SQL instance. The
     * Google apps domain is prefixed if applicable.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * The geographical region. Can be us-central (FIRST_GEN instances only),
@@ -133,38 +131,38 @@ trait SchemaDatabaseInstance extends StObject {
     * (First Generation or Second Generation). The region can not be changed
     * after instance creation.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration specific to failover replicas and read replicas.
     */
-  var replicaConfiguration: js.UndefOr[SchemaReplicaConfiguration] = js.native
+  var replicaConfiguration: js.UndefOr[SchemaReplicaConfiguration] = js.undefined
   
   /**
     * The replicas of the instance.
     */
-  var replicaNames: js.UndefOr[js.Array[String]] = js.native
+  var replicaNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The URI of this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * SSL configuration.
     */
-  var serverCaCert: js.UndefOr[SchemaSslCert] = js.native
+  var serverCaCert: js.UndefOr[SchemaSslCert] = js.undefined
   
   /**
     * The service account email address assigned to the instance. This property
     * is applicable only to Second Generation instances.
     */
-  var serviceAccountEmailAddress: js.UndefOr[String] = js.native
+  var serviceAccountEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The user settings.
     */
-  var settings: js.UndefOr[SchemaSettings] = js.native
+  var settings: js.UndefOr[SchemaSettings] = js.undefined
   
   /**
     * The current serving state of the Cloud SQL instance. This can be one of
@@ -174,12 +172,12 @@ trait SchemaDatabaseInstance extends StObject {
     * MAINTENANCE: The instance is down for maintenance. FAILED: The instance
     * creation failed. UNKNOWN_STATE: The state of the instance is unknown.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * If the instance state is SUSPENDED, the reason for the suspension.
     */
-  var suspensionReason: js.UndefOr[js.Array[String]] = js.native
+  var suspensionReason: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDatabaseInstance {
   

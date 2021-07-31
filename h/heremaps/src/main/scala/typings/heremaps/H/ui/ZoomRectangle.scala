@@ -3,7 +3,6 @@ package typings.heremaps.H.ui
 import typings.heremaps.H.Map_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ZoomRectangle {
@@ -13,12 +12,11 @@ object ZoomRectangle {
     * @property adjustZoom {function(number, H.Map): number=} - optional function that defines how zoom level should be changed, by default zoom level is picked to fit the
     * bounding rectangle into the view port.
     */
-  @js.native
   trait Options extends StObject {
     
-    var adjustZoom: js.UndefOr[js.Function2[/* n */ Double, /* m */ Map_, Double]] = js.native
+    var adjustZoom: js.UndefOr[js.Function2[/* n */ Double, /* m */ Map_, Double]] = js.undefined
     
-    var alignment: js.UndefOr[LayoutAlignment] = js.native
+    var alignment: js.UndefOr[LayoutAlignment] = js.undefined
   }
   object Options {
     

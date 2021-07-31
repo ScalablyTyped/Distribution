@@ -12,7 +12,7 @@ List of all the known languages in their English and Native name with locales
 | Keywords           | locales, map, languages, list, l10n, localization, world, native language, English language, list of languages |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 289616 |
+| # downloads        | 203456 |
 | # stars            | 1 |
 
 ## Links

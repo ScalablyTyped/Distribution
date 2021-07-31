@@ -6,15 +6,13 @@ import typings.tslint.tslintStrings.none
 import typings.tslint.tslintStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Severity extends StObject {
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
-  var severity: js.UndefOr[RuleSeverity | warn | none | default] = js.native
+  var severity: js.UndefOr[RuleSeverity | warn | none | default] = js.undefined
 }
 object Severity {
   

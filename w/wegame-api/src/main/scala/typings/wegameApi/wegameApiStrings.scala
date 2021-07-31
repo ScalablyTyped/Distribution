@@ -8,7 +8,6 @@ import typings.wegameApi.wx.types.NetworkType
 import typings.wegameApi.wx.types.RequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wegameApiStrings {
@@ -19,17 +18,23 @@ object wegameApiStrings {
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
-  sealed trait `2g` extends NetworkType
+  sealed trait `2g`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
-  sealed trait `3g` extends NetworkType
+  sealed trait `3g`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
-  sealed trait `4g` extends NetworkType
+  sealed trait `4g`
+    extends StObject
+       with NetworkType
   @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
@@ -39,37 +44,51 @@ object wegameApiStrings {
   def CNY: CNY = "CNY".asInstanceOf[CNY]
   
   @js.native
-  sealed trait CONNECT extends RequestMethod
+  sealed trait CONNECT
+    extends StObject
+       with RequestMethod
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait DELETE extends RequestMethod
+  sealed trait DELETE
+    extends StObject
+       with RequestMethod
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends RequestMethod
+  sealed trait GET
+    extends StObject
+       with RequestMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends RequestMethod
+  sealed trait HEAD
+    extends StObject
+       with RequestMethod
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait POST extends RequestMethod
+  sealed trait POST
+    extends StObject
+       with RequestMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends RequestMethod
+  sealed trait PUT
+    extends StObject
+       with RequestMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait TRACE extends RequestMethod
+  sealed trait TRACE
+    extends StObject
+       with RequestMethod
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
@@ -104,12 +123,16 @@ object wegameApiStrings {
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait ascii extends FileContentEncoding
+  sealed trait ascii
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait auto extends AudioSourceType
+  sealed trait auto
+    extends StObject
+       with AudioSourceType
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -124,12 +147,16 @@ object wegameApiStrings {
   def ban: ban = "ban".asInstanceOf[ban]
   
   @js.native
-  sealed trait base64 extends FileContentEncoding
+  sealed trait base64
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait binary extends FileContentEncoding
+  sealed trait binary
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
   
@@ -144,12 +171,16 @@ object wegameApiStrings {
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait buildInMic extends AudioSourceType
+  sealed trait buildInMic
+    extends StObject
+       with AudioSourceType
   @scala.inline
   def buildInMic: buildInMic = "buildInMic".asInstanceOf[buildInMic]
   
   @js.native
-  sealed trait camcorder extends AudioSourceType
+  sealed trait camcorder
+    extends StObject
+       with AudioSourceType
   @scala.inline
   def camcorder: camcorder = "camcorder".asInstanceOf[camcorder]
   
@@ -179,7 +210,9 @@ object wegameApiStrings {
   def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait dark extends GameClubButtonIcon
+  sealed trait dark
+    extends StObject
+       with GameClubButtonIcon
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
@@ -224,17 +257,23 @@ object wegameApiStrings {
   def go: go = "go".asInstanceOf[go]
   
   @js.native
-  sealed trait green extends GameClubButtonIcon
+  sealed trait green
+    extends StObject
+       with GameClubButtonIcon
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait headsetMic extends AudioSourceType
+  sealed trait headsetMic
+    extends StObject
+       with AudioSourceType
   @scala.inline
   def headsetMic: headsetMic = "headsetMic".asInstanceOf[headsetMic]
   
   @js.native
-  sealed trait hex extends FileContentEncoding
+  sealed trait hex
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
@@ -244,7 +283,9 @@ object wegameApiStrings {
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait image extends ButtonType
+  sealed trait image
+    extends StObject
+       with ButtonType
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
@@ -269,7 +310,9 @@ object wegameApiStrings {
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait latin1 extends FileContentEncoding
+  sealed trait latin1
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
@@ -279,7 +322,9 @@ object wegameApiStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait light extends GameClubButtonIcon
+  sealed trait light
+    extends StObject
+       with GameClubButtonIcon
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -299,7 +344,9 @@ object wegameApiStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait mic extends AudioSourceType
+  sealed trait mic
+    extends StObject
+       with AudioSourceType
   @scala.inline
   def mic: mic = "mic".asInstanceOf[mic]
   
@@ -314,7 +361,9 @@ object wegameApiStrings {
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait none extends NetworkType
+  sealed trait none
+    extends StObject
+       with NetworkType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -379,7 +428,9 @@ object wegameApiStrings {
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait text extends ButtonType
+  sealed trait text
+    extends StObject
+       with ButtonType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -389,12 +440,16 @@ object wegameApiStrings {
   def trial: trial = "trial".asInstanceOf[trial]
   
   @js.native
-  sealed trait `ucs-2` extends FileContentEncoding
+  sealed trait `ucs-2`
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
   
   @js.native
-  sealed trait ucs2 extends FileContentEncoding
+  sealed trait ucs2
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
@@ -404,27 +459,37 @@ object wegameApiStrings {
   def ui: ui = "ui".asInstanceOf[ui]
   
   @js.native
-  sealed trait unknown extends NetworkType
+  sealed trait unknown
+    extends StObject
+       with NetworkType
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait `utf-16le` extends FileContentEncoding
+  sealed trait `utf-16le`
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def `utf-16le`: `utf-16le` = "utf-16le".asInstanceOf[`utf-16le`]
   
   @js.native
-  sealed trait `utf-8` extends FileContentEncoding
+  sealed trait `utf-8`
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   
   @js.native
-  sealed trait utf16le extends FileContentEncoding
+  sealed trait utf16le
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
   @js.native
-  sealed trait utf8 extends FileContentEncoding
+  sealed trait utf8
+    extends StObject
+       with FileContentEncoding
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
   
@@ -439,12 +504,16 @@ object wegameApiStrings {
   def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
   
   @js.native
-  sealed trait white extends GameClubButtonIcon
+  sealed trait white
+    extends StObject
+       with GameClubButtonIcon
   @scala.inline
   def white: white = "white".asInstanceOf[white]
   
   @js.native
-  sealed trait wifi extends NetworkType
+  sealed trait wifi
+    extends StObject
+       with NetworkType
   @scala.inline
   def wifi: wifi = "wifi".asInstanceOf[wifi]
   

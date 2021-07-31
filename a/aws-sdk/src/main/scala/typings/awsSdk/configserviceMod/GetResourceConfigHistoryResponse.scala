@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceConfigHistoryResponse extends StObject {
   
   /**
     * A list that contains the configuration history of one or more resources.
     */
-  var configurationItems: js.UndefOr[ConfigurationItemList] = js.native
+  var configurationItems: js.UndefOr[ConfigurationItemList] = js.undefined
   
   /**
     * The string that you use in a subsequent request to get the next page of results in a paginated response.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetResourceConfigHistoryResponse {
   

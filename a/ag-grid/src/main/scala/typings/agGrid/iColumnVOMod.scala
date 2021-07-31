@@ -2,21 +2,19 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iColumnVOMod {
   
-  @js.native
   trait ColumnVO extends StObject {
     
-    var aggFunc: String = js.native
+    var aggFunc: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var field: String = js.native
+    var field: String
     
-    var id: String = js.native
+    var id: String
   }
   object ColumnVO {
     

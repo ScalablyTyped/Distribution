@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.awt.Point
 import typings.activexLibreoffice.com_.sun.star.awt.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XConnectorShape extends XShape {
+trait XConnectorShape
+  extends StObject
+     with XShape {
   
   /** connects the end of this instance. */
-  def connectEnd(xShape: XConnectableShape, nPos: ConnectionType): Unit = js.native
+  def connectEnd(xShape: XConnectableShape, nPos: ConnectionType): Unit
   
   /** connects the start of this instance */
-  def connectStart(xShape: XConnectableShape, nPos: ConnectionType): Unit = js.native
+  def connectStart(xShape: XConnectableShape, nPos: ConnectionType): Unit
   
   /** disconnects the given {@link Shape} from the start of this instance. */
-  def disconnectBegin(xShape: XConnectableShape): Unit = js.native
+  def disconnectBegin(xShape: XConnectableShape): Unit
   
   /** disconnects the given {@link Shape} from the end of this instance. */
-  def disconnectEnd(xShape: XConnectableShape): Unit = js.native
+  def disconnectEnd(xShape: XConnectableShape): Unit
 }
 object XConnectorShape {
   

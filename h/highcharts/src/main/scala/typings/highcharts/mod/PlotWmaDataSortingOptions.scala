@@ -2,29 +2,27 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotWmaDataSortingOptions extends StObject {
   
   /**
     * (Highcharts, Highstock) Enable or disable data sorting for the series.
     * Use xAxis.reversed to change the sorting order.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to allow matching points by name in an
     * update. If this option is disabled, points will be matched by order.
     */
-  var matchByName: js.UndefOr[Boolean] = js.native
+  var matchByName: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Determines what data value should be used to sort
     * by.
     */
-  var sortKey: js.UndefOr[String] = js.native
+  var sortKey: js.UndefOr[String] = js.undefined
 }
 object PlotWmaDataSortingOptions {
   

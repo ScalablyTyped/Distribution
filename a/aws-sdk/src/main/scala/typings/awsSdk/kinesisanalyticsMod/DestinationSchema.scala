@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationSchema extends StObject {
   
   /**
     * Specifies the format of the records on the output stream.
     */
-  var RecordFormatType: typings.awsSdk.kinesisanalyticsMod.RecordFormatType = js.native
+  var RecordFormatType: typings.awsSdk.kinesisanalyticsMod.RecordFormatType
 }
 object DestinationSchema {
   

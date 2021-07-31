@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemMod {
@@ -17,9 +16,9 @@ object menuItemMod {
   @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem")
   @js.native
   class MenuItem protected ()
-    extends AbstractPureComponent2[IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Object] {
-    def this(props: IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-    def this(props: IMenuItemProps with AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+    extends AbstractPureComponent2[IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], js.Object, js.Object] {
+    def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+    def this(props: IMenuItemProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
     
     var maybeRenderLabel: js.Any = js.native
     
@@ -45,13 +44,13 @@ object menuItemMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IMenuItemProps
-    extends IActionProps
+    extends StObject
+       with IActionProps
        with ILinkProps {
     
     /** Whether this menu item should appear with an active state. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Children of this component will be rendered in a __submenu__ that appears when hovering or
@@ -59,12 +58,12 @@ object menuItemMod {
       *
       * Use `text` prop for the content of the menu item itself.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * HTML title to be passed to the <Text> component
       */
-    var htmlTitle: js.UndefOr[String] = js.native
+    var htmlTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Right-aligned label text content, useful for displaying hotkeys.
@@ -72,37 +71,37 @@ object menuItemMod {
       * This prop actually supports JSX elements, but TypeScript will throw an error because
       * `HTMLAttributes` only allows strings. Use `labelElement` to supply a JSX element in TypeScript.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * A space-delimited list of class names to pass along to the right-aligned label wrapper element.
       */
-    var labelClassName: js.UndefOr[String] = js.native
+    var labelClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Right-aligned label content, useful for displaying hotkeys.
       */
-    var labelElement: js.UndefOr[ReactNode] = js.native
+    var labelElement: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Whether the text should be allowed to wrap to multiple lines.
       * If `false`, text will be truncated with an ellipsis when it reaches `max-width`.
       * @default false
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Props to spread to `Popover`. Note that `content` and `minimal` cannot be
       * changed and `usePortal` defaults to `false` so all submenus will live in
       * the same container.
       */
-    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
     
     /**
       * Whether an enabled item without a submenu should automatically close its parent popover when clicked.
       * @default true
       */
-    var shouldDismissPopover: js.UndefOr[Boolean] = js.native
+    var shouldDismissPopover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the HTML tag that wraps the MenuItem.
@@ -110,16 +109,16 @@ object menuItemMod {
       */
     var tagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A space-delimited list of class names to pass along to the text wrapper element.
       */
-    var textClassName: js.UndefOr[String] = js.native
+    var textClassName: js.UndefOr[String] = js.undefined
     
     /** Item text, required for usability. */
     @JSName("text")
-    var text_IMenuItemProps: ReactNode = js.native
+    var text_IMenuItemProps: ReactNode
   }
   object IMenuItemProps {
     

@@ -16,65 +16,54 @@ import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gpgpuUtilMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "bindVertexProgramAttributeStreams")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", JSImport.Namespace)
   @js.native
-  def bindVertexProgramAttributeStreams(gl: WebGLRenderingContext, program: WebGLProgram, vertexBuffer: WebGLBuffer): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createBufferFromOutputTexture")
-  @js.native
-  def createBufferFromOutputTexture(gl2: WebGL2RenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLBuffer = js.native
+  @scala.inline
+  def bindVertexProgramAttributeStreams(gl: WebGLRenderingContext, program: WebGLProgram, vertexBuffer: WebGLBuffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("bindVertexProgramAttributeStreams")(gl.asInstanceOf[js.Any], program.asInstanceOf[js.Any], vertexBuffer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createFloat16MatrixTexture")
-  @js.native
-  def createFloat16MatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = js.native
+  @scala.inline
+  def createBufferFromOutputTexture(gl2: WebGL2RenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("createBufferFromOutputTexture")(gl2.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLBuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createFloat16PackedMatrixTexture")
-  @js.native
-  def createFloat16PackedMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = js.native
+  @scala.inline
+  def createFloat16MatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("createFloat16MatrixTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createFloat32MatrixTexture")
-  @js.native
-  def createFloat32MatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = js.native
+  @scala.inline
+  def createFloat16PackedMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("createFloat16PackedMatrixTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createIndexBuffer")
-  @js.native
-  def createIndexBuffer(gl: WebGLRenderingContext): WebGLBuffer = js.native
+  @scala.inline
+  def createFloat32MatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("createFloat32MatrixTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createPackedMatrixTexture")
-  @js.native
-  def createPackedMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = js.native
+  @scala.inline
+  def createIndexBuffer(gl: WebGLRenderingContext): WebGLBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndexBuffer")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLBuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createUnsignedBytesMatrixTexture")
-  @js.native
-  def createUnsignedBytesMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = js.native
+  @scala.inline
+  def createPackedMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackedMatrixTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createVertexBuffer")
-  @js.native
-  def createVertexBuffer(gl: WebGLRenderingContext): WebGLBuffer = js.native
+  @scala.inline
+  def createUnsignedBytesMatrixTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): WebGLTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnsignedBytesMatrixTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[WebGLTexture]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "createVertexShader")
-  @js.native
-  def createVertexShader(gl: WebGLRenderingContext): WebGLShader = js.native
+  @scala.inline
+  def createVertexBuffer(gl: WebGLRenderingContext): WebGLBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("createVertexBuffer")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLBuffer]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "downloadByteEncodedFloatMatrixFromOutputTexture")
-  @js.native
-  def downloadByteEncodedFloatMatrixFromOutputTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): Float32Array = js.native
+  @scala.inline
+  def createVertexShader(gl: WebGLRenderingContext): WebGLShader = ^.asInstanceOf[js.Dynamic].applyDynamic("createVertexShader")(gl.asInstanceOf[js.Any]).asInstanceOf[WebGLShader]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "downloadFloat32MatrixFromBuffer")
-  @js.native
-  def downloadFloat32MatrixFromBuffer(gl: WebGLRenderingContext, buffer: WebGLBuffer, size: Double): Float32Array = js.native
+  @scala.inline
+  def downloadByteEncodedFloatMatrixFromOutputTexture(gl: WebGLRenderingContext, rows: Double, columns: Double, textureConfig: TextureConfig): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadByteEncodedFloatMatrixFromOutputTexture")(gl.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "downloadMatrixFromPackedOutputTexture")
-  @js.native
-  def downloadMatrixFromPackedOutputTexture(gl: WebGLRenderingContext, physicalRows: Double, physicalCols: Double): Float32Array = js.native
+  @scala.inline
+  def downloadFloat32MatrixFromBuffer(gl: WebGLRenderingContext, buffer: WebGLBuffer, size: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadFloat32MatrixFromBuffer")(gl.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "downloadPackedMatrixFromBuffer")
-  @js.native
+  @scala.inline
+  def downloadMatrixFromPackedOutputTexture(gl: WebGLRenderingContext, physicalRows: Double, physicalCols: Double): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadMatrixFromPackedOutputTexture")(gl.asInstanceOf[js.Any], physicalRows.asInstanceOf[js.Any], physicalCols.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
+  
+  @scala.inline
   def downloadPackedMatrixFromBuffer(
     gl: WebGLRenderingContext,
     buffer: WebGLBuffer,
@@ -84,30 +73,24 @@ object gpgpuUtilMod {
     physicalRows: Double,
     physicalCols: Double,
     textureConfig: TextureConfig
-  ): Float32Array = js.native
+  ): Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadPackedMatrixFromBuffer")(gl.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], batch.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], physicalRows.asInstanceOf[js.Any], physicalCols.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[Float32Array]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "getInternalFormatForFloat16MatrixTexture")
-  @js.native
-  def getInternalFormatForFloat16MatrixTexture(textureConfig: TextureConfig): Double = js.native
+  @scala.inline
+  def getInternalFormatForFloat16MatrixTexture(textureConfig: TextureConfig): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalFormatForFloat16MatrixTexture")(textureConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "getInternalFormatForFloat16PackedMatrixTexture")
-  @js.native
-  def getInternalFormatForFloat16PackedMatrixTexture(textureConfig: TextureConfig): Double = js.native
+  @scala.inline
+  def getInternalFormatForFloat16PackedMatrixTexture(textureConfig: TextureConfig): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalFormatForFloat16PackedMatrixTexture")(textureConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "getInternalFormatForFloat32MatrixTexture")
-  @js.native
-  def getInternalFormatForFloat32MatrixTexture(textureConfig: TextureConfig): Double = js.native
+  @scala.inline
+  def getInternalFormatForFloat32MatrixTexture(textureConfig: TextureConfig): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalFormatForFloat32MatrixTexture")(textureConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "getInternalFormatForPackedMatrixTexture")
-  @js.native
-  def getInternalFormatForPackedMatrixTexture(textureConfig: TextureConfig): Double = js.native
+  @scala.inline
+  def getInternalFormatForPackedMatrixTexture(textureConfig: TextureConfig): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalFormatForPackedMatrixTexture")(textureConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "getInternalFormatForUnsignedBytesMatrixTexture")
-  @js.native
-  def getInternalFormatForUnsignedBytesMatrixTexture(textureConfig: TextureConfig): Double = js.native
+  @scala.inline
+  def getInternalFormatForUnsignedBytesMatrixTexture(textureConfig: TextureConfig): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalFormatForUnsignedBytesMatrixTexture")(textureConfig.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadDenseMatrixToTexture")
-  @js.native
+  @scala.inline
   def uploadDenseMatrixToTexture(
     gl: WebGLRenderingContext,
     texture: WebGLTexture,
@@ -115,21 +98,16 @@ object gpgpuUtilMod {
     height: Double,
     data: TypedArray,
     textureConfig: TextureConfig
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadDenseMatrixToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], data.asInstanceOf[js.Any], textureConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadPixelDataToTexture")
-  @js.native
-  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLCanvasElement): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadPixelDataToTexture")
-  @js.native
-  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLImageElement): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadPixelDataToTexture")
-  @js.native
-  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLVideoElement): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadPixelDataToTexture")
-  @js.native
-  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: ImageData): Unit = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/gpgpu_util", "uploadPixelDataToTexture")
-  @js.native
-  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: PixelData): Unit = js.native
+  @scala.inline
+  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadPixelDataToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLImageElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadPixelDataToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: HTMLVideoElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadPixelDataToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: ImageData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadPixelDataToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def uploadPixelDataToTexture(gl: WebGLRenderingContext, texture: WebGLTexture, pixels: PixelData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadPixelDataToTexture")(gl.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], pixels.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

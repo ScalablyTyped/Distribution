@@ -3,20 +3,19 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentNode
-  extends ElementNode
-     with BaseElementNode {
+  extends StObject
+     with BaseElementNode
+     with ElementNode {
   
-  var codegenNode: js.UndefOr[VNodeCall | CacheExpression] = js.native
+  var codegenNode: js.UndefOr[VNodeCall | CacheExpression] = js.undefined
   
-  var ssrCodegenNode: js.UndefOr[CallExpression] = js.native
+  var ssrCodegenNode: js.UndefOr[CallExpression] = js.undefined
   
   @JSName("tagType")
-  var tagType_ComponentNode: `1` = js.native
+  var tagType_ComponentNode: `1`
 }
 object ComponentNode {
   
@@ -27,12 +26,10 @@ object ComponentNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `1`,
-    `type`: `1`
+    tag: String
   ): ComponentNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 1)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[ComponentNode]
   }
   

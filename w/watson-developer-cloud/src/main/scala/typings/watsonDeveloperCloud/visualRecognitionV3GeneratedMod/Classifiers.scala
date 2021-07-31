@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A container for the list of classifiers. */
-@js.native
 trait Classifiers extends StObject {
   
   /** List of classifiers. */
-  var classifiers: js.Array[Classifier] = js.native
+  var classifiers: js.Array[Classifier]
 }
 object Classifiers {
   

@@ -7,7 +7,6 @@ import typings.auth0Js.anon.Hash
 import typings.auth0Js.anon.ResponseMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Popup")
@@ -38,12 +37,12 @@ class Popup protected () extends StObject {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: ResponseMode, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithCredentials(options: ResponseMode, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Verifies the passwordless TOTP and returns the requested token
     */
-  def passwordlessVerify(options: Email, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def passwordlessVerify(options: Email, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Initializes the popup window and returns the instance to be used later in order to avoid being blocked by the browser.
@@ -58,5 +57,5 @@ class Popup protected () extends StObject {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link signupAndAuthorize}.
     */
-  def signupAndLogin(options: Connection, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def signupAndLogin(options: Connection, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
 }

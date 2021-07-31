@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpellingCorrection extends StObject {
   
   /** Indicates if the query was corrected by the spell checker. */
-  var corrected: js.UndefOr[Boolean] = js.native
+  var corrected: js.UndefOr[Boolean] = js.undefined
   
   /** Correction output consisting of the corrected keyword string. */
-  var correctedText: js.UndefOr[String] = js.native
+  var correctedText: js.UndefOr[String] = js.undefined
 }
 object SpellingCorrection {
   

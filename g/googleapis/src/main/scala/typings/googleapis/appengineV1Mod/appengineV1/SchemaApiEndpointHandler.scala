@@ -2,19 +2,17 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Uses Google Cloud Endpoints to handle requests.
   */
-@js.native
 trait SchemaApiEndpointHandler extends StObject {
   
   /**
     * Path to the script from the application root directory.
     */
-  var scriptPath: js.UndefOr[String] = js.native
+  var scriptPath: js.UndefOr[String] = js.undefined
 }
 object SchemaApiEndpointHandler {
   

@@ -4,37 +4,35 @@ import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CADESCommon.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
-  def Display(): Unit = js.native
+  def Display(): Unit
   
-  def Export(EncodingType: ValuesOf[CAPICOM_ENCODING_TYPE]): String = js.native
+  def Export(EncodingType: ValuesOf[CAPICOM_ENCODING_TYPE]): String
   
-  def GetInfo(infoType: CAPICOM_CERT_INFO_TYPE): String = js.native
+  def GetInfo(infoType: CAPICOM_CERT_INFO_TYPE): String
   
-  def HasPrivateKey(): Boolean = js.native
+  def HasPrivateKey(): Boolean
   
-  def IsValid(): CertificateStatus = js.native
+  def IsValid(): CertificateStatus
   
-  val IssuerName: String = js.native
+  val IssuerName: String
   
-  def PublicKey(): typings.cadesplugin.CAPICOM.PublicKey = js.native
+  def PublicKey(): typings.cadesplugin.CAPICOM.PublicKey
   
-  val SerialNumber: String = js.native
+  val SerialNumber: String
   
-  val SubjectName: String = js.native
+  val SubjectName: String
   
-  val Thumbprint: String = js.native
+  val Thumbprint: String
   
-  val ValidFromDate: VarDate = js.native
+  val ValidFromDate: VarDate
   
-  val ValidToDate: VarDate = js.native
+  val ValidToDate: VarDate
   
-  val Version: Double = js.native
+  val Version: Double
 }
 object Certificate {
   

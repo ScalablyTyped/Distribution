@@ -2,13 +2,11 @@ package typings.googleapis.composerV1beta1Mod.composerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for controlling how IPs are allocated in the GKE cluster.
   */
-@js.native
 trait SchemaIPAllocationPolicy extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait SchemaIPAllocationPolicy extends StObject {
     * to use. Specify `cluster_secondary_range_name` or
     * `cluster_ipv4_cidr_block` but not both.
     */
-  var clusterIpv4CidrBlock: js.UndefOr[String] = js.native
+  var clusterIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the cluster&#39;s secondary range used to allocate
@@ -31,7 +29,7 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `cluster_ipv4_cidr_block` but not both.  This field is applicable only
     * when `use_ip_aliases` is true.
     */
-  var clusterSecondaryRangeName: js.UndefOr[String] = js.native
+  var clusterSecondaryRangeName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The IP address range of the services IP addresses in this
@@ -45,7 +43,7 @@ trait SchemaIPAllocationPolicy extends StObject {
     * to use. Specify `services_secondary_range_name` or
     * `services_ipv4_cidr_block` but not both.
     */
-  var servicesIpv4CidrBlock: js.UndefOr[String] = js.native
+  var servicesIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the services&#39; secondary range used to allocate
@@ -53,13 +51,13 @@ trait SchemaIPAllocationPolicy extends StObject {
     * `services_secondary_range_name` or `services_ipv4_cidr_block` but not
     * both.  This field is applicable only when `use_ip_aliases` is true.
     */
-  var servicesSecondaryRangeName: js.UndefOr[String] = js.native
+  var servicesSecondaryRangeName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Whether or not to enable Alias IPs in the GKE cluster. If
     * `true`, a VPC-native cluster is created.
     */
-  var useIpAliases: js.UndefOr[Boolean] = js.native
+  var useIpAliases: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaIPAllocationPolicy {
   

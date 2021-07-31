@@ -4,7 +4,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait Graphics extends StObject {
   def at(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double): Graphics = js.native
   
   def beginBitmapFill(image: js.Object): Graphics = js.native
-  def beginBitmapFill(image: js.Object, repetition: js.UndefOr[scala.Nothing], matrix: Matrix2D): Graphics = js.native
   def beginBitmapFill(image: js.Object, repetition: String): Graphics = js.native
   def beginBitmapFill(image: js.Object, repetition: String, matrix: Matrix2D): Graphics = js.native
+  def beginBitmapFill(image: js.Object, repetition: Unit, matrix: Matrix2D): Graphics = js.native
   
   def beginBitmapStroke(image: js.Object): Graphics = js.native
   def beginBitmapStroke(image: js.Object, repetition: String): Graphics = js.native
@@ -64,9 +63,9 @@ trait Graphics extends StObject {
   def bezierCurveTo(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): Graphics = js.native
   
   def bf(image: js.Object): Graphics = js.native
-  def bf(image: js.Object, repetition: js.UndefOr[scala.Nothing], matrix: Matrix2D): Graphics = js.native
   def bf(image: js.Object, repetition: String): Graphics = js.native
   def bf(image: js.Object, repetition: String, matrix: Matrix2D): Graphics = js.native
+  def bf(image: js.Object, repetition: Unit, matrix: Matrix2D): Graphics = js.native
   
   def bs(image: js.Object): Graphics = js.native
   def bs(image: js.Object, repetition: String): Graphics = js.native
@@ -135,7 +134,7 @@ trait Graphics extends StObject {
     */
   def getInstructions(): js.Array[js.Object] = js.native
   
-  def inject(callback: js.Function1[/* data */ js.Any, _], data: js.Any): Graphics = js.native
+  def inject(callback: js.Function1[/* data */ js.Any, js.Any], data: js.Any): Graphics = js.native
   
   var instructions: js.Array[js.Object] = js.native
   
@@ -202,266 +201,88 @@ trait Graphics extends StObject {
   def s(color: String): Graphics = js.native
   
   def sd(): Graphics = js.native
-  def sd(segments: js.UndefOr[scala.Nothing], offset: Double): Graphics = js.native
   def sd(segments: js.Array[Double]): Graphics = js.native
   def sd(segments: js.Array[Double], offset: Double): Graphics = js.native
+  def sd(segments: Unit, offset: Double): Graphics = js.native
   
   def setStrokeDash(): Graphics = js.native
-  def setStrokeDash(segments: js.UndefOr[scala.Nothing], offset: Double): Graphics = js.native
   def setStrokeDash(segments: js.Array[Double]): Graphics = js.native
   def setStrokeDash(segments: js.Array[Double], offset: Double): Graphics = js.native
+  def setStrokeDash(segments: Unit, offset: Double): Graphics = js.native
   
   def setStrokeStyle(thickness: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double
-  ): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: String): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: String, miterLimit: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: String,
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: Double, miterLimit: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: Double,
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: String,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: String, joints: js.UndefOr[scala.Nothing], miterLimit: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: String,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: String): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: String,
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: String, miterLimit: Double): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: String, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: String,
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: Double, miterLimit: Double): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: String, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: String, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: String, joints: Unit, miterLimit: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: String, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: String, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: Double,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def setStrokeStyle(thickness: Double, caps: Double, joints: js.UndefOr[scala.Nothing], miterLimit: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: Double,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: String): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: Double,
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: String, miterLimit: Double): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Double, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: Double): Graphics = js.native
-  def setStrokeStyle(
-    thickness: Double,
-    caps: Double,
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: Double, miterLimit: Double): Graphics = js.native
   def setStrokeStyle(thickness: Double, caps: Double, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Double, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Double, joints: Unit, miterLimit: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Double, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Double, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: String): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: String, miterLimit: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Double, miterLimit: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Unit, miterLimit: Double): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def setStrokeStyle(thickness: Double, caps: Unit, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   
   def ss(thickness: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double
-  ): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: String): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: String, miterLimit: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: String,
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: js.UndefOr[scala.Nothing], joints: Double, miterLimit: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: js.UndefOr[scala.Nothing],
-    joints: Double,
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: String): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: String,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: String, joints: js.UndefOr[scala.Nothing], miterLimit: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: String,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: String): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: String,
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: String, miterLimit: Double): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: String, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: String,
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: Double, miterLimit: Double): Graphics = js.native
   def ss(thickness: Double, caps: String, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: String, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: String, joints: Unit, miterLimit: Double): Graphics = js.native
+  def ss(thickness: Double, caps: String, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: String, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def ss(thickness: Double, caps: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: Double,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
-  def ss(thickness: Double, caps: Double, joints: js.UndefOr[scala.Nothing], miterLimit: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: Double,
-    joints: js.UndefOr[scala.Nothing],
-    miterLimit: Double,
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: String): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: Double,
-    joints: String,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: String, miterLimit: Double): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Double, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: Double): Graphics = js.native
-  def ss(
-    thickness: Double,
-    caps: Double,
-    joints: Double,
-    miterLimit: js.UndefOr[scala.Nothing],
-    ignoreScale: Boolean
-  ): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: Double, miterLimit: Double): Graphics = js.native
   def ss(thickness: Double, caps: Double, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Double, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Double, joints: Unit, miterLimit: Double): Graphics = js.native
+  def ss(thickness: Double, caps: Double, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Double, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: String): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: String, miterLimit: Double): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: String, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: String, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Double): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Double, miterLimit: Double): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Double, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Double, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Unit, miterLimit: Double): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Unit, miterLimit: Double, ignoreScale: Boolean): Graphics = js.native
+  def ss(thickness: Double, caps: Unit, joints: Unit, miterLimit: Unit, ignoreScale: Boolean): Graphics = js.native
   
   def store(): Graphics = js.native
   
@@ -469,21 +290,20 @@ trait Graphics extends StObject {
 }
 object Graphics {
   
-  @js.native
   trait Arc extends StObject {
     
     // properties
-    var anticlockwise: Double = js.native
+    var anticlockwise: Double
     
-    var endAngle: Double = js.native
+    var endAngle: Double
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var startAngle: Double = js.native
+    var startAngle: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Arc {
     
@@ -516,19 +336,18 @@ object Graphics {
     }
   }
   
-  @js.native
   trait ArcTo extends StObject {
     
-    var radius: Double = js.native
+    var radius: Double
     
     // properties
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object ArcTo {
     
@@ -558,24 +377,22 @@ object Graphics {
     }
   }
   
-  @js.native
   trait BeginPath extends StObject
   
-  @js.native
   trait BezierCurveTo extends StObject {
     
     // properties
-    var cp1x: Double = js.native
+    var cp1x: Double
     
-    var cp1y: Double = js.native
+    var cp1y: Double
     
-    var cp2x: Double = js.native
+    var cp2x: Double
     
-    var cp2y: Double = js.native
+    var cp2y: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object BezierCurveTo {
     
@@ -608,15 +425,14 @@ object Graphics {
     }
   }
   
-  @js.native
   trait Circle extends StObject {
     
-    var radius: Double = js.native
+    var radius: Double
     
     // properties
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Circle {
     
@@ -640,7 +456,6 @@ object Graphics {
     }
   }
   
-  @js.native
   trait ClosePath extends StObject
   
   @js.native
@@ -669,13 +484,12 @@ object Graphics {
     var style: js.Object = js.native
   }
   
-  @js.native
   trait LineTo extends StObject {
     
     // properties
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object LineTo {
     
@@ -696,12 +510,11 @@ object Graphics {
     }
   }
   
-  @js.native
   trait MoveTo extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object MoveTo {
     
@@ -722,21 +535,20 @@ object Graphics {
     }
   }
   
-  @js.native
   trait PolyStar extends StObject {
     
     // properties
-    var angle: Double = js.native
+    var angle: Double
     
-    var pointSize: Double = js.native
+    var pointSize: Double
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var sides: Double = js.native
+    var sides: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object PolyStar {
     
@@ -769,17 +581,16 @@ object Graphics {
     }
   }
   
-  @js.native
   trait QuadraticCurveTo extends StObject {
     
     // properties
-    var cpx: Double = js.native
+    var cpx: Double
     
-    var cpy: Double = js.native
+    var cpy: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object QuadraticCurveTo {
     
@@ -806,17 +617,16 @@ object Graphics {
     }
   }
   
-  @js.native
   trait Rect extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
     // properties
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Rect {
     
@@ -843,25 +653,24 @@ object Graphics {
     }
   }
   
-  @js.native
   trait RoundRect extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var radiusBL: Double = js.native
+    var radiusBL: Double
     
-    var radiusBR: Double = js.native
+    var radiusBR: Double
     
-    var radiusTL: Double = js.native
+    var radiusTL: Double
     
-    var radiusTR: Double = js.native
+    var radiusTR: Double
     
-    var w: Double = js.native
+    var w: Double
     
     // properties
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object RoundRect {
     
@@ -935,17 +744,16 @@ object Graphics {
     var style: js.Object = js.native
   }
   
-  @js.native
   trait StrokeStyle extends StObject {
     
     // properties
-    var caps: String = js.native
+    var caps: String
     
-    var joints: String = js.native
+    var joints: String
     
-    var miterLimit: Double = js.native
+    var miterLimit: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object StrokeStyle {
     

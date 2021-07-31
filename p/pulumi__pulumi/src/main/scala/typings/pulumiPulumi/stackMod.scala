@@ -7,26 +7,26 @@ import typings.pulumiPulumi.resourceMod.ComponentResource
 import typings.pulumiPulumi.resourceMod.ResourceTransformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
   
-  @JSImport("@pulumi/pulumi/runtime/stack", "getStackResource")
+  @JSImport("@pulumi/pulumi/runtime/stack", JSImport.Namespace)
   @js.native
-  def getStackResource(): js.UndefOr[Stack] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/pulumi/runtime/stack", "registerStackTransformation")
-  @js.native
-  def registerStackTransformation(t: ResourceTransformation): Unit = js.native
+  @scala.inline
+  def getStackResource(): js.UndefOr[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStackResource")().asInstanceOf[js.UndefOr[Stack]]
+  
+  @scala.inline
+  def registerStackTransformation(t: ResourceTransformation): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStackTransformation")(t.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@pulumi/pulumi/runtime/stack", "rootPulumiStackTypeName")
   @js.native
   val rootPulumiStackTypeName: /* "pulumi:pulumi:Stack" */ String = js.native
   
-  @JSImport("@pulumi/pulumi/runtime/stack", "runInPulumiStack")
-  @js.native
-  def runInPulumiStack(init: js.Function0[js.Promise[_]]): js.Promise[js.UndefOr[Inputs]] = js.native
+  @scala.inline
+  def runInPulumiStack(init: js.Function0[js.Promise[js.Any]]): js.Promise[js.UndefOr[Inputs]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runInPulumiStack")(init.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Inputs]]]
   
   /**
     * Stack is the root resource for a Pulumi stack. Before invoking the `init` callback, it registers itself as the root

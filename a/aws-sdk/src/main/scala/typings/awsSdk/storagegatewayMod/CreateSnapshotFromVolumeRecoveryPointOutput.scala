@@ -2,26 +2,24 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSnapshotFromVolumeRecoveryPointOutput extends StObject {
   
   /**
     * The ID of the snapshot.
     */
-  var SnapshotId: js.UndefOr[typings.awsSdk.storagegatewayMod.SnapshotId] = js.native
+  var SnapshotId: js.UndefOr[typings.awsSdk.storagegatewayMod.SnapshotId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the iSCSI volume target. Use the DescribeStorediSCSIVolumes operation to return to retrieve the TargetARN for specified VolumeARN.
     */
-  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.native
+  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.undefined
   
   /**
     * The time the volume was created from the recovery point.
     */
-  var VolumeRecoveryPointTime: js.UndefOr[String] = js.native
+  var VolumeRecoveryPointTime: js.UndefOr[String] = js.undefined
 }
 object CreateSnapshotFromVolumeRecoveryPointOutput {
   

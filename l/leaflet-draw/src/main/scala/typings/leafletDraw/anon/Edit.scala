@@ -2,19 +2,17 @@ package typings.leafletDraw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edit extends StObject {
   
-  var edit: String = js.native
+  var edit: String
   
-  var editDisabled: String = js.native
+  var editDisabled: String
   
-  var remove: String = js.native
+  var remove: String
   
-  var removeDisabled: String = js.native
+  var removeDisabled: String
 }
 object Edit {
   

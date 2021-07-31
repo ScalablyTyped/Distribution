@@ -2,17 +2,15 @@ package typings.rmcTooltip
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdjustX extends StObject {
     
-    var adjustX: Double = js.native
+    var adjustX: Double
     
-    var adjustY: Double = js.native
+    var adjustY: Double
   }
   object AdjustX {
     
@@ -33,16 +31,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Offset extends StObject {
     
-    var offset: js.Array[Double] = js.native
+    var offset: js.Array[Double]
     
-    var overflow: AdjustX = js.native
+    var overflow: AdjustX
     
-    var points: js.Array[String] = js.native
+    var points: js.Array[String]
     
-    var targetOffset: js.Array[Double] = js.native
+    var targetOffset: js.Array[Double]
   }
   object Offset {
     

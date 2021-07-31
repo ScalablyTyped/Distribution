@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeShardsInput extends StObject {
   
   /**
     * The shard ID of the adjacent shard for the merge.
     */
-  var AdjacentShardToMerge: ShardId = js.native
+  var AdjacentShardToMerge: ShardId
   
   /**
     * The shard ID of the shard to combine with the adjacent shard for the merge.
     */
-  var ShardToMerge: ShardId = js.native
+  var ShardToMerge: ShardId
   
   /**
     * The name of the stream for the merge.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
 }
 object MergeShardsInput {
   

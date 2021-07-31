@@ -8,21 +8,19 @@ import typings.awsLambda.commonMod.StringMap
 import typings.awsLambda.userMigrationMod.UserStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DesiredDeliveryMediums extends StObject {
   
-  var desiredDeliveryMediums: js.Array[SMS | EMAIL] = js.native
+  var desiredDeliveryMediums: js.Array[SMS | EMAIL]
   
-  var finalUserStatus: js.UndefOr[UserStatus] = js.native
+  var finalUserStatus: js.UndefOr[UserStatus] = js.undefined
   
-  var forceAliasCreation: js.UndefOr[Boolean] = js.native
+  var forceAliasCreation: js.UndefOr[Boolean] = js.undefined
   
-  var messageAction: js.UndefOr[RESEND | SUPPRESS] = js.native
+  var messageAction: js.UndefOr[RESEND | SUPPRESS] = js.undefined
   
-  var userAttributes: StringMap = js.native
+  var userAttributes: StringMap
 }
 object DesiredDeliveryMediums {
   

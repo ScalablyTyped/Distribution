@@ -2,15 +2,13 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Small extends StObject {
   
-  var small: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.undefined
   
-  var theme: js.UndefOr[BaseFontSizeSpacing] = js.native
+  var theme: js.UndefOr[BaseFontSizeSpacing] = js.undefined
 }
 object Small {
   

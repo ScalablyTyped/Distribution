@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecordsInput extends StObject {
   
   /**
     * The maximum number of records to return from the shard. The upper limit is 1000.
     */
-  var Limit: js.UndefOr[PositiveIntegerObject] = js.native
+  var Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
   
   /**
     * A shard iterator that was retrieved from a previous GetShardIterator operation. This iterator can be used to access the stream records in this shard.
     */
-  var ShardIterator: typings.awsSdk.dynamodbstreamsMod.ShardIterator = js.native
+  var ShardIterator: typings.awsSdk.dynamodbstreamsMod.ShardIterator
 }
 object GetRecordsInput {
   

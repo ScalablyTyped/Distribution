@@ -2,35 +2,33 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyQuestionResponsesFeedResponseMod {
   
-  @js.native
   trait StoryQuestionResponsesFeedResponseResponderInfo extends StObject {
     
-    var background_color: String = js.native
+    var background_color: String
     
-    var latest_question_response_time: Double = js.native
+    var latest_question_response_time: Double
     
-    var max_id: Null = js.native
+    var max_id: Null
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var question: String = js.native
+    var question: String
     
-    var question_id: String = js.native
+    var question_id: String
     
-    var question_response_count: Double = js.native
+    var question_response_count: Double
     
-    var question_type: String = js.native
+    var question_type: String
     
-    var responders: js.Array[StoryQuestionResponsesFeedResponseRespondersItem] = js.native
+    var responders: js.Array[StoryQuestionResponsesFeedResponseRespondersItem]
     
-    var text_color: String = js.native
+    var text_color: String
     
-    var unanswered_response_count: Double = js.native
+    var unanswered_response_count: Double
   }
   object StoryQuestionResponsesFeedResponseResponderInfo {
     
@@ -93,18 +91,17 @@ object storyQuestionResponsesFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuestionResponsesFeedResponseRespondersItem extends StObject {
     
-    var has_shared_response: Boolean = js.native
+    var has_shared_response: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var response: String = js.native
+    var response: String
     
-    var ts: Double = js.native
+    var ts: Double
     
-    var user: StoryQuestionResponsesFeedResponseUser = js.native
+    var user: StoryQuestionResponsesFeedResponseUser
   }
   object StoryQuestionResponsesFeedResponseRespondersItem {
     
@@ -140,12 +137,11 @@ object storyQuestionResponsesFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuestionResponsesFeedResponseRootObject extends StObject {
     
-    var responder_info: StoryQuestionResponsesFeedResponseResponderInfo = js.native
+    var responder_info: StoryQuestionResponsesFeedResponseResponderInfo
     
-    var status: String = js.native
+    var status: String
   }
   object StoryQuestionResponsesFeedResponseRootObject {
     
@@ -166,22 +162,21 @@ object storyQuestionResponsesFeedResponseMod {
     }
   }
   
-  @js.native
   trait StoryQuestionResponsesFeedResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object StoryQuestionResponsesFeedResponseUser {
     

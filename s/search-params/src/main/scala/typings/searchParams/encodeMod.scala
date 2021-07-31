@@ -2,38 +2,35 @@ package typings.searchParams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encodeMod {
   
-  @JSImport("search-params/dist/encode", "decode")
+  @JSImport("search-params/dist/encode", JSImport.Namespace)
   @js.native
-  def decode(value: js.Any, opts: IFinalOptions): String | Boolean | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("search-params/dist/encode", "encode")
-  @js.native
-  def encode(name: String, value: js.Any, opts: IFinalOptions): String = js.native
+  @scala.inline
+  def decode(value: js.Any, opts: IFinalOptions): String | Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Boolean | Null]
   
-  @JSImport("search-params/dist/encode", "encodeArray")
-  @js.native
-  def encodeArray(name: String, arr: js.Array[_], opts: IFinalOptions): String = js.native
+  @scala.inline
+  def encode(name: String, value: js.Any, opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("search-params/dist/encode", "makeOptions")
-  @js.native
-  def makeOptions(): IFinalOptions = js.native
-  @JSImport("search-params/dist/encode", "makeOptions")
-  @js.native
-  def makeOptions(opts: IOptions): IFinalOptions = js.native
+  @scala.inline
+  def encodeArray(name: String, arr: js.Array[js.Any], opts: IFinalOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeArray")(name.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def makeOptions(): IFinalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptions")().asInstanceOf[IFinalOptions]
+  @scala.inline
+  def makeOptions(opts: IOptions): IFinalOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("makeOptions")(opts.asInstanceOf[js.Any]).asInstanceOf[IFinalOptions]
+  
   trait IFinalOptions extends StObject {
     
-    var arrayFormat: typings.searchParams.encodeMod.arrayFormat = js.native
+    var arrayFormat: typings.searchParams.encodeMod.arrayFormat
     
-    var booleanFormat: typings.searchParams.encodeMod.booleanFormat = js.native
+    var booleanFormat: typings.searchParams.encodeMod.booleanFormat
     
-    var nullFormat: typings.searchParams.encodeMod.nullFormat = js.native
+    var nullFormat: typings.searchParams.encodeMod.nullFormat
   }
   object IFinalOptions {
     
@@ -57,14 +54,13 @@ object encodeMod {
     }
   }
   
-  @js.native
   trait IOptions extends StObject {
     
-    var arrayFormat: js.UndefOr[typings.searchParams.encodeMod.arrayFormat] = js.native
+    var arrayFormat: js.UndefOr[typings.searchParams.encodeMod.arrayFormat] = js.undefined
     
-    var booleanFormat: js.UndefOr[typings.searchParams.encodeMod.booleanFormat] = js.native
+    var booleanFormat: js.UndefOr[typings.searchParams.encodeMod.booleanFormat] = js.undefined
     
-    var nullFormat: js.UndefOr[typings.searchParams.encodeMod.nullFormat] = js.native
+    var nullFormat: js.UndefOr[typings.searchParams.encodeMod.nullFormat] = js.undefined
   }
   object IOptions {
     

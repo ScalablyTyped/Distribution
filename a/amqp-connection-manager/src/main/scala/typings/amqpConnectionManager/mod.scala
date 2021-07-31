@@ -17,17 +17,18 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("amqp-connection-manager", "connect")
+  @JSImport("amqp-connection-manager", JSImport.Namespace)
   @js.native
-  def connect(urls: js.Array[String]): AmqpConnectionManager = js.native
-  @JSImport("amqp-connection-manager", "connect")
-  @js.native
-  def connect(urls: js.Array[String], options: AmqpConnectionManagerOptions): AmqpConnectionManager = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def connect(urls: js.Array[String]): AmqpConnectionManager = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any]).asInstanceOf[AmqpConnectionManager]
+  @scala.inline
+  def connect(urls: js.Array[String], options: AmqpConnectionManagerOptions): AmqpConnectionManager = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(urls.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AmqpConnectionManager]
   
   @js.native
   trait AmqpConnectionManager extends EventEmitter {
@@ -75,7 +76,6 @@ object mod {
     def prependOnceListener_disconnect(event: disconnect, listener: js.Function1[/* arg */ Err, Unit]): this.type = js.native
   }
   
-  @js.native
   trait AmqpConnectionManagerOptions extends StObject {
     
     /**
@@ -84,7 +84,7 @@ object mod {
       * These are passed through directly to amqplib (http://www.squaremobius.net/amqp.node/channel_api.html#connect),
       * which in turn passes them through to tls.connect (https://nodejs.org/api/tls.html#tls_tls_connect_options_callback)
       */
-    var connectionOptions: js.UndefOr[ConnectionOptionsnoDelayb] = js.native
+    var connectionOptions: js.UndefOr[ConnectionOptionsnoDelayb] = js.undefined
     
     /**
       * is a function which returns one or more servers to connect to. This should return either a single URL or an array of URLs.
@@ -93,17 +93,17 @@ object mod {
       */
     var findServers: js.UndefOr[
         (js.Function1[/* callback */ js.Function1[/* urls */ String | js.Array[String], Unit], Unit]) | (js.Function0[js.Promise[String | js.Array[String]]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Interval to send heartbeats to broker. Defaults to 5 seconds.
       */
-    var heartbeatIntervalInSeconds: js.UndefOr[Double] = js.native
+    var heartbeatIntervalInSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The time to wait before trying to reconnect. If not specified, defaults to heartbeatIntervalInSeconds
       */
-    var reconnectTimeInSeconds: js.UndefOr[Double] = js.native
+    var reconnectTimeInSeconds: js.UndefOr[Double] = js.undefined
   }
   object AmqpConnectionManagerOptions {
     
@@ -192,9 +192,9 @@ object mod {
       * @param requeue
       */
     def nack(message: Message): Unit = js.native
-    def nack(message: Message, allUpTo: js.UndefOr[scala.Nothing], requeue: Boolean): Unit = js.native
     def nack(message: Message, allUpTo: Boolean): Unit = js.native
     def nack(message: Message, allUpTo: Boolean, requeue: Boolean): Unit = js.native
+    def nack(message: Message, allUpTo: Unit, requeue: Boolean): Unit = js.native
     
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
@@ -229,7 +229,7 @@ object mod {
       exchange: String,
       routingKey: String,
       content: js.Object,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): js.Promise[Unit] = js.native
     def publish(exchange: String, routingKey: String, content: js.Object, options: Publish): js.Promise[Unit] = js.native
@@ -253,7 +253,7 @@ object mod {
       exchange: String,
       routingKey: String,
       content: Buffer,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): js.Promise[Unit] = js.native
     def publish(exchange: String, routingKey: String, content: Buffer, options: Publish): js.Promise[Unit] = js.native
@@ -284,7 +284,7 @@ object mod {
     def sendToQueue(
       queue: String,
       content: js.Object,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): js.Promise[Unit] = js.native
     def sendToQueue(queue: String, content: js.Object, options: Publish): js.Promise[Unit] = js.native
@@ -305,7 +305,7 @@ object mod {
     def sendToQueue(
       queue: String,
       content: Buffer,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ js.Any, /* ok */ Empty, Unit]
     ): js.Promise[Unit] = js.native
     def sendToQueue(queue: String, content: Buffer, options: Publish): js.Promise[Unit] = js.native
@@ -322,25 +322,24 @@ object mod {
     def waitForConnect(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait CreateChannelOpts extends StObject {
     
     /**
       * if true, then ChannelWrapper assumes all messages passed to publish() and sendToQueue() are plain JSON objects.
       * These will be encoded automatically before being sent.
       */
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name for this channel. Used for debugging.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A function to call whenever we reconnect to the broker (and therefore create a new underlying channel.)
       * This function should either accept a callback, or return a Promise. See addSetup below
       */
-    var setup: js.UndefOr[SetupFunc] = js.native
+    var setup: js.UndefOr[SetupFunc] = js.undefined
   }
   object CreateChannelOpts {
     

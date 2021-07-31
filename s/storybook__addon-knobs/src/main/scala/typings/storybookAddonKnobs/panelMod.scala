@@ -8,7 +8,6 @@ import typings.storybookAddonKnobs.anon.PickAPIonoffemitgetQueryP
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -79,10 +78,9 @@ object panelMod {
     var stopListeningOnStory: js.Function = js.native
   }
   
-  @js.native
   trait KnobPanelOptions extends StObject {
     
-    var timestamps: js.UndefOr[Boolean] = js.native
+    var timestamps: js.UndefOr[Boolean] = js.undefined
   }
   object KnobPanelOptions {
     
@@ -103,14 +101,13 @@ object panelMod {
     }
   }
   
-  @js.native
   trait KnobPanelProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var api: PickAPIonoffemitgetQueryP = js.native
+    var api: PickAPIonoffemitgetQueryP
     
-    var onReset: js.UndefOr[js.Object] = js.native
+    var onReset: js.UndefOr[js.Object] = js.undefined
   }
   object KnobPanelProps {
     
@@ -137,10 +134,9 @@ object panelMod {
     }
   }
   
-  @js.native
   trait KnobPanelState extends StObject {
     
-    var knobs: Record[String, KnobStoreKnob] = js.native
+    var knobs: Record[String, KnobStoreKnob]
   }
   object KnobPanelState {
     

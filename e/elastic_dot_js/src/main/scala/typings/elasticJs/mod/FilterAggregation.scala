@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "FilterAggregation")
 @js.native
-class FilterAggregation protected () extends Aggregation {
+class FilterAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Defines a single bucket of all the documents that match a given filter.
     */

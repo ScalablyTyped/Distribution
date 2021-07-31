@@ -6,40 +6,38 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LimitExceededException
-  extends SmithyException
+  extends StObject
+     with SmithyException
      with MetadataBearer {
   
   @JSName("$fault")
-  var $fault_LimitExceededException: client = js.native
+  var $fault_LimitExceededException: client
   
   /**
     * <p>The message returned by a LimitExceededException.</p>
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   @JSName("name")
-  var name_LimitExceededException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.LimitExceededException = js.native
+  var name_LimitExceededException: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.LimitExceededException
 }
 object LimitExceededException {
   
   @scala.inline
-  def apply(
-    $fault: client,
-    $metadata: ResponseMetadata,
-    name: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.LimitExceededException
-  ): LimitExceededException = {
-    val __obj = js.Dynamic.literal($fault = $fault.asInstanceOf[js.Any], $metadata = $metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply($metadata: ResponseMetadata): LimitExceededException = {
+    val __obj = js.Dynamic.literal($fault = "client", $metadata = $metadata.asInstanceOf[js.Any], name = "LimitExceededException")
     __obj.asInstanceOf[LimitExceededException]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "LimitExceededException.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "LimitExceededException")
   @js.native
-  def filterSensitiveLog(obj: LimitExceededException): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: LimitExceededException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class LimitExceededExceptionMutableBuilder[Self <: LimitExceededException] (val x: Self) extends AnyVal {

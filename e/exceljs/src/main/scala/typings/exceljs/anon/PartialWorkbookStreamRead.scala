@@ -5,22 +5,20 @@ import typings.exceljs.exceljsStrings.emit
 import typings.exceljs.exceljsStrings.ignore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.WorkbookStreamReaderOptions> */
-@js.native
 trait PartialWorkbookStreamRead extends StObject {
   
-  var entries: js.UndefOr[emit | ignore] = js.native
+  var entries: js.UndefOr[emit | ignore] = js.undefined
   
-  var hyperlinks: js.UndefOr[cache | emit | ignore] = js.native
+  var hyperlinks: js.UndefOr[cache | emit | ignore] = js.undefined
   
-  var sharedStrings: js.UndefOr[cache | emit | ignore] = js.native
+  var sharedStrings: js.UndefOr[cache | emit | ignore] = js.undefined
   
-  var styles: js.UndefOr[cache | ignore] = js.native
+  var styles: js.UndefOr[cache | ignore] = js.undefined
   
-  var worksheets: js.UndefOr[emit | ignore] = js.native
+  var worksheets: js.UndefOr[emit | ignore] = js.undefined
 }
 object PartialWorkbookStreamRead {
   

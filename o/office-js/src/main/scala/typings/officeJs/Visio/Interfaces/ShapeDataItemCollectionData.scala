@@ -2,14 +2,12 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "shapeDataItemCollection.toJSON()". */
-@js.native
 trait ShapeDataItemCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[ShapeDataItemData]] = js.native
+  var items: js.UndefOr[js.Array[ShapeDataItemData]] = js.undefined
 }
 object ShapeDataItemCollectionData {
   

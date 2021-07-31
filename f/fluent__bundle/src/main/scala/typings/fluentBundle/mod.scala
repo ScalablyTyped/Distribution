@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,13 +21,13 @@ object mod {
     def addResource(res: FluentResource, options: FluentBundleAddResourceOptions): js.Array[String] = js.native
     
     def formatPattern(pattern: String): String = js.native
-    def formatPattern(pattern: String, args: js.UndefOr[scala.Nothing], errors: js.Array[Error]): String = js.native
     def formatPattern(pattern: String, args: js.Object): String = js.native
     def formatPattern(pattern: String, args: js.Object, errors: js.Array[Error]): String = js.native
+    def formatPattern(pattern: String, args: Unit, errors: js.Array[Error]): String = js.native
     def formatPattern(pattern: Pattern): String = js.native
-    def formatPattern(pattern: Pattern, args: js.UndefOr[scala.Nothing], errors: js.Array[Error]): String = js.native
     def formatPattern(pattern: Pattern, args: js.Object): String = js.native
     def formatPattern(pattern: Pattern, args: js.Object, errors: js.Array[Error]): String = js.native
+    def formatPattern(pattern: Pattern, args: Unit, errors: js.Array[Error]): String = js.native
     
     def getMessage(id: String): RawMessage = js.native
     
@@ -47,7 +46,16 @@ object mod {
   
   @JSImport("@fluent/bundle", "FluentError")
   @js.native
-  class FluentError () extends Error
+  class FluentError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("@fluent/bundle", "FluentNumber")
   @js.native
@@ -71,10 +79,9 @@ object mod {
     def toString(scope: Scope): String = js.native
   }
   
-  @js.native
   trait FluentBundleAddResourceOptions extends StObject {
     
-    var allowOverrides: js.UndefOr[Boolean] = js.native
+    var allowOverrides: js.UndefOr[Boolean] = js.undefined
   }
   object FluentBundleAddResourceOptions {
     
@@ -95,14 +102,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FluentBundleConstructorOptions extends StObject {
     
-    var functions: js.UndefOr[js.Object] = js.native
+    var functions: js.UndefOr[js.Object] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var transform: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var useIsolating: js.UndefOr[Boolean] = js.native
+    var useIsolating: js.UndefOr[Boolean] = js.undefined
   }
   object FluentBundleConstructorOptions {
     
@@ -122,7 +128,7 @@ object mod {
       def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
       @scala.inline
-      def setTransform(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      def setTransform(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
@@ -135,21 +141,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Pattern extends StObject
   
-  @js.native
   trait RawMessage extends StObject {
     
-    var attributes: Record[String, Pattern] = js.native
+    var attributes: Record[String, Pattern]
     
-    var value: Pattern | Null = js.native
+    var value: Pattern | Null
   }
   object RawMessage {
     
     @scala.inline
     def apply(attributes: Record[String, Pattern]): RawMessage = {
-      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[RawMessage]
     }
     
@@ -167,17 +171,16 @@ object mod {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    def cloneForTermReference(args: js.Object): Scope = js.native
+    def cloneForTermReference(args: js.Object): Scope
     
     def memoizeIntlObject[OptsType, ObjectType](
       ctor: Instantiable2[/* locales */ js.Array[String], /* opts */ OptsType, ObjectType],
       opts: OptsType
-    ): ObjectType = js.native
+    ): ObjectType
     
-    def reportError(error: String): Unit = js.native
+    def reportError(error: String): Unit
   }
   object Scope {
     

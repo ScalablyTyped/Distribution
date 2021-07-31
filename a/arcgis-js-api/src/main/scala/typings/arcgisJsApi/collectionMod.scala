@@ -7,7 +7,6 @@ import typings.arcgisJsApi.esri.Constructor
 import typings.arcgisJsApi.esri.Types
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* static members */
@@ -15,28 +14,35 @@ object collectionMod {
   
   @JSImport("esri/core/Collection", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Collection[T] {
-    def this(values: js.Array[_]) = this()
-    def this(values: Collection[_]) = this()
+  class ^[T] ()
+    extends StObject
+       with Collection[T] {
+    def this(values: js.Array[js.Any]) = this()
+    def this(values: Collection[js.Any]) = this()
   }
+  @JSImport("esri/core/Collection", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("esri/core/Collection", "isCollection")
-  @js.native
-  def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
-  @JSImport("esri/core/Collection", "isCollection")
-  @js.native
-  def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = js.native
+  @scala.inline
+  def isCollection[T](value: js.Any): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is arcgis-js-api.__esri.Collection<T> */ Boolean]
+  @scala.inline
+  def isCollection[T](value: Collection[T]): /* is arcgis-js-api.__esri.Collection<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(value.asInstanceOf[js.Any]).asInstanceOf[/* is arcgis-js-api.__esri.Collection<T> */ Boolean]
   
-  @JSImport("esri/core/Collection", "ofType")
-  @js.native
+  @scala.inline
   def ofType[T /* <: Base */, Base](`type`: Constructor[T]): Instantiable1[
     /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
     Collection[T]
-  ] = js.native
-  @JSImport("esri/core/Collection", "ofType")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[
+    /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
+    Collection[T]
+  ]]
+  @scala.inline
   def ofType[T /* <: Base */, Base](`type`: Types[T, Base]): Instantiable1[
     /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
     Collection[T]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[
+    /* items */ js.UndefOr[js.Array[T] | Collection[T] | (Items[T, Base])], 
+    Collection[T]
+  ]]
 }

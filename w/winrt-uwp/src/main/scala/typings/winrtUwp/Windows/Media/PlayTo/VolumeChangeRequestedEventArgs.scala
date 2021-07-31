@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the VolumeChangeRequested event. */
-@js.native
 trait VolumeChangeRequestedEventArgs extends StObject {
   
   /** Gets the new volume level. */
-  var volume: Double = js.native
+  var volume: Double
 }
 object VolumeChangeRequestedEventArgs {
   

@@ -7,14 +7,15 @@ import typings.ionicCore.tabBarInterfaceMod.TabBarChangedEventDetail
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarMod {
   
   @JSImport("@ionic/core/dist/types/components/tab-bar/tab-bar", "TabBar")
   @js.native
-  class TabBar () extends ComponentInterface {
+  class TabBar ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

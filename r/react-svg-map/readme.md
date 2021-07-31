@@ -12,7 +12,7 @@ A set of React.js components to display an interactive SVG map
 | Keywords           | react, component, svg, interactive, map, checkbox, radiobutton |
 | # releases         | 12 |
 | # dependents       | 1 |
-| # downloads        | 16806 |
+| # downloads        | 22310 |
 | # stars            | 0 |
 
 ## Links

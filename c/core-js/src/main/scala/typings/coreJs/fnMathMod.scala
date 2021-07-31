@@ -2,77 +2,63 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* was `typeof core.Math` */
 object fnMathMod {
   
-  @JSImport("core-js/fn/math", "acosh")
+  @JSImport("core-js/fn/math", JSImport.Namespace)
   @js.native
-  def acosh(x: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("core-js/fn/math", "asinh")
-  @js.native
-  def asinh(x: Double): Double = js.native
+  @scala.inline
+  def acosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "atanh")
-  @js.native
-  def atanh(x: Double): Double = js.native
+  @scala.inline
+  def asinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "cbrt")
-  @js.native
-  def cbrt(x: Double): Double = js.native
+  @scala.inline
+  def atanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "clz32")
-  @js.native
-  def clz32(x: Double): Double = js.native
+  @scala.inline
+  def cbrt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "cosh")
-  @js.native
-  def cosh(x: Double): Double = js.native
+  @scala.inline
+  def clz32(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clz32")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "expm1")
-  @js.native
-  def expm1(x: Double): Double = js.native
+  @scala.inline
+  def cosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "fround")
-  @js.native
-  def fround(x: Double): Double = js.native
+  @scala.inline
+  def expm1(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "hypot")
-  @js.native
-  def hypot(values: Double*): Double = js.native
+  @scala.inline
+  def fround(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fround")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "imul")
-  @js.native
-  def imul(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def hypot(values: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "log10")
-  @js.native
-  def log10(x: Double): Double = js.native
+  @scala.inline
+  def imul(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "log1p")
-  @js.native
-  def log1p(x: Double): Double = js.native
+  @scala.inline
+  def log10(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "log2")
-  @js.native
-  def log2(x: Double): Double = js.native
+  @scala.inline
+  def log1p(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "sign")
-  @js.native
-  def sign(x: Double): Double = js.native
+  @scala.inline
+  def log2(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "sinh")
-  @js.native
-  def sinh(x: Double): Double = js.native
+  @scala.inline
+  def sign(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "tanh")
-  @js.native
-  def tanh(x: Double): Double = js.native
+  @scala.inline
+  def sinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/fn/math", "trunc")
-  @js.native
-  def trunc(x: Double): Double = js.native
+  @scala.inline
+  def tanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def trunc(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

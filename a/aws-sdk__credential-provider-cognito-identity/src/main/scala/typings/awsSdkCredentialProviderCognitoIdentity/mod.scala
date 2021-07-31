@@ -5,18 +5,19 @@ import typings.awsSdkCredentialProviderCognitoIdentity.fromCognitoIdentityPoolMo
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity", "fromCognitoIdentity")
+  @JSImport("@aws-sdk/credential-provider-cognito-identity", JSImport.Namespace)
   @js.native
-  def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/credential-provider-cognito-identity", "fromCognitoIdentityPool")
-  @js.native
+  @scala.inline
+  def fromCognitoIdentity(parameters: FromCognitoIdentityParameters): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentity")(parameters.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  
+  @scala.inline
   def fromCognitoIdentityPool(
     hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier: FromCognitoIdentityPoolParameters
-  ): CredentialProvider = js.native
+  ): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCognitoIdentityPool")(hasAccountIdCacheClientCustomRoleArnIdentityPoolIdLoginsUserIdentifier.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
 }

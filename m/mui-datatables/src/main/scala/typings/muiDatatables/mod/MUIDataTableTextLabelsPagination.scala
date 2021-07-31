@@ -2,21 +2,19 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableTextLabelsPagination extends StObject {
   
-  var displayRows: String = js.native
+  var displayRows: String
   
-  var jumpToPage: String = js.native
+  var jumpToPage: String
   
-  var next: String = js.native
+  var next: String
   
-  var previous: String = js.native
+  var previous: String
   
-  var rowsPerPage: String = js.native
+  var rowsPerPage: String
 }
 object MUIDataTableTextLabelsPagination {
   

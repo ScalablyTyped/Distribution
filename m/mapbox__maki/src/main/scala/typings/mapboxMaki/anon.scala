@@ -3,15 +3,13 @@ package typings.mapboxMaki
 import typings.mapboxMaki.mod.IconName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait All extends StObject {
     
-    var all: js.Array[IconName] = js.native
+    var all: js.Array[IconName]
   }
   object All {
     

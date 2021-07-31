@@ -19,47 +19,46 @@ import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Function, 'type' | 'id'> */
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
-@js.native
 trait FunctionDeclaration
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with FunctionKind
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var body: BlockStatementKind = js.native
+  var body: BlockStatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.native
+  var defaults: js.UndefOr[js.Array[ExpressionKind | Null]] = js.undefined
   
-  var expression: js.UndefOr[Boolean] = js.native
+  var expression: js.UndefOr[Boolean] = js.undefined
   
-  var generator: js.UndefOr[Boolean] = js.native
+  var generator: js.UndefOr[Boolean] = js.undefined
   
-  var id: IdentifierKind | Null = js.native
+  var id: IdentifierKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var params: js.Array[PatternKind] = js.native
+  var params: js.Array[PatternKind]
   
-  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.native
+  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.undefined
   
-  var rest: js.UndefOr[IdentifierKind | Null] = js.native
+  var rest: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.native
+  var returnType: js.UndefOr[TypeAnnotationKind | TSTypeAnnotationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.FunctionDeclaration = js.native
+  var `type`: typings.astTypes.astTypesStrings.FunctionDeclaration
   
-  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclarationKind | TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object FunctionDeclaration {
   

@@ -2,15 +2,13 @@ package typings.antvDomUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Remove extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object Remove {
     

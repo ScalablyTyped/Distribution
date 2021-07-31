@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationPurchaseRecommendationMetadata extends StObject {
   
   /**
     * The timestamp for when AWS made this recommendation.
     */
-  var GenerationTimestamp: js.UndefOr[GenericString] = js.native
+  var GenerationTimestamp: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The ID for this specific recommendation.
     */
-  var RecommendationId: js.UndefOr[GenericString] = js.native
+  var RecommendationId: js.UndefOr[GenericString] = js.undefined
 }
 object ReservationPurchaseRecommendationMetadata {
   

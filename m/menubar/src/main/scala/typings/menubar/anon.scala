@@ -22,40 +22,38 @@ import typings.menubar.menubarStrings.trayLeft
 import typings.menubar.menubarStrings.trayRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<menubar.menubar/lib/types.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var browserWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.native
+    var browserWindow: js.UndefOr[BrowserWindowConstructorOptions] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[String | NativeImage_] = js.native
+    var icon: js.UndefOr[String | NativeImage_] = js.undefined
     
-    var index: js.UndefOr[String | `false`] = js.native
+    var index: js.UndefOr[String | `false`] = js.undefined
     
-    var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.native
+    var loadUrlOptions: js.UndefOr[LoadURLOptions] = js.undefined
     
-    var preloadWindow: js.UndefOr[Boolean] = js.native
+    var preloadWindow: js.UndefOr[Boolean] = js.undefined
     
-    var showDockIcon: js.UndefOr[Boolean] = js.native
+    var showDockIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showOnAllWorkspaces: js.UndefOr[Boolean] = js.native
+    var showOnAllWorkspaces: js.UndefOr[Boolean] = js.undefined
     
-    var showOnRightClick: js.UndefOr[Boolean] = js.native
+    var showOnRightClick: js.UndefOr[Boolean] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
-    var tray: js.UndefOr[Tray] = js.native
+    var tray: js.UndefOr[Tray] = js.undefined
     
     var windowPosition: js.UndefOr[
         trayLeft | trayBottomLeft | trayRight | trayBottomRight | trayCenter | trayBottomCenter | topLeft | topRight | bottomLeft | bottomRight | topCenter | bottomCenter | leftCenter | rightCenter | center
-      ] = js.native
+      ] = js.undefined
   }
   object PartialOptions {
     

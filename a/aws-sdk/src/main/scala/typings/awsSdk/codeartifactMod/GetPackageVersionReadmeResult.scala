@@ -2,42 +2,40 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPackageVersionReadmeResult extends StObject {
   
   /**
     *  The name of the package that contains the returned readme file. 
     */
   @JSName("package")
-  var _package: js.UndefOr[PackageName] = js.native
+  var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
     *  The format of the package with the requested readme file. Valid format types are:     npm     pypi     maven   
     */
-  var format: js.UndefOr[PackageFormat] = js.native
+  var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The text of the returned readme file. 
     */
-  var readme: js.UndefOr[String] = js.native
+  var readme: js.UndefOr[String] = js.undefined
   
   /**
     *  The version of the package with the requested readme file. 
     */
-  var version: js.UndefOr[PackageVersion] = js.native
+  var version: js.UndefOr[PackageVersion] = js.undefined
   
   /**
     *  The current revision associated with the package version. 
     */
-  var versionRevision: js.UndefOr[PackageVersionRevision] = js.native
+  var versionRevision: js.UndefOr[PackageVersionRevision] = js.undefined
 }
 object GetPackageVersionReadmeResult {
   

@@ -3,16 +3,17 @@ package typings.wonka
 import typings.wonka.wonkaTypesMod.Operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wonkaOperatorOnPushMod {
   
-  @JSImport("wonka/src/operators/wonka_operator_onPush", "onPush")
+  @JSImport("wonka/src/operators/wonka_operator_onPush", JSImport.Namespace)
   @js.native
-  def onPush[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wonka/src/operators/wonka_operator_onPush", "tap")
-  @js.native
-  def tap[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = js.native
+  @scala.inline
+  def onPush[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPush")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  
+  @scala.inline
+  def tap[A](f: js.Function1[/* value */ A, Unit]): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

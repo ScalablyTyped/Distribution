@@ -2,16 +2,14 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterConstructorOptions extends StObject {
   
   /**
     * The path to the certificate to use for SSL connections
     */
-  var certpath: String = js.native
+  var certpath: String
 }
 object ClusterConstructorOptions {
   

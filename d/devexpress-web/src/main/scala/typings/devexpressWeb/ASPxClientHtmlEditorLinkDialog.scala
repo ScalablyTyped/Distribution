@@ -2,69 +2,69 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Link dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorLinkDialog extends ASPxClientHtmlEditorDialogBase {
+trait ASPxClientHtmlEditorLinkDialog
+  extends StObject
+     with ASPxClientHtmlEditorDialogBase {
   
   /**
     * Provides access to the client object of the "E-mail to" text box in the Html Editor's Link dialog.
     */
-  def GetEmailTextBox(): ASPxClientTextBox = js.native
+  def GetEmailTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the file manager used in the Link dialog's "Select Document" popup window.
     */
-  def GetFileManager(): ASPxClientFileManager = js.native
+  def GetFileManager(): ASPxClientFileManager
   
   /**
     * Provides access to the client radio button list object used to specify the link type in the Html Editor's Link dialog.
     */
-  def GetLinkTypeRadioButtonList(): ASPxClientRadioButtonList = js.native
+  def GetLinkTypeRadioButtonList(): ASPxClientRadioButtonList
   
   /**
     * Provides access to the client object of the "Open in new window" check box in the Html Editor's Link dialog.
     */
-  def GetOpenInNewWindowCheckBox(): ASPxClientCheckBox = js.native
+  def GetOpenInNewWindowCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Cancel" button in the Link dialog's "Select Document" popup window.
     */
-  def GetSelectDocumentPopupCancelButton(): ASPxClientButton = js.native
+  def GetSelectDocumentPopupCancelButton(): ASPxClientButton
   
   /**
     * Provides access to the client popup control object that is the "Select Document" popup window in the Html Editor's Link dialog.
     */
-  def GetSelectDocumentPopupControl(): ASPxClientPopupControl = js.native
+  def GetSelectDocumentPopupControl(): ASPxClientPopupControl
   
   /**
     * Provides access to the client object of the "Select" button in the Link dialog's "Select Document" popup window.
     */
-  def GetSelectDocumentPopupSelectButton(): ASPxClientButton = js.native
+  def GetSelectDocumentPopupSelectButton(): ASPxClientButton
   
   /**
     * Provides access to the client object of the "Subject" text box in the Html Editor's Link dialog.
     */
-  def GetSubjectTextBox(): ASPxClientTextBox = js.native
+  def GetSubjectTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "Text" text box in the Html Editor's Link dialog.
     */
-  def GetTextTextBox(): ASPxClientTextBox = js.native
+  def GetTextTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "ToolTip" text box in the Html Editor's Link dialog.
     */
-  def GetTooltipTextBox(): ASPxClientTextBox = js.native
+  def GetTooltipTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "URL" text box in the Html Editor's Link dialog.
     */
-  def GetUrlTextBox(): ASPxClientTextBox = js.native
+  def GetUrlTextBox(): ASPxClientTextBox
 }
 object ASPxClientHtmlEditorLinkDialog {
   

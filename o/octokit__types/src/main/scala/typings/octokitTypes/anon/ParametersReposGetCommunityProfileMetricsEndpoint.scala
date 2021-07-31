@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetCommunityProfileMetricsResponse
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetCommunityProfileMetricsEndpoint extends StObject {
   
-  var parameters: ReposGetCommunityProfileMetricsEndpoint = js.native
+  var parameters: ReposGetCommunityProfileMetricsEndpoint
   
-  var request: ReposGetCommunityProfileMetricsRequestOptions = js.native
+  var request: ReposGetCommunityProfileMetricsRequestOptions
   
-  var response: OctokitResponse[ReposGetCommunityProfileMetricsResponseData] = js.native
+  var response: OctokitResponse[ReposGetCommunityProfileMetricsResponseData]
 }
 object ParametersReposGetCommunityProfileMetricsEndpoint {
   

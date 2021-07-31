@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invalid extends StObject {
   
-  var invalid: js.UndefOr[String] = js.native
+  var invalid: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
 }
 object Invalid {
   

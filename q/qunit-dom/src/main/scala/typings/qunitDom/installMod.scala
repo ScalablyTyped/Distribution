@@ -3,12 +3,14 @@ package typings.qunitDom
 import typings.qunitDom.mod.global.Assert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object installMod {
   
-  @JSImport("qunit-dom/dist/install", JSImport.Default)
+  @JSImport("qunit-dom/dist/install", JSImport.Namespace)
   @js.native
-  def default(assert: Assert): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(assert: Assert): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(assert.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

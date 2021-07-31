@@ -15,7 +15,6 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statedbMod {
@@ -27,7 +26,9 @@ object statedbMod {
     *
     * @param options - The instantiation options for a state database.
     */
-  class StateDB[T /* <: ReadonlyPartialJSONValue */] () extends IStateDB[T] {
+  class StateDB[T /* <: ReadonlyPartialJSONValue */] ()
+    extends StObject
+       with IStateDB[T] {
     def this(options: IOptions[T]) = this()
     
     var _changed: js.Any = js.native
@@ -88,7 +89,9 @@ object statedbMod {
       */
     @JSImport("@jupyterlab/statedb/lib/statedb", "StateDB.Connector")
     @js.native
-    class Connector () extends IDataConnector[String, String, String, String] {
+    class Connector ()
+      extends StObject
+         with IDataConnector[String, String, String, String] {
       
       var _storage: js.Any = js.native
     }
@@ -96,7 +99,6 @@ object statedbMod {
     /**
       * A state database change.
       */
-    @js.native
     trait Change extends StObject {
       
       /**
@@ -105,18 +107,18 @@ object statedbMod {
         * #### Notes
         * This field is set to `null` for global changes (i.e. `clear`).
         */
-      var id: String | Null = js.native
+      var id: String | Null
       
       /**
         * The type of change.
         */
-      var `type`: clear | remove | save = js.native
+      var `type`: clear | remove | save
     }
     object Change {
       
       @scala.inline
       def apply(`type`: clear | remove | save): Change = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(id = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Change]
       }
@@ -143,27 +145,26 @@ object statedbMod {
     /**
       * A data transformation that can be applied to a state database.
       */
-    @js.native
     trait DataTransform[T /* <: ReadonlyPartialJSONValue */] extends StObject {
       
       /**
         * The contents of the change operation.
         */
-      var contents: Content[T] | Null = js.native
+      var contents: Content[T] | Null
       
-      var `type`: cancel | clear | merge | overwrite = js.native
+      var `type`: cancel | clear | merge | overwrite
     }
     object DataTransform {
       
       @scala.inline
       def apply[T /* <: ReadonlyPartialJSONValue */](`type`: cancel | clear | merge | overwrite): DataTransform[T] = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(contents = null)
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[DataTransform[T]]
       }
       
       @scala.inline
-      implicit class DataTransformMutableBuilder[Self <: DataTransform[_], T /* <: ReadonlyPartialJSONValue */] (val x: Self with DataTransform[T]) extends AnyVal {
+      implicit class DataTransformMutableBuilder[Self <: DataTransform[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & DataTransform[T]) extends AnyVal {
         
         @scala.inline
         def setContents(value: Content[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
@@ -179,20 +180,19 @@ object statedbMod {
     /**
       * The instantiation options for a state database.
       */
-    @js.native
     trait IOptions[T /* <: ReadonlyPartialJSONValue */] extends StObject {
       
       /**
         * Optional string key/value connector. Defaults to in-memory connector.
         */
-      var connector: js.UndefOr[IDataConnector[String, String, String, String]] = js.native
+      var connector: js.UndefOr[IDataConnector[String, String, String, String]] = js.undefined
       
       /**
         * An optional promise that resolves with a data transformation that is
         * applied to the database contents before the database begins resolving
         * client requests.
         */
-      var transform: js.UndefOr[js.Promise[DataTransform[T]]] = js.native
+      var transform: js.UndefOr[js.Promise[DataTransform[T]]] = js.undefined
     }
     object IOptions {
       
@@ -203,7 +203,7 @@ object statedbMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T /* <: ReadonlyPartialJSONValue */] (val x: Self with IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T /* <: ReadonlyPartialJSONValue */] (val x: Self & IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setConnector(value: IDataConnector[String, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])

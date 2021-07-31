@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.com_.sun.star.frame.XController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This factory is typically created indirectly by registering it in the configuration and have the {@link XModuleController} create it on demand.
   */
-@js.native
-trait BasicToolBarFactory extends XResourceFactory {
+trait BasicToolBarFactory
+  extends StObject
+     with XResourceFactory {
   
   /** Give the controller to new instances so that they have access to the drawing framework controllers. */
-  def create(xController: XController): Unit = js.native
+  def create(xController: XController): Unit
 }
 object BasicToolBarFactory {
   

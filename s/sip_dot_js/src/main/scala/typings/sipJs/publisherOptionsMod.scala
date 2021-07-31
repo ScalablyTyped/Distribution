@@ -3,39 +3,37 @@ package typings.sipJs
 import typings.sipJs.anon.FromTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publisherOptionsMod {
   
-  @js.native
   trait PublisherOptions extends StObject {
     
     /** @deprecated TODO: provide alternative. */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
     /**
       * Expire value for the published event.
       * @defaultValue 3600
       */
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of extra headers added to the PUBLISH request message.
       */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /** @deprecated TODO: provide alternative. */
-    var params: js.UndefOr[FromTag] = js.native
+    var params: js.UndefOr[FromTag] = js.undefined
     
     /**
       * If set true, UA will gracefully unpublish for the event on UA close.
       * @defaultValue true
       */
-    var unpublishOnClose: js.UndefOr[Boolean] = js.native
+    var unpublishOnClose: js.UndefOr[Boolean] = js.undefined
   }
   object PublisherOptions {
     

@@ -3,13 +3,13 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.anon.ProductId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait USBDevicesPermission extends Permission {
+trait USBDevicesPermission
+  extends StObject
+     with Permission {
   
-  var usbDevices: js.Array[ProductId] = js.native
+  var usbDevices: js.Array[ProductId]
 }
 object USBDevicesPermission {
   

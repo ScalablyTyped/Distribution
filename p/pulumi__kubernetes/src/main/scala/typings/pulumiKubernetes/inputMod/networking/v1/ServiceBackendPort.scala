@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.networking.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceBackendPort is the service port being referenced.
   */
-@js.native
 trait ServiceBackendPort extends StObject {
   
   /**
     * Name is the name of the port on the Service. This is a mutually exclusive setting with "Number".
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Number is the numerical port number (e.g. 80) on the Service. This is a mutually exclusive setting with "Name".
     */
-  var number: js.UndefOr[Input[Double]] = js.native
+  var number: js.UndefOr[Input[Double]] = js.undefined
 }
 object ServiceBackendPort {
   

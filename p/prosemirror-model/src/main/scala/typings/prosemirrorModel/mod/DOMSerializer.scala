@@ -6,12 +6,11 @@ import typings.std.Document
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "DOMSerializer")
 @js.native
-class DOMSerializer[S /* <: Schema[_, _] */] protected () extends StObject {
+class DOMSerializer[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
   /**
     * Create a serializer. `nodes` should map node names to functions
     * that take a node and return a description of the corresponding
@@ -58,20 +57,22 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends StObject {
 /* static members */
 object DOMSerializer {
   
+  @JSImport("prosemirror-model", "DOMSerializer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Build a serializer using the [`toDOM`](#model.NodeSpec.toDOM)
     * properties in a schema's node and mark specs.
     */
-  @JSImport("prosemirror-model", "DOMSerializer.fromSchema")
-  @js.native
-  def fromSchema[S /* <: Schema[_, _] */](schema: S): DOMSerializer[S] = js.native
+  @scala.inline
+  def fromSchema[S /* <: Schema[js.Any, js.Any] */](schema: S): DOMSerializer[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[DOMSerializer[S]]
   
   /**
     * Render an [output spec](#model.DOMOutputSpec) to a DOM node. If
     * the spec has a hole (zero) in it, `contentDOM` will point at the
     * node with the hole.
     */
-  @JSImport("prosemirror-model", "DOMSerializer.renderSpec")
-  @js.native
-  def renderSpec(doc: Document, structure: DOMOutputSpec): ContentDOM = js.native
+  @scala.inline
+  def renderSpec(doc: Document, structure: DOMOutputSpec): ContentDOM = (^.asInstanceOf[js.Dynamic].applyDynamic("renderSpec")(doc.asInstanceOf[js.Any], structure.asInstanceOf[js.Any])).asInstanceOf[ContentDOM]
 }

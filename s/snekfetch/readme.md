@@ -11,8 +11,8 @@ Just do http requests without all that weird nastiness from other libs
 | Full name          | snekfetch |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 194 |
-| # downloads        | 4002331 |
+| # dependents       | 198 |
+| # downloads        | 4153221 |
 | # stars            | 8 |
 
 ## Links

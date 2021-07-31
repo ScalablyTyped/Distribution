@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,26 +26,42 @@ sealed trait GlyphType extends StObject
 object GlyphType extends StObject {
   
   @js.native
-  sealed trait BULLET extends GlyphType
+  sealed trait BULLET
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait HOLLOW_BULLET extends GlyphType
+  sealed trait HOLLOW_BULLET
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait LATIN_LOWER extends GlyphType
+  sealed trait LATIN_LOWER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait LATIN_UPPER extends GlyphType
+  sealed trait LATIN_UPPER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait NUMBER extends GlyphType
+  sealed trait NUMBER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait ROMAN_LOWER extends GlyphType
+  sealed trait ROMAN_LOWER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait ROMAN_UPPER extends GlyphType
+  sealed trait ROMAN_UPPER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait SQUARE_BULLET extends GlyphType
+  sealed trait SQUARE_BULLET
+    extends StObject
+       with GlyphType
 }

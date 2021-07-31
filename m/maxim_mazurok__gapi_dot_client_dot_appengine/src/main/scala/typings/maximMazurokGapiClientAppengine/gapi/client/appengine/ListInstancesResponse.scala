@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstancesResponse extends StObject {
   
   /** The instances belonging to the requested version. */
-  var instances: js.UndefOr[js.Array[Instance]] = js.native
+  var instances: js.UndefOr[js.Array[Instance]] = js.undefined
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListInstancesResponse {
   

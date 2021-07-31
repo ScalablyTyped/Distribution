@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNative.anon.AnimatedBoolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -42,17 +41,17 @@ class ScrollView ()
     * This is deprecated due to ambiguity (y before x), and SHOULD NOT BE USED.
     */
   def scrollTo(): Unit = js.native
-  def scrollTo(y: js.UndefOr[scala.Nothing], x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
-  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double): Unit = js.native
-  def scrollTo(y: js.UndefOr[scala.Nothing], x: Double, animated: Boolean): Unit = js.native
   def scrollTo(y: Double): Unit = js.native
-  def scrollTo(y: Double, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: Double, x: Unit, animated: Boolean): Unit = js.native
+  def scrollTo(y: Unit, x: Double): Unit = js.native
+  def scrollTo(y: Unit, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: Unit, x: Unit, animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated): Unit = js.native
-  def scrollTo(y: typings.reactNative.anon.Animated, x: js.UndefOr[scala.Nothing], animated: Boolean): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double): Unit = js.native
   def scrollTo(y: typings.reactNative.anon.Animated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: typings.reactNative.anon.Animated, x: Unit, animated: Boolean): Unit = js.native
   
   /**
     * A helper function that scrolls to the end of the scrollview;

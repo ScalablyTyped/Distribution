@@ -2,12 +2,10 @@ package typings.jqueryTipsy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryTipsy {
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -15,35 +13,35 @@ object JQueryTipsy {
       *
       * default: 0
       */
-    var delayIn: js.UndefOr[Double] = js.native
+    var delayIn: js.UndefOr[Double] = js.undefined
     
     /**
       * delay before hiding  tooltip (ms)
       *
       * default: 0
       */
-    var delayOut: js.UndefOr[Double] = js.native
+    var delayOut: js.UndefOr[Double] = js.undefined
     
     /**
       * fade tooltips in/out?
       *
       * default: false
       */
-    var fade: js.UndefOr[Boolean] = js.native
+    var fade: js.UndefOr[Boolean] = js.undefined
     
     /**
       * fallback text to use when no tooltip text
       *
       * default: ''
       */
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
     /**
       * gravity
       *
       * default: 'n'
       */
-    var gravity: js.UndefOr[js.Any] = js.native
+    var gravity: js.UndefOr[js.Any] = js.undefined
     
     // string or () => string
     /**
@@ -51,35 +49,35 @@ object JQueryTipsy {
       *
       * default: false
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /**
       * use live event support?
       *
       * default: false
       */
-    var live: js.UndefOr[Boolean] = js.native
+    var live: js.UndefOr[Boolean] = js.undefined
     
     /**
       * pixel offset of tooltip from element
       *
       * default: 0
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * opacity of tooltip
       *
       * default: 0.8
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * attribute/callback containing tooltip text
       *
       * default: 'title'
       */
-    var title: js.UndefOr[js.Any] = js.native
+    var title: js.UndefOr[js.Any] = js.undefined
     
     // string or () => string
     /**
@@ -87,7 +85,7 @@ object JQueryTipsy {
       *
       * default: 'hover'
       */
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
   }
   object Options {
     

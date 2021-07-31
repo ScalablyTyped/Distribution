@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpUrlDestinationConfiguration extends StObject {
   
   /**
     * The URL AWS IoT uses to confirm ownership of or access to the topic rule destination URL.
     */
-  var confirmationUrl: Url = js.native
+  var confirmationUrl: Url
 }
 object HttpUrlDestinationConfiguration {
   

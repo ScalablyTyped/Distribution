@@ -3,7 +3,6 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -54,7 +53,7 @@ trait IgZoombarMethods extends StObject {
     * @param width The width parameter of the new zoom window in percentages
     */
   def zoom(): js.Object = js.native
-  def zoom(left: js.UndefOr[scala.Nothing], width: Double): js.Object = js.native
   def zoom(left: Double): js.Object = js.native
   def zoom(left: Double, width: Double): js.Object = js.native
+  def zoom(left: Unit, width: Double): js.Object = js.native
 }

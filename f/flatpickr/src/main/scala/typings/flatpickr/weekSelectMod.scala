@@ -4,21 +4,22 @@ import typings.flatpickr.globalsMod.global.Date
 import typings.flatpickr.optionsMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object weekSelectMod {
   
-  @JSImport("flatpickr/dist/plugins/weekSelect/weekSelect", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/weekSelect/weekSelect", JSImport.Namespace)
   @js.native
-  def default(): Plugin[PlusWeeks] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin[PlusWeeks] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[PlusWeeks]]
+  
   trait PlusWeeks extends StObject {
     
-    var weekEndDay: Date = js.native
+    var weekEndDay: Date
     
-    var weekStartDay: Date = js.native
+    var weekStartDay: Date
   }
   object PlusWeeks {
     

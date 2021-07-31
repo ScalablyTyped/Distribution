@@ -5,14 +5,15 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object displayMod {
   
   @JSImport("novnc-core/lib/display", JSImport.Default)
   @js.native
-  class default () extends Display {
+  class default ()
+    extends StObject
+       with Display {
     def this(defaults: NvDisplayDefaults) = this()
   }
   
@@ -147,37 +148,36 @@ object displayMod {
     def viewportChangePos(deltaX: Double, deltaY: Double): Unit = js.native
     
     def viewportChangeSize(): Unit = js.native
-    def viewportChangeSize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def viewportChangeSize(width: Double): Unit = js.native
     def viewportChangeSize(width: Double, height: Double): Unit = js.native
+    def viewportChangeSize(width: Unit, height: Double): Unit = js.native
   }
   
   type NvColor = js.Tuple3[Double, Double, Double]
   
-  @js.native
   trait NvDisplayDefaults extends StObject {
     
-    var context: js.UndefOr[CanvasRenderingContext2D] = js.native
+    var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
     
-    var cursor_uri: js.UndefOr[js.Any] = js.native
+    var cursor_uri: js.UndefOr[js.Any] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var logo: js.UndefOr[NvLogo] = js.native
+    var logo: js.UndefOr[NvLogo] = js.undefined
     
-    var onFlush: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFlush: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefer_js: js.UndefOr[String] = js.native
+    var prefer_js: js.UndefOr[String] = js.undefined
     
-    var render_mode: js.UndefOr[String] = js.native
+    var render_mode: js.UndefOr[String] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[HTMLCanvasElement] = js.native
+    var target: js.UndefOr[HTMLCanvasElement] = js.undefined
     
-    var viewport: js.UndefOr[Boolean] = js.native
+    var viewport: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object NvDisplayDefaults {
     
@@ -258,16 +258,15 @@ object displayMod {
     }
   }
   
-  @js.native
   trait NvLogo extends StObject {
     
-    var data: js.Array[Double] = js.native
+    var data: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object NvLogo {
     

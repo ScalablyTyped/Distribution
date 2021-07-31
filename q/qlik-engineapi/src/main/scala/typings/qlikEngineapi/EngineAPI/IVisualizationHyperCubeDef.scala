@@ -2,24 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HyperCubeDef...
   */
-@js.native
-trait IVisualizationHyperCubeDef extends IHyperCubeDef {
+trait IVisualizationHyperCubeDef
+  extends StObject
+     with IHyperCubeDef {
   
-  var customErrorMessage: ICustomErrorMessage = js.native
+  var customErrorMessage: ICustomErrorMessage
   
   @JSName("qDimensions")
-  var qDimensions_IVisualizationHyperCubeDef: js.Array[IHyperCubeDimensionDef] = js.native
+  var qDimensions_IVisualizationHyperCubeDef: js.Array[IHyperCubeDimensionDef]
   
-  var qLayoutExclude: js.Any = js.native
+  var qLayoutExclude: js.Any
   
   @JSName("qMeasures")
-  var qMeasures_IVisualizationHyperCubeDef: js.Array[IHyperCubeMeasureDef] = js.native
+  var qMeasures_IVisualizationHyperCubeDef: js.Array[IHyperCubeMeasureDef]
 }
 object IVisualizationHyperCubeDef {
   

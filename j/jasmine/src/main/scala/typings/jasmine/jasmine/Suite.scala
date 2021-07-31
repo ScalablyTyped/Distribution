@@ -3,12 +3,12 @@ package typings.jasmine.jasmine
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Suite
-  extends SuiteOrSpec
+  extends StObject
+     with SuiteOrSpec
      with Instantiable4[
       /* env */ Env, 
       /* description */ String, 
@@ -27,7 +27,7 @@ trait Suite
   
   def beforeEach(beforeEachFunction: SpecFunction): Unit = js.native
   
-  def children(): js.Array[_] = js.native
+  def children(): js.Array[js.Any] = js.native
   
   def execute(): Unit = js.native
   def execute(onComplete: js.Function0[Unit]): Unit = js.native

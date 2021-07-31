@@ -6,30 +6,30 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCommentsList extends StandardParameters {
+trait ParamsResourceCommentsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of comment IDs for the
     * resources that are being retrieved. In a comment resource, the id
     * property specifies the comment's ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
     * should be returned in the result set.  Note: This parameter is not
     * supported for use in conjunction with the id parameter.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
@@ -37,7 +37,7 @@ trait ParamsResourceCommentsList extends StandardParameters {
     * identifies the next page of the result that can be retrieved.  Note: This
     * parameter is not supported for use in conjunction with the id parameter.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The parentId parameter specifies the ID of the comment for which replies
@@ -45,19 +45,19 @@ trait ParamsResourceCommentsList extends StandardParameters {
     * top-level comments. However, replies to replies may be supported in the
     * future.
     */
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more
     * comment resource properties that the API response will include.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter indicates whether the API should return comments formatted
     * as HTML or as plain text.
     */
-  var textFormat: js.UndefOr[String] = js.native
+  var textFormat: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCommentsList {
   

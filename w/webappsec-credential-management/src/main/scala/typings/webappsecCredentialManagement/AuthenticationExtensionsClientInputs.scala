@@ -4,27 +4,25 @@ import typings.std.ArrayBuffer
 import typings.std.ArrayBufferView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationExtensionsClientInputs extends StObject {
   
-  var appid: js.UndefOr[String] = js.native
+  var appid: js.UndefOr[String] = js.undefined
   
-  var authnSel: js.UndefOr[js.Array[ArrayBufferView | ArrayBuffer]] = js.native
+  var authnSel: js.UndefOr[js.Array[ArrayBufferView | ArrayBuffer]] = js.undefined
   
-  var exts: js.UndefOr[Boolean] = js.native
+  var exts: js.UndefOr[Boolean] = js.undefined
   
-  var loc: js.UndefOr[Boolean] = js.native
+  var loc: js.UndefOr[Boolean] = js.undefined
   
-  var txAuthGeneric: js.UndefOr[txAuthGenericArg] = js.native
+  var txAuthGeneric: js.UndefOr[txAuthGenericArg] = js.undefined
   
-  var txAuthSimple: js.UndefOr[String] = js.native
+  var txAuthSimple: js.UndefOr[String] = js.undefined
   
-  var uvi: js.UndefOr[Boolean] = js.native
+  var uvi: js.UndefOr[Boolean] = js.undefined
   
-  var uvm: js.UndefOr[Boolean] = js.native
+  var uvm: js.UndefOr[Boolean] = js.undefined
 }
 object AuthenticationExtensionsClientInputs {
   

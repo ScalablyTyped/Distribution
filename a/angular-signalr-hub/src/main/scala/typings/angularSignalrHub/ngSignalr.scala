@@ -9,37 +9,35 @@ import typings.signalr.SignalR.Hub.Proxy
 import typings.signalr.SignalR.StateChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngSignalr {
   
-  @js.native
   trait Hub extends StObject {
     
-    def connect(): JQueryPromise[_] = js.native
+    def connect(): JQueryPromise[js.Any]
     
-    var connection: Connection = js.native
+    var connection: Connection
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    var hubName: String = js.native
+    var hubName: String
     
-    def invoke(method: String, args: js.Any*): JQueryDeferred[_] = js.native
+    def invoke(method: String, args: js.Any*): JQueryDeferred[js.Any]
     
-    def on(event: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def on(event: String, fn: js.Function1[/* repeated */ js.Any, Unit]): Unit
     
-    var proxy: Proxy = js.native
+    var proxy: Proxy
   }
   object Hub {
     
     @scala.inline
     def apply(
-      connect: () => JQueryPromise[_],
+      connect: () => JQueryPromise[js.Any],
       connection: Connection,
       disconnect: () => Unit,
       hubName: String,
-      invoke: (String, /* repeated */ js.Any) => JQueryDeferred[_],
+      invoke: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any],
       on: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit,
       proxy: Proxy
     ): Hub = {
@@ -51,7 +49,7 @@ object ngSignalr {
     implicit class HubMutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setConnect(value: () => JQueryPromise[_]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      def setConnect(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
       @scala.inline
       def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
@@ -63,7 +61,7 @@ object ngSignalr {
       def setHubName(value: String): Self = StObject.set(x, "hubName", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInvoke(value: (String, /* repeated */ js.Any) => JQueryDeferred[_]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+      def setInvoke(value: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
@@ -74,58 +72,59 @@ object ngSignalr {
   }
   
   @js.native
-  trait HubFactory extends /**
+  trait HubFactory
+    extends StObject
+       with /**
     * Creates a new Hub connection
     */
   Instantiable2[/* hubName */ String, /* options */ HubOptions, Hub]
   
-  @js.native
   trait HubOptions extends StObject {
     
     /**
       * Function to handle hub connection errors
       */
-    var errorHandler: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
     
     /**
       * Collection of client side callbacks
       */
-    var listeners: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]] = js.native
+    var listeners: js.UndefOr[StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]] = js.undefined
     
     /**
       * Enable/disable logging
       */
-    var logging: js.UndefOr[Boolean] = js.native
+    var logging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * String array of server side methods which the client can call
       */
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Object representing additional query params to be sent on connection
       */
-    var queryParams: js.UndefOr[StringDictionary[String]] = js.native
+    var queryParams: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Sets the root path for the SignalR web service
       */
-    var rootPath: js.UndefOr[String] = js.native
+    var rootPath: js.UndefOr[String] = js.undefined
     
     /**
       * Function to handle hub connection state changed event
       */
-    var stateChanged: js.UndefOr[js.Function1[/* state */ StateChanged, Unit]] = js.native
+    var stateChanged: js.UndefOr[js.Function1[/* state */ StateChanged, Unit]] = js.undefined
     
     /**
       * Sets transport method (e.g    'longPolling'    or    ['webSockets', 'longPolling'] )
       */
-    var transport: js.UndefOr[js.Any] = js.native
+    var transport: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Use a shared global connection or create a new one just for this hub, defaults to true
       */
-    var useSharedConnection: js.UndefOr[Boolean] = js.native
+    var useSharedConnection: js.UndefOr[Boolean] = js.undefined
   }
   object HubOptions {
     

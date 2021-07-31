@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ListHeaderDesign extends StObject
 object ListHeaderDesign extends StObject {
   
   @js.native
-  sealed trait Plain extends ListHeaderDesign
+  sealed trait Plain
+    extends StObject
+       with ListHeaderDesign
   
   @js.native
-  sealed trait Standard extends ListHeaderDesign
+  sealed trait Standard
+    extends StObject
+       with ListHeaderDesign
 }

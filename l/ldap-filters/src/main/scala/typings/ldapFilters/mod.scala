@@ -2,7 +2,6 @@ package typings.ldapFilters
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,21 +10,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ldap-filters", "AND")
-  @js.native
-  def AND(filters: js.Array[Filter]): Group = js.native
+  @scala.inline
+  def AND(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("AND")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  @JSImport("ldap-filters", "NOT")
-  @js.native
-  def NOT(filter: Filter): GroupNot = js.native
+  @scala.inline
+  def NOT(filter: Filter): GroupNot = ^.asInstanceOf[js.Dynamic].applyDynamic("NOT")(filter.asInstanceOf[js.Any]).asInstanceOf[GroupNot]
   
-  @JSImport("ldap-filters", "OR")
-  @js.native
-  def OR(filters: js.Array[Filter]): Group = js.native
+  @scala.inline
+  def OR(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("OR")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  @JSImport("ldap-filters", "attribute")
-  @js.native
-  def attribute(name: String): Attribute_ = js.native
+  @scala.inline
+  def attribute(name: String): Attribute_ = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(name.asInstanceOf[js.Any]).asInstanceOf[Attribute_]
   
   @JSImport("ldap-filters", "collapse_not")
   @js.native
@@ -34,9 +29,8 @@ object mod {
   @scala.inline
   def collapseNot_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapse_not")(x.asInstanceOf[js.Any])
   
-  @JSImport("ldap-filters", "escape")
-  @js.native
-  def escape(value: String): String = js.native
+  @scala.inline
+  def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ldap-filters", "escape_chars")
   @js.native
@@ -59,75 +53,62 @@ object mod {
   @scala.inline
   def indent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent")(x.asInstanceOf[js.Any])
   
-  @JSImport("ldap-filters", "matchApprox")
-  @js.native
-  def matchApprox(data: String, filter: Filter): Boolean = js.native
-  @JSImport("ldap-filters", "matchApprox")
-  @js.native
-  def matchApprox(data: js.Array[String], filter: Filter): Boolean = js.native
+  @scala.inline
+  def matchApprox(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchApprox(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ldap-filters", "matchGTE")
-  @js.native
-  def matchGTE(data: String, filter: Filter): Boolean = js.native
-  @JSImport("ldap-filters", "matchGTE")
-  @js.native
-  def matchGTE(data: js.Array[String], filter: Filter): Boolean = js.native
+  @scala.inline
+  def matchGTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchGTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ldap-filters", "matchLTE")
-  @js.native
-  def matchLTE(data: String, filter: Filter): Boolean = js.native
-  @JSImport("ldap-filters", "matchLTE")
-  @js.native
-  def matchLTE(data: js.Array[String], filter: Filter): Boolean = js.native
+  @scala.inline
+  def matchLTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchLTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ldap-filters", "matchString")
-  @js.native
-  def matchString(data: String, filter: Filter): Boolean = js.native
-  @JSImport("ldap-filters", "matchString")
-  @js.native
-  def matchString(data: js.Array[String], filter: Filter): Boolean = js.native
+  @scala.inline
+  def matchString(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchString(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ldap-filters", "matchSubstring")
-  @js.native
-  def matchSubstring(data: String, filter: Filter): Boolean = js.native
-  @JSImport("ldap-filters", "matchSubstring")
-  @js.native
-  def matchSubstring(data: js.Array[String], filter: Filter): Boolean = js.native
+  @scala.inline
+  def matchSubstring(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchSubstring(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ldap-filters", "parse")
-  @js.native
-  def parse(input: String): Filter = js.native
+  @scala.inline
+  def parse(input: String): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Filter]
   
-  @JSImport("ldap-filters", "unescape")
-  @js.native
-  def unescape(value: String): String = js.native
+  @scala.inline
+  def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Attribute_ extends StObject {
     
-    def approx(value: String): Filter = js.native
+    def approx(value: String): Filter
     
-    def contains(value: String): Filter = js.native
+    def contains(value: String): Filter
     
-    def endsWith(value: String): Filter = js.native
+    def endsWith(value: String): Filter
     
-    def equalTo(value: String): Filter = js.native
+    def equalTo(value: String): Filter
     
-    def escape(value: String): String = js.native
+    def escape(value: String): String
     
-    var escapeChars: js.Array[String] = js.native
+    var escapeChars: js.Array[String]
     
-    def gte(value: String): Filter = js.native
+    def gte(value: String): Filter
     
-    def lte(value: String): Filter = js.native
+    def lte(value: String): Filter
     
-    var name: String = js.native
+    var name: String
     
-    def present(): Filter = js.native
+    def present(): Filter
     
-    def raw(value: String): Filter = js.native
+    def raw(value: String): Filter
     
-    def startsWith(value: String): Filter = js.native
+    def startsWith(value: String): Filter
   }
   object Attribute_ {
     
@@ -221,7 +202,9 @@ object mod {
   }
   
   @js.native
-  trait GroupNot extends Group {
+  trait GroupNot
+    extends StObject
+       with Group {
     
     def simplify(): Filter = js.native
   }

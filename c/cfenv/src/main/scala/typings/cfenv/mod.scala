@@ -5,17 +5,18 @@ import typings.cfenv.anon.Application
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cfenv", "getAppEnv")
+  @JSImport("cfenv", JSImport.Namespace)
   @js.native
-  def getAppEnv(): AppEnv = js.native
-  @JSImport("cfenv", "getAppEnv")
-  @js.native
-  def getAppEnv(options: GetAppEnvOptions): AppEnv = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getAppEnv(): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")().asInstanceOf[AppEnv]
+  @scala.inline
+  def getAppEnv(options: GetAppEnvOptions): AppEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppEnv")(options.asInstanceOf[js.Any]).asInstanceOf[AppEnv]
   
   @js.native
   trait AppEnv extends StObject {
@@ -52,16 +53,15 @@ object mod {
     var urls: js.Array[String] = js.native
   }
   
-  @js.native
   trait GetAppEnvOptions extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var vcap: js.UndefOr[Application] = js.native
+    var vcap: js.UndefOr[Application] = js.undefined
     
-    var vcapFile: js.UndefOr[String] = js.native
+    var vcapFile: js.UndefOr[String] = js.undefined
   }
   object GetAppEnvOptions {
     
@@ -100,18 +100,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
-    var credentials: js.Object = js.native
+    var credentials: js.Object
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
     
-    var plan: String = js.native
+    var plan: String
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object Service {
     

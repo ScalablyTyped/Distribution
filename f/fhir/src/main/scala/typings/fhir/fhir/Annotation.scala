@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Text node with attribution
   */
-@js.native
-trait Annotation extends Element {
+trait Annotation
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'authorString'.
     */
-  var _authorString: js.UndefOr[Element] = js.native
+  var _authorString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'time'.
     */
-  var _time: js.UndefOr[Element] = js.native
+  var _time: js.UndefOr[Element] = js.undefined
   
   /**
     * Individual responsible for the annotation
     */
-  var authorReference: js.UndefOr[Reference] = js.native
+  var authorReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Individual responsible for the annotation
     */
-  var authorString: js.UndefOr[String] = js.native
+  var authorString: js.UndefOr[String] = js.undefined
   
   /**
     * The annotation  - text content
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * When the annotation was made
     */
-  var time: js.UndefOr[dateTime] = js.native
+  var time: js.UndefOr[dateTime] = js.undefined
 }
 object Annotation {
   

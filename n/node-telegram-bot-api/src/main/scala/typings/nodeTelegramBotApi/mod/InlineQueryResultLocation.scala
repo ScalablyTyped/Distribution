@@ -3,22 +3,21 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultLocation
-  extends InlineQueryResultLocationBase
+  extends StObject
+     with InlineQueryResultLocationBase
      with InlineQueryResult {
   
-  var `type`: location = js.native
+  var `type`: location
 }
 object InlineQueryResultLocation {
   
   @scala.inline
-  def apply(id: String, latitude: Double, longitude: Double, title: String, `type`: location): InlineQueryResultLocation = {
+  def apply(id: String, latitude: Double, longitude: Double, title: String): InlineQueryResultLocation = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("location")
     __obj.asInstanceOf[InlineQueryResultLocation]
   }
   

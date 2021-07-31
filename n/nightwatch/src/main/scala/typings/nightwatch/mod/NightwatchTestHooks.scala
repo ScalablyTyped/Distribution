@@ -2,21 +2,20 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchTestHooks
-  extends NightwatchGlobals
+  extends StObject
+     with NightwatchGlobals
      with NightwatchTests {
   
-  var after: js.UndefOr[GlobalNightwatchTestHook] = js.native
+  var after: js.UndefOr[GlobalNightwatchTestHook] = js.undefined
   
-  var afterEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.native
+  var afterEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.undefined
   
-  var before: js.UndefOr[GlobalNightwatchTestHook] = js.native
+  var before: js.UndefOr[GlobalNightwatchTestHook] = js.undefined
   
-  var beforeEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.native
+  var beforeEach: js.UndefOr[GlobalNightwatchTestHookEach] = js.undefined
 }
 object NightwatchTestHooks {
   

@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.EmptyStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `33` extends StObject {
   
-  var `type`: EmptyStatement = js.native
+  var `type`: EmptyStatement
 }
 object `33` {
   
   @scala.inline
-  def apply(`type`: EmptyStatement): `33` = {
+  def apply(): `33` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EmptyStatement")
     __obj.asInstanceOf[`33`]
   }
   

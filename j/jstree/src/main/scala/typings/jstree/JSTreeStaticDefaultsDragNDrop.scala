@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsDragNDrop extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.always_copy
     * @plugin dnd
     */
-  var always_copy: Boolean = js.native
+  var always_copy: Boolean
   
   /**
     * a boolean indicating if checks should constantly be made while the user is dragging the node
@@ -21,14 +19,14 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.check_while_dragging
     * @plugin dnd
     */
-  var check_while_dragging: Boolean = js.native
+  var check_while_dragging: Boolean
   
   /**
     * a boolean indicating if a copy should be possible while dragging (by pressint the meta key or Ctrl). Defaults to `true`.
     * @name $.jstree.defaults.dnd.copy
     * @plugin dnd
     */
-  var copy: Boolean = js.native
+  var copy: Boolean
   
   /**
     * when starting the drag on a node that is selected this setting controls if all selected nodes are dragged
@@ -36,7 +34,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.drag_selection
     * @plugin dnd
     */
-  var drag_selection: Boolean = js.native
+  var drag_selection: Boolean
   
   /**
     * when dropping a node "inside", this setting indicates the position the node should go to
@@ -44,7 +42,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.inside_pos
     * @plugin dnd
     */
-  var inside_pos: js.Any = js.native
+  var inside_pos: js.Any
   
   /**
     * a function invoked each time a node is about to be dragged, invoked in the tree's scope and receives the nodes
@@ -52,7 +50,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.is_draggable
     * @plugin dnd
     */
-  var is_draggable: Boolean = js.native
+  var is_draggable: Boolean
   
   /**
     * controls whether a drag can be initiated from any part of the node and not just the text/icon part,
@@ -61,7 +59,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.large_drag_target
     * @plugin dnd
     */
-  var large_drag_target: Boolean = js.native
+  var large_drag_target: Boolean
   
   /**
     * controls whether items can be dropped anywhere on the node, not just on the anchor,
@@ -71,14 +69,14 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.large_drop_target
     * @plugin dnd
     */
-  var large_drop_target: Boolean = js.native
+  var large_drop_target: Boolean
   
   /**
     * a number indicating how long a node should remain hovered while dragging to be opened. Defaults to `500`.
     * @name $.jstree.defaults.dnd.open_timeout
     * @plugin dnd
     */
-  var open_timeout: Double = js.native
+  var open_timeout: Double
   
   /**
     * controls whether dnd works on touch devices. If left as boolean true dnd will work the same as in desktop browsers,
@@ -87,7 +85,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.touch
     * @plugin dnd
     */
-  var touch: Boolean = js.native
+  var touch: Boolean
   
   /**
     * controls whether use HTML5 dnd api instead of classical.
@@ -96,7 +94,7 @@ trait JSTreeStaticDefaultsDragNDrop extends StObject {
     * @name $.jstree.defaults.dnd.use_html5
     * @plugin dnd
     */
-  var use_html5: Boolean = js.native
+  var use_html5: Boolean
 }
 object JSTreeStaticDefaultsDragNDrop {
   

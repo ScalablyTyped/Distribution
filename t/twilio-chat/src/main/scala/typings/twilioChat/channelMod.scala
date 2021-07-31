@@ -25,7 +25,6 @@ import typings.twilioMcsClient.mod.McsClient
 import typings.twilioSync.mod.SyncClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelMod {
@@ -126,7 +125,7 @@ object channelMod {
       * @returns {Promise}
       * @private
       */
-    def _subscribe(): js.Promise[_] = js.native
+    def _subscribe(): js.Promise[js.Any] = js.native
     
     /**
       * Load the attributes of this Channel and instantiate its Members and Messages.
@@ -142,7 +141,7 @@ object channelMod {
       * @returns {Promise}
       * @private
       */
-    def _unsubscribe(): js.Promise[js.Tuple2[Unit, _]] = js.native
+    def _unsubscribe(): js.Promise[js.Tuple2[Unit, js.Any]] = js.native
     
     /**
       * Updates local channel object with new values
@@ -246,13 +245,13 @@ object channelMod {
       * @returns {Promise<Paginator<Message>>} page of messages
       */
     def getMessages(): js.Promise[Paginator[Message]] = js.native
-    def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: js.UndefOr[scala.Nothing], direction: String): js.Promise[Paginator[Message]] = js.native
-    def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: Double): js.Promise[Paginator[Message]] = js.native
-    def getMessages(pageSize: js.UndefOr[scala.Nothing], anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
     def getMessages(pageSize: Double): js.Promise[Paginator[Message]] = js.native
-    def getMessages(pageSize: Double, anchor: js.UndefOr[scala.Nothing], direction: String): js.Promise[Paginator[Message]] = js.native
     def getMessages(pageSize: Double, anchor: Double): js.Promise[Paginator[Message]] = js.native
     def getMessages(pageSize: Double, anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
+    def getMessages(pageSize: Double, anchor: Unit, direction: String): js.Promise[Paginator[Message]] = js.native
+    def getMessages(pageSize: Unit, anchor: Double): js.Promise[Paginator[Message]] = js.native
+    def getMessages(pageSize: Unit, anchor: Double, direction: String): js.Promise[Paginator[Message]] = js.native
+    def getMessages(pageSize: Unit, anchor: Unit, direction: String): js.Promise[Paginator[Message]] = js.native
     
     /**
       * Get total message count in a channel.
@@ -423,12 +422,11 @@ object channelMod {
     @scala.inline
     def preprocessUpdate_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preprocessUpdate")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait LastMessage extends StObject {
       
-      var dateCreated: js.UndefOr[Date] = js.native
+      var dateCreated: js.UndefOr[Date] = js.undefined
       
-      var index: js.UndefOr[Double] = js.native
+      var index: js.UndefOr[Double] = js.undefined
     }
     object LastMessage {
       
@@ -469,12 +467,11 @@ object channelMod {
       def muted: typings.twilioChat.twilioChatStrings.muted = "muted".asInstanceOf[typings.twilioChat.twilioChatStrings.muted]
     }
     
-    @js.native
     trait SendMediaOptions extends StObject {
       
-      var contentType: String = js.native
+      var contentType: String
       
-      var media: String | Buffer = js.native
+      var media: String | Buffer
     }
     object SendMediaOptions {
       
@@ -583,12 +580,11 @@ object channelMod {
       def uniqueName: typings.twilioChat.twilioChatStrings.uniqueName = "uniqueName".asInstanceOf[typings.twilioChat.twilioChatStrings.uniqueName]
     }
     
-    @js.native
     trait UpdatedEventArgs extends StObject {
       
-      var channel: Channel = js.native
+      var channel: Channel
       
-      var updateReasons: js.Array[UpdateReason] = js.native
+      var updateReasons: js.Array[UpdateReason]
     }
     object UpdatedEventArgs {
       
@@ -613,30 +609,29 @@ object channelMod {
     }
   }
   
-  @js.native
   trait ChannelDescriptor extends StObject {
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var channel: String = js.native
+    var channel: String
     
-    var createdBy: js.UndefOr[String] = js.native
+    var createdBy: js.UndefOr[String] = js.undefined
     
-    var dateCreated: js.Any = js.native
+    var dateCreated: js.Any
     
-    var dateUpdated: js.Any = js.native
+    var dateUpdated: js.Any
     
-    var entityName: String = js.native
+    var entityName: String
     
-    var friendlyName: String = js.native
+    var friendlyName: String
     
-    var lastConsumedMessageIndex: Double = js.native
+    var lastConsumedMessageIndex: Double
     
-    var notificationLevel: js.UndefOr[NotificationLevel] = js.native
+    var notificationLevel: js.UndefOr[NotificationLevel] = js.undefined
     
-    var `type`: Type = js.native
+    var `type`: Type
     
-    var uniqueName: String = js.native
+    var uniqueName: String
   }
   object ChannelDescriptor {
     
@@ -701,22 +696,21 @@ object channelMod {
     }
   }
   
-  @js.native
   trait ChannelServices extends StObject {
     
-    var consumptionHorizon: ConsumptionHorizon = js.native
+    var consumptionHorizon: ConsumptionHorizon
     
-    var mcsClient: McsClient = js.native
+    var mcsClient: McsClient
     
-    var network: Network = js.native
+    var network: Network
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
     
-    var typingIndicator: TypingIndicator = js.native
+    var typingIndicator: TypingIndicator
     
-    var users: Users = js.native
+    var users: Users
   }
   object ChannelServices {
     

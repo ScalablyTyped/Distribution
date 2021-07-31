@@ -6,17 +6,17 @@ import typings.chromeApps.chromeAppsStrings.retainEntries
 import typings.chromeApps.chromeAppsStrings.write_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileSystemPermission extends ChromeOSOnlyPermissions {
+trait FileSystemPermission
+  extends StObject
+     with ChromeOSOnlyPermissions {
   
   /**
     * @enum {string}
     * @requires(CrOS) 'requestFileSystem' is only for ChromeOS
     */
-  var fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem] = js.native
+  var fileSystem: js.Array[write_ | retainEntries | directory | requestFileSystem]
 }
 object FileSystemPermission {
   

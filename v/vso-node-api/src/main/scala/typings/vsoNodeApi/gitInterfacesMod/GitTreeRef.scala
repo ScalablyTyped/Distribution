@@ -2,33 +2,31 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitTreeRef extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * SHA1 hash of git object
     */
-  var objectId: String = js.native
+  var objectId: String
   
   /**
     * Sum of sizes of all children
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Blobs and trees under this tree
     */
-  var treeEntries: js.Array[GitTreeEntryRef] = js.native
+  var treeEntries: js.Array[GitTreeEntryRef]
   
   /**
     * Url to tree
     */
-  var url: String = js.native
+  var url: String
 }
 object GitTreeRef {
   

@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionRange extends StObject {
   
-  var parent: js.UndefOr[SelectionRange] = js.native
+  var parent: js.UndefOr[SelectionRange] = js.undefined
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object SelectionRange {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInvitationsRequest extends StObject {
   
   /**
     * A list of account IDs of the AWS accounts that sent invitations to the current member account that you want to delete invitations from.
     */
-  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
+  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
 }
 object DeleteInvitationsRequest {
   

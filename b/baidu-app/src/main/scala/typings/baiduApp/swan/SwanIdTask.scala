@@ -3,15 +3,13 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.Swanid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwanIdTask extends StObject {
   
-  var data: Swanid = js.native
+  var data: Swanid
   
-  var errno: String = js.native
+  var errno: String
 }
 object SwanIdTask {
   

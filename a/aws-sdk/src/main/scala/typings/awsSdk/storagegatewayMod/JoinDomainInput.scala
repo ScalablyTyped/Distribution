@@ -2,46 +2,44 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JoinDomainInput extends StObject {
   
   /**
     * List of IPv4 addresses, NetBIOS names, or host names of your domain server. If you need to specify the port number include it after the colon (“:”). For example, mydc.mydomain.com:389.
     */
-  var DomainControllers: js.UndefOr[Hosts] = js.native
+  var DomainControllers: js.UndefOr[Hosts] = js.undefined
   
   /**
     * The name of the domain that you want the gateway to join.
     */
-  var DomainName: typings.awsSdk.storagegatewayMod.DomainName = js.native
+  var DomainName: typings.awsSdk.storagegatewayMod.DomainName
   
   /**
     * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and AWS Region.
     */
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * The organizational unit (OU) is a container in an Active Directory that can hold users, groups, computers, and other OUs and this parameter specifies the OU that the gateway will join within the AD domain.
     */
-  var OrganizationalUnit: js.UndefOr[typings.awsSdk.storagegatewayMod.OrganizationalUnit] = js.native
+  var OrganizationalUnit: js.UndefOr[typings.awsSdk.storagegatewayMod.OrganizationalUnit] = js.undefined
   
   /**
     * Sets the password of the user who has permission to add the gateway to the Active Directory domain.
     */
-  var Password: DomainUserPassword = js.native
+  var Password: DomainUserPassword
   
   /**
     * Specifies the time in seconds, in which the JoinDomain operation must complete. The default is 20 seconds.
     */
-  var TimeoutInSeconds: js.UndefOr[typings.awsSdk.storagegatewayMod.TimeoutInSeconds] = js.native
+  var TimeoutInSeconds: js.UndefOr[typings.awsSdk.storagegatewayMod.TimeoutInSeconds] = js.undefined
   
   /**
     * Sets the user name of user who has permission to add the gateway to the Active Directory domain. The domain user account should be enabled to join computers to the domain. For example, you can use the domain administrator account or an account with delegated permissions to join computers to the domain.
     */
-  var UserName: DomainUserName = js.native
+  var UserName: DomainUserName
 }
 object JoinDomainInput {
   

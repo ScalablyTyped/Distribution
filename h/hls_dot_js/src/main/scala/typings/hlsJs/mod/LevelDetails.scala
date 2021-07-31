@@ -2,59 +2,57 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * a LevelDetails object contains level details retrieved after level playlist parsing
   */
-@js.native
 trait LevelDetails extends StObject {
   
   /**
     * average fragment duration
     */
-  var averagetargetduration: Double = js.native
+  var averagetargetduration: Double
   
   /**
     * end sequence number
     */
-  var endSN: Double = js.native
+  var endSN: Double
   
   /**
     * array of fragments info
     */
-  var fragments: js.Array[Fragment] = js.native
+  var fragments: js.Array[Fragment]
   
   /**
     * is this level a live playlist or not?
     */
-  var live: Boolean = js.native
+  var live: Boolean
   
   /**
     * start sequence number
     */
-  var startSN: Double = js.native
+  var startSN: Double
   
   /**
     * level fragment target duration
     */
-  var targetduration: Double = js.native
+  var targetduration: Double
   
   /**
     * level total duration
     */
-  var totalduration: Double = js.native
+  var totalduration: Double
   
   /**
     * playlist type
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * protocol version
     */
-  var version: Double = js.native
+  var version: Double
 }
 object LevelDetails {
   

@@ -2,17 +2,15 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationSetParamsActionPayload extends StObject {
   
   // The key of the route where the params should be set
-  var key: String = js.native
+  var key: String
   
   // The new params to merge into the existing route params
-  var params: NavigationParams = js.native
+  var params: NavigationParams
 }
 object NavigationSetParamsActionPayload {
   

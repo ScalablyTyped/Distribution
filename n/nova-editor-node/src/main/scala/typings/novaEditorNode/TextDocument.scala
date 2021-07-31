@@ -2,40 +2,38 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/text-document/
-@js.native
 trait TextDocument extends StObject {
   
-  val eol: String = js.native
+  val eol: String
   
-  def getLineRangeForRange(range: Range): Range = js.native
+  def getLineRangeForRange(range: Range): Range
   
-  def getTextInRange(range: Range): String = js.native
+  def getTextInRange(range: Range): String
   
-  val isClosed: Boolean = js.native
+  val isClosed: Boolean
   
-  val isDirty: Boolean = js.native
+  val isDirty: Boolean
   
-  val isEmpty: Boolean = js.native
+  val isEmpty: Boolean
   
-  val isRemote: Boolean = js.native
+  val isRemote: Boolean
   
-  val isUntitled: Boolean = js.native
+  val isUntitled: Boolean
   
-  val length: Double = js.native
+  val length: Double
   
-  def onDidChangePath(callback: js.Function2[/* document */ this.type, /* path */ String | Null, Unit]): Disposable = js.native
+  def onDidChangePath(callback: js.Function2[/* document */ this.type, /* path */ String | Null, Unit]): Disposable
   
-  def onDidChangeSyntax(callback: js.Function2[/* document */ this.type, /* syntax */ String | Null, Unit]): Disposable = js.native
+  def onDidChangeSyntax(callback: js.Function2[/* document */ this.type, /* syntax */ String | Null, Unit]): Disposable
   
-  val path: String | Null = js.native
+  val path: String | Null
   
-  val syntax: String | Null = js.native
+  val syntax: String | Null
   
-  val uri: String = js.native
+  val uri: String
 }
 object TextDocument {
   
@@ -54,7 +52,7 @@ object TextDocument {
     onDidChangeSyntax: js.Function2[TextDocument, /* syntax */ String | Null, Unit] => Disposable,
     uri: String
   ): TextDocument = {
-    val __obj = js.Dynamic.literal(eol = eol.asInstanceOf[js.Any], getLineRangeForRange = js.Any.fromFunction1(getLineRangeForRange), getTextInRange = js.Any.fromFunction1(getTextInRange), isClosed = isClosed.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], isRemote = isRemote.asInstanceOf[js.Any], isUntitled = isUntitled.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], onDidChangePath = js.Any.fromFunction1(onDidChangePath), onDidChangeSyntax = js.Any.fromFunction1(onDidChangeSyntax), uri = uri.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(eol = eol.asInstanceOf[js.Any], getLineRangeForRange = js.Any.fromFunction1(getLineRangeForRange), getTextInRange = js.Any.fromFunction1(getTextInRange), isClosed = isClosed.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isEmpty = isEmpty.asInstanceOf[js.Any], isRemote = isRemote.asInstanceOf[js.Any], isUntitled = isUntitled.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], onDidChangePath = js.Any.fromFunction1(onDidChangePath), onDidChangeSyntax = js.Any.fromFunction1(onDidChangeSyntax), uri = uri.asInstanceOf[js.Any], path = null, syntax = null)
     __obj.asInstanceOf[TextDocument]
   }
   

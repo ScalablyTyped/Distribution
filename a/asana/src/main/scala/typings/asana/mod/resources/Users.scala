@@ -7,7 +7,6 @@ import typings.asana.mod.resources.Users.FindAllParams
 import typings.asana.mod.resources.Users.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Users
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Returns the user records for all users in all workspaces and organizations
@@ -53,16 +53,16 @@ trait Users
     * @return
     */
   def findById(user: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(user: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(user: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(user: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(user: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(user: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(user: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(user: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(user: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
   def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: Params): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   /**
@@ -78,7 +78,7 @@ trait Users
     * @return
     */
   def findByWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: Params): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -92,7 +92,7 @@ trait Users
     * @return
     */
   def me(): typings.bluebird.mod.^[Type] = js.native
-  def me(params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def me(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def me(params: Params): typings.bluebird.mod.^[Type] = js.native
   def me(params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
 }
@@ -101,7 +101,9 @@ object Users extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Users")
   @js.native
-  class ^ protected () extends Users {
+  class ^ protected ()
+    extends StObject
+       with Users {
     /**
       * @param dispatcher
       */
@@ -112,10 +114,11 @@ object Users extends Shortcut {
   @js.native
   val ^ : UsersStatic = js.native
   
-  @js.native
-  trait FindAllParams extends PaginationParams {
+  trait FindAllParams
+    extends StObject
+       with PaginationParams {
     
-    var workspace: String | Double = js.native
+    var workspace: String | Double
   }
   object FindAllParams {
     
@@ -135,7 +138,8 @@ object Users extends Shortcut {
   
   @js.native
   trait ShortType
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var email: String = js.native
     
@@ -143,9 +147,11 @@ object Users extends Shortcut {
   }
   
   @js.native
-  trait Type extends ShortType {
+  trait Type
+    extends StObject
+       with ShortType {
     
-    var workspaces: js.Array[typings.asana.mod.resources.Resource] = js.native
+    var workspaces: js.Array[Resource] = js.native
   }
   
   type _To = UsersStatic

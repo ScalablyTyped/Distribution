@@ -6,7 +6,6 @@ import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,7 +18,8 @@ object mod {
   @JSImport("xmldom", "DOMImplementation")
   @js.native
   class DOMImplementation ()
-    extends typings.std.DOMImplementation
+    extends StObject
+       with typings.std.DOMImplementation
   @JSImport("xmldom", "DOMImplementation")
   @js.native
   def DOMImplementation: DOMImplementationStatic = js.native
@@ -39,17 +39,18 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("xmldom", "DOMParser")
   @js.native
-  class DOMParserCls () extends DOMParser {
+  class DOMParserCls ()
+    extends StObject
+       with DOMParser {
     def this(options: Options) = this()
   }
   
   @scala.inline
   def DOMParser_=(x: DOMParserStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOMParser")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait XMLSerializer extends StObject {
     
-    def serializeToString(node: Node): String = js.native
+    def serializeToString(node: Node): String
   }
   object XMLSerializer {
     
@@ -68,27 +69,34 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("xmldom", "XMLSerializer")
   @js.native
-  class XMLSerializerCls () extends XMLSerializer
+  class XMLSerializerCls ()
+    extends StObject
+       with XMLSerializer {
+    
+    /* CompleteClass */
+    override def serializeToString(node: Node): String = js.native
+  }
   
   @js.native
   trait DOMImplementationStatic
-    extends Instantiable0[typings.std.DOMImplementation]
+    extends StObject
+       with Instantiable0[typings.std.DOMImplementation]
   
   @js.native
   trait DOMParserStatic
-    extends Instantiable0[DOMParser]
+    extends StObject
+       with Instantiable0[DOMParser]
        with Instantiable1[/* options */ Options, DOMParser]
   
   type ErrorHandlerFunction = js.Function2[/* level */ String, /* msg */ js.Any, js.Any]
   
-  @js.native
   trait ErrorHandlerObject extends StObject {
     
-    var error: js.UndefOr[js.Function1[/* msg */ js.Any, _]] = js.native
+    var error: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
     
-    var fatalError: js.UndefOr[js.Function1[/* msg */ js.Any, _]] = js.native
+    var fatalError: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
     
-    var warning: js.UndefOr[js.Function1[/* msg */ js.Any, _]] = js.native
+    var warning: js.UndefOr[js.Function1[/* msg */ js.Any, js.Any]] = js.undefined
   }
   object ErrorHandlerObject {
     
@@ -102,31 +110,30 @@ object mod {
     implicit class ErrorHandlerObjectMutableBuilder[Self <: ErrorHandlerObject] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setError(value: /* msg */ js.Any => _): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      def setError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setFatalError(value: /* msg */ js.Any => _): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
+      def setFatalError(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "fatalError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFatalErrorUndefined: Self = StObject.set(x, "fatalError", js.undefined)
       
       @scala.inline
-      def setWarning(value: /* msg */ js.Any => _): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+      def setWarning(value: /* msg */ js.Any => js.Any): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var errorHandler: js.UndefOr[ErrorHandlerFunction | ErrorHandlerObject] = js.native
+    var errorHandler: js.UndefOr[ErrorHandlerFunction | ErrorHandlerObject] = js.undefined
     
-    var locator: js.UndefOr[js.Any] = js.native
+    var locator: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     
@@ -157,5 +164,7 @@ object mod {
   }
   
   @js.native
-  trait XMLSerializerStatic extends Instantiable0[XMLSerializer]
+  trait XMLSerializerStatic
+    extends StObject
+       with Instantiable0[XMLSerializer]
 }

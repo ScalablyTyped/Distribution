@@ -3,30 +3,28 @@ package typings.xlsx.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkBook extends StObject {
   
   /** Custom workbook Properties */
-  var Custprops: js.UndefOr[js.Object] = js.native
+  var Custprops: js.UndefOr[js.Object] = js.undefined
   
   /** Standard workbook Properties */
-  var Props: js.UndefOr[FullProperties] = js.native
+  var Props: js.UndefOr[FullProperties] = js.undefined
   
   /** Ordered list of the sheet names in the workbook */
-  var SheetNames: js.Array[String] = js.native
+  var SheetNames: js.Array[String]
   
   /**
     * A dictionary of the worksheets in the workbook.
     * Use SheetNames to reference these.
     */
-  var Sheets: StringDictionary[WorkSheet] = js.native
+  var Sheets: StringDictionary[WorkSheet]
   
-  var Workbook: js.UndefOr[WBProps] = js.native
+  var Workbook: js.UndefOr[WBProps] = js.undefined
   
-  var vbaraw: js.UndefOr[js.Any] = js.native
+  var vbaraw: js.UndefOr[js.Any] = js.undefined
 }
 object WorkBook {
   

@@ -9,32 +9,36 @@ import typings.vueInbrowserCompilerUtils.typesMod.ParamTag
 import typings.vueInbrowserCompilerUtils.typesMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventHandlerMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/eventHandler", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/eventHandler", JSImport.Namespace)
   @js.native
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _], astPath: File_): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/script-handlers/eventHandler", "eventHandlerEmits")
-  @js.native
-  def eventHandlerEmits(documentation: default, path: NodePath[_, _]): Unit = js.native
+  @scala.inline
+  def default(
+    documentation: typings.vueDocgenApi.documentationMod.default,
+    path: NodePath[js.Any, js.Any],
+    astPath: File_
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/eventHandler", "eventHandlerMethods")
-  @js.native
-  def eventHandlerMethods(documentation: default, path: NodePath[_, _]): Unit = js.native
+  @scala.inline
+  def eventHandlerEmits(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerEmits")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/eventHandler", "setEventDescriptor")
-  @js.native
-  def setEventDescriptor(eventDescriptor: EventDescriptor, jsDoc: DocBlockTags): EventDescriptor = js.native
+  @scala.inline
+  def eventHandlerMethods(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerMethods")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
-  trait TypedParamTag extends ParamTag {
+  @scala.inline
+  def setEventDescriptor(eventDescriptor: EventDescriptor, jsDoc: DocBlockTags): EventDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("setEventDescriptor")(eventDescriptor.asInstanceOf[js.Any], jsDoc.asInstanceOf[js.Any])).asInstanceOf[EventDescriptor]
+  
+  trait TypedParamTag
+    extends StObject
+       with ParamTag {
     
     @JSName("type")
-    var type_TypedParamTag: ParamType = js.native
+    var type_TypedParamTag: ParamType
   }
   object TypedParamTag {
     

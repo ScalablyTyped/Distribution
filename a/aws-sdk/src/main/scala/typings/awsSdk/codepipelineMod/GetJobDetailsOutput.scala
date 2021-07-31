@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobDetailsOutput extends StObject {
   
   /**
     * The details of the job.  If AWSSessionCredentials is used, a long-running job can call GetJobDetails again to obtain new credentials. 
     */
-  var jobDetails: js.UndefOr[JobDetails] = js.native
+  var jobDetails: js.UndefOr[JobDetails] = js.undefined
 }
 object GetJobDetailsOutput {
   

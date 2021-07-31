@@ -2,51 +2,49 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersUpdateAuthenticatedEndpoint extends StObject {
   
   /**
     * The new short biography of the user.
     */
-  var bio: js.UndefOr[String] = js.native
+  var bio: js.UndefOr[String] = js.undefined
   
   /**
     * The new blog URL of the user.
     */
-  var blog: js.UndefOr[String] = js.native
+  var blog: js.UndefOr[String] = js.undefined
   
   /**
     * The new company of the user.
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /**
     * The publicly visible email address of the user.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The new hiring availability of the user.
     */
-  var hireable: js.UndefOr[Boolean] = js.native
+  var hireable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The new location of the user.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The new name of the user.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The new Twitter username of the user.
     */
-  var twitter_username: js.UndefOr[String] = js.native
+  var twitter_username: js.UndefOr[String] = js.undefined
 }
 object UsersUpdateAuthenticatedEndpoint {
   

@@ -2,29 +2,44 @@ package typings.linesAndColumns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("lines-and-columns", JSImport.Default)
   @js.native
-  class default protected () extends LinesAndColumns {
+  class default protected ()
+    extends StObject
+       with LinesAndColumns {
     def this(string: String) = this()
-  }
-  
-  @js.native
-  trait LinesAndColumns extends StObject {
     
-    def indexForLocation(location: SourceLocation): Double | Null = js.native
+    /* CompleteClass */
+    override def indexForLocation(location: SourceLocation): Double | Null = js.native
     
-    /* private */ def lengthOfLine(line: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def lengthOfLine(line: js.Any): js.Any = js.native
     
-    def locationForIndex(index: Double): SourceLocation | Null = js.native
+    /* CompleteClass */
+    override def locationForIndex(index: Double): SourceLocation | Null = js.native
     
+    /* CompleteClass */
     var offsets: js.Any = js.native
     
+    /* CompleteClass */
     var string: js.Any = js.native
+  }
+  
+  trait LinesAndColumns extends StObject {
+    
+    def indexForLocation(location: SourceLocation): Double | Null
+    
+    /* private */ def lengthOfLine(line: js.Any): js.Any
+    
+    def locationForIndex(index: Double): SourceLocation | Null
+    
+    var offsets: js.Any
+    
+    var string: js.Any
   }
   object LinesAndColumns {
     
@@ -60,12 +75,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceLocation extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object SourceLocation {
     

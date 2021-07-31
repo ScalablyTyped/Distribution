@@ -2,34 +2,28 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited
-- typings.solidityParserAntlr.mod.Expression because Already inherited
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait TupleExpression
-  extends PrimaryExpression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with Expression
+     with PrimaryExpression {
   
-  var components: js.Array[Expression] = js.native
+  var components: js.Array[Expression]
   
-  var isArray: Boolean = js.native
+  var isArray: Boolean
   
   @JSName("type")
-  var type_TupleExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression = js.native
+  var type_TupleExpression: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression
 }
 object TupleExpression {
   
   @scala.inline
-  def apply(
-    components: js.Array[Expression],
-    isArray: Boolean,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression
-  ): TupleExpression = {
+  def apply(components: js.Array[Expression], isArray: Boolean): TupleExpression = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], isArray = isArray.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[TupleExpression]
   }
   

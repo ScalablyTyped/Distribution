@@ -3,25 +3,34 @@ package typings.sqltoolsFormatter
 import typings.sqltoolsFormatter.typesMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paramsMod {
   
   @JSImport("@sqltools/formatter/lib/core/Params", JSImport.Default)
   @js.native
-  class default protected () extends Params {
+  class default protected ()
+    extends StObject
+       with Params {
     def this(params: js.Object) = this()
-  }
-  
-  @js.native
-  trait Params extends StObject {
     
-    def get(hasKeyValue: Token): js.Any = js.native
+    /* CompleteClass */
+    override def get(hasKeyValue: Token): js.Any = js.native
     
+    /* CompleteClass */
     var index: js.Any = js.native
     
+    /* CompleteClass */
     var params: js.Object = js.native
+  }
+  
+  trait Params extends StObject {
+    
+    def get(hasKeyValue: Token): js.Any
+    
+    var index: js.Any
+    
+    var params: js.Object
   }
   object Params {
     

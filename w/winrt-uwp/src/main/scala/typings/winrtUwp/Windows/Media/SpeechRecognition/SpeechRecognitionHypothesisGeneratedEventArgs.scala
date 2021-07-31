@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.SpeechRecognition
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains event data for the SpeechRecognizer.HypothesisGenerated event. */
-@js.native
 trait SpeechRecognitionHypothesisGeneratedEventArgs extends StObject {
   
   /** Gets a recognition result fragment returned by the speech recognizer during an ongoing dictation session. */
-  var hypothesis: SpeechRecognitionHypothesis = js.native
+  var hypothesis: SpeechRecognitionHypothesis
 }
 object SpeechRecognitionHypothesisGeneratedEventArgs {
   

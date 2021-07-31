@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRegistryInput extends StObject {
   
   /**
     * A description of the registry. If description is not provided, there will not be any default value for this.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * Name of the registry to be created of max length of 255, and may only contain letters, numbers, hyphen, underscore, dollar sign, or hash mark. No whitespace.
     */
-  var RegistryName: SchemaRegistryNameString = js.native
+  var RegistryName: SchemaRegistryNameString
   
   /**
     * AWS tags that contain a key value pair and may be searched by console, command line, or API.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object CreateRegistryInput {
   

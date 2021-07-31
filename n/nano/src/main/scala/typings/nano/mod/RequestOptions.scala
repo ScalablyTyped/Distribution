@@ -2,33 +2,31 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
-  var att: js.UndefOr[String] = js.native
+  var att: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[js.Any] = js.native
+  var body: js.UndefOr[js.Any] = js.undefined
   
-  var content_type: js.UndefOr[String] = js.native
+  var content_type: js.UndefOr[String] = js.undefined
   
-  var db: js.UndefOr[String] = js.native
+  var db: js.UndefOr[String] = js.undefined
   
-  var doc: js.UndefOr[String] = js.native
+  var doc: js.UndefOr[String] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var multipart: js.UndefOr[js.Array[_]] = js.native
+  var multipart: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var qs: js.UndefOr[js.Any] = js.native
+  var qs: js.UndefOr[js.Any] = js.undefined
 }
 object RequestOptions {
   
@@ -90,7 +88,7 @@ object RequestOptions {
     def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
     @scala.inline
-    def setMultipart(value: js.Array[_]): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    def setMultipart(value: js.Array[js.Any]): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)

@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowsRequestingEventUIParam extends StObject {
   
   /**
     * Gets the next chunk index.
     */
-  var chunkIndex: js.UndefOr[Double] = js.native
+  var chunkIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the chunk size.
     */
-  var chunkSize: js.UndefOr[Double] = js.native
+  var chunkSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to igGridAppendRowsOnDemand.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object RowsRequestingEventUIParam {
   

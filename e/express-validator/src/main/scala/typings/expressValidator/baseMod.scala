@@ -1,19 +1,26 @@
 package typings.expressValidator
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.expressValidator.expressValidatorStrings._error
 import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
   
   @JSImport("express-validator/src/base", "ValidationHalt")
   @js.native
-  class ValidationHalt () extends Error
+  class ValidationHalt ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("express-validator/src/base", "contextsKey")
   @js.native
@@ -25,18 +32,17 @@ object baseMod {
   
   type DynamicMessageCreator = js.Function2[/* value */ js.Any, /* meta */ Meta, js.Any]
   
-  @js.native
   trait FieldInstance extends StObject {
     
-    var location: Location = js.native
+    var location: Location
     
-    var originalPath: String = js.native
+    var originalPath: String
     
-    var originalValue: js.Any = js.native
+    var originalValue: js.Any
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object FieldInstance {
     
@@ -67,7 +73,9 @@ object baseMod {
   }
   
   @js.native
-  trait InternalRequest extends Request
+  trait InternalRequest
+    extends StObject
+       with Request
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressValidator.expressValidatorStrings.body
@@ -95,14 +103,13 @@ object baseMod {
     def query: typings.expressValidator.expressValidatorStrings.query = "query".asInstanceOf[typings.expressValidator.expressValidatorStrings.query]
   }
   
-  @js.native
   trait Meta extends StObject {
     
-    var location: Location = js.native
+    var location: Location
     
-    var path: String = js.native
+    var path: String
     
-    var req: Request = js.native
+    var req: Request
   }
   object Meta {
     
@@ -133,19 +140,19 @@ object baseMod {
     Unit
   ]
   
-  @js.native
   trait Request
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var cookies: js.UndefOr[Record[String, _]] = js.native
+    var cookies: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var params: js.UndefOr[Record[String, _]] = js.native
+    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var query: js.UndefOr[Record[String, _]] = js.native
+    var query: js.UndefOr[Record[String, js.Any]] = js.undefined
   }
   object Request {
     
@@ -165,34 +172,42 @@ object baseMod {
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def setCookies(value: Record[String, _]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      def setCookies(value: Record[String, js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setQuery(value: Record[String, _]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
-  type StandardSanitizer = js.Function2[/* input */ String, /* repeated */ js.Any, js.Any]
+  @js.native
+  trait StandardSanitizer extends StObject {
+    
+    def apply(input: String, options: js.Any*): js.Any = js.native
+  }
   
-  type StandardValidator = js.Function2[/* input */ String, /* repeated */ js.Any, Boolean]
+  @js.native
+  trait StandardValidator extends StObject {
+    
+    def apply(input: String, options: js.Any*): Boolean = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.expressValidator.anon.Location
@@ -203,13 +218,14 @@ object baseMod {
     
     @scala.inline
     def Location(
+      location: Unit,
       msg: js.Any,
       nestedErrors: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias express-validator.express-validator/src/base.ValidationError */ js.Object
         ],
-      param: _error
+      value: Unit
     ): typings.expressValidator.anon.Location = {
-      val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], param = param.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], nestedErrors = nestedErrors.asInstanceOf[js.Any], param = "_error", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressValidator.anon.Location]
     }
     

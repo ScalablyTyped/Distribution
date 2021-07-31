@@ -5,33 +5,30 @@ import typings.libp2pNoise.libp2pMod.KeyPair
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
   
-  @JSImport("libp2p-noise/dist/src/logger", "logCipherState")
+  @JSImport("libp2p-noise/dist/src/logger", JSImport.Namespace)
   @js.native
-  def logCipherState(session: NoiseSession): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-noise/dist/src/logger", "logLocalEphemeralKeys")
-  @js.native
-  def logLocalEphemeralKeys(): Unit = js.native
-  @JSImport("libp2p-noise/dist/src/logger", "logLocalEphemeralKeys")
-  @js.native
-  def logLocalEphemeralKeys(e: KeyPair): Unit = js.native
+  @scala.inline
+  def logCipherState(session: NoiseSession): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logCipherState")(session.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-noise/dist/src/logger", "logLocalStaticKeys")
-  @js.native
-  def logLocalStaticKeys(s: KeyPair): Unit = js.native
+  @scala.inline
+  def logLocalEphemeralKeys(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")().asInstanceOf[Unit]
+  @scala.inline
+  def logLocalEphemeralKeys(e: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalEphemeralKeys")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-noise/dist/src/logger", "logRemoteEphemeralKey")
-  @js.native
-  def logRemoteEphemeralKey(re: Buffer): Unit = js.native
+  @scala.inline
+  def logLocalStaticKeys(s: KeyPair): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logLocalStaticKeys")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-noise/dist/src/logger", "logRemoteStaticKey")
-  @js.native
-  def logRemoteStaticKey(rs: Buffer): Unit = js.native
+  @scala.inline
+  def logRemoteEphemeralKey(re: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteEphemeralKey")(re.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def logRemoteStaticKey(rs: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logRemoteStaticKey")(rs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("libp2p-noise/dist/src/logger", "logger")
   @js.native

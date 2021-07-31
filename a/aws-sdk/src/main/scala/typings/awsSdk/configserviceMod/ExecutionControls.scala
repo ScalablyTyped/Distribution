@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionControls extends StObject {
   
   /**
     * A SsmControls object.
     */
-  var SsmControls: js.UndefOr[typings.awsSdk.configserviceMod.SsmControls] = js.native
+  var SsmControls: js.UndefOr[typings.awsSdk.configserviceMod.SsmControls] = js.undefined
 }
 object ExecutionControls {
   

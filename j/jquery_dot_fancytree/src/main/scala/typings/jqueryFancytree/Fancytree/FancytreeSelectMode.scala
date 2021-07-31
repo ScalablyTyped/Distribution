@@ -2,7 +2,6 @@ package typings.jqueryFancytree.Fancytree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait FancytreeSelectMode extends StObject
 object FancytreeSelectMode extends StObject {
   
   @js.native
-  sealed trait multi extends FancytreeSelectMode
+  sealed trait multi
+    extends StObject
+       with FancytreeSelectMode
   
   @js.native
-  sealed trait mutlti_hier extends FancytreeSelectMode
+  sealed trait mutlti_hier
+    extends StObject
+       with FancytreeSelectMode
   
   @js.native
-  sealed trait single extends FancytreeSelectMode
+  sealed trait single
+    extends StObject
+       with FancytreeSelectMode
 }

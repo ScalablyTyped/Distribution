@@ -2,23 +2,21 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XElement extends StObject {
   
-  def get_attributes(): js.Any = js.native
+  def get_attributes(): js.Any
   
-  def get_children(): js.Any = js.native
+  def get_children(): js.Any
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def set_attributes(value: js.Any): Unit = js.native
+  def set_attributes(value: js.Any): Unit
   
-  def set_children(value: js.Any): Unit = js.native
+  def set_children(value: js.Any): Unit
   
-  def set_name(value: String): Unit = js.native
+  def set_name(value: String): Unit
 }
 object XElement {
   

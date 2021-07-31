@@ -3,23 +3,22 @@ package typings.gitBranchIs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(branchNameOrTest: BranchNameOrTest): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(branchNameOrTest: BranchNameOrTest, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(branchNameOrTest: BranchNameOrTest, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(branchNameOrTest: BranchNameOrTest, options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(branchNameOrTest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("git-branch-is", JSImport.Namespace)
   @js.native
-  def apply(branchNameOrTest: BranchNameOrTest): js.Promise[Boolean] = js.native
-  @JSImport("git-branch-is", JSImport.Namespace)
-  @js.native
-  def apply(branchNameOrTest: BranchNameOrTest, callback: Callback): Unit = js.native
-  @JSImport("git-branch-is", JSImport.Namespace)
-  @js.native
-  def apply(branchNameOrTest: BranchNameOrTest, options: Options): Unit = js.native
-  @JSImport("git-branch-is", JSImport.Namespace)
-  @js.native
-  def apply(branchNameOrTest: BranchNameOrTest, options: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Expected name of current branch
@@ -42,7 +41,6 @@ object mod {
   /**
     * Options for {@link gitBranchIs}.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -50,27 +48,27 @@ object mod {
       * tested
       * @default ''
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Extra arguments to pass to git
       * @default []
       */
-    var gitArgs: js.UndefOr[js.Array[String]] = js.native
+    var gitArgs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Path to the repository (i.e.
       * <code>--git-dir=</code> option to <code>git</code>).
       * @default ''
       */
-    var gitDir: js.UndefOr[String] = js.native
+    var gitDir: js.UndefOr[String] = js.undefined
     
     /**
       * Git binary name or path to use (default:
       * <code>'git'</code>).
       * @default 'git'
       */
-    var gitPath: js.UndefOr[String] = js.native
+    var gitPath: js.UndefOr[String] = js.undefined
   }
   object Options {
     

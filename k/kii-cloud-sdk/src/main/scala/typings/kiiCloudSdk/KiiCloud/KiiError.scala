@@ -2,17 +2,15 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KiiError extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var message: String = js.native
+  var message: String
   
-  var status: Double = js.native
+  var status: Double
 }
 object KiiError {
   

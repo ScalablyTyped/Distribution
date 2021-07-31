@@ -3,24 +3,24 @@ package typings.sweetalert
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsContentMod {
   
-  @JSImport("sweetalert/typings/modules/options/content", "getContentOpts")
+  @JSImport("sweetalert/typings/modules/options/content", JSImport.Namespace)
   @js.native
-  def getContentOpts(contentParam: String): ContentOptions = js.native
-  @JSImport("sweetalert/typings/modules/options/content", "getContentOpts")
-  @js.native
-  def getContentOpts(contentParam: js.Object): ContentOptions = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getContentOpts(contentParam: String): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
+  @scala.inline
+  def getContentOpts(contentParam: js.Object): ContentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentOpts")(contentParam.asInstanceOf[js.Any]).asInstanceOf[ContentOptions]
+  
   trait ContentOptions extends StObject {
     
-    var attributes: js.UndefOr[js.Object] = js.native
+    var attributes: js.UndefOr[js.Object] = js.undefined
     
-    var element: String | Node = js.native
+    var element: String | Node
   }
   object ContentOptions {
     

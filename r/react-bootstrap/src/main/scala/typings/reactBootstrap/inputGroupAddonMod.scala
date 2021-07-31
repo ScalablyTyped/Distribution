@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupAddonMod {
@@ -18,10 +17,11 @@ object inputGroupAddonMod {
   trait InputGroupAddon
     extends Component[InputGroupAddonProps, js.Object, js.Any]
   
-  @js.native
-  trait InputGroupAddonProps extends HTMLProps[InputGroupAddon] {
+  trait InputGroupAddonProps
+    extends StObject
+       with HTMLProps[InputGroupAddon] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
   }
   object InputGroupAddonProps {
     

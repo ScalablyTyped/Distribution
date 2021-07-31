@@ -4,39 +4,39 @@ import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapViewHighlightOptions extends AnonymousAccessor {
+trait MapViewHighlightOptions
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * The color of the highlight fill.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var color: js.UndefOr[Color_] = js.native
+  var color: js.UndefOr[Color_] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The color of the halo surrounding the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var haloColor: js.UndefOr[Color_] = js.native
+  var haloColor: js.UndefOr[Color_] = js.undefined
   
   /**
     * The opacity of the highlight halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var haloOpacity: js.UndefOr[Double] = js.native
+  var haloOpacity: js.UndefOr[Double] = js.undefined
 }
 object MapViewHighlightOptions {
   
@@ -47,7 +47,7 @@ object MapViewHighlightOptions {
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
       js.Function2[/* propertyName */ String, /* value */ js.Any, MapViewHighlightOptions]
-    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], MapViewHighlightOptions]])
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], MapViewHighlightOptions]])
   ): MapViewHighlightOptions = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewHighlightOptions]

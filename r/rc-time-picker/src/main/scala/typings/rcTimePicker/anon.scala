@@ -6,15 +6,13 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Open extends StObject {
     
-    var open: Boolean = js.native
+    var open: Boolean
   }
   object Open {
     
@@ -33,76 +31,75 @@ object anon {
   }
   
   /* Inlined std.Partial<rc-time-picker.rc-time-picker.TimePickerProps> */
-  @js.native
   trait PartialTimePickerProps extends StObject {
     
-    var addon: js.UndefOr[js.Function1[/* timepicker */ this.type, Element]] = js.native
+    var addon: js.UndefOr[js.Function1[/* timepicker */ this.type, Element]] = js.undefined
     
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearIcon: js.UndefOr[ReactNode] = js.native
+    var clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var clearText: js.UndefOr[String] = js.native
+    var clearText: js.UndefOr[String] = js.undefined
     
-    var defaultOpenValue: js.UndefOr[Moment] = js.native
+    var defaultOpenValue: js.UndefOr[Moment] = js.undefined
     
-    var defaultValue: js.UndefOr[Moment] = js.native
+    var defaultValue: js.UndefOr[Moment] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    var disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    var disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    var disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
-    var focusOnOpen: js.UndefOr[Boolean] = js.native
+    var focusOnOpen: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.native
+    var hourStep: js.UndefOr[Double] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputIcon: js.UndefOr[ReactNode] = js.native
+    var inputIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var inputReadOnly: js.UndefOr[Boolean] = js.native
+    var inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var popupClassName: js.UndefOr[String] = js.native
+    var popupClassName: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.native
+    var secondStep: js.UndefOr[Double] = js.undefined
     
-    var showHour: js.UndefOr[Boolean] = js.native
+    var showHour: js.UndefOr[Boolean] = js.undefined
     
-    var showMinute: js.UndefOr[Boolean] = js.native
+    var showMinute: js.UndefOr[Boolean] = js.undefined
     
-    var showSecond: js.UndefOr[Boolean] = js.native
+    var showSecond: js.UndefOr[Boolean] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[Moment] = js.native
+    var value: js.UndefOr[Moment] = js.undefined
   }
   object PartialTimePickerProps {
     
@@ -322,76 +319,75 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Partial<rc-time-picker.rc-time-picker.TimePickerProps>> */
-  @js.native
   trait ReadonlyPartialTimePicker extends StObject {
     
-    val addon: js.UndefOr[js.Function1[/* timepicker */ TimePicker, Element]] = js.native
+    val addon: js.UndefOr[js.Function1[/* timepicker */ TimePicker, Element]] = js.undefined
     
-    val allowEmpty: js.UndefOr[Boolean] = js.native
+    val allowEmpty: js.UndefOr[Boolean] = js.undefined
     
-    val className: js.UndefOr[String] = js.native
+    val className: js.UndefOr[String] = js.undefined
     
-    val clearIcon: js.UndefOr[ReactNode] = js.native
+    val clearIcon: js.UndefOr[ReactNode] = js.undefined
     
-    val clearText: js.UndefOr[String] = js.native
+    val clearText: js.UndefOr[String] = js.undefined
     
-    val defaultOpenValue: js.UndefOr[Moment] = js.native
+    val defaultOpenValue: js.UndefOr[Moment] = js.undefined
     
-    val defaultValue: js.UndefOr[Moment] = js.native
+    val defaultValue: js.UndefOr[Moment] = js.undefined
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.native
+    val disabledHours: js.UndefOr[js.Function0[js.Array[Double]]] = js.undefined
     
-    val disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.native
+    val disabledMinutes: js.UndefOr[js.Function1[/* hour */ Double, js.Array[Double]]] = js.undefined
     
-    val disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.native
+    val disabledSeconds: js.UndefOr[js.Function2[/* hour */ Double, /* minute */ Double, js.Array[Double]]] = js.undefined
     
-    val focusOnOpen: js.UndefOr[Boolean] = js.native
+    val focusOnOpen: js.UndefOr[Boolean] = js.undefined
     
-    val format: js.UndefOr[String] = js.native
+    val format: js.UndefOr[String] = js.undefined
     
-    val hideDisabledOptions: js.UndefOr[Boolean] = js.native
+    val hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    val hourStep: js.UndefOr[Double] = js.native
+    val hourStep: js.UndefOr[Double] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val inputIcon: js.UndefOr[ReactNode] = js.native
+    val inputIcon: js.UndefOr[ReactNode] = js.undefined
     
-    val inputReadOnly: js.UndefOr[Boolean] = js.native
+    val inputReadOnly: js.UndefOr[Boolean] = js.undefined
     
-    val minuteStep: js.UndefOr[Double] = js.native
+    val minuteStep: js.UndefOr[Double] = js.undefined
     
-    val onChange: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.native
+    val onChange: js.UndefOr[js.Function1[/* value */ Moment, Unit]] = js.undefined
     
-    val onClose: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.native
+    val onClose: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.undefined
     
-    val onOpen: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.native
+    val onOpen: js.UndefOr[js.Function1[/* state */ Open, Unit]] = js.undefined
     
-    val open: js.UndefOr[Boolean] = js.native
+    val open: js.UndefOr[Boolean] = js.undefined
     
-    val placeholder: js.UndefOr[String] = js.native
+    val placeholder: js.UndefOr[String] = js.undefined
     
-    val placement: js.UndefOr[String] = js.native
+    val placement: js.UndefOr[String] = js.undefined
     
-    val popupClassName: js.UndefOr[String] = js.native
+    val popupClassName: js.UndefOr[String] = js.undefined
     
-    val prefixCls: js.UndefOr[String] = js.native
+    val prefixCls: js.UndefOr[String] = js.undefined
     
-    val secondStep: js.UndefOr[Double] = js.native
+    val secondStep: js.UndefOr[Double] = js.undefined
     
-    val showHour: js.UndefOr[Boolean] = js.native
+    val showHour: js.UndefOr[Boolean] = js.undefined
     
-    val showMinute: js.UndefOr[Boolean] = js.native
+    val showMinute: js.UndefOr[Boolean] = js.undefined
     
-    val showSecond: js.UndefOr[Boolean] = js.native
+    val showSecond: js.UndefOr[Boolean] = js.undefined
     
-    val transitionName: js.UndefOr[String] = js.native
+    val transitionName: js.UndefOr[String] = js.undefined
     
-    val use12Hours: js.UndefOr[Boolean] = js.native
+    val use12Hours: js.UndefOr[Boolean] = js.undefined
     
-    val value: js.UndefOr[Moment] = js.native
+    val value: js.UndefOr[Moment] = js.undefined
   }
   object ReadonlyPartialTimePicker {
     

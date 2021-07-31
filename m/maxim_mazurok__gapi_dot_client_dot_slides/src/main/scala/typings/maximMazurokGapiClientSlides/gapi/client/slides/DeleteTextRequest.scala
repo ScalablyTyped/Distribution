@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTextRequest extends StObject {
   
   /** The optional table cell location if the text is to be deleted from a table cell. If present, the object_id must refer to a table. */
-  var cellLocation: js.UndefOr[TableCellLocation] = js.native
+  var cellLocation: js.UndefOr[TableCellLocation] = js.undefined
   
   /** The object ID of the shape or table from which the text will be deleted. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The range of text to delete, based on TextElement indexes. There is always an implicit newline character at the end of a shape's or table cell's text that cannot be deleted.
@@ -21,7 +19,7 @@ trait DeleteTextRequest extends StObject {
     * may result in changes to paragraph styles and lists as the two paragraphs are merged. Ranges that include only one code unit of a surrogate pair are expanded to include both code
     * units.
     */
-  var textRange: js.UndefOr[Range] = js.native
+  var textRange: js.UndefOr[Range] = js.undefined
 }
 object DeleteTextRequest {
   

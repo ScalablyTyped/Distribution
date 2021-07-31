@@ -11,7 +11,6 @@ import typings.std.PropertyDescriptor
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,7 +38,7 @@ trait SinonSandbox extends StObject {
     constructor: StubbableType[TType],
     overrides: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof TType ]:? sinon.sinon.SinonStubbedMember<TType[K]> | TType[K] extends (args : ...any): infer R? any : TType[K]}
-    */ typings.sinon.sinonStrings.SinonSandbox with TopLevel[js.Any]
+    */ typings.sinon.sinonStrings.SinonSandbox & TopLevel[js.Any]
   ): SinonStubbedInstance[TType] = js.native
   
   /**
@@ -139,14 +138,14 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.spy
     */
-  def spy(): SinonSpy[js.Array[_], _] = js.native
+  def spy(): SinonSpy[js.Array[js.Any], js.Any] = js.native
   /**
     * Spies on the provided function
     */
   /**
     * Works exactly like sinon.spy
     */
-  def spy[F /* <: js.Function1[/* repeated */ js.Any, _] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
+  def spy[F /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: F): SinonSpy[Parameters[F], ReturnType[F]] = js.native
   /**
     * Creates a spy for object.method and replaces the original method with the spy.
     * An exception is thrown if the property is not already a function.
@@ -157,11 +156,11 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[_ | js.Array[_], _] = js.native
+  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonSpy[js.Any | js.Array[js.Any], js.Any] = js.native
   /**
     * Works exactly like sinon.spy
     */
-  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): PropertyDescriptor with (Get[T, K]) = js.native
+  def spy[T, K /* <: /* keyof T */ String */](obj: T, method: K, types: js.Array[get | set]): PropertyDescriptor & (Get[T, K]) = js.native
   /**
     * Works exactly like sinon.spy
     */
@@ -186,7 +185,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[TArgs /* <: js.Array[_] */, R](): SinonStub[TArgs, R] = js.native
+  def stub[TArgs /* <: js.Array[js.Any] */, R](): SinonStub[TArgs, R] = js.native
   /**
     * Replaces obj.method with a stub function.
     * An exception is thrown if the property is not already a function.
@@ -195,7 +194,7 @@ trait SinonSandbox extends StObject {
   /**
     * Works exactly like sinon.stub.
     */
-  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[_ | js.Array[_], _] = js.native
+  def stub[T, K /* <: /* keyof T */ String */](obj: T, method: K): SinonStub[js.Any | js.Array[js.Any], js.Any] = js.native
   /**
     * Works exactly like sinon.stub.
     */

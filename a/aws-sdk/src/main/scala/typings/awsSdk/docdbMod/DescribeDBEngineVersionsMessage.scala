@@ -2,56 +2,54 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDBEngineVersionsMessage extends StObject {
   
   /**
     * The name of a specific parameter group family to return details for. Constraints:   If provided, must match an existing DBParameterGroupFamily.  
     */
-  var DBParameterGroupFamily: js.UndefOr[String] = js.native
+  var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that only the default version of the specified engine or engine and major version combination is returned.
     */
-  var DefaultOnly: js.UndefOr[Boolean] = js.native
+  var DefaultOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The database engine to return.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The database engine version to return. Example: 3.6.0 
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter is not currently supported.
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * If this parameter is specified and the requested engine supports the CharacterSetName parameter for CreateDBInstance, the response includes a list of supported character sets for each engine version. 
     */
-  var ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.native
+  var ListSupportedCharacterSets: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * If this parameter is specified and the requested engine supports the TimeZone parameter for CreateDBInstance, the response includes a list of supported time zones for each engine version. 
     */
-  var ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.native
+  var ListSupportedTimezones: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
   
   /**
     *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token (marker) is included in the response so that the remaining results can be retrieved. Default: 100 Constraints: Minimum 20, maximum 100.
     */
-  var MaxRecords: js.UndefOr[IntegerOptional] = js.native
+  var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
 }
 object DescribeDBEngineVersionsMessage {
   

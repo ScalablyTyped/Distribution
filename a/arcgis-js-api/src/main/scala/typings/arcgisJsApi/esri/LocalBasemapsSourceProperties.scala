@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalBasemapsSourceProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait LocalBasemapsSourceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-BasemapGallery-support-LocalBasemapsSource.html#basemaps)
     */
-  var basemaps: js.UndefOr[CollectionProperties[BasemapProperties]] = js.native
+  var basemaps: js.UndefOr[CollectionProperties[BasemapProperties]] = js.undefined
 }
 object LocalBasemapsSourceProperties {
   

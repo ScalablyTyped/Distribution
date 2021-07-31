@@ -8,14 +8,15 @@ import typings.mendixmodelsdk.transactionManagerMod.Transaction
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deltaManagerMod {
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/DeltaManager", "DeltaManager")
   @js.native
-  class DeltaManager protected () extends IDeltaManager {
+  class DeltaManager protected ()
+    extends StObject
+       with IDeltaManager {
     def this(model: AbstractModel) = this()
     
     var callErrorCallbacks: js.Any = js.native
@@ -45,12 +46,11 @@ object deltaManagerMod {
     var transactionManager: js.Any = js.native
   }
   
-  @js.native
   trait IDeltaChange extends StObject {
     
-    var delta: Delta = js.native
+    var delta: Delta
     
-    var reverseDelta: Delta | Error = js.native
+    var reverseDelta: Delta | Error
   }
   object IDeltaChange {
     

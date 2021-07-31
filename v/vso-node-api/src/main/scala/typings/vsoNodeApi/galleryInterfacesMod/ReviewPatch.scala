@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewPatch extends StObject {
   
   /**
     * Denotes the patch operation type
     */
-  var operation: ReviewPatchOperation = js.native
+  var operation: ReviewPatchOperation
   
   /**
     * Use when patch operation is FlagReview
     */
-  var reportedConcern: UserReportedConcern = js.native
+  var reportedConcern: UserReportedConcern
   
   /**
     * Use when patch operation is EditReview
     */
-  var reviewItem: Review = js.native
+  var reviewItem: Review
 }
 object ReviewPatch {
   

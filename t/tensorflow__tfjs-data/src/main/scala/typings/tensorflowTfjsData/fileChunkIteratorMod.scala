@@ -4,7 +4,6 @@ import typings.tensorflowTfjsData.byteChunkIteratorMod.ByteChunkIterator
 import typings.tensorflowTfjsData.typesMod.FileElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileChunkIteratorMod {
@@ -24,14 +23,13 @@ object fileChunkIteratorMod {
     var options: FileChunkIteratorOptions = js.native
   }
   
-  @js.native
   trait FileChunkIteratorOptions extends StObject {
     
     /** The number of bytes to read at a time. Default 1MB. */
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
     /** The byte offset at which to begin reading the File or Blob. Default 0. */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object FileChunkIteratorOptions {
     

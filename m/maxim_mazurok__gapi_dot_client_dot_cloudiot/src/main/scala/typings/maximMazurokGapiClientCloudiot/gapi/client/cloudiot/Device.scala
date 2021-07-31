@@ -3,66 +3,64 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /**
     * If a device is blocked, connections or requests from this device will fail. Can be used to temporarily prevent the device from connecting if, for example, the sensor is generating
     * bad data and needs maintenance.
     */
-  var blocked: js.UndefOr[Boolean] = js.native
+  var blocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The most recent device configuration, which is eventually sent from Cloud IoT Core to the device. If not present on creation, the configuration will be initialized with an empty
     * payload and version value of `1`. To update this field after creation, use the `DeviceManager.ModifyCloudToDeviceConfig` method.
     */
-  var config: js.UndefOr[DeviceConfig] = js.native
+  var config: js.UndefOr[DeviceConfig] = js.undefined
   
   /**
     * The credentials used to authenticate this device. To allow credential rotation without interruption, multiple device credentials can be bound to this device. No more than 3
     * credentials can be bound to a single device at a time. When new credentials are added to a device, they are verified against the registry credentials. For details, see the
     * description of the `DeviceRegistry.credentials` field.
     */
-  var credentials: js.UndefOr[js.Array[DeviceCredential]] = js.native
+  var credentials: js.UndefOr[js.Array[DeviceCredential]] = js.undefined
   
   /** Gateway-related configuration and state. */
-  var gatewayConfig: js.UndefOr[GatewayConfig] = js.native
+  var gatewayConfig: js.UndefOr[GatewayConfig] = js.undefined
   
   /** The user-defined device identifier. The device ID must be unique within a device registry. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** [Output only] The last time a cloud-to-device config version acknowledgment was received from the device. This field is only for configurations sent through MQTT. */
-  var lastConfigAckTime: js.UndefOr[String] = js.native
+  var lastConfigAckTime: js.UndefOr[String] = js.undefined
   
   /** [Output only] The last time a cloud-to-device config version was sent to the device. */
-  var lastConfigSendTime: js.UndefOr[String] = js.native
+  var lastConfigSendTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The error message of the most recent error, such as a failure to publish to Cloud Pub/Sub. 'last_error_time' is the timestamp of this field. If no errors have
     * occurred, this field has an empty message and the status code 0 == OK. Otherwise, this field is expected to have a status code other than OK.
     */
-  var lastErrorStatus: js.UndefOr[Status] = js.native
+  var lastErrorStatus: js.UndefOr[Status] = js.undefined
   
   /** [Output only] The time the most recent error occurred, such as a failure to publish to Cloud Pub/Sub. This field is the timestamp of 'last_error_status'. */
-  var lastErrorTime: js.UndefOr[String] = js.native
+  var lastErrorTime: js.UndefOr[String] = js.undefined
   
   /** [Output only] The last time a telemetry event was received. Timestamps are periodically collected and written to storage; they may be stale by a few minutes. */
-  var lastEventTime: js.UndefOr[String] = js.native
+  var lastEventTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The last time an MQTT `PINGREQ` was received. This field applies only to devices connecting through MQTT. MQTT clients usually only send `PINGREQ` messages if the
     * connection is idle, and no other messages have been sent. Timestamps are periodically collected and written to storage; they may be stale by a few minutes.
     */
-  var lastHeartbeatTime: js.UndefOr[String] = js.native
+  var lastHeartbeatTime: js.UndefOr[String] = js.undefined
   
   /** [Output only] The last time a state event was received. Timestamps are periodically collected and written to storage; they may be stale by a few minutes. */
-  var lastStateTime: js.UndefOr[String] = js.native
+  var lastStateTime: js.UndefOr[String] = js.undefined
   
   /** **Beta Feature** The logging verbosity for device activity. If unspecified, DeviceRegistry.log_level will be used. */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata key-value pairs assigned to the device. This metadata is not interpreted or indexed by Cloud IoT Core. It can be used to add contextual information for the device. Keys
@@ -72,20 +70,20 @@ trait Device extends StObject {
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The resource path name. For example, `projects/p1/locations/us-central1/registries/registry0/devices/dev0` or
     * `projects/p1/locations/us-central1/registries/registry0/devices/{num_id}`. When `name` is populated as a response from the service, it always ends in the device numeric ID.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Output only] A server-defined unique numeric ID for the device. This is a more compact way to identify devices, and it is globally unique. */
-  var numId: js.UndefOr[String] = js.native
+  var numId: js.UndefOr[String] = js.undefined
   
   /** [Output only] The state most recently received from the device. If no state has been reported, this field is not present. */
-  var state: js.UndefOr[DeviceState] = js.native
+  var state: js.UndefOr[DeviceState] = js.undefined
 }
 object Device {
   
@@ -183,7 +181,7 @@ object Device {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientCloudiot.maximMazurokGapiClientCloudiotStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

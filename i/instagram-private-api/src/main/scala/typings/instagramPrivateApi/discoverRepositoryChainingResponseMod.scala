@@ -2,15 +2,13 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoverRepositoryChainingResponseMod {
   
-  @js.native
   trait DiscoverRepositoryChainingResponseChainingInfo extends StObject {
     
-    var sources: String = js.native
+    var sources: String
   }
   object DiscoverRepositoryChainingResponseChainingInfo {
     
@@ -28,18 +26,17 @@ object discoverRepositoryChainingResponseMod {
     }
   }
   
-  @js.native
   trait DiscoverRepositoryChainingResponseRootObject extends StObject {
     
-    var available_recommend_count: Double = js.native
+    var available_recommend_count: Double
     
-    var is_backup: Boolean = js.native
+    var is_backup: Boolean
     
-    var is_recommend_account: Boolean = js.native
+    var is_recommend_account: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var users: js.Array[DiscoverRepositoryChainingResponseUsersItem] = js.native
+    var users: js.Array[DiscoverRepositoryChainingResponseUsersItem]
   }
   object DiscoverRepositoryChainingResponseRootObject {
     
@@ -78,28 +75,27 @@ object discoverRepositoryChainingResponseMod {
     }
   }
   
-  @js.native
   trait DiscoverRepositoryChainingResponseUsersItem extends StObject {
     
-    var chaining_info: DiscoverRepositoryChainingResponseChainingInfo = js.native
+    var chaining_info: DiscoverRepositoryChainingResponseChainingInfo
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_chaining_secondary_label: String = js.native
+    var profile_chaining_secondary_label: String
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var social_context: String = js.native
+    var social_context: String
     
-    var username: String = js.native
+    var username: String
   }
   object DiscoverRepositoryChainingResponseUsersItem {
     

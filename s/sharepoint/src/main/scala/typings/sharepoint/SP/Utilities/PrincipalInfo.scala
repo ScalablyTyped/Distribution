@@ -5,29 +5,29 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrincipalInfo extends ClientValueObject {
+trait PrincipalInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_department(): String = js.native
+  def get_department(): String
   
-  def get_displayName(): String = js.native
+  def get_displayName(): String
   
-  def get_email(): String = js.native
+  def get_email(): String
   
-  def get_jobTitle(): String = js.native
+  def get_jobTitle(): String
   
-  def get_loginName(): String = js.native
+  def get_loginName(): String
   
-  def get_mobile(): String = js.native
+  def get_mobile(): String
   
-  def get_principalId(): Double = js.native
+  def get_principalId(): Double
   
-  def get_principalType(): PrincipalType = js.native
+  def get_principalType(): PrincipalType
   
-  def get_sIPAddress(): String = js.native
+  def get_sIPAddress(): String
 }
 object PrincipalInfo {
   

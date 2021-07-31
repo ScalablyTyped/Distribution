@@ -2,17 +2,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditValidationEventArgs extends EventArgs {
+trait EditValidationEventArgs
+  extends StObject
+     with EventArgs {
   
-  var errorText: String = js.native
+  var errorText: String
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  var value: String = js.native
+  var value: String
 }
 object EditValidationEventArgs {
   

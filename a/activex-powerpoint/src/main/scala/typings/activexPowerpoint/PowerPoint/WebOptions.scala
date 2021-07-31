@@ -6,42 +6,40 @@ import typings.activexOffice.Office.MsoTargetBrowser
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebOptions extends StObject {
   
-  var AllowPNG: MsoTriState = js.native
+  var AllowPNG: MsoTriState
   
-  var Encoding: MsoEncoding = js.native
+  var Encoding: MsoEncoding
   
-  val FolderSuffix: String = js.native
+  val FolderSuffix: String
   
-  var FrameColors: PpFrameColors = js.native
+  var FrameColors: PpFrameColors
   
-  var HTMLVersion: PpHTMLVersion = js.native
+  var HTMLVersion: PpHTMLVersion
   
-  var IncludeNavigation: MsoTriState = js.native
+  var IncludeNavigation: MsoTriState
   
-  var OrganizeInFolder: MsoTriState = js.native
+  var OrganizeInFolder: MsoTriState
   
   @JSName("PowerPoint.WebOptions_typekey")
-  var PowerPointDotWebOptions_typekey: WebOptions = js.native
+  var PowerPointDotWebOptions_typekey: WebOptions
   
-  var RelyOnVML: MsoTriState = js.native
+  var RelyOnVML: MsoTriState
   
-  var ResizeGraphics: MsoTriState = js.native
+  var ResizeGraphics: MsoTriState
   
-  var ScreenSize: MsoScreenSize = js.native
+  var ScreenSize: MsoScreenSize
   
-  var ShowSlideAnimation: MsoTriState = js.native
+  var ShowSlideAnimation: MsoTriState
   
-  var TargetBrowser: MsoTargetBrowser = js.native
+  var TargetBrowser: MsoTargetBrowser
   
-  def UseDefaultFolderSuffix(): Unit = js.native
+  def UseDefaultFolderSuffix(): Unit
   
-  var UseLongFileNames: MsoTriState = js.native
+  var UseLongFileNames: MsoTriState
 }
 object WebOptions {
   

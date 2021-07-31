@@ -2,14 +2,12 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/test-utils/createMount.MountOptions> */
-@js.native
 trait PartialMountOptions extends StObject {
   
-  var mount: js.UndefOr[FnCallNodeOptions] = js.native
+  var mount: js.UndefOr[FnCallNodeOptions] = js.undefined
 }
 object PartialMountOptions {
   

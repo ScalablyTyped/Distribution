@@ -2,16 +2,14 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnType extends StObject {
   
   /**
     * The column's type, such as VarChar, Int or Binary.
     */
-  var name: String = js.native
+  var name: String
 }
 object ColumnType {
   

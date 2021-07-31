@@ -3,37 +3,28 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`key-down`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewKeyDownEvent extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var repeat: Boolean = js.native
+  var repeat: Boolean
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: `key-down` = js.native
+  var `type`: `key-down`
 }
 object ViewKeyDownEvent {
   
   @scala.inline
-  def apply(
-    key: String,
-    native: js.Any,
-    repeat: Boolean,
-    stopPropagation: js.Function,
-    timestamp: Double,
-    `type`: `key-down`
-  ): ViewKeyDownEvent = {
+  def apply(key: String, native: js.Any, repeat: Boolean, stopPropagation: js.Function, timestamp: Double): ViewKeyDownEvent = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("key-down")
     __obj.asInstanceOf[ViewKeyDownEvent]
   }
   

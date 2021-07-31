@@ -2,18 +2,16 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:disable:interface-name */
-@js.native
 trait IPAMConfig extends StObject {
   
-  var IPv4Address: js.UndefOr[String] = js.native
+  var IPv4Address: js.UndefOr[String] = js.undefined
   
-  var IPv6Address: js.UndefOr[String] = js.native
+  var IPv6Address: js.UndefOr[String] = js.undefined
   
-  var LinkLocalIPs: js.UndefOr[js.Array[String]] = js.native
+  var LinkLocalIPs: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IPAMConfig {
   

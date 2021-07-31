@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEventsInstances extends StandardParameters {
+trait ParamsResourceEventsInstances
+  extends StObject
+     with StandardParameters {
   
   /**
     * Whether to always include a value in the email field for the organizer,
@@ -20,75 +20,75 @@ trait ParamsResourceEventsInstances extends StandardParameters {
     * absence of an email address value in the mentioned places. Optional. The
     * default is False.
     */
-  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.native
+  var alwaysIncludeEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier. To retrieve calendar IDs call the calendarList.list
     * method. If you want to access the primary calendar of the currently
     * logged in user, use the "primary" keyword.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * Recurring event identifier.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of attendees to include in the response. If there are
     * more than the specified number of attendees, only the participant is
     * returned. Optional.
     */
-  var maxAttendees: js.UndefOr[Double] = js.native
+  var maxAttendees: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum number of events returned on one result page. By default the
     * value is 250 events. The page size can never be larger than 2500 events.
     * Optional.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The original start time of the instance in the result. Optional.
     */
-  var originalStart: js.UndefOr[String] = js.native
+  var originalStart: js.UndefOr[String] = js.undefined
   
   /**
     * Token specifying which result page to return. Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to include deleted events (with status equals "cancelled") in the
     * result. Cancelled instances of recurring events will still be included if
     * singleEvents is False. Optional. The default is False.
     */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Upper bound (exclusive) for an event's start time to filter by. Optional.
     * The default is not to filter by start time. Must be an RFC3339 timestamp
     * with mandatory time zone offset.
     */
-  var timeMax: js.UndefOr[String] = js.native
+  var timeMax: js.UndefOr[String] = js.undefined
   
   /**
     * Lower bound (inclusive) for an event's end time to filter by. Optional.
     * The default is not to filter by end time. Must be an RFC3339 timestamp
     * with mandatory time zone offset.
     */
-  var timeMin: js.UndefOr[String] = js.native
+  var timeMin: js.UndefOr[String] = js.undefined
   
   /**
     * Time zone used in the response. Optional. The default is the time zone of
     * the calendar.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEventsInstances {
   

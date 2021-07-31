@@ -3,7 +3,6 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.url_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.twitter
   - typings.reactNative.reactNativeStrings.`web-search`
 */
-trait KeyboardTypeIOS extends _KeyboardTypeOptions
+trait KeyboardTypeIOS
+  extends StObject
+     with _KeyboardTypeOptions
 object KeyboardTypeIOS {
   
   @scala.inline

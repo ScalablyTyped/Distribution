@@ -10,10 +10,13 @@ import typings.libp2pGossipsub.peerScoreParamsMod.TopicScoreParams
 import typings.libp2pGossipsub.peerScoreThresholdsMod.PeerScoreThresholds
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scoreMod {
+  
+  @JSImport("libp2p-gossipsub/src/score", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("libp2p-gossipsub/src/score", "PeerScore")
   @js.native
@@ -22,26 +25,20 @@ object scoreMod {
     def this(params: PeerScoreParams, connectionManager: ConnectionManager, msgId: MessageIdFunction) = this()
   }
   
-  @JSImport("libp2p-gossipsub/src/score", "createPeerScoreParams")
-  @js.native
-  def createPeerScoreParams(): PeerScoreParams = js.native
-  @JSImport("libp2p-gossipsub/src/score", "createPeerScoreParams")
-  @js.native
-  def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = js.native
+  @scala.inline
+  def createPeerScoreParams(): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")().asInstanceOf[PeerScoreParams]
+  @scala.inline
+  def createPeerScoreParams(p: PartialPeerScoreParams): PeerScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreParams]
   
-  @JSImport("libp2p-gossipsub/src/score", "createPeerScoreThresholds")
-  @js.native
-  def createPeerScoreThresholds(): PeerScoreThresholds = js.native
-  @JSImport("libp2p-gossipsub/src/score", "createPeerScoreThresholds")
-  @js.native
-  def createPeerScoreThresholds(p: PartialPeerScoreThreshold): PeerScoreThresholds = js.native
+  @scala.inline
+  def createPeerScoreThresholds(): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")().asInstanceOf[PeerScoreThresholds]
+  @scala.inline
+  def createPeerScoreThresholds(p: PartialPeerScoreThreshold): PeerScoreThresholds = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[PeerScoreThresholds]
   
-  @JSImport("libp2p-gossipsub/src/score", "createTopicScoreParams")
-  @js.native
-  def createTopicScoreParams(): TopicScoreParams = js.native
-  @JSImport("libp2p-gossipsub/src/score", "createTopicScoreParams")
-  @js.native
-  def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = js.native
+  @scala.inline
+  def createTopicScoreParams(): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")().asInstanceOf[TopicScoreParams]
+  @scala.inline
+  def createTopicScoreParams(p: PartialTopicScoreParams): TopicScoreParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[TopicScoreParams]
   
   @JSImport("libp2p-gossipsub/src/score", "defaultPeerScoreParams")
   @js.native
@@ -55,15 +52,12 @@ object scoreMod {
   @js.native
   val defaultTopicScoreParams: TopicScoreParams = js.native
   
-  @JSImport("libp2p-gossipsub/src/score", "validatePeerScoreParams")
-  @js.native
-  def validatePeerScoreParams(p: PeerScoreParams): Unit = js.native
+  @scala.inline
+  def validatePeerScoreParams(p: PeerScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-gossipsub/src/score", "validatePeerScoreThresholds")
-  @js.native
-  def validatePeerScoreThresholds(p: PeerScoreThresholds): Unit = js.native
+  @scala.inline
+  def validatePeerScoreThresholds(p: PeerScoreThresholds): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validatePeerScoreThresholds")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("libp2p-gossipsub/src/score", "validateTopicScoreParams")
-  @js.native
-  def validateTopicScoreParams(p: TopicScoreParams): Unit = js.native
+  @scala.inline
+  def validateTopicScoreParams(p: TopicScoreParams): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateTopicScoreParams")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

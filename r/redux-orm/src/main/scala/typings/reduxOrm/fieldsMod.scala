@@ -5,7 +5,6 @@ import typings.reduxOrm.reduxOrmBooleans.`false`
 import typings.reduxOrm.reduxOrmBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldsMod {
@@ -92,10 +91,9 @@ object fieldsMod {
     def apply(opts: AttributeOpts): AttributeWithDefault = js.native
   }
   
-  @js.native
   trait AttributeOpts extends StObject {
     
-    var getDefault: js.UndefOr[js.Function0[_]] = js.native
+    var getDefault: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object AttributeOpts {
     
@@ -109,7 +107,7 @@ object fieldsMod {
     implicit class AttributeOptsMutableBuilder[Self <: AttributeOpts] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetDefault(value: () => _): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+      def setGetDefault(value: () => js.Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDefaultUndefined: Self = StObject.set(x, "getDefault", js.undefined)
@@ -148,18 +146,17 @@ object fieldsMod {
     def apply(toModelName: String, relatedName: String): OneToOne_ = js.native
   }
   
-  @js.native
   trait RelationalFieldOpts extends StObject {
     
-    var as: js.UndefOr[String] = js.native
+    var as: js.UndefOr[String] = js.undefined
     
-    var relatedName: js.UndefOr[String] = js.native
+    var relatedName: js.UndefOr[String] = js.undefined
     
-    var through: js.UndefOr[String] = js.native
+    var through: js.UndefOr[String] = js.undefined
     
-    var throughFields: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var throughFields: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var to: String = js.native
+    var to: String
   }
   object RelationalFieldOpts {
     

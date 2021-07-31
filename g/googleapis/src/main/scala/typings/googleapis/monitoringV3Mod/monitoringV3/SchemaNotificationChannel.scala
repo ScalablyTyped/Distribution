@@ -3,7 +3,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * information like authentication tokens or contact info are only partially
   * populated on retrieval.
   */
-@js.native
 trait SchemaNotificationChannel extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaNotificationChannel extends StObject {
     * description may provide additional details, beyond the display name, for
     * the channel. This may not exceed 1024 Unicode characters.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * An optional human-readable name for this notification channel. It is
@@ -29,7 +27,7 @@ trait SchemaNotificationChannel extends StObject {
     * it easier to identify the channels in your project, though this is not
     * enforced. The display name is limited to 512 Unicode characters.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether notifications are forwarded to the described channel. This makes
@@ -39,7 +37,7 @@ trait SchemaNotificationChannel extends StObject {
     * temporary and you want to receive notifications from the same set of
     * alerting policies on the channel at some point in the future.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configuration fields that define the channel and its behavior. The
@@ -47,20 +45,20 @@ trait SchemaNotificationChannel extends StObject {
     * NotificationChannelDescriptor.labels of the NotificationChannelDescriptor
     * corresponding to the type field.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The full REST resource name for this channel. The syntax is:
     * projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The [CHANNEL_ID]
     * is automatically assigned by the server on creation.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the notification channel. This field matches the value of the
     * NotificationChannelDescriptor.type field.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * User-supplied key/value data that does not need to conform to the
@@ -72,7 +70,7 @@ trait SchemaNotificationChannel extends StObject {
     * letters, numerals, underscores, and dashes. Keys must begin with a
     * letter.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Indicates whether this channel has been verified or not. On a
@@ -88,7 +86,7 @@ trait SchemaNotificationChannel extends StObject {
     * UpdateNotificationChannel operation. To change the value of this field,
     * you must call VerifyNotificationChannel.
     */
-  var verificationStatus: js.UndefOr[String] = js.native
+  var verificationStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaNotificationChannel {
   

@@ -7,14 +7,14 @@ import typings.swaggerUiDist.swaggerUiDistStrings.list
 import typings.swaggerUiDist.swaggerUiDistStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
   trait SwaggerUIBundle
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
     def apply(): js.Any = js.native
     def apply(a: SwaggerConfigs): js.Any = js.native
@@ -39,90 +39,90 @@ object mod {
   
   type Spec = StringDictionary[js.Any]
   
-  @js.native
   trait SwaggerConfigs
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
     /**
       * URL to fetch external configuration document from.
       */
-    var configUrl: js.UndefOr[String] = js.native
+    var configUrl: js.UndefOr[String] = js.undefined
     
     /**
       * If set to true, enables deep linking for tags and operations. See the Deep Linking documentation for more information.
       */
-    var deepLinking: js.UndefOr[Boolean] = js.native
+    var deepLinking: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the default expansion setting for the operations and tags. It can be 'list' (expands only the tags), 'full' (expands the tags and operations) or 'none' (expands nothing).
       */
-    var docExpansion: js.UndefOr[list | full | none] = js.native
+    var docExpansion: js.UndefOr[list | full | none] = js.undefined
     
     /**
       *  REQUIRED if dom_id is not provided. The HTML DOM element inside which SwaggerUI will put its user interface. Overrides dom_id.
       */
-    var domNode: js.UndefOr[String | HTMLElement | Null] = js.native
+    var domNode: js.UndefOr[String | HTMLElement | Null] = js.undefined
     
     /**
       * REQUIRED if domNode is not provided. The ID of a DOM element inside which SwaggerUI will put its user interface.
       */
-    var dom_id: js.UndefOr[String | Null] = js.native
+    var dom_id: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The name of a component available via the plugin system to use as the top-level layout for Swagger UI.
       */
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
     /**
       * If set, limits the number of tagged operations displayed to at most this many. The default is to show all operations.
       */
-    var maxDisplayedTags: js.UndefOr[Double] = js.native
+    var maxDisplayedTags: js.UndefOr[Double] = js.undefined
     
     /**
       * Apply a sort to the operation list of each API.
       * It can be 'alpha' (sort by paths alphanumerically), 'method' (sort by HTTP method) or a function (see Array.prototype.sort() to know how sort function works).
       * Default is the order returned by the server unchanged.
       */
-    var operationsSorter: js.UndefOr[js.Function0[Unit]] = js.native
+    var operationsSorter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * An array of plugin functions to use in Swagger UI.
       */
-    var plugins: js.UndefOr[js.Any] = js.native
+    var plugins: js.UndefOr[js.Any] = js.undefined
     
     /**
       * An array of presets to use in Swagger UI. Usually, you'll want to include ApisPreset if you use this option.
       */
-    var presets: js.UndefOr[js.Array[_]] = js.native
+    var presets: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       *  Function to intercept remote definition, "Try it out", and OAuth 2.0 requests.
       *  Accepts one argument requestInterceptor(request) and must return the modified request, or a Promise that resolves to the modified request.
       */
-    var requestInterceptor: js.UndefOr[js.Function1[/* request */ SwaggerRequest, SwaggerRequest]] = js.native
+    var requestInterceptor: js.UndefOr[js.Function1[/* request */ SwaggerRequest, SwaggerRequest]] = js.undefined
     
     /**
       *  Function to intercept remote definition, "Try it out", and OAuth 2.0 responses.
       *  Accepts one argument responseInterceptor(response) and must return the modified response, or a Promise that resolves to the modified response.
       */
-    var responseInterceptor: js.UndefOr[js.Function1[/* response */ SwaggerResponse, SwaggerResponse]] = js.native
+    var responseInterceptor: js.UndefOr[js.Function1[/* response */ SwaggerResponse, SwaggerResponse]] = js.undefined
     
     /**
       * A JavaScript object describing the OpenAPI definition. When used, the url parameter will not be parsed. This is useful for testing manually-generated definitions without hosting them.
       */
-    var spec: js.UndefOr[Spec] = js.native
+    var spec: js.UndefOr[Spec] = js.undefined
     
     /**
       * The URL pointing to API definition (normally swagger.json or swagger.yaml). Will be ignored if urls or spec is used.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * An array of API definition objects ([{url: "<url1>", name: "<name1>"},{url: "<url2>", name: "<name2>"}]) used by Topbar plugin. When used and Topbar plugin is enabled,
       * the url parameter will not be parsed. Names and URLs must be unique among all items in this array,
       * since they're used as identifiers.
       */
-    var urls: js.UndefOr[js.Array[Url]] = js.native
+    var urls: js.UndefOr[js.Array[Url]] = js.undefined
   }
   object SwaggerConfigs {
     
@@ -196,7 +196,7 @@ object mod {
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
       @scala.inline
-      def setPresets(value: js.Array[_]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
+      def setPresets(value: js.Array[js.Any]): Self = StObject.set(x, "presets", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPresetsUndefined: Self = StObject.set(x, "presets", js.undefined)
@@ -239,13 +239,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SwaggerRequest
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    var credentials: String = js.native
+    var credentials: String
     
-    var url: String = js.native
+    var url: String
   }
   object SwaggerRequest {
     
@@ -268,12 +268,11 @@ object mod {
   
   type SwaggerResponse = StringDictionary[js.Any]
   
-  @js.native
   trait Url extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

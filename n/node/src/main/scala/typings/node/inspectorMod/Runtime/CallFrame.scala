@@ -2,39 +2,37 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stack entry for runtime errors and assertions.
   */
-@js.native
 trait CallFrame extends StObject {
   
   /**
     * JavaScript script column number (0-based).
     */
-  var columnNumber: Double = js.native
+  var columnNumber: Double
   
   /**
     * JavaScript function name.
     */
-  var functionName: String = js.native
+  var functionName: String
   
   /**
     * JavaScript script line number (0-based).
     */
-  var lineNumber: Double = js.native
+  var lineNumber: Double
   
   /**
     * JavaScript script id.
     */
-  var scriptId: ScriptId = js.native
+  var scriptId: ScriptId
   
   /**
     * JavaScript script name or url.
     */
-  var url: String = js.native
+  var url: String
 }
 object CallFrame {
   

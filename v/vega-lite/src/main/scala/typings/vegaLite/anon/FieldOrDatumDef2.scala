@@ -7,30 +7,28 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldOrDatumDef2 extends StObject {
   
-  var band: Double = js.native
+  var band: Double
   
-  var fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null] = js.native
+  var fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
   
-  var fieldOrDatumDef2: js.UndefOr[SecondaryFieldDef[String]] = js.native
+  var fieldOrDatumDef2: js.UndefOr[SecondaryFieldDef[String]] = js.undefined
   
-  var offset: Double | SignalRef = js.native
+  var offset: Double | SignalRef
   
-  var scaleName: String = js.native
+  var scaleName: String
   
-  var startSuffix: js.UndefOr[String] = js.native
+  var startSuffix: js.UndefOr[String] = js.undefined
 }
 object FieldOrDatumDef2 {
   
   @scala.inline
   def apply(
     band: Double,
-    fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     offset: Double | SignalRef,
     scaleName: String
   ): FieldOrDatumDef2 = {
@@ -45,7 +43,7 @@ object FieldOrDatumDef2 {
     def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldOrDatumDef(value: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
+    def setFieldOrDatumDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldOrDatumDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "fieldOrDatumDef2", value.asInstanceOf[js.Any])

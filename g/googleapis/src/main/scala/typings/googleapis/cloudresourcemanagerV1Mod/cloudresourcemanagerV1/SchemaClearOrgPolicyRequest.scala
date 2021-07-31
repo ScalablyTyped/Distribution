@@ -2,25 +2,23 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request sent to the ClearOrgPolicy method.
   */
-@js.native
 trait SchemaClearOrgPolicyRequest extends StObject {
   
   /**
     * Name of the `Constraint` of the `Policy` to clear.
     */
-  var constraint: js.UndefOr[String] = js.native
+  var constraint: js.UndefOr[String] = js.undefined
   
   /**
     * The current version, for concurrency control. Not sending an `etag` will
     * cause the `Policy` to be cleared blindly.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object SchemaClearOrgPolicyRequest {
   

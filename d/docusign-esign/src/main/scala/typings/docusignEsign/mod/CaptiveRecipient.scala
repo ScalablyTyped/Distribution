@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptiveRecipient extends StObject {
   
   /**
@@ -19,24 +17,24 @@ trait CaptiveRecipient extends StObject {
     *
     * Maximum length: 100 characters.
     */
-  var clientUserId: js.UndefOr[String] = js.native
+  var clientUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The email address associated with the captive recipient.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The username associated with the captive recipient.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object CaptiveRecipient {
   

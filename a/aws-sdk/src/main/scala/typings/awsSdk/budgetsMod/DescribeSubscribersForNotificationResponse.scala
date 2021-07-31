@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSubscribersForNotificationResponse extends StObject {
   
   /**
     * The pagination token in the service response that indicates the next set of results that you can retrieve.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A list of subscribers that are associated with a notification.
     */
-  var Subscribers: js.UndefOr[typings.awsSdk.budgetsMod.Subscribers] = js.native
+  var Subscribers: js.UndefOr[typings.awsSdk.budgetsMod.Subscribers] = js.undefined
 }
 object DescribeSubscribersForNotificationResponse {
   

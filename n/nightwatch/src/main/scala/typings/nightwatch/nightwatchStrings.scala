@@ -3,7 +3,6 @@ package typings.nightwatch
 import typings.nightwatch.mod.LocateStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nightwatchStrings {
@@ -44,7 +43,9 @@ object nightwatchStrings {
   def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait `class name` extends LocateStrategy
+  sealed trait `class name`
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def `class name`: `class name` = ("class name").asInstanceOf[`class name`]
   
@@ -54,7 +55,9 @@ object nightwatchStrings {
   def client: client = "client".asInstanceOf[client]
   
   @js.native
-  sealed trait `css selector` extends LocateStrategy
+  sealed trait `css selector`
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def `css selector`: `css selector` = ("css selector").asInstanceOf[`css selector`]
   
@@ -64,7 +67,9 @@ object nightwatchStrings {
   def driver: driver = "driver".asInstanceOf[driver]
   
   @js.native
-  sealed trait id extends LocateStrategy
+  sealed trait id
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
@@ -74,7 +79,9 @@ object nightwatchStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `link text` extends LocateStrategy
+  sealed trait `link text`
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def `link text`: `link text` = ("link text").asInstanceOf[`link text`]
   
@@ -84,12 +91,16 @@ object nightwatchStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait name extends LocateStrategy
+  sealed trait name
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait `partial link text` extends LocateStrategy
+  sealed trait `partial link text`
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def `partial link text`: `partial link text` = ("partial link text").asInstanceOf[`partial link text`]
   
@@ -104,12 +115,16 @@ object nightwatchStrings {
   def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait `tag name` extends LocateStrategy
+  sealed trait `tag name`
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def `tag name`: `tag name` = ("tag name").asInstanceOf[`tag name`]
   
   @js.native
-  sealed trait xpath extends LocateStrategy
+  sealed trait xpath
+    extends StObject
+       with LocateStrategy
   @scala.inline
   def xpath: xpath = "xpath".asInstanceOf[xpath]
 }

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgDataChartSeries
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,82 +15,82 @@ trait IgDataChartSeries
   /**
     * Gets the effective angle axis for the current series object.
     */
-  var angleAxis: js.UndefOr[String] = js.native
+  var angleAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the x-radius of the ellipse that is used to round the corners of the column.
     */
-  var angleMemberPath: js.UndefOr[Double] = js.native
+  var angleMemberPath: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the opacity modifier to apply to the area fill shape of the series, if applicable.
     */
-  var areaFillOpacity: js.UndefOr[Double] = js.native
+  var areaFillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the axis annotation.
     */
-  var axisAnnoationFormatLabel: js.UndefOr[js.Any] = js.native
+  var axisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the axis annotation backing. Leave unset for an automatic value.
     */
-  var axisAnnotationBackground: js.UndefOr[String] = js.native
+  var axisAnnotationBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the precision to use displaying values for interpolated crosshair positions.
     */
-  var axisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.native
+  var axisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the axis annotation outline. Leave unset for an automatic value.
     */
-  var axisAnnotationOutline: js.UndefOr[String] = js.native
+  var axisAnnotationOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the bottom padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var axisAnnotationPaddingBottom: js.UndefOr[Double] = js.native
+  var axisAnnotationPaddingBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the left padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var axisAnnotationPaddingLeft: js.UndefOr[Double] = js.native
+  var axisAnnotationPaddingLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the right padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var axisAnnotationPaddingRight: js.UndefOr[Double] = js.native
+  var axisAnnotationPaddingRight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the top padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var axisAnnotationPaddingTop: js.UndefOr[Double] = js.native
+  var axisAnnotationPaddingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the axis annotation backing. Leave unset for an automatic value.
     */
-  var axisAnnotationStrokeThickness: js.UndefOr[Double] = js.native
+  var axisAnnotationStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the axis annotation text. Leave unset for an automatic value.
     */
-  var axisAnnotationTextColor: js.UndefOr[String] = js.native
+  var axisAnnotationTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the width to use for the highlight region if highlighting items in a grid aligned series (line, spline, etc), with a banded shape.
     */
-  var bandHighlightWidth: js.UndefOr[Double] = js.native
+  var bandHighlightWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush to use for the series.
     */
-  var brush: js.UndefOr[String] = js.native
+  var brush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the backgrounds for the callouts of the layer are painted.
     */
-  var calloutBackground: js.UndefOr[String] = js.native
+  var calloutBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the strategy to use for avoiding collisions between the callouts in this layer. Leave unset for an automatic value.
@@ -102,85 +101,85 @@ trait IgDataChartSeries
     * "greedy" use a greedy algorithm to avoid collisions. This is cheap and predictable, but of comparatively low quality.
     * "greedyCenterOfMass" use a greedy algorithm with localized center of mass hints to avoid collisions. This is relatively cheap to perform, compared to the simulated annealing approach, but is of comparatively lower quality.
     */
-  var calloutCollisionMode: js.UndefOr[String] = js.native
+  var calloutCollisionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Sets or gets a function which lets you modify or provide the content for an automatically created callout.
     */
-  var calloutContentUpdating: js.UndefOr[js.Any] = js.native
+  var calloutContentUpdating: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets or gets a function which lets you modify or provide the label for an automatically created callout.
     */
-  var calloutLabelUpdating: js.UndefOr[js.Any] = js.native
+  var calloutLabelUpdating: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the leader lines for the callouts of the layer are painted.
     */
-  var calloutLeaderBrush: js.UndefOr[String] = js.native
+  var calloutLeaderBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the outlines for the callouts of the layer are painted.
     */
-  var calloutOutline: js.UndefOr[String] = js.native
+  var calloutOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the bottom padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var calloutPaddingBottom: js.UndefOr[Double] = js.native
+  var calloutPaddingBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the left padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var calloutPaddingLeft: js.UndefOr[Double] = js.native
+  var calloutPaddingLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the right padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var calloutPaddingRight: js.UndefOr[Double] = js.native
+  var calloutPaddingRight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the top padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var calloutPaddingTop: js.UndefOr[Double] = js.native
+  var calloutPaddingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the padding to add to the callout positioning. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var calloutPositionPadding: js.UndefOr[Double] = js.native
+  var calloutPositionPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets or gets a function which lets you modify or provide the associated series for a data source provided callout.
     */
-  var calloutSeriesSelecting: js.UndefOr[js.Any] = js.native
+  var calloutSeriesSelecting: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the callout backing. Leave unset for an automatic value.
     */
-  var calloutStrokeThickness: js.UndefOr[Double] = js.native
+  var calloutStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the callout text. Leave unset for an automatic value.
     */
-  var calloutTextColor: js.UndefOr[String] = js.native
+  var calloutTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether to clip the series to the bounds.
     * Setting this to true can effect performance.
     */
-  var clipSeriesToBounds: js.UndefOr[Boolean] = js.native
+  var clipSeriesToBounds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the close mapping property for the current series object.
     */
-  var closeMemberPath: js.UndefOr[String] = js.native
+  var closeMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or gets the coercion methods to use when loading data from data sources.
     * Should be specified before setting any member paths, if being used. Setting it later
     * will not cause data to be reimported into the chart.
     */
-  var coercionMethods: js.UndefOr[js.Any] = js.native
+  var coercionMethods: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets value that is used to determine positioning logic for data items which have been consolidated into a single visual element.
@@ -192,33 +191,33 @@ trait IgDataChartSeries
     * "relativeMinimum" Consolidated items will be positioned using the value nearest to the reference value of the corresponding axis.
     * "relativeMaximum" Consolidated items will be positioned using the value farthest from the reference value of the corresponding axis.
     */
-  var consolidatedColumnVerticalPosition: js.UndefOr[String] = js.native
+  var consolidatedColumnVerticalPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the content mapping property for the callouts.
     */
-  var contentMemberPath: js.UndefOr[String] = js.native
+  var contentMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position a cursor position to use instead of the current mouse cursor position for displaying the annotations in this layer.
     * Should be an object with an x and a y property in world coordinates (ranging from 0 to 1)
     */
-  var cursorPosition: js.UndefOr[js.Any] = js.native
+  var cursorPosition: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the DiscreteLegendItemTemplate property.
@@ -226,7 +225,7 @@ trait IgDataChartSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var discreteLegendItemTemplate: js.UndefOr[js.Any] = js.native
+  var discreteLegendItemTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the display for the current FinancialIndicator object.
@@ -235,22 +234,22 @@ trait IgDataChartSeries
     * "candlestick" Displays prices as a Japanese Candlestick.
     * "OHLC" Displays prices as an OHLC bar.
     */
-  var displayType: js.UndefOr[String] = js.native
+  var displayType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the series should expect that its data source members need to be called as functions to get their values.
     */
-  var expectFunctions: js.UndefOr[Boolean] = js.native
+  var expectFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the fill mapping property for the current series object.
     */
-  var fillMemberPath: js.UndefOr[String] = js.native
+  var fillMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush scale for the marker brush.
     */
-  var fillScale: js.UndefOr[js.Any] = js.native
+  var fillScale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the y axis annotation backing. Leave unset for an automatic value.
@@ -261,32 +260,32 @@ trait IgDataChartSeries
     * "finalVisibleInterpolated" displays an interploated last value for when the series leaves view.
     * "final" displays the last value in the series, whether visible or not.
     */
-  var finalValueSelectionMode: js.UndefOr[String] = js.native
+  var finalValueSelectionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the value that maps to the maximum heat color.
     */
-  var heatMaximum: js.UndefOr[Double] = js.native
+  var heatMaximum: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the maximum heat color for the density scale.
     */
-  var heatMaximumColor: js.UndefOr[js.Any] = js.native
+  var heatMaximumColor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the density value that maps to the minimum heat color.
     */
-  var heatMinimum: js.UndefOr[Double] = js.native
+  var heatMinimum: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the minimum heat color for the density scale.
     */
-  var heatMinimumColor: js.UndefOr[js.Any] = js.native
+  var heatMinimumColor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the value mapping property for the current series object.
     */
-  var highMemberPath: js.UndefOr[String] = js.native
+  var highMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets which type of highlight shape to use when highlighting items.
@@ -296,7 +295,7 @@ trait IgDataChartSeries
     * "marker" use a marker highlight type for this series.
     * "shape" use a shape highlight type for this series.
     */
-  var highlightType: js.UndefOr[String] = js.native
+  var highlightType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets which type of hit testing the series should use.
@@ -306,12 +305,12 @@ trait IgDataChartSeries
     * "computational" use a computational based approach to determine whether the series has been hit. This uses loose bounding boxes, in some cases, and can range in time complexity between O(1) and O(log n) to find a hit. This decreases frame render time compared to color encoded.
     * "colorEncoded" use a color encoded off screen buffer for hit testing. This can have extremely rare false positives where the wrong series is hit (this is due to our inability to disable anti-aliasing in our color buffer), but should always be O(1) time for determining a hit series. This increases frame render time, however. Consider using this if hit testing time is degrading performance.
     */
-  var hitTestMode: js.UndefOr[String] = js.native
+  var hitTestMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the color to use for the horizontal line. Leave null for an automatic value.
     */
-  var horizontalLineStroke: js.UndefOr[String] = js.native
+  var horizontalLineStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the horizontal crosshair portion of the layer should be visible.
@@ -320,67 +319,67 @@ trait IgDataChartSeries
     * "visible" the horizontal crosshair portion of the layer should be visible.
     * "collapsed" the horizontal crosshair portion of the layer should not be visible.
     */
-  var horizontalLineVisibility: js.UndefOr[String] = js.native
+  var horizontalLineVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the number of values to hide at the beginning of the indicator.
     */
-  var ignoreFirst: js.UndefOr[Double] = js.native
+  var ignoreFirst: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether to draw annotations over the axes where the crosshair meets with them.
     */
-  var isAxisAnnotationEnabled: js.UndefOr[Boolean] = js.native
+  var isAxisAnnotationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether to allow the callouts to be variable distances from the target points, for suppporting collision modes.
     */
-  var isCalloutOffsettingEnabled: js.UndefOr[Boolean] = js.native
+  var isCalloutOffsettingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether a custom category marker style is allowed. Setting this to true will case the assigningCategoryMarkerStyle event to get fired, if provided.
     */
-  var isCustomCategoryMarkerStyleAllowed: js.UndefOr[Boolean] = js.native
+  var isCustomCategoryMarkerStyleAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether a custom category style is allowed. Setting this to true will case the assigningCategoryStyle event to get fired, if provided.
     */
-  var isCustomCategoryStyleAllowed: js.UndefOr[Boolean] = js.native
+  var isCustomCategoryStyleAllowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets if the presence of this layer should disable the default crosshair behavior of the chart, if present.
     */
-  var isDefaultCrosshairDisabled: js.UndefOr[Boolean] = js.native
+  var isDefaultCrosshairDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether drop shadow should be enabled for this series.
     */
-  var isDropShadowEnabled: js.UndefOr[Boolean] = js.native
+  var isDropShadowEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether highlighting should be enabled for the series, if supported.
     */
-  var isHighlightingEnabled: js.UndefOr[Boolean] = js.native
+  var isHighlightingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets if the series should play a transition in animation when the data source is assigned. Note: Transitions are not currently supported for stacked series.
     */
-  var isTransitionInEnabled: js.UndefOr[Boolean] = js.native
+  var isTransitionInEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the key mapping property for the callouts.
     */
-  var keyMemberPath: js.UndefOr[String] = js.native
+  var keyMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the Label mapping property for the current series object.
     */
-  var labelMemberPath: js.UndefOr[String] = js.native
+  var labelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Can be any valid options accepted by $.ig.ChartLegend, or an instance of an $.ig.ChartLegend itself.
     */
-  var legend: js.UndefOr[IgDataChartSeriesLegend] = js.native
+  var legend: js.UndefOr[IgDataChartSeriesLegend] = js.undefined
   
   /**
     * Gets or sets the LegendItemBadgeTemplate property.
@@ -407,7 +406,7 @@ trait IgDataChartSeries
     * isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.native
+  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemTemplate property.
@@ -415,7 +414,7 @@ trait IgDataChartSeries
     * the series object itself.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var legendItemTemplate: js.UndefOr[js.Any] = js.native
+  var legendItemTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the legend item visibility for the current series object.
@@ -424,23 +423,23 @@ trait IgDataChartSeries
     * "visible" The legend item should be visible.
     * "collapsed" The legend item should not be visible.
     */
-  var legendItemVisibility: js.UndefOr[String] = js.native
+  var legendItemVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object.
     * The typical, and initial, value for long AVO periods is 30.
     */
-  var longPeriod: js.UndefOr[Double] = js.native
+  var longPeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the value mapping property for the current series object.
     */
-  var lowMemberPath: js.UndefOr[String] = js.native
+  var lowMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the current series object's marker interiors are painted.
     */
-  var markerBrush: js.UndefOr[String] = js.native
+  var markerBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the MarkerCollisionAvoidance
@@ -451,18 +450,18 @@ trait IgDataChartSeries
     * "fade" Markers that collide will be faded in opacity.
     * "omitAndShift" Markers that collide may be shifted or omitted.
     */
-  var markerCollisionAvoidance: js.UndefOr[String] = js.native
+  var markerCollisionAvoidance: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush that specifies how the current series object's marker outlines are painted.
     */
-  var markerOutline: js.UndefOr[String] = js.native
+  var markerOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the MarkerTemplate for the current series object.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var markerTemplate: js.UndefOr[js.Any] = js.native
+  var markerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the marker type for the current series object. If the MarkerTemplate property is set, the setting of the MarkerType property will be ignored.
@@ -482,142 +481,142 @@ trait IgDataChartSeries
     * "pentagram" Five-pointed star marker shape.
     * "hexagram" Six-pointed star marker shape.
     */
-  var markerType: js.UndefOr[String] = js.native
+  var markerType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the maximum number of markerItems displayed by the current series.
     * If more than the specified number of markerItems are visible, the series will automatically
     * choose a representative set.
     */
-  var maximumMarkers: js.UndefOr[Double] = js.native
+  var maximumMarkers: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether the chart reacts to mouse move events.
     */
-  var mouseOverEnabled: js.UndefOr[Boolean] = js.native
+  var mouseOverEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique identifier of the series.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use for negative portions of the series.
     */
-  var negativeBrush: js.UndefOr[String] = js.native
+  var negativeBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the open mapping property for the current series object.
     */
-  var openMemberPath: js.UndefOr[String] = js.native
+  var openMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use for the outline of the series.
     * Some series types, such as LineSeries, do not display outlines.  Therefore, this property does not affect some charts.
     */
-  var outline: js.UndefOr[String] = js.native
+  var outline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the moving average period for the current AverageDirectionalIndexIndicator object.
     * The typical, and initial, value for AverageDirectionalIndexIndicator periods is 14.
     */
-  var period: js.UndefOr[Double] = js.native
+  var period: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets whether to progressively load the data into the chart.
     */
-  var progressiveLoad: js.UndefOr[Boolean] = js.native
+  var progressiveLoad: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the corner radius to use for the series, if applicable.
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the effective radius axis for the current series object.
     */
-  var radiusAxis: js.UndefOr[String] = js.native
+  var radiusAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the radius mapping property for the current series object.
     */
-  var radiusMemberPath: js.UndefOr[String] = js.native
+  var radiusMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the radius size scale for the bubbles.
     */
-  var radiusScale: js.UndefOr[js.Any] = js.native
+  var radiusScale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the x-radius of the ellipse that is used to round the corners of the column.
     */
-  var radiusX: js.UndefOr[Double] = js.native
+  var radiusX: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the y-radius of the ellipse that is used to round the corners of the column.
     */
-  var radiusY: js.UndefOr[Double] = js.native
+  var radiusY: js.UndefOr[Double] = js.undefined
   
   /**
     * Set to true in order to have an existing series removed from the chart, by name
     */
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the current series object's rendering resolution.
     */
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
   /**
     * See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the order of the fragment series should be reversed in the legend. Note: Reversing the legend order is only supported on stacked series.
     */
-  var reverseLegendOrder: js.UndefOr[Boolean] = js.native
+  var reverseLegendOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the series for stacked charts. It should contain array of series objects. Each item in array should represent a series with  and it may have most options supported by top-level series object, such as xAxis, yAxis, valueMemberPath, etc.
     */
-  var series: js.UndefOr[js.Array[_]] = js.native
+  var series: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets or sets the blur amount to use for the drop shadow.
     */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the drop shadow.
     */
-  var shadowColor: js.UndefOr[js.Any] = js.native
+  var shadowColor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the x offset amount to use for the drop shadow.
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the y offset amount to use for the drop shadow.
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the short moving average period for the current AbsoluteVolumeOscillatorIndicator object.
     * The typical, and initial, value for short AVO periods is 10.
     */
-  var shortPeriod: js.UndefOr[Double] = js.native
+  var shortPeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the chart should render a tooltip.
     */
-  var showTooltip: js.UndefOr[Boolean] = js.native
+  var showTooltip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether the hover layer should skip unknown values when trying to find the closest values.
     */
-  var skipUnknownValues: js.UndefOr[Boolean] = js.native
+  var skipUnknownValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the type of spline to be rendered.
@@ -626,29 +625,29 @@ trait IgDataChartSeries
     * "natural" Calculates the spline using a natural spline calculation formula.
     * "clamped" Calculated the spline using a clamped spline calculation formula.
     */
-  var splineType: js.UndefOr[String] = js.native
+  var splineType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the name of the target axis for the layer, if desired. Setting the target axis will scope the layer to target just that axis.
     */
-  var targetAxis: js.UndefOr[String] = js.native
+  var targetAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the name of the target series for the layer, if desired. Setting the target series will scope the layer to target just that series.
     */
-  var targetSeries: js.UndefOr[String] = js.native
+  var targetSeries: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the width of the current series object's line thickness.
     */
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the Title property.
     * The legend item control is created according to the Title on-demand by
     * the series object itself.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the Position to apply to the tooltip containers.
@@ -660,27 +659,27 @@ trait IgDataChartSeries
     * "insideEnd" position the category tooltip at the inside end of the value axis.
     * "outsideEnd" position the category tooltip at the outside end of the value axis.
     */
-  var tooltipPosition: js.UndefOr[String] = js.native
+  var tooltipPosition: js.UndefOr[String] = js.undefined
   
   /**
     * The name of template or the template itself that chart tooltip will use to render.
     */
-  var tooltipTemplate: js.UndefOr[String] = js.native
+  var tooltipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the duration of the current series's morph.
     */
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Provides an easing function to use for the transitions. This should either be a well known name of an easing function (The only currently supported name is cubic), or it should be a function that takes a number and returns the output with the function applied.
     */
-  var transitionEasingFunction: js.UndefOr[js.Any] = js.native
+  var transitionEasingFunction: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the duration of the current series's transition in morph in milliseconds.
     */
-  var transitionInDuration: js.UndefOr[Double] = js.native
+  var transitionInDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the method to transition in the series. Note: Transitions are not currently supported for stacked series.
@@ -707,7 +706,7 @@ trait IgDataChartSeries
     * "accordionFromValueAxisMinimum" Series accordions in from the value axis minimum.
     * "accordionFromValueAxisMaximum" Series accordions in from the value axis maximum.
     */
-  var transitionInMode: js.UndefOr[String] = js.native
+  var transitionInMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the speed to transition in the series data points.
@@ -719,23 +718,23 @@ trait IgDataChartSeries
     * "indexScaled" Data points will arrive later if their index is further from the axis origin.
     * "random" Data points will arrive at random times.
     */
-  var transitionInSpeedType: js.UndefOr[String] = js.native
+  var transitionInSpeedType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush to use to draw the trend line.
     */
-  var trendLineBrush: js.UndefOr[String] = js.native
+  var trendLineBrush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the moving average period for the current scatter series object.
     * The typical, and initial, value for trend line period is 7.
     */
-  var trendLinePeriod: js.UndefOr[Double] = js.native
+  var trendLinePeriod: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the thickness of the current scatter series object's trend line.
     */
-  var trendLineThickness: js.UndefOr[Double] = js.native
+  var trendLineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the trend type for the current scatter series.
@@ -756,12 +755,12 @@ trait IgDataChartSeries
     * "cumulativeAverage" Cumulative moving average.
     * "weightedAverage" Weighted moving average.
     */
-  var trendLineType: js.UndefOr[String] = js.native
+  var trendLineType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the Z-Index of the trend line.  Values greater than 1000 will result in the trend line being rendered in front of the series data.
     */
-  var trendLineZIndex: js.UndefOr[Double] = js.native
+  var trendLineZIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Type of the series.
@@ -853,7 +852,7 @@ trait IgDataChartSeries
     * "categoryToolTipLayer" Specify the series as a category tooltip layer.
     * "calloutLayer" Specify the series as a callout layer.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Determines how unknown values will be plotted on the chart. Null and Double.NaN are two examples of unknown values.
@@ -862,63 +861,63 @@ trait IgDataChartSeries
     * "linearInterpolate" Plot the unknown value as the midpoint between surrounding known values using linear interpolation.
     * "dontPlot" Do not plot the unknown value on the chart.
     */
-  var unknownValuePlotting: js.UndefOr[String] = js.native
+  var unknownValuePlotting: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether to use use brute force mode.
     */
-  var useBruteForce: js.UndefOr[Boolean] = js.native
+  var useBruteForce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether Cartesian Interpolation should be used rather than Archimedian
     * spiral based interpolation.
     */
-  var useCartesianInterpolation: js.UndefOr[Boolean] = js.native
+  var useCartesianInterpolation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets or Gets whether to increase marker fidelity for extreme data shapes that have lots of Y variation over short X intervals.
     */
-  var useHighMarkerFidelity: js.UndefOr[Boolean] = js.native
+  var useHighMarkerFidelity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets if the current layer should take up a brush/ordering index in the series collection to derive its color automatically.
     */
-  var useIndex: js.UndefOr[Boolean] = js.native
+  var useIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether the hover layer should use interpolation to position itself relative the closest values.
     */
-  var useInterpolation: js.UndefOr[Boolean] = js.native
+  var useInterpolation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets if the current layer should have an entry in the legend of the chart. By default annotation layers are not present in the legend.
     */
-  var useLegend: js.UndefOr[Boolean] = js.native
+  var useLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether drop shadow is applied to the whole series visual or to each of the individual shapes forming the series.
     */
-  var useSingleShadow: js.UndefOr[Boolean] = js.native
+  var useSingleShadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether to use squares when halting a render traversal rather than the shape of the coalesced area.
     */
-  var useSquareCutoffStyle: js.UndefOr[Boolean] = js.native
+  var useSquareCutoffStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the effective value axis for the current series object.
     */
-  var valueAxis: js.UndefOr[String] = js.native
+  var valueAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the item path that provides the values for the current series.
     */
-  var valueMemberPath: js.UndefOr[String] = js.native
+  var valueMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the color to use for the vertical line. Leave null for an automatic value.
     */
-  var verticalLineStroke: js.UndefOr[String] = js.native
+  var verticalLineStroke: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the vertical crosshair portion of the layer should be visible.
@@ -927,132 +926,132 @@ trait IgDataChartSeries
     * "visible" the vertical crosshair portion of the layer should be visible.
     * "collapsed" the vertical crosshair portion of the layer should not be visible.
     */
-  var verticalLineVisibility: js.UndefOr[String] = js.native
+  var verticalLineVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the volume mapping property for the current series object.
     */
-  var volumeMemberPath: js.UndefOr[String] = js.native
+  var volumeMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the effective x-axis for the current object.
     */
-  var xAxis: js.UndefOr[String] = js.native
+  var xAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the x axis annotation.
     */
-  var xAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.native
+  var xAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the x axis annotation backing. Leave unset for an automatic value.
     */
-  var xAxisAnnotationBackground: js.UndefOr[String] = js.native
+  var xAxisAnnotationBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the precision to use displaying values for interpolated crosshair positions.
     */
-  var xAxisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.native
+  var xAxisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the x axis annotation outline. Leave unset for an automatic value.
     */
-  var xAxisAnnotationOutline: js.UndefOr[String] = js.native
+  var xAxisAnnotationOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the bottom padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var xAxisAnnotationPaddingBottom: js.UndefOr[Double] = js.native
+  var xAxisAnnotationPaddingBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the left padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var xAxisAnnotationPaddingLeft: js.UndefOr[Double] = js.native
+  var xAxisAnnotationPaddingLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the right padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var xAxisAnnotationPaddingRight: js.UndefOr[Double] = js.native
+  var xAxisAnnotationPaddingRight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the top padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var xAxisAnnotationPaddingTop: js.UndefOr[Double] = js.native
+  var xAxisAnnotationPaddingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the x axis annotation backing. Leave unset for an automatic value.
     */
-  var xAxisAnnotationStrokeThickness: js.UndefOr[Double] = js.native
+  var xAxisAnnotationStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the x axis annotation text. Leave unset for an automatic value.
     */
-  var xAxisAnnotationTextColor: js.UndefOr[String] = js.native
+  var xAxisAnnotationTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the value mapping property for the current series object.
     */
-  var xMemberPath: js.UndefOr[String] = js.native
+  var xMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the effective y-axis for the current object.
     */
-  var yAxis: js.UndefOr[String] = js.native
+  var yAxis: js.UndefOr[String] = js.undefined
   
   /**
     * Sets or gets a function which takes an object that produces a formatted label for displaying in the y axis annotation.
     */
-  var yAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.native
+  var yAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the color to use for the y axis annotation backing. Leave unset for an automatic value.
     */
-  var yAxisAnnotationBackground: js.UndefOr[String] = js.native
+  var yAxisAnnotationBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the precision to use displaying values for interpolated crosshair positions.
     */
-  var yAxisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.native
+  var yAxisAnnotationInterpolatedValuePrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the y axis annotation outline. Leave unset for an automatic value.
     */
-  var yAxisAnnotationOutline: js.UndefOr[String] = js.native
+  var yAxisAnnotationOutline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the bottom padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var yAxisAnnotationPaddingBottom: js.UndefOr[Double] = js.native
+  var yAxisAnnotationPaddingBottom: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the left padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var yAxisAnnotationPaddingLeft: js.UndefOr[Double] = js.native
+  var yAxisAnnotationPaddingLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the right padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var yAxisAnnotationPaddingRight: js.UndefOr[Double] = js.native
+  var yAxisAnnotationPaddingRight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the top padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
     */
-  var yAxisAnnotationPaddingTop: js.UndefOr[Double] = js.native
+  var yAxisAnnotationPaddingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness for the y axis annotation backing. Leave unset for an automatic value.
     */
-  var yAxisAnnotationStrokeThickness: js.UndefOr[Double] = js.native
+  var yAxisAnnotationStrokeThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the color to use for the y axis annotation text. Leave unset for an automatic value.
     */
-  var yAxisAnnotationTextColor: js.UndefOr[String] = js.native
+  var yAxisAnnotationTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the value mapping property for the current series object.
     */
-  var yMemberPath: js.UndefOr[String] = js.native
+  var yMemberPath: js.UndefOr[String] = js.undefined
 }
 object IgDataChartSeries {
   
@@ -1624,7 +1623,7 @@ object IgDataChartSeries {
     def setReverseLegendOrderUndefined: Self = StObject.set(x, "reverseLegendOrder", js.undefined)
     
     @scala.inline
-    def setSeries(value: js.Array[_]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    def setSeries(value: js.Array[js.Any]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)

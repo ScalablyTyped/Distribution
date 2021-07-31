@@ -12,24 +12,24 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a macro text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait Macro extends TextField_ {
+trait Macro
+  extends StObject
+     with TextField_ {
   
   /** contains a tip that is displayed at the user interface. */
-  var Hint: String = js.native
+  var Hint: String
   
   /** contains the library name of a StarBASIC macro. */
-  var MacroLibrary: String = js.native
+  var MacroLibrary: String
   
   /** contains the macro name of a StarBASIC macro. */
-  var MacroName: String = js.native
+  var MacroName: String
 }
 object Macro {
   

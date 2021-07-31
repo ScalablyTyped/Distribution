@@ -2,31 +2,29 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProvenance extends StObject {
   
-  var collidedSegmentSource: js.UndefOr[SchemaStreetSegmentList] = js.native
+  var collidedSegmentSource: js.UndefOr[SchemaStreetSegmentList] = js.undefined
   
-  var ctclContestUuid: js.UndefOr[String] = js.native
+  var ctclContestUuid: js.UndefOr[String] = js.undefined
   
-  var ctclOfficeUuid: js.UndefOr[String] = js.native
+  var ctclOfficeUuid: js.UndefOr[String] = js.undefined
   
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
-  var precinctId: js.UndefOr[String] = js.native
+  var precinctId: js.UndefOr[String] = js.undefined
   
-  var precinctSplitId: js.UndefOr[String] = js.native
+  var precinctSplitId: js.UndefOr[String] = js.undefined
   
-  var tsStreetSegmentId: js.UndefOr[String] = js.native
+  var tsStreetSegmentId: js.UndefOr[String] = js.undefined
   
-  var vip5PrecinctId: js.UndefOr[String] = js.native
+  var vip5PrecinctId: js.UndefOr[String] = js.undefined
   
-  var vip5StreetSegmentId: js.UndefOr[String] = js.native
+  var vip5StreetSegmentId: js.UndefOr[String] = js.undefined
   
-  var vipStreetSegmentId: js.UndefOr[String] = js.native
+  var vipStreetSegmentId: js.UndefOr[String] = js.undefined
 }
 object SchemaProvenance {
   

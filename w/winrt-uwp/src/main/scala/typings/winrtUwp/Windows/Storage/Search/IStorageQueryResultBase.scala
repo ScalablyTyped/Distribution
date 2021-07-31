@@ -4,40 +4,38 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typings.winrtUwp.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods to access to and manage query results. */
-@js.native
 trait IStorageQueryResultBase extends StObject {
   
   /**
     * Applies new query options to the results retrieved by the StorageFileQueryResult , StorageFolderQueryResult , or StorageItemQueryResult object.
     * @param newQueryOptions The new query options.
     */
-  def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit = js.native
+  def applyNewQueryOptions(newQueryOptions: QueryOptions): Unit
   
   /**
     * Retrieves the index of the file from the query results that most closely matches the specified property value. The property that is matched is determined by the first SortEntry of the QueryOptions.SortOrder list.
     * @param value The property value to match when searching the query results.
     * @return When this method completes successfully it returns the index of the matched item in the query results.
     */
-  def findStartIndexAsync(value: js.Any): IPromiseWithIAsyncOperation[Double] = js.native
+  def findStartIndexAsync(value: js.Any): IPromiseWithIAsyncOperation[Double]
   
   /** Gets the folder originally used to create a StorageFileQueryResult , StorageFolderQueryResult , or StorageItemQueryResult object. This folder represents the scope of the query. */
-  var folder: StorageFolder = js.native
+  var folder: StorageFolder
   
   /**
     * Retrieves the query options used to create a StorageFileQueryResult , StorageFolderQueryResult , or StorageItemQueryResult object.
     * @return The query options.
     */
-  def getCurrentQueryOptions(): QueryOptions = js.native
+  def getCurrentQueryOptions(): QueryOptions
   
   /**
     * Retrieves the number of items that match the query that created a StorageFileQueryResult , StorageFolderQueryResult , or StorageItemQueryResult object.
     * @return When this method completes successfully, it returns the number of items that match the query.
     */
-  def getItemCountAsync(): IPromiseWithIAsyncOperation[Double] = js.native
+  def getItemCountAsync(): IPromiseWithIAsyncOperation[Double]
 }
 object IStorageQueryResultBase {
   

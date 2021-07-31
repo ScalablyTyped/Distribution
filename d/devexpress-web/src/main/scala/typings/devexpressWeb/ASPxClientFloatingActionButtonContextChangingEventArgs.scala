@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFloatingActionButton.ContextChanging event.
   */
-@js.native
-trait ASPxClientFloatingActionButtonContextChangingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFloatingActionButtonContextChangingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Returns the action related to the event.
     */
-  var action: ASPxClientFABAction = js.native
+  var action: ASPxClientFABAction
 }
 object ASPxClientFloatingActionButtonContextChangingEventArgs {
   

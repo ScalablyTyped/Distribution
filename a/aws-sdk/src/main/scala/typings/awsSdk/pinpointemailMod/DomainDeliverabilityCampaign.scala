@@ -2,81 +2,79 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDeliverabilityCampaign extends StObject {
   
   /**
     * The unique identifier for the campaign. Amazon Pinpoint automatically generates and assigns this identifier to a campaign. This value is not the same as the campaign identifier that Amazon Pinpoint assigns to campaigns that you create and manage by using the Amazon Pinpoint API or the Amazon Pinpoint console.
     */
-  var CampaignId: js.UndefOr[typings.awsSdk.pinpointemailMod.CampaignId] = js.native
+  var CampaignId: js.UndefOr[typings.awsSdk.pinpointemailMod.CampaignId] = js.undefined
   
   /**
     * The percentage of email messages that were deleted by recipients, without being opened first. Due to technical limitations, this value only includes recipients who opened the message by using an email client that supports images.
     */
-  var DeleteRate: js.UndefOr[Percentage] = js.native
+  var DeleteRate: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The major email providers who handled the email message.
     */
-  var Esps: js.UndefOr[typings.awsSdk.pinpointemailMod.Esps] = js.native
+  var Esps: js.UndefOr[typings.awsSdk.pinpointemailMod.Esps] = js.undefined
   
   /**
     * The first time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
-  var FirstSeenDateTime: js.UndefOr[Timestamp] = js.native
+  var FirstSeenDateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The verified email address that the email message was sent from.
     */
-  var FromAddress: js.UndefOr[Identity] = js.native
+  var FromAddress: js.UndefOr[Identity] = js.undefined
   
   /**
     * The URL of an image that contains a snapshot of the email message that was sent.
     */
-  var ImageUrl: js.UndefOr[typings.awsSdk.pinpointemailMod.ImageUrl] = js.native
+  var ImageUrl: js.UndefOr[typings.awsSdk.pinpointemailMod.ImageUrl] = js.undefined
   
   /**
     * The number of email messages that were delivered to recipients’ inboxes.
     */
-  var InboxCount: js.UndefOr[Volume] = js.native
+  var InboxCount: js.UndefOr[Volume] = js.undefined
   
   /**
     * The last time, in Unix time format, when the email message was delivered to any recipient's inbox. This value can help you determine how long it took for a campaign to deliver an email message.
     */
-  var LastSeenDateTime: js.UndefOr[Timestamp] = js.native
+  var LastSeenDateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The projected number of recipients that the email message was sent to.
     */
-  var ProjectedVolume: js.UndefOr[Volume] = js.native
+  var ProjectedVolume: js.UndefOr[Volume] = js.undefined
   
   /**
     * The percentage of email messages that were opened and then deleted by recipients. Due to technical limitations, this value only includes recipients who opened the message by using an email client that supports images.
     */
-  var ReadDeleteRate: js.UndefOr[Percentage] = js.native
+  var ReadDeleteRate: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The percentage of email messages that were opened by recipients. Due to technical limitations, this value only includes recipients who opened the message by using an email client that supports images.
     */
-  var ReadRate: js.UndefOr[Percentage] = js.native
+  var ReadRate: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The IP addresses that were used to send the email message.
     */
-  var SendingIps: js.UndefOr[IpList] = js.native
+  var SendingIps: js.UndefOr[IpList] = js.undefined
   
   /**
     * The number of email messages that were delivered to recipients' spam or junk mail folders.
     */
-  var SpamCount: js.UndefOr[Volume] = js.native
+  var SpamCount: js.UndefOr[Volume] = js.undefined
   
   /**
     * The subject line, or title, of the email message.
     */
-  var Subject: js.UndefOr[typings.awsSdk.pinpointemailMod.Subject] = js.native
+  var Subject: js.UndefOr[typings.awsSdk.pinpointemailMod.Subject] = js.undefined
 }
 object DomainDeliverabilityCampaign {
   

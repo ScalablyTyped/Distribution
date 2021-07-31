@@ -13,15 +13,13 @@ import typings.std.NonNullable
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any = js.native
+    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
   }
   object `0` {
     
@@ -41,10 +39,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
-    var ref: js.UndefOr[Exclude[_, String]] = js.native
+    var ref: js.UndefOr[Exclude[js.Any, String]] = js.undefined
   }
   object `1` {
     
@@ -58,17 +55,16 @@ object anon {
     implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRef(value: Exclude[_, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Exclude[js.Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.UndefOr[RaxNode] = js.native
+    var children: js.UndefOr[RaxNode] = js.undefined
   }
   object Children {
     
@@ -92,12 +88,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultProps extends StObject {
     
-    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any = js.native
+    var defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
     
-    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any = js.native
+    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   }
   object DefaultProps {
     
@@ -124,7 +119,7 @@ object anon {
   @js.native
   trait Fn0 extends StObject {
     
-    def apply[T /* <: Validator[_] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
+    def apply[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
   }
   
   @js.native
@@ -133,20 +128,20 @@ object anon {
     def apply[T](`type`: Validator[T]): Requireable[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: T}
-      */ typings.rax.raxStrings.Fn1 with TopLevel[js.Any]
+      */ typings.rax.raxStrings.Fn1 & TopLevel[js.Any]
       ] = js.native
   }
   
   @js.native
   trait Fn2 extends StObject {
     
-    def apply[P /* <: ValidationMap[_] */](`type`: P): Requireable[InferProps[P]] = js.native
+    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = js.native
   }
   
   @js.native
   trait Fn3 extends StObject {
     
-    def apply[P /* <: ValidationMap[_] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
+    def apply[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
   }
   
   @js.native
@@ -167,10 +162,9 @@ object anon {
     def apply[T](types: js.Array[T]): Requireable[T] = js.native
   }
   
-  @js.native
   trait Html extends StObject {
     
-    var __html: String = js.native
+    var __html: String
   }
   object Html {
     
@@ -188,10 +182,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PropTypes extends StObject {
     
-    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any = js.native
+    var propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   }
   object PropTypes {
     
@@ -210,10 +203,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :rax.rax.RaxNode | undefined}> */
-  @js.native
   trait ReadonlychildrenRaxNodeun extends StObject {
     
-    val children: js.UndefOr[RaxNode] = js.native
+    val children: js.UndefOr[RaxNode] = js.undefined
   }
   object ReadonlychildrenRaxNodeun {
     
@@ -237,12 +229,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref extends StObject {
     
     var ref: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object Ref {
     

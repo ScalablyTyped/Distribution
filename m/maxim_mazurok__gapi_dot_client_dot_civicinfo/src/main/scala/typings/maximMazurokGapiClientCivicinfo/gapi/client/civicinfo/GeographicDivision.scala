@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeographicDivision extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait GeographicDivision extends StObject {
     * be returned in ocd_id above, and any other equivalent valid identifiers will be returned in this list.\n\nFor example, if this division's OCD ID is
     * ocd-division/country:us/district:dc, this will contain ocd-division/country:us/state:dc.
     */
-  var alsoKnownAs: js.UndefOr[js.Array[String]] = js.native
+  var alsoKnownAs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The name of the division. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** List of indices in the offices array, one for each office elected from this division. Will only be present if includeOffices was true (or absent) in the request. */
-  var officeIndices: js.UndefOr[js.Array[Double]] = js.native
+  var officeIndices: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object GeographicDivision {
   

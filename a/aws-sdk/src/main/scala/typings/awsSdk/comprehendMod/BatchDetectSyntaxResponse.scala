@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetectSyntaxResponse extends StObject {
   
   /**
     * A list containing one object for each document that contained an error. The results are sorted in ascending order by the Index field and match the order of the documents in the input list. If there are no errors in the batch, the ErrorList is empty.
     */
-  var ErrorList: BatchItemErrorList = js.native
+  var ErrorList: BatchItemErrorList
   
   /**
     * A list of objects containing the results of the operation. The results are sorted in ascending order by the Index field and match the order of the documents in the input list. If all of the documents contain an error, the ResultList is empty.
     */
-  var ResultList: ListOfDetectSyntaxResult = js.native
+  var ResultList: ListOfDetectSyntaxResult
 }
 object BatchDetectSyntaxResponse {
   

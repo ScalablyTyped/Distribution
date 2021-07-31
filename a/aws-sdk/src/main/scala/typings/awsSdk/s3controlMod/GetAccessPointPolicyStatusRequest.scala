@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessPointPolicyStatusRequest extends StObject {
   
   /**
     * The account ID for the account that owns the specified access point.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The name of the access point whose policy status you want to retrieve.
     */
-  var Name: AccessPointName = js.native
+  var Name: AccessPointName
 }
 object GetAccessPointPolicyStatusRequest {
   

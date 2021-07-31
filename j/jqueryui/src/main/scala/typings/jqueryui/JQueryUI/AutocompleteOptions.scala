@@ -2,31 +2,31 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Autocomplete //////////////////////////////////////////////////
-@js.native
-trait AutocompleteOptions extends AutocompleteEvents {
+trait AutocompleteOptions
+  extends StObject
+     with AutocompleteEvents {
   
-  var appendTo: js.UndefOr[js.Any] = js.native
+  var appendTo: js.UndefOr[js.Any] = js.undefined
   
   //Selector;
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   // [], string or ()
-  var classes: js.UndefOr[AutocompleteClasses] = js.native
+  var classes: js.UndefOr[AutocompleteClasses] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   // object
-  var source: js.UndefOr[js.Any] = js.native
+  var source: js.UndefOr[js.Any] = js.undefined
 }
 object AutocompleteOptions {
   

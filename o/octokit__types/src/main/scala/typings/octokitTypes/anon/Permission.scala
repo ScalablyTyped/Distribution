@@ -2,33 +2,31 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var members_url: String = js.native
+  var members_url: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var permission: String = js.native
+  var permission: String
   
-  var privacy: String = js.native
+  var privacy: String
   
-  var repositories_url: String = js.native
+  var repositories_url: String
   
-  var slug: String = js.native
+  var slug: String
   
-  var url: String = js.native
+  var url: String
 }
 object Permission {
   

@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.checkboxCheckboxMod.CheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxMod extends Shortcut {

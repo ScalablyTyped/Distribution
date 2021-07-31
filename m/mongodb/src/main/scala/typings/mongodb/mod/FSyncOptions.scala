@@ -2,13 +2,13 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FSyncOptions extends CommonOptions {
+trait FSyncOptions
+  extends StObject
+     with CommonOptions {
   
-  var fsync: js.UndefOr[Boolean] = js.native
+  var fsync: js.UndefOr[Boolean] = js.undefined
 }
 object FSyncOptions {
   

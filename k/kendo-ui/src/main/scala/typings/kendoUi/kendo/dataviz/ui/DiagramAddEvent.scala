@@ -4,15 +4,15 @@ import typings.kendoUi.kendo.dataviz.diagram.Connection
 import typings.kendoUi.kendo.dataviz.diagram.Shape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiagramAddEvent extends DiagramEvent {
+trait DiagramAddEvent
+  extends StObject
+     with DiagramEvent {
   
-  var connection: js.UndefOr[Connection] = js.native
+  var connection: js.UndefOr[Connection] = js.undefined
   
-  var shape: js.UndefOr[Shape] = js.native
+  var shape: js.UndefOr[Shape] = js.undefined
 }
 object DiagramAddEvent {
   

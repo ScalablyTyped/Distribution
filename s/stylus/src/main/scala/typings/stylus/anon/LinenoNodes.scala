@@ -3,21 +3,19 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinenoNodes extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var column: Double = js.native
+  var column: Double
   
-  var filename: String = js.native
+  var filename: String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var nodes: js.Array[Node] = js.native
+  var nodes: js.Array[Node]
 }
 object LinenoNodes {
   

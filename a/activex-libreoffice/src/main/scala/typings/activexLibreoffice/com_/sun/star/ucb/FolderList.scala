@@ -3,18 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of folders. */
-@js.native
 trait FolderList extends StObject {
   
   /** The command to process on this list of folders. */
-  var Command: FolderListCommand = js.native
+  var Command: FolderListCommand
   
   /** The list of folders (only used in conjunction with FolderListCommand::SET). */
-  var List: SafeArray[FolderListEntry] = js.native
+  var List: SafeArray[FolderListEntry]
 }
 object FolderList {
   

@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Zoom extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var PageColumns: Double = js.native
+  var PageColumns: Double
   
-  var PageFit: WdPageFit = js.native
+  var PageFit: WdPageFit
   
-  var PageRows: Double = js.native
+  var PageRows: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Percentage: Double = js.native
+  var Percentage: Double
   
   @JSName("Word.Zoom_typekey")
-  var WordDotZoom_typekey: Zoom = js.native
+  var WordDotZoom_typekey: Zoom
 }
 object Zoom {
   

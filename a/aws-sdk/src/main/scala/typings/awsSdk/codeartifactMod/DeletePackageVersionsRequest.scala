@@ -2,52 +2,50 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePackageVersionsRequest extends StObject {
   
   /**
     *  The name of the package with the versions to delete. 
     */
   @JSName("package")
-  var _package: PackageName = js.native
+  var _package: PackageName
   
   /**
     *  The name of the domain that contains the package to delete. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The expected status of the package version to delete. Valid values are:     Published     Unfinished     Unlisted     Archived     Disposed   
     */
-  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.native
+  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.undefined
   
   /**
     *  The format of the package versions to delete. The valid values are:     npm     pypi     maven   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The name of the repository that contains the package versions to delete. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
   
   /**
     *  An array of strings that specify the versions of the package to delete. 
     */
-  var versions: PackageVersionList = js.native
+  var versions: PackageVersionList
 }
 object DeletePackageVersionsRequest {
   

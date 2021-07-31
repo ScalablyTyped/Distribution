@@ -5,14 +5,16 @@ import typings.poseCore.typesMod.Poser
 import typings.poseCore.typesMod.PoserConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pose-core", JSImport.Default)
+  @JSImport("pose-core", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[V, A, C, P, TD](
     hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI: PoseFactoryConfig[V, A, C, P, TD]
-  ): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = js.native
+  ): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]]]
 }

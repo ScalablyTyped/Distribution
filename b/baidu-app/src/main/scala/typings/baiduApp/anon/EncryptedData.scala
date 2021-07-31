@@ -2,20 +2,18 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptedData extends StObject {
   
   /** 包括敏感数据在内的完整转发信息的加密数据，详细见[加密数据解密算法](https://smartprogram.baidu.com/docs/develop/api/open_log/#login/) */
-  var encryptedData: String = js.native
+  var encryptedData: String
   
   /** 错误信息 */
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 加密算法的初始向量，详细见[加密数据解密算法](https://smartprogram.baidu.com/docs/develop/api/open_log/#login/) */
-  var iv: String = js.native
+  var iv: String
 }
 object EncryptedData {
   

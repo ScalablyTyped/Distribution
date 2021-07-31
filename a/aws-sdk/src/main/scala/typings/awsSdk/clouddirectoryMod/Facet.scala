@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Facet extends StObject {
   
   /**
     * There are two different styles that you can define on any given facet, Static and Dynamic. For static facets, all attributes must be defined in the schema. For dynamic facets, attributes can be defined during data plane operations.
     */
-  var FacetStyle: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetStyle] = js.native
+  var FacetStyle: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetStyle] = js.undefined
   
   /**
     * The name of the Facet.
     */
-  var Name: js.UndefOr[FacetName] = js.native
+  var Name: js.UndefOr[FacetName] = js.undefined
   
   /**
     * The object type that is associated with the facet. See CreateFacetRequest$ObjectType for more details.
     */
-  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.native
+  var ObjectType: js.UndefOr[typings.awsSdk.clouddirectoryMod.ObjectType] = js.undefined
 }
 object Facet {
   

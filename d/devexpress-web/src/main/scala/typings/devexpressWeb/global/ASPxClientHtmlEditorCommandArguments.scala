@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientHtmlEditorCommandArguments")
 @js.native
 class ASPxClientHtmlEditorCommandArguments protected ()
-  extends typings.devexpressWeb.ASPxClientHtmlEditorCommandArguments {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientHtmlEditorCommandArguments {
   /**
     * Initializes a new instance of the object.
     * @param htmlEditor The Html Editor.
@@ -19,4 +19,10 @@ class ASPxClientHtmlEditorCommandArguments protected ()
     */
   def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor) = this()
   def this(htmlEditor: typings.devexpressWeb.ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+  
+  /**
+    * Gets the currently selected element in the ASPxHtmlEditor.
+    */
+  /* CompleteClass */
+  var selectedElement: js.Any = js.native
 }

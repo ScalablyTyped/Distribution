@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShuffleConfig extends StObject {
   
   /**
     * Determines the shuffling order in ShuffleConfig value.
     */
-  var Seed: typings.awsSdk.sagemakerMod.Seed = js.native
+  var Seed: typings.awsSdk.sagemakerMod.Seed
 }
 object ShuffleConfig {
   

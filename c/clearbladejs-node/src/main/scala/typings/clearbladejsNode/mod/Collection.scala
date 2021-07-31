@@ -2,29 +2,27 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collection extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  def create(newItem: Item, callback: CbCallback): Unit = js.native
+  def create(newItem: Item, callback: CbCallback): Unit
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  def fetch(query: QueryObj, callback: CbCallback): Unit = js.native
+  def fetch(query: QueryObj, callback: CbCallback): Unit
   
-  def remove(query: Query, callback: CbCallback): Unit = js.native
+  def remove(query: Query, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(query: Query, changes: js.Object, callback: CbCallback): Unit = js.native
+  def update(query: Query, changes: js.Object, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Collection {
   

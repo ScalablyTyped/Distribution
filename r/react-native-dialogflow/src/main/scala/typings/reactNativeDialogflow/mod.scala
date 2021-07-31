@@ -19,12 +19,15 @@ import typings.reactNativeDialogflow.reactNativeDialogflowStrings.uk
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object Dialogflow {
+    
+    @JSImport("react-native-dialogflow", "Dialogflow")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("react-native-dialogflow", "Dialogflow.LANG_CHINESE_CHINA")
     @js.native
@@ -94,71 +97,63 @@ object mod {
     @js.native
     val LANG_UKRAINIAN: uk = js.native
     
-    @JSImport("react-native-dialogflow", "Dialogflow.finishListening")
-    @js.native
-    def finishListening(): Unit = js.native
+    @scala.inline
+    def finishListening(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("finishListening")().asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.onAudioLevel")
-    @js.native
-    def onAudioLevel(callback: js.Function1[/* level */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def onAudioLevel(callback: js.Function1[/* level */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAudioLevel")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.onListeningFinished")
-    @js.native
-    def onListeningFinished(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onListeningFinished(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListeningFinished")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.onListeningStarted")
-    @js.native
-    def onListeningStarted(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onListeningStarted(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListeningStarted")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.requestEvent")
-    @js.native
+    @scala.inline
     def requestEvent(
       eventName: String,
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.requestQuery")
-    @js.native
+    @scala.inline
     def requestQuery(
       query: String,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.resetContexts")
-    @js.native
+    @scala.inline
     def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetContexts")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.setConfiguration")
-    @js.native
-    def setConfiguration(accessToken: String, languageTag: String): Unit = js.native
+    @scala.inline
+    def setConfiguration(accessToken: String, languageTag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(accessToken.asInstanceOf[js.Any], languageTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.setContexts")
-    @js.native
-    def setContexts(contexts: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.setEntities")
-    @js.native
-    def setEntities(entities: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setEntities(entities: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEntities")(entities.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.setPermanentContexts")
-    @js.native
-    def setPermanentContexts(contexts: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setPermanentContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow.startListening")
-    @js.native
+    @scala.inline
     def startListening(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListening")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object DialogflowV2 {
+    
+    @JSImport("react-native-dialogflow", "Dialogflow_V2")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("react-native-dialogflow", "Dialogflow_V2.LANG_CHINESE_CHINA")
     @js.native
@@ -228,63 +223,52 @@ object mod {
     @js.native
     val LANG_UKRAINIAN: uk = js.native
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.finishListening")
-    @js.native
-    def finishListening(): Unit = js.native
+    @scala.inline
+    def finishListening(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("finishListening")().asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.onAudioLevel")
-    @js.native
-    def onAudioLevel(callback: js.Function1[/* level */ Double, Unit]): Unit = js.native
+    @scala.inline
+    def onAudioLevel(callback: js.Function1[/* level */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAudioLevel")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.onListeningFinished")
-    @js.native
-    def onListeningFinished(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onListeningFinished(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListeningFinished")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.onListeningStarted")
-    @js.native
-    def onListeningStarted(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onListeningStarted(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onListeningStarted")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.requestEvent")
-    @js.native
+    @scala.inline
     def requestEvent(
       eventName: String,
       eventData: js.Object,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestEvent")(eventName.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.requestQuery")
-    @js.native
+    @scala.inline
     def requestQuery(
       query: String,
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestQuery")(query.asInstanceOf[js.Any], resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.resetContexts")
-    @js.native
+    @scala.inline
     def resetContexts(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetContexts")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.setConfiguration")
-    @js.native
-    def setConfiguration(serviceAccount: String, privateKey: String, language: String, projectId: String): Unit = js.native
+    @scala.inline
+    def setConfiguration(serviceAccount: String, privateKey: String, language: String, projectId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setConfiguration")(serviceAccount.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], language.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.setContexts")
-    @js.native
-    def setContexts(contexts: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.setPermanentContexts")
-    @js.native
-    def setPermanentContexts(contexts: js.Array[_]): Unit = js.native
+    @scala.inline
+    def setPermanentContexts(contexts: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPermanentContexts")(contexts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-native-dialogflow", "Dialogflow_V2.startListening")
-    @js.native
+    @scala.inline
     def startListening(
       resultCallback: js.Function1[/* result */ js.Object, Unit],
       errorCallback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startListening")(resultCallback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

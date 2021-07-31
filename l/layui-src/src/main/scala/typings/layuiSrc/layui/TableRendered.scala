@@ -2,19 +2,17 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRendered extends StObject {
   
-  var config: TableOption = js.native
+  var config: TableOption
   
-  def reload(options: TableOption): Unit = js.native
+  def reload(options: TableOption): Unit
   
-  def resize(): Unit = js.native
+  def resize(): Unit
   
-  def setColsWidth(): Unit = js.native
+  def setColsWidth(): Unit
 }
 object TableRendered {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentationPartIds extends StObject {
   
   /**
     * A list of the returned documentation part identifiers.
     */
-  var ids: js.UndefOr[ListOfString] = js.native
+  var ids: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * A list of warning messages reported during import of documentation parts.
     */
-  var warnings: js.UndefOr[ListOfString] = js.native
+  var warnings: js.UndefOr[ListOfString] = js.undefined
 }
 object DocumentationPartIds {
   

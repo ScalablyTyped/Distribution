@@ -2,7 +2,6 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * need to be contiguous&amp;mdash;there may be gaps or overlaps between spans
   * in a trace.
   */
-@js.native
 trait SchemaSpan extends StObject {
   
   /**
     * A set of attributes on the span. You can have up to 32 attributes per
     * span.
     */
-  var attributes: js.UndefOr[SchemaAttributes] = js.native
+  var attributes: js.UndefOr[SchemaAttributes] = js.undefined
   
   /**
     * An optional number of child spans that were generated while this span was
     * active. If set, allows implementation to detect missing child spans.
     */
-  var childSpanCount: js.UndefOr[Double] = js.native
+  var childSpanCount: js.UndefOr[Double] = js.undefined
   
   /**
     * A description of the span&#39;s operation (up to 128 bytes). Stackdriver
@@ -36,19 +34,19 @@ trait SchemaSpan extends StObject {
     * use the same display name within an application and at the same call
     * point. This makes it easier to correlate spans in different traces.
     */
-  var displayName: js.UndefOr[SchemaTruncatableString] = js.native
+  var displayName: js.UndefOr[SchemaTruncatableString] = js.undefined
   
   /**
     * The end time of the span. On the client side, this is the time kept by
     * the local machine where the span execution ends. On the server side, this
     * is the time when the server application handler stops running.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Links associated with the span. You can have up to 128 links per Span.
     */
-  var links: js.UndefOr[SchemaLinks] = js.native
+  var links: js.UndefOr[SchemaLinks] = js.undefined
   
   /**
     * The resource name of the span in the following format:
@@ -58,30 +56,30 @@ trait SchemaSpan extends StObject {
     * within a trace; it is a 16-character hexadecimal encoding of an 8-byte
     * array.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The [SPAN_ID] of this span&#39;s parent span. If this is a root span,
     * then this field must be empty.
     */
-  var parentSpanId: js.UndefOr[String] = js.native
+  var parentSpanId: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) Set this parameter to indicate whether this span is in the
     * same process as its parent. If you do not set this parameter, Stackdriver
     * Trace is unable to take advantage of this helpful information.
     */
-  var sameProcessAsParentSpan: js.UndefOr[Boolean] = js.native
+  var sameProcessAsParentSpan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The [SPAN_ID] portion of the span&#39;s resource name.
     */
-  var spanId: js.UndefOr[String] = js.native
+  var spanId: js.UndefOr[String] = js.undefined
   
   /**
     * Stack trace captured at the start of the span.
     */
-  var stackTrace: js.UndefOr[SchemaStackTrace] = js.native
+  var stackTrace: js.UndefOr[SchemaStackTrace] = js.undefined
   
   /**
     * The start time of the span. On the client side, this is the time kept by
@@ -89,18 +87,18 @@ trait SchemaSpan extends StObject {
     * this is the time when the server&#39;s application handler starts
     * running.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * An optional final status for this span.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * A set of time events. You can have up to 32 annotations and 128 message
     * events per span.
     */
-  var timeEvents: js.UndefOr[SchemaTimeEvents] = js.native
+  var timeEvents: js.UndefOr[SchemaTimeEvents] = js.undefined
 }
 object SchemaSpan {
   

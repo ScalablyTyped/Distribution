@@ -6,28 +6,26 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.window
 import typings.agoraRtcSdk.anon.AEC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class defining the `spec` paramter in the {@link createStream} method.
   * [[include:StreamSpec-example.md]]
   */
-@js.native
 trait StreamSpec extends StObject {
   
   /**
     * Marks whether this stream contains an audio track.
     */
-  var audio: Boolean = js.native
+  var audio: Boolean
   
   /** Marks whether to enable audio processing. */
-  var audioProcessing: js.UndefOr[AEC] = js.native
+  var audioProcessing: js.UndefOr[AEC] = js.undefined
   
   /**
     * Specifies the audio source of the stream.
     */
-  var audioSource: js.UndefOr[MediaStreamTrack] = js.native
+  var audioSource: js.UndefOr[MediaStreamTrack] = js.undefined
   
   /**
     * The camera device ID retrieved from the {@link getDevices} method.
@@ -36,7 +34,7 @@ trait StreamSpec extends StObject {
     *
     * When the string length is 0, this property is ignored.
     */
-  var cameraId: js.UndefOr[String] = js.native
+  var cameraId: js.UndefOr[String] = js.undefined
   
   /**
     * The extension ID of the Chrome screen-sharing extension.
@@ -51,7 +49,7 @@ trait StreamSpec extends StObject {
     *
     * If you set the `extensionId`, then you need to use the screen-sharing extension.
     */
-  var extensionId: js.UndefOr[String] = js.native
+  var extensionId: js.UndefOr[String] = js.undefined
   
   /**
     * Sets using the front or rear camera
@@ -60,7 +58,7 @@ trait StreamSpec extends StObject {
     * - `"user"`: The front camera.
     * - `"environment"`: The rear camera.
     */
-  var facingMode: js.UndefOr[String] = js.native
+  var facingMode: js.UndefOr[String] = js.undefined
   
   /**
     * The screen-sharing mode on the Firefox browser.
@@ -76,7 +74,7 @@ trait StreamSpec extends StObject {
     *
     * See [Screen Sharing on Firefox](../../../screensharing_web?platform=Web#a-name-ff-a-screen-sharing-on-firefox) for details.
     */
-  var mediaSource: js.UndefOr[screen | application | window] = js.native
+  var mediaSource: js.UndefOr[screen | application | window] = js.undefined
   
   /**
     * The microphone device ID retrieved from the {@link getDevices} method.
@@ -85,7 +83,7 @@ trait StreamSpec extends StObject {
     *
     * When the string length is 0, this property is ignored.
     */
-  var microphoneId: js.UndefOr[String] = js.native
+  var microphoneId: js.UndefOr[String] = js.undefined
   
   /**
     * Marks whether to mirror the local video image of the publisher in the local preview.
@@ -97,12 +95,12 @@ trait StreamSpec extends StObject {
     *
     *  Agora recommends enabling this function when using the front camera, and disabling it when using the rear camera.
     */
-  var mirror: js.UndefOr[Boolean] = js.native
+  var mirror: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marks whether this stream contains a screen-sharing track. See [Share the Screen](../../../screensharing_web?platform=Web) for details.
     */
-  var screen: js.UndefOr[Boolean] = js.native
+  var screen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Marks whether to share the audio playback when sharing the screen.
@@ -120,19 +118,19 @@ trait StreamSpec extends StObject {
     * - This function supports only Chrome 73 or later on Windows.
     * - For the audio sharing to take effect, the user must check **Share audio** in the pop-up window when sharing the screen.
     */
-  var screenAudio: js.UndefOr[Boolean] = js.native
+  var screenAudio: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The stream ID.
     *
     * Please set the stream ID as the user ID, which can be retrieved from the callback of {@link Client.join}.
     */
-  var streamID: js.UndefOr[Double | String] = js.native
+  var streamID: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Marks whether this stream contains a video track.
     */
-  var video: Boolean = js.native
+  var video: Boolean
   
   /**
     * Specifies the video source of the stream.
@@ -141,7 +139,7 @@ trait StreamSpec extends StObject {
     *
     * If you use a video source created by the Canvas API, re-draw on the canvas every one second when the drawing is still to keep the video publishing.
     */
-  var videoSource: js.UndefOr[MediaStreamTrack] = js.native
+  var videoSource: js.UndefOr[MediaStreamTrack] = js.undefined
 }
 object StreamSpec {
   

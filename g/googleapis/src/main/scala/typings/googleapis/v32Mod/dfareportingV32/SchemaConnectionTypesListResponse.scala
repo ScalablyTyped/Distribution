@@ -2,25 +2,23 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Connection Type List Response
   */
-@js.native
 trait SchemaConnectionTypesListResponse extends StObject {
   
   /**
     * Collection of connection types such as broadband and mobile.
     */
-  var connectionTypes: js.UndefOr[js.Array[SchemaConnectionType]] = js.native
+  var connectionTypes: js.UndefOr[js.Array[SchemaConnectionType]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#connectionTypesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaConnectionTypesListResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInstanceRequest extends StObject {
   
   /**
     * A Boolean value to indicate whether to delete the enabled add-ons for the disk.
     */
-  var forceDeleteAddOns: js.UndefOr[Boolean] = js.native
+  var forceDeleteAddOns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the instance to delete.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
 }
 object DeleteInstanceRequest {
   

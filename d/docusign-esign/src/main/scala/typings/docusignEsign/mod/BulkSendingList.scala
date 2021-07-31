@@ -2,27 +2,25 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendingList extends StObject {
   
   /**
     * An array of `bulkCopy` objects. Each object represents an instance or copy of an envelope and contains details such as the recipient, custom fields, tabs,
     * and other information.
     */
-  var bulkCopies: js.UndefOr[js.Array[BulkSendingCopy]] = js.native
+  var bulkCopies: js.UndefOr[js.Array[BulkSendingCopy]] = js.undefined
   
   /**
     * The GUID of the bulk send list.
     */
-  var listId: js.UndefOr[String] = js.native
+  var listId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the bulk send list.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BulkSendingList {
   

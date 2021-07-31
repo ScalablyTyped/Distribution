@@ -4,59 +4,49 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("progressbar.js/utils", "capitalize")
+  @JSImport("progressbar.js/utils", JSImport.Namespace)
   @js.native
-  def capitalize(text: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("progressbar.js/utils", "extend")
-  @js.native
-  def extend[T, U](target: T, source: U): T with U = js.native
-  @JSImport("progressbar.js/utils", "extend")
-  @js.native
-  def extend[T, U](target: T, source: U, recursive: Boolean): T with U = js.native
+  @scala.inline
+  def capitalize(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("progressbar.js/utils", "floatEquals")
-  @js.native
-  def floatEquals(a: Double, b: Double): Boolean = js.native
+  @scala.inline
+  def extend[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
+  @scala.inline
+  def extend[T, U](target: T, source: U, recursive: Boolean): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[T & U]
   
-  @JSImport("progressbar.js/utils", "forEachObject")
-  @js.native
-  def forEachObject(obj: js.Any, cb: js.Function2[/* val */ js.Any, /* key */ String, Unit]): Unit = js.native
+  @scala.inline
+  def floatEquals(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("floatEquals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("progressbar.js/utils", "isArray")
-  @js.native
-  def isArray(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def forEachObject(obj: js.Any, cb: js.Function2[/* val */ js.Any, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachObject")(obj.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("progressbar.js/utils", "isFunction")
-  @js.native
-  def isFunction(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("progressbar.js/utils", "isObject")
-  @js.native
-  def isObject(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("progressbar.js/utils", "isString")
-  @js.native
-  def isString(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("progressbar.js/utils", "removeChildren")
-  @js.native
-  def removeChildren(el: Element): Unit = js.native
+  @scala.inline
+  def isString(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("progressbar.js/utils", "render")
-  @js.native
-  def render(template: String, vars: StringDictionary[js.Any]): String = js.native
+  @scala.inline
+  def removeChildren(el: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChildren")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("progressbar.js/utils", "setStyle")
-  @js.native
-  def setStyle(element: Element, style: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def render(template: String, vars: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("progressbar.js/utils", "setStyles")
-  @js.native
-  def setStyles(element: Element, styles: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def setStyle(element: Element, style: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(element.asInstanceOf[js.Any], style.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def setStyles(element: Element, styles: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyles")(element.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

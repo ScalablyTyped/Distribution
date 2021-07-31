@@ -4,19 +4,17 @@ import typings.node.httpMod.IncomingMessage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendOptions extends StObject {
   
-  var batch: Boolean = js.native
+  var batch: Boolean
   
-  var callback: Callback[IncomingMessage] = js.native
+  var callback: Callback[IncomingMessage]
   
-  var http: HTTPOptions = js.native
+  var http: HTTPOptions
   
-  var message: String = js.native
+  var message: String
 }
 object SendOptions {
   

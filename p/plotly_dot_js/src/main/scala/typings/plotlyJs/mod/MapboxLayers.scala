@@ -15,47 +15,45 @@ import typings.plotlyJs.plotlyJsStrings.symbol
 import typings.plotlyJs.plotlyJsStrings.vecotr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapboxLayers extends StObject {
   
-  var below: String = js.native
+  var below: String
   
-  var circle: Radius = js.native
+  var circle: Radius
   
-  var color: Color = js.native
+  var color: Color
   
-  var coordinates: Double | String = js.native
+  var coordinates: Double | String
   
-  var fill: Outlinecolor = js.native
+  var fill: Outlinecolor
   
-  var line: PartialShapeLine = js.native
+  var line: PartialShapeLine
   
-  var maxzoom: Double = js.native
+  var maxzoom: Double
   
-  var minzoom: Double = js.native
+  var minzoom: Double
   
-  var name: String = js.native
+  var name: String
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var source: Double | String = js.native
+  var source: Double | String
   
-  var sourceattribution: String = js.native
+  var sourceattribution: String
   
-  var sourcelayer: String = js.native
+  var sourcelayer: String
   
-  var sourcetype: geojson | vecotr | raster | image = js.native
+  var sourcetype: geojson | vecotr | raster | image
   
-  var symbol: PartialMapboxSymbolIcon = js.native
+  var symbol: PartialMapboxSymbolIcon
   
-  var templateitemname: String = js.native
+  var templateitemname: String
   
-  var `type`: circle | line | fill | symbol | raster = js.native
+  var `type`: circle | line | fill | symbol | raster
   
-  var visible: `true` = js.native
+  var visible: `true`
 }
 object MapboxLayers {
   
@@ -77,10 +75,9 @@ object MapboxLayers {
     sourcetype: geojson | vecotr | raster | image,
     symbol: PartialMapboxSymbolIcon,
     templateitemname: String,
-    `type`: circle | line | fill | symbol | raster,
-    visible: `true`
+    `type`: circle | line | fill | symbol | raster
   ): MapboxLayers = {
-    val __obj = js.Dynamic.literal(below = below.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], maxzoom = maxzoom.asInstanceOf[js.Any], minzoom = minzoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceattribution = sourceattribution.asInstanceOf[js.Any], sourcelayer = sourcelayer.asInstanceOf[js.Any], sourcetype = sourcetype.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(below = below.asInstanceOf[js.Any], circle = circle.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], fill = fill.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], maxzoom = maxzoom.asInstanceOf[js.Any], minzoom = minzoom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceattribution = sourceattribution.asInstanceOf[js.Any], sourcelayer = sourcelayer.asInstanceOf[js.Any], sourcetype = sourcetype.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], templateitemname = templateitemname.asInstanceOf[js.Any], visible = true)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapboxLayers]
   }

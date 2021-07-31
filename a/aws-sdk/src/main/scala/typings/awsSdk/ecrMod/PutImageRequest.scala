@@ -2,41 +2,39 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutImageRequest extends StObject {
   
   /**
     * The image digest of the image manifest corresponding to the image.
     */
-  var imageDigest: js.UndefOr[ImageDigest] = js.native
+  var imageDigest: js.UndefOr[ImageDigest] = js.undefined
   
   /**
     * The image manifest corresponding to the image to be uploaded.
     */
-  var imageManifest: ImageManifest = js.native
+  var imageManifest: ImageManifest
   
   /**
     * The media type of the image manifest. If you push an image manifest that does not contain the mediaType field, you must specify the imageManifestMediaType in the request.
     */
-  var imageManifestMediaType: js.UndefOr[MediaType] = js.native
+  var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
     * The tag to associate with the image. This parameter is required for images that use the Docker Image Manifest V2 Schema 2 or Open Container Initiative (OCI) formats.
     */
-  var imageTag: js.UndefOr[ImageTag] = js.native
+  var imageTag: js.UndefOr[ImageTag] = js.undefined
   
   /**
     * The AWS account ID associated with the registry that contains the repository in which to put the image. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository in which to put the image.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object PutImageRequest {
   

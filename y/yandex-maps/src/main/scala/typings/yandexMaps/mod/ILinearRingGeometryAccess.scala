@@ -2,37 +2,37 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILinearRingGeometryAccess extends IFreezable {
+trait ILinearRingGeometryAccess
+  extends StObject
+     with IFreezable {
   
-  def contain(position: Double): Boolean = js.native
+  def contain(position: Double): Boolean
   
-  def get(index: Double): js.Array[Double] = js.native
+  def get(index: Double): js.Array[Double]
   
-  def getChildGeometry(index: Double): IPointGeometryAccess = js.native
+  def getChildGeometry(index: Double): IPointGeometryAccess
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getClosest(anchorPosition: js.Array[Double]): js.Object
   
-  def getCoordinates(): js.Array[js.Array[Double]] = js.native
+  def getCoordinates(): js.Array[js.Array[Double]]
   
-  def getFillRule(): String = js.native
+  def getFillRule(): String
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def insert(index: Double, coordinates: js.Array[Double]): ILinearRingGeometryAccess = js.native
+  def insert(index: Double, coordinates: js.Array[Double]): ILinearRingGeometryAccess
   
-  def remove(index: Double): js.Array[Double] = js.native
+  def remove(index: Double): js.Array[Double]
   
-  def set(index: Double, coordinates: js.Array[Double]): ILinearRingGeometryAccess = js.native
+  def set(index: Double, coordinates: js.Array[Double]): ILinearRingGeometryAccess
   
-  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILinearRingGeometryAccess = js.native
+  def setCoordinates(coordinates: js.Array[js.Array[Double]]): ILinearRingGeometryAccess
   
-  def setFillRule(fillRule: String): ILinearRingGeometryAccess = js.native
+  def setFillRule(fillRule: String): ILinearRingGeometryAccess
   
-  def splice(index: Double, number: Double): js.Array[js.Array[Double]] = js.native
+  def splice(index: Double, number: Double): js.Array[js.Array[Double]]
 }
 object ILinearRingGeometryAccess {
   

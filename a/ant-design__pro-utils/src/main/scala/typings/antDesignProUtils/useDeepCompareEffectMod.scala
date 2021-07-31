@@ -4,19 +4,19 @@ import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useDeepCompareEffectMod {
   
-  @JSImport("@ant-design/pro-utils/lib/hooks/useDeepCompareEffect", JSImport.Default)
+  @JSImport("@ant-design/pro-utils/lib/hooks/useDeepCompareEffect", JSImport.Namespace)
   @js.native
-  def default(effect: EffectCallback): Unit = js.native
-  @JSImport("@ant-design/pro-utils/lib/hooks/useDeepCompareEffect", JSImport.Default)
-  @js.native
-  def default(effect: EffectCallback, dependencies: DependencyList): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ant-design/pro-utils/lib/hooks/useDeepCompareEffect", "isDeepEqual")
-  @js.native
-  def isDeepEqual(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(effect: EffectCallback, dependencies: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def isDeepEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeepEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

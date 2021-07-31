@@ -5,39 +5,39 @@ import typings.arcgisJsApi.arcgisJsApiStrings.hybrid
 import typings.arcgisJsApi.arcgisJsApiStrings.road
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BingMapsLayerProperties extends BaseTileLayerProperties {
+trait BingMapsLayerProperties
+  extends StObject
+     with BaseTileLayerProperties {
   
   /**
     * Provides culture specific map labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#culture)
     */
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
   /**
     * Bing Maps Key.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#key)
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * This will alter Geopolitical disputed borders and labels to align with the specified user region.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#region)
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * For more information on Bing map styles please visit: https://docs.microsoft.com/en-us/bingmaps/rest-services/imagery/get-imagery-metadata.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BingMapsLayer.html#style)
     */
-  var style: js.UndefOr[road | aerial | hybrid] = js.native
+  var style: js.UndefOr[road | aerial | hybrid] = js.undefined
 }
 object BingMapsLayerProperties {
   

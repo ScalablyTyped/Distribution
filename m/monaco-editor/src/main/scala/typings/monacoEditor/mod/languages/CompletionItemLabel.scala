@@ -2,31 +2,29 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionItemLabel extends StObject {
   
   /**
     * The function or variable. Rendered leftmost.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The parameters without the return type. Render after `name`.
     */
-  var parameters: js.UndefOr[String] = js.native
+  var parameters: js.UndefOr[String] = js.undefined
   
   /**
     * The fully qualified name, like package name or file path. Rendered after `signature`.
     */
-  var qualifier: js.UndefOr[String] = js.native
+  var qualifier: js.UndefOr[String] = js.undefined
   
   /**
     * The return-type of a function or type of a property/variable. Rendered rightmost.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CompletionItemLabel {
   

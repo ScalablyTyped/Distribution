@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridUpdating
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,109 +17,109 @@ trait IgTreeGridUpdating
     * This option has been deprecated as of the 2017.2 Volume release.
     * Specifies the label of the add child button in touch environment. Use option [locale.addChildButtonLabel](ui.igtreegridupdating#options:locale.addChildButtonLabel).
     */
-  var addChildButtonLabel: js.UndefOr[String] = js.native
+  var addChildButtonLabel: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been deprecated as of the 2017.2 Volume release.
     * Specifies the add child tooltip text. Use option [locale.enableAddChild](ui.igtreegridupdating#options:locale.enableAddChild).
     */
-  var addChildTooltip: js.UndefOr[String] = js.native
+  var addChildTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
     * Use option [locale.addRowLabel](ui.iggridupdating#options:locale.addRowLabel).
     */
-  var addRowLabel: js.UndefOr[String] = js.native
+  var addRowLabel: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the title for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowTooltip is used.
     * Use option [locale.addRowTooltip](ui.iggridupdating#options:locale.addRowTooltip).
     */
-  var addRowTooltip: js.UndefOr[String] = js.native
+  var addRowTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the label for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelLabel is used.
     * Use option [locale.cancelLabel](ui.iggridupdating#options:locale.cancelLabel).
     */
-  var cancelLabel: js.UndefOr[String] = js.native
+  var cancelLabel: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the title for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelTooltip is used.
     * Use option [locale.cancelTooltip](ui.iggridupdating#options:locale.cancelTooltip).
     */
-  var cancelTooltip: js.UndefOr[String] = js.native
+  var cancelTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * A list of custom column options that specify editing and validation settings for a specific column.
     *
     */
-  var columnSettings: js.UndefOr[js.Array[IgGridUpdatingColumnSetting]] = js.native
+  var columnSettings: js.UndefOr[js.Array[IgGridUpdatingColumnSetting]] = js.undefined
   
   /**
     * Event fired before the dataDirtyException is thrown. This can be controlled by the [enableDataDirtyException](ui.iggridupdating#options:enableDataDirtyException) property. Any pending changes may be committed in the handler of this event in order to prevent dataDirtyException from being thrown.
     * Return false in order to prevent the exception.
     */
-  var dataDirty: js.UndefOr[DataDirtyEvent] = js.native
+  var dataDirty: js.UndefOr[DataDirtyEvent] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the label for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowLabel is used.
     * Use option [locale.deleteRowLabel](ui.iggridupdating#options:locale.deleteRowLabel).
     */
-  var deleteRowLabel: js.UndefOr[String] = js.native
+  var deleteRowLabel: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the title for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowTooltip is used.
     * Use option [locale.deleteRowTooltip](ui.iggridupdating#options:locale.deleteRowTooltip).
     */
-  var deleteRowTooltip: js.UndefOr[String] = js.native
+  var deleteRowTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the dialog widget to be used. It should inherit from $.ui.igGridModalDialog. For more information on how to utilize this property, please refer to the [Extending igGrid Modal Dialog](http://www.igniteui.com/help/extending-iggrid-modal-dialog) topic.
     *
     */
-  var dialogWidget: js.UndefOr[String] = js.native
+  var dialogWidget: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the label for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneLabel is used.
     * Use option [locale.doneLabel](ui.iggridupdating#options:locale.doneLabel).
     */
-  var doneLabel: js.UndefOr[String] = js.native
+  var doneLabel: js.UndefOr[String] = js.undefined
   
   /**
     * This option has been removed as of 2017.2 Volume release.
     * Specifies the title for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneTooltip is used.
     * Use option [locale.doneTooltip](ui.iggridupdating#options:locale.doneTooltip).
     */
-  var doneTooltip: js.UndefOr[String] = js.native
+  var doneTooltip: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after cell editing ends (including when row editing closes editing for a cell).
     */
-  var editCellEnded: js.UndefOr[EditCellEndedEvent] = js.native
+  var editCellEnded: js.UndefOr[EditCellEndedEvent] = js.undefined
   
   /**
     * Event fired before cell editing ends (including when row editing closes editing for a cell).
     * Return false in order to prevent the grid from exiting edit mode (only functions if [editMode](ui.iggridupdating#options:editMode) is 'cell').
     */
-  var editCellEnding: js.UndefOr[EditCellEndingEvent] = js.native
+  var editCellEnding: js.UndefOr[EditCellEndingEvent] = js.undefined
   
   /**
     * Event fired after cell editing begins (including when row editing opens editing for a cell).
     */
-  var editCellStarted: js.UndefOr[EditCellStartedEvent] = js.native
+  var editCellStarted: js.UndefOr[EditCellStartedEvent] = js.undefined
   
   /**
     * Event fired before cell editing begins (including when row editing opens editing for a cell).
     * Return false in order to cancel editing.
     */
-  var editCellStarting: js.UndefOr[EditCellStartingEvent] = js.native
+  var editCellStarting: js.UndefOr[EditCellStartingEvent] = js.undefined
   
   /**
     * Specifies the edit mode.
@@ -132,172 +131,172 @@ trait IgTreeGridUpdating
     * "dialog" A popup dialog is used with seperate settings available through the [rowEditDialogOptions](ui.iggridupdating#options:rowEditDialogOptions) property.
     * "none" Editing through the UI is disabled.
     */
-  var editMode: js.UndefOr[String] = js.native
+  var editMode: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after row editing ends.
     */
-  var editRowEnded: js.UndefOr[EditRowEndedEvent] = js.native
+  var editRowEnded: js.UndefOr[EditRowEndedEvent] = js.undefined
   
   /**
     * Event fired before row editing ends.
     * Return false in order to prevent the grid from exiting edit mode.
     */
-  var editRowEnding: js.UndefOr[EditRowEndingEvent] = js.native
+  var editRowEnding: js.UndefOr[EditRowEndingEvent] = js.undefined
   
   /**
     * Event fired after row editing begins.
     */
-  var editRowStarted: js.UndefOr[EditRowStartedEvent] = js.native
+  var editRowStarted: js.UndefOr[EditRowStartedEvent] = js.undefined
   
   /**
     * Event fired before row editing begins.
     * Return false in order to cancel editing.
     */
-  var editRowStarting: js.UndefOr[EditRowStartingEvent] = js.native
+  var editRowStarting: js.UndefOr[EditRowStartingEvent] = js.undefined
   
   /**
     * Specifies whether to enable or disable adding children to rows.
     *
     */
-  var enableAddChild: js.UndefOr[Boolean] = js.native
+  var enableAddChild: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if adding rows through the UI is enabled. When enabled an additional row is rendered at the bottom of the grid's header that works as a button. When the end-user clicks on it edit mode is initiated either through a dialog (when [editMode](ui.iggridupdating#options:editMode) is 'dialog') or mimicking the look and feel of 'row' [editMode](ui.iggridupdating#options:editMode) (when [editMode](ui.iggridupdating#options:editMode) is 'row' or 'cell').
     *
     */
-  var enableAddRow: js.UndefOr[Boolean] = js.native
+  var enableAddRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if an exception should be thrown when the grid's data view changes while there are pending transactions in the data source. The data view changes when the data source performs a sorting, filtering, groupby or paging operation and the exception thrown will prevent the operation from succeeding. All pending transactions must be committed before a data view operation is able to complete. Committing transactions can be done manually through the grid's [commit](ui.iggrid#methods:commit) function or automatically by setting [autoCommit](ui.iggrid#options:autoCommit) to 'true'.
     *
     */
-  var enableDataDirtyException: js.UndefOr[Boolean] = js.native
+  var enableDataDirtyException: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies if deleting rows through the UI is enabled.
     *
     */
-  var enableDeleteRow: js.UndefOr[Boolean] = js.native
+  var enableDeleteRow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables excel navigation style. When turned on, the arrow keys can be used for changing the currently edited cell similar to how Tab and Enter behave. When disabled, the arrow keys control the cursor inside editors.
     *
     */
-  var excelNavigationMode: js.UndefOr[Boolean] = js.native
+  var excelNavigationMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event fired before editing starts for adding a new row, when Updating generates an automatic primary key for it.
     */
-  var generatePrimaryKeyValue: js.UndefOr[GeneratePrimaryKeyValueEvent] = js.native
+  var generatePrimaryKeyValue: js.UndefOr[GeneratePrimaryKeyValueEvent] = js.undefined
   
   /**
     * Determines if pressing Enter to navigate away from the currently edited cell should move the focus horizontally or vertically (default).
     *
     */
-  var horizontalMoveOnEnter: js.UndefOr[Boolean] = js.native
+  var horizontalMoveOnEnter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[IgTreeGridUpdatingLocale] = js.native
+  var locale: js.UndefOr[IgTreeGridUpdatingLocale] = js.undefined
   
   /**
     * Event fired after adding a new row.
     */
-  var rowAdded: js.UndefOr[RowAddedEvent] = js.native
+  var rowAdded: js.UndefOr[RowAddedEvent] = js.undefined
   
   /**
     * Event fired before adding a new row.
     * Return false in order to cancel the adding of the new row to the data source.
     */
-  var rowAdding: js.UndefOr[RowAddingEvent] = js.native
+  var rowAdding: js.UndefOr[RowAddingEvent] = js.undefined
   
   /**
     * Event fired after a row is deleted.
     */
-  var rowDeleted: js.UndefOr[RowDeletedEvent] = js.native
+  var rowDeleted: js.UndefOr[RowDeletedEvent] = js.undefined
   
   /**
     * Event fired before deleting a row.
     * Return false in order to cancel the row's deletion.
     */
-  var rowDeleting: js.UndefOr[RowDeletingEvent] = js.native
+  var rowDeleting: js.UndefOr[RowDeletingEvent] = js.undefined
   
   /**
     * Event fired after the row edit dialog is closed.
     */
-  var rowEditDialogAfterClose: js.UndefOr[RowEditDialogAfterCloseEvent] = js.native
+  var rowEditDialogAfterClose: js.UndefOr[RowEditDialogAfterCloseEvent] = js.undefined
   
   /**
     * Event fired after the row edit dialog is opened.
     */
-  var rowEditDialogAfterOpen: js.UndefOr[RowEditDialogAfterOpenEvent] = js.native
+  var rowEditDialogAfterOpen: js.UndefOr[RowEditDialogAfterOpenEvent] = js.undefined
   
   /**
     * Event fired before the row edit dialog is closed.
     */
-  var rowEditDialogBeforeClose: js.UndefOr[RowEditDialogBeforeCloseEvent] = js.native
+  var rowEditDialogBeforeClose: js.UndefOr[RowEditDialogBeforeCloseEvent] = js.undefined
   
   /**
     * Event fired before the row edit dialog is opened.
     */
-  var rowEditDialogBeforeOpen: js.UndefOr[RowEditDialogBeforeOpenEvent] = js.native
+  var rowEditDialogBeforeOpen: js.UndefOr[RowEditDialogBeforeOpenEvent] = js.undefined
   
   /**
     * Event fired after the row edit dialog is rendered.
     */
-  var rowEditDialogContentsRendered: js.UndefOr[RowEditDialogContentsRenderedEvent] = js.native
+  var rowEditDialogContentsRendered: js.UndefOr[RowEditDialogContentsRenderedEvent] = js.undefined
   
   /**
     * A list of options controlling the rendering behavior of the row edit dialog. If [editMode](ui.iggridupdating#options:editMode) is not 'dialog' these have no effect.
     *
     */
-  var rowEditDialogOptions: js.UndefOr[IgGridUpdatingRowEditDialogOptions] = js.native
+  var rowEditDialogOptions: js.UndefOr[IgGridUpdatingRowEditDialogOptions] = js.undefined
   
   /**
     * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
     *
     */
-  var saveChangesErrorHandler: js.UndefOr[js.Function | String] = js.native
+  var saveChangesErrorHandler: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
     *
     */
-  var saveChangesSuccessHandler: js.UndefOr[js.Function | String] = js.native
+  var saveChangesSuccessHandler: js.UndefOr[js.Function | String] = js.undefined
   
   /**
     * Determines if the Done and Cancel buttons will be available as means to end edit mode for [editMode](ui.iggridupdating#options:editMode) 'row' and when adding a new row.
     *
     */
-  var showDoneCancelButtons: js.UndefOr[Boolean] = js.native
+  var showDoneCancelButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
     *
     */
-  var startEditTriggers: js.UndefOr[String | js.Array[_]] = js.native
+  var startEditTriggers: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
   /**
     * On touch-enabled devices specifies the swipe distance for the delete button to appear.
     *
     */
-  var swipeDistance: js.UndefOr[String | Double] = js.native
+  var swipeDistance: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Specifies if the value of each editable column in the grid should be validated. The validation is done based on the rules of their corresponding editors.
     *
     */
-  var validation: js.UndefOr[Boolean] = js.native
+  var validation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if navigation will wrap around the grid. The feature will never wrap around virtual grids.
     *
     */
-  var wrapAround: js.UndefOr[Boolean] = js.native
+  var wrapAround: js.UndefOr[Boolean] = js.undefined
 }
 object IgTreeGridUpdating {
   
@@ -578,7 +577,7 @@ object IgTreeGridUpdating {
     def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
     
     @scala.inline
-    def setStartEditTriggers(value: String | js.Array[_]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
+    def setStartEditTriggers(value: String | js.Array[js.Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStartEditTriggersUndefined: Self = StObject.set(x, "startEditTriggers", js.undefined)

@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ArgumentPlaceholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `232` extends StObject {
   
-  var `type`: ArgumentPlaceholder = js.native
+  var `type`: ArgumentPlaceholder
 }
 object `232` {
   
   @scala.inline
-  def apply(`type`: ArgumentPlaceholder): `232` = {
+  def apply(): `232` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArgumentPlaceholder")
     __obj.asInstanceOf[`232`]
   }
   

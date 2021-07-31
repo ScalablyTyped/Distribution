@@ -3,28 +3,26 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagebuilder {
   
-  @js.native
   trait DistributionConfigurationDistribution extends StObject {
     
     /**
       * Configuration block with Amazon Machine Image (AMI) distribution settings. Detailed below.
       */
-    var amiDistributionConfiguration: js.UndefOr[DistributionConfigurationDistributionAmiDistributionConfiguration] = js.native
+    var amiDistributionConfiguration: js.UndefOr[DistributionConfigurationDistributionAmiDistributionConfiguration] = js.undefined
     
     /**
       * Set of Amazon Resource Names (ARNs) of License Manager License Configurations.
       */
-    var licenseConfigurationArns: js.UndefOr[js.Array[String]] = js.native
+    var licenseConfigurationArns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * AWS Region for the distribution.
       */
-    var region: String = js.native
+    var region: String
   }
   object DistributionConfigurationDistribution {
     
@@ -57,40 +55,39 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait DistributionConfigurationDistributionAmiDistributionConfiguration extends StObject {
     
     /**
       * Key-value map of tags to apply to the distributed AMI.
       */
-    var amiTags: js.UndefOr[StringDictionary[String]] = js.native
+    var amiTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Description to apply to the distributed AMI.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the Key Management Service (KMS) Key to encrypt the distributed AMI.
       */
-    var kmsKeyId: js.UndefOr[String] = js.native
+    var kmsKeyId: js.UndefOr[String] = js.undefined
     
     /**
       * Configuration block of EC2 launch permissions to apply to the distributed AMI. Detailed below.
       */
     var launchPermission: js.UndefOr[
         DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name to apply to the distributed AMI.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Set of AWS Account identifiers to distribute the AMI.
       */
-    var targetAccountIds: js.UndefOr[js.Array[String]] = js.native
+    var targetAccountIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DistributionConfigurationDistributionAmiDistributionConfiguration {
     
@@ -144,18 +141,17 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends StObject {
     
     /**
       * Set of EC2 launch permission user groups to assign. Use `all` to distribute a public AMI.
       */
-    var userGroups: js.UndefOr[js.Array[String]] = js.native
+    var userGroups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Set of AWS Account identifiers to assign.
       */
-    var userIds: js.UndefOr[js.Array[String]] = js.native
+    var userIds: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
     
@@ -188,23 +184,22 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait GetDistributionConfigurationDistribution extends StObject {
     
     /**
       * Nested list of AMI distribution configuration.
       */
-    var amiDistributionConfigurations: js.Array[GetDistributionConfigurationDistributionAmiDistributionConfiguration] = js.native
+    var amiDistributionConfigurations: js.Array[GetDistributionConfigurationDistributionAmiDistributionConfiguration]
     
     /**
       * Set of Amazon Resource Names (ARNs) of License Manager License Configurations.
       */
-    var licenseConfigurationArns: js.Array[String] = js.native
+    var licenseConfigurationArns: js.Array[String]
     
     /**
       * AWS Region of distribution.
       */
-    var region: String = js.native
+    var region: String
   }
   object GetDistributionConfigurationDistribution {
     
@@ -238,40 +233,39 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait GetDistributionConfigurationDistributionAmiDistributionConfiguration extends StObject {
     
     /**
       * Key-value map of tags to apply to distributed AMI.
       */
-    var amiTags: StringDictionary[String] = js.native
+    var amiTags: StringDictionary[String]
     
     /**
       * Description to apply to distributed AMI.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Amazon Resource Name (ARN) of Key Management Service (KMS) Key to encrypt AMI.
       */
-    var kmsKeyId: String = js.native
+    var kmsKeyId: String
     
     /**
       * Nested list of EC2 launch permissions.
       */
     var launchPermissions: js.Array[
         GetDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission
-      ] = js.native
+      ]
     
     /**
       * Name of the distribution configuration.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Set of target AWS Account identifiers.
       */
-    var targetAccountIds: js.Array[String] = js.native
+    var targetAccountIds: js.Array[String]
   }
   object GetDistributionConfigurationDistributionAmiDistributionConfiguration {
     
@@ -323,18 +317,17 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait GetDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission extends StObject {
     
     /**
       * Set of EC2 launch permission user groups.
       */
-    var userGroups: js.Array[String] = js.native
+    var userGroups: js.Array[String]
     
     /**
       * Set of AWS Account identifiers.
       */
-    var userIds: js.Array[String] = js.native
+    var userIds: js.Array[String]
   }
   object GetDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission {
     
@@ -361,13 +354,12 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait GetInfrastructureConfigurationLogging extends StObject {
     
     /**
       * Nested list of S3 logs settings.
       */
-    var s3Logs: js.Array[GetInfrastructureConfigurationLoggingS3Log] = js.native
+    var s3Logs: js.Array[GetInfrastructureConfigurationLoggingS3Log]
   }
   object GetInfrastructureConfigurationLogging {
     
@@ -388,18 +380,17 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait GetInfrastructureConfigurationLoggingS3Log extends StObject {
     
     /**
       * Name of the S3 Bucket for logging.
       */
-    var s3BucketName: String = js.native
+    var s3BucketName: String
     
     /**
       * Key prefix for S3 Bucket logging.
       */
-    var s3KeyPrefix: String = js.native
+    var s3KeyPrefix: String
   }
   object GetInfrastructureConfigurationLoggingS3Log {
     
@@ -420,13 +411,12 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait InfrastructureConfigurationLogging extends StObject {
     
     /**
       * Configuration block with S3 logging settings. Detailed below.
       */
-    var s3Logs: InfrastructureConfigurationLoggingS3Logs = js.native
+    var s3Logs: InfrastructureConfigurationLoggingS3Logs
   }
   object InfrastructureConfigurationLogging {
     
@@ -444,18 +434,17 @@ object imagebuilder {
     }
   }
   
-  @js.native
   trait InfrastructureConfigurationLoggingS3Logs extends StObject {
     
     /**
       * Name of the S3 Bucket.
       */
-    var s3BucketName: String = js.native
+    var s3BucketName: String
     
     /**
       * Prefix to use for S3 logs. Defaults to `/`.
       */
-    var s3KeyPrefix: js.UndefOr[String] = js.native
+    var s3KeyPrefix: js.UndefOr[String] = js.undefined
   }
   object InfrastructureConfigurationLoggingS3Logs {
     

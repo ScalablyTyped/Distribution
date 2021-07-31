@@ -4,32 +4,27 @@ import typings.dashjs.dashjsStrings.fragmentLoadingCompleted
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FragmentLoadingCompletedEvent extends Event {
+trait FragmentLoadingCompletedEvent
+  extends StObject
+     with Event {
   
-  var request: FragmentRequest = js.native
+  var request: FragmentRequest
   
-  var response: ArrayBuffer = js.native
+  var response: ArrayBuffer
   
-  var sender: js.Object = js.native
+  var sender: js.Object
   
   @JSName("type")
-  var type_FragmentLoadingCompletedEvent: fragmentLoadingCompleted = js.native
+  var type_FragmentLoadingCompletedEvent: fragmentLoadingCompleted
 }
 object FragmentLoadingCompletedEvent {
   
   @scala.inline
-  def apply(
-    request: FragmentRequest,
-    response: ArrayBuffer,
-    sender: js.Object,
-    `type`: fragmentLoadingCompleted
-  ): FragmentLoadingCompletedEvent = {
+  def apply(request: FragmentRequest, response: ArrayBuffer, sender: js.Object): FragmentLoadingCompletedEvent = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fragmentLoadingCompleted")
     __obj.asInstanceOf[FragmentLoadingCompletedEvent]
   }
   

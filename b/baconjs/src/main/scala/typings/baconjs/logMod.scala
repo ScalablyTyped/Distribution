@@ -2,12 +2,14 @@ package typings.baconjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logMod {
   
-  @JSImport("baconjs/types/log", JSImport.Default)
+  @JSImport("baconjs/types/log", JSImport.Namespace)
   @js.native
-  def default(args: js.Array[_], src: typings.baconjs.observableMod.default[_]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(args: js.Array[js.Any], src: typings.baconjs.observableMod.default[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

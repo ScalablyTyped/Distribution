@@ -16,16 +16,14 @@ import typings.std.HTMLHRElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolBarMod {
   
-  @js.native
   trait ButtonOptions extends StObject {
     
     /** (optional) Color of the button's background */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /** (mandatory)
       * The callback must be either:
@@ -54,7 +52,7 @@ object toolBarMod {
       * data: 'foo'
       * ```
       */
-    var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String]) = js.native
+    var callback: String | js.Array[String] | (js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | (StringDictionary[(js.Function1[/* data */ js.UndefOr[js.Any], Unit]) | String])
     
     /** Buttons can be styled with arbitrary CSS through classes.
       * An example of how the class can be used is show below.
@@ -69,17 +67,17 @@ object toolBarMod {
       * class: ['multiple', 'classes', 'also', 'works']
       * ```
       */
-    var `class`: js.UndefOr[String | js.Array[String]] = js.native
+    var `class`: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** (optional) Color of the button */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** `data` can be passed as the input argument of callback,  If callback is of type
       * - `(data: any) => void)` or
       * - `{ [modifier: string]: ((data: any) => void) }`,
       *
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** (optional)
       * if set to `true`, `text` will be rendered as HTML
@@ -89,7 +87,7 @@ object toolBarMod {
       * html: true,
       * ```
       */
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
     /** (optional)
       *  icon name
@@ -98,7 +96,7 @@ object toolBarMod {
       * icon: 'octoface',
       * ```
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** (optional)
       * icon set name.
@@ -117,10 +115,10 @@ object toolBarMod {
       *     iconset: 'ion'
       * ```
       */
-    var iconset: js.UndefOr[ion | fa | fab | fi | icomoon | devicon | mdi] = js.native
+    var iconset: js.UndefOr[ion | fa | fab | fi | icomoon | devicon | mdi] = js.undefined
     
     /** (optional) defaults to `50` */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** (optional)
       * You can use `text` to:
@@ -138,12 +136,12 @@ object toolBarMod {
       * html: true,
       * ```
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** (optional)
       * The tooltip option may be a string or an object that is passed to Atom's TooltipManager
       */
-    var tooltip: js.UndefOr[String | Item | Class] = js.native
+    var tooltip: js.UndefOr[String | Item | Class] = js.undefined
   }
   object ButtonOptions {
     
@@ -234,11 +232,10 @@ object toolBarMod {
     }
   }
   
-  @js.native
   trait SpacerOptions extends StObject {
     
     /** (optional) defaults to `50` */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object SpacerOptions {
     
@@ -259,34 +256,33 @@ object toolBarMod {
     }
   }
   
-  @js.native
   trait ToolBarButtonView extends StObject {
     
-    def _onClick(event: MouseEvent): Unit = js.native
+    def _onClick(event: MouseEvent): Unit
     
-    def _onMouseDown(event: MouseEvent): Unit = js.native
+    def _onMouseDown(event: MouseEvent): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var element: HTMLButtonElement = js.native
+    var element: HTMLButtonElement
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    def executeCallback(event: MouseEvent): Unit = js.native
+    def executeCallback(event: MouseEvent): Unit
     
-    def getSelected(): Boolean = js.native
+    def getSelected(): Boolean
     
-    var group: String = js.native
+    var group: String
     
-    var options: ButtonOptions = js.native
+    var options: ButtonOptions
     
-    var priority: Double = js.native
+    var priority: Double
     
-    def setEnabled(enabled: Boolean): Unit = js.native
+    def setEnabled(enabled: Boolean): Unit
     
-    def setSelected(selected: Boolean): Unit = js.native
+    def setSelected(selected: Boolean): Unit
     
-    var subscriptions: Disposable = js.native
+    var subscriptions: Disposable
   }
   object ToolBarButtonView {
     
@@ -373,16 +369,15 @@ object toolBarMod {
     def removeItems(): Unit = js.native
   }
   
-  @js.native
   trait ToolBarSpacerView extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var element: HTMLHRElement = js.native
+    var element: HTMLHRElement
     
-    var group: String = js.native
+    var group: String
     
-    var priority: Double = js.native
+    var priority: Double
   }
   object ToolBarSpacerView {
     

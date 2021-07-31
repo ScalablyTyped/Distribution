@@ -2,17 +2,15 @@ package typings.summernote.mod.global.Summernote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLinkOptions extends StObject {
   
-  var newWindow: Boolean = js.native
+  var newWindow: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var url: String = js.native
+  var url: String
 }
 object CreateLinkOptions {
   

@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LetterSpacingProps[TLength] extends StObject {
   
   val letterSpacing: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object LetterSpacingProps {
   
@@ -23,12 +21,12 @@ object LetterSpacingProps {
   }
   
   @scala.inline
-  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[_], TLength] (val x: Self with LetterSpacingProps[TLength]) extends AnyVal {
+  implicit class LetterSpacingPropsMutableBuilder[Self <: LetterSpacingProps[?], TLength] (val x: Self & LetterSpacingProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setLetterSpacing(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object LetterSpacingProps {
     def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
     @scala.inline
-    def setLetterSpacingVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
+    def setLetterSpacingVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "letterSpacing", js.Array(value :_*))
   }
 }

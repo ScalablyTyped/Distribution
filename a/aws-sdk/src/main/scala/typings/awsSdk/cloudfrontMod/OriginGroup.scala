@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginGroup extends StObject {
   
   /**
     * A complex type that contains information about the failover criteria for an origin group.
     */
-  var FailoverCriteria: OriginGroupFailoverCriteria = js.native
+  var FailoverCriteria: OriginGroupFailoverCriteria
   
   /**
     * The origin group's ID.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * A complex type that contains information about the origins in an origin group.
     */
-  var Members: OriginGroupMembers = js.native
+  var Members: OriginGroupMembers
 }
 object OriginGroup {
   

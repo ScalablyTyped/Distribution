@@ -2,17 +2,15 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FocusVisibleCheckTime extends StObject {
   
-  var focusVisibleCheckTime: Double = js.native
+  var focusVisibleCheckTime: Double
   
-  var focusVisibleMaxCheckTimes: Double = js.native
+  var focusVisibleMaxCheckTimes: Double
   
-  var focusVisibleTimeout: js.Any = js.native
+  var focusVisibleTimeout: js.Any
 }
 object FocusVisibleCheckTime {
   

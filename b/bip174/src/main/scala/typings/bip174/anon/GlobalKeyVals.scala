@@ -3,17 +3,15 @@ package typings.bip174.anon
 import typings.bip174.interfacesMod.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalKeyVals extends StObject {
   
-  var globalKeyVals: js.Array[KeyValue] = js.native
+  var globalKeyVals: js.Array[KeyValue]
   
-  var inputKeyVals: js.Array[js.Array[KeyValue]] = js.native
+  var inputKeyVals: js.Array[js.Array[KeyValue]]
   
-  var outputKeyVals: js.Array[js.Array[KeyValue]] = js.native
+  var outputKeyVals: js.Array[js.Array[KeyValue]]
 }
 object GlobalKeyVals {
   

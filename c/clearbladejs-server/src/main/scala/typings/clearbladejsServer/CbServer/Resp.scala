@@ -2,15 +2,13 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resp extends StObject {
   
-  def error(msg: js.Any): scala.Nothing = js.native
+  def error(msg: js.Any): scala.Nothing
   
-  def success(msg: js.Any): scala.Nothing = js.native
+  def success(msg: js.Any): scala.Nothing
 }
 object Resp {
   

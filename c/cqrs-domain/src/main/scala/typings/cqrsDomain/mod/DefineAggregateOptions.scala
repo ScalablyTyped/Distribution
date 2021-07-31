@@ -2,56 +2,54 @@ package typings.cqrsDomain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineAggregate
-@js.native
 trait DefineAggregateOptions extends StObject {
   
   /**
     * optional, default false
     * only optionally needed when skipHistory is set to true, only the last event will be loaded and applyed
     */
-  var applyLastEvent: js.UndefOr[Boolean] = js.native
+  var applyLastEvent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * optional, default ''
     */
-  var defaultCommandPayload: js.UndefOr[String] = js.native
+  var defaultCommandPayload: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default ''
     */
-  var defaultEventPayload: js.UndefOr[String] = js.native
+  var defaultEventPayload: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default ''
     */
-  var defaultPreConditionPayload: js.UndefOr[String] = js.native
+  var defaultPreConditionPayload: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default false
     * will publish the events but will not commit them to the eventstore
     */
-  var disablePersistence: js.UndefOr[Boolean] = js.native
+  var disablePersistence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * optional, default is last part of path name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * optional, default false
     * by skipping the history, only the last event will be loaded and defaultly not applyed (just to ensure the revision number increment)
     */
-  var skipHistory: js.UndefOr[Boolean] = js.native
+  var skipHistory: js.UndefOr[Boolean] = js.undefined
   
   /**
     * optional, default 0
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DefineAggregateOptions {
   

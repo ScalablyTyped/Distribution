@@ -5,41 +5,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceRegiondisksCreatesnapshot extends StandardParameters {
+trait ParamsResourceRegiondisksCreatesnapshot
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the regional persistent disk to snapshot.
     */
-  var disk: js.UndefOr[String] = js.native
+  var disk: js.UndefOr[String] = js.undefined
   
   /**
     *
     */
-  var guestFlush: js.UndefOr[Boolean] = js.native
+  var guestFlush: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region for this request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSnapshot] = js.native
+  var requestBody: js.UndefOr[SchemaSnapshot] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -53,7 +53,7 @@ trait ParamsResourceRegiondisksCreatesnapshot extends StandardParameters {
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceRegiondisksCreatesnapshot {
   

@@ -12,7 +12,7 @@ A web shim to handle clipboard APIs across browsers using a simple Promise API.
 | Keywords           | clipboard, HTML5, copy, copying, cut, paste, execCommand, setData, getData |
 | # releases         | 0 |
 | # dependents       | 18 |
-| # downloads        | 926521 |
+| # downloads        | 847408 |
 | # stars            | 11 |
 
 ## Links

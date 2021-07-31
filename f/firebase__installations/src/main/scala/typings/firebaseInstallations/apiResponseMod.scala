@@ -2,19 +2,17 @@ package typings.firebaseInstallations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiResponseMod {
   
-  @js.native
   trait CreateInstallationResponse extends StObject {
     
-    val authToken: GenerateAuthTokenResponse = js.native
+    val authToken: GenerateAuthTokenResponse
     
-    val fid: js.UndefOr[String] = js.native
+    val fid: js.UndefOr[String] = js.undefined
     
-    val refreshToken: String = js.native
+    val refreshToken: String
   }
   object CreateInstallationResponse {
     
@@ -41,7 +39,6 @@ object apiResponseMod {
     }
   }
   
-  @js.native
   trait GenerateAuthTokenResponse extends StObject {
     
     /**
@@ -50,9 +47,9 @@ object apiResponseMod {
       *
       * Example: "604800s".
       */
-    val expiresIn: String = js.native
+    val expiresIn: String
     
-    val token: String = js.native
+    val token: String
   }
   object GenerateAuthTokenResponse {
     

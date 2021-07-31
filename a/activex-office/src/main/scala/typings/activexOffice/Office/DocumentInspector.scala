@@ -2,28 +2,26 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentInspector extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Description: String = js.native
+  val Description: String
   
-  def Fix(Status: MsoDocInspectorStatus, Results: String): Unit = js.native
+  def Fix(Status: MsoDocInspectorStatus, Results: String): Unit
   
-  def Inspect(Status: MsoDocInspectorStatus, Results: String): Unit = js.native
+  def Inspect(Status: MsoDocInspectorStatus, Results: String): Unit
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.DocumentInspector_typekey")
-  var OfficeDotDocumentInspector_typekey: DocumentInspector = js.native
+  var OfficeDotDocumentInspector_typekey: DocumentInspector
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object DocumentInspector {
   

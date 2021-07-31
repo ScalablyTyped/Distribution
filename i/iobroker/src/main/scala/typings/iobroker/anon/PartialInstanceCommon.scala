@@ -5,41 +5,42 @@ import typings.iobroker.objectsMod.global.ioBroker.InstanceMode
 import typings.iobroker.objectsMod.global.ioBroker.StringOrTranslated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.InstanceCommon> */
-@js.native
 trait PartialInstanceCommon extends StObject {
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[InstanceMode] = js.native
+  var mode: js.UndefOr[InstanceMode] = js.undefined
   
-  var name: js.UndefOr[StringOrTranslated] = js.native
+  var name: js.UndefOr[StringOrTranslated] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object PartialInstanceCommon {
   
   @scala.inline
-  def apply(): PartialInstanceCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialInstanceCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialInstanceCommon]
   }
   
   @scala.inline
   implicit class PartialInstanceCommonMutableBuilder[Self <: PartialInstanceCommon] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])

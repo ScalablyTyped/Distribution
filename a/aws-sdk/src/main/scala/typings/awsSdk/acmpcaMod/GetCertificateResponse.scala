@@ -2,21 +2,19 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificateResponse extends StObject {
   
   /**
     * The base64 PEM-encoded certificate specified by the CertificateArn parameter.
     */
-  var Certificate: js.UndefOr[CertificateBody] = js.native
+  var Certificate: js.UndefOr[CertificateBody] = js.undefined
   
   /**
     * The base64 PEM-encoded certificate chain that chains up to the on-premises root CA certificate that you used to sign your private CA certificate. 
     */
-  var CertificateChain: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateChain] = js.native
+  var CertificateChain: js.UndefOr[typings.awsSdk.acmpcaMod.CertificateChain] = js.undefined
 }
 object GetCertificateResponse {
   

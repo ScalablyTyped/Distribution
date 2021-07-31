@@ -12,7 +12,7 @@ Converts human readable expression to a cron string
 | Keywords           | cron, human, crontab |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 43432 |
+| # downloads        | 47334 |
 | # stars            | 6 |
 
 ## Links

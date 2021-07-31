@@ -3,20 +3,20 @@ package typings.plottable
 import typings.plottable.interfacesMod.SimpleSelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorUtilsMod {
   
-  @JSImport("plottable/build/src/utils/colorUtils", "colorTest")
+  @JSImport("plottable/build/src/utils/colorUtils", JSImport.Namespace)
   @js.native
-  def colorTest(colorTester: SimpleSelection[_], className: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("plottable/build/src/utils/colorUtils", "contrast")
-  @js.native
-  def contrast(a: String, b: String): Double = js.native
+  @scala.inline
+  def colorTest(colorTester: SimpleSelection[js.Any], className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorTest")(colorTester.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("plottable/build/src/utils/colorUtils", "lightenColor")
-  @js.native
-  def lightenColor(color: String, factor: Double): String = js.native
+  @scala.inline
+  def contrast(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrast")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def lightenColor(color: String, factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lightenColor")(color.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[String]
 }

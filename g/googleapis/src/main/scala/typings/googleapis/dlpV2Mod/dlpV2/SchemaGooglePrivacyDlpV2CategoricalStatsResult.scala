@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of the categorical stats computation.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CategoricalStatsResult extends StObject {
   
   /**
     * Histogram of value frequencies in the column.
     */
-  var valueFrequencyHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]] = js.native
+  var valueFrequencyHistogramBuckets: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2CategoricalStatsHistogramBucket]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CategoricalStatsResult {
   

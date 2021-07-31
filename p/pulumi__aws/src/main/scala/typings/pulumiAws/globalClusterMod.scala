@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalClusterMod {
@@ -76,6 +75,10 @@ object globalClusterMod {
   /* static members */
   object GlobalCluster {
     
+    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GlobalCluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -85,62 +88,56 @@ object globalClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GlobalCluster = js.native
-    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GlobalCluster = js.native
-    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalClusterState): GlobalCluster = js.native
-    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalClusterState, opts: CustomResourceOptions): GlobalCluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GlobalCluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GlobalCluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GlobalCluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GlobalCluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalClusterState): GlobalCluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GlobalCluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalClusterState, opts: CustomResourceOptions): GlobalCluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GlobalCluster]
     
     /**
       * Returns true if the given object is an instance of GlobalCluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/globalCluster.GlobalCluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/globalCluster.GlobalCluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/globalCluster.GlobalCluster */ Boolean]
   }
   
-  @js.native
   trait GlobalClusterArgs extends StObject {
     
     /**
       * Name for an automatically created database on cluster creation.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
       */
-    val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Engine version of the Aurora global database.
       * * **NOTE:** When the engine is set to `aurora-mysql`, an engine version compatible with global database is required. The earliest available version is `5.7.mysql_aurora.2.06.0`.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enable to remove DB Cluster members from Global Cluster on destroy. Required with `sourceDbClusterIdentifier`.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The global cluster identifier.
       */
-    val globalClusterIdentifier: Input[String] = js.native
+    val globalClusterIdentifier: Input[String]
     
-    val sourceDbClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val sourceDbClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
-    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GlobalClusterArgs {
     
@@ -200,57 +197,56 @@ object globalClusterMod {
     }
   }
   
-  @js.native
   trait GlobalClusterState extends StObject {
     
     /**
       * RDS Global Cluster Amazon Resource Name (ARN)
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name for an automatically created database on cluster creation.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If the Global Cluster should have deletion protection enabled. The database can't be deleted when this value is set to `true`. The default is `false`.
       */
-    val deletionProtection: js.UndefOr[Input[Boolean]] = js.native
+    val deletionProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val engine: js.UndefOr[Input[String]] = js.native
+    val engine: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Engine version of the Aurora global database.
       * * **NOTE:** When the engine is set to `aurora-mysql`, an engine version compatible with global database is required. The earliest available version is `5.7.mysql_aurora.2.06.0`.
       */
-    val engineVersion: js.UndefOr[Input[String]] = js.native
+    val engineVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enable to remove DB Cluster members from Global Cluster on destroy. Required with `sourceDbClusterIdentifier`.
       */
-    val forceDestroy: js.UndefOr[Input[Boolean]] = js.native
+    val forceDestroy: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The global cluster identifier.
       */
-    val globalClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val globalClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of objects containing Global Cluster members.
       */
     val globalClusterMembers: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.rds.GlobalClusterGlobalClusterMember]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * AWS Region-unique, immutable identifier for the global database cluster. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB cluster is accessed
       */
-    val globalClusterResourceId: js.UndefOr[Input[String]] = js.native
+    val globalClusterResourceId: js.UndefOr[Input[String]] = js.undefined
     
-    val sourceDbClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val sourceDbClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
-    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.native
+    val storageEncrypted: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GlobalClusterState {
     

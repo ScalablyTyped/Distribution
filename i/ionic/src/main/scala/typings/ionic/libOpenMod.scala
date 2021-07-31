@@ -2,24 +2,24 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libOpenMod {
   
-  @JSImport("ionic/lib/open", "openUrl")
+  @JSImport("ionic/lib/open", JSImport.Namespace)
   @js.native
-  def openUrl(target: String): js.Promise[Unit] = js.native
-  @JSImport("ionic/lib/open", "openUrl")
-  @js.native
-  def openUrl(target: String, hasAppEncode: OpenUrlOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def openUrl(target: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def openUrl(target: String, hasAppUrl: OpenUrlOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openUrl")(target.asInstanceOf[js.Any], hasAppUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait OpenUrlOptions extends StObject {
     
-    var app: js.UndefOr[String | js.Array[String]] = js.native
+    var app: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var encode: js.UndefOr[Boolean] = js.native
+    var encode: js.UndefOr[Boolean] = js.undefined
   }
   object OpenUrlOptions {
     

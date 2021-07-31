@@ -2,51 +2,49 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSnapshotRecordSourceInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source instance or disk snapshot.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date when the source instance or disk snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * A list of objects describing a disk snapshot.
     */
-  var diskSnapshotInfo: js.UndefOr[DiskSnapshotInfo] = js.native
+  var diskSnapshotInfo: js.UndefOr[DiskSnapshotInfo] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the snapshot's source instance or disk.
     */
-  var fromResourceArn: js.UndefOr[NonEmptyString] = js.native
+  var fromResourceArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the snapshot's source instance or disk.
     */
-  var fromResourceName: js.UndefOr[NonEmptyString] = js.native
+  var fromResourceName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A list of objects describing an instance snapshot.
     */
-  var instanceSnapshotInfo: js.UndefOr[InstanceSnapshotInfo] = js.native
+  var instanceSnapshotInfo: js.UndefOr[InstanceSnapshotInfo] = js.undefined
   
   /**
     * The name of the source instance or disk snapshot.
     */
-  var name: js.UndefOr[NonEmptyString] = js.native
+  var name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., InstanceSnapshot or DiskSnapshot).
     */
-  var resourceType: js.UndefOr[ExportSnapshotRecordSourceType] = js.native
+  var resourceType: js.UndefOr[ExportSnapshotRecordSourceType] = js.undefined
 }
 object ExportSnapshotRecordSourceInfo {
   

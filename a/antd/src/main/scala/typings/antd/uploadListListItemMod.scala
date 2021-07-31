@@ -16,14 +16,13 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadListListItemMod extends Shortcut {
   
   @JSImport("antd/lib/upload/UploadList/ListItem", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLDivElement]] = js.native
   
   @js.native
   trait ListItemProps extends StObject {
@@ -33,33 +32,33 @@ object uploadListListItemMod extends Shortcut {
     
     var className: js.UndefOr[String] = js.native
     
-    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var downloadIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.native
     
-    var file: UploadFile[_] = js.native
+    var file: UploadFile[js.Any] = js.native
     
-    def iconRender(file: UploadFile[_]): ReactNode = js.native
+    def iconRender(file: UploadFile[js.Any]): ReactNode = js.native
     
-    var isImgUrl: js.UndefOr[js.Function1[/* file */ UploadFile[_], Boolean]] = js.native
+    var isImgUrl: js.UndefOr[js.Function1[/* file */ UploadFile[js.Any], Boolean]] = js.native
     
-    var itemRender: js.UndefOr[ItemRender[_]] = js.native
+    var itemRender: js.UndefOr[ItemRender[js.Any]] = js.native
     
-    var items: js.Array[UploadFile[_]] = js.native
+    var items: js.Array[UploadFile[js.Any]] = js.native
     
     var listType: js.UndefOr[UploadListType] = js.native
     
     var locale: UploadLocale = js.native
     
-    def onClose(file: UploadFile[_]): Unit = js.native
+    def onClose(file: UploadFile[js.Any]): Unit = js.native
     
-    def onDownload(file: UploadFile[_]): Unit = js.native
+    def onDownload(file: UploadFile[js.Any]): Unit = js.native
     
-    def onPreview(file: UploadFile[_], e: SyntheticEvent[HTMLElement, Event]): Unit = js.native
+    def onPreview(file: UploadFile[js.Any], e: SyntheticEvent[HTMLElement, Event]): Unit = js.native
     
     var prefixCls: String = js.native
     
     var progress: js.UndefOr[UploadListProgressProps] = js.native
     
-    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[_], ReactNode])] = js.native
+    var removeIcon: js.UndefOr[ReactNode | (js.Function1[/* file */ UploadFile[js.Any], ReactNode])] = js.native
     
     var showDownloadIcon: js.UndefOr[Boolean] = js.native
     
@@ -70,8 +69,8 @@ object uploadListListItemMod extends Shortcut {
     var style: js.UndefOr[CSSProperties] = js.native
   }
   
-  type _To = ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `uploadListListItemMod.foo` */
-  override def _to: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLDivElement]] = default
 }

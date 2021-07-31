@@ -4,11 +4,11 @@ import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTask
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebSocketKeepAlive extends IBackgroundTask
+trait WebSocketKeepAlive
+  extends StObject
+     with IBackgroundTask
 object WebSocketKeepAlive {
   
   @scala.inline

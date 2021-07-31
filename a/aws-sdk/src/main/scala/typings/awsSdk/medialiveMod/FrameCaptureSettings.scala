@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameCaptureSettings extends StObject {
   
   /**
     * The frequency at which to capture frames for inclusion in the output. May be specified in either seconds or milliseconds, as specified by captureIntervalUnits.
     */
-  var CaptureInterval: integerMin1Max3600000 = js.native
+  var CaptureInterval: integerMin1Max3600000
   
   /**
     * Unit for the frame capture interval.
     */
-  var CaptureIntervalUnits: js.UndefOr[FrameCaptureIntervalUnit] = js.native
+  var CaptureIntervalUnits: js.UndefOr[FrameCaptureIntervalUnit] = js.undefined
 }
 object FrameCaptureSettings {
   

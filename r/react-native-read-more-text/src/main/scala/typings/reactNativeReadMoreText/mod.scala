@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,18 +15,17 @@ object mod {
   
   type ReadMore = Component[ReadMoreProps, js.Object, js.Any]
   
-  @js.native
   trait ReadMoreProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var numberOfLines: Double = js.native
+    var numberOfLines: Double
     
-    var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def renderRevealedFooter(onPress: js.Function0[Unit]): ReactNode = js.native
+    def renderRevealedFooter(onPress: js.Function0[Unit]): ReactNode
     
-    def renderTruncatedFooter(onPress: js.Function0[Unit]): ReactNode = js.native
+    def renderTruncatedFooter(onPress: js.Function0[Unit]): ReactNode
   }
   object ReadMoreProps {
     

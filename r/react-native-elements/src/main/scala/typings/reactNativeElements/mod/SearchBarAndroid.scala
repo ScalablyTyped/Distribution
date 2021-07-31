@@ -2,16 +2,16 @@ package typings.reactNativeElements.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBarAndroid extends SearchBarPlatform {
+trait SearchBarAndroid
+  extends StObject
+     with SearchBarPlatform {
   
   /**
     * Override the cancel Icon props or use a custom component. Use null or false to hide the icon.
     */
-  var cancelIcon: js.UndefOr[IconNode] = js.native
+  var cancelIcon: js.UndefOr[IconNode] = js.undefined
 }
 object SearchBarAndroid {
   

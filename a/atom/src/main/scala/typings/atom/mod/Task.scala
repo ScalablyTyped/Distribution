@@ -2,7 +2,6 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Task")
@@ -26,7 +25,7 @@ class Task protected () extends StObject {
   // tslint:disable-next-line:no-any
   def send(): Unit = js.native
   def send(message: String): Unit = js.native
-  def send(message: js.Array[_]): Unit = js.native
+  def send(message: js.Array[js.Any]): Unit = js.native
   def send(message: js.Object): Unit = js.native
   def send(message: Boolean): Unit = js.native
   def send(message: Double): Unit = js.native
@@ -51,12 +50,15 @@ class Task protected () extends StObject {
 /* static members */
 object Task {
   
+  @JSImport("atom", "Task")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // NOTE: this is actually the best we can do here with the REST parameter for
   // this appearing in the middle of the parameter list, which isn't aligned with
   // the ES6 spec. Maybe when they rewrite it in JavaScript this will change.
   /** A helper method to easily launch and run a task once. */
   // tslint:disable-next-line:no-any
-  @JSImport("atom", "Task.once")
-  @js.native
-  def once(taskPath: String, args: js.Any*): Task = js.native
+  @scala.inline
+  def once(taskPath: String, args: js.Any*): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(taskPath.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Task]
 }

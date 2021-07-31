@@ -2,20 +2,20 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReaderInlineFragment extends ReaderSelection {
+trait ReaderInlineFragment
+  extends StObject
+     with ReaderSelection {
   
-  val abstractKey: js.UndefOr[String | Null] = js.native
+  val abstractKey: js.UndefOr[String | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
   // 'InlineFragment';
-  val selections: js.Array[ReaderSelection] = js.native
+  val selections: js.Array[ReaderSelection]
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object ReaderInlineFragment {
   

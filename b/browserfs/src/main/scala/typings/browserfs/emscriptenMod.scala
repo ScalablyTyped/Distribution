@@ -11,7 +11,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emscriptenMod {
@@ -28,12 +27,15 @@ object emscriptenMod {
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/Emscripten", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an EmscriptenFileSystem instance with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/Emscripten", "default.Create")
-    @js.native
-    def Create(opts: EmscriptenFileSystemOptions, cb: BFSCallback[EmscriptenFileSystem]): Unit = js.native
+    @scala.inline
+    def Create(opts: EmscriptenFileSystemOptions, cb: BFSCallback[EmscriptenFileSystem]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/Emscripten", "default.Name")
     @js.native
@@ -43,9 +45,8 @@ object emscriptenMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/Emscripten", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/Emscripten", "EmscriptenFile")
@@ -148,10 +149,9 @@ object emscriptenMod {
     def supportsProps(): Boolean = js.native
   }
   
-  @js.native
   trait EmscriptenFileSystemOptions extends StObject {
     
-    var FS: js.Any = js.native
+    var FS: js.Any
   }
   object EmscriptenFileSystemOptions {
     

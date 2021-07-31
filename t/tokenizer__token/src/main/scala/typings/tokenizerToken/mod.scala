@@ -3,12 +3,10 @@ package typings.tokenizerToken
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait IGetToken[T] extends StObject {
     
     /**
@@ -17,12 +15,12 @@ object mod {
       * @param offset - Decode offset
       * @return Decoded value
       */
-    def get(buffer: Buffer, offset: Double): T = js.native
+    def get(buffer: Buffer, offset: Double): T
     
     /**
       * Length of encoded token in bytes
       */
-    var len: Double = js.native
+    var len: Double
   }
   object IGetToken {
     
@@ -33,7 +31,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class IGetTokenMutableBuilder[Self <: IGetToken[_], T] (val x: Self with IGetToken[T]) extends AnyVal {
+    implicit class IGetTokenMutableBuilder[Self <: IGetToken[?], T] (val x: Self & IGetToken[T]) extends AnyVal {
       
       @scala.inline
       def setGet(value: (Buffer, Double) => T): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
@@ -43,8 +41,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait IToken[T] extends IGetToken[T] {
+  trait IToken[T]
+    extends StObject
+       with IGetToken[T] {
     
     /**
       * Encode value to buffer
@@ -52,7 +51,7 @@ object mod {
       * @param offset - Buffer write offset
       * @param value - Value to decode of type T
       */
-    def put(buffer: Buffer, offset: Double, value: T): Double = js.native
+    def put(buffer: Buffer, offset: Double, value: T): Double
   }
   object IToken {
     
@@ -63,7 +62,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ITokenMutableBuilder[Self <: IToken[_], T] (val x: Self with IToken[T]) extends AnyVal {
+    implicit class ITokenMutableBuilder[Self <: IToken[?], T] (val x: Self & IToken[T]) extends AnyVal {
       
       @scala.inline
       def setPut(value: (Buffer, Double, T) => Double): Self = StObject.set(x, "put", js.Any.fromFunction3(value))

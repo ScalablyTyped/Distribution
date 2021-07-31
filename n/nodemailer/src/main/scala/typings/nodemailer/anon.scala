@@ -10,21 +10,19 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var flatten: `false` = js.native
+    var flatten: `false`
   }
   object `0` {
     
     @scala.inline
-    def apply(flatten: `false`): `0` = {
-      val __obj = js.Dynamic.literal(flatten = flatten.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(flatten = false)
       __obj.asInstanceOf[`0`]
     }
     
@@ -45,12 +43,11 @@ object anon {
     var mail: ^ = js.native
   }
   
-  @js.native
   trait Comment extends StObject {
     
-    var comment: String = js.native
+    var comment: String
     
-    var url: String = js.native
+    var url: String
   }
   object Comment {
     
@@ -71,10 +68,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: Socket = js.native
+    var connection: Socket
   }
   object Connection {
     
@@ -92,13 +88,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
     /**
       * The raw data of the message. This data needs to base64-encoded if you are accessing Amazon SES directly through the HTTPS interface. If you are accessing Amazon SES using an AWS SDK, the SDK takes care of the base 64-encoding for you. In all cases, the client must ensure that the message format complies with Internet email standards regarding email header fields, MIME types, and MIME encoding. The To:, CC:, and BCC: headers in the raw message can contain a group list. If you are using SendRawEmail with sending authorization, you can include X-headers in the raw message to specify the "Source," "From," and "Return-Path" addresses. For more information, see the documentation for SendRawEmail.   Do not include these X-headers in the DKIM signature, because they are removed by Amazon SES before sending the email.  For more information, go to the Amazon SES Developer Guide.
       */
-    var Data: Buffer | Uint8Array | js.Object | String = js.native
+    var Data: Buffer | Uint8Array | js.Object | String
   }
   object Data {
     
@@ -116,16 +111,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Flatten extends StObject {
     
-    var flatten: `true` = js.native
+    var flatten: `true`
   }
   object Flatten {
     
     @scala.inline
-    def apply(flatten: `true`): Flatten = {
-      val __obj = js.Dynamic.literal(flatten = flatten.asInstanceOf[js.Any])
+    def apply(): Flatten = {
+      val __obj = js.Dynamic.literal(flatten = true)
       __obj.asInstanceOf[Flatten]
     }
     
@@ -137,14 +131,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var secure: Boolean = js.native
+    var secure: Boolean
   }
   object Host {
     
@@ -168,12 +161,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var passphrase: String = js.native
+    var passphrase: String
   }
   object Key {
     
@@ -194,18 +186,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
       * The name of the tag. The name must:   This value can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   Contain less than 256 characters.
       */
-    var Name: String = js.native
+    var Name: String
     
     /**
       * The value of the tag. The value must:   This value can only contain ASCII letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-).   Contain less than 256 characters.
       */
-    var Value: String = js.native
+    var Value: String
   }
   object Name {
     
@@ -226,12 +217,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pending extends StObject {
     
-    var pending: Boolean = js.native
+    var pending: Boolean
     
-    var ts: Double = js.native
+    var ts: Double
   }
   object Pending {
     
@@ -252,12 +242,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Prepared extends StObject {
     
-    var prepared: Boolean = js.native
+    var prepared: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object Prepared {
     
@@ -278,12 +267,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FpgaImageAttribute extends StObject {
   
   /**
     * The description of the AFI.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AFI.
     */
-  var FpgaImageId: js.UndefOr[String] = js.native
+  var FpgaImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The load permissions.
     */
-  var LoadPermissions: js.UndefOr[LoadPermissionList] = js.native
+  var LoadPermissions: js.UndefOr[LoadPermissionList] = js.undefined
   
   /**
     * The name of the AFI.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The product codes.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
 }
 object FpgaImageAttribute {
   

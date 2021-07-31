@@ -2,20 +2,18 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventAction extends StObject {
   
-  var call: js.UndefOr[EventCallType] = js.native
+  var call: js.UndefOr[EventCallType] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   // 动作类型
   // call: 调用传进来的方法
   // jumpUrl: 跳转一个网址
-  var `type`: String = js.native
+  var `type`: String
 }
 object EventAction {
   

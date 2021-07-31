@@ -3,18 +3,16 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkInfoBar extends StObject {
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkInfoBar_typekey")
-  var OutlookDotOlkInfoBar_typekey: OlkInfoBar = js.native
+  var OutlookDotOlkInfoBar_typekey: OlkInfoBar
 }
 object OlkInfoBar {
   

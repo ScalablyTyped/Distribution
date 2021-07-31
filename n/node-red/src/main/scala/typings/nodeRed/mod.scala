@@ -30,7 +30,6 @@ import typings.nodeRedUtil.mod.Util
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -139,18 +138,17 @@ object mod extends Shortcut {
   
   type NodeMessageParts = typings.nodeRedRegistry.mod.NodeMessageParts
   
-  @js.native
   trait NodeRedApp extends StObject {
     
     /**
       * The editor authentication api.
       */
-    var auth: Auth = js.native
+    var auth: Auth
     
     /**
       * Runtime events emitter
       */
-    var events: EventEmitter = js.native
+    var events: EventEmitter
     
     /**
       * Express instance itself is a request handler, which could be invoked without
@@ -159,24 +157,24 @@ object mod extends Shortcut {
     /**
       * The express application for the Editor Admin API
       */
-    def httpAdmin(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
+    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
     /**
       * The express application for the Editor Admin API
       */
-    def httpAdmin(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
+    def httpAdmin(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
     /**
       * The express application for the Editor Admin API
       */
-    def httpAdmin(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def httpAdmin(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
     /**
       * The express application for the Editor Admin API
       */
-    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def httpAdmin(req: IncomingMessage, res: ServerResponse): js.Any
     /**
       * The express application for the Editor Admin API
       */
     @JSName("httpAdmin")
-    val httpAdmin_Original: Express = js.native
+    val httpAdmin_Original: Express
     
     /**
       * Express instance itself is a request handler, which could be invoked without
@@ -185,36 +183,36 @@ object mod extends Shortcut {
     /**
       * The express application for HTTP Nodes
       */
-    def httpNode(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
+    def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any
     /**
       * The express application for HTTP Nodes
       */
-    def httpNode(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
+    def httpNode(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any
     /**
       * The express application for HTTP Nodes
       */
-    def httpNode(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def httpNode(req: IncomingMessage, res: Response[js.Any, Double]): js.Any
     /**
       * The express application for HTTP Nodes
       */
-    def httpNode(req: IncomingMessage, res: ServerResponse): js.Any = js.native
+    def httpNode(req: IncomingMessage, res: ServerResponse): js.Any
     /**
       * The express application for HTTP Nodes
       */
     @JSName("httpNode")
-    val httpNode_Original: Express = js.native
+    val httpNode_Original: Express
     
     /**
       * Initialise the Node-RED application.
       * @param httpServer - the HTTP server object to use
       * @param userSettings - an object containing the runtime settings
       */
-    def init(httpServer: Server, userSettings: LocalSettings): Unit = js.native
+    def init(httpServer: Server, userSettings: LocalSettings): Unit
     
     /**
       * Logging utilities
       */
-    var log: Log = js.native
+    var log: Log
     
     /**
       * This provides access to the internal nodes module of the
@@ -224,43 +222,112 @@ object mod extends Shortcut {
       * Most administrative actions should be performed use the runtime api
       * under @node-red/runtime.
       */
-    val nodes: InternalNodesModule = js.native
+    val nodes: InternalNodesModule
     
     /**
       * The runtime api
       */
-    var runtime: RuntimeModule = js.native
+    var runtime: RuntimeModule
     
     /**
       * The HTTP Server used by the runtime
       */
-    val server: Server = js.native
+    val server: Server
     
     /**
       * This provides access to the internal settings module of the
       * runtime.
       */
-    val settings: PersistentSettings = js.native
+    val settings: PersistentSettings
     
     /**
       * Start the Node-RED application.
       */
-    def start(): js.Promise[Unit] = js.native
+    def start(): js.Promise[Unit]
     
     /**
       * Stop the Node-RED application.
       */
-    def stop(): js.Promise[Unit] = js.native
+    def stop(): js.Promise[Unit]
     
     /**
       * General utilities
       */
-    var util: Util = js.native
+    var util: Util
     
     /**
       * Get the version of the runtime
       */
-    val version: String = js.native
+    val version: String
+  }
+  object NodeRedApp {
+    
+    @scala.inline
+    def apply(
+      auth: Auth,
+      events: EventEmitter,
+      httpAdmin: Express,
+      httpNode: Express,
+      init: (Server, LocalSettings) => Unit,
+      log: Log,
+      nodes: InternalNodesModule,
+      runtime: RuntimeModule,
+      server: Server,
+      settings: PersistentSettings,
+      start: () => js.Promise[Unit],
+      stop: () => js.Promise[Unit],
+      util: Util,
+      version: String
+    ): NodeRedApp = {
+      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], httpAdmin = httpAdmin.asInstanceOf[js.Any], httpNode = httpNode.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), log = log.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop), util = util.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NodeRedApp]
+    }
+    
+    @scala.inline
+    implicit class NodeRedAppMutableBuilder[Self <: NodeRedApp] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHttpAdmin(value: Express): Self = StObject.set(x, "httpAdmin", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHttpNode(value: Express): Self = StObject.set(x, "httpNode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInit(value: (Server, LocalSettings) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNodes(value: InternalNodesModule): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRuntime(value: RuntimeModule): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSettings(value: PersistentSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
   type NodeSetting[T] = typings.nodeRedRegistry.mod.NodeSetting[T]

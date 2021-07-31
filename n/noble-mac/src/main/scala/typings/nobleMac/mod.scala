@@ -29,10 +29,13 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("noble-mac", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("noble-mac", "Characteristic")
   @js.native
@@ -228,91 +231,78 @@ object mod {
     var uuid: String = js.native
   }
   
-  @JSImport("noble-mac", "on")
-  @js.native
-  def on(event: String, listener: js.Function): EventEmitter = js.native
-  @JSImport("noble-mac", "on")
-  @js.native
-  def on_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "on")
-  @js.native
-  def on_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "on")
-  @js.native
-  def on_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "on")
-  @js.native
-  def on_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = js.native
+  @scala.inline
+  def on(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @JSImport("noble-mac", "removeAllListeners")
-  @js.native
-  def removeAllListeners(): EventEmitter = js.native
-  @JSImport("noble-mac", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: String): EventEmitter = js.native
+  @scala.inline
+  def on_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @JSImport("noble-mac", "removeListener")
-  @js.native
-  def removeListener(event: String, listener: js.Function): EventEmitter = js.native
-  @JSImport("noble-mac", "removeListener")
-  @js.native
-  def removeListener_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "removeListener")
-  @js.native
-  def removeListener_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "removeListener")
-  @js.native
-  def removeListener_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = js.native
-  @JSImport("noble-mac", "removeListener")
-  @js.native
-  def removeListener_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = js.native
+  @scala.inline
+  def on_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
   
-  @JSImport("noble-mac", "startScanning")
-  @js.native
-  def startScanning(): Unit = js.native
-  @JSImport("noble-mac", "startScanning")
-  @js.native
-  def startScanning(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("noble-mac", "startScanning")
-  @js.native
-  def startScanning(serviceUUIDs: js.Array[String]): Unit = js.native
-  @JSImport("noble-mac", "startScanning")
-  @js.native
-  def startScanning(serviceUUIDs: js.Array[String], allowDuplicates: Boolean): Unit = js.native
-  @JSImport("noble-mac", "startScanning")
-  @js.native
+  @scala.inline
+  def on_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def on_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeAllListeners(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[EventEmitter]
+  @scala.inline
+  def removeAllListeners(event: String): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeListener(event: String, listener: js.Function): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeListener_discover(event: discover, listener: js.Function1[/* peripheral */ Peripheral, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeListener_scanStart(event: scanStart, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeListener_scanStop(event: scanStop, listener: js.Function0[Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def removeListener_stateChange(event: stateChange, listener: js.Function1[/* state */ String, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @scala.inline
+  def startScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")().asInstanceOf[Unit]
+  @scala.inline
+  def startScanning(callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def startScanning(serviceUUIDs: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def startScanning(serviceUUIDs: js.Array[String], allowDuplicates: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def startScanning(
     serviceUUIDs: js.Array[String],
     allowDuplicates: Boolean,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("noble-mac", "startScanning")
-  @js.native
-  def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], allowDuplicates.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def startScanning(serviceUUIDs: js.Array[String], callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startScanning")(serviceUUIDs.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("noble-mac", "state")
   @js.native
   val state: String = js.native
   
-  @JSImport("noble-mac", "stopScanning")
-  @js.native
-  def stopScanning(): Unit = js.native
-  @JSImport("noble-mac", "stopScanning")
-  @js.native
-  def stopScanning(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def stopScanning(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")().asInstanceOf[Unit]
+  @scala.inline
+  def stopScanning(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopScanning")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Advertisement extends StObject {
     
-    var localName: String = js.native
+    var localName: String
     
-    var manufacturerData: Buffer = js.native
+    var manufacturerData: Buffer
     
-    var serviceData: Data = js.native
+    var serviceData: Data
     
-    var serviceUuids: js.Array[String] = js.native
+    var serviceUuids: js.Array[String]
     
-    var txPowerLevel: Double = js.native
+    var txPowerLevel: Double
   }
   object Advertisement {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livestreams")
@@ -32,7 +31,7 @@ class ResourceLivestreams protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivestreamsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivestreamsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceLivestreams protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(params: ParamsResourceLivestreamsInsert): GaxiosPromise[SchemaLiveStream] = js.native
   def insert(params: ParamsResourceLivestreamsInsert, callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
   def insert(
@@ -101,7 +100,7 @@ class ResourceLivestreams protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLiveStreamListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(params: ParamsResourceLivestreamsList): GaxiosPromise[SchemaLiveStreamListResponse] = js.native
   def list(
     params: ParamsResourceLivestreamsList,
@@ -138,7 +137,7 @@ class ResourceLivestreams protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaLiveStream] = js.native
   def update(callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveStream] = js.native
   def update(params: ParamsResourceLivestreamsUpdate): GaxiosPromise[SchemaLiveStream] = js.native
   def update(params: ParamsResourceLivestreamsUpdate, callback: BodyResponseCallback[SchemaLiveStream]): Unit = js.native
   def update(

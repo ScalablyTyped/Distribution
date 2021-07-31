@@ -2,18 +2,16 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListTopicSubscriptionsResponse. */
-@js.native
 trait IListTopicSubscriptionsResponse extends StObject {
   
   /** ListTopicSubscriptionsResponse nextPageToken */
-  var nextPageToken: js.UndefOr[String | Null] = js.native
+  var nextPageToken: js.UndefOr[String | Null] = js.undefined
   
   /** ListTopicSubscriptionsResponse subscriptions */
-  var subscriptions: js.UndefOr[js.Array[String] | Null] = js.native
+  var subscriptions: js.UndefOr[js.Array[String] | Null] = js.undefined
 }
 object IListTopicSubscriptionsResponse {
   

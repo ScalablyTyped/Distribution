@@ -5,57 +5,51 @@ import typings.baconjs.eventMod.Event
 import typings.baconjs.observableMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFlatmapMod {
   
-  @JSImport("baconjs/types/flatmap_", JSImport.Default)
+  @JSImport("baconjs/types/flatmap_", JSImport.Namespace)
   @js.native
-  def default[In, Out](spawner: EventSpawner[In, Out], src: typings.baconjs.observableMod.default[In]): typings.baconjs.observableMod.default[Out] = js.native
-  @JSImport("baconjs/types/flatmap_", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[In, Out](spawner: EventSpawner[In, Out], src: typings.baconjs.observableMod.default[In]): typings.baconjs.observableMod.default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[Out]]
+  @scala.inline
   def default[In, Out](
     spawner: EventSpawner[In, Out],
     src: typings.baconjs.observableMod.default[In],
     params: FlatMapParams
-  ): typings.baconjs.observableMod.default[Out] = js.native
+  ): typings.baconjs.observableMod.default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[Out]]
   
-  @JSImport("baconjs/types/flatmap_", "flatMap_")
-  @js.native
-  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In]): default[Out] = js.native
-  @JSImport("baconjs/types/flatmap_", "flatMap_")
-  @js.native
-  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In], params: FlatMapParams): default[Out] = js.native
+  @scala.inline
+  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In]): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
+  @scala.inline
+  def flatMap[In, Out](spawner: EventSpawner[In, Out], src: default[In], params: FlatMapParams): default[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap_")(spawner.asInstanceOf[js.Any], src.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[default[Out]]
   
-  @JSImport("baconjs/types/flatmap_", "handleEventValueWith")
-  @js.native
-  def handleEventValueWith[In, Out](f: SpawnerOrObservable[In, Out]): EventSpawner[In, Out] = js.native
+  @scala.inline
+  def handleEventValueWith[In, Out](f: SpawnerOrObservable[In, Out]): EventSpawner[In, Out] = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventValueWith")(f.asInstanceOf[js.Any]).asInstanceOf[EventSpawner[In, Out]]
   
-  @JSImport("baconjs/types/flatmap_", "makeObservable")
-  @js.native
-  def makeObservable[V](x: V): default[V] = js.native
-  @JSImport("baconjs/types/flatmap_", "makeObservable")
-  @js.native
-  def makeObservable[V](x: Event[V]): default[V] = js.native
-  @JSImport("baconjs/types/flatmap_", "makeObservable")
-  @js.native
-  def makeObservable[V](x: default[V]): default[V] = js.native
+  @scala.inline
+  def makeObservable[V](x: V): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
+  @scala.inline
+  def makeObservable[V](x: Event[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
+  @scala.inline
+  def makeObservable[V](x: default[V]): default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeObservable")(x.asInstanceOf[js.Any]).asInstanceOf[default[V]]
   
   type EventOrValue[V] = Event[V] | V
   
   type EventSpawner[V, V2] = js.Function1[/* e */ Event[V], default[V2] | EventOrValue[V2]]
   
-  @js.native
   trait FlatMapParams extends StObject {
     
-    var desc: js.UndefOr[Desc] = js.native
+    var desc: js.UndefOr[Desc] = js.undefined
     
-    var firstOnly: js.UndefOr[Boolean] = js.native
+    var firstOnly: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var mapError: js.UndefOr[Boolean] = js.native
+    var mapError: js.UndefOr[Boolean] = js.undefined
   }
   object FlatMapParams {
     

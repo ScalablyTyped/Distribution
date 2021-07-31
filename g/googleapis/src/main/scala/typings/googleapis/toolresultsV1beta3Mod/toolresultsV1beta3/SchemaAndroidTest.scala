@@ -2,34 +2,32 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Android mobile test specification.
   */
-@js.native
 trait SchemaAndroidTest extends StObject {
   
   /**
     * Information about the application under test.
     */
-  var androidAppInfo: js.UndefOr[SchemaAndroidAppInfo] = js.native
+  var androidAppInfo: js.UndefOr[SchemaAndroidAppInfo] = js.undefined
   
   /**
     * An Android instrumentation test.
     */
-  var androidInstrumentationTest: js.UndefOr[SchemaAndroidInstrumentationTest] = js.native
+  var androidInstrumentationTest: js.UndefOr[SchemaAndroidInstrumentationTest] = js.undefined
   
   /**
     * An Android robo test.
     */
-  var androidRoboTest: js.UndefOr[SchemaAndroidRoboTest] = js.native
+  var androidRoboTest: js.UndefOr[SchemaAndroidRoboTest] = js.undefined
   
   /**
     * Max time a test is allowed to run before it is automatically cancelled.
     */
-  var testTimeout: js.UndefOr[SchemaDuration] = js.native
+  var testTimeout: js.UndefOr[SchemaDuration] = js.undefined
 }
 object SchemaAndroidTest {
   

@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/toast/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/toast/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): ToastStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): ToastStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ToastStyle]
+  
   trait ToastStyle extends StObject {
     
-    var centering: ViewStyle = js.native
+    var centering: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var content: TextStyle = js.native
+    var content: TextStyle
     
-    var iconToast: ViewStyle = js.native
+    var iconToast: ViewStyle
     
-    var image: TextStyle = js.native
+    var image: TextStyle
     
-    var innerContainer: ViewStyle = js.native
+    var innerContainer: ViewStyle
     
-    var innerWrap: ViewStyle = js.native
+    var innerWrap: ViewStyle
     
-    var textToast: ViewStyle = js.native
+    var textToast: ViewStyle
   }
   object ToastStyle {
     

@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SourcesFilterConfig. */
@@ -24,18 +23,20 @@ class SourcesFilterConfig ()
 }
 object SourcesFilterConfig {
   
+  @JSImport("cucumber-messages", "messages.SourcesFilterConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SourcesFilterConfig instance using the specified properties.
     * @param [properties] Properties to set
     * @returns SourcesFilterConfig instance
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.create")
-  @js.native
-  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.create")
-  @js.native
-  def create(properties: ISourcesFilterConfig): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
+  @scala.inline
+  def create(): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
+  @scala.inline
+  def create(properties: ISourcesFilterConfig): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
   
   /**
     * Decodes a SourcesFilterConfig message from the specified reader or buffer.
@@ -46,18 +47,14 @@ object SourcesFilterConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decode")
-  @js.native
-  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
   
   /**
     * Decodes a SourcesFilterConfig message from the specified reader or buffer, length delimited.
@@ -67,12 +64,10 @@ object SourcesFilterConfig {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
   
   /**
     * Encodes the specified SourcesFilterConfig message. Does not implicitly {@link io.cucumber.messages.SourcesFilterConfig.verify|verify} messages.
@@ -81,12 +76,10 @@ object SourcesFilterConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.encode")
-  @js.native
-  def encode(message: ISourcesFilterConfig): Writer = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.encode")
-  @js.native
-  def encode(message: ISourcesFilterConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISourcesFilterConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISourcesFilterConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SourcesFilterConfig message, length delimited. Does not implicitly {@link io.cucumber.messages.SourcesFilterConfig.verify|verify} messages.
@@ -95,12 +88,10 @@ object SourcesFilterConfig {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISourcesFilterConfig): Writer = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISourcesFilterConfig, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISourcesFilterConfig): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISourcesFilterConfig, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SourcesFilterConfig message from a plain object. Also converts values to their respective internal types.
@@ -108,9 +99,8 @@ object SourcesFilterConfig {
     * @returns SourcesFilterConfig
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig]
   
   /**
     * Creates a plain object from a SourcesFilterConfig message. Also converts values to other types if specified.
@@ -119,15 +109,13 @@ object SourcesFilterConfig {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.toObject")
-  @js.native
-  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.SourcesFilterConfig,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SourcesFilterConfig message.
@@ -135,7 +123,6 @@ object SourcesFilterConfig {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages", "messages.SourcesFilterConfig.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

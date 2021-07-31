@@ -4,23 +4,23 @@ import typings.protonNative.protonNativeStrings.evenodd
 import typings.protonNative.protonNativeStrings.nonzero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaPathProps extends AreaBaseProps {
+trait AreaPathProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * A string describing the path (uses SVG's path syntax, explanation @see https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths).
     *
     * A warning is displayed whan an unimplemented shaped are used (Quadratic Beziers and Arcs).
     */
-  var d: String = js.native
+  var d: String
   
   /**
     * Sets the methods how to determine wheter to fill a path. Explanation @see https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/fill-rule.
     */
-  var fillMode: nonzero | evenodd = js.native
+  var fillMode: nonzero | evenodd
 }
 object AreaPathProps {
   

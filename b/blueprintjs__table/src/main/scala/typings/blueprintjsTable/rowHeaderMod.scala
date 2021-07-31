@@ -9,10 +9,13 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowHeaderMod {
+  
+  @JSImport("@blueprintjs/table/lib/esm/headers/rowHeader", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/table/lib/esm/headers/rowHeader", "RowHeader")
   @js.native
@@ -63,13 +66,13 @@ object rowHeaderMod {
     def defaultProps_=(x: RowHeaderCellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/table/lib/esm/headers/rowHeader", "renderDefaultRowHeader")
-  @js.native
-  def renderDefaultRowHeader(rowIndex: Double): Element = js.native
+  @scala.inline
+  def renderDefaultRowHeader(rowIndex: Double): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderDefaultRowHeader")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @js.native
   trait IRowHeaderProps
-    extends IHeaderProps
+    extends StObject
+       with IHeaderProps
        with IRowHeights
        with IRowIndices {
     
@@ -86,14 +89,13 @@ object rowHeaderMod {
   
   type IRowHeaderRenderer = js.Function1[/* rowIndex */ Double, ReactElement]
   
-  @js.native
   trait IRowHeights extends StObject {
     
-    var defaultRowHeight: js.UndefOr[Double] = js.native
+    var defaultRowHeight: js.UndefOr[Double] = js.undefined
     
-    var maxRowHeight: js.UndefOr[Double] = js.native
+    var maxRowHeight: js.UndefOr[Double] = js.undefined
     
-    var minRowHeight: js.UndefOr[Double] = js.native
+    var minRowHeight: js.UndefOr[Double] = js.undefined
   }
   object IRowHeights {
     

@@ -2,21 +2,19 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
-  val imageEditor: js.UndefOr[Boolean] = js.native
+  val imageEditor: js.UndefOr[Boolean] = js.undefined
   
-  val preview: js.UndefOr[Boolean] = js.native
+  val preview: js.UndefOr[Boolean] = js.undefined
   
-  val stockImages: js.UndefOr[Boolean] = js.native
+  val stockImages: js.UndefOr[Boolean] = js.undefined
   
-  val textEditor: js.UndefOr[TextEditor] = js.native
+  val textEditor: js.UndefOr[TextEditor] = js.undefined
   
-  val undoRedo: js.UndefOr[Boolean] = js.native
+  val undoRedo: js.UndefOr[Boolean] = js.undefined
 }
 object Features {
   

@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deeplink extends StObject {
   
-  var `deep-link`: String = js.native
+  var `deep-link`: String
   
-  var `group-name`: String = js.native
+  var `group-name`: String
   
-  var `stream-name`: String = js.native
+  var `stream-name`: String
 }
 object Deeplink {
   

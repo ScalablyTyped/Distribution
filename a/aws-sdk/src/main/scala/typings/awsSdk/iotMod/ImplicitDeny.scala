@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImplicitDeny extends StObject {
   
   /**
     * Policies that don't contain a matching allow or deny statement for the specified action on the specified resource. 
     */
-  var policies: js.UndefOr[Policies] = js.native
+  var policies: js.UndefOr[Policies] = js.undefined
 }
 object ImplicitDeny {
   

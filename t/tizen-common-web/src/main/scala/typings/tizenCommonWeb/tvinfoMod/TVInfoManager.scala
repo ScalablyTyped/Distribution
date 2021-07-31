@@ -14,7 +14,6 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_COLOR_KEY
 import typings.tizenCommonWeb.tizenCommonWebStrings.CAPTION_WINDOW_OPACITY_KEY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,31 +60,31 @@ trait TVInfoManager extends StObject {
     * @throw WebAPIException TypeMismatchError, UnknownError
     * @since 2.4
     */
-  def getCaptionValue(key: CaptionInfoKey): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue(key: CaptionInfoKey): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONBGCOLORKEY(key: CAPTION_BG_COLOR_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONBGCOLORKEY(key: CAPTION_BG_COLOR_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONBGOPACITYKEY(key: CAPTION_BG_OPACITY_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONBGOPACITYKEY(key: CAPTION_BG_OPACITY_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONEDGECOLORKEY(key: CAPTION_EDGE_COLOR_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONEDGECOLORKEY(key: CAPTION_EDGE_COLOR_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONEDGETYPEKEY(key: CAPTION_EDGE_TYPE_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONEDGETYPEKEY(key: CAPTION_EDGE_TYPE_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONFONTCOLORKEY(key: CAPTION_FONT_COLOR_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONFONTCOLORKEY(key: CAPTION_FONT_COLOR_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONFONTOPACITYKEY(key: CAPTION_FONT_OPACITY_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONFONTOPACITYKEY(key: CAPTION_FONT_OPACITY_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONFONTSIZEKEY(key: CAPTION_FONT_SIZE_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONFONTSIZEKEY(key: CAPTION_FONT_SIZE_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONFONTSTYLEKEY(key: CAPTION_FONT_STYLE_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONFONTSTYLEKEY(key: CAPTION_FONT_STYLE_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONMODEKEY(key: CAPTION_MODE_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONMODEKEY(key: CAPTION_MODE_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONONOFFKEY(key: CAPTION_ONOFF_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONONOFFKEY(key: CAPTION_ONOFF_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONWINDOWCOLORKEY(key: CAPTION_WINDOW_COLOR_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONWINDOWCOLORKEY(key: CAPTION_WINDOW_COLOR_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   @JSName("getCaptionValue")
-  def getCaptionValue_CAPTIONWINDOWOPACITYKEY(key: CAPTION_WINDOW_OPACITY_KEY): CaptionState with CaptionMode with CaptionFontSize with CaptionFontStyle with CaptionColor with CaptionOpacity with CaptionEdge = js.native
+  def getCaptionValue_CAPTIONWINDOWOPACITYKEY(key: CAPTION_WINDOW_OPACITY_KEY): CaptionState & CaptionMode & CaptionFontSize & CaptionFontStyle & CaptionColor & CaptionOpacity & CaptionEdge = js.native
   
   /**
     * Removes a listener.

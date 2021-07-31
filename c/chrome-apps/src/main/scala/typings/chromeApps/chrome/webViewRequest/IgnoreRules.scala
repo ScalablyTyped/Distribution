@@ -2,24 +2,24 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Masks all rules that match the specified criteria.
   */
-@js.native
-trait IgnoreRules extends OnRequestActions {
+trait IgnoreRules
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules
 }
 object IgnoreRules {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.IgnoreRules): IgnoreRules = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): IgnoreRules = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "IgnoreRules")
     __obj.asInstanceOf[IgnoreRules]
   }
   

@@ -15,7 +15,6 @@ import typings.websocket.websocketStrings.pong
 import typings.websocket.websocketStrings.resume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("websocket", "connection")
@@ -71,9 +70,9 @@ class connection protected () extends EventEmitter {
     * before terminating the underlying socket connection.
     */
   def close(): Unit = js.native
-  def close(reasonCode: js.UndefOr[scala.Nothing], description: String): Unit = js.native
   def close(reasonCode: Double): Unit = js.native
   def close(reasonCode: Double, description: String): Unit = js.native
+  def close(reasonCode: Unit, description: String): Unit = js.native
   
   /**
     * After the connection is closed, contains a textual description of the reason for
@@ -101,17 +100,13 @@ class connection protected () extends EventEmitter {
     * waiting for a response. This should generally be used only in error conditions.
     */
   def drop(): Unit = js.native
-  def drop(
-    reasonCode: js.UndefOr[scala.Nothing],
-    description: js.UndefOr[scala.Nothing],
-    skipCloseFrame: Boolean
-  ): Unit = js.native
-  def drop(reasonCode: js.UndefOr[scala.Nothing], description: String): Unit = js.native
-  def drop(reasonCode: js.UndefOr[scala.Nothing], description: String, skipCloseFrame: Boolean): Unit = js.native
   def drop(reasonCode: Double): Unit = js.native
-  def drop(reasonCode: Double, description: js.UndefOr[scala.Nothing], skipCloseFrame: Boolean): Unit = js.native
   def drop(reasonCode: Double, description: String): Unit = js.native
   def drop(reasonCode: Double, description: String, skipCloseFrame: Boolean): Unit = js.native
+  def drop(reasonCode: Double, description: Unit, skipCloseFrame: Boolean): Unit = js.native
+  def drop(reasonCode: Unit, description: String): Unit = js.native
+  def drop(reasonCode: Unit, description: String, skipCloseFrame: Boolean): Unit = js.native
+  def drop(reasonCode: Unit, description: Unit, skipCloseFrame: Boolean): Unit = js.native
   
   /** An array of extensions that were negotiated for this connection */
   var extensions: js.Array[IExtension] = js.native
@@ -228,25 +223,13 @@ class connection protected () extends EventEmitter {
   def sendBytes(buffer: Buffer, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   
   def sendCloseFrame(): Unit = js.native
-  def sendCloseFrame(
-    reasonCode: js.UndefOr[scala.Nothing],
-    reasonText: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  def sendCloseFrame(reasonCode: js.UndefOr[scala.Nothing], reasonText: String): Unit = js.native
-  def sendCloseFrame(
-    reasonCode: js.UndefOr[scala.Nothing],
-    reasonText: String,
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
   def sendCloseFrame(reasonCode: Double): Unit = js.native
-  def sendCloseFrame(
-    reasonCode: Double,
-    reasonText: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
   def sendCloseFrame(reasonCode: Double, reasonText: String): Unit = js.native
   def sendCloseFrame(reasonCode: Double, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Double, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Unit, reasonText: String): Unit = js.native
+  def sendCloseFrame(reasonCode: Unit, reasonText: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  def sendCloseFrame(reasonCode: Unit, reasonText: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
   
   /**
     * Serializes a `frame` object into binary data and immediately sends it to

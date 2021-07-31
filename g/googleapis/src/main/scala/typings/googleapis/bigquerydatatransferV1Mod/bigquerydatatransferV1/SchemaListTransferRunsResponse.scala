@@ -2,13 +2,11 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The returned list of pipelines in the project.
   */
-@js.native
 trait SchemaListTransferRunsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListTransferRunsResponse extends StObject {
     * this token can be used as the `ListTransferRunsRequest.page_token` to
     * request the next page of list results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The stored pipeline transfer runs.
     */
-  var transferRuns: js.UndefOr[js.Array[SchemaTransferRun]] = js.native
+  var transferRuns: js.UndefOr[js.Array[SchemaTransferRun]] = js.undefined
 }
 object SchemaListTransferRunsResponse {
   

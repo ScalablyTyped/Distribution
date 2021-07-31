@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhotoResponse extends StObject {
   
   /** The Photo resource, if the request was successful. */
-  var photo: js.UndefOr[Photo] = js.native
+  var photo: js.UndefOr[Photo] = js.undefined
   
   /** The status for the operation to get or update a single photo in the batch request. */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object PhotoResponse {
   

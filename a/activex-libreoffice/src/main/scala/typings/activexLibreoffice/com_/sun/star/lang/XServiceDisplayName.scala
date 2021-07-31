@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This name can be used in displays (dialogs, menus, etc.) to provide a more memorable / meaningful name than the service name or its implementation
   * name. It should not be used to identify / select a specific service / implementation.
   */
-@js.native
-trait XServiceDisplayName extends XInterface {
+trait XServiceDisplayName
+  extends StObject
+     with XInterface {
   
   /**
     * returns the display name of the service for a given language.
@@ -24,7 +24,7 @@ trait XServiceDisplayName extends XInterface {
     * @param aLocale the preferred language for the resulting display name.
     * @returns the string to be used for the service in displays.
     */
-  def getServiceDisplayName(aLocale: Locale): String = js.native
+  def getServiceDisplayName(aLocale: Locale): String
 }
 object XServiceDisplayName {
   

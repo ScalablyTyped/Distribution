@@ -2,16 +2,16 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtensionRequestUrls extends ExtensionUrls {
+trait ExtensionRequestUrls
+  extends StObject
+     with ExtensionUrls {
   
   /**
     * Link to view the extension request
     */
-  var requestPage: String = js.native
+  var requestPage: String
 }
 object ExtensionRequestUrls {
   

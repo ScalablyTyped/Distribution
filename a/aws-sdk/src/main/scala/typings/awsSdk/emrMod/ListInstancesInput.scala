@@ -2,46 +2,44 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstancesInput extends StObject {
   
   /**
     * The identifier of the cluster for which to list the instances.
     */
-  var ClusterId: typings.awsSdk.emrMod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.emrMod.ClusterId
   
   /**
     * The unique identifier of the instance fleet.
     */
-  var InstanceFleetId: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetId] = js.native
+  var InstanceFleetId: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetId] = js.undefined
   
   /**
     * The node type of the instance fleet. For example MASTER, CORE, or TASK.
     */
-  var InstanceFleetType: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetType] = js.native
+  var InstanceFleetType: js.UndefOr[typings.awsSdk.emrMod.InstanceFleetType] = js.undefined
   
   /**
     * The identifier of the instance group for which to list the instances.
     */
-  var InstanceGroupId: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupId] = js.native
+  var InstanceGroupId: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupId] = js.undefined
   
   /**
     * The type of instance group for which to list the instances.
     */
-  var InstanceGroupTypes: js.UndefOr[InstanceGroupTypeList] = js.native
+  var InstanceGroupTypes: js.UndefOr[InstanceGroupTypeList] = js.undefined
   
   /**
     * A list of instance states that will filter the instances returned with this request.
     */
-  var InstanceStates: js.UndefOr[InstanceStateList] = js.native
+  var InstanceStates: js.UndefOr[InstanceStateList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
 }
 object ListInstancesInput {
   

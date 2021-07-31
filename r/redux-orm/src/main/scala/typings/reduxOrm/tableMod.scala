@@ -16,7 +16,6 @@ import typings.reduxOrm.reduxOrmStrings.mapName
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -43,21 +42,20 @@ object tableMod {
   
   type ArrName[MClass /* <: Instantiable0[AnyModel] */] = ExtractModelOption[MClass, arrName, items]
   
-  @js.native
   trait DefaultMeta[MIdType] extends StObject {
     
-    var maxId: Null | Double = js.native
+    var maxId: Null | Double
   }
   object DefaultMeta {
     
     @scala.inline
     def apply[MIdType](): DefaultMeta[MIdType] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(maxId = null)
       __obj.asInstanceOf[DefaultMeta[MIdType]]
     }
     
     @scala.inline
-    implicit class DefaultMetaMutableBuilder[Self <: DefaultMeta[_], MIdType] (val x: Self with DefaultMeta[MIdType]) extends AnyVal {
+    implicit class DefaultMetaMutableBuilder[Self <: DefaultMeta[?], MIdType] (val x: Self & DefaultMeta[MIdType]) extends AnyVal {
       
       @scala.inline
       def setMaxId(value: Double): Self = StObject.set(x, "maxId", value.asInstanceOf[js.Any])
@@ -73,16 +71,15 @@ object tableMod {
   
   type MapName[MClass /* <: Instantiable0[AnyModel] */] = ExtractModelOption[MClass, mapName, itemsById]
   
-  @js.native
   trait ModelTableOpts[MClass /* <: Instantiable0[AnyModel] */] extends StObject {
     
-    val arrName: ArrName[MClass] = js.native
+    val arrName: ArrName[MClass]
     
-    val fields: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any = js.native
+    val fields: /* import warning: importer.ImportType#apply Failed type conversion: MClass['fields'] */ js.Any
     
-    val idAttribute: IdAttribute[MClass] = js.native
+    val idAttribute: IdAttribute[MClass]
     
-    val mapName: MapName[MClass] = js.native
+    val mapName: MapName[MClass]
   }
   object ModelTableOpts {
     
@@ -98,7 +95,7 @@ object tableMod {
     }
     
     @scala.inline
-    implicit class ModelTableOptsMutableBuilder[Self <: ModelTableOpts[_], MClass /* <: Instantiable0[AnyModel] */] (val x: Self with ModelTableOpts[MClass]) extends AnyVal {
+    implicit class ModelTableOptsMutableBuilder[Self <: ModelTableOpts[?], MClass /* <: Instantiable0[AnyModel] */] (val x: Self & ModelTableOpts[MClass]) extends AnyVal {
       
       @scala.inline
       def setArrName(value: ArrName[MClass]): Self = StObject.set(x, "arrName", value.asInstanceOf[js.Any])
@@ -118,18 +115,17 @@ object tableMod {
   
   type TableIndexes[MClass /* <: Instantiable0[AnyModel] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in redux-orm.redux-orm/Model.FieldSpecKeys<std.InstanceType<MClass>, redux-orm.redux-orm.OneToOne | redux-orm.redux-orm.ForeignKey> ]: string}
-    */ typings.reduxOrm.reduxOrmStrings.TableIndexes with TopLevel[js.Any]
+    */ typings.reduxOrm.reduxOrmStrings.TableIndexes & TopLevel[js.Any]
   
-  @js.native
   trait TableOpts extends StObject {
     
-    val arrName: js.UndefOr[String] = js.native
+    val arrName: js.UndefOr[String] = js.undefined
     
-    val fields: js.UndefOr[StringDictionary[Field]] = js.native
+    val fields: js.UndefOr[StringDictionary[Field]] = js.undefined
     
-    val idAttribute: js.UndefOr[String] = js.native
+    val idAttribute: js.UndefOr[String] = js.undefined
     
-    val mapName: js.UndefOr[String] = js.native
+    val mapName: js.UndefOr[String] = js.undefined
   }
   object TableOpts {
     

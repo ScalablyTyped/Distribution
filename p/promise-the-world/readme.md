@@ -11,8 +11,8 @@ A complete Promise utils collection
 | Full name          | promise-the-world |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 2249 |
+| # dependents       | 5 |
+| # downloads        | 22921 |
 | # stars            | 0 |
 
 ## Links

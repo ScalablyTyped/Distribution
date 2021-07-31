@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOperationResponse extends StObject {
   
   /**
     * A complex type that contains information about the operation.
     */
-  var Operation: js.UndefOr[typings.awsSdk.servicediscoveryMod.Operation] = js.native
+  var Operation: js.UndefOr[typings.awsSdk.servicediscoveryMod.Operation] = js.undefined
 }
 object GetOperationResponse {
   

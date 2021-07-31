@@ -9,7 +9,6 @@ import typings.passport.mod.Profile
 import typings.samlp.anon.Post
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,36 +23,30 @@ object mod {
   @scala.inline
   def PassportProfileMapper_=(x: ProfileMapperConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PassportProfileMapper")(x.asInstanceOf[js.Any])
   
-  @JSImport("samlp", "auth")
-  @js.native
-  def auth(options: IdPOptions): Handler = js.native
+  @scala.inline
+  def auth(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("auth")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @JSImport("samlp", "getSamlResponse")
-  @js.native
+  @scala.inline
   def getSamlResponse(
     options: IdPOptions,
     user: js.Any,
     callback: js.Function2[/* err */ js.Any, /* samlResponse */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSamlResponse")(options.asInstanceOf[js.Any], user.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("samlp", "logout")
-  @js.native
-  def logout(options: IdPOptions): Handler = js.native
+  @scala.inline
+  def logout(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @JSImport("samlp", "metadata")
-  @js.native
-  def metadata(options: IdPMetadataOptions): Handler = js.native
+  @scala.inline
+  def metadata(options: IdPMetadataOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("metadata")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
-  @JSImport("samlp", "parseRequest")
-  @js.native
+  @scala.inline
   def parseRequest(
-    req: Request_[ParamsDictionary, _, _, Query],
+    req: Request_[ParamsDictionary, js.Any, js.Any, Query],
     callback: js.Function2[/* err */ js.Any, /* data */ SamlRequest, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(req.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("samlp", "sendError")
-  @js.native
-  def sendError(options: IdPOptions): Handler = js.native
+  @scala.inline
+  def sendError(options: IdPOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   /* Rewritten from type alias, can be one of: 
     - typings.samlp.samlpStrings.sha1
@@ -69,20 +62,19 @@ object mod {
     def sha256: typings.samlp.samlpStrings.sha256 = "sha256".asInstanceOf[typings.samlp.samlpStrings.sha256]
   }
   
-  @js.native
   trait IdPMetadataOptions extends StObject {
     
-    var cert: String | Buffer = js.native
+    var cert: String | Buffer
     
-    var issuer: String = js.native
+    var issuer: String
     
-    var logoutEndpointPaths: js.UndefOr[Post] = js.native
+    var logoutEndpointPaths: js.UndefOr[Post] = js.undefined
     
-    var postEndpointPath: js.UndefOr[String] = js.native
+    var postEndpointPath: js.UndefOr[String] = js.undefined
     
-    var profileMapper: js.UndefOr[ProfileMapperConstructor] = js.native
+    var profileMapper: js.UndefOr[ProfileMapperConstructor] = js.undefined
     
-    var redirectEndpointPath: js.UndefOr[String] = js.native
+    var redirectEndpointPath: js.UndefOr[String] = js.undefined
   }
   object IdPMetadataOptions {
     
@@ -127,60 +119,61 @@ object mod {
     }
   }
   
-  @js.native
   trait IdPOptions extends StObject {
     
-    var RelayState: js.UndefOr[String] = js.native
+    var RelayState: js.UndefOr[String] = js.undefined
     
-    var audience: js.UndefOr[String] = js.native
+    var audience: js.UndefOr[String] = js.undefined
     
-    var authnContextClassRef: js.UndefOr[String] = js.native
+    var authnContextClassRef: js.UndefOr[String] = js.undefined
     
-    var cert: String | Buffer = js.native
+    var cert: String | Buffer
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var digestAlgorithm: js.UndefOr[DigestAlgorithmType] = js.native
+    var digestAlgorithm: js.UndefOr[DigestAlgorithmType] = js.undefined
     
-    var encryptionAlgorithm: js.UndefOr[String] = js.native
+    var encryptionAlgorithm: js.UndefOr[String] = js.undefined
     
-    var encryptionCert: js.UndefOr[String | Buffer] = js.native
+    var encryptionCert: js.UndefOr[String | Buffer] = js.undefined
     
-    var encryptionPublicKey: js.UndefOr[String | Buffer] = js.native
+    var encryptionPublicKey: js.UndefOr[String | Buffer] = js.undefined
     
     def getPostURL(
       audience: String,
       authnRequestDom: js.Any,
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       callback: js.Function2[/* err */ js.Any, /* url */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    var getUserFromRequest: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], _]] = js.native
+    var getUserFromRequest: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], js.Any]
+      ] = js.undefined
     
-    var inResponseTo: js.UndefOr[String] = js.native
+    var inResponseTo: js.UndefOr[String] = js.undefined
     
-    var issuer: String = js.native
+    var issuer: String
     
-    var key: String | Buffer = js.native
+    var key: String | Buffer
     
-    var keyEncryptionAlgorighm: js.UndefOr[String] = js.native
+    var keyEncryptionAlgorighm: js.UndefOr[String] = js.undefined
     
-    var lifetimeInSeconds: js.UndefOr[Double] = js.native
+    var lifetimeInSeconds: js.UndefOr[Double] = js.undefined
     
-    var profileMapper: js.UndefOr[ProfileMapperConstructor] = js.native
+    var profileMapper: js.UndefOr[ProfileMapperConstructor] = js.undefined
     
-    var recipient: js.UndefOr[String] = js.native
+    var recipient: js.UndefOr[String] = js.undefined
     
-    var signResponse: js.UndefOr[Boolean] = js.native
+    var signResponse: js.UndefOr[Boolean] = js.undefined
     
-    var signatureAlgorithm: js.UndefOr[SignatureAlgorithmType] = js.native
+    var signatureAlgorithm: js.UndefOr[SignatureAlgorithmType] = js.undefined
   }
   object IdPOptions {
     
     @scala.inline
     def apply(
       cert: String | Buffer,
-      getPostURL: (String, js.Any, Request_[ParamsDictionary, _, _, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
+      getPostURL: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit,
       issuer: String,
       key: String | Buffer
     ): IdPOptions = {
@@ -238,11 +231,11 @@ object mod {
       
       @scala.inline
       def setGetPostURL(
-        value: (String, js.Any, Request_[ParamsDictionary, _, _, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit
+        value: (String, js.Any, Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function2[/* err */ js.Any, /* url */ String, Unit]) => Unit
       ): Self = StObject.set(x, "getPostURL", js.Any.fromFunction4(value))
       
       @scala.inline
-      def setGetUserFromRequest(value: /* req */ Request_[ParamsDictionary, _, _, Query] => _): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
+      def setGetUserFromRequest(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => js.Any): Self = StObject.set(x, "getUserFromRequest", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetUserFromRequestUndefined: Self = StObject.set(x, "getUserFromRequest", js.undefined)
@@ -303,16 +296,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MetadataItem extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var id: String = js.native
+    var id: String
     
-    var optional: Boolean = js.native
+    var optional: Boolean
   }
   object MetadataItem {
     
@@ -339,14 +331,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ProfileMapper extends StObject {
     
-    def getClaims(): js.Any = js.native
+    def getClaims(): js.Any
     
-    def getNameIdentifier(): js.Any = js.native
+    def getNameIdentifier(): js.Any
     
-    var metadata: js.Array[MetadataItem] = js.native
+    var metadata: js.Array[MetadataItem]
   }
   object ProfileMapper {
     
@@ -379,18 +370,17 @@ object mod {
     def apply(pu: Profile): ProfileMapper = js.native
   }
   
-  @js.native
   trait SamlRequest extends StObject {
     
-    var assertionConsumerServiceURL: js.UndefOr[String] = js.native
+    var assertionConsumerServiceURL: js.UndefOr[String] = js.undefined
     
-    var destination: js.UndefOr[String] = js.native
+    var destination: js.UndefOr[String] = js.undefined
     
-    var forceAuthn: js.UndefOr[String] = js.native
+    var forceAuthn: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
   }
   object SamlRequest {
     

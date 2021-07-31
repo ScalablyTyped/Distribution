@@ -2,18 +2,16 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterMessages extends StObject {
   
-  var and: js.UndefOr[String] = js.native
+  var and: js.UndefOr[String] = js.undefined
   
   @JSName("apply")
-  var apply: js.UndefOr[String] = js.native
+  var apply: js.UndefOr[String] = js.undefined
   
-  var or: js.UndefOr[String] = js.native
+  var or: js.UndefOr[String] = js.undefined
 }
 object FilterMessages {
   

@@ -3,17 +3,15 @@ package typings.bingmaps.Microsoft.Maps.Directions
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRoute extends StObject {
   
   /** The legs of the route. Each route leg represents the route between two waypoints. */
-  var routeLegs: js.Array[IRouteLeg] = js.native
+  var routeLegs: js.Array[IRouteLeg]
   
   /** An array of locations that makes up the path of the route. */
-  var routePath: js.Array[Location] = js.native
+  var routePath: js.Array[Location]
 }
 object IRoute {
   

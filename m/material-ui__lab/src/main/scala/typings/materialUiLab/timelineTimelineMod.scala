@@ -11,14 +11,16 @@ import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineTimelineMod {
   
-  @JSImport("@material-ui/lab/Timeline/Timeline", JSImport.Default)
+  @JSImport("@material-ui/lab/Timeline/Timeline", JSImport.Namespace)
   @js.native
-  def default(props: TimelineProps): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: TimelineProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.root
@@ -43,26 +45,25 @@ object timelineTimelineMod {
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/lab.@material-ui/lab/Timeline/Timeline.TimelineClassKey, never> */
-  @js.native
   trait TimelineProps extends StObject {
     
     /**
       * The position where the timeline's content should appear.
       */
-    var align: js.UndefOr[left | right | alternate] = js.native
+    var align: js.UndefOr[left | right | alternate] = js.undefined
     
     /**
       * The content of the component.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapTimeli] = js.native
+    var classes: js.UndefOr[PartialClassNameMapTimeli] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TimelineProps {
     
@@ -100,10 +101,10 @@ object timelineTimelineMod {
       def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

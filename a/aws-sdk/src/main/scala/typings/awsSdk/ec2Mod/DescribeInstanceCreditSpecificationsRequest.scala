@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstanceCreditSpecificationsRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The filters.    instance-id - The ID of the instance.  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * The instance IDs. Default: Describes all your instances. Constraints: Maximum 1000 explicitly specified instance IDs.
     */
-  var InstanceIds: js.UndefOr[InstanceIdStringList] = js.native
+  var InstanceIds: js.UndefOr[InstanceIdStringList] = js.undefined
   
   /**
     * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 1000. You cannot specify this parameter and the instance IDs parameter in the same call.
     */
-  var MaxResults: js.UndefOr[DescribeInstanceCreditSpecificationsMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeInstanceCreditSpecificationsMaxResults] = js.undefined
   
   /**
     * The token to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeInstanceCreditSpecificationsRequest {
   

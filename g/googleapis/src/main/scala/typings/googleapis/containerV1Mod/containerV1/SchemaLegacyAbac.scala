@@ -2,14 +2,12 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the legacy Attribute Based Access Control authorization
   * mode.
   */
-@js.native
 trait SchemaLegacyAbac extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaLegacyAbac extends StObject {
     * controllers, will have statically granted permissions beyond those
     * provided by the RBAC configuration or IAM.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLegacyAbac {
   

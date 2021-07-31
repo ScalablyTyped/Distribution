@@ -2,15 +2,14 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "Capability")
 @js.native
 class Capability () extends StObject {
   def this(sid: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String) = this()
   def this(sid: String, tkn: String) = this()
+  def this(sid: Unit, tkn: String) = this()
   
   var accountSid: String = js.native
   

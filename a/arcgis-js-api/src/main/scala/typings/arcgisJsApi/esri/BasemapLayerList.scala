@@ -4,11 +4,12 @@ import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`trigger-action`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BasemapLayerList extends Widget_ {
+trait BasemapLayerList
+  extends StObject
+     with Widget_ {
   
   /**
     * A collection of [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html)s representing the [baseLayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#baseLayers).

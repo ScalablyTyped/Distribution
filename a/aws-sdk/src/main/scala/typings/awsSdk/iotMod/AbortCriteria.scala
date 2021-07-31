@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortCriteria extends StObject {
   
   /**
     * The type of job action to take to initiate the job abort.
     */
-  var action: AbortAction = js.native
+  var action: AbortAction
   
   /**
     * The type of job execution failures that can initiate a job abort.
     */
-  var failureType: JobExecutionFailureType = js.native
+  var failureType: JobExecutionFailureType
   
   /**
     * The minimum number of things which must receive job execution notifications before the job can be aborted.
     */
-  var minNumberOfExecutedThings: MinimumNumberOfExecutedThings = js.native
+  var minNumberOfExecutedThings: MinimumNumberOfExecutedThings
   
   /**
     * The minimum percentage of job execution failures that must occur to initiate the job abort. AWS IoT supports up to two digits after the decimal (for example, 10.9 and 10.99, but not 10.999).
     */
-  var thresholdPercentage: AbortThresholdPercentage = js.native
+  var thresholdPercentage: AbortThresholdPercentage
 }
 object AbortCriteria {
   

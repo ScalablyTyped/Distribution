@@ -3,32 +3,30 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkTimeZoneControl extends StObject {
   
-  var AppointmentTimeField: OlAppointmentTimeField = js.native
+  var AppointmentTimeField: OlAppointmentTimeField
   
-  var BorderStyle: OlBorderStyle = js.native
+  var BorderStyle: OlBorderStyle
   
-  def DropDown(): Unit = js.native
+  def DropDown(): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  var Locked: Boolean = js.native
+  var Locked: Boolean
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkTimeZoneControl_typekey")
-  var OutlookDotOlkTimeZoneControl_typekey: OlkTimeZoneControl = js.native
+  var OutlookDotOlkTimeZoneControl_typekey: OlkTimeZoneControl
   
-  var SelectedTimeZoneIndex: Double = js.native
+  var SelectedTimeZoneIndex: Double
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object OlkTimeZoneControl {
   

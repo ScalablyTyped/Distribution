@@ -2,16 +2,14 @@ package typings.ionic.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/definitions.PaginatorState> */
-@js.native
 trait PartialPaginatorState extends StObject {
   
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
 }
 object PartialPaginatorState {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCipherContextSupplier
   * @since OOo 3.4
   */
-@js.native
-trait XCipherContext extends XInterface {
+trait XCipherContext
+  extends StObject
+     with XInterface {
   
   /**
     * encrypts/decrypts the data using the cipher.
@@ -27,10 +27,10 @@ trait XCipherContext extends XInterface {
     * Whether the object does encryption or decryption is specified by creation of the object.
     * @param aData data that should be encrypted/decrypted
     */
-  def convertWithCipherContext(aData: SeqEquiv[Double]): SafeArray[Double] = js.native
+  def convertWithCipherContext(aData: SeqEquiv[Double]): SafeArray[Double]
   
   /** finalizes cipher and disposes context. */
-  def finalizeCipherContextAndDispose(): SafeArray[Double] = js.native
+  def finalizeCipherContextAndDispose(): SafeArray[Double]
 }
 object XCipherContext {
   

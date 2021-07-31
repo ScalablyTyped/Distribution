@@ -2,35 +2,33 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaddingRight extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var borderRadius: Double = js.native
+  var borderRadius: Double
   
-  var borderWidth: Double = js.native
+  var borderWidth: Double
   
-  var color: String = js.native
+  var color: String
   
-  var flex: Double = js.native
+  var flex: Double
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var paddingBottom: Double = js.native
+  var paddingBottom: Double
   
-  var paddingLeft: Double = js.native
+  var paddingLeft: Double
   
-  var paddingRight: Double = js.native
+  var paddingRight: Double
   
-  var paddingTop: Double = js.native
+  var paddingTop: Double
 }
 object PaddingRight {
   

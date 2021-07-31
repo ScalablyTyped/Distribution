@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -406,9 +405,9 @@ trait BaseAuth extends StObject {
     *   the current batch of downloaded users and the next page token.
     */
   def listUsers(): js.Promise[ListUsersResult] = js.native
-  def listUsers(maxResults: js.UndefOr[scala.Nothing], pageToken: String): js.Promise[ListUsersResult] = js.native
   def listUsers(maxResults: Double): js.Promise[ListUsersResult] = js.native
   def listUsers(maxResults: Double, pageToken: String): js.Promise[ListUsersResult] = js.native
+  def listUsers(maxResults: Unit, pageToken: String): js.Promise[ListUsersResult] = js.native
   
   /**
     * Revokes all refresh tokens for an existing user.

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateMod {
@@ -12,15 +11,15 @@ object stateMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[State with String] = js.native
+    def apply(value: String): js.UndefOr[State & String] = js.native
     
-    /* "error" */ val ERROR: typings.ol.stateMod.State.ERROR with String = js.native
+    /* "error" */ val ERROR: typings.ol.stateMod.State.ERROR & String = js.native
     
-    /* "loading" */ val LOADING: typings.ol.stateMod.State.LOADING with String = js.native
+    /* "loading" */ val LOADING: typings.ol.stateMod.State.LOADING & String = js.native
     
-    /* "ready" */ val READY: typings.ol.stateMod.State.READY with String = js.native
+    /* "ready" */ val READY: typings.ol.stateMod.State.READY & String = js.native
     
-    /* "undefined" */ val UNDEFINED: typings.ol.stateMod.State.UNDEFINED with String = js.native
+    /* "undefined" */ val UNDEFINED: typings.ol.stateMod.State.UNDEFINED & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object stateMod {
   object State extends StObject {
     
     @js.native
-    sealed trait ERROR extends State
+    sealed trait ERROR
+      extends StObject
+         with State
     
     @js.native
-    sealed trait LOADING extends State
+    sealed trait LOADING
+      extends StObject
+         with State
     
     @js.native
-    sealed trait READY extends State
+    sealed trait READY
+      extends StObject
+         with State
     
     @js.native
-    sealed trait UNDEFINED extends State
+    sealed trait UNDEFINED
+      extends StObject
+         with State
   }
 }

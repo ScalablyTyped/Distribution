@@ -4,66 +4,64 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @abstract
   */
-@js.native
 trait IHarness extends StObject {
   
-  var alsoPreload: js.Array[_] = js.native
+  var alsoPreload: js.Array[js.Any]
   
-  var autoCheckGlobals: Boolean = js.native
+  var autoCheckGlobals: Boolean
   
-  var cachePreload: Boolean = js.native
+  var cachePreload: Boolean
   
-  def configure(config: js.Any): Unit = js.native
+  def configure(config: js.Any): Unit
   
-  var defaultTimeout: Boolean = js.native
+  var defaultTimeout: Boolean
   
-  var disableColoring: Boolean = js.native
+  var disableColoring: Boolean
   
-  var expectedGlobals: js.Array[String] = js.native
+  var expectedGlobals: js.Array[String]
   
-  var isReadyTimeout: Double = js.native
+  var isReadyTimeout: Double
   
-  var keepNLastResults: Double = js.native
+  var keepNLastResults: Double
   
-  var keepResults: Boolean = js.native
+  var keepResults: Boolean
   
-  var listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]] = js.native
+  var listenters: StringDictionary[js.Function2[/* event */ Event, /* repeated */ js.Any, Unit]]
   
-  var maxThreads: Double = js.native
+  var maxThreads: Double
   
-  var needDone: Boolean = js.native
+  var needDone: Boolean
   
-  var overrideSetTimeout: Boolean = js.native
+  var overrideSetTimeout: Boolean
   
-  var pauseBetweenTests: Double = js.native
+  var pauseBetweenTests: Double
   
-  var preload: js.Array[_] = js.native
+  var preload: js.Array[js.Any]
   
-  var runCore: String = js.native
+  var runCore: String
   
-  def start(descriptors: js.Any*): Unit = js.native
+  def start(descriptors: js.Any*): Unit
   
-  var subTestTimeout: Double = js.native
+  var subTestTimeout: Double
   
-  var testClass: ITest = js.native
+  var testClass: ITest
   
-  var title: String = js.native
+  var title: String
   
-  var transparentEx: Boolean = js.native
+  var transparentEx: Boolean
   
-  var waitForTimeout: Double = js.native
+  var waitForTimeout: Double
 }
 object IHarness {
   
   @scala.inline
   def apply(
-    alsoPreload: js.Array[_],
+    alsoPreload: js.Array[js.Any],
     autoCheckGlobals: Boolean,
     cachePreload: Boolean,
     configure: js.Any => Unit,
@@ -78,7 +76,7 @@ object IHarness {
     needDone: Boolean,
     overrideSetTimeout: Boolean,
     pauseBetweenTests: Double,
-    preload: js.Array[_],
+    preload: js.Array[js.Any],
     runCore: String,
     start: /* repeated */ js.Any => Unit,
     subTestTimeout: Double,
@@ -95,7 +93,7 @@ object IHarness {
   implicit class IHarnessMutableBuilder[Self <: IHarness] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAlsoPreload(value: js.Array[_]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
+    def setAlsoPreload(value: js.Array[js.Any]): Self = StObject.set(x, "alsoPreload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAlsoPreloadVarargs(value: js.Any*): Self = StObject.set(x, "alsoPreload", js.Array(value :_*))
@@ -146,7 +144,7 @@ object IHarness {
     def setPauseBetweenTests(value: Double): Self = StObject.set(x, "pauseBetweenTests", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreload(value: js.Array[_]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    def setPreload(value: js.Array[js.Any]): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPreloadVarargs(value: js.Any*): Self = StObject.set(x, "preload", js.Array(value :_*))

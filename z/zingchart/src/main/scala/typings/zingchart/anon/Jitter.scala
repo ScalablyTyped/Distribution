@@ -2,36 +2,34 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jitter extends StObject {
   
   /**
     * To set the jitter width. 0 | .5 | 1 | 2 | ...
     */
-  var jitter: js.UndefOr[js.Any] = js.native
+  var jitter: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the `mean-factor` width. 0 | .5 | 1 | 2 | ...
     */
-  var meanFactor: js.UndefOr[js.Any] = js.native
+  var meanFactor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the `rounding-factor` on median edges. 0 | .5 | 1 | 2 | ...
     */
-  var roundingFactor: js.UndefOr[js.Any] = js.native
+  var roundingFactor: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the styling of the violin object. {}
     */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the trim. true | false | 0 | 1
     */
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
 }
 object Jitter {
   

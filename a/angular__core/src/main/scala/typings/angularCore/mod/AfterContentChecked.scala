@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterContentChecked extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait AfterContentChecked extends StObject {
     * default change detector has completed checking all of the directive's
     * content.
     */
-  def ngAfterContentChecked(): Unit = js.native
+  def ngAfterContentChecked(): Unit
 }
 object AfterContentChecked {
   

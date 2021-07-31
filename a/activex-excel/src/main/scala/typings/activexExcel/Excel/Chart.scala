@@ -60,12 +60,13 @@ import typings.activexOffice.Office.Scripts
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.activexExcel.Excel.AddSheetResult because Already inherited */ @js.native
-trait Chart extends Sheet {
+@js.native
+trait Chart
+  extends StObject
+     with AddSheetResult[js.Any]
+     with Sheet {
   
   def Activate(): Unit = js.native
   
@@ -146,7 +147,7 @@ trait Chart extends Sheet {
   
   /** @param AxisGroup [AxisGroup=1] */
   def Axes(): typings.activexExcel.Excel.Axes | Axis = js.native
-  def Axes(Type: js.UndefOr[scala.Nothing], AxisGroup: XlAxisGroup): typings.activexExcel.Excel.Axes | Axis = js.native
+  def Axes(Type: Unit, AxisGroup: XlAxisGroup): typings.activexExcel.Excel.Axes | Axis = js.native
   def Axes(Type: XlAxisType): typings.activexExcel.Excel.Axes | Axis = js.native
   def Axes(Type: XlAxisType, AxisGroup: XlAxisGroup): typings.activexExcel.Excel.Axes | Axis = js.native
   
@@ -193,58 +194,8 @@ trait Chart extends Sheet {
   def CheckBoxes(Index: js.Any): js.Any = js.native
   
   def CheckSpelling(): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean
-  ): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
-  def CheckSpelling(CustomDictionary: js.UndefOr[scala.Nothing], IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: js.UndefOr[scala.Nothing],
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
-  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: js.UndefOr[scala.Nothing], AlwaysSuggest: Boolean): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: js.UndefOr[scala.Nothing],
-    AlwaysSuggest: Boolean,
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean): Unit = js.native
-  def CheckSpelling(
-    CustomDictionary: String,
-    IgnoreUppercase: Boolean,
-    AlwaysSuggest: js.UndefOr[scala.Nothing],
-    SpellLang: MsoLanguageID
-  ): Unit = js.native
   def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Unit = js.native
   def CheckSpelling(
     CustomDictionary: String,
@@ -252,6 +203,17 @@ trait Chart extends Sheet {
     AlwaysSuggest: Boolean,
     SpellLang: MsoLanguageID
   ): Unit = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): Unit = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: String, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Boolean, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Boolean, SpellLang: MsoLanguageID): Unit = js.native
+  def CheckSpelling(CustomDictionary: Unit, IgnoreUppercase: Unit, AlwaysSuggest: Unit, SpellLang: MsoLanguageID): Unit = js.native
   
   def ClearToMatchStyle(): Unit = js.native
   
@@ -263,7 +225,7 @@ trait Chart extends Sheet {
   def ColumnGroups(Index: js.Any): js.Any = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): Unit = js.native
+  def Copy(Before: Unit, After: Sheet): Unit = js.native
   def Copy(Before: Sheet): Unit = js.native
   
   def CopyChartBuild(): Unit = js.native
@@ -274,15 +236,11 @@ trait Chart extends Sheet {
     * @param Size [Size=2]
     */
   def CopyPicture(): Unit = js.native
-  def CopyPicture(
-    Appearance: js.UndefOr[scala.Nothing],
-    Format: js.UndefOr[scala.Nothing],
-    Size: XlPictureAppearance
-  ): Unit = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat): Unit = js.native
-  def CopyPicture(Appearance: js.UndefOr[scala.Nothing], Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: Unit, Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat): Unit = js.native
+  def CopyPicture(Appearance: Unit, Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance): Unit = js.native
-  def CopyPicture(Appearance: XlPictureAppearance, Format: js.UndefOr[scala.Nothing], Size: XlPictureAppearance): Unit = js.native
+  def CopyPicture(Appearance: XlPictureAppearance, Format: Unit, Size: XlPictureAppearance): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): Unit = js.native
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat, Size: XlPictureAppearance): Unit = js.native
   
@@ -338,9 +296,9 @@ trait Chart extends Sheet {
   var ExcelDotChart_typekey: Chart = js.native
   
   def Export(Filename: String): Boolean = js.native
-  def Export(Filename: String, FilterName: js.UndefOr[scala.Nothing], Interactive: Boolean): Boolean = js.native
   def Export(Filename: String, FilterName: String): Boolean = js.native
   def Export(Filename: String, FilterName: String, Interactive: Boolean): Boolean = js.native
+  def Export(Filename: String, FilterName: Unit, Interactive: Boolean): Boolean = js.native
   
   def ExportAsFixedFormat(
     Type: XlFixedFormatType,
@@ -367,7 +325,7 @@ trait Chart extends Sheet {
   def GroupObjects(Index: js.Any): js.Any = js.native
   
   def HasAxis(): Boolean = js.native
-  def HasAxis(Index1: js.UndefOr[scala.Nothing], Index2: XlAxisGroup): Boolean = js.native
+  def HasAxis(Index1: Unit, Index2: XlAxisGroup): Boolean = js.native
   def HasAxis(Index1: XlAxisType): Boolean = js.native
   def HasAxis(Index1: XlAxisType, Index2: XlAxisGroup): Boolean = js.native
   
@@ -412,7 +370,7 @@ trait Chart extends Sheet {
   val MailEnvelope: MsoEnvelope = js.native
   
   def Move(): Unit = js.native
-  def Move(Before: js.UndefOr[scala.Nothing], After: Sheet): Unit = js.native
+  def Move(Before: Unit, After: Sheet): Unit = js.native
   def Move(Before: Sheet): Unit = js.native
   def Move(Before: Sheet, After: Sheet): Unit = js.native
   
@@ -486,69 +444,63 @@ trait Chart extends Sheet {
   
   /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.UndefOr[scala.Nothing], Contents: Boolean): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: Boolean,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: Boolean): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: Boolean, Contents: Boolean): Unit = js.native
-  def Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: Boolean,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
   def Protect(Password: String): Unit = js.native
-  def Protect(
-    Password: String,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  def Protect(Password: String, DrawingObjects: js.UndefOr[scala.Nothing], Contents: Boolean): Unit = js.native
-  def Protect(
-    Password: String,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: Boolean,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
   def Protect(Password: String, DrawingObjects: Boolean): Unit = js.native
-  def Protect(
-    Password: String,
-    DrawingObjects: Boolean,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
   def Protect(Password: String, DrawingObjects: Boolean, Contents: Boolean): Unit = js.native
   def Protect(
     Password: String,
     DrawingObjects: Boolean,
     Contents: Boolean,
-    Scenarios: js.UndefOr[scala.Nothing],
+    Scenarios: Unit,
     UserInterfaceOnly: Boolean
   ): Unit = js.native
+  def Protect(
+    Password: String,
+    DrawingObjects: Boolean,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(Password: String, DrawingObjects: Unit, Contents: Boolean): Unit = js.native
+  def Protect(
+    Password: String,
+    DrawingObjects: Unit,
+    Contents: Boolean,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(
+    Password: String,
+    DrawingObjects: Unit,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Boolean): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Boolean, Contents: Boolean): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: Boolean,
+    Contents: Boolean,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: Boolean,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: Boolean): Unit = js.native
+  def Protect(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: Boolean,
+    Scenarios: Unit,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  def Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: Boolean): Unit = js.native
   
   val ProtectContents: Boolean = js.native
   
@@ -563,107 +515,82 @@ trait Chart extends Sheet {
   var ProtectSelection: Boolean = js.native
   
   @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: Boolean,
-    Scenarios: `false`
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: Boolean,
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: Boolean,
-    Scenarios: `false`
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: Boolean,
-    Contents: Boolean,
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: String,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: String,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(Password: String, DrawingObjects: js.UndefOr[scala.Nothing], Contents: Boolean, Scenarios: `false`): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: String,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: Boolean,
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(Password: String, DrawingObjects: Boolean, Contents: js.UndefOr[scala.Nothing], Scenarios: `false`): Unit = js.native
-  @JSName("Protect")
-  def Protect_false(
-    Password: String,
-    DrawingObjects: Boolean,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: `false`,
-    UserInterfaceOnly: Boolean
-  ): Unit = js.native
-  @JSName("Protect")
   def Protect_false(Password: String, DrawingObjects: Boolean, Contents: Boolean, Scenarios: `false`): Unit = js.native
   @JSName("Protect")
   def Protect_false(
     Password: String,
     DrawingObjects: Boolean,
     Contents: Boolean,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: String, DrawingObjects: Boolean, Contents: Unit, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: String,
+    DrawingObjects: Boolean,
+    Contents: Unit,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: String, DrawingObjects: Unit, Contents: Boolean, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: String,
+    DrawingObjects: Unit,
+    Contents: Boolean,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: String, DrawingObjects: Unit, Contents: Unit, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: String,
+    DrawingObjects: Unit,
+    Contents: Unit,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: Unit, DrawingObjects: Boolean, Contents: Boolean, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: Unit,
+    DrawingObjects: Boolean,
+    Contents: Boolean,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: Unit, DrawingObjects: Boolean, Contents: Unit, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: Unit,
+    DrawingObjects: Boolean,
+    Contents: Unit,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: Unit, DrawingObjects: Unit, Contents: Boolean, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: Boolean,
+    Scenarios: `false`,
+    UserInterfaceOnly: Boolean
+  ): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: `false`): Unit = js.native
+  @JSName("Protect")
+  def Protect_false(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: Unit,
     Scenarios: `false`,
     UserInterfaceOnly: Boolean
   ): Unit = js.native
@@ -772,51 +699,21 @@ trait Chart extends Sheet {
   
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): Unit = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): Unit = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): Unit = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(
-    Type: js.UndefOr[scala.Nothing],
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): Unit = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(Type: js.UndefOr[scala.Nothing], LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: Unit, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType): Unit = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): Unit = js.native
-  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.UndefOr[scala.Nothing], AutoText: js.Any): Unit = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.UndefOr[scala.Nothing],
-    AutoText: js.Any,
-    HasLeaderLines: js.Any
-  ): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): Unit = js.native
-  def _ApplyDataLabels(
-    Type: XlDataLabelsType,
-    LegendKey: js.Any,
-    AutoText: js.UndefOr[scala.Nothing],
-    HasLeaderLines: js.Any
-  ): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): Unit = js.native
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: js.Any, HasLeaderLines: js.Any): Unit = js.native
+  def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: Unit, AutoText: Unit, HasLeaderLines: js.Any): Unit = js.native
   
   var _CodeName: String = js.native
   
@@ -834,145 +731,9 @@ trait Chart extends Sheet {
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.UndefOr[scala.Nothing],
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any
-  ): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.UndefOr[scala.Nothing], Contents: js.Any, Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.UndefOr[scala.Nothing],
-    Contents: js.Any,
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
-  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.UndefOr[scala.Nothing], Scenarios: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.UndefOr[scala.Nothing],
-    Scenarios: js.Any,
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
-  def _Protect(
-    Password: js.Any,
-    DrawingObjects: js.Any,
-    Contents: js.Any,
-    Scenarios: js.UndefOr[scala.Nothing],
-    UserInterfaceOnly: js.Any
-  ): Unit = js.native
   def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
   def _Protect(
     Password: js.Any,
@@ -981,6 +742,92 @@ trait Chart extends Sheet {
     Scenarios: js.Any,
     UserInterfaceOnly: js.Any
   ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: js.Any,
+    DrawingObjects: Unit,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: js.Any, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: js.Any,
+    Scenarios: Unit,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: js.Any,
+    Contents: Unit,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: js.Any, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: js.Any): Unit = js.native
+  def _Protect(
+    Password: Unit,
+    DrawingObjects: Unit,
+    Contents: js.Any,
+    Scenarios: js.Any,
+    UserInterfaceOnly: js.Any
+  ): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: js.Any, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: js.Any, UserInterfaceOnly: js.Any): Unit = js.native
+  def _Protect(Password: Unit, DrawingObjects: Unit, Contents: Unit, Scenarios: Unit, UserInterfaceOnly: js.Any): Unit = js.native
   
   def _SaveAs(
     Filename: String,

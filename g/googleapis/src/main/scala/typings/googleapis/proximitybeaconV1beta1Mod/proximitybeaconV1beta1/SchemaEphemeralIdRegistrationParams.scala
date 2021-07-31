@@ -2,7 +2,6 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specification](https://github.com/google/eddystone/tree/master/eddystone-eid)
   * at GitHub.
   */
-@js.native
 trait SchemaEphemeralIdRegistrationParams extends StObject {
   
   /**
     * Indicates the maximum rotation period supported by the service. See
     * EddystoneEidRegistration.rotation_period_exponent
     */
-  var maxRotationPeriodExponent: js.UndefOr[Double] = js.native
+  var maxRotationPeriodExponent: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the minimum rotation period supported by the service. See
     * EddystoneEidRegistration.rotation_period_exponent
     */
-  var minRotationPeriodExponent: js.UndefOr[Double] = js.native
+  var minRotationPeriodExponent: js.UndefOr[Double] = js.undefined
   
   /**
     * The beacon service&#39;s public key for use by a beacon to derive its
     * Identity Key using Elliptic Curve Diffie-Hellman key exchange.
     */
-  var serviceEcdhPublicKey: js.UndefOr[String] = js.native
+  var serviceEcdhPublicKey: js.UndefOr[String] = js.undefined
 }
 object SchemaEphemeralIdRegistrationParams {
   

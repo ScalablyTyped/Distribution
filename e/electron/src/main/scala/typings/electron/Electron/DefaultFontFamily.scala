@@ -2,41 +2,39 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultFontFamily extends StObject {
   
   /**
     * Defaults to `Script`.
     */
-  var cursive: js.UndefOr[String] = js.native
+  var cursive: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to `Impact`.
     */
-  var fantasy: js.UndefOr[String] = js.native
+  var fantasy: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to `Courier New`.
     */
-  var monospace: js.UndefOr[String] = js.native
+  var monospace: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to `Arial`.
     */
-  var sansSerif: js.UndefOr[String] = js.native
+  var sansSerif: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to `Times New Roman`.
     */
-  var serif: js.UndefOr[String] = js.native
+  var serif: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to `Times New Roman`.
     */
-  var standard: js.UndefOr[String] = js.native
+  var standard: js.UndefOr[String] = js.undefined
 }
 object DefaultFontFamily {
   

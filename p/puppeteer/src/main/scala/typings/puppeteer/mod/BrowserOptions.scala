@@ -3,28 +3,26 @@ package typings.puppeteer.mod
 import typings.puppeteer.anon.HasTouch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserOptions extends StObject {
   
   /**
     * Sets a consistent viewport for each page. Defaults to an 800x600 viewport. null disables the default viewport.
     */
-  var defaultViewport: js.UndefOr[HasTouch | Null] = js.native
+  var defaultViewport: js.UndefOr[HasTouch | Null] = js.undefined
   
   /**
     * Whether to ignore HTTPS errors during navigation.
     * @default false
     */
-  var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.native
+  var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Slows down Puppeteer operations by the specified amount of milliseconds.
     * Useful so that you can see what is going on.
     */
-  var slowMo: js.UndefOr[Double] = js.native
+  var slowMo: js.UndefOr[Double] = js.undefined
 }
 object BrowserOptions {
   

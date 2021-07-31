@@ -2,41 +2,39 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElastiCacheInstanceDetails extends StObject {
   
   /**
     * Whether the recommendation is for a current generation instance.
     */
-  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.native
+  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     * The instance family of the recommended reservation.
     */
-  var Family: js.UndefOr[GenericString] = js.native
+  var Family: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The type of node that AWS recommends.
     */
-  var NodeType: js.UndefOr[GenericString] = js.native
+  var NodeType: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The description of the recommended reservation.
     */
-  var ProductDescription: js.UndefOr[GenericString] = js.native
+  var ProductDescription: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The AWS Region of the recommended reservation.
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Whether the recommended reservation is size flexible.
     */
-  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.native
+  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
 }
 object ElastiCacheInstanceDetails {
   

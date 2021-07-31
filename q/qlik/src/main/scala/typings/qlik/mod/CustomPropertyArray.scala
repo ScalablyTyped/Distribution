@@ -3,35 +3,34 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyArray
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var addTranslation: js.UndefOr[String] = js.native
+  var addTranslation: js.UndefOr[String] = js.undefined
   
-  var allowAdd: js.UndefOr[Boolean] = js.native
+  var allowAdd: js.UndefOr[Boolean] = js.undefined
   
-  var allowMove: js.UndefOr[Boolean] = js.native
+  var allowMove: js.UndefOr[Boolean] = js.undefined
   
-  var allowRemove: js.UndefOr[Boolean] = js.native
+  var allowRemove: js.UndefOr[Boolean] = js.undefined
   
-  var component: js.UndefOr[scala.Nothing] = js.native
+  var component: Unit
   
-  var itemTitleRef: js.UndefOr[String] = js.native
+  var itemTitleRef: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyArray: array = js.native
+  var type_CustomPropertyArray: array
 }
 object CustomPropertyArray {
   
   @scala.inline
-  def apply(`type`: array): CustomPropertyArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(component: Unit): CustomPropertyArray = {
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[CustomPropertyArray]
   }
   
@@ -61,6 +60,9 @@ object CustomPropertyArray {
     
     @scala.inline
     def setAllowRemoveUndefined: Self = StObject.set(x, "allowRemove", js.undefined)
+    
+    @scala.inline
+    def setComponent(value: Unit): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])

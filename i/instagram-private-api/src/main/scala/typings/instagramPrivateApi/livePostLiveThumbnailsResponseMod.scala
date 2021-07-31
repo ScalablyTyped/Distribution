@@ -2,17 +2,15 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object livePostLiveThumbnailsResponseMod {
   
-  @js.native
   trait LivePostLiveThumbnailsResponseRootObject extends StObject {
     
-    var status: String = js.native
+    var status: String
     
-    var thumbnails: js.Array[String] = js.native
+    var thumbnails: js.Array[String]
   }
   object LivePostLiveThumbnailsResponseRootObject {
     

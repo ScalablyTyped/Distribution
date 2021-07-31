@@ -6,36 +6,32 @@ import typings.imageQ.anon.H
 import typings.imageQ.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversion {
   
-  @JSImport("image-q", "conversion.lab2rgb")
+  @JSImport("image-q", "conversion")
   @js.native
-  def lab2rgb(L: Double, a: Double, b: Double): B = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("image-q", "conversion.lab2xyz")
-  @js.native
-  def lab2xyz(L: Double, a: Double, b: Double): X = js.native
+  @scala.inline
+  def lab2rgb(L: Double, a: Double, b: Double): B = (^.asInstanceOf[js.Dynamic].applyDynamic("lab2rgb")(L.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[B]
   
-  @JSImport("image-q", "conversion.rgb2hsl")
-  @js.native
-  def rgb2hsl(r: Double, g: Double, b: Double): H = js.native
+  @scala.inline
+  def lab2xyz(L: Double, a: Double, b: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("lab2xyz")(L.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[X]
   
-  @JSImport("image-q", "conversion.rgb2lab")
-  @js.native
-  def rgb2lab(r: Double, g: Double, b: Double): A = js.native
+  @scala.inline
+  def rgb2hsl(r: Double, g: Double, b: Double): H = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsl")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[H]
   
-  @JSImport("image-q", "conversion.rgb2xyz")
-  @js.native
-  def rgb2xyz(r: Double, g: Double, b: Double): X = js.native
+  @scala.inline
+  def rgb2lab(r: Double, g: Double, b: Double): A = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2lab")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[A]
   
-  @JSImport("image-q", "conversion.xyz2lab")
-  @js.native
-  def xyz2lab(x: Double, y: Double, z: Double): A = js.native
+  @scala.inline
+  def rgb2xyz(r: Double, g: Double, b: Double): X = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2xyz")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[X]
   
-  @JSImport("image-q", "conversion.xyz2rgb")
-  @js.native
-  def xyz2rgb(x: Double, y: Double, z: Double): B = js.native
+  @scala.inline
+  def xyz2lab(x: Double, y: Double, z: Double): A = (^.asInstanceOf[js.Dynamic].applyDynamic("xyz2lab")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[A]
+  
+  @scala.inline
+  def xyz2rgb(x: Double, y: Double, z: Double): B = (^.asInstanceOf[js.Dynamic].applyDynamic("xyz2rgb")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[B]
 }

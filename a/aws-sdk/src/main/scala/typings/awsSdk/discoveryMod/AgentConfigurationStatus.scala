@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentConfigurationStatus extends StObject {
   
   /**
     * The agent/connector ID.
     */
-  var agentId: js.UndefOr[String] = js.native
+  var agentId: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the operation performed.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the status of the StartDataCollection and StopDataCollection operations. The system has recorded the data collection operation. The agent/connector receives this command the next time it polls for a new command. 
     */
-  var operationSucceeded: js.UndefOr[Boolean] = js.native
+  var operationSucceeded: js.UndefOr[Boolean] = js.undefined
 }
 object AgentConfigurationStatus {
   

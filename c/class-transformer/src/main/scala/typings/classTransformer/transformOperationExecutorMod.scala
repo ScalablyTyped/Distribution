@@ -6,10 +6,13 @@ import typings.classTransformer.typeMetadataMod.TypeMetadata
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformOperationExecutorMod {
+  
+  @JSImport("class-transformer/TransformOperationExecutor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-transformer/TransformOperationExecutor", "TransformOperationExecutor")
   @js.native
@@ -52,44 +55,14 @@ object transformOperationExecutorMod {
     ): js.Any = js.native
     def transform(
       source: js.Any,
-      value: js.Array[Record[String, _]],
+      value: js.Array[Record[String, js.Any]],
       targetType: js.Function,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
       source: js.Any,
-      value: js.Array[Record[String, _]],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Any,
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Any,
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Any,
-      value: Record[String, _],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Any,
-      value: Record[String, _],
+      value: js.Array[Record[String, js.Any]],
       targetType: js.Function,
       arrayType: js.Function,
       isMap: Boolean,
@@ -97,118 +70,58 @@ object transformOperationExecutorMod {
     ): js.Any = js.native
     def transform(
       source: js.Any,
-      value: Record[String, _],
+      value: js.Array[Record[String, js.Any]],
       targetType: TypeMetadata,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
       source: js.Any,
-      value: Record[String, _],
+      value: js.Array[Record[String, js.Any]],
       targetType: TypeMetadata,
       arrayType: js.Function,
       isMap: Boolean,
       level: Double
     ): js.Any = js.native
     def transform(
-      source: js.Array[Record[String, _]],
+      source: js.Any,
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: js.Any,
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: js.Any,
+      value: Record[String, js.Any],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: js.Any,
+      value: Record[String, js.Any],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: js.Array[Record[String, js.Any]],
       value: js.Any,
       targetType: js.Function,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Any,
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Any,
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Any,
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Array[Record[String, _]],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Array[Record[String, _]],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: Record[String, _],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: Record[String, _],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: Record[String, _],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: js.Array[Record[String, _]],
-      value: Record[String, _],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
-      value: js.Any,
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
       value: js.Any,
       targetType: js.Function,
       arrayType: js.Function,
@@ -216,14 +129,14 @@ object transformOperationExecutorMod {
       level: Double
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
       value: js.Any,
       targetType: TypeMetadata,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
       value: js.Any,
       targetType: TypeMetadata,
       arrayType: js.Function,
@@ -231,60 +144,150 @@ object transformOperationExecutorMod {
       level: Double
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
-      value: js.Array[Record[String, _]],
+      source: js.Array[Record[String, js.Any]],
+      value: js.Array[Record[String, js.Any]],
       targetType: js.Function,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
-      value: js.Array[Record[String, _]],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
-      value: js.Array[Record[String, _]],
-      targetType: TypeMetadata,
-      arrayType: js.Function,
-      isMap: Boolean,
-      level: Double
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
-      value: Record[String, _],
-      targetType: js.Function,
-      arrayType: js.Function,
-      isMap: Boolean
-    ): js.Any = js.native
-    def transform(
-      source: Record[String, _],
-      value: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
+      value: js.Array[Record[String, js.Any]],
       targetType: js.Function,
       arrayType: js.Function,
       isMap: Boolean,
       level: Double
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
-      value: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
+      value: js.Array[Record[String, js.Any]],
       targetType: TypeMetadata,
       arrayType: js.Function,
       isMap: Boolean
     ): js.Any = js.native
     def transform(
-      source: Record[String, _],
-      value: Record[String, _],
+      source: js.Array[Record[String, js.Any]],
+      value: js.Array[Record[String, js.Any]],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: js.Array[Record[String, js.Any]],
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: js.Array[Record[String, js.Any]],
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: js.Array[Record[String, js.Any]],
+      value: Record[String, js.Any],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: js.Array[Record[String, js.Any]],
+      value: Record[String, js.Any],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Any,
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Any,
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Any,
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Any,
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Array[Record[String, js.Any]],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Array[Record[String, js.Any]],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Array[Record[String, js.Any]],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: js.Array[Record[String, js.Any]],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: Record[String, js.Any],
+      targetType: js.Function,
+      arrayType: js.Function,
+      isMap: Boolean,
+      level: Double
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: Record[String, js.Any],
+      targetType: TypeMetadata,
+      arrayType: js.Function,
+      isMap: Boolean
+    ): js.Any = js.native
+    def transform(
+      source: Record[String, js.Any],
+      value: Record[String, js.Any],
       targetType: TypeMetadata,
       arrayType: js.Function,
       isMap: Boolean,
@@ -294,7 +297,6 @@ object transformOperationExecutorMod {
     var transformationType: js.Any = js.native
   }
   
-  @JSImport("class-transformer/TransformOperationExecutor", "testForBuffer")
-  @js.native
-  def testForBuffer(): Boolean = js.native
+  @scala.inline
+  def testForBuffer(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("testForBuffer")().asInstanceOf[Boolean]
 }

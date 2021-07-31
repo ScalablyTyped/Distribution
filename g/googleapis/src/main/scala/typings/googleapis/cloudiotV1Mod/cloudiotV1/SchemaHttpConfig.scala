@@ -2,20 +2,18 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The configuration of the HTTP bridge for a device registry.
   */
-@js.native
 trait SchemaHttpConfig extends StObject {
   
   /**
     * If enabled, allows devices to use DeviceService via the HTTP protocol.
     * Otherwise, any requests to DeviceService will fail for this registry.
     */
-  var httpEnabledState: js.UndefOr[String] = js.native
+  var httpEnabledState: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpConfig {
   

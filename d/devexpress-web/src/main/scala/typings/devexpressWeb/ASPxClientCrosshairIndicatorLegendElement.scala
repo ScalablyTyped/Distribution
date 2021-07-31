@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The CrosshairIndicatorLegendElement class's client-side equivalent.
   */
-@js.native
-trait ASPxClientCrosshairIndicatorLegendElement extends ASPxClientCrosshairLegendElementBase {
+trait ASPxClientCrosshairIndicatorLegendElement
+  extends StObject
+     with ASPxClientCrosshairLegendElementBase {
   
   /**
     * Returns the Indicator whose point the legend element displays.
     */
-  var Indicator: ASPxClientIndicator = js.native
+  var Indicator: ASPxClientIndicator
 }
 object ASPxClientCrosshairIndicatorLegendElement {
   

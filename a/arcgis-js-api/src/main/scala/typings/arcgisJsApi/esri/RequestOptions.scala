@@ -19,81 +19,81 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestOptions extends Object {
+trait RequestOptions
+  extends StObject
+     with Object {
   
   /**
     * Indicates if and how requests to ArcGIS Services are authenticated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var authMode: js.UndefOr[auto | anonymous | immediate | `no-prompt`] = js.native
+  var authMode: js.UndefOr[auto | anonymous | immediate | `no-prompt`] = js.undefined
   
   /**
     * If uploading a file, specify the form data or element used to submit the file here.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var body: js.UndefOr[FormData | HTMLFormElement | String] = js.native
+  var body: js.UndefOr[FormData | HTMLFormElement | String] = js.undefined
   
   /**
     * If `true`, the browser will send a request to the server instead of using the browser's local cache.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var cacheBust: js.UndefOr[Boolean] = js.native
+  var cacheBust: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Headers to use for the request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates if the request should be made using the HTTP POST method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var method: js.UndefOr[auto | post] = js.native
+  var method: js.UndefOr[auto | post] = js.undefined
   
   /**
     * Query parameters for the request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var query: js.UndefOr[js.Any] = js.native
+  var query: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Response format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var responseType: js.UndefOr[json | xml | text | blob | `array-buffer` | document | image] = js.native
+  var responseType: js.UndefOr[json | xml | text | blob | `array-buffer` | document | image] = js.undefined
   
   /**
     * [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * Indicates the amount of time in milliseconds to wait for a response from the server.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the request should use the proxy.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions)
     */
-  var useProxy: js.UndefOr[Boolean] = js.native
+  var useProxy: js.UndefOr[Boolean] = js.undefined
 }
 object RequestOptions {
   

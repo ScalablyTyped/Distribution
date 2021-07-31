@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientYoutubereporting.gapi.client.youtubereport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GdataDiffDownloadResponse extends StObject {
   
   /** gdata */
-  var objectLocation: js.UndefOr[GdataCompositeMedia] = js.native
+  var objectLocation: js.UndefOr[GdataCompositeMedia] = js.undefined
 }
 object GdataDiffDownloadResponse {
   

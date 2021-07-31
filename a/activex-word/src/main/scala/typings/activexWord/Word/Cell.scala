@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,9 +27,9 @@ trait Cell extends StObject {
   var FitText: Boolean = js.native
   
   def Formula(): Unit = js.native
-  def Formula(Formula: js.UndefOr[scala.Nothing], NumFormat: js.Any): Unit = js.native
   def Formula(Formula: js.Any): Unit = js.native
   def Formula(Formula: js.Any, NumFormat: js.Any): Unit = js.native
+  def Formula(Formula: Unit, NumFormat: js.Any): Unit = js.native
   
   var Height: Double = js.native
   
@@ -71,9 +70,9 @@ trait Cell extends StObject {
   val Shading: typings.activexWord.Word.Shading = js.native
   
   def Split(): Unit = js.native
-  def Split(NumRows: js.UndefOr[scala.Nothing], NumColumns: js.Any): Unit = js.native
   def Split(NumRows: js.Any): Unit = js.native
   def Split(NumRows: js.Any, NumColumns: js.Any): Unit = js.native
+  def Split(NumRows: Unit, NumColumns: js.Any): Unit = js.native
   
   val Tables: typings.activexWord.Word.Tables = js.native
   

@@ -4,13 +4,11 @@ import typings.expressValidator.contextMod.Optional
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var options: js.UndefOr[Partial[Optional]] = js.native
+  var options: js.UndefOr[Partial[Optional]] = js.undefined
 }
 object `0` {
   

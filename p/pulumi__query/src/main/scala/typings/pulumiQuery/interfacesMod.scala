@@ -5,40 +5,47 @@ import typings.std.IteratorResult
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @JSImport("@pulumi/query/interfaces", "isAsyncIterable")
+  @JSImport("@pulumi/query/interfaces", JSImport.Namespace)
   @js.native
-  def isAsyncIterable[T](o: js.Any): /* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/query/interfaces", "isIterable")
-  @js.native
-  def isIterable[T](o: js.Any): /* is std.Iterable<T> */ Boolean = js.native
+  @scala.inline
+  def isAsyncIterable[T](o: js.Any): /* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsyncIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/query.@pulumi/query/interfaces.AsyncIterable<T> */ Boolean]
+  
+  @scala.inline
+  def isIterable[T](o: js.Any): /* is std.Iterable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterable")(o.asInstanceOf[js.Any]).asInstanceOf[/* is std.Iterable<T> */ Boolean]
   
   @js.native
   trait AsyncIterable[T] extends StObject
   
   @js.native
-  trait AsyncIterableIterator[T] extends AsyncIterator[T]
+  trait AsyncIterableIterator[T]
+    extends StObject
+       with AsyncIterator[T]
   
   @js.native
   trait AsyncIterator[T] extends StObject {
     
-    def next(): js.Promise[IteratorResult[T, _]] = js.native
-    def next(value: js.Any): js.Promise[IteratorResult[T, _]] = js.native
+    def next(): js.Promise[IteratorResult[T, js.Any]] = js.native
+    def next(value: js.Any): js.Promise[IteratorResult[T, js.Any]] = js.native
     
-    var `return`: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], js.Promise[IteratorResult[T, _]]]] = js.native
+    var `return`: js.UndefOr[
+        js.Function1[/* value */ js.UndefOr[js.Any], js.Promise[IteratorResult[T, js.Any]]]
+      ] = js.native
     
-    var `throw`: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Promise[IteratorResult[T, _]]]] = js.native
+    var `throw`: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Promise[IteratorResult[T, js.Any]]]] = js.native
   }
   
   type AsyncQuerySource[TSource] = Iterable[TSource] | AsyncIterable[TSource] | (js.Promise[AsyncIterable[TSource] | Iterable[TSource]])
   
   @js.native
-  trait AsyncQueryable[TSource] extends AsyncIterableIterator[TSource] {
+  trait AsyncQueryable[TSource]
+    extends StObject
+       with AsyncIterableIterator[TSource] {
     
     /**
       * Accumulates a value over a sequence. `func` is applied to each element in the sequence, an
@@ -340,7 +347,7 @@ object interfacesMod {
       op7: Operator[TResult6, TResult7],
       op8: Operator[TResult7, TResult8],
       op9: Operator[TResult8, TResult9],
-      ops: (Operator[_, _])*
+      ops: (Operator[js.Any, js.Any])*
     ): AsyncQueryable[TResult9] = js.native
     
     /**
@@ -436,7 +443,9 @@ object interfacesMod {
   - typings.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
   - typings.pulumiQuery.interfacesMod.AsyncQueryable because var conflicts: `return`, `throw`. Inlined filter, flatMap, flatMap, map, skip, skipWhile, take, takeWhile, join, groupJoin, concat, reverse, orderBy, orderByDescending, groupBy, groupBy, distinct, union, intersect, except, first, first, firstOrDefault, firstOrDefault, last, last, lastOrDefault, lastOrDefault, single, single, singleOrDefault, singleOrDefault, elementAt, elementAtOrDefault, elementAtOrDefault, defaultIfEmpty, any, any, all, contains, count, count, sum, sum, min, min, max, max, average, average, aggregate, toArray, toMap, toMap, ofType, forEach, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe, pipe */ @js.native
-  trait AsyncQueryableGrouping[TKey, TSource] extends GroupedAsyncIterableIterator[TKey, TSource] {
+  trait AsyncQueryableGrouping[TKey, TSource]
+    extends StObject
+       with GroupedAsyncIterableIterator[TKey, TSource] {
     
     /**
       * Accumulates a value over a sequence. `func` is applied to each element in the sequence, an
@@ -738,7 +747,7 @@ object interfacesMod {
       op7: Operator[TResult6, TResult7],
       op8: Operator[TResult7, TResult8],
       op9: Operator[TResult8, TResult9],
-      ops: (Operator[_, _])*
+      ops: (Operator[js.Any, js.Any])*
     ): AsyncQueryable[TResult9] = js.native
     
     /**
@@ -833,7 +842,9 @@ object interfacesMod {
   type Evaluator[TSource, TResult] = js.Function1[/* source */ AsyncIterableIterator[TSource], js.Promise[TResult]]
   
   @js.native
-  trait GroupedAsyncIterableIterator[TKey, TSource] extends AsyncIterableIterator[TSource] {
+  trait GroupedAsyncIterableIterator[TKey, TSource]
+    extends StObject
+       with AsyncIterableIterator[TSource] {
     
     var key: TKey = js.native
   }
@@ -844,10 +855,9 @@ object interfacesMod {
   
   object global {
     
-    @js.native
     trait SymbolConstructor extends StObject {
       
-      val asyncIterator: js.Symbol = js.native
+      val asyncIterator: js.Symbol
     }
     object SymbolConstructor {
       

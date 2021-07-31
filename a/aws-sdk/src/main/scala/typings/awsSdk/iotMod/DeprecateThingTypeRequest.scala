@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeprecateThingTypeRequest extends StObject {
   
   /**
     * The name of the thing type to deprecate.
     */
-  var thingTypeName: ThingTypeName = js.native
+  var thingTypeName: ThingTypeName
   
   /**
     * Whether to undeprecate a deprecated thing type. If true, the thing type will not be deprecated anymore and you can associate it with things.
     */
-  var undoDeprecate: js.UndefOr[UndoDeprecate] = js.native
+  var undoDeprecate: js.UndefOr[UndoDeprecate] = js.undefined
 }
 object DeprecateThingTypeRequest {
   

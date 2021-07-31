@@ -2,13 +2,11 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSetting extends StObject {
   
-  var authSetting: typings.wegameApi.wx.types.AuthSetting = js.native
+  var authSetting: typings.wegameApi.wx.types.AuthSetting
 }
 object AuthSetting {
   

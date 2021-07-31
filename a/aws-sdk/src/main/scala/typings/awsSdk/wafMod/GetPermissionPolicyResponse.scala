@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPermissionPolicyResponse extends StObject {
   
   /**
     * The IAM policy attached to the specified RuleGroup.
     */
-  var Policy: js.UndefOr[PolicyString] = js.native
+  var Policy: js.UndefOr[PolicyString] = js.undefined
 }
 object GetPermissionPolicyResponse {
   

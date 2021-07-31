@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebSource extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/web-source
-  var code: String = js.native
+  var code: String
   
   /**
     * Default is 1.
     */
-  var startLine: js.UndefOr[Double] = js.native
+  var startLine: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object WebSource {
   

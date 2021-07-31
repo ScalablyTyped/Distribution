@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "TemporalQueries")
@@ -10,38 +9,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TemporalQueries protected () extends StObject
 object TemporalQueries {
   
-  /* static member */
-  @JSImport("js-joda", "TemporalQueries.chronology")
+  @JSImport("js-joda", "TemporalQueries")
   @js.native
-  def chronology(): TemporalQuery = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.localDate")
-  @js.native
-  def localDate(): TemporalQuery = js.native
+  @scala.inline
+  def chronology(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("chronology")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.localTime")
-  @js.native
-  def localTime(): TemporalQuery = js.native
+  @scala.inline
+  def localDate(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localDate")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.offset")
-  @js.native
-  def offset(): TemporalQuery = js.native
+  @scala.inline
+  def localTime(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("localTime")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.precision")
-  @js.native
-  def precision(): TemporalQuery = js.native
+  @scala.inline
+  def offset(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.zone")
-  @js.native
-  def zone(): TemporalQuery = js.native
+  @scala.inline
+  def precision(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("precision")().asInstanceOf[TemporalQuery]
   
   /* static member */
-  @JSImport("js-joda", "TemporalQueries.zoneId")
-  @js.native
-  def zoneId(): TemporalQuery = js.native
+  @scala.inline
+  def zone(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zone")().asInstanceOf[TemporalQuery]
+  
+  /* static member */
+  @scala.inline
+  def zoneId(): TemporalQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("zoneId")().asInstanceOf[TemporalQuery]
 }

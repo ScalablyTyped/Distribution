@@ -2,23 +2,21 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFetchThreatListUpdatesResponse extends StObject {
   
   /**
     * The list updates requested by the clients.
     */
-  var listUpdateResponses: js.UndefOr[js.Array[SchemaListUpdateResponse]] = js.native
+  var listUpdateResponses: js.UndefOr[js.Array[SchemaListUpdateResponse]] = js.undefined
   
   /**
     * The minimum duration the client must wait before issuing any update
     * request. If this field is not set clients may update as soon as they
     * want.
     */
-  var minimumWaitDuration: js.UndefOr[String] = js.native
+  var minimumWaitDuration: js.UndefOr[String] = js.undefined
 }
 object SchemaFetchThreatListUpdatesResponse {
   

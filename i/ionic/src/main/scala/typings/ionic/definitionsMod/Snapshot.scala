@@ -2,23 +2,21 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
-  var created: String = js.native
+  var created: String
   
-  var id: String = js.native
+  var id: String
   
-  var note: String = js.native
+  var note: String
   
-  var ref: String = js.native
+  var ref: String
   
-  var sha: String = js.native
+  var sha: String
   
-  var state: String = js.native
+  var state: String
 }
 object Snapshot {
   

@@ -3,21 +3,23 @@ package typings.dependencyTree
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): DependencyObj = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[DependencyObj]
+  
   @JSImport("dependency-tree", JSImport.Namespace)
   @js.native
-  def apply(options: Options): DependencyObj = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dependency-tree", "toList")
-  @js.native
-  def toList(options: Options): js.Array[String] = js.native
+  @scala.inline
+  def toList(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toList")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
-  trait DependencyObj extends /* k */ StringDictionary[DependencyObj]
+  trait DependencyObj
+    extends StObject
+       with /* k */ StringDictionary[DependencyObj]
   object DependencyObj {
     
     @scala.inline
@@ -27,30 +29,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var detective: js.UndefOr[js.Any] = js.native
+    var detective: js.UndefOr[js.Any] = js.undefined
     
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
-    var filename: String = js.native
+    var filename: String
     
-    var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
     
-    var isListForm: js.UndefOr[Boolean] = js.native
+    var isListForm: js.UndefOr[Boolean] = js.undefined
     
-    var nodeModulesConfig: js.UndefOr[js.Any] = js.native
+    var nodeModulesConfig: js.UndefOr[js.Any] = js.undefined
     
-    var nonExistent: js.UndefOr[js.Array[String]] = js.native
+    var nonExistent: js.UndefOr[js.Array[String]] = js.undefined
     
-    var requireConfig: js.UndefOr[String] = js.native
+    var requireConfig: js.UndefOr[String] = js.undefined
     
-    var tsConfig: js.UndefOr[String] = js.native
+    var tsConfig: js.UndefOr[String] = js.undefined
     
-    var visited: js.UndefOr[DependencyObj] = js.native
+    var visited: js.UndefOr[DependencyObj] = js.undefined
     
-    var webpackConfig: js.UndefOr[String] = js.native
+    var webpackConfig: js.UndefOr[String] = js.undefined
   }
   object Options {
     

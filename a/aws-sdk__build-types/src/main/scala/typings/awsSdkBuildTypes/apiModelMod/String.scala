@@ -3,35 +3,34 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
-  var enum: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var `enum`: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var idempotencyToken: js.UndefOr[scala.Boolean] = js.native
+  var idempotencyToken: js.UndefOr[scala.Boolean] = js.undefined
   
-  var jsonValue: js.UndefOr[scala.Boolean] = js.native
+  var jsonValue: js.UndefOr[scala.Boolean] = js.undefined
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var min: js.UndefOr[scala.Double] = js.native
+  var min: js.UndefOr[scala.Double] = js.undefined
   
-  var pattern: js.UndefOr[java.lang.String] = js.native
+  var pattern: js.UndefOr[java.lang.String] = js.undefined
   
   @JSName("type")
-  val type_String: string = js.native
+  val type_String: string
 }
 object String {
   
   @scala.inline
-  def apply(`type`: string): String = {
+  def apply(): String = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[String]
   }
   

@@ -2,31 +2,29 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insert Conversions Response.
   */
-@js.native
 trait SchemaConversionsBatchInsertResponse extends StObject {
   
   /**
     * Indicates that some or all conversions failed to insert.
     */
-  var hasFailures: js.UndefOr[Boolean] = js.native
+  var hasFailures: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#conversionsBatchInsertResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The insert status of each conversion. Statuses are returned in the same
     * order that conversions are inserted.
     */
-  var status: js.UndefOr[js.Array[SchemaConversionStatus]] = js.native
+  var status: js.UndefOr[js.Array[SchemaConversionStatus]] = js.undefined
 }
 object SchemaConversionsBatchInsertResponse {
   

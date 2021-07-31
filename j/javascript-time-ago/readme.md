@@ -10,9 +10,9 @@ Localized relative date/time formatting
 | ------------------ | :-------------: |
 | Full name          | javascript-time-ago |
 | Keywords           | time, ago, relative, format |
-| # releases         | 37 |
-| # dependents       | 44 |
-| # downloads        | 1034443 |
+| # releases         | 36 |
+| # dependents       | 45 |
+| # downloads        | 1161129 |
 | # stars            | 3 |
 
 ## Links

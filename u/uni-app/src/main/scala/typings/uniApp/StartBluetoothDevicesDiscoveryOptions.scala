@@ -2,41 +2,39 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartBluetoothDevicesDiscoveryOptions extends StObject {
   
   /**
     * 是否允许重复上报同一设备， 如果允许重复上报，则onDeviceFound 方法会多次上报同一设备，但是 RSSI 值会有不同
     */
-  var allowDuplicatesKey: js.UndefOr[Boolean] = js.native
+  var allowDuplicatesKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 上报设备的间隔，默认为0，意思是找到新设备立即上报，否则根据传入的间隔上报
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * 蓝牙设备主 service 的 uuid 列表
     */
-  var services: js.UndefOr[js.Array[_]] = js.native
+  var services: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 成功则返回本机蓝牙适配器状态
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object StartBluetoothDevicesDiscoveryOptions {
   
@@ -74,7 +72,7 @@ object StartBluetoothDevicesDiscoveryOptions {
     def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
     @scala.inline
-    def setServices(value: js.Array[_]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    def setServices(value: js.Array[js.Any]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)

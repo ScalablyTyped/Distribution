@@ -10,13 +10,13 @@ Ruby on Rails unobtrusive scripting adapter
 | ------------------ | :-------------: |
 | Full name          | @rails/ujs |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 3 |
-| # downloads        | 5573484 |
+| # releases         | 22 |
+| # dependents       | 8 |
+| # downloads        | 9442420 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](http://rubyonrails.org/)
+- [Homepage](https://rubyonrails.org/)
 - [Bugs](https://github.com/rails/rails/issues)
 - [Repository](https://github.com/rails/rails)
 - [Npm](https://www.npmjs.com/package/%40rails%2Fujs)

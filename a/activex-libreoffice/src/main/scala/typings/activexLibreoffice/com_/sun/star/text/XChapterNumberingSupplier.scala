@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexReplace
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains the settings of the chapter numbering in a text document. */
-@js.native
-trait XChapterNumberingSupplier extends XInterface {
+trait XChapterNumberingSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of numbering rules for this document.  This interface allows access to the properties of the numbering level via a sequence of {@l */
-  val ChapterNumberingRules: XIndexReplace = js.native
+  val ChapterNumberingRules: XIndexReplace
   
   /** @returns the collection of numbering rules for this document.  This interface allows access to the properties of the numbering level via a sequence of {@l */
-  def getChapterNumberingRules(): XIndexReplace = js.native
+  def getChapterNumberingRules(): XIndexReplace
 }
 object XChapterNumberingSupplier {
   

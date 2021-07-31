@@ -3,13 +3,11 @@ package typings.storybookUi.anon
 import typings.storybookUi.shortcutsMod.ValidationStates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Valid extends StObject {
   
-  var valid: ValidationStates = js.native
+  var valid: ValidationStates
 }
 object Valid {
   

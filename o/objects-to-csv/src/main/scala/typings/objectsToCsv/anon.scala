@@ -2,19 +2,17 @@ package typings.objectsToCsv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllColumns extends StObject {
     
-    var allColumns: js.UndefOr[Boolean] = js.native
+    var allColumns: js.UndefOr[Boolean] = js.undefined
     
-    var append: js.UndefOr[Boolean] = js.native
+    var append: js.UndefOr[Boolean] = js.undefined
     
-    var bom: js.UndefOr[Boolean] = js.native
+    var bom: js.UndefOr[Boolean] = js.undefined
   }
   object AllColumns {
     

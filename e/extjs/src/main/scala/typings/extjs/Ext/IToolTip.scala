@@ -3,53 +3,52 @@ package typings.extjs.Ext
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToolTip
-  extends typings.extjs.Ext.tip.ITip {
+  extends StObject
+     with typings.extjs.Ext.tip.ITip {
   
   /** [Config Option] (String) */
-  var anchor: js.UndefOr[java.lang.String] = js.native
+  var anchor: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var anchorOffset: js.UndefOr[Double] = js.native
+  var anchorOffset: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var anchorToTarget: js.UndefOr[Boolean] = js.native
+  var anchorToTarget: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var delegate: js.UndefOr[java.lang.String] = js.native
+  var delegate: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var dismissDelay: js.UndefOr[Double] = js.native
+  var dismissDelay: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number[]) */
-  var mouseOffset: js.UndefOr[Array] = js.native
+  var mouseOffset: js.UndefOr[Array] = js.undefined
   
   /** [Method] Binds this ToolTip to the specified element
     * @param t String/HTMLElement/Ext.Element The Element, HtmlElement, or ID of an element to bind to
     */
-  var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTarget: js.UndefOr[js.Function1[/* t */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var showDelay: js.UndefOr[Double] = js.native
+  var showDelay: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (HTMLElement/Ext.Element/String) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var trackMouse: js.UndefOr[Boolean] = js.native
+  var trackMouse: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (HTMLElement) */
-  var triggerElement: js.UndefOr[HTMLElement] = js.native
+  var triggerElement: js.UndefOr[HTMLElement] = js.undefined
 }
 object IToolTip {
   

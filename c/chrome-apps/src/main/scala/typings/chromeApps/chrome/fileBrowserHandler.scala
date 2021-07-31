@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import typings.filesystem.FileEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -36,7 +35,6 @@ object fileBrowserHandler {
     def ReadWrite: typings.chromeApps.chromeAppsStrings.ReadWrite = "ReadWrite".asInstanceOf[typings.chromeApps.chromeAppsStrings.ReadWrite]
   }
   
-  @js.native
   trait SelectFileParameters extends StObject {
     
     /**
@@ -46,10 +44,10 @@ object fileBrowserHandler {
       * Extensions should not include the leading '.'.
       * @example ['jpg', 'png']
       */
-    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var allowedFileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Suggested name for the file. */
-    var suggestedName: String = js.native
+    var suggestedName: String
   }
   object SelectFileParameters {
     
@@ -76,20 +74,19 @@ object fileBrowserHandler {
     }
   }
   
-  @js.native
   trait SelectionResult extends StObject {
     
     /** Selected file entry. It will be null if a file hasn't been selected. */
-    var entry: FileEntry | Null = js.native
+    var entry: FileEntry | Null
     
     /** Whether the file has been selected. */
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object SelectionResult {
     
     @scala.inline
     def apply(success: Boolean): SelectionResult = {
-      val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any], entry = null)
       __obj.asInstanceOf[SelectionResult]
     }
     

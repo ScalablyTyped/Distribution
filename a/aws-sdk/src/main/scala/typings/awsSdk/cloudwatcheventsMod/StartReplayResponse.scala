@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartReplayResponse extends StObject {
   
   /**
     * The ARN of the replay.
     */
-  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.native
+  var ReplayArn: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ReplayArn] = js.undefined
   
   /**
     * The time at which the replay started.
     */
-  var ReplayStartTime: js.UndefOr[Timestamp] = js.native
+  var ReplayStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state of the replay.
     */
-  var State: js.UndefOr[ReplayState] = js.native
+  var State: js.UndefOr[ReplayState] = js.undefined
   
   /**
     * The reason that the replay is in the state.
     */
-  var StateReason: js.UndefOr[ReplayStateReason] = js.native
+  var StateReason: js.UndefOr[ReplayStateReason] = js.undefined
 }
 object StartReplayResponse {
   

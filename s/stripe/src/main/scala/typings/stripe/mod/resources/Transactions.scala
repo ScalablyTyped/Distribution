@@ -10,7 +10,6 @@ import typings.stripe.mod.issuing.transactions.ITransactionListOptions
 import typings.stripe.mod.issuing.transactions.ITransactionUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Transactions")

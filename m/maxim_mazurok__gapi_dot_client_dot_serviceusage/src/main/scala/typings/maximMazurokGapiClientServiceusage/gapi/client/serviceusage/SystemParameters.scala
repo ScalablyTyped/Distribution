@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemParameters extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SystemParameters extends StObject {
     * parameters: - name: api_key url_query_parameter: api_key Example: define 2 api key names for a specific method. system_parameters rules: - selector: "/ListShelves" parameters: -
     * name: api_key http_header: Api-Key1 - name: api_key http_header: Api-Key2 **NOTE:** All service configuration rules follow "last one wins" order.
     */
-  var rules: js.UndefOr[js.Array[SystemParameterRule]] = js.native
+  var rules: js.UndefOr[js.Array[SystemParameterRule]] = js.undefined
 }
 object SystemParameters {
   

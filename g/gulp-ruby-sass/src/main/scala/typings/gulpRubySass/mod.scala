@@ -3,7 +3,6 @@ package typings.gulpRubySass
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,14 @@ object mod {
     * @param {string} source - Filename or directory
     * @param {Options} options - Additional processing rules/options
     */
+  @scala.inline
+  def apply(source: String): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(source: String, options: Options): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  
   @JSImport("gulp-ruby-sass", JSImport.Namespace)
   @js.native
-  def apply(source: String): ReadableStream = js.native
-  @JSImport("gulp-ruby-sass", JSImport.Namespace)
-  @js.native
-  def apply(source: String, options: Options): ReadableStream = js.native
+  val ^ : js.Any = js.native
   
   /**
     * The interface includes the node-ruby-sass only options.
@@ -26,17 +27,18 @@ object mod {
     * @interface Options
     * @extends SassOptions
     */
-  @js.native
-  trait Options extends SassOptions {
+  trait Options
+    extends StObject
+       with SassOptions {
     
-    var bundleExec: js.UndefOr[Boolean] = js.native
+    var bundleExec: js.UndefOr[Boolean] = js.undefined
     
-    var container: js.UndefOr[String] = js.native
+    var container: js.UndefOr[String] = js.undefined
     
     @JSName("sourcemap")
-    var sourcemap_Options: js.UndefOr[Boolean] = js.native
+    var sourcemap_Options: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -80,59 +82,58 @@ object mod {
     * Options are converted from dashed to camelCase
     * @interface SassOptions
     */
-  @js.native
   trait SassOptions extends StObject {
     
-    var cacheLocation: js.UndefOr[String] = js.native
+    var cacheLocation: js.UndefOr[String] = js.undefined
     
-    var check: js.UndefOr[Boolean] = js.native
+    var check: js.UndefOr[Boolean] = js.undefined
     
-    var compass: js.UndefOr[Boolean] = js.native
+    var compass: js.UndefOr[Boolean] = js.undefined
     
-    var debugInfo: js.UndefOr[Boolean] = js.native
+    var debugInfo: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[String] = js.native
+    var defaultEncoding: js.UndefOr[String] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var interactive: js.UndefOr[Boolean] = js.native
+    var interactive: js.UndefOr[Boolean] = js.undefined
     
-    var lineComments: js.UndefOr[Boolean] = js.native
+    var lineComments: js.UndefOr[Boolean] = js.undefined
     
-    var lineNumbers: js.UndefOr[Boolean] = js.native
+    var lineNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var loadPath: js.UndefOr[String | js.Array[String]] = js.native
+    var loadPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var require: js.UndefOr[String] = js.native
+    var require: js.UndefOr[String] = js.undefined
     
-    var scss: js.UndefOr[Boolean] = js.native
+    var scss: js.UndefOr[Boolean] = js.undefined
     
     // Actually, there should be a string. However due to ts spec, overriding member should be the same type or a subtype.
     // http://stackoverflow.com/questions/19605557/incompatible-static-properties-in-three-d-ts-with-latest-typescript
     // We need Options.soucemap to be boolean, so here 'any' is used instead of string.
-    var sourcemap: js.UndefOr[js.Any] = js.native
+    var sourcemap: js.UndefOr[js.Any] = js.undefined
     
-    var stdin: js.UndefOr[Boolean] = js.native
+    var stdin: js.UndefOr[Boolean] = js.undefined
     
-    var stopOnError: js.UndefOr[Boolean] = js.native
+    var stopOnError: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var trace: js.UndefOr[Boolean] = js.native
+    var trace: js.UndefOr[Boolean] = js.undefined
     
-    var unixNewlines: js.UndefOr[Boolean] = js.native
+    var unixNewlines: js.UndefOr[Boolean] = js.undefined
     
-    var update: js.UndefOr[String] = js.native
+    var update: js.UndefOr[String] = js.undefined
     
     // All listed below options are acceptable by the sass executable and potentially may be used from js.
     // However I doubt are there cases when it's meaningful
-    var watch: js.UndefOr[String] = js.native
+    var watch: js.UndefOr[String] = js.undefined
   }
   object SassOptions {
     

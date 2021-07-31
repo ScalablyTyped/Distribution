@@ -2,41 +2,39 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeviceEventsRequest extends StObject {
   
   /**
     * The unique identifier of the device.
     */
-  var DeviceId: string = js.native
+  var DeviceId: string
   
   /**
     * The start date for the device event query, in ISO8061 format. For example,
     2018-03-28T15:45:12.880Z
     
     */
-  var FromTimeStamp: timestampIso8601 = js.native
+  var FromTimeStamp: timestampIso8601
   
   /**
     * The maximum number of results to return per request. If not set, a default value of
     100 is used.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The end date for the device event query, in ISO8061 format. For example,
     2018-03-28T15:45:12.880Z
     
     */
-  var ToTimeStamp: timestampIso8601 = js.native
+  var ToTimeStamp: timestampIso8601
 }
 object ListDeviceEventsRequest {
   

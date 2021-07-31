@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortRange extends StObject {
   
   /**
     * The smallest port number in a specified range of port numbers.
     */
-  var MaxRange: js.UndefOr[Port] = js.native
+  var MaxRange: js.UndefOr[Port] = js.undefined
   
   /**
     * The smallest port number in a specified range of port numbers.
     */
-  var MinRange: Port = js.native
+  var MinRange: Port
 }
 object PortRange {
   

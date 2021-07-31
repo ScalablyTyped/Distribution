@@ -6,81 +6,81 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceReportsGenerate extends StandardParameters {
+trait ParamsResourceReportsGenerate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Accounts upon which to report.
     */
-  var accountId: js.UndefOr[js.Array[String]] = js.native
+  var accountId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional currency to use when reporting on monetary metrics. Defaults to
     * the account's currency if not set.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * Dimensions to base the report on.
     */
-  var dimension: js.UndefOr[js.Array[String]] = js.native
+  var dimension: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * End of the date range to report on in "YYYY-MM-DD" format, inclusive.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Filters to be run on the report.
     */
-  var filter: js.UndefOr[js.Array[String]] = js.native
+  var filter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional locale to use for translating report output to a local language.
     * Defaults to "en_US" if not specified.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of rows of report data to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Numeric columns to include in the report.
     */
-  var metric: js.UndefOr[js.Array[String]] = js.native
+  var metric: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of a dimension or metric to sort the resulting report on,
     * optionally prefixed with "+" to sort ascending or "-" to sort descending.
     * If no prefix is specified, the column is sorted ascending.
     */
-  var sort: js.UndefOr[js.Array[String]] = js.native
+  var sort: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Start of the date range to report on in "YYYY-MM-DD" format, inclusive.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * Index of the first row of report data to return.
     */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the report should be generated in the AdSense account's local
     * timezone. If false default PST/PDT timezone will be used.
     */
-  var useTimezoneReporting: js.UndefOr[Boolean] = js.native
+  var useTimezoneReporting: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceReportsGenerate {
   

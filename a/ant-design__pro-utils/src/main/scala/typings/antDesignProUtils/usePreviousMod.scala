@@ -2,12 +2,14 @@ package typings.antDesignProUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePreviousMod {
   
-  @JSImport("@ant-design/pro-utils/lib/hooks/usePrevious", JSImport.Default)
+  @JSImport("@ant-design/pro-utils/lib/hooks/usePrevious", JSImport.Namespace)
   @js.native
-  def default[T](state: T): js.UndefOr[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](state: T): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
 }

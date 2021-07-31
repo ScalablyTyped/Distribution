@@ -5,57 +5,57 @@ import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReactSortableTreeProps extends ThemeTreeProps {
+trait ReactSortableTreeProps
+  extends StObject
+     with ThemeTreeProps {
   
-  var canDrag: js.UndefOr[(js.Function1[/* data */ ExtendedNodeData, Boolean]) | Boolean] = js.native
+  var canDrag: js.UndefOr[(js.Function1[/* data */ ExtendedNodeData, Boolean]) | Boolean] = js.undefined
   
-  var canDrop: js.UndefOr[js.Function1[/* data */ OnDragPreviousAndNextLocation with NodeData, Boolean]] = js.native
+  var canDrop: js.UndefOr[js.Function1[/* data */ OnDragPreviousAndNextLocation & NodeData, Boolean]] = js.undefined
   
-  var canNodeHaveChildren: js.UndefOr[js.Function1[/* node */ TreeItem, Boolean]] = js.native
+  var canNodeHaveChildren: js.UndefOr[js.Function1[/* node */ TreeItem, Boolean]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var dndType: js.UndefOr[String] = js.native
+  var dndType: js.UndefOr[String] = js.undefined
   
-  var generateNodeProps: js.UndefOr[js.Function1[/* data */ ExtendedNodeData, StringDictionary[_]]] = js.native
+  var generateNodeProps: js.UndefOr[js.Function1[/* data */ ExtendedNodeData, StringDictionary[js.Any]]] = js.undefined
   
-  var getNodeKey: js.UndefOr[js.Function1[/* data */ TreeNode with TreeIndex, String | Double]] = js.native
+  var getNodeKey: js.UndefOr[js.Function1[/* data */ TreeNode & TreeIndex, String | Double]] = js.undefined
   
-  var isVirtualized: js.UndefOr[Boolean] = js.native
+  var isVirtualized: js.UndefOr[Boolean] = js.undefined
   
-  var maxDepth: js.UndefOr[Double] = js.native
+  var maxDepth: js.UndefOr[Double] = js.undefined
   
-  def onChange(treeData: js.Array[TreeItem]): Unit = js.native
+  def onChange(treeData: js.Array[TreeItem]): Unit
   
-  var onDragStateChanged: js.UndefOr[js.Function1[/* data */ OnDragStateChangedData, Unit]] = js.native
+  var onDragStateChanged: js.UndefOr[js.Function1[/* data */ OnDragStateChangedData, Unit]] = js.undefined
   
   var onMoveNode: js.UndefOr[
-    js.Function1[/* data */ NodeData with FullTree with OnMovePreviousAndNextLocation, Unit]
-  ] = js.native
+    js.Function1[/* data */ NodeData & FullTree & OnMovePreviousAndNextLocation, Unit]
+  ] = js.undefined
   
-  var onVisibilityToggle: js.UndefOr[js.Function1[/* data */ OnVisibilityToggleData, Unit]] = js.native
+  var onVisibilityToggle: js.UndefOr[js.Function1[/* data */ OnVisibilityToggleData, Unit]] = js.undefined
   
-  var onlyExpandSearchedNodes: js.UndefOr[Boolean] = js.native
+  var onlyExpandSearchedNodes: js.UndefOr[Boolean] = js.undefined
   
-  var rowDirection: js.UndefOr[ltr | rtl] = js.native
+  var rowDirection: js.UndefOr[ltr | rtl] = js.undefined
   
-  var searchFinishCallback: js.UndefOr[js.Function1[/* matches */ js.Array[NodeData], Unit]] = js.native
+  var searchFinishCallback: js.UndefOr[js.Function1[/* matches */ js.Array[NodeData], Unit]] = js.undefined
   
-  var searchFocusOffset: js.UndefOr[Double] = js.native
+  var searchFocusOffset: js.UndefOr[Double] = js.undefined
   
-  var searchMethod: js.UndefOr[js.Function1[/* data */ SearchData, Boolean]] = js.native
+  var searchMethod: js.UndefOr[js.Function1[/* data */ SearchData, Boolean]] = js.undefined
   
-  var searchQuery: js.UndefOr[String | js.Any] = js.native
+  var searchQuery: js.UndefOr[String | js.Any] = js.undefined
   
-  var shouldCopyOnOutsideDrop: js.UndefOr[Boolean | (js.Function1[/* data */ ShouldCopyData, Boolean])] = js.native
+  var shouldCopyOnOutsideDrop: js.UndefOr[Boolean | (js.Function1[/* data */ ShouldCopyData, Boolean])] = js.undefined
   
-  var theme: js.UndefOr[ThemeProps] = js.native
+  var theme: js.UndefOr[ThemeProps] = js.undefined
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object ReactSortableTreeProps {
   
@@ -78,7 +78,7 @@ object ReactSortableTreeProps {
     def setCanDragUndefined: Self = StObject.set(x, "canDrag", js.undefined)
     
     @scala.inline
-    def setCanDrop(value: /* data */ OnDragPreviousAndNextLocation with NodeData => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction1(value))
+    def setCanDrop(value: /* data */ OnDragPreviousAndNextLocation & NodeData => Boolean): Self = StObject.set(x, "canDrop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCanDropUndefined: Self = StObject.set(x, "canDrop", js.undefined)
@@ -102,13 +102,13 @@ object ReactSortableTreeProps {
     def setDndTypeUndefined: Self = StObject.set(x, "dndType", js.undefined)
     
     @scala.inline
-    def setGenerateNodeProps(value: /* data */ ExtendedNodeData => StringDictionary[_]): Self = StObject.set(x, "generateNodeProps", js.Any.fromFunction1(value))
+    def setGenerateNodeProps(value: /* data */ ExtendedNodeData => StringDictionary[js.Any]): Self = StObject.set(x, "generateNodeProps", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGenerateNodePropsUndefined: Self = StObject.set(x, "generateNodeProps", js.undefined)
     
     @scala.inline
-    def setGetNodeKey(value: /* data */ TreeNode with TreeIndex => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    def setGetNodeKey(value: /* data */ TreeNode & TreeIndex => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetNodeKeyUndefined: Self = StObject.set(x, "getNodeKey", js.undefined)
@@ -135,7 +135,7 @@ object ReactSortableTreeProps {
     def setOnDragStateChangedUndefined: Self = StObject.set(x, "onDragStateChanged", js.undefined)
     
     @scala.inline
-    def setOnMoveNode(value: /* data */ NodeData with FullTree with OnMovePreviousAndNextLocation => Unit): Self = StObject.set(x, "onMoveNode", js.Any.fromFunction1(value))
+    def setOnMoveNode(value: /* data */ NodeData & FullTree & OnMovePreviousAndNextLocation => Unit): Self = StObject.set(x, "onMoveNode", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMoveNodeUndefined: Self = StObject.set(x, "onMoveNode", js.undefined)

@@ -3,13 +3,13 @@ package typings.webix.mod.ui
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.gridlayout")
 @js.native
 class gridlayout ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$skin")
   var $skin_Original_gridlayout: WebixCallback = js.native
@@ -20,9 +20,12 @@ class gridlayout ()
   def attachEvent(`type`: gridlayoutEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: gridlayoutEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -49,8 +52,8 @@ class gridlayout ()
   def restore(state: js.Any): Unit = js.native
   def restore(state: js.Any, factory: WebixCallback): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(serializer: WebixCallback): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(serializer: WebixCallback): js.Array[js.Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

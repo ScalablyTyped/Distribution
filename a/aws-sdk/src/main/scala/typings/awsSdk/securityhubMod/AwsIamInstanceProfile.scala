@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamInstanceProfile extends StObject {
   
   /**
     * The ARN of the instance profile.
     */
-  var Arn: js.UndefOr[NonEmptyString] = js.native
+  var Arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the instance profile was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the instance profile.
     */
-  var InstanceProfileId: js.UndefOr[NonEmptyString] = js.native
+  var InstanceProfileId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the instance profile.
     */
-  var InstanceProfileName: js.UndefOr[NonEmptyString] = js.native
+  var InstanceProfileName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The path to the instance profile.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The roles associated with the instance profile.
     */
-  var Roles: js.UndefOr[AwsIamInstanceProfileRoles] = js.native
+  var Roles: js.UndefOr[AwsIamInstanceProfileRoles] = js.undefined
 }
 object AwsIamInstanceProfile {
   

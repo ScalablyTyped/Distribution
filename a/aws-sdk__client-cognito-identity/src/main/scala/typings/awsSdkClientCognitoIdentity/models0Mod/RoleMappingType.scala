@@ -2,7 +2,6 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait RoleMappingType extends StObject
 object RoleMappingType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[RoleMappingType with String] = js.native
+  def apply(value: String): js.UndefOr[RoleMappingType & String] = js.native
   
   @js.native
-  sealed trait RULES extends RoleMappingType
-  /* "Rules" */ val RULES: typings.awsSdkClientCognitoIdentity.models0Mod.RoleMappingType.RULES with String = js.native
+  sealed trait RULES
+    extends StObject
+       with RoleMappingType
+  /* "Rules" */ val RULES: typings.awsSdkClientCognitoIdentity.models0Mod.RoleMappingType.RULES & String = js.native
   
   @js.native
-  sealed trait TOKEN extends RoleMappingType
-  /* "Token" */ val TOKEN: typings.awsSdkClientCognitoIdentity.models0Mod.RoleMappingType.TOKEN with String = js.native
+  sealed trait TOKEN
+    extends StObject
+       with RoleMappingType
+  /* "Token" */ val TOKEN: typings.awsSdkClientCognitoIdentity.models0Mod.RoleMappingType.TOKEN & String = js.native
 }

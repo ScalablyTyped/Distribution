@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainValidationRecord extends StObject {
   
   /**
     * The domain name of the certificate validation record. For example, example.com or www.example.com.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * An object that describes the DNS records to add to your domain's DNS to validate it for the certificate.
     */
-  var resourceRecord: js.UndefOr[ResourceRecord] = js.native
+  var resourceRecord: js.UndefOr[ResourceRecord] = js.undefined
 }
 object DomainValidationRecord {
   

@@ -1,8 +1,9 @@
 package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
+import typings.winrtUwp.Windows.Foundation.Collections.IIterator
+import typings.winrtUwp.Windows.Media.Protection.PlayReady.IPlayReadyLicense
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes the PlayReadyLicense class iterator. */
@@ -10,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Initializes a new instance of the PlayReadyLicenseIterable class. */
 class PlayReadyLicenseIterable ()
-  extends typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable {
+  extends StObject
+     with typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyLicenseIterable {
   /**
     * Initializes a new instance of the PlayReadyLicenseIterable class.
     * @param contentHeader The content header used to locate associated licenses.
@@ -20,4 +22,11 @@ class PlayReadyLicenseIterable ()
     contentHeader: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyContentHeader,
     fullyEvaluated: Boolean
   ) = this()
+  
+  /**
+    * Returns an iterator that iterates over the items in the PlayReady license collection.
+    * @return The PlayReady license iterator.
+    */
+  /* CompleteClass */
+  override def first(): IIterator[IPlayReadyLicense] = js.native
 }

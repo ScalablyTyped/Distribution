@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderMod extends Shortcut {
@@ -20,30 +19,29 @@ object renderMod extends Shortcut {
   @js.native
   val default: RenderFunction = js.native
   
-  @js.native
   trait Instance extends StObject {
     
-    def cleanup(): Unit = js.native
+    def cleanup(): Unit
     
     /**
       * Clear output.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
     
     /**
       * Replace previous root node with a new one or update props of the current root node.
       */
-    var rerender: js.Function1[/* node */ ReactNode, Unit] = js.native
+    var rerender: js.Function1[/* node */ ReactNode, Unit]
     
     /**
       * Manually unmount the whole Ink app.
       */
-    var unmount: js.Function1[/* error */ js.UndefOr[Error | Double | Null], Unit] = js.native
+    var unmount: js.Function1[/* error */ js.UndefOr[Error | Double | Null], Unit]
     
     /**
       * Returns a promise, which resolves when app is unmounted.
       */
-    var waitUntilExit: js.Function0[js.Promise[Unit]] = js.native
+    var waitUntilExit: js.Function0[js.Promise[Unit]]
   }
   object Instance {
     
@@ -85,7 +83,6 @@ object renderMod extends Shortcut {
     Instance
   ]
   
-  @js.native
   trait RenderOptions extends StObject {
     
     /**
@@ -93,41 +90,41 @@ object renderMod extends Shortcut {
       *
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configure whether Ink should listen to Ctrl+C keyboard input and exit the app. This is needed in case `process.stdin` is in raw mode, because then Ctrl+C is ignored by default and process is expected to handle it manually.
       *
       * @default true
       */
-    var exitOnCtrlC: js.UndefOr[Boolean] = js.native
+    var exitOnCtrlC: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Patch console methods to ensure console output doesn't mix with Ink output.
       *
       * @default true
       */
-    var patchConsole: js.UndefOr[Boolean] = js.native
+    var patchConsole: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Error stream.
       * @default process.stderr
       */
-    var stderr: js.UndefOr[WriteStream] = js.native
+    var stderr: js.UndefOr[WriteStream] = js.undefined
     
     /**
       * Input stream where app will listen for input.
       *
       * @default process.stdin
       */
-    var stdin: js.UndefOr[ReadStream] = js.native
+    var stdin: js.UndefOr[ReadStream] = js.undefined
     
     /**
       * Output stream where app will be rendered.
       *
       * @default process.stdout
       */
-    var stdout: js.UndefOr[WriteStream] = js.native
+    var stdout: js.UndefOr[WriteStream] = js.undefined
   }
   object RenderOptions {
     

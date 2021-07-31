@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,13 +27,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param mouse - The Mouse device that is firing this event.
   * @param event - The original browser event that fired.
   */
-@js.native
 trait MouseEvent extends StObject {
   
   /**
     * True if the alt key was pressed when this event was fired.
     */
-  var altKey: Boolean = js.native
+  var altKey: Boolean
   
   /**
     * The mouse button associated with this event. Can be:
@@ -43,58 +41,58 @@ trait MouseEvent extends StObject {
     * {@link pc.MOUSEBUTTON_MIDDLE}
     * {@link pc.MOUSEBUTTON_RIGHT}
     */
-  var button: Double = js.native
+  var button: Double
   
   /**
     * True if the ctrl key was pressed when this event was fired.
     */
-  var ctrlKey: Boolean = js.native
+  var ctrlKey: Boolean
   
   /**
     * The change in x co-ordinate since the last mouse event.
     */
-  var dx: Double = js.native
+  var dx: Double
   
   /**
     * The change in y co-ordinate since the last mouse event.
     */
-  var dy: Double = js.native
+  var dy: Double
   
   /**
     * The element that the mouse was fired from.
     */
-  var element: Element = js.native
+  var element: Element
   
   /**
     * The original browser event.
     */
-  var event: MouseEvent = js.native
+  var event: MouseEvent
   
   /**
     * True if the meta key was pressed when this event was fired.
     */
-  var metaKey: Boolean = js.native
+  var metaKey: Boolean
   
   /**
     * True if the shift key was pressed when this event was fired.
     */
-  var shiftKey: Boolean = js.native
+  var shiftKey: Boolean
   
   /**
     * A value representing the amount the mouse wheel has moved, only
     valid for {@link mousewheel} events.
     */
-  var wheelDelta: Double = js.native
+  var wheelDelta: Double
   
   /**
     * The x co-ordinate of the mouse pointer relative to the element pc.Mouse is attached to.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y co-ordinate of the mouse pointer relative to the element pc.Mouse is attached to.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object MouseEvent {
   

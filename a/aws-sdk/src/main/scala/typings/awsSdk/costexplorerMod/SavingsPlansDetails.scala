@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansDetails extends StObject {
   
   /**
     * A group of instance types that Savings Plans applies to.
     */
-  var InstanceFamily: js.UndefOr[GenericString] = js.native
+  var InstanceFamily: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The unique ID used to distinguish Savings Plans from one another.
     */
-  var OfferingId: js.UndefOr[GenericString] = js.native
+  var OfferingId: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A collection of AWS resources in a geographic area. Each AWS Region is isolated and independent of the other Regions.
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
 }
 object SavingsPlansDetails {
   

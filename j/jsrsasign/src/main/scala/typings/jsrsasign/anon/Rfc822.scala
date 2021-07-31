@@ -3,13 +3,13 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasign.KJUR.asn1.x509.GeneralNameParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Rfc822 extends GeneralNameParam {
+trait Rfc822
+  extends StObject
+     with GeneralNameParam {
   
-  var rfc822: String = js.native
+  var rfc822: String
 }
 object Rfc822 {
   

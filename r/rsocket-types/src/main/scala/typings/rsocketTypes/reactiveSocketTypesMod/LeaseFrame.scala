@@ -4,32 +4,32 @@ import typings.rsocketTypes.rsocketTypesNumbers.`0`
 import typings.rsocketTypes.rsocketTypesNumbers.`0x02`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeaseFrame extends Frame {
+trait LeaseFrame
+  extends StObject
+     with Frame {
   
-  var flags: Double = js.native
+  var flags: Double
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[Encodable] = js.native
+  var metadata: js.UndefOr[Encodable] = js.undefined
   
-  var requestCount: Double = js.native
+  var requestCount: Double
   
-  var streamId: `0` = js.native
+  var streamId: `0`
   
-  var ttl: Double = js.native
+  var ttl: Double
   
-  var `type`: `0x02` = js.native
+  var `type`: `0x02`
 }
 object LeaseFrame {
   
   @scala.inline
-  def apply(flags: Double, requestCount: Double, streamId: `0`, ttl: Double, `type`: `0x02`): LeaseFrame = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(flags: Double, requestCount: Double, ttl: Double): LeaseFrame = {
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], requestCount = requestCount.asInstanceOf[js.Any], streamId = 0, ttl = ttl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(0x02)
     __obj.asInstanceOf[LeaseFrame]
   }
   

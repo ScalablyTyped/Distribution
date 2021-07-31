@@ -2,20 +2,18 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a location in a source code file.
   */
-@js.native
 trait SchemaSourceLocation extends StObject {
   
   /**
     * Source file name. Depending on the runtime environment, this might be a
     * simple name or a fully-qualified name.
     */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable name of the function or method being invoked, with
@@ -25,12 +23,12 @@ trait SchemaSourceLocation extends StObject {
     * qual.if.ied.Class.method (Java), dir/package.func (Go), function
     * (Python).
     */
-  var functionName: js.UndefOr[String] = js.native
+  var functionName: js.UndefOr[String] = js.undefined
   
   /**
     * Line within the source file.
     */
-  var line: js.UndefOr[String] = js.native
+  var line: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceLocation {
   

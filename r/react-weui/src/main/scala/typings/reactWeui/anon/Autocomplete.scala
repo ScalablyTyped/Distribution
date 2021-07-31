@@ -2,27 +2,25 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Autocomplete extends StObject {
   
-  var autocomplete: String = js.native
+  var autocomplete: String
   
-  var lang: Cancel = js.native
+  var lang: Cancel
   
-  var onCancel: js.Any = js.native
+  var onCancel: js.Any
   
-  var onChange: js.Any = js.native
+  var onChange: js.Any
   
-  var onClear: js.Any = js.native
+  var onClear: js.Any
   
-  var onSubmit: js.Any = js.native
+  var onSubmit: js.Any
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var searchName: String = js.native
+  var searchName: String
 }
 object Autocomplete {
   

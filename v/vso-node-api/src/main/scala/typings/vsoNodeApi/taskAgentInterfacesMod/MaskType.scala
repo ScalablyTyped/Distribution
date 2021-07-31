@@ -2,7 +2,6 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait MaskType extends StObject
 object MaskType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MaskType with Double] = js.native
+  def apply(value: Double): js.UndefOr[MaskType & Double] = js.native
   
   @js.native
-  sealed trait Regex extends MaskType
-  /* 2 */ val Regex: typings.vsoNodeApi.taskAgentInterfacesMod.MaskType.Regex with Double = js.native
+  sealed trait Regex
+    extends StObject
+       with MaskType
+  /* 2 */ val Regex: typings.vsoNodeApi.taskAgentInterfacesMod.MaskType.Regex & Double = js.native
   
   @js.native
-  sealed trait Variable extends MaskType
-  /* 1 */ val Variable: typings.vsoNodeApi.taskAgentInterfacesMod.MaskType.Variable with Double = js.native
+  sealed trait Variable
+    extends StObject
+       with MaskType
+  /* 1 */ val Variable: typings.vsoNodeApi.taskAgentInterfacesMod.MaskType.Variable & Double = js.native
 }

@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.system
 import typings.chromeApps.chrome.double
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////
@@ -28,37 +27,42 @@ object powerSource {
       * (e.g. barrel jack plugs)
       */
     @js.native
-    sealed trait mains extends PowerSourceType
+    sealed trait mains
+      extends StObject
+         with PowerSourceType
     
     /** Unspecified type. */
     @js.native
-    sealed trait unknown extends PowerSourceType
+    sealed trait unknown
+      extends StObject
+         with PowerSourceType
     
     /**
       * USB charger, including both low-power Type-A chargers and high-power
       * Type-C chargers using USB Power Delivery.
       */
     @js.native
-    sealed trait usb extends PowerSourceType
+    sealed trait usb
+      extends StObject
+         with PowerSourceType
   }
   
-  @js.native
   trait PowerSourceInfo extends StObject {
     
     /** Whether this power source is connected to the device. */
-    var active: Boolean = js.native
+    var active: Boolean
     
     /**
       * Maximum power this source is capable of delivering if known.
       * Reported in watts, rounded to two significant digits.
       */
-    var maxPower: js.UndefOr[double] = js.native
+    var maxPower: js.UndefOr[double] = js.undefined
     
     /**
       * Type of power source
       * @see PowerSourceType
       */
-    var `type`: (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PowerSourceType * / any */ String) | PowerSourceType = js.native
+    var `type`: (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PowerSourceType * / any */ String) | PowerSourceType
   }
   object PowerSourceInfo {
     

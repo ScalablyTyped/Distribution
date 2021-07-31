@@ -11,7 +11,6 @@ import typings.elliptic.mod.eddsa.Signature
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elliptic", "eddsa")
@@ -78,15 +77,17 @@ object eddsa {
   }
   object KeyPair {
     
-    /* static member */
-    @JSImport("elliptic", "eddsa.KeyPair.fromPublic")
+    @JSImport("elliptic", "eddsa.KeyPair")
     @js.native
-    def fromPublic(eddsa: eddsa, pub: Bytes): KeyPair = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("elliptic", "eddsa.KeyPair.fromSecret")
-    @js.native
-    def fromSecret(eddsa: eddsa, secret: Bytes): KeyPair = js.native
+    @scala.inline
+    def fromPublic(eddsa: eddsa, pub: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(eddsa.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    
+    /* static member */
+    @scala.inline
+    def fromSecret(eddsa: eddsa, secret: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSecret")(eddsa.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   }
   
   @JSImport("elliptic", "eddsa.Signature")
@@ -102,12 +103,11 @@ object eddsa {
   
   type Bytes = String | Buffer
   
-  @js.native
   trait KeyPairOptions extends StObject {
     
-    var pub: Buffer | Point = js.native
+    var pub: Buffer | Point
     
-    var secret: Buffer = js.native
+    var secret: Buffer
   }
   object KeyPairOptions {
     

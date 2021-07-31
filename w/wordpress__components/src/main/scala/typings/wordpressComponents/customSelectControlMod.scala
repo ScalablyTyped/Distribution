@@ -7,7 +7,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.customSelectControlMod.CustomSelectControl.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customSelectControlMod {
@@ -26,16 +25,15 @@ object customSelectControlMod {
   
   object CustomSelectControl {
     
-    @js.native
     trait Option extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var key: String = js.native
+      var key: String
       
-      var name: String = js.native
+      var name: String
       
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
     }
     object Option {
       
@@ -68,37 +66,36 @@ object customSelectControlMod {
       }
     }
     
-    @js.native
     trait Props extends StObject {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Used to visually hide the label. It will always be visible to screen readers.
         *
         * @defaultValue false
         */
-      var hideLabelFromVision: js.UndefOr[Boolean] = js.native
+      var hideLabelFromVision: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The label for the control.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * Function called with the control's internal state changes. The `selectedItem` property contains the next selected item.
         */
-      var onChange: js.UndefOr[js.Function1[/* changes */ UseSelectStateChange[Option], Unit]] = js.native
+      var onChange: js.UndefOr[js.Function1[/* changes */ UseSelectStateChange[Option], Unit]] = js.undefined
       
       /**
         * The options that can be chosen from.
         */
-      var options: js.Array[Option] = js.native
+      var options: js.Array[Option]
       
       /**
         * Can be used to externally control the value of the control.
         */
-      var value: js.UndefOr[Option] = js.native
+      var value: js.UndefOr[Option] = js.undefined
     }
     object Props {
       

@@ -3,7 +3,6 @@ package typings.audioContext
 import typings.std.AudioContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,30 +12,30 @@ object mod {
     * @param options Takes an Options object or just provide a sample rate.
     * @returns the audio context or null if there was an error or not a web browser.
     */
-  @JSImport("audio-context", JSImport.Namespace)
-  @js.native
-  def apply(): AudioContext | Null = js.native
-  @JSImport("audio-context", JSImport.Namespace)
-  @js.native
-  def apply(options: Double): AudioContext | Null = js.native
-  @JSImport("audio-context", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): AudioContext | Null = js.native
+  @scala.inline
+  def apply(): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[AudioContext | Null]
+  @scala.inline
+  def apply(options: Double): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
+  @scala.inline
+  def apply(options: Options): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
   
+  @JSImport("audio-context", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var channels: js.UndefOr[Double] = js.native
+    var channels: js.UndefOr[Double] = js.undefined
     
-    var contextAttributes: js.UndefOr[js.Object] = js.native
+    var contextAttributes: js.UndefOr[js.Object] = js.undefined
     
-    var latencyHint: js.UndefOr[String | Double] = js.native
+    var latencyHint: js.UndefOr[String | Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var offline: js.UndefOr[Boolean] = js.native
+    var offline: js.UndefOr[Boolean] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

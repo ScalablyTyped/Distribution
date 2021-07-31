@@ -2,13 +2,11 @@ package typings.googleapis.proximitybeaconV1beta1Mod.proximitybeaconV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents one beacon observed once.
   */
-@js.native
 trait SchemaObservation extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaObservation extends StObject {
     * authorized to resolve the given beacon. Otherwise no data will be
     * returned for that beacon. Required.
     */
-  var advertisedId: js.UndefOr[SchemaAdvertisedId] = js.native
+  var advertisedId: js.UndefOr[SchemaAdvertisedId] = js.undefined
   
   /**
     * The array of telemetry bytes received from the beacon. The server is
     * responsible for parsing it. This field may frequently be empty, as with a
     * beacon that transmits telemetry only occasionally.
     */
-  var telemetry: js.UndefOr[String] = js.native
+  var telemetry: js.UndefOr[String] = js.undefined
   
   /**
     * Time when the beacon was observed.
     */
-  var timestampMs: js.UndefOr[String] = js.native
+  var timestampMs: js.UndefOr[String] = js.undefined
 }
 object SchemaObservation {
   

@@ -2,20 +2,18 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabRemoveInfo extends StObject {
   
   /** True when the tab is being closed because its window is being closed. */
-  var isWindowClosing: Boolean = js.native
+  var isWindowClosing: Boolean
   
   /**
     * The window whose tab is closed.
     * @since Chrome 25.
     */
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object TabRemoveInfo {
   

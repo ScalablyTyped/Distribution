@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait SocketProtectionLevel extends StObject
 object SocketProtectionLevel extends StObject {
   
   @js.native
-  sealed trait plainSocket extends SocketProtectionLevel
+  sealed trait plainSocket
+    extends StObject
+       with SocketProtectionLevel
   
   @js.native
-  sealed trait ssl extends SocketProtectionLevel
+  sealed trait ssl
+    extends StObject
+       with SocketProtectionLevel
   
   @js.native
-  sealed trait sslAllowNullEncryption extends SocketProtectionLevel
+  sealed trait sslAllowNullEncryption
+    extends StObject
+       with SocketProtectionLevel
 }

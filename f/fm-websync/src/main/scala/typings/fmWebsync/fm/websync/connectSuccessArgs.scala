@@ -3,16 +3,16 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait connectSuccessArgs extends baseResponseArgs {
+trait connectSuccessArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * Whether the call to client.connect was triggered by a reconnection after network failure.
     */
-  var isReconnect: Boolean = js.native
+  var isReconnect: Boolean
 }
 object connectSuccessArgs {
   

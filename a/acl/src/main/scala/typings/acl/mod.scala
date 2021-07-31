@@ -16,45 +16,51 @@ import typings.std.Error
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("acl", JSImport.Namespace)
   @js.native
-  val ^ : AclStatic = js.native
+  val ^ : js.Object & AclStatic = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("acl", JSImport.Namespace)
   @js.native
-  class Class protected () extends Acl {
-    def this(backend: Backend[_]) = this()
-    def this(backend: Backend[_], logger: Logger) = this()
-    def this(backend: Backend[_], logger: js.UndefOr[scala.Nothing], options: Option) = this()
-    def this(backend: Backend[_], logger: Logger, options: Option) = this()
+  class Class protected ()
+    extends StObject
+       with Acl {
+    def this(backend: Backend[js.Any]) = this()
+    def this(backend: Backend[js.Any], logger: Logger) = this()
+    def this(backend: Backend[js.Any], logger: Unit, options: Option) = this()
+    def this(backend: Backend[js.Any], logger: Logger, options: Option) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "memoryBackend")
   @js.native
   class memoryBackend ()
-    extends Backend[js.Array[Action]]
+    extends StObject
+       with Backend[js.Array[Action]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "mongodbBackend")
   @js.native
-  class mongodbBackend protected () extends Backend[Callback] {
+  class mongodbBackend protected ()
+    extends StObject
+       with Backend[Callback] {
     def this(db: Db) = this()
     def this(db: Db, prefix: String) = this()
-    def this(db: Db, prefix: js.UndefOr[scala.Nothing], useSingle: Boolean) = this()
     def this(db: Db, prefix: String, useSingle: Boolean) = this()
+    def this(db: Db, prefix: Unit, useSingle: Boolean) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("acl", "redisBackend")
   @js.native
-  class redisBackend protected () extends Backend[RedisClient] {
+  class redisBackend protected ()
+    extends StObject
+       with Backend[RedisClient] {
     def this(redis: RedisClient) = this()
     def this(redis: RedisClient, prefix: String) = this()
   }
@@ -76,25 +82,27 @@ object mod extends Shortcut {
     def allowedPermissions(userId: Value, resources: strings): typings.bluebird.mod.^[Unit] = js.native
     def allowedPermissions(userId: Value, resources: strings, cb: AnyCallback): typings.bluebird.mod.^[Unit] = js.native
     
-    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings): typings.bluebird.mod.^[_] = js.native
-    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[_] = js.native
+    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings): typings.bluebird.mod.^[js.Any] = js.native
+    def areAnyRolesAllowed(roles: strings, resource: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[js.Any] = js.native
     
     def hasRole(userId: Value, role: String): typings.bluebird.mod.^[Boolean] = js.native
-    def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ Error, /* isInRole */ Boolean, _]): typings.bluebird.mod.^[Boolean] = js.native
+    def hasRole(userId: Value, role: String, cb: js.Function2[/* err */ Error, /* isInRole */ Boolean, js.Any]): typings.bluebird.mod.^[Boolean] = js.native
     
     def isAllowed(userId: Value, resources: strings, permissions: strings): typings.bluebird.mod.^[Boolean] = js.native
     def isAllowed(userId: Value, resources: strings, permissions: strings, cb: AllowedCallback): typings.bluebird.mod.^[Boolean] = js.native
     
-    def middleware(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: js.UndefOr[scala.Nothing], userId: js.UndefOr[Value], actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: js.UndefOr[scala.Nothing], userId: GetUserId): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: js.UndefOr[scala.Nothing], userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: js.UndefOr[scala.Nothing], userId: Value): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: Double, userId: js.UndefOr[Value], actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def middleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double, userId: Unit, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double, userId: GetUserId): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double, userId: Value): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Double, userId: Value, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Unit, userId: Unit, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Unit, userId: GetUserId): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Unit, userId: GetUserId, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Unit, userId: Value): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(numPathComponents: Unit, userId: Value, actions: strings): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     def permittedResources(roles: strings, permissions: strings): typings.bluebird.mod.^[Unit] = js.native
     def permittedResources(roles: strings, permissions: strings, cb: Callback): typings.bluebird.mod.^[Unit] = js.native
@@ -114,24 +122,23 @@ object mod extends Shortcut {
     def removeUserRoles(userId: Value, roles: strings): typings.bluebird.mod.^[Unit] = js.native
     def removeUserRoles(userId: Value, roles: strings, cb: Callback): typings.bluebird.mod.^[Unit] = js.native
     
-    def roleUsers(role: Value): typings.bluebird.mod.^[_] = js.native
-    def roleUsers(role: Value, cb: js.Function2[/* err */ Error, /* users */ Values, _]): typings.bluebird.mod.^[_] = js.native
+    def roleUsers(role: Value): typings.bluebird.mod.^[js.Any] = js.native
+    def roleUsers(role: Value, cb: js.Function2[/* err */ Error, /* users */ Values, js.Any]): typings.bluebird.mod.^[js.Any] = js.native
     
     def userRoles(userId: Value): typings.bluebird.mod.^[js.Array[String]] = js.native
-    def userRoles(userId: Value, cb: js.Function2[/* err */ Error, /* roles */ js.Array[String], _]): typings.bluebird.mod.^[js.Array[String]] = js.native
+    def userRoles(userId: Value, cb: js.Function2[/* err */ Error, /* roles */ js.Array[String], js.Any]): typings.bluebird.mod.^[js.Array[String]] = js.native
     
-    def whatResources(roles: strings): typings.bluebird.mod.^[_] = js.native
-    def whatResources(roles: strings, cb: AnyCallback): typings.bluebird.mod.^[_] = js.native
-    def whatResources(roles: strings, permissions: strings): typings.bluebird.mod.^[_] = js.native
-    def whatResources(roles: strings, permissions: strings, cb: AnyCallback): typings.bluebird.mod.^[_] = js.native
+    def whatResources(roles: strings): typings.bluebird.mod.^[js.Any] = js.native
+    def whatResources(roles: strings, cb: AnyCallback): typings.bluebird.mod.^[js.Any] = js.native
+    def whatResources(roles: strings, permissions: strings): typings.bluebird.mod.^[js.Any] = js.native
+    def whatResources(roles: strings, permissions: strings, cb: AnyCallback): typings.bluebird.mod.^[js.Any] = js.native
   }
   
-  @js.native
   trait AclAllow extends StObject {
     
-    var permissions: strings = js.native
+    var permissions: strings
     
-    var resources: strings = js.native
+    var resources: strings
   }
   object AclAllow {
     
@@ -158,12 +165,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait AclSet extends StObject {
     
-    var allows: js.Array[AclAllow] = js.native
+    var allows: js.Array[AclAllow]
     
-    var roles: strings = js.native
+    var roles: strings
   }
   object AclSet {
     
@@ -192,11 +198,12 @@ object mod extends Shortcut {
   
   @js.native
   trait AclStatic
-    extends Instantiable1[/* backend */ Backend[js.Any], Acl]
+    extends StObject
+       with Instantiable1[/* backend */ Backend[js.Any], Acl]
        with Instantiable2[/* backend */ Backend[js.Any], /* logger */ Logger, Acl]
        with Instantiable3[
           /* backend */ Backend[js.Any], 
-          js.UndefOr[/* logger */ Logger], 
+          (/* logger */ Logger) | (/* logger */ Unit), 
           /* options */ Option, 
           Acl
         ] {
@@ -241,36 +248,35 @@ object mod extends Shortcut {
     def get(bucket: String, key: Value): Unit = js.native
     def get(bucket: String, key: Value, cb: Action): Unit = js.native
     
-    def getAsync(bucket: String, key: Value): typings.bluebird.mod.^[_] = js.native
-    def getAsync(bucket: String, key: Value, cb: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]): typings.bluebird.mod.^[_] = js.native
+    def getAsync(bucket: String, key: Value): typings.bluebird.mod.^[js.Any] = js.native
+    def getAsync(bucket: String, key: Value, cb: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]): typings.bluebird.mod.^[js.Any] = js.native
     
     def remove(transaction: T, bucket: String, key: Value, values: Values): Unit = js.native
     
     def union(bucket: String, keys: js.Array[Value]): Unit = js.native
     def union(bucket: String, keys: js.Array[Value], cb: Action): Unit = js.native
     
-    def unionAsync(bucket: String, keys: js.Array[Value]): typings.bluebird.mod.^[js.Array[_]] = js.native
+    def unionAsync(bucket: String, keys: js.Array[Value]): typings.bluebird.mod.^[js.Array[js.Any]] = js.native
     def unionAsync(
       bucket: String,
       keys: js.Array[Value],
-      cb: js.Function2[/* error */ js.UndefOr[Error], /* results */ js.Array[_], Unit]
-    ): typings.bluebird.mod.^[js.Array[_]] = js.native
+      cb: js.Function2[/* error */ js.UndefOr[Error], /* results */ js.Array[js.Any], Unit]
+    ): typings.bluebird.mod.^[js.Array[js.Any]] = js.native
   }
   
-  @js.native
   trait BucketsOption extends StObject {
     
-    var meta: js.UndefOr[String] = js.native
+    var meta: js.UndefOr[String] = js.undefined
     
-    var parents: js.UndefOr[String] = js.native
+    var parents: js.UndefOr[String] = js.undefined
     
-    var permissions: js.UndefOr[String] = js.native
+    var permissions: js.UndefOr[String] = js.undefined
     
-    var resources: js.UndefOr[String] = js.native
+    var resources: js.UndefOr[String] = js.undefined
     
-    var roles: js.UndefOr[String] = js.native
+    var roles: js.UndefOr[String] = js.undefined
     
-    var users: js.UndefOr[String] = js.native
+    var users: js.UndefOr[String] = js.undefined
   }
   object BucketsOption {
     
@@ -328,7 +334,7 @@ object mod extends Shortcut {
     
     def apply(args: IArguments): Contract | NoOp = js.native
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any] = js.native
     
     var checkedParams: js.Array[String] = js.native
     
@@ -343,10 +349,9 @@ object mod extends Shortcut {
   
   type GetUserId = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Value]
   
-  @js.native
   trait Logger extends StObject {
     
-    def debug(msg: String): js.Any = js.native
+    def debug(msg: String): js.Any
   }
   object Logger {
     
@@ -367,23 +372,30 @@ object mod extends Shortcut {
   type MemoryBackend = Backend[js.Array[Action]]
   
   @js.native
-  trait MemoryBackendStatic extends Instantiable0[MemoryBackend]
+  trait MemoryBackendStatic
+    extends StObject
+       with Instantiable0[MemoryBackend]
   
   // for mongodb backend
   type MongodbBackend = Backend[Callback]
   
   @js.native
   trait MongodbBackendStatic
-    extends Instantiable1[/* db */ Db, MongodbBackend]
+    extends StObject
+       with Instantiable1[/* db */ Db, MongodbBackend]
        with Instantiable2[/* db */ Db, /* prefix */ String, MongodbBackend]
-       with Instantiable3[/* db */ Db, js.UndefOr[/* prefix */ String], /* useSingle */ Boolean, MongodbBackend]
+       with Instantiable3[
+          /* db */ Db, 
+          (/* prefix */ String) | (/* prefix */ Unit), 
+          /* useSingle */ Boolean, 
+          MongodbBackend
+        ]
   
-  @js.native
   trait NoOp extends StObject {
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    def params(types: String*): NoOp = js.native
+    def params(types: String*): NoOp
   }
   object NoOp {
     
@@ -404,10 +416,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var buckets: js.UndefOr[BucketsOption] = js.native
+    var buckets: js.UndefOr[BucketsOption] = js.undefined
   }
   object Option {
     
@@ -433,17 +444,18 @@ object mod extends Shortcut {
   
   @js.native
   trait RedisBackendStatic
-    extends Instantiable1[/* redis */ RedisClient, RedisBackend]
+    extends StObject
+       with Instantiable1[/* redis */ RedisClient, RedisBackend]
        with Instantiable2[/* redis */ RedisClient, /* prefix */ String, RedisBackend]
   
   type Value = String | Double
   
   type Values = Value | js.Array[Value]
   
-  type _To = AclStatic
+  type _To = js.Object & AclStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: AclStatic = ^
+  override def _to: js.Object & AclStatic = ^
   
   type strings = String | js.Array[String]
 }

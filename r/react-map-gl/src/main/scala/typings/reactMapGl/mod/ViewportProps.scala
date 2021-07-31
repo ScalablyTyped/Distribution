@@ -3,43 +3,41 @@ package typings.reactMapGl.mod
 import typings.reactMapGl.reactMapGlStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportProps extends StObject {
   
-  var altitude: Double = js.native
+  var altitude: Double
   
-  var bearing: Double = js.native
+  var bearing: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var maxPitch: Double = js.native
+  var maxPitch: Double
   
-  var maxZoom: Double = js.native
+  var maxZoom: Double
   
-  var minPitch: Double = js.native
+  var minPitch: Double
   
-  var minZoom: Double = js.native
+  var minZoom: Double
   
-  var pitch: Double = js.native
+  var pitch: Double
   
-  var transitionDuration: js.UndefOr[Double | auto] = js.native
+  var transitionDuration: js.UndefOr[Double | auto] = js.undefined
   
-  var transitionEasing: js.UndefOr[EasingFunction] = js.native
+  var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
   
-  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.native
+  var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
   
-  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.native
+  var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
   
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object ViewportProps {
   

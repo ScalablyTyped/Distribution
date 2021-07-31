@@ -3,51 +3,43 @@ package typings.emberString
 import typings.emberTemplate.handlebarsMod.SafeString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ember/string", "camelize")
+  @JSImport("@ember/string", JSImport.Namespace)
   @js.native
-  def camelize(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ember/string", "capitalize")
-  @js.native
-  def capitalize(str: String): String = js.native
+  @scala.inline
+  def camelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ember/string", "classify")
-  @js.native
-  def classify(str: String): String = js.native
+  @scala.inline
+  def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ember/string", "dasherize")
-  @js.native
-  def dasherize(str: String): String = js.native
+  @scala.inline
+  def classify(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classify")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ember/string", "decamelize")
-  @js.native
-  def decamelize(str: String): String = js.native
+  @scala.inline
+  def dasherize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dasherize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ember/string", "htmlSafe")
-  @js.native
-  def htmlSafe(str: String): SafeString = js.native
+  @scala.inline
+  def decamelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decamelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ember/string", "isHTMLSafe")
-  @js.native
-  def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = js.native
+  @scala.inline
+  def htmlSafe(str: String): SafeString = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlSafe")(str.asInstanceOf[js.Any]).asInstanceOf[SafeString]
   
-  @JSImport("@ember/string", "loc")
-  @js.native
-  def loc(template: String): String = js.native
-  @JSImport("@ember/string", "loc")
-  @js.native
-  def loc(template: String, args: js.Array[String]): String = js.native
+  @scala.inline
+  def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLSafe")(str.asInstanceOf[js.Any]).asInstanceOf[/* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean]
   
-  @JSImport("@ember/string", "underscore")
-  @js.native
-  def underscore(str: String): String = js.native
+  @scala.inline
+  def loc(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loc")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def loc(template: String, args: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("loc")(template.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ember/string", "w")
-  @js.native
-  def w(str: String): js.Array[String] = js.native
+  @scala.inline
+  def underscore(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underscore")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def w(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("w")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

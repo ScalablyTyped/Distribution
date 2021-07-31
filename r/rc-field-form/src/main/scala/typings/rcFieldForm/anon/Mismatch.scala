@@ -3,13 +3,11 @@ package typings.rcFieldForm.anon
 import typings.rcFieldForm.interfaceMod.ValidateMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mismatch extends StObject {
   
-  var mismatch: js.UndefOr[ValidateMessage] = js.native
+  var mismatch: js.UndefOr[ValidateMessage] = js.undefined
 }
 object Mismatch {
   

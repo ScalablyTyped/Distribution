@@ -10,9 +10,9 @@ A collection of components to listen to 🏁 React Final Form fields
 | ------------------ | :-------------: |
 | Full name          | react-final-form-listeners |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 13 |
-| # downloads        | 1387837 |
+| # downloads        | 1457235 |
 | # stars            | 0 |
 
 ## Links

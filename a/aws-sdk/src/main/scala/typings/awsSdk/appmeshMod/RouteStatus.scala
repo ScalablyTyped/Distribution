@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteStatus extends StObject {
   
   /**
     * The current status for the route.
     */
-  var status: RouteStatusCode = js.native
+  var status: RouteStatusCode
 }
 object RouteStatus {
   

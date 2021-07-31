@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteFilterPrefix extends StObject {
   
   /**
     * The CIDR block for the advertised route. Separate multiple routes using commas. An IPv6 CIDR must use /64 or shorter.
     */
-  var cidr: js.UndefOr[CIDR] = js.native
+  var cidr: js.UndefOr[CIDR] = js.undefined
 }
 object RouteFilterPrefix {
   

@@ -6,18 +6,20 @@ import typings.reactMdList.listItemAddonMod.ListItemAddonPosition
 import typings.reactMdList.listItemAddonMod.ListItemAddonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemChildrenMod {
   
   object ListItemChildren {
     
+    @scala.inline
+    def apply(
+      hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list/types/ListItemChildren", "ListItemChildren")
     @js.native
-    def apply(
-      hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapChildren: ListItemChildrenProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -108,7 +110,6 @@ object listItemChildrenMod {
     }
   }
   
-  @js.native
   trait ListItemChildrenProps extends StObject {
     
     /**
@@ -116,33 +117,33 @@ object listItemChildrenMod {
       * there is child content, it will be treated as primary text and update the
       * styles automatically.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the left and/or right addons should be "forcefully" wrapped in a
       * `<span>` with the spacing class names applied instead of attempting to
       * clone it into the provided icon element.
       */
-    var forceAddonWrap: js.UndefOr[Boolean] = js.native
+    var forceAddonWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional addon to display to the left of the `primaryText` or
       * `children` and should be used with the `leftAddonType` prop to adjust
       * spacing.
       */
-    var leftAddon: js.UndefOr[ReactNode] = js.native
+    var leftAddon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The vertical position the left icon, avatar, media, or large media
       * should be placed.
       */
-    var leftAddonPosition: js.UndefOr[ListItemAddonPosition] = js.native
+    var leftAddonPosition: js.UndefOr[ListItemAddonPosition] = js.undefined
     
     /**
       * The type of the addon that appears to the left of the `primaryText` or
       * `children`.
       */
-    var leftAddonType: js.UndefOr[ListItemAddonType] = js.native
+    var leftAddonType: js.UndefOr[ListItemAddonType] = js.undefined
     
     /**
       * An optional element that should be rendered as the `primaryText` within the
@@ -152,39 +153,39 @@ object listItemChildrenMod {
       * applied. By default, this will only allow one line of text and add ellipsis
       * for any text overflow.
       */
-    var primaryText: js.UndefOr[ReactNode] = js.native
+    var primaryText: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional addon to display to the right of the `primaryText` or
       * `children` and should be used with the `rightAddonType` prop to adjust
       * spacing.
       */
-    var rightAddon: js.UndefOr[ReactNode] = js.native
+    var rightAddon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The vertical position the right icon, avatar, media, or large media
       * should be placed.
       */
-    var rightAddonPosition: js.UndefOr[ListItemAddonPosition] = js.native
+    var rightAddonPosition: js.UndefOr[ListItemAddonPosition] = js.undefined
     
     /**
       * The type of the addon that appears to the right of the `primaryText` or
       * `children`.
       */
-    var rightAddonType: js.UndefOr[ListItemAddonType] = js.native
+    var rightAddonType: js.UndefOr[ListItemAddonType] = js.undefined
     
     /**
       * An optional element that should be rendered as the `secondaryText` within
       * the list item. By default, this will only span one line and add ellipsis
       * for overflow.
       */
-    var secondaryText: js.UndefOr[ReactNode] = js.native
+    var secondaryText: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional className to apply to the `<span>` that surrounds the
       * `secondaryText` within the list item.
       */
-    var secondaryTextClassName: js.UndefOr[String] = js.native
+    var secondaryTextClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean if the children should be treated as the `primaryText` prop. This
@@ -197,13 +198,13 @@ object listItemChildrenMod {
       * NOTE: If the `secondaryText` prop is provided, this will always be
       * considered `true`.
       */
-    var textChildren: js.UndefOr[Boolean] = js.native
+    var textChildren: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional className to apply to the `<span>` that surrounds the
       * `primaryText` and optionally `secondaryText` within the list item.
       */
-    var textClassName: js.UndefOr[String] = js.native
+    var textClassName: js.UndefOr[String] = js.undefined
   }
   object ListItemChildrenProps {
     

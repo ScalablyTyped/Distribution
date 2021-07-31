@@ -9,13 +9,16 @@ import typings.heredatalens.H.datalens.QueryTileProvider.Y
 import typings.heredatalens.H.datalens.QueryTileProvider.Zoom
 import typings.heredatalens.H.datalens.RasterLayer.TilePoint
 import typings.heredatalens.H.datalens.Service.Data
+import typings.heremaps.H.geo.Rect
 import typings.heremaps.H.map.Icon
+import typings.heremaps.H.map.layer.ITileLayer.Response
 import typings.heremaps.H.map.provider.RemoteTileProvider
+import typings.heremaps.H.map.provider.Tile
+import typings.heremaps.H.math.Point
 import typings.heremaps.H.util.Cache
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -38,13 +41,45 @@ object global {
       @JSGlobal("H.datalens.HeatmapLayer")
       @js.native
       class HeatmapLayer protected ()
-        extends typings.heredatalens.H.datalens.HeatmapLayer {
+        extends StObject
+           with typings.heredatalens.H.datalens.HeatmapLayer {
         /**
           * Constructor
           * @param provider - Source of tiled data
           * @param options - Configuration for data processing and rendering
           */
         def this(provider: typings.heredatalens.H.datalens.QueryTileProvider, options: Options) = this()
+        
+        /**
+          * This method cancels a previously requested tile.
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - zoom level
+          */
+        /* CompleteClass */
+        override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+        
+        /**
+          * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - The zoom level for which the tile is requested
+          * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
+          * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
+          */
+        /* CompleteClass */
+        override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
+        
+        /**
+          * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
+          * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
+          * @param zoomLevel {number} - The zoom level for which the tiles are requested
+          * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
+          * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
+          * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
+          */
+        /* CompleteClass */
+        override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response = js.native
       }
       object HeatmapLayer {
         
@@ -62,11 +97,11 @@ object global {
         object Aggregation_ extends StObject {
           
           @JSBracketAccess
-          def apply(value: Double): js.UndefOr[Aggregation with Double] = js.native
+          def apply(value: Double): js.UndefOr[Aggregation & Double] = js.native
           
-          /* 1 */ val AVERAGE: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.AVERAGE with Double = js.native
+          /* 1 */ val AVERAGE: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.AVERAGE & Double = js.native
           
-          /* 0 */ val SUM: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.SUM with Double = js.native
+          /* 0 */ val SUM: typings.heredatalens.H.datalens.HeatmapLayer.Aggregation.SUM & Double = js.native
         }
         
         /**
@@ -78,13 +113,13 @@ object global {
         object InputScale_ extends StObject {
           
           @JSBracketAccess
-          def apply(value: Double): js.UndefOr[InputScale with Double] = js.native
+          def apply(value: Double): js.UndefOr[InputScale & Double] = js.native
           
-          /* 0 */ val DB: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.DB with Double = js.native
+          /* 0 */ val DB: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.DB & Double = js.native
           
-          /* 1 */ val LINEAR: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LINEAR with Double = js.native
+          /* 1 */ val LINEAR: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LINEAR & Double = js.native
           
-          /* 2 */ val LOG: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LOG with Double = js.native
+          /* 2 */ val LOG: typings.heredatalens.H.datalens.HeatmapLayer.InputScale.LOG & Double = js.native
         }
         
         /**
@@ -127,7 +162,8 @@ object global {
       @JSGlobal("H.datalens.ObjectLayer")
       @js.native
       class ObjectLayer protected ()
-        extends typings.heredatalens.H.datalens.ObjectLayer {
+        extends StObject
+           with typings.heredatalens.H.datalens.ObjectLayer {
         def this(
           provider: typings.heredatalens.H.datalens.Provider,
           options: typings.heredatalens.H.datalens.ObjectLayer.Options
@@ -146,8 +182,43 @@ object global {
           * @param options - Defines data processing, clustering and data-driven styling
           */
         def this(provider: RemoteTileProvider, options: typings.heredatalens.H.datalens.ObjectLayer.Options) = this()
+        
+        /**
+          * This method cancels a previously requested tile.
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - zoom level
+          */
+        /* CompleteClass */
+        override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+        
+        /**
+          * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - The zoom level for which the tile is requested
+          * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
+          * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
+          */
+        /* CompleteClass */
+        override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
+        
+        /**
+          * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
+          * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
+          * @param zoomLevel {number} - The zoom level for which the tiles are requested
+          * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
+          * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
+          * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
+          */
+        /* CompleteClass */
+        override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response = js.native
       }
       object ObjectLayer {
+        
+        @JSGlobal("H.datalens.ObjectLayer")
+        @js.native
+        val ^ : js.Any = js.native
         
         /**
           * A factory method for data-driven icons. The method allows you to build an icon from SVG markup or JsonML object. Provides caching of icons with the same markup.
@@ -157,35 +228,29 @@ object global {
           * @returns - Icon which can be used for marker or cluster
           */
         /* static member */
-        @JSGlobal("H.datalens.ObjectLayer.createIcon")
-        @js.native
-        def createIcon(svg: String): Icon = js.native
-        @JSGlobal("H.datalens.ObjectLayer.createIcon")
-        @js.native
-        def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = js.native
-        @JSGlobal("H.datalens.ObjectLayer.createIcon")
-        @js.native
-        def createIcon(svg: js.Array[_]): Icon = js.native
-        @JSGlobal("H.datalens.ObjectLayer.createIcon")
-        @js.native
-        def createIcon(svg: js.Array[_], options: typings.heremaps.H.map.Icon.Options): Icon = js.native
+        @scala.inline
+        def createIcon(svg: String): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
+        @scala.inline
+        def createIcon(svg: String, options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
+        @scala.inline
+        def createIcon(svg: js.Array[js.Any]): Icon = ^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any]).asInstanceOf[Icon]
+        @scala.inline
+        def createIcon(svg: js.Array[js.Any], options: typings.heremaps.H.map.Icon.Options): Icon = (^.asInstanceOf[js.Dynamic].applyDynamic("createIcon")(svg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Icon]
         
         /**
           * Default value for dataToRows callback option. It represents each row as an object where property names correspond to data column names.
           */
         /* static member */
-        @JSGlobal("H.datalens.ObjectLayer.defaultDataToRows")
-        @js.native
-        def defaultDataToRows(data: Data): js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row] = js.native
+        @scala.inline
+        def defaultDataToRows(data: Data): js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultDataToRows")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.heredatalens.H.datalens.ObjectLayer.Row]]
         
         /**
           * Returns cache of icons created with the createIcon method. Can be used to clean the icon cache.
           * @return - Icon cache
           */
         /* static member */
-        @JSGlobal("H.datalens.ObjectLayer.getIconCache")
-        @js.native
-        def getIconCache(): Cache = js.native
+        @scala.inline
+        def getIconCache(): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconCache")().asInstanceOf[Cache]
       }
       
       /**
@@ -201,9 +266,10 @@ object global {
         * @param options - Configures data accessibility parameters
         */
       class Provider ()
-        extends typings.heredatalens.H.datalens.Provider {
+        extends StObject
+           with typings.heredatalens.H.datalens.Provider {
         def this(data: Data) = this()
-        def this(data: js.UndefOr[scala.Nothing], options: typings.heremaps.H.map.provider.Provider.Options) = this()
+        def this(data: Unit, options: typings.heremaps.H.map.provider.Provider.Options) = this()
         def this(data: Data, options: typings.heremaps.H.map.provider.Provider.Options) = this()
       }
       
@@ -216,7 +282,8 @@ object global {
       @JSGlobal("H.datalens.QueryProvider")
       @js.native
       class QueryProvider protected ()
-        extends typings.heredatalens.H.datalens.QueryProvider {
+        extends StObject
+           with typings.heredatalens.H.datalens.QueryProvider {
         /**
           * Constructor
           * @param service - Data Lens REST API service
@@ -235,7 +302,8 @@ object global {
       @JSGlobal("H.datalens.QueryTileProvider")
       @js.native
       class QueryTileProvider protected ()
-        extends typings.heredatalens.H.datalens.QueryTileProvider {
+        extends StObject
+           with typings.heredatalens.H.datalens.QueryTileProvider {
         /**
           * Constructor
           * @param service - Data Lens REST API service
@@ -259,7 +327,40 @@ object global {
         * Constructor
         */
       class RasterLayer ()
-        extends typings.heredatalens.H.datalens.RasterLayer
+        extends StObject
+           with typings.heredatalens.H.datalens.RasterLayer {
+        
+        /**
+          * This method cancels a previously requested tile.
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - zoom level
+          */
+        /* CompleteClass */
+        override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+        
+        /**
+          * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - The zoom level for which the tile is requested
+          * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
+          * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
+          */
+        /* CompleteClass */
+        override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
+        
+        /**
+          * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
+          * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
+          * @param zoomLevel {number} - The zoom level for which the tiles are requested
+          * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
+          * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
+          * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
+          */
+        /* CompleteClass */
+        override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response = js.native
+      }
       object RasterLayer {
         
         @JSGlobal("H.datalens.RasterLayer")
@@ -283,9 +384,8 @@ object global {
           * @param canvas - The target canvas
           */
         /* static member */
-        @JSGlobal("H.datalens.RasterLayer.defaultRenderTile")
-        @js.native
-        def defaultRenderTile(points: js.Array[TilePoint], canvas: HTMLCanvasElement): Unit = js.native
+        @scala.inline
+        def defaultRenderTile(points: js.Array[TilePoint], canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderTile")(points.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
       }
       
       /**
@@ -295,7 +395,8 @@ object global {
       @JSGlobal("H.datalens.RawDataProvider")
       @js.native
       class RawDataProvider protected ()
-        extends typings.heredatalens.H.datalens.RawDataProvider {
+        extends StObject
+           with typings.heredatalens.H.datalens.RawDataProvider {
         /**
           * Constructor
           * @param options - Configures options
@@ -315,7 +416,8 @@ object global {
         * @param options - Overrides the configuration from the service.Platform instance
         */
       class Service ()
-        extends typings.heredatalens.H.datalens.Service {
+        extends StObject
+           with typings.heredatalens.H.datalens.Service {
         def this(options: typings.heredatalens.H.datalens.Service.Options) = this()
       }
       
@@ -326,7 +428,8 @@ object global {
       @JSGlobal("H.datalens.SpatialLayer")
       @js.native
       class SpatialLayer protected ()
-        extends typings.heredatalens.H.datalens.SpatialLayer {
+        extends StObject
+           with typings.heredatalens.H.datalens.SpatialLayer {
         /**
           * Constructor
           * @param dataProvider - Source of tiled data (pass in null if data come from feature properties)
@@ -338,6 +441,37 @@ object global {
           spatialProvider: typings.heredatalens.H.datalens.SpatialTileProvider,
           options: typings.heredatalens.H.datalens.SpatialLayer.Options
         ) = this()
+        
+        /**
+          * This method cancels a previously requested tile.
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - zoom level
+          */
+        /* CompleteClass */
+        override def cancelTile(x: Double, y: Double, z: Double): Unit = js.native
+        
+        /**
+          * This method requests a single tile according to tile coordinates. It returns either a Tile object if it is already loaded or undefined and starts loading the tile
+          * @param x {number} - tile row position
+          * @param y {number} - tile column position
+          * @param z {number} - The zoom level for which the tile is requested
+          * @param cacheOnly {boolean} - indicates whether only cached tiles are to be considered
+          * @returns {(H.map.provider.Tile | undefined)} - tile object corresponding to requested coordinates
+          */
+        /* CompleteClass */
+        override def requestTile(x: Double, y: Double, z: Double, cacheOnly: Boolean): Tile | Unit = js.native
+        
+        /**
+          * This method requests tiles for the current bounding rectangle at the given zoom level (z-value).
+          * @param boundingRect {H.geo.Rect} - the bounding rectangle for which tiles are to be returned
+          * @param zoomLevel {number} - The zoom level for which the tiles are requested
+          * @param cacheOnly {boolean} - Indicates whether only cached tiles are to be considered
+          * @param prioCenter {H.math.Point} - The priority center as an offset in screen pixel relative to the center
+          * @returns {H.map.layer.ITileLayer.Response} - a response object containing the total number of tiles requested and the tile objects that could be immediately returned
+          */
+        /* CompleteClass */
+        override def requestTiles(boundingRect: Rect, zoomLevel: Double, cacheOnly: Boolean, prioCenter: Point): Response = js.native
       }
       object SpatialLayer {
         
@@ -378,7 +512,8 @@ object global {
       @JSGlobal("H.datalens.SpatialTileProvider")
       @js.native
       class SpatialTileProvider protected ()
-        extends typings.heredatalens.H.datalens.SpatialTileProvider {
+        extends StObject
+           with typings.heredatalens.H.datalens.SpatialTileProvider {
         /**
           * Constructor
           * @param service - Data Lens REST API service

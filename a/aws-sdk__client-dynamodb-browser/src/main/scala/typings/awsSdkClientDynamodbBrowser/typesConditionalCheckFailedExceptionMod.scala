@@ -5,27 +5,24 @@ import typings.awsSdkClientDynamodbBrowser.putItemExceptionsUnionMod.PutItemExce
 import typings.awsSdkClientDynamodbBrowser.updateItemExceptionsUnionMod.UpdateItemExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesConditionalCheckFailedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ConditionalCheckFailedExceptionDetails> * / any */ @js.native
-  trait ConditionalCheckFailedException
-    extends DeleteItemExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ConditionalCheckFailedExceptionDetails> * / any */ trait ConditionalCheckFailedException
+    extends StObject
+       with DeleteItemExceptionsUnion
        with PutItemExceptionsUnion
        with UpdateItemExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ConditionalCheckFailedException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ConditionalCheckFailedException
   }
   object ConditionalCheckFailedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ConditionalCheckFailedException
-    ): ConditionalCheckFailedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ConditionalCheckFailedException = {
+      val __obj = js.Dynamic.literal(name = "ConditionalCheckFailedException")
       __obj.asInstanceOf[ConditionalCheckFailedException]
     }
     
@@ -39,13 +36,12 @@ object typesConditionalCheckFailedExceptionMod {
     }
   }
   
-  @js.native
   trait ConditionalCheckFailedExceptionDetails extends StObject {
     
     /**
       * <p>The conditional request failed.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ConditionalCheckFailedExceptionDetails {
     

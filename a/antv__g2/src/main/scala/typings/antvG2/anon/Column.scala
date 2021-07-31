@@ -2,26 +2,24 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /**
     * 一般的柱状图占比 1/2
     */
-  var column: Double = js.native
+  var column: Double
   
   /**
     * 多层的饼图、环图
     */
-  var multiplePie: Double = js.native
+  var multiplePie: Double
   
   /**
     * 玫瑰图柱状占比 1
     */
-  var rose: Double = js.native
+  var rose: Double
 }
 object Column {
   

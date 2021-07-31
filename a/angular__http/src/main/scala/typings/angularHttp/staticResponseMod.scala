@@ -6,7 +6,6 @@ import typings.angularHttp.enumsMod.ResponseType
 import typings.angularHttp.headersMod.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticResponseMod {

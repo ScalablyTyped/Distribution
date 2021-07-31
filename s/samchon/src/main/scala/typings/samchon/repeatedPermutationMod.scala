@@ -3,14 +3,15 @@ package typings.samchon
 import typings.samchon.icasegeneratorMod.ICaseGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repeatedPermutationMod {
   
   @JSImport("samchon/library/case_generators/RepeatedPermutation", "RepeatedPermutation")
   @js.native
-  class RepeatedPermutation protected () extends ICaseGenerator {
+  class RepeatedPermutation protected ()
+    extends StObject
+       with ICaseGenerator {
     /**
       * Construct from size of N and R.
       *
@@ -18,6 +19,15 @@ object repeatedPermutationMod {
       * @param r Size of elements of each case.
       */
     def this(n: Double, r: Double) = this()
+    
+    /**
+      * Get index'th case.
+      *
+      * @param index Index number
+      * @return The row of the index'th in combined permuation case
+      */
+    /* CompleteClass */
+    override def at(index: Double): js.Array[Double] = js.native
     
     /**
       * @hidden
@@ -43,6 +53,14 @@ object repeatedPermutationMod {
       * @hidden
       */
     var r_ : js.Any = js.native
+    
+    /**
+      * Get size of all cases.
+      *
+      * @return Get a number of the all cases.
+      */
+    /* CompleteClass */
+    override def size(): Double = js.native
     
     /**
       * @hidden

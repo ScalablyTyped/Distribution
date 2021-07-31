@@ -2,17 +2,15 @@ package typings.ranjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object _ts {
   
-  @js.native
   trait Commons extends StObject {
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def update(x: js.Array[Double]): Unit = js.native
+    def update(x: js.Array[Double]): Unit
   }
   object Commons {
     

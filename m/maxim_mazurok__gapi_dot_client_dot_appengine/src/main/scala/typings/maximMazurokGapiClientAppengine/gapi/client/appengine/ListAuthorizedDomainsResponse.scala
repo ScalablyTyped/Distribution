@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuthorizedDomainsResponse extends StObject {
   
   /** The authorized domains belonging to the user. */
-  var domains: js.UndefOr[js.Array[AuthorizedDomain]] = js.native
+  var domains: js.UndefOr[js.Array[AuthorizedDomain]] = js.undefined
   
   /** Continuation token for fetching the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAuthorizedDomainsResponse {
   

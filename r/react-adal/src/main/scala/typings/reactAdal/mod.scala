@@ -24,10 +24,13 @@ import typings.reactAdal.reactAdalStrings.sessionStorage
 import typings.reactAdal.reactAdalStrings.session_state
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-adal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-adal", "AuthenticationContext")
   @js.native
@@ -50,30 +53,6 @@ object mod {
       */
     def acquireToken(resource: String, callback: TokenCallback): Unit = js.native
     
-    def acquireTokenPopup(
-      resource: String,
-      extraQueryParameters: js.UndefOr[scala.Nothing],
-      claims: js.UndefOr[scala.Nothing],
-      callback: TokenCallback
-    ): Unit = js.native
-    def acquireTokenPopup(
-      resource: String,
-      extraQueryParameters: js.UndefOr[scala.Nothing],
-      claims: String,
-      callback: TokenCallback
-    ): Unit = js.native
-    def acquireTokenPopup(
-      resource: String,
-      extraQueryParameters: js.UndefOr[scala.Nothing],
-      claims: Null,
-      callback: TokenCallback
-    ): Unit = js.native
-    def acquireTokenPopup(
-      resource: String,
-      extraQueryParameters: String,
-      claims: js.UndefOr[scala.Nothing],
-      callback: TokenCallback
-    ): Unit = js.native
     /**
       * Acquires token (interactive flow using a popup window) by sending request to AAD to obtain a new token.
       * @param resource Resource URI identifying the target resource.
@@ -83,14 +62,13 @@ object mod {
       */
     def acquireTokenPopup(resource: String, extraQueryParameters: String, claims: String, callback: TokenCallback): Unit = js.native
     def acquireTokenPopup(resource: String, extraQueryParameters: String, claims: Null, callback: TokenCallback): Unit = js.native
-    def acquireTokenPopup(
-      resource: String,
-      extraQueryParameters: Null,
-      claims: js.UndefOr[scala.Nothing],
-      callback: TokenCallback
-    ): Unit = js.native
+    def acquireTokenPopup(resource: String, extraQueryParameters: String, claims: Unit, callback: TokenCallback): Unit = js.native
     def acquireTokenPopup(resource: String, extraQueryParameters: Null, claims: String, callback: TokenCallback): Unit = js.native
     def acquireTokenPopup(resource: String, extraQueryParameters: Null, claims: Null, callback: TokenCallback): Unit = js.native
+    def acquireTokenPopup(resource: String, extraQueryParameters: Null, claims: Unit, callback: TokenCallback): Unit = js.native
+    def acquireTokenPopup(resource: String, extraQueryParameters: Unit, claims: String, callback: TokenCallback): Unit = js.native
+    def acquireTokenPopup(resource: String, extraQueryParameters: Unit, claims: Null, callback: TokenCallback): Unit = js.native
+    def acquireTokenPopup(resource: String, extraQueryParameters: Unit, claims: Unit, callback: TokenCallback): Unit = js.native
     
     /**
       * Acquires token (interactive flow using a redirect) by sending request to AAD to obtain a new token. In this case the callback passed in the authentication request constructor will be called.
@@ -99,10 +77,10 @@ object mod {
       * @param claims Claims to add to the authentication request.
       */
     def acquireTokenRedirect(resource: String): Unit = js.native
-    def acquireTokenRedirect(resource: String, extraQueryParameters: js.UndefOr[scala.Nothing], claims: String): Unit = js.native
     def acquireTokenRedirect(resource: String, extraQueryParameters: String): Unit = js.native
     def acquireTokenRedirect(resource: String, extraQueryParameters: String, claims: String): Unit = js.native
     def acquireTokenRedirect(resource: String, extraQueryParameters: Null, claims: String): Unit = js.native
+    def acquireTokenRedirect(resource: String, extraQueryParameters: Unit, claims: String): Unit = js.native
     
     var callback: TokenCallback = js.native
     
@@ -264,130 +242,130 @@ object mod {
     def warnPii(message: String): Unit = js.native
   }
   
-  @JSImport("react-adal", "adalFetch")
-  @js.native
+  @scala.inline
   def adalFetch(
     authContext: AuthenticationContext,
     resource: String,
-    fetch: js.Function2[/* input */ String, /* init */ js.Any, js.Promise[_]],
+    fetch: js.Function2[/* input */ String, /* init */ js.Any, js.Promise[js.Any]],
     url: String,
     options: js.Any
-  ): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("adalFetch")(authContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any], fetch.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("react-adal", "adalGetToken")
-  @js.native
-  def adalGetToken(authContext: AuthenticationContext, resourceUrl: String): js.Promise[String | Null] = js.native
+  @scala.inline
+  def adalGetToken(authContext: AuthenticationContext, resourceUrl: String): js.Promise[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("adalGetToken")(authContext.asInstanceOf[js.Any], resourceUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Null]]
   
-  @JSImport("react-adal", "runWithAdal")
-  @js.native
-  def runWithAdal(authContext: AuthenticationContext, app: js.Function0[Unit], doNotLogin: Boolean): Unit = js.native
+  @scala.inline
+  def runWithAdal(authContext: AuthenticationContext, app: js.Function0[Unit], doNotLogin: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runWithAdal")(authContext.asInstanceOf[js.Any], app.asInstanceOf[js.Any], doNotLogin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-adal", "withAdalLogin")
-  @js.native
+  @scala.inline
   def withAdalLogin(authContext: AuthenticationContext, resource: String): js.Function3[
     /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object], 
     /* renderLoading */ js.Function0[Element | Null], 
     /* renderError */ js.Function1[/* error */ js.Any, Element | Null], 
     ComponentClass[js.Object, ComponentState]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("withAdalLogin")(authContext.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* wrappedComponent */ (ComponentClass[js.Object, ComponentState]) | StatelessComponent[js.Object], 
+    /* renderLoading */ js.Function0[Element | Null], 
+    /* renderError */ js.Function1[/* error */ js.Any, Element | Null], 
+    ComponentClass[js.Object, ComponentState]
+  ]]
   
-  @js.native
   trait AdalConfig extends StObject {
     
     /**
       * Array of keywords or URIs. Adal will not attach a token to outgoing requests that have these keywords or URIs.
       */
-    var anonymousEndpoints: js.UndefOr[js.Array[String]] = js.native
+    var anonymousEndpoints: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Sets browser storage to either 'localStorage' or sessionStorage'. Defaults to `sessionStorage`.
       */
-    var cacheLocation: js.UndefOr[localStorage | sessionStorage] = js.native
+    var cacheLocation: js.UndefOr[localStorage | sessionStorage] = js.undefined
     
     /**
       * Callback to be invoked when a token is acquired.
       */
-    var callback: js.UndefOr[TokenCallback] = js.native
+    var callback: js.UndefOr[TokenCallback] = js.undefined
     
     /**
       * Client ID assigned to your app by Azure Active Directory.
       */
-    var clientId: String = js.native
+    var clientId: String
     
     /**
       * Unique identifier used to map the request with the response. Defaults to RFC4122 version 4 guid (128 bits).
       */
-    var correlationId: js.UndefOr[String] = js.native
+    var correlationId: js.UndefOr[String] = js.undefined
     
     /**
       * User defined function of handling the navigation to Azure AD authorization endpoint in case of login.
       */
-    var displayCall: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.native
+    var displayCall: js.UndefOr[js.Function1[/* url */ String, Unit]] = js.undefined
     
     /**
       * Array of keywords or URIs. Adal will attach a token to outgoing requests that have these keywords or URIs.
       */
-    var endpoints: js.UndefOr[StringDictionary[String]] = js.native
+    var endpoints: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * If the cached token is about to be expired in the expireOffsetSeconds (in seconds), Adal will renew the token instead of using the cached token. Defaults to 300 seconds.
       */
-    var expireOffsetSeconds: js.UndefOr[Double] = js.native
+    var expireOffsetSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * Query parameters to add to the authentication request.
       */
-    var extraQueryParameter: js.UndefOr[String] = js.native
+    var extraQueryParameter: js.UndefOr[String] = js.undefined
     
     /**
       * Azure Active Directory instance. Defaults to `https://login.microsoftonline.com/`.
       */
-    var instance: js.UndefOr[String] = js.native
+    var instance: js.UndefOr[String] = js.undefined
     
     /**
       * The number of milliseconds of inactivity before a token renewal response from AAD should be considered timed out. Defaults to 6 seconds.
       */
-    var loadFrameTimeout: js.UndefOr[Double] = js.native
+    var loadFrameTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Set this to redirect the user to a custom login page.
       */
-    var localLoginUrl: js.UndefOr[String] = js.native
+    var localLoginUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to redirect the user to a custom logout page.
       */
-    var logOutUri: js.UndefOr[String] = js.native
+    var logOutUri: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to the resource to request on login. Defaults to `clientId`.
       */
-    var loginResource: js.UndefOr[String] = js.native
+    var loginResource: js.UndefOr[String] = js.undefined
     
     /**
       * Redirects to start page after login. Defaults to `true`.
       */
-    var navigateToLoginRequestUrl: js.UndefOr[Boolean] = js.native
+    var navigateToLoginRequestUrl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set this to true to enable login in a popup winodow instead of a full redirect. Defaults to `false`.
       */
-    var popUp: js.UndefOr[Boolean] = js.native
+    var popUp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Redirects the user to postLogoutRedirectUri after logout. Defaults to `redirectUri`.
       */
-    var postLogoutRedirectUri: js.UndefOr[String] = js.native
+    var postLogoutRedirectUri: js.UndefOr[String] = js.undefined
     
     /**
       * Endpoint at which you expect to receive tokens.Defaults to `window.location.href`.
       */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
     /**
       * Your target tenant. Defaults to `common`.
       */
-    var tenant: js.UndefOr[String] = js.native
+    var tenant: js.UndefOr[String] = js.undefined
   }
   object AdalConfig {
     
@@ -516,60 +494,43 @@ object mod {
     }
   }
   
-  @js.native
   trait Constants extends StObject {
     
-    var ACCESS_TOKEN: access_token = js.native
+    var ACCESS_TOKEN: access_token
     
-    var ERROR_DESCRIPTION: error_description = js.native
+    var ERROR_DESCRIPTION: error_description
     
-    var EXPIRES_IN: expires_in = js.native
+    var EXPIRES_IN: expires_in
     
-    var ID_TOKEN: id_token = js.native
+    var ID_TOKEN: id_token
     
-    var LEVEL_STRING_MAP: `0` = js.native
+    var LEVEL_STRING_MAP: `0`
     
-    var LOADFRAME_TIMEOUT: `6000` = js.native
+    var LOADFRAME_TIMEOUT: `6000`
     
-    var LOGGING_LEVEL: ERROR = js.native
+    var LOGGING_LEVEL: ERROR
     
-    var POPUP_HEIGHT: `600` = js.native
+    var POPUP_HEIGHT: `600`
     
-    var POPUP_WIDTH: `483` = js.native
+    var POPUP_WIDTH: `483`
     
-    var RESOURCE_DELIMETER: Verticalline = js.native
+    var RESOURCE_DELIMETER: Verticalline
     
-    var SESSION_STATE: session_state = js.native
+    var SESSION_STATE: session_state
     
-    var STORAGE: ACCESSTOKENKEY = js.native
+    var STORAGE: ACCESSTOKENKEY
     
-    var TOKEN_RENEW_STATUS_CANCELED: Canceled = js.native
+    var TOKEN_RENEW_STATUS_CANCELED: Canceled
     
-    var TOKEN_RENEW_STATUS_COMPLETED: Completed = js.native
+    var TOKEN_RENEW_STATUS_COMPLETED: Completed
     
-    var TOKEN_RENEW_STATUS_IN_PROGRESS: `In Progress` = js.native
+    var TOKEN_RENEW_STATUS_IN_PROGRESS: `In Progress`
   }
   object Constants {
     
     @scala.inline
-    def apply(
-      ACCESS_TOKEN: access_token,
-      ERROR_DESCRIPTION: error_description,
-      EXPIRES_IN: expires_in,
-      ID_TOKEN: id_token,
-      LEVEL_STRING_MAP: `0`,
-      LOADFRAME_TIMEOUT: `6000`,
-      LOGGING_LEVEL: ERROR,
-      POPUP_HEIGHT: `600`,
-      POPUP_WIDTH: `483`,
-      RESOURCE_DELIMETER: Verticalline,
-      SESSION_STATE: session_state,
-      STORAGE: ACCESSTOKENKEY,
-      TOKEN_RENEW_STATUS_CANCELED: Canceled,
-      TOKEN_RENEW_STATUS_COMPLETED: Completed,
-      TOKEN_RENEW_STATUS_IN_PROGRESS: `In Progress`
-    ): Constants = {
-      val __obj = js.Dynamic.literal(ACCESS_TOKEN = ACCESS_TOKEN.asInstanceOf[js.Any], ERROR_DESCRIPTION = ERROR_DESCRIPTION.asInstanceOf[js.Any], EXPIRES_IN = EXPIRES_IN.asInstanceOf[js.Any], ID_TOKEN = ID_TOKEN.asInstanceOf[js.Any], LEVEL_STRING_MAP = LEVEL_STRING_MAP.asInstanceOf[js.Any], LOADFRAME_TIMEOUT = LOADFRAME_TIMEOUT.asInstanceOf[js.Any], LOGGING_LEVEL = LOGGING_LEVEL.asInstanceOf[js.Any], POPUP_HEIGHT = POPUP_HEIGHT.asInstanceOf[js.Any], POPUP_WIDTH = POPUP_WIDTH.asInstanceOf[js.Any], RESOURCE_DELIMETER = RESOURCE_DELIMETER.asInstanceOf[js.Any], SESSION_STATE = SESSION_STATE.asInstanceOf[js.Any], STORAGE = STORAGE.asInstanceOf[js.Any], TOKEN_RENEW_STATUS_CANCELED = TOKEN_RENEW_STATUS_CANCELED.asInstanceOf[js.Any], TOKEN_RENEW_STATUS_COMPLETED = TOKEN_RENEW_STATUS_COMPLETED.asInstanceOf[js.Any], TOKEN_RENEW_STATUS_IN_PROGRESS = TOKEN_RENEW_STATUS_IN_PROGRESS.asInstanceOf[js.Any])
+    def apply(LEVEL_STRING_MAP: `0`, LOGGING_LEVEL: ERROR, STORAGE: ACCESSTOKENKEY): Constants = {
+      val __obj = js.Dynamic.literal(ACCESS_TOKEN = "access_token", ERROR_DESCRIPTION = "error_description", EXPIRES_IN = "expires_in", ID_TOKEN = "id_token", LEVEL_STRING_MAP = LEVEL_STRING_MAP.asInstanceOf[js.Any], LOADFRAME_TIMEOUT = "6000", LOGGING_LEVEL = LOGGING_LEVEL.asInstanceOf[js.Any], POPUP_HEIGHT = 600, POPUP_WIDTH = 483, RESOURCE_DELIMETER = "|", SESSION_STATE = "session_state", STORAGE = STORAGE.asInstanceOf[js.Any], TOKEN_RENEW_STATUS_CANCELED = "Canceled", TOKEN_RENEW_STATUS_COMPLETED = "Completed", TOKEN_RENEW_STATUS_IN_PROGRESS = "In Progress")
       __obj.asInstanceOf[Constants]
     }
     
@@ -645,33 +606,32 @@ object mod {
     def `3`: typings.reactAdal.reactAdalNumbers.`3` = 3.asInstanceOf[typings.reactAdal.reactAdalNumbers.`3`]
   }
   
-  @js.native
   trait RequestInfo extends StObject {
     
     /**
       * Object comprising of fields such as id_token/error, session_state, state, e.t.c.
       */
-    var parameters: js.Any = js.native
+    var parameters: js.Any
     
     /**
       * Request type.
       */
-    var requestType: RequestType = js.native
+    var requestType: RequestType
     
     /**
       * Whether state is valid.
       */
-    var stateMatch: Boolean = js.native
+    var stateMatch: Boolean
     
     /**
       * Unique guid used to match the response with the request.
       */
-    var stateResponse: String = js.native
+    var stateResponse: String
     
     /**
       * Whether `requestType` contains `id_token`, `access_token` or error.
       */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object RequestInfo {
     
@@ -743,18 +703,17 @@ object mod {
   
   type UserCallback = js.Function2[/* errorDesc */ String | Null, /* user */ UserInfo | Null, Unit]
   
-  @js.native
   trait UserInfo extends StObject {
     
     /**
       * Properties parsed from `id_token`.
       */
-    var profile: js.Any = js.native
+    var profile: js.Any
     
     /**
       * Username assigned from UPN or email.
       */
-    var userName: String = js.native
+    var userName: String
   }
   object UserInfo {
     

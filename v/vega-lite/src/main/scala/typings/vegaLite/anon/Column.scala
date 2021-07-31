@@ -3,17 +3,15 @@ package typings.vegaLite.anon
 import typings.vegaLite.headerComponentMod.LayoutHeaderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.UndefOr[LayoutHeaderComponent] = js.native
+  var column: js.UndefOr[LayoutHeaderComponent] = js.undefined
   
-  var facet: js.UndefOr[LayoutHeaderComponent] = js.native
+  var facet: js.UndefOr[LayoutHeaderComponent] = js.undefined
   
-  var row: js.UndefOr[LayoutHeaderComponent] = js.native
+  var row: js.UndefOr[LayoutHeaderComponent] = js.undefined
 }
 object Column {
   

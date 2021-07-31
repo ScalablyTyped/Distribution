@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetFrameOwnerRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetFrameOwnerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetFrameOwnerResponse extends StObject {
   
-  var paramsType: js.Array[GetFrameOwnerRequest] = js.native
+  var paramsType: js.Array[GetFrameOwnerRequest]
   
-  var returnType: GetFrameOwnerResponse = js.native
+  var returnType: GetFrameOwnerResponse
 }
 object ReturnTypeGetFrameOwnerResponse {
   

@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Url
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_Url: typings.cssTree.cssTreeStrings.Url = js.native
+  var type_Url: typings.cssTree.cssTreeStrings.Url
   
-  var value: StringNode | Raw = js.native
+  var value: StringNode | Raw
 }
 object Url {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.Url, value: StringNode | Raw): Url = {
+  def apply(value: StringNode | Raw): Url = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Url")
     __obj.asInstanceOf[Url]
   }
   

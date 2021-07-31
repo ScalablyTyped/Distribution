@@ -2,32 +2,30 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<iobroker.iobroker/objects.<global>.ioBroker.Languages, string | std.Array<string>>> */
-@js.native
 trait PartialRecordLanguagesstr extends StObject {
   
-  var de: js.UndefOr[String | js.Array[String]] = js.native
+  var de: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var en: js.UndefOr[String | js.Array[String]] = js.native
+  var en: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var es: js.UndefOr[String | js.Array[String]] = js.native
+  var es: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var fr: js.UndefOr[String | js.Array[String]] = js.native
+  var fr: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var it: js.UndefOr[String | js.Array[String]] = js.native
+  var it: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var nl: js.UndefOr[String | js.Array[String]] = js.native
+  var nl: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var pl: js.UndefOr[String | js.Array[String]] = js.native
+  var pl: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var pt: js.UndefOr[String | js.Array[String]] = js.native
+  var pt: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var ru: js.UndefOr[String | js.Array[String]] = js.native
+  var ru: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var `zh-cn`: js.UndefOr[String | js.Array[String]] = js.native
+  var `zh-cn`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object PartialRecordLanguagesstr {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePortalResponse extends StObject {
   
   /**
     * The ARN of the portal, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId} 
     */
-  var portalArn: ARN = js.native
+  var portalArn: ARN
   
   /**
     * The ID of the created portal.
     */
-  var portalId: ID = js.native
+  var portalId: ID
   
   /**
     * The URL for the AWS IoT SiteWise Monitor portal. You can use this URL to access portals that use AWS SSO for authentication. For portals that use IAM for authentication, you must use the CreatePresignedPortalUrl operation to create a URL that you can use to access the portal.
     */
-  var portalStartUrl: Url = js.native
+  var portalStartUrl: Url
   
   /**
     * The status of the portal, which contains a state (CREATING after successfully calling this operation) and any error message.
     */
-  var portalStatus: PortalStatus = js.native
+  var portalStatus: PortalStatus
   
   /**
     * The associated AWS SSO application ID, if the portal uses AWS SSO.
     */
-  var ssoApplicationId: SSOApplicationId = js.native
+  var ssoApplicationId: SSOApplicationId
 }
 object CreatePortalResponse {
   

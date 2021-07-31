@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists values specifying whether the user action or APIs has collapsed the action group.
   */
-@js.native
 trait ASPxClientFloatingActionButtonCollapseReason extends StObject {
   
   /**
     * The action group is collapsed using APIs.
     */
-  var API: String = js.native
+  var API: String
   
   /**
     * The action group is collapsed by clicking on the action item.
     */
-  var ActionItem: String = js.native
+  var ActionItem: String
   
   /**
     * The action group is collapsed using the collapse button.
     */
-  var CollapseButton: String = js.native
+  var CollapseButton: String
 }
 object ASPxClientFloatingActionButtonCollapseReason {
   

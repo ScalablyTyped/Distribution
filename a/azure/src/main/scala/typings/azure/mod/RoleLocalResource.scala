@@ -2,17 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoleLocalResource extends StObject {
   
-  var maximumSizeInMegabytes: Double = js.native
+  var maximumSizeInMegabytes: Double
   
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
 }
 object RoleLocalResource {
   

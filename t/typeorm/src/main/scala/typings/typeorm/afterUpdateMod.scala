@@ -3,12 +3,14 @@ package typings.typeorm
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object afterUpdateMod {
   
-  @JSImport("typeorm/browser/decorator/listeners/AfterUpdate", "AfterUpdate")
+  @JSImport("typeorm/browser/decorator/listeners/AfterUpdate", JSImport.Namespace)
   @js.native
-  def AfterUpdate(): PropertyDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def AfterUpdate(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterUpdate")().asInstanceOf[PropertyDecorator]
 }

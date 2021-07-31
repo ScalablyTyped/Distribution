@@ -3,34 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.JSXAttribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXAttribute_
-  extends Node
+  extends StObject
+     with Node
      with Immutable
      with JSX {
   
-  var name: JSXIdentifier_ | JSXNamespacedName_ = js.native
+  var name: JSXIdentifier_ | JSXNamespacedName_
   
   @JSName("type")
-  var type_JSXAttribute_ : JSXAttribute = js.native
+  var type_JSXAttribute_ : JSXAttribute
   
-  var value: JSXElement_ | StringLiteral_ | JSXExpressionContainer_ | Null = js.native
+  var value: JSXElement_ | StringLiteral_ | JSXExpressionContainer_ | Null
 }
 object JSXAttribute_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    name: JSXIdentifier_ | JSXNamespacedName_,
-    start: Double,
-    `type`: JSXAttribute
-  ): JSXAttribute_ = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(end: Double, loc: SourceLocation, name: JSXIdentifier_ | JSXNamespacedName_, start: Double): JSXAttribute_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = null)
+    __obj.updateDynamic("type")("JSXAttribute")
     __obj.asInstanceOf[JSXAttribute_]
   }
   

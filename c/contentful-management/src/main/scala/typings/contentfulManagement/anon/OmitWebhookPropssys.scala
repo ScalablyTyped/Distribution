@@ -5,28 +5,26 @@ import typings.contentfulManagement.webhookMod.WebhookHeader
 import typings.contentfulManagement.webhookMod.WebhookTransformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/webhook.WebhookProps, 'sys'> */
-@js.native
 trait OmitWebhookPropssys extends StObject {
   
-  var filters: js.UndefOr[js.Array[WebhookFilter]] = js.native
+  var filters: js.UndefOr[js.Array[WebhookFilter]] = js.undefined
   
-  var headers: js.Array[WebhookHeader] = js.native
+  var headers: js.Array[WebhookHeader]
   
-  var httpBasicPassword: js.UndefOr[String] = js.native
+  var httpBasicPassword: js.UndefOr[String] = js.undefined
   
-  var httpBasicUsername: js.UndefOr[String] = js.native
+  var httpBasicUsername: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var topics: js.Array[String] = js.native
+  var topics: js.Array[String]
   
-  var transformation: js.UndefOr[WebhookTransformation] = js.native
+  var transformation: js.UndefOr[WebhookTransformation] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object OmitWebhookPropssys {
   

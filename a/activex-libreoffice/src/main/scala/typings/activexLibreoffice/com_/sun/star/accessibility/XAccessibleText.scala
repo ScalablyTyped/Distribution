@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,8 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * selection is used for example to express the current cursor position.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleText extends XInterface {
+trait XAccessibleText
+  extends StObject
+     with XInterface {
   
   /**
     * Return the position of the caret.
@@ -37,7 +37,7 @@ trait XAccessibleText extends XInterface {
     * is that of the character to the right of it.
     * @returns The returned offset is relative to the text represented by this object.
     */
-  var CaretPosition: Double = js.native
+  var CaretPosition: Double
   
   /**
     * Return the number of characters in the represented text.
@@ -45,7 +45,7 @@ trait XAccessibleText extends XInterface {
     * Returns the number of characters in the text represented by this object or, in other words, the text length.
     * @returns Returns the number of characters of this object's text. A zero value indicates an empty text.
     */
-  val CharacterCount: Double = js.native
+  val CharacterCount: Double
   
   /**
     * Return the selected text.
@@ -53,7 +53,7 @@ trait XAccessibleText extends XInterface {
     * Returns the portion of the text that is selected.
     * @returns The returned text is the selected portion of the object's text. If no text is selected when this method is called or when selection is not suppor
     */
-  val SelectedText: String = js.native
+  val SelectedText: String
   
   /**
     * Return the position of the end of the selection.
@@ -61,7 +61,7 @@ trait XAccessibleText extends XInterface {
     * Returns the index of the end of the selected text.
     * @returns If there is no selection or selection is not supported the position of selection start and end will be the same undefined value.
     */
-  val SelectionEnd: Double = js.native
+  val SelectionEnd: Double
   
   /**
     * Return the position of the start of the selection.
@@ -69,7 +69,7 @@ trait XAccessibleText extends XInterface {
     * Returns the index of the start of the selected text.
     * @returns If there is no selection or selection is not supported the position of selection start and end will be the same undefined value.
     */
-  val SelectionStart: Double = js.native
+  val SelectionStart: Double
   
   /**
     * Return the whole text.
@@ -78,7 +78,7 @@ trait XAccessibleText extends XInterface {
     * .
     * @returns Returns a string that contains the complete text.
     */
-  val Text: String = js.native
+  val Text: String
   
   /**
     * Copy the specified text into the clipboard.
@@ -93,7 +93,7 @@ trait XAccessibleText extends XInterface {
     * @returns Returns `TRUE` if the specified text has been copied successfully into the clipboard.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def copyText(nStartIndex: Double, nEndIndex: Double): Boolean = js.native
+  def copyText(nStartIndex: Double, nEndIndex: Double): Boolean
   
   /**
     * Return the position of the caret.
@@ -102,7 +102,7 @@ trait XAccessibleText extends XInterface {
     * is that of the character to the right of it.
     * @returns The returned offset is relative to the text represented by this object.
     */
-  def getCaretPosition(): Double = js.native
+  def getCaretPosition(): Double
   
   /**
     * Return the character at the specified position.
@@ -112,7 +112,7 @@ trait XAccessibleText extends XInterface {
     * @returns the character at the index nIndex.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     */
-  def getCharacter(nIndex: Double): String = js.native
+  def getCharacter(nIndex: Double): String
   
   /**
     * Get the attribute set for the specified position.
@@ -124,7 +124,7 @@ trait XAccessibleText extends XInterface {
     * @returns Returns the explicitly or implicitly (empty aRequestedAttributes argument) requested attributes of the specified character. Each attribute is rep
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     */
-  def getCharacterAttributes(nIndex: Double, aRequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue] = js.native
+  def getCharacterAttributes(nIndex: Double, aRequestedAttributes: SeqEquiv[String]): SafeArray[PropertyValue]
   
   /**
     * Return the bounding box of the specified position.
@@ -142,7 +142,7 @@ trait XAccessibleText extends XInterface {
     * @returns The bounding box of the referenced character. The bounding box of the virtual character at position length has to have non-empty dimensions.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     */
-  def getCharacterBounds(nIndex: Double): Rectangle = js.native
+  def getCharacterBounds(nIndex: Double): Rectangle
   
   /**
     * Return the number of characters in the represented text.
@@ -150,7 +150,7 @@ trait XAccessibleText extends XInterface {
     * Returns the number of characters in the text represented by this object or, in other words, the text length.
     * @returns Returns the number of characters of this object's text. A zero value indicates an empty text.
     */
-  def getCharacterCount(): Double = js.native
+  def getCharacterCount(): Double
   
   /**
     * Return the text position for the specified screen position.
@@ -161,7 +161,7 @@ trait XAccessibleText extends XInterface {
     * @param aPoint The position for which to look up the index of the character that is rendered on to the display at that point.
     * @returns Index of the character under the given point or -1 if the point is invalid or there is no character under the point.
     */
-  def getIndexAtPoint(aPoint: Point): Double = js.native
+  def getIndexAtPoint(aPoint: Point): Double
   
   /**
     * Return the selected text.
@@ -169,7 +169,7 @@ trait XAccessibleText extends XInterface {
     * Returns the portion of the text that is selected.
     * @returns The returned text is the selected portion of the object's text. If no text is selected when this method is called or when selection is not suppor
     */
-  def getSelectedText(): String = js.native
+  def getSelectedText(): String
   
   /**
     * Return the position of the end of the selection.
@@ -177,7 +177,7 @@ trait XAccessibleText extends XInterface {
     * Returns the index of the end of the selected text.
     * @returns If there is no selection or selection is not supported the position of selection start and end will be the same undefined value.
     */
-  def getSelectionEnd(): Double = js.native
+  def getSelectionEnd(): Double
   
   /**
     * Return the position of the start of the selection.
@@ -185,7 +185,7 @@ trait XAccessibleText extends XInterface {
     * Returns the index of the start of the selected text.
     * @returns If there is no selection or selection is not supported the position of selection start and end will be the same undefined value.
     */
-  def getSelectionStart(): Double = js.native
+  def getSelectionStart(): Double
   
   /**
     * Return the whole text.
@@ -194,7 +194,7 @@ trait XAccessibleText extends XInterface {
     * .
     * @returns Returns a string that contains the complete text.
     */
-  def getText(): String = js.native
+  def getText(): String
   
   /**
     * Get a text portion around the given position.
@@ -208,7 +208,7 @@ trait XAccessibleText extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     * @throws com::sun::star::lang::IllegalArgumentException if the given text type is not valid.
     */
-  def getTextAtIndex(nIndex: Double, nTextType: Double): TextSegment = js.native
+  def getTextAtIndex(nIndex: Double, nTextType: Double): TextSegment
   
   /**
     * Get a text portion before the given position.
@@ -225,7 +225,7 @@ trait XAccessibleText extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid.
     * @throws com::sun::star::lang::IllegalArgumentException if the given text type is not valid.
     */
-  def getTextBeforeIndex(nIndex: Double, nTextType: Double): TextSegment = js.native
+  def getTextBeforeIndex(nIndex: Double, nTextType: Double): TextSegment
   
   /**
     * Get a text portion behind the given position.
@@ -242,7 +242,7 @@ trait XAccessibleText extends XInterface {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is invalid
     * @throws com::sun::star::lang::IllegalArgumentException if the given text type is not valid.
     */
-  def getTextBehindIndex(nIndex: Double, nTextType: Double): TextSegment = js.native
+  def getTextBehindIndex(nIndex: Double, nTextType: Double): TextSegment
   
   /**
     * Return the specified text range.
@@ -259,7 +259,7 @@ trait XAccessibleText extends XInterface {
     * @returns Returns the substring starting with the character at nStartIndex (inclusive) and up to the character at nEndIndex (exclusive), if nStartIndex is
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def getTextRange(nStartIndex: Double, nEndIndex: Double): String = js.native
+  def getTextRange(nStartIndex: Double, nEndIndex: Double): String
   
   /**
     * Set the position of the caret.
@@ -276,7 +276,7 @@ trait XAccessibleText extends XInterface {
     * @returns Returns `TRUE` if the caret has been moved and `FALSE` otherwise. A `TRUE` value does not necessarily mean that the caret has been positioned exa
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the index is not valid.
     */
-  def setCaretPosition(nIndex: Double): Boolean = js.native
+  def setCaretPosition(nIndex: Double): Boolean
   
   /**
     * Set a new selection.
@@ -292,7 +292,7 @@ trait XAccessibleText extends XInterface {
     * @returns Returns `TRUE` if the selection has been set successfully and `FALSE` otherwise or when selection is not supported.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the indices are invalid
     */
-  def setSelection(nStartIndex: Double, nEndIndex: Double): Boolean = js.native
+  def setSelection(nStartIndex: Double, nEndIndex: Double): Boolean
 }
 object XAccessibleText {
   

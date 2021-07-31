@@ -9,7 +9,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Operation. */
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Operation.
   * @param [properties] Properties to set
   */
-class Operation () extends IOperation {
+class Operation ()
+  extends StObject
+     with IOperation {
   def this(properties: IOperation) = this()
   
   /** Operation done. */
@@ -41,18 +42,20 @@ class Operation () extends IOperation {
 }
 object Operation {
   
+  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Operation instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Operation instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.create")
-  @js.native
-  def create(): Operation = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.create")
-  @js.native
-  def create(properties: IOperation): Operation = js.native
+  @scala.inline
+  def create(): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Operation]
+  @scala.inline
+  def create(properties: IOperation): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Operation]
   
   /**
     * Decodes an Operation message from the specified reader or buffer.
@@ -63,18 +66,14 @@ object Operation {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decode")
-  @js.native
-  def decode(reader: Reader): Operation = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Operation = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decode")
-  @js.native
-  def decode(reader: Uint8Array): Operation = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Operation = js.native
+  @scala.inline
+  def decode(reader: Reader): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Operation]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Operation]
+  @scala.inline
+  def decode(reader: Uint8Array): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Operation]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Operation = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Operation]
   
   /**
     * Decodes an Operation message from the specified reader or buffer, length delimited.
@@ -84,12 +83,10 @@ object Operation {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Operation = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Operation = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Operation]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Operation]
   
   /**
     * Encodes the specified Operation message. Does not implicitly {@link google.longrunning.Operation.verify|verify} messages.
@@ -98,12 +95,10 @@ object Operation {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.encode")
-  @js.native
-  def encode(message: IOperation): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.encode")
-  @js.native
-  def encode(message: IOperation, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IOperation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IOperation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Operation message, length delimited. Does not implicitly {@link google.longrunning.Operation.verify|verify} messages.
@@ -112,12 +107,10 @@ object Operation {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IOperation): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IOperation, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IOperation): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IOperation, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Operation message from a plain object. Also converts values to their respective internal types.
@@ -125,9 +118,8 @@ object Operation {
     * @returns Operation
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Operation = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Operation = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Operation]
   
   /**
     * Creates a plain object from an Operation message. Also converts values to other types if specified.
@@ -136,12 +128,10 @@ object Operation {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.toObject")
-  @js.native
-  def toObject(message: Operation): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.toObject")
-  @js.native
-  def toObject(message: Operation, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Operation): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Operation, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Operation message.
@@ -149,7 +139,6 @@ object Operation {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.longrunning.Operation.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

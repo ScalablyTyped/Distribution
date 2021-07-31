@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditAssignedLocationsRequest extends StObject {
   
   /** The assigned locations to create in bulk, specified as a list of AssignedLocations. */
-  var createdAssignedLocations: js.UndefOr[js.Array[AssignedLocation]] = js.native
+  var createdAssignedLocations: js.UndefOr[js.Array[AssignedLocation]] = js.undefined
   
   /** The IDs of the assigned locations to delete in bulk, specified as a list of assigned_location_ids. */
-  var deletedAssignedLocations: js.UndefOr[js.Array[String]] = js.native
+  var deletedAssignedLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BulkEditAssignedLocationsRequest {
   

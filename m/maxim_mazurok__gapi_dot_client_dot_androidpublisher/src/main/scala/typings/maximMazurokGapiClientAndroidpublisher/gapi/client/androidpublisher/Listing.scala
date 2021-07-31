@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listing extends StObject {
   
   /** Full description of the app. */
-  var fullDescription: js.UndefOr[String] = js.native
+  var fullDescription: js.UndefOr[String] = js.undefined
   
   /** Language localization code (a BCP-47 language tag; for example, "de-AT" for Austrian German). */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Short description of the app. */
-  var shortDescription: js.UndefOr[String] = js.native
+  var shortDescription: js.UndefOr[String] = js.undefined
   
   /** Localized title of the app. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** URL of a promotional YouTube video for the app. */
-  var video: js.UndefOr[String] = js.native
+  var video: js.UndefOr[String] = js.undefined
 }
 object Listing {
   

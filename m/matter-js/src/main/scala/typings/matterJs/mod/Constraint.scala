@@ -2,7 +2,6 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Constraint")
@@ -115,6 +114,10 @@ class Constraint () extends StObject {
 /* static members */
 object Constraint {
   
+  @JSImport("matter-js", "Constraint")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new constraint.
     * All properties have default values, and many are pre-calculated automatically based on other properties.
@@ -123,7 +126,6 @@ object Constraint {
     * @param {} options
     * @return {constraint} constraint
     */
-  @JSImport("matter-js", "Constraint.create")
-  @js.native
-  def create(options: IConstraintDefinition): Constraint = js.native
+  @scala.inline
+  def create(options: IConstraintDefinition): Constraint = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Constraint]
 }

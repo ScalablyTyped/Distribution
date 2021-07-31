@@ -5,27 +5,24 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestDescriptionExceptions
 import typings.awsSdkClientCodecommitNode.updatePullRequestTitleExceptionsUnionMod.UpdatePullRequestTitleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestAlreadyClosedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestAlreadyClosedExceptionDetails> * / any */ @js.native
-  trait PullRequestAlreadyClosedException
-    extends MergePullRequestByFastForwardExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_PullRequestAlreadyClosedExceptionDetails> * / any */ trait PullRequestAlreadyClosedException
+    extends StObject
+       with MergePullRequestByFastForwardExceptionsUnion
        with UpdatePullRequestDescriptionExceptionsUnion
        with UpdatePullRequestTitleExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestAlreadyClosedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestAlreadyClosedException
   }
   object PullRequestAlreadyClosedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PullRequestAlreadyClosedException
-    ): PullRequestAlreadyClosedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): PullRequestAlreadyClosedException = {
+      val __obj = js.Dynamic.literal(name = "PullRequestAlreadyClosedException")
       __obj.asInstanceOf[PullRequestAlreadyClosedException]
     }
     
@@ -39,6 +36,5 @@ object typesPullRequestAlreadyClosedExceptionMod {
     }
   }
   
-  @js.native
   trait PullRequestAlreadyClosedExceptionDetails extends StObject
 }

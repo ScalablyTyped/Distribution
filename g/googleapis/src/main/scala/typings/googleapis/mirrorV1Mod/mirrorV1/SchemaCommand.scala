@@ -2,13 +2,11 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single menu command that is part of a Contact.
   */
-@js.native
 trait SchemaCommand extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaCommand extends StObject {
     * POST_AN_UPDATE - Shares a timeline item with the transcription of user
     * speech from the &quot;Post an update&quot; voice menu command.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCommand {
   

@@ -4,27 +4,25 @@ import typings.relayRuntime.relayRuntimeTypesMod.DataID
 import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleFieldPayload extends StObject {
   
   // The arguments that were fetched.
-  val args: Variables = js.native
+  val args: Variables
   
   // The __id of the record containing the source/handle field.
-  val dataID: DataID = js.native
+  val dataID: DataID
   
   // The (storage) key at which the original server data was written.
-  val fieldKey: String = js.native
+  val fieldKey: String
   
   // The name of the handle.
-  val handle: String = js.native
+  val handle: String
   
   // The (storage) key at which the handle's data should be written by the
   // handler.
-  val handleKey: String = js.native
+  val handleKey: String
 }
 object HandleFieldPayload {
   

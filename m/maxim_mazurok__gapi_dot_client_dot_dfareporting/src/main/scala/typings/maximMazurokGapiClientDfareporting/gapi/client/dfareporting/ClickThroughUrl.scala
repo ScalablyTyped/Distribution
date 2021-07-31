@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickThroughUrl extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait ClickThroughUrl extends StObject {
     * campaign's default landing page URL is assigned to this field. - If defaultLandingPage is not enabled and a landingPageId is specified then that landing page's URL is assigned to
     * this field. - If neither of the above cases apply, then the customClickThroughUrl is assigned to this field.
     */
-  var computedClickThroughUrl: js.UndefOr[String] = js.native
+  var computedClickThroughUrl: js.UndefOr[String] = js.undefined
   
   /** Custom click-through URL. Applicable if the defaultLandingPage field is set to false and the landingPageId field is left unset. */
-  var customClickThroughUrl: js.UndefOr[String] = js.native
+  var customClickThroughUrl: js.UndefOr[String] = js.undefined
   
   /** Whether the campaign default landing page is used. */
-  var defaultLandingPage: js.UndefOr[Boolean] = js.native
+  var defaultLandingPage: js.UndefOr[Boolean] = js.undefined
   
   /** ID of the landing page for the click-through URL. Applicable if the defaultLandingPage field is set to false. */
-  var landingPageId: js.UndefOr[String] = js.native
+  var landingPageId: js.UndefOr[String] = js.undefined
 }
 object ClickThroughUrl {
   

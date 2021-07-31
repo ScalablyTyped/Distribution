@@ -5,7 +5,6 @@ import typings.blueprintjsTable.headerCellMod.IHeaderCellProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowHeaderCellMod {
@@ -18,18 +17,19 @@ object rowHeaderCellMod {
     def this(props: IRowHeaderCellProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait IRowHeaderCellProps extends IHeaderCellProps {
+  trait IRowHeaderCellProps
+    extends StObject
+       with IHeaderCellProps {
     
     /**
       * Specifies if the row is reorderable.
       */
-    var enableRowReordering: js.UndefOr[Boolean] = js.native
+    var enableRowReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether the full row is part of a selection.
       */
-    var isRowSelected: js.UndefOr[Boolean] = js.native
+    var isRowSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback to override the default name rendering behavior. The default
@@ -41,7 +41,7 @@ object rowHeaderCellMod {
       * The callback will also receive the row index if an `index` was originally
       * provided via props.
       */
-    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.native
+    var nameRenderer: js.UndefOr[js.Function2[/* name */ String, /* index */ js.UndefOr[Double], ReactElement]] = js.undefined
   }
   object IRowHeaderCellProps {
     

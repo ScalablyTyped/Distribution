@@ -6,7 +6,6 @@ import typings.fastMemoize.anon.Monadic
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,17 +14,35 @@ object mod extends Shortcut {
   @js.native
   val default: Memoize = js.native
   
-  @js.native
   trait Cache[K, V] extends StObject {
     
-    def create(): Get[K, V] = js.native
+    def create(): Get[K, V]
     @JSName("create")
-    var create_Original: CacheCreateFunc[K, V] = js.native
+    var create_Original: CacheCreateFunc[K, V]
+  }
+  object Cache {
+    
+    @scala.inline
+    def apply[K, V](create: () => Get[K, V]): Cache[K, V] = {
+      val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
+      __obj.asInstanceOf[Cache[K, V]]
+    }
+    
+    @scala.inline
+    implicit class CacheMutableBuilder[Self <: Cache[?, ?], K, V] (val x: Self & (Cache[K, V])) extends AnyVal {
+      
+      @scala.inline
+      def setCreate(value: () => Get[K, V]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    }
   }
   
   type CacheCreateFunc[K, V] = js.Function0[Get[K, V]]
   
-  type Func = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait Func extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   @js.native
   trait Memoize extends MemoizeFunc {
@@ -35,14 +52,13 @@ object mod extends Shortcut {
   
   type MemoizeFunc = js.Function2[/* fn */ Func, /* options */ js.UndefOr[Options[Func]], Func]
   
-  @js.native
   trait Options[F /* <: Func */] extends StObject {
     
-    var cache: js.UndefOr[Cache[String, ReturnType[F]]] = js.native
+    var cache: js.UndefOr[Cache[String, ReturnType[F]]] = js.undefined
     
-    var serializer: js.UndefOr[Serializer] = js.native
+    var serializer: js.UndefOr[Serializer] = js.undefined
     
-    var strategy: js.UndefOr[MemoizeFunc] = js.native
+    var strategy: js.UndefOr[MemoizeFunc] = js.undefined
   }
   object Options {
     
@@ -53,7 +69,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], F /* <: Func */] (val x: Self with Options[F]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], F /* <: Func */] (val x: Self & Options[F]) extends AnyVal {
       
       @scala.inline
       def setCache(value: Cache[String, ReturnType[F]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])

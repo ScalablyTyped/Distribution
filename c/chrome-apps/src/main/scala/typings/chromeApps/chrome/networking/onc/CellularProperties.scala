@@ -5,68 +5,68 @@ import typings.chromeApps.chromeAppsStrings.CDMA
 import typings.chromeApps.chromeAppsStrings.GSM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellularProperties[M /* <: ManagedObject */] extends CellularBase {
+trait CellularProperties[M /* <: ManagedObject */]
+  extends StObject
+     with CellularBase {
   
   /** The cellular network activation type. */
-  var ActivationType: js.UndefOr[String] = js.native
+  var ActivationType: js.UndefOr[String] = js.undefined
   
   /** Whether roaming is allowed for the network. */
-  var AllowRoaming: js.UndefOr[Boolean] = js.native
+  var AllowRoaming: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the cellular network should be connected automatically (when in range). */
-  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.native
+  var AutoConnect: js.UndefOr[Boolean | ManagedBoolean] = js.undefined
   
   /** The name of the carrier for which the cellular device is configured. */
-  var Carrier: js.UndefOr[String | ManagedDOMString] = js.native
+  var Carrier: js.UndefOr[String | ManagedDOMString] = js.undefined
   
   /** Cellular device technology family - CDMA or GSM. */
-  var Family: js.UndefOr[CDMA | GSM] = js.native
+  var Family: js.UndefOr[CDMA | GSM] = js.undefined
   
   /** The firmware revision loaded in the cellular modem. */
-  var FirmwareRevision: js.UndefOr[String] = js.native
+  var FirmwareRevision: js.UndefOr[String] = js.undefined
   
   /** The list of networks found during the most recent network scan. */
-  var FoundNetworks: js.UndefOr[js.Array[FoundNetworkProperties]] = js.native
+  var FoundNetworks: js.UndefOr[js.Array[FoundNetworkProperties]] = js.undefined
   
   /** The cellular modem hardware revision. */
-  var HardwareRevision: js.UndefOr[String] = js.native
+  var HardwareRevision: js.UndefOr[String] = js.undefined
   
   /** Information about the operator that issued the SIM card currently installed in the modem. */
-  var HomeProvider: js.UndefOr[CellularProviderProperties] = js.native
+  var HomeProvider: js.UndefOr[CellularProviderProperties] = js.undefined
   
   /** The cellular modem manufacturer. */
-  var MAnufacturer: js.UndefOr[String] = js.native
+  var MAnufacturer: js.UndefOr[String] = js.undefined
   
   /** The cellular modem model ID. */
-  var ModelID: js.UndefOr[String] = js.native
+  var ModelID: js.UndefOr[String] = js.undefined
   
   /** The revision of the Preferred Roaming List loaded in the modem. */
-  var PRLVersion: js.UndefOr[integer] = js.native
+  var PRLVersion: js.UndefOr[integer] = js.undefined
   
   /** Online payment portal a user can use to sign-up for or modify a mobile data plan. */
-  var PaymentPortal: js.UndefOr[typings.chromeApps.chrome.networking.onc.PaymentPortal | PaymentPortalPost] = js.native
+  var PaymentPortal: js.UndefOr[typings.chromeApps.chrome.networking.onc.PaymentPortal | PaymentPortalPost] = js.undefined
   
   /** The state of SIM lock for GSM family networks. */
-  var SIMLockStatus: js.UndefOr[typings.chromeApps.chrome.networking.onc.SIMLockStatus] = js.native
+  var SIMLockStatus: js.UndefOr[typings.chromeApps.chrome.networking.onc.SIMLockStatus] = js.undefined
   
   /**
     * @since Chrome 63.
     * True when a cellular network scan is in progress.
     */
-  var Scanning: js.UndefOr[Boolean] = js.native
+  var Scanning: js.UndefOr[Boolean] = js.undefined
   
   /** Information about the operator on whose network the modem is currently registered. */
-  var ServingOperator: js.UndefOr[CellularProviderProperties] = js.native
+  var ServingOperator: js.UndefOr[CellularProviderProperties] = js.undefined
   
   /** Whether the cellular network supports scanning. */
-  var SupportNetworkScan: js.UndefOr[Boolean] = js.native
+  var SupportNetworkScan: js.UndefOr[Boolean] = js.undefined
   
   /** A list of supported carriers. */
-  var SupportedCarriers: js.UndefOr[js.Array[String]] = js.native
+  var SupportedCarriers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CellularProperties {
   
@@ -77,7 +77,7 @@ object CellularProperties {
   }
   
   @scala.inline
-  implicit class CellularPropertiesMutableBuilder[Self <: CellularProperties[_], M /* <: ManagedObject */] (val x: Self with CellularProperties[M]) extends AnyVal {
+  implicit class CellularPropertiesMutableBuilder[Self <: CellularProperties[?], M /* <: ManagedObject */] (val x: Self & CellularProperties[M]) extends AnyVal {
     
     @scala.inline
     def setActivationType(value: String): Self = StObject.set(x, "ActivationType", value.asInstanceOf[js.Any])

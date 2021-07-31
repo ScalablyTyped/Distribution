@@ -2,16 +2,14 @@ package typings.node.inspectorMod.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeapStatsUpdateEventDataType extends StObject {
   
   /**
     * An array of triplets. Each triplet describes a fragment. The first integer is the fragment index, the second integer is a total count of objects for the fragment, the third integer is a total size of the objects for the fragment.
     */
-  var statsUpdate: js.Array[Double] = js.native
+  var statsUpdate: js.Array[Double]
 }
 object HeapStatsUpdateEventDataType {
   

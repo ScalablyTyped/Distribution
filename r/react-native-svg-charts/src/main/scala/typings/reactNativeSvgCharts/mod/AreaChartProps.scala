@@ -2,13 +2,13 @@ package typings.reactNativeSvgCharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaChartProps[T] extends ChartProps[T] {
+trait AreaChartProps[T]
+  extends StObject
+     with ChartProps[T] {
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object AreaChartProps {
   
@@ -19,7 +19,7 @@ object AreaChartProps {
   }
   
   @scala.inline
-  implicit class AreaChartPropsMutableBuilder[Self <: AreaChartProps[_], T] (val x: Self with AreaChartProps[T]) extends AnyVal {
+  implicit class AreaChartPropsMutableBuilder[Self <: AreaChartProps[?], T] (val x: Self & AreaChartProps[T]) extends AnyVal {
     
     @scala.inline
     def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])

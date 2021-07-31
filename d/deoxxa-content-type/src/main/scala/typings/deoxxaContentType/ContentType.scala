@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ContentType {
   
-  @js.native
   trait MediaType extends StObject {
     
-    var params: js.Any = js.native
+    var params: js.Any
     
-    var q: js.UndefOr[Double] = js.native
+    var q: js.UndefOr[Double] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MediaType {
     
@@ -46,7 +44,8 @@ object ContentType {
   
   @js.native
   trait MediaTypeStatic
-    extends Instantiable1[/* s */ String, MediaType]
+    extends StObject
+       with Instantiable1[/* s */ String, MediaType]
        with Instantiable2[/* s */ String, /* p */ js.Any, MediaType] {
     
     def mediaCmp(a: MediaType, b: MediaType): Double = js.native
@@ -59,17 +58,16 @@ object ContentType {
     def splitContentTypes(str: String): js.Array[String] = js.native
     
     def splitQuotedString(str: String): js.Array[String] = js.native
-    def splitQuotedString(str: String, delimiter: js.UndefOr[scala.Nothing], quote: String): js.Array[String] = js.native
     def splitQuotedString(str: String, delimiter: String): js.Array[String] = js.native
     def splitQuotedString(str: String, delimiter: String, quote: String): js.Array[String] = js.native
+    def splitQuotedString(str: String, delimiter: Unit, quote: String): js.Array[String] = js.native
   }
   
-  @js.native
   trait SelectOptions extends StObject {
     
-    var sortAccepted: js.UndefOr[Boolean] = js.native
+    var sortAccepted: js.UndefOr[Boolean] = js.undefined
     
-    var sortAvailable: js.UndefOr[Boolean] = js.native
+    var sortAvailable: js.UndefOr[Boolean] = js.undefined
   }
   object SelectOptions {
     

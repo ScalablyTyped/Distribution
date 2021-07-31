@@ -4,17 +4,15 @@ import typings.sharepoint.anon.Dictname
 import typings.sharepoint.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SPClientPeoplePickerMRU extends StObject {
   
-  def GetItems(strKey: String): Dictname = js.native
+  def GetItems(strKey: String): Dictname
   
-  def ResetCache(): Unit = js.native
+  def ResetCache(): Unit
   
-  def SetItem[T /* <: Key */](strSearchTerm: String, objEntity: T): Unit = js.native
+  def SetItem[T /* <: Key */](strSearchTerm: String, objEntity: T): Unit
 }
 object SPClientPeoplePickerMRU {
   

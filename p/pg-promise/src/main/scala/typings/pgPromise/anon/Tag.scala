@@ -2,13 +2,11 @@ package typings.pgPromise.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
-  var tag: js.UndefOr[js.Any] = js.native
+  var tag: js.UndefOr[js.Any] = js.undefined
 }
 object Tag {
   

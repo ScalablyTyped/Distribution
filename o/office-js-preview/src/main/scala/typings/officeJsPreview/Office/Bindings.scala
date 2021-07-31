@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,7 +56,7 @@ trait Bindings extends StObject {
   def addFromNamedItemAsync(
     itemName: String,
     bindingType: BindingType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
   def addFromNamedItemAsync(itemName: String, bindingType: BindingType, options: AddBindingFromNamedItemOptions): Unit = js.native
@@ -88,7 +87,7 @@ trait Bindings extends StObject {
   def addFromPromptAsync(bindingType: BindingType, callback: js.Function1[/* result */ AsyncResult[Binding], Unit]): Unit = js.native
   def addFromPromptAsync(
     bindingType: BindingType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
   def addFromPromptAsync(bindingType: BindingType, options: AddBindingFromPromptOptions): Unit = js.native
@@ -128,7 +127,7 @@ trait Bindings extends StObject {
   def addFromSelectionAsync(bindingType: BindingType, callback: js.Function1[/* result */ AsyncResult[Binding], Unit]): Unit = js.native
   def addFromSelectionAsync(
     bindingType: BindingType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
   ): Unit = js.native
   def addFromSelectionAsync(bindingType: BindingType, options: AddBindingFromSelectionOptions): Unit = js.native
@@ -162,10 +161,7 @@ trait Bindings extends StObject {
     */
   def getAllAsync(): Unit = js.native
   def getAllAsync(callback: js.Function1[/* result */ AsyncResult[js.Array[Binding]], Unit]): Unit = js.native
-  def getAllAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[js.Array[Binding]], Unit]
-  ): Unit = js.native
+  def getAllAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[js.Array[Binding]], Unit]): Unit = js.native
   def getAllAsync(options: AsyncContextOptions): Unit = js.native
   def getAllAsync(
     options: AsyncContextOptions,
@@ -194,11 +190,7 @@ trait Bindings extends StObject {
     */
   def getByIdAsync(id: String): Unit = js.native
   def getByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[Binding], Unit]): Unit = js.native
-  def getByIdAsync(
-    id: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Binding], Unit]
-  ): Unit = js.native
+  def getByIdAsync(id: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Binding], Unit]): Unit = js.native
   def getByIdAsync(id: String, options: AsyncContextOptions): Unit = js.native
   def getByIdAsync(
     id: String,
@@ -227,11 +219,7 @@ trait Bindings extends StObject {
     */
   def releaseByIdAsync(id: String): Unit = js.native
   def releaseByIdAsync(id: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def releaseByIdAsync(
-    id: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def releaseByIdAsync(id: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def releaseByIdAsync(id: String, options: AsyncContextOptions): Unit = js.native
   def releaseByIdAsync(
     id: String,

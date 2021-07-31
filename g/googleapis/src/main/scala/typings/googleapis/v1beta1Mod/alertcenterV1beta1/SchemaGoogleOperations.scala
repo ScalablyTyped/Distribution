@@ -2,37 +2,35 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An incident reported by Google Operations for a G Suite application.
   */
-@js.native
 trait SchemaGoogleOperations extends StObject {
   
   /**
     * The list of emails which correspond to the users directly affected by the
     * incident.
     */
-  var affectedUserEmails: js.UndefOr[js.Array[String]] = js.native
+  var affectedUserEmails: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Application-specific data for an incident, provided when the G
     * Suite application which reported the incident cannot be completely
     * restored to a valid state.
     */
-  var attachmentData: js.UndefOr[SchemaAttachment] = js.native
+  var attachmentData: js.UndefOr[SchemaAttachment] = js.undefined
   
   /**
     * A detailed, freeform incident description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A one-line incident description.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleOperations {
   

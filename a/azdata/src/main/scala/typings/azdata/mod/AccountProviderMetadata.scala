@@ -2,31 +2,29 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountProviderMetadata extends StObject {
   
   /**
     * Any arguments that identify an instantiation of the provider
     */
-  var args: js.UndefOr[js.Any] = js.native
+  var args: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Display name of the provider
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The identifier of the provider
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Optional settings that identify an instantiation of a provider
     */
-  var settings: js.UndefOr[js.Object] = js.native
+  var settings: js.UndefOr[js.Object] = js.undefined
 }
 object AccountProviderMetadata {
   

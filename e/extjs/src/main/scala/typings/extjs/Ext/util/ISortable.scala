@@ -4,28 +4,28 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISortable extends IBase {
+trait ISortable
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[String] = js.native
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
-  var generateComparator: js.UndefOr[js.Function0[Unit]] = js.native
+  var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
     * @returns Ext.util.Sorter The sorter, null if none exist
     */
-  var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.native
+  var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
   
   /** [Method] Performs initialization of this mixin  */
-  var initSortable: js.UndefOr[js.Function0[Unit]] = js.native
+  var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
@@ -34,13 +34,13 @@ trait ISortable extends IBase {
     */
   var sort: js.UndefOr[
     js.Function2[/* sorters */ js.UndefOr[js.Any], /* direction */ js.UndefOr[String], Array]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[String] = js.native
+  var sortRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
-  var sorters: js.UndefOr[js.Any] = js.native
+  var sorters: js.UndefOr[js.Any] = js.undefined
 }
 object ISortable {
   

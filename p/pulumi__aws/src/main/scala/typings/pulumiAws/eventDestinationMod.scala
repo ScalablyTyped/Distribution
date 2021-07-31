@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventDestinationMod {
@@ -66,6 +65,10 @@ object eventDestinationMod {
   /* static members */
   object EventDestination {
     
+    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventDestination resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,29 +78,23 @@ object eventDestinationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventDestination = js.native
-    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventDestination = js.native
-    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventDestinationState): EventDestination = js.native
-    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventDestinationState, opts: CustomResourceOptions): EventDestination = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventDestinationState): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventDestinationState, opts: CustomResourceOptions): EventDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventDestination]
     
     /**
       * Returns true if the given object is an instance of EventDestination.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/eventDestination.EventDestination */ Boolean]
   }
   
-  @js.native
   trait EventDestinationArgs extends StObject {
     
     /**
@@ -107,37 +104,37 @@ object eventDestinationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the configuration set
       */
-    val configurationSetName: Input[String] = js.native
+    val configurationSetName: Input[String]
     
     /**
       * If true, the event destination will be enabled
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Send the events to a kinesis firehose destination
       */
-    val kinesisDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]] = js.native
+    val kinesisDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]] = js.undefined
     
     /**
       * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
       */
-    val matchingTypes: Input[js.Array[Input[String]]] = js.native
+    val matchingTypes: Input[js.Array[Input[String]]]
     
     /**
       * The name of the event destination
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Send the events to an SNS Topic destination
       */
-    val snsDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]] = js.native
+    val snsDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]] = js.undefined
   }
   object EventDestinationArgs {
     
@@ -198,7 +195,6 @@ object eventDestinationMod {
     }
   }
   
-  @js.native
   trait EventDestinationState extends StObject {
     
     /**
@@ -208,37 +204,37 @@ object eventDestinationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ses.EventDestinationCloudwatchDestination]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the configuration set
       */
-    val configurationSetName: js.UndefOr[Input[String]] = js.native
+    val configurationSetName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true, the event destination will be enabled
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Send the events to a kinesis firehose destination
       */
-    val kinesisDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]] = js.native
+    val kinesisDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationKinesisDestination]] = js.undefined
     
     /**
       * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
       */
-    val matchingTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val matchingTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the event destination
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Send the events to an SNS Topic destination
       */
-    val snsDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]] = js.native
+    val snsDestination: js.UndefOr[Input[typings.pulumiAws.inputMod.ses.EventDestinationSnsDestination]] = js.undefined
   }
   object EventDestinationState {
     

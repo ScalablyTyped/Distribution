@@ -3,7 +3,6 @@ package typings.amapJsApi.global.AMap
 import typings.amapJsApi.AMap.Circle.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("AMap.Circle")
@@ -13,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param options 覆盖物选项
   */
 class Circle[ExtraData] ()
-  extends typings.amapJsApi.AMap.Circle[ExtraData] {
+  extends StObject
+     with typings.amapJsApi.AMap.Circle[ExtraData] {
   def this(options: Options[ExtraData]) = this()
 }

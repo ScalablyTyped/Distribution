@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportOptions extends StObject {
   
   /** Option available for Drive export. */
-  var driveOptions: js.UndefOr[DriveExportOptions] = js.native
+  var driveOptions: js.UndefOr[DriveExportOptions] = js.undefined
   
   /** Option available for groups export. */
-  var groupsOptions: js.UndefOr[GroupsExportOptions] = js.native
+  var groupsOptions: js.UndefOr[GroupsExportOptions] = js.undefined
   
   /** Option available for hangouts chat export. */
-  var hangoutsChatOptions: js.UndefOr[HangoutsChatExportOptions] = js.native
+  var hangoutsChatOptions: js.UndefOr[HangoutsChatExportOptions] = js.undefined
   
   /** Option available for mail export. */
-  var mailOptions: js.UndefOr[MailExportOptions] = js.native
+  var mailOptions: js.UndefOr[MailExportOptions] = js.undefined
   
   /** The requested export location. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object ExportOptions {
   

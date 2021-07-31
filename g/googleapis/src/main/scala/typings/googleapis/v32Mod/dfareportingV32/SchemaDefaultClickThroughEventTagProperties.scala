@@ -2,7 +2,6 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * tag. A campaign may override the event tag defined at the advertiser level,
   * and an ad may also override the campaign&#39;s setting further.
   */
-@js.native
 trait SchemaDefaultClickThroughEventTagProperties extends StObject {
   
   /**
     * ID of the click-through event tag to apply to all ads in this
     * entity&#39;s scope.
     */
-  var defaultClickThroughEventTagId: js.UndefOr[String] = js.native
+  var defaultClickThroughEventTagId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this entity should override the inherited default click-through
     * event tag with its own defined value.
     */
-  var overrideInheritedEventTag: js.UndefOr[Boolean] = js.native
+  var overrideInheritedEventTag: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDefaultClickThroughEventTagProperties {
   

@@ -5,13 +5,13 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iclientdriverMod {
   
-  @js.native
-  trait IClientDriver extends ICommunicator {
+  trait IClientDriver
+    extends StObject
+       with ICommunicator {
     
     /**
       * Listen message from the newly connected client.
@@ -23,7 +23,7 @@ object iclientdriverMod {
       * @param listener A listener object to listen replied message from newly connected client in
       *				   {@link IProtocol.replyData replyData()} as an {@link Invoke} object.
       */
-    def listen(listener: IProtocol): Unit = js.native
+    def listen(listener: IProtocol): Unit
   }
   object IClientDriver {
     

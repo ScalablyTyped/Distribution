@@ -2,16 +2,17 @@ package typings.saneEmailValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(email: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   @JSImport("sane-email-validation", JSImport.Namespace)
   @js.native
-  def apply(email: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sane-email-validation", "isNotEmail")
-  @js.native
-  def isNotEmail(email: String): Boolean = js.native
+  @scala.inline
+  def isNotEmail(email: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

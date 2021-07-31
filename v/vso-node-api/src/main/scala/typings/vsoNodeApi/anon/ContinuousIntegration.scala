@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinuousIntegration extends StObject {
   
-  var continuousIntegration: scala.Double = js.native
+  var continuousIntegration: scala.Double
   
-  var manual: scala.Double = js.native
+  var manual: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var schedule: scala.Double = js.native
+  var schedule: scala.Double
 }
 object ContinuousIntegration {
   

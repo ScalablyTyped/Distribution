@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `cultureInfo.toJSON()`. */
-@js.native
 trait CultureInfoData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait CultureInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var datetimeFormat: js.UndefOr[DatetimeFormatInfoData] = js.native
+  var datetimeFormat: js.UndefOr[DatetimeFormatInfoData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait CultureInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait CultureInfoData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var numberFormat: js.UndefOr[NumberFormatInfoData] = js.native
+  var numberFormat: js.UndefOr[NumberFormatInfoData] = js.undefined
 }
 object CultureInfoData {
   

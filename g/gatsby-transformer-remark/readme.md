@@ -10,9 +10,9 @@ Gatsby transformer plugin for Markdown using the Remark library and ecosystem
 | ------------------ | :-------------: |
 | Full name          | gatsby-transformer-remark |
 | Keywords           | gatsby, gatsby-plugin, markdown, remark |
-| # releases         | 165 |
-| # dependents       | 316 |
-| # downloads        | 6028883 |
+| # releases         | 169 |
+| # dependents       | 328 |
+| # downloads        | 6378966 |
 | # stars            | 2 |
 
 ## Links

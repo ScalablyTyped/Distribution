@@ -2,17 +2,15 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QRow extends StObject {
   
-  var cells: js.Array[QDimensionCell | QMeasureCell] = js.native
+  var cells: js.Array[QDimensionCell | QMeasureCell]
   
-  var dimensions: js.Array[QDimensionCell] = js.native
+  var dimensions: js.Array[QDimensionCell]
   
-  var measures: js.Array[QMeasureCell] = js.native
+  var measures: js.Array[QMeasureCell]
 }
 object QRow {
   

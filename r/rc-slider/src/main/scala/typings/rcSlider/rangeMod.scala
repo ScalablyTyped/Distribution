@@ -10,7 +10,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod extends Shortcut {
@@ -27,45 +26,46 @@ object rangeMod extends Shortcut {
   @js.native
   val default: ComponentClass[RangeProps, RangeState] = js.native
   
-  @js.native
-  trait RangeProps extends GenericSliderProps {
+  trait RangeProps
+    extends StObject
+       with GenericSliderProps {
     
-    var allowCross: js.UndefOr[Boolean] = js.native
+    var allowCross: js.UndefOr[Boolean] = js.undefined
     
-    var ariaLabelGroupForHandles: js.UndefOr[String | js.Array[String]] = js.native
+    var ariaLabelGroupForHandles: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ariaLabelledByGroupForHandles: js.UndefOr[String | js.Array[String]] = js.native
+    var ariaLabelledByGroupForHandles: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ariaValueTextFormatterGroupForHandles: js.UndefOr[String | js.Array[String]] = js.native
+    var ariaValueTextFormatterGroupForHandles: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Array[Double]] = js.native
+    var defaultValue: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var handle: js.UndefOr[js.Function1[/* props */ AriaLabel, ReactElement]] = js.native
+    var handle: js.UndefOr[js.Function1[/* props */ AriaLabel, ReactElement]] = js.undefined
     
     @JSName("handleStyle")
-    var handleStyle_RangeProps: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var handleStyle_RangeProps: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
-    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.native
+    var onAfterChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.undefined
     
-    var onBeforeChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.native
+    var onBeforeChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ js.Array[Double], Unit]] = js.undefined
     
-    var pushable: js.UndefOr[Boolean] = js.native
+    var pushable: js.UndefOr[Boolean] = js.undefined
     
     @JSName("step")
-    var step_RangeProps: js.UndefOr[Double] = js.native
+    var step_RangeProps: js.UndefOr[Double] = js.undefined
     
-    var tabIndex: js.UndefOr[Double | js.Array[Double]] = js.native
+    var tabIndex: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
     @JSName("trackStyle")
-    var trackStyle_RangeProps: js.UndefOr[js.Array[CSSProperties]] = js.native
+    var trackStyle_RangeProps: js.UndefOr[js.Array[CSSProperties]] = js.undefined
     
-    var value: js.UndefOr[js.Array[Double]] = js.native
+    var value: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RangeProps {
     
@@ -206,20 +206,21 @@ object rangeMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait RangeState extends GenericSliderState {
+  trait RangeState
+    extends StObject
+       with GenericSliderState {
     
-    var bounds: js.Array[Double] = js.native
+    var bounds: js.Array[Double]
     
-    var handle: Double | Null = js.native
+    var handle: Double | Null
     
-    var recent: Double = js.native
+    var recent: Double
   }
   object RangeState {
     
     @scala.inline
     def apply(bounds: js.Array[Double], recent: Double): RangeState = {
-      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], recent = recent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], recent = recent.asInstanceOf[js.Any], handle = null)
       __obj.asInstanceOf[RangeState]
     }
     

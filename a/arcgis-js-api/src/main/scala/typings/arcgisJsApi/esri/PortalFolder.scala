@@ -3,11 +3,12 @@ package typings.arcgisJsApi.esri
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalFolder extends Accessor {
+trait PortalFolder
+  extends StObject
+     with Accessor {
   
   /**
     * The date the folder was created.

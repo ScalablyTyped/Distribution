@@ -4,15 +4,15 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgGridEvent extends AgEvent {
+trait AgGridEvent
+  extends StObject
+     with AgEvent {
   
-  var api: GridApi = js.native
+  var api: GridApi
   
-  var columnApi: ColumnApi = js.native
+  var columnApi: ColumnApi
 }
 object AgGridEvent {
   

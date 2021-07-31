@@ -3,13 +3,14 @@ package typings.amapJsSdk.AMap
 import typings.amapJsSdk.anon.City
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends EventBindable {
+trait Map
+  extends StObject
+     with EventBindable {
   
-  def add(overlayers: js.Array[_]): Unit = js.native
+  def add(overlayers: js.Array[js.Any]): Unit = js.native
   
   def addControl(obj: js.Any): Unit = js.native
   
@@ -70,7 +71,7 @@ trait Map extends EventBindable {
   def plugin(name: String, callback: js.Function0[Unit]): Unit = js.native
   def plugin(name: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
   
-  def remove(overlayers: js.Array[_]): Unit = js.native
+  def remove(overlayers: js.Array[js.Any]): Unit = js.native
   
   def removeControl(obj: js.Any): Unit = js.native
   
@@ -87,7 +88,7 @@ trait Map extends EventBindable {
   def setFeatures(features: js.Array[String]): Unit = js.native
   
   def setFitView(): Unit = js.native
-  def setFitView(overlayList: js.Array[_]): Unit = js.native
+  def setFitView(overlayList: js.Array[js.Any]): Unit = js.native
   
   def setLang(lang: String): Unit = js.native
   

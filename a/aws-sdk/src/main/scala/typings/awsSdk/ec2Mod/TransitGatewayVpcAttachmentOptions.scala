@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayVpcAttachmentOptions extends StObject {
   
   /**
     * Indicates whether appliance mode support is enabled.
     */
-  var ApplianceModeSupport: js.UndefOr[ApplianceModeSupportValue] = js.native
+  var ApplianceModeSupport: js.UndefOr[ApplianceModeSupportValue] = js.undefined
   
   /**
     * Indicates whether DNS support is enabled.
     */
-  var DnsSupport: js.UndefOr[DnsSupportValue] = js.native
+  var DnsSupport: js.UndefOr[DnsSupportValue] = js.undefined
   
   /**
     * Indicates whether IPv6 support is disabled.
     */
-  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.native
+  var Ipv6Support: js.UndefOr[Ipv6SupportValue] = js.undefined
 }
 object TransitGatewayVpcAttachmentOptions {
   

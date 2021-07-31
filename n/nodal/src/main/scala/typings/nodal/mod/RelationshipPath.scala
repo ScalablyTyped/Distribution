@@ -3,7 +3,6 @@ package typings.nodal.mod
 import typings.nodal.anon.TypeofModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "RelationshipPath")
@@ -23,10 +22,10 @@ class RelationshipPath protected () extends StObject {
   def joinName(reverse: Boolean): String = js.native
   
   def joins(): js.Array[IJoin] = js.native
-  def joins(alias: js.UndefOr[scala.Nothing], firstTable: String): js.Array[IJoin] = js.native
   def joins(alias: String): js.Array[IJoin] = js.native
   def joins(alias: String, firstTable: String): js.Array[IJoin] = js.native
   def joins(alias: Null, firstTable: String): js.Array[IJoin] = js.native
+  def joins(alias: Unit, firstTable: String): js.Array[IJoin] = js.native
   
   def multiple(): Boolean = js.native
   

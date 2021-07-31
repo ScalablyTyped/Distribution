@@ -10,9 +10,9 @@ express middleware for i18next
 | ------------------ | :-------------: |
 | Full name          | i18next-express-middleware |
 | Keywords           | i18next, i18next-express, express, middleware |
-| # releases         | 15 |
-| # dependents       | 63 |
-| # downloads        | 3080136 |
+| # releases         | 9 |
+| # dependents       | 61 |
+| # downloads        | 2993573 |
 | # stars            | 1 |
 
 ## Links

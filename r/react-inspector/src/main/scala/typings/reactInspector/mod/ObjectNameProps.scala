@@ -2,17 +2,15 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectNameProps extends StObject {
   
-  var dimmed: js.UndefOr[Boolean] = js.native
+  var dimmed: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[js.Object] = js.native
+  var styles: js.UndefOr[js.Object] = js.undefined
 }
 object ObjectNameProps {
   

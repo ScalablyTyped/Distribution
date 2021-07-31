@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,25 +34,26 @@ object mod {
   //=> Error: Cannot read property 'name' of undefined
   ```
   */
-  @JSImport("auto-bind", JSImport.Namespace)
-  @js.native
-  def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType): SelfType = js.native
-  @JSImport("auto-bind", JSImport.Namespace)
-  @js.native
-  def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType, options: Options): SelfType = js.native
+  @scala.inline
+  def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType): SelfType = ^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any]).asInstanceOf[SelfType]
+  @scala.inline
+  def apply[SelfType /* <: StringDictionary[js.Any] */](self: SelfType, options: Options): SelfType = (^.asInstanceOf[js.Dynamic].apply(self.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SelfType]
   
+  @JSImport("auto-bind", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Bind methods except for the given methods.
     		*/
-    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    val exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
     		Bind only the given methods.
     		*/
-    val include: js.UndefOr[js.Array[String | RegExp]] = js.native
+    val include: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   }
   object Options {
     

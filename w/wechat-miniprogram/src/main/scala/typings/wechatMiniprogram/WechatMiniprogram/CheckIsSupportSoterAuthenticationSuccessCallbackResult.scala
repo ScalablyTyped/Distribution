@@ -5,13 +5,11 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.fingerPrint
 import typings.wechatMiniprogram.wechatMiniprogramStrings.speech
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 该设备支持的可被SOTER识别的生物识别方式
     *
@@ -19,7 +17,7 @@ trait CheckIsSupportSoterAuthenticationSuccessCallbackResult extends StObject {
     * - 'fingerPrint': 指纹识别;
     * - 'facial': 人脸识别;
     * - 'speech': 声纹识别（暂未支持）; */
-  var supportMode: js.Array[fingerPrint | facial | speech] = js.native
+  var supportMode: js.Array[fingerPrint | facial | speech]
 }
 object CheckIsSupportSoterAuthenticationSuccessCallbackResult {
   

@@ -8,7 +8,6 @@ import typings.storybookComponents.storybookComponentsStrings.positive
 import typings.storybookComponents.storybookComponentsStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
@@ -17,10 +16,9 @@ object badgeMod {
   @js.native
   val Badge: FunctionComponent[BadgeProps] = js.native
   
-  @js.native
   trait BadgeProps extends StObject {
     
-    var status: positive | negative | neutral | warning | critical = js.native
+    var status: positive | negative | neutral | warning | critical
   }
   object BadgeProps {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSubnetResult extends StObject {
   
   /**
     * Information about the subnet.
     */
-  var Subnet: js.UndefOr[typings.awsSdk.ec2Mod.Subnet] = js.native
+  var Subnet: js.UndefOr[typings.awsSdk.ec2Mod.Subnet] = js.undefined
 }
 object CreateSubnetResult {
   

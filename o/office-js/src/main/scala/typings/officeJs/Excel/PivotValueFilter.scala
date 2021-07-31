@@ -14,7 +14,6 @@ import typings.officeJs.officeJsStrings.TopN
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.12]
   */
-@js.native
 trait PivotValueFilter extends StObject {
   
   /**
@@ -34,7 +32,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var comparator: js.UndefOr[Double] = js.native
+  var comparator: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var condition: ValueFilterCondition | Unknown_ | Equals | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between | TopN | BottomN = js.native
+  var condition: ValueFilterCondition | Unknown_ | Equals | GreaterThan | GreaterThanOrEqualTo | LessThan | LessThanOrEqualTo | Between | TopN | BottomN
   
   /**
     *
@@ -50,7 +48,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var lowerBound: js.UndefOr[Double] = js.native
+  var lowerBound: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var selectionType: js.UndefOr[TopBottomSelectionType | Items | Percent | Sum] = js.native
+  var selectionType: js.UndefOr[TopBottomSelectionType | Items | Percent | Sum] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var upperBound: js.UndefOr[Double] = js.native
+  var upperBound: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -90,7 +88,7 @@ trait PivotValueFilter extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var value: String = js.native
+  var value: String
 }
 object PivotValueFilter {
   

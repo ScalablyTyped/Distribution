@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IState extends StObject {
   
-  def GetAsLookup(): ILookup = js.native
+  def GetAsLookup(): ILookup
   
-  def GetAsTypedValue(): ITypedValue = js.native
+  def GetAsTypedValue(): ITypedValue
   
-  val ID: Double = js.native
+  val ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var Selectable: Boolean = js.native
+  var Selectable: Boolean
   
-  var SelectableFlagAffectedByPseudoUsers: Boolean = js.native
+  var SelectableFlagAffectedByPseudoUsers: Boolean
 }
 object IState {
   

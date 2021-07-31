@@ -2,51 +2,49 @@ package typings.nodePgMigrate.distTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunnerOptionConfig extends StObject {
   
-  var checkOrder: js.UndefOr[Boolean] = js.native
+  var checkOrder: js.UndefOr[Boolean] = js.undefined
   
-  var count: Double = js.native
+  var count: Double
   
-  var createMigrationsSchema: js.UndefOr[Boolean] = js.native
+  var createMigrationsSchema: js.UndefOr[Boolean] = js.undefined
   
-  var createSchema: js.UndefOr[Boolean] = js.native
+  var createSchema: js.UndefOr[Boolean] = js.undefined
   
-  var decamelize: js.UndefOr[Boolean] = js.native
+  var decamelize: js.UndefOr[Boolean] = js.undefined
   
-  var dir: String = js.native
+  var dir: String
   
-  var direction: MigrationDirection = js.native
+  var direction: MigrationDirection
   
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
-  var fake: js.UndefOr[Boolean] = js.native
+  var fake: js.UndefOr[Boolean] = js.undefined
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var ignorePattern: js.UndefOr[String] = js.native
+  var ignorePattern: js.UndefOr[String] = js.undefined
   
-  var log: js.UndefOr[LogFn] = js.native
+  var log: js.UndefOr[LogFn] = js.undefined
   
-  var logger: js.UndefOr[Logger] = js.native
+  var logger: js.UndefOr[Logger] = js.undefined
   
-  var migrationsSchema: js.UndefOr[String] = js.native
+  var migrationsSchema: js.UndefOr[String] = js.undefined
   
-  var migrationsTable: String = js.native
+  var migrationsTable: String
   
-  var noLock: js.UndefOr[Boolean] = js.native
+  var noLock: js.UndefOr[Boolean] = js.undefined
   
-  var schema: js.UndefOr[String | js.Array[String]] = js.native
+  var schema: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var singleTransaction: js.UndefOr[Boolean] = js.native
+  var singleTransaction: js.UndefOr[Boolean] = js.undefined
   
-  var timestamp: js.UndefOr[Boolean] = js.native
+  var timestamp: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object RunnerOptionConfig {
   

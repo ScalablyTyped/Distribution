@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsResult extends StObject {
   
   /** Finding matching the search request. */
-  var finding: js.UndefOr[Finding] = js.native
+  var finding: js.UndefOr[Finding] = js.undefined
   
   /** Output only. Resource that is associated with this finding. */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /** State change of the finding between the points in time. */
-  var stateChange: js.UndefOr[String] = js.native
+  var stateChange: js.UndefOr[String] = js.undefined
 }
 object ListFindingsResult {
   

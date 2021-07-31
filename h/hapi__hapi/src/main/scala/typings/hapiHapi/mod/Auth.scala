@@ -4,23 +4,21 @@ import typings.hapiHapi.hapiHapiBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth extends StObject {
   
-  val data: js.UndefOr[AuthenticationData] = js.native
+  val data: js.UndefOr[AuthenticationData] = js.undefined
   
-  val error: js.UndefOr[Error | Null] = js.native
+  val error: js.UndefOr[Error | Null] = js.undefined
   
-  val isAuth: `true` = js.native
+  val isAuth: `true`
 }
 object Auth {
   
   @scala.inline
-  def apply(isAuth: `true`): Auth = {
-    val __obj = js.Dynamic.literal(isAuth = isAuth.asInstanceOf[js.Any])
+  def apply(): Auth = {
+    val __obj = js.Dynamic.literal(isAuth = true)
     __obj.asInstanceOf[Auth]
   }
   

@@ -21,7 +21,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressProgressMod {
@@ -43,12 +42,11 @@ object progressProgressMod {
     def defaultProps_=(x: GapDegree): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait FromToGradients extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var to: String = js.native
+    var to: String
   }
   object FromToGradients {
     
@@ -89,51 +87,50 @@ object progressProgressMod {
     def renderProgress(hasGetPrefixClsDirection: ConfigConsumerProps): Element = js.native
   }
   
-  type ProgressGradient = Direction with (StringGradients | FromToGradients)
+  type ProgressGradient = Direction & (StringGradients | FromToGradients)
   
-  @js.native
   trait ProgressProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     var format: js.UndefOr[
         js.Function2[/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double], ReactNode]
-      ] = js.native
+      ] = js.undefined
     
-    var gapDegree: js.UndefOr[Double] = js.native
+    var gapDegree: js.UndefOr[Double] = js.undefined
     
-    var gapPosition: js.UndefOr[top | bottom | left | right] = js.native
+    var gapPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var showInfo: js.UndefOr[Boolean] = js.native
+    var showInfo: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[ProgressSize] = js.native
+    var size: js.UndefOr[ProgressSize] = js.undefined
     
-    var status: js.UndefOr[normal | exception | active | success] = js.native
+    var status: js.UndefOr[normal | exception | active | success] = js.undefined
     
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String | ProgressGradient] = js.native
+    var strokeColor: js.UndefOr[String | ProgressGradient] = js.undefined
     
-    var strokeLinecap: js.UndefOr[butt | square | round] = js.native
+    var strokeLinecap: js.UndefOr[butt | square | round] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var success: js.UndefOr[SuccessProps] = js.native
+    var success: js.UndefOr[SuccessProps] = js.undefined
     
     /** @deprecated Use `success` instead */
-    var successPercent: js.UndefOr[Double] = js.native
+    var successPercent: js.UndefOr[Double] = js.undefined
     
-    var trailColor: js.UndefOr[String] = js.native
+    var trailColor: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[ProgressType] = js.native
+    var `type`: js.UndefOr[ProgressType] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ProgressProps {
     
@@ -285,15 +282,14 @@ object progressProgressMod {
   
   type StringGradients = StringDictionary[String]
   
-  @js.native
   trait SuccessProps extends StObject {
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
     /** @deprecated Use `percent` instead */
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
   }
   object SuccessProps {
     

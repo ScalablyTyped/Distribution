@@ -6,35 +6,33 @@ import typings.epiceditor.anon.Fullscreen
 import typings.epiceditor.anon.ToggleEdit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EpicEditorOptions extends StObject {
   
-  var basePath: js.UndefOr[String] = js.native
+  var basePath: js.UndefOr[String] = js.undefined
   
-  var clientSideStorage: js.UndefOr[Boolean] = js.native
+  var clientSideStorage: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.UndefOr[js.Any] = js.undefined
   
-  var file: js.UndefOr[AutoSave] = js.native
+  var file: js.UndefOr[AutoSave] = js.undefined
   
-  var focusOnLoad: js.UndefOr[Boolean] = js.native
+  var focusOnLoad: js.UndefOr[Boolean] = js.undefined
   
-  var localStorageName: js.UndefOr[String] = js.native
+  var localStorageName: js.UndefOr[String] = js.undefined
   
-  var parser: js.UndefOr[js.Any] = js.native
+  var parser: js.UndefOr[js.Any] = js.undefined
   
-  var shortcut: js.UndefOr[Fullscreen] = js.native
+  var shortcut: js.UndefOr[Fullscreen] = js.undefined
   
-  var string: js.UndefOr[ToggleEdit] = js.native
+  var string: js.UndefOr[ToggleEdit] = js.undefined
   
-  var textarea: js.UndefOr[js.Any] = js.native
+  var textarea: js.UndefOr[js.Any] = js.undefined
   
-  var theme: js.UndefOr[Base] = js.native
+  var theme: js.UndefOr[Base] = js.undefined
   
-  var useNativeFullsreen: js.UndefOr[Boolean] = js.native
+  var useNativeFullsreen: js.UndefOr[Boolean] = js.undefined
 }
 object EpicEditorOptions {
   

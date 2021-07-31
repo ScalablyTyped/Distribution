@@ -2,21 +2,19 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILookupTableInfo extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var limitToList: js.UndefOr[Boolean] = js.native
+  var limitToList: js.UndefOr[Boolean] = js.undefined
   
-  var lookup: js.Array[ILookupInfo] = js.native
+  var lookup: js.Array[ILookupInfo]
   
-  var showImage: js.UndefOr[Boolean] = js.native
+  var showImage: js.UndefOr[Boolean] = js.undefined
   
-  var showText: js.UndefOr[Boolean] = js.native
+  var showText: js.UndefOr[Boolean] = js.undefined
 }
 object ILookupTableInfo {
   

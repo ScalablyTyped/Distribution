@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayAppliancePage extends StObject {
   
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
-  var documentName: js.UndefOr[String] = js.native
+  var documentName: js.UndefOr[String] = js.undefined
   
-  var externalDocumentId: js.UndefOr[String] = js.native
+  var externalDocumentId: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var isFirstPage: js.UndefOr[Boolean] = js.native
+  var isFirstPage: js.UndefOr[Boolean] = js.undefined
   
-  var pageId: js.UndefOr[String] = js.native
+  var pageId: js.UndefOr[String] = js.undefined
   
-  var pageNo: js.UndefOr[Double] = js.native
+  var pageNo: js.UndefOr[Double] = js.undefined
   
-  var pageStatus: js.UndefOr[String] = js.native
+  var pageStatus: js.UndefOr[String] = js.undefined
   
-  var pageType: js.UndefOr[String] = js.native
+  var pageType: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DisplayAppliancePage {
   

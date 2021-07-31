@@ -2,36 +2,34 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationGroupPendingModifiedValues extends StObject {
   
   /**
     * The auth token status
     */
-  var AuthTokenStatus: js.UndefOr[AuthTokenUpdateStatus] = js.native
+  var AuthTokenStatus: js.UndefOr[AuthTokenUpdateStatus] = js.undefined
   
   /**
     * Indicates the status of automatic failover for this Redis replication group.
     */
-  var AutomaticFailoverStatus: js.UndefOr[PendingAutomaticFailoverStatus] = js.native
+  var AutomaticFailoverStatus: js.UndefOr[PendingAutomaticFailoverStatus] = js.undefined
   
   /**
     * The primary cluster ID that is applied immediately (if --apply-immediately was specified), or during the next maintenance window.
     */
-  var PrimaryClusterId: js.UndefOr[String] = js.native
+  var PrimaryClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of an online resharding operation.
     */
-  var Resharding: js.UndefOr[ReshardingStatus] = js.native
+  var Resharding: js.UndefOr[ReshardingStatus] = js.undefined
   
   /**
     * The user groups being modified.
     */
-  var UserGroups: js.UndefOr[UserGroupsUpdateStatus] = js.native
+  var UserGroups: js.UndefOr[UserGroupsUpdateStatus] = js.undefined
 }
 object ReplicationGroupPendingModifiedValues {
   

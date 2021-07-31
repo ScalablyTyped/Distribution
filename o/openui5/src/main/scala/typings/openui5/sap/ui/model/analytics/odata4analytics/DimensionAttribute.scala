@@ -2,42 +2,40 @@ package typings.openui5.sap.ui.model.analytics.odata4analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionAttribute extends StObject {
   
   /**
     * Get dimension
     * @returns The dimension object         containing this attribute
     */
-  def getDimension(): Dimension = js.native
+  def getDimension(): Dimension
   
   /**
     * Get the key property
     * @returns The DataJS object representing the property for the key         of this dimension attribute
     */
-  def getKeyProperty(): js.Any = js.native
+  def getKeyProperty(): js.Any
   
   /**
     * Get label
     * @returns The (possibly language-dependent) label text for this         dimension attribute
     */
-  def getLabelText(): String = js.native
+  def getLabelText(): String
   
   /**
     * Get the name of the dimension attribute
     * @returns The name of the dimension attribute, which is identical         to the name of the property
     * in the entity type holding the         attribute value
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Get text property related to this dimension attribute
     * @returns The DataJS object representing the text property or         null if it does not exist
     */
-  def getTextProperty(): js.Any = js.native
+  def getTextProperty(): js.Any
 }
 object DimensionAttribute {
   

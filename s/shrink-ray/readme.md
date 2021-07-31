@@ -12,7 +12,7 @@ Node.js compression middleware with brotli and zopfli support
 | Keywords           | compression, gzip, deflate, brotli, zopfli, middleware, express, connect, compress, content-encoding |
 | # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 59053 |
+| # downloads        | 34563 |
 | # stars            | 10 |
 
 ## Links

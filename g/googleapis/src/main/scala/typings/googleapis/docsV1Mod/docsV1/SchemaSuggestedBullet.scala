@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A suggested change to a Bullet.
   */
-@js.native
 trait SchemaSuggestedBullet extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaSuggestedBullet extends StObject {
     * be used along with the bullet_suggestion_state to see which fields have
     * changed and their new values.
     */
-  var bullet: js.UndefOr[SchemaBullet] = js.native
+  var bullet: js.UndefOr[SchemaBullet] = js.undefined
   
   /**
     * A mask that indicates which of the fields on the base Bullet have been
     * changed in this suggestion.
     */
-  var bulletSuggestionState: js.UndefOr[SchemaBulletSuggestionState] = js.native
+  var bulletSuggestionState: js.UndefOr[SchemaBulletSuggestionState] = js.undefined
 }
 object SchemaSuggestedBullet {
   

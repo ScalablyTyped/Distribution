@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The Amazon EMR resource identifier to which tags will be added. This value must be a cluster identifier.
     */
-  var ResourceId: typings.awsSdk.emrMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.emrMod.ResourceId
   
   /**
     * A list of tags to associate with a cluster and propagate to EC2 instances. Tags are user-defined key/value pairs that consist of a required key string with a maximum of 128 characters, and an optional value string with a maximum of 256 characters.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsInput {
   

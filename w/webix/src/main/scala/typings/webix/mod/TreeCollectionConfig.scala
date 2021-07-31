@@ -2,43 +2,41 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeCollectionConfig extends StObject {
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datathrottle: js.UndefOr[Double] = js.native
+  var datathrottle: js.UndefOr[Double] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var defaultData: js.UndefOr[js.Any] = js.native
+  var defaultData: js.UndefOr[js.Any] = js.undefined
   
-  var externalData: js.UndefOr[WebixCallback] = js.native
+  var externalData: js.UndefOr[WebixCallback] = js.undefined
   
-  var filterMode: js.UndefOr[js.Any] = js.native
+  var filterMode: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var map: js.UndefOr[js.Any] = js.native
+  var map: js.UndefOr[js.Any] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.native
+  var rules: js.UndefOr[js.Any] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.native
+  var save: js.UndefOr[js.Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object TreeCollectionConfig {
   
@@ -52,7 +50,7 @@ object TreeCollectionConfig {
   implicit class TreeCollectionConfigMutableBuilder[Self <: TreeCollectionConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -79,7 +77,7 @@ object TreeCollectionConfig {
     def setDefaultDataUndefined: Self = StObject.set(x, "defaultData", js.undefined)
     
     @scala.inline
-    def setExternalData(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "externalData", js.Any.fromFunction1(value))
+    def setExternalData(value: WebixCallback): Self = StObject.set(x, "externalData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExternalDataUndefined: Self = StObject.set(x, "externalData", js.undefined)
@@ -109,7 +107,7 @@ object TreeCollectionConfig {
     def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)

@@ -2,28 +2,28 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceConfigurationState extends Entity {
+trait DeviceConfigurationState
+  extends StObject
+     with Entity {
   
   // The name of the policy for this policyBase
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Platform type that the policy applies to
-  var platformType: js.UndefOr[PolicyPlatformType] = js.native
+  var platformType: js.UndefOr[PolicyPlatformType] = js.undefined
   
   // Count of how many setting a policy holds
-  var settingCount: js.UndefOr[Double] = js.native
+  var settingCount: js.UndefOr[Double] = js.undefined
   
-  var settingStates: js.UndefOr[NullableOption[js.Array[DeviceConfigurationSettingState]]] = js.native
+  var settingStates: js.UndefOr[NullableOption[js.Array[DeviceConfigurationSettingState]]] = js.undefined
   
   // The compliance state of the policy
-  var state: js.UndefOr[ComplianceStatus] = js.native
+  var state: js.UndefOr[ComplianceStatus] = js.undefined
   
   // The version of the policy
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object DeviceConfigurationState {
   

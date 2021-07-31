@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Auth extends StObject {
     * string has the format: "//{api_service_name}/accessPolicies/{policy_id}/accessLevels/{short_name}" Example:
     * "//accesscontextmanager.googleapis.com/accessPolicies/MY_POLICY_ID/accessLevels/MY_LEVEL"
     */
-  var accessLevels: js.UndefOr[js.Array[String]] = js.native
+  var accessLevels: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The intended audience(s) for this authentication information. Reflects the audience (`aud`) claim within a JWT. The audience value(s) depends on the `issuer`, but typically include
@@ -22,7 +20,7 @@ trait Auth extends StObject {
     * "https://storage.googleapis.com/"]. * A set of service-based scopes. For example, ["https://www.googleapis.com/auth/cloud-platform"]. * The client id of an app, such as the Firebase
     * project id for JWTs from Firebase Auth. Consult the documentation for the credential issuer to determine the information provided.
     */
-  var audiences: js.UndefOr[js.Array[String]] = js.native
+  var audiences: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Structured claims presented with the credential. JWTs include `{key: value}` pairs for standard and private claims. The following is a subset of the standard required and optional
@@ -33,20 +31,20 @@ trait Auth extends StObject {
   var claims: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The authorized presenter of the credential. Reflects the optional Authorized Presenter (`azp`) claim within a JWT or the OAuth client id. For example, a Google Cloud Platform client
     * id looks as follows: "123456789012.apps.googleusercontent.com".
     */
-  var presenter: js.UndefOr[String] = js.native
+  var presenter: js.UndefOr[String] = js.undefined
   
   /**
     * The authenticated principal. Reflects the issuer (`iss`) and subject (`sub`) claims within a JWT. The issuer and subject should be `/` delimited, with `/` percent-encoded within the
     * subject fragment. For Google accounts, the principal format is: "https://accounts.google.com/{id}"
     */
-  var principal: js.UndefOr[String] = js.native
+  var principal: js.UndefOr[String] = js.undefined
 }
 object Auth {
   
@@ -81,7 +79,7 @@ object Auth {
     def setClaims(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.Auth & TopLevel[js.Any]
     ): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
     
     @scala.inline

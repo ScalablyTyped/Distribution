@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessConditionSet extends StObject {
   
   // Applications and user actions included in and excluded from the policy. Required.
-  var applications: js.UndefOr[NullableOption[ConditionalAccessApplications]] = js.native
+  var applications: js.UndefOr[NullableOption[ConditionalAccessApplications]] = js.undefined
   
   /**
     * Client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients,
     * exchangeActiveSync, easSupported, other.
     */
-  var clientAppTypes: js.UndefOr[js.Array[ConditionalAccessClientApp]] = js.native
+  var clientAppTypes: js.UndefOr[js.Array[ConditionalAccessClientApp]] = js.undefined
   
   // Locations included in and excluded from the policy.
-  var locations: js.UndefOr[NullableOption[ConditionalAccessLocations]] = js.native
+  var locations: js.UndefOr[NullableOption[ConditionalAccessLocations]] = js.undefined
   
   // Platforms included in and excluded from the policy.
-  var platforms: js.UndefOr[NullableOption[ConditionalAccessPlatforms]] = js.native
+  var platforms: js.UndefOr[NullableOption[ConditionalAccessPlatforms]] = js.undefined
   
   // Risk levels included in the policy. Possible values are: low, medium, high, none.
-  var signInRiskLevels: js.UndefOr[js.Array[RiskLevel]] = js.native
+  var signInRiskLevels: js.UndefOr[js.Array[RiskLevel]] = js.undefined
   
   // Users, groups, and roles included in and excluded from the policy. Required.
-  var users: js.UndefOr[ConditionalAccessUsers] = js.native
+  var users: js.UndefOr[ConditionalAccessUsers] = js.undefined
 }
 object ConditionalAccessConditionSet {
   

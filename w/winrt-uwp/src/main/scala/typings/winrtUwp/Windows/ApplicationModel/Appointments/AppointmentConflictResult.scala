@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a conflict between appointments. */
-@js.native
 trait AppointmentConflictResult extends StObject {
   
   /** Gets the date of the appointment conflict. */
-  var date: Date = js.native
+  var date: Date
   
   /** Gets a value indicating the type of appointment conflict. */
-  var `type`: AppointmentConflictType = js.native
+  var `type`: AppointmentConflictType
 }
 object AppointmentConflictResult {
   

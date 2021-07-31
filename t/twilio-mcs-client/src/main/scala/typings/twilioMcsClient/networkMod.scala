@@ -6,7 +6,6 @@ import typings.twilioMcsClient.configurationMod.Configuration
 import typings.twilioMcsClient.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkMod {
@@ -22,14 +21,14 @@ object networkMod {
     
     var executeWithRetry: js.Any = js.native
     
-    def get(url: String): js.Promise[_] = js.native
+    def get(url: String): js.Promise[js.Any] = js.native
     
-    def post(url: String, media: String): js.Promise[_] = js.native
-    def post(url: String, media: String, contentType: String): js.Promise[_] = js.native
-    def post(url: String, media: Buffer): js.Promise[_] = js.native
-    def post(url: String, media: Buffer, contentType: String): js.Promise[_] = js.native
-    def post(url: String, media: FormData): js.Promise[_] = js.native
-    def post(url: String, media: FormData, contentType: String): js.Promise[_] = js.native
+    def post(url: String, media: String): js.Promise[js.Any] = js.native
+    def post(url: String, media: String, contentType: String): js.Promise[js.Any] = js.native
+    def post(url: String, media: Buffer): js.Promise[js.Any] = js.native
+    def post(url: String, media: Buffer, contentType: String): js.Promise[js.Any] = js.native
+    def post(url: String, media: FormData): js.Promise[js.Any] = js.native
+    def post(url: String, media: FormData, contentType: String): js.Promise[js.Any] = js.native
     
     var retryWhenThrottled: js.Any = js.native
     

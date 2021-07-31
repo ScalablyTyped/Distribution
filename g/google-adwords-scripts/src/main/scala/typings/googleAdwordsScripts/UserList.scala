@@ -2,58 +2,56 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // User Lists
-@js.native
 trait UserList extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def excludedAdGroups(): AdWordsSelector[AdGroup] = js.native
+  def excludedAdGroups(): AdWordsSelector[AdGroup]
   
-  def excludedCampaigns(): AdWordsSelector[Campaign] = js.native
+  def excludedCampaigns(): AdWordsSelector[Campaign]
   
-  def getDescription(): String = js.native
+  def getDescription(): String
   
-  def getId(): Double = js.native
+  def getId(): Double
   
-  def getMembershipLifeSpan(): Double = js.native
+  def getMembershipLifeSpan(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getSizeForDisplay(): Double = js.native
+  def getSizeForDisplay(): Double
   
-  def getSizeForSearch(): Double = js.native
+  def getSizeForSearch(): Double
   
-  def getSizeRangeForDisplay(): UserListSizeRange = js.native
+  def getSizeRangeForDisplay(): UserListSizeRange
   
-  def getSizeRangeForSearch(): UserListSizeRange = js.native
+  def getSizeRangeForSearch(): UserListSizeRange
   
-  def getType(): UserListType = js.native
+  def getType(): UserListType
   
-  def isClosed(): Boolean = js.native
+  def isClosed(): Boolean
   
-  def isEligibleForDisplay(): Boolean = js.native
+  def isEligibleForDisplay(): Boolean
   
-  def isEligibleForSearch(): Boolean = js.native
+  def isEligibleForSearch(): Boolean
   
-  def isOpen(): Boolean = js.native
+  def isOpen(): Boolean
   
-  def isReadOnly(): Boolean = js.native
+  def isReadOnly(): Boolean
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  def setDescription(description: String): Unit = js.native
+  def setDescription(description: String): Unit
   
-  def setMembershipLifeSpan(membershipLifeSpan: Double): Unit = js.native
+  def setMembershipLifeSpan(membershipLifeSpan: Double): Unit
   
-  def setName(name: String): Unit = js.native
+  def setName(name: String): Unit
   
-  def targetedAdGroups(): AdWordsSelector[AdGroup] = js.native
+  def targetedAdGroups(): AdWordsSelector[AdGroup]
   
-  def targetedCampaigns(): AdWordsSelector[Campaign] = js.native
+  def targetedCampaigns(): AdWordsSelector[Campaign]
 }
 object UserList {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object TimedTextWeight extends StObject {
   
   /** The text is bold. */
   @js.native
-  sealed trait bold extends TimedTextWeight
+  sealed trait bold
+    extends StObject
+       with TimedTextWeight
   
   /** The text is normal weight. */
   @js.native
-  sealed trait normal extends TimedTextWeight
+  sealed trait normal
+    extends StObject
+       with TimedTextWeight
 }

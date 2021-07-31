@@ -3,14 +3,16 @@ package typings.loggly
 import typings.loggly.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("loggly", "createClient")
+  @JSImport("loggly", JSImport.Namespace)
   @js.native
-  def createClient(options: LogglyOptions): LogglyInstance = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createClient(options: LogglyOptions): LogglyInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[LogglyInstance]
   
   @JSImport("loggly", "version")
   @js.native
@@ -21,17 +23,13 @@ object mod {
     
     def log(message: js.Any): this.type = js.native
     def log(message: js.Any, callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]): this.type = js.native
-    def log(
-      message: js.Any,
-      tags: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]
-    ): this.type = js.native
     def log(message: js.Any, tags: js.Array[String]): this.type = js.native
     def log(
       message: js.Any,
       tags: js.Array[String],
       callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]
     ): this.type = js.native
+    def log(message: js.Any, tags: Unit, callback: js.Function2[/* err */ js.Any, /* results */ js.Any, Unit]): this.type = js.native
     
     def search(options: SearchOptions): Search = js.native
     def search(
@@ -42,20 +40,19 @@ object mod {
     def search(query: String, callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]): Search = js.native
   }
   
-  @js.native
   trait LogglyOptions extends StObject {
     
-    var auth: js.UndefOr[Password] = js.native
+    var auth: js.UndefOr[Password] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var subdomain: String = js.native
+    var subdomain: String
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var token: String = js.native
+    var token: String
   }
   object LogglyOptions {
     
@@ -103,10 +100,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Search extends StObject {
     
-    def run(callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]): this.type = js.native
+    def run(callback: js.Function2[/* err */ js.Any, /* results */ SearchResults, Unit]): this.type
   }
   object Search {
     
@@ -144,12 +140,12 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchOptionsWithQ
-    extends SharedSearchOptions
+    extends StObject
+       with SharedSearchOptions
        with SearchOptions {
     
-    var q: String = js.native
+    var q: String
   }
   object SearchOptionsWithQ {
     
@@ -167,12 +163,12 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchOptionsWithQuery
-    extends SharedSearchOptions
+    extends StObject
+       with SharedSearchOptions
        with SearchOptions {
     
-    var query: String = js.native
+    var query: String
   }
   object SearchOptionsWithQuery {
     
@@ -190,14 +186,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchResults extends StObject {
     
-    var events: js.Array[SearchResultsEvent] = js.native
+    var events: js.Array[SearchResultsEvent]
     
-    var page: Double = js.native
+    var page: Double
     
-    var total_events: Double = js.native
+    var total_events: Double
   }
   object SearchResults {
     
@@ -224,22 +219,21 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchResultsEvent extends StObject {
     
-    var event: js.Any = js.native
+    var event: js.Any
     
-    var id: String = js.native
+    var id: String
     
-    var logmsg: String = js.native
+    var logmsg: String
     
-    var logtypes: js.Array[String] = js.native
+    var logtypes: js.Array[String]
     
-    var raw: String = js.native
+    var raw: String
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object SearchResultsEvent {
     
@@ -289,16 +283,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SharedSearchOptions extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var until: js.UndefOr[String] = js.native
+    var until: js.UndefOr[String] = js.undefined
   }
   object SharedSearchOptions {
     

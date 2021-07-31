@@ -2,30 +2,28 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OS extends StObject {
   
-  var android: Boolean = js.native
+  var android: Boolean
   
-  var androidNative: Boolean = js.native
+  var androidNative: Boolean
   
   // Android native browser
-  var iOS: Boolean = js.native
+  var iOS: Boolean
   
-  var iPad: Boolean = js.native
+  var iPad: Boolean
   
-  var iPhone: Boolean = js.native
+  var iPhone: Boolean
   
-  var mac: Boolean = js.native
+  var mac: Boolean
   
-  var mobile: Boolean = js.native
+  var mobile: Boolean
   
-  var version: Version = js.native
+  var version: Version
   
-  var windows: Boolean = js.native
+  var windows: Boolean
 }
 object OS {
   

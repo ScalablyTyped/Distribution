@@ -5,11 +5,12 @@ import typings.ckeditor.CKEDITOR.plugins.notificationAggregator.task
 import typings.ckeditor.anon.Weight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait notificationAggregator extends event {
+trait notificationAggregator
+  extends StObject
+     with event {
   
   def createTask(): task = js.native
   def createTask(options: Weight): task = js.native
@@ -31,7 +32,9 @@ trait notificationAggregator extends event {
 object notificationAggregator {
   
   @js.native
-  trait task extends event {
+  trait task
+    extends StObject
+       with event {
     
     def cancel(): Unit = js.native
     

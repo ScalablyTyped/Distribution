@@ -2,13 +2,11 @@ package typings.knockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingHandler[T] extends StObject {
   
-  var after: js.UndefOr[js.Array[String]] = js.native
+  var after: js.UndefOr[js.Array[String]] = js.undefined
   
   var init: js.UndefOr[
     js.Function5[
@@ -16,12 +14,12 @@ trait BindingHandler[T] extends StObject {
       /* valueAccessor */ js.Function0[T], 
       /* allBindings */ AllBindings, 
       /* viewModel */ js.Any, 
-      /* bindingContext */ BindingContext[_], 
+      /* bindingContext */ BindingContext[js.Any], 
       Unit | BindingHandlerControlsDescendant
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
   var preprocess: js.UndefOr[
     js.Function3[
@@ -30,7 +28,7 @@ trait BindingHandler[T] extends StObject {
       /* addBinding */ BindingHandlerAddBinding, 
       js.UndefOr[String | Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var update: js.UndefOr[
     js.Function5[
@@ -38,10 +36,10 @@ trait BindingHandler[T] extends StObject {
       /* valueAccessor */ js.Function0[T], 
       /* allBindings */ AllBindings, 
       /* viewModel */ js.Any, 
-      /* bindingContext */ BindingContext[_], 
+      /* bindingContext */ BindingContext[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object BindingHandler {
   
@@ -52,7 +50,7 @@ object BindingHandler {
   }
   
   @scala.inline
-  implicit class BindingHandlerMutableBuilder[Self <: BindingHandler[_], T] (val x: Self with BindingHandler[T]) extends AnyVal {
+  implicit class BindingHandlerMutableBuilder[Self <: BindingHandler[?], T] (val x: Self & BindingHandler[T]) extends AnyVal {
     
     @scala.inline
     def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
@@ -65,7 +63,7 @@ object BindingHandler {
     
     @scala.inline
     def setInit(
-      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[_]) => Unit | BindingHandlerControlsDescendant
+      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit | BindingHandlerControlsDescendant
     ): Self = StObject.set(x, "init", js.Any.fromFunction5(value))
     
     @scala.inline
@@ -87,7 +85,7 @@ object BindingHandler {
     
     @scala.inline
     def setUpdate(
-      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[_]) => Unit
+      value: (/* element */ js.Any, /* valueAccessor */ js.Function0[T], /* allBindings */ AllBindings, /* viewModel */ js.Any, /* bindingContext */ BindingContext[js.Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
     
     @scala.inline

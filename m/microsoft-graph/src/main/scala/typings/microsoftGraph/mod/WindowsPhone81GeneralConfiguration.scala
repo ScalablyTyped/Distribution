@@ -2,101 +2,101 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsPhone81GeneralConfiguration extends DeviceConfiguration {
+trait WindowsPhone81GeneralConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Value indicating whether this policy only applies to Windows Phone 8.1. This property is read-only.
-  var applyOnlyToWindowsPhone81: js.UndefOr[Boolean] = js.native
+  var applyOnlyToWindowsPhone81: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block copy paste.
-  var appsBlockCopyPaste: js.UndefOr[Boolean] = js.native
+  var appsBlockCopyPaste: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block bluetooth.
-  var bluetoothBlocked: js.UndefOr[Boolean] = js.native
+  var bluetoothBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block camera.
-  var cameraBlocked: js.UndefOr[Boolean] = js.native
+  var cameraBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.
-  var cellularBlockWifiTethering: js.UndefOr[Boolean] = js.native
+  var cellularBlockWifiTethering: js.UndefOr[Boolean] = js.undefined
   
   // List that is in the AppComplianceList. Possible values are: none, appsInListCompliant, appsNotInListCompliant.
-  var compliantAppListType: js.UndefOr[AppListType] = js.native
+  var compliantAppListType: js.UndefOr[AppListType] = js.undefined
   
   /**
     * List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection
     * can contain a maximum of 10000 elements.
     */
-  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.native
+  var compliantAppsList: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
   
   // Indicates whether or not to block diagnostic data submission.
-  var diagnosticDataBlockSubmission: js.UndefOr[Boolean] = js.native
+  var diagnosticDataBlockSubmission: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block custom email accounts.
-  var emailBlockAddingAccounts: js.UndefOr[Boolean] = js.native
+  var emailBlockAddingAccounts: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block location services.
-  var locationServicesBlocked: js.UndefOr[Boolean] = js.native
+  var locationServicesBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block using a Microsoft Account.
-  var microsoftAccountBlocked: js.UndefOr[Boolean] = js.native
+  var microsoftAccountBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Near-Field Communication.
-  var nfcBlocked: js.UndefOr[Boolean] = js.native
+  var nfcBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block syncing the calendar.
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires.
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of character sets a password must contain.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passwords.
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before screen timeout.
-  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeScreenTimeout: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 0 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to require a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // Password type that is required. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // Number of sign in failures allowed before factory reset.
-  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordSignInFailureCountBeforeFactoryReset: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Indicates whether or not to block screenshots.
-  var screenCaptureBlocked: js.UndefOr[Boolean] = js.native
+  var screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block removable storage.
-  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.native
+  var storageBlockRemovableStorage: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to require encryption.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the web browser.
-  var webBrowserBlocked: js.UndefOr[Boolean] = js.native
+  var webBrowserBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block automatically connecting to Wi-Fi hotspots. Has no impact if Wi-Fi is blocked.
-  var wifiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.native
+  var wifiBlockAutomaticConnectHotspots: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Wi-Fi hotspot reporting. Has no impact if Wi-Fi is blocked.
-  var wifiBlockHotspotReporting: js.UndefOr[Boolean] = js.native
+  var wifiBlockHotspotReporting: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block Wi-Fi.
-  var wifiBlocked: js.UndefOr[Boolean] = js.native
+  var wifiBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to block the Windows Store.
-  var windowsStoreBlocked: js.UndefOr[Boolean] = js.native
+  var windowsStoreBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsPhone81GeneralConfiguration {
   

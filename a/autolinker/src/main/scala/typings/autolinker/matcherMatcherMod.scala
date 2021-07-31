@@ -4,7 +4,6 @@ import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
 import typings.autolinker.matchMatchMod.Match
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matcherMatcherMod {
@@ -40,10 +39,9 @@ object matcherMatcherMod {
     var tagBuilder: AnchorTagBuilder = js.native
   }
   
-  @js.native
   trait MatcherConfig extends StObject {
     
-    var tagBuilder: AnchorTagBuilder = js.native
+    var tagBuilder: AnchorTagBuilder
   }
   object MatcherConfig {
     

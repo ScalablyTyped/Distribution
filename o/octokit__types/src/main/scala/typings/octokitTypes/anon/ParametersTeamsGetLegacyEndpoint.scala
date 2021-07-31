@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.TeamsGetLegacyResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersTeamsGetLegacyEndpoint extends StObject {
   
-  var parameters: TeamsGetLegacyEndpoint = js.native
+  var parameters: TeamsGetLegacyEndpoint
   
-  var request: TeamsGetLegacyRequestOptions = js.native
+  var request: TeamsGetLegacyRequestOptions
   
-  var response: OctokitResponse[TeamsGetLegacyResponseData] = js.native
+  var response: OctokitResponse[TeamsGetLegacyResponseData]
 }
 object ParametersTeamsGetLegacyEndpoint {
   

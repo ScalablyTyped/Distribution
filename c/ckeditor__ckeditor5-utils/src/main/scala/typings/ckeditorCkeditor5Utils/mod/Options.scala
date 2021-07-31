@@ -5,23 +5,21 @@ import typings.std.HTMLElement
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
-  var fitInViewport: js.UndefOr[Boolean] = js.native
+  var fitInViewport: js.UndefOr[Boolean] = js.undefined
   
   var limiter: js.UndefOr[
     HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect])
-  ] = js.native
+  ] = js.undefined
   
-  var positions: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]] = js.native
+  var positions: js.Array[js.Function2[/* targetRect */ Rect, /* elementRect */ Rect, Position]]
   
-  var target: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect]) = js.native
+  var target: HTMLElement | Range | ClientRect | Rect | (js.Function0[HTMLElement | Range | ClientRect | Rect])
 }
 object Options {
   

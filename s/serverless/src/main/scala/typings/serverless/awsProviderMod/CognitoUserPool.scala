@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoUserPool extends StObject {
   
-  var existing: js.UndefOr[Boolean] = js.native
+  var existing: js.UndefOr[Boolean] = js.undefined
   
-  var pool: String = js.native
+  var pool: String
   
-  var trigger: String = js.native
+  var trigger: String
 }
 object CognitoUserPool {
   

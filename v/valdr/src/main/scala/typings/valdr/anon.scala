@@ -2,17 +2,15 @@ package typings.valdr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Invalid extends StObject {
     
-    var invalid: String = js.native
+    var invalid: String
     
-    var valid: String = js.native
+    var valid: String
   }
   object Invalid {
     

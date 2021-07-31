@@ -2,13 +2,11 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasId extends StObject {
   
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
 }
 object HasId {
   

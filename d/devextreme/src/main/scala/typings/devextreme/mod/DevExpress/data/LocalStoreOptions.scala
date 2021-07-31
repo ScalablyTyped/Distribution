@@ -2,26 +2,26 @@ package typings.devextreme.mod.DevExpress.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalStoreOptions extends ArrayStoreOptions[LocalStore] {
+trait LocalStoreOptions
+  extends StObject
+     with ArrayStoreOptions[LocalStore] {
   
   /**
     * [descr:LocalStore.Options.flushInterval]
     */
-  var flushInterval: js.UndefOr[Double] = js.native
+  var flushInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:LocalStore.Options.immediate]
     */
-  var immediate: js.UndefOr[Boolean] = js.native
+  var immediate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:LocalStore.Options.name]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object LocalStoreOptions {
   

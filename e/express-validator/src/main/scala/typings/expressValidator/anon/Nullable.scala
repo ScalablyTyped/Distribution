@@ -3,15 +3,15 @@ package typings.expressValidator.anon
 import typings.expressValidator.contextMod.Optional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Nullable extends Optional {
+trait Nullable
+  extends StObject
+     with Optional {
   
-  var checkFalsy: Boolean = js.native
+  var checkFalsy: Boolean
   
-  var nullable: Boolean = js.native
+  var nullable: Boolean
 }
 object Nullable {
   

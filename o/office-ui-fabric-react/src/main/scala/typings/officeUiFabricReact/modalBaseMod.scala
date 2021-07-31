@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.modalTypesMod.IModalProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalBaseMod {
@@ -85,6 +84,12 @@ object modalBaseMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MModalBase(): Unit = js.native
+    
+    /**
+      * Sets focus on the first focusable, or configured, child in focus trap zone
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   /* static members */
   object ModalBase {
@@ -100,28 +105,27 @@ object modalBaseMod {
     def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDialogState extends StObject {
     
-    var hasBeenOpened: js.UndefOr[Boolean] = js.native
+    var hasBeenOpened: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var isInKeyboardMoveMode: js.UndefOr[Boolean] = js.native
+    var isInKeyboardMoveMode: js.UndefOr[Boolean] = js.undefined
     
-    var isModalMenuOpen: js.UndefOr[Boolean] = js.native
+    var isModalMenuOpen: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
-    var isVisibleClose: js.UndefOr[Boolean] = js.native
+    var isVisibleClose: js.UndefOr[Boolean] = js.undefined
     
-    var modalRectangleTop: js.UndefOr[Double] = js.native
+    var modalRectangleTop: js.UndefOr[Double] = js.undefined
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IDialogState {
     

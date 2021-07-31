@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -48,9 +47,9 @@ trait HTMLInputButtonElement extends StObject {
   def focus(): Unit = js.native
   
   def form(): js.Any = js.native
-  def form(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def form(name: js.Any): js.Any = js.native
   def form(name: js.Any, index: js.Any): js.Any = js.native
+  def form(name: Unit, index: js.Any): js.Any = js.native
   @JSName("form")
   val form_Original: IHTMLFormElement = js.native
   

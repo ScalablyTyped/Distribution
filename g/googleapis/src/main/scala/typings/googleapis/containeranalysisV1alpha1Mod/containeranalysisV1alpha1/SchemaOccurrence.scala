@@ -2,96 +2,94 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `Occurrence` includes information about analysis occurrences for an image.
   */
-@js.native
 trait SchemaOccurrence extends StObject {
   
   /**
     * Describes an attestation of an artifact.
     */
-  var attestation: js.UndefOr[SchemaAttestation] = js.native
+  var attestation: js.UndefOr[SchemaAttestation] = js.undefined
   
   /**
     * Build details for a verifiable build.
     */
-  var buildDetails: js.UndefOr[SchemaBuildDetails] = js.native
+  var buildDetails: js.UndefOr[SchemaBuildDetails] = js.undefined
   
   /**
     * Output only. The time this `Occurrence` was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the deployment of an artifact on a runtime.
     */
-  var deployment: js.UndefOr[SchemaDeployment] = js.native
+  var deployment: js.UndefOr[SchemaDeployment] = js.undefined
   
   /**
     * Describes how this resource derives from the basis in the associated
     * note.
     */
-  var derivedImage: js.UndefOr[SchemaDerived] = js.native
+  var derivedImage: js.UndefOr[SchemaDerived] = js.undefined
   
   /**
     * Describes the initial scan status for this resource.
     */
-  var discovered: js.UndefOr[SchemaDiscovered] = js.native
+  var discovered: js.UndefOr[SchemaDiscovered] = js.undefined
   
   /**
     * Describes the installation of a package on the linked resource.
     */
-  var installation: js.UndefOr[SchemaInstallation] = js.native
+  var installation: js.UndefOr[SchemaInstallation] = js.undefined
   
   /**
     * Output only. This explicitly denotes which of the `Occurrence` details
     * are specified. This field can be used as a filter in list requests.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The name of the `Occurrence` in the form
     * &quot;projects/{project_id}/occurrences/{OCCURRENCE_ID}&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An analysis note associated with this image, in the form
     * &quot;providers/{provider_id}/notes/{NOTE_ID}&quot; This field can be
     * used as a filter in list requests.
     */
-  var noteName: js.UndefOr[String] = js.native
+  var noteName: js.UndefOr[String] = js.undefined
   
   /**
     * A description of actions that can be taken to remedy the `Note`
     */
-  var remediation: js.UndefOr[String] = js.native
+  var remediation: js.UndefOr[String] = js.undefined
   
   /**
     * The resource for which the `Occurrence` applies.
     */
-  var resource: js.UndefOr[SchemaResource] = js.native
+  var resource: js.UndefOr[SchemaResource] = js.undefined
   
   /**
     * The unique URL of the image or the container for which the `Occurrence`
     * applies. For example, https://gcr.io/project/image@sha256:foo This field
     * can be used as a filter in list requests.
     */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time this `Occurrence` was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Details of a security vulnerability note.
     */
-  var vulnerabilityDetails: js.UndefOr[SchemaVulnerabilityDetails] = js.native
+  var vulnerabilityDetails: js.UndefOr[SchemaVulnerabilityDetails] = js.undefined
 }
 object SchemaOccurrence {
   

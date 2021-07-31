@@ -2,30 +2,29 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
-  var association: js.UndefOr[Null | AppAssociation] = js.native
+  var association: js.UndefOr[Null | AppAssociation] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
   @JSName("org")
-  var org_ : Null | Org = js.native
+  var org_ : Null | Org
   
-  var repo_url: js.UndefOr[String] = js.native
+  var repo_url: js.UndefOr[String] = js.undefined
   
-  var slug: String = js.native
+  var slug: String
 }
 object App {
   
   @scala.inline
   def apply(id: String, name: String, slug: String): App = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    __obj.updateDynamic("org")(null)
     __obj.asInstanceOf[App]
   }
   

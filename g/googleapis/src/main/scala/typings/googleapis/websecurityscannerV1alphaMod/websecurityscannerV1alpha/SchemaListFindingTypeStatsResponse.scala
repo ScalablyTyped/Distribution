@@ -2,19 +2,17 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListFindingTypeStats` method.
   */
-@js.native
 trait SchemaListFindingTypeStatsResponse extends StObject {
   
   /**
     * The list of FindingTypeStats returned.
     */
-  var findingTypeStats: js.UndefOr[js.Array[SchemaFindingTypeStats]] = js.native
+  var findingTypeStats: js.UndefOr[js.Array[SchemaFindingTypeStats]] = js.undefined
 }
 object SchemaListFindingTypeStatsResponse {
   

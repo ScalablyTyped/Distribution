@@ -2,51 +2,49 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindingFilter extends StObject {
   
   /**
     * For a record to match a filter, one of the values that is specified for this data type property must be the exact match of the value of the agentId property of the Finding data type.
     */
-  var agentIds: js.UndefOr[AgentIdList] = js.native
+  var agentIds: js.UndefOr[AgentIdList] = js.undefined
   
   /**
     * For a record to match a filter, the list of values that are specified for this data type property must be contained in the list of values of the attributes property of the Finding data type.
     */
-  var attributes: js.UndefOr[AttributeList] = js.native
+  var attributes: js.UndefOr[AttributeList] = js.undefined
   
   /**
     * For a record to match a filter, one of the values that is specified for this data type property must be the exact match of the value of the autoScalingGroup property of the Finding data type.
     */
-  var autoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.native
+  var autoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.undefined
   
   /**
     * The time range during which the finding is generated.
     */
-  var creationTimeRange: js.UndefOr[TimestampRange] = js.native
+  var creationTimeRange: js.UndefOr[TimestampRange] = js.undefined
   
   /**
     * For a record to match a filter, one of the values that is specified for this data type property must be the exact match of the value of the ruleName property of the Finding data type.
     */
-  var ruleNames: js.UndefOr[RuleNameList] = js.native
+  var ruleNames: js.UndefOr[RuleNameList] = js.undefined
   
   /**
     * For a record to match a filter, one of the values that is specified for this data type property must be the exact match of the value of the rulesPackageArn property of the Finding data type.
     */
-  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.native
+  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.undefined
   
   /**
     * For a record to match a filter, one of the values that is specified for this data type property must be the exact match of the value of the severity property of the Finding data type.
     */
-  var severities: js.UndefOr[SeverityList] = js.native
+  var severities: js.UndefOr[SeverityList] = js.undefined
   
   /**
     * For a record to match a filter, the value that is specified for this data type property must be contained in the list of values of the userAttributes property of the Finding data type.
     */
-  var userAttributes: js.UndefOr[AttributeList] = js.native
+  var userAttributes: js.UndefOr[AttributeList] = js.undefined
 }
 object FindingFilter {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     *  The key of the tag. Tag keys are case sensitive. 
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     *  The value of the tag. Tag values are case-sensitive and can be null. 
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

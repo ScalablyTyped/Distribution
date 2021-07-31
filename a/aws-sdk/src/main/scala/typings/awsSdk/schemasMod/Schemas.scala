@@ -8,14 +8,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Schemas extends Service {
   
   @JSName("config")
-  var config_Schemas: ConfigBase with ClientConfiguration = js.native
+  var config_Schemas: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a discoverer.

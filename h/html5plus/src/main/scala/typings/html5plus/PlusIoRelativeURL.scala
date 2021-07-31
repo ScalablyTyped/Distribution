@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-@js.native
 trait PlusIoRelativeURL extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PlusIoRelativeURL extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var _doc: js.UndefOr[String] = js.native
+  var _doc: js.UndefOr[String] = js.undefined
   
   /**
     * 程序公用文档目录
@@ -28,7 +26,7 @@ trait PlusIoRelativeURL extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var _documents: js.UndefOr[String] = js.native
+  var _documents: js.UndefOr[String] = js.undefined
   
   /**
     * 程序公用下载目录
@@ -36,7 +34,7 @@ trait PlusIoRelativeURL extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var _downloads: js.UndefOr[String] = js.native
+  var _downloads: js.UndefOr[String] = js.undefined
   
   /**
     * 应用资源目录
@@ -45,7 +43,7 @@ trait PlusIoRelativeURL extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var _www: js.UndefOr[String] = js.native
+  var _www: js.UndefOr[String] = js.undefined
 }
 object PlusIoRelativeURL {
   

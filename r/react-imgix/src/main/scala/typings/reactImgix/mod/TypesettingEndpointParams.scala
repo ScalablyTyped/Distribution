@@ -2,18 +2,16 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypesettingEndpointParams extends StObject {
   
   @JSName("~text")
-  var Tildetext: js.UndefOr[ImgixParamType] = js.native
+  var Tildetext: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-lead`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-lead`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-track`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-track`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object TypesettingEndpointParams {
   

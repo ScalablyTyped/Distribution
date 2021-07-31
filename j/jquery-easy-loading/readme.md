@@ -12,7 +12,7 @@ Easily add and manipulate loading states of any element on the page
 | Keywords           | jquery, jquery-plugin, ecosystem:jquery, overlay, loading, loader, ajax |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 37640 |
+| # downloads        | 40455 |
 | # stars            | 0 |
 
 ## Links

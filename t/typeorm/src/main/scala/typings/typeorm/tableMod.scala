@@ -11,7 +11,6 @@ import typings.typeorm.tableOptionsMod.TableOptions
 import typings.typeorm.tableUniqueMod.TableUnique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -158,11 +157,14 @@ object tableMod {
   /* static members */
   object Table {
     
+    @JSImport("typeorm/browser/schema-builder/table/Table", "Table")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates table from a given entity metadata.
       */
-    @JSImport("typeorm/browser/schema-builder/table/Table", "Table.create")
-    @js.native
-    def create(entityMetadata: EntityMetadata, driver: Driver): Table = js.native
+    @scala.inline
+    def create(entityMetadata: EntityMetadata, driver: Driver): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityMetadata.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[Table]
   }
 }

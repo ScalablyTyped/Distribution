@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStackOutput extends StObject {
   
   /**
     * Unique identifier of the stack.
     */
-  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.native
+  var StackId: js.UndefOr[typings.awsSdk.cloudformationMod.StackId] = js.undefined
 }
 object CreateStackOutput {
   

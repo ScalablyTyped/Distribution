@@ -7,55 +7,55 @@ import typings.trianglify.mod.trianglify.Pattern
 import typings.trianglify.trianglifyBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Pattern = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Pattern]
+  @scala.inline
+  def apply(opts: Options): Pattern = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Pattern]
+  
   @JSImport("trianglify", JSImport.Namespace)
   @js.native
-  def apply(): Pattern = js.native
-  @JSImport("trianglify", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): Pattern = js.native
+  val ^ : js.Any = js.native
   
   object trianglify {
     
-    @js.native
     trait Options extends StObject {
       
       /** Size of the cells used to generate a randomized grid */
-      var cell_size: js.UndefOr[Double] = js.native
+      var cell_size: js.UndefOr[Double] = js.undefined
       
       /** Color function f(x, y) that returns a color specification that is consumable by chroma-js */
-      var color_function: js.UndefOr[(js.Function2[/* x */ Double, /* y */ Double, String]) | Null] = js.native
+      var color_function: js.UndefOr[(js.Function2[/* x */ Double, /* y */ Double, String]) | Null] = js.undefined
       
       /** Color space used for gradient construction & interpolation */
-      var color_space: js.UndefOr[String] = js.native
+      var color_space: js.UndefOr[String] = js.undefined
       
       /** Height of pattern */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /** An array of [x,y] coordinates to trianglulate. Defaults to undefined, and points are generated. */
-      var points: js.UndefOr[js.Array[Double]] = js.native
+      var points: js.UndefOr[js.Array[Double]] = js.undefined
       
       /** Seed for the RNG */
-      var seed: js.UndefOr[Double | String | Null] = js.native
+      var seed: js.UndefOr[Double | String | Null] = js.undefined
       
       /** Width of stroke. Defaults to 1.51 to fix an issue with canvas antialiasing. */
-      var stroke_width: js.UndefOr[Double] = js.native
+      var stroke_width: js.UndefOr[Double] = js.undefined
       
       /** how much to randomize the grid */
-      var variance: js.UndefOr[Double] = js.native
+      var variance: js.UndefOr[Double] = js.undefined
       
       /** Width of pattern */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
       
       /** X color stops */
-      var x_colors: js.UndefOr[`false` | String | js.Array[String]] = js.native
+      var x_colors: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
       
       /** Y color stops */
-      var y_colors: js.UndefOr[`false` | String | js.Array[String]] = js.native
+      var y_colors: js.UndefOr[`false` | String | js.Array[String]] = js.undefined
     }
     object Options {
       
@@ -167,10 +167,9 @@ object mod {
       def svg(opts: SVGOptions): SVGElement = js.native
     }
     
-    @js.native
     trait SVGOptions extends StObject {
       
-      var includeNamespace: Boolean = js.native
+      var includeNamespace: Boolean
     }
     object SVGOptions {
       

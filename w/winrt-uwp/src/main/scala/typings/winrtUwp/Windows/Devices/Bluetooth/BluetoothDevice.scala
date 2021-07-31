@@ -13,20 +13,19 @@ import typings.winrtUwp.winrtUwpStrings.namechanged
 import typings.winrtUwp.winrtUwpStrings.sdprecordschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Bluetooth device. */
 @js.native
 trait BluetoothDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def addEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def addEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_sdprecordschanged(`type`: sdprecordschanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def addEventListener_sdprecordschanged(`type`: sdprecordschanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   
   /** Gets the device address. */
   var bluetoothAddress: Double = js.native
@@ -53,30 +52,30 @@ trait BluetoothDevice extends StObject {
   var name: String = js.native
   
   /** Occurs when the connection status of the device has changed. */
-  def onconnectionstatuschanged(ev: js.Any with WinRTEvent[BluetoothDevice]): Unit = js.native
+  def onconnectionstatuschanged(ev: js.Any & WinRTEvent[BluetoothDevice]): Unit = js.native
   /** Occurs when the connection status of the device has changed. */
   @JSName("onconnectionstatuschanged")
-  var onconnectionstatuschanged_Original: TypedEventHandler[BluetoothDevice, _] = js.native
+  var onconnectionstatuschanged_Original: TypedEventHandler[BluetoothDevice, js.Any] = js.native
   
   /** Occurs when the name of the device has changed. */
-  def onnamechanged(ev: js.Any with WinRTEvent[BluetoothDevice]): Unit = js.native
+  def onnamechanged(ev: js.Any & WinRTEvent[BluetoothDevice]): Unit = js.native
   /** Occurs when the name of the device has changed. */
   @JSName("onnamechanged")
-  var onnamechanged_Original: TypedEventHandler[BluetoothDevice, _] = js.native
+  var onnamechanged_Original: TypedEventHandler[BluetoothDevice, js.Any] = js.native
   
   /** Occurs when the list SDP records for the device has changed. */
-  def onsdprecordschanged(ev: js.Any with WinRTEvent[BluetoothDevice]): Unit = js.native
+  def onsdprecordschanged(ev: js.Any & WinRTEvent[BluetoothDevice]): Unit = js.native
   /** Occurs when the list SDP records for the device has changed. */
   @JSName("onsdprecordschanged")
-  var onsdprecordschanged_Original: TypedEventHandler[BluetoothDevice, _] = js.native
+  var onsdprecordschanged_Original: TypedEventHandler[BluetoothDevice, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def removeEventListener_connectionstatuschanged(`type`: connectionstatuschanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def removeEventListener_namechanged(`type`: namechanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_sdprecordschanged(`type`: sdprecordschanged, listener: TypedEventHandler[BluetoothDevice, _]): Unit = js.native
+  def removeEventListener_sdprecordschanged(`type`: sdprecordschanged, listener: TypedEventHandler[BluetoothDevice, js.Any]): Unit = js.native
   
   /** Gets the read-only list of RFCOMM services supported by the device. */
   var rfcommServices: IVectorView[RfcommDeviceService] = js.native

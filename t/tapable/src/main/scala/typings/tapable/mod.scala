@@ -15,7 +15,6 @@ import typings.tapable.tapableStrings.promise
 import typings.tapable.tapableStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,7 +29,7 @@ object mod {
   @JSImport("tapable", "AsyncParallelHook")
   @js.native
   class AsyncParallelHook[T1, T2, T3] ()
-    extends Hook[T1, T2, T3, js.Any, js.UndefOr[scala.Nothing]] {
+    extends Hook[T1, T2, T3, js.Any, Unit] {
     def this(tapArgumentNames: js.Array[String]) = this()
   }
   
@@ -44,7 +43,7 @@ object mod {
   @JSImport("tapable", "AsyncSeriesHook")
   @js.native
   class AsyncSeriesHook[T1, T2, T3] ()
-    extends Hook[T1, T2, T3, js.Any, js.UndefOr[scala.Nothing]] {
+    extends Hook[T1, T2, T3, js.Any, Unit] {
     def this(tapArgumentNames: js.Array[String]) = this()
   }
   
@@ -60,32 +59,22 @@ object mod {
     def this(tapArgumentNames: js.Array[String]) = this()
     
     def call(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
-    def call(arg1: TArg1, arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def call(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): THookResult = js.native
-    def call(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def call(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
-    def call(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def call(arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): THookResult = js.native
-    def call(
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: js.UndefOr[scala.Nothing],
-      arg3: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): THookResult = js.native
+    def call(arg1: TArg1, arg2: TArg2, arg3: Unit, args: js.Any*): THookResult = js.native
+    def call(arg1: TArg1, arg2: Unit, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def call(arg1: TArg1, arg2: Unit, arg3: Unit, args: js.Any*): THookResult = js.native
+    def call(arg1: Unit, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def call(arg1: Unit, arg2: TArg2, arg3: Unit, args: js.Any*): THookResult = js.native
+    def call(arg1: Unit, arg2: Unit, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def call(arg1: Unit, arg2: Unit, arg3: Unit, args: js.Any*): THookResult = js.native
     
     def callAsync(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
-    def callAsync(arg1: TArg1, arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def callAsync(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): THookResult = js.native
-    def callAsync(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def callAsync(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
-    def callAsync(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): THookResult = js.native
-    def callAsync(arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): THookResult = js.native
-    def callAsync(
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: js.UndefOr[scala.Nothing],
-      arg3: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): THookResult = js.native
+    def callAsync(arg1: TArg1, arg2: TArg2, arg3: Unit, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: TArg1, arg2: Unit, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: TArg1, arg2: Unit, arg3: Unit, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: Unit, arg2: TArg2, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: Unit, arg2: TArg2, arg3: Unit, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: Unit, arg2: Unit, arg3: TArg3, args: js.Any*): THookResult = js.native
+    def callAsync(arg1: Unit, arg2: Unit, arg3: Unit, args: js.Any*): THookResult = js.native
     
     def compile(options: HookCompileOptions): js.Function = js.native
     
@@ -96,18 +85,13 @@ object mod {
     def isUsed(): Boolean = js.native
     
     def promise(arg1: TArg1, arg2: TArg2, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: TArg1, arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: TArg1, arg2: js.UndefOr[scala.Nothing], arg3: js.UndefOr[scala.Nothing], args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: js.UndefOr[scala.Nothing], arg2: TArg2, arg3: js.UndefOr[scala.Nothing], args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
-    def promise(
-      arg1: js.UndefOr[scala.Nothing],
-      arg2: js.UndefOr[scala.Nothing],
-      arg3: js.UndefOr[scala.Nothing],
-      args: js.Any*
-    ): js.Promise[THookResult] = js.native
+    def promise(arg1: TArg1, arg2: TArg2, arg3: Unit, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: TArg1, arg2: Unit, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: TArg1, arg2: Unit, arg3: Unit, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: Unit, arg2: TArg2, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: Unit, arg2: TArg2, arg3: Unit, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: Unit, arg2: Unit, arg3: TArg3, args: js.Any*): js.Promise[THookResult] = js.native
+    def promise(arg1: Unit, arg2: Unit, arg3: Unit, args: js.Any*): js.Promise[THookResult] = js.native
     
     def tap(
       name: String,
@@ -166,27 +150,30 @@ object mod {
     var loop: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
     
     var register: js.UndefOr[
-        js.Function1[/* tap */ Tap[TapType, _, _, _, _], js.UndefOr[Tap[TapType, _, _, _, _]]]
+        js.Function1[
+          /* tap */ Tap[TapType, js.Any, js.Any, js.Any, js.Any], 
+          js.UndefOr[Tap[TapType, js.Any, js.Any, js.Any, js.Any]]
+        ]
       ] = js.native
     
-    var tap: js.UndefOr[js.Function1[/* tap */ Tap[TapType, _, _, _, _], Unit]] = js.native
+    var tap: js.UndefOr[js.Function1[/* tap */ Tap[TapType, js.Any, js.Any, js.Any, js.Any], Unit]] = js.native
   }
   
   @JSImport("tapable", "HookMap")
   @js.native
   class HookMap[T1, T2, T3] protected () extends StObject {
-    def this(fn: js.Function0[Hook[_, _, _, _, _]]) = this()
+    def this(fn: js.Function0[Hook[js.Any, js.Any, js.Any, js.Any, js.Any]]) = this()
     
-    def `for`(key: js.Any): Hook[T1, T2, T3, _, _] = js.native
+    def `for`(key: js.Any): Hook[T1, T2, T3, js.Any, js.Any] = js.native
     
-    def get(key: js.Any): js.UndefOr[Hook[T1, T2, T3, _, _]] = js.native
+    def get(key: js.Any): js.UndefOr[Hook[T1, T2, T3, js.Any, js.Any]] = js.native
     
     def intercept(interceptor: HookMapInterceptor[T1, T2, T3]): Unit = js.native
     
     def tap(
       key: js.Any,
       name: String,
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Any]
     ): Unit = js.native
     
     def tapAsync(
@@ -197,27 +184,27 @@ object mod {
     @JSName("tapAsync")
     def tapAsync_async(
       key: js.Any,
-      name: TapOptions[async, T1, T2, T3, _],
+      name: TapOptions[async, T1, T2, T3, js.Any],
       fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, Unit]
     ): Unit = js.native
     
     def tapPromise(
       key: js.Any,
       name: String,
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[js.Any]]
     ): Unit = js.native
     @JSName("tapPromise")
     def tapPromise_promise(
       key: js.Any,
-      name: TapOptions[promise, T1, T2, T3, _],
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[_]]
+      name: TapOptions[promise, T1, T2, T3, js.Any],
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Promise[js.Any]]
     ): Unit = js.native
     
     @JSName("tap")
     def tap_sync(
       key: js.Any,
-      name: TapOptions[sync, T1, T2, T3, _],
-      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, _]
+      name: TapOptions[sync, T1, T2, T3, js.Any],
+      fn: js.Function4[/* arg1 */ T1, /* arg2 */ T2, /* arg3 */ T3, /* repeated */ js.Any, js.Any]
     ): Unit = js.native
   }
   
@@ -225,13 +212,13 @@ object mod {
   @js.native
   class HookMapInterceptor[T1, T2, T3] () extends StObject {
     
-    def factory(key: js.Any, hook: Hook[T1, T2, T3, _, _]): Hook[T1, T2, T3, _, _] = js.native
+    def factory(key: js.Any, hook: Hook[T1, T2, T3, js.Any, js.Any]): Hook[T1, T2, T3, js.Any, js.Any] = js.native
   }
   
   @JSImport("tapable", "MultiHook")
   @js.native
   class MultiHook protected () extends StObject {
-    def this(hooks: js.Array[Hook[_, _, _, _, _]]) = this()
+    def this(hooks: js.Array[Hook[js.Any, js.Any, js.Any, js.Any, js.Any]]) = this()
   }
   
   @JSImport("tapable", "SyncBailHook")
@@ -244,14 +231,14 @@ object mod {
   @JSImport("tapable", "SyncHook")
   @js.native
   class SyncHook[T1, T2, T3] ()
-    extends Hook[T1, T2, T3, js.Any, js.UndefOr[scala.Nothing]] {
+    extends Hook[T1, T2, T3, js.Any, Unit] {
     def this(tapArgumentNames: js.Array[String]) = this()
   }
   
   @JSImport("tapable", "SyncLoopHook")
   @js.native
   class SyncLoopHook[T1, T2, T3] ()
-    extends Hook[T1, T2, T3, js.Any, js.UndefOr[scala.Nothing]] {
+    extends Hook[T1, T2, T3, js.Any, Unit] {
     def this(tapArgumentNames: js.Array[String]) = this()
   }
   
@@ -266,7 +253,7 @@ object mod {
   abstract class Tapable () extends StObject {
     
     /** @deprecated Private internals. Do not use directly */
-    var _pluginCompat: Hook[_, _, _, _, _] = js.native
+    var _pluginCompat: Hook[js.Any, js.Any, js.Any, js.Any, js.Any] = js.native
     
     var _plugins: StringDictionary[js.Array[Handler]] = js.native
     
@@ -277,7 +264,7 @@ object mod {
       * registry. Mostly the `apply` method of a plugin is the main place to place extension logic.
       */
     @JSName("apply")
-    def apply(plugins: ((js.ThisFunction0[/* this */ this.type, _]) | Plugin)*): Unit = js.native
+    def apply(plugins: ((js.ThisFunction0[/* this */ this.type, js.Any]) | Plugin)*): Unit = js.native
     
     /**
       * @deprecated Tapable.apply is deprecated. Call apply on the plugin directly instead
@@ -477,9 +464,12 @@ object mod {
   /* static members */
   object Tapable {
     
-    @JSImport("tapable", "Tapable.mixin")
+    @JSImport("tapable", "Tapable")
     @js.native
-    def mixin(proto: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def mixin(proto: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(proto.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     type CallbackFunction = js.Function3[
         /* err */ js.UndefOr[Error], 
@@ -490,11 +480,10 @@ object mod {
     
     type Handler = js.Function1[/* repeated */ js.Any, Unit]
     
-    @js.native
     trait Plugin extends StObject {
       
       @JSName("apply")
-      def apply(args: js.Any*): Unit = js.native
+      def apply(args: js.Any*): Unit
     }
     object Plugin {
       
@@ -513,10 +502,9 @@ object mod {
     }
   }
   
-  @js.native
   trait HookCompileOptions extends StObject {
     
-    var `type`: TapType = js.native
+    var `type`: TapType
   }
   object HookCompileOptions {
     
@@ -535,20 +523,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Tap[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] extends StObject {
     
-    var before: js.UndefOr[String | js.Array[String]] = js.native
+    var before: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var context: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[Boolean] = js.undefined
     
-    var fn: TapFunction[TTapType, TArg1, TArg2, TArg3, THookResult] = js.native
+    var fn: TapFunction[TTapType, TArg1, TArg2, TArg3, THookResult]
     
-    var name: String = js.native
+    var name: String
     
-    var stage: js.UndefOr[Double] = js.native
+    var stage: js.UndefOr[Double] = js.undefined
     
-    var `type`: TTapType = js.native
+    var `type`: TTapType
   }
   object Tap {
     
@@ -564,7 +551,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TapMutableBuilder[Self <: Tap[_, _, _, _, _], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] (val x: Self with (Tap[TTapType, TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
+    implicit class TapMutableBuilder[Self <: Tap[?, ?, ?, ?, ?], TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] (val x: Self & (Tap[TTapType, TArg1, TArg2, TArg3, THookResult])) extends AnyVal {
       
       @scala.inline
       def setBefore(value: String | js.Array[String]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
@@ -608,7 +595,7 @@ object mod {
     js.Promise[TResult] | TResult | Unit
   ]
   
-  type TapOptions[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] = Before with ((`0`[TTapType, TArg1, TArg2, TArg3, THookResult]) | (FnType[TArg1, TArg2, TArg3, THookResult]) | (Type[TArg1, TArg2, TArg3, THookResult]) | (Fn[TArg1, TArg2, TArg3, THookResult]))
+  type TapOptions[TTapType /* <: TapType */, TArg1, TArg2, TArg3, THookResult] = Before & ((`0`[TTapType, TArg1, TArg2, TArg3, THookResult]) | (FnType[TArg1, TArg2, TArg3, THookResult]) | (Type[TArg1, TArg2, TArg3, THookResult]) | (Fn[TArg1, TArg2, TArg3, THookResult]))
   
   /* Rewritten from type alias, can be one of: 
     - typings.tapable.tapableStrings.sync

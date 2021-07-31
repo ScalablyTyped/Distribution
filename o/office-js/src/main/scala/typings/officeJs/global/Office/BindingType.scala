@@ -2,7 +2,6 @@ package typings.officeJs.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object BindingType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJs.Office.BindingType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJs.Office.BindingType & Double] = js.native
   
-  /* 1 */ val Matrix: typings.officeJs.Office.BindingType.Matrix with Double = js.native
+  /* 1 */ val Matrix: typings.officeJs.Office.BindingType.Matrix & Double = js.native
   
-  /* 2 */ val Table: typings.officeJs.Office.BindingType.Table with Double = js.native
+  /* 2 */ val Table: typings.officeJs.Office.BindingType.Table & Double = js.native
   
-  /* 0 */ val Text: typings.officeJs.Office.BindingType.Text with Double = js.native
+  /* 0 */ val Text: typings.officeJs.Office.BindingType.Text & Double = js.native
 }

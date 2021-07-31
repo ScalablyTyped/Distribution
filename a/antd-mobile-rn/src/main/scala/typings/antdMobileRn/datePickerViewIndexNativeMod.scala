@@ -4,7 +4,6 @@ import typings.antdMobileRn.anon.AntLocale
 import typings.antdMobileRn.anon.Extra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerViewIndexNativeMod {

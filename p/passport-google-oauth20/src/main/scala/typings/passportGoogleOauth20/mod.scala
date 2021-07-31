@@ -15,18 +15,19 @@ import typings.passportOauth2.mod.StateStore
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-google-oauth20", "Strategy")
   @js.native
-  class Strategy protected () extends OAuth2Strategy {
+  class Strategy protected ()
+    extends StObject
+       with OAuth2Strategy {
     def this(
       options: StrategyOptionsWithRequest,
       verify: js.Function5[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
@@ -37,7 +38,7 @@ object mod {
     def this(
       options: StrategyOptionsWithRequest,
       verify: js.Function6[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* params */ js.Any, 
@@ -69,24 +70,25 @@ object mod {
     ) = this()
   }
   
-  @js.native
-  trait AuthenticateOptionsGoogle extends AuthenticateOptions {
+  trait AuthenticateOptionsGoogle
+    extends StObject
+       with AuthenticateOptions {
     
-    var accessType: js.UndefOr[offline | online] = js.native
+    var accessType: js.UndefOr[offline | online] = js.undefined
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
-    var hd: js.UndefOr[String] = js.native
+    var hd: js.UndefOr[String] = js.undefined
     
-    var hostedDomain: js.UndefOr[String] = js.native
+    var hostedDomain: js.UndefOr[String] = js.undefined
     
-    var includeGrantedScopes: js.UndefOr[Boolean] = js.native
+    var includeGrantedScopes: js.UndefOr[Boolean] = js.undefined
     
-    var loginHint: js.UndefOr[String] = js.native
+    var loginHint: js.UndefOr[String] = js.undefined
     
-    var openIDRealm: js.UndefOr[js.Any] = js.native
+    var openIDRealm: js.UndefOr[js.Any] = js.undefined
     
-    var requestVisibleActions: js.UndefOr[js.Any] = js.native
+    var requestVisibleActions: js.UndefOr[js.Any] = js.undefined
   }
   object AuthenticateOptionsGoogle {
     
@@ -150,32 +152,31 @@ object mod {
   }
   
   /* Inlined std.Pick<passport-oauth2.passport-oauth2._StrategyOptionsBase, std.Exclude<keyof passport-oauth2.passport-oauth2._StrategyOptionsBase, 'authorizationURL' | 'tokenURL'>> */
-  @js.native
   trait OAuth2StrategyOptionsWithoutRequiredURLs extends StObject {
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
   }
   object OAuth2StrategyOptionsWithoutRequiredURLs {
     
@@ -259,15 +260,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
     
-    var profileUrl: String = js.native
+    var profileUrl: String
   }
   object Profile {
     
@@ -291,10 +292,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptions extends StrategyOptionsBase {
+  trait StrategyOptions
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOptions {
     
@@ -315,14 +317,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsBase extends OAuth2StrategyOptionsWithoutRequiredURLs {
+  trait StrategyOptionsBase
+    extends StObject
+       with OAuth2StrategyOptionsWithoutRequiredURLs {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
     
-    var userProfileURL: js.UndefOr[String] = js.native
+    var userProfileURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionsBase {
     
@@ -355,16 +358,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends StrategyOptionsBase {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -396,7 +400,7 @@ object mod {
       def authenticate_google(
         strategy: google,
         options: AuthenticateOptionsGoogle,
-        callback: js.Function1[/* repeated */ js.Any, _]
+        callback: js.Function1[/* repeated */ js.Any, js.Any]
       ): AuthenticateRet = js.native
       
       @JSName("authorize")
@@ -405,7 +409,7 @@ object mod {
       def authorize_google(
         strategy: google,
         options: AuthenticateOptionsGoogle,
-        callback: js.Function1[/* repeated */ js.Any, _]
+        callback: js.Function1[/* repeated */ js.Any, js.Any]
       ): AuthorizeRet = js.native
     }
   }

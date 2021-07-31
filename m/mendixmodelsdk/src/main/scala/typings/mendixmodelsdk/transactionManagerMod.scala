@@ -6,10 +6,13 @@ import typings.mendixmodelsdk.commonMod.common.IErrorCallback
 import typings.mendixmodelsdk.deltasDeltasMod.Delta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionManagerMod {
+  
+  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "Transaction")
   @js.native
@@ -60,30 +63,24 @@ object transactionManagerMod {
     def rollback(): Unit = js.native
   }
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "beginTransaction")
-  @js.native
-  def beginTransaction(model: IAbstractModel): Transaction = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "beginTransaction")
-  @js.native
-  def beginTransaction(model: IAbstractModel, options: ITransactionOptions): Transaction = js.native
+  @scala.inline
+  def beginTransaction(model: IAbstractModel): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+  @scala.inline
+  def beginTransaction(model: IAbstractModel, options: ITransactionOptions): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("beginTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "runInTransaction")
-  @js.native
-  def runInTransaction[T](model: IAbstractModel, action: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "runInTransaction")
-  @js.native
-  def runInTransaction[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "runInTransaction")
-  @js.native
-  def runInTransaction_T_T[T](model: IAbstractModel, action: js.Function0[T]): T = js.native
-  @JSImport("mendixmodelsdk/dist/sdk/internal/deltas/TransactionManager", "runInTransaction")
-  @js.native
-  def runInTransaction_T_T[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[T]): T = js.native
+  @scala.inline
+  def runInTransaction[T](model: IAbstractModel, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def runInTransaction[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[js.Promise[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @js.native
+  @scala.inline
+  def runInTransaction_T_T[T](model: IAbstractModel, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def runInTransaction_T_T[T](model: IAbstractModel, options: ITransactionOptions, action: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("runInTransaction")(model.asInstanceOf[js.Any], options.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   trait ITransactionOptions extends StObject {
     
-    var commitCurrentImplicitTransaction: Boolean = js.native
+    var commitCurrentImplicitTransaction: Boolean
   }
   object ITransactionOptions {
     

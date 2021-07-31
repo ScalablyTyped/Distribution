@@ -1,19 +1,18 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`14`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForRenderListExpression extends CallExpression {
+trait ForRenderListExpression
+  extends StObject
+     with CallExpression {
   
   @JSName("arguments")
-  var arguments_ForRenderListExpression: js.Tuple2[ExpressionNode, ForIteratorExpression] = js.native
+  var arguments_ForRenderListExpression: js.Tuple2[ExpressionNode, ForIteratorExpression]
   
   @JSName("callee")
-  var callee_ForRenderListExpression: js.Symbol = js.native
+  var callee_ForRenderListExpression: js.Symbol
 }
 object ForRenderListExpression {
   
@@ -21,11 +20,10 @@ object ForRenderListExpression {
   def apply(
     arguments: js.Tuple2[ExpressionNode, ForIteratorExpression],
     callee: js.Symbol,
-    loc: SourceLocation,
-    `type`: `14`
+    loc: SourceLocation
   ): ForRenderListExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(14)
     __obj.asInstanceOf[ForRenderListExpression]
   }
   

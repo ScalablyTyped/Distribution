@@ -6,13 +6,13 @@ import typings.devextreme.mod.global.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("devextreme", "default.DOMComponent")
 @js.native
 class DOMComponent protected ()
-  extends typings.devextreme.mod.DevExpress.DOMComponent {
+  extends StObject
+     with typings.devextreme.mod.DevExpress.DOMComponent {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: DOMComponentOptions[typings.devextreme.mod.DevExpress.DOMComponent]) = this()
@@ -21,20 +21,21 @@ class DOMComponent protected ()
 /* static members */
 object DOMComponent {
   
+  @JSImport("devextreme", "default.DOMComponent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * [descr:DOMComponent.defaultOptions(rule)]
     */
-  @JSImport("devextreme", "default.DOMComponent.defaultOptions")
-  @js.native
-  def defaultOptions(rule: Device): Unit = js.native
+  @scala.inline
+  def defaultOptions(rule: Device): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("devextreme", "default.DOMComponent.getInstance")
-  @js.native
-  def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = js.native
+  @scala.inline
+  def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
   /**
     * [descr:DOMComponent.getInstance(element)]
     */
-  @JSImport("devextreme", "default.DOMComponent.getInstance")
-  @js.native
-  def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = js.native
+  @scala.inline
+  def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
 }

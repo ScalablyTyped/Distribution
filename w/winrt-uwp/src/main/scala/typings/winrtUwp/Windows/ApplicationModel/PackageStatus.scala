@@ -2,51 +2,49 @@ package typings.winrtUwp.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the status of the package. */
-@js.native
 trait PackageStatus extends StObject {
   
   /** Indicates whether the data for the package is offline. */
-  var dataOffline: Boolean = js.native
+  var dataOffline: Boolean
   
   /** Indicates whether this package depends on a package that can't be used. */
-  var dependencyIssue: Boolean = js.native
+  var dependencyIssue: Boolean
   
   /** Indicates whether the package is being serviced. */
-  var deploymentInProgress: Boolean = js.native
+  var deploymentInProgress: Boolean
   
   /** Indicates whether the package has been disabled. */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
   /** Indicates whether there is a problem with the license for this package. */
-  var licenseIssue: Boolean = js.native
+  var licenseIssue: Boolean
   
   /** Indicates whether the package is missing files, system information, etc. */
-  var modified: Boolean = js.native
+  var modified: Boolean
   
   /** Indicates whether the package is unusable. */
-  var needsRemediation: Boolean = js.native
+  var needsRemediation: Boolean
   
   /** Indicates whether the package is available. */
-  var notAvailable: Boolean = js.native
+  var notAvailable: Boolean
   
   /** Indicates whether the package is offline and cannot be used. */
-  var packageOffline: Boolean = js.native
+  var packageOffline: Boolean
   
   /** Indicates whether the package is being serviced. */
-  var servicing: Boolean = js.native
+  var servicing: Boolean
   
   /** Indicates whether the package may have been tampered with. */
-  var tampered: Boolean = js.native
+  var tampered: Boolean
   
   /**
     * Indicates whether the package is in good condition and may be used.
     * @return TRUE indicates that the package is in good condition; otherwise FALSE.
     */
-  def verifyIsOK(): Boolean = js.native
+  def verifyIsOK(): Boolean
 }
 object PackageStatus {
   

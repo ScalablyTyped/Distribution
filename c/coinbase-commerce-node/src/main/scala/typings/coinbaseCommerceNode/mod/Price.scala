@@ -2,18 +2,16 @@ package typings.coinbaseCommerceNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Price object.
   */
-@js.native
 trait Price[Currency] extends StObject {
   
-  var amount: String = js.native
+  var amount: String
   
-  var currency: Currency = js.native
+  var currency: Currency
 }
 object Price {
   
@@ -24,7 +22,7 @@ object Price {
   }
   
   @scala.inline
-  implicit class PriceMutableBuilder[Self <: Price[_], Currency] (val x: Self with Price[Currency]) extends AnyVal {
+  implicit class PriceMutableBuilder[Self <: Price[?], Currency] (val x: Self & Price[Currency]) extends AnyVal {
     
     @scala.inline
     def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])

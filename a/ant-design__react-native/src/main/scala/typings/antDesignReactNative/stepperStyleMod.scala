@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepperStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/stepper/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/stepper/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): StepperStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): StepperStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[StepperStyle]
+  
   trait StepperStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var disabledStepTextColor: TextStyle = js.native
+    var disabledStepTextColor: TextStyle
     
-    var highlightStepBorderColor: ViewStyle = js.native
+    var highlightStepBorderColor: ViewStyle
     
-    var highlightStepTextColor: TextStyle = js.native
+    var highlightStepTextColor: TextStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var stepDisabled: ViewStyle = js.native
+    var stepDisabled: ViewStyle
     
-    var stepText: TextStyle = js.native
+    var stepText: TextStyle
     
-    var stepWrap: ViewStyle = js.native
+    var stepWrap: ViewStyle
   }
   object StepperStyle {
     

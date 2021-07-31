@@ -2,39 +2,33 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.Touch")
 @js.native
 class Touch ()
-  extends typings.easeljs.createjs.Touch
+  extends StObject
+     with typings.easeljs.createjs.Touch
 /* static members */
 object Touch {
   
+  @JSGlobal("createjs.Touch")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // methods
-  @JSGlobal("createjs.Touch.disable")
-  @js.native
-  def disable(stage: typings.easeljs.createjs.Stage): Unit = js.native
+  @scala.inline
+  def disable(stage: typings.easeljs.createjs.Stage): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(stage.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("createjs.Touch.enable")
-  @js.native
-  def enable(stage: typings.easeljs.createjs.Stage): Boolean = js.native
-  @JSGlobal("createjs.Touch.enable")
-  @js.native
-  def enable(
-    stage: typings.easeljs.createjs.Stage,
-    singleTouch: js.UndefOr[scala.Nothing],
-    allowDefault: Boolean
-  ): Boolean = js.native
-  @JSGlobal("createjs.Touch.enable")
-  @js.native
-  def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean): Boolean = js.native
-  @JSGlobal("createjs.Touch.enable")
-  @js.native
-  def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean, allowDefault: Boolean): Boolean = js.native
+  @scala.inline
+  def enable(stage: typings.easeljs.createjs.Stage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(stage.asInstanceOf[js.Any], singleTouch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Boolean, allowDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(stage.asInstanceOf[js.Any], singleTouch.asInstanceOf[js.Any], allowDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def enable(stage: typings.easeljs.createjs.Stage, singleTouch: Unit, allowDefault: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(stage.asInstanceOf[js.Any], singleTouch.asInstanceOf[js.Any], allowDefault.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSGlobal("createjs.Touch.isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

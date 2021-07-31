@@ -11,11 +11,9 @@ import typings.officeJs.officeJsStrings.None
 import typings.officeJs.officeJsStrings.RightToLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `dataBarConditionalFormat.toJSON()`. */
-@js.native
 trait DataBarConditionalFormatData extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var axisColor: js.UndefOr[String] = js.native
+  var axisColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var axisFormat: js.UndefOr[ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint] = js.native
+  var axisFormat: js.UndefOr[ConditionalDataBarAxisFormat | Automatic | None | CellMidPoint] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var barDirection: js.UndefOr[ConditionalDataBarDirection | Context | LeftToRight | RightToLeft] = js.native
+  var barDirection: js.UndefOr[ConditionalDataBarDirection | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var lowerBoundRule: js.UndefOr[ConditionalDataBarRule] = js.native
+  var lowerBoundRule: js.UndefOr[ConditionalDataBarRule] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatData] = js.native
+  var negativeFormat: js.UndefOr[ConditionalDataBarNegativeFormatData] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var positiveFormat: js.UndefOr[ConditionalDataBarPositiveFormatData] = js.native
+  var positiveFormat: js.UndefOr[ConditionalDataBarPositiveFormatData] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var showDataBarOnly: js.UndefOr[Boolean] = js.native
+  var showDataBarOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait DataBarConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var upperBoundRule: js.UndefOr[ConditionalDataBarRule] = js.native
+  var upperBoundRule: js.UndefOr[ConditionalDataBarRule] = js.undefined
 }
 object DataBarConditionalFormatData {
   

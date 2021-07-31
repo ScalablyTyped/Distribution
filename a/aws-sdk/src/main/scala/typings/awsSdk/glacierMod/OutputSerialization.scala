@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputSerialization extends StObject {
   
   /**
     * Describes the serialization of CSV-encoded query results.
     */
-  var csv: js.UndefOr[CSVOutput] = js.native
+  var csv: js.UndefOr[CSVOutput] = js.undefined
 }
 object OutputSerialization {
   

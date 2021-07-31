@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCommentsForPullRequestOutput extends StObject {
   
   /**
     * An array of comment objects on the pull request.
     */
-  var commentsForPullRequestData: js.UndefOr[CommentsForPullRequestData] = js.native
+  var commentsForPullRequestData: js.UndefOr[CommentsForPullRequestData] = js.undefined
   
   /**
     * An enumeration token that can be used in a request to return the next batch of the results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetCommentsForPullRequestOutput {
   

@@ -2,27 +2,26 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlReader
-  extends typings.extjs.Ext.data.reader.IReader {
+  extends StObject
+     with typings.extjs.Ext.data.reader.IReader {
   
   /** [Method] Normalizes the data object
     * @param data Object The raw data object
     * @returns Object The documentElement property of the data object if present, or the same object if not.
     */
-  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], _]] = js.native
+  var getData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Config Option] (String) */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var record: js.UndefOr[String] = js.native
+  var record: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var xmlData: js.UndefOr[js.Any] = js.native
+  var xmlData: js.UndefOr[js.Any] = js.undefined
 }
 object IXmlReader {
   
@@ -36,7 +35,7 @@ object IXmlReader {
   implicit class IXmlReaderMutableBuilder[Self <: IXmlReader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetData(value: /* data */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMyUserProfileResult extends StObject {
   
   /**
     * A UserProfile object that describes the user's SSH information.
     */
-  var UserProfile: js.UndefOr[SelfUserProfile] = js.native
+  var UserProfile: js.UndefOr[SelfUserProfile] = js.undefined
 }
 object DescribeMyUserProfileResult {
   

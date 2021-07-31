@@ -2,63 +2,61 @@ package typings.reactMdTheme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `0`: String = js.native
+    var `0`: String
     
-    var `1`: String = js.native
+    var `1`: String
     
-    var `10`: String = js.native
+    var `10`: String
     
-    var `11`: String = js.native
+    var `11`: String
     
-    var `12`: String = js.native
+    var `12`: String
     
-    var `13`: String = js.native
+    var `13`: String
     
-    var `14`: String = js.native
+    var `14`: String
     
-    var `15`: String = js.native
+    var `15`: String
     
-    var `16`: String = js.native
+    var `16`: String
     
-    var `17`: String = js.native
+    var `17`: String
     
-    var `18`: String = js.native
+    var `18`: String
     
-    var `19`: String = js.native
+    var `19`: String
     
-    var `2`: String = js.native
+    var `2`: String
     
-    var `20`: String = js.native
+    var `20`: String
     
-    var `21`: String = js.native
+    var `21`: String
     
-    var `22`: String = js.native
+    var `22`: String
     
-    var `23`: String = js.native
+    var `23`: String
     
-    var `24`: String = js.native
+    var `24`: String
     
-    var `3`: String = js.native
+    var `3`: String
     
-    var `4`: String = js.native
+    var `4`: String
     
-    var `5`: String = js.native
+    var `5`: String
     
-    var `6`: String = js.native
+    var `6`: String
     
-    var `7`: String = js.native
+    var `7`: String
     
-    var `8`: String = js.native
+    var `8`: String
     
-    var `9`: String = js.native
+    var `9`: String
   }
   object `0` {
     
@@ -199,72 +197,71 @@ object anon {
     }
   }
   
-  @js.native
   trait Background extends StObject {
     
-    var background: String = js.native
+    var background: String
     
-    var `dark-background`: String = js.native
+    var `dark-background`: String
     
-    var `dark-surface`: String = js.native
+    var `dark-surface`: String
     
-    var error: String = js.native
+    var error: String
     
-    var `light-background`: String = js.native
+    var `light-background`: String
     
-    var `light-surface`: String = js.native
+    var `light-surface`: String
     
-    var `on-error`: String = js.native
+    var `on-error`: String
     
-    var `on-primary`: String = js.native
+    var `on-primary`: String
     
-    var `on-secondary`: String = js.native
+    var `on-secondary`: String
     
-    var `on-success`: String = js.native
+    var `on-success`: String
     
-    var `on-surface`: String = js.native
+    var `on-surface`: String
     
-    var `on-warning`: String = js.native
+    var `on-warning`: String
     
-    var primary: String = js.native
+    var primary: String
     
-    var secondary: String = js.native
+    var secondary: String
     
-    var success: String = js.native
+    var success: String
     
-    var surface: String = js.native
+    var surface: String
     
-    var `text-disabled-on-background`: String = js.native
+    var `text-disabled-on-background`: String
     
-    var `text-disabled-on-dark`: String = js.native
+    var `text-disabled-on-dark`: String
     
-    var `text-disabled-on-light`: String = js.native
+    var `text-disabled-on-light`: String
     
-    var `text-hint-on-background`: String = js.native
+    var `text-hint-on-background`: String
     
-    var `text-hint-on-dark`: String = js.native
+    var `text-hint-on-dark`: String
     
-    var `text-hint-on-light`: String = js.native
+    var `text-hint-on-light`: String
     
-    var `text-icon-on-background`: String = js.native
+    var `text-icon-on-background`: String
     
-    var `text-icon-on-dark`: String = js.native
+    var `text-icon-on-dark`: String
     
-    var `text-icon-on-light`: String = js.native
+    var `text-icon-on-light`: String
     
-    var `text-primary-on-background`: String = js.native
+    var `text-primary-on-background`: String
     
-    var `text-primary-on-dark`: String = js.native
+    var `text-primary-on-dark`: String
     
-    var `text-primary-on-light`: String = js.native
+    var `text-primary-on-light`: String
     
-    var `text-secondary-on-background`: String = js.native
+    var `text-secondary-on-background`: String
     
-    var `text-secondary-on-dark`: String = js.native
+    var `text-secondary-on-dark`: String
     
-    var `text-secondary-on-light`: String = js.native
+    var `text-secondary-on-light`: String
     
-    var warning: String = js.native
+    var warning: String
   }
   object Background {
     
@@ -433,18 +430,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: String = js.native
+    var disabled: String
     
-    var hint: String = js.native
+    var hint: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var primary: String = js.native
+    var primary: String
     
-    var secondary: String = js.native
+    var secondary: String
   }
   object Disabled {
     
@@ -474,520 +470,519 @@ object anon {
     }
   }
   
-  @js.native
   trait Rmdamber100 extends StObject {
     
-    var `rmd-amber-100`: String = js.native
+    var `rmd-amber-100`: String
     
-    var `rmd-amber-200`: String = js.native
+    var `rmd-amber-200`: String
     
-    var `rmd-amber-300`: String = js.native
+    var `rmd-amber-300`: String
     
-    var `rmd-amber-400`: String = js.native
+    var `rmd-amber-400`: String
     
-    var `rmd-amber-50`: String = js.native
+    var `rmd-amber-50`: String
     
-    var `rmd-amber-500`: String = js.native
+    var `rmd-amber-500`: String
     
-    var `rmd-amber-600`: String = js.native
+    var `rmd-amber-600`: String
     
-    var `rmd-amber-700`: String = js.native
+    var `rmd-amber-700`: String
     
-    var `rmd-amber-800`: String = js.native
+    var `rmd-amber-800`: String
     
-    var `rmd-amber-900`: String = js.native
+    var `rmd-amber-900`: String
     
-    var `rmd-amber-a-100`: String = js.native
+    var `rmd-amber-a-100`: String
     
-    var `rmd-amber-a-200`: String = js.native
+    var `rmd-amber-a-200`: String
     
-    var `rmd-amber-a-400`: String = js.native
+    var `rmd-amber-a-400`: String
     
-    var `rmd-amber-a-700`: String = js.native
+    var `rmd-amber-a-700`: String
     
-    var `rmd-black-base`: String = js.native
+    var `rmd-black-base`: String
     
-    var `rmd-blue-100`: String = js.native
+    var `rmd-blue-100`: String
     
-    var `rmd-blue-200`: String = js.native
+    var `rmd-blue-200`: String
     
-    var `rmd-blue-300`: String = js.native
+    var `rmd-blue-300`: String
     
-    var `rmd-blue-400`: String = js.native
+    var `rmd-blue-400`: String
     
-    var `rmd-blue-50`: String = js.native
+    var `rmd-blue-50`: String
     
-    var `rmd-blue-500`: String = js.native
+    var `rmd-blue-500`: String
     
-    var `rmd-blue-600`: String = js.native
+    var `rmd-blue-600`: String
     
-    var `rmd-blue-700`: String = js.native
+    var `rmd-blue-700`: String
     
-    var `rmd-blue-800`: String = js.native
+    var `rmd-blue-800`: String
     
-    var `rmd-blue-900`: String = js.native
+    var `rmd-blue-900`: String
     
-    var `rmd-blue-a-100`: String = js.native
+    var `rmd-blue-a-100`: String
     
-    var `rmd-blue-a-200`: String = js.native
+    var `rmd-blue-a-200`: String
     
-    var `rmd-blue-a-400`: String = js.native
+    var `rmd-blue-a-400`: String
     
-    var `rmd-blue-a-700`: String = js.native
+    var `rmd-blue-a-700`: String
     
-    var `rmd-blue-grey-100`: String = js.native
+    var `rmd-blue-grey-100`: String
     
-    var `rmd-blue-grey-200`: String = js.native
+    var `rmd-blue-grey-200`: String
     
-    var `rmd-blue-grey-300`: String = js.native
+    var `rmd-blue-grey-300`: String
     
-    var `rmd-blue-grey-400`: String = js.native
+    var `rmd-blue-grey-400`: String
     
-    var `rmd-blue-grey-50`: String = js.native
+    var `rmd-blue-grey-50`: String
     
-    var `rmd-blue-grey-500`: String = js.native
+    var `rmd-blue-grey-500`: String
     
-    var `rmd-blue-grey-600`: String = js.native
+    var `rmd-blue-grey-600`: String
     
-    var `rmd-blue-grey-700`: String = js.native
+    var `rmd-blue-grey-700`: String
     
-    var `rmd-blue-grey-800`: String = js.native
+    var `rmd-blue-grey-800`: String
     
-    var `rmd-blue-grey-900`: String = js.native
+    var `rmd-blue-grey-900`: String
     
-    var `rmd-brown-100`: String = js.native
+    var `rmd-brown-100`: String
     
-    var `rmd-brown-200`: String = js.native
+    var `rmd-brown-200`: String
     
-    var `rmd-brown-300`: String = js.native
+    var `rmd-brown-300`: String
     
-    var `rmd-brown-400`: String = js.native
+    var `rmd-brown-400`: String
     
-    var `rmd-brown-50`: String = js.native
+    var `rmd-brown-50`: String
     
-    var `rmd-brown-500`: String = js.native
+    var `rmd-brown-500`: String
     
-    var `rmd-brown-600`: String = js.native
+    var `rmd-brown-600`: String
     
-    var `rmd-brown-700`: String = js.native
+    var `rmd-brown-700`: String
     
-    var `rmd-brown-800`: String = js.native
+    var `rmd-brown-800`: String
     
-    var `rmd-brown-900`: String = js.native
+    var `rmd-brown-900`: String
     
-    var `rmd-cyan-100`: String = js.native
+    var `rmd-cyan-100`: String
     
-    var `rmd-cyan-200`: String = js.native
+    var `rmd-cyan-200`: String
     
-    var `rmd-cyan-300`: String = js.native
+    var `rmd-cyan-300`: String
     
-    var `rmd-cyan-400`: String = js.native
+    var `rmd-cyan-400`: String
     
-    var `rmd-cyan-50`: String = js.native
+    var `rmd-cyan-50`: String
     
-    var `rmd-cyan-500`: String = js.native
+    var `rmd-cyan-500`: String
     
-    var `rmd-cyan-600`: String = js.native
+    var `rmd-cyan-600`: String
     
-    var `rmd-cyan-700`: String = js.native
+    var `rmd-cyan-700`: String
     
-    var `rmd-cyan-800`: String = js.native
+    var `rmd-cyan-800`: String
     
-    var `rmd-cyan-900`: String = js.native
+    var `rmd-cyan-900`: String
     
-    var `rmd-cyan-a-100`: String = js.native
+    var `rmd-cyan-a-100`: String
     
-    var `rmd-cyan-a-200`: String = js.native
+    var `rmd-cyan-a-200`: String
     
-    var `rmd-cyan-a-400`: String = js.native
+    var `rmd-cyan-a-400`: String
     
-    var `rmd-cyan-a-700`: String = js.native
+    var `rmd-cyan-a-700`: String
     
-    var `rmd-deep-orange-100`: String = js.native
+    var `rmd-deep-orange-100`: String
     
-    var `rmd-deep-orange-200`: String = js.native
+    var `rmd-deep-orange-200`: String
     
-    var `rmd-deep-orange-300`: String = js.native
+    var `rmd-deep-orange-300`: String
     
-    var `rmd-deep-orange-400`: String = js.native
+    var `rmd-deep-orange-400`: String
     
-    var `rmd-deep-orange-50`: String = js.native
+    var `rmd-deep-orange-50`: String
     
-    var `rmd-deep-orange-500`: String = js.native
+    var `rmd-deep-orange-500`: String
     
-    var `rmd-deep-orange-600`: String = js.native
+    var `rmd-deep-orange-600`: String
     
-    var `rmd-deep-orange-700`: String = js.native
+    var `rmd-deep-orange-700`: String
     
-    var `rmd-deep-orange-800`: String = js.native
+    var `rmd-deep-orange-800`: String
     
-    var `rmd-deep-orange-900`: String = js.native
+    var `rmd-deep-orange-900`: String
     
-    var `rmd-deep-orange-a-100`: String = js.native
+    var `rmd-deep-orange-a-100`: String
     
-    var `rmd-deep-orange-a-200`: String = js.native
+    var `rmd-deep-orange-a-200`: String
     
-    var `rmd-deep-orange-a-400`: String = js.native
+    var `rmd-deep-orange-a-400`: String
     
-    var `rmd-deep-orange-a-700`: String = js.native
+    var `rmd-deep-orange-a-700`: String
     
-    var `rmd-deep-purple-100`: String = js.native
+    var `rmd-deep-purple-100`: String
     
-    var `rmd-deep-purple-200`: String = js.native
+    var `rmd-deep-purple-200`: String
     
-    var `rmd-deep-purple-300`: String = js.native
+    var `rmd-deep-purple-300`: String
     
-    var `rmd-deep-purple-400`: String = js.native
+    var `rmd-deep-purple-400`: String
     
-    var `rmd-deep-purple-50`: String = js.native
+    var `rmd-deep-purple-50`: String
     
-    var `rmd-deep-purple-500`: String = js.native
+    var `rmd-deep-purple-500`: String
     
-    var `rmd-deep-purple-600`: String = js.native
+    var `rmd-deep-purple-600`: String
     
-    var `rmd-deep-purple-700`: String = js.native
+    var `rmd-deep-purple-700`: String
     
-    var `rmd-deep-purple-800`: String = js.native
+    var `rmd-deep-purple-800`: String
     
-    var `rmd-deep-purple-900`: String = js.native
+    var `rmd-deep-purple-900`: String
     
-    var `rmd-deep-purple-a-100`: String = js.native
+    var `rmd-deep-purple-a-100`: String
     
-    var `rmd-deep-purple-a-200`: String = js.native
+    var `rmd-deep-purple-a-200`: String
     
-    var `rmd-deep-purple-a-400`: String = js.native
+    var `rmd-deep-purple-a-400`: String
     
-    var `rmd-deep-purple-a-700`: String = js.native
+    var `rmd-deep-purple-a-700`: String
     
-    var `rmd-green-100`: String = js.native
+    var `rmd-green-100`: String
     
-    var `rmd-green-200`: String = js.native
+    var `rmd-green-200`: String
     
-    var `rmd-green-300`: String = js.native
+    var `rmd-green-300`: String
     
-    var `rmd-green-400`: String = js.native
+    var `rmd-green-400`: String
     
-    var `rmd-green-50`: String = js.native
+    var `rmd-green-50`: String
     
-    var `rmd-green-500`: String = js.native
+    var `rmd-green-500`: String
     
-    var `rmd-green-600`: String = js.native
+    var `rmd-green-600`: String
     
-    var `rmd-green-700`: String = js.native
+    var `rmd-green-700`: String
     
-    var `rmd-green-800`: String = js.native
+    var `rmd-green-800`: String
     
-    var `rmd-green-900`: String = js.native
+    var `rmd-green-900`: String
     
-    var `rmd-green-a-100`: String = js.native
+    var `rmd-green-a-100`: String
     
-    var `rmd-green-a-200`: String = js.native
+    var `rmd-green-a-200`: String
     
-    var `rmd-green-a-400`: String = js.native
+    var `rmd-green-a-400`: String
     
-    var `rmd-green-a-700`: String = js.native
+    var `rmd-green-a-700`: String
     
-    var `rmd-grey-100`: String = js.native
+    var `rmd-grey-100`: String
     
-    var `rmd-grey-200`: String = js.native
+    var `rmd-grey-200`: String
     
-    var `rmd-grey-300`: String = js.native
+    var `rmd-grey-300`: String
     
-    var `rmd-grey-400`: String = js.native
+    var `rmd-grey-400`: String
     
-    var `rmd-grey-50`: String = js.native
+    var `rmd-grey-50`: String
     
-    var `rmd-grey-500`: String = js.native
+    var `rmd-grey-500`: String
     
-    var `rmd-grey-600`: String = js.native
+    var `rmd-grey-600`: String
     
-    var `rmd-grey-700`: String = js.native
+    var `rmd-grey-700`: String
     
-    var `rmd-grey-800`: String = js.native
+    var `rmd-grey-800`: String
     
-    var `rmd-grey-900`: String = js.native
+    var `rmd-grey-900`: String
     
-    var `rmd-indigo-100`: String = js.native
+    var `rmd-indigo-100`: String
     
-    var `rmd-indigo-200`: String = js.native
+    var `rmd-indigo-200`: String
     
-    var `rmd-indigo-300`: String = js.native
+    var `rmd-indigo-300`: String
     
-    var `rmd-indigo-400`: String = js.native
+    var `rmd-indigo-400`: String
     
-    var `rmd-indigo-50`: String = js.native
+    var `rmd-indigo-50`: String
     
-    var `rmd-indigo-500`: String = js.native
+    var `rmd-indigo-500`: String
     
-    var `rmd-indigo-600`: String = js.native
+    var `rmd-indigo-600`: String
     
-    var `rmd-indigo-700`: String = js.native
+    var `rmd-indigo-700`: String
     
-    var `rmd-indigo-800`: String = js.native
+    var `rmd-indigo-800`: String
     
-    var `rmd-indigo-900`: String = js.native
+    var `rmd-indigo-900`: String
     
-    var `rmd-indigo-a-100`: String = js.native
+    var `rmd-indigo-a-100`: String
     
-    var `rmd-indigo-a-200`: String = js.native
+    var `rmd-indigo-a-200`: String
     
-    var `rmd-indigo-a-400`: String = js.native
+    var `rmd-indigo-a-400`: String
     
-    var `rmd-indigo-a-700`: String = js.native
+    var `rmd-indigo-a-700`: String
     
-    var `rmd-light-blue-100`: String = js.native
+    var `rmd-light-blue-100`: String
     
-    var `rmd-light-blue-200`: String = js.native
+    var `rmd-light-blue-200`: String
     
-    var `rmd-light-blue-300`: String = js.native
+    var `rmd-light-blue-300`: String
     
-    var `rmd-light-blue-400`: String = js.native
+    var `rmd-light-blue-400`: String
     
-    var `rmd-light-blue-50`: String = js.native
+    var `rmd-light-blue-50`: String
     
-    var `rmd-light-blue-500`: String = js.native
+    var `rmd-light-blue-500`: String
     
-    var `rmd-light-blue-600`: String = js.native
+    var `rmd-light-blue-600`: String
     
-    var `rmd-light-blue-700`: String = js.native
+    var `rmd-light-blue-700`: String
     
-    var `rmd-light-blue-800`: String = js.native
+    var `rmd-light-blue-800`: String
     
-    var `rmd-light-blue-900`: String = js.native
+    var `rmd-light-blue-900`: String
     
-    var `rmd-light-blue-a-100`: String = js.native
+    var `rmd-light-blue-a-100`: String
     
-    var `rmd-light-blue-a-200`: String = js.native
+    var `rmd-light-blue-a-200`: String
     
-    var `rmd-light-blue-a-400`: String = js.native
+    var `rmd-light-blue-a-400`: String
     
-    var `rmd-light-blue-a-700`: String = js.native
+    var `rmd-light-blue-a-700`: String
     
-    var `rmd-light-green-100`: String = js.native
+    var `rmd-light-green-100`: String
     
-    var `rmd-light-green-200`: String = js.native
+    var `rmd-light-green-200`: String
     
-    var `rmd-light-green-300`: String = js.native
+    var `rmd-light-green-300`: String
     
-    var `rmd-light-green-400`: String = js.native
+    var `rmd-light-green-400`: String
     
-    var `rmd-light-green-50`: String = js.native
+    var `rmd-light-green-50`: String
     
-    var `rmd-light-green-500`: String = js.native
+    var `rmd-light-green-500`: String
     
-    var `rmd-light-green-600`: String = js.native
+    var `rmd-light-green-600`: String
     
-    var `rmd-light-green-700`: String = js.native
+    var `rmd-light-green-700`: String
     
-    var `rmd-light-green-800`: String = js.native
+    var `rmd-light-green-800`: String
     
-    var `rmd-light-green-900`: String = js.native
+    var `rmd-light-green-900`: String
     
-    var `rmd-light-green-a-100`: String = js.native
+    var `rmd-light-green-a-100`: String
     
-    var `rmd-light-green-a-200`: String = js.native
+    var `rmd-light-green-a-200`: String
     
-    var `rmd-light-green-a-400`: String = js.native
+    var `rmd-light-green-a-400`: String
     
-    var `rmd-light-green-a-700`: String = js.native
+    var `rmd-light-green-a-700`: String
     
-    var `rmd-lime-100`: String = js.native
+    var `rmd-lime-100`: String
     
-    var `rmd-lime-200`: String = js.native
+    var `rmd-lime-200`: String
     
-    var `rmd-lime-300`: String = js.native
+    var `rmd-lime-300`: String
     
-    var `rmd-lime-400`: String = js.native
+    var `rmd-lime-400`: String
     
-    var `rmd-lime-50`: String = js.native
+    var `rmd-lime-50`: String
     
-    var `rmd-lime-500`: String = js.native
+    var `rmd-lime-500`: String
     
-    var `rmd-lime-600`: String = js.native
+    var `rmd-lime-600`: String
     
-    var `rmd-lime-700`: String = js.native
+    var `rmd-lime-700`: String
     
-    var `rmd-lime-800`: String = js.native
+    var `rmd-lime-800`: String
     
-    var `rmd-lime-900`: String = js.native
+    var `rmd-lime-900`: String
     
-    var `rmd-lime-a-100`: String = js.native
+    var `rmd-lime-a-100`: String
     
-    var `rmd-lime-a-200`: String = js.native
+    var `rmd-lime-a-200`: String
     
-    var `rmd-lime-a-400`: String = js.native
+    var `rmd-lime-a-400`: String
     
-    var `rmd-lime-a-700`: String = js.native
+    var `rmd-lime-a-700`: String
     
-    var `rmd-orange-100`: String = js.native
+    var `rmd-orange-100`: String
     
-    var `rmd-orange-200`: String = js.native
+    var `rmd-orange-200`: String
     
-    var `rmd-orange-300`: String = js.native
+    var `rmd-orange-300`: String
     
-    var `rmd-orange-400`: String = js.native
+    var `rmd-orange-400`: String
     
-    var `rmd-orange-50`: String = js.native
+    var `rmd-orange-50`: String
     
-    var `rmd-orange-500`: String = js.native
+    var `rmd-orange-500`: String
     
-    var `rmd-orange-600`: String = js.native
+    var `rmd-orange-600`: String
     
-    var `rmd-orange-700`: String = js.native
+    var `rmd-orange-700`: String
     
-    var `rmd-orange-800`: String = js.native
+    var `rmd-orange-800`: String
     
-    var `rmd-orange-900`: String = js.native
+    var `rmd-orange-900`: String
     
-    var `rmd-orange-a-100`: String = js.native
+    var `rmd-orange-a-100`: String
     
-    var `rmd-orange-a-200`: String = js.native
+    var `rmd-orange-a-200`: String
     
-    var `rmd-orange-a-400`: String = js.native
+    var `rmd-orange-a-400`: String
     
-    var `rmd-orange-a-700`: String = js.native
+    var `rmd-orange-a-700`: String
     
-    var `rmd-pink-100`: String = js.native
+    var `rmd-pink-100`: String
     
-    var `rmd-pink-200`: String = js.native
+    var `rmd-pink-200`: String
     
-    var `rmd-pink-300`: String = js.native
+    var `rmd-pink-300`: String
     
-    var `rmd-pink-400`: String = js.native
+    var `rmd-pink-400`: String
     
-    var `rmd-pink-50`: String = js.native
+    var `rmd-pink-50`: String
     
-    var `rmd-pink-500`: String = js.native
+    var `rmd-pink-500`: String
     
-    var `rmd-pink-600`: String = js.native
+    var `rmd-pink-600`: String
     
-    var `rmd-pink-700`: String = js.native
+    var `rmd-pink-700`: String
     
-    var `rmd-pink-800`: String = js.native
+    var `rmd-pink-800`: String
     
-    var `rmd-pink-900`: String = js.native
+    var `rmd-pink-900`: String
     
-    var `rmd-pink-a-100`: String = js.native
+    var `rmd-pink-a-100`: String
     
-    var `rmd-pink-a-200`: String = js.native
+    var `rmd-pink-a-200`: String
     
-    var `rmd-pink-a-400`: String = js.native
+    var `rmd-pink-a-400`: String
     
-    var `rmd-pink-a-700`: String = js.native
+    var `rmd-pink-a-700`: String
     
-    var `rmd-purple-100`: String = js.native
+    var `rmd-purple-100`: String
     
-    var `rmd-purple-200`: String = js.native
+    var `rmd-purple-200`: String
     
-    var `rmd-purple-300`: String = js.native
+    var `rmd-purple-300`: String
     
-    var `rmd-purple-400`: String = js.native
+    var `rmd-purple-400`: String
     
-    var `rmd-purple-50`: String = js.native
+    var `rmd-purple-50`: String
     
-    var `rmd-purple-500`: String = js.native
+    var `rmd-purple-500`: String
     
-    var `rmd-purple-600`: String = js.native
+    var `rmd-purple-600`: String
     
-    var `rmd-purple-700`: String = js.native
+    var `rmd-purple-700`: String
     
-    var `rmd-purple-800`: String = js.native
+    var `rmd-purple-800`: String
     
-    var `rmd-purple-900`: String = js.native
+    var `rmd-purple-900`: String
     
-    var `rmd-purple-a-100`: String = js.native
+    var `rmd-purple-a-100`: String
     
-    var `rmd-purple-a-200`: String = js.native
+    var `rmd-purple-a-200`: String
     
-    var `rmd-purple-a-400`: String = js.native
+    var `rmd-purple-a-400`: String
     
-    var `rmd-purple-a-700`: String = js.native
+    var `rmd-purple-a-700`: String
     
-    var `rmd-red-100`: String = js.native
+    var `rmd-red-100`: String
     
-    var `rmd-red-200`: String = js.native
+    var `rmd-red-200`: String
     
-    var `rmd-red-300`: String = js.native
+    var `rmd-red-300`: String
     
-    var `rmd-red-400`: String = js.native
+    var `rmd-red-400`: String
     
-    var `rmd-red-50`: String = js.native
+    var `rmd-red-50`: String
     
-    var `rmd-red-500`: String = js.native
+    var `rmd-red-500`: String
     
-    var `rmd-red-600`: String = js.native
+    var `rmd-red-600`: String
     
-    var `rmd-red-700`: String = js.native
+    var `rmd-red-700`: String
     
-    var `rmd-red-800`: String = js.native
+    var `rmd-red-800`: String
     
-    var `rmd-red-900`: String = js.native
+    var `rmd-red-900`: String
     
-    var `rmd-red-a-100`: String = js.native
+    var `rmd-red-a-100`: String
     
-    var `rmd-red-a-200`: String = js.native
+    var `rmd-red-a-200`: String
     
-    var `rmd-red-a-400`: String = js.native
+    var `rmd-red-a-400`: String
     
-    var `rmd-red-a-700`: String = js.native
+    var `rmd-red-a-700`: String
     
-    var `rmd-teal-100`: String = js.native
+    var `rmd-teal-100`: String
     
-    var `rmd-teal-200`: String = js.native
+    var `rmd-teal-200`: String
     
-    var `rmd-teal-300`: String = js.native
+    var `rmd-teal-300`: String
     
-    var `rmd-teal-400`: String = js.native
+    var `rmd-teal-400`: String
     
-    var `rmd-teal-50`: String = js.native
+    var `rmd-teal-50`: String
     
-    var `rmd-teal-500`: String = js.native
+    var `rmd-teal-500`: String
     
-    var `rmd-teal-600`: String = js.native
+    var `rmd-teal-600`: String
     
-    var `rmd-teal-700`: String = js.native
+    var `rmd-teal-700`: String
     
-    var `rmd-teal-800`: String = js.native
+    var `rmd-teal-800`: String
     
-    var `rmd-teal-900`: String = js.native
+    var `rmd-teal-900`: String
     
-    var `rmd-teal-a-100`: String = js.native
+    var `rmd-teal-a-100`: String
     
-    var `rmd-teal-a-200`: String = js.native
+    var `rmd-teal-a-200`: String
     
-    var `rmd-teal-a-400`: String = js.native
+    var `rmd-teal-a-400`: String
     
-    var `rmd-teal-a-700`: String = js.native
+    var `rmd-teal-a-700`: String
     
-    var `rmd-white-base`: String = js.native
+    var `rmd-white-base`: String
     
-    var `rmd-yellow-100`: String = js.native
+    var `rmd-yellow-100`: String
     
-    var `rmd-yellow-200`: String = js.native
+    var `rmd-yellow-200`: String
     
-    var `rmd-yellow-300`: String = js.native
+    var `rmd-yellow-300`: String
     
-    var `rmd-yellow-400`: String = js.native
+    var `rmd-yellow-400`: String
     
-    var `rmd-yellow-50`: String = js.native
+    var `rmd-yellow-50`: String
     
-    var `rmd-yellow-500`: String = js.native
+    var `rmd-yellow-500`: String
     
-    var `rmd-yellow-600`: String = js.native
+    var `rmd-yellow-600`: String
     
-    var `rmd-yellow-700`: String = js.native
+    var `rmd-yellow-700`: String
     
-    var `rmd-yellow-800`: String = js.native
+    var `rmd-yellow-800`: String
     
-    var `rmd-yellow-900`: String = js.native
+    var `rmd-yellow-900`: String
     
-    var `rmd-yellow-a-100`: String = js.native
+    var `rmd-yellow-a-100`: String
     
-    var `rmd-yellow-a-200`: String = js.native
+    var `rmd-yellow-a-200`: String
     
-    var `rmd-yellow-a-400`: String = js.native
+    var `rmd-yellow-a-400`: String
     
-    var `rmd-yellow-a-700`: String = js.native
+    var `rmd-yellow-a-700`: String
   }
   object Rmdamber100 {
     

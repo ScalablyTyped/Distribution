@@ -2,23 +2,29 @@ package typings.nodelibFsWalk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readerMod {
   
   @JSImport("@nodelib/fs.walk/out/readers/reader", JSImport.Default)
   @js.native
-  class default protected () extends Reader {
+  class default protected ()
+    extends StObject
+       with Reader {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
+    
+    /* CompleteClass */
+    override val _root: String = js.native
+    
+    /* CompleteClass */
+    override val _settings: typings.nodelibFsWalk.settingsMod.default = js.native
   }
   
-  @js.native
   trait Reader extends StObject {
     
-    val _root: String = js.native
+    val _root: String
     
-    val _settings: typings.nodelibFsWalk.settingsMod.default = js.native
+    val _settings: typings.nodelibFsWalk.settingsMod.default
   }
   object Reader {
     

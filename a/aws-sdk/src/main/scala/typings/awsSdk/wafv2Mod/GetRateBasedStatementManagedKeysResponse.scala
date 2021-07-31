@@ -2,21 +2,19 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRateBasedStatementManagedKeysResponse extends StObject {
   
   /**
     * The keys that are of Internet Protocol version 4 (IPv4). 
     */
-  var ManagedKeysIPV4: js.UndefOr[RateBasedStatementManagedKeysIPSet] = js.native
+  var ManagedKeysIPV4: js.UndefOr[RateBasedStatementManagedKeysIPSet] = js.undefined
   
   /**
     * The keys that are of Internet Protocol version 6 (IPv6). 
     */
-  var ManagedKeysIPV6: js.UndefOr[RateBasedStatementManagedKeysIPSet] = js.native
+  var ManagedKeysIPV6: js.UndefOr[RateBasedStatementManagedKeysIPSet] = js.undefined
 }
 object GetRateBasedStatementManagedKeysResponse {
   

@@ -2,13 +2,13 @@ package typings.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**Contains information about a keyword based search query.*/
 @js.native
 trait KeywordQuery
-  extends typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query {
+  extends StObject
+     with typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.Query {
   
   def get_collapseSpecification(): String = js.native
   

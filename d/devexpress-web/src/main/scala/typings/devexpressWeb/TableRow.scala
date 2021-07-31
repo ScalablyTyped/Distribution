@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a table row in the document.
   */
-@js.native
 trait TableRow extends StObject {
   
   /**
     * Provides information about the table row's cells.
     */
-  val cells: js.Array[TableCell] = js.native
+  val cells: js.Array[TableCell]
   
   /**
     * Gets the text buffer interval occupied by the current table row element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the table row's character length.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the table row's start position in the document.
     */
-  val start: Double = js.native
+  val start: Double
 }
 object TableRow {
   

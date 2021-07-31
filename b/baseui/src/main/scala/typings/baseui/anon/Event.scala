@@ -6,15 +6,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var event: MouseEvent[HTMLButtonElement, NativeMouseEvent] = js.native
+  var event: MouseEvent[HTMLButtonElement, NativeMouseEvent]
   
-  var row: RowT = js.native
+  var row: RowT
 }
 object Event {
   

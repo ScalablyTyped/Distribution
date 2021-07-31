@@ -2,31 +2,29 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValidationResult extends StObject {
   
-  def Add(validationResult: IValidationResult): Unit = js.native
+  def Add(validationResult: IValidationResult): Unit
   
-  var Children: js.Array[IValidationResult] = js.native
+  var Children: js.Array[IValidationResult]
   
-  var ErrorCount: Double = js.native
+  var ErrorCount: Double
   
-  var ErrorMessage: String = js.native
+  var ErrorMessage: String
   
-  var HasErrors: Boolean = js.native
+  var HasErrors: Boolean
   
-  var HasErrorsDirty: Boolean = js.native
+  var HasErrorsDirty: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var Optional: js.UndefOr[IOptional] = js.native
+  var Optional: js.UndefOr[IOptional] = js.undefined
   
-  def Remove(index: Double): Unit = js.native
+  def Remove(index: Double): Unit
   
-  var TranslateArgs: js.UndefOr[js.Array[IErrorTranslateArgs]] = js.native
+  var TranslateArgs: js.UndefOr[js.Array[IErrorTranslateArgs]] = js.undefined
 }
 object IValidationResult {
   

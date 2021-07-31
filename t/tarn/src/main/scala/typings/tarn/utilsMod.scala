@@ -3,54 +3,47 @@ package typings.tarn
 import typings.tarn.promiseInspectionMod.PromiseInspection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("tarn/dist/utils", "checkOptionalTime")
+  @JSImport("tarn/dist/utils", JSImport.Namespace)
   @js.native
-  def checkOptionalTime(): Boolean = js.native
-  @JSImport("tarn/dist/utils", "checkOptionalTime")
-  @js.native
-  def checkOptionalTime(time: Double): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tarn/dist/utils", "checkRequiredTime")
-  @js.native
-  def checkRequiredTime(time: Double): Boolean = js.native
+  @scala.inline
+  def checkOptionalTime(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")().asInstanceOf[Boolean]
+  @scala.inline
+  def checkOptionalTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkOptionalTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tarn/dist/utils", "defer")
-  @js.native
-  def defer[T](): Deferred[T] = js.native
+  @scala.inline
+  def checkRequiredTime(time: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRequiredTime")(time.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tarn/dist/utils", "delay")
-  @js.native
-  def delay(millis: Double): js.Promise[_] = js.native
+  @scala.inline
+  def defer[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Deferred[T]]
   
-  @JSImport("tarn/dist/utils", "duration")
-  @js.native
-  def duration(t1: Double, t2: Double): Double = js.native
+  @scala.inline
+  def delay(millis: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millis.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("tarn/dist/utils", "now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def duration(t1: Double, t2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("tarn/dist/utils", "reflect")
-  @js.native
-  def reflect[T](promise: js.Promise[T]): js.Promise[PromiseInspection[_ | T]] = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @JSImport("tarn/dist/utils", "tryPromise")
-  @js.native
-  def tryPromise[T](cb: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
+  @scala.inline
+  def reflect[T](promise: js.Promise[T]): js.Promise[PromiseInspection[js.Any | T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("reflect")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PromiseInspection[js.Any | T]]]
   
-  @js.native
+  @scala.inline
+  def tryPromise[T](cb: js.Function0[T | js.Thenable[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryPromise")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
   trait Deferred[T] extends StObject {
     
-    var promise: js.Promise[T] = js.native
+    var promise: js.Promise[T]
     
-    def reject[T](err: T): js.Any = js.native
+    def reject[T](err: T): js.Any
     
-    def resolve(`val`: T): js.Any = js.native
+    def resolve(`val`: T): js.Any
   }
   object Deferred {
     
@@ -61,7 +54,7 @@ object utilsMod {
     }
     
     @scala.inline
-    implicit class DeferredMutableBuilder[Self <: Deferred[_], T] (val x: Self with Deferred[T]) extends AnyVal {
+    implicit class DeferredMutableBuilder[Self <: Deferred[?], T] (val x: Self & Deferred[T]) extends AnyVal {
       
       @scala.inline
       def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])

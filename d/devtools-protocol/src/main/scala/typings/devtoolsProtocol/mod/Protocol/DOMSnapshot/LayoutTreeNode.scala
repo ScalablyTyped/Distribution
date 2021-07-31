@@ -4,48 +4,46 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.Rect
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutTreeNode extends StObject {
   
   /**
     * The bounding box in document coordinates. Note that scroll offset of the document is ignored.
     */
-  var boundingBox: Rect = js.native
+  var boundingBox: Rect
   
   /**
     * The index of the related DOM node in the `domNodes` array returned by `getSnapshot`.
     */
-  var domNodeIndex: integer = js.native
+  var domNodeIndex: integer
   
   /**
     * The post-layout inline text nodes, if any.
     */
-  var inlineTextNodes: js.UndefOr[js.Array[InlineTextBox]] = js.native
+  var inlineTextNodes: js.UndefOr[js.Array[InlineTextBox]] = js.undefined
   
   /**
     * Set to true to indicate the element begins a new stacking context.
     */
-  var isStackingContext: js.UndefOr[Boolean] = js.native
+  var isStackingContext: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contents of the LayoutText, if any.
     */
-  var layoutText: js.UndefOr[String] = js.native
+  var layoutText: js.UndefOr[String] = js.undefined
   
   /**
     * Global paint order index, which is determined by the stacking order of the nodes. Nodes
     * that are painted together will have the same index. Only provided if includePaintOrder in
     * getSnapshot was true.
     */
-  var paintOrder: js.UndefOr[integer] = js.native
+  var paintOrder: js.UndefOr[integer] = js.undefined
   
   /**
     * Index into the `computedStyles` array returned by `getSnapshot`.
     */
-  var styleIndex: js.UndefOr[integer] = js.native
+  var styleIndex: js.UndefOr[integer] = js.undefined
 }
 object LayoutTreeNode {
   

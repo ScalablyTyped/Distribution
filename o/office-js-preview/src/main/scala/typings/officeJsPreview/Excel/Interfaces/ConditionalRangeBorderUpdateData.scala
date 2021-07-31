@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Dot
 import typings.officeJsPreview.officeJsPreviewStrings.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalRangeBorder object, for use in `conditionalRangeBorder.set({ ... })`. */
-@js.native
 trait ConditionalRangeBorderUpdateData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ConditionalRangeBorderUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait ConditionalRangeBorderUpdateData extends StObject {
     */
   var style: js.UndefOr[
     ConditionalRangeBorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot
-  ] = js.native
+  ] = js.undefined
 }
 object ConditionalRangeBorderUpdateData {
   

@@ -2,15 +2,13 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridInlineEditing extends StObject {
   
-  var managementColumn: js.UndefOr[Boolean] = js.native
+  var managementColumn: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object GridInlineEditing {
   

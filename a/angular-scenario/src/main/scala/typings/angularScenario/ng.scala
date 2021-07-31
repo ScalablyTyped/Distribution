@@ -2,15 +2,13 @@ package typings.angularScenario
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ng {
   
-  @js.native
   trait IAngularStatic extends StObject {
     
-    var scenario: js.Any = js.native
+    var scenario: js.Any
   }
   object IAngularStatic {
     

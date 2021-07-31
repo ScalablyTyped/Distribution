@@ -2,10 +2,8 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVideoAgeGating extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaVideoAgeGating extends StObject {
     * users of legal purchasing age in a particular country, as identified by
     * ICAP, can view the content.
     */
-  var alcoholContent: js.UndefOr[Boolean] = js.native
+  var alcoholContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Age-restricted trailers. For redband trailers and adult-rated
@@ -21,12 +19,12 @@ trait SchemaVideoAgeGating extends StObject {
     * true the content is restricted to viewers aged 18+. Otherwise The field
     * won&#39;t be present.
     */
-  var restricted: js.UndefOr[Boolean] = js.native
+  var restricted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Video game rating, if any.
     */
-  var videoGameRating: js.UndefOr[String] = js.native
+  var videoGameRating: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoAgeGating {
   

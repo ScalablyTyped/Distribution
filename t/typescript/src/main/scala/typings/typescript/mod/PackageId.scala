@@ -2,10 +2,8 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackageId extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait PackageId extends StObject {
     * Should not include `@types`.
     * If accessing a non-index file, this should include its name e.g. "foo/bar".
     */
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
   /**
     * Name of a submodule within this package.
     * May be "".
     */
-  var subModuleName: java.lang.String = js.native
+  var subModuleName: java.lang.String
   
   /** Version of the package, e.g. "1.2.3" */
-  var version: java.lang.String = js.native
+  var version: java.lang.String
 }
 object PackageId {
   

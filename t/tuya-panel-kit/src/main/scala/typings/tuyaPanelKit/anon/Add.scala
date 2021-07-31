@@ -2,47 +2,45 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Add extends StObject {
   
-  def add(value1: Double, value2: Double): Double = js.native
+  def add(value1: Double, value2: Double): Double
   
-  def bytesToHexString(arr: js.Array[js.Any]): String = js.native
+  def bytesToHexString(arr: js.Array[js.Any]): String
   
-  def calcPercent(min: Double, max: Double, value: Double, offset: Double): Double = js.native
+  def calcPercent(min: Double, max: Double, value: Double, offset: Double): Double
   
-  def calcPosition(value: Double, min: Double, max: Double, newMin: Double, newMax: Double): Double = js.native
+  def calcPosition(value: Double, min: Double, max: Double, newMin: Double, newMax: Double): Double
   
-  def changeBitValue(num: Double, count: Double): Double = js.native
+  def changeBitValue(num: Double, count: Double): Double
   
-  def getBitValue(num: Double, count: Double): Double = js.native
+  def getBitValue(num: Double, count: Double): Double
   
-  def highLowToInt(high: Double, low: Double): Double = js.native
+  def highLowToInt(high: Double, low: Double): Double
   
-  def inMaxMin(min: Double, max: Double, value: Double): Double = js.native
+  def inMaxMin(min: Double, max: Double, value: Double): Double
   
-  def intToHighLow(num: Double): js.Array[js.Any] = js.native
+  def intToHighLow(num: Double): js.Array[js.Any]
   
-  def numToByteNumbers(num: Double, bytes: Double): js.Array[js.Any] = js.native
+  def numToByteNumbers(num: Double, bytes: Double): js.Array[js.Any]
   
-  def numToHexString(num: Double, padding: Double): String = js.native
+  def numToHexString(num: Double, padding: Double): String
   
-  def range(start: Double, end: Double, step: Double): js.Array[Double] = js.native
+  def range(start: Double, end: Double, step: Double): js.Array[Double]
   
-  def scaleNumber(scale: Double, value: Double): Double = js.native
+  def scaleNumber(scale: Double, value: Double): Double
   
-  def setBitValueWithOne(num: Double, count: Double): Double = js.native
+  def setBitValueWithOne(num: Double, count: Double): Double
   
-  def setBitValueWithZero(num: Double, count: Double): Double = js.native
+  def setBitValueWithZero(num: Double, count: Double): Double
   
-  def subtract(value1: Double, value2: Double): Double = js.native
+  def subtract(value1: Double, value2: Double): Double
   
-  def toFilledString(num: Double, count: Double): String = js.native
+  def toFilledString(num: Double, count: Double): String
   
-  def toFixedString(num: Double, count: Double): String = js.native
+  def toFixedString(num: Double, count: Double): String
 }
 object Add {
   

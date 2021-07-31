@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Database.ExecuteSQLRequest
 import typings.devtoolsProtocol.mod.Protocol.Database.ExecuteSQLResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeExecuteSQLResponse extends StObject {
   
-  var paramsType: js.Array[ExecuteSQLRequest] = js.native
+  var paramsType: js.Array[ExecuteSQLRequest]
   
-  var returnType: ExecuteSQLResponse = js.native
+  var returnType: ExecuteSQLResponse
 }
 object ReturnTypeExecuteSQLResponse {
   

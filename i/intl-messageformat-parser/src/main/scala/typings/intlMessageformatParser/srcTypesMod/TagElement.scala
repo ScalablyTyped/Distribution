@@ -3,19 +3,19 @@ package typings.intlMessageformatParser.srcTypesMod
 import typings.intlMessageformatParser.srcTypesMod.TYPE.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TagElement extends _MessageFormatElement {
+trait TagElement
+  extends StObject
+     with _MessageFormatElement {
   
-  var children: js.Array[MessageFormatElement] = js.native
+  var children: js.Array[MessageFormatElement]
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var `type`: tag = js.native
+  var `type`: tag
   
-  var value: String = js.native
+  var value: String
 }
 object TagElement {
   

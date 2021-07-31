@@ -2,25 +2,26 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHttpInterceptor extends StObject {
   
   var request: js.UndefOr[
     js.Function1[/* config */ IRequestConfig, IRequestConfig | IPromise[IRequestConfig]]
-  ] = js.native
+  ] = js.undefined
   
-  var requestError: js.UndefOr[js.Function1[/* rejection */ js.Any, IRequestConfig | IPromise[IRequestConfig]]] = js.native
+  var requestError: js.UndefOr[js.Function1[/* rejection */ js.Any, IRequestConfig | IPromise[IRequestConfig]]] = js.undefined
   
   var response: js.UndefOr[
-    js.Function1[/* response */ IHttpResponse[_], IPromise[IHttpResponse[_]] | IHttpResponse[_]]
-  ] = js.native
+    js.Function1[
+      /* response */ IHttpResponse[js.Any], 
+      IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]
+    ]
+  ] = js.undefined
   
   var responseError: js.UndefOr[
-    js.Function1[/* rejection */ js.Any, IPromise[IHttpResponse[_]] | IHttpResponse[_]]
-  ] = js.native
+    js.Function1[/* rejection */ js.Any, IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]]
+  ] = js.undefined
 }
 object IHttpInterceptor {
   
@@ -46,10 +47,12 @@ object IHttpInterceptor {
     def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
     @scala.inline
-    def setResponse(value: /* response */ IHttpResponse[_] => IPromise[IHttpResponse[_]] | IHttpResponse[_]): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+    def setResponse(
+      value: /* response */ IHttpResponse[js.Any] => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]
+    ): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setResponseError(value: /* rejection */ js.Any => IPromise[IHttpResponse[_]] | IHttpResponse[_]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
+    def setResponseError(value: /* rejection */ js.Any => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)

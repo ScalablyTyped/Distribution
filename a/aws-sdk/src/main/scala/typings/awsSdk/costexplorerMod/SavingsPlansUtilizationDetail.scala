@@ -2,36 +2,34 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlansUtilizationDetail extends StObject {
   
   /**
     * The total amortized commitment for a Savings Plans. Includes the sum of the upfront and recurring Savings Plans fees.
     */
-  var AmortizedCommitment: js.UndefOr[SavingsPlansAmortizedCommitment] = js.native
+  var AmortizedCommitment: js.UndefOr[SavingsPlansAmortizedCommitment] = js.undefined
   
   /**
     * The attribute that applies to a specific Dimension.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.costexplorerMod.Attributes] = js.undefined
   
   /**
     * The amount saved by using existing Savings Plans. Savings returns both net savings from savings plans as well as the onDemandCostEquivalent of the Savings Plans when considering the utilization rate.
     */
-  var Savings: js.UndefOr[SavingsPlansSavings] = js.native
+  var Savings: js.UndefOr[SavingsPlansSavings] = js.undefined
   
   /**
     * The unique Amazon Resource Name (ARN) for a particular Savings Plan.
     */
-  var SavingsPlanArn: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlanArn] = js.native
+  var SavingsPlanArn: js.UndefOr[typings.awsSdk.costexplorerMod.SavingsPlanArn] = js.undefined
   
   /**
     * A ratio of your effectiveness of using existing Savings Plans to apply to workloads that are Savings Plans eligible.
     */
-  var Utilization: js.UndefOr[SavingsPlansUtilization] = js.native
+  var Utilization: js.UndefOr[SavingsPlansUtilization] = js.undefined
 }
 object SavingsPlansUtilizationDetail {
   

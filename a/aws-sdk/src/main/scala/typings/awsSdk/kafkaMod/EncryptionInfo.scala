@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionInfo extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait EncryptionInfo extends StObject {
     The data-volume encryption details.
     
     */
-  var EncryptionAtRest: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionAtRest] = js.native
+  var EncryptionAtRest: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionAtRest] = js.undefined
   
   /**
     * 
     The details for encryption in transit.
     
     */
-  var EncryptionInTransit: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInTransit] = js.native
+  var EncryptionInTransit: js.UndefOr[typings.awsSdk.kafkaMod.EncryptionInTransit] = js.undefined
 }
 object EncryptionInfo {
   

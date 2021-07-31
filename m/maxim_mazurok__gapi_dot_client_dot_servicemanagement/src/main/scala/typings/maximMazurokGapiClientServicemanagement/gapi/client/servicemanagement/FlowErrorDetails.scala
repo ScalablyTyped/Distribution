@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowErrorDetails extends StObject {
   
   /** The type of exception (as a class name). */
-  var exceptionType: js.UndefOr[String] = js.native
+  var exceptionType: js.UndefOr[String] = js.undefined
   
   /** The step that failed. */
-  var flowStepId: js.UndefOr[String] = js.native
+  var flowStepId: js.UndefOr[String] = js.undefined
 }
 object FlowErrorDetails {
   

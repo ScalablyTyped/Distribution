@@ -4,7 +4,6 @@ import typings.typeorm.anon.End
 import typings.typeorm.anon.Revision
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "GridFSBucket")
@@ -38,10 +37,10 @@ class GridFSBucket protected () extends StObject {
     * Convenience wrapper around find on the files collection
     * @see http://mongodb.github.io/node-mongodb-native/2.1/api/GridFSBucket.html#find
     */
-  def find(): Cursor[_] = js.native
-  def find(filter: js.UndefOr[scala.Nothing], options: GridFSBucketFindOptions): Cursor[_] = js.native
-  def find(filter: js.Object): Cursor[_] = js.native
-  def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[_] = js.native
+  def find(): Cursor[js.Any] = js.native
+  def find(filter: js.Object): Cursor[js.Any] = js.native
+  def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[js.Any] = js.native
+  def find(filter: Unit, options: GridFSBucketFindOptions): Cursor[js.Any] = js.native
   
   /**
     * Returns a readable stream (GridFSBucketReadStream) for streaming file.

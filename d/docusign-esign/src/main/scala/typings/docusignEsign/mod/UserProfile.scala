@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserProfile extends StObject {
   
   /**
     * The user's address.
     */
-  var address: js.UndefOr[/* Contains address information. */ AddressInformation] = js.native
+  var address: js.UndefOr[/* Contains address information. */ AddressInformation] = js.undefined
   
   /**
     * Indicates the authentication methods that the user uses. These properties cannot be modified by the PUT operation.
@@ -20,42 +18,42 @@ trait UserProfile extends StObject {
     js.Array[
       /* Contains information about the method used for authentication. */ AuthenticationMethod
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the user's company.
     */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /**
     *  When set to **true**, the user's company and title information display on the ID card.
     */
-  var displayOrganizationInfo: js.UndefOr[String] = js.native
+  var displayOrganizationInfo: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user's address and phone number display on the ID card.
     */
-  var displayPersonalInfo: js.UndefOr[String] = js.native
+  var displayPersonalInfo: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user's ID card can be viewed from signed documents and envelope history.
     */
-  var displayProfile: js.UndefOr[String] = js.native
+  var displayProfile: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user's usage information displays on the ID card.
     */
-  var displayUsageHistory: js.UndefOr[String] = js.native
+  var displayUsageHistory: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for retrieving the user's profile image.
     */
-  var profileImageUri: js.UndefOr[String] = js.native
+  var profileImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the user.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A complex element consisting of:
@@ -66,14 +64,14 @@ trait UserProfile extends StObject {
     * - `signedCount`: The number of envelopes the user has signed.
     *
     */
-  var usageHistory: js.UndefOr[UsageHistory] = js.native
+  var usageHistory: js.UndefOr[UsageHistory] = js.undefined
   
-  var userDetails: js.UndefOr[UserInformation] = js.native
+  var userDetails: js.UndefOr[UserInformation] = js.undefined
   
   /**
     * The date and time that the user's profile was last modified.
     */
-  var userProfileLastModifiedDate: js.UndefOr[String] = js.native
+  var userProfileLastModifiedDate: js.UndefOr[String] = js.undefined
 }
 object UserProfile {
   

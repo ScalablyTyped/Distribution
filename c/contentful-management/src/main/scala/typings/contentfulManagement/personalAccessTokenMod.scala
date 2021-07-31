@@ -8,26 +8,26 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.contentfulManagementStrings.content_management_manage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object personalAccessTokenMod {
   
-  @JSImport("contentful-management/dist/typings/entities/personal-access-token", "wrapPersonalAccessToken")
+  @JSImport("contentful-management/dist/typings/entities/personal-access-token", JSImport.Namespace)
   @js.native
-  def wrapPersonalAccessToken(http: AxiosInstance, data: PersonalAccessTokenProp): PersonalAccessToken = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/personal-access-token", "wrapPersonalAccessTokenCollection")
-  @js.native
-  def wrapPersonalAccessTokenCollection(http: AxiosInstance, data: CollectionProp[PersonalAccessTokenProp]): Collection[PersonalAccessToken, PersonalAccessTokenProp] = js.native
+  @scala.inline
+  def wrapPersonalAccessToken(http: AxiosInstance, data: PersonalAccessTokenProp): PersonalAccessToken = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessToken")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[PersonalAccessToken]
+  
+  @scala.inline
+  def wrapPersonalAccessTokenCollection(http: AxiosInstance, data: CollectionProp[PersonalAccessTokenProp]): Collection[PersonalAccessToken, PersonalAccessTokenProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapPersonalAccessTokenCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[PersonalAccessToken, PersonalAccessTokenProp]]
   
   /* Inlined std.Pick<contentful-management.contentful-management/dist/typings/entities/personal-access-token.PersonalAccessToken, 'name' | 'scopes'> */
-  @js.native
   trait CreatePersonalAccessTokenProps extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var scopes: js.Array[content_management_manage] = js.native
+    var scopes: js.Array[content_management_manage]
   }
   object CreatePersonalAccessTokenProps {
     
@@ -51,9 +51,9 @@ object personalAccessTokenMod {
     }
   }
   
-  @js.native
   trait PersonalAccessToken
-    extends PersonalAccessTokenProp
+    extends StObject
+       with PersonalAccessTokenProp
        with DefaultElements[PersonalAccessTokenProp] {
     
     /**
@@ -73,7 +73,7 @@ object personalAccessTokenMod {
       *  .catch(console.error)
       * ```
       */
-    def revoke(): js.Promise[PersonalAccessToken] = js.native
+    def revoke(): js.Promise[PersonalAccessToken]
   }
   object PersonalAccessToken {
     
@@ -85,7 +85,7 @@ object personalAccessTokenMod {
       sys: MetaSysProps,
       toPlainObject: () => PersonalAccessTokenProp
     ): PersonalAccessToken = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke), scopes = scopes.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject))
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], revoke = js.Any.fromFunction0(revoke), scopes = scopes.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject), revokedAt = null)
       __obj.asInstanceOf[PersonalAccessToken]
     }
     
@@ -97,24 +97,23 @@ object personalAccessTokenMod {
     }
   }
   
-  @js.native
   trait PersonalAccessTokenProp extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var revokedAt: Null | String = js.native
+    var revokedAt: Null | String
     
-    var scopes: js.Array[content_management_manage] = js.native
+    var scopes: js.Array[content_management_manage]
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object PersonalAccessTokenProp {
     
     @scala.inline
     def apply(name: String, scopes: js.Array[content_management_manage], sys: MetaSysProps): PersonalAccessTokenProp = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], sys = sys.asInstanceOf[js.Any], revokedAt = null)
       __obj.asInstanceOf[PersonalAccessTokenProp]
     }
     

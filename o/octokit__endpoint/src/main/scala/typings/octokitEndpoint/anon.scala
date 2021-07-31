@@ -3,16 +3,15 @@ package typings.octokitEndpoint
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictx
-    extends /* x */ StringDictionary[js.UndefOr[String]] {
+    extends StObject
+       with /* x */ StringDictionary[js.UndefOr[String]] {
     
-    var q: js.UndefOr[String] = js.native
+    var q: js.UndefOr[String] = js.undefined
   }
   object Dictx {
     
@@ -33,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Expand extends StObject {
     
-    def expand(context: js.Object): String = js.native
+    def expand(context: js.Object): String
   }
   object Expand {
     

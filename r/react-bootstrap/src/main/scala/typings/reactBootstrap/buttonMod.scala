@@ -6,7 +6,6 @@ import typings.react.mod.ReactType
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonMod {
@@ -20,20 +19,21 @@ object buttonMod {
   trait Button
     extends Component[ButtonProps, js.Object, js.Any]
   
-  @js.native
-  trait ButtonProps extends HTMLProps[Button] {
+  trait ButtonProps
+    extends StObject
+       with HTMLProps[Button] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var block: js.UndefOr[Boolean] = js.native
+    var block: js.UndefOr[Boolean] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String | Null] = js.native
+    var bsStyle: js.UndefOr[String | Null] = js.undefined
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
   }
   object ButtonProps {
     
@@ -80,7 +80,7 @@ object buttonMod {
       def setBsStyleUndefined: Self = StObject.set(x, "bsStyle", js.undefined)
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

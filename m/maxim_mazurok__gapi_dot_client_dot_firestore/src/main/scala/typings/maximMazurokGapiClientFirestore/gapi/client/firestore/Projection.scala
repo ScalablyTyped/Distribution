@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Projection extends StObject {
   
   /** The fields to return. If empty, all fields are returned. To only return the name of the document, use `['__name__']`. */
-  var fields: js.UndefOr[js.Array[FieldReference]] = js.native
+  var fields: js.UndefOr[js.Array[FieldReference]] = js.undefined
 }
 object Projection {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCommandsRequest extends StObject {
   
   /**
     * An array of command IDs. If you include this parameter, DescribeCommands returns a description of the specified commands. Otherwise, it returns a description of every command.
     */
-  var CommandIds: js.UndefOr[Strings] = js.native
+  var CommandIds: js.UndefOr[Strings] = js.undefined
   
   /**
     * The deployment ID. If you include this parameter, DescribeCommands returns a description of the commands associated with the specified deployment.
     */
-  var DeploymentId: js.UndefOr[String] = js.native
+  var DeploymentId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance ID. If you include this parameter, DescribeCommands returns a description of the commands associated with the specified instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
 }
 object DescribeCommandsRequest {
   

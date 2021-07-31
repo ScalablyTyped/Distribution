@@ -2,17 +2,15 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecentlyPlayedParameterObject extends StObject {
   
-  var after: js.UndefOr[Double] = js.native
+  var after: js.UndefOr[Double] = js.undefined
   
-  var before: js.UndefOr[Double] = js.native
+  var before: js.UndefOr[Double] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object RecentlyPlayedParameterObject {
   

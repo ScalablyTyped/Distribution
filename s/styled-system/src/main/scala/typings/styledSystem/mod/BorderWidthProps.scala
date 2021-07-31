@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait BorderWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] exte
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width)
     */
-  var borderBottomWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderBottomWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-left-width CSS property sets the width of the left border of an element.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width)
     */
-  var borderLeftWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderLeftWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-right-width CSS property sets the width of the right border of an element.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width)
     */
-  var borderRightWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderRightWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-top-width CSS property sets the width of the top border of an element.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width)
     */
-  var borderTopWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderTopWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-width shorthand CSS property sets the width of all sides of an element's border.
     *
     * [MDN * reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)
     */
-  var borderWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderWidthProps {
   
@@ -52,7 +50,7 @@ object BorderWidthProps {
   }
   
   @scala.inline
-  implicit class BorderWidthPropsMutableBuilder[Self <: BorderWidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderWidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderWidthPropsMutableBuilder[Self <: BorderWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderWidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderBottomWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])

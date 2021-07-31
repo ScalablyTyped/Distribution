@@ -10,14 +10,15 @@ import typings.std.NodeList
 import typings.std.Touch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("flickity", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Flickity {
+  class ^ protected ()
+    extends StObject
+       with Flickity {
     /**
       * Initializes an new instance of Flickity .
       *
@@ -29,6 +30,9 @@ object mod {
     def this(selector: String, options: Options) = this()
     def this(selector: Element, options: Options) = this()
   }
+  @JSImport("flickity", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // static methods
   /**
@@ -37,14 +41,11 @@ object mod {
     * @param element Element selector string
     */
   /* static member */
-  @JSImport("flickity", "data")
-  @js.native
-  def data(element: String): Flickity = js.native
-  @JSImport("flickity", "data")
-  @js.native
-  def data(element: Element): Flickity = js.native
+  @scala.inline
+  def data(element: String): Flickity = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Flickity]
+  @scala.inline
+  def data(element: Element): Flickity = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[Flickity]
   
-  @js.native
   trait EventBindings extends StObject {
     
     /**
@@ -52,19 +53,19 @@ object mod {
       */
     var bgLazyLoad: js.UndefOr[
         js.Function2[/* event */ js.UndefOr[Event], /* element */ js.UndefOr[Element], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var cellSelect: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var cellSelect: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Triggered when the selected slide is changed.
       */
-    var change: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Triggered when dragging ends.
       */
-    var dragEnd: js.UndefOr[js.Function2[/* event */ Event, /* pointer */ js.UndefOr[Element | Touch], Unit]] = js.native
+    var dragEnd: js.UndefOr[js.Function2[/* event */ Event, /* pointer */ js.UndefOr[Element | Touch], Unit]] = js.undefined
     
     /**
       * Triggered when dragging moves and the slider moves.
@@ -76,31 +77,31 @@ object mod {
           /* moveVector */ js.UndefOr[X], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Triggered when dragging starts and the slider starts moving.
       */
     var dragStart: js.UndefOr[
         js.Function2[/* event */ js.UndefOr[Event], /* pointer */ js.UndefOr[Element | Touch], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Triggered after entering or exiting fullscreen view.
       */
-    var fullscreenChange: js.UndefOr[js.Function1[/* isFullscreen */ js.UndefOr[Boolean], Unit]] = js.native
+    var fullscreenChange: js.UndefOr[js.Function1[/* isFullscreen */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /**
       * Triggered after an image has been loaded with lazyLoad.
       */
     var lazyLoad: js.UndefOr[
         js.Function2[/* event */ js.UndefOr[Event], /* cellElement */ js.UndefOr[Element], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Triggered when the user's pointer (mouse, touch, pointer) presses down.
       */
-    var pointerDown: js.UndefOr[js.Function2[/* event */ Event, /* pointer */ js.UndefOr[Element | Touch], Unit]] = js.native
+    var pointerDown: js.UndefOr[js.Function2[/* event */ Event, /* pointer */ js.UndefOr[Element | Touch], Unit]] = js.undefined
     
     /**
       * Triggered when the user's pointer moves.
@@ -112,36 +113,36 @@ object mod {
           /* moveVector */ js.UndefOr[X], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Triggered when the user's pointer unpresses.
       */
     var pointerUp: js.UndefOr[
         js.Function2[/* event */ js.UndefOr[Event], /* pointer */ js.UndefOr[Element | Touch], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Triggered after Flickity has been activated.
       */
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the slider moves.
       */
-    var scroll: js.UndefOr[js.Function1[/* progress */ js.UndefOr[Double], Unit]] = js.native
+    var scroll: js.UndefOr[js.Function1[/* progress */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Triggered when a slide is selected.
       * select is triggered any time a slide is selected, even on the same slide. change is triggered only when a different slide is selected.
       * This event was previously cellSelect in Flickity v1. cellSelect will continue to work in Flickity v2.
       */
-    var select: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var select: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Triggered when the slider is settled at its end position.
       */
-    var settle: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.native
+    var settle: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * Triggered when the user's pointer is pressed and unpressed and has not moved enough to start dragging.
@@ -156,7 +157,7 @@ object mod {
           /* cellIndex */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object EventBindings {
     
@@ -331,7 +332,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def off(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
+    def off(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
     /**
       * Remove event listener
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -339,7 +340,7 @@ object mod {
       */
     def off(
       eventname: FlickityEvents,
-      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], _]
+      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]
     ): Unit = js.native
     /**
       * Remove event listener
@@ -352,7 +353,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[js.Object], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     /**
@@ -367,7 +368,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
@@ -376,7 +377,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def on(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
+    def on(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
     /**
       * bind event listener
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -384,7 +385,7 @@ object mod {
       */
     def on(
       eventname: FlickityEvents,
-      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], _]
+      callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]
     ): Unit = js.native
     /**
       * bind event listener
@@ -397,7 +398,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[X], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     /**
@@ -412,7 +413,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     
@@ -421,7 +422,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def once(eventname: String, callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], _]): Unit = js.native
+    def once(eventname: String, callback: js.Function2[js.UndefOr[Event], js.UndefOr[Element | Touch], js.Any]): Unit = js.native
     /**
       * one time event handl`er
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
@@ -433,7 +434,7 @@ object mod {
           /* event */ js.UndefOr[Event], 
           /* pointer */ js.UndefOr[Element | Touch], 
           /* moveVector */ js.UndefOr[js.Object], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     /**
@@ -448,7 +449,7 @@ object mod {
           /* pointer */ js.UndefOr[Element | Touch], 
           /* cellElement */ js.UndefOr[Element], 
           /* cellIndex */ js.UndefOr[Double], 
-          _
+          js.Any
         ]
     ): Unit = js.native
     /**
@@ -456,7 +457,7 @@ object mod {
       * @param eventName name of event  (@see Flickity.FlickityEvents class for flickity supported events)
       * @param callback callback funtion to execute when event fires
       */
-    def once(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], _]): Unit = js.native
+    def once(eventname: FlickityEvents, callback: js.Function1[js.UndefOr[Boolean | Double], js.Any]): Unit = js.native
     
     /**
       * Pauses auto-play.
@@ -521,14 +522,14 @@ object mod {
       * @param isInstant (Optional) If true, immediately view the selected cell without animation.
       */
     def select(index: Double): Unit = js.native
-    def select(index: Double, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
     def select(index: Double, isWrapped: Boolean): Unit = js.native
     def select(index: Double, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
+    def select(index: Double, isWrapped: Unit, isInstant: Boolean): Unit = js.native
     
     def selectCell(index: String): Unit = js.native
-    def selectCell(index: String, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
     def selectCell(index: String, isWrapped: Boolean): Unit = js.native
     def selectCell(index: String, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
+    def selectCell(index: String, isWrapped: Unit, isInstant: Boolean): Unit = js.native
     /**
       * Select a slide of a cell. Useful for groupCells.
       *
@@ -537,9 +538,9 @@ object mod {
       * @param isInstant If true, immediately view the selected slide without animation.
       */
     def selectCell(index: Double): Unit = js.native
-    def selectCell(index: Double, isWrapped: js.UndefOr[scala.Nothing], isInstant: Boolean): Unit = js.native
     def selectCell(index: Double, isWrapped: Boolean): Unit = js.native
     def selectCell(index: Double, isWrapped: Boolean, isInstant: Boolean): Unit = js.native
+    def selectCell(index: Double, isWrapped: Unit, isInstant: Boolean): Unit = js.native
     
     /**
       * The selected cell element.
@@ -645,7 +646,6 @@ object mod {
     def staticClick: typings.flickity.flickityStrings.staticClick = "staticClick".asInstanceOf[typings.flickity.flickityStrings.staticClick]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -653,32 +653,32 @@ object mod {
       *
       * default: true
       */
-    var accessibility: js.UndefOr[Boolean] = js.native
+    var accessibility: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Changes height of carousel to fit height of selected slide.
       */
-    var adaptiveHeight: js.UndefOr[Boolean] = js.native
+    var adaptiveHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Draws the shape of the arrows in the previous & next buttons.
       * javascript dictionary of points or path to SVG file
       */
-    var arrowShape: js.UndefOr[String | X0] = js.native
+    var arrowShape: js.UndefOr[String | X0] = js.undefined
     
     /**
       * Use one Flickity gallery as navigation for another.
       *
       * default: disabled
       */
-    var asNavFor: js.UndefOr[String | HTMLElement] = js.native
+    var asNavFor: js.UndefOr[String | HTMLElement] = js.undefined
     
     /**
       * Automatically advances to the next cell.
       *
       * default: false
       */
-    var autoPlay: js.UndefOr[Boolean | Double] = js.native
+    var autoPlay: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Loads cell background image when a cell is selected.
@@ -687,7 +687,7 @@ object mod {
       * If set to a number n, load background images in selected slide and next n slides and previous n slides.
       * bgLazyLoad requires the flickity-bg-lazyload package. This package is not included and must be installed separately.
       */
-    var bgLazyLoad: js.UndefOr[Boolean | Double] = js.native
+    var bgLazyLoad: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Align cells within the gallery element.
@@ -695,35 +695,35 @@ object mod {
       *
       * default: 'center'
       */
-    var cellAlign: js.UndefOr[String] = js.native
+    var cellAlign: js.UndefOr[String] = js.undefined
     
     /**
       * Specify selector for cell elements. cellSelector is useful if you have other elements in your gallery elements that are not cells.
       *
       * default: '.gallery-cell'
       */
-    var cellSelector: js.UndefOr[String] = js.native
+    var cellSelector: js.UndefOr[String] = js.undefined
     
     /**
       * Contains cells to gallery element to prevent excess scroll at beginning or end. Has no effect if wrapAround is enabled
       *
       * default: true
       */
-    var contain: js.UndefOr[Boolean] = js.native
+    var contain: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of pixels a mouse or touch has to move before dragging begins. Increase dragThreshold to allow for more wiggle room for vertical page scrolling on touch devices.
       *
       * default: 3
       */
-    var dragThreshold: js.UndefOr[Double] = js.native
+    var dragThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Enables dragging and flicking
       *
       * default: true
       */
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables content to be freely scrolled and flicked without aligning cells to an end position.
@@ -731,21 +731,21 @@ object mod {
       *
       * default: false
       */
-    var freeScroll: js.UndefOr[Boolean] = js.native
+    var freeScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Slows movement of slider when freeScroll: true. Higher friction makes the slider feel stickier. Lower friction makes the slider feel looser.
       *
       * default: 0.075
       */
-    var freeScrollFriction: js.UndefOr[Double] = js.native
+    var freeScrollFriction: js.UndefOr[Double] = js.undefined
     
     /**
       * Friction slows the movement of slider. Higher friction makes the slider feel stickier and less bouncy. Lower friction makes the slider feel looser and more wobbly.
       *
       * default: 0.28
       */
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
     /**
       * Groups cells together in slides. Flicking, page dots, and previous/next buttons are mapped to group slides, not individual cells.
@@ -754,25 +754,25 @@ object mod {
       * If set to a number, group cells by that number.
       * If set to a percent string, group cells that fit in the percent of the width of the carousel viewport.
       */
-    var groupCells: js.UndefOr[Boolean | Double | String] = js.native
+    var groupCells: js.UndefOr[Boolean | Double | String] = js.undefined
     
     /**
       * Enables hash navigation to select slides with links and URLs.
       * default: false
       */
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Unloaded images have no size, which can throw off cell positions. To fix this, the imagesLoaded option re-positions cells once their images have loaded.
       *
       * default: true
       */
-    var imagesLoaded: js.UndefOr[Boolean] = js.native
+    var imagesLoaded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Zero-based index of the initial selected cell.
       */
-    var initialIndex: js.UndefOr[Double] = js.native
+    var initialIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Loads cell images when a cell is selected.
@@ -782,66 +782,66 @@ object mod {
       *
       * default: false
       */
-    var lazyLoad: js.UndefOr[Boolean | Double] = js.native
+    var lazyLoad: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Bind events within Flickity's options by setting on to an Object. The object's keys should match the event names. on is useful for capturing events as Flickity is initialized, like ready
       */
-    var on: js.UndefOr[EventBindings] = js.native
+    var on: js.UndefOr[EventBindings] = js.undefined
     
     /**
       * Creates and enables paging dots.
       *
       * default: true
       */
-    var pageDots: js.UndefOr[Boolean] = js.native
+    var pageDots: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto-playing will pause when the user hovers over the carousel. Set pauseAutoPlayOnHover: false to disable this behavior.
       */
-    var pauseAutoPlayOnHover: js.UndefOr[Boolean] = js.native
+    var pauseAutoPlayOnHover: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets positioning in percent values, rather than pixel values. If your cells do not have percent widths, we recommended percentPosition: false.
       *
       * default: false
       */
-    var percentPosition: js.UndefOr[Boolean] = js.native
+    var percentPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Creates and enables previous & next buttons.
       *
       * default: true
       */
-    var prevNextButtons: js.UndefOr[Boolean] = js.native
+    var prevNextButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adjusts sizes and positions when window is resized.
       *
       * default: true
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables right-to-left layout.
       *
       * default: false
       */
-    var rightToLeft: js.UndefOr[Boolean] = js.native
+    var rightToLeft: js.UndefOr[Boolean] = js.undefined
     
     /**
       * selectedAttraction attracts the position of the slider to the selected cell. Higher attraction makes the slider move faster. Lower makes it move slower.
       *
       * default: 0.025
       */
-    var selectedAttraction: js.UndefOr[Double] = js.native
+    var selectedAttraction: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the height of the gallery to the height of the tallest cell.  Set to  false if you prefer to size the gallery with CSS, rather than using the size of cells.
       *
       * default: true
       */
-    var setGallerySize: js.UndefOr[Boolean] = js.native
+    var setGallerySize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can enable and disable Flickity with CSS. watchCSS option watches the content of :after of the gallery element. Flickity is enabled if :after content is 'flickity'.
@@ -849,14 +849,14 @@ object mod {
       *
       * default: false
       */
-    var watchCSS: js.UndefOr[Boolean | String] = js.native
+    var watchCSS: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * At the end of cells, wrap-around to the other end for infinite scrolling.
       *
       * default: false
       */
-    var wrapAround: js.UndefOr[Boolean] = js.native
+    var wrapAround: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

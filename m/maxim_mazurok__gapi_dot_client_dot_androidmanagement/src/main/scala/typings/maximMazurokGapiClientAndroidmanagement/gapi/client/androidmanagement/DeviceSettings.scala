@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSettings extends StObject {
   
   /** Whether ADB (https://developer.android.com/studio/command-line/adb.html) is enabled on the device. */
-  var adbEnabled: js.UndefOr[Boolean] = js.native
+  var adbEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether developer mode is enabled on the device. */
-  var developmentSettingsEnabled: js.UndefOr[Boolean] = js.native
+  var developmentSettingsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Encryption status from DevicePolicyManager. */
-  var encryptionStatus: js.UndefOr[String] = js.native
+  var encryptionStatus: js.UndefOr[String] = js.undefined
   
   /** Whether the device is secured with PIN/password. */
-  var isDeviceSecure: js.UndefOr[Boolean] = js.native
+  var isDeviceSecure: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the storage encryption is enabled. */
-  var isEncrypted: js.UndefOr[Boolean] = js.native
+  var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /** Whether installing apps from unknown sources is enabled. */
-  var unknownSourcesEnabled: js.UndefOr[Boolean] = js.native
+  var unknownSourcesEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether Verify Apps (Google Play Protect (https://support.google.com/googleplay/answer/2812853)) is enabled on the device. */
-  var verifyAppsEnabled: js.UndefOr[Boolean] = js.native
+  var verifyAppsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceSettings {
   

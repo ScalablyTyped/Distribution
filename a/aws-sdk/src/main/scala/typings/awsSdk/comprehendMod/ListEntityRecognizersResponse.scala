@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEntityRecognizersResponse extends StObject {
   
   /**
     * The list of properties of an entity recognizer.
     */
-  var EntityRecognizerPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EntityRecognizerPropertiesList] = js.native
+  var EntityRecognizerPropertiesList: js.UndefOr[typings.awsSdk.comprehendMod.EntityRecognizerPropertiesList] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListEntityRecognizersResponse {
   

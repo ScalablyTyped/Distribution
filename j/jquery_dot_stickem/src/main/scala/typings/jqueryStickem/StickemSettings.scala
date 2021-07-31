@@ -2,51 +2,49 @@ package typings.jqueryStickem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StickemSettings extends StObject {
   
   /**
     * selector for content container, sizes matched with `item`
     */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /**
     * css class used to apply when ending sticky
     */
-  var endStickClass: js.UndefOr[String] = js.native
+  var endStickClass: js.UndefOr[String] = js.undefined
   
   /**
     * selector for element to make sticky
     */
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
   /**
     * offset to use for the sticky element in the parent element
     */
-  var offset: js.UndefOr[Double | String] = js.native
+  var offset: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Callback to execute when in stick state
     */
-  var onStick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onStick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Callback to execute when getting out of stick state
     */
-  var onUnstick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onUnstick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * where to place sticky element
     */
-  var start: js.UndefOr[Double | String] = js.native
+  var start: js.UndefOr[Double | String] = js.undefined
   
   /**
     * css class used to apply
     */
-  var stickClass: js.UndefOr[String] = js.native
+  var stickClass: js.UndefOr[String] = js.undefined
 }
 object StickemSettings {
   

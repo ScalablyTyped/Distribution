@@ -4,15 +4,13 @@ import typings.tensorflowTfjsBackendCpu.backendCpuMod.MathBackendCPU
 import typings.tensorflowTfjsCore.kernelNamesMod.FillAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsFillAttrs extends StObject {
   
-  var attrs: FillAttrs = js.native
+  var attrs: FillAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
 }
 object AttrsFillAttrs {
   

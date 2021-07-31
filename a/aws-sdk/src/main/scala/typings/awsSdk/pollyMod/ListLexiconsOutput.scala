@@ -2,21 +2,19 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLexiconsOutput extends StObject {
   
   /**
     * A list of lexicon names and attributes.
     */
-  var Lexicons: js.UndefOr[LexiconDescriptionList] = js.native
+  var Lexicons: js.UndefOr[LexiconDescriptionList] = js.undefined
   
   /**
     * The pagination token to use in the next request to continue the listing of lexicons. NextToken is returned only if the response is truncated.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.pollyMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.pollyMod.NextToken] = js.undefined
 }
 object ListLexiconsOutput {
   

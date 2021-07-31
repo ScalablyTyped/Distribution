@@ -3,16 +3,14 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Screen extends StObject {
   
   /**
     * Layout of the whole screen.
     */
-  var screen: Layout = js.native
+  var screen: Layout
 }
 object Screen {
   

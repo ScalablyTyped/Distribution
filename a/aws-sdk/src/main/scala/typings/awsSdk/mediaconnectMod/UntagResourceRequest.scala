@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the AWS Elemental MediaConnect resource from which to delete tags.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * The keys of the tags to be removed.
     */
-  var TagKeys: listOfString = js.native
+  var TagKeys: listOfString
 }
 object UntagResourceRequest {
   

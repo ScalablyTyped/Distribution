@@ -18,7 +18,6 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.square
 import typings.wechatMiniprogram.wechatMiniprogramStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** canvas 组件的绘图上下文。CanvasContext 是旧版的接口， 新版 Canvas 2D 接口与 Web 一致。 */
@@ -471,19 +470,19 @@ trait CanvasContext extends StObject {
   def draw(): Unit = js.native
   def draw(
     /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
-  reserve: js.UndefOr[scala.Nothing],
-    /** 绘制完成后执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
-  ): Unit = js.native
-  def draw(
-    /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
   reserve: Boolean
   ): Unit = js.native
   def draw(
     /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
   reserve: Boolean,
     /** 绘制完成后执行的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
+  def draw(
+    /** 本次绘制是否接着上一次绘制。即 reserve 参数为 false，则在本次调用绘制之前 native 层会先清空画布再继续绘制；若 reserve 参数为 true，则保留当前画布上的内容，本次调用 drawCanvas 绘制的内容覆盖在上面，默认 false。 */
+  reserve: Unit,
+    /** 绘制完成后执行的回调函数 */
+  callback: js.Function1[/* repeated */ js.Any, js.Any]
   ): Unit = js.native
   
   /** [CanvasContext.drawImage(string imageResource, number sx, number sy, number sWidth, number sHeight, number dx, number dy, number dWidth, number dHeight)](https://developers.weixin.qq.com/miniprogram/dev/api/canvas/CanvasContext.drawImage.html)

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerOperatorOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait IntegerOperatorOptions extends StObject {
     * *priorityabove* and the property's name is *priorityVal*, then queries like *priorityabove:<value>* show results only where the value of the property named *priorityVal* is greater
     * than *<value>*. The operator name can only contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var greaterThanOperatorName: js.UndefOr[String] = js.native
+  var greaterThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the integer property using the less-than operator. For example, if lessThanOperatorName is *prioritybelow* and
     * the property's name is *priorityVal*, then queries like *prioritybelow:<value>* show results only where the value of the property named *priorityVal* is less than *<value>*. The
     * operator name can only contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var lessThanOperatorName: js.UndefOr[String] = js.native
+  var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the integer property. For example, if operatorName is *priority* and the property's name is *priorityVal*, then
@@ -28,7 +26,7 @@ trait IntegerOperatorOptions extends StObject {
     * an operator returns all items where *<value>* matches the value of any String properties or text within the content field for the item. The operator name can only contain lowercase
     * letters (a-z). The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object IntegerOperatorOptions {
   

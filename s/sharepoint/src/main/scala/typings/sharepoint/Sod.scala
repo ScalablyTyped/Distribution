@@ -2,25 +2,23 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sod extends StObject {
   
-  var depkeys: js.UndefOr[js.Array[String]] = js.native
+  var depkeys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var loaded: Boolean = js.native
+  var loaded: Boolean
   
-  var qfn: js.UndefOr[js.Array[_]] = js.native
+  var qfn: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var reset: js.UndefOr[Boolean] = js.native
+  var reset: js.UndefOr[Boolean] = js.undefined
   
-  var state: Sods = js.native
+  var state: Sods
   
-  var url: String = js.native
+  var url: String
 }
 object Sod {
   
@@ -49,7 +47,7 @@ object Sod {
     def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setQfn(value: js.Array[_]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
+    def setQfn(value: js.Array[js.Any]): Self = StObject.set(x, "qfn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQfnUndefined: Self = StObject.set(x, "qfn", js.undefined)

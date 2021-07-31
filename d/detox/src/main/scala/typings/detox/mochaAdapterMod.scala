@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.detox.mod.global.Detox_.Detox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mochaAdapterMod extends Shortcut {
@@ -13,14 +12,13 @@ object mochaAdapterMod extends Shortcut {
   @js.native
   val ^ : DetoxMochaAdapter = js.native
   
-  @js.native
   trait DetoxMochaAdapter extends StObject {
     
-    def afterEach(context: js.Any): js.Promise[Unit] = js.native
+    def afterEach(context: js.Any): js.Promise[Unit]
     
-    def beforeEach(context: js.Any): js.Promise[Unit] = js.native
+    def beforeEach(context: js.Any): js.Promise[Unit]
     
-    var detox: Detox = js.native
+    var detox: Detox
   }
   object DetoxMochaAdapter {
     

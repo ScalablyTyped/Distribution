@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes of basic type <angle> which can be animated. */
-@js.native
 trait SVGAnimatedAngle extends StObject {
   
-  val animVal: SVGAngle = js.native
+  val animVal: SVGAngle
   
-  val baseVal: SVGAngle = js.native
+  val baseVal: SVGAngle
 }
 object SVGAnimatedAngle {
   

@@ -2,27 +2,25 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItem extends StObject {
   
-  var ActivityId: String = js.native
+  var ActivityId: String
   
-  var Arguments: js.Object = js.native
+  var Arguments: js.Object
   
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
-  var Id: String = js.native
+  var Id: String
   
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
-  var StatusDetail: js.UndefOr[js.Object] = js.native
+  var StatusDetail: js.UndefOr[js.Object] = js.undefined
   
-  var Timestamp: js.UndefOr[String] = js.native
+  var Timestamp: js.UndefOr[String] = js.undefined
   
-  var Version: js.UndefOr[Double] = js.native
+  var Version: js.UndefOr[Double] = js.undefined
 }
 object WorkItem {
   

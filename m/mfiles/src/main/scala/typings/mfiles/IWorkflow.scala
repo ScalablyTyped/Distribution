@@ -4,23 +4,21 @@ import typings.mfiles.MFiles.MFBuiltInDocumentClass
 import typings.mfiles.MFiles.MFBuiltInObjectClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWorkflow extends StObject {
   
-  def Clone(): IWorkflow = js.native
+  def Clone(): IWorkflow
   
-  def GetAsLookup(): ILookup = js.native
+  def GetAsLookup(): ILookup
   
-  def GetAsTypedValue(): ITypedValue = js.native
+  def GetAsTypedValue(): ITypedValue
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Name: String = js.native
+  var Name: String
   
-  var ObjectClass: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double = js.native
+  var ObjectClass: MFBuiltInDocumentClass | MFBuiltInObjectClass | Double
 }
 object IWorkflow {
   

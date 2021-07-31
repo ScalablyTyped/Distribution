@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountSettingsResponse extends StObject {
   
   /**
     * Limits that are related to concurrency and code storage.
     */
-  var AccountLimit: js.UndefOr[typings.awsSdk.lambdaMod.AccountLimit] = js.native
+  var AccountLimit: js.UndefOr[typings.awsSdk.lambdaMod.AccountLimit] = js.undefined
   
   /**
     * The number of functions and amount of storage in use.
     */
-  var AccountUsage: js.UndefOr[typings.awsSdk.lambdaMod.AccountUsage] = js.native
+  var AccountUsage: js.UndefOr[typings.awsSdk.lambdaMod.AccountUsage] = js.undefined
 }
 object GetAccountSettingsResponse {
   

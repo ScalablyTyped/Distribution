@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraLarge extends StObject {
   
   /** Image link for extra large size (width of ~1280 pixels). (In LITE projection) */
-  var extraLarge: js.UndefOr[String] = js.native
+  var extraLarge: js.UndefOr[String] = js.undefined
   
   /** Image link for large size (width of ~800 pixels). (In LITE projection) */
-  var large: js.UndefOr[String] = js.native
+  var large: js.UndefOr[String] = js.undefined
   
   /** Image link for medium size (width of ~575 pixels). (In LITE projection) */
-  var medium: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.undefined
   
   /** Image link for small size (width of ~300 pixels). (In LITE projection) */
-  var small: js.UndefOr[String] = js.native
+  var small: js.UndefOr[String] = js.undefined
   
   /** Image link for small thumbnail size (width of ~80 pixels). (In LITE projection) */
-  var smallThumbnail: js.UndefOr[String] = js.native
+  var smallThumbnail: js.UndefOr[String] = js.undefined
   
   /** Image link for thumbnail size (width of ~128 pixels). (In LITE projection) */
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
 }
 object ExtraLarge {
   

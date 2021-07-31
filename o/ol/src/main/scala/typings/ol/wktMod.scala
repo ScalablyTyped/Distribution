@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wktMod {
@@ -13,10 +12,9 @@ object wktMod {
     def this(opt_options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var splitCollection: js.UndefOr[Boolean] = js.native
+    var splitCollection: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -37,14 +35,13 @@ object wktMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var position: Double = js.native
+    var position: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var value: js.UndefOr[Double | String] = js.native
+    var value: js.UndefOr[Double | String] = js.undefined
   }
   object Token {
     

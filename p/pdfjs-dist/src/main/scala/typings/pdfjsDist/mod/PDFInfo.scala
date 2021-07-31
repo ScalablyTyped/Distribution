@@ -3,18 +3,17 @@ package typings.pdfjsDist.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFInfo
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var IsAcroFormPresent: Boolean = js.native
+  var IsAcroFormPresent: Boolean
   
-  var IsXFAPresent: Boolean = js.native
+  var IsXFAPresent: Boolean
   
-  var PDFFormatVersion: String = js.native
+  var PDFFormatVersion: String
 }
 object PDFInfo {
   

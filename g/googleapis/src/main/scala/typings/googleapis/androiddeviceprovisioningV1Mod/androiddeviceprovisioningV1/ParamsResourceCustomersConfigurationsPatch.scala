@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCustomersConfigurationsPatch extends StandardParameters {
+trait ParamsResourceCustomersConfigurationsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Output only. The API resource name in the format
     * `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by
     * the server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaConfiguration] = js.native
+  var requestBody: js.UndefOr[SchemaConfiguration] = js.undefined
   
   /**
     * Required. The field mask applied to the target `Configuration` before
@@ -35,7 +35,7 @@ trait ParamsResourceCustomersConfigurationsPatch extends StandardParameters {
     * [FieldMask](/protocol-buffers/docs/reference/google.protobuf#fieldmask)
     * in the Protocol Buffers documentation.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCustomersConfigurationsPatch {
   

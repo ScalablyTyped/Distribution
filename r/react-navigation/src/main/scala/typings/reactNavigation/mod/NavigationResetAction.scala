@@ -3,22 +3,21 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashRESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationResetAction
-  extends NavigationStackAction
-     with NavigationResetActionPayload {
+  extends StObject
+     with NavigationResetActionPayload
+     with NavigationStackAction {
   
-  var `type`: NavigationSlashRESET = js.native
+  var `type`: NavigationSlashRESET
 }
 object NavigationResetAction {
   
   @scala.inline
-  def apply(actions: js.Array[NavigationNavigateAction], index: Double, `type`: NavigationSlashRESET): NavigationResetAction = {
+  def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/RESET")
     __obj.asInstanceOf[NavigationResetAction]
   }
   

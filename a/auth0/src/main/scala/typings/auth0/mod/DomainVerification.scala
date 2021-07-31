@@ -3,13 +3,13 @@ package typings.auth0.mod
 import typings.auth0.anon.Methods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainVerification extends Domain {
+trait DomainVerification
+  extends StObject
+     with Domain {
   
-  var cname_api_key: js.UndefOr[String] = js.native
+  var cname_api_key: js.UndefOr[String] = js.undefined
 }
 object DomainVerification {
   

@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
   /**
     * Valid values are `sender` and `senderAndAllRecipients`.
     */
-  var accessControl: js.UndefOr[String] = js.native
+  var accessControl: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the attachment.
     */
-  var attachmentId: js.UndefOr[String] = js.native
+  var attachmentId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of the attachment for the recipient. Possible values are:
@@ -24,12 +22,12 @@ trait Attachment extends StObject {
     * - `.htm`
     * - `.xml`
     */
-  var attachmentType: js.UndefOr[String] = js.native
+  var attachmentType: js.UndefOr[String] = js.undefined
   
   /**
     * A Base64-encoded representation of the attachment that is used to upload and download the file. File attachments may be up to 50 MB in size.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * A label for the attachment. Potential values include:
@@ -39,18 +37,18 @@ trait Attachment extends StObject {
     * - `eventNotifications`: A list of envelope-level event statuses that trigger Connect to send updates to the endpoint specified in the `url` property.
     *
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the attachment.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of a previously staged chunked upload. Using a chunked upload enables you to stage a large, chunkable temp file. You then use the `remoteUrl`
     * property to reference the chunked upload as the content in attachment and document-related requests. The `remoteUrl` property cannot be used for downloads.
     */
-  var remoteUrl: js.UndefOr[String] = js.native
+  var remoteUrl: js.UndefOr[String] = js.undefined
 }
 object Attachment {
   

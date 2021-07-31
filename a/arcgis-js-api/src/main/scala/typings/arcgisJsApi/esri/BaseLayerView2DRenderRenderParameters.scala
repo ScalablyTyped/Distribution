@@ -5,32 +5,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseLayerView2DRenderRenderParameters extends Object {
+trait BaseLayerView2DRenderRenderParameters
+  extends StObject
+     with Object {
   
   /**
     * The [canvas 2D context](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) in which to draw content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#render)
     */
-  var context: CanvasRenderingContext2D = js.native
+  var context: CanvasRenderingContext2D
   
   /**
     * The object that describes view state.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#render)
     */
-  var state: ViewState = js.native
+  var state: ViewState
   
   /**
     * The stationary state of the `MapView`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#render)
     */
-  var stationary: Boolean = js.native
+  var stationary: Boolean
 }
 object BaseLayerView2DRenderRenderParameters {
   

@@ -55,148 +55,146 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined petit-dom.petit-dom.PetitDom.Props<std.SVGCircleElement> & {  content :petit-dom.petit-dom.PetitDom.Content | std.ReadonlyArray<petit-dom.petit-dom.PetitDom.Content> | undefined} */
-@js.native
 trait PropsSVGCircleElementcont extends StObject {
   
-  var ATTRIBUTE_NODE: js.UndefOr[Double] = js.native
+  var ATTRIBUTE_NODE: js.UndefOr[Double] = js.undefined
   
-  var CDATA_SECTION_NODE: js.UndefOr[Double] = js.native
+  var CDATA_SECTION_NODE: js.UndefOr[Double] = js.undefined
   
-  var COMMENT_NODE: js.UndefOr[Double] = js.native
+  var COMMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.undefined
   
-  var ELEMENT_NODE: js.UndefOr[Double] = js.native
+  var ELEMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var ENTITY_NODE: js.UndefOr[Double] = js.native
+  var ENTITY_NODE: js.UndefOr[Double] = js.undefined
   
-  var ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.native
+  var ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.undefined
   
-  var NOTATION_NODE: js.UndefOr[Double] = js.native
+  var NOTATION_NODE: js.UndefOr[Double] = js.undefined
   
-  var PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.native
+  var PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.undefined
   
-  var TEXT_NODE: js.UndefOr[Double] = js.native
+  var TEXT_NODE: js.UndefOr[Double] = js.undefined
   
   var addEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var after: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var after: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var animate: js.UndefOr[js.Function0[Animation]] = js.native
+  var animate: js.UndefOr[js.Function0[Animation]] = js.undefined
   
-  var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.native
+  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
   
-  var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.native
+  var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
   
-  var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.native
+  var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.undefined
   
-  var attributes: js.UndefOr[NamedNodeMap] = js.native
+  var attributes: js.UndefOr[NamedNodeMap] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.undefined
   
-  var baseURI: js.UndefOr[String] = js.native
+  var baseURI: js.UndefOr[String] = js.undefined
   
-  var before: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var before: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var blur: js.UndefOr[js.Function0[Unit]] = js.native
+  var blur: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var childElementCount: js.UndefOr[Double] = js.native
+  var childElementCount: js.UndefOr[Double] = js.undefined
   
-  var childNodes: js.UndefOr[NodeListOf[ChildNode]] = js.native
+  var childNodes: js.UndefOr[NodeListOf[ChildNode]] = js.undefined
   
-  var children: js.UndefOr[HTMLCollection] = js.native
+  var children: js.UndefOr[HTMLCollection] = js.undefined
   
-  var classList: js.UndefOr[DOMTokenList] = js.native
+  var classList: js.UndefOr[DOMTokenList] = js.undefined
   
-  var className: js.UndefOr[js.Any] = js.native
+  var className: js.UndefOr[js.Any] = js.undefined
   
-  var clientHeight: js.UndefOr[Double] = js.native
+  var clientHeight: js.UndefOr[Double] = js.undefined
   
-  var clientLeft: js.UndefOr[Double] = js.native
+  var clientLeft: js.UndefOr[Double] = js.undefined
   
-  var clientTop: js.UndefOr[Double] = js.native
+  var clientTop: js.UndefOr[Double] = js.undefined
   
-  var clientWidth: js.UndefOr[Double] = js.native
+  var clientWidth: js.UndefOr[Double] = js.undefined
   
-  var cloneNode: js.UndefOr[js.Function0[Node]] = js.native
+  var cloneNode: js.UndefOr[js.Function0[Node]] = js.undefined
   
-  var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.native
+  var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
   
-  var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.native
+  var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.undefined
   
-  var contains: js.UndefOr[js.Function0[Boolean]] = js.native
+  var contains: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var content: js.UndefOr[Content | js.Array[Content]] = js.native
+  var content: js.UndefOr[Content | js.Array[Content]] = js.undefined
   
-  var correspondingElement: js.UndefOr[SVGElement] = js.native
+  var correspondingElement: js.UndefOr[SVGElement] = js.undefined
   
-  var correspondingUseElement: js.UndefOr[SVGUseElement] = js.native
+  var correspondingUseElement: js.UndefOr[SVGUseElement] = js.undefined
   
-  var cx: js.UndefOr[SVGAnimatedLength] = js.native
+  var cx: js.UndefOr[SVGAnimatedLength] = js.undefined
   
-  var cy: js.UndefOr[SVGAnimatedLength] = js.native
+  var cy: js.UndefOr[SVGAnimatedLength] = js.undefined
   
-  var dataset: js.UndefOr[DOMStringMap] = js.native
+  var dataset: js.UndefOr[DOMStringMap] = js.undefined
   
-  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event, Boolean]] = js.native
+  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event, Boolean]] = js.undefined
   
-  var firstChild: js.UndefOr[ChildNode | Null] = js.native
+  var firstChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var firstElementChild: js.UndefOr[Element | Null] = js.native
+  var firstElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  var focus: js.UndefOr[js.Function0[Unit]] = js.native
+  var focus: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var getAnimations: js.UndefOr[js.Function0[js.Array[Animation]]] = js.native
+  var getAnimations: js.UndefOr[js.Function0[js.Array[Animation]]] = js.undefined
   
-  var getAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, String | Null]] = js.native
+  var getAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, String | Null]] = js.undefined
   
-  var getAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, String | Null]] = js.native
+  var getAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, String | Null]] = js.undefined
   
-  var getAttributeNames: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+  var getAttributeNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
   
-  var getAttributeNode: js.UndefOr[js.Function1[/* qualifiedName */ String, Attr | Null]] = js.native
+  var getAttributeNode: js.UndefOr[js.Function1[/* qualifiedName */ String, Attr | Null]] = js.undefined
   
-  var getAttributeNodeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Attr | Null]] = js.native
+  var getAttributeNodeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Attr | Null]] = js.undefined
   
-  var getBBox: js.UndefOr[js.Function0[DOMRect]] = js.native
+  var getBBox: js.UndefOr[js.Function0[DOMRect]] = js.undefined
   
-  var getBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.native
+  var getBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
   
-  var getCTM: js.UndefOr[js.Function0[DOMMatrix | Null]] = js.native
+  var getCTM: js.UndefOr[js.Function0[DOMMatrix | Null]] = js.undefined
   
-  var getClientRects: js.UndefOr[js.Function0[DOMRectList]] = js.native
+  var getClientRects: js.UndefOr[js.Function0[DOMRectList]] = js.undefined
   
-  var getElementsByClassName: js.UndefOr[js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]] = js.native
+  var getElementsByClassName: js.UndefOr[js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]] = js.undefined
   
-  var getElementsByTagName: js.UndefOr[js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]] = js.native
+  var getElementsByTagName: js.UndefOr[js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]] = js.undefined
   
   var getElementsByTagNameNS: js.UndefOr[
     js.Function2[
@@ -204,373 +202,381 @@ trait PropsSVGCircleElementcont extends StObject {
       /* localName */ String, 
       HTMLCollectionOf[HTMLElement]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var getPointAtLength: js.UndefOr[js.Function1[/* distance */ Double, DOMPoint]] = js.native
+  var getPointAtLength: js.UndefOr[js.Function1[/* distance */ Double, DOMPoint]] = js.undefined
   
-  var getRootNode: js.UndefOr[js.Function0[Node]] = js.native
+  var getRootNode: js.UndefOr[js.Function0[Node]] = js.undefined
   
-  var getScreenCTM: js.UndefOr[js.Function0[DOMMatrix | Null]] = js.native
+  var getScreenCTM: js.UndefOr[js.Function0[DOMMatrix | Null]] = js.undefined
   
-  var getTotalLength: js.UndefOr[js.Function0[Double]] = js.native
+  var getTotalLength: js.UndefOr[js.Function0[Double]] = js.undefined
   
-  var hasAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.native
+  var hasAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.undefined
   
-  var hasAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Boolean]] = js.native
+  var hasAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Boolean]] = js.undefined
   
-  var hasAttributes: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasAttributes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var hasPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Boolean]] = js.native
+  var hasPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Boolean]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var innerHTML: js.UndefOr[String] = js.native
+  var innerHTML: js.UndefOr[String] = js.undefined
   
   var insertAdjacentElement: js.UndefOr[
     js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null]
-  ] = js.native
+  ] = js.undefined
   
-  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.native
+  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.undefined
   
-  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.native
+  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.undefined
   
-  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.native
+  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
   
-  var isConnected: js.UndefOr[Boolean] = js.native
+  var isConnected: js.UndefOr[Boolean] = js.undefined
   
-  var isDefaultNamespace: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDefaultNamespace: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isEqualNode: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isEqualNode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isPointInFill: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isPointInFill: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isPointInStroke: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isPointInStroke: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isSameNode: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isSameNode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var lastChild: js.UndefOr[ChildNode | Null] = js.native
+  var lastChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var lastElementChild: js.UndefOr[Element | Null] = js.native
+  var lastElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  var localName: js.UndefOr[String] = js.native
+  var localName: js.UndefOr[String] = js.undefined
   
-  var lookupNamespaceURI: js.UndefOr[js.Function0[String | Null]] = js.native
+  var lookupNamespaceURI: js.UndefOr[js.Function0[String | Null]] = js.undefined
   
-  var lookupPrefix: js.UndefOr[js.Function0[String | Null]] = js.native
+  var lookupPrefix: js.UndefOr[js.Function0[String | Null]] = js.undefined
   
-  var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.native
+  var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
   
-  var msGetRegionContent: js.UndefOr[js.Function0[_]] = js.native
+  var msGetRegionContent: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var namespaceURI: js.UndefOr[String | Null] = js.native
+  var namespaceURI: js.UndefOr[String | Null] = js.undefined
   
-  var nextElementSibling: js.UndefOr[Element | Null] = js.native
+  var nextElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  var nextSibling: js.UndefOr[ChildNode | Null] = js.native
+  var nextSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var nodeName: js.UndefOr[String] = js.native
+  var nodeName: js.UndefOr[String] = js.undefined
   
-  var nodeType: js.UndefOr[Double] = js.native
+  var nodeType: js.UndefOr[Double] = js.undefined
   
-  var nodeValue: js.UndefOr[String | Null] = js.native
+  var nodeValue: js.UndefOr[String | Null] = js.undefined
   
-  var nonce: js.UndefOr[String] = js.native
+  var nonce: js.UndefOr[String] = js.undefined
   
-  var normalize: js.UndefOr[js.Function0[Unit]] = js.native
+  var normalize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+  var onabort: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
   
-  var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  var onanimationcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  var onanimationend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  var onanimationiteration: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, _]) | Null] = js.native
+  var onanimationstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ AnimationEvent, js.Any]) | Null] = js.undefined
   
-  var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onauxclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+  var onblur: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
   
-  var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oncanplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oncanplaythrough: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onclose: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondrag: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondragend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondragenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var ondragexit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondragleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondragover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondragstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, _]) | Null] = js.native
+  var ondrop: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ DragEvent, js.Any]) | Null] = js.undefined
   
-  var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var ondurationchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onemptied: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onended: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onerror: js.UndefOr[OnErrorEventHandler] = js.native
+  var onerror: js.UndefOr[OnErrorEventHandler] = js.undefined
   
-  var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, _]) | Null] = js.native
+  var onfocus: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ FocusEvent, js.Any]) | Null] = js.undefined
   
-  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var ongotpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oninput: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var oninvalid: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  var onkeydown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  var onkeypress: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, _]) | Null] = js.native
+  var onkeyup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ KeyboardEvent, js.Any]) | Null] = js.undefined
   
-  var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onload: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onloadeddata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onloadedmetadata: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onloadstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onlostpointercapture: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmousedown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmouseenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmouseleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmousemove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmouseout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, _]) | Null] = js.native
+  var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, js.Any]) | Null] = js.undefined
   
-  var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, _]) | Null] = js.native
+  var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, js.Any]) | Null] = js.undefined
   
-  var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onplay: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onplaying: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointercancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerdown: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerenter: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerleave: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointermove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerout: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
-  var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, _]) | Null] = js.native
+  var onpointerup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ PointerEvent, js.Any]) | Null] = js.undefined
   
   var onprogress: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], _]) | Null
-  ] = js.native
+    (js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent[EventTarget], js.Any]) | Null
+  ] = js.undefined
   
-  var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onratechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onreset: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | Null] = js.native
+  var onresize: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, js.Any]) | Null] = js.undefined
   
-  var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onscroll: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
   var onsecuritypolicyviolation: js.UndefOr[
-    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]) | Null
-  ] = js.native
+    (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, js.Any]) | Null
+  ] = js.undefined
   
-  var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onseeked: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onseeking: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onselect: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onselectionchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onselectstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onstalled: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onsubmit: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onsuspend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var ontimeupdate: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var ontoggle: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchcancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchmove: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, _]) | Null] = js.native
+  var ontouchstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TouchEvent, js.Any]) | Null] = js.undefined
   
-  var ontransitioncancel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  var ontransitioncancel: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  var ontransitionend: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  var ontransitionend: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  var ontransitionrun: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  var ontransitionrun: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  var ontransitionstart: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, _]) | Null] = js.native
+  var ontransitionstart: js.UndefOr[
+    (js.ThisFunction1[/* this */ this.type, /* ev */ TransitionEvent, js.Any]) | Null
+  ] = js.undefined
   
-  var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onvolumechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onwaiting: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _]) | Null] = js.native
+  var onwheel: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, js.Any]) | Null] = js.undefined
   
-  var outerHTML: js.UndefOr[String] = js.native
+  var outerHTML: js.UndefOr[String] = js.undefined
   
-  var ownerDocument: js.UndefOr[Document] = js.native
+  var ownerDocument: js.UndefOr[Document] = js.undefined
   
-  var ownerSVGElement: js.UndefOr[SVGSVGElement | Null] = js.native
+  var ownerSVGElement: js.UndefOr[SVGSVGElement | Null] = js.undefined
   
-  var parentElement: js.UndefOr[HTMLElement | Null] = js.native
+  var parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  var parentNode: js.UndefOr[(Node with ParentNode) | Null] = js.native
+  var parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
   
-  var pathLength: js.UndefOr[SVGAnimatedNumber] = js.native
+  var pathLength: js.UndefOr[SVGAnimatedNumber] = js.undefined
   
-  var prefix: js.UndefOr[String | Null] = js.native
+  var prefix: js.UndefOr[String | Null] = js.undefined
   
-  var prepend: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var prepend: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var previousElementSibling: js.UndefOr[Element | Null] = js.native
+  var previousElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  var previousSibling: js.UndefOr[ChildNode | Null] = js.native
+  var previousSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var querySelector: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.native
+  var querySelector: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
   
-  var querySelectorAll: js.UndefOr[js.Function1[a, NodeListOf[HTMLAnchorElement]]] = js.native
+  var querySelectorAll: js.UndefOr[js.Function1[a, NodeListOf[HTMLAnchorElement]]] = js.undefined
   
-  var r: js.UndefOr[SVGAnimatedLength] = js.native
+  var r: js.UndefOr[SVGAnimatedLength] = js.undefined
   
-  var releasePointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.native
+  var releasePointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function0[Unit]] = js.native
+  var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var removeAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Unit]] = js.native
+  var removeAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Unit]] = js.undefined
   
-  var removeAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Unit]] = js.native
+  var removeAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Unit]] = js.undefined
   
-  var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.native
+  var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.undefined
   
-  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.native
+  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.undefined
   
   var removeEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.native
+  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.undefined
   
-  var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var requestFullscreen: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var requestFullscreen: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
-  var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.native
+  var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var requiredExtensions: js.UndefOr[SVGStringList] = js.native
+  var requiredExtensions: js.UndefOr[SVGStringList] = js.undefined
   
-  var scroll: js.UndefOr[js.Function0[Unit]] = js.native
+  var scroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollBy: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollBy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollHeight: js.UndefOr[Double] = js.native
+  var scrollHeight: js.UndefOr[Double] = js.undefined
   
-  var scrollIntoView: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollIntoView: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
-  var scrollTo: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollTo: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
-  var scrollWidth: js.UndefOr[Double] = js.native
+  var scrollWidth: js.UndefOr[Double] = js.undefined
   
-  var setAttribute: js.UndefOr[js.Function2[/* qualifiedName */ String, /* value */ String, Unit]] = js.native
+  var setAttribute: js.UndefOr[js.Function2[/* qualifiedName */ String, /* value */ String, Unit]] = js.undefined
   
   var setAttributeNS: js.UndefOr[
     js.Function3[/* namespace */ String, /* qualifiedName */ String, /* value */ String, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var setAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.native
+  var setAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.undefined
   
-  var setAttributeNodeNS: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.native
+  var setAttributeNodeNS: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.undefined
   
-  var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.native
+  var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.undefined
   
-  var shadowRoot: js.UndefOr[ShadowRoot | Null] = js.native
+  var shadowRoot: js.UndefOr[ShadowRoot | Null] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSStyleDeclaration] = js.native
+  var style: js.UndefOr[CSSStyleDeclaration] = js.undefined
   
-  var systemLanguage: js.UndefOr[SVGStringList] = js.native
+  var systemLanguage: js.UndefOr[SVGStringList] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
-  var textContent: js.UndefOr[String | Null] = js.native
+  var textContent: js.UndefOr[String | Null] = js.undefined
   
-  var toggleAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.native
+  var toggleAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.undefined
   
-  var transform: js.UndefOr[SVGAnimatedTransformList] = js.native
+  var transform: js.UndefOr[SVGAnimatedTransformList] = js.undefined
   
-  var viewportElement: js.UndefOr[SVGElement | Null] = js.native
+  var viewportElement: js.UndefOr[SVGElement | Null] = js.undefined
   
-  var webkitMatchesSelector: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.native
+  var webkitMatchesSelector: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
 }
 object PropsSVGCircleElementcont {
   
@@ -591,7 +597,7 @@ object PropsSVGCircleElementcont {
     
     @scala.inline
     def setAddEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -1152,7 +1158,7 @@ object PropsSVGCircleElementcont {
     def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def setMsGetRegionContent(value: () => _): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
+    def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
     
     @scala.inline
     def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
@@ -1224,7 +1230,7 @@ object PropsSVGCircleElementcont {
     def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def setOnabort(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ UIEvent, _]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+    def setOnabort(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnabortNull: Self = StObject.set(x, "onabort", null)
@@ -1233,7 +1239,7 @@ object PropsSVGCircleElementcont {
     def setOnabortUndefined: Self = StObject.set(x, "onabort", js.undefined)
     
     @scala.inline
-    def setOnanimationcancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
+    def setOnanimationcancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationcancelNull: Self = StObject.set(x, "onanimationcancel", null)
@@ -1242,7 +1248,7 @@ object PropsSVGCircleElementcont {
     def setOnanimationcancelUndefined: Self = StObject.set(x, "onanimationcancel", js.undefined)
     
     @scala.inline
-    def setOnanimationend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
+    def setOnanimationend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationendNull: Self = StObject.set(x, "onanimationend", null)
@@ -1251,7 +1257,7 @@ object PropsSVGCircleElementcont {
     def setOnanimationendUndefined: Self = StObject.set(x, "onanimationend", js.undefined)
     
     @scala.inline
-    def setOnanimationiteration(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
+    def setOnanimationiteration(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationiteration", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationiterationNull: Self = StObject.set(x, "onanimationiteration", null)
@@ -1260,7 +1266,7 @@ object PropsSVGCircleElementcont {
     def setOnanimationiterationUndefined: Self = StObject.set(x, "onanimationiteration", js.undefined)
     
     @scala.inline
-    def setOnanimationstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, _]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
+    def setOnanimationstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ AnimationEvent, js.Any]): Self = StObject.set(x, "onanimationstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnanimationstartNull: Self = StObject.set(x, "onanimationstart", null)
@@ -1269,7 +1275,7 @@ object PropsSVGCircleElementcont {
     def setOnanimationstartUndefined: Self = StObject.set(x, "onanimationstart", js.undefined)
     
     @scala.inline
-    def setOnauxclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
+    def setOnauxclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onauxclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnauxclickNull: Self = StObject.set(x, "onauxclick", null)
@@ -1278,7 +1284,7 @@ object PropsSVGCircleElementcont {
     def setOnauxclickUndefined: Self = StObject.set(x, "onauxclick", js.undefined)
     
     @scala.inline
-    def setOnblur(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    def setOnblur(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnblurNull: Self = StObject.set(x, "onblur", null)
@@ -1287,7 +1293,7 @@ object PropsSVGCircleElementcont {
     def setOnblurUndefined: Self = StObject.set(x, "onblur", js.undefined)
     
     @scala.inline
-    def setOncancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
+    def setOncancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncancelNull: Self = StObject.set(x, "oncancel", null)
@@ -1296,7 +1302,7 @@ object PropsSVGCircleElementcont {
     def setOncancelUndefined: Self = StObject.set(x, "oncancel", js.undefined)
     
     @scala.inline
-    def setOncanplay(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
+    def setOncanplay(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncanplayNull: Self = StObject.set(x, "oncanplay", null)
@@ -1305,7 +1311,7 @@ object PropsSVGCircleElementcont {
     def setOncanplayUndefined: Self = StObject.set(x, "oncanplay", js.undefined)
     
     @scala.inline
-    def setOncanplaythrough(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
+    def setOncanplaythrough(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncanplaythrough", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncanplaythroughNull: Self = StObject.set(x, "oncanplaythrough", null)
@@ -1314,7 +1320,7 @@ object PropsSVGCircleElementcont {
     def setOncanplaythroughUndefined: Self = StObject.set(x, "oncanplaythrough", js.undefined)
     
     @scala.inline
-    def setOnchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
+    def setOnchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnchangeNull: Self = StObject.set(x, "onchange", null)
@@ -1323,7 +1329,7 @@ object PropsSVGCircleElementcont {
     def setOnchangeUndefined: Self = StObject.set(x, "onchange", js.undefined)
     
     @scala.inline
-    def setOnclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    def setOnclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnclickNull: Self = StObject.set(x, "onclick", null)
@@ -1332,7 +1338,7 @@ object PropsSVGCircleElementcont {
     def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
     @scala.inline
-    def setOnclose(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
+    def setOnclose(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onclose", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncloseNull: Self = StObject.set(x, "onclose", null)
@@ -1341,7 +1347,7 @@ object PropsSVGCircleElementcont {
     def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
     @scala.inline
-    def setOncontextmenu(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+    def setOncontextmenu(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncontextmenuNull: Self = StObject.set(x, "oncontextmenu", null)
@@ -1350,7 +1356,7 @@ object PropsSVGCircleElementcont {
     def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
     
     @scala.inline
-    def setOncopy(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+    def setOncopy(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncopyNull: Self = StObject.set(x, "oncopy", null)
@@ -1359,7 +1365,7 @@ object PropsSVGCircleElementcont {
     def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
     
     @scala.inline
-    def setOncuechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
+    def setOncuechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncuechangeNull: Self = StObject.set(x, "oncuechange", null)
@@ -1368,7 +1374,7 @@ object PropsSVGCircleElementcont {
     def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
     
     @scala.inline
-    def setOncut(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+    def setOncut(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOncutNull: Self = StObject.set(x, "oncut", null)
@@ -1377,7 +1383,7 @@ object PropsSVGCircleElementcont {
     def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
     
     @scala.inline
-    def setOndblclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+    def setOndblclick(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndblclickNull: Self = StObject.set(x, "ondblclick", null)
@@ -1386,7 +1392,7 @@ object PropsSVGCircleElementcont {
     def setOndblclickUndefined: Self = StObject.set(x, "ondblclick", js.undefined)
     
     @scala.inline
-    def setOndrag(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    def setOndrag(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragNull: Self = StObject.set(x, "ondrag", null)
@@ -1395,7 +1401,7 @@ object PropsSVGCircleElementcont {
     def setOndragUndefined: Self = StObject.set(x, "ondrag", js.undefined)
     
     @scala.inline
-    def setOndragend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    def setOndragend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragendNull: Self = StObject.set(x, "ondragend", null)
@@ -1404,7 +1410,7 @@ object PropsSVGCircleElementcont {
     def setOndragendUndefined: Self = StObject.set(x, "ondragend", js.undefined)
     
     @scala.inline
-    def setOndragenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
+    def setOndragenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragenterNull: Self = StObject.set(x, "ondragenter", null)
@@ -1413,7 +1419,7 @@ object PropsSVGCircleElementcont {
     def setOndragenterUndefined: Self = StObject.set(x, "ondragenter", js.undefined)
     
     @scala.inline
-    def setOndragexit(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
+    def setOndragexit(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondragexit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragexitNull: Self = StObject.set(x, "ondragexit", null)
@@ -1422,7 +1428,7 @@ object PropsSVGCircleElementcont {
     def setOndragexitUndefined: Self = StObject.set(x, "ondragexit", js.undefined)
     
     @scala.inline
-    def setOndragleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
+    def setOndragleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragleaveNull: Self = StObject.set(x, "ondragleave", null)
@@ -1431,7 +1437,7 @@ object PropsSVGCircleElementcont {
     def setOndragleaveUndefined: Self = StObject.set(x, "ondragleave", js.undefined)
     
     @scala.inline
-    def setOndragover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
+    def setOndragover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragoverNull: Self = StObject.set(x, "ondragover", null)
@@ -1440,7 +1446,7 @@ object PropsSVGCircleElementcont {
     def setOndragoverUndefined: Self = StObject.set(x, "ondragover", js.undefined)
     
     @scala.inline
-    def setOndragstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+    def setOndragstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndragstartNull: Self = StObject.set(x, "ondragstart", null)
@@ -1449,7 +1455,7 @@ object PropsSVGCircleElementcont {
     def setOndragstartUndefined: Self = StObject.set(x, "ondragstart", js.undefined)
     
     @scala.inline
-    def setOndrop(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, _]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
+    def setOndrop(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "ondrop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndropNull: Self = StObject.set(x, "ondrop", null)
@@ -1458,7 +1464,7 @@ object PropsSVGCircleElementcont {
     def setOndropUndefined: Self = StObject.set(x, "ondrop", js.undefined)
     
     @scala.inline
-    def setOndurationchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
+    def setOndurationchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "ondurationchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOndurationchangeNull: Self = StObject.set(x, "ondurationchange", null)
@@ -1467,7 +1473,7 @@ object PropsSVGCircleElementcont {
     def setOndurationchangeUndefined: Self = StObject.set(x, "ondurationchange", js.undefined)
     
     @scala.inline
-    def setOnemptied(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
+    def setOnemptied(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onemptied", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnemptiedNull: Self = StObject.set(x, "onemptied", null)
@@ -1476,7 +1482,7 @@ object PropsSVGCircleElementcont {
     def setOnemptiedUndefined: Self = StObject.set(x, "onemptied", js.undefined)
     
     @scala.inline
-    def setOnended(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
+    def setOnended(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onended", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnendedNull: Self = StObject.set(x, "onended", null)
@@ -1496,7 +1502,7 @@ object PropsSVGCircleElementcont {
     def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
     
     @scala.inline
-    def setOnfocus(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ FocusEvent, _]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    def setOnfocus(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfocusNull: Self = StObject.set(x, "onfocus", null)
@@ -1505,7 +1511,7 @@ object PropsSVGCircleElementcont {
     def setOnfocusUndefined: Self = StObject.set(x, "onfocus", js.undefined)
     
     @scala.inline
-    def setOnfullscreenchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+    def setOnfullscreenchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
@@ -1514,7 +1520,7 @@ object PropsSVGCircleElementcont {
     def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
     @scala.inline
-    def setOnfullscreenerror(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+    def setOnfullscreenerror(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
@@ -1523,7 +1529,7 @@ object PropsSVGCircleElementcont {
     def setOnfullscreenerrorUndefined: Self = StObject.set(x, "onfullscreenerror", js.undefined)
     
     @scala.inline
-    def setOngotpointercapture(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
+    def setOngotpointercapture(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "ongotpointercapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOngotpointercaptureNull: Self = StObject.set(x, "ongotpointercapture", null)
@@ -1532,7 +1538,7 @@ object PropsSVGCircleElementcont {
     def setOngotpointercaptureUndefined: Self = StObject.set(x, "ongotpointercapture", js.undefined)
     
     @scala.inline
-    def setOninput(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
+    def setOninput(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninput", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOninputNull: Self = StObject.set(x, "oninput", null)
@@ -1541,7 +1547,7 @@ object PropsSVGCircleElementcont {
     def setOninputUndefined: Self = StObject.set(x, "oninput", js.undefined)
     
     @scala.inline
-    def setOninvalid(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
+    def setOninvalid(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "oninvalid", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOninvalidNull: Self = StObject.set(x, "oninvalid", null)
@@ -1550,7 +1556,7 @@ object PropsSVGCircleElementcont {
     def setOninvalidUndefined: Self = StObject.set(x, "oninvalid", js.undefined)
     
     @scala.inline
-    def setOnkeydown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
+    def setOnkeydown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeydown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeydownNull: Self = StObject.set(x, "onkeydown", null)
@@ -1559,7 +1565,7 @@ object PropsSVGCircleElementcont {
     def setOnkeydownUndefined: Self = StObject.set(x, "onkeydown", js.undefined)
     
     @scala.inline
-    def setOnkeypress(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
+    def setOnkeypress(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeypress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeypressNull: Self = StObject.set(x, "onkeypress", null)
@@ -1568,7 +1574,7 @@ object PropsSVGCircleElementcont {
     def setOnkeypressUndefined: Self = StObject.set(x, "onkeypress", js.undefined)
     
     @scala.inline
-    def setOnkeyup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
+    def setOnkeyup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onkeyup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnkeyupNull: Self = StObject.set(x, "onkeyup", null)
@@ -1577,7 +1583,7 @@ object PropsSVGCircleElementcont {
     def setOnkeyupUndefined: Self = StObject.set(x, "onkeyup", js.undefined)
     
     @scala.inline
-    def setOnload(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    def setOnload(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadNull: Self = StObject.set(x, "onload", null)
@@ -1586,7 +1592,7 @@ object PropsSVGCircleElementcont {
     def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
     @scala.inline
-    def setOnloadeddata(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
+    def setOnloadeddata(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadeddata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadeddataNull: Self = StObject.set(x, "onloadeddata", null)
@@ -1595,7 +1601,7 @@ object PropsSVGCircleElementcont {
     def setOnloadeddataUndefined: Self = StObject.set(x, "onloadeddata", js.undefined)
     
     @scala.inline
-    def setOnloadedmetadata(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
+    def setOnloadedmetadata(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadedmetadata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadedmetadataNull: Self = StObject.set(x, "onloadedmetadata", null)
@@ -1604,7 +1610,7 @@ object PropsSVGCircleElementcont {
     def setOnloadedmetadataUndefined: Self = StObject.set(x, "onloadedmetadata", js.undefined)
     
     @scala.inline
-    def setOnloadstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
+    def setOnloadstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onloadstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnloadstartNull: Self = StObject.set(x, "onloadstart", null)
@@ -1613,7 +1619,7 @@ object PropsSVGCircleElementcont {
     def setOnloadstartUndefined: Self = StObject.set(x, "onloadstart", js.undefined)
     
     @scala.inline
-    def setOnlostpointercapture(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
+    def setOnlostpointercapture(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onlostpointercapture", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnlostpointercaptureNull: Self = StObject.set(x, "onlostpointercapture", null)
@@ -1622,7 +1628,7 @@ object PropsSVGCircleElementcont {
     def setOnlostpointercaptureUndefined: Self = StObject.set(x, "onlostpointercapture", js.undefined)
     
     @scala.inline
-    def setOnmousedown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+    def setOnmousedown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmousedownNull: Self = StObject.set(x, "onmousedown", null)
@@ -1631,7 +1637,7 @@ object PropsSVGCircleElementcont {
     def setOnmousedownUndefined: Self = StObject.set(x, "onmousedown", js.undefined)
     
     @scala.inline
-    def setOnmouseenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
+    def setOnmouseenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseenterNull: Self = StObject.set(x, "onmouseenter", null)
@@ -1640,7 +1646,7 @@ object PropsSVGCircleElementcont {
     def setOnmouseenterUndefined: Self = StObject.set(x, "onmouseenter", js.undefined)
     
     @scala.inline
-    def setOnmouseleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
+    def setOnmouseleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseleaveNull: Self = StObject.set(x, "onmouseleave", null)
@@ -1649,7 +1655,7 @@ object PropsSVGCircleElementcont {
     def setOnmouseleaveUndefined: Self = StObject.set(x, "onmouseleave", js.undefined)
     
     @scala.inline
-    def setOnmousemove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+    def setOnmousemove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmousemoveNull: Self = StObject.set(x, "onmousemove", null)
@@ -1658,7 +1664,7 @@ object PropsSVGCircleElementcont {
     def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
     
     @scala.inline
-    def setOnmouseout(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+    def setOnmouseout(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseoutNull: Self = StObject.set(x, "onmouseout", null)
@@ -1667,7 +1673,7 @@ object PropsSVGCircleElementcont {
     def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
     
     @scala.inline
-    def setOnmouseover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+    def setOnmouseover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseoverNull: Self = StObject.set(x, "onmouseover", null)
@@ -1676,7 +1682,7 @@ object PropsSVGCircleElementcont {
     def setOnmouseoverUndefined: Self = StObject.set(x, "onmouseover", js.undefined)
     
     @scala.inline
-    def setOnmouseup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, _]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+    def setOnmouseup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnmouseupNull: Self = StObject.set(x, "onmouseup", null)
@@ -1685,7 +1691,7 @@ object PropsSVGCircleElementcont {
     def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
     
     @scala.inline
-    def setOnpaste(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, _]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+    def setOnpaste(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ClipboardEvent, js.Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpasteNull: Self = StObject.set(x, "onpaste", null)
@@ -1694,7 +1700,7 @@ object PropsSVGCircleElementcont {
     def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
     
     @scala.inline
-    def setOnpause(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
+    def setOnpause(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpauseNull: Self = StObject.set(x, "onpause", null)
@@ -1703,7 +1709,7 @@ object PropsSVGCircleElementcont {
     def setOnpauseUndefined: Self = StObject.set(x, "onpause", js.undefined)
     
     @scala.inline
-    def setOnplay(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
+    def setOnplay(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplay", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnplayNull: Self = StObject.set(x, "onplay", null)
@@ -1712,7 +1718,7 @@ object PropsSVGCircleElementcont {
     def setOnplayUndefined: Self = StObject.set(x, "onplay", js.undefined)
     
     @scala.inline
-    def setOnplaying(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
+    def setOnplaying(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onplaying", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnplayingNull: Self = StObject.set(x, "onplaying", null)
@@ -1721,7 +1727,7 @@ object PropsSVGCircleElementcont {
     def setOnplayingUndefined: Self = StObject.set(x, "onplaying", js.undefined)
     
     @scala.inline
-    def setOnpointercancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
+    def setOnpointercancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointercancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointercancelNull: Self = StObject.set(x, "onpointercancel", null)
@@ -1730,7 +1736,7 @@ object PropsSVGCircleElementcont {
     def setOnpointercancelUndefined: Self = StObject.set(x, "onpointercancel", js.undefined)
     
     @scala.inline
-    def setOnpointerdown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
+    def setOnpointerdown(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerdown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerdownNull: Self = StObject.set(x, "onpointerdown", null)
@@ -1739,7 +1745,7 @@ object PropsSVGCircleElementcont {
     def setOnpointerdownUndefined: Self = StObject.set(x, "onpointerdown", js.undefined)
     
     @scala.inline
-    def setOnpointerenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
+    def setOnpointerenter(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerenter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerenterNull: Self = StObject.set(x, "onpointerenter", null)
@@ -1748,7 +1754,7 @@ object PropsSVGCircleElementcont {
     def setOnpointerenterUndefined: Self = StObject.set(x, "onpointerenter", js.undefined)
     
     @scala.inline
-    def setOnpointerleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
+    def setOnpointerleave(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerleave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerleaveNull: Self = StObject.set(x, "onpointerleave", null)
@@ -1757,7 +1763,7 @@ object PropsSVGCircleElementcont {
     def setOnpointerleaveUndefined: Self = StObject.set(x, "onpointerleave", js.undefined)
     
     @scala.inline
-    def setOnpointermove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
+    def setOnpointermove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointermove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointermoveNull: Self = StObject.set(x, "onpointermove", null)
@@ -1766,7 +1772,7 @@ object PropsSVGCircleElementcont {
     def setOnpointermoveUndefined: Self = StObject.set(x, "onpointermove", js.undefined)
     
     @scala.inline
-    def setOnpointerout(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
+    def setOnpointerout(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerout", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointeroutNull: Self = StObject.set(x, "onpointerout", null)
@@ -1775,7 +1781,7 @@ object PropsSVGCircleElementcont {
     def setOnpointeroutUndefined: Self = StObject.set(x, "onpointerout", js.undefined)
     
     @scala.inline
-    def setOnpointerover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
+    def setOnpointerover(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerover", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointeroverNull: Self = StObject.set(x, "onpointerover", null)
@@ -1784,7 +1790,7 @@ object PropsSVGCircleElementcont {
     def setOnpointeroverUndefined: Self = StObject.set(x, "onpointerover", js.undefined)
     
     @scala.inline
-    def setOnpointerup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, _]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
+    def setOnpointerup(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onpointerup", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnpointerupNull: Self = StObject.set(x, "onpointerup", null)
@@ -1793,7 +1799,7 @@ object PropsSVGCircleElementcont {
     def setOnpointerupUndefined: Self = StObject.set(x, "onpointerup", js.undefined)
     
     @scala.inline
-    def setOnprogress(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ProgressEvent[EventTarget], _]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
+    def setOnprogress(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ ProgressEvent[EventTarget], js.Any]): Self = StObject.set(x, "onprogress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnprogressNull: Self = StObject.set(x, "onprogress", null)
@@ -1802,7 +1808,7 @@ object PropsSVGCircleElementcont {
     def setOnprogressUndefined: Self = StObject.set(x, "onprogress", js.undefined)
     
     @scala.inline
-    def setOnratechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
+    def setOnratechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onratechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnratechangeNull: Self = StObject.set(x, "onratechange", null)
@@ -1811,7 +1817,7 @@ object PropsSVGCircleElementcont {
     def setOnratechangeUndefined: Self = StObject.set(x, "onratechange", js.undefined)
     
     @scala.inline
-    def setOnreset(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
+    def setOnreset(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onreset", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnresetNull: Self = StObject.set(x, "onreset", null)
@@ -1820,7 +1826,7 @@ object PropsSVGCircleElementcont {
     def setOnresetUndefined: Self = StObject.set(x, "onreset", js.undefined)
     
     @scala.inline
-    def setOnresize(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ UIEvent, _]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
+    def setOnresize(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnresizeNull: Self = StObject.set(x, "onresize", null)
@@ -1829,7 +1835,7 @@ object PropsSVGCircleElementcont {
     def setOnresizeUndefined: Self = StObject.set(x, "onresize", js.undefined)
     
     @scala.inline
-    def setOnscroll(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
+    def setOnscroll(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onscroll", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnscrollNull: Self = StObject.set(x, "onscroll", null)
@@ -1838,7 +1844,7 @@ object PropsSVGCircleElementcont {
     def setOnscrollUndefined: Self = StObject.set(x, "onscroll", js.undefined)
     
     @scala.inline
-    def setOnsecuritypolicyviolation(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ SecurityPolicyViolationEvent, _]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
+    def setOnsecuritypolicyviolation(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ SecurityPolicyViolationEvent, js.Any]): Self = StObject.set(x, "onsecuritypolicyviolation", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsecuritypolicyviolationNull: Self = StObject.set(x, "onsecuritypolicyviolation", null)
@@ -1847,7 +1853,7 @@ object PropsSVGCircleElementcont {
     def setOnsecuritypolicyviolationUndefined: Self = StObject.set(x, "onsecuritypolicyviolation", js.undefined)
     
     @scala.inline
-    def setOnseeked(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
+    def setOnseeked(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeked", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnseekedNull: Self = StObject.set(x, "onseeked", null)
@@ -1856,7 +1862,7 @@ object PropsSVGCircleElementcont {
     def setOnseekedUndefined: Self = StObject.set(x, "onseeked", js.undefined)
     
     @scala.inline
-    def setOnseeking(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
+    def setOnseeking(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onseeking", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnseekingNull: Self = StObject.set(x, "onseeking", null)
@@ -1865,7 +1871,7 @@ object PropsSVGCircleElementcont {
     def setOnseekingUndefined: Self = StObject.set(x, "onseeking", js.undefined)
     
     @scala.inline
-    def setOnselect(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
+    def setOnselect(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselect", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectNull: Self = StObject.set(x, "onselect", null)
@@ -1874,7 +1880,7 @@ object PropsSVGCircleElementcont {
     def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
     
     @scala.inline
-    def setOnselectionchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
+    def setOnselectionchange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectionchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectionchangeNull: Self = StObject.set(x, "onselectionchange", null)
@@ -1883,7 +1889,7 @@ object PropsSVGCircleElementcont {
     def setOnselectionchangeUndefined: Self = StObject.set(x, "onselectionchange", js.undefined)
     
     @scala.inline
-    def setOnselectstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
+    def setOnselectstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onselectstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnselectstartNull: Self = StObject.set(x, "onselectstart", null)
@@ -1892,7 +1898,7 @@ object PropsSVGCircleElementcont {
     def setOnselectstartUndefined: Self = StObject.set(x, "onselectstart", js.undefined)
     
     @scala.inline
-    def setOnstalled(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
+    def setOnstalled(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onstalled", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnstalledNull: Self = StObject.set(x, "onstalled", null)
@@ -1901,7 +1907,7 @@ object PropsSVGCircleElementcont {
     def setOnstalledUndefined: Self = StObject.set(x, "onstalled", js.undefined)
     
     @scala.inline
-    def setOnsubmit(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
+    def setOnsubmit(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsubmit", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsubmitNull: Self = StObject.set(x, "onsubmit", null)
@@ -1910,7 +1916,7 @@ object PropsSVGCircleElementcont {
     def setOnsubmitUndefined: Self = StObject.set(x, "onsubmit", js.undefined)
     
     @scala.inline
-    def setOnsuspend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
+    def setOnsuspend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onsuspend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnsuspendNull: Self = StObject.set(x, "onsuspend", null)
@@ -1919,7 +1925,7 @@ object PropsSVGCircleElementcont {
     def setOnsuspendUndefined: Self = StObject.set(x, "onsuspend", js.undefined)
     
     @scala.inline
-    def setOntimeupdate(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
+    def setOntimeupdate(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontimeupdate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntimeupdateNull: Self = StObject.set(x, "ontimeupdate", null)
@@ -1928,7 +1934,7 @@ object PropsSVGCircleElementcont {
     def setOntimeupdateUndefined: Self = StObject.set(x, "ontimeupdate", js.undefined)
     
     @scala.inline
-    def setOntoggle(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
+    def setOntoggle(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "ontoggle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntoggleNull: Self = StObject.set(x, "ontoggle", null)
@@ -1937,7 +1943,7 @@ object PropsSVGCircleElementcont {
     def setOntoggleUndefined: Self = StObject.set(x, "ontoggle", js.undefined)
     
     @scala.inline
-    def setOntouchcancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
+    def setOntouchcancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchcancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchcancelNull: Self = StObject.set(x, "ontouchcancel", null)
@@ -1946,7 +1952,7 @@ object PropsSVGCircleElementcont {
     def setOntouchcancelUndefined: Self = StObject.set(x, "ontouchcancel", js.undefined)
     
     @scala.inline
-    def setOntouchend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
+    def setOntouchend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchendNull: Self = StObject.set(x, "ontouchend", null)
@@ -1955,7 +1961,7 @@ object PropsSVGCircleElementcont {
     def setOntouchendUndefined: Self = StObject.set(x, "ontouchend", js.undefined)
     
     @scala.inline
-    def setOntouchmove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
+    def setOntouchmove(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchmove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchmoveNull: Self = StObject.set(x, "ontouchmove", null)
@@ -1964,7 +1970,7 @@ object PropsSVGCircleElementcont {
     def setOntouchmoveUndefined: Self = StObject.set(x, "ontouchmove", js.undefined)
     
     @scala.inline
-    def setOntouchstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, _]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
+    def setOntouchstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "ontouchstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntouchstartNull: Self = StObject.set(x, "ontouchstart", null)
@@ -1973,7 +1979,7 @@ object PropsSVGCircleElementcont {
     def setOntouchstartUndefined: Self = StObject.set(x, "ontouchstart", js.undefined)
     
     @scala.inline
-    def setOntransitioncancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
+    def setOntransitioncancel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitioncancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitioncancelNull: Self = StObject.set(x, "ontransitioncancel", null)
@@ -1982,7 +1988,7 @@ object PropsSVGCircleElementcont {
     def setOntransitioncancelUndefined: Self = StObject.set(x, "ontransitioncancel", js.undefined)
     
     @scala.inline
-    def setOntransitionend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
+    def setOntransitionend(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionend", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionendNull: Self = StObject.set(x, "ontransitionend", null)
@@ -1991,7 +1997,7 @@ object PropsSVGCircleElementcont {
     def setOntransitionendUndefined: Self = StObject.set(x, "ontransitionend", js.undefined)
     
     @scala.inline
-    def setOntransitionrun(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
+    def setOntransitionrun(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionrun", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionrunNull: Self = StObject.set(x, "ontransitionrun", null)
@@ -2000,7 +2006,7 @@ object PropsSVGCircleElementcont {
     def setOntransitionrunUndefined: Self = StObject.set(x, "ontransitionrun", js.undefined)
     
     @scala.inline
-    def setOntransitionstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, _]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
+    def setOntransitionstart(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ TransitionEvent, js.Any]): Self = StObject.set(x, "ontransitionstart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOntransitionstartNull: Self = StObject.set(x, "ontransitionstart", null)
@@ -2009,7 +2015,7 @@ object PropsSVGCircleElementcont {
     def setOntransitionstartUndefined: Self = StObject.set(x, "ontransitionstart", js.undefined)
     
     @scala.inline
-    def setOnvolumechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
+    def setOnvolumechange(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onvolumechange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnvolumechangeNull: Self = StObject.set(x, "onvolumechange", null)
@@ -2018,7 +2024,7 @@ object PropsSVGCircleElementcont {
     def setOnvolumechangeUndefined: Self = StObject.set(x, "onvolumechange", js.undefined)
     
     @scala.inline
-    def setOnwaiting(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
+    def setOnwaiting(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]): Self = StObject.set(x, "onwaiting", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnwaitingNull: Self = StObject.set(x, "onwaiting", null)
@@ -2027,7 +2033,7 @@ object PropsSVGCircleElementcont {
     def setOnwaitingUndefined: Self = StObject.set(x, "onwaiting", js.undefined)
     
     @scala.inline
-    def setOnwheel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ WheelEvent, _]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
+    def setOnwheel(value: js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onwheel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnwheelNull: Self = StObject.set(x, "onwheel", null)
@@ -2072,7 +2078,7 @@ object PropsSVGCircleElementcont {
     def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
     @scala.inline
-    def setParentNode(value: Node with ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
@@ -2172,7 +2178,7 @@ object PropsSVGCircleElementcont {
     
     @scala.inline
     def setRemoveEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsSVGCircleElementcont, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline

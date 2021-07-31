@@ -2,10 +2,8 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait Application extends StObject {
     * @throw WebAPIException TypeMismatchError, UnknownError
     *
     */
-  def addEventListener(event: EventInfo, callback: EventCallback): Double = js.native
+  def addEventListener(event: EventInfo, callback: EventCallback): Double
   
   /**
     * An attribute to store the application information for the current application.
     */
-  val appInfo: ApplicationInformation = js.native
+  val appInfo: ApplicationInformation
   
   /**
     * Broadcasts a user defined event to all the listeners which are listening for this event.
@@ -43,7 +41,7 @@ trait Application extends StObject {
     * @throw WebAPIException TypeMismatchError, UnknownError
     *
     */
-  def broadcastEvent(event: EventInfo, data: UserEventData): Unit = js.native
+  def broadcastEvent(event: EventInfo, data: UserEventData): Unit
   
   /**
     * Broadcasts a user defined event to all the trusted listeners which are listening for this event. Applications which have the same certificate as the sending application can receive the event.
@@ -58,12 +56,12 @@ trait Application extends StObject {
     * @throw WebAPIException TypeMismatchError, UnknownError
     *
     */
-  def broadcastTrustedEvent(event: EventInfo, data: UserEventData): Unit = js.native
+  def broadcastTrustedEvent(event: EventInfo, data: UserEventData): Unit
   
   /**
     * An attribute to store the ID of a running application.
     */
-  val contextId: ApplicationContextId = js.native
+  val contextId: ApplicationContextId
   
   /**
     * Exits the current application.
@@ -74,7 +72,7 @@ trait Application extends StObject {
     * @throw WebAPIException UnknownError
     *
     */
-  def exit(): Unit = js.native
+  def exit(): Unit
   
   /**
     * Gets the requested application control passed to the current application.
@@ -96,7 +94,7 @@ trait Application extends StObject {
     * @throw WebAPIException UnknownError
     *
     */
-  def getRequestedAppControl(): RequestedApplicationControl = js.native
+  def getRequestedAppControl(): RequestedApplicationControl
   
   /**
     * Hides the current application.
@@ -107,7 +105,7 @@ trait Application extends StObject {
     * @throw WebAPIException UnknownError
     *
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Removes an event listener with a specified listener identifier.
@@ -121,7 +119,7 @@ trait Application extends StObject {
     * @throw WebAPIException UnknownError
     *
     */
-  def removeEventListener(watchId: Double): Unit = js.native
+  def removeEventListener(watchId: Double): Unit
 }
 object Application {
   

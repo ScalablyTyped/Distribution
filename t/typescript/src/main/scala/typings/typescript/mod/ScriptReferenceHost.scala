@@ -2,19 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptReferenceHost extends StObject {
   
-  def getCompilerOptions(): CompilerOptions = js.native
+  def getCompilerOptions(): CompilerOptions
   
-  def getCurrentDirectory(): java.lang.String = js.native
+  def getCurrentDirectory(): java.lang.String
   
-  def getSourceFile(fileName: java.lang.String): js.UndefOr[SourceFile] = js.native
+  def getSourceFile(fileName: java.lang.String): js.UndefOr[SourceFile]
   
-  def getSourceFileByPath(path: Path): js.UndefOr[SourceFile] = js.native
+  def getSourceFileByPath(path: Path): js.UndefOr[SourceFile]
 }
 object ScriptReferenceHost {
   

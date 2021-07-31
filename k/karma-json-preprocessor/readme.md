@@ -12,7 +12,7 @@ A Karma plugin. Convert JSON files into JS variables to use in your tests.
 | Keywords           | karma-plugin, karma-preprocessor, json |
 | # releases         | 1 |
 | # dependents       | 0 |
-| # downloads        | 258263 |
+| # downloads        | 194115 |
 | # stars            | 0 |
 
 ## Links

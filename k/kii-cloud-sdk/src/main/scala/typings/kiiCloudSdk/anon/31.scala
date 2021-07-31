@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiTopic
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `31`[T] extends StObject {
   
-  def failure(error: Error): js.Any = js.native
+  def failure(error: Error): js.Any
   
-  def success(topic: KiiTopic, message: T): js.Any = js.native
+  def success(topic: KiiTopic, message: T): js.Any
 }
 object `31` {
   
@@ -23,7 +21,7 @@ object `31` {
   }
   
   @scala.inline
-  implicit class `31MutableBuilder`[Self <: `31`[_], T] (val x: Self with `31`[T]) extends AnyVal {
+  implicit class `31MutableBuilder`[Self <: `31`[?], T] (val x: Self & `31`[T]) extends AnyVal {
     
     @scala.inline
     def setFailure(value: Error => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))

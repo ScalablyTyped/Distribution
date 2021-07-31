@@ -6,7 +6,6 @@ import typings.storybookApi.anon.Path
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
@@ -17,16 +16,15 @@ object urlMod {
   
   type QueryParams = StringDictionary[String | Null]
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def getQueryParam(key: String): js.UndefOr[String] = js.native
+    def getQueryParam(key: String): js.UndefOr[String]
     
-    def getUrlState(): Path = js.native
+    def getUrlState(): Path
     
-    def navigateUrl(url: String, options: NavigateOptions[js.Object]): Unit = js.native
+    def navigateUrl(url: String, options: NavigateOptions[js.Object]): Unit
     
-    def setQueryParams(input: QueryParams): Unit = js.native
+    def setQueryParams(input: QueryParams): Unit
   }
   object SubAPI {
     
@@ -58,10 +56,9 @@ object urlMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var customQueryParams: QueryParams = js.native
+    var customQueryParams: QueryParams
   }
   object SubState {
     

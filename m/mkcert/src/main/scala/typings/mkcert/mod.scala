@@ -2,31 +2,31 @@ package typings.mkcert
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mkcert", "createCA")
+  @JSImport("mkcert", JSImport.Namespace)
   @js.native
-  def createCA(caCerticateInfo: CACertificateInfo): js.Promise[Certificate] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mkcert", "createCert")
-  @js.native
-  def createCert(certicateInfo: CertificateInfo): js.Promise[Certificate] = js.native
+  @scala.inline
+  def createCA(caCerticateInfo: CACertificateInfo): js.Promise[Certificate] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCA")(caCerticateInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Certificate]]
   
-  @js.native
+  @scala.inline
+  def createCert(certicateInfo: CertificateInfo): js.Promise[Certificate] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCert")(certicateInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Certificate]]
+  
   trait CACertificateInfo extends StObject {
     
-    var countryCode: String = js.native
+    var countryCode: String
     
-    var locality: String = js.native
+    var locality: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var state: String = js.native
+    var state: String
     
-    var validityDays: Double = js.native
+    var validityDays: Double
   }
   object CACertificateInfo {
     
@@ -56,12 +56,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Certificate extends StObject {
     
-    var cert: String = js.native
+    var cert: String
     
-    var key: String = js.native
+    var key: String
   }
   object Certificate {
     
@@ -82,16 +81,15 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificateInfo extends StObject {
     
-    var caCert: String = js.native
+    var caCert: String
     
-    var caKey: String = js.native
+    var caKey: String
     
-    var domains: js.Array[String] = js.native
+    var domains: js.Array[String]
     
-    var validityDays: Double = js.native
+    var validityDays: Double
   }
   object CertificateInfo {
     

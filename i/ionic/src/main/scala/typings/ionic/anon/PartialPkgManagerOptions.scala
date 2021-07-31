@@ -3,30 +3,28 @@ package typings.ionic.anon
 import typings.ionic.npmMod.PkgManagerCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ionic.ionic/lib/utils/npm.PkgManagerOptions> */
-@js.native
 trait PartialPkgManagerOptions extends StObject {
   
-  var command: js.UndefOr[PkgManagerCommand] = js.native
+  var command: js.UndefOr[PkgManagerCommand] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
   
-  var pkg: js.UndefOr[String] = js.native
+  var pkg: js.UndefOr[String] = js.undefined
   
-  var save: js.UndefOr[Boolean] = js.native
+  var save: js.UndefOr[Boolean] = js.undefined
   
-  var saveDev: js.UndefOr[Boolean] = js.native
+  var saveDev: js.UndefOr[Boolean] = js.undefined
   
-  var saveExact: js.UndefOr[Boolean] = js.native
+  var saveExact: js.UndefOr[Boolean] = js.undefined
   
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
   
-  var scriptArgs: js.UndefOr[js.Array[String]] = js.native
+  var scriptArgs: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PartialPkgManagerOptions {
   

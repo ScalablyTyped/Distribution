@@ -7,7 +7,6 @@ import typings.passportBeam.mod.Strategy.IStrategyOption
 import typings.passportBeam.mod.Strategy.Profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,8 @@ object mod {
   @JSImport("passport-beam", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(
       options: IStrategyOption,
       verify: js.Function4[
@@ -27,18 +27,17 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   object Strategy {
     
-    @js.native
     trait IStrategyOption extends StObject {
       
-      var callbackURL: String = js.native
+      var callbackURL: String
       
-      var clientID: String = js.native
+      var clientID: String
       
-      var clientSecret: String = js.native
+      var clientSecret: String
     }
     object IStrategyOption {
       
@@ -62,17 +61,17 @@ object mod {
       }
     }
     
-    @js.native
     trait Profile
-      extends typings.passport.mod.Profile {
+      extends StObject
+         with typings.passport.mod.Profile {
       
-      var _json: js.Any = js.native
+      var _json: js.Any
       
-      var _raw: js.Any = js.native
+      var _raw: js.Any
       
-      var email: String = js.native
+      var email: String
       
-      var profileUrl: String = js.native
+      var profileUrl: String
     }
     object Profile {
       

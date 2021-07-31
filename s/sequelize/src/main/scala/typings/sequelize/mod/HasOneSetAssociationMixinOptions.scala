@@ -2,20 +2,18 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the setAssociation mixin of the hasOne association.
   * @see HasOneSetAssociationMixin
   */
-@js.native
 trait HasOneSetAssociationMixinOptions extends StObject {
   
   /**
     * Skip saving this after setting the foreign key if false.
     */
-  var save: js.UndefOr[Boolean] = js.native
+  var save: js.UndefOr[Boolean] = js.undefined
 }
 object HasOneSetAssociationMixinOptions {
   

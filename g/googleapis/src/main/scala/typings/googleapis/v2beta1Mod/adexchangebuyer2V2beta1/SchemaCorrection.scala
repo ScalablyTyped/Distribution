@@ -2,29 +2,27 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly Shows any corrections that were applied to this creative.
   */
-@js.native
 trait SchemaCorrection extends StObject {
   
   /**
     * The contexts for the correction.
     */
-  var contexts: js.UndefOr[js.Array[SchemaServingContext]] = js.native
+  var contexts: js.UndefOr[js.Array[SchemaServingContext]] = js.undefined
   
   /**
     * Additional details about what was corrected.
     */
-  var details: js.UndefOr[js.Array[String]] = js.native
+  var details: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The type of correction that was applied to the creative.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCorrection {
   

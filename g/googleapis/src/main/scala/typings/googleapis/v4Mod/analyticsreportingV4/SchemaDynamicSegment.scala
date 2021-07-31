@@ -2,30 +2,28 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamic segment definition for defining the segment within the request. A
   * segment can select users, sessions or both.
   */
-@js.native
 trait SchemaDynamicSegment extends StObject {
   
   /**
     * The name of the dynamic segment.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Session Segment to select sessions to include in the segment.
     */
-  var sessionSegment: js.UndefOr[SchemaSegmentDefinition] = js.native
+  var sessionSegment: js.UndefOr[SchemaSegmentDefinition] = js.undefined
   
   /**
     * User Segment to select users to include in the segment.
     */
-  var userSegment: js.UndefOr[SchemaSegmentDefinition] = js.native
+  var userSegment: js.UndefOr[SchemaSegmentDefinition] = js.undefined
 }
 object SchemaDynamicSegment {
   

@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFSearchFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchDef extends StObject {
   
-  def Clone(): ISearchDef = js.native
+  def Clone(): ISearchDef
   
-  var Conditions: ISearchConditions = js.native
+  var Conditions: ISearchConditions
   
-  def IsIndirectionUsed(): Boolean = js.native
+  def IsIndirectionUsed(): Boolean
   
-  var Levels: IExpressionExs = js.native
+  var Levels: IExpressionExs
   
-  var LookInAllVersions: Boolean = js.native
+  var LookInAllVersions: Boolean
   
-  var ReturnLatestVisibleVersion: Boolean = js.native
+  var ReturnLatestVisibleVersion: Boolean
   
-  var SearchFlags: MFSearchFlags = js.native
+  var SearchFlags: MFSearchFlags
 }
 object ISearchDef {
   

@@ -3,29 +3,29 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.logLevelFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogLevelFilterAppender extends Appender {
+trait LogLevelFilterAppender
+  extends StObject
+     with Appender {
   
   // the name of an appender, defined in the same configuration, that you want to filter
-  var appender: String = js.native
+  var appender: String
   
   // the minimum level of event to allow through the filter
-  var level: String = js.native
+  var level: String
   
   // (defaults to FATAL) - the maximum level of event to allow through the filter
-  var maxLevel: js.UndefOr[String] = js.native
+  var maxLevel: js.UndefOr[String] = js.undefined
   
-  var `type`: logLevelFilter = js.native
+  var `type`: logLevelFilter
 }
 object LogLevelFilterAppender {
   
   @scala.inline
-  def apply(appender: String, level: String, `type`: logLevelFilter): LogLevelFilterAppender = {
+  def apply(appender: String, level: String): LogLevelFilterAppender = {
     val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("logLevelFilter")
     __obj.asInstanceOf[LogLevelFilterAppender]
   }
   

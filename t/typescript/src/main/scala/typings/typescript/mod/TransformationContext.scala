@@ -2,29 +2,29 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TransformationContext extends CoreTransformationContext {
+trait TransformationContext
+  extends StObject
+     with CoreTransformationContext {
   
   /**
     * Enables before/after emit notifications in the pretty printer for the provided
     * SyntaxKind.
     */
-  def enableEmitNotification(kind: SyntaxKind): Unit = js.native
+  def enableEmitNotification(kind: SyntaxKind): Unit
   
   /** Enables expression substitutions in the pretty printer for the provided SyntaxKind. */
-  def enableSubstitution(kind: SyntaxKind): Unit = js.native
+  def enableSubstitution(kind: SyntaxKind): Unit
   
   /**
     * Determines whether before/after emit notifications should be raised in the pretty
     * printer when it emits a node.
     */
-  def isEmitNotificationEnabled(node: Node): Boolean = js.native
+  def isEmitNotificationEnabled(node: Node): Boolean
   
   /** Determines whether expression substitutions are enabled for the provided node. */
-  def isSubstitutionEnabled(node: Node): Boolean = js.native
+  def isSubstitutionEnabled(node: Node): Boolean
   
   /**
     * Hook used to allow transformers to capture state before or after
@@ -33,7 +33,7 @@ trait TransformationContext extends CoreTransformationContext {
     * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
     * before returning the `NodeTransformer` callback.
     */
-  def onEmitNode(hint: EmitHint, node: Node, emitCallback: js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]): Unit = js.native
+  def onEmitNode(hint: EmitHint, node: Node, emitCallback: js.Function2[/* hint */ EmitHint, /* node */ Node, Unit]): Unit
   
   /**
     * Hook used by transformers to substitute expressions just before they
@@ -42,13 +42,13 @@ trait TransformationContext extends CoreTransformationContext {
     * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
     * before returning the `NodeTransformer` callback.
     */
-  def onSubstituteNode(hint: EmitHint, node: Node): Node = js.native
+  def onSubstituteNode(hint: EmitHint, node: Node): Node
   
   /** Gets and resets the requested non-scoped emit helpers. */
-  def readEmitHelpers(): js.UndefOr[js.Array[EmitHelper]] = js.native
+  def readEmitHelpers(): js.UndefOr[js.Array[EmitHelper]]
   
   /** Records a request for a non-scoped emit helper in the current context. */
-  def requestEmitHelper(helper: EmitHelper): Unit = js.native
+  def requestEmitHelper(helper: EmitHelper): Unit
 }
 object TransformationContext {
   

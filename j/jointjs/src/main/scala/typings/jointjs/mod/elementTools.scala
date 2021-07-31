@@ -8,7 +8,6 @@ import typings.jointjs.mod.dia.ToolView
 import typings.jointjs.mod.elementTools.Boundary.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementTools {
@@ -20,15 +19,15 @@ object elementTools {
   }
   object Boundary {
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var padding: js.UndefOr[Double | Sides] = js.native
+      var padding: js.UndefOr[Double | Sides] = js.undefined
       
-      var rotate: js.UndefOr[Boolean] = js.native
+      var rotate: js.UndefOr[Boolean] = js.undefined
       
-      var useModelGeometry: js.UndefOr[Boolean] = js.native
+      var useModelGeometry: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -73,23 +72,23 @@ object elementTools {
     
     type ActionCallback = js.Function2[/* evt */ Event, /* view */ LinkView, Unit]
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var action: js.UndefOr[ActionCallback] = js.native
+      var action: js.UndefOr[ActionCallback] = js.undefined
       
-      var markup: js.UndefOr[MarkupJSON] = js.native
+      var markup: js.UndefOr[MarkupJSON] = js.undefined
       
-      var offset: js.UndefOr[Double] = js.native
+      var offset: js.UndefOr[Double] = js.undefined
       
-      var rotate: js.UndefOr[Boolean] = js.native
+      var rotate: js.UndefOr[Boolean] = js.undefined
       
-      var useModelGeometry: js.UndefOr[Boolean] = js.native
+      var useModelGeometry: js.UndefOr[Boolean] = js.undefined
       
-      var x: js.UndefOr[Double | String] = js.native
+      var x: js.UndefOr[Double | String] = js.undefined
       
-      var y: js.UndefOr[Double | String] = js.native
+      var y: js.UndefOr[Double | String] = js.undefined
     }
     object Options {
       

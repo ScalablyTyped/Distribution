@@ -31,15 +31,14 @@ import typings.awsSdkClientDynamodbBrowser.updateTableExceptionsUnionMod.UpdateT
 import typings.awsSdkClientDynamodbBrowser.updateTimeToLiveExceptionsUnionMod.UpdateTimeToLiveExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInternalServerErrorMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalServerErrorDetails> * / any */ @js.native
-  trait InternalServerError
-    extends BatchGetItemExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InternalServerErrorDetails> * / any */ trait InternalServerError
+    extends StObject
+       with BatchGetItemExceptionsUnion
        with BatchWriteItemExceptionsUnion
        with CreateBackupExceptionsUnion
        with CreateGlobalTableExceptionsUnion
@@ -69,13 +68,13 @@ object typesInternalServerErrorMod {
        with UpdateTableExceptionsUnion
        with UpdateTimeToLiveExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError
   }
   object InternalServerError {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.InternalServerError): InternalServerError = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InternalServerError = {
+      val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[InternalServerError]
     }
     
@@ -87,13 +86,12 @@ object typesInternalServerErrorMod {
     }
   }
   
-  @js.native
   trait InternalServerErrorDetails extends StObject {
     
     /**
       * <p>The server encountered an internal error trying to fulfill the request.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InternalServerErrorDetails {
     

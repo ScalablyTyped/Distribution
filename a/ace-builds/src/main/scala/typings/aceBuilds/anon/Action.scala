@@ -2,15 +2,13 @@ package typings.aceBuilds.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var data: typings.aceBuilds.mod.Ace.Fold = js.native
+  var data: typings.aceBuilds.mod.Ace.Fold
 }
 object Action {
   

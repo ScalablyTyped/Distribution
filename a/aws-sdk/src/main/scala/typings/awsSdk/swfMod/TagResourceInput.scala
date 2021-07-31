@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the Amazon SWF domain.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The list of tags to add to a domain.  Tags may only contain unicode letters, digits, whitespace, or these symbols: _ . : / = + - @.
     */
-  var tags: ResourceTagList = js.native
+  var tags: ResourceTagList
 }
 object TagResourceInput {
   

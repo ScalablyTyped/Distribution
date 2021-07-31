@@ -3,26 +3,26 @@ package typings.auth0.mod
 import typings.auth0.auth0Strings.verification_email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VerificationEmailJob extends Job {
+trait VerificationEmailJob
+  extends StObject
+     with Job {
   
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var status: JobStatus = js.native
+  var status: JobStatus
   
-  var `type`: verification_email = js.native
+  var `type`: verification_email
 }
 object VerificationEmailJob {
   
   @scala.inline
-  def apply(id: String, status: JobStatus, `type`: verification_email): VerificationEmailJob = {
+  def apply(id: String, status: JobStatus): VerificationEmailJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("verification_email")
     __obj.asInstanceOf[VerificationEmailJob]
   }
   

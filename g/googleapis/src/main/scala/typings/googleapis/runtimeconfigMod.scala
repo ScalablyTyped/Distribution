@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeconfigMod {
+  
+  @JSImport("googleapis/build/src/apis/runtimeconfig", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object runtimeconfigMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/runtimeconfig", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/runtimeconfig", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object runtimeconfigMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/runtimeconfig", "runtimeconfig")
-  @js.native
-  def runtimeconfig(options: Options): Runtimeconfig = js.native
-  @JSImport("googleapis/build/src/apis/runtimeconfig", "runtimeconfig")
-  @js.native
-  def runtimeconfig(options: typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Options): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = js.native
-  @JSImport("googleapis/build/src/apis/runtimeconfig", "runtimeconfig")
-  @js.native
-  def runtimeconfig_v1(version: v1): Runtimeconfig = js.native
-  @JSImport("googleapis/build/src/apis/runtimeconfig", "runtimeconfig")
-  @js.native
-  def runtimeconfig_v1beta1(version: v1beta1): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = js.native
+  @scala.inline
+  def runtimeconfig(options: Options): Runtimeconfig = ^.asInstanceOf[js.Dynamic].applyDynamic("runtimeconfig")(options.asInstanceOf[js.Any]).asInstanceOf[Runtimeconfig]
+  @scala.inline
+  def runtimeconfig(options: typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Options): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = ^.asInstanceOf[js.Dynamic].applyDynamic("runtimeconfig")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig]
+  
+  @scala.inline
+  def runtimeconfig_v1(version: v1): Runtimeconfig = ^.asInstanceOf[js.Dynamic].applyDynamic("runtimeconfig")(version.asInstanceOf[js.Any]).asInstanceOf[Runtimeconfig]
+  
+  @scala.inline
+  def runtimeconfig_v1beta1(version: v1beta1): typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig = ^.asInstanceOf[js.Dynamic].applyDynamic("runtimeconfig")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1.Runtimeconfig]
 }

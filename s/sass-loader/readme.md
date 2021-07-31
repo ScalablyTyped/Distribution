@@ -10,9 +10,9 @@ Sass loader for webpack
 | ------------------ | :-------------: |
 | Full name          | sass-loader |
 | Keywords           | sass, libsass, webpack, loader |
-| # releases         | 13 |
-| # dependents       | 6331 |
-| # downloads        | 294803557 |
+| # releases         | 20 |
+| # dependents       | 6977 |
+| # downloads        | 368027407 |
 | # stars            | 76 |
 
 ## Links

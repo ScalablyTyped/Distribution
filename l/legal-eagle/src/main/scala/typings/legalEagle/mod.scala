@@ -4,28 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("legal-eagle", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     options: Options,
     cb: js.Function2[/* err */ Error | Null, /* licenseSummary */ LicenseLookup, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("legal-eagle", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Entry extends StObject {
     
-    var license: String = js.native
+    var license: String
     
-    var repository: String = js.native
+    var repository: String
     
-    var source: String = js.native
+    var source: String
     
-    var sourceText: String = js.native
+    var sourceText: String
   }
   object Entry {
     
@@ -54,14 +55,13 @@ object mod {
   
   type LicenseLookup = StringDictionary[Entry]
   
-  @js.native
   trait Options extends StObject {
     
-    var omitPermissive: js.UndefOr[Boolean] = js.native
+    var omitPermissive: js.UndefOr[Boolean] = js.undefined
     
-    var overrides: js.UndefOr[LicenseLookup] = js.native
+    var overrides: js.UndefOr[LicenseLookup] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Options {
     

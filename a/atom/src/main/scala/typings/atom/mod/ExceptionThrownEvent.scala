@@ -3,21 +3,19 @@ package typings.atom.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionThrownEvent extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var line: Double = js.native
+  var line: Double
   
-  var message: String = js.native
+  var message: String
   
-  var originalError: Error = js.native
+  var originalError: Error
   
-  var url: String = js.native
+  var url: String
 }
 object ExceptionThrownEvent {
   

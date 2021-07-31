@@ -2,11 +2,9 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "document.toJSON()". */
-@js.native
 trait DocumentData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var application: js.UndefOr[ApplicationData] = js.native
+  var application: js.UndefOr[ApplicationData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var pages: js.UndefOr[js.Array[PageData]] = js.native
+  var pages: js.UndefOr[js.Array[PageData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait DocumentData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var view: js.UndefOr[DocumentViewData] = js.native
+  var view: js.UndefOr[DocumentViewData] = js.undefined
 }
 object DocumentData {
   

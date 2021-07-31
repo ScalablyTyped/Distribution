@@ -3,13 +3,11 @@ package typings.cassandraDriver.anon
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecureConnectBundle extends StObject {
   
-  var secureConnectBundle: String | URL_ = js.native
+  var secureConnectBundle: String | URL_
 }
 object SecureConnectBundle {
   

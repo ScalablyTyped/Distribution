@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * resource_for beta.targetSslProxies ==) (== resource_for v1.targetSslProxies
   * ==)
   */
-@js.native
 trait SchemaTargetSslProxy extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#targetSslProxy for
     * target SSL proxies.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -45,37 +43,37 @@ trait SchemaTargetSslProxy extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of proxy header to append before sending data to the
     * backend, either NONE or PROXY_V1. The default is NONE.
     */
-  var proxyHeader: js.UndefOr[String] = js.native
+  var proxyHeader: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * URL to the BackendService resource.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * URLs to SslCertificate resources that are used to authenticate
     * connections to Backends. At least one SSL certificate must be specified.
     * Currently, you may specify up to 15 SSL certificates.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * URL of SslPolicy resource that will be associated with the TargetSslProxy
     * resource. If not set, the TargetSslProxy resource will not have any SSL
     * policy configured.
     */
-  var sslPolicy: js.UndefOr[String] = js.native
+  var sslPolicy: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetSslProxy {
   

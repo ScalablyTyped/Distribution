@@ -8,13 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents main storage functionality. */
-@js.native
 trait XStorage
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XComponent {
   
   /**
@@ -34,7 +33,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def cloneEncryptedStreamElement(sStreamName: String, sPassword: String): XStream = js.native
+  def cloneEncryptedStreamElement(sStreamName: String, sPassword: String): XStream
   
   /**
     * allows to get readonly copy of a child stream of the storage.
@@ -47,7 +46,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def cloneStreamElement(sStreamName: String): XStream = js.native
+  def cloneStreamElement(sStreamName: String): XStream
   
   /**
     * allows to copy an entry from one storage to another.
@@ -62,7 +61,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during copying
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def copyElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit = js.native
+  def copyElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit
   
   /**
     * allows to get copy of this storage at the state of its last commit.
@@ -74,7 +73,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during copying
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def copyLastCommitTo(xTargetStorage: XStorage): Unit = js.native
+  def copyLastCommitTo(xTargetStorage: XStorage): Unit
   
   /**
     * allows to get copy of a child storage at the state of its last commit.
@@ -87,7 +86,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during copying
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def copyStorageElementLastCommitTo(sStorName: String, xTargetStorage: XStorage): Unit = js.native
+  def copyStorageElementLastCommitTo(sStorName: String, xTargetStorage: XStorage): Unit
   
   /**
     * allows to copy current storage to another one
@@ -100,7 +99,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during copying
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exception acquired during copying
     */
-  def copyToStorage(xDest: XStorage): Unit = js.native
+  def copyToStorage(xDest: XStorage): Unit
   
   /**
     * allows to check if an element is a child storage with specified name.
@@ -112,7 +111,7 @@ trait XStorage
     * @throws com::sun::star::lang::IllegalArgumentException an illegal argument is provided
     * @throws com::sun::star::embed::InvalidStorageException this storage is in invalid state for any reason
     */
-  def isStorageElement(sElementName: String): Boolean = js.native
+  def isStorageElement(sElementName: String): Boolean
   
   /**
     * allows to check if an element is a child stream with specified name.
@@ -124,7 +123,7 @@ trait XStorage
     * @throws com::sun::star::lang::IllegalArgumentException an illegal argument is provided
     * @throws com::sun::star::embed::InvalidStorageException this storage is in invalid state for any reason
     */
-  def isStreamElement(sElementName: String): Boolean = js.native
+  def isStreamElement(sElementName: String): Boolean
   
   /**
     * allows to move an entry from one storage to another.
@@ -139,7 +138,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during moving
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def moveElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit = js.native
+  def moveElementTo(sElementName: String, xDest: XStorage, sNewName: String): Unit
   
   /**
     * allows to get access to a child encrypted stream with password.
@@ -157,7 +156,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openEncryptedStreamElement(sStreamName: String, nOpenMode: Double, sPassword: String): XStream = js.native
+  def openEncryptedStreamElement(sStreamName: String, nOpenMode: Double, sPassword: String): XStream
   
   /**
     * allows to get access to a child storage.
@@ -171,7 +170,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openStorageElement(sStorName: String, nOpenMode: Double): XStorage = js.native
+  def openStorageElement(sStorName: String, nOpenMode: Double): XStorage
   
   /**
     * allows to get access to a child stream of the storage.
@@ -185,7 +184,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def openStreamElement(sStreamName: String, nOpenMode: Double): XStream = js.native
+  def openStreamElement(sStreamName: String, nOpenMode: Double): XStream
   
   /**
     * removes an element from a storage.
@@ -196,7 +195,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during removing
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def removeElement(sElementName: String): Unit = js.native
+  def removeElement(sElementName: String): Unit
   
   /**
     * renames an element in a storage.
@@ -209,7 +208,7 @@ trait XStorage
     * @throws com::sun::star::io::IOException in case of io errors during renaming
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def renameElement(sElementName: String, sNewName: String): Unit = js.native
+  def renameElement(sElementName: String, sNewName: String): Unit
 }
 object XStorage {
   

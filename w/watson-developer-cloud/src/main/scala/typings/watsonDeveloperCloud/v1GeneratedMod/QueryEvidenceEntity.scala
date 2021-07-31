@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Entity description and location within evidence field. */
-@js.native
 trait QueryEvidenceEntity extends StObject {
   
   /** The end location of the entity text in the identified field. This value is exclusive. */
-  var end_offset: js.UndefOr[Double] = js.native
+  var end_offset: js.UndefOr[Double] = js.undefined
   
   /** The start location of the entity text in the identified field. This value is inclusive. */
-  var start_offset: js.UndefOr[Double] = js.native
+  var start_offset: js.UndefOr[Double] = js.undefined
   
   /** The original text of this entity as found in the evidence field. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The entity type for this entity. Possible types vary based on model used. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object QueryEvidenceEntity {
   

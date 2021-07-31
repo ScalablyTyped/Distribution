@@ -4,7 +4,6 @@ import typings.logform.mod.Format_
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,29 +25,28 @@ object mod {
     
     var level: js.UndefOr[String] = js.native
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
     
     var silent: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait TransportStreamOptions extends StObject {
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var format: js.UndefOr[Format_] = js.native
+    var format: js.UndefOr[Format_] = js.undefined
     
-    var handleExceptions: js.UndefOr[Boolean] = js.native
+    var handleExceptions: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object TransportStreamOptions {
     
@@ -86,13 +84,13 @@ object mod {
       def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
       @scala.inline
-      def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
       @scala.inline
-      def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
+      def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogvUndefined: Self = StObject.set(x, "logv", js.undefined)

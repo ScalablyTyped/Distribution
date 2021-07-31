@@ -3,37 +3,35 @@ package typings.nwJs.mod.global.NWJSHelpers
 import typings.nwJs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * nw.Screen screen object
   */
-@js.native
 trait screen extends StObject {
   
   /**
     * Physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
     */
-  var bounds: Height = js.native
+  var bounds: Height
   
   /**
     * Unique id for a screen
     */
-  var id: Double = js.native
+  var id: Double
   
-  var isBuiltIn: Boolean = js.native
+  var isBuiltIn: Boolean
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleFactor: Double = js.native
+  var scaleFactor: Double
   
-  var touchSupport: Double = js.native
+  var touchSupport: Double
   
   /**
     * Useable area within the screen bound
     */
-  var work_area: Height = js.native
+  var work_area: Height
 }
 object screen {
   

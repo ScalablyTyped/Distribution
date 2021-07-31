@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated DeprecatedThis interface is superseded by the com::sun::star::form::submission::XSubmissionVetoListener interface. New implementations should use
   * @see XSubmit
   */
-@js.native
-trait XSubmitListener extends XEventListener {
+trait XSubmitListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a component is about to submit it's data.
     * @param Event the event happened
     * @returns `TRUE` when submitting was approved, otherwise `FALSE` .
     */
-  def approveSubmit(Event: EventObject): Boolean = js.native
+  def approveSubmit(Event: EventObject): Boolean
 }
 object XSubmitListener {
   

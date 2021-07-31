@@ -10,9 +10,9 @@ Miscellaneous utils used by CKEditor 5.
 | ------------------ | :-------------: |
 | Full name          | @ckeditor/ckeditor5-utils |
 | Keywords           | ckeditor, ckeditor5, ckeditor 5, ckeditor5-lib |
-| # releases         | 17 |
-| # dependents       | 102 |
-| # downloads        | 1649919 |
+| # releases         | 19 |
+| # dependents       | 150 |
+| # downloads        | 2073411 |
 | # stars            | 0 |
 
 ## Links

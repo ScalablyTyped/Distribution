@@ -2,17 +2,15 @@ package typings.prosemirrorDropcursor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Color extends StObject {
     
-    var color: js.UndefOr[String | Null] = js.native
+    var color: js.UndefOr[String | Null] = js.undefined
     
-    var width: js.UndefOr[Double | Null] = js.native
+    var width: js.UndefOr[Double | Null] = js.undefined
   }
   object Color {
     

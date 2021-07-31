@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCConfiguration extends StObject {
   
-  var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.native
+  var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
   
-  var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.native
+  var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.undefined
   
-  var iceCandidatePoolSize: js.UndefOr[Double] = js.native
+  var iceCandidatePoolSize: js.UndefOr[Double] = js.undefined
   
-  var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.native
+  var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
   
-  var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.native
+  var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
   
-  var peerIdentity: js.UndefOr[java.lang.String] = js.native
+  var peerIdentity: js.UndefOr[java.lang.String] = js.undefined
   
-  var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.native
+  var rtcpMuxPolicy: js.UndefOr[RTCRtcpMuxPolicy] = js.undefined
 }
 object RTCConfiguration {
   

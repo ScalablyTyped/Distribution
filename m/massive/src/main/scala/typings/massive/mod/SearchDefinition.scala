@@ -2,22 +2,20 @@ package typings.massive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchDefinition extends StObject {
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
-  var term: String = js.native
+  var term: String
   
-  var where: AnyObject[_] = js.native
+  var where: AnyObject[js.Any]
 }
 object SearchDefinition {
   
   @scala.inline
-  def apply(fields: js.Array[String], term: String, where: AnyObject[_]): SearchDefinition = {
+  def apply(fields: js.Array[String], term: String, where: AnyObject[js.Any]): SearchDefinition = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchDefinition]
   }
@@ -35,6 +33,6 @@ object SearchDefinition {
     def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWhere(value: AnyObject[_]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    def setWhere(value: AnyObject[js.Any]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
   }
 }

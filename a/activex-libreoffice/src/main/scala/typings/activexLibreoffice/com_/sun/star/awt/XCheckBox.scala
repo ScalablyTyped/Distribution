@@ -4,42 +4,42 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the state of a check box and makes it possible to register for events. */
-@js.native
-trait XCheckBox extends XInterface {
+trait XCheckBox
+  extends StObject
+     with XInterface {
   
   /**
     * returns the state of the check box.
     * @see com.sun.star.awt.UnoControlCheckBoxModel.State
     */
-  var State: Double = js.native
+  var State: Double
   
   /** registers a listener for item events. */
-  def addItemListener(l: XItemListener): Unit = js.native
+  def addItemListener(l: XItemListener): Unit
   
   /** enables or disables the tri state mode. */
-  def enableTriState(b: Boolean): Unit = js.native
+  def enableTriState(b: Boolean): Unit
   
   /**
     * returns the state of the check box.
     * @see com.sun.star.awt.UnoControlCheckBoxModel.State
     */
-  def getState(): Double = js.native
+  def getState(): Double
   
   /** unregisters a listener for item events. */
-  def removeItemListener(l: XItemListener): Unit = js.native
+  def removeItemListener(l: XItemListener): Unit
   
   /** sets the label of the check box. */
-  def setLabel(Label: String): Unit = js.native
+  def setLabel(Label: String): Unit
   
   /**
     * sets the state of the check box.
     * @see com.sun.star.awt.UnoControlCheckBoxModel.State
     */
-  def setState(n: Double): Unit = js.native
+  def setState(n: Double): Unit
 }
 object XCheckBox {
   

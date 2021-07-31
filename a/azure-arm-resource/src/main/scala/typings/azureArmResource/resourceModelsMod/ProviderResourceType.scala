@@ -3,36 +3,34 @@ package typings.azureArmResource.resourceModelsMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderResourceType extends StObject {
   
   /**
     * The aliases that are supported by this resource type.
     */
-  var aliases: js.UndefOr[js.Array[AliasType]] = js.native
+  var aliases: js.UndefOr[js.Array[AliasType]] = js.undefined
   
   /**
     * The API version.
     */
-  var apiVersions: js.UndefOr[js.Array[String]] = js.native
+  var apiVersions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The collection of locations where this resource type can be created.
     */
-  var locations: js.UndefOr[js.Array[String]] = js.native
+  var locations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The properties.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The resource type.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object ProviderResourceType {
   

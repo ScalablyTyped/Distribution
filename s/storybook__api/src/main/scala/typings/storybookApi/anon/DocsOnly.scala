@@ -2,15 +2,13 @@ package typings.storybookApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocsOnly extends StObject {
   
-  var docsOnly: js.UndefOr[Boolean] = js.native
+  var docsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.native
+  var viewMode: js.UndefOr[typings.storybookApi.addonsMod.ViewMode] = js.undefined
 }
 object DocsOnly {
   

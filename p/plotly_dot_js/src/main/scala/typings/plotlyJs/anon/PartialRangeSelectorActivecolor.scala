@@ -9,34 +9,32 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.RangeSelector> */
-@js.native
 trait PartialRangeSelectorActivecolor extends StObject {
   
-  var activecolor: js.UndefOr[String] = js.native
+  var activecolor: js.UndefOr[String] = js.undefined
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var bordercolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var buttons: js.UndefOr[js.Array[PartialRangeSelectorButto]] = js.native
+  var buttons: js.UndefOr[js.Array[PartialRangeSelectorButto]] = js.undefined
   
-  var font: js.UndefOr[PartialFont] = js.native
+  var font: js.UndefOr[PartialFont] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xanchor: js.UndefOr[auto | left | center | right] = js.native
+  var xanchor: js.UndefOr[auto | left | center | right] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[auto | top | middle | bottom] = js.undefined
 }
 object PartialRangeSelectorActivecolor {
   

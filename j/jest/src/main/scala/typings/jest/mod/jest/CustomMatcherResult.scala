@@ -2,15 +2,13 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomMatcherResult extends StObject {
   
-  def message(): String = js.native
+  def message(): String
   
-  var pass: Boolean = js.native
+  var pass: Boolean
 }
 object CustomMatcherResult {
   

@@ -2,7 +2,6 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,30 +23,20 @@ trait Entry extends StObject {
     * Directory copies are always recursive--that is, they copy all contents of the directory.
     */
   def copyTo(parent: DirectoryEntry): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
-  def copyTo(parent: DirectoryEntry, newName: js.UndefOr[scala.Nothing], successCallback: EntryCallback): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: EntryCallback,
-    errorCallback: ErrorCallback
-  ): Unit = js.native
   def copyTo(parent: DirectoryEntry, newName: String): Unit = js.native
-  def copyTo(
-    parent: DirectoryEntry,
-    newName: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def copyTo(parent: DirectoryEntry, newName: String, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def copyTo(parent: DirectoryEntry, newName: String, successCallback: EntryCallback): Unit = js.native
   def copyTo(
     parent: DirectoryEntry,
     newName: String,
+    successCallback: EntryCallback,
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def copyTo(parent: DirectoryEntry, newName: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+  def copyTo(parent: DirectoryEntry, newName: Unit, successCallback: EntryCallback): Unit = js.native
+  def copyTo(
+    parent: DirectoryEntry,
+    newName: Unit,
     successCallback: EntryCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native
@@ -103,30 +92,20 @@ trait Entry extends StObject {
     * A move of a directory on top of an existing empty directory must attempt to delete and replace that directory.
     */
   def moveTo(parent: DirectoryEntry): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
-  def moveTo(parent: DirectoryEntry, newName: js.UndefOr[scala.Nothing], successCallback: EntryCallback): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: js.UndefOr[scala.Nothing],
-    successCallback: EntryCallback,
-    errorCallback: ErrorCallback
-  ): Unit = js.native
   def moveTo(parent: DirectoryEntry, newName: String): Unit = js.native
-  def moveTo(
-    parent: DirectoryEntry,
-    newName: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: ErrorCallback
-  ): Unit = js.native
+  def moveTo(parent: DirectoryEntry, newName: String, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
   def moveTo(parent: DirectoryEntry, newName: String, successCallback: EntryCallback): Unit = js.native
   def moveTo(
     parent: DirectoryEntry,
     newName: String,
+    successCallback: EntryCallback,
+    errorCallback: ErrorCallback
+  ): Unit = js.native
+  def moveTo(parent: DirectoryEntry, newName: Unit, successCallback: Unit, errorCallback: ErrorCallback): Unit = js.native
+  def moveTo(parent: DirectoryEntry, newName: Unit, successCallback: EntryCallback): Unit = js.native
+  def moveTo(
+    parent: DirectoryEntry,
+    newName: Unit,
     successCallback: EntryCallback,
     errorCallback: ErrorCallback
   ): Unit = js.native

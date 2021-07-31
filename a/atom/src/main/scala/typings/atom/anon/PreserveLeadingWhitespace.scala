@@ -2,13 +2,11 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreserveLeadingWhitespace extends StObject {
   
-  var preserveLeadingWhitespace: js.UndefOr[Boolean] = js.native
+  var preserveLeadingWhitespace: js.UndefOr[Boolean] = js.undefined
 }
 object PreserveLeadingWhitespace {
   

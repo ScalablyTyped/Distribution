@@ -5,10 +5,13 @@ import typings.egjsAxes.axisManagerMod.Axis
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputTypeMod {
+  
+  @JSImport("@egjs/axes/inputType/InputType", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@egjs/axes/inputType/InputType", "SUPPORT_TOUCH")
   @js.native
@@ -18,46 +21,40 @@ object inputTypeMod {
   @js.native
   val UNIQUEKEY: /* "_EGJS_AXES_INPUTTYPE_" */ String = js.native
   
-  @JSImport("@egjs/axes/inputType/InputType", "convertInputType")
-  @js.native
-  def convertInputType(): js.Any = js.native
-  @JSImport("@egjs/axes/inputType/InputType", "convertInputType")
-  @js.native
-  def convertInputType(inputType: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def convertInputType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")().asInstanceOf[js.Any]
+  @scala.inline
+  def convertInputType(inputType: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("convertInputType")(inputType.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@egjs/axes/inputType/InputType", "createHammer")
-  @js.native
-  def createHammer(element: HTMLElement, recognizers: js.Any): js.Any = js.native
-  @JSImport("@egjs/axes/inputType/InputType", "createHammer")
-  @js.native
-  def createHammer(element: HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = js.native
+  @scala.inline
+  def createHammer(element: HTMLElement, recognizers: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def createHammer(element: HTMLElement, recognizers: js.Any, inputClass: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createHammer")(element.asInstanceOf[js.Any], recognizers.asInstanceOf[js.Any], inputClass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@egjs/axes/inputType/InputType", "toAxis")
-  @js.native
-  def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = js.native
+  @scala.inline
+  def toAxis(source: js.Array[String], offset: js.Array[Double]): Axis = (^.asInstanceOf[js.Dynamic].applyDynamic("toAxis")(source.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Axis]
   
-  @js.native
   trait IInputType extends StObject {
     
-    var axes: js.Array[String] = js.native
+    var axes: js.Array[String]
     
-    def connect(observer: IInputTypeObserver): IInputType = js.native
+    def connect(observer: IInputTypeObserver): IInputType
     
-    def destroy(): js.Any = js.native
+    def destroy(): js.Any
     
-    var disable: js.UndefOr[js.Function0[_]] = js.native
+    var disable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    def disconnect(): js.Any = js.native
+    def disconnect(): js.Any
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var enable: js.UndefOr[js.Function0[_]] = js.native
+    var enable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var hammer: js.UndefOr[js.Any] = js.native
+    var hammer: js.UndefOr[js.Any] = js.undefined
     
-    var isEnable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isEnable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    def mapAxes(axes: js.Array[String]): js.Any = js.native
+    def mapAxes(axes: js.Array[String]): js.Any
   }
   object IInputType {
     
@@ -90,7 +87,7 @@ object inputTypeMod {
       def setDestroy(value: () => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setDisable(value: () => _): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
@@ -102,7 +99,7 @@ object inputTypeMod {
       def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEnable(value: () => _): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      def setEnable(value: () => js.Any): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)

@@ -2,29 +2,27 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CriticalSound extends StObject {
   
   /**
     * The critical alert flag. Set to `true` to enable the critical alert.
     */
-  var critical: js.UndefOr[Boolean] = js.native
+  var critical: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of a sound file in the app's main bundle or in the `Library/Sounds`
     * folder of the app's container directory. Specify the string "default" to play
     * the system sound.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The volume for the critical alert's sound. Must be a value between 0.0
     * (silent) and 1.0 (full volume).
     */
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object CriticalSound {
   

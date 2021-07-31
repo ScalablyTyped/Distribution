@@ -8,11 +8,12 @@ import typings.browserfs.mountableFileSystemMod.MountableFileSystemOptions
 import typings.browserfs.mountableFileSystemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofMountableFileSystem extends Instantiable0[default] {
+trait TypeofMountableFileSystem
+  extends StObject
+     with Instantiable0[default] {
   
   /**
     * Creates a MountableFileSystem instance with the given options.

@@ -3,15 +3,37 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerSubmenuMod {
   
   @JSImport("carbon-components/components/ui-shell/header-submenu", JSImport.Default)
   @js.native
-  class default protected () extends HeaderSubmenu {
+  class default protected ()
+    extends StObject
+       with HeaderSubmenu {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _getAction(event: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def _getNewState(action: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def _handleEvent(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeyDown(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _setState(hasShouldBeExpandedShouldFocusOnOpen: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getCurrentNavigation(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def navigate(direction: js.Any): Unit = js.native
   }
   object default {
     
@@ -80,22 +102,21 @@ object headerSubmenuMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait HeaderSubmenu extends StObject {
+  - Dropped any */ trait HeaderSubmenu extends StObject {
     
-    def _getAction(event: js.Any): js.Any = js.native
+    def _getAction(event: js.Any): js.Any
     
-    def _getNewState(action: js.Any): Boolean = js.native
+    def _getNewState(action: js.Any): Boolean
     
-    def _handleEvent(event: js.Any): Unit = js.native
+    def _handleEvent(event: js.Any): Unit
     
-    def _handleKeyDown(event: js.Any): Unit = js.native
+    def _handleKeyDown(event: js.Any): Unit
     
-    def _setState(hasShouldBeExpandedShouldFocusOnOpen: js.Any): Unit = js.native
+    def _setState(hasShouldBeExpandedShouldFocusOnOpen: js.Any): Unit
     
-    def getCurrentNavigation(): js.Any = js.native
+    def getCurrentNavigation(): js.Any
     
-    def navigate(direction: js.Any): Unit = js.native
+    def navigate(direction: js.Any): Unit
   }
   object HeaderSubmenu {
     

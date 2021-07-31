@@ -2,31 +2,29 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityGroupRemediationAction extends StObject {
   
   /**
     * Brief description of the action that will be performed.
     */
-  var Description: js.UndefOr[RemediationActionDescription] = js.native
+  var Description: js.UndefOr[RemediationActionDescription] = js.undefined
   
   /**
     * Indicates if the current action is the default action.
     */
-  var IsDefaultAction: js.UndefOr[Boolean] = js.native
+  var IsDefaultAction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The remediation action that will be performed.
     */
-  var RemediationActionType: js.UndefOr[typings.awsSdk.fmsMod.RemediationActionType] = js.native
+  var RemediationActionType: js.UndefOr[typings.awsSdk.fmsMod.RemediationActionType] = js.undefined
   
   /**
     * The final state of the rule specified in the ViolationTarget after it is remediated.
     */
-  var RemediationResult: js.UndefOr[SecurityGroupRuleDescription] = js.native
+  var RemediationResult: js.UndefOr[SecurityGroupRuleDescription] = js.undefined
 }
 object SecurityGroupRemediationAction {
   

@@ -10,9 +10,9 @@ Tag input component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-tags |
 | Keywords           | react native, tags, tag input |
-| # releases         | 6 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 17174 |
+| # downloads        | 19258 |
 | # stars            | 0 |
 
 ## Links

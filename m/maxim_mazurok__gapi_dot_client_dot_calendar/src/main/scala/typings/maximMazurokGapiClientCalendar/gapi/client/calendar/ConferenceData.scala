@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConferenceData extends StObject {
   
   /**
@@ -17,33 +15,33 @@ trait ConferenceData extends StObject {
     * - "hangoutsMeet": the 10-letter meeting code, for example "aaa-bbbb-ccc".
     * - "addOn": defined by 3P conference provider.  Optional.
     */
-  var conferenceId: js.UndefOr[String] = js.native
+  var conferenceId: js.UndefOr[String] = js.undefined
   
   /**
     * The conference solution, such as Hangouts or Google Meet.
     * Unset for a conference with a failed create request.
     * Either conferenceSolution and at least one entryPoint, or createRequest is required.
     */
-  var conferenceSolution: js.UndefOr[ConferenceSolution] = js.native
+  var conferenceSolution: js.UndefOr[ConferenceSolution] = js.undefined
   
   /**
     * A request to generate a new conference and attach it to the event. The data is generated asynchronously. To see whether the data is present check the status field.
     * Either conferenceSolution and at least one entryPoint, or createRequest is required.
     */
-  var createRequest: js.UndefOr[CreateConferenceRequest] = js.native
+  var createRequest: js.UndefOr[CreateConferenceRequest] = js.undefined
   
   /**
     * Information about individual conference entry points, such as URLs or phone numbers.
     * All of them must belong to the same conference.
     * Either conferenceSolution and at least one entryPoint, or createRequest is required.
     */
-  var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.native
+  var entryPoints: js.UndefOr[js.Array[EntryPoint]] = js.undefined
   
   /** Additional notes (such as instructions from the domain administrator, legal notices) to display to the user. Can contain HTML. The maximum length is 2048 characters. Optional. */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /** Additional properties related to a conference. An example would be a solution-specific setting for enabling video streaming. */
-  var parameters: js.UndefOr[ConferenceParameters] = js.native
+  var parameters: js.UndefOr[ConferenceParameters] = js.undefined
   
   /**
     * The signature of the conference data.
@@ -51,7 +49,7 @@ trait ConferenceData extends StObject {
     * Unset for a conference with a failed create request.
     * Optional for a conference with a pending create request.
     */
-  var signature: js.UndefOr[String] = js.native
+  var signature: js.UndefOr[String] = js.undefined
 }
 object ConferenceData {
   

@@ -4,39 +4,37 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an alternate setting and select that setting. The app can get the USB interface descriptors for the setting and its endpoints, and determine whether this setting is currently selected. */
-@js.native
 trait UsbInterfaceSetting extends StObject {
   
   /** Gets an array of objects that represent descriptors associated with USB bulk IN endpoints that are defined in the alternate setting. */
-  var bulkInEndpoints: IVectorView[UsbBulkInEndpointDescriptor] = js.native
+  var bulkInEndpoints: IVectorView[UsbBulkInEndpointDescriptor]
   
   /** Gets an array of objects that represent descriptors associated with USB bulk OUT endpoints that are defined in the alternate setting. */
-  var bulkOutEndpoints: IVectorView[UsbBulkOutEndpointDescriptor] = js.native
+  var bulkOutEndpoints: IVectorView[UsbBulkOutEndpointDescriptor]
   
   /** Gets an array of objects that represent descriptors associated with the alternate setting. */
-  var descriptors: IVectorView[UsbDescriptor] = js.native
+  var descriptors: IVectorView[UsbDescriptor]
   
   /** Gets an object that represents the descriptor that describes the alternate setting. */
-  var interfaceDescriptor: UsbInterfaceDescriptor = js.native
+  var interfaceDescriptor: UsbInterfaceDescriptor
   
   /** Gets an array of objects that represent descriptors associated with USB interrupt IN endpoints that are defined in the alternate setting. */
-  var interruptInEndpoints: IVectorView[UsbInterruptInEndpointDescriptor] = js.native
+  var interruptInEndpoints: IVectorView[UsbInterruptInEndpointDescriptor]
   
   /** Gets an array of objects that represent descriptors associated with USB interrupt OUT endpoints that are defined in the alternate setting. */
-  var interruptOutEndpoints: IVectorView[UsbInterruptOutEndpointDescriptor] = js.native
+  var interruptOutEndpoints: IVectorView[UsbInterruptOutEndpointDescriptor]
   
   /**
     * Selects the alternate setting as the current setting in the USB interface.
     * @return An IAsyncAction object that is used to control the asynchronous operation.
     */
-  def selectSettingAsync(): IPromiseWithIAsyncAction = js.native
+  def selectSettingAsync(): IPromiseWithIAsyncAction
   
   /** Determines whether the alternate setting is currently selected. */
-  var selected: Boolean = js.native
+  var selected: Boolean
 }
 object UsbInterfaceSetting {
   

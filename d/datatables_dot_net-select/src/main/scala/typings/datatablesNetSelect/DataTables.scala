@@ -8,15 +8,13 @@ import typings.datatablesNetSelect.datatablesNetSelectStrings.os
 import typings.datatablesNetSelect.datatablesNetSelectStrings.single
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    var select: Style = js.native
+    var select: Style
   }
   object Api {
     
@@ -34,18 +32,17 @@ object DataTables {
     }
   }
   
-  @js.native
   trait CellMethods extends StObject {
     
     /**
       * Deselect a cell
       */
-    def deselect(): Api = js.native
+    def deselect(): Api
     
     /**
       * Select cell
       */
-    def select(): Api = js.native
+    def select(): Api
   }
   object CellMethods {
     
@@ -66,18 +63,17 @@ object DataTables {
     }
   }
   
-  @js.native
   trait CellsMethods extends StObject {
     
     /**
       * Deselect cells
       */
-    def deselect(): Api = js.native
+    def deselect(): Api
     
     /**
       * Select multiple cells
       */
-    def select(): Api = js.native
+    def select(): Api
   }
   object CellsMethods {
     
@@ -98,18 +94,17 @@ object DataTables {
     }
   }
   
-  @js.native
   trait RowMethods extends StObject {
     
     /**
       * Deselect a row
       */
-    def deselect(): Api = js.native
+    def deselect(): Api
     
     /**
       * Select a row
       */
-    def select(): Api = js.native
+    def select(): Api
   }
   object RowMethods {
     
@@ -130,18 +125,17 @@ object DataTables {
     }
   }
   
-  @js.native
   trait RowsMethods extends StObject {
     
     /**
       * Deselect a row
       */
-    def deselect(): Api = js.native
+    def deselect(): Api
     
     /**
       * Select multiple rows
       */
-    def select(): Api = js.native
+    def select(): Api
   }
   object RowsMethods {
     
@@ -162,38 +156,37 @@ object DataTables {
     }
   }
   
-  @js.native
   trait SelectSettings extends StObject {
     
     /*
       * Indicate if the selected items will be removed when clicking outside of the table
       */
-    var blurable: js.UndefOr[Boolean] = js.native
+    var blurable: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Set the class name that will be applied to selected items
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /*
       * Enable / disable the display for item selection information in the table summary
       */
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Set which table items to select (rows, columns or cells)
       */
-    var items: js.UndefOr[String] = js.native
+    var items: js.UndefOr[String] = js.undefined
     
     /*
       * Set the element selector used for mouse event capture to select items
       */
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
     /*
       * Set the selection style for end user interaction with the table
       */
-    var style: js.UndefOr[api | single | multi | os | multiPlussignshift] = js.native
+    var style: js.UndefOr[api | single | multi | os | multiPlussignshift] = js.undefined
   }
   object SelectSettings {
     
@@ -244,13 +237,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * Select extension options
       */
-    var select: js.UndefOr[Boolean | String | SelectSettings] = js.native
+    var select: js.UndefOr[Boolean | String | SelectSettings] = js.undefined
   }
   object Settings {
     

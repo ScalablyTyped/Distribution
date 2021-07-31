@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
   /**
     * The column in the line containing the specified position in the document.
     */
-  var Column: js.UndefOr[ColumnNumber] = js.native
+  var Column: js.UndefOr[ColumnNumber] = js.undefined
   
   /**
     * The line containing the specified position in the document.
     */
-  var Line: js.UndefOr[LineNumber] = js.native
+  var Line: js.UndefOr[LineNumber] = js.undefined
 }
 object Position {
   

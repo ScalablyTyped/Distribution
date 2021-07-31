@@ -3,27 +3,25 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.vsoNodeApi.anon.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionPayload extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var installationTargets: js.Array[InstallationTarget] = js.native
+  var installationTargets: js.Array[InstallationTarget]
   
-  var isSignedByMicrosoft: Boolean = js.native
+  var isSignedByMicrosoft: Boolean
   
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
-  var metadata: js.Array[KeyValue] = js.native
+  var metadata: js.Array[KeyValue]
   
-  var `type`: ExtensionDeploymentTechnology = js.native
+  var `type`: ExtensionDeploymentTechnology
 }
 object ExtensionPayload {
   

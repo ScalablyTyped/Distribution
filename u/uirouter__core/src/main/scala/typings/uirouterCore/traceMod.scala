@@ -13,7 +13,6 @@ import typings.uirouterCore.viewInterfaceMod.ViewContext
 import typings.uirouterCore.viewViewMod.ViewTuple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traceMod {
@@ -38,27 +37,37 @@ object traceMod {
   object Category extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Category with Double] = js.native
+    def apply(value: Double): js.UndefOr[Category & Double] = js.native
     
     @js.native
-    sealed trait HOOK extends Category
-    /* 2 */ val HOOK: typings.uirouterCore.traceMod.Category.HOOK with Double = js.native
+    sealed trait HOOK
+      extends StObject
+         with Category
+    /* 2 */ val HOOK: typings.uirouterCore.traceMod.Category.HOOK & Double = js.native
     
     @js.native
-    sealed trait RESOLVE extends Category
-    /* 0 */ val RESOLVE: typings.uirouterCore.traceMod.Category.RESOLVE with Double = js.native
+    sealed trait RESOLVE
+      extends StObject
+         with Category
+    /* 0 */ val RESOLVE: typings.uirouterCore.traceMod.Category.RESOLVE & Double = js.native
     
     @js.native
-    sealed trait TRANSITION extends Category
-    /* 1 */ val TRANSITION: typings.uirouterCore.traceMod.Category.TRANSITION with Double = js.native
+    sealed trait TRANSITION
+      extends StObject
+         with Category
+    /* 1 */ val TRANSITION: typings.uirouterCore.traceMod.Category.TRANSITION & Double = js.native
     
     @js.native
-    sealed trait UIVIEW extends Category
-    /* 3 */ val UIVIEW: typings.uirouterCore.traceMod.Category.UIVIEW with Double = js.native
+    sealed trait UIVIEW
+      extends StObject
+         with Category
+    /* 3 */ val UIVIEW: typings.uirouterCore.traceMod.Category.UIVIEW & Double = js.native
     
     @js.native
-    sealed trait VIEWCONFIG extends Category
-    /* 4 */ val VIEWCONFIG: typings.uirouterCore.traceMod.Category.VIEWCONFIG with Double = js.native
+    sealed trait VIEWCONFIG
+      extends StObject
+         with Category
+    /* 4 */ val VIEWCONFIG: typings.uirouterCore.traceMod.Category.VIEWCONFIG & Double = js.native
   }
   
   @JSImport("@uirouter/core/lib/common/trace", "Trace")

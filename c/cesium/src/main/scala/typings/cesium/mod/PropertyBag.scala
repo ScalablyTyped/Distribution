@@ -2,33 +2,25 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PropertyBag")
 @js.native
 class PropertyBag () extends StObject {
   def this(value: js.Object) = this()
-  def this(
-    value: js.UndefOr[scala.Nothing],
-    createPropertyCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]
-  ) = this()
   def this(value: js.Object, createPropertyCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]) = this()
+  def this(value: Unit, createPropertyCallback: js.Function1[/* value */ js.UndefOr[js.Any], Unit]) = this()
   
   def addProperty(propertyName: String): Unit = js.native
-  def addProperty(
-    propertyName: String,
-    value: js.UndefOr[scala.Nothing],
-    createPropertyCallback: js.Function1[/* value */ js.Any, Unit]
-  ): Unit = js.native
   def addProperty(propertyName: String, value: js.Any): Unit = js.native
   def addProperty(
     propertyName: String,
     value: js.Any,
     createPropertyCallback: js.Function1[/* value */ js.Any, Unit]
   ): Unit = js.native
+  def addProperty(propertyName: String, value: Unit, createPropertyCallback: js.Function1[/* value */ js.Any, Unit]): Unit = js.native
   
-  val definitionChanged: Event[js.Array[_]] = js.native
+  val definitionChanged: Event[js.Array[js.Any]] = js.native
   
   def equals(): Boolean = js.native
   def equals(other: Property): Boolean = js.native

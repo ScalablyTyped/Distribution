@@ -3,7 +3,6 @@ package typings.casperjs.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait Tester extends StObject {
   def assertEval(fn: js.Function, message: String, args: js.Any): js.Any = js.native
   
   def assertEvalEquals(fn: js.Function, expected: js.Any): js.Any = js.native
-  def assertEvalEquals(fn: js.Function, expected: js.Any, message: js.UndefOr[scala.Nothing], args: js.Any): js.Any = js.native
   def assertEvalEquals(fn: js.Function, expected: js.Any, message: String): js.Any = js.native
   def assertEvalEquals(fn: js.Function, expected: js.Any, message: String, args: js.Any): js.Any = js.native
+  def assertEvalEquals(fn: js.Function, expected: js.Any, message: Unit, args: js.Any): js.Any = js.native
   
   def assertExists(selector: String): js.Any = js.native
   def assertExists(selector: String, message: String): js.Any = js.native
@@ -41,9 +40,9 @@ trait Tester extends StObject {
   def assertFieldCSS(cssSelector: String, expected: String, message: String): js.Any = js.native
   
   def assertFieldName(inputName: String, expected: String): js.Any = js.native
-  def assertFieldName(inputName: String, expected: String, message: js.UndefOr[scala.Nothing], options: js.Any): js.Any = js.native
   def assertFieldName(inputName: String, expected: String, message: String): js.Any = js.native
   def assertFieldName(inputName: String, expected: String, message: String, options: js.Any): js.Any = js.native
+  def assertFieldName(inputName: String, expected: String, message: Unit, options: js.Any): js.Any = js.native
   
   def assertFieldXPath(xpathSelector: String, expected: String): js.Any = js.native
   def assertFieldXPath(xpathSelector: String, expected: String, message: String): js.Any = js.native
@@ -66,8 +65,8 @@ trait Tester extends StObject {
   def assertNotVisible(selector: String): js.Any = js.native
   def assertNotVisible(selector: String, message: String): js.Any = js.native
   
-  def assertRaises(fn: js.Function, args: js.Array[_]): js.Any = js.native
-  def assertRaises(fn: js.Function, args: js.Array[_], message: String): js.Any = js.native
+  def assertRaises(fn: js.Function, args: js.Array[js.Any]): js.Any = js.native
+  def assertRaises(fn: js.Function, args: js.Array[js.Any], message: String): js.Any = js.native
   
   def assertResourceExists(testFx: js.Function): js.Any = js.native
   def assertResourceExists(testFx: js.Function, message: String): js.Any = js.native

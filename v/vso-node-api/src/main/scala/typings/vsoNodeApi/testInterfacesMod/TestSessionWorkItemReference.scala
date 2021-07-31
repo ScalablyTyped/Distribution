@@ -2,21 +2,19 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSessionWorkItemReference extends StObject {
   
   /**
     * Id of the workitem
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Type of the workitem
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object TestSessionWorkItemReference {
   

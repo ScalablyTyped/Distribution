@@ -2,15 +2,15 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalSidValueBlockParams extends LocalHexBlockParams {
+trait LocalSidValueBlockParams
+  extends StObject
+     with LocalHexBlockParams {
   
-  var isFirstSid: js.UndefOr[scala.Boolean] = js.native
+  var isFirstSid: js.UndefOr[scala.Boolean] = js.undefined
   
-  var valueDec: js.UndefOr[Double] = js.native
+  var valueDec: js.UndefOr[Double] = js.undefined
 }
 object LocalSidValueBlockParams {
   

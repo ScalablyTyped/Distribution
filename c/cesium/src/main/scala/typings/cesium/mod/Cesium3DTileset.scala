@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.BaseScreenSpaceError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "Cesium3DTileset")
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Cesium3DTileset protected () extends StObject {
   def this(Cesium3DTilesetItem: BaseScreenSpaceError) = this()
   
-  var allTilesLoaded: Event[js.Array[_]] = js.native
+  var allTilesLoaded: Event[js.Array[js.Any]] = js.native
   
   val asset: js.Any = js.native
   
@@ -77,13 +76,13 @@ class Cesium3DTileset protected () extends StObject {
   
   var immediatelyLoadDesiredLevelOfDetail: Boolean = js.native
   
-  var initialTilesLoaded: Event[js.Array[_]] = js.native
+  var initialTilesLoaded: Event[js.Array[js.Any]] = js.native
   
   def isDestroyed(): Boolean = js.native
   
   var lightColor: Cartesian3 = js.native
   
-  var loadProgress: Event[js.Array[_]] = js.native
+  var loadProgress: Event[js.Array[js.Any]] = js.native
   
   var loadSiblings: Boolean = js.native
   
@@ -136,13 +135,13 @@ class Cesium3DTileset protected () extends StObject {
   
   var style: Cesium3DTileStyle = js.native
   
-  var tileFailed: Event[js.Array[_]] = js.native
+  var tileFailed: Event[js.Array[js.Any]] = js.native
   
-  var tileLoad: Event[js.Array[_]] = js.native
+  var tileLoad: Event[js.Array[js.Any]] = js.native
   
-  var tileUnloaded: Event[js.Array[_]] = js.native
+  var tileUnloaded: Event[js.Array[js.Any]] = js.native
   
-  var tileVisible: Event[js.Array[_]] = js.native
+  var tileVisible: Event[js.Array[js.Any]] = js.native
   
   val tilesLoaded: Boolean = js.native
   
@@ -156,11 +155,13 @@ class Cesium3DTileset protected () extends StObject {
 }
 object Cesium3DTileset {
   
-  @JSImport("cesium", "Cesium3DTileset.loadJson")
+  @JSImport("cesium", "Cesium3DTileset")
   @js.native
-  def loadJson(tilesetUrl: String): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def loadJson(tilesetUrl: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   /* static member */
-  @JSImport("cesium", "Cesium3DTileset.loadJson")
-  @js.native
-  def loadJson(tilesetUrl: Resource): js.Promise[_] = js.native
+  @scala.inline
+  def loadJson(tilesetUrl: Resource): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadJson")(tilesetUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

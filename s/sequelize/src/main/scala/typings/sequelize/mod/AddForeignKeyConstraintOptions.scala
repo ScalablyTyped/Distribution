@@ -4,28 +4,28 @@ import typings.sequelize.anon.Field
 import typings.sequelize.sequelizeStrings.`foreign key`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddForeignKeyConstraintOptions extends AddConstraintOptions {
+trait AddForeignKeyConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onDelete: String = js.native
+  var onDelete: String
   
-  var onUpdate: String = js.native
+  var onUpdate: String
   
-  var references: js.UndefOr[Field] = js.native
+  var references: js.UndefOr[Field] = js.undefined
   
-  var `type`: `foreign key` = js.native
+  var `type`: `foreign key`
 }
 object AddForeignKeyConstraintOptions {
   
   @scala.inline
-  def apply(onDelete: String, onUpdate: String, `type`: `foreign key`): AddForeignKeyConstraintOptions = {
+  def apply(onDelete: String, onUpdate: String): AddForeignKeyConstraintOptions = {
     val __obj = js.Dynamic.literal(onDelete = onDelete.asInstanceOf[js.Any], onUpdate = onUpdate.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("foreign key")
     __obj.asInstanceOf[AddForeignKeyConstraintOptions]
   }
   

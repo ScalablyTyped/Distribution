@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStackSummaryResult extends StObject {
   
   /**
     * A StackSummary object that contains the results.
     */
-  var StackSummary: js.UndefOr[typings.awsSdk.opsworksMod.StackSummary] = js.native
+  var StackSummary: js.UndefOr[typings.awsSdk.opsworksMod.StackSummary] = js.undefined
 }
 object DescribeStackSummaryResult {
   

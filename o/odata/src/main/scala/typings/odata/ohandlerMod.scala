@@ -11,7 +11,6 @@ import typings.std.URL
 import typings.std.URLSearchParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ohandlerMod {
@@ -28,8 +27,8 @@ object ohandlerMod {
       * @param query The URLSearchParams that are added to the question mark on the url.
       *              That are usually the odata queries like $filter, $top, etc...
       */
-    def batch(): js.Promise[_] = js.native
-    def batch(query: OdataQuery): js.Promise[_] = js.native
+    def batch(): js.Promise[js.Any] = js.native
+    def batch(query: OdataQuery): js.Promise[js.Any] = js.native
     
     var config: OdataConfig = js.native
     
@@ -133,8 +132,8 @@ object ohandlerMod {
       *          resources are fetched, this method returns a array of array/object. If there
       *          is no content (e.g. for delete) this method returns the Response
       */
-    def query(): js.Promise[_] = js.native
-    def query(query: OdataQuery): js.Promise[_] = js.native
+    def query(): js.Promise[js.Any] = js.native
+    def query(query: OdataQuery): js.Promise[js.Any] = js.native
     
     /**
       * Use that method to add any kind of request (e.g. a head request) to

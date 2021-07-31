@@ -2,13 +2,11 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumerProps[T] extends StObject {
   
-  def children(value: T): ReactNode = js.native
+  def children(value: T): ReactNode
 }
 object ConsumerProps {
   
@@ -19,7 +17,7 @@ object ConsumerProps {
   }
   
   @scala.inline
-  implicit class ConsumerPropsMutableBuilder[Self <: ConsumerProps[_], T] (val x: Self with ConsumerProps[T]) extends AnyVal {
+  implicit class ConsumerPropsMutableBuilder[Self <: ConsumerProps[?], T] (val x: Self & ConsumerProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: T => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

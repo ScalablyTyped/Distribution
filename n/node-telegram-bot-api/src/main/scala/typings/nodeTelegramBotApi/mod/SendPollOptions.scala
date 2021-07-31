@@ -2,29 +2,29 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendPollOptions extends SendBasicOptions {
+trait SendPollOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var allows_multiple_answers: js.UndefOr[Boolean] = js.native
+  var allows_multiple_answers: js.UndefOr[Boolean] = js.undefined
   
-  var close_date: js.UndefOr[Double] = js.native
+  var close_date: js.UndefOr[Double] = js.undefined
   
-  var correct_option_id: js.UndefOr[Double] = js.native
+  var correct_option_id: js.UndefOr[Double] = js.undefined
   
-  var explanation: js.UndefOr[String] = js.native
+  var explanation: js.UndefOr[String] = js.undefined
   
-  var explanation_parse_mode: js.UndefOr[ParseMode] = js.native
+  var explanation_parse_mode: js.UndefOr[ParseMode] = js.undefined
   
-  var is_anonymous: js.UndefOr[Boolean] = js.native
+  var is_anonymous: js.UndefOr[Boolean] = js.undefined
   
-  var is_closed: js.UndefOr[Boolean] = js.native
+  var is_closed: js.UndefOr[Boolean] = js.undefined
   
-  var open_period: js.UndefOr[Double] = js.native
+  var open_period: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[PollType] = js.native
+  var `type`: js.UndefOr[PollType] = js.undefined
 }
 object SendPollOptions {
   

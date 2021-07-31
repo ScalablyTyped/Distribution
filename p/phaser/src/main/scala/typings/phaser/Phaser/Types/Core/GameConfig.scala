@@ -9,168 +9,166 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameConfig extends StObject {
   
   /**
     * The Audio Configuration object.
     */
-  var audio: js.UndefOr[AudioConfig] = js.native
+  var audio: js.UndefOr[AudioConfig] = js.undefined
   
   /**
     * Automatically call window.focus() when the game boots. Usually necessary to capture input events if the game is in a separate frame.
     */
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The background color of the game canvas. The default is black.
     */
-  var backgroundColor: js.UndefOr[String | Double] = js.native
+  var backgroundColor: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Configuration for the banner printed in the browser console when the game starts.
     */
-  var banner: js.UndefOr[Boolean | BannerConfig] = js.native
+  var banner: js.UndefOr[Boolean | BannerConfig] = js.undefined
   
   /**
     * Optional callbacks to run before or after game boot.
     */
-  var callbacks: js.UndefOr[CallbacksConfig] = js.native
+  var callbacks: js.UndefOr[CallbacksConfig] = js.undefined
   
   /**
     * Provide your own Canvas element for Phaser to use instead of creating one.
     */
-  var canvas: js.UndefOr[HTMLCanvasElement] = js.native
+  var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
   
   /**
     * CSS styles to apply to the game canvas instead of Phasers default styles.
     */
-  var canvasStyle: js.UndefOr[String] = js.native
+  var canvasStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Provide your own Canvas Context for Phaser to use, instead of creating one.
     */
-  var context: js.UndefOr[CanvasRenderingContext2D] = js.native
+  var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
   
   /**
     * Is Phaser running under a custom (non-native web) environment? If so, set this to `true` to skip internal Feature detection. If `true` the `renderType` cannot be left as `AUTO`.
     */
-  var customEnvironment: js.UndefOr[Boolean] = js.native
+  var customEnvironment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the browser's default 'contextmenu' event (usually triggered by a right-button mouse click).
     */
-  var disableContextMenu: js.UndefOr[Boolean] = js.native
+  var disableContextMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The DOM Container configuration object.
     */
-  var dom: js.UndefOr[DOMContainerConfig] = js.native
+  var dom: js.UndefOr[DOMContainerConfig] = js.undefined
   
   /**
     * Game loop configuration.
     */
-  var fps: js.UndefOr[FPSConfig] = js.native
+  var fps: js.UndefOr[FPSConfig] = js.undefined
   
   /**
     * The height of the game, in game pixels.
     */
-  var height: js.UndefOr[integer | String] = js.native
+  var height: js.UndefOr[integer | String] = js.undefined
   
   /**
     * Images configuration.
     */
-  var images: js.UndefOr[ImagesConfig] = js.native
+  var images: js.UndefOr[ImagesConfig] = js.undefined
   
   /**
     * Input configuration, or `false` to disable all game input.
     */
-  var input: js.UndefOr[Boolean | InputConfig] = js.native
+  var input: js.UndefOr[Boolean | InputConfig] = js.undefined
   
   /**
     * Loader configuration.
     */
-  var loader: js.UndefOr[LoaderConfig] = js.native
+  var loader: js.UndefOr[LoaderConfig] = js.undefined
   
   /**
     * The DOM element that will contain the game canvas, or its `id`. If undefined, or if the named element doesn't exist, the game canvas is appended to the document body. If `null` no parent will be used and you are responsible for adding the canvas to the dom.
     */
-  var parent: js.UndefOr[HTMLElement | String] = js.native
+  var parent: js.UndefOr[HTMLElement | String] = js.undefined
   
   /**
     * Physics configuration.
     */
-  var physics: js.UndefOr[PhysicsConfig] = js.native
+  var physics: js.UndefOr[PhysicsConfig] = js.undefined
   
   /**
     * Plugins to install.
     */
-  var plugins: js.UndefOr[PluginObject | js.Array[PluginObjectItem]] = js.native
+  var plugins: js.UndefOr[PluginObject | js.Array[PluginObjectItem]] = js.undefined
   
   /**
     * Game renderer configuration.
     */
-  var render: js.UndefOr[RenderConfig] = js.native
+  var render: js.UndefOr[RenderConfig] = js.undefined
   
   /**
     * The size of each game pixel, in canvas pixels. Values larger than 1 are "high" resolution.
     */
-  var resolution: js.UndefOr[Double] = js.native
+  var resolution: js.UndefOr[Double] = js.undefined
   
   /**
     * The Scale Manager configuration.
     */
-  var scale: js.UndefOr[ScaleConfig] = js.native
+  var scale: js.UndefOr[ScaleConfig] = js.undefined
   
   /**
     * A scene or scenes to add to the game. If several are given, the first is started; the remainder are started only if they have `{ active: true }`. See the `sceneConfig` argument in `Phaser.Scenes.SceneManager#add`.
     */
   var scene: js.UndefOr[
     Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Seed for the random number generator.
     */
-  var seed: js.UndefOr[js.Array[String]] = js.native
+  var seed: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The title of the game. Shown in the browser console.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the game canvas will have a transparent background.
     */
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Which renderer to use. Phaser.AUTO, Phaser.CANVAS, Phaser.HEADLESS, or Phaser.WEBGL. AUTO picks WEBGL if available, otherwise CANVAS.
     */
-  var `type`: js.UndefOr[Double] = js.native
+  var `type`: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the game. Shown in the browser console.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the game. Shown in the browser console.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the game, in game pixels.
     */
-  var width: js.UndefOr[integer | String] = js.native
+  var width: js.UndefOr[integer | String] = js.undefined
   
   /**
     * Simple scale applied to the game canvas. 2 is double size, 0.5 is half size, etc.
     */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object GameConfig {
   

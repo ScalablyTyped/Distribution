@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to attach this {@link TextField} to a {@link TextFieldMaster} . */
-@js.native
-trait XDependentTextField extends XTextField {
+trait XDependentTextField
+  extends StObject
+     with XTextField {
   
   /** @returns the previously attached {@link TextFieldMaster} */
-  val TextFieldMaster: XPropertySet = js.native
+  val TextFieldMaster: XPropertySet
   
   /**
     * method must be called to attach the {@link TextFieldMaster} to this {@link TextField} .
@@ -24,10 +24,10 @@ trait XDependentTextField extends XTextField {
     *
     * {{program example here, see documentation}}
     */
-  def attachTextFieldMaster(xFieldMaster: XPropertySet): Unit = js.native
+  def attachTextFieldMaster(xFieldMaster: XPropertySet): Unit
   
   /** @returns the previously attached {@link TextFieldMaster} */
-  def getTextFieldMaster(): XPropertySet = js.native
+  def getTextFieldMaster(): XPropertySet
 }
 object XDependentTextField {
   

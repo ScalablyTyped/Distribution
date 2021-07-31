@@ -2,7 +2,6 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,13 +27,13 @@ trait Comment extends StObject {
   val Shape: typings.activexExcel.Excel.Shape = js.native
   
   def Text(): String = js.native
-  def Text(Text: js.UndefOr[scala.Nothing], Start: js.UndefOr[scala.Nothing], Overwrite: Boolean): String = js.native
-  def Text(Text: js.UndefOr[scala.Nothing], Start: Double): String = js.native
-  def Text(Text: js.UndefOr[scala.Nothing], Start: Double, Overwrite: Boolean): String = js.native
   def Text(Text: String): String = js.native
-  def Text(Text: String, Start: js.UndefOr[scala.Nothing], Overwrite: Boolean): String = js.native
   def Text(Text: String, Start: Double): String = js.native
   def Text(Text: String, Start: Double, Overwrite: Boolean): String = js.native
+  def Text(Text: String, Start: Unit, Overwrite: Boolean): String = js.native
+  def Text(Text: Unit, Start: Double): String = js.native
+  def Text(Text: Unit, Start: Double, Overwrite: Boolean): String = js.native
+  def Text(Text: Unit, Start: Unit, Overwrite: Boolean): String = js.native
   
   var Visible: Boolean = js.native
 }

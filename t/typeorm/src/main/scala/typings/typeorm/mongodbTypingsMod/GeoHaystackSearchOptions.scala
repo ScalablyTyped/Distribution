@@ -2,32 +2,30 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoHaystackSearchOptions extends StObject {
   
   /**
     * Max number of results to return.
     */
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Include results up to maxDistance from the point.
     */
-  var maxDistance: js.UndefOr[scala.Double] = js.native
+  var maxDistance: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED,
     * ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Filter the results by a query.
     */
-  var search: js.UndefOr[js.Object] = js.native
+  var search: js.UndefOr[js.Object] = js.undefined
 }
 object GeoHaystackSearchOptions {
   

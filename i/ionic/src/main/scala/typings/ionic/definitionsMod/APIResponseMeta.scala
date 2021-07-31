@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APIResponseMeta extends StObject {
   
-  var request_id: String = js.native
+  var request_id: String
   
-  var status: Double = js.native
+  var status: Double
   
-  var version: String = js.native
+  var version: String
 }
 object APIResponseMeta {
   

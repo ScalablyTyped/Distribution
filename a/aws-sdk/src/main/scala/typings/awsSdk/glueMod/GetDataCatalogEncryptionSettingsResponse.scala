@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataCatalogEncryptionSettingsResponse extends StObject {
   
   /**
     * The requested security configuration.
     */
-  var DataCatalogEncryptionSettings: js.UndefOr[typings.awsSdk.glueMod.DataCatalogEncryptionSettings] = js.native
+  var DataCatalogEncryptionSettings: js.UndefOr[typings.awsSdk.glueMod.DataCatalogEncryptionSettings] = js.undefined
 }
 object GetDataCatalogEncryptionSettingsResponse {
   

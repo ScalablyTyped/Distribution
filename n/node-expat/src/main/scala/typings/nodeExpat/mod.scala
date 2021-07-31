@@ -5,10 +5,13 @@ import typings.node.BufferEncoding
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-expat", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-expat", "Parser")
   @js.native
@@ -65,10 +68,8 @@ object mod {
     def write(data: Buffer): Boolean = js.native
   }
   
-  @JSImport("node-expat", "createParser")
-  @js.native
-  def createParser(): Parser = js.native
-  @JSImport("node-expat", "createParser")
-  @js.native
-  def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = js.native
+  @scala.inline
+  def createParser(): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")().asInstanceOf[Parser]
+  @scala.inline
+  def createParser(cb: js.Function1[/* repeated */ js.Any, Unit]): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(cb.asInstanceOf[js.Any]).asInstanceOf[Parser]
 }

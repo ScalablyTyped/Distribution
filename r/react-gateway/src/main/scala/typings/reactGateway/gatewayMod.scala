@@ -3,7 +3,6 @@ package typings.reactGateway
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gatewayMod {
@@ -15,10 +14,9 @@ object gatewayMod {
   
   type Gateway = Component[GatewayProps, js.Object, js.Any]
   
-  @js.native
   trait GatewayProps extends StObject {
     
-    var into: String = js.native
+    var into: String
   }
   object GatewayProps {
     

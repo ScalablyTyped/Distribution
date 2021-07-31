@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * implementation that must specify these parameters.
   * @since OOo 1.1.2
   */
-@js.native
-trait XStringSubstitution extends XInterface {
+trait XStringSubstitution
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the current value of a variable.
@@ -25,7 +25,7 @@ trait XStringSubstitution extends XInterface {
     * @param variable The name of a variable.
     * @returns Returns a string that represents the variable. If the variable is unknown a {@link com.sun.star.container.NoSuchElementException} is thrown.
     */
-  def getSubstituteVariableValue(variable: String): String = js.native
+  def getSubstituteVariableValue(variable: String): String
   
   /**
     * Tries to replace parts of aText with variables that represents these sub strings.
@@ -35,7 +35,7 @@ trait XStringSubstitution extends XInterface {
     * @param aText A string where known substrings should be replaced by variables.
     * @returns Returns the resubstituted string with variables for all parts that could be replaced. The unchanged argument will be returned if nothing can be r
     */
-  def reSubstituteVariables(aText: String): String = js.native
+  def reSubstituteVariables(aText: String): String
   
   /**
     * Exchanges variables inside a given text with a substitution text defined for the variables.
@@ -47,7 +47,7 @@ trait XStringSubstitution extends XInterface {
     * @param bSubstRequired Specifies if a successful substitution is required. The function throws a {@link com.sun.star.container.NoSuchElementException} if
     * @returns Returns a string based on **aText** where all variables were exchanged with their value defined at calling time.
     */
-  def substituteVariables(aText: String, bSubstRequired: Boolean): String = js.native
+  def substituteVariables(aText: String, bSubstRequired: Boolean): String
 }
 object XStringSubstitution {
   

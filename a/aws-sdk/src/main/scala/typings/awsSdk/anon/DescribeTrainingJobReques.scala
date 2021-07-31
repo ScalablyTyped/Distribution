@@ -4,20 +4,18 @@ import typings.awsSdk.sagemakerMod.TrainingJobName
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/sagemaker.DescribeTrainingJobRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeTrainingJobReques extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The name of the training job.
     */
-  var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName = js.native
+  var TrainingJobName: typings.awsSdk.sagemakerMod.TrainingJobName
 }
 object DescribeTrainingJobReques {
   

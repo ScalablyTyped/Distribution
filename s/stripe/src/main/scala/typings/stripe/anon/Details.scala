@@ -12,17 +12,15 @@ import typings.stripe.stripeStrings.unverified
 import typings.stripe.stripeStrings.verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Details extends StObject {
   
   /**
     * A user-displayable string describing the verification state for the person.
     * For example, this may say “Provided identity information could not be verified”.
     */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
   
   /**
     * One of document_address_mismatch, document_dob_mismatch, document_duplicate_type, document_id_number_mismatch,
@@ -31,17 +29,17 @@ trait Details extends StObject {
     */
   var details_code: js.UndefOr[
     document_address_mismatch | document_dob_mismatch | document_duplicate_type | document_id_number_mismatch | document_name_mismatch | failed_keyed_identity | failed_other
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An identifying document, either a passport or local ID card.
     */
-  var document: js.UndefOr[Back] = js.native
+  var document: js.UndefOr[Back] = js.undefined
   
   /**
     * The state of verification for the person. Possible values are unverified, pending, or verified.
     */
-  var status: js.UndefOr[unverified | pending | verified] = js.native
+  var status: js.UndefOr[unverified | pending | verified] = js.undefined
 }
 object Details {
   

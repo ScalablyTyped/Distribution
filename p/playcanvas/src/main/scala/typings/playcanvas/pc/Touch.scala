@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,33 +14,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property touch - The original browser Touch object.
   * @param touch - The browser Touch object.
   */
-@js.native
 trait Touch extends StObject {
   
   /**
     * The identifier of the touch.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The target element of the touch event.
     */
-  var target: Element = js.native
+  var target: Element
   
   /**
     * The original browser Touch object.
     */
-  var touch: Touch = js.native
+  var touch: Touch
   
   /**
     * The x co-ordinate relative to the element that the TouchDevice is attached to.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y co-ordinate relative to the element that the TouchDevice is attached to.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Touch {
   

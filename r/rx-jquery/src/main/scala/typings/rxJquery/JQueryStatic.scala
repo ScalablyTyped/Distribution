@@ -4,21 +4,19 @@ import typings.jquery.JQueryAjaxSettings
 import typings.rx.Rx.Observable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def ajaxAsObservable[T](settings: JQueryAjaxSettings): Observable[RxJQueryAjaxResult[T]] = js.native
+  def ajaxAsObservable[T](settings: JQueryAjaxSettings): Observable[RxJQueryAjaxResult[T]]
   
-  def getAsObservable[T](url: String, data: js.Any, dataType: String): Observable[RxJQueryAjaxResult[T]] = js.native
+  def getAsObservable[T](url: String, data: js.Any, dataType: String): Observable[RxJQueryAjaxResult[T]]
   
-  def getJSONAsObservable[T](url: String, data: js.Any): Observable[RxJQueryAjaxResult[T]] = js.native
+  def getJSONAsObservable[T](url: String, data: js.Any): Observable[RxJQueryAjaxResult[T]]
   
-  def getScriptAsObservable[T](url: String, data: js.Any): Observable[RxJQueryAjaxResult[T]] = js.native
+  def getScriptAsObservable[T](url: String, data: js.Any): Observable[RxJQueryAjaxResult[T]]
   
-  def postAsObservable[T](url: String, data: js.Any, dataType: String): Observable[RxJQueryAjaxResult[T]] = js.native
+  def postAsObservable[T](url: String, data: js.Any, dataType: String): Observable[RxJQueryAjaxResult[T]]
 }
 object JQueryStatic {
   

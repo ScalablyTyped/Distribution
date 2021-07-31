@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "ProtectedValue")
@@ -25,11 +24,13 @@ class ProtectedValue protected () extends StObject {
 /* static members */
 object ProtectedValue {
   
-  @JSImport("kdbxweb", "ProtectedValue.fromBinary")
+  @JSImport("kdbxweb", "ProtectedValue")
   @js.native
-  def fromBinary(binary: ArrayBuffer): ProtectedValue = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "ProtectedValue.fromString")
-  @js.native
-  def fromString(str: String): ProtectedValue = js.native
+  @scala.inline
+  def fromBinary(binary: ArrayBuffer): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBinary")(binary.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
+  
+  @scala.inline
+  def fromString(str: String): ProtectedValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[ProtectedValue]
 }

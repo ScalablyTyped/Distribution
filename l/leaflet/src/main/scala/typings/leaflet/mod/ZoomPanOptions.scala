@@ -2,18 +2,18 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.PanOptions because var conflicts: animate. Inlined duration, easeLinearity, noMoveStart */ @js.native
-trait ZoomPanOptions extends ZoomOptions {
+- typings.leaflet.mod.PanOptions because var conflicts: animate. Inlined duration, easeLinearity, noMoveStart */ trait ZoomPanOptions
+  extends StObject
+     with ZoomOptions {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easeLinearity: js.UndefOr[Double] = js.native
+  var easeLinearity: js.UndefOr[Double] = js.undefined
   
-  var noMoveStart: js.UndefOr[Boolean] = js.native
+  var noMoveStart: js.UndefOr[Boolean] = js.undefined
 }
 object ZoomPanOptions {
   

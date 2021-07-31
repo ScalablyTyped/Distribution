@@ -4,52 +4,53 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.classValidator.validatorConstraintInterfaceMod.ValidatorConstraintInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registerDecoratorMod {
   
-  @JSImport("class-validator/types/register-decorator", "registerDecorator")
+  @JSImport("class-validator/types/register-decorator", JSImport.Namespace)
   @js.native
-  def registerDecorator(options: ValidationDecoratorOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def registerDecorator(options: ValidationDecoratorOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerDecorator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait ValidationDecoratorOptions extends StObject {
     
     /**
       * Indicates if this decorator will perform async validation.
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of validation constraints.
       */
-    var constraints: js.UndefOr[js.Array[_]] = js.native
+    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Name of the validation that is being registered.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Validator options.
       */
-    var options: js.UndefOr[ValidationOptions] = js.native
+    var options: js.UndefOr[ValidationOptions] = js.undefined
     
     /**
       * Target object's property name to be validated.
       */
-    var propertyName: String = js.native
+    var propertyName: String
     
     /**
       * Target object to be validated.
       */
-    var target: js.Function = js.native
+    var target: js.Function
     
     /**
       * Validator that performs validation.
       */
-    var validator: ValidatorConstraintInterface | js.Function = js.native
+    var validator: ValidatorConstraintInterface | js.Function
   }
   object ValidationDecoratorOptions {
     
@@ -69,7 +70,7 @@ object registerDecoratorMod {
       def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       @scala.inline
-      def setConstraints(value: js.Array[_]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)

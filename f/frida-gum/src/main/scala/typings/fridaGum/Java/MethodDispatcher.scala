@@ -2,11 +2,12 @@ package typings.fridaGum.Java
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MethodDispatcher[Holder /* <: Members[Holder] */] extends Method[Holder] {
+trait MethodDispatcher[Holder /* <: Members[Holder] */]
+  extends StObject
+     with Method[Holder] {
   
   /**
     * Obtains a specific overload.

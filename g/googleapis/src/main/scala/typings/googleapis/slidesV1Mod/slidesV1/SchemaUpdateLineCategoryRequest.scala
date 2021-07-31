@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the category of a line.
   */
-@js.native
 trait SchemaUpdateLineCategoryRequest extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaUpdateLineCategoryRequest extends StObject {
     * on the category to update to and how it&#39;s routed to connect to other
     * page elements.
     */
-  var lineCategory: js.UndefOr[String] = js.native
+  var lineCategory: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the line the update is applied to.  Only a line with a
     * category indicating it is a &quot;connector&quot; can be updated.  The
     * line may be rerouted after updating its category.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateLineCategoryRequest {
   

@@ -2,34 +2,32 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateChannelResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) assigned to the Channel.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * A short text description of the Channel.
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
-  var EgressAccessLogs: js.UndefOr[typings.awsSdk.mediapackageMod.EgressAccessLogs] = js.native
+  var EgressAccessLogs: js.UndefOr[typings.awsSdk.mediapackageMod.EgressAccessLogs] = js.undefined
   
-  var HlsIngest: js.UndefOr[typings.awsSdk.mediapackageMod.HlsIngest] = js.native
+  var HlsIngest: js.UndefOr[typings.awsSdk.mediapackageMod.HlsIngest] = js.undefined
   
   /**
     * The ID of the Channel.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
-  var IngressAccessLogs: js.UndefOr[typings.awsSdk.mediapackageMod.IngressAccessLogs] = js.native
+  var IngressAccessLogs: js.UndefOr[typings.awsSdk.mediapackageMod.IngressAccessLogs] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackageMod.Tags] = js.undefined
 }
 object UpdateChannelResponse {
   

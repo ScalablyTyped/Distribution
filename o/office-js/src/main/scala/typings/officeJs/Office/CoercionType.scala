@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,14 +25,18 @@ object CoercionType extends StObject {
     * **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
     */
   @js.native
-  sealed trait Html extends CoercionType
+  sealed trait Html
+    extends StObject
+       with CoercionType
   
   /**
     * Data is returned or set as an image stream.
     * **Note**: Only applies to data in Excel, Word, and PowerPoint.
     */
   @js.native
-  sealed trait Image extends CoercionType
+  sealed trait Image
+    extends StObject
+       with CoercionType
   
   /**
     * Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing one-dimensional runs of 
@@ -42,7 +45,9 @@ object CoercionType extends StObject {
     * **Note**: Only applies to data in Excel and Word.
     */
   @js.native
-  sealed trait Matrix extends CoercionType
+  sealed trait Matrix
+    extends StObject
+       with CoercionType
   
   /**
     * Return or set data as Office Open XML.
@@ -50,7 +55,9 @@ object CoercionType extends StObject {
     * **Note**: Only applies to data in Word.
     */
   @js.native
-  sealed trait Ooxml extends CoercionType
+  sealed trait Ooxml
+    extends StObject
+       with CoercionType
   
   /**
     * Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example, 
@@ -60,7 +67,9 @@ object CoercionType extends StObject {
     * slide or selected range of slides.
     */
   @js.native
-  sealed trait SlideRange extends CoercionType
+  sealed trait SlideRange
+    extends StObject
+       with CoercionType
   
   /**
     * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
@@ -68,18 +77,24 @@ object CoercionType extends StObject {
     * **Note**: Only applies to data in Excel and Word.
     */
   @js.native
-  sealed trait Table extends CoercionType
+  sealed trait Table
+    extends StObject
+       with CoercionType
   
   /**
     * Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
     */
   @js.native
-  sealed trait Text extends CoercionType
+  sealed trait Text
+    extends StObject
+       with CoercionType
   
   /**
     * Data is returned or set as XML data containing an SVG image.
     * **Note**: Only applies to data in Excel, Word, and PowerPoint.
     */
   @js.native
-  sealed trait XmlSvg extends CoercionType
+  sealed trait XmlSvg
+    extends StObject
+       with CoercionType
 }

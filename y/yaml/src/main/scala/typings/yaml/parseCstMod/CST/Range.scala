@@ -2,21 +2,19 @@ package typings.yaml.parseCstMod.CST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  var origEnd: js.UndefOr[Double] = js.native
+  var origEnd: js.UndefOr[Double] = js.undefined
   
-  var origStart: js.UndefOr[Double] = js.native
+  var origStart: js.UndefOr[Double] = js.undefined
   
-  var start: Double = js.native
+  var start: Double
 }
 object Range {
   

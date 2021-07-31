@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
   */
-@js.native
 trait PlusNet extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait PlusNet extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var ProgressEvent: js.UndefOr[PlusNetProgressEvent] = js.native
+  var ProgressEvent: js.UndefOr[PlusNetProgressEvent] = js.undefined
   
   /**
     * 跨域网络请求对象
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
-  var XMLHttpRequest: js.UndefOr[PlusNetXMLHttpRequest] = js.native
+  var XMLHttpRequest: js.UndefOr[PlusNetXMLHttpRequest] = js.undefined
 }
 object PlusNet {
   

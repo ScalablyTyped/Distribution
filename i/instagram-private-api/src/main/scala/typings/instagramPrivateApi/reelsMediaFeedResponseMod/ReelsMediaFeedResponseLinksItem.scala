@@ -2,32 +2,30 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponseLinksItem extends StObject {
   
   @JSName("package")
-  var _package: String = js.native
+  var _package: String
   
-  var androidClass: String = js.native
+  var androidClass: String
   
-  var appInstallObjectiveInvalidationBehavior: Null = js.native
+  var appInstallObjectiveInvalidationBehavior: Null
   
-  var callToActionTitle: String = js.native
+  var callToActionTitle: String
   
-  var deeplinkUri: String = js.native
+  var deeplinkUri: String
   
-  var igUserId: String = js.native
+  var igUserId: String
   
-  var leadGenFormId: String = js.native
+  var leadGenFormId: String
   
-  var linkType: Double = js.native
+  var linkType: Double
   
-  var redirectUri: Null = js.native
+  var redirectUri: Null
   
-  var webUri: String = js.native
+  var webUri: String
 }
 object ReelsMediaFeedResponseLinksItem {
   

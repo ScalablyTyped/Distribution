@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentTypeInfo extends StObject {
   
   /**
     * The version of the model used to detect segments.
     */
-  var ModelVersion: js.UndefOr[String] = js.native
+  var ModelVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The type of a segment (technical cue or shot detection).
     */
-  var Type: js.UndefOr[SegmentType] = js.native
+  var Type: js.UndefOr[SegmentType] = js.undefined
 }
 object SegmentTypeInfo {
   

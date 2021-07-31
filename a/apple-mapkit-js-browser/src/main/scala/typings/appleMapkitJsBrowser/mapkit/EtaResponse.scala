@@ -2,24 +2,22 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The estimated arrival times for a set of destinations.
   */
-@js.native
 trait EtaResponse extends StObject {
   
   /**
     * An array of estimated arrival times.
     */
-  var etas: js.Array[EtaResult] = js.native
+  var etas: js.Array[EtaResult]
   
   /**
     * The request object associated with the estimated time of arrival response.
     */
-  var request: EtaRequestOptions = js.native
+  var request: EtaRequestOptions
 }
 object EtaResponse {
   

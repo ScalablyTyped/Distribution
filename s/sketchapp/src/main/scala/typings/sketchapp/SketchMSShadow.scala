@@ -4,27 +4,25 @@ import typings.sketchapp.sketchappStrings.MSInnerShadow
 import typings.sketchapp.sketchappStrings.shadow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSShadow extends StObject {
   
-  var _class: shadow | MSInnerShadow = js.native
+  var _class: shadow | MSInnerShadow
   
-  var blurRadius: Double = js.native
+  var blurRadius: Double
   
-  var color: SketchMSColor = js.native
+  var color: SketchMSColor
   
-  var contextSettings: SketchMSGraphicsContextSettings = js.native
+  var contextSettings: SketchMSGraphicsContextSettings
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var spread: Double = js.native
+  var spread: Double
 }
 object SketchMSShadow {
   

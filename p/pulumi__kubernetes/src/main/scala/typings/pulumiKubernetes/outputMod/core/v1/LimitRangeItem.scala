@@ -3,44 +3,42 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * LimitRangeItem defines a min/max usage limit for any resource that matches on kind.
   */
-@js.native
 trait LimitRangeItem extends StObject {
   
   /**
     * Default resource requirement limit value by resource name if resource limit is omitted.
     */
-  var default: StringDictionary[String] = js.native
+  var default: StringDictionary[String]
   
   /**
     * DefaultRequest is the default resource requirement request value by resource name if resource request is omitted.
     */
-  var defaultRequest: StringDictionary[String] = js.native
+  var defaultRequest: StringDictionary[String]
   
   /**
     * Max usage constraints on this kind by resource name.
     */
-  var max: StringDictionary[String] = js.native
+  var max: StringDictionary[String]
   
   /**
     * MaxLimitRequestRatio if specified, the named resource must have a request and limit that are both non-zero where limit divided by request is less than or equal to the enumerated value; this represents the max burst for the named resource.
     */
-  var maxLimitRequestRatio: StringDictionary[String] = js.native
+  var maxLimitRequestRatio: StringDictionary[String]
   
   /**
     * Min usage constraints on this kind by resource name.
     */
-  var min: StringDictionary[String] = js.native
+  var min: StringDictionary[String]
   
   /**
     * Type of resource that this limit applies to.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object LimitRangeItem {
   

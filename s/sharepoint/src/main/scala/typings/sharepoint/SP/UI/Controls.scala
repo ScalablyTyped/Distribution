@@ -2,50 +2,47 @@ package typings.sharepoint.SP.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Controls {
   
-  @js.native
   trait ControlManager extends StObject
   
-  @js.native
   trait INavigationOptions extends StObject {
     
-    var appHelpPageOnClick: js.UndefOr[String] = js.native
+    var appHelpPageOnClick: js.UndefOr[String] = js.undefined
     
-    var appHelpPageUrl: js.UndefOr[String] = js.native
+    var appHelpPageUrl: js.UndefOr[String] = js.undefined
     
-    var appIconUrl: js.UndefOr[String] = js.native
+    var appIconUrl: js.UndefOr[String] = js.undefined
     
-    var appStartPage: js.UndefOr[String] = js.native
+    var appStartPage: js.UndefOr[String] = js.undefined
     
-    var appTitle: js.UndefOr[String] = js.native
+    var appTitle: js.UndefOr[String] = js.undefined
     
-    var appTitleIconUrl: js.UndefOr[String] = js.native
+    var appTitleIconUrl: js.UndefOr[String] = js.undefined
     
-    var appWebUrl: js.UndefOr[String] = js.native
+    var appWebUrl: js.UndefOr[String] = js.undefined
     
-    var assetId: js.UndefOr[String] = js.native
+    var assetId: js.UndefOr[String] = js.undefined
     
-    var bottomHeaderVisible: js.UndefOr[Boolean] = js.native
+    var bottomHeaderVisible: js.UndefOr[Boolean] = js.undefined
     
-    var clientTag: js.UndefOr[String] = js.native
+    var clientTag: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var onCssLoaded: js.UndefOr[String] = js.native
+    var onCssLoaded: js.UndefOr[String] = js.undefined
     
-    var rightToLeft: js.UndefOr[Boolean] = js.native
+    var rightToLeft: js.UndefOr[Boolean] = js.undefined
     
-    var settingsLinks: js.UndefOr[js.Array[ISettingsLink]] = js.native
+    var settingsLinks: js.UndefOr[js.Array[ISettingsLink]] = js.undefined
     
-    var siteTitle: js.UndefOr[String] = js.native
+    var siteTitle: js.UndefOr[String] = js.undefined
     
-    var siteUrl: js.UndefOr[String] = js.native
+    var siteUrl: js.UndefOr[String] = js.undefined
     
-    var topHeaderVisible: js.UndefOr[Boolean] = js.native
+    var topHeaderVisible: js.UndefOr[Boolean] = js.undefined
   }
   object INavigationOptions {
     
@@ -165,12 +162,11 @@ object Controls {
     }
   }
   
-  @js.native
   trait ISettingsLink extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var linkUrl: String = js.native
+    var linkUrl: String
   }
   object ISettingsLink {
     
@@ -191,54 +187,53 @@ object Controls {
     }
   }
   
-  @js.native
   trait Navigation extends StObject {
     
-    def get_appHelpPageOnClick(): String = js.native
+    def get_appHelpPageOnClick(): String
     
-    def get_appHelpPageUrl(): String = js.native
+    def get_appHelpPageUrl(): String
     
-    def get_appIconUrl(): String = js.native
+    def get_appIconUrl(): String
     
-    def get_appStartPage(): String = js.native
+    def get_appStartPage(): String
     
-    def get_appTitle(): String = js.native
+    def get_appTitle(): String
     
-    def get_appTitleIconUrl(): String = js.native
+    def get_appTitleIconUrl(): String
     
-    def get_assetId(): String = js.native
+    def get_assetId(): String
     
-    def get_rightToLeft(): Boolean = js.native
+    def get_rightToLeft(): Boolean
     
-    def get_settingsLinks(): js.Array[ISettingsLink] = js.native
+    def get_settingsLinks(): js.Array[ISettingsLink]
     
-    def get_siteTitle(): String = js.native
+    def get_siteTitle(): String
     
-    def get_siteUrl(): String = js.native
+    def get_siteUrl(): String
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def setBottomHeaderVisible(value: Boolean): Unit = js.native
+    def setBottomHeaderVisible(value: Boolean): Unit
     
-    def setTopHeaderVisible(value: Boolean): Unit = js.native
+    def setTopHeaderVisible(value: Boolean): Unit
     
-    def setVisible(value: Boolean): Unit = js.native
+    def setVisible(value: Boolean): Unit
     
-    def set_appHelpPageOnClick(value: String): String = js.native
+    def set_appHelpPageOnClick(value: String): String
     
-    def set_appHelpPageUrl(value: String): String = js.native
+    def set_appHelpPageUrl(value: String): String
     
-    def set_appIconUrl(value: String): String = js.native
+    def set_appIconUrl(value: String): String
     
-    def set_appStartPage(value: String): String = js.native
+    def set_appStartPage(value: String): String
     
-    def set_appTitle(value: String): String = js.native
+    def set_appTitle(value: String): String
     
-    def set_appTitleIconUrl(value: String): String = js.native
+    def set_appTitleIconUrl(value: String): String
     
-    def set_rightToLeft(value: Boolean): Boolean = js.native
+    def set_rightToLeft(value: Boolean): Boolean
     
-    def set_settingsLinks(value: js.Array[ISettingsLink]): js.Array[ISettingsLink] = js.native
+    def set_settingsLinks(value: js.Array[ISettingsLink]): js.Array[ISettingsLink]
   }
   object Navigation {
     
@@ -348,8 +343,9 @@ object Controls {
   
   type NavigationOptions = INavigationOptions
   
-  @js.native
-  trait SettingsLink extends ISettingsLink
+  trait SettingsLink
+    extends StObject
+       with ISettingsLink
   object SettingsLink {
     
     @scala.inline

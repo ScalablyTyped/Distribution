@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputFileUriValue extends StObject {
   
   /**
     * The URI of the location where dataset contents are stored, usually the URI of a file in an S3 bucket.
     */
-  var fileName: OutputFileName = js.native
+  var fileName: OutputFileName
 }
 object OutputFileUriValue {
   

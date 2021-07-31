@@ -3,26 +3,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationsData extends StObject {
   
   /**
     * Notification data needed
     */
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
   /**
     * List of users who should get the notification
     */
-  var identities: StringDictionary[js.Any] = js.native
+  var identities: StringDictionary[js.Any]
   
   /**
     * Type of Mail Notification.Can be Qna , review or CustomerContact
     */
-  var `type`: NotificationTemplateType = js.native
+  var `type`: NotificationTemplateType
 }
 object NotificationsData {
   

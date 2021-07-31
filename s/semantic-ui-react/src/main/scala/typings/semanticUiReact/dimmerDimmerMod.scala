@@ -9,7 +9,6 @@ import typings.react.mod.ComponentState
 import typings.semanticUiReact.dimmerDimmableMod.DimmerDimmableProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dimmerDimmerMod {
@@ -50,16 +49,18 @@ object dimmerDimmerMod {
   }
   
   @js.native
-  trait DimmerComponent extends ComponentClass[DimmerProps, ComponentState] {
+  trait DimmerComponent
+    extends StObject
+       with ComponentClass[DimmerProps, ComponentState] {
     
     var Dimmable: ComponentClass[DimmerDimmableProps, ComponentState] = js.native
     
     var Inner: Instantiable0[typings.semanticUiReact.dimmerInnerMod.default] = js.native
   }
   
-  @js.native
   trait DimmerProps
-    extends StrictDimmerProps
+    extends StObject
+       with StrictDimmerProps
        with /* key */ StringDictionary[js.Any]
   object DimmerProps {
     
@@ -70,14 +71,13 @@ object dimmerDimmerMod {
     }
   }
   
-  @js.native
   trait StrictDimmerProps extends StObject {
     
     /** An active dimmer will dim its parent container. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can be formatted to be fixed to the page. */
-    var page: js.UndefOr[Boolean] = js.native
+    var page: js.UndefOr[Boolean] = js.undefined
   }
   object StrictDimmerProps {
     

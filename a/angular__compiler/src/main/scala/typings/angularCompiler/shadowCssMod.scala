@@ -2,10 +2,13 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shadowCssMod {
+  
+  @JSImport("@angular/compiler/src/shadow_css", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/shadow_css", "CssRule")
   @js.native
@@ -63,7 +66,6 @@ object shadowCssMod {
     var strictStyling: Boolean = js.native
   }
   
-  @JSImport("@angular/compiler/src/shadow_css", "processRules")
-  @js.native
-  def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = js.native
+  @scala.inline
+  def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processRules")(input.asInstanceOf[js.Any], ruleCallback.asInstanceOf[js.Any])).asInstanceOf[String]
 }

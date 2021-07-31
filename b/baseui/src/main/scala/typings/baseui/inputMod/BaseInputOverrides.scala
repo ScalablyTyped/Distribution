@@ -2,27 +2,25 @@ package typings.baseui.inputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseInputOverrides[T] extends StObject {
   
   var After: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Before: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var Input: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   var InputContainer: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<T> */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object BaseInputOverrides {
   
@@ -33,7 +31,7 @@ object BaseInputOverrides {
   }
   
   @scala.inline
-  implicit class BaseInputOverridesMutableBuilder[Self <: BaseInputOverrides[_], T] (val x: Self with BaseInputOverrides[T]) extends AnyVal {
+  implicit class BaseInputOverridesMutableBuilder[Self <: BaseInputOverrides[?], T] (val x: Self & BaseInputOverrides[T]) extends AnyVal {
     
     @scala.inline
     def setAfter(

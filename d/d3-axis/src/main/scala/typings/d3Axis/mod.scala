@@ -8,26 +8,25 @@ import typings.std.SVGGElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-axis", "axisBottom")
+  @JSImport("d3-axis", JSImport.Namespace)
   @js.native
-  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-axis", "axisLeft")
-  @js.native
-  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  @scala.inline
+  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
-  @JSImport("d3-axis", "axisRight")
-  @js.native
-  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  @scala.inline
+  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
-  @JSImport("d3-axis", "axisTop")
-  @js.native
-  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = js.native
+  @scala.inline
+  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
+  
+  @scala.inline
+  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
   @js.native
   trait Axis[Domain] extends StObject {
@@ -37,13 +36,13 @@ object mod {
       *
       * @param context A selection of SVG containers (either SVG or G elements).
       */
-    def apply(context: Selection_[SVGGElement | SVGSVGElement, _, _, _]): Unit = js.native
+    def apply(context: Selection_[SVGGElement | SVGSVGElement, js.Any, js.Any, js.Any]): Unit = js.native
     /**
       * Render the axis to the given context.
       *
       * @param context A transition defined on SVG containers (either SVG or G elements).
       */
-    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, _]): Unit = js.native
+    def apply(context: TransitionLike[SVGGElement | SVGSVGElement, js.Any]): Unit = js.native
     
     /**
       * Sets the scale and returns the axis.
@@ -59,7 +58,7 @@ object mod {
     /**
       * Get an array containing the currently set arguments to be passed into scale.ticks and scale.tickFormat, which defaults to the empty array.
       */
-    def tickArguments(): js.Array[_] = js.native
+    def tickArguments(): js.Array[js.Any] = js.native
     /**
       * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
       *
@@ -89,7 +88,7 @@ object mod {
       *
       * @param args An array with arguments suitable for the scale to be used for tick generation.
       */
-    def tickArguments(args: js.Array[_ | AxisTimeInterval | Double]): this.type = js.native
+    def tickArguments(args: js.Array[js.Any | AxisTimeInterval | Double]): this.type = js.native
     /**
       * Sets the arguments that will be passed to scale.ticks and scale.tickFormat when the axis is rendered, and returns the axis generator.
       *

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link XModel} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XFrameSetModel extends XInterface {
+trait XFrameSetModel
+  extends StObject
+     with XInterface {
   
-  var Source: String = js.native
+  var Source: String
   
-  def getSource(): String = js.native
+  def getSource(): String
   
-  def setSource(Source: String): Unit = js.native
+  def setSource(Source: String): Unit
 }
 object XFrameSetModel {
   

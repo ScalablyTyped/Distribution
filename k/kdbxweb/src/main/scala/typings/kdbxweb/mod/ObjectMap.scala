@@ -2,17 +2,15 @@ package typings.kdbxweb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectMap extends StObject {
   
-  var deleted: js.Array[KdbxObject] = js.native
+  var deleted: js.Array[KdbxObject]
   
-  var objects: js.Array[KdbxObject] = js.native
+  var objects: js.Array[KdbxObject]
   
-  var remote: js.Array[KdbxObject] = js.native
+  var remote: js.Array[KdbxObject]
 }
 object ObjectMap {
   

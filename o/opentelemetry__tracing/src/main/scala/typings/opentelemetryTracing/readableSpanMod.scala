@@ -11,41 +11,39 @@ import typings.opentelemetryCore.typesMod.InstrumentationLibrary
 import typings.opentelemetryResources.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readableSpanMod {
   
-  @js.native
   trait ReadableSpan extends StObject {
     
-    val attributes: Attributes = js.native
+    val attributes: Attributes
     
-    val duration: HrTime = js.native
+    val duration: HrTime
     
-    val endTime: HrTime = js.native
+    val endTime: HrTime
     
-    val ended: Boolean = js.native
+    val ended: Boolean
     
-    val events: js.Array[TimedEvent] = js.native
+    val events: js.Array[TimedEvent]
     
-    val instrumentationLibrary: InstrumentationLibrary = js.native
+    val instrumentationLibrary: InstrumentationLibrary
     
-    val kind: SpanKind = js.native
+    val kind: SpanKind
     
-    val links: js.Array[Link] = js.native
+    val links: js.Array[Link]
     
-    val name: String = js.native
+    val name: String
     
-    val parentSpanId: js.UndefOr[String] = js.native
+    val parentSpanId: js.UndefOr[String] = js.undefined
     
-    val resource: Resource = js.native
+    val resource: Resource
     
-    val spanContext: SpanContext = js.native
+    val spanContext: SpanContext
     
-    val startTime: HrTime = js.native
+    val startTime: HrTime
     
-    val status: Status = js.native
+    val status: Status
   }
   object ReadableSpan {
     

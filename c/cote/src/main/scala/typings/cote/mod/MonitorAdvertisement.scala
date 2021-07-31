@@ -2,16 +2,16 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MonitorAdvertisement extends Advertisement {
+trait MonitorAdvertisement
+  extends StObject
+     with Advertisement {
   
   /**
     * Port for Monitor to listen on. By default will start searching from 8000.
     */
-  var port: js.UndefOr[Double | String] = js.native
+  var port: js.UndefOr[Double | String] = js.undefined
 }
 object MonitorAdvertisement {
   

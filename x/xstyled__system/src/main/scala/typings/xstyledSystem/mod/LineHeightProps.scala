@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineHeightProps[TLength] extends StObject {
   
   val lineHeight: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object LineHeightProps {
   
@@ -23,12 +21,12 @@ object LineHeightProps {
   }
   
   @scala.inline
-  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[_], TLength] (val x: Self with LineHeightProps[TLength]) extends AnyVal {
+  implicit class LineHeightPropsMutableBuilder[Self <: LineHeightProps[?], TLength] (val x: Self & LineHeightProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setLineHeight(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object LineHeightProps {
     def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def setLineHeightVarargs(value: js.Any*): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
+    def setLineHeightVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "lineHeight", js.Array(value :_*))
   }
 }

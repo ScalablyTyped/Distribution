@@ -2,11 +2,11 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeclarationRaws extends NodeRaws {
+trait DeclarationRaws
+  extends StObject
+     with NodeRaws {
   
   /**
     * The declaration's value. This value will be cleaned of comments.
@@ -14,7 +14,7 @@ trait DeclarationRaws extends NodeRaws {
     * available in the _value.raws property. If you have not changed the value, the result of
     * decl.toString() will include the original raws value (comments and all).
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object DeclarationRaws {
   

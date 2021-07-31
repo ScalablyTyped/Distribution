@@ -2,46 +2,44 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaExtensionInfo extends StObject {
   
   /**
     * A description of the schema extension.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * The identifier of the directory to which the schema extension is applied.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The date and time that the schema extension was completed.
     */
-  var EndDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.EndDateTime] = js.native
+  var EndDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.EndDateTime] = js.undefined
   
   /**
     * The identifier of the schema extension.
     */
-  var SchemaExtensionId: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionId] = js.native
+  var SchemaExtensionId: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionId] = js.undefined
   
   /**
     * The current status of the schema extension.
     */
-  var SchemaExtensionStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionStatus] = js.native
+  var SchemaExtensionStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionStatus] = js.undefined
   
   /**
     * The reason for the SchemaExtensionStatus.
     */
-  var SchemaExtensionStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionStatusReason] = js.native
+  var SchemaExtensionStatusReason: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionStatusReason] = js.undefined
   
   /**
     * The date and time that the schema extension started being applied to the directory.
     */
-  var StartDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartDateTime] = js.native
+  var StartDateTime: js.UndefOr[typings.awsSdk.directoryserviceMod.StartDateTime] = js.undefined
 }
 object SchemaExtensionInfo {
   

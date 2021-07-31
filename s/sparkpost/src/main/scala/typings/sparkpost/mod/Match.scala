@@ -2,20 +2,18 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Match extends StObject {
   
   /** Inbound domain associated with this webhook. Required when protocol is “SMTP”. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** ESME address binding associated with this webhook  yes, when protocol is “SMPP”. SparkPost Enterprise API only. */
-  var esme_address: js.UndefOr[String] = js.native
+  var esme_address: js.UndefOr[String] = js.undefined
   
   /** Inbound messaging protocol associated with this webhook. Defaults to “SMTP” */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
 }
 object Match {
   

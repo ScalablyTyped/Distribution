@@ -5,7 +5,6 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.webdriverJsExtender.anon.DefineCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extenderMod {
@@ -41,7 +40,7 @@ object extenderMod {
       * @return {webdriver.promise.Promise<*>} A promise that will be resolved with
       *     the command result
       */
-    def execCommand[T](name: String, method: String, params: js.Array[_]): js.Promise[T] = js.native
+    def execCommand[T](name: String, method: String, params: js.Array[js.Any]): js.Promise[T] = js.native
     
     var executor_ : DefineCommand = js.native
     

@@ -4,14 +4,12 @@ import typings.jquery.JQueryEventObject
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Interface options for the plugin
-@js.native
 trait JQueryFileInputOptions extends StObject {
   
-  var active: js.UndefOr[js.Function] = js.native
+  var active: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The add callback is invoked as soon as files are added to the fileupload
@@ -33,64 +31,64 @@ trait JQueryFileInputOptions extends StObject {
     */
   var add: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JqueryFileUploadAddObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var always: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ this.type, Unit]] = js.native
+  var always: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ this.type, Unit]] = js.undefined
   
   /**
     * By default, uploads are started automatically when adding files:
     */
-  var autoUpload: js.UndefOr[Boolean] = js.native
+  var autoUpload: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Interval in milliseconds to calculate progress bitrate:
     */
-  var bitrateInterval: js.UndefOr[Double] = js.native
+  var bitrateInterval: js.UndefOr[Double] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
   var change: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadChangeObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var chunkalways: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var chunkdone: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var chunkfail: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var chunksend: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The type of data that is expected back from the server.
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
-  var done: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone, Unit]] = js.native
+  var done: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone, Unit]] = js.undefined
   
-  var dragover: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.native
+  var dragover: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.undefined
   
   var drop: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The drop target element(s), by the default the complete document.
     * Set to null to disable drag & drop support:
     */
-  var dropZone: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.native
+  var dropZone: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
-  var fail: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone, Unit]] = js.native
+  var fail: js.UndefOr[js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone, Unit]] = js.undefined
   
   /**
     * The file input field(s), that are listened to for change events.
@@ -98,14 +96,14 @@ trait JQueryFileInputOptions extends StObject {
     * of the widget element on plugin initialization.
     * Set to null to disable the change listener.
     */
-  var fileInput: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.native
+  var fileInput: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
-  var files: js.UndefOr[js.Any] = js.native
+  var files: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set the following option to true to force iframe transport uploads:
     */
-  var forceIframeTransport: js.UndefOr[Boolean] = js.native
+  var forceIframeTransport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional form data to be sent along with the file uploads can be set
@@ -114,39 +112,39 @@ trait JQueryFileInputOptions extends StObject {
     * object (for XHR file uploads), or a simple object.
     * The form of the first fileInput is given as parameter to the function:
     */
-  var formData: js.UndefOr[js.Any] = js.native
+  var formData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Translation function, gets the message key to be translated
     * and an object with context specific data as arguments:
     */
-  var i18n: js.UndefOr[js.Any] = js.native
+  var i18n: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To limit the number of concurrent uploads,
     * set the following option to an integer greater than 0:
     */
-  var limitConcurrentUploads: js.UndefOr[Double] = js.native
+  var limitConcurrentUploads: js.UndefOr[Double] = js.undefined
   
   /**
     * The following option limits the number of files uploaded with one
     * XHR request to keep the request size under or equal to the defined
     * limit in bytes
     */
-  var limitMultiFileUploadSize: js.UndefOr[Double] = js.native
+  var limitMultiFileUploadSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Multipart file uploads add a number of bytes to each uploaded file,
     * therefore the following option adds an overhead for each file used
     * in the limitMultiFileUploadSize configuration:
     */
-  var limitMultiFileUploadSizeOverhead: js.UndefOr[Double] = js.native
+  var limitMultiFileUploadSizeOverhead: js.UndefOr[Double] = js.undefined
   
   /**
     * To limit the number of files uploaded with one XHR request,
     * set the following option to an integer greater than 0:
     */
-  var limitMultiFileUploads: js.UndefOr[Double] = js.native
+  var limitMultiFileUploads: js.UndefOr[Double] = js.undefined
   
   /**
     * To upload large files in smaller chunks, set the following option
@@ -154,7 +152,7 @@ trait JQueryFileInputOptions extends StObject {
     * or the browser does not support the required Blob API, files will
     * be uploaded as a whole.
     */
-  var maxChunkSize: js.UndefOr[Double] = js.native
+  var maxChunkSize: js.UndefOr[Double] = js.undefined
   
   // Validation
   /**
@@ -165,19 +163,19 @@ trait JQueryFileInputOptions extends StObject {
     * Note: This option has only an effect for browsers supporting the File API.
     * @see https://github.com/blueimp/jQuery-File-Upload/wiki/Options#maxfilesize
     */
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Error and info messages:
     */
-  var messages: js.UndefOr[js.Any] = js.native
+  var messages: js.UndefOr[js.Any] = js.undefined
   
   /**
     * By default, XHR file uploads are sent as multipart/form-data.
     * The iframe transport is always using multipart/form-data.
     * Set to false to enable non-multipart XHR uploads:
     */
-  var multipart: js.UndefOr[Boolean] = js.native
+  var multipart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The parameter name for the file form data (the request argument name).
@@ -185,59 +183,59 @@ trait JQueryFileInputOptions extends StObject {
     * used, or "files[]" if the file input name property is also empty,
     * can be a string or an array of strings:
     */
-  var paramName: js.UndefOr[js.Any] = js.native
+  var paramName: js.UndefOr[js.Any] = js.undefined
   
   var paste: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The paste target element(s), by the default the complete document.
     * Set to null to disable paste support:
     */
-  var pasteZone: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.native
+  var pasteZone: js.UndefOr[Element | js.Array[Element] | JQuery | String] = js.undefined
   
   /**
     * Set the following option to the location of a postMessage window,
     * to enable postMessage transport uploads:
     */
-  var postMessage: js.UndefOr[String] = js.native
+  var postMessage: js.UndefOr[String] = js.undefined
   
   // The plugin options are used as settings object for the ajax calls.
   // The following are jQuery ajax settings required for the file uploads:
-  var processData: js.UndefOr[Boolean] = js.native
+  var processData: js.UndefOr[Boolean] = js.undefined
   
   var progress: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Interval in milliseconds to calculate and trigger progress events:
     */
-  var progressInterval: js.UndefOr[Double] = js.native
+  var progressInterval: js.UndefOr[Double] = js.undefined
   
   var progressall: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressAllObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * By default, failed (abort or error) file uploads are removed from the
     * global progress calculation. Set the following option to false to
     * prevent recalculating the global progress data:
     */
-  var recalculateProgress: js.UndefOr[Boolean] = js.native
+  var recalculateProgress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the following option to the location of a redirect url on the
     * origin server, for cross-domain iframe transport uploads:
     */
-  var redirect: js.UndefOr[String] = js.native
+  var redirect: js.UndefOr[String] = js.undefined
   
   /**
     * The parameter name for the redirect url, sent as part of the form
     * data and set to 'redirect' if this option is empty:
     */
-  var redirectParamName: js.UndefOr[String] = js.native
+  var redirectParamName: js.UndefOr[String] = js.undefined
   
   /**
     * By default, the file input field is replaced with a clone after
@@ -245,36 +243,36 @@ trait JQueryFileInputOptions extends StObject {
     * queues and allows change events to be fired for the same file
     * selection, but can be disabled by setting the following option to false:
     */
-  var replaceFileInput: js.UndefOr[Boolean] = js.native
+  var replaceFileInput: js.UndefOr[Boolean] = js.undefined
   
   var send: js.UndefOr[
     js.Function2[/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject, Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set the following option to true to issue all file upload requests
     * in a sequential order:
     */
-  var sequentialUploads: js.UndefOr[Boolean] = js.native
+  var sequentialUploads: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default, each file of a selection is uploaded using an individual
     * request for XHR type uploads. Set to false to upload file
     * selections in one request each:
     */
-  var singleFileUploads: js.UndefOr[Boolean] = js.native
+  var singleFileUploads: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.undefined
   
-  var stop: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.native
+  var stop: js.UndefOr[js.Function1[/* e */ JQueryEventObject, Unit]] = js.undefined
   
   // Other callbacks:
-  var submit: js.UndefOr[js.Function] = js.native
+  var submit: js.UndefOr[js.Function] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   // The HTTP request method must be "POST" or "PUT"
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * When a non-multipart upload or a chunked multipart upload has been
@@ -283,13 +281,13 @@ trait JQueryFileInputOptions extends StObject {
     * useful when modifying the options object inside of the "add" or
     * "send" callbacks, as the options are cloned for each file upload.
     */
-  var uploadedBytes: js.UndefOr[Double] = js.native
+  var uploadedBytes: js.UndefOr[Double] = js.undefined
   
   // Others
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   // Cross-site XMLHttpRequest file uploads
-  var xhrFields: js.UndefOr[js.Any] = js.native
+  var xhrFields: js.UndefOr[js.Any] = js.undefined
 }
 object JQueryFileInputOptions {
   

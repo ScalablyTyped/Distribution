@@ -4,18 +4,16 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details about a tethering client. */
-@js.native
 trait NetworkOperatorTetheringClient extends StObject {
   
   /** Gets a list of hostnames used by this tethering client. */
-  var hostNames: IVectorView[HostName] = js.native
+  var hostNames: IVectorView[HostName]
   
   /** Gets the MAC address of this tethering client. */
-  var macAddress: String = js.native
+  var macAddress: String
 }
 object NetworkOperatorTetheringClient {
   

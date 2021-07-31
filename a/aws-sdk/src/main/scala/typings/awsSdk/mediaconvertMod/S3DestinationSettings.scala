@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DestinationSettings extends StObject {
   
   /**
     * Optional. Have MediaConvert automatically apply Amazon S3 access control for the outputs in this output group. When you don't use this setting, S3 automatically applies the default access control list PRIVATE.
     */
-  var AccessControl: js.UndefOr[S3DestinationAccessControl] = js.native
+  var AccessControl: js.UndefOr[S3DestinationAccessControl] = js.undefined
   
   /**
     * Settings for how your job outputs are encrypted as they are uploaded to Amazon S3.
     */
-  var Encryption: js.UndefOr[S3EncryptionSettings] = js.native
+  var Encryption: js.UndefOr[S3EncryptionSettings] = js.undefined
 }
 object S3DestinationSettings {
   

@@ -10,9 +10,9 @@ Raygun.io package for Node, written in TypeScript
 | ------------------ | :-------------: |
 | Full name          | raygun |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 18 |
-| # downloads        | 1144938 |
+| # downloads        | 1109886 |
 | # stars            | 0 |
 
 ## Links

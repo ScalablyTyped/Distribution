@@ -4,28 +4,28 @@ import typings.remarkable.remarkableBooleans.`false`
 import typings.remarkable.remarkableStrings.htmlblock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait HtmlBlockToken extends ContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait HtmlBlockToken
+  extends StObject
+     with ContentToken {
   
   @JSName("block")
-  var block_HtmlBlockToken: `false` = js.native
+  var block_HtmlBlockToken: `false`
   
   @JSName("content")
-  var content_HtmlBlockToken: String = js.native
+  var content_HtmlBlockToken: String
   
   @JSName("type")
-  var type_HtmlBlockToken: htmlblock = js.native
+  var type_HtmlBlockToken: htmlblock
 }
 object HtmlBlockToken {
   
   @scala.inline
-  def apply(block: `false`, content: String, level: Double, `type`: htmlblock): HtmlBlockToken = {
-    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(content: String, level: Double): HtmlBlockToken = {
+    val __obj = js.Dynamic.literal(block = false, content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("htmlblock")
     __obj.asInstanceOf[HtmlBlockToken]
   }
   

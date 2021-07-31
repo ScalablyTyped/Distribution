@@ -5,7 +5,6 @@ import typings.std.CSSStyleDeclaration
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,18 +32,18 @@ trait Imprint extends StObject {
   def capture(
     canvas: HTMLCanvasElement,
     pixelRatio: Double,
-    callback: js.UndefOr[scala.Nothing],
-    opt_errback: js.Function1[/* s */ String, Unit]
-  ): Unit = js.native
-  def capture(
-    canvas: HTMLCanvasElement,
-    pixelRatio: Double,
     callback: js.Function1[/* canvas */ HTMLCanvasElement, Unit]
   ): Unit = js.native
   def capture(
     canvas: HTMLCanvasElement,
     pixelRatio: Double,
     callback: js.Function1[/* canvas */ HTMLCanvasElement, Unit],
+    opt_errback: js.Function1[/* s */ String, Unit]
+  ): Unit = js.native
+  def capture(
+    canvas: HTMLCanvasElement,
+    pixelRatio: Double,
+    callback: Unit,
     opt_errback: js.Function1[/* s */ String, Unit]
   ): Unit = js.native
   
@@ -75,14 +74,13 @@ object Imprint {
     * @property font {string=} - The font of the text. If omitted the current value remains, default is &quot;11px Arial,sans-serif&quot;.
     * @property href {string=} - The URL of the &quot;Terms of use&quot; link. If omitted the current value remains, default is &quot;http://here.com/terms&quot;.
     */
-  @js.native
   trait Options extends StObject {
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var invert: js.UndefOr[Boolean] = js.native
+    var invert: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

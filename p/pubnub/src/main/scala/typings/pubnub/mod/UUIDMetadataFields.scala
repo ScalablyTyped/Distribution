@@ -2,20 +2,18 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // UUID metadata
-@js.native
 trait UUIDMetadataFields extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var externalId: String = js.native
+  var externalId: String
   
-  var name: String = js.native
+  var name: String
   
-  var profileUrl: String = js.native
+  var profileUrl: String
 }
 object UUIDMetadataFields {
   

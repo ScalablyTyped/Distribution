@@ -4,41 +4,38 @@ import typings.node.childProcessMod.ChildProcess
 import typings.openfin.wireMod.ConfigWithRuntime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nixLaunchMod {
   
-  @JSImport("openfin/_v2/launcher/nix-launch", JSImport.Default)
+  @JSImport("openfin/_v2/launcher/nix-launch", JSImport.Namespace)
   @js.native
-  def default(config: ConfigWithRuntime, osConfig: OsConfig): js.Promise[ChildProcess] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("openfin/_v2/launcher/nix-launch", "download")
-  @js.native
-  def download(version: String, folder: String, osConfig: OsConfig): js.Promise[String] = js.native
+  @scala.inline
+  def default(config: ConfigWithRuntime, osConfig: OsConfig): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
   
-  @JSImport("openfin/_v2/launcher/nix-launch", "getRuntimePath")
-  @js.native
-  def getRuntimePath(version: String): js.Promise[String] = js.native
+  @scala.inline
+  def download(version: String, folder: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(version.asInstanceOf[js.Any], folder.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("openfin/_v2/launcher/nix-launch", "getUrl")
-  @js.native
-  def getUrl(version: String, urlPath: String): String = js.native
+  @scala.inline
+  def getRuntimePath(version: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimePath")(version.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("openfin/_v2/launcher/nix-launch", "install")
-  @js.native
-  def install(versionOrChannel: String, osConfig: OsConfig): js.Promise[String] = js.native
+  @scala.inline
+  def getUrl(version: String, urlPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(version.asInstanceOf[js.Any], urlPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def install(versionOrChannel: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(versionOrChannel.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   trait OsConfig extends StObject {
     
-    var executablePath: String = js.native
+    var executablePath: String
     
-    var manifestLocation: String = js.native
+    var manifestLocation: String
     
-    var namedPipeName: String = js.native
+    var namedPipeName: String
     
-    var urlPath: String = js.native
+    var urlPath: String
   }
   object OsConfig {
     

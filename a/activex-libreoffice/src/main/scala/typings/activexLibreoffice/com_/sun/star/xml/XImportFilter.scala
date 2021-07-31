@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * interface to implement for an XML-based import filter.
   * @since OOo 1.1.2
   */
-@js.native
-trait XImportFilter extends XInterface {
+trait XImportFilter
+  extends StObject
+     with XInterface {
   
   /**
     * performs the import.
@@ -27,7 +27,7 @@ trait XImportFilter extends XInterface {
     * @param xDocHandler target for the XML document representation
     * @returns `TRUE` if import process is successful
     */
-  def importer(aSourceData: SeqEquiv[PropertyValue], xDocHandler: XDocumentHandler, msUserData: SeqEquiv[String]): Boolean = js.native
+  def importer(aSourceData: SeqEquiv[PropertyValue], xDocHandler: XDocumentHandler, msUserData: SeqEquiv[String]): Boolean
 }
 object XImportFilter {
   

@@ -12,10 +12,13 @@ import typings.std.Blob
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcReferenceMod {
+  
+  @JSImport("@firebase/storage/dist/src/reference", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/storage/dist/src/reference", "Reference")
   @js.native
@@ -51,66 +54,48 @@ object srcReferenceMod {
     def storage: StorageService = js.native
   }
   
-  @JSImport("@firebase/storage/dist/src/reference", "deleteObject")
-  @js.native
-  def deleteObject(ref: Reference): js.Promise[Unit] = js.native
+  @scala.inline
+  def deleteObject(ref: Reference): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteObject")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "getChild")
-  @js.native
-  def getChild(ref: Reference, childPath: String): Reference = js.native
+  @scala.inline
+  def getChild(ref: Reference, childPath: String): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("getChild")(ref.asInstanceOf[js.Any], childPath.asInstanceOf[js.Any])).asInstanceOf[Reference]
   
-  @JSImport("@firebase/storage/dist/src/reference", "getDownloadURL")
-  @js.native
-  def getDownloadURL(ref: Reference): js.Promise[String] = js.native
+  @scala.inline
+  def getDownloadURL(ref: Reference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDownloadURL")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "getMetadata")
-  @js.native
-  def getMetadata(ref: Reference): js.Promise[Metadata] = js.native
+  @scala.inline
+  def getMetadata(ref: Reference): js.Promise[Metadata] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Metadata]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "list")
-  @js.native
-  def list(ref: Reference): js.Promise[ListResult] = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "list")
-  @js.native
-  def list(ref: Reference, options: ListOptions): js.Promise[ListResult] = js.native
+  @scala.inline
+  def list(ref: Reference): js.Promise[ListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult]]
+  @scala.inline
+  def list(ref: Reference, options: ListOptions): js.Promise[ListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListResult]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "listAll")
-  @js.native
-  def listAll(ref: Reference): js.Promise[ListResult] = js.native
+  @scala.inline
+  def listAll(ref: Reference): js.Promise[ListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("listAll")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "updateMetadata")
-  @js.native
-  def updateMetadata(ref: Reference, metadata: Metadata): js.Promise[Metadata] = js.native
+  @scala.inline
+  def updateMetadata(ref: Reference, metadata: Metadata): js.Promise[Metadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMetadata")(ref.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Metadata]]
   
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: ArrayBuffer): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: ArrayBuffer, metadata: Metadata): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: Blob): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: Blob, metadata: Metadata): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: Uint8Array): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadBytesResumable")
-  @js.native
-  def uploadBytesResumable(ref: Reference, data: Uint8Array, metadata: Metadata): UploadTask = js.native
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: ArrayBuffer): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: ArrayBuffer, metadata: Metadata): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: Blob): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: Blob, metadata: Metadata): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: Uint8Array): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadBytesResumable(ref: Reference, data: Uint8Array, metadata: Metadata): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadBytesResumable")(ref.asInstanceOf[js.Any], data.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
   
-  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
-  @js.native
-  def uploadString(ref: Reference, value: String): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
-  @js.native
-  def uploadString(ref: Reference, value: String, format: js.UndefOr[scala.Nothing], metadata: Metadata): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
-  @js.native
-  def uploadString(ref: Reference, value: String, format: StringFormat): UploadTask = js.native
-  @JSImport("@firebase/storage/dist/src/reference", "uploadString")
-  @js.native
-  def uploadString(ref: Reference, value: String, format: StringFormat, metadata: Metadata): UploadTask = js.native
+  @scala.inline
+  def uploadString(ref: Reference, value: String): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadString(ref: Reference, value: String, format: Unit, metadata: Metadata): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadString(ref: Reference, value: String, format: StringFormat): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
+  @scala.inline
+  def uploadString(ref: Reference, value: String, format: StringFormat, metadata: Metadata): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("uploadString")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
 }

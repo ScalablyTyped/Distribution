@@ -4,7 +4,6 @@ import typings.awsSdk.macieMod.ClientConfiguration
 import typings.awsSdk.macieMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk/clients/all", "Macie")

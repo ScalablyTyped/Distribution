@@ -2,13 +2,11 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateHsmClientCertificateResult extends StObject {
   
-  var HsmClientCertificate: js.UndefOr[typings.awsSdk.redshiftMod.HsmClientCertificate] = js.native
+  var HsmClientCertificate: js.UndefOr[typings.awsSdk.redshiftMod.HsmClientCertificate] = js.undefined
 }
 object CreateHsmClientCertificateResult {
   

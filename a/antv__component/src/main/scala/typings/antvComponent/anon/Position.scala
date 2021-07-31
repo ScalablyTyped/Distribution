@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
-  var position: String = js.native
+  var position: String
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var style: TextBaseline = js.native
+  var style: TextBaseline
 }
 object Position {
   

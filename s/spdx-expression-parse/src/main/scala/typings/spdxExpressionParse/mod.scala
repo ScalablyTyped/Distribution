@@ -10,23 +10,26 @@ import typings.spdxExpressionParse.spdxExpressionParseStrings.and
 import typings.spdxExpressionParse.spdxExpressionParseStrings.or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(source: String): Info = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Info]
+  
   @JSImport("spdx-expression-parse", JSImport.Namespace)
   @js.native
-  def apply(source: String): Info = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ConjuctionInfo extends Info {
+  trait ConjuctionInfo
+    extends StObject
+       with Info {
     
-    var conjunction: and | or = js.native
+    var conjunction: and | or
     
-    var left: LicenseInfo | ConjuctionInfo = js.native
+    var left: LicenseInfo | ConjuctionInfo
     
-    var right: LicenseInfo | ConjuctionInfo = js.native
+    var right: LicenseInfo | ConjuctionInfo
   }
   object ConjuctionInfo {
     
@@ -74,12 +77,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait LicenseInfo extends Info {
+  trait LicenseInfo
+    extends StObject
+       with Info {
     
-    var license: String = js.native
+    var license: String
     
-    var plus: js.UndefOr[`true`] = js.native
+    var plus: js.UndefOr[`true`] = js.undefined
   }
   object LicenseInfo {
     
@@ -103,12 +107,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var string: String = js.native
+    var string: String
     
-    var `type`: OPERATOR | LICENSE | DOCUMENTREF | LICENSEREF | EXCEPTION = js.native
+    var `type`: OPERATOR | LICENSE | DOCUMENTREF | LICENSEREF | EXCEPTION
   }
   object Token {
     

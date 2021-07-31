@@ -16,47 +16,38 @@ import typings.uifabricFoundation.libIslotsMod.ValidProps
 import typings.uifabricFoundation.libIslotsMod.ValidShorthand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slotsMod {
   
-  @JSImport("@uifabric/foundation/lib/slots", "createFactory")
+  @JSImport("@uifabric/foundation/lib/slots", JSImport.Namespace)
   @js.native
-  def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps]): ISlotFactory[TProps, TShorthandProp] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "createFactory")
-  @js.native
-  def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps], options: IFactoryOptions[TProps]): ISlotFactory[TProps, TShorthandProp] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/foundation/lib/slots", "getSlots")
-  @js.native
-  def getSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](userProps: TComponentProps, slots: ISlotDefinition[Required[TComponentSlots]]): ISlots[Required[TComponentSlots]] = js.native
+  @scala.inline
+  def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps]): ISlotFactory[TProps, TShorthandProp] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(DefaultComponent.asInstanceOf[js.Any]).asInstanceOf[ISlotFactory[TProps, TShorthandProp]]
+  @scala.inline
+  def createFactory[TProps /* <: ValidProps */, TShorthandProp /* <: ValidShorthand */](DefaultComponent: ComponentType[TProps], options: IFactoryOptions[TProps]): ISlotFactory[TProps, TShorthandProp] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(DefaultComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ISlotFactory[TProps, TShorthandProp]]
   
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: String, props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: String, props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: ISlot[P], props: Attributes with P, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: ISlot[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
-  @JSImport("@uifabric/foundation/lib/slots", "withSlots")
-  @js.native
-  def withSlots[P](`type`: ISlot[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = js.native
+  @scala.inline
+  def getSlots[TComponentProps /* <: ISlottableProps[TComponentSlots] */, TComponentSlots](userProps: TComponentProps, slots: ISlotDefinition[Required[TComponentSlots]]): ISlots[Required[TComponentSlots]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSlots")(userProps.asInstanceOf[js.Any], slots.asInstanceOf[js.Any])).asInstanceOf[ISlots[Required[TComponentSlots]]]
+  
+  @scala.inline
+  def withSlots[P](`type`: String, props: Attributes & P, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: String, props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: String, props: Unit, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: ISlot[P], props: Attributes & P, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: ISlot[P], props: Null, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
+  @scala.inline
+  def withSlots[P](`type`: ISlot[P], props: Unit, children: ReactNode*): ReturnType[FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("withSlots")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FunctionComponent[P]]]
 }

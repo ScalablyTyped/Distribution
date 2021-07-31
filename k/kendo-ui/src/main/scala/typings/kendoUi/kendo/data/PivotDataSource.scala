@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.data
 import typings.kendoUi.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotDataSource extends DataSource {
+trait PivotDataSource
+  extends StObject
+     with DataSource {
   
   def axes(): PivotSchemaAxes = js.native
   
@@ -20,7 +21,7 @@ trait PivotDataSource extends DataSource {
   def cube(): String = js.native
   def cube(`val`: String): Unit = js.native
   
-  def discover(options: PivotDiscoverRequestOptions): JQueryPromise[_] = js.native
+  def discover(options: PivotDiscoverRequestOptions): JQueryPromise[js.Any] = js.native
   
   def init(options: PivotDataSourceOptions): Unit = js.native
   
@@ -32,15 +33,15 @@ trait PivotDataSource extends DataSource {
   def rows(): js.Array[String] = js.native
   def rows(`val`: js.Array[String]): Unit = js.native
   
-  def schemaCatalogs(): JQueryPromise[_] = js.native
+  def schemaCatalogs(): JQueryPromise[js.Any] = js.native
   
-  def schemaCubes(): JQueryPromise[_] = js.native
+  def schemaCubes(): JQueryPromise[js.Any] = js.native
   
-  def schemaDimensions(): JQueryPromise[_] = js.native
+  def schemaDimensions(): JQueryPromise[js.Any] = js.native
   
-  def schemaHierarchies(): JQueryPromise[_] = js.native
+  def schemaHierarchies(): JQueryPromise[js.Any] = js.native
   
-  def schemaLevels(): JQueryPromise[_] = js.native
+  def schemaLevels(): JQueryPromise[js.Any] = js.native
   
-  def schemaMeasures(): JQueryPromise[_] = js.native
+  def schemaMeasures(): JQueryPromise[js.Any] = js.native
 }

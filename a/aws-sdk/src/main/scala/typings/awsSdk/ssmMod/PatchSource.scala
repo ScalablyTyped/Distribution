@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchSource extends StObject {
   
   /**
     * The value of the yum repo configuration. For example:  [main]   cachedir=/var/cache/yum/$basesearch$releasever   keepcache=0   debuglevel=2 
     */
-  var Configuration: PatchSourceConfiguration = js.native
+  var Configuration: PatchSourceConfiguration
   
   /**
     * The name specified to identify the patch source.
     */
-  var Name: PatchSourceName = js.native
+  var Name: PatchSourceName
   
   /**
     * The specific operating system versions a patch repository applies to, such as "Ubuntu16.04", "AmazonLinux2016.09", "RedhatEnterpriseLinux7.2" or "Suse12.7". For lists of supported product values, see PatchFilter.
     */
-  var Products: PatchSourceProductList = js.native
+  var Products: PatchSourceProductList
 }
 object PatchSource {
   

@@ -2,23 +2,21 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivitySetRepoSubscriptionResponseData extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var ignored: Boolean = js.native
+  var ignored: Boolean
   
-  var reason: String = js.native
+  var reason: String
   
-  var repository_url: String = js.native
+  var repository_url: String
   
-  var subscribed: Boolean = js.native
+  var subscribed: Boolean
   
-  var url: String = js.native
+  var url: String
 }
 object ActivitySetRepoSubscriptionResponseData {
   

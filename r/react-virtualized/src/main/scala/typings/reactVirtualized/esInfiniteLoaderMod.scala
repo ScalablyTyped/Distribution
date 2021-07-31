@@ -9,7 +9,6 @@ import typings.reactVirtualized.mod.Index
 import typings.reactVirtualized.mod.IndexRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esInfiniteLoaderMod {
@@ -48,12 +47,11 @@ object esInfiniteLoaderMod {
     def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait InfiniteLoaderChildProps extends StObject {
     
-    def onRowsRendered(params: IndexRange): Unit = js.native
+    def onRowsRendered(params: IndexRange): Unit
     
-    def registerChild(registeredChild: js.Any): Unit = js.native
+    def registerChild(registeredChild: js.Any): Unit
   }
   object InfiniteLoaderChildProps {
     
@@ -74,9 +72,9 @@ object esInfiniteLoaderMod {
     }
   }
   
-  @js.native
   trait InfiniteLoaderProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -93,13 +91,13 @@ object esInfiniteLoaderMod {
       * The specified :onRowsRendered function should be passed through to the child's :onRowsRendered property.
       * The :registerChild callback should be set as the virtualized component's :ref.
       */
-    def children(props: InfiniteLoaderChildProps): ReactNode = js.native
+    def children(props: InfiniteLoaderChildProps): ReactNode
     
     /**
       * Function responsible for tracking the loaded state of each row.
       * It should implement the following signature: ({ index: number }): boolean
       */
-    def isRowLoaded(params: Index): Boolean = js.native
+    def isRowLoaded(params: Index): Boolean
     
     /**
       * Callback to be invoked when more rows must be loaded.
@@ -108,25 +106,25 @@ object esInfiniteLoaderMod {
       * It will be used to determine when to refresh the list with the newly-loaded data.
       * This callback may be called multiple times in reaction to a single scroll event.
       */
-    def loadMoreRows(params: IndexRange): js.Promise[_] = js.native
+    def loadMoreRows(params: IndexRange): js.Promise[js.Any]
     
     /**
       * Minimum number of rows to be loaded at a time.
       * This property can be used to batch requests to reduce HTTP requests.
       */
-    var minimumBatchSize: js.UndefOr[Double] = js.native
+    var minimumBatchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of rows in list; can be arbitrary high number if actual number is unknown.
       */
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Threshold at which to pre-fetch data.
       * A threshold X means that data will start loading when a user scrolls within X rows.
       * This value defaults to 15.
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object InfiniteLoaderProps {
     
@@ -134,7 +132,7 @@ object esInfiniteLoaderMod {
     def apply(
       children: InfiniteLoaderChildProps => ReactNode,
       isRowLoaded: Index => Boolean,
-      loadMoreRows: IndexRange => js.Promise[_]
+      loadMoreRows: IndexRange => js.Promise[js.Any]
     ): InfiniteLoaderProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), isRowLoaded = js.Any.fromFunction1(isRowLoaded), loadMoreRows = js.Any.fromFunction1(loadMoreRows))
       __obj.asInstanceOf[InfiniteLoaderProps]
@@ -150,7 +148,7 @@ object esInfiniteLoaderMod {
       def setIsRowLoaded(value: Index => Boolean): Self = StObject.set(x, "isRowLoaded", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setLoadMoreRows(value: IndexRange => js.Promise[_]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
+      def setLoadMoreRows(value: IndexRange => js.Promise[js.Any]): Self = StObject.set(x, "loadMoreRows", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])

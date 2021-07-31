@@ -3,7 +3,6 @@ package typings.typeorm
 import typings.typeorm.anon.Docker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initCommandMod {
@@ -28,84 +27,76 @@ object initCommandMod {
   /* static members */
   object InitCommand {
     
+    @JSImport("typeorm/commands/InitCommand", "InitCommand")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Appends to a given package.json template everything needed.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.appendPackageJson")
-    @js.native
-    def appendPackageJson(packageJsonContents: String, database: String, express: Boolean): String = js.native
+    @scala.inline
+    def appendPackageJson(packageJsonContents: String, database: String, express: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendPackageJson")(packageJsonContents.asInstanceOf[js.Any], database.asInstanceOf[js.Any], express.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Gets contents of the main (index) application file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getAppIndexTemplate")
-    @js.native
-    def getAppIndexTemplate(express: Boolean): String = js.native
+    @scala.inline
+    def getAppIndexTemplate(express: Boolean): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppIndexTemplate")(express.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets contents of the user controller file (used when express is enabled).
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getControllerTemplate")
-    @js.native
-    def getControllerTemplate(): String = js.native
+    @scala.inline
+    def getControllerTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getControllerTemplate")().asInstanceOf[String]
     
     /**
       * Gets contents of the new docker-compose.yml file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getDockerComposeTemplate")
-    @js.native
-    def getDockerComposeTemplate(database: String): String = js.native
+    @scala.inline
+    def getDockerComposeTemplate(database: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDockerComposeTemplate")(database.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets contents of the .gitignore file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getGitIgnoreFile")
-    @js.native
-    def getGitIgnoreFile(): String = js.native
+    @scala.inline
+    def getGitIgnoreFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGitIgnoreFile")().asInstanceOf[String]
     
     /**
       * Gets contents of the ormconfig file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getOrmConfigTemplate")
-    @js.native
-    def getOrmConfigTemplate(database: String): String = js.native
+    @scala.inline
+    def getOrmConfigTemplate(database: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrmConfigTemplate")(database.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets contents of the new package.json file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getPackageJsonTemplate")
-    @js.native
-    def getPackageJsonTemplate(): String = js.native
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getPackageJsonTemplate")
-    @js.native
-    def getPackageJsonTemplate(projectName: String): String = js.native
+    @scala.inline
+    def getPackageJsonTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageJsonTemplate")().asInstanceOf[String]
+    @scala.inline
+    def getPackageJsonTemplate(projectName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageJsonTemplate")(projectName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets contents of the new readme.md file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getReadmeTemplate")
-    @js.native
-    def getReadmeTemplate(options: Docker): String = js.native
+    @scala.inline
+    def getReadmeTemplate(options: Docker): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getReadmeTemplate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets contents of the route file (used when express is enabled).
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getRoutesTemplate")
-    @js.native
-    def getRoutesTemplate(): String = js.native
+    @scala.inline
+    def getRoutesTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoutesTemplate")().asInstanceOf[String]
     
     /**
       * Gets contents of the ormconfig file.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getTsConfigTemplate")
-    @js.native
-    def getTsConfigTemplate(): String = js.native
+    @scala.inline
+    def getTsConfigTemplate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTsConfigTemplate")().asInstanceOf[String]
     
     /**
       * Gets contents of the user entity.
       */
-    @JSImport("typeorm/commands/InitCommand", "InitCommand.getUserEntityTemplate")
-    @js.native
-    def getUserEntityTemplate(database: String): String = js.native
+    @scala.inline
+    def getUserEntityTemplate(database: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserEntityTemplate")(database.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

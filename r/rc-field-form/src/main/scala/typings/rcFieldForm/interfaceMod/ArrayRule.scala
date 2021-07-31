@@ -5,45 +5,45 @@ import typings.react.mod.ReactElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/interface.AggregationRule, 'type'> */
-@js.native
-trait ArrayRule extends RuleObject {
+trait ArrayRule
+  extends StObject
+     with RuleObject {
   
-  var defaultField: js.UndefOr[RuleObject] = js.native
+  var defaultField: js.UndefOr[RuleObject] = js.undefined
   
-  var enum: js.UndefOr[js.Array[StoreValue]] = js.native
+  var `enum`: js.UndefOr[js.Array[StoreValue]] = js.undefined
   
-  var len: js.UndefOr[Double] = js.native
+  var len: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String | ReactElement] = js.native
+  var message: js.UndefOr[String | ReactElement] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var pattern: js.UndefOr[RegExp] = js.native
+  var pattern: js.UndefOr[RegExp] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var transform: js.UndefOr[js.Function1[/* value */ StoreValue, StoreValue]] = js.native
+  var transform: js.UndefOr[js.Function1[/* value */ StoreValue, StoreValue]] = js.undefined
   
-  var `type`: array = js.native
+  var `type`: array
   
-  var validateTrigger: js.UndefOr[String | js.Array[String]] = js.native
+  var validateTrigger: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var validator: js.UndefOr[Validator] = js.native
+  var validator: js.UndefOr[Validator] = js.undefined
   
-  var whitespace: js.UndefOr[Boolean] = js.native
+  var whitespace: js.UndefOr[Boolean] = js.undefined
 }
 object ArrayRule {
   
   @scala.inline
-  def apply(`type`: array): ArrayRule = {
+  def apply(): ArrayRule = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[ArrayRule]
   }
   

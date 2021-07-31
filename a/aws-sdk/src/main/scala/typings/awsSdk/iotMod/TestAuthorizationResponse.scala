@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestAuthorizationResponse extends StObject {
   
   /**
     * The authentication results.
     */
-  var authResults: js.UndefOr[AuthResults] = js.native
+  var authResults: js.UndefOr[AuthResults] = js.undefined
 }
 object TestAuthorizationResponse {
   

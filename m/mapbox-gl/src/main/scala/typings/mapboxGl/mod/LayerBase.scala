@@ -2,29 +2,27 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerBase extends StObject {
   
-  var filter: js.UndefOr[js.Array[_]] = js.native
+  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var maxzoom: js.UndefOr[Double] = js.native
+  var maxzoom: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var minzoom: js.UndefOr[Double] = js.native
+  var minzoom: js.UndefOr[Double] = js.undefined
   
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var source: js.UndefOr[String | AnySourceData] = js.native
+  var source: js.UndefOr[String | AnySourceData] = js.undefined
   
-  var `source-layer`: js.UndefOr[String] = js.native
+  var `source-layer`: js.UndefOr[String] = js.undefined
 }
 object LayerBase {
   
@@ -38,7 +36,7 @@ object LayerBase {
   implicit class LayerBaseMutableBuilder[Self <: LayerBase] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

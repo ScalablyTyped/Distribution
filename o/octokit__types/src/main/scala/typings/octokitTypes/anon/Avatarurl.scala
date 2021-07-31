@@ -2,47 +2,45 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avatarurl extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var events_url: String = js.native
+  var events_url: String
   
-  var followers_url: String = js.native
+  var followers_url: String
   
-  var following_url: String = js.native
+  var following_url: String
   
-  var gists_url: String = js.native
+  var gists_url: String
   
-  var gravatar_id: String = js.native
+  var gravatar_id: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var login: String = js.native
+  var login: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var organizations_url: String = js.native
+  var organizations_url: String
   
-  var received_events_url: String = js.native
+  var received_events_url: String
   
-  var repos_url: String = js.native
+  var repos_url: String
   
-  var site_admin: Boolean = js.native
+  var site_admin: Boolean
   
-  var starred_url: String = js.native
+  var starred_url: String
   
-  var subscriptions_url: String = js.native
+  var subscriptions_url: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Avatarurl {
   

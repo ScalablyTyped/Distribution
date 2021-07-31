@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskExecution extends StObject {
   
   /**
     * The task that got started.
     */
-  var task: Task = js.native
+  var task: Task
   
   /**
     * Terminates the task execution.
     */
-  def terminate(): Unit = js.native
+  def terminate(): Unit
 }
 object TaskExecution {
   

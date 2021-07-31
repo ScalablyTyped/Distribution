@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.presignedPostMod.PresignedPost.Fields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object presignedPostMod {
@@ -25,9 +24,9 @@ object presignedPostMod {
   }
   object PresignedPost {
     
-    @js.native
     trait Fields
-      extends /**
+      extends StObject
+         with /**
       * Additional keys that must be included in the form to be submitted. This
       * will include signature metadata as well as any fields provided to
       * s3.createPresignedPost
@@ -39,13 +38,13 @@ object presignedPostMod {
         * upload. Composed of the conditions and expiration provided to
         * s3.createPresignedPost
         */
-      var Policy: String = js.native
+      var Policy: String
       
       /**
         * A hex-encoded HMAC of the POST policy, signed with the credentials
         * provided to the S3 client.
         */
-      var `X-Amz-Signature`: String = js.native
+      var `X-Amz-Signature`: String
     }
     object Fields {
       
@@ -67,32 +66,31 @@ object presignedPostMod {
       }
     }
     
-    @js.native
     trait Params extends StObject {
       
       /**
         * The S3 bucket to which the form should upload an attached file.
         */
-      var Bucket: js.UndefOr[String] = js.native
+      var Bucket: js.UndefOr[String] = js.undefined
       
       /**
         * An array of conditions that must be met for the form upload to be
         * accepted by S3.
         */
-      var Conditions: js.UndefOr[js.Array[StringDictionary[_] | (js.Tuple3[String, _, _])]] = js.native
+      var Conditions: js.UndefOr[js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]] = js.undefined
       
       /**
         * The number of seconds for which the POST form's signed policy should be
         * valid. Defaults to 3600 (one hour).
         */
-      var Expires: js.UndefOr[Double] = js.native
+      var Expires: js.UndefOr[Double] = js.undefined
       
       /**
         * A hash of form fields to include in the presigned POST form. All fields
         * (except 'key') will be included as exact match conditions in the
         * presigned policy.
         */
-      var Fields: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var Fields: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object Params {
       
@@ -112,7 +110,7 @@ object presignedPostMod {
         def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
         
         @scala.inline
-        def setConditions(value: js.Array[StringDictionary[_] | (js.Tuple3[String, _, _])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+        def setConditions(value: js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)

@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeferredMaintenanceWindow extends StObject {
   
   /**
     *  A timestamp for the end of the time period when we defer maintenance.
     */
-  var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.native
+  var DeferMaintenanceEndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A unique identifier for the maintenance window.
     */
-  var DeferMaintenanceIdentifier: js.UndefOr[String] = js.native
+  var DeferMaintenanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  A timestamp for the beginning of the time period when we defer maintenance.
     */
-  var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.native
+  var DeferMaintenanceStartTime: js.UndefOr[TStamp] = js.undefined
 }
 object DeferredMaintenanceWindow {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterSetting extends StObject {
   
   /**
     * Name of the setting to manage. Valid values: `containerInsights`.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The value to assign to the setting. Value values are `enabled` and `disabled`.
     */
-  var value: String = js.native
+  var value: String
 }
 object ClusterSetting {
   

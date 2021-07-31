@@ -2,16 +2,14 @@ package typings.awsSdk.iotjobsdataplaneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartNextPendingJobExecutionResponse extends StObject {
   
   /**
     * A JobExecution object.
     */
-  var execution: js.UndefOr[JobExecution] = js.native
+  var execution: js.UndefOr[JobExecution] = js.undefined
 }
 object StartNextPendingJobExecutionResponse {
   

@@ -2,62 +2,60 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartFillFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val BackColor: ChartColorFormat = js.native
+  val BackColor: ChartColorFormat
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val ForeColor: ChartColorFormat = js.native
+  val ForeColor: ChartColorFormat
   
-  val GradientColorType: Double = js.native
+  val GradientColorType: Double
   
-  val GradientDegree: Double = js.native
+  val GradientDegree: Double
   
-  val GradientStyle: Double = js.native
+  val GradientStyle: Double
   
-  val GradientVariant: Double = js.native
+  val GradientVariant: Double
   
   @JSName("Office.ChartFillFormat_typekey")
-  var OfficeDotChartFillFormat_typekey: ChartFillFormat = js.native
+  var OfficeDotChartFillFormat_typekey: ChartFillFormat
   
-  def OneColorGradient(Style: Double, Variant: Double, Degree: Double): Unit = js.native
+  def OneColorGradient(Style: Double, Variant: Double, Degree: Double): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Pattern: Double = js.native
+  val Pattern: Double
   
-  def Patterned(Pattern: Double): Unit = js.native
+  def Patterned(Pattern: Double): Unit
   
-  def PresetGradient(Style: Double, Variant: Double, PresetGradientType: Double): Unit = js.native
+  def PresetGradient(Style: Double, Variant: Double, PresetGradientType: Double): Unit
   
-  val PresetGradientType: Double = js.native
+  val PresetGradientType: Double
   
-  val PresetTexture: Double = js.native
+  val PresetTexture: Double
   
-  def PresetTextured(PresetTexture: Double): Unit = js.native
+  def PresetTextured(PresetTexture: Double): Unit
   
-  def Solid(): Unit = js.native
+  def Solid(): Unit
   
-  val TextureName: String = js.native
+  val TextureName: String
   
-  val TextureType: Double = js.native
+  val TextureType: Double
   
-  def TwoColorGradient(Style: Double, Variant: Double): Unit = js.native
+  def TwoColorGradient(Style: Double, Variant: Double): Unit
   
-  val Type: Double = js.native
+  val Type: Double
   
-  def UserPicture(PictureFile: String, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit = js.native
+  def UserPicture(PictureFile: String, PictureFormat: js.Any, PictureStackUnit: js.Any, PicturePlacement: js.Any): Unit
   
-  def UserTextured(TextureFile: String): Unit = js.native
+  def UserTextured(TextureFile: String): Unit
   
-  var Visible: Double = js.native
+  var Visible: Double
 }
 object ChartFillFormat {
   

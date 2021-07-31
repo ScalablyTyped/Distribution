@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Scale")
 @js.native
 class Scale ()
-  extends typings.devexpressWeb.Scale
+  extends StObject
+     with typings.devexpressWeb.Scale {
+  
+  /**
+    * Specifies the image's x-scale factor as a percent.
+    */
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /**
+    * Specifies the image's y-scale factor as a percent.
+    */
+  /* CompleteClass */
+  var y: Double = js.native
+}

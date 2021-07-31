@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactGroupResponse extends StObject {
   
   /** The contact group. */
-  var contactGroup: js.UndefOr[ContactGroup] = js.native
+  var contactGroup: js.UndefOr[ContactGroup] = js.undefined
   
   /** The original requested resource name. */
-  var requestedResourceName: js.UndefOr[String] = js.native
+  var requestedResourceName: js.UndefOr[String] = js.undefined
   
   /** The status of the response. */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object ContactGroupResponse {
   

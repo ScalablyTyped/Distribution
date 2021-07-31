@@ -8,14 +8,16 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-boom", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Type augmentation for express
@@ -38,9 +40,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boombaddatamessage-data}
           */
         def badData[Data](): BoomError[Data] = js.native
-        def badData[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def badData[Data](message: String): BoomError[Data] = js.native
         def badData[Data](message: String, data: Data): BoomError[Data] = js.native
+        def badData[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 502 Bad Gateway error with your error message to the user
@@ -49,9 +51,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boombadgatewaymessage-data}
           */
         def badGateway[Data](): BoomError[Data] = js.native
-        def badGateway[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def badGateway[Data](message: String): BoomError[Data] = js.native
         def badGateway[Data](message: String, data: Data): BoomError[Data] = js.native
+        def badGateway[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         // 5xx
         /**
@@ -62,9 +64,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boombadimplementationmessage-data---alias-internal}
           */
         def badImplementation[Data](): BoomError[Data] = js.native
-        def badImplementation[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def badImplementation[Data](message: String): BoomError[Data] = js.native
         def badImplementation[Data](message: String, data: Data): BoomError[Data] = js.native
+        def badImplementation[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         // 4xx
         /**
@@ -74,9 +76,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boombadrequestmessage-data}
           */
         def badRequest[Data](): BoomError[Data] = js.native
-        def badRequest[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def badRequest[Data](message: String): BoomError[Data] = js.native
         def badRequest[Data](message: String, data: Data): BoomError[Data] = js.native
+        def badRequest[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Decorates an error with the boom properties
@@ -94,9 +96,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomclienttimeoutmessage-data}
           */
         def clientTimeout[Data](): BoomError[Data] = js.native
-        def clientTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def clientTimeout[Data](message: String): BoomError[Data] = js.native
         def clientTimeout[Data](message: String, data: Data): BoomError[Data] = js.native
+        def clientTimeout[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 409 Conflict error
@@ -105,14 +107,14 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomconflictmessage-data}
           */
         def conflict[Data](): BoomError[Data] = js.native
-        def conflict[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def conflict[Data](message: String): BoomError[Data] = js.native
         def conflict[Data](message: String, data: Data): BoomError[Data] = js.native
+        def conflict[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         def create[Data](statusCode: Double): BoomError[Data] = js.native
-        def create[Data](statusCode: Double, message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def create[Data](statusCode: Double, message: String): BoomError[Data] = js.native
         def create[Data](statusCode: Double, message: String, data: Data): BoomError[Data] = js.native
+        def create[Data](statusCode: Double, message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 413 Request Entity Too Large error
@@ -121,9 +123,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomentitytoolargemessage-data}
           */
         def entityTooLarge[Data](): BoomError[Data] = js.native
-        def entityTooLarge[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def entityTooLarge[Data](message: String): BoomError[Data] = js.native
         def entityTooLarge[Data](message: String, data: Data): BoomError[Data] = js.native
+        def entityTooLarge[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 417 Expectation Failed error
@@ -132,9 +134,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomexpectationfailedmessage-data}
           */
         def expectationFailed[Data](): BoomError[Data] = js.native
-        def expectationFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def expectationFailed[Data](message: String): BoomError[Data] = js.native
         def expectationFailed[Data](message: String, data: Data): BoomError[Data] = js.native
+        def expectationFailed[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 424 Failed Dependency error
@@ -143,9 +145,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomfaileddependencymessage-data}
           */
         def failedDependency[Data](): BoomError[Data] = js.native
-        def failedDependency[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def failedDependency[Data](message: String): BoomError[Data] = js.native
         def failedDependency[Data](message: String, data: Data): BoomError[Data] = js.native
+        def failedDependency[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 403 Forbidden error
@@ -154,9 +156,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomforbiddenmessage-data}
           */
         def forbidden[Data](): BoomError[Data] = js.native
-        def forbidden[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def forbidden[Data](message: String): BoomError[Data] = js.native
         def forbidden[Data](message: String, data: Data): BoomError[Data] = js.native
+        def forbidden[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 504 Gateway Time-out error with your error message to the user
@@ -165,9 +167,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomgatewaytimeoutmessage-data}
           */
         def gatewayTimeout[Data](): BoomError[Data] = js.native
-        def gatewayTimeout[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def gatewayTimeout[Data](message: String): BoomError[Data] = js.native
         def gatewayTimeout[Data](message: String, data: Data): BoomError[Data] = js.native
+        def gatewayTimeout[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 451 Unavailable For Legal Reasons error
@@ -176,9 +178,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomillegalmessage-data}
           */
         def illegal[Data](): BoomError[Data] = js.native
-        def illegal[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def illegal[Data](message: String): BoomError[Data] = js.native
         def illegal[Data](message: String, data: Data): BoomError[Data] = js.native
+        def illegal[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 500 Internal Server Error error
@@ -188,9 +190,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boombadimplementationmessage-data---alias-internal}
           */
         def internal[Data](): BoomError[Data] = js.native
-        def internal[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def internal[Data](message: String): BoomError[Data] = js.native
         def internal[Data](message: String, data: Data): BoomError[Data] = js.native
+        def internal[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 411 Length Required error
@@ -199,9 +201,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomlengthrequiredmessage-data}
           */
         def lengthRequired[Data](): BoomError[Data] = js.native
-        def lengthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def lengthRequired[Data](message: String): BoomError[Data] = js.native
         def lengthRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+        def lengthRequired[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 423 Locked error
@@ -210,9 +212,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomlockedmessage-data}
           */
         def locked[Data](): BoomError[Data] = js.native
-        def locked[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def locked[Data](message: String): BoomError[Data] = js.native
         def locked[Data](message: String, data: Data): BoomError[Data] = js.native
+        def locked[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 405 Method Not Allowed error
@@ -222,17 +224,17 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boommethodnotallowedmessage-data-allow}
           */
         def methodNotAllowed[Data](): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data, allow: String): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: Data, allow: js.Array[String]): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], allow: String): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], allow: js.Array[String]): BoomError[Data] = js.native
         def methodNotAllowed[Data](message: String): BoomError[Data] = js.native
         def methodNotAllowed[Data](message: String, data: Data): BoomError[Data] = js.native
         def methodNotAllowed[Data](message: String, data: Data, allow: String): BoomError[Data] = js.native
         def methodNotAllowed[Data](message: String, data: Data, allow: js.Array[String]): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: String): BoomError[Data] = js.native
-        def methodNotAllowed[Data](message: String, data: js.UndefOr[scala.Nothing], allow: js.Array[String]): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: String, data: Unit, allow: String): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: String, data: Unit, allow: js.Array[String]): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: Unit, data: Data): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: Unit, data: Data, allow: String): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: Unit, data: Data, allow: js.Array[String]): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: Unit, data: Unit, allow: String): BoomError[Data] = js.native
+        def methodNotAllowed[Data](message: Unit, data: Unit, allow: js.Array[String]): BoomError[Data] = js.native
         
         /**
           * Respond a 406 Not Acceptable error
@@ -241,9 +243,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomnotacceptablemessage-data}
           */
         def notAcceptable[Data](): BoomError[Data] = js.native
-        def notAcceptable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def notAcceptable[Data](message: String): BoomError[Data] = js.native
         def notAcceptable[Data](message: String, data: Data): BoomError[Data] = js.native
+        def notAcceptable[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 404 Not Found error
@@ -252,9 +254,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomnotfoundmessage-data}
           */
         def notFound[Data](): BoomError[Data] = js.native
-        def notFound[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def notFound[Data](message: String): BoomError[Data] = js.native
         def notFound[Data](message: String, data: Data): BoomError[Data] = js.native
+        def notFound[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 501 Not Implemented error with your error message to the user
@@ -263,9 +265,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomnotimplementedmessage-data}
           */
         def notImplemented[Data](): BoomError[Data] = js.native
-        def notImplemented[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def notImplemented[Data](message: String): BoomError[Data] = js.native
         def notImplemented[Data](message: String, data: Data): BoomError[Data] = js.native
+        def notImplemented[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 402 Payment Required error
@@ -274,9 +276,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boompaymentrequiredmessage-data}
           */
         def paymentRequired[Data](): BoomError[Data] = js.native
-        def paymentRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def paymentRequired[Data](message: String): BoomError[Data] = js.native
         def paymentRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+        def paymentRequired[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 412 Precondition Failed error
@@ -285,9 +287,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boompreconditionfailedmessage-data}
           */
         def preconditionFailed[Data](): BoomError[Data] = js.native
-        def preconditionFailed[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def preconditionFailed[Data](message: String): BoomError[Data] = js.native
         def preconditionFailed[Data](message: String, data: Data): BoomError[Data] = js.native
+        def preconditionFailed[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 428 Precondition Required error
@@ -296,9 +298,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boompreconditionrequiredmessage-data}
           */
         def preconditionRequired[Data](): BoomError[Data] = js.native
-        def preconditionRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def preconditionRequired[Data](message: String): BoomError[Data] = js.native
         def preconditionRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+        def preconditionRequired[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 407 Proxy Authentication Required error
@@ -307,9 +309,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomproxyauthrequiredmessage-data}
           */
         def proxyAuthRequired[Data](): BoomError[Data] = js.native
-        def proxyAuthRequired[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def proxyAuthRequired[Data](message: String): BoomError[Data] = js.native
         def proxyAuthRequired[Data](message: String, data: Data): BoomError[Data] = js.native
+        def proxyAuthRequired[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 416 Requested Range Not Satisfiable error
@@ -318,9 +320,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomrangenotsatisfiablemessage-data}
           */
         def rangeNotSatisfiable[Data](): BoomError[Data] = js.native
-        def rangeNotSatisfiable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def rangeNotSatisfiable[Data](message: String): BoomError[Data] = js.native
         def rangeNotSatisfiable[Data](message: String, data: Data): BoomError[Data] = js.native
+        def rangeNotSatisfiable[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 410 Gone error
@@ -329,9 +331,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomresourcegonemessage-data}
           */
         def resourceGone[Data](): BoomError[Data] = js.native
-        def resourceGone[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def resourceGone[Data](message: String): BoomError[Data] = js.native
         def resourceGone[Data](message: String, data: Data): BoomError[Data] = js.native
+        def resourceGone[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 503 Service Unavailable error with your error message to the user
@@ -340,9 +342,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomserverunavailablemessage-data}
           */
         def serverUnavailable[Data](): BoomError[Data] = js.native
-        def serverUnavailable[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def serverUnavailable[Data](message: String): BoomError[Data] = js.native
         def serverUnavailable[Data](message: String, data: Data): BoomError[Data] = js.native
+        def serverUnavailable[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 418 I'm a Teapot error
@@ -351,9 +353,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomteapotmessage-data}
           */
         def teapot[Data](): BoomError[Data] = js.native
-        def teapot[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def teapot[Data](message: String): BoomError[Data] = js.native
         def teapot[Data](message: String, data: Data): BoomError[Data] = js.native
+        def teapot[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 429 Too Many Requests error
@@ -362,9 +364,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomtoomanyrequestsmessage-data}
           */
         def tooManyRequests[Data](): BoomError[Data] = js.native
-        def tooManyRequests[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def tooManyRequests[Data](message: String): BoomError[Data] = js.native
         def tooManyRequests[Data](message: String, data: Data): BoomError[Data] = js.native
+        def tooManyRequests[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 401 Unauthorized error
@@ -385,26 +387,22 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes}
           */
         def unauthorized(): BoomError[Null] = js.native
-        def unauthorized(message: js.UndefOr[scala.Nothing], scheme: js.UndefOr[scala.Nothing], attributes: String): BoomError[Null] = js.native
-        def unauthorized(
-          message: js.UndefOr[scala.Nothing],
-          scheme: js.UndefOr[scala.Nothing],
-          attributes: StringDictionary[String]
-        ): BoomError[Null] = js.native
-        def unauthorized(message: js.UndefOr[scala.Nothing], scheme: String): BoomError[Null] = js.native
-        def unauthorized(message: js.UndefOr[scala.Nothing], scheme: String, attributes: String): BoomError[Null] = js.native
-        def unauthorized(message: js.UndefOr[scala.Nothing], scheme: String, attributes: StringDictionary[String]): BoomError[Null] = js.native
-        def unauthorized(message: js.UndefOr[scala.Nothing], scheme: js.Array[String]): BoomError[Null] = js.native
         def unauthorized(message: String): BoomError[Null] = js.native
-        def unauthorized(message: String, scheme: js.UndefOr[scala.Nothing], attributes: StringDictionary[String]): BoomError[Null] = js.native
         def unauthorized(message: String, scheme: String): BoomError[Null] = js.native
         def unauthorized(message: String, scheme: String, attributes: StringDictionary[String]): BoomError[Null] = js.native
         def unauthorized(message: String, scheme: js.Array[String]): BoomError[Null] = js.native
-        def unauthorized(message: Null, scheme: js.UndefOr[scala.Nothing], attributes: String): BoomError[Null] = js.native
-        def unauthorized(message: Null, scheme: js.UndefOr[scala.Nothing], attributes: StringDictionary[String]): BoomError[Null] = js.native
+        def unauthorized(message: String, scheme: Unit, attributes: StringDictionary[String]): BoomError[Null] = js.native
         def unauthorized(message: Null, scheme: String): BoomError[Null] = js.native
         def unauthorized(message: Null, scheme: String, attributes: String): BoomError[Null] = js.native
         def unauthorized(message: Null, scheme: String, attributes: StringDictionary[String]): BoomError[Null] = js.native
+        def unauthorized(message: Null, scheme: Unit, attributes: String): BoomError[Null] = js.native
+        def unauthorized(message: Null, scheme: Unit, attributes: StringDictionary[String]): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: String): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: String, attributes: String): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: String, attributes: StringDictionary[String]): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: js.Array[String]): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: Unit, attributes: String): BoomError[Null] = js.native
+        def unauthorized(message: Unit, scheme: Unit, attributes: StringDictionary[String]): BoomError[Null] = js.native
         
         /**
           * Respond a 415 Unsupported Media Type error
@@ -413,9 +411,9 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomunsupportedmediatypemessage-data}
           */
         def unsupportedMediaType[Data](): BoomError[Data] = js.native
-        def unsupportedMediaType[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def unsupportedMediaType[Data](message: String): BoomError[Data] = js.native
         def unsupportedMediaType[Data](message: String, data: Data): BoomError[Data] = js.native
+        def unsupportedMediaType[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         /**
           * Respond a 414 Request-URI Too Large error
@@ -424,31 +422,30 @@ object mod {
           * @see {@link https://github.com/hapijs/boom#boomuritoolongmessage-data}
           */
         def uriTooLong[Data](): BoomError[Data] = js.native
-        def uriTooLong[Data](message: js.UndefOr[scala.Nothing], data: Data): BoomError[Data] = js.native
         def uriTooLong[Data](message: String): BoomError[Data] = js.native
         def uriTooLong[Data](message: String, data: Data): BoomError[Data] = js.native
+        def uriTooLong[Data](message: Unit, data: Data): BoomError[Data] = js.native
         
         // Add boom's properties in here
         def wrap(error: Error): BoomError[Null] = js.native
-        def wrap(error: Error, statusCode: js.UndefOr[scala.Nothing], message: String): BoomError[Null] = js.native
         def wrap(error: Error, statusCode: Double): BoomError[Null] = js.native
         def wrap(error: Error, statusCode: Double, message: String): BoomError[Null] = js.native
+        def wrap(error: Error, statusCode: Unit, message: String): BoomError[Null] = js.native
       }
       
-      @js.native
       trait BoomError[Data] extends StObject {
         
-        var data: Data = js.native
+        var data: Data
         
-        var isBoom: Boolean = js.native
+        var isBoom: Boolean
         
-        var isServer: Boolean = js.native
+        var isServer: Boolean
         
-        var message: String = js.native
+        var message: String
         
-        var output: Output = js.native
+        var output: Output
         
-        def reformat(): Unit = js.native
+        def reformat(): Unit
       }
       object BoomError {
         
@@ -466,7 +463,7 @@ object mod {
         }
         
         @scala.inline
-        implicit class BoomErrorMutableBuilder[Self <: BoomError[_], Data] (val x: Self with BoomError[Data]) extends AnyVal {
+        implicit class BoomErrorMutableBuilder[Self <: BoomError[?], Data] (val x: Self & BoomError[Data]) extends AnyVal {
           
           @scala.inline
           def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -488,7 +485,6 @@ object mod {
         }
       }
       
-      @js.native
       trait Output extends StObject {
         
         /**
@@ -496,17 +492,17 @@ object mod {
           * value is the header content. (Limited value type to string
           * https://github.com/hapijs/boom/issues/151 )
           */
-        var headers: StringDictionary[String] = js.native
+        var headers: StringDictionary[String]
         
         /**
           * payload - the formatted object used as the response payload (stringified).
           * Can be directly manipulated but any changes will be lost if reformat() is called.
           * Any content allowed and by default includes the following content:
           */
-        var payload: Payload = js.native
+        var payload: Payload
         
         /** statusCode - the HTTP status code (typically 4xx or 5xx). */
-        var statusCode: Double = js.native
+        var statusCode: Double
       }
       object Output {
         
@@ -530,23 +526,22 @@ object mod {
         }
       }
       
-      @js.native
       trait Payload extends StObject {
         
         /**
           * "Every key/value pair will be included ... in the response payload under the attributes key."
           * [see docs](https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes)
           */
-        var attributes: js.UndefOr[js.Any] = js.native
+        var attributes: js.UndefOr[js.Any] = js.undefined
         
         /** error - the HTTP status message (e.g. 'Bad Request', 'Internal Server Error') derived from statusCode. */
-        var error: String = js.native
+        var error: String
         
         /** message - the error message derived from error.message. */
-        var message: String = js.native
+        var message: String
         
         /** statusCode - the HTTP status code, derived from error.output.statusCode. */
-        var statusCode: Double = js.native
+        var statusCode: Double
       }
       object Payload {
         
@@ -576,10 +571,9 @@ object mod {
         }
       }
       
-      @js.native
       trait Response extends StObject {
         
-        var boom: Boom = js.native
+        var boom: Boom
       }
       object Response {
         

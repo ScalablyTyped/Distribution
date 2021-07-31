@@ -6,15 +6,19 @@ import typings.playable.themeTypesMod.ICSSRules
 import typings.playable.themeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableMod {
   
   @JSImport("playable/dist/src/modules/ui/core/stylable", JSImport.Default)
   @js.native
-  class default[TStyles] () extends Stylable[TStyles] {
+  class default[TStyles] ()
+    extends StObject
+       with Stylable[TStyles] {
     def this(theme: IThemeService) = this()
+    
+    /* CompleteClass */
+    var styleNames: TStyles = js.native
   }
   object default {
     
@@ -23,9 +27,8 @@ object stylableMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("playable/dist/src/modules/ui/core/stylable", "default.extendStyleNames")
-    @js.native
-    def extendStyleNames(styles: IStyles): Unit = js.native
+    @scala.inline
+    def extendStyleNames(styles: IStyles): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extendStyleNames")(styles.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._moduleTheme")
@@ -36,14 +39,12 @@ object stylableMod {
     def moduleTheme_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_moduleTheme")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("playable/dist/src/modules/ui/core/stylable", "default.resetStyles")
-    @js.native
-    def resetStyles(): Unit = js.native
+    @scala.inline
+    def resetStyles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetStyles")().asInstanceOf[Unit]
     
     /* static member */
-    @JSImport("playable/dist/src/modules/ui/core/stylable", "default.setTheme")
-    @js.native
-    def setTheme(theme: ICSSRules): Unit = js.native
+    @scala.inline
+    def setTheme(theme: ICSSRules): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSImport("playable/dist/src/modules/ui/core/stylable", "default._styles")
@@ -55,7 +56,9 @@ object stylableMod {
   }
   
   @js.native
-  trait Stylable[TStyles] extends IStylable[TStyles] {
+  trait Stylable[TStyles]
+    extends StObject
+       with IStylable[TStyles] {
     
     var _themeStyles: js.Any = js.native
     

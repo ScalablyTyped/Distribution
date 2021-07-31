@@ -2,16 +2,16 @@ package typings.jupyterlabNbformat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICodeCellJupyterMetadata extends IBaseCellJupyterMetadata {
+trait ICodeCellJupyterMetadata
+  extends StObject
+     with IBaseCellJupyterMetadata {
   
   /**
     * Whether the outputs are hidden. See https://github.com/jupyter/nbformat/issues/137.
     */
-  var outputs_hidden: Boolean = js.native
+  var outputs_hidden: Boolean
 }
 object ICodeCellJupyterMetadata {
   

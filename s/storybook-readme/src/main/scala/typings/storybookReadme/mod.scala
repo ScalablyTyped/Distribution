@@ -9,69 +9,65 @@ import typings.storybookReadme.anon.Children
 import typings.storybookReadme.anon.ChildrenElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("storybook-readme", "addFooter")
+  @JSImport("storybook-readme", JSImport.Namespace)
   @js.native
-  def addFooter(md: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("storybook-readme", "addHeader")
-  @js.native
-  def addHeader(md: String): Unit = js.native
+  @scala.inline
+  def addFooter(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooter")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def addHeader(md: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHeader")(md.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("storybook-readme", "addReadme")
   @js.native
   val addReadme: MakeDecoratorResult = js.native
   
-  @JSImport("storybook-readme", "configureReadme")
-  @js.native
-  def configureReadme(config: ConfigureReadmeConfig): Unit = js.native
+  @scala.inline
+  def configureReadme(config: ConfigureReadmeConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureReadme")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("storybook-readme", "doc")
-  @js.native
-  def doc(readme: String): RenderFunction = js.native
+  @scala.inline
+  def doc(readme: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("doc")(readme.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
   
   object withDocs {
     
-    @JSImport("storybook-readme", "withDocs")
-    @js.native
-    def apply(custom: CustomComponents): js.Function1[/* readme */ Readme, HOCPattern] = js.native
-    @JSImport("storybook-readme", "withDocs")
-    @js.native
-    def apply(readme: Readme): DecoratorPattern = js.native
-    @JSImport("storybook-readme", "withDocs")
-    @js.native
-    def apply(readme: Readme, story: RenderFunction): RenderFunction = js.native
+    @scala.inline
+    def apply(custom: CustomComponents): js.Function1[/* readme */ Readme, HOCPattern] = ^.asInstanceOf[js.Dynamic].apply(custom.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* readme */ Readme, HOCPattern]]
+    @scala.inline
+    def apply(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
+    @scala.inline
+    def apply(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].apply(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
     
-    @JSImport("storybook-readme", "withDocs.addFooterDocs")
+    @JSImport("storybook-readme", "withDocs")
     @js.native
-    def addFooterDocs(footerDoc: String): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addFooterDocs(footerDoc: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFooterDocs")(footerDoc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("storybook-readme", "withReadme")
-  @js.native
-  def withReadme(readme: Readme): DecoratorPattern = js.native
-  @JSImport("storybook-readme", "withReadme")
-  @js.native
-  def withReadme(readme: Readme, story: RenderFunction): RenderFunction = js.native
+  @scala.inline
+  def withReadme(readme: Readme): DecoratorPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any]).asInstanceOf[DecoratorPattern]
+  @scala.inline
+  def withReadme(readme: Readme, story: RenderFunction): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("withReadme")(readme.asInstanceOf[js.Any], story.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
-  @js.native
   trait ConfigureReadmeConfig extends StObject {
     
-    var DocPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
+    var DocPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
     
-    var FooterPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
+    var FooterPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
     
-    var HeaderPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
+    var HeaderPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
     
-    var StoryPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.native
+    var StoryPreview: js.UndefOr[js.Function1[/* props */ Children, ReactNode]] = js.undefined
     
-    var footer: js.UndefOr[String] = js.native
+    var footer: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
   }
   object ConfigureReadmeConfig {
     
@@ -122,12 +118,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomComponents extends StObject {
     
-    var FooterComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.native
+    var FooterComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.undefined
     
-    var PreviewComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.native
+    var PreviewComponent: js.UndefOr[js.Function1[/* props */ ChildrenElement, Element]] = js.undefined
   }
   object CustomComponents {
     
@@ -158,7 +153,11 @@ object mod {
   
   type HOCPattern = DecoratorFunction[StoryFnReactReturnType]
   
-  type MakeDecoratorResult = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait MakeDecoratorResult extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   type Readme = String | js.Array[String]
   

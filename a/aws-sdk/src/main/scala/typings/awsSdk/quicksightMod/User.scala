@@ -2,51 +2,49 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The active status of user. When you create an Amazon QuickSight user that’s not an IAM user or an Active Directory user, that user is inactive until they sign in and provide a password.
     */
-  var Active: js.UndefOr[Boolean] = js.native
+  var Active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the user.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The custom permissions profile associated with this user.
     */
-  var CustomPermissionsName: js.UndefOr[RoleName] = js.native
+  var CustomPermissionsName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * The user's email address.
     */
-  var Email: js.UndefOr[String] = js.native
+  var Email: js.UndefOr[String] = js.undefined
   
   /**
     * The type of identity authentication used by the user.
     */
-  var IdentityType: js.UndefOr[typings.awsSdk.quicksightMod.IdentityType] = js.native
+  var IdentityType: js.UndefOr[typings.awsSdk.quicksightMod.IdentityType] = js.undefined
   
   /**
     * The principal ID of the user.
     */
-  var PrincipalId: js.UndefOr[String] = js.native
+  var PrincipalId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon QuickSight role for the user. The user role can be one of the following:.    READER: A user who has read-only access to dashboards.    AUTHOR: A user who can create data sources, datasets, analyses, and dashboards.    ADMIN: A user who is an author, who can also manage Amazon QuickSight settings.    RESTRICTED_READER: This role isn't currently available for use.    RESTRICTED_AUTHOR: This role isn't currently available for use.  
     */
-  var Role: js.UndefOr[UserRole] = js.native
+  var Role: js.UndefOr[UserRole] = js.undefined
   
   /**
     * The user's user name.
     */
-  var UserName: js.UndefOr[UserName_] = js.native
+  var UserName: js.UndefOr[UserName_] = js.undefined
 }
 object User {
   

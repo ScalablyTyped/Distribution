@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreBackupContext extends StObject {
   
   /** The ID of the backup run to restore from. */
-  var backupRunId: js.UndefOr[String] = js.native
+  var backupRunId: js.UndefOr[String] = js.undefined
   
   /** The ID of the instance that the backup was taken from. */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#restoreBackupContext*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The full project ID of the source instance. */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
 }
 object RestoreBackupContext {
   

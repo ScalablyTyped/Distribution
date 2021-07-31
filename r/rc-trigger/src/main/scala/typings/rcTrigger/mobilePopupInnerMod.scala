@@ -11,19 +11,19 @@ import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.RefAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mobilePopupInnerMod extends Shortcut {
   
   @JSImport("rc-trigger/es/Popup/MobilePopupInner", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[MobilePopupInnerProps with RefAttributes[PopupInnerRef]] = js.native
+  val default: ForwardRefExoticComponent[MobilePopupInnerProps & RefAttributes[PopupInnerRef]] = js.native
   
-  @js.native
-  trait MobilePopupInnerProps extends PopupInnerProps {
+  trait MobilePopupInnerProps
+    extends StObject
+       with PopupInnerProps {
     
-    var mobile: js.UndefOr[MobileConfig] = js.native
+    var mobile: js.UndefOr[MobileConfig] = js.undefined
   }
   object MobilePopupInnerProps {
     
@@ -49,8 +49,8 @@ object mobilePopupInnerMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[MobilePopupInnerProps with RefAttributes[PopupInnerRef]]
+  type _To = ForwardRefExoticComponent[MobilePopupInnerProps & RefAttributes[PopupInnerRef]]
   
   /* This means you don't have to write `default`, but can instead just say `mobilePopupInnerMod.foo` */
-  override def _to: ForwardRefExoticComponent[MobilePopupInnerProps with RefAttributes[PopupInnerRef]] = default
+  override def _to: ForwardRefExoticComponent[MobilePopupInnerProps & RefAttributes[PopupInnerRef]] = default
 }

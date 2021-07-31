@@ -4,21 +4,19 @@ import typings.socketclusterClient.authMod.AuthToken
 import typings.socketclusterClient.authMod.SignedAuthToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeauthenticateData extends StObject {
   
-  var oldAuthToken: AuthToken | Null = js.native
+  var oldAuthToken: AuthToken | Null
   
-  var oldSignedAuthToken: SignedAuthToken | Null = js.native
+  var oldSignedAuthToken: SignedAuthToken | Null
 }
 object DeauthenticateData {
   
   @scala.inline
   def apply(): DeauthenticateData = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(oldAuthToken = null, oldSignedAuthToken = null)
     __obj.asInstanceOf[DeauthenticateData]
   }
   

@@ -3,34 +3,32 @@ package typings.winrtUwp.Windows.Networking
 import typings.winrtUwp.Windows.Networking.Connectivity.IPInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for a hostname or an IP address. */
-@js.native
 trait HostName extends StObject {
   
   /** Gets the canonical name for the HostName object. */
-  var canonicalName: String = js.native
+  var canonicalName: String
   
   /** Gets the display name for the HostName object. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets the IPInformation object for a local IP address assigned to a HostName object. */
-  var ipInformation: IPInformation = js.native
+  var ipInformation: IPInformation
   
   /**
     * Determines whether the specified HostName object has an equivalent value to the current HostName object.
     * @param hostName A HostName object that is compared with the current HostName.
     * @return A Boolean value that indicates whether the specified HostName object is equal to the current HostName object.
     */
-  def isEqual(hostName: HostName): Boolean = js.native
+  def isEqual(hostName: HostName): Boolean
   
   /** Gets the original string used to construct the HostName object. */
-  var rawName: String = js.native
+  var rawName: String
   
   /** Gets the HostNameType of the HostName object. */
-  var `type`: HostNameType = js.native
+  var `type`: HostNameType
 }
 object HostName {
   

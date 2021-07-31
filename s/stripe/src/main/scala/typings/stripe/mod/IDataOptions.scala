@@ -2,15 +2,13 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDataOptions extends StObject {
   
-  var expand: js.UndefOr[js.Array[String]] = js.native
+  var expand: js.UndefOr[js.Array[String]] = js.undefined
   
-  var include: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IDataOptions {
   

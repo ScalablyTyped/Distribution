@@ -10,9 +10,9 @@ A simple api for generating sha1 hashes in node and the browser.
 | ------------------ | :-------------: |
 | Full name          | simple-sha1 |
 | Keywords           | sha1, rusha, browser, node, browserify |
-| # releases         | 4 |
-| # dependents       | 29 |
-| # downloads        | 1089684 |
+| # releases         | 3 |
+| # dependents       | 28 |
+| # downloads        | 1191670 |
 | # stars            | 1 |
 
 ## Links

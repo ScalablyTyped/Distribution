@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientLogging.gapi.client.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogLine extends StObject {
   
   /** App-provided log message. */
-  var logMessage: js.UndefOr[String] = js.native
+  var logMessage: js.UndefOr[String] = js.undefined
   
   /** Severity of this log entry. */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /** Where in the source code this log message was written. */
-  var sourceLocation: js.UndefOr[SourceLocation] = js.native
+  var sourceLocation: js.UndefOr[SourceLocation] = js.undefined
   
   /** Approximate time when this log entry was made. */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object LogLine {
   

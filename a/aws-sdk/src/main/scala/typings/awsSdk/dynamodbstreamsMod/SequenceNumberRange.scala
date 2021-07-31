@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceNumberRange extends StObject {
   
   /**
     * The last sequence number for the stream records contained within a shard. String contains numeric characters only.
     */
-  var EndingSequenceNumber: js.UndefOr[SequenceNumber] = js.native
+  var EndingSequenceNumber: js.UndefOr[SequenceNumber] = js.undefined
   
   /**
     * The first sequence number for the stream records contained within a shard. String contains numeric characters only.
     */
-  var StartingSequenceNumber: js.UndefOr[SequenceNumber] = js.native
+  var StartingSequenceNumber: js.UndefOr[SequenceNumber] = js.undefined
 }
 object SequenceNumberRange {
   

@@ -3,19 +3,17 @@ package typings.slackMock.mod
 import typings.nock.mod.ReplyHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractiveButtonOptions[T] extends StObject {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var headers: js.UndefOr[InteractiveButtonHttpHeaders] = js.native
+  var headers: js.UndefOr[InteractiveButtonHttpHeaders] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[InteractiveButtonUrl] = js.native
+  var url: js.UndefOr[InteractiveButtonUrl] = js.undefined
 }
 object InteractiveButtonOptions {
   
@@ -26,7 +24,7 @@ object InteractiveButtonOptions {
   }
   
   @scala.inline
-  implicit class InteractiveButtonOptionsMutableBuilder[Self <: InteractiveButtonOptions[_], T] (val x: Self with InteractiveButtonOptions[T]) extends AnyVal {
+  implicit class InteractiveButtonOptionsMutableBuilder[Self <: InteractiveButtonOptions[?], T] (val x: Self & InteractiveButtonOptions[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

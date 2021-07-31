@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Field. */
-@js.native
 trait Field extends StObject {
   
   /** The name of the field. */
-  var field_name: js.UndefOr[String] = js.native
+  var field_name: js.UndefOr[String] = js.undefined
   
   /** The type of the field. */
-  var field_type: js.UndefOr[String] = js.native
+  var field_type: js.UndefOr[String] = js.undefined
 }
 object Field {
   

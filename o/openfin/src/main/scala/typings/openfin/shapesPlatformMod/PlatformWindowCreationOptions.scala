@@ -3,13 +3,13 @@ package typings.openfin.shapesPlatformMod
 import typings.openfin.windowOptionMod.WindowOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlatformWindowCreationOptions extends WindowOption {
+trait PlatformWindowCreationOptions
+  extends StObject
+     with WindowOption {
   
-  var reason: js.UndefOr[WindowCreationReason] = js.native
+  var reason: js.UndefOr[WindowCreationReason] = js.undefined
 }
 object PlatformWindowCreationOptions {
   

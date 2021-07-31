@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceSeriesMembershipGet extends StandardParameters {
+trait ParamsResourceSeriesMembershipGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Number of maximum results per page to be included in the response.
     */
-  var page_size: js.UndefOr[Double] = js.native
+  var page_size: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of the nextToken from the previous page.
     */
-  var page_token: js.UndefOr[String] = js.native
+  var page_token: js.UndefOr[String] = js.undefined
   
   /**
     * String that identifies the series
     */
-  var series_id: js.UndefOr[String] = js.native
+  var series_id: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceSeriesMembershipGet {
   

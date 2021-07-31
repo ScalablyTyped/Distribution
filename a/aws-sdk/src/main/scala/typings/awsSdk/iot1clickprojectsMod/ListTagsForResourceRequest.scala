@@ -2,16 +2,14 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The ARN of the resource whose tags you want to list.
     */
-  var resourceArn: ProjectArn = js.native
+  var resourceArn: ProjectArn
 }
 object ListTagsForResourceRequest {
   

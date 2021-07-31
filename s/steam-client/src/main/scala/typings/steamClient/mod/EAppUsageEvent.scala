@@ -2,7 +2,6 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,37 +11,53 @@ sealed trait EAppUsageEvent extends StObject
 object EAppUsageEvent extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EAppUsageEvent with Double] = js.native
+  def apply(value: Double): js.UndefOr[EAppUsageEvent & Double] = js.native
   
   @js.native
-  sealed trait GameLaunch extends EAppUsageEvent
-  /* 1 */ val GameLaunch: typings.steamClient.mod.EAppUsageEvent.GameLaunch with Double = js.native
+  sealed trait GameLaunch
+    extends StObject
+       with EAppUsageEvent
+  /* 1 */ val GameLaunch: typings.steamClient.mod.EAppUsageEvent.GameLaunch & Double = js.native
   
   @js.native
-  sealed trait GameLaunchFreeWeekend extends EAppUsageEvent
-  /* 8 */ val GameLaunchFreeWeekend: typings.steamClient.mod.EAppUsageEvent.GameLaunchFreeWeekend with Double = js.native
+  sealed trait GameLaunchFreeWeekend
+    extends StObject
+       with EAppUsageEvent
+  /* 8 */ val GameLaunchFreeWeekend: typings.steamClient.mod.EAppUsageEvent.GameLaunchFreeWeekend & Double = js.native
   
   @js.native
-  sealed trait GameLaunchTrial extends EAppUsageEvent
-  /* 2 */ val GameLaunchTrial: typings.steamClient.mod.EAppUsageEvent.GameLaunchTrial with Double = js.native
+  sealed trait GameLaunchTrial
+    extends StObject
+       with EAppUsageEvent
+  /* 2 */ val GameLaunchTrial: typings.steamClient.mod.EAppUsageEvent.GameLaunchTrial & Double = js.native
   
   @js.native
-  sealed trait InGameAdViewed extends EAppUsageEvent
-  /* 7 */ val InGameAdViewed: typings.steamClient.mod.EAppUsageEvent.InGameAdViewed with Double = js.native
+  sealed trait InGameAdViewed
+    extends StObject
+       with EAppUsageEvent
+  /* 7 */ val InGameAdViewed: typings.steamClient.mod.EAppUsageEvent.InGameAdViewed & Double = js.native
   
   @js.native
-  sealed trait MarketingMessageView extends EAppUsageEvent
-  /* 6 */ val MarketingMessageView: typings.steamClient.mod.EAppUsageEvent.MarketingMessageView with Double = js.native
+  sealed trait MarketingMessageView
+    extends StObject
+       with EAppUsageEvent
+  /* 6 */ val MarketingMessageView: typings.steamClient.mod.EAppUsageEvent.MarketingMessageView & Double = js.native
   
   @js.native
-  sealed trait Media extends EAppUsageEvent
-  /* 3 */ val Media: typings.steamClient.mod.EAppUsageEvent.Media with Double = js.native
+  sealed trait Media
+    extends StObject
+       with EAppUsageEvent
+  /* 3 */ val Media: typings.steamClient.mod.EAppUsageEvent.Media & Double = js.native
   
   @js.native
-  sealed trait PreloadFinish extends EAppUsageEvent
-  /* 5 */ val PreloadFinish: typings.steamClient.mod.EAppUsageEvent.PreloadFinish with Double = js.native
+  sealed trait PreloadFinish
+    extends StObject
+       with EAppUsageEvent
+  /* 5 */ val PreloadFinish: typings.steamClient.mod.EAppUsageEvent.PreloadFinish & Double = js.native
   
   @js.native
-  sealed trait PreloadStart extends EAppUsageEvent
-  /* 4 */ val PreloadStart: typings.steamClient.mod.EAppUsageEvent.PreloadStart with Double = js.native
+  sealed trait PreloadStart
+    extends StObject
+       with EAppUsageEvent
+  /* 4 */ val PreloadStart: typings.steamClient.mod.EAppUsageEvent.PreloadStart & Double = js.native
 }

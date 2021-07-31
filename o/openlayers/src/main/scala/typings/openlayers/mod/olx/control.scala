@@ -13,29 +13,27 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object control {
   
-  @js.native
   trait AttributionOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapseLabel: js.UndefOr[String | Node] = js.native
+    var collapseLabel: js.UndefOr[String | Node] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | Node] = js.native
+    var label: js.UndefOr[String | Node] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object AttributionOptions {
     
@@ -79,7 +77,7 @@ object control {
       def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -98,14 +96,13 @@ object control {
     }
   }
   
-  @js.native
   trait ControlOptions extends StObject {
     
-    var element: js.UndefOr[Element] = js.native
+    var element: js.UndefOr[Element] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element | String] = js.native
+    var target: js.UndefOr[Element | String] = js.undefined
   }
   object ControlOptions {
     
@@ -125,7 +122,7 @@ object control {
       def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -138,20 +135,19 @@ object control {
     }
   }
   
-  @js.native
   trait DefaultsOptions extends StObject {
     
-    var attribution: js.UndefOr[Boolean] = js.native
+    var attribution: js.UndefOr[Boolean] = js.undefined
     
-    var attributionOptions: js.UndefOr[typings.openlayers.mod.olx.control.AttributionOptions] = js.native
+    var attributionOptions: js.UndefOr[typings.openlayers.mod.olx.control.AttributionOptions] = js.undefined
     
-    var rotate: js.UndefOr[Boolean] = js.native
+    var rotate: js.UndefOr[Boolean] = js.undefined
     
-    var rotateOptions: js.UndefOr[RotateOptions] = js.native
+    var rotateOptions: js.UndefOr[RotateOptions] = js.undefined
     
-    var zoom: js.UndefOr[Boolean] = js.native
+    var zoom: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOptions: js.UndefOr[ZoomOptions] = js.native
+    var zoomOptions: js.UndefOr[ZoomOptions] = js.undefined
   }
   object DefaultsOptions {
     
@@ -202,22 +198,21 @@ object control {
     }
   }
   
-  @js.native
   trait FullScreenOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var keys: js.UndefOr[Boolean] = js.native
+    var keys: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | Node] = js.native
+    var label: js.UndefOr[String | Node] = js.undefined
     
-    var labelActive: js.UndefOr[String | Node] = js.native
+    var labelActive: js.UndefOr[String | Node] = js.undefined
     
-    var source: js.UndefOr[Element | String] = js.native
+    var source: js.UndefOr[Element | String] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object FullScreenOptions {
     
@@ -274,20 +269,19 @@ object control {
     }
   }
   
-  @js.native
   trait MousePositionOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var coordinateFormat: js.UndefOr[CoordinateFormatType] = js.native
+    var coordinateFormat: js.UndefOr[CoordinateFormatType] = js.undefined
     
-    var projection: ProjectionLike = js.native
+    var projection: ProjectionLike
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var undefinedHTML: js.UndefOr[String] = js.native
+    var undefinedHTML: js.UndefOr[String] = js.undefined
   }
   object MousePositionOptions {
     
@@ -319,7 +313,7 @@ object control {
       def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -338,26 +332,25 @@ object control {
     }
   }
   
-  @js.native
   trait OverviewMapOptions extends StObject {
     
-    var collapseLabel: js.UndefOr[String | Node] = js.native
+    var collapseLabel: js.UndefOr[String | Node] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | Node] = js.native
+    var label: js.UndefOr[String | Node] = js.undefined
     
-    var layers: js.UndefOr[js.Array[Layer] | Collection[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer] | Collection[Layer]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
     
-    var view: js.UndefOr[View] = js.native
+    var view: js.UndefOr[View] = js.undefined
   }
   object OverviewMapOptions {
     
@@ -404,7 +397,7 @@ object control {
       def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -429,24 +422,23 @@ object control {
     }
   }
   
-  @js.native
   trait RotateOptions extends StObject {
     
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var label: js.UndefOr[String | Element] = js.native
+    var label: js.UndefOr[String | Element] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var resetNorth: js.UndefOr[js.Function0[_]] = js.native
+    var resetNorth: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object RotateOptions {
     
@@ -484,13 +476,13 @@ object control {
       def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
       @scala.inline
-      def setResetNorth(value: () => _): Self = StObject.set(x, "resetNorth", js.Any.fromFunction0(value))
+      def setResetNorth(value: () => js.Any): Self = StObject.set(x, "resetNorth", js.Any.fromFunction0(value))
       
       @scala.inline
       def setResetNorthUndefined: Self = StObject.set(x, "resetNorth", js.undefined)
@@ -509,18 +501,17 @@ object control {
     }
   }
   
-  @js.native
   trait ScaleLineOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var units: js.UndefOr[Units | String] = js.native
+    var units: js.UndefOr[Units | String] = js.undefined
   }
   object ScaleLineOptions {
     
@@ -546,7 +537,7 @@ object control {
       def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
@@ -565,24 +556,23 @@ object control {
     }
   }
   
-  @js.native
   trait ZoomOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var delta: js.UndefOr[Double] = js.native
+    var delta: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var zoomInLabel: js.UndefOr[String | Node] = js.native
+    var zoomInLabel: js.UndefOr[String | Node] = js.undefined
     
-    var zoomInTipLabel: js.UndefOr[String] = js.native
+    var zoomInTipLabel: js.UndefOr[String] = js.undefined
     
-    var zoomOutLabel: js.UndefOr[String | Node] = js.native
+    var zoomOutLabel: js.UndefOr[String | Node] = js.undefined
     
-    var zoomOutTipLabel: js.UndefOr[String] = js.native
+    var zoomOutTipLabel: js.UndefOr[String] = js.undefined
   }
   object ZoomOptions {
     
@@ -645,18 +635,17 @@ object control {
     }
   }
   
-  @js.native
   trait ZoomSliderOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* event */ MapEvent, _]] = js.native
+    var render: js.UndefOr[js.Function1[/* event */ MapEvent, js.Any]] = js.undefined
   }
   object ZoomSliderOptions {
     
@@ -694,25 +683,24 @@ object control {
       def setMinResolutionUndefined: Self = StObject.set(x, "minResolution", js.undefined)
       
       @scala.inline
-      def setRender(value: /* event */ MapEvent => _): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      def setRender(value: /* event */ MapEvent => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
   
-  @js.native
   trait ZoomToExtentOptions extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var label: js.UndefOr[String | Node] = js.native
+    var label: js.UndefOr[String | Node] = js.undefined
     
-    var target: js.UndefOr[Element] = js.native
+    var target: js.UndefOr[Element] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object ZoomToExtentOptions {
     

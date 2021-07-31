@@ -6,19 +6,17 @@ import typings.phantom.phantomStrings.info
 import typings.phantom.phantomStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogLevel extends StObject {
   
-  var logLevel: js.UndefOr[debug | info | warn | error] = js.native
+  var logLevel: js.UndefOr[debug | info | warn | error] = js.undefined
   
-  var logger: js.UndefOr[Debug] = js.native
+  var logger: js.UndefOr[Debug] = js.undefined
   
-  var phantomPath: js.UndefOr[String] = js.native
+  var phantomPath: js.UndefOr[String] = js.undefined
   
-  var shimPath: js.UndefOr[String] = js.native
+  var shimPath: js.UndefOr[String] = js.undefined
 }
 object LogLevel {
   

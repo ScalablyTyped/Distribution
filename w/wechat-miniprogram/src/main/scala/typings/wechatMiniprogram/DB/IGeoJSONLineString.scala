@@ -3,22 +3,22 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.wechatMiniprogramStrings.LineString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoJSONLineString extends IGeoJSONObject {
+trait IGeoJSONLineString
+  extends StObject
+     with IGeoJSONObject {
   
-  var coordinates: js.Array[js.Tuple2[Double, Double]] = js.native
+  var coordinates: js.Array[js.Tuple2[Double, Double]]
   
-  var `type`: LineString = js.native
+  var `type`: LineString
 }
 object IGeoJSONLineString {
   
   @scala.inline
-  def apply(coordinates: js.Array[js.Tuple2[Double, Double]], `type`: LineString): IGeoJSONLineString = {
+  def apply(coordinates: js.Array[js.Tuple2[Double, Double]]): IGeoJSONLineString = {
     val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LineString")
     __obj.asInstanceOf[IGeoJSONLineString]
   }
   

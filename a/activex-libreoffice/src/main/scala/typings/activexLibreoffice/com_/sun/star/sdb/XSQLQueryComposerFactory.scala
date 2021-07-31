@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is a factory for instances of service {@link com.sun.star.sdb.SQLQueryComposer} . */
-@js.native
-trait XSQLQueryComposerFactory extends XInterface {
+trait XSQLQueryComposerFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new query composer.
     * @returns the {@link SQLQueryComposer} object
     */
-  def createQueryComposer(): XSQLQueryComposer = js.native
+  def createQueryComposer(): XSQLQueryComposer
 }
 object XSQLQueryComposerFactory {
   

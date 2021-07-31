@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,10 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *         .setGmailDraft(GmailApp.createDraft("recipient", "subject", "body"))
   *         .build();
   */
-@js.native
 trait ComposeActionResponse extends StObject {
   
-  def printJson(): String = js.native
+  def printJson(): String
 }
 object ComposeActionResponse {
   

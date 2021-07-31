@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFargateProfileRequest extends StObject {
   
   /**
     * The name of the Amazon EKS cluster associated with the Fargate profile.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The name of the Fargate profile to describe.
     */
-  var fargateProfileName: String = js.native
+  var fargateProfileName: String
 }
 object DescribeFargateProfileRequest {
   

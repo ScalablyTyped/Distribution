@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanoramaPov extends StObject {
   
-  var heading: Double = js.native
+  var heading: Double
   
-  var pitch: Double = js.native
+  var pitch: Double
 }
 object PanoramaPov {
   

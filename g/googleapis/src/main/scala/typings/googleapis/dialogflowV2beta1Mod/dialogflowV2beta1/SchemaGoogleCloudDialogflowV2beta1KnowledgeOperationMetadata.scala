@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata in google::longrunning::Operation for Knowledge operations.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata extends StObject {
   
   /**
     * Required. The current state of this operation.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeOperationMetadata {
   

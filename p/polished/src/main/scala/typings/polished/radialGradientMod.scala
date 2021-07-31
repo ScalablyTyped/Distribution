@@ -4,12 +4,14 @@ import typings.polished.radialGradientConfigurationMod.RadialGradientConfigurati
 import typings.polished.styleMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radialGradientMod {
   
-  @JSImport("polished/lib/mixins/radialGradient", JSImport.Default)
+  @JSImport("polished/lib/mixins/radialGradient", JSImport.Namespace)
   @js.native
-  def default(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasColorStopsExtentFallbackPositionShape: RadialGradientConfiguration): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorStopsExtentFallbackPositionShape.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

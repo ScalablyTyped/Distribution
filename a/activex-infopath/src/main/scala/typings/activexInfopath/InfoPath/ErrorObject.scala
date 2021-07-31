@@ -3,26 +3,24 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorObject extends StObject {
   
-  val ConditionName: js.Any = js.native
+  val ConditionName: js.Any
   
-  var DetailedErrorMessage: String = js.native
+  var DetailedErrorMessage: String
   
-  var ErrorCode: Double = js.native
+  var ErrorCode: Double
   
   @JSName("InfoPath.ErrorObject_typekey")
-  var InfoPathDotErrorObject_typekey: ErrorObject = js.native
+  var InfoPathDotErrorObject_typekey: ErrorObject
   
-  val Node: IXMLDOMNode = js.native
+  val Node: IXMLDOMNode
   
-  var ShortErrorMessage: String = js.native
+  var ShortErrorMessage: String
   
-  val Type: String = js.native
+  val Type: String
 }
 object ErrorObject {
   

@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCRtpReceiveParameters extends RTCRtpParameters {
+trait RTCRtpReceiveParameters
+  extends StObject
+     with RTCRtpParameters {
   
-  var encodings: js.Array[RTCRtpDecodingParameters] = js.native
+  var encodings: js.Array[RTCRtpDecodingParameters]
 }
 object RTCRtpReceiveParameters {
   

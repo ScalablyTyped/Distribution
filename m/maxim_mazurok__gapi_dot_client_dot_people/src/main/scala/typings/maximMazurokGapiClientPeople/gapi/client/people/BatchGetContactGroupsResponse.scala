@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetContactGroupsResponse extends StObject {
   
   /** The list of responses for each requested contact group resource. */
-  var responses: js.UndefOr[js.Array[ContactGroupResponse]] = js.native
+  var responses: js.UndefOr[js.Array[ContactGroupResponse]] = js.undefined
 }
 object BatchGetContactGroupsResponse {
   

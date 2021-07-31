@@ -2,22 +2,20 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaExternalDataConfiguration extends StObject {
   
   /**
     * Try to detect schema and format options automatically. Any option
     * specified explicitly will be honored.
     */
-  var autodetect: js.UndefOr[Boolean] = js.native
+  var autodetect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Additional options if sourceFormat is set to BIGTABLE.
     */
-  var bigtableOptions: js.UndefOr[SchemaBigtableOptions] = js.native
+  var bigtableOptions: js.UndefOr[SchemaBigtableOptions] = js.undefined
   
   /**
     * [Optional] The compression type of the data source. Possible values
@@ -25,17 +23,17 @@ trait SchemaExternalDataConfiguration extends StObject {
     * for Google Cloud Bigtable, Google Cloud Datastore backups and Avro
     * formats.
     */
-  var compression: js.UndefOr[String] = js.native
+  var compression: js.UndefOr[String] = js.undefined
   
   /**
     * Additional properties to set if sourceFormat is set to CSV.
     */
-  var csvOptions: js.UndefOr[SchemaCsvOptions] = js.native
+  var csvOptions: js.UndefOr[SchemaCsvOptions] = js.undefined
   
   /**
     * [Optional] Additional options if sourceFormat is set to GOOGLE_SHEETS.
     */
-  var googleSheetsOptions: js.UndefOr[SchemaGoogleSheetsOptions] = js.native
+  var googleSheetsOptions: js.UndefOr[SchemaGoogleSheetsOptions] = js.undefined
   
   /**
     * [Optional, Experimental] If hive partitioning is enabled, which mode to
@@ -45,7 +43,7 @@ trait SchemaExternalDataConfiguration extends StObject {
     * -- requesting hive partitioning on an unsupported format will lead to an
     * error.
     */
-  var hivePartitioningMode: js.UndefOr[String] = js.native
+  var hivePartitioningMode: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] Indicates if BigQuery should allow extra values that are not
@@ -58,7 +56,7 @@ trait SchemaExternalDataConfiguration extends StObject {
     * setting is ignored. Google Cloud Datastore backups: This setting is
     * ignored. Avro: This setting is ignored.
     */
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] The maximum number of bad records that BigQuery can ignore
@@ -68,14 +66,14 @@ trait SchemaExternalDataConfiguration extends StObject {
     * records are valid. This setting is ignored for Google Cloud Bigtable,
     * Google Cloud Datastore backups and Avro formats.
     */
-  var maxBadRecords: js.UndefOr[Double] = js.native
+  var maxBadRecords: js.UndefOr[Double] = js.undefined
   
   /**
     * [Optional] The schema for the data. Schema is required for CSV and JSON
     * formats. Schema is disallowed for Google Cloud Bigtable, Cloud Datastore
     * backups, and Avro formats.
     */
-  var schema: js.UndefOr[SchemaTableSchema] = js.native
+  var schema: js.UndefOr[SchemaTableSchema] = js.undefined
   
   /**
     * [Required] The data format. For CSV files, specify &quot;CSV&quot;. For
@@ -85,7 +83,7 @@ trait SchemaExternalDataConfiguration extends StObject {
     * &quot;DATASTORE_BACKUP&quot;. [Beta] For Google Cloud Bigtable, specify
     * &quot;BIGTABLE&quot;.
     */
-  var sourceFormat: js.UndefOr[String] = js.native
+  var sourceFormat: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The fully-qualified URIs that point to your data in Google
@@ -98,7 +96,7 @@ trait SchemaExternalDataConfiguration extends StObject {
     * one URI can be specified. Also, the &#39;*&#39; wildcard character is not
     * allowed.
     */
-  var sourceUris: js.UndefOr[js.Array[String]] = js.native
+  var sourceUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaExternalDataConfiguration {
   

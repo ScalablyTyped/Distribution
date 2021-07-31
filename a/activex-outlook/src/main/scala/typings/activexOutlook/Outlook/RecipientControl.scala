@@ -2,26 +2,24 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientControl extends StObject {
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var Enabled: Double = js.native
+  var Enabled: Double
   
-  var Font: js.Any = js.native
+  var Font: js.Any
   
-  var ForeColor: Double = js.native
+  var ForeColor: Double
   
   @JSName("Outlook._RecipientControl_typekey")
-  var OutlookDot_RecipientControl_typekey: RecipientControl = js.native
+  var OutlookDot_RecipientControl_typekey: RecipientControl
   
-  var ReadOnly: Double = js.native
+  var ReadOnly: Double
   
-  var SpecialEffect: Double = js.native
+  var SpecialEffect: Double
 }
 object RecipientControl {
   

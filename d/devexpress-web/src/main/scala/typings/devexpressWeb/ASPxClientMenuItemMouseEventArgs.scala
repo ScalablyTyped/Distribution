@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for client events which relate to mouse hovering (such as entering or leaving) over menu items.
   */
-@js.native
-trait ASPxClientMenuItemMouseEventArgs extends ASPxClientMenuItemEventArgs {
+trait ASPxClientMenuItemMouseEventArgs
+  extends StObject
+     with ASPxClientMenuItemEventArgs {
   
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
 }
 object ASPxClientMenuItemMouseEventArgs {
   

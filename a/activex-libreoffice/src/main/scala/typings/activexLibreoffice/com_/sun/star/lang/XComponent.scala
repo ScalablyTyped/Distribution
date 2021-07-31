@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You are only allowed to keep references of interfaces to UNO objects if you are by definition the owner of that object or your reference is very
   * temporary or you have registered an EventListener at that object and release the reference when "disposing" is called.
   */
-@js.native
-trait XComponent extends XInterface {
+trait XComponent
+  extends StObject
+     with XInterface {
   
   /**
     * adds an event listener to the object.
@@ -31,7 +31,7 @@ trait XComponent extends XInterface {
     * the {@link addEventListener()} call.
     * @see XComponent.removeEventListener
     */
-  def addEventListener(xListener: XEventListener): Unit = js.native
+  def addEventListener(xListener: XEventListener): Unit
   
   /**
     * The owner of an object calls this method to explicitly free all resources kept by this object and thus break cyclic references.
@@ -49,7 +49,7 @@ trait XComponent extends XInterface {
     * For some objects no real owner can be identified, thus it can be disposed from multiple reference holders. In this case the object should be able to
     * cope with multiple {@link dispose()} -calls (which are inevitable in a multithreaded environment).
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * removes an event listener from the listener list.
@@ -62,7 +62,7 @@ trait XComponent extends XInterface {
     * DisposedException} , but will rather be ignored silently.
     * @see XComponent.addEventListener
     */
-  def removeEventListener(aListener: XEventListener): Unit = js.native
+  def removeEventListener(aListener: XEventListener): Unit
 }
 object XComponent {
   

@@ -5,18 +5,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubstituteOptions extends Object {
+trait SubstituteOptions
+  extends StObject
+     with Object {
   
   /**
     * A hashmap of string keys to formatting options.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-intl.html#SubstituteOptions)
     */
-  var format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions] = js.native
+  var format: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]
 }
 object SubstituteOptions {
   

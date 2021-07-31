@@ -2,59 +2,59 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileApp extends Entity {
+trait MobileApp
+  extends StObject
+     with Entity {
   
   // The list of group assignments for this mobile app.
-  var assignments: js.UndefOr[NullableOption[js.Array[MobileAppAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[MobileAppAssignment]]] = js.undefined
   
   // The list of categories for this app.
-  var categories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.native
+  var categories: js.UndefOr[NullableOption[js.Array[MobileAppCategory]]] = js.undefined
   
   // The date and time the app was created.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // The description of the app.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The developer of the app.
-  var developer: js.UndefOr[NullableOption[String]] = js.native
+  var developer: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The admin provided or imported title of the app.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The more information Url.
-  var informationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var informationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The value indicating whether the app is marked as featured by the admin.
-  var isFeatured: js.UndefOr[Boolean] = js.native
+  var isFeatured: js.UndefOr[Boolean] = js.undefined
   
   // The large icon, to be displayed in the app details and used for upload of the icon.
-  var largeIcon: js.UndefOr[NullableOption[MimeContent]] = js.native
+  var largeIcon: js.UndefOr[NullableOption[MimeContent]] = js.undefined
   
   // The date and time the app was last modified.
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   // Notes for the app.
-  var notes: js.UndefOr[NullableOption[String]] = js.native
+  var notes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The owner of the app.
-  var owner: js.UndefOr[NullableOption[String]] = js.native
+  var owner: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The privacy statement Url.
-  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.native
+  var privacyInformationUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The publisher of the app.
-  var publisher: js.UndefOr[NullableOption[String]] = js.native
+  var publisher: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are:
     * notPublished, processing, published.
     */
-  var publishingState: js.UndefOr[MobileAppPublishingState] = js.native
+  var publishingState: js.UndefOr[MobileAppPublishingState] = js.undefined
 }
 object MobileApp {
   

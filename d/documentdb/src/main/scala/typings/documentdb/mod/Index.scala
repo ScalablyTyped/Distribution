@@ -2,17 +2,15 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var DataType: String = js.native
+  var DataType: String
   
-  var Kind: IndexKind = js.native
+  var Kind: IndexKind
   
-  var Precision: Double = js.native
+  var Precision: Double
 }
 object Index {
   

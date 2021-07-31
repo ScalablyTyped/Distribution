@@ -7,7 +7,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.TransitionCallbacks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPaneMod {
@@ -21,20 +20,20 @@ object tabPaneMod {
   trait TabPane
     extends Component[TabPaneProps, js.Object, js.Any]
   
-  @js.native
   trait TabPaneProps
-    extends HTMLProps[TabPane]
-       with TransitionCallbacks {
+    extends StObject
+       with TransitionCallbacks
+       with HTMLProps[TabPane] {
     
-    var animation: js.UndefOr[Boolean | (ComponentClass[_, ComponentState])] = js.native
+    var animation: js.UndefOr[Boolean | (ComponentClass[js.Any, ComponentState])] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var eventKey: js.UndefOr[js.Any] = js.native
+    var eventKey: js.UndefOr[js.Any] = js.undefined
     
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object TabPaneProps {
     
@@ -48,7 +47,7 @@ object tabPaneMod {
     implicit class TabPanePropsMutableBuilder[Self <: TabPaneProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAnimation(value: Boolean | (ComponentClass[_, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      def setAnimation(value: Boolean | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)

@@ -2,23 +2,21 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationStateListener2 extends StObject {
   
-  def complete(entry: TrackEntry): Unit = js.native
+  def complete(entry: TrackEntry): Unit
   
-  def dispose(entry: TrackEntry): Unit = js.native
+  def dispose(entry: TrackEntry): Unit
   
-  def end(entry: TrackEntry): Unit = js.native
+  def end(entry: TrackEntry): Unit
   
-  def event(entry: TrackEntry, event: Event): Unit = js.native
+  def event(entry: TrackEntry, event: Event): Unit
   
-  def interrupt(entry: TrackEntry): Unit = js.native
+  def interrupt(entry: TrackEntry): Unit
   
-  def start(entry: TrackEntry): Unit = js.native
+  def start(entry: TrackEntry): Unit
 }
 object AnimationStateListener2 {
   

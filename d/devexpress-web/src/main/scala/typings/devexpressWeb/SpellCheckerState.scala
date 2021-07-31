@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,17 +17,23 @@ object SpellCheckerState extends StObject {
     * Spell checking is disabled.
     */
   @js.native
-  sealed trait Disabled extends SpellCheckerState
+  sealed trait Disabled
+    extends StObject
+       with SpellCheckerState
   
   /**
     * Spell checking is completed.
     */
   @js.native
-  sealed trait Done extends SpellCheckerState
+  sealed trait Done
+    extends StObject
+       with SpellCheckerState
   
   /**
     * Spell checking is in progress.
     */
   @js.native
-  sealed trait InProgress extends SpellCheckerState
+  sealed trait InProgress
+    extends StObject
+       with SpellCheckerState
 }

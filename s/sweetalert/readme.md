@@ -10,9 +10,9 @@ A beautiful replacement for JavaScript's "alert"
 | ------------------ | :-------------: |
 | Full name          | sweetalert |
 | Keywords           | sweetalert, alert, modal, popup |
-| # releases         | 3 |
-| # dependents       | 121 |
-| # downloads        | 3320454 |
+| # releases         | 0 |
+| # dependents       | 131 |
+| # downloads        | 3571237 |
 | # stars            | 31 |
 
 ## Links

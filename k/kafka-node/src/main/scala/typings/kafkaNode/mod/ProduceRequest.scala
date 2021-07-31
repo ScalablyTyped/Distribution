@@ -3,22 +3,20 @@ package typings.kafkaNode.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProduceRequest extends StObject {
   
-  var attributes: js.UndefOr[Double] = js.native
+  var attributes: js.UndefOr[Double] = js.undefined
   
   // string[] | Array<KeyedMessage> | string | KeyedMessage
-  var key: js.UndefOr[String | Buffer] = js.native
+  var key: js.UndefOr[String | Buffer] = js.undefined
   
-  var messages: js.Any = js.native
+  var messages: js.Any
   
-  var partition: js.UndefOr[Double] = js.native
+  var partition: js.UndefOr[Double] = js.undefined
   
-  var topic: String = js.native
+  var topic: String
 }
 object ProduceRequest {
   

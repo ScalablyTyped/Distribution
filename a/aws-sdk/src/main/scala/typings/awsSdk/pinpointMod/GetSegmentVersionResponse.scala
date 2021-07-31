@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSegmentVersionResponse extends StObject {
   
-  var SegmentResponse: typings.awsSdk.pinpointMod.SegmentResponse = js.native
+  var SegmentResponse: typings.awsSdk.pinpointMod.SegmentResponse
 }
 object GetSegmentVersionResponse {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AliasListEntry extends StObject {
   
   /**
     * String that contains the key ARN.
     */
-  var AliasArn: js.UndefOr[ArnType] = js.native
+  var AliasArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * String that contains the alias. This value begins with alias/.
     */
-  var AliasName: js.UndefOr[AliasNameType] = js.native
+  var AliasName: js.UndefOr[AliasNameType] = js.undefined
   
   /**
     * String that contains the key identifier referred to by the alias.
     */
-  var TargetKeyId: js.UndefOr[KeyIdType] = js.native
+  var TargetKeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object AliasListEntry {
   

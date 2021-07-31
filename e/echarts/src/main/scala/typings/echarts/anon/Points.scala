@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Points extends js.Object {
+trait Points extends StObject {
   
   /**
     * A list of points, which defines the shape, like `[[22,
@@ -14,7 +13,7 @@ trait Points extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.shape.points
     */
-  var points: js.UndefOr[js.Array[_]] = js.native
+  var points: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Whether smooth the line.
@@ -30,7 +29,7 @@ trait Points extends js.Object {
     * "undefined"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.shape.smooth
     */
-  var smooth: js.UndefOr[Double | String] = js.native
+  var smooth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Whether prevent the smooth process cause the line
@@ -41,7 +40,7 @@ trait Points extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_polyline.shape.smoothConstraint
     */
-  var smoothConstraint: js.UndefOr[Boolean] = js.native
+  var smoothConstraint: js.UndefOr[Boolean] = js.undefined
 }
 object Points {
   
@@ -52,39 +51,27 @@ object Points {
   }
   
   @scala.inline
-  implicit class PointsOps[Self <: Points] (val x: Self) extends AnyVal {
+  implicit class PointsMutableBuilder[Self <: Points] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setPoints(value: js.Array[js.Any]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setPointsVarargs(value: js.Any*): Self = StObject.set(x, "points", js.Array(value :_*))
     
     @scala.inline
-    def setPointsVarargs(value: js.Any*): Self = this.set("points", js.Array(value :_*))
+    def setSmooth(value: Double | String): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPoints(value: js.Array[_]): Self = this.set("points", value.asInstanceOf[js.Any])
+    def setSmoothConstraint(value: Boolean): Self = StObject.set(x, "smoothConstraint", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def deletePoints: Self = this.set("points", js.undefined)
+    def setSmoothConstraintUndefined: Self = StObject.set(x, "smoothConstraint", js.undefined)
     
     @scala.inline
-    def setSmooth(value: Double | String): Self = this.set("smooth", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmooth: Self = this.set("smooth", js.undefined)
-    
-    @scala.inline
-    def setSmoothConstraint(value: Boolean): Self = this.set("smoothConstraint", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteSmoothConstraint: Self = this.set("smoothConstraint", js.undefined)
+    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
   }
 }

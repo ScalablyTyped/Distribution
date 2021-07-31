@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyframeStyle extends StObject {
   
   /**
     * `AnimationEffect`'s timing function.
     */
-  var easing: String = js.native
+  var easing: String
   
   /**
     * Keyframe's time offset.
     */
-  var offset: String = js.native
+  var offset: String
 }
 object KeyframeStyle {
   

@@ -10,17 +10,15 @@ import typings.popmotion.popmotionStrings.reverse
 import typings.popmotion.popmotionStrings.spring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Animation[V] extends StObject {
     
-    def flipTarget(): Unit = js.native
+    def flipTarget(): Unit
     
-    def next(t: Double): Done[V] = js.native
+    def next(t: Double): Done[V]
   }
   object Animation {
     
@@ -31,7 +29,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class AnimationMutableBuilder[Self <: Animation[_], V] (val x: Self with Animation[V]) extends AnyVal {
+    implicit class AnimationMutableBuilder[Self <: Animation[?], V] (val x: Self & Animation[V]) extends AnyVal {
       
       @scala.inline
       def setFlipTarget(value: () => Unit): Self = StObject.set(x, "flipTarget", js.Any.fromFunction0(value))
@@ -41,14 +39,13 @@ object typesMod {
     }
   }
   
-  type AnimationOptions[V] = PlaybackOptions[V] with (DecayOptions | KeyframeOptions[V] | SpringOptions)
+  type AnimationOptions[V] = PlaybackOptions[V] & (DecayOptions | KeyframeOptions[V] | SpringOptions)
   
-  @js.native
   trait AnimationState[V] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: V = js.native
+    var value: V
   }
   object AnimationState {
     
@@ -59,7 +56,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class AnimationStateMutableBuilder[Self <: AnimationState[_], V] (val x: Self with AnimationState[V]) extends AnyVal {
+    implicit class AnimationStateMutableBuilder[Self <: AnimationState[?], V] (val x: Self & AnimationState[V]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
@@ -69,22 +66,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait DecayOptions extends StObject {
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var modifyTarget: js.UndefOr[js.Function1[/* target */ Double, Double]] = js.native
+    var modifyTarget: js.UndefOr[js.Function1[/* target */ Double, Double]] = js.undefined
     
-    var power: js.UndefOr[Double] = js.native
+    var power: js.UndefOr[Double] = js.undefined
     
-    var restDelta: js.UndefOr[Double] = js.native
+    var restDelta: js.UndefOr[Double] = js.undefined
     
-    var timeConstant: js.UndefOr[Double] = js.native
+    var timeConstant: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
     
-    var velocity: js.UndefOr[Double] = js.native
+    var velocity: js.UndefOr[Double] = js.undefined
   }
   object DecayOptions {
     
@@ -143,12 +139,11 @@ object typesMod {
   
   type Driver = js.Function1[/* update */ Update, DriverControls]
   
-  @js.native
   trait DriverControls extends StObject {
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object DriverControls {
     
@@ -169,24 +164,25 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait InertiaOptions extends DecayOptions {
+  trait InertiaOptions
+    extends StObject
+       with DecayOptions {
     
-    var bounceDamping: js.UndefOr[Double] = js.native
+    var bounceDamping: js.UndefOr[Double] = js.undefined
     
-    var bounceStiffness: js.UndefOr[Double] = js.native
+    var bounceStiffness: js.UndefOr[Double] = js.undefined
     
-    var driver: js.UndefOr[Driver] = js.native
+    var driver: js.UndefOr[Driver] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* v */ Double, Unit]] = js.undefined
     
-    var restSpeed: js.UndefOr[Double] = js.native
+    var restSpeed: js.UndefOr[Double] = js.undefined
   }
   object InertiaOptions {
     
@@ -249,18 +245,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait KeyframeOptions[V] extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var ease: js.UndefOr[Easing | js.Array[Easing]] = js.native
+    var ease: js.UndefOr[Easing | js.Array[Easing]] = js.undefined
     
-    var from: js.UndefOr[V] = js.native
+    var from: js.UndefOr[V] = js.undefined
     
-    var offset: js.UndefOr[js.Array[Double]] = js.native
+    var offset: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var to: V | js.Array[V] = js.native
+    var to: V | js.Array[V]
   }
   object KeyframeOptions {
     
@@ -271,7 +266,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class KeyframeOptionsMutableBuilder[Self <: KeyframeOptions[_], V] (val x: Self with KeyframeOptions[V]) extends AnyVal {
+    implicit class KeyframeOptionsMutableBuilder[Self <: KeyframeOptions[?], V] (val x: Self & KeyframeOptions[V]) extends AnyVal {
       
       @scala.inline
       def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
@@ -314,16 +309,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PhysicsSpringOptions extends StObject {
     
-    var damping: js.UndefOr[Double] = js.native
+    var damping: js.UndefOr[Double] = js.undefined
     
-    var mass: js.UndefOr[Double] = js.native
+    var mass: js.UndefOr[Double] = js.undefined
     
-    var stiffness: js.UndefOr[Double] = js.native
+    var stiffness: js.UndefOr[Double] = js.undefined
     
-    var velocity: js.UndefOr[Double] = js.native
+    var velocity: js.UndefOr[Double] = js.undefined
   }
   object PhysicsSpringOptions {
     
@@ -362,10 +356,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PlaybackControls extends StObject {
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object PlaybackControls {
     
@@ -383,34 +376,33 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PlaybackOptions[V] extends StObject {
     
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
-    var driver: js.UndefOr[Driver] = js.native
+    var driver: js.UndefOr[Driver] = js.undefined
     
-    var elapsed: js.UndefOr[Double] = js.native
+    var elapsed: js.UndefOr[Double] = js.undefined
     
-    var from: js.UndefOr[V] = js.native
+    var from: js.UndefOr[V] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function0[Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPlay: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPlay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onRepeat: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRepeat: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var onStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onUpdate: js.UndefOr[js.Function1[/* latest */ V, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* latest */ V, Unit]] = js.undefined
     
-    var repeat: js.UndefOr[Double] = js.native
+    var repeat: js.UndefOr[Double] = js.undefined
     
-    var repeatDelay: js.UndefOr[Double] = js.native
+    var repeatDelay: js.UndefOr[Double] = js.undefined
     
-    var repeatType: js.UndefOr[loop | reverse | mirror] = js.native
+    var repeatType: js.UndefOr[loop | reverse | mirror] = js.undefined
     
-    var `type`: js.UndefOr[spring | decay | keyframes] = js.native
+    var `type`: js.UndefOr[spring | decay | keyframes] = js.undefined
   }
   object PlaybackOptions {
     
@@ -421,7 +413,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class PlaybackOptionsMutableBuilder[Self <: PlaybackOptions[_], V] (val x: Self with PlaybackOptions[V]) extends AnyVal {
+    implicit class PlaybackOptionsMutableBuilder[Self <: PlaybackOptions[?], V] (val x: Self & PlaybackOptions[V]) extends AnyVal {
       
       @scala.inline
       def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
@@ -503,20 +495,21 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait SpringOptions extends PhysicsSpringOptions {
+  trait SpringOptions
+    extends StObject
+       with PhysicsSpringOptions {
     
-    var bounce: js.UndefOr[Double] = js.native
+    var bounce: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var from: js.UndefOr[Double] = js.native
+    var from: js.UndefOr[Double] = js.undefined
     
-    var restDelta: js.UndefOr[Double] = js.native
+    var restDelta: js.UndefOr[Double] = js.undefined
     
-    var restSpeed: js.UndefOr[Double] = js.native
+    var restSpeed: js.UndefOr[Double] = js.undefined
     
-    var to: js.UndefOr[Double] = js.native
+    var to: js.UndefOr[Double] = js.undefined
   }
   object SpringOptions {
     

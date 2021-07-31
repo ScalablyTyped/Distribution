@@ -13,7 +13,6 @@ import typings.vscodeLanguageserverProtocol.mod.Proposed.CallHierarchyOptions
 import typings.vscodeLanguageserverProtocol.mod.Proposed.CallHierarchyRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callHierarchyProposedMod {
@@ -35,7 +34,6 @@ object callHierarchyProposedMod {
     ProviderResult[js.Array[CallHierarchyIncomingCall]]
   ]
   
-  @js.native
   trait CallHierarchyMiddleware extends StObject {
     
     var prepareCallHierarchy: js.UndefOr[
@@ -47,7 +45,7 @@ object callHierarchyProposedMod {
           /* next */ PrepareCallHierachySignature, 
           ProviderResult[CallHierarchyItem]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var provideCallHierarchyIncomingCalls: js.UndefOr[
         js.ThisFunction3[
@@ -57,7 +55,7 @@ object callHierarchyProposedMod {
           /* next */ CallHierarchyIncomingCallsSignature, 
           ProviderResult[js.Array[CallHierarchyIncomingCall]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var provideCallHierarchyOutgingCalls: js.UndefOr[
         js.ThisFunction3[
@@ -67,7 +65,7 @@ object callHierarchyProposedMod {
           /* next */ CallHierarchyOutgoingCallsSignature, 
           ProviderResult[js.Array[CallHierarchyOutgoingCall]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object CallHierarchyMiddleware {
     
@@ -132,13 +130,13 @@ object callHierarchyProposedMod {
     ProviderResult[js.Array[CallHierarchyOutgoingCall]]
   ]
   
-  @js.native
   trait CallHierarchyProvider
-    extends typings.vscode.mod.CallHierarchyProvider {
+    extends StObject
+       with typings.vscode.mod.CallHierarchyProvider {
     
-    var client: js.Any = js.native
+    var client: js.Any
     
-    var middleware: js.Any = js.native
+    var middleware: js.Any
   }
   object CallHierarchyProvider {
     

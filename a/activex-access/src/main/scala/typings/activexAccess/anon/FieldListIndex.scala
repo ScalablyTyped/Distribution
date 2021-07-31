@@ -2,13 +2,11 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldListIndex extends StObject {
   
-  val FieldListIndex: Double = js.native
+  val FieldListIndex: Double
 }
 object FieldListIndex {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRateBasedRuleManagedKeysRequest extends StObject {
   
   /**
     * A null value and not currently used. Do not include this in your request.
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.undefined
   
   /**
     * The RuleId of the RateBasedRule for which you want to get a list of ManagedKeys. RuleId is returned by CreateRateBasedRule and by ListRateBasedRules.
     */
-  var RuleId: ResourceId = js.native
+  var RuleId: ResourceId
 }
 object GetRateBasedRuleManagedKeysRequest {
   

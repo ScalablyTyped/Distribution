@@ -4,29 +4,28 @@ import typings.qlik.qlikStrings.radiobuttons
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyRadio
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: radiobuttons = js.native
+  var component: radiobuttons
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[CustomPropertyOptions] = js.native
+  var options: js.UndefOr[CustomPropertyOptions] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyRadio: string = js.native
+  var type_CustomPropertyRadio: string
 }
 object CustomPropertyRadio {
   
   @scala.inline
-  def apply(component: radiobuttons, `type`: string): CustomPropertyRadio = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertyRadio = {
+    val __obj = js.Dynamic.literal(component = "radiobuttons")
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyRadio]
   }
   

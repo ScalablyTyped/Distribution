@@ -2,20 +2,18 @@ package typings.typescriptTuple.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmptyLongest[Longest, TupleSet /* <: js.Array[js.Array[_]] */] extends StObject {
+trait EmptyLongest[Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */] extends StObject {
   
-  var empty: Longest = js.native
+  var empty: Longest
   
-  var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any = js.native
+  var nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any
 }
 object EmptyLongest {
   
   @scala.inline
-  def apply[Longest, TupleSet /* <: js.Array[js.Array[_]] */](
+  def apply[Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */](
     empty: Longest,
     nonEmpty: /* import warning: importer.ImportType#apply Failed type conversion: typescript-tuple.typescript-tuple/lib/utils.SortTwoTuple<Longest, any, [Longest, any]>[1] */ js.Any
   ): EmptyLongest[Longest, TupleSet] = {
@@ -24,7 +22,7 @@ object EmptyLongest {
   }
   
   @scala.inline
-  implicit class EmptyLongestMutableBuilder[Self <: EmptyLongest[_, _], Longest, TupleSet /* <: js.Array[js.Array[_]] */] (val x: Self with (EmptyLongest[Longest, TupleSet])) extends AnyVal {
+  implicit class EmptyLongestMutableBuilder[Self <: EmptyLongest[?, ?], Longest, TupleSet /* <: js.Array[js.Array[js.Any]] */] (val x: Self & (EmptyLongest[Longest, TupleSet])) extends AnyVal {
     
     @scala.inline
     def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])

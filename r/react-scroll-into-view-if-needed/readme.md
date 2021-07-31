@@ -12,7 +12,7 @@ A thin component wrapper around scroll-into-view-if-needed
 | Keywords           | react, scroll-into-view-if-needed, scroll, scrolling |
 | # releases         | 2 |
 | # dependents       | 4 |
-| # downloads        | 306545 |
+| # downloads        | 396075 |
 | # stars            | 0 |
 
 ## Links

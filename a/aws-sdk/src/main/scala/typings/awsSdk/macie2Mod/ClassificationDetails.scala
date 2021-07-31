@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassificationDetails extends StObject {
   
   /**
     * The path to the folder or file (in Amazon S3) that contains the corresponding sensitive data discovery result for the finding. If a finding applies to a large archive or compressed file, this value is the path to a folder. Otherwise, this value is the path to a file.
     */
-  var detailedResultsLocation: js.UndefOr[string] = js.native
+  var detailedResultsLocation: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the classification job that produced the finding.
     */
-  var jobArn: js.UndefOr[string] = js.native
+  var jobArn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the classification job that produced the finding.
     */
-  var jobId: js.UndefOr[string] = js.native
+  var jobId: js.UndefOr[string] = js.undefined
   
   /**
     * The status and other details for the finding.
     */
-  var result: js.UndefOr[ClassificationResult] = js.native
+  var result: js.UndefOr[ClassificationResult] = js.undefined
 }
 object ClassificationDetails {
   

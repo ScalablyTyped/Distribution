@@ -3,16 +3,14 @@ package typings.node.inspectorMod.HeapProfiler
 import typings.node.inspectorMod.Runtime.RemoteObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectByHeapObjectIdReturnType extends StObject {
   
   /**
     * Evaluation result.
     */
-  var result: RemoteObject = js.native
+  var result: RemoteObject
 }
 object GetObjectByHeapObjectIdReturnType {
   

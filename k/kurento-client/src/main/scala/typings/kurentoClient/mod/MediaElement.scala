@@ -12,11 +12,12 @@ import typings.kurentoClient.kurentoClientStrings.MediaFlowOutStateChange
 import typings.kurentoClient.kurentoClientStrings.MediaTranscodingStateChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaElement extends MediaObject {
+trait MediaElement
+  extends StObject
+     with MediaObject {
   
   def connect(sink: MediaElement): js.Promise[Unit] = js.native
   def connect(sink: MediaElement, callback: Callback[Unit]): js.Promise[Unit] = js.native
@@ -31,22 +32,14 @@ trait MediaElement extends MediaObject {
   def getSourceConnections(callback: Callback[js.Array[ElementConnectionData]]): js.Promise[js.Array[ElementConnectionData]] = js.native
   
   def isMediaFlowingIn(mediaType: MediaType): js.Promise[Boolean] = js.native
-  def isMediaFlowingIn(
-    mediaType: MediaType,
-    sinkMediaDescriptionopt: js.UndefOr[scala.Nothing],
-    callbackopt: Callback[Boolean]
-  ): js.Promise[Boolean] = js.native
   def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: String): js.Promise[Boolean] = js.native
   def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingIn(mediaType: MediaType, sinkMediaDescriptionopt: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
   
   def isMediaFlowingOut(mediaType: MediaType): js.Promise[Boolean] = js.native
-  def isMediaFlowingOut(
-    mediaType: MediaType,
-    sinkMediaDescriptionopt: js.UndefOr[scala.Nothing],
-    callbackopt: Callback[Boolean]
-  ): js.Promise[Boolean] = js.native
   def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: String): js.Promise[Boolean] = js.native
   def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: String, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
+  def isMediaFlowingOut(mediaType: MediaType, sinkMediaDescriptionopt: Unit, callbackopt: Callback[Boolean]): js.Promise[Boolean] = js.native
   
   @JSName("on")
   def on_ElementConnected(eventName: ElementConnected, callback: js.Function1[/* event */ EventElementConnectedsink, Unit]): MediaElement = js.native

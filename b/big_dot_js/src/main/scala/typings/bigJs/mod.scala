@@ -9,7 +9,6 @@ import typings.bigJs.bigJsNumbers.`2`
 import typings.bigJs.bigJsNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -58,13 +57,6 @@ object mod extends Shortcut {
       * Returns the exponent, Integer, -1e+6 to 1e+6 inclusive
       */
     var e: Double = js.native
-    
-    /**
-      * Returns true if the value of this Big equals the value of n, otherwise returns false.
-      *
-      * @throws `NaN` if n is invalid.
-      */
-    def eq(n: BigSource): Boolean = js.native
     
     /**
       * Returns true if the value of this Big is greater than the value of n, otherwise returns false.
@@ -145,9 +137,9 @@ object mod extends Shortcut {
       * @throws `!Big.RM!` if rm is invalid.
       */
     def round(): typings.bigJs.mod.Big = js.native
-    def round(dp: js.UndefOr[scala.Nothing], rm: RoundingMode): typings.bigJs.mod.Big = js.native
     def round(dp: Double): typings.bigJs.mod.Big = js.native
     def round(dp: Double, rm: RoundingMode): typings.bigJs.mod.Big = js.native
+    def round(dp: Unit, rm: RoundingMode): typings.bigJs.mod.Big = js.native
     
     /**
       * Returns the sign, -1 or 1
@@ -256,7 +248,8 @@ object mod extends Shortcut {
   @JSImport("big.js", "Big")
   @js.native
   class BigCls protected ()
-    extends typings.bigJs.mod.Big {
+    extends StObject
+       with typings.bigJs.mod.Big {
     /**
       * Returns a new instance of a Big number object
       *
@@ -274,7 +267,8 @@ object mod extends Shortcut {
   @JSImport("big.js", JSImport.Default)
   @js.native
   class defaultCls protected ()
-    extends typings.bigJs.mod.Big {
+    extends StObject
+       with typings.bigJs.mod.Big {
     /**
       * Returns a new instance of a Big number object
       *
@@ -294,7 +288,8 @@ object mod extends Shortcut {
     @JSGlobal("Big")
     @js.native
     class Big protected ()
-      extends typings.bigJs.mod.Big {
+      extends StObject
+         with typings.bigJs.mod.Big {
       /**
         * Returns a new instance of a Big number object
         *
@@ -378,7 +373,8 @@ object mod extends Shortcut {
   
   @js.native
   trait BigConstructor
-    extends /**
+    extends StObject
+       with /**
     * Returns a new instance of a Big number object
     *
     * String values may be in exponential, as well as normal (non-exponential) notation.

@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.opsworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackCustomCookbooksSource extends StObject {
   
   /**
     * Password to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * For sources that are version-aware, the revision to use.
     */
-  var revision: js.UndefOr[String] = js.native
+  var revision: js.UndefOr[String] = js.undefined
   
   /**
     * SSH key to use when authenticating to the source. The provider cannot perform drift detection of this configuration.
     */
-  var sshKey: js.UndefOr[String] = js.native
+  var sshKey: js.UndefOr[String] = js.undefined
   
   /**
     * The type of source to use. For example, "archive".
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL where the cookbooks resource can be found.
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * Username to use when authenticating to the source.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object StackCustomCookbooksSource {
   

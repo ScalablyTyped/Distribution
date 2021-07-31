@@ -3,7 +3,6 @@ package typings.matterJs.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Engine")
@@ -103,14 +102,17 @@ class Engine () extends StObject {
 /* static members */
 object Engine {
   
+  @JSImport("matter-js", "Engine")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Clears the engine including the world, pairs and broadphase.
     * @method clear
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Engine.clear")
-  @js.native
-  def clear(engine: Engine): Unit = js.native
+  @scala.inline
+  def clear(engine: Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(engine.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Creates a new engine. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -131,24 +133,18 @@ object Engine {
     * @return {engine} engine
     * @deprecated
     */
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(): Engine = js.native
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(element: js.UndefOr[scala.Nothing], options: IEngineDefinition): Engine = js.native
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(element: IEngineDefinition): Engine = js.native
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(element: IEngineDefinition, options: IEngineDefinition): Engine = js.native
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(element: HTMLElement): Engine = js.native
-  @JSImport("matter-js", "Engine.create")
-  @js.native
-  def create(element: HTMLElement, options: IEngineDefinition): Engine = js.native
+  @scala.inline
+  def create(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Engine]
+  @scala.inline
+  def create(element: Unit, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  @scala.inline
+  def create(element: IEngineDefinition): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Engine]
+  @scala.inline
+  def create(element: IEngineDefinition, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  @scala.inline
+  def create(element: HTMLElement): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Engine]
+  @scala.inline
+  def create(element: HTMLElement, options: IEngineDefinition): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Engine]
   
   /**
     * Merges two engines by keeping the configuration of `engineA` but replacing the world with the one from `engineB`.
@@ -156,18 +152,16 @@ object Engine {
     * @param {engine} engineA
     * @param {engine} engineB
     */
-  @JSImport("matter-js", "Engine.merge")
-  @js.native
-  def merge(engineA: Engine, engineB: Engine): Unit = js.native
+  @scala.inline
+  def merge(engineA: Engine, engineB: Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(engineA.asInstanceOf[js.Any], engineB.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * An alias for `Runner.run`, see `Matter.Runner` for more information.
     * @method run
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Engine.run")
-  @js.native
-  def run(enige: Engine): Unit = js.native
+  @scala.inline
+  def run(enige: Engine): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(enige.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Moves the simulation forward in time by `delta` ms.
@@ -184,16 +178,12 @@ object Engine {
     * @param {number} [delta=16.666]
     * @param {number} [correction=1]
     */
-  @JSImport("matter-js", "Engine.update")
-  @js.native
-  def update(engine: Engine): Engine = js.native
-  @JSImport("matter-js", "Engine.update")
-  @js.native
-  def update(engine: Engine, delta: js.UndefOr[scala.Nothing], correction: Double): Engine = js.native
-  @JSImport("matter-js", "Engine.update")
-  @js.native
-  def update(engine: Engine, delta: Double): Engine = js.native
-  @JSImport("matter-js", "Engine.update")
-  @js.native
-  def update(engine: Engine, delta: Double, correction: Double): Engine = js.native
+  @scala.inline
+  def update(engine: Engine): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any]).asInstanceOf[Engine]
+  @scala.inline
+  def update(engine: Engine, delta: Double): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  @scala.inline
+  def update(engine: Engine, delta: Double, correction: Double): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[Engine]
+  @scala.inline
+  def update(engine: Engine, delta: Unit, correction: Double): Engine = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(engine.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], correction.asInstanceOf[js.Any])).asInstanceOf[Engine]
 }

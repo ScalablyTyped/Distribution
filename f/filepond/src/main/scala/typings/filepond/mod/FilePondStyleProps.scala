@@ -5,29 +5,27 @@ import typings.filepond.filepondStrings.compact
 import typings.filepond.filepondStrings.integrated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondStyleProps extends StObject {
   
   /**
     * The position of the remove item button.
     * @default 'right'
     */
-  var styleButtonProcessItemPosition: js.UndefOr[String] = js.native
+  var styleButtonProcessItemPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Enable to align the remove button to the left side of the file item.
     * @default false
     */
-  var styleButtonRemoveItemAlign: js.UndefOr[Boolean] = js.native
+  var styleButtonRemoveItemAlign: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The position of the remove item button.
     * @default 'left'
     */
-  var styleButtonRemoveItemPosition: js.UndefOr[String] = js.native
+  var styleButtonRemoveItemPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Set a forced aspect ratio for the file items.
@@ -35,13 +33,13 @@ trait FilePondStyleProps extends StObject {
     * Useful when rendering cropped or fixed aspect ratio images in grid view.
     * @default null
     */
-  var styleItemPanelAspectRatio: js.UndefOr[String | Null] = js.native
+  var styleItemPanelAspectRatio: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The position of the load indicator.
     * @default 'right'
     */
-  var styleLoadIndicatorPosition: js.UndefOr[String] = js.native
+  var styleLoadIndicatorPosition: js.UndefOr[String] = js.undefined
   
   /**
     * Set a forced aspect ratio for the FilePond drop area.
@@ -49,19 +47,19 @@ trait FilePondStyleProps extends StObject {
     * Accepts human readable aspect ratios like `1:1` or numeric aspect ratios like `0.75`.
     * @default null
     */
-  var stylePanelAspectRatio: js.UndefOr[String | Null] = js.native
+  var stylePanelAspectRatio: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Set a different layout render mode.
     * @default null
     */
-  var stylePanelLayout: js.UndefOr[integrated | compact | circle | Null] = js.native
+  var stylePanelLayout: js.UndefOr[integrated | compact | circle | Null] = js.undefined
   
   /**
     * The position of the progress indicator.
     * @default 'right'
     */
-  var styleProgressIndicatorPosition: js.UndefOr[String] = js.native
+  var styleProgressIndicatorPosition: js.UndefOr[String] = js.undefined
 }
 object FilePondStyleProps {
   

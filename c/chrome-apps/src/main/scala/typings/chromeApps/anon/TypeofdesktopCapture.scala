@@ -5,19 +5,17 @@ import typings.chromeApps.chrome.integer
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofdesktopCapture extends StObject {
   
-  val DesktopCaptureSourceType: AUDIO = js.native
+  val DesktopCaptureSourceType: AUDIO
   
   /**
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
     */
-  def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = js.native
+  def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit
   
   /**
     * Shows desktop media picker UI with the specified set of sources.
@@ -39,7 +37,7 @@ trait TypeofdesktopCapture extends StObject {
       ]
     ],
     callback: js.Function1[/* streamId */ String, Unit]
-  ): integer = js.native
+  ): integer
 }
 object TypeofdesktopCapture {
   

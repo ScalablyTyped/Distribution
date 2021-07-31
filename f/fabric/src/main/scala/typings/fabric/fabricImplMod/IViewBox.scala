@@ -2,31 +2,29 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IViewBox extends StObject {
   
   /**
     * Height of viewbox
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Width of viewbox
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * x-cooridnate of viewbox
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * y-coordinate of viewbox
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IViewBox {
   

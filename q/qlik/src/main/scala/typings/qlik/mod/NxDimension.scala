@@ -2,31 +2,29 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxDimension extends StObject {
   
-  var qAttributeDimensions: js.Array[NxAttrDimDef] = js.native
+  var qAttributeDimensions: js.Array[NxAttrDimDef]
   
-  var qAttributeExpressions: js.Array[NxAttrExprDef] = js.native
+  var qAttributeExpressions: js.Array[NxAttrExprDef]
   
-  var qCalcCond: ValueExpr = js.native
+  var qCalcCond: ValueExpr
   
-  var qDef: NxInlineDimensionDef = js.native
+  var qDef: NxInlineDimensionDef
   
-  var qLibraryId: String = js.native
+  var qLibraryId: String
   
-  var qNullSuppression: Boolean = js.native
+  var qNullSuppression: Boolean
   
-  var qOtherLabel: String = js.native
+  var qOtherLabel: String
   
-  var qOtherTotalSpec: OtherTotalSpecProp = js.native
+  var qOtherTotalSpec: OtherTotalSpecProp
   
-  var qShowAll: Boolean = js.native
+  var qShowAll: Boolean
   
-  var qTotalLabel: String = js.native
+  var qTotalLabel: String
 }
 object NxDimension {
   

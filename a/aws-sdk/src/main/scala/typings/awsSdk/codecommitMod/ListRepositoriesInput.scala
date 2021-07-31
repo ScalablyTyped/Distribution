@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRepositoriesInput extends StObject {
   
   /**
     * An enumeration token that allows the operation to batch the results of the operation. Batch sizes are 1,000 for list repository operations. When the client sends the token back to AWS CodeCommit, another page of 1,000 records is retrieved.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The order in which to sort the results of a list repositories operation.
     */
-  var order: js.UndefOr[OrderEnum] = js.native
+  var order: js.UndefOr[OrderEnum] = js.undefined
   
   /**
     * The criteria used to sort the results of a list repositories operation.
     */
-  var sortBy: js.UndefOr[SortByEnum] = js.native
+  var sortBy: js.UndefOr[SortByEnum] = js.undefined
 }
 object ListRepositoriesInput {
   

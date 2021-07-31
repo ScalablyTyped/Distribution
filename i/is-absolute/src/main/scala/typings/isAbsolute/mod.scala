@@ -2,20 +2,20 @@ package typings.isAbsolute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   @JSImport("is-absolute", JSImport.Namespace)
   @js.native
-  def apply(path: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("is-absolute", "posix")
-  @js.native
-  def posix(path: String): Boolean = js.native
+  @scala.inline
+  def posix(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("posix")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-absolute", "win32")
-  @js.native
-  def win32(path: String): Boolean = js.native
+  @scala.inline
+  def win32(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("win32")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

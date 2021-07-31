@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the MVCxReportDesigner class.
   */
 @js.native
-trait MVCxClientReportDesigner extends ASPxClientReportDesigner {
+trait MVCxClientReportDesigner
+  extends StObject
+     with ASPxClientReportDesigner {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

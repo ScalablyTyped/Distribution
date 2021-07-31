@@ -2,23 +2,21 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fps extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var fps: Double = js.native
+  var fps: Double
   
-  var leading: Double = js.native
+  var leading: Double
   
-  var loop: Boolean = js.native
+  var loop: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var trailing: Double = js.native
+  var trailing: Double
 }
 object Fps {
   

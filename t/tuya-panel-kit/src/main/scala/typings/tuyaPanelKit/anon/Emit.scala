@@ -8,7 +8,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.linkageTimeUpdate
 import typings.tuyaPanelKit.tuyaPanelKitStrings.networkStateChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,8 +25,7 @@ trait Emit extends StObject {
   
   def on(event: String, callback: AnyFunction): Unit = js.native
   // tslint:disable-next-line no-unnecessary-generics
-  @JSName("on")
-  def on_T[T](event: String, callback: js.Function1[/* args */ T, Unit]): Unit = js.native
+  def on[T](event: String, callback: js.Function1[/* args */ T, Unit]): Unit = js.native
   /**
     * @desc 蓝牙状态变更通知
     */

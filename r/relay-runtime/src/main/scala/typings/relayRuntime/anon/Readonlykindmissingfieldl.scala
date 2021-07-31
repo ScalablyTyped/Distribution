@@ -3,24 +3,22 @@ package typings.relayRuntime.anon
 import typings.relayRuntime.relayRuntimeStrings.missing_fieldDotlog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  kind :'missing_field.log',   owner :string,   fieldPath :string}> */
-@js.native
 trait Readonlykindmissingfieldl extends StObject {
   
-  val fieldPath: String = js.native
+  val fieldPath: String
   
-  val kind: missing_fieldDotlog = js.native
+  val kind: missing_fieldDotlog
   
-  val owner: String = js.native
+  val owner: String
 }
 object Readonlykindmissingfieldl {
   
   @scala.inline
-  def apply(fieldPath: String, kind: missing_fieldDotlog, owner: String): Readonlykindmissingfieldl = {
-    val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any])
+  def apply(fieldPath: String, owner: String): Readonlykindmissingfieldl = {
+    val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], kind = "missing_field.log", owner = owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlykindmissingfieldl]
   }
   

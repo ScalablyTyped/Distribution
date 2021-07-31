@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.ImageSlider
 import typings.html5plus.html5plusStrings.NView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewSubNViewStyles extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 原生子View控件的样式
@@ -30,7 +28,7 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var styles: js.UndefOr[PlusNativeObjViewStyles] = js.native
+  var styles: js.UndefOr[PlusNativeObjViewStyles] = js.undefined
   
   /**
     * 原生子View控件初始绘制内容
@@ -38,7 +36,7 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var tags: js.UndefOr[js.Array[_]] = js.native
+  var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 原生子View控件类型
@@ -55,7 +53,7 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `type`: js.UndefOr[NView | ImageSlider] = js.native
+  var `type`: js.UndefOr[NView | ImageSlider] = js.undefined
 }
 object PlusWebviewWebviewSubNViewStyles {
   
@@ -81,7 +79,7 @@ object PlusWebviewWebviewSubNViewStyles {
     def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
     @scala.inline
-    def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)

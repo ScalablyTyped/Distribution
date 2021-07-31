@@ -2,23 +2,29 @@ package typings.sauronjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceMod {
   
   @JSImport("sauronjs/src/core/service", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Service {
+  class ^ protected ()
+    extends StObject
+       with Service {
     def this(pubs: js.Array[String], subs: js.Array[String]) = this()
+    
+    /* CompleteClass */
+    override def broadcast(event: String, data: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var broadcastSubject: js.Any = js.native
   }
   
-  @js.native
   trait Service extends StObject {
     
-    def broadcast(event: String, data: js.Any): Unit = js.native
+    def broadcast(event: String, data: js.Any): Unit
     
-    var broadcastSubject: js.Any = js.native
+    var broadcastSubject: js.Any
   }
   object Service {
     

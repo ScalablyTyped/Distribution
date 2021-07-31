@@ -10,73 +10,23 @@ import typings.std.Pick
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
   
-  /* Inlined std.Function & {  prototype :T} */
   @js.native
-  trait AbstractConstructor[T] extends StObject {
-    
-    /**
-      * Calls the function, substituting the specified object for the this value of the function, and the specified array for the arguments of the function.
-      * @param thisArg The object to be used as the this object.
-      * @param argArray A set of arguments to be passed to the function.
-      */
-    @JSName("apply")
-    def apply(thisArg: js.Any): js.Any = js.native
-    @JSName("apply")
-    def apply(thisArg: js.Any, argArray: js.Any): js.Any = js.native
-    
-    // Non-standard extensions
-    var arguments: js.Any = js.native
-    
-    /**
-      * For a given function, creates a bound function that has the same body as the original function.
-      * The this object of the bound function is associated with the specified object, and has the specified initial parameters.
-      * @param thisArg An object to which the this keyword can refer inside the new function.
-      * @param argArray A list of arguments to be passed to the new function.
-      */
-    def bind(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
-    
-    /**
-      * Calls a method of an object, substituting another object for the current object.
-      * @param thisArg The object to be used as the current object.
-      * @param argArray A list of arguments to be passed to the method.
-      */
-    def call(thisArg: js.Any, argArray: js.Any*): js.Any = js.native
-    
-    var caller: js.Function = js.native
-    
-    /**
-      * Determines whether the given value inherits from this function if this function was used
-      * as a constructor function.
-      *
-      * A constructor function can control which objects are recognized as its instances by
-      * 'instanceof' by overriding this method.
-      */
-    @JSName(js.Symbol.hasInstance)
-    var hasInstance: js.Function1[/* value */ js.Any, Boolean] = js.native
-    
-    val length: Double = js.native
-    
-    /**
-      * Returns the name of the function. Function names are read-only and can not be changed.
-      */
-    val name: String = js.native
-  }
+  trait AbstractConstructor[T]
+    extends js.Function
   
-  @js.native
   trait AccessorPropertyDescriptor[T] extends StObject {
     
-    var configurable: js.UndefOr[Boolean] = js.native
+    var configurable: js.UndefOr[Boolean] = js.undefined
     
-    var enumerable: js.UndefOr[Boolean] = js.native
+    var enumerable: js.UndefOr[Boolean] = js.undefined
     
-    var get: js.UndefOr[js.Function0[T]] = js.native
+    var get: js.UndefOr[js.Function0[T]] = js.undefined
     
-    var set: js.UndefOr[js.Function1[/* v */ T, Unit]] = js.native
+    var set: js.UndefOr[js.Function1[/* v */ T, Unit]] = js.undefined
   }
   object AccessorPropertyDescriptor {
     
@@ -87,7 +37,7 @@ object distMod {
     }
     
     @scala.inline
-    implicit class AccessorPropertyDescriptorMutableBuilder[Self <: AccessorPropertyDescriptor[_], T] (val x: Self with AccessorPropertyDescriptor[T]) extends AnyVal {
+    implicit class AccessorPropertyDescriptorMutableBuilder[Self <: AccessorPropertyDescriptor[?], T] (val x: Self & AccessorPropertyDescriptor[T]) extends AnyVal {
       
       @scala.inline
       def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
@@ -127,20 +77,13 @@ object distMod {
   
   type AnyKeyof[T] = /* keyof T */ String
   
-  type Assign[A /* <: js.Object */, B /* <: js.Object */] = Reshape[(Diff[A, B]) with B]
+  type Assign[A /* <: js.Object */, B /* <: js.Object */] = Reshape[(Diff[A, B]) & B]
   
   type Conjoin[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in @esfx/type-model.@esfx/type-model/dist.AnyKeyof<T> ]: @esfx/type-model.@esfx/type-model/dist.AnyExtract<T, {readonly [ U in P ]: unknown}>[P]}
-    */ typings.esfxTypeModel.esfxTypeModelStrings.Conjoin with (TopLevel[
-    AnyExtract[
-      T, 
-      /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {readonly [ U in P ]: unknown}
-    */ typings.esfxTypeModel.esfxTypeModelStrings.Conjoin with TopLevel[js.Any]
-    ]
-  ])
+    */ typings.esfxTypeModel.esfxTypeModelStrings.Conjoin & TopLevel[js.Any]
   
-  type Constructor[T, A /* <: js.Array[_] */] = Instantiable1[/* args */ A, T]
+  type Constructor[T, A /* <: js.Array[js.Any] */] = Instantiable1[/* args */ A, T]
   
   type Diff[A /* <: js.Object */, B /* <: js.Object */] = Omit[A, /* keyof B */ String]
   
@@ -160,7 +103,7 @@ object distMod {
   
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
     - typings.esfxTypeModel.esfxTypeModelNumbers.`0`
     - typings.esfxTypeModel.esfxTypeModelStrings._empty
@@ -173,7 +116,7 @@ object distMod {
   
   type GeneratorReturnType[T] = Unit
   
-  type Intersect[A /* <: js.Object */, B /* <: js.Object */] = Pick[A with B, Extract[/* keyof A */ String, /* keyof B */ String]]
+  type Intersect[A /* <: js.Object */, B /* <: js.Object */] = Pick[A & B, Extract[/* keyof A */ String, /* keyof B */ String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
@@ -202,7 +145,8 @@ object distMod {
     - typings.esfxTypeModel.esfxTypeModelBooleans.`true`
   */
   trait IsNever[A]
-    extends IsSubtypeOf[A, js.Any]
+    extends StObject
+       with IsSubtypeOf[A, js.Any]
        with SameType[js.Any, A]
   
   /* Rewritten from type alias, can be one of: 
@@ -241,27 +185,26 @@ object distMod {
   
   type MatchingKeys[T, TMatch] = _MatchingKeys[T, TMatch, /* keyof T */ String]
   
-  @js.native
-  trait MethodPropertyDescriptor[T /* <: js.Function1[/* repeated */ js.Any, _] */] extends StObject {
+  trait MethodPropertyDescriptor[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] extends StObject {
     
-    var configurable: js.UndefOr[Boolean] = js.native
+    var configurable: js.UndefOr[Boolean] = js.undefined
     
-    var enumerable: js.UndefOr[Boolean] = js.native
+    var enumerable: js.UndefOr[Boolean] = js.undefined
     
-    var value: T = js.native
+    var value: T
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object MethodPropertyDescriptor {
     
     @scala.inline
-    def apply[T /* <: js.Function1[/* repeated */ js.Any, _] */](value: T): MethodPropertyDescriptor[T] = {
+    def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](value: T): MethodPropertyDescriptor[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MethodPropertyDescriptor[T]]
     }
     
     @scala.inline
-    implicit class MethodPropertyDescriptorMutableBuilder[Self <: MethodPropertyDescriptor[_], T /* <: js.Function1[/* repeated */ js.Any, _] */] (val x: Self with MethodPropertyDescriptor[T]) extends AnyVal {
+    implicit class MethodPropertyDescriptorMutableBuilder[Self <: MethodPropertyDescriptor[?], T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] (val x: Self & MethodPropertyDescriptor[T]) extends AnyVal {
       
       @scala.inline
       def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
@@ -288,7 +231,7 @@ object distMod {
   
   type Mutable[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {-readonly [ P in keyof T ]: T[P]}
-    */ typings.esfxTypeModel.esfxTypeModelStrings.Mutable with TopLevel[T]
+    */ typings.esfxTypeModel.esfxTypeModelStrings.Mutable & TopLevel[T]
   
   type NonFunctionKeys[T, F /* <: js.Function */] = NonMatchingKeys[T, F]
   
@@ -350,7 +293,7 @@ object distMod {
   */
   trait SameType[A, B] extends StObject
   
-  type SameTypes[L /* <: js.Array[_] */] = SameType[
+  type SameTypes[L /* <: js.Array[js.Any] */] = SameType[
     /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof L ]: @esfx/type-model.@esfx/type-model/dist.SameType<L[P], L[number]>}[number] */ js.Any, 
     `true`
   ]
@@ -375,7 +318,9 @@ object distMod {
     - typings.esfxTypeModel.esfxTypeModelBooleans.`false`
     - typings.esfxTypeModel.esfxTypeModelBooleans.`true`
   */
-  trait _IsSubsetOf[Sub, Super] extends _IsProperSubsetOf[Sub, Super]
+  trait _IsSubsetOf[Sub, Super]
+    extends StObject
+       with _IsProperSubsetOf[Sub, Super]
   
   type _MatchingKeys[T, TSuper, K /* <: /* keyof T */ String */] = K
   

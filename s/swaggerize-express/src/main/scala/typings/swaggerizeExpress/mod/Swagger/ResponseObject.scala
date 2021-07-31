@@ -2,19 +2,19 @@ package typings.swaggerizeExpress.mod.Swagger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponseObject extends Response {
+trait ResponseObject
+  extends StObject
+     with Response {
   
-  var description: String = js.native
+  var description: String
   
-  var examples: js.UndefOr[ExampleObject] = js.native
+  var examples: js.UndefOr[ExampleObject] = js.undefined
   
-  var headers: js.UndefOr[HeadersObject] = js.native
+  var headers: js.UndefOr[HeadersObject] = js.undefined
   
-  var schema: js.UndefOr[SchemaObject] = js.native
+  var schema: js.UndefOr[SchemaObject] = js.undefined
 }
 object ResponseObject {
   

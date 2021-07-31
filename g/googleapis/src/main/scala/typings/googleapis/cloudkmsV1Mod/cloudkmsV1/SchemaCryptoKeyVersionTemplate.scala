@@ -2,7 +2,6 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * new CryptoKeyVersion, either manually with CreateCryptoKeyVersion or
   * automatically as a result of auto-rotation.
   */
-@js.native
 trait SchemaCryptoKeyVersionTemplate extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaCryptoKeyVersionTemplate extends StObject {
     * implied if both this field is omitted and CryptoKey.purpose is
     * ENCRYPT_DECRYPT.
     */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * ProtectionLevel to use when creating a CryptoKeyVersion based on this
     * template. Immutable. Defaults to SOFTWARE.
     */
-  var protectionLevel: js.UndefOr[String] = js.native
+  var protectionLevel: js.UndefOr[String] = js.undefined
 }
 object SchemaCryptoKeyVersionTemplate {
   

@@ -4,33 +4,31 @@ import typings.xterm.xtermStrings.alternate
 import typings.xterm.xtermStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a terminal buffer.
   */
-@js.native
 trait IBuffer extends StObject {
   
   /**
     * The line within the buffer where the top of the bottom page is (when
     * fully scrolled down).
     */
-  val baseY: Double = js.native
+  val baseY: Double
   
   /**
     * The x position of the cursor. This ranges between `0` (left side) and
     * `Terminal.cols` (after last cell of the row).
     */
-  val cursorX: Double = js.native
+  val cursorX: Double
   
   /**
     * The y position of the cursor. This ranges between `0` (when the
     * cursor is at baseY) and `Terminal.rows - 1` (when the cursor is on the
     * last row).
     */
-  val cursorY: Double = js.native
+  val cursorY: Double
   
   /**
     * Gets a line from the buffer, or undefined if the line index does not
@@ -42,29 +40,29 @@ trait IBuffer extends StObject {
     *
     * @param y The line index to get.
     */
-  def getLine(y: Double): js.UndefOr[IBufferLine] = js.native
+  def getLine(y: Double): js.UndefOr[IBufferLine]
   
   /**
     * Creates an empty cell object suitable as a cell reference in
     * `line.getCell(x, cell)`. Use this to avoid costly recreation of
     * cell objects when dealing with tons of cells.
     */
-  def getNullCell(): IBufferCell = js.native
+  def getNullCell(): IBufferCell
   
   /**
     * The amount of lines in the buffer.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * The type of the buffer.
     */
-  val `type`: normal | alternate = js.native
+  val `type`: normal | alternate
   
   /**
     * The line within the buffer where the top of the viewport is.
     */
-  val viewportY: Double = js.native
+  val viewportY: Double
 }
 object IBuffer {
   

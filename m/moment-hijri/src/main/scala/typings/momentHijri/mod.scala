@@ -15,45 +15,54 @@ import typings.momentHijri.mod.momentAugmentingMod.iConvert.GregorianResult
 import typings.momentHijri.mod.momentAugmentingMod.iConvert.HijriResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: String,
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(inp: js.UndefOr[MomentInput], strict: Boolean): Moment = js.native
-  @JSImport("moment-hijri", JSImport.Namespace)
-  @js.native
-  def apply(inp: MomentInput): Moment = js.native
+  @scala.inline
+  def apply(): Moment = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def apply(inp: MomentInput, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].apply(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
   @JSImport("moment-hijri", JSImport.Namespace)
   @js.native
@@ -133,9 +142,8 @@ object mod {
   @scala.inline
   def RFC_2822_=(x: MomentBuiltinFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RFC_2822")(x.asInstanceOf[js.Any])
   
-  @JSImport("moment-hijri", "calendarFormat")
-  @js.native
-  def calendarFormat(m: Moment, now: Moment): String = js.native
+  @scala.inline
+  def calendarFormat(m: Moment, now: Moment): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calendarFormat")(m.asInstanceOf[js.Any], now.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("moment-hijri", "defaultFormat")
   @js.native
@@ -150,12 +158,10 @@ object mod {
   @scala.inline
   def defaultFormat_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFormat")(x.asInstanceOf[js.Any])
   
-  @JSImport("moment-hijri", "defineLocale")
-  @js.native
-  def defineLocale(language: String, localeSpec: Unit): Locale_ = js.native
-  @JSImport("moment-hijri", "defineLocale")
-  @js.native
-  def defineLocale(language: String, localeSpec: LocaleSpecification): Locale_ = js.native
+  @scala.inline
+  def defineLocale(language: String, localeSpec: Unit): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
+  @scala.inline
+  def defineLocale(language: String, localeSpec: LocaleSpecification): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("defineLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
   
   @JSImport("moment-hijri", "deprecationHandler")
   @js.native
@@ -163,15 +169,14 @@ object mod {
   @scala.inline
   def deprecationHandler_=(x: (js.Function2[/* name */ String | Unit, /* msg */ String, Unit]) | Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecationHandler")(x.asInstanceOf[js.Any])
   
-  @JSImport("moment-hijri", "duration")
-  @js.native
-  def duration(): Duration_ = js.native
-  @JSImport("moment-hijri", "duration")
-  @js.native
-  def duration(inp: js.UndefOr[DurationInputArg1], unit: DurationInputArg2): Duration_ = js.native
-  @JSImport("moment-hijri", "duration")
-  @js.native
-  def duration(inp: DurationInputArg1): Duration_ = js.native
+  @scala.inline
+  def duration(): Duration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[Duration_]
+  @scala.inline
+  def duration(inp: Unit, unit: DurationInputArg2): Duration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration_]
+  @scala.inline
+  def duration(inp: DurationInputArg1): Duration_ = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any]).asInstanceOf[Duration_]
+  @scala.inline
+  def duration(inp: DurationInputArg1, unit: DurationInputArg2): Duration_ = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(inp.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration_]
   
   @JSImport("moment-hijri", "fn")
   @js.native
@@ -181,122 +186,104 @@ object mod {
   
   object iConvert {
     
-    @JSImport("moment-hijri", "iConvert.toGregorian")
+    @JSImport("moment-hijri", "iConvert")
     @js.native
-    def toGregorian(hy: Double, hm: Double, hd: Double): GregorianResult = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("moment-hijri", "iConvert.toHijri")
-    @js.native
-    def toHijri(gy: Double, gm: Double, gd: Double): HijriResult = js.native
+    @scala.inline
+    def toGregorian(hy: Double, hm: Double, hd: Double): GregorianResult = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(hy.asInstanceOf[js.Any], hm.asInstanceOf[js.Any], hd.asInstanceOf[js.Any])).asInstanceOf[GregorianResult]
+    
+    @scala.inline
+    def toHijri(gy: Double, gm: Double, gd: Double): HijriResult = (^.asInstanceOf[js.Dynamic].applyDynamic("toHijri")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[HijriResult]
   }
   
-  @JSImport("moment-hijri", "iDaysInMonth")
-  @js.native
-  def iDaysInMonth(year: Double, month: Double): Double = js.native
+  @scala.inline
+  def iDaysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("iDaysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("moment-hijri", "invalid")
-  @js.native
-  def invalid(): Moment = js.native
-  @JSImport("moment-hijri", "invalid")
-  @js.native
-  def invalid(flags: MomentParsingFlagsOpt): Moment = js.native
+  @scala.inline
+  def invalid(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")().asInstanceOf[Moment]
+  @scala.inline
+  def invalid(flags: MomentParsingFlagsOpt): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(flags.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  @JSImport("moment-hijri", "isDate")
-  @js.native
-  def isDate(m: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def isDate(m: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(m.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  @JSImport("moment-hijri", "isDuration")
-  @js.native
-  def isDuration(d: js.Any): /* is moment.moment.Duration */ Boolean = js.native
+  @scala.inline
+  def isDuration(d: js.Any): /* is moment.moment.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Duration */ Boolean]
   
-  @JSImport("moment-hijri", "isMoment")
-  @js.native
-  def isMoment(m: js.Any): /* is moment.moment.Moment */ Boolean = js.native
+  @scala.inline
+  def isMoment(m: js.Any): /* is moment.moment.Moment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(m.asInstanceOf[js.Any]).asInstanceOf[/* is moment.moment.Moment */ Boolean]
   
-  @JSImport("moment-hijri", "lang")
-  @js.native
-  def lang(): String = js.native
-  @JSImport("moment-hijri", "lang")
-  @js.native
-  def lang(language: js.UndefOr[scala.Nothing], definition: Locale_): String = js.native
-  @JSImport("moment-hijri", "lang")
-  @js.native
-  def lang(language: String): String = js.native
-  @JSImport("moment-hijri", "lang")
-  @js.native
-  def lang(language: String, definition: Locale_): String = js.native
+  @scala.inline
+  def lang(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")().asInstanceOf[String]
+  @scala.inline
+  def lang(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def lang(language: String, definition: Locale_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def lang(language: Unit, definition: Locale_): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lang")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: js.UndefOr[scala.Nothing], definition: Unit): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: js.UndefOr[scala.Nothing], definition: LocaleSpecification): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: String): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: String, definition: Unit): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: String, definition: LocaleSpecification): String = js.native
-  @JSImport("moment-hijri", "locale")
-  @js.native
-  def locale(language: js.Array[String]): String = js.native
+  @scala.inline
+  def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+  @scala.inline
+  def locale(language: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def locale(language: String, definition: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(language: String, definition: LocaleSpecification): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(language: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def locale(language: Unit, definition: Unit): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(language: Unit, definition: LocaleSpecification): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(language.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "localeData")
-  @js.native
-  def localeData(): Locale_ = js.native
-  @JSImport("moment-hijri", "localeData")
-  @js.native
-  def localeData(key: String): Locale_ = js.native
-  @JSImport("moment-hijri", "localeData")
-  @js.native
-  def localeData(key: js.Array[String]): Locale_ = js.native
+  @scala.inline
+  def localeData(): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[Locale_]
+  @scala.inline
+  def localeData(key: String): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[Locale_]
+  @scala.inline
+  def localeData(key: js.Array[String]): Locale_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")(key.asInstanceOf[js.Any]).asInstanceOf[Locale_]
   
-  @JSImport("moment-hijri", "locales")
-  @js.native
-  def locales(): js.Array[String] = js.native
+  @scala.inline
+  def locales(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("locales")().asInstanceOf[js.Array[String]]
   
-  @JSImport("moment-hijri", "max")
-  @js.native
-  def max(moments: Moment*): Moment = js.native
-  @JSImport("moment-hijri", "max")
-  @js.native
-  def max(moments: js.Array[Moment]): Moment = js.native
+  @scala.inline
+  def max(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def max(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  @JSImport("moment-hijri", "min")
-  @js.native
-  def min(moments: Moment*): Moment = js.native
-  @JSImport("moment-hijri", "min")
-  @js.native
-  def min(moments: js.Array[Moment]): Moment = js.native
+  @scala.inline
+  def min(moments: Moment*): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def min(moments: js.Array[Moment]): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(moments.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
   /* augmented module */
   object momentAugmentingMod {
     
+    @JSImport("moment", JSImport.Namespace)
+    @js.native
+    val ^ : js.Any = js.native
+    
     object iConvert {
       
-      @JSImport("moment", "iConvert.toGregorian")
+      @JSImport("moment", "iConvert")
       @js.native
-      def toGregorian(hy: Double, hm: Double, hd: Double): GregorianResult = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("moment", "iConvert.toHijri")
-      @js.native
-      def toHijri(gy: Double, gm: Double, gd: Double): HijriResult = js.native
+      @scala.inline
+      def toGregorian(hy: Double, hm: Double, hd: Double): GregorianResult = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(hy.asInstanceOf[js.Any], hm.asInstanceOf[js.Any], hd.asInstanceOf[js.Any])).asInstanceOf[GregorianResult]
       
-      @js.native
+      @scala.inline
+      def toHijri(gy: Double, gm: Double, gd: Double): HijriResult = (^.asInstanceOf[js.Dynamic].applyDynamic("toHijri")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[HijriResult]
+      
       trait GregorianResult extends StObject {
         
-        var gd: Double = js.native
+        var gd: Double
         
-        var gm: Double = js.native
+        var gm: Double
         
-        var gy: Double = js.native
+        var gy: Double
       }
       object GregorianResult {
         
@@ -320,14 +307,13 @@ object mod {
         }
       }
       
-      @js.native
       trait HijriResult extends StObject {
         
-        var hd: Double = js.native
+        var hd: Double
         
-        var hm: Double = js.native
+        var hm: Double
         
-        var hy: Double = js.native
+        var hy: Double
       }
       object HijriResult {
         
@@ -352,9 +338,8 @@ object mod {
       }
     }
     
-    @JSImport("moment", "iDaysInMonth")
-    @js.native
-    def iDaysInMonth(year: Double, month: Double): Double = js.native
+    @scala.inline
+    def iDaysInMonth(year: Double, month: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("iDaysInMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.momentHijri.momentHijriStrings.iYear
@@ -406,89 +391,83 @@ object mod {
     }
   }
   
-  @JSImport("moment-hijri", "months")
-  @js.native
-  def months(): js.Array[String] = js.native
-  @JSImport("moment-hijri", "months")
-  @js.native
-  def months(format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "months")
-  @js.native
-  def months(format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "months")
-  @js.native
-  def months(index: Double): String = js.native
+  @scala.inline
+  def months(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def months(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def months(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("months")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def months(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("months")(index.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "monthsShort")
-  @js.native
-  def monthsShort(): js.Array[String] = js.native
-  @JSImport("moment-hijri", "monthsShort")
-  @js.native
-  def monthsShort(format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "monthsShort")
-  @js.native
-  def monthsShort(format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "monthsShort")
-  @js.native
-  def monthsShort(index: Double): String = js.native
+  @scala.inline
+  def monthsShort(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def monthsShort(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def monthsShort(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def monthsShort(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")(index.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "normalizeUnits")
-  @js.native
-  def normalizeUnits(unit: All): String = js.native
+  @scala.inline
+  def normalizeUnits(unit: All): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUnits")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "now")
-  @js.native
-  def now(): Double = js.native
+  @scala.inline
+  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @JSImport("moment-hijri", "parseTwoDigitYear")
-  @js.native
-  def parseTwoDigitYear(input: String): Double = js.native
+  @scala.inline
+  def parseTwoDigitYear(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTwoDigitYear")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: String,
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
-  @JSImport("moment-hijri", "parseZone")
-  @js.native
-  def parseZone(inp: MomentInput): Moment = js.native
+  @scala.inline
+  def parseZone(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")().asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def parseZone(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("parseZone")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
-  @JSImport("moment-hijri", "relativeTimeRounding")
-  @js.native
-  def relativeTimeRounding(): js.Function1[/* num */ Double, Double] = js.native
-  @JSImport("moment-hijri", "relativeTimeRounding")
-  @js.native
-  def relativeTimeRounding(fn: js.Function1[/* num */ Double, Double]): Boolean = js.native
+  @scala.inline
+  def relativeTimeRounding(): js.Function1[/* num */ Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")().asInstanceOf[js.Function1[/* num */ Double, Double]]
+  @scala.inline
+  def relativeTimeRounding(fn: js.Function1[/* num */ Double, Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeRounding")(fn.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("moment-hijri", "relativeTimeThreshold")
-  @js.native
-  def relativeTimeThreshold(threshold: String): Double | Boolean = js.native
-  @JSImport("moment-hijri", "relativeTimeThreshold")
-  @js.native
-  def relativeTimeThreshold(threshold: String, limit: Double): Boolean = js.native
+  @scala.inline
+  def relativeTimeThreshold(threshold: String): Double | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any]).asInstanceOf[Double | Boolean]
+  @scala.inline
+  def relativeTimeThreshold(threshold: String, limit: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTimeThreshold")(threshold.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("moment-hijri", "suppressDeprecationWarnings")
   @js.native
@@ -496,51 +475,58 @@ object mod {
   @scala.inline
   def suppressDeprecationWarnings_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("suppressDeprecationWarnings")(x.asInstanceOf[js.Any])
   
-  @JSImport("moment-hijri", "unix")
-  @js.native
-  def unix(timestamp: Double): Moment = js.native
+  @scala.inline
+  def unix(timestamp: Double): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Moment]
   
-  @JSImport("moment-hijri", "updateLocale")
-  @js.native
-  def updateLocale(language: String, localeSpec: Unit): Locale_ = js.native
-  @JSImport("moment-hijri", "updateLocale")
-  @js.native
-  def updateLocale(language: String, localeSpec: LocaleSpecification): Locale_ = js.native
+  @scala.inline
+  def updateLocale(language: String, localeSpec: Unit): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
+  @scala.inline
+  def updateLocale(language: String, localeSpec: LocaleSpecification): Locale_ = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(language.asInstanceOf[js.Any], localeSpec.asInstanceOf[js.Any])).asInstanceOf[Locale_]
   
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], language: String): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(
-    inp: js.UndefOr[MomentInput],
-    format: js.UndefOr[MomentFormatSpecification],
-    language: String,
-    strict: Boolean
-  ): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(inp: js.UndefOr[MomentInput], format: js.UndefOr[MomentFormatSpecification], strict: Boolean): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(inp: js.UndefOr[MomentInput], format: MomentFormatSpecification): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(inp: js.UndefOr[MomentInput], strict: Boolean): Moment = js.native
-  @JSImport("moment-hijri", "utc")
-  @js.native
-  def utc(inp: MomentInput): Moment = js.native
+  @scala.inline
+  def utc(): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput): Moment = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any]).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: Unit, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: Unit, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: Unit, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: MomentFormatSpecification): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: MomentFormatSpecification, language: String): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: MomentFormatSpecification, language: String, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: MomentFormatSpecification, language: Unit, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], language.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, format: MomentFormatSpecification, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
+  @scala.inline
+  def utc(inp: MomentInput, strict: Boolean): Moment = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(inp.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Moment]
   
   @JSImport("moment-hijri", "version")
   @js.native
@@ -548,78 +534,54 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(localeSorted: Boolean): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(localeSorted: Boolean, format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(localeSorted: Boolean, format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdays")
-  @js.native
-  def weekdays(localeSorted: Boolean, index: Double): String = js.native
+  @scala.inline
+  def weekdays(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdays(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdays(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdays(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def weekdays(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdays(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdays(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdays(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(localeSorted: Boolean): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(localeSorted: Boolean, format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(localeSorted: Boolean, format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysMin")
-  @js.native
-  def weekdaysMin(localeSorted: Boolean, index: Double): String = js.native
+  @scala.inline
+  def weekdaysMin(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysMin(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysMin(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdaysMin(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def weekdaysMin(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysMin(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysMin(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdaysMin(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(localeSorted: Boolean): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(localeSorted: Boolean, format: String): js.Array[String] = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(localeSorted: Boolean, format: String, index: Double): String = js.native
-  @JSImport("moment-hijri", "weekdaysShort")
-  @js.native
-  def weekdaysShort(localeSorted: Boolean, index: Double): String = js.native
+  @scala.inline
+  def weekdaysShort(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysShort(format: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysShort(format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdaysShort(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def weekdaysShort(localeSorted: Boolean): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysShort(localeSorted: Boolean, format: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def weekdaysShort(localeSorted: Boolean, format: String, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], format.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def weekdaysShort(localeSorted: Boolean, index: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localeSorted.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[String]
 }

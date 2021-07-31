@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BluetoothDevice extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/bluetooth-device
-  var deviceId: String = js.native
+  var deviceId: String
   
-  var deviceName: String = js.native
+  var deviceName: String
 }
 object BluetoothDevice {
   

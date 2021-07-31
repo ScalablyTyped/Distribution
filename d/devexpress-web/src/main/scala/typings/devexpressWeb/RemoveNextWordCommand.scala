@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to remove the next word.
   */
-@js.native
-trait RemoveNextWordCommand extends CommandWithSimpleStateBase {
+trait RemoveNextWordCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the RemoveNextWordCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object RemoveNextWordCommand {
   

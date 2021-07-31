@@ -2,17 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeoutIntervalOptions extends StObject {
   
-  var locationMode: js.UndefOr[String] = js.native
+  var locationMode: js.UndefOr[String] = js.undefined
   
-  var maximumExecutionTimeInMs: js.UndefOr[Double] = js.native
+  var maximumExecutionTimeInMs: js.UndefOr[Double] = js.undefined
   
-  var timeoutIntervalInMs: js.UndefOr[Double] = js.native
+  var timeoutIntervalInMs: js.UndefOr[Double] = js.undefined
 }
 object TimeoutIntervalOptions {
   

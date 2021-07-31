@@ -3,14 +3,12 @@ package typings.semanticUiSearch.anon
 import typings.semanticUiSearch.SemanticUI.Search.MetadataSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.SearchSettings._Impl, 'metadata'> */
-@js.native
 trait PickImplmetadata extends StObject {
   
-  var metadata: MetadataSettings = js.native
+  var metadata: MetadataSettings
 }
 object PickImplmetadata {
   

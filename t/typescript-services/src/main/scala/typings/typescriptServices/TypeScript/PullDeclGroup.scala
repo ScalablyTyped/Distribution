@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullDeclGroup extends StObject {
   
-  var _decls: js.Any = js.native
+  var _decls: js.Any
   
-  def addDecl(decl: PullDecl): Unit = js.native
+  def addDecl(decl: PullDecl): Unit
   
-  def getDecls(): js.Array[PullDecl] = js.native
+  def getDecls(): js.Array[PullDecl]
   
-  var name: String = js.native
+  var name: String
 }
 object PullDeclGroup {
   

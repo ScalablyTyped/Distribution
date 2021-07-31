@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSettingsGroupby
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,19 +16,19 @@ trait DataSourceSettingsGroupby
     * Default collapse state
     *
     */
-  var defaultCollapseState: js.UndefOr[Boolean] = js.native
+  var defaultCollapseState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the property that determines whether a record from the group data view is a group record.
     *
     */
-  var groupRecordKey: js.UndefOr[String] = js.native
+  var groupRecordKey: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the property that determines whether a record from the group data view is a summary group record.
     *
     */
-  var groupSummaryRecordKey: js.UndefOr[String] = js.native
+  var groupSummaryRecordKey: js.UndefOr[String] = js.undefined
   
   /**
     * . Specifies how paging should be applied when there is at least one grouped column
@@ -39,14 +38,14 @@ trait DataSourceSettingsGroupby
     * "allRecords" Paging is applied for all records - data and non-data records(like group-by records)
     * "dataRecordsOnly" Paging is applied ONLY for data records. Non-data records are disregarded in paging calculations.
     */
-  var pagingMode: js.UndefOr[String] = js.native
+  var pagingMode: js.UndefOr[String] = js.undefined
   
   /**
     * Array of objects containing the summaries for each field.
     * Each summary object has the following format { field:"fieldName", summaryFunctions: [] }, where the summaryFunctions arrays can contain either a summary name (avg, sum, count etc.) or a custom function for caclulating a custom summary.
     *
     */
-  var summaries: js.UndefOr[js.Array[_]] = js.native
+  var summaries: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Specifies the postion for the summaries for each field inside each group.
@@ -57,7 +56,7 @@ trait DataSourceSettingsGroupby
     * "bottom"  One summary row will be displayed at the bottom for each group
     * "both" Two summary rows will be be display for each group. One on the top and one on the bottom.
     */
-  var summariesPosition: js.UndefOr[String] = js.native
+  var summariesPosition: js.UndefOr[String] = js.undefined
 }
 object DataSourceSettingsGroupby {
   
@@ -95,7 +94,7 @@ object DataSourceSettingsGroupby {
     def setPagingModeUndefined: Self = StObject.set(x, "pagingMode", js.undefined)
     
     @scala.inline
-    def setSummaries(value: js.Array[_]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    def setSummaries(value: js.Array[js.Any]): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSummariesPosition(value: String): Self = StObject.set(x, "summariesPosition", value.asInstanceOf[js.Any])

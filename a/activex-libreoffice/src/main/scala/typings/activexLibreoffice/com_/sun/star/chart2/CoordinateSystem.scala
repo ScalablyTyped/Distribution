@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoordinateSystem
-  extends XCoordinateSystem
+  extends StObject
+     with XCoordinateSystem
      with XChartTypeContainer
      with XCloneable {
   
-  var SwapXAndYAxis: Boolean = js.native
+  var SwapXAndYAxis: Boolean
 }
 object CoordinateSystem {
   

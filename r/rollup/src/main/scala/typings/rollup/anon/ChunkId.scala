@@ -3,17 +3,15 @@ package typings.rollup.anon
 import typings.rollup.mod.InternalModuleFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkId extends StObject {
   
-  var chunkId: String = js.native
+  var chunkId: String
   
-  var format: InternalModuleFormat = js.native
+  var format: InternalModuleFormat
   
-  var moduleId: String = js.native
+  var moduleId: String
 }
 object ChunkId {
   

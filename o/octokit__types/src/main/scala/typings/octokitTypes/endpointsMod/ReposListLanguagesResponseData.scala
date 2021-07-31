@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListLanguagesResponseData extends StObject {
   
-  var C: Double = js.native
+  var C: Double
   
-  var Python: Double = js.native
+  var Python: Double
 }
 object ReposListLanguagesResponseData {
   

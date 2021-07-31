@@ -2,7 +2,6 @@ package typings.postmark
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inboundRuleMod {
@@ -15,12 +14,11 @@ object inboundRuleMod {
     var Rule: String = js.native
   }
   
-  @js.native
   trait InboundRule extends StObject {
     
-    var ID: Double = js.native
+    var ID: Double
     
-    var Rule: String = js.native
+    var Rule: String
   }
   object InboundRule {
     
@@ -41,12 +39,11 @@ object inboundRuleMod {
     }
   }
   
-  @js.native
   trait InboundRules extends StObject {
     
-    var InboundRules: js.Array[InboundRule] = js.native
+    var InboundRules: js.Array[InboundRule]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object InboundRules {
     

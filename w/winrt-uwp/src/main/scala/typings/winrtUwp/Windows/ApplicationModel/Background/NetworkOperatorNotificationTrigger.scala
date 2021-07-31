@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile network operator notification trigger. */
-@js.native
 trait NetworkOperatorNotificationTrigger extends StObject {
   
   /** Gets the account identifier for the mobile network operator notification trigger. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
 }
 object NetworkOperatorNotificationTrigger {
   

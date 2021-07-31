@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.EnrollmentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyEnrollmentResponse extends StObject {
   
-  var body: EnrollmentResponse = js.native
+  var body: EnrollmentResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse
 }
 object BodyEnrollmentResponse {
   
   @scala.inline
-  def apply(
-    body: EnrollmentResponse,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.EnrollmentResponse
-  ): BodyEnrollmentResponse = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: EnrollmentResponse): BodyEnrollmentResponse = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "EnrollmentResponse")
     __obj.asInstanceOf[BodyEnrollmentResponse]
   }
   

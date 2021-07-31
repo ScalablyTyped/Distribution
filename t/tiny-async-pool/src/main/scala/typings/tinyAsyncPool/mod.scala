@@ -2,7 +2,6 @@ package typings.tinyAsyncPool
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,11 +20,14 @@ object mod {
     * @template IN Type of the input array
     * @template OUT Type of the resolves of the promises
     */
-  @JSImport("tiny-async-pool", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[IN, OUT](
     poolLimit: Double,
     array: js.Array[IN],
     iteratorFn: js.Function1[/* generator */ IN, js.Promise[OUT]]
-  ): js.Promise[js.Array[OUT]] = js.native
+  ): js.Promise[js.Array[OUT]] = (^.asInstanceOf[js.Dynamic].apply(poolLimit.asInstanceOf[js.Any], array.asInstanceOf[js.Any], iteratorFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[OUT]]]
+  
+  @JSImport("tiny-async-pool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

@@ -2,26 +2,24 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountBusinessInformation extends StObject {
   
   /**
     * The address of the business.
     */
-  var address: js.UndefOr[SchemaAccountAddress] = js.native
+  var address: js.UndefOr[SchemaAccountAddress] = js.undefined
   
   /**
     * The customer service information of the business.
     */
-  var customerService: js.UndefOr[SchemaAccountCustomerService] = js.native
+  var customerService: js.UndefOr[SchemaAccountCustomerService] = js.undefined
   
   /**
     * The phone number of the business.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountBusinessInformation {
   

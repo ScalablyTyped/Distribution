@@ -2,17 +2,15 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LCauseFlag extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val lCauseFlag: Double = js.native
+  val lCauseFlag: Double
   
-  val pWB2: js.Any = js.native
+  val pWB2: js.Any
 }
 object LCauseFlag {
   

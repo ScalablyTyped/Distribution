@@ -5,17 +5,15 @@ import typings.yarnpkgLockfile.yarnpkgLockfileStrings.merge
 import typings.yarnpkgLockfile.yarnpkgLockfileStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Object extends StObject {
     
-    var `object`: js.Any = js.native
+    var `object`: js.Any
     
-    var `type`: success | merge | conflict = js.native
+    var `type`: success | merge | conflict
   }
   object Object {
     

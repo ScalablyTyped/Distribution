@@ -1,47 +1,45 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.antiope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   ref :string,   app_id :number | undefined,   check_name :string | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksListSuitesForRefEndpoint extends StObject {
+trait ChecksListSuitesForRefEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
   /**
     * Filters check suites by GitHub App `id`.
     */
-  var app_id: js.UndefOr[Double] = js.native
+  var app_id: js.UndefOr[Double] = js.undefined
   
   /**
     * Filters checks suites by the name of the [check run](https://developer.github.com/v3/checks/runs/).
     */
-  var check_name: js.UndefOr[String] = js.native
+  var check_name: js.UndefOr[String] = js.undefined
   
-  var mediaType: `2` = js.native
-  
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ChecksListSuitesForRefEndpoint {
   
   @scala.inline
-  def apply(mediaType: `2`, owner: String, ref: String, repo: String): ChecksListSuitesForRefEndpoint = {
+  def apply(mediaType: `0`[antiope], owner: String, ref: String, repo: String): ChecksListSuitesForRefEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksListSuitesForRefEndpoint]
   }
@@ -60,9 +58,6 @@ object ChecksListSuitesForRefEndpoint {
     
     @scala.inline
     def setCheck_nameUndefined: Self = StObject.set(x, "check_name", js.undefined)
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

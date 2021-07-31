@@ -6,7 +6,6 @@ import typings.sentryBrowser.anon.PartialTryCatchOptions
 import typings.sentryBrowser.globalhandlersMod.GlobalHandlersIntegrations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationsMod {

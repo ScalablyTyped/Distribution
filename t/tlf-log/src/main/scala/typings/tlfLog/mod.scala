@@ -2,90 +2,73 @@ package typings.tlfLog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tlf-log", "_addLevel")
+  @JSImport("tlf-log", JSImport.Namespace)
   @js.native
-  def addLevel(name: String, opts: NewLevelAfter): Unit = js.native
-  @JSImport("tlf-log", "_addLevel")
-  @js.native
-  def addLevel(name: String, opts: NewLevelBefore): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tlf-log", "debug")
-  @js.native
-  def debug(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def addLevel(name: String, opts: NewLevelAfter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addLevel")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addLevel(name: String, opts: NewLevelBefore): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_addLevel")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "debug_")
-  @js.native
-  def debug_(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def debug(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "_deindent")
-  @js.native
-  def deindent(): Unit = js.native
+  @scala.inline
+  def debug_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "_deprefix")
-  @js.native
-  def deprefix(): Unit = js.native
+  @scala.inline
+  def deindent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_deindent")().asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "error")
-  @js.native
-  def error(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def deprefix(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_deprefix")().asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "error_")
-  @js.native
-  def error_(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def error(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "fatal")
-  @js.native
-  def fatal(messages: js.Any*): scala.Nothing = js.native
+  @scala.inline
+  def error_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "fatal_")
-  @js.native
-  def fatal_(messages: js.Any*): scala.Nothing = js.native
+  @scala.inline
+  def fatal(messages: js.Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal")(messages.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @JSImport("tlf-log", "_indent")
-  @js.native
-  def indent(): Unit = js.native
+  @scala.inline
+  def fatal_(messages: js.Any*): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("fatal_")(messages.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @JSImport("tlf-log", "info")
-  @js.native
-  def info(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def indent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_indent")().asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "info_")
-  @js.native
-  def info_(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def info(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "_prefix")
-  @js.native
-  def prefix(str: String): Unit = js.native
+  @scala.inline
+  def info_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "_setLevel")
-  @js.native
-  def setLevel(level: String): Unit = js.native
+  @scala.inline
+  def prefix(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_prefix")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "trace")
-  @js.native
-  def trace(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def setLevel(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "trace_")
-  @js.native
-  def trace_(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def trace(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "warn")
-  @js.native
-  def warn(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def trace_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trace_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("tlf-log", "warn_")
-  @js.native
-  def warn_(messages: js.Any*): Unit = js.native
+  @scala.inline
+  def warn(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def warn_(messages: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn_")(messages.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait NewLevel extends StObject {
     
-    var afterLog: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterLog: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object NewLevel {
     
@@ -106,10 +89,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait NewLevelAfter extends NewLevel {
+  trait NewLevelAfter
+    extends StObject
+       with NewLevel {
     
-    var after: String = js.native
+    var after: String
   }
   object NewLevelAfter {
     
@@ -127,10 +111,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait NewLevelBefore extends NewLevel {
+  trait NewLevelBefore
+    extends StObject
+       with NewLevel {
     
-    var before: String = js.native
+    var before: String
   }
   object NewLevelBefore {
     

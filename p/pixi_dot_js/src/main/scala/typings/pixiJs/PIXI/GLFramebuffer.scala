@@ -4,7 +4,6 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderbuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait GLFramebuffer extends StObject {
   
   /**
@@ -20,52 +18,52 @@ trait GLFramebuffer extends StObject {
     * The contents of that framebuffer are read when we use that renderTexture in sprites
     * @member {PIXI.Framebuffer} PIXI.GLFramebuffer#blitFramebuffer
     */
-  var blitFramebuffer: Framebuffer = js.native
+  var blitFramebuffer: Framebuffer
   
   /**
     * latest known version of framebuffer format
     * @member {number} PIXI.GLFramebuffer#dirtyFormat
     * @protected
     */
-  var dirtyFormat: Double = js.native
+  var dirtyFormat: Double
   
   /**
     * latest known version of framebuffer
     * @member {number} PIXI.GLFramebuffer#dirtyId
     * @protected
     */
-  var dirtyId: Double = js.native
+  var dirtyId: Double
   
   /**
     * latest known version of framebuffer size
     * @member {number} PIXI.GLFramebuffer#dirtySize
     * @protected
     */
-  var dirtySize: Double = js.native
+  var dirtySize: Double
   
   /**
     * The WebGL framebuffer
     * @member {WebGLFramebuffer} PIXI.GLFramebuffer#framebuffer
     */
-  var framebuffer: WebGLFramebuffer = js.native
+  var framebuffer: WebGLFramebuffer
   
   /**
     * In case MSAA, we use this Renderbuffer instead of colorTextures[0] when we write info
     * @member {WebGLRenderbuffer} PIXI.GLFramebuffer#msaaBuffer
     */
-  var msaaBuffer: WebGLRenderbuffer = js.native
+  var msaaBuffer: WebGLRenderbuffer
   
   /**
     * Detected AA samples number
     * @member {PIXI.MSAA_QUALITY} PIXI.GLFramebuffer#multisample
     */
-  var multisample: MSAA_QUALITY = js.native
+  var multisample: MSAA_QUALITY
   
   /**
     * stencil+depth , usually costs 32bits per pixel
     * @member {WebGLRenderbuffer} PIXI.GLFramebuffer#stencil
     */
-  var stencil: WebGLRenderbuffer = js.native
+  var stencil: WebGLRenderbuffer
 }
 object GLFramebuffer {
   

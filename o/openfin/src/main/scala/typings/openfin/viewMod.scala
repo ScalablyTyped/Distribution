@@ -37,31 +37,29 @@ import typings.openfin.webcontentsMod.WindowResourceResponseReceivedEvent
 import typings.openfin.windowMod.WindowNavigationRejectedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
   
-  @js.native
   trait InputEvent extends StObject {
     
-    var altKey: Boolean = js.native
+    var altKey: Boolean
     
-    var code: String = js.native
+    var code: String
     
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var ctrlKey: Boolean = js.native
+    var ctrlKey: Boolean
     
-    var inputType: keyUp | keyDown = js.native
+    var inputType: keyUp | keyDown
     
-    var key: String = js.native
+    var key: String
     
-    var metaKey: Boolean = js.native
+    var metaKey: Boolean
     
-    var repeat: Boolean = js.native
+    var repeat: Boolean
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
   }
   object InputEvent {
     
@@ -115,38 +113,39 @@ object viewMod {
     }
   }
   
-  @js.native
-  trait PropagatedViewEventMapping[Topic, Type] extends BaseEventMap {
+  trait PropagatedViewEventMapping[Topic, Type]
+    extends StObject
+       with BaseEventMap {
     
-    var `view-blurred`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-blurred`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-crashed`: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-crashed`: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-created`: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-created`: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-destroyed`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-destroyed`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-did-change-theme-color`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-did-change-theme-color`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-focused`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-focused`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-hidden`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-hidden`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-hotkey`: InputEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-hotkey`: InputEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-page-favicon-updated`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-page-favicon-updated`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-page-title-updated`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-page-title-updated`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-shown`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-shown`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity
     
-    var `view-target-changed`: (TargetChangedEvent[Topic, Type]) with PropagatedViewIdentity = js.native
+    var `view-target-changed`: (TargetChangedEvent[Topic, Type]) & PropagatedViewIdentity
   }
   object PropagatedViewEventMapping {
     
@@ -154,21 +153,21 @@ object viewMod {
     def apply[Topic, Type](
       listenerRemoved: String,
       newListener: String,
-      `view-blurred`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-crashed`: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-created`: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-destroyed`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-did-change-theme-color`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-focused`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-hidden`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-hotkey`: InputEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-page-favicon-updated`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-page-title-updated`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-shown`: (WindowEvent[Topic, Type]) with PropagatedViewIdentity,
-      `view-target-changed`: (TargetChangedEvent[Topic, Type]) with PropagatedViewIdentity
+      `view-blurred`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-crashed`: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-created`: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-destroyed`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-did-change-theme-color`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-focused`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-hidden`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-hotkey`: InputEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-page-favicon-updated`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-page-title-updated`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-shown`: (WindowEvent[Topic, Type]) & PropagatedViewIdentity,
+      `view-target-changed`: (TargetChangedEvent[Topic, Type]) & PropagatedViewIdentity
     ): PropagatedViewEventMapping[Topic, Type] = {
       val __obj = js.Dynamic.literal(listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any])
       __obj.updateDynamic("view-blurred")(`view-blurred`.asInstanceOf[js.Any])
@@ -190,92 +189,91 @@ object viewMod {
     }
     
     @scala.inline
-    implicit class PropagatedViewEventMappingMutableBuilder[Self <: PropagatedViewEventMapping[_, _], Topic, Type] (val x: Self with (PropagatedViewEventMapping[Topic, Type])) extends AnyVal {
+    implicit class PropagatedViewEventMappingMutableBuilder[Self <: PropagatedViewEventMapping[?, ?], Topic, Type] (val x: Self & (PropagatedViewEventMapping[Topic, Type])) extends AnyVal {
       
       @scala.inline
-      def `setView-blurred`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
+      def `setView-blurred`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-crashed`(value: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
+      def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-created`(value: CrashedEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
+      def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-destroyed`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
+      def `setView-destroyed`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
+      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-focused`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
+      def `setView-focused`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hidden`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
+      def `setView-hidden`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hotkey`(value: InputEvent with (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
+      def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
+      def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
+      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-title-updated`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
+      def `setView-page-title-updated`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
+      def `setView-resource-load-failed`(value: (WindowResourceLoadFailedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
+      def `setView-resource-response-received`(value: (WindowResourceResponseReceivedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-shown`(value: (WindowEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
+      def `setView-shown`(value: (WindowEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-target-changed`(value: (TargetChangedEvent[Topic, Type]) with PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
+      def `setView-target-changed`(value: (TargetChangedEvent[Topic, Type]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined {[ Type in keyof openfin.openfin/_v2/api/events/view.PropagatedViewEventMapping<string, string> ]: openfin.openfin/_v2/api/events/view.PropagatedViewEventMapping<Topic, Type>[Type]} */
-  @js.native
   trait PropagatedViewEvents[Topic] extends StObject {
     
-    var listenerRemoved: String = js.native
+    var listenerRemoved: String
     
-    var newListener: String = js.native
+    var newListener: String
     
-    var `view-blurred`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-blurred`]) with PropagatedViewIdentity = js.native
+    var `view-blurred`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-blurred`]) & PropagatedViewIdentity
     
-    var `view-crashed`: CrashedEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`view-crashed`]) with PropagatedViewIdentity = js.native
+    var `view-crashed`: CrashedEvent & (WindowEvent[Topic, typings.openfin.openfinStrings.`view-crashed`]) & PropagatedViewIdentity
     
-    var `view-created`: CrashedEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`view-created`]) with PropagatedViewIdentity = js.native
+    var `view-created`: CrashedEvent & (WindowEvent[Topic, typings.openfin.openfinStrings.`view-created`]) & PropagatedViewIdentity
     
-    var `view-destroyed`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-destroyed`]) with PropagatedViewIdentity = js.native
+    var `view-destroyed`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-destroyed`]) & PropagatedViewIdentity
     
-    var `view-did-change-theme-color`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-did-change-theme-color`]) with PropagatedViewIdentity = js.native
+    var `view-did-change-theme-color`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-did-change-theme-color`]) & PropagatedViewIdentity
     
-    var `view-focused`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-focused`]) with PropagatedViewIdentity = js.native
+    var `view-focused`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-focused`]) & PropagatedViewIdentity
     
-    var `view-hidden`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-hidden`]) with PropagatedViewIdentity = js.native
+    var `view-hidden`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-hidden`]) & PropagatedViewIdentity
     
-    var `view-hotkey`: InputEvent with (WindowEvent[Topic, typings.openfin.openfinStrings.`view-hotkey`]) with PropagatedViewIdentity = js.native
+    var `view-hotkey`: InputEvent & (WindowEvent[Topic, typings.openfin.openfinStrings.`view-hotkey`]) & PropagatedViewIdentity
     
-    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, typings.openfin.openfinStrings.`view-navigation-rejected`]) with PropagatedViewIdentity = js.native
+    var `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, typings.openfin.openfinStrings.`view-navigation-rejected`]) & PropagatedViewIdentity
     
-    var `view-page-favicon-updated`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-page-favicon-updated`]) with PropagatedViewIdentity = js.native
+    var `view-page-favicon-updated`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-page-favicon-updated`]) & PropagatedViewIdentity
     
-    var `view-page-title-updated`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-page-title-updated`]) with PropagatedViewIdentity = js.native
+    var `view-page-title-updated`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-page-title-updated`]) & PropagatedViewIdentity
     
-    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, typings.openfin.openfinStrings.`view-resource-load-failed`]) with PropagatedViewIdentity = js.native
+    var `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, typings.openfin.openfinStrings.`view-resource-load-failed`]) & PropagatedViewIdentity
     
-    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, typings.openfin.openfinStrings.`view-resource-response-received`]) with PropagatedViewIdentity = js.native
+    var `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, typings.openfin.openfinStrings.`view-resource-response-received`]) & PropagatedViewIdentity
     
-    var `view-shown`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-shown`]) with PropagatedViewIdentity = js.native
+    var `view-shown`: (WindowEvent[Topic, typings.openfin.openfinStrings.`view-shown`]) & PropagatedViewIdentity
     
-    var `view-target-changed`: (TargetChangedEvent[Topic, typings.openfin.openfinStrings.`view-target-changed`]) with PropagatedViewIdentity = js.native
+    var `view-target-changed`: (TargetChangedEvent[Topic, typings.openfin.openfinStrings.`view-target-changed`]) & PropagatedViewIdentity
   }
   object PropagatedViewEvents {
     
@@ -283,21 +281,21 @@ object viewMod {
     def apply[Topic](
       listenerRemoved: String,
       newListener: String,
-      `view-blurred`: (WindowEvent[Topic, `view-blurred`]) with PropagatedViewIdentity,
-      `view-crashed`: CrashedEvent with (WindowEvent[Topic, `view-crashed`]) with PropagatedViewIdentity,
-      `view-created`: CrashedEvent with (WindowEvent[Topic, `view-created`]) with PropagatedViewIdentity,
-      `view-destroyed`: (WindowEvent[Topic, `view-destroyed`]) with PropagatedViewIdentity,
-      `view-did-change-theme-color`: (WindowEvent[Topic, `view-did-change-theme-color`]) with PropagatedViewIdentity,
-      `view-focused`: (WindowEvent[Topic, `view-focused`]) with PropagatedViewIdentity,
-      `view-hidden`: (WindowEvent[Topic, `view-hidden`]) with PropagatedViewIdentity,
-      `view-hotkey`: InputEvent with (WindowEvent[Topic, `view-hotkey`]) with PropagatedViewIdentity,
-      `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) with PropagatedViewIdentity,
-      `view-page-favicon-updated`: (WindowEvent[Topic, `view-page-favicon-updated`]) with PropagatedViewIdentity,
-      `view-page-title-updated`: (WindowEvent[Topic, `view-page-title-updated`]) with PropagatedViewIdentity,
-      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, `view-resource-load-failed`]) with PropagatedViewIdentity,
-      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, `view-resource-response-received`]) with PropagatedViewIdentity,
-      `view-shown`: (WindowEvent[Topic, `view-shown`]) with PropagatedViewIdentity,
-      `view-target-changed`: (TargetChangedEvent[Topic, `view-target-changed`]) with PropagatedViewIdentity
+      `view-blurred`: (WindowEvent[Topic, `view-blurred`]) & PropagatedViewIdentity,
+      `view-crashed`: CrashedEvent & (WindowEvent[Topic, `view-crashed`]) & PropagatedViewIdentity,
+      `view-created`: CrashedEvent & (WindowEvent[Topic, `view-created`]) & PropagatedViewIdentity,
+      `view-destroyed`: (WindowEvent[Topic, `view-destroyed`]) & PropagatedViewIdentity,
+      `view-did-change-theme-color`: (WindowEvent[Topic, `view-did-change-theme-color`]) & PropagatedViewIdentity,
+      `view-focused`: (WindowEvent[Topic, `view-focused`]) & PropagatedViewIdentity,
+      `view-hidden`: (WindowEvent[Topic, `view-hidden`]) & PropagatedViewIdentity,
+      `view-hotkey`: InputEvent & (WindowEvent[Topic, `view-hotkey`]) & PropagatedViewIdentity,
+      `view-navigation-rejected`: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) & PropagatedViewIdentity,
+      `view-page-favicon-updated`: (WindowEvent[Topic, `view-page-favicon-updated`]) & PropagatedViewIdentity,
+      `view-page-title-updated`: (WindowEvent[Topic, `view-page-title-updated`]) & PropagatedViewIdentity,
+      `view-resource-load-failed`: (WindowResourceLoadFailedEvent[Topic, `view-resource-load-failed`]) & PropagatedViewIdentity,
+      `view-resource-response-received`: (WindowResourceResponseReceivedEvent[Topic, `view-resource-response-received`]) & PropagatedViewIdentity,
+      `view-shown`: (WindowEvent[Topic, `view-shown`]) & PropagatedViewIdentity,
+      `view-target-changed`: (TargetChangedEvent[Topic, `view-target-changed`]) & PropagatedViewIdentity
     ): PropagatedViewEvents[Topic] = {
       val __obj = js.Dynamic.literal(listenerRemoved = listenerRemoved.asInstanceOf[js.Any], newListener = newListener.asInstanceOf[js.Any])
       __obj.updateDynamic("view-blurred")(`view-blurred`.asInstanceOf[js.Any])
@@ -319,7 +317,7 @@ object viewMod {
     }
     
     @scala.inline
-    implicit class PropagatedViewEventsMutableBuilder[Self <: PropagatedViewEvents[_], Topic] (val x: Self with PropagatedViewEvents[Topic]) extends AnyVal {
+    implicit class PropagatedViewEventsMutableBuilder[Self <: PropagatedViewEvents[?], Topic] (val x: Self & PropagatedViewEvents[Topic]) extends AnyVal {
       
       @scala.inline
       def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])
@@ -328,62 +326,59 @@ object viewMod {
       def setNewListener(value: String): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-blurred`(value: (WindowEvent[Topic, `view-blurred`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
+      def `setView-blurred`(value: (WindowEvent[Topic, `view-blurred`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-blurred", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-crashed`(value: CrashedEvent with (WindowEvent[Topic, `view-crashed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
+      def `setView-crashed`(value: CrashedEvent & (WindowEvent[Topic, `view-crashed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-created`(value: CrashedEvent with (WindowEvent[Topic, `view-created`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
+      def `setView-created`(value: CrashedEvent & (WindowEvent[Topic, `view-created`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-created", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-destroyed`(value: (WindowEvent[Topic, `view-destroyed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
+      def `setView-destroyed`(value: (WindowEvent[Topic, `view-destroyed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-destroyed", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, `view-did-change-theme-color`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
+      def `setView-did-change-theme-color`(value: (WindowEvent[Topic, `view-did-change-theme-color`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-did-change-theme-color", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-focused`(value: (WindowEvent[Topic, `view-focused`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
+      def `setView-focused`(value: (WindowEvent[Topic, `view-focused`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-focused", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hidden`(value: (WindowEvent[Topic, `view-hidden`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
+      def `setView-hidden`(value: (WindowEvent[Topic, `view-hidden`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-hotkey`(value: InputEvent with (WindowEvent[Topic, `view-hotkey`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
+      def `setView-hotkey`(value: InputEvent & (WindowEvent[Topic, `view-hotkey`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-navigation-rejected`(
-        value: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) with PropagatedViewIdentity
-      ): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
+      def `setView-navigation-rejected`(value: (WindowNavigationRejectedEvent[Topic, `view-navigation-rejected`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-navigation-rejected", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, `view-page-favicon-updated`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
+      def `setView-page-favicon-updated`(value: (WindowEvent[Topic, `view-page-favicon-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-favicon-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-page-title-updated`(value: (WindowEvent[Topic, `view-page-title-updated`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
+      def `setView-page-title-updated`(value: (WindowEvent[Topic, `view-page-title-updated`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-page-title-updated", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setView-resource-load-failed`(
-        value: (WindowResourceLoadFailedEvent[Topic, `view-resource-load-failed`]) with PropagatedViewIdentity
+        value: (WindowResourceLoadFailedEvent[Topic, `view-resource-load-failed`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-load-failed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def `setView-resource-response-received`(
-        value: (WindowResourceResponseReceivedEvent[Topic, `view-resource-response-received`]) with PropagatedViewIdentity
+        value: (WindowResourceResponseReceivedEvent[Topic, `view-resource-response-received`]) & PropagatedViewIdentity
       ): Self = StObject.set(x, "view-resource-response-received", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-shown`(value: (WindowEvent[Topic, `view-shown`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
+      def `setView-shown`(value: (WindowEvent[Topic, `view-shown`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-shown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def `setView-target-changed`(value: (TargetChangedEvent[Topic, `view-target-changed`]) with PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
+      def `setView-target-changed`(value: (TargetChangedEvent[Topic, `view-target-changed`]) & PropagatedViewIdentity): Self = StObject.set(x, "view-target-changed", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PropagatedViewIdentity extends StObject {
     
-    var viewIdentity: NamedIdentity = js.native
+    var viewIdentity: NamedIdentity
   }
   object PropagatedViewIdentity {
     
@@ -401,12 +396,13 @@ object viewMod {
     }
   }
   
-  @js.native
-  trait TargetChangedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+  trait TargetChangedEvent[Topic, Type]
+    extends StObject
+       with WindowEvent[Topic, Type] {
     
-    var previousTarget: NamedIdentity = js.native
+    var previousTarget: NamedIdentity
     
-    var target: NamedIdentity = js.native
+    var target: NamedIdentity
   }
   object TargetChangedEvent {
     
@@ -425,7 +421,7 @@ object viewMod {
     }
     
     @scala.inline
-    implicit class TargetChangedEventMutableBuilder[Self <: TargetChangedEvent[_, _], Topic, Type] (val x: Self with (TargetChangedEvent[Topic, Type])) extends AnyVal {
+    implicit class TargetChangedEventMutableBuilder[Self <: TargetChangedEvent[?, ?], Topic, Type] (val x: Self & (TargetChangedEvent[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setPreviousTarget(value: NamedIdentity): Self = StObject.set(x, "previousTarget", value.asInstanceOf[js.Any])
@@ -435,22 +431,23 @@ object viewMod {
     }
   }
   
-  @js.native
-  trait ViewEventMapping[Topic, Type] extends WebContentsEventMapping[String, String] {
+  trait ViewEventMapping[Topic, Type]
+    extends StObject
+       with WebContentsEventMapping[String, String] {
     
-    var attached: WindowEvent[Topic, Type] = js.native
+    var attached: WindowEvent[Topic, Type]
     
-    var created: WindowEvent[Topic, Type] = js.native
+    var created: WindowEvent[Topic, Type]
     
-    var destroyed: WindowEvent[Topic, Type] = js.native
+    var destroyed: WindowEvent[Topic, Type]
     
-    var hidden: WindowEvent[Topic, Type] = js.native
+    var hidden: WindowEvent[Topic, Type]
     
-    var hotkey: InputEvent with (WindowEvent[Topic, Type]) = js.native
+    var hotkey: InputEvent & (WindowEvent[Topic, Type])
     
-    var shown: WindowEvent[Topic, Type] = js.native
+    var shown: WindowEvent[Topic, Type]
     
-    var `target-changed`: TargetChangedEvent[Topic, Type] = js.native
+    var `target-changed`: TargetChangedEvent[Topic, Type]
   }
   object ViewEventMapping {
     
@@ -459,14 +456,14 @@ object viewMod {
       attached: WindowEvent[Topic, Type],
       blurred: WindowEvent[String, String],
       `certificate-error`: CertificateErrorEvent[String, String],
-      crashed: CrashedEvent with (WindowEvent[String, String]),
+      crashed: CrashedEvent & (WindowEvent[String, String]),
       created: WindowEvent[Topic, Type],
       destroyed: WindowEvent[Topic, Type],
       `did-change-theme-color`: WindowEvent[String, String],
       focused: WindowEvent[String, String],
       `found-in-page`: WindowEvent[String, String],
       hidden: WindowEvent[Topic, Type],
-      hotkey: InputEvent with (WindowEvent[Topic, Type]),
+      hotkey: InputEvent & (WindowEvent[Topic, Type]),
       listenerRemoved: String,
       `navigation-rejected`: WindowNavigationRejectedEvent[String, String],
       newListener: String,
@@ -491,7 +488,7 @@ object viewMod {
     }
     
     @scala.inline
-    implicit class ViewEventMappingMutableBuilder[Self <: ViewEventMapping[_, _], Topic, Type] (val x: Self with (ViewEventMapping[Topic, Type])) extends AnyVal {
+    implicit class ViewEventMappingMutableBuilder[Self <: ViewEventMapping[?, ?], Topic, Type] (val x: Self & (ViewEventMapping[Topic, Type])) extends AnyVal {
       
       @scala.inline
       def setAttached(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
@@ -506,7 +503,7 @@ object viewMod {
       def setHidden(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHotkey(value: InputEvent with (WindowEvent[Topic, Type])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+      def setHotkey(value: InputEvent & (WindowEvent[Topic, Type])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShown(value: WindowEvent[Topic, Type]): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
@@ -517,48 +514,47 @@ object viewMod {
   }
   
   /* Inlined {[ Type in keyof openfin.openfin/_v2/api/events/view.ViewEventMapping<string, string> ]: openfin.openfin/_v2/api/events/view.ViewEventMapping<'view', Type>[Type]} */
-  @js.native
   trait ViewEvents extends StObject {
     
-    var attached: WindowEvent[view, typings.openfin.openfinStrings.attached] = js.native
+    var attached: WindowEvent[view, typings.openfin.openfinStrings.attached]
     
-    var blurred: WindowEvent[String, String] = js.native
+    var blurred: WindowEvent[String, String]
     
-    var `certificate-error`: CertificateErrorEvent[String, String] = js.native
+    var `certificate-error`: CertificateErrorEvent[String, String]
     
-    var crashed: CrashedEvent with (WindowEvent[String, String]) = js.native
+    var crashed: CrashedEvent & (WindowEvent[String, String])
     
-    var created: WindowEvent[view, typings.openfin.openfinStrings.created] = js.native
+    var created: WindowEvent[view, typings.openfin.openfinStrings.created]
     
-    var destroyed: WindowEvent[view, typings.openfin.openfinStrings.destroyed] = js.native
+    var destroyed: WindowEvent[view, typings.openfin.openfinStrings.destroyed]
     
-    var `did-change-theme-color`: WindowEvent[String, String] = js.native
+    var `did-change-theme-color`: WindowEvent[String, String]
     
-    var focused: WindowEvent[String, String] = js.native
+    var focused: WindowEvent[String, String]
     
-    var `found-in-page`: WindowEvent[String, String] = js.native
+    var `found-in-page`: WindowEvent[String, String]
     
-    var hidden: WindowEvent[view, typings.openfin.openfinStrings.hidden] = js.native
+    var hidden: WindowEvent[view, typings.openfin.openfinStrings.hidden]
     
-    var hotkey: InputEvent with (WindowEvent[view, typings.openfin.openfinStrings.hotkey]) = js.native
+    var hotkey: InputEvent & (WindowEvent[view, typings.openfin.openfinStrings.hotkey])
     
-    var listenerRemoved: String = js.native
+    var listenerRemoved: String
     
-    var `navigation-rejected`: WindowNavigationRejectedEvent[String, String] = js.native
+    var `navigation-rejected`: WindowNavigationRejectedEvent[String, String]
     
-    var newListener: String = js.native
+    var newListener: String
     
-    var `page-favicon-updated`: WindowEvent[String, String] = js.native
+    var `page-favicon-updated`: WindowEvent[String, String]
     
-    var `page-title-updated`: PageTitleUpdatedEvent[String, String] = js.native
+    var `page-title-updated`: PageTitleUpdatedEvent[String, String]
     
-    var `resource-load-failed`: WindowResourceLoadFailedEvent[String, String] = js.native
+    var `resource-load-failed`: WindowResourceLoadFailedEvent[String, String]
     
-    var `resource-response-received`: WindowResourceResponseReceivedEvent[String, String] = js.native
+    var `resource-response-received`: WindowResourceResponseReceivedEvent[String, String]
     
-    var shown: WindowEvent[view, typings.openfin.openfinStrings.shown] = js.native
+    var shown: WindowEvent[view, typings.openfin.openfinStrings.shown]
     
-    var `target-changed`: TargetChangedEvent[view, typings.openfin.openfinStrings.`target-changed`] = js.native
+    var `target-changed`: TargetChangedEvent[view, typings.openfin.openfinStrings.`target-changed`]
   }
   object ViewEvents {
     
@@ -567,14 +563,14 @@ object viewMod {
       attached: WindowEvent[view, attached],
       blurred: WindowEvent[String, String],
       `certificate-error`: CertificateErrorEvent[String, String],
-      crashed: CrashedEvent with (WindowEvent[String, String]),
+      crashed: CrashedEvent & (WindowEvent[String, String]),
       created: WindowEvent[view, created],
       destroyed: WindowEvent[view, destroyed],
       `did-change-theme-color`: WindowEvent[String, String],
       focused: WindowEvent[String, String],
       `found-in-page`: WindowEvent[String, String],
       hidden: WindowEvent[view, hidden],
-      hotkey: InputEvent with (WindowEvent[view, hotkey]),
+      hotkey: InputEvent & (WindowEvent[view, hotkey]),
       listenerRemoved: String,
       `navigation-rejected`: WindowNavigationRejectedEvent[String, String],
       newListener: String,
@@ -611,7 +607,7 @@ object viewMod {
       def `setCertificate-error`(value: CertificateErrorEvent[String, String]): Self = StObject.set(x, "certificate-error", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCrashed(value: CrashedEvent with (WindowEvent[String, String])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+      def setCrashed(value: CrashedEvent & (WindowEvent[String, String])): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCreated(value: WindowEvent[view, created]): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
@@ -632,7 +628,7 @@ object viewMod {
       def setHidden(value: WindowEvent[view, hidden]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHotkey(value: InputEvent with (WindowEvent[view, hotkey])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+      def setHotkey(value: InputEvent & (WindowEvent[view, hotkey])): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListenerRemoved(value: String): Self = StObject.set(x, "listenerRemoved", value.asInstanceOf[js.Any])

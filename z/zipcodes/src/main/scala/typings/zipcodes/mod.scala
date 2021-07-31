@@ -2,76 +2,64 @@ package typings.zipcodes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zipcodes", "distance")
+  @JSImport("zipcodes", JSImport.Namespace)
   @js.native
-  def distance(zipA: String, zipB: String): Double | Null = js.native
-  @JSImport("zipcodes", "distance")
-  @js.native
-  def distance(zipA: String, zipB: Double): Double | Null = js.native
-  @JSImport("zipcodes", "distance")
-  @js.native
-  def distance(zipA: Double, zipB: String): Double | Null = js.native
-  @JSImport("zipcodes", "distance")
-  @js.native
-  def distance(zipA: Double, zipB: Double): Double | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("zipcodes", "lookup")
-  @js.native
-  def lookup(zip: String): js.UndefOr[ZipCode] = js.native
-  @JSImport("zipcodes", "lookup")
-  @js.native
-  def lookup(zip: Double): js.UndefOr[ZipCode] = js.native
+  @scala.inline
+  def distance(zipA: String, zipB: String): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(zipA.asInstanceOf[js.Any], zipB.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  @scala.inline
+  def distance(zipA: String, zipB: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(zipA.asInstanceOf[js.Any], zipB.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  @scala.inline
+  def distance(zipA: Double, zipB: String): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(zipA.asInstanceOf[js.Any], zipB.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  @scala.inline
+  def distance(zipA: Double, zipB: Double): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(zipA.asInstanceOf[js.Any], zipB.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @JSImport("zipcodes", "lookupByCoords")
-  @js.native
-  def lookupByCoords(lat: Double, lon: Double): String | Null = js.native
+  @scala.inline
+  def lookup(zip: String): js.UndefOr[ZipCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(zip.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ZipCode]]
+  @scala.inline
+  def lookup(zip: Double): js.UndefOr[ZipCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(zip.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ZipCode]]
   
-  @JSImport("zipcodes", "lookupByName")
-  @js.native
-  def lookupByName(city: String, state: String): js.Array[ZipCode] = js.native
+  @scala.inline
+  def lookupByCoords(lat: Double, lon: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupByCoords")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("zipcodes", "lookupByState")
-  @js.native
-  def lookupByState(state: String): js.Array[ZipCode] = js.native
+  @scala.inline
+  def lookupByName(city: String, state: String): js.Array[ZipCode] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupByName")(city.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Array[ZipCode]]
   
-  @JSImport("zipcodes", "radius")
-  @js.native
-  def radius(zip: String, miles: Double, full: Boolean): js.Array[String | ZipCode] = js.native
-  @JSImport("zipcodes", "radius")
-  @js.native
-  def radius(zip: Double, miles: Double, full: Boolean): js.Array[String | ZipCode] = js.native
+  @scala.inline
+  def lookupByState(state: String): js.Array[ZipCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupByState")(state.asInstanceOf[js.Any]).asInstanceOf[js.Array[ZipCode]]
   
-  @JSImport("zipcodes", "random")
-  @js.native
-  def random(): ZipCode = js.native
+  @scala.inline
+  def radius(zip: String, miles: Double, full: Boolean): js.Array[String | ZipCode] = (^.asInstanceOf[js.Dynamic].applyDynamic("radius")(zip.asInstanceOf[js.Any], miles.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | ZipCode]]
+  @scala.inline
+  def radius(zip: Double, miles: Double, full: Boolean): js.Array[String | ZipCode] = (^.asInstanceOf[js.Dynamic].applyDynamic("radius")(zip.asInstanceOf[js.Any], miles.asInstanceOf[js.Any], full.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | ZipCode]]
   
-  @JSImport("zipcodes", "toKilometers")
-  @js.native
-  def toKilometers(miles: Double): Double = js.native
+  @scala.inline
+  def random(): ZipCode = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[ZipCode]
   
-  @JSImport("zipcodes", "toMiles")
-  @js.native
-  def toMiles(kilos: Double): Double = js.native
+  @scala.inline
+  def toKilometers(miles: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toKilometers")(miles.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def toMiles(kilos: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toMiles")(kilos.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
   trait ZipCode extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var state: String = js.native
+    var state: String
     
-    var zip: String = js.native
+    var zip: String
   }
   object ZipCode {
     

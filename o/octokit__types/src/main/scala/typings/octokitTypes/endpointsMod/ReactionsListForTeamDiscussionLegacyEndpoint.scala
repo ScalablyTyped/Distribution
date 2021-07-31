@@ -1,8 +1,9 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`9`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.Plussign1
 import typings.octokitTypes.octokitTypesStrings.`-1`
+import typings.octokitTypes.octokitTypesStrings.`squirrel-girl`
 import typings.octokitTypes.octokitTypesStrings.confused
 import typings.octokitTypes.octokitTypesStrings.eyes
 import typings.octokitTypes.octokitTypesStrings.heart
@@ -11,38 +12,35 @@ import typings.octokitTypes.octokitTypesStrings.laugh
 import typings.octokitTypes.octokitTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  team_id :number,   discussion_number :number,   content :'+1' | '-1' | 'laugh' | 'confused' | 'heart' | 'hooray' | 'rocket' | 'eyes' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'squirrel-girl'> */
-@js.native
-trait ReactionsListForTeamDiscussionLegacyEndpoint extends StObject {
+trait ReactionsListForTeamDiscussionLegacyEndpoint
+  extends StObject
+     with RequiredPreview[`squirrel-girl`] {
   
   /**
     * Returns a single [reaction type](https://developer.github.com/v3/reactions/#reaction-types). Omit this parameter to list all reactions to a team discussion.
     */
-  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.native
+  var content: js.UndefOr[Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes] = js.undefined
   
-  var discussion_number: Double = js.native
-  
-  var mediaType: `9` = js.native
+  var discussion_number: Double
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var team_id: Double = js.native
+  var team_id: Double
 }
 object ReactionsListForTeamDiscussionLegacyEndpoint {
   
   @scala.inline
-  def apply(discussion_number: Double, mediaType: `9`, team_id: Double): ReactionsListForTeamDiscussionLegacyEndpoint = {
+  def apply(discussion_number: Double, mediaType: `0`[`squirrel-girl`], team_id: Double): ReactionsListForTeamDiscussionLegacyEndpoint = {
     val __obj = js.Dynamic.literal(discussion_number = discussion_number.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactionsListForTeamDiscussionLegacyEndpoint]
   }
@@ -58,9 +56,6 @@ object ReactionsListForTeamDiscussionLegacyEndpoint {
     
     @scala.inline
     def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `9`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

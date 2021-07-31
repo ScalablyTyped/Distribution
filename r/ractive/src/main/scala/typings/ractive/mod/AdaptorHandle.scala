@@ -2,23 +2,21 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdaptorHandle extends StObject {
   
   /** Called when Ractive needs to retrieve the adapted value. */
-  def get(): js.Any = js.native
+  def get(): js.Any
   
   /** Called when Ractive needs to replace the adapted value e.g. r.set('adapted', {}). */
-  def reset(value: js.Any): Unit = js.native
+  def reset(value: js.Any): Unit
   
   /** Called when Ractive needs to set a property of the adapted value e.g. r.set('adapted.prop', {}). */
-  def set(prop: String, value: js.Any): Unit = js.native
+  def set(prop: String, value: js.Any): Unit
   
   /** Called when Ractive no longer needs the adaptor. */
-  def teardown(): Unit = js.native
+  def teardown(): Unit
 }
 object AdaptorHandle {
   

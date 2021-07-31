@@ -10,9 +10,9 @@ JupyterLab - Vega 5 and Vega-Lite 3 Mime Renderer Extension
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/vega5-extension |
 | Keywords           | - |
-| # releases         | 104 |
+| # releases         | 107 |
 | # dependents       | 1 |
-| # downloads        | 1385608 |
+| # downloads        | 1385415 |
 | # stars            | 0 |
 
 ## Links

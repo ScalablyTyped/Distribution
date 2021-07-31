@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Inappproducts")
@@ -31,7 +30,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceInappproductsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceInappproductsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInAppProduct] = js.native
   def get(callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
   def get(params: ParamsResourceInappproductsGet): GaxiosPromise[SchemaInAppProduct] = js.native
   def get(params: ParamsResourceInappproductsGet, callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
   def get(
@@ -92,7 +91,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaInAppProduct] = js.native
   def insert(callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
   def insert(params: ParamsResourceInappproductsInsert): GaxiosPromise[SchemaInAppProduct] = js.native
   def insert(params: ParamsResourceInappproductsInsert, callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
   def insert(
@@ -125,7 +124,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInappproductsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaInappproductsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInappproductsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInappproductsListResponse] = js.native
   def list(params: ParamsResourceInappproductsList): GaxiosPromise[SchemaInappproductsListResponse] = js.native
   def list(
     params: ParamsResourceInappproductsList,
@@ -161,7 +160,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaInAppProduct] = js.native
   def patch(callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
   def patch(params: ParamsResourceInappproductsPatch): GaxiosPromise[SchemaInAppProduct] = js.native
   def patch(params: ParamsResourceInappproductsPatch, callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
   def patch(
@@ -193,7 +192,7 @@ class ResourceInappproducts protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaInAppProduct] = js.native
   def update(callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInAppProduct] = js.native
   def update(params: ParamsResourceInappproductsUpdate): GaxiosPromise[SchemaInAppProduct] = js.native
   def update(params: ParamsResourceInappproductsUpdate, callback: BodyResponseCallback[SchemaInAppProduct]): Unit = js.native
   def update(

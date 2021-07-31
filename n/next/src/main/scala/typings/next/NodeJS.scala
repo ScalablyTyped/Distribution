@@ -5,16 +5,14 @@ import typings.next.nextStrings.production
 import typings.next.nextStrings.test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Extend the NodeJS namespace with Next.js-defined properties
 object NodeJS {
   
-  @js.native
   trait Process extends StObject {
     
-    val browser: Boolean = js.native
+    val browser: Boolean
   }
   object Process {
     
@@ -32,10 +30,9 @@ object NodeJS {
     }
   }
   
-  @js.native
   trait ProcessEnv extends StObject {
     
-    val NODE_ENV: development | production | test = js.native
+    val NODE_ENV: development | production | test
   }
   object ProcessEnv {
     

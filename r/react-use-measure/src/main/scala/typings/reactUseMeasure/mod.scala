@@ -8,28 +8,28 @@ import typings.std.HTMLElement
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-use-measure", JSImport.Default)
+  @JSImport("react-use-measure", JSImport.Namespace)
   @js.native
-  def default(): Result = js.native
-  @JSImport("react-use-measure", JSImport.Default)
-  @js.native
-  def default(hasDebounceScrollPolyfill: Options): Result = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Result]
+  @scala.inline
+  def default(hasDebounceScrollPolyfill: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDebounceScrollPolyfill.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   type HTMLOrSVGElement = HTMLElement | SVGElement
   
-  @js.native
   trait Options extends StObject {
     
-    var debounce: js.UndefOr[Double | Resize] = js.native
+    var debounce: js.UndefOr[Double | Resize] = js.undefined
     
-    var polyfill: js.UndefOr[Instantiable] = js.native
+    var polyfill: js.UndefOr[Instantiable] = js.undefined
     
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -62,24 +62,25 @@ object mod {
     }
   }
   
-  @js.native
-  trait RectReadOnly extends /* key */ StringDictionary[Double] {
+  trait RectReadOnly
+    extends StObject
+       with /* key */ StringDictionary[Double] {
     
-    val bottom: Double = js.native
+    val bottom: Double
     
-    val height: Double = js.native
+    val height: Double
     
-    val left: Double = js.native
+    val left: Double
     
-    val right: Double = js.native
+    val right: Double
     
-    val top: Double = js.native
+    val top: Double
     
-    val width: Double = js.native
+    val width: Double
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object RectReadOnly {
     

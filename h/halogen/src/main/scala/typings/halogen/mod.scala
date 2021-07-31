@@ -5,7 +5,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -234,18 +233,17 @@ object mod {
     def this(props: MarginLoaderProps[String], context: js.Any) = this()
   }
   
-  @js.native
   trait HalogenCommonProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var verticalAlign: js.UndefOr[VerticalAlign] = js.native
+    var verticalAlign: js.UndefOr[VerticalAlign] = js.undefined
   }
   object HalogenCommonProps {
     
@@ -290,12 +288,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait MarginLoaderProps[T] extends HalogenCommonProps {
+  trait MarginLoaderProps[T]
+    extends StObject
+       with HalogenCommonProps {
     
-    var margin: js.UndefOr[T] = js.native
+    var margin: js.UndefOr[T] = js.undefined
     
-    var size: js.UndefOr[T] = js.native
+    var size: js.UndefOr[T] = js.undefined
   }
   object MarginLoaderProps {
     
@@ -306,7 +305,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MarginLoaderPropsMutableBuilder[Self <: MarginLoaderProps[_], T] (val x: Self with MarginLoaderProps[T]) extends AnyVal {
+    implicit class MarginLoaderPropsMutableBuilder[Self <: MarginLoaderProps[?], T] (val x: Self & MarginLoaderProps[T]) extends AnyVal {
       
       @scala.inline
       def setMargin(value: T): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
@@ -322,14 +321,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RadiusLoaderProps extends MarginLoaderProps[String] {
+  trait RadiusLoaderProps
+    extends StObject
+       with MarginLoaderProps[String] {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var radius: js.UndefOr[String] = js.native
+    var radius: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object RadiusLoaderProps {
     
@@ -362,10 +362,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait SizeLoaderProps extends HalogenCommonProps {
+  trait SizeLoaderProps
+    extends StObject
+       with HalogenCommonProps {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object SizeLoaderProps {
     

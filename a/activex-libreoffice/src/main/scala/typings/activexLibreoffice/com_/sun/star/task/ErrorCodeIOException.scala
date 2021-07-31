@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** IOException that carries a legacy error code (not only I/O related). */
-@js.native
-trait ErrorCodeIOException extends Exception {
+trait ErrorCodeIOException
+  extends StObject
+     with Exception {
   
   /** specifies the error code; see tools/errcode.hxx for details. */
-  var ErrCode: Double = js.native
+  var ErrCode: Double
 }
 object ErrorCodeIOException {
   

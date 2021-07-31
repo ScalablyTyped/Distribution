@@ -11,8 +11,8 @@ This package contains falcor components for use in browsers.
 | Full name          | falcor-http-datasource |
 | Keywords           | Falcor, Browser |
 | # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 26840 |
+| # dependents       | 11 |
+| # downloads        | 29819 |
 | # stars            | 1 |
 
 ## Links

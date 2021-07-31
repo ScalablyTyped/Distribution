@@ -2,17 +2,15 @@ package typings.historyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HashChange extends StObject {
     
-    var hashChange: js.UndefOr[js.Any] = js.native
+    var hashChange: js.UndefOr[js.Any] = js.undefined
     
-    var pushState: js.UndefOr[js.Any] = js.native
+    var pushState: js.UndefOr[js.Any] = js.undefined
   }
   object HashChange {
     

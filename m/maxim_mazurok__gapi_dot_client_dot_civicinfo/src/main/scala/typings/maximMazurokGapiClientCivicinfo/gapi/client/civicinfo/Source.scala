@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
   /** The name of the data source. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether this data comes from an official government source. */
-  var official: js.UndefOr[Boolean] = js.native
+  var official: js.UndefOr[Boolean] = js.undefined
 }
 object Source {
   

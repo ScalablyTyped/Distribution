@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LabelSymbol3DProperties extends Symbol3DProperties {
+trait LabelSymbol3DProperties
+  extends StObject
+     with Symbol3DProperties {
   
   /**
     * Settings for adding a callout visualization to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#callout)
     */
-  var callout: js.UndefOr[Callout3DProperties] = js.native
+  var callout: js.UndefOr[Callout3DProperties] = js.undefined
   
   /**
     * Shifts the symbol along the vertical world axis by a given height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
-  var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.native
+  var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.undefined
 }
 object LabelSymbol3DProperties {
   

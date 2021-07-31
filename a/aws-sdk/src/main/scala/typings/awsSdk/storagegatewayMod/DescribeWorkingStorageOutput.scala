@@ -2,28 +2,26 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkingStorageOutput extends StObject {
   
   /**
     * An array of the gateway's local disk IDs that are configured as working storage. Each local disk ID is specified as a string (minimum length of 1 and maximum length of 300). If no local disks are configured as working storage, then the DiskIds array is empty.
     */
-  var DiskIds: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskIds] = js.native
+  var DiskIds: js.UndefOr[typings.awsSdk.storagegatewayMod.DiskIds] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The total working storage in bytes allocated for the gateway. If no working storage is configured for the gateway, this field returns 0.
     */
-  var WorkingStorageAllocatedInBytes: js.UndefOr[long] = js.native
+  var WorkingStorageAllocatedInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The total working storage in bytes in use by the gateway. If no working storage is configured for the gateway, this field returns 0.
     */
-  var WorkingStorageUsedInBytes: js.UndefOr[long] = js.native
+  var WorkingStorageUsedInBytes: js.UndefOr[long] = js.undefined
 }
 object DescribeWorkingStorageOutput {
   

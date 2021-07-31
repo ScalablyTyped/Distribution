@@ -2,45 +2,43 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an achievement configuration detail.
   */
-@js.native
 trait SchemaAchievementConfigurationDetail extends StObject {
   
   /**
     * Localized strings for the achievement description.
     */
-  var description: js.UndefOr[SchemaLocalizedStringBundle] = js.native
+  var description: js.UndefOr[SchemaLocalizedStringBundle] = js.undefined
   
   /**
     * The icon url of this achievement. Writes to this field are ignored.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesConfiguration#achievementConfigurationDetail.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Localized strings for the achievement name.
     */
-  var name: js.UndefOr[SchemaLocalizedStringBundle] = js.native
+  var name: js.UndefOr[SchemaLocalizedStringBundle] = js.undefined
   
   /**
     * Point value for the achievement.
     */
-  var pointValue: js.UndefOr[Double] = js.native
+  var pointValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The sort rank of this achievement. Writes to this field are ignored.
     */
-  var sortRank: js.UndefOr[Double] = js.native
+  var sortRank: js.UndefOr[Double] = js.undefined
 }
 object SchemaAchievementConfigurationDetail {
   

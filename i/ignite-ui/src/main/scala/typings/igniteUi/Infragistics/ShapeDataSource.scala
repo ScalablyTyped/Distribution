@@ -2,28 +2,26 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeDataSource extends StObject {
   
   /**
     * Returns the current converter instance
     */
-  def converter(): js.Object = js.native
+  def converter(): js.Object
   
   /**
     * Loads to the current data source
     */
-  def dataBind(): Unit = js.native
+  def dataBind(): Unit
   
-  def dataView(): Unit = js.native
+  def dataView(): Unit
   
   /**
     * Returns true if data is loaded
     */
-  def isBound(): Boolean = js.native
+  def isBound(): Boolean
 }
 object ShapeDataSource {
   

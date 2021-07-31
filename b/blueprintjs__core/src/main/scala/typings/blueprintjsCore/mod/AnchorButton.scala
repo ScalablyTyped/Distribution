@@ -5,15 +5,14 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "AnchorButton")
 @js.native
 class AnchorButton protected ()
   extends typings.blueprintjsCore.componentsMod.AnchorButton {
-  def this(props: IButtonProps with AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-  def this(props: IButtonProps with AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+  def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+  def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
 }
 /* static members */
 object AnchorButton {

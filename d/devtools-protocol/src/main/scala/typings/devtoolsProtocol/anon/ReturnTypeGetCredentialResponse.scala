@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialRequest
 import typings.devtoolsProtocol.mod.Protocol.WebAuthn.GetCredentialResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetCredentialResponse extends StObject {
   
-  var paramsType: js.Array[GetCredentialRequest] = js.native
+  var paramsType: js.Array[GetCredentialRequest]
   
-  var returnType: GetCredentialResponse = js.native
+  var returnType: GetCredentialResponse
 }
 object ReturnTypeGetCredentialResponse {
   

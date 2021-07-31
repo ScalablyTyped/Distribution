@@ -4,13 +4,11 @@ import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormat
 import typings.formatjsEcma402Abstract.typesRelativeTimeMod.RelativeTimeFormatInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  def getInternalSlots(rtf: RelativeTimeFormat): RelativeTimeFormatInternal = js.native
+  def getInternalSlots(rtf: RelativeTimeFormat): RelativeTimeFormatInternal
 }
 object `0` {
   

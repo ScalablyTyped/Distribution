@@ -3,19 +3,17 @@ package typings.skyway
 import typings.std.RTCDataChannelInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectOptions extends StObject {
   
-  var dcInit: js.UndefOr[RTCDataChannelInit] = js.native
+  var dcInit: js.UndefOr[RTCDataChannelInit] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var serialization: js.UndefOr[String] = js.native
+  var serialization: js.UndefOr[String] = js.undefined
 }
 object ConnectOptions {
   

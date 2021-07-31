@@ -2,26 +2,24 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseCard extends StObject {
   
   /**
     * The content type of the response.
     */
-  var contentType: js.UndefOr[ContentType] = js.native
+  var contentType: js.UndefOr[ContentType] = js.undefined
   
   /**
     * An array of attachment objects representing options.
     */
-  var genericAttachments: js.UndefOr[genericAttachmentList] = js.native
+  var genericAttachments: js.UndefOr[genericAttachmentList] = js.undefined
   
   /**
     * The version of the response card format.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ResponseCard {
   

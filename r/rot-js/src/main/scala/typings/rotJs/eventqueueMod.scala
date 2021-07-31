@@ -3,7 +3,6 @@ package typings.rotJs
 import typings.rotJs.minHeapMod.MinHeap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventqueueMod {
@@ -13,50 +12,100 @@ object eventqueueMod {
   /**
     * @class Generic event queue: stores events and retrieves them based on their time
     */
-  class default[T] () extends EventQueue[T]
-  
-  @js.native
-  trait EventQueue[T] extends StObject {
+  class default[T] ()
+    extends StObject
+       with EventQueue[T] {
     
+    /* CompleteClass */
     var _events: MinHeap[T] = js.native
     
+    /* CompleteClass */
     var _time: Double = js.native
     
     /**
       * @param {?} event
       * @param {number} time
       */
-    def add(event: T, time: Double): Unit = js.native
+    /* CompleteClass */
+    override def add(event: T, time: Double): Unit = js.native
     
     /**
       * Clear all scheduled events
       */
-    def clear(): this.type = js.native
+    /* CompleteClass */
+    override def clear(): this.type = js.native
     
     /**
       * Locates the nearest event, advances time if necessary. Returns that event and removes it from the queue.
       * @returns {? || null} The event previously added by addEvent, null if no event available
       */
-    def get(): T | Null = js.native
+    /* CompleteClass */
+    override def get(): T | Null = js.native
     
     /**
       * Get the time associated with the given event
       * @param {?} event
       * @returns {number} time
       */
-    def getEventTime(event: T): js.UndefOr[Double] = js.native
+    /* CompleteClass */
+    override def getEventTime(event: T): js.UndefOr[Double] = js.native
     
     /**
       * @returns {number} Elapsed time
       */
-    def getTime(): Double = js.native
+    /* CompleteClass */
+    override def getTime(): Double = js.native
     
     /**
       * Remove an event from the queue
       * @param {?} event
       * @returns {bool} success?
       */
-    def remove(event: T): Boolean = js.native
+    /* CompleteClass */
+    override def remove(event: T): Boolean = js.native
+  }
+  
+  trait EventQueue[T] extends StObject {
+    
+    var _events: MinHeap[T]
+    
+    var _time: Double
+    
+    /**
+      * @param {?} event
+      * @param {number} time
+      */
+    def add(event: T, time: Double): Unit
+    
+    /**
+      * Clear all scheduled events
+      */
+    def clear(): this.type
+    
+    /**
+      * Locates the nearest event, advances time if necessary. Returns that event and removes it from the queue.
+      * @returns {? || null} The event previously added by addEvent, null if no event available
+      */
+    def get(): T | Null
+    
+    /**
+      * Get the time associated with the given event
+      * @param {?} event
+      * @returns {number} time
+      */
+    def getEventTime(event: T): js.UndefOr[Double]
+    
+    /**
+      * @returns {number} Elapsed time
+      */
+    def getTime(): Double
+    
+    /**
+      * Remove an event from the queue
+      * @param {?} event
+      * @returns {bool} success?
+      */
+    def remove(event: T): Boolean
   }
   object EventQueue {
     
@@ -76,7 +125,7 @@ object eventqueueMod {
     }
     
     @scala.inline
-    implicit class EventQueueMutableBuilder[Self <: EventQueue[_], T] (val x: Self with EventQueue[T]) extends AnyVal {
+    implicit class EventQueueMutableBuilder[Self <: EventQueue[?], T] (val x: Self & EventQueue[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (T, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))

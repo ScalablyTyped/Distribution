@@ -2,21 +2,19 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourcesInProtectionGroupResponse extends StObject {
   
   /**
     * If you specify a value for MaxResults and you have more resources in the protection group than the value of MaxResults, AWS Shield Advanced returns this token that you can use in your next request, to get the next batch of objects. 
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The Amazon Resource Names (ARNs) of the resources that are included in the protection group.
     */
-  var ResourceArns: ResourceArnList = js.native
+  var ResourceArns: ResourceArnList
 }
 object ListResourcesInProtectionGroupResponse {
   

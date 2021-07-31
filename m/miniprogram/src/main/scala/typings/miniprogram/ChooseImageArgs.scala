@@ -3,17 +3,17 @@ package typings.miniprogram
 import typings.miniprogram.anon.ApFilePaths
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChooseImageArgs extends AsyncCallback[ApFilePaths] {
+trait ChooseImageArgs
+  extends StObject
+     with AsyncCallback[ApFilePaths] {
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var sizeType: js.UndefOr[js.Array[String]] = js.native
+  var sizeType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var sourceType: js.UndefOr[js.Array[String]] = js.native
+  var sourceType: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ChooseImageArgs {
   

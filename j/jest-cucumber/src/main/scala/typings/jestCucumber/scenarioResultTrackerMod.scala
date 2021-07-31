@@ -4,7 +4,6 @@ import typings.jestCucumber.modelsMod.ParsedFeature
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scenarioResultTrackerMod {
@@ -14,7 +13,7 @@ object scenarioResultTrackerMod {
   class ScenarioResultTracker protected () extends StObject {
     def this(feature: ParsedFeature, scenarioTitle: String, lineNumber: Double) = this()
     
-    def endScenario(): js.Promise[_] = js.native
+    def endScenario(): js.Promise[js.Any] = js.native
     
     def endStep(): Unit = js.native
     
@@ -25,18 +24,17 @@ object scenarioResultTrackerMod {
     def stepError(error: Error): Unit = js.native
   }
   
-  @js.native
   trait IScenarioResult extends StObject {
     
-    var featureFilePath: String = js.native
+    var featureFilePath: String
     
-    var featureTitle: String = js.native
+    var featureTitle: String
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var scenarioTitle: String = js.native
+    var scenarioTitle: String
     
-    var stepResults: js.Array[IStepResult] = js.native
+    var stepResults: js.Array[IStepResult]
   }
   object IScenarioResult {
     
@@ -75,20 +73,19 @@ object scenarioResultTrackerMod {
     }
   }
   
-  @js.native
   trait IStepResult extends StObject {
     
-    var endTime: Double = js.native
+    var endTime: Double
     
-    var error: Error | Null = js.native
+    var error: Error | Null
     
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var stepArguments: js.Array[String] = js.native
+    var stepArguments: js.Array[String]
     
-    var stepText: String = js.native
+    var stepText: String
   }
   object IStepResult {
     
@@ -100,7 +97,7 @@ object scenarioResultTrackerMod {
       stepArguments: js.Array[String],
       stepText: String
     ): IStepResult = {
-      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stepArguments = stepArguments.asInstanceOf[js.Any], stepText = stepText.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], stepArguments = stepArguments.asInstanceOf[js.Any], stepText = stepText.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[IStepResult]
     }
     

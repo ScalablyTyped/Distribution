@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAccountsContainersVariablesUpdate extends StandardParameters {
+trait ParamsResourceAccountsContainersVariablesUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * The GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * When provided, this fingerprint must match the fingerprint of the
     * variable in storage.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaVariable] = js.native
+  var requestBody: js.UndefOr[SchemaVariable] = js.undefined
   
   /**
     * The GTM Variable ID.
     */
-  var variableId: js.UndefOr[String] = js.native
+  var variableId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAccountsContainersVariablesUpdate {
   

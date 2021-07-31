@@ -2,15 +2,14 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportUsersFromJsonOptions
-  extends BaseImportUsersOptions
+  extends StObject
+     with BaseImportUsersOptions
      with ImportUsersOptions {
   
-  var users_json: String = js.native
+  var users_json: String
 }
 object ImportUsersFromJsonOptions {
   

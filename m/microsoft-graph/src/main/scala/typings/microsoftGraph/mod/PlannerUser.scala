@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlannerUser extends Entity {
+trait PlannerUser
+  extends StObject
+     with Entity {
   
   // Read-only. Nullable. Returns the plannerTasks assigned to the user.
-  var plans: js.UndefOr[NullableOption[js.Array[PlannerPlan]]] = js.native
+  var plans: js.UndefOr[NullableOption[js.Array[PlannerPlan]]] = js.undefined
   
   // Read-only. Nullable. Returns the plannerPlans shared with the user.
-  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.native
+  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.undefined
 }
 object PlannerUser {
   

@@ -16,13 +16,16 @@ import typings.leafletAwesomeMarkers.leafletAwesomeMarkersStrings.red
 import typings.leafletAwesomeMarkers.leafletAwesomeMarkersStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
   object AwesomeMarkers {
+    
+    @JSImport("leaflet", "AwesomeMarkers")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("leaflet", "AwesomeMarkers.Icon")
     @js.native
@@ -31,48 +34,48 @@ object mod {
       def this(options: AwesomeMarkersIconOptions) = this()
     }
     
-    @JSImport("leaflet", "AwesomeMarkers.icon")
-    @js.native
-    def icon(options: AwesomeMarkersIconOptions): Icon_ = js.native
+    @scala.inline
+    def icon(options: AwesomeMarkersIconOptions): Icon_ = ^.asInstanceOf[js.Dynamic].applyDynamic("icon")(options.asInstanceOf[js.Any]).asInstanceOf[Icon_]
     
     @JSImport("leaflet", "AwesomeMarkers.version")
     @js.native
     val version: String = js.native
     
-    @js.native
-    trait AwesomeMarkersIconOptions extends BaseIconOptions {
+    trait AwesomeMarkersIconOptions
+      extends StObject
+         with BaseIconOptions {
       
       /**
         * Additional classes in the created tag
         */
-      var extraClasses: js.UndefOr[String] = js.native
+      var extraClasses: js.UndefOr[String] = js.undefined
       
       /**
         * Name of the icon. See glyphicons or font-awesome.
         */
-      var icon: js.UndefOr[String] = js.native
+      var icon: js.UndefOr[String] = js.undefined
       
       /**
         * Color of the icon. 'white', 'black' or css code (hex, rgba etc).
         */
-      var iconColor: js.UndefOr[white | black | String] = js.native
+      var iconColor: js.UndefOr[white | black | String] = js.undefined
       
       /**
         * Color of the marker
         */
       var markerColor: js.UndefOr[
             red | darkred | orange | green | darkgreen | blue | purple | darkpurple | cadetblue
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Select de icon library. 'fa' for font-awesome or 'glyphicon' for bootstrap 3.
         */
-      var prefix: js.UndefOr[fa | glyphicon] = js.native
+      var prefix: js.UndefOr[fa | glyphicon] = js.undefined
       
       /**
         * Make the icon spin. true or false. Font-awesome required
         */
-      var spin: js.UndefOr[Boolean] = js.native
+      var spin: js.UndefOr[Boolean] = js.undefined
     }
     object AwesomeMarkersIconOptions {
       

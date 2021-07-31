@@ -2,22 +2,20 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartData extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  def BreakLink(): Unit = js.native
+  def BreakLink(): Unit
   
-  val IsLinked: Boolean = js.native
+  val IsLinked: Boolean
   
   @JSName("Word.ChartData_typekey")
-  var WordDotChartData_typekey: ChartData = js.native
+  var WordDotChartData_typekey: ChartData
   
-  val Workbook: js.Any = js.native
+  val Workbook: js.Any
 }
 object ChartData {
   

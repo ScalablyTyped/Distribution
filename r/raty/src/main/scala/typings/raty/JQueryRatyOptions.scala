@@ -3,79 +3,77 @@ package typings.raty
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryRatyOptions extends StObject {
   
-  var cancel: js.UndefOr[Boolean] = js.native
+  var cancel: js.UndefOr[Boolean] = js.undefined
   
-  var cancelClass: js.UndefOr[String] = js.native
+  var cancelClass: js.UndefOr[String] = js.undefined
   
-  var cancelHint: js.UndefOr[String] = js.native
+  var cancelHint: js.UndefOr[String] = js.undefined
   
-  var cancelOff: js.UndefOr[String] = js.native
+  var cancelOff: js.UndefOr[String] = js.undefined
   
-  var cancelOn: js.UndefOr[String] = js.native
+  var cancelOn: js.UndefOr[String] = js.undefined
   
-  var cancelPlace: js.UndefOr[String] = js.native
+  var cancelPlace: js.UndefOr[String] = js.undefined
   
-  var click: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.native
+  var click: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.undefined
   
-  var half: js.UndefOr[Boolean] = js.native
+  var half: js.UndefOr[Boolean] = js.undefined
   
-  var halfShow: js.UndefOr[Boolean] = js.native
+  var halfShow: js.UndefOr[Boolean] = js.undefined
   
-  var hints: js.UndefOr[js.Array[String]] = js.native
+  var hints: js.UndefOr[js.Array[String]] = js.undefined
   
-  var iconRange: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var iconRange: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
-  var mouseout: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.native
+  var mouseout: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.undefined
   
-  var mouseover: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.native
+  var mouseover: js.UndefOr[js.Function2[/* score */ Double, /* event */ JQueryEventObject, Unit]] = js.undefined
   
-  var noRatedMsg: js.UndefOr[String] = js.native
+  var noRatedMsg: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
-  var numberMax: js.UndefOr[Double] = js.native
+  var numberMax: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var precision: js.UndefOr[Boolean] = js.native
+  var precision: js.UndefOr[Boolean] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var round: js.UndefOr[JQueryRatyRoundingOptions] = js.native
+  var round: js.UndefOr[JQueryRatyRoundingOptions] = js.undefined
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
-  var scoreName: js.UndefOr[String] = js.native
+  var scoreName: js.UndefOr[String] = js.undefined
   
-  var single: js.UndefOr[Boolean] = js.native
+  var single: js.UndefOr[Boolean] = js.undefined
   
-  var space: js.UndefOr[Boolean] = js.native
+  var space: js.UndefOr[Boolean] = js.undefined
   
-  var starHalf: js.UndefOr[String] = js.native
+  var starHalf: js.UndefOr[String] = js.undefined
   
-  var starOff: js.UndefOr[String] = js.native
+  var starOff: js.UndefOr[String] = js.undefined
   
-  var starOn: js.UndefOr[String] = js.native
+  var starOn: js.UndefOr[String] = js.undefined
   
-  var starType: js.UndefOr[String] = js.native
+  var starType: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var targetFormat: js.UndefOr[String] = js.native
+  var targetFormat: js.UndefOr[String] = js.undefined
   
-  var targetKeep: js.UndefOr[Boolean] = js.native
+  var targetKeep: js.UndefOr[Boolean] = js.undefined
   
-  var targetScore: js.UndefOr[String] = js.native
+  var targetScore: js.UndefOr[String] = js.undefined
   
-  var targetText: js.UndefOr[String] = js.native
+  var targetText: js.UndefOr[String] = js.undefined
   
-  var targetType: js.UndefOr[String] = js.native
+  var targetType: js.UndefOr[String] = js.undefined
 }
 object JQueryRatyOptions {
   
@@ -152,7 +150,7 @@ object JQueryRatyOptions {
     def setHintsVarargs(value: String*): Self = StObject.set(x, "hints", js.Array(value :_*))
     
     @scala.inline
-    def setIconRange(value: js.Array[js.Array[_]]): Self = StObject.set(x, "iconRange", value.asInstanceOf[js.Any])
+    def setIconRange(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "iconRange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIconRangeUndefined: Self = StObject.set(x, "iconRange", js.undefined)

@@ -4,15 +4,15 @@
 Typings are for version 3.4
 
 ## Library description:
-apache zookeeper client (zookeeper async API v3.4.x - v3.5.x)
+apache zookeeper client (zookeeper async API v3.4.x - v3.6.x)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zookeeper |
-| Keywords           | apache, zookeeper, client |
-| # releases         | 14 |
+| Keywords           | apache, zookeeper, client, typescript |
+| # releases         | 19 |
 | # dependents       | 22 |
-| # downloads        | 90139 |
+| # downloads        | 93793 |
 | # stars            | 13 |
 
 ## Links

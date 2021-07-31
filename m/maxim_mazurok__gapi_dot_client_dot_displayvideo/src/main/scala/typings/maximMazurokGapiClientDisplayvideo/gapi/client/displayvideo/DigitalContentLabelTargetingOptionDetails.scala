@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DigitalContentLabelTargetingOptionDetails extends StObject {
   
   /** Output only. An enum for the content label brand safety tiers. */
-  var contentRatingTier: js.UndefOr[String] = js.native
+  var contentRatingTier: js.UndefOr[String] = js.undefined
 }
 object DigitalContentLabelTargetingOptionDetails {
   

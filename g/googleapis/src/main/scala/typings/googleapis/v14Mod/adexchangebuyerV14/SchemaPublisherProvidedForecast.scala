@@ -2,29 +2,27 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This message carries publisher provided forecasting information.
   */
-@js.native
 trait SchemaPublisherProvidedForecast extends StObject {
   
   /**
     * Publisher provided dimensions. E.g. geo, sizes etc...
     */
-  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Publisher provided weekly impressions.
     */
-  var weeklyImpressions: js.UndefOr[String] = js.native
+  var weeklyImpressions: js.UndefOr[String] = js.undefined
   
   /**
     * Publisher provided weekly uniques.
     */
-  var weeklyUniques: js.UndefOr[String] = js.native
+  var weeklyUniques: js.UndefOr[String] = js.undefined
 }
 object SchemaPublisherProvidedForecast {
   

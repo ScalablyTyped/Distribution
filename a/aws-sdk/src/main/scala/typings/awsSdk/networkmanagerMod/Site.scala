@@ -2,51 +2,49 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Site extends StObject {
   
   /**
     * The date and time that the site was created.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the site.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: js.UndefOr[String] = js.native
+  var GlobalNetworkId: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the site.
     */
-  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.networkmanagerMod.Location] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the site.
     */
-  var SiteArn: js.UndefOr[String] = js.native
+  var SiteArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.native
+  var SiteId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the site.
     */
-  var State: js.UndefOr[SiteState] = js.native
+  var State: js.UndefOr[SiteState] = js.undefined
   
   /**
     * The tags for the site.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object Site {
   

@@ -25,7 +25,6 @@ import typings.typescript.mod.TypeFlags
 import typings.typescript.mod.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object strictBooleanExpressionsRuleMod {
@@ -92,10 +91,11 @@ object strictBooleanExpressionsRuleMod {
   /* augmented module */
   object typescriptAugmentingMod {
     
-    @js.native
-    trait IntrinsicType extends Type {
+    trait IntrinsicType
+      extends StObject
+         with Type {
       
-      var intrinsicName: String = js.native
+      var intrinsicName: String
     }
     object IntrinsicType {
       

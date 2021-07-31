@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolUserPoolAddOns extends StObject {
   
   /**
     * The mode for advanced security, must be one of `OFF`, `AUDIT` or `ENFORCED`.
     */
-  var advancedSecurityMode: Input[String] = js.native
+  var advancedSecurityMode: Input[String]
 }
 object UserPoolUserPoolAddOns {
   

@@ -14,29 +14,27 @@ import typings.vscodeLanguageclient.anon.IncludeDeclaration
 import typings.vscodeLanguageclient.anon.Placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _Middleware extends StObject {
   
-  var didChange: js.UndefOr[NextSignature[TextDocumentChangeEvent, Unit]] = js.native
+  var didChange: js.UndefOr[NextSignature[TextDocumentChangeEvent, Unit]] = js.undefined
   
-  var didClose: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.native
+  var didClose: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
   
-  var didOpen: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.native
+  var didOpen: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
   
-  var didSave: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.native
+  var didSave: js.UndefOr[NextSignature[typings.vscode.mod.TextDocument, Unit]] = js.undefined
   
   var executeCommand: js.UndefOr[
     js.ThisFunction3[
       /* this */ Unit, 
       /* command */ String, 
-      /* args */ js.Array[_], 
+      /* args */ js.Array[js.Any], 
       /* next */ ExecuteCommandSignature, 
-      ProviderResult[_]
+      ProviderResult[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var handleDiagnostics: js.UndefOr[
     js.ThisFunction3[
@@ -46,7 +44,7 @@ trait _Middleware extends StObject {
       /* next */ HandleDiagnosticsSignature, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var prepareRename: js.UndefOr[
     js.ThisFunction4[
@@ -57,7 +55,7 @@ trait _Middleware extends StObject {
       /* next */ PrepareRenameSignature, 
       ProviderResult[typings.vscode.mod.Range | Placeholder]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideCodeActions: js.UndefOr[
     js.ThisFunction5[
@@ -69,7 +67,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideCodeActionsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.Command | typings.vscode.mod.CodeAction]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideCodeLenses: js.UndefOr[
     js.ThisFunction3[
@@ -79,7 +77,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideCodeLensesSignature, 
       ProviderResult[js.Array[typings.vscode.mod.CodeLens]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideCompletionItem: js.UndefOr[
     js.ThisFunction5[
@@ -93,7 +91,7 @@ trait _Middleware extends StObject {
         js.Array[typings.vscode.mod.CompletionItem] | typings.vscode.mod.CompletionList[typings.vscode.mod.CompletionItem]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDefinition: js.UndefOr[
     js.ThisFunction4[
@@ -104,7 +102,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideDefinitionSignature, 
       ProviderResult[Definition | js.Array[DefinitionLink]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDocumentFormattingEdits: js.UndefOr[
     js.ThisFunction4[
@@ -115,7 +113,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideDocumentFormattingEditsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.TextEdit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDocumentHighlights: js.UndefOr[
     js.ThisFunction4[
@@ -126,7 +124,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideDocumentHighlightsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.DocumentHighlight]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDocumentLinks: js.UndefOr[
     js.ThisFunction3[
@@ -136,7 +134,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideDocumentLinksSignature, 
       ProviderResult[js.Array[typings.vscode.mod.DocumentLink]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDocumentRangeFormattingEdits: js.UndefOr[
     js.ThisFunction5[
@@ -148,7 +146,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideDocumentRangeFormattingEditsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.TextEdit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideDocumentSymbols: js.UndefOr[
     js.ThisFunction3[
@@ -160,7 +158,7 @@ trait _Middleware extends StObject {
         js.Array[typings.vscode.mod.DocumentSymbol | typings.vscode.mod.SymbolInformation]
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideHover: js.UndefOr[
     js.ThisFunction4[
@@ -171,7 +169,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideHoverSignature, 
       ProviderResult[typings.vscode.mod.Hover]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideOnTypeFormattingEdits: js.UndefOr[
     js.ThisFunction6[
@@ -184,7 +182,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideOnTypeFormattingEditsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.TextEdit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideReferences: js.UndefOr[
     js.ThisFunction5[
@@ -196,7 +194,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideReferencesSignature, 
       ProviderResult[js.Array[typings.vscode.mod.Location]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideRenameEdits: js.UndefOr[
     js.ThisFunction5[
@@ -208,7 +206,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideRenameEditsSignature, 
       ProviderResult[typings.vscode.mod.WorkspaceEdit]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideSignatureHelp: js.UndefOr[
     js.ThisFunction5[
@@ -220,7 +218,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideSignatureHelpSignature, 
       ProviderResult[SignatureHelp]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var provideWorkspaceSymbols: js.UndefOr[
     js.ThisFunction3[
@@ -230,7 +228,7 @@ trait _Middleware extends StObject {
       /* next */ ProvideWorkspaceSymbolsSignature, 
       ProviderResult[js.Array[typings.vscode.mod.SymbolInformation]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var resolveCodeLens: js.UndefOr[
     js.ThisFunction3[
@@ -240,7 +238,7 @@ trait _Middleware extends StObject {
       /* next */ ResolveCodeLensSignature, 
       ProviderResult[typings.vscode.mod.CodeLens]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var resolveCompletionItem: js.UndefOr[
     js.ThisFunction3[
@@ -250,7 +248,7 @@ trait _Middleware extends StObject {
       /* next */ ResolveCompletionItemSignature, 
       ProviderResult[typings.vscode.mod.CompletionItem]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var resolveDocumentLink: js.UndefOr[
     js.ThisFunction3[
@@ -260,15 +258,15 @@ trait _Middleware extends StObject {
       /* next */ ResolveDocumentLinkSignature, 
       ProviderResult[typings.vscode.mod.DocumentLink]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var willSave: js.UndefOr[NextSignature[TextDocumentWillSaveEvent, Unit]] = js.native
+  var willSave: js.UndefOr[NextSignature[TextDocumentWillSaveEvent, Unit]] = js.undefined
   
   var willSaveWaitUntil: js.UndefOr[
     NextSignature[TextDocumentWillSaveEvent, Thenable[js.Array[typings.vscode.mod.TextEdit]]]
-  ] = js.native
+  ] = js.undefined
   
-  var workspace: js.UndefOr[WorkspaceMiddleware] = js.native
+  var workspace: js.UndefOr[WorkspaceMiddleware] = js.undefined
 }
 object _Middleware {
   
@@ -310,9 +308,9 @@ object _Middleware {
       value: js.ThisFunction3[
           /* this */ Unit, 
           /* command */ String, 
-          /* args */ js.Array[_], 
+          /* args */ js.Array[js.Any], 
           /* next */ ExecuteCommandSignature, 
-          ProviderResult[_]
+          ProviderResult[js.Any]
         ]
     ): Self = StObject.set(x, "executeCommand", value.asInstanceOf[js.Any])
     

@@ -9,33 +9,31 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonGridCellTypesMod {
   
-  @js.native
   trait IButtonGridCellProps[T] extends StObject {
     
     /**
       * Optional, the CSS class used for when the cell is disabled
       */
-    var cellDisabledStyle: js.UndefOr[js.Array[String]] = js.native
+    var cellDisabledStyle: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Optional, the CSS class used for when the cell is selected
       */
-    var cellIsSelectedStyle: js.UndefOr[js.Array[String]] = js.native
+    var cellIsSelectedStyle: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Optional, className(s) to apply
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional, if the this option should be diabled
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Method to provide the classnames to style a button.
@@ -55,86 +53,86 @@ object buttonGridCellTypesMod {
           /* isSplit */ js.UndefOr[Boolean], 
           IButtonClassNames
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Arbitrary unique string associated with this option
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Index for this option
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * The option that will be made available to the user
       */
-    var item: T = js.native
+    var item: T
     
     /**
       * The label for this item.
       * Visible text if this item is a header,
       * tooltip if is this item is normal
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * The on click handler
       */
-    var onClick: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.undefined
     
     /**
       * Optional, the onFocus handler
       */
-    var onFocus: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* item */ T, Unit]] = js.undefined
     
     /**
       * Optional, the onHover handler
       */
-    var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], Unit]] = js.native
+    var onHover: js.UndefOr[js.Function1[/* item */ js.UndefOr[T], Unit]] = js.undefined
     
     /**
       * Optional, onkeydown handler
       */
-    var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], Unit]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* ev */ KeyboardEvent[HTMLButtonElement], Unit]] = js.undefined
     
     /**
       * Optional, mouseEnter handler.
       * @returns true if the event should be processed, false otherwise
       */
-    var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
     
     /**
       * Optional, mouseLeave handler
       */
-    var onMouseLeave: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * Optional, mouseMove handler
       * @returns true if the event should be processed, false otherwise
       */
-    var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Boolean]] = js.undefined
     
     /**
       * The render callback to handle rendering the item
       */
-    def onRenderItem(item: T): Element = js.native
+    def onRenderItem(item: T): Element
     
     /**
       * Optional, onWheel handler
       */
-    var onWheel: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.native
+    var onWheel: js.UndefOr[js.Function1[/* ev */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * The accessible role for this option
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Optional, if the cell is currently selected
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object IButtonGridCellProps {
     
@@ -145,7 +143,7 @@ object buttonGridCellTypesMod {
     }
     
     @scala.inline
-    implicit class IButtonGridCellPropsMutableBuilder[Self <: IButtonGridCellProps[_], T] (val x: Self with IButtonGridCellProps[T]) extends AnyVal {
+    implicit class IButtonGridCellPropsMutableBuilder[Self <: IButtonGridCellProps[?], T] (val x: Self & IButtonGridCellProps[T]) extends AnyVal {
       
       @scala.inline
       def setCellDisabledStyle(value: js.Array[String]): Self = StObject.set(x, "cellDisabledStyle", value.asInstanceOf[js.Any])

@@ -2,56 +2,54 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobSummary extends StObject {
   
   /**
     *  The commit ID from a third-party repository provider for the job. 
     */
-  var commitId: CommitId = js.native
+  var commitId: CommitId
   
   /**
     *  The commit message from a third-party repository provider for the job. 
     */
-  var commitMessage: CommitMessage = js.native
+  var commitMessage: CommitMessage
   
   /**
     *  The commit date and time for the job. 
     */
-  var commitTime: CommitTime = js.native
+  var commitTime: CommitTime
   
   /**
     *  The end date and time for the job. 
     */
-  var endTime: js.UndefOr[EndTime] = js.native
+  var endTime: js.UndefOr[EndTime] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) for the job. 
     */
-  var jobArn: JobArn = js.native
+  var jobArn: JobArn
   
   /**
     *  The unique ID for the job. 
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     *  The type for the job. If the value is RELEASE, the job was manually released from its source by using the StartJob API. If the value is RETRY, the job was manually retried using the StartJob API. If the value is WEB_HOOK, the job was automatically triggered by webhooks. 
     */
-  var jobType: JobType = js.native
+  var jobType: JobType
   
   /**
     *  The start date and time for the job. 
     */
-  var startTime: StartTime = js.native
+  var startTime: StartTime
   
   /**
     *  The current status for the job. 
     */
-  var status: JobStatus = js.native
+  var status: JobStatus
 }
 object JobSummary {
   

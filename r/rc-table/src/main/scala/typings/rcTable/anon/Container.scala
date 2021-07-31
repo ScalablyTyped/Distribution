@@ -4,21 +4,19 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: Window | HTMLElement = js.native
+  var container: Window | HTMLElement
   
-  var isSticky: Boolean = js.native
+  var isSticky: Boolean
   
-  var offsetHeader: Double = js.native
+  var offsetHeader: Double
   
-  var offsetScroll: Double = js.native
+  var offsetScroll: Double
   
-  var stickyClassName: String = js.native
+  var stickyClassName: String
 }
 object Container {
   

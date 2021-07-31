@@ -2,46 +2,44 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceConnector extends StObject {
   
   /**
     * The AWS Region in which the Amazon Chime Voice Connector is created. Default: us-east-1.
     */
-  var AwsRegion: js.UndefOr[VoiceConnectorAwsRegion] = js.native
+  var AwsRegion: js.UndefOr[VoiceConnectorAwsRegion] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector creation timestamp, in ISO 8601 format.
     */
-  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The name of the Amazon Chime Voice Connector.
     */
-  var Name: js.UndefOr[VoiceConnectorName] = js.native
+  var Name: js.UndefOr[VoiceConnectorName] = js.undefined
   
   /**
     * The outbound host name for the Amazon Chime Voice Connector.
     */
-  var OutboundHostName: js.UndefOr[String] = js.native
+  var OutboundHostName: js.UndefOr[String] = js.undefined
   
   /**
     * Designates whether encryption is required for the Amazon Chime Voice Connector.
     */
-  var RequireEncryption: js.UndefOr[Boolean] = js.native
+  var RequireEncryption: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The updated Amazon Chime Voice Connector timestamp, in ISO 8601 format.
     */
-  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: js.UndefOr[NonEmptyString] = js.native
+  var VoiceConnectorId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object VoiceConnector {
   

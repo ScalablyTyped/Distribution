@@ -5,21 +5,19 @@ import typings.lightMyRequest.mod.Request
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Close extends StObject {
     
-    var close: Boolean = js.native
+    var close: Boolean
     
-    var end: Boolean = js.native
+    var end: Boolean
     
-    var error: Boolean = js.native
+    var error: Boolean
     
-    var split: Boolean = js.native
+    var split: Boolean
   }
   object Close {
     
@@ -46,18 +44,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: js.UndefOr[String | Double] = js.native
+    var port: js.UndefOr[String | Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[String | (StringDictionary[String | js.Array[String]])] = js.native
+    var query: js.UndefOr[String | (StringDictionary[String | js.Array[String]])] = js.undefined
   }
   object Hostname {
     
@@ -99,12 +96,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Req extends StObject {
     
-    var req: Request = js.native
+    var req: Request
     
-    var res: ServerResponse = js.native
+    var res: ServerResponse
   }
   object Req {
     

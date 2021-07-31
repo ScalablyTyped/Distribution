@@ -12,7 +12,7 @@ DynamoDB data mapper
 | Keywords           | datamapper, DynamoDB, dynamodb, aws, amazon, nosql |
 | # releases         | 2 |
 | # dependents       | 10 |
-| # downloads        | 214454 |
+| # downloads        | 223413 |
 | # stars            | 5 |
 
 ## Links

@@ -2,19 +2,19 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICandleData extends ISeriesData {
+trait ICandleData
+  extends StObject
+     with ISeriesData {
   
-  var close: js.Array[Double] = js.native
+  var close: js.Array[Double]
   
-  var high: js.Array[Double] = js.native
+  var high: js.Array[Double]
   
-  var low: js.Array[Double] = js.native
+  var low: js.Array[Double]
   
-  var open: js.Array[Double] = js.native
+  var open: js.Array[Double]
 }
 object ICandleData {
   

@@ -4,17 +4,15 @@ import typings.yandexMaps.yandexMapsStrings.yandexNumbersignairPanorama
 import typings.yandexMaps.yandexMapsStrings.yandexNumbersignpanorama
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: js.UndefOr[js.Array[Double] | String] = js.native
+  var direction: js.UndefOr[js.Array[Double] | String] = js.undefined
   
-  var layer: js.UndefOr[yandexNumbersignpanorama | yandexNumbersignairPanorama] = js.native
+  var layer: js.UndefOr[yandexNumbersignpanorama | yandexNumbersignairPanorama] = js.undefined
   
-  var span: js.UndefOr[js.Array[Double] | String] = js.native
+  var span: js.UndefOr[js.Array[Double] | String] = js.undefined
 }
 object Direction {
   

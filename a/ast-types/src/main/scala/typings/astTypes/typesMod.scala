@@ -5,23 +5,25 @@ import typings.astTypes.anon.Builders
 import typings.astTypes.astTypesMod.Fork
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @JSImport("ast-types/lib/types", JSImport.Default)
+  @JSImport("ast-types/lib/types", JSImport.Namespace)
   @js.native
-  def default(_fork: Fork): Builders = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(_fork: Fork): Builders = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_fork.asInstanceOf[js.Any]).asInstanceOf[Builders]
   
   @JSImport("ast-types/lib/types", "Def")
   @js.native
   abstract class Def[T] protected () extends StObject {
     def this(`type`: Type[T], typeName: String) = this()
     
-    var allFields: StringDictionary[FieldType[_]] = js.native
+    var allFields: StringDictionary[FieldType[js.Any]] = js.native
     
-    var allSupertypes: StringDictionary[Def[_]] = js.native
+    var allSupertypes: StringDictionary[Def[js.Any]] = js.native
     
     var baseNames: js.Array[String] = js.native
     
@@ -40,17 +42,17 @@ object typesMod {
     def checkAllFields(value: js.Any, deep: js.Any): Boolean = js.native
     
     def field(name: String, `type`: js.Any): this.type = js.native
-    def field(name: String, `type`: js.Any, defaultFn: js.UndefOr[scala.Nothing], hidden: Boolean): this.type = js.native
     def field(name: String, `type`: js.Any, defaultFn: js.Function): this.type = js.native
     def field(name: String, `type`: js.Any, defaultFn: js.Function, hidden: Boolean): this.type = js.native
+    def field(name: String, `type`: js.Any, defaultFn: Unit, hidden: Boolean): this.type = js.native
     
     var fieldNames: js.Array[String] = js.native
     
     var finalized: Boolean = js.native
     
-    def isSupertypeOf(that: Def[_]): Boolean = js.native
+    def isSupertypeOf(that: Def[js.Any]): Boolean = js.native
     
-    var ownFields: StringDictionary[FieldType[_]] = js.native
+    var ownFields: StringDictionary[FieldType[js.Any]] = js.native
     
     var supertypeList: js.Array[String] = js.native
     
@@ -59,10 +61,9 @@ object typesMod {
     val typeName: String = js.native
   }
   
-  @js.native
   trait ASTNode extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ASTNode {
     
@@ -95,10 +96,11 @@ object typesMod {
   
   @js.native
   trait ArrayType[T]
-    extends BaseType[T]
+    extends StObject
+       with BaseType[T]
        with Type[T] {
     
-    val elemType: Type[_] = js.native
+    val elemType: Type[js.Any] = js.native
     
     val kind: typings.astTypes.astTypesStrings.ArrayType = js.native
   }
@@ -125,18 +127,17 @@ object typesMod {
   
   type Deep = Boolean | (js.Function2[/* type */ Type[js.Any], /* value */ js.Any, Unit])
   
-  @js.native
   trait Field[T] extends StObject {
     
-    val defaultFn: js.UndefOr[js.Function] = js.native
+    val defaultFn: js.UndefOr[js.Function] = js.undefined
     
-    def getValue(obj: StringDictionary[js.Any]): js.Any = js.native
+    def getValue(obj: StringDictionary[js.Any]): js.Any
     
-    val hidden: Boolean = js.native
+    val hidden: Boolean
     
-    val name: String = js.native
+    val name: String
     
-    val `type`: Type[T] = js.native
+    val `type`: Type[T]
   }
   object Field {
     
@@ -148,7 +149,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field[_], T] (val x: Self with Field[T]) extends AnyVal {
+    implicit class FieldMutableBuilder[Self <: Field[?], T] (val x: Self & Field[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultFn(value: js.Function): Self = StObject.set(x, "defaultFn", value.asInstanceOf[js.Any])
@@ -174,7 +175,8 @@ object typesMod {
   
   @js.native
   trait IdentityType[T]
-    extends BaseType[T]
+    extends StObject
+       with BaseType[T]
        with Type[T] {
     
     val kind: typings.astTypes.astTypesStrings.IdentityType = js.native
@@ -184,27 +186,30 @@ object typesMod {
   
   @js.native
   trait ObjectType[T]
-    extends BaseType[T]
+    extends StObject
+       with BaseType[T]
        with Type[T] {
     
-    val fields: js.Array[FieldType[_]] = js.native
+    val fields: js.Array[FieldType[js.Any]] = js.native
     
     val kind: typings.astTypes.astTypesStrings.ObjectType = js.native
   }
   
   @js.native
   trait OrType[T]
-    extends BaseType[T]
+    extends StObject
+       with BaseType[T]
        with Type[T] {
     
     val kind: typings.astTypes.astTypesStrings.OrType = js.native
     
-    val types: js.Array[Type[_]] = js.native
+    val types: js.Array[Type[js.Any]] = js.native
   }
   
   @js.native
   trait PredicateType[T]
-    extends BaseType[T]
+    extends StObject
+       with BaseType[T]
        with Type[T] {
     
     val kind: typings.astTypes.astTypesStrings.PredicateType = js.native

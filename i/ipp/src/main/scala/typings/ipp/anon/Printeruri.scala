@@ -4,27 +4,25 @@ import typings.ipp.mod.CharacterSet
 import typings.ipp.mod.MimeMediaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Printeruri extends StObject {
   
-  var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
+  var `attributes-charset`: js.UndefOr[CharacterSet] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `document-format`: js.UndefOr[MimeMediaType] = js.native
+  var `document-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
   var `requested-attributes`: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 385 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var `requesting-user-name`: String = js.native
+  var `requesting-user-name`: String
 }
 object Printeruri {
   

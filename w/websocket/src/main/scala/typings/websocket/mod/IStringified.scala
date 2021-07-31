@@ -2,13 +2,11 @@ package typings.websocket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStringified extends StObject {
   
-  def toString(args: js.Any*): String = js.native
+  def toString(args: js.Any*): String
 }
 object IStringified {
   

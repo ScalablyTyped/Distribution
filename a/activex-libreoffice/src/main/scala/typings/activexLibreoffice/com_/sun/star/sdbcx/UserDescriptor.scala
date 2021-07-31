@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to create a new user in a database.
   * @see com.sun.star.sdbcx.User
   */
-@js.native
-trait UserDescriptor extends Descriptor {
+trait UserDescriptor
+  extends StObject
+     with Descriptor {
   
   /** is the password for the user. */
-  var Password: String = js.native
+  var Password: String
 }
 object UserDescriptor {
   

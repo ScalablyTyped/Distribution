@@ -8,53 +8,51 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSourceTableDetailsMod {
   
-  @js.native
   trait SourceTableDetails extends StObject {
     
     /**
       * <p>Number of items in the table. Please note this is an approximate value. </p>
       */
-    var ItemCount: js.UndefOr[Double] = js.native
+    var ItemCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>Schema of the table. </p>
       */
-    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement] = js.native
+    var KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]
     
     /**
       * <p>Read IOPs and Write IOPS on the table when the backup was created.</p>
       */
-    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput = js.native
+    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput
     
     /**
       * <p>ARN of the table for which backup was created. </p>
       */
-    var TableArn: js.UndefOr[String] = js.native
+    var TableArn: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Time when the source table was created. </p>
       */
-    var TableCreationDateTime: Date | String | Double = js.native
+    var TableCreationDateTime: Date | String | Double
     
     /**
       * <p>Unique identifier for the table for which the backup was created. </p>
       */
-    var TableId: String = js.native
+    var TableId: String
     
     /**
       * <p>The name of the table for which the backup was created. </p>
       */
-    var TableName: String = js.native
+    var TableName: String
     
     /**
       * <p>Size of the table in bytes. Please note this is an approximate value.</p>
       */
-    var TableSizeBytes: js.UndefOr[Double] = js.native
+    var TableSizeBytes: js.UndefOr[Double] = js.undefined
   }
   object SourceTableDetails {
     
@@ -111,26 +109,27 @@ object typesSourceTableDetailsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSourceTableDetails extends SourceTableDetails {
+  trait UnmarshalledSourceTableDetails
+    extends StObject
+       with SourceTableDetails {
     
     /**
       * <p>Schema of the table. </p>
       */
     @JSName("KeySchema")
-    var KeySchema_UnmarshalledSourceTableDetails: js.Array[UnmarshalledKeySchemaElement] = js.native
+    var KeySchema_UnmarshalledSourceTableDetails: js.Array[UnmarshalledKeySchemaElement]
     
     /**
       * <p>Read IOPs and Write IOPS on the table when the backup was created.</p>
       */
     @JSName("ProvisionedThroughput")
-    var ProvisionedThroughput_UnmarshalledSourceTableDetails: UnmarshalledProvisionedThroughput = js.native
+    var ProvisionedThroughput_UnmarshalledSourceTableDetails: UnmarshalledProvisionedThroughput
     
     /**
       * <p>Time when the source table was created. </p>
       */
     @JSName("TableCreationDateTime")
-    var TableCreationDateTime_UnmarshalledSourceTableDetails: Date = js.native
+    var TableCreationDateTime_UnmarshalledSourceTableDetails: Date
   }
   object UnmarshalledSourceTableDetails {
     

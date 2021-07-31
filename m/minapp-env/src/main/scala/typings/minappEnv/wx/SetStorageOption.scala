@@ -2,26 +2,24 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetStorageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[SetStorageCompleteCallback] = js.native
+  var complete: js.UndefOr[SetStorageCompleteCallback] = js.undefined
   
   /** 需要存储的内容。只支持原生类型、Date、及能够通过`JSON.stringify`序列化的对象。 */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[SetStorageFailCallback] = js.native
+  var fail: js.UndefOr[SetStorageFailCallback] = js.undefined
   
   /** 本地缓存中指定的 key */
-  var key: String = js.native
+  var key: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[SetStorageSuccessCallback] = js.native
+  var success: js.UndefOr[SetStorageSuccessCallback] = js.undefined
 }
 object SetStorageOption {
   

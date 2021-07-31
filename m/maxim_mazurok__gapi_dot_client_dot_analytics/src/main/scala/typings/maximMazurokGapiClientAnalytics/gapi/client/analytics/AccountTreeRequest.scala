@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountTreeRequest extends StObject {
   
-  var accountName: js.UndefOr[String] = js.native
+  var accountName: js.UndefOr[String] = js.undefined
   
   /** Resource type for account ticket. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var profileName: js.UndefOr[String] = js.native
+  var profileName: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var webpropertyName: js.UndefOr[String] = js.native
+  var webpropertyName: js.UndefOr[String] = js.undefined
   
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
 }
 object AccountTreeRequest {
   

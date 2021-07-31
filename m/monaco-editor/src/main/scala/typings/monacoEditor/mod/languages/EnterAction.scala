@@ -2,26 +2,24 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterAction extends StObject {
   
   /**
     * Describes text to be appended after the new line and after the indentation.
     */
-  var appendText: js.UndefOr[String] = js.native
+  var appendText: js.UndefOr[String] = js.undefined
   
   /**
     * Describe what to do with the indentation.
     */
-  var indentAction: IndentAction = js.native
+  var indentAction: IndentAction
   
   /**
     * Describes the number of characters to remove from the new line's indentation.
     */
-  var removeText: js.UndefOr[Double] = js.native
+  var removeText: js.UndefOr[Double] = js.undefined
 }
 object EnterAction {
   

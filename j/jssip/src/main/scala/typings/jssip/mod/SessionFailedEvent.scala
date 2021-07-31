@@ -2,17 +2,15 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionFailedEvent extends StObject {
   
-  var cause: String = js.native
+  var cause: String
   
-  var message: js.UndefOr[IncomingResponse] = js.native
+  var message: js.UndefOr[IncomingResponse] = js.undefined
   
-  var originator: String = js.native
+  var originator: String
 }
 object SessionFailedEvent {
   

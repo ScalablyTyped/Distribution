@@ -2,17 +2,15 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyString[RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] extends StObject {
   
-  var key: String = js.native
+  var key: String
   
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase[RouteName] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object KeyString {
   
@@ -23,7 +21,7 @@ object KeyString {
   }
   
   @scala.inline
-  implicit class KeyStringMutableBuilder[Self <: KeyString[_], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self with KeyString[RouteName]) extends AnyVal {
+  implicit class KeyStringMutableBuilder[Self <: KeyString[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self & KeyString[RouteName]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

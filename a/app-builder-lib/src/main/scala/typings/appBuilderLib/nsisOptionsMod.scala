@@ -7,36 +7,34 @@ import typings.appBuilderLib.commonWindowsInstallerConfigurationMod.CommonWindow
 import typings.appBuilderLib.coreMod.TargetSpecificOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nsisOptionsMod {
   
-  @js.native
   trait CommonNsisOptions extends StObject {
     
     /**
       * See [GUID vs Application Name](../configuration/nsis#guid-vs-application-name).
       */
-    val guid: js.UndefOr[String | Null] = js.native
+    val guid: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to create [Unicode installer](http://nsis.sourceforge.net/Docs/Chapter1.html#intro-unicode).
       * @default true
       */
-    val unicode: js.UndefOr[Boolean] = js.native
+    val unicode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @private
       * @default false
       */
-    val useZip: js.UndefOr[Boolean] = js.native
+    val useZip: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `warningsAsErrors` is `true` (default): NSIS will treat warnings as errors. If `warningsAsErrors` is `false`: NSIS will allow warnings.
       * @default true
       */
-    val warningsAsErrors: js.UndefOr[Boolean] = js.native
+    val warningsAsErrors: js.UndefOr[Boolean] = js.undefined
   }
   object CommonNsisOptions {
     
@@ -78,9 +76,9 @@ object nsisOptionsMod {
     }
   }
   
-  @js.native
   trait NsisOptions
-    extends CommonNsisOptions
+    extends StObject
+       with CommonNsisOptions
        with CommonWindowsInstallerConfiguration
        with TargetSpecificOptions {
     
@@ -88,69 +86,69 @@ object nsisOptionsMod {
       * *assisted installer only.* Allow requesting for elevation. If false, user will have to restart installer with elevated permissions.
       * @default true
       */
-    val allowElevation: js.UndefOr[Boolean] = js.native
+    val allowElevation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *assisted installer only.* Whether to allow user to change installation directory.
       * @default false
       */
-    val allowToChangeInstallationDirectory: js.UndefOr[Boolean] = js.native
+    val allowToChangeInstallationDirectory: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *one-click installer only.* Whether to delete app data on uninstall.
       * @default false
       */
-    val deleteAppDataOnUninstall: js.UndefOr[Boolean] = js.native
+    val deleteAppDataOnUninstall: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @private
       */
-    var differentialPackage: js.UndefOr[Boolean] = js.native
+    var differentialPackage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to display a language selection dialog. Not recommended (by default will be detected using OS language).
       * @default false
       */
-    val displayLanguageSelector: js.UndefOr[Boolean] = js.native
+    val displayLanguageSelector: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to NSIS include script to customize installer. Defaults to `build/installer.nsh`. See [Custom NSIS script](#custom-nsis-script).
       */
-    val include: js.UndefOr[String | Null] = js.native
+    val include: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *assisted installer only.* `MUI_HEADERIMAGE`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * @default build/installerHeader.bmp
       */
-    val installerHeader: js.UndefOr[String | Null] = js.native
+    val installerHeader: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *one-click installer only.* The path to header icon (above the progress bar), relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to `build/installerHeaderIcon.ico` or application icon.
       */
-    val installerHeaderIcon: js.UndefOr[String | Null] = js.native
+    val installerHeaderIcon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to installer icon, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to `build/installerIcon.ico` or application icon.
       */
-    val installerIcon: js.UndefOr[String | Null] = js.native
+    val installerIcon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The installer languages (e.g. `en_US`, `de_DE`). Change only if you understand what do you do and for what.
       */
-    val installerLanguages: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val installerLanguages: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * *assisted installer only.* `MUI_WELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to `build/installerSidebar.bmp` or `${NSISDIR}\\Contrib\\Graphics\\Wizard\\nsis3-metro.bmp`. Image size 164 × 314 pixels.
       */
-    val installerSidebar: js.UndefOr[String | Null] = js.native
+    val installerSidebar: js.UndefOr[String | Null] = js.undefined
     
     /**
       * [LCID Dec](https://msdn.microsoft.com/en-au/goglobal/bb964664.aspx), defaults to `1033`(`English - United States`).
       */
-    val language: js.UndefOr[String | Null] = js.native
+    val language: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to EULA license file. Defaults to `license.txt` or `eula.txt` (or uppercase variants). In addition to `txt, `rtf` and `html` supported (don't forget to use `target="_blank"` for links).
@@ -160,47 +158,47 @@ object nsisOptionsMod {
       *
       * Appropriate license file will be selected by user OS language.
       */
-    val license: js.UndefOr[String | Null] = js.native
+    val license: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to create multi-language installer. Defaults to `unicode` option value.
       */
-    val multiLanguageInstaller: js.UndefOr[Boolean] = js.native
+    val multiLanguageInstaller: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to pack the elevate executable (required for electron-updater if per-machine installer used or can be used in the future). Ignored if `perMachine` is set to `true`.
       * @default true
       */
-    val packElevateHelper: js.UndefOr[Boolean] = js.native
+    val packElevateHelper: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The file extension of files that will be not compressed. Applicable only for `extraResources` and `extraFiles` files.
       * @default [".avi", ".mov", ".m4v", ".mp4", ".m4p", ".qt", ".mkv", ".webm", ".vmdk"]
       */
-    val preCompressedFileExtensions: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val preCompressedFileExtensions: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * The path to NSIS script to customize installer. Defaults to `build/installer.nsi`. See [Custom NSIS script](#custom-nsis-script).
       */
-    val script: js.UndefOr[String | Null] = js.native
+    val script: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The uninstaller display name in the control panel.
       * @default ${productName} ${version}
       */
-    val uninstallDisplayName: js.UndefOr[String] = js.native
+    val uninstallDisplayName: js.UndefOr[String] = js.undefined
     
     /**
       * The path to uninstaller icon, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to `build/uninstallerIcon.ico` or application icon.
       */
-    val uninstallerIcon: js.UndefOr[String | Null] = js.native
+    val uninstallerIcon: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *assisted installer only.* `MUI_UNWELCOMEFINISHPAGE_BITMAP`, relative to the [build resources](/configuration/configuration#MetadataDirectories-buildResources) or to the project directory.
       * Defaults to `installerSidebar` option or `build/uninstallerSidebar.bmp` or `build/installerSidebar.bmp` or `${NSISDIR}\\Contrib\\Graphics\\Wizard\\nsis3-metro.bmp`
       */
-    val uninstallerSidebar: js.UndefOr[String | Null] = js.native
+    val uninstallerSidebar: js.UndefOr[String | Null] = js.undefined
   }
   object NsisOptions {
     
@@ -377,8 +375,9 @@ object nsisOptionsMod {
     }
   }
   
-  @js.native
-  trait NsisWebOptions extends NsisOptions {
+  trait NsisWebOptions
+    extends StObject
+       with NsisOptions {
     
     /**
       * The application package download URL. Optional — by default computed using publish configuration.
@@ -388,7 +387,7 @@ object nsisOptionsMod {
       *
       * Custom `X-Arch` http header is set to `32` or `64`.
       */
-    val appPackageUrl: js.UndefOr[String | Null] = js.native
+    val appPackageUrl: js.UndefOr[String | Null] = js.undefined
   }
   object NsisWebOptions {
     
@@ -412,28 +411,28 @@ object nsisOptionsMod {
     }
   }
   
-  @js.native
   trait PortableOptions
-    extends TargetSpecificOptions
+    extends StObject
+       with TargetSpecificOptions
        with CommonNsisOptions {
     
     /**
       * The [requested execution level](http://nsis.sourceforge.net/Reference/RequestExecutionLevel) for Windows.
       * @default user
       */
-    val requestExecutionLevel: js.UndefOr[user | highest | admin] = js.native
+    val requestExecutionLevel: js.UndefOr[user | highest | admin] = js.undefined
     
     /**
       * The image to show while the portable executable is extracting. This image must be a bitmap (`.bmp`) image.
       */
-    val splashImage: js.UndefOr[String | Null] = js.native
+    val splashImage: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The unpack directory name in [TEMP](https://www.askvg.com/where-does-windows-store-temporary-files-and-how-to-change-temp-folder-location/) directory.
       *
       * Defaults to [uuid](https://github.com/segmentio/ksuid) of build (changed on each build of portable executable).
       */
-    val unpackDirName: js.UndefOr[String] = js.native
+    val unpackDirName: js.UndefOr[String] = js.undefined
   }
   object PortableOptions {
     

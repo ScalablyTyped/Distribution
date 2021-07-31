@@ -10,7 +10,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applyMod {
@@ -21,13 +20,15 @@ object applyMod {
   /* static members */
   object Apply {
     
-    @JSImport("nodegit/apply", "Apply.apply")
+    @JSImport("nodegit/apply", "Apply")
     @js.native
-    def apply(repo: Repository, diff: Diff, location: LOCATION, options: ApplyOptions): js.Promise[Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/apply", "Apply.toTree")
-    @js.native
-    def toTree(repo: Repository, preimage: Tree, diff: Diff, options: ApplyOptions): js.Promise[Index] = js.native
+    @scala.inline
+    def apply(repo: Repository, diff: Diff, location: LOCATION, options: ApplyOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(repo.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    @scala.inline
+    def toTree(repo: Repository, preimage: Tree, diff: Diff, options: ApplyOptions): js.Promise[Index] = (^.asInstanceOf[js.Dynamic].applyDynamic("toTree")(repo.asInstanceOf[js.Any], preimage.asInstanceOf[js.Any], diff.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Index]]
     
     object FLAGS {
       

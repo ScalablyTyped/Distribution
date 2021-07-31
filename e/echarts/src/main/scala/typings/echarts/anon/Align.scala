@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Align extends js.Object {
+trait Align extends StObject {
   
   /**
     * Horizontal alignment of text, automatic by
@@ -26,7 +25,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.align
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * Background color of the text fregment.
@@ -50,7 +49,7 @@ trait Align extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.backgroundColor
     */
-  var backgroundColor: js.UndefOr[js.Object | String] = js.native
+  var backgroundColor: js.UndefOr[js.Object | String] = js.undefined
   
   /**
     * Border color of the text fregment.
@@ -63,7 +62,7 @@ trait Align extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.borderColor
     */
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Border radius of the text fregment.
@@ -71,7 +70,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.borderRadius
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * Border width of the text fregment.
@@ -79,7 +78,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.borderWidth
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * text color.
@@ -92,7 +91,7 @@ trait Align extends js.Object {
     * ""#fff""
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.color
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * font family
@@ -104,7 +103,7 @@ trait Align extends js.Object {
     * "sans-serif"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.fontFamily
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * font size
@@ -114,7 +113,7 @@ trait Align extends js.Object {
     * 12
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.fontSize
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * font style
@@ -130,7 +129,7 @@ trait Align extends js.Object {
     * "normal"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.fontStyle
     */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * font thick weight
@@ -148,7 +147,7 @@ trait Align extends js.Object {
     * "normal"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.fontWeight
     */
-  var fontWeight: js.UndefOr[String | Double] = js.native
+  var fontWeight: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Height of the text block.
@@ -166,7 +165,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.height
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Line height of the text fregment.
@@ -180,7 +179,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.lineHeight
     */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Padding of the text fregment, for example:
@@ -199,7 +198,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.padding
     */
-  var padding: js.UndefOr[js.Array[_] | Double] = js.native
+  var padding: js.UndefOr[js.Array[js.Any] | Double] = js.undefined
   
   /**
     * Show blur of the text block.
@@ -207,7 +206,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.shadowBlur
     */
-  var shadowBlur: js.UndefOr[Double] = js.native
+  var shadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow color of the text block.
@@ -217,7 +216,7 @@ trait Align extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.shadowColor
     */
-  var shadowColor: js.UndefOr[String] = js.native
+  var shadowColor: js.UndefOr[String] = js.undefined
   
   /**
     * Shadow X offset of the text block.
@@ -225,7 +224,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.shadowOffsetX
     */
-  var shadowOffsetX: js.UndefOr[Double] = js.native
+  var shadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow Y offset of the text block.
@@ -233,7 +232,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.shadowOffsetY
     */
-  var shadowOffsetY: js.UndefOr[Double] = js.native
+  var shadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Storke color of the text.
@@ -246,7 +245,7 @@ trait Align extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textBorderColor
     */
-  var textBorderColor: js.UndefOr[String] = js.native
+  var textBorderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Storke line width of the text.
@@ -254,7 +253,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textBorderWidth
     */
-  var textBorderWidth: js.UndefOr[Double] = js.native
+  var textBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow blue of the text itself.
@@ -262,7 +261,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textShadowBlur
     */
-  var textShadowBlur: js.UndefOr[Double] = js.native
+  var textShadowBlur: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow color of the text itself.
@@ -272,7 +271,7 @@ trait Align extends js.Object {
     * "transparent"
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textShadowColor
     */
-  var textShadowColor: js.UndefOr[String] = js.native
+  var textShadowColor: js.UndefOr[String] = js.undefined
   
   /**
     * Shadow X offset of the text itself.
@@ -280,7 +279,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textShadowOffsetX
     */
-  var textShadowOffsetX: js.UndefOr[Double] = js.native
+  var textShadowOffsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Shadow Y offset of the text itself.
@@ -288,7 +287,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.textShadowOffsetY
     */
-  var textShadowOffsetY: js.UndefOr[Double] = js.native
+  var textShadowOffsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical alignment of text, automatic by
@@ -309,7 +308,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.verticalAlign
     */
-  var verticalAlign: js.UndefOr[String] = js.native
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * Width of the text block.
@@ -340,7 +339,7 @@ trait Align extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-treemap.data.emphasis.upperLabel.rich.%3Cuser%20defined%20style%20name%3E.width
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object Align {
   
@@ -351,171 +350,159 @@ object Align {
   }
   
   @scala.inline
-  implicit class AlignOps[Self <: Align] (val x: Self) extends AnyVal {
+  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setBackgroundColor(value: js.Object | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAlign(value: String): Self = this.set("align", value.asInstanceOf[js.Any])
+    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     @scala.inline
-    def deleteAlign: Self = this.set("align", js.undefined)
+    def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBackgroundColor(value: js.Object | String): Self = this.set("backgroundColor", value.asInstanceOf[js.Any])
+    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
     @scala.inline
-    def deleteBackgroundColor: Self = this.set("backgroundColor", js.undefined)
+    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderColor(value: String): Self = this.set("borderColor", value.asInstanceOf[js.Any])
+    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
     @scala.inline
-    def deleteBorderColor: Self = this.set("borderColor", js.undefined)
+    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderRadius(value: Double): Self = this.set("borderRadius", value.asInstanceOf[js.Any])
+    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
     @scala.inline
-    def deleteBorderRadius: Self = this.set("borderRadius", js.undefined)
+    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBorderWidth(value: Double): Self = this.set("borderWidth", value.asInstanceOf[js.Any])
+    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def deleteBorderWidth: Self = this.set("borderWidth", js.undefined)
+    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColor(value: String): Self = this.set("color", value.asInstanceOf[js.Any])
+    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
     @scala.inline
-    def deleteColor: Self = this.set("color", js.undefined)
+    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontFamily(value: String): Self = this.set("fontFamily", value.asInstanceOf[js.Any])
+    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
     @scala.inline
-    def deleteFontFamily: Self = this.set("fontFamily", js.undefined)
+    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontSize(value: Double): Self = this.set("fontSize", value.asInstanceOf[js.Any])
+    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
     @scala.inline
-    def deleteFontSize: Self = this.set("fontSize", js.undefined)
+    def setFontWeight(value: String | Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontStyle(value: String): Self = this.set("fontStyle", value.asInstanceOf[js.Any])
+    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def deleteFontStyle: Self = this.set("fontStyle", js.undefined)
+    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFontWeight(value: String | Double): Self = this.set("fontWeight", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteFontWeight: Self = this.set("fontWeight", js.undefined)
+    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double | String): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPadding(value: js.Array[js.Any] | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLineHeight(value: Double): Self = this.set("lineHeight", value.asInstanceOf[js.Any])
+    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
     @scala.inline
-    def deleteLineHeight: Self = this.set("lineHeight", js.undefined)
+    def setPaddingVarargs(value: js.Any*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
     @scala.inline
-    def setPaddingVarargs(value: js.Any*): Self = this.set("padding", js.Array(value :_*))
+    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPadding(value: js.Array[_] | Double): Self = this.set("padding", value.asInstanceOf[js.Any])
+    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
     @scala.inline
-    def deletePadding: Self = this.set("padding", js.undefined)
+    def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowBlur(value: Double): Self = this.set("shadowBlur", value.asInstanceOf[js.Any])
+    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
     @scala.inline
-    def deleteShadowBlur: Self = this.set("shadowBlur", js.undefined)
+    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowColor(value: String): Self = this.set("shadowColor", value.asInstanceOf[js.Any])
+    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteShadowColor: Self = this.set("shadowColor", js.undefined)
+    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetX(value: Double): Self = this.set("shadowOffsetX", value.asInstanceOf[js.Any])
+    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetX: Self = this.set("shadowOffsetX", js.undefined)
+    def setTextBorderColor(value: String): Self = StObject.set(x, "textBorderColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setShadowOffsetY(value: Double): Self = this.set("shadowOffsetY", value.asInstanceOf[js.Any])
+    def setTextBorderColorUndefined: Self = StObject.set(x, "textBorderColor", js.undefined)
     
     @scala.inline
-    def deleteShadowOffsetY: Self = this.set("shadowOffsetY", js.undefined)
+    def setTextBorderWidth(value: Double): Self = StObject.set(x, "textBorderWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBorderColor(value: String): Self = this.set("textBorderColor", value.asInstanceOf[js.Any])
+    def setTextBorderWidthUndefined: Self = StObject.set(x, "textBorderWidth", js.undefined)
     
     @scala.inline
-    def deleteTextBorderColor: Self = this.set("textBorderColor", js.undefined)
+    def setTextShadowBlur(value: Double): Self = StObject.set(x, "textShadowBlur", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextBorderWidth(value: Double): Self = this.set("textBorderWidth", value.asInstanceOf[js.Any])
+    def setTextShadowBlurUndefined: Self = StObject.set(x, "textShadowBlur", js.undefined)
     
     @scala.inline
-    def deleteTextBorderWidth: Self = this.set("textBorderWidth", js.undefined)
+    def setTextShadowColor(value: String): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowBlur(value: Double): Self = this.set("textShadowBlur", value.asInstanceOf[js.Any])
+    def setTextShadowColorUndefined: Self = StObject.set(x, "textShadowColor", js.undefined)
     
     @scala.inline
-    def deleteTextShadowBlur: Self = this.set("textShadowBlur", js.undefined)
+    def setTextShadowOffsetX(value: Double): Self = StObject.set(x, "textShadowOffsetX", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowColor(value: String): Self = this.set("textShadowColor", value.asInstanceOf[js.Any])
+    def setTextShadowOffsetXUndefined: Self = StObject.set(x, "textShadowOffsetX", js.undefined)
     
     @scala.inline
-    def deleteTextShadowColor: Self = this.set("textShadowColor", js.undefined)
+    def setTextShadowOffsetY(value: Double): Self = StObject.set(x, "textShadowOffsetY", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowOffsetX(value: Double): Self = this.set("textShadowOffsetX", value.asInstanceOf[js.Any])
+    def setTextShadowOffsetYUndefined: Self = StObject.set(x, "textShadowOffsetY", js.undefined)
     
     @scala.inline
-    def deleteTextShadowOffsetX: Self = this.set("textShadowOffsetX", js.undefined)
+    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTextShadowOffsetY(value: Double): Self = this.set("textShadowOffsetY", value.asInstanceOf[js.Any])
+    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
     @scala.inline
-    def deleteTextShadowOffsetY: Self = this.set("textShadowOffsetY", js.undefined)
+    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setVerticalAlign(value: String): Self = this.set("verticalAlign", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteVerticalAlign: Self = this.set("verticalAlign", js.undefined)
-    
-    @scala.inline
-    def setWidth(value: Double | String): Self = this.set("width", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

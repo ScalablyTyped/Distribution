@@ -4,7 +4,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeSliderMod {
@@ -36,20 +35,21 @@ object rangeSliderMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IRangeSliderProps extends ISliderBaseProps {
+  trait IRangeSliderProps
+    extends StObject
+       with ISliderBaseProps {
     
     /** Callback invoked when the range value changes. */
-    var onChange: js.UndefOr[js.Function1[/* value */ NumberRange, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ NumberRange, Unit]] = js.undefined
     
     /** Callback invoked when a handle is released. */
-    var onRelease: js.UndefOr[js.Function1[/* value */ NumberRange, Unit]] = js.native
+    var onRelease: js.UndefOr[js.Function1[/* value */ NumberRange, Unit]] = js.undefined
     
     /**
       * Range value of slider. Handles will be rendered at each position in the range.
       * @default [0, 10]
       */
-    var value: js.UndefOr[NumberRange] = js.native
+    var value: js.UndefOr[NumberRange] = js.undefined
   }
   object IRangeSliderProps {
     

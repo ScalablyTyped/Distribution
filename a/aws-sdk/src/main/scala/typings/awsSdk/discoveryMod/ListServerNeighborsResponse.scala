@@ -2,26 +2,24 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListServerNeighborsResponse extends StObject {
   
   /**
     * Count of distinct servers that are one hop away from the given server.
     */
-  var knownDependencyCount: js.UndefOr[Long] = js.native
+  var knownDependencyCount: js.UndefOr[Long] = js.undefined
   
   /**
     * List of distinct servers that are one hop away from the given server.
     */
-  var neighbors: NeighborDetailsList = js.native
+  var neighbors: NeighborDetailsList
   
   /**
     * Token to retrieve the next set of results. For example, if you specified 100 IDs for ListServerNeighborsRequest$neighborConfigurationIds but set ListServerNeighborsRequest$maxResults to 10, you received a set of 10 results along with this token. Use this token in the next query to retrieve the next set of 10.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object ListServerNeighborsResponse {
   

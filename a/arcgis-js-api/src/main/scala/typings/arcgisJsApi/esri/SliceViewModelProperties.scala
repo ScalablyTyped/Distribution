@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliceViewModelProperties extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait SliceViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludeGroundSurface)
     */
-  var excludeGroundSurface: js.UndefOr[Boolean] = js.native
+  var excludeGroundSurface: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add layers to this collection to exclude them from the slice.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#excludedLayers)
     */
-  var excludedLayers: js.UndefOr[CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]] = js.native
+  var excludedLayers: js.UndefOr[CollectionProperties[LayerProperties | BuildingComponentSublayerProperties]] = js.undefined
   
   /**
     * The shape used to slice elements in a 3D scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape)
     */
-  var shape: js.UndefOr[SlicePlaneProperties] = js.native
+  var shape: js.UndefOr[SlicePlaneProperties] = js.undefined
   
   /**
     * Enable tilting the slice shape.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#tiltEnabled)
     */
-  var tiltEnabled: js.UndefOr[Boolean] = js.native
+  var tiltEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object SliceViewModelProperties {
   

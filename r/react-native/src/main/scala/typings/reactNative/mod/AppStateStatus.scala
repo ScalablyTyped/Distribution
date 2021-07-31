@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactNative.reactNativeStrings.background
   - typings.reactNative.reactNativeStrings.inactive
   - typings.reactNative.reactNativeStrings.unknown
-  - typings.reactNative.reactNativeStrings.extension
+  - typings.reactNative.reactNativeStrings.`extension`
 */
 trait AppStateStatus extends StObject
 object AppStateStatus {
@@ -22,7 +21,7 @@ object AppStateStatus {
   def background: typings.reactNative.reactNativeStrings.background = "background".asInstanceOf[typings.reactNative.reactNativeStrings.background]
   
   @scala.inline
-  def extension: typings.reactNative.reactNativeStrings.extension = "extension".asInstanceOf[typings.reactNative.reactNativeStrings.extension]
+  def `extension`: typings.reactNative.reactNativeStrings.`extension` = "extension".asInstanceOf[typings.reactNative.reactNativeStrings.`extension`]
   
   @scala.inline
   def inactive: typings.reactNative.reactNativeStrings.inactive = "inactive".asInstanceOf[typings.reactNative.reactNativeStrings.inactive]

@@ -51,156 +51,166 @@ import typings.semanticUiModal.semanticUiModalStrings.transition
 import typings.semanticUiModal.semanticUiModalStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def modal(): JQuery = js.native
-  def modal(behavior: setting, name: allowMultiple, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: allowMultiple, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: autofocus, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: autofocus, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def modal(behavior: setting, name: closable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: closable, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
-  def modal(behavior: setting, name: context, value: String): JQuery = js.native
-  def modal(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def modal(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: detachable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: dimmerSettings, value: js.UndefOr[scala.Nothing]): DimmerSettings = js.native
-  def modal(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def modal(behavior: setting, name: duration, value: Double): JQuery = js.native
-  def modal(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def modal(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def modal(behavior: setting, name: keyboardShortcuts, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def modal(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def modal(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def modal(behavior: setting, name: name, value: String): JQuery = js.native
-  def modal(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def modal(behavior: setting, name: offset, value: Double): JQuery = js.native
-  def modal(behavior: setting, name: onApprove, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  def modal(): JQuery
+  def modal(behavior: setting, name: allowMultiple, value: Boolean): JQuery
+  def modal(behavior: setting, name: allowMultiple, value: Unit): Boolean
+  def modal(behavior: setting, name: autofocus, value: Boolean): JQuery
+  def modal(behavior: setting, name: autofocus, value: Unit): Boolean
+  def modal(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def modal(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def modal(behavior: setting, name: closable, value: Boolean): JQuery
+  def modal(behavior: setting, name: closable, value: Unit): Boolean
+  def modal(behavior: setting, name: context, value: String): JQuery
+  def modal(behavior: setting, name: context, value: Unit): String | JQuery
+  def modal(behavior: setting, name: context, value: JQuery): JQuery
+  def modal(behavior: setting, name: debug, value: Boolean): JQuery
+  def modal(behavior: setting, name: debug, value: Unit): Boolean
+  def modal(behavior: setting, name: detachable, value: Boolean): JQuery
+  def modal(behavior: setting, name: detachable, value: Unit): Boolean
+  def modal(behavior: setting, name: dimmerSettings, value: Unit): DimmerSettings
+  def modal(behavior: setting, name: dimmerSettings, value: DimmerSettings): JQuery
+  def modal(behavior: setting, name: duration, value: Double): JQuery
+  def modal(behavior: setting, name: duration, value: Unit): Double
+  def modal(behavior: setting, name: error, value: Unit): ErrorSettings
+  def modal(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def modal(behavior: setting, name: keyboardShortcuts, value: Boolean): JQuery
+  def modal(behavior: setting, name: keyboardShortcuts, value: Unit): Boolean
+  def modal(behavior: setting, name: namespace, value: String): JQuery
+  def modal(behavior: setting, name: namespace, value: Unit): String
+  def modal(behavior: setting, name: name, value: String): JQuery
+  def modal(behavior: setting, name: name, value: Unit): String
+  def modal(behavior: setting, name: observeChanges, value: Boolean): JQuery
+  def modal(behavior: setting, name: observeChanges, value: Unit): Boolean
+  def modal(behavior: setting, name: offset, value: Double): JQuery
+  def modal(behavior: setting, name: offset, value: Unit): Double
   def modal(
     behavior: setting,
     name: onApprove,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-  ): JQuery = js.native
-  def modal(behavior: setting, name: onDeny, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  ): JQuery
+  def modal(behavior: setting, name: onApprove, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
   def modal(
     behavior: setting,
     name: onDeny,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-  ): JQuery = js.native
-  def modal(behavior: setting, name: onHidden, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def modal(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def modal(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit] = js.native
+  ): JQuery
+  def modal(behavior: setting, name: onDeny, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
+  def modal(behavior: setting, name: onHidden, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def modal(behavior: setting, name: onHidden, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
   def modal(
     behavior: setting,
     name: onHide,
     value: js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
-  ): JQuery = js.native
-  def modal(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def modal(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def modal(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def modal(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def modal(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: queue, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def modal(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def modal(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): String = js.native
-  def modal(behavior: setting, name: transition, value: String): JQuery = js.native
-  def modal(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def modal(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def modal(settings: ModalSettings): JQuery = js.native
+  ): JQuery
+  def modal(behavior: setting, name: onHide, value: Unit): js.ThisFunction1[/* this */ JQuery, /* $element */ JQuery, `false` | Unit]
+  def modal(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def modal(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def modal(behavior: setting, name: onVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def modal(behavior: setting, name: onVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def modal(behavior: setting, name: performance, value: Boolean): JQuery
+  def modal(behavior: setting, name: performance, value: Unit): Boolean
+  def modal(behavior: setting, name: queue, value: Boolean): JQuery
+  def modal(behavior: setting, name: queue, value: Unit): Boolean
+  def modal(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def modal(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def modal(behavior: setting, name: silent, value: Boolean): JQuery
+  def modal(behavior: setting, name: silent, value: Unit): Boolean
+  def modal(behavior: setting, name: transition, value: String): JQuery
+  def modal(behavior: setting, name: transition, value: Unit): String
+  def modal(behavior: setting, name: verbose, value: Boolean): JQuery
+  def modal(behavior: setting, name: verbose, value: Unit): Boolean
+  def modal(settings: ModalSettings): JQuery
   @JSName("modal")
-  def modal_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
+  var modal_Original: Modal
   @JSName("modal")
-  def modal_JQuery(behavior: setting, name: dimmerSettings, value: DimmerSettings): JQuery = js.native
+  def modal_attachevents(behavior: `attach events`, selector: String): JQuery
   @JSName("modal")
-  def modal_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
+  def modal_attachevents(behavior: `attach events`, selector: String, event: String): JQuery
   @JSName("modal")
-  var modal_Original: Modal = js.native
+  def modal_attachevents(behavior: `attach events`, selector: JQuery): JQuery
   @JSName("modal")
-  def modal_attachevents(behavior: `attach events`, selector: String): JQuery = js.native
-  @JSName("modal")
-  def modal_attachevents(behavior: `attach events`, selector: String, event: String): JQuery = js.native
-  @JSName("modal")
-  def modal_attachevents(behavior: `attach events`, selector: JQuery): JQuery = js.native
-  @JSName("modal")
-  def modal_attachevents(behavior: `attach events`, selector: JQuery, event: String): JQuery = js.native
+  def modal_attachevents(behavior: `attach events`, selector: JQuery, event: String): JQuery
   /**
     * Caches current modal size
     */
   @JSName("modal")
-  def modal_cachesizes(behavior: `cache sizes`): JQuery = js.native
+  def modal_cachesizes(behavior: `cache sizes`): JQuery
   /**
     * Returns whether the modal can fit on the page
     */
   @JSName("modal")
-  def modal_canfit(behavior: `can fit`): Boolean = js.native
+  def modal_canfit(behavior: `can fit`): Boolean
   @JSName("modal")
-  def modal_destroy(behavior: destroy): JQuery = js.native
+  def modal_destroy(behavior: destroy): JQuery
   /**
     * Hides the modal
     */
   @JSName("modal")
-  def modal_hide(behavior: hide): JQuery = js.native
+  def modal_hide(behavior: hide): JQuery
   /**
     * Hides all visible modals in the same dimmer
     */
   @JSName("modal")
-  def modal_hideall(behavior: `hide all`): JQuery = js.native
+  def modal_hideall(behavior: `hide all`): JQuery
   /**
     * Hides associated page dimmer
     */
   @JSName("modal")
-  def modal_hidedimmer(behavior: `hide dimmer`): JQuery = js.native
+  def modal_hidedimmer(behavior: `hide dimmer`): JQuery
   /**
     * Hides all modals not selected modal in a dimmer
     */
   @JSName("modal")
-  def modal_hideothers(behavior: `hide others`): JQuery = js.native
+  def modal_hideothers(behavior: `hide others`): JQuery
   /**
     * Returns whether the modal is active
     */
   @JSName("modal")
-  def modal_isactive(behavior: `is active`): Boolean = js.native
+  def modal_isactive(behavior: `is active`): Boolean
   /**
     * Refreshes centering of modal on page
     */
   @JSName("modal")
-  def modal_refresh(behavior: refresh): JQuery = js.native
+  def modal_refresh(behavior: refresh): JQuery
   /**
     * Sets modal to active
     */
   @JSName("modal")
-  def modal_setactive(behavior: `set active`): JQuery = js.native
+  def modal_setactive(behavior: `set active`): JQuery
   @JSName("modal")
-  def modal_setting(behavior: setting, value: ModalSettings): JQuery = js.native
+  def modal_setting(behavior: setting, value: ModalSettings): JQuery
   /**
     * Shows the modal
     */
   @JSName("modal")
-  def modal_show(behavior: show): JQuery = js.native
+  def modal_show(behavior: show): JQuery
   /**
     * Shows associated page dimmer
     */
   @JSName("modal")
-  def modal_showdimmer(behavior: `show dimmer`): JQuery = js.native
+  def modal_showdimmer(behavior: `show dimmer`): JQuery
   /**
     * Toggles the modal
     */
   @JSName("modal")
-  def modal_toggle(behavior: toggle): JQuery = js.native
+  def modal_toggle(behavior: toggle): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(modal: Modal): JQuery = {
+    val __obj = js.Dynamic.literal(modal = modal.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setModal(value: Modal): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+  }
 }

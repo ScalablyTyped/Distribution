@@ -10,9 +10,9 @@ Solidity coder for non-standard (tight) packing.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/solidity |
 | Keywords           | Ethereum, ethers |
-| # releases         | 23 |
-| # dependents       | 33 |
-| # downloads        | 464927 |
+| # releases         | 26 |
+| # dependents       | 44 |
+| # downloads        | 1078921 |
 | # stars            | 0 |
 
 ## Links

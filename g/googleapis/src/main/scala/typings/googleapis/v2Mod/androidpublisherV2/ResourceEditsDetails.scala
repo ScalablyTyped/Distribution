@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Details")
@@ -32,7 +31,7 @@ class ResourceEditsDetails protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAppDetails] = js.native
   def get(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def get(params: ParamsResourceEditsDetailsGet): GaxiosPromise[SchemaAppDetails] = js.native
   def get(params: ParamsResourceEditsDetailsGet, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def get(
@@ -64,7 +63,7 @@ class ResourceEditsDetails protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(params: ParamsResourceEditsDetailsPatch): GaxiosPromise[SchemaAppDetails] = js.native
   def patch(params: ParamsResourceEditsDetailsPatch, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def patch(
@@ -95,7 +94,7 @@ class ResourceEditsDetails protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaAppDetails] = js.native
   def update(callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppDetails] = js.native
   def update(params: ParamsResourceEditsDetailsUpdate): GaxiosPromise[SchemaAppDetails] = js.native
   def update(params: ParamsResourceEditsDetailsUpdate, callback: BodyResponseCallback[SchemaAppDetails]): Unit = js.native
   def update(

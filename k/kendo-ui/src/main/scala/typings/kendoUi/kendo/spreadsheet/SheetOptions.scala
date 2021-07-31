@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ SheetChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SheetChangeEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SheetOptions {
   

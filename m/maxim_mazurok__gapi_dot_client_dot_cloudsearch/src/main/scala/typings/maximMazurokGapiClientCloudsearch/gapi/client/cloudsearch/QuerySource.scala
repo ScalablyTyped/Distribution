@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySource extends StObject {
   
   /** Display name of the data source. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** List of all operators applicable for this source. */
-  var operators: js.UndefOr[js.Array[QueryOperator]] = js.native
+  var operators: js.UndefOr[js.Array[QueryOperator]] = js.undefined
   
   /** A short name or alias for the source. This value can be used with the 'source' operator. */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
   /** Name of the source */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
 }
 object QuerySource {
   

@@ -3,15 +3,13 @@ package typings.winrt.Windows.Graphics.Printing
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintManagerStatic extends StObject {
   
-  def getForCurrentView(): PrintManager = js.native
+  def getForCurrentView(): PrintManager
   
-  def showPrintUIAsync(): IAsyncOperation[Boolean] = js.native
+  def showPrintUIAsync(): IAsyncOperation[Boolean]
 }
 object IPrintManagerStatic {
   

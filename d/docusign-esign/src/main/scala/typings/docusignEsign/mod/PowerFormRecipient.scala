@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerFormRecipient extends StObject {
   
   /**
@@ -17,29 +15,29 @@ trait PowerFormRecipient extends StObject {
     *
     * If blank and the signer accessCode property is not set, then the access code is not required.
     */
-  var accessCode: js.UndefOr[String] = js.native
+  var accessCode: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the `accessCode` property is locked and cannot be edited.
     */
-  var accessCodeLocked: js.UndefOr[String] = js.native
+  var accessCodeLocked: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the recipient must enter the `accessCode` to access the PowerForm.
     */
-  var accessCodeRequired: js.UndefOr[String] = js.native
+  var accessCodeRequired: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the recipient.
     *
     * **Note**: For self-service documents where you do not know who the recipients are in advance, you can leave this property blank.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the recipient's email address is locked and cannot be edited.
     */
-  var emailLocked: js.UndefOr[String] = js.native
+  var emailLocked: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the authentication check to use. This value must match one of the authentication types that the account uses.
@@ -54,7 +52,7 @@ trait PowerFormRecipient extends StObject {
     * To use ID Check in an envelope, the idCheckConfigurationName should be ID Check $. For SMS, you would use SMS Auth $, and you would also need to
     * add a phone number to the smsAuthentication node.
     */
-  var idCheckConfigurationName: js.UndefOr[String] = js.native
+  var idCheckConfigurationName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if authentication is configured for the account. Valid values are:
@@ -63,14 +61,14 @@ trait PowerFormRecipient extends StObject {
     * - `never`: Authentication checks are not performed on any envelopes.
     * - `optional:` Authentication is configurable per envelope.
     */
-  var idCheckRequired: js.UndefOr[String] = js.native
+  var idCheckRequired: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the PowerForm recipient.
     *
     * **Note**: For self-service documents where you do not know who the recipients are in advance, you can leave this property blank.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient type, as specified by the following values:
@@ -87,29 +85,29 @@ trait PowerFormRecipient extends StObject {
     * - `signer`: Signers are recipients who must sign, initial, date, or add data to form fields on the documents in the envelope.
     * - `witness`: Witnesses are recipients whose signatures affirm that the identified signers have signed the documents in the envelope.
     */
-  var recipientType: js.UndefOr[String] = js.native
+  var recipientType: js.UndefOr[String] = js.undefined
   
   /**
     * The role associated with the recipient (for example, `Member`).
     *
     * This property is required when you are working with template recipients and PowerForm recipients.
     */
-  var roleName: js.UndefOr[String] = js.native
+  var roleName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the routing order of the recipient in the envelope.
     */
-  var routingOrder: js.UndefOr[String] = js.native
+  var routingOrder: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the template used to create the PowerForm requires ID lookup for the recipient.
     */
-  var templateRequiresIdLookup: js.UndefOr[String] = js.native
+  var templateRequiresIdLookup: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the `userName` property for the recipient is locked and cannot be edited.
     */
-  var userNameLocked: js.UndefOr[String] = js.native
+  var userNameLocked: js.UndefOr[String] = js.undefined
 }
 object PowerFormRecipient {
   

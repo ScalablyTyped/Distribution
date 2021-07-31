@@ -6,176 +6,137 @@ import typings.ol.projectionMod.default
 import typings.ol.unitsMod.Units
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projMod {
   
-  @JSImport("ol/proj", "addCommon")
+  @JSImport("ol/proj", JSImport.Namespace)
   @js.native
-  def addCommon(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/proj", "addCoordinateTransforms")
-  @js.native
+  @scala.inline
+  def addCommon(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCommon")().asInstanceOf[Unit]
+  
+  @scala.inline
   def addCoordinateTransforms(
     source: ProjectionLike,
     destination: ProjectionLike,
     forward: js.Function1[/* p0 */ Coordinate, Coordinate],
     inverse: js.Function1[/* p0 */ Coordinate, Coordinate]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCoordinateTransforms")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], forward.asInstanceOf[js.Any], inverse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "addEquivalentProjections")
-  @js.native
-  def addEquivalentProjections(projections: js.Array[default]): Unit = js.native
+  @scala.inline
+  def addEquivalentProjections(projections: js.Array[default]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addEquivalentProjections")(projections.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "addEquivalentTransforms")
-  @js.native
+  @scala.inline
   def addEquivalentTransforms(
     projections1: js.Array[default],
     projections2: js.Array[default],
     forwardTransform: TransformFunction,
     inverseTransform: TransformFunction
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEquivalentTransforms")(projections1.asInstanceOf[js.Any], projections2.asInstanceOf[js.Any], forwardTransform.asInstanceOf[js.Any], inverseTransform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "addProjection")
-  @js.native
-  def addProjection(projection: default): Unit = js.native
+  @scala.inline
+  def addProjection(projection: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "addProjections")
-  @js.native
-  def addProjections(projections: js.Array[default]): Unit = js.native
+  @scala.inline
+  def addProjections(projections: js.Array[default]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProjections")(projections.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "clearAllProjections")
-  @js.native
-  def clearAllProjections(): Unit = js.native
+  @scala.inline
+  def clearAllProjections(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllProjections")().asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "clearUserProjection")
-  @js.native
-  def clearUserProjection(): Unit = js.native
+  @scala.inline
+  def clearUserProjection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearUserProjection")().asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "cloneTransform")
-  @js.native
-  def cloneTransform(input: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj", "cloneTransform")
-  @js.native
-  def cloneTransform(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
-  @JSImport("ol/proj", "cloneTransform")
-  @js.native
-  def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj", "cloneTransform")
-  @js.native
-  def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
+  @scala.inline
+  def cloneTransform(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneTransform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def cloneTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def cloneTransform(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/proj", "createProjection")
-  @js.native
-  def createProjection(projection: js.UndefOr[scala.Nothing], defaultCode: String): default = js.native
-  @JSImport("ol/proj", "createProjection")
-  @js.native
-  def createProjection(projection: String, defaultCode: String): default = js.native
-  @JSImport("ol/proj", "createProjection")
-  @js.native
-  def createProjection(projection: default, defaultCode: String): default = js.native
+  @scala.inline
+  def createProjection(projection: String, defaultCode: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjection")(projection.asInstanceOf[js.Any], defaultCode.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createProjection(projection: Unit, defaultCode: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjection")(projection.asInstanceOf[js.Any], defaultCode.asInstanceOf[js.Any])).asInstanceOf[default]
+  @scala.inline
+  def createProjection(projection: default, defaultCode: String): default = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjection")(projection.asInstanceOf[js.Any], defaultCode.asInstanceOf[js.Any])).asInstanceOf[default]
   
-  @JSImport("ol/proj", "createSafeCoordinateTransform")
-  @js.native
-  def createSafeCoordinateTransform(sourceProj: default, destProj: default, transform: js.Function1[/* p0 */ Coordinate, Coordinate]): js.Function1[/* p0 */ Coordinate, Coordinate] = js.native
+  @scala.inline
+  def createSafeCoordinateTransform(sourceProj: default, destProj: default, transform: js.Function1[/* p0 */ Coordinate, Coordinate]): js.Function1[/* p0 */ Coordinate, Coordinate] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSafeCoordinateTransform")(sourceProj.asInstanceOf[js.Any], destProj.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* p0 */ Coordinate, Coordinate]]
   
-  @JSImport("ol/proj", "createTransformFromCoordinateTransform")
-  @js.native
-  def createTransformFromCoordinateTransform(coordTransform: js.Function1[/* p0 */ Coordinate, Coordinate]): TransformFunction = js.native
+  @scala.inline
+  def createTransformFromCoordinateTransform(coordTransform: js.Function1[/* p0 */ Coordinate, Coordinate]): TransformFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformFromCoordinateTransform")(coordTransform.asInstanceOf[js.Any]).asInstanceOf[TransformFunction]
   
-  @JSImport("ol/proj", "equivalent")
-  @js.native
-  def equivalent(projection1: default, projection2: default): Boolean = js.native
+  @scala.inline
+  def equivalent(projection1: default, projection2: default): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equivalent")(projection1.asInstanceOf[js.Any], projection2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ol/proj", "fromLonLat")
-  @js.native
-  def fromLonLat(coordinate: Coordinate): Coordinate = js.native
-  @JSImport("ol/proj", "fromLonLat")
-  @js.native
-  def fromLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = js.native
+  @scala.inline
+  def fromLonLat(coordinate: Coordinate): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
+  @scala.inline
+  def fromLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/proj", "fromUserCoordinate")
-  @js.native
-  def fromUserCoordinate(coordinate: js.Array[Double], destProjection: ProjectionLike): js.Array[Double] = js.native
+  @scala.inline
+  def fromUserCoordinate(coordinate: js.Array[Double], destProjection: ProjectionLike): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUserCoordinate")(coordinate.asInstanceOf[js.Any], destProjection.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/proj", "fromUserExtent")
-  @js.native
-  def fromUserExtent(extent: Extent, destProjection: ProjectionLike): Extent = js.native
+  @scala.inline
+  def fromUserExtent(extent: Extent, destProjection: ProjectionLike): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUserExtent")(extent.asInstanceOf[js.Any], destProjection.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/proj", "get")
-  @js.native
-  def get(projectionLike: ProjectionLike): default = js.native
+  @scala.inline
+  def get(projectionLike: ProjectionLike): default = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(projectionLike.asInstanceOf[js.Any]).asInstanceOf[default]
   
-  @JSImport("ol/proj", "getPointResolution")
-  @js.native
-  def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate): Double = js.native
-  @JSImport("ol/proj", "getPointResolution")
-  @js.native
-  def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate, opt_units: Units): Double = js.native
+  @scala.inline
+  def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointResolution")(projection.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def getPointResolution(projection: ProjectionLike, resolution: Double, point: Coordinate, opt_units: Units): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPointResolution")(projection.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any], point.asInstanceOf[js.Any], opt_units.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ol/proj", "getTransform")
-  @js.native
-  def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = js.native
+  @scala.inline
+  def getTransform(source: ProjectionLike, destination: ProjectionLike): TransformFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[TransformFunction]
   
-  @JSImport("ol/proj", "getTransformFromProjections")
-  @js.native
-  def getTransformFromProjections(sourceProjection: default, destinationProjection: default): TransformFunction = js.native
+  @scala.inline
+  def getTransformFromProjections(sourceProjection: default, destinationProjection: default): TransformFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getTransformFromProjections")(sourceProjection.asInstanceOf[js.Any], destinationProjection.asInstanceOf[js.Any])).asInstanceOf[TransformFunction]
   
-  @JSImport("ol/proj", "getUserProjection")
-  @js.native
-  def getUserProjection(): default = js.native
+  @scala.inline
+  def getUserProjection(): default = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserProjection")().asInstanceOf[default]
   
-  @JSImport("ol/proj", "identityTransform")
-  @js.native
-  def identityTransform(input: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj", "identityTransform")
-  @js.native
-  def identityTransform(input: js.Array[Double], opt_output: js.UndefOr[scala.Nothing], opt_dimension: Double): js.Array[Double] = js.native
-  @JSImport("ol/proj", "identityTransform")
-  @js.native
-  def identityTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("ol/proj", "identityTransform")
-  @js.native
-  def identityTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = js.native
+  @scala.inline
+  def identityTransform(input: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("identityTransform")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def identityTransform(input: js.Array[Double], opt_output: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("identityTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def identityTransform(input: js.Array[Double], opt_output: js.Array[Double], opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("identityTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def identityTransform(input: js.Array[Double], opt_output: Unit, opt_dimension: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("identityTransform")(input.asInstanceOf[js.Any], opt_output.asInstanceOf[js.Any], opt_dimension.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/proj", "setUserProjection")
-  @js.native
-  def setUserProjection(projection: ProjectionLike): Unit = js.native
+  @scala.inline
+  def setUserProjection(projection: ProjectionLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProjection")(projection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ol/proj", "toLonLat")
-  @js.native
-  def toLonLat(coordinate: Coordinate): Coordinate = js.native
-  @JSImport("ol/proj", "toLonLat")
-  @js.native
-  def toLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = js.native
+  @scala.inline
+  def toLonLat(coordinate: Coordinate): Coordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any]).asInstanceOf[Coordinate]
+  @scala.inline
+  def toLonLat(coordinate: Coordinate, opt_projection: ProjectionLike): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("toLonLat")(coordinate.asInstanceOf[js.Any], opt_projection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/proj", "toUserCoordinate")
-  @js.native
-  def toUserCoordinate(coordinate: js.Array[Double], sourceProjection: ProjectionLike): js.Array[Double] = js.native
+  @scala.inline
+  def toUserCoordinate(coordinate: js.Array[Double], sourceProjection: ProjectionLike): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("toUserCoordinate")(coordinate.asInstanceOf[js.Any], sourceProjection.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("ol/proj", "toUserExtent")
-  @js.native
-  def toUserExtent(extent: Extent, sourceProjection: ProjectionLike): Extent = js.native
+  @scala.inline
+  def toUserExtent(extent: Extent, sourceProjection: ProjectionLike): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("toUserExtent")(extent.asInstanceOf[js.Any], sourceProjection.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/proj", "transform")
-  @js.native
-  def transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate = js.native
+  @scala.inline
+  def transform(coordinate: Coordinate, source: ProjectionLike, destination: ProjectionLike): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(coordinate.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/proj", "transformExtent")
-  @js.native
-  def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent = js.native
-  @JSImport("ol/proj", "transformExtent")
-  @js.native
-  def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike, opt_stops: Double): Extent = js.native
+  @scala.inline
+  def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Extent]
+  @scala.inline
+  def transformExtent(extent: Extent, source: ProjectionLike, destination: ProjectionLike, opt_stops: Double): Extent = (^.asInstanceOf[js.Dynamic].applyDynamic("transformExtent")(extent.asInstanceOf[js.Any], source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], opt_stops.asInstanceOf[js.Any])).asInstanceOf[Extent]
   
-  @JSImport("ol/proj", "transformWithProjections")
-  @js.native
-  def transformWithProjections(point: Coordinate, sourceProjection: default, destinationProjection: default): Coordinate = js.native
+  @scala.inline
+  def transformWithProjections(point: Coordinate, sourceProjection: default, destinationProjection: default): Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("transformWithProjections")(point.asInstanceOf[js.Any], sourceProjection.asInstanceOf[js.Any], destinationProjection.asInstanceOf[js.Any])).asInstanceOf[Coordinate]
   
-  @JSImport("ol/proj", "useGeographic")
-  @js.native
-  def useGeographic(): Unit = js.native
+  @scala.inline
+  def useGeographic(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useGeographic")().asInstanceOf[Unit]
   
   type ProjectionLike = default | String
   

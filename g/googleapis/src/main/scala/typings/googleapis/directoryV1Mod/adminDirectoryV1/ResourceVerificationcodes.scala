@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Verificationcodes")
@@ -30,7 +29,7 @@ class ResourceVerificationcodes protected () extends StObject {
     */
   def generate(): GaxiosPromise[Unit] = js.native
   def generate(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def generate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def generate(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def generate(params: ParamsResourceVerificationcodesGenerate): GaxiosPromise[Unit] = js.native
   def generate(params: ParamsResourceVerificationcodesGenerate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def generate(
@@ -59,7 +58,7 @@ class ResourceVerificationcodes protected () extends StObject {
     */
   def invalidate(): GaxiosPromise[Unit] = js.native
   def invalidate(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def invalidate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def invalidate(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def invalidate(params: ParamsResourceVerificationcodesInvalidate): GaxiosPromise[Unit] = js.native
   def invalidate(params: ParamsResourceVerificationcodesInvalidate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def invalidate(
@@ -89,7 +88,7 @@ class ResourceVerificationcodes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(callback: BodyResponseCallback[SchemaVerificationCodes]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVerificationCodes] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(params: ParamsResourceVerificationcodesList): GaxiosPromise[SchemaVerificationCodes] = js.native
   def list(
     params: ParamsResourceVerificationcodesList,

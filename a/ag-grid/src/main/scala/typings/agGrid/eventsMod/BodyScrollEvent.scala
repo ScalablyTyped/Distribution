@@ -4,17 +4,17 @@ import typings.agGrid.columnApiMod.ColumnApi
 import typings.agGrid.gridApiMod.GridApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BodyScrollEvent extends AgGridEvent {
+trait BodyScrollEvent
+  extends StObject
+     with AgGridEvent {
   
-  var direction: String = js.native
+  var direction: String
   
-  var left: Double = js.native
+  var left: Double
   
-  var top: Double = js.native
+  var top: Double
 }
 object BodyScrollEvent {
   

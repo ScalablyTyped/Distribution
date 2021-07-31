@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteRequest extends StObject {
   
   /**
     * List of channel IDs
     */
-  var ChannelIds: js.UndefOr[listOfString] = js.native
+  var ChannelIds: js.UndefOr[listOfString] = js.undefined
   
   /**
     * List of input IDs
     */
-  var InputIds: js.UndefOr[listOfString] = js.native
+  var InputIds: js.UndefOr[listOfString] = js.undefined
   
   /**
     * List of input security group IDs
     */
-  var InputSecurityGroupIds: js.UndefOr[listOfString] = js.native
+  var InputSecurityGroupIds: js.UndefOr[listOfString] = js.undefined
   
   /**
     * List of multiplex IDs
     */
-  var MultiplexIds: js.UndefOr[listOfString] = js.native
+  var MultiplexIds: js.UndefOr[listOfString] = js.undefined
 }
 object BatchDeleteRequest {
   

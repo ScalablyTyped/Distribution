@@ -10,7 +10,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCodeMirror {
@@ -28,53 +27,53 @@ object ReactCodeMirror {
   
   type ReactCodeMirrorClass = ComponentClass[ReactCodeMirrorProps, ComponentState]
   
-  @js.native
   trait ReactCodeMirrorProps
-    extends Props[typings.reactCodemirror.ReactCodeMirror.ReactCodeMirror] {
+    extends StObject
+       with Props[typings.reactCodemirror.ReactCodeMirror.ReactCodeMirror] {
     
     /** Automatically focuses the editor when it is mounted (default false) */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /** Automatically persist changes to underlying textarea (default false) */
-    var autoSave: js.UndefOr[Boolean] = js.native
+    var autoSave: js.UndefOr[Boolean] = js.undefined
     
     /** Adds a custom CSS class to the editor */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Provides a specific CodeMirror instance (defaults to `require('codemirror')`) */
     var codeMirrorInstance: js.UndefOr[
         js.Function2[/* host */ js.Any, /* options */ js.UndefOr[EditorConfiguration], Editor]
-      ] = js.native
+      ] = js.undefined
     
     /** Provides the default (not changed tracked) value to the editor */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /** Set the name of the editor input field */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Called when a change is made */
-    var onChange: js.UndefOr[js.Function2[/* newValue */ String, /* change */ EditorChange, _]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* newValue */ String, /* change */ EditorChange, js.Any]] = js.undefined
     
     /** Called when the cursor is moved */
-    var onCursorActivity: js.UndefOr[js.Function1[/* codemirror */ Editor, _]] = js.native
+    var onCursorActivity: js.UndefOr[js.Function1[/* codemirror */ Editor, js.Any]] = js.undefined
     
     /** Called when the editor is focused or loses focus */
-    var onFocusChange: js.UndefOr[js.Function1[/* focused */ Boolean, _]] = js.native
+    var onFocusChange: js.UndefOr[js.Function1[/* focused */ Boolean, js.Any]] = js.undefined
     
     /** Called when the editor is scrolled */
-    var onScroll: js.UndefOr[js.Function1[/* scrollInfo */ ScrollInfo, _]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* scrollInfo */ ScrollInfo, js.Any]] = js.undefined
     
     /** Options passed to the CodeMirror instance */
-    var options: js.UndefOr[EditorConfiguration] = js.native
+    var options: js.UndefOr[EditorConfiguration] = js.undefined
     
     /** (DEPRECATED), use `name` */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Preserve previous scroll position after updating value */
-    var preserveScrollPosition: js.UndefOr[Boolean] = js.native
+    var preserveScrollPosition: js.UndefOr[Boolean] = js.undefined
     
     /** The editor value */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ReactCodeMirrorProps {
     
@@ -124,25 +123,25 @@ object ReactCodeMirror {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* newValue */ String, /* change */ EditorChange) => _): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(value: (/* newValue */ String, /* change */ EditorChange) => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnCursorActivity(value: /* codemirror */ Editor => _): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
+      def setOnCursorActivity(value: /* codemirror */ Editor => js.Any): Self = StObject.set(x, "onCursorActivity", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCursorActivityUndefined: Self = StObject.set(x, "onCursorActivity", js.undefined)
       
       @scala.inline
-      def setOnFocusChange(value: /* focused */ Boolean => _): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
+      def setOnFocusChange(value: /* focused */ Boolean => js.Any): Self = StObject.set(x, "onFocusChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnFocusChangeUndefined: Self = StObject.set(x, "onFocusChange", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: /* scrollInfo */ ScrollInfo => _): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+      def setOnScroll(value: /* scrollInfo */ ScrollInfo => js.Any): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.PDFViewer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPDFViewer extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): PDFViewer = js.native
+  def extend(proto: js.Object): PDFViewer
   
   /* static member */
-  var fn: PDFViewer = js.native
+  var fn: PDFViewer
 }
 object TypeofPDFViewer {
   

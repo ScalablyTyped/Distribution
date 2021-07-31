@@ -3,7 +3,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,48 +10,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is not an HTTP request, the runtime system should try to map the actual
   * request to an equivalent HTTP request.
   */
-@js.native
 trait SchemaRequest extends StObject {
   
   /**
     * The request authentication. May be absent for unauthenticated requests.
     * Derived from the HTTP request `Authorization` header or equivalent.
     */
-  var auth: js.UndefOr[SchemaAuth] = js.native
+  var auth: js.UndefOr[SchemaAuth] = js.undefined
   
   /**
     * The HTTP URL fragment. No URL decoding is performed.
     */
-  var fragment: js.UndefOr[String] = js.native
+  var fragment: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request headers. If multiple headers share the same key, they
     * must be merged according to the HTTP spec. All header keys must be
     * lowercased, because HTTP header keys are case-insensitive.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HTTP request `Host` header value.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID for a request, which can be propagated to downstream
     * systems. The ID should have low probability of collision within a single
     * day for a specific service.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request method, such as `GET`, `POST`.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP URL path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The network protocol used with the request, such as &quot;http/1.1&quot;,
@@ -61,36 +59,36 @@ trait SchemaRequest extends StObject {
     * https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml#alpn-protocol-ids
     * for details.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP URL query in the format of `name1=value`&amp;name2=value2`, as
     * it appears in the first line of the HTTP request. No decoding is
     * performed.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * A special parameter for request reason. It is used by security systems to
     * associate auditing information with a request.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP URL scheme, such as `http` and `https`.
     */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request size in bytes. If unknown, it must be -1.
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the `destination` service receives the first byte of
     * the request.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object SchemaRequest {
   

@@ -12,14 +12,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object itemSlidingMod {
   
   @JSImport("@ionic/core/dist/types/components/item-sliding/item-sliding", "ItemSliding")
   @js.native
-  class ItemSliding () extends ComponentInterface {
+  class ItemSliding ()
+    extends StObject
+       with ComponentInterface {
     
     var calculateOptsWidth: js.Any = js.native
     
@@ -81,7 +82,7 @@ object itemSlidingMod {
     /**
       * Emitted when the sliding position changes.
       */
-    var ionDrag: EventEmitter[_] = js.native
+    var ionDrag: EventEmitter[js.Any] = js.native
     
     var item: js.Any = js.native
     

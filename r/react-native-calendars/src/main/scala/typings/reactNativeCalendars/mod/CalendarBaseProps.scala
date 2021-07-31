@@ -10,147 +10,145 @@ import typings.reactNativeCalendars.reactNativeCalendarsStrings.right
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarBaseProps extends StObject {
   
   /**
     *  Initially visible month. Default = Date()
     */
-  var current: js.UndefOr[TCalendarDate] = js.native
+  var current: js.UndefOr[TCalendarDate] = js.undefined
   
   /**
     *  Provide custom day rendering component.
     */
-  var dayComponent: js.UndefOr[(Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps]] = js.native
+  var dayComponent: js.UndefOr[(Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]] = js.undefined
   
   /**
     *  Disable left arrow. Default = false
     */
-  var disableArrowLeft: js.UndefOr[Boolean] = js.native
+  var disableArrowLeft: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Disable right arrow. Default = false
     */
-  var disableArrowRight: js.UndefOr[Boolean] = js.native
+  var disableArrowRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  If hideArrows=false and hideExtraDays=false do not switch month when tapping on greyed out
     *  day from another month that is visible in calendar page. Default = false
     */
-  var disableMonthChange: js.UndefOr[Boolean] = js.native
+  var disableMonthChange: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Disable days by default. Default = false
     */
-  var disabledByDefault: js.UndefOr[Boolean] = js.native
+  var disabledByDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Display loading indicator. Default = false
     */
-  var displayLoadingIndicator: js.UndefOr[Boolean] = js.native
+  var displayLoadingIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  If firstDay=1 week starts from Monday. Note that dayNames and dayNamesShort should still start from Sunday.
     */
-  var firstDay: js.UndefOr[Double] = js.native
+  var firstDay: js.UndefOr[Double] = js.undefined
   
   /**
     *  Style passed to the header
     */
-  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var headerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     *  Hide month navigation arrows. Default = false
     */
-  var hideArrows: js.UndefOr[Boolean] = js.native
+  var hideArrows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Hide day names. Default = false
     */
-  var hideDayNames: js.UndefOr[Boolean] = js.native
+  var hideDayNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Do not show days of other months in month page. Default = false
     */
-  var hideExtraDays: js.UndefOr[Boolean] = js.native
+  var hideExtraDays: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Maximum date that can be selected, dates after maxDate will be grayed out. Default = undefined
     */
-  var maxDate: js.UndefOr[TCalendarDate] = js.native
+  var maxDate: js.UndefOr[TCalendarDate] = js.undefined
   
   /**
     *  Minimum date that can be selected, dates before minDate will be grayed out. Default = undefined
     */
-  var minDate: js.UndefOr[TCalendarDate] = js.native
+  var minDate: js.UndefOr[TCalendarDate] = js.undefined
   
   /**
     *  Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
     */
-  var monthFormat: js.UndefOr[String] = js.native
+  var monthFormat: js.UndefOr[String] = js.undefined
   
   /**
     *  Handler which gets executed on day long press. Default = undefined
     */
-  var onDayLongPress: js.UndefOr[DateCallbackHandler] = js.native
+  var onDayLongPress: js.UndefOr[DateCallbackHandler] = js.undefined
   
   /**
     *  Handler which gets executed on day press. Default = undefined
     */
-  var onDayPress: js.UndefOr[DateCallbackHandler] = js.native
+  var onDayPress: js.UndefOr[DateCallbackHandler] = js.undefined
   
   /**
     *  Handler which gets executed when visible month changes in calendar. Default = undefined
     */
-  var onMonthChange: js.UndefOr[DateCallbackHandler] = js.native
+  var onMonthChange: js.UndefOr[DateCallbackHandler] = js.undefined
   
   /**
     *  Handler which gets executed when press arrow icon left. It receive a callback can go back month
     */
-  var onPressArrowLeft: js.UndefOr[js.Function1[/* substractMonth */ js.Function0[Unit], Unit]] = js.native
+  var onPressArrowLeft: js.UndefOr[js.Function1[/* substractMonth */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     *  Handler which gets executed when press arrow icon left. It receive a callback can go next month
     */
-  var onPressArrowRight: js.UndefOr[js.Function1[/* addMonth */ js.Function0[Unit], Unit]] = js.native
+  var onPressArrowRight: js.UndefOr[js.Function1[/* addMonth */ js.Function0[Unit], Unit]] = js.undefined
   
   /**
     *  Callback which gets executed when visible months change in scroll view. Default = undefined
     */
-  var onVisibleMonthsChange: js.UndefOr[js.Function1[/* months */ js.Array[DateObject], Unit]] = js.native
+  var onVisibleMonthsChange: js.UndefOr[js.Function1[/* months */ js.Array[DateObject], Unit]] = js.undefined
   
   /**
     *  Replace default arrows with custom ones (direction can be 'left' or 'right')
     */
-  var renderArrow: js.UndefOr[js.Function1[/* direction */ left | right, ReactNode]] = js.native
+  var renderArrow: js.UndefOr[js.Function1[/* direction */ left | right, ReactNode]] = js.undefined
   
   /*
     *  Replace default month and year title with custom one. the function receive a date as parameter.
     */
-  var renderHeader: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.native
+  var renderHeader: js.UndefOr[js.Function1[/* date */ Date, ReactNode]] = js.undefined
   
   /**
     *  Show week numbers to the left. Default = false
     */
-  var showWeekNumbers: js.UndefOr[Boolean] = js.native
+  var showWeekNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Calendar container style.
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     *  Specify theme properties to override specific styles for calendar parts. Default = {}
     */
-  var theme: js.UndefOr[CalendarTheme] = js.native
+  var theme: js.UndefOr[CalendarTheme] = js.undefined
   
   /**
     *  Provide aria-level for calendar heading for proper accessibility when used with web (react-native-web)
     */
-  var webAriaLevel: js.UndefOr[Double] = js.native
+  var webAriaLevel: js.UndefOr[Double] = js.undefined
 }
 object CalendarBaseProps {
   
@@ -170,7 +168,7 @@ object CalendarBaseProps {
     def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
     @scala.inline
-    def setDayComponent(value: (Component[DayComponentProps, js.Object, _]) | SFC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
+    def setDayComponent(value: (Component[DayComponentProps, js.Object, js.Any]) | SFC[DayComponentProps]): Self = StObject.set(x, "dayComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDayComponentUndefined: Self = StObject.set(x, "dayComponent", js.undefined)

@@ -2,13 +2,13 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetContainerMetadataOptions extends GetContainerPropertiesOptions {
+trait GetContainerMetadataOptions
+  extends StObject
+     with GetContainerPropertiesOptions {
   
-  var accessConditions: js.UndefOr[StorageAccessCondition] = js.native
+  var accessConditions: js.UndefOr[StorageAccessCondition] = js.undefined
 }
 object GetContainerMetadataOptions {
   

@@ -5,10 +5,13 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashOPEN_DRAWER
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashTOGGLE_DRAWER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DrawerActions {
+  
+  @JSImport("react-navigation", "DrawerActions")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-navigation", "DrawerActions.CLOSE_DRAWER")
   @js.native
@@ -22,15 +25,12 @@ object DrawerActions {
   @js.native
   val TOGGLE_DRAWER: NavigationSlashTOGGLE_DRAWER = js.native
   
-  @JSImport("react-navigation", "DrawerActions.closeDrawer")
-  @js.native
-  def closeDrawer(): NavigationCloseDrawerAction = js.native
+  @scala.inline
+  def closeDrawer(): NavigationCloseDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[NavigationCloseDrawerAction]
   
-  @JSImport("react-navigation", "DrawerActions.openDrawer")
-  @js.native
-  def openDrawer(): NavigationOpenDrawerAction = js.native
+  @scala.inline
+  def openDrawer(): NavigationOpenDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[NavigationOpenDrawerAction]
   
-  @JSImport("react-navigation", "DrawerActions.toggleDrawer")
-  @js.native
-  def toggleDrawer(): NavigationToggleDrawerAction = js.native
+  @scala.inline
+  def toggleDrawer(): NavigationToggleDrawerAction = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[NavigationToggleDrawerAction]
 }

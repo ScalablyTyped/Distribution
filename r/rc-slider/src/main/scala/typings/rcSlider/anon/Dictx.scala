@@ -3,20 +3,19 @@ package typings.rcSlider.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictx
-  extends /* x */ StringDictionary[js.Any] {
+  extends StObject
+     with /* x */ StringDictionary[js.Any] {
   
-  var disabled: js.Any = js.native
+  var disabled: js.Any
   
-  var dragging: js.Any = js.native
+  var dragging: js.Any
   
-  var index: js.Any = js.native
+  var index: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Dictx {
   

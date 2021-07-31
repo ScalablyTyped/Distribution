@@ -2,16 +2,14 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSigningPlatformRequest extends StObject {
   
   /**
     * The ID of the target signing platform.
     */
-  var platformId: PlatformId = js.native
+  var platformId: PlatformId
 }
 object GetSigningPlatformRequest {
   

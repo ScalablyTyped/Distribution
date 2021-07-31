@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveThingFromThingGroupRequest extends StObject {
   
   /**
     * The ARN of the thing to remove from the group.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The group ARN.
     */
-  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.native
+  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
   
   /**
     * The group name.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
   
   /**
     * The name of the thing to remove from the group.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object RemoveThingFromThingGroupRequest {
   

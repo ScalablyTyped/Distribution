@@ -2,7 +2,6 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SPNotifications {
@@ -14,10 +13,14 @@ object SPNotifications {
   object ContainerID extends StObject {
     
     @js.native
-    sealed trait Basic extends ContainerID
+    sealed trait Basic
+      extends StObject
+         with ContainerID
     
     @js.native
-    sealed trait Status extends ContainerID
+    sealed trait Status
+      extends StObject
+         with ContainerID
   }
   
   @js.native
@@ -27,18 +30,28 @@ object SPNotifications {
   object EventID extends StObject {
     
     @js.native
-    sealed trait OnDisplayNotification extends EventID
+    sealed trait OnDisplayNotification
+      extends StObject
+         with EventID
     
     @js.native
-    sealed trait OnHide extends EventID
+    sealed trait OnHide
+      extends StObject
+         with EventID
     
     @js.native
-    sealed trait OnNotificationCountChanged extends EventID
+    sealed trait OnNotificationCountChanged
+      extends StObject
+         with EventID
     
     @js.native
-    sealed trait OnRemoveNotification extends EventID
+    sealed trait OnRemoveNotification
+      extends StObject
+         with EventID
     
     @js.native
-    sealed trait OnShow extends EventID
+    sealed trait OnShow
+      extends StObject
+         with EventID
   }
 }

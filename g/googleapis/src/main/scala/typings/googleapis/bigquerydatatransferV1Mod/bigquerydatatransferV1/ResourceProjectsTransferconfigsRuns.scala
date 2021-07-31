@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquerydatatransfer/v1", "bigquerydatatransfer_v1.Resource$Projects$Transferconfigs$Runs")
@@ -30,7 +29,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsTransferconfigsRunsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsTransferconfigsRunsDelete,
@@ -62,7 +61,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTransferRun] = js.native
   def get(callback: BodyResponseCallback[SchemaTransferRun]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTransferRun] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTransferRun] = js.native
   def get(params: ParamsResourceProjectsTransferconfigsRunsGet): GaxiosPromise[SchemaTransferRun] = js.native
   def get(
     params: ParamsResourceProjectsTransferconfigsRunsGet,
@@ -98,7 +97,7 @@ class ResourceProjectsTransferconfigsRuns protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTransferRunsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(params: ParamsResourceProjectsTransferconfigsRunsList): GaxiosPromise[SchemaListTransferRunsResponse] = js.native
   def list(
     params: ParamsResourceProjectsTransferconfigsRunsList,

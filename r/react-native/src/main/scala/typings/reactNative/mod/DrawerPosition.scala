@@ -2,15 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawerPosition extends StObject {
   
-  var Left: Double = js.native
+  var Left: Double
   
-  var Right: Double = js.native
+  var Right: Double
 }
 object DrawerPosition {
   

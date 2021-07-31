@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCompilationJobRequest extends StObject {
   
   /**
     * The name of the model compilation job that you want information about.
     */
-  var CompilationJobName: EntityName = js.native
+  var CompilationJobName: EntityName
 }
 object DescribeCompilationJobRequest {
   

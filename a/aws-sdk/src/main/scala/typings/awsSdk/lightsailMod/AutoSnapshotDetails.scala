@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoSnapshotDetails extends StObject {
   
   /**
     * The timestamp when the automatic snapshot was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The date of the automatic snapshot in YYYY-MM-DD format.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * An array of objects that describe the block storage disks attached to the instance when the automatic snapshot was created.
     */
-  var fromAttachedDisks: js.UndefOr[AttachedDiskList] = js.native
+  var fromAttachedDisks: js.UndefOr[AttachedDiskList] = js.undefined
   
   /**
     * The status of the automatic snapshot.
     */
-  var status: js.UndefOr[AutoSnapshotStatus] = js.native
+  var status: js.UndefOr[AutoSnapshotStatus] = js.undefined
 }
 object AutoSnapshotDetails {
   

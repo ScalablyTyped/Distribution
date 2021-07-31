@@ -3,62 +3,19 @@ package typings.officeUiFabricReact
 import typings.officeUiFabricReact.groupedListTypesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exampleDataMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
+  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", JSImport.Namespace)
   @js.native
-  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
-  def createGroups(
-    groupCount: Double,
-    groupDepth: Double,
-    startIndex: Double,
-    itemsPerGroup: Double,
-    level: js.UndefOr[scala.Nothing],
-    key: js.UndefOr[scala.Nothing],
-    isCollapsed: Boolean
-  ): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
-  def createGroups(
-    groupCount: Double,
-    groupDepth: Double,
-    startIndex: Double,
-    itemsPerGroup: Double,
-    level: js.UndefOr[scala.Nothing],
-    key: String
-  ): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
-  def createGroups(
-    groupCount: Double,
-    groupDepth: Double,
-    startIndex: Double,
-    itemsPerGroup: Double,
-    level: js.UndefOr[scala.Nothing],
-    key: String,
-    isCollapsed: Boolean
-  ): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
-  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double, level: Double): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
-  def createGroups(
-    groupCount: Double,
-    groupDepth: Double,
-    startIndex: Double,
-    itemsPerGroup: Double,
-    level: Double,
-    key: js.UndefOr[scala.Nothing],
-    isCollapsed: Boolean
-  ): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
+  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double, level: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
   def createGroups(
     groupCount: Double,
     groupDepth: Double,
@@ -66,9 +23,8 @@ object exampleDataMod {
     itemsPerGroup: Double,
     level: Double,
     key: String
-  ): js.Array[IGroup] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createGroups")
-  @js.native
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
   def createGroups(
     groupCount: Double,
     groupDepth: Double,
@@ -77,43 +33,77 @@ object exampleDataMod {
     level: Double,
     key: String,
     isCollapsed: Boolean
-  ): js.Array[IGroup] = js.native
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
+  def createGroups(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: Double,
+    key: Unit,
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
+  def createGroups(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: Unit,
+    key: String
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
+  def createGroups(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: Unit,
+    key: String,
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  @scala.inline
+  def createGroups(
+    groupCount: Double,
+    groupDepth: Double,
+    startIndex: Double,
+    itemsPerGroup: Double,
+    level: Unit,
+    key: Unit,
+    isCollapsed: Boolean
+  ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createListItems")
-  @js.native
-  def createListItems(count: Double): js.Array[IExampleItem] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "createListItems")
-  @js.native
-  def createListItems(count: Double, startIndex: Double): js.Array[IExampleItem] = js.native
+  @scala.inline
+  def createListItems(count: Double): js.Array[IExampleItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any]).asInstanceOf[js.Array[IExampleItem]]
+  @scala.inline
+  def createListItems(count: Double, startIndex: Double): js.Array[IExampleItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[IExampleItem]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "isGroupable")
-  @js.native
-  def isGroupable(key: String): Boolean = js.native
+  @scala.inline
+  def isGroupable(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupable")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/exampleData", "lorem")
-  @js.native
-  def lorem(wordCount: Double): String = js.native
+  @scala.inline
+  def lorem(wordCount: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lorem")(wordCount.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait IExampleItem extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var description: String = js.native
+    var description: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var key: String = js.native
+    var key: String
     
-    var location: String = js.native
+    var location: String
     
-    var name: String = js.native
+    var name: String
     
-    var shape: String = js.native
+    var shape: String
     
-    var thumbnail: String = js.native
+    var thumbnail: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object IExampleItem {
     

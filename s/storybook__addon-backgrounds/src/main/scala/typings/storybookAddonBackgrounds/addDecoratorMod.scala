@@ -4,7 +4,6 @@ import typings.storybookAddons.typesMod.StoryContext
 import typings.storybookAddons.typesMod.StoryFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addDecoratorMod {

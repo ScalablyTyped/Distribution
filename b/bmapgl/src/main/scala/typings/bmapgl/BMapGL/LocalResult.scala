@@ -2,39 +2,37 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalResult extends StObject {
   
-  var bounds: Bounds = js.native
+  var bounds: Bounds
   
-  var center: LocalResultPoi = js.native
+  var center: LocalResultPoi
   
-  var city: String = js.native
+  var city: String
   
-  def getCityList(): js.Array[_] = js.native
+  def getCityList(): js.Array[js.Any]
   
-  def getCurrentNumPois(): Double = js.native
+  def getCurrentNumPois(): Double
   
-  def getNumPages(): Double = js.native
+  def getNumPages(): Double
   
-  def getNumPois(): Double = js.native
+  def getNumPois(): Double
   
-  def getPageIndex(): Double = js.native
+  def getPageIndex(): Double
   
-  def getPoi(i: Double): LocalResultPoi = js.native
+  def getPoi(i: Double): LocalResultPoi
   
-  var keyword: String = js.native
+  var keyword: String
   
-  var moreResultsUrl: String = js.native
+  var moreResultsUrl: String
   
-  var province: String = js.native
+  var province: String
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var suggestions: js.Array[String] = js.native
+  var suggestions: js.Array[String]
 }
 object LocalResult {
   
@@ -43,7 +41,7 @@ object LocalResult {
     bounds: Bounds,
     center: LocalResultPoi,
     city: String,
-    getCityList: () => js.Array[_],
+    getCityList: () => js.Array[js.Any],
     getCurrentNumPois: () => Double,
     getNumPages: () => Double,
     getNumPois: () => Double,
@@ -72,7 +70,7 @@ object LocalResult {
     def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetCityList(value: () => js.Array[_]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
+    def setGetCityList(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCityList", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetCurrentNumPois(value: () => Double): Self = StObject.set(x, "getCurrentNumPois", js.Any.fromFunction0(value))

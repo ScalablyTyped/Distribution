@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,17 +26,27 @@ sealed trait SHAPES extends StObject
 object SHAPES extends StObject {
   
   @js.native
-  sealed trait CIRC extends SHAPES
+  sealed trait CIRC
+    extends StObject
+       with SHAPES
   
   @js.native
-  sealed trait ELIP extends SHAPES
+  sealed trait ELIP
+    extends StObject
+       with SHAPES
   
   @js.native
-  sealed trait POLY extends SHAPES
+  sealed trait POLY
+    extends StObject
+       with SHAPES
   
   @js.native
-  sealed trait RECT extends SHAPES
+  sealed trait RECT
+    extends StObject
+       with SHAPES
   
   @js.native
-  sealed trait RREC extends SHAPES
+  sealed trait RREC
+    extends StObject
+       with SHAPES
 }

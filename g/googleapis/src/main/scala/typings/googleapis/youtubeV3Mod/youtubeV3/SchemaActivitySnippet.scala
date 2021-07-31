@@ -2,31 +2,29 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic details about an activity, including title, description, thumbnails,
   * activity type and group.
   */
-@js.native
 trait SchemaActivitySnippet extends StObject {
   
   /**
     * The ID that YouTube uses to uniquely identify the channel associated with
     * the activity.
     */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /**
     * Channel title for the channel responsible for this activity
     */
-  var channelTitle: js.UndefOr[String] = js.native
+  var channelTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the resource primarily associated with the activity.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The group ID associated with the activity. A group ID identifies user
@@ -36,13 +34,13 @@ trait SchemaActivitySnippet extends StObject {
     * activity feed. In your user interface, you can avoid repetition by
     * grouping events with the same groupId value.
     */
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the video was uploaded. The value is specified in
     * ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: js.UndefOr[String] = js.native
+  var publishedAt: js.UndefOr[String] = js.undefined
   
   /**
     * A map of thumbnail images associated with the resource that is primarily
@@ -50,17 +48,17 @@ trait SchemaActivitySnippet extends StObject {
     * name of the thumbnail image, and the value is an object that contains
     * other information about the thumbnail.
     */
-  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.native
+  var thumbnails: js.UndefOr[SchemaThumbnailDetails] = js.undefined
   
   /**
     * The title of the resource primarily associated with the activity.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of activity that the resource describes.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaActivitySnippet {
   

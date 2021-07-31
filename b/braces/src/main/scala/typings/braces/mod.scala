@@ -3,7 +3,6 @@ package typings.braces
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,7 +20,6 @@ object mod extends Shortcut {
     def expand(pattern: String): js.Array[String] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -32,7 +30,7 @@ object mod extends Shortcut {
       * console.log(braces('a/{b,c}/d', { expand: true }));
       * //=> [ 'a/b/d', 'a/c/d' ]
       */
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limit the length of the input string. Useful when the input string is generated or your application allows
@@ -43,14 +41,14 @@ object mod extends Shortcut {
       * console.log(braces('a/{b,c}/d', { maxLength: 3 }));
       * //=> throws an error
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Remove duplicates from the returned array.
       *
       * @default undefined
       */
-    var nodupes: js.UndefOr[Boolean] = js.native
+    var nodupes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In regular expressions, quanitifiers can be used to specify how many times a token can be repeated.
@@ -71,7 +69,7 @@ object mod extends Shortcut {
       * console.log(braces('a/b{1,3}/{x,y,z}', {quantifiers: true, expand: true}));
       * //=> [ 'a/b{1,3}/x', 'a/b{1,3}/y', 'a/b{1,3}/z' ]
       */
-    var quantifiers: js.UndefOr[Boolean] = js.native
+    var quantifiers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * To prevent malicious patterns from being passed by users, an error is thrown when `braces.expand()`
@@ -89,7 +87,7 @@ object mod extends Shortcut {
       * console.log(braces.expand('{1..100}'));
       * //=> ['1', '2', '3', '4', '5', …, '100']
       */
-    var rangeLimit: js.UndefOr[Double] = js.native
+    var rangeLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * Customize range expansion.
@@ -103,14 +101,14 @@ object mod extends Shortcut {
       * console.log(range);
       * //=> [ 'xfooay', 'xfooby', 'xfoocy', 'xfoody', 'xfooey' ]
       */
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
     
     /**
       * Strip backslashes that were used for escaping from the result.
       *
       * @default undefined
       */
-    var unescape: js.UndefOr[Boolean] = js.native
+    var unescape: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

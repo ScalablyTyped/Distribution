@@ -3,55 +3,55 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBucketObjectsMod {
   
-  @JSImport("@pulumi/aws/s3/getBucketObjects", "getBucketObjects")
+  @JSImport("@pulumi/aws/s3/getBucketObjects", JSImport.Namespace)
   @js.native
-  def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = js.native
-  @JSImport("@pulumi/aws/s3/getBucketObjects", "getBucketObjects")
-  @js.native
-  def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getBucketObjects(args: GetBucketObjectsArgs): js.Promise[GetBucketObjectsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  @scala.inline
+  def getBucketObjects(args: GetBucketObjectsArgs, opts: InvokeOptions): js.Promise[GetBucketObjectsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBucketObjects")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBucketObjectsResult]]
+  
   trait GetBucketObjectsArgs extends StObject {
     
     /**
       * Lists object keys in this S3 bucket. Alternatively, an [S3 access point](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-access-points.html) ARN can be specified
       */
-    val bucket: String = js.native
+    val bucket: String
     
     /**
       * A character used to group keys (Default: none)
       */
-    val delimiter: js.UndefOr[String] = js.native
+    val delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Encodes keys using this method (Default: none; besides none, only "url" can be used)
       */
-    val encodingType: js.UndefOr[String] = js.native
+    val encodingType: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean specifying whether to populate the owner list (Default: false)
       */
-    val fetchOwner: js.UndefOr[Boolean] = js.native
+    val fetchOwner: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum object keys to return (Default: 1000)
       */
-    val maxKeys: js.UndefOr[Double] = js.native
+    val maxKeys: js.UndefOr[Double] = js.undefined
     
     /**
       * Limits results to object keys with this prefix (Default: none)
       */
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Returns key names lexicographically after a specific object key in your bucket (Default: none; S3 lists object keys in UTF-8 character encoding in lexicographical order)
       */
-    val startAfter: js.UndefOr[String] = js.native
+    val startAfter: js.UndefOr[String] = js.undefined
   }
   object GetBucketObjectsArgs {
     
@@ -105,42 +105,41 @@ object getBucketObjectsMod {
     }
   }
   
-  @js.native
   trait GetBucketObjectsResult extends StObject {
     
-    val bucket: String = js.native
+    val bucket: String
     
     /**
       * List of any keys between `prefix` and the next occurrence of `delimiter` (i.e., similar to subdirectories of the `prefix` "directory"); the list is only returned when you specify `delimiter`
       */
-    val commonPrefixes: js.Array[String] = js.native
+    val commonPrefixes: js.Array[String]
     
-    val delimiter: js.UndefOr[String] = js.native
+    val delimiter: js.UndefOr[String] = js.undefined
     
-    val encodingType: js.UndefOr[String] = js.native
+    val encodingType: js.UndefOr[String] = js.undefined
     
-    val fetchOwner: js.UndefOr[Boolean] = js.native
+    val fetchOwner: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * List of strings representing object keys
       */
-    val keys: js.Array[String] = js.native
+    val keys: js.Array[String]
     
-    val maxKeys: js.UndefOr[Double] = js.native
+    val maxKeys: js.UndefOr[Double] = js.undefined
     
     /**
       * List of strings representing object owner IDs (see `fetchOwner` above)
       */
-    val owners: js.Array[String] = js.native
+    val owners: js.Array[String]
     
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
-    val startAfter: js.UndefOr[String] = js.native
+    val startAfter: js.UndefOr[String] = js.undefined
   }
   object GetBucketObjectsResult {
     

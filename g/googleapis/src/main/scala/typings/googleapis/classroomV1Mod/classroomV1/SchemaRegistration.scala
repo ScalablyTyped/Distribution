@@ -2,37 +2,35 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction to Classroom to send notifications from the `feed` to the
   * provided destination.
   */
-@js.native
 trait SchemaRegistration extends StObject {
   
   /**
     * The Cloud Pub/Sub topic that notifications are to be sent to.
     */
-  var cloudPubsubTopic: js.UndefOr[SchemaCloudPubsubTopic] = js.native
+  var cloudPubsubTopic: js.UndefOr[SchemaCloudPubsubTopic] = js.undefined
   
   /**
     * The time until which the `Registration` is effective.  This is a
     * read-only field assigned by the server.
     */
-  var expiryTime: js.UndefOr[String] = js.native
+  var expiryTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specification for the class of notifications that Classroom should
     * deliver to the destination.
     */
-  var feed: js.UndefOr[SchemaFeed] = js.native
+  var feed: js.UndefOr[SchemaFeed] = js.undefined
   
   /**
     * A server-generated unique identifier for this `Registration`.  Read-only.
     */
-  var registrationId: js.UndefOr[String] = js.native
+  var registrationId: js.UndefOr[String] = js.undefined
 }
 object SchemaRegistration {
   

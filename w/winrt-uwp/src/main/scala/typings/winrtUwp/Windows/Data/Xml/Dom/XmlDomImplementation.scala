@@ -2,11 +2,9 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods that are independent of any particular instance of the document object model. */
-@js.native
 trait XmlDomImplementation extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait XmlDomImplementation extends StObject {
     * @param version Specifies the version number to test. If NULL, tests for implementation of the feature in any version. In Level 1, "1.0" is the valid version value.
     * @return True if the specified feature is implemented; otherwise false.
     */
-  def hasFeature(feature: String, version: js.Any): Boolean = js.native
+  def hasFeature(feature: String, version: js.Any): Boolean
 }
 object XmlDomImplementation {
   

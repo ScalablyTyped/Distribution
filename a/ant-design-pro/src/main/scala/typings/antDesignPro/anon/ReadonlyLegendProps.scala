@@ -14,46 +14,44 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.LegendProps> */
-@js.native
 trait ReadonlyLegendProps extends StObject {
   
-  val allowAllCanceled: js.UndefOr[Boolean] = js.native
+  val allowAllCanceled: js.UndefOr[Boolean] = js.undefined
   
-  val background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.native
+  val background: js.UndefOr[typings.antvG2.mod.Styles.background] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val clickable: js.UndefOr[Boolean] = js.native
+  val clickable: js.UndefOr[Boolean] = js.undefined
   
-  val container: js.UndefOr[String] = js.native
+  val container: js.UndefOr[String] = js.undefined
   
-  val containerTpl: js.UndefOr[String] = js.native
+  val containerTpl: js.UndefOr[String] = js.undefined
   
-  val custom: js.UndefOr[Boolean] = js.native
+  val custom: js.UndefOr[Boolean] = js.undefined
   
-  val `g2-legend`: js.UndefOr[CSSProperties] = js.native
+  val `g2-legend`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-legend-item`: js.UndefOr[CSSProperties] = js.native
+  val `g2-legend-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-legend-list-item`: js.UndefOr[CSSProperties] = js.native
+  val `g2-legend-list-item`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-legend-marker`: js.UndefOr[CSSProperties] = js.native
+  val `g2-legend-marker`: js.UndefOr[CSSProperties] = js.undefined
   
-  val `g2-legend-text`: js.UndefOr[CSSProperties] = js.native
+  val `g2-legend-text`: js.UndefOr[CSSProperties] = js.undefined
   
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
-  val hoverable: js.UndefOr[Boolean] = js.native
+  val hoverable: js.UndefOr[Boolean] = js.undefined
   
-  val itemFormatter: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], String | Double]] = js.native
+  val itemFormatter: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], String | Double]] = js.undefined
   
-  val itemGap: js.UndefOr[Double] = js.native
+  val itemGap: js.UndefOr[Double] = js.undefined
   
-  val itemMarginBottom: js.UndefOr[Double] = js.native
+  val itemMarginBottom: js.UndefOr[Double] = js.undefined
   
   val itemTpl: js.UndefOr[
     String | (js.Function4[
@@ -63,15 +61,15 @@ trait ReadonlyLegendProps extends StObject {
       /* index */ js.UndefOr[Double], 
       String
     ])
-  ] = js.native
+  ] = js.undefined
   
-  val itemWidth: js.UndefOr[Double] = js.native
+  val itemWidth: js.UndefOr[Double] = js.undefined
   
-  val items: js.UndefOr[js.Array[_]] = js.native
+  val items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val layout: js.UndefOr[LegendLayoutType] = js.native
+  val layout: js.UndefOr[LegendLayoutType] = js.undefined
   
   val marker: js.UndefOr[
     String | MarkerType | (js.Function4[
@@ -81,39 +79,39 @@ trait ReadonlyLegendProps extends StObject {
       /* ctx */ js.UndefOr[CanvasRenderingContext2D], 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
-  val name: js.UndefOr[String] = js.native
+  val name: js.UndefOr[String] = js.undefined
   
-  val offsetX: js.UndefOr[Double] = js.native
+  val offsetX: js.UndefOr[Double] = js.undefined
   
-  val offsetY: js.UndefOr[Double] = js.native
+  val offsetY: js.UndefOr[Double] = js.undefined
   
-  val onClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.native
+  val onClick: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   
-  val onHover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.native
+  val onHover: js.UndefOr[js.Function1[/* ev */ MouseEvent, Unit]] = js.undefined
   
-  val position: js.UndefOr[LegendPositionType] = js.native
+  val position: js.UndefOr[LegendPositionType] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val scroll: js.UndefOr[Boolean] = js.native
+  val scroll: js.UndefOr[Boolean] = js.undefined
   
-  val selectedMode: js.UndefOr[single | multiple] = js.native
+  val selectedMode: js.UndefOr[single | multiple] = js.undefined
   
-  val slidable: js.UndefOr[Boolean] = js.native
+  val slidable: js.UndefOr[Boolean] = js.undefined
   
-  val textStyle: js.UndefOr[text] = js.native
+  val textStyle: js.UndefOr[text] = js.undefined
   
-  val title: js.UndefOr[Boolean] = js.native
+  val title: js.UndefOr[Boolean] = js.undefined
   
-  val unChecked: js.UndefOr[String] = js.native
+  val unChecked: js.UndefOr[String] = js.undefined
   
-  val useHtml: js.UndefOr[Boolean] = js.native
+  val useHtml: js.UndefOr[Boolean] = js.undefined
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
   
-  val width: js.UndefOr[Double] = js.native
+  val width: js.UndefOr[Double] = js.undefined
 }
 object ReadonlyLegendProps {
   
@@ -254,7 +252,7 @@ object ReadonlyLegendProps {
     def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -330,10 +328,10 @@ object ReadonlyLegendProps {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

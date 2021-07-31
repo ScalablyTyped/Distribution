@@ -2,60 +2,60 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key information to flag to healthcare providers
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Flag extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Flag
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Flag creator
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Clinical, administrative, etc.
     */
-  var category: js.UndefOr[CodeableConcept] = js.native
+  var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Coded or textual message to display to user
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Alert relevant during encounter
     */
-  var encounter: js.UndefOr[Reference] = js.native
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Time period when flag is active
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * active | inactive | entered-in-error
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Who/What is flag about?
     */
-  var subject: Reference = js.native
+  var subject: Reference
 }
 object Flag {
   

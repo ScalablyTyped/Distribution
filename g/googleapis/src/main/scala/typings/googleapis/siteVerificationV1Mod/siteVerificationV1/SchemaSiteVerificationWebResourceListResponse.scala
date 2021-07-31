@@ -2,16 +2,14 @@ package typings.googleapis.siteVerificationV1Mod.siteVerificationV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSiteVerificationWebResourceListResponse extends StObject {
   
   /**
     * The list of sites that are owned by the authenticated user.
     */
-  var items: js.UndefOr[js.Array[SchemaSiteVerificationWebResourceResource]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSiteVerificationWebResourceResource]] = js.undefined
 }
 object SchemaSiteVerificationWebResourceListResponse {
   

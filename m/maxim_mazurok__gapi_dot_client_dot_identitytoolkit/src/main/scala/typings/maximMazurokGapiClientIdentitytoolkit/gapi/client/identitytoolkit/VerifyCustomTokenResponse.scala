@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyCustomTokenResponse extends StObject {
   
   /** If idToken is STS id token, then this field will be expiration time of STS id token in seconds. */
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
   /** The GITKit token for authenticated user. */
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
   /** True if it's a new user sign-in, false if it's a returning user. */
-  var isNewUser: js.UndefOr[Boolean] = js.native
+  var isNewUser: js.UndefOr[Boolean] = js.undefined
   
   /** The fixed string "identitytoolkit#VerifyCustomTokenResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** If idToken is STS id token, then this field will be refresh token. */
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
 }
 object VerifyCustomTokenResponse {
   

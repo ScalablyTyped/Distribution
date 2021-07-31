@@ -6,7 +6,6 @@ import typings.qIo.Qio.Reader
 import typings.qIo.Qio.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object QioHTTP {
@@ -17,38 +16,37 @@ object QioHTTP {
   
   type Headers = StringDictionary[js.Any]
   
-  @js.native
   trait Request extends StObject {
     
-    var agent: js.Any = js.native
+    var agent: js.Any
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var host: String = js.native
+    var host: String
     
-    var method: String = js.native
+    var method: String
     
-    var node: js.Any = js.native
+    var node: js.Any
     
-    var path: String = js.native
+    var path: String
     
-    var pathInfo: String = js.native
+    var pathInfo: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var remoteHost: String = js.native
+    var remoteHost: String
     
-    var remotePort: Double = js.native
+    var remotePort: Double
     
-    var scheme: String = js.native
+    var scheme: String
     
-    var scriptName: String = js.native
+    var scriptName: String
     
-    var url: String = js.native
+    var url: String
     
-    var version: js.Array[String] = js.native
+    var version: js.Array[String]
   }
   object Request {
     
@@ -127,18 +125,17 @@ object QioHTTP {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: Reader = js.native
+    var body: Reader
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var node: js.Any = js.native
+    var node: js.Any
     
-    def onclose(): Unit = js.native
+    def onclose(): Unit
     
-    var status: Double = js.native
+    var status: Double
   }
   object Response {
     

@@ -4,7 +4,6 @@ import typings.materializeCss.anon.PartialScrollSpyOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -13,37 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ScrollSpy () extends StObject
 object ScrollSpy {
   
+  @JSImport("materialize-css", "ScrollSpy")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get Instance
     */
   /* static member */
-  @JSImport("materialize-css", "ScrollSpy.getInstance")
-  @js.native
-  def getInstance(elem: Element): typings.materializeCss.M.ScrollSpy = js.native
+  @scala.inline
+  def getInstance(elem: Element): typings.materializeCss.M.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.ScrollSpy]
   
   /**
     * Init ScrollSpies
     */
   /* static member */
-  @JSImport("materialize-css", "ScrollSpy.init")
-  @js.native
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
-  ): js.Array[typings.materializeCss.M.ScrollSpy] = js.native
-  @JSImport("materialize-css", "ScrollSpy.init")
-  @js.native
+  ): js.Array[typings.materializeCss.M.ScrollSpy] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.ScrollSpy]]
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialScrollSpyOptions
-  ): js.Array[typings.materializeCss.M.ScrollSpy] = js.native
+  ): js.Array[typings.materializeCss.M.ScrollSpy] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.ScrollSpy]]
   /**
     * Init ScrollSpy
     */
   /* static member */
-  @JSImport("materialize-css", "ScrollSpy.init")
-  @js.native
-  def init(els: Element): typings.materializeCss.M.ScrollSpy = js.native
-  @JSImport("materialize-css", "ScrollSpy.init")
-  @js.native
-  def init(els: Element, options: PartialScrollSpyOptions): typings.materializeCss.M.ScrollSpy = js.native
+  @scala.inline
+  def init(els: Element): typings.materializeCss.M.ScrollSpy = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.ScrollSpy]
+  @scala.inline
+  def init(els: Element, options: PartialScrollSpyOptions): typings.materializeCss.M.ScrollSpy = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.ScrollSpy]
 }

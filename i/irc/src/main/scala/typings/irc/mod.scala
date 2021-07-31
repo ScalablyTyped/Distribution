@@ -12,7 +12,6 @@ import typings.node.netMod.Socket
 import typings.node.tlsMod.SecureContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,9 +65,9 @@ object mod {
       * @param callback
       */
     def connect(): Unit = js.native
-    def connect(retryCount: js.UndefOr[scala.Nothing], callback: IRaw): Unit = js.native
     def connect(retryCount: Double): Unit = js.native
     def connect(retryCount: Double, callback: IRaw): Unit = js.native
+    def connect(retryCount: Unit, callback: IRaw): Unit = js.native
     def connect(retryCount: IRaw): Unit = js.native
     def connect(retryCount: IRaw, callback: IRaw): Unit = js.native
     
@@ -171,43 +170,50 @@ object mod {
   object CommandType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[CommandType with Double] = js.native
+    def apply(value: Double): js.UndefOr[CommandType & Double] = js.native
     
     @js.native
-    sealed trait error extends CommandType
-    /* 2 */ val error: typings.irc.mod.CommandType.error with Double = js.native
+    sealed trait error
+      extends StObject
+         with CommandType
+    /* 2 */ val error: typings.irc.mod.CommandType.error & Double = js.native
     
     @js.native
-    sealed trait normal extends CommandType
-    /* 0 */ val normal: typings.irc.mod.CommandType.normal with Double = js.native
+    sealed trait normal
+      extends StObject
+         with CommandType
+    /* 0 */ val normal: typings.irc.mod.CommandType.normal & Double = js.native
     
     @js.native
-    sealed trait reply extends CommandType
-    /* 1 */ val reply: typings.irc.mod.CommandType.reply with Double = js.native
+    sealed trait reply
+      extends StObject
+         with CommandType
+    /* 1 */ val reply: typings.irc.mod.CommandType.reply & Double = js.native
   }
   
   /** Colors */
   object colors {
     
-    @JSImport("irc", "colors.wrap")
+    @JSImport("irc", "colors")
     @js.native
-    def wrap(color: String, text: String): String = js.native
-    @JSImport("irc", "colors.wrap")
-    @js.native
-    def wrap(color: String, text: String, reset_color: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def wrap(color: String, text: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def wrap(color: String, text: String, reset_color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(color.asInstanceOf[js.Any], text.asInstanceOf[js.Any], reset_color.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
   trait IChannel extends StObject {
     
     /** Channel name */
-    var name: String = js.native
+    var name: String
     
     /** Topic string */
-    var topic: String = js.native
+    var topic: String
     
     /** User count */
-    var users: String = js.native
+    var users: String
   }
   object IChannel {
     
@@ -231,130 +237,129 @@ object mod {
     }
   }
   
-  @js.native
   trait IClientOpts extends StObject {
     
     /**
       * Should we auto-reconnect to networks?
       * @default true
       */
-    var autoConnect: js.UndefOr[Boolean] = js.native
+    var autoConnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we auto-rejoin channels?
       * @default false
       */
-    var autoRejoin: js.UndefOr[Boolean] = js.native
+    var autoRejoin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we accept expired certificates?
       * @default false
       */
-    var certExpired: js.UndefOr[Boolean] = js.native
+    var certExpired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Channel prefix
       * @default '&#'
       */
-    var channelPrefixes: js.UndefOr[String] = js.native
+    var channelPrefixes: js.UndefOr[String] = js.undefined
     
     /**
       * Channels to join
       * @default []
       */
-    var channels: js.UndefOr[js.Array[String]] = js.native
+    var channels: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Should we output debug messages to STDOUT?
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Encoding to use. See
       * https://nodejs.org/api/stream.html#stream_readable_setencoding_encoding
       * @default 'utf-8'
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Should we queue our messages to ensure we don't get kicked?
       * @default false
       */
-    var floodProtection: js.UndefOr[Boolean] = js.native
+    var floodProtection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Delay between messages when flood protection is active
       * @default 1000
       */
-    var floodProtectionDelay: js.UndefOr[Double] = js.native
+    var floodProtectionDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Local interface to bind to for network connections. See
       * https://nodejs.org/api/net.html#net_socket_localaddress
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * Characters to split a message at.
       * @default 512
       */
-    var messageSplit: js.UndefOr[Double] = js.native
+    var messageSplit: js.UndefOr[Double] = js.undefined
     
     /**
       * IRC username
       * @default ''
       */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /**
       * IRC connection port. See
       * https://nodejs.org/api/net.html#net_socket_remoteport
       * @default 6667
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * IRC "real name"
       * @default 'nodeJS IRC client'
       */
-    var realName: js.UndefOr[String] = js.native
+    var realName: js.UndefOr[String] = js.undefined
     
     /**
       * Should we use SASL authentication?
       * @default false
       */
-    var sasl: js.UndefOr[Boolean] = js.native
+    var sasl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should SSL be used? Can either be true or crypto credentials.
       * @default false
       */
-    var secure: js.UndefOr[Boolean | SecureContext] = js.native
+    var secure: js.UndefOr[Boolean | SecureContext] = js.undefined
     
     /**
       * Should we accept self-signed certificates?
       * @default false
       */
-    var selfSigned: js.UndefOr[Boolean] = js.native
+    var selfSigned: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we output IRC errors?
       * @default false
       */
-    var showErrors: js.UndefOr[Boolean] = js.native
+    var showErrors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Should we strip mIRC colors from the output messages?
       * @default false
       */
-    var stripColors: js.UndefOr[Boolean] = js.native
+    var stripColors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * IRC username
       * @default 'nodebot'
       */
-    var userName: js.UndefOr[String] = js.native
+    var userName: js.UndefOr[String] = js.undefined
   }
   object IClientOpts {
     
@@ -492,23 +497,22 @@ object mod {
     }
   }
   
-  @js.native
   trait IMessage extends StObject {
     
     /** Command arguments */
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
     /** Mapped IRC command */
-    var command: String = js.native
+    var command: String
     
     /** Command type */
-    var commandType: CommandType = js.native
+    var commandType: CommandType
     
     /** Prefix */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /** Raw IRC command */
-    var rawCommand: String = js.native
+    var rawCommand: String
   }
   object IMessage {
     
@@ -544,32 +548,31 @@ object mod {
     }
   }
   
-  @js.native
   trait IWhoisData extends StObject {
     
     /** Channels */
-    var channels: js.Array[String] = js.native
+    var channels: js.Array[String]
     
     /** Hostnamej */
-    var host: String = js.native
+    var host: String
     
     /** Nickname */
-    var nick: String = js.native
+    var nick: String
     
     /** Is this user an operator? */
-    var operator: String = js.native
+    var operator: String
     
     /** Real name" */
-    var realname: String = js.native
+    var realname: String
     
     /** Server */
-    var server: String = js.native
+    var server: String
     
     /** Server description string */
-    var serverinfo: String = js.native
+    var serverinfo: String
     
     /** Username */
-    var user: String = js.native
+    var user: String
   }
   object IWhoisData {
     

@@ -3,38 +3,39 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.stackTypesMod.StackDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClosingRouteKeys extends StObject {
   
-  var closingRouteKeys: js.UndefOr[scala.Nothing] = js.native
+  var closingRouteKeys: Unit
   
-  var descriptors: StackDescriptorMap = js.native
+  var descriptors: StackDescriptorMap
   
-  var openingRouteKeys: js.UndefOr[scala.Nothing] = js.native
+  var openingRouteKeys: Unit
   
-  var previousDescriptors: StackDescriptorMap = js.native
-  
-  // tslint:disable-next-line no-redundant-undefined array-type use-default-type-parameter
-  var previousRoutes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]] = js.native
-  
-  var replacingRouteKeys: js.UndefOr[scala.Nothing] = js.native
+  var previousDescriptors: StackDescriptorMap
   
   // tslint:disable-next-line no-redundant-undefined array-type use-default-type-parameter
-  var routes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]] = js.native
+  var previousRoutes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
+  
+  var replacingRouteKeys: Unit
+  
+  // tslint:disable-next-line no-redundant-undefined array-type use-default-type-parameter
+  var routes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
 }
 object ClosingRouteKeys {
   
   @scala.inline
   def apply(
+    closingRouteKeys: Unit,
     descriptors: StackDescriptorMap,
+    openingRouteKeys: Unit,
     previousDescriptors: StackDescriptorMap,
     previousRoutes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]],
+    replacingRouteKeys: Unit,
     routes: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]
   ): ClosingRouteKeys = {
-    val __obj = js.Dynamic.literal(descriptors = descriptors.asInstanceOf[js.Any], previousDescriptors = previousDescriptors.asInstanceOf[js.Any], previousRoutes = previousRoutes.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(closingRouteKeys = closingRouteKeys.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], openingRouteKeys = openingRouteKeys.asInstanceOf[js.Any], previousDescriptors = previousDescriptors.asInstanceOf[js.Any], previousRoutes = previousRoutes.asInstanceOf[js.Any], replacingRouteKeys = replacingRouteKeys.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClosingRouteKeys]
   }
   
@@ -42,7 +43,13 @@ object ClosingRouteKeys {
   implicit class ClosingRouteKeysMutableBuilder[Self <: ClosingRouteKeys] (val x: Self) extends AnyVal {
     
     @scala.inline
+    def setClosingRouteKeys(value: Unit): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOpeningRouteKeys(value: Unit): Self = StObject.set(x, "openingRouteKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPreviousDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "previousDescriptors", value.asInstanceOf[js.Any])
@@ -52,6 +59,9 @@ object ClosingRouteKeys {
     
     @scala.inline
     def setPreviousRoutesVarargs(value: (typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]])*): Self = StObject.set(x, "previousRoutes", js.Array(value :_*))
+    
+    @scala.inline
+    def setReplacingRouteKeys(value: Unit): Self = StObject.set(x, "replacingRouteKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRoutes(value: js.Array[typings.tuyaPanelKit.routersTypesMod.Route[String, js.UndefOr[js.Object]]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])

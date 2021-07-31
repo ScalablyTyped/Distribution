@@ -4,7 +4,6 @@ import typings.bmapgl.anon.Fromitem
 import typings.bmapgl.anon.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

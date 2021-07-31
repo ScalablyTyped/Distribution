@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFlowSourceResponse extends StObject {
   
   /**
     * The ARN of the flow that you want to update.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * The settings for the source of the flow.
     */
-  var Source: js.UndefOr[typings.awsSdk.mediaconnectMod.Source] = js.native
+  var Source: js.UndefOr[typings.awsSdk.mediaconnectMod.Source] = js.undefined
 }
 object UpdateFlowSourceResponse {
   

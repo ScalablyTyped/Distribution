@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroundQueryElevationOptions extends Object {
+trait GroundQueryElevationOptions
+  extends StObject
+     with Object {
   
   /**
     * The value that appears in the resulting geometry when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
     */
-  var noDataValue: js.UndefOr[Double] = js.native
+  var noDataValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to return additional sample information for each sampled coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Ground.html#queryElevation)
     */
-  var returnSampleInfo: js.UndefOr[Boolean] = js.native
+  var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
 }
 object GroundQueryElevationOptions {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object TimedTextWrapping extends StObject {
   
   /** The text is not wrapped. */
   @js.native
-  sealed trait noWrap extends TimedTextWrapping
+  sealed trait noWrap
+    extends StObject
+       with TimedTextWrapping
   
   /** The text is wrapped. */
   @js.native
-  sealed trait wrap extends TimedTextWrapping
+  sealed trait wrap
+    extends StObject
+       with TimedTextWrapping
 }

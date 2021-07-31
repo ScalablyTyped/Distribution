@@ -3,7 +3,6 @@ package typings.raygun4js
 import typings.raygun4js.mod.BreadcrumbLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raygun4jsStrings {
@@ -59,7 +58,9 @@ object raygun4jsStrings {
   def customTiming: customTiming = "customTiming".asInstanceOf[customTiming]
   
   @js.native
-  sealed trait debug extends BreadcrumbLevel
+  sealed trait debug
+    extends StObject
+       with BreadcrumbLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -134,7 +135,9 @@ object raygun4jsStrings {
   def endSession: endSession = "endSession".asInstanceOf[endSession]
   
   @js.native
-  sealed trait error extends BreadcrumbLevel
+  sealed trait error
+    extends StObject
+       with BreadcrumbLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -154,7 +157,9 @@ object raygun4jsStrings {
   def groupingKey: groupingKey = "groupingKey".asInstanceOf[groupingKey]
   
   @js.native
-  sealed trait info extends BreadcrumbLevel
+  sealed trait info
+    extends StObject
+       with BreadcrumbLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -244,7 +249,9 @@ object raygun4jsStrings {
   def trackEvent: trackEvent = "trackEvent".asInstanceOf[trackEvent]
   
   @js.native
-  sealed trait warning extends BreadcrumbLevel
+  sealed trait warning
+    extends StObject
+       with BreadcrumbLevel
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   

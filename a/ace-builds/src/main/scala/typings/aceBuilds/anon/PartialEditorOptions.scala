@@ -20,120 +20,118 @@ import typings.aceBuilds.mod.Ace.EditSession
 import typings.aceBuilds.mod.Ace.NewLineMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ace-builds.ace-builds.Ace.EditorOptions> */
-@js.native
 trait PartialEditorOptions extends StObject {
   
-  var animatedScroll: js.UndefOr[Boolean] = js.native
+  var animatedScroll: js.UndefOr[Boolean] = js.undefined
   
-  var autoScrollEditorIntoView: js.UndefOr[Boolean] = js.native
+  var autoScrollEditorIntoView: js.UndefOr[Boolean] = js.undefined
   
-  var behavioursEnabled: js.UndefOr[Boolean] = js.native
+  var behavioursEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var copyWithEmptySelection: js.UndefOr[Boolean] = js.native
+  var copyWithEmptySelection: js.UndefOr[Boolean] = js.undefined
   
-  var cursorStyle: js.UndefOr[ace | slim | smooth | wide] = js.native
+  var cursorStyle: js.UndefOr[ace | slim | smooth | wide] = js.undefined
   
-  var displayIndentGuides: js.UndefOr[Boolean] = js.native
+  var displayIndentGuides: js.UndefOr[Boolean] = js.undefined
   
-  var dragDelay: js.UndefOr[Double] = js.native
+  var dragDelay: js.UndefOr[Double] = js.undefined
   
-  var dragEnabled: js.UndefOr[Boolean] = js.native
+  var dragEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var enableAutoIndent: js.UndefOr[Boolean] = js.native
+  var enableAutoIndent: js.UndefOr[Boolean] = js.undefined
   
-  var fadeFoldWidgets: js.UndefOr[Boolean] = js.native
+  var fadeFoldWidgets: js.UndefOr[Boolean] = js.undefined
   
-  var firstLineNumber: js.UndefOr[Double] = js.native
+  var firstLineNumber: js.UndefOr[Double] = js.undefined
   
-  var fixedWidthGutter: js.UndefOr[Boolean] = js.native
+  var fixedWidthGutter: js.UndefOr[Boolean] = js.undefined
   
-  var focusTimeout: js.UndefOr[Double] = js.native
+  var focusTimeout: js.UndefOr[Double] = js.undefined
   
-  var foldStyle: js.UndefOr[markbegin | markbeginend | manual] = js.native
+  var foldStyle: js.UndefOr[markbegin | markbeginend | manual] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var hScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.native
+  var hScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined
   
-  var hasCssTransforms: js.UndefOr[Boolean] = js.native
+  var hasCssTransforms: js.UndefOr[Boolean] = js.undefined
   
-  var highlightActiveLine: js.UndefOr[Boolean] = js.native
+  var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
   
-  var highlightGutterLine: js.UndefOr[Boolean] = js.native
+  var highlightGutterLine: js.UndefOr[Boolean] = js.undefined
   
-  var highlightSelectedWord: js.UndefOr[Boolean] = js.native
+  var highlightSelectedWord: js.UndefOr[Boolean] = js.undefined
   
-  var indentedSoftWrap: js.UndefOr[Boolean] = js.native
+  var indentedSoftWrap: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardHandler: js.UndefOr[String] = js.native
+  var keyboardHandler: js.UndefOr[String] = js.undefined
   
-  var maxLines: js.UndefOr[Double] = js.native
+  var maxLines: js.UndefOr[Double] = js.undefined
   
-  var maxPixelHeight: js.UndefOr[Double] = js.native
+  var maxPixelHeight: js.UndefOr[Double] = js.undefined
   
-  var mergeUndoDeltas: js.UndefOr[`true` | `false` | always] = js.native
+  var mergeUndoDeltas: js.UndefOr[`true` | `false` | always] = js.undefined
   
-  var minLines: js.UndefOr[Double] = js.native
+  var minLines: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var navigateWithinSoftTabs: js.UndefOr[Boolean] = js.native
+  var navigateWithinSoftTabs: js.UndefOr[Boolean] = js.undefined
   
-  var newLineMode: js.UndefOr[NewLineMode] = js.native
+  var newLineMode: js.UndefOr[NewLineMode] = js.undefined
   
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var printMargin: js.UndefOr[Boolean | Double] = js.native
+  var printMargin: js.UndefOr[Boolean | Double] = js.undefined
   
-  var printMarginColumn: js.UndefOr[Double] = js.native
+  var printMarginColumn: js.UndefOr[Double] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var scrollPastEnd: js.UndefOr[Boolean] = js.native
+  var scrollPastEnd: js.UndefOr[Boolean] = js.undefined
   
-  var scrollSpeed: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.undefined
   
-  var selectionStyle: js.UndefOr[String] = js.native
+  var selectionStyle: js.UndefOr[String] = js.undefined
   
-  var session: js.UndefOr[EditSession] = js.native
+  var session: js.UndefOr[EditSession] = js.undefined
   
-  var showFoldWidgets: js.UndefOr[Boolean] = js.native
+  var showFoldWidgets: js.UndefOr[Boolean] = js.undefined
   
-  var showGutter: js.UndefOr[Boolean] = js.native
+  var showGutter: js.UndefOr[Boolean] = js.undefined
   
-  var showInvisibles: js.UndefOr[Boolean] = js.native
+  var showInvisibles: js.UndefOr[Boolean] = js.undefined
   
-  var showLineNumbers: js.UndefOr[Boolean] = js.native
+  var showLineNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var showPrintMargin: js.UndefOr[Boolean] = js.native
+  var showPrintMargin: js.UndefOr[Boolean] = js.undefined
   
-  var tabSize: js.UndefOr[Double] = js.native
+  var tabSize: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var tooltipFollowsMouse: js.UndefOr[Boolean] = js.native
+  var tooltipFollowsMouse: js.UndefOr[Boolean] = js.undefined
   
-  var useSoftTabs: js.UndefOr[Boolean] = js.native
+  var useSoftTabs: js.UndefOr[Boolean] = js.undefined
   
-  var useWorker: js.UndefOr[Boolean] = js.native
+  var useWorker: js.UndefOr[Boolean] = js.undefined
   
-  var vScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.native
+  var vScrollBarAlwaysVisible: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var wrap: js.UndefOr[off | free | printmargin_ | Boolean | Double] = js.native
+  var wrap: js.UndefOr[off | free | printmargin_ | Boolean | Double] = js.undefined
   
-  var wrapBehavioursEnabled: js.UndefOr[Boolean] = js.native
+  var wrapBehavioursEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var wrapMethod: js.UndefOr[code | text | auto] = js.native
+  var wrapMethod: js.UndefOr[code | text | auto] = js.undefined
 }
 object PartialEditorOptions {
   

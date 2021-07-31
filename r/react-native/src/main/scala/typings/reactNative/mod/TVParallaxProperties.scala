@@ -2,51 +2,49 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TVParallaxProperties extends StObject {
   
   /**
     * If true, parallax effects are enabled.  Defaults to true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to 1.0
     */
-  var magnification: js.UndefOr[Double] = js.native
+  var magnification: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 0.3
     */
-  var pressDelay: js.UndefOr[Double] = js.native
+  var pressDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 0.3
     */
-  var pressDuration: js.UndefOr[Double] = js.native
+  var pressDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 1.0
     */
-  var pressMagnification: js.UndefOr[Double] = js.native
+  var pressMagnification: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 2.0.
     */
-  var shiftDistanceX: js.UndefOr[Double] = js.native
+  var shiftDistanceX: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 2.0.
     */
-  var shiftDistanceY: js.UndefOr[Double] = js.native
+  var shiftDistanceY: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 0.05.
     */
-  var tiltAngle: js.UndefOr[Double] = js.native
+  var tiltAngle: js.UndefOr[Double] = js.undefined
 }
 object TVParallaxProperties {
   

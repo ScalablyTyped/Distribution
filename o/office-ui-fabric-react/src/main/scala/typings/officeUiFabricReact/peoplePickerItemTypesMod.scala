@@ -13,22 +13,22 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peoplePickerItemTypesMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSharedProps because var conflicts: className. Inlined theme */ @js.native
-  trait IPeoplePickerItemSelectedProps extends IPickerItemProps[IPersonaPropsValidationSt] {
+  - typings.officeUiFabricReact.peoplePickerItemTypesMod.IPeoplePickerItemSharedProps because var conflicts: className. Inlined theme */ trait IPeoplePickerItemSelectedProps
+    extends StObject
+       with IPickerItemProps[IPersonaPropsValidationSt] {
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IPeoplePickerItemSelectedStyleProps, IPeoplePickerItemSelectedStyles]
-      ] = js.native
+      ] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IPeoplePickerItemSelectedProps {
     
@@ -62,19 +62,18 @@ object peoplePickerItemTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types.IPeoplePickerItemSelectedProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types.IPeoplePickerItemSelectedProps, 'className' | 'selected' | 'disabled'> & {  invalid :boolean | undefined} */
-  @js.native
   trait IPeoplePickerItemSelectedStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether it's invalid. */
-    var invalid: js.UndefOr[Boolean] = js.native
+    var invalid: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IPeoplePickerItemSelectedStyleProps {
     
@@ -116,20 +115,19 @@ object peoplePickerItemTypesMod {
     }
   }
   
-  @js.native
   trait IPeoplePickerItemSelectedStyles extends StObject {
     
     /** Refers to the element holding the content (Persona) of the PeoplePicker item already picked. */
-    var itemContent: IStyle = js.native
+    var itemContent: IStyle
     
     /** Refers to the remove action button on a picked PeoplePicker item. */
-    var removeButton: IStyle = js.native
+    var removeButton: IStyle
     
     /** Root element of picked PeoplePicker item */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** SubComponent (Persona, PersonaCoin) styles. */
-    var subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles = js.native
+    var subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles
   }
   object IPeoplePickerItemSelectedStyles {
     
@@ -174,19 +172,18 @@ object peoplePickerItemTypesMod {
     }
   }
   
-  @js.native
   trait IPeoplePickerItemSelectedSubComponentStyles extends StObject {
     
     /** Refers to the Persona rendered within the PeoplePickerItemSelected */
-    var persona: IStyleFunctionOrObject[IPersonaStyleProps, _] = js.native
+    var persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]
     
     /** Refers to the PersonaCoin in the Persona rendered within the PeoplePickerItemSelected */
-    var personaCoin: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, _]] = js.native
+    var personaCoin: js.UndefOr[IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]] = js.undefined
   }
   object IPeoplePickerItemSelectedSubComponentStyles {
     
     @scala.inline
-    def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, _]): IPeoplePickerItemSelectedSubComponentStyles = {
+    def apply(persona: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): IPeoplePickerItemSelectedSubComponentStyles = {
       val __obj = js.Dynamic.literal(persona = persona.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPeoplePickerItemSelectedSubComponentStyles]
     }
@@ -195,30 +192,29 @@ object peoplePickerItemTypesMod {
     implicit class IPeoplePickerItemSelectedSubComponentStylesMutableBuilder[Self <: IPeoplePickerItemSelectedSubComponentStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, _]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
+      def setPersona(value: IStyleFunctionOrObject[IPersonaStyleProps, js.Any]): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, _]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
+      def setPersonaCoin(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, js.Any]): Self = StObject.set(x, "personaCoin", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[_]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
+      def setPersonaCoinFunction1(value: IPersonaCoinStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "personaCoin", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPersonaCoinUndefined: Self = StObject.set(x, "personaCoin", js.undefined)
       
       @scala.inline
-      def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[_]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
+      def setPersonaFunction1(value: IPersonaStyleProps => DeepPartial[js.Any]): Self = StObject.set(x, "persona", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait IPeoplePickerItemSharedProps extends StObject {
     
     /** Additional CSS class(es) to apply to the PeoplePickerItem root element. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IPeoplePickerItemSharedProps {
     
@@ -245,26 +241,27 @@ object peoplePickerItemTypesMod {
     }
   }
   
-  @js.native
-  trait IPeoplePickerItemSuggestionProps extends IPeoplePickerItemSharedProps {
+  trait IPeoplePickerItemSuggestionProps
+    extends StObject
+       with IPeoplePickerItemSharedProps {
     
     /**
       * Flag that controls whether each suggested PeoplePicker item (Persona) is rendered with or without secondary text
       * for compact look.
       * @defaultvalue false
       */
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Persona props for each suggested for picking PeoplePicker item. */
-    var personaProps: js.UndefOr[IPersonaProps] = js.native
+    var personaProps: js.UndefOr[IPersonaProps] = js.undefined
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IPeoplePickerItemSuggestionStyleProps, IPeoplePickerItemSuggestionStyles]
-      ] = js.native
+      ] = js.undefined
     
     /** General common props for all PeoplePicker items suggestions. */
-    var suggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[_]] = js.native
+    var suggestionsProps: js.UndefOr[IBasePickerSuggestionsProps[js.Any]] = js.undefined
   }
   object IPeoplePickerItemSuggestionProps {
     
@@ -301,7 +298,7 @@ object peoplePickerItemTypesMod {
       def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
       @scala.inline
-      def setSuggestionsProps(value: IBasePickerSuggestionsProps[_]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
+      def setSuggestionsProps(value: IBasePickerSuggestionsProps[js.Any]): Self = StObject.set(x, "suggestionsProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSuggestionsPropsUndefined: Self = StObject.set(x, "suggestionsProps", js.undefined)
@@ -309,12 +306,11 @@ object peoplePickerItemTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types.IPeoplePickerItemSuggestionProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types.IPeoplePickerItemSuggestionProps, 'className'> & {} */
-  @js.native
   trait IPeoplePickerItemSuggestionStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IPeoplePickerItemSuggestionStyleProps {
     
@@ -338,17 +334,16 @@ object peoplePickerItemTypesMod {
     }
   }
   
-  @js.native
   trait IPeoplePickerItemSuggestionStyles extends StObject {
     
     /** Refers to the element wrapping the Persona of the suggested PeoplePicker item. */
-    var personaWrapper: IStyle = js.native
+    var personaWrapper: IStyle
     
     /** Root container element of a suggested PeoplePicker item. */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /** SubComponent (Persona, PersonaCoin) styles. */
-    var subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles = js.native
+    var subComponentStyles: IPeoplePickerItemSelectedSubComponentStyles
   }
   object IPeoplePickerItemSuggestionStyles {
     
@@ -386,11 +381,12 @@ object peoplePickerItemTypesMod {
   
   type IPeoplePickerItemWithMenuProps = IPickerItemProps[IPersonaWithMenu]
   
-  @js.native
-  trait IPersonaWithMenu extends IPersonaProps {
+  trait IPersonaWithMenu
+    extends StObject
+       with IPersonaProps {
     
     /** Additional menuItems to be rendered in a contextualMenu for each Persona. */
-    var menuItems: js.UndefOr[js.Array[IContextualMenuItem]] = js.native
+    var menuItems: js.UndefOr[js.Array[IContextualMenuItem]] = js.undefined
   }
   object IPersonaWithMenu {
     

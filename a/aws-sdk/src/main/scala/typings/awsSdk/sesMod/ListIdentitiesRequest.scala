@@ -2,26 +2,24 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentitiesRequest extends StObject {
   
   /**
     * The type of the identities to list. Possible values are "EmailAddress" and "Domain". If this parameter is omitted, then all identities will be listed.
     */
-  var IdentityType: js.UndefOr[typings.awsSdk.sesMod.IdentityType] = js.native
+  var IdentityType: js.UndefOr[typings.awsSdk.sesMod.IdentityType] = js.undefined
   
   /**
     * The maximum number of identities per page. Possible values are 1-1000 inclusive.
     */
-  var MaxItems: js.UndefOr[typings.awsSdk.sesMod.MaxItems] = js.native
+  var MaxItems: js.UndefOr[typings.awsSdk.sesMod.MaxItems] = js.undefined
   
   /**
     * The token to use for pagination.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesMod.NextToken] = js.undefined
 }
 object ListIdentitiesRequest {
   

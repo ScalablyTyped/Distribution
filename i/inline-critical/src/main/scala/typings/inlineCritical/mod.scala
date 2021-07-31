@@ -6,7 +6,6 @@ import typings.inlineCritical.inlineCriticalStrings.head
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,40 +22,41 @@ object mod {
     * // ignoring stylesheets matching regex
     * const inlined = inline(html, critical, {ignore: [/bootstrap/]})
     */
-  @JSImport("inline-critical", JSImport.Namespace)
-  @js.native
-  def apply(html: String, styles: String): String = js.native
-  @JSImport("inline-critical", JSImport.Namespace)
-  @js.native
-  def apply(html: String, styles: String, options: Options): String = js.native
+  @scala.inline
+  def apply(html: String, styles: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(html: String, styles: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("inline-critical", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * The path to be used when extracting styles to find the files references by `href` attributes.
       * @default process.cwd
       */
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to remove the inlined styles from any stylesheets referenced in the HTML.
       * @default false
       */
-    var extract: js.UndefOr[Boolean] = js.native
+    var extract: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Stylesheets to ignore when inlining.
       * @default []
       * @example [/bootstrap/]
       */
-    var ignore: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+    var ignore: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
     
     /**
       * Whether to minify the styles before inlining.
       * @default true
       */
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The position of the `noscript` fallback.
@@ -65,22 +65,22 @@ object mod {
       * * `false`: no `noscript`
       * @default 'body'
       */
-    var noscript: js.UndefOr[body | head | `false`] = js.native
+    var noscript: js.UndefOr[body | head | `false`] = js.undefined
     
     /**
       * Whether to add loadCSS if it's not already loaded.
       * @default true
       */
-    var polyfill: js.UndefOr[Boolean] = js.native
+    var polyfill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Paths to use in the `href` tag of the `link` elements.
       * @default false
       */
-    var replaceStylesheets: js.UndefOr[js.Array[String] | `false`] = js.native
+    var replaceStylesheets: js.UndefOr[js.Array[String] | `false`] = js.undefined
     
     /** The selector for the element used by loadCSS as a reference for inlining. */
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
   }
   object Options {
     

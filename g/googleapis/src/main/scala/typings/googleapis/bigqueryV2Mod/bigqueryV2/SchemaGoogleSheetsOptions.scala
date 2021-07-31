@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleSheetsOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaGoogleSheetsOptions extends StObject {
     * sheet_name!top_left_cell_id:bottom_right_cell_id For example:
     * sheet1!A1:B20
     */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The number of rows at the top of a sheet that BigQuery will
@@ -29,7 +27,7 @@ trait SchemaGoogleSheetsOptions extends StObject {
     * N. If headers are not detected, row N is just skipped. Otherwise row N is
     * used to extract column names for the detected schema.
     */
-  var skipLeadingRows: js.UndefOr[String] = js.native
+  var skipLeadingRows: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleSheetsOptions {
   

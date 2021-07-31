@@ -10,7 +10,6 @@ import typings.layuiSrc.layuiSrcStrings.tips
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,7 @@ trait Layer extends StObject {
     * 普通信息框
     */
   def alert(content: String): Double = js.native
-  def alert(content: String, options: js.UndefOr[scala.Nothing], yes: LayerCallbackYes): Double = js.native
+  def alert(content: String, options: Unit, yes: LayerCallbackYes): Double = js.native
   def alert(content: String, options: LayerOptions): Double = js.native
   def alert(content: String, options: LayerOptions, yes: LayerCallbackYes): Double = js.native
   def alert(content: String, yes: LayerCallbackYes): Double = js.native
@@ -50,26 +49,15 @@ trait Layer extends StObject {
   def config(options: LayerConfigOptions): Unit = js.native
   
   def confirm(content: String): Double = js.native
-  def confirm(
-    content: String,
-    options: js.UndefOr[LayerCallbackYes],
-    yes: LayerCallbackCancel | LayerCallbackYes
-  ): Double = js.native
-  def confirm(
-    content: String,
-    options: js.UndefOr[scala.Nothing],
-    yes: js.UndefOr[LayerCallbackYes],
-    cancel: LayerCallbackCancel
-  ): Double = js.native
+  def confirm(content: String, options: Unit, yes: LayerCallbackCancel | LayerCallbackYes): Double = js.native
+  def confirm(content: String, options: Unit, yes: Unit, cancel: LayerCallbackCancel): Double = js.native
+  def confirm(content: String, options: Unit, yes: LayerCallbackYes, cancel: LayerCallbackCancel): Double = js.native
   def confirm(content: String, options: LayerOptions): Double = js.native
-  def confirm(
-    content: String,
-    options: LayerOptions,
-    yes: js.UndefOr[LayerCallbackYes],
-    cancel: LayerCallbackCancel
-  ): Double = js.native
+  def confirm(content: String, options: LayerOptions, yes: Unit, cancel: LayerCallbackCancel): Double = js.native
   def confirm(content: String, options: LayerOptions, yes: LayerCallbackYes): Double = js.native
+  def confirm(content: String, options: LayerOptions, yes: LayerCallbackYes, cancel: LayerCallbackCancel): Double = js.native
   def confirm(content: String, yes: LayerCallbackYes): Double = js.native
+  def confirm(content: String, yes: LayerCallbackYes, cancel: LayerCallbackCancel): Double = js.native
   
   def full(): Unit = js.native
   
@@ -83,16 +71,16 @@ trait Layer extends StObject {
   def iframeSrc(index: Double, url: String): Unit = js.native
   
   def load(): Double = js.native
-  def load(icon: js.UndefOr[scala.Nothing], options: LayerOptions): Double = js.native
   def load(icon: Double): Double = js.native
   def load(icon: Double, options: LayerOptions): Double = js.native
+  def load(icon: Unit, options: LayerOptions): Double = js.native
   def load(options: LayerOptions): Double = js.native
   
   def min(): Unit = js.native
   
   def msg(content: String): Double = js.native
   def msg(content: String, end: LayerCallbackEnd): Double = js.native
-  def msg(content: String, options: js.UndefOr[scala.Nothing], end: LayerCallbackEnd): Double = js.native
+  def msg(content: String, options: Unit, end: LayerCallbackEnd): Double = js.native
   def msg(content: String, options: LayerOptions): Double = js.native
   def msg(content: String, options: LayerOptions, end: LayerCallbackEnd): Double = js.native
   
@@ -105,7 +93,7 @@ trait Layer extends StObject {
   def photos(options: LayerPhotosOptions): Double = js.native
   
   def prompt(): Double = js.native
-  def prompt(options: js.UndefOr[scala.Nothing], yes: LayerCallbackPrompt): Double = js.native
+  def prompt(options: Unit, yes: LayerCallbackPrompt): Double = js.native
   def prompt(options: LayerPromptOptions): Double = js.native
   def prompt(options: LayerPromptOptions, yes: LayerCallbackPrompt): Double = js.native
   def prompt(yes: LayerCallbackPrompt): Double = js.native

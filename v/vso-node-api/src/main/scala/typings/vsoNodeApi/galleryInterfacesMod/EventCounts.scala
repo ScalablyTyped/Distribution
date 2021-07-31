@@ -2,56 +2,54 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventCounts extends StObject {
   
   /**
     * Average rating on the day for extension
     */
-  var averageRating: Double = js.native
+  var averageRating: Double
   
   /**
     * Number of times the extension was bought in hosted scenario (applies only to VSTS extensions)
     */
-  var buyCount: Double = js.native
+  var buyCount: Double
   
   /**
     * Number of times the extension was bought in connected scenario (applies only to VSTS extensions)
     */
-  var connectedBuyCount: Double = js.native
+  var connectedBuyCount: Double
   
   /**
     * Number of times the extension was installed in connected scenario (applies only to VSTS extensions)
     */
-  var connectedInstallCount: Double = js.native
+  var connectedInstallCount: Double
   
   /**
     * Number of times the extension was installed
     */
-  var installCount: Double = js.native
+  var installCount: Double
   
   /**
     * Number of times the extension was installed as a trial (applies only to VSTS extensions)
     */
-  var tryCount: Double = js.native
+  var tryCount: Double
   
   /**
     * Number of times the extension was uninstalled (applies only to VSTS extensions)
     */
-  var uninstallCount: Double = js.native
+  var uninstallCount: Double
   
   /**
     * Number of times the extension was downloaded (applies to VSTS extensions and VSCode marketplace click installs)
     */
-  var webDownloadCount: Double = js.native
+  var webDownloadCount: Double
   
   /**
     * Number of detail page views
     */
-  var webPageViews: Double = js.native
+  var webPageViews: Double
 }
 object EventCounts {
   

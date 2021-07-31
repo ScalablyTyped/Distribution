@@ -11,8 +11,8 @@ return the first argument that is `!== undefined`
 | Full name          | defined |
 | Keywords           | undefined, short-circuit, ||, or, //, defined-or |
 | # releases         | 0 |
-| # dependents       | 292 |
-| # downloads        | 136099229 |
+| # dependents       | 300 |
+| # downloads        | 143961830 |
 | # stars            | 6 |
 
 ## Links

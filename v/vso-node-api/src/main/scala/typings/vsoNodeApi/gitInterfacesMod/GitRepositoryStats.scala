@@ -2,19 +2,17 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRepositoryStats extends StObject {
   
-  var activePullRequestsCount: Double = js.native
+  var activePullRequestsCount: Double
   
-  var branchesCount: Double = js.native
+  var branchesCount: Double
   
-  var commitsCount: Double = js.native
+  var commitsCount: Double
   
-  var repositoryId: String = js.native
+  var repositoryId: String
 }
 object GitRepositoryStats {
   

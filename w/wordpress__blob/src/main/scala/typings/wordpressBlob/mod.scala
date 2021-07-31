@@ -3,28 +3,26 @@ package typings.wordpressBlob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/blob", "createBlobURL")
+  @JSImport("@wordpress/blob", JSImport.Namespace)
   @js.native
-  def createBlobURL(file: File): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blob", "getBlobByURL")
-  @js.native
-  def getBlobByURL(url: String): js.UndefOr[File] = js.native
+  @scala.inline
+  def createBlobURL(file: File): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createBlobURL")(file.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/blob", "getBlobTypeByURL")
-  @js.native
-  def getBlobTypeByURL(url: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getBlobByURL(url: String): js.UndefOr[File] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlobByURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[File]]
   
-  @JSImport("@wordpress/blob", "isBlobURL")
-  @js.native
-  def isBlobURL(url: String): Boolean = js.native
+  @scala.inline
+  def getBlobTypeByURL(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlobTypeByURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/blob", "revokeBlobURL")
-  @js.native
-  def revokeBlobURL(url: String): Unit = js.native
+  @scala.inline
+  def isBlobURL(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlobURL")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def revokeBlobURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeBlobURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

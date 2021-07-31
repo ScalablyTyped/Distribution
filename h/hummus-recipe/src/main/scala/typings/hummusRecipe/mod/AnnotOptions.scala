@@ -2,25 +2,23 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotOptions extends StObject {
   
-  var flag: js.UndefOr[AnnotOptionsFlag] = js.native
+  var flag: js.UndefOr[AnnotOptionsFlag] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var icon: js.UndefOr[AnnotOptionsIcon] = js.native
+  var icon: js.UndefOr[AnnotOptionsIcon] = js.undefined
   
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
-  var richText: js.UndefOr[Boolean] = js.native
+  var richText: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AnnotOptions {
   

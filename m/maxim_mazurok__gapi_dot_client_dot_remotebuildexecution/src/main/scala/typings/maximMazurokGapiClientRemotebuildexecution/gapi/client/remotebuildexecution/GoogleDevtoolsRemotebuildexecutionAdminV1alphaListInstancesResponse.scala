@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extends StObject {
   
   /** The list of instances in a given project. */
-  var instances: js.UndefOr[js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]] = js.native
+  var instances: js.UndefOr[js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse {
   

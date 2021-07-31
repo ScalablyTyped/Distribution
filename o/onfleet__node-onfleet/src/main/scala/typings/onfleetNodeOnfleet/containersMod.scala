@@ -8,14 +8,15 @@ import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.teams
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.workers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containersMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Containers", JSImport.Namespace)
   @js.native
-  class ^ () extends Container
+  class ^ ()
+    extends StObject
+       with Container
   
   @js.native
   trait Container extends StObject {
@@ -28,24 +29,23 @@ object containersMod {
     def get_workers(id: String, group: workers): js.Promise[OnfleetContainer] = js.native
   }
   
-  @js.native
   trait OnfleetContainer extends StObject {
     
-    var activeTask: String | Null = js.native
+    var activeTask: String | Null
     
-    var id: String = js.native
+    var id: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var tasks: js.Array[String] = js.native
+    var tasks: js.Array[String]
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var `type`: ORGANIZATION | TEAM | WORKER = js.native
+    var `type`: ORGANIZATION | TEAM | WORKER
     
-    var worker: String = js.native
+    var worker: String
   }
   object OnfleetContainer {
     
@@ -59,7 +59,7 @@ object containersMod {
       `type`: ORGANIZATION | TEAM | WORKER,
       worker: String
     ): OnfleetContainer = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any], activeTask = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnfleetContainer]
     }

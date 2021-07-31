@@ -2,11 +2,12 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BoxPlot extends CoordinateGridMixin[BoxPlot] {
+trait BoxPlot
+  extends StObject
+     with CoordinateGridMixin[BoxPlot] {
   
   def boldOutliers(): Double = js.native
   def boldOutliers(t: Double): BoxPlot = js.native

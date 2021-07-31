@@ -2,7 +2,6 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -66,40 +65,35 @@ trait DOMMatrixReadOnly extends StObject {
   def multiply(other: DOMMatrixInit): DOMMatrix = js.native
   
   def rotate(): DOMMatrix = js.native
-  def rotate(rotX: js.UndefOr[scala.Nothing], rotY: js.UndefOr[scala.Nothing], rotZ: Double): DOMMatrix = js.native
-  def rotate(rotX: js.UndefOr[scala.Nothing], rotY: Double): DOMMatrix = js.native
-  def rotate(rotX: js.UndefOr[scala.Nothing], rotY: Double, rotZ: Double): DOMMatrix = js.native
   def rotate(rotX: Double): DOMMatrix = js.native
-  def rotate(rotX: Double, rotY: js.UndefOr[scala.Nothing], rotZ: Double): DOMMatrix = js.native
   def rotate(rotX: Double, rotY: Double): DOMMatrix = js.native
   def rotate(rotX: Double, rotY: Double, rotZ: Double): DOMMatrix = js.native
+  def rotate(rotX: Double, rotY: Unit, rotZ: Double): DOMMatrix = js.native
+  def rotate(rotX: Unit, rotY: Double): DOMMatrix = js.native
+  def rotate(rotX: Unit, rotY: Double, rotZ: Double): DOMMatrix = js.native
+  def rotate(rotX: Unit, rotY: Unit, rotZ: Double): DOMMatrix = js.native
   
   def rotateAxisAngle(): DOMMatrix = js.native
-  def rotateAxisAngle(
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    z: js.UndefOr[scala.Nothing],
-    angle: Double
-  ): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double, angle: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: Double, z: js.UndefOr[scala.Nothing], angle: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: Double, z: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: js.UndefOr[scala.Nothing], y: Double, z: Double, angle: Double): DOMMatrix = js.native
   def rotateAxisAngle(x: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], angle: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: Double, y: js.UndefOr[scala.Nothing], z: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: Double, y: js.UndefOr[scala.Nothing], z: Double, angle: Double): DOMMatrix = js.native
   def rotateAxisAngle(x: Double, y: Double): DOMMatrix = js.native
-  def rotateAxisAngle(x: Double, y: Double, z: js.UndefOr[scala.Nothing], angle: Double): DOMMatrix = js.native
   def rotateAxisAngle(x: Double, y: Double, z: Double): DOMMatrix = js.native
   def rotateAxisAngle(x: Double, y: Double, z: Double, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Double, y: Double, z: Unit, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Double, y: Unit, z: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Double, y: Unit, z: Double, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Double, y: Unit, z: Unit, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Double, z: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Double, z: Double, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Double, z: Unit, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Unit, z: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Unit, z: Double, angle: Double): DOMMatrix = js.native
+  def rotateAxisAngle(x: Unit, y: Unit, z: Unit, angle: Double): DOMMatrix = js.native
   
   def rotateFromVector(): DOMMatrix = js.native
-  def rotateFromVector(x: js.UndefOr[scala.Nothing], y: Double): DOMMatrix = js.native
   def rotateFromVector(x: Double): DOMMatrix = js.native
   def rotateFromVector(x: Double, y: Double): DOMMatrix = js.native
+  def rotateFromVector(x: Unit, y: Double): DOMMatrix = js.native
   
   def scale(
     scaleX: js.UndefOr[Double],
@@ -111,47 +105,27 @@ trait DOMMatrixReadOnly extends StObject {
   ): DOMMatrix = js.native
   
   def scale3d(): DOMMatrix = js.native
-  def scale3d(
-    scale: js.UndefOr[scala.Nothing],
-    originX: js.UndefOr[scala.Nothing],
-    originY: js.UndefOr[scala.Nothing],
-    originZ: Double
-  ): DOMMatrix = js.native
-  def scale3d(scale: js.UndefOr[scala.Nothing], originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
-  def scale3d(
-    scale: js.UndefOr[scala.Nothing],
-    originX: js.UndefOr[scala.Nothing],
-    originY: Double,
-    originZ: Double
-  ): DOMMatrix = js.native
-  def scale3d(scale: js.UndefOr[scala.Nothing], originX: Double): DOMMatrix = js.native
-  def scale3d(
-    scale: js.UndefOr[scala.Nothing],
-    originX: Double,
-    originY: js.UndefOr[scala.Nothing],
-    originZ: Double
-  ): DOMMatrix = js.native
-  def scale3d(scale: js.UndefOr[scala.Nothing], originX: Double, originY: Double): DOMMatrix = js.native
-  def scale3d(scale: js.UndefOr[scala.Nothing], originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
   def scale3d(scale: Double): DOMMatrix = js.native
-  def scale3d(
-    scale: Double,
-    originX: js.UndefOr[scala.Nothing],
-    originY: js.UndefOr[scala.Nothing],
-    originZ: Double
-  ): DOMMatrix = js.native
-  def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double): DOMMatrix = js.native
-  def scale3d(scale: Double, originX: js.UndefOr[scala.Nothing], originY: Double, originZ: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double): DOMMatrix = js.native
-  def scale3d(scale: Double, originX: Double, originY: js.UndefOr[scala.Nothing], originZ: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double, originY: Double): DOMMatrix = js.native
   def scale3d(scale: Double, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Unit, originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Double, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Double, originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Double, originY: Double, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Double, originY: Unit, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Unit, originY: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Unit, originY: Double, originZ: Double): DOMMatrix = js.native
+  def scale3d(scale: Unit, originX: Unit, originY: Unit, originZ: Double): DOMMatrix = js.native
   
   /** @deprecated */
   def scaleNonUniform(): DOMMatrix = js.native
-  def scaleNonUniform(scaleX: js.UndefOr[scala.Nothing], scaleY: Double): DOMMatrix = js.native
   def scaleNonUniform(scaleX: Double): DOMMatrix = js.native
   def scaleNonUniform(scaleX: Double, scaleY: Double): DOMMatrix = js.native
+  def scaleNonUniform(scaleX: Unit, scaleY: Double): DOMMatrix = js.native
   
   def skewX(): DOMMatrix = js.native
   def skewX(sx: Double): DOMMatrix = js.native
@@ -169,11 +143,11 @@ trait DOMMatrixReadOnly extends StObject {
   def transformPoint(point: DOMPointInit): DOMPoint = js.native
   
   def translate(): DOMMatrix = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: js.UndefOr[scala.Nothing], tz: Double): DOMMatrix = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): DOMMatrix = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double, tz: Double): DOMMatrix = js.native
   def translate(tx: Double): DOMMatrix = js.native
-  def translate(tx: Double, ty: js.UndefOr[scala.Nothing], tz: Double): DOMMatrix = js.native
   def translate(tx: Double, ty: Double): DOMMatrix = js.native
   def translate(tx: Double, ty: Double, tz: Double): DOMMatrix = js.native
+  def translate(tx: Double, ty: Unit, tz: Double): DOMMatrix = js.native
+  def translate(tx: Unit, ty: Double): DOMMatrix = js.native
+  def translate(tx: Unit, ty: Double, tz: Double): DOMMatrix = js.native
+  def translate(tx: Unit, ty: Unit, tz: Double): DOMMatrix = js.native
 }

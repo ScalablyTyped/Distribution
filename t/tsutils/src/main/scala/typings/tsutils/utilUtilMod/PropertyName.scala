@@ -2,15 +2,13 @@ package typings.tsutils.utilUtilMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyName extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var symbolName: typings.typescript.mod.String = js.native
+  var symbolName: typings.typescript.mod.String
 }
 object PropertyName {
   

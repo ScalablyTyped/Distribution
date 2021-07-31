@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetInfoRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.GetTargetInfoResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetTargetInfoResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetTargetInfoRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetTargetInfoRequest]]
   
-  var returnType: GetTargetInfoResponse = js.native
+  var returnType: GetTargetInfoResponse
 }
 object ReturnTypeGetTargetInfoResponse {
   

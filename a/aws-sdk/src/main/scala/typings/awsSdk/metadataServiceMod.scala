@@ -6,7 +6,6 @@ import typings.awsSdk.anon.TimeoutNumber
 import typings.awsSdk.errorMod.AWSError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataServiceMod {
@@ -51,28 +50,27 @@ object metadataServiceMod {
     def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait MetadataServiceOptions extends StObject {
     
     /**
       * the hostname of the instance metadata service.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * a map of options to pass to the underlying HTTP request.
       */
-    var httpOptions: js.UndefOr[Timeout] = js.native
+    var httpOptions: js.UndefOr[Timeout] = js.undefined
     
     /**
       * the maximum number of retries to perform for timeout errors.
       */
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * A set of options to configure the retry delay on retryable errors. See AWS.Config for details.
       */
-    var retryDelayOptions: js.UndefOr[js.Any] = js.native
+    var retryDelayOptions: js.UndefOr[js.Any] = js.undefined
   }
   object MetadataServiceOptions {
     

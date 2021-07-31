@@ -2,28 +2,26 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a source file which is used to generate the service
   * configuration defined by `google.api.Service`.
   */
-@js.native
 trait SchemaConfigSource extends StObject {
   
   /**
     * Set of source configuration files that are used to generate a service
     * configuration (`google.api.Service`).
     */
-  var files: js.UndefOr[js.Array[SchemaConfigFile]] = js.native
+  var files: js.UndefOr[js.Array[SchemaConfigFile]] = js.undefined
   
   /**
     * A unique ID for a specific instance of this message, typically assigned
     * by the client for tracking purpose. If empty, the server may choose to
     * generate one instead.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaConfigSource {
   

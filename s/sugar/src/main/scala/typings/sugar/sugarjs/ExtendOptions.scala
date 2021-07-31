@@ -2,25 +2,23 @@ package typings.sugar.sugarjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtendOptions extends StObject {
   
-  var enhance: js.UndefOr[Boolean] = js.native
+  var enhance: js.UndefOr[Boolean] = js.undefined
   
-  var enhanceArray: js.UndefOr[Boolean] = js.native
+  var enhanceArray: js.UndefOr[Boolean] = js.undefined
   
-  var enhanceString: js.UndefOr[Boolean] = js.native
+  var enhanceString: js.UndefOr[Boolean] = js.undefined
   
-  var except: js.UndefOr[typings.sugar.Array[java.lang.String | NativeConstructor]] = js.native
+  var except: js.UndefOr[typings.sugar.Array[java.lang.String | NativeConstructor]] = js.undefined
   
-  var methods: js.UndefOr[typings.sugar.Array[java.lang.String]] = js.native
+  var methods: js.UndefOr[typings.sugar.Array[java.lang.String]] = js.undefined
   
-  var namespaces: js.UndefOr[typings.sugar.Array[NativeConstructor]] = js.native
+  var namespaces: js.UndefOr[typings.sugar.Array[NativeConstructor]] = js.undefined
   
-  var objectPrototype: js.UndefOr[Boolean] = js.native
+  var objectPrototype: js.UndefOr[Boolean] = js.undefined
 }
 object ExtendOptions {
   

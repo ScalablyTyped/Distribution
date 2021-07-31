@@ -2,22 +2,20 @@ package typings.stringPlaceholder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<string-placeholder.string-placeholder.Options> */
-  @js.native
   trait ReadonlyOptions extends StObject {
     
-    val after: js.UndefOr[String] = js.native
+    val after: js.UndefOr[String] = js.undefined
     
-    val before: js.UndefOr[String] = js.native
+    val before: js.UndefOr[String] = js.undefined
     
-    val clean: js.UndefOr[Boolean] = js.native
+    val clean: js.UndefOr[Boolean] = js.undefined
     
-    val escape: js.UndefOr[String] = js.native
+    val escape: js.UndefOr[String] = js.undefined
   }
   object ReadonlyOptions {
     

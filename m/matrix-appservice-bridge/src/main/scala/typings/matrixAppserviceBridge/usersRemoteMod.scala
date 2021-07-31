@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersRemoteMod {
@@ -17,9 +16,9 @@ object usersRemoteMod {
       * @throws If identifier is not supplied.
       */
     def this(id: String) = this()
-    def this(id: String, data: Record[String, _]) = this()
+    def this(id: String, data: Record[String, js.Any]) = this()
     
-    val data: Record[String, _] = js.native
+    val data: Record[String, js.Any] = js.native
     
     /**
       * Get the data value for the given key.
@@ -40,7 +39,7 @@ object usersRemoteMod {
       * Serialize all the data about this room, excluding the room ID.
       * @return The serialised data
       */
-    def serialize(): Record[String, _] = js.native
+    def serialize(): Record[String, js.Any] = js.native
     
     /**
       * Set an arbitrary bridge-specific data value for this room.

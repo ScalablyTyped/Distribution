@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.CharacterPropertiesChanged event.
   */
-@js.native
-trait ASPxClientRichEditCharacterPropertiesChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditCharacterPropertiesChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the text buffer interval related to the changed characters.
     */
-  var interval: Interval = js.native
+  var interval: Interval
   
   /**
     * Gets the active sub-document's identifier.
     */
-  var subDocumentId: Double = js.native
+  var subDocumentId: Double
 }
 object ASPxClientRichEditCharacterPropertiesChangedEventArgs {
   

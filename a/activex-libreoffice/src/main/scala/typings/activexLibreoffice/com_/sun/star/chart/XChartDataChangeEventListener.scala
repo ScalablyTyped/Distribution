@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events when chart data changes. */
-@js.native
-trait XChartDataChangeEventListener extends XEventListener {
+trait XChartDataChangeEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called whenever chart data changes in value or structure.
@@ -21,7 +21,7 @@ trait XChartDataChangeEventListener extends XEventListener {
     * @see ChartDataChangeEvent
     * @see XChartData
     */
-  def chartDataChanged(aEvent: ChartDataChangeEvent): Unit = js.native
+  def chartDataChanged(aEvent: ChartDataChangeEvent): Unit
 }
 object XChartDataChangeEventListener {
   

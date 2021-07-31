@@ -8,7 +8,6 @@ import typings.firefoxWebextBrowser.browser.management.UninstallSelfOptions
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,31 +17,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object management {
   
+  @JSGlobal("browser.management")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns information about the installed extension that has the given ID.
     * @param id The ID from an item of `management.ExtensionInfo`.
     */
-  @JSGlobal("browser.management.get")
-  @js.native
-  def get(id: ExtensionID): js.Promise[ExtensionInfo] = js.native
+  @scala.inline
+  def get(id: ExtensionID): js.Promise[ExtensionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExtensionInfo]]
   
   /* management functions */
   /** Returns a list of information about installed extensions. */
-  @JSGlobal("browser.management.getAll")
-  @js.native
-  def getAll(): js.Promise[js.Array[ExtensionInfo]] = js.native
+  @scala.inline
+  def getAll(): js.Promise[js.Array[ExtensionInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[js.Array[ExtensionInfo]]]
   
   /**
     * Returns information about the calling extension. Note: This function can be used without requesting the 'management' permission in the manifest.
     */
-  @JSGlobal("browser.management.getSelf")
-  @js.native
-  def getSelf(): js.Promise[ExtensionInfo] = js.native
+  @scala.inline
+  def getSelf(): js.Promise[ExtensionInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelf")().asInstanceOf[js.Promise[ExtensionInfo]]
   
   /** Installs and enables a theme extension from the given url. */
-  @JSGlobal("browser.management.install")
-  @js.native
-  def install(options: InstallOptions): js.Promise[InstallReturnResult] = js.native
+  @scala.inline
+  def install(options: InstallOptions): js.Promise[InstallReturnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[InstallReturnResult]]
   
   /* management events */
   /** Fired when an addon has been disabled. */
@@ -70,17 +69,14 @@ object management {
     * @param id ID of the add-on to enable/disable.
     * @param enabled Whether to enable or disable the add-on.
     */
-  @JSGlobal("browser.management.setEnabled")
-  @js.native
-  def setEnabled(id: String, enabled: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def setEnabled(id: String, enabled: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(id.asInstanceOf[js.Any], enabled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Uninstalls the calling extension. Note: This function can be used without requesting the 'management' permission in the manifest.
     */
-  @JSGlobal("browser.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(): js.Promise[Unit] = js.native
-  @JSGlobal("browser.management.uninstallSelf")
-  @js.native
-  def uninstallSelf(options: UninstallSelfOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def uninstallSelf(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def uninstallSelf(options: UninstallSelfOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstallSelf")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

@@ -1,11 +1,11 @@
 package typings.streamsaver
 
 import typings.std.QueuingStrategy
+import typings.std.ReadableStream
 import typings.std.Transformer
 import typings.std.UnderlyingSink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,30 +18,36 @@ object mod {
   @JSImport("streamsaver", "TransformStream")
   @js.native
   class TransformStream[I, O] protected ()
-    extends typings.std.TransformStream[I, O] {
+    extends StObject
+       with typings.std.TransformStream[I, O] {
     def this(
       transformer: Transformer[I, O],
       writableStrategy: QueuingStrategy[I],
       readableStrategy: QueuingStrategy[O]
     ) = this()
+    
+    /* CompleteClass */
+    override val readable: ReadableStream[O] = js.native
+    
+    /* CompleteClass */
+    override val writable: typings.std.WritableStream[I] = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("streamsaver", "WritableStream")
   @js.native
   class WritableStream[W] ()
-    extends typings.std.WritableStream[W] {
+    extends StObject
+       with typings.std.WritableStream[W] {
     def this(underlyingSink: UnderlyingSink[W]) = this()
-    def this(underlyingSink: js.UndefOr[scala.Nothing], strategy: QueuingStrategy[W]) = this()
+    def this(underlyingSink: Unit, strategy: QueuingStrategy[W]) = this()
     def this(underlyingSink: UnderlyingSink[W], strategy: QueuingStrategy[W]) = this()
   }
   
-  @JSImport("streamsaver", "createWriteStream")
-  @js.native
-  def createWriteStream(filename: String): typings.std.WritableStream[_] = js.native
-  @JSImport("streamsaver", "createWriteStream")
-  @js.native
-  def createWriteStream(filename: String, options: CreateWriteStreamOptions[_, _]): typings.std.WritableStream[_] = js.native
+  @scala.inline
+  def createWriteStream(filename: String): typings.std.WritableStream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any]).asInstanceOf[typings.std.WritableStream[js.Any]]
+  @scala.inline
+  def createWriteStream(filename: String, options: CreateWriteStreamOptions[js.Any, js.Any]): typings.std.WritableStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.std.WritableStream[js.Any]]
   
   @JSImport("streamsaver", "mitm")
   @js.native
@@ -59,23 +65,22 @@ object mod {
   @js.native
   val version: Version_ = js.native
   
-  @js.native
   trait CreateWriteStreamOptions[I, O] extends StObject {
     
     /**
       * URL to serve the stream from. This is the URL that the browser is going to request from the service worker.
       * You might need to provide this if you're using a custom service worker.
       */
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var readableStrategy: js.UndefOr[QueuingStrategy[O]] = js.native
+    var readableStrategy: js.UndefOr[QueuingStrategy[O]] = js.undefined
     
     /**
       * Indicates the size of the streamed data and allows the browser to show progress while downloading.
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var writableStrategy: js.UndefOr[QueuingStrategy[I]] = js.native
+    var writableStrategy: js.UndefOr[QueuingStrategy[I]] = js.undefined
   }
   object CreateWriteStreamOptions {
     
@@ -86,7 +91,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CreateWriteStreamOptionsMutableBuilder[Self <: CreateWriteStreamOptions[_, _], I, O] (val x: Self with (CreateWriteStreamOptions[I, O])) extends AnyVal {
+    implicit class CreateWriteStreamOptionsMutableBuilder[Self <: CreateWriteStreamOptions[?, ?], I, O] (val x: Self & (CreateWriteStreamOptions[I, O])) extends AnyVal {
       
       @scala.inline
       def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
@@ -114,16 +119,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Version_ extends StObject {
     
-    var dot: Double = js.native
+    var dot: Double
     
-    var full: String = js.native
+    var full: String
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
   }
   object Version_ {
     

@@ -2,28 +2,26 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tab extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Color: XlRgbColor | Double = js.native
+  var Color: XlRgbColor | Double
   
-  var ColorIndex: XlColorIndex = js.native
+  var ColorIndex: XlColorIndex
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Tab_typekey")
-  var ExcelDotTab_typekey: Tab = js.native
+  var ExcelDotTab_typekey: Tab
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ThemeColor: XlThemeColor = js.native
+  var ThemeColor: XlThemeColor
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
 }
 object Tab {
   

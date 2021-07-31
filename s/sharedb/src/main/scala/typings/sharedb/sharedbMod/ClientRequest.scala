@@ -3,16 +3,15 @@ package typings.sharedb.sharedbMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientRequest
-  extends // Users can use server middleware to add additional metadata to snapshots.
+  extends StObject
+     with // Users can use server middleware to add additional metadata to snapshots.
 /* key */ StringDictionary[js.Any] {
   
   /** Short name of the request's action */
-  var a: RequestAction = js.native
+  var a: RequestAction
 }
 object ClientRequest {
   

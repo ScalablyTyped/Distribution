@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileCarriersListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#mobileCarriersListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Mobile carrier collection. */
-  var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.native
+  var mobileCarriers: js.UndefOr[js.Array[MobileCarrier]] = js.undefined
 }
 object MobileCarriersListResponse {
   

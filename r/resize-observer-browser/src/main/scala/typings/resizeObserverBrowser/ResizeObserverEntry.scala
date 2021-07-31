@@ -4,21 +4,19 @@ import typings.std.DOMRectReadOnly
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResizeObserverEntry extends StObject {
   
-  val borderBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.native
+  val borderBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.undefined
   
-  val contentBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.native
+  val contentBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.undefined
   
-  val contentRect: DOMRectReadOnly = js.native
+  val contentRect: DOMRectReadOnly
   
-  val devicePixelContentBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.native
+  val devicePixelContentBoxSize: js.UndefOr[js.Array[ResizeObserverSize]] = js.undefined
   
-  val target: Element = js.native
+  val target: Element
 }
 object ResizeObserverEntry {
   

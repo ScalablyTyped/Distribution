@@ -12,7 +12,7 @@ Express middleware to determine locale
 | Keywords           | locale, express, i18n, l10n, culture |
 | # releases         | 4 |
 | # dependents       | 11 |
-| # downloads        | 492481 |
+| # downloads        | 561890 |
 | # stars            | 2 |
 
 ## Links

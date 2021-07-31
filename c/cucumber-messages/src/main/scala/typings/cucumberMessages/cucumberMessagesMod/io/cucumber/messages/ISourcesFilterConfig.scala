@@ -2,21 +2,19 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourcesFilterConfig. */
-@js.native
 trait ISourcesFilterConfig extends StObject {
   
   /** SourcesFilterConfig nameRegularExpressions */
-  var nameRegularExpressions: js.UndefOr[js.Array[String] | Null] = js.native
+  var nameRegularExpressions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** SourcesFilterConfig tagExpression */
-  var tagExpression: js.UndefOr[String | Null] = js.native
+  var tagExpression: js.UndefOr[String | Null] = js.undefined
   
   /** SourcesFilterConfig uriToLinesMapping */
-  var uriToLinesMapping: js.UndefOr[js.Array[IUriToLinesMapping] | Null] = js.native
+  var uriToLinesMapping: js.UndefOr[js.Array[IUriToLinesMapping] | Null] = js.undefined
 }
 object ISourcesFilterConfig {
   

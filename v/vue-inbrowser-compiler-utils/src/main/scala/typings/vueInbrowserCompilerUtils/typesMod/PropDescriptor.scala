@@ -5,25 +5,25 @@ import typings.vueInbrowserCompilerUtils.anon.Func
 import typings.vueInbrowserCompilerUtils.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PropDescriptor extends Descriptor {
+trait PropDescriptor
+  extends StObject
+     with Descriptor {
   
-  var defaultValue: js.UndefOr[Value] = js.native
+  var defaultValue: js.UndefOr[Value] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.native
+  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.undefined
   
-  var `type`: js.UndefOr[Func] = js.native
+  var `type`: js.UndefOr[Func] = js.undefined
   
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PropDescriptor {
   

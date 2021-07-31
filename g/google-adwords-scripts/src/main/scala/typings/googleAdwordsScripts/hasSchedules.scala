@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasSchedules extends StObject {
   
-  def getSchedules(): ExtensionSchedule = js.native
+  def getSchedules(): ExtensionSchedule
   
-  def setSchedules(schedules: ExtensionScheduleInput): Unit = js.native
+  def setSchedules(schedules: ExtensionScheduleInput): Unit
 }
 object hasSchedules {
   

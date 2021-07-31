@@ -2,15 +2,13 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowCounter extends StObject {
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
   
-  var showCounter: Boolean = js.native
+  var showCounter: Boolean
 }
 object ShowCounter {
   

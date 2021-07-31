@@ -8,63 +8,61 @@ import typings.std.Iterator
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collectionsMod {
   
-  @JSImport("pretty-format/build/collections", "printIteratorEntries")
+  @JSImport("pretty-format/build/collections", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def printIteratorEntries(
-    iterator: Iterator[js.Tuple2[_, _], _, js.UndefOr[scala.Nothing]],
+    iterator: Iterator[js.Tuple2[js.Any, js.Any], js.Any, Unit],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
-  @JSImport("pretty-format/build/collections", "printIteratorEntries")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorEntries")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def printIteratorEntries(
-    iterator: Iterator[js.Tuple2[_, _], _, js.UndefOr[scala.Nothing]],
+    iterator: Iterator[js.Tuple2[js.Any, js.Any], js.Any, Unit],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer,
     separator: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorEntries")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/collections", "printIteratorValues")
-  @js.native
+  @scala.inline
   def printIteratorValues(
-    iterator: Iterator[_, _, js.UndefOr[scala.Nothing]],
+    iterator: Iterator[js.Any, js.Any, Unit],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printIteratorValues")(iterator.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/collections", "printListItems")
-  @js.native
+  @scala.inline
   def printListItems(
-    list: ArrayLike[_],
+    list: ArrayLike[js.Any],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printListItems")(list.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pretty-format/build/collections", "printObjectProperties")
-  @js.native
+  @scala.inline
   def printObjectProperties(
-    `val`: Record[String, _],
+    `val`: Record[String, js.Any],
     config: Config,
     indentation: String,
     depth: Double,
     refs: Refs,
     printer: Printer
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printObjectProperties")(`val`.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -2,36 +2,34 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SolutionConfig extends StObject {
   
   /**
     * Lists the hyperparameter names and ranges.
     */
-  var algorithmHyperParameters: js.UndefOr[HyperParameters] = js.native
+  var algorithmHyperParameters: js.UndefOr[HyperParameters] = js.undefined
   
   /**
     * The AutoMLConfig object containing a list of recipes to search when AutoML is performed.
     */
-  var autoMLConfig: js.UndefOr[AutoMLConfig] = js.native
+  var autoMLConfig: js.UndefOr[AutoMLConfig] = js.undefined
   
   /**
     * Only events with a value greater than or equal to this threshold are used for training a model.
     */
-  var eventValueThreshold: js.UndefOr[EventValueThreshold] = js.native
+  var eventValueThreshold: js.UndefOr[EventValueThreshold] = js.undefined
   
   /**
     * Lists the feature transformation parameters.
     */
-  var featureTransformationParameters: js.UndefOr[FeatureTransformationParameters] = js.native
+  var featureTransformationParameters: js.UndefOr[FeatureTransformationParameters] = js.undefined
   
   /**
     * Describes the properties for hyperparameter optimization (HPO).
     */
-  var hpoConfig: js.UndefOr[HPOConfig] = js.native
+  var hpoConfig: js.UndefOr[HPOConfig] = js.undefined
 }
 object SolutionConfig {
   

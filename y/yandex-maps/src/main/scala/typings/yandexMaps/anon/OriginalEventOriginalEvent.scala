@@ -2,13 +2,11 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginalEventOriginalEvent[OriginalEvent] extends StObject {
   
-  var originalEvent: OriginalEvent = js.native
+  var originalEvent: OriginalEvent
 }
 object OriginalEventOriginalEvent {
   
@@ -19,7 +17,7 @@ object OriginalEventOriginalEvent {
   }
   
   @scala.inline
-  implicit class OriginalEventOriginalEventMutableBuilder[Self <: OriginalEventOriginalEvent[_], OriginalEvent] (val x: Self with OriginalEventOriginalEvent[OriginalEvent]) extends AnyVal {
+  implicit class OriginalEventOriginalEventMutableBuilder[Self <: OriginalEventOriginalEvent[?], OriginalEvent] (val x: Self & OriginalEventOriginalEvent[OriginalEvent]) extends AnyVal {
     
     @scala.inline
     def setOriginalEvent(value: OriginalEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])

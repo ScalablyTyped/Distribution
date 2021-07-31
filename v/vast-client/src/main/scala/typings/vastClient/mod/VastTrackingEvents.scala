@@ -3,20 +3,19 @@ package typings.vastClient.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastTrackingEvents
-  extends /* key */ StringDictionary[js.Array[String]] {
+  extends StObject
+     with /* key */ StringDictionary[js.Array[String]] {
   
-  var complete: js.Array[String] = js.native
+  var complete: js.Array[String]
   
-  var firstQuartile: js.Array[String] = js.native
+  var firstQuartile: js.Array[String]
   
-  var midpoint: js.Array[String] = js.native
+  var midpoint: js.Array[String]
   
-  var thirdQuartile: js.Array[String] = js.native
+  var thirdQuartile: js.Array[String]
 }
 object VastTrackingEvents {
   

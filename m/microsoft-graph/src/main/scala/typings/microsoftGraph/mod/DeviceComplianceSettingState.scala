@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceComplianceSettingState extends Entity {
+trait DeviceComplianceSettingState
+  extends StObject
+     with Entity {
   
   // The DateTime when device compliance grace period expires
-  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.native
+  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.undefined
   
   // The Device Id that is being reported
-  var deviceId: js.UndefOr[NullableOption[String]] = js.native
+  var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The device model that is being reported
-  var deviceModel: js.UndefOr[NullableOption[String]] = js.native
+  var deviceModel: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Device Name that is being reported
-  var deviceName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The setting class name and property name.
-  var setting: js.UndefOr[NullableOption[String]] = js.native
+  var setting: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Setting Name that is being reported
-  var settingName: js.UndefOr[NullableOption[String]] = js.native
+  var settingName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The compliance state of the setting. Possible values are: unknown, notApplicable, compliant, remediated, nonCompliant,
     * error, conflict, notAssigned.
     */
-  var state: js.UndefOr[ComplianceStatus] = js.native
+  var state: js.UndefOr[ComplianceStatus] = js.undefined
   
   // The User email address that is being reported
-  var userEmail: js.UndefOr[NullableOption[String]] = js.native
+  var userEmail: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user Id that is being reported
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The User Name that is being reported
-  var userName: js.UndefOr[NullableOption[String]] = js.native
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The User PrincipalName that is being reported
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DeviceComplianceSettingState {
   

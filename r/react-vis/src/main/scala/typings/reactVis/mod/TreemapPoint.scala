@@ -3,23 +3,23 @@ package typings.reactVis.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreemapPoint extends AbstractSeriesPoint {
+trait TreemapPoint
+  extends StObject
+     with AbstractSeriesPoint {
   
-  var children: js.UndefOr[js.Array[TreemapPoint]] = js.native
+  var children: js.UndefOr[js.Array[TreemapPoint]] = js.undefined
   
-  var color: js.UndefOr[String | Double] = js.native
+  var color: js.UndefOr[String | Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object TreemapPoint {
   

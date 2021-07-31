@@ -2,17 +2,15 @@ package typings.webxr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRHitTestOptionsInit extends StObject {
   
-  var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.native
+  var entityTypes: js.UndefOr[js.Array[XRHitTestTrackableType]] = js.undefined
   
-  var offsetRay: js.UndefOr[XRRay] = js.native
+  var offsetRay: js.UndefOr[XRRay] = js.undefined
   
-  var space: XRSpace = js.native
+  var space: XRSpace
 }
 object XRHitTestOptionsInit {
   

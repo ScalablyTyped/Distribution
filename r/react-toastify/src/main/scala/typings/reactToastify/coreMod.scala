@@ -14,7 +14,6 @@ import typings.reactToastify.typesMod.ToastOptions
 import typings.reactToastify.typesMod.UpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
@@ -25,12 +24,11 @@ object coreMod {
   
   object toast {
     
-    @JSImport("react-toastify/dist/core", "toast")
-    @js.native
-    def apply(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast")
-    @js.native
-    def apply(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def apply(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def apply(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].apply(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
+    
     @JSImport("react-toastify/dist/core", "toast")
     @js.native
     val ^ : js.Any = js.native
@@ -50,108 +48,84 @@ object coreMod {
     /**
       * Clear waiting queue when limit is used
       */
-    @JSImport("react-toastify/dist/core", "toast.clearWaitingQueue")
-    @js.native
-    def clearWaitingQueue(): `false` | Unit = js.native
-    @JSImport("react-toastify/dist/core", "toast.clearWaitingQueue")
-    @js.native
-    def clearWaitingQueue(params: ClearWaitingQueueParams): `false` | Unit = js.native
+    @scala.inline
+    def clearWaitingQueue(): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWaitingQueue")().asInstanceOf[`false` | Unit]
+    @scala.inline
+    def clearWaitingQueue(params: ClearWaitingQueueParams): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearWaitingQueue")(params.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
     
     /**
       * Configure the ToastContainer when lazy mounted
       */
-    @JSImport("react-toastify/dist/core", "toast.configure")
-    @js.native
-    def configure(): Unit = js.native
-    @JSImport("react-toastify/dist/core", "toast.configure")
-    @js.native
-    def configure(config: ToastContainerProps): Unit = js.native
+    @scala.inline
+    def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
+    @scala.inline
+    def configure(config: ToastContainerProps): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-toastify/dist/core", "toast.dark")
-    @js.native
-    def dark(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.dark")
-    @js.native
-    def dark(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def dark(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("dark")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def dark(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("dark")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
     
     /**
       * Remove toast programmaticaly
       */
-    @JSImport("react-toastify/dist/core", "toast.dismiss")
-    @js.native
-    def dismiss(): `false` | Unit = js.native
-    @JSImport("react-toastify/dist/core", "toast.dismiss")
-    @js.native
-    def dismiss(id: String): `false` | Unit = js.native
-    @JSImport("react-toastify/dist/core", "toast.dismiss")
-    @js.native
-    def dismiss(id: Double): `false` | Unit = js.native
+    @scala.inline
+    def dismiss(): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[`false` | Unit]
+    @scala.inline
+    def dismiss(id: String): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(id.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
+    @scala.inline
+    def dismiss(id: Double): `false` | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(id.asInstanceOf[js.Any]).asInstanceOf[`false` | Unit]
     
     /**
       * Used for controlled progress bar.
       */
-    @JSImport("react-toastify/dist/core", "toast.done")
-    @js.native
-    def done(id: Id): Unit = js.native
+    @scala.inline
+    def done(id: Id): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("react-toastify/dist/core", "toast.error")
-    @js.native
-    def error(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.error")
-    @js.native
-    def error(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def error(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def error(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
     
-    @JSImport("react-toastify/dist/core", "toast.info")
-    @js.native
-    def info(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.info")
-    @js.native
-    def info(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def info(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def info(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
     
     /**
       * return true if one container is displaying the toast
       */
-    @JSImport("react-toastify/dist/core", "toast.isActive")
-    @js.native
-    def isActive(id: Id): Boolean = js.native
+    @scala.inline
+    def isActive(id: Id): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Track changes. The callback get the number of toast displayed
       *
       */
-    @JSImport("react-toastify/dist/core", "toast.onChange")
-    @js.native
-    def onChange(callback: OnChangeCallback): js.Function0[Unit] = js.native
+    @scala.inline
+    def onChange(callback: OnChangeCallback): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onChange")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
     
-    @JSImport("react-toastify/dist/core", "toast.success")
-    @js.native
-    def success(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.success")
-    @js.native
-    def success(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def success(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def success(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
     
-    @JSImport("react-toastify/dist/core", "toast.update")
-    @js.native
-    def update(toastId: Id): Unit = js.native
-    @JSImport("react-toastify/dist/core", "toast.update")
-    @js.native
-    def update(toastId: Id, options: UpdateOptions): Unit = js.native
+    @scala.inline
+    def update(toastId: Id): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(toastId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def update(toastId: Id, options: UpdateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(toastId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Maybe I should remove warning in favor of warn, I don't know
       */
-    @JSImport("react-toastify/dist/core", "toast.warn")
-    @js.native
-    def warn(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.warn")
-    @js.native
-    def warn(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def warn(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def warn(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
     
-    @JSImport("react-toastify/dist/core", "toast.warning")
-    @js.native
-    def warning(content: ToastContent): ReactText = js.native
-    @JSImport("react-toastify/dist/core", "toast.warning")
-    @js.native
-    def warning(content: ToastContent, options: ToastOptions): ReactText = js.native
+    @scala.inline
+    def warning(content: ToastContent): ReactText = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(content.asInstanceOf[js.Any]).asInstanceOf[ReactText]
+    @scala.inline
+    def warning(content: ToastContent, options: ToastOptions): ReactText = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactText]
   }
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRepositoryTriggersOutput extends StObject {
   
   /**
     * The list of triggers that were not tested. This list provides the names of the triggers that could not be tested, separated by commas.
     */
-  var failedExecutions: js.UndefOr[RepositoryTriggerExecutionFailureList] = js.native
+  var failedExecutions: js.UndefOr[RepositoryTriggerExecutionFailureList] = js.undefined
   
   /**
     * The list of triggers that were successfully tested. This list provides the names of the triggers that were successfully tested, separated by commas.
     */
-  var successfulExecutions: js.UndefOr[RepositoryTriggerNameList] = js.native
+  var successfulExecutions: js.UndefOr[RepositoryTriggerNameList] = js.undefined
 }
 object TestRepositoryTriggersOutput {
   

@@ -2,19 +2,17 @@ package typings.reactNativeSensorManager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Azimuth extends StObject {
     
-    var azimuth: Double = js.native
+    var azimuth: Double
     
-    var pitch: Double = js.native
+    var pitch: Double
     
-    var roll: Double = js.native
+    var roll: Double
   }
   object Azimuth {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait IsNear extends StObject {
     
-    var isNear: Boolean = js.native
+    var isNear: Boolean
     
-    var maxRange: Double = js.native
+    var maxRange: Double
     
-    var value: Double = js.native
+    var value: Double
   }
   object IsNear {
     
@@ -69,10 +66,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Light extends StObject {
     
-    var light: Double = js.native
+    var light: Double
   }
   object Light {
     
@@ -90,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Steps extends StObject {
     
-    var steps: Double = js.native
+    var steps: Double
   }
   object Steps {
     
@@ -111,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Temp extends StObject {
     
-    var temp: Double = js.native
+    var temp: Double
   }
   object Temp {
     
@@ -132,14 +126,13 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object X {
     

@@ -12,7 +12,7 @@ A lightweight ethereum javascript wallet.
 | Keywords           | ethereum, blockchain, transactions, contracts, wallet |
 | # releases         | 2 |
 | # dependents       | 44 |
-| # downloads        | 178372 |
+| # downloads        | 139513 |
 | # stars            | 1 |
 
 ## Links

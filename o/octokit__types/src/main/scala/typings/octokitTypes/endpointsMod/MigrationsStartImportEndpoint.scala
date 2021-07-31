@@ -6,40 +6,38 @@ import typings.octokitTypes.octokitTypesStrings.subversion
 import typings.octokitTypes.octokitTypesStrings.tfvc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsStartImportEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * For a tfvc import, the name of the project that is being imported.
     */
-  var tfvc_project: js.UndefOr[String] = js.native
+  var tfvc_project: js.UndefOr[String] = js.undefined
   
   /**
     * The originating VCS type. Can be one of `subversion`, `git`, `mercurial`, or `tfvc`. Please be aware that without this parameter, the import job will take additional time to detect the VCS type before beginning the import. This detection step will be reflected in the response.
     */
-  var vcs: js.UndefOr[subversion | git | mercurial | tfvc] = js.native
+  var vcs: js.UndefOr[subversion | git | mercurial | tfvc] = js.undefined
   
   /**
     * If authentication is required, the password to provide to `vcs_url`.
     */
-  var vcs_password: js.UndefOr[String] = js.native
+  var vcs_password: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the originating repository.
     */
-  var vcs_url: String = js.native
+  var vcs_url: String
   
   /**
     * If authentication is required, the username to provide to `vcs_url`.
     */
-  var vcs_username: js.UndefOr[String] = js.native
+  var vcs_username: js.UndefOr[String] = js.undefined
 }
 object MigrationsStartImportEndpoint {
   

@@ -2,40 +2,38 @@ package typings.jquerySlugify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   /* Inlined std.Partial<{preSlug (source : string): string, postSlug (source : string): string, slugFunc (input : string, options : jquery-slugify.jquery-slugify.Options): string,   separator :string,   lang :string | boolean,   symbols :boolean,   maintainCase :boolean,   titleCase :std.Array<string> | boolean,   truncate :number,   uric :boolean,   uricNoSlash :boolean,   mark :boolean,   custom :std.Array<string>}> */
-  @js.native
   trait Options extends StObject {
     
-    var custom: js.UndefOr[js.Array[String]] = js.native
+    var custom: js.UndefOr[js.Array[String]] = js.undefined
     
-    var lang: js.UndefOr[String | Boolean] = js.native
+    var lang: js.UndefOr[String | Boolean] = js.undefined
     
-    var maintainCase: js.UndefOr[Boolean] = js.native
+    var maintainCase: js.UndefOr[Boolean] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var postSlug: js.UndefOr[js.Function1[/* source */ String, String]] = js.native
+    var postSlug: js.UndefOr[js.Function1[/* source */ String, String]] = js.undefined
     
-    var preSlug: js.UndefOr[js.Function1[/* source */ String, String]] = js.native
+    var preSlug: js.UndefOr[js.Function1[/* source */ String, String]] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var slugFunc: js.UndefOr[js.Function2[/* input */ String, /* options */ this.type, String]] = js.native
+    var slugFunc: js.UndefOr[js.Function2[/* input */ String, /* options */ this.type, String]] = js.undefined
     
-    var symbols: js.UndefOr[Boolean] = js.native
+    var symbols: js.UndefOr[Boolean] = js.undefined
     
-    var titleCase: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var titleCase: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var truncate: js.UndefOr[Double] = js.native
+    var truncate: js.UndefOr[Double] = js.undefined
     
-    var uric: js.UndefOr[Boolean] = js.native
+    var uric: js.UndefOr[Boolean] = js.undefined
     
-    var uricNoSlash: js.UndefOr[Boolean] = js.native
+    var uricNoSlash: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

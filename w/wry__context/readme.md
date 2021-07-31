@@ -11,8 +11,8 @@ Manage contextual information needed by (a)synchronous tasks without explicitly 
 | Full name          | @wry/context |
 | Keywords           | - |
 | # releases         | 23 |
-| # dependents       | 8 |
-| # downloads        | 51792928 |
+| # dependents       | 9 |
+| # downloads        | 71334838 |
 | # stars            | 0 |
 
 ## Links

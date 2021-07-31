@@ -2,17 +2,15 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/layout
   */
-@js.native
 trait LayoutDimensionOptions extends StObject {
   
   // Boolean which changes whether label dimensions are included when calculating node dimensions
-  var nodeDimensionsIncludeLabels: Boolean = js.native
+  var nodeDimensionsIncludeLabels: Boolean
 }
 object LayoutDimensionOptions {
   

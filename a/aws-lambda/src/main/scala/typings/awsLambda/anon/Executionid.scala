@@ -3,25 +3,23 @@ package typings.awsLambda.anon
 import typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineActionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Executionid extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var `execution-id`: String = js.native
+  var `execution-id`: String
   
-  var pipeline: String = js.native
+  var pipeline: String
   
-  var stage: String = js.native
+  var stage: String
   
-  var state: CodePipelineActionState = js.native
+  var state: CodePipelineActionState
   
-  var `type`: Category = js.native
+  var `type`: Category
   
-  var version: Double = js.native
+  var version: Double
 }
 object Executionid {
   

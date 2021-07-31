@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * The name for this filter.
     */
-  var Name: js.UndefOr[FilterName] = js.native
+  var Name: js.UndefOr[FilterName] = js.undefined
   
   /**
     * The values of the filter. These are all the values for any of the applied filters.
     */
-  var Values: js.UndefOr[FilterValues] = js.native
+  var Values: js.UndefOr[FilterValues] = js.undefined
 }
 object Filter {
   

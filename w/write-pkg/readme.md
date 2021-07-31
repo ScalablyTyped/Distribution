@@ -11,8 +11,8 @@ Write a package.json file
 | Full name          | write-pkg |
 | Keywords           | json, write, stringify, file, fs, graceful, package |
 | # releases         | 2 |
-| # dependents       | 166 |
-| # downloads        | 41105386 |
+| # dependents       | 180 |
+| # downloads        | 48457586 |
 | # stars            | 3 |
 
 ## Links

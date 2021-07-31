@@ -4,24 +4,23 @@ import typings.mqttPacket.anon.ServerReference
 import typings.mqttPacket.mqttPacketStrings.disconnect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDisconnectPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IDisconnectPacket: disconnect = js.native
+  var cmd_IDisconnectPacket: disconnect
   
-  var properties: js.UndefOr[ServerReference] = js.native
+  var properties: js.UndefOr[ServerReference] = js.undefined
 }
 object IDisconnectPacket {
   
   @scala.inline
-  def apply(cmd: disconnect): IDisconnectPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
+  def apply(): IDisconnectPacket = {
+    val __obj = js.Dynamic.literal(cmd = "disconnect")
     __obj.asInstanceOf[IDisconnectPacket]
   }
   

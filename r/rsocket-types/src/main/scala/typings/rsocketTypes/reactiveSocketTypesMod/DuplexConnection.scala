@@ -3,23 +3,21 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 import typings.rsocketFlowable.mod.Flowable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DuplexConnection extends StObject {
   
   /**
     * Close the underlying connection, emitting `onComplete` on the receive()
     * Publisher.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Open the underlying connection. Throws if the connection is already in
     * the CLOSED or ERROR state.
     */
-  def connect(): Unit = js.native
+  def connect(): Unit
   
   /**
     * Returns a Flowable that immediately publishes the current connection
@@ -27,7 +25,7 @@ trait DuplexConnection extends StObject {
     * the CLOSED or ERROR state, it may not be connected again.
     * Implementations must publish values per the comments on ConnectionStatus.
     */
-  def connectionStatus(): Flowable[ConnectionStatus] = js.native
+  def connectionStatus(): Flowable[ConnectionStatus]
   
   /**
     * Returns a stream of all `Frame`s received on this connection.
@@ -40,7 +38,7 @@ trait DuplexConnection extends StObject {
     * - Implemenations may optionally support multi-cast receivers. Those that do
     *   not should throw if `receive` is called more than once.
     */
-  def receive(): Flowable[Frame] = js.native
+  def receive(): Flowable[Frame]
   
   /**
     * Send all the `input` frames on this connection.
@@ -50,12 +48,12 @@ trait DuplexConnection extends StObject {
     * - Implementations must signal any errors by calling `onError` on the
     *   `receive()` Publisher.
     */
-  def send(input: Flowable[Frame]): Unit = js.native
+  def send(input: Flowable[Frame]): Unit
   
   /**
     * Send a single frame on the connection.
     */
-  def sendOne(frame: Frame): Unit = js.native
+  def sendOne(frame: Frame): Unit
 }
 object DuplexConnection {
   

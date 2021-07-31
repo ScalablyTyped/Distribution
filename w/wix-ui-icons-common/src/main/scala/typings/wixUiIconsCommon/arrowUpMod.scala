@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowUpMod extends Shortcut {
@@ -15,10 +14,11 @@ object arrowUpMod extends Shortcut {
   @js.native
   val default: SFC[ArrowUpProps] = js.native
   
-  @js.native
-  trait ArrowUpProps extends SVGAttributes[SVGElement] {
+  trait ArrowUpProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ArrowUpProps {
     

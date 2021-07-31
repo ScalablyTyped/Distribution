@@ -4,13 +4,13 @@ import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Foundation.IClosable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInputStream extends IClosable {
+trait IInputStream
+  extends StObject
+     with IClosable {
   
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IAsyncOperationWithProgress[IBuffer, Double]
 }
 object IInputStream {
   

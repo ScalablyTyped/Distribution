@@ -3,19 +3,17 @@ package typings.winrt.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInclinometerReading extends StObject {
   
-  var pitchDegrees: Double = js.native
+  var pitchDegrees: Double
   
-  var rollDegrees: Double = js.native
+  var rollDegrees: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
-  var yawDegrees: Double = js.native
+  var yawDegrees: Double
 }
 object IInclinometerReading {
   

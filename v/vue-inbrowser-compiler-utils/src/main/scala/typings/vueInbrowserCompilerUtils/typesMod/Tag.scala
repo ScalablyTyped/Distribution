@@ -2,15 +2,14 @@ package typings.vueInbrowserCompilerUtils.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag
-  extends RootTag
+  extends StObject
+     with RootTag
      with BlockTag {
   
-  var content: String | Boolean = js.native
+  var content: String | Boolean
 }
 object Tag {
   

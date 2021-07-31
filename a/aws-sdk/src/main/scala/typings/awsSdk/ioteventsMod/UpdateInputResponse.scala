@@ -2,16 +2,14 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInputResponse extends StObject {
   
   /**
     * Information about the configuration of the input.
     */
-  var inputConfiguration: js.UndefOr[InputConfiguration] = js.native
+  var inputConfiguration: js.UndefOr[InputConfiguration] = js.undefined
 }
 object UpdateInputResponse {
   

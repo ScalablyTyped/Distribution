@@ -2,21 +2,19 @@ package typings.signalfx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CONTROL extends StObject {
     
-    var CONTROL: String = js.native
+    var CONTROL: String
     
-    var DATA: String = js.native
+    var DATA: String
     
-    var EVENT: String = js.native
+    var EVENT: String
     
-    var METADATA: String = js.native
+    var METADATA: String
   }
   object CONTROL {
     

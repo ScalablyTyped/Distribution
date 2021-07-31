@@ -10,7 +10,6 @@ import typings.wordpressComponents.popoverMod.Popover.Position
 import typings.wordpressComponents.shortcutMod.Shortcut.ShortcutType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconButtonMod {
@@ -29,27 +28,28 @@ object iconButtonMod {
   
   object IconButton {
     
-    @js.native
-    trait Props extends ButtonProps {
+    trait Props
+      extends StObject
+         with ButtonProps {
       
       /**
         * Icon to use. Either a Dashicon slug or a custom component.
         */
-      var icon: Icon | Element = js.native
+      var icon: Icon | Element
       
       /**
         * Position for the label.
         * @defaultValue "top"
         */
-      var labelPosition: js.UndefOr[Position] = js.native
+      var labelPosition: js.UndefOr[Position] = js.undefined
       
-      var shortcut: js.UndefOr[ShortcutType] = js.native
+      var shortcut: js.UndefOr[ShortcutType] = js.undefined
       
       /**
         * Tooltip text to display.
         * @defaultValue Props.label
         */
-      var tooltip: js.UndefOr[String] = js.native
+      var tooltip: js.UndefOr[String] = js.undefined
     }
     object Props {
       

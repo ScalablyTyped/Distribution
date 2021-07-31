@@ -9,17 +9,19 @@ import typings.ionic.definitionsMod.ILogger
 import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.ISession
 import typings.ionic.definitionsMod.IShell
+import typings.ionic.definitionsMod.PatientTreatmentStep
 import typings.ionicCliFramework.definitionsMod.PackageJson
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ailmentsBaseMod {
   
   @JSImport("ionic/lib/doctor/ailments/base", "Ailment")
   @js.native
-  abstract class Ailment protected () extends IAilment {
+  abstract class Ailment protected ()
+    extends StObject
+       with IAilment {
     def this(hasClientConfigLogProjectShellSession: AilmentDeps) = this()
     
     var _debug: js.Any = js.native
@@ -30,7 +32,22 @@ object ailmentsBaseMod {
     
     def debug: Debugger = js.native
     
+    /* CompleteClass */
+    override def detected(): js.Promise[Boolean] = js.native
+    
     def getLocalPackageJson(pkgName: String): js.Promise[js.UndefOr[PackageJson]] = js.native
+    
+    /* CompleteClass */
+    override def getMessage(): js.Promise[String] = js.native
+    
+    /* CompleteClass */
+    override def getTreatmentSteps(): js.Promise[js.Array[PatientTreatmentStep]] = js.native
+    
+    /* CompleteClass */
+    override val id: String = js.native
+    
+    /* CompleteClass */
+    var `implicit`: Boolean = js.native
     
     val log: ILogger = js.native
     
@@ -43,28 +60,37 @@ object ailmentsBaseMod {
   
   @JSImport("ionic/lib/doctor/ailments/base", "AilmentRegistry")
   @js.native
-  class AilmentRegistry () extends IAilmentRegistry {
+  class AilmentRegistry ()
+    extends StObject
+       with IAilmentRegistry {
     
     var _ailments: js.Array[IAilment] = js.native
     
+    /* CompleteClass */
+    var ailments: js.Array[IAilment] = js.native
     @JSName("ailments")
     def ailments_MAilmentRegistry: js.Array[IAilment] = js.native
+    
+    /* CompleteClass */
+    override def get(id: String): js.UndefOr[IAilment] = js.native
+    
+    /* CompleteClass */
+    override def register(ailment: IAilment): Unit = js.native
   }
   
-  @js.native
   trait AilmentDeps extends StObject {
     
-    var client: IClient = js.native
+    var client: IClient
     
-    var config: IConfig = js.native
+    var config: IConfig
     
-    var log: ILogger = js.native
+    var log: ILogger
     
-    var project: IProject = js.native
+    var project: IProject
     
-    var session: ISession = js.native
+    var session: ISession
     
-    var shell: IShell = js.native
+    var shell: IShell
   }
   object AilmentDeps {
     

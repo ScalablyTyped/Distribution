@@ -2,28 +2,30 @@ package typings.wixEventually
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(fn: js.Function): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(fn: js.Function, opts: Opts): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("wix-eventually", JSImport.Namespace)
   @js.native
-  def apply(fn: js.Function): js.Promise[Unit] = js.native
-  @JSImport("wix-eventually", JSImport.Namespace)
-  @js.native
-  def apply(fn: js.Function, opts: Opts): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wix-eventually", "_with")
-  @js.native
-  def _with(overrides: Opts): js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]] = js.native
+  @scala.inline
+  def _with(overrides: Opts): js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("_with")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]]]
   
-  @js.native
+  @scala.inline
+  def `with`(overrides: Opts): js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("with")(overrides.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]]]
+  
   trait Opts extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Opts {
     
@@ -49,8 +51,4 @@ object mod {
       def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
-  
-  @JSImport("wix-eventually", "with")
-  @js.native
-  def `with`(overrides: Opts): js.Function2[/* fn */ js.Function, /* opts */ js.UndefOr[Opts], js.Promise[Unit]] = js.native
 }

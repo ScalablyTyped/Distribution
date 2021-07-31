@@ -7,7 +7,6 @@ import typings.plottable.interfacesMod.SimpleSelection
 import typings.plottable.quantitativeScaleMod.QuantitativeScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionBoxLayerMod {
@@ -19,15 +18,19 @@ object selectionBoxLayerMod {
   object PropertyMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PropertyMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[PropertyMode & Double] = js.native
     
     @js.native
-    sealed trait PIXEL extends PropertyMode
-    /* 1 */ val PIXEL: typings.plottable.selectionBoxLayerMod.PropertyMode.PIXEL with Double = js.native
+    sealed trait PIXEL
+      extends StObject
+         with PropertyMode
+    /* 1 */ val PIXEL: typings.plottable.selectionBoxLayerMod.PropertyMode.PIXEL & Double = js.native
     
     @js.native
-    sealed trait VALUE extends PropertyMode
-    /* 0 */ val VALUE: typings.plottable.selectionBoxLayerMod.PropertyMode.VALUE with Double = js.native
+    sealed trait VALUE
+      extends StObject
+         with PropertyMode
+    /* 0 */ val VALUE: typings.plottable.selectionBoxLayerMod.PropertyMode.VALUE & Double = js.native
   }
   
   @JSImport("plottable/build/src/components/selectionBoxLayer", "SelectionBoxLayer")

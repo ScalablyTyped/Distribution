@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOuterHTMLResponse extends StObject {
   
   /**
     * Outer HTML markup.
     */
-  var outerHTML: String = js.native
+  var outerHTML: String
 }
 object GetOuterHTMLResponse {
   

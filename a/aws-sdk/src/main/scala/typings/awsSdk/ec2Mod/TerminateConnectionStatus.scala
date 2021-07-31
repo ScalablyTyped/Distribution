@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateConnectionStatus extends StObject {
   
   /**
     * The ID of the client connection.
     */
-  var ConnectionId: js.UndefOr[String] = js.native
+  var ConnectionId: js.UndefOr[String] = js.undefined
   
   /**
     * A message about the status of the client connection, if applicable.
     */
-  var CurrentStatus: js.UndefOr[ClientVpnConnectionStatus] = js.native
+  var CurrentStatus: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
   
   /**
     * The state of the client connection.
     */
-  var PreviousStatus: js.UndefOr[ClientVpnConnectionStatus] = js.native
+  var PreviousStatus: js.UndefOr[ClientVpnConnectionStatus] = js.undefined
 }
 object TerminateConnectionStatus {
   

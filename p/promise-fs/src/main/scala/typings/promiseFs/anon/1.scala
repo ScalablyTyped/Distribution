@@ -3,21 +3,19 @@ package typings.promiseFs.anon
 import typings.promiseFs.promiseFsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var encoding: js.UndefOr[String | Null] = js.native
+  var encoding: js.UndefOr[String | Null] = js.undefined
   
-  var withFileTypes: `true` = js.native
+  var withFileTypes: `true`
 }
 object `1` {
   
   @scala.inline
-  def apply(withFileTypes: `true`): `1` = {
-    val __obj = js.Dynamic.literal(withFileTypes = withFileTypes.asInstanceOf[js.Any])
+  def apply(): `1` = {
+    val __obj = js.Dynamic.literal(withFileTypes = true)
     __obj.asInstanceOf[`1`]
   }
   

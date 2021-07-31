@@ -5,14 +5,14 @@ import typings.extjs.Ext.data.IModel
 import typings.extjs.Ext.draw.ISprite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILabel extends IBase {
+trait ILabel
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Object) */
-  var label: js.UndefOr[js.Any] = js.native
+  var label: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Called each time a new label is created
     * @param storeItem Ext.data.Model The element of the store that is related to the sprite.
@@ -29,7 +29,7 @@ trait ILabel extends IBase {
       /* display */ js.UndefOr[String], 
       ISprite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Called for updating the position of the label
     * @param label Ext.draw.Sprite The sprite that draws the label.
@@ -51,7 +51,7 @@ trait ILabel extends IBase {
       /* index */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ILabel {
   

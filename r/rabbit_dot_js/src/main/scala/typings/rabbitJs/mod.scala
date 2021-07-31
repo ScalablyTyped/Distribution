@@ -11,10 +11,13 @@ import typings.node.streamMod.Writable
 import typings.rabbitJs.anon.CorrelationId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rabbit.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rabbit.js", "Context")
   @js.native
@@ -100,9 +103,9 @@ object mod {
        with Socket {
     def this(channel: String, opts: SocketOptions) = this()
     
-    def connect(source: String, topic: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
     def connect(source: String, topic: String): js.Any = js.native
     def connect(source: String, topic: String, callback: js.Function): js.Any = js.native
+    def connect(source: String, topic: Unit, callback: js.Function): js.Any = js.native
     
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T): T = js.native
@@ -142,19 +145,16 @@ object mod {
     def requeue(): js.Any = js.native
   }
   
-  @JSImport("rabbit.js", "createContext")
-  @js.native
-  def createContext(): Context = js.native
-  @JSImport("rabbit.js", "createContext")
-  @js.native
-  def createContext(url: String): Context = js.native
+  @scala.inline
+  def createContext(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[Context]
+  @scala.inline
+  def createContext(url: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(url.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @js.native
   trait RequestMessage extends StObject {
     
-    var content: js.Any = js.native
+    var content: js.Any
     
-    var properties: CorrelationId = js.native
+    var properties: CorrelationId
   }
   object RequestMessage {
     
@@ -186,20 +186,19 @@ object mod {
     def setsockopt(opt: String, value: String): js.Any = js.native
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var expiration: js.UndefOr[js.Any] = js.native
+    var expiration: js.UndefOr[js.Any] = js.undefined
     
-    var persistent: js.UndefOr[js.Any] = js.native
+    var persistent: js.UndefOr[js.Any] = js.undefined
     
-    var prefetch: js.UndefOr[js.Any] = js.native
+    var prefetch: js.UndefOr[js.Any] = js.undefined
     
-    var routing: js.UndefOr[js.Any] = js.native
+    var routing: js.UndefOr[js.Any] = js.undefined
     
-    var task: js.UndefOr[js.Any] = js.native
+    var task: js.UndefOr[js.Any] = js.undefined
     
-    var topic: js.UndefOr[js.Any] = js.native
+    var topic: js.UndefOr[js.Any] = js.undefined
   }
   object SocketOptions {
     

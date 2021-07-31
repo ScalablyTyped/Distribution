@@ -2,29 +2,27 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingDef extends StObject {
   
-  var flags: ɵBindingFlags = js.native
+  var flags: ɵBindingFlags
   
-  var name: String | Null = js.native
+  var name: String | Null
   
-  var nonMinifiedName: String | Null = js.native
+  var nonMinifiedName: String | Null
   
-  var ns: String | Null = js.native
+  var ns: String | Null
   
-  var securityContext: SecurityContext | Null = js.native
+  var securityContext: SecurityContext | Null
   
-  var suffix: String | Null = js.native
+  var suffix: String | Null
 }
 object BindingDef {
   
   @scala.inline
   def apply(flags: ɵBindingFlags): BindingDef = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], name = null, nonMinifiedName = null, ns = null, securityContext = null, suffix = null)
     __obj.asInstanceOf[BindingDef]
   }
   

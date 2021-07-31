@@ -5,17 +5,15 @@ import typings.reactNavigation.mod.NavigationScreenConfig
 import typings.reactNavigation.mod.NavigationScreenConfigProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Path[Options, NavigationScreenPropType, ScreenProps] extends StObject {
   
-  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]] = js.native
+  var navigationOptions: js.UndefOr[NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]] = js.undefined
   
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object Path {
   
@@ -26,14 +24,14 @@ object Path {
   }
   
   @scala.inline
-  implicit class PathMutableBuilder[Self <: Path[_, _, _], Options, NavigationScreenPropType, ScreenProps] (val x: Self with (Path[Options, NavigationScreenPropType, ScreenProps])) extends AnyVal {
+  implicit class PathMutableBuilder[Self <: Path[?, ?, ?], Options, NavigationScreenPropType, ScreenProps] (val x: Self & (Path[Options, NavigationScreenPropType, ScreenProps])) extends AnyVal {
     
     @scala.inline
     def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationScreenPropType, ScreenProps]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNavigationOptionsFunction1(
-      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]) with NavigationOptionsOptions[Options] => Options
+      value: /* navigationOptionsContainer */ (NavigationScreenConfigProps[NavigationScreenPropType, ScreenProps]) & NavigationOptionsOptions[Options] => Options
     ): Self = StObject.set(x, "navigationOptions", js.Any.fromFunction1(value))
     
     @scala.inline

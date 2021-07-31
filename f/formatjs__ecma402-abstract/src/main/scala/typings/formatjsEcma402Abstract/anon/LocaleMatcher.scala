@@ -4,13 +4,11 @@ import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.`best fit`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleMatcher extends StObject {
   
-  var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.native
+  var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
 }
 object LocaleMatcher {
   

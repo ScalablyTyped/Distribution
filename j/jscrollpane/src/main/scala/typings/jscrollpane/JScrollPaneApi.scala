@@ -3,7 +3,6 @@ package typings.jscrollpane
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,7 +12,12 @@ trait JScrollPaneApi extends StObject {
     * This method is called when jScrollPane is trying to animate to a new position. You can override it if you want
     * to provide advanced animation functionality.
     */
-  def animate(ele: JQuery, prop: String, value: js.Any, stepCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def animate(
+    ele: JQuery,
+    prop: String,
+    value: js.Any,
+    stepCallback: js.Function1[/* repeated */ js.Any, js.Any]
+  ): Unit = js.native
   
   /**
     * Destroys the jScrollPane on the instance matching this API object and restores the browser's default behaviour.
@@ -155,9 +159,9 @@ trait JScrollPaneApi extends StObject {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: String): Unit = js.native
-  def scrollToElement(ele: String, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: String, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: String, stickToTop: Boolean, animate: Boolean): Unit = js.native
+  def scrollToElement(ele: String, stickToTop: Unit, animate: Boolean): Unit = js.native
   /**
     * Scrolls the specified element (a jQuery object) into view so that it can be seen within the viewport.
     * @param ele A jQuery object to scroll to
@@ -167,9 +171,9 @@ trait JScrollPaneApi extends StObject {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: JQuery): Unit = js.native
-  def scrollToElement(ele: JQuery, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: JQuery, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: JQuery, stickToTop: Boolean, animate: Boolean): Unit = js.native
+  def scrollToElement(ele: JQuery, stickToTop: Unit, animate: Boolean): Unit = js.native
   /**
     * Scrolls the specified element (a DOM node) into view so that it can be seen within the viewport.
     * @param ele A DOM node to scroll to
@@ -179,9 +183,9 @@ trait JScrollPaneApi extends StObject {
     value from the settings object is used instead.
     */
   def scrollToElement(ele: HTMLElement): Unit = js.native
-  def scrollToElement(ele: HTMLElement, stickToTop: js.UndefOr[scala.Nothing], animate: Boolean): Unit = js.native
   def scrollToElement(ele: HTMLElement, stickToTop: Boolean): Unit = js.native
   def scrollToElement(ele: HTMLElement, stickToTop: Boolean, animate: Boolean): Unit = js.native
+  def scrollToElement(ele: HTMLElement, stickToTop: Unit, animate: Boolean): Unit = js.native
   
   /**
     * Scrolls the pane to the specified percentage of its maximum horizontal scroll position.

@@ -2,29 +2,27 @@ package typings.phantomjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebPageSettings extends StObject {
   
-  var XSSAuditingEnabled: Boolean = js.native
+  var XSSAuditingEnabled: Boolean
   
-  var javascriptEnabled: Boolean = js.native
+  var javascriptEnabled: Boolean
   
-  var loadImages: Boolean = js.native
+  var loadImages: Boolean
   
-  var localToRemoteUrlAccessEnabled: Boolean = js.native
+  var localToRemoteUrlAccessEnabled: Boolean
   
-  var password: String = js.native
+  var password: String
   
-  var resourceTimeout: Double = js.native
+  var resourceTimeout: Double
   
-  var userAgent: String = js.native
+  var userAgent: String
   
-  var userName: String = js.native
+  var userName: String
   
-  var webSecurityEnabled: Boolean = js.native
+  var webSecurityEnabled: Boolean
 }
 object WebPageSettings {
   

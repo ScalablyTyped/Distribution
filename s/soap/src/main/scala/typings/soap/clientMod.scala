@@ -1,6 +1,5 @@
 package typings.soap
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingHttpHeaders
 import typings.request.mod.Headers
@@ -15,20 +14,27 @@ import typings.soap.wsdlMod.WSDL
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
   
-  @JSImport("soap/lib/client", "Client")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("soap/lib/client", "Client")
   @js.native
-  class Client protected ()
-    extends EventEmitter
-       with /* method */ StringDictionary[js.Any] {
+  class Client protected () extends EventEmitter {
     def this(wsdl: WSDL) = this()
     def this(wsdl: WSDL, endpoint: String) = this()
-    def this(wsdl: WSDL, endpoint: js.UndefOr[scala.Nothing], options: IOptions) = this()
     def this(wsdl: WSDL, endpoint: String, options: IOptions) = this()
+    def this(wsdl: WSDL, endpoint: Unit, options: IOptions) = this()
     
     var SOAPAction: js.Any = js.native
     
@@ -49,64 +55,36 @@ object clientMod {
     var _promisifyMethod: js.Any = js.native
     
     def addBodyAttribute(bodyAttribute: js.Any): Unit = js.native
-    def addBodyAttribute(
-      bodyAttribute: js.Any,
-      name: js.UndefOr[scala.Nothing],
-      namespace: js.UndefOr[scala.Nothing],
-      xmlns: String
-    ): Unit = js.native
-    def addBodyAttribute(bodyAttribute: js.Any, name: js.UndefOr[scala.Nothing], namespace: String): Unit = js.native
-    def addBodyAttribute(bodyAttribute: js.Any, name: js.UndefOr[scala.Nothing], namespace: String, xmlns: String): Unit = js.native
     def addBodyAttribute(bodyAttribute: js.Any, name: String): Unit = js.native
-    def addBodyAttribute(bodyAttribute: js.Any, name: String, namespace: js.UndefOr[scala.Nothing], xmlns: String): Unit = js.native
     def addBodyAttribute(bodyAttribute: js.Any, name: String, namespace: String): Unit = js.native
     def addBodyAttribute(bodyAttribute: js.Any, name: String, namespace: String, xmlns: String): Unit = js.native
+    def addBodyAttribute(bodyAttribute: js.Any, name: String, namespace: Unit, xmlns: String): Unit = js.native
+    def addBodyAttribute(bodyAttribute: js.Any, name: Unit, namespace: String): Unit = js.native
+    def addBodyAttribute(bodyAttribute: js.Any, name: Unit, namespace: String, xmlns: String): Unit = js.native
+    def addBodyAttribute(bodyAttribute: js.Any, name: Unit, namespace: Unit, xmlns: String): Unit = js.native
     
     def addHttpHeader(name: String, value: js.Any): Unit = js.native
     
     /** add soapHeader to soap:Header node */
     def addSoapHeader(soapHeader: js.Any): Double = js.native
-    def addSoapHeader(
-      soapHeader: js.Any,
-      name: js.UndefOr[scala.Nothing],
-      namespace: js.UndefOr[scala.Nothing],
-      xmlns: String
-    ): Double = js.native
-    def addSoapHeader(soapHeader: js.Any, name: js.UndefOr[scala.Nothing], namespace: js.Any): Double = js.native
-    def addSoapHeader(soapHeader: js.Any, name: js.UndefOr[scala.Nothing], namespace: js.Any, xmlns: String): Double = js.native
     def addSoapHeader(soapHeader: js.Any, name: String): Double = js.native
-    def addSoapHeader(soapHeader: js.Any, name: String, namespace: js.UndefOr[scala.Nothing], xmlns: String): Double = js.native
     def addSoapHeader(soapHeader: js.Any, name: String, namespace: js.Any): Double = js.native
     def addSoapHeader(soapHeader: js.Any, name: String, namespace: js.Any, xmlns: String): Double = js.native
+    def addSoapHeader(soapHeader: js.Any, name: String, namespace: Unit, xmlns: String): Double = js.native
+    def addSoapHeader(soapHeader: js.Any, name: Unit, namespace: js.Any): Double = js.native
+    def addSoapHeader(soapHeader: js.Any, name: Unit, namespace: js.Any, xmlns: String): Double = js.native
+    def addSoapHeader(soapHeader: js.Any, name: Unit, namespace: Unit, xmlns: String): Double = js.native
     
     var bodyAttributes: js.Any = js.native
     
     def changeSoapHeader(index: js.Any, soapHeader: js.Any): Unit = js.native
-    def changeSoapHeader(
-      index: js.Any,
-      soapHeader: js.Any,
-      name: js.UndefOr[scala.Nothing],
-      namespace: js.UndefOr[scala.Nothing],
-      xmlns: js.Any
-    ): Unit = js.native
-    def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.UndefOr[scala.Nothing], namespace: js.Any): Unit = js.native
-    def changeSoapHeader(
-      index: js.Any,
-      soapHeader: js.Any,
-      name: js.UndefOr[scala.Nothing],
-      namespace: js.Any,
-      xmlns: js.Any
-    ): Unit = js.native
     def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any): Unit = js.native
-    def changeSoapHeader(
-      index: js.Any,
-      soapHeader: js.Any,
-      name: js.Any,
-      namespace: js.UndefOr[scala.Nothing],
-      xmlns: js.Any
-    ): Unit = js.native
     def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any, namespace: js.Any): Unit = js.native
     def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any, namespace: js.Any, xmlns: js.Any): Unit = js.native
+    def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: js.Any, namespace: Unit, xmlns: js.Any): Unit = js.native
+    def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: Unit, namespace: js.Any): Unit = js.native
+    def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: Unit, namespace: js.Any, xmlns: js.Any): Unit = js.native
+    def changeSoapHeader(index: js.Any, soapHeader: js.Any, name: Unit, namespace: Unit, xmlns: js.Any): Unit = js.native
     
     def clearBodyAttributes(): Unit = js.native
     
@@ -129,7 +107,7 @@ object clientMod {
     
     var endpoint: js.Any = js.native
     
-    def getBodyAttributes(): js.Array[_] = js.native
+    def getBodyAttributes(): js.Array[js.Any] = js.native
     
     def getHttpHeaders(): IHeaders = js.native
     
@@ -194,12 +172,13 @@ object clientMod {
     var wsdl: js.Any = js.native
   }
   
-  @js.native
-  trait ISoapError extends Error {
+  trait ISoapError
+    extends StObject
+       with Error {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.native
+    var response: js.UndefOr[js.Any] = js.undefined
   }
   object ISoapError {
     

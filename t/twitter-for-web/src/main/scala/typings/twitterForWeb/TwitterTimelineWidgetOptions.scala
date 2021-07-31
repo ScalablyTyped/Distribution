@@ -16,14 +16,12 @@ import typings.twitterForWeb.twitterForWebStrings.rude
 import typings.twitterForWeb.twitterForWebStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for additional options for embedded Timelines.
   */
 /* Inlined twitter-for-web.TwitterTimelineWidgetBaseOptions & {  ariaPolite :'polite' | 'assertive' | 'rude' | undefined,   height :number | undefined,   borderColor :string | undefined,   chrome :string | undefined,   tweetLimit :number | undefined,   showReplies :boolean | undefined} */
-@js.native
 trait TwitterTimelineWidgetOptions extends StObject {
   
   /**
@@ -32,112 +30,112 @@ trait TwitterTimelineWidgetOptions extends StObject {
   /**
     * The alignment of the button within an iframe; use this to ensure flush layout when aligning buttons against opposite edges of your grid.
     */
-  var align: js.UndefOr[String] with (js.UndefOr[left | right]) = js.native
+  var align: js.UndefOr[String] & (js.UndefOr[left | right])
   
   /**
     * Apply the specified aria-polite behavior to the rendered timeline.
     */
-  var ariaPolite: js.UndefOr[polite | assertive | rude] = js.native
+  var ariaPolite: js.UndefOr[polite | assertive | rude] = js.undefined
   
   /**
     * Adjust the color of borders inside the widget.
     */
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
   /**
     * Toggle whether to render expanded media through Twitter Cards in Tweets. Also applies to images uploaded to Twitter.
     */
-  var cards: js.UndefOr[hidden | visible] = js.native
+  var cards: js.UndefOr[hidden | visible] = js.undefined
   
   /**
     * Toggle the display of design elements in the widget. This parameter is a space-separated list of values.
     */
-  var chrome: js.UndefOr[String] = js.native
+  var chrome: js.UndefOr[String] = js.undefined
   
   /**
     * For Tweets that are replies, the previous Tweet in the thread will be displayed by default. Use none to hide the thread and show a Tweet alone.
     */
-  var conversation: js.UndefOr[none | all] = js.native
+  var conversation: js.UndefOr[none | all] = js.undefined
   
   /**
     * Share button and Follow button only. (Vertical count only available for share buttons.)
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * If the canonical URL to be counted is different from the URL to be shared, you can provide this URL to reference the count. (Share button only.)
     */
-  var counturl: js.UndefOr[String] = js.native
+  var counturl: js.UndefOr[String] = js.undefined
   
   /**
     * Enable Do Not Track for this widget.
     */
-  var dnt: js.UndefOr[Boolean] = js.native
+  var dnt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of hashtags to be appended to default Tweet text where appropriate.
     */
-  var hashtags: js.UndefOr[String] = js.native
+  var hashtags: js.UndefOr[String] = js.undefined
   
   /**
     * Fix the height of the embedded widget.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The language in which to render a widget, if supported.
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * Adjust the color of links inside the widget.
     */
-  var linkColor: js.UndefOr[String] = js.native
+  var linkColor: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Twitter screen names to be suggested for following after a Tweet is posted.
     */
-  var related: js.UndefOr[String] = js.native
+  var related: js.UndefOr[String] = js.undefined
   
   /**
     * Show Tweets in response to another Tweet or account
     */
-  var showReplies: js.UndefOr[Boolean] = js.native
+  var showReplies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * medium or large
     */
-  var size: js.UndefOr[medium | large] = js.native
+  var size: js.UndefOr[medium | large] = js.undefined
   
   /**
     * The default, highlighted text a user sees in the Tweet Web Intent.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Toggle the default colorscheme of the widget.
     */
-  var theme: js.UndefOr[dark | light] = js.native
+  var theme: js.UndefOr[dark | light] = js.undefined
   
   /**
     * Render a timeline statically, displaying only n number of Tweets.
     */
-  var tweetLimit: js.UndefOr[Double] = js.native
+  var tweetLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * A Twitter user mentioned in the default Tweet text as /via @user where appropriate.
     */
-  var via: js.UndefOr[String] = js.native
+  var via: js.UndefOr[String] = js.undefined
   
   /**
     * Fix the width of the embedded widget.
     */
-  var width: js.UndefOr[Double | auto] = js.native
+  var width: js.UndefOr[Double | auto] = js.undefined
 }
 object TwitterTimelineWidgetOptions {
   
   @scala.inline
-  def apply(align: js.UndefOr[String] with (js.UndefOr[left | right])): TwitterTimelineWidgetOptions = {
+  def apply(align: js.UndefOr[String] & (js.UndefOr[left | right])): TwitterTimelineWidgetOptions = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterTimelineWidgetOptions]
   }
@@ -146,7 +144,7 @@ object TwitterTimelineWidgetOptions {
   implicit class TwitterTimelineWidgetOptionsMutableBuilder[Self <: TwitterTimelineWidgetOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAlign(value: js.UndefOr[String] with (js.UndefOr[left | right])): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    def setAlign(value: js.UndefOr[String] & (js.UndefOr[left | right])): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAriaPolite(value: polite | assertive | rude): Self = StObject.set(x, "ariaPolite", value.asInstanceOf[js.Any])

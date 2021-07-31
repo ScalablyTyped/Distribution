@@ -5,25 +5,26 @@ import typings.awsSdk.s3Mod.GetObjectRequest
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: S3StreamDownloaderOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  
   @JSImport("s3-download-stream", JSImport.Namespace)
   @js.native
-  def apply(options: S3StreamDownloaderOptions): Readable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait S3StreamDownloaderOptions extends StObject {
     
-    var chunkSize: js.UndefOr[String] = js.native
+    var chunkSize: js.UndefOr[String] = js.undefined
     
-    var client: S3 = js.native
+    var client: S3
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var params: GetObjectRequest = js.native
+    var params: GetObjectRequest
   }
   object S3StreamDownloaderOptions {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Apklistings")
@@ -34,7 +33,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEditsApklistingsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceEditsApklistingsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -66,7 +65,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def deleteall(): GaxiosPromise[Unit] = js.native
   def deleteall(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def deleteall(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def deleteall(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def deleteall(params: ParamsResourceEditsApklistingsDeleteall): GaxiosPromise[Unit] = js.native
   def deleteall(params: ParamsResourceEditsApklistingsDeleteall, callback: BodyResponseCallback[Unit]): Unit = js.native
   def deleteall(
@@ -99,7 +98,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaApkListing] = js.native
   def get(callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
   def get(params: ParamsResourceEditsApklistingsGet): GaxiosPromise[SchemaApkListing] = js.native
   def get(params: ParamsResourceEditsApklistingsGet, callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
   def get(
@@ -130,7 +129,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaApkListingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaApkListingsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApkListingsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApkListingsListResponse] = js.native
   def list(params: ParamsResourceEditsApklistingsList): GaxiosPromise[SchemaApkListingsListResponse] = js.native
   def list(
     params: ParamsResourceEditsApklistingsList,
@@ -167,7 +166,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaApkListing] = js.native
   def patch(callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
   def patch(params: ParamsResourceEditsApklistingsPatch): GaxiosPromise[SchemaApkListing] = js.native
   def patch(params: ParamsResourceEditsApklistingsPatch, callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
   def patch(
@@ -201,7 +200,7 @@ class ResourceEditsApklistings protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaApkListing] = js.native
   def update(callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaApkListing] = js.native
   def update(params: ParamsResourceEditsApklistingsUpdate): GaxiosPromise[SchemaApkListing] = js.native
   def update(params: ParamsResourceEditsApklistingsUpdate, callback: BodyResponseCallback[SchemaApkListing]): Unit = js.native
   def update(

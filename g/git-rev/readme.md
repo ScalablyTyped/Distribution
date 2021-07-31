@@ -12,7 +12,7 @@ get the current git commit hash, tag or branch in node
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 93 |
-| # downloads        | 1961510 |
+| # downloads        | 2238946 |
 | # stars            | 15 |
 
 ## Links

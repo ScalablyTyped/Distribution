@@ -2,41 +2,39 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliverabilityTestReport extends StObject {
   
   /**
     * The date and time when the predictive inbox placement test was created, in Unix time format.
     */
-  var CreateDate: js.UndefOr[Timestamp] = js.native
+  var CreateDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The status of the predictive inbox placement test. If the status is IN_PROGRESS, then the predictive inbox placement test is currently running. Predictive inbox placement tests are usually complete within 24 hours of creating the test. If the status is COMPLETE, then the test is finished, and you can use the GetDeliverabilityTestReport to view the results of the test.
     */
-  var DeliverabilityTestStatus: js.UndefOr[typings.awsSdk.sesv2Mod.DeliverabilityTestStatus] = js.native
+  var DeliverabilityTestStatus: js.UndefOr[typings.awsSdk.sesv2Mod.DeliverabilityTestStatus] = js.undefined
   
   /**
     * The sender address that you specified for the predictive inbox placement test.
     */
-  var FromEmailAddress: js.UndefOr[EmailAddress] = js.native
+  var FromEmailAddress: js.UndefOr[EmailAddress] = js.undefined
   
   /**
     * A unique string that identifies the predictive inbox placement test.
     */
-  var ReportId: js.UndefOr[typings.awsSdk.sesv2Mod.ReportId] = js.native
+  var ReportId: js.UndefOr[typings.awsSdk.sesv2Mod.ReportId] = js.undefined
   
   /**
     * A name that helps you identify a predictive inbox placement test report.
     */
-  var ReportName: js.UndefOr[typings.awsSdk.sesv2Mod.ReportName] = js.native
+  var ReportName: js.UndefOr[typings.awsSdk.sesv2Mod.ReportName] = js.undefined
   
   /**
     * The subject line for an email that you submitted in a predictive inbox placement test.
     */
-  var Subject: js.UndefOr[DeliverabilityTestSubject] = js.native
+  var Subject: js.UndefOr[DeliverabilityTestSubject] = js.undefined
 }
 object DeliverabilityTestReport {
   

@@ -2,31 +2,29 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterRegistryRadix extends StObject {
   
   /**
     * Adds a route.
     */
-  def add(route: Route): Boolean = js.native
+  def add(route: Route): Boolean
   
   /**
     * Get registry.
     */
-  def get(): js.Array[Route] = js.native
+  def get(): js.Array[Route]
   
   /**
     * Registry for route.
     */
-  def lookup(method: String, pathname: String): js.UndefOr[Chain] = js.native
+  def lookup(method: String, pathname: String): js.UndefOr[Chain]
   
   /**
     * Removes a route.
     */
-  def remove(name: String): js.UndefOr[Route] = js.native
+  def remove(name: String): js.UndefOr[Route]
 }
 object RouterRegistryRadix {
   

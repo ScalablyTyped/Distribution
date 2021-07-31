@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoversBodyPart extends StObject {
   
   /**
     * The confidence that Amazon Rekognition has in the value of Value.
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * True if the PPE covers the corresponding body part, otherwise false.
     */
-  var Value: js.UndefOr[Boolean] = js.native
+  var Value: js.UndefOr[Boolean] = js.undefined
 }
 object CoversBodyPart {
   

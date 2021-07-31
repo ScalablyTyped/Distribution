@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.opentelemetryCore.typesMod.LogLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsEnvironmentMod {
+  
+  @JSImport("@opentelemetry/core/build/src/utils/environment", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Required<@opentelemetry/core.@opentelemetry/core/build/src/utils/environment.ENVIRONMENT> */
   object DEFAULT_ENVIRONMENT {
@@ -35,18 +38,16 @@ object utilsEnvironmentMod {
     def OTEL_SAMPLING_PROBABILITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OTEL_SAMPLING_PROBABILITY")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@opentelemetry/core/build/src/utils/environment", "parseEnvironment")
-  @js.native
-  def parseEnvironment(values: ENVIRONMENT_MAP): ENVIRONMENT = js.native
+  @scala.inline
+  def parseEnvironment(values: ENVIRONMENT_MAP): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnvironment")(values.asInstanceOf[js.Any]).asInstanceOf[ENVIRONMENT]
   
-  @js.native
   trait ENVIRONMENT extends StObject {
     
-    var OTEL_LOG_LEVEL: js.UndefOr[LogLevel] = js.native
+    var OTEL_LOG_LEVEL: js.UndefOr[LogLevel] = js.undefined
     
-    var OTEL_NO_PATCH_MODULES: js.UndefOr[String] = js.native
+    var OTEL_NO_PATCH_MODULES: js.UndefOr[String] = js.undefined
     
-    var OTEL_SAMPLING_PROBABILITY: js.UndefOr[Double] = js.native
+    var OTEL_SAMPLING_PROBABILITY: js.UndefOr[Double] = js.undefined
   }
   object ENVIRONMENT {
     

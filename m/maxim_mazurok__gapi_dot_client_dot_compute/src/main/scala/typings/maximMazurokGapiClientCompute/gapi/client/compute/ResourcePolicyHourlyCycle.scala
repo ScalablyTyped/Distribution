@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicyHourlyCycle extends StObject {
   
   /** [Output only] Duration of the time window, automatically chosen to be smallest possible in the given scenario. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Defines a schedule with units measured in hours. The value determines how many hours pass between the start of each cycle. */
-  var hoursInCycle: js.UndefOr[Double] = js.native
+  var hoursInCycle: js.UndefOr[Double] = js.undefined
   
   /** Time within the window to start the operations. It must be in format "HH:MM", where HH : [00-23] and MM : [00-00] GMT. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object ResourcePolicyHourlyCycle {
   

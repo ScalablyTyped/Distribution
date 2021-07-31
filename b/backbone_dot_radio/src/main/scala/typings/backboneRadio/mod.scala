@@ -5,7 +5,6 @@ import typings.backbone.mod.EventsMixin
 import typings.backboneRadio.mod.backboneAugmentingMod.Radio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,16 +43,15 @@ object mod {
   /* augmented module */
   object backboneAugmentingMod {
     
-    @js.native
     trait Radio extends StObject {
       
-      def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = js.native
+      def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_
       
-      def log(channelName: String, eventName: String, args: js.Any*): Unit = js.native
+      def log(channelName: String, eventName: String, args: js.Any*): Unit
       
-      def tuneIn(channelName: String): Radio = js.native
+      def tuneIn(channelName: String): Radio
       
-      def tuneOut(channelName: String): Radio = js.native
+      def tuneOut(channelName: String): Radio
     }
     object Radio {
       
@@ -85,32 +83,32 @@ object mod {
         
         def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         
         def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         
         /**
           * Faulty overgeneralization of Backbone.Events.on, for historical
           * reasons.
           */
         def on(eventName: js.Any): js.Any = js.native
-        def on(eventName: js.Any, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
         def on(eventName: js.Any, callback: js.Any): js.Any = js.native
         def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
+        def on(eventName: js.Any, callback: Unit, context: js.Any): js.Any = js.native
         
-        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         
-        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         
         // Radio.Requests
         def request(requestName: String, args: js.Any*): js.Any = js.native
@@ -118,30 +116,22 @@ object mod {
         def reset(): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = js.native
         
         def stopComplying(): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(
-          commandName: js.UndefOr[scala.Nothing],
-          callback: js.Function1[/* repeated */ js.Any, Unit],
-          context: js.Any
-        ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         
         def stopReplying(): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(
-          commandName: js.UndefOr[scala.Nothing],
-          callback: js.Function1[/* repeated */ js.Any, _],
-          context: js.Any
-        ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         def stopReplying(commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
       }
       
       @JSImport("backbone", "Radio.Commands")
@@ -152,26 +142,22 @@ object mod {
         
         def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def comply(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def comply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         
         def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def complyOnce(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def complyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         
         def stopComplying(): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(
-          commandName: js.UndefOr[scala.Nothing],
-          callback: js.Function1[/* repeated */ js.Any, Unit],
-          context: js.Any
-        ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-        def stopComplying(commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
         def stopComplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+        def stopComplying(commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
       }
       
       @JSImport("backbone", "Radio.DEBUG")
@@ -184,30 +170,26 @@ object mod {
       @js.native
       class Requests () extends StObject {
         
-        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def reply(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         
-        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def replyOnce(requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         
         def request(requestName: String, args: js.Any*): js.Any = js.native
         
         def stopReplying(): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(
-          commandName: js.UndefOr[scala.Nothing],
-          callback: js.Function1[/* repeated */ js.Any, _],
-          context: js.Any
-        ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
         def stopReplying(commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+        def stopReplying(commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
       }
       
       @JSImport("backbone", "Radio.VERSION")
@@ -216,337 +198,231 @@ object mod {
       @scala.inline
       def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
       
-      @JSImport("backbone", "Radio.bind")
-      @js.native
-      def bind(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.bind")
-      @js.native
-      def bind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+      @scala.inline
+      def bind(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def bind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.channel")
-      @js.native
-      def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = js.native
+      @scala.inline
+      def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_]
       
       // Proxy functions for Commands
-      @JSImport("backbone", "Radio.command")
-      @js.native
-      def command(channelName: String, commandName: String, args: js.Any*): Unit = js.native
+      @scala.inline
+      def command(channelName: String, commandName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSImport("backbone", "Radio.comply")
-      @js.native
-      def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.comply")
-      @js.native
+      @scala.inline
+      def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
       def comply(
         channelName: String,
         commandName: String,
         callback: js.Function1[/* repeated */ js.Any, Unit],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.comply")
-      @js.native
-      def comply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.comply")
-      @js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def comply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
       def comply(
         channelName: String,
-        commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+        commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
       
-      @JSImport("backbone", "Radio.complyOnce")
-      @js.native
-      def complyOnce(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.complyOnce")
-      @js.native
+      @scala.inline
+      def complyOnce(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
       def complyOnce(
         channelName: String,
         commandName: String,
         callback: js.Function1[/* repeated */ js.Any, Unit],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.complyOnce")
-      @js.native
-      def complyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.complyOnce")
-      @js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def complyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
       def complyOnce(
         channelName: String,
-        commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+        commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
       
-      @JSImport("backbone", "Radio.listenTo")
-      @js.native
-      def listenTo(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
+      @scala.inline
+      def listenTo(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenTo")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.listenToOnce")
-      @js.native
-      def listenToOnce(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
+      @scala.inline
+      def listenToOnce(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenToOnce")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.log")
-      @js.native
-      def log(channelName: String, eventName: String, args: js.Any*): Unit = js.native
+      @scala.inline
+      def log(channelName: String, eventName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(
-        channelName: String,
-        eventName: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Any
-      ): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function, context: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.off")
-      @js.native
-      def off(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+      @scala.inline
+      def off(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: Unit, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def off(channelName: String, eventName: Unit, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       // Proxy functions for Backbone.Events
-      @JSImport("backbone", "Radio.on")
-      @js.native
-      def on(channelName: String, eventName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.on")
-      @js.native
-      def on(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.on")
-      @js.native
-      def on(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.on")
-      @js.native
-      def on(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+      @scala.inline
+      def on(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def on(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def on(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def on(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.once")
-      @js.native
-      def once(channelName: String, events: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.once")
-      @js.native
-      def once(channelName: String, events: String, callback: js.Function, context: js.Any): js.Any = js.native
+      @scala.inline
+      def once(channelName: String, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(channelName.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def once(channelName: String, events: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(channelName.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.reply")
-      @js.native
-      def reply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.reply")
-      @js.native
+      @scala.inline
+      def reply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
       def reply(
         channelName: String,
-        commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+        commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.reply")
-      @js.native
-      def reply(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.reply")
-      @js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def reply(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
       def reply(
         channelName: String,
         requestName: String,
-        callback: js.Function1[/* repeated */ js.Any, _],
+        callback: js.Function1[/* repeated */ js.Any, js.Any],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
       
-      @JSImport("backbone", "Radio.replyOnce")
-      @js.native
-      def replyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.replyOnce")
-      @js.native
+      @scala.inline
+      def replyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
       def replyOnce(
         channelName: String,
-        commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+        commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.replyOnce")
-      @js.native
-      def replyOnce(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.replyOnce")
-      @js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def replyOnce(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
       def replyOnce(
         channelName: String,
         requestName: String,
-        callback: js.Function1[/* repeated */ js.Any, _],
+        callback: js.Function1[/* repeated */ js.Any, js.Any],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
       
       // Proxy functions for Requests
-      @JSImport("backbone", "Radio.request")
-      @js.native
-      def request(channelName: String, requestName: String, args: js.Any*): js.Any = js.native
+      @scala.inline
+      def request(channelName: String, requestName: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.Function1[/* repeated */ js.Any, Unit]
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.Function1[/* repeated */ js.Any, Unit],
-        context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(channelName: String, commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
-      def stopComplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      @JSImport("backbone", "Radio.stopComplying")
-      @js.native
+      @scala.inline
+      def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = ^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
       def stopComplying(
         channelName: String,
         commandName: String,
         callback: js.Function1[/* repeated */ js.Any, Unit],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-      
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(channelName: String, commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(channelName: String, commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(
         channelName: String,
-        `object`: js.UndefOr[scala.Nothing],
-        events: js.UndefOr[scala.Nothing],
-        callback: js.Function
-      ): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.UndefOr[scala.Nothing], events: String): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.UndefOr[scala.Nothing], events: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.Any, events: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.Any, events: String): js.Any = js.native
-      @JSImport("backbone", "Radio.stopListening")
-      @js.native
-      def stopListening(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
-      
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
+        commandName: Unit,
+        callback: js.Function1[/* repeated */ js.Any, Unit],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.Function1[/* repeated */ js.Any, _]
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(
-        channelName: String,
-        commandName: js.UndefOr[scala.Nothing],
-        callback: js.Function1[/* repeated */ js.Any, _],
-        context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(channelName: String, commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
-      def stopReplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      @JSImport("backbone", "Radio.stopReplying")
-      @js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      @scala.inline
+      def stopComplying(channelName: String, commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+      
+      @scala.inline
+      def stopListening(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: js.Any, events: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: js.Any, events: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: Unit, events: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: Unit, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def stopListening(channelName: String, `object`: Unit, events: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
+      @scala.inline
+      def stopReplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = ^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
       def stopReplying(
         channelName: String,
         commandName: String,
-        callback: js.Function1[/* repeated */ js.Any, _],
+        callback: js.Function1[/* repeated */ js.Any, js.Any],
         context: js.Any
-      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-      
-      @JSImport("backbone", "Radio.trigger")
-      @js.native
-      def trigger(channelName: String, eventName: String, args: js.Any*): js.Any = js.native
-      
-      @JSImport("backbone", "Radio.tuneIn")
-      @js.native
-      def tuneIn(channelName: String): Radio = js.native
-      
-      @JSImport("backbone", "Radio.tuneOut")
-      @js.native
-      def tuneOut(channelName: String): Radio = js.native
-      
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(channelName: String, commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(channelName: String, commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(
         channelName: String,
-        eventName: js.UndefOr[scala.Nothing],
-        callback: js.UndefOr[scala.Nothing],
+        commandName: Unit,
+        callback: js.Function1[/* repeated */ js.Any, js.Any],
         context: js.Any
-      ): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function, context: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: String): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-      @JSImport("backbone", "Radio.unbind")
-      @js.native
-      def unbind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+      ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      @scala.inline
+      def stopReplying(channelName: String, commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+      
+      @scala.inline
+      def trigger(channelName: String, eventName: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      
+      @scala.inline
+      def tuneIn(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneIn")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
+      
+      @scala.inline
+      def tuneOut(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneOut")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
+      
+      @scala.inline
+      def unbind(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: Unit, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+      @scala.inline
+      def unbind(channelName: String, eventName: Unit, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
       @scala.inline
       implicit class RadioMutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
@@ -566,335 +442,229 @@ object mod {
     }
   }
   
-  @JSImport("backbone.radio", "bind")
-  @js.native
-  def bind(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "bind")
-  @js.native
-  def bind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+  @scala.inline
+  def bind(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def bind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "channel")
-  @js.native
-  def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = js.native
+  @scala.inline
+  def channel(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Channel_]
   
   // Proxy functions for Commands
-  @JSImport("backbone.radio", "command")
-  @js.native
-  def command(channelName: String, commandName: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def command(channelName: String, commandName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("backbone.radio", "comply")
-  @js.native
-  def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "comply")
-  @js.native
+  @scala.inline
+  def comply(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
   def comply(
     channelName: String,
     commandName: String,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "comply")
-  @js.native
-  def comply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "comply")
-  @js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def comply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
   def comply(
     channelName: String,
-    commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+    commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("comply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
   
-  @JSImport("backbone.radio", "complyOnce")
-  @js.native
-  def complyOnce(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "complyOnce")
-  @js.native
+  @scala.inline
+  def complyOnce(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
   def complyOnce(
     channelName: String,
     commandName: String,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "complyOnce")
-  @js.native
-  def complyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "complyOnce")
-  @js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def complyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
   def complyOnce(
     channelName: String,
-    commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+    commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("complyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
   
-  @JSImport("backbone.radio", "listenTo")
-  @js.native
-  def listenTo(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
+  @scala.inline
+  def listenTo(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenTo")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "listenToOnce")
-  @js.native
-  def listenToOnce(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
+  @scala.inline
+  def listenToOnce(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("listenToOnce")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "log")
-  @js.native
-  def log(channelName: String, eventName: String, args: js.Any*): Unit = js.native
+  @scala.inline
+  def log(channelName: String, eventName: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(
-    channelName: String,
-    eventName: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function, context: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: String): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "off")
-  @js.native
-  def off(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+  @scala.inline
+  def off(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: Unit, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def off(channelName: String, eventName: Unit, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   // Proxy functions for Backbone.Events
-  @JSImport("backbone.radio", "on")
-  @js.native
-  def on(channelName: String, eventName: String): js.Any = js.native
-  @JSImport("backbone.radio", "on")
-  @js.native
-  def on(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "on")
-  @js.native
-  def on(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "on")
-  @js.native
-  def on(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+  @scala.inline
+  def on(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def on(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def on(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def on(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "once")
-  @js.native
-  def once(channelName: String, events: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "once")
-  @js.native
-  def once(channelName: String, events: String, callback: js.Function, context: js.Any): js.Any = js.native
+  @scala.inline
+  def once(channelName: String, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(channelName.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def once(channelName: String, events: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(channelName.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "reply")
-  @js.native
-  def reply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "reply")
-  @js.native
+  @scala.inline
+  def reply(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
   def reply(
     channelName: String,
-    commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+    commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "reply")
-  @js.native
-  def reply(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "reply")
-  @js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def reply(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
   def reply(
     channelName: String,
     requestName: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("reply")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
   
-  @JSImport("backbone.radio", "replyOnce")
-  @js.native
-  def replyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "replyOnce")
-  @js.native
+  @scala.inline
+  def replyOnce(channelName: String, commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
   def replyOnce(
     channelName: String,
-    commands: StringDictionary[js.Function1[/* repeated */ js.Any, _]],
+    commands: StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "replyOnce")
-  @js.native
-  def replyOnce(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "replyOnce")
-  @js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], commands.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def replyOnce(channelName: String, requestName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
   def replyOnce(
     channelName: String,
     requestName: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("replyOnce")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
   
   // Proxy functions for Requests
-  @JSImport("backbone.radio", "request")
-  @js.native
-  def request(channelName: String, requestName: String, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def request(channelName: String, requestName: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(channelName.asInstanceOf[js.Any], requestName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
-    context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, Unit]
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, Unit],
-    context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(channelName: String, commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
-  def stopComplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  @JSImport("backbone.radio", "stopComplying")
-  @js.native
+  @scala.inline
+  def stopComplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = ^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
   def stopComplying(
     channelName: String,
     commandName: String,
     callback: js.Function1[/* repeated */ js.Any, Unit],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = js.native
-  
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(channelName: String, commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(channelName: String, commandName: Unit, callback: js.Function1[/* repeated */ js.Any, Unit]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(
     channelName: String,
-    `object`: js.UndefOr[scala.Nothing],
-    events: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.UndefOr[scala.Nothing], events: String): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.UndefOr[scala.Nothing], events: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.Any, events: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.Any, events: String): js.Any = js.native
-  @JSImport("backbone.radio", "stopListening")
-  @js.native
-  def stopListening(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = js.native
-  
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
+    commandName: Unit,
+    callback: js.Function1[/* repeated */ js.Any, Unit],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _]
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(
-    channelName: String,
-    commandName: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* repeated */ js.Any, _],
-    context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(channelName: String, commandName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
-  def stopReplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, _]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  @JSImport("backbone.radio", "stopReplying")
-  @js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  @scala.inline
+  def stopComplying(channelName: String, commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands = (^.asInstanceOf[js.Dynamic].applyDynamic("stopComplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Commands]
+  
+  @scala.inline
+  def stopListening(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: js.Any, events: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: js.Any, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: js.Any, events: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: Unit, events: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: Unit, events: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def stopListening(channelName: String, `object`: Unit, events: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("stopListening")(channelName.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], events.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def stopReplying(channelName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = ^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any]).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(channelName: String, commandName: String): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(channelName: String, commandName: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
   def stopReplying(
     channelName: String,
     commandName: String,
-    callback: js.Function1[/* repeated */ js.Any, _],
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     context: js.Any
-  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = js.native
-  
-  @JSImport("backbone.radio", "trigger")
-  @js.native
-  def trigger(channelName: String, eventName: String, args: js.Any*): js.Any = js.native
-  
-  @JSImport("backbone.radio", "tuneIn")
-  @js.native
-  def tuneIn(channelName: String): Radio = js.native
-  
-  @JSImport("backbone.radio", "tuneOut")
-  @js.native
-  def tuneOut(channelName: String): Radio = js.native
-  
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(channelName: String, commandName: String, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(channelName: String, commandName: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(
     channelName: String,
-    eventName: js.UndefOr[scala.Nothing],
-    callback: js.UndefOr[scala.Nothing],
+    commandName: Unit,
+    callback: js.Function1[/* repeated */ js.Any, js.Any],
     context: js.Any
-  ): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: js.UndefOr[scala.Nothing], callback: js.Function, context: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: String): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: String, callback: js.Function): js.Any = js.native
-  @JSImport("backbone.radio", "unbind")
-  @js.native
-  def unbind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = js.native
+  ): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  @scala.inline
+  def stopReplying(channelName: String, commandName: Unit, callback: Unit, context: js.Any): typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests = (^.asInstanceOf[js.Dynamic].applyDynamic("stopReplying")(channelName.asInstanceOf[js.Any], commandName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.backboneRadio.mod.backboneAugmentingMod.Radio.Requests]
+  
+  @scala.inline
+  def trigger(channelName: String, eventName: String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("trigger")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def tuneIn(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneIn")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
+  
+  @scala.inline
+  def tuneOut(channelName: String): Radio = ^.asInstanceOf[js.Dynamic].applyDynamic("tuneOut")(channelName.asInstanceOf[js.Any]).asInstanceOf[Radio]
+  
+  @scala.inline
+  def unbind(channelName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: String, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: String, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: String, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: Unit, callback: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: Unit, callback: js.Function, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def unbind(channelName: String, eventName: Unit, callback: Unit, context: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(channelName.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

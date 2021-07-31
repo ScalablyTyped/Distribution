@@ -2,10 +2,8 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITimepickerConfig extends StObject {
   
   /**
@@ -13,77 +11,77 @@ trait ITimepickerConfig extends StObject {
     *
     * @default true
     */
-  var arrowkeys: js.UndefOr[Boolean] = js.native
+  var arrowkeys: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of hours to increase or decrease when using a button.
     *
     * @default 1
     */
-  var hourStep: js.UndefOr[Double] = js.native
+  var hourStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Meridian labels based on locale. To override you must supply an array like ['AM', 'PM'].
     *
     * @default null
     */
-  var meridians: js.UndefOr[js.Array[String]] = js.native
+  var meridians: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Number of minutes to increase or decrease when using a button.
     *
     * @default 1
     */
-  var minuteStep: js.UndefOr[Double] = js.native
+  var minuteStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the user can scroll inside the hours & minutes input to increase or decrease it's values.
     *
     * @default true
     */
-  var mousewheel: js.UndefOr[Boolean] = js.native
+  var mousewheel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the user can type inside the hours & minutes input.
     *
     * @default false
     */
-  var readonlyInput: js.UndefOr[Boolean] = js.native
+  var readonlyInput: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of seconds to increase or decrease when using a button.
     *
     * @default 1
     */
-  var secondStep: js.UndefOr[Double] = js.native
+  var secondStep: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to display 12H or 24H mode.
     *
     * @default true
     */
-  var showMeridian: js.UndefOr[Boolean] = js.native
+  var showMeridian: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Show seconds input.
     *
     * @default false
     */
-  var showSeconds: js.UndefOr[Boolean] = js.native
+  var showSeconds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows spinner arrows above and below the inputs.
     *
     * @default true
     */
-  var showSpinners: js.UndefOr[Boolean] = js.native
+  var showSpinners: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Add the ability to override the template used on the component.
     *
     * @default 'uib/template/timepicker/timepicker.html'
     */
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
 }
 object ITimepickerConfig {
   

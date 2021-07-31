@@ -2,16 +2,14 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountAssignmentCreationStatusResponse extends StObject {
   
   /**
     * The status object for the account assignment creation operation.
     */
-  var AccountAssignmentCreationStatus: js.UndefOr[AccountAssignmentOperationStatus] = js.native
+  var AccountAssignmentCreationStatus: js.UndefOr[AccountAssignmentOperationStatus] = js.undefined
 }
 object DescribeAccountAssignmentCreationStatusResponse {
   

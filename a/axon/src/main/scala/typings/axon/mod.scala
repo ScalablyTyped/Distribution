@@ -9,30 +9,33 @@ import typings.node.netMod.Socket
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("axon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("axon", "PubEmitterSocket")
   @js.native
   class PubEmitterSocket () extends StObject {
     
     def bind(port: ConnectionPort): Socket_ = js.native
-    def bind(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: String): Socket_ = js.native
     def bind(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def bind(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def close(): Unit = js.native
     
     def connect(port: ConnectionPort): Socket_ = js.native
-    def connect(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: String): Socket_ = js.native
     def connect(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def connect(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def send(args: js.Any*): PubSocket = js.native
     
@@ -96,24 +99,24 @@ object mod {
     def address(): js.UndefOr[Address] = js.native
     
     def bind(port: ConnectionPort): Socket_ = js.native
-    def bind(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: String): Socket_ = js.native
     def bind(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def bind(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def close(): Unit = js.native
     
-    def closeServer(fn: js.Function0[_]): Unit = js.native
+    def closeServer(fn: js.Function0[js.Any]): Unit = js.native
     
     def closeSockets(): Unit = js.native
     
     def connect(port: ConnectionPort): Socket_ = js.native
-    def connect(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: String): Socket_ = js.native
     def connect(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def connect(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def disable(name: String): Socket_ = js.native
     
@@ -138,7 +141,7 @@ object mod {
     
     def set(name: String, `val`: js.Any): Socket_ = js.native
     
-    def use(plugin: js.Function1[/* socket */ this.type, _]): Socket_ = js.native
+    def use(plugin: js.Function1[/* socket */ this.type, js.Any]): Socket_ = js.native
   }
   
   @JSImport("axon", "SubEmitterSocket")
@@ -146,20 +149,20 @@ object mod {
   class SubEmitterSocket () extends StObject {
     
     def bind(port: ConnectionPort): Socket_ = js.native
-    def bind(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: String): Socket_ = js.native
     def bind(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def bind(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def bind(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def close(): Unit = js.native
     
     def connect(port: ConnectionPort): Socket_ = js.native
-    def connect(port: ConnectionPort, host: js.UndefOr[scala.Nothing], fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: String): Socket_ = js.native
     def connect(port: ConnectionPort, host: String, fn: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit]): Socket_ = js.native
     def connect(port: ConnectionPort, host: js.Function0[Unit], fn: js.Function0[Unit]): Socket_ = js.native
+    def connect(port: ConnectionPort, host: Unit, fn: js.Function0[Unit]): Socket_ = js.native
     
     def off(event: String): SubEmitterSocket = js.native
     
@@ -191,12 +194,10 @@ object mod {
     def unsubscribe(re: RegExp): Unit = js.native
   }
   
-  @JSImport("axon", "socket")
-  @js.native
-  def socket(`type`: String): Socket_ = js.native
-  @JSImport("axon", "socket")
-  @js.native
-  def socket(`type`: String, options: js.Any): Socket_ = js.native
+  @scala.inline
+  def socket(`type`: String): Socket_ = ^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any]).asInstanceOf[Socket_]
+  @scala.inline
+  def socket(`type`: String, options: js.Any): Socket_ = (^.asInstanceOf[js.Dynamic].applyDynamic("socket")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Socket_]
   
   type ConnectionPort = Double | String | Hostname
 }

@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for a single offline file annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse extends StObject {
   
   /**
     * The output location and metadata from AsyncAnnotateFileRequest.
     */
-  var outputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1OutputConfig] = js.native
+  var outputConfig: js.UndefOr[SchemaGoogleCloudVisionV1p3beta1OutputConfig] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1AsyncAnnotateFileResponse {
   

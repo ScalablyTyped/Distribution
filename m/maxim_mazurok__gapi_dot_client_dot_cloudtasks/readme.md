@@ -10,9 +10,9 @@ TypeScript typings for Cloud Tasks API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudtasks |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 349 |
+| # downloads        | 1913 |
 | # stars            | 0 |
 
 ## Links

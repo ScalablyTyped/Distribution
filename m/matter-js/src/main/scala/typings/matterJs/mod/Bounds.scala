@@ -2,7 +2,6 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Bounds")
@@ -16,6 +15,10 @@ class Bounds () extends StObject {
 /* static members */
 object Bounds {
   
+  @JSImport("matter-js", "Bounds")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns true if the bounds contains the given point.
     * @method contains
@@ -23,9 +26,8 @@ object Bounds {
     * @param {vector} point
     * @return {boolean} True if the bounds contain the point, otherwise false
     */
-  @JSImport("matter-js", "Bounds.contains")
-  @js.native
-  def contains(bounds: Bounds, point: Vector): Boolean = js.native
+  @scala.inline
+  def contains(bounds: Bounds, point: Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(bounds.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Creates a new axis-aligned bounding box (AABB) for the given vertices.
@@ -33,9 +35,8 @@ object Bounds {
     * @param {vertices} vertices
     * @return {bounds} A new bounds object
     */
-  @JSImport("matter-js", "Bounds.create")
-  @js.native
-  def create(vertices: Vertices): Bounds = js.native
+  @scala.inline
+  def create(vertices: Vertices): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(vertices.asInstanceOf[js.Any]).asInstanceOf[Bounds]
   
   /**
     * Returns true if the two bounds intersect.
@@ -44,9 +45,8 @@ object Bounds {
     * @param {bounds} boundsB
     * @return {boolean} True if the bounds overlap, otherwise false
     */
-  @JSImport("matter-js", "Bounds.overlaps")
-  @js.native
-  def overlaps(boundsA: Bounds, boundsB: Bounds): Boolean = js.native
+  @scala.inline
+  def overlaps(boundsA: Bounds, boundsB: Bounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("overlaps")(boundsA.asInstanceOf[js.Any], boundsB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Shifts the bounds to the given position.
@@ -54,9 +54,8 @@ object Bounds {
     * @param {bounds} bounds
     * @param {vector} position
     */
-  @JSImport("matter-js", "Bounds.shift")
-  @js.native
-  def shift(bounds: Bounds, position: Vector): Unit = js.native
+  @scala.inline
+  def shift(bounds: Bounds, position: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(bounds.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Translates the bounds by the given vector.
@@ -64,9 +63,8 @@ object Bounds {
     * @param {bounds} bounds
     * @param {vector} vector
     */
-  @JSImport("matter-js", "Bounds.translate")
-  @js.native
-  def translate(bounds: Bounds, vector: Vector): Unit = js.native
+  @scala.inline
+  def translate(bounds: Bounds, vector: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(bounds.asInstanceOf[js.Any], vector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Updates bounds using the given vertices and extends the bounds given a velocity.
@@ -75,7 +73,6 @@ object Bounds {
     * @param {vertices} vertices
     * @param {vector} velocity
     */
-  @JSImport("matter-js", "Bounds.update")
-  @js.native
-  def update(bounds: Bounds, vertices: Vertices, velocity: Vector): Unit = js.native
+  @scala.inline
+  def update(bounds: Bounds, vertices: Vertices, velocity: Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(bounds.asInstanceOf[js.Any], vertices.asInstanceOf[js.Any], velocity.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

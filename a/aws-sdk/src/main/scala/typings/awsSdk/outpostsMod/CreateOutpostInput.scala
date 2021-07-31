@@ -2,21 +2,19 @@ package typings.awsSdk.outpostsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOutpostInput extends StObject {
   
-  var AvailabilityZone: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZone] = js.native
+  var AvailabilityZone: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZone] = js.undefined
   
-  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZoneId] = js.native
+  var AvailabilityZoneId: js.UndefOr[typings.awsSdk.outpostsMod.AvailabilityZoneId] = js.undefined
   
-  var Description: js.UndefOr[OutpostDescription] = js.native
+  var Description: js.UndefOr[OutpostDescription] = js.undefined
   
-  var Name: OutpostName = js.native
+  var Name: OutpostName
   
-  var SiteId: typings.awsSdk.outpostsMod.SiteId = js.native
+  var SiteId: typings.awsSdk.outpostsMod.SiteId
 }
 object CreateOutpostInput {
   

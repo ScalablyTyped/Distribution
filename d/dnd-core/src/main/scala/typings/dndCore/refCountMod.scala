@@ -3,17 +3,18 @@ package typings.dndCore
 import typings.dndCore.interfacesMod.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refCountMod {
   
-  @JSImport("dnd-core/lib/reducers/refCount", "reduce")
+  @JSImport("dnd-core/lib/reducers/refCount", JSImport.Namespace)
   @js.native
-  def reduce(state: js.UndefOr[scala.Nothing], action: Action[_]): State = js.native
-  @JSImport("dnd-core/lib/reducers/refCount", "reduce")
-  @js.native
-  def reduce(state: Double, action: Action[_]): State = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reduce(state: Double, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
+  def reduce(state: Unit, action: Action[js.Any]): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
   
   type State = Double
 }

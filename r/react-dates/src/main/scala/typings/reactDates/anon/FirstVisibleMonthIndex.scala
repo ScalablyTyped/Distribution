@@ -8,35 +8,33 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstVisibleMonthIndex extends StObject {
   
-  var firstVisibleMonthIndex: js.UndefOr[Double] = js.native
+  var firstVisibleMonthIndex: js.UndefOr[Double] = js.undefined
   
-  var initialMonth: js.UndefOr[Moment] = js.native
+  var initialMonth: js.UndefOr[Moment] = js.undefined
   
-  var isAnimating: js.UndefOr[Boolean] = js.native
+  var isAnimating: js.UndefOr[Boolean] = js.undefined
   
-  var isRTL: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   
-  var modifiers: js.UndefOr[Record[String, Record[String, ModifiersShape]]] = js.native
+  var modifiers: js.UndefOr[Record[String, Record[String, ModifiersShape]]] = js.undefined
   
-  var numberOfMonths: js.UndefOr[Double] = js.native
+  var numberOfMonths: js.UndefOr[Double] = js.undefined
   
-  var onMonthChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.native
+  var onMonthChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.undefined
   
-  var onMonthTransitionEnd: js.UndefOr[js.Function1[/* event */ js.UndefOr[TransitionEvent[HTMLDivElement]], Unit]] = js.native
+  var onMonthTransitionEnd: js.UndefOr[js.Function1[/* event */ js.UndefOr[TransitionEvent[HTMLDivElement]], Unit]] = js.undefined
   
-  var onYearChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.native
+  var onYearChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.undefined
   
-  var orientation: js.UndefOr[ScrollableOrientationShape] = js.native
+  var orientation: js.UndefOr[ScrollableOrientationShape] = js.undefined
   
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
-  var translationValue: js.UndefOr[Double | Null] = js.native
+  var translationValue: js.UndefOr[Double | Null] = js.undefined
 }
 object FirstVisibleMonthIndex {
   

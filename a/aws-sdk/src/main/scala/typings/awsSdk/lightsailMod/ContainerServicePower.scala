@@ -2,41 +2,39 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerServicePower extends StObject {
   
   /**
     * The number of vCPUs included in the power.
     */
-  var cpuCount: js.UndefOr[float] = js.native
+  var cpuCount: js.UndefOr[float] = js.undefined
   
   /**
     * A Boolean value indicating whether the power is active and can be specified for container services.
     */
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The friendly name of the power (e.g., nano).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the power (e.g., nano-1).
     */
-  var powerId: js.UndefOr[String] = js.native
+  var powerId: js.UndefOr[String] = js.undefined
   
   /**
     * The monthly price of the power in USD.
     */
-  var price: js.UndefOr[float] = js.native
+  var price: js.UndefOr[float] = js.undefined
   
   /**
     * The amount of RAM (in GB) of the power.
     */
-  var ramSizeInGb: js.UndefOr[float] = js.native
+  var ramSizeInGb: js.UndefOr[float] = js.undefined
 }
 object ContainerServicePower {
   

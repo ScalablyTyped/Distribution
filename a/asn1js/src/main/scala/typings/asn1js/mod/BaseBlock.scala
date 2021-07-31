@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("asn1js", "BaseBlock")
 @js.native
 class BaseBlock[T /* <: LocalValueBlock */] () extends LocalBaseBlock {
   def this(parameters: BaseBlockParams) = this()
-  def this(parameters: js.UndefOr[scala.Nothing], valueBlockType: Instantiable0[LocalValueBlock]) = this()
+  def this(parameters: Unit, valueBlockType: Instantiable0[LocalValueBlock]) = this()
   def this(parameters: BaseBlockParams, valueBlockType: Instantiable0[LocalValueBlock]) = this()
   
   def fromBER(inputBuffer: ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native

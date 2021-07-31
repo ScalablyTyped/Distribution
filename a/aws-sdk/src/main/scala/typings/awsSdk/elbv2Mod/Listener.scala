@@ -2,51 +2,49 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
   /**
     * [TLS listener] The name of the Application-Layer Protocol Negotiation (ALPN) policy.
     */
-  var AlpnPolicy: js.UndefOr[AlpnPolicyName] = js.native
+  var AlpnPolicy: js.UndefOr[AlpnPolicyName] = js.undefined
   
   /**
     * [HTTPS or TLS listener] The default certificate for the listener.
     */
-  var Certificates: js.UndefOr[CertificateList] = js.native
+  var Certificates: js.UndefOr[CertificateList] = js.undefined
   
   /**
     * The default actions for the listener.
     */
-  var DefaultActions: js.UndefOr[Actions] = js.native
+  var DefaultActions: js.UndefOr[Actions] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the listener.
     */
-  var ListenerArn: js.UndefOr[typings.awsSdk.elbv2Mod.ListenerArn] = js.native
+  var ListenerArn: js.UndefOr[typings.awsSdk.elbv2Mod.ListenerArn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArn] = js.native
+  var LoadBalancerArn: js.UndefOr[typings.awsSdk.elbv2Mod.LoadBalancerArn] = js.undefined
   
   /**
     * The port on which the load balancer is listening.
     */
-  var Port: js.UndefOr[typings.awsSdk.elbv2Mod.Port] = js.native
+  var Port: js.UndefOr[typings.awsSdk.elbv2Mod.Port] = js.undefined
   
   /**
     * The protocol for connections from clients to the load balancer.
     */
-  var Protocol: js.UndefOr[ProtocolEnum] = js.native
+  var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
   
   /**
     * [HTTPS or TLS listener] The security policy that defines which protocols and ciphers are supported.
     */
-  var SslPolicy: js.UndefOr[SslPolicyName] = js.native
+  var SslPolicy: js.UndefOr[SslPolicyName] = js.undefined
 }
 object Listener {
   

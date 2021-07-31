@@ -2,35 +2,33 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dead extends StObject {
   
-  var Dead: Boolean = js.native
+  var Dead: Boolean
   
-  var Error: String = js.native
+  var Error: String
   
-  var ExitCode: Double = js.native
+  var ExitCode: Double
   
-  var FinishedAt: String = js.native
+  var FinishedAt: String
   
-  var Health: js.UndefOr[FailingStreak] = js.native
+  var Health: js.UndefOr[FailingStreak] = js.undefined
   
-  var OOMKilled: Boolean = js.native
+  var OOMKilled: Boolean
   
-  var Paused: Boolean = js.native
+  var Paused: Boolean
   
-  var Pid: Double = js.native
+  var Pid: Double
   
-  var Restarting: Boolean = js.native
+  var Restarting: Boolean
   
-  var Running: Boolean = js.native
+  var Running: Boolean
   
-  var StartedAt: String = js.native
+  var StartedAt: String
   
-  var Status: String = js.native
+  var Status: String
 }
 object Dead {
   

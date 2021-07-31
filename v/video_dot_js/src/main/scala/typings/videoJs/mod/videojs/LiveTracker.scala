@@ -2,7 +2,6 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Internally this component keeps track of the live current time through a function that runs on a 30ms interval.
   */
 @js.native
-trait LiveTracker extends Component {
+trait LiveTracker
+  extends StObject
+     with Component {
   
   /**
     * Determines if the currentTime of the player is close enough to live to be considered live.

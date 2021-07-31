@@ -2,20 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAndroidStoreApp extends ManagedApp {
+trait ManagedAndroidStoreApp
+  extends StObject
+     with ManagedApp {
   
   // The Android AppStoreUrl.
-  var appStoreUrl: js.UndefOr[String] = js.native
+  var appStoreUrl: js.UndefOr[String] = js.undefined
   
   // The value for the minimum supported operating system.
-  var minimumSupportedOperatingSystem: js.UndefOr[AndroidMinimumOperatingSystem] = js.native
+  var minimumSupportedOperatingSystem: js.UndefOr[AndroidMinimumOperatingSystem] = js.undefined
   
   // The app's package ID.
-  var packageId: js.UndefOr[NullableOption[String]] = js.native
+  var packageId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAndroidStoreApp {
   

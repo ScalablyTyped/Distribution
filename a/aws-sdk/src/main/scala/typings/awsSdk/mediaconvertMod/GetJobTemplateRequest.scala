@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobTemplateRequest extends StObject {
   
   /**
     * The name of the job template.
     */
-  var Name: string = js.native
+  var Name: string
 }
 object GetJobTemplateRequest {
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type supersedes {@link XMethodParameter} , which only supports parameters of interface methods (which cannot have rest parameters).
   * @since OOo 2.0
   */
-@js.native
-trait XParameter extends XMethodParameter {
+trait XParameter
+  extends StObject
+     with XMethodParameter {
   
   /**
     * Returns whether this is a rest parameter.
@@ -23,7 +23,7 @@ trait XParameter extends XMethodParameter {
     * Currently, only service constructors can have rest parameters, and those rest parameters must be in parameters of type `any` .
     * @returns `TRUE` if and only if this parameter is a rest parameter
     */
-  def isRestParameter(): Boolean = js.native
+  def isRestParameter(): Boolean
 }
 object XParameter {
   

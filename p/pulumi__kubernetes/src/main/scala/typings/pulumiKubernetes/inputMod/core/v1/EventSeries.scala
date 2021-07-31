@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EventSeries contain information on series of events, i.e. thing that was/is happening continuously for some time.
   */
-@js.native
 trait EventSeries extends StObject {
   
   /**
     * Number of occurrences in this series up to the last heartbeat time
     */
-  var count: js.UndefOr[Input[Double]] = js.native
+  var count: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Time of the last occurrence observed
     */
-  var lastObservedTime: js.UndefOr[Input[String]] = js.native
+  var lastObservedTime: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * State of this Series: Ongoing or Finished Deprecated. Planned removal for 1.18
     */
-  var state: js.UndefOr[Input[String]] = js.native
+  var state: js.UndefOr[Input[String]] = js.undefined
 }
 object EventSeries {
   

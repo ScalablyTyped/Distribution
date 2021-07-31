@@ -2,7 +2,6 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,7 +58,7 @@ trait InternetHeaders extends StObject {
   def getAsync(names: js.Array[String]): Unit = js.native
   def getAsync(
     names: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
   ): Unit = js.native
   def getAsync(names: js.Array[String], options: AsyncContextOptions): Unit = js.native
@@ -91,7 +90,7 @@ trait InternetHeaders extends StObject {
   def removeAsync(names: js.Array[String]): Unit = js.native
   def removeAsync(
     names: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
   ): Unit = js.native
   def removeAsync(names: js.Array[String], options: AsyncContextOptions): Unit = js.native
@@ -127,7 +126,7 @@ trait InternetHeaders extends StObject {
   def setAsync(headers: js.Object): Unit = js.native
   def setAsync(
     headers: js.Object,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(headers: js.Object, options: AsyncContextOptions): Unit = js.native

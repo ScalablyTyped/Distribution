@@ -4,7 +4,6 @@ import typings.fastCsvFormat.formatterOptionsMod.FormatterOptions
 import typings.fastCsvFormat.typesMod.Row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {

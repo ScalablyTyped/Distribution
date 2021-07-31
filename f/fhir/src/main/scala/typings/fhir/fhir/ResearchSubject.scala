@@ -2,70 +2,70 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Investigation to increase healthcare-related patient-independent knowledge
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ResearchSubject extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ResearchSubject
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'actualArm'.
     */
-  var _actualArm: js.UndefOr[Element] = js.native
+  var _actualArm: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'assignedArm'.
     */
-  var _assignedArm: js.UndefOr[Element] = js.native
+  var _assignedArm: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * What path was followed
     */
-  var actualArm: js.UndefOr[String] = js.native
+  var actualArm: js.UndefOr[String] = js.undefined
   
   /**
     * What path should be followed
     */
-  var assignedArm: js.UndefOr[String] = js.native
+  var assignedArm: js.UndefOr[String] = js.undefined
   
   /**
     * Agreement to participate in study
     */
-  var consent: js.UndefOr[Reference] = js.native
+  var consent: js.UndefOr[Reference] = js.undefined
   
   /**
     * Business Identifier for research subject
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Who is part of study
     */
-  var individual: Reference = js.native
+  var individual: Reference
   
   /**
     * Start and end of participation
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * candidate | enrolled | active | suspended | withdrawn | completed
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Study subject is part of
     */
-  var study: Reference = js.native
+  var study: Reference
 }
 object ResearchSubject {
   

@@ -10,18 +10,20 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStyleMod {
+  
+  @JSImport("@ant-design/react-native/lib/style", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/react-native/lib/style", "ThemeContext")
   @js.native
   val ThemeContext: Context[Actionsheetitemfontsize] = js.native
   
-  @JSImport("@ant-design/react-native/lib/style", "ThemeProvider")
-  @js.native
-  def ThemeProvider(props: ThemeProviderProps): Element = js.native
+  @scala.inline
+  def ThemeProvider(props: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@ant-design/react-native/lib/style", "WithTheme")
   @js.native
@@ -50,218 +52,215 @@ object libStyleMod {
     def defaultProps_=(x: ThemeStyles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@ant-design/react-native/lib/style", "useTheme")
-  @js.native
-  def useTheme(): Actionsheetitemfontsize = js.native
-  @JSImport("@ant-design/react-native/lib/style", "useTheme")
-  @js.native
-  def useTheme(props: UseThemeContextProps): Actionsheetitemfontsize = js.native
+  @scala.inline
+  def useTheme(): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Actionsheetitemfontsize]
+  @scala.inline
+  def useTheme(props: UseThemeContextProps): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")(props.asInstanceOf[js.Any]).asInstanceOf[Actionsheetitemfontsize]
   
   /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/style.Theme> */
-  @js.native
   trait PartialTheme extends StObject {
     
-    var action_sheet_zindex: js.UndefOr[Double] = js.native
+    var action_sheet_zindex: js.UndefOr[Double] = js.undefined
     
-    var actionsheet_item_font_size: js.UndefOr[Double] = js.native
+    var actionsheet_item_font_size: js.UndefOr[Double] = js.undefined
     
-    var actionsheet_item_height: js.UndefOr[Double] = js.native
+    var actionsheet_item_height: js.UndefOr[Double] = js.undefined
     
-    var border_color_base: js.UndefOr[String] = js.native
+    var border_color_base: js.UndefOr[String] = js.undefined
     
-    var border_width_lg: js.UndefOr[Double] = js.native
+    var border_width_lg: js.UndefOr[Double] = js.undefined
     
-    var border_width_md: js.UndefOr[Double] = js.native
+    var border_width_md: js.UndefOr[Double] = js.undefined
     
-    var border_width_sm: js.UndefOr[Double] = js.native
+    var border_width_sm: js.UndefOr[Double] = js.undefined
     
-    var brand_error: js.UndefOr[String] = js.native
+    var brand_error: js.UndefOr[String] = js.undefined
     
-    var brand_important: js.UndefOr[String] = js.native
+    var brand_important: js.UndefOr[String] = js.undefined
     
-    var brand_primary: js.UndefOr[String] = js.native
+    var brand_primary: js.UndefOr[String] = js.undefined
     
-    var brand_primary_tap: js.UndefOr[String] = js.native
+    var brand_primary_tap: js.UndefOr[String] = js.undefined
     
-    var brand_success: js.UndefOr[String] = js.native
+    var brand_success: js.UndefOr[String] = js.undefined
     
-    var brand_wait: js.UndefOr[String] = js.native
+    var brand_wait: js.UndefOr[String] = js.undefined
     
-    var brand_warning: js.UndefOr[String] = js.native
+    var brand_warning: js.UndefOr[String] = js.undefined
     
-    var button_font_size: js.UndefOr[Double] = js.native
+    var button_font_size: js.UndefOr[Double] = js.undefined
     
-    var button_font_size_sm: js.UndefOr[Double] = js.native
+    var button_font_size_sm: js.UndefOr[Double] = js.undefined
     
-    var button_height: js.UndefOr[Double] = js.native
+    var button_height: js.UndefOr[Double] = js.undefined
     
-    var button_height_sm: js.UndefOr[Double] = js.native
+    var button_height_sm: js.UndefOr[Double] = js.undefined
     
-    var color_icon_base: js.UndefOr[String] = js.native
+    var color_icon_base: js.UndefOr[String] = js.undefined
     
-    var color_link: js.UndefOr[String] = js.native
+    var color_link: js.UndefOr[String] = js.undefined
     
-    var color_text_base: js.UndefOr[String] = js.native
+    var color_text_base: js.UndefOr[String] = js.undefined
     
-    var color_text_base_inverse: js.UndefOr[String] = js.native
+    var color_text_base_inverse: js.UndefOr[String] = js.undefined
     
-    var color_text_caption: js.UndefOr[String] = js.native
+    var color_text_caption: js.UndefOr[String] = js.undefined
     
-    var color_text_disabled: js.UndefOr[String] = js.native
+    var color_text_disabled: js.UndefOr[String] = js.undefined
     
-    var color_text_paragraph: js.UndefOr[String] = js.native
+    var color_text_paragraph: js.UndefOr[String] = js.undefined
     
-    var color_text_placeholder: js.UndefOr[String] = js.native
+    var color_text_placeholder: js.UndefOr[String] = js.undefined
     
-    var color_text_secondary: js.UndefOr[String] = js.native
+    var color_text_secondary: js.UndefOr[String] = js.undefined
     
-    var ease_in_out_quint: js.UndefOr[String] = js.native
+    var ease_in_out_quint: js.UndefOr[String] = js.undefined
     
-    var fill_base: js.UndefOr[String] = js.native
+    var fill_base: js.UndefOr[String] = js.undefined
     
-    var fill_body: js.UndefOr[String] = js.native
+    var fill_body: js.UndefOr[String] = js.undefined
     
-    var fill_disabled: js.UndefOr[String] = js.native
+    var fill_disabled: js.UndefOr[String] = js.undefined
     
-    var fill_grey: js.UndefOr[String] = js.native
+    var fill_grey: js.UndefOr[String] = js.undefined
     
-    var fill_mask: js.UndefOr[String] = js.native
+    var fill_mask: js.UndefOr[String] = js.undefined
     
-    var fill_tap: js.UndefOr[String] = js.native
+    var fill_tap: js.UndefOr[String] = js.undefined
     
-    var font_size_base: js.UndefOr[Double] = js.native
+    var font_size_base: js.UndefOr[Double] = js.undefined
     
-    var font_size_caption: js.UndefOr[Double] = js.native
+    var font_size_caption: js.UndefOr[Double] = js.undefined
     
-    var font_size_caption_sm: js.UndefOr[Double] = js.native
+    var font_size_caption_sm: js.UndefOr[Double] = js.undefined
     
-    var font_size_heading: js.UndefOr[Double] = js.native
+    var font_size_heading: js.UndefOr[Double] = js.undefined
     
-    var font_size_icontext: js.UndefOr[Double] = js.native
+    var font_size_icontext: js.UndefOr[Double] = js.undefined
     
-    var font_size_subhead: js.UndefOr[Double] = js.native
+    var font_size_subhead: js.UndefOr[Double] = js.undefined
     
-    var ghost_button_color: js.UndefOr[String] = js.native
+    var ghost_button_color: js.UndefOr[String] = js.undefined
     
-    var ghost_button_fill_tap: js.UndefOr[String] = js.native
+    var ghost_button_fill_tap: js.UndefOr[String] = js.undefined
     
-    var h_spacing_lg: js.UndefOr[Double] = js.native
+    var h_spacing_lg: js.UndefOr[Double] = js.undefined
     
-    var h_spacing_md: js.UndefOr[Double] = js.native
+    var h_spacing_md: js.UndefOr[Double] = js.undefined
     
-    var h_spacing_sm: js.UndefOr[Double] = js.native
+    var h_spacing_sm: js.UndefOr[Double] = js.undefined
     
-    var icon_size_lg: js.UndefOr[Double] = js.native
+    var icon_size_lg: js.UndefOr[Double] = js.undefined
     
-    var icon_size_md: js.UndefOr[Double] = js.native
+    var icon_size_md: js.UndefOr[Double] = js.undefined
     
-    var icon_size_sm: js.UndefOr[Double] = js.native
+    var icon_size_sm: js.UndefOr[Double] = js.undefined
     
-    var icon_size_xs: js.UndefOr[Double] = js.native
+    var icon_size_xs: js.UndefOr[Double] = js.undefined
     
-    var icon_size_xxs: js.UndefOr[Double] = js.native
+    var icon_size_xxs: js.UndefOr[Double] = js.undefined
     
-    var input_color_icon: js.UndefOr[String] = js.native
+    var input_color_icon: js.UndefOr[String] = js.undefined
     
-    var input_color_icon_tap: js.UndefOr[String] = js.native
+    var input_color_icon_tap: js.UndefOr[String] = js.undefined
     
-    var input_font_size: js.UndefOr[Double] = js.native
+    var input_font_size: js.UndefOr[Double] = js.undefined
     
-    var input_label_width: js.UndefOr[Double] = js.native
+    var input_label_width: js.UndefOr[Double] = js.undefined
     
-    var line_height_base: js.UndefOr[Double] = js.native
+    var line_height_base: js.UndefOr[Double] = js.undefined
     
-    var line_height_paragraph: js.UndefOr[Double] = js.native
+    var line_height_paragraph: js.UndefOr[Double] = js.undefined
     
-    var link_button_fill_tap: js.UndefOr[String] = js.native
+    var link_button_fill_tap: js.UndefOr[String] = js.undefined
     
-    var link_button_font_size: js.UndefOr[Double] = js.native
+    var link_button_font_size: js.UndefOr[Double] = js.undefined
     
-    var list_item_height: js.UndefOr[Double] = js.native
+    var list_item_height: js.UndefOr[Double] = js.undefined
     
-    var list_item_height_sm: js.UndefOr[Double] = js.native
+    var list_item_height_sm: js.UndefOr[Double] = js.undefined
     
-    var list_title_height: js.UndefOr[Double] = js.native
+    var list_title_height: js.UndefOr[Double] = js.undefined
     
-    var modal_button_font_size: js.UndefOr[Double] = js.native
+    var modal_button_font_size: js.UndefOr[Double] = js.undefined
     
-    var modal_button_height: js.UndefOr[Double] = js.native
+    var modal_button_height: js.UndefOr[Double] = js.undefined
     
-    var modal_font_size_heading: js.UndefOr[Double] = js.native
+    var modal_font_size_heading: js.UndefOr[Double] = js.undefined
     
-    var modal_zindex: js.UndefOr[Double] = js.native
+    var modal_zindex: js.UndefOr[Double] = js.undefined
     
-    var notice_bar_fill: js.UndefOr[String] = js.native
+    var notice_bar_fill: js.UndefOr[String] = js.undefined
     
-    var notice_bar_height: js.UndefOr[Double] = js.native
+    var notice_bar_height: js.UndefOr[Double] = js.undefined
     
-    var opacity_disabled: js.UndefOr[String] = js.native
+    var opacity_disabled: js.UndefOr[String] = js.undefined
     
-    var option_height: js.UndefOr[Double] = js.native
+    var option_height: js.UndefOr[Double] = js.undefined
     
-    var popup_zindex: js.UndefOr[Double] = js.native
+    var popup_zindex: js.UndefOr[Double] = js.undefined
     
-    var primary_button_fill: js.UndefOr[String] = js.native
+    var primary_button_fill: js.UndefOr[String] = js.undefined
     
-    var primary_button_fill_tap: js.UndefOr[String] = js.native
+    var primary_button_fill_tap: js.UndefOr[String] = js.undefined
     
-    var radius_lg: js.UndefOr[Double] = js.native
+    var radius_lg: js.UndefOr[Double] = js.undefined
     
-    var radius_md: js.UndefOr[Double] = js.native
+    var radius_md: js.UndefOr[Double] = js.undefined
     
-    var radius_sm: js.UndefOr[Double] = js.native
+    var radius_sm: js.UndefOr[Double] = js.undefined
     
-    var radius_xs: js.UndefOr[Double] = js.native
+    var radius_xs: js.UndefOr[Double] = js.undefined
     
-    var search_bar_fill: js.UndefOr[String] = js.native
+    var search_bar_fill: js.UndefOr[String] = js.undefined
     
-    var search_bar_font_size: js.UndefOr[Double] = js.native
+    var search_bar_font_size: js.UndefOr[Double] = js.undefined
     
-    var search_bar_height: js.UndefOr[Double] = js.native
+    var search_bar_height: js.UndefOr[Double] = js.undefined
     
-    var search_bar_input_height: js.UndefOr[Double] = js.native
+    var search_bar_input_height: js.UndefOr[Double] = js.undefined
     
-    var search_color_icon: js.UndefOr[String] = js.native
+    var search_color_icon: js.UndefOr[String] = js.undefined
     
-    var segmented_control_color: js.UndefOr[String] = js.native
+    var segmented_control_color: js.UndefOr[String] = js.undefined
     
-    var segmented_control_fill_tap: js.UndefOr[String] = js.native
+    var segmented_control_fill_tap: js.UndefOr[String] = js.undefined
     
-    var segmented_control_height: js.UndefOr[Double] = js.native
+    var segmented_control_height: js.UndefOr[Double] = js.undefined
     
-    var switch_fill: js.UndefOr[String] = js.native
+    var switch_fill: js.UndefOr[String] = js.undefined
     
-    var tab_bar_fill: js.UndefOr[String] = js.native
+    var tab_bar_fill: js.UndefOr[String] = js.undefined
     
-    var tab_bar_height: js.UndefOr[Double] = js.native
+    var tab_bar_height: js.UndefOr[Double] = js.undefined
     
-    var tabs_color: js.UndefOr[String] = js.native
+    var tabs_color: js.UndefOr[String] = js.undefined
     
-    var tabs_font_size_heading: js.UndefOr[Double] = js.native
+    var tabs_font_size_heading: js.UndefOr[Double] = js.undefined
     
-    var tabs_height: js.UndefOr[Double] = js.native
+    var tabs_height: js.UndefOr[Double] = js.undefined
     
-    var tag_height: js.UndefOr[Double] = js.native
+    var tag_height: js.UndefOr[Double] = js.undefined
     
-    var tag_small_height: js.UndefOr[Double] = js.native
+    var tag_small_height: js.UndefOr[Double] = js.undefined
     
-    var toast_fill: js.UndefOr[String] = js.native
+    var toast_fill: js.UndefOr[String] = js.undefined
     
-    var toast_zindex: js.UndefOr[Double] = js.native
+    var toast_zindex: js.UndefOr[Double] = js.undefined
     
-    var v_spacing_lg: js.UndefOr[Double] = js.native
+    var v_spacing_lg: js.UndefOr[Double] = js.undefined
     
-    var v_spacing_md: js.UndefOr[Double] = js.native
+    var v_spacing_md: js.UndefOr[Double] = js.undefined
     
-    var v_spacing_sm: js.UndefOr[Double] = js.native
+    var v_spacing_sm: js.UndefOr[Double] = js.undefined
     
-    var v_spacing_xl: js.UndefOr[Double] = js.native
+    var v_spacing_xl: js.UndefOr[Double] = js.undefined
     
-    var v_spacing_xs: js.UndefOr[Double] = js.native
+    var v_spacing_xs: js.UndefOr[Double] = js.undefined
     
-    var warning_button_fill: js.UndefOr[String] = js.native
+    var warning_button_fill: js.UndefOr[String] = js.undefined
     
-    var warning_button_fill_tap: js.UndefOr[String] = js.native
+    var warning_button_fill_tap: js.UndefOr[String] = js.undefined
   }
   object PartialTheme {
     
@@ -882,212 +881,211 @@ object libStyleMod {
     }
   }
   
-  /* Inlined {  color_text_base :string,   color_text_base_inverse :string,   color_text_secondary :string,   color_text_placeholder :string,   color_text_disabled :string,   color_text_caption :string,   color_text_paragraph :string,   color_link :string,   fill_base :string,   fill_body :string,   fill_tap :string,   fill_disabled :string,   fill_mask :string,   color_icon_base :string,   fill_grey :string,   opacity_disabled :string,   brand_primary :string,   brand_primary_tap :string,   brand_success :string,   brand_warning :string,   brand_error :string,   brand_important :string,   brand_wait :string,   border_color_base :string,   font_size_icontext :number,   font_size_caption_sm :number,   font_size_base :number,   font_size_subhead :number,   font_size_caption :number,   font_size_heading :number,   radius_xs :number,   radius_sm :number,   radius_md :number,   radius_lg :number,   border_width_sm :number,   border_width_md :number,   border_width_lg :number,   h_spacing_sm :number,   h_spacing_md :number,   h_spacing_lg :number,   v_spacing_xs :number,   v_spacing_sm :number,   v_spacing_md :number,   v_spacing_lg :number,   v_spacing_xl :number,   line_height_base :number,   line_height_paragraph :number,   icon_size_xxs :number,   icon_size_xs :number,   icon_size_sm :number,   icon_size_md :number,   icon_size_lg :number,   ease_in_out_quint :string,   actionsheet_item_height :number,   actionsheet_item_font_size :number,   button_height :number,   button_font_size :number,   button_height_sm :number,   button_font_size_sm :number,   primary_button_fill :string,   primary_button_fill_tap :string,   ghost_button_color :string,   ghost_button_fill_tap :string,   warning_button_fill :string,   warning_button_fill_tap :string,   link_button_fill_tap :string,   link_button_font_size :number,   modal_font_size_heading :number,   modal_button_font_size :number,   modal_button_height :number,   list_title_height :number,   list_item_height_sm :number,   list_item_height :number,   input_label_width :number,   input_font_size :number,   input_color_icon :string,   input_color_icon_tap :string,   tabs_color :string,   tabs_height :number,   tabs_font_size_heading :number,   segmented_control_color :string,   segmented_control_height :number,   segmented_control_fill_tap :string,   tab_bar_fill :string,   tab_bar_height :number,   toast_fill :string,   search_bar_fill :string,   search_bar_height :number,   search_bar_input_height :number,   search_bar_font_size :number,   search_color_icon :string,   notice_bar_fill :string,   notice_bar_height :number,   switch_fill :string,   tag_height :number,   tag_small_height :number,   option_height :number,   toast_zindex :number,   action_sheet_zindex :number,   popup_zindex :number,   modal_zindex :number} & {[key: string] : any} */
-  @js.native
   trait Theme
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var action_sheet_zindex: Double = js.native
+    var action_sheet_zindex: Double
     
-    var actionsheet_item_font_size: Double = js.native
+    var actionsheet_item_font_size: Double
     
-    var actionsheet_item_height: Double = js.native
+    var actionsheet_item_height: Double
     
-    var border_color_base: String = js.native
+    var border_color_base: String
     
-    var border_width_lg: Double = js.native
+    var border_width_lg: Double
     
-    var border_width_md: Double = js.native
+    var border_width_md: Double
     
-    var border_width_sm: Double = js.native
+    var border_width_sm: Double
     
-    var brand_error: String = js.native
+    var brand_error: String
     
-    var brand_important: String = js.native
+    var brand_important: String
     
-    var brand_primary: String = js.native
+    var brand_primary: String
     
-    var brand_primary_tap: String = js.native
+    var brand_primary_tap: String
     
-    var brand_success: String = js.native
+    var brand_success: String
     
-    var brand_wait: String = js.native
+    var brand_wait: String
     
-    var brand_warning: String = js.native
+    var brand_warning: String
     
-    var button_font_size: Double = js.native
+    var button_font_size: Double
     
-    var button_font_size_sm: Double = js.native
+    var button_font_size_sm: Double
     
-    var button_height: Double = js.native
+    var button_height: Double
     
-    var button_height_sm: Double = js.native
+    var button_height_sm: Double
     
-    var color_icon_base: String = js.native
+    var color_icon_base: String
     
-    var color_link: String = js.native
+    var color_link: String
     
-    var color_text_base: String = js.native
+    var color_text_base: String
     
-    var color_text_base_inverse: String = js.native
+    var color_text_base_inverse: String
     
-    var color_text_caption: String = js.native
+    var color_text_caption: String
     
-    var color_text_disabled: String = js.native
+    var color_text_disabled: String
     
-    var color_text_paragraph: String = js.native
+    var color_text_paragraph: String
     
-    var color_text_placeholder: String = js.native
+    var color_text_placeholder: String
     
-    var color_text_secondary: String = js.native
+    var color_text_secondary: String
     
-    var ease_in_out_quint: String = js.native
+    var ease_in_out_quint: String
     
-    var fill_base: String = js.native
+    var fill_base: String
     
-    var fill_body: String = js.native
+    var fill_body: String
     
-    var fill_disabled: String = js.native
+    var fill_disabled: String
     
-    var fill_grey: String = js.native
+    var fill_grey: String
     
-    var fill_mask: String = js.native
+    var fill_mask: String
     
-    var fill_tap: String = js.native
+    var fill_tap: String
     
-    var font_size_base: Double = js.native
+    var font_size_base: Double
     
-    var font_size_caption: Double = js.native
+    var font_size_caption: Double
     
-    var font_size_caption_sm: Double = js.native
+    var font_size_caption_sm: Double
     
-    var font_size_heading: Double = js.native
+    var font_size_heading: Double
     
-    var font_size_icontext: Double = js.native
+    var font_size_icontext: Double
     
-    var font_size_subhead: Double = js.native
+    var font_size_subhead: Double
     
-    var ghost_button_color: String = js.native
+    var ghost_button_color: String
     
-    var ghost_button_fill_tap: String = js.native
+    var ghost_button_fill_tap: String
     
-    var h_spacing_lg: Double = js.native
+    var h_spacing_lg: Double
     
-    var h_spacing_md: Double = js.native
+    var h_spacing_md: Double
     
-    var h_spacing_sm: Double = js.native
+    var h_spacing_sm: Double
     
-    var icon_size_lg: Double = js.native
+    var icon_size_lg: Double
     
-    var icon_size_md: Double = js.native
+    var icon_size_md: Double
     
-    var icon_size_sm: Double = js.native
+    var icon_size_sm: Double
     
-    var icon_size_xs: Double = js.native
+    var icon_size_xs: Double
     
-    var icon_size_xxs: Double = js.native
+    var icon_size_xxs: Double
     
-    var input_color_icon: String = js.native
+    var input_color_icon: String
     
-    var input_color_icon_tap: String = js.native
+    var input_color_icon_tap: String
     
-    var input_font_size: Double = js.native
+    var input_font_size: Double
     
-    var input_label_width: Double = js.native
+    var input_label_width: Double
     
-    var line_height_base: Double = js.native
+    var line_height_base: Double
     
-    var line_height_paragraph: Double = js.native
+    var line_height_paragraph: Double
     
-    var link_button_fill_tap: String = js.native
+    var link_button_fill_tap: String
     
-    var link_button_font_size: Double = js.native
+    var link_button_font_size: Double
     
-    var list_item_height: Double = js.native
+    var list_item_height: Double
     
-    var list_item_height_sm: Double = js.native
+    var list_item_height_sm: Double
     
-    var list_title_height: Double = js.native
+    var list_title_height: Double
     
-    var modal_button_font_size: Double = js.native
+    var modal_button_font_size: Double
     
-    var modal_button_height: Double = js.native
+    var modal_button_height: Double
     
-    var modal_font_size_heading: Double = js.native
+    var modal_font_size_heading: Double
     
-    var modal_zindex: Double = js.native
+    var modal_zindex: Double
     
-    var notice_bar_fill: String = js.native
+    var notice_bar_fill: String
     
-    var notice_bar_height: Double = js.native
+    var notice_bar_height: Double
     
-    var opacity_disabled: String = js.native
+    var opacity_disabled: String
     
-    var option_height: Double = js.native
+    var option_height: Double
     
-    var popup_zindex: Double = js.native
+    var popup_zindex: Double
     
-    var primary_button_fill: String = js.native
+    var primary_button_fill: String
     
-    var primary_button_fill_tap: String = js.native
+    var primary_button_fill_tap: String
     
-    var radius_lg: Double = js.native
+    var radius_lg: Double
     
-    var radius_md: Double = js.native
+    var radius_md: Double
     
-    var radius_sm: Double = js.native
+    var radius_sm: Double
     
-    var radius_xs: Double = js.native
+    var radius_xs: Double
     
-    var search_bar_fill: String = js.native
+    var search_bar_fill: String
     
-    var search_bar_font_size: Double = js.native
+    var search_bar_font_size: Double
     
-    var search_bar_height: Double = js.native
+    var search_bar_height: Double
     
-    var search_bar_input_height: Double = js.native
+    var search_bar_input_height: Double
     
-    var search_color_icon: String = js.native
+    var search_color_icon: String
     
-    var segmented_control_color: String = js.native
+    var segmented_control_color: String
     
-    var segmented_control_fill_tap: String = js.native
+    var segmented_control_fill_tap: String
     
-    var segmented_control_height: Double = js.native
+    var segmented_control_height: Double
     
-    var switch_fill: String = js.native
+    var switch_fill: String
     
-    var tab_bar_fill: String = js.native
+    var tab_bar_fill: String
     
-    var tab_bar_height: Double = js.native
+    var tab_bar_height: Double
     
-    var tabs_color: String = js.native
+    var tabs_color: String
     
-    var tabs_font_size_heading: Double = js.native
+    var tabs_font_size_heading: Double
     
-    var tabs_height: Double = js.native
+    var tabs_height: Double
     
-    var tag_height: Double = js.native
+    var tag_height: Double
     
-    var tag_small_height: Double = js.native
+    var tag_small_height: Double
     
-    var toast_fill: String = js.native
+    var toast_fill: String
     
-    var toast_zindex: Double = js.native
+    var toast_zindex: Double
     
-    var v_spacing_lg: Double = js.native
+    var v_spacing_lg: Double
     
-    var v_spacing_md: Double = js.native
+    var v_spacing_md: Double
     
-    var v_spacing_sm: Double = js.native
+    var v_spacing_sm: Double
     
-    var v_spacing_xl: Double = js.native
+    var v_spacing_xl: Double
     
-    var v_spacing_xs: Double = js.native
+    var v_spacing_xs: Double
     
-    var warning_button_fill: String = js.native
+    var warning_button_fill: String
     
-    var warning_button_fill_tap: String = js.native
+    var warning_button_fill_tap: String
   }
   object Theme {
     
@@ -1507,12 +1505,11 @@ object libStyleMod {
     }
   }
   
-  @js.native
   trait ThemeProviderProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[PartialTheme] = js.native
+    var value: js.UndefOr[PartialTheme] = js.undefined
   }
   object ThemeProviderProps {
     
@@ -1539,10 +1536,9 @@ object libStyleMod {
     }
   }
   
-  @js.native
   trait UseThemeContextProps extends StObject {
     
-    var theme: js.UndefOr[PartialTheme] = js.native
+    var theme: js.UndefOr[PartialTheme] = js.undefined
   }
   object UseThemeContextProps {
     
@@ -1563,28 +1559,27 @@ object libStyleMod {
     }
   }
   
-  @js.native
   trait WithThemeProps[T, S] extends StObject {
     
-    def children(styles: T with StringDictionary[js.Any], theme: Theme): ReactNode = js.native
+    def children(styles: T & StringDictionary[js.Any], theme: Theme): ReactNode
     
-    var styles: js.UndefOr[S] = js.native
+    var styles: js.UndefOr[S] = js.undefined
     
-    def themeStyles(theme: Theme): T = js.native
+    def themeStyles(theme: Theme): T
   }
   object WithThemeProps {
     
     @scala.inline
-    def apply[T, S](children: (T with StringDictionary[js.Any], Theme) => ReactNode, themeStyles: Theme => T): WithThemeProps[T, S] = {
+    def apply[T, S](children: (T & StringDictionary[js.Any], Theme) => ReactNode, themeStyles: Theme => T): WithThemeProps[T, S] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), themeStyles = js.Any.fromFunction1(themeStyles))
       __obj.asInstanceOf[WithThemeProps[T, S]]
     }
     
     @scala.inline
-    implicit class WithThemePropsMutableBuilder[Self <: WithThemeProps[_, _], T, S] (val x: Self with (WithThemeProps[T, S])) extends AnyVal {
+    implicit class WithThemePropsMutableBuilder[Self <: WithThemeProps[?, ?], T, S] (val x: Self & (WithThemeProps[T, S])) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: (T with StringDictionary[js.Any], Theme) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      def setChildren(value: (T & StringDictionary[js.Any], Theme) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       @scala.inline
       def setStyles(value: S): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
@@ -1597,10 +1592,9 @@ object libStyleMod {
     }
   }
   
-  @js.native
   trait WithThemeStyles[T] extends StObject {
     
-    var styles: js.UndefOr[Partial[T]] = js.native
+    var styles: js.UndefOr[Partial[T]] = js.undefined
   }
   object WithThemeStyles {
     
@@ -1611,7 +1605,7 @@ object libStyleMod {
     }
     
     @scala.inline
-    implicit class WithThemeStylesMutableBuilder[Self <: WithThemeStyles[_], T] (val x: Self with WithThemeStyles[T]) extends AnyVal {
+    implicit class WithThemeStylesMutableBuilder[Self <: WithThemeStyles[?], T] (val x: Self & WithThemeStyles[T]) extends AnyVal {
       
       @scala.inline
       def setStyles(value: Partial[T]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])

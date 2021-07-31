@@ -4,41 +4,41 @@ import typings.rollup.mod.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rollup-plugin-node-globals", JSImport.Default)
+  @JSImport("rollup-plugin-node-globals", JSImport.Namespace)
   @js.native
-  def default(): Plugin = js.native
-  @JSImport("rollup-plugin-node-globals", JSImport.Default)
-  @js.native
-  def default(options: Options): Plugin = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  @scala.inline
+  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  
   trait Options extends StObject {
     
-    var baseDir: js.UndefOr[String] = js.native
+    var baseDir: js.UndefOr[String] = js.undefined
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var dirname: js.UndefOr[Boolean] = js.native
+    var dirname: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var exclude: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
     
-    var filename: js.UndefOr[Boolean] = js.native
+    var filename: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
     // Every files will be parsed by default, but you can specify which files to include or exclude
-    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.native
+    var include: js.UndefOr[(js.Array[String | RegExp]) | String | RegExp | Null] = js.undefined
     
     // Plugin's options
-    var process: js.UndefOr[Boolean] = js.native
+    var process: js.UndefOr[Boolean] = js.undefined
     
     // Enable sourcemaps support
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

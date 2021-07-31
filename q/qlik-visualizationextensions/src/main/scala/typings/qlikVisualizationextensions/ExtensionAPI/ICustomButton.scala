@@ -3,21 +3,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomButton extends ICustomControl {
+trait ICustomButton
+  extends StObject
+     with ICustomControl {
   
-  var action: valueOrfunc[Unit] = js.native
+  var action: valueOrfunc[Unit]
   
-  var component: button = js.native
+  var component: button
 }
 object ICustomButton {
   
   @scala.inline
-  def apply(action: valueOrfunc[Unit], component: button, label: String, ref: String, `type`: String): ICustomButton = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+  def apply(action: valueOrfunc[Unit], label: String, ref: String, `type`: String): ICustomButton = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], component = "button", label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomButton]
   }

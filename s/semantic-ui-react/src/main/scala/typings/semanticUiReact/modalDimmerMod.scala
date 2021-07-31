@@ -7,7 +7,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalDimmerMod extends Shortcut {
@@ -16,9 +15,9 @@ object modalDimmerMod extends Shortcut {
   @js.native
   val default: StatelessComponent[ModalDimmerProps] = js.native
   
-  @js.native
   trait ModalDimmerProps
-    extends StrictModalDimmerProps
+    extends StObject
+       with StrictModalDimmerProps
        with /* key */ StringDictionary[js.Any]
   object ModalDimmerProps {
     
@@ -29,35 +28,34 @@ object modalDimmerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictModalDimmerProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A dimmer can be blurred. */
-    var blurring: js.UndefOr[Boolean] = js.native
+    var blurring: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can center its contents in the viewport. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A dimmer can be inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** The node where the modal should mount. Defaults to document.body. */
-    var mountNode: js.UndefOr[js.Any] = js.native
+    var mountNode: js.UndefOr[js.Any] = js.undefined
     
     /** A dimmer can make body scrollable. */
-    var scrolling: js.UndefOr[Boolean] = js.native
+    var scrolling: js.UndefOr[Boolean] = js.undefined
   }
   object StrictModalDimmerProps {
     

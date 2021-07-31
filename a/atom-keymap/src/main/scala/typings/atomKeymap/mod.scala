@@ -24,7 +24,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,17 +32,19 @@ object mod extends Shortcut {
   @JSImport("atom-keymap", JSImport.Namespace)
   @js.native
   /** Create a new KeymapManager. */
-  class ^ () extends KeymapManager {
+  class ^ ()
+    extends StObject
+       with KeymapManager {
     def this(options: DefaultTarget) = this()
   }
   @JSImport("atom-keymap", JSImport.Namespace)
   @js.native
-  val ^ : KeymapManagerStatic = js.native
+  val ^ : js.Object & KeymapManagerStatic = js.native
   
-  type _To = KeymapManagerStatic
+  type _To = js.Object & KeymapManagerStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: KeymapManagerStatic = ^
+  override def _to: js.Object & KeymapManagerStatic = ^
   
   object global {
     
@@ -55,30 +56,29 @@ object mod extends Shortcut {
         */
       object Events {
         
-        @js.native
         trait AddedKeystrokeResolver extends StObject {
           
           /**
             *  The raw DOM 3 `KeyboardEvent` being resolved. See the DOM API documentation
             *  for more details.
             */
-          var event: KeyboardEvent = js.native
+          var event: KeyboardEvent
           
           /**
             *  An object mapping DOM 3 `KeyboardEvent.code` values to objects with the
             *  typed character for that key in each modifier state, based on the current
             *  operating system layout.
             */
-          var keymap: js.Object = js.native
+          var keymap: js.Object
           
           /**
             *  The currently resolved keystroke string. If your function returns a falsy
             *  value, this is how Atom will resolve your keystroke.
             */
-          var keystroke: String = js.native
+          var keystroke: String
           
           /** The OS-specific name of the current keyboard layout. */
-          var layoutName: String = js.native
+          var layoutName: String
         }
         object AddedKeystrokeResolver {
           
@@ -113,7 +113,8 @@ object mod extends Shortcut {
           */
         @js.native
         trait CommandEvent
-          extends CustomEvent[js.Any] {
+          extends StObject
+             with CustomEvent[js.Any] {
           
           def abortKeyBinding(): Unit = js.native
           
@@ -122,14 +123,13 @@ object mod extends Shortcut {
           var propagationStopped: Boolean = js.native
         }
         
-        @js.native
         trait FailedKeybindingMatch extends StObject {
           
           /** The DOM element that was the target of the most recent keyboard event. */
-          var keyboardEventTarget: Element = js.native
+          var keyboardEventTarget: Element
           
           /** The string of keystrokes that failed to match the binding. */
-          var keystrokes: String = js.native
+          var keystrokes: String
         }
         object FailedKeybindingMatch {
           
@@ -150,14 +150,13 @@ object mod extends Shortcut {
           }
         }
         
-        @js.native
         trait FailedKeymapFileRead extends StObject {
           
           /** The error message. */
-          var message: String = js.native
+          var message: String
           
           /** The error stack trace. */
-          var stack: String = js.native
+          var stack: String
         }
         object FailedKeymapFileRead {
           
@@ -178,17 +177,16 @@ object mod extends Shortcut {
           }
         }
         
-        @js.native
         trait FullKeybindingMatch extends StObject {
           
           /** The KeyBinding that the keystrokes matched. */
-          var binding: KeyBinding = js.native
+          var binding: KeyBinding
           
           /** The DOM element that was the target of the most recent keyboard event. */
-          var keyboardEventTarget: Element = js.native
+          var keyboardEventTarget: Element
           
           /** The string of keystrokes that matched the binding. */
-          var keystrokes: String = js.native
+          var keystrokes: String
         }
         object FullKeybindingMatch {
           
@@ -212,11 +210,10 @@ object mod extends Shortcut {
           }
         }
         
-        @js.native
         trait KeymapLoaded extends StObject {
           
           /** The path of the keymap file. */
-          var path: String = js.native
+          var path: String
         }
         object KeymapLoaded {
           
@@ -234,17 +231,16 @@ object mod extends Shortcut {
           }
         }
         
-        @js.native
         trait PartialKeybindingMatch extends StObject {
           
           /** DOM element that was the target of the most recent keyboard event. */
-          var keyboardEventTarget: Element = js.native
+          var keyboardEventTarget: Element
           
           /** The string of keystrokes that matched the binding. */
-          var keystrokes: String = js.native
+          var keystrokes: String
           
           /** The KeyBindings that the keystrokes partially matched. */
-          var partiallyMatchedBindings: js.Array[KeyBinding] = js.native
+          var partiallyMatchedBindings: js.Array[KeyBinding]
         }
         object PartialKeybindingMatch {
           
@@ -272,10 +268,9 @@ object mod extends Shortcut {
         }
       }
       
-      @js.native
       trait KeyBinding extends StObject {
         
-        var command: String = js.native
+        var command: String
         
         /**
           *  Compare another KeyBinding to this instance.
@@ -283,26 +278,26 @@ object mod extends Shortcut {
           *  Returns 0 if this binding is equivalent to the argument.
           *  Returns >= 1 if the argument is considered greater or of higher priority.
           */
-        def compare(other: KeyBinding): Double = js.native
+        def compare(other: KeyBinding): Double
         
         // Properties
-        var enabled: Boolean = js.native
+        var enabled: Boolean
         
-        var keystrokeArray: js.Array[String] = js.native
+        var keystrokeArray: js.Array[String]
         
-        var keystrokeCount: Double = js.native
+        var keystrokeCount: Double
         
-        var keystrokes: String = js.native
+        var keystrokes: String
         
         // Comparison
         /** Determines whether the given keystroke matches any contained within this binding. */
-        def matches(keystroke: String): Boolean = js.native
+        def matches(keystroke: String): Boolean
         
-        var selector: String = js.native
+        var selector: String
         
-        var source: String = js.native
+        var source: String
         
-        var specificity: Double = js.native
+        var specificity: Double
       }
       object KeyBinding {
         
@@ -452,7 +447,8 @@ object mod extends Shortcut {
       /** The static side to the KeymapManager class. */
       @js.native
       trait KeymapManagerStatic
-        extends /** Create a new KeymapManager. */
+        extends StObject
+           with /** Create a new KeymapManager. */
       Instantiable0[KeymapManager]
            with Instantiable1[/* options */ DefaultTarget, KeymapManager] {
         
@@ -471,20 +467,19 @@ object mod extends Shortcut {
         */
       object Options {
         
-        @js.native
         trait BuildKeyEvent extends StObject {
           
-          var alt: js.UndefOr[Boolean] = js.native
+          var alt: js.UndefOr[Boolean] = js.undefined
           
-          var cmd: js.UndefOr[Boolean] = js.native
+          var cmd: js.UndefOr[Boolean] = js.undefined
           
-          var ctrl: js.UndefOr[Boolean] = js.native
+          var ctrl: js.UndefOr[Boolean] = js.undefined
           
-          var shift: js.UndefOr[Boolean] = js.native
+          var shift: js.UndefOr[Boolean] = js.undefined
           
-          var target: js.UndefOr[Element] = js.native
+          var target: js.UndefOr[Element] = js.undefined
           
-          var which: js.UndefOr[Double] = js.native
+          var which: js.UndefOr[Double] = js.undefined
         }
         object BuildKeyEvent {
           

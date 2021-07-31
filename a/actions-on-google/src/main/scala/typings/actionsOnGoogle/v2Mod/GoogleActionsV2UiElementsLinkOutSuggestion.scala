@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsLinkOutSuggestion extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleActionsV2UiElementsLinkOutSuggestion extends StObject {
     * rendered with the title \"Open <destination_name>\". Max 20 chars.
     * Required.
     */
-  var destinationName: js.UndefOr[String] = js.native
+  var destinationName: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the App or Site to open when the user taps the suggestion chip.
@@ -23,12 +21,12 @@ trait GoogleActionsV2UiElementsLinkOutSuggestion extends StObject {
     * For Intent URLs refer to:
     * https://developer.chrome.com/multidevice/android/intents
     */
-  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.native
+  var openUrlAction: js.UndefOr[GoogleActionsV2UiElementsOpenUrlAction] = js.undefined
   
   /**
     * Deprecated. Use OpenUrlAction instead.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsLinkOutSuggestion {
   

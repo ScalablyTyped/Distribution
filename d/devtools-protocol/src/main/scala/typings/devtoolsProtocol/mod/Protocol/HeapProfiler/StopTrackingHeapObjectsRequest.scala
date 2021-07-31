@@ -2,19 +2,17 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopTrackingHeapObjectsRequest extends StObject {
   
   /**
     * If true 'reportHeapSnapshotProgress' events will be generated while snapshot is being taken
     * when the tracking is stopped.
     */
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var treatGlobalObjectsAsRoots: js.UndefOr[Boolean] = js.native
+  var treatGlobalObjectsAsRoots: js.UndefOr[Boolean] = js.undefined
 }
 object StopTrackingHeapObjectsRequest {
   

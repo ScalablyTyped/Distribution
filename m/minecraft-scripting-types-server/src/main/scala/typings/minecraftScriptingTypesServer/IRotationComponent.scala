@@ -2,26 +2,24 @@ package typings.minecraftScriptingTypesServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This component allows you to control an entity's current rotation in the world as well as the entity's head rotation. Once applied, the entity will be rotated as specified.
   */
-@js.native
 trait IRotationComponent extends StObject {
   
   /**
     * Controls the head rotation looking up and down
     * @default 0.0
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Controls the body rotation parallel to the floor
     * @default 0.0
     */
-  var y: Double = js.native
+  var y: Double
 }
 object IRotationComponent {
   

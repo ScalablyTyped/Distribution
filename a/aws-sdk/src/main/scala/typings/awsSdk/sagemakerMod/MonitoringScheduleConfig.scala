@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringScheduleConfig extends StObject {
   
   /**
     * Defines the monitoring job.
     */
-  var MonitoringJobDefinition: typings.awsSdk.sagemakerMod.MonitoringJobDefinition = js.native
+  var MonitoringJobDefinition: typings.awsSdk.sagemakerMod.MonitoringJobDefinition
   
   /**
     * Configures the monitoring schedule.
     */
-  var ScheduleConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ScheduleConfig] = js.native
+  var ScheduleConfig: js.UndefOr[typings.awsSdk.sagemakerMod.ScheduleConfig] = js.undefined
 }
 object MonitoringScheduleConfig {
   

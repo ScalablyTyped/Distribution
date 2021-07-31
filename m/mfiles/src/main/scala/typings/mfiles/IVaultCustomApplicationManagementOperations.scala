@@ -3,31 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFExtApplicationPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultCustomApplicationManagementOperations extends StObject {
   
-  def DownloadCustomApplicationBlock(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double] = js.native
+  def DownloadCustomApplicationBlock(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double]
   
-  def DownloadCustomApplicationBlockBegin(ApplicationID: String): IFileDownloadSession = js.native
+  def DownloadCustomApplicationBlockBegin(ApplicationID: String): IFileDownloadSession
   
-  def DownloadCustomApplicationBlockBegin_32bit(ApplicationID: String): IFileDownloadSession = js.native
+  def DownloadCustomApplicationBlockBegin_32bit(ApplicationID: String): IFileDownloadSession
   
-  def DownloadCustomApplicationBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double] = js.native
+  def DownloadCustomApplicationBlock_32bit(DownloadID: Double, BlockSize: Double, Offset: Double): js.Array[Double]
   
-  def EnableCustomApplication(ApplicationID: String, Enabled: Boolean): Unit = js.native
+  def EnableCustomApplication(ApplicationID: String, Enabled: Boolean): Unit
   
-  def GetCustomApplication(ApplicationID: String): ICustomApplication = js.native
+  def GetCustomApplication(ApplicationID: String): ICustomApplication
   
-  def GetCustomApplications(): ICustomApplications = js.native
+  def GetCustomApplications(): ICustomApplications
   
-  def GetCustomApplicationsEx(Platform: MFExtApplicationPlatform): ICustomApplications = js.native
+  def GetCustomApplicationsEx(Platform: MFExtApplicationPlatform): ICustomApplications
   
-  def InstallCustomApplication(File: String): Unit = js.native
+  def InstallCustomApplication(File: String): Unit
   
-  def UninstallCustomApplication(ApplicationID: String): Unit = js.native
+  def UninstallCustomApplication(ApplicationID: String): Unit
 }
 object IVaultCustomApplicationManagementOperations {
   

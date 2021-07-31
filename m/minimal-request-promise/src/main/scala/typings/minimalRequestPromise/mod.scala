@@ -5,93 +5,65 @@ import typings.node.httpMod.RequestOptions
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(callOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = ^.asInstanceOf[js.Dynamic].apply(callOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def apply(callOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].apply(callOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  
   @JSImport("minimal-request-promise", JSImport.Namespace)
   @js.native
-  def apply(callOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", JSImport.Namespace)
-  @js.native
-  def apply(callOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("minimal-request-promise", "del")
-  @js.native
-  def del(url: String): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "del")
-  @js.native
-  def del(
-    url: String,
-    additionalOptions: js.UndefOr[scala.Nothing],
-    PromiseImplementation: PromiseConstructor
-  ): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "del")
-  @js.native
-  def del(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "del")
-  @js.native
-  def del(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  @scala.inline
+  def del(url: String): js.Promise[MinimalRequestPromiseResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def del(url: String, additionalOptions: Unit, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def del(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def del(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
   
-  @JSImport("minimal-request-promise", "delete")
-  @js.native
-  def delete(url: String): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "delete")
-  @js.native
-  def delete(
-    url: String,
-    additionalOptions: js.UndefOr[scala.Nothing],
-    PromiseImplementation: PromiseConstructor
-  ): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "delete")
-  @js.native
-  def delete(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "delete")
-  @js.native
-  def delete(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  @scala.inline
+  def delete(url: String): js.Promise[MinimalRequestPromiseResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def delete(url: String, additionalOptions: Unit, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def delete(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def delete(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
   
-  @JSImport("minimal-request-promise", "get")
-  @js.native
-  def get(url: String): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "get")
-  @js.native
-  def get(
-    url: String,
-    additionalOptions: js.UndefOr[scala.Nothing],
-    PromiseImplementation: PromiseConstructor
-  ): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "get")
-  @js.native
-  def get(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "get")
-  @js.native
-  def get(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  @scala.inline
+  def get(url: String): js.Promise[MinimalRequestPromiseResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def get(url: String, additionalOptions: Unit, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def get(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def get(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
   
-  @JSImport("minimal-request-promise", "post")
-  @js.native
-  def post(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "post")
-  @js.native
-  def post(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  @scala.inline
+  def post(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def post(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
   
-  @JSImport("minimal-request-promise", "put")
-  @js.native
-  def put(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = js.native
-  @JSImport("minimal-request-promise", "put")
-  @js.native
-  def put(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = js.native
+  @scala.inline
+  def put(url: String, additionalOptions: RequestOptions): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
+  @scala.inline
+  def put(url: String, additionalOptions: RequestOptions, PromiseImplementation: PromiseConstructor): js.Promise[MinimalRequestPromiseResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], additionalOptions.asInstanceOf[js.Any], PromiseImplementation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MinimalRequestPromiseResponse]]
   
-  @js.native
   trait MinimalRequestPromiseResponse extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var headers: js.Array[IncomingHttpHeaders] = js.native
+    var headers: js.Array[IncomingHttpHeaders]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
     
-    var statusMessage: String = js.native
+    var statusMessage: String
   }
   object MinimalRequestPromiseResponse {
     

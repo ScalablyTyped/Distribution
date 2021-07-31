@@ -2,21 +2,19 @@ package typings.nodeMailjet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigOptions extends StObject {
   
-  val output: js.UndefOr[String] = js.native
+  val output: js.UndefOr[String] = js.undefined
   
-  val perform_api_call: js.UndefOr[Boolean] = js.native
+  val perform_api_call: js.UndefOr[Boolean] = js.undefined
   
-  val secured: js.UndefOr[Boolean] = js.native
+  val secured: js.UndefOr[Boolean] = js.undefined
   
-  val url: js.UndefOr[String] = js.native
+  val url: js.UndefOr[String] = js.undefined
   
-  val version: js.UndefOr[String] = js.native
+  val version: js.UndefOr[String] = js.undefined
 }
 object ConfigOptions {
   

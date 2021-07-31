@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object payloadMod {
@@ -21,7 +20,9 @@ object payloadMod {
       * Constructs a new NoiseHandshakePayload.
       * @param [properties] Properties to set
       */
-    class NoiseHandshakePayload () extends INoiseHandshakePayload {
+    class NoiseHandshakePayload ()
+      extends StObject
+         with INoiseHandshakePayload {
       def this(properties: INoiseHandshakePayload) = this()
       
       /** NoiseHandshakePayload data. */
@@ -44,18 +45,20 @@ object payloadMod {
     }
     object NoiseHandshakePayload {
       
+      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new NoiseHandshakePayload instance using the specified properties.
         * @param [properties] Properties to set
         * @returns NoiseHandshakePayload instance
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.create")
-      @js.native
-      def create(): NoiseHandshakePayload = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.create")
-      @js.native
-      def create(properties: INoiseHandshakePayload): NoiseHandshakePayload = js.native
+      @scala.inline
+      def create(): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[NoiseHandshakePayload]
+      @scala.inline
+      def create(properties: INoiseHandshakePayload): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
       
       /**
         * Decodes a NoiseHandshakePayload message from the specified reader or buffer.
@@ -66,18 +69,14 @@ object payloadMod {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decode")
-      @js.native
-      def decode(reader: Reader): NoiseHandshakePayload = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): NoiseHandshakePayload = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decode")
-      @js.native
-      def decode(reader: Uint8Array): NoiseHandshakePayload = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): NoiseHandshakePayload = js.native
+      @scala.inline
+      def decode(reader: Reader): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
+      @scala.inline
+      def decode(reader: Reader, length: Double): NoiseHandshakePayload = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NoiseHandshakePayload]
+      @scala.inline
+      def decode(reader: Uint8Array): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): NoiseHandshakePayload = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[NoiseHandshakePayload]
       
       /**
         * Decodes a NoiseHandshakePayload message from the specified reader or buffer, length delimited.
@@ -87,12 +86,10 @@ object payloadMod {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): NoiseHandshakePayload = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): NoiseHandshakePayload = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
       
       /**
         * Encodes the specified NoiseHandshakePayload message. Does not implicitly {@link pb.NoiseHandshakePayload.verify|verify} messages.
@@ -101,12 +98,10 @@ object payloadMod {
         * @returns Writer
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.encode")
-      @js.native
-      def encode(message: INoiseHandshakePayload): Writer = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.encode")
-      @js.native
-      def encode(message: INoiseHandshakePayload, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: INoiseHandshakePayload): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: INoiseHandshakePayload, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified NoiseHandshakePayload message, length delimited. Does not implicitly {@link pb.NoiseHandshakePayload.verify|verify} messages.
@@ -115,12 +110,10 @@ object payloadMod {
         * @returns Writer
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: INoiseHandshakePayload): Writer = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: INoiseHandshakePayload, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: INoiseHandshakePayload): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: INoiseHandshakePayload, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a NoiseHandshakePayload message from a plain object. Also converts values to their respective internal types.
@@ -128,9 +121,8 @@ object payloadMod {
         * @returns NoiseHandshakePayload
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): NoiseHandshakePayload = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): NoiseHandshakePayload = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[NoiseHandshakePayload]
       
       /**
         * Creates a plain object from a NoiseHandshakePayload message. Also converts values to other types if specified.
@@ -139,12 +131,10 @@ object payloadMod {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.toObject")
-      @js.native
-      def toObject(message: NoiseHandshakePayload): StringDictionary[js.Any] = js.native
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.toObject")
-      @js.native
-      def toObject(message: NoiseHandshakePayload, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: NoiseHandshakePayload): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: NoiseHandshakePayload, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a NoiseHandshakePayload message.
@@ -152,23 +142,21 @@ object payloadMod {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("libp2p-noise/dist/src/proto/payload", "pb.NoiseHandshakePayload.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** Properties of a NoiseHandshakePayload. */
-    @js.native
     trait INoiseHandshakePayload extends StObject {
       
       /** NoiseHandshakePayload data */
-      var data: js.UndefOr[Uint8Array | Null] = js.native
+      var data: js.UndefOr[Uint8Array | Null] = js.undefined
       
       /** NoiseHandshakePayload identityKey */
-      var identityKey: js.UndefOr[Uint8Array | Null] = js.native
+      var identityKey: js.UndefOr[Uint8Array | Null] = js.undefined
       
       /** NoiseHandshakePayload identitySig */
-      var identitySig: js.UndefOr[Uint8Array | Null] = js.native
+      var identitySig: js.UndefOr[Uint8Array | Null] = js.undefined
     }
     object INoiseHandshakePayload {
       

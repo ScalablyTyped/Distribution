@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Media
 import typings.winrtUwp.Windows.Foundation.IMemoryBufferReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a buffer containing audio data. */
-@js.native
 trait AudioBuffer extends StObject {
   
   /** Gets the maximum number of bytes that the buffer can hold. */
-  var capacity: Double = js.native
+  var capacity: Double
   
   /** Disposes of the object and associated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Returns an IMemoryBufferReference representation of the audio buffer.
     * @return The IMemoryBufferReference representation of the audio buffer.
     */
-  def createReference(): IMemoryBufferReference = js.native
+  def createReference(): IMemoryBufferReference
   
   /** Gets or sets the number of bytes currently in use in the buffer. */
-  var length: Double = js.native
+  var length: Double
 }
 object AudioBuffer {
   

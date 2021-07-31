@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsAgentEntitytypesBatchupdate extends StandardParameters {
+trait ParamsResourceProjectsAgentEntitytypesBatchupdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The name of the agent to update or create entity types in.
     * Format: `projects/<Project ID>/agent`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest] = js.native
+  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1BatchUpdateEntityTypesRequest] = js.undefined
 }
 object ParamsResourceProjectsAgentEntitytypesBatchupdate {
   

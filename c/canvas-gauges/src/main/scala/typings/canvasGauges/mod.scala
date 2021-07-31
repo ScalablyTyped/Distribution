@@ -6,11 +6,11 @@ import typings.canvasGauges.CanvasGauges.EndEventCallback
 import typings.canvasGauges.CanvasGauges.LinearGaugeOptions
 import typings.canvasGauges.CanvasGauges.RadialGaugeOptions
 import typings.canvasGauges.CanvasGauges.rules
+import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,60 +18,31 @@ object mod {
   @JSImport("canvas-gauges", "Animation")
   @js.native
   class Animation ()
-    extends typings.canvasGauges.CanvasGauges.Animation {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.Animation {
     def this(rule: String) = this()
     def this(rule: AnimationRule) = this()
-    def this(rule: js.UndefOr[scala.Nothing], duration: Double) = this()
     def this(rule: String, duration: Double) = this()
+    def this(rule: Unit, duration: Double) = this()
     def this(rule: AnimationRule, duration: Double) = this()
-    def this(rule: js.UndefOr[scala.Nothing], duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
-    def this(rule: js.UndefOr[scala.Nothing], duration: Double, draw: DrawEventCallback) = this()
-    def this(rule: String, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
     def this(rule: String, duration: Double, draw: DrawEventCallback) = this()
-    def this(rule: AnimationRule, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback) = this()
+    def this(rule: String, duration: Unit, draw: DrawEventCallback) = this()
+    def this(rule: Unit, duration: Double, draw: DrawEventCallback) = this()
+    def this(rule: Unit, duration: Unit, draw: DrawEventCallback) = this()
     def this(rule: AnimationRule, duration: Double, draw: DrawEventCallback) = this()
-    def this(
-      rule: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      draw: js.UndefOr[scala.Nothing],
-      end: EndEventCallback
-    ) = this()
-    def this(
-      rule: js.UndefOr[scala.Nothing],
-      duration: js.UndefOr[scala.Nothing],
-      draw: DrawEventCallback,
-      end: EndEventCallback
-    ) = this()
-    def this(
-      rule: js.UndefOr[scala.Nothing],
-      duration: Double,
-      draw: js.UndefOr[scala.Nothing],
-      end: EndEventCallback
-    ) = this()
-    def this(rule: js.UndefOr[scala.Nothing], duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
-    def this(
-      rule: String,
-      duration: js.UndefOr[scala.Nothing],
-      draw: js.UndefOr[scala.Nothing],
-      end: EndEventCallback
-    ) = this()
-    def this(rule: String, duration: js.UndefOr[scala.Nothing], draw: DrawEventCallback, end: EndEventCallback) = this()
-    def this(rule: String, duration: Double, draw: js.UndefOr[scala.Nothing], end: EndEventCallback) = this()
+    def this(rule: AnimationRule, duration: Unit, draw: DrawEventCallback) = this()
+    def this(rule: String, duration: Double, draw: Unit, end: EndEventCallback) = this()
     def this(rule: String, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
-    def this(
-      rule: AnimationRule,
-      duration: js.UndefOr[scala.Nothing],
-      draw: js.UndefOr[scala.Nothing],
-      end: EndEventCallback
-    ) = this()
-    def this(
-      rule: AnimationRule,
-      duration: js.UndefOr[scala.Nothing],
-      draw: DrawEventCallback,
-      end: EndEventCallback
-    ) = this()
-    def this(rule: AnimationRule, duration: Double, draw: js.UndefOr[scala.Nothing], end: EndEventCallback) = this()
+    def this(rule: String, duration: Unit, draw: Unit, end: EndEventCallback) = this()
+    def this(rule: String, duration: Unit, draw: DrawEventCallback, end: EndEventCallback) = this()
+    def this(rule: Unit, duration: Double, draw: Unit, end: EndEventCallback) = this()
+    def this(rule: Unit, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
+    def this(rule: Unit, duration: Unit, draw: Unit, end: EndEventCallback) = this()
+    def this(rule: Unit, duration: Unit, draw: DrawEventCallback, end: EndEventCallback) = this()
+    def this(rule: AnimationRule, duration: Double, draw: Unit, end: EndEventCallback) = this()
     def this(rule: AnimationRule, duration: Double, draw: DrawEventCallback, end: EndEventCallback) = this()
+    def this(rule: AnimationRule, duration: Unit, draw: Unit, end: EndEventCallback) = this()
+    def this(rule: AnimationRule, duration: Unit, draw: DrawEventCallback, end: EndEventCallback) = this()
   }
   /* static members */
   object Animation {
@@ -90,23 +61,25 @@ object mod {
   @JSImport("canvas-gauges", "BaseGauge")
   @js.native
   abstract class BaseGauge protected ()
-    extends typings.canvasGauges.CanvasGauges.BaseGauge {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.BaseGauge {
     def this(options: typings.canvasGauges.CanvasGauges.GenericOptions) = this()
   }
   /* static members */
   object BaseGauge {
     
-    @JSImport("canvas-gauges", "BaseGauge.ensureValue")
+    @JSImport("canvas-gauges", "BaseGauge")
     @js.native
-    def ensureValue(value: Double): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("canvas-gauges", "BaseGauge.fromElement")
-    @js.native
-    def fromElement(element: HTMLElement): js.Any = js.native
+    @scala.inline
+    def ensureValue(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureValue")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("canvas-gauges", "BaseGauge.initialize")
-    @js.native
-    def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = js.native
+    @scala.inline
+    def fromElement(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def initialize(`type`: String, options: typings.canvasGauges.CanvasGauges.GenericOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("canvas-gauges", "BaseGauge.version")
     @js.native
@@ -116,27 +89,28 @@ object mod {
   @JSImport("canvas-gauges", "DomObserver")
   @js.native
   class DomObserver protected ()
-    extends typings.canvasGauges.CanvasGauges.DomObserver {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.DomObserver {
     def this(options: typings.canvasGauges.CanvasGauges.GenericOptions, element: String, `type`: String) = this()
   }
   /* static members */
   object DomObserver {
     
-    @JSImport("canvas-gauges", "DomObserver.domReady")
+    @JSImport("canvas-gauges", "DomObserver")
     @js.native
-    def domReady(handler: js.Function): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("canvas-gauges", "DomObserver.parse")
-    @js.native
-    def parse(value: js.Any): js.Any = js.native
+    @scala.inline
+    def domReady(handler: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("domReady")(handler.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("canvas-gauges", "DomObserver.toAttributeName")
-    @js.native
-    def toAttributeName(str: String): String = js.native
+    @scala.inline
+    def parse(value: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("canvas-gauges", "DomObserver.toDashed")
-    @js.native
-    def toDashed(camelCase: String): String = js.native
+    @scala.inline
+    def toAttributeName(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toAttributeName")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def toDashed(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDashed")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("canvas-gauges", "GenericOptions")
@@ -146,25 +120,79 @@ object mod {
   @JSImport("canvas-gauges", "LinearGauge")
   @js.native
   class LinearGauge protected ()
-    extends typings.canvasGauges.CanvasGauges.LinearGauge {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.LinearGauge {
     def this(options: LinearGaugeOptions) = this()
   }
   
   @JSImport("canvas-gauges", "RadialGauge")
   @js.native
   class RadialGauge protected ()
-    extends typings.canvasGauges.CanvasGauges.RadialGauge {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.RadialGauge {
     def this(options: RadialGaugeOptions) = this()
   }
   
   @JSImport("canvas-gauges", "SmartCanvas")
   @js.native
   class SmartCanvas protected ()
-    extends typings.canvasGauges.CanvasGauges.SmartCanvas {
+    extends StObject
+       with typings.canvasGauges.CanvasGauges.SmartCanvas {
     def this(element: HTMLCanvasElement) = this()
     def this(element: HTMLCanvasElement, width: Double) = this()
-    def this(element: HTMLCanvasElement, width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(element: HTMLCanvasElement, width: Double, height: Double) = this()
+    def this(element: HTMLCanvasElement, width: Unit, height: Double) = this()
+    
+    /* CompleteClass */
+    override def commit(): typings.canvasGauges.CanvasGauges.SmartCanvas = js.native
+    
+    /* CompleteClass */
+    var context: CanvasRenderingContext2D = js.native
+    
+    /* CompleteClass */
+    var contextClone: CanvasRenderingContext2D = js.native
+    
+    /* CompleteClass */
+    override def destroy(): js.Any = js.native
+    
+    /* CompleteClass */
+    var drawHeight: Double = js.native
+    
+    /* CompleteClass */
+    var drawWidth: Double = js.native
+    
+    /* CompleteClass */
+    var drawX: Double = js.native
+    
+    /* CompleteClass */
+    var drawY: Double = js.native
+    
+    /* CompleteClass */
+    var element: HTMLCanvasElement = js.native
+    
+    /* CompleteClass */
+    var elementClone: HTMLCanvasElement = js.native
+    
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /* CompleteClass */
+    override def init(): js.Any = js.native
+    
+    /* CompleteClass */
+    var minSide: Double = js.native
+    
+    /* CompleteClass */
+    override def onRedraw(): js.Any = js.native
+    
+    /* CompleteClass */
+    var pixelRatio: Double = js.native
+    
+    /* CompleteClass */
+    override def redraw(): typings.canvasGauges.CanvasGauges.SmartCanvas = js.native
+    
+    /* CompleteClass */
+    var width: Double = js.native
   }
   /* static members */
   object SmartCanvas {
@@ -179,8 +207,7 @@ object mod {
     @scala.inline
     def collection_=(x: js.Array[typings.canvasGauges.CanvasGauges.SmartCanvas]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collection")(x.asInstanceOf[js.Any])
     
-    @JSImport("canvas-gauges", "SmartCanvas.redraw")
-    @js.native
-    def redraw(): js.Any = js.native
+    @scala.inline
+    def redraw(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("redraw")().asInstanceOf[js.Any]
   }
 }

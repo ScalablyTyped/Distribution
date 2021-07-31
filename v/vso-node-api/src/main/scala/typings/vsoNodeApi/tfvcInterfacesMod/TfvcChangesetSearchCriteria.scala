@@ -2,51 +2,49 @@ package typings.vsoNodeApi.tfvcInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcChangesetSearchCriteria extends StObject {
   
   /**
     * Alias or display name of user who made the changes
     */
-  var author: String = js.native
+  var author: String
   
   /**
     * Whether or not to follow renames for the given item being queried
     */
-  var followRenames: Boolean = js.native
+  var followRenames: Boolean
   
   /**
     * If provided, only include changesets created after this date (string) Think of a better name for this.
     */
-  var fromDate: String = js.native
+  var fromDate: String
   
   /**
     * If provided, only include changesets after this changesetID
     */
-  var fromId: Double = js.native
+  var fromId: Double
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
   /**
     * Path of item to search under
     */
-  var itemPath: String = js.native
+  var itemPath: String
   
   /**
     * If provided, only include changesets created before this date (string) Think of a better name for this.
     */
-  var toDate: String = js.native
+  var toDate: String
   
   /**
     * If provided, a version descriptor for the latest change list to include
     */
-  var toId: Double = js.native
+  var toId: Double
 }
 object TfvcChangesetSearchCriteria {
   

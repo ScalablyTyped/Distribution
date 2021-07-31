@@ -2,7 +2,6 @@ package typings.officeJs.Office.MailboxEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,11 +23,15 @@ object AttachmentStatus extends StObject {
     * An attachment was added to the item.
     */
   @js.native
-  sealed trait Added extends AttachmentStatus
+  sealed trait Added
+    extends StObject
+       with AttachmentStatus
   
   /**
     * An attachment was removed from the item.
     */
   @js.native
-  sealed trait Removed extends AttachmentStatus
+  sealed trait Removed
+    extends StObject
+       with AttachmentStatus
 }

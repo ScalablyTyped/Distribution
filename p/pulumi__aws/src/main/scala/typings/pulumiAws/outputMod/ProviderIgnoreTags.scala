@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProviderIgnoreTags extends StObject {
   
-  var keyPrefixes: js.UndefOr[js.Array[String]] = js.native
+  var keyPrefixes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ProviderIgnoreTags {
   

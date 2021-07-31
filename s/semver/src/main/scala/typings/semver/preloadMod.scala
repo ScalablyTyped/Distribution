@@ -4,7 +4,6 @@ import typings.semver.mod.CoerceOptions
 import typings.semver.mod.Operator
 import typings.semver.mod.Options
 import typings.semver.mod.ReleaseType
-import typings.semver.semverMod.^
 import typings.semver.semverNumbers.`-1`
 import typings.semver.semverNumbers.`0`
 import typings.semver.semverNumbers.`1`
@@ -13,10 +12,13 @@ import typings.semver.semverStrings.Lessthansign
 import typings.semver.semverStrings.`2Dot0Dot0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preloadMod {
+  
+  @JSImport("semver/preload", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("semver/preload", "Comparator")
   @js.native
@@ -61,88 +63,74 @@ object preloadMod {
   /**
     * Returns cleaned (removed leading/trailing whitespace, remove '=v' prefix) and parsed version, or null if version is invalid.
     */
-  @JSImport("semver/preload", "clean")
-  @js.native
-  def clean(version: String): String | Null = js.native
-  @JSImport("semver/preload", "clean")
-  @js.native
-  def clean(version: String, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "clean")
-  @js.native
-  def clean(version: String, optionsOrLoose: Options): String | Null = js.native
+  @scala.inline
+  def clean(version: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(version.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def clean(version: String, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def clean(version: String, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("clean")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   /**
     * Pass in a comparison string, and it'll call the corresponding semver comparison function.
     * "===" and "!==" do simple string comparison, but are included for completeness.
     * Throws if an invalid comparison string is provided.
     */
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: String, operator: Operator, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "cmp")
-  @js.native
-  def cmp(v1: ^, operator: Operator, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: String, operator: Operator, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: typings.semver.semverMod.^, operator: Operator, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: typings.semver.semverMod.^, operator: Operator, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: typings.semver.semverMod.^, operator: Operator, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(v1: typings.semver.semverMod.^, operator: Operator, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(
+    v1: typings.semver.semverMod.^,
+    operator: Operator,
+    v2: typings.semver.semverMod.^,
+    optionsOrLoose: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def cmp(
+    v1: typings.semver.semverMod.^,
+    operator: Operator,
+    v2: typings.semver.semverMod.^,
+    optionsOrLoose: Options
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(v1.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Coerces a string to SemVer if possible
     */
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: js.UndefOr[scala.Nothing], options: CoerceOptions): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: String): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: String, options: CoerceOptions): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: Double): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: Double, options: CoerceOptions): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: Null, options: CoerceOptions): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: ^): ^ | Null = js.native
-  @JSImport("semver/preload", "coerce")
-  @js.native
-  def coerce(version: ^, options: CoerceOptions): ^ | Null = js.native
+  @scala.inline
+  def coerce(): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")().asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: String): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: String, options: CoerceOptions): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: Double): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: Double, options: CoerceOptions): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: Null, options: CoerceOptions): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: Unit, options: CoerceOptions): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: typings.semver.semverMod.^): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def coerce(version: typings.semver.semverMod.^, options: CoerceOptions): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(version.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
   
   /**
     * Compares two versions excluding build identifiers (the bit after `+` in the semantic version string).
@@ -154,42 +142,30 @@ object preloadMod {
     * - `1` if `v1` is greater
     * - `-1` if `v2` is greater.
     */
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: ^, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: String, v2: ^, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: ^, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compare")
-  @js.native
-  def compare(v1: ^, v2: ^, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compare(v1: String, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: String, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: String, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: String, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
   /**
     * Compares two versions including build identifiers (the bit after `+` in the semantic version string).
@@ -203,877 +179,651 @@ object preloadMod {
     *
     * @since 6.1.0
     */
-  @JSImport("semver/preload", "compareBuild")
-  @js.native
-  def compareBuild(a: String, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareBuild")
-  @js.native
-  def compareBuild(a: String, b: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareBuild")
-  @js.native
-  def compareBuild(a: ^, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareBuild")
-  @js.native
-  def compareBuild(a: ^, b: ^): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compareBuild(a: String, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareBuild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareBuild(a: String, b: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareBuild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareBuild(a: typings.semver.semverMod.^, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareBuild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareBuild(a: typings.semver.semverMod.^, b: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareBuild")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @JSImport("semver/preload", "compareIdentifiers")
-  @js.native
-  def compareIdentifiers(): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareIdentifiers")
-  @js.native
-  def compareIdentifiers(a: js.UndefOr[scala.Nothing], b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareIdentifiers")
-  @js.native
-  def compareIdentifiers(a: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareIdentifiers")
-  @js.native
-  def compareIdentifiers(a: String, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareIdentifiers")
-  @js.native
-  def compareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compareIdentifiers(): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIdentifiers")().asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareIdentifiers(a: String): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIdentifiers")(a.asInstanceOf[js.Any]).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareIdentifiers(a: String, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareIdentifiers(a: Unit, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @JSImport("semver/preload", "compareLoose")
-  @js.native
-  def compareLoose(v1: String, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareLoose")
-  @js.native
-  def compareLoose(v1: String, v2: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareLoose")
-  @js.native
-  def compareLoose(v1: ^, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "compareLoose")
-  @js.native
-  def compareLoose(v1: ^, v2: ^): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def compareLoose(v1: String, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLoose")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareLoose(v1: String, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLoose")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareLoose(v1: typings.semver.semverMod.^, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLoose")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def compareLoose(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("compareLoose")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
   /**
     * Returns difference between two versions by the release type (major, premajor, minor, preminor, patch, prepatch, or prerelease), or null if the versions are the same.
     */
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: String): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: String, optionsOrLoose: Options): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: ^): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: ^, optionsOrLoose: Boolean): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: String, v2: ^, optionsOrLoose: Options): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: String): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: String, optionsOrLoose: Options): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: ^): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: ^, optionsOrLoose: Boolean): ReleaseType | Null = js.native
-  @JSImport("semver/preload", "diff")
-  @js.native
-  def diff(v1: ^, v2: ^, optionsOrLoose: Options): ReleaseType | Null = js.native
+  @scala.inline
+  def diff(v1: String, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: String, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: String, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: String, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: String): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
+  @scala.inline
+  def diff(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): ReleaseType | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[ReleaseType | Null]
   
   /**
     * v1 == v2 This is true if they're logically equivalent, even if they're not the exact same string. You already know how to compare strings.
     */
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "eq")
-  @js.native
-  def eq_(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def eq_(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def eq_(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * v1 > v2
     */
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gt")
-  @js.native
-  def gt(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def gt(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * v1 >= v2
     */
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gte")
-  @js.native
-  def gte(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def gte(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return true if version is greater than all the versions possible in the range.
     */
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: String): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: String): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "gtr")
-  @js.native
-  def gtr(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def gtr(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: String, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: String, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: String, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def gtr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("gtr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return the version incremented by the release type (major, minor, patch, or prerelease), or null if it's not valid.
     */
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType, identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
+  @scala.inline
+  def inc(version: String, release: ReleaseType): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, identifier: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, optionsOrLoose: Boolean, identifier: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, optionsOrLoose: Unit, identifier: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: String, release: ReleaseType, optionsOrLoose: Options, identifier: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: typings.semver.semverMod.^, release: ReleaseType): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: typings.semver.semverMod.^, release: ReleaseType, identifier: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: typings.semver.semverMod.^, release: ReleaseType, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
   def inc(
-    version: String,
+    version: typings.semver.semverMod.^,
     release: ReleaseType,
-    optionsOrLoose: js.UndefOr[scala.Nothing],
+    optionsOrLoose: Boolean,
     identifier: String
-  ): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType, optionsOrLoose: Boolean, identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType, optionsOrLoose: Options): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: String, release: ReleaseType, optionsOrLoose: Options, identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, optionsOrLoose: js.UndefOr[scala.Nothing], identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, optionsOrLoose: Boolean, identifier: String): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, optionsOrLoose: Options): String | Null = js.native
-  @JSImport("semver/preload", "inc")
-  @js.native
-  def inc(version: ^, release: ReleaseType, optionsOrLoose: Options, identifier: String): String | Null = js.native
+  ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(
+    version: typings.semver.semverMod.^,
+    release: ReleaseType,
+    optionsOrLoose: Unit,
+    identifier: String
+  ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(version: typings.semver.semverMod.^, release: ReleaseType, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def inc(
+    version: typings.semver.semverMod.^,
+    release: ReleaseType,
+    optionsOrLoose: Options,
+    identifier: String
+  ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inc")(version.asInstanceOf[js.Any], release.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   /**
     * Return true if any of the ranges comparators intersect
     */
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: String): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: String): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "intersects")
-  @js.native
-  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def intersects(range1: String, range2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: String, range2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: String, range2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: String, range2: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: String, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def intersects(range1: typings.semver.rangeMod.^, range2: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersects")(range1.asInstanceOf[js.Any], range2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * v1 < v2
     */
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lt")
-  @js.native
-  def lt(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def lt(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lt(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lt")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * v1 <= v2
     */
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "lte")
-  @js.native
-  def lte(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def lte(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def lte(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lte")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return true if version is less than all the versions possible in the range.
     */
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: String): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: String): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "ltr")
-  @js.native
-  def ltr(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def ltr(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: String, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: String, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: String, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ltr(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ltr")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return the major version number.
     */
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: String): Double = js.native
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: String, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: String, optionsOrLoose: Options): Double = js.native
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: ^): Double = js.native
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: ^, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "major")
-  @js.native
-  def major(version: ^, optionsOrLoose: Options): Double = js.native
+  @scala.inline
+  def major(version: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def major(version: String, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def major(version: String, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def major(version: typings.semver.semverMod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def major(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def major(version: typings.semver.semverMod.^, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("major")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Return the highest version in the list that satisfies the range, or null if none of them do.
     */
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String): T | Null = js.native
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String, optionsOrLoose: Boolean): T | Null = js.native
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String, optionsOrLoose: Options): T | Null = js.native
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^): T | Null = js.native
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): T | Null = js.native
-  @JSImport("semver/preload", "maxSatisfying")
-  @js.native
-  def maxSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Options): T | Null = js.native
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String, optionsOrLoose: Boolean): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String, optionsOrLoose: Options): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def maxSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Options): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("maxSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
   /**
     * Return the lowest version in the list that satisfies the range, or null if none of them do.
     */
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String): T | Null = js.native
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String, optionsOrLoose: Boolean): T | Null = js.native
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: String, optionsOrLoose: Options): T | Null = js.native
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^): T | Null = js.native
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): T | Null = js.native
-  @JSImport("semver/preload", "minSatisfying")
-  @js.native
-  def minSatisfying[T /* <: String | ^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Options): T | Null = js.native
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String, optionsOrLoose: Boolean): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: String, optionsOrLoose: Options): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def minSatisfying[T /* <: String | typings.semver.semverMod.^ */](versions: js.Array[T], range: typings.semver.rangeMod.^, optionsOrLoose: Options): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minSatisfying")(versions.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
   /**
     * Return the lowest version that can possibly match the given range.
     */
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: String): ^ | Null = js.native
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: String, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: String, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: typings.semver.rangeMod.^): ^ | Null = js.native
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "minVersion")
-  @js.native
-  def minVersion(range: typings.semver.rangeMod.^, optionsOrLoose: Options): ^ | Null = js.native
+  @scala.inline
+  def minVersion(range: String): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def minVersion(range: String, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def minVersion(range: String, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def minVersion(range: typings.semver.rangeMod.^): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def minVersion(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def minVersion(range: typings.semver.rangeMod.^, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minVersion")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
   
   /**
     * Return the minor version number.
     */
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: String): Double = js.native
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: String, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: String, optionsOrLoose: Options): Double = js.native
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: ^): Double = js.native
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: ^, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "minor")
-  @js.native
-  def minor(version: ^, optionsOrLoose: Options): Double = js.native
+  @scala.inline
+  def minor(version: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def minor(version: String, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def minor(version: String, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def minor(version: typings.semver.semverMod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def minor(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def minor(version: typings.semver.semverMod.^, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("minor")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * v1 != v2 The opposite of eq.
     */
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: String, v2: ^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: String): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: ^): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: ^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "neq")
-  @js.native
-  def neq(v1: ^, v2: ^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def neq(v1: String, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: String, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: String, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: String, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def neq(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("neq")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return true if the version is outside the bounds of the range in either the high or low direction.
     * The hilo argument must be either the string '>' or '<'. (This is the function called by gtr and ltr.)
     */
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Greaterthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Lessthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: String, hilo: Lessthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Greaterthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Lessthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: String, hilo: Lessthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Greaterthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Lessthansign): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "outside")
-  @js.native
-  def outside(version: ^, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def outside(version: String, range: String, hilo: Greaterthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: String, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: String, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: String, hilo: Lessthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: String, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: String, hilo: Lessthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: String, range: typings.semver.rangeMod.^, hilo: Lessthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Greaterthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Greaterthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Greaterthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Lessthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Lessthansign, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: String, hilo: Lessthansign, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, hilo: Greaterthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(
+    version: typings.semver.semverMod.^,
+    range: typings.semver.rangeMod.^,
+    hilo: Greaterthansign,
+    optionsOrLoose: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(
+    version: typings.semver.semverMod.^,
+    range: typings.semver.rangeMod.^,
+    hilo: Greaterthansign,
+    optionsOrLoose: Options
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, hilo: Lessthansign): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(
+    version: typings.semver.semverMod.^,
+    range: typings.semver.rangeMod.^,
+    hilo: Lessthansign,
+    optionsOrLoose: Boolean
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def outside(
+    version: typings.semver.semverMod.^,
+    range: typings.semver.rangeMod.^,
+    hilo: Lessthansign,
+    optionsOrLoose: Options
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("outside")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], hilo.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return the parsed version as a SemVer object, or null if it's not valid.
     */
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: js.UndefOr[scala.Nothing], optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: String): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: String, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: String, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: Null, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: Null, optionsOrLoose: Options): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: ^): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: ^, optionsOrLoose: Boolean): ^ | Null = js.native
-  @JSImport("semver/preload", "parse")
-  @js.native
-  def parse(version: ^, optionsOrLoose: Options): ^ | Null = js.native
+  @scala.inline
+  def parse(): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: String): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: String, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: String, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: Null, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: Null, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: Unit, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: Unit, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: typings.semver.semverMod.^): typings.semver.semverMod.^ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any]).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
+  @scala.inline
+  def parse(version: typings.semver.semverMod.^, optionsOrLoose: Options): typings.semver.semverMod.^ | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[typings.semver.semverMod.^ | Null]
   
   /**
     * Return the patch version number.
     */
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: String): Double = js.native
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: String, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: String, optionsOrLoose: Options): Double = js.native
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: ^): Double = js.native
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: ^, optionsOrLoose: Boolean): Double = js.native
-  @JSImport("semver/preload", "patch")
-  @js.native
-  def patch(version: ^, optionsOrLoose: Options): Double = js.native
+  @scala.inline
+  def patch(version: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def patch(version: String, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def patch(version: String, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def patch(version: typings.semver.semverMod.^): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def patch(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def patch(version: typings.semver.semverMod.^, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns an array of prerelease components, or null if none exist.
     */
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: String): js.Array[String] | Null = js.native
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: String, optionsOrLoose: Boolean): js.Array[String] | Null = js.native
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: String, optionsOrLoose: Options): js.Array[String] | Null = js.native
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: ^): js.Array[String] | Null = js.native
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: ^, optionsOrLoose: Boolean): js.Array[String] | Null = js.native
-  @JSImport("semver/preload", "prerelease")
-  @js.native
-  def prerelease(version: ^, optionsOrLoose: Options): js.Array[String] | Null = js.native
+  @scala.inline
+  def prerelease(version: String): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | Null]
+  @scala.inline
+  def prerelease(version: String, optionsOrLoose: Boolean): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  @scala.inline
+  def prerelease(version: String, optionsOrLoose: Options): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  @scala.inline
+  def prerelease(version: typings.semver.semverMod.^): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | Null]
+  @scala.inline
+  def prerelease(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  @scala.inline
+  def prerelease(version: typings.semver.semverMod.^, optionsOrLoose: Options): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("prerelease")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
   
   /**
     * The reverse of compare.
     *
     * Sorts in descending order when passed to `Array.sort()`.
     */
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: ^, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: String, v2: ^, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: ^): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: ^, optionsOrLoose: Boolean): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompare")
-  @js.native
-  def rcompare(v1: ^, v2: ^, optionsOrLoose: Options): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def rcompare(v1: String, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: String, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: String, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: String, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: String, v2: typings.semver.semverMod.^, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: String, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Boolean): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompare(v1: typings.semver.semverMod.^, v2: typings.semver.semverMod.^, optionsOrLoose: Options): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompare")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
-  @JSImport("semver/preload", "rcompareIdentifiers")
-  @js.native
-  def rcompareIdentifiers(): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompareIdentifiers")
-  @js.native
-  def rcompareIdentifiers(a: js.UndefOr[scala.Nothing], b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompareIdentifiers")
-  @js.native
-  def rcompareIdentifiers(a: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompareIdentifiers")
-  @js.native
-  def rcompareIdentifiers(a: String, b: String): `1` | `0` | `-1` = js.native
-  @JSImport("semver/preload", "rcompareIdentifiers")
-  @js.native
-  def rcompareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = js.native
+  @scala.inline
+  def rcompareIdentifiers(): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("rcompareIdentifiers")().asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompareIdentifiers(a: String): `1` | `0` | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("rcompareIdentifiers")(a.asInstanceOf[js.Any]).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompareIdentifiers(a: String, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompareIdentifiers(a: Null, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  @scala.inline
+  def rcompareIdentifiers(a: Unit, b: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].applyDynamic("rcompareIdentifiers")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
   
   /**
     * Sorts an array of semver entries in descending order using `compareBuild()`.
     */
-  @JSImport("semver/preload", "rsort")
-  @js.native
-  def rsort[T /* <: String | ^ */](list: js.Array[T]): js.Array[T] = js.native
-  @JSImport("semver/preload", "rsort")
-  @js.native
-  def rsort[T /* <: String | ^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = js.native
-  @JSImport("semver/preload", "rsort")
-  @js.native
-  def rsort[T /* <: String | ^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = js.native
+  @scala.inline
+  def rsort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("rsort")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def rsort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("rsort")(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def rsort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("rsort")(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /**
     * Return true if the version satisfies the range.
     */
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: String): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: String): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: String, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: String, optionsOrLoose: Options): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = js.native
-  @JSImport("semver/preload", "satisfies")
-  @js.native
-  def satisfies(version: ^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = js.native
+  @scala.inline
+  def satisfies(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: String, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: String, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: String, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: String, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: String, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def satisfies(version: typings.semver.semverMod.^, range: typings.semver.rangeMod.^, optionsOrLoose: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("satisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Return a "simplified" range that matches the same items in `versions` list as the range specified.
@@ -1083,153 +833,110 @@ object preloadMod {
     * to provide the user with something a bit more ergonomic.
     * If the provided range is shorter in string-length than the generated range, then that is returned.
     */
-  @JSImport("semver/preload", "simplifyRange")
-  @js.native
-  def simplifyRange(ranges: js.Array[String], range: String): String | typings.semver.rangeMod.^ = js.native
-  @JSImport("semver/preload", "simplifyRange")
-  @js.native
-  def simplifyRange(ranges: js.Array[String], range: String, options: Options): String | typings.semver.rangeMod.^ = js.native
-  @JSImport("semver/preload", "simplifyRange")
-  @js.native
-  def simplifyRange(ranges: js.Array[String], range: typings.semver.rangeMod.^): String | typings.semver.rangeMod.^ = js.native
-  @JSImport("semver/preload", "simplifyRange")
-  @js.native
-  def simplifyRange(ranges: js.Array[String], range: typings.semver.rangeMod.^, options: Options): String | typings.semver.rangeMod.^ = js.native
+  @scala.inline
+  def simplifyRange(ranges: js.Array[String], range: String): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyRange")(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  @scala.inline
+  def simplifyRange(ranges: js.Array[String], range: String, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyRange")(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  @scala.inline
+  def simplifyRange(ranges: js.Array[String], range: typings.semver.rangeMod.^): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyRange")(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
+  @scala.inline
+  def simplifyRange(ranges: js.Array[String], range: typings.semver.rangeMod.^, options: Options): String | typings.semver.rangeMod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyRange")(ranges.asInstanceOf[js.Any], range.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | typings.semver.rangeMod.^]
   
   /**
     * Sorts an array of semver entries in ascending order using `compareBuild()`.
     */
-  @JSImport("semver/preload", "sort")
-  @js.native
-  def sort[T /* <: String | ^ */](list: js.Array[T]): js.Array[T] = js.native
-  @JSImport("semver/preload", "sort")
-  @js.native
-  def sort[T /* <: String | ^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = js.native
-  @JSImport("semver/preload", "sort")
-  @js.native
-  def sort[T /* <: String | ^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = js.native
+  @scala.inline
+  def sort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def sort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def sort[T /* <: String | typings.semver.semverMod.^ */](list: js.Array[T], optionsOrLoose: Options): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(list.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   /**
     * Return true if the subRange range is entirely contained by the superRange range.
     */
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: String, dom: String): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: String, dom: String, options: Options): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: String, dom: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: String, dom: typings.semver.rangeMod.^, options: Options): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: typings.semver.rangeMod.^, dom: String): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: typings.semver.rangeMod.^, dom: String, options: Options): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^): Boolean = js.native
-  @JSImport("semver/preload", "subset")
-  @js.native
-  def subset(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^, options: Options): Boolean = js.native
+  @scala.inline
+  def subset(sub: String, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: String, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: String, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: String, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: typings.semver.rangeMod.^, dom: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: typings.semver.rangeMod.^, dom: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def subset(sub: typings.semver.rangeMod.^, dom: typings.semver.rangeMod.^, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subset")(sub.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Mostly just for testing and legacy API reasons
     */
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: String): String = js.native
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: String, optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: String, optionsOrLoose: Options): String = js.native
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: typings.semver.rangeMod.^): String = js.native
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "toComparators")
-  @js.native
-  def toComparators(range: typings.semver.rangeMod.^, optionsOrLoose: Options): String = js.native
+  @scala.inline
+  def toComparators(range: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toComparators(range: String, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toComparators(range: String, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toComparators(range: typings.semver.rangeMod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toComparators(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toComparators(range: typings.semver.rangeMod.^, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toComparators")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Return the parsed version as a string, or null if it's not valid.
     */
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: js.UndefOr[scala.Nothing], optionsOrLoose: Options): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: String): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: String, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: String, optionsOrLoose: Options): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: Null, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: Null, optionsOrLoose: Options): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: ^): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: ^, optionsOrLoose: Boolean): String | Null = js.native
-  @JSImport("semver/preload", "valid")
-  @js.native
-  def valid(version: ^, optionsOrLoose: Options): String | Null = js.native
+  @scala.inline
+  def valid(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")().asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: String, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: String, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: Null, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: Null, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: Unit, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: Unit, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: typings.semver.semverMod.^): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def valid(version: typings.semver.semverMod.^, optionsOrLoose: Options): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("valid")(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
   /**
     * Return the valid range or null if it's not valid
     */
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: js.UndefOr[scala.Nothing], optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: js.UndefOr[scala.Nothing], optionsOrLoose: Options): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: String): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: String, optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: String, optionsOrLoose: Options): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: Null, optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: Null, optionsOrLoose: Options): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: typings.semver.rangeMod.^): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): String = js.native
-  @JSImport("semver/preload", "validRange")
-  @js.native
-  def validRange(range: typings.semver.rangeMod.^, optionsOrLoose: Options): String = js.native
+  @scala.inline
+  def validRange(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validRange")().asInstanceOf[String]
+  @scala.inline
+  def validRange(range: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: String, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: String, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: Null, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: Null, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: Unit, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: Unit, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: typings.semver.rangeMod.^): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: typings.semver.rangeMod.^, optionsOrLoose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def validRange(range: typings.semver.rangeMod.^, optionsOrLoose: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("validRange")(range.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[String]
 }

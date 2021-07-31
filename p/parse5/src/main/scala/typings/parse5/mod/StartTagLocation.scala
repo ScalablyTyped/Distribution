@@ -2,16 +2,16 @@ package typings.parse5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StartTagLocation extends Location {
+trait StartTagLocation
+  extends StObject
+     with Location {
   
   /**
     * Start tag attributes' location info
     */
-  var attrs: AttributesLocation = js.native
+  var attrs: AttributesLocation
 }
 object StartTagLocation {
   

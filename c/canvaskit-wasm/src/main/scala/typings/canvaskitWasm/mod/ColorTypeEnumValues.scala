@@ -2,29 +2,29 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorTypeEnumValues extends EmbindEnum {
+trait ColorTypeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Alpha_8: ColorType = js.native
+  var Alpha_8: ColorType
   
-  var BGRA_8888: ColorType = js.native
+  var BGRA_8888: ColorType
   
-  var Gray_8: ColorType = js.native
+  var Gray_8: ColorType
   
-  var RGBA_1010102: ColorType = js.native
+  var RGBA_1010102: ColorType
   
-  var RGBA_8888: ColorType = js.native
+  var RGBA_8888: ColorType
   
-  var RGBA_F16: ColorType = js.native
+  var RGBA_F16: ColorType
   
-  var RGBA_F32: ColorType = js.native
+  var RGBA_F32: ColorType
   
-  var RGB_101010x: ColorType = js.native
+  var RGB_101010x: ColorType
   
-  var RGB_565: ColorType = js.native
+  var RGB_565: ColorType
 }
 object ColorTypeEnumValues {
   

@@ -2,26 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This WebRTC API interface manages the reception and decoding of data for a MediaStreamTrack on an RTCPeerConnection. */
-@js.native
 trait RTCRtpReceiver extends StObject {
   
-  def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
+  def getContributingSources(): js.Array[RTCRtpContributingSource]
   
-  def getParameters(): RTCRtpReceiveParameters = js.native
+  def getParameters(): RTCRtpReceiveParameters
   
-  def getStats(): js.Promise[RTCStatsReport] = js.native
+  def getStats(): js.Promise[RTCStatsReport]
   
-  def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource] = js.native
+  def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource]
   
-  val rtcpTransport: RTCDtlsTransport | Null = js.native
+  val rtcpTransport: RTCDtlsTransport | Null
   
-  val track: MediaStreamTrack = js.native
+  val track: MediaStreamTrack
   
-  val transport: RTCDtlsTransport | Null = js.native
+  val transport: RTCDtlsTransport | Null
 }
 object RTCRtpReceiver {
   
@@ -33,7 +31,7 @@ object RTCRtpReceiver {
     getSynchronizationSources: () => js.Array[RTCRtpSynchronizationSource],
     track: MediaStreamTrack
   ): RTCRtpReceiver = {
-    val __obj = js.Dynamic.literal(getContributingSources = js.Any.fromFunction0(getContributingSources), getParameters = js.Any.fromFunction0(getParameters), getStats = js.Any.fromFunction0(getStats), getSynchronizationSources = js.Any.fromFunction0(getSynchronizationSources), track = track.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getContributingSources = js.Any.fromFunction0(getContributingSources), getParameters = js.Any.fromFunction0(getParameters), getStats = js.Any.fromFunction0(getStats), getSynchronizationSources = js.Any.fromFunction0(getSynchronizationSources), track = track.asInstanceOf[js.Any], rtcpTransport = null, transport = null)
     __obj.asInstanceOf[RTCRtpReceiver]
   }
   

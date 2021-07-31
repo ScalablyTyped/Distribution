@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventListenerObject extends StObject {
   
-  def handleEvent(evt: Event): Unit = js.native
+  def handleEvent(evt: Event): Unit
 }
 object EventListenerObject {
   

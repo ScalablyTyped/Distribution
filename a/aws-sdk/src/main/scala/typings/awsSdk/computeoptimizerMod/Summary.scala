@@ -2,21 +2,19 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Summary extends StObject {
   
   /**
     * The finding classification of the recommendation.
     */
-  var name: js.UndefOr[Finding] = js.native
+  var name: js.UndefOr[Finding] = js.undefined
   
   /**
     * The value of the recommendation summary.
     */
-  var value: js.UndefOr[SummaryValue] = js.native
+  var value: js.UndefOr[SummaryValue] = js.undefined
 }
 object Summary {
   

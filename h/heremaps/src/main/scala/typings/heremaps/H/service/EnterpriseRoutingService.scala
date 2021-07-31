@@ -3,7 +3,6 @@ package typings.heremaps.H.service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * H.service.Platform#getEnterpriseRoutingService.
   */
 @js.native
-trait EnterpriseRoutingService extends AbstractRestService {
+trait EnterpriseRoutingService
+  extends StObject
+     with AbstractRestService {
   
   /**
     * This method sends a "calculateisoline" request to Enterprise Routing REST API and calls the onResult callback function once the service response was received - providing
@@ -73,14 +74,13 @@ object EnterpriseRoutingService {
     * @property baseUrl {H.service.Url=} - The base URL of the service, defaults to the the platform's base URL if instance was created using H.service.Platform#getEnterpriseRoutingService
     * method.
     */
-  @js.native
   trait Options extends StObject {
     
-    var baseUrl: js.UndefOr[Url] = js.native
+    var baseUrl: js.UndefOr[Url] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var subDomain: js.UndefOr[String] = js.native
+    var subDomain: js.UndefOr[String] = js.undefined
   }
   object Options {
     

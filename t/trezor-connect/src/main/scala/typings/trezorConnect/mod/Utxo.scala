@@ -2,36 +2,34 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Utxo extends StObject {
   
   // how much money sent
-  var addressPath: js.Tuple2[Double, Double] = js.native
+  var addressPath: js.Tuple2[Double, Double]
   
   // null == unconfirmed
-  var coinbase: Boolean = js.native
+  var coinbase: Boolean
   
   // path
-  var height: Double | Null = js.native
+  var height: Double | Null
   
-  var index: Double = js.native
+  var index: Double
   
   // virtual size - segwit concept - same as size in non-segwit
-  var own: Boolean = js.native
+  var own: Boolean
   
   // index of output IN THE TRANSACTION
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var tsize: Double = js.native
+  var tsize: Double
   
   // hash of the transaction
-  var value: Double = js.native
+  var value: Double
   
   // total size - in case of segwit, total, with segwit data
-  var vsize: Double = js.native
+  var vsize: Double
 }
 object Utxo {
   
@@ -46,7 +44,7 @@ object Utxo {
     value: Double,
     vsize: Double
   ): Utxo = {
-    val __obj = js.Dynamic.literal(addressPath = addressPath.asInstanceOf[js.Any], coinbase = coinbase.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], own = own.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], tsize = tsize.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addressPath = addressPath.asInstanceOf[js.Any], coinbase = coinbase.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], own = own.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], tsize = tsize.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], vsize = vsize.asInstanceOf[js.Any], height = null)
     __obj.asInstanceOf[Utxo]
   }
   

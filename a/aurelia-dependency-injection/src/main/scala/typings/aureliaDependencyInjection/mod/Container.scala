@@ -4,7 +4,6 @@ import typings.aureliaDependencyInjection.anon.TypeofContainer
 import typings.aureliaDependencyInjection.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "Container")
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Container () extends StObject {
   def this(configuration: ContainerConfiguration) = this()
   
-  def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) with `1`): InvocationHandler[TBase, TImpl, TArgs] = js.native
+  def _createInvocationHandler[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](fn: (DependencyCtorOrFunctor[TBase, TImpl, TArgs]) & `1`): InvocationHandler[TBase, TImpl, TArgs] = js.native
   
   def _get(key: js.Any): js.Any = js.native
   
@@ -20,7 +19,7 @@ class Container () extends StObject {
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: DependencyCtor[TBase, TImpl, TArgs], fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): Resolver_ = js.native
   def autoRegister[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: Primitive, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs]): Resolver_ = js.native
   
-  def autoRegisterAll(fns: js.Array[DependencyCtor[_, _, _]]): Unit = js.native
+  def autoRegisterAll(fns: js.Array[DependencyCtor[js.Any, js.Any, js.Any]]): Unit = js.native
   
   def createChild(): Container = js.native
   
@@ -57,7 +56,7 @@ class Container () extends StObject {
       /* container */ js.UndefOr[this.type], 
       /* key */ js.UndefOr[PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]], 
       /* resolver */ js.UndefOr[Resolver_], 
-      _
+      js.Any
     ]
   ): Resolver_ = js.native
   

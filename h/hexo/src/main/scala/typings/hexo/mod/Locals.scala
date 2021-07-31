@@ -11,7 +11,6 @@ import typings.hexo.mod.Locals.Tag
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -43,7 +42,7 @@ trait Locals extends StObject {
   /**
     * Set a Variable
     */
-  def set(`type`: String, fn: js.Function0[_]): this.type = js.native
+  def set(`type`: String, fn: js.Function0[js.Any]): this.type = js.native
   
   /**
     * Get All Variable
@@ -52,10 +51,11 @@ trait Locals extends StObject {
 }
 object Locals {
   
-  @js.native
-  trait Category extends Tag {
+  trait Category
+    extends StObject
+       with Tag {
     
-    var parent: String = js.native
+    var parent: String
   }
   object Category {
     
@@ -81,43 +81,43 @@ object Locals {
     }
   }
   
-  @js.native
   trait Page
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var comments: Boolean = js.native
+    var comments: Boolean
     
-    var content: String = js.native
+    var content: String
     
-    var date: Moment = js.native
+    var date: Moment
     
-    var excerpt: js.UndefOr[String] = js.native
+    var excerpt: js.UndefOr[String] = js.undefined
     
-    var full_source: String = js.native
+    var full_source: String
     
-    var layout: String = js.native
+    var layout: String
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var more: js.UndefOr[String] = js.native
+    var more: js.UndefOr[String] = js.undefined
     
-    var next: js.UndefOr[Null | Page] = js.native
+    var next: js.UndefOr[Null | Page] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var permalink: String = js.native
+    var permalink: String
     
-    var photos: js.UndefOr[js.Array[String]] = js.native
+    var photos: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prev: js.UndefOr[Null | Page] = js.native
+    var prev: js.UndefOr[Null | Page] = js.undefined
     
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var title: String = js.native
+    var title: String
     
-    var updated: js.UndefOr[Moment] = js.native
+    var updated: js.UndefOr[Moment] = js.undefined
   }
   object Page {
     
@@ -226,14 +226,15 @@ object Locals {
     }
   }
   
-  @js.native
-  trait Post extends Page {
+  trait Post
+    extends StObject
+       with Page {
     
-    var categories: js.UndefOr[js.Array[String]] = js.native
+    var categories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var published: js.UndefOr[Boolean] = js.native
+    var published: js.UndefOr[Boolean] = js.undefined
     
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
   }
   object Post {
     
@@ -280,20 +281,19 @@ object Locals {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var permalink: String = js.native
+    var permalink: String
     
-    var posts: Model[typings.hexo.mod.Locals.Post] = js.native
+    var posts: Model[typings.hexo.mod.Locals.Post]
     
-    var slug: String = js.native
+    var slug: String
   }
   object Tag {
     

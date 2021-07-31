@@ -10,9 +10,9 @@ Parses data: URLs
 | ------------------ | :-------------: |
 | Full name          | data-urls |
 | Keywords           | data url, data uri, data:, http, fetch, whatwg |
-| # releases         | 3 |
-| # dependents       | 59 |
-| # downloads        | 333119565 |
+| # releases         | 2 |
+| # dependents       | 86 |
+| # downloads        | 448398951 |
 | # stars            | 1 |
 
 ## Links

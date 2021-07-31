@@ -3,7 +3,6 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,7 +60,7 @@ trait IgGridFeatureChooserPopoverMethods extends StObject {
     * @param content The string to set for the popover to show.
     */
   def show(): Unit = js.native
-  def show(trg: js.UndefOr[scala.Nothing], content: String): Unit = js.native
+  def show(trg: Unit, content: String): Unit = js.native
   def show(trg: Element): Unit = js.native
   def show(trg: Element, content: String): Unit = js.native
   

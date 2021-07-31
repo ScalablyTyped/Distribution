@@ -4,7 +4,6 @@ import typings.smoothScrollbar.anon.X
 import typings.smoothScrollbar.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bounceMod {

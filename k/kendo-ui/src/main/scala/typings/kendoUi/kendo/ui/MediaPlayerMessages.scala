@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPlayerMessages extends StObject {
   
-  var fullscreen: js.UndefOr[String] = js.native
+  var fullscreen: js.UndefOr[String] = js.undefined
   
-  var mute: js.UndefOr[String] = js.native
+  var mute: js.UndefOr[String] = js.undefined
   
-  var pause: js.UndefOr[String] = js.native
+  var pause: js.UndefOr[String] = js.undefined
   
-  var play: js.UndefOr[String] = js.native
+  var play: js.UndefOr[String] = js.undefined
   
-  var quality: js.UndefOr[String] = js.native
+  var quality: js.UndefOr[String] = js.undefined
   
-  var unmute: js.UndefOr[String] = js.native
+  var unmute: js.UndefOr[String] = js.undefined
 }
 object MediaPlayerMessages {
   

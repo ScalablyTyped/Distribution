@@ -3,10 +3,8 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.dns.ResolveCallbackResolveInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofdns extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Typeofdns extends StObject {
     * @param hostname The hostname to resolve.
     * @param callback Called when the resolution operation completes.
     */
-  def resolve(hostname: String, callback: js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]): Unit = js.native
+  def resolve(hostname: String, callback: js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]): Unit
 }
 object Typeofdns {
   

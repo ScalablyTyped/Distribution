@@ -2,47 +2,47 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyntaxInformationMap extends SyntaxWalker {
+trait SyntaxInformationMap
+  extends StObject
+     with SyntaxWalker {
   
-  var _currentPosition: js.Any = js.native
+  var _currentPosition: js.Any
   
-  var _elementToParent: js.Any = js.native
+  var _elementToParent: js.Any
   
-  var _parentStack: js.Any = js.native
+  var _parentStack: js.Any
   
-  var _previousToken: js.Any = js.native
+  var _previousToken: js.Any
   
-  var _previousTokenInformation: js.Any = js.native
+  var _previousTokenInformation: js.Any
   
-  var elementToPosition: js.Any = js.native
+  var elementToPosition: js.Any
   
-  def end(element: ISyntaxElement): Double = js.native
+  def end(element: ISyntaxElement): Double
   
-  def firstTokenInLineContainingToken(token: ISyntaxToken): ISyntaxToken = js.native
+  def firstTokenInLineContainingToken(token: ISyntaxToken): ISyntaxToken
   
-  def fullStart(element: ISyntaxElement): Double = js.native
+  def fullStart(element: ISyntaxElement): Double
   
-  def isFirstTokenInLine(token: ISyntaxToken): Boolean = js.native
+  def isFirstTokenInLine(token: ISyntaxToken): Boolean
   
-  /* private */ def isFirstTokenInLineWorker(information: js.Any): js.Any = js.native
+  /* private */ def isFirstTokenInLineWorker(information: js.Any): js.Any
   
-  def parent(element: ISyntaxElement): SyntaxNode = js.native
+  def parent(element: ISyntaxElement): SyntaxNode
   
-  def previousToken(token: ISyntaxToken): ISyntaxToken = js.native
+  def previousToken(token: ISyntaxToken): ISyntaxToken
   
-  def start(element: ISyntaxElement): Double = js.native
+  def start(element: ISyntaxElement): Double
   
-  def tokenInformation(token: ISyntaxToken): ITokenInformation = js.native
+  def tokenInformation(token: ISyntaxToken): ITokenInformation
   
-  var tokenToInformation: js.Any = js.native
+  var tokenToInformation: js.Any
   
-  var trackParents: js.Any = js.native
+  var trackParents: js.Any
   
-  var trackPreviousToken: js.Any = js.native
+  var trackPreviousToken: js.Any
 }
 object SyntaxInformationMap {
   

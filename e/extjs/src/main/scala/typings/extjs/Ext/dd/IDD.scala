@@ -3,11 +3,11 @@ package typings.extjs.Ext.dd
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDD extends IDragDrop {
+trait IDD
+  extends StObject
+     with IDragDrop {
   
   /** [Method] Sets the element to the location of the mousedown or click event maintaining the cursor location relative to the loc
     * @param el HTMLElement the element to move
@@ -21,7 +21,7 @@ trait IDD extends IDragDrop {
       /* iPageY */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the pointer offset to the distance between the linked element s top left corner and the location the element was
     * @param iPageX Number the X coordinate of the click
@@ -29,17 +29,17 @@ trait IDD extends IDragDrop {
     */
   var autoOffset: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Event that fires prior to the onDrag event
     * @param e Object
     */
-  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var b4Drag: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Event that fires prior to the onMouseDown event
     * @param e Object
     */
-  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+  var b4MouseDown: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Saves the most recent position so that we can reset the constraints and tick marks on demand
     * @param iPageX Number the current x position (this just makes it so we don't have to look it up again)
@@ -47,10 +47,10 @@ trait IDD extends IDragDrop {
     */
   var cachePosition: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Boolean) */
-  var scroll: js.UndefOr[Boolean] = js.native
+  var scroll: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the pointer offset
     * @param iDeltaX Number the distance from the left
@@ -58,7 +58,7 @@ trait IDD extends IDragDrop {
     */
   var setDelta: js.UndefOr[
     js.Function2[/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the drag element to the location of the mousedown or click event maintaining the cursor location relative to th
     * @param iPageX Number the X coordinate of the mousedown or drag event
@@ -66,13 +66,13 @@ trait IDD extends IDragDrop {
     */
   var setDragElPos: js.UndefOr[
     js.Function2[/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] toString method
     * @returns String string representation of the dd obj
     */
   @JSName("toString")
-  var toString_FIDD: js.UndefOr[js.Function0[String]] = js.native
+  var toString_FIDD: js.UndefOr[js.Function0[String]] = js.undefined
 }
 object IDD {
   

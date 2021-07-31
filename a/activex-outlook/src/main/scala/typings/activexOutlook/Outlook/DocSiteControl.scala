@@ -2,18 +2,16 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocSiteControl extends StObject {
   
   @JSName("Outlook._DocSiteControl_typekey")
-  var OutlookDot_DocSiteControl_typekey: DocSiteControl = js.native
+  var OutlookDot_DocSiteControl_typekey: DocSiteControl
   
-  var ReadOnly: Double = js.native
+  var ReadOnly: Double
   
-  var SuppressAttachments: Double = js.native
+  var SuppressAttachments: Double
 }
 object DocSiteControl {
   

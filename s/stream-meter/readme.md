@@ -10,8 +10,8 @@ A stream meter that both counts the bytes piped through it, and can optionally a
 | Full name          | stream-meter |
 | Keywords           | streams2, streams, meter, abort |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 2267875 |
+| # dependents       | 29 |
+| # downloads        | 2925120 |
 | # stars            | 3 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,30 +15,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setId("info_id")
   *       .setHelpText("This connector can connect to multiple data endpoints.");
   */
-@js.native
 trait Config extends StObject {
   
-  def build(): Config = js.native
+  def build(): Config
   
-  def newCheckbox(): Checkbox = js.native
+  def newCheckbox(): Checkbox
   
-  def newInfo(): Info = js.native
+  def newInfo(): Info
   
-  def newOptionBuilder(): OptionBuilder = js.native
+  def newOptionBuilder(): OptionBuilder
   
-  def newSelectMultiple(): SelectMultiple = js.native
+  def newSelectMultiple(): SelectMultiple
   
-  def newSelectSingle(): SelectSingle = js.native
+  def newSelectSingle(): SelectSingle
   
-  def newTextArea(): TextArea = js.native
+  def newTextArea(): TextArea
   
-  def newTextInput(): TextInput = js.native
+  def newTextInput(): TextInput
   
-  def printJson(): String = js.native
+  def printJson(): String
   
-  def setDateRangeRequired(dateRangeRequired: Boolean): Config = js.native
+  def setDateRangeRequired(dateRangeRequired: Boolean): Config
   
-  def setIsSteppedConfig(isSteppedConfig: Boolean): Config = js.native
+  def setIsSteppedConfig(isSteppedConfig: Boolean): Config
 }
 object Config {
   

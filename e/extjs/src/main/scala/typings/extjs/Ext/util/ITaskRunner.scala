@@ -3,40 +3,40 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITaskRunner extends IBase {
+trait ITaskRunner
+  extends StObject
+     with IBase {
   
   /** [Method] Destroys this instance stopping all tasks that are currently running  */
-  var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+  var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var fireIdleEvent: js.UndefOr[Boolean] = js.native
+  var fireIdleEvent: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /** [Method] Creates a new Task instance
     * @param config Object The config object. For details on the supported properties, see start.
     */
-  var newTask: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+  var newTask: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Starts a new task
     * @param task Object A config object that supports the following properties:
     * @returns Object The task
     */
-  var start: js.UndefOr[js.Function1[/* task */ js.UndefOr[js.Any], _]] = js.native
+  var start: js.UndefOr[js.Function1[/* task */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Stops an existing running task
     * @param task Object The task to stop
     * @returns Object The task
     */
-  var stop: js.UndefOr[js.Function1[/* task */ js.UndefOr[js.Any], _]] = js.native
+  var stop: js.UndefOr[js.Function1[/* task */ js.UndefOr[js.Any], js.Any]] = js.undefined
   
   /** [Method] Stops all tasks that are currently running  */
-  var stopAll: js.UndefOr[js.Function0[Unit]] = js.native
+  var stopAll: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object ITaskRunner {
   
@@ -74,13 +74,13 @@ object ITaskRunner {
     def setNewTaskUndefined: Self = StObject.set(x, "newTask", js.undefined)
     
     @scala.inline
-    def setStart(value: /* task */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    def setStart(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
     @scala.inline
     def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
     @scala.inline
-    def setStop(value: /* task */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    def setStop(value: /* task */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
     @scala.inline
     def setStopAll(value: () => Unit): Self = StObject.set(x, "stopAll", js.Any.fromFunction0(value))

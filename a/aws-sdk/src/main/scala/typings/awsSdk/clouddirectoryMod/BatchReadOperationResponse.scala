@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchReadOperationResponse extends StObject {
   
   /**
     * Identifies which operation in a batch has failed.
     */
-  var ExceptionResponse: js.UndefOr[BatchReadException] = js.native
+  var ExceptionResponse: js.UndefOr[BatchReadException] = js.undefined
   
   /**
     * Identifies which operation in a batch has succeeded.
     */
-  var SuccessfulResponse: js.UndefOr[BatchReadSuccessfulResponse] = js.native
+  var SuccessfulResponse: js.UndefOr[BatchReadSuccessfulResponse] = js.undefined
 }
 object BatchReadOperationResponse {
   

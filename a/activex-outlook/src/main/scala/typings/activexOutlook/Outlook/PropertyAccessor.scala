@@ -3,42 +3,40 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyAccessor extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def BinaryToString(Value: js.Any): String = js.native
+  def BinaryToString(Value: js.Any): String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def DeleteProperties(SchemaNames: js.Any): js.Any = js.native
+  def DeleteProperties(SchemaNames: js.Any): js.Any
   
-  def DeleteProperty(SchemaName: String): Unit = js.native
+  def DeleteProperty(SchemaName: String): Unit
   
-  def GetProperties(SchemaNames: js.Any): js.Any = js.native
+  def GetProperties(SchemaNames: js.Any): js.Any
   
-  def GetProperty(SchemaName: String): js.Any = js.native
+  def GetProperty(SchemaName: String): js.Any
   
-  def LocalTimeToUTC(Value: VarDate): VarDate = js.native
+  def LocalTimeToUTC(Value: VarDate): VarDate
   
   @JSName("Outlook.PropertyAccessor_typekey")
-  var OutlookDotPropertyAccessor_typekey: PropertyAccessor = js.native
+  var OutlookDotPropertyAccessor_typekey: PropertyAccessor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def SetProperties(SchemaNames: js.Any, Values: js.Any): js.Any = js.native
+  def SetProperties(SchemaNames: js.Any, Values: js.Any): js.Any
   
-  def SetProperty(SchemaName: String, Value: js.Any): Unit = js.native
+  def SetProperty(SchemaName: String, Value: js.Any): Unit
   
-  def StringToBinary(Value: String): js.Any = js.native
+  def StringToBinary(Value: String): js.Any
   
-  def UTCToLocalTime(Value: VarDate): VarDate = js.native
+  def UTCToLocalTime(Value: VarDate): VarDate
 }
 object PropertyAccessor {
   

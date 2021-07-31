@@ -2,29 +2,27 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reservation Affinity for consuming Zonal reservation.
   */
-@js.native
 trait SchemaReservationAffinity extends StObject {
   
   /**
     * Optional. Type of reservation to consume
     */
-  var consumeReservationType: js.UndefOr[String] = js.native
+  var consumeReservationType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Corresponds to the label key of reservation resource.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Corresponds to the label values of reservation resource.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaReservationAffinity {
   

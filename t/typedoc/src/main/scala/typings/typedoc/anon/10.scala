@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.inputFiles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `10` extends StObject {
   
-  var name: inputFiles = js.native
+  var name: inputFiles
 }
 object `10` {
   
   @scala.inline
-  def apply(name: inputFiles): `10` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `10` = {
+    val __obj = js.Dynamic.literal(name = "inputFiles")
     __obj.asInstanceOf[`10`]
   }
   

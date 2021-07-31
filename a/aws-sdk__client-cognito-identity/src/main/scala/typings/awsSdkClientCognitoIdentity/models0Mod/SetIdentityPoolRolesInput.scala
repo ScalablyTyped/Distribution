@@ -3,16 +3,14 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetIdentityPoolRolesInput extends StObject {
   
   /**
     * <p>An identity pool ID in the format REGION:GUID.</p>
     */
-  var IdentityPoolId: js.UndefOr[String] = js.native
+  var IdentityPoolId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>How users for a specific identity provider are to mapped to roles. This is a string
@@ -21,13 +19,13 @@ trait SetIdentityPoolRolesInput extends StObject {
     *          "cognito-idp-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".</p>
     *          <p>Up to 25 rules can be specified per identity provider.</p>
     */
-  var RoleMappings: js.UndefOr[StringDictionary[RoleMapping]] = js.native
+  var RoleMappings: js.UndefOr[StringDictionary[RoleMapping]] = js.undefined
   
   /**
     * <p>The map of roles associated with this pool. For a given role, the key will be either
     *          "authenticated" or "unauthenticated" and the value will be the Role ARN.</p>
     */
-  var Roles: js.UndefOr[StringDictionary[String]] = js.native
+  var Roles: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SetIdentityPoolRolesInput {
   
@@ -37,9 +35,12 @@ object SetIdentityPoolRolesInput {
     __obj.asInstanceOf[SetIdentityPoolRolesInput]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "SetIdentityPoolRolesInput.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "SetIdentityPoolRolesInput")
   @js.native
-  def filterSensitiveLog(obj: SetIdentityPoolRolesInput): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: SetIdentityPoolRolesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class SetIdentityPoolRolesInputMutableBuilder[Self <: SetIdentityPoolRolesInput] (val x: Self) extends AnyVal {

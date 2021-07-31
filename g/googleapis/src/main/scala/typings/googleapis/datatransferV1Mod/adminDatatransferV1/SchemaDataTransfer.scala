@@ -2,13 +2,11 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The JSON template for a DataTransfer resource.
   */
-@js.native
 trait SchemaDataTransfer extends StObject {
   
   /**
@@ -18,42 +16,42 @@ trait SchemaDataTransfer extends StObject {
     * for which data transfer has to be done at the time of the transfer
     * resource creation.
     */
-  var applicationDataTransfers: js.UndefOr[js.Array[SchemaApplicationDataTransfer]] = js.native
+  var applicationDataTransfers: js.UndefOr[js.Array[SchemaApplicationDataTransfer]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The transfer&#39;s ID (Read-only).
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a DataTransfer request.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the user to whom the data is being transfered.
     */
-  var newOwnerUserId: js.UndefOr[String] = js.native
+  var newOwnerUserId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the user whose data is being transfered.
     */
-  var oldOwnerUserId: js.UndefOr[String] = js.native
+  var oldOwnerUserId: js.UndefOr[String] = js.undefined
   
   /**
     * Overall transfer status (Read-only).
     */
-  var overallTransferStatusCode: js.UndefOr[String] = js.native
+  var overallTransferStatusCode: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the data transfer was requested (Read-only).
     */
-  var requestTime: js.UndefOr[String] = js.native
+  var requestTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDataTransfer {
   

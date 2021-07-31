@@ -3,20 +3,19 @@ package typings.mangopay2NodejsSdk.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headers
-  extends /* header */ StringDictionary[js.UndefOr[String]] {
+  extends StObject
+     with /* header */ StringDictionary[js.UndefOr[String]] {
   
-  var Authorization: String = js.native
+  var Authorization: String
   
-  var `Content-Type`: String = js.native
+  var `Content-Type`: String
   
-  var `Idempotency-Key`: String = js.native
+  var `Idempotency-Key`: String
   
-  var `User-Agent`: String = js.native
+  var `User-Agent`: String
 }
 object Headers {
   

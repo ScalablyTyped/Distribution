@@ -6,7 +6,6 @@ import typings.jqueryui.JQueryUI.SliderEvent
 import typings.jqueryui.JQueryUI.SliderUIParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uirangeoptionsMod {
@@ -15,52 +14,51 @@ object uirangeoptionsMod {
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/NumericOptions.NumericOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/DelayableOptions.DelayableOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/PreviewableOptions.PreviewableOptions */
-  @js.native
   trait UIRangeOptions extends StObject {
     
-    var animate: js.UndefOr[js.Any] = js.native
+    var animate: js.UndefOr[js.Any] = js.undefined
     
-    var change: js.UndefOr[SliderEvent] = js.native
+    var change: js.UndefOr[SliderEvent] = js.undefined
     
-    var classes: js.UndefOr[SliderClasses] = js.native
+    var classes: js.UndefOr[SliderClasses] = js.undefined
     
-    var create: js.UndefOr[SliderEvent] = js.native
+    var create: js.UndefOr[SliderEvent] = js.undefined
     
     /**
       * A value indicating whether the value of the filter should be set delayed.
       */
-    var delayed: js.UndefOr[Boolean] = js.native
+    var delayed: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum value of the control.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum value of the control.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var range: js.UndefOr[js.Any] = js.native
+    var range: js.UndefOr[js.Any] = js.undefined
     
-    var slide: js.UndefOr[SliderEvent] = js.native
+    var slide: js.UndefOr[SliderEvent] = js.undefined
     
-    var start: js.UndefOr[SliderEvent] = js.native
+    var start: js.UndefOr[SliderEvent] = js.undefined
     
-    var stop: js.UndefOr[SliderEvent] = js.native
+    var stop: js.UndefOr[SliderEvent] = js.undefined
     
     /**
       * A value indicating whether the value should be visible in the table header.
       */
-    var valueToHeader: js.UndefOr[Boolean] = js.native
+    var valueToHeader: js.UndefOr[Boolean] = js.undefined
     
-    var values: js.UndefOr[js.Array[Double]] = js.native
+    var values: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object UIRangeOptions {
     

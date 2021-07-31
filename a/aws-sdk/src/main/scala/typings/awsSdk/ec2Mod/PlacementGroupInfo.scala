@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementGroupInfo extends StObject {
   
   /**
     * The supported placement group types.
     */
-  var SupportedStrategies: js.UndefOr[PlacementGroupStrategyList] = js.native
+  var SupportedStrategies: js.UndefOr[PlacementGroupStrategyList] = js.undefined
 }
 object PlacementGroupInfo {
   

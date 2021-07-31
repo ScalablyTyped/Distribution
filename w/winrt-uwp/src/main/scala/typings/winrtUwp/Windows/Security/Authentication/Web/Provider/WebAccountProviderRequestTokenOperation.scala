@@ -5,36 +5,34 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Authentication.Web.Core.WebProviderError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a request token operation. */
-@js.native
 trait WebAccountProviderRequestTokenOperation extends StObject {
   
   /** Gets or sets the cache expiration time. */
-  var cacheExpirationTime: Date = js.native
+  var cacheExpirationTime: Date
   
   /** Gets the kind of web account provider operation. */
-  var kind: WebAccountProviderOperationKind = js.native
+  var kind: WebAccountProviderOperationKind
   
   /** Gets the web provider token request. */
-  var providerRequest: WebProviderTokenRequest = js.native
+  var providerRequest: WebProviderTokenRequest
   
   /** Gets the web provider token responses. */
-  var providerResponses: IVector[WebProviderTokenResponse] = js.native
+  var providerResponses: IVector[WebProviderTokenResponse]
   
   /** Informs the activating app that the operation completed successfully. */
-  def reportCompleted(): Unit = js.native
+  def reportCompleted(): Unit
   
   /**
     * Informs the activating app that the operation encountered an error.
     * @param value The type of error encountered.
     */
-  def reportError(value: WebProviderError): Unit = js.native
+  def reportError(value: WebProviderError): Unit
   
   /** Informs the activating app that the user cancelled the operation. */
-  def reportUserCanceled(): Unit = js.native
+  def reportUserCanceled(): Unit
 }
 object WebAccountProviderRequestTokenOperation {
   

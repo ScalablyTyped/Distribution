@@ -2,7 +2,6 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,26 +9,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by `StreamingAnnotateVideo`. A series of zero or more
   * `StreamingAnnotateVideoResponse` messages are streamed back to the client.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends StObject {
   
   /**
     * Streaming annotation results.
     */
-  var annotationResults: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults] = js.native
+  var annotationResults: js.UndefOr[SchemaGoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults] = js.undefined
   
   /**
     * GCS URI that stores annotation results of one streaming session. It is a
     * directory that can hold multiple files in JSON format. Example uri
     * format: gs://bucket_id/object_id/cloud_project_name-session_id
     */
-  var annotationResultsUri: js.UndefOr[String] = js.native
+  var annotationResultsUri: js.UndefOr[String] = js.undefined
   
   /**
     * If set, returns a google.rpc.Status message that specifies the error for
     * the operation.
     */
-  var error: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var error: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse {
   

@@ -6,32 +6,30 @@ import typings.vueNiceDates.sharedMod.Modifiers
 import typings.vueNiceDates.sharedMod.ModifiersClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<vue-nice-dates.vue-nice-dates/shared.DatePickerProps, 'isFocus'> */
-@js.native
 trait OmitDatePickerPropsisFocu extends StObject {
   
-  var date: String = js.native
+  var date: String
   
-  var enableGridSwitch: Boolean = js.native
+  var enableGridSwitch: Boolean
   
-  var format: String = js.native
+  var format: String
   
-  var initialDate: js.UndefOr[typings.std.Date] = js.native
+  var initialDate: js.UndefOr[typings.std.Date] = js.undefined
   
-  var locale: DateLocale = js.native
+  var locale: DateLocale
   
-  var maximumDate: js.UndefOr[typings.std.Date | Null] = js.native
+  var maximumDate: js.UndefOr[typings.std.Date | Null] = js.undefined
   
-  var minimumDate: js.UndefOr[typings.std.Date | Null] = js.native
+  var minimumDate: js.UndefOr[typings.std.Date | Null] = js.undefined
   
-  var modifiers: Modifiers = js.native
+  var modifiers: Modifiers
   
-  var modifiersClassNames: ModifiersClassNames = js.native
+  var modifiersClassNames: ModifiersClassNames
   
-  var validator: StringDictionary[js.Function1[/* date */ typings.std.Date, Boolean]] = js.native
+  var validator: StringDictionary[js.Function1[/* date */ typings.std.Date, Boolean]]
 }
 object OmitDatePickerPropsisFocu {
   

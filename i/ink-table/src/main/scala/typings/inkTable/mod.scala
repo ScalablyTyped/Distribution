@@ -2,7 +2,6 @@ package typings.inkTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,24 +22,23 @@ object mod {
   @js.native
   val Skeleton: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StatelessComponent<{  children :InkNode}> */ js.Any = js.native
   
-  @js.native
   trait TableProps extends StObject {
     
     var cell: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkComponent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var data: js.UndefOr[js.Array[js.Object]] = js.native
+    var data: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     var header: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkComponent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     var skeleton: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkComponent */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TableProps {
     

@@ -3,17 +3,15 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchIssuesAndPullRequestsResponseData extends StObject {
   
-  var incomplete_results: Boolean = js.native
+  var incomplete_results: Boolean
   
-  var items: js.Array[Labels] = js.native
+  var items: js.Array[Labels]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object SearchIssuesAndPullRequestsResponseData {
   

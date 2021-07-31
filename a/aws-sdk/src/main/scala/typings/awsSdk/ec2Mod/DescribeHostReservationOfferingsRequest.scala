@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHostReservationOfferingsRequest extends StObject {
   
   /**
     * The filters.    instance-family - The instance family of the offering (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).  
     */
-  var Filter: js.UndefOr[FilterList] = js.native
+  var Filter: js.UndefOr[FilterList] = js.undefined
   
   /**
     * This is the maximum duration of the reservation to purchase, specified in seconds. Reservations are available in one-year and three-year terms. The number of seconds specified must be the number of seconds in a year (365x24x60x60) times one of the supported durations (1 or 3). For example, specify 94608000 for three years.
     */
-  var MaxDuration: js.UndefOr[Integer] = js.native
+  var MaxDuration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned nextToken value. This value can be between 5 and 500. If maxResults is given a larger value than 500, you receive an error.
     */
-  var MaxResults: js.UndefOr[DescribeHostReservationsMaxResults] = js.native
+  var MaxResults: js.UndefOr[DescribeHostReservationsMaxResults] = js.undefined
   
   /**
     * This is the minimum duration of the reservation you'd like to purchase, specified in seconds. Reservations are available in one-year and three-year terms. The number of seconds specified must be the number of seconds in a year (365x24x60x60) times one of the supported durations (1 or 3). For example, specify 31536000 for one year.
     */
-  var MinDuration: js.UndefOr[Integer] = js.native
+  var MinDuration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reservation offering.
     */
-  var OfferingId: js.UndefOr[typings.awsSdk.ec2Mod.OfferingId] = js.native
+  var OfferingId: js.UndefOr[typings.awsSdk.ec2Mod.OfferingId] = js.undefined
 }
 object DescribeHostReservationOfferingsRequest {
   

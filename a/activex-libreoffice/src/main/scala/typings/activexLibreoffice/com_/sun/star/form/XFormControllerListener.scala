@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,21 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A form controller is activated if a form control gains the focus and none of its controls currently owned the focus before.
   * @see XFormController
   */
-@js.native
-trait XFormControllerListener extends XEventListener {
+trait XFormControllerListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a control of the controller gained the focus and the controller was not previously activated.
     * @param rEvent the event happened.
     */
-  def formActivated(rEvent: EventObject): Unit = js.native
+  def formActivated(rEvent: EventObject): Unit
   
   /**
     * is invoked when a control of the "XFormController" lost the focus and no control of the controller received the focus. In other words, no control of
     * the controller owns the focus.
     * @param rEvent the event happened.
     */
-  def formDeactivated(rEvent: EventObject): Unit = js.native
+  def formDeactivated(rEvent: EventObject): Unit
 }
 object XFormControllerListener {
   

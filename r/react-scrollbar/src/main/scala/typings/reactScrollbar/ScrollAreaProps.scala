@@ -5,49 +5,49 @@ import typings.react.mod.Props
 import typings.reactScrollbar.anon.ContainerHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollAreaProps extends Props[ScrollArea] {
+trait ScrollAreaProps
+  extends StObject
+     with Props[ScrollArea] {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var contentClassName: js.UndefOr[String] = js.native
+  var contentClassName: js.UndefOr[String] = js.undefined
   
-  var contentStyle: js.UndefOr[CSSProperties] = js.native
+  var contentStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var contentWindow: js.UndefOr[js.Any] = js.native
+  var contentWindow: js.UndefOr[js.Any] = js.undefined
   
-  var focusableTabIndex: js.UndefOr[Double] = js.native
+  var focusableTabIndex: js.UndefOr[Double] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalContainerStyle: js.UndefOr[CSSProperties] = js.native
+  var horizontalContainerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var horizontalScrollbarStyle: js.UndefOr[CSSProperties] = js.native
+  var horizontalScrollbarStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var minScrollSize: js.UndefOr[Double] = js.native
+  var minScrollSize: js.UndefOr[Double] = js.undefined
   
-  var onScroll: js.UndefOr[js.Function1[/* value */ ContainerHeight, Unit]] = js.native
+  var onScroll: js.UndefOr[js.Function1[/* value */ ContainerHeight, Unit]] = js.undefined
   
-  var ownerDocument: js.UndefOr[js.Any] = js.native
+  var ownerDocument: js.UndefOr[js.Any] = js.undefined
   
-  var smoothScrolling: js.UndefOr[Boolean] = js.native
+  var smoothScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
-  var stopScrollPropagation: js.UndefOr[Boolean] = js.native
+  var stopScrollPropagation: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var swapWheelAxes: js.UndefOr[Boolean] = js.native
+  var swapWheelAxes: js.UndefOr[Boolean] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
   
-  var verticalContainerStyle: js.UndefOr[CSSProperties] = js.native
+  var verticalContainerStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var verticalScrollbarStyle: js.UndefOr[CSSProperties] = js.native
+  var verticalScrollbarStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 object ScrollAreaProps {
   

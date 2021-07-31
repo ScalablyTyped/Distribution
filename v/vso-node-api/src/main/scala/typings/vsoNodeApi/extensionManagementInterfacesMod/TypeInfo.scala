@@ -14,7 +14,6 @@ import typings.vsoNodeApi.anon.EnumValuesMe
 import typings.vsoNodeApi.anon.EnumValuesWarning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TypeInfo {

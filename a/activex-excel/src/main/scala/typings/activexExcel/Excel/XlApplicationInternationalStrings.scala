@@ -26,7 +26,6 @@ import typings.activexExcel.activexExcelNumbers.`8`
 import typings.activexExcel.activexExcelNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -55,7 +54,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.activexExcel.activexExcelNumbers.`18`
   - typings.activexExcel.activexExcelNumbers.`19`
 */
-trait XlApplicationInternationalStrings extends XlApplicationInternational
+trait XlApplicationInternationalStrings
+  extends StObject
+     with XlApplicationInternational
 object XlApplicationInternationalStrings {
   
   @scala.inline

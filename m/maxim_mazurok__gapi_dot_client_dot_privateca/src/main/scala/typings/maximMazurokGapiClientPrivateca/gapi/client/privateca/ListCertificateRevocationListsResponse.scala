@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCertificateRevocationListsResponse extends StObject {
   
   /** The list of CertificateRevocationLists. */
-  var certificateRevocationLists: js.UndefOr[js.Array[CertificateRevocationList]] = js.native
+  var certificateRevocationLists: js.UndefOr[js.Array[CertificateRevocationList]] = js.undefined
   
   /** A token to retrieve next page of results. Pass this value in ListCertificateRevocationListsRequest.next_page_token to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of locations (e.g. "us-west1") that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListCertificateRevocationListsResponse {
   

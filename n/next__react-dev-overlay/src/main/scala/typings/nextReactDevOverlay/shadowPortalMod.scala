@@ -4,7 +4,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shadowPortalMod {
@@ -13,10 +12,9 @@ object shadowPortalMod {
   @js.native
   val ShadowPortal: FC[ShadowPortalProps] = js.native
   
-  @js.native
   trait ShadowPortalProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object ShadowPortalProps {
     

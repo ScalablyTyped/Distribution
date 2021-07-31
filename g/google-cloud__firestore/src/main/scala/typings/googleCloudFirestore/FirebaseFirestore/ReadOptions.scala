@@ -2,10 +2,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ReadOptions extends StObject {
     * contain values for all the fields in the mask to be part of the result
     * set.
     */
-  val fieldMask: js.UndefOr[js.Array[String | FieldPath]] = js.native
+  val fieldMask: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
 object ReadOptions {
   

@@ -5,25 +5,24 @@ import typings.awsSdkClientDynamodbNode.restoreTableFromBackupExceptionsUnionMod
 import typings.awsSdkClientDynamodbNode.restoreTableToPointInTimeExceptionsUnionMod.RestoreTableToPointInTimeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTableInUseExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableInUseExceptionDetails> * / any */ @js.native
-  trait TableInUseException
-    extends CreateBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_TableInUseExceptionDetails> * / any */ trait TableInUseException
+    extends StObject
+       with CreateBackupExceptionsUnion
        with RestoreTableFromBackupExceptionsUnion
        with RestoreTableToPointInTimeExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableInUseException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableInUseException
   }
   object TableInUseException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.TableInUseException): TableInUseException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): TableInUseException = {
+      val __obj = js.Dynamic.literal(name = "TableInUseException")
       __obj.asInstanceOf[TableInUseException]
     }
     
@@ -35,13 +34,12 @@ object typesTableInUseExceptionMod {
     }
   }
   
-  @js.native
   trait TableInUseExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object TableInUseExceptionDetails {
     

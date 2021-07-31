@@ -2,29 +2,27 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a recipient.
   */
-@js.native
 trait SchemaRecipient extends StObject {
   
   /**
     * The delivery type for the recipient.
     */
-  var deliveryType: js.UndefOr[String] = js.native
+  var deliveryType: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the recipient.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of resource this is, in this case dfareporting#recipient.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaRecipient {
   

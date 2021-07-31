@@ -27,7 +27,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,9 +36,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * serve as a template; thus, when changing a data point property afterwards
   * @see ChartDataPointProperties
   */
-@js.native
 trait ChartDataRowProperties
-  extends ChartDataPointProperties
+  extends StObject
+     with ChartDataPointProperties
      with ChartStatistics {
   
   /**
@@ -50,28 +49,28 @@ trait ChartDataRowProperties
     * @see ChartAxisYSupplier
     * @see ChartTwoAxisYSupplier
     */
-  var Axis: Double = js.native
+  var Axis: Double
   
   /**
     * holds the properties of the error markers, if those are enabled.
     * @see ChartLine
     * @see ChartStatistics
     */
-  var DataErrorProperties: XPropertySet = js.native
+  var DataErrorProperties: XPropertySet
   
   /**
     * holds the properties of the average line, if such one is enabled.
     * @see ChartLine
     * @see ChartStatistics
     */
-  var DataMeanValueProperties: XPropertySet = js.native
+  var DataMeanValueProperties: XPropertySet
   
   /**
     * holds the properties of the regression line, if such one is enabled.
     * @see ChartLine
     * @see ChartStatistics
     */
-  var DataRegressionProperties: XPropertySet = js.native
+  var DataRegressionProperties: XPropertySet
 }
 object ChartDataRowProperties {
   

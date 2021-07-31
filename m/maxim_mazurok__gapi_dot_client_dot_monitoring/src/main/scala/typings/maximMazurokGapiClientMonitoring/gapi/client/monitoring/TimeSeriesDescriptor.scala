@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeSeriesDescriptor extends StObject {
   
   /** Descriptors for the labels. */
-  var labelDescriptors: js.UndefOr[js.Array[LabelDescriptor]] = js.native
+  var labelDescriptors: js.UndefOr[js.Array[LabelDescriptor]] = js.undefined
   
   /** Descriptors for the point data value columns. */
-  var pointDescriptors: js.UndefOr[js.Array[ValueDescriptor]] = js.native
+  var pointDescriptors: js.UndefOr[js.Array[ValueDescriptor]] = js.undefined
 }
 object TimeSeriesDescriptor {
   

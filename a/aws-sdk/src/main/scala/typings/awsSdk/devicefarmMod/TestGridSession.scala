@@ -2,41 +2,39 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestGridSession extends StObject {
   
   /**
     * The ARN of the session.
     */
-  var arn: js.UndefOr[DeviceFarmArn] = js.native
+  var arn: js.UndefOr[DeviceFarmArn] = js.undefined
   
   /**
     * The number of billed minutes that were used for this session. 
     */
-  var billingMinutes: js.UndefOr[Double] = js.native
+  var billingMinutes: js.UndefOr[Double] = js.undefined
   
   /**
     * The time that the session was started.
     */
-  var created: js.UndefOr[DateTime] = js.native
+  var created: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time the session ended.
     */
-  var ended: js.UndefOr[DateTime] = js.native
+  var ended: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A JSON object of options and parameters passed to the Selenium WebDriver.
     */
-  var seleniumProperties: js.UndefOr[String] = js.native
+  var seleniumProperties: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the session.
     */
-  var status: js.UndefOr[TestGridSessionStatus] = js.native
+  var status: js.UndefOr[TestGridSessionStatus] = js.undefined
 }
 object TestGridSession {
   

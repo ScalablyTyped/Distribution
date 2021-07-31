@@ -2,36 +2,34 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMetricsInput extends StObject {
   
   /**
     * The dimensions to filter against. Only the dimensions that match exactly will be returned.
     */
-  var Dimensions: js.UndefOr[DimensionFilters] = js.native
+  var Dimensions: js.UndefOr[DimensionFilters] = js.undefined
   
   /**
     * The name of the metric to filter against. Only the metrics with names that match exactly will be returned.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.undefined
   
   /**
     * The metric namespace to filter against. Only the namespace that matches exactly will be returned.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.undefined
   
   /**
     * The token returned by a previous call to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
   
   /**
     * To filter the results to show only metrics that have had data points published in the past three hours, specify this parameter with a value of PT3H. This is the only valid value for this parameter. The results that are returned are an approximation of the value you specify. There is a low probability that the returned results include metrics with last published data as much as 40 minutes more than the specified time interval.
     */
-  var RecentlyActive: js.UndefOr[typings.awsSdk.cloudwatchMod.RecentlyActive] = js.native
+  var RecentlyActive: js.UndefOr[typings.awsSdk.cloudwatchMod.RecentlyActive] = js.undefined
 }
 object ListMetricsInput {
   

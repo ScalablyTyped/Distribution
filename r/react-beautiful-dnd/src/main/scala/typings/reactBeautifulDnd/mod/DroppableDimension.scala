@@ -2,34 +2,32 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DroppableDimension extends StObject {
   
-  var axis: Axis = js.native
+  var axis: Axis
   
   // relative to the current viewport
-  var client: BoxModel = js.native
+  var client: BoxModel
   
-  var descriptor: DroppableDescriptor = js.native
+  var descriptor: DroppableDescriptor
   
   // The container of the droppable
-  var frame: js.UndefOr[Scrollable] = js.native
+  var frame: js.UndefOr[Scrollable] = js.undefined
   
-  var isCombineEnabled: Boolean = js.native
+  var isCombineEnabled: Boolean
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   // relative to the whole page
-  var isFixedOnPage: Boolean = js.native
+  var isFixedOnPage: Boolean
   
   // relative to the page
-  var page: BoxModel = js.native
+  var page: BoxModel
   
   // what is visible through the frame
-  var subject: DroppableSubject = js.native
+  var subject: DroppableSubject
 }
 object DroppableDimension {
   

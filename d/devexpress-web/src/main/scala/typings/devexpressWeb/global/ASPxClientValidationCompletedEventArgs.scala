@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientValidationCompletedEventArgs")
 @js.native
 class ASPxClientValidationCompletedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientValidationCompletedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientValidationCompletedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientValidationCompletedEventArgs class.
     * @param container An object representing the container of controls that have been validated.
@@ -29,4 +29,40 @@ class ASPxClientValidationCompletedEventArgs protected ()
     firstInvalidControl: typings.devexpressWeb.ASPxClientControl,
     firstVisibleInvalidControl: typings.devexpressWeb.ASPxClientControl
   ) = this()
+  
+  /**
+    * Gets a container object that holds the validated control(s).
+    */
+  /* CompleteClass */
+  var container: js.Any = js.native
+  
+  /**
+    * Gets the first control (either visible or invisible) that hasn't passed the validation applied.
+    */
+  /* CompleteClass */
+  var firstInvalidControl: typings.devexpressWeb.ASPxClientControl = js.native
+  
+  /**
+    * Gets the first visible control that hasn't passed the validation applied.
+    */
+  /* CompleteClass */
+  var firstVisibleInvalidControl: typings.devexpressWeb.ASPxClientControl = js.native
+  
+  /**
+    * Gets a value that indicates whether validation has been applied to both visible and invisible controls.
+    */
+  /* CompleteClass */
+  var invisibleControlsValidated: Boolean = js.native
+  
+  /**
+    * Gets a value specifying whether the validation has been completed successfully.
+    */
+  /* CompleteClass */
+  var isValid: Boolean = js.native
+  
+  /**
+    * Gets the name of the validation group name to which validation has been applied.
+    */
+  /* CompleteClass */
+  var validationGroup: String = js.native
 }

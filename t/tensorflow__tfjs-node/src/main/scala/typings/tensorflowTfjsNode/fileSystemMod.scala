@@ -5,14 +5,19 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifacts
 import typings.tensorflowTfjsCore.typesMod.SaveResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileSystemMod {
   
+  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "NodeFileSystem")
   @js.native
-  class NodeFileSystem protected () extends IOHandler {
+  class NodeFileSystem protected ()
+    extends StObject
+       with IOHandler {
     /**
       * Constructor of the NodeFileSystem IOHandler.
       * @param path A single path or an Array of paths.
@@ -68,17 +73,13 @@ object fileSystemMod {
     val URL_SCHEME: /* "file://" */ String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "fileSystem")
-  @js.native
-  def fileSystem(path: String): NodeFileSystem = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "fileSystem")
-  @js.native
-  def fileSystem(path: js.Array[String]): NodeFileSystem = js.native
+  @scala.inline
+  def fileSystem(path: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  @scala.inline
+  def fileSystem(path: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSystem")(path.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
   
-  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "nodeFileSystemRouter")
-  @js.native
-  def nodeFileSystemRouter(url: String): NodeFileSystem = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/io/file_system", "nodeFileSystemRouter")
-  @js.native
-  def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = js.native
+  @scala.inline
+  def nodeFileSystemRouter(url: String): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
+  @scala.inline
+  def nodeFileSystemRouter(url: js.Array[String]): NodeFileSystem = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeFileSystemRouter")(url.asInstanceOf[js.Any]).asInstanceOf[NodeFileSystem]
 }

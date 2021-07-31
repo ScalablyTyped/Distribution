@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,41 +15,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For example, you can decide to change the background color of a visualization depending on the values of the measure.
   * Attribute expressions do not affect the layout of an object. The sorting order is unchanged.
   */
-@js.native
 trait INxMeasure extends StObject {
   
   /**
     * List of attribute dimensions.
     */
-  var qAttributeDimensions: js.UndefOr[js.Array[INxAttrDimDef]] = js.native
+  var qAttributeDimensions: js.UndefOr[js.Array[INxAttrDimDef]] = js.undefined
   
   /**
     * List of attribute expressions.
     */
-  var qAttributeExpressions: js.UndefOr[js.Array[INxAttrExprDef]] = js.native
+  var qAttributeExpressions: js.UndefOr[js.Array[INxAttrExprDef]] = js.undefined
   
   /**
     * Specifies a calculation condition, which must be fulfilled for the measure to be calculated.
     * If the calculation condition is not met, the measure is excluded from the calculation.
     * This property is optional. By default, there is no calculation condition.
     */
-  var qCalcCond: js.UndefOr[IValueExpr] = js.native
+  var qCalcCond: js.UndefOr[IValueExpr] = js.undefined
   
   /**
     * Refers to a measure stored in the hypercube.
     */
-  var qDef: INxInlineMeasureDef = js.native
+  var qDef: INxInlineMeasureDef
   
   /**
     * Refers to a measure stored in the library.
     */
-  var qLibraryId: js.UndefOr[String] = js.native
+  var qLibraryId: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the sort criteria.
     * This property is optional. The default value is sort by ascending alphabetic order.
     */
-  var qSortBy: js.UndefOr[ISortCriteria] = js.native
+  var qSortBy: js.UndefOr[ISortCriteria] = js.undefined
 }
 object INxMeasure {
   

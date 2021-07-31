@@ -2,45 +2,46 @@ package typings.reactNativeHtmlToPdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-html-to-pdf", "convert")
+  @JSImport("react-native-html-to-pdf", JSImport.Namespace)
   @js.native
-  def convert(options: Options): js.Promise[Pdf] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def convert(options: Options): js.Promise[Pdf] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Pdf]]
+  
   trait Options extends StObject {
     
-    var base64: js.UndefOr[Boolean] = js.native
+    var base64: js.UndefOr[Boolean] = js.undefined
     
-    var bgColor: js.UndefOr[String] = js.native
+    var bgColor: js.UndefOr[String] = js.undefined
     
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     // android only
-    var fonts: js.UndefOr[js.Array[String]] = js.native
+    var fonts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var html: String = js.native
+    var html: String
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
     // iOS only
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -133,12 +134,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Pdf extends StObject {
     
-    var base64: js.UndefOr[String] = js.native
+    var base64: js.UndefOr[String] = js.undefined
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
   }
   object Pdf {
     

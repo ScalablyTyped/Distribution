@@ -2,17 +2,15 @@ package typings.browserSync.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormsOptions extends StObject {
   
-  var inputs: Boolean = js.native
+  var inputs: Boolean
   
-  var submit: Boolean = js.native
+  var submit: Boolean
   
-  var toggles: Boolean = js.native
+  var toggles: Boolean
 }
 object FormsOptions {
   

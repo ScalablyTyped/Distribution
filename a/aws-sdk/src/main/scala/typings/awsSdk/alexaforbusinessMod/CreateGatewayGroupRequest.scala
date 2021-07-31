@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGatewayGroupRequest extends StObject {
   
   /**
     *  A unique, user-specified identifier for the request that ensures idempotency.
     */
-  var ClientRequestToken: typings.awsSdk.alexaforbusinessMod.ClientRequestToken = js.native
+  var ClientRequestToken: typings.awsSdk.alexaforbusinessMod.ClientRequestToken
   
   /**
     * The description of the gateway group.
     */
-  var Description: js.UndefOr[GatewayGroupDescription] = js.native
+  var Description: js.UndefOr[GatewayGroupDescription] = js.undefined
   
   /**
     * The name of the gateway group.
     */
-  var Name: GatewayGroupName = js.native
+  var Name: GatewayGroupName
 }
 object CreateGatewayGroupRequest {
   

@@ -5,10 +5,8 @@ import typings.vscode.anon.AutoClosingPairs
 import typings.vscode.anon.Brackets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LanguageConfiguration extends StObject {
   
   /**
@@ -16,35 +14,35 @@ trait LanguageConfiguration extends StObject {
     *
     * @deprecated * Use the autoClosingPairs property in the language configuration file instead.
     */
-  var __characterPairSupport: js.UndefOr[AutoClosingPairs] = js.native
+  var __characterPairSupport: js.UndefOr[AutoClosingPairs] = js.undefined
   
   /**
     * **Deprecated** Do not use.
     *
     * @deprecated Will be replaced by a better API soon.
     */
-  var __electricCharacterSupport: js.UndefOr[Brackets] = js.native
+  var __electricCharacterSupport: js.UndefOr[Brackets] = js.undefined
   
   /**
     * The language's brackets.
     * This configuration implicitly affects pressing Enter around these brackets.
     */
-  var brackets: js.UndefOr[js.Array[CharacterPair]] = js.native
+  var brackets: js.UndefOr[js.Array[CharacterPair]] = js.undefined
   
   /**
     * The language's comment settings.
     */
-  var comments: js.UndefOr[CommentRule] = js.native
+  var comments: js.UndefOr[CommentRule] = js.undefined
   
   /**
     * The language's indentation settings.
     */
-  var indentationRules: js.UndefOr[IndentationRule] = js.native
+  var indentationRules: js.UndefOr[IndentationRule] = js.undefined
   
   /**
     * The language's rules to be evaluated when pressing Enter.
     */
-  var onEnterRules: js.UndefOr[js.Array[OnEnterRule]] = js.native
+  var onEnterRules: js.UndefOr[js.Array[OnEnterRule]] = js.undefined
   
   /**
     * The language's word definition.
@@ -53,7 +51,7 @@ trait LanguageConfiguration extends StObject {
     * e.g.: A regex that matches anything except known separators (and dot is allowed to occur in a floating point number):
     *   /(-?\d*\.\d\w*)|([^\`\~\!\@\#\%\^\&\*\(\)\-\=\+\[\{\]\}\\\|\;\:\'\"\,\.\<\>\/\?\s]+)/g
     */
-  var wordPattern: js.UndefOr[RegExp] = js.native
+  var wordPattern: js.UndefOr[RegExp] = js.undefined
 }
 object LanguageConfiguration {
   

@@ -4,7 +4,6 @@ import typings.firebaseMessaging.anon.Call
 import typings.firebaseMessagingTypes.mod.FirebaseMessaging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mod {
   
-  @js.native
   trait FirebaseApp extends StObject {
     
-    def messaging(): FirebaseMessaging = js.native
+    def messaging(): FirebaseMessaging
   }
   object FirebaseApp {
     
@@ -33,12 +31,26 @@ object mod {
     }
   }
   
-  @js.native
   trait FirebaseNamespace extends StObject {
     
-    def messaging(): FirebaseMessaging = js.native
-    def messaging(app: FirebaseApp): FirebaseMessaging = js.native
+    def messaging(): FirebaseMessaging
+    def messaging(app: FirebaseApp): FirebaseMessaging
     @JSName("messaging")
-    var messaging_Original: Call = js.native
+    var messaging_Original: Call
+  }
+  object FirebaseNamespace {
+    
+    @scala.inline
+    def apply(messaging: Call): FirebaseNamespace = {
+      val __obj = js.Dynamic.literal(messaging = messaging.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FirebaseNamespace]
+    }
+    
+    @scala.inline
+    implicit class FirebaseNamespaceMutableBuilder[Self <: FirebaseNamespace] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMessaging(value: Call): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
+    }
   }
 }

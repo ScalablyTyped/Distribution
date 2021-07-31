@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest extends StObject {
   
   /** Required. The evaluation job to create. */
-  var job: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationJob] = js.native
+  var job: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationJob] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1CreateEvaluationJobRequest {
   

@@ -2,19 +2,17 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsCreateWebhookParamsConfig extends StObject {
   
-  var content_type: js.UndefOr[String] = js.native
+  var content_type: js.UndefOr[String] = js.undefined
   
-  var insecure_ssl: js.UndefOr[String] = js.native
+  var insecure_ssl: js.UndefOr[String] = js.undefined
   
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object OrgsCreateWebhookParamsConfig {
   

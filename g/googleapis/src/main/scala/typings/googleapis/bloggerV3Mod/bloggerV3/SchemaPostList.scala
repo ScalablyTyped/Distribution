@@ -2,31 +2,29 @@ package typings.googleapis.bloggerV3Mod.bloggerV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPostList extends StObject {
   
   /**
     * Etag of the response.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The list of Posts for this Blog.
     */
-  var items: js.UndefOr[js.Array[SchemaPost]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPost]] = js.undefined
   
   /**
     * The kind of this entity. Always blogger#postList
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to fetch the next page, if one exists.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaPostList {
   

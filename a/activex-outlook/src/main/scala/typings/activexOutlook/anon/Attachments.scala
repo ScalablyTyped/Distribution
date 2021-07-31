@@ -3,15 +3,13 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.AttachmentSelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachments extends StObject {
   
-  val Attachments: AttachmentSelection = js.native
+  val Attachments: AttachmentSelection
   
-  val CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any = js.native
+  val CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
 }
 object Attachments {
   

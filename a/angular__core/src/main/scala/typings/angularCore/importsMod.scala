@@ -8,31 +8,30 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object importsMod {
   
-  @JSImport("@angular/core/schematics/utils/typescript/imports", "getImportOfIdentifier")
+  @JSImport("@angular/core/schematics/utils/typescript/imports", JSImport.Namespace)
   @js.native
-  def getImportOfIdentifier(typeChecker: TypeChecker, node: Identifier): Import | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/utils/typescript/imports", "getImportSpecifier")
-  @js.native
-  def getImportSpecifier(sourceFile: SourceFile, moduleName: String, specifierName: String): ImportSpecifier | Null = js.native
+  @scala.inline
+  def getImportOfIdentifier(typeChecker: TypeChecker, node: Identifier): Import | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getImportOfIdentifier")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Import | Null]
   
-  @JSImport("@angular/core/schematics/utils/typescript/imports", "replaceImport")
-  @js.native
-  def replaceImport(node: NamedImports, existingImport: String, newImportName: String): NamedImports = js.native
+  @scala.inline
+  def getImportSpecifier(sourceFile: SourceFile, moduleName: String, specifierName: String): ImportSpecifier | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getImportSpecifier")(sourceFile.asInstanceOf[js.Any], moduleName.asInstanceOf[js.Any], specifierName.asInstanceOf[js.Any])).asInstanceOf[ImportSpecifier | Null]
   
-  @js.native
+  @scala.inline
+  def replaceImport(node: NamedImports, existingImport: String, newImportName: String): NamedImports = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceImport")(node.asInstanceOf[js.Any], existingImport.asInstanceOf[js.Any], newImportName.asInstanceOf[js.Any])).asInstanceOf[NamedImports]
+  
   trait Import extends StObject {
     
-    var importModule: String = js.native
+    var importModule: String
     
-    var name: String = js.native
+    var name: String
     
-    var node: ImportDeclaration = js.native
+    var node: ImportDeclaration
   }
   object Import {
     

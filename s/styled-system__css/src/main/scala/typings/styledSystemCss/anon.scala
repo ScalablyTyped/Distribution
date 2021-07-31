@@ -510,86 +510,86 @@ import typings.styledSystemCss.mod.ThemeValue
 import typings.styledSystemCss.mod._Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined {[ K in keyof @styled-system/css.@styled-system/css.StandardCSSProperties ]: @styled-system/css.@styled-system/css.ThemeValue<@styled-system/css.@styled-system/css.StandardCSSProperties[K]>} */
-  @js.native
-  trait KinkeyofStandardCSSProper extends _Theme {
+  trait KinkeyofStandardCSSProper
+    extends StObject
+       with _Theme {
     
-    var KhtmlBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.native
+    var KhtmlBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.undefined
     
-    var KhtmlBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.native
+    var KhtmlBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.undefined
     
-    var KhtmlBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var KhtmlBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var KhtmlBoxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var KhtmlBoxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var KhtmlBoxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.native
+    var KhtmlBoxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.undefined
     
-    var KhtmlBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var KhtmlBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var KhtmlBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.native
+    var KhtmlBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.undefined
     
-    var KhtmlBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.native
+    var KhtmlBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.undefined
     
-    var KhtmlLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.native
+    var KhtmlLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.undefined
     
-    var KhtmlOpacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.native
+    var KhtmlOpacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.undefined
     
-    var KhtmlUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.native
+    var KhtmlUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.undefined
     
-    var MozAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.native
+    var MozAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.undefined
     
-    var MozAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var MozAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var MozAnimationDirection: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var MozAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var MozAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var MozAnimationFillMode: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationIterationCount: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.native
+    var MozAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.undefined
     
     var MozAnimationPlayState: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozAppearance: js.UndefOr[ThemeValue[js.UndefOr[MozAppearanceProperty | js.Array[MozAppearanceProperty]]]] = js.native
+    var MozAppearance: js.UndefOr[ThemeValue[js.UndefOr[MozAppearanceProperty | js.Array[MozAppearanceProperty]]]] = js.undefined
     
     var MozBackfaceVisibility: js.UndefOr[
         ThemeValue[js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundClip: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundInlinePolicy: js.UndefOr[
         ThemeValue[js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundOrigin: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundSize: js.UndefOr[
         ThemeValue[
@@ -597,27 +597,27 @@ object anon {
             (BackgroundSizeProperty[Double | String]) | (js.Array[BackgroundSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozBinding: js.UndefOr[ThemeValue[js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]]]] = js.native
+    var MozBinding: js.UndefOr[ThemeValue[js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]]]] = js.undefined
     
     var MozBorderBottomColors: js.UndefOr[
         ThemeValue[
           js.UndefOr[MozBorderBottomColorsProperty | js.Array[MozBorderBottomColorsProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndWidth: js.UndefOr[
         ThemeValue[
@@ -625,13 +625,13 @@ object anon {
             (BorderInlineEndWidthProperty[Double | String]) | (js.Array[BorderInlineEndWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.native
+    var MozBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.undefined
     
     var MozBorderLeftColors: js.UndefOr[
         ThemeValue[js.UndefOr[MozBorderLeftColorsProperty | js.Array[MozBorderLeftColorsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadius: js.UndefOr[
         ThemeValue[
@@ -639,7 +639,7 @@ object anon {
             (BorderRadiusProperty[Double | String]) | (js.Array[BorderRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusBottomleft: js.UndefOr[
         ThemeValue[
@@ -647,7 +647,7 @@ object anon {
             (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[BorderBottomLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusBottomright: js.UndefOr[
         ThemeValue[
@@ -655,7 +655,7 @@ object anon {
             (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[BorderBottomRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusTopleft: js.UndefOr[
         ThemeValue[
@@ -663,7 +663,7 @@ object anon {
             (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[BorderTopLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusTopright: js.UndefOr[
         ThemeValue[
@@ -671,49 +671,49 @@ object anon {
             (BorderTopRightRadiusProperty[Double | String]) | (js.Array[BorderTopRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRightColors: js.UndefOr[
         ThemeValue[
           js.UndefOr[MozBorderRightColorsProperty | js.Array[MozBorderRightColorsProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderStartColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderStartStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderTopColors: js.UndefOr[
         ThemeValue[js.UndefOr[MozBorderTopColorsProperty | js.Array[MozBorderTopColorsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var MozBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.native
+    var MozBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.undefined
     
-    var MozBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.native
+    var MozBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.undefined
     
-    var MozBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var MozBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var MozBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var MozBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var MozBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.native
+    var MozBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.undefined
     
-    var MozBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.native
+    var MozBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.undefined
     
-    var MozBoxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.native
+    var MozBoxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.undefined
     
-    var MozBoxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.native
+    var MozBoxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.undefined
     
-    var MozColumnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.native
+    var MozColumnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.undefined
     
-    var MozColumnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.native
+    var MozColumnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.undefined
     
     var MozColumnGap: js.UndefOr[
         ThemeValue[
@@ -721,7 +721,7 @@ object anon {
             (ColumnGapProperty[Double | String]) | (js.Array[ColumnGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRule: js.UndefOr[
         ThemeValue[
@@ -729,15 +729,15 @@ object anon {
             (ColumnRuleProperty[Double | String]) | (js.Array[ColumnRuleProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleColor: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleStyle: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleWidth: js.UndefOr[
         ThemeValue[
@@ -745,7 +745,7 @@ object anon {
             (ColumnRuleWidthProperty[Double | String]) | (js.Array[ColumnRuleWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnWidth: js.UndefOr[
         ThemeValue[
@@ -753,7 +753,7 @@ object anon {
             (ColumnWidthProperty[Double | String]) | (js.Array[ColumnWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozColumns: js.UndefOr[
         ThemeValue[
@@ -761,33 +761,33 @@ object anon {
             (ColumnsProperty[Double | String]) | (js.Array[ColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozContextProperties: js.UndefOr[
         ThemeValue[
           js.UndefOr[MozContextPropertiesProperty | js.Array[MozContextPropertiesProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozFloatEdge: js.UndefOr[ThemeValue[js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]]]] = js.native
+    var MozFloatEdge: js.UndefOr[ThemeValue[js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]]]] = js.undefined
     
     var MozFontFeatureSettings: js.UndefOr[
         ThemeValue[js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozFontLanguageOverride: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozForceBrokenImageIcon: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var MozForceBrokenImageIcon: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var MozHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.native
+    var MozHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.undefined
     
     var MozImageRegion: js.UndefOr[
         ThemeValue[js.UndefOr[MozImageRegionProperty | js.Array[MozImageRegionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozMarginEnd: js.UndefOr[
         ThemeValue[
@@ -795,7 +795,7 @@ object anon {
             (MarginInlineEndProperty[Double | String]) | (js.Array[MarginInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozMarginStart: js.UndefOr[
         ThemeValue[
@@ -803,11 +803,11 @@ object anon {
             (MarginInlineStartProperty[Double | String]) | (js.Array[MarginInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozOpacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.native
+    var MozOpacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.undefined
     
-    var MozOrient: js.UndefOr[ThemeValue[js.UndefOr[MozOrientProperty | js.Array[MozOrientProperty]]]] = js.native
+    var MozOrient: js.UndefOr[ThemeValue[js.UndefOr[MozOrientProperty | js.Array[MozOrientProperty]]]] = js.undefined
     
     var MozOsxFontSmoothing: js.UndefOr[
         ThemeValue[
@@ -815,7 +815,7 @@ object anon {
             (FontSmoothProperty[Double | String]) | (js.Array[FontSmoothProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozOutline: js.UndefOr[
         ThemeValue[
@@ -823,9 +823,9 @@ object anon {
             (OutlineProperty[Double | String]) | (js.Array[OutlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozOutlineColor: js.UndefOr[ThemeValue[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]]]] = js.native
+    var MozOutlineColor: js.UndefOr[ThemeValue[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]]]] = js.undefined
     
     var MozOutlineRadius: js.UndefOr[
         ThemeValue[
@@ -833,7 +833,7 @@ object anon {
             (MozOutlineRadiusProperty[Double | String]) | (js.Array[MozOutlineRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusBottomleft: js.UndefOr[
         ThemeValue[
@@ -841,7 +841,7 @@ object anon {
             (MozOutlineRadiusBottomleftProperty[Double | String]) | (js.Array[MozOutlineRadiusBottomleftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusBottomright: js.UndefOr[
         ThemeValue[
@@ -849,7 +849,7 @@ object anon {
             (MozOutlineRadiusBottomrightProperty[Double | String]) | (js.Array[MozOutlineRadiusBottomrightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusTopleft: js.UndefOr[
         ThemeValue[
@@ -857,7 +857,7 @@ object anon {
             (MozOutlineRadiusTopleftProperty[Double | String]) | (js.Array[MozOutlineRadiusTopleftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusTopright: js.UndefOr[
         ThemeValue[
@@ -865,9 +865,9 @@ object anon {
             (MozOutlineRadiusToprightProperty[Double | String]) | (js.Array[MozOutlineRadiusToprightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozOutlineStyle: js.UndefOr[ThemeValue[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]]]] = js.native
+    var MozOutlineStyle: js.UndefOr[ThemeValue[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]]]] = js.undefined
     
     var MozOutlineWidth: js.UndefOr[
         ThemeValue[
@@ -875,7 +875,7 @@ object anon {
             (OutlineWidthProperty[Double | String]) | (js.Array[OutlineWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozPaddingEnd: js.UndefOr[
         ThemeValue[
@@ -883,7 +883,7 @@ object anon {
             (PaddingInlineEndProperty[Double | String]) | (js.Array[PaddingInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozPaddingStart: js.UndefOr[
         ThemeValue[
@@ -891,7 +891,7 @@ object anon {
             (PaddingInlineStartProperty[Double | String]) | (js.Array[PaddingInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozPerspective: js.UndefOr[
         ThemeValue[
@@ -899,7 +899,7 @@ object anon {
             (PerspectiveProperty[Double | String]) | (js.Array[PerspectiveProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozPerspectiveOrigin: js.UndefOr[
         ThemeValue[
@@ -907,11 +907,11 @@ object anon {
             (PerspectiveOriginProperty[Double | String]) | (js.Array[PerspectiveOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozStackSizing: js.UndefOr[
         ThemeValue[js.UndefOr[MozStackSizingProperty | js.Array[MozStackSizingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTabSize: js.UndefOr[
         ThemeValue[
@@ -919,27 +919,27 @@ object anon {
             (TabSizeProperty[Double | String]) | (js.Array[TabSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozTextAlignLast: js.UndefOr[ThemeValue[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]]]] = js.native
+    var MozTextAlignLast: js.UndefOr[ThemeValue[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]]]] = js.undefined
     
-    var MozTextBlink: js.UndefOr[ThemeValue[js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]]]] = js.native
+    var MozTextBlink: js.UndefOr[ThemeValue[js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]]]] = js.undefined
     
     var MozTextDecorationColor: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTextDecorationLine: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTextDecorationStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTextSizeAdjust: js.UndefOr[
         ThemeValue[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTransformOrigin: js.UndefOr[
         ThemeValue[
@@ -947,75 +947,75 @@ object anon {
             (TransformOriginProperty[Double | String]) | (js.Array[TransformOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var MozTransformStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var MozTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.native
+    var MozTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.undefined
     
-    var MozTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var MozTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var MozTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var MozTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var MozTransitionProperty: js.UndefOr[
         ThemeValue[js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozTransitionTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var MozUserFocus: js.UndefOr[ThemeValue[js.UndefOr[MozUserFocusProperty | js.Array[MozUserFocusProperty]]]] = js.native
+    var MozUserFocus: js.UndefOr[ThemeValue[js.UndefOr[MozUserFocusProperty | js.Array[MozUserFocusProperty]]]] = js.undefined
     
-    var MozUserInput: js.UndefOr[ThemeValue[js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]]]] = js.native
+    var MozUserInput: js.UndefOr[ThemeValue[js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]]]] = js.undefined
     
-    var MozUserModify: js.UndefOr[ThemeValue[js.UndefOr[MozUserModifyProperty | js.Array[MozUserModifyProperty]]]] = js.native
+    var MozUserModify: js.UndefOr[ThemeValue[js.UndefOr[MozUserModifyProperty | js.Array[MozUserModifyProperty]]]] = js.undefined
     
-    var MozUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.native
+    var MozUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.undefined
     
     var MozWindowDragging: js.UndefOr[
         ThemeValue[js.UndefOr[MozWindowDraggingProperty | js.Array[MozWindowDraggingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var MozWindowShadow: js.UndefOr[
         ThemeValue[js.UndefOr[MozWindowShadowProperty | js.Array[MozWindowShadowProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var OAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.native
+    var OAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.undefined
     
-    var OAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var OAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var OAnimationDirection: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var OAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var OAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var OAnimationFillMode: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationIterationCount: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var OAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.native
+    var OAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.undefined
     
     var OAnimationPlayState: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var OBackgroundSize: js.UndefOr[
         ThemeValue[
@@ -1023,11 +1023,11 @@ object anon {
             (BackgroundSizeProperty[Double | String]) | (js.Array[BackgroundSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var OBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.native
+    var OBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.undefined
     
-    var OObjectFit: js.UndefOr[ThemeValue[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]]]] = js.native
+    var OObjectFit: js.UndefOr[ThemeValue[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]]]] = js.undefined
     
     var OObjectPosition: js.UndefOr[
         ThemeValue[
@@ -1035,7 +1035,7 @@ object anon {
             (ObjectPositionProperty[Double | String]) | (js.Array[ObjectPositionProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var OTabSize: js.UndefOr[
         ThemeValue[
@@ -1043,11 +1043,11 @@ object anon {
             (TabSizeProperty[Double | String]) | (js.Array[TabSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var OTextOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.native
+    var OTextOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.undefined
     
-    var OTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.native
+    var OTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.undefined
     
     var OTransformOrigin: js.UndefOr[
         ThemeValue[
@@ -1055,81 +1055,81 @@ object anon {
             (TransformOriginProperty[Double | String]) | (js.Array[TransformOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var OTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.native
+    var OTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.undefined
     
-    var OTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var OTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var OTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var OTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var OTransitionProperty: js.UndefOr[
         ThemeValue[js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var OTransitionTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitAlignContent: js.UndefOr[ThemeValue[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]]]] = js.native
+    var WebkitAlignContent: js.UndefOr[ThemeValue[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]]]] = js.undefined
     
-    var WebkitAlignItems: js.UndefOr[ThemeValue[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]]]] = js.native
+    var WebkitAlignItems: js.UndefOr[ThemeValue[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]]]] = js.undefined
     
-    var WebkitAlignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.native
+    var WebkitAlignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.undefined
     
-    var WebkitAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.native
+    var WebkitAnimation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.undefined
     
-    var WebkitAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var WebkitAnimationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var WebkitAnimationDirection: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var WebkitAnimationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var WebkitAnimationFillMode: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationIterationCount: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.native
+    var WebkitAnimationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.undefined
     
     var WebkitAnimationPlayState: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAppearance: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitAppearanceProperty | js.Array[WebkitAppearanceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackdropFilter: js.UndefOr[
         ThemeValue[js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackfaceVisibility: js.UndefOr[
         ThemeValue[js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundClip: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundOrigin: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundSize: js.UndefOr[
         ThemeValue[
@@ -1137,7 +1137,7 @@ object anon {
             (BackgroundSizeProperty[Double | String]) | (js.Array[BackgroundSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBefore: js.UndefOr[
         ThemeValue[
@@ -1145,19 +1145,19 @@ object anon {
             (WebkitBorderBeforeProperty[Double | String]) | (js.Array[WebkitBorderBeforeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitBorderBeforeColorProperty | js.Array[WebkitBorderBeforeColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitBorderBeforeStyleProperty | js.Array[WebkitBorderBeforeStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeWidth: js.UndefOr[
         ThemeValue[
@@ -1165,7 +1165,7 @@ object anon {
             (WebkitBorderBeforeWidthProperty[Double | String]) | (js.Array[WebkitBorderBeforeWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBottomLeftRadius: js.UndefOr[
         ThemeValue[
@@ -1173,7 +1173,7 @@ object anon {
             (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[BorderBottomLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBottomRightRadius: js.UndefOr[
         ThemeValue[
@@ -1181,13 +1181,13 @@ object anon {
             (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[BorderBottomRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.native
+    var WebkitBorderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.undefined
     
     var WebkitBorderImageSlice: js.UndefOr[
         ThemeValue[js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderRadius: js.UndefOr[
         ThemeValue[
@@ -1195,7 +1195,7 @@ object anon {
             (BorderRadiusProperty[Double | String]) | (js.Array[BorderRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderTopLeftRadius: js.UndefOr[
         ThemeValue[
@@ -1203,7 +1203,7 @@ object anon {
             (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[BorderTopLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderTopRightRadius: js.UndefOr[
         ThemeValue[
@@ -1211,27 +1211,27 @@ object anon {
             (BorderTopRightRadiusProperty[Double | String]) | (js.Array[BorderTopRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.native
+    var WebkitBoxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.undefined
     
     var WebkitBoxDecorationBreak: js.UndefOr[
         ThemeValue[js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.native
+    var WebkitBoxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.undefined
     
-    var WebkitBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitBoxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var WebkitBoxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitBoxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var WebkitBoxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.native
+    var WebkitBoxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.undefined
     
-    var WebkitBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitBoxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var WebkitBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.native
+    var WebkitBoxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.undefined
     
-    var WebkitBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.native
+    var WebkitBoxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.undefined
     
     var WebkitBoxReflect: js.UndefOr[
         ThemeValue[
@@ -1239,17 +1239,17 @@ object anon {
             (WebkitBoxReflectProperty[Double | String]) | (js.Array[WebkitBoxReflectProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitBoxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.native
+    var WebkitBoxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.undefined
     
-    var WebkitBoxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.native
+    var WebkitBoxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.undefined
     
-    var WebkitClipPath: js.UndefOr[ThemeValue[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]]]] = js.native
+    var WebkitClipPath: js.UndefOr[ThemeValue[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]]]] = js.undefined
     
-    var WebkitColumnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.native
+    var WebkitColumnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.undefined
     
-    var WebkitColumnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.native
+    var WebkitColumnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.undefined
     
     var WebkitColumnGap: js.UndefOr[
         ThemeValue[
@@ -1257,7 +1257,7 @@ object anon {
             (ColumnGapProperty[Double | String]) | (js.Array[ColumnGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRule: js.UndefOr[
         ThemeValue[
@@ -1265,15 +1265,15 @@ object anon {
             (ColumnRuleProperty[Double | String]) | (js.Array[ColumnRuleProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleColor: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleStyle: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleWidth: js.UndefOr[
         ThemeValue[
@@ -1281,9 +1281,9 @@ object anon {
             (ColumnRuleWidthProperty[Double | String]) | (js.Array[ColumnRuleWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitColumnSpan: js.UndefOr[ThemeValue[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]]]] = js.native
+    var WebkitColumnSpan: js.UndefOr[ThemeValue[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]]]] = js.undefined
     
     var WebkitColumnWidth: js.UndefOr[
         ThemeValue[
@@ -1291,7 +1291,7 @@ object anon {
             (ColumnWidthProperty[Double | String]) | (js.Array[ColumnWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumns: js.UndefOr[
         ThemeValue[
@@ -1299,15 +1299,15 @@ object anon {
             (ColumnsProperty[Double | String]) | (js.Array[ColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitFilter: js.UndefOr[ThemeValue[js.UndefOr[FilterProperty | js.Array[FilterProperty]]]] = js.native
+    var WebkitFilter: js.UndefOr[ThemeValue[js.UndefOr[FilterProperty | js.Array[FilterProperty]]]] = js.undefined
     
     var WebkitFlex: js.UndefOr[
         ThemeValue[
           js.UndefOr[(FlexProperty[Double | String]) | (js.Array[FlexProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexBasis: js.UndefOr[
         ThemeValue[
@@ -1315,23 +1315,23 @@ object anon {
             (FlexBasisProperty[Double | String]) | (js.Array[FlexBasisProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitFlexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.native
+    var WebkitFlexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.undefined
     
-    var WebkitFlexFlow: js.UndefOr[ThemeValue[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]]]] = js.native
+    var WebkitFlexFlow: js.UndefOr[ThemeValue[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]]]] = js.undefined
     
-    var WebkitFlexGrow: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitFlexGrow: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var WebkitFlexShrink: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitFlexShrink: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var WebkitFlexWrap: js.UndefOr[ThemeValue[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]]]] = js.native
+    var WebkitFlexWrap: js.UndefOr[ThemeValue[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]]]] = js.undefined
     
     var WebkitFontFeatureSettings: js.UndefOr[
         ThemeValue[js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitFontKerning: js.UndefOr[ThemeValue[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]]]] = js.native
+    var WebkitFontKerning: js.UndefOr[ThemeValue[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]]]] = js.undefined
     
     var WebkitFontSmoothing: js.UndefOr[
         ThemeValue[
@@ -1339,25 +1339,25 @@ object anon {
             (FontSmoothProperty[Double | String]) | (js.Array[FontSmoothProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFontVariantLigatures: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.native
+    var WebkitHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.undefined
     
     var WebkitJustifyContent: js.UndefOr[
         ThemeValue[js.UndefOr[JustifyContentProperty | js.Array[JustifyContentProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.native
+    var WebkitLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.undefined
     
     var WebkitLineClamp: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitLineClampProperty | js.Array[WebkitLineClampProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMarginEnd: js.UndefOr[
         ThemeValue[
@@ -1365,7 +1365,7 @@ object anon {
             (MarginInlineEndProperty[Double | String]) | (js.Array[MarginInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMarginStart: js.UndefOr[
         ThemeValue[
@@ -1373,7 +1373,7 @@ object anon {
             (MarginInlineStartProperty[Double | String]) | (js.Array[MarginInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMask: js.UndefOr[
         ThemeValue[
@@ -1381,29 +1381,29 @@ object anon {
             (WebkitMaskProperty[Double | String]) | (js.Array[WebkitMaskProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskAttachment: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitMaskAttachmentProperty | js.Array[WebkitMaskAttachmentProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskClip: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskClipProperty | js.Array[WebkitMaskClipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskComposite: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskCompositeProperty | js.Array[WebkitMaskCompositeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskImage: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskImageProperty | js.Array[WebkitMaskImageProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskOrigin: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskOriginProperty | js.Array[WebkitMaskOriginProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPosition: js.UndefOr[
         ThemeValue[
@@ -1411,7 +1411,7 @@ object anon {
             (WebkitMaskPositionProperty[Double | String]) | (js.Array[WebkitMaskPositionProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPositionX: js.UndefOr[
         ThemeValue[
@@ -1419,7 +1419,7 @@ object anon {
             (WebkitMaskPositionXProperty[Double | String]) | (js.Array[WebkitMaskPositionXProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPositionY: js.UndefOr[
         ThemeValue[
@@ -1427,19 +1427,19 @@ object anon {
             (WebkitMaskPositionYProperty[Double | String]) | (js.Array[WebkitMaskPositionYProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeat: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskRepeatProperty | js.Array[WebkitMaskRepeatProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeatX: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskRepeatXProperty | js.Array[WebkitMaskRepeatXProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeatY: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitMaskRepeatYProperty | js.Array[WebkitMaskRepeatYProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskSize: js.UndefOr[
         ThemeValue[
@@ -1447,7 +1447,7 @@ object anon {
             (WebkitMaskSizeProperty[Double | String]) | (js.Array[WebkitMaskSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaxInlineSize: js.UndefOr[
         ThemeValue[
@@ -1455,15 +1455,15 @@ object anon {
             (MaxInlineSizeProperty[Double | String]) | (js.Array[MaxInlineSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitOrder: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var WebkitOrder: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
     var WebkitOverflowScrolling: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitOverflowScrollingProperty | js.Array[WebkitOverflowScrollingProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPaddingEnd: js.UndefOr[
         ThemeValue[
@@ -1471,7 +1471,7 @@ object anon {
             (PaddingInlineEndProperty[Double | String]) | (js.Array[PaddingInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPaddingStart: js.UndefOr[
         ThemeValue[
@@ -1479,7 +1479,7 @@ object anon {
             (PaddingInlineStartProperty[Double | String]) | (js.Array[PaddingInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPerspective: js.UndefOr[
         ThemeValue[
@@ -1487,7 +1487,7 @@ object anon {
             (PerspectiveProperty[Double | String]) | (js.Array[PerspectiveProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPerspectiveOrigin: js.UndefOr[
         ThemeValue[
@@ -1495,23 +1495,23 @@ object anon {
             (PerspectiveOriginProperty[Double | String]) | (js.Array[PerspectiveOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitPrintColorAdjust: js.UndefOr[ThemeValue[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]]]] = js.native
+    var WebkitPrintColorAdjust: js.UndefOr[ThemeValue[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]]]] = js.undefined
     
-    var WebkitRubyPosition: js.UndefOr[ThemeValue[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]]]] = js.native
+    var WebkitRubyPosition: js.UndefOr[ThemeValue[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]]]] = js.undefined
     
     var WebkitScrollSnapPointsX: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitScrollSnapPointsY: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitScrollSnapType: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitShapeMargin: js.UndefOr[
         ThemeValue[
@@ -1519,57 +1519,57 @@ object anon {
             (ShapeMarginProperty[Double | String]) | (js.Array[ShapeMarginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTapHighlightColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitTapHighlightColorProperty | js.Array[WebkitTapHighlightColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextCombine: js.UndefOr[
         ThemeValue[js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationColor: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationLine: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationSkip: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationSkipProperty | js.Array[TextDecorationSkipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitTextEmphasis: js.UndefOr[ThemeValue[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]]]] = js.native
+    var WebkitTextEmphasis: js.UndefOr[ThemeValue[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]]]] = js.undefined
     
     var WebkitTextEmphasisColor: js.UndefOr[
         ThemeValue[js.UndefOr[TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitTextEmphasisPosition: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var WebkitTextEmphasisPosition: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var WebkitTextEmphasisStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextFillColor: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitTextFillColorProperty | js.Array[WebkitTextFillColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextOrientation: js.UndefOr[
         ThemeValue[js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextSizeAdjust: js.UndefOr[
         ThemeValue[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStroke: js.UndefOr[
         ThemeValue[
@@ -1577,13 +1577,13 @@ object anon {
             (WebkitTextStrokeProperty[Double | String]) | (js.Array[WebkitTextStrokeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStrokeColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[WebkitTextStrokeColorProperty | js.Array[WebkitTextStrokeColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStrokeWidth: js.UndefOr[
         ThemeValue[
@@ -1591,19 +1591,19 @@ object anon {
             (WebkitTextStrokeWidthProperty[Double | String]) | (js.Array[WebkitTextStrokeWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextUnderlinePosition: js.UndefOr[
         ThemeValue[
           js.UndefOr[TextUnderlinePositionProperty | js.Array[TextUnderlinePositionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTouchCallout: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitTouchCalloutProperty | js.Array[WebkitTouchCalloutProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.native
+    var WebkitTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.undefined
     
     var WebkitTransformOrigin: js.UndefOr[
         ThemeValue[
@@ -1611,95 +1611,95 @@ object anon {
             (TransformOriginProperty[Double | String]) | (js.Array[TransformOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransformStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.native
+    var WebkitTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.undefined
     
-    var WebkitTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var WebkitTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var WebkitTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var WebkitTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var WebkitTransitionProperty: js.UndefOr[
         ThemeValue[js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransitionTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var WebkitUserModify: js.UndefOr[
         ThemeValue[js.UndefOr[WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var WebkitUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.native
+    var WebkitUserSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.undefined
     
-    var WebkitWritingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.native
+    var WebkitWritingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.undefined
     
-    var alignContent: js.UndefOr[ThemeValue[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]]]] = js.native
+    var alignContent: js.UndefOr[ThemeValue[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]]]] = js.undefined
     
-    var alignItems: js.UndefOr[ThemeValue[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]]]] = js.native
+    var alignItems: js.UndefOr[ThemeValue[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]]]] = js.undefined
     
-    var alignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.native
+    var alignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.undefined
     
-    var alignTracks: js.UndefOr[ThemeValue[js.UndefOr[AlignTracksProperty | js.Array[AlignTracksProperty]]]] = js.native
+    var alignTracks: js.UndefOr[ThemeValue[js.UndefOr[AlignTracksProperty | js.Array[AlignTracksProperty]]]] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
         ThemeValue[js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var all: js.UndefOr[ThemeValue[js.UndefOr[Globals | js.Array[Globals]]]] = js.native
+    var all: js.UndefOr[ThemeValue[js.UndefOr[Globals | js.Array[Globals]]]] = js.undefined
     
-    var animation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.native
+    var animation: js.UndefOr[ThemeValue[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]]]] = js.undefined
     
-    var animationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var animationDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var animationDirection: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var animationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var animationDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var animationFillMode: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var animationIterationCount: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var animationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.native
+    var animationName: js.UndefOr[ThemeValue[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]]]] = js.undefined
     
     var animationPlayState: js.UndefOr[
         ThemeValue[js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var animationTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var appearance: js.UndefOr[ThemeValue[js.UndefOr[AppearanceProperty | js.Array[AppearanceProperty]]]] = js.native
+    var appearance: js.UndefOr[ThemeValue[js.UndefOr[AppearanceProperty | js.Array[AppearanceProperty]]]] = js.undefined
     
-    var aspectRatio: js.UndefOr[ThemeValue[js.UndefOr[AspectRatioProperty | js.Array[AspectRatioProperty]]]] = js.native
+    var aspectRatio: js.UndefOr[ThemeValue[js.UndefOr[AspectRatioProperty | js.Array[AspectRatioProperty]]]] = js.undefined
     
-    var azimuth: js.UndefOr[ThemeValue[js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]]]] = js.native
+    var azimuth: js.UndefOr[ThemeValue[js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]]]] = js.undefined
     
     var backdropFilter: js.UndefOr[
         ThemeValue[js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backfaceVisibility: js.UndefOr[
         ThemeValue[js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var background: js.UndefOr[
         ThemeValue[
@@ -1707,33 +1707,33 @@ object anon {
             (BackgroundProperty[Double | String]) | (js.Array[BackgroundProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundAttachment: js.UndefOr[
         ThemeValue[
           js.UndefOr[BackgroundAttachmentProperty | js.Array[BackgroundAttachmentProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundBlendMode: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundBlendModeProperty | js.Array[BackgroundBlendModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundClip: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundImage: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundImageProperty | js.Array[BackgroundImageProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundOrigin: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPosition: js.UndefOr[
         ThemeValue[
@@ -1741,7 +1741,7 @@ object anon {
             (BackgroundPositionProperty[Double | String]) | (js.Array[BackgroundPositionProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPositionX: js.UndefOr[
         ThemeValue[
@@ -1749,7 +1749,7 @@ object anon {
             (BackgroundPositionXProperty[Double | String]) | (js.Array[BackgroundPositionXProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPositionY: js.UndefOr[
         ThemeValue[
@@ -1757,11 +1757,11 @@ object anon {
             (BackgroundPositionYProperty[Double | String]) | (js.Array[BackgroundPositionYProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundRepeat: js.UndefOr[
         ThemeValue[js.UndefOr[BackgroundRepeatProperty | js.Array[BackgroundRepeatProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var backgroundSize: js.UndefOr[
         ThemeValue[
@@ -1769,7 +1769,7 @@ object anon {
             (BackgroundSizeProperty[Double | String]) | (js.Array[BackgroundSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var baselineShift: js.UndefOr[
         ThemeValue[
@@ -1777,9 +1777,9 @@ object anon {
             (BaselineShiftProperty[Double | String]) | (js.Array[BaselineShiftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var blockOverflow: js.UndefOr[ThemeValue[js.UndefOr[BlockOverflowProperty | js.Array[BlockOverflowProperty]]]] = js.native
+    var blockOverflow: js.UndefOr[ThemeValue[js.UndefOr[BlockOverflowProperty | js.Array[BlockOverflowProperty]]]] = js.undefined
     
     var blockSize: js.UndefOr[
         ThemeValue[
@@ -1787,13 +1787,13 @@ object anon {
             (BlockSizeProperty[Double | String]) | (js.Array[BlockSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var border: js.UndefOr[
         ThemeValue[
           js.UndefOr[(BorderProperty[Double | String]) | (js.Array[BorderProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlock: js.UndefOr[
         ThemeValue[
@@ -1801,11 +1801,11 @@ object anon {
             (BorderBlockProperty[Double | String]) | (js.Array[BorderBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBlockColorProperty | js.Array[BorderBlockColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEnd: js.UndefOr[
         ThemeValue[
@@ -1813,15 +1813,15 @@ object anon {
             (BorderBlockEndProperty[Double | String]) | (js.Array[BorderBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBlockEndColorProperty | js.Array[BorderBlockEndColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBlockEndStyleProperty | js.Array[BorderBlockEndStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndWidth: js.UndefOr[
         ThemeValue[
@@ -1829,7 +1829,7 @@ object anon {
             (BorderBlockEndWidthProperty[Double | String]) | (js.Array[BorderBlockEndWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStart: js.UndefOr[
         ThemeValue[
@@ -1837,19 +1837,19 @@ object anon {
             (BorderBlockStartProperty[Double | String]) | (js.Array[BorderBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderBlockStartColorProperty | js.Array[BorderBlockStartColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderBlockStartStyleProperty | js.Array[BorderBlockStartStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartWidth: js.UndefOr[
         ThemeValue[
@@ -1857,11 +1857,11 @@ object anon {
             (BorderBlockStartWidthProperty[Double | String]) | (js.Array[BorderBlockStartWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBlockStyleProperty | js.Array[BorderBlockStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockWidth: js.UndefOr[
         ThemeValue[
@@ -1869,7 +1869,7 @@ object anon {
             (BorderBlockWidthProperty[Double | String]) | (js.Array[BorderBlockWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottom: js.UndefOr[
         ThemeValue[
@@ -1877,11 +1877,11 @@ object anon {
             (BorderBottomProperty[Double | String]) | (js.Array[BorderBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBottomColorProperty | js.Array[BorderBottomColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomLeftRadius: js.UndefOr[
         ThemeValue[
@@ -1889,7 +1889,7 @@ object anon {
             (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[BorderBottomLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomRightRadius: js.UndefOr[
         ThemeValue[
@@ -1897,11 +1897,11 @@ object anon {
             (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[BorderBottomRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderBottomStyleProperty | js.Array[BorderBottomStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomWidth: js.UndefOr[
         ThemeValue[
@@ -1909,13 +1909,13 @@ object anon {
             (BorderBottomWidthProperty[Double | String]) | (js.Array[BorderBottomWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderCollapse: js.UndefOr[
         ThemeValue[js.UndefOr[BorderCollapseProperty | js.Array[BorderCollapseProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var borderColor: js.UndefOr[ThemeValue[js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]]]] = js.native
+    var borderColor: js.UndefOr[ThemeValue[js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]]]] = js.undefined
     
     var borderEndEndRadius: js.UndefOr[
         ThemeValue[
@@ -1923,7 +1923,7 @@ object anon {
             (BorderEndEndRadiusProperty[Double | String]) | (js.Array[BorderEndEndRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderEndStartRadius: js.UndefOr[
         ThemeValue[
@@ -1931,9 +1931,9 @@ object anon {
             (BorderEndStartRadiusProperty[Double | String]) | (js.Array[BorderEndStartRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var borderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.native
+    var borderImage: js.UndefOr[ThemeValue[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]]]] = js.undefined
     
     var borderImageOutset: js.UndefOr[
         ThemeValue[
@@ -1941,19 +1941,19 @@ object anon {
             (BorderImageOutsetProperty[Double | String]) | (js.Array[BorderImageOutsetProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderImageRepeat: js.UndefOr[
         ThemeValue[js.UndefOr[BorderImageRepeatProperty | js.Array[BorderImageRepeatProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderImageSlice: js.UndefOr[
         ThemeValue[js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderImageSource: js.UndefOr[
         ThemeValue[js.UndefOr[BorderImageSourceProperty | js.Array[BorderImageSourceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderImageWidth: js.UndefOr[
         ThemeValue[
@@ -1961,7 +1961,7 @@ object anon {
             (BorderImageWidthProperty[Double | String]) | (js.Array[BorderImageWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInline: js.UndefOr[
         ThemeValue[
@@ -1969,11 +1969,11 @@ object anon {
             (BorderInlineProperty[Double | String]) | (js.Array[BorderInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderInlineColorProperty | js.Array[BorderInlineColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEnd: js.UndefOr[
         ThemeValue[
@@ -1981,19 +1981,19 @@ object anon {
             (BorderInlineEndProperty[Double | String]) | (js.Array[BorderInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineEndColorProperty | js.Array[BorderInlineEndColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndWidth: js.UndefOr[
         ThemeValue[
@@ -2001,7 +2001,7 @@ object anon {
             (BorderInlineEndWidthProperty[Double | String]) | (js.Array[BorderInlineEndWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStart: js.UndefOr[
         ThemeValue[
@@ -2009,19 +2009,19 @@ object anon {
             (BorderInlineStartProperty[Double | String]) | (js.Array[BorderInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineStartColorProperty | js.Array[BorderInlineStartColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartStyle: js.UndefOr[
         ThemeValue[
           js.UndefOr[BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartWidth: js.UndefOr[
         ThemeValue[
@@ -2029,11 +2029,11 @@ object anon {
             (BorderInlineStartWidthProperty[Double | String]) | (js.Array[BorderInlineStartWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderInlineStyleProperty | js.Array[BorderInlineStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineWidth: js.UndefOr[
         ThemeValue[
@@ -2041,7 +2041,7 @@ object anon {
             (BorderInlineWidthProperty[Double | String]) | (js.Array[BorderInlineWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderLeft: js.UndefOr[
         ThemeValue[
@@ -2049,15 +2049,15 @@ object anon {
             (BorderLeftProperty[Double | String]) | (js.Array[BorderLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderLeftColorProperty | js.Array[BorderLeftColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderLeftStyleProperty | js.Array[BorderLeftStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftWidth: js.UndefOr[
         ThemeValue[
@@ -2065,7 +2065,7 @@ object anon {
             (BorderLeftWidthProperty[Double | String]) | (js.Array[BorderLeftWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderRadius: js.UndefOr[
         ThemeValue[
@@ -2073,7 +2073,7 @@ object anon {
             (BorderRadiusProperty[Double | String]) | (js.Array[BorderRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderRight: js.UndefOr[
         ThemeValue[
@@ -2081,15 +2081,15 @@ object anon {
             (BorderRightProperty[Double | String]) | (js.Array[BorderRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderRightColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderRightColorProperty | js.Array[BorderRightColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderRightStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderRightStyleProperty | js.Array[BorderRightStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderRightWidth: js.UndefOr[
         ThemeValue[
@@ -2097,7 +2097,7 @@ object anon {
             (BorderRightWidthProperty[Double | String]) | (js.Array[BorderRightWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderSpacing: js.UndefOr[
         ThemeValue[
@@ -2105,7 +2105,7 @@ object anon {
             (BorderSpacingProperty[Double | String]) | (js.Array[BorderSpacingProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderStartEndRadius: js.UndefOr[
         ThemeValue[
@@ -2113,7 +2113,7 @@ object anon {
             (BorderStartEndRadiusProperty[Double | String]) | (js.Array[BorderStartEndRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderStartStartRadius: js.UndefOr[
         ThemeValue[
@@ -2121,9 +2121,9 @@ object anon {
             (BorderStartStartRadiusProperty[Double | String]) | (js.Array[BorderStartStartRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var borderStyle: js.UndefOr[ThemeValue[js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]]]] = js.native
+    var borderStyle: js.UndefOr[ThemeValue[js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]]]] = js.undefined
     
     var borderTop: js.UndefOr[
         ThemeValue[
@@ -2131,11 +2131,11 @@ object anon {
             (BorderTopProperty[Double | String]) | (js.Array[BorderTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderTopColor: js.UndefOr[
         ThemeValue[js.UndefOr[BorderTopColorProperty | js.Array[BorderTopColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderTopLeftRadius: js.UndefOr[
         ThemeValue[
@@ -2143,7 +2143,7 @@ object anon {
             (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[BorderTopLeftRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderTopRightRadius: js.UndefOr[
         ThemeValue[
@@ -2151,11 +2151,11 @@ object anon {
             (BorderTopRightRadiusProperty[Double | String]) | (js.Array[BorderTopRightRadiusProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderTopStyle: js.UndefOr[
         ThemeValue[js.UndefOr[BorderTopStyleProperty | js.Array[BorderTopStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var borderTopWidth: js.UndefOr[
         ThemeValue[
@@ -2163,7 +2163,7 @@ object anon {
             (BorderTopWidthProperty[Double | String]) | (js.Array[BorderTopWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderWidth: js.UndefOr[
         ThemeValue[
@@ -2171,71 +2171,71 @@ object anon {
             (BorderWidthProperty[Double | String]) | (js.Array[BorderWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var bottom: js.UndefOr[
         ThemeValue[
           js.UndefOr[(BottomProperty[Double | String]) | (js.Array[BottomProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var boxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.native
+    var boxAlign: js.UndefOr[ThemeValue[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]]]] = js.undefined
     
     var boxDecorationBreak: js.UndefOr[
         ThemeValue[js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var boxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.native
+    var boxDirection: js.UndefOr[ThemeValue[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]]]] = js.undefined
     
-    var boxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var boxFlex: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var boxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var boxFlexGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var boxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.native
+    var boxLines: js.UndefOr[ThemeValue[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]]]] = js.undefined
     
-    var boxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var boxOrdinalGroup: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var boxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.native
+    var boxOrient: js.UndefOr[ThemeValue[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]]]] = js.undefined
     
-    var boxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.native
+    var boxPack: js.UndefOr[ThemeValue[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]]]] = js.undefined
     
-    var boxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.native
+    var boxShadow: js.UndefOr[ThemeValue[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]]]] = js.undefined
     
-    var boxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.native
+    var boxSizing: js.UndefOr[ThemeValue[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]]]] = js.undefined
     
-    var breakAfter: js.UndefOr[ThemeValue[js.UndefOr[BreakAfterProperty | js.Array[BreakAfterProperty]]]] = js.native
+    var breakAfter: js.UndefOr[ThemeValue[js.UndefOr[BreakAfterProperty | js.Array[BreakAfterProperty]]]] = js.undefined
     
-    var breakBefore: js.UndefOr[ThemeValue[js.UndefOr[BreakBeforeProperty | js.Array[BreakBeforeProperty]]]] = js.native
+    var breakBefore: js.UndefOr[ThemeValue[js.UndefOr[BreakBeforeProperty | js.Array[BreakBeforeProperty]]]] = js.undefined
     
-    var breakInside: js.UndefOr[ThemeValue[js.UndefOr[BreakInsideProperty | js.Array[BreakInsideProperty]]]] = js.native
+    var breakInside: js.UndefOr[ThemeValue[js.UndefOr[BreakInsideProperty | js.Array[BreakInsideProperty]]]] = js.undefined
     
-    var captionSide: js.UndefOr[ThemeValue[js.UndefOr[CaptionSideProperty | js.Array[CaptionSideProperty]]]] = js.native
+    var captionSide: js.UndefOr[ThemeValue[js.UndefOr[CaptionSideProperty | js.Array[CaptionSideProperty]]]] = js.undefined
     
-    var caretColor: js.UndefOr[ThemeValue[js.UndefOr[CaretColorProperty | js.Array[CaretColorProperty]]]] = js.native
+    var caretColor: js.UndefOr[ThemeValue[js.UndefOr[CaretColorProperty | js.Array[CaretColorProperty]]]] = js.undefined
     
-    var clear: js.UndefOr[ThemeValue[js.UndefOr[ClearProperty | js.Array[ClearProperty]]]] = js.native
+    var clear: js.UndefOr[ThemeValue[js.UndefOr[ClearProperty | js.Array[ClearProperty]]]] = js.undefined
     
-    var clip: js.UndefOr[ThemeValue[js.UndefOr[ClipProperty | js.Array[ClipProperty]]]] = js.native
+    var clip: js.UndefOr[ThemeValue[js.UndefOr[ClipProperty | js.Array[ClipProperty]]]] = js.undefined
     
-    var clipPath: js.UndefOr[ThemeValue[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]]]] = js.native
+    var clipPath: js.UndefOr[ThemeValue[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]]]] = js.undefined
     
-    var clipRule: js.UndefOr[ThemeValue[js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]]]] = js.native
+    var clipRule: js.UndefOr[ThemeValue[js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]]]] = js.undefined
     
-    var color: js.UndefOr[ThemeValue[js.UndefOr[ColorProperty | js.Array[ColorProperty]]]] = js.native
+    var color: js.UndefOr[ThemeValue[js.UndefOr[ColorProperty | js.Array[ColorProperty]]]] = js.undefined
     
-    var colorAdjust: js.UndefOr[ThemeValue[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]]]] = js.native
+    var colorAdjust: js.UndefOr[ThemeValue[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]]]] = js.undefined
     
     var colorInterpolation: js.UndefOr[
         ThemeValue[js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var colorRendering: js.UndefOr[
         ThemeValue[js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var columnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.native
+    var columnCount: js.UndefOr[ThemeValue[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]]]] = js.undefined
     
-    var columnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.native
+    var columnFill: js.UndefOr[ThemeValue[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]]]] = js.undefined
     
     var columnGap: js.UndefOr[
         ThemeValue[
@@ -2243,7 +2243,7 @@ object anon {
             (ColumnGapProperty[Double | String]) | (js.Array[ColumnGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var columnRule: js.UndefOr[
         ThemeValue[
@@ -2251,15 +2251,15 @@ object anon {
             (ColumnRuleProperty[Double | String]) | (js.Array[ColumnRuleProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleColor: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleStyle: js.UndefOr[
         ThemeValue[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleWidth: js.UndefOr[
         ThemeValue[
@@ -2267,9 +2267,9 @@ object anon {
             (ColumnRuleWidthProperty[Double | String]) | (js.Array[ColumnRuleWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var columnSpan: js.UndefOr[ThemeValue[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]]]] = js.native
+    var columnSpan: js.UndefOr[ThemeValue[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]]]] = js.undefined
     
     var columnWidth: js.UndefOr[
         ThemeValue[
@@ -2277,7 +2277,7 @@ object anon {
             (ColumnWidthProperty[Double | String]) | (js.Array[ColumnWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var columns: js.UndefOr[
         ThemeValue[
@@ -2285,45 +2285,45 @@ object anon {
             (ColumnsProperty[Double | String]) | (js.Array[ColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var contain: js.UndefOr[ThemeValue[js.UndefOr[ContainProperty | js.Array[ContainProperty]]]] = js.native
+    var contain: js.UndefOr[ThemeValue[js.UndefOr[ContainProperty | js.Array[ContainProperty]]]] = js.undefined
     
-    var content: js.UndefOr[ThemeValue[js.UndefOr[ContentProperty | js.Array[ContentProperty]]]] = js.native
+    var content: js.UndefOr[ThemeValue[js.UndefOr[ContentProperty | js.Array[ContentProperty]]]] = js.undefined
     
     var counterIncrement: js.UndefOr[
         ThemeValue[js.UndefOr[CounterIncrementProperty | js.Array[CounterIncrementProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var counterReset: js.UndefOr[ThemeValue[js.UndefOr[CounterResetProperty | js.Array[CounterResetProperty]]]] = js.native
+    var counterReset: js.UndefOr[ThemeValue[js.UndefOr[CounterResetProperty | js.Array[CounterResetProperty]]]] = js.undefined
     
-    var counterSet: js.UndefOr[ThemeValue[js.UndefOr[CounterSetProperty | js.Array[CounterSetProperty]]]] = js.native
+    var counterSet: js.UndefOr[ThemeValue[js.UndefOr[CounterSetProperty | js.Array[CounterSetProperty]]]] = js.undefined
     
-    var cursor: js.UndefOr[ThemeValue[js.UndefOr[CursorProperty | js.Array[CursorProperty]]]] = js.native
+    var cursor: js.UndefOr[ThemeValue[js.UndefOr[CursorProperty | js.Array[CursorProperty]]]] = js.undefined
     
-    var direction: js.UndefOr[ThemeValue[js.UndefOr[DirectionProperty | js.Array[DirectionProperty]]]] = js.native
+    var direction: js.UndefOr[ThemeValue[js.UndefOr[DirectionProperty | js.Array[DirectionProperty]]]] = js.undefined
     
-    var display: js.UndefOr[ThemeValue[js.UndefOr[DisplayProperty | js.Array[DisplayProperty]]]] = js.native
+    var display: js.UndefOr[ThemeValue[js.UndefOr[DisplayProperty | js.Array[DisplayProperty]]]] = js.undefined
     
     var dominantBaseline: js.UndefOr[
         ThemeValue[js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var emptyCells: js.UndefOr[ThemeValue[js.UndefOr[EmptyCellsProperty | js.Array[EmptyCellsProperty]]]] = js.native
+    var emptyCells: js.UndefOr[ThemeValue[js.UndefOr[EmptyCellsProperty | js.Array[EmptyCellsProperty]]]] = js.undefined
     
-    var fill: js.UndefOr[ThemeValue[js.UndefOr[FillProperty | js.Array[FillProperty]]]] = js.native
+    var fill: js.UndefOr[ThemeValue[js.UndefOr[FillProperty | js.Array[FillProperty]]]] = js.undefined
     
-    var fillOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var fillOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var fillRule: js.UndefOr[ThemeValue[js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]]]] = js.native
+    var fillRule: js.UndefOr[ThemeValue[js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]]]] = js.undefined
     
-    var filter: js.UndefOr[ThemeValue[js.UndefOr[FilterProperty | js.Array[FilterProperty]]]] = js.native
+    var filter: js.UndefOr[ThemeValue[js.UndefOr[FilterProperty | js.Array[FilterProperty]]]] = js.undefined
     
     var flex: js.UndefOr[
         ThemeValue[
           js.UndefOr[(FlexProperty[Double | String]) | (js.Array[FlexProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var flexBasis: js.UndefOr[
         ThemeValue[
@@ -2331,43 +2331,43 @@ object anon {
             (FlexBasisProperty[Double | String]) | (js.Array[FlexBasisProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var flexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.native
+    var flexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.undefined
     
-    var flexFlow: js.UndefOr[ThemeValue[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]]]] = js.native
+    var flexFlow: js.UndefOr[ThemeValue[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]]]] = js.undefined
     
-    var flexGrow: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var flexGrow: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var flexShrink: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var flexShrink: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var flexWrap: js.UndefOr[ThemeValue[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]]]] = js.native
+    var flexWrap: js.UndefOr[ThemeValue[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]]]] = js.undefined
     
-    var float: js.UndefOr[ThemeValue[js.UndefOr[FloatProperty | js.Array[FloatProperty]]]] = js.native
+    var float: js.UndefOr[ThemeValue[js.UndefOr[FloatProperty | js.Array[FloatProperty]]]] = js.undefined
     
-    var floodColor: js.UndefOr[ThemeValue[js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]]]] = js.native
+    var floodColor: js.UndefOr[ThemeValue[js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]]]] = js.undefined
     
-    var floodOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var floodOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var font: js.UndefOr[ThemeValue[js.UndefOr[FontProperty | js.Array[FontProperty]]]] = js.native
+    var font: js.UndefOr[ThemeValue[js.UndefOr[FontProperty | js.Array[FontProperty]]]] = js.undefined
     
-    var fontFamily: js.UndefOr[ThemeValue[js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]]]] = js.native
+    var fontFamily: js.UndefOr[ThemeValue[js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]]]] = js.undefined
     
     var fontFeatureSettings: js.UndefOr[
         ThemeValue[js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var fontKerning: js.UndefOr[ThemeValue[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]]]] = js.native
+    var fontKerning: js.UndefOr[ThemeValue[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]]]] = js.undefined
     
     var fontLanguageOverride: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontOpticalSizing: js.UndefOr[
         ThemeValue[js.UndefOr[FontOpticalSizingProperty | js.Array[FontOpticalSizingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var fontSize: js.UndefOr[
         ThemeValue[
@@ -2375,11 +2375,11 @@ object anon {
             (FontSizeProperty[Double | String]) | (js.Array[FontSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[
         ThemeValue[js.UndefOr[FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var fontSmooth: js.UndefOr[
         ThemeValue[
@@ -2387,69 +2387,69 @@ object anon {
             (FontSmoothProperty[Double | String]) | (js.Array[FontSmoothProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var fontStretch: js.UndefOr[ThemeValue[js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]]]] = js.native
+    var fontStretch: js.UndefOr[ThemeValue[js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]]]] = js.undefined
     
-    var fontStyle: js.UndefOr[ThemeValue[js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]]]] = js.native
+    var fontStyle: js.UndefOr[ThemeValue[js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]]]] = js.undefined
     
-    var fontSynthesis: js.UndefOr[ThemeValue[js.UndefOr[FontSynthesisProperty | js.Array[FontSynthesisProperty]]]] = js.native
+    var fontSynthesis: js.UndefOr[ThemeValue[js.UndefOr[FontSynthesisProperty | js.Array[FontSynthesisProperty]]]] = js.undefined
     
-    var fontVariant: js.UndefOr[ThemeValue[js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]]]] = js.native
+    var fontVariant: js.UndefOr[ThemeValue[js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]]]] = js.undefined
     
     var fontVariantAlternates: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariantAlternatesProperty | js.Array[FontVariantAlternatesProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantCaps: js.UndefOr[
         ThemeValue[js.UndefOr[FontVariantCapsProperty | js.Array[FontVariantCapsProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariantEastAsianProperty | js.Array[FontVariantEastAsianProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariantLigaturesProperty | js.Array[FontVariantLigaturesProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantNumeric: js.UndefOr[
         ThemeValue[js.UndefOr[FontVariantNumericProperty | js.Array[FontVariantNumericProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantPosition: js.UndefOr[
         ThemeValue[js.UndefOr[FontVariantPositionProperty | js.Array[FontVariantPositionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var fontVariationSettings: js.UndefOr[
         ThemeValue[
           js.UndefOr[FontVariationSettingsProperty | js.Array[FontVariationSettingsProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var fontWeight: js.UndefOr[ThemeValue[js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]]]] = js.native
+    var fontWeight: js.UndefOr[ThemeValue[js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]]]] = js.undefined
     
     var gap: js.UndefOr[
         ThemeValue[
           js.UndefOr[(GapProperty[Double | String]) | (js.Array[GapProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var glyphOrientationVertical: js.UndefOr[
         ThemeValue[
           js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var grid: js.UndefOr[ThemeValue[js.UndefOr[GridProperty | js.Array[GridProperty]]]] = js.native
+    var grid: js.UndefOr[ThemeValue[js.UndefOr[GridProperty | js.Array[GridProperty]]]] = js.undefined
     
-    var gridArea: js.UndefOr[ThemeValue[js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]]]] = js.native
+    var gridArea: js.UndefOr[ThemeValue[js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]]]] = js.undefined
     
     var gridAutoColumns: js.UndefOr[
         ThemeValue[
@@ -2457,9 +2457,9 @@ object anon {
             (GridAutoColumnsProperty[Double | String]) | (js.Array[GridAutoColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var gridAutoFlow: js.UndefOr[ThemeValue[js.UndefOr[GridAutoFlowProperty | js.Array[GridAutoFlowProperty]]]] = js.native
+    var gridAutoFlow: js.UndefOr[ThemeValue[js.UndefOr[GridAutoFlowProperty | js.Array[GridAutoFlowProperty]]]] = js.undefined
     
     var gridAutoRows: js.UndefOr[
         ThemeValue[
@@ -2467,11 +2467,11 @@ object anon {
             (GridAutoRowsProperty[Double | String]) | (js.Array[GridAutoRowsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var gridColumn: js.UndefOr[ThemeValue[js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]]]] = js.native
+    var gridColumn: js.UndefOr[ThemeValue[js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]]]] = js.undefined
     
-    var gridColumnEnd: js.UndefOr[ThemeValue[js.UndefOr[GridColumnEndProperty | js.Array[GridColumnEndProperty]]]] = js.native
+    var gridColumnEnd: js.UndefOr[ThemeValue[js.UndefOr[GridColumnEndProperty | js.Array[GridColumnEndProperty]]]] = js.undefined
     
     var gridColumnGap: js.UndefOr[
         ThemeValue[
@@ -2479,11 +2479,11 @@ object anon {
             (GridColumnGapProperty[Double | String]) | (js.Array[GridColumnGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var gridColumnStart: js.UndefOr[
         ThemeValue[js.UndefOr[GridColumnStartProperty | js.Array[GridColumnStartProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var gridGap: js.UndefOr[
         ThemeValue[
@@ -2491,11 +2491,11 @@ object anon {
             (GridGapProperty[Double | String]) | (js.Array[GridGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var gridRow: js.UndefOr[ThemeValue[js.UndefOr[GridRowProperty | js.Array[GridRowProperty]]]] = js.native
+    var gridRow: js.UndefOr[ThemeValue[js.UndefOr[GridRowProperty | js.Array[GridRowProperty]]]] = js.undefined
     
-    var gridRowEnd: js.UndefOr[ThemeValue[js.UndefOr[GridRowEndProperty | js.Array[GridRowEndProperty]]]] = js.native
+    var gridRowEnd: js.UndefOr[ThemeValue[js.UndefOr[GridRowEndProperty | js.Array[GridRowEndProperty]]]] = js.undefined
     
     var gridRowGap: js.UndefOr[
         ThemeValue[
@@ -2503,15 +2503,15 @@ object anon {
             (GridRowGapProperty[Double | String]) | (js.Array[GridRowGapProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var gridRowStart: js.UndefOr[ThemeValue[js.UndefOr[GridRowStartProperty | js.Array[GridRowStartProperty]]]] = js.native
+    var gridRowStart: js.UndefOr[ThemeValue[js.UndefOr[GridRowStartProperty | js.Array[GridRowStartProperty]]]] = js.undefined
     
-    var gridTemplate: js.UndefOr[ThemeValue[js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]]]] = js.native
+    var gridTemplate: js.UndefOr[ThemeValue[js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]]]] = js.undefined
     
     var gridTemplateAreas: js.UndefOr[
         ThemeValue[js.UndefOr[GridTemplateAreasProperty | js.Array[GridTemplateAreasProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateColumns: js.UndefOr[
         ThemeValue[
@@ -2519,7 +2519,7 @@ object anon {
             (GridTemplateColumnsProperty[Double | String]) | (js.Array[GridTemplateColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateRows: js.UndefOr[
         ThemeValue[
@@ -2527,35 +2527,35 @@ object anon {
             (GridTemplateRowsProperty[Double | String]) | (js.Array[GridTemplateRowsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var hangingPunctuation: js.UndefOr[
         ThemeValue[js.UndefOr[HangingPunctuationProperty | js.Array[HangingPunctuationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var height: js.UndefOr[
         ThemeValue[
           js.UndefOr[(HeightProperty[Double | String]) | (js.Array[HeightProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var hyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.native
+    var hyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.undefined
     
     var imageOrientation: js.UndefOr[
         ThemeValue[js.UndefOr[ImageOrientationProperty | js.Array[ImageOrientationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var imageRendering: js.UndefOr[
         ThemeValue[js.UndefOr[ImageRenderingProperty | js.Array[ImageRenderingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var imageResolution: js.UndefOr[
         ThemeValue[js.UndefOr[ImageResolutionProperty | js.Array[ImageResolutionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var imeMode: js.UndefOr[ThemeValue[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]]]] = js.native
+    var imeMode: js.UndefOr[ThemeValue[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]]]] = js.undefined
     
-    var initialLetter: js.UndefOr[ThemeValue[js.UndefOr[InitialLetterProperty | js.Array[InitialLetterProperty]]]] = js.native
+    var initialLetter: js.UndefOr[ThemeValue[js.UndefOr[InitialLetterProperty | js.Array[InitialLetterProperty]]]] = js.undefined
     
     var inlineSize: js.UndefOr[
         ThemeValue[
@@ -2563,13 +2563,13 @@ object anon {
             (InlineSizeProperty[Double | String]) | (js.Array[InlineSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var inset: js.UndefOr[
         ThemeValue[
           js.UndefOr[(InsetProperty[Double | String]) | (js.Array[InsetProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetBlock: js.UndefOr[
         ThemeValue[
@@ -2577,7 +2577,7 @@ object anon {
             (InsetBlockProperty[Double | String]) | (js.Array[InsetBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetBlockEnd: js.UndefOr[
         ThemeValue[
@@ -2585,7 +2585,7 @@ object anon {
             (InsetBlockEndProperty[Double | String]) | (js.Array[InsetBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetBlockStart: js.UndefOr[
         ThemeValue[
@@ -2593,7 +2593,7 @@ object anon {
             (InsetBlockStartProperty[Double | String]) | (js.Array[InsetBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetInline: js.UndefOr[
         ThemeValue[
@@ -2601,7 +2601,7 @@ object anon {
             (InsetInlineProperty[Double | String]) | (js.Array[InsetInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetInlineEnd: js.UndefOr[
         ThemeValue[
@@ -2609,7 +2609,7 @@ object anon {
             (InsetInlineEndProperty[Double | String]) | (js.Array[InsetInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var insetInlineStart: js.UndefOr[
         ThemeValue[
@@ -2617,25 +2617,25 @@ object anon {
             (InsetInlineStartProperty[Double | String]) | (js.Array[InsetInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var isolation: js.UndefOr[ThemeValue[js.UndefOr[IsolationProperty | js.Array[IsolationProperty]]]] = js.native
+    var isolation: js.UndefOr[ThemeValue[js.UndefOr[IsolationProperty | js.Array[IsolationProperty]]]] = js.undefined
     
     var justifyContent: js.UndefOr[
         ThemeValue[js.UndefOr[JustifyContentProperty | js.Array[JustifyContentProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var justifyItems: js.UndefOr[ThemeValue[js.UndefOr[JustifyItemsProperty | js.Array[JustifyItemsProperty]]]] = js.native
+    var justifyItems: js.UndefOr[ThemeValue[js.UndefOr[JustifyItemsProperty | js.Array[JustifyItemsProperty]]]] = js.undefined
     
-    var justifySelf: js.UndefOr[ThemeValue[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]]]] = js.native
+    var justifySelf: js.UndefOr[ThemeValue[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]]]] = js.undefined
     
-    var justifyTracks: js.UndefOr[ThemeValue[js.UndefOr[JustifyTracksProperty | js.Array[JustifyTracksProperty]]]] = js.native
+    var justifyTracks: js.UndefOr[ThemeValue[js.UndefOr[JustifyTracksProperty | js.Array[JustifyTracksProperty]]]] = js.undefined
     
     var left: js.UndefOr[
         ThemeValue[
           js.UndefOr[(LeftProperty[Double | String]) | (js.Array[LeftProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var letterSpacing: js.UndefOr[
         ThemeValue[
@@ -2643,13 +2643,13 @@ object anon {
             (LetterSpacingProperty[Double | String]) | (js.Array[LetterSpacingProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var lightingColor: js.UndefOr[ThemeValue[js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]]]] = js.native
+    var lightingColor: js.UndefOr[ThemeValue[js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]]]] = js.undefined
     
-    var lineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.native
+    var lineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.undefined
     
-    var lineClamp: js.UndefOr[ThemeValue[js.UndefOr[LineClampProperty | js.Array[LineClampProperty]]]] = js.native
+    var lineClamp: js.UndefOr[ThemeValue[js.UndefOr[LineClampProperty | js.Array[LineClampProperty]]]] = js.undefined
     
     var lineHeight: js.UndefOr[
         ThemeValue[
@@ -2657,7 +2657,7 @@ object anon {
             (LineHeightProperty[Double | String]) | (js.Array[LineHeightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var lineHeightStep: js.UndefOr[
         ThemeValue[
@@ -2665,25 +2665,25 @@ object anon {
             (LineHeightStepProperty[Double | String]) | (js.Array[LineHeightStepProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var listStyle: js.UndefOr[ThemeValue[js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]]]] = js.native
+    var listStyle: js.UndefOr[ThemeValue[js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]]]] = js.undefined
     
     var listStyleImage: js.UndefOr[
         ThemeValue[js.UndefOr[ListStyleImageProperty | js.Array[ListStyleImageProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var listStylePosition: js.UndefOr[
         ThemeValue[js.UndefOr[ListStylePositionProperty | js.Array[ListStylePositionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var listStyleType: js.UndefOr[ThemeValue[js.UndefOr[ListStyleTypeProperty | js.Array[ListStyleTypeProperty]]]] = js.native
+    var listStyleType: js.UndefOr[ThemeValue[js.UndefOr[ListStyleTypeProperty | js.Array[ListStyleTypeProperty]]]] = js.undefined
     
     var margin: js.UndefOr[
         ThemeValue[
           js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginBlock: js.UndefOr[
         ThemeValue[
@@ -2691,7 +2691,7 @@ object anon {
             (MarginBlockProperty[Double | String]) | (js.Array[MarginBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginBlockEnd: js.UndefOr[
         ThemeValue[
@@ -2699,7 +2699,7 @@ object anon {
             (MarginBlockEndProperty[Double | String]) | (js.Array[MarginBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginBlockStart: js.UndefOr[
         ThemeValue[
@@ -2707,7 +2707,7 @@ object anon {
             (MarginBlockStartProperty[Double | String]) | (js.Array[MarginBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginBottom: js.UndefOr[
         ThemeValue[
@@ -2715,7 +2715,7 @@ object anon {
             (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginInline: js.UndefOr[
         ThemeValue[
@@ -2723,7 +2723,7 @@ object anon {
             (MarginInlineProperty[Double | String]) | (js.Array[MarginInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginInlineEnd: js.UndefOr[
         ThemeValue[
@@ -2731,7 +2731,7 @@ object anon {
             (MarginInlineEndProperty[Double | String]) | (js.Array[MarginInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginInlineStart: js.UndefOr[
         ThemeValue[
@@ -2739,7 +2739,7 @@ object anon {
             (MarginInlineStartProperty[Double | String]) | (js.Array[MarginInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginLeft: js.UndefOr[
         ThemeValue[
@@ -2747,7 +2747,7 @@ object anon {
             (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginRight: js.UndefOr[
         ThemeValue[
@@ -2755,7 +2755,7 @@ object anon {
             (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var marginTop: js.UndefOr[
         ThemeValue[
@@ -2763,27 +2763,27 @@ object anon {
             (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var marker: js.UndefOr[ThemeValue[js.UndefOr[MarkerProperty | js.Array[MarkerProperty]]]] = js.native
+    var marker: js.UndefOr[ThemeValue[js.UndefOr[MarkerProperty | js.Array[MarkerProperty]]]] = js.undefined
     
-    var markerEnd: js.UndefOr[ThemeValue[js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]]]] = js.native
+    var markerEnd: js.UndefOr[ThemeValue[js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]]]] = js.undefined
     
-    var markerMid: js.UndefOr[ThemeValue[js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]]]] = js.native
+    var markerMid: js.UndefOr[ThemeValue[js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]]]] = js.undefined
     
-    var markerStart: js.UndefOr[ThemeValue[js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]]]] = js.native
+    var markerStart: js.UndefOr[ThemeValue[js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]]]] = js.undefined
     
     var mask: js.UndefOr[
         ThemeValue[
           js.UndefOr[(MaskProperty[Double | String]) | (js.Array[MaskProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maskBorder: js.UndefOr[ThemeValue[js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]]]] = js.native
+    var maskBorder: js.UndefOr[ThemeValue[js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]]]] = js.undefined
     
     var maskBorderMode: js.UndefOr[
         ThemeValue[js.UndefOr[MaskBorderModeProperty | js.Array[MaskBorderModeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderOutset: js.UndefOr[
         ThemeValue[
@@ -2791,19 +2791,19 @@ object anon {
             (MaskBorderOutsetProperty[Double | String]) | (js.Array[MaskBorderOutsetProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderRepeat: js.UndefOr[
         ThemeValue[js.UndefOr[MaskBorderRepeatProperty | js.Array[MaskBorderRepeatProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderSlice: js.UndefOr[
         ThemeValue[js.UndefOr[MaskBorderSliceProperty | js.Array[MaskBorderSliceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderSource: js.UndefOr[
         ThemeValue[js.UndefOr[MaskBorderSourceProperty | js.Array[MaskBorderSourceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderWidth: js.UndefOr[
         ThemeValue[
@@ -2811,17 +2811,17 @@ object anon {
             (MaskBorderWidthProperty[Double | String]) | (js.Array[MaskBorderWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maskClip: js.UndefOr[ThemeValue[js.UndefOr[MaskClipProperty | js.Array[MaskClipProperty]]]] = js.native
+    var maskClip: js.UndefOr[ThemeValue[js.UndefOr[MaskClipProperty | js.Array[MaskClipProperty]]]] = js.undefined
     
-    var maskComposite: js.UndefOr[ThemeValue[js.UndefOr[MaskCompositeProperty | js.Array[MaskCompositeProperty]]]] = js.native
+    var maskComposite: js.UndefOr[ThemeValue[js.UndefOr[MaskCompositeProperty | js.Array[MaskCompositeProperty]]]] = js.undefined
     
-    var maskImage: js.UndefOr[ThemeValue[js.UndefOr[MaskImageProperty | js.Array[MaskImageProperty]]]] = js.native
+    var maskImage: js.UndefOr[ThemeValue[js.UndefOr[MaskImageProperty | js.Array[MaskImageProperty]]]] = js.undefined
     
-    var maskMode: js.UndefOr[ThemeValue[js.UndefOr[MaskModeProperty | js.Array[MaskModeProperty]]]] = js.native
+    var maskMode: js.UndefOr[ThemeValue[js.UndefOr[MaskModeProperty | js.Array[MaskModeProperty]]]] = js.undefined
     
-    var maskOrigin: js.UndefOr[ThemeValue[js.UndefOr[MaskOriginProperty | js.Array[MaskOriginProperty]]]] = js.native
+    var maskOrigin: js.UndefOr[ThemeValue[js.UndefOr[MaskOriginProperty | js.Array[MaskOriginProperty]]]] = js.undefined
     
     var maskPosition: js.UndefOr[
         ThemeValue[
@@ -2829,9 +2829,9 @@ object anon {
             (MaskPositionProperty[Double | String]) | (js.Array[MaskPositionProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maskRepeat: js.UndefOr[ThemeValue[js.UndefOr[MaskRepeatProperty | js.Array[MaskRepeatProperty]]]] = js.native
+    var maskRepeat: js.UndefOr[ThemeValue[js.UndefOr[MaskRepeatProperty | js.Array[MaskRepeatProperty]]]] = js.undefined
     
     var maskSize: js.UndefOr[
         ThemeValue[
@@ -2839,15 +2839,15 @@ object anon {
             (MaskSizeProperty[Double | String]) | (js.Array[MaskSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maskType: js.UndefOr[ThemeValue[js.UndefOr[MaskTypeProperty | js.Array[MaskTypeProperty]]]] = js.native
+    var maskType: js.UndefOr[ThemeValue[js.UndefOr[MaskTypeProperty | js.Array[MaskTypeProperty]]]] = js.undefined
     
     var masonryAutoFlow: js.UndefOr[
         ThemeValue[js.UndefOr[MasonryAutoFlowProperty | js.Array[MasonryAutoFlowProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var mathStyle: js.UndefOr[ThemeValue[js.UndefOr[MathStyleProperty | js.Array[MathStyleProperty]]]] = js.native
+    var mathStyle: js.UndefOr[ThemeValue[js.UndefOr[MathStyleProperty | js.Array[MathStyleProperty]]]] = js.undefined
     
     var maxBlockSize: js.UndefOr[
         ThemeValue[
@@ -2855,7 +2855,7 @@ object anon {
             (MaxBlockSizeProperty[Double | String]) | (js.Array[MaxBlockSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var maxHeight: js.UndefOr[
         ThemeValue[
@@ -2863,7 +2863,7 @@ object anon {
             (MaxHeightProperty[Double | String]) | (js.Array[MaxHeightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var maxInlineSize: js.UndefOr[
         ThemeValue[
@@ -2871,9 +2871,9 @@ object anon {
             (MaxInlineSizeProperty[Double | String]) | (js.Array[MaxInlineSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maxLines: js.UndefOr[ThemeValue[js.UndefOr[MaxLinesProperty | js.Array[MaxLinesProperty]]]] = js.native
+    var maxLines: js.UndefOr[ThemeValue[js.UndefOr[MaxLinesProperty | js.Array[MaxLinesProperty]]]] = js.undefined
     
     var maxWidth: js.UndefOr[
         ThemeValue[
@@ -2881,7 +2881,7 @@ object anon {
             (MaxWidthProperty[Double | String]) | (js.Array[MaxWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var minBlockSize: js.UndefOr[
         ThemeValue[
@@ -2889,7 +2889,7 @@ object anon {
             (MinBlockSizeProperty[Double | String]) | (js.Array[MinBlockSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var minHeight: js.UndefOr[
         ThemeValue[
@@ -2897,7 +2897,7 @@ object anon {
             (MinHeightProperty[Double | String]) | (js.Array[MinHeightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var minInlineSize: js.UndefOr[
         ThemeValue[
@@ -2905,7 +2905,7 @@ object anon {
             (MinInlineSizeProperty[Double | String]) | (js.Array[MinInlineSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var minWidth: js.UndefOr[
         ThemeValue[
@@ -2913,15 +2913,15 @@ object anon {
             (MinWidthProperty[Double | String]) | (js.Array[MinWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var mixBlendMode: js.UndefOr[ThemeValue[js.UndefOr[MixBlendModeProperty | js.Array[MixBlendModeProperty]]]] = js.native
+    var mixBlendMode: js.UndefOr[ThemeValue[js.UndefOr[MixBlendModeProperty | js.Array[MixBlendModeProperty]]]] = js.undefined
     
     var motion: js.UndefOr[
         ThemeValue[
           js.UndefOr[(OffsetProperty[Double | String]) | (js.Array[OffsetProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var motionDistance: js.UndefOr[
         ThemeValue[
@@ -2929,63 +2929,63 @@ object anon {
             (OffsetDistanceProperty[Double | String]) | (js.Array[OffsetDistanceProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var motionPath: js.UndefOr[ThemeValue[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]]]] = js.native
+    var motionPath: js.UndefOr[ThemeValue[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]]]] = js.undefined
     
-    var motionRotation: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.native
+    var motionRotation: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.undefined
     
-    var msAccelerator: js.UndefOr[ThemeValue[js.UndefOr[MsAcceleratorProperty | js.Array[MsAcceleratorProperty]]]] = js.native
+    var msAccelerator: js.UndefOr[ThemeValue[js.UndefOr[MsAcceleratorProperty | js.Array[MsAcceleratorProperty]]]] = js.undefined
     
-    var msAlignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.native
+    var msAlignSelf: js.UndefOr[ThemeValue[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]]]] = js.undefined
     
     var msBlockProgression: js.UndefOr[
         ThemeValue[js.UndefOr[MsBlockProgressionProperty | js.Array[MsBlockProgressionProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomChaining: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsContentZoomChainingProperty | js.Array[MsContentZoomChainingProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msContentZoomLimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msContentZoomLimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var msContentZoomLimitMax: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msContentZoomLimitMax: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var msContentZoomLimitMin: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msContentZoomLimitMin: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msContentZoomSnap: js.UndefOr[
         ThemeValue[js.UndefOr[MsContentZoomSnapProperty | js.Array[MsContentZoomSnapProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msContentZoomSnapPoints: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msContentZoomSnapPoints: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msContentZoomSnapType: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsContentZoomSnapTypeProperty | js.Array[MsContentZoomSnapTypeProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msContentZooming: js.UndefOr[
         ThemeValue[js.UndefOr[MsContentZoomingProperty | js.Array[MsContentZoomingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msFilter: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msFilter: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msFlex: js.UndefOr[
         ThemeValue[
           js.UndefOr[(FlexProperty[Double | String]) | (js.Array[FlexProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msFlexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.native
+    var msFlexDirection: js.UndefOr[ThemeValue[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]]]] = js.undefined
     
-    var msFlexPositive: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var msFlexPositive: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var msFlowFrom: js.UndefOr[ThemeValue[js.UndefOr[MsFlowFromProperty | js.Array[MsFlowFromProperty]]]] = js.native
+    var msFlowFrom: js.UndefOr[ThemeValue[js.UndefOr[MsFlowFromProperty | js.Array[MsFlowFromProperty]]]] = js.undefined
     
-    var msFlowInto: js.UndefOr[ThemeValue[js.UndefOr[MsFlowIntoProperty | js.Array[MsFlowIntoProperty]]]] = js.native
+    var msFlowInto: js.UndefOr[ThemeValue[js.UndefOr[MsFlowIntoProperty | js.Array[MsFlowIntoProperty]]]] = js.undefined
     
     var msGridColumns: js.UndefOr[
         ThemeValue[
@@ -2993,7 +2993,7 @@ object anon {
             (MsGridColumnsProperty[Double | String]) | (js.Array[MsGridColumnsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msGridRows: js.UndefOr[
         ThemeValue[
@@ -3001,25 +3001,25 @@ object anon {
             (MsGridRowsProperty[Double | String]) | (js.Array[MsGridRowsProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msHighContrastAdjust: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsHighContrastAdjustProperty | js.Array[MsHighContrastAdjustProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitChars: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsHyphenateLimitCharsProperty | js.Array[MsHyphenateLimitCharsProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitLines: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsHyphenateLimitLinesProperty | js.Array[MsHyphenateLimitLinesProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitZone: js.UndefOr[
         ThemeValue[
@@ -3027,33 +3027,33 @@ object anon {
             (MsHyphenateLimitZoneProperty[Double | String]) | (js.Array[MsHyphenateLimitZoneProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.native
+    var msHyphens: js.UndefOr[ThemeValue[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]]]] = js.undefined
     
-    var msImeAlign: js.UndefOr[ThemeValue[js.UndefOr[MsImeAlignProperty | js.Array[MsImeAlignProperty]]]] = js.native
+    var msImeAlign: js.UndefOr[ThemeValue[js.UndefOr[MsImeAlignProperty | js.Array[MsImeAlignProperty]]]] = js.undefined
     
-    var msImeMode: js.UndefOr[ThemeValue[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]]]] = js.native
+    var msImeMode: js.UndefOr[ThemeValue[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]]]] = js.undefined
     
-    var msJustifySelf: js.UndefOr[ThemeValue[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]]]] = js.native
+    var msJustifySelf: js.UndefOr[ThemeValue[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]]]] = js.undefined
     
-    var msLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.native
+    var msLineBreak: js.UndefOr[ThemeValue[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]]]] = js.undefined
     
-    var msOrder: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var msOrder: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
     var msOverflowStyle: js.UndefOr[
         ThemeValue[js.UndefOr[MsOverflowStyleProperty | js.Array[MsOverflowStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msOverflowX: js.UndefOr[ThemeValue[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]]]] = js.native
+    var msOverflowX: js.UndefOr[ThemeValue[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]]]] = js.undefined
     
-    var msOverflowY: js.UndefOr[ThemeValue[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]]]] = js.native
+    var msOverflowY: js.UndefOr[ThemeValue[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]]]] = js.undefined
     
     var msScrollChaining: js.UndefOr[
         ThemeValue[js.UndefOr[MsScrollChainingProperty | js.Array[MsScrollChainingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msScrollLimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msScrollLimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msScrollLimitXMax: js.UndefOr[
         ThemeValue[
@@ -3061,7 +3061,7 @@ object anon {
             (MsScrollLimitXMaxProperty[Double | String]) | (js.Array[MsScrollLimitXMaxProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitXMin: js.UndefOr[
         ThemeValue[
@@ -3069,7 +3069,7 @@ object anon {
             (MsScrollLimitXMinProperty[Double | String]) | (js.Array[MsScrollLimitXMinProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitYMax: js.UndefOr[
         ThemeValue[
@@ -3077,7 +3077,7 @@ object anon {
             (MsScrollLimitYMaxProperty[Double | String]) | (js.Array[MsScrollLimitYMaxProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitYMin: js.UndefOr[
         ThemeValue[
@@ -3085,43 +3085,43 @@ object anon {
             (MsScrollLimitYMinProperty[Double | String]) | (js.Array[MsScrollLimitYMinProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msScrollRails: js.UndefOr[ThemeValue[js.UndefOr[MsScrollRailsProperty | js.Array[MsScrollRailsProperty]]]] = js.native
+    var msScrollRails: js.UndefOr[ThemeValue[js.UndefOr[MsScrollRailsProperty | js.Array[MsScrollRailsProperty]]]] = js.undefined
     
-    var msScrollSnapPointsX: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msScrollSnapPointsX: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var msScrollSnapPointsY: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msScrollSnapPointsY: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msScrollSnapType: js.UndefOr[
         ThemeValue[js.UndefOr[MsScrollSnapTypeProperty | js.Array[MsScrollSnapTypeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msScrollSnapX: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msScrollSnapX: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var msScrollSnapY: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msScrollSnapY: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msScrollTranslation: js.UndefOr[
         ThemeValue[js.UndefOr[MsScrollTranslationProperty | js.Array[MsScrollTranslationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbar3dlightColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbar3dlightColorProperty | js.Array[MsScrollbar3dlightColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarArrowColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarArrowColorProperty | js.Array[MsScrollbarArrowColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarBaseColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarBaseColorProperty | js.Array[MsScrollbarBaseColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarDarkshadowColor: js.UndefOr[
         ThemeValue[
@@ -3129,47 +3129,47 @@ object anon {
             MsScrollbarDarkshadowColorProperty | js.Array[MsScrollbarDarkshadowColorProperty]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarFaceColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarFaceColorProperty | js.Array[MsScrollbarFaceColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarHighlightColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarHighlightColorProperty | js.Array[MsScrollbarHighlightColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarShadowColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarShadowColorProperty | js.Array[MsScrollbarShadowColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarTrackColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var msTextAutospace: js.UndefOr[
         ThemeValue[js.UndefOr[MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var msTextCombineHorizontal: js.UndefOr[
         ThemeValue[js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var msTextOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.native
+    var msTextOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.undefined
     
-    var msTouchAction: js.UndefOr[ThemeValue[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]]]] = js.native
+    var msTouchAction: js.UndefOr[ThemeValue[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]]]] = js.undefined
     
-    var msTouchSelect: js.UndefOr[ThemeValue[js.UndefOr[MsTouchSelectProperty | js.Array[MsTouchSelectProperty]]]] = js.native
+    var msTouchSelect: js.UndefOr[ThemeValue[js.UndefOr[MsTouchSelectProperty | js.Array[MsTouchSelectProperty]]]] = js.undefined
     
-    var msTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.native
+    var msTransform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.undefined
     
     var msTransformOrigin: js.UndefOr[
         ThemeValue[
@@ -3177,29 +3177,29 @@ object anon {
             (TransformOriginProperty[Double | String]) | (js.Array[TransformOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.native
+    var msTransition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.undefined
     
-    var msTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msTransitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var msTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var msTransitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var msTransitionProperty: js.UndefOr[
         ThemeValue[js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var msTransitionTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msUserSelect: js.UndefOr[ThemeValue[js.UndefOr[MsUserSelectProperty | js.Array[MsUserSelectProperty]]]] = js.native
+    var msUserSelect: js.UndefOr[ThemeValue[js.UndefOr[MsUserSelectProperty | js.Array[MsUserSelectProperty]]]] = js.undefined
     
-    var msWordBreak: js.UndefOr[ThemeValue[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]]]] = js.native
+    var msWordBreak: js.UndefOr[ThemeValue[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]]]] = js.undefined
     
-    var msWrapFlow: js.UndefOr[ThemeValue[js.UndefOr[MsWrapFlowProperty | js.Array[MsWrapFlowProperty]]]] = js.native
+    var msWrapFlow: js.UndefOr[ThemeValue[js.UndefOr[MsWrapFlowProperty | js.Array[MsWrapFlowProperty]]]] = js.undefined
     
     var msWrapMargin: js.UndefOr[
         ThemeValue[
@@ -3207,13 +3207,13 @@ object anon {
             (MsWrapMarginProperty[Double | String]) | (js.Array[MsWrapMarginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var msWrapThrough: js.UndefOr[ThemeValue[js.UndefOr[MsWrapThroughProperty | js.Array[MsWrapThroughProperty]]]] = js.native
+    var msWrapThrough: js.UndefOr[ThemeValue[js.UndefOr[MsWrapThroughProperty | js.Array[MsWrapThroughProperty]]]] = js.undefined
     
-    var msWritingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.native
+    var msWritingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.undefined
     
-    var objectFit: js.UndefOr[ThemeValue[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]]]] = js.native
+    var objectFit: js.UndefOr[ThemeValue[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]]]] = js.undefined
     
     var objectPosition: js.UndefOr[
         ThemeValue[
@@ -3221,13 +3221,13 @@ object anon {
             (ObjectPositionProperty[Double | String]) | (js.Array[ObjectPositionProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offset: js.UndefOr[
         ThemeValue[
           js.UndefOr[(OffsetProperty[Double | String]) | (js.Array[OffsetProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetAnchor: js.UndefOr[
         ThemeValue[
@@ -3235,7 +3235,7 @@ object anon {
             (OffsetAnchorProperty[Double | String]) | (js.Array[OffsetAnchorProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlock: js.UndefOr[
         ThemeValue[
@@ -3243,7 +3243,7 @@ object anon {
             (InsetBlockProperty[Double | String]) | (js.Array[InsetBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlockEnd: js.UndefOr[
         ThemeValue[
@@ -3251,7 +3251,7 @@ object anon {
             (InsetBlockEndProperty[Double | String]) | (js.Array[InsetBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlockStart: js.UndefOr[
         ThemeValue[
@@ -3259,7 +3259,7 @@ object anon {
             (InsetBlockStartProperty[Double | String]) | (js.Array[InsetBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetDistance: js.UndefOr[
         ThemeValue[
@@ -3267,7 +3267,7 @@ object anon {
             (OffsetDistanceProperty[Double | String]) | (js.Array[OffsetDistanceProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetInline: js.UndefOr[
         ThemeValue[
@@ -3275,7 +3275,7 @@ object anon {
             (InsetInlineProperty[Double | String]) | (js.Array[InsetInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetInlineEnd: js.UndefOr[
         ThemeValue[
@@ -3283,7 +3283,7 @@ object anon {
             (InsetInlineEndProperty[Double | String]) | (js.Array[InsetInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var offsetInlineStart: js.UndefOr[
         ThemeValue[
@@ -3291,19 +3291,19 @@ object anon {
             (InsetInlineStartProperty[Double | String]) | (js.Array[InsetInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var offsetPath: js.UndefOr[ThemeValue[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]]]] = js.native
+    var offsetPath: js.UndefOr[ThemeValue[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]]]] = js.undefined
     
-    var offsetRotate: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.native
+    var offsetRotate: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.undefined
     
-    var offsetRotation: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.native
+    var offsetRotation: js.UndefOr[ThemeValue[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]]]] = js.undefined
     
-    var opacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.native
+    var opacity: js.UndefOr[ThemeValue[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]]]] = js.undefined
     
-    var order: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var order: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var orphans: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var orphans: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
     var outline: js.UndefOr[
         ThemeValue[
@@ -3311,9 +3311,9 @@ object anon {
             (OutlineProperty[Double | String]) | (js.Array[OutlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var outlineColor: js.UndefOr[ThemeValue[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]]]] = js.native
+    var outlineColor: js.UndefOr[ThemeValue[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]]]] = js.undefined
     
     var outlineOffset: js.UndefOr[
         ThemeValue[
@@ -3321,9 +3321,9 @@ object anon {
             (OutlineOffsetProperty[Double | String]) | (js.Array[OutlineOffsetProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var outlineStyle: js.UndefOr[ThemeValue[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]]]] = js.native
+    var outlineStyle: js.UndefOr[ThemeValue[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]]]] = js.undefined
     
     var outlineWidth: js.UndefOr[
         ThemeValue[
@@ -3331,53 +3331,53 @@ object anon {
             (OutlineWidthProperty[Double | String]) | (js.Array[OutlineWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var overflow: js.UndefOr[ThemeValue[js.UndefOr[OverflowProperty | js.Array[OverflowProperty]]]] = js.native
+    var overflow: js.UndefOr[ThemeValue[js.UndefOr[OverflowProperty | js.Array[OverflowProperty]]]] = js.undefined
     
     var overflowAnchor: js.UndefOr[
         ThemeValue[js.UndefOr[OverflowAnchorProperty | js.Array[OverflowAnchorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var overflowBlock: js.UndefOr[ThemeValue[js.UndefOr[OverflowBlockProperty | js.Array[OverflowBlockProperty]]]] = js.native
+    var overflowBlock: js.UndefOr[ThemeValue[js.UndefOr[OverflowBlockProperty | js.Array[OverflowBlockProperty]]]] = js.undefined
     
     var overflowClipBox: js.UndefOr[
         ThemeValue[js.UndefOr[OverflowClipBoxProperty | js.Array[OverflowClipBoxProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var overflowInline: js.UndefOr[
         ThemeValue[js.UndefOr[OverflowInlineProperty | js.Array[OverflowInlineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var overflowWrap: js.UndefOr[ThemeValue[js.UndefOr[OverflowWrapProperty | js.Array[OverflowWrapProperty]]]] = js.native
+    var overflowWrap: js.UndefOr[ThemeValue[js.UndefOr[OverflowWrapProperty | js.Array[OverflowWrapProperty]]]] = js.undefined
     
-    var overflowX: js.UndefOr[ThemeValue[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]]]] = js.native
+    var overflowX: js.UndefOr[ThemeValue[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]]]] = js.undefined
     
-    var overflowY: js.UndefOr[ThemeValue[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]]]] = js.native
+    var overflowY: js.UndefOr[ThemeValue[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]]]] = js.undefined
     
     var overscrollBehavior: js.UndefOr[
         ThemeValue[js.UndefOr[OverscrollBehaviorProperty | js.Array[OverscrollBehaviorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorBlock: js.UndefOr[
         ThemeValue[
           js.UndefOr[OverscrollBehaviorBlockProperty | js.Array[OverscrollBehaviorBlockProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorInline: js.UndefOr[
         ThemeValue[
           js.UndefOr[OverscrollBehaviorInlineProperty | js.Array[OverscrollBehaviorInlineProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorX: js.UndefOr[
         ThemeValue[js.UndefOr[OverscrollBehaviorXProperty | js.Array[OverscrollBehaviorXProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorY: js.UndefOr[
         ThemeValue[js.UndefOr[OverscrollBehaviorYProperty | js.Array[OverscrollBehaviorYProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var padding: js.UndefOr[
         ThemeValue[
@@ -3385,7 +3385,7 @@ object anon {
             (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlock: js.UndefOr[
         ThemeValue[
@@ -3393,7 +3393,7 @@ object anon {
             (PaddingBlockProperty[Double | String]) | (js.Array[PaddingBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlockEnd: js.UndefOr[
         ThemeValue[
@@ -3401,7 +3401,7 @@ object anon {
             (PaddingBlockEndProperty[Double | String]) | (js.Array[PaddingBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlockStart: js.UndefOr[
         ThemeValue[
@@ -3409,7 +3409,7 @@ object anon {
             (PaddingBlockStartProperty[Double | String]) | (js.Array[PaddingBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingBottom: js.UndefOr[
         ThemeValue[
@@ -3417,7 +3417,7 @@ object anon {
             (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingInline: js.UndefOr[
         ThemeValue[
@@ -3425,7 +3425,7 @@ object anon {
             (PaddingInlineProperty[Double | String]) | (js.Array[PaddingInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingInlineEnd: js.UndefOr[
         ThemeValue[
@@ -3433,7 +3433,7 @@ object anon {
             (PaddingInlineEndProperty[Double | String]) | (js.Array[PaddingInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingInlineStart: js.UndefOr[
         ThemeValue[
@@ -3441,7 +3441,7 @@ object anon {
             (PaddingInlineStartProperty[Double | String]) | (js.Array[PaddingInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingLeft: js.UndefOr[
         ThemeValue[
@@ -3449,7 +3449,7 @@ object anon {
             (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingRight: js.UndefOr[
         ThemeValue[
@@ -3457,7 +3457,7 @@ object anon {
             (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var paddingTop: js.UndefOr[
         ThemeValue[
@@ -3465,21 +3465,21 @@ object anon {
             (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakAfter: js.UndefOr[
         ThemeValue[js.UndefOr[PageBreakAfterProperty | js.Array[PageBreakAfterProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakBefore: js.UndefOr[
         ThemeValue[js.UndefOr[PageBreakBeforeProperty | js.Array[PageBreakBeforeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakInside: js.UndefOr[
         ThemeValue[js.UndefOr[PageBreakInsideProperty | js.Array[PageBreakInsideProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var paintOrder: js.UndefOr[ThemeValue[js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]]]] = js.native
+    var paintOrder: js.UndefOr[ThemeValue[js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]]]] = js.undefined
     
     var perspective: js.UndefOr[
         ThemeValue[
@@ -3487,7 +3487,7 @@ object anon {
             (PerspectiveProperty[Double | String]) | (js.Array[PerspectiveProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var perspectiveOrigin: js.UndefOr[
         ThemeValue[
@@ -3495,47 +3495,47 @@ object anon {
             (PerspectiveOriginProperty[Double | String]) | (js.Array[PerspectiveOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var placeContent: js.UndefOr[ThemeValue[js.UndefOr[PlaceContentProperty | js.Array[PlaceContentProperty]]]] = js.native
+    var placeContent: js.UndefOr[ThemeValue[js.UndefOr[PlaceContentProperty | js.Array[PlaceContentProperty]]]] = js.undefined
     
-    var placeItems: js.UndefOr[ThemeValue[js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]]]] = js.native
+    var placeItems: js.UndefOr[ThemeValue[js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]]]] = js.undefined
     
-    var placeSelf: js.UndefOr[ThemeValue[js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]]]] = js.native
+    var placeSelf: js.UndefOr[ThemeValue[js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]]]] = js.undefined
     
-    var pointerEvents: js.UndefOr[ThemeValue[js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]]]] = js.native
+    var pointerEvents: js.UndefOr[ThemeValue[js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]]]] = js.undefined
     
-    var position: js.UndefOr[ThemeValue[js.UndefOr[PositionProperty | js.Array[PositionProperty]]]] = js.native
+    var position: js.UndefOr[ThemeValue[js.UndefOr[PositionProperty | js.Array[PositionProperty]]]] = js.undefined
     
-    var quotes: js.UndefOr[ThemeValue[js.UndefOr[QuotesProperty | js.Array[QuotesProperty]]]] = js.native
+    var quotes: js.UndefOr[ThemeValue[js.UndefOr[QuotesProperty | js.Array[QuotesProperty]]]] = js.undefined
     
-    var resize: js.UndefOr[ThemeValue[js.UndefOr[ResizeProperty | js.Array[ResizeProperty]]]] = js.native
+    var resize: js.UndefOr[ThemeValue[js.UndefOr[ResizeProperty | js.Array[ResizeProperty]]]] = js.undefined
     
     var right: js.UndefOr[
         ThemeValue[
           js.UndefOr[(RightProperty[Double | String]) | (js.Array[RightProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rotate: js.UndefOr[ThemeValue[js.UndefOr[RotateProperty | js.Array[RotateProperty]]]] = js.native
+    var rotate: js.UndefOr[ThemeValue[js.UndefOr[RotateProperty | js.Array[RotateProperty]]]] = js.undefined
     
     var rowGap: js.UndefOr[
         ThemeValue[
           js.UndefOr[(RowGapProperty[Double | String]) | (js.Array[RowGapProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rubyAlign: js.UndefOr[ThemeValue[js.UndefOr[RubyAlignProperty | js.Array[RubyAlignProperty]]]] = js.native
+    var rubyAlign: js.UndefOr[ThemeValue[js.UndefOr[RubyAlignProperty | js.Array[RubyAlignProperty]]]] = js.undefined
     
-    var rubyMerge: js.UndefOr[ThemeValue[js.UndefOr[RubyMergeProperty | js.Array[RubyMergeProperty]]]] = js.native
+    var rubyMerge: js.UndefOr[ThemeValue[js.UndefOr[RubyMergeProperty | js.Array[RubyMergeProperty]]]] = js.undefined
     
-    var rubyPosition: js.UndefOr[ThemeValue[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]]]] = js.native
+    var rubyPosition: js.UndefOr[ThemeValue[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]]]] = js.undefined
     
-    var scale: js.UndefOr[ThemeValue[js.UndefOr[ScaleProperty | js.Array[ScaleProperty]]]] = js.native
+    var scale: js.UndefOr[ThemeValue[js.UndefOr[ScaleProperty | js.Array[ScaleProperty]]]] = js.undefined
     
     var scrollBehavior: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollBehaviorProperty | js.Array[ScrollBehaviorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMargin: js.UndefOr[
         ThemeValue[
@@ -3543,7 +3543,7 @@ object anon {
             (ScrollMarginProperty[Double | String]) | (js.Array[ScrollMarginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlock: js.UndefOr[
         ThemeValue[
@@ -3551,7 +3551,7 @@ object anon {
             (ScrollMarginBlockProperty[Double | String]) | (js.Array[ScrollMarginBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlockEnd: js.UndefOr[
         ThemeValue[
@@ -3559,7 +3559,7 @@ object anon {
             (ScrollMarginBlockEndProperty[Double | String]) | (js.Array[ScrollMarginBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlockStart: js.UndefOr[
         ThemeValue[
@@ -3567,7 +3567,7 @@ object anon {
             (ScrollMarginBlockStartProperty[Double | String]) | (js.Array[ScrollMarginBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBottom: js.UndefOr[
         ThemeValue[
@@ -3575,7 +3575,7 @@ object anon {
             (ScrollMarginBottomProperty[Double | String]) | (js.Array[ScrollMarginBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInline: js.UndefOr[
         ThemeValue[
@@ -3583,7 +3583,7 @@ object anon {
             (ScrollMarginInlineProperty[Double | String]) | (js.Array[ScrollMarginInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInlineEnd: js.UndefOr[
         ThemeValue[
@@ -3591,7 +3591,7 @@ object anon {
             (ScrollMarginInlineEndProperty[Double | String]) | (js.Array[ScrollMarginInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInlineStart: js.UndefOr[
         ThemeValue[
@@ -3599,7 +3599,7 @@ object anon {
             (ScrollMarginInlineStartProperty[Double | String]) | (js.Array[ScrollMarginInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginLeft: js.UndefOr[
         ThemeValue[
@@ -3607,7 +3607,7 @@ object anon {
             (ScrollMarginLeftProperty[Double | String]) | (js.Array[ScrollMarginLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginRight: js.UndefOr[
         ThemeValue[
@@ -3615,7 +3615,7 @@ object anon {
             (ScrollMarginRightProperty[Double | String]) | (js.Array[ScrollMarginRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginTop: js.UndefOr[
         ThemeValue[
@@ -3623,7 +3623,7 @@ object anon {
             (ScrollMarginTopProperty[Double | String]) | (js.Array[ScrollMarginTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPadding: js.UndefOr[
         ThemeValue[
@@ -3631,7 +3631,7 @@ object anon {
             (ScrollPaddingProperty[Double | String]) | (js.Array[ScrollPaddingProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlock: js.UndefOr[
         ThemeValue[
@@ -3639,7 +3639,7 @@ object anon {
             (ScrollPaddingBlockProperty[Double | String]) | (js.Array[ScrollPaddingBlockProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlockEnd: js.UndefOr[
         ThemeValue[
@@ -3647,7 +3647,7 @@ object anon {
             (ScrollPaddingBlockEndProperty[Double | String]) | (js.Array[ScrollPaddingBlockEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlockStart: js.UndefOr[
         ThemeValue[
@@ -3655,7 +3655,7 @@ object anon {
             (ScrollPaddingBlockStartProperty[Double | String]) | (js.Array[ScrollPaddingBlockStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBottom: js.UndefOr[
         ThemeValue[
@@ -3663,7 +3663,7 @@ object anon {
             (ScrollPaddingBottomProperty[Double | String]) | (js.Array[ScrollPaddingBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInline: js.UndefOr[
         ThemeValue[
@@ -3671,7 +3671,7 @@ object anon {
             (ScrollPaddingInlineProperty[Double | String]) | (js.Array[ScrollPaddingInlineProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInlineEnd: js.UndefOr[
         ThemeValue[
@@ -3679,7 +3679,7 @@ object anon {
             (ScrollPaddingInlineEndProperty[Double | String]) | (js.Array[ScrollPaddingInlineEndProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInlineStart: js.UndefOr[
         ThemeValue[
@@ -3687,7 +3687,7 @@ object anon {
             (ScrollPaddingInlineStartProperty[Double | String]) | (js.Array[ScrollPaddingInlineStartProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingLeft: js.UndefOr[
         ThemeValue[
@@ -3695,7 +3695,7 @@ object anon {
             (ScrollPaddingLeftProperty[Double | String]) | (js.Array[ScrollPaddingLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingRight: js.UndefOr[
         ThemeValue[
@@ -3703,7 +3703,7 @@ object anon {
             (ScrollPaddingRightProperty[Double | String]) | (js.Array[ScrollPaddingRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingTop: js.UndefOr[
         ThemeValue[
@@ -3711,11 +3711,11 @@ object anon {
             (ScrollPaddingTopProperty[Double | String]) | (js.Array[ScrollPaddingTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapAlign: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapAlignProperty | js.Array[ScrollSnapAlignProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapCoordinate: js.UndefOr[
         ThemeValue[
@@ -3723,7 +3723,7 @@ object anon {
             (ScrollSnapCoordinateProperty[Double | String]) | (js.Array[ScrollSnapCoordinateProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapDestination: js.UndefOr[
         ThemeValue[
@@ -3731,7 +3731,7 @@ object anon {
             (ScrollSnapDestinationProperty[Double | String]) | (js.Array[ScrollSnapDestinationProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMargin: js.UndefOr[
         ThemeValue[
@@ -3739,7 +3739,7 @@ object anon {
             (ScrollMarginProperty[Double | String]) | (js.Array[ScrollMarginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginBottom: js.UndefOr[
         ThemeValue[
@@ -3747,7 +3747,7 @@ object anon {
             (ScrollMarginBottomProperty[Double | String]) | (js.Array[ScrollMarginBottomProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginLeft: js.UndefOr[
         ThemeValue[
@@ -3755,7 +3755,7 @@ object anon {
             (ScrollMarginLeftProperty[Double | String]) | (js.Array[ScrollMarginLeftProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginRight: js.UndefOr[
         ThemeValue[
@@ -3763,7 +3763,7 @@ object anon {
             (ScrollMarginRightProperty[Double | String]) | (js.Array[ScrollMarginRightProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginTop: js.UndefOr[
         ThemeValue[
@@ -3771,53 +3771,53 @@ object anon {
             (ScrollMarginTopProperty[Double | String]) | (js.Array[ScrollMarginTopProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapPointsX: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapPointsY: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapStop: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapStopProperty | js.Array[ScrollSnapStopProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapType: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapTypeX: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapTypeY: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarColor: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollbarColorProperty | js.Array[ScrollbarColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarGutter: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollbarGutterProperty | js.Array[ScrollbarGutterProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarTrackColor: js.UndefOr[
         ThemeValue[
           js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarWidth: js.UndefOr[
         ThemeValue[js.UndefOr[ScrollbarWidthProperty | js.Array[ScrollbarWidthProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var shapeImageThreshold: js.UndefOr[
         ThemeValue[js.UndefOr[ShapeImageThresholdProperty | js.Array[ShapeImageThresholdProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var shapeMargin: js.UndefOr[
         ThemeValue[
@@ -3825,19 +3825,19 @@ object anon {
             (ShapeMarginProperty[Double | String]) | (js.Array[ShapeMarginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var shapeOutside: js.UndefOr[ThemeValue[js.UndefOr[ShapeOutsideProperty | js.Array[ShapeOutsideProperty]]]] = js.native
+    var shapeOutside: js.UndefOr[ThemeValue[js.UndefOr[ShapeOutsideProperty | js.Array[ShapeOutsideProperty]]]] = js.undefined
     
     var shapeRendering: js.UndefOr[
         ThemeValue[js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var stopColor: js.UndefOr[ThemeValue[js.UndefOr[StopColorProperty | js.Array[StopColorProperty]]]] = js.native
+    var stopColor: js.UndefOr[ThemeValue[js.UndefOr[StopColorProperty | js.Array[StopColorProperty]]]] = js.undefined
     
-    var stopOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var stopOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var stroke: js.UndefOr[ThemeValue[js.UndefOr[StrokeProperty | js.Array[StrokeProperty]]]] = js.native
+    var stroke: js.UndefOr[ThemeValue[js.UndefOr[StrokeProperty | js.Array[StrokeProperty]]]] = js.undefined
     
     var strokeDasharray: js.UndefOr[
         ThemeValue[
@@ -3845,7 +3845,7 @@ object anon {
             (StrokeDasharrayProperty[Double | String]) | (js.Array[StrokeDasharrayProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var strokeDashoffset: js.UndefOr[
         ThemeValue[
@@ -3853,17 +3853,17 @@ object anon {
             (StrokeDashoffsetProperty[Double | String]) | (js.Array[StrokeDashoffsetProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var strokeLinecap: js.UndefOr[ThemeValue[js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]]]] = js.native
+    var strokeLinecap: js.UndefOr[ThemeValue[js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]]]] = js.undefined
     
     var strokeLinejoin: js.UndefOr[
         ThemeValue[js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var strokeMiterlimit: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
-    var strokeOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var strokeOpacity: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
     var strokeWidth: js.UndefOr[
         ThemeValue[
@@ -3871,7 +3871,7 @@ object anon {
             (StrokeWidthProperty[Double | String]) | (js.Array[StrokeWidthProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var tabSize: js.UndefOr[
         ThemeValue[
@@ -3879,23 +3879,23 @@ object anon {
             (TabSizeProperty[Double | String]) | (js.Array[TabSizeProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var tableLayout: js.UndefOr[ThemeValue[js.UndefOr[TableLayoutProperty | js.Array[TableLayoutProperty]]]] = js.native
+    var tableLayout: js.UndefOr[ThemeValue[js.UndefOr[TableLayoutProperty | js.Array[TableLayoutProperty]]]] = js.undefined
     
-    var textAlign: js.UndefOr[ThemeValue[js.UndefOr[TextAlignProperty | js.Array[TextAlignProperty]]]] = js.native
+    var textAlign: js.UndefOr[ThemeValue[js.UndefOr[TextAlignProperty | js.Array[TextAlignProperty]]]] = js.undefined
     
-    var textAlignLast: js.UndefOr[ThemeValue[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]]]] = js.native
+    var textAlignLast: js.UndefOr[ThemeValue[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]]]] = js.undefined
     
-    var textAnchor: js.UndefOr[ThemeValue[js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]]]] = js.native
+    var textAnchor: js.UndefOr[ThemeValue[js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]]]] = js.undefined
     
     var textCombineHorizontal: js.UndefOr[
         ThemeValue[js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textCombineUpright: js.UndefOr[
         ThemeValue[js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textDecoration: js.UndefOr[
         ThemeValue[
@@ -3903,29 +3903,29 @@ object anon {
             (TextDecorationProperty[Double | String]) | (js.Array[TextDecorationProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationColor: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationLine: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationSkip: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationSkipProperty | js.Array[TextDecorationSkipProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationSkipInk: js.UndefOr[
         ThemeValue[
           js.UndefOr[TextDecorationSkipInkProperty | js.Array[TextDecorationSkipInkProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationThickness: js.UndefOr[
         ThemeValue[
@@ -3933,7 +3933,7 @@ object anon {
             (TextDecorationThicknessProperty[Double | String]) | (js.Array[TextDecorationThicknessProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationWidth: js.UndefOr[
         ThemeValue[
@@ -3941,19 +3941,19 @@ object anon {
             (TextDecorationThicknessProperty[Double | String]) | (js.Array[TextDecorationThicknessProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var textEmphasis: js.UndefOr[ThemeValue[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]]]] = js.native
+    var textEmphasis: js.UndefOr[ThemeValue[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]]]] = js.undefined
     
     var textEmphasisColor: js.UndefOr[
         ThemeValue[js.UndefOr[TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var textEmphasisPosition: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var textEmphasisPosition: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var textEmphasisStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var textIndent: js.UndefOr[
         ThemeValue[
@@ -3961,25 +3961,25 @@ object anon {
             (TextIndentProperty[Double | String]) | (js.Array[TextIndentProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var textJustify: js.UndefOr[ThemeValue[js.UndefOr[TextJustifyProperty | js.Array[TextJustifyProperty]]]] = js.native
+    var textJustify: js.UndefOr[ThemeValue[js.UndefOr[TextJustifyProperty | js.Array[TextJustifyProperty]]]] = js.undefined
     
     var textOrientation: js.UndefOr[
         ThemeValue[js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var textOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.native
+    var textOverflow: js.UndefOr[ThemeValue[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]]]] = js.undefined
     
-    var textRendering: js.UndefOr[ThemeValue[js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]]]] = js.native
+    var textRendering: js.UndefOr[ThemeValue[js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]]]] = js.undefined
     
-    var textShadow: js.UndefOr[ThemeValue[js.UndefOr[TextShadowProperty | js.Array[TextShadowProperty]]]] = js.native
+    var textShadow: js.UndefOr[ThemeValue[js.UndefOr[TextShadowProperty | js.Array[TextShadowProperty]]]] = js.undefined
     
     var textSizeAdjust: js.UndefOr[
         ThemeValue[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var textTransform: js.UndefOr[ThemeValue[js.UndefOr[TextTransformProperty | js.Array[TextTransformProperty]]]] = js.native
+    var textTransform: js.UndefOr[ThemeValue[js.UndefOr[TextTransformProperty | js.Array[TextTransformProperty]]]] = js.undefined
     
     var textUnderlineOffset: js.UndefOr[
         ThemeValue[
@@ -3987,25 +3987,25 @@ object anon {
             (TextUnderlineOffsetProperty[Double | String]) | (js.Array[TextUnderlineOffsetProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var textUnderlinePosition: js.UndefOr[
         ThemeValue[
           js.UndefOr[TextUnderlinePositionProperty | js.Array[TextUnderlinePositionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var top: js.UndefOr[
         ThemeValue[
           js.UndefOr[(TopProperty[Double | String]) | (js.Array[TopProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var touchAction: js.UndefOr[ThemeValue[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]]]] = js.native
+    var touchAction: js.UndefOr[ThemeValue[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]]]] = js.undefined
     
-    var transform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.native
+    var transform: js.UndefOr[ThemeValue[js.UndefOr[TransformProperty | js.Array[TransformProperty]]]] = js.undefined
     
-    var transformBox: js.UndefOr[ThemeValue[js.UndefOr[TransformBoxProperty | js.Array[TransformBoxProperty]]]] = js.native
+    var transformBox: js.UndefOr[ThemeValue[js.UndefOr[TransformBoxProperty | js.Array[TransformBoxProperty]]]] = js.undefined
     
     var transformOrigin: js.UndefOr[
         ThemeValue[
@@ -4013,27 +4013,27 @@ object anon {
             (TransformOriginProperty[Double | String]) | (js.Array[TransformOriginProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var transformStyle: js.UndefOr[
         ThemeValue[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]]]
-      ] = js.native
+      ] = js.undefined
     
-    var transition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.native
+    var transition: js.UndefOr[ThemeValue[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]]]] = js.undefined
     
-    var transitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var transitionDelay: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
-    var transitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.native
+    var transitionDuration: js.UndefOr[ThemeValue[js.UndefOr[GlobalsString | js.Array[GlobalsString]]]] = js.undefined
     
     var transitionProperty: js.UndefOr[
         ThemeValue[js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]]]
-      ] = js.native
+      ] = js.undefined
     
     var transitionTimingFunction: js.UndefOr[
         ThemeValue[
           js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var translate: js.UndefOr[
         ThemeValue[
@@ -4041,13 +4041,13 @@ object anon {
             (TranslateProperty[Double | String]) | (js.Array[TranslateProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var unicodeBidi: js.UndefOr[ThemeValue[js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]]]] = js.native
+    var unicodeBidi: js.UndefOr[ThemeValue[js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]]]] = js.undefined
     
-    var userSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.native
+    var userSelect: js.UndefOr[ThemeValue[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]]]] = js.undefined
     
-    var vectorEffect: js.UndefOr[ThemeValue[js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]]]] = js.native
+    var vectorEffect: js.UndefOr[ThemeValue[js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]]]] = js.undefined
     
     var verticalAlign: js.UndefOr[
         ThemeValue[
@@ -4055,23 +4055,23 @@ object anon {
             (VerticalAlignProperty[Double | String]) | (js.Array[VerticalAlignProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var visibility: js.UndefOr[ThemeValue[js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]]]] = js.native
+    var visibility: js.UndefOr[ThemeValue[js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]]]] = js.undefined
     
-    var whiteSpace: js.UndefOr[ThemeValue[js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]]]] = js.native
+    var whiteSpace: js.UndefOr[ThemeValue[js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]]]] = js.undefined
     
-    var widows: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.native
+    var widows: js.UndefOr[ThemeValue[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]]]] = js.undefined
     
     var width: js.UndefOr[
         ThemeValue[
           js.UndefOr[(WidthProperty[Double | String]) | (js.Array[WidthProperty[Double | String]])]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var willChange: js.UndefOr[ThemeValue[js.UndefOr[WillChangeProperty | js.Array[WillChangeProperty]]]] = js.native
+    var willChange: js.UndefOr[ThemeValue[js.UndefOr[WillChangeProperty | js.Array[WillChangeProperty]]]] = js.undefined
     
-    var wordBreak: js.UndefOr[ThemeValue[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]]]] = js.native
+    var wordBreak: js.UndefOr[ThemeValue[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]]]] = js.undefined
     
     var wordSpacing: js.UndefOr[
         ThemeValue[
@@ -4079,15 +4079,15 @@ object anon {
             (WordSpacingProperty[Double | String]) | (js.Array[WordSpacingProperty[Double | String]])
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var wordWrap: js.UndefOr[ThemeValue[js.UndefOr[WordWrapProperty | js.Array[WordWrapProperty]]]] = js.native
+    var wordWrap: js.UndefOr[ThemeValue[js.UndefOr[WordWrapProperty | js.Array[WordWrapProperty]]]] = js.undefined
     
-    var writingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.native
+    var writingMode: js.UndefOr[ThemeValue[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]]]] = js.undefined
     
-    var zIndex: js.UndefOr[ThemeValue[js.UndefOr[ZIndexProperty | js.Array[ZIndexProperty]]]] = js.native
+    var zIndex: js.UndefOr[ThemeValue[js.UndefOr[ZIndexProperty | js.Array[ZIndexProperty]]]] = js.undefined
     
-    var zoom: js.UndefOr[ThemeValue[js.UndefOr[ZoomProperty | js.Array[ZoomProperty]]]] = js.native
+    var zoom: js.UndefOr[ThemeValue[js.UndefOr[ZoomProperty | js.Array[ZoomProperty]]]] = js.undefined
   }
   object KinkeyofStandardCSSProper {
     
@@ -13727,92 +13727,93 @@ object anon {
   }
   
   /* Inlined std.Partial<@styled-system/css.@styled-system/css.ScaleThemeProperties> */
-  @js.native
-  trait PartialScaleThemeProperti extends _Theme {
+  trait PartialScaleThemeProperti
+    extends StObject
+       with _Theme {
     
     var borderStyles: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borderWidths: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var borders: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var colors: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontSizes: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fontWeights: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fonts: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var letterSpacings: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var lineHeights: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var radii: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var shadows: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var sizes: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var space: js.UndefOr[
         ThemeValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number> */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var zIndices: js.UndefOr[
         ThemeValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialScaleThemeProperti {
     
@@ -13828,7 +13829,7 @@ object anon {
       @scala.inline
       def setBorderStyles(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any
             ]
       ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
       
@@ -13836,12 +13837,14 @@ object anon {
       def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
       
       @scala.inline
-      def setBorderStylesVarargs(value: js.Any*): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
+      def setBorderStylesVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderStyle */ js.Any)*
+      ): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
       
       @scala.inline
       def setBorderWidths(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
       
@@ -13849,12 +13852,14 @@ object anon {
       def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
       
       @scala.inline
-      def setBorderWidthsVarargs(value: js.Any*): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
+      def setBorderWidthsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<{}> */ js.Any)*
+      ): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
       
       @scala.inline
       def setBorders(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
       
@@ -13862,12 +13867,14 @@ object anon {
       def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
       
       @scala.inline
-      def setBordersVarargs(value: js.Any*): Self = StObject.set(x, "borders", js.Array(value :_*))
+      def setBordersVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
+      ): Self = StObject.set(x, "borders", js.Array(value :_*))
       
       @scala.inline
       def setColors(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any
             ]
       ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -13875,12 +13882,14 @@ object anon {
       def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
       @scala.inline
-      def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      def setColorsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Color */ js.Any)*
+      ): Self = StObject.set(x, "colors", js.Array(value :_*))
       
       @scala.inline
       def setFontSizes(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any
             ]
       ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
       
@@ -13888,12 +13897,14 @@ object anon {
       def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
       
       @scala.inline
-      def setFontSizesVarargs(value: js.Any*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      def setFontSizesVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any)*
+      ): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
       
       @scala.inline
       def setFontWeights(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any
             ]
       ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
       
@@ -13901,12 +13912,14 @@ object anon {
       def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
       
       @scala.inline
-      def setFontWeightsVarargs(value: js.Any*): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
+      def setFontWeightsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any)*
+      ): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
       
       @scala.inline
       def setFonts(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any
             ]
       ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
@@ -13914,12 +13927,14 @@ object anon {
       def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
       @scala.inline
-      def setFontsVarargs(value: js.Any*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+      def setFontsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any)*
+      ): Self = StObject.set(x, "fonts", js.Array(value :_*))
       
       @scala.inline
       def setLetterSpacings(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any
             ]
       ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
       
@@ -13927,12 +13942,14 @@ object anon {
       def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
       
       @scala.inline
-      def setLetterSpacingsVarargs(value: js.Any*): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
+      def setLetterSpacingsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<string | number> */ js.Any)*
+      ): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
       
       @scala.inline
       def setLineHeights(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any
             ]
       ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
       
@@ -13940,12 +13957,14 @@ object anon {
       def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
       
       @scala.inline
-      def setLineHeightsVarargs(value: js.Any*): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
+      def setLineHeightsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<string> */ js.Any)*
+      ): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
       
       @scala.inline
       def setRadii(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
       
@@ -13953,12 +13972,14 @@ object anon {
       def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
       
       @scala.inline
-      def setRadiiVarargs(value: js.Any*): Self = StObject.set(x, "radii", js.Array(value :_*))
+      def setRadiiVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<{}> */ js.Any)*
+      ): Self = StObject.set(x, "radii", js.Array(value :_*))
       
       @scala.inline
       def setShadows(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any
             ]
       ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
       
@@ -13966,12 +13987,14 @@ object anon {
       def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
       
       @scala.inline
-      def setShadowsVarargs(value: js.Any*): Self = StObject.set(x, "shadows", js.Array(value :_*))
+      def setShadowsVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any)*
+      ): Self = StObject.set(x, "shadows", js.Array(value :_*))
       
       @scala.inline
       def setSizes(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -13979,7 +14002,9 @@ object anon {
       def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
       @scala.inline
-      def setSizesVarargs(value: js.Any*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      def setSizesVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any)*
+      ): Self = StObject.set(x, "sizes", js.Array(value :_*))
       
       @scala.inline
       def setSpace(
@@ -13999,7 +14024,7 @@ object anon {
       @scala.inline
       def setZIndices(
         value: ThemeValue[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any
             ]
       ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
       
@@ -14007,14 +14032,15 @@ object anon {
       def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
       
       @scala.inline
-      def setZIndicesVarargs(value: js.Any*): Self = StObject.set(x, "zIndices", js.Array(value :_*))
+      def setZIndicesVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any)*
+      ): Self = StObject.set(x, "zIndices", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var theme: typings.styledSystemCss.mod.Theme = js.native
+    var theme: typings.styledSystemCss.mod.Theme
   }
   object Theme {
     

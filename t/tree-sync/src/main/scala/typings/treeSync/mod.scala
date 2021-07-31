@@ -2,14 +2,15 @@ package typings.treeSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tree-sync", JSImport.Default)
   @js.native
-  class default protected () extends TreeSync {
+  class default protected ()
+    extends StObject
+       with TreeSync {
     /**
       * Initializes a new TreeSync instance. This instance is used to keep an output directory in sync with its
       * input directory. When using the same instance to keep two directories in sync over multiple sync operations,
@@ -23,15 +24,20 @@ object mod {
       */
     def this(inputPath: String, outputPath: String) = this()
     def this(inputPath: String, outputPath: String, treeSyncOpts: TreeSyncOptions) = this()
+    
+    /**
+      * Syncs the input directory to the output directory. File I/O is done synchronously.
+      */
+    /* CompleteClass */
+    override def sync(): js.Array[TreeSyncResult] = js.native
   }
   
-  @js.native
   trait TreeSync extends StObject {
     
     /**
       * Syncs the input directory to the output directory. File I/O is done synchronously.
       */
-    def sync(): js.Array[TreeSyncResult] = js.native
+    def sync(): js.Array[TreeSyncResult]
   }
   object TreeSync {
     
@@ -49,7 +55,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TreeSyncOptions extends StObject {
     
     /**
@@ -58,13 +63,13 @@ object mod {
       * If using this option, it's important to ensure that you've included parent directories of files
       * you add, otherwise you might run into an ENOENT error!
       */
-    var globs: js.UndefOr[js.Array[String]] = js.native
+    var globs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An array of globs. Files and directories that match at least one of the provided globs will be
       * pruned while searching.
       */
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TreeSyncOptions {
     

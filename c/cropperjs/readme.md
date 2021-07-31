@@ -11,9 +11,9 @@ JavaScript image cropper.
 | Full name          | cropperjs |
 | Keywords           | image, crop, move, zoom, rotate, scale, cropper, cropper.js, cropping, processing, html, css, javascript, front-end, web |
 | # releases         | 13 |
-| # dependents       | 251 |
-| # downloads        | 8377363 |
-| # stars            | 23 |
+| # dependents       | 301 |
+| # downloads        | 11305987 |
+| # stars            | 24 |
 
 ## Links
 - [Homepage](https://fengyuanchen.github.io/cropperjs)

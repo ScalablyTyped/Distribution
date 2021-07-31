@@ -1,14 +1,43 @@
 package typings.pixiSpine.global.PIXI.spine.core
 
+import typings.pixiSpine.PIXI.spine.core.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.Triangulator")
 @js.native
 class Triangulator ()
-  extends typings.pixiSpine.PIXI.spine.core.Triangulator
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.Triangulator {
+  
+  /* CompleteClass */
+  var convexPolygons: js.Any = js.native
+  
+  /* CompleteClass */
+  var convexPolygonsIndices: js.Any = js.native
+  
+  /* CompleteClass */
+  override def decompose(verticesArray: js.Array[Double], triangles: js.Array[Double]): js.Array[js.Array[Double]] = js.native
+  
+  /* CompleteClass */
+  var indicesArray: js.Any = js.native
+  
+  /* CompleteClass */
+  var isConcaveArray: js.Any = js.native
+  
+  /* CompleteClass */
+  var polygonIndicesPool: js.Any = js.native
+  
+  /* CompleteClass */
+  var polygonPool: js.Any = js.native
+  
+  /* CompleteClass */
+  var triangles: js.Any = js.native
+  
+  /* CompleteClass */
+  override def triangulate(verticesArray: ArrayLike[Double]): js.Array[Double] = js.native
+}
 object Triangulator {
   
   @JSGlobal("PIXI.spine.core.Triangulator")

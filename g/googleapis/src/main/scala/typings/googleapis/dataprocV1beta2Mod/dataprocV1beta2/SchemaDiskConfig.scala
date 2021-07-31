@@ -2,26 +2,24 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the config of disk options for a group of VM instances.
   */
-@js.native
 trait SchemaDiskConfig extends StObject {
   
   /**
     * Optional. Size in GB of the boot disk (default is 500GB).
     */
-  var bootDiskSizeGb: js.UndefOr[Double] = js.native
+  var bootDiskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Type of the boot disk (default is &quot;pd-standard&quot;).
     * Valid values: &quot;pd-ssd&quot; (Persistent Disk Solid State Drive) or
     * &quot;pd-standard&quot; (Persistent Disk Hard Disk Drive).
     */
-  var bootDiskType: js.UndefOr[String] = js.native
+  var bootDiskType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Number of attached SSDs, from 0 to 4 (default is 0). If SSDs
@@ -30,7 +28,7 @@ trait SchemaDiskConfig extends StObject {
     * or more SSDs are attached, this runtime bulk data is spread across them,
     * and the boot disk contains only basic config and installed binaries.
     */
-  var numLocalSsds: js.UndefOr[Double] = js.native
+  var numLocalSsds: js.UndefOr[Double] = js.undefined
 }
 object SchemaDiskConfig {
   

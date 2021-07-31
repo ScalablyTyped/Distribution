@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterOutput extends StObject {
   
   /**
     * The number of steps that can be executed concurrently.
     */
-  var StepConcurrencyLevel: js.UndefOr[Integer] = js.native
+  var StepConcurrencyLevel: js.UndefOr[Integer] = js.undefined
 }
 object ModifyClusterOutput {
   

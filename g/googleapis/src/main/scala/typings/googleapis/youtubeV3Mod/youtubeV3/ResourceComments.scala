@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Comments")
@@ -30,7 +29,7 @@ class ResourceComments protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceCommentsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceComments protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaComment] = js.native
   def insert(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def insert(params: ParamsResourceCommentsInsert): GaxiosPromise[SchemaComment] = js.native
   def insert(params: ParamsResourceCommentsInsert, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def insert(
@@ -91,7 +90,7 @@ class ResourceComments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCommentListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaCommentListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommentListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommentListResponse] = js.native
   def list(params: ParamsResourceCommentsList): GaxiosPromise[SchemaCommentListResponse] = js.native
   def list(params: ParamsResourceCommentsList, callback: BodyResponseCallback[SchemaCommentListResponse]): Unit = js.native
   def list(
@@ -121,7 +120,7 @@ class ResourceComments protected () extends StObject {
     */
   def markAsSpam(): GaxiosPromise[Unit] = js.native
   def markAsSpam(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def markAsSpam(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def markAsSpam(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def markAsSpam(params: ParamsResourceCommentsMarkasspam): GaxiosPromise[Unit] = js.native
   def markAsSpam(params: ParamsResourceCommentsMarkasspam, callback: BodyResponseCallback[Unit]): Unit = js.native
   def markAsSpam(
@@ -154,7 +153,7 @@ class ResourceComments protected () extends StObject {
     */
   def setModerationStatus(): GaxiosPromise[Unit] = js.native
   def setModerationStatus(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def setModerationStatus(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def setModerationStatus(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def setModerationStatus(params: ParamsResourceCommentsSetmoderationstatus): GaxiosPromise[Unit] = js.native
   def setModerationStatus(params: ParamsResourceCommentsSetmoderationstatus, callback: BodyResponseCallback[Unit]): Unit = js.native
   def setModerationStatus(
@@ -184,7 +183,7 @@ class ResourceComments protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaComment] = js.native
   def update(callback: BodyResponseCallback[SchemaComment]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaComment] = js.native
   def update(params: ParamsResourceCommentsUpdate): GaxiosPromise[SchemaComment] = js.native
   def update(params: ParamsResourceCommentsUpdate, callback: BodyResponseCallback[SchemaComment]): Unit = js.native
   def update(

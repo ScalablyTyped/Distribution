@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.layout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait SideContentPosition extends StObject
 object SideContentPosition extends StObject {
   
   @js.native
-  sealed trait Begin extends SideContentPosition
+  sealed trait Begin
+    extends StObject
+       with SideContentPosition
   
   @js.native
-  sealed trait End extends SideContentPosition
+  sealed trait End
+    extends StObject
+       with SideContentPosition
 }

@@ -3,22 +3,22 @@ package typings.reactBootstrapTable.mod
 import typings.reactBootstrapTable.reactBootstrapTableStrings.ArrayFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArrayFilterData extends FilterValue {
+trait ArrayFilterData
+  extends StObject
+     with FilterValue {
   
-  var `type`: ArrayFilter = js.native
+  var `type`: ArrayFilter
   
-  var value: js.Array[Double | String] = js.native
+  var value: js.Array[Double | String]
 }
 object ArrayFilterData {
   
   @scala.inline
-  def apply(`type`: ArrayFilter, value: js.Array[Double | String]): ArrayFilterData = {
+  def apply(value: js.Array[Double | String]): ArrayFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayFilter")
     __obj.asInstanceOf[ArrayFilterData]
   }
   

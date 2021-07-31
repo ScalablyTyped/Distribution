@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WordAlternativeResult. */
-@js.native
 trait WordAlternativeResult extends StObject {
   
   /** A confidence score for the word alternative hypothesis in the range of 0.0 to 1.0. */
-  var confidence: Double = js.native
+  var confidence: Double
   
   /** An alternative hypothesis for a word from the input audio. */
-  var word: String = js.native
+  var word: String
 }
 object WordAlternativeResult {
   

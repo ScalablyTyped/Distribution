@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.sheet.XRangeSelection
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProvider
-  extends XDataProvider
+  extends StObject
+     with XDataProvider
      with XRangeXMLConversion {
   
   /** If set to false `FALSE` , values from hidden cells are not returned. */
-  var IncludeHiddenCells: Boolean = js.native
+  var IncludeHiddenCells: Boolean
 }
 object DataProvider {
   

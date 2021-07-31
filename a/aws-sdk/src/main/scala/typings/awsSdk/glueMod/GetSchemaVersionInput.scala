@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSchemaVersionInput extends StObject {
   
   /**
     * This is a wrapper structure to contain schema identity fields. The structure contains:   SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. Either SchemaArn or SchemaName and RegistryName has to be provided.   SchemaId$SchemaName: The name of the schema. Either SchemaArn or SchemaName and RegistryName has to be provided.  
     */
-  var SchemaId: js.UndefOr[typings.awsSdk.glueMod.SchemaId] = js.native
+  var SchemaId: js.UndefOr[typings.awsSdk.glueMod.SchemaId] = js.undefined
   
   /**
     * The SchemaVersionId of the schema version. This field is required for fetching by schema ID. Either this or the SchemaId wrapper has to be provided.
     */
-  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.native
+  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.native
+  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.undefined
 }
 object GetSchemaVersionInput {
   

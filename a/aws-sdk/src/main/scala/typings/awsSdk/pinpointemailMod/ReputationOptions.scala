@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReputationOptions extends StObject {
   
   /**
     * The date and time (in Unix time) when the reputation metrics were last given a fresh start. When your account is given a fresh start, your reputation metrics are calculated starting from the date of the fresh start.
     */
-  var LastFreshStart: js.UndefOr[typings.awsSdk.pinpointemailMod.LastFreshStart] = js.native
+  var LastFreshStart: js.UndefOr[typings.awsSdk.pinpointemailMod.LastFreshStart] = js.undefined
   
   /**
     * If true, tracking of reputation metrics is enabled for the configuration set. If false, tracking of reputation metrics is disabled for the configuration set.
     */
-  var ReputationMetricsEnabled: js.UndefOr[Enabled] = js.native
+  var ReputationMetricsEnabled: js.UndefOr[Enabled] = js.undefined
 }
 object ReputationOptions {
   

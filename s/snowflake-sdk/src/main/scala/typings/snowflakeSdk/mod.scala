@@ -1,6 +1,7 @@
 package typings.snowflakeSdk
 
 import typings.node.NodeJS.ReadableStream
+import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.snowflakeSdk.snowflakeSdkStrings.DEBUG
 import typings.snowflakeSdk.snowflakeSdkStrings.ERROR
 import typings.snowflakeSdk.snowflakeSdkStrings.INFO
@@ -9,10 +10,13 @@ import typings.snowflakeSdk.snowflakeSdkStrings.WARN
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("snowflake-sdk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("snowflake-sdk", "BOOLEAN")
   @js.native
@@ -41,31 +45,31 @@ object mod {
   object StatementStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[StatementStatus with String] = js.native
+    def apply(value: String): js.UndefOr[StatementStatus & String] = js.native
     
     @js.native
-    sealed trait Complete extends StatementStatus
-    /* "complete" */ val Complete: typings.snowflakeSdk.mod.StatementStatus.Complete with String = js.native
+    sealed trait Complete
+      extends StObject
+         with StatementStatus
+    /* "complete" */ val Complete: typings.snowflakeSdk.mod.StatementStatus.Complete & String = js.native
     
     @js.native
-    sealed trait Fetching extends StatementStatus
-    /* "fetching" */ val Fetching: typings.snowflakeSdk.mod.StatementStatus.Fetching with String = js.native
+    sealed trait Fetching
+      extends StObject
+         with StatementStatus
+    /* "fetching" */ val Fetching: typings.snowflakeSdk.mod.StatementStatus.Fetching & String = js.native
   }
   
-  @JSImport("snowflake-sdk", "configure")
-  @js.native
-  def configure(): Unit = js.native
-  @JSImport("snowflake-sdk", "configure")
-  @js.native
-  def configure(options: ConfigureOptions): Unit = js.native
+  @scala.inline
+  def configure(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[Unit]
+  @scala.inline
+  def configure(options: ConfigureOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("snowflake-sdk", "createConnection")
-  @js.native
-  def createConnection(options: ConnectionOptions): Connection = js.native
+  @scala.inline
+  def createConnection(options: ConnectionOptions): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Connection]
   
-  @JSImport("snowflake-sdk", "deserializeConnection")
-  @js.native
-  def deserializeConnection(options: ConnectionOptions, serializedConnection: String): Connection = js.native
+  @scala.inline
+  def deserializeConnection(options: ConnectionOptions, serializedConnection: String): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeConnection")(options.asInstanceOf[js.Any], serializedConnection.asInstanceOf[js.Any])).asInstanceOf[Connection]
   
   @js.native
   sealed trait ocspModes extends StObject
@@ -74,61 +78,65 @@ object mod {
   object ocspModes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ocspModes with String] = js.native
+    def apply(value: String): js.UndefOr[ocspModes & String] = js.native
     
     @js.native
-    sealed trait FAIL_CLOSED extends ocspModes
-    /* "FAIL_CLOSED" */ val FAIL_CLOSED: typings.snowflakeSdk.mod.ocspModes.FAIL_CLOSED with String = js.native
+    sealed trait FAIL_CLOSED
+      extends StObject
+         with ocspModes
+    /* "FAIL_CLOSED" */ val FAIL_CLOSED: typings.snowflakeSdk.mod.ocspModes.FAIL_CLOSED & String = js.native
     
     @js.native
-    sealed trait FAIL_OPEN extends ocspModes
-    /* "FAIL_OPEN" */ val FAIL_OPEN: typings.snowflakeSdk.mod.ocspModes.FAIL_OPEN with String = js.native
+    sealed trait FAIL_OPEN
+      extends StObject
+         with ocspModes
+    /* "FAIL_OPEN" */ val FAIL_OPEN: typings.snowflakeSdk.mod.ocspModes.FAIL_OPEN & String = js.native
     
     @js.native
-    sealed trait INSECURE extends ocspModes
-    /* "INSECURE" */ val INSECURE: typings.snowflakeSdk.mod.ocspModes.INSECURE with String = js.native
+    sealed trait INSECURE
+      extends StObject
+         with ocspModes
+    /* "INSECURE" */ val INSECURE: typings.snowflakeSdk.mod.ocspModes.INSECURE & String = js.native
   }
   
-  @JSImport("snowflake-sdk", "serializeConnection")
-  @js.native
-  def serializeConnection(connection: Connection): String = js.native
+  @scala.inline
+  def serializeConnection(connection: Connection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeConnection")(connection.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Bind = String | Double
   
   type Binds = js.Array[Bind] | InsertBinds
   
-  @js.native
   trait Column extends StObject {
     
     /**
       * Returns the id of this column.
       */
-    def getId(): Double = js.native
+    def getId(): Double
     
     /**
       * Returns the index of this column.
       */
-    def getIndex(): Double = js.native
+    def getIndex(): Double
     
     /**
       * Returns the name of this column.
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Returns the scale associated with this column.
       */
-    def getScale(): Double = js.native
+    def getScale(): Double
     
     /**
       * Retuns the type associated with this column.
       */
-    def getType(): String = js.native
+    def getType(): String
     
     /**
       * Determines if this column is nullable.
       */
-    def isNullable(): Boolean = js.native
+    def isNullable(): Boolean
   }
   object Column {
     
@@ -168,18 +176,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigureOptions extends StObject {
     
-    var insecureConnect: js.UndefOr[Boolean] = js.native
+    var insecureConnect: js.UndefOr[Boolean] = js.undefined
     
-    var logLevel: js.UndefOr[ERROR | WARN | INFO | DEBUG | TRACE] = js.native
+    var logLevel: js.UndefOr[ERROR | WARN | INFO | DEBUG | TRACE] = js.undefined
     
     /**
       * ### Related Docs
       * - {@link https://docs.snowflake.com/en/user-guide/nodejs-driver-use.html#choosing-fail-open-or-fail-close-mode Choosing `Fail-Open` or `Fail-Close` Mode}
       */
-    var ocspFailOpen: js.UndefOr[Boolean] = js.native
+    var ocspFailOpen: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigureOptions {
     
@@ -212,12 +219,10 @@ object mod {
     }
   }
   
-  /* Inlined node.events.<global>.NodeJS.EventEmitter & {getTokens (): unknown, isUp (): boolean, getServiceName (): string, getClientSessionKeepAlive (): boolean, getClientSessionKeepAliveHeartbeatFrequency (): number, getJsTreatIntegerAsBigInt (): boolean, getId (): string, heartbeat (): void, connect (fn : (err : std.Error, conn : snowflake-sdk.snowflake-sdk.Connection): void): void, execute (options : {  sqlText :string,   streamResult :boolean | undefined,   binds :snowflake-sdk.snowflake-sdk.Binds | undefined,   fetchAsString :std.Array<'String' | 'Boolean' | 'Number' | 'Date' | 'JSON'> | undefined, complete (err : std.Error, stmt : snowflake-sdk.snowflake-sdk.Statement, rows : std.Array<any> | undefined): void}): void, fetchResult (): any, destroy (fn : (err : std.Error, conn : snowflake-sdk.snowflake-sdk.Connection): void): void, serialize (): string} */
   @js.native
-  trait Connection extends StObject {
-    
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+  trait Connection
+    extends StObject
+       with EventEmitter {
     
     /**
       * Establishes a connection if not in a fatal state.
@@ -229,11 +234,6 @@ object mod {
       * currently executing statements to complete.
       */
     def destroy(fn: js.Function2[/* err */ Error, /* conn */ this.type, Unit]): Unit = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
     
     /**
       * ### Related Docs
@@ -257,8 +257,6 @@ object mod {
     
     def getJsTreatIntegerAsBigInt(): Boolean = js.native
     
-    def getMaxListeners(): Double = js.native
-    
     def getServiceName(): String = js.native
     
     /**
@@ -273,54 +271,19 @@ object mod {
       */
     def isUp(): Boolean = js.native
     
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
     /**
       * Returns a serialized version of this connection.
       */
     def serialize(): String = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
     /**
       * The full name of your account (provided by Snowflake). Note that your full account name might include additional segments
       * that identify the region and cloud platform where your account is hosted.
       */
-    var account: String = js.native
+    var account: String
     
     /**
       * By default, client connections typically time out approximately 3-4 hours after the most recent query was executed.
@@ -333,7 +296,7 @@ object mod {
       * If you set this parameter to true, make sure that your program explicitly disconnects from the server when your program
       * has finished. Do not exit without disconnecting.
       */
-    var clientSessionKeepAlive: js.UndefOr[Boolean] = js.native
+    var clientSessionKeepAlive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (Applies only when `clientSessionKeepAlive` is true)
@@ -348,19 +311,19 @@ object mod {
       * at least 4 hours, a heartbeat every 1 hour is normally sufficient to keep the connection alive. Heartbeat intervals of less
       * than 3600 seconds are rarely necessary or useful.
       */
-    var clientSessionKeepAliveHeartbeatFrequency: js.UndefOr[Double] = js.native
+    var clientSessionKeepAliveHeartbeatFrequency: js.UndefOr[Double] = js.undefined
     
     /**
       * The default database to use for the session after connecting.
       */
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
-    var jsTreatIntegerAsBigInt: js.UndefOr[Boolean] = js.native
+    var jsTreatIntegerAsBigInt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Password for the user.
       */
-    var password: String = js.native
+    var password: String
     
     /**
       * @deprecated
@@ -369,27 +332,27 @@ object mod {
       * This parameter is no longer used because the region information, if required, is included as part of the full account name.
       * It is documented here only for backward compatibility
       */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * The default security role to use for the session after connecting.
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * The default schema to use for the session after connecting.
       */
-    var schema: js.UndefOr[String] = js.native
+    var schema: js.UndefOr[String] = js.undefined
     
     /**
       * Snowflake user login name to connect with.
       */
-    var username: String = js.native
+    var username: String
     
     /**
       * The default virtual warehouse to use for the session after connecting. Used for performing queries, loading data, etc.
       */
-    var warehouse: js.UndefOr[String] = js.native
+    var warehouse: js.UndefOr[String] = js.undefined
   }
   object ConnectionOptions {
     

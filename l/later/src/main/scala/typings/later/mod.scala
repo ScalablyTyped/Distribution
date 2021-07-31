@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,18 +13,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : Static = js.native
   
-  @js.native
   trait DateProvider extends StObject {
     
     /**
       * Set later to use UTC time.
       */
-    def UTC(): Unit = js.native
+    def UTC(): Unit
     
     /**
       * Set later to use local time.
       */
-    def localTime(): Unit = js.native
+    def localTime(): Unit
     
     /**
       * Builds and returns a new Date using the specified values.  Date
@@ -45,7 +43,7 @@ object mod extends Shortcut {
       h: js.UndefOr[Double],
       m: js.UndefOr[Double],
       s: js.UndefOr[Double]
-    ): Date = js.native
+    ): Date
     
     /**
       * Determines if a value will cause a particular constraint to rollover to the
@@ -57,7 +55,7 @@ object mod extends Shortcut {
       * @param constraint: A modifier
       * @param period: A time period
       */
-    def nextRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date = js.native
+    def nextRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date
     
     /**
       * Builds and returns a new Date using the specified values.  Date
@@ -77,7 +75,7 @@ object mod extends Shortcut {
       h: js.UndefOr[Double],
       m: js.UndefOr[Double],
       s: js.UndefOr[Double]
-    ): Date = js.native
+    ): Date
     
     /**
       * Determines if a value will cause a particular constraint to rollover to the
@@ -89,7 +87,7 @@ object mod extends Shortcut {
       * @param constraint: A modifier
       * @param period: A time period
       */
-    def prevRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date = js.native
+    def prevRollover(d: Date, `val`: Double, constraint: Modifier, period: TimePeriod): Date
   }
   object DateProvider {
     
@@ -134,7 +132,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Modifier extends TimePeriod {
+  trait Modifier
+    extends StObject
+       with TimePeriod {
     
     /**
       * Creates a new modified constraint.
@@ -145,7 +145,6 @@ object mod extends Shortcut {
     def apply(constraint: TimePeriod, value: Double): TimePeriod = js.native
   }
   
-  @js.native
   trait ModifierStatic extends StObject {
     
     /**
@@ -157,12 +156,12 @@ object mod extends Shortcut {
     /**
       * After Modifier
       */
-    def after(constraint: TimePeriod, value: Double): TimePeriod = js.native
+    def after(constraint: TimePeriod, value: Double): TimePeriod
     /**
       * After Modifier
       */
     @JSName("after")
-    var after_Original: Modifier = js.native
+    var after_Original: Modifier
     
     /**
       * Creates a new modified constraint.
@@ -173,12 +172,30 @@ object mod extends Shortcut {
     /**
       * Before Modifier
       */
-    def before(constraint: TimePeriod, value: Double): TimePeriod = js.native
+    def before(constraint: TimePeriod, value: Double): TimePeriod
     /**
       * Before Modifier
       */
     @JSName("before")
-    var before_Original: Modifier = js.native
+    var before_Original: Modifier
+  }
+  object ModifierStatic {
+    
+    @scala.inline
+    def apply(after: Modifier, before: Modifier): ModifierStatic = {
+      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ModifierStatic]
+    }
+    
+    @scala.inline
+    implicit class ModifierStaticMutableBuilder[Self <: ModifierStatic] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAfter(value: Modifier): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setBefore(value: Modifier): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -191,9 +208,9 @@ object mod extends Shortcut {
       * @param [hasSeconds] - Whether the cron expression has second part.
       */
     def cron(): ScheduleData = js.native
-    def cron(input: js.UndefOr[scala.Nothing], hasSeconds: Boolean): ScheduleData = js.native
     def cron(input: String): ScheduleData = js.native
     def cron(input: String, hasSeconds: Boolean): ScheduleData = js.native
+    def cron(input: Unit, hasSeconds: Boolean): ScheduleData = js.native
     
     /**
       * Create a recurrence builder for building schedule data.
@@ -209,9 +226,9 @@ object mod extends Shortcut {
     def text(input: String): ScheduleData = js.native
   }
   
-  @js.native
   trait Recurrence
-    extends /*
+    extends StObject
+       with /*
     * Custom Time Periods and Modifiers
     * For acces to custom time periods created as extension to the later static type
     * and modifiers created on the later modifier static type.
@@ -219,112 +236,112 @@ object mod extends Shortcut {
   /* timeperiodAndModifierName */ StringDictionary[js.UndefOr[js.Array[Double]]] {
     
     /** Day of the month. */
-    var D: js.UndefOr[js.Array[Double]] = js.native
+    var D: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var D_a: js.UndefOr[js.Array[Double]] = js.native
+    var D_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var D_b: js.UndefOr[js.Array[Double]] = js.native
+    var D_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Month in year. */
-    var M: js.UndefOr[js.Array[Double]] = js.native
+    var M: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var M_a: js.UndefOr[js.Array[Double]] = js.native
+    var M_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var M_b: js.UndefOr[js.Array[Double]] = js.native
+    var M_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Year. */
-    var Y: js.UndefOr[js.Array[Double]] = js.native
+    var Y: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var Y_a: js.UndefOr[js.Array[Double]] = js.native
+    var Y_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var Y_b: js.UndefOr[js.Array[Double]] = js.native
+    var Y_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Nth day of the week in month. */
-    var dc: js.UndefOr[js.Array[Double]] = js.native
+    var dc: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var dc_a: js.UndefOr[js.Array[Double]] = js.native
+    var dc_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var dc_b: js.UndefOr[js.Array[Double]] = js.native
+    var dc_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Day in week. */
-    var dw: js.UndefOr[js.Array[Double]] = js.native
+    var dw: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var dw_a: js.UndefOr[js.Array[Double]] = js.native
+    var dw_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var dw_b: js.UndefOr[js.Array[Double]] = js.native
+    var dw_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Day in year. */
-    var dy: js.UndefOr[js.Array[Double]] = js.native
+    var dy: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var dy_a: js.UndefOr[js.Array[Double]] = js.native
+    var dy_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var dy_b: js.UndefOr[js.Array[Double]] = js.native
+    var dy_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Hour in day. */
-    var h: js.UndefOr[js.Array[Double]] = js.native
+    var h: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var h_a: js.UndefOr[js.Array[Double]] = js.native
+    var h_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var h_b: js.UndefOr[js.Array[Double]] = js.native
+    var h_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Minutes in hour. */
-    var m: js.UndefOr[js.Array[Double]] = js.native
+    var m: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var m_a: js.UndefOr[js.Array[Double]] = js.native
+    var m_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var m_b: js.UndefOr[js.Array[Double]] = js.native
+    var m_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Seconds in minute. */
-    var s: js.UndefOr[js.Array[Double]] = js.native
+    var s: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var s_a: js.UndefOr[js.Array[Double]] = js.native
+    var s_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var s_b: js.UndefOr[js.Array[Double]] = js.native
+    var s_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Time in seconds from midnight. */
-    var t: js.UndefOr[js.Array[Double]] = js.native
+    var t: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var t_a: js.UndefOr[js.Array[Double]] = js.native
+    var t_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var t_b: js.UndefOr[js.Array[Double]] = js.native
+    var t_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Week in month. */
-    var wm: js.UndefOr[js.Array[Double]] = js.native
+    var wm: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var wm_a: js.UndefOr[js.Array[Double]] = js.native
+    var wm_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var wm_b: js.UndefOr[js.Array[Double]] = js.native
+    var wm_b: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** ISO week in year. */
-    var wy: js.UndefOr[js.Array[Double]] = js.native
+    var wy: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** After modifiers. */
-    var wy_a: js.UndefOr[js.Array[Double]] = js.native
+    var wy_a: js.UndefOr[js.Array[Double]] = js.undefined
     
     /** Before modifiers. */
-    var wy_b: js.UndefOr[js.Array[Double]] = js.native
+    var wy_b: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Recurrence {
     
@@ -637,7 +654,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait RecurrenceBuilder extends ScheduleData {
+  trait RecurrenceBuilder
+    extends StObject
+       with ScheduleData {
     
     def after(value: String): RecurrenceBuilder = js.native
     /**
@@ -799,7 +818,7 @@ object mod extends Shortcut {
       * @param dateTo: The latest a valid instance can occur
       */
     def next(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def next(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
+    def next(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
     def next(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
     def next(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
     
@@ -814,7 +833,7 @@ object mod extends Shortcut {
       * @param dateTo: The latest a valid range can occur
       */
     def nextRange(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def nextRange(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
+    def nextRange(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
     def nextRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
     def nextRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
     
@@ -829,7 +848,7 @@ object mod extends Shortcut {
       * @param dateTo: The latest a valid instance can occur
       */
     def prev(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def prev(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
+    def prev(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
     def prev(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
     def prev(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
     
@@ -844,29 +863,28 @@ object mod extends Shortcut {
       * @param dateTo: The latest a valid range can occur
       */
     def prevRange(numberOfInst: Double): js.Array[Date] | Date = js.native
-    def prevRange(numberOfInst: Double, dateFrom: js.UndefOr[scala.Nothing], dateTo: Date): js.Array[Date] | Date = js.native
+    def prevRange(numberOfInst: Double, dateFrom: Unit, dateTo: Date): js.Array[Date] | Date = js.native
     def prevRange(numberOfInst: Double, dateFrom: Date): js.Array[Date] | Date = js.native
     def prevRange(numberOfInst: Double, dateFrom: Date, dateTo: Date): js.Array[Date] | Date = js.native
   }
   
-  @js.native
   trait ScheduleData extends StObject {
     
     /**
       * A code to identify any errors in the composite schedule and exceptions.
       * The number tells you the position of the error within the schedule.
       */
-    var error: Double = js.native
+    var error: Double
     
     /**
       * A list of exceptions to the composite recurrence information.
       */
-    var exceptions: js.Array[Recurrence] = js.native
+    var exceptions: js.Array[Recurrence]
     
     /**
       * A list of recurrence information as a composite schedule.
       */
-    var schedules: js.Array[Recurrence] = js.native
+    var schedules: js.Array[Recurrence]
   }
   object ScheduleData {
     
@@ -896,41 +914,40 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Static extends StObject {
     
     /** Date Provider */
-    var date: DateProvider = js.native
+    var date: DateProvider
     
     /**
       * Day time period information provider.
       */
-    var day: TimePeriod = js.native
+    var day: TimePeriod
     
     /**
       * Day of week time period information provider.
       */
-    var dayOfWeek: TimePeriod = js.native
+    var dayOfWeek: TimePeriod
     
     /**
       * Day of week in month time period information provider.
       */
-    var dayOfWeekCount: TimePeriod = js.native
+    var dayOfWeekCount: TimePeriod
     
     /**
       * Day in year time period information provider.
       */
-    var dayOfYear: TimePeriod = js.native
+    var dayOfYear: TimePeriod
     
     /**
       * Hour time period information provider.
       */
-    var hour: TimePeriod = js.native
+    var hour: TimePeriod
     
     /**
       * Minute time period information provider.
       */
-    var minute: TimePeriod = js.native
+    var minute: TimePeriod
     
     /**
       * Later Modifiers:
@@ -944,29 +961,29 @@ object mod extends Shortcut {
       *
       * Be sure to use this interface when dealing with Later.modifier
       */
-    var modifier: ModifierStatic = js.native
+    var modifier: ModifierStatic
     
     /**
       * Month time period information provider.
       */
-    var month: TimePeriod = js.native
+    var month: TimePeriod
     
     /**
       * Parse
       * For generating schedule data.
       */
-    var parse: ParseStatic = js.native
+    var parse: ParseStatic
     
     /**
       * Schedule
       * Generates instances from schedule data.
       */
-    def schedule(input: js.Any): Schedule = js.native
+    def schedule(input: js.Any): Schedule
     
     /**
       * Second time period information provider.
       */
-    var second: TimePeriod = js.native
+    var second: TimePeriod
     
     /**
       * Set interval on window using given recurrence
@@ -974,7 +991,7 @@ object mod extends Shortcut {
       * @param callback - A callback called after each instance of recurrence pattern.
       * @param - A recurrence instance.
       */
-    def setInterval(callback: js.Function0[Unit], time: ScheduleData): Timer = js.native
+    def setInterval(callback: js.Function0[Unit], time: ScheduleData): Timer
     
     /**
       * Set timeout on window using given recurrence next.
@@ -982,27 +999,27 @@ object mod extends Shortcut {
       * @param callback - A callback called after first instance of recurrence pattern.
       * @param - A recurrence instance.
       */
-    def setTimeout(callback: js.Function0[Unit], time: ScheduleData): Timer = js.native
+    def setTimeout(callback: js.Function0[Unit], time: ScheduleData): Timer
     
     /**
       * time period information provider.
       */
-    var time: TimePeriod = js.native
+    var time: TimePeriod
     
     /**
       * Week of mobth time period information provider.
       */
-    var weekOfMonth: TimePeriod = js.native
+    var weekOfMonth: TimePeriod
     
     /**
       * Week of yearfrom ISO 8601 time period information provider.
       */
-    var weekOfYear: TimePeriod = js.native
+    var weekOfYear: TimePeriod
     
     /**
       * Year time period information provider.
       */
-    var year: TimePeriod = js.native
+    var year: TimePeriod
   }
   object Static {
     
@@ -1163,13 +1180,12 @@ object mod extends Shortcut {
     def `val`(date: Date): Double = js.native
   }
   
-  @js.native
   trait Timer extends StObject {
     
     /**
       * Clear the timer and end execution.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object Timer {
     

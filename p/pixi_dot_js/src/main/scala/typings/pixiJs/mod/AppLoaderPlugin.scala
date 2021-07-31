@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,4 +17,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "AppLoaderPlugin")
 @js.native
 class AppLoaderPlugin ()
-  extends typings.pixiJs.PIXI.AppLoaderPlugin
+  extends StObject
+     with typings.pixiJs.PIXI.AppLoaderPlugin

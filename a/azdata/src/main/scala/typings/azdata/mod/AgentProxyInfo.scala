@@ -2,25 +2,23 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentProxyInfo extends StObject {
   
-  var accountName: String = js.native
+  var accountName: String
   
-  var credentialId: Double = js.native
+  var credentialId: Double
   
-  var credentialIdentity: String = js.native
+  var credentialIdentity: String
   
-  var credentialName: String = js.native
+  var credentialName: String
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
 }
 object AgentProxyInfo {
   

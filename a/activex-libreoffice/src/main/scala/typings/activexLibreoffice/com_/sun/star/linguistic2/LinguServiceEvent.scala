@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,15 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.Hyphenator
   * @see com.sun.star.lang.EventObject
   */
-@js.native
-trait LinguServiceEvent extends EventObject {
+trait LinguServiceEvent
+  extends StObject
+     with EventObject {
   
   /**
     * The type of event.
     *
     * The value may be combined via logical OR from those values defined in {@link com.sun.star.linguistic2.LinguServiceEventFlags}
     */
-  var nEvent: Double = js.native
+  var nEvent: Double
 }
 object LinguServiceEvent {
   

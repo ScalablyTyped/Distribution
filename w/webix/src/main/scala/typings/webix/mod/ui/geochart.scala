@@ -5,13 +5,13 @@ import typings.webix.mod.WebixCallback
 import typings.webix.mod.WebixTemplate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webix", "ui.geochart")
 @js.native
 class geochart ()
-  extends typings.webix.webix.ui.baseview {
+  extends StObject
+     with typings.webix.webix.ui.baseview {
   
   @JSName("$scope")
   var $scope: js.Any = js.native
@@ -25,9 +25,12 @@ class geochart ()
   def attachEvent(`type`: geochartEventName, functor: WebixCallback): String | Double = js.native
   def attachEvent(`type`: geochartEventName, functor: WebixCallback, id: String): String | Double = js.native
   
+  def bind(target: js.Any, rule: WebixCallback): Unit = js.native
+  def bind(target: js.Any, rule: WebixCallback, format: String): Unit = js.native
+  
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -43,14 +46,18 @@ class geochart ()
   def exists(id: String): Boolean = js.native
   def exists(id: Double): Boolean = js.native
   
-  def filter(text: WebixCallback | WebixTemplate): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String): Unit = js.native
-  def filter(text: WebixCallback | WebixTemplate, value: String, preserve: Boolean): Unit = js.native
   def filter(text: String): Unit = js.native
-  def filter(text: String, value: js.UndefOr[scala.Nothing], preserve: Boolean): Unit = js.native
   def filter(text: String, value: String): Unit = js.native
   def filter(text: String, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: String, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback): Unit = js.native
+  def filter(text: WebixCallback, value: String): Unit = js.native
+  def filter(text: WebixCallback, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixCallback, value: Unit, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate): Unit = js.native
+  def filter(text: WebixTemplate, value: String): Unit = js.native
+  def filter(text: WebixTemplate, value: String, preserve: Boolean): Unit = js.native
+  def filter(text: WebixTemplate, value: Unit, preserve: Boolean): Unit = js.native
   
   def find(criterion: WebixCallback): js.Any = js.native
   def find(criterion: WebixCallback, first: Boolean): js.Any = js.native
@@ -78,12 +85,12 @@ class geochart ()
   
   def hasEvent(name: String): Boolean = js.native
   
-  def load(url: String): js.Promise[_] = js.native
-  def load(url: String, `type`: js.UndefOr[scala.Nothing], callback: WebixCallback): js.Promise[_] = js.native
-  def load(url: String, `type`: String): js.Promise[_] = js.native
-  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[_] = js.native
+  def load(url: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: String, callback: WebixCallback): js.Promise[js.Any] = js.native
+  def load(url: String, `type`: Unit, callback: WebixCallback): js.Promise[js.Any] = js.native
   
-  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[_] = js.native
+  def loadNext(count: Double, start: Double, callback: WebixCallback, url: String, now: Boolean): js.Promise[js.Any] = js.native
   
   def mapEvent(map: js.Any): Unit = js.native
   
@@ -94,22 +101,22 @@ class geochart ()
   def refresh(id: Double): Unit = js.native
   
   def remove(id: String): Unit = js.native
-  def remove(id: js.Array[_]): Unit = js.native
+  def remove(id: js.Array[js.Any]): Unit = js.native
   def remove(id: Double): Unit = js.native
   
   def render(): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(all: Boolean): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(all: Boolean): js.Array[js.Any] = js.native
   
   def setDisplayMode(mode: String): Unit = js.native
   
   def setRegion(region: String): Unit = js.native
   
   def sort(by: String): Unit = js.native
-  def sort(by: String, dir: js.UndefOr[scala.Nothing], as: String): Unit = js.native
   def sort(by: String, dir: String): Unit = js.native
   def sort(by: String, dir: String, as: String): Unit = js.native
+  def sort(by: String, dir: Unit, as: String): Unit = js.native
   
   def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
   
@@ -118,7 +125,7 @@ class geochart ()
   def updateItem(id: String, data: js.Any): Unit = js.native
   def updateItem(id: Double, data: js.Any): Unit = js.native
   
-  var waitData: js.Promise[_] = js.native
+  var waitData: js.Promise[js.Any] = js.native
   
-  def waitSave(handler: WebixCallback): js.Promise[_] = js.native
+  def waitSave(handler: WebixCallback): js.Promise[js.Any] = js.native
 }

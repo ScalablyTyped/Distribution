@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dataflow/v1b3", "dataflow_v1b3.Resource$Projects$Jobs$Messages")
@@ -42,7 +41,7 @@ class ResourceProjectsJobsMessages protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListJobMessagesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListJobMessagesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListJobMessagesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListJobMessagesResponse] = js.native
   def list(params: ParamsResourceProjectsJobsMessagesList): GaxiosPromise[SchemaListJobMessagesResponse] = js.native
   def list(
     params: ParamsResourceProjectsJobsMessagesList,

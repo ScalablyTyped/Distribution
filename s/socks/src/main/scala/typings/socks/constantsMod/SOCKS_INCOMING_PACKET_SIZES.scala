@@ -2,7 +2,6 @@ package typings.socks.constantsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SOCKS_INCOMING_PACKET_SIZES {
@@ -29,9 +28,8 @@ object SOCKS_INCOMING_PACKET_SIZES {
   @scala.inline
   def Socks5ResponseHeader_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Socks5ResponseHeader")(x.asInstanceOf[js.Any])
   
-  @JSImport("socks/typings/common/constants", "SOCKS_INCOMING_PACKET_SIZES.Socks5ResponseHostname")
-  @js.native
-  def Socks5ResponseHostname(hostNameLength: Double): Double = js.native
+  @scala.inline
+  def Socks5ResponseHostname(hostNameLength: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Socks5ResponseHostname")(hostNameLength.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("socks/typings/common/constants", "SOCKS_INCOMING_PACKET_SIZES.Socks5ResponseIPv4")
   @js.native

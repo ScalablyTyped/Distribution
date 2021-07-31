@@ -4,15 +4,13 @@ import typings.openpgp.anon.Valid
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyResult extends StObject {
   
-  var data: String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array = js.native
+  var data: String | (ReadableStream[String | Uint8Array]) | NodeStream | Uint8Array
   
-  var signatures: js.Array[Valid] = js.native
+  var signatures: js.Array[Valid]
 }
 object VerifyResult {
   

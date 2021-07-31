@@ -2,19 +2,17 @@ package typings.jsreportPdfUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contrent extends StObject {
     
-    var contrent: String = js.native
+    var contrent: String
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var password: String = js.native
+    var password: String
   }
   object Contrent {
     

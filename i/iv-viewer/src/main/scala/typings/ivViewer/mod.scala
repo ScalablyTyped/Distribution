@@ -6,7 +6,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -120,12 +119,11 @@ object mod {
   @scala.inline
   def defaults_=(x: Options): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Dim extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object Dim {
     
@@ -146,32 +144,31 @@ object mod {
     }
   }
   
-  @js.native
   trait Elements extends StObject {
     
-    var container: Element | Null = js.native
+    var container: Element | Null
     
-    var domElement: Element | Null = js.native
+    var domElement: Element | Null
     
-    var image: js.UndefOr[Element | Null] = js.native
+    var image: js.UndefOr[Element | Null] = js.undefined
     
-    var imageWrap: js.UndefOr[Element | Null] = js.native
+    var imageWrap: js.UndefOr[Element | Null] = js.undefined
     
-    var snapHandle: js.UndefOr[Element | Null] = js.native
+    var snapHandle: js.UndefOr[Element | Null] = js.undefined
     
-    var snapImage: js.UndefOr[Element | Null] = js.native
+    var snapImage: js.UndefOr[Element | Null] = js.undefined
     
-    var snapImageWrap: js.UndefOr[Element | Null] = js.native
+    var snapImageWrap: js.UndefOr[Element | Null] = js.undefined
     
-    var snapView: js.UndefOr[Element | Null] = js.native
+    var snapView: js.UndefOr[Element | Null] = js.undefined
     
-    var zoomHandle: js.UndefOr[Element | Null] = js.native
+    var zoomHandle: js.UndefOr[Element | Null] = js.undefined
   }
   object Elements {
     
     @scala.inline
     def apply(): Elements = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(container = null, domElement = null)
       __obj.asInstanceOf[Elements]
     }
     
@@ -255,22 +252,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var hiResImageLoad: js.UndefOr[IVEvent] = js.native
+    var hiResImageLoad: js.UndefOr[IVEvent] = js.undefined
     
-    var imageLoad: js.UndefOr[IVEvent] = js.native
+    var imageLoad: js.UndefOr[IVEvent] = js.undefined
     
-    var mouseEnterSnapView: js.UndefOr[IVEvent] = js.native
+    var mouseEnterSnapView: js.UndefOr[IVEvent] = js.undefined
     
-    var mouseLeaveSnapView: js.UndefOr[IVEvent] = js.native
+    var mouseLeaveSnapView: js.UndefOr[IVEvent] = js.undefined
     
-    var onWindowResize: js.UndefOr[IVEvent] = js.native
+    var onWindowResize: js.UndefOr[IVEvent] = js.undefined
     
-    var pinchStart: js.UndefOr[IVEvent] = js.native
+    var pinchStart: js.UndefOr[IVEvent] = js.undefined
     
-    var snapViewOnMouseMove: js.UndefOr[IVEvent] = js.native
+    var snapViewOnMouseMove: js.UndefOr[IVEvent] = js.undefined
   }
   object Events {
     
@@ -327,16 +323,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Frames extends StObject {
     
-    var slideMomentumCheck: js.UndefOr[Double] = js.native
+    var slideMomentumCheck: js.UndefOr[Double] = js.undefined
     
-    var sliderMomentumFrame: js.UndefOr[Double] = js.native
+    var sliderMomentumFrame: js.UndefOr[Double] = js.undefined
     
-    var snapViewTimeout: js.UndefOr[Double] = js.native
+    var snapViewTimeout: js.UndefOr[Double] = js.undefined
     
-    var zoomFrame: js.UndefOr[Double] = js.native
+    var zoomFrame: js.UndefOr[Double] = js.undefined
   }
   object Frames {
     
@@ -375,16 +370,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait FullScreenElements extends Elements {
+  trait FullScreenElements
+    extends StObject
+       with Elements {
     
-    var fullScreen: Element | Null = js.native
+    var fullScreen: Element | Null
   }
   object FullScreenElements {
     
     @scala.inline
     def apply(): FullScreenElements = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(container = null, domElement = null, fullScreen = null)
       __obj.asInstanceOf[FullScreenElements]
     }
     
@@ -399,10 +395,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FullScreenEvents extends Events {
+  trait FullScreenEvents
+    extends StObject
+       with Events {
     
-    var onCloseBtnClick: js.UndefOr[IVEvent] = js.native
+    var onCloseBtnClick: js.UndefOr[IVEvent] = js.undefined
   }
   object FullScreenEvents {
     
@@ -427,18 +424,17 @@ object mod {
   
   type IVImage = String | Null
   
-  @js.native
   trait Images extends StObject {
     
-    var hiResImageSrc: IVImage = js.native
+    var hiResImageSrc: IVImage
     
-    var imageSrc: IVImage = js.native
+    var imageSrc: IVImage
   }
   object Images {
     
     @scala.inline
     def apply(): Images = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(hiResImageSrc = null, imageSrc = null)
       __obj.asInstanceOf[Images]
     }
     
@@ -459,18 +455,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var refreshOnResize: js.UndefOr[Boolean] = js.native
+    var refreshOnResize: js.UndefOr[Boolean] = js.undefined
     
-    var snapView: js.UndefOr[Boolean] = js.native
+    var snapView: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOnMouseWheel: js.UndefOr[Boolean] = js.native
+    var zoomOnMouseWheel: js.UndefOr[Boolean] = js.undefined
     
-    var zoomValue: js.UndefOr[Double] = js.native
+    var zoomValue: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -515,30 +510,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Slider extends StObject {
     
-    var container: Element | Null = js.native
+    var container: Element | Null
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def endHandler(): Unit = js.native
+    def endHandler(): Unit
     
-    def init(): Unit = js.native
+    def init(): Unit
     
-    def isSliderEnabled(): Boolean = js.native
+    def isSliderEnabled(): Boolean
     
-    def moveHandler(event: Event): Unit = js.native
+    def moveHandler(event: Event): Unit
     
-    def onEnd(): Unit = js.native
+    def onEnd(): Unit
     
-    def onMove(): Unit = js.native
+    def onMove(): Unit
     
-    def onStart(): Unit = js.native
+    def onStart(): Unit
     
-    def removeListeners(): Unit = js.native
+    def removeListeners(): Unit
     
-    def startHandler(event: Event): Unit = js.native
+    def startHandler(event: Event): Unit
   }
   object Slider {
     
@@ -555,7 +549,7 @@ object mod {
       removeListeners: () => Unit,
       startHandler: Event => Unit
     ): Slider = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), endHandler = js.Any.fromFunction0(endHandler), init = js.Any.fromFunction0(init), isSliderEnabled = js.Any.fromFunction0(isSliderEnabled), moveHandler = js.Any.fromFunction1(moveHandler), onEnd = js.Any.fromFunction0(onEnd), onMove = js.Any.fromFunction0(onMove), onStart = js.Any.fromFunction0(onStart), removeListeners = js.Any.fromFunction0(removeListeners), startHandler = js.Any.fromFunction1(startHandler))
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), endHandler = js.Any.fromFunction0(endHandler), init = js.Any.fromFunction0(init), isSliderEnabled = js.Any.fromFunction0(isSliderEnabled), moveHandler = js.Any.fromFunction1(moveHandler), onEnd = js.Any.fromFunction0(onEnd), onMove = js.Any.fromFunction0(onMove), onStart = js.Any.fromFunction0(onStart), removeListeners = js.Any.fromFunction0(removeListeners), startHandler = js.Any.fromFunction1(startHandler), container = null)
       __obj.asInstanceOf[Slider]
     }
     
@@ -600,16 +594,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SliderOptions extends StObject {
     
-    def isSliderEnabled(): Boolean = js.native
+    def isSliderEnabled(): Boolean
     
-    def onEnd(): Unit = js.native
+    def onEnd(): Unit
     
-    def onMove(): Unit = js.native
+    def onMove(): Unit
     
-    def onStart(): Unit = js.native
+    def onStart(): Unit
   }
   object SliderOptions {
     
@@ -636,14 +629,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Sliders extends StObject {
     
-    var imageSlider: js.UndefOr[Slider] = js.native
+    var imageSlider: js.UndefOr[Slider] = js.undefined
     
-    var snapSlider: js.UndefOr[Slider] = js.native
+    var snapSlider: js.UndefOr[Slider] = js.undefined
     
-    var zoomSlider: js.UndefOr[Slider] = js.native
+    var zoomSlider: js.UndefOr[Slider] = js.undefined
   }
   object Sliders {
     
@@ -676,26 +668,25 @@ object mod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var containerDim: js.UndefOr[Dim] = js.native
+    var containerDim: js.UndefOr[Dim] = js.undefined
     
-    var imageDim: js.UndefOr[Dim] = js.native
+    var imageDim: js.UndefOr[Dim] = js.undefined
     
-    var loaded: js.UndefOr[Boolean] = js.native
+    var loaded: js.UndefOr[Boolean] = js.undefined
     
-    var snapHandleDim: js.UndefOr[Dim] = js.native
+    var snapHandleDim: js.UndefOr[Dim] = js.undefined
     
-    var snapImageDim: js.UndefOr[Dim] = js.native
+    var snapImageDim: js.UndefOr[Dim] = js.undefined
     
-    var snapViewVisible: js.UndefOr[Boolean] = js.native
+    var snapViewVisible: js.UndefOr[Boolean] = js.undefined
     
-    var zoomSliderLength: js.UndefOr[Double] = js.native
+    var zoomSliderLength: js.UndefOr[Double] = js.undefined
     
-    var zoomValue: js.UndefOr[Double] = js.native
+    var zoomValue: js.UndefOr[Double] = js.undefined
     
-    var zooming: js.UndefOr[Boolean] = js.native
+    var zooming: js.UndefOr[Boolean] = js.undefined
   }
   object State {
     

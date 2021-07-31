@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database...
   */
-@js.native
 trait IDatabase extends StObject {
   
   /**
     * Is set to true if the database is set by default.
     */
-  var qIsDefault: Boolean = js.native
+  var qIsDefault: Boolean
   
   /**
     * Name of the database.
     */
-  var qName: String = js.native
+  var qName: String
 }
 object IDatabase {
   

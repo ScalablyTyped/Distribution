@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Network.SetAttachDebugHeaderRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `122` extends StObject {
   
-  var paramsType: js.Array[SetAttachDebugHeaderRequest] = js.native
+  var paramsType: js.Array[SetAttachDebugHeaderRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `122` {
   

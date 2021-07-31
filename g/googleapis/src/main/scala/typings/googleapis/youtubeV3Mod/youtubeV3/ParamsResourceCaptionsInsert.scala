@@ -7,27 +7,27 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCaptionsInsert extends StandardParameters {
+trait ParamsResourceCaptionsInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * ID of the Google+ Page for the channel that the request is be on behalf
     * of
     */
-  var onBehalfOf: js.UndefOr[String] = js.native
+  var onBehalfOf: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -41,18 +41,18 @@ trait ParamsResourceCaptionsInsert extends StandardParameters {
     * channel. The actual CMS account that the user authenticates with must be
     * linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies the caption resource parts that the API
     * response will include. Set the parameter value to snippet.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCaption] = js.native
+  var requestBody: js.UndefOr[SchemaCaption] = js.undefined
   
   /**
     * The sync parameter indicates whether YouTube should automatically
@@ -63,7 +63,7 @@ trait ParamsResourceCaptionsInsert extends StandardParameters {
     * transcript, which has no time codes, or if you suspect the time codes in
     * your file are incorrect and want YouTube to try to fix them.
     */
-  var sync: js.UndefOr[Boolean] = js.native
+  var sync: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceCaptionsInsert {
   

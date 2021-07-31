@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcLinkMod {
@@ -54,6 +53,10 @@ object vpcLinkMod {
   /* static members */
   object VpcLink {
     
+    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcLink resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,50 +66,44 @@ object vpcLinkMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcLink = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcLink = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcLinkState): VpcLink = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcLinkState, opts: CustomResourceOptions): VpcLink = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcLink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcLink]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcLink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcLink]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcLinkState): VpcLink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcLink]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcLinkState, opts: CustomResourceOptions): VpcLink = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcLink]
     
     /**
       * Returns true if the given object is an instance of VpcLink.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/vpcLink", "VpcLink.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/vpcLink.VpcLink */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/vpcLink.VpcLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/vpcLink.VpcLink */ Boolean]
   }
   
-  @js.native
   trait VpcLinkArgs extends StObject {
     
     /**
       * The name of the VPC Link. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Security group IDs for the VPC Link.
       */
-    val securityGroupIds: Input[js.Array[Input[String]]] = js.native
+    val securityGroupIds: Input[js.Array[Input[String]]]
     
     /**
       * Subnet IDs for the VPC Link.
       */
-    val subnetIds: Input[js.Array[Input[String]]] = js.native
+    val subnetIds: Input[js.Array[Input[String]]]
     
     /**
       * A map of tags to assign to the VPC Link.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcLinkArgs {
     
@@ -145,33 +142,32 @@ object vpcLinkMod {
     }
   }
   
-  @js.native
   trait VpcLinkState extends StObject {
     
     /**
       * The VPC Link ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the VPC Link. Must be between 1 and 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Security group IDs for the VPC Link.
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Subnet IDs for the VPC Link.
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the VPC Link.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VpcLinkState {
     

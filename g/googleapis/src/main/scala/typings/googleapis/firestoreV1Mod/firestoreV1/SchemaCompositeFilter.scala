@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter that merges multiple other filters using the given operator.
   */
-@js.native
 trait SchemaCompositeFilter extends StObject {
   
   /**
     * The list of filters to combine. Must contain at least one filter.
     */
-  var filters: js.UndefOr[js.Array[SchemaFilter]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaFilter]] = js.undefined
   
   /**
     * The operator for combining multiple filters.
     */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
 }
 object SchemaCompositeFilter {
   

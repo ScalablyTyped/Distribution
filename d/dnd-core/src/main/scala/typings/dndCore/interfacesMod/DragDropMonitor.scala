@@ -4,7 +4,6 @@ import typings.dndCore.anon.`0`
 import typings.dndCore.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -86,8 +85,9 @@ trait DragDropMonitor extends StObject {
   def isDraggingSource(sourceId: Identifier): Boolean = js.native
   
   def isOverTarget(): Boolean = js.native
-  def isOverTarget(targetId: js.UndefOr[Identifier], options: `1`): Boolean = js.native
+  def isOverTarget(targetId: Unit, options: `1`): Boolean = js.native
   def isOverTarget(targetId: Identifier): Boolean = js.native
+  def isOverTarget(targetId: Identifier, options: `1`): Boolean = js.native
   
   def isSourcePublic(): Boolean | Null = js.native
   

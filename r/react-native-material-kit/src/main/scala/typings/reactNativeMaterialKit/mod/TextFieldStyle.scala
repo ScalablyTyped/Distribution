@@ -3,17 +3,15 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNativeMaterialKit.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextFieldStyle extends StObject {
   
-  var highlightColor: js.UndefOr[String] = js.native
+  var highlightColor: js.UndefOr[String] = js.undefined
   
-  var textInputStyle: js.UndefOr[Color] = js.native
+  var textInputStyle: js.UndefOr[Color] = js.undefined
   
-  var tintColor: js.UndefOr[String] = js.native
+  var tintColor: js.UndefOr[String] = js.undefined
 }
 object TextFieldStyle {
   

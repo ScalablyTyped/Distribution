@@ -3,7 +3,6 @@ package typings.googleapis.mlV1Mod.mlV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * versions, each of which is a deployed, trained model ready to receive
   * prediction requests. The model itself is just a container.
   */
-@js.native
 trait SchemaGoogleCloudMlV1Model extends StObject {
   
   /**
@@ -20,12 +18,12 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * change the default version by calling
     * [projects.methods.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
-  var defaultVersion: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.native
+  var defaultVersion: js.UndefOr[SchemaGoogleCloudMlV1Version] = js.undefined
   
   /**
     * Optional. The description specified for the model when it was created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help
@@ -36,7 +34,7 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * systems are expected to put that etag in the request to `UpdateModel` to
     * ensure that their change will be applied to the model as intended.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. One or more labels that you can add, to organize your models.
@@ -46,13 +44,13 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * href=&quot;/ml-engine/docs/tensorflow/resource-labels&quot;&gt;using
     * labels&lt;/a&gt;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. The name specified for the model when it was created.  The
     * model name must be unique within the project it is created in.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. If true, enables logging of stderr and stdout streams for
@@ -63,7 +61,7 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * your project is high, be sure to estimate your costs before enabling this
     * flag.  Default is false.
     */
-  var onlinePredictionConsoleLogging: js.UndefOr[Boolean] = js.native
+  var onlinePredictionConsoleLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If true, online prediction access logs are sent to StackDriver
@@ -72,7 +70,7 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * Stackdriver logs may incur a cost, particular if the total QPS in your
     * project is high.  Default is false.
     */
-  var onlinePredictionLogging: js.UndefOr[Boolean] = js.native
+  var onlinePredictionLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The list of regions where the model is going to be deployed.
@@ -85,7 +83,7 @@ trait SchemaGoogleCloudMlV1Model extends StObject {
     * prediction job is set by the region field when     submitting the batch
     * prediction job and does not take its value from     this field.
     */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudMlV1Model {
   

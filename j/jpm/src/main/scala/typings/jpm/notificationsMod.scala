@@ -3,7 +3,6 @@ package typings.jpm
 import typings.jpm.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object notificationsMod {
   
-  @JSImport("sdk/notifications", "notify")
+  @JSImport("sdk/notifications", JSImport.Namespace)
   @js.native
-  def notify_(options: Data): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def notify_(options: Data): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

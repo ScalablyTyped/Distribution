@@ -5,25 +5,23 @@ import typings.awsLambda.awsLambdaStrings.S3
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepipelineMod {
   
-  @js.native
   trait Artifact extends StObject {
     
-    var location: ArtifactLocation = js.native
+    var location: ArtifactLocation
     
-    var name: String = js.native
+    var name: String
     
-    var revision: String | Null = js.native
+    var revision: String | Null
   }
   object Artifact {
     
     @scala.inline
     def apply(location: ArtifactLocation, name: String): Artifact = {
-      val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], revision = null)
       __obj.asInstanceOf[Artifact]
     }
     
@@ -46,11 +44,10 @@ object codepipelineMod {
   
   type ArtifactLocation = S3ArtifactStore
   
-  @js.native
   trait CodePipelineEvent extends StObject {
     
     @JSName("CodePipeline.job")
-    var CodePipelineDotjob: Data = js.native
+    var CodePipelineDotjob: Data
   }
   object CodePipelineEvent {
     
@@ -71,14 +68,13 @@ object codepipelineMod {
   
   type CodePipelineHandler = Handler[CodePipelineEvent, Unit]
   
-  @js.native
   trait Credentials extends StObject {
     
-    var accessKeyId: String = js.native
+    var accessKeyId: String
     
-    var secretAccessKey: String = js.native
+    var secretAccessKey: String
     
-    var sessionToken: js.UndefOr[String] = js.native
+    var sessionToken: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     
@@ -105,12 +101,11 @@ object codepipelineMod {
     }
   }
   
-  @js.native
   trait EncryptionKey extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object EncryptionKey {
     
@@ -132,12 +127,11 @@ object codepipelineMod {
     }
   }
   
-  @js.native
   trait S3ArtifactLocation extends StObject {
     
-    var bucketName: String = js.native
+    var bucketName: String
     
-    var objectKey: String = js.native
+    var objectKey: String
   }
   object S3ArtifactLocation {
     
@@ -158,19 +152,18 @@ object codepipelineMod {
     }
   }
   
-  @js.native
   trait S3ArtifactStore extends StObject {
     
-    var s3Location: S3ArtifactLocation = js.native
+    var s3Location: S3ArtifactLocation
     
-    var `type`: S3 = js.native
+    var `type`: S3
   }
   object S3ArtifactStore {
     
     @scala.inline
-    def apply(s3Location: S3ArtifactLocation, `type`: S3): S3ArtifactStore = {
+    def apply(s3Location: S3ArtifactLocation): S3ArtifactStore = {
       val __obj = js.Dynamic.literal(s3Location = s3Location.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("S3")
       __obj.asInstanceOf[S3ArtifactStore]
     }
     

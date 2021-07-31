@@ -4,16 +4,14 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  runtimeStylesheetId :'module' | 'namespace',   afterTransform :any}> */
-@js.native
 trait PartialruntimeStylesheetI extends StObject {
   
-  var afterTransform: js.UndefOr[js.Any] = js.native
+  var afterTransform: js.UndefOr[js.Any] = js.undefined
   
-  var runtimeStylesheetId: js.UndefOr[module | namespace] = js.native
+  var runtimeStylesheetId: js.UndefOr[module | namespace] = js.undefined
 }
 object PartialruntimeStylesheetI {
   

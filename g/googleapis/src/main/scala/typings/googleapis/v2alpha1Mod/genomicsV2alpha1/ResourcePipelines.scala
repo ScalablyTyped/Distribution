@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/genomics/v2alpha1", "genomics_v2alpha1.Resource$Pipelines")
@@ -37,7 +36,7 @@ class ResourcePipelines protected () extends StObject {
     */
   def run(): GaxiosPromise[SchemaOperation] = js.native
   def run(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def run(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def run(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun): GaxiosPromise[SchemaOperation] = js.native
   def run(params: ParamsResourcePipelinesRun, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def run(

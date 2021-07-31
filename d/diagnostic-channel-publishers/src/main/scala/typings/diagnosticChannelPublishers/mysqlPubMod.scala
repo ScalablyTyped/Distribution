@@ -7,31 +7,32 @@ import typings.std.Error
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mysqlPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/mysql.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/mysql.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/mysql.pub", "mysql")
   @js.native
   val mysql: IModulePatcher = js.native
   
-  @js.native
   trait IMysqlData extends StObject {
     
-    var callbackArgs: IArguments = js.native
+    var callbackArgs: IArguments
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var err: Error = js.native
+    var err: Error
     
-    var query: Connection = js.native
+    var query: Connection
     
-    var time: Date = js.native
+    var time: Date
   }
   object IMysqlData {
     

@@ -3,38 +3,36 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for a webhook call.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2WebhookResponse extends StObject {
   
   /**
     * Optional. Makes the platform immediately invoke another `DetectIntent`
     * call internally with the specified event as input.
     */
-  var followupEventInput: js.UndefOr[SchemaGoogleCloudDialogflowV2EventInput] = js.native
+  var followupEventInput: js.UndefOr[SchemaGoogleCloudDialogflowV2EventInput] = js.undefined
   
   /**
     * Optional. The collection of rich messages to present to the user. This
     * value is passed directly to `QueryResult.fulfillment_messages`.
     */
-  var fulfillmentMessages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
   /**
     * Optional. The text to be shown on the screen. This value is passed
     * directly to `QueryResult.fulfillment_text`.
     */
-  var fulfillmentText: js.UndefOr[String] = js.native
+  var fulfillmentText: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of output contexts. This value is passed
     * directly to `QueryResult.output_contexts`.
     */
-  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.undefined
   
   /**
     * Optional. This value is passed directly to `QueryResult.webhook_payload`.
@@ -49,12 +47,12 @@ trait SchemaGoogleCloudDialogflowV2WebhookResponse extends StObject {
     * &quot;this is a simple response&quot;           }         }       ]     }
     * } }&lt;/pre&gt;
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Optional. This value is passed directly to `QueryResult.webhook_source`.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2WebhookResponse {
   

@@ -6,29 +6,30 @@ import typings.reactMdTransition.typesMod.TransitionTimeout
 import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rippleMod {
   
-  @JSImport("@react-md/states/types/ripples/Ripple", "Ripple")
+  @JSImport("@react-md/states/types/ripples/Ripple", JSImport.Namespace)
   @js.native
-  def Ripple(hasClassNameClassNamesTimeoutRippleEnteredExited: RippleProps): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def Ripple(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited: RippleProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(hasClassNamePropClassNamesPropTimeoutRippleEnteredExited.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait RippleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classNames: js.UndefOr[CSSTransitionClassNames] = js.native
+    var classNames: js.UndefOr[CSSTransitionClassNames] = js.undefined
     
-    def entered(ripple: RippleState): Unit = js.native
+    def entered(ripple: RippleState): Unit
     
-    def exited(ripple: RippleState): Unit = js.native
+    def exited(ripple: RippleState): Unit
     
-    var ripple: RippleState = js.native
+    var ripple: RippleState
     
-    var timeout: js.UndefOr[TransitionTimeout] = js.native
+    var timeout: js.UndefOr[TransitionTimeout] = js.undefined
   }
   object RippleProps {
     

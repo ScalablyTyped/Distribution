@@ -5,7 +5,6 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
@@ -47,7 +46,8 @@ object urlMod {
   @JSImport("apollo-server-env/dist/url", "URLSearchParams")
   @js.native
   class URLSearchParams ()
-    extends Iterable[js.Tuple2[String, String]] {
+    extends StObject
+       with Iterable[js.Tuple2[String, String]] {
     def this(init: URLSearchParamsInit) = this()
     
     def append(name: String, value: String): Unit = js.native

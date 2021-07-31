@@ -4,17 +4,17 @@ import typings.reactRouter.reactRouterStrings.PUSH
 import typings.reactRouter.reactRouterStrings.REPLACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StaticRouterContext extends StaticContext {
+trait StaticRouterContext
+  extends StObject
+     with StaticContext {
   
-  var action: js.UndefOr[PUSH | REPLACE] = js.native
+  var action: js.UndefOr[PUSH | REPLACE] = js.undefined
   
-  var location: js.UndefOr[js.Object] = js.native
+  var location: js.UndefOr[js.Object] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object StaticRouterContext {
   

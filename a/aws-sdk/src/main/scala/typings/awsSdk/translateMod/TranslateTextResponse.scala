@@ -2,31 +2,29 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateTextResponse extends StObject {
   
   /**
     * The names of the custom terminologies applied to the input text by Amazon Translate for the translated text response.
     */
-  var AppliedTerminologies: js.UndefOr[AppliedTerminologyList] = js.native
+  var AppliedTerminologies: js.UndefOr[AppliedTerminologyList] = js.undefined
   
   /**
     * The language code for the language of the source text.
     */
-  var SourceLanguageCode: LanguageCodeString = js.native
+  var SourceLanguageCode: LanguageCodeString
   
   /**
     * The language code for the language of the target text. 
     */
-  var TargetLanguageCode: LanguageCodeString = js.native
+  var TargetLanguageCode: LanguageCodeString
   
   /**
     * The translated text.
     */
-  var TranslatedText: String = js.native
+  var TranslatedText: String
 }
 object TranslateTextResponse {
   

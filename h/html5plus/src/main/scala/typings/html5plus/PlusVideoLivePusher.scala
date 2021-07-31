@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,21 +21,17 @@ trait PlusVideoLivePusher extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def addEventListener(): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
-  def addEventListener(event: js.UndefOr[scala.Nothing], listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
-  def addEventListener(
-    event: js.UndefOr[scala.Nothing],
-    listener: js.Function1[/* result */ js.Any, Unit],
-    capture: Boolean
-  ): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def addEventListener(event: Unit, listener: js.Function1[/* result */ js.Any, Unit], capture: Boolean): Unit = js.native
+  def addEventListener(event: Unit, listener: Unit, capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoLivePusherEvents): Unit = js.native
-  def addEventListener(event: PlusVideoLivePusherEvents, listener: js.UndefOr[scala.Nothing], capture: Boolean): Unit = js.native
   def addEventListener(event: PlusVideoLivePusherEvents, listener: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def addEventListener(
     event: PlusVideoLivePusherEvents,
     listener: js.Function1[/* result */ js.Any, Unit],
     capture: Boolean
   ): Unit = js.native
+  def addEventListener(event: PlusVideoLivePusherEvents, listener: Unit, capture: Boolean): Unit = js.native
   
   /**
     * 关闭直播推流控件
@@ -97,9 +92,9 @@ trait PlusVideoLivePusher extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def snapshot(): Unit = js.native
-  def snapshot(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function0[Unit]): Unit = js.native
   def snapshot(successCB: js.Function0[Unit]): Unit = js.native
   def snapshot(successCB: js.Function0[Unit], errorCB: js.Function0[Unit]): Unit = js.native
+  def snapshot(successCB: Unit, errorCB: js.Function0[Unit]): Unit = js.native
   
   /**
     * 开始推流
@@ -108,9 +103,9 @@ trait PlusVideoLivePusher extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/video.html](http://www.html5plus.org/doc/zh_cn/video.html)
     */
   def start(): Unit = js.native
-  def start(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function0[Unit]): Unit = js.native
   def start(successCB: js.Function0[Unit]): Unit = js.native
   def start(successCB: js.Function0[Unit], errorCB: js.Function0[Unit]): Unit = js.native
+  def start(successCB: Unit, errorCB: js.Function0[Unit]): Unit = js.native
   
   /**
     * 停止推流

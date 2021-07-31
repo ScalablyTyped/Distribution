@@ -10,7 +10,6 @@ import typings.phaser.integer
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Scale {
@@ -32,7 +31,9 @@ object Scale {
       * game canvas, and does not factor in any other CSS styles you may have applied.
       */
     @js.native
-    sealed trait CENTER_BOTH extends Center
+    sealed trait CENTER_BOTH
+      extends StObject
+         with Center
     
     /**
       * The game canvas is centered horizontally within the parent.
@@ -42,7 +43,9 @@ object Scale {
       * game canvas, and does not factor in any other CSS styles you may have applied.
       */
     @js.native
-    sealed trait CENTER_HORIZONTALLY extends Center
+    sealed trait CENTER_HORIZONTALLY
+      extends StObject
+         with Center
     
     /**
       * The game canvas is centered both vertically within the parent.
@@ -52,14 +55,18 @@ object Scale {
       * game canvas, and does not factor in any other CSS styles you may have applied.
       */
     @js.native
-    sealed trait CENTER_VERTICALLY extends Center
+    sealed trait CENTER_VERTICALLY
+      extends StObject
+         with Center
     
     /**
       * The game canvas is not centered within the parent by Phaser.
       * You can still center it yourself via CSS.
       */
     @js.native
-    sealed trait NO_CENTER extends Center
+    sealed trait NO_CENTER
+      extends StObject
+         with Center
   }
   
   @js.native
@@ -75,13 +82,17 @@ object Scale {
       * A landscape orientation.
       */
     @js.native
-    sealed trait LANDSCAPE extends Orientation
+    sealed trait LANDSCAPE
+      extends StObject
+         with Orientation
     
     /**
       * A portrait orientation.
       */
     @js.native
-    sealed trait PORTRAIT extends Orientation
+    sealed trait PORTRAIT
+      extends StObject
+         with Orientation
   }
   
   @js.native
@@ -99,7 +110,8 @@ object Scale {
       */
     @js.native
     sealed trait ENVELOP
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
     
     /**
       * The width and height are automatically adjusted to fit inside the given target area,
@@ -108,14 +120,16 @@ object Scale {
       */
     @js.native
     sealed trait FIT
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
     
     /**
       * The width is automatically adjusted based on the height.
       */
     @js.native
     sealed trait HEIGHT_CONTROLS_WIDTH
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
     
     /**
       * No scaling happens at all. The canvas is set to the size given in the game config and Phaser doesn't change it
@@ -124,21 +138,24 @@ object Scale {
       */
     @js.native
     sealed trait NONE
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
     
     /**
       * The Canvas is resized to fit all available _parent_ space, regardless of aspect ratio.
       */
     @js.native
     sealed trait RESIZE
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
     
     /**
       * The height is automatically adjusted based on the width.
       */
     @js.native
     sealed trait WIDTH_CONTROLS_HEIGHT
-      extends typings.phaser.Phaser.Scale.ScaleModes
+      extends StObject
+         with typings.phaser.Phaser.Scale.ScaleModes
   }
   
   @js.native
@@ -155,25 +172,33 @@ object Scale {
       * fit into the parent, or browser window if no parent is set.
       */
     @js.native
-    sealed trait MAX_ZOOM extends Zoom
+    sealed trait MAX_ZOOM
+      extends StObject
+         with Zoom
     
     /**
       * The game canvas will not be zoomed by Phaser.
       */
     @js.native
-    sealed trait NO_ZOOM extends Zoom
+    sealed trait NO_ZOOM
+      extends StObject
+         with Zoom
     
     /**
       * The game canvas will be 2x zoomed by Phaser.
       */
     @js.native
-    sealed trait ZOOM_2X extends Zoom
+    sealed trait ZOOM_2X
+      extends StObject
+         with Zoom
     
     /**
       * The game canvas will be 4x zoomed by Phaser.
       */
     @js.native
-    sealed trait ZOOM_4X extends Zoom
+    sealed trait ZOOM_4X
+      extends StObject
+         with Zoom
   }
   
   /**
@@ -285,7 +310,9 @@ object Scale {
     * to handle it. Some mobile browsers also support this.
     */
   @js.native
-  trait ScaleManager extends EventEmitter {
+  trait ScaleManager
+    extends StObject
+       with EventEmitter {
     
     /**
       * Internal flag set when the game zoom factor is modified.
@@ -504,9 +531,9 @@ object Scale {
       * @param previousHeight The previous height of the game. Only set if the gameSize has changed.
       */
     def refresh(): this.type = js.native
-    def refresh(previousWidth: js.UndefOr[scala.Nothing], previousHeight: Double): this.type = js.native
     def refresh(previousWidth: Double): this.type = js.native
     def refresh(previousWidth: Double, previousHeight: Double): this.type = js.native
+    def refresh(previousWidth: Unit, previousHeight: Double): this.type = js.native
     
     /**
       * Removes the fullscreen target that was added to the DOM.

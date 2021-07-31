@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBitMatrix extends StObject {
   
-  def release(): Unit = js.native
+  def release(): Unit
   
-  def setValueAt(x: Double, y: Double, value: Boolean): Unit = js.native
+  def setValueAt(x: Double, y: Double, value: Boolean): Unit
   
-  def valueAt(x: Double, y: Double): Boolean = js.native
+  def valueAt(x: Double, y: Double): Boolean
 }
 object IBitMatrix {
   

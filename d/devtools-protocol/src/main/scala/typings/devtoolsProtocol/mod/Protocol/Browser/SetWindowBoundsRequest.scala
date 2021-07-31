@@ -2,22 +2,20 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetWindowBoundsRequest extends StObject {
   
   /**
     * New window bounds. The 'minimized', 'maximized' and 'fullscreen' states cannot be combined
     * with 'left', 'top', 'width' or 'height'. Leaves unspecified fields unchanged.
     */
-  var bounds: Bounds = js.native
+  var bounds: Bounds
   
   /**
     * Browser window id.
     */
-  var windowId: WindowID = js.native
+  var windowId: WindowID
 }
 object SetWindowBoundsRequest {
   

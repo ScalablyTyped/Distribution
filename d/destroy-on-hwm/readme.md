@@ -12,7 +12,7 @@ Destroy a writable stream if it hits the high water mark
 | Keywords           | stream, high, water, mark, destroy |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 440 |
+| # downloads        | 568 |
 | # stars            | 0 |
 
 ## Links

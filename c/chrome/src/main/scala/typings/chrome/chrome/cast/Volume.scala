@@ -2,21 +2,19 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volume extends StObject {
   
-  var level: Double | Null = js.native
+  var level: Double | Null
   
-  var muted: Boolean | Null = js.native
+  var muted: Boolean | Null
 }
 object Volume {
   
   @scala.inline
   def apply(): Volume = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(level = null, muted = null)
     __obj.asInstanceOf[Volume]
   }
   

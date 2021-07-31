@@ -4,27 +4,25 @@ import typings.wepy.wepyStrings.`0`
 import typings.wepy.wepyStrings.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BankAccount extends StObject {
   
-  var bankAccount: String = js.native
+  var bankAccount: String
   
-  var bankName: String = js.native
+  var bankName: String
   
-  var companyAddress: String = js.native
+  var companyAddress: String
   
-  var errMsg: String = js.native
+  var errMsg: String
   
-  var taxNumber: String = js.native
+  var taxNumber: String
   
-  var telephone: String = js.native
+  var telephone: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: `0` | `1` = js.native
+  var `type`: `0` | `1`
 }
 object BankAccount {
   

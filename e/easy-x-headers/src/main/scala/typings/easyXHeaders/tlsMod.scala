@@ -9,163 +9,84 @@ import typings.easyXHeaders.streamMod.Duplex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tlsMod {
   
-  @JSImport("tls", "connect")
+  @JSImport("tls", JSImport.Namespace)
   @js.native
-  def connect(options: TlsOptions): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(options: TlsOptions, secureConnectionListener: js.Function0[Unit]): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    secureConnectListener: js.Function0[Unit]
-  ): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, host: js.UndefOr[scala.Nothing], options: ConnectionOptions): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(
-    port: Double,
-    host: js.UndefOr[scala.Nothing],
-    options: ConnectionOptions,
-    secureConnectListener: js.Function0[Unit]
-  ): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, host: String): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(
-    port: Double,
-    host: String,
-    options: js.UndefOr[scala.Nothing],
-    secureConnectListener: js.Function0[Unit]
-  ): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, host: String, options: ConnectionOptions): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, host: String, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, options: js.UndefOr[scala.Nothing], secureConnectListener: js.Function0[Unit]): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, options: ConnectionOptions): ClearTextStream = js.native
-  @JSImport("tls", "connect")
-  @js.native
-  def connect(port: Double, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): ClearTextStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tls", "createSecureContext")
-  @js.native
-  def createSecureContext(details: SecureContextOptions): SecureContext = js.native
+  @scala.inline
+  def connect(options: TlsOptions): ClearTextStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(options: TlsOptions, secureConnectionListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any], secureConnectionListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double): ClearTextStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any]).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: String): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: String, options: Unit, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: String, options: ConnectionOptions): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: String, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: Unit, options: Unit, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: Unit, options: ConnectionOptions): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, host: Unit, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, options: Unit, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, options: ConnectionOptions): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
+  @scala.inline
+  def connect(port: Double, options: ConnectionOptions, secureConnectListener: js.Function0[Unit]): ClearTextStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], secureConnectListener.asInstanceOf[js.Any])).asInstanceOf[ClearTextStream]
   
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: js.UndefOr[scala.Nothing],
-    isServer: js.UndefOr[scala.Nothing],
-    requestCert: js.UndefOr[scala.Nothing],
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: js.UndefOr[scala.Nothing], isServer: js.UndefOr[scala.Nothing], requestCert: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: js.UndefOr[scala.Nothing],
-    isServer: js.UndefOr[scala.Nothing],
-    requestCert: Boolean,
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: js.UndefOr[scala.Nothing], isServer: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: js.UndefOr[scala.Nothing],
-    isServer: Boolean,
-    requestCert: js.UndefOr[scala.Nothing],
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: js.UndefOr[scala.Nothing], isServer: Boolean, requestCert: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: js.UndefOr[scala.Nothing],
-    isServer: Boolean,
-    requestCert: Boolean,
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: Credentials): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: Credentials,
-    isServer: js.UndefOr[scala.Nothing],
-    requestCert: js.UndefOr[scala.Nothing],
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: Credentials, isServer: js.UndefOr[scala.Nothing], requestCert: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: Credentials,
-    isServer: js.UndefOr[scala.Nothing],
-    requestCert: Boolean,
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: Credentials, isServer: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(
-    credentials: Credentials,
-    isServer: Boolean,
-    requestCert: js.UndefOr[scala.Nothing],
-    rejectUnauthorized: Boolean
-  ): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: Credentials, isServer: Boolean, requestCert: Boolean): SecurePair = js.native
-  @JSImport("tls", "createSecurePair")
-  @js.native
-  def createSecurePair(credentials: Credentials, isServer: Boolean, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = js.native
+  @scala.inline
+  def createSecureContext(details: SecureContextOptions): SecureContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecureContext")(details.asInstanceOf[js.Any]).asInstanceOf[SecureContext]
   
-  @JSImport("tls", "createServer")
-  @js.native
-  def createServer(options: TlsOptions): Server = js.native
-  @JSImport("tls", "createServer")
-  @js.native
+  @scala.inline
+  def createSecurePair(): SecurePair = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")().asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Boolean, requestCert: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Boolean, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Boolean, requestCert: Unit, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Unit, requestCert: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Unit, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Unit, isServer: Unit, requestCert: Unit, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials): SecurePair = ^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any]).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Boolean, requestCert: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Boolean, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Boolean, requestCert: Unit, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Unit, requestCert: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Unit, requestCert: Boolean, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  @scala.inline
+  def createSecurePair(credentials: Credentials, isServer: Unit, requestCert: Unit, rejectUnauthorized: Boolean): SecurePair = (^.asInstanceOf[js.Dynamic].applyDynamic("createSecurePair")(credentials.asInstanceOf[js.Any], isServer.asInstanceOf[js.Any], requestCert.asInstanceOf[js.Any], rejectUnauthorized.asInstanceOf[js.Any])).asInstanceOf[SecurePair]
+  
+  @scala.inline
+  def createServer(options: TlsOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
   def createServer(
     options: TlsOptions,
     secureConnectionListener: js.Function1[/* cleartextStream */ ClearTextStream, Unit]
-  ): Server = js.native
+  ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], secureConnectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
   
   @js.native
   trait ClearTextStream extends Duplex {
@@ -185,35 +106,34 @@ object tlsMod {
     var remotePort: Double = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var NPNProtocols: js.UndefOr[js.Any] = js.native
+    var NPNProtocols: js.UndefOr[js.Any] = js.undefined
     
     //string | Buffer
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.native
+    var cert: js.UndefOr[js.Any] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
-    
-    //string | Buffer
-    var key: js.UndefOr[js.Any] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     //string | Buffer
-    var passphrase: js.UndefOr[String] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.native
+    //string | Buffer
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var pfx: js.UndefOr[js.Any] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
     
     //Array of string | Buffer
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     //Array of string | Buffer
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var socket: js.UndefOr[Socket] = js.native
+    var socket: js.UndefOr[Socket] = js.undefined
   }
   object ConnectionOptions {
     
@@ -294,10 +214,9 @@ object tlsMod {
     }
   }
   
-  @js.native
   trait SecureContext extends StObject {
     
-    var context: js.Any = js.native
+    var context: js.Any
   }
   object SecureContext {
     
@@ -315,29 +234,28 @@ object tlsMod {
     }
   }
   
-  @js.native
   trait SecureContextOptions extends StObject {
     
     // string | buffer
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.native
+    var cert: js.UndefOr[js.Any] = js.undefined
     
     // string | string[]
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     // string | buffer
-    var crl: js.UndefOr[js.Any] = js.native
+    var crl: js.UndefOr[js.Any] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[Boolean] = js.native
-    
-    //string | buffer
-    var key: js.UndefOr[js.Any] = js.native
+    var honorCipherOrder: js.UndefOr[Boolean] = js.undefined
     
     //string | buffer
-    var passphrase: js.UndefOr[String] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.native
+    //string | buffer
+    var passphrase: js.UndefOr[String] = js.undefined
+    
+    var pfx: js.UndefOr[js.Any] = js.undefined
   }
   object SecureContextOptions {
     
@@ -400,12 +318,11 @@ object tlsMod {
     }
   }
   
-  @js.native
   trait SecurePair extends StObject {
     
-    var cleartext: js.Any = js.native
+    var cleartext: js.Any
     
-    var encrypted: js.Any = js.native
+    var encrypted: js.Any
   }
   object SecurePair {
     
@@ -432,41 +349,40 @@ object tlsMod {
     
     def addContext(hostName: String, credentials: Ca): Unit = js.native
     
-    def listen(port: Double, host: js.UndefOr[scala.Nothing], callback: js.Function): Server = js.native
     def listen(port: Double, host: String, callback: js.Function): Server = js.native
+    def listen(port: Double, host: Unit, callback: js.Function): Server = js.native
   }
   
-  @js.native
   trait TlsOptions extends StObject {
     
-    var NPNProtocols: js.UndefOr[js.Any] = js.native
+    var NPNProtocols: js.UndefOr[js.Any] = js.undefined
     
     //array or Buffer;
-    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, _]] = js.native
+    var SNICallback: js.UndefOr[js.Function1[/* servername */ String, js.Any]] = js.undefined
     
-    var ca: js.UndefOr[js.Any] = js.native
+    var ca: js.UndefOr[js.Any] = js.undefined
     
-    var cert: js.UndefOr[js.Any] = js.native
+    var cert: js.UndefOr[js.Any] = js.undefined
     
     //string or string array
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
     //string or buffer
-    var crl: js.UndefOr[js.Any] = js.native
+    var crl: js.UndefOr[js.Any] = js.undefined
     
-    var honorCipherOrder: js.UndefOr[js.Any] = js.native
-    
-    //string or buffer
-    var key: js.UndefOr[js.Any] = js.native
+    var honorCipherOrder: js.UndefOr[js.Any] = js.undefined
     
     //string or buffer
-    var passphrase: js.UndefOr[String] = js.native
+    var key: js.UndefOr[js.Any] = js.undefined
     
-    var pfx: js.UndefOr[js.Any] = js.native
+    //string or buffer
+    var passphrase: js.UndefOr[String] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var pfx: js.UndefOr[js.Any] = js.undefined
     
-    var requestCert: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+    
+    var requestCert: js.UndefOr[Boolean] = js.undefined
   }
   object TlsOptions {
     
@@ -546,7 +462,7 @@ object tlsMod {
       def setRequestCertUndefined: Self = StObject.set(x, "requestCert", js.undefined)
       
       @scala.inline
-      def setSNICallback(value: /* servername */ String => _): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
+      def setSNICallback(value: /* servername */ String => js.Any): Self = StObject.set(x, "SNICallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSNICallbackUndefined: Self = StObject.set(x, "SNICallback", js.undefined)

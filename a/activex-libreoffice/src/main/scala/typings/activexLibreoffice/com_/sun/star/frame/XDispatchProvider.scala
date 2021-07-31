@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides {@link XDispatch} interfaces for certain functions which are useful at the UI.
   * @see XDispatch
   */
-@js.native
-trait XDispatchProvider extends XInterface {
+trait XDispatchProvider
+  extends StObject
+     with XInterface {
   
   /**
     * searches for an {@link XDispatch} for the specified URL within the specified target frame.
@@ -26,14 +26,14 @@ trait XDispatchProvider extends XInterface {
     * @see XFrame.findFrame()
     * @see XDispatchProvider.queryDispatches()
     */
-  def queryDispatch(URL: URL, TargetFrameName: String, SearchFlags: Double): XDispatch = js.native
+  def queryDispatch(URL: URL, TargetFrameName: String, SearchFlags: Double): XDispatch
   
   /**
     * actually this method is redundant to {@link XDispatchProvider.queryDispatch()} to avoid multiple remote calls.
     * @param Requests list of dispatch requests
     * @returns multiple dispatch interfaces for the specified descriptors at once  It's not allowed to pack it - because every request must match to its real re
     */
-  def queryDispatches(Requests: SeqEquiv[DispatchDescriptor]): SafeArray[XDispatch] = js.native
+  def queryDispatches(Requests: SeqEquiv[DispatchDescriptor]): SafeArray[XDispatch]
 }
 object XDispatchProvider {
   

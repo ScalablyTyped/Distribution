@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Nodetypes")
@@ -32,7 +31,7 @@ class ResourceNodetypes protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaNodeTypeAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaNodeTypeAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeTypeAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNodeTypeAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceNodetypesAggregatedlist): GaxiosPromise[SchemaNodeTypeAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceNodetypesAggregatedlist,
@@ -69,7 +68,7 @@ class ResourceNodetypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaNodeType] = js.native
   def get(callback: BodyResponseCallback[SchemaNodeType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNodeType] = js.native
   def get(params: ParamsResourceNodetypesGet): GaxiosPromise[SchemaNodeType] = js.native
   def get(params: ParamsResourceNodetypesGet, callback: BodyResponseCallback[SchemaNodeType]): Unit = js.native
   def get(
@@ -103,7 +102,7 @@ class ResourceNodetypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaNodeTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaNodeTypeList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaNodeTypeList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaNodeTypeList] = js.native
   def list(params: ParamsResourceNodetypesList): GaxiosPromise[SchemaNodeTypeList] = js.native
   def list(params: ParamsResourceNodetypesList, callback: BodyResponseCallback[SchemaNodeTypeList]): Unit = js.native
   def list(

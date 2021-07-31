@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Userrolepermissiongroups")
@@ -31,7 +30,7 @@ class ResourceUserrolepermissiongroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUserRolePermissionGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaUserRolePermissionGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRolePermissionGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRolePermissionGroup] = js.native
   def get(params: ParamsResourceUserrolepermissiongroupsGet): GaxiosPromise[SchemaUserRolePermissionGroup] = js.native
   def get(
     params: ParamsResourceUserrolepermissiongroupsGet,
@@ -63,7 +62,7 @@ class ResourceUserrolepermissiongroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUserRolePermissionGroupsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUserRolePermissionGroupsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserRolePermissionGroupsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserRolePermissionGroupsListResponse] = js.native
   def list(params: ParamsResourceUserrolepermissiongroupsList): GaxiosPromise[SchemaUserRolePermissionGroupsListResponse] = js.native
   def list(
     params: ParamsResourceUserrolepermissiongroupsList,

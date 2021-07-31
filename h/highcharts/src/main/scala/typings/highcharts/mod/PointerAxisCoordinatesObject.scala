@@ -2,21 +2,19 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointerAxisCoordinatesObject extends StObject {
   
   /**
     * Positions on the x-axis.
     */
-  var xAxis: js.Array[PointerAxisCoordinateObject] = js.native
+  var xAxis: js.Array[PointerAxisCoordinateObject]
   
   /**
     * Positions on the y-axis.
     */
-  var yAxis: js.Array[PointerAxisCoordinateObject] = js.native
+  var yAxis: js.Array[PointerAxisCoordinateObject]
 }
 object PointerAxisCoordinatesObject {
   

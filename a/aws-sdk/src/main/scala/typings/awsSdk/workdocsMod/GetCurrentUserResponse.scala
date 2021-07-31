@@ -2,16 +2,14 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCurrentUserResponse extends StObject {
   
   /**
     * Metadata of the user.
     */
-  var User: js.UndefOr[typings.awsSdk.workdocsMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.workdocsMod.User] = js.undefined
 }
 object GetCurrentUserResponse {
   

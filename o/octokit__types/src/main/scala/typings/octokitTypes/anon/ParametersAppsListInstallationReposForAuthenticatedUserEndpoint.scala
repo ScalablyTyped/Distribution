@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsListInstallationReposForAuthenticat
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsListInstallationReposForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: AppsListInstallationReposForAuthenticatedUserEndpoint = js.native
+  var parameters: AppsListInstallationReposForAuthenticatedUserEndpoint
   
-  var request: AppsListInstallationReposForAuthenticatedUserRequestOptions = js.native
+  var request: AppsListInstallationReposForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[AppsListInstallationReposForAuthenticatedUserResponseData]
 }
 object ParametersAppsListInstallationReposForAuthenticatedUserEndpoint {
   

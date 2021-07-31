@@ -3,18 +3,16 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInstanceLabelsRequest extends StObject {
   
   /** Labels to apply to this instance. These can be later modified by the setLabels method */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[js.Any]
+  ] = js.undefined
 }
 object SetInstanceLabelsRequest {
   
@@ -31,7 +29,7 @@ object SetInstanceLabelsRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientNotebooks.maximMazurokGapiClientNotebooksStrings.SetInstanceLabelsRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

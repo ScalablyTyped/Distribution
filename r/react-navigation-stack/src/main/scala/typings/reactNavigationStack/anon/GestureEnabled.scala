@@ -3,21 +3,19 @@ package typings.reactNavigationStack.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GestureEnabled extends StObject {
   
-  var gestureEnabled: Boolean = js.native
+  var gestureEnabled: Boolean
   
-  var gestureVelocityImpact: Double = js.native
+  var gestureVelocityImpact: Double
   
-  def overlay(hasStyle: StyleWithAnimatedValue): Element | Null = js.native
+  def overlay(hasStyle: StyleWithAnimatedValue): Element | Null
   
-  var overlayEnabled: Boolean = js.native
+  var overlayEnabled: Boolean
   
-  var shadowEnabled: Boolean = js.native
+  var shadowEnabled: Boolean
 }
 object GestureEnabled {
   

@@ -5,23 +5,21 @@ import typings.typeorm.treeMetadataArgsMod.TreeMetadataArgs
 import typings.typeorm.typeormStrings.STI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: TableMetadataArgs = js.native
+  var args: TableMetadataArgs
   
-  var connection: typings.typeorm.connectionMod.Connection = js.native
+  var connection: typings.typeorm.connectionMod.Connection
   
-  var inheritancePattern: js.UndefOr[STI] = js.native
+  var inheritancePattern: js.UndefOr[STI] = js.undefined
   
-  var inheritanceTree: js.UndefOr[js.Array[js.Function]] = js.native
+  var inheritanceTree: js.UndefOr[js.Array[js.Function]] = js.undefined
   
-  var parentClosureEntityMetadata: js.UndefOr[typings.typeorm.entityMetadataMod.EntityMetadata] = js.native
+  var parentClosureEntityMetadata: js.UndefOr[typings.typeorm.entityMetadataMod.EntityMetadata] = js.undefined
   
-  var tableTree: js.UndefOr[TreeMetadataArgs] = js.native
+  var tableTree: js.UndefOr[TreeMetadataArgs] = js.undefined
 }
 object Args {
   

@@ -6,14 +6,15 @@ import typings.forgeDi.lifecycleMod.Lifecycle
 import typings.forgeDi.predicateMod.Predicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bindingMod {
   
   @JSImport("forge-di/dist/framework/Binding", JSImport.Default)
   @js.native
-  class default protected () extends Binding {
+  class default protected ()
+    extends StObject
+       with Binding {
     def this(forge: typings.forgeDi.forgeMod.default, name: String) = this()
   }
   

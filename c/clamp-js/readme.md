@@ -11,8 +11,8 @@ Clamps (ie. cuts off) an HTML element's content by adding ellipsis to it if the 
 | Full name          | clamp-js |
 | Keywords           | clamp, ellipsis, multiline, browser |
 | # releases         | 0 |
-| # dependents       | 6 |
-| # downloads        | 242834 |
+| # dependents       | 7 |
+| # downloads        | 297386 |
 | # stars            | 1 |
 
 ## Links

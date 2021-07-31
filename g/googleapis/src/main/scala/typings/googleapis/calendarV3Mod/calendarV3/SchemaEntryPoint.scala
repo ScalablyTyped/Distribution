@@ -2,10 +2,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaEntryPoint extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait SchemaEntryPoint extends StObject {
     * the terminology that the conference provider uses. Only the populated
     * fields should be displayed. Optional.
     */
-  var accessCode: js.UndefOr[String] = js.native
+  var accessCode: js.UndefOr[String] = js.undefined
   
   /**
     * Features of the entry point, such as being toll or toll-free. One entry
     * point can have multiple features. However, toll and toll-free cannot be
     * both set on the same entry point.
     */
-  var entryPointFeatures: js.UndefOr[js.Array[String]] = js.native
+  var entryPointFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The type of the conference entry point. Possible values are:   -
@@ -35,7 +33,7 @@ trait SchemaEntryPoint extends StObject {
     * conference can have zero or one more entry point. A conference with only
     * a more entry point is not a valid conference.
     */
-  var entryPointType: js.UndefOr[String] = js.native
+  var entryPointType: js.UndefOr[String] = js.undefined
   
   /**
     * The label for the URI. Visible to end users. Not localized. The maximum
@@ -43,7 +41,7 @@ trait SchemaEntryPoint extends StObject {
     * meet.google.com/aaa-bbbb-ccc - for phone: +1 123 268 2601 - for sip:
     * 12345678@altostrat.com - for more: should not be filled   Optional.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The meeting code to access the conference. The maximum length is 128
@@ -52,7 +50,7 @@ trait SchemaEntryPoint extends StObject {
     * the terminology that the conference provider uses. Only the populated
     * fields should be displayed. Optional.
     */
-  var meetingCode: js.UndefOr[String] = js.native
+  var meetingCode: js.UndefOr[String] = js.undefined
   
   /**
     * The passcode to access the conference. The maximum length is 128
@@ -61,7 +59,7 @@ trait SchemaEntryPoint extends StObject {
     * the terminology that the conference provider uses. Only the populated
     * fields should be displayed.
     */
-  var passcode: js.UndefOr[String] = js.native
+  var passcode: js.UndefOr[String] = js.undefined
   
   /**
     * The password to access the conference. The maximum length is 128
@@ -70,7 +68,7 @@ trait SchemaEntryPoint extends StObject {
     * the terminology that the conference provider uses. Only the populated
     * fields should be displayed. Optional.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The PIN to access the conference. The maximum length is 128 characters.
@@ -79,14 +77,14 @@ trait SchemaEntryPoint extends StObject {
     * terminology that the conference provider uses. Only the populated fields
     * should be displayed. Optional.
     */
-  var pin: js.UndefOr[String] = js.native
+  var pin: js.UndefOr[String] = js.undefined
   
   /**
     * The CLDR/ISO 3166 region code for the country associated with this phone
     * access. Example: &quot;SE&quot; for Sweden. Calendar backend will
     * populate this field only for EntryPointType.PHONE.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the entry point. The maximum length is 1300 characters.
@@ -96,7 +94,7 @@ trait SchemaEntryPoint extends StObject {
     * required, e.g., sip:12345678@myprovider.com. - for more, http: or https:
     * schema is required.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object SchemaEntryPoint {
   

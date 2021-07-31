@@ -7,20 +7,19 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketAccelerateConfigurationOutputMod {
   
-  @js.native
   trait GetBucketAccelerateConfigurationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>The accelerate configuration of the bucket.</p>
       */
-    var Status: js.UndefOr[Enabled | Suspended | String] = js.native
+    var Status: js.UndefOr[Enabled | Suspended | String] = js.undefined
   }
   object GetBucketAccelerateConfigurationOutput {
     

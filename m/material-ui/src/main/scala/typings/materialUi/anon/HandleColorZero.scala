@@ -2,31 +2,29 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleColorZero extends StObject {
   
-  var handleColorZero: js.UndefOr[String] = js.native
+  var handleColorZero: js.UndefOr[String] = js.undefined
   
-  var handleFillColor: js.UndefOr[String] = js.native
+  var handleFillColor: js.UndefOr[String] = js.undefined
   
-  var handleSize: js.UndefOr[Double] = js.native
+  var handleSize: js.UndefOr[Double] = js.undefined
   
-  var handleSizeActive: js.UndefOr[Double] = js.native
+  var handleSizeActive: js.UndefOr[Double] = js.undefined
   
-  var handleSizeDisabled: js.UndefOr[Double] = js.native
+  var handleSizeDisabled: js.UndefOr[Double] = js.undefined
   
-  var rippleColor: js.UndefOr[String] = js.native
+  var rippleColor: js.UndefOr[String] = js.undefined
   
-  var selectionColor: js.UndefOr[String] = js.native
+  var selectionColor: js.UndefOr[String] = js.undefined
   
-  var trackColor: js.UndefOr[String] = js.native
+  var trackColor: js.UndefOr[String] = js.undefined
   
-  var trackColorSelected: js.UndefOr[String] = js.native
+  var trackColorSelected: js.UndefOr[String] = js.undefined
   
-  var trackSize: js.UndefOr[Double] = js.native
+  var trackSize: js.UndefOr[Double] = js.undefined
 }
 object HandleColorZero {
   

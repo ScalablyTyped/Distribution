@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridExcelExporterSettingsGridFeatureOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -21,7 +20,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No column fixing will be applied in the excel document.
     * "applied" Column fixing will be applied in the excel document.
     */
-  var columnfixing: js.UndefOr[String] = js.native
+  var columnfixing: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether filtering will be applied in the exported table. this is set to none by default, but will change to applied if filtering feature is defined in the igGrid.
@@ -32,7 +31,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "applied" Filtering will be applied in the excel document.
     * "filteredRowsOnly" Filtering will be exported in the excel document.
     */
-  var filtering: js.UndefOr[String] = js.native
+  var filtering: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether hidden columns will be removed from the exported table. This is set to none by default, but will change to applied if hiding feature is defined in the igGrid.
@@ -43,7 +42,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "applied" Hidden columns will be exported as hidden in the excel document.
     * "visibleColumnsOnly" Only visible columns will be exported.
     */
-  var hiding: js.UndefOr[String] = js.native
+  var hiding: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the rows on the current page or entire data will exported.
@@ -53,7 +52,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "currentPage" Only current page will be exported to the excel document.
     * "allRows" All pages will be exported to the excel document.
     */
-  var paging: js.UndefOr[String] = js.native
+  var paging: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether sorting will be applied in the exported table. This is set_ to none by default, but will change to applied if sorting feature is defined in the igGrid.
@@ -63,7 +62,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No sorting will be applied in the excel document.
     * "applied" Sorting will be applied in the excel document.
     */
-  var sorting: js.UndefOr[String] = js.native
+  var sorting: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether summaries will be added in the exported table. This is set to none by default, but will change to applied if summaries feature is defined in the igGrid.
@@ -73,7 +72,7 @@ trait GridExcelExporterSettingsGridFeatureOptions
     * "none" No summaries will be exported to the excel document.
     * "applied" Summaries will be exported to the excel document.
     */
-  var summaries: js.UndefOr[String] = js.native
+  var summaries: js.UndefOr[String] = js.undefined
 }
 object GridExcelExporterSettingsGridFeatureOptions {
   

@@ -2,11 +2,12 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICompositeChart[T] extends CoordinateGridMixin[T] {
+trait ICompositeChart[T]
+  extends StObject
+     with CoordinateGridMixin[T] {
   
   def alignYAxes(): Boolean = js.native
   def alignYAxes(t: Boolean): ICompositeChart[T] = js.native
@@ -18,15 +19,15 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
   @JSName("childOptions")
   var childOptions_Original: IGetSet[js.Object, ICompositeChart[T]] = js.native
   
-  def children(): js.Array[BaseMixin[_]] = js.native
+  def children(): js.Array[BaseMixin[js.Any]] = js.native
   
-  def compose(): js.Array[BaseMixin[_]] = js.native
-  def compose(t: js.Array[BaseMixin[_]]): ICompositeChart[T] = js.native
+  def compose(): js.Array[BaseMixin[js.Any]] = js.native
+  def compose(t: js.Array[BaseMixin[js.Any]]): ICompositeChart[T] = js.native
   @JSName("compose")
-  var compose_Original: IGetSet[js.Array[BaseMixin[_]], ICompositeChart[T]] = js.native
+  var compose_Original: IGetSet[js.Array[BaseMixin[js.Any]], ICompositeChart[T]] = js.native
   
-  def rightY(): js.Function1[/* n */ js.Any, _] = js.native
-  def rightY(t: js.Function1[/* n */ js.Any, _]): ICompositeChart[T] = js.native
+  def rightY(): js.Function1[/* n */ js.Any, js.Any] = js.native
+  def rightY(t: js.Function1[/* n */ js.Any, js.Any]): ICompositeChart[T] = js.native
   
   def rightYAxis(): js.Any = js.native
   def rightYAxis(
@@ -34,18 +35,18 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
   ): ICompositeChart[T] = js.native
   
   def rightYAxisLabel(): IGetSet[String, ICompositeChart[T]] = js.native
-  def rightYAxisLabel(rightYAxisLabel: js.UndefOr[scala.Nothing], padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
   def rightYAxisLabel(rightYAxisLabel: String): IGetSet[String, ICompositeChart[T]] = js.native
   def rightYAxisLabel(rightYAxisLabel: String, padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
+  def rightYAxisLabel(rightYAxisLabel: Unit, padding: Double): IGetSet[String, ICompositeChart[T]] = js.native
   
   @JSName("rightYAxis")
   var rightYAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any, 
     ICompositeChart[T]
   ] = js.native
   
   @JSName("rightY")
-  var rightY_Original: IGetSet[js.Function1[/* n */ _, _], ICompositeChart[T]] = js.native
+  var rightY_Original: IGetSet[js.Function1[/* n */ js.Any, js.Any], ICompositeChart[T]] = js.native
   
   def shareColors(): Boolean = js.native
   def shareColors(t: Boolean): ICompositeChart[T] = js.native

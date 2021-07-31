@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pivot {
@@ -15,11 +14,15 @@ object Pivot {
     
     //To bind an OLAP data source to PivotGrid.
     @js.native
-    sealed trait OLAP extends AnalysisMode
+    sealed trait OLAP
+      extends StObject
+         with AnalysisMode
     
     //To bind a relational data source to PivotGrid.
     @js.native
-    sealed trait Pivot extends AnalysisMode
+    sealed trait Pivot
+      extends StObject
+         with AnalysisMode
   }
   
   @js.native
@@ -30,10 +33,14 @@ object Pivot {
     
     //To bind data source completely from client-side.
     @js.native
-    sealed trait ClientMode extends OperationalMode
+    sealed trait ClientMode
+      extends StObject
+         with OperationalMode
     
     //To bind data source completely from server-side.
     @js.native
-    sealed trait ServerMode extends OperationalMode
+    sealed trait ServerMode
+      extends StObject
+         with OperationalMode
   }
 }

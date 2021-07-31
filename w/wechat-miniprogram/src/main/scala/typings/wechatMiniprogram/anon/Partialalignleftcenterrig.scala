@@ -17,48 +17,46 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.sub
 import typings.wechatMiniprogram.wechatMiniprogramStrings.unchecked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  align :'left' | 'center' | 'right' | 'justify',   bold :'strong',   italic :'em',   underline :true,   strike :'del',   lineHeight :string,   letterSpacing :string,   marginTop :string,   marginBottom :string,   fontFamily :string,   fontSize :string,   color :string,   backgroundColor :string,   list :'checked' | 'unchecked' | 'ordered' | 'bullet',   indent :number,   header :number,   script :'sub' | 'super',   direction :'rtl'}> */
-@js.native
 trait Partialalignleftcenterrig extends StObject {
   
-  var align: js.UndefOr[left | center | right | justify] = js.native
+  var align: js.UndefOr[left | center | right | justify] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var bold: js.UndefOr[strong] = js.native
+  var bold: js.UndefOr[strong] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[rtl] = js.native
+  var direction: js.UndefOr[rtl] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[Double] = js.native
+  var header: js.UndefOr[Double] = js.undefined
   
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
   
-  var italic: js.UndefOr[em] = js.native
+  var italic: js.UndefOr[em] = js.undefined
   
-  var letterSpacing: js.UndefOr[String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[checked | unchecked | ordered | bullet] = js.native
+  var list: js.UndefOr[checked | unchecked | ordered | bullet] = js.undefined
   
-  var marginBottom: js.UndefOr[String] = js.native
+  var marginBottom: js.UndefOr[String] = js.undefined
   
-  var marginTop: js.UndefOr[String] = js.native
+  var marginTop: js.UndefOr[String] = js.undefined
   
-  var script: js.UndefOr[sub | `super`] = js.native
+  var script: js.UndefOr[sub | `super`] = js.undefined
   
-  var strike: js.UndefOr[del] = js.native
+  var strike: js.UndefOr[del] = js.undefined
   
-  var underline: js.UndefOr[`true`] = js.native
+  var underline: js.UndefOr[`true`] = js.undefined
 }
 object Partialalignleftcenterrig {
   

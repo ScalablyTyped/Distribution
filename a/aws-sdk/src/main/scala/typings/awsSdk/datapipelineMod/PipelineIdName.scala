@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineIdName extends StObject {
   
   /**
     * The ID of the pipeline that was assigned by AWS Data Pipeline. This is a string of the form df-297EG78HU43EEXAMPLE.
     */
-  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.native
+  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.undefined
   
   /**
     * The name of the pipeline.
     */
-  var name: js.UndefOr[id] = js.native
+  var name: js.UndefOr[id] = js.undefined
 }
 object PipelineIdName {
   

@@ -3,33 +3,31 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentSession extends StObject {
   
   /**
     * Gets or sets the agent which is the target of the session.
     */
-  var agent: TaskAgentReference = js.native
+  var agent: TaskAgentReference
   
   /**
     * Gets the key used to encrypt message traffic for this session.
     */
-  var encryptionKey: TaskAgentSessionKey = js.native
+  var encryptionKey: TaskAgentSessionKey
   
   /**
     * Gets or sets the owner name of this session. Generally this will be the machine of origination.
     */
-  var ownerName: String = js.native
+  var ownerName: String
   
   /**
     * Gets the unique identifier for this session.
     */
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var systemCapabilities: StringDictionary[String] = js.native
+  var systemCapabilities: StringDictionary[String]
 }
 object TaskAgentSession {
   

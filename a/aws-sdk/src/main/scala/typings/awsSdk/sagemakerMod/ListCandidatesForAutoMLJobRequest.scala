@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCandidatesForAutoMLJobRequest extends StObject {
   
   /**
     * List the Candidates created for the job by providing the job's name.
     */
-  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName = js.native
+  var AutoMLJobName: typings.awsSdk.sagemakerMod.AutoMLJobName
   
   /**
     * List the Candidates for the job and filter by candidate name.
     */
-  var CandidateNameEquals: js.UndefOr[CandidateName] = js.native
+  var CandidateNameEquals: js.UndefOr[CandidateName] = js.undefined
   
   /**
     * List the job's Candidates up to a specified limit.
     */
-  var MaxResults: js.UndefOr[AutoMLMaxResults] = js.native
+  var MaxResults: js.UndefOr[AutoMLMaxResults] = js.undefined
   
   /**
     * If the previous response was truncated, you receive this token. Use it in your next request to receive the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The parameter by which to sort the results. The default is Descending.
     */
-  var SortBy: js.UndefOr[CandidateSortBy] = js.native
+  var SortBy: js.UndefOr[CandidateSortBy] = js.undefined
   
   /**
     * The sort order for the results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[AutoMLSortOrder] = js.native
+  var SortOrder: js.UndefOr[AutoMLSortOrder] = js.undefined
   
   /**
     * List the Candidates for the job and filter by status.
     */
-  var StatusEquals: js.UndefOr[CandidateStatus] = js.native
+  var StatusEquals: js.UndefOr[CandidateStatus] = js.undefined
 }
 object ListCandidatesForAutoMLJobRequest {
   

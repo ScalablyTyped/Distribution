@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the Web Report Designer control.
   */
 @js.native
-trait ASPxClientReportDesigner extends ASPxClientControl {
+trait ASPxClientReportDesigner
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Adds a custom parameter type to the Web End-User Report Designer.
@@ -290,26 +291,26 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     * Returns the report layout stored in a report storage under the specified URL. A Deferred Promise object.
     * @param url A string that specifies the report URL.
     */
-  def ReportStorageGetData(url: String): JQueryPromise[_] = js.native
+  def ReportStorageGetData(url: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Returns the report URLs and display names existing in a report storage.
     */
-  def ReportStorageGetUrls(): JQueryPromise[_] = js.native
+  def ReportStorageGetUrls(): JQueryPromise[js.Any] = js.native
   
   /**
     * Stores the specified report to a report storage using the specified URL. A Deferred Promise object.
     * @param reportLayout A string that specifies the report layout to be saved.
     * @param url A string that specifies the URL used to save a report.
     */
-  def ReportStorageSetData(reportLayout: String, url: String): JQueryPromise[_] = js.native
+  def ReportStorageSetData(reportLayout: String, url: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Stores the specified report to a report storage using a new URL. A Deferred Promise object.
     * @param reportLayout A string that specifies the report layout to be saved.
     * @param url A string that specifies the default report URL.
     */
-  def ReportStorageSetNewData(reportLayout: String, url: String): JQueryPromise[_] = js.native
+  def ReportStorageSetNewData(reportLayout: String, url: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Occurs when a report tab was closed in the Web Report Designer.
@@ -335,12 +336,12 @@ trait ASPxClientReportDesigner extends ASPxClientControl {
     * Saves the current report under a new name. A Deferred Promise object.
     * @param reportName A string that specifies the report name.
     */
-  def SaveNewReport(reportName: String): JQueryPromise[_] = js.native
+  def SaveNewReport(reportName: String): JQueryPromise[js.Any] = js.native
   
   /**
     * Saves the current report.
     */
-  def SaveReport(): JQueryPromise[_] = js.native
+  def SaveReport(): JQueryPromise[js.Any] = js.native
   
   /**
     * Switches the Web Report Designer to the preview mode.

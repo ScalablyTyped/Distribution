@@ -5,32 +5,32 @@ import typings.std.PropertyKey
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoordinateSegment extends Object {
+trait CoordinateSegment
+  extends StObject
+     with Object {
   
   /**
     * A string that provides the name for this segment of a coordinate string.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment)
     */
-  var alias: String = js.native
+  var alias: String
   
   /**
     * A string that describes the role of this segment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment)
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * A regular expression that should extract this segment from the complete coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Format.html#CoordinateSegment)
     */
-  var searchPattern: RegExp = js.native
+  var searchPattern: RegExp
 }
 object CoordinateSegment {
   

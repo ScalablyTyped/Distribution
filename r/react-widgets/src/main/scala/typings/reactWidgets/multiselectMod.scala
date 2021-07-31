@@ -17,7 +17,6 @@ import typings.reactWidgets.reactWidgetsStrings.onFilter
 import typings.reactWidgets.reactWidgetsStrings.startsWith
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiselectMod extends Shortcut {
@@ -32,42 +31,41 @@ object multiselectMod extends Shortcut {
   }
   @JSImport("react-widgets/lib/Multiselect", JSImport.Namespace)
   @js.native
-  val ^ : MultiselectClass = js.native
+  val ^ : js.Object & MultiselectClass = js.native
   
   type MultiselectClass = ComponentClass[MultiselectProps, ComponentState]
   
-  @js.native
   trait MultiselectMessages extends StObject {
     
     /**
       * The text label for creating new tags.
       * @default "(create new tag)"
       */
-    var createNew: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var createNew: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var createOption: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var createOption: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
     /**
       * Text to display when the the current filter does not return any results.
       * @default "The filter returned no results"
       */
-    var emptyFilter: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var emptyFilter: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
     /**
       * Text to display when the data prop array is empty.
       * @default "There are no items in this list"
       */
-    var emptyList: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var emptyList: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var noneSelected: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var noneSelected: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var open: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var open: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var removeLabel: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var removeLabel: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var selectedItems: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var selectedItems: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
     
-    var tagsLabel: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.native
+    var tagsLabel: js.UndefOr[String | (js.Function1[/* props */ MultiselectProps, String])] = js.undefined
   }
   object MultiselectMessages {
     
@@ -163,53 +161,53 @@ object multiselectMod extends Shortcut {
     }
   }
   
-  @js.native
   trait MultiselectProps
-    extends ReactWidgetsCommonDropdownProps
+    extends StObject
+       with ReactWidgetsCommonDropdownProps
        with AutoFocus {
     
     /**
       * Enables the list option creation UI. onFilter will only the UI when actively filtering for a list item.
       * @default 'onFilter'
       */
-    var allowCreate: js.UndefOr[Boolean | onFilter] = js.native
+    var allowCreate: js.UndefOr[Boolean | onFilter] = js.undefined
     
     /**
       * mark whether the widget is in a busy or loading state. If true the widget will display a
       * spinner gif, useful when loading data via an ajax call.
       * @default false
       */
-    var busy: js.UndefOr[Boolean] = js.native
+    var busy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Filter the list without regard for case. This
       * only applies to non function values for filter.
       * @default false
       */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Adds a css class to the input container element.
       */
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Provide an array of possible values for the Multiselect. If an array of objects is
       * provided you should use the valueField and textField props, to specify which object
       * properties comprise the value field (such as an id) and the field used to label the item.
       */
-    var data: js.UndefOr[js.Array[_]] = js.native
+    var data: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Default Value.
       */
-    var defaultValue: js.UndefOr[js.Array[_]] = js.native
+    var defaultValue: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * The speed, in milliseconds, of the dropdown animation.
       * @default 250
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify a filtering method used to reduce the items in the dropdown as you type. There
@@ -221,131 +219,131 @@ object multiselectMod extends Shortcut {
       */
     var filter: js.UndefOr[
         `false` | startsWith | endsWith | contains | (js.Function2[/* dataItem */ js.Any, /* searchTerm */ String, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Determines how to group the Multiselect values. Providing a string will group the data
       * array by that property. You can also provide a 'function' which should return the group
       * value.
       */
-    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, _])] = js.native
+    var groupBy: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, js.Any])] = js.undefined
     
     /**
       * This component is used to render each option group, when groupBy is specified. By default
       * the groupBy value will be used.
       */
-    var groupComponent: js.UndefOr[ReactType[_]] = js.native
+    var groupComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying input component.
       */
-    var inputProps: js.UndefOr[js.Object] = js.native
+    var inputProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * This component is used to render each possible item in the list. The default component
       * renders the text of the selected item (specified by textfield).
       */
-    var itemComponent: js.UndefOr[ReactType[_]] = js.native
+    var itemComponent: js.UndefOr[ReactType[js.Any]] = js.undefined
     
     /**
       * @default List
       */
-    var listComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var listComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * An object of props that is passed directly to the underlying List component.
       */
-    var listProps: js.UndefOr[js.Object] = js.native
+    var listProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Object hash containing display text and/or text for screen readers. Use the messages
       * object to localize widget text and increase accessibility.
       */
-    var messages: js.UndefOr[MultiselectMessages] = js.native
+    var messages: js.UndefOr[MultiselectMessages] = js.undefined
     
     /**
       * Use in conjunction with the filter prop. Start filtering the list only after the value
       * has reached a minimum length.
       * @default 1
       */
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Change event Handler that is called when the value is changed. The handler is called with
       * an array of values.
       */
-    var onChange: js.UndefOr[js.Function2[/* dataItems */ js.Array[_], /* metadata */ Action, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* dataItems */ js.Array[js.Any], /* metadata */ Action, Unit]] = js.undefined
     
     /**
       * This handler fires when the user chooses to create a new tag, not in the data list. It is
       * up to the widget parent to implement creation logic, a common implementation is shown
       * below, where the new tag is selected and added to the data list.
       */
-    var onCreate: js.UndefOr[js.Function1[/* searchTerm */ String, Unit]] = js.native
+    var onCreate: js.UndefOr[js.Function1[/* searchTerm */ String, Unit]] = js.undefined
     
     /**
       * Called when the value of the text box changes either from typing or a pasted value.
       * onSearch should be used when the searchTerm prop is set.
       */
-    var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ LastSearchTerm, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function2[/* searchTerm */ String, /* metadata */ LastSearchTerm, Unit]] = js.undefined
     
     /**
       * This handler fires when an item has been selected from the list. It fires before the
       * onChange handler, and fires regardless of whether the value has actually changed
       */
-    var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* metadata */ OriginalEvent, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* value */ js.Any, /* metadata */ OriginalEvent, Unit]] = js.undefined
     
     /**
       * Called when the Multiselect is about to open or close. onToggle should be used when the
       * open prop is set otherwise the widget will never open or close.
       */
-    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.native
+    var onToggle: js.UndefOr[js.Function1[/* isOpen */ Boolean, Unit]] = js.undefined
     
     /**
       * Whether or not the Multiselect is open. When unset (undefined) the Multiselect will
       * handle the opening and closing internally. The defaultOpen prop can be used to set an
       * initialization value for uncontrolled widgets.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The same as an input placeholder, only works in browsers that support the placeholder
       * attribute for inputs
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * A Transition component from react-transition-group v2.
       * The provided component will be used instead of the default SlideDownTransition for fully customizable animations.
       * The transition component is also injected with a dropUp prop indicating the direction it should open.
       */
-    var popupTransition: js.UndefOr[ReactType[_] | String] = js.native
+    var popupTransition: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * The string value of the current search being typed into the Multiselect. When unset
       * (undefined) the Multiselect will handle the filtering internally. The defaultSearchTerm
       * prop can be used to set an initialization value for uncontrolled widgets.
       */
-    var searchTerm: js.UndefOr[String] = js.native
+    var searchTerm: js.UndefOr[String] = js.undefined
     
     /**
       * This component is used to render each selected item. The default component renders the
       * text of the selected item (specified by textfield).
       */
-    var tagComponent: js.UndefOr[ReactType[_] | String] = js.native
+    var tagComponent: js.UndefOr[ReactType[js.Any] | String] = js.undefined
     
     /**
       * Specify which data item field to display in the Multiselect and selected item. The
       * textField prop may also also used as to find an item in the list as you type. Providing
       * an accessor function allows for computed text values.
       */
-    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.native
+    var textField: js.UndefOr[String | (js.Function1[/* dataItem */ js.Any, String])] = js.undefined
     
     /**
       * The current values of the Multiselect. The value should can null, or an array of
       * valueField values, or an array of objects (such as a few items in the data array)
       */
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * A dataItem field name for uniquely identifying items in the data list. A valueField is
@@ -354,7 +352,7 @@ object multiselectMod extends Shortcut {
       * When a valueField is not provided, the Multiselect will use strict equality checks (===)
       * to locate the value in the data list.
       */
-    var valueField: js.UndefOr[String] = js.native
+    var valueField: js.UndefOr[String] = js.undefined
   }
   object MultiselectProps {
     
@@ -392,7 +390,7 @@ object multiselectMod extends Shortcut {
       def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
       @scala.inline
-      def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -401,7 +399,7 @@ object multiselectMod extends Shortcut {
       def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
       @scala.inline
-      def setDefaultValue(value: js.Array[_]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      def setDefaultValue(value: js.Array[js.Any]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -427,16 +425,16 @@ object multiselectMod extends Shortcut {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, _])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      def setGroupBy(value: String | (js.Function1[/* dataItem */ js.Any, js.Any])): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGroupByFunction1(value: /* dataItem */ js.Any => _): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
+      def setGroupByFunction1(value: /* dataItem */ js.Any => js.Any): Self = StObject.set(x, "groupBy", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
       @scala.inline
-      def setGroupComponent(value: ReactType[_]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+      def setGroupComponent(value: ReactType[js.Any]): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
@@ -448,13 +446,13 @@ object multiselectMod extends Shortcut {
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
       @scala.inline
-      def setItemComponent(value: ReactType[_]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
+      def setItemComponent(value: ReactType[js.Any]): Self = StObject.set(x, "itemComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemComponentUndefined: Self = StObject.set(x, "itemComponent", js.undefined)
       
       @scala.inline
-      def setListComponent(value: ReactType[_] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
+      def setListComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "listComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListComponentUndefined: Self = StObject.set(x, "listComponent", js.undefined)
@@ -478,7 +476,7 @@ object multiselectMod extends Shortcut {
       def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* dataItems */ js.Array[_], /* metadata */ Action) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(value: (/* dataItems */ js.Array[js.Any], /* metadata */ Action) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -520,7 +518,7 @@ object multiselectMod extends Shortcut {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setPopupTransition(value: ReactType[_] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
+      def setPopupTransition(value: ReactType[js.Any] | String): Self = StObject.set(x, "popupTransition", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopupTransitionUndefined: Self = StObject.set(x, "popupTransition", js.undefined)
@@ -532,7 +530,7 @@ object multiselectMod extends Shortcut {
       def setSearchTermUndefined: Self = StObject.set(x, "searchTerm", js.undefined)
       
       @scala.inline
-      def setTagComponent(value: ReactType[_] | String): Self = StObject.set(x, "tagComponent", value.asInstanceOf[js.Any])
+      def setTagComponent(value: ReactType[js.Any] | String): Self = StObject.set(x, "tagComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagComponentUndefined: Self = StObject.set(x, "tagComponent", js.undefined)
@@ -547,7 +545,7 @@ object multiselectMod extends Shortcut {
       def setTextFieldUndefined: Self = StObject.set(x, "textField", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueField(value: String): Self = StObject.set(x, "valueField", value.asInstanceOf[js.Any])
@@ -563,8 +561,8 @@ object multiselectMod extends Shortcut {
     }
   }
   
-  type _To = MultiselectClass
+  type _To = js.Object & MultiselectClass
   
   /* This means you don't have to write `^`, but can instead just say `multiselectMod.foo` */
-  override def _to: MultiselectClass = ^
+  override def _to: js.Object & MultiselectClass = ^
 }

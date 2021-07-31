@@ -3,19 +3,17 @@ package typings.antvG2.mod
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 坐标轴标签
   */
-@js.native
 trait AxisLabel extends StObject {
   
   /**
     * 文本是否需要自动旋转，默认为 true
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 用于格式化坐标轴上显示的文本信息的回调函数
@@ -24,7 +22,7 @@ trait AxisLabel extends StObject {
     * @param index 索引值
     * @return 返回格式化后的文本值
     */
-  var formatter: js.UndefOr[js.Function3[/* text */ String, /* item */ js.Any, /* index */ Double, String]] = js.native
+  var formatter: js.UndefOr[js.Function3[/* text */ String, /* item */ js.Any, /* index */ Double, String]] = js.undefined
   
   /**
     * 使用 html 渲染文本
@@ -33,18 +31,18 @@ trait AxisLabel extends StObject {
     * @param index 索引值
     * @return 返回 html 字符串
     */
-  var htmlTemplate: js.UndefOr[js.Function3[/* text */ String, /* item */ js.Any, /* index */ Double, String]] = js.native
+  var htmlTemplate: js.UndefOr[js.Function3[/* text */ String, /* item */ js.Any, /* index */ Double, String]] = js.undefined
   
   /**
     * 数值，设置坐标轴文本 label 距离坐标轴线的距离
     */
-  var offset: js.UndefOr[Double | js.Array[Double]] = js.native
+  var offset: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   /**
     * 设置文本的显示样式，还可以是个回调函数，
     * 回调函数的参数为该坐标轴对应字段的数值
     */
-  var textStyle: js.UndefOr[(js.Function1[/* text */ js.UndefOr[String], text]) | text] = js.native
+  var textStyle: js.UndefOr[(js.Function1[/* text */ js.UndefOr[String], text]) | text] = js.undefined
 }
 object AxisLabel {
   

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This bridge works with the urp protocol.
   * @see com.sun.star.bridge.Bridge
   */
-@js.native
 trait UrpBridge
-  extends XInitialization
+  extends StObject
+     with XInitialization
      with XBridge
      with XComponent
 object UrpBridge {
@@ -34,7 +33,7 @@ object UrpBridge {
     getDescription: () => String,
     getInstance: String => XInterface,
     getName: () => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit

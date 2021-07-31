@@ -2,47 +2,45 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<MaterialboxOptions> * / any */ @js.native
-trait Materialbox extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Component<MaterialboxOptions> * / any */ trait Materialbox extends StObject {
   
   /**
     * Caption if specified
     */
-  var caption: String = js.native
+  var caption: String
   
   /**
     * Close materialbox
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * If the materialbox is no longer being animated
     */
-  var doneAnimating: Boolean = js.native
+  var doneAnimating: Boolean
   
   /**
     * Open materialbox
     */
-  def open(): Unit = js.native
+  def open(): Unit
   
   /**
     * Original height of image
     */
-  var originalHeight: Double = js.native
+  var originalHeight: Double
   
   /**
     * Original width of image
     */
-  var originalWidth: Double = js.native
+  var originalWidth: Double
   
   /**
     * If the materialbox overlay is showing
     */
-  var overlayActive: Boolean = js.native
+  var overlayActive: Boolean
 }
 object Materialbox {
   

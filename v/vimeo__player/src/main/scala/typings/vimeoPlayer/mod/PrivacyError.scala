@@ -2,20 +2,20 @@ package typings.vimeoPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrivacyError extends Error {
+trait PrivacyError
+  extends StObject
+     with Error {
   
   @JSName("name")
-  var name_PrivacyError: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError = js.native
+  var name_PrivacyError: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError
 }
 object PrivacyError {
   
   @scala.inline
-  def apply(message: String, method: String, name: typings.vimeoPlayer.vimeoPlayerStrings.PrivacyError): PrivacyError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(message: String, method: String): PrivacyError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], name = "PrivacyError")
     __obj.asInstanceOf[PrivacyError]
   }
   

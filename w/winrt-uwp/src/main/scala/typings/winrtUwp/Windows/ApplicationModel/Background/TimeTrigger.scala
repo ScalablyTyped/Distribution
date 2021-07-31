@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a time event that triggers a background task to run. */
-@js.native
 trait TimeTrigger extends StObject {
   
   /** Gets the interval of a time event trigger. */
-  var freshnessTime: Double = js.native
+  var freshnessTime: Double
   
   /** Gets whether the time event trigger will be used only once or each time the FreshnessTime interval elapses. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
 }
 object TimeTrigger {
   

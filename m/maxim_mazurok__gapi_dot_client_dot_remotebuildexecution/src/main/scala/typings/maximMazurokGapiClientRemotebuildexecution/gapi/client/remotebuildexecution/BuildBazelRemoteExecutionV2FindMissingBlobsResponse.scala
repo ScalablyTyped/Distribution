@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2FindMissingBlobsResponse extends StObject {
   
   /** A list of the blobs requested *not* present in the storage. */
-  var missingBlobDigests: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Digest]] = js.native
+  var missingBlobDigests: js.UndefOr[js.Array[BuildBazelRemoteExecutionV2Digest]] = js.undefined
 }
 object BuildBazelRemoteExecutionV2FindMissingBlobsResponse {
   

@@ -6,21 +6,19 @@ import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.statusMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMod {
   
-  @js.native
   trait Response extends StObject {
     
-    var event: js.UndefOr[Event | Session] = js.native
+    var event: js.UndefOr[Event | Session] = js.undefined
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
     
-    var status: Status = js.native
+    var status: Status
     
-    var `type`: js.UndefOr[EventType] = js.native
+    var `type`: js.UndefOr[EventType] = js.undefined
   }
   object Response {
     

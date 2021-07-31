@@ -19,22 +19,20 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Left extends StObject {
     
-    var left: js.Array[_] = js.native
+    var left: js.Array[js.Any]
     
-    var right: js.Array[_] = js.native
+    var right: js.Array[js.Any]
   }
   object Left {
     
     @scala.inline
-    def apply(left: js.Array[_], right: js.Array[_]): Left = {
+    def apply(left: js.Array[js.Any], right: js.Array[js.Any]): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
@@ -43,13 +41,13 @@ object anon {
     implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLeft(value: js.Array[_]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      def setLeft(value: js.Array[js.Any]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLeftVarargs(value: js.Any*): Self = StObject.set(x, "left", js.Array(value :_*))
       
       @scala.inline
-      def setRight(value: js.Array[_]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      def setRight(value: js.Array[js.Any]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRightVarargs(value: js.Any*): Self = StObject.set(x, "right", js.Array(value :_*))
@@ -57,100 +55,99 @@ object anon {
   }
   
   /* Inlined std.Partial<react-ace.react-ace/lib/ace.IAceEditorProps> */
-  @js.native
   trait PartialIAceEditorProps extends StObject {
     
-    var annotations: js.UndefOr[js.Array[Annotation]] = js.native
+    var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var commands: js.UndefOr[js.Array[ICommand]] = js.native
+    var commands: js.UndefOr[js.Array[ICommand]] = js.undefined
     
-    var cursorStart: js.UndefOr[Double] = js.native
+    var cursorStart: js.UndefOr[Double] = js.undefined
     
-    var debounceChangePeriod: js.UndefOr[Double] = js.native
+    var debounceChangePeriod: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
-    var editorProps: js.UndefOr[IEditorProps] = js.native
+    var editorProps: js.UndefOr[IEditorProps] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableSnippets: js.UndefOr[Boolean] = js.native
+    var enableSnippets: js.UndefOr[Boolean] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Boolean] = js.native
+    var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardHandler: js.UndefOr[String] = js.native
+    var keyboardHandler: js.UndefOr[String] = js.undefined
     
-    var markers: js.UndefOr[js.Array[IMarker]] = js.native
+    var markers: js.UndefOr[js.Array[IMarker]] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String | js.Object] = js.native
+    var mode: js.UndefOr[String | js.Object] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var navigateToFileEnd: js.UndefOr[Boolean] = js.native
+    var navigateToFileEnd: js.UndefOr[Boolean] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.native
+    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* editor */ Editor, Unit]] = js.undefined
     
-    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.native
+    var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+    var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var setOptions: js.UndefOr[IAceOptions] = js.native
+    var setOptions: js.UndefOr[IAceOptions] = js.undefined
     
-    var showGutter: js.UndefOr[Boolean] = js.native
+    var showGutter: js.UndefOr[Boolean] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Boolean] = js.native
+    var showPrintMargin: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Boolean] = js.native
+    var wrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIAceEditorProps {
     
@@ -460,68 +457,67 @@ object anon {
   }
   
   /* Inlined std.Partial<react-ace.react-ace/lib/diff.IDiffEditorProps> */
-  @js.native
   trait PartialIDiffEditorProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursorStart: js.UndefOr[Double] = js.native
+    var cursorStart: js.UndefOr[Double] = js.undefined
     
-    var editorProps: js.UndefOr[js.Object] = js.native
+    var editorProps: js.UndefOr[js.Object] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Boolean] = js.native
+    var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+    var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var setOptions: js.UndefOr[js.Object] = js.native
+    var setOptions: js.UndefOr[js.Object] = js.undefined
     
-    var showGutter: js.UndefOr[Boolean] = js.native
+    var showGutter: js.UndefOr[Boolean] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Boolean] = js.native
+    var showPrintMargin: js.UndefOr[Boolean] = js.undefined
     
-    var splits: js.UndefOr[Double] = js.native
+    var splits: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Array[String]] = js.native
+    var value: js.UndefOr[js.Array[String]] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Boolean] = js.native
+    var wrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIDiffEditorProps {
     
@@ -729,96 +725,95 @@ object anon {
   }
   
   /* Inlined std.Partial<react-ace.react-ace/lib/split.ISplitEditorProps> */
-  @js.native
   trait PartialISplitEditorProps extends StObject {
     
-    var annotations: js.UndefOr[js.Array[js.Array[IAnnotation]]] = js.native
+    var annotations: js.UndefOr[js.Array[js.Array[IAnnotation]]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var commands: js.UndefOr[js.Array[ICommand]] = js.native
+    var commands: js.UndefOr[js.Array[ICommand]] = js.undefined
     
-    var cursorStart: js.UndefOr[Double] = js.native
+    var cursorStart: js.UndefOr[Double] = js.undefined
     
-    var debounceChangePeriod: js.UndefOr[Double] = js.native
+    var debounceChangePeriod: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[js.Array[String]] = js.undefined
     
-    var editorProps: js.UndefOr[IEditorProps] = js.native
+    var editorProps: js.UndefOr[IEditorProps] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var fontSize: js.UndefOr[Double | String] = js.native
+    var fontSize: js.UndefOr[Double | String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Boolean] = js.native
+    var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
     
-    var keyboardHandler: js.UndefOr[String] = js.native
+    var keyboardHandler: js.UndefOr[String] = js.undefined
     
-    var markers: js.UndefOr[js.Array[js.Array[IMarker]]] = js.native
+    var markers: js.UndefOr[js.Array[js.Array[IMarker]]] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.native
+    var onBeforeLoad: js.UndefOr[js.Function1[/* ace */ js.Any, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onCursorChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* value */ Event, Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onInput: js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelection: js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+    var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var setOptions: js.UndefOr[IAceOptions] = js.native
+    var setOptions: js.UndefOr[IAceOptions] = js.undefined
     
-    var showGutter: js.UndefOr[Boolean] = js.native
+    var showGutter: js.UndefOr[Boolean] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Boolean] = js.native
+    var showPrintMargin: js.UndefOr[Boolean] = js.undefined
     
-    var splits: js.UndefOr[Double] = js.native
+    var splits: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Array[String]] = js.native
+    var value: js.UndefOr[js.Array[String]] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Boolean] = js.native
+    var wrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object PartialISplitEditorProps {
     
@@ -1121,10 +1116,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object Text {
     
@@ -1142,10 +1136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofAce extends StObject {
     
-    val Selection: js.Any = js.native
+    val Selection: js.Any
   }
   object TypeofAce {
     
@@ -1191,12 +1184,11 @@ object anon {
     val version: String = js.native
   }
   
-  @js.native
   trait TypeofRange extends StObject {
     
-    def comparePoints(p1: Point, p2: Point): Double = js.native
+    def comparePoints(p1: Point, p2: Point): Double
     
-    def fromPoints(start: Point, end: Point): Range = js.native
+    def fromPoints(start: Point, end: Point): Range
   }
   object TypeofRange {
     
@@ -1218,116 +1210,125 @@ object anon {
   }
   
   /* Inlined prop-types.prop-types.ValidationMap<react-ace.react-ace/lib/ace.IAceEditorProps> */
-  @js.native
   trait ValidationMapIAceEditorPr extends StObject {
     
-    var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[Annotation]]]] = js.native
+    var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[Annotation]]]] = js.undefined
     
-    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.native
+    var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.undefined
     
-    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var defaultValue: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var defaultValue: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.native
+    var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var enableSnippets: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var enableSnippets: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.native
+    var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.undefined
     
-    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var markers: js.UndefOr[Validator[js.UndefOr[js.Array[IMarker]]]] = js.native
+    var markers: js.UndefOr[Validator[js.UndefOr[js.Array[IMarker]]]] = js.undefined
     
-    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var mode: js.UndefOr[Validator[js.UndefOr[String | js.Object]]] = js.native
+    var mode: js.UndefOr[Validator[js.UndefOr[String | js.Object]]] = js.undefined
     
-    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var navigateToFileEnd: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var navigateToFileEnd: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]]]] = js.native
+    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ TypeofAceBuilds, Unit]]]] = js.undefined
     
     var onBlur: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* event */ _, /* editor */ js.UndefOr[Editor], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
+        ]
+      ] = js.undefined
     
     var onChange: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[_], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]]
+        ]
+      ] = js.undefined
     
-    var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+    var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
     var onCursorChange: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+        ]
+      ] = js.undefined
     
     var onFocus: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* event */ _, /* editor */ js.UndefOr[Editor], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
+        ]
+      ] = js.undefined
     
-    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]] = js.native
+    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]] = js.undefined
     
-    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ Editor, Unit]]]] = js.native
+    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ Editor, Unit]]]] = js.undefined
     
-    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
-    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
     var onSelection: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
+          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSelectionChange: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+        ]
+      ] = js.undefined
     
     var onValidate: js.UndefOr[
         Validator[js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], Unit]]]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var placeholder: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.native
+    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.undefined
     
-    var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.native
+    var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.undefined
     
-    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var style: js.UndefOr[Validator[js.UndefOr[CSSProperties]]] = js.native
+    var style: js.UndefOr[Validator[js.UndefOr[CSSProperties]]] = js.undefined
     
-    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var value: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var value: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
   }
   object ValidationMapIAceEditorPr {
     
@@ -1473,13 +1474,21 @@ object anon {
       def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: Validator[js.UndefOr[js.Function2[/* event */ _, /* editor */ js.UndefOr[Editor], Unit]]]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      def setOnBlur(
+        value: Validator[
+              js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
+            ]
+      ): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnChange(value: Validator[js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      def setOnChange(
+        value: Validator[
+              js.UndefOr[js.Function2[/* value */ String, /* event */ js.UndefOr[js.Any], Unit]]
+            ]
+      ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -1491,19 +1500,27 @@ object anon {
       def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
       @scala.inline
-      def setOnCursorChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
+      def setOnCursorChange(
+        value: Validator[
+              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+            ]
+      ): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: Validator[js.UndefOr[js.Function2[/* event */ _, /* editor */ js.UndefOr[Editor], Unit]]]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+      def setOnFocus(
+        value: Validator[
+              js.UndefOr[js.Function2[/* event */ js.Any, /* editor */ js.UndefOr[Editor], Unit]]
+            ]
+      ): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+      def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
@@ -1529,12 +1546,16 @@ object anon {
       @scala.inline
       def setOnSelection(
         value: Validator[
-              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
+              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
             ]
       ): Self = StObject.set(x, "onSelection", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectionChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
+      def setOnSelectionChange(
+        value: Validator[
+              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+            ]
+      ): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
@@ -1623,72 +1644,71 @@ object anon {
   }
   
   /* Inlined prop-types.prop-types.ValidationMap<react-ace.react-ace/lib/diff.IDiffEditorProps> */
-  @js.native
   trait ValidationMapIDiffEditorP extends StObject {
     
-    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var editorProps: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.native
+    var editorProps: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var fontSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var fontSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
     var onChange: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
+          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
-    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
-    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
-    var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.native
+    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.undefined
     
-    var setOptions: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.native
+    var setOptions: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.undefined
     
-    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var splits: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var splits: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var style: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.native
+    var style: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.undefined
     
-    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.native
+    var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
     
-    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
   }
   object ValidationMapIDiffEditorP {
     
@@ -1782,7 +1802,7 @@ object anon {
       @scala.inline
       def setOnChange(
         value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
+              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
             ]
       ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
@@ -1888,108 +1908,111 @@ object anon {
   }
   
   /* Inlined prop-types.prop-types.ValidationMap<react-ace.react-ace/lib/split.ISplitEditorProps> */
-  @js.native
   trait ValidationMapISplitEditor extends StObject {
     
-    var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]] = js.native
+    var annotations: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]] = js.undefined
     
-    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var className: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.native
+    var commands: js.UndefOr[Validator[js.UndefOr[js.Array[ICommand]]]] = js.undefined
     
-    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var cursorStart: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var debounceChangePeriod: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.native
+    var defaultValue: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
     
-    var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.native
+    var editorProps: js.UndefOr[Validator[js.UndefOr[IEditorProps]]] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Validator[js.UndefOr[Boolean | js.Array[String]]]] = js.undefined
     
-    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var focus: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.native
+    var fontSize: js.UndefOr[Validator[js.UndefOr[Double | String]]] = js.undefined
     
-    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var height: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var highlightActiveLine: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var keyboardHandler: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var markers: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IMarker]]]]] = js.native
+    var markers: js.UndefOr[Validator[js.UndefOr[js.Array[js.Array[IMarker]]]]] = js.undefined
     
-    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var maxLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var minLines: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var mode: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var name: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]] = js.native
+    var onBeforeLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* ace */ js.Any, Unit]]]] = js.undefined
     
-    var onBlur: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.native
+    var onBlur: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
     
     var onChange: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
+          js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+    var onCopy: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
     var onCursorChange: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+        ]
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.native
+    var onFocus: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ Event, Unit]]]] = js.undefined
     
-    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]] = js.native
+    var onInput: js.UndefOr[Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]] = js.undefined
     
-    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+    var onLoad: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
-    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.native
+    var onPaste: js.UndefOr[Validator[js.UndefOr[js.Function1[/* value */ String, Unit]]]] = js.undefined
     
-    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.native
+    var onScroll: js.UndefOr[Validator[js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]]]] = js.undefined
     
     var onSelection: js.UndefOr[
         Validator[
-          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
+          js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onSelectionChange: js.UndefOr[
-        Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]
-      ] = js.native
+        Validator[
+          js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+        ]
+      ] = js.undefined
     
-    var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var orientation: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var readOnly: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.native
+    var scrollMargin: js.UndefOr[Validator[js.UndefOr[js.Array[Double]]]] = js.undefined
     
-    var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.native
+    var setOptions: js.UndefOr[Validator[js.UndefOr[IAceOptions]]] = js.undefined
     
-    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showGutter: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var showPrintMargin: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
     
-    var splits: js.UndefOr[Validator[Double]] = js.native
+    var splits: js.UndefOr[Validator[Double]] = js.undefined
     
-    var style: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.native
+    var style: js.UndefOr[Validator[js.UndefOr[js.Object]]] = js.undefined
     
-    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.native
+    var tabSize: js.UndefOr[Validator[js.UndefOr[Double]]] = js.undefined
     
-    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var theme: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.native
+    var value: js.UndefOr[Validator[js.UndefOr[js.Array[String]]]] = js.undefined
     
-    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.native
+    var width: js.UndefOr[Validator[js.UndefOr[String]]] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.native
+    var wrapEnabled: js.UndefOr[Validator[js.UndefOr[Boolean]]] = js.undefined
   }
   object ValidationMapISplitEditor {
     
@@ -2117,7 +2140,7 @@ object anon {
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setOnBeforeLoad(value: Validator[js.UndefOr[js.Function1[/* ace */ _, Unit]]]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
+      def setOnBeforeLoad(value: Validator[js.UndefOr[js.Function1[/* ace */ js.Any, Unit]]]): Self = StObject.set(x, "onBeforeLoad", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnBeforeLoadUndefined: Self = StObject.set(x, "onBeforeLoad", js.undefined)
@@ -2131,7 +2154,7 @@ object anon {
       @scala.inline
       def setOnChange(
         value: Validator[
-              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[_], Unit]]
+              js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]]
             ]
       ): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
@@ -2145,7 +2168,11 @@ object anon {
       def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
       
       @scala.inline
-      def setOnCursorChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
+      def setOnCursorChange(
+        value: Validator[
+              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+            ]
+      ): Self = StObject.set(x, "onCursorChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnCursorChangeUndefined: Self = StObject.set(x, "onCursorChange", js.undefined)
@@ -2157,7 +2184,7 @@ object anon {
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+      def setOnInput(value: Validator[js.UndefOr[js.Function1[/* event */ js.UndefOr[js.Any], Unit]]]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
@@ -2183,12 +2210,16 @@ object anon {
       @scala.inline
       def setOnSelection(
         value: Validator[
-              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[_], Unit]]
+              js.UndefOr[js.Function2[/* selectedText */ String, /* event */ js.UndefOr[js.Any], Unit]]
             ]
       ): Self = StObject.set(x, "onSelection", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectionChange(value: Validator[js.UndefOr[js.Function2[/* value */ _, /* event */ js.UndefOr[_], Unit]]]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
+      def setOnSelectionChange(
+        value: Validator[
+              js.UndefOr[js.Function2[/* value */ js.Any, /* event */ js.UndefOr[js.Any], Unit]]
+            ]
+      ): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)

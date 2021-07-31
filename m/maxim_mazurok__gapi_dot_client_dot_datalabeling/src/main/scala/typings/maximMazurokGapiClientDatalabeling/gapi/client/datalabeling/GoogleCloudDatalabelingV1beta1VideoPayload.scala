@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1VideoPayload extends StObject {
   
   /** FPS of the video. */
-  var frameRate: js.UndefOr[Double] = js.native
+  var frameRate: js.UndefOr[Double] = js.undefined
   
   /** Video format. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** Signed uri of the video file in the service bucket. */
-  var signedUri: js.UndefOr[String] = js.native
+  var signedUri: js.UndefOr[String] = js.undefined
   
   /** The list of video thumbnails. */
-  var videoThumbnails: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]] = js.native
+  var videoThumbnails: js.UndefOr[js.Array[GoogleCloudDatalabelingV1beta1VideoThumbnail]] = js.undefined
   
   /** Video uri from the user bucket. */
-  var videoUri: js.UndefOr[String] = js.native
+  var videoUri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1VideoPayload {
   

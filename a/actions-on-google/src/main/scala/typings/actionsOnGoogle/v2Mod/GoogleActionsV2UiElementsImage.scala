@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsImage extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait GoogleActionsV2UiElementsImage extends StObject {
     * readers.
     * Required.
     */
-  var accessibilityText: js.UndefOr[String] = js.native
+  var accessibilityText: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the image in pixels.
     * Optional.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * The source url of the image. Images can be JPG, PNG and GIF (animated and
     * non-animated). For example,`https://www.agentx.com/logo.png`. Required.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the image in pixels.
     * Optional.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object GoogleActionsV2UiElementsImage {
   

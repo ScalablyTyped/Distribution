@@ -4,35 +4,33 @@ import typings.angularCore.r3SymbolsMod.SchemaMetadata
 import typings.angularCore.r3SymbolsMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exports[T] extends StObject {
   
   /** List of components to bootstrap. */
-  var bootstrap: js.UndefOr[js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]] = js.native
+  var bootstrap: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
   
   /** List of components, directives, and pipes declared by this module. */
-  var declarations: js.UndefOr[js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]] = js.native
+  var declarations: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
   
   /**
     * List of modules, `ModuleWithProviders`, components, directives, or pipes exported by this
     * module.
     */
-  var exports: js.UndefOr[js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]] = js.native
+  var exports: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
   
   /** Unique ID for the module that is used with `getModuleFactory`. */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** List of modules or `ModuleWithProviders` imported by this module. */
-  var imports: js.UndefOr[js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]] = js.native
+  var imports: js.UndefOr[js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]] = js.undefined
   
   /** The set of schemas that declare elements to be allowed in the NgModule. */
-  var schemas: js.UndefOr[js.Array[SchemaMetadata] | Null] = js.native
+  var schemas: js.UndefOr[js.Array[SchemaMetadata] | Null] = js.undefined
   
   /** Token representing the module. Used by DI. */
-  var `type`: T = js.native
+  var `type`: T
 }
 object Exports {
   
@@ -44,13 +42,13 @@ object Exports {
   }
   
   @scala.inline
-  implicit class ExportsMutableBuilder[Self <: Exports[_], T] (val x: Self with Exports[T]) extends AnyVal {
+  implicit class ExportsMutableBuilder[Self <: Exports[?], T] (val x: Self & Exports[T]) extends AnyVal {
     
     @scala.inline
-    def setBootstrap(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+    def setBootstrap(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBootstrapFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
+    def setBootstrapFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "bootstrap", js.Any.fromFunction0(value))
     
     @scala.inline
     def setBootstrapUndefined: Self = StObject.set(x, "bootstrap", js.undefined)
@@ -59,10 +57,10 @@ object Exports {
     def setBootstrapVarargs(value: Type[js.Any]*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
     
     @scala.inline
-    def setDeclarations(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    def setDeclarations(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDeclarationsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
+    def setDeclarationsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "declarations", js.Any.fromFunction0(value))
     
     @scala.inline
     def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
@@ -71,10 +69,10 @@ object Exports {
     def setDeclarationsVarargs(value: Type[js.Any]*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
     @scala.inline
-    def setExports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    def setExports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExportsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
+    def setExportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "exports", js.Any.fromFunction0(value))
     
     @scala.inline
     def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
@@ -92,10 +90,10 @@ object Exports {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setImports(value: js.Array[Type[_]] | js.Function0[js.Array[Type[_]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Type[js.Any]] | js.Function0[js.Array[Type[js.Any]]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setImportsFunction0(value: () => js.Array[Type[_]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
+    def setImportsFunction0(value: () => js.Array[Type[js.Any]]): Self = StObject.set(x, "imports", js.Any.fromFunction0(value))
     
     @scala.inline
     def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.rest.mod.Interceptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeoutMod extends Shortcut {
@@ -13,12 +12,11 @@ object timeoutMod extends Shortcut {
   @js.native
   val ^ : Interceptor[Config] = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transient: js.UndefOr[Boolean] = js.native
+    var transient: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

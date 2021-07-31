@@ -2,26 +2,24 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedResponseActionConfig extends StObject {
   
   /**
     * The content type. Valid Values: text/plain | text/css | text/html | application/javascript | application/json
     */
-  var ContentType: js.UndefOr[FixedResponseActionContentType] = js.native
+  var ContentType: js.UndefOr[FixedResponseActionContentType] = js.undefined
   
   /**
     * The message.
     */
-  var MessageBody: js.UndefOr[FixedResponseActionMessage] = js.native
+  var MessageBody: js.UndefOr[FixedResponseActionMessage] = js.undefined
   
   /**
     * The HTTP response code (2XX, 4XX, or 5XX).
     */
-  var StatusCode: FixedResponseActionStatusCode = js.native
+  var StatusCode: FixedResponseActionStatusCode
 }
 object FixedResponseActionConfig {
   

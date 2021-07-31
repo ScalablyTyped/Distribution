@@ -4,14 +4,15 @@ import typings.std.Array
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("cycled", JSImport.Namespace)
   @js.native
-  class ^[T] protected () extends Cycled[T] {
+  class ^[T] protected ()
+    extends StObject
+       with Cycled[T] {
     /**
     	Initiates an array subclass with the methods documented below.
     	Since it's an array, you can use all the normal array methods on it.
@@ -55,7 +56,9 @@ object mod {
   }
   
   @js.native
-  trait Cycled[T] extends Array[T] {
+  trait Cycled[T]
+    extends StObject
+       with Array[T] {
     
     /**
     	Returns the current item.

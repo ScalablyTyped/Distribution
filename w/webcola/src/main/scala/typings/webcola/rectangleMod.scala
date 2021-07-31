@@ -7,10 +7,13 @@ import typings.webcola.vpscMod.Constraint
 import typings.webcola.vpscMod.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rectangleMod {
+  
+  @JSImport("webcola/dist/src/rectangle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webcola/dist/src/rectangle", "IndexedVariable")
   @js.native
@@ -28,41 +31,41 @@ object rectangleMod {
     def this(
       nodes: js.Array[GraphNode],
       groups: js.Array[ProjectionGroup],
-      rootGroup: js.UndefOr[scala.Nothing],
-      constraints: js.Array[_]
+      rootGroup: Unit,
+      constraints: js.Array[js.Any]
     ) = this()
     def this(
       nodes: js.Array[GraphNode],
       groups: js.Array[ProjectionGroup],
       rootGroup: ProjectionGroup,
-      constraints: js.Array[_]
+      constraints: js.Array[js.Any]
     ) = this()
     def this(
       nodes: js.Array[GraphNode],
       groups: js.Array[ProjectionGroup],
-      rootGroup: js.UndefOr[scala.Nothing],
-      constraints: js.UndefOr[scala.Nothing],
+      rootGroup: Unit,
+      constraints: js.Array[js.Any],
       avoidOverlaps: Boolean
     ) = this()
     def this(
       nodes: js.Array[GraphNode],
       groups: js.Array[ProjectionGroup],
-      rootGroup: js.UndefOr[scala.Nothing],
-      constraints: js.Array[_],
-      avoidOverlaps: Boolean
-    ) = this()
-    def this(
-      nodes: js.Array[GraphNode],
-      groups: js.Array[ProjectionGroup],
-      rootGroup: ProjectionGroup,
-      constraints: js.UndefOr[scala.Nothing],
+      rootGroup: Unit,
+      constraints: Unit,
       avoidOverlaps: Boolean
     ) = this()
     def this(
       nodes: js.Array[GraphNode],
       groups: js.Array[ProjectionGroup],
       rootGroup: ProjectionGroup,
-      constraints: js.Array[_],
+      constraints: js.Array[js.Any],
+      avoidOverlaps: Boolean
+    ) = this()
+    def this(
+      nodes: js.Array[GraphNode],
+      groups: js.Array[ProjectionGroup],
+      rootGroup: ProjectionGroup,
+      constraints: Unit,
       avoidOverlaps: Boolean
     ) = this()
     
@@ -145,65 +148,60 @@ object rectangleMod {
   /* static members */
   object Rectangle {
     
-    @JSImport("webcola/dist/src/rectangle", "Rectangle.empty")
+    @JSImport("webcola/dist/src/rectangle", "Rectangle")
     @js.native
-    def empty(): Rectangle = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("webcola/dist/src/rectangle", "Rectangle.lineIntersection")
-    @js.native
-    def lineIntersection(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): Point = js.native
+    @scala.inline
+    def empty(): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Rectangle]
+    
+    @scala.inline
+    def lineIntersection(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("lineIntersection")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[Point]
   }
   
-  @JSImport("webcola/dist/src/rectangle", "computeGroupBounds")
-  @js.native
-  def computeGroupBounds(g: ProjectionGroup): Rectangle = js.native
+  @scala.inline
+  def computeGroupBounds(g: ProjectionGroup): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("computeGroupBounds")(g.asInstanceOf[js.Any]).asInstanceOf[Rectangle]
   
-  @JSImport("webcola/dist/src/rectangle", "generateXConstraints")
-  @js.native
-  def generateXConstraints(rs: js.Array[Rectangle], vars: js.Array[Variable]): js.Array[Constraint] = js.native
+  @scala.inline
+  def generateXConstraints(rs: js.Array[Rectangle], vars: js.Array[Variable]): js.Array[Constraint] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateXConstraints")(rs.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[js.Array[Constraint]]
   
-  @JSImport("webcola/dist/src/rectangle", "generateXGroupConstraints")
-  @js.native
-  def generateXGroupConstraints(root: ProjectionGroup): js.Array[Constraint] = js.native
+  @scala.inline
+  def generateXGroupConstraints(root: ProjectionGroup): js.Array[Constraint] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateXGroupConstraints")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Constraint]]
   
-  @JSImport("webcola/dist/src/rectangle", "generateYConstraints")
-  @js.native
-  def generateYConstraints(rs: js.Array[Rectangle], vars: js.Array[Variable]): js.Array[Constraint] = js.native
+  @scala.inline
+  def generateYConstraints(rs: js.Array[Rectangle], vars: js.Array[Variable]): js.Array[Constraint] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateYConstraints")(rs.asInstanceOf[js.Any], vars.asInstanceOf[js.Any])).asInstanceOf[js.Array[Constraint]]
   
-  @JSImport("webcola/dist/src/rectangle", "generateYGroupConstraints")
-  @js.native
-  def generateYGroupConstraints(root: ProjectionGroup): js.Array[Constraint] = js.native
+  @scala.inline
+  def generateYGroupConstraints(root: ProjectionGroup): js.Array[Constraint] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateYGroupConstraints")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[Constraint]]
   
-  @JSImport("webcola/dist/src/rectangle", "makeEdgeBetween")
-  @js.native
-  def makeEdgeBetween(source: Rectangle, target: Rectangle, ah: Double): ArrowStart = js.native
+  @scala.inline
+  def makeEdgeBetween(source: Rectangle, target: Rectangle, ah: Double): ArrowStart = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEdgeBetween")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ah.asInstanceOf[js.Any])).asInstanceOf[ArrowStart]
   
-  @JSImport("webcola/dist/src/rectangle", "makeEdgeTo")
-  @js.native
-  def makeEdgeTo(s: X, target: Rectangle, ah: Double): Point = js.native
+  @scala.inline
+  def makeEdgeTo(s: X, target: Rectangle, ah: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEdgeTo")(s.asInstanceOf[js.Any], target.asInstanceOf[js.Any], ah.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("webcola/dist/src/rectangle", "removeOverlaps")
-  @js.native
-  def removeOverlaps(rs: js.Array[Rectangle]): Unit = js.native
+  @scala.inline
+  def removeOverlaps(rs: js.Array[Rectangle]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeOverlaps")(rs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait GraphNode extends Leaf {
+  trait GraphNode
+    extends StObject
+       with Leaf {
     
-    var fixed: Boolean = js.native
+    var fixed: Boolean
     
-    var fixedWeight: js.UndefOr[Double] = js.native
+    var fixedWeight: js.UndefOr[Double] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var px: Double = js.native
+    var px: Double
     
-    var py: Double = js.native
+    var py: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object GraphNode {
     
@@ -255,12 +253,11 @@ object rectangleMod {
     }
   }
   
-  @js.native
   trait Leaf extends StObject {
     
-    var bounds: Rectangle = js.native
+    var bounds: Rectangle
     
-    var variable: Variable = js.native
+    var variable: Variable
   }
   object Leaf {
     
@@ -281,22 +278,21 @@ object rectangleMod {
     }
   }
   
-  @js.native
   trait ProjectionGroup extends StObject {
     
-    var bounds: Rectangle = js.native
+    var bounds: Rectangle
     
-    var groups: js.Array[ProjectionGroup] = js.native
+    var groups: js.Array[ProjectionGroup]
     
-    var leaves: js.Array[Leaf] = js.native
+    var leaves: js.Array[Leaf]
     
-    var maxVar: Variable = js.native
+    var maxVar: Variable
     
-    var minVar: Variable = js.native
+    var minVar: Variable
     
-    var padding: Double = js.native
+    var padding: Double
     
-    var stiffness: Double = js.native
+    var stiffness: Double
   }
   object ProjectionGroup {
     

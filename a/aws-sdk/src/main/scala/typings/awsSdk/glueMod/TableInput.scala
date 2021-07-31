@@ -2,76 +2,74 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableInput extends StObject {
   
   /**
     * A description of the table.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The last time that the table was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.native
+  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time that column statistics were computed for this table.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.native
+  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The table name. For Hive compatibility, this is folded to lowercase when it is stored.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The table owner.
     */
-  var Owner: js.UndefOr[NameString] = js.native
+  var Owner: js.UndefOr[NameString] = js.undefined
   
   /**
     * These key-value pairs define properties associated with the table.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys. When you create a table used by Amazon Athena, and you do not specify any partitionKeys, you must at least set the value of partitionKeys to an empty list. For example:  "PartitionKeys": [] 
     */
-  var PartitionKeys: js.UndefOr[ColumnList] = js.native
+  var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
   
   /**
     * The retention time for this table.
     */
-  var Retention: js.UndefOr[NonNegativeInteger] = js.native
+  var Retention: js.UndefOr[NonNegativeInteger] = js.undefined
   
   /**
     * A storage descriptor containing information about the physical storage of this table.
     */
-  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.native
+  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.undefined
   
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */
-  var TableType: js.UndefOr[TableTypeString] = js.native
+  var TableType: js.UndefOr[TableTypeString] = js.undefined
   
   /**
     * A TableIdentifier structure that describes a target table for resource linking.
     */
-  var TargetTable: js.UndefOr[TableIdentifier] = js.native
+  var TargetTable: js.UndefOr[TableIdentifier] = js.undefined
   
   /**
     * If the table is a view, the expanded text of the view; otherwise null.
     */
-  var ViewExpandedText: js.UndefOr[ViewTextString] = js.native
+  var ViewExpandedText: js.UndefOr[ViewTextString] = js.undefined
   
   /**
     * If the table is a view, the original text of the view; otherwise null.
     */
-  var ViewOriginalText: js.UndefOr[ViewTextString] = js.native
+  var ViewOriginalText: js.UndefOr[ViewTextString] = js.undefined
 }
 object TableInput {
   

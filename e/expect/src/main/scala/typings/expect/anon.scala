@@ -9,19 +9,17 @@ import typings.jestTypes.configMod.Path
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actual extends StObject {
     
-    var actual: String | Double = js.native
+    var actual: String | Double
     
-    var error: Error = js.native
+    var error: Error
     
-    var expected: String = js.native
+    var expected: String
   }
   object Actual {
     
@@ -46,14 +44,13 @@ object anon {
   }
   
   /* Inlined std.Partial<expect.expect/build/types.MatcherState> */
-  @js.native
   trait PartialMatcherState extends StObject {
     
-    var assertionCalls: js.UndefOr[Double] = js.native
+    var assertionCalls: js.UndefOr[Double] = js.undefined
     
-    var currentTestName: js.UndefOr[String] = js.native
+    var currentTestName: js.UndefOr[String] = js.undefined
     
-    var dontThrow: js.UndefOr[js.Function0[Unit]] = js.native
+    var dontThrow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     @JSName("equals")
     var equals_FPartialMatcherState: js.UndefOr[
@@ -64,29 +61,29 @@ object anon {
           /* strictCheck */ js.UndefOr[Boolean], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
-    var expectedAssertionsNumber: js.UndefOr[Double | Null] = js.native
+    var expectedAssertionsNumber: js.UndefOr[Double | Null] = js.undefined
     
-    var expectedAssertionsNumberError: js.UndefOr[Error] = js.native
+    var expectedAssertionsNumberError: js.UndefOr[Error] = js.undefined
     
-    var isExpectingAssertions: js.UndefOr[Boolean] = js.native
+    var isExpectingAssertions: js.UndefOr[Boolean] = js.undefined
     
-    var isExpectingAssertionsError: js.UndefOr[Error] = js.native
+    var isExpectingAssertionsError: js.UndefOr[Error] = js.undefined
     
-    var isNot: js.UndefOr[Boolean] = js.native
+    var isNot: js.UndefOr[Boolean] = js.undefined
     
-    var promise: js.UndefOr[String] = js.native
+    var promise: js.UndefOr[String] = js.undefined
     
-    var suppressedErrors: js.UndefOr[js.Array[Error]] = js.native
+    var suppressedErrors: js.UndefOr[js.Array[Error]] = js.undefined
     
-    var testPath: js.UndefOr[Path] = js.native
+    var testPath: js.UndefOr[Path] = js.undefined
     
-    var utils: js.UndefOr[readonlyprintExpectedvalu] = js.native
+    var utils: js.UndefOr[readonlyprintExpectedvalu] = js.undefined
   }
   object PartialMatcherState {
     
@@ -200,19 +197,29 @@ object anon {
   }
   
   @js.native
-  trait TypeofBOLDWEIGHT extends Chalk
+  trait TypeofBOLDWEIGHT
+    extends StObject
+       with Chalk
   
   @js.native
-  trait TypeofDIMCOLOR extends Chalk
+  trait TypeofDIMCOLOR
+    extends StObject
+       with Chalk
   
   @js.native
-  trait TypeofEXPECTEDCOLOR extends Chalk
+  trait TypeofEXPECTEDCOLOR
+    extends StObject
+       with Chalk
   
   @js.native
-  trait TypeofINVERTEDCOLOR extends Chalk
+  trait TypeofINVERTEDCOLOR
+    extends StObject
+       with Chalk
   
   @js.native
-  trait TypeofRECEIVEDCOLOR extends Chalk
+  trait TypeofRECEIVEDCOLOR
+    extends StObject
+       with Chalk
   
   /* Inlined {readonly printExpected (value : unknown): string,  readonly BOLD_WEIGHT :{ readonly ^ :chalk.chalk.Chalk},  readonly EXPECTED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly ensureActualIsNumber (actual : unknown, matcherName : string): void, readonly ensureActualIsNumber (actual : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly getLabelPrinter (strings : ...string): jest-matcher-utils.jest-matcher-utils.PrintLabel, readonly pluralize (word : string, count : number): string, readonly printDiffOrStringify (expected : unknown, received : unknown, expectedLabel : string, receivedLabel : string, expand : boolean): string, readonly ensureNoExpected (expected : unknown, matcherName : string): void, readonly ensureNoExpected (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNonNegativeInteger (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly SUGGEST_TO_CONTAIN_EQUAL :string, readonly matcherHint (matcherName : string): string, readonly matcherHint (matcherName : string, received : string): string, readonly matcherHint (matcherName : string, received : string, expected : string): string, readonly matcherHint (matcherName : string, received : undefined, expected : string): string, readonly matcherHint (matcherName : string, received : string, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : string, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly matcherHint (matcherName : string, received : undefined, expected : undefined, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): string, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string): void, readonly ensureNumbers (actual : unknown, expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void, readonly printReceived (object : unknown): string, readonly diff (a : unknown, b : unknown): string | null, readonly diff (a : unknown, b : unknown, options : jest-diff.jest-diff/build/types.DiffOptions): string | null,  readonly DIM_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string): void, readonly ensureExpectedIsNumber (expected : unknown, matcherName : string, options : jest-matcher-utils.jest-matcher-utils.MatcherHintOptions): void,  readonly INVERTED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly printWithType (name : string, value : unknown, print : (value : unknown): string): string, readonly highlightTrailingWhitespace (text : string): string, readonly matcherErrorMessage (hint : string, generic : string): string, readonly matcherErrorMessage (hint : string, generic : string, specific : string): string,  readonly RECEIVED_COLOR :{ readonly ^ :chalk.chalk.Chalk}, readonly stringify (object : unknown): string, readonly stringify (object : unknown, maxDepth : number): string} & {  iterableEquality :expect.expect/build/types.Tester,   subsetEquality :expect.expect/build/types.Tester} */
   @js.native
@@ -258,28 +265,13 @@ object anon {
     def matcherErrorMessage(hint: String, generic: String, specific: String): String = js.native
     
     def matcherHint(matcherName: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      options: MatcherHintOptions
-    ): String = js.native
-    def matcherHint(matcherName: String, received: js.UndefOr[scala.Nothing], expected: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: js.UndefOr[scala.Nothing],
-      expected: String,
-      options: MatcherHintOptions
-    ): String = js.native
     def matcherHint(matcherName: String, received: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: String,
-      expected: js.UndefOr[scala.Nothing],
-      options: MatcherHintOptions
-    ): String = js.native
     def matcherHint(matcherName: String, received: String, expected: String): String = js.native
     def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: String, expected: Unit, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: String): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: String, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: Unit, options: MatcherHintOptions): String = js.native
     
     def pluralize(word: String, count: Double): String = js.native
     

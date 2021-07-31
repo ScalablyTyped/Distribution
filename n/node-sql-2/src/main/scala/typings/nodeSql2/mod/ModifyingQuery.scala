@@ -2,15 +2,15 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModifyingQuery extends Executable {
+trait ModifyingQuery
+  extends StObject
+     with Executable {
   
-  def returning[U](nodes: js.Any*): Query[U] = js.native
+  def returning[U](nodes: js.Any*): Query[U]
   
-  def where(nodes: js.Any*): ModifyingQuery = js.native
+  def where(nodes: js.Any*): ModifyingQuery
 }
 object ModifyingQuery {
   

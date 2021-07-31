@@ -2,26 +2,26 @@ package typings.openapiFactory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-factory", JSImport.Namespace)
   @js.native
-  class ^ protected () extends OpenApi {
+  class ^ protected ()
+    extends StObject
+       with OpenApi {
     def this(options: ApiOptions) = this()
     def this(options: ApiOptions, overrideLogger: js.Function0[Unit]) = this()
   }
   
-  @js.native
   trait ApiOptions extends StObject {
     
-    var errorMiddleware: js.UndefOr[js.Function0[_]] = js.native
+    var errorMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var requestMiddleware: js.UndefOr[js.Function0[_]] = js.native
+    var requestMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var responseMiddleware: js.UndefOr[js.Function0[_]] = js.native
+    var responseMiddleware: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object ApiOptions {
     
@@ -35,29 +35,28 @@ object mod {
     implicit class ApiOptionsMutableBuilder[Self <: ApiOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setErrorMiddleware(value: () => _): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
+      def setErrorMiddleware(value: () => js.Any): Self = StObject.set(x, "errorMiddleware", js.Any.fromFunction0(value))
       
       @scala.inline
       def setErrorMiddlewareUndefined: Self = StObject.set(x, "errorMiddleware", js.undefined)
       
       @scala.inline
-      def setRequestMiddleware(value: () => _): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
+      def setRequestMiddleware(value: () => js.Any): Self = StObject.set(x, "requestMiddleware", js.Any.fromFunction0(value))
       
       @scala.inline
       def setRequestMiddlewareUndefined: Self = StObject.set(x, "requestMiddleware", js.undefined)
       
       @scala.inline
-      def setResponseMiddleware(value: () => _): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
+      def setResponseMiddleware(value: () => js.Any): Self = StObject.set(x, "responseMiddleware", js.Any.fromFunction0(value))
       
       @scala.inline
       def setResponseMiddlewareUndefined: Self = StObject.set(x, "responseMiddleware", js.undefined)
     }
   }
   
-  @js.native
   trait HttpMethodOptions extends StObject {
     
-    var rawBody: js.UndefOr[Boolean] = js.native
+    var rawBody: js.UndefOr[Boolean] = js.undefined
   }
   object HttpMethodOptions {
     
@@ -78,14 +77,13 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpResponse extends StObject {
     
-    var body: js.UndefOr[js.Object | String] = js.native
+    var body: js.UndefOr[js.Object | String] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
   }
   object HttpResponse {
     
@@ -151,17 +149,21 @@ object mod {
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
     
-    def handler(event: js.Object, context: js.Object): js.Promise[_] = js.native
+    def handler(event: js.Object, context: js.Object): js.Promise[js.Any] = js.native
     
     def head(
       route: String,
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
-    def head(route: String, options: HttpMethodOptions, handler: js.Function1[/* req */ js.UndefOr[js.Any], _]): Unit = js.native
+    def head(
+      route: String,
+      options: HttpMethodOptions,
+      handler: js.Function1[/* req */ js.UndefOr[js.Any], js.Any]
+    ): Unit = js.native
     
-    def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): Unit = js.native
+    def onEvent(onEventFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
     
-    def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): Unit = js.native
+    def onSchedule(onScheduleFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
     
     def options(
       route: String,
@@ -203,6 +205,6 @@ object mod {
       handler: js.Function1[/* req */ js.UndefOr[js.Object], HttpResponse | js.Promise[HttpResponse]]
     ): Unit = js.native
     
-    def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[_]]): Unit = js.native
+    def setAuthorizer(authorizerFunc: js.Function1[/* req */ js.UndefOr[js.Any], js.Promise[js.Any]]): Unit = js.native
   }
 }

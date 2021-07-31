@@ -2,23 +2,21 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemPokemonChange extends StObject {
   
-  var change: js.UndefOr[String] = js.native
+  var change: js.UndefOr[String] = js.undefined
   
-  var change_by: js.UndefOr[Double] = js.native
+  var change_by: js.UndefOr[Double] = js.undefined
   
-  var change_by_percent: js.UndefOr[Double] = js.native
+  var change_by_percent: js.UndefOr[Double] = js.undefined
   
-  var conditions: js.UndefOr[js.Array[String]] = js.native
+  var conditions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var field: String = js.native
+  var field: String
   
-  var revive: js.UndefOr[Boolean] = js.native
+  var revive: js.UndefOr[Boolean] = js.undefined
 }
 object ItemPokemonChange {
   

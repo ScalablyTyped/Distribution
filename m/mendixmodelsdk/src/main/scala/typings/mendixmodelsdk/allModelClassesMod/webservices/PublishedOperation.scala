@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedOperation")
@@ -37,9 +36,8 @@ object PublishedOperation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedOperation.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation]
   
   /**
     * Creates and returns a new PublishedOperation instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object PublishedOperation {
     * of the parent VersionedService element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedOperation.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.VersionedService): typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.VersionedService): typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.PublishedOperation]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "webservices.PublishedOperation.structureTypeName")

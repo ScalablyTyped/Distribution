@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait TextMetrics extends StObject {
   
   /**
@@ -24,63 +22,63 @@ trait TextMetrics extends StObject {
     *
     * @member {PIXI.IFontMetrics} PIXI.TextMetrics#fontProperties
     */
-  var fontProperties: IFontMetrics = js.native
+  var fontProperties: IFontMetrics
   
   /**
     * The measured height of the text
     *
     * @member {number} PIXI.TextMetrics#height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The measured line height for this style
     *
     * @member {number} PIXI.TextMetrics#lineHeight
     */
-  var lineHeight: Double = js.native
+  var lineHeight: Double
   
   /**
     * An array of the line widths for each line matched to `lines`
     *
     * @member {number[]} PIXI.TextMetrics#lineWidths
     */
-  var lineWidths: js.Array[Double] = js.native
+  var lineWidths: js.Array[Double]
   
   /**
     * An array of lines of the text broken by new lines and wrapping is specified in style
     *
     * @member {string[]} PIXI.TextMetrics#lines
     */
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
   /**
     * The maximum line width for all measured lines
     *
     * @member {number} PIXI.TextMetrics#maxLineWidth
     */
-  var maxLineWidth: Double = js.native
+  var maxLineWidth: Double
   
   /**
     * The style that was measured
     *
     * @member {PIXI.TextStyle} PIXI.TextMetrics#style
     */
-  var style: TextStyle = js.native
+  var style: TextStyle
   
   /**
     * The text that was measured
     *
     * @member {string} PIXI.TextMetrics#text
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The measured width of the text
     *
     * @member {number} PIXI.TextMetrics#width
     */
-  var width: Double = js.native
+  var width: Double
 }
 object TextMetrics {
   

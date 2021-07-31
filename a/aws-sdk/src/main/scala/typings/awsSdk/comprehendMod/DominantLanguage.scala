@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DominantLanguage extends StObject {
   
   /**
     * The RFC 5646 language code for the dominant language. For more information about RFC 5646, see Tags for Identifying Languages on the IETF Tools web site.
     */
-  var LanguageCode: js.UndefOr[String] = js.native
+  var LanguageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend has in the accuracy of the detection.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
 }
 object DominantLanguage {
   

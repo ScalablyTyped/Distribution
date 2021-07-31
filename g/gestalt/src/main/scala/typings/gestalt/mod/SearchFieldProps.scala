@@ -10,31 +10,29 @@ import typings.gestalt.gestaltStrings.on
 import typings.gestalt.gestaltStrings.username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchFieldProps extends StObject {
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
-  var autoComplete: js.UndefOr[on | off | username | name] = js.native
+  var autoComplete: js.UndefOr[on | off | username | name] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ `0`, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* args */ `0`, Unit]] = js.undefined
   
-  def onChange(args: SyntheticEvent): Unit = js.native
+  def onChange(args: SyntheticEvent): Unit
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ SyntheticEvent, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* args */ SyntheticEvent, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SearchFieldProps {
   

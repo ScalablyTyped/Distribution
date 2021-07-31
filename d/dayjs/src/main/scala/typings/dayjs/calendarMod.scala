@@ -5,7 +5,6 @@ import typings.dayjs.esmMod.ConfigType
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMod extends Shortcut {
@@ -26,8 +25,9 @@ object calendarMod extends Shortcut {
     trait Dayjs extends StObject {
       
       def calendar(): String = js.native
-      def calendar(referenceTime: js.UndefOr[ConfigType], formats: js.Object): String = js.native
+      def calendar(referenceTime: Unit, formats: js.Object): String = js.native
       def calendar(referenceTime: ConfigType): String = js.native
+      def calendar(referenceTime: ConfigType, formats: js.Object): String = js.native
     }
   }
 }

@@ -2,30 +2,28 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * INxDataPage...
   */
-@js.native
 trait INxDataPage extends StObject {
   
   /**
     * Size and offset of the data in the matrix.
     */
-  var qArea: IRect = js.native
+  var qArea: IRect
   
   /**
     * Is set to true, if the data have been reduced.
     * The default value is false.
     */
-  var qIsReduced: Boolean = js.native
+  var qIsReduced: Boolean
   
   /**
     * Array of data.
     */
-  var qMatrix: js.Array[INxCellRows] = js.native
+  var qMatrix: js.Array[INxCellRows]
   
   /**
     * Array of tails.
@@ -34,7 +32,7 @@ trait INxDataPage extends StObject {
     * dimensions can be part of the previous or the next tail.
     * If there is no tail, the array is empty [ ].
     */
-  var qTails: js.Array[INxGroupTail] = js.native
+  var qTails: js.Array[INxGroupTail]
 }
 object INxDataPage {
   

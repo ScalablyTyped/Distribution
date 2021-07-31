@@ -11,9 +11,9 @@ The most popular front-end framework for developing responsive, mobile first pro
 | Full name          | bootstrap |
 | Keywords           | css, sass, mobile-first, responsive, front-end, framework, web |
 | # releases         | 15 |
-| # dependents       | 6369 |
-| # downloads        | 124968256 |
-| # stars            | 314 |
+| # dependents       | 6567 |
+| # downloads        | 131969652 |
+| # stars            | 313 |
 
 ## Links
 - [Homepage](https://getbootstrap.com/)

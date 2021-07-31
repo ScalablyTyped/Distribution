@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RecordOperation extends CommsOperation {
+trait RecordOperation
+  extends StObject
+     with CommsOperation {
   
   // The access token required to retrieve the recording.
-  var recordingAccessToken: js.UndefOr[NullableOption[String]] = js.native
+  var recordingAccessToken: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The location where the recording is located.
-  var recordingLocation: js.UndefOr[NullableOption[String]] = js.native
+  var recordingLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object RecordOperation {
   

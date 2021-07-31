@@ -8,7 +8,6 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderSliderMod {
@@ -49,7 +48,7 @@ object sliderSliderMod {
     
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def getEvents(): (Record[String, js.Array[EventType]]) with js.Any = js.native
+    override def getEvents(): (Record[String, js.Array[EventType]]) & js.Any = js.native
     
     var maxHandler: js.Any = js.native
     
@@ -62,13 +61,13 @@ object sliderSliderMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(): this.type with js.Any = js.native
+    override def off(): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String): this.type with js.Any = js.native
+    override def off(evt: String): this.type & js.Any = js.native
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def off(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def off(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     /**
       * 监听一个事件
@@ -78,7 +77,7 @@ object sliderSliderMod {
       */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
-    override def on(evt: String, callback: js.Function): this.type with js.Any = js.native
+    override def on(evt: String, callback: js.Function): this.type & js.Any = js.native
     
     var onMouseDown: js.Any = js.native
     
@@ -99,38 +98,39 @@ object sliderSliderMod {
     var updateUI: js.Any = js.native
   }
   
-  @js.native
-  trait SliderCfg extends GroupComponentCfg {
+  trait SliderCfg
+    extends StObject
+       with GroupComponentCfg {
     
-    val backgroundStyle: js.UndefOr[js.Any] = js.native
+    val backgroundStyle: js.UndefOr[js.Any] = js.undefined
     
-    val end: js.UndefOr[Double] = js.native
+    val end: js.UndefOr[Double] = js.undefined
     
-    val foregroundStyle: js.UndefOr[js.Any] = js.native
+    val foregroundStyle: js.UndefOr[js.Any] = js.undefined
     
-    val handlerStyle: js.UndefOr[js.Any] = js.native
+    val handlerStyle: js.UndefOr[js.Any] = js.undefined
     
-    val height: Double = js.native
+    val height: Double
     
-    val maxLimit: js.UndefOr[Double] = js.native
+    val maxLimit: js.UndefOr[Double] = js.undefined
     
-    val maxText: js.UndefOr[String] = js.native
+    val maxText: js.UndefOr[String] = js.undefined
     
-    val minLimit: js.UndefOr[Double] = js.native
+    val minLimit: js.UndefOr[Double] = js.undefined
     
-    val minText: js.UndefOr[String] = js.native
+    val minText: js.UndefOr[String] = js.undefined
     
-    val start: js.UndefOr[Double] = js.native
+    val start: js.UndefOr[Double] = js.undefined
     
-    val textStyle: js.UndefOr[js.Any] = js.native
+    val textStyle: js.UndefOr[js.Any] = js.undefined
     
-    val trendCfg: js.UndefOr[TrendCfg] = js.native
+    val trendCfg: js.UndefOr[TrendCfg] = js.undefined
     
-    val width: Double = js.native
+    val width: Double
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object SliderCfg {
     
@@ -223,20 +223,19 @@ object sliderSliderMod {
     }
   }
   
-  @js.native
   trait TrendCfg extends StObject {
     
-    val areaStyle: js.UndefOr[js.Object] = js.native
+    val areaStyle: js.UndefOr[js.Object] = js.undefined
     
-    val backgroundStyle: js.UndefOr[js.Object] = js.native
+    val backgroundStyle: js.UndefOr[js.Object] = js.undefined
     
-    val data: js.Array[Double] = js.native
+    val data: js.Array[Double]
     
-    val isArea: js.UndefOr[Boolean] = js.native
+    val isArea: js.UndefOr[Boolean] = js.undefined
     
-    val lineStyle: js.UndefOr[js.Object] = js.native
+    val lineStyle: js.UndefOr[js.Object] = js.undefined
     
-    val smooth: js.UndefOr[Boolean] = js.native
+    val smooth: js.UndefOr[Boolean] = js.undefined
   }
   object TrendCfg {
     

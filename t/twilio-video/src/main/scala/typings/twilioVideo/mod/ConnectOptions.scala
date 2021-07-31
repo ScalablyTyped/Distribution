@@ -14,53 +14,51 @@ import typings.twilioVideo.twilioVideoStrings.us1
 import typings.twilioVideo.twilioVideoStrings.us2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectOptions extends StObject {
   
-  var abortOnIceServersTimeout: js.UndefOr[Boolean] = js.native
+  var abortOnIceServersTimeout: js.UndefOr[Boolean] = js.undefined
   
-  var audio: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.native
+  var audio: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.undefined
   
-  var automaticSubscription: js.UndefOr[Boolean] = js.native
+  var automaticSubscription: js.UndefOr[Boolean] = js.undefined
   
-  var bandwidthProfile: js.UndefOr[BandwidthProfileOptions] = js.native
+  var bandwidthProfile: js.UndefOr[BandwidthProfileOptions] = js.undefined
   
-  var dominantSpeaker: js.UndefOr[Boolean] = js.native
+  var dominantSpeaker: js.UndefOr[Boolean] = js.undefined
   
-  var dscpTagging: js.UndefOr[Boolean] = js.native
+  var dscpTagging: js.UndefOr[Boolean] = js.undefined
   
-  var enableDscp: js.UndefOr[Boolean] = js.native
+  var enableDscp: js.UndefOr[Boolean] = js.undefined
   
-  var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.native
+  var iceServers: js.UndefOr[js.Array[RTCIceServer]] = js.undefined
   
-  var iceServersTimeout: js.UndefOr[Double] = js.native
+  var iceServersTimeout: js.UndefOr[Double] = js.undefined
   
-  var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.native
+  var iceTransportPolicy: js.UndefOr[RTCIceTransportPolicy] = js.undefined
   
-  var insights: js.UndefOr[Boolean] = js.native
+  var insights: js.UndefOr[Boolean] = js.undefined
   
-  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.native
+  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.undefined
   
-  var maxAudioBitrate: js.UndefOr[Double | Null] = js.native
+  var maxAudioBitrate: js.UndefOr[Double | Null] = js.undefined
   
-  var maxVideoBitrate: js.UndefOr[Double | Null] = js.native
+  var maxVideoBitrate: js.UndefOr[Double | Null] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var networkQuality: js.UndefOr[Boolean | NetworkQualityConfiguration] = js.native
+  var networkQuality: js.UndefOr[Boolean | NetworkQualityConfiguration] = js.undefined
   
-  var preferredAudioCodecs: js.UndefOr[js.Array[AudioCodec]] = js.native
+  var preferredAudioCodecs: js.UndefOr[js.Array[AudioCodec]] = js.undefined
   
-  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings]] = js.native
+  var preferredVideoCodecs: js.UndefOr[js.Array[VideoCodec | VideoCodecSettings | VP8CodecSettings]] = js.undefined
   
-  var region: js.UndefOr[au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll] = js.native
+  var region: js.UndefOr[au1 | br1 | ie1 | de1 | jp1 | sg1 | us1 | us2 | gll] = js.undefined
   
-  var tracks: js.UndefOr[js.Array[LocalTrack | MediaStreamTrack]] = js.native
+  var tracks: js.UndefOr[js.Array[LocalTrack | MediaStreamTrack]] = js.undefined
   
-  var video: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.native
+  var video: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.undefined
 }
 object ConnectOptions {
   

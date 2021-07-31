@@ -4,19 +4,17 @@ import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import typings.vegaLite.srcTypeMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeUnit extends StObject {
   
-  var timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams = js.native
+  var timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams
   
-  var `type`: js.UndefOr[Type] = js.native
+  var `type`: js.UndefOr[Type] = js.undefined
   
-  var undefinedIfExprNotRequired: js.UndefOr[Boolean] = js.native
+  var undefinedIfExprNotRequired: js.UndefOr[Boolean] = js.undefined
   
-  var wrapTime: js.UndefOr[Boolean] = js.native
+  var wrapTime: js.UndefOr[Boolean] = js.undefined
 }
 object TimeUnit {
   

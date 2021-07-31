@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HoverStyle extends StObject {
   
-  var border: js.UndefOr[ColorVisible] = js.native
+  var border: js.UndefOr[ColorVisible] = js.undefined
   
-  var hoverStyle: js.UndefOr[Border] = js.native
+  var hoverStyle: js.UndefOr[Border] = js.undefined
   
-  var selectionStyle: js.UndefOr[Border] = js.native
+  var selectionStyle: js.UndefOr[Border] = js.undefined
 }
 object HoverStyle {
   

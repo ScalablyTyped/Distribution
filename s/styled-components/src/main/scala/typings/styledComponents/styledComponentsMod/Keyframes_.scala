@@ -2,13 +2,13 @@ package typings.styledComponents.styledComponentsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Keyframes_ extends _InterpolationValue {
+trait Keyframes_
+  extends StObject
+     with _InterpolationValue {
   
-  def getName(): String = js.native
+  def getName(): String
 }
 object Keyframes_ {
   

@@ -10,9 +10,9 @@ PostCSS plugin to import CSS files
 | ------------------ | :-------------: |
 | Full name          | postcss-import |
 | Keywords           | css, postcss, postcss-plugin, import, node modules, npm |
-| # releases         | 2 |
-| # dependents       | 1205 |
-| # downloads        | 112646284 |
+| # releases         | 3 |
+| # dependents       | 1275 |
+| # downloads        | 124079771 |
 | # stars            | 25 |
 
 ## Links

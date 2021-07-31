@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.events.Event
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -36,12 +35,7 @@ trait Typeofclipboard extends StObject {
     * @param [callback]
     */
   def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = js.native
-  def setImageData(
-    imageData: ArrayBuffer,
-    `type`: ImageType,
-    additionalItems: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): Unit = js.native
+  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: Unit, callback: js.Function0[Unit]): Unit = js.native
   def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = js.native
   def setImageData(
     imageData: ArrayBuffer,

@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputConfiguration extends StObject {
   
   /**
     * Input source ID. You can get this ID by calling the DescribeApplication operation.
     */
-  var Id: typings.awsSdk.kinesisanalyticsMod.Id = js.native
+  var Id: typings.awsSdk.kinesisanalyticsMod.Id
   
   /**
     * Point at which you want the application to start processing records from the streaming source.
     */
-  var InputStartingPositionConfiguration: typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration = js.native
+  var InputStartingPositionConfiguration: typings.awsSdk.kinesisanalyticsMod.InputStartingPositionConfiguration
 }
 object InputConfiguration {
   

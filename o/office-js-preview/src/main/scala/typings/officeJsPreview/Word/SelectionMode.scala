@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,17 +19,23 @@ object SelectionMode extends StObject {
     * The cursor is at the end of the selection (just after the end of the selected range).
     */
   @js.native
-  sealed trait end extends SelectionMode
+  sealed trait end
+    extends StObject
+       with SelectionMode
   
   /**
     * The entire range is selected.
     */
   @js.native
-  sealed trait select extends SelectionMode
+  sealed trait select
+    extends StObject
+       with SelectionMode
   
   /**
     * The cursor is at the beginning of the selection (just before the start of the selected range).
     */
   @js.native
-  sealed trait start extends SelectionMode
+  sealed trait start
+    extends StObject
+       with SelectionMode
 }

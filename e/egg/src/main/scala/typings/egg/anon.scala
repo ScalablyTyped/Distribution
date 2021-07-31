@@ -17,19 +17,17 @@ import typings.urllib.mod.HttpClientResponse
 import typings.urllib.mod.RequestOptions2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrayLimit extends StObject {
     
-    var arrayLimit: Double = js.native
+    var arrayLimit: Double
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var parameterLimit: Double = js.native
+    var parameterLimit: Double
   }
   object ArrayLimit {
     
@@ -53,16 +51,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
-    var callback: String = js.native
+    var callback: String
     
-    var csrf: Boolean = js.native
+    var csrf: Boolean
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var whiteList: String | RegExp | (js.Array[String | RegExp]) = js.native
+    var whiteList: String | RegExp | (js.Array[String | RegExp])
   }
   object Callback {
     
@@ -97,33 +94,32 @@ object anon {
     }
   }
   
-  @js.native
   trait CookieField extends StObject {
     
     /**
       * The locale value key in the cookie, default is locale.
       */
-    var cookieField: String = js.native
+    var cookieField: String
     
     /**
       * Locale cookie expire time, default `1y`, If pass number value, the unit will be ms
       */
-    var cookieMaxAge: String | Double = js.native
+    var cookieMaxAge: String | Double
     
     /**
       * default value EN_US
       */
-    var defaultLocale: String = js.native
+    var defaultLocale: String
     
     /**
       * i18n resource file dir, not recommend to change default value
       */
-    var dir: String = js.native
+    var dir: String
     
     /**
       * custom the locale value field, default `query.locale`, you can modify this config, such as `query.lang`
       */
-    var queryField: String = js.native
+    var queryField: String
   }
   object CookieField {
     
@@ -159,28 +155,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Csp extends StObject {
     
-    var csp: js.Any = js.native
+    var csp: js.Any
     
-    var csrf: js.Any = js.native
+    var csrf: js.Any
     
-    var defaultMiddleware: String = js.native
+    var defaultMiddleware: String
     
-    var domainWhiteList: js.Array[String] = js.native
+    var domainWhiteList: js.Array[String]
     
-    var hsts: js.Any = js.native
+    var hsts: js.Any
     
-    var methodnoallow: EnableBoolean = js.native
+    var methodnoallow: EnableBoolean
     
-    var noopen: EnableBoolean = js.native
+    var noopen: EnableBoolean
     
-    var protocolWhiteList: js.Array[String] = js.native
+    var protocolWhiteList: js.Array[String]
     
-    var xframe: Value = js.native
+    var xframe: Value
     
-    var xssProtection: js.Any = js.native
+    var xssProtection: js.Any
   }
   object Csp {
     
@@ -242,30 +237,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Enable extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var enableTypes: js.Array[String] = js.native
+    var enableTypes: js.Array[String]
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var extendTypes: Form = js.native
+    var extendTypes: Form
     
-    var formLimit: String = js.native
+    var formLimit: String
     
-    var ignore: IgnoreOrMatch = js.native
+    var ignore: IgnoreOrMatch
     
-    var jsonLimit: String = js.native
+    var jsonLimit: String
     
-    var `match`: IgnoreOrMatch = js.native
+    var `match`: IgnoreOrMatch
     
-    var queryString: ArrayLimit = js.native
+    var queryString: ArrayLimit
     
-    var strict: Boolean = js.native
+    var strict: Boolean
     
-    var textLimit: String = js.native
+    var textLimit: String
   }
   object Enable {
     
@@ -341,10 +335,9 @@ object anon {
     }
   }
   
-  @js.native
   trait EnableBoolean extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
   }
   object EnableBoolean {
     
@@ -362,38 +355,37 @@ object anon {
     }
   }
   
-  @js.native
   trait FastReady extends StObject {
     
     /**
       * don't wait all plugins ready, default is true.
       */
-    var fastReady: Boolean = js.native
+    var fastReady: Boolean
     
     /**
       * dirs don't need watch, including subdirectories, use relative path
       */
-    var ignoreDirs: js.Array[String] = js.native
+    var ignoreDirs: js.Array[String]
     
     /**
       * whether override default watchDirs, default is false.
       */
-    var overrideDefault: Boolean = js.native
+    var overrideDefault: Boolean
     
     /**
       * whether reload on debug, default is true.
       */
-    var reloadOnDebug: Boolean = js.native
+    var reloadOnDebug: Boolean
     
     /**
       * whether to reload, use https://github.com/sindresorhus/multimatch
       */
-    var reloadPattern: js.Array[String] | String = js.native
+    var reloadPattern: js.Array[String] | String
     
     /**
       * dirs needed watch, when files under these change, application will reload, use relative path
       */
-    var watchDirs: js.Array[String] = js.native
+    var watchDirs: js.Array[String]
   }
   object FastReady {
     
@@ -442,22 +434,21 @@ object anon {
     }
   }
   
-  @js.native
   trait FieldNameSize extends StObject {
     
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
-    var fieldSize: js.UndefOr[Double] = js.native
+    var fieldSize: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
-    var headerPairs: js.UndefOr[Double] = js.native
+    var headerPairs: js.UndefOr[Double] = js.undefined
     
-    var parts: js.UndefOr[Double] = js.native
+    var parts: js.UndefOr[Double] = js.undefined
   }
   object FieldNameSize {
     
@@ -527,14 +518,13 @@ object anon {
     def apply[T](url: URL_, options: RequestOptions2, callback: typings.urllib.mod.Callback[T]): Unit = js.native
   }
   
-  @js.native
   trait Form extends StObject {
     
-    var form: js.Array[String] = js.native
+    var form: js.Array[String]
     
-    var json: js.Array[String] = js.native
+    var json: js.Array[String]
     
-    var text: js.Array[String] = js.native
+    var text: js.Array[String]
   }
   object Form {
     
@@ -567,10 +557,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ignore extends StObject {
     
-    var ignore: Set[String] = js.native
+    var ignore: Set[String]
   }
   object Ignore {
     
@@ -589,32 +578,31 @@ object anon {
   }
   
   /* Inlined std.Partial<egg-logger.egg-logger.EggLoggerOptions> */
-  @js.native
   trait PartialEggLoggerOptions extends StObject {
     
-    var allowDebugAtProd: js.UndefOr[Boolean] = js.native
+    var allowDebugAtProd: js.UndefOr[Boolean] = js.undefined
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
     
-    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.native
+    var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
     
-    var consoleLevel: js.UndefOr[LoggerLevel] = js.native
+    var consoleLevel: js.UndefOr[LoggerLevel] = js.undefined
     
-    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
     
-    var jsonFile: js.UndefOr[String] = js.native
+    var jsonFile: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[LoggerLevel] = js.native
+    var level: js.UndefOr[LoggerLevel] = js.undefined
     
-    var outputJSON: js.UndefOr[Boolean] = js.native
+    var outputJSON: js.UndefOr[Boolean] = js.undefined
   }
   object PartialEggLoggerOptions {
     
@@ -701,12 +689,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var value: SAMEORIGIN | DENY | `ALLOW-FROM` = js.native
+    var value: SAMEORIGIN | DENY | `ALLOW-FROM`
   }
   object Value {
     

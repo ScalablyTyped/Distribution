@@ -4,21 +4,22 @@ import typings.zipkin.mod.Tracer
 import typings.zipkinInstrumentationFetch.anon.Typeoffetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(rawFetch: Typeoffetch, options: Options): Typeoffetch = (^.asInstanceOf[js.Dynamic].apply(rawFetch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Typeoffetch]
+  
   @JSImport("zipkin-instrumentation-fetch", JSImport.Namespace)
   @js.native
-  def apply(rawFetch: Typeoffetch, options: Options): Typeoffetch = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var remoteServiceName: String = js.native
+    var remoteServiceName: String
     
-    var tracer: Tracer = js.native
+    var tracer: Tracer
   }
   object Options {
     

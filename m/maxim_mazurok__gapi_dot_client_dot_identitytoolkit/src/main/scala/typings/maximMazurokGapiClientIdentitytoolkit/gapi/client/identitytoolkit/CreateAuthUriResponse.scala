@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientIdentitytoolkit.gapi.client.identitytoolki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAuthUriResponse extends StObject {
   
   /** all providers the user has once used to do federated login */
-  var allProviders: js.UndefOr[js.Array[String]] = js.native
+  var allProviders: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The URI used by the IDP to authenticate the user. */
-  var authUri: js.UndefOr[String] = js.native
+  var authUri: js.UndefOr[String] = js.undefined
   
   /** True if captcha is required. */
-  var captchaRequired: js.UndefOr[Boolean] = js.native
+  var captchaRequired: js.UndefOr[Boolean] = js.undefined
   
   /** True if the authUri is for user's existing provider. */
-  var forExistingProvider: js.UndefOr[Boolean] = js.native
+  var forExistingProvider: js.UndefOr[Boolean] = js.undefined
   
   /** The fixed string identitytoolkit#CreateAuthUriResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The provider ID of the auth URI. */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
   
   /** Whether the user is registered if the identifier is an email. */
-  var registered: js.UndefOr[Boolean] = js.native
+  var registered: js.UndefOr[Boolean] = js.undefined
   
   /** Session ID which should be passed in the following verifyAssertion request. */
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
   
   /** All sign-in methods this user has used. */
-  var signinMethods: js.UndefOr[js.Array[String]] = js.native
+  var signinMethods: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CreateAuthUriResponse {
   

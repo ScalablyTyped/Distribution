@@ -11,7 +11,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.batchSlashv2alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object batch {
@@ -36,33 +35,32 @@ object batch {
       * time out and mark the resource update as Failed. You can override the default timeout value
       * by setting the 'customTimeouts' option on the resource.
       */
-    @js.native
     trait Job extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[batchSlashv1]] = js.native
+      var apiVersion: js.UndefOr[Input[batchSlashv1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Job]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Job]] = js.undefined
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the desired behavior of a job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[JobSpec]] = js.native
+      var spec: js.UndefOr[Input[JobSpec]] = js.undefined
       
       /**
         * Current status of a job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[Input[JobStatus]] = js.native
+      var status: js.UndefOr[Input[JobStatus]] = js.undefined
     }
     object Job {
       
@@ -110,38 +108,37 @@ object batch {
     /**
       * JobCondition describes current state of a job.
       */
-    @js.native
     trait JobCondition extends StObject {
       
       /**
         * Last time the condition was checked.
         */
-      var lastProbeTime: js.UndefOr[Input[String]] = js.native
+      var lastProbeTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Last time the condition transit from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[Input[String]] = js.native
+      var lastTransitionTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Human readable message indicating details about last transition.
         */
-      var message: js.UndefOr[Input[String]] = js.native
+      var message: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * (brief) reason for the condition's last transition.
         */
-      var reason: js.UndefOr[Input[String]] = js.native
+      var reason: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: Input[String] = js.native
+      var status: Input[String]
       
       /**
         * Type of job condition, Complete or Failed.
         */
-      var `type`: Input[String] = js.native
+      var `type`: Input[String]
     }
     object JobCondition {
       
@@ -190,48 +187,47 @@ object batch {
     /**
       * JobSpec describes how the job execution will look like.
       */
-    @js.native
     trait JobSpec extends StObject {
       
       /**
         * Specifies the duration in seconds relative to the startTime that the job may be active before the system tries to terminate it; value must be positive integer
         */
-      var activeDeadlineSeconds: js.UndefOr[Input[Double]] = js.native
+      var activeDeadlineSeconds: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Specifies the number of retries before marking this job failed. Defaults to 6
         */
-      var backoffLimit: js.UndefOr[Input[Double]] = js.native
+      var backoffLimit: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Specifies the desired number of successfully finished pods the job should be run with.  Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value.  Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var completions: js.UndefOr[Input[Double]] = js.native
+      var completions: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * manualSelector controls generation of pod labels and pod selectors. Leave `manualSelector` unset unless you are certain what you are doing. When false or unset, the system pick labels unique to this job and appends those labels to the pod template.  When true, the user is responsible for picking unique labels and specifying the selector.  Failure to pick a unique label may cause this and other jobs to not function correctly.  However, You may see `manualSelector=true` in jobs that were created with the old `extensions/v1beta1` API. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/#specifying-your-own-pod-selector
         */
-      var manualSelector: js.UndefOr[Input[Boolean]] = js.native
+      var manualSelector: js.UndefOr[Input[Boolean]] = js.undefined
       
       /**
         * Specifies the maximum desired number of pods the job should run at any given time. The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var parallelism: js.UndefOr[Input[Double]] = js.native
+      var parallelism: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * A label query over pods that should match the pod count. Normally, the system sets this field for you. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: js.UndefOr[Input[LabelSelector]] = js.native
+      var selector: js.UndefOr[Input[LabelSelector]] = js.undefined
       
       /**
         * Describes the pod that will be created when executing a job. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var template: Input[PodTemplateSpec] = js.native
+      var template: Input[PodTemplateSpec]
       
       /**
         * ttlSecondsAfterFinished limits the lifetime of a Job that has finished execution (either Complete or Failed). If this field is set, ttlSecondsAfterFinished after the Job finishes, it is eligible to be automatically deleted. When the Job is being deleted, its lifecycle guarantees (e.g. finalizers) will be honored. If this field is unset, the Job won't be automatically deleted. If this field is set to zero, the Job becomes eligible to be deleted immediately after it finishes. This field is alpha-level and is only honored by servers that enable the TTLAfterFinished feature.
         */
-      var ttlSecondsAfterFinished: js.UndefOr[Input[Double]] = js.native
+      var ttlSecondsAfterFinished: js.UndefOr[Input[Double]] = js.undefined
     }
     object JobSpec {
       
@@ -294,38 +290,37 @@ object batch {
     /**
       * JobStatus represents the current state of a Job.
       */
-    @js.native
     trait JobStatus extends StObject {
       
       /**
         * The number of actively running pods.
         */
-      var active: js.UndefOr[Input[Double]] = js.native
+      var active: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Represents time when the job was completed. It is not guaranteed to be set in happens-before order across separate operations. It is represented in RFC3339 form and is in UTC.
         */
-      var completionTime: js.UndefOr[Input[String]] = js.native
+      var completionTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * The latest available observations of an object's current state. More info: https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var conditions: js.UndefOr[Input[js.Array[Input[JobCondition]]]] = js.native
+      var conditions: js.UndefOr[Input[js.Array[Input[JobCondition]]]] = js.undefined
       
       /**
         * The number of pods which reached phase Failed.
         */
-      var failed: js.UndefOr[Input[Double]] = js.native
+      var failed: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Represents time when the job was acknowledged by the job controller. It is not guaranteed to be set in happens-before order across separate operations. It is represented in RFC3339 form and is in UTC.
         */
-      var startTime: js.UndefOr[Input[String]] = js.native
+      var startTime: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * The number of pods which reached phase Succeeded.
         */
-      var succeeded: js.UndefOr[Input[Double]] = js.native
+      var succeeded: js.UndefOr[Input[Double]] = js.undefined
     }
     object JobStatus {
       
@@ -385,33 +380,32 @@ object batch {
     /**
       * CronJob represents the configuration of a single cron job.
       */
-    @js.native
     trait CronJob extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[batchSlashv1beta1]] = js.native
+      var apiVersion: js.UndefOr[Input[batchSlashv1beta1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]] = js.undefined
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[CronJobSpec]] = js.native
+      var spec: js.UndefOr[Input[CronJobSpec]] = js.undefined
       
       /**
         * Current status of a cron job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[Input[CronJobStatus]] = js.native
+      var status: js.UndefOr[Input[CronJobStatus]] = js.undefined
     }
     object CronJob {
       
@@ -459,43 +453,42 @@ object batch {
     /**
       * CronJobSpec describes how the job execution will look like and when it will actually run.
       */
-    @js.native
     trait CronJobSpec extends StObject {
       
       /**
         * Specifies how to treat concurrent executions of a Job. Valid values are: - "Allow" (default): allows CronJobs to run concurrently; - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet; - "Replace": cancels currently running job and replaces it with a new one
         */
-      var concurrencyPolicy: js.UndefOr[Input[String]] = js.native
+      var concurrencyPolicy: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 1.
         */
-      var failedJobsHistoryLimit: js.UndefOr[Input[Double]] = js.native
+      var failedJobsHistoryLimit: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Specifies the job that will be created when executing a CronJob.
         */
-      var jobTemplate: Input[JobTemplateSpec] = js.native
+      var jobTemplate: Input[JobTemplateSpec]
       
       /**
         * The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
         */
-      var schedule: Input[String] = js.native
+      var schedule: Input[String]
       
       /**
         * Optional deadline in seconds for starting the job if it misses scheduled time for any reason.  Missed jobs executions will be counted as failed ones.
         */
-      var startingDeadlineSeconds: js.UndefOr[Input[Double]] = js.native
+      var startingDeadlineSeconds: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified. Defaults to 3.
         */
-      var successfulJobsHistoryLimit: js.UndefOr[Input[Double]] = js.native
+      var successfulJobsHistoryLimit: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * This flag tells the controller to suspend subsequent executions, it does not apply to already started executions.  Defaults to false.
         */
-      var suspend: js.UndefOr[Input[Boolean]] = js.native
+      var suspend: js.UndefOr[Input[Boolean]] = js.undefined
     }
     object CronJobSpec {
       
@@ -549,18 +542,17 @@ object batch {
     /**
       * CronJobStatus represents the current state of a cron job.
       */
-    @js.native
     trait CronJobStatus extends StObject {
       
       /**
         * A list of pointers to currently running jobs.
         */
-      var active: js.UndefOr[Input[js.Array[Input[ObjectReference]]]] = js.native
+      var active: js.UndefOr[Input[js.Array[Input[ObjectReference]]]] = js.undefined
       
       /**
         * Information when was the last time the job was successfully scheduled.
         */
-      var lastScheduleTime: js.UndefOr[Input[String]] = js.native
+      var lastScheduleTime: js.UndefOr[Input[String]] = js.undefined
     }
     object CronJobStatus {
       
@@ -593,18 +585,17 @@ object batch {
     /**
       * JobTemplateSpec describes the data a Job should have when created from a template
       */
-    @js.native
     trait JobTemplateSpec extends StObject {
       
       /**
         * Standard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[JobSpec]] = js.native
+      var spec: js.UndefOr[Input[JobSpec]] = js.undefined
     }
     object JobTemplateSpec {
       
@@ -637,33 +628,32 @@ object batch {
     /**
       * CronJob represents the configuration of a single cron job.
       */
-    @js.native
     trait CronJob extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[Input[batchSlashv2alpha1]] = js.native
+      var apiVersion: js.UndefOr[Input[batchSlashv2alpha1]] = js.undefined
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]] = js.native
+      var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJob]] = js.undefined
       
       /**
         * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the desired behavior of a cron job, including the schedule. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[CronJobSpec]] = js.native
+      var spec: js.UndefOr[Input[CronJobSpec]] = js.undefined
       
       /**
         * Current status of a cron job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[Input[CronJobStatus]] = js.native
+      var status: js.UndefOr[Input[CronJobStatus]] = js.undefined
     }
     object CronJob {
       
@@ -711,43 +701,42 @@ object batch {
     /**
       * CronJobSpec describes how the job execution will look like and when it will actually run.
       */
-    @js.native
     trait CronJobSpec extends StObject {
       
       /**
         * Specifies how to treat concurrent executions of a Job. Valid values are: - "Allow" (default): allows CronJobs to run concurrently; - "Forbid": forbids concurrent runs, skipping next run if previous run hasn't finished yet; - "Replace": cancels currently running job and replaces it with a new one
         */
-      var concurrencyPolicy: js.UndefOr[Input[String]] = js.native
+      var concurrencyPolicy: js.UndefOr[Input[String]] = js.undefined
       
       /**
         * The number of failed finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
         */
-      var failedJobsHistoryLimit: js.UndefOr[Input[Double]] = js.native
+      var failedJobsHistoryLimit: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * Specifies the job that will be created when executing a CronJob.
         */
-      var jobTemplate: Input[JobTemplateSpec] = js.native
+      var jobTemplate: Input[JobTemplateSpec]
       
       /**
         * The schedule in Cron format, see https://en.wikipedia.org/wiki/Cron.
         */
-      var schedule: Input[String] = js.native
+      var schedule: Input[String]
       
       /**
         * Optional deadline in seconds for starting the job if it misses scheduled time for any reason.  Missed jobs executions will be counted as failed ones.
         */
-      var startingDeadlineSeconds: js.UndefOr[Input[Double]] = js.native
+      var startingDeadlineSeconds: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * The number of successful finished jobs to retain. This is a pointer to distinguish between explicit zero and not specified.
         */
-      var successfulJobsHistoryLimit: js.UndefOr[Input[Double]] = js.native
+      var successfulJobsHistoryLimit: js.UndefOr[Input[Double]] = js.undefined
       
       /**
         * This flag tells the controller to suspend subsequent executions, it does not apply to already started executions.  Defaults to false.
         */
-      var suspend: js.UndefOr[Input[Boolean]] = js.native
+      var suspend: js.UndefOr[Input[Boolean]] = js.undefined
     }
     object CronJobSpec {
       
@@ -801,18 +790,17 @@ object batch {
     /**
       * CronJobStatus represents the current state of a cron job.
       */
-    @js.native
     trait CronJobStatus extends StObject {
       
       /**
         * A list of pointers to currently running jobs.
         */
-      var active: js.UndefOr[Input[js.Array[Input[ObjectReference]]]] = js.native
+      var active: js.UndefOr[Input[js.Array[Input[ObjectReference]]]] = js.undefined
       
       /**
         * Information when was the last time the job was successfully scheduled.
         */
-      var lastScheduleTime: js.UndefOr[Input[String]] = js.native
+      var lastScheduleTime: js.UndefOr[Input[String]] = js.undefined
     }
     object CronJobStatus {
       
@@ -845,18 +833,17 @@ object batch {
     /**
       * JobTemplateSpec describes the data a Job should have when created from a template
       */
-    @js.native
     trait JobTemplateSpec extends StObject {
       
       /**
         * Standard object's metadata of the jobs created from this template. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
-      var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+      var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
       
       /**
         * Specification of the desired behavior of the job. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[Input[JobSpec]] = js.native
+      var spec: js.UndefOr[Input[JobSpec]] = js.undefined
     }
     object JobTemplateSpec {
       

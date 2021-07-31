@@ -2,64 +2,64 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters to the transform
   */
-@js.native
-trait StructureMapGroupRuleTargetParameter extends BackboneElement {
+trait StructureMapGroupRuleTargetParameter
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'valueBoolean'.
     */
-  var _valueBoolean: js.UndefOr[Element] = js.native
+  var _valueBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueDecimal'.
     */
-  var _valueDecimal: js.UndefOr[Element] = js.native
+  var _valueDecimal: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueId'.
     */
-  var _valueId: js.UndefOr[Element] = js.native
+  var _valueId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueInteger'.
     */
-  var _valueInteger: js.UndefOr[Element] = js.native
+  var _valueInteger: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueString'.
     */
-  var _valueString: js.UndefOr[Element] = js.native
+  var _valueString: js.UndefOr[Element] = js.undefined
   
   /**
     * Parameter value - variable or literal
     */
-  var valueBoolean: js.UndefOr[Boolean] = js.native
+  var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Parameter value - variable or literal
     */
-  var valueDecimal: js.UndefOr[decimal] = js.native
+  var valueDecimal: js.UndefOr[decimal] = js.undefined
   
   /**
     * Parameter value - variable or literal
     */
-  var valueId: js.UndefOr[id] = js.native
+  var valueId: js.UndefOr[id] = js.undefined
   
   /**
     * Parameter value - variable or literal
     */
-  var valueInteger: js.UndefOr[integer] = js.native
+  var valueInteger: js.UndefOr[integer] = js.undefined
   
   /**
     * Parameter value - variable or literal
     */
-  var valueString: js.UndefOr[String] = js.native
+  var valueString: js.UndefOr[String] = js.undefined
 }
 object StructureMapGroupRuleTargetParameter {
   

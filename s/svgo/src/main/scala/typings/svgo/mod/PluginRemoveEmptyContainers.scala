@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveEmptyContainers extends PluginConfig {
+trait PluginRemoveEmptyContainers
+  extends StObject
+     with PluginConfig {
   
-  var removeEmptyContainers: Boolean | js.Object = js.native
+  var removeEmptyContainers: Boolean | js.Object
 }
 object PluginRemoveEmptyContainers {
   

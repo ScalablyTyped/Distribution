@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** manages the text sections within the context (i.e. the document). */
-@js.native
-trait XTextSectionsSupplier extends XInterface {
+trait XTextSectionsSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns the collection of text sections. */
-  val TextSections: XNameAccess = js.native
+  val TextSections: XNameAccess
   
   /** @returns the collection of text sections. */
-  def getTextSections(): XNameAccess = js.native
+  def getTextSections(): XNameAccess
 }
 object XTextSectionsSupplier {
   

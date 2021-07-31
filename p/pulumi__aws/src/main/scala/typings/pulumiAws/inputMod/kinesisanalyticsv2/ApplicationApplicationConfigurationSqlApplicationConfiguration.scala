@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StObject {
   
   /**
     * The input stream used by the application.
     */
-  var input: js.UndefOr[Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInput]] = js.native
+  var input: js.UndefOr[Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInput]] = js.undefined
   
   /**
     * The destination streams used by the application.
@@ -21,7 +19,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StO
     Input[
       js.Array[Input[ApplicationApplicationConfigurationSqlApplicationConfigurationOutput]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The reference data source used by the application.
@@ -30,7 +28,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfiguration extends StO
     Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSource
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ApplicationApplicationConfigurationSqlApplicationConfiguration {
   

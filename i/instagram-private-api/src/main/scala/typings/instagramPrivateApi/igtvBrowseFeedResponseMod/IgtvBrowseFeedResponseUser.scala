@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseUser extends StObject {
   
-  var friendship_status: IgtvBrowseFeedResponseFriendshipStatus = js.native
+  var friendship_status: IgtvBrowseFeedResponseFriendshipStatus
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var has_anonymous_profile_picture: Boolean = js.native
+  var has_anonymous_profile_picture: Boolean
   
-  var is_favorite: Boolean = js.native
+  var is_favorite: Boolean
   
-  var is_private: Boolean = js.native
+  var is_private: Boolean
   
-  var is_unpublished: Boolean = js.native
+  var is_unpublished: Boolean
   
-  var is_verified: Boolean = js.native
+  var is_verified: Boolean
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_id: String = js.native
+  var profile_pic_id: String
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var username: String = js.native
+  var username: String
 }
 object IgtvBrowseFeedResponseUser {
   

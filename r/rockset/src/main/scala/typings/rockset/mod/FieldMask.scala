@@ -2,15 +2,13 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldMask extends StObject {
   
-  var input_path: js.Array[String] = js.native
+  var input_path: js.Array[String]
   
-  var mask: js.UndefOr[FieldMaskMask] = js.native
+  var mask: js.UndefOr[FieldMaskMask] = js.undefined
 }
 object FieldMask {
   

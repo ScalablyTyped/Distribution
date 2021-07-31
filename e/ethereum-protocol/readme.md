@@ -11,8 +11,8 @@ This package is a stub so that noone takes the name. We need it to publish @type
 | Full name          | ethereum-protocol |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 293948 |
+| # dependents       | 17 |
+| # downloads        | 449574 |
 | # stars            | 0 |
 
 ## Links

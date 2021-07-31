@@ -3,17 +3,15 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDefaultBackgroundColorOverrideRequest extends StObject {
   
   /**
     * RGBA of the default background color. If not specified, any existing override will be
     * cleared.
     */
-  var color: js.UndefOr[RGBA] = js.native
+  var color: js.UndefOr[RGBA] = js.undefined
 }
 object SetDefaultBackgroundColorOverrideRequest {
   

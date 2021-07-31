@@ -4,23 +4,21 @@ import typings.angularCompiler.angularCompilerStrings.directiveInject
 import typings.angularCompiler.angularCompilerStrings.inject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3FactoryDefMetadataFacade extends StObject {
   
-  var deps: js.Array[R3DependencyMetadataFacade] | Null = js.native
+  var deps: js.Array[R3DependencyMetadataFacade] | Null
   
-  var injectFn: directiveInject | inject = js.native
+  var injectFn: directiveInject | inject
   
-  var name: String = js.native
+  var name: String
   
-  var target: R3FactoryTarget = js.native
+  var target: R3FactoryTarget
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var typeArgumentCount: Double = js.native
+  var typeArgumentCount: Double
 }
 object R3FactoryDefMetadataFacade {
   
@@ -32,7 +30,7 @@ object R3FactoryDefMetadataFacade {
     `type`: js.Any,
     typeArgumentCount: Double
   ): R3FactoryDefMetadataFacade = {
-    val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3FactoryDefMetadataFacade]
   }

@@ -2,20 +2,18 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for FirestoreAdmin.ImportDocuments.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta1ImportDocumentsRequest extends StObject {
   
   /**
     * Which collection ids to import. Unspecified means all collections
     * included in the import.
     */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Location of the exported files. This must match the output_uri_prefix of
@@ -23,7 +21,7 @@ trait SchemaGoogleFirestoreAdminV1beta1ImportDocumentsRequest extends StObject {
     * successfully. See:
     * google.firestore.admin.v1beta1.ExportDocumentsResponse.output_uri_prefix.
     */
-  var inputUriPrefix: js.UndefOr[String] = js.native
+  var inputUriPrefix: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1ImportDocumentsRequest {
   

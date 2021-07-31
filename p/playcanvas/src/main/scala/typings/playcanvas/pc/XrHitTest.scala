@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.anon.EntityTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param manager - WebXR Manager.
   */
 @js.native
-trait XrHitTest extends EventHandler {
+trait XrHitTest
+  extends StObject
+     with EventHandler {
   
   /**
     * list of active {@link pc.XrHitTestSource}.

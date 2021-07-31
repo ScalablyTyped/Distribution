@@ -2,29 +2,27 @@ package typings.headroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headroom extends StObject {
   
   /** destroy the headroom instance, removing event listeners and any classes added */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /** freeze the headroom instance's state (pinned or unpinned), and no longer respond to scroll events */
-  def freeze(): Unit = js.native
+  def freeze(): Unit
   
   /** initialise */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /** forcibly set the headroom instance's state to pinned */
-  def pin(): Unit = js.native
+  def pin(): Unit
   
   /** resume responding to scroll events */
-  def unfreeze(): Unit = js.native
+  def unfreeze(): Unit
   
   /** forcibly set the headroom instance's state to unpinned */
-  def unpin(): Unit = js.native
+  def unpin(): Unit
 }
 object Headroom {
   

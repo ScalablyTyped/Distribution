@@ -4,19 +4,17 @@ import typings.forkTsCheckerWebpackPlugin.dependenciesMod.Dependencies
 import typings.forkTsCheckerWebpackPlugin.issueIssueMod.Issue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reportMod {
   
-  @js.native
   trait Report extends StObject {
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def getDependencies(): js.Promise[Dependencies] = js.native
+    def getDependencies(): js.Promise[Dependencies]
     
-    def getIssues(): js.Promise[js.Array[Issue]] = js.native
+    def getIssues(): js.Promise[js.Array[Issue]]
   }
   object Report {
     

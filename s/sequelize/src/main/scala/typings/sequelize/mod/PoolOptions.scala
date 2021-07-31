@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,39 +9,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Options
   */
-@js.native
 trait PoolOptions extends StObject {
   
   /**
     * The maximum time, in milliseconds, that pool will try to get connection before throwing error
     */
-  var acquire: js.UndefOr[Double] = js.native
+  var acquire: js.UndefOr[Double] = js.undefined
   
   /*
     * The time interval, in milliseconds, for evicting stale connections
     */
-  var evict: js.UndefOr[Double] = js.native
+  var evict: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum time, in milliseconds, that a connection can be idle before being released.
     */
-  var idle: js.UndefOr[Double] = js.native
+  var idle: js.UndefOr[Double] = js.undefined
   
   /**
     * Maximum connections of the pool
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum connections of the pool
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * A function that validates a connection. Called with client. The default function checks that client is an
     * object, and that its state is not disconnected.
     */
-  var validate: js.UndefOr[js.Function1[/* client */ js.UndefOr[js.Any], Boolean]] = js.native
+  var validate: js.UndefOr[js.Function1[/* client */ js.UndefOr[js.Any], Boolean]] = js.undefined
 }
 object PoolOptions {
   

@@ -2,66 +2,64 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeReviewSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
-  var CodeReviewArn: js.UndefOr[Arn] = js.native
+  var CodeReviewArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The time, in milliseconds since the epoch, when the code review was created. 
     */
-  var CreatedTimeStamp: js.UndefOr[TimeStamp] = js.native
+  var CreatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     *  The time, in milliseconds since the epoch, when the code review was last updated. 
     */
-  var LastUpdatedTimeStamp: js.UndefOr[TimeStamp] = js.native
+  var LastUpdatedTimeStamp: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     *  The statistics from the code review. 
     */
-  var MetricsSummary: js.UndefOr[typings.awsSdk.codegurureviewerMod.MetricsSummary] = js.native
+  var MetricsSummary: js.UndefOr[typings.awsSdk.codegurureviewerMod.MetricsSummary] = js.undefined
   
   /**
     *  The name of the code review. 
     */
-  var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.codegurureviewerMod.Name] = js.undefined
   
   /**
     * The owner of the repository. For an AWS CodeCommit repository, this is the AWS account ID of the account that owns the repository. For a GitHub, GitHub Enterprise Server, or Bitbucket repository, this is the username for the account that owns the repository.
     */
-  var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.codegurureviewerMod.Owner] = js.undefined
   
   /**
     *  The provider type of the repository association. 
     */
-  var ProviderType: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderType] = js.native
+  var ProviderType: js.UndefOr[typings.awsSdk.codegurureviewerMod.ProviderType] = js.undefined
   
   /**
     *  The pull request ID for the code review. 
     */
-  var PullRequestId: js.UndefOr[typings.awsSdk.codegurureviewerMod.PullRequestId] = js.native
+  var PullRequestId: js.UndefOr[typings.awsSdk.codegurureviewerMod.PullRequestId] = js.undefined
   
   /**
     *  The name of the repository. 
     */
-  var RepositoryName: js.UndefOr[Name] = js.native
+  var RepositoryName: js.UndefOr[Name] = js.undefined
   
   /**
     *  The state of the code review.  The valid code review states are:    Completed: The code review is complete.     Pending: The code review started and has not completed or failed.     Failed: The code review failed.     Deleting: The code review is being deleted.   
     */
-  var State: js.UndefOr[JobState] = js.native
+  var State: js.UndefOr[JobState] = js.undefined
   
   /**
     *  The type of the code review. 
     */
-  var Type: js.UndefOr[typings.awsSdk.codegurureviewerMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.codegurureviewerMod.Type] = js.undefined
 }
 object CodeReviewSummary {
   

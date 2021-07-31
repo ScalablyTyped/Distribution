@@ -2,51 +2,49 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendCommandRequest extends StObject {
   
   /**
     * Command to abort the current transaction.
     */
-  var AbortTransaction: js.UndefOr[AbortTransactionRequest] = js.native
+  var AbortTransaction: js.UndefOr[AbortTransactionRequest] = js.undefined
   
   /**
     * Command to commit the specified transaction.
     */
-  var CommitTransaction: js.UndefOr[CommitTransactionRequest] = js.native
+  var CommitTransaction: js.UndefOr[CommitTransactionRequest] = js.undefined
   
   /**
     * Command to end the current session.
     */
-  var EndSession: js.UndefOr[EndSessionRequest] = js.native
+  var EndSession: js.UndefOr[EndSessionRequest] = js.undefined
   
   /**
     * Command to execute a statement in the specified transaction.
     */
-  var ExecuteStatement: js.UndefOr[ExecuteStatementRequest] = js.native
+  var ExecuteStatement: js.UndefOr[ExecuteStatementRequest] = js.undefined
   
   /**
     * Command to fetch a page.
     */
-  var FetchPage: js.UndefOr[FetchPageRequest] = js.native
+  var FetchPage: js.UndefOr[FetchPageRequest] = js.undefined
   
   /**
     * Specifies the session token for the current command. A session token is constant throughout the life of the session. To obtain a session token, run the StartSession command. This SessionToken is required for every subsequent command that is issued during the current session.
     */
-  var SessionToken: js.UndefOr[typings.awsSdk.qldbsessionMod.SessionToken] = js.native
+  var SessionToken: js.UndefOr[typings.awsSdk.qldbsessionMod.SessionToken] = js.undefined
   
   /**
     * Command to start a new session. A session token is obtained as part of the response.
     */
-  var StartSession: js.UndefOr[StartSessionRequest] = js.native
+  var StartSession: js.UndefOr[StartSessionRequest] = js.undefined
   
   /**
     * Command to start a new transaction.
     */
-  var StartTransaction: js.UndefOr[StartTransactionRequest] = js.native
+  var StartTransaction: js.UndefOr[StartTransactionRequest] = js.undefined
 }
 object SendCommandRequest {
   

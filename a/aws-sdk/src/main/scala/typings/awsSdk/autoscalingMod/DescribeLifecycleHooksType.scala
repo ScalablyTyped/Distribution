@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLifecycleHooksType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The names of one or more lifecycle hooks. If you omit this parameter, all lifecycle hooks are described.
     */
-  var LifecycleHookNames: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleHookNames] = js.native
+  var LifecycleHookNames: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleHookNames] = js.undefined
 }
 object DescribeLifecycleHooksType {
   

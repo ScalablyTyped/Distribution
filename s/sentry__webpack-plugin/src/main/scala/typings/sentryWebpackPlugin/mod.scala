@@ -5,14 +5,15 @@ import typings.std.Plugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@sentry/webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
@@ -20,46 +21,45 @@ object mod {
   
   type ErrorHandlerFunction = js.Function2[/* err */ Error, /* invokeErr */ js.Function0[Unit], Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var configFile: js.UndefOr[String] = js.native
+    var configFile: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
-    var entries: js.UndefOr[js.Array[_] | RegExp | EntriesFunction] = js.native
+    var entries: js.UndefOr[js.Array[js.Any] | RegExp | EntriesFunction] = js.undefined
     
-    var errorHandler: js.UndefOr[ErrorHandlerFunction] = js.native
+    var errorHandler: js.UndefOr[ErrorHandlerFunction] = js.undefined
     
-    var ext: js.UndefOr[js.Array[String]] = js.native
+    var ext: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignore: js.UndefOr[String | js.Array[String]] = js.native
+    var ignore: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var ignoreFile: js.UndefOr[String] = js.native
+    var ignoreFile: js.UndefOr[String] = js.undefined
     
-    var include: String | js.Array[String] = js.native
+    var include: String | js.Array[String]
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var rewrite: js.UndefOr[Boolean] = js.native
+    var rewrite: js.UndefOr[Boolean] = js.undefined
     
-    var setCommits: js.UndefOr[SetCommitsOptions] = js.native
+    var setCommits: js.UndefOr[SetCommitsOptions] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var sourceMapReference: js.UndefOr[Boolean] = js.native
+    var sourceMapReference: js.UndefOr[Boolean] = js.undefined
     
-    var stripCommonPrefix: js.UndefOr[Boolean] = js.native
+    var stripCommonPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var stripPrefix: js.UndefOr[js.Array[js.Any]] = js.native
+    var stripPrefix: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var urlPrefix: js.UndefOr[String] = js.native
+    var urlPrefix: js.UndefOr[String] = js.undefined
     
-    var urlSuffix: js.UndefOr[String] = js.native
+    var urlSuffix: js.UndefOr[String] = js.undefined
     
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -91,7 +91,7 @@ object mod {
       def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
       @scala.inline
-      def setEntries(value: js.Array[_] | RegExp | EntriesFunction): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      def setEntries(value: js.Array[js.Any] | RegExp | EntriesFunction): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEntriesFunction1(value: /* key */ String => Boolean): Self = StObject.set(x, "entries", js.Any.fromFunction1(value))
@@ -205,16 +205,15 @@ object mod {
   
   type SentryPlugin = Plugin
   
-  @js.native
   trait SetCommitsOptions extends StObject {
     
-    var auto: js.UndefOr[Boolean] = js.native
+    var auto: js.UndefOr[Boolean] = js.undefined
     
-    var commit: js.UndefOr[String] = js.native
+    var commit: js.UndefOr[String] = js.undefined
     
-    var previousCommit: js.UndefOr[String] = js.native
+    var previousCommit: js.UndefOr[String] = js.undefined
     
-    var repo: String = js.native
+    var repo: String
   }
   object SetCommitsOptions {
     

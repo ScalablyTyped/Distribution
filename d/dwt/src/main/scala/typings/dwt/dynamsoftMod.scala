@@ -9,14 +9,13 @@ import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamsoftMod extends Shortcut {
   
   @JSImport("dwt/Dynamsoft", JSImport.Default)
   @js.native
-  val default: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) with TypeofDynamsoftStatic = js.native
+  val default: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic = js.native
   
   object DynamsoftStatic {
     
@@ -48,9 +47,12 @@ object dynamsoftMod extends Shortcut {
         
         object OCRPro {
           
-          @JSImport("dwt/Dynamsoft", "DynamsoftStatic.WebTwain.Addon.OCRPro.NewSettings")
+          @JSImport("dwt/Dynamsoft", "DynamsoftStatic.WebTwain.Addon.OCRPro")
           @js.native
-          def NewSettings(): Settings = js.native
+          val ^ : js.Any = js.native
+          
+          @scala.inline
+          def NewSettings(): Settings = ^.asInstanceOf[js.Dynamic].applyDynamic("NewSettings")().asInstanceOf[Settings]
         }
       }
     }
@@ -68,20 +70,19 @@ object dynamsoftMod extends Shortcut {
     def managerEnv_=(x: ManagerEnv): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managerEnv")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Container extends StObject {
     
-    var ContainerId: js.UndefOr[String] = js.native
+    var ContainerId: js.UndefOr[String] = js.undefined
     
-    var Height: js.UndefOr[String | Double] = js.native
+    var Height: js.UndefOr[String | Double] = js.undefined
     
-    var WebTwainId: String = js.native
+    var WebTwainId: String
     
-    var Width: js.UndefOr[String | Double] = js.native
+    var Width: js.UndefOr[String | Double] = js.undefined
     
-    var bLocalService: js.UndefOr[Boolean] = js.native
+    var bLocalService: js.UndefOr[Boolean] = js.undefined
     
-    var bNoUI: js.UndefOr[Boolean] = js.native
+    var bNoUI: js.UndefOr[Boolean] = js.undefined
   }
   object Container {
     
@@ -129,15 +130,14 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DSLibDetect extends StObject {
     
-    val scriptLoaded: Boolean = js.native
+    val scriptLoaded: Boolean
     
     /**
       * Whether or not the site is secure (Https://).
       */
-    val ssl: Boolean = js.native
+    val ssl: Boolean
   }
   object DSLibDetect {
     
@@ -158,133 +158,132 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DSLibEnv extends StObject {
     
     /**
       * The WebSocket session id.
       */
-    val WSSession: Double = js.native
+    val WSSession: Double
     
     /**
       * The WebSocket version.
       */
-    val WSVersion: String = js.native
+    val WSVersion: String
     
     /**
       * Whether the browser is Chrome.
       */
-    val bChrome: Boolean = js.native
+    val bChrome: Boolean
     
     /**
       * Whether the browser is Edge.
       */
-    val bEdge: Boolean = js.native
+    val bEdge: Boolean
     
     /**
       * Whether the page is opening from the disk.
       */
-    val bFileSystem: Boolean = js.native
+    val bFileSystem: Boolean
     
     /**
       * Whether the browser is Firefox.
       */
-    val bFirefox: Boolean = js.native
+    val bFirefox: Boolean
     
     /**
       * Whether the browser is IE.
       */
-    val bIE: Boolean = js.native
+    val bIE: Boolean
     
     /**
       * Whether the operating system is Linux.
       */
-    val bLinux: Boolean = js.native
+    val bLinux: Boolean
     
     /**
       * Whether the operating system is macOS.
       */
-    val bMac: Boolean = js.native
+    val bMac: Boolean
     
     /**
       * Whether the operating system is mobile (Android & iOS & iPadOS).
       */
-    val bMobile: Boolean = js.native
+    val bMobile: Boolean
     
     /**
       * Whether the browser is Safari.
       */
-    val bSafari: Boolean = js.native
+    val bSafari: Boolean
     
     /**
       * Whether the operating system is Windows.
       */
-    val bWin: Boolean = js.native
+    val bWin: Boolean
     
     /**
       * Whether the operating system is 64bit Windows.
       */
-    val bWin64: Boolean = js.native
+    val bWin64: Boolean
     
     /**
       * The base path.
       */
-    val basePath: String = js.native
+    val basePath: String
     
     /**
       * The plugin lenghth.
       */
-    val iPluginLength: Double = js.native
+    val iPluginLength: Double
     
     /**
       * Whether it is a desktop viewer.
       */
-    def isDesktopViewer(): Boolean = js.native
+    def isDesktopViewer(): Boolean
     
     /**
       * Whether it is a mobile viewer.
       */
-    def isMobileViewer(): Boolean = js.native
+    def isMobileViewer(): Boolean
     
     /**
       * Whether it is a pad viewer.
       */
-    def isPadViewer(): Boolean = js.native
+    def isPadViewer(): Boolean
     
     /**
       * Whether the platform is 64bit.
       */
-    val isX64: Boolean = js.native
+    val isX64: Boolean
     
     /**
       * Information about macOSX.
       */
-    val macOSX: String = js.native
+    val macOSX: String
     
     /**
       * OS version.
       */
-    val osVersion: String = js.native
+    val osVersion: String
     
     /**
       * The path type used to calculate the real path.
       */
-    val pathType: Double = js.native
+    val pathType: Double
     
     /**
       * The version of Chrome.
       */
-    val strChromeVersion: Double | String = js.native
+    val strChromeVersion: Double | String
     
     /**
       * The version of Firefox.
       */
-    val strFirefoxVersion: Double | String = js.native
+    val strFirefoxVersion: Double | String
     
     /**
       * The version of IE.
       */
-    val strIEVersion: Double | String = js.native
+    val strIEVersion: Double | String
   }
   object DSLibEnv {
     
@@ -400,16 +399,15 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DWTInitialConfig extends StObject {
     
-    var Host: js.UndefOr[String] = js.native
+    var Host: js.UndefOr[String] = js.undefined
     
-    var Port: js.UndefOr[String] = js.native
+    var Port: js.UndefOr[String] = js.undefined
     
-    var SSLPort: js.UndefOr[String] = js.native
+    var SSLPort: js.UndefOr[String] = js.undefined
     
-    var WebTwainId: String = js.native
+    var WebTwainId: String
   }
   object DWTInitialConfig {
     
@@ -445,18 +443,17 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DisplayInfo extends StObject {
     
-    var buttons: js.Any = js.native
+    var buttons: js.Any
     
-    var customProgressText: js.Any = js.native
+    var customProgressText: js.Any
     
-    var dialogText: js.Any = js.native
+    var dialogText: js.Any
     
-    var errorMessages: js.Any = js.native
+    var errorMessages: js.Any
     
-    var generalMessages: js.Any = js.native
+    var generalMessages: js.Any
   }
   object DisplayInfo {
     
@@ -492,7 +489,6 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait DynamsoftLib extends StObject {
     
     /**
@@ -501,18 +497,18 @@ object dynamsoftMod extends Shortcut {
       * @param type Specify the event
       * @param listener Specify the callback
       */
-    def addEventListener(target: HTMLElement, `type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    def addEventListener(target: HTMLElement, `type`: String, listener: EventListenerOrEventListenerObject): Unit
     
     /**
       * Whether to enable debugging. Once enabled, debugging inforamtion is printed out in the browser console.
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var detect: DSLibDetect = js.native
+    var detect: DSLibDetect
     
-    var dlgLoadingShowStatus: Boolean = js.native
+    var dlgLoadingShowStatus: Boolean
     
-    var env: DSLibEnv = js.native
+    var env: DSLibEnv
     
     /**
       * Load the specified script.
@@ -520,7 +516,7 @@ object dynamsoftMod extends Shortcut {
       * @param bAsync Whether to load the script asynchronously.
       * @param callback Callback function triggered when the script is loaded.
       */
-    def getScript(url: String, bAsync: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def getScript(url: String, bAsync: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * Load the specified scripts.
@@ -528,19 +524,19 @@ object dynamsoftMod extends Shortcut {
       * @param bAsync Whether to load the script asynchronously.
       * @param callback Callback function triggered when the scripts are all loaded.
       */
-    def getScripts(urls: js.Array[String], bAsync: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def getScripts(urls: js.Array[String], bAsync: Boolean, callback: js.Function0[Unit]): Unit
     
     /**
       * Hide the built-in page mask
       */
-    def hideMask(): Unit = js.native
+    def hideMask(): Unit
     
-    var product: Product = js.native
+    var product: Product
     
     /**
       * Show the built-in page mask
       */
-    def showMask(): Unit = js.native
+    def showMask(): Unit
   }
   object DynamsoftLib {
     
@@ -596,12 +592,11 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ManagerEnv extends StObject {
     
-    var IfUpdateService: Boolean = js.native
+    var IfUpdateService: Boolean
     
-    var resourcesPath: String = js.native
+    var resourcesPath: String
   }
   object ManagerEnv {
     
@@ -622,64 +617,63 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Messages extends StObject {
     
-    var ConvertingToBase64: String = js.native
+    var ConvertingToBase64: String
     
-    var ConvertingToBlob: String = js.native
+    var ConvertingToBlob: String
     
-    var Downloading: String = js.native
+    var Downloading: String
     
-    var Encoding: String = js.native
+    var Encoding: String
     
-    var Err_BrowserNotSupportWasm: String = js.native
+    var Err_BrowserNotSupportWasm: String
     
-    var Init_AllJsLoaded: String = js.native
+    var Init_AllJsLoaded: String
     
-    var Init_CheckDWT: String = js.native
+    var Init_CheckDWT: String
     
-    var Init_CheckDWTVersion: String = js.native
+    var Init_CheckDWTVersion: String
     
-    var Init_CheckingLicense: String = js.native
+    var Init_CheckingLicense: String
     
-    var Init_CompilingWasm: String = js.native
+    var Init_CompilingWasm: String
     
-    var Init_ConfiguringDWT: String = js.native
+    var Init_ConfiguringDWT: String
     
-    var Init_CreatingDWT: String = js.native
+    var Init_CreatingDWT: String
     
-    var Init_DownloadingWasm: String = js.native
+    var Init_DownloadingWasm: String
     
-    var Init_FireBeforeInitEvt: String = js.native
+    var Init_FireBeforeInitEvt: String
     
-    var Init_GetLicenseInfoForDWT: String = js.native
+    var Init_GetLicenseInfoForDWT: String
     
-    var Init_InitActiveX: String = js.native
+    var Init_InitActiveX: String
     
-    var Init_InitDynamsoftService: String = js.native
+    var Init_InitDynamsoftService: String
     
-    var Init_InitH5: String = js.native
+    var Init_InitH5: String
     
-    var Init_InitWasm: String = js.native
+    var Init_InitWasm: String
     
-    var Init_LoadingViewerJs: String = js.native
+    var Init_LoadingViewerJs: String
     
-    var Init_LookingLicense: String = js.native
+    var Init_LookingLicense: String
     
-    var Init_SetLicenseForDWT: String = js.native
+    var Init_SetLicenseForDWT: String
     
-    var Loading: String = js.native
+    var Loading: String
     
-    var LoadingPdf: String = js.native
+    var LoadingPdf: String
     
-    var LoadingTiff: String = js.native
+    var LoadingTiff: String
     
-    var SavingPdf: String = js.native
+    var SavingPdf: String
     
-    var SavingTiff: String = js.native
+    var SavingTiff: String
     
-    var Uploading: String = js.native
+    var Uploading: String
   }
   object Messages {
     
@@ -807,20 +801,19 @@ object dynamsoftMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Product extends StObject {
     
-    var bActiveXEdition: Boolean = js.native
+    var bActiveXEdition: Boolean
     
-    var bChromeEdition: Boolean = js.native
+    var bChromeEdition: Boolean
     
-    var bHTML5Edition: Boolean = js.native
+    var bHTML5Edition: Boolean
     
-    var bPluginEdition: Boolean = js.native
+    var bPluginEdition: Boolean
     
-    var host: String = js.native
+    var host: String
     
-    var name: String = js.native
+    var name: String
   }
   object Product {
     
@@ -1115,11 +1108,11 @@ object dynamsoftMod extends Shortcut {
       */
     var UseLocalService: Boolean = js.native
     
-    var initQueue: js.Array[_] = js.native
+    var initQueue: js.Array[js.Any] = js.native
   }
   
-  type _To = (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) with TypeofDynamsoftStatic
+  type _To = (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic
   
   /* This means you don't have to write `default`, but can instead just say `dynamsoftMod.foo` */
-  override def _to: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) with TypeofDynamsoftStatic = default
+  override def _to: (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DynamsoftEnums */ js.Any) & TypeofDynamsoftStatic = default
 }

@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html)
   */
-@js.native
 trait predominance extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait predominance extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
     */
-  def createRenderer(params: predominanceCreateRendererParams): js.Promise[predominanceRendererResult] = js.native
+  def createRenderer(params: predominanceCreateRendererParams): js.Promise[predominanceRendererResult]
 }
 object predominance {
   

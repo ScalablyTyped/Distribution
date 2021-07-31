@@ -18,7 +18,6 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Sprite
-  extends GameObject
+  extends StObject
+     with GameObject
      with Alpha
      with BlendMode
      with Depth
@@ -62,9 +62,9 @@ trait Sprite
     * @param startFrame Optionally start the animation playing from this frame index. Default 0.
     */
   def play(key: String): this.type = js.native
-  def play(key: String, ignoreIfPlaying: js.UndefOr[scala.Nothing], startFrame: integer): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean): this.type = js.native
   def play(key: String, ignoreIfPlaying: Boolean, startFrame: integer): this.type = js.native
+  def play(key: String, ignoreIfPlaying: Unit, startFrame: integer): this.type = js.native
   
   /**
     * Update this Sprite's animations.

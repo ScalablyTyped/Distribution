@@ -3,23 +3,21 @@ package typings.reactNativeMaterialUi.anon
 import typings.reactNativeMaterialUi.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountContainer extends StObject {
   
-  var accountContainer: js.UndefOr[ViewStyle] = js.native
+  var accountContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var activeAvatarContainer: js.UndefOr[ViewStyle] = js.native
+  var activeAvatarContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var avatarsContainer: js.UndefOr[ViewStyle] = js.native
+  var avatarsContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var container: js.UndefOr[ViewStyle] = js.native
+  var container: js.UndefOr[ViewStyle] = js.undefined
   
-  var inactiveAvatarContainer: js.UndefOr[ViewStyle] = js.native
+  var inactiveAvatarContainer: js.UndefOr[ViewStyle] = js.undefined
   
-  var topContainer: js.UndefOr[ViewStyle] = js.native
+  var topContainer: js.UndefOr[ViewStyle] = js.undefined
 }
 object AccountContainer {
   

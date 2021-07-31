@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEc2unexpectedexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EC2UnexpectedExceptionDetails> * / any */ @js.native
-  trait EC2UnexpectedException extends InvokeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EC2UnexpectedExceptionDetails> * / any */ trait EC2UnexpectedException
+    extends StObject
+       with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException
   }
   object EC2UnexpectedException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2UnexpectedException): EC2UnexpectedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EC2UnexpectedException = {
+      val __obj = js.Dynamic.literal(name = "EC2UnexpectedException")
       __obj.asInstanceOf[EC2UnexpectedException]
     }
     
@@ -30,23 +30,22 @@ object typesEc2unexpectedexceptionMod {
     }
   }
   
-  @js.native
   trait EC2UnexpectedExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var EC2ErrorCode: js.UndefOr[String] = js.native
+    var EC2ErrorCode: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object EC2UnexpectedExceptionDetails {
     

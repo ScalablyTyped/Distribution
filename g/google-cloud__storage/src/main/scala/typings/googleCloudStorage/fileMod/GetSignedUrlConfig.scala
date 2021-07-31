@@ -11,37 +11,35 @@ import typings.node.httpMod.OutgoingHttpHeaders
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSignedUrlConfig extends StObject {
   
-  var accessibleAt: js.UndefOr[String | Double | Date] = js.native
+  var accessibleAt: js.UndefOr[String | Double | Date] = js.undefined
   
-  var action: read | write | delete_ | resumable = js.native
+  var action: read | write | delete_ | resumable
   
-  var cname: js.UndefOr[String] = js.native
+  var cname: js.UndefOr[String] = js.undefined
   
-  var contentMd5: js.UndefOr[String] = js.native
+  var contentMd5: js.UndefOr[String] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
-  var expires: String | Double | Date = js.native
+  var expires: String | Double | Date
   
-  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+  var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
   
-  var promptSaveAs: js.UndefOr[String] = js.native
+  var promptSaveAs: js.UndefOr[String] = js.undefined
   
-  var queryParams: js.UndefOr[Query] = js.native
+  var queryParams: js.UndefOr[Query] = js.undefined
   
-  var responseDisposition: js.UndefOr[String] = js.native
+  var responseDisposition: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[v2 | v4] = js.native
+  var version: js.UndefOr[v2 | v4] = js.undefined
   
-  var virtualHostedStyle: js.UndefOr[Boolean] = js.native
+  var virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
 }
 object GetSignedUrlConfig {
   

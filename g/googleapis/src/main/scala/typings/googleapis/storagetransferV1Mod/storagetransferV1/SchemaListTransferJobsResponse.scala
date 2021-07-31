@@ -2,24 +2,22 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from ListTransferJobs.
   */
-@js.native
 trait SchemaListTransferJobsResponse extends StObject {
   
   /**
     * The list next page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of transfer jobs.
     */
-  var transferJobs: js.UndefOr[js.Array[SchemaTransferJob]] = js.native
+  var transferJobs: js.UndefOr[js.Array[SchemaTransferJob]] = js.undefined
 }
 object SchemaListTransferJobsResponse {
   

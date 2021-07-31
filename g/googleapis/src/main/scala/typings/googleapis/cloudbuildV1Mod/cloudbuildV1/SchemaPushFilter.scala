@@ -2,13 +2,11 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Push contains filter properties for matching GitHub git pushes.
   */
-@js.native
 trait SchemaPushFilter extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaPushFilter extends StObject {
     * accepted is the syntax accepted by RE2 and described at
     * https://github.com/google/re2/wiki/Syntax
     */
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
   /**
     * Regexes of tags to match.  The syntax of the regular expressions accepted
     * is the syntax accepted by RE2 and described at
     * https://github.com/google/re2/wiki/Syntax
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object SchemaPushFilter {
   

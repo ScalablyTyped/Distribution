@@ -3,21 +3,19 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFConditionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchCondition extends StObject {
   
-  def Clone(): ISearchCondition = js.native
+  def Clone(): ISearchCondition
   
-  var ConditionType: MFConditionType = js.native
+  var ConditionType: MFConditionType
   
-  var Expression: IExpression = js.native
+  var Expression: IExpression
   
-  def Set(Expression: IExpression, ConditionType: MFConditionType, TypedValue: ITypedValue): Unit = js.native
+  def Set(Expression: IExpression, ConditionType: MFConditionType, TypedValue: ITypedValue): Unit
   
-  var TypedValue: ITypedValue = js.native
+  var TypedValue: ITypedValue
 }
 object ISearchCondition {
   

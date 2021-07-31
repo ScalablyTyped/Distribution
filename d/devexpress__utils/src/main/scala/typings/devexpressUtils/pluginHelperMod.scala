@@ -4,7 +4,6 @@ import typings.std.ActiveXObject
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginHelperMod {
@@ -19,25 +18,20 @@ object pluginHelperMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.getActiveXObject")
-    @js.native
-    def getActiveXObject(name: String): ActiveXObject | Null = js.native
+    @scala.inline
+    def getActiveXObject(name: String): ActiveXObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveXObject")(name.asInstanceOf[js.Any]).asInstanceOf[ActiveXObject | Null]
     
-    @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.getNavigatorPlugin")
-    @js.native
-    def getNavigatorPlugin(name: String): Plugin | Null = js.native
+    @scala.inline
+    def getNavigatorPlugin(name: String): Plugin | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNavigatorPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[Plugin | Null]
     
-    @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.getPdfPlugin")
-    @js.native
-    def getPdfPlugin(): js.Any = js.native
+    @scala.inline
+    def getPdfPlugin(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPdfPlugin")().asInstanceOf[js.Any]
     
-    @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.getVersion")
-    @js.native
-    def getVersion(): Double | Null = js.native
+    @scala.inline
+    def getVersion(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[Double | Null]
     
-    @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.isInstalled")
-    @js.native
-    def isInstalled(): Boolean = js.native
+    @scala.inline
+    def isInstalled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstalled")().asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/pdf/plugin-helper", "PdfPluginHelper.plugin")
     @js.native

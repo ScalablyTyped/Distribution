@@ -11,30 +11,30 @@ import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-zoom", "zoom")
+  @JSImport("d3-zoom", JSImport.Namespace)
   @js.native
-  def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def zoom[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](): ZoomBehavior[ZoomRefElement, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("zoom")().asInstanceOf[ZoomBehavior[ZoomRefElement, Datum]]
   
   @JSImport("d3-zoom", "zoomIdentity")
   @js.native
   val zoomIdentity: ZoomTransform_ = js.native
   
-  @JSImport("d3-zoom", "zoomTransform")
-  @js.native
-  def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = js.native
+  @scala.inline
+  def zoomTransform(node: ZoomedElementBaseType): ZoomTransform_ = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomTransform")(node.asInstanceOf[js.Any]).asInstanceOf[ZoomTransform_]
   
-  @js.native
   trait D3ZoomEvent[ZoomRefElement /* <: ZoomedElementBaseType */, Datum] extends StObject {
     
     /**
       * The underlying input event, such as mousemove or touchmove.
       */
-    var sourceEvent: js.Any = js.native
+    var sourceEvent: js.Any
     
     /**
       * Applies this zoom behavior to the specified selection, binding the necessary event listeners to
@@ -49,23 +49,53 @@ object mod {
     /**
       * The ZoomBehavior associated with the event
       */
-    def target(selection: Selection_[ZoomRefElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def target(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], args: js.Any*): Unit
     /**
       * The ZoomBehavior associated with the event
       */
     @JSName("target")
-    var target_Original: ZoomBehavior[ZoomRefElement, Datum] = js.native
+    var target_Original: ZoomBehavior[ZoomRefElement, Datum]
     
     // Leave failsafe string type for cases like 'zoom.foo'
     /**
       * The current zoom transform
       */
-    var transform: ZoomTransform_ = js.native
+    var transform: ZoomTransform_
     
     /**
       * The event type for the zoom event
       */
-    var `type`: start | zoom | end | String = js.native
+    var `type`: start | zoom | end | String
+  }
+  object D3ZoomEvent {
+    
+    @scala.inline
+    def apply[ZoomRefElement /* <: ZoomedElementBaseType */, Datum](
+      sourceEvent: js.Any,
+      target: ZoomBehavior[ZoomRefElement, Datum],
+      transform: ZoomTransform_,
+      `type`: start | zoom | end | String
+    ): D3ZoomEvent[ZoomRefElement, Datum] = {
+      val __obj = js.Dynamic.literal(sourceEvent = sourceEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[D3ZoomEvent[ZoomRefElement, Datum]]
+    }
+    
+    @scala.inline
+    implicit class D3ZoomEventMutableBuilder[Self <: D3ZoomEvent[?, ?], ZoomRefElement /* <: ZoomedElementBaseType */, Datum] (val x: Self & (D3ZoomEvent[ZoomRefElement, Datum])) extends AnyVal {
+      
+      @scala.inline
+      def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTarget(value: ZoomBehavior[ZoomRefElement, Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTransform(value: ZoomTransform_): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setType(value: start | zoom | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -82,7 +112,7 @@ object mod {
       * @param selection A D3 selection of elements.
       * @param args Optional arguments to be passed in.
       */
-    def apply(selection: Selection_[ZoomRefElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def apply(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
     
     /**
       * Return the current click distance threshold, which defaults to zero.
@@ -279,21 +309,28 @@ object mod {
       * @param p A two-element array [px,py] or a function.
       * If a function, it is invoked for each selected element, being passed the current datum d and index i, with the this context as the current DOM element.
       */
-    def scaleBy(selection: Selection_[ZoomRefElement, Datum, _, _], k: Double): Unit = js.native
-    def scaleBy(selection: Selection_[ZoomRefElement, Datum, _, _], k: Double, p: js.Tuple2[Double, Double]): Unit = js.native
+    def scaleBy(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], k: Double): Unit = js.native
     def scaleBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
+      k: Double,
+      p: js.Tuple2[Double, Double]
+    ): Unit = js.native
+    def scaleBy(
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       k: Double,
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
     ): Unit = js.native
-    def scaleBy(selection: Selection_[ZoomRefElement, Datum, _, _], k: ValueFn[ZoomRefElement, Datum, Double]): Unit = js.native
     def scaleBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
+      k: ValueFn[ZoomRefElement, Datum, Double]
+    ): Unit = js.native
+    def scaleBy(
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       k: ValueFn[ZoomRefElement, Datum, Double],
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
     def scaleBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       k: ValueFn[ZoomRefElement, Datum, Double],
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
     ): Unit = js.native
@@ -350,11 +387,18 @@ object mod {
       * @param p A two-element array [px,py] or a function.
       * If a function, it is invoked for each selected element, being passed the current datum d and index i, with the this context as the current DOM element.
       */
-    def scaleTo(selection: Selection_[ZoomRefElement, Datum, _, _], k: Double): Unit = js.native
-    def scaleTo(selection: Selection_[ZoomRefElement, Datum, _, _], k: Double, p: js.Tuple2[Double, Double]): Unit = js.native
-    def scaleTo(selection: Selection_[ZoomRefElement, Datum, _, _], k: ValueFn[ZoomRefElement, Datum, Double]): Unit = js.native
+    def scaleTo(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], k: Double): Unit = js.native
     def scaleTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
+      k: Double,
+      p: js.Tuple2[Double, Double]
+    ): Unit = js.native
+    def scaleTo(
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
+      k: ValueFn[ZoomRefElement, Datum, Double]
+    ): Unit = js.native
+    def scaleTo(
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       k: ValueFn[ZoomRefElement, Datum, Double],
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
@@ -408,11 +452,11 @@ object mod {
     def touchable(touchable: ValueFn[ZoomRefElement, Datum, Boolean]): this.type = js.native
     
     def transform(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       transform: js.ThisFunction2[/* this */ ZoomRefElement, /* event */ js.Any, /* d */ Datum, ZoomTransform_]
     ): Unit = js.native
     def transform(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       transform: js.ThisFunction2[/* this */ ZoomRefElement, /* event */ js.Any, /* d */ Datum, ZoomTransform_],
       point: js.ThisFunction2[
           /* this */ ZoomRefElement, 
@@ -422,7 +466,7 @@ object mod {
         ]
     ): Unit = js.native
     def transform(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       transform: js.ThisFunction2[/* this */ ZoomRefElement, /* event */ js.Any, /* d */ Datum, ZoomTransform_],
       point: js.Tuple2[Double, Double]
     ): Unit = js.native
@@ -440,9 +484,9 @@ object mod {
       * @param point A two-element array [x, y] or a function that returns such an array.
       * If a function, it is invoked for each selected element, being passed the current event (event) and datum d, with the this context as the current DOM element.
       */
-    def transform(selection: Selection_[ZoomRefElement, Datum, _, _], transform: ZoomTransform_): Unit = js.native
+    def transform(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], transform: ZoomTransform_): Unit = js.native
     def transform(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       transform: ZoomTransform_,
       point: js.ThisFunction2[
           /* this */ ZoomRefElement, 
@@ -452,7 +496,7 @@ object mod {
         ]
     ): Unit = js.native
     def transform(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       transform: ZoomTransform_,
       point: js.Tuple2[Double, Double]
     ): Unit = js.native
@@ -503,19 +547,19 @@ object mod {
       * @param y A number or a function that returns a number.
       * If a function, it is invoked for each selected element, being passed the current datum d and index i, with the this context as the current DOM element.
       */
-    def translateBy(selection: Selection_[ZoomRefElement, Datum, _, _], x: Double, y: Double): Unit = js.native
+    def translateBy(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], x: Double, y: Double): Unit = js.native
     def translateBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: ValueFn[ZoomRefElement, Datum, Double]
     ): Unit = js.native
     def translateBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: Double
     ): Unit = js.native
     def translateBy(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: ValueFn[ZoomRefElement, Datum, Double]
     ): Unit = js.native
@@ -572,66 +616,66 @@ object mod {
       * @param p A two-element array [px,py] or a function
       * If a function, it is invoked for each selected element, being passed the current datum d and index i, with the this context as the current DOM element.
       */
-    def translateTo(selection: Selection_[ZoomRefElement, Datum, _, _], x: Double, y: Double): Unit = js.native
+    def translateTo(selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any], x: Double, y: Double): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: Double,
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: Double,
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: ValueFn[ZoomRefElement, Datum, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: ValueFn[ZoomRefElement, Datum, Double],
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: Double,
       y: ValueFn[ZoomRefElement, Datum, Double],
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: Double
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: Double,
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: Double,
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: ValueFn[ZoomRefElement, Datum, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: ValueFn[ZoomRefElement, Datum, Double],
       p: js.Tuple2[Double, Double]
     ): Unit = js.native
     def translateTo(
-      selection: Selection_[ZoomRefElement, Datum, _, _],
+      selection: Selection_[ZoomRefElement, Datum, js.Any, js.Any],
       x: ValueFn[ZoomRefElement, Datum, Double],
       y: ValueFn[ZoomRefElement, Datum, Double],
       p: ValueFn[ZoomRefElement, Datum, js.Tuple2[Double, Double]]
@@ -732,7 +776,6 @@ object mod {
     def range(range: js.Array[Double]): this.type = js.native
   }
   
-  @js.native
   trait ZoomTransform_ extends StObject {
     
     /**
@@ -742,21 +785,21 @@ object mod {
       * @param point Point coordinates [x, y]
       */
     @JSName("apply")
-    def apply(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
+    def apply(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double]
     
     /**
       * Return the transformation of the specified x-coordinate, xk + tx.
       *
       * @param x Value of x-coordinate.
       */
-    def applyX(x: Double): Double = js.native
+    def applyX(x: Double): Double
     
     /**
       * Return the transformation of the specified y-coordinate, yk + ty.
       *
       * @param y Value of y-coordinate.
       */
-    def applyY(y: Double): Double = js.native
+    def applyY(y: Double): Double
     
     /**
       * Return the inverse transformation of the specified point which is a two-element array of numbers [x, y].
@@ -764,21 +807,21 @@ object mod {
       *
       * @param point Point coordinates [x, y]
       */
-    def invert(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
+    def invert(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double]
     
     /**
       * Return the inverse transformation of the specified x-coordinate, (x - tx) / k.
       *
       * @param x Value of x-coordinate.
       */
-    def invertX(x: Double): Double = js.native
+    def invertX(x: Double): Double
     
     /**
       * Return the inverse transformation of the specified y-coordinate, (y - ty) / k.
       *
       * @param y Value of y-coordinate.
       */
-    def invertY(y: Double): Double = js.native
+    def invertY(y: Double): Double
     
     /**
       * The scale factor k.
@@ -786,7 +829,7 @@ object mod {
       * use transform.scale and transform.translate to derive a new transform.
       * Also see zoom.scaleBy, zoom.scaleTo and zoom.translateBy for convenience methods on the zoom behavior.
       */
-    val k: Double = js.native
+    val k: Double
     
     /**
       * Returns a copy of the continuous scale x whose domain is transformed.
@@ -800,7 +843,7 @@ object mod {
       *
       * @param xScale A continuous scale for x-dimension.
       */
-    def rescaleX[S /* <: ZoomScale */](xScale: S): S = js.native
+    def rescaleX[S /* <: ZoomScale */](xScale: S): S
     
     /**
       * Returns a copy of the continuous scale y whose domain is transformed.
@@ -814,14 +857,14 @@ object mod {
       *
       * @param yScale A continuous scale for y-dimension.
       */
-    def rescaleY[S /* <: ZoomScale */](yScale: S): S = js.native
+    def rescaleY[S /* <: ZoomScale */](yScale: S): S
     
     /**
       * Return a transform whose scale k1 is equal to k0 × k, where k0 is this transform’s scale.
       *
       * @param k A scale factor.
       */
-    def scale(k: Double): ZoomTransform_ = js.native
+    def scale(k: Double): ZoomTransform_
     
     /**
       * Returns a transform whose translation tx1 and ty1 is equal to tx0 + tkx and ty0 + tky,
@@ -830,7 +873,7 @@ object mod {
       * @param x Amount of translation in x-direction.
       * @param y Amount of translation in y-direction.
       */
-    def translate(x: Double, y: Double): ZoomTransform_ = js.native
+    def translate(x: Double, y: Double): ZoomTransform_
     
     /**
       * The translation amount tx along the x-axis.
@@ -838,7 +881,7 @@ object mod {
       * use transform.scale and transform.translate to derive a new transform.
       * Also see zoom.scaleBy, zoom.scaleTo and zoom.translateBy for convenience methods on the zoom behavior.
       */
-    val x: Double = js.native
+    val x: Double
     
     /**
       * The translation amount ty along the y-axis
@@ -846,7 +889,7 @@ object mod {
       * use transform.scale and transform.translate to derive a new transform.
       * Also see zoom.scaleBy, zoom.scaleTo and zoom.translateBy for convenience methods on the zoom behavior.
       */
-    val y: Double = js.native
+    val y: Double
   }
   object ZoomTransform_ {
     

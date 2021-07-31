@@ -2,20 +2,18 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // parameters type
-@js.native
 trait ListBucketsQueryType extends StObject {
   
   // search buckets using prefix key
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
   // search start from marker, including marker key
-  var `max-keys`: js.UndefOr[String | Double] = js.native
+  var `max-keys`: js.UndefOr[String | Double] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
 }
 object ListBucketsQueryType {
   

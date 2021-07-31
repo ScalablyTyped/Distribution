@@ -2,29 +2,27 @@ package typings.googleapis.v1beta3Mod.datastoreV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for Index operations.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1IndexOperationMetadata extends StObject {
   
   /**
     * Metadata common to all Datastore Admin operations.
     */
-  var common: js.UndefOr[SchemaGoogleDatastoreAdminV1CommonMetadata] = js.native
+  var common: js.UndefOr[SchemaGoogleDatastoreAdminV1CommonMetadata] = js.undefined
   
   /**
     * The index resource ID that this operation is acting on.
     */
-  var indexId: js.UndefOr[String] = js.native
+  var indexId: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of the number of entities processed.
     */
-  var progressEntities: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.native
+  var progressEntities: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1IndexOperationMetadata {
   

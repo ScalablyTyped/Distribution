@@ -2,21 +2,19 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildNotDeleted extends StObject {
   
   /**
     * The ID of the build that could not be successfully deleted.
     */
-  var id: js.UndefOr[NonEmptyString] = js.native
+  var id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Additional information about the build that could not be successfully deleted.
     */
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
 }
 object BuildNotDeleted {
   

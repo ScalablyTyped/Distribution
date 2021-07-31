@@ -2,31 +2,29 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScimProvisionAndInviteUserEndpoint extends StObject {
   
   /**
     * List of user emails.
     */
-  var emails: js.Array[ScimProvisionAndInviteUserParamsEmails] = js.native
+  var emails: js.Array[ScimProvisionAndInviteUserParamsEmails]
   
-  var name: ScimProvisionAndInviteUserParamsName = js.native
+  var name: ScimProvisionAndInviteUserParamsName
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * The SCIM schema URIs.
     */
-  var schemas: js.Array[String] = js.native
+  var schemas: js.Array[String]
   
   /**
     * The username for the user.
     */
-  var userName: String = js.native
+  var userName: String
 }
 object ScimProvisionAndInviteUserEndpoint {
   

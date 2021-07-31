@@ -2,51 +2,49 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
   /**
     * The ARN of the user.
     */
-  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.undefined
   
   /**
     * The authentication type for the user.
     */
-  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType = js.native
+  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType
   
   /**
     * The date and time the user was created in the user pool.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.native
+  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Specifies whether the user in the user pool is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The first name, or given name, of the user.
     */
-  var FirstName: js.UndefOr[UserAttributeValue] = js.native
+  var FirstName: js.UndefOr[UserAttributeValue] = js.undefined
   
   /**
     * The last name, or surname, of the user.
     */
-  var LastName: js.UndefOr[UserAttributeValue] = js.native
+  var LastName: js.UndefOr[UserAttributeValue] = js.undefined
   
   /**
     * The status of the user in the user pool. The status can be one of the following:   UNCONFIRMED – The user is created but not confirmed.   CONFIRMED – The user is confirmed.   ARCHIVED – The user is no longer active.   COMPROMISED – The user is disabled because of a potential security threat.   UNKNOWN – The user status is not known.  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the user.  Users' email addresses are case-sensitive. 
     */
-  var UserName: js.UndefOr[Username] = js.native
+  var UserName: js.UndefOr[Username] = js.undefined
 }
 object User {
   

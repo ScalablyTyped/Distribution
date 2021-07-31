@@ -3,25 +3,24 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAnnotationCfg
-  extends GroupComponentCfg
+  extends StObject
+     with GroupComponentCfg
      with EnhancedTextCfg {
   
   /**
     * 文本标注位置 x
     * @type {number}
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * 文本标注位置 y
     * @type {number}
     */
-  var y: Double = js.native
+  var y: Double
 }
 object TextAnnotationCfg {
   

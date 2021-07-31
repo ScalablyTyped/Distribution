@@ -2,26 +2,24 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebPageFont extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var FixedWidthFont: String = js.native
+  var FixedWidthFont: String
   
-  var FixedWidthFontSize: Double = js.native
+  var FixedWidthFontSize: Double
   
   @JSName("Office.WebPageFont_typekey")
-  var OfficeDotWebPageFont_typekey: WebPageFont = js.native
+  var OfficeDotWebPageFont_typekey: WebPageFont
   
-  var ProportionalFont: String = js.native
+  var ProportionalFont: String
   
-  var ProportionalFontSize: Double = js.native
+  var ProportionalFontSize: Double
 }
 object WebPageFont {
   

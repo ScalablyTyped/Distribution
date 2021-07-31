@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPairIds extends StObject {
   
   /**
     * A list of CloudFront key pair identifiers.
     */
-  var Items: js.UndefOr[KeyPairIdList] = js.native
+  var Items: js.UndefOr[KeyPairIdList] = js.undefined
   
   /**
     * The number of key pair identifiers in the list.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object KeyPairIds {
   

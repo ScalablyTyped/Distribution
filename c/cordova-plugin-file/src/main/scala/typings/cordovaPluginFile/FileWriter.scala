@@ -3,7 +3,6 @@ package typings.cordovaPluginFile
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * actions, rather than just saving a single Blob.
   */
 @js.native
-trait FileWriter extends FileSaver {
+trait FileWriter
+  extends StObject
+     with FileSaver {
   
   /**
     * The length of the file. If the user does not have read access to the file,

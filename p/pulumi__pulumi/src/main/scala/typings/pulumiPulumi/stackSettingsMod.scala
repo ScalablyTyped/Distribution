@@ -3,21 +3,19 @@ package typings.pulumiPulumi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackSettingsMod {
   
-  @js.native
   trait StackSettings extends StObject {
     
-    var config: js.UndefOr[StringDictionary[StackSettingsConfigValue]] = js.native
+    var config: js.UndefOr[StringDictionary[StackSettingsConfigValue]] = js.undefined
     
-    var encryptedKey: js.UndefOr[String] = js.native
+    var encryptedKey: js.UndefOr[String] = js.undefined
     
-    var encryptionSalt: js.UndefOr[String] = js.native
+    var encryptionSalt: js.UndefOr[String] = js.undefined
     
-    var secretsProvider: js.UndefOr[String] = js.native
+    var secretsProvider: js.UndefOr[String] = js.undefined
   }
   object StackSettings {
     
@@ -58,10 +56,9 @@ object stackSettingsMod {
   
   type StackSettingsConfigValue = String | StackSettingsSecureConfigValue | js.Any
   
-  @js.native
   trait StackSettingsSecureConfigValue extends StObject {
     
-    var secure: String = js.native
+    var secure: String
   }
   object StackSettingsSecureConfigValue {
     

@@ -6,15 +6,16 @@ import typings.inquirer.mod.Inquirer
 import typings.inquirer.mod.Question
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(name: String, inquirer: Inquirer): js.Promise[StringDictionary[String]] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], inquirer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[String]]]
+  @scala.inline
+  def apply(name: Question[Answers], inquirer: Inquirer): js.Promise[StringDictionary[String]] = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], inquirer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[String]]]
+  
   @JSImport("inquirer-npm-name", JSImport.Namespace)
   @js.native
-  def apply(name: String, inquirer: Inquirer): js.Promise[StringDictionary[String]] = js.native
-  @JSImport("inquirer-npm-name", JSImport.Namespace)
-  @js.native
-  def apply(name: Question[Answers], inquirer: Inquirer): js.Promise[StringDictionary[String]] = js.native
+  val ^ : js.Any = js.native
 }

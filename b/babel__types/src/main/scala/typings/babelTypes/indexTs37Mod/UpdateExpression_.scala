@@ -5,30 +5,29 @@ import typings.babelTypes.babelTypesStrings.UpdateExpression
 import typings.babelTypes.babelTypesStrings.`--`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait UpdateExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait UpdateExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
-  var operator: PlussignPlussign | `--` = js.native
+  var operator: PlussignPlussign | `--`
   
-  var prefix: Boolean = js.native
+  var prefix: Boolean
   
   @JSName("type")
-  var type_UpdateExpression_ : UpdateExpression = js.native
+  var type_UpdateExpression_ : UpdateExpression
 }
 object UpdateExpression_ {
   
   @scala.inline
-  def apply(argument: Expression, operator: PlussignPlussign | `--`, prefix: Boolean, `type`: UpdateExpression): UpdateExpression_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: Expression, operator: PlussignPlussign | `--`, prefix: Boolean): UpdateExpression_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("UpdateExpression")
     __obj.asInstanceOf[UpdateExpression_]
   }
   

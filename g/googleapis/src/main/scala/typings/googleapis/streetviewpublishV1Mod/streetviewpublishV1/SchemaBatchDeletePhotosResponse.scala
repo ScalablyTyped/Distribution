@@ -2,20 +2,18 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to batch delete of one or more Photos.
   */
-@js.native
 trait SchemaBatchDeletePhotosResponse extends StObject {
   
   /**
     * The status for the operation to delete a single Photo in the batch
     * request.
     */
-  var status: js.UndefOr[js.Array[SchemaStatus]] = js.native
+  var status: js.UndefOr[js.Array[SchemaStatus]] = js.undefined
 }
 object SchemaBatchDeletePhotosResponse {
   

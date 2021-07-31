@@ -2,20 +2,18 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & {  state :std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & any>,   type :string,   stale :false}> | tuya-panel-kit.tuya-panel-kit/@react-navigation/native.PartialState<std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & any>,   type :string,   stale :false}>> | undefined} */
-@js.native
 trait ReadonlykeystringnamestriKey extends StObject {
   
-  val key: String = js.native
+  val key: String
   
-  val name: String = js.native
+  val name: String
   
-  val params: js.UndefOr[js.Object] = js.native
+  val params: js.UndefOr[js.Object] = js.undefined
   
-  var state: js.UndefOr[ReadonlykeystringindexnumIndex | PartialStateReadonlykeystIndex] = js.native
+  var state: js.UndefOr[ReadonlykeystringindexnumIndex | PartialStateReadonlykeystIndex] = js.undefined
 }
 object ReadonlykeystringnamestriKey {
   

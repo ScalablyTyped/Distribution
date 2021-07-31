@@ -2,22 +2,21 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows to harvest mineral deposits.
   */
-@js.native
 trait StructureExtractor
-  extends OwnedStructure[STRUCTURE_EXTRACTOR]
+  extends StObject
+     with OwnedStructure[STRUCTURE_EXTRACTOR]
      with AnyOwnedStructure
      with ConcreteStructure[js.Any] {
   
   /**
     * The amount of game ticks until the next harvest action is possible.
     */
-  var cooldown: Double = js.native
+  var cooldown: Double
 }
 object StructureExtractor {
   

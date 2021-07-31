@@ -7,7 +7,6 @@ import typings.webdriverJsExtender.webdriverJsExtenderStrings.POST
 import typings.webdriverJsExtender.webdriverJsExtenderStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandDefinitionMod {
@@ -24,28 +23,28 @@ object commandDefinitionMod {
       params: js.Array[String],
       method: DELETE,
       path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[_]]
+      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ) = this()
     def this(
       name: String,
       params: js.Array[String],
       method: GET,
       path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[_]]
+      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ) = this()
     def this(
       name: String,
       params: js.Array[String],
       method: POST,
       path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[_]]
+      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ) = this()
     def this(
       name: String,
       params: js.Array[String],
       method: PUT,
       path: String,
-      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[_]]
+      preprocessParams: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ) = this()
     
     def compile[T](extender: Extender, silentFailure: Boolean): js.Function1[/* repeated */ js.Any, js.Promise[T]] = js.native

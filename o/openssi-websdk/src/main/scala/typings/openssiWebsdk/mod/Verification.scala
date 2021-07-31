@@ -2,21 +2,19 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Verification extends StObject {
   
-  var allow_proof_request_override: js.UndefOr[Boolean] = js.native
+  var allow_proof_request_override: js.UndefOr[Boolean] = js.undefined
   
-  var choices: js.UndefOr[Choices] = js.native
+  var choices: js.UndefOr[Choices] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var proof_request: ProofSchema = js.native
+  var proof_request: ProofSchema
   
-  var state: VerificationState = js.native
+  var state: VerificationState
 }
 object Verification {
   

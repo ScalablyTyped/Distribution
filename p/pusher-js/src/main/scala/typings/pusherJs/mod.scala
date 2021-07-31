@@ -12,7 +12,6 @@ import typings.pusherJs.pusherJsStrings.ajax
 import typings.pusherJs.pusherJsStrings.jsonp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,20 +19,21 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pusher-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Pusher {
+  class ^ protected ()
+    extends StObject
+       with Pusher {
     def this(apiKey: String) = this()
     def this(apiKey: String, config: Config) = this()
   }
   @JSImport("pusher-js", JSImport.Namespace)
   @js.native
-  val ^ : PusherStatic = js.native
+  val ^ : js.Object & PusherStatic = js.native
   
-  @js.native
   trait AuthConfig extends StObject {
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object AuthConfig {
     
@@ -60,12 +60,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait AuthInfo extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var channel_data: js.UndefOr[String] = js.native
+    var channel_data: js.UndefOr[String] = js.undefined
   }
   object AuthInfo {
     
@@ -92,7 +91,9 @@ object mod extends Shortcut {
   type Authorizer = js.Function2[/* channel */ Channel, /* options */ Config, Authorize]
   
   @js.native
-  trait Channel extends EventsDispatcher {
+  trait Channel
+    extends StObject
+       with EventsDispatcher {
     
     /**
       * Authenticates the connection as a member of the channel.
@@ -110,7 +111,6 @@ object mod extends Shortcut {
     def trigger(eventName: String, data: js.Any): Boolean = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
     /**
@@ -118,40 +118,40 @@ object mod extends Shortcut {
       * a ping message will be sent to check if the connection is still working.
       * Default value is is supplied by the server, low values will result in unnecessary traffic.
       */
-    var activityTimeout: js.UndefOr[Double] = js.native
+    var activityTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Allows passing additional data to authorizers. Supports query string params and headers (AJAX only).
       * For example, following will pass foo=bar via the query string and baz: boo via headers:
       */
-    var auth: js.UndefOr[AuthConfig] = js.native
+    var auth: js.UndefOr[AuthConfig] = js.undefined
     
     /**
       * Endpoint on your server that will return the authentication signature needed for private channels.
       */
-    var authEndpoint: js.UndefOr[String] = js.native
+    var authEndpoint: js.UndefOr[String] = js.undefined
     
     /**
       * Defines how the authentication endpoint, defined using authEndpoint, will be called.
       * There are two options available: ajax and jsonp.
       */
-    var authTransport: js.UndefOr[ajax | jsonp] = js.native
+    var authTransport: js.UndefOr[ajax | jsonp] = js.undefined
     
     /**
       * If you need custom authorization behavior you can provide your own authorizer function as follows:
       */
-    var authorizer: js.UndefOr[Authorizer] = js.native
+    var authorizer: js.UndefOr[Authorizer] = js.undefined
     
     /**
       * Allows connecting to a different datacenter by setting up correct hostnames and ports for the connection.
       */
-    var cluster: js.UndefOr[String] = js.native
+    var cluster: js.UndefOr[String] = js.undefined
     
     /**
       * Disables stats collection, so that connection metrics are not submitted to Pusher’s servers. These stats
       * are used for internal monitoring only and they do not affect the account stats.
       */
-    var disableStats: js.UndefOr[Boolean] = js.native
+    var disableStats: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specified which transports must not be used by Pusher to establish a connection.
@@ -159,7 +159,7 @@ object mod extends Shortcut {
       * Available transports: ws, wss, xhr_streaming, xhr_polling, sockjs.
       * Additional transports may be added in the future and without adding them to this list, they will be enabled.
       */
-    var disabledTransports: js.UndefOr[js.Array[Transport]] = js.native
+    var disabledTransports: js.UndefOr[js.Array[Transport]] = js.undefined
     
     /**
       * Specifies which transports should be used by Pusher to establish a connection.
@@ -167,43 +167,43 @@ object mod extends Shortcut {
       * Available transports: ws, wss, xhr_streaming, xhr_polling, sockjs.
       * Additional transports may be added in the future and without adding them to this list, they will be disabled.
       */
-    var enabledTransports: js.UndefOr[js.Array[Transport]] = js.native
+    var enabledTransports: js.UndefOr[js.Array[Transport]] = js.undefined
     
     /**
       * Forces the connection to use encrypted transports.
       * @deprecated
       */
-    var encrypted: js.UndefOr[Boolean] = js.native
+    var encrypted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Forces the connection to use encrypted transports.
       */
-    var forceTLS: js.UndefOr[Boolean] = js.native
+    var forceTLS: js.UndefOr[Boolean] = js.undefined
     
-    var httpHost: js.UndefOr[String] = js.native
+    var httpHost: js.UndefOr[String] = js.undefined
     
-    var httpPort: js.UndefOr[Double] = js.native
+    var httpPort: js.UndefOr[Double] = js.undefined
     
-    var httpsPort: js.UndefOr[Double] = js.native
+    var httpsPort: js.UndefOr[Double] = js.undefined
     
     /**
       * Ignores null origin checks for HTTP fallbacks. Use with care, it should be disabled only if necessary (i.e. PhoneGap).
       */
-    var ignoreNullOrigin: js.UndefOr[Boolean] = js.native
+    var ignoreNullOrigin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Time before the connection is terminated after sending a ping message.
       * Default is 30000 (30s). Low values will cause false disconnections, if latency is high.
       */
-    var pongTimeout: js.UndefOr[Double] = js.native
+    var pongTimeout: js.UndefOr[Double] = js.undefined
     
-    var wsHost: js.UndefOr[String] = js.native
+    var wsHost: js.UndefOr[String] = js.undefined
     
-    var wsPath: js.UndefOr[String] = js.native
+    var wsPath: js.UndefOr[String] = js.undefined
     
-    var wsPort: js.UndefOr[Double] = js.native
+    var wsPort: js.UndefOr[Double] = js.undefined
     
-    var wssPort: js.UndefOr[Double] = js.native
+    var wssPort: js.UndefOr[Double] = js.undefined
   }
   object Config {
     
@@ -345,7 +345,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait ConnectionManager extends EventsDispatcher {
+  trait ConnectionManager
+    extends StObject
+       with EventsDispatcher {
     
     /**
       * Establishes a connection to Pusher.
@@ -408,19 +410,19 @@ object mod extends Shortcut {
     def emit(eventName: String, data: js.Any): this.type = js.native
     
     def unbind(): this.type = js.native
-    def unbind(eventName: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def unbind(eventName: js.UndefOr[scala.Nothing], callback: Null, context: js.Any): this.type = js.native
-    def unbind(eventName: js.UndefOr[scala.Nothing], callback: EventCallback): this.type = js.native
-    def unbind(eventName: js.UndefOr[scala.Nothing], callback: EventCallback, context: js.Any): this.type = js.native
     def unbind(eventName: String): this.type = js.native
-    def unbind(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
     def unbind(eventName: String, callback: Null, context: js.Any): this.type = js.native
+    def unbind(eventName: String, callback: Unit, context: js.Any): this.type = js.native
     def unbind(eventName: String, callback: EventCallback): this.type = js.native
     def unbind(eventName: String, callback: EventCallback, context: js.Any): this.type = js.native
-    def unbind(eventName: Null, callback: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
     def unbind(eventName: Null, callback: Null, context: js.Any): this.type = js.native
+    def unbind(eventName: Null, callback: Unit, context: js.Any): this.type = js.native
     def unbind(eventName: Null, callback: EventCallback): this.type = js.native
     def unbind(eventName: Null, callback: EventCallback, context: js.Any): this.type = js.native
+    def unbind(eventName: Unit, callback: Null, context: js.Any): this.type = js.native
+    def unbind(eventName: Unit, callback: Unit, context: js.Any): this.type = js.native
+    def unbind(eventName: Unit, callback: EventCallback): this.type = js.native
+    def unbind(eventName: Unit, callback: EventCallback, context: js.Any): this.type = js.native
     
     def unbind_all(): this.type = js.native
     
@@ -428,12 +430,11 @@ object mod extends Shortcut {
     def unbind_global(callback: EventCallback): this.type = js.native
   }
   
-  @js.native
   trait Member[T] extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var info: T = js.native
+    var info: T
   }
   object Member {
     
@@ -444,7 +445,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class MemberMutableBuilder[Self <: Member[_], T] (val x: Self with Member[T]) extends AnyVal {
+    implicit class MemberMutableBuilder[Self <: Member[?], T] (val x: Self & Member[T]) extends AnyVal {
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -454,28 +455,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Members[T] extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
     /**
       * Calls back for each member in unspecified order.
       */
-    def each(callback: js.Function1[/* member */ Member[T], Unit]): Unit = js.native
+    def each(callback: js.Function1[/* member */ Member[T], Unit]): Unit
     
     /**
       * Returns member's info for given id.
       *
       * Resulting object containts two fields - id and info.
       */
-    def get(id: String): Null | T = js.native
+    def get(id: String): Null | T
     
-    var me: Member[T] = js.native
+    var me: Member[T]
     
-    var members: StringDictionary[Member[T]] = js.native
+    var members: StringDictionary[Member[T]]
     
-    var myID: String = js.native
+    var myID: String
   }
   object Members {
     
@@ -493,7 +493,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class MembersMutableBuilder[Self <: Members[_], T] (val x: Self with Members[T]) extends AnyVal {
+    implicit class MembersMutableBuilder[Self <: Members[?], T] (val x: Self & Members[T]) extends AnyVal {
       
       @scala.inline
       def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
@@ -516,13 +516,17 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait PresenceChannel[T] extends Channel {
+  trait PresenceChannel[T]
+    extends StObject
+       with Channel {
     
     var members: Members[T] = js.native
   }
   
   @js.native
-  trait Pusher extends EventsDispatcher {
+  trait Pusher
+    extends StObject
+       with EventsDispatcher {
     
     def allChannels(): js.Array[Channel] = js.native
     
@@ -560,7 +564,8 @@ object mod extends Shortcut {
   
   @js.native
   trait PusherStatic
-    extends Instantiable1[/* apiKey */ String, Pusher]
+    extends StObject
+       with Instantiable1[/* apiKey */ String, Pusher]
        with Instantiable2[/* apiKey */ String, /* config */ Config, Pusher] {
     
     var instances: js.Array[Pusher] = js.native
@@ -598,8 +603,8 @@ object mod extends Shortcut {
     def xhr_streaming: typings.pusherJs.pusherJsStrings.xhr_streaming = "xhr_streaming".asInstanceOf[typings.pusherJs.pusherJsStrings.xhr_streaming]
   }
   
-  type _To = PusherStatic
+  type _To = js.Object & PusherStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: PusherStatic = ^
+  override def _to: js.Object & PusherStatic = ^
 }

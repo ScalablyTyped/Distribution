@@ -6,30 +6,30 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.stack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StackTransform extends _Transforms {
+trait StackTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: js.UndefOr[FieldRef] = js.native
+  var field: js.UndefOr[FieldRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef]] = js.undefined
   
-  var offset: js.UndefOr[StackOffset | SignalRef] = js.native
+  var offset: js.UndefOr[StackOffset | SignalRef] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var `type`: stack = js.native
+  var `type`: stack
 }
 object StackTransform {
   
   @scala.inline
-  def apply(`type`: stack): StackTransform = {
+  def apply(): StackTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stack")
     __obj.asInstanceOf[StackTransform]
   }
   

@@ -2,20 +2,18 @@ package typings.reactBootstrapTypeahead.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.HintedInputContextKeys> */
-@js.native
 trait HintedInputContext[T /* <: TypeaheadModel */] extends StObject {
   
-  var hintText: js.UndefOr[String] = js.native
+  var hintText: js.UndefOr[String] = js.undefined
   
-  var initialItem: js.UndefOr[T] = js.native
+  var initialItem: js.UndefOr[T] = js.undefined
   
-  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.native
+  var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
   
-  var selectHintOnEnter: js.UndefOr[Boolean] = js.native
+  var selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
 }
 object HintedInputContext {
   
@@ -26,7 +24,7 @@ object HintedInputContext {
   }
   
   @scala.inline
-  implicit class HintedInputContextMutableBuilder[Self <: HintedInputContext[_], T /* <: TypeaheadModel */] (val x: Self with HintedInputContext[T]) extends AnyVal {
+  implicit class HintedInputContextMutableBuilder[Self <: HintedInputContext[?], T /* <: TypeaheadModel */] (val x: Self & HintedInputContext[T]) extends AnyVal {
     
     @scala.inline
     def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])

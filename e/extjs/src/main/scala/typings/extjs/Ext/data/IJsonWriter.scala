@@ -2,29 +2,28 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonWriter
-  extends typings.extjs.Ext.data.writer.IWriter {
+  extends StObject
+     with typings.extjs.Ext.data.writer.IWriter {
   
   /** [Config Option] (Boolean) */
-  var allowSingle: js.UndefOr[Boolean] = js.native
+  var allowSingle: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var encode: js.UndefOr[Boolean] = js.native
+  var encode: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var expandData: js.UndefOr[Boolean] = js.native
+  var expandData: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] The Reader classes support dot delimited data mappings for extracting nested raw data into fields so the writer must
     * @param data Object
     */
-  var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var getExpandedData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object IJsonWriter {
   

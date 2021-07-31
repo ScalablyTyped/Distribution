@@ -2,30 +2,28 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the Web details resource.
   */
-@js.native
 trait SchemaInstanceWebDetails extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#instanceWebDetails.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Launch URL for the game.
     */
-  var launchUrl: js.UndefOr[String] = js.native
+  var launchUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that this instance is the default for new installations.
     */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaInstanceWebDetails {
   

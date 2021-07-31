@@ -2,15 +2,13 @@ package typings.reactNativeWindows
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
   }
   object Children {
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ItemIndex extends StObject {
     
-    var itemIndex: Double = js.native
+    var itemIndex: Double
     
-    var text: String = js.native
+    var text: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ItemIndex {
     
@@ -62,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NewDate extends StObject {
     
-    var newDate: Double = js.native
+    var newDate: Double
   }
   object NewDate {
     
@@ -83,10 +79,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: Boolean = js.native
+    var value: Boolean
   }
   object Value {
     

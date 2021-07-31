@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,23 +17,37 @@ sealed trait ShapeTextOrientation extends StObject
 object ShapeTextOrientation extends StObject {
   
   @js.native
-  sealed trait eastAsianVertical extends ShapeTextOrientation
+  sealed trait eastAsianVertical
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait horizontal extends ShapeTextOrientation
+  sealed trait horizontal
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait mongolianVertical extends ShapeTextOrientation
+  sealed trait mongolianVertical
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait vertical extends ShapeTextOrientation
+  sealed trait vertical
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait vertical270 extends ShapeTextOrientation
+  sealed trait vertical270
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait wordArtVertical extends ShapeTextOrientation
+  sealed trait wordArtVertical
+    extends StObject
+       with ShapeTextOrientation
   
   @js.native
-  sealed trait wordArtVerticalRTL extends ShapeTextOrientation
+  sealed trait wordArtVerticalRTL
+    extends StObject
+       with ShapeTextOrientation
 }

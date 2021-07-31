@@ -2,23 +2,21 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Find[TParent] extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def ClearAllFuzzyOptions(): Unit = js.native
+  def ClearAllFuzzyOptions(): Unit
   
-  def ClearFormatting(): Unit = js.native
+  def ClearFormatting(): Unit
   
-  def ClearHitHighlight(): Boolean = js.native
+  def ClearHitHighlight(): Boolean
   
-  var CorrectHangulEndings: Boolean = js.native
+  var CorrectHangulEndings: Boolean
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   def Execute(
     FindText: js.UndefOr[String],
@@ -36,7 +34,7 @@ trait Find[TParent] extends StObject {
     MatchDiacritics: js.UndefOr[Boolean],
     MatchAlefHamza: js.UndefOr[Boolean],
     MatchControl: js.UndefOr[Boolean]
-  ): Boolean = js.native
+  ): Boolean
   
   def Execute2007(
     FindText: js.UndefOr[String],
@@ -59,7 +57,7 @@ trait Find[TParent] extends StObject {
     MatchPhrase: js.UndefOr[Boolean],
     IgnoreSpace: js.UndefOr[Boolean],
     IgnorePunct: js.UndefOr[Boolean]
-  ): Boolean = js.native
+  ): Boolean
   
   def ExecuteOld(
     FindText: js.UndefOr[String],
@@ -73,21 +71,21 @@ trait Find[TParent] extends StObject {
     Format: js.UndefOr[Boolean],
     ReplaceWith: js.UndefOr[String],
     Replace: js.UndefOr[WdReplace]
-  ): Boolean = js.native
+  ): Boolean
   
-  var Font: typings.activexWord.Word.Font = js.native
+  var Font: typings.activexWord.Word.Font
   
-  var Format: Boolean = js.native
+  var Format: Boolean
   
-  var Forward: Boolean = js.native
+  var Forward: Boolean
   
-  val Found: Boolean = js.native
+  val Found: Boolean
   
-  val Frame: typings.activexWord.Word.Frame = js.native
+  val Frame: typings.activexWord.Word.Frame
   
-  var HanjaPhoneticHangul: Boolean = js.native
+  var HanjaPhoneticHangul: Boolean
   
-  var Highlight: Double = js.native
+  var Highlight: Double
   
   def HitHighlight(
     FindText: js.Any,
@@ -110,64 +108,64 @@ trait Find[TParent] extends StObject {
     IgnoreSpace: js.UndefOr[js.Any],
     IgnorePunct: js.UndefOr[js.Any],
     HanjaPhoneticHangul: js.UndefOr[js.Any]
-  ): Boolean = js.native
+  ): Boolean
   
-  var IgnorePunct: Boolean = js.native
+  var IgnorePunct: Boolean
   
-  var IgnoreSpace: Boolean = js.native
+  var IgnoreSpace: Boolean
   
-  var LanguageID: WdLanguageID = js.native
+  var LanguageID: WdLanguageID
   
-  var LanguageIDFarEast: WdLanguageID = js.native
+  var LanguageIDFarEast: WdLanguageID
   
-  var LanguageIDOther: WdLanguageID = js.native
+  var LanguageIDOther: WdLanguageID
   
-  var MatchAlefHamza: Boolean = js.native
+  var MatchAlefHamza: Boolean
   
-  var MatchAllWordForms: Boolean = js.native
+  var MatchAllWordForms: Boolean
   
-  var MatchByte: Boolean = js.native
+  var MatchByte: Boolean
   
-  var MatchCase: Boolean = js.native
+  var MatchCase: Boolean
   
-  var MatchControl: Boolean = js.native
+  var MatchControl: Boolean
   
-  var MatchDiacritics: Boolean = js.native
+  var MatchDiacritics: Boolean
   
-  var MatchFuzzy: Boolean = js.native
+  var MatchFuzzy: Boolean
   
-  var MatchKashida: Boolean = js.native
+  var MatchKashida: Boolean
   
-  var MatchPhrase: Boolean = js.native
+  var MatchPhrase: Boolean
   
-  var MatchPrefix: Boolean = js.native
+  var MatchPrefix: Boolean
   
-  var MatchSoundsLike: Boolean = js.native
+  var MatchSoundsLike: Boolean
   
-  var MatchSuffix: Boolean = js.native
+  var MatchSuffix: Boolean
   
-  var MatchWholeWord: Boolean = js.native
+  var MatchWholeWord: Boolean
   
-  var MatchWildcards: Boolean = js.native
+  var MatchWildcards: Boolean
   
-  var NoProofing: Double = js.native
+  var NoProofing: Double
   
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
   
-  val Parent: TParent = js.native
+  val Parent: TParent
   
-  val Replacement: typings.activexWord.Word.Replacement = js.native
+  val Replacement: typings.activexWord.Word.Replacement
   
-  def SetAllFuzzyOptions(): Unit = js.native
+  def SetAllFuzzyOptions(): Unit
   
-  var Style: js.Any = js.native
+  var Style: js.Any
   
-  var Text: String = js.native
+  var Text: String
   
   @JSName("Word.Find_typekey")
-  var WordDotFind_typekey: Find[Range | Selection] = js.native
+  var WordDotFind_typekey: Find[Range | Selection]
   
-  var Wrap: WdFindWrap = js.native
+  var Wrap: WdFindWrap
 }
 object Find {
   
@@ -225,7 +223,7 @@ object Find {
   }
   
   @scala.inline
-  implicit class FindMutableBuilder[Self <: Find[_], TParent] (val x: Self with Find[TParent]) extends AnyVal {
+  implicit class FindMutableBuilder[Self <: Find[?], TParent] (val x: Self & Find[TParent]) extends AnyVal {
     
     @scala.inline
     def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])

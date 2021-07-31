@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetFileInputFilesRequest extends StObject {
   
   /**
     * Identifier of the backend node.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * Array of file paths to set.
     */
-  var files: js.Array[String] = js.native
+  var files: js.Array[String]
   
   /**
     * Identifier of the node.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * JavaScript object id of the node wrapper.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
 }
 object SetFileInputFilesRequest {
   

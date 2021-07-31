@@ -2,28 +2,26 @@ package typings.jupyterlabCoreutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait IChangedArgs[T, OldT, U /* <: String */] extends StObject {
     
     /**
       * The name of the changed attribute.
       */
-    var name: U = js.native
+    var name: U
     
     /**
       * The new value of the changed attribute.
       */
-    var newValue: T = js.native
+    var newValue: T
     
     /**
       * The old value of the changed attribute.
       */
-    var oldValue: OldT = js.native
+    var oldValue: OldT
   }
   object IChangedArgs {
     
@@ -34,7 +32,7 @@ object interfacesMod {
     }
     
     @scala.inline
-    implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[_, _, _], T, OldT, U /* <: String */] (val x: Self with (IChangedArgs[T, OldT, U])) extends AnyVal {
+    implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[?, ?, ?], T, OldT, U /* <: String */] (val x: Self & (IChangedArgs[T, OldT, U])) extends AnyVal {
       
       @scala.inline
       def setName(value: U): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

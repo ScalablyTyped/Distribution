@@ -2,62 +2,60 @@ package typings.akamaiEdgeworkers.EW
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /**
     * The cpcode used for reporting.
     */
-  val cpCode: Double = js.native
+  val cpCode: Double
   
   /**
     * Object containing properties specifying the device characteristics. This
     * value of this property will be null if the contract associated with the
     * request does not have entitlements for EDC.
     */
-  val device: js.UndefOr[Device] = js.native
+  val device: js.UndefOr[Device] = js.undefined
   
   /**
     * The Host header value of the incoming request.
     */
-  val host: String = js.native
+  val host: String
   
   /**
     * The HTTP method of the incoming request.
     */
-  val method: String = js.native
+  val method: String
   
   /**
     * The URL path of the incoming request, including the filename and
     * extension, but without any query string.
     */
-  val path: String = js.native
+  val path: String
   
   /**
     * The query string of the incoming request.
     */
-  val query: String = js.native
+  val query: String
   
   /**
     * The scheme of the incoming request ("http" or "https").
     */
-  val scheme: String = js.native
+  val scheme: String
   
   /**
     * The Relative URL of the incoming request. This includes the path as well
     * as the query string.
     */
-  val url: String = js.native
+  val url: String
   
   /**
     * Object containing properties specifying the end user's geographic
     * location. This value of this property will be null if the contract
     * associated with the request does not have the appropriate entitlements.
     */
-  val userLocation: js.UndefOr[UserLocation] = js.native
+  val userLocation: js.UndefOr[UserLocation] = js.undefined
 }
 object Request {
   

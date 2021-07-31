@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Alerts")
@@ -31,7 +30,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAlertsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAlertsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -56,7 +55,7 @@ class ResourceAlerts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAlerts] = js.native
   def list(callback: BodyResponseCallback[SchemaAlerts]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAlerts] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAlerts] = js.native
   def list(params: ParamsResourceAlertsList): GaxiosPromise[SchemaAlerts] = js.native
   def list(params: ParamsResourceAlertsList, callback: BodyResponseCallback[SchemaAlerts]): Unit = js.native
   def list(

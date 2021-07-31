@@ -19,21 +19,19 @@ import typings.chartJs.mod.TimeScale
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Chart extends StObject {
     
-    var chart: js.UndefOr[typings.chartJs.mod.Chart] = js.native
+    var chart: js.UndefOr[typings.chartJs.mod.Chart] = js.undefined
     
-    var dataIndex: js.UndefOr[Double] = js.native
+    var dataIndex: js.UndefOr[Double] = js.undefined
     
-    var dataset: js.UndefOr[ChartDataSets] = js.native
+    var dataset: js.UndefOr[ChartDataSets] = js.undefined
     
-    var datasetIndex: js.UndefOr[Double] = js.native
+    var datasetIndex: js.UndefOr[Double] = js.undefined
   }
   object Chart {
     
@@ -73,88 +71,87 @@ object anon {
   }
   
   /* Inlined chart.js.chart.js.ChartOptions & chart.js.chart.js.ChartFontOptions & {  tooltips :chart.js.chart.js.ChartTooltipOptions} */
-  @js.native
   trait ChartOptionsChartFontOpti extends StObject {
     
-    var animation: js.UndefOr[ChartAnimationOptions] = js.native
+    var animation: js.UndefOr[ChartAnimationOptions] = js.undefined
     
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
-    var circumference: js.UndefOr[Double] = js.native
+    var circumference: js.UndefOr[Double] = js.undefined
     
-    var cutoutPercentage: js.UndefOr[Double] = js.native
+    var cutoutPercentage: js.UndefOr[Double] = js.undefined
     
-    var defaultColor: js.UndefOr[ChartColor] = js.native
+    var defaultColor: js.UndefOr[ChartColor] = js.undefined
     
-    var defaultFontColor: js.UndefOr[ChartColor] = js.native
+    var defaultFontColor: js.UndefOr[ChartColor] = js.undefined
     
-    var defaultFontFamily: js.UndefOr[String] = js.native
+    var defaultFontFamily: js.UndefOr[String] = js.undefined
     
-    var defaultFontSize: js.UndefOr[Double] = js.native
+    var defaultFontSize: js.UndefOr[Double] = js.undefined
     
-    var defaultFontStyle: js.UndefOr[String] = js.native
+    var defaultFontStyle: js.UndefOr[String] = js.undefined
     
-    var devicePixelRatio: js.UndefOr[Double] = js.native
+    var devicePixelRatio: js.UndefOr[Double] = js.undefined
     
-    var elements: js.UndefOr[ChartElementsOptions] = js.native
+    var elements: js.UndefOr[ChartElementsOptions] = js.undefined
     
-    var events: js.UndefOr[js.Array[String]] = js.native
+    var events: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hover: js.UndefOr[ChartHoverOptions] = js.native
+    var hover: js.UndefOr[ChartHoverOptions] = js.undefined
     
-    var layout: js.UndefOr[ChartLayoutOptions] = js.native
+    var layout: js.UndefOr[ChartLayoutOptions] = js.undefined
     
-    var legend: js.UndefOr[ChartLegendOptions] = js.native
+    var legend: js.UndefOr[ChartLegendOptions] = js.undefined
     
-    var legendCallback: js.UndefOr[js.Function1[/* chart */ typings.chartJs.mod.Chart, String]] = js.native
+    var legendCallback: js.UndefOr[js.Function1[/* chart */ typings.chartJs.mod.Chart, String]] = js.undefined
     
-    var maintainAspectRatio: js.UndefOr[Boolean] = js.native
+    var maintainAspectRatio: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[
           /* event */ js.UndefOr[MouseEvent], 
           /* activeElements */ js.UndefOr[js.Array[js.Object]], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onHover: js.UndefOr[
         js.ThisFunction2[
           /* this */ typings.chartJs.mod.Chart, 
           /* event */ MouseEvent, 
           /* activeElements */ js.Array[js.Object], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onResize: js.UndefOr[
         js.ThisFunction1[/* this */ typings.chartJs.mod.Chart, /* newSize */ ChartSize, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var plugins: js.UndefOr[ChartPluginsOptions] = js.native
+    var plugins: js.UndefOr[ChartPluginsOptions] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var responsiveAnimationDuration: js.UndefOr[Double] = js.native
+    var responsiveAnimationDuration: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[RadialLinearScale] = js.native
+    var scale: js.UndefOr[RadialLinearScale] = js.undefined
     
-    var scales: js.UndefOr[ChartScales | LinearScale | LogarithmicScale | TimeScale] = js.native
+    var scales: js.UndefOr[ChartScales | LinearScale | LogarithmicScale | TimeScale] = js.undefined
     
-    var showLines: js.UndefOr[Boolean] = js.native
+    var showLines: js.UndefOr[Boolean] = js.undefined
     
-    var spanGaps: js.UndefOr[Boolean] = js.native
+    var spanGaps: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[ChartTitleOptions] = js.native
+    var title: js.UndefOr[ChartTitleOptions] = js.undefined
     
-    var tooltips: js.UndefOr[ChartTooltipOptions] with ChartTooltipOptions = js.native
+    var tooltips: js.UndefOr[ChartTooltipOptions] & ChartTooltipOptions
   }
   object ChartOptionsChartFontOpti {
     
     @scala.inline
-    def apply(tooltips: js.UndefOr[ChartTooltipOptions] with ChartTooltipOptions): ChartOptionsChartFontOpti = {
+    def apply(tooltips: js.UndefOr[ChartTooltipOptions] & ChartTooltipOptions): ChartOptionsChartFontOpti = {
       val __obj = js.Dynamic.literal(tooltips = tooltips.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartOptionsChartFontOpti]
     }
@@ -275,7 +272,7 @@ object anon {
       
       @scala.inline
       def setOnClick(
-        value: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => _
+        value: (/* event */ js.UndefOr[MouseEvent], /* activeElements */ js.UndefOr[js.Array[js.Object]]) => js.Any
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -287,7 +284,7 @@ object anon {
               /* this */ typings.chartJs.mod.Chart, 
               /* event */ MouseEvent, 
               /* activeElements */ js.Array[js.Object], 
-              _
+              js.Any
             ]
       ): Self = StObject.set(x, "onHover", value.asInstanceOf[js.Any])
       
@@ -355,23 +352,22 @@ object anon {
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       @scala.inline
-      def setTooltips(value: js.UndefOr[ChartTooltipOptions] with ChartTooltipOptions): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+      def setTooltips(value: js.UndefOr[ChartTooltipOptions] & ChartTooltipOptions): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined {[ key in chart.js.chart.js.PositionType ]:? number} */
-  @js.native
   trait keyinPositionTypenumber extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var chartArea: js.UndefOr[Double] = js.native
+    var chartArea: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object keyinPositionTypenumber {
     

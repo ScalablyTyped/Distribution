@@ -9,14 +9,15 @@ import typings.typeorm.objectLiteralMod.ObjectLiteral
 import typings.typeorm.sapConnectionOptionsMod.SapConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sapDriverMod {
   
   @JSImport("typeorm/browser/driver/sap/SapDriver", "SapDriver")
   @js.native
-  class SapDriver protected () extends Driver {
+  class SapDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**
@@ -73,6 +74,6 @@ object sapDriverMod {
       * Pool for slave databases.
       * Used in replication.
       */
-    var slaves: js.Array[_] = js.native
+    var slaves: js.Array[js.Any] = js.native
   }
 }

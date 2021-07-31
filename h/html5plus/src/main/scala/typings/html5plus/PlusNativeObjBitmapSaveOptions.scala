@@ -4,7 +4,6 @@ import typings.html5plus.html5plusStrings.jpg
 import typings.html5plus.html5plusStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjBitmapSaveOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlusNativeObjBitmapSaveOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var clip: js.UndefOr[PlusNativeObjRect] = js.native
+  var clip: js.UndefOr[PlusNativeObjRect] = js.undefined
   
   /**
     * 保存图片的格式
@@ -31,7 +29,7 @@ trait PlusNativeObjBitmapSaveOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var format: js.UndefOr[jpg | png] = js.native
+  var format: js.UndefOr[jpg | png] = js.undefined
   
   /**
     * 覆盖保存图片文件
@@ -42,7 +40,7 @@ trait PlusNativeObjBitmapSaveOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 保存图片的质量
@@ -51,7 +49,7 @@ trait PlusNativeObjBitmapSaveOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
 }
 object PlusNativeObjBitmapSaveOptions {
   

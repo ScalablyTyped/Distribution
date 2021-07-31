@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ImageFittingMode extends StObject
 object ImageFittingMode extends StObject {
   
   @js.native
-  sealed trait fill extends ImageFittingMode
+  sealed trait fill
+    extends StObject
+       with ImageFittingMode
   
   @js.native
-  sealed trait fit extends ImageFittingMode
+  sealed trait fit
+    extends StObject
+       with ImageFittingMode
   
   @js.native
-  sealed trait fitAndCenter extends ImageFittingMode
+  sealed trait fitAndCenter
+    extends StObject
+       with ImageFittingMode
 }

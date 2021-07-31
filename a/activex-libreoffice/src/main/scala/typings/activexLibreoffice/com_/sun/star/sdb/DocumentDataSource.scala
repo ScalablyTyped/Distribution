@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XNumberFormatsSupplier
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DataSource
   * @see XDocumentDataSource
   */
-@js.native
 trait DocumentDataSource
-  extends DataSource
+  extends StObject
+     with DataSource
      with XDocumentDataSource
 object DocumentDataSource {
   

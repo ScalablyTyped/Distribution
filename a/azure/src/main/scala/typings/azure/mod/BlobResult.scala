@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "BlobResult")
@@ -88,11 +87,13 @@ class BlobResult () extends StObject {
 /* static members */
 object BlobResult {
   
-  @JSImport("azure", "BlobResult.parse")
+  @JSImport("azure", "BlobResult")
   @js.native
-  def parse(blobXml: js.Any): BlobResult = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azure", "BlobResult.setHeadersFromBlob")
-  @js.native
-  def setHeadersFromBlob(webResource: WebResource, blob: BlobResult): Unit = js.native
+  @scala.inline
+  def parse(blobXml: js.Any): BlobResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(blobXml.asInstanceOf[js.Any]).asInstanceOf[BlobResult]
+  
+  @scala.inline
+  def setHeadersFromBlob(webResource: WebResource, blob: BlobResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHeadersFromBlob")(webResource.asInstanceOf[js.Any], blob.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

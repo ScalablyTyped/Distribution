@@ -4,15 +4,13 @@ import typings.history.mod.History
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectedRouterProps[State] extends StObject {
   
-  var history: js.UndefOr[History[LocationState]] = js.native
+  var history: js.UndefOr[History[LocationState]] = js.undefined
   
-  var store: js.UndefOr[js.Any] = js.native
+  var store: js.UndefOr[js.Any] = js.undefined
 }
 object ConnectedRouterProps {
   
@@ -23,7 +21,7 @@ object ConnectedRouterProps {
   }
   
   @scala.inline
-  implicit class ConnectedRouterPropsMutableBuilder[Self <: ConnectedRouterProps[_], State] (val x: Self with ConnectedRouterProps[State]) extends AnyVal {
+  implicit class ConnectedRouterPropsMutableBuilder[Self <: ConnectedRouterProps[?], State] (val x: Self & ConnectedRouterProps[State]) extends AnyVal {
     
     @scala.inline
     def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])

@@ -2,23 +2,21 @@ package typings.terminalKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
-  var items: js.UndefOr[Double] = js.native
+  var items: js.UndefOr[Double] = js.undefined
   
-  var progress: Double | Null = js.native
+  var progress: Double | Null
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Items {
   
   @scala.inline
   def apply(): Items = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(progress = null)
     __obj.asInstanceOf[Items]
   }
   

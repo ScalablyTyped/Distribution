@@ -6,7 +6,6 @@ import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import typings.std.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The handle member in the JSON request for all methods listed in this section is the handle of the generic object.
   */
 @js.native
-trait IGenericObject extends IGeneratedAPI {
+trait IGenericObject
+  extends StObject
+     with IGeneratedAPI {
   
   /**
     * Aborts the results of a search in a list object.
@@ -306,14 +307,9 @@ trait IGenericObject extends IGeneratedAPI {
     * @returns - A Promise of String qUrl: <url of the exported file> and qWarnings: [1000] only if exported data is truncated
     */
   def exportData(qFileType: FileType, qPath: String): js.Promise[String] = js.native
-  def exportData(
-    qFileType: FileType,
-    qPath: String,
-    qFileName: js.UndefOr[scala.Nothing],
-    qExportState: ExportStateType
-  ): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String): js.Promise[String] = js.native
   def exportData(qFileType: FileType, qPath: String, qFileName: String, qExportState: ExportStateType): js.Promise[String] = js.native
+  def exportData(qFileType: FileType, qPath: String, qFileName: Unit, qExportState: ExportStateType): js.Promise[String] = js.native
   
   /**
     * Returns the type of the object and the corresponding handle.
@@ -613,13 +609,6 @@ trait IGenericObject extends IGeneratedAPI {
     qPath: String,
     qRanges: INxMultiRangeSelectInfo,
     qDeselectOnlyOneSelected: Boolean,
-    qColumnsToSelect: js.UndefOr[scala.Nothing],
-    qOrMode: Boolean
-  ): js.Promise[Boolean] = js.native
-  def multiRangeSelectHyperCubeValues(
-    qPath: String,
-    qRanges: INxMultiRangeSelectInfo,
-    qDeselectOnlyOneSelected: Boolean,
     qColumnsToSelect: js.Array[Double]
   ): js.Promise[Boolean] = js.native
   def multiRangeSelectHyperCubeValues(
@@ -627,6 +616,13 @@ trait IGenericObject extends IGeneratedAPI {
     qRanges: INxMultiRangeSelectInfo,
     qDeselectOnlyOneSelected: Boolean,
     qColumnsToSelect: js.Array[Double],
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
+  def multiRangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: INxMultiRangeSelectInfo,
+    qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: Unit,
     qOrMode: Boolean
   ): js.Promise[Boolean] = js.native
   
@@ -665,13 +661,6 @@ trait IGenericObject extends IGeneratedAPI {
     qPath: String,
     qRanges: js.Array[INxRangeSelectInfo],
     qDeselectOnlyOneSelected: Boolean,
-    qColumnsToSelect: js.UndefOr[scala.Nothing],
-    qOrMode: Boolean
-  ): js.Promise[Boolean] = js.native
-  def rangeSelectHyperCubeValues(
-    qPath: String,
-    qRanges: js.Array[INxRangeSelectInfo],
-    qDeselectOnlyOneSelected: Boolean,
     qColumnsToSelect: js.Array[Double]
   ): js.Promise[Boolean] = js.native
   def rangeSelectHyperCubeValues(
@@ -679,6 +668,13 @@ trait IGenericObject extends IGeneratedAPI {
     qRanges: js.Array[INxRangeSelectInfo],
     qDeselectOnlyOneSelected: Boolean,
     qColumnsToSelect: js.Array[Double],
+    qOrMode: Boolean
+  ): js.Promise[Boolean] = js.native
+  def rangeSelectHyperCubeValues(
+    qPath: String,
+    qRanges: js.Array[INxRangeSelectInfo],
+    qDeselectOnlyOneSelected: Boolean,
+    qColumnsToSelect: Unit,
     qOrMode: Boolean
   ): js.Promise[Boolean] = js.native
   

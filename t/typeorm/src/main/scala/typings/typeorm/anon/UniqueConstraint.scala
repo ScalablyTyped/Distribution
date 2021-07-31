@@ -4,15 +4,13 @@ import typings.typeorm.metadataForeignKeyMetadataMod.ForeignKeyMetadata
 import typings.typeorm.metadataUniqueMetadataMod.UniqueMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniqueConstraint extends StObject {
   
-  var foreignKey: js.UndefOr[ForeignKeyMetadata] = js.native
+  var foreignKey: js.UndefOr[ForeignKeyMetadata] = js.undefined
   
-  var uniqueConstraint: js.UndefOr[UniqueMetadata] = js.native
+  var uniqueConstraint: js.UndefOr[UniqueMetadata] = js.undefined
 }
 object UniqueConstraint {
   

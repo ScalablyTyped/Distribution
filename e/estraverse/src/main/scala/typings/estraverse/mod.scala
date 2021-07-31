@@ -6,10 +6,13 @@ import typings.estree.mod.Node
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("estraverse", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("estraverse", "Controller")
   @js.native
@@ -68,152 +71,151 @@ object mod {
   }
   
   /* Inlined parent std.Record<estraverse.estraverse.NodeType, estraverse.estraverse.NodeType> */
-  @js.native
   trait Syntax extends StObject {
     
-    var ArrayExpression: NodeType = js.native
+    var ArrayExpression: NodeType
     
-    var ArrayPattern: NodeType = js.native
+    var ArrayPattern: NodeType
     
-    var ArrowFunctionExpression: NodeType = js.native
+    var ArrowFunctionExpression: NodeType
     
-    var AssignmentExpression: NodeType = js.native
+    var AssignmentExpression: NodeType
     
-    var AssignmentPattern: NodeType = js.native
+    var AssignmentPattern: NodeType
     
-    var AwaitExpression: NodeType = js.native
+    var AwaitExpression: NodeType
     
-    var BinaryExpression: NodeType = js.native
+    var BinaryExpression: NodeType
     
-    var BlockStatement: NodeType = js.native
+    var BlockStatement: NodeType
     
-    var BreakStatement: NodeType = js.native
+    var BreakStatement: NodeType
     
-    var CallExpression: NodeType = js.native
+    var CallExpression: NodeType
     
-    var CatchClause: NodeType = js.native
+    var CatchClause: NodeType
     
-    var ClassBody: NodeType = js.native
+    var ClassBody: NodeType
     
-    var ClassDeclaration: NodeType = js.native
+    var ClassDeclaration: NodeType
     
-    var ClassExpression: NodeType = js.native
+    var ClassExpression: NodeType
     
-    var ComprehensionBlock: NodeType = js.native
+    var ComprehensionBlock: NodeType
     
-    var ComprehensionExpression: NodeType = js.native
+    var ComprehensionExpression: NodeType
     
-    var ConditionalExpression: NodeType = js.native
+    var ConditionalExpression: NodeType
     
-    var ContinueStatement: NodeType = js.native
+    var ContinueStatement: NodeType
     
-    var DebuggerStatement: NodeType = js.native
+    var DebuggerStatement: NodeType
     
-    var DirectiveStatement: NodeType = js.native
+    var DirectiveStatement: NodeType
     
-    var DoWhileStatement: NodeType = js.native
+    var DoWhileStatement: NodeType
     
-    var EmptyStatement: NodeType = js.native
+    var EmptyStatement: NodeType
     
-    var ExportAllDeclaration: NodeType = js.native
+    var ExportAllDeclaration: NodeType
     
-    var ExportDefaultDeclaration: NodeType = js.native
+    var ExportDefaultDeclaration: NodeType
     
-    var ExportNamedDeclaration: NodeType = js.native
+    var ExportNamedDeclaration: NodeType
     
-    var ExportSpecifier: NodeType = js.native
+    var ExportSpecifier: NodeType
     
-    var ExpressionStatement: NodeType = js.native
+    var ExpressionStatement: NodeType
     
-    var ForInStatement: NodeType = js.native
+    var ForInStatement: NodeType
     
-    var ForOfStatement: NodeType = js.native
+    var ForOfStatement: NodeType
     
-    var ForStatement: NodeType = js.native
+    var ForStatement: NodeType
     
-    var FunctionDeclaration: NodeType = js.native
+    var FunctionDeclaration: NodeType
     
-    var FunctionExpression: NodeType = js.native
+    var FunctionExpression: NodeType
     
-    var GeneratorExpression: NodeType = js.native
+    var GeneratorExpression: NodeType
     
-    var Identifier: NodeType = js.native
+    var Identifier: NodeType
     
-    var IfStatement: NodeType = js.native
+    var IfStatement: NodeType
     
-    var ImportDeclaration: NodeType = js.native
+    var ImportDeclaration: NodeType
     
-    var ImportDefaultSpecifier: NodeType = js.native
+    var ImportDefaultSpecifier: NodeType
     
-    var ImportExpression: NodeType = js.native
+    var ImportExpression: NodeType
     
-    var ImportNamespaceSpecifier: NodeType = js.native
+    var ImportNamespaceSpecifier: NodeType
     
-    var ImportSpecifier: NodeType = js.native
+    var ImportSpecifier: NodeType
     
-    var LabeledStatement: NodeType = js.native
+    var LabeledStatement: NodeType
     
-    var Literal: NodeType = js.native
+    var Literal: NodeType
     
-    var LogicalExpression: NodeType = js.native
+    var LogicalExpression: NodeType
     
-    var MemberExpression: NodeType = js.native
+    var MemberExpression: NodeType
     
-    var MetaProperty: NodeType = js.native
+    var MetaProperty: NodeType
     
-    var MethodDefinition: NodeType = js.native
+    var MethodDefinition: NodeType
     
-    var ModuleSpecifier: NodeType = js.native
+    var ModuleSpecifier: NodeType
     
-    var NewExpression: NodeType = js.native
+    var NewExpression: NodeType
     
-    var ObjectExpression: NodeType = js.native
+    var ObjectExpression: NodeType
     
-    var ObjectPattern: NodeType = js.native
+    var ObjectPattern: NodeType
     
-    var Program: NodeType = js.native
+    var Program: NodeType
     
-    var Property: NodeType = js.native
+    var Property: NodeType
     
-    var RestElement: NodeType = js.native
+    var RestElement: NodeType
     
-    var ReturnStatement: NodeType = js.native
+    var ReturnStatement: NodeType
     
-    var SequenceExpression: NodeType = js.native
+    var SequenceExpression: NodeType
     
-    var SpreadElement: NodeType = js.native
+    var SpreadElement: NodeType
     
-    var Super: NodeType = js.native
+    var Super: NodeType
     
-    var SwitchCase: NodeType = js.native
+    var SwitchCase: NodeType
     
-    var SwitchStatement: NodeType = js.native
+    var SwitchStatement: NodeType
     
-    var TaggedTemplateExpression: NodeType = js.native
+    var TaggedTemplateExpression: NodeType
     
-    var TemplateElement: NodeType = js.native
+    var TemplateElement: NodeType
     
-    var TemplateLiteral: NodeType = js.native
+    var TemplateLiteral: NodeType
     
-    var ThisExpression: NodeType = js.native
+    var ThisExpression: NodeType
     
-    var ThrowStatement: NodeType = js.native
+    var ThrowStatement: NodeType
     
-    var TryStatement: NodeType = js.native
+    var TryStatement: NodeType
     
-    var UnaryExpression: NodeType = js.native
+    var UnaryExpression: NodeType
     
-    var UpdateExpression: NodeType = js.native
+    var UpdateExpression: NodeType
     
-    var VariableDeclaration: NodeType = js.native
+    var VariableDeclaration: NodeType
     
-    var VariableDeclarator: NodeType = js.native
+    var VariableDeclarator: NodeType
     
-    var WhileStatement: NodeType = js.native
+    var WhileStatement: NodeType
     
-    var WithStatement: NodeType = js.native
+    var WithStatement: NodeType
     
-    var YieldExpression: NodeType = js.native
+    var YieldExpression: NodeType
   }
   object Syntax {
     
@@ -443,152 +445,151 @@ object mod {
   }
   
   /* Inlined parent std.Record<estraverse.estraverse.NodeType, std.Array<string>> */
-  @js.native
   trait VisitorKeys extends StObject {
     
-    var ArrayExpression: js.Array[String] = js.native
+    var ArrayExpression: js.Array[String]
     
-    var ArrayPattern: js.Array[String] = js.native
+    var ArrayPattern: js.Array[String]
     
-    var ArrowFunctionExpression: js.Array[String] = js.native
+    var ArrowFunctionExpression: js.Array[String]
     
-    var AssignmentExpression: js.Array[String] = js.native
+    var AssignmentExpression: js.Array[String]
     
-    var AssignmentPattern: js.Array[String] = js.native
+    var AssignmentPattern: js.Array[String]
     
-    var AwaitExpression: js.Array[String] = js.native
+    var AwaitExpression: js.Array[String]
     
-    var BinaryExpression: js.Array[String] = js.native
+    var BinaryExpression: js.Array[String]
     
-    var BlockStatement: js.Array[String] = js.native
+    var BlockStatement: js.Array[String]
     
-    var BreakStatement: js.Array[String] = js.native
+    var BreakStatement: js.Array[String]
     
-    var CallExpression: js.Array[String] = js.native
+    var CallExpression: js.Array[String]
     
-    var CatchClause: js.Array[String] = js.native
+    var CatchClause: js.Array[String]
     
-    var ClassBody: js.Array[String] = js.native
+    var ClassBody: js.Array[String]
     
-    var ClassDeclaration: js.Array[String] = js.native
+    var ClassDeclaration: js.Array[String]
     
-    var ClassExpression: js.Array[String] = js.native
+    var ClassExpression: js.Array[String]
     
-    var ComprehensionBlock: js.Array[String] = js.native
+    var ComprehensionBlock: js.Array[String]
     
-    var ComprehensionExpression: js.Array[String] = js.native
+    var ComprehensionExpression: js.Array[String]
     
-    var ConditionalExpression: js.Array[String] = js.native
+    var ConditionalExpression: js.Array[String]
     
-    var ContinueStatement: js.Array[String] = js.native
+    var ContinueStatement: js.Array[String]
     
-    var DebuggerStatement: js.Array[String] = js.native
+    var DebuggerStatement: js.Array[String]
     
-    var DirectiveStatement: js.Array[String] = js.native
+    var DirectiveStatement: js.Array[String]
     
-    var DoWhileStatement: js.Array[String] = js.native
+    var DoWhileStatement: js.Array[String]
     
-    var EmptyStatement: js.Array[String] = js.native
+    var EmptyStatement: js.Array[String]
     
-    var ExportAllDeclaration: js.Array[String] = js.native
+    var ExportAllDeclaration: js.Array[String]
     
-    var ExportDefaultDeclaration: js.Array[String] = js.native
+    var ExportDefaultDeclaration: js.Array[String]
     
-    var ExportNamedDeclaration: js.Array[String] = js.native
+    var ExportNamedDeclaration: js.Array[String]
     
-    var ExportSpecifier: js.Array[String] = js.native
+    var ExportSpecifier: js.Array[String]
     
-    var ExpressionStatement: js.Array[String] = js.native
+    var ExpressionStatement: js.Array[String]
     
-    var ForInStatement: js.Array[String] = js.native
+    var ForInStatement: js.Array[String]
     
-    var ForOfStatement: js.Array[String] = js.native
+    var ForOfStatement: js.Array[String]
     
-    var ForStatement: js.Array[String] = js.native
+    var ForStatement: js.Array[String]
     
-    var FunctionDeclaration: js.Array[String] = js.native
+    var FunctionDeclaration: js.Array[String]
     
-    var FunctionExpression: js.Array[String] = js.native
+    var FunctionExpression: js.Array[String]
     
-    var GeneratorExpression: js.Array[String] = js.native
+    var GeneratorExpression: js.Array[String]
     
-    var Identifier: js.Array[String] = js.native
+    var Identifier: js.Array[String]
     
-    var IfStatement: js.Array[String] = js.native
+    var IfStatement: js.Array[String]
     
-    var ImportDeclaration: js.Array[String] = js.native
+    var ImportDeclaration: js.Array[String]
     
-    var ImportDefaultSpecifier: js.Array[String] = js.native
+    var ImportDefaultSpecifier: js.Array[String]
     
-    var ImportExpression: js.Array[String] = js.native
+    var ImportExpression: js.Array[String]
     
-    var ImportNamespaceSpecifier: js.Array[String] = js.native
+    var ImportNamespaceSpecifier: js.Array[String]
     
-    var ImportSpecifier: js.Array[String] = js.native
+    var ImportSpecifier: js.Array[String]
     
-    var LabeledStatement: js.Array[String] = js.native
+    var LabeledStatement: js.Array[String]
     
-    var Literal: js.Array[String] = js.native
+    var Literal: js.Array[String]
     
-    var LogicalExpression: js.Array[String] = js.native
+    var LogicalExpression: js.Array[String]
     
-    var MemberExpression: js.Array[String] = js.native
+    var MemberExpression: js.Array[String]
     
-    var MetaProperty: js.Array[String] = js.native
+    var MetaProperty: js.Array[String]
     
-    var MethodDefinition: js.Array[String] = js.native
+    var MethodDefinition: js.Array[String]
     
-    var ModuleSpecifier: js.Array[String] = js.native
+    var ModuleSpecifier: js.Array[String]
     
-    var NewExpression: js.Array[String] = js.native
+    var NewExpression: js.Array[String]
     
-    var ObjectExpression: js.Array[String] = js.native
+    var ObjectExpression: js.Array[String]
     
-    var ObjectPattern: js.Array[String] = js.native
+    var ObjectPattern: js.Array[String]
     
-    var Program: js.Array[String] = js.native
+    var Program: js.Array[String]
     
-    var Property: js.Array[String] = js.native
+    var Property: js.Array[String]
     
-    var RestElement: js.Array[String] = js.native
+    var RestElement: js.Array[String]
     
-    var ReturnStatement: js.Array[String] = js.native
+    var ReturnStatement: js.Array[String]
     
-    var SequenceExpression: js.Array[String] = js.native
+    var SequenceExpression: js.Array[String]
     
-    var SpreadElement: js.Array[String] = js.native
+    var SpreadElement: js.Array[String]
     
-    var Super: js.Array[String] = js.native
+    var Super: js.Array[String]
     
-    var SwitchCase: js.Array[String] = js.native
+    var SwitchCase: js.Array[String]
     
-    var SwitchStatement: js.Array[String] = js.native
+    var SwitchStatement: js.Array[String]
     
-    var TaggedTemplateExpression: js.Array[String] = js.native
+    var TaggedTemplateExpression: js.Array[String]
     
-    var TemplateElement: js.Array[String] = js.native
+    var TemplateElement: js.Array[String]
     
-    var TemplateLiteral: js.Array[String] = js.native
+    var TemplateLiteral: js.Array[String]
     
-    var ThisExpression: js.Array[String] = js.native
+    var ThisExpression: js.Array[String]
     
-    var ThrowStatement: js.Array[String] = js.native
+    var ThrowStatement: js.Array[String]
     
-    var TryStatement: js.Array[String] = js.native
+    var TryStatement: js.Array[String]
     
-    var UnaryExpression: js.Array[String] = js.native
+    var UnaryExpression: js.Array[String]
     
-    var UpdateExpression: js.Array[String] = js.native
+    var UpdateExpression: js.Array[String]
     
-    var VariableDeclaration: js.Array[String] = js.native
+    var VariableDeclaration: js.Array[String]
     
-    var VariableDeclarator: js.Array[String] = js.native
+    var VariableDeclarator: js.Array[String]
     
-    var WhileStatement: js.Array[String] = js.native
+    var WhileStatement: js.Array[String]
     
-    var WithStatement: js.Array[String] = js.native
+    var WithStatement: js.Array[String]
     
-    var YieldExpression: js.Array[String] = js.native
+    var YieldExpression: js.Array[String]
   }
   object VisitorKeys {
     
@@ -1040,36 +1041,38 @@ object mod {
   object VisitorOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[VisitorOption with Double] = js.native
+    def apply(value: Double): js.UndefOr[VisitorOption & Double] = js.native
     
     @js.native
-    sealed trait Break extends VisitorOption
-    /* 0 */ val Break: typings.estraverse.mod.VisitorOption.Break with Double = js.native
+    sealed trait Break
+      extends StObject
+         with VisitorOption
+    /* 0 */ val Break: typings.estraverse.mod.VisitorOption.Break & Double = js.native
     
     @js.native
-    sealed trait Remove extends VisitorOption
-    /* 2 */ val Remove: typings.estraverse.mod.VisitorOption.Remove with Double = js.native
+    sealed trait Remove
+      extends StObject
+         with VisitorOption
+    /* 2 */ val Remove: typings.estraverse.mod.VisitorOption.Remove & Double = js.native
     
     @js.native
-    sealed trait Skip extends VisitorOption
-    /* 1 */ val Skip: typings.estraverse.mod.VisitorOption.Skip with Double = js.native
+    sealed trait Skip
+      extends StObject
+         with VisitorOption
+    /* 1 */ val Skip: typings.estraverse.mod.VisitorOption.Skip & Double = js.native
   }
   
-  @JSImport("estraverse", "attachComments")
-  @js.native
-  def attachComments(tree: Node, providedComments: js.Array[Comment], tokens: js.Array[Node]): Node = js.native
+  @scala.inline
+  def attachComments(tree: Node, providedComments: js.Array[Comment], tokens: js.Array[Node]): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("attachComments")(tree.asInstanceOf[js.Any], providedComments.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("estraverse", "cloneEnvironment")
-  @js.native
-  def cloneEnvironment(): js.Any = js.native
+  @scala.inline
+  def cloneEnvironment(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneEnvironment")().asInstanceOf[js.Any]
   
-  @JSImport("estraverse", "replace")
-  @js.native
-  def replace(root: Node, visitor: Visitor): Node = js.native
+  @scala.inline
+  def replace(root: Node, visitor: Visitor): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @JSImport("estraverse", "traverse")
-  @js.native
-  def traverse(root: Node, visitor: Visitor): Unit = js.native
+  @scala.inline
+  def traverse(root: Node, visitor: Visitor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverse")(root.asInstanceOf[js.Any], visitor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.estraverse.estraverseStrings.AssignmentExpression
@@ -1365,7 +1368,6 @@ object mod {
     def YieldExpression: typings.estraverse.estraverseStrings.YieldExpression = "YieldExpression".asInstanceOf[typings.estraverse.estraverseStrings.YieldExpression]
   }
   
-  @js.native
   trait Visitor extends StObject {
     
     var enter: js.UndefOr[
@@ -1375,13 +1377,13 @@ object mod {
           /* parent */ Node | Null, 
           VisitorOption | Node | Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var fallback: js.UndefOr[
         iteration | (js.ThisFunction1[/* this */ Controller, /* node */ Node, js.Array[String]])
-      ] = js.native
+      ] = js.undefined
     
-    var keys: js.UndefOr[Record[String, js.Array[String]]] = js.native
+    var keys: js.UndefOr[Record[String, js.Array[String]]] = js.undefined
     
     var leave: js.UndefOr[
         js.ThisFunction2[
@@ -1390,7 +1392,7 @@ object mod {
           /* parent */ Node | Null, 
           VisitorOption | Node | Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Visitor {
     

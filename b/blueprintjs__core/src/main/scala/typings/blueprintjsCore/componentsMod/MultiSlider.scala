@@ -7,7 +7,6 @@ import typings.blueprintjsCore.multiSliderMod.ISliderBaseProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "MultiSlider")
@@ -48,9 +47,8 @@ object MultiSlider {
   @scala.inline
   def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
-  @JSImport("@blueprintjs/core/lib/esm/components", "MultiSlider.getDerivedStateFromProps")
-  @js.native
-  def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = js.native
+  @scala.inline
+  def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
   
   @JSImport("@blueprintjs/core/lib/esm/components", "MultiSlider.getLabelPrecision")
   @js.native

@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceShippingsettingsCustombatch extends StandardParameters {
+trait ParamsResourceShippingsettingsCustombatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Flag to simulate a request like in a live environment. If set to true,
     * dry-run mode checks the validity of the request and returns errors (if
     * any).
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaShippingsettingsCustomBatchRequest] = js.native
+  var requestBody: js.UndefOr[SchemaShippingsettingsCustomBatchRequest] = js.undefined
 }
 object ParamsResourceShippingsettingsCustombatch {
   

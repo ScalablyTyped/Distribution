@@ -2,17 +2,15 @@ package typings.hapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOrig extends StObject {
   
-  var params: js.Object = js.native
+  var params: js.Object
   
-  var payload: js.Object = js.native
+  var payload: js.Object
   
-  var query: js.Object = js.native
+  var query: js.Object
 }
 object RequestOrig {
   

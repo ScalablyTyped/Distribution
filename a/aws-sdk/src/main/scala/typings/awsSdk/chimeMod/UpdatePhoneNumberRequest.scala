@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePhoneNumberRequest extends StObject {
   
   /**
     * The outbound calling name associated with the phone number.
     */
-  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.native
+  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.undefined
   
   /**
     * The phone number ID.
     */
-  var PhoneNumberId: String = js.native
+  var PhoneNumberId: String
   
   /**
     * The product type.
     */
-  var ProductType: js.UndefOr[PhoneNumberProductType] = js.native
+  var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
 }
 object UpdatePhoneNumberRequest {
   

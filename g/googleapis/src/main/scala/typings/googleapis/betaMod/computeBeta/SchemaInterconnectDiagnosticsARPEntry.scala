@@ -2,24 +2,22 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describing the ARP neighbor entries seen on this link
   */
-@js.native
 trait SchemaInterconnectDiagnosticsARPEntry extends StObject {
   
   /**
     * The IP address of this ARP neighbor.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The MAC address of this ARP neighbor.
     */
-  var macAddress: js.UndefOr[String] = js.native
+  var macAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectDiagnosticsARPEntry {
   

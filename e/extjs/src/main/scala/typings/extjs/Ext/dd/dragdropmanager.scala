@@ -2,22 +2,20 @@ package typings.extjs.Ext.dd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragdropmanager {
   
-  @js.native
   trait IElementWrapper extends StObject {
     
     /** [Property] (Object) */
-    var css: js.UndefOr[js.Any] = js.native
+    var css: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var el: js.UndefOr[js.Any] = js.native
+    var el: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var id: js.UndefOr[js.Any] = js.native
+    var id: js.UndefOr[js.Any] = js.undefined
   }
   object IElementWrapper {
     

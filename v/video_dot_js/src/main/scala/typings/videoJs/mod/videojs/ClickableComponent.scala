@@ -4,7 +4,6 @@ import typings.std.Element
 import typings.videoJs.mod.videojs.EventTarget.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * but is not a native HTML button.
   */
 @js.native
-trait ClickableComponent extends Component {
+trait ClickableComponent
+  extends StObject
+     with Component {
   
   /**
     * Get the localize text to use for the controls on the `Component`.

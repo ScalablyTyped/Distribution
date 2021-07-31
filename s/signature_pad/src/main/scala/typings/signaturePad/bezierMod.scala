@@ -5,7 +5,6 @@ import typings.signaturePad.pointMod.BasicPoint
 import typings.signaturePad.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bezierMod {
@@ -51,8 +50,7 @@ object bezierMod {
     @scala.inline
     def calculateControlPoints_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calculateControlPoints")(x.asInstanceOf[js.Any])
     
-    @JSImport("signature_pad/dist/types/bezier", "Bezier.fromPoints")
-    @js.native
-    def fromPoints(points: js.Array[Point], widths: End): Bezier = js.native
+    @scala.inline
+    def fromPoints(points: js.Array[Point], widths: End): Bezier = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any], widths.asInstanceOf[js.Any])).asInstanceOf[Bezier]
   }
 }

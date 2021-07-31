@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Userprofiles")
@@ -30,7 +29,7 @@ class ResourceUserprofiles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaUserProfile] = js.native
   def get(callback: BodyResponseCallback[SchemaUserProfile]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserProfile] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserProfile] = js.native
   def get(params: ParamsResourceUserprofilesGet): GaxiosPromise[SchemaUserProfile] = js.native
   def get(params: ParamsResourceUserprofilesGet, callback: BodyResponseCallback[SchemaUserProfile]): Unit = js.native
   def get(
@@ -58,7 +57,7 @@ class ResourceUserprofiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUserProfileList] = js.native
   def list(callback: BodyResponseCallback[SchemaUserProfileList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUserProfileList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUserProfileList] = js.native
   def list(params: ParamsResourceUserprofilesList): GaxiosPromise[SchemaUserProfileList] = js.native
   def list(params: ParamsResourceUserprofilesList, callback: BodyResponseCallback[SchemaUserProfileList]): Unit = js.native
   def list(

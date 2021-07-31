@@ -2,31 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InheritanceSpecifier
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var arguments: js.Array[Expression] = js.native
+  var arguments: js.Array[Expression]
   
-  var baseName: UserDefinedTypeName = js.native
+  var baseName: UserDefinedTypeName
   
   @JSName("type")
-  var type_InheritanceSpecifier: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier = js.native
+  var type_InheritanceSpecifier: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier
 }
 object InheritanceSpecifier {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[Expression],
-    baseName: UserDefinedTypeName,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier
-  ): InheritanceSpecifier = {
+  def apply(arguments: js.Array[Expression], baseName: UserDefinedTypeName): InheritanceSpecifier = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], baseName = baseName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("InheritanceSpecifier")
     __obj.asInstanceOf[InheritanceSpecifier]
   }
   

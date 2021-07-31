@@ -3,23 +3,21 @@ package typings.gaxios
 import typings.gaxios.commonMod.GaxiosOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Config extends StObject {
     
-    var config: js.UndefOr[scala.Nothing] = js.native
+    var config: Unit
     
-    var shouldRetry: Boolean = js.native
+    var shouldRetry: Boolean
   }
   object Config {
     
     @scala.inline
-    def apply(shouldRetry: Boolean): Config = {
-      val __obj = js.Dynamic.literal(shouldRetry = shouldRetry.asInstanceOf[js.Any])
+    def apply(config: Unit, shouldRetry: Boolean): Config = {
+      val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], shouldRetry = shouldRetry.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
@@ -27,16 +25,18 @@ object anon {
     implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       @scala.inline
+      def setConfig(value: Unit): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setShouldRetry(value: Boolean): Self = StObject.set(x, "shouldRetry", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ShouldRetry extends StObject {
     
-    var config: GaxiosOptions = js.native
+    var config: GaxiosOptions
     
-    var shouldRetry: Boolean = js.native
+    var shouldRetry: Boolean
   }
   object ShouldRetry {
     

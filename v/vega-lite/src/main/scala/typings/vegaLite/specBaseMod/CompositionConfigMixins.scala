@@ -2,17 +2,15 @@ package typings.vegaLite.specBaseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompositionConfigMixins extends StObject {
   
   /** Default configuration for all concatenation and repeat view composition operators (`concat`, `hconcat`, `vconcat`, and `repeat`) */
-  var concat: js.UndefOr[CompositionConfig] = js.native
+  var concat: js.UndefOr[CompositionConfig] = js.undefined
   
   /** Default configuration for the `facet` view composition operator */
-  var facet: js.UndefOr[CompositionConfig] = js.native
+  var facet: js.UndefOr[CompositionConfig] = js.undefined
 }
 object CompositionConfigMixins {
   

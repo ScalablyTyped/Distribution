@@ -2,78 +2,76 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProjectResponse extends StObject {
   
   /**
     * The date and time that the project was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the project.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * The dataset associated with the project.
     */
-  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.native
+  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
   
   /**
     * The identifier (user name) of the user who last modified the project.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time that the project was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the project.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
   
   /**
     * The date and time when the project was opened. 
     */
-  var OpenDate: js.UndefOr[Date] = js.native
+  var OpenDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user that opened the project for use. 
     */
-  var OpenedBy: js.UndefOr[typings.awsSdk.databrewMod.OpenedBy] = js.native
+  var OpenedBy: js.UndefOr[typings.awsSdk.databrewMod.OpenedBy] = js.undefined
   
   /**
     * The recipe associated with this job.
     */
-  var RecipeName: js.UndefOr[typings.awsSdk.databrewMod.RecipeName] = js.native
+  var RecipeName: js.UndefOr[typings.awsSdk.databrewMod.RecipeName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the project.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the AWS Identity and Access Management (IAM) role that was assumed for this request.
     */
-  var RoleArn: js.UndefOr[Arn] = js.native
+  var RoleArn: js.UndefOr[Arn] = js.undefined
   
-  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.native
+  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.undefined
   
   /**
     * Describes the current state of the session:    PROVISIONING - allocating resources for the session.    INITIALIZING - getting the session ready for first use.    ASSIGNED - the session is ready for use.  
     */
-  var SessionStatus: js.UndefOr[typings.awsSdk.databrewMod.SessionStatus] = js.native
+  var SessionStatus: js.UndefOr[typings.awsSdk.databrewMod.SessionStatus] = js.undefined
   
   /**
     * Metadata tags associated with this project.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeProjectResponse {
   

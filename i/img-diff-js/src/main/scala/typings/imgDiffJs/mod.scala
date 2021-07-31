@@ -3,32 +3,32 @@ package typings.imgDiffJs
 import typings.imgDiffJs.anon.IncludeAA
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("img-diff-js", "imgDiff")
+  @JSImport("img-diff-js", JSImport.Namespace)
   @js.native
-  def imgDiff(opt: ImgDiffOptions): js.Promise[ImgDiffResult] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("img-diff-js", "registerDecoder")
-  @js.native
-  def registerDecoder(extensions: js.Array[String], decoder: js.Function1[/* filename */ String, _]): Unit = js.native
+  @scala.inline
+  def imgDiff(opt: ImgDiffOptions): js.Promise[ImgDiffResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("imgDiff")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImgDiffResult]]
   
-  @js.native
+  @scala.inline
+  def registerDecoder(extensions: js.Array[String], decoder: js.Function1[/* filename */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDecoder")(extensions.asInstanceOf[js.Any], decoder.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait ImgDiffOptions extends StObject {
     
-    var actualFilename: String = js.native
+    var actualFilename: String
     
-    var diffFilename: js.UndefOr[String] = js.native
+    var diffFilename: js.UndefOr[String] = js.undefined
     
-    var expectedFilename: String = js.native
+    var expectedFilename: String
     
     /** {default:false} */
-    var generateOnlyDiffFile: js.UndefOr[Boolean] = js.native
+    var generateOnlyDiffFile: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[IncludeAA] = js.native
+    var options: js.UndefOr[IncludeAA] = js.undefined
   }
   object ImgDiffOptions {
     
@@ -67,16 +67,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ImgDiffResult extends StObject {
     
-    var diffCount: Double = js.native
+    var diffCount: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var imagesAreSame: Boolean = js.native
+    var imagesAreSame: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImgDiffResult {
     

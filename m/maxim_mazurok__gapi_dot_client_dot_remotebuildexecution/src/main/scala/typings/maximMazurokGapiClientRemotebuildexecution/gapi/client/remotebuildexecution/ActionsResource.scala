@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientRemotebuildexecution.anon.Fields
 import typings.maximMazurokGapiClientRemotebuildexecution.anon.InstanceName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

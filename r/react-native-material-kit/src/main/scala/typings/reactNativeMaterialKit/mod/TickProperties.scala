@@ -3,15 +3,15 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TickProperties extends ViewProps {
+trait TickProperties
+  extends StObject
+     with ViewProps {
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var inset: js.UndefOr[Double] = js.native
+  var inset: js.UndefOr[Double] = js.undefined
 }
 object TickProperties {
   

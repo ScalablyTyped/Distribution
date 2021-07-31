@@ -2,14 +2,15 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
   @JSImport("xmlcreate/lib/options", "StringOptions")
   @js.native
-  class StringOptions protected () extends IStringOptions {
+  class StringOptions protected ()
+    extends StObject
+       with IStringOptions {
     def this(options: IStringOptions) = this()
     
     @JSName("doubleQuotes")
@@ -25,32 +26,31 @@ object optionsMod {
     var pretty_StringOptions: Boolean = js.native
   }
   
-  @js.native
   trait IStringOptions extends StObject {
     
     /**
       * Whether double quotes or single quotes should be used in XML attributes.
       * By default, single quotes are used.
       */
-    var doubleQuotes: js.UndefOr[Boolean] = js.native
+    var doubleQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The indent string used for pretty-printing. The default indent string is
       * four spaces.
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * The newline string used for pretty-printing. The default newline string
       * is "\n".
       */
-    var newline: js.UndefOr[String] = js.native
+    var newline: js.UndefOr[String] = js.undefined
     
     /**
       * Whether pretty-printing is enabled. By default, pretty-printing is
       * enabled.
       */
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
   }
   object IStringOptions {
     

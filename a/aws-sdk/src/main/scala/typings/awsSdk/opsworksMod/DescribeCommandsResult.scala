@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCommandsResult extends StObject {
   
   /**
     * An array of Command objects that describe each of the specified commands.
     */
-  var Commands: js.UndefOr[typings.awsSdk.opsworksMod.Commands] = js.native
+  var Commands: js.UndefOr[typings.awsSdk.opsworksMod.Commands] = js.undefined
 }
 object DescribeCommandsResult {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCompanyNetworkConfigurationRequest extends StObject {
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
   
   /**
     * The security groups associated with access to the provided subnets.
     */
-  var SecurityGroupIds: typings.awsSdk.worklinkMod.SecurityGroupIds = js.native
+  var SecurityGroupIds: typings.awsSdk.worklinkMod.SecurityGroupIds
   
   /**
     * The subnets used for X-ENI connections from Amazon WorkLink rendering containers.
     */
-  var SubnetIds: typings.awsSdk.worklinkMod.SubnetIds = js.native
+  var SubnetIds: typings.awsSdk.worklinkMod.SubnetIds
   
   /**
     * The VPC with connectivity to associated websites.
     */
-  var VpcId: typings.awsSdk.worklinkMod.VpcId = js.native
+  var VpcId: typings.awsSdk.worklinkMod.VpcId
 }
 object UpdateCompanyNetworkConfigurationRequest {
   

@@ -2,31 +2,29 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentContentChangeEvent extends StObject {
   
   /**
     * The range that got replaced.
     */
-  val range: Range = js.native
+  val range: Range
   
   /**
     * The length of the range that got replaced.
     */
-  val rangeLength: Double = js.native
+  val rangeLength: Double
   
   /**
     * The offset of the range that got replaced.
     */
-  val rangeOffset: Double = js.native
+  val rangeOffset: Double
   
   /**
     * The new text for the range.
     */
-  val text: String = js.native
+  val text: String
 }
 object TextDocumentContentChangeEvent {
   

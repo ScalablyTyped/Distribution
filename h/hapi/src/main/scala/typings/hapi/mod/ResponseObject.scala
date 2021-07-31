@@ -18,11 +18,12 @@ import typings.hapi.mod.Util.Dictionary
 import typings.podium.mod.Podium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResponseObject extends Podium {
+trait ResponseObject
+  extends StObject
+     with Podium {
   
   /**
     * Default value: {}.

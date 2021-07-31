@@ -3,27 +3,25 @@ package typings.natsHemera.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HemeraMessagePayload extends StObject {
   
-  var error: Error | Null = js.native
+  var error: Error | Null
   
-  var meta: js.Any = js.native
+  var meta: js.Any
   
-  var request: Request$ = js.native
+  var request: Request$
   
-  var result: js.Any = js.native
+  var result: js.Any
   
-  var trace: Trace = js.native
+  var trace: Trace
 }
 object HemeraMessagePayload {
   
   @scala.inline
   def apply(meta: js.Any, request: Request$, result: js.Any, trace: Trace): HemeraMessagePayload = {
-    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], error = null)
     __obj.asInstanceOf[HemeraMessagePayload]
   }
   

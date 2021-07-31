@@ -3,15 +3,13 @@ package typings.googleCloudCommon.utilMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedHttpResponseBody extends StObject {
   
-  var body: ResponseBody = js.native
+  var body: ResponseBody
   
-  var err: js.UndefOr[Error] = js.native
+  var err: js.UndefOr[Error] = js.undefined
 }
 object ParsedHttpResponseBody {
   

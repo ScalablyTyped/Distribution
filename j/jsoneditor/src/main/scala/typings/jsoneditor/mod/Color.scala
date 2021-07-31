@@ -2,25 +2,23 @@ package typings.jsoneditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var hex: String = js.native
+  var hex: String
   
-  var hslString: String = js.native
+  var hslString: String
   
-  var hsla: js.Array[Double] = js.native
+  var hsla: js.Array[Double]
   
-  var hslaString: String = js.native
+  var hslaString: String
   
-  var rgbString: String = js.native
+  var rgbString: String
   
-  var rgba: js.Array[Double] = js.native
+  var rgba: js.Array[Double]
   
-  var rgbaString: String = js.native
+  var rgbaString: String
 }
 object Color {
   

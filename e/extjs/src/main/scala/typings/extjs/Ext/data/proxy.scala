@@ -4,28 +4,28 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object proxy {
   
-  @js.native
-  trait IAjax extends IServer {
+  trait IAjax
+    extends StObject
+       with IServer {
     
     /** [Property] (Object) */
-    var actionMethods: js.UndefOr[js.Any] = js.native
+    var actionMethods: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var binary: js.UndefOr[Boolean] = js.native
+    var binary: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the HTTP method name for a given request
       * @param request Ext.data.Request The request object
       * @returns String The HTTP method to use (should be one of 'GET', 'POST', 'PUT' or 'DELETE')
       */
-    var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.native
+    var getMethod: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
     
     /** [Config Option] (Object) */
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
   }
   object IAjax {
     
@@ -64,12 +64,12 @@ object proxy {
     }
   }
   
-  @js.native
   trait IClient
-    extends typings.extjs.Ext.data.proxy.IProxy {
+    extends StObject
+       with typings.extjs.Ext.data.proxy.IProxy {
     
     /** [Method] Abstract function that must be implemented by each ClientProxy subclass  */
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IClient {
     
@@ -90,17 +90,18 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IDirect extends IServer {
+  trait IDirect
+    extends StObject
+       with IServer {
     
     /** [Method] inherit docs
       * @returns String The url
       */
     @JSName("buildUrl")
-    var buildUrl_IDirect: js.UndefOr[js.Function0[String]] = js.native
+    var buildUrl_IDirect: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Config Option] (Function/String) */
-    var directFn: js.UndefOr[js.Any] = js.native
+    var directFn: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
       * @param operation Object
@@ -115,13 +116,13 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var paramOrder: js.UndefOr[js.Any] = js.native
+    var paramOrder: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var paramsAsHash: js.UndefOr[Boolean] = js.native
+    var paramsAsHash: js.UndefOr[Boolean] = js.undefined
   }
   object IDirect {
     
@@ -168,26 +169,27 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IJsonP extends IServer {
+  trait IJsonP
+    extends StObject
+       with IServer {
     
     /** [Method] Aborts the current server request if one is currently running */
-    var abort: js.UndefOr[js.Function0[Unit]] = js.native
+    var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoAppendParams: js.UndefOr[Boolean] = js.native
+    var autoAppendParams: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var callbackKey: js.UndefOr[String] = js.native
+    var callbackKey: js.UndefOr[String] = js.undefined
     
     /** [Method] Encodes an array of records into a value suitable to be added to the request params as the recordParam parameter
       * @param records Ext.data.Model[] The records array
       * @returns Array An array of record data objects
       */
-    var encodeRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Array]] = js.native
+    var encodeRecords: js.UndefOr[js.Function1[/* records */ js.UndefOr[Array], Array]] = js.undefined
     
     /** [Config Option] (String) */
-    var recordParam: js.UndefOr[String] = js.native
+    var recordParam: js.UndefOr[String] = js.undefined
   }
   object IJsonP {
     
@@ -234,14 +236,15 @@ object proxy {
   
   type ILocalStorage = IWebStorage
   
-  @js.native
-  trait IMemory extends IClient {
+  trait IMemory
+    extends StObject
+       with IClient {
     
     /** [Config Option] (Object) */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enablePaging: js.UndefOr[Boolean] = js.native
+    var enablePaging: js.UndefOr[Boolean] = js.undefined
   }
   object IMemory {
     
@@ -268,20 +271,21 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IProxy extends IObservable {
+  trait IProxy
+    extends StObject
+       with IObservable {
     
     /** [Method] Performs a batch of Operations in the order specified by batchOrder
       * @param options Object Object containing one or more properties supported by the batch method:
       * @returns Ext.data.Batch The newly created Batch
       */
-    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.native
+    var batch: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IBatch]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var batchActions: js.UndefOr[Boolean] = js.native
+    var batchActions: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var batchOrder: js.UndefOr[String] = js.native
+    var batchOrder: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the given create operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -295,7 +299,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Performs the given destroy operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -309,31 +313,31 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the model attached to this Proxy
       * @returns Ext.data.Model The model
       */
-    var getModel: js.UndefOr[js.Function0[IModel]] = js.native
+    var getModel: js.UndefOr[js.Function0[IModel]] = js.undefined
     
     /** [Method] Returns the reader currently attached to this proxy instance
       * @returns Ext.data.reader.Reader The Reader instance
       */
-    var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.native
+    var getReader: js.UndefOr[js.Function0[typings.extjs.Ext.data.reader.IReader]] = js.undefined
     
     /** [Method] Returns the writer currently attached to this proxy instance
       * @returns Ext.data.writer.Writer The Writer instance
       */
-    var getWriter: js.UndefOr[js.Function0[typings.extjs.Ext.data.writer.IWriter]] = js.native
+    var getWriter: js.UndefOr[js.Function0[typings.extjs.Ext.data.writer.IWriter]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isProxy: js.UndefOr[Boolean] = js.native
+    var isProxy: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var isSynchronous: js.UndefOr[Boolean] = js.native
+    var isSynchronous: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Ext.data.Model) */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Performs the given read operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -347,10 +351,10 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.reader.Reader) */
-    var reader: js.UndefOr[js.Any] = js.native
+    var reader: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the model associated with this proxy
       * @param model String/Ext.data.Model The new model. Can be either the model name string, or a reference to the model's constructor
@@ -358,7 +362,7 @@ object proxy {
       */
     var setModel: js.UndefOr[
         js.Function2[/* model */ js.UndefOr[js.Any], /* setOnStore */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the Proxy s Reader by string config object or Reader instance
       * @param reader String/Object/Ext.data.reader.Reader The new Reader, which can be either a type string, a configuration object or an Ext.data.reader.Reader instance
@@ -366,7 +370,7 @@ object proxy {
       */
     var setReader: js.UndefOr[
         js.Function1[/* reader */ js.UndefOr[js.Any], typings.extjs.Ext.data.reader.IReader]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the Proxy s Writer by string config object or Writer instance
       * @param writer String/Object/Ext.data.writer.Writer The new Writer, which can be either a type string, a configuration object or an Ext.data.writer.Writer instance
@@ -374,7 +378,7 @@ object proxy {
       */
     var setWriter: js.UndefOr[
         js.Function1[/* writer */ js.UndefOr[js.Any], typings.extjs.Ext.data.writer.IWriter]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Performs the given update operation
       * @param operation Ext.data.Operation The Operation to perform
@@ -388,10 +392,10 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object/String/Ext.data.writer.Writer) */
-    var writer: js.UndefOr[js.Any] = js.native
+    var writer: js.UndefOr[js.Any] = js.undefined
   }
   object IProxy {
     
@@ -522,14 +526,15 @@ object proxy {
     }
   }
   
-  @js.native
-  trait IRest extends IAjax {
+  trait IRest
+    extends StObject
+       with IAjax {
     
     /** [Config Option] (Boolean) */
-    var appendId: js.UndefOr[Boolean] = js.native
+    var appendId: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object IRest {
     
@@ -556,9 +561,9 @@ object proxy {
     }
   }
   
-  @js.native
   trait IServer
-    extends typings.extjs.Ext.data.proxy.IProxy {
+    extends StObject
+       with typings.extjs.Ext.data.proxy.IProxy {
     
     /** [Method] Optional callback function which can be used to clean up after a request has been completed
       * @param request Ext.data.Request The Request object
@@ -566,36 +571,36 @@ object proxy {
       */
     var afterRequest: js.UndefOr[
         js.Function2[/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var api: js.UndefOr[js.Any] = js.native
+    var api: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Creates an Request object from Operation
       * @param operation Ext.data.Operation The operation to execute
       * @returns Ext.data.Request The request object
       */
-    var buildRequest: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], IRequest]] = js.native
+    var buildRequest: js.UndefOr[js.Function1[/* operation */ js.UndefOr[IOperation], IRequest]] = js.undefined
     
     /** [Method] Generates a url based on a given Ext data Request object
       * @param request Ext.data.Request The request object
       * @returns String The url
       */
-    var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.native
+    var buildUrl: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], String]] = js.undefined
     
     /** [Config Option] (String) */
-    var cacheString: js.UndefOr[String] = js.native
+    var cacheString: js.UndefOr[String] = js.undefined
     
     /** [Method] in a ServerProxy all four CRUD operations are executed in the same manner so we delegate to doRequest in each case */
     @JSName("create")
-    var create_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var create_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Performs the given destroy operation  */
     @JSName("destroy")
-    var destroy_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var directionParam: js.UndefOr[String] = js.native
+    var directionParam: js.UndefOr[String] = js.undefined
     
     /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
       * @param operation Ext.data.Operation The Ext.data.Operation object
@@ -609,47 +614,47 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Encodes the array of Ext util Filter objects into a string to be sent in the request url
       * @param filters Ext.util.Filter[] The array of Filter objects
       * @returns String The encoded filters
       */
-    var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.native
+    var encodeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[Array], String]] = js.undefined
     
     /** [Method] Encodes the array of Ext util Sorter objects into a string to be sent in the request url
       * @param sorters Ext.util.Sorter[] The array of Sorter objects
       * @returns String The encoded sorters
       */
-    var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.native
+    var encodeSorters: js.UndefOr[js.Function1[/* sorters */ js.UndefOr[Array], String]] = js.undefined
     
     /** [Config Option] (Object) */
-    var extraParams: js.UndefOr[js.Any] = js.native
+    var extraParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var filterParam: js.UndefOr[String] = js.native
+    var filterParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var groupDirectionParam: js.UndefOr[String] = js.native
+    var groupDirectionParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var groupParam: js.UndefOr[String] = js.native
+    var groupParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var idParam: js.UndefOr[String] = js.native
+    var idParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var limitParam: js.UndefOr[String] = js.native
+    var limitParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var pageParam: js.UndefOr[String] = js.native
+    var pageParam: js.UndefOr[String] = js.undefined
     
     /** [Method] Performs the given read operation  */
     @JSName("read")
-    var read_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var read_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Sets a value in the underlying extraParams
       * @param name String The key for the new value
@@ -657,29 +662,29 @@ object proxy {
       */
     var setExtraParam: js.UndefOr[
         js.Function2[/* name */ js.UndefOr[String], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var simpleGroupMode: js.UndefOr[Boolean] = js.native
+    var simpleGroupMode: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var simpleSortMode: js.UndefOr[Boolean] = js.native
+    var simpleSortMode: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var sortParam: js.UndefOr[String] = js.native
+    var sortParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var startParam: js.UndefOr[String] = js.native
+    var startParam: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (Number) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** [Method] Performs the given update operation  */
     @JSName("update")
-    var update_IServer: js.UndefOr[js.Function0[Unit]] = js.native
+    var update_IServer: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IServer {
     
@@ -866,11 +871,12 @@ object proxy {
   
   type ISessionStorage = IWebStorage
   
-  @js.native
-  trait IWebStorage extends IClient {
+  trait IWebStorage
+    extends StObject
+       with IClient {
     
     /** [Property] (Object) */
-    var cache: js.UndefOr[js.Any] = js.native
+    var cache: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -885,7 +891,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] inherit
       * @param operation Object
@@ -900,10 +906,10 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -918,13 +924,13 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Saves the given record in the Proxy
       * @param record Ext.data.Model The model instance
       * @param id String The id to save the record under (defaults to the value of the record's getId() function)
       */
-    var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.native
+    var setRecord: js.UndefOr[js.Function2[/* record */ js.UndefOr[IModel], /* id */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] inherit docs
       * @param operation Object
@@ -939,7 +945,7 @@ object proxy {
           /* scope */ js.UndefOr[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IWebStorage {
     

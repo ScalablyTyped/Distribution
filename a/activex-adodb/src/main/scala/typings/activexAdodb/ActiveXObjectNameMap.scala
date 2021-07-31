@@ -9,31 +9,72 @@ import typings.activexAdodb.ADODB.Recordset
 import typings.activexAdodb.ADODB.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("ADODB.Command")
-  var ADODBDotCommand: Command = js.native
+  var ADODBDotCommand: Command
   
   @JSName("ADODB.Connection")
-  var ADODBDotConnection: Connection = js.native
+  var ADODBDotConnection: Connection
   
   @JSName("ADODB.Parameter")
-  var ADODBDotParameter: Parameter = js.native
+  var ADODBDotParameter: Parameter
   
   @JSName("ADODB.Record")
-  var ADODBDotRecord: Record = js.native
+  var ADODBDotRecord: Record
   
   @JSName("ADODB.Recordset")
-  def ADODBDotRecordset(FieldIndex: String): Field = js.native
+  def ADODBDotRecordset(FieldIndex: String): Field
   @JSName("ADODB.Recordset")
-  def ADODBDotRecordset(FieldIndex: Double): Field = js.native
+  def ADODBDotRecordset(FieldIndex: Double): Field
   @JSName("ADODB.Recordset")
-  var ADODBDotRecordset_Original: Recordset = js.native
+  var ADODBDotRecordset_Original: Recordset
   
   @JSName("ADODB.Stream")
-  var ADODBDotStream: Stream = js.native
+  var ADODBDotStream: Stream
+}
+object ActiveXObjectNameMap {
+  
+  @scala.inline
+  def apply(
+    ADODBDotCommand: Command,
+    ADODBDotConnection: Connection,
+    ADODBDotParameter: Parameter,
+    ADODBDotRecord: Record,
+    ADODBDotRecordset: Recordset,
+    ADODBDotStream: Stream
+  ): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ADODB.Command")(ADODBDotCommand.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Connection")(ADODBDotConnection.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Parameter")(ADODBDotParameter.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Record")(ADODBDotRecord.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Recordset")(ADODBDotRecordset.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADODB.Stream")(ADODBDotStream.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+  
+  @scala.inline
+  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setADODBDotCommand(value: Command): Self = StObject.set(x, "ADODB.Command", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setADODBDotConnection(value: Connection): Self = StObject.set(x, "ADODB.Connection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setADODBDotParameter(value: Parameter): Self = StObject.set(x, "ADODB.Parameter", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setADODBDotRecord(value: Record): Self = StObject.set(x, "ADODB.Record", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setADODBDotRecordset(value: Recordset): Self = StObject.set(x, "ADODB.Recordset", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setADODBDotStream(value: Stream): Self = StObject.set(x, "ADODB.Stream", value.asInstanceOf[js.Any])
+  }
 }

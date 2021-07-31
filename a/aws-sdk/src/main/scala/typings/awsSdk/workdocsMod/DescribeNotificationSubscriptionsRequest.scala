@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNotificationSubscriptionsRequest extends StObject {
   
   /**
     * The maximum number of items to return with this call.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[PageMarkerType] = js.native
+  var Marker: js.UndefOr[PageMarkerType] = js.undefined
   
   /**
     * The ID of the organization.
     */
-  var OrganizationId: IdType = js.native
+  var OrganizationId: IdType
 }
 object DescribeNotificationSubscriptionsRequest {
   

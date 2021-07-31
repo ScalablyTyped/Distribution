@@ -5,23 +5,21 @@ import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.devextreme.mod.DevExpress.ui.dxDataGridRowObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowElement extends StObject {
   
-  var component: js.UndefOr[dxDataGrid] = js.native
+  var component: js.UndefOr[dxDataGrid] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var row: js.UndefOr[dxDataGridRowObject] = js.native
+  var row: js.UndefOr[dxDataGridRowObject] = js.undefined
   
-  var rowElement: js.UndefOr[dxElement] = js.native
+  var rowElement: js.UndefOr[dxElement] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object RowElement {
   

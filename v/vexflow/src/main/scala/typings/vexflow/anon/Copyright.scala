@@ -2,41 +2,39 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Copyright extends StObject {
   
-  var copyright: String = js.native
+  var copyright: String
   
-  var description: String = js.native
+  var description: String
   
-  var designer: String = js.native
+  var designer: String
   
-  var designer_url: String = js.native
+  var designer_url: String
   
-  var font_family_name: String = js.native
+  var font_family_name: String
   
-  var font_sub_family_name: String = js.native
+  var font_sub_family_name: String
   
-  var full_font_name: String = js.native
+  var full_font_name: String
   
-  var license_description: String = js.native
+  var license_description: String
   
-  var license_url: String = js.native
+  var license_url: String
   
-  var manufacturer_name: String = js.native
+  var manufacturer_name: String
   
-  var postscript_name: String = js.native
+  var postscript_name: String
   
-  var trademark: String = js.native
+  var trademark: String
   
-  var unique_font_identifier: String = js.native
+  var unique_font_identifier: String
   
-  var vendor_url: String = js.native
+  var vendor_url: String
   
-  var version_string: String = js.native
+  var version_string: String
 }
 object Copyright {
   

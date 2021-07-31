@@ -2,25 +2,23 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdGroupId extends StObject {
   
-  var adGroupId: js.UndefOr[String] = js.native
+  var adGroupId: js.UndefOr[String] = js.undefined
   
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
-  var agencyId: js.UndefOr[String] = js.native
+  var agencyId: js.UndefOr[String] = js.undefined
   
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
-  var engineAccountId: js.UndefOr[String] = js.native
+  var engineAccountId: js.UndefOr[String] = js.undefined
   
-  var keywordId: js.UndefOr[String] = js.native
+  var keywordId: js.UndefOr[String] = js.undefined
 }
 object AdGroupId {
   

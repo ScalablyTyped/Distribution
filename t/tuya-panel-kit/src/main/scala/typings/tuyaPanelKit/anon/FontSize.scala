@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontSize extends StObject {
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var lineHeight: Double = js.native
+  var lineHeight: Double
 }
 object FontSize {
   

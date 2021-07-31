@@ -2,31 +2,29 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bucket is represented as a range, along with replacement values.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Bucket extends StObject {
   
   /**
     * Upper bound of the range, exclusive; type must match min.
     */
-  var max: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var max: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
     * Lower bound of the range, inclusive. Type should be the same as max if
     * used.
     */
-  var min: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var min: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
   
   /**
     * Replacement value for this bucket. If not provided the default behavior
     * will be to hyphenate the min-max range.
     */
-  var replacementValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.native
+  var replacementValue: js.UndefOr[SchemaGooglePrivacyDlpV2Value] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Bucket {
   

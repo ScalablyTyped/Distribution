@@ -3,29 +3,29 @@ package typings.geetest
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("geetest", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Geetest {
+  class ^ protected ()
+    extends StObject
+       with Geetest {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var challenge: String = js.native
+    var challenge: String
     
-    var geetest_id: String = js.native
+    var geetest_id: String
     
-    var gt: String = js.native
+    var gt: String
     
-    var new_captcha: String = js.native
+    var new_captcha: String
     
-    var success: Success = js.native
+    var success: Success
   }
   object Data {
     
@@ -65,16 +65,15 @@ object mod {
     def validate(result: Result, callback: js.Function2[/* error */ Error, /* success */ Success, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var api_server: js.UndefOr[String] = js.native
+    var api_server: js.UndefOr[String] = js.undefined
     
-    var geetest_id: String = js.native
+    var geetest_id: String
     
-    var geetest_key: String = js.native
+    var geetest_key: String
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -107,14 +106,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var challenge: String = js.native
+    var challenge: String
     
-    var seccode: String = js.native
+    var seccode: String
     
-    var validate: String = js.native
+    var validate: String
   }
   object Result {
     

@@ -2,14 +2,12 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebGL 1 Type Branding
-@js.native
 trait WebGLObject extends StObject {
   
-  val __WebGLObject: Unit = js.native
+  val __WebGLObject: Unit
 }
 object WebGLObject {
   

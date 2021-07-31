@@ -2,7 +2,6 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * of the object name and the object text data/content. The data of each record are applied to all
   * corresponend objects and for each record one label is printed.
   */
-@js.native
 trait LabelSetBuilder extends StObject {
   
   /**
     * Adds a new record to the LabelSet. Returns a record object.
     */
-  def addRecord(): ILabelSetRecord = js.native
+  def addRecord(): ILabelSetRecord
   
   /**
     * Get all record objects in this LabelSetBuilder.
     */
-  def getRecords(): js.Array[ILabelSetRecord] = js.native
+  def getRecords(): js.Array[ILabelSetRecord]
 }
 object LabelSetBuilder {
   

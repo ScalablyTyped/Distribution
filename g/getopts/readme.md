@@ -4,15 +4,15 @@
 Typings are for version 2.2.5
 
 ## Library description:
-Parse CLI options, better.
+Parse CLI arguments.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | getopts |
-| Keywords           | getopts, cli, argv, flags, yargs, options, minimist, cli-parser |
-| # releases         | 5 |
-| # dependents       | 84 |
-| # downloads        | 17823684 |
+| Keywords           | cli, argv, flags, parse, getopts, minimist, cli-parser |
+| # releases         | 2 |
+| # dependents       | 94 |
+| # downloads        | 23364297 |
 | # stars            | 5 |
 
 ## Links
